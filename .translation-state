@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "5b8cf92ebd2967462d07bc9aa4383f183ddf8b4f",
+  "LastProcessedCommit": "950d0f73a7e66844be01bb62b08a69852ca6f679",
   "LastTranslatedCommit": null,
   "Items": {
     "69b88e15bc21632deba50fff9cc06cf9e9bb8413": {
@@ -81234,17 +81234,18 @@
     },
     "710ad8d60bd427fdc2d566e7605db98d6b46c3eb": {
       "FileHash": "710ad8d60bd427fdc2d566e7605db98d6b46c3eb",
-      "SourceFileCommit": "df34bee4b92cc6ba9b8016965fa5d706237eb9cf",
-      "SourceFilePath": "InTuneDocs\\DeployUse\\use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md",
+      "SourceFileCommit": "6e0fe3f0ba131921b8814ea0592c481f15830300",
+      "SourceFilePath": "InTuneDocs\\zDeletedTopics\\Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
       "TokenReference": null,
       "FilePathList": [
-        "InTuneDocs\\DeployUse\\use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md"
+        "InTuneDocs\\DeployUse\\use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md",
+        "InTuneDocs\\zDeletedTopics\\Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md"
       ],
-      "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.zh-cn\\master\\use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.791a7e2a281f913603039e2537a2f70306a9b6b3.zh-cn.xlf",
-      "HandoffFileCommit": "61bc953a018d408bf4a9a5ac1f032b2732318837",
-      "HandoffDateTime": "2016-04-20T00:56:44.8555867Z",
+      "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.zh-cn\\master\\Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.ad9ccc032e9f756e93f5b1ab59ec2f1994e07fc0.zh-cn.xlf",
+      "HandoffFileCommit": "10942d995d8d2464eaedc79c8106dbbbd50e8cb5",
+      "HandoffDateTime": "2016-04-20T17:22:12.5050487Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
