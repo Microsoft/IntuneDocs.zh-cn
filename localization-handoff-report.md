@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\vpn-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9af510cf838eb37e8df3ace8334bf8bcf5ac48cf/InTuneDocs/DeployUse/vpn-connections-in-microsoft-intune.md) | HandedOffSuccess | [Details](#7ffe29d1d3233331c47814b687096abfca837514270)
+ [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/88bc04862639c0c6b59b89ac00a1abdbe81ce2dd/InTuneDocs/DeployUse/whats-coming-in-intune.md) | HandedOffSuccess | [Details](#f5e30813e73416c2578e8041bbc16170ee747eda272)
 
 ## Item Details
-##### <a name='7ffe29d1d3233331c47814b687096abfca837514270'></a> Source: [InTuneDocs\DeployUse\vpn-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9af510cf838eb37e8df3ace8334bf8bcf5ac48cf/InTuneDocs/DeployUse/vpn-connections-in-microsoft-intune.md)
+##### <a name='f5e30813e73416c2578e8041bbc16170ee747eda272'></a> Source: [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/88bc04862639c0c6b59b89ac00a1abdbe81ce2dd/InTuneDocs/DeployUse/whats-coming-in-intune.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/080decf6ef6247c32d67cfd74defb6ec089ea630/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.zh-cn.xlf)
-* Handoff Datetime: 2016-05-03 23:23:59
+* Handoff File: [whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/d6a3126c0efebc9ad987cc0cf93a04d239773b42/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.zh-cn.xlf)
+* Handoff Datetime: 2016-05-04 01:33:48
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
