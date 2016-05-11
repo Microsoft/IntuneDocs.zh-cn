@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e1514085169b489082467d7e0606e1029ff98967/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md) | HandedOffSuccess | [Details](#05dc37621c5eb08a89e752f4ad4fbe09b7a8da6e265)
- [InTuneDocs\Understand\common-ways-to-use-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9cb6894cefad1da14332f9994fdf45fe2d1e9b9c/InTuneDocs/Understand/common-ways-to-use-intune.md) | HandedOffSuccess | [Details](#c854893f457a60a7424010cdf69a91cb8476e1671114)
 
 ## Item Details
-##### <a name='05dc37621c5eb08a89e752f4ad4fbe09b7a8da6e265'></a> Source: [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e1514085169b489082467d7e0606e1029ff98967/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/8fa5d9a81d1a4a6df094d20499f0320be1d9c6db/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.zh-cn.xlf)
-* Handoff Datetime: 2016-05-10 23:50:23
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='c854893f457a60a7424010cdf69a91cb8476e1671114'></a> Source: [InTuneDocs\Understand\common-ways-to-use-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9cb6894cefad1da14332f9994fdf45fe2d1e9b9c/InTuneDocs/Understand/common-ways-to-use-intune.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [common-ways-to-use-intune.83099fc3e4530a1275648f414a67e67caff97d81.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/8fa5d9a81d1a4a6df094d20499f0320be1d9c6db/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/common-ways-to-use-intune.83099fc3e4530a1275648f414a67e67caff97d81.zh-cn.xlf)
-* Handoff Datetime: 2016-05-10 23:50:23
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
