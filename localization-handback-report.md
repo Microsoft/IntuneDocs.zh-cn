@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\whats-new-archive.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/whats-new-archive.md) | InSyncHandedBackSuccess | [Details](#051d06afb0f29f2a97c1f06dc1102138e5f2be8f255)
- [InTuneDocs\includes\wit_exch_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_exch_2.md) | InSyncHandedBackSuccess | [Details](#a19773e794473714fa2d34fce76291ba8a8f6e21618)
 
 ## Item Details
-##### <a name='051d06afb0f29f2a97c1f06dc1102138e5f2be8f255'></a> Source: [InTuneDocs\DeployUse\whats-new-archive.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/whats-new-archive.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\whats-new-archive.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/3e0b1bb1aca4da5e51d23ba1e8437bfeac1615c3/InTuneDocs/DeployUse/whats-new-archive.md)
-* Handoff File: [whats-new-archive.6a040961da6a14f71e12b258ced28864374ae2af.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/318df2a9fe98b27b34d180cebe55ae9125019177/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/whats-new-archive.6a040961da6a14f71e12b258ced28864374ae2af.zh-cn.xlf)
-* Handoff Datetime: 2016-05-13 16:58:23
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [whats-new-archive.6a040961da6a14f71e12b258ced28864374ae2af.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/42c05e74ffcded603b9c0df293cc0070821835db/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/whats-new-archive.6a040961da6a14f71e12b258ced28864374ae2af.zh-cn.xlf)
-* Handback Datetime: 2016-05-25 13:30:14
-* [Back to Top](#report-top)
-
-##### <a name='a19773e794473714fa2d34fce76291ba8a8f6e21618'></a> Source: [InTuneDocs\includes\wit_exch_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_exch_2.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\wit_exch_2.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/3e0b1bb1aca4da5e51d23ba1e8437bfeac1615c3/InTuneDocs/includes/wit_exch_2.md)
-* Handoff File: [wit_exch_2.e1ef5f56b5ce699b6f8235b2ae1cb51b358451fb.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/318df2a9fe98b27b34d180cebe55ae9125019177/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/wit_exch_2.e1ef5f56b5ce699b6f8235b2ae1cb51b358451fb.zh-cn.xlf)
-* Handoff Datetime: 2016-05-13 16:58:23
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [wit_exch_2.e1ef5f56b5ce699b6f8235b2ae1cb51b358451fb.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/42c05e74ffcded603b9c0df293cc0070821835db/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/wit_exch_2.e1ef5f56b5ce699b6f8235b2ae1cb51b358451fb.zh-cn.xlf)
-* Handback Datetime: 2016-05-25 13:30:14
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
