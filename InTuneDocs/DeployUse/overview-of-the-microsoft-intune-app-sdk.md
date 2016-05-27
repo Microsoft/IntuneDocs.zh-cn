@@ -1,13 +1,30 @@
 ---
-title: Microsoft Intune App SDK 概述
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
+# required metadata
+
+title: Microsoft Intune App SDK 概述 | Microsoft Intune
+description:
+keywords:
 author: Msmbaldwin
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune App SDK 概述
 Intune 应用 SDK 适用于 iOS 和 Android 平台，并允许通过 Microsoft Intune 使用移动应用管理功能。 此外，我们还尽量减少开发人员需要进行的代码更改次数。 你会发现你可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，你可以利用我们的 API，针对需要应用参与的功能来自定义应用行为。 
 
@@ -36,7 +53,7 @@ IT 管理员可以强制执行策略，确保对应用保存到设备的数据�
 启动 Intune 托管应用时，IT 管理员可以强制执行 PIN 策略。 此策略有助于确保将其设备注册到 Microsoft Intune 的最终用户与应用启动者是同一个人。 最终用户配置其 PIN 时，Intune 应用 SDK 使用 Azure Active Directory 验证最终用户的凭据是否为设备注册凭据。 
 
 ## 要求用户先输入凭据才能启动应用
-IT 管理员可以要求用户输入其凭据才能启动 Intune 托管应用。 Intune 应用 SDK 使用 Azure Active Directory 提供单一登录体验，其中一旦输入凭据就将在后续登录中重用该凭据。 我们还支持通过[与 Azure Active Directory 联合](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx)的标识管理解决方案进行身份验证。 
+IT 管理员可以要求用户输入其凭据才能启动 Intune 托管应用。 Intune 应用 SDK 使用 Azure Active Directory 提供单一登录体验，其中一旦输入凭据就将在后续登录中重用该凭据。 我们还支持通过[与 Azure Active Directory 联合](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx)的标识管理解决方案进行身份验证 
 
 ## 检查设备运行状况和合规性
 在最终用户访问 Intune 托管应用之前，IT 管理员可以检查设备的运行状况及其是否符合公司策略。 在 iOS 平台上，此策略将检查设备是否已越狱。 在 Android 平台上，此策略将检查设备是否已获得 root 权限。  
@@ -44,6 +61,6 @@ IT 管理员可以要求用户输入其凭据才能启动 Intune 托管应用。
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

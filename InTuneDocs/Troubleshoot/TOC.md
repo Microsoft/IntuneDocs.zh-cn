@@ -1,15 +1,20 @@
-# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [了解和探索](/intune/understand-explore/introduction-to-microsoft-intune)
+# [开始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
-# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [部署和使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 
-# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
-## [How to get support](how-to-get-support-for-microsoft-intune.md)
-## [Troubleshoot endpoint protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
-## [Troubleshoot company resource access problems](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
-## [Troubleshoot app deployment problems](Troubleshoot-app-deployment-problems-in-microsoft-intune.md)
-## [Troubleshoot device enrollment](troubleshoot-device-enrollment-in-intune.md)
-## [Troubleshoot policies](Troubleshoot-policies-in-microsoft-intune.md)
-## [Troubleshoot client setup](Troubleshoot-client-setup-in-microsoft-intune.md)
-## [Troubleshoot software updates](Troubleshoot-software-updates-in-microsoft-intune.md)
-## [Troubleshoot email profiles](Troubleshoot-email-profiles-in-microsoft-intune.md)
+# [故障排除](how-to-get-support-for-microsoft-intune.md)
+## [如何获得支持](how-to-get-support-for-microsoft-intune.md)
+## [Endpoint Protection 疑难解答](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
+## [公司资源访问权限问题疑难解答](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+## [应用部署问题疑难解答](Troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+## [设备注册疑难解答](troubleshoot-device-enrollment-in-intune.md)
+## [策略疑难解答](Troubleshoot-policies-in-microsoft-intune.md)
+## [客户端安装程序疑难解答](Troubleshoot-client-setup-in-microsoft-intune.md)
+## [软件更新疑难解答](Troubleshoot-software-updates-in-microsoft-intune.md)
+## [电子邮件配置文件疑难解答](Troubleshoot-email-profiles-in-microsoft-intune.md)
+
+
+<!--HONumber=May16_HO1-->
+
+

@@ -39,9 +39,9 @@ ms.suite: ems
 
 3.  从顶部向下拖动以打开你的通知，并在通知列表中点击 **BaltimoreCyberTrustRoot.crt**。
 
-4.  在 **命名证书** 对话框中，接受默认的证书名称。
+4.  在“对证书命名”对话框中，接受默认的证书名。
 
-5. 确保 **身份信息的使用** 设置为 **对 VPN 和应用程序使用**, ，然后点击 **确定**
+5. 确保“凭据使用”设置为“对 VPN 和应用使用”，然后点击“确定”
 
     ![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
 

@@ -1,4 +1,4 @@
-**Learning Ally（以前的 Recording for the Blind &amp; Dyslexic, Inc.）** 
+**Learning Ally（前身为 Recording for the Blind &amp; Dyslexic, Inc.）** 
 
 <!--HONumber=May16_HO2-->
 
