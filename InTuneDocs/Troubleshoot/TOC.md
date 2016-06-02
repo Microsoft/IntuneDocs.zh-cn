@@ -2,6 +2,7 @@
 # [开始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [部署和使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [开发和自定义应用](/intune/develop/intune-app-sdk)
 
 # [故障排除](how-to-get-support-for-microsoft-intune.md)
 ## [如何获得支持](how-to-get-support-for-microsoft-intune.md)
@@ -15,6 +16,6 @@
 ## [电子邮件配置文件疑难解答](Troubleshoot-email-profiles-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

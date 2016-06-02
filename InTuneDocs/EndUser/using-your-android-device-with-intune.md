@@ -63,11 +63,12 @@ ms.suite: ems
 - [将注册错误发送给 IT 管理员](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [设备没有必需的最低操作系统版本](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [设备不符合最高操作系统版本](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [你的设备已取得 root 权限，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)
-- [你的设备缺少必需的证书](your-device-is-missing-a-required-certificate-android.md)
+- [你的设备已取得 root 权限，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [你的设备缺少必需的证书](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=May16_HO3-->
 
 

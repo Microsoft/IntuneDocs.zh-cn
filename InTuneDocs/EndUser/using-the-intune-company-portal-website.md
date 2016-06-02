@@ -52,9 +52,9 @@ ms.suite: ems
 
 - [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [通过 Intune 使用 Android 设备](using-your-windows-device-with-intune.md)
+- [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 
