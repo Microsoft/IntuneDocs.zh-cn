@@ -952,9 +952,6 @@
   "f68ccce6fc8c83194e0d07f32b1b9d45350801c3": [
     "InTuneDocs\\EndUser\\using-your-android-device-with-intune.md"
   ],
-  "94348e8e2062af15768ef31dbd43b94956e94476": [
-    "InTuneDocs\\EndUser\\using-your-android-device-with-intune.md"
-  ],
   "2273b5a9782a4e9e69f525555a10242a38c6efda": [
     "InTuneDocs\\EndUser\\using-your-ios-or-mac-os-x-device-with-intune.md"
   ],
@@ -1723,19 +1720,10 @@
   "e51fc05d03a7a8e49af122b77f54b561c75723b8": [
     "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-android.md"
   ],
-  "2059f4f0dc5e63343989f602b32badc8d28e7305": [
-    "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-android.md"
-  ],
   "98aca9fc7dc1a8ddd2c687b2705b513c2550e187": [
     "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-ios.md"
   ],
-  "343551db25a9e945cca997cdd68b2f3780a7da60": [
-    "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-ios.md"
-  ],
   "6a5ed408016dce3dd9dca408710179fd938c9a95": [
-    "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-windows.md"
-  ],
-  "70c9b0901ceca1cd0ee5eb765b7e73c96b52e5f7": [
     "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-windows.md"
   ],
   "243834817aee1f2d6e04b2490772afbddda9543b": [
@@ -1802,9 +1790,6 @@
     "InTuneDocs\\EndUser\\use-managed-apps-on-your-device-ios.md"
   ],
   "e5af90c3cb5bef496d28e94763798bea0feadb08": [
-    "InTuneDocs\\EndUser\\use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md"
-  ],
-  "6ac303b5ab67433c252d12cfaf663b616306c24e": [
     "InTuneDocs\\EndUser\\use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md"
   ],
   "ada60e3cadfd9edc003c038905b4756502d9d236": [
