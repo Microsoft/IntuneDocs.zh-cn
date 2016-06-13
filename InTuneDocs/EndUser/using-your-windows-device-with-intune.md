@@ -42,6 +42,7 @@ ms.suite: ems
 此部分中的信息将帮助你在 Intune 中注册Windows 设备后能够执行的操作。
 
 - [加密你的设备](encrypt-your-device-windows.md)</br>
+- [设置或更改密码](set-or-change-your-password-windows.md)</br>
 - [重置（清除）丢失或被盗设备](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [从 Intune 取消注册你的设备](unenroll-your-device-from-intune-windows.md)</br>
 - [从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
@@ -54,7 +55,7 @@ ms.suite: ems
 此部分中的信息将帮助解决你在 Intune 中注册 Windows 设备时可能发生的问题。
 
 - [设备没有必需的最低操作系统版本](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [设备不符合最高操作系统版本](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
+- [设备不符合最高操作系统版本](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
 - [设备未启用 BitLocker](device-doesnt-have-bitlocker-enabled-windows.md)</br>
 - [设备未启用反恶意软件](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
 - [设备未启用安全启动](device-doesnt-have-secure-boot-enabled-windows.md)</br>
@@ -63,6 +64,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

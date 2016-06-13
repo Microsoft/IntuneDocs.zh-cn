@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Microsoft Intune 的网络基础结构要求
-设置 Microsoft Intune 之前，请查看本主题以及[启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)中列出的其他要求.
+设置 Microsoft Intune 之前，请查看本主题以及[启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)中列出的其他要求。
 
 本主题列出了要求，这些要求启用你的网络基础结构以在你管理和用于管理 Intune 订阅的设备与 Internet 上基于云的服务所使用的网站之间传递通信。
 
@@ -169,20 +169,10 @@ ms.suite: ems
 你还可以使用对内容进行缓存以减少 Intune 客户端使用的[网络宽带](network-bandwidth-use.md)的代理服务器。
 
 
-
-## 服务间连接器的要求
-服务间连接器仅支持基于云的 Exchange，对本地基础结构没有要求。
-
-要使用此连接器，必须满足下列要求：
-
--   你必须有包含 Exchange Server 2013 租户的 Office 365 订阅。 只要租户是 Exchange Server 2013，连接器就支持同一环境中的 Exchange Server 2010。
-
--   用于安装本地连接器的用户帐户必须是 Intune 的租户管理员，并且必须是 Exchange 租户中具有使用 Exchange Server 2013 的许可证的管理员。
-
 ### 另请参阅
 [启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

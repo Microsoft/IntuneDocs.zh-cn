@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 通过 Microsoft Intune 的绕过激活锁定帮助保护 iOS 设备 | Microsoft Intune
+title: 通过绕过激活锁定帮助保护 iOS 设备 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -49,7 +49,7 @@ Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 7.1 和�
 > 在 iOS 设备的监管模式下，你可以使用 Apple 配置器工具来锁定设备，以将设备的功能限制为完成特定的业务目的。 监管模式通常仅适用于公司拥有的设备。
 
 ## Intune 如何帮助你管理激活锁定
-Intune 可以请求运行 iOS 7.1 和更高版本的监管和非监管设备的激活锁定状态。 对于监管设备而言，Intune 可以检索绕过激活锁定代码并直接将代码发布到设备。 如果已擦除了设备，你可以直接使用该代码作为用户名并使用一个空密码来访问设备。
+Intune 可以请求运行 iOS 7.1 和更高版本的监管和非监管设备的激活锁定状态。 仅就监管设备而言，Intune 可以检索绕过激活锁定代码并直接将代码发布到设备。 如果已擦除了设备，你可以直接使用该代码作为用户名并使用一个空密码来访问设备。
 
 **此功能的业务优势有**：
 
@@ -59,11 +59,11 @@ Intune 可以请求运行 iOS 7.1 和更高版本的监管和非监管设备的�
 
 ## 如何从 Intune 管理员控制台使用绕过激活锁定
 > [!IMPORTANT]
-> 绕过设备上的激活锁定后，如果“查到我的 iPhone”应用处于打开状态，它将自动应用新的激活锁定。 因此，**你应实际拥有该设备，才能执行此过程**.
+> 绕过设备上的激活锁定后，如果“查到我的 iPhone”应用处于打开状态，它将自动应用新的激活锁定。 因此，**你应实际拥有该设备，才能执行此过程**。
 
-1.  在 [Microsoft Intune 管理控制平台](https://manage.microsoft.com)中，依次选择“组” &gt; “所有设备” &gt; “公司拥有的所有设备”。.
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**组** &gt; **所有设备** &gt; **公司拥有的所有设备**。
 
-2.  选择想要绕过其“激活锁定”的设备。 选择“绕过激活锁定”.
+2.  选择想要绕过其“激活锁定”的设备。 选择“绕过激活锁定”。
 
 3.  阅读警告消息。 选择“是”以继续。
 
@@ -93,6 +93,6 @@ Intune 可以请求运行 iOS 7.1 和更高版本的监管和非监管设备的�
 [使用远程锁定和密码重置功能帮助保护设备](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

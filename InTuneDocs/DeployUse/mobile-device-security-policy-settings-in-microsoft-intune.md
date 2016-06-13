@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 中的移动设备安全策略设置 | Microsoft Intune
+title: 移动设备安全策略设置 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -72,7 +72,7 @@ ms.suite: ems
 
 |设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**需要对移动设备加密**<sup>1</sup><br /><br />对于 Windows Phone 8 设备，必须将其设置为“是”.<br /><br />若要在 iOS 设备上启用加密，请启用设置“需要密码以解锁移动设备”.|是|否|是|否|是|
+|**需要对移动设备加密**<sup>1</sup><br /><br />对于 Windows Phone 8 设备，必须将其设置为 **“是”**。<br /><br />若要在 iOS 设备上启用加密，请启用设置 **“需要密码以解锁移动设备”**。|是|否|是|否|是|
 |**需要对存储卡进行加密**<br /><br />也适用于由 Exchange ActiveSync 管理的设备。|n/a|n/a|n/a（应用程序和关联的数据进行自动加密）|n/a|是|
 运行 Windows 8.1 的设备的其他信息
 
@@ -217,6 +217,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

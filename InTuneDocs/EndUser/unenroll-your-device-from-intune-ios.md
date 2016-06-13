@@ -15,7 +15,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -34,7 +34,7 @@ ms.suite: ems
 
 1.  在公司门户应用中“我的设备”下，选择要取消注册的设备。
 
-2.  点击**删除** &gt; **删除**.
+2.  点击**删除**&gt;**删除**。
 
 从 Intune 取消注册设备后，将发生以下情况：
 
@@ -57,6 +57,6 @@ ms.suite: ems
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -46,11 +46,11 @@ Windows Phone 8。0 | 不支持
 
 1.  在[公司门户网站](http://portal.manage.microsoft.com)中，点击要锁定设备的名称。
 
-2.  点击“远程锁定”
+2.  点击**远程锁定**。
 
     一旦点击“远程锁定”，将出现“远程锁定挂起”状态。  “远程锁定”成功后，状态将更改为“远程锁定成功”。
 
-    该状态将在以下三个位置中显示：
+    该“远程锁定”状态将在以下三个位置中显示：
 
     * 网站的通知区域。 
     * 设备的“详细信息”页。
@@ -64,6 +64,6 @@ Windows Phone 8。0 | 不支持
 ### 另请参阅
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

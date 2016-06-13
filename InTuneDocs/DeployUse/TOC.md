@@ -30,7 +30,7 @@
 
 ### [使用策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS 设置](ios-policy-settings-in-microsoft-intune.md)
-#### [Android 设置](android-policy-settings-in-microsoft-intune.md)
+#### [Android 和 Samsung KNOX 设置](android-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 和 Windows 8.1设置](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 设置](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 桌面版和移动版设置](windows-10-policy-settings-in-microsoft-intune.md)
@@ -106,6 +106,7 @@
 ### [准备适用于 MAM 的业务线应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [包装 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [包装 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [在未由 Intune 托管的设备上的 LOB 应用](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [编写应用时使用 SDK](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
@@ -120,9 +121,11 @@
 
 ## [新增功能](whats-new-in-microsoft-intune.md)
 
+# [开发和自定义应用](/intune/develop/intune-app-sdk)
+
 # [故障排除](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

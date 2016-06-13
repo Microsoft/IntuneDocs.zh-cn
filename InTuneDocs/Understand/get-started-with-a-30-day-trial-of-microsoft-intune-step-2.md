@@ -37,7 +37,7 @@ ms.suite: ems
 ## 添加单独的用户帐户
 使用以下步骤在评估租户中创建其他的用户帐户。 请记住，你添加的每个用户帐户都会计入作为 Intune 免费评估的一部分得到的 100 个许可证之一。
 
-1.  在 [Office 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，选择“添加用户” &gt; “新建”&gt; “用户”以启动“新建用户”向导。
+1.  在 [Office 365 管理中心](http://go.microsoft.com/fwlink/?LinkID=787455)中，选择**添加用户**&gt;**新建**&gt;**用户**以启动**新建用户**向导。
 
 2.  在 **“详细信息”** 页上，填写必填字段。
 
@@ -51,14 +51,14 @@ ms.suite: ems
 
 7.  当新的用户出现在 Office 365 管理中心中时，验证已成功创建新用户：
 
-    1.  在 [Intune 管理控制台](https://manage.microsoft.com/)中，单击“管理” &gt; “公司门户”，然后滚动到屏幕底部。 复制“Intune 公司门户”下方显示的 URL
+    1.  在 [Intune 管理控制台](https://manage.microsoft.com/)中，选择**管理**&gt;**公司门户**，然后滚动到屏幕底部。 复制**Intune 公司门户**下方显示的 URL。
 
-    2.  以“隐私模式”打开新浏览器窗口（在 Internet Explorer 中，选择“工具” &gt; “InPrivate 浏览”），或在其他设备上打开新浏览器窗口，然后导航到你在上一步中复制的 URL。 用户第一次登录时，必须为帐户提供新密码。
+    2.  以“隐私模式”打开新浏览器窗口（在 Internet Explorer 中，选择**工具**&gt;**InPrivate 浏览**），或在其他设备上打开新浏览器窗口，然后导航到你在上一步中复制的 URL。 用户第一次登录时，必须为帐户提供新密码。
 
 ## 批量添加用户
-要批量添加用户到 Intune，请使用“批量添加用户”向导上载包含用户数据的逗号分隔值 (CSV) 文件。 可通过向导中的链接下载空白模板和示例 CSV 文件。 CSV 文件的第一行必须以正确的顺序包含每个用户数据列标签。 然后，你必须为 CSV 文件中的每个用户包括“用户名”（如 **bob@contoso.com**）和“显示名称”（如 **Bob Kelly**）
+要批量添加用户到 Intune，请使用“批量添加用户”向导上载包含用户数据的逗号分隔值 (CSV) 文件。 可通过向导中的链接下载空白模板和示例 CSV 文件。 CSV 文件的第一行必须以正确的顺序包含每个用户数据列标签。 然后，你必须为 CSV 文件中的每个用户包括“用户名”  （如 **bob@contoso.com**）和“显示名称”  （如 **Bob Kelly**）。
 
-1.  在 [Office 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，选择“用户” &gt; “新建”
+1.  在 [Office 365 管理中心](http://go.microsoft.com/fwlink/?LinkID=787455)中，选择**用户**&gt;**新建**。
 
 2.  选择“批量添加”以启动“批量添加用户”向导。
 
@@ -81,9 +81,9 @@ ms.suite: ems
 
 >[!div class="step-by-step"]
 
->[&larr; **注册评估**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**创建组** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
+>[&larr;**注册评估**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**创建组** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

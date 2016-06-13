@@ -45,7 +45,7 @@ ms.suite: ems
 > [!NOTE]
 > **“公司门户应用绝不会发起或管理电话呼叫!”** 消息文本由 Google 管控，不可更改。
 
-要查看“硬件”页，请转到“组” > “所有移动设备” > “设备”。 选择用户的设备，然后转到“查看属性” > “硬件”.
+要查看“硬件”页，请转到“组” > “所有移动设备” > “设备”。 选择用户的设备，然后转到**查看属性** > **硬件**。
 
 ### 如果用户允许或拒绝访问将出现的情况
 如果用户允许访问，则设备电话号码和 IMEI 将显示在管理控制台中的“硬件”页上。
@@ -55,7 +55,7 @@ ms.suite: ems
 如果用户先允许访问，但稍后又拒绝访问，则在注册后用户下一次登录到公司门户应用时仍将显示该消息。</br></br>如果用户稍后决定允许访问，可转到“设置” > “应用” > “公司门户” > “权限” > “电话”，然后开启权限。
 
 ### 向用户发送详细信息的位置
-[登录到公司门户应用](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+步骤 5 [在 Intune 中注册 Android 设备](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## 是否允许公司门户访问你设备上的照片、媒体和文件？
 
@@ -83,6 +83,6 @@ ms.suite: ems
 [最终用户需要了解的有关 Intune 使用的内容](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

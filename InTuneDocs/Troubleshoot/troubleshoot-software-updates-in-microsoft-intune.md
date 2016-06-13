@@ -30,7 +30,7 @@ ms.suite: ems
 
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
-下表列出了 Intune **更新代理**错误代码。 如果无法在此表中找到特定错误代码，请参阅 [Windows 更新代理结果代码](http://go.microsoft.com/fwlink/?LinkID=221542)
+下表列出了 Intune **更新代理**错误代码。 如果无法在此表中找到特定错误代码，请参阅 [Windows Update Agent Result Codes（Windows 更新代理结果代码）](http://go.microsoft.com/fwlink/?LinkID=221542)。
 
 |错误代码|符号名称|更多信息|
 |--------------|-----------------|--------------------|
@@ -249,25 +249,25 @@ ms.suite: ems
 - 它们突然停止向 Microsoft 管理控制台进行报告。  
 - 它们出现高 CPU 使用率。
 - 当应用程序通过 Intune 门户安装时，安装速度缓慢。 
-- Microsoft Intune Center 将触发以下错误：*更新计算机时出错。发现错误：代码 0x800705b4*
-- “Intune 管理员控制台”>“组”>“所有设备”下的状态字段显示：*此计算机上安装的一个或多个代理存在错误。此计算机的信息可能不准确或不是最新的*
+- Microsoft Intune Center 将触发以下错误：*更新计算机时出错。发现错误：代码 0x800705b4*。
+- “Intune 管理员控制台”>“组”>“所有设备”下的状态字段显示：*此计算机上安装的一个或多个代理存在错误。此计算机的信息可能不准确或不是最新的*。
 
 如果被取代的更新（已由其他更新所取代的更新）已较长时间未遭到拒绝。 在某些进程期间（例如安装应用程序），Windows 将按顺序检查所有被取代的更新，以便可正确映射更新及其后续任务。 如果被取代的更新的列表增长过大，此检查任务可能导致 CPU 使用率过高，因为需要处理负载和时间。 此问题主要影响运行 Windows 7 的客户端，因为大量被取代的更新对 Windows 7 可用。 Windows 8 及更高版本的操作系统不具备如此多可用的被取代更新，因此不易发生此问题。
 
 **解决方法：**若要解决此问题，请执行下列步骤：
-1. 登录到 [Intune 管理员控制台](https://manage.microsoft.com)
-2. 依次选择**更新** > **所有更新**
+1. 登录到 [Intune 管理控制台](https://manage.microsoft.com)。
+2. 依次选择**更新**  > **所有更新**。
 3. 使用上面的工具栏上的筛选器选项以筛选被取代的更新。
 4. 若被取代的更新可应用到 Windows 7 或在受影响的客户端上安装的应用程序（如 Microsoft Office），则拒绝所有此类更新。 
 5. 重启受影响的客户端。
 
-此外，如果你正在运行 Windows 7，请确保已安装以下更新：[3050265 Windows 更新客户端（用于 Windows 7）：2015 年 6 月](https://support.microsoft.com/kb/3050265)
+此外，如果你正在运行 Windows 7，请确保已安装以下更新：[3050265 Windows 更新客户端（用于 Windows 7）：2015 年 6 月](https://support.microsoft.com/kb/3050265)。
 
 ### 后续步骤
-如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述
+如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 的移动设备管理功能 | Microsoft Intune
+title: 移动设备管理功能 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,12 +66,13 @@ ms.suite: ems
 
 |功能|详细信息|更多信息|
 |--------------|-----------|--------------------|
-|清单和报告|查找有关你管理的设备和它们所使用的软件的信息。<br /><br />你可以通过多种方式筛选这些报告，如设备平台以及设备是否符合公司标准。|[通过使用报表了解 Microsoft Intune 操作](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
+|清单和报告|查找有关你管理的设备和它们所使用的软件的信息。|[在 Microsoft Intune 中了解你的设备清单](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+
 
 ### 另请参阅
-[Microsoft Intune 中的 Windows PC 管理功能](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+[Microsoft Intune 中的 Windows PC 管理功能](./windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

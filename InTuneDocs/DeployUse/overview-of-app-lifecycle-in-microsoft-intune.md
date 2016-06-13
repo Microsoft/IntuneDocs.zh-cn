@@ -29,11 +29,11 @@ ms.suite: ems
 
 当应用被添加并进一步完成其他阶段时，Intune 应用生命周期便已开始，直到你删除它们。
 
-![应用生命周期](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![应用生命周期](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## 添加
 
-应用部署的第一步是添加你要管理的应用并将其部署到 Intune 中。 尽管你可以使用许多不同的应用类型，但基本的过程都是相同的。 Intune 让你可以为[已注册设备](add-apps-for-mobile-devices-in-microsoft-intune.md)和[使用 Intune 客户端软件管理的 Windows 电脑](add-apps-for-windows-pcs-in-microsoft-intune.md)添加应用.
+应用部署的第一步是添加你要管理的应用并将其部署到 Intune 中。 尽管你可以使用许多不同的应用类型，但基本的过程都是相同的。 Intune 使你可以为[已注册设备](add-apps-for-mobile-devices-in-microsoft-intune.md)和[使用 Intune 客户端软件管理的 Windows 电脑](add-apps-for-windows-pcs-in-microsoft-intune.md)添加应用。
 
 ## 部署
 
@@ -53,9 +53,9 @@ Intune 为你提供了许多方法来帮助保护你的应用中的数据。 主
 
 ## 停用
 
-最后，有可能你部署的应用会过期且需要被删除。 Intune 使得[从服务停用应用](retire-apps-using-microsoft-intune.md)变得简单.
+最后，有可能你部署的应用会过期且需要被删除。 Intune 使得[从服务停用应用](retire-apps-using-microsoft-intune.md)变得简单。
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # 手动同步设备
-如果你的应用安装时间过长，请按照以下说明手动同步你的 Windows 设备，这可能有助于加快安装速度。 请使用与你的设备类型相匹配的说明：
+如果你的应用安装时间过长，请按照以下说明手动同步你的 Windows 设备，这可能有助于加快安装速度。 仅支持列出的版本。 使用以上“本文内容”部分中所示且与你正在使用的设备类型匹配的链接：
 
 * [Windows 10 移动版](#windows-10-mobile)
 * [Windows 10 桌面版](#windows-10-desktop)
@@ -37,11 +37,11 @@ ms.suite: ems
 ## Windows 10 移动版
 若要手动同步你的 Windows 10 移动设备，以加快较慢的应用安装的速度：
 
-1. 请转到“所有应用” > “设置” > “帐户”.
+1. 请转到**所有应用** > **设置** > **帐户**。
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
     
-2. 点击“工作访问”.
+2. 点击**工作单位访问**。
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
     
@@ -58,15 +58,15 @@ ms.suite: ems
 ## Windows 10 桌面版
 若要手动同步你的 Windows 10 桌面设备，以加快较慢的应用安装的速度：
 
-1. 选择“启动”按钮，如下所示，然后选择“设置”.
+1. 选择**启动**按钮，如下所示，然后选择**设置**。
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
-2. 在“设置”页上，选择“帐户”.
+2. 在**设置**页上，选择**帐户**。
  
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
     
-3. 在“帐户”页上，选择“工作访问”.
+3. 在**帐户**页上，选择**工作单位访问**。
     
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
     
@@ -83,7 +83,7 @@ ms.suite: ems
 ## Windows Phone 8.1
 若要手动同步你的 Windows Phone 8.1 设备，以加快较慢的应用安装的速度：
 
-1. 请转到“所有应用” > “设置” > “工作区”.
+1. 请转到**所有应用**  >  **设置**  >  **工作区**。
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ ms.suite: ems
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 
