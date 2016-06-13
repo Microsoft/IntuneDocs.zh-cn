@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md) | OutofSyncHandedBackSuccess | [Details](#5e9373d9d99fedcc869fa35bc8b6b8665af49cdf421)
 
 ## Item Details
-##### <a name='5e9373d9d99fedcc869fa35bc8b6b8665af49cdf421'></a> Source: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/fe77c821cbbcdeba925158d2a8dcf011450fb4ed/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.zh-cn.xlf)
-* Handoff Datetime: 2016-06-09 17:11:30
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/032272481789e0a10d71251c3437b41d71e363fd/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md)
-* Current Handback File: [reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/3ca26135246400b142ffb049de326ad205326483/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-13 16:25:28
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
