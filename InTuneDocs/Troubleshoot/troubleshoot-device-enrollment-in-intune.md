@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ ms.suite: ems
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
 ## 已达到设备上限
-**问题：**注册期间，用户在设备上收到一个错误（如 iOS 设备上的**公司门户暂时不可用**错误），且 Configuration Manager 上的 DMPdownloader.log 包含错误 **DeviceCapReached**
+**问题：**注册期间，用户在设备上收到一个错误，例如 iOS 设备上的“公司门户暂时不可用”错误，并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
 
 **解决方法：** 根据设计，用户注册的设备不能超过 5 台。
 
@@ -50,17 +50,17 @@ ms.suite: ems
 
 2.  在 Intune 管理门户中的“管理\移动设备管理\注册规则”下，确保设备注册限制设置为 5
 
-移动设备用户可以在以下 URL 中删除设备：[https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)
+移动设备用户可以在以下 URL 中删除设备： [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)。
 
 管理员可以在 Azure Active Directory 门户中删除设备。
 
 ### 在 Azure Active Directory 门户中删除设备
 
-1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或从 [https://portal.office.com](https://portal.office.com)，单击“管理” &gt; “Azure AD”。
+1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或从 [https://portal.office.com](https://portal.office.com) 选择**管理**&gt;**Azure AD**。
 
 2.  单击页面左侧的链接，使用组织 ID 登录。
 
-3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不需要提供信用卡或付款（单击“注册免费的 Azure Active Directory”  订阅链接）。
+3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不需要提供信用卡或付款（选择**注册免费的 Azure Active Directory**订阅链接）。
 
 4.  选择“Active Directory”  ，然后选择你的组织。
 
@@ -68,13 +68,13 @@ ms.suite: ems
 
 6.  选择要删除其设备的用户。
 
-7.  单击“设备”
+7.  选择**设备**。
 
 8.  根据需要删除设备，例如那些不再使用的设备或者定义不准确的设备。
 
 > [!NOTE]
 
-> 可通过使用设备注册管理器来避免达到设备注册上限，如[使用 Microsoft Intune 中的设备注册管理器注册企业自有设备](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)中所述
+> 可通过使用设备注册管理器来避免达到设备注册上限，如[使用 Microsoft Intune 中的设备注册管理器注册企业自有设备](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)中所述。
 >
 > 如果对添加到设备注册管理器组的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
@@ -111,9 +111,9 @@ ms.suite: ems
 
 ### 排查“未定义 MDM 机构”错误
 
-1.  确保已针对你在使用的 Intune 服务版本（即 Intune、O365 MDM 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，在“管理员” &gt; “移动设备管理”中设置 MDM 机构。 对于使用 Intune 的 Configuration Manager，则在配置 Intune 连接器时对其进行设置，在 O365 中则为设置“移动设备”
+1.  确保已针对你在使用的 Intune 服务版本（即 Intune、O365 MDM 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，在**管理员**&gt;**移动设备管理**中设置 MDM 机构。 对于使用 Intune 的 Configuration Manager，则在配置 Intune 连接器时对其进行设置，在 O365 中则为设置**移动设备**。
 
-    > 设置 MDM 机构后，只能通过联系支持人员对其进行更改，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述
+    > [!NOTE]设置 MDM 机构后，只能通过联系支持人员对其进行更改，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 2.  确保该用户的凭据已与 Azure Active Directory 正确同步，方法是检查其 UPN 是否与帐户门户中的 Active Directory 信息匹配。
     如果 UPN 与 Active Directory 信息不匹配：
@@ -134,13 +134,13 @@ ms.suite: ems
 
     3.  打开数据库文件夹，找到并打开 **CM_DBName** 文件夹，其中 DBName 是客户数据库的名称。
 
-    4.  在顶部单击“新建查询”并执行以下查询：
+    4.  在顶部选择**新建查询**并执行以下查询：
 
-        -   若要查看所有用户：
+        -   若要查看所有用户：`select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   若要查看特定用户，请使用下面的查询，其中 %testuser1% 表示要查找的用户的 username@domain.com：
+        -   若要查看特定用户，请使用下面的查询，其中 %testuser1% 表示要查找的用户的 username@domain.com：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        编写查询后，单击**!执行**
+        编写查询后，选择**!执行**。
         返回结果后，即可查找云用户 ID。  如果找不到任何 ID，则表示未授权该用户使用 Intune。
 
 ## 使用 System Center Configuration Manager with Intune 时移动设备消失
@@ -150,9 +150,9 @@ ms.suite: ems
 
 ### 检查设备的删除途径
 
-1.  在 Configuration Manager 管理控制台中，选择**监视** &gt; **系统状态** &gt; **状态消息查询**
+1.  在 Configuration Manager 管理控制台中，选择**监视**&gt;**系统状态**&gt;**状态消息查询**。
 
-2.  右键单击**已手动删除的集合成员资源**，并选择**显示消息**
+2.  右键单击“已手动删除的集合成员资源”，并选择“显示消息”。
 
 3.  选取适当的时间/日期或过去 12 小时。
 
@@ -172,7 +172,7 @@ ms.suite: ems
 **解决方法：**执行以下步骤：
 
 1. 禁用 Windows Intune 连接器内部的 iOS。 
-    1. 右键单击“Intune 订阅”，然后选择“属性”。
+    1. 右键单击 Intune 订阅，然后选择**属性**。
     1. 在“iOS”选项卡上，取消选中“启用 iOS 注册”。
 
 
@@ -194,7 +194,7 @@ ms.suite: ems
 
 
 ## 该计算机已注册 - 错误 hr 0x8007064c
-**问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**
+**问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
   
 可能的原因是计算机先前已注册，或具有某台已注册的计算机的克隆映像。 先前帐户的帐户证书仍在此计算机上。
 
@@ -202,14 +202,14 @@ ms.suite: ems
 
 **解决方法：** 
 
-1. 从“开始”菜单中，选择“运行” -> “MMC” 
-1. 选择“文件” -> “添加/删除管理单元”
-1. 双击“证书”，依次选择“计算机帐户”和“下一步”，然后选择“本地计算机”
-1. 双击“证书(本地计算机)”，再选择“个人/证书” 
+1. 从**开始**菜单中，选择**运行** -> **MMC**。 
+1. **文件** -> **添加/删除管理单元**。
+1. 双击**证书**，依次选择**计算机帐户**和**下一步**，然后选择**本地计算机**。
+1. 双击**证书(本地计算机)**，再选择**个人/证书**。 
 1. 查找 Sc_Online_Issuing 发布的 Intune 证书，并将其删除（若存在）
 1. 删除注册表项 ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**（若存在）及所有子项。
 1. 尝试重新注册。 
-1. 如果仍无法注册计算机，请查找并删除以下项（若存在）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** 
+1. 如果仍无法注册计算机，请查找并删除以下项（若存在）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。 
 1. 尝试重新注册。 
 
     > [!IMPORTANT]
@@ -245,20 +245,20 @@ ms.suite: ems
 |0x80043007£¬0x80CF3007|在安装程序所在的文件夹中找不到证书文件。|在开始安装之前提取所有文件。 请不要重命名或重新定位任何提取的文件：所有文件必须位于同一文件夹中，否则安装将失败。|
 |0x8024D015、0x00240005、0x80070BC2、0x80070BC9、0x80CFD015|无法安装软件，因为客户端计算机的重启处于挂起状态。|重启计算机，然后重试客户端软件安装。|
 |0x80070032|在客户端计算机上未找到用于安装客户端软件的一个或多个先决条件。|确保所有必需的更新都已安装在客户端计算机上，然后重试客户端软件安装。|
-|0x80043008£¬0x80CF3008|ОґДЬЖф¶Ї Microsoft Online Management Updates ·юОс،£|请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述|
+|0x80043008£¬0x80CF3008|ОґДЬЖф¶Ї Microsoft Online Management Updates ·юОс،£|请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。|
 |0x80043009£¬0x80CF3009|已在服务中注册客户端计算机。|你必须先停用客户端计算机，然后才能在服务中重新注册该客户端计算机。|
 |0x8004300B£¬0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
-|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 对 DLL 进行疑难解答时，可能必须使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/en-us/kb/198038)中描述的工具|
+|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 对 DLL 进行疑难解答时，可能必须使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/en-us/kb/198038)中描述的工具。|
 |0x80cf0440|到服务终结点的连接已终止。|试用或付费帐户处于挂起状态。 创建一个新的试用或付费帐户，并重新注册。|
 
 
 ## iOS 注册错误
-有关其他 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
+有关其他 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)。
 
 ### 后续步骤
-如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述
+如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 
