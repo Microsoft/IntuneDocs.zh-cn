@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\Troubleshoot\troubleshoot-client-setup-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#5fa12aebbddb0129cba57c40cf0c21346a75de631141)
 
 ## Item Details
-##### <a name='5fa12aebbddb0129cba57c40cf0c21346a75de631141'></a> Source: [InTuneDocs\Troubleshoot\troubleshoot-client-setup-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\Troubleshoot\troubleshoot-client-setup-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/0c3ff35efd4505dbed2bffdf4c1435b7d830dbf5/InTuneDocs/Troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-* Handoff File: [troubleshoot-client-setup-in-microsoft-intune.7c5e50fa43cb7d1a7b9a1f7d4799d1a6c2655520.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0d94d15cd60d6ab7e6b235b0a81d7b844669f370/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/troubleshoot-client-setup-in-microsoft-intune.7c5e50fa43cb7d1a7b9a1f7d4799d1a6c2655520.zh-cn.xlf)
-* Handoff Datetime: 2016-06-01 17:31:40
-* Handoff Reason: Include
-* Archive File: [troubleshoot-client-setup-in-microsoft-intune.7c5e50fa43cb7d1a7b9a1f7d4799d1a6c2655520.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/d52a940d331b516306b9717cbbe3e2cb704ed7ce/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/archive/troubleshoot-client-setup-in-microsoft-intune.7c5e50fa43cb7d1a7b9a1f7d4799d1a6c2655520.zh-cn.xlf)
-* Archive Datetime: 2016-06-02 02:56:58
-* Handback File: [troubleshoot-client-setup-in-microsoft-intune.7c5e50fa43cb7d1a7b9a1f7d4799d1a6c2655520.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/a5f62f678224cb0da66fa38cb926826a89c7da0a/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/troubleshoot-client-setup-in-microsoft-intune.7c5e50fa43cb7d1a7b9a1f7d4799d1a6c2655520.zh-cn.xlf)
-* Handback Datetime: 2016-06-13 19:12:46
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
