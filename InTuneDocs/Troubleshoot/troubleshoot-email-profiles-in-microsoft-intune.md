@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,26 +37,26 @@ ms.suite: ems
 
 ### Intune 解决方案
 
-1.  打开 Microsoft Intune 管理员控制台，选择“策略”“工作负荷”&gt; “配置策略”
+1.  打开 Microsoft Intune 管理控制台，选择**策略**工作负荷&gt;**配置策略**。
 
-2.  选择电子邮件配置文件，然后单击“编辑”
+2.  选择电子邮件配置文件，然后单击**编辑**。
 
 3.  选择“允许从第三方应用程序发送电子邮件”
 
 ### 与 Intune 解决方案集成的 Configuration Manager
 
-1.  打开 Configuration Manager 控制台“资产和合规性”&gt; 
+1.  打开 Configuration Manager 控制台&gt;**资产和合规性**。
 
-2.  展开“概述” -&gt; “合规性设置” -&gt; “公司资源访问”，然后选择“电子邮件配置文件”
+2.  展开**概述** -&gt;**合规性设置** -&gt;**公司资源访问**，然后选择**电子邮件配置文件**。
 
-3.  右键单击“电子邮件配置文件”，然后打开“属性”
+3.  右键单击电子邮件配置文件，然后打开**属性**。
 
-4.  在“同步设置”选项卡上，选择“允许从第三方应用程序发送电子邮件”
+4.  在**同步设置**选项卡上，选择**允许从第三方应用程序发送电子邮件**。
 
 ## 后续步骤
-如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述
+如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

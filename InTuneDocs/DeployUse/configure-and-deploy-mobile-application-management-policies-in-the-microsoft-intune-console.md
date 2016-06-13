@@ -34,17 +34,17 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 -   运行 iOS 7 和更高版本的设备。
 
-> 移动应用程序管理策略支持向 Intune 注册的设备。
-> 
-> 如果你正在查找有关如何为不受 Intune 管理的设备创建应用管理策略的信息，请参阅[通过 Microsoft Intune 使用移动应用管理策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+> [!TIP]移动应用程序管理策略支持向 Intune 注册的设备。
+>
+> 如果你正在查找有关如何为不受 Intune 管理的设备创建应用管理策略的信息，请参阅[通过 Microsoft Intune 使用移动应用管理策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
 与其他 Intune 策略不同，你不会直接部署移动应用程序管理策略。 而是将该策略与你想要进行限制的应用相关联。 当应用部署并安装在设备上时，你指定的设置将起作用。
 
 若要将限制应用到应用，该应用必须包含 Microsoft 应用软件开发工具包 (SDK)。 有两种方式获得此类应用：
 
--   **使用策略托管应用** – 内置了应用 SDK。 要添加此类型的应用，你可以从 iTunes 应用商店或 Google Play 等应用商店指定应用的链接。 对于此类应用，无需进一步的处理。 请参阅[可配合 Microsoft Intune 移动应用程序管理策略使用的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)的列表
+-   **使用策略托管应用** – 内置了应用 SDK。 要添加此类型的应用，你可以从 iTunes 应用商店或 Google Play 等应用商店指定应用的链接。 对于此类应用，无需进一步的处理。 请参阅[可配合 Microsoft Intune 移动应用程序管理策略使用的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)的列表。
 
--   “使用‘已包装的’应用”– 使用 **Microsoft Intune 应用包装工具**对应用进行重新封装，以将应用 SDK 包括在内。 该工具通常用于处理公司内部开发的应用。 它可用于处理从应用商店下载的应用。 请参阅[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+-   “使用‘已包装的’应用”– 使用 **Microsoft Intune 应用包装工具**对应用进行重新封装，以将应用 SDK 包括在内。 该工具通常用于处理公司内部开发的应用。 它可用于处理从应用商店下载的应用。 请参阅[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
 
 某些托管应用（比如用于 iOS 和 Android 的 Outlook 应用）支持**多身份**。 这意味着 Intune 仅对公司帐户或应用程序中的数据应用管理设置。
 
@@ -56,7 +56,7 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 -   使用的公司帐户必须与用于向 Intune 注册设备的帐户相同。
 
-> 如果将 Intune 与 Configuration Manager 结合使用，请参阅[如何使用 Configuration Manager 中的移动应用程序管理策略控制应用](https://technet.microsoft.com/library/mt131414.aspx)
+> [!TIP] 如果将 Intune 与 Configuration Manager 结合使用，请参阅[如何使用 Configuration Manager 中的移动应用程序管理策略控制应用](https://technet.microsoft.com/library/mt131414.aspx)。
 
 ## 创建和部署具有移动应用程序管理策略的应用
 
@@ -85,11 +85,11 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 #### 若要发布策略托管的应用
 
-1.  当你准备好将应用上载到云存储空间时，请按照[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)中的说明进行操作
+1.  当你准备好将应用上传到云存储空间时，请按照[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)中的说明进行操作。
 
-2.  对于 iOS 应用，在“选择如何将此软件提供给设备”下选择“来自应用商店的托管 iOS 应用”
+2.  对于 iOS 应用，在 **“选择如何将此软件提供给设备”**下选择 **“应用商店的托管 iOS 应用”**。
 
-    对于 Android 应用，选择“外部链接”
+    对于 Android 应用。选择 **“外部链接”**。
 
 3.  在 **“指定 URL”**下，输入你之前记录的托管应用的 URL。
 
@@ -99,11 +99,11 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 #### 要发布使用 Microsoft Intune 应用包装工具处理的应用
 
-1.  当你准备好将应用上载到云存储空间时，请按照[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)中的说明进行操作
+1.  当你准备好将应用上传到云存储空间时，请按照[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)中的说明进行操作。
 
-2.  在“选择如何将此软件提供给设备”下选择“软件安装程序”
+2.  选择 **“选择如何将此软件提供给设备”**下的 **“软件安装程序”**。
 
-3.  在“软件安装程序文件类型”下选择“iOS 应用包(&#42;.ipa 文件)”
+3.  选择“软件安装程序文件类型”下的“iOS 应用包（*.ipa 文件）”。
 
 上载完成后，你会看到已上载的应用的 **“软件属性”** 页面上的 **“应用管理策略”** 为 **“是”** 。
 
@@ -111,7 +111,7 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 ## **步骤 3：**创建移动应用程序管理策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略” &gt; “概述” &gt; “添加策略”
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，单击**策略**&gt;**概述**&gt;**添加策略**。
 
 2.  配置并部署以下 **“软件”** 策略之一，这取决于你想要为其配置应用的设备类型：
 
@@ -119,7 +119,7 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
     -   **移动应用程序管理策略 （iOS 7 及更高版本）**
 
-    你可以使用建议的设置，或对设置进行自定义。 有关详细信息，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+    你可以使用建议的设置，或对设置进行自定义。 有关详细信息，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 3.  根据需要配置下列设置。 该选项可能有所差异，这取决于你配置策略的设备类型。
 
@@ -139,20 +139,20 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
     |**访问要求设备符合公司策略**|仅允许设备在未越狱或获取根权限时使用此应用。|
     |**在一定时间后重新检查访问要求（分钟）**|在 **“超时”** 字段，指定应用启动后重新检查访问要求前的时间段。|
     |**离线宽限期**|如果设备离线，指定应用重新检查访问要求前的时间段。|
-    |**加密应用数据**|指定与本应用相关的所有数据都将加密，包括外部存储的数据，例如 SD 卡。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用程序管理策略关联的应用，使用 OS 提供的设备级加密对静态数据进行加密。 通过必须由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用程序管理策略的设置进行加密。 正如 Apple 文档所述，[iOS 7 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/en-us/HT202739)<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用程序管理策略关联的应用，加密由 Microsoft 提供。 根据移动应用程序管理策略的设置，数据在文件 I/O 运行过程中同步加密。 Android 上托管的应用利用平台加密库使用 CBC 模式的 AES-128 加密。 加密方法没有获得 FIPS 140-2 认证。 设备存储中的内容将始终被加密。|
+    |**加密应用数据**|指定与本应用相关的所有数据都将加密，包括外部存储的数据，例如 SD 卡。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用程序管理策略关联的应用，使用 OS 提供的设备级加密对静态数据进行加密。 通过必须由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用程序管理策略的设置进行加密。 正如 Apple 文档所述， [iOS 7 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/en-us/HT202739)。<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用程序管理策略关联的应用，加密由 Microsoft 提供。 数据在文件 I/O 操作期间同步加密。  设备存储中的内容将始终被加密。 加密方法没有获得 FIPS 140-2 认证。|
     |**“阻止屏幕捕捉”** （仅限于 Android 设备）|指定在使用该应用时，阻止设备的屏幕捕捉功能。|
 
-4.  完成后，请单击“保存策略”
+4.  完成后，请单击“保存策略”。
 
 新的策略将在“策略”  工作区的“配置策略”  节点处显示。
 
 ## **步骤 4：** 将应用与移动应用程序管理策略相关联，然后部署该应用。
 部署该应用，确保你选择 **“移动应用管理”** 页面上的移动应用程序管理策略，以关联策略和应用。
 
-有关详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps.md)
+有关详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps.md)。
 
-> 对于运行 iOS 7.1 之前的操作系统的设备，关联的策略只有在卸载应用后才能删除。
-> 
+> [!IMPORTANT] 对于运行 iOS 7.1 之前的操作系统的设备，关联的策略只有在卸载应用后才能删除。
+>
 > 如果设备从 Intune 取消注册，策略也不会从应用中删除；任何应用了策略的应用都将保留策略设置，即使卸载应用并重新安装也将如此。
 
 ### 应用已部署在设备上时应该如何操作
@@ -162,20 +162,20 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 但是，对于运行 iOS 9 及更高版本的设备，Intune 将自动要求用户提供许可以接管现有应用。 如果用户同意，则应用将由 Intune 管理，并将应用你为其关联的任何移动应用程序管理策略。
 
-> 如果设备处于监督模式，则 Intune 无需要求用户提供许可即可接管现有应用。
+> [!TIP] 如果设备处于监督模式，则 Intune 无需要求用户提供许可即可接管现有应用。
 
 ## **步骤 5：** 监视应用部署。
 创建并部署关联移动应用程序管理策略的应用后，使用以下步骤监视应用并解决任何策略冲突的问题。
 
 #### 若要查看订阅的状态
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“组” &gt; “概述”
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**组**&gt;**概述**。
 
 2.  执行以下步骤之一：
 
     -   单击**“所有用户”**，然后双击你想要检查其设备的用户。 在“用户属性”页面，单击“设备”，然后双击你想要检查的设备。
 
-    -   单击“所有设备” &gt; “所有移动设备”。 在“设备组属性”页面，单击“设备”，然后双击你想要检查的设备。
+    -   单击**所有设备**&gt;**所有移动设备**。 在“设备组属性”页面，单击“设备”，然后双击你想要检查的设备。
 
 3.  从 **“移动设备属性”** 页面单击 **“策略”** 以查看已部署至设备的移动应用程序管理策略列表。
 
@@ -197,9 +197,6 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 -   如果尚无策略部署到设备，并且两个冲突设置已经部署，则将使用设备内的默认设置。
 
 
-
-
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

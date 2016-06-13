@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 公司门户常见问题 | Microsoft Intune
+title: 关于公司门户 | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -25,80 +25,85 @@ ms.suite: ems
 
 ---
 
-# 公司门户常见问题
+# 关于公司门户
 
+## 什么是公司门户，使用它可以执行什么操作？
+Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。 你可通过两种不同方式获取公司门户：
 
+- 通过在设备上安装公司门户应用。 通常通过转到设备的应用商店，可以获取公司门户应用，但 IT 管理员也可使用不同的方法为你安装公司门户应用。
+- 通过转到 IT 管理员已设置的[公司门户网站](http://portal.manage.microsoft.com)。 
 
-## 什么是公司门户？
-公司门户是公司的界面，允许你管理你的工作计算机和设备，或管理你选择在工作时使用的个人计算机或设备。  公司门户可以是你访问的网站，也可以是安装到设备上的应用。
+公司门户应用和公司门户网站存在一些细微差别，但两者都可执行大部分相同任务。 下面是一些示例：
 
-## 我可以使用公司门户做什么？
-将你的计算机或设备添加到公司门户后，你可以浏览要安装的公司应用、管理已添加的其他设备，并找到你的 IT 管理员的联系信息。
+- 注册设备
+- 查看设备状态
+- 下载公司或学校为你提供的应用
+- 重命名设备
+- 重置 PIN 或密码
+- 联系 IT 部门以获得帮助
+
+若要查看与在设备上使用公司门户应用相比，使用公司门户网站可执行的操作，请选择以下链接之一：
+
+> [!div class="op_single_selector"]
+- [Android](using-your-android-device-with-intune.md)
+- [iOS 和 Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Windows](using-your-windows-device-with-intune.md)
+- [公司门户网站](using-the-intune-company-portal-website.md)
 
 ## 将计算机或设备添加到公司门户时，会发生什么情况？
-当你将计算机或设备添加到公司门户时，可能会安装了某个软件或下载了某个应用（视设备而定）。  你还可以授予 IT 管理员管理你的设备的权限，以帮助保护设备上的公司信息。  
+当你将计算机或设备添加到公司门户时，可能会安装了某个软件或下载了某个应用（视设备而定）。  你还可以授予 IT 管理员管理你的设备的权限，以帮助保护设备上的公司信息。
+
+若要了解 IT 管理员在你的设备上可查看和不可查看的内容，请使用与你正在使用的设备类型匹配的链接：
+
+> [!div class="op_single_selector"]
+- [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [iOS 和 Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## 可将何种计算机或设备添加到公司门户？
 
--   Windows 10 移动版
-
--   Windows 10 桌面版
-
--   Windows Phone 8.1
-
--   Windows 8.1
-
--   Windows RT 设备
-
--   Windows Phone 8
-
 -   iPhone、iPad 和 Mac OS X
 
--   Android 设备
+-   Android 移动设备
 
-## 不支持的公司门户应用
-此版本的公司门户不再可用。 安装来自 Windows 应用商店的“公司门户”应用以继续。
+-   Windows 设备
+    -   Windows 10 移动版
+    -   Windows 10 桌面版
+    -   Windows Phone 8.1
+    -   Windows 8.1
+    -   Windows RT 设备
+    -   Windows Phone 8
+    -   iPhone、iPad 和 Mac OS X
+    -   Android 移动设备
+
 
 ## 是否可从公司门户中删除计算机或设备？
-是，你可以从公司门户中删除或重置计算机或设备。  “删除”和“重置”有所不同：
+是，你可以从公司门户中删除或重置计算机或设备。 “删除”和“重置”有所不同：
 
--   删除计算机或设备后，你将无法再从该设备访问公司门户，并且可能会从设备中删除某些公司数据。
+*删除*计算机或设备时，将从 Intune 取消注册设备。 一旦取消注册，你将无法再从该设备访问公司门户，并且可能会从设备中删除某些公司数据。 如要查看如何从公司门户中删除设备，请选择以下链接之一：
 
--   重置计算机或设备后，公司门户会尝试将计算机或设备重置回制造商的默认设置。  这可能会导致删除所有数据（公司数据和个人数据）。
+> [!div class="op_single_selector"]
+- [Android](unenroll-your-device-from-intune-android.md)
+- [iOS 和 Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [Windows](unenroll-your-device-from-intune-windows.md)
+
+*重置*计算机或设备后，公司门户会尝试将计算机或设备重置回制造商的默认设置。 重置设备将从设备删除所有公司和个人数据！ 如果设备丢失，还可在公司门户网站上远程重置。
+
+若要查看如何重置设备，选择以下链接之一：
+
+> [!div class="op_single_selector"]
+- [Android](reset-erase-your-lost-or-stolen-device-android.md)
+- [iOS 和 Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
+- [从公司门户网站重置设备](reset-your-device-cpwebsite.md)
 
 ## 在公司门户中看不到我的所有设备
 为了看到某台设备，必须将其添加到公司门户。 按管理员的指引浏览到公司门户并遵循设备的相关步骤。 你也无法查看你公司所拥有和管理的设备。
 
-## 我需要安装新版本的公司门户
-如果不再支持你的公司门户版本，或者可以使用较新版本的公司门户，请使用以下过程更新你的设备。
-
-### 更新你的 Windows 设备
-
-1.  导航到 Windows 应用商店并搜索“公司门户”.
-
-2.  请按照安装指示进行操作。
-
-    > [!NOTE]
-    > 如果无法访问 Windows 应用商店，请与你的管理员联系。
-
-### 更新你的 iOS 设备
-
-当新版本的公司门户可用时，Apple AppStore 将通知你。 请按照警报中的指示更新你的设备。
-
-## 我收到一个错误，指出我的计算机已注册
-这意味着你的计算机已添加到公司门户，但尚未链接到你的用户帐户。 按照以下过程将计算机链接到你的用户帐户并完成相应过程。
-
-### 链接你的计算机
-
-1.  在要将其链接到你的帐户的计算机上，单击“开始”，然后单击“Microsoft Intune Center”.
-
-2.  打开公司门户。
-
-3.  按照提示将计算机链接到你的用户帐户。
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

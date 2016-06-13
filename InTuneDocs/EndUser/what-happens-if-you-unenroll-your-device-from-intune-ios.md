@@ -15,7 +15,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -44,11 +44,11 @@ ms.suite: ems
 
 -   已从设备中删除公司电子邮件配置文件。
 
-有关如何取消注册的说明，请参阅[从 Intune 取消注册设备](unenroll-your-device-from-intune-ios.md).
+有关如何取消注册的说明，请参阅[从 Intune 取消注册设备](unenroll-your-device-from-intune-ios.md)。
 
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

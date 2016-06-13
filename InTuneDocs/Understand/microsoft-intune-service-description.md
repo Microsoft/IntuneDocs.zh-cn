@@ -29,7 +29,7 @@ ms.suite: ems
 
 Microsoft Intune 是一项基于云的服务，可帮助你管理 Windows 电脑以及 iOS、Mac OS X、Android 和 Windows 移动设备。 Intune 还有助于保护公司的应用程序和数据。 你可以单独使用 Intune，也可以将它与 System Center 2012 R2 Configuration Manager 集成，以扩展管理能力。
 
-Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 载入权益允许你与 Microsoft 专家远程合作，以便使你的 Intune 环境可供使用。 有关详细信息，请参阅 [Microsoft Intune Onboarding Benefit Description（Microsoft Intune 载入权益说明）](http://go.microsoft.com/fwlink/?LinkId=619281)。.
+Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 载入权益允许你与 Microsoft 专家远程合作，以便使你的 Intune 环境可供使用。 有关详细信息，请参阅[Microsoft Intune 载入权益说明](http://go.microsoft.com/fwlink/?LinkId=619281)。
 
 你可以使用具有 100 个用户许可证的 30 天免费试用版的 Intune。 若要开始免费试用，[请单击此处访问 Intune 注册页面](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)。 如果你的组织有企业协议或等效的批量许可协议，请与 Microsoft 代表联系以设置免费试用版。
 
@@ -42,7 +42,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 -   [Configuration Manager 中移动设备的常规设置](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
-有关 System Center 2012 R2 Configuration Manager 的信息，请参阅 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)。.
+有关 System Center 2012 R2 Configuration Manager 的信息，请参阅 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)。
 
 ## 了解 Intune 服务更新对你的影响
 由于 Intune 是一项在线服务，因此，Microsoft 可以定期对其更新。
@@ -51,7 +51,9 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 若要了解有关 Intune 服务的更改信息，请参阅 [What's new in Microsoft Intune（Microsoft Intune 新增功能）](/intune/deploy-use/Whats-new-in-microsoft-intune.md)。 [Microsoft Intune 博客](http://blogs.technet.com/b/microsoftintune/)也讨论了该服务中的更改信息，并为你能够最大程度从 Intune 中获益提供了有用的提示。
 
-重要的服务更新也将直接从 Intune 控制台的公告板中传达给你。
+重要的服务更新将也会在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)消息中心传达给你。 如果安装了配套 [Office 365 管理移动应用](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，就可以在你的移动设备上接收通知。
+
+> [!NOTE] 你可以在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)中监视 Intune 服务运行状况。 在左侧窗格中选择**服务运行状况**。  
 
 以下是 Microsoft 提供的有关 Intune 服务的通知类型：
 -   为了帮助你对服务更改做好计划，我们将根据此更改的影响，至少在服务升级前 30-90 天通知你。 将使用诸如公告板警报之类的产品内传达通道进行传达。 这些更改可能包括：
@@ -60,7 +62,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 * 新的或已更改的 API — 通知你需要进行测试，以确保自定义应用的后向兼容性
 * 系统需求的变化，例如，所需的最低浏览器版本
 * 任何需要你采取操作以启用功能或避免服务中断功能的更新。
--   Microsoft 在我们的每月服务更新中提供了有关新特征、新功能和对现有功能的改进的信息。 通常情况下，Microsoft 会在每个月的中旬左右汇总服务更新。 [What's new in Microsoft Intune（Microsoft Intune 新增功能）](/intune/deploy-use/whats-new-in-microsoft-intune.md)中描述了相关更新。.
+-   Microsoft 在我们的每月服务更新中提供了有关新特征、新功能和对现有功能的改进的信息。 通常情况下，Microsoft 会在每个月的中旬左右汇总服务更新。 [Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune.md)中描述了相关更新。
 -   如果要停用 Intune 服务，我们将提前 12 个月通知你。
 
 ## 选择适合你的管理解决方案
@@ -86,6 +88,6 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 [Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

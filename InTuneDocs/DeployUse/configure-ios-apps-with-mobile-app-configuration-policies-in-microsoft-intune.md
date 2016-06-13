@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用 | Microsoft Intune
+title: 使用移动应用配置策略配置 iOS 应用 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -42,19 +42,18 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 无需直接向用户和设备部署这些策略， 而是将策略与应用关联，然后部署应用。 只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
 
-> [!TIP]
-> 此策略类型目前仅在运行 iOS 7.1 和更高版本的设备上可用，并支持下列应用安装类型：
+> [!TIP] 此策略类型目前仅在运行 iOS 7.1 和更高版本的设备上可用，并支持下列应用安装类型：
 > 
 > -   **来自应用商店的托管 iOS 应用程序**
 > -   **iOS 应用包**
 > 
-> 有关应用安装类型的详细信息，请参阅[使用 Microsoft Intune 部署应用](deploy-apps.md).
+> 有关应用安装类型的详细信息，请参阅[使用 Microsoft Intune 部署应用](deploy-apps.md)。
 
 ## 配置移动应用配置策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略” &gt; “概述” &gt; “添加策略”.
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，单击**策略**&gt;**概述**&gt;**添加策略**。
 
-2.  在策略列表中，展开“iOS”，单击“移动应用配置”，然后单击“创建策略”.
+2.  在策略列表中，展开“iOS” ，单击“移动应用配置” ，然后单击“创建策略” 。
 
     > [!TIP]
     > 你只能配置此策略类型的自定义设置。 建议的设置不可用。
@@ -63,8 +62,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 4.  在该页面的“移动应用配置策略”  部分，输入或粘贴包含你希望填入框中的应用配置设置的 XML 属性列表。
 
-    > [!TIP]
-    > 若要了解有关 XML 属性列表的详细信息，请参阅 iOS 开发人员库中的[了解 XML 属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)。
+    > [!TIP] 若要了解有关 XML 属性列表的详细信息，请参阅 iOS 开发人员库中的 [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)（了解 XML 属性列表）。
     > 
     > 根据你所配置的应用，XML 属性列表的格式可能有所不同。 若需了解要使用确切格式的详细信息，请联系应用供应商。
     > 
@@ -72,7 +70,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
     > 
     > &lt;integer&gt;
     > &lt;real&gt;
-    > &lt;字符串&gt;
+    > &lt;string&gt;
     > &lt;array&gt;
     > &lt;dict&gt;
     > &lt;true /&gt; 或 &lt;false /&gt;
@@ -81,17 +79,9 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
     >
         > 此外，Intune 还支持属性列表中的以下令牌类型：
     >    
-    > \{\{userprincipalname\}\} —（示例：**John@contoso.com**)
-    > \{\{mail\}\} —（示例：**John@contoso.com**)
-    > \{\{partialupn\}\} —（示例：**John**)
-    > \{\{accountid\}\} —（示例：**fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-    > \{\{deviceid\}\} —（示例：**b9841cd9-9843-405f-be28-b2265c59ef97**)
-    > \{\{userid\}\} —（示例：**3ec2c00f-b125-4519-acf0-302ac3761822**)
-    > \{\{username\}\} —（示例：**John Doe**)
-    > \{\{serialnumber\}\} -（示例：**F4KN99ZUG5V2**），适用于 iOS 设备
-    > \{\{serialnumberlast4digits\}\} -（示例：**G5V2**），适用于 iOS 设备
+    > \{\{userprincipalname\}\} -（示例：**John@contoso.com**）\{\{mail\}\} -（示例：**John@contoso.com**）\{\{partialupn\}\} -（示例：**John**）\{\{accountid\}\} -（示例：**fc0dc142-71d8-4b12-bbea-bae2a8514c81**）\{\{deviceid\}\} -（示例：**b9841cd9-9843-405f-be28-b2265c59ef97**）\{\{userid\}\} -（示例：**3ec2c00f-b125-4519-acf0-302ac3761822**）\{\{username\}\} -（示例：**John Doe**）\{\{serialnumber\}\} -（示例：**F4KN99ZUG5V2**）适用于 iOS 设备 \{\{serialnumberlast4digits\}\} -（示例：**G5V2**）适用于 iOS 设备
 >
-> \{\{ and \}\} 字符仅供令牌类型使用，不得用于其他目的。
+> \{\{ 和 \}\} 字符仅供令牌类型使用，不得用于其他目的。
 
 
 
@@ -101,7 +91,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
     > [!IMPORTANT]
     > 单击“验证”后，Intune 会检查所输入的 XML 的格式是否有效。 它不会检查 XML 属性列表是否会与其关联的应用共同发挥作用。
 
-6.  完成后，单击“保存策略”.
+6.  完成后，单击 **“保存策略”**。
 
 新策略显示在“配置策略”  节点中。
 
@@ -114,8 +104,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 当部署的应用在设备上运行时，将使用你在移动应用配置策略中配置的设置运行。
 
-> [!TIP]
-> 如果一个或多个移动应用配置策略发生冲突，则系统不会强制执行任何策略，并且会在 Intune 管理控制台的“仪表板”中报告冲突.
+> [!TIP] 如果一个或多个移动应用配置策略发生冲突，则系统不会强制执行任何策略，并且会在 Intune 管理控制台的**仪表板**中报告冲突。
 
 ## 移动应用配置 XML 文件的示例格式
 
@@ -150,6 +139,6 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

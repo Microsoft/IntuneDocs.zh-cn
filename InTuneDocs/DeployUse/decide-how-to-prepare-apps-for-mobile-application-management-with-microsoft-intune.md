@@ -29,7 +29,7 @@ ms.suite: ems
 可以使用 Intune 应用包装工具或 Intune App SDK 来启用你的应用以使用移动应用程序管理策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
 ## Intune 应用包装工具
-应用包装工具主要用于内部业务线 (LOB) 应用。 此工具是一个命令行应用程序。它可以在应用周围创建包装器，之后包装器将允许 Intune 移动应用程序管理策略管理该应用。 使用此工具不需要源代码，但需要签名凭据。  有关签名凭据的详细信息，请参阅 [Intune 博客](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx)。 若要获取应用包装工具文档，请参阅 [Android 应用包装工具](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和 [iOS 应用包装工具](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+应用包装工具主要用于内部业务线 (LOB) 应用。 此工具是一个命令行应用程序。它可以在应用周围创建包装器，之后包装器将允许 Intune 移动应用程序管理策略管理该应用。 使用此工具不需要源代码，但需要签名凭据。  有关签名凭据的详细信息，请参阅 [Intune 博客](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx)。 有关应用包装工具文档的信息，请参阅 [Android 应用包装工具](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 和 [iOS 应用包装工具](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
 
 应用包装工具不支持应用商店或 Play Store 中的应用，也不支持需要开发时间集成的功能（请参见以下功能对比表）。
 
@@ -38,13 +38,12 @@ ms.suite: ems
 ## Intune App SDK
 App SDK 主要面向在应用商店或 Play Store 中安装了应用并想使用 Intune 管理应用的客户。 但是，任何应用都可以集成 SDK，即使是 LOB 应用。
 
-若要集成 SDK，需要对应用源代码具有访问权限。 有关集成 SDK 的说明，请参阅 [Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627769.aspx).
+若要了解有关 SDK 的详细信息，请参阅[概述](/intune/develop/intune-app-sdk)。 若要开始使用 SDK，请参阅 [Microsoft Intune App SDK 入门](/intune/develop/intune-app-sdk-get-started)。
 
 ## 功能比较
 此表列出了可用于 App SDK 和应用包装工具的设置。
 
-> [!NOTE]
-> 应用包装工具可以与独立 Intune 或带 Configuration Manager 的 Intune 结合使用。
+> [!NOTE] 应用包装工具可以与独立 Intune 或带 Configuration Manager 的 Intune 结合使用。
 
 |功能|App SDK|应用包装工具|
 |-----------|---------------------|-----------|
@@ -74,6 +73,6 @@ App SDK 主要面向在应用商店或 Play Store 中安装了应用并想使用
 [使用 SDK 启用针对移动应用程序管理的应用](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

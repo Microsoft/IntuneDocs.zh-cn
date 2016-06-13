@@ -15,7 +15,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -98,11 +98,11 @@ ms.suite: ems
 
 -   处于漫游模式下时，在设备上启用或禁用自动文件同步。 如果允许自动文件同步，则可能会产生漫游费用。
 
-若要了解如何注册设备的步骤，请参阅[在 Intune 中注册 iOS 设备](enroll-your-device-in-intune-ios.md)或[在 Intune 中注册 Mac OS X 设备](enroll-your-device-in-intune-mac-os-x.md).
+若要了解如何注册设备的步骤，请参阅[在 Intune 中注册 iOS 设备](enroll-your-device-in-intune-ios.md)或[在 Intune 中注册 Mac OS X 设备](enroll-your-device-in-intune-mac-os-x.md)。
 
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

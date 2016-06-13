@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 通过 Microsoft Intune 控制设备上的 Microsoft Passport 设置 | Microsoft Intune
+title: 控制设备上的 Microsoft Passport 设置 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,11 +34,11 @@ Intune 以两种方式与 Passport for Work 集成：
 
 -   可以使用 Intune 策略来控制用户能够和不能用于登录的手势。
 
--   可在 Passport for Work 密钥存储提供程序 (KSP) 中存储身份验证证书。 有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md).
+-   可在 Passport for Work 密钥存储提供程序 (KSP) 中存储身份验证证书。 有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。
 
 ## 创建 Passport for Work 策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“管理” &gt; “移动设备管理” &gt; “Windows” &gt; “Passport for Work”打开 Passport for Work 页面，如下所示。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**管理**&gt;**移动设备管理**&gt;**Windows** &gt;**Passport for Work** 打开 Passport for Work 页面，如下所示。
 
     ![Passport for Work 页面](../media/passport.png)
 
@@ -47,7 +47,7 @@ Intune 以两种方式与 Passport for Work 集成：
     - **在已注册设备上启用 Passport for Work** — 如果想在所有 Windows 10 设备上配置 Passport for Work 设置，则选择此设置。
     - **不配置** — 如果不想使用 Intune 来控制 Passport for Work 设置，则选择此设置。 不会更改 Windows 10 设备上的任何现有 Passport for Work 设置。 屏幕上的所有其他设置将被禁用。
 3.  如果选择了“在已注册设备上启用 Passport for Work”，请配置将应用于所有已注册 Windows 10 和 Windows 10 移动版设备的必要设置。
-3.  完成后，单击“保存”.
+3.  完成后，单击“保存”。
 
 ## Passport for Work：PIN 设置
 
@@ -57,8 +57,7 @@ Intune 以两种方式与 Passport for Work 集成：
     - **允许** — 用户可以在其 PIN 中使用该字符类型，但不强制使用。
     - **必需** — 用户在其 PIN 中必须至少包含其中一种字符类型。 例如，常见的做法是要求包含至少一个大写字母和一个特殊字符。
     - **不允许**（默认）— 用户不得在其 PIN 中使用这些字符类型（这也是不配置此设置时的行为）。
-    > [!TIP]
-    > 特殊字符包括：**! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP] 特殊字符包括：**! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**。
 - **PIN 有效期(天)** — 比较好的一种做法是指定 PIN 的有效期，在超过此期限后，最终用户必须更改该 PIN。 默认值为 41 天。 
 - **记住 PIN 历史记录** — 使用此设置来限制重用以前用过的 PIN。 默认情况下不能重用最近使用的 5 个 PIN。
 
@@ -80,6 +79,6 @@ Intune 以两种方式与 Passport for Work 集成：
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

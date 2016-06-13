@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 中的 Windows 版本升级策略设置 | Microsoft Intune
+title: Windows 版本升级策略设置 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -44,11 +44,11 @@ Microsoft Intune“版本升级策略”可以将运行以下任一 Windows 10 �
 |**说明**|（可选）输入有助于在 Intune 控制台中识别该策略的描述。
 |**要升级到的版本**|从下拉列表中，选择你想将目标设备升级到的版本：Windows 10 桌面版、Windows 10 全息版或 Windows 10 移动版。
 |**产品密钥**|指定从 Microsoft 获取并且可以用于升级所有目标 Windows 10 桌面版设备的产品密钥。<br>在创建包含产品密钥的策略后，将无法对产品密钥进行编辑。 这是因为出于安全考虑，密钥将被遮盖。 若要更改产品密钥，必须重新输入完整的密钥。
-|**许可证文件**|单击“浏览”以选择从 Microsoft 获取并且包含要将目标设备升级到的 Windows 全息版许可证信息的许可证文件。
+|**许可证文件**|单击**浏览**以选择从 Microsoft 获取的许可证文件，该文件包含要将目标设备升级到的 Windows 全息版或 Windows 10 移动版的许可证信息。
 
 ### 另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

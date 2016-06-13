@@ -48,11 +48,11 @@ ms.suite: ems
 
     ![要求输入 PIN 的 OneDrive 应用的屏幕截图](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  设置 PIN 并确认后，即可访问你“OneDrive for Business”上的文件
+5.  设置 PIN 并确认后，即可访问你“OneDrive for Business” 上的文件。
 
     ![显示使用现有文件列表打开的文件位置的屏幕截图](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > 更改已部署策略时，将在下次打开该应用时应用更改。
+    > [!NOTE]更改已部署策略时，将在下次打开该应用时应用更改。
 
 ##  在 Android 设备上访问 OneDrive
 
@@ -105,13 +105,13 @@ Microsoft Word 可用作这种情况的一个示例。
 
     ![Word 文档中输入的句子的屏幕截图](../media/AppManagement/iOS_WordCreateCompanyDoc.PNG)
 
-5.  将你保存的文档打开到工作位置。  复制文本，打开你的个人“Facebook”帐户并尝试粘贴复制的文本。  你应无法将该内容粘贴到新的 Facebook 帖子中。 粘贴选项并不灰显，但当按“粘贴”时没有任何反应
+5.  将你保存的文档打开到工作位置。  复制文本，打开你的个人“Facebook”帐户并尝试粘贴复制的文本。  你应无法将该内容粘贴到新的 Facebook 帖子中。 粘贴选项并不灰显，但当按“粘贴” 时没有任何反应。
 
     ![显示剪切、复制和粘贴选项的屏幕截图](../media/AppManagement/iOS_WordCopyCompany.png)
 
     ![在 Facebook 帖子中未显示任粘贴的数据的屏幕截图](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  现在重复步骤 2 和 3 以创建另一个新文档，输入所选的一个句子，不将其保存到工作位置，而是保存到你的个人位置，例如“OneDrive - 个人”。
+6.  现在重复步骤 2 和 3 再创建一个新文档，输入所选的一个句子，然后将其保存到你的个人位置（而非工作位置），例如 **OneDrive - 个人**。
 
     ![在选择句子进行复制的情况下剪切、复制和粘贴所选内容的句子](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -133,27 +133,35 @@ Intune 仅支持对于每个设备，将 MAM 策略部署到一个用户帐户�
 
 阅读以下示例方案以更深入地了解如何处理多个用户帐户。
 
-用户 A 为两家公司（“X 公司”和“Y 公司”）工资。用户 A 对于每家公司具有一个工作帐户，它们都使用 Intune 来部署 MAM 策略。 “X 公司”在“Y 公司”“之前” 部署 MAM 策略。与“X 公司”关联的帐户会获得 MAM 策略，而与 Y 公司关联的帐户不会。如果你希望与 Y 公司关联的用户帐户通过 MAM 策略管理，则必须删除与 X 公司关联的用户帐户。
+用户 A 为两家公司（“X 公司”和“Y 公司”）工资。用户 A 对于每家公司具有一个工作帐户，它们都使用 Intune 来部署 MAM 策略。 **X 公司**在**Y 公司****之前**部署 MAM 策略。与“X 公司”关联的帐户会获得 MAM 策略，而与 Y 公司关联的帐户不会。如果你希望与 Y 公司关联的用户帐户通过 MAM 策略管理，则必须删除与 X 公司关联的用户帐户。
 ### 添加第二个帐户
 #### IOS
-如果使用 iOS 设备，则当你在同一设备上尝试添加第二个工作帐户时，可能会看到拦截消息。  还将显示删除现有帐户并添加新帐户的选项。 可以通过单击“是”来执行此操作。
+如果使用 iOS 设备，则当你在同一设备上尝试添加第二个工作帐户时，可能会看到拦截消息。  还将显示删除现有帐户并添加新帐户的选项。 可以通过单击“是” 来执行此操作。
 
 ![包含阻止消息以及“是”和“否”选项的对话框的屏幕截图](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-如果使用 Android 设备，则你可能会看到具有删除现有帐户并添加新帐户指令的阻止消息。  在 Android 设备上，若要删除现有帐户，请转到“设置”&gt;“常规”&gt;“应用程序管理器”&gt;“公司门户”并选择“清除数据”
+如果使用 Android 设备，则你可能会看到具有删除现有帐户并添加新帐户指令的阻止消息。  若要在 Android 设备上删除现有帐户，请转到**“设置”&gt;“常规”&gt;应用程序管理器”&gt;“公司门户”，然后选择“清除数据”**。
 
 ![错误消息以及删除操作的指令的屏幕截图](../media/AppManagement/Android_SwitchUser.png)
 
 ##  使用权限管理共享应用查看媒体文件
-若要在 Android 设备上查看公司 AV、PDF 和图像文件，请使用 [Microsoft 权限管理 (RMS) 共享应用](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)
+若要在 Android 设备上查看公司 AV、PDF 和图像文件，请使用 [Microsoft 权限管理 (RMS) 共享应用](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)。
 
 从 Google Play 商店下载此应用。  在设备上安装该应用之后，便可启动该应用，并使用公司凭据进行身份验证。 现在应能够从其他策略托管应用查看未受保护和受保护的文件。
+
+**未在 Intune 中注册的 Android 设备**
+
+需启动 RMS 应用并使用工作帐户进行身份验证，才可使用 RMS 共享应用以通过 Intune 托管的其他应用查看文件。  登录时，你将看到以下消息“**仅在不具备 RMS 许可证时**：
+
+**身份验证成功 – 现可查看公司文件；但尚未设置组织，无法保护文件。” 请联系 IT 管理员，以获取详细信息。**
+
+你仍可使用 RMS 共享应用来查看公司文件。 并仍可通过 Intune 托管的其他应用打开和查看公司文件，且还仍将应用 MAM 策略。  此消息是指你将不能添加 RMS 共享应用所提供的额外保护功能。  必须具有 RMS 许可证才可保护文件。 若要了解有关 RMS 文件保护功能的详细信息，请参阅[保护设备上的文件](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place)和[保护通过电子邮件共享的文件](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email)。
 
 
 ### 另请参阅
 [使用 Microsoft Intune 创建和部署移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

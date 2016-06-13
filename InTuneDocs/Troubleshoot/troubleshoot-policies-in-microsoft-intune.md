@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,29 +53,29 @@ ms.suite: ems
 
 ![Intune 设备策略](../media/Intune-Device-Policy-v.2.jpg)
 
-> 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
+> [!NOTE] 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
 
 ## 策略刷新和更新间隔
 请注意，策略将定期刷新和更新。 一般情况下，应在进行更改后 15 分钟内在设备上注册策略。 以下是有关策略定期刷新的详细信息：
 
 -   **针对 MDM 注册的 Windows 设备**：每天在当地时间上午 3:00 由计划的任务在设备上触发。
 
--   **Windows Phone**：每 8 小时更新一次策略。 这可以通过在“设置”下的“公司门户”中刷新来强制进行
+-   **Windows Phone**：每 8 小时更新一次策略。 这可以通过在“设置”下的“公司门户”中刷新来强制进行。
 
--   **iOS**：每天以随机时间间隔更新一次策略。 也可以通过打开公司门户、选择设备，然后单击“同步”强制进行
+-   **iOS**：每天以随机时间间隔更新一次策略。 也可以通过打开公司门户、选择设备，然后选择**同步**强制进行。
 
--   **Android**：每天以随机时间间隔更新一次策略。 也可以通过打开公司门户、选择设备，然后单击“同步”强制进行
+-   **Android**：每天以随机时间间隔更新一次策略。 也可以通过打开公司门户、选择设备，然后选择**同步**强制进行。
 
 ## policyplatform.log 中与 Microsoft Intune 策略相关的错误
 对于非 MDM Windows 设备，policyplatform.log 文件中的策略错误可能是因设备上 Windows 用户帐户控制 (UAC) 中的非默认设置导致的。 某些非默认 UAC 设置会影响 Microsoft Intune 客户端安装和策略执行。
 
 ### 解决 UAC 问题
 
-1.  停用计算机，如[从 Microsoft Intune 管理停用设备](/intune/deploy-use/retire-devices-from-microsoft-intune-management)中所述
+1.  停用计算机，如[从 Microsoft Intune 管理停用设备](/intune/deploy-use/retire-devices-from-microsoft-intune-management)中所述。
 
 2.  等待 20 分钟，以便删除客户端软件。
 
-    > 请勿尝试从“程序和功能”中删除客户端。
+    > [!NOTE]请勿尝试从“程序和功能”中删除客户端。
 
 3.  在开始菜单上，键入 **UAC** 以打开用户帐户控制设置。
 
@@ -100,8 +100,8 @@ ms.suite: ems
 Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”  设置为 8，然后尝试将其减少到 4。 已向设备应用更严格的策略。
 
 如果要将策略更改为安全级别较低的值，可能需要重置安全策略，具体视设备平台而定。
-例如，在 Windows RT 的桌面上，从右轻扫打开“超级按钮”栏并单击“设置” &gt; “控制面板”。  选择“用户帐户”  小程序。
-在左侧导航菜单底部有一个“重置安全策略”  链接。 单击它，然后单击“重置策略”  按钮。
+例如，在 Windows RT 中，在桌面上从右轻扫打开**超级按钮**栏并选择**设置**&gt;**控制面板**。  选择“用户帐户”  小程序。
+在左侧导航菜单底部有一个“重置安全策略”  链接。 选中它，然后选择**重置策略**按钮。
 对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS），可能需要将其停用并重新注册回服务，这样才能应用限制较少的策略。
 
 ## Android 设备在最终用户未接受时不强制实施安全策略更改
@@ -113,9 +113,9 @@ Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策�
 **解决方法：**在 [Office 365 管理中心](https://portal.office.com/)，删除公司名称中的特殊字符并保存公司信息。
 
 ### 后续步骤
-如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述
+如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

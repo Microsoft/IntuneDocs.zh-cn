@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 中的 Mac OS X 策略设置 |Microsoft Intune
+title: Mac OS X 策略设置 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -43,12 +43,12 @@ ms.suite: ems
 |----------------|---------------|
 |**需要密码才能解锁设备**|指定用户是否必须使用密码才可访问其 Mac 计算机。 **重要提示：**与 iOS 设备不同，在 Mac OS X 设备上，不会立即通知用户更新其密码来符合此设置。|
 |**所需的密码类型**|指定所用密码是否可以仅由数值组成，还是必须为“字母数字”  （包含字母和数字）。 **重要提示：**仅在 Mac OS X 10.10.3 及更高版本上支持此设置。|
-|**密码中所需的复杂字符数**|指定密码中所需的复杂字符数（0  -  4）。).<br /><br />复杂字符是一个符号，如 ?。'|
+|**密码中所需的复杂字符数**|指定密码中所需的复杂字符数（**0** - **4**）。<br /><br />复杂字符是一个符号，如“?”|
 |**最短密码长度**|指定密码的最短长度（“4”  到“14”  个字符之间）。|
-|**允许简单密码**|允许使用简单密码，如“0000”或“1234”'.|
+|**允许简单密码**|允许使用简单密码，如“0000”或“1234”。|
 |**需要提供密码之前处于非活动状态的分钟数**|指定在需要密码来进行解锁之前，计算机必须保持非活动状态的时间。|
 |**密码过期(天)**|指定用户在多少天之后必须更改密码（1  -  255 天）。|
-|**记住密码历史记录**|此设置用于防止用户使用以前用过的密码。 设置该选项时，还可以设置“防止重用以前的密码”以指定以前使用的不能重复使用的密码数（1  -  24）).|
+|**记住密码历史记录**|此设置用于防止用户使用以前用过的密码。 设置该选项时，还可以设置**防止重用以前的密码**以指定以前使用的不能重复使用的密码数（**1** - **24**）。|
 |**屏幕保护程序激活前处于非活动状态的分钟数**|指定屏幕保护程序激活前计算机必须处于空闲状态的时间。|
 
 ### 相容和不相容应用的设置
@@ -61,14 +61,13 @@ ms.suite: ems
 
 |设置名|详细信息|
 |----------------|---------------|
-|**用户安装列出的应用时报告不相容情况**|列出不允许用户安装的 Mac OS X 应用。 如果用户安装任何这些应用，“不相容应用报告”中将报告安装的应用。.|
-|**用户安装未列出的应用时不报告不相容情况**|列出允许用户安装的 Mac OS X 应用。 如果用户安装任何其他应用，“不相容应用报告”中将报告安装的应用。.|
-|**添加**|将应用添加到选定的列表。 指定你选择的名称（可为应用发布者）和应用的捆绑 ID。 **提示：**若要查找应用的捆绑 ID，请在已安装此应用的 Mac 计算机上执行以下步骤：<ol><li>打开安装应用的文件夹（例如，**/Applications**）)</li><li>选择 &lt;应用名称&gt;.app 捆绑包，然后选择“显示包内容”</li><li>打开“Info.plist”  文件</li><li>检查与“” </li></ol>捆绑 ID 的格式为“com.contoso.appname” |
+|**用户安装列出的应用时报告不相容情况**|列出不允许用户安装的 Mac OS X 应用。 如果用户安装任何这些应用，“不相容应用报告” 中将报告安装的应用。|
+|**用户安装未列出的应用时不报告不相容情况**|列出允许用户安装的 Mac OS X 应用。 如果用户安装任何其他应用，“不相容应用报告” 中将报告安装的应用。|
+|**添加**|将应用添加到选定的列表。 指定你选择的名称（可为应用发布者）和应用的捆绑 ID。 **提示：**若要查找应用的捆绑 ID，请在已安装此应用的 Mac 计算机上执行以下步骤：<ol><li>打开安装应用的文件夹（例如，**/Applications**）</li><li>选择 &lt;应用名称&gt;.app 捆绑包，然后选择“显示包内容”</li><li>打开“Info.plist”  文件</li><li>检查与“” </li></ol>捆绑 ID 的格式为“com.contoso.appname” |
 |**导入应用**|导入你已在逗号分隔值文件中指定的应用列表。 在文件中使用格式、应用名称、发布者和应用捆绑 ID。|
 |**编辑**|允许你编辑所选应用的名称、发布者和捆绑 ID。|
 |**删除**|从列表中删除选定的应用。|
-> [!TIP]
-> 有关 Intune 报告的详细信息，请参阅 [Understand Microsoft Intune operations by using reports（通过使用报告了解 Microsoft Intune 操作）](understand-microsoft-intune-operations-by-using-reports.md)。.
+> [!TIP] 有关 Intune 报告的详细信息，请参阅[通过使用报表了解 Microsoft Intune 操作](understand-microsoft-intune-operations-by-using-reports.md)。
 
 > [!IMPORTANT]
 > Mac OS X 设备处于休眠模式时，无法传递策略和配置文件或列出它们的清单。 因此，Intune 控制台可能会暂时显示状态“策略设置错误”，直到下一次从休眠模式中唤醒设备。
@@ -78,9 +77,9 @@ ms.suite: ems
 
 #### 运行报表
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“报告” &gt; “不相容应用报告”.
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**报告**&gt;**不相容应用报告**。
 
-2.  选择你想要检查的设备组，是要检查相容应用还是不相容应用，或是同时检查两者，然后单击“查看报告”.
+2.  选择你想要检查的设备组，是要检查相容应用还是不相容应用，或是同时检查两者，然后单击“查看报告” 。
 
 ## Microsoft Intune 中的 Mac OS X 自定义策略设置
 使用 Microsoft Intune 的“Mac OS X 自定义配置策略”，将用“Apple Configurator 工具”[](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)创建的设置部署到 Mac OS X 设备。 使用此工具可以创建控制这些设备的操作的许多设置，并将其导出到配置的配置文件中。 然后可将此配置文件导入到 Intune Mac OS X 自定义策略，并向组织中的用户和设备部署这些设置。
@@ -116,7 +115,7 @@ ms.suite: ems
 
 -   从 Apple Configurator 工具中导出文件（扩展名为 **.mobileconfig**）。
 
--   使用 [Apple 配置文件关键参考](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html)中的合适架构自行创建文件。.
+-   使用 [Apple 配置文件键引用](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html)中的相应架构自行创作文件。
 
 
 > [!IMPORTANT]
@@ -127,6 +126,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

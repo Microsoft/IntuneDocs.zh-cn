@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 中的 Windows 策略设置 |Microsoft Intune
+title: Windows 策略设置 ｜ Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Microsoft Intune 中的 Windows 策略设置
-使用 Microsoft Intune **Windows 常规配置策略**为已注册的 Windows 8 和 Windows 8.1 设备配置设置：
+使用 Microsoft Intune **Windows 常规配置策略（Windows 8.1 及更高版本）**为已注册的 Windows 8 和 Windows 8.1 设备配置设置：
+
+## 适用性设置
+
+|设置名|详细信息|
+|----------------|----------------------------------|
+|**将所有配置应用到 Windows 10**|此策略中的设置除了可以应用到 Windows 8 和 Windows 8.1 设备外，还可以应用到 Windows 10 设备。|
 
 ## 安全设置
 
@@ -47,7 +53,7 @@ ms.suite: ems
 
 |设置名|详细信息|Windows 8.1 和 Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**需要对移动设备加密**<sup>1</sup>|要求对设备上的文件进行加密。<br>对于 Windows Phone 8 设备，必须将其设置为“是”.|是|否|
+|**需要对移动设备加密**<sup>1</sup>|要求对设备上的文件进行加密。<br>对于 Windows Phone 8 设备，必须将其设置为 **“是”**。|是|否|
 <sup>1</sup> 运行 Windows 8.1 的设备的其他信息
 
 -   若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](http://support.microsoft.com/kb/3013816) 。
@@ -119,6 +125,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

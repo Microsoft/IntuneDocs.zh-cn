@@ -38,13 +38,13 @@ ms.suite: ems
 
 你需要访问应用的源代码才可使用 SDK，但你可启用大部分 SDK 功能而无需更改应用的行为。
 
-有关 SDK 的概述，请参阅[概述](https://msdn.microsoft.com/en-us/library/mt627767.aspx)。 若要开始使用 Intune App SDK，请参阅 [Microsoft Intune App SDK 入门](https://msdn.microsoft.com/library/mt627766.aspx).
+有关 SDK 的概述，请参阅[概述](/intune/develop/intune-app-sdk)页面。 若要开始使用 Intune App SDK，请参阅 [Microsoft Intune App SDK 入门](/intune/develop/intune-app-sdk-get-started)。
 
 ### 另请参阅
 [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

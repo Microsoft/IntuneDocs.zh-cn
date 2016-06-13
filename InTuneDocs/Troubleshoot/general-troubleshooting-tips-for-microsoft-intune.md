@@ -6,7 +6,7 @@ description:
 keywords:
 author: nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 部署 Microsoft Intune 后，你可能会遇到有关配置或客户端的问题。 下面的资源可帮助你找出问题的原因，以便解决问题。
 
 > [!NOTE]
-> 若要创建支持请求或查看现有请求，请单击[此处](https://portal.office.com/admin/default.aspx)以访问 Office 365 管理中心。 有关支持选项的详细信息，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md).
+> 若要创建支持请求或查看现有请求，请[访问 Office 365 管理中心](https://portal.office.com/admin/default.aspx)。 有关支持选项的详细信息，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)。
 ## 定义问题
 
 -   行为是什么？
@@ -46,6 +46,8 @@ ms.suite: ems
 
 -   用户是否可能遇到身份验证问题？ 如果可能遇到此问题，请检查用户是否可以登录到使用 Azure Active Directory 的其他服务。 此外，请查看用户可以从另一个设备登录。
 
+-   是否已检查服务状态？ 你可以在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)中监视 Intune 服务运行状况。 在左侧窗格中选择**服务运行状况**。 
+
 ## 收集可用数据
 
 -   设备日志。 在以下位置了解如何收集设备日志：
@@ -54,7 +56,7 @@ ms.suite: ems
   - [将 Android 注册错误发送给 IT 管理员](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
   - [将 iOS 注册错误发送给 IT 管理员](/intune/enduser/send-errors-to-your-it-admin-ios.md)
 
--   例如，管理控制台数据，对于策略实施问题，你应该检查目标策略及其状态，如[通过 Microsoft Intune 使用组来管理用户和设备](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   例如，管理控制台数据，对于策略实施问题，你应该检查目标策略及其状态，如[通过 Microsoft Intune 使用组来管理用户和设备](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
 
 ## 研究解决方案
 
@@ -64,7 +66,7 @@ ms.suite: ems
 
 -   你可以建立支持请求。 如果你已经定义问题并收集可用数据，Intune 支持将能够更好地帮助你解决问题。
 
-    要创建支持请求，请单击[此处](https://portal.office.com/admin/default.aspx)以访问 Office 365 管理中心。 有关支持选项的详细信息，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md).
+    要创建支持请求，请[访问 Office 365 管理中心](https://portal.office.com/admin/default.aspx)。 有关支持选项的详细信息，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)。
 
 ## 社区资源
 你可以在以下社区资源中查找其他有用信息：
@@ -77,8 +79,8 @@ ms.suite: ems
 
 -   [Intune 论坛](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-## 后续步骤
-下面列出的主题包含针对特定问题的疑难解答帮助。 如果该信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述.
+### 后续步骤
+下面列出的主题包含针对特定问题的疑难解答帮助。 如果该信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
@@ -93,9 +95,8 @@ ms.suite: ems
 [排查 Microsoft Intune 中的客户端安装问题](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [排查 Microsoft Intune 中的软件更新问题](troubleshoot-software-updates-in-microsoft-intune.md)
-g
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

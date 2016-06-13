@@ -30,13 +30,13 @@ ms.suite: ems
 
 如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](http://portal.manage.microsoft.com)进行重置。 公司门户网站是一个网页，可以用于管理计算机和在 Intune 中注册的设备，还可以在使用公司门户应用时用它来处理你可以执行的大多数相同任务。
 
-> [!NOTE] 可能在公司门户网站上无法看到“重置密码”按钮，这要取决于 IT 管理员配置 Intune 的方式。 Windows 8.1 和 Windows RT 设备不支持密码重置。
+> [!NOTE] 公司门户网站上可能不会显示“重置密码”按钮，这具体取决于 IT 管理员配置 Intune 的方式。 Windows 8.1 和 Windows RT 设备不支持密码重置。
 
 重置密码：
 
 1.  打开[公司门户网站](http://portal.manage.microsoft.com)，然后点击要重置其密码的设备。
 
-2.  点击“重置密码”
+2.  点击**重置密码**。
 
     ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
 
@@ -44,7 +44,7 @@ ms.suite: ems
 
     ![sign-out-sign-back-in](./media/iwp-2-sign-out.png)
 
-4.  点击“重置密码”
+4.  点击**重置密码**。
 
     ![tap-reset-passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
@@ -65,6 +65,6 @@ ms.suite: ems
 ### 另请参阅
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

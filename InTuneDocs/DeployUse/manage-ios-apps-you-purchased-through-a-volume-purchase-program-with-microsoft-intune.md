@@ -49,25 +49,25 @@ Microsoft Intune 可帮助你管理通过这样的程序购买的应用，即从
 
 ## 获取并上传 Apple VPP 令牌
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“管理” &gt; “iOS 和 Mac OS X” &gt;  “批量购买计划”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**管理**&gt;**iOS 和 Mac OS X**&gt;**批量购买计划**。
 
 2.  单击“Apple VPP 帐户”链接，并且如果你尚未拥有帐户，请注册适用于企业的批量购买计划。 一旦注册完成，下载你的帐户的 Apple VPP 令牌。
 
-3.  在 Intune 控制台的“管理 Apple 批量购买计划 (VPP)”页上，单击“上载 VPP 令牌”。
+3.  在 Intune 控制台的**管理 Apple 批量购买计划 (VPP)** 页上，单击**上传 VPP 令牌**。
 
 4.  在“上载 VPP 令牌”对话框中，输入或粘贴 VPP 令牌名称和你的 Apple ID，然后单击“上载”。
 
-5.  在警告对话框中，单击该复选框以表示你已了解你此后将不能更改为不同的 VPP 帐户，然后单击“是”。
+5.  在警告对话框中，单击该复选框以指示你已了解你此后将不能更改为不同的 VPP 帐户，然后单击“是”。
 
 在“批量购买计划”页上，你现在可以查看有关 Apple VPP 令牌的信息，包括它上一次更新的时间，何时将过期，以及上一次与 Intune 同步的时间。
 
-你可以随时通过单击“立即同步”将 Apple 保存的数据与 Intune 同步。
+你可以随时通过单击**立即同步**将 Apple 保存的数据与 Intune 同步。
 
-## 上传并部署批量购买的应用
+## 部署批量购买的应用
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“应用” &gt; “托管软件” &gt; “批量购买的应用”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**应用**&gt;**托管软件**&gt;**批量购买应用**。 此列表显示已从 Apple VPP 服务同步的所有应用。
 
-2.  使用[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)主题中的说明完成应用的上传、创建和部署。
+2.  选择你想要部署的应用，单击**管理部署**，然后使用[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)主题中的说明完成应用的上传、创建和部署。
 
 在应用部署为**必须**安装时，安装该应用的每个用户都将使用一个许可证。
 
@@ -75,20 +75,20 @@ Microsoft Intune 可帮助你管理通过这样的程序购买的应用，即从
 
 具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple 批量购买计划。 继续安装应用前，他们必须执行此操作。
 
-> 查看 **VPP 条款状态**列以查看向其部署应用的每个用户的接受状态。
+> [!TIP]查看**VPP 条款状态**列以查看向其部署应用的每个用户的接收状态。
 
 如果没有更多的许可证可用，则部署将失败。
 
 ## 监视 Apple VPP 应用
-你可以从“托管软件” &gt; “批量购买的应用”节点中的“应用”工作区内监视已部署的 VPP 应用以及使用的许可证数。
+你可以从**托管软件**&gt;**批量购买的应用**节点中的**应用**工作区内监视已部署的 VPP 应用以及使用的许可证数。
 
-> 你也可以使用应用“筛选器”来检查每个应用的安装状态。
+> [!TIP]你也可以使用应用**筛选器**来检查每个应用的安装状态。
 
 ### 另请参阅
-[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

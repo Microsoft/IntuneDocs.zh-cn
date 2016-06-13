@@ -61,10 +61,11 @@ ms.suite: ems
 
   对于未在 Intune 中注册的设备，策略托管应用中的 Web 链接将仅在使用移动应用管理策略的托管浏览器应用中打开。
 
-  如果你正使用 Intune 管理设备，请参阅 [manage internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)（使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问）
+  如果你正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](manage-internet-access-using-managed-browser-policies.md)。
 
     **默认值 = 是**
 - **加密应用数据：**选择“是”以启用加密。 如果启用此设置，与移动应用管理策略关联的应用将由 Microsoft 进行加密。 数据在文件 I/O 操作期间同步加密。 设备存储中的内容始终被加密。
+  >[!NOTE]加密方法没有获得 FIPS 140-2 认证
 
   **默认值 = 是**
 
@@ -75,12 +76,13 @@ ms.suite: ems
 ##  Android 访问策略设置
 术语**策略托管应用**指使用 MAM 策略配置的应用
 
-- **访问需要简单 PIN：**选择“是”以要求使用 PIN 访问策略托管应用。 用户首次在工作环境中运行应用时，将提示其进行此设置。
+- **访问需要 PIN：**选择**是**以要求使用 PIN 访问策略托管应用。 用户首次在工作环境中运行应用时，将提示其进行此设置。
 
  **默认值 = 是**
-- **PIN 重置之前的尝试次数：**指定输入 PIN 码的尝试次数，达到该次数后用户必须重置 PIN。
 
- **此设置没有默认值。**
+ -  **允许简单 PIN：**指定是否允许用户使用简单的 PIN 序列，如 1234 或 1111。 **默认值 = 是**。
+ - **PIN 长度：**指定 PIN 必须包含的最小位数。 **默认值 = 4**
+ - **PIN 重置之前的尝试次数：**指定输入 PIN 码的尝试次数，达到该次数后用户必须重置 PIN。 **此设置没有默认值。**
 - **访问需要公司凭据：**选择“是”以要求使用公司凭据而不是 PIN 进行应用访问。  如果将其设置为“是”，则此设置将替代 PIN 或 Touch ID 的要求。  将提示用户提供其公司凭据。
 
   **默认值 = 否**
@@ -98,6 +100,6 @@ ms.suite: ems
 - **阻止屏幕捕获和 Android 助手（Android 6 Marshmallow 或更高版本）：**选择“是”，以在使用该应用时阻止设备的屏幕捕获和 **Android 助手**功能。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

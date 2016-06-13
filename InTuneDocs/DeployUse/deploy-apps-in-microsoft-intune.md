@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Intune 中部署应用 | Microsoft Intune
+title: 部署应用 | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -19,9 +19,9 @@ author: robstackmsft
 
 ### 部署应用
 
-1. 在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，单击“应用” &gt; “应用”以查看管理的应用列表。
+1. 在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，单击**应用**&gt;**应用**以查看管理的应用列表。
 
-2.  选择要部署的应用，然后单击“管理部署”.
+2.  选择要部署的应用，然后单击“管理部署”。
 
 3.  首先在“选择组”页上的“&lt;应用名称&gt;”对话框中，选择要对其部署应用的用户或设备组。
 
@@ -39,7 +39,7 @@ author: robstackmsft
     [查看与移动应用程序管理策略兼容的 Microsoft 应用。](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. 如果要部署的应用与 Intune VPN 配置文件兼容，则会显示“VPN 配置文件”页。 在此页上，你可以选择将 iOS 应用与已部署的 VPN 配置文件关联。 在应用启动时，将自动打开 VPN 连接。 若要使 VPN 配置文件可用，则必须启用“Per-app VPN”配置文件设置。
- 若要了解如何配置 VPN 配置文件（包括支持将配置文件与应用相关联），请参阅[通过 Microsoft Intune 使用 VPN 配置文件帮助用户连接到其工作](vpn-connections-in-microsoft-intune.md).
+ 若要了解如何配置 VPN 配置文件（包括支持将配置文件与应用相关联），请参阅[通过 Microsoft Intune 使用 VPN 配置文件帮助用户连接到其工作](vpn-connections-in-microsoft-intune.md)。
 
 ## 示例
 
@@ -52,9 +52,9 @@ author: robstackmsft
 
 ## 后续步骤
 
-部署应用之后，需要监视其进度。 有关详细信息，请参阅[在 Microsoft Intune 中监视应用](monitor-apps-in-microsoft-intune.md)。.
+部署应用之后，需要监视其进度。 有关详细信息，请参阅[在 Microsoft Intune 中监视应用](monitor-apps-in-microsoft-intune.md)。
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

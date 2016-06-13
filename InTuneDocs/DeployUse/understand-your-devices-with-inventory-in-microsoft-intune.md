@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 在 Microsoft Intune 中了解你的设备清单 | Microsoft Intune
+title: 了解你的设备清单 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,8 +66,7 @@ ms.suite: ems
 |**已启用加密**|“所有设备”|
 
 ## 从 Windows 电脑收集的信息
-> [!IMPORTANT]
-> 本部分仅适用于运行 Intune Windows 电脑客户端软件的 Windows 电脑。
+> [!IMPORTANT]本部分仅适用于运行 Intune Windows 电脑客户端软件的 Windows 电脑。
 
 若要查看 Windows 电脑收集的清单，请运行[计算机清单报表](understand-microsoft-intune-operations-by-using-reports.md)。 Intune 将从 Windows 电脑收集以下清单：
 
@@ -113,11 +112,12 @@ ms.suite: ems
 
 -   **上次更新时间**
 
-### 另请参阅
-[使用 Microsoft Intune 进行监视和报告](monitoring-and-reports-with-microsoft-intune.md)
+<!-- this section below belongs in the planning journey
+### See Also
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+-->
 
 
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

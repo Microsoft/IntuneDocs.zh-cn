@@ -29,10 +29,9 @@ ms.suite: ems
 # 使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理
 在可以使用 Microsoft Intune 管理 Windows 10 移动版或 Windows Phone 设备之前，设备必须能够与 Intune 通信。 若要简化此操作，可以创建 DNS 记录，这样用户无需输入服务器地址。 以下步骤介绍了如何简化用户注册。  
 
-大多数情况下，用户可以从 Windows 应用商店安装公司门户应用。 如果你管理 Windows Phone 8.0 设备或需要将公司门户部署到 Windows Phone 设备，则必须下载公司门户应用并对其进行签名。 请参阅[设置 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
+大多数情况下，用户可以从 Windows 应用商店安装公司门户应用。 如果你管理 Windows Phone 8.0 设备或需要将公司门户部署到 Windows Phone 设备，则必须下载公司门户应用并对其进行签名。 请参阅[设置 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
 
-1.  **设置 Intune**
-    如果你尚未设置，请通过[将移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
+1.  **设置 Intune** 如果你尚未设置，请将[移动设备管理机构](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)设置为**Microsoft Intune**并设置 MDM，为管理移动设备做好准备。
 
 2.  **为注册服务器地址设置 DNS 别名** （可选）
 
@@ -51,17 +50,17 @@ ms.suite: ems
 
       **EnterpriseRegistration.windows.net** – 支持将使用其工作或学校帐户向 Azure Active Directory 注册的 Windows 8.1 和 Windows 10 移动版设备
 
-    2.  在 [Intune 管理控制台](http://manage.microsoft.com)中，单击“管理” &gt; “移动设备管理” &gt; “Windows Phone”.
+    2.  在 [Intune 管理控制台](http://manage.microsoft.com)中，单击**管理** &gt; **移动设备管理** &gt; **Windows Phone**。
 
       ![设置 Windows 的移动设备管理对话框](../media/windows-device-enrollment.png)
 
-    3.  在“指定一个已验证的域名”框中键入公司网站结果验证的域的 URL，然后单击“测试自动检测”.
+    3.  在**指定一个已验证的域名**框中键入公司网站结果验证的域的 URL，然后单击**测试自动检测**。
 
 
 
-无需任何额外的工作，除非你要将公司门户部署到设备。  可以安全地忽略管理控制台中的步骤 2、3 和 4。
+无需任何额外的工作，除非你要将公司门户部署到设备。  可以安全地忽略管理控制台中的步骤 2 和 3。
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

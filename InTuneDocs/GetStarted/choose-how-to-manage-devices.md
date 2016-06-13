@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 选择如何使用 Microsoft Intune 来管理设备 | Microsoft Intune
+title: 选择如何管理设备 | Microsoft Intune
 description:
 keywords:
 author: jeffgilb
@@ -31,12 +31,7 @@ ms.suite: ems
 ## 如何管理移动设备
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 可以管理以下设备平台：
 
-- Apple iOS 7.1 及更高版本
-- Google Android 4.0 及更高版本（包括 Samsung KNOX）
-- Windows Phone 8.0 及更高版本
-- Windows RT 和 Windows 8.1 RT
-- 运行 Windows 8.1 及更高版本的电脑
-- Mac OS X 10.9 及更高版本
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 <div class="alert alert-tip">
   <h5><span class="icon-tip"></span> 提示</h5>
@@ -80,16 +75,16 @@ ms.suite: ems
 ## Exchange ActiveSync 管理
 你还可以使用 Exchange ActiveSync 来管理设备。 若要使用 Exchange ActiveSync 管理设备，你需要安装本地连接器或使用内置服务间连接器来连接到 Exchange Server。
 
-若要了解有关安装本地连接器的硬件和软件要求的信息，请参阅[本地连接器的要求](/Intune/network-infrastructure-requirements-for-microsoft-intune.md).
+若要了解有关安装本地连接器的硬件和软件要求的信息，请参阅[本地连接器的要求](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector)。
 
-若要了解有关将本地连接器或服务间连接器与 Exchange 配合使用的信息，请参阅[使用 Exchange ActiveSync 和 Microsoft Intune 管理移动设备](/Intune/get-started/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
+若要了解有关将本地连接器或服务间连接器与 Exchange 配合使用的信息，请参阅[使用 Exchange ActiveSync 和 Microsoft Intune 管理移动设备](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
 
 
 
 ## 后续步骤
-你已经了解向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备后可使用的一些功能，现在需要[准备好注册设备](/Intune/get-started/get-ready-to-enroll-devices-in-microsoft-intune.md)。 注册设备后，你就可以利用你在本主题中了解到的所有功能。 <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+你已经了解向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备后可使用的一些功能。 接下来，你需要[注册设备](../deploy-use/enroll-devices-in-microsoft-intune)。 注册设备后，你就可以利用你在本主题中了解到的所有功能。 <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

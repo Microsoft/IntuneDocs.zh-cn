@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 使用 Microsoft Intune 策略管理设备上的设置和功能 | Microsoft Intune
+title: 使用策略管理设备上的设置和功能 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -35,33 +35,32 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 - **配置策略：**通常用于管理设备的安全设置和功能。 通过本主题中的信息可了解如何创建和部署这些策略，以及如何查看可用的设置。
 - **设备合规性策略：**定义设备必须遵从的规则和设置，以便将设备视为符合条件性访问策略。 你也可使用合规性策略来监视和修复与条件性访问无关的设备的合规性。
-有关详细信息，请参阅 [Device compliance policies in Microsoft Intune（Microsoft Intune 中的设备合规性策略）](introduction-to-device-compliance-policies-in-microsoft-intune.md)。.
+有关详细信息，请参阅 [Microsoft Intune 中的设备合规性策略](introduction-to-device-compliance-policies-in-microsoft-intune.md)。
 - **条件性访问策略：**这些策略可根据你指定的条件帮助确保电子邮件和其他服务的安全。
-有关详细信息，请参阅 [Restrict access to email and O365 services with Microsoft Intune（使用 Microsoft Intune 限制对电子邮件和 O365 服务的访问）](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-- **企业设备注册策略：**有关企业设备注册策略的信息，请参阅 [Set up iOS and Mac management with Microsoft Intune（使用 Microsoft Intune 设置 iOS 和 Mac 管理）](set-up-ios-and-mac-management-with-microsoft-intune.md)。.
+有关详细信息，请参阅[使用 Microsoft Intune 限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
+- **企业设备注册策略：**有关企业设备注册策略的信息，请参阅[使用 Microsoft Intune 设置 iOS 和 Mac 管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 - **资源访问策略：**这些策略一同协作，帮助你的用户无论在何处都可以获取成功完成其工作所需的文件和资源的访问权限。
-有关详细信息，请参阅[使用 Microsoft Intune 启用对公司资源的访问](enable-access-to-company-resources-with-microsoft-intune.md).
+有关详细信息，请参阅[使用 Microsoft Intune 启用对公司资源的访问](enable-access-to-company-resources-with-microsoft-intune.md)。
 
 
-有关 Intune 策略的完整列表，请参阅 [Microsoft Intune 策略参考](microsoft-intune-policy-reference.md).
+有关 Intune 策略的完整列表，请参阅 [Microsoft Intune 策略参考](microsoft-intune-policy-reference.md)。
 
 
 
 
 ## 创建配置策略
 
-1.  在[Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“策略” &gt; “配置策略” &gt; “添加”。.
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击**策略**&gt;**配置策略**&gt;**添加**。
 
 2.  选择你想要的策略，然后选择使用策略的推荐设置（如果可用；可在稍后更改这些设置），或者使用自己的设置创建自定义策略。
 
-    > [!TIP]
-    > 要帮助选择正确的策略，请参阅 [Microsoft Intune policy reference（Microsoft Intune 策略参考）](microsoft-intune-policy-reference.md).
+    > [!TIP]要帮助选择正确的策略，请参阅 [Microsoft Intune 策略参考](microsoft-intune-policy-reference.md)。
 
-3.  准备好后，单击“创建策略”。.
+3.  准备好后，单击“创建策略” 。
 
 4.  在“创建策略”  屏幕上，配置策略名称和可选描述。
 
-5.  配置必要的策略设置，然后单击“保存策略”。.
+5.  配置必要的策略设置，然后单击“保存策略” 。
 
     如果你需要有关任何策略设置的帮助，请从以下列表中选择策略类型：
 
@@ -90,13 +89,13 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 ## 部署配置策略
 
-1.  在“策略”工作区中，选择想要部署的策略，然后单击“管理部署”.
+1.  在“策略”  工作区中，选择想要部署的策略，然后单击“管理部署” 。
 
 2.  在“管理部署”  对话框中：
 
-    -   **部署策略** — 选择要向其部署策略的一个组或多个组，然后单击“添加” &gt; “确定”.
+    -   **部署策略** - 选择要向其部署策略的一个或多个组，然后单击**添加**&gt;**确定**。
 
-    -   **关闭对话框而不部署** — 单击“取消”.
+    -   **要关闭对话框而不部署** - 单击“取消”。
 
 如果你选择的是已部署的策略，则可以在策略列表的下半部分查看有关部署的详细信息。
 
@@ -108,7 +107,7 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 - **编辑** - 打开所选策略的属性以允许你进行更改。
 - **删除** - 删除所选的策略。<br>在删除策略时，会将该策略从它已部署到的所有组中删除。
-- **管理部署** - 选中要将策略部署到的组并单击“添加”。.
+- **管理部署** - 选中要对其部署策略的组并单击**添加**。
 
 ## Intune 策略的任务
 
@@ -116,11 +115,11 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“组” ，然后选择一个设备组。
 
-2.  选择要在其上刷新策略的设备，然后单击“远程任务” &gt; “刷新策略”。.
+2.  选择要在其上刷新策略的设备，然后单击**远程任务**&gt;**刷新策略**。
 
 3.  单击 Intune 管理控制台右下角的“远程任务”可检查任务状态。
 
-## Intune 策略的参考信息
+## 有关 Intune 策略的常见问题
 
 ### 策略或应用部署完成后，移动设备需要多长时间获取？
 策略或应用部署完成后，Intune 会立即开始尝试通知设备其应签入到 Intune 服务。 这通常可在 5 分钟内完成。
@@ -132,7 +131,8 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 - iOS - 每 6 小时
 - Android - 每 8 小时
 - Windows Phone - 每 8 小时
-- 注册为设备的 Windows PC - 每 24 小时
+- 已注册的 Windows RT 设备 - 每 24 小时
+- 注册为设备的 Windows 8.1 和 Windows 10 电脑 - 每 8 小时
 
 如果设备刚进行注册，则签入会更频繁，具体如下：
 
@@ -172,7 +172,7 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载，它
 
 因此，在部署自定义策略时，请确保配置的设置不会与合规性、配置或其他自定义策略冲突。 如果自定义策略与设置冲突，则应用设置的顺序是随机的。
 
-### 当策略被删除，或不再适用时，会发生什么情况
+### 策略遭到删除或不再适用时，会发生什么情况？
 当您删除某个策略时，或从策略部署到的组中删除设备时，策略和设置将会根据下表从设备中删除：
 
 #### “注册的设备”
@@ -214,15 +214,15 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载，它
 
 #### 运行 Intune 客户端软件的 Windows PC
 
-- **Endpoint Protection 设置** – 设置还原为其建议值。 唯一的例外是默认值为“否”  的“加入 Microsoft Active Protection Service” 设置。 有关详细信息，请参阅 [Help secure Windows PCs with Endpoint Protection for Microsoft Intune（使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全）](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。.
-- **软件更新设置** – 设置重置为操作系统的默认状态。 有关详细信息，请参阅 [Keep Windows PCs up to date with software updates in Microsoft Intune（在 Microsoft Intune 中利用软件更新使 Windows PC 保持最新版本）](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。.
+- **Endpoint Protection 设置** – 设置还原为其建议值。 唯一的例外是默认值为“否”  的“加入 Microsoft Active Protection Service” 设置。 有关详细信息，请参阅[使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
+- **软件更新设置** – 设置重置为操作系统的默认状态。 有关详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
 - **Microsoft Intune 中心设置** - 从计算机中删除策略所配置的任何支持联系人信息。
-- **Windows 防火墙设置** - 设置重置为计算机操作系统的默认值。 有关详细信息，请参阅 [Help secure Windows PCs with Endpoint Protection for Microsoft Intune（使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全）](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。.
+- **Windows 防火墙设置** - 设置重置为计算机操作系统的默认值。 有关详细信息，请参阅[使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
 
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

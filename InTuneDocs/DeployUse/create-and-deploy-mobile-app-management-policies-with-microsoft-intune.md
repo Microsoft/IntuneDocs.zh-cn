@@ -28,14 +28,14 @@ ms.suite: ems
 # 使用 Microsoft Intune 创建和部署移动应用管理策略
 可以将移动应用管理 (MAM) 策略应用于在不一定由 Intune 管理的设备上运行的应用。 有关 MAM 策略工作原理以及 Intune MAM 策略所支持方案的更加详细的说明，请阅读[使用移动应用管理策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)主题。
 
-本主题介绍在 **Azure 门户**中创建 MAM 策略的过程。 所有 MAM 方案均支持你在 Azure 门户中创建的 MAM 策略：
+本主题介绍在 **Azure 门户**中创建 MAM 策略的过程。 Azure 门户是一款新的管理员控制台，用于创建 MAM 策略；建议你使用此门户来创建 MAM 策略。 Azure 门户支持以下 MAM 方案：
 - 在 Intune 中注册的设备
 - 由第三方 MDM 解决方案管理的设备
 - 不受任何 MDM 解决方案管理的设备 (BYOD)。
 
-如果你当前使用 **Intune 管理控制台**管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用
+如果你当前使用 **Intune 管理控制台**管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
 >[!IMPORTANT]
-> 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 Azure 门户是用于创建 MAM 策略的新管理控制台。
+> 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 Azure 门户是用于创建 MAM 策略的新管理控制台。 如果你同时在 Intune 管理控制台和 Azure 门户中创建了 MAM 策略，则 Azure 门户中的策略将应用到应用并部署到用户。
 
 若要查看 Android 和 iOS 平台支持的策略设置的列表，请选择以下值之一：
 
@@ -49,13 +49,13 @@ ms.suite: ems
 
     ![“Intune 移动应用程序管理”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > 如果首次使用 Azure 门户，请先阅读[用于 Microsoft Intune MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉该门户。
+    > [!TIP] 如果首次使用 Azure 门户，请先阅读[用于 Microsoft Intune MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉该门户。
 
 2.  在“设置”边栏选项卡中，选择“应用策略”。  将打开“应用策略”  边栏选项卡，你将在此创建新策略和编辑现有策略。
 
     ![显示现有策略列表的“应用策略”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
-3.  选择“添加策略”
+3.  选择**添加策略**。
 
     ![突出显示“添加策略”菜单选项的“应用策略”边栏选项卡的屏幕截图 ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -65,7 +65,7 @@ ms.suite: ems
 
 5.  选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表。 可从该列表中选择希望与正创建的策略关联的一个或多个应用。 选择应用后，选择“应用”边栏选项卡底部的“选择”按钮以保存你的选择。
 
-    > 必须至少选择一个应用才能创建策略。
+    > [!IMPORTANT] 必须至少选择一个应用才能创建策略。
 
 6.  在“添加策略”边栏选项卡上，选择“配置所需设置”以打开“策略设置”边栏选项卡。
 
@@ -167,6 +167,6 @@ ms.suite: ems
 [启用 MAM 的应用的最终用户体验](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

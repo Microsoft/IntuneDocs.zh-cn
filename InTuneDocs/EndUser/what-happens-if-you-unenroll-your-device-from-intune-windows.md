@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 从 Intune 取消注册设备会发生什么情况？
 
-当你从设备上卸载公司门户应用时，它还将从 Intune 取消注册你的设备。 有关会发生什么情况的其他信息，请使用与你正在使用的设备的类型匹配的链接。
+当你从设备上卸载公司门户应用时，它还将从 Intune 取消注册你的设备。 有关会发生什么情况的其他信息，请使用以上“本文内容”部分中所示且与你正在使用的设备类型匹配的链接。
 
 - [Windows 10 移动版、Windows 8.1、Windows 8、Windows 7、Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10、Windows 8.1 或 Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,7 +43,7 @@ ms.suite: ems
 
 -   从计算机中删除 Intune Endpoint Protection 软件。 如果计算机安装了其他病毒保护软件，并且该软件处于禁用状态，则删除 Intune Endpoint Protection 之后，可能会重新启用该软件。 在从公司门户中将你的计算机删除之后，你应对其进行检查。
 
-    > 如果未重新启用其他病毒保护软件或未安装其他病毒保护软件，你的计算机可能容易受到病毒和恶意软件的攻击。
+    > [!IMPORTANT]如果未重新启用其他病毒保护软件或未安装其他病毒保护软件，你的计算机可能容易受到病毒和恶意软件的攻击。
 
 -   将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机）。
 
@@ -96,6 +96,6 @@ ms.suite: ems
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

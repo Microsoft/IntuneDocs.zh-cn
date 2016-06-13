@@ -27,9 +27,19 @@ ms.suite: ems
 
 # 准备好使用 Microsoft Intune 配置移动应用管理策略
 本主题介绍可以在 Azure 门户中创建移动应用管理策略 (MAM) 之前需要执行的操作。
-如果你当前使用 **Intune 管理控制台**管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用
+
+Azure 门户是一款新的管理员控制台，用于创建 MAM 策略；建议你使用此门户来创建 MAM 策略。 Azure 门户支持以下 MAM 方案：
+- 在 Intune 中注册的设备
+- 由第三方 MDM 解决方案管理的设备
+- 不受任何 MDM 解决方案管理的设备 (BYOD)。
+
+如果你不熟悉如何使用 Azure 门户，请参阅 [Microsoft Intune MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)主题，以快速了解概述。
+
+如果你当前使用的是**Intune 管理员控制台**管理设备，则可创建 MAM 策略，以支持在 Intune 中使用**Intune 管理控制台**进行注册的设备的应用；但即使是在 Intune 中注册的设备，仍建议使用 Azure 门户。 有关如何使用 Intune 管理控制台创建 MAM 策略的说明，请参阅[此处](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)。
+
 >[!IMPORTANT]
-> 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 Azure 门户是用于创建 MAM 策略的新管理控制台。
+> 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 如果你同时在 Intune 管理控制台和 Azure 门户中创建了 MAM 策略，则 Azure 门户中的策略将应用到应用并部署到用户。
+
 
 ##  受支持的平台
 - iOS 8.1 或更高版本
@@ -37,27 +47,31 @@ ms.suite: ems
 - Android 4 或更高版本
 
 ##  受支持的应用
-若要查看支持的应用的完整列表，请转到 Microsoft Intune 应用程序合作伙伴页上的 [Microsoft Intune 移动应用程序库](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)。
-单击应用可查看支持的方案、平台以及应用是否支持多身份。
+* **Microsoft 应用：**这些应用内置有 Intune App SDK，且无需进一步处理就可应用 MAM 策略。
+若要查看支持的 Microsoft 应用的完整列表，请转到 Microsoft Intune 应用程序合作伙伴页上的 [Microsoft Intune 移动应用程序库](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)。 单击应用可查看支持的方案、平台以及应用是否支持多身份。
+* 内置的**业务线应用：**需要准备应用以包含 Intune App SDK，才可应用 MAM 处理。
+
+  * 有关 Intune 管理的设备，请参阅[决定如何为 MAM 准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
+  * 对于不像员工所有设备一样托管的设备，或者由第三方移动设备管理解决方案托管的设备，请参阅[保护未在 Intune 中注册的设备上的业务线应用和数据](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)。
 
 可以配置 MAM 策略“之前”，需要以下准备事项：
 
 -   **Microsoft Intune 订阅**。    最终用户需要 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证以获取具有 MAM 策略的应用。
 
--   必须将“移动设备管理机构”设置为“Intune”或“Configuration Manager”，具体取决于你使用的只是 Intune 还是与 Intune 集成的 Configuration Manager 来管理设备。 如果你正在使用 O365 内置移动设备管理，则必须购买 Intune 订阅并[将移动设备管理机构设置为 Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)
 -   以下事项需要 **Office 365 (O365)** 订阅：
   - 将 MAM 策略应用于具有多身份支持的应用。
   - 创建 SharePoint Online 和 Exchange Online 工作帐户。 不支持 Exchange 内部部署和 SharePoint 内部部署。
+-    为**Skype for Business Online****启用新式验证**。 登录到 Microsoft Connect 并填写[此表单](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715)以注册新式验证计划。
 
 
 - “Azure Active Directory (Azure AD)”，用于创建用户。 当最终用户启动应用，并输入他们的工作凭据时，Azure AD 会对用户进行身份验证。
 
-    > 如果你使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台设置用户，请注意 MAM 策略配置将迁移到以后的 Azure 门户，要使用此门户，需要使用 Office 365 门户设置 Azure AD 用户组。
+    > [!NOTE] 如果你使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台设置用户，请注意 MAM 策略配置将迁移到以后的 Azure 门户；若要使用此门户，需通过 Office 365 门户设置 Azure AD 用户组。
 
 
 ## 创建用户并分配 Microsoft Intune 许可证
 
-1. 需要 Intune 订阅：如果当前使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来管理设备，那么你已经具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。  如果你已购买 EMS 许可证，那么你还具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。 如果你尝试 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来试用 MAM 功能，你可以在[此处](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)获取试用帐户
+1. 需要 Intune 订阅：如果当前使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来管理设备，那么你已经具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。  如果你已购买 EMS 许可证，那么你还具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。 如果你要试用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来检查 MAM 功能，则可在[此处](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)获取试用帐户。
 
     要检查你是否具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅，请在 Office 门户中转到“帐单”页面。  你应该可以看到在订阅下方 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 显示为“活动”状态。
 
@@ -86,16 +100,16 @@ ms.suite: ems
 
 ## 将参与者角色分配给用户
 
-**全局管理员** 具有访问 Azure 门户的权限。  如果你希望其他管理员用户能够配置策略和执行其他移动应用管理任务，你可以将 **参与者角色** 分配给用户，如下所述:
+**全局管理员**具有访问 [Azure 门户](https://portal.azure.com)的权限。  如果你希望其他管理员用户能够配置策略和执行其他移动应用管理任务，你可以将 **参与者角色** 分配给用户，如下所述:
 
 
-1.  在“设置”边栏选项卡中，单击“资源管理”部分的“用户”
+1.  在**设置**边栏选项卡中，单击**资源管理**部分的**用户**。
 
     ![Azure 门户上的“用户”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_AddUsers.png)
 
 2.  单击“添加”  以打开“添加访问”  边栏选项卡。
 
-3.  单击“选择一个角色”，然后选择“参与者角色”
+3.  单击“选择一个角色” ，然后选择“参与者角色” 。
 
     ![Azure 门户上的“选择一个角色”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_AddRole.png)
 
@@ -103,12 +117,12 @@ ms.suite: ems
 
     ![Azure 门户上的“添加用户”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_AddusertoRole.png)
 
-    > 如果选择未向其分配 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证的用户，则用户将无法访问门户。
+    > [!IMPORTANT] 如果选择未向其分配 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证的用户，则用户将无法访问门户。
 
 ## 后续步骤
 [使用 Microsoft Intune 创建和部署移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

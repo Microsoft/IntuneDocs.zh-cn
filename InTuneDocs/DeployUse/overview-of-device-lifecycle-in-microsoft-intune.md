@@ -29,10 +29,10 @@ ms.suite: ems
 
 Intune 设备生命周期从最初注册设备开始，然后经过几个步骤直到不再需要该设备时结束。
 
-![设备生命周期](./media/devicelifecycle_nobg.png "the Intune device lifecycle")
+![设备生命周期](./media/device-lifecycle.png "the Intune device lifecycle")
 
 ## 注册
-当今的移动设备管理 (MDM) 策略适用于各种手机、平板电脑和电脑（iOS、Android、Windows 和 Mac OS X）。 如果你需要能够管理设备（这对企业拥有的设备来说很常见），第一步便是[设置设备注册](enroll-devices-in-microsoft-intune.md)。 你还可以通过向 Intune (MDM) 注册设备或[安装 Intune 客户端软件](manage-windows-pcs-with-microsoft-intune.md)来管理 Windows 电脑.
+当今的移动设备管理 (MDM) 策略适用于各种手机、平板电脑和电脑（iOS、Android、Windows 和 Mac OS X）。 如果你需要能够管理设备（这对企业拥有的设备来说很常见），第一步便是[设置设备注册](enroll-devices-in-microsoft-intune.md)。 你还可以通过向 Intune (MDM) 注册设备或[安装 Intune 客户端软件](manage-windows-pcs-with-microsoft-intune.md)来管理 Windows 电脑。
 
 ## 用户密码重置策略
 将你的设备注册只是第一步。 要充分利用所有这些 Intune 功能并确保你的设备安全且符合公司标准，你可以从各种让你能够几乎配置托管设备运作方式各方各面的**策略**中选择。 例如，对于含有公司数据的设备，用户是否应该有密码？ 你可以要求获得密码。 你有企业 Wifi 吗？ 你可以自动配置它。 以下是可用的配置选项类型：
@@ -51,6 +51,6 @@ Intune 设备生命周期从最初注册设备开始，然后经过几个步骤�
 当设备丢失或被盗、需要更换，或当用户移到另一个位置时，通常需要[停用或擦除](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)设备。 有多种方法可以完成此操作，比如重置设备、从管理将其删除或擦除其上的企业数据等。
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -15,7 +15,7 @@ ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -43,6 +43,7 @@ ms.suite: ems
 此部分中的信息将帮助你了解在 Intune 中注册 iOS 设备后能够执行的操作。
 
 - [在设备上使用托管应用](use-managed-apps-on-your-device-ios.md)</br>
+- [设置或更改密码](set-or-change-your-passcode-ios.md)</br>
 - [重置（清除）丢失或被盗设备](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [从 Intune 取消注册你的设备](unenroll-your-device-from-intune-ios.md)</br>
@@ -65,6 +66,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

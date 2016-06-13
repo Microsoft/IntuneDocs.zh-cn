@@ -67,11 +67,11 @@ Intune 提供了大量预配和管理解决方案，这些解决方案与当今�
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## 允许你的员工从不受管理的公用网亭安全访问 Office 365
-有时，你的员工需要使用你无法管理的设备、应用或浏览器，例如展销会和酒店大堂的公用计算机。  你是否应该允许你的员工从其访问公司电子邮件？  使用 Intune 和企业移动性套件，你有多种选择。  答案可以是“不”，你只需限制为只允许受组织管理的设备访问电子邮件。  或者，你也可以选择允许这些不受信任的计算机进行有限访问，方法是：要求进行多重身份验证，并且仅允许在无法下载文件（例如电子邮件附件）的模式下进行浏览器访问 (Outlook Web Access)。  这将确保经过强身份验证的员工不会无意中将公司数据留在不受信任的计算机上。
+有时，你的员工需要使用你无法管理的设备、应用或浏览器，例如展销会和酒店大堂的公用计算机。 你是否应该允许你的员工从其访问公司电子邮件？ 使用 Intune 和企业移动套件， <!--you have choices. The--> 答案可以是“不”，你只需限制为只允许受组织管理的设备访问电子邮件。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  这将确保经过强身份验证的员工不会无意中将公司数据留在不受信任的计算机上。
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

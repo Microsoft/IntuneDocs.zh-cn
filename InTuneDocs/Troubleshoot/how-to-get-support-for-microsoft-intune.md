@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,17 +37,17 @@ ms.suite: ems
 
 2.  在标题“创建服务请求”下，选择要开具票证的问题类别：
 
-    -   针对计费和许可问题，请选择“计费和产品信息”
+    -   针对计费和许可问题，请选择“计费和产品信息”。
 
     -   针对所有其他 Intune 问题，请选择“移动设备管理” 此选项还涵盖 Office 365 MDM 和带有 Intune 的 System Center Configuration Manager。
 
-    > 你可能需要单击列表底部的“更多”来查看所有类别。
+    > [!NOTE]若要查看所有类别，可能需单击列表底部的**更多**
 
-3.  在“识别问题”页上，选择需要获得帮助的“功能”和“症状”。 系统会要求你提供“问题摘要”和“问题详细信息”
+3.  在“识别问题”页上，选择需要获得帮助的“功能”和“症状”。 系统会要求你提供“问题摘要”和“问题详细信息”。
 
 4.  在“查看建议”页上，你将找到指向可帮助你自行解决该问题的内容的链接。  如果无法解决该问题，可以单击页面底部的“是，继续”提交你的服务请求。
 
-5.  在“添加详细信息”页上提供所请求的信息。 可以通过单击“附加文件”来附加屏幕截图或其他文档
+5.  在“添加详细信息”页上提供所请求的信息。 可以通过单击“附加文件”来附加屏幕截图或其他文档。
 
 6.  在“确认并提交”页上，提供联系信息，查看你的请求，并单击“提交请求”。 提交请求后，你将转至服务请求列表。
 
@@ -57,7 +57,8 @@ ms.suite: ems
 ## 跟踪服务请求
 若要跟踪请求，请转到 [Office 365 管理中心](https://portal.office.com/admin/default.aspx)。 在“创建服务请求”列表底部，单击“查看所有支持票证”。 默认情况下，你将看到所有处于未结状态的服务请求。 若要更改所显示的服务请求，例如，查看已结请求，请单击顶部导航栏中的筛选器图标，并选择你的首选视图。
 
-> **如果使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与你的合作伙伴联系，或访问 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解决方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)以查找丰富的自助式材料（可选择在线方式或通过电话建立支持请求）。
+> [!NOTE]
+> **若使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与你的合作伙伴联系，或访问 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解决方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)以查找丰富的自助式材料（可通过电话或在线建立支持请求）。
 >
 > System Center Configuration Manager 或 System Center Endpoint Protection 的技术支持需要付款，或者它将计为你现有的许可协议或顶级支持协议的递减。
 
@@ -146,6 +147,6 @@ ms.suite: ems
 [Microsoft Intune 常见问题](/intune/understand-explore/frequently-asked-questions-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 
