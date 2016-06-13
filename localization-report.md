@@ -6803,9 +6803,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/fa62597a693a9936c74a3e4cb62c423306fc1ae7/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md)
-* Current Handback File: [reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/cabb047614e41dee0ff88d84ebf91c23d6b6ebde/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.zh-cn.xlf)
-* Current Handback Datetime: 2016-05-27 00:36:44
+* Current Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/032272481789e0a10d71251c3437b41d71e363fd/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md)
+* Current Handback File: [reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/3ca26135246400b142ffb049de326ad205326483/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.zh-cn.xlf)
+* Current Handback Datetime: 2016-06-13 16:25:28
 * [Back to Top](#report-top)
 
 ##### <a name='7c6e3e0f008f084a63288eec66f7161a1edb9ffe422'></a> Source: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md)
