@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 中的 iOS 策略设置 |Microsoft Intune
+title: iOS 策略设置 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ ms.suite: ems
 -   “相容和不相容应用”****- 指定在你的公司中相容或不相容的应用列表。 在 Android 和 iOS 设备上，“不相容应用报告” **** 可用于查看你在列表中指定的应用对于用户已经安装的应用的相容性（但不能实际阻止应用的安装）。
 
 > [!TIP]
-> 你可以为用户配置条款和条件，确保他们确认其设备上的应用（包括个人应用）将会受到评估，不相容的应用将被阻止或报告为不相容。 用户必须接受这些条款和条件，然后才能注册其设备并使用公司门户获取应用。 有关使用条款和条件的详细信息，请参阅 [Terms and conditions policy settings in Microsoft Intune（Microsoft Intune 中的条款和条件策略设置）](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> 你可以为用户配置条款和条件，确保他们确认其设备上的应用（包括个人应用）将会受到评估，不相容的应用将被阻止或报告为不相容。 用户必须接受这些条款和条件，然后才能注册其设备并使用公司门户获取应用。 有关使用条款和条件的详细信息，请参阅 [Microsoft Intune 中的条款和条件策略设置](terms-and-condition-policy-settings-in-microsoft-intune.md)。
 
 如果你寻找的设置没有在此主题中出现，你可能可以使用 iOS 自定义策略创建它，通过该策略你可以使用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)导入你创建的设置。 有关详细信息，请稍后参阅本主题中的“自定义策略设置”****。
 
@@ -160,7 +160,7 @@ ms.suite: ems
 |**允许使用响铃开关**|启用或禁用设备上的响铃（静音）开关。|
 |**允许使用屏幕睡眠唤醒按钮**|启用或禁用设备上的屏幕睡眠唤醒按钮。|
 |**允许自动锁定**|启用或禁用设备的自动锁定。|
-|**启用单声道音频**|启用或禁用辅助功能设置“单声道音频”****。.|
+|**启用单声道音频**|启用或禁用辅助功能设置“单声道音频” ****。|
 |**启用语音朗读**|启用或禁用辅助功能设置“语音朗读” **** ，它能朗读设备上显示的文本。|
 |**启用语音朗读调整**|启用或禁用语音朗读调整，它可让你调整 VoiceOver 功能（例如，屏幕上文本的朗读速度）。|
 |**启用缩放**|启用或禁用“缩放” **** 辅助功能设置，它可让你通过触摸来缩放设备显示。|
@@ -170,8 +170,7 @@ ms.suite: ems
 |**启用辅助触点**|启用或禁用“辅助触点” **** 辅助功能设置，它可帮助用户执行可能难以执行的屏幕手势。|
 |**启用辅助触点调整**|启用或禁用可让你调整辅助触点功能的辅助触点调整。|
 |**启用朗读所选项**|启用或禁用“朗读所选项” **** 辅助功能设置，它可朗读你选择的文本。|
-> [!NOTE]
-> 以下说明适用于 iOS 设备的展台模式设置：
+> [!NOTE] 以下说明适用于 iOS 设备的展台模式设置：
 > 
 > -   必须先使用 [Apple 配置器工具](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) 或设备注册管理器将设备配置为受监督模式，然后才可将 iOS 设备配置为展台模式。 有关 Apple 配置器工具的详细信息，请参阅 Apple 文档。
 > -   如果在部署配置策略之后安装指定的 IOS 应用，则设备将在重启后才会进入展台模式。
@@ -183,9 +182,9 @@ ms.suite: ems
 
 ##### 运行不相容应用报告
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“报告”**** &gt; “不相容应用报告”****.
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**报告**&gt;**不相容应用报告**。
 
-2.  选择你想要检查的设备组，是要检查相容应用还是不相容应用，或是同时检查两者，然后单击“查看报告”****.
+2.  选择你想要检查的设备组，是要检查相容应用还是不相容应用，或是同时检查两者，然后单击“查看报告” ****。
 
 #### 如何指定应用商店的 URL
 要在相容和不相容应用列表中或在 **“选择一个在设备处于展台模式时能够运行的托管应用”** 选项(仅限 iOS)中指定一个应用 URL，请使用以下格式:
@@ -194,10 +193,9 @@ ms.suite: ems
 
 复制页面的 URL，并使用此 URL 配置的符合或不符合要求的应用列表或你想要在展台模式下运行的应用。
 
-**示例：**搜索 **Microsoft Word for iPad**。 你将使用的 URL 是 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**示例：**搜索 **Microsoft Word for iPad**。 你将使用的 URL 是 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**。
 
-> [!NOTE]
-> 你还可以使用 iTunes 软件查找应用程序，然后使用“复制链接” **** 命令获取应用的 URL。
+> [!NOTE] 你还可以使用 iTunes 软件查找应用程序，然后使用**复制链接**命令获取应用的 URL。
 
 
 ## 自定义策略设置
@@ -232,6 +230,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

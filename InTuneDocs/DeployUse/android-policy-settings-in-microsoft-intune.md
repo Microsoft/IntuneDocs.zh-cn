@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune 中的 Android 配置策略设置 | Microsoft Intune
+title: Android 和 Samsung KNOX 配置策略设置 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Microsoft Intune 中的 Android 策略设置
+# Microsoft Intune 中 Android 和 Samsung KNOX 策略设置
 
 ## 常规配置策略
 
@@ -38,7 +38,7 @@ ms.suite: ems
 -   “相容和不相容应用”****- 指定在你的公司中相容或不相容的应用列表。 在 Android 和 iOS 设备上，“不相容应用报告” **** 可用于查看你在列表中指定的应用对于用户已经安装的应用的相容性（但不能实际阻止应用的安装）。
 
 > [!TIP]
-> 你可以为用户配置条款和条件，确保他们确认其设备上的应用（包括个人应用）将会受到评估，不相容的应用将被阻止或报告为不相容。 用户必须接受这些条款和条件，然后才能注册其设备并使用公司门户获取应用。 有关使用条款和条件的详细信息，请参阅 [Microsoft Intune 中的条款和条件策略](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> 你可以为用户配置条款和条件，确保他们确认其设备上的应用（包括个人应用）将会受到评估，不相容的应用将被阻止或报告为不相容。 用户必须接受这些条款和条件，然后才能注册其设备并使用公司门户获取应用。 有关使用条款和条件的详细信息，请参阅 [Microsoft Intune 中的条款和条件策略](terms-and-condition-policy-settings-in-microsoft-intune.md)。
 
 如果你寻找的设置没有在本主题中出现，你可能能够使用 Android 自定义策略创建它，该自定义策略允许你使用 OMA-URI 设置来控制设备。 有关详细信息，请稍后参阅本主题中的“自定义策略设置”****。
 
@@ -150,7 +150,7 @@ ms.suite: ems
 
 |设置名|详细信息|
 |----------------|--------------------|
-|**选择当设备处于展台模式时允许运行的托管应用**|单击“浏览”****，然后选择当设备处于展台模式时允许运行的托管应用或来自应用商店的应用。 不允许在设备上运行其他应用。<br /><br />若要获取帮助，请参阅本主题后面的“如何指定应用商店的 URL”。|
+|**选择当设备处于展台模式时允许运行的托管应用**|单击**浏览**，然后选择当设备处于展台模式时允许运行的托管应用（目前尚不支持指定为指向应用商店的链接的应用）。 不允许在设备上运行其他应用。|
 |**允许使用音量按钮**|启用或禁用设备上的音量按钮。|
 |**允许使用屏幕睡眠唤醒按钮**|启用或禁用设备上的屏幕睡眠唤醒按钮。|
 
@@ -161,23 +161,23 @@ ms.suite: ems
 
 ###### 运行不相容应用报告
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“报告”**** &gt; “不相容应用报告”****.
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**报告**&gt;**不相容应用报告**。
 
-2.  选择你想要检查的设备组，是要检查相容应用还是不相容应用，或是同时检查两者，然后单击“查看报告”****.
+2.  选择你想要检查的设备组，是要检查相容应用还是不相容应用，或是同时检查两者，然后单击“查看报告” ****。
 
 #### 如何指定应用商店的 URL
-要在相容和不相容应用列表中或在 **“选择一个在设备处于展台模式时能够运行的托管应用”** 选项(仅限 iOS)中指定一个应用 URL，请使用以下格式:
+若要在符合和不符合要求的应用列表中指定应用 URL，请使用以下格式：
 
 在 [Google Play 的应用部分](https://play.google.com/store/apps)中，搜索你想要使用的应用。
 
 打开应用的安装页面，并将 URL 复制到剪贴板。 你现在可以在符合或不符合要求的应用列表中使用这个 URL。
 
-**示例：**搜索适用于 Microsoft Office Mobile 的 Google Play。 你使用的 URL 将为 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+**示例：**搜索适用于 Microsoft Office Mobile 的 Google Play。 你使用的 URL 将为 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**。
 
 ## 自定义策略设置
 使用 Microsoft Intune 的 **Android 自定义配置策略**来部署可用于控制 Android 设备功能的 OMA URI（开放移动联盟统一资源标识符）设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
-此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。 若要了解可与这些策略一起配置的设置，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。 若要了解可与这些策略一起配置的设置，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 > [!NOTE]
 > 目前，Android 自定义策略仅支持为包含预共享密钥的 Android 设备配置 Wi-Fi 设置。 有关详细信息，请参阅本主题后面的“配置具有预共享密钥的自定义 Wi-Fi 配置文件”。
@@ -195,7 +195,7 @@ ms.suite: ems
     |--------|--------------------|
     |**设置名**|输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。|
     |**设置描述**|提供对设置进行概述的说明以及帮助你找到该设置的其他相关信息。|
-    |**数据类型**|选择将在其中指定此 OMA-URI 设置的日期类型。 从“字符串”、“字符串(XML)”、“日期和时间”、“整数”、“浮点”或“布尔值”中进行选择********.|
+    |**数据类型**|选择将在其中指定此 OMA-URI 设置的日期类型。 从“字符串、字符串 (XML)、日期和时间、整数、浮点”****，或者“布尔值”****中进行选择。|
     |**OMA-URI（区分大小写）**|指定需为其提供设置的 OMA-URI。|
     |**值**|指定要与之前指定的 OMA-URI 关联的值。|
 
@@ -212,7 +212,7 @@ ms.suite: ems
 |----------------|--------------------|
 |**设置名**|为设置指定一个你所选择的名称。|
 |**设置描述**|指定设置的描述。|
-|**数据类型**|选择“字符串(XML)”****.|
+|**数据类型**|选择“字符串 (XML)”****。|
 |**OMA-URI**|输入以下内容：./Vendor/MSFT/WiFi/Profile/*&lt;你的 Wi-Fi 配置文件&gt;*/Settings|
 
 3.  对于“值”****，复制并粘贴以下 XML 代码：
@@ -258,6 +258,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 
