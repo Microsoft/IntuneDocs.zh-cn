@@ -1,45 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c2d3e81b310302d387121a919ac9510c261f897f/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#28b5351be7d4fa46b4dee0b6145c5e9f81fe15af15)
- [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b6c33f6e49277a00d18a0dd38450d3343090954d/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#b105eca7a93b8648e832e422239709b284b5f0ef62)
 
 ## Item Details
-##### <a name='28b5351be7d4fa46b4dee0b6145c5e9f81fe15af15'></a> Source: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c2d3e81b310302d387121a919ac9510c261f897f/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/44d8bf406bda9c1828fbd35451ac233cb67e93fd/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.zh-cn.xlf)
-* Handoff Datetime: 2016-06-13 18:43:25
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/b2d31c0f0e35b9a1b34a58efb4327ccf65a18684/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/ca4b41d0c1079069ea27a65d18f873f4e900bb78/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-14 20:45:48
-* [Back to Top](#report-top)
-
-##### <a name='b105eca7a93b8648e832e422239709b284b5f0ef62'></a> Source: [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b6c33f6e49277a00d18a0dd38450d3343090954d/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/44d8bf406bda9c1828fbd35451ac233cb67e93fd/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-cn.xlf)
-* Handoff Datetime: 2016-06-13 18:43:25
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/b2d31c0f0e35b9a1b34a58efb4327ccf65a18684/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/ca4b41d0c1079069ea27a65d18f873f4e900bb78/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-14 20:45:48
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
