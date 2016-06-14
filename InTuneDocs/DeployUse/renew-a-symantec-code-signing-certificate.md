@@ -59,7 +59,7 @@ ms.suite: ems
 
 2.  打开你的 [Intune 管理控制台](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) 并转到“管理” &gt; “移动设备管理” &gt; “Windows Phone”，然后单击“上载已签名的应用”
 
-3.  上载已签名的新公司门户。 You’ll need the newly signed SSP。xap and the new 。PFX file you received from Symantec or the Application enrollment token that w设置为 created with this new 。PFX file。
+3.  上载已签名的新公司门户。 你将需要新签名的 SSP.xap 文件和你从 Symantec 收到的新 .PFX 文件，或使用此新 .PFX 文件创建的应用程序注册令牌。
 
 4.  上载完成时，在 **“软件”**  工作区中删除旧版本的公司门户。
 

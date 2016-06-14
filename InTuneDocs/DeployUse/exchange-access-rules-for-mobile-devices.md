@@ -45,7 +45,7 @@ ms.suite: ems
 
 ## 创建默认访问规则
 
-1.  在“Microsoft Intune 管理控制台”[](http://manage.microsoft.com) &gt; “策略” &gt; “移动设备的 Exchange 访问”。
+1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com) &gt; “策略” &gt; “移动设备的 Exchange 访问”。
 
 2.  在“默认规则”  列表中，选择要应用于规则或个人例外未涵盖的所有移动设备的访问规则。 选择“保存”
 
@@ -53,7 +53,7 @@ ms.suite: ems
 
 ## 创建自定义访问规则
 
-1. 在“Microsoft Intune 管理控制台”[](http://manage.microsoft.com) &gt; “策略” &gt; “移动设备的 Exchange 访问”。
+1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com) &gt; “策略” &gt; “移动设备的 Exchange 访问”。
 
 2.  在“自定义规则”列表中，选择“添加规则”并创建自定义规则。 选择“保存”
 
