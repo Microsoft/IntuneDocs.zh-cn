@@ -18,7 +18,7 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,6 +56,6 @@ Intune 通过多个技术层保护公司数据。  在标识层上，条件性�
 如果设备丢失或被盗，或者用户不再与你公司合作，除了限制数据移动之外，还可以[选择性擦除公司数据](wipe-managed-company-app-data-with-microsoft-intune.md)，仅保留个人数据。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

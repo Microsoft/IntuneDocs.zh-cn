@@ -18,7 +18,7 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -100,6 +100,6 @@ ms.suite: ems
 - **阻止屏幕捕获和 Android 助手（Android 6 Marshmallow 或更高版本）：**选择“是”，以在使用该应用时阻止设备的屏幕捕获和 **Android 助手**功能。
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 
