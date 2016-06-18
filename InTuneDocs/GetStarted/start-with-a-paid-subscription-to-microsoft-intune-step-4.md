@@ -26,10 +26,10 @@ ms.suite: ems
 ---
 
 # 管理 Intune 许可证
-用户必须有你的 Intune 订阅的许可证，然后才能登录使用服务或将其设备注册到管理中。 如果用户有许可证，他们就是 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 用户组的成员。 此组包括拥有使用订阅的许可证的所有用户。 每个用户许可证支持注册最多 5 台设备
+在登录以使用 Intune 服务或将设备注册到管理组件之前，用户必须在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中将一个许可证分配到你的 Intune 订阅。 分配许可证后，用户的名称将显示在 Intune 管理控制台中。 然后，用户最多可以注册五个设备。
 
 ## 如何分配 Intune 许可证
-当从本地上 Active Directory 同步用户帐户或通过帐户门户将用户帐户手动添加到云服务订阅时，将不会为用户帐户自动分配 Intune 许可证。 相反，Intune 租户管理员必须稍后编辑用户帐户才能从帐户门户中向用户分配许可证。
+当从本地上 Active Directory 同步用户帐户或通过 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)将用户帐户手动添加到云服务订阅时，将不会为用户帐户自动分配 Intune 许可证。 相反，Intune 租户管理员必须稍后编辑用户帐户才能从 Office 365 门户中向用户分配许可证。
 
 如果你的订阅与订阅的其他关联云服务共享 Azure AD，则你可以访问已添加到那些服务的用户。 在你为每个用户分配许可证之前，这些用户将没有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 的许可证。
 
@@ -38,16 +38,16 @@ ms.suite: ems
 
 ## 分配 Intune 用户许可证
 
-使用 **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** 手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure AD 的帐户。
+使用 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure AD 的帐户。
 
-1.  使用你的租户管理员凭据登录到 Intune 帐户门户。
+1.  使用你的租户管理员凭据登录到 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“人员” > “所有用户”。
 
-2.  选择你想要为其分配 Intune 用户许可证的用户帐户并在用户帐户属性上启用 **Microsoft Intune** 复选框。
+2.  选择你想要为其分配 Intune 用户许可证的用户帐户并在用户帐户属性上选中“Microsoft Intune”复选框。
 
-3.  用户帐户现在将添加到 Microsoft Intune 用户组，该用户组授予用户使用该服务和将设备注册到管理中的权限。
+3.  现在，该用户帐户拥有所需的权限，可以使用该服务并在管理组件中注册设备。
 
 ### 使用 PowerShell 来选择性地管理 EMS 用户许可证
-使用 Microsoft 的企业移动性套件 (EMS) 的组织可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务 
+使用 Microsoft 的企业移动性套件 (EMS) 的组织可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。 
 
 若要有选择性地为 EMS 服务分配用户许可证，请使用已安装的[用于 Windows PowerShell 的 Azure Active Directory 模块](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule)在计算机上以管理员身份打开 PowerShell。 你可以在本地计算机或 ADFS 服务器上安装 PowerShell。
 
@@ -57,7 +57,7 @@ ms.suite: ems
 
 你可以运行下面的命令来排除 Intune 服务计划。 你可以使用相同的方法来扩展整个安全组，或者使用更精细的筛选器。 
 
-示例 1
+**示例 1** 在命令行上创建一个新用户，并在不启用许可证的 Intune 部分的情况下分配一个 EMS 许可证：
 
     Connect-MsolService 
         
@@ -67,11 +67,11 @@ ms.suite: ems
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS 
     
 
-在命令行上创建一个新用户，并在不启用许可证的 Intune 部分的情况下分配一个 EMS 许可证：
+验证方式：
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-验证方式：
+**示例 2** 为已获得许可证的用户禁用 EMS 许可证的 Intune 部分：
 
     Connect-MsolService 
     
@@ -80,19 +80,19 @@ ms.suite: ems
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
  
-示例 2
+验证方式：
  
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
 
-![为已获得许可证的用户禁用 EMS 许可证的 Intune 部分：](./media/posh-addlic-verify.png)
+![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### 验证方式：
-PoSH-AddLic-Verify 后续步骤
->祝贺你！
+### 后续步骤
+祝贺你！ 你刚刚完成了 *Intune 快速入门指南*的步骤 4。
+>[!div class="step-by-step"]
 
->你刚刚完成了 *Intune 快速入门指南*的步骤 4  
+>[&larr; **将用户同步到 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**组织用户和设备** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ ms.suite: ems
 
 在配置 Skype for Business Online 的条件性访问策略**之前**，必须：
 - 具有 **Skype for Business Online 订阅** 并将 Skype for Business Online 许可证分配给用户。
-- 已订阅了**企业移动性套件**或 **Azure Active Directory Premium**
+- 已订阅了**企业移动性套件**或 **Azure Active Directory Premium**。
 -   为 Skype for Business Online **启用新式验证**。 登录到 Microsoft Connect 并填写[此表单](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715)以注册新式验证计划。
 -  所有的最终用户必须使用 **Skype for Business Online**。 如果你具有同时使用 Skype for Business Online 和 Skype for Business 本地部署进行的部署，那么条件性访问策略将不会应用到最终用户。
 
@@ -46,7 +46,7 @@ ms.suite: ems
 
 -   是 **Android** 或 **iOS** 设备。
 
--   向 **注册**
+-   **已注册**到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]。
 
 -   **符合**任何已部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
 
@@ -75,22 +75,22 @@ ms.suite: ems
 ### 步骤 2：配置和部署合规性策略
 [创建](create-a-device-compliance-policy-in-microsoft-intune.md)合规性策略并将其[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到将受此策略影响的所有设备。 这些将是“目标组”中的用户所使用的所有设备。
 
-> 将合规性策略部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
+> [!NOTE]将合规性策略部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
 
 
-> 如果尚未部署合规性策略，那么设备将被视为合规。
+> [!IMPORTANT]如果尚未部署合规性策略，那么设备将被视为合规。
 
-准备就绪后，继续**步骤 3**
+准备就绪后，继续 **步骤 3**。
 
 ### 步骤 3：配置 Skype for Business Online 策略
 接下来，配置策略以要求只有托管及合规的设备才能访问 Skype for Business Online。 此策略会存储在 Azure Active Directory 中。
 
 ####
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略”  > “条件性访问” > “Skype for Business Online 策略”
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略” > “条件性访问” > “Skype for Business Online 策略”。
 
 ![Skype for Business Online 条件性访问策略页面的屏幕截图](./media/conditional_access_SFBPolicy.png)
 
-2.  选择“启用条件性访问策略”
+2.  选择“启用条件性访问策略”。
 
 3.  在“应用程序访问”下，可以选择将条件性访问策略应用到：
 
@@ -102,7 +102,7 @@ ms.suite: ems
 
 5.  在“免除组” 下，可以选择“修改”  以选择从此策略中免除的 Azure Active Directory 安全组。
 
-6.  完成后，请单击“保存”
+6.  完成后，请单击“保存” 。
 
 现在你已配置了 Skype for Business Online 的条件性访问。 不需要部署条件访问策略，它将立即生效。
 
@@ -119,6 +119,6 @@ ms.suite: ems
 * **已向 AAD 注册并合规的设备** – 这些设备可以访问 Skype for Business Online。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

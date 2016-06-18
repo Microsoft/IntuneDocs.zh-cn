@@ -18,7 +18,7 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,6 +46,7 @@ Azure 门户是一款新的管理员控制台，用于创建 MAM 策略；建议
 
 - Android 4 或更高版本
 
+目前不支持 Windows 设备。
 ##  受支持的应用
 * **Microsoft 应用：**这些应用内置有 Intune App SDK，且无需进一步处理就可应用 MAM 策略。
 若要查看支持的 Microsoft 应用的完整列表，请转到 Microsoft Intune 应用程序合作伙伴页上的 [Microsoft Intune 移动应用程序库](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)。 单击应用可查看支持的方案、平台以及应用是否支持多身份。
@@ -123,6 +124,6 @@ Azure 门户是一款新的管理员控制台，用于创建 MAM 策略；建议
 [使用 Microsoft Intune 创建和部署移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

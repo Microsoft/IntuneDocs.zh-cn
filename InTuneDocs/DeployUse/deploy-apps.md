@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ ms.suite: ems
 
 -   要购买额外存储，你必须有有效的付费订阅。
 
--   只有 Microsoft Online Service 的帐务管理员或全局管理员才能通过 Intune 帐户门户购买额外存储。 若要添加、删除或管理这些管理员，你必须是全局管理员并登录到 Intune 帐户门户。
+-   只有 Microsoft Online Service 的帐务管理员或全局管理员才能通过 Office 365 管理门户购买额外存储。 若要添加、删除或管理这些管理员，必须是全局管理员并登录到 Office 365 管理门户。
 
 -   如果你是通过企业协议购买了 Intune 或 Microsoft Intune 加载项的批量许可客户，请与 Microsoft 客户经理或 Microsoft 合作伙伴联系以了解定价信息和购买额外的存储。
 
@@ -105,6 +105,6 @@ ms.suite: ems
 
 了解如何[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)。
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

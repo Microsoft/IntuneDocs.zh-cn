@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: 使用 Microsoft Intune 设置 Windows Phone 8.0 管理 | Microsoft Intune
+title: 设置 Windows Phone 8.0 管理 | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,8 @@ ms.suite: ems
 # 设置 Windows Phone 8.0 的设备管理
 
 Windows Phone 8.0 安装 Intune 公司门户应用并允许设备管理需要 Symantec 证书。 还要求使用证书对业务线应用签名。 下面的主题项仅用于 Windows Phone 8.0。 若要管理 Windows Phone 8.1 或更高版本（包括 Windows 10 移动版），请参阅[设置 Windows Phone 注册](set-up-windows-phone-management-with-microsoft-intune.md)。
+
+> [!IMPORTANT]从 2016 年 9 月开始，适用于 Windows 8.0 和 Windows Phone 8.0 的公司门户应用将不再可下载。
 
 -   **Windows Phone 8** - 所需证书
 -   **Windows Phone 8.1 和 Windows 10 移动版**仅在以下情况下需要证书：
@@ -184,6 +186,6 @@ Window Phone 移动设备管理的设置要求取决于管理设备的方式。 
     > -   如果需要安装旁加载应用并且 Windows Phone 8.0 设备需要注册和接收 ssp.xap，则创建新的 ssp.xap 软件部署并通过 **“卸载”** 操作对其进行部署。 Windows Phone 8.0 设备不支持强制安装或卸载应用，因此它们将忽略该部署。 Windows Phone 8.1 设备支持卸载操作并且将删除 ssp.xap。
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,7 +35,7 @@ ms.suite: ems
 
 为此，请使用以下设置来配置 Exchange Online 的条件性访问：
 
--   选择“启用条件性访问策略”
+-   选择“启用条件性访问策略”。
 
 - 选择你想要允许从使用新式验证的应用访问的平台。
 - 对于 Exchange ActiveSync 应用，请选择“阻止受 Microsoft Intune 支持的平台上的非合规设备”和“阻止不受 Microsoft Intune 支持的平台上的所有其他设备”。
@@ -70,7 +70,7 @@ ms.suite: ems
 ## 任何 Android 设备均不可访问 Exchange 内部部署。
 ### 方案要求
 - 应阻止所有的 Android 设备访问 Exchange。
-- 所有其他受支持的设备可以访问 Exchange，托管它们的是
+- 所有其他受支持的设备可以访问 Exchange，只要它们由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理。
 
 为此，请使用以下设置来配置 Exchange 内部部署的条件性访问：
 
@@ -86,6 +86,6 @@ ms.suite: ems
 ![设备访问流程](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

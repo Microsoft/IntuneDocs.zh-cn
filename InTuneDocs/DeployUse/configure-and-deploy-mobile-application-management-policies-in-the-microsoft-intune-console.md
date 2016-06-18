@@ -18,7 +18,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,11 +40,15 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 与其他 Intune 策略不同，你不会直接部署移动应用程序管理策略。 而是将该策略与你想要进行限制的应用相关联。 当应用部署并安装在设备上时，你指定的设置将起作用。
 
-若要将限制应用到应用，该应用必须包含 Microsoft 应用软件开发工具包 (SDK)。 有两种方式获得此类应用：
+若要将限制应用到应用，该应用必须包含 Microsoft Intune App SDK。 可通过三种方法获取此类应用：
 
 -   **使用策略托管应用** – 内置了应用 SDK。 要添加此类型的应用，你可以从 iTunes 应用商店或 Google Play 等应用商店指定应用的链接。 对于此类应用，无需进一步的处理。 请参阅[可配合 Microsoft Intune 移动应用程序管理策略使用的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)的列表。
 
 -   “使用‘已包装的’应用”– 使用 **Microsoft Intune 应用包装工具**对应用进行重新封装，以将应用 SDK 包括在内。 该工具通常用于处理公司内部开发的应用。 它可用于处理从应用商店下载的应用。 请参阅[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
+
+- **编写自己的包含 Intune App SDK 的应用** - Intune App SDK 允许你将应用管理功能合并到你正在编写的应用。 有关详细信息，请参阅 [Intune App SDK 概述](/develop/intune-app-sdk)
+
+有关是要选择应用包装工具还是 Intune App SDK 的帮助信息，请参阅 [Decide how to prepare apps for mobile application management with Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)（决定如何使用 Microsoft Intune 为移动应用程序管理准备应用）
 
 某些托管应用（比如用于 iOS 和 Android 的 Outlook 应用）支持**多身份**。 这意味着 Intune 仅对公司帐户或应用程序中的数据应用管理设置。
 
@@ -60,7 +64,7 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 ## 创建和部署具有移动应用程序管理策略的应用
 
--   **步骤 1：** 获取指向策略托管应用的链接，或创建已包装的应用。
+-   **步骤 1：**获取指向策略托管应用的链接、创建已包装的应用，或使用 Intune App SDK 编写已启用 MAM 的应用。
 
 -   **步骤 2：** 将应用发布到你的云存储空间。
 
@@ -70,15 +74,12 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 -   **步骤 5：** 监视应用部署。
 
-## **步骤 1：**获取指向策略托管应用的链接，或创建包装的应用
+## **步骤 1：**获取指向策略托管应用的链接、创建已包装的应用，或使用 Intune App SDK 编写已启用 MAM 的应用。
 
--   **获取策略托管应用的链接** - 从应用商店查找并记录你想要部署的策略托管应用的 URL。
+-   **在应用商店中获取策略托管应用的链接** - 从应用商店查找并记录你想要部署的策略托管应用的 URL。
 
     例如，iPad 适用的 Microsoft Word 的 URL 是 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**
 
--   **创建包装的应用** — 使用主题[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)中的信息创建包装的应用。
-
-    该工具创建你将应用发布到云存储空间将使用的经过处理的应用。
 
 ## **步骤 2：** 将应用发布到你的云存储空间
 发布托管的应用时，过程有所差异，具体取决于你发布的是策略托管的应用，还是使用 Microsoft Intune App Wrapping Tool for iOS 进行处理的应用。
@@ -111,7 +112,7 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 ## **步骤 3：**创建移动应用程序管理策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，单击**策略**&gt;**概述**&gt;**添加策略**。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，选择“策略”&gt;“概述”&gt;“添加策略”。
 
 2.  配置并部署以下 **“软件”** 策略之一，这取决于你想要为其配置应用的设备类型：
 
@@ -142,7 +143,7 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
     |**加密应用数据**|指定与本应用相关的所有数据都将加密，包括外部存储的数据，例如 SD 卡。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用程序管理策略关联的应用，使用 OS 提供的设备级加密对静态数据进行加密。 通过必须由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用程序管理策略的设置进行加密。 正如 Apple 文档所述， [iOS 7 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/en-us/HT202739)。<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用程序管理策略关联的应用，加密由 Microsoft 提供。 数据在文件 I/O 操作期间同步加密。  设备存储中的内容将始终被加密。 加密方法没有获得 FIPS 140-2 认证。|
     |**“阻止屏幕捕捉”** （仅限于 Android 设备）|指定在使用该应用时，阻止设备的屏幕捕捉功能。|
 
-4.  完成后，请单击“保存策略”。
+4.  完成后，请选择“保存策略”。
 
 新的策略将在“策略”  工作区的“配置策略”  节点处显示。
 
@@ -169,15 +170,15 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 #### 若要查看订阅的状态
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**组**&gt;**概述**。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“组”&gt;“概述”。
 
 2.  执行以下步骤之一：
 
-    -   单击**“所有用户”**，然后双击你想要检查其设备的用户。 在“用户属性”页面，单击“设备”，然后双击你想要检查的设备。
+    -   选择“所有用户”，然后双击你想要检查其设备的用户。 在“用户属性”页面，选择“设备”，然后双击你想要检查的设备。
 
-    -   单击**所有设备**&gt;**所有移动设备**。 在“设备组属性”页面，单击“设备”，然后双击你想要检查的设备。
+    -   选择“所有设备”&gt;“所有移动设备”。 在“设备组属性”页面，选择“设备”，然后双击你想要检查的设备。
 
-3.  从 **“移动设备属性”** 页面单击 **“策略”** 以查看已部署至设备的移动应用程序管理策略列表。
+3.  在“移动设备属性”页中选择“策略”以查看已部署至设备的移动应用程序管理策略列表。
 
 4.  选择你想要查看的移动应用程序管理策略的状态。 你可以在底部窗格查看策略详细信息，并展开其节点以显示其设置。
 
@@ -197,6 +198,6 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 -   如果尚无策略部署到设备，并且两个冲突设置已经部署，则将使用设备内的默认设置。
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

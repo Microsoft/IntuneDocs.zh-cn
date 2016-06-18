@@ -18,7 +18,7 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,28 +46,29 @@ Microsoft Intune 可帮助你管理通过这样的程序购买的应用，即从
 * 默认情况下，Intune 与 Apple VPP 服务一天同步两次。 但是，你可以在任何时候启动手动同步。
 * 在 Intune 中导入 VPP 令牌后，不要将同一令牌导入任何其他设备管理解决方案。 这样做可能导致许可证分配和用户记录丢失。
 * 开始将 iOS VPP 与 Itune 配合使用前，删除使用其他 MDM 供应商创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步由 Intune 创建的 Apple VPP 服务中的数据。 
+* 无法将 iOS VPP 应用部署到使用设备注册协议 (DEP) 注册的设备。
 
 ## 获取并上传 Apple VPP 令牌
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**管理**&gt;**iOS 和 Mac OS X**&gt;**批量购买计划**。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理”&gt;“iOS 和 Mac OS X”&gt;“批量购买计划”。
 
-2.  单击“Apple VPP 帐户”链接，并且如果你尚未拥有帐户，请注册适用于企业的批量购买计划。 一旦注册完成，下载你的帐户的 Apple VPP 令牌。
+2.  选择“Apple VPP 帐户”链接，并且如果你尚未拥有帐户，请注册适用于企业的批量购买计划。 一旦注册完成，下载你的帐户的 Apple VPP 令牌。
 
-3.  在 Intune 控制台的**管理 Apple 批量购买计划 (VPP)** 页上，单击**上传 VPP 令牌**。
+3.  在 Intune 控制台的“管理 Apple 批量购买计划(VPP)”页上，选择“上载 VPP 令牌”。
 
-4.  在“上载 VPP 令牌”对话框中，输入或粘贴 VPP 令牌名称和你的 Apple ID，然后单击“上载”。
+4.  在“上载 VPP 令牌”对话框中，输入或粘贴 VPP 令牌名称和你的 Apple ID，然后选择“上载”。
 
-5.  在警告对话框中，单击该复选框以指示你已了解你此后将不能更改为不同的 VPP 帐户，然后单击“是”。
+5.  在警告对话框中，选中该复选框以指示你已了解你此后将不能更改为不同的 VPP 帐户，然后选择“是”。
 
 在“批量购买计划”页上，你现在可以查看有关 Apple VPP 令牌的信息，包括它上一次更新的时间，何时将过期，以及上一次与 Intune 同步的时间。
 
-你可以随时通过单击**立即同步**将 Apple 保存的数据与 Intune 同步。
+你可以随时通过选择“立即同步”将 Apple 保存的数据与 Intune 同步。
 
 ## 部署批量购买的应用
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**应用**&gt;**托管软件**&gt;**批量购买应用**。 此列表显示已从 Apple VPP 服务同步的所有应用。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“应用”&gt;“托管软件”&gt;“批量购买应用”。 此列表显示已从 Apple VPP 服务同步的所有应用。
 
-2.  选择你想要部署的应用，单击**管理部署**，然后使用[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)主题中的说明完成应用的上传、创建和部署。
+2.  选择你想要部署的应用，选择“管理部署”，然后使用[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)主题中的说明完成应用的上传、创建和部署。
 
 在应用部署为**必须**安装时，安装该应用的每个用户都将使用一个许可证。
 
@@ -89,6 +90,6 @@ Microsoft Intune 可帮助你管理通过这样的程序购买的应用，即从
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

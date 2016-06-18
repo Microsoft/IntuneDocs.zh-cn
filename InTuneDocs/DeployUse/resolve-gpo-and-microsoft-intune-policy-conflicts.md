@@ -18,7 +18,7 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,30 +26,30 @@ ms.suite: ems
 ---
 
 # 解决组策略对象 (GPO) 与 Microsoft Intune 之间的策略冲突
-Intune 使用策略来帮助管理你所管理的计算机上的设置。 例如，你可以使用策略来控制计算机上 Windows 防火墙的设置。 Intune 的许多设置都类似于你可使用 Windows 组策略配置的设置。 但是，有时可能会有两种方法互相冲突。
+Intune 使用策略来帮助管理你所管理的 Windows 电脑上的设置。 例如，你可以使用策略来控制电脑上 Windows 防火墙的设置。 Intune 的许多设置都类似于你可使用 Windows 组策略配置的设置。 但是，有时可能会有两种方法互相冲突。
 
-发生冲突时，除非计算机无法登录到域，否则域级组策略优先于 Intune 策略。 在这种情况下，Intune 策略将应用于客户端计算机。
+发生冲突时，除非电脑无法登录到域，否则域级组策略优先于 Intune 策略。 在这种情况下，Intune 策略将应用于客户端电脑。
 
 ## 在使用组策略的情况下要执行的操作
 检查你应用的任何策略是否未通过组策略进行管理。 为了帮助防止冲突，你可以采用下列一种或多种方法：
 
--   在安装 Intune 客户端之前，将计算机移到未应用组策略设置的 Active Directory 组织单位 (OU)。 还可以在包含已在 Intune 中注册并且不希望应用组策略设置的计算机的 OU 上阻止组策略继承。
+-   在安装 Intune 客户端之前，将电脑移到未应用组策略设置的 Active Directory 组织单位 (OU)。 还可以在包含已在 Intune 中注册并且不希望应用组策略设置的电脑的 OU 上阻止组策略继承。
 
--   使用 WMI 筛选器或安全筛选器将 GPO 仅限制到未由 Intune 托管的计算机。 要详细了解操作方法及其示例，请查看下面的[如何筛选现有组策略对象以避免与 Microsoft Intune 策略冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md#BKMK_Filter)一节。
+-   使用安全组筛选器将 GPO 仅限制到未由 Intune 托管的电脑。 
 
 -   禁用或删除与 Intune 策略冲突的组策略对象。
 
 有关 Active Directory 和 Windows 组策略的详细信息，请参阅 Windows Server 文档。
 
 ## 如何筛选现有 GPO 以避免与 Intune 策略冲突
-如果确定了其设置与 Intune 策略冲突的 GPO，则可以使用下列筛选方法将这些 GPO 仅限制到未由使用 Intune 托管的计算机。
+如果确定了其设置与 Intune 策略冲突的 GPO，则可以使用安全组筛选器将这些 GPO 仅限制到未由使用 Intune 托管的电脑。
 
-### 使用 WMI 筛选器
-WMI 筛选器会有选择地将 GPO 应用于满足查询条件的计算机。 若要应用 WMI 筛选器，在 Intune 服务中注册任何计算机之前，请将 WMI 类实例部署到企业中的所有计算机。
+<!--- ### Use WMI filters
+WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all PCs in the enterprise before you enroll any PCs in the Intune service.
 
-#### 将 WMI 筛选器应用于 GPO
+#### To apply WMI filters to a GPO
 
-1.  通过将以下内容复制并粘贴到文本文件中，然后将该文件作为 **WIT.mof** 保存到一个方便的位置，从而创建管理对象文件。 该文件包含部署到你希望在 Intune 服务中注册的计算机的 WMI 类实例。
+1.  Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
 
     ```
     //Beginning of MOF file.
@@ -79,38 +79,38 @@ WMI 筛选器会有选择地将 GPO 应用于满足查询条件的计算机。 �
     };
     ```
 
-2.  使用启动脚本或组策略来部署该文件。 下面是启动脚本的部署命令。 在 Intune 服务中注册客户端计算机之前，必须部署 WMI 类实例。
+2.  Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
 
-    **C:/Windows/System32/Wbem/MOFCOMP &lt;MOF 文件的路径&gt;\wit.mof**
+    **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  运行以下任一命令以创建 WMI 筛选器，具体情况取决于你希望筛选的 GPO 是应用于使用 Intune 管理的电脑，还是应用于未使用 Intune 管理的计算机。
+3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
 
-    -   对于应用于未使用 Intune 管理的计算机的 GPO，请使用以下命令：
+    -   For GPOs that apply to PCs that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=0
         ```
 
-    -   对于应用于由 Intune 管理的计算机的 GPO，请使用以下命令：
+    -   For GPOs that apply to PCs that are managed by Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=1
         ```
 
-4.  在组策略管理控制台中编辑 GPO 以应用上一步中创建的 WMI 筛选器。
+4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   对于应该仅应用于要使用 Intune 管理的计算机的 GPO，请应用筛选器 **WindowsIntunePolicyEnabled=1**
+    -   For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
-    -   对于应该仅应用于不希望使用 Intune 管理的计算机的 GPO，请应用筛选器 **WindowsIntunePolicyEnabled=0**
+    -   For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
-有关如何在组策略中应用 WMI 筛选器的详细信息，请参阅博客文章 [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883)（组策略首选项中的安全筛选、WMI 筛选和项级目标设定）
+For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
-### 使用安全组筛选器
-利用组策略，你可以将 GPO 仅应用于在所选 GPO 的组策略管理控制台的“安全筛选”  区域中指定的那些安全组。 默认情况下，GPO 应用于“Authenticated Users”（经过身份验证的用户）
 
--   在“Active Directory 用户和计算机”管理单元中，创建包含不希望使用 Intune 管理的计算机和用户帐户的新安全组。 例如，可以将组命名为 **Not In Microsoft Intune**
+利用组策略，你可以将 GPO 仅应用于在所选 GPO 的组策略管理控制台的“安全筛选”  区域中指定的那些安全组。 默认情况下，GPO 应用于“Authenticated Users” 。
+
+-   在“Active Directory 用户和计算机”管理单元中，创建包含不希望使用 Intune 管理的计算机和用户帐户的新安全组。 例如，可以将组命名为 **Not In Microsoft Intune**。
 
 -   在组策略管理控制台中所选 GPO 的“委派”选项卡上，右键单击新的安全组以将相应的“读取”和“应用组策略”权限委派给该安全组中的用户和计算机。 （“应用组策略” 权限可在“高级”  对话框上找到。）
 
@@ -122,6 +122,6 @@ WMI 筛选器会有选择地将 GPO 应用于满足查询条件的计算机。 �
 [使用 Microsoft Intune 管理 Windows PC](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

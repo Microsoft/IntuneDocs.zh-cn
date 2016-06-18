@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -84,7 +84,7 @@ ms.suite: ems
 > [!TIP]在将[移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md)为 Intune 之前，移动设备选项将不可用。
 
 ## 对通用 Windows 平台 (UWP) 应用的支持
-Windows 10 设备安装业务线应用时无需旁加载密钥。 但是，注册表项 **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** 必须将值设置为“1”才能启用旁加载。
+Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注册表项 **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** 必须将值设置为“1”才能启用旁加载。
 
 如果未配置此注册表项，Intune 在你第一次向设备部署应用时会自动将此值设置为“1”。 如果将此值设置为“0”，则 Intune 将无法自动更改此值，业务线应用部署将失败。
 
@@ -96,6 +96,6 @@ Windows 10 设备安装业务线应用时无需旁加载密钥。 但是，注�
 
 接下来，你需要先在 Intune 控制台中添加应用，然后才能部署这些应用。 你可以为[已注册设备](add-apps-for-mobile-devices-in-microsoft-intune.md)或[使用 Intune 客户端软件管理的 Windows 电脑](add-apps-for-windows-pcs-in-microsoft-intune.md)添加应用。
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

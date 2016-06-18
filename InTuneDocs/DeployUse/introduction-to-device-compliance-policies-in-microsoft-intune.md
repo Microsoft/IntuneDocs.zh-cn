@@ -18,7 +18,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 为了保护公司数据，需要确保用于访问公司应用和数据的设备符合特定规则（如使用 PIN 访问设备，以及对设备上存储的数据进行加密）。 一组这类规则称为合规性策略。
 
 ## 应如何使用合规性策略？
-可以将合规性策略与条件性访问策略结合使用，以将访问限制为符合合规性策略规则的设备。 阅读[限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文以了解如何将这两种策略结合使用。
+可以将合规性策略与条件性访问策略结合使用，以便只允许符合合规性策略规则的设备访问电子邮件和其他服务。 阅读[限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文以了解如何将这两种策略结合使用。
 
 还可以使用独立于条件性访问的合规性策略。 独立使用时，会评估目标设备并报告其合规性状态。 例如，你可能要报告未加密的设备数，或哪些设备已越狱或取得 root 权限。 但是，独立使用，不会实施对公司资源的访问限制。
 
@@ -67,6 +67,6 @@ ms.suite: ems
 [限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

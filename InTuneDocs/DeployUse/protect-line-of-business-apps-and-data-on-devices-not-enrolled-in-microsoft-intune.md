@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [保护未注册设备上的业务线应用及数据 | Microsoft Intune]
+title: 保护未注册设备上的业务线应用及数据 | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -52,6 +52,11 @@ ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
 
 ## 步骤 3：应用 MAM 策略
 一旦应用元数据上传到服务，该应用将显示在应用列表中。  你现在可以[创建一个新策略或现有策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)并将其应用于步骤 2 中添加的业务线应用。
+
+>[!IMPORTANT]
+>必须将 MAM 策略定位给要使用已包装应用的用户。  未部署此策略的用户将无法使用该应用。
+
+
   ![显示有新的业务线应用的“目标应用列表”边栏选项卡屏幕截图](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## 步骤 4：分配应用
 可通过以下方式将应用部署到最终用户：
@@ -75,6 +80,6 @@ ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
   这会从业务线应用列表及 MAM 策略中的目标应用列表中删除该应用。
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

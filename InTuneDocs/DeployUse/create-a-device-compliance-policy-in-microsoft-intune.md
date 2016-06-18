@@ -18,7 +18,7 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,7 @@ ms.suite: ems
 本主题概述了创建合规性策略时可使用的步骤，设备必须遵循该策略才能被视为相容。
 
 ##  步骤 1：添加新策略
-  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” &gt; “合规性策略” &gt; “添加”
+  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“遵从性策略”&gt;“添加”。
 
   ![Intune 管理控制台中“合规性策略”页的屏幕截图，显示了页面顶部菜单中的“添加”选项](./media/intune-sa-3a-add-compliance-policy.png)
 
@@ -41,7 +41,7 @@ ms.suite: ems
 ![“创建策略”页的“常规”选项卡的屏幕截图 ](./media/intune-sa-3b-create-policy.png)
 
 ##  步骤 3：保存策略
-完成后，请选择“保存策略”
+完成后，请选择“保存策略”。
 
 你可以选择在保存策略后立即部署策略，也可以选择稍后部署策略。 新的策略将在“策略”工作区的“合规性策略”节点处显示。
 
@@ -84,6 +84,6 @@ ms.suite: ems
 [设备合规性策略简介](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

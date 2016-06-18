@@ -18,7 +18,7 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -69,6 +69,6 @@ ms.suite: ems
   - [为 Skype for Business Online 创建条件性访问策略](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

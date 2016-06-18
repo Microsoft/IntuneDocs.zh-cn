@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ ms.suite: ems
 
     ![具有摘要磁贴的 Intune 移动应用程序管理边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  选择“新建擦除请求”
+2.  选择“新建擦除请求”。
 
     ![新建擦除请求边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -58,7 +58,7 @@ ms.suite: ems
 
 1.  在“Intune 移动应用程序管理”边栏选项卡中，选择“擦除请求”磁贴以打开“擦除请求”边栏选项卡。
 
-2.  在“擦除请求”  边栏选项卡中，可以查看按用户分组的请求的列表。  由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。  状态指示擦除请求是仍然**“挂起”**、**“失败”**还是**“成功”**
+2.  在“擦除请求”  边栏选项卡中，可以查看按用户分组的请求的列表。  由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。  状态指示擦除请求是仍然“挂起” 、“失败” 还是“成功” 。
 
 ### 另请参阅
 [使用移动应用管理策略保护应用 ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -66,6 +66,6 @@ ms.suite: ems
 [使用 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

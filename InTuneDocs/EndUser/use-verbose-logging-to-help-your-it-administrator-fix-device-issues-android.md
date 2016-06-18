@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ ms.suite: ems
 
 若要打开或关闭“详细日志记录”，请使用你的工作或学校凭据登录到公司门户应用，点击“设置”，然后点击“详细日志记录”设置旁边的开/关按钮。
 
+仍需帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

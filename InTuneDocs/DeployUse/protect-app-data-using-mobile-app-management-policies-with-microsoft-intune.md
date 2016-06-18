@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,7 +41,7 @@ MAM 策略支持在以下设备上运行的应用：
 
 -   **在第三方移动设备管理**解决方案中托管和注册的设备。   此类别中的设备通常是公司拥有的设备。
 
-  > 移动应用管理策略不应与第三方移动应用管理或安全容器解决方案一起使用。
+  > [!NOTE]移动应用管理策略不应与第三方移动应用管理或安全容器解决方案一起使用。
 
 -   **非托管设备**。  此类别中的设备通常是员工拥有的设备且未托管或在 Intune 或其他 MDM 解决方案中注册。
 
@@ -63,6 +63,7 @@ MAM 策略支持在以下设备上运行的应用：
 
 -   Android 4 或更高版本
 
+目前不支持 Windows 设备。
 ##  MAM 策略如何保护应用数据
 
 ####  没有 MAM 策略的应用：
@@ -76,66 +77,66 @@ MAM 策略支持在以下设备上运行的应用：
 ![应用 MAM 策略时显示如何保护公司数据的图像 ](../media/Apps_with_mobile_app_policies.png)
 
 可以使用 MAM 策略来防止将公司数据保存到设备的本地存储器上，并限制将数据移动到不受 MAM 策略保护的其他应用中。 MAM 策略设置包括：
-- 数据重定位策略如下
-- **阻止另存为**、**限制剪切、复制和粘贴**
+- 数据重定位策略，例如**阻止另存为**、**限制剪切、复制和粘贴**。
+- 访问策略设置，例如**访问需要简单 PIN**、**阻止在已越狱或取得 root 权限的设备上运行托管应用**。
 
-### 访问策略设置，例如**访问需要简单 PIN**、**阻止在已越狱或取得 root 权限的设备上运行托管应用**
+### MDM 解决方案管理的设备上通过 MDM 策略的数据保护：
 
-![MDM 解决方案管理的设备上通过 MDM 策略的数据保护：](../media/MAM_BYOD_November.png)
+![显示 MAM 策略如何在 BYOD 设备上工作的图像](../media/MAM_BYOD_November.png)
 
-**显示 MAM 策略如何在 BYOD 设备上工作的图像**-
-
-对于在 MDM 解决方案中注册的设备
+**对于在 MDM 解决方案中注册的设备**-
 
 上图显示了 MDM 和 MAM 策略共同提供的保护层。
 
--   MDM 解决方案：
+MDM 解决方案：
 
 -   注册设备
 
 -   将应用部署到设备
 
-**提供持续的设备合规性和管理**
+-   提供持续的设备合规性和管理
 
--   MAM 策略通过以下功能增添价值：
+**MAM 策略通过以下功能增添价值：**
 
 -   帮助防止公司数据泄露到使用者应用和服务
 
 -   将限制（另存为、剪贴板、PIN 等）应用到移动应用
 
+-   从应用擦除公司数据而不从设备删除这些应用
 
-### 从应用擦除公司数据而不从设备删除这些应用
 
-![用于未注册设备的通过 MAM 策略的数据保护](../media/MAM_ManagedDevices_November.png)
+### 用于未注册设备的通过 MAM 策略的数据保护
 
-显示 MAM 策略如何在托管设备上工作的图像
+![显示 MAM 策略如何在托管设备上工作的图像](../media/MAM_ManagedDevices_November.png)
 
 以上图示显示了在不没有 MDM 的情况下，数据保护策略如何在应用级别工作。
+
 对于未在任何 MDM 解决方案中注册的 BYOD 设备，MAM 策略可在应用级别帮助保护公司数据。
+但是，有一些限制需要注意，如：
 
--   但是，有一些限制需要注意，如：  无法将应用部署到设备。
-
--   最终用户必须从应用商店获取应用。
+-   无法将应用部署到设备。  最终用户必须从应用商店获取应用。
 
 -   无法在这些设备上设置证书配置文件。
 
+-   无法在这些设备上设置公司 Wi-Fi 和 VPN 设置。
 
-## 无法在这些设备上设置公司 Wi-Fi 和 VPN 设置。
 
-多身份  
+## 多身份
 
-在工作环境中使用应用时，支持多身份的应用使你能够使用不同的帐户（工作和个人）访问已在其中应用 MAM 策略的相同应用。 例如，最终用户使用其工作帐户启动 OneDrive 应用时，无法将文件移动到个人存储区。  
+在工作环境中使用应用时，支持多身份的应用使你能够使用不同的帐户（工作和个人）访问已在其中应用 MAM 策略的相同应用。  
 
-但是，最终用户通过其个人帐户使用 OneDrive 时，可以无限制地从个人 OneDrive 复制和移动数据。
+例如，最终用户使用其工作帐户启动 OneDrive 应用时，无法将文件移动到个人存储区。 但是，最终用户通过其个人帐户使用 OneDrive 时，可以无限制地从个人 OneDrive 复制和移动数据。  
 
 有关使用与 MAM 策略关联的应用体验，以及具有多身份支持的应用如何在工作环境中仅应用 MAM 策略的详细说明，请阅读[使用具有多身份支持的应用](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
 
-##  所有 Office 移动应用都支持多身份。
-[后续步骤](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+所有 Office 移动应用都支持多身份。
 
-[准备好配置移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+##  后续步骤
+[准备好配置移动应用管理策略](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+
+[使用 Microsoft Intune 创建和部署移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -2,6 +2,7 @@
 
 # [开始使用](what-to-know-before-you-start-microsoft-intune.md)
 ## [开始之前要了解的内容](what-to-know-before-you-start-microsoft-intune.md)
+### [支持的移动设备和计算机](supported-mobile-devices-and-computers.md)
 ### [受支持的 Web 浏览器](supported-web-browsers.md)
 ### [网络基础结构要求](network-infrastructure-requirements-for-microsoft-intune.md)
 ### [管理帐户、网站和权限](administrative-accounts-websites-perms.md)
@@ -38,6 +39,6 @@
 # [故障排除](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

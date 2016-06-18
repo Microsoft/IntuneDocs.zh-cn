@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,17 +50,17 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 ## 创建配置策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击**策略**&gt;**配置策略**&gt;**添加**。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略”&gt;“配置策略”&gt;“添加”。
 
 2.  选择你想要的策略，然后选择使用策略的推荐设置（如果可用；可在稍后更改这些设置），或者使用自己的设置创建自定义策略。
 
     > [!TIP]要帮助选择正确的策略，请参阅 [Microsoft Intune 策略参考](microsoft-intune-policy-reference.md)。
 
-3.  准备好后，单击“创建策略” 。
+3.  准备好后，选择“创建策略”。
 
 4.  在“创建策略”  屏幕上，配置策略名称和可选描述。
 
-5.  配置必要的策略设置，然后单击“保存策略” 。
+5.  配置必要的策略设置，然后选择“保存策略”。
 
     如果你需要有关任何策略设置的帮助，请从以下列表中选择策略类型：
 
@@ -76,7 +76,7 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
     - [适用于条款和条件策略的设置](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [适用于移动设备的常规设置（旧功能）](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  在确认对话框中，单击“是”  以立即部署策略，或单击“否”  以创建而不部署策略。
+4.  在确认对话框中，选择“是”以立即部署策略，或选择“否”以创建而不部署策略。
 
 你可以通过浏览“策略”  工作区中的每个策略类型部分来查看和编辑新策略。
 
@@ -89,35 +89,26 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 ## 部署配置策略
 
-1.  在“策略”  工作区中，选择想要部署的策略，然后单击“管理部署” 。
+1.  在“策略”工作区中，选择想要部署的策略，然后选择“管理部署”。
 
 2.  在“管理部署”  对话框中：
 
-    -   **部署策略** - 选择要向其部署策略的一个或多个组，然后单击**添加**&gt;**确定**。
+    -   **部署策略** - 选择要向其部署策略的一个组或多个组，然后选择**添加**&gt;**确定**。
 
-    -   **要关闭对话框而不部署** - 单击“取消”。
+    -   **关闭对话框而不部署** — 选择**取消**。
 
 如果你选择的是已部署的策略，则可以在策略列表的下半部分查看有关部署的详细信息。
 
 ## 管理策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击 **“策略”**，然后浏览到并选择你想要管理的策略。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略”，然后浏览到并选择你想要管理的策略。
 
 2.  选择下列其中一项操作：
 
 - **编辑** - 打开所选策略的属性以允许你进行更改。
 - **删除** - 删除所选的策略。<br>在删除策略时，会将该策略从它已部署到的所有组中删除。
-- **管理部署** - 选中要对其部署策略的组并单击**添加**。
+- **管理部署** - 选中要对其部署策略的组并选择“添加”。
 
-## Intune 策略的任务
-
-### 刷新设备的策略以确保是最新的策略（仅适用于运行 Intune 客户端软件的 Windows PC）
-
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“组” ，然后选择一个设备组。
-
-2.  选择要在其上刷新策略的设备，然后单击**远程任务**&gt;**刷新策略**。
-
-3.  单击 Intune 管理控制台右下角的“远程任务”可检查任务状态。
 
 ## 有关 Intune 策略的常见问题
 
@@ -187,25 +178,7 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载，它
         - 所需的密码类型
         - 密码过期（天数）
         - 记住密码历史记录
-        - 擦除设备前允许的重复登录失败次数
-        - 需要提供密码之前处于非活动状态的分钟数
-        - 所需密码类型 - 最小字符集数
-        - 允许照相机
-        - 需要对移动设备加密
-        - 允许可移动存储
-        - 允许 Web 浏览器
-        - 允许应用程序商店
-        - 允许屏幕捕获
-        - 允许地理位置
-        - 允许 Microsoft 帐户
-        - 允许复制和粘贴
-        - 允许 Wi-Fi tethering
-        - 允许自动连接到免费 Wi-Fi 热点
-        - 允许 Wi-Fi 热点报告
-        - 允许恢复出厂设置
-        - 允许蓝牙
-        - 允许 NFC
-        - 允许 Wi-Fi
+        - 擦除设备前允许的重复登录失败次数 - 需要提供密码之前处于非活动状态的分钟数 - 所需密码类型 - 最小字符集数 - 允许照相机 - 需要对移动设备加密 - 允许可移动存储 - 允许 Web 浏览器 - 允许应用商店 - 允许抓屏 - 允许地理位置 - 允许 Microsoft 帐户 - 允许复制和粘贴 - 允许 Wi-Fi tethering - 允许自动连接到免费 Wi-Fi 热点 - 允许 Wi-Fi 热点报告 - 允许恢复出厂设置 - 允许蓝牙 - 允许 NFC - 允许 Wi-Fi
     
     - **iOS** - 删除所有设置，但不包括：
         - 允许语音漫游
@@ -220,9 +193,16 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载，它
 - **Windows 防火墙设置** - 设置重置为计算机操作系统的默认值。 有关详细信息，请参阅[使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
 
 
+### 如何刷新设备的策略以确保是最新的策略（仅适用于运行 Intune 客户端软件的 Windows PC）
+
+1.  在任一设备组中，选择要在其上刷新策略的设备，然后选择“远程任务”&gt;“刷新策略”。
+2.  选择 Intune 管理控制台右下角的“远程任务”可检查任务状态。
+
+### 在哪里可以找到有关排查策略问题的帮助？
+
+请参阅 [Troubleshoot policies in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md)（排查 Microsoft Intune 中的策略问题）。
 
 
-
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 
