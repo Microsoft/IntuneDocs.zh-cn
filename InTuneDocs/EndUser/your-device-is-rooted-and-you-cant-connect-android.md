@@ -30,11 +30,11 @@ ms.suite: ems
 
 Android 设备已取得 root 权限就意味着已将你的设备更改为启用某些功能（可能会泄露公司资源和安全性）。 设备取得 root 权限后，你将无法访问公司资源，需联系你的 IT 管理员帮助你重新连接到公司资源。
 
-如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

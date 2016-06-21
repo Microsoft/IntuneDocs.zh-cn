@@ -83,7 +83,6 @@ Apple 设备注册计划。 管理员创建“无限升级”策略并将其部�
 
 ### USB-SA
 USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出到 Apple Configurator。 使用 Intune 策略准备连接了 USB 的设备。 管理员必须手动注册每个设备。 用户收到其设备并运行设置助理，注册其设备。 此方法支持**iOS 监督**模式，此模式转而又可：
-  - 锁定注册
   - 条件性访问
   - 越狱检测
   - 移动应用程序管理
@@ -112,6 +111,6 @@ USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出�
 （[返回到表](#overview-of corporate-owned-device-enrollment-methods)）（[返回到表](#overview-of corporate-owned-device-enrollment-methods)）
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

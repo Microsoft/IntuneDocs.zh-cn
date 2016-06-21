@@ -44,8 +44,8 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 - [设置或更改 iOS 设备的密码](set-or-change-your-passcode-ios.md)
 - [设置或更改 Windows 设备的密码](set-or-change-your-password-windows.md)
 
-如果你在如何使密码符合要求的过程中遇到问题，请联系 IT 管理员。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+如果你在如何使密码符合要求的过程中遇到问题，请联系 IT 管理员。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

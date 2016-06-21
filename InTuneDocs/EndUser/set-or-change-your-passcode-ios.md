@@ -46,11 +46,11 @@ IT 管理员可以设置多个密码要求。 例如，密码可能必须包含�
 2. 点击**更改密码**并输入旧密码。
 3. 输入符合 IT 管理员要求的新密码，然后再次输入以确认密码。
 
-如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

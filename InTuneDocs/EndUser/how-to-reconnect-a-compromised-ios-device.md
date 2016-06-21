@@ -28,10 +28,10 @@ ms.suite: ems
 # 如何重新连接受威胁的 iOS 设备
 你的 IT 管理员检测到你正在使用越狱设备。 “已越狱”指的是由 iOS 规定的软件限制已经移除，这可能损害安全性并威胁你的公司资源。 在此情况下，你的设备不能够再访问公司资源。
 
-请联系你的 IT 管理员以帮助你重新连接设备。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

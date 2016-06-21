@@ -47,7 +47,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
     > [!NOTE] 如果无法访问 Windows 应用商店，请与你的 IT 管理员联系。
 
 
-如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 若要了解你设备可执行的其他任务，请使用与你所持有设备类型相匹配的链接：
 
@@ -57,6 +57,6 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

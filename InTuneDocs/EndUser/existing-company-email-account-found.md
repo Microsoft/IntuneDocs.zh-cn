@@ -36,10 +36,10 @@ ms.suite: ems
 
 3.  等待新的电子邮件设置自动应用到您的设备很短时间。
 
-如果一段时间后未出现新的电子邮件设置，请与你的 IT 管理员联系。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+如果一段时间后未出现新的电子邮件设置，请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

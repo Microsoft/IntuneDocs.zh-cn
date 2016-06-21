@@ -36,8 +36,8 @@ ms.suite: ems
 
 3.  确保你的设备在按照[注册设备以便工作时使用](http://go.microsoft.com/fwlink/?LinkId=519071)中的说明向 Intune 注册。
 
-如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
