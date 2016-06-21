@@ -18,7 +18,7 @@ ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,15 +34,17 @@ ms.suite: ems
 
 1.  打开[公司门户网站](http://portal.manage.microsoft.com)，然后点击要更改其名称的设备。
 
-2.  点击“重命名”
+2.  点击**重命名**。
 
     ![重命名设备](./media/iwp-1-tap-reset-passcode.png)
 
 3.  在显示当前设备名称的框中，键入设备的新名称，然后点击“重命名”按钮。 你的设备现在将显示新的名称。
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+
 ### 另请参阅
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

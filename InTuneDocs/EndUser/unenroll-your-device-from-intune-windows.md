@@ -18,7 +18,7 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,7 +48,7 @@ ms.suite: ems
 
 ## 取消注册 Windows 8.1 计算机
 
-1.  转至**电脑设置** &gt; **网络**&gt;**工作区**。
+1.  转至**电脑设置** &gt; **网络** &gt; **工作区**。
 
 2.  在下“工作区加入”下，点击“退出”。
 
@@ -58,7 +58,7 @@ ms.suite: ems
 
 ## 取消注册 Windows Phone 8.1 设备
 
-1.  转到**设置** &gt;**工作区**。
+1.  转到**设置** &gt; **工作区**。
 
 2.  点击要取消注册的工作区帐户。
 
@@ -66,9 +66,11 @@ ms.suite: ems
 
 4.  在“删除帐户”对话框中，点击“删除”。
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

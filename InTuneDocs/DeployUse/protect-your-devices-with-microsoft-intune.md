@@ -18,7 +18,7 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,10 +40,13 @@ ms.suite: ems
 ## 控制 Windows 设备上的 Microsoft Passport 设置
 Intune 允许集成 [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)，这是一种适用于 Windows 10 及更高版本的替代登录方法，它使用 Active Directory 或 Azure Active Directory 帐户来取代密码、智能卡或虚拟智能卡。
 
+## 在 iOS 设备上绕过激活锁定
+激活锁定是一种功能，通过在任何人都可以擦除或激活该设备前要求输入其 Apple ID 和密码来帮助保护用户设备。 但是，如果用户离开了公司，但未删除该锁定，就可能会导致出现问题。 [绕过 iOS 激活锁定](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)通过从监管的 iOS 设备删除锁定并允许你重新分配或将其擦除可提供帮助。
+
 ## 保护通过 Intune 客户端管理的 Windows 电脑
 Intune 继续支持适用于未注册但通过 Intune 计算机客户端软件管理的 Windows 电脑的安全性策略。 若要了解这些策略如何帮助你保护 Windows 电脑，请参阅[使用策略来帮助保护运行 Intune 客户端软件的 Windows 电脑](policies-to-protect-windows-pcs-in-microsoft-intune.md)。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

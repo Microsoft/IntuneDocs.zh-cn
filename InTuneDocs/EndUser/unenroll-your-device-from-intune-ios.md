@@ -18,7 +18,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -54,9 +54,11 @@ ms.suite: ems
 
 -   仅针对电子邮件配置的设备将不再出现在公司门户应用或网站中。
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

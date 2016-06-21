@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -37,7 +37,7 @@ ms.suite: ems
 ## Windows 10 移动版
 若要手动同步你的 Windows 10 移动设备，以加快较慢的应用安装的速度：
 
-1. 请转到**所有应用** > **设置** > **帐户**。
+1. 请转到**所有应用**  >  **设置**  >  **帐户**。
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
     
@@ -102,6 +102,6 @@ ms.suite: ems
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

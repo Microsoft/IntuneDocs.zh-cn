@@ -18,7 +18,7 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -62,9 +62,11 @@ ms.suite: ems
 
     若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+
 ### 另请参阅
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

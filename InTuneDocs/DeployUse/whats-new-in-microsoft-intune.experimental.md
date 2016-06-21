@@ -27,20 +27,29 @@ ms.suite: ems
 ---
 
 # Microsoft Intune 新增功能
+## 2016 年 6 月
+
+### 公司门户更新
+
+#### iOS 公司门户应用
+
+- 当最终用户安装业务线应用时，现在它们将看到改进的应用安装体验。 如果应用安装要花很长时间，用户可以手动同步设备以强制继续同步过程。 若要查看最终用户说明，请参阅[手动同步 iOS 设备](/Intune/EndUser/sync-your-device-manually-ios.md)。
+
+- 适用于 iOS 的 Microsoft Intune 公司门户应用已更新，可支持 iOS 8.0 和更高版本。 此更新意味着，仅当设备正在运行 iOS 8.0 或更高版本时，最终用户才可在 Intune 中安装公司门户应用并注册新设备。 如果用户已注册运行不受支持的 iOS 版本的设备，则这些用户可以继续使用其设备上的公司门户应用。
 
 ## 2016 年 5 月
 
 
-除 TeamViewer 集成外，所有这些功能也受混合部署（Configuration Manager 外加 Intune）支持。 有关新的混合功能的详细信息，请查看[混合新增功能](https://technet.microsoft.com/en-us/library/mt718155.aspx)页。
+所有这些功能也受混合部署 (Configuration Manager with Intune) 支持。 有关新的混合功能的详细信息，请查看[混合新增功能](https://technet.microsoft.com/en-us/library/mt718155.aspx)页。
 
 ### 文档
 
 欢迎使用 [docs.microsoft.com](https://docs.microsoft.com/en-us/intune) 预览版本！
-这是一个全新的、新式内容平台，旨在使作为我们客户的你能更容易地理解和使用 Intune。
+这是一个全新的新式内容平台，旨在使作为我们客户的你能更容易地理解和使用 Intune。
 若要了解所有最新功能，请参阅 [Introducing docs.microsoft.com](https://docs.microsoft.com/teamblog/introducing-docs-microsoft-com/)（docs.microsoft.com 简介）
 
 ### Intune 服务运行状况
-Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一个中心位置。 现在你可在**服务运行状态**下 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)中找到此信息。
+Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一个中心位置。 现在你可在**服务运行状态**下的 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)中找到此信息。
 有关详细信息，请参阅[此博客文章](https://blogs.technet.microsoft.com/microsoftintune/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/)。
 
 
@@ -52,10 +61,7 @@ Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一�
 
 - **可通过 MAM 策略管理的新应用。** 适用于 Android 的 Microsoft Word、Excel 和 PowerPoint 应用现在可与未向 Intune 注册的设备上的 MAM 策略相关联。 有关支持的应用的完整列表，请转到 [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)（Microsoft Intune 应用程序合作伙伴）页上的 Microsoft Intune mobile application gallery（Microsoft Intune 移动应用程序库）。
 
-### 设备管理
 
-- **Windows 电脑的远程协助会话。** 适用于 Intune 客户软件管理的 Windows 电脑的 TeamViewer 集成让你可以同 Windows 电脑建立远程协助会话，从而支持技术支持部门。 支持的电脑包括 Windows 7、8、8.1 和 Windows 10。
-有关详细信息，请参阅 [Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#respond-to-a-remote-assistance-request)。
 
 ### 公司门户更新
 
@@ -73,9 +79,9 @@ Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一�
 ## 即将推出
 
 - **消息中心 UI 载入**。 作为 Intune 迁移到 [Office 365 管理门户](https://portal.office.com/)的一部分，我们将开始利用其消息中心以沟通新功能和其他通知。 另外，通过安装随附的 Office 365 管理员移动应用，可在移动电话上收到通知，并轻松地将任何消息转发到用户或分发别名。
-我们将开始通过五月发行版本使用消息中心，以在更新完成时通知你，并且将包括有关新的和改进的 Intune 功能的信息。 现在通过登录到 [Office 365 管理门户](https://portal.office.com/)，然后选择左导航窗格中的“消息中心”选项来查看消息中心。
+我们将开始通过五月发行版本使用消息中心，以在更新完成时通知你，并且将包括有关新的和改进的 Intune 功能的信息。 现在可以通过登录到 [Office 365 管理门户](https://portal.office.com/)，然后选择左导航窗格中的“消息中心”选项来查看消息中心。
 
-- **对设备注册管理器帐户的更改**。 若要提高性能和可扩展性，Intune 不再在 iOS 公司门户应用的**我的设备**窗格中显示**所有**设备注册管理器 (DEM) 设备。 仅显示运行该应用的本地设备，且仅限该设备通过公司门户应用注册的情况下。 DEM 用户可能会在本地设备上执行操作，但只能从 Intune 管理员控制台远程管理其他已注册设备。 此外，Intune 将不支持通过 Apple 设备注册计划或 Apple 配置器工具使用 DEM 帐户。 这两种注册方法已支持共享的 iOS 设备的无用户注册。 当共享设备的无用户注册不可用时，仅使用 DEM 帐户。
+- **对设备注册管理器帐户的更改**。 为了提高性能和可扩展性，Intune 不再在 iOS 公司门户应用的**我的设备**窗格中显示**所有**设备注册管理器 (DEM) 设备。 仅显示运行该应用的本地设备，且仅限该设备通过公司门户应用注册的情况下。 DEM 用户可能会在本地设备上执行操作，但只能从 Intune 管理员控制台远程管理其他已注册设备。 此外，Intune 将不支持通过 Apple 设备注册计划或 Apple 配置器工具使用 DEM 帐户。 这两种注册方法已支持共享的 iOS 设备的无用户注册。 当共享设备的无用户注册不可用时，仅使用 DEM 帐户。
 
 ### 云路线图
 通过[云平台路线图](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)实时了解 Intune 即将推出的开发内容。
@@ -84,12 +90,12 @@ Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一�
 - **Intune 查看器应用。** 随着新的 RMS 共享应用的发布，我们将从 2016 年 8 月起删除以下 Intune 查看器应用：
     - Intune AV 查看器
     - Intune PDF 查看器
-    - Google Play 中适用于 Android 的 Intune 图片查看器
+    - Google Play 中适用于 Android 的 Intune 图像查看器
 
   建议使用适用于 Android 的 Rights Management 应用（RMS 共享）而不是使用 Intune 查看器应用，前者只需部署一个应用而不是三个单独的应用便可安全地查看 Android 设备上的公司文件。 了解有关 RMS 共享应用（具有指向文档的链接）的详细信息。
 
 - **通知规则删除的自定义组目标。**
-Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员。 当前，你可将通知规则配置为向你创建的 Intune 设备组中的设备所有用户发送电子邮件 约从 2016 年 6 月 1 日起，将不再支持目标用户创建组。
+Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员。 当前，你可将通知规则配置为向你创建的 Intune 设备组中的设备所有用户发送电子邮件。 约从 2016 年 6 月 1 日起，已不再支持目标用户创建组。
 
     当前，若要为从 Microsoft Intune 管理控制台创建的组指定通知规则，应采用以下步骤：
 
@@ -125,6 +131,6 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 * [云平台路线图](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [使用 Pulse Secure 的 Per-app VPN（针对 Android）| Microsoft Intune]
+title: 使用 Pulse Secure 的 Per-app VPN（针对 Android）| Microsoft Intune
 description:
 keywords:
-author: [nbigman]
-manager: [jeffgilb]
+author: nbigman
+manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: chrisbal
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**策略**  >  **添加策略**。
 2. 通过展开**Android**为新策略选择模板，然后选择**VPN 配置文件(Android 4 及更高版本)**。
 
-3. 在模板中，选择用于**连接类型**的**Pulse Secure**。
+3. 在模板中，选择用于**连接类型**的 **Pulse Secure**。
 4. 完成并保存 VPN 配置文件。 有关 VPN 配置文件的更多详细信息，请参阅 [VPN 配置文件](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md)。
 
 > [!NOTE]
@@ -42,7 +42,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
    
 ### 步骤 2：创建自定义配置策略
     
-   1. 在 Intune 管理控制台中，单击**策略**  ->  **添加策略**  ->  **Android**  -> **自定义配置**  -> **创建策略**。
+   1. 在 Intune 管理控制台中，单击**策略**  ->  **添加策略**  ->  **Android**  ->  **自定义配置**  -> **创建策略**。
    2. 提供策略的名称。
    3. 在**OMA-URI 设置**下，单击**添加**。
    4. 提供设置名称。
@@ -74,7 +74,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 
 2.  在“管理部署”  对话框中：
 
-    -   **部署策略** - 选择要向其部署策略的一个或多个组，然后单击**添加**&gt;**确定**。
+    -   **部署策略** - 选择要向其部署策略的一个或多个组，然后单击**添加** &gt; **确定**。
 
     -   **要关闭对话框而不部署** - 单击“取消”。
 
@@ -82,6 +82,6 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

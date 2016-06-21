@@ -67,13 +67,13 @@ ms.suite: ems
 **公司拥有的设备的注册方法**
 
 ### BYOD
-“自带设备办公。” 用户安装公司门户应用并注册其设备。 通过公司门户注册设备将会使其加入工作区。 通过公司门户注册 iOS 设备需要 Apple ID。 对于公司拥有的设备，BYOD 无需其他配置。 参阅[设置设备管理](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md)的相关步骤。
+“自带设备办公。” 用户安装公司门户应用并注册其设备。 通过公司门户注册设备将会使其加入工作区。 通过公司门户注册 iOS 设备需要 Apple ID。 对于公司拥有的设备，BYOD 无需其他配置。 参阅[设置设备管理](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md)的相关步骤。 （[返回到表](#overview-of corporate-owned-device-enrollment-methods)）
 
 ### DEM
 设备注册管理器。 管理员创建 DEM 帐户。 然后，管理人员可安装公司门户并注册多个无用户设备。 了解有关 [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) 的详细信息。 （[返回到表](#overview-of corporate-owned-device-enrollment-methods)）
 
 ### DEP
-Apple 设备注册计划。 管理员创建“无限升级”策略并将其部署到使用 DEP 购买和管理的 iOS 设备。 用户运行 iOS 设置助理时，就会对设备进行注册。 此方法支持**iOS 受监督**模式，此模式转而又可：
+Apple 设备注册计划。 管理员创建“无限升级”策略并将其部署到使用 DEP 购买和管理的 iOS 设备。 用户运行 iOS 设置助理时，就会对设备进行注册。 此方法支持**iOS 监督**模式，此模式转而又可：
   - 锁定注册
   - 条件性访问
   - 越狱检测
@@ -82,7 +82,7 @@ Apple 设备注册计划。 管理员创建“无限升级”策略并将其部�
 了解有关 [DEP](ios-device-enrollment-program-in-microsoft-intune.md) 的详细信息。 （[返回到表](#overview-of corporate-owned-device-enrollment-methods)）
 
 ### USB-SA
-USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出到 Apple Configurator。 使用 Intune 策略准备连接了 USB 的设备。 管理员必须手动注册每个设备。 用户收到其设备并运行设置助理，注册其设备。 此方法支持**iOS 受监督**模式，此模式转而又可：
+USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出到 Apple Configurator。 使用 Intune 策略准备连接了 USB 的设备。 管理员必须手动注册每个设备。 用户收到其设备并运行设置助理，注册其设备。 此方法支持**iOS 监督**模式，此模式转而又可：
   - 锁定注册
   - 条件性访问
   - 越狱检测
@@ -105,7 +105,7 @@ USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出�
   - 对电子邮件和公司数据的条件性访问
   - 公司门户应用
 
-（[返回到表](#overview-of corporate-owned-device-enrollment-methods)）（[返回到表](#overview-of corporate-owned-device-enrollment-methods)）
+（[返回到表](#overview-of corporate-owned-device-enrollment-methods)）
 
 ### 锁定
 指定是否可锁定设备以防止用户删除 Intune 策略，进而使得设备不受管理。 对于 iOS 设备，其需要处于监管模式才可进行锁定。

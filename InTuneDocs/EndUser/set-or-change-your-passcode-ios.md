@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 设置或更改密码 |Microsoft Intune
+title: 设置或更改密码 | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -18,7 +18,7 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: esmich
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,20 +35,22 @@ IT 管理员可以设置多个密码要求。 例如，密码可能必须包含�
 
 ## 设置密码：
 
-1. 点击**设置** > **Touch ID 和密码**。
+1. 点击**设置**  >  **Touch ID 和密码**。
 2. 在 **Touch ID 和密码**菜单上，点击**启用密码**。
 3. 输入符合 IT 管理员要求的新密码，然后再次输入以确认密码。
 
 ## 更改密码：
 
-1. 点击**设置** > **Touch ID 和密码**。
+1. 点击**设置**  >  **Touch ID 和密码**。
 2. 输入密码： 此时将打开“Touch ID 和密码”菜单。
 2. 点击**更改密码**并输入旧密码。
 3. 输入符合 IT 管理员要求的新密码，然后再次输入以确认密码。
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

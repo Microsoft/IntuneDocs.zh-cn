@@ -18,7 +18,7 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,15 +29,15 @@ ms.suite: ems
 使用本主题中的信息来帮助你创建和管理 Microsoft Intune 报表，这些报表提供有关你组织中的软件、硬件和软件许可证的信息。
 
 ## 使用报表
-Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 报表可以帮助你确认当前需求以及预测将来的花费。 “报表”  工作区为你提供创建和管理报表的工具。 有关报表的详细信息，请参阅[通过使用报表了解 Microsoft Intune 操作](understand-microsoft-intune-operations-by-using-reports.md)
+Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 报表可以帮助你确认当前需求以及预测将来的花费。 “报表”  工作区为你提供创建和管理报表的工具。 有关报表的详细信息，请参阅[通过使用报表了解 Microsoft Intune 操作](understand-microsoft-intune-operations-by-using-reports.md)。
 
 ### 报表类型
 
 |报表类型|描述|
 |---------------|---------------|
-|**更新报表**|显示在组织中的计算机上成功安装的软件更新，以及失败、待定或需要的更新。 有关软件更新的详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)|
+|**更新报表**|显示在组织中的计算机上成功安装的软件更新，以及失败、待定或需要的更新。 有关软件更新的详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。|
 |**检测到的软件报表**|显示组织中的计算机上安装的软件，并包括软件版本。 你可以基于软件发布者和软件类别来筛选显示的信息。 通过单击列表项旁边的方向箭头，可以展开列表中的更新以显示更多详细信息（例如安装了更新的计算机）。<br /><br />停用计算机或在 Intune 中更改其组成员之后，所做的更改可能要过几分钟才会在检测到的软件报表中反映出来。 为了获得更加准确的软件清单数据，请在注销计算机或更改计算机组成员之后等待几分钟，然后再运行包括那些计算机的检测到的软件报表。|
-|**计算机清单报表**|显示有关组织中托管计算机的信息。 使用此报表制定硬件购买计划并详细了解组织中用户的硬件需求。 若要深入了解如何使用托管计算机，请参阅[使用 Microsoft Intune 管理 Windows 电脑](manage-windows-pcs-with-microsoft-intune.md)|
+|**计算机清单报表**|显示有关组织中托管计算机的信息。 使用此报表制定硬件购买计划并详细了解组织中用户的硬件需求。 若要深入了解如何使用托管计算机，请参阅[使用 Microsoft Intune 管理 Windows 电脑](manage-windows-pcs-with-microsoft-intune.md)。|
 |**移动设备清单报表**|显示有关组织中的移动设备的信息。 你可以基于组、设备是否为已越狱或取得 root 权限的设备以及按操作系统来筛选显示的信息。|
 |**许可证购买报表**|按照所选许可证组的许可协议显示该许可证组中所有许可软件的软件标题。 如果软件许可证信息未刷新的时间超过 24 小时，则会在你生成许可证报表时进行刷新。 许可证报表不是所使用或证明符合协议的软件标题的精确计算。 该报表是一种工具，可帮助你为组织做出授权决策。 Intune 可能不会检测可具有 Microsoft 批量许可证的某些产品。 可用的筛选器包括：<br /><br />**所有协议**显示由 Intune 托管的、经许可的所有软件产品。<br /><br />“批量许可协议”仅显示 VLSC 软件产品。<br /><br />“其他软件许可协议”显示在 VLSC 外部管理的软件产品。|
 |**许可证安装报表**|依据批量许可服务中心 (VLSC) 将组织中计算机上的已安装软件与当前许可协议范围进行比较。 筛选器包括：<br /><br />**所有协议**显示由 Intune 托管的、经许可的所有软件产品。<br /><br />“批量许可协议”仅显示 VLSC 软件产品。<br /><br />“其他软件许可协议”显示在 VLSC 外部管理的软件产品。|
@@ -45,7 +45,7 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 |**不符合要求的应用报表**|显示有关安装了应用的用户的信息，这些应用存在于你的符合要求和不符合要求的应用列表中。 使用此报表查找不符合公司应用策略的用户和设备。|
 |**证书符合性报表**|显示已通过 SCEP 或 PKCS #12 (.PFX) 向用户和设备颁发的证书。 使用此报表查找已颁发的、过期的以及吊销的证书。|
 |**设备历史记录报告**|显示停用、擦除和删除操作的历史的日志。 使用此报表以查看谁在过去启动设备上的操作。|
-|**Mac OS X 硬件报表**|显示你选择的组中所有已注册的 Mac OS X 设备的硬件详细信息。 若要了解从这些设备收集到的硬件清单，请参阅[在 Microsoft Intune 中了解你的设备清单](understand-your-devices-with-inventory-in-microsoft-intune.md)|
+|**Mac OS X 硬件报表**|显示你选择的组中所有已注册的 Mac OS X 设备的硬件详细信息。 若要了解从这些设备收集到的硬件清单，请参阅[在 Microsoft Intune 中了解你的设备清单](understand-your-devices-with-inventory-in-microsoft-intune.md)。|
 |**Mac OS X 软件报表**|显示你选择的组中的所有 Mac OS X 设备上安装的软件。 该报表列出了软件名称（作为软件包 ID）、简短版本（或友好）名称以及已安装软件的设备数目。|
 
 #### 创建报表
@@ -69,11 +69,11 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 |**加载**|在“创建新报表”  页上，单击“加载”  检索任何以前保存的报表参数集。|
 |**删除**|在“报表”  工作区中，选择所需的报表类型，单击“加载” ，然后在报表列表中单击报表旁边的删除 (x) 图标。|
 
-## 另请参阅
+### 另请参阅
 [使用 Microsoft Intune 进行监视和报告](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

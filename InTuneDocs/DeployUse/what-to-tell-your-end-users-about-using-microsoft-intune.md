@@ -34,6 +34,8 @@ ms.suite: ems
 - 了解你的用户在 Intune 中执行不同的任务所遵循的步骤。
 - 将它们提供给你的用户以帮助他们完成任务，并解决他们使用 Intune 时遇到的问题。
 
+当你[自定义公司门户](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7)时，请务必将 IT 管理员的联系信息包括在内，以便用户可以在需要时获得帮助。
+
 
 ## 最终用户查找常见任务相关信息的位置
 
@@ -61,9 +63,9 @@ ms.suite: ems
 
 ## 帮助最终用户理解公司门户应用消息
 
-若要帮助用户解决在使用公司门户时可能遇到的问题，你可以查看[用户可能在公司门户中看到的消息列表](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)
+若要帮助用户解决在使用公司门户时可能遇到的问题，你可以查看[用户可能在公司门户中看到的消息列表](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)。
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

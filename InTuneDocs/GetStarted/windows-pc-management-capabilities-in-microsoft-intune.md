@@ -18,7 +18,7 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ ms.suite: ems
 
 -   **反恶意软件保护** - Intune 包括 Endpoint Protection，它有助于保护你的电脑免遭恶意软件侵害。
 
--   **远程协助** - Intune 允许用户与 IT 支持人员联系，随后他们可使用 Intune 附带的远程桌面功能来提供协助（需要 TeamViewer 软件）。
+-   **远程协助** - Intune 允许用户与 IT 支持人员联系，随后他们可使用 Intune 附带的远程桌面功能来提供协助<!--- (requires TeamViewer software)--->。
 
 -   **软件许可证管理** - 跟踪有多少软件许可证可用，以及有多少可用的许可证已使用。
 -   **应用部署** - 将软件部署到你管理的 PC。 在使用客户端软件管理 PC 时，一些应用管理功能不可用。
@@ -48,9 +48,9 @@ Intune 可以管理运行以下 Windows 版本（x86 和 x64）的 PC：
 
 -   **Windows 7** - 专业版、企业版和旗舰版（不带 Service Pack 或带 SP1）。
 
--   **Windows 8** - 专业版和企业版
+-   **Windows 8** - 专业版和企业版。
 
--   **Windows 8.1** - 专业版和企业版
+-   **Windows 8.1** - 专业版和企业版。
 
 - **Windows 10** - 家庭版、专业版、教育版和企业版。
 
@@ -77,6 +77,6 @@ Intune 可以管理运行以下 Windows 版本（x86 和 x64）的 PC：
 [Microsoft Intune 中的移动设备管理功能](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

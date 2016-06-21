@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Microsoft Intune 公司门户
 
-设置 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 之前，请查看本主题以及 [Microsoft Intune 启动前须知](what-to-know-before-you-start-microsoft-intune.md)中列出的其他要求。
+设置 Intune 之前，请查看本主题以及 [Microsoft Intune 启动前须知](what-to-know-before-you-start-microsoft-intune.md)中列出的其他要求。
 
 Intune 公司门户是一种向用户提供公司数据和应用程序访问的工具。 公司门户有两种形式：
 
@@ -58,6 +58,6 @@ Intune 公司门户是一种向用户提供公司数据和应用程序访问的�
 [启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

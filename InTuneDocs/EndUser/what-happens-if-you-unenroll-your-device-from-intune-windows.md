@@ -18,7 +18,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -92,10 +92,11 @@ ms.suite: ems
 
 -   将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
 
+如有疑问，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

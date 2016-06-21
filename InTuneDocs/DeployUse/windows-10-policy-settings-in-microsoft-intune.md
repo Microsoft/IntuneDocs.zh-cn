@@ -18,7 +18,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -220,7 +220,7 @@ ms.suite: ems
 |**WiFi/AllowWiFi**<br>（仅限移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** – 不允许**使用 Wi-Fi 连接**。<br>**1** – **允许使用 Wi-Fi 连接**（默认值）|
 |**WiFi/AllowInternetSharing**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许 Internet 共享。<br>**1** - 允许 Internet 共享（默认值）|
 |**WiFi/AllowAutoConnectToWiFiSenseHotspots**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>**1** – 允许（默认值）|
-|**WiFi/AllowManualWiFiConfiguration**<br>（仅限移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** –只允许 MDM 预配的 Wi-Fi 连接。<br>**1** - 允许添加 MDM 已预配的连接以外的新网络 SSID（默认值）|
+|**WiFi/AllowManualWiFiConfiguration**<br>（仅限移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** –只允许 MDM 预配的 Wi-Fi 连接。<br>**1** - 除 MDM 已预配的网络外，允许添加新网络 SSID（默认值）|
 |**System/AllowLocation**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/System/AllowLocation<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>**1** – 允许（默认值）|
 |**System/AllowTelemetry**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/System/AllowTelemetry<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许（Enterprise 版仅设置）<br>**“1”** - 有限<br>**2** – 完全（默认值）<br>**3** -  完全和诊断信息|
 |**System/AllowExperimentation**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/System/AllowExperimentation<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>**1** - 仅设置（默认值）<br>**2**- 设置和实验|
@@ -252,7 +252,7 @@ ms.suite: ems
 |**Security/RequireProvisioningPackageSignature**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Security/RequireProvisioningPackageSignature<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**（默认值）<br>**1**|
 |**AboveLock/AllowActionCenterNotifications**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/AboveLock/AllowActionCenterNotifications<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>**1** – 允许（默认值）|
 |**TextInput/AllowIMENetworkAccess**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>“打开扩展词典”已禁用。<br>用户不可：<br>添加新的“打开扩展词典”<br /><br />添加新的搜索集成配置文件<br>使用云候选功能<br>发送用户注册的字<br>此外：<br>在启用此策略设置之前已添加的打开扩展词典不用于转换。<br>不使用在启用此策略设置之前已安装的搜索集成配置文件。<br>**1** - 允许<br>默认情况下，可以添加和使用“打开扩展词典”。 此外，默认可以使用搜索集成功能。<br>用户可：<br>使用云候选功能<br>发送用户注册的字。|
-|**TextInput/AllowIMELogging**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/TextInput/AllowIMELogging<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** - 误转换日志记录已关闭。 自动优化的数据和输入历史记录数据不会保存到文件。<br>**1** - 误转换日志记录已启用。 自动优化的数据和输入历史记录数据会保存到文件（默认值）|
+|**TextInput/AllowIMELogging**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/TextInput/AllowIMELogging<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** - 误转换日志记录已关闭。 自动优化的数据和输入历史记录数据不会保存到文件。<br>**1** - 误转换日志记录已启用。 自动优化的数据和输入的历史记录数据会保存到文件（默认值）|
 |**TextInput/AllowJapaneseNonPublishingStandardGlyph**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseNonPublishingStandardGlyph<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>**1** – 允许（默认值）|
 |**TextInput/AllowJapaneseIVSCharacters**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>**1** – 允许（默认值）|
 |**TextInput/AllowJapaneseUserDictionary**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseUserDictionary<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>**1** – 允许（默认值）|
@@ -278,8 +278,8 @@ ms.suite: ems
 |**Experience/AllowCopyPaste**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Experience/AllowCopyPaste<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**“0”** - 不允许<br>**1** – 允许（默认值）|
 |**强制开始大小**<br>（仅限移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Start/ForceStartSize<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** - 允许用户更改大小（默认值）<br>**1** - 强制非全屏<br>**2** - 强制全屏|
 |**Update/RequireDeferUpgrade**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**：不推迟升级（保留在当前分支 (CB) 内 - 默认值）<br>**1**：允许推迟更新和升级（设备遵循当前业务分支 (CBB) 规则）<br /><br />有关详情，请参阅：<br>[Windows 10 服务简介](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 部署规划](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/DeferUpdatePeriod**<br>（桌面版和移动版）|**说明：**将软件更新延迟至多 4 周的策略<br /><br />**URI 完整路径：**./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br> **0**：立即应用更新（默认）<br>**1**-**4**：延迟与软件更新的周数。<br /><br />有关详情，请参阅：<br>[Windows 10 服务简介](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 部署规划](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/DeferUpgradePeriod**<br>（桌面版和移动版）|**说明：**将功能升级延迟至多 8 个月的策略<br /><br />**URI 完整路径：**./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**：立即应用更新（默认）<br>**1**-**8**：延迟功能升级的月数。<br /><br />有关详情，请参阅：<br>[Windows 10 服务简介](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 部署规划](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/DeferUpdatePeriod**<br>（桌面版和移动版）|**说明：**将软件更新延迟至多 4 周的策略<br /><br />**URI 完整路径：**./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br> **0**：立即应用更新（默认）<br>**1** - **4**：延迟与软件更新的周数。<br /><br />有关详情，请参阅：<br>[Windows 10 服务简介](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 部署规划](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/DeferUpgradePeriod**<br>（桌面版和移动版）|**说明：**将功能升级延迟至多 8 个月的策略<br /><br />**URI 完整路径：**./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**：立即应用更新（默认）<br>**1** - **8**：延迟功能升级的月数。<br /><br />有关详情，请参阅：<br>[Windows 10 服务简介](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 部署规划](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>（桌面版和移动版）|**说明：**允许 CBB 计算机在 5 周内停止接收更新和升级。 更新出现问题时应使用此设置。<br /><br />**URI 完整路径：**./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**：立即应用更新（默认）<br>**1**：暂停更新和升级（将在 5 周后过期）|
 
 ### Windows Defender URI 设置
@@ -332,6 +332,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

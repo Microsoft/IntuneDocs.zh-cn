@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,7 +19,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,10 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 
 2.  请按照安装指示进行操作。
 
-    > [!NOTE]如果无法访问 Windows 应用商店，请与你的 IT 管理员联系。
+    > [!NOTE] 如果无法访问 Windows 应用商店，请与你的 IT 管理员联系。
+
+
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 若要了解你设备可执行的其他任务，请使用与你所持有设备类型相匹配的链接：
 
@@ -54,6 +57,6 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

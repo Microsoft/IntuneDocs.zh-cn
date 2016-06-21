@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -76,11 +76,11 @@ IT 部门可能管理的常见应用程序有：
 
 -   Microsoft Word、Excel、PowerPoint
 
-有关设备上的托管应用的详细信息，请联系你的 IT 部门。
+有关设备上的托管应用的详细信息，请联系你的 IT 部门。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -37,18 +37,19 @@ ms.suite: ems
 
 1.  在公司门户应用中“我的设备”下，选择要擦除的设备。
 
-2.  点击**重置**&gt;**重置**。
+2.  点击**重置** &gt; **重置**。
 
 若要使用公司门户网站重置设备，请使用以下步骤，或观看此[视频](http://aka.ms/jhdjak)：
 
 1.  在[公司门户网站](http://portal.manage.microsoft.com)中，选择要擦除的设备。
 
-2.  点击**重置**&gt;**重置**。
-> [!NOTE]如果你无法重置丢失或被盗的设备，请让 IT 管理员为你重置。
+2.  点击**重置** &gt; **重置**。
+> [!NOTE]
+> 如果你无法重置丢失或被盗的设备，请让 IT 管理员为你重置。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

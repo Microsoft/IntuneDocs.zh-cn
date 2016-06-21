@@ -18,7 +18,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,16 +30,16 @@ ms.suite: ems
 
 1.  在 **设置** 您在设备上，删除你先前设置为您公司的电子邮件的连接。
 
-    例如，在 iOS 设备上，点击“设置” &gt; “邮件、联系人、日历”。 选择工作电子邮件帐户，然后单击“删除”
+    例如，在 iOS 设备上，点击**设置** &gt; **邮件、联系人、日历**。 选择您的工作电子邮件帐户，然后单击 **删除**。
 
-2.  在设备上打开公司门户应用，然后点击“检查法规遵从性”
+2.  打开您的设备和分流点上的公司门户应用 **检查符合性**。
 
 3.  等待新的电子邮件设置自动应用到您的设备很短时间。
 
-如果一段时间后未出现新的电子邮件设置，请联系您的 IT 管理员。
+如果一段时间后未出现新的电子邮件设置，请与你的 IT 管理员联系。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

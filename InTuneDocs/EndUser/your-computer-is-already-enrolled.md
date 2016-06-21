@@ -18,7 +18,7 @@ ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,8 +38,8 @@ ms.suite: ems
 
 3.  按照提示将计算机链接到你的用户帐户。
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

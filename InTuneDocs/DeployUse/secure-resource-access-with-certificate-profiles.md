@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 使用 Microsoft Intune 启用对使用证书配置文件的公司资源的访问 | Microsoft Intune
+title: 启用对使用证书配置文件的公司资源的访问 | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -18,7 +18,7 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 # 使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性
 当你通过 VPN、Wi-Fi 或电子邮件配置文件启用对公司资源的访问时，你可以选择使用每个用户设备上安装的证书保护该访问权限。 以下是它的工作原理：
 
-1. 请确保你拥有正确的证书基础结构，如[配置证书基础结构](configure-certificate-infrastructure.md)中所述
+1. 请确保你拥有正确的证书基础结构，如[配置证书基础结构](configure-certificate-infrastructure.md)中所述。
 
 2. 在每台设备上安装根证书（或中间 CA 证书），以便该设备识别证书颁发机构的合法性。 可通过创建并部署**受信任的证书配置文件**实现此操作。 在部署此配置文件时，使用 Intune 托管的设备将请求并接收根证书。 必须为每个平台创建单独的配置文件。 **受信任的证书配置文件**可用于以下这些平台：
  -  iOS 7.1 及更高版本
@@ -53,7 +53,7 @@ ms.suite: ems
 > -    如果没有企业证书颁发机构，则必须创建一个。 
 >- 如果你决定基于你的设备平台使用简化的证书注册协议 (SCEP) 配置文件，你还需要配置网络设备注册服务 (NDES) 服务器。
 >-  无论你计划使用 SCEP 配置文件还是 PFX 配置文件，都必须下载并配置 Microsoft Intune 证书连接器。
-> 主题[配置证书基础结构](configure-certificate-infrastructure.md)中介绍了所有这些配置
+> 主题[配置证书基础结构](configure-certificate-infrastructure.md)中介绍了所有这些配置。
 
 ### 后续步骤
 - [配置证书基础结构](configure-certificate-infrastructure.md)
@@ -61,6 +61,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

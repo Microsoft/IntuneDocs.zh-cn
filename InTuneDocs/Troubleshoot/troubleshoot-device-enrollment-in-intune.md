@@ -39,12 +39,15 @@ ms.suite: ems
 
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
-## 已达到设备上限
+## 常规注册问题
+所有设备平台上都可能发生这些问题。
+
+### 已达到设备上限
 **问题：**注册期间，用户在设备上收到一个错误，例如 iOS 设备上的“公司门户暂时不可用”错误，并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
 
 **解决方法：** 根据设计，用户注册的设备不能超过 5 台。
 
-### 检查已注册的和允许的设备数量
+#### 检查已注册的和允许的设备数量
 
 1.  在 Intune 管理门户中，确保用户分配的设备不超过 5 台
 
@@ -54,13 +57,13 @@ ms.suite: ems
 
 管理员可以在 Azure Active Directory 门户中删除设备。
 
-### 在 Azure Active Directory 门户中删除设备
+#### 在 Azure Active Directory 门户中删除设备
 
-1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或从 [https://portal.office.com](https://portal.office.com) 选择**管理**&gt;**Azure AD**。
+1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或从 [https://portal.office.com](https://portal.office.com) 选择**管理**&gt; **Azure AD**。
 
 2.  单击页面左侧的链接，使用组织 ID 登录。
 
-3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不需要提供信用卡或付款（选择**注册免费的 Azure Active Directory**订阅链接）。
+3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不会要求提供信用卡或付款（请选择**注册免费的 Azure Active Directory**订阅链接）。
 
 4.  选择“Active Directory”  ，然后选择你的组织。
 
@@ -78,23 +81,10 @@ ms.suite: ems
 >
 > 如果对添加到设备注册管理器组的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
-## 配置文件安装失败
-**问题：**用户的 iOS 或 Android 设备上收到“配置文件安装失败”错误。
-
-### 失败配置文件安装的故障排除步骤
-
-1.  确认针对你在使用的 Intune 服务版本，该用户分配有适当的许可证。
-
-2.  确认尚未向另一个 MDM 提供程序注册该设备，或者该设备尚未安装管理配置文件。
-
-3.  对于 iOS 设备，请导航到 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) ，并根据提示尝试安装配置文件。
-
-4.  确认默认浏览器为适用于 iOS 的 Safari 和适用于 Android 的 Chrome，并且已启用 Cookie。
-
-## 公司门户暂时不可用
+### 公司门户暂时不可用
 **问题：**用户的设备上收到“公司门户暂时不可用”错误。
 
-### 排查“公司门户暂时不可用”错误
+#### 排查“公司门户暂时不可用”错误
 
 1.  从设备中删除 Intune 公司门户应用。
 
@@ -106,14 +96,14 @@ ms.suite: ems
 
 5.  如果用户成功登录，iOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，你需要手动安装 Intune 公司门户应用，之后才能重试注册。
 
-## 未定义 MDM 机构
+### 未定义 MDM 机构
 **问题：**用户收到“未定义 MDM 机构”错误。
 
-### 排查“未定义 MDM 机构”错误
+#### 排查“未定义 MDM 机构”错误
 
-1.  确保已针对你在使用的 Intune 服务版本（即 Intune、O365 MDM 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，在**管理员**&gt;**移动设备管理**中设置 MDM 机构。 对于使用 Intune 的 Configuration Manager，则在配置 Intune 连接器时对其进行设置，在 O365 中则为设置**移动设备**。
+1.  确保已针对你在使用的 Intune 服务版本（即 Intune、O365 MDM 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，在**管理员** &gt; **移动设备管理**中设置 MDM 机构。 对于 Configuration Manager with Intune，则在配置 Intune 连接器时对其进行设置，在 O365 中则对**移动设备**进行设置。
 
-    > [!NOTE]设置 MDM 机构后，只能通过联系支持人员对其进行更改，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
+    > [!NOTE] 设置 MDM 机构后，只能通过联系支持人员对其进行更改，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 2.  确保该用户的凭据已与 Azure Active Directory 正确同步，方法是检查其 UPN 是否与帐户门户中的 Active Directory 信息匹配。
     如果 UPN 与 Active Directory 信息不匹配：
@@ -136,33 +126,75 @@ ms.suite: ems
 
     4.  在顶部选择**新建查询**并执行以下查询：
 
-        -   若要查看所有用户：`select * from [CM_ DBName].[dbo].[User_DISC]`
+        -   查看所有用户：`select * from [CM_ DBName].[dbo].[User_DISC]`
 
         -   若要查看特定用户，请使用下面的查询，其中 %testuser1% 表示要查找的用户的 username@domain.com：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         编写查询后，选择**!执行**。
         返回结果后，即可查找云用户 ID。  如果找不到任何 ID，则表示未授权该用户使用 Intune。
 
-## 使用 System Center Configuration Manager with Intune 时移动设备消失
-**问题：** 在向 Configuration Manager 成功注册移动设备后，它从移动设备集合中消失，但该设备仍然具有管理配置文件，并且列示在 CSS 网关中。
+### 如果公司名称包含特殊字符，则无法创建策略或注册设备
+**问题：**无法创建策略或注册设备。
 
-**解决方法：**这可能是因为你有一个自定义进程用于删除未加入域的设备，或者是因为该用户已从订阅停用该设备。 若要验证并检查从 Configuration Manager 控制台中删除了该设备的是哪个进程或用户帐户，请执行以下步骤。
+**解决方法：**在 [Office 365 管理中心](https://portal.office.com/)，删除公司名称中的特殊字符并保存公司信息。
 
-### 检查设备的删除途径
+### 如果有多个已验证的域，则无法登录或注册设备
+**问题：**向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。 
 
-1.  在 Configuration Manager 管理控制台中，选择**监视**&gt;**系统状态**&gt;**状态消息查询**。
 
-2.  右键单击“已手动删除的集合成员资源”，并选择“显示消息”。
+**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。  现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
-3.  选取适当的时间/日期或过去 12 小时。
+### 该计算机已注册 - 错误 hr 0x8007064c
+**问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
+  
+可能的原因是计算机先前已注册，或具有某台已注册的计算机的克隆映像。 先前帐户的帐户证书仍在此计算机上。
 
-4.  找到有问题的设备，并查看该设备的删除途径。 下面的示例显示帐户 SCCMInstall 是通过某个未知应用程序删除设备的。
 
-    ![设备删除诊断的屏幕快照](./media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  确保 Configuration Manager 没有计划的任务、脚本或其他可能自动清除非域设备、移动设备或相关设备的进程。
+**解决方法：** 
 
-## 通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
+1. 从**开始**菜单中，选择**运行**  ->  **MMC**。 
+1. **文件**  ->  **添加/删除管理单元**。
+1. 双击**证书**，依次选择**计算机帐户**和**下一步**，然后选择**本地计算机**。
+1. 双击**证书(本地计算机)**，再选择**个人/证书**。 
+1. 查找 Sc_Online_Issuing 发布的 Intune 证书，并将其删除（若存在）
+1. 删除注册表项 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**（若存在）及所有子项。
+1. 尝试重新注册。 
+1. 如果仍无法注册计算机，请查找并删除以下项（若存在）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。 
+1. 尝试重新注册。 
+
+    > [!IMPORTANT]
+    > 此部分、方法或任务包含教你如何修改注册表的步骤。 但是，如果注册表修改不正确，可能会发生严重问题。 因此，请确保认真遵循这些步骤。 为提高保护程度，请在修改之前备份注册表。 那么，如果发生问题，你也可以恢复注册表。
+    > 有关如何备份和还原注册表的详细信息，请参阅 [如何在 Windows 中备份和还原注册表](https://support.microsoft.com/en-us/kb/322756)
+
+
+## Android 的问题
+### 配置文件安装失败
+**问题：**用户在 Android 设备上收到**配置文件安装失败**错误。
+
+### 失败配置文件安装的故障排除步骤
+
+1.  确认针对你在使用的 Intune 服务版本，该用户分配有适当的许可证。
+
+2.  确认尚未向另一个 MDM 提供程序注册该设备，或者该设备尚未安装管理配置文件。
+
+
+4.  确认默认浏览器为适用于 Android 的 Chrome，并且已启用 Cookie。
+## iOS 的问题
+### 配置文件安装失败
+**问题：**用户的 iOS 设备上收到**配置文件安装失败**错误。
+
+### 失败配置文件安装的故障排除步骤
+
+1.  确认针对你在使用的 Intune 服务版本，该用户分配有适当的许可证。
+
+2.  确认尚未向另一个 MDM 提供程序注册该设备，或者该设备尚未安装管理配置文件。
+
+3.  导航到 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，并根据提示尝试安装配置文件。
+
+4.  确认默认浏览器为适用于 iOS 的 Safari，并且已启用 Cookie。
+
+### 通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
 **问题：**用户注册了 iOS 设备，但它未出现在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
 
 - 你可能已向某个帐户注册了 Intune 连接器，然后又将其注册到其他帐户。 
@@ -191,48 +223,36 @@ ms.suite: ems
 
 
 1. 获取新 APN 证书并将其上传：右键单击 Configuration Manager 左侧窗格中的“Intune 订阅”。 选择“创建 APNs 证书请求”，并按照说明进行操作。
+## 使用 System Center Configuration Manager with Intune 时的问题
+### 移动设备消失 
+**问题：** 在向 Configuration Manager 成功注册移动设备后，它从移动设备集合中消失，但该设备仍然具有管理配置文件，并且列示在 CSS 网关中。
 
+**解决方法：**这可能是因为你有一个自定义进程用于删除未加入域的设备，或者是因为该用户已从订阅停用该设备。 若要验证并检查从 Configuration Manager 控制台中删除了该设备的是哪个进程或用户帐户，请执行以下步骤。
 
-## 该计算机已注册 - 错误 hr 0x8007064c
-**问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
-  
-可能的原因是计算机先前已注册，或具有某台已注册的计算机的克隆映像。 先前帐户的帐户证书仍在此计算机上。
+#### 检查设备的删除途径
 
+1.  在 Configuration Manager 管理控制台中，选择**监视** &gt; **系统状态** &gt; **状态消息查询**。
 
+2.  右键单击“已手动删除的集合成员资源”，并选择“显示消息”。
 
-**解决方法：** 
+3.  选取适当的时间/日期或过去 12 小时。
 
-1. 从**开始**菜单中，选择**运行** -> **MMC**。 
-1. **文件** -> **添加/删除管理单元**。
-1. 双击**证书**，依次选择**计算机帐户**和**下一步**，然后选择**本地计算机**。
-1. 双击**证书(本地计算机)**，再选择**个人/证书**。 
-1. 查找 Sc_Online_Issuing 发布的 Intune 证书，并将其删除（若存在）
-1. 删除注册表项 ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**（若存在）及所有子项。
-1. 尝试重新注册。 
-1. 如果仍无法注册计算机，请查找并删除以下项（若存在）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。 
-1. 尝试重新注册。 
+4.  找到有问题的设备，并查看该设备的删除途径。 下面的示例显示帐户 SCCMInstall 是通过某个未知应用程序删除设备的。
 
-    > [!IMPORTANT]
-    > 此部分、方法或任务包含教你如何修改注册表的步骤。 但是，如果注册表修改不正确，可能会发生严重问题。 因此，请确保认真遵循这些步骤。 为提高保护程度，请在修改之前备份注册表。 那么，如果发生问题，你也可以恢复注册表。
-    > 有关如何备份和还原注册表的详细信息，请参阅 [如何在 Windows 中备份和还原注册表](https://support.microsoft.com/en-us/kb/322756)
+    ![设备删除诊断的屏幕快照](./media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-## 如果公司名称包含特殊字符，则无法创建策略或注册设备
-**问题：**无法创建策略或注册设备。
-
-**解决方法：**在 [Office 365 管理中心](https://portal.office.com/)，删除公司名称中的特殊字符并保存公司信息。
-
-## 如果有多个已验证的域，则无法登录或注册设备
-**问题：**向 AD FS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。 
-
-
-**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。  现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+5.  确保 Configuration Manager 没有计划的任务、脚本或其他可能自动清除非域设备、移动设备或相关设备的进程。
 
 
 
-## 错误代码
+
+### 其他 iOS 注册错误
+有关 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)。
+
+## 常规注册错误代码
 
 |错误代码|可能的问题|建议的解决方法|
-|--------------|--------------------|------------------------|
+|--------------|--------------------|----------------------------------------|
 |0x80CF0437 |未将客户端计算机上的时钟设置为正确的时间。|确保将客户端计算机上的时钟和时区设置为正确的时间和时区。
 |
 |0x80240438、0x80CF0438、0x80CF402C|无法连接到 Intune 服务。 检查客户端代理设置。|验证 Intune 是否支持客户端计算机上的代理配置，以及客户端计算机是否能够访问 Internet。|
@@ -252,13 +272,12 @@ ms.suite: ems
 |0x80cf0440|到服务终结点的连接已终止。|试用或付费帐户处于挂起状态。 创建一个新的试用或付费帐户，并重新注册。|
 
 
-## iOS 注册错误
-有关其他 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)。
+
 
 ### 后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

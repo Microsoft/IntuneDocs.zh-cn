@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 查找 per-app VPN 的包系列名称 (PFN) |Microsoft Intune|
+title: 查找 per-app VPN 的包系列名称 (PFN) |Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -18,7 +18,7 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: tycast
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -91,6 +91,6 @@ Get-AppxPackage 的语法是：
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

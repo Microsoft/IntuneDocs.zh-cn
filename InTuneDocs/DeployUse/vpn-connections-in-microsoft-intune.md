@@ -18,7 +18,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,23 +48,24 @@ Intune 支持使用以下连接类型创建 VPN 配置文件：
 
 
 
-连接类型 |iOS 和 Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 桌面版和移动版 |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+连接类型 |iOS 和 Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 桌面版和移动版 |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|是 |是   |否    |     否    |否  |否    | 是，（OMA URI，仅限移动版）|     
 脉冲安全|是  |是 |是   |否  |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |否  |是  |   是 |  是|   
 Dell SonicWALL Mobile Connect|是 |是 |是 |否  |是 |是 |是|         
 CheckPoint Mobile VPN|是 |是 |是 |是 |是|是|是|
-Microsoft SSL (SSTP)|否 |否 |否 |否 |否|否|否|
-Microsoft Automatic|否 |否 |否 |否 |否|否|是|
-IKEv2|否 |否 |否 |否 |否|否|是|
-PPTP|否 |否 |否 |否 |否|否|是|
-L2TP|否 |否 |否 |否 |否|否|是|
+Microsoft SSL (SSTP)|否 |否 |否 |否 |否|否|VPNv1 OMA-URI*|
+Microsoft Automatic|否 |否 |否 |否 |否|是 (OMA-URI)|是|
+IKEv2|iOS 自定义配置文件|否 |否 |否 |否|是 (OMA-URI)|是|
+PPTP|iOS 自定义配置文件|否 |否 |否 |否|否|是|
+L2TP|iOS 自定义配置文件|否 |否 |否 |否|是 (OMA-URI)|是|
 
+\* 没有适用于 Windows 10 的其他设置。
 
 > [!IMPORTANT] 在你能够使用已部署到设备的 VPN 配置文件之前，你必须安装适用于该配置文件的 VPN 应用。 你可以利用[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)主题中的信息帮助你使用 Intune 部署适用的应用。  
 
- 了解使用 [VPN 配置文件的自定义配置](custom-configurations-for-vpn-profiles.md)中的 URI 设置如何创建自定义 VPN 配置文件。     
+ 了解如何使用 [VPN 配置文件的自定义配置](custom-configurations-for-vpn-profiles.md)中的 URI 设置创建自定义 VPN 配置文件。     
 
 ## 如何保护 VPN 配置文件
 
@@ -164,6 +165,6 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 [用于 Android Pulse Secure 的 Per-app VPN](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

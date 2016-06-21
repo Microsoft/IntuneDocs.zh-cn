@@ -18,7 +18,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -100,9 +100,11 @@ ms.suite: ems
 
 若要了解如何注册设备的步骤，请参阅[在 Intune 中注册 iOS 设备](enroll-your-device-in-intune-ios.md)或[在 Intune 中注册 Mac OS X 设备](enroll-your-device-in-intune-mac-os-x.md)。
 
+如有疑问，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 
