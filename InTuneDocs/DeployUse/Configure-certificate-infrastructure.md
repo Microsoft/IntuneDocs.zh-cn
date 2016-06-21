@@ -18,7 +18,7 @@ ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -172,7 +172,7 @@ ms.suite: ems
 
 3.  运行以下命令以设置 NDES 服务帐户的 SPN：
 
-    -   **setspn -s http/&lt;DNS 服务器的 NDES 名称&gt; &lt;域名&gt;\&lt;NDES 服务器帐户名称&gt;**
+    -   **setspn -s http/&lt;NDES 服务器的 DNS 名称&gt; &lt;域名&gt;\&lt;NDES 服务器帐户名称&gt;**
 
     例如，如果 NDES 服务器名为 **Server01**，你的域为 **Contoso.com**，并且服务帐户为 **NDESService**，则使用：
 
@@ -273,7 +273,7 @@ ms.suite: ems
 
 ##### 启用对证书连接器的支持
 
-1.  打开 [Intune 管理控制台](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
+1.  打开“Intune 管理控制台”[](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
 
 2.  单击**配置本地证书连接器**。
 
@@ -281,7 +281,7 @@ ms.suite: ems
 
 ##### 下载、安装和配置证书连接器
 
-1.  打开 [Intune 管理控制台](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
+1.  打开“Intune 管理控制台”[](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
 
 2.  下载完成之后，运行下载的安装程序 (**ndesconnectorssetup.exe**)：
 
@@ -324,6 +324,6 @@ ms.suite: ems
 你现在可以像[配置证书配置文件](configure-intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

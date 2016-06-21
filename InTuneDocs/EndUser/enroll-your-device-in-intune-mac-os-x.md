@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -45,7 +45,7 @@ ms.suite: ems
 
     ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
 
-4.  在“安装管理配置文件”对话框中，点击“安装”。 如果出现要求你输入凭据的对话框，请输入用户名和密码，然后点击**继续**&gt;**安装**。
+4.  在“安装管理配置文件”对话框中，点击“安装”。 如果出现要求你输入凭据的对话框，请输入用户名和密码，然后点击**继续** &gt; **安装**。
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
 
@@ -53,9 +53,11 @@ ms.suite: ems
 
     ![management-profile-verified](./media/4-macosx-enroll-done.png) 
 
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

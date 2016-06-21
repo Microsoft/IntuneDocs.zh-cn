@@ -1,5 +1,5 @@
 ---
-title: 配置 PFX 证书基础结构 |Microsoft Intune|
+title: 配置 PFX 证书基础结构 |Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -16,7 +16,7 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: vinaybha
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -105,14 +105,14 @@ ms.suite: ems
 
 5.  在 CA 计算机上，确保托管 Intune 证书连接器的计算机具有注册权限，以便它可以访问在创建 .PFX 配置文件时使用的模板。 在 CA 计算机属性的“安全性”  选项卡上设置该权限。
 
-### 任务 4 - 启用、安装和配置 Intune 证书连接器
+### 任务 2 - 启用、安装和配置 Intune 证书连接器
 在此任务中，你将：
 
 下载、安装和配置证书连接器
 
 ##### 启用对证书连接器的支持
 
-1.  打开 [Intune 管理控制台](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
+1.  打开“Intune 管理控制台”[](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
 
 2.  单击**配置本地证书连接器**。
 
@@ -120,7 +120,7 @@ ms.suite: ems
 
 ##### 下载、安装和配置证书连接器
 
-1.  打开 [Intune 管理控制台](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
+1.  打开“Intune 管理控制台”[](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
 
 2.  下载完成之后，运行下载的安装程序 (**ndesconnectorssetup.exe**)：
 
@@ -128,7 +128,7 @@ ms.suite: ems
 
    <!-- Not sure about step 3 below -->
 
-3.  提示输入证书连接器的客户端证书时，单击**选择**，然后选择“任务 3”中安装的**客户端身份验证**证书。
+3.  提示输入证书连接器的客户端证书时，单击**选择**，然后选择任务 3 中安装的**客户端身份验证**证书。
 
     选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书”  处。 尽管你选择的证书不会显示，但可以单击 **“下一步”** 查看该证书的属性。 然后单击 **“下一步”**，再单击 **“安装”**。
 
@@ -158,6 +158,6 @@ ms.suite: ems
 你现在可以像[配置证书配置文件](Configure-Intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

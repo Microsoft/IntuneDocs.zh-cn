@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,6 +31,7 @@ ms.suite: ems
 如果你的公司或学校使用 Microsoft Intune，则可以注册 iOS 设备以获取对公司电子邮件、文件和其他资源的访问权限。 通过注册设备可以让 IT 部门来管理这些工作或学校资源和使其保持安全，同时使你可以自由地使用首选设备来完成工作。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
 
 如果在尝试注册 Mac OS X 设备，请参阅[在 Intune 中注册 Mac OS X 设备](enroll-your-device-in-intune-mac-os-x.md)。
+
 
 
 **注册 iOS 设备：**
@@ -89,13 +90,11 @@ ms.suite: ems
 
 你的设备现已在 Intune 中注册，你会返回到公司门户应用。
 
-    
-
-  
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

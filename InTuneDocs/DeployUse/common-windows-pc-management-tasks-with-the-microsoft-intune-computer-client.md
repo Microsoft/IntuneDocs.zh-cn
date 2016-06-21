@@ -18,7 +18,7 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ Microsoft Intune Center 使用户能够：
 
 -   管理 Microsoft Intune Endpoint Protection。
 
--   请求远程协助。
+<!--- -   Request remote assistance.--->
 
 Microsoft Intune Center 安装在所有被管理的计算机上。 你可以在 Intune 策略中配置下列设置，并且这些设置将在 Microsoft Intune Center 中向用户显示：
 
@@ -82,7 +82,7 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
 ### 显示你的计算机上安装的软件
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)，选择**报表**&gt;**检测到的软件报表**。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**报表**&gt;**检测到的软件报表**。
 
 2.  在“创建新报表”  页上，接受默认值或对其进行自定义以筛选报表将返回的结果。 例如，你可以选择只在报表中显示 Microsoft 发布的软件。
 
@@ -105,9 +105,9 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
 ## 远程重启 Windows 电脑
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)选择**组**&gt;**所有设备**（或想要重新启动包含的计算机的另一个组）。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**组**&gt;**所有设备**（或包含需重新启动的计算机的另一个组）。
 
-2.  选择一台或多台计算机，然后选择**远程任务**&gt;**重启计算机**。
+2.  选择一台或多台计算机，然后选择**远程任务**&gt;**重新启动计算机**。
 
 3.  若要查看任务状态，请选择页面右下角的“远程任务”。
 
@@ -164,59 +164,59 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
 > [!TIP]如果想要限制最终用户将自己链接到计算机的能力，则启用 **Microsoft Intune 代理设置**策略中的**限制用户将自己链接到计算机的能力**选项。
 
-## 请求并向使用 Intune 客户端软件的 Windows 电脑提供远程帮助
+<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 > [!IMPORTANT]
-> 你可能在 Intune 管理控制台中看不到远程帮助 TeamViewer 集成配置选项。 此功能当前不是对所有的客户都可用，但不久将会更广泛地推广。
+> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
      
 
-Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件使运行 Intune 客户端软件的电脑用户可从你处获得远程帮助。 当用户从 Microsoft Intune Center 请求帮助时，你会收到警报通知，可接受请求并提供帮助。
-此功能将替换 Intune 中现有的 Windows 远程协助功能。
+Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
+This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
-### 开始之前
+### Before you start
 
-可以开始建立并响应远程协助请求之前，必须先确保以下先决条件已就绪：
+Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
-- 若要登录到 TeamViewer 网站，必须先[注册 TeamViewer 帐户](https://login.teamviewer.com/LogOn#register)。
-- 想要管理的 Windows 电脑必须[由 Windows 电脑客户端管理](manage-windows-pcs-with-microsoft-intune.md)
-- 可管理所有 Intune 支持的 Windows 电脑操作系统。
+- You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
+- Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
+- All Windows PC operating systems supported by Intune can be administered.
 
-### 配置 TeamViewer 连接器
+### Configure the TeamViewer Connector
 
-1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**管理员**。
-2. 在**管理员**工作区中，选择 **TeamViewer**。
-3. 在 **TeamViewer** 页面中 **TeamViewer 连接器**下，选择**启用**。
-4. 在**启用 TeamViewer** 对话框中，查看然后**接受**许可条款。 如果你尚未拥有 TeamViewer 许可证，选择**购买 TeamViewer 许可证**。
-5. TeamViewer 浏览器窗口打开后，使用 TeamViewer 凭据登录到此网站。
-6. 阅读并接受 TeamViewer 网站上的选项以允许 Intune 连接TeamViewer。
-7. 在 Intune 控制台中，验证 **TeamViewer 连接器**项是否显示为**已启用**。
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+2. In the **Admin** workspace, choose **TeamViewer**.
+3. On the **TeamViewer** page, under **TeamViewer Connector**, choose **Enable**.
+4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, choose **Purchase a TeamViewer license**.
+5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
+6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
+7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
 
 
-### 打开远程协助请求（最终用户）
+### Open a remote assistance request (end user)
 
-1. 在客户端 Windows 电脑上，打开 **Microsoft Intune Center**。
-2. 在**远程协助**下，选择**请求远程协助**。
-3. 批准请求（参见下文）后，客户端上的 TeamViewer 将会打开。 用户必须接受任何表明 Web 浏览器正尝试打开 TeamViewer 应用程序的消息。
-4. 用户会看到询问你是否能控制其电脑的消息。 用户必须接受此消息才可继续。
-5. 远程协助会话期间，用户将看到一个显示你已连接的窗口。 如果用户关闭此窗口，远程会话将结束。
+1. On a client Windows PC, open the **Microsoft Intune Center**.
+2. Under **Remote Assistance**, choose **Request Remote Assistance**.
+3. After you approve the request (see below), TeamViewer opens on the client. The user must accept any messages indicating that the web browser is trying to open the TeamViewer application.
+4. The user sees a message asking if you can control their PC. They must accept this message to continue.
+5. During the remote assistance session, the user sees a window that shows them you are connected. If they close this window, the remote session ends.
 
-### 响应远程协助请求
+### Respond to a remote assistance request
 
-1. 当用户提交远程协助请求时，你可在**监视** > **远程协助**下的**警报**工作区中查看。 例如：
-> ![远程协助请求屏幕截图](./media/team-viewer.png)
+1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
+> ![Screenshot of a remote assistance request](./media/team-viewer.png)
 
-<br>如果请求超过 4 小时未获得应答，则会被删除。
-2. 若要接受请求，请选择**批准请求并启动远程协助**。
-3. 在**新的远程协助请求正等待处理**对话框中，选择**接受远程协助请求**。 如尚未安装，TeamViewer 将会在计算机上安装任何必要的应用。
-4. 然后 TeamViewer 会通知最终用户你想控制其电脑。 用户接受该请求后，TeamViewer 窗口将打开，然后就可控制其电脑。 
+<br>If a request goes unanswered for more than 4 hours, it is removed.
+2. To accept the request, choose **Approve request and launch Remote Assistance**.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
  
-在远程协助会话中，你可使用所有可用的 TeamViewer 命令来控制远程电脑。 有关这些命令的帮助，请从 TeamViewer 网站下载[远程控制指南](http://www.teamviewer.com/en/support/documents/)。
+While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
-### 关闭远程协助会话
+### Close the remote assistance session
 
-从 **TeamViewer** 窗口的**操作**菜单中，选择**结束会话**。
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

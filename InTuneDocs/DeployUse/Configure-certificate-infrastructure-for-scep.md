@@ -1,5 +1,5 @@
 ---
-title: 配置 SCEP 证书基础结构 |Microsoft Intune|
+title: 配置 SCEP 证书基础结构 |Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -17,7 +17,7 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -109,7 +109,7 @@ I
 
         > [!IMPORTANT] 对于 iOS 和 Mac OS X 证书模板，在**扩展**选项卡上编辑**密钥用法**并确保未选择**数字签名为原件的证明**。
 
-    -   在“安全性”选项卡上，添加 NDES 服务帐户，并授予它“注册”模板的权限。 创建 SCEP 配置文件的 Intune 管理员需要**读取**权限，以便在创建 SCEP 配置文件时可以浏览到该模板。
+    -   在“安全性”选项卡上，添加 NDES 服务帐户，并授予它“注册”模板的权限。 将创建 SCEP 配置文件的 Intune 管理员需要**读取**权限，以便在创建 SCEP 配置文件时可以浏览到该模板。
     
     > [!NOTE] 若要吊销证书，NDES 服务帐户需要针对证书配置文件所用的每个证书模板具有*颁发和管理证书*权限。
 
@@ -119,15 +119,15 @@ I
 
 以下是一个示例模板配置的屏幕截图。
 
-![模板, “请求处理”选项卡](..\media\scep_ndes_request_handling.png) 
+![模板，“请求处理”选项卡](..\media\scep_ndes_request_handling.png) 
 
-![模板, “使用者名称”选项卡](..\media\scep_ndes_subject_name.jpg) 
+![模板，“使用者名称”选项卡](..\media\scep_ndes_subject_name.jpg) 
 
-![模板, “安全”选项卡](..\media\scep_ndes_security.jpg) 
+![模板，“安全”选项卡](..\media\scep_ndes_security.jpg) 
 
-![模板, “扩展”选项卡](..\media\scep_ndes_extensions.jpg) 
+![模板，“扩展”选项卡](..\media\scep_ndes_extensions.jpg) 
 
-![模板, “颁发要求”选项卡](..\media\scep_ndes_issuance_reqs.jpg) 
+![模板，“颁发要求”选项卡](..\media\scep_ndes_issuance_reqs.jpg) 
 
 >   [!IMPORTANT]
     > 对于应用程序策略（在第 4 个屏幕截图中），只添加所需的应用程序策略即可。 与你的安全管理员确认你的选择。
@@ -256,7 +256,7 @@ I
 
     1.  获得服务器身份验证证书后，打开 **“IIS 管理器”**，在 **“连接”** 窗格中选择 **“默认网站”** ，然后单击 **“操作”** 窗格中的 **“绑定”** 。
 
-    2.  单击 **“添加”**，将 **“类型”** 设置为 **“https”**并确保端口为 **“443”**。 （独立 Intune 仅支持端口 443）。
+    2.  单击 **“添加”**，将 **“类型”** 设置为 **“https”**并确保端口为 **“443”**。 （独立 Intune 仅支持端口 443。
 
     3.  为 **“SSL 证书”**指定服务器身份验证证书。
 
@@ -301,7 +301,7 @@ I
 
 ##### 启用对证书连接器的支持
 
-1.  打开 [Intune 管理控制台](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
+1.  打开“Intune 管理控制台”[](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
 
 2.  单击**配置本地证书连接器**。
 
@@ -309,7 +309,7 @@ I
 
 ##### 下载、安装和配置证书连接器
 
-1.  打开 [Intune 管理控制台](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
+1.  打开“Intune 管理控制台”[](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
 
 2.  下载完成后，在 Windows Server 2012 R2 服务器上运行下载的安装程序 (**ndesconnectorssetup.exe**)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 （CRP Web 服务 CertificateRegistrationSvc 运行为 IIS 中的应用程序）
 
@@ -346,6 +346,6 @@ I
 你现在可以像[配置证书配置文件](Configure-Intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
