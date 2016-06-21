@@ -1,42 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ac3417781df0a5b092a70620aa7343849b1e8c82/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) | OutofSyncHandedBackSuccess | [Details](#d9504716817a753a87aa2f69884b5931731a7e2e73)
- [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2847c9af38ae0ddddc8d76d548ae7abddc63e4c1/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) | InSyncHandedBackSuccess | [Details](#e764dc73492db984fcbb118597ad1d08491d3427532)
 
 ## Item Details
-##### <a name='d9504716817a753a87aa2f69884b5931731a7e2e73'></a> Source: [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ac3417781df0a5b092a70620aa7343849b1e8c82/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/a52ee5353cd98182a4e8fd332bd0d495fd7ae22e/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.zh-cn.xlf)
-* Handoff Datetime: 2016-06-20 17:14:20
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/0aac4f9080f8db32b663990fb3313ea4e481d6ae/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-* Current Handback File: [manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/6b338078a55a8cbb1a4ff061f278c74281431e76/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-21 03:38:13
-* [Back to Top](#report-top)
-
-##### <a name='e764dc73492db984fcbb118597ad1d08491d3427532'></a> Source: [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2847c9af38ae0ddddc8d76d548ae7abddc63e4c1/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/0aac4f9080f8db32b663990fb3313ea4e481d6ae/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-* Handoff File: [start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/0c8b5ec20e33915a5ddc064033e024a0bca304cd/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.zh-cn.xlf)
-* Handoff Datetime: 2016-06-16 21:12:06
-* Handoff Reason: Include
-* Archive File: [start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/1ce5e1379b0bce787ce744d1414ef98ee8c10b8c/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/archive/start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.zh-cn.xlf)
-* Archive Datetime: 2016-06-17 00:37:10
-* Handback File: [start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/6b338078a55a8cbb1a4ff061f278c74281431e76/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.zh-cn.xlf)
-* Handback Datetime: 2016-06-21 03:38:13
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
