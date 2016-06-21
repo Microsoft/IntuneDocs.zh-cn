@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\device-doesnt-have-the-required-minimum-operating-system-version-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/device-doesnt-have-the-required-minimum-operating-system-version-android.md) | InSyncHandedBackSuccess | [Details](#620078cdd6a6d918153ab5a9813a14406c11acb4285)
 
 ## Item Details
-##### <a name='620078cdd6a6d918153ab5a9813a14406c11acb4285'></a> Source: [InTuneDocs\EndUser\device-doesnt-have-the-required-minimum-operating-system-version-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\device-doesnt-have-the-required-minimum-operating-system-version-android.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/8ae50a8e5b71b2917a54ee0762528c98d1724a34/InTuneDocs/EndUser/device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-* Handoff File: [device-doesnt-have-the-required-minimum-operating-system-version-android.8530187d7b052ec22ef3b242475cebce58b01093.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f735208c924aa47f134404093a45de2e6309a473/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/device-doesnt-have-the-required-minimum-operating-system-version-android.8530187d7b052ec22ef3b242475cebce58b01093.zh-cn.xlf)
-* Handoff Datetime: 2016-06-14 17:10:38
-* Handoff Reason: Include
-* Archive File: [device-doesnt-have-the-required-minimum-operating-system-version-android.8530187d7b052ec22ef3b242475cebce58b01093.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/38315c6bf22156f456f2ce9a9428853e07f1d2c9/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/archive/device-doesnt-have-the-required-minimum-operating-system-version-android.8530187d7b052ec22ef3b242475cebce58b01093.zh-cn.xlf)
-* Archive Datetime: 2016-06-16 01:52:15
-* Handback File: [device-doesnt-have-the-required-minimum-operating-system-version-android.8530187d7b052ec22ef3b242475cebce58b01093.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/6e7562b03969cc99567f46d555fe6bf5d2bfdfe5/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/device-doesnt-have-the-required-minimum-operating-system-version-android.8530187d7b052ec22ef3b242475cebce58b01093.zh-cn.xlf)
-* Handback Datetime: 2016-06-21 14:36:39
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
