@@ -26,7 +26,9 @@ ms.suite: ems
 ---
 
 # 管理 Intune 许可证
-在登录以使用 Intune 服务或将设备注册到管理组件之前，用户必须在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中将一个许可证分配到你的 Intune 订阅。 分配许可证后，用户的名称将显示在 Intune 管理控制台中。 然后，用户最多可以注册五个设备。
+在用户登录以使用 Intune 服务或将设备注册到管理组件之前，你必须先使用 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)为每个用户分配一个你的 Intune 订阅的许可证。 分配许可证后，用户的名称将显示在 Intune 管理控制台中。 然后，用户最多可以注册五个设备。
+
+使用 Microsoft 的企业移动性套件 (EMS) 的组织可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。 有关详细信息，请参阅 [Manage Intune licenses using PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)（使用 PowerShell 管理 Intune 许可证）。
 
 ## 如何分配 Intune 许可证
 当从本地上 Active Directory 同步用户帐户或通过 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)将用户帐户手动添加到云服务订阅时，将不会为用户帐户自动分配 Intune 许可证。 相反，Intune 租户管理员必须稍后编辑用户帐户才能从 Office 365 门户中向用户分配许可证。
@@ -42,7 +44,7 @@ ms.suite: ems
 
 1.  使用你的租户管理员凭据登录到 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“人员” > “所有用户”。
 
-2.  选择你想要为其分配 Intune 用户许可证的用户帐户并在用户帐户属性上选中“Microsoft Intune”复选框。
+2.  选择你想要为其分配 Intune 用户许可证的用户帐户，然后选择 **Microsoft Intune**（独立版）或**企业移动性套件**。
 
 3.  现在，该用户帐户拥有所需的权限，可以使用该服务并在管理组件中注册设备。
 
@@ -93,6 +95,6 @@ ms.suite: ems
 >[&larr; **将用户同步到 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**组织用户和设备** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

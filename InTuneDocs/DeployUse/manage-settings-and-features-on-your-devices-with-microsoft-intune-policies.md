@@ -200,9 +200,9 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载，它
 
 ### 在哪里可以找到有关排查策略问题的帮助？
 
-请参阅 [Troubleshoot policies in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md)（排查 Microsoft Intune 中的策略问题）。
+请参阅 [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune)（Microsoft Intune 中的故障排除政策）。
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
