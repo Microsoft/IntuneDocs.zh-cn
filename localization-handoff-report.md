@@ -6,22 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/075ce9795e25d6d5bf80c0cd163406c50cb6a035/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#2d7e32ff876139f15d1322dd154ecdc0b32fc33d260)
+ [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bddb2a583ea1c46953016995f0baedc0426fe3de/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) | OutofSyncHandedBackSuccess | [Details](#ae075e5343d251519918da2b74a28ccb57221f8620)
 
 ## Item Details
-##### <a name='2d7e32ff876139f15d1322dd154ecdc0b32fc33d260'></a> Source: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/075ce9795e25d6d5bf80c0cd163406c50cb6a035/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md)
+##### <a name='ae075e5343d251519918da2b74a28ccb57221f8620'></a> Source: [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bddb2a583ea1c46953016995f0baedc0426fe3de/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/416c61eb083cfe918bf95d6b4cadc0aa3211e4a8/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.zh-cn.xlf)
-* Handoff Datetime: 2016-06-22 21:07:46
+* Handoff File: [configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/6fd87641dcb50a25c57a9101cc51e0668fc55587/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.zh-cn.xlf)
+* Handoff Datetime: 2016-06-22 23:04:51
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/3a398609a06cdaa83af402e56dca1a0f6a4a189f/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md)
-* Current Handback File: [whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/af0e22c2360639a71d75c7092892a04ad99315e8/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-21 14:02:16
+* Current Target File: [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/ada79a3f5a9c1d30d3a18405f9e503d7440626cc/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
+* Current Handback File: [configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/e917da0db007c97aad4dfd43e8d702580d0e922f/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.zh-cn.xlf)
+* Current Handback Datetime: 2016-06-18 23:34:05
 * [Back to Top](#report-top)
 
 
