@@ -28,11 +28,11 @@ ms.suite: ems
 
 # 尝试在 Intune 中注册 iOS 设备时遇到错误
 
-下表列出了在 Intune 中注册 iOS 设备时可能遇到的错误。 与你的 IT 管理员分享此链接。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+下表列出了在 Intune 中注册 iOS 设备时可能遇到的错误。 与你的 IT 管理员分享此链接。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 |错误消息|问题|需要你的 IT 管理员了解的内容|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|DeviceCapReached|你已注册太多的移动设备。|注册其他移动设备前，用户必须从公司门户中删除当前已注册的移动设备之一。|
+|DeviceCapReached|你已注册太多的移动设备。|注册其他移动设备前，用户必须从公司门户中删除当前已注册的移动设备之一。 请参阅你使用的设备类型的说明：[Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios) 和 [Windows](unenroll-your-device-from-intune-windows)。|
 |APNSCertificateNotValid|允许移动设备与公司网络通信的证书存在问题。<br /><br />请联系你的 IT 管理员，告知其你在尝试注册移动设备时收到消息 **APNSCertificateNotValid**，并请其查看此表中的解决办法。|Apple 推送通知服务 (APNS) 提供通道以与注册的 iOS 设备联系。 如果未执行用于获取 APNS 证书的步骤，或者 APNS 证书已过期，则注册尝试将会失败并且会出现此消息。<br /><br />查看[同步 Active Directory 并将用户添加到 Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) 和[组织用户和设备](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)中有关设置用户的信息。|
 |AccountNotOnboarded|允许移动设备与公司网络通信的证书存在问题。<br /><br />请联系你的 IT 管理员，告知其你在尝试注册移动设备时收到消息 **APNSNotOnboarded**，并请其查看此表中的解决办法。|Apple 推送通知服务 (APNS) 提供通道以与注册的 iOS 设备联系。 如果未执行用于获取 APNS 证书的步骤，或者 APNS 证书已过期，则注册尝试将会失败并且会出现此消息。<br /><br />有关详细信息，请查看[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/Deployuse/set-up-ios-and-mac-management-with-microsoft-intune)。|
 |DeviceTypeNotSupported|你可能已尝试使用非 iOS 设备进行注册。 不支持你正在尝试注册的移动设备类型。<br /><br />请确保设备正在运行 iOS 版本 7.1 或更高版本。<br /><br />请联系你的 IT 管理员，告知其你在尝试注册移动设备时收到消息 **DeviceTypeNotSupported**，并请其查看此表中的解决办法。|请确保用户的设备正在运行 iOS 版本 7.1 或更高版本。|
@@ -42,6 +42,6 @@ ms.suite: ems
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

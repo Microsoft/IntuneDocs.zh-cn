@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 你的计算机已注册
 
-如果收到此计算机已注册的错误，这意味着你的计算机已经添加到公司门户，但尚未链接到你的帐户。 按照以下过程将计算机链接到你的用户帐户并完成相应过程。
+如果收到此计算机已注册的错误，这意味着你的计算机已经添加到公司门户，但尚未链接到你的帐户。 按照以下过程将计算机链接到你的用户帐户并完成相应过程。  
 
 链接你的计算机：
 
@@ -38,8 +38,10 @@ ms.suite: ems
 
 3.  按照提示将计算机链接到你的用户帐户。
 
-如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+如果你希望取消注册你的设备，请使用你拥有的设备类型的说明：[Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md) 或 [Windows](unenroll-your-device-from-intune-windows.md)。
 
-<!--HONumber=Jun16_HO1-->
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+
+<!--HONumber=Jun16_HO2-->
 
 

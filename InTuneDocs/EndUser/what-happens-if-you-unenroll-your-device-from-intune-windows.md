@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 从 Intune 取消注册设备会发生什么情况？
 
-当你从设备上卸载公司门户应用时，它还将从 Intune 取消注册你的设备。 有关会发生什么情况的其他信息，请使用以上“本文内容”部分中所示且与你正在使用的设备类型匹配的链接。
+有关会发生什么情况的其他信息，请使用以上“本文内容”部分中所示且与你正在使用的设备类型匹配的链接。
 
 - [Windows 10 移动版、Windows 8.1、Windows 8、Windows 7、Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10、Windows 8.1 或 Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,11 +92,11 @@ ms.suite: ems
 
 -   将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
 
-如有疑问，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+如有疑问，请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

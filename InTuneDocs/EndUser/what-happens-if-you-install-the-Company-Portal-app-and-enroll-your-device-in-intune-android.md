@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ ms.suite: ems
 
 -   在手机丢失或被盗时将它重置为出厂设置
 
-在添加 Android 设备时，将向 IT 管理员授予访问设备的权限。 他们可执行诸如以下操作：
+注册 Android 设备时，将向 IT 管理员授予访问设备的权限。 他们可执行诸如以下操作：
 
 -   将你的设备重置回制造商的默认设置。 如果设备丢失或被盗，这非常有用。
 
@@ -60,11 +60,11 @@ ms.suite: ems
 
     -   发送任何公司应用清单更新（这些更新不包含个人信息）。
 
-如有疑问，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+如有疑问，请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

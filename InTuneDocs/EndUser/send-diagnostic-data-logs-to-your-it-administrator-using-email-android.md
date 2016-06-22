@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 使用电子邮件将诊断数据日志发送给 IT 管理员
 
-如果在 Android 设备上使用学校或公司应用或在公司门户应用中操作时遇到错误，可以发送诊断数据日志来帮助 IT 管理员找出并修复该错误。 若要在日志中包含所有详细信息，以便让 IT 管理员更快找出问题，请打开“详细日志记录”。
+如果在 Android 设备上使用学校或公司应用或在公司门户应用中操作时遇到错误，可以发送诊断数据日志来帮助 IT 管理员找出并修复该错误。 若要在日志中包含所有详细信息，以便让 IT 管理员更快找出问题，请打开“详细日志记录”。 可以在[详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)阅读有关此内容的更多信息。
 
 启用详细日志记录：
 
@@ -54,6 +54,6 @@ ms.suite: ems
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

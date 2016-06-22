@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/20/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,21 +32,21 @@ ms.suite: ems
 
 若要了解重置设备时会发生什么情况，请参阅[使用公司门户重置设备会发生什么情况](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)。
 
-> [!WARNING]将设备重置为出厂默认值会删除设备中个人信息和工作信息。
+> [!WARNING]将设备重置为出厂默认值会删除设备中个人信息和工作单位或学校信息。
 
-1.  在浏览器中，打开[公司门户网站](http://portal.manage.microsoft.com)，并登录到你的工作帐户。
+1.  在浏览器中，打开[公司门户网站](http://portal.manage.microsoft.com)，并登录到你的工作单位或学校帐户。
 
 2.  点击“我的设备”，然后选择丢失或被盗设备的名称。
 
 3.  单击**重置** &gt; **重置**。
 
-如果你无法重置丢失或被盗的设备，请让 IT 管理员为你重置。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+如果你无法重置丢失或被盗的设备，请让 IT 管理员为你重置。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

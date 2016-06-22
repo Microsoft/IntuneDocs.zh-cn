@@ -36,11 +36,11 @@ Samsung Knox 设备通过选择公司门户中的**设备删除**选项可执行
 - 电子邮件、VPN 和 WiFi
 - IT 管理员强制实施某些设置的能力
 
-如有疑问，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+如有疑问，请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

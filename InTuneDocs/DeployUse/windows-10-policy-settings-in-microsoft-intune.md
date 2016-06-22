@@ -31,7 +31,7 @@ ms.suite: ems
 
 ## 常规配置策略设置
 
-使用适用于 Windows 10 的 Microsoft Intune **常规配置策略**为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置常规设置：
+使用适用于 Windows 10 的 Microsoft Intune **常规配置策略**为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置常规设置。 使用 Intune 客户端软件管理 Windows 10 PC 时，该策略无法使用。
 
 
 ### Password
@@ -332,6 +332,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
