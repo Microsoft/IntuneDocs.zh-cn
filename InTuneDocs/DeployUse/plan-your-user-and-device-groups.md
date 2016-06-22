@@ -4,7 +4,7 @@
 title: 规划用户和设备组 | Microsoft Intune
 description:
 keywords:
-author: SanchuSa
+author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -40,7 +40,7 @@ Intune 中的组使你能够非常灵活地管理设备和用户。 你可以根
 
 Intune 管理控制台中“组”节点的默认视图是：
 
-![Intune 控制台中“组”节点的默认视图的屏幕截图](/intune/media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Intune 控制台中“组”节点的默认视图的屏幕截图](/intune/media/Intune_Planning_Groups_Default_small.png)
 
 策略将部署到组上，因此组层次结构是关键的设计注意事项之一。 重要的是要知道，一旦创建组之后，就不能再更改此组的父组，所以组的设计从你开始使用 Intune 服务那一刻起就至关重要。 此处介绍了一些设计基于组织需求的组层次结构的建议做法。
 
@@ -92,7 +92,7 @@ Intune 管理控制台中“组”节点的默认视图是：
 
     * “便携式计算机用户”  组是“已批准用户”  安全组的成员。
 
-    * 在 Intune 中创建一个组，该组使用包括**已批准用户**组的成员的动态成员资格查询。 结果是，Intune 用户组包括 **Pat**
+    * 在 Intune 中创建一个组，该组使用包括**已批准用户**组的成员的动态成员资格查询。 结果是，Intune 用户组包括 **Pat**。
 
 > [!TIP]
 > 在创建组时，考虑将如何应用策略。 例如，你可能有特定于设备操作系统的策略，特定于组织中不同角色的策略，或特定于已在 Active Directory 中定义的组织单位的策略。 有观点认为具有特定于 iOS、Android 和 Windows，以及每个组织角色的用户组的设备组非常有用。
@@ -131,22 +131,22 @@ Intune 提供九个无法编辑或删除的内置组： <!--maybe a screen shot 
 
 若是在 BYOD 或两者结合的情况下，请注意规划不侵犯本地隐私规则的策略。 为所有将自带设备办公的用户创建父组。 然后可以将该组用于应用适用于此类别中所有用户的策略。
 
-![创建 BYOD 父组的屏幕截图](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![创建 BYOD 父组的屏幕截图](/intune/media/Intune_Planning_Groups_BYOD_small.png)
 
 同样，你可以为组织中的 CO 用户创建组：
 
-![BYOD 和 CO 兄弟用户组的屏幕截图](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![BYOD 和 CO 兄弟用户组的屏幕截图](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### 针对地理区域的组
 如果你的组织需要针对特定区域的策略，你可以创建基于地理区域的组。 你可以把它们建立在你可能已在 Active Directory (AD) 中创建的区域组的基础上，然后将它们同步到 Azure AD。 还可以直接在 Azure AD 中创建它们。
 
-这些屏幕截图显示如何基于从本地 AD 同步的组创建 Intune 组。 此示例假定你已有一个**美国用户组**的 AD 安全组
+这些屏幕截图显示如何基于从本地 AD 同步的组创建 Intune 组。 此示例假定你已有一个“美国用户组”的 AD 安全组。
 
 1. 首先，提供常规信息。
 
-    ![“编辑组”区域的屏幕快照](/intune/media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+![“编辑组”区域的屏幕快照](/intune/media/Intune_Planning_Groups_AD_General_small.png)
 
 在成员资格条件下，选择从 AD 同步的**美国用户组**作为在成员资格规则下使用的安全组。
 
@@ -158,7 +158,7 @@ Intune 提供九个无法编辑或删除的内置组： <!--maybe a screen shot 
 
 在我们的示例中，我们还创建了中东和亚洲组 (MEA)。
 
-> 如果组成员身份不是基于安全组成员资格填充，请检查是否已将 Intune 许可证分配给这些成员。
+> [!NOTE]如果组成员身份不是基于安全组成员资格填充的，请检查是否已将 Intune 许可证分配给这些成员。
 
 ### 针对特定硬件的组
 如果你的组织要求应用于特定硬件类型的策略，你可以创建基于此要求的组。 你可以把它们建立在你已在本地 AD 中创建的特定组的基础上，然后将它们同步到 Azure AD。 还可以直接在 Azure AD 中创建它们。 在此示例中，我们使用“美国用户组”作为“笔记本电脑用户”组的父组。
@@ -167,14 +167,14 @@ Intune 提供九个无法编辑或删除的内置组： <!--maybe a screen shot 
 
 此时，组层次结构应显示如下。 如你所见，现在 Intune 组“笔记本电脑用户”内有了成员。 任何应用到此组的策略现在将被应用到来自美国地区的 BYOD 笔记本电脑用户。
 
-![笔记本电脑用户组的显示](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![笔记本电脑用户组的显示](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### 针对特定操作系统的组
 如果你的组织要求应用于特定操作系统（如 Android、iOS 或 Windows）的策略，你可以创建基于此要求的组。 正如前例中一样，你可以把它们建立在你已在本地 AD 中创建的特定于操作系统的组的基础上，然后将它们同步到 Azure AD。 也可以在 Azure AD 中直接创建它们。
 
-按照前面示例中的相同方法，我们可以使用特定的操作系统平台 <!--devices?--> 创建基于用户的组。
+按照前面示例中的相同方法，我们可以基于使用特定操作系统平台的用户<!--devices?-->创建组。
 
-> 如果有用户使用多个移动平台/操作系统且你没有自动将用户分类为 Android 用户、iOS 用户或 Windows 用户的方法，那么请考虑在设备级别应用策略，这将让你在应用特定操作系统策略时有更好的灵活性。
+> [!NOTE]如果有用户使用多个移动平台/操作系统且你没有自动将用户分类为 Android 用户、iOS 用户或 Windows 用户的方法，那么请考虑在设备级别应用策略，这将让你在应用特定于操作系统的策略时能够更加灵活。
 >
 > 不能基于设备的操作系统动态预配组。 使用 AD 或 AAD 安全组执行此操作。
 
@@ -206,18 +206,18 @@ Intune 提供九个无法编辑或删除的内置组： <!--maybe a screen shot 
 ## 组层次结构和命名约定
 为了使策略管理更轻松，我们建议你根据用途、平台和其应用到的范围来命名每个策略。 此命名标准应遵循你在准备应用策略时创建的组结构。
 
-例如，对于在美国地区级别应用到所有企业、Android、移动设备的 Android 策略，该策略可命名为
+例如，对于在美国地区级别应用到所有企业、Android、移动设备的 Android 策略，该策略可命名为 **CO_US_Mob_Android_General**。
 
-![CO_US_Mob_Android_General](/intune/media/Intune_planning_policy_android_small.png)
+![创建适用于 Android 的策略](/intune/media/Intune_planning_policy_android_small.png)
 
-创建适用于 Android 的策略
+通过这种方式命名策略，你可以从控制台的策略节点快速识别策略和它们的预期用途和范围，如下所示：
 
-![通过这种方式命名策略，你可以从控制台的策略节点快速识别策略和它们的预期用途和范围，如下所示：](/intune/media/Intune_planning_policy_view_small.png)
+![Intune 策略列表](/intune/media/Intune_planning_policy_view_small.png)
 
-## Intune 策略列表
-[后续步骤](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+## 后续步骤
+[创建组](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
