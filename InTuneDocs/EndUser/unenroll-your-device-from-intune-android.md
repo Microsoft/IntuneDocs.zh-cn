@@ -18,7 +18,7 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 从 Intune 取消注册你的设备
 
-当从 Intune 取消注册你的 Android 设备时，该设备将无法再访问公司资源。  若要了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+当从 Intune 取消注册你的 Android 设备时，该设备将无法再访问公司资源。  若要了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)。
 
 请按照下列步骤或观看此[视频](http://aka.ms/gyq2du)以从 Intune 取消注册设备并卸载公司门户应用：
 
@@ -46,10 +46,11 @@ ms.suite: ems
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

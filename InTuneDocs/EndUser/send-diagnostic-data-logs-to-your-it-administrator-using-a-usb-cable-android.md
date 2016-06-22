@@ -18,7 +18,7 @@ ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,13 +34,15 @@ ms.suite: ems
 
 2.  使用 USB 电缆将 Android 设备连接到计算机。
 
-3.  在计算机上，查找具有你的手机名的目录。 在该目录中查找 &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\。\.
+3.  在计算机上，查找具有你的手机名的目录。 在该目录中查找 &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
 
 4.  将所有文件附加到一封电子邮件并将它们发送给 IT 管理员。
+
+如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

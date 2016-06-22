@@ -18,7 +18,7 @@ ms.assetid: 0f7dc155-cb8e-477b-ba02-2623194a9575
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,10 +33,10 @@ ms.suite: ems
 
 -   **[警报](get-notified-by-microsoft-intune-alerts.md)**有助于你监视 Intune 管理的设备的运行状况（包括 Endpoint Protection 状态和警告（用以提醒恶意软件）和与磁盘空间不足或网络连接有关的警告）。
 
--   Intune 管理的设备和计算机将返回有关其属性和所安装软件的详细信息。  Intune 提供了一些用于检查和展示此数据的工具和报表。 有关详细信息，请参阅[通过 Microsoft Intune 中清单了解你的设备](understand-your-devices-with-inventory-in-microsoft-intune.md)
+-   Intune 管理的设备和计算机将返回有关其属性和所安装软件的详细信息。  Intune 提供了一些用于检查和展示此数据的工具和报表。 有关详细信息，请参阅[通过 Microsoft Intune 中清单了解你的设备](understand-your-devices-with-inventory-in-microsoft-intune.md)。
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

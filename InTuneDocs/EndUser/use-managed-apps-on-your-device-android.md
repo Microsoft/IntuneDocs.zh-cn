@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ ms.suite: ems
 ## 如何获取托管应用？
 你可通过以下几种不同的方式获取托管应用：
 
--   如果已在 Microsoft Intune 中注册设备，则你可以从公司门户应用或公司门户网站安装应用，或者可由 IT 管理员将其安装到你的设备。 若要了解相关注册信息，请参阅[在 Intune 中注册设备](enroll-your-device-in-Intune-android.md)
+-   如果已在 Microsoft Intune 中注册设备，则你可以从公司门户应用或公司门户网站安装应用，或者可由 IT 管理员将其安装到你的设备。 若要了解相关注册信息，请参阅[在 Intune 中注册设备](enroll-your-device-in-Intune-android.md)。
 
 -   从 Play Store 安装应用，然后使用由 Intune 管理的公司用户帐户登录该应用。
 
@@ -76,12 +76,12 @@ IT 部门可能管理的常见应用程序有：
 
 -   Microsoft Word、Excel、PowerPoint
 
-有关设备上的托管应用的详细信息，请联系你的 IT 部门。
+有关设备上的托管应用的详细信息，请联系你的 IT 部门。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

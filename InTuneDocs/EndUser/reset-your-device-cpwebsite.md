@@ -18,7 +18,7 @@ ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,16 +36,18 @@ ms.suite: ems
 
 1.  打开[公司门户网站](http://portal.manage.microsoft.com)，然后点击要更改其名称的设备。
 
-2.  点击“重置”
+2.  点击**重置**。
 
     ![重置设备](./media//iwp-1-tap-reset-passcode.png)
 
 你的设备现在已完成重置。
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+
 ### 另请参阅
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

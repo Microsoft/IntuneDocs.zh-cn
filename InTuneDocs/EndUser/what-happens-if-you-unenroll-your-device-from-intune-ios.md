@@ -18,7 +18,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,9 +46,11 @@ ms.suite: ems
 
 有关如何取消注册的说明，请参阅[从 Intune 取消注册设备](unenroll-your-device-from-intune-ios.md)。
 
+如有疑问，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

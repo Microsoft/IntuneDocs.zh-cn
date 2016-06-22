@@ -18,7 +18,7 @@ ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -60,10 +60,11 @@ Windows Phone 8。0 | 不支持
 
     如果重试不起作用，请联系你的 IT 管理员以获取帮助。 如果使用“远程锁定”后找到了设备并希望对其进行解锁，则只需输入你的密码。
 
+如需帮助，并且找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
 
 ### 另请参阅
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 
