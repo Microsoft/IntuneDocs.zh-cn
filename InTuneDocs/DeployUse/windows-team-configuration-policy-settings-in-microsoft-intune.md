@@ -36,7 +36,7 @@ ms.suite: ems
 |**启用 Azure Operational Insights**|Azure Operational Insights 是 Microsoft Operations Manager 套件的一部分，对 Windows 10 协同版设备的日志文件数据进行收集、存储和分析。<br /><br />若要连接到 Azure Operational insights，必须指定**工作区 ID** 和**工作区密钥**。|
 |**启用 Miracast 无线投影**|如果想让 Windows 10 协同版设备使用 Miracast 启用的设备进行投影，则启用此选项。<br /><br />如果启用了此选项，请从“选择 Miracast 频道”中选择用于投影内容的 Miracast 频道。|
 |**选择欢迎屏幕上显示的会议信息**|如果启用了此选项，你可以选择显示在“欢迎”屏幕上的“会议”标题下的信息。 你可以：<br /><br />-   **仅显示组织者和时间**<br />-   **显示组织者、时间和主题（私人会议的主题为隐藏状态）**|
-|**锁屏背景图片 URL**|启用此设置在 Windows 10 协同版设备的“欢迎”屏幕上显示来自于指定 URL 的自定义背景。<br /><br />图片必须为 PNG 格式，并且 URL 必须以“https://”开头。|
+|**锁屏背景图片 URL**|启用此设置在 Windows 10 协同版设备的“欢迎”屏幕上显示来自于指定 URL 的自定义背景。<br /><br />图片必须为 PNG 格式，并且 URL 必须以 “https://” 开头。|
 
 
 ### 另请参阅
