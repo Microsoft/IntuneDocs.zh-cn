@@ -82,7 +82,7 @@ ms.suite: ems
 2.  选择你想要检查的设备组，是要检查相容应用还是不相容应用，或是同时检查两者，然后单击“查看报告” 。
 
 ## Microsoft Intune 中的 Mac OS X 自定义策略设置
-使用 Microsoft Intune 的“Mac OS X 自定义配置策略”，将用“Apple Configurator 工具”[](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)创建的设置部署到 Mac OS X 设备。 使用此工具可以创建控制这些设备的操作的许多设置，并将其导出到配置的配置文件中。 然后可将此配置文件导入到 Intune Mac OS X 自定义策略，并向组织中的用户和设备部署这些设置。
+使用 Microsoft Intune 的“Mac OS X 自定义配置策略”，将用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)创建的设置部署到 Mac OS X 设备。 使用此工具可以创建控制这些设备的操作的许多设置，并将其导出到配置的配置文件中。 然后可将此配置文件导入到 Intune Mac OS X 自定义策略，并向组织中的用户和设备部署这些设置。
 
 此功能旨在使你能够部署不能与 Intune Mac OS X 常规配置策略一起配置的 Mac OS X 设置。
 
