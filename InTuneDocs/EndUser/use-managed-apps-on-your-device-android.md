@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,22 +66,22 @@ ms.suite: ems
 
 IT 部门可能管理的常见应用程序有：
 
--   托管的 web 浏览器
+-   Intune 托管浏览器
 
--   托管的映像查看器
+-   Intune 图像查看器
 
--   托管的 PDF 查看器
+-   Intune PDF 查看器
 
--   托管的 AV 播放机
+-   Intune AV 播放器
 
 -   Microsoft Word、Excel、PowerPoint
 
-有关设备上的托管应用的详细信息，请联系你的 IT 部门。 如果找不到 IT 管理员的联系信息，请查看在[公司门户网站](http://portal.manage.microsoft.com)中是否已经列出。
+有关设备上的托管应用的详细信息，请联系你的 IT 部门。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
