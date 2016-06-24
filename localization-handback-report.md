@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\use-managed-apps-on-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/use-managed-apps-on-your-device-android.md) | InSyncHandedBackSuccess | [Details](#5a25d845113ef6a3cb402923ef451fab63138979447)
 
 ## Item Details
-##### <a name='5a25d845113ef6a3cb402923ef451fab63138979447'></a> Source: [InTuneDocs\EndUser\use-managed-apps-on-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/use-managed-apps-on-your-device-android.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\use-managed-apps-on-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/0942d3f4e933bc3ce3f5b944296d9708860f0e35/InTuneDocs/EndUser/use-managed-apps-on-your-device-android.md)
-* Handoff File: [use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/f735208c924aa47f134404093a45de2e6309a473/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.zh-cn.xlf)
-* Handoff Datetime: 2016-06-14 17:10:38
-* Handoff Reason: Include
-* Archive File: [use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/38315c6bf22156f456f2ce9a9428853e07f1d2c9/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/archive/use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.zh-cn.xlf)
-* Archive Datetime: 2016-06-16 01:52:15
-* Handback File: [use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/3d1e87aa8a8eb3f09cc0462ab520f3d766aff651/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.zh-cn.xlf)
-* Handback Datetime: 2016-06-24 11:48:35
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
