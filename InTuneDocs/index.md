@@ -21,7 +21,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
     <section id="hero-content">
       <h1>Microsoft Intune 文档</h1>
       <h2>了解如何部署和管理 Microsoft Intune（一种移动设备和应用程序管理服务）。</h2>
-      <h3>想要使用 Configuration Manager 管理 Intune？ <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">请查看 Configuration Manager 文档 &rarr;</a></h3>
+      <h3>想要使用 Configuration Manager 管理 Intune？ <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">请查看 Configuration Manager 文档 &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
@@ -280,6 +280,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 </article>
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
