@@ -9661,7 +9661,7 @@
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/d216511b8ee32c0f4f6d793445eaa46627de8618/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.zh-cn.xlf)
-* Handback Datetime: 2016-06-29 20:27:55
+* Handback Datetime: 2016-06-29 22:49:08
 * Handback Error: [handback_transformer_version_mismatch_with_handoff_transformer_version](#b6e3e5189a1567dd5b13017d275ff4bd548e5fa1654handback_transformer_version_mismatch_with_handoff_transformer_version)
 * [Back to Top](#report-top)
 
