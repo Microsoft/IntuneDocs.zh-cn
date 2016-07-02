@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用多重身份验证保护 Windows 设备 | Microsoft Intune
-description:
-keywords:
+title: "使用多重身份验证保护 Windows 设备 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
+ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+
 
 ---
 
@@ -40,7 +34,8 @@ Microsoft Intune 集成多重身份验证 (MFA) 来帮助你保护公司资源�
 #### 使用 Intune 的 MFA
 如果你的组织具有的本地 IT 基础结构包括 Active Directory 联合身份验证服务的 Active Directory 域，则可以在联合服务器上配置 MFA，然后启用 MFA 以进行 Intune 注册。 通过在 Intune 上配置 MFA，可以使用户在注册期间进行一次身份验证，然后便可以访问公司资源而无需每次重复 MFA 过程。
 
->[!NOTE] 可以在 ADFS 服务器上基于每个用户或每个组要求进行 MFA。  
+>[!NOTE]
+>可以在 ADFS 服务器上基于每个用户或每个组要求进行 MFA。  
 
 #### 未使用 Intune 的 MFA
 如果你在联合身份验证服务器上配置 MFA，但未启用 MFA 以在 Intune 中注册，则用户将需要在其每次访问公司资源时（不仅在设备注册时）使用 MFA。
@@ -60,6 +55,7 @@ Microsoft Intune 集成多重身份验证 (MFA) 来帮助你保护公司资源�
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

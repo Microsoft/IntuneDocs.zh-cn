@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 在 Intune 中注册 iOS 设备 | Microsoft Intune
-description:
-keywords:
+title: "在 Intune 中注册 iOS 设备 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 305308aa94a7650df8b44710025620906714421b
+
 
 ---
 
@@ -95,6 +90,7 @@ ms.suite: ems
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 当你在 Intune 中注册设备时，IT 管理员可以看到哪些内容？ | Microsoft Intune
-description:
-keywords:
+title: "当你在 Intune 中注册设备时，IT 管理员可以看到哪些内容？ | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 04131fc569c904cf948683089933c38786a9b847
+
 
 ---
 
@@ -68,6 +62,7 @@ ms.suite: ems
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

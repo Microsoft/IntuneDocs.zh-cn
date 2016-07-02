@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 移动设备管理功能 | Microsoft Intune
-description:
-keywords:
+title: "移动设备管理功能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+
 
 ---
 # Microsoft Intune 的移动设备管理功能
@@ -66,13 +60,14 @@ ms.suite: ems
 
 |功能|详细信息|更多信息|
 |--------------|-----------|--------------------|
-|清单和报告|查找有关你管理的设备和它们所使用的软件的信息。|[在 Microsoft Intune 中了解你的设备清单](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|清单和报告|查找有关你管理的设备和它们所使用的软件的信息。|[在 Microsoft Intune 中了解你的设备清单](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
 ### 另请参阅
-[Microsoft Intune 中的 Windows PC 管理功能](./windows-pc-management-capabilities-in-microsoft-intune.md)
+[Microsoft Intune 中的 Windows PC 管理功能](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

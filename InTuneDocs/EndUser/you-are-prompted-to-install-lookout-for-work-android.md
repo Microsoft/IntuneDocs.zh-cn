@@ -1,34 +1,26 @@
 ---
-# required metadata
-
-title: 系统会提示你安装 Lookout for Work | Microsoft Intune
-description:
-keywords:
+title: "系统会提示你安装 Lookout for Work | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/27/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 1d47c043092eef7fcad56926bfdd44e259460053
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: jeffgilb
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
 # 系统会提示你安装 Lookout for Work
 注意：此功能已添加到 Android 公司门户应用，但在 2016 年 8 月后才能正常运行。 
 
-Lookout for Work 应用通过检查风险和安全威胁来帮助保护设备。 如过看到必须安装 Lookout for Work 的通知，这意味着 IT 管理员已设置了一个策略，要求你从 Play Store 下载并安装该应用。
+Lookout for Work 应用通过检查风险和安全威胁来帮助保护设备。 如果看到必须安装 Lookout for Work 的通知，这意味着 IT 管理员已设置了一个策略，要求你从 Play Store 下载并安装该应用。
 
 **需要执行的操作：**
 
@@ -41,6 +33,7 @@ Lookout for Work 应用通过检查风险和安全威胁来帮助保护设备。
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 重置（清除）丢失或被盗设备 | Microsoft Intune
-description:
-keywords:
+title: "重置（清除）丢失或被盗设备 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 2b2790826e46e6af43f3bdeeede6dc834845a83b
+
 
 ---
 
@@ -46,6 +40,7 @@ ms.suite: ems
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
