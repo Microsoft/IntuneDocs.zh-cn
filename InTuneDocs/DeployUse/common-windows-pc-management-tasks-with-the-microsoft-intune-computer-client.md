@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 常见 Windows 电脑管理任务 | Microsoft Intune
-description:
-keywords:
+title: "常见 Windows 电脑管理任务 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
+ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
+
 
 ---
 
@@ -139,7 +133,8 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
 -   根据停用的计算机的配置情况，停用的计算机可能会继续使用 Windows Server Update Services、Windows 更新或 Microsoft 更新接收更新。
 
-    > [!IMPORTANT]如果客户端软件是通过使用组策略对象 (GPO) 安装的，则必须删除组策略对象 (GPO)，然后才能删除客户端软件以防止软件重新安装。
+    > [!IMPORTANT]
+    > 如果客户端软件是通过使用组策略对象 (GPO) 安装的，则你必须删除组策略对象 (GPO)，然后才能删除客户端软件以防止软件重新安装。
 
     如果未能卸载客户端，请阅读 [Endpoint Protection 疑难解答](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)以获取更多帮助。
 
@@ -162,7 +157,8 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
     -   要将计算机链接到新用户，请在“所有用户”  列表中，选择用户。 确认用户数据正确，然后选择**确定**。
 
-> [!TIP]如果想要限制最终用户将自己链接到计算机的能力，则启用 **Microsoft Intune 代理设置**策略中的**限制用户将自己链接到计算机的能力**选项。
+> [!TIP]
+> 如果想要限制最终用户将自己链接到计算机的能力，则启用“Microsoft Intune 代理设置”策略中的“限制用户将自己链接到计算机的能力”选项。
 
 <!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
@@ -217,6 +213,7 @@ While in a remote assistance session, you can use all available TeamViewer comma
 
 From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
