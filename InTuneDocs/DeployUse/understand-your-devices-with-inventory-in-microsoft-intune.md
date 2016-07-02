@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 了解你的设备清单 | Microsoft Intune
-description:
-keywords:
+title: "了解你的设备清单 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 55b99e326e4f22aee62b207eb2e976a8d52e70c3
+
 
 ---
 
@@ -66,7 +60,8 @@ ms.suite: ems
 |**已启用加密**|“所有设备”|
 
 ## 从 Windows 电脑收集的信息
-> [!IMPORTANT]本部分仅适用于运行 Intune Windows 电脑客户端软件的 Windows 电脑。
+> [!IMPORTANT]
+> 本部分仅适用于运行 Intune Windows 电脑客户端软件的 Windows 电脑。
 
 若要查看 Windows 电脑收集的清单，请运行[计算机清单报表](understand-microsoft-intune-operations-by-using-reports.md)。 Intune 将从 Windows 电脑收集以下清单：
 
@@ -118,6 +113,7 @@ ms.suite: ems
 -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
