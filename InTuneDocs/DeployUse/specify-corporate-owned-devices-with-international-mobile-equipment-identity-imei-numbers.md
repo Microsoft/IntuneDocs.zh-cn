@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 根据国际移动设备标识 (IMEI) 号码指定公司拥有的设备 | Microsoft Intune
-description:
-keywords:
+title: "根据国际移动设备标识 (IMEI) 号码指定公司拥有的设备 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
+ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+
 
 ---
 
@@ -39,8 +32,8 @@ Microsoft Intune 让管理员可以导入具有 IMEI 号码的移动设备平台
         在文本编辑器中查看该 .csv 文件时，该文件显示为：
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **手动添加设备详细信息** - 输入最多五台设备的 IMEI 号码和设备详细信息
@@ -54,6 +47,7 @@ Microsoft Intune 让管理员可以导入具有 IMEI 号码的移动设备平台
 带有该 IMEI 号码的设备注册后，通常当用户安装公司门户应用并完成注册过程时，设备会被标记为公司拥有，并在“IMEI 设备”组中显示为已注册。
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO3-->
 
 
