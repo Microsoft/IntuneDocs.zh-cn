@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 从公司门户网站重置设备密码 | Microsoft Intune
-description:
-keywords:
+title: "从公司门户网站重置设备密码 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
+
 
 ---
 
@@ -30,7 +24,8 @@ ms.suite: ems
 
 如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](http://portal.manage.microsoft.com)进行重置。 公司门户网站是一个网页，可以用于管理计算机和在 Intune 中注册的设备，还可以在使用公司门户应用时用它来处理你可以执行的大多数相同任务。
 
-> [!NOTE] 公司门户网站上可能不会显示“重置密码”按钮，这具体取决于 IT 管理员配置 Intune 的方式。 Windows 8.1 和 Windows RT 设备不支持密码重置。
+> [!NOTE] 
+> 公司门户网站上可能不会显示“重置密码”按钮，这具体取决于 IT 管理员配置 Intune 的方式。 Windows 8.1 和 Windows RT 设备不支持密码重置。
 
 重置密码：
 
@@ -67,6 +62,7 @@ ms.suite: ems
 ### 另请参阅
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
