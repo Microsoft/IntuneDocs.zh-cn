@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows 版本升级策略设置 | Microsoft Intune
-description:
-keywords:
+title: "Windows 版本升级策略设置 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e911193075d2a621ef94f2917b2126501ea2100
+ms.openlocfilehash: e468ff102b45bf0c23fd76d8d15c44978861ae8a
+
 
 ---
 
@@ -49,6 +43,7 @@ Microsoft Intune“版本升级策略”可以将运行以下任一 Windows 10 �
 ### 另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 通过警报获取通知 | Microsoft Intune
-description:
-keywords:
+title: "通过警报获取通知 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e929a95d95b71e22d46e124f1a423af7046b0539
+ms.openlocfilehash: f1dd166b7b1278003ac8785b8be07c29396dfe8c
+
 
 ---
 
@@ -83,12 +77,14 @@ Intune 警报将保持活动状态，直到：
 
 -   警报已生成 45 天
 
-> [!TIP] 如果运行不同操作系统的设备生成了相同的警报，则你可能会在警报列表中看到相同警报的多个版本。
+> [!TIP]
+> 如果运行不同操作系统的设备生成了相同的警报，则你可能会在警报列表中看到相同警报的多个版本。
 
 ### 另请参阅
 [使用 Microsoft Intune 进行监视和报告](monitoring-and-reports-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 
