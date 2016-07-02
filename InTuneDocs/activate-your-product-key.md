@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 激活你的产品密钥 | Microsoft Intune
-description:
-keywords:
+title: "激活你的产品密钥 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 844c2ca8-2721-4f72-b1dd-be9b1da1f220
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d575d77a5f951311dc0d94abc96767952111b146
+
 
 ---
 
@@ -35,7 +29,8 @@ ms.suite: ems
 
 -   如果你正在激活的一个企业移动套件的产品密钥，请转到[此处](http://www.microsoft.com/ems/open)。
 
-> [!NOTE]如果你丢失了产品密钥，请与你购买的合作伙伴或分销商联系。
+> [!NOTE]
+> 如果您丢失了您的产品密钥，请与您购买的合作伙伴或分销商联系。
 
 ## 下载您的 System Center Configuration Manager 软件
 若要下载 System Center Configuration Manager 软件，请转到[批量许可服务中心](http://go.microsoft.com/fwlink/?LinkID=232300)。
@@ -56,6 +51,7 @@ ms.suite: ems
 |**很抱歉，我们不能处理你的订单**。|租户已创建，但未兑换产品密钥。 使用上面提供的链接再次尝试兑换您的产品密钥。 如果问题仍然存在，请联系[支持人员](http://go.microsoft.com/fwlink/?LinkID=394189)。|
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

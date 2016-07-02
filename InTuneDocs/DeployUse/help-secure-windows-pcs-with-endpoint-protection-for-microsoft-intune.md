@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 适用于 Windows 电脑的 Endpoint Protection | Microsoft Intune
-description:
-keywords:
+title: "适用于 Windows 电脑的 Endpoint Protection | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
@@ -52,7 +46,8 @@ Microsoft Intune 可通过多种方式帮助保障托管计算机的安全，其
 
     -   手动删除第三方 Endpoint Protection 应用程序。
 
-> [!NOTE] Intune 将不会自动卸载第三方 Endpoint Protection 应用程序。
+> [!NOTE]
+> Intune 将不会自动卸载第三方 Endpoint Protection 应用程序。
 
 ## 如何配置 Microsoft Intune Endpoint Protection
 使用以下步骤可帮助你配置适用于 Microsoft Intune 的 Endpoint Protection。
@@ -162,7 +157,8 @@ Microsoft Active Protection Service 是一个可帮助你决定如何应对潜�
   - “查看属性”– 打开包含所选恶意软件详细信息的页面。
   - “了解此恶意软件”– 打开 Microsoft 恶意软件防护中心中包含恶意软件详细信息的主题。
 
-> [!IMPORTANT] 直到已安装客户端，并管理至少一台计算机客户端，**保护**工作区才会显示在管理员控制台中。
+> [!IMPORTANT]
+> 直到已安装客户端，并管理至少一台计算机客户端，“保护”工作区才会显示在管理员控制台中。
 
   ![监视 Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
@@ -181,7 +177,7 @@ Intune 可以在安装有 Intune 客户端的远程托管电脑上使用 Endpoin
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，转到**组** > **概述** > **所有设备** > **所有计算机**，然后选择你的目标计算机。
 
 2. 单击**远程任务**下拉列表，然后选择任务。 在远程计算机上运行的任务。
-![运行远程恶意软件扫描](../media/ep_sa_malwarescan.png)
+
 
 
 
@@ -192,6 +188,7 @@ Intune 可以在安装有 Intune 客户端的远程托管电脑上使用 Endpoin
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 
