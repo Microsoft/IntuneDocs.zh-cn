@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 启用 MAM 的应用的最终用户体验 | Microsoft Intune
-description:
-keywords:
+title: "启用 MAM 的应用的最终用户体验 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -41,6 +34,7 @@ ms.suite: ems
     ![O365 登录页的屏幕截图](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  你的凭据成功通过由 Azure AD 进行的身份验证后，将应用 MAM 策略，并将要求你重启“OneDrive”  应用。
+  >[注意！]“需要重启”对话框仅在未注册 Intune 的设备上显示。
 
     ![“需要重新启动”对话框的屏幕截图](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -79,7 +73,7 @@ ms.suite: ems
 
     ![公司门户应用的屏幕截图](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  完成安装后，单击“接受”  以接受条款。
+5.  完成安装后，选择“接受”以接受条款。
 
 6.   “OneDrive”应用将自动启动。
 
@@ -136,7 +130,7 @@ Intune 仅支持对于每个设备，将 MAM 策略部署到一个用户帐户�
 用户 A 为两家公司（“X 公司”和“Y 公司”）工资。用户 A 对于每家公司具有一个工作帐户，它们都使用 Intune 来部署 MAM 策略。 **X 公司**在**Y 公司****之前**部署 MAM 策略。与“X 公司”关联的帐户会获得 MAM 策略，而与 Y 公司关联的帐户不会。如果你希望与 Y 公司关联的用户帐户通过 MAM 策略管理，则必须删除与 X 公司关联的用户帐户。
 ### 添加第二个帐户
 #### IOS
-如果使用 iOS 设备，则当你在同一设备上尝试添加第二个工作帐户时，可能会看到拦截消息。  还将显示删除现有帐户并添加新帐户的选项。 可以通过单击“是” 来执行此操作。
+如果使用 iOS 设备，则当你在同一设备上尝试添加第二个工作帐户时，可能会看到拦截消息。  还将显示删除现有帐户并添加新帐户的选项。 可以通过选择“是”来执行此操作。
 
 ![包含阻止消息以及“是”和“否”选项的对话框的屏幕截图](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +143,18 @@ Intune 仅支持对于每个设备，将 MAM 策略部署到一个用户帐户�
 
 从 Google Play 商店下载此应用。  在设备上安装该应用之后，便可启动该应用，并使用公司凭据进行身份验证。 现在应能够从其他策略托管应用查看未受保护和受保护的文件。
 
+支持以下文件类型：
+
+* **音频：**AAC LC、HE-AACv1 (AAC+)、HE-AACv2（增强型 AAC+）、AAC ELD（增强型低延迟 AAC）、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Vorbis、PCM/WAVE。
+* **视频：**H.263、H.264 AVC、MPEG-4 SP、VP8。
+* **图像：**jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif，jpeg、pjpeg。
+* PDF、PPDF
+
+------------
+|**pfile**|**text**|
+|----|----|
+|Pfile 是一种用于受保护文件的通用“包装”格式，它可封装加密内容和 RMS 许可证，还可用于保护任何文件类型。|即使是在受保护的情况下，也可在应用中打开文本文件（包括 XML 和 CSV 等）进行查看。 文件类型：txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+---------------
 **未在 Intune 中注册的 Android 设备**
 
 需启动 RMS 应用并使用工作帐户进行身份验证，才可使用 RMS 共享应用以通过 Intune 托管的其他应用查看文件。  登录时，你将看到以下消息“**仅在不具备 RMS 许可证时**：
@@ -162,6 +168,7 @@ Intune 仅支持对于每个设备，将 MAM 策略部署到一个用户帐户�
 [使用 Microsoft Intune 创建和部署移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

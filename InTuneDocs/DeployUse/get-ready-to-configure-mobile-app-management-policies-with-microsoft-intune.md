@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 准备好配置移动应用管理策略 | Microsoft Intune
-description:
-keywords:
+title: "准备好配置移动应用管理策略 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ Azure 门户是一款新的管理员控制台，用于创建 MAM 策略；建议
 如果你不熟悉如何使用 Azure 门户，请参阅 [Microsoft Intune MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)主题，以快速了解概述。
 
 如果你当前使用的是**Intune 管理员控制台**管理设备，则可创建 MAM 策略，以支持在 Intune 中使用**Intune 管理控制台**进行注册的设备的应用；但即使是在 Intune 中注册的设备，仍建议使用 Azure 门户。 有关如何使用 Intune 管理控制台创建 MAM 策略的说明，请参阅[此处](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)。
+
+在 Intune 管理控制台中创建的 MAM 策略不能导入到 Azure 门户中。  在 Azure 门户中，必须重新创建 MAM 策略。
 
 >[!IMPORTANT]
 > 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 如果你同时在 Intune 管理控制台和 Azure 门户中创建了 MAM 策略，则 Azure 门户中的策略将应用到应用并部署到用户。
@@ -62,7 +57,7 @@ Azure 门户是一款新的管理员控制台，用于创建 MAM 策略；建议
 -   以下事项需要 **Office 365 (O365)** 订阅：
   - 将 MAM 策略应用于具有多身份支持的应用。
   - 创建 SharePoint Online 和 Exchange Online 工作帐户。 不支持 Exchange 内部部署和 SharePoint 内部部署。
--    为**Skype for Business Online****启用新式验证**。 登录到 Microsoft Connect 并填写[此表单](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715)以注册新式验证计划。
+-    为 **Skype for Business Online** [启用“新式验证”](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md)。
 
 
 - “Azure Active Directory (Azure AD)”，用于创建用户。 当最终用户启动应用，并输入他们的工作凭据时，Azure AD 会对用户进行身份验证。
@@ -124,6 +119,7 @@ Azure 门户是一款新的管理员控制台，用于创建 MAM 策略；建议
 [使用 Microsoft Intune 创建和部署移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

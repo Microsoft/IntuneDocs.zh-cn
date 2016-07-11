@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 创建和部署 MAM 策略 | Microsoft Intune
-description:
-keywords:
+title: "创建和部署 MAM 策略 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
+ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+
 
 ---
 
@@ -34,6 +27,8 @@ ms.suite: ems
 - 不受任何 MDM 解决方案管理的设备 (BYOD)。
 
 如果你当前使用 **Intune 管理控制台**管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
+在 Intune 管理控制台中创建的 MAM 策略不能导入到 Azure 门户中。  在 Azure 门户中，必须重新创建 MAM 策略。
+
 >[!IMPORTANT]
 > 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 Azure 门户是用于创建 MAM 策略的新管理控制台。 如果你同时在 Intune 管理控制台和 Azure 门户中创建了 MAM 策略，则 Azure 门户中的策略将应用到应用并部署到用户。
 
@@ -49,7 +44,8 @@ ms.suite: ems
 
     ![“Intune 移动应用程序管理”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP] 如果首次使用 Azure 门户，请先阅读[用于 Microsoft Intune MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉该门户。
+    > [!TIP]
+    > 如果首次使用 Azure 门户，请先阅读[用于 Microsoft Intune MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉该门户。
 
 2.  在“设置”边栏选项卡中，选择“应用策略”。  将打开“应用策略”  边栏选项卡，你将在此创建新策略和编辑现有策略。
 
@@ -65,7 +61,8 @@ ms.suite: ems
 
 5.  选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表。 可从该列表中选择希望与正创建的策略关联的一个或多个应用。 选择应用后，选择“应用”边栏选项卡底部的“选择”按钮以保存你的选择。
 
-    > [!IMPORTANT] 必须至少选择一个应用才能创建策略。
+    > [!IMPORTANT]
+    > 必须至少选择一个应用才能创建策略。
 
 6.  在“添加策略”边栏选项卡上，选择“配置所需设置”以打开“策略设置”边栏选项卡。
 
@@ -108,7 +105,8 @@ ms.suite: ems
 
 仅分配有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证的用户将受该策略影响。  所选安全组中未分配到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证的用户不会受到影响。
 
-如果你使用 Intune 与配置管理器来管理 iOS 和 Android 设备，则该策略将仅应用于直接位于所选组中的用户。  所选组中嵌套子组的成员将不受影响。
+>[!IMPORTANT]
+> 如果你使用 Intune 与配置管理器来管理 iOS 和 Android 设备，则该策略将仅应用于直接位于所选组中的用户。  所选组中嵌套子组的成员将不受影响。
 
 最终用户可以从 App store 或 Google Play 下载应用。 有关 MAM 如何保护设备上的公司数据的详细演练，请参阅[启用 MAM 的应用的最终用户体验](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)主题。
 
@@ -167,6 +165,7 @@ ms.suite: ems
 [启用 MAM 的应用的最终用户体验](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

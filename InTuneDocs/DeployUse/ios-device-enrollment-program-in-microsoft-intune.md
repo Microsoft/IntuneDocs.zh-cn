@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Microsoft Intune 对 iOS 设备进行 Apple DEP 管理 | Microsoft Intune
-description:
-keywords:
+title: "使用 Microsoft Intune 对 iOS 设备进行 Apple DEP 管理 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+
 
 ---
 
@@ -59,6 +53,12 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
       - **用户关联提示**：必须在初始设置过程中将设备与某个用户相关联，然后可以以该用户的身份允许此设备访问公司数据和电子邮件。  应该对属于用户且需要使用公司门户（即需要安装应用）的 DEP 托管设备配置**用户关联**。
       - **没有用户关联**：该设备不与用户关联。 将此隶属关系用于无需访问本地用户数据即可执行任务的设备。 需要用户隶属关系的应用，包括用于安装业务线应用的公司门户应用无法运行。
 
+    你还可以**将设备分配到以下组**。 单击“选择...”来选择组。
+
+    >[!Important]
+    >组分配会将从 Intune 移到 Azure Active Directory。 [了解详细信息](#changes-to-intune-group-assignments)
+
+
     然后，启用**为该策略配置设备注册程序设置**以支持 DEP。
 
       ![设置助理窗格](../media/pol-sa-corp-enroll.png)
@@ -78,8 +78,16 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
         - **定位服务** - 如果启用，在激活过程中设置助手会提示此服务
         - **还原** - 如果启用，在激活过程中设置助手会提示进行 iCloud 备份
         - **Apple ID** - 下载 iOS 应用商店应用（包括那些由 Intune 安装的应用）时需要 Apple ID。 如果启用，当 Intune 在没有 ID 情况下尝试安装应用时，iOS 将提示用户提供 Apple ID。
-        - **条款和条件** - 如果启用，在激活过程中设置助手会提示用户接受 Apple 的条款和条件 - **Touch ID** - 如果启用，在激活过程中设置助手会提示此服务 - **Apple Pay** - 如果启用，在激活过程中设置助手会提示此服务 - **Zoom** - 如果启用，在激活过程中设置助手会提示此服务 - **Siri** - 如果启用，在激活过程中设置助手会提示此服务 - **向 Apple 发送诊断数据** - 如果启用，在激活过程中设置助手会提示此服务 -  **启用附加 Apple Configurator 管理** - 设置为“禁止”可阻止通过 Apple Configurator 与 iTunes 或管理同步文件。 Microsoft 建议你设置为**禁止**，从 Apple Configurator 中导出任何进一步的配置，然后通过 Intune 部署为自定义 iOS 配置文件，而不使用此设置允许带或不带证书的手动部署。
-        - **禁止** - 阻止设备通过 USB （禁止配对）进行通信 - **允许** - 允许设备通过任何 PC 或 Mac 的 USB 连接进行通信 - **需要证书** - 允许与具有导入到注册配置文件的证书的 Mac 配对
+        - **条款和条件** - 如果启用，在激活过程中设置助手会提示用户接受 Apple 的条款和条件
+        - **Touch ID** - 如果启用，在激活过程中设置助手会提示此服务
+        - **Apple Pay** - 如果启用，在激活过程中设置助手会提示此服务
+        - **Zoom** - 如果启用，在激活过程中设置助手会提示此服务
+        - **Siri** - 如果启用，在激活过程中设置助手会提示此服务
+        - **向 Apple 发送诊断数据** - 如果启用，在激活过程中设置助手会提示此服务
+     -  **启用附加 Apple Configurator 管理** - 设置为**禁止**可阻止通过 Apple Configurator 与 iTunes 或管理同步文件。 Microsoft 建议你设置为**禁止**，从 Apple Configurator 中导出任何进一步的配置，然后通过 Intune 部署为自定义 iOS 配置文件，而不使用此设置允许带或不带证书的手动部署。
+        - **禁止** - 阻止设备通过 USB （禁止配对）进行通信
+        - **允许** - 允许设备通过任何 PC 或 Mac 的 USB 连接进行通信
+        - **需要证书** - 允许与具有导入到注册配置文件的证书的 Mac 配对
 
 6.  **分配 DEP 设备以进行管理**转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com)，然后使用公司 Apple ID 登录。 转到**部署计划**&gt;**设备注册计划**&gt;**管理设备**。 指定 **“选择设备”**的方式，提供设备信息并按设备 **“序列号”**、 **“订单编号”**指定详细信息，或 **“上载 CSV 文件”**。 接下来，选择**分配到服务器**，然后选择为 Microsoft Intune 指定的&lt;服务器名称&gt;，然后单击**确定**。
 
@@ -91,12 +99,15 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 8.  **将设备分配给用户**你的企业拥有的设备现在可以分配给用户。 打开 iOS 设备时，它将注册为由 Intune 管理。
 
+## Intune 组分配的更改
 
+从 9 月开始，设备组关联将移到 Azure Active Directory。 过渡到 Azure Active Directory 组后，组分配将不会出现在“企业注册配置文件”选项中。 由于此更改将历时数月，因此你可能不会立即看到更改。 不久后将会发布更多详细信息。
 
 ### 另请参阅
 [为注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

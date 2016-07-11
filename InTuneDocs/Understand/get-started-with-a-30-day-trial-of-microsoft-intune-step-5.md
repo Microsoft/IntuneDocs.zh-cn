@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 注册评估移动设备 | Microsoft Intune
-description:
-keywords:
+title: "注册评估移动设备 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: f26b64015f483eb5b6a6efbaa6fe6730dde7dac9
+
 
 ---
 
@@ -32,17 +26,17 @@ ms.suite: ems
 
 1.  **将 Intune 设置为移动设备管理机构**
 
-    在 [Intune 管理员控制台](https://manage.microsoft.com/)中，选择“管理” &gt; “移动设备管理”。 选择“任务” > “设置 MDM 机构”，然后在“MDM 机构”对话框中选择“是”。
+    在 [Intune 管理员控制台](https://manage.microsoft.com/)中，选择“管理员”&gt;“移动设备管理”。 选择“任务” > “设置 MDM 机构”，然后在“MDM 机构”对话框中选择“是”。
 
 2.  **为设备平台启用 MDM**
 
     为要管理的设备平台启用移动设备管理。 根据你的平台，需要的要求不同：
 
-    -   **iOS 和 Mac OS X**：请参阅[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)
+    -   **iOS 和 Mac OS X**：请参阅[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)。
 
     -   **Android**：Android 移动设备允许用户使用从 Google Play 可用的公司门户应用注册。 Intune 中不需要附加配置。
 
-    -   **Windows Phone**：请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)
+    -   **Windows Phone**：请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)。
 
 ## 注册测试设备
 
@@ -56,24 +50,25 @@ ms.suite: ems
 用户会安装 Windows Phone 应用商店中提供的 Microsoft Corporation 的“公司门户”应用，并使用前面添加的 Intune 用户凭据登录。  查看 **“注册的设备”** 以添加自己的设备。
 
  ### Windows Phone 8。0
- 用户会单击“系统设置” &gt; “公司应用”，并使用前面添加的 Intune 用户凭据登录。 公司门户应用将部署到你的手机。
+ 用户单击“系统设置”&gt;“公司应用”，并使用前面添加的 Intune 用户凭据登录。 公司门户应用将部署到你的手机。
 
 如果系统提示输入 **“服务器地址”**，请键入“manage.microsoft.com”。
 
 
 ## 安装以前部署的应用
-在移动设备上打开“公司门户”，选择“应用”，然后安装“Microsoft Skype”
+在移动设备上打开“公司门户”，选择“应用”，然后安装“Microsoft Skype”。
 
-若要了解有关使用 Intune 进行移动设备管理的详细信息，请参阅[为在 Microsoft Intune 中注册设备做好准备](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+若要了解有关使用 Intune 进行移动设备管理的详细信息，请参阅[为在 Microsoft Intune 中注册设备做好准备](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)。
 
 ### 后续步骤
 祝贺你！ 你刚完成了“Microsoft Intune 评估”演练的步骤 5。
 
 >[!div class="step-by-step"]
 
->[&larr; **创建策略**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**选项和其他功能** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
+>[&larr;**创建策略**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**选项和其他功能**&rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 保护未注册设备上的业务线应用及数据 | Microsoft Intune
-description:
-keywords:
+title: "保护未注册设备上的业务线应用及数据 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ ms.suite: ems
 * 对于不由任何 MDM 解决方案管理的设备，将需要自定义解决方案。 最终用户必须在其设备上下载并安装应用。
 
 ## 更改元数据
-如果需要更改应用详细信息，如应用名或捆绑标识符，则必须[删除该应用](#remove-apps)，并[向其添加](#add-the-app)新的元数据。
+如果需要更改应用详细信息，如应用名或捆绑标识符，则必须[删除该应用](#remove-apps)，并[向其添加](#step-2-add-the-app)新的元数据。
 
 ##  删除应用
 可从应用列表中删除业务线应用。  这会从列表中删除该应用及与 MAM 策略的关联，但不会从最终用户设备删除或卸载该应用。  
@@ -80,6 +73,7 @@ ms.suite: ems
   这会从业务线应用列表及 MAM 策略中的目标应用列表中删除该应用。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

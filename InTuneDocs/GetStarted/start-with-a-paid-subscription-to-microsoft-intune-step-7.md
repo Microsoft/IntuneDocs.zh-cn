@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 自定义公司门户 | Microsoft Intune
-description:
-keywords:
+title: "自定义公司门户 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 45f574a975c94338c4543c0cdbc3aef549030601
+
 
 ---
 
@@ -29,9 +23,10 @@ ms.suite: ems
 # 自定义公司门户
 在 [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)]中，用户可以访问公司数据和执行常见任务，比如注册设备、安装应用，以及查找信息以从 IT 部门获得帮助。
 
+> [!TIP]
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。
 
-自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 若要实现此操作，只需以租户或服务管理员的身份登录 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)，选择“管理员” &gt; “公司门户”，然后配置公司门户的设置。
+自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 若要实现此操作，只需以租户或服务管理员的身份登录 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)，选择**管理员** &gt; **公司门户**，然后配置公司门户的设置。
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
@@ -43,7 +38,7 @@ ms.suite: ems
     |公司名称|40|此名称显示为公司门户的标题。|
     |IT 部门联系人姓名|40|此名称显示在“联系 IT”页上。|
     |IT 部门的电话号码|20|此联系人号码显示在“联系 IT”页上。|
-    |IT 部门的电子邮件地址|40|此联系人地址显示在“联系 IT”页上。 必须以 **alias@domainname.com** 格式输入有效的电子邮件地址|
+    |IT 部门的电子邮件地址|40|此联系人地址显示在“联系 IT”页上。 必须输入格式为 **alias@domainname.com** 的有效电子邮件地址。|
     |其他信息|120|显示在“联系 IT”页上。|
     |公司隐私声明 URL|79|你可以指定自己的公司隐私声明，当用户从公司门户中单击隐私链接时，该隐私声明将出现。 必须以 https://www.contoso.com 格式输入有效的 URL。|
 
@@ -68,12 +63,13 @@ ms.suite: ems
 保存更改之后，你可以使用管理控制台的“公司门户”页面底部提供的链接来查看公司门户网站。 无法更改这些链接。 当用户登录时，这些链接将在公司门户中显示你的订阅。
 
 ### 后续步骤
-祝贺你！ 你刚刚完成了 *Intune 快速入门指南*的步骤 7
+祝贺你！ 你刚刚完成了 *Intune 快速入门指南*的步骤 7。
 >[!div class="step-by-step"]
 
->[&larr; **创建策略和应用**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**注册设备** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr;**创建策略和应用**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**注册设备**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Intune
-description:
-keywords:
+title: "使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
+ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
+
 
 ---
 
@@ -39,20 +33,21 @@ ms.suite: ems
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 小时|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 小时|
 
-    DNS record changes might take up to 72 hours to propagate. You cannot verify the DNS change in Intune until the DNS record propagates.
+    DNS 记录更改可能最多需要 72 小时才能进行传播。 你无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
 
-    **EnterpriseEnrollment-s.manage.microsoft.com** – Supports a redirect to the Intune service with domain recognition from the email’s domain name
+    **EnterpriseEnrollment-s.manage.microsoft.com** – 支持从电子邮件的域名重定向到具有域识别的 Intune 服务
 
-    **EnterpriseRegistration.windows.net** – Supports Windows 8.1 and Windows 10 Mobile devices that will register with Azure Active Directory using their work or school account
+    **EnterpriseRegistration.windows.net** – 支持将使用其工作或学校帐户向 Azure Active Directory 注册的 Windows 8.1 和 Windows 10 移动版设备
 
-  2.  在 [Intune 管理控制台](http://manage.microsoft.com)中，单击“管理” &gt; “移动设备管理” &gt; “Windows”
+  2.  在 [Intune 管理控制台](http://manage.microsoft.com)中，单击“管理”&gt;“移动设备管理”&gt;“Windows”。
   ![Windows 设备管理对话框](../media/enroll-intune-winenr.png)
-  3.  在“指定一个已验证的域名”框中键入公司网站结果验证的域的 URL，然后单击“测试自动检测”
+  3.  在**指定一个已验证的域名**框中键入公司网站结果验证的域的 URL，然后单击**测试自动检测**。
 
 ### 另请参阅
 [为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

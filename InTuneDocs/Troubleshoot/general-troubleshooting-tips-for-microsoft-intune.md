@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 常规疑难解答提示 | Microsoft Intune
-description:
-keywords:
+title: "常规疑难解答提示 | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
+ms.openlocfilehash: 6b2d1d5eecb543e45fca5fbb8aa1854c88ec4f9c
+
 
 ---
 
@@ -46,7 +40,7 @@ ms.suite: ems
 
 -   用户是否可能遇到身份验证问题？ 如果可能遇到此问题，请检查用户是否可以登录到使用 Azure Active Directory 的其他服务。 此外，请查看用户可以从另一个设备登录。
 
--   是否已检查服务状态？ 你可以在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)中监视 Intune 服务运行状况。 在左侧窗格中选择**服务运行状况**。 
+-   是否已检查服务状态？ 你可以在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)中监视 Intune 服务运行状况。 在左侧窗格中选择**服务运行状况**。
 
 ## 收集可用数据
 
@@ -54,9 +48,9 @@ ms.suite: ems
   - [使用 USB 电缆将 Android 诊断数据日志发送给 IT 管理员](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [将 Android 注册错误发送给 IT 管理员](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [将 iOS 注册错误发送给 IT 管理员](/intune/enduser/send-errors-to-your-it-admin-ios.md)
+  - [将 iOS 注册错误发送给 IT 管理员](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   例如，管理控制台数据，对于策略实施问题，你应该检查目标策略及其状态，如[通过 Microsoft Intune 使用组来管理用户和设备](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
+-   例如，管理控制台数据，对于策略实施问题，你应该检查目标策略及其状态，如[通过 Microsoft Intune 使用组来管理用户和设备](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
 
 ## 研究解决方案
 
@@ -97,6 +91,7 @@ ms.suite: ems
 [排查 Microsoft Intune 中的软件更新问题](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

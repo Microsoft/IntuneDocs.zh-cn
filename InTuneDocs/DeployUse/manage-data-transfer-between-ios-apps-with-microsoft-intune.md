@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 管理 iOS 应用之间的数据传输 | Microsoft Intune
-description:
-keywords:
+title: "管理 iOS 应用之间的数据传输 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -51,9 +44,9 @@ ms.suite: ems
 由第三方 MDM 解决方案管理的设备必须使用此配置。 下述过程是实现 UPN 设置的一般流程以及该过程所产生的最终用户体验：
 
 
-1.  为 iOS 平台配置移动应用管理策略。 根据公司要求配置策略设置，并选择应使用此策略的应用。
+1.  在 Azure 门户中，为 iOS 平台[配置移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 根据公司要求配置策略设置，并选择应使用此策略的应用。
 
-2.  使用步骤 3 和 4 中所述的设置部署你想要通过第三方 MDM 解决方案管理的应用和电子邮件配置文件。
+2.  使用步骤 3 和 4 中所述的设置部署你想要**通过第三方 MDM 解决方案**管理的应用和电子邮件配置文件。
 
 3.  使用以下应用配置设置来部署应用：键 =IntuneMAMUPN，值 =<username@company.com> [示例：“IntuneMAMUPN”、“jondoe@microsoft.com”]
 
@@ -69,6 +62,7 @@ ms.suite: ems
 
 4.  Word 应用启动时，将提示最终用户使用其工作帐户进行登录。  最终用户在出现提示时输入的工作帐户应与你在 Microsoft Word 应用的应用配置设置中指定的帐户匹配。
 
+    > [!NOTE]
     > 在个人环境中使用 Word 应用时，最终用户可以将其他个人帐户添加到 Word 来完成其个人工作，并且该帐户不受 MAM 策略的影响。
 
 5.  登录成功后，会将应用策略设置应用到 Word 应用。
@@ -79,6 +73,7 @@ ms.suite: ems
 [通过 Microsoft Intune 使用移动应用管理策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 项目审视 | Microsoft Intune
-description:
-keywords:
+title: "项目审视 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
+ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+
 
 ---
 
@@ -63,6 +57,14 @@ ms.suite: ems
 ### 计划
 
 在审视阶段，大多数工作都是关于计划和准备。 审视项目时，需要考虑技术和组织问题以及用户如今的工作方式和所需的行为更改。 以心中的“大蓝景”最终目标开始，然后在后续阶段制定更小的目标，逐步迈入正轨。
+
+
+ > [!NOTE]
+ > 
+ > 这些模板可能对项目范围内的工作有所帮助：
+ > > - [Intune 或带 Configuration Manager 的 Intune 决策模板](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [移动应用的规划模板](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [常规设备管理规划模板](https://gallery.technet.microsoft.com/General-device-management-334c3792)
 
 ### 技术支持
 为了知识工作者能够从高效的 Intune 体验中获益，技术支持应做好充分准备。 审视项目时，应该考虑到技术支持在每个阶段将发挥的作用，以及执行和确保技术支持准备好支持最终用户所需的资源。
@@ -110,6 +112,7 @@ ms.suite: ems
 [概念证明](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

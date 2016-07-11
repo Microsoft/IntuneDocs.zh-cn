@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Intune 评估指南 | Microsoft Intune
-description:
-keywords:
+title: "Intune 评估指南 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 4af13629986e7cef814104f3d1f298eb2be240ac
+ms.openlocfilehash: 26ecc3dfe8816da9f30829901d929af53b1bedc0
+
 
 ---
 
@@ -30,16 +23,16 @@ ms.suite: ems
 
 在本主题中，你将学习启动和运行 Intune 评估的基础知识，同时获得服务概述，便于你评估 Intune 的特性和功能。
 
-观看这段五分钟的演示视频，了解如何轻松地开始使用 Microsoft Intune 的免费评估并管理自己的设备：
+观看下面这段五分钟的演示视频，了解如何轻松地开始使用 Microsoft Intune 的免费评估并管理自己的设备。 视频的第一部分提及一个“已停用”的门户，因此，即使你将使用另一个门户，但这些步骤实质上是相同的。 你可以在[此处](https://docs.microsoft.com/intune/deploy-use/account-portal-merged-with-Office-365)阅读有关此门户的详细信息。
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
 ## 在开始之前
 开始使用 Intune 之前，你将需要以下各项：
 
--   一台已启用 Silverlight Web 浏览器的设备，你可以用它来访问你创建 Intune 用户帐户（“Office 365 管理中心”）的网站以及管理设备、组和策略的网站（“Intune 管理控制台”）
+-   一台已启用 Silverlight Web 浏览器的设备，你可以用它来访问你创建 Intune 用户帐户（“Office 365 管理中心”）的网站以及管理设备、组和策略的网站（“Intune 管理控制台”）。
 
--   另一台带有 Web 浏览器的设备，将用它来测试 Intune 用户将如何使用公司门户注册和管理他们的设备。 还将测试用户如何查找和安装应用并向管理员请求帮助。 如果没有另一台设备，则可以在用于 Intune 管理的同一浏览器中使用“隐私模式”设置（例如：在 Internet Explorer 中，可以选择“工具” &gt; “InPrivate 浏览”）
+-   另一台带有 Web 浏览器的设备，将用它来测试 Intune 用户将如何使用公司门户注册和管理他们的设备。 还将测试用户如何查找和安装应用并向管理员请求帮助。 如果没有另一台设备，则可以在用于 Intune 管理的同一浏览器中使用“隐私模式”设置（例如：在 Internet Explorer 中，可以选择“工具”&gt;“InPrivate 浏览”）。
 
 -   如果你有现成的 Microsoft Online Services 帐户，则需要该帐户的管理员凭据。 如果你没有此类帐户或者只是想将此 Intune 租户用于评估目的，则不需要这些管理员凭据。
 
@@ -47,9 +40,9 @@ ms.suite: ems
 
     |平台|证书要求|更多信息|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 和 Windows Phone 8 |从商店安装公司门户应用的 Windows Phone 8.1 用户不需要证书。 Windows Phone 8.0 或使用 Intune 将公司门户应用部署到 Windows Phone 8.1 设备都需要 Symantec 证书。|本指南假定用户从 Windows Phone 8.1 或更高版本的设备上的商店获取公司门户应用。 有关 Windows Phone 8.0 支持的信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](/Intune/DeployUse/set-up-windows-phone-management-with-microsoft-intune)|
-    |Windows 10、Windows RT 8.1、Windows RT 或 Windows 8.1 设备|注册 Windows RT 和 Windows 设备没有相关的证书要求。|使用 Microsoft Intune 安装 Windows PC 客户端|
-    |iOS 7.1 或更高版本|获取 Apple 推送通知服务证书。|向 Apple 请求 Apple Push Notification 服务证书，如下所述：[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune)|
+    |Windows Phone 8.1 和 Windows Phone 8 |从商店安装公司门户应用的 Windows Phone 8.1 用户不需要证书。 Windows Phone 8.0 或使用 Intune 将公司门户应用部署到 Windows Phone 8.1 设备都需要 Symantec 证书。|本指南假定用户从 Windows Phone 8.1 或更高版本的设备上的商店获取公司门户应用。 有关 Windows Phone 8.0 支持的信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)。|
+    |Windows 10、Windows RT 8.1、Windows RT 或 Windows 8.1 设备|注册 Windows RT 和 Windows 设备没有相关的证书要求。|[使用 Microsoft Intune 安装 Windows 电脑客户端](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune)。|
+    |iOS 7.1 或更高版本|获取 Apple 推送通知服务证书。|向 Apple 请求 Apple Push Notification 服务证书，如[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)中所述。|
 
 ## 用于完成 Intune 的 30 天评估的步骤
 - [步骤 1：登录或注册 30 天评估](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)。 注册或登录 Intune 之前，应考虑是使用现有帐户登录还是创建仅用于 Microsoft Intune 的 30 天评估的临时帐户。
@@ -65,11 +58,13 @@ ms.suite: ems
 现在可以开始使用 30 天评估订阅！
 
 >[!div class="step-by-step"]
+[**注册 Intune** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 
-### 注册 Intune
-[另请参阅](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
+### 另请参阅
+[Intune 快速入门指南](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

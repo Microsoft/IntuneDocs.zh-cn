@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune 快速入门指南 | Microsoft Intune
-description:
-keywords:
+title: "Intune 快速入门指南 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: ca0ca74357b59d9cc6fbf4ec7eb237dff972c411
+
 
 ---
 
@@ -41,7 +35,7 @@ ms.suite: ems
 -   自定义生产用 Intune 功能
 
 >[!TIP]
->如果在符合条件的计划中购买至少 150 个 Microsoft Intune 的许可证，则可以使用“FastTrack 中心权益”服务，通过该服务，Microsoft 专家可以和你一起为 Intune 准备好环境。 请参阅 [Microsoft Intune 服务权益说明](https://technet.microsoft.com/library/mt228265.aspx)
+>如果在符合条件的计划中购买至少 150 个 Microsoft Intune 的许可证，则可以使用“FastTrack 中心权益”服务，通过该服务，Microsoft 专家可以和你一起为 Intune 准备好环境。 请参阅 [Microsoft Intune 服务权益说明](https://technet.microsoft.com/library/mt228265.aspx)。
 
 
 ## 在开始之前
@@ -55,8 +49,9 @@ ms.suite: ems
 是否已准备好开始？ 开始使用 Intune 的付费订阅时，将需要以下各项：
 
 ### 一台具有启用 Silverlight 的 Web 浏览器的设备
-你将需要它来访问用于管理设备、应用和策略的 Intune 管理控制台。 当不从移动设备访问公司门户应用时，你也将需要 Web 浏览器来访问基于 Web 的公司门户。 为了简化操作，你可以在用于 Intune 管理的同一浏览器上使用“隐私模式”设置（例如：在 Internet Explorer 中，可以依次单击“工具” &gt; “InPrivate 浏览”）
+你将需要它来访问用于管理设备、应用和策略的 Intune 管理控制台。 当不从移动设备访问公司门户应用时，你也将需要 Web 浏览器来访问基于 Web 的公司门户。 为了简化操作，你可以在用于 Intune 管理的同一浏览器上使用“隐私模式”设置（例如：在 Internet Explorer 中，可以依次单击“工具”&gt;“InPrivate 浏览”）。
 
+>[!TIP]
 >鉴于此要求，Microsoft Edge 浏览器不支持访问 Intune 管理控制台。
 
 
@@ -66,18 +61,20 @@ ms.suite: ems
 - 从应用商店安装公司门户应用的 **Windows Phone 8.1** 用户不需要证书。 但是，**Windows Phone 8.0** 或使用 Intune 将公司门户应用部署到 Windows Phone 8.1 设备都需要 [Symantec 代码签名证书](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)。
 
 >[!NOTE]
->本快速入门指南假定用户从 Windows Phone 8.1 或更高版本的设备上的应用商店获取公司门户应用。 有关 Windows Phone 8.0 支持的信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 8.0 管理](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune)
+>本快速入门指南假定用户从 Windows Phone 8.1 或更高版本的设备上的应用商店获取公司门户应用。 有关 Windows Phone 8.0 支持的信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 8.0 管理](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune)。
 
-- 将 Windows 电脑注册为设备或[为 Microsoft Intune 安装 Windows 电脑客户端](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune)时，**Windows 电脑**或 **Windows RT 设备**不需要证书
+- 将 Windows 电脑注册为设备或[为 Microsoft Intune 安装 Windows 电脑客户端](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune)时，**Windows 电脑**或 **Windows RT 设备**不需要证书。
 
-- 对于 **iOS** 或 **Mac OS X** 设备，你将需要向 Apple 请求 Apple Push Notification 服务证书，如在[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)的步骤 3 中所述
+- 对于 **iOS** 或 **Mac OS X** 设备，你将需要向 Apple 请求 Apple Push Notification 服务证书，如在[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)的步骤 3 中所述。
 
 ### 后续步骤
 现在是时候开始使用 Intune 快速入门指南了！
 
 >[!div class="step-by-step"]
+[**登录到 Intune** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

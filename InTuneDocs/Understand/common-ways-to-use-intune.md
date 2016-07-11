@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune 的常见使用方式 | Microsoft Intune
-description:
-keywords:
+title: "Intune 的常见使用方式 | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9cb6894cefad1da14332f9994fdf45fe2d1e9b9c
+ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
+
 
 ---
 
@@ -67,11 +61,12 @@ Intune 提供了大量预配和管理解决方案，这些解决方案与当今�
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## 允许你的员工从不受管理的公用网亭安全访问 Office 365
-有时，你的员工需要使用你无法管理的设备、应用或浏览器，例如展销会和酒店大堂的公用计算机。 你是否应该允许你的员工从其访问公司电子邮件？ 使用 Intune 和企业移动套件， <!--you have choices. The--> 答案可以是“不”，你只需限制为只允许受组织管理的设备访问电子邮件。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  这将确保经过强身份验证的员工不会无意中将公司数据留在不受信任的计算机上。
+有时，你的员工需要使用你无法管理的设备、应用或浏览器，例如展销会和酒店大堂的公用计算机。 你是否应该允许你的员工从其访问公司电子邮件？ 使用 Intune 和企业移动套件，<!--you have choices. The-->答案可以是“不”，你只需限制为只允许受组织管理的设备访问电子邮件。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  这将确保经过强身份验证的员工不会无意中将公司数据留在不受信任的计算机上。
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

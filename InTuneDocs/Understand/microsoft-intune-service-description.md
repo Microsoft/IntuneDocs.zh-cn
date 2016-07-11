@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 服务说明 | Microsoft Intune
-description:
-keywords:
+title: "服务说明 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
+ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+
 
 ---
 
@@ -38,7 +32,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 如需可以在移动设备上配置的设置的列表，请参阅：
 
--   [Microsoft Intune 中的移动设备管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [Microsoft Intune 中的移动设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
 -   [Configuration Manager 中移动设备的常规设置](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
@@ -62,7 +56,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 * 新的或已更改的 API — 通知你需要进行测试，以确保自定义应用的后向兼容性
 * 系统需求的变化，例如，所需的最低浏览器版本
 * 任何需要你采取操作以启用功能或避免服务中断功能的更新。
--   Microsoft 在我们的每月服务更新中提供了有关新特征、新功能和对现有功能的改进的信息。 通常情况下，Microsoft 会在每个月的中旬左右汇总服务更新。 [Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune.md)中描述了相关更新。
+-   Microsoft 在我们的每月服务更新中提供了有关新特征、新功能和对现有功能的改进的信息。 通常情况下，Microsoft 会在每个月的中旬左右汇总服务更新。 [Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune)中描述了相关更新。
 -   如果要停用 Intune 服务，我们将提前 12 个月通知你。
 
 ## 选择适合你的管理解决方案
@@ -70,24 +64,24 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 -   **Intune 独立配置。** 使用 Intune 中基于 Web 的管理控制台来管理组织中的设备。 可以在没有任何本地 IT 基础结构的情况下使用 Intune，但如果你将 Intune 与 Active Directory 域服务一起使用，则可以将使用域服务管理的域用户帐户用于 Intune。
 
--   **Intune 与 System Center Configuration Manager 的集成** 使用 Configuration Manager 管理控制台来管理企业中的计算机和移动设备。 此配置可帮助你通过单一控制台（Configuration Manager 管理控制台）管理组织的所有设备。 Configuration Manager 支持大量的移动设备、服务器和计算机。 有关详细信息，请参阅 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)中的[如何使用 Configuration Manager 和 Microsoft Intune 管理移动设备](http://go.microsoft.com/fwlink/?LinkID=271118)。  更多帮助你确定适合自己的方法的信息，请参阅 [Ways to do enterprise mobility（实现企业移动性的方法）](/intune/plan-design/ways-to-do-enterprise-mobility.md)。
+-   **Intune 与 System Center Configuration Manager 的集成** 使用 Configuration Manager 管理控制台来管理企业中的计算机和移动设备。 此配置可帮助你通过单一控制台（Configuration Manager 管理控制台）管理组织的所有设备。 Configuration Manager 支持大量的移动设备、服务器和计算机。 有关详细信息，请参阅 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)中的[如何使用 Configuration Manager 和 Microsoft Intune 管理移动设备](http://go.microsoft.com/fwlink/?LinkID=271118)。  有关确定哪种方法最适合你的更多帮助，请参阅[在 Microsoft Intune 独立版和带 Configuration Manager 的混合移动设备管理之间选择](https://technet.microsoft.com/en-us/library/mt706478.aspx)。
 
--   Office 365 提供的移动设备管理，如 [Ways to do enterprise mobility（实现企业移动性的方法）](/intune/plan-design/ways-to-do-enterprise-mobility.md)中所述。
 
 ## 了解有关 Intune 的详细信息
 使用以下资源可了解有关 Intune 的详细信息：
 
 -   [Microsoft Intune 信任中心](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)提供了有关 Intune 的安全性、隐私和合规性实践的信息，并介绍了 Intune 的一些证书。
 
--   [Microsoft Intune 中的移动设备管理功能](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [Microsoft Intune 中的移动设备管理功能](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
 
 ### 另请参阅
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)
 
-[Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune.md)
+[Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

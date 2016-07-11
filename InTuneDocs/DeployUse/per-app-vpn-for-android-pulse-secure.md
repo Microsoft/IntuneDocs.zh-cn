@@ -1,27 +1,18 @@
 ---
-# required metadata
-
-title: 使用 Pulse Secure 的 Per-app VPN（针对 Android）| Microsoft Intune
-description:
-keywords:
+title: "使用 Pulse Secure 的 Per-app VPN（针对 Android）| Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
+ms.sourcegitcommit: 40e5602a4675bd92a85001827fb43426c41ed1e3
+ms.openlocfilehash: fc58e71a9b2279200dee2630aab7dbab727ea128
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: chrisbal
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -35,7 +26,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 2. 通过展开**Android**为新策略选择模板，然后选择**VPN 配置文件(Android 4 及更高版本)**。
 
 3. 在模板中，选择用于**连接类型**的 **Pulse Secure**。
-4. 完成并保存 VPN 配置文件。 有关 VPN 配置文件的更多详细信息，请参阅 [VPN 配置文件](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md)。
+4. 完成并保存 VPN 配置文件。 有关 VPN 配置文件的更多详细信息，请参阅 [VPN 连接](vpn-connections-in-microsoft-intune.md)。
 
 > [!NOTE]
 记下 VPN 配置文件名称，以便在下一步中使用。 例如**MyAppVpnProfile**。
@@ -74,7 +65,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 
 2.  在“管理部署”  对话框中：
 
-    -   **部署策略** - 选择要向其部署策略的一个或多个组，然后单击**添加** &gt; **确定**。
+    -   **部署策略** - 选择要向其部署策略的一个或多个组，然后单击**添加**&gt;**确定**。
 
     -   **要关闭对话框而不部署** - 单击“取消”。
 
@@ -82,6 +73,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

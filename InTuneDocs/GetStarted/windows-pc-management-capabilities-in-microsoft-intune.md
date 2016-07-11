@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows PC 管理功能 | Microsoft Intune
-description:
-keywords:
+title: "Windows PC 管理功能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -39,6 +33,8 @@ ms.suite: ems
 -   **软件许可证管理** - 跟踪有多少软件许可证可用，以及有多少可用的许可证已使用。
 -   **应用部署** - 将软件部署到你管理的 PC。 在使用客户端软件管理 PC 时，一些应用管理功能不可用。
 
+
+Intune 支持最多在 7,000 台 Windows 设备上安装电脑客户端软件。
 
 ## 操作系统要求
 Intune 可以管理运行以下 Windows 版本（x86 和 x64）的 PC：
@@ -77,6 +73,7 @@ Intune 可以管理运行以下 Windows 版本（x86 和 x64）的 PC：
 [Microsoft Intune 中的移动设备管理功能](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

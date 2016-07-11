@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用移动应用管理策略保护应用数据 | Microsoft Intune
-description:
-keywords:
+title: "使用移动应用管理策略保护应用数据 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+
 
 ---
 
@@ -33,15 +27,16 @@ ms.suite: ems
 可使用 Intune 移动应用管理 (MAM) 策略帮助保护公司数据。 由于 Intune MAM 策略可以独立于任何移动设备管理 (MDM) 解决方案使用，所以无论是否在设备管理解决方案中注册设备，都可用它保护公司的数据。 通过实现**应用级别策略**，即可限制对公司资源的访问，并让数据处于 IT 部门的监控范围之内。
 
 MAM 策略支持在以下设备上运行的应用：
+> [!IMPORTANT]
+> 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 连接到本地 Exchange 或 SharePoint 服务的应用不支持 MAM 策略。
 
--   在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中**托管和注册的设备**。 此类别中的设备通常是公司拥有的设备。
 
-  > [!IMPORTANT]
-  > 如果你使用 Intune 管理 iOS 和 Android 设备，可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 连接到本地 Exchange 或 SharePoint 服务的应用不支持 MAM 策略。
+- **在 Microsoft Intune 中托管和注册的设备**。 此类别中的设备通常是公司拥有的设备。
 
 -   **在第三方移动设备管理**解决方案中托管和注册的设备。   此类别中的设备通常是公司拥有的设备。
 
-  > [!NOTE]移动应用管理策略不应与第三方移动应用管理或安全容器解决方案一起使用。
+  > [!NOTE]
+  > 移动应用管理策略不应与第三方移动应用管理或安全容器解决方案一起使用。
 
 -   **非托管设备**。  此类别中的设备通常是员工拥有的设备且未托管或在 Intune 或其他 MDM 解决方案中注册。
 
@@ -137,6 +132,7 @@ MDM 解决方案：
 [使用 Microsoft Intune 创建和部署移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

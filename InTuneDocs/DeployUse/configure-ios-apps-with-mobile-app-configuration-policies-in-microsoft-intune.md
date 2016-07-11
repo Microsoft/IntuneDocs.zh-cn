@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用移动应用配置策略配置 iOS 应用 | Microsoft Intune
-description:
-keywords:
+title: "使用移动应用配置策略配置 iOS 应用 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 无需直接向用户和设备部署这些策略， 而是将策略与应用关联，然后部署应用。 只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
 
-> [!TIP] 此策略类型目前仅在运行 iOS 7.1 和更高版本的设备上可用，并支持下列应用安装类型：
+> [!TIP]
+> 此策略类型目前仅在运行 iOS 7.1 和更高版本的设备上可用，并支持下列应用安装类型：
 > 
 > -   **来自应用商店的托管 iOS 应用程序**
 > -   **iOS 应用包**
@@ -62,7 +57,8 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 4.  在该页面的“移动应用配置策略”  部分，输入或粘贴包含你希望填入框中的应用配置设置的 XML 属性列表。
 
-    > [!TIP] 若要了解有关 XML 属性列表的详细信息，请参阅 iOS 开发人员库中的 [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)（了解 XML 属性列表）。
+    > [!TIP]
+    > 若要了解有关 XML 属性列表的详细信息，请参阅 iOS 开发人员库中的[了解 XML 属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)。
     > 
     > 根据你所配置的应用，XML 属性列表的格式可能有所不同。 若需了解要使用确切格式的详细信息，请联系应用供应商。
     > 
@@ -104,7 +100,8 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 当部署的应用在设备上运行时，将使用你在移动应用配置策略中配置的设置运行。
 
-> [!TIP] 如果一个或多个移动应用配置策略发生冲突，则系统不会强制执行任何策略，并且会在 Intune 管理控制台的**仪表板**中报告冲突。
+> [!TIP]
+> 如果一个或多个移动应用配置策略发生冲突，则系统不会强制执行任何策略，并且会在 Intune 管理控制台的**仪表板**上报告冲突。
 
 ## 移动应用配置 XML 文件的示例格式
 
@@ -139,6 +136,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

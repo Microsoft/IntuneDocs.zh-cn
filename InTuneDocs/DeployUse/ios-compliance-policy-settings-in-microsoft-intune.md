@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 适用于 iOS 设备的合规性策略设置 | Microsoft Intune
-description:
-keywords:
+title: "适用于 iOS 设备的合规性策略设置 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: 591023ea08b669ca69e8cac45e37b5fb2689ddcd
+
 
 ---
 
@@ -72,7 +65,7 @@ ms.suite: ems
 - **选择必须由 Intune 管理的电子邮件配置文件：**
   如果选择了“必须由 Intune 管理电子邮件帐户”设置，请选择“选择”以指定 Intune 电子邮件配置文件。******** 电子邮件配置文件必须存在于设备上。
 
-     有关电子邮件配置文件的详细信息，请参阅 [configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)（使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问）。
+     有关电子邮件配置文件的详细信息，请参阅[通过 Microsoft Intune 使用电子邮件配置文件配置对公司电子邮件的访问](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。
 
 ## 设备运行状况设置
 
@@ -85,6 +78,7 @@ ms.suite: ems
 - **允许的最高 OS 版本：**当设备使用的 OS 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。 除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

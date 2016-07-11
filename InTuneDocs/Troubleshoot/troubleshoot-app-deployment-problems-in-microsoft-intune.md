@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 应用部署问题疑难解答 | Microsoft Intune
-description:
-keywords:
+title: "应用部署问题疑难解答 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
+ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+
 
 ---
 
@@ -104,11 +97,13 @@ ms.suite: ems
 |0x80073CF0|无法打开包。|可能的原因：<br /><br />-   未对包进行签名。<br />-   发布者名称与签名证书使用者不匹配。<br /><br />有关详细信息，请检查 AppxPackagingOM 事件日志。|
 |0x80073CF3|包未通过更新、依赖关系或冲突验证|可能的原因：<br /><br />-   传入的包与已安装的包冲突。<br />-   找不到指定的包依赖关系。<br />-   包不支持正确的处理器体系结构。<br /><br />有关详细信息，请检查 AppXDeployment-Server 事件日志。|
 |0x80073CFB|已经安装了提供的包，阻止重新安装此包|如果你正在安装的包与已安装的包并不完全相同，则可能会收到此错误。 确认数字签名也是包的一部分。 对包进行重新构建或者重新签名时，该包与以前安装的包在位方面不再完全相同。 用于修复此错误的两个可能的选项如下所示：<br /><br />-   递增应用的版本号，然后对包进行重新构建并重新签名。<br />-   在安装新包之前，请删除系统上每个用户的旧包。|
+|0x87D1041C|应用程序安装成功，但未检测到应用程序。|- 用户从公司门户安装了应用，然后直接从设备中卸载了应用。 从公司门户重新安装应用。<br /><br />- 由 Intune 识别的业务线应用版本号与设备上安装的版本可能不匹配。 确保 Intune 具有正确版本并重新安装该应用。|
 
 ### 后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 
