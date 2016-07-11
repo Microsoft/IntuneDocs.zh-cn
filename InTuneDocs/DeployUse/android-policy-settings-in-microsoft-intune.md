@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android 和 Samsung KNOX 配置策略设置 | Microsoft Intune
-description:
-keywords:
+title: "Android 和 Samsung KNOX 配置策略设置 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -55,6 +49,7 @@ ms.suite: ems
 |**“记住密码历史记录”** – **“防止重用以前的密码”**|防止重复使用以前用过的密码。|是|是|
 |**密码质量**|选择所需的密码复杂性级别以及是否可以使用生物识别设备。|是|是|
 |**允许指纹解锁**|允许使用指纹对设备解锁。|否|是|
+|**允许 Smart Lock 和其他信任代理**<br>（Android 5 及更高版本）|让你控制兼容 Android 设备上的 Smart Lock 功能。 如果设备处于可信位置（例如当它连接到特定蓝牙设备时，或者在 NFC 标记附近时），则此手机功能（有时称为信任代理）使你可以禁用或绕过设备锁屏界面密码。 可以使用此设置防止最终用户配置 Smart Lock。|是|否|
 
 ### 加密设置
 
@@ -73,7 +68,7 @@ ms.suite: ems
 
 ### 云设置 – 文档和数据
 
-|设置名|详细信息|Android 和 Samsung KNOX|Android 4.0+|
+|设置名|详细信息|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**允许 Google 备份**|允许使用 Google 备份。|否|是|
 
@@ -95,7 +90,7 @@ ms.suite: ems
 
 ### 应用设置 - 应用程序
 
-|设置名|Android 4.0+|Samsung KNOX|
+|设置名|详细信息|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**允许 Google Play 商店**|允许用户访问设备上的 Google Play 商店。|否|是|
 
@@ -179,7 +174,8 @@ ms.suite: ems
 
 此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。
 
-> [!NOTE]目前，Android 自定义策略仅支持为包含预共享密钥的 Android 设备配置 Wi-Fi 设置。
+> [!NOTE]
+> 目前，Android 自定义策略仅支持为包含预共享密钥的 Android 设备配置 Wi-Fi 设置。
 
 ### 常规设置
 
@@ -257,6 +253,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 
