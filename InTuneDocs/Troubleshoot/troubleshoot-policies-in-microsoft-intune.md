@@ -46,6 +46,7 @@ ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
 
 ![Intune 设备策略](../media/Intune-Device-Policy-v.2.jpg)
 
+> [!NOTE]
 > [!NOTE] 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
 
 ## 策略刷新和更新间隔
@@ -68,6 +69,7 @@ ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
 
 2.  等待 20 分钟，以便删除客户端软件。
 
+    > [!NOTE]
     > [!NOTE]请勿尝试从“程序和功能”中删除客户端。
 
 3.  在开始菜单上，键入 **UAC** 以打开用户帐户控制设置。
@@ -110,6 +112,6 @@ Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
