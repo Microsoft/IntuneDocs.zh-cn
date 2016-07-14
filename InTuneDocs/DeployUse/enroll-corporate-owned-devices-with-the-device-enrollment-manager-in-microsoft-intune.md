@@ -91,6 +91,6 @@ ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
 -   已删除的设备注册管理员帐户与注册的设备的关系仍存在，但不可以注册任何其他设备
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

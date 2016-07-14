@@ -69,6 +69,6 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
