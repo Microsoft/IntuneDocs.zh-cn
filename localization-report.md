@@ -1468,9 +1468,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\android-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/c42bb9f578b33b51c6f64372231b1b97df3211d9/InTuneDocs/DeployUse/android-compliance-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [android-compliance-policy-settings-in-microsoft-intune.162f6c9515fd2740c9f9d5f0c5c09a27a24b5f76.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/f176bca41c0acae821a2a5014ca4a98d801cbe46/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/android-compliance-policy-settings-in-microsoft-intune.162f6c9515fd2740c9f9d5f0c5c09a27a24b5f76.zh-cn.xlf)
-* Current Handback Datetime: 2016-07-03 00:37:12
+* Current Target File: [InTuneDocs\DeployUse\android-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/1247619fc770fba93aadb37a5d739a0f2093e011/InTuneDocs/DeployUse/android-compliance-policy-settings-in-microsoft-intune.md)
+* Current Handback File: [android-compliance-policy-settings-in-microsoft-intune.162f6c9515fd2740c9f9d5f0c5c09a27a24b5f76.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/127504a8ad1ee58cf94861c7ba6935a5ad17ac69/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/android-compliance-policy-settings-in-microsoft-intune.162f6c9515fd2740c9f9d5f0c5c09a27a24b5f76.zh-cn.xlf)
+* Current Handback Datetime: 2016-07-15 02:38:12
 * [Back to Top](#report-top)
 
 ##### <a name='bbb2d56753d47e68aeba1e5f17188f1f7a740c6e13'></a> Source: [InTuneDocs\DeployUse\android-mam-policy-settings.md](https://github.com/Microsoft/IntuneDocs-pr/blob/359f76daa35a14e4107a9e03c6a1b1f4d1215777/InTuneDocs/DeployUse/android-mam-policy-settings.md)
@@ -7303,9 +7303,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\use-managed-apps-on-your-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/fba38fefddfa270c47b1317a602954d5bfcad9aa/InTuneDocs/EndUser/use-managed-apps-on-your-device-ios.md)
-* Current Handback File: [use-managed-apps-on-your-device-ios.3553c8430e8520ef84ac4ed83673f88b6026b0e9.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/f7bcc21e49f10054c5b78c385e1f5b68617e2b98/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/use-managed-apps-on-your-device-ios.3553c8430e8520ef84ac4ed83673f88b6026b0e9.zh-cn.xlf)
-* Current Handback Datetime: 2016-07-02 19:40:32
+* Current Target File: [InTuneDocs\EndUser\use-managed-apps-on-your-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/1247619fc770fba93aadb37a5d739a0f2093e011/InTuneDocs/EndUser/use-managed-apps-on-your-device-ios.md)
+* Current Handback File: [use-managed-apps-on-your-device-ios.3553c8430e8520ef84ac4ed83673f88b6026b0e9.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/127504a8ad1ee58cf94861c7ba6935a5ad17ac69/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/use-managed-apps-on-your-device-ios.3553c8430e8520ef84ac4ed83673f88b6026b0e9.zh-cn.xlf)
+* Current Handback Datetime: 2016-07-15 02:38:12
 * [Back to Top](#report-top)
 
 ##### <a name='95b71833faadaf1af22e690dc6cf8cdd684ec6d3447'></a> Source: [InTuneDocs\EndUser\use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
@@ -8703,14 +8703,14 @@
 
 ##### <a name='c58380143deb78c0f9405620f2ef78bffd072441550'></a> Source: [InTuneDocs\includes\accessibility11-c_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-c_md.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\accessibility11-c_md.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/fba38fefddfa270c47b1317a602954d5bfcad9aa/InTuneDocs/includes/accessibility11-c_md.md)
+* Target File: [InTuneDocs\includes\accessibility11-c_md.md](https://github.com/Microsoft/IntuneDocs-pr.zh-cn/blob/1247619fc770fba93aadb37a5d739a0f2093e011/InTuneDocs/includes/accessibility11-c_md.md)
 * Handoff File: [accessibility11-c_md.744c60cfcc912c0a657fc9e2c2a841a0f03c5c1d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ca515ed7992980b52d4a313f705bcd40b7feefbf/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/accessibility11-c_md.744c60cfcc912c0a657fc9e2c2a841a0f03c5c1d.zh-cn.xlf)
 * Handoff Datetime: 2016-06-27 12:11:24
 * Handoff Reason: Include
 * Archive File: [accessibility11-c_md.744c60cfcc912c0a657fc9e2c2a841a0f03c5c1d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ef73adf822b744c7ce02e653dc12ce530e4b264a/ol-handoff/Microsoft/IntuneDocs-pr.zh-cn/master/archive/accessibility11-c_md.744c60cfcc912c0a657fc9e2c2a841a0f03c5c1d.zh-cn.xlf)
 * Archive Datetime: 2016-07-02 01:53:32
-* Handback File: [accessibility11-c_md.744c60cfcc912c0a657fc9e2c2a841a0f03c5c1d.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/f7bcc21e49f10054c5b78c385e1f5b68617e2b98/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/accessibility11-c_md.744c60cfcc912c0a657fc9e2c2a841a0f03c5c1d.zh-cn.xlf)
-* Handback Datetime: 2016-07-02 19:40:32
+* Handback File: [accessibility11-c_md.744c60cfcc912c0a657fc9e2c2a841a0f03c5c1d.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/127504a8ad1ee58cf94861c7ba6935a5ad17ac69/ol-handback/Microsoft/IntuneDocs-pr.zh-cn/master/accessibility11-c_md.744c60cfcc912c0a657fc9e2c2a841a0f03c5c1d.zh-cn.xlf)
+* Handback Datetime: 2016-07-15 02:38:12
 * [Back to Top](#report-top)
 
 ##### <a name='82375cf4028a8e505aaed37746ee881784655804551'></a> Source: [InTuneDocs\includes\accessibility11-d.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-d.md)
