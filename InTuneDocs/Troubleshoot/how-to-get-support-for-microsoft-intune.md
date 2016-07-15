@@ -34,6 +34,7 @@ ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
 
     -   针对所有其他 Intune 问题，请选择“移动设备管理” 此选项还涵盖 Office 365 MDM 和带有 Intune 的 System Center Configuration Manager。
 
+    > [!NOTE]
     > [!NOTE]若要查看所有类别，可能需单击列表底部的**更多**
 
 3.  在“识别问题”页上，选择需要获得帮助的“功能”和“症状”。 系统会要求你提供“问题摘要”和“问题详细信息”。
@@ -51,7 +52,8 @@ ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
 若要跟踪请求，请转到 [Office 365 管理中心](https://portal.office.com/admin/default.aspx)。 在“创建服务请求”列表底部，单击“查看所有支持票证”。 默认情况下，你将看到所有处于未结状态的服务请求。 若要更改所显示的服务请求，例如，查看已结请求，请单击顶部导航栏中的筛选器图标，并选择你的首选视图。
 
 > [!NOTE]
-> **若使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与你的合作伙伴联系，或访问 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解决方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)以查找丰富的自助式材料（可通过电话或在线建立支持请求）。
+> [!NOTE]
+**若使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与你的合作伙伴联系，或访问 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解决方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)以查找丰富的自助式材料（可通过电话或在线建立支持请求）。
 >
 > System Center Configuration Manager 或 System Center Endpoint Protection 的技术支持需要付款，或者它将计为你现有的许可协议或顶级支持协议的递减。
 
@@ -138,6 +140,6 @@ ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
