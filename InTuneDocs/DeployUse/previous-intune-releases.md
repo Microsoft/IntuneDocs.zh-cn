@@ -420,10 +420,10 @@ Intune 支持移动应用程序管理 (MAM) 策略，有助于防止企业数据
 
 >[!div class="step-by-step"]
 
->[&larr; **Intune 中的新增功能**](whats-new-in-microsoft-intune.md)    
+>[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
