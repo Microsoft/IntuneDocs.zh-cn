@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Intune App SDK 的优点 |Microsoft Intune
-description:
-keywords:
+title: "Intune App SDK 的优点 |Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
+
 
 ---
 
 # Intune App SDK 概述
-Intune 应用 SDK 适用于 iOS 和 Android 平台，并允许通过 Microsoft Intune 使用移动应用管理功能。 此外，我们还尽量减少开发人员需要进行的代码更改次数。 你会发现你可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，你可以利用我们的 API，针对需要应用参与的功能来自定义应用行为。 
-你启用应用后，IT 管理员即可将策略部署到 Intune 托管应用，并利用这些功能保护其公司数据。
+Intune 应用 SDK 适用于 iOS 和 Android 平台，并允许通过 Microsoft Intune 使用移动应用管理功能。 此外，我们还尽量减少开发人员需要进行的代码更改次数。 你会发现你可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，你可以利用我们的 API，针对需要应用参与的功能来自定义应用行为。 你启用应用后，IT 管理员即可将策略部署到 Intune 托管应用，并利用这些功能保护其公司数据。
 
 ## 常规功能
 
@@ -77,6 +70,7 @@ Microsoft Intune App SDK 包括多项处于“预览”状态的功能。 你可
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

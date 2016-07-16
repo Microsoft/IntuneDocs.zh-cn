@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 公司资源访问权限问题疑难解答 | Microsoft Intune
-description:
-keywords:
+title: "公司资源访问权限问题疑难解答 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
+ms.openlocfilehash: ed14e92d48a2604d16ceee8b844ae5cc0c45f051
+
 
 ---
 
@@ -377,6 +371,7 @@ ms.suite: ems
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

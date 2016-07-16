@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: VPN 配置文件的自定义配置 | Microsoft Intune
-description:
-keywords:
+title: "VPN 配置文件的自定义配置 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d5c48a4cead6250864f5b10444d99d062441bd99
+ms.openlocfilehash: 7e7c50552b5a61804e759a7ec5443029d4bd4584
+
 
 ---
 
@@ -50,7 +44,8 @@ ms.suite: ems
 
 如果你选择的是已部署的策略，则可以在策略列表的下半部分查看有关部署的详细信息。
 
-##自定义 VPN 配置文件配置的 URI 设置示例。以下是用于在名为 Contoso 的虚构公司为 VPN 创建自定义配置的 URI 值的示例条目。 有关详细信息，例如每个条目的数据类型，请参阅 [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+##自定义 VPN 配置文件配置的 URI 设置示例
+以下是用于在名为 Contoso 的虚构公司为 VPN 创建自定义配置的 URI 值的示例条目。 有关详细信息，例如每个条目的数据类型，请参阅 [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -93,7 +88,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 ## PulseSecure 上的 Android 每应用 VPN 的 URI 设置
 ### 包列表的自定义 URI 
 -  数据类型 = 字符串
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
+-  OMA-URI =./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
 -  值 = 分隔符分隔的包列表。
    - 分隔符：分号 (;)、冒号 (:)、逗号 (,)、竖线 (|)
 
@@ -116,6 +111,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 （Microsoft Intune 中的 VPN 连接）[vpn-connections-in-microsoft-intune.md]
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

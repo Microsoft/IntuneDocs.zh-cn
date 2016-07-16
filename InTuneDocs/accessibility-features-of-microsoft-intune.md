@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 辅助功能 | Microsoft Intune
-description:
-keywords:
+title: "辅助功能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: d34e754e3815b43f4b5b74d24711cf55aacfc757
+
 
 ---
 
@@ -48,11 +42,12 @@ ms.suite: ems
 |折叠菜单中的列表|Alt + 向上键|
 |移到下一个应用程序组|向上键|
 |显示所选设备的操作|向右键|
-> 可使用标准 Internet Explorer 键盘快捷方式在 [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] 门户中导航。
+> [!NOTE]
+> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] 可使用标准 Internet Explorer 键盘快捷方式在门户中导航。
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

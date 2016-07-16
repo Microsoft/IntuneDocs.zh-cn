@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Microsoft Intune 设置 Android 管理 | Microsoft Intune
-description:
-keywords:
+title: "使用 Microsoft Intune 设置 Android 管理 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: lacranda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f1dc713099c982d6e32c87b814dd3f55b1656eda
+ms.openlocfilehash: 5f65887345c1a650c6d80863e42f447035c789f7
+
 
 ---
 
@@ -51,6 +45,7 @@ Android 移动设备允许用户使用从 Google Play 可用的公司门户应�
 [为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

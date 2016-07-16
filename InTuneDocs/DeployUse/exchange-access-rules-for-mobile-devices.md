@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune 管理的移动设备的 Exchange 访问规则 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune 管理的移动设备的 Exchange 访问规则 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+
 
 ---
 
@@ -45,19 +39,20 @@ ms.suite: ems
 
 ## 创建默认访问规则
 
-1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com) &gt; “策略” &gt; “移动设备的 Exchange 访问”。
+1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)&gt;“策略”&gt;“移动设备的 Exchange 访问”中。
 
-2.  在“默认规则”  列表中，选择要应用于规则或个人例外未涵盖的所有移动设备的访问规则。 选择“保存”
+2.  在“默认规则”  列表中，选择要应用于规则或个人例外未涵盖的所有移动设备的访问规则。 选择“保存”。
 
 下面的过程描述如何创建自定义规则。
 
 ## 创建自定义访问规则
 
-1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com) &gt; “策略” &gt; “移动设备的 Exchange 访问”。
+1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)&gt;“策略”&gt;“移动设备的 Exchange 访问”中。
 
-2.  在“自定义规则”列表中，选择“添加规则”并创建自定义规则。 选择“保存”
+2.  在“自定义规则”列表中，选择“添加规则”并创建自定义规则。 选择“保存”。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

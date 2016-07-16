@@ -1,5 +1,5 @@
 Windows 的辅助功能
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

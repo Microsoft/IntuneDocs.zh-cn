@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 为 Windows 电脑添加应用 | Microsoft Intune
-description:
-keywords:
+title: "为 Windows 电脑添加应用 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
+ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+
 
 ---
 
@@ -38,7 +32,8 @@ ms.suite: ems
 
 1.  在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，选择“应用”&gt;“添加应用”启动 Intune 软件发行者。
 
-    > [!TIP]在该发行者启动前，你可能需要先输入 Intune 用户名和密码。
+    > [!TIP]
+    > 在该发行者启动前，你可能需要先输入 Intune 用户名和密码。
 
 
 
@@ -94,6 +89,7 @@ ms.suite: ems
 
 创建应用后，下一步是进行部署。 若要获取详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

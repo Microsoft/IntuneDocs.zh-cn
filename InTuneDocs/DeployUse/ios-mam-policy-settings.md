@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS MAM 策略设置 | Microsoft Intune
-description:
-keywords:
+title: "iOS MAM 策略设置 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+
 
 ---
 
@@ -83,7 +77,7 @@ ms.suite: ems
   当你启用此设置时，最终用户必须设置并使用 PIN 才能访问其设备。  如果未为设备访问设置 PIN，则将不启动应用，并将通过“公司要求你先启用设备 PIN 才能访问此应用程序”消息提示最终用户设置 PIN。
 
   **默认值 - 未选择加密选项。**
-- **ContactSyncDisabled：**选择“是”以防止联系人信息同步到设备上的本机通讯簿应用。 如果选择“否”，应用会将联系人信息保存到设备上的本机通讯簿应用中。
+- **禁用联系人同步：**选择“是”，阻止联系人信息同步到设备上的本机通讯簿应用。 如果选择“否”，应用会将联系人信息保存到设备上的本机通讯簿应用中。
 
   如果通过执行选择性擦除来删除公司数据，则将删除从应用直接同步到本机通讯簿的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 此设置目前仅适用于 **Microsoft Outlook** 应用。
 
@@ -117,6 +111,7 @@ ms.suite: ems
   **默认值 = 90 天**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

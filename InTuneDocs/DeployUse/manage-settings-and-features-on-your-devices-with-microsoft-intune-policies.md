@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用策略管理设备上的设置和功能 | Microsoft Intune
-description:
-keywords:
+title: "使用策略管理设备上的设置和功能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 2.  选择你想要的策略，然后选择使用策略的推荐设置（如果可用；可在稍后更改这些设置），或者使用自己的设置创建自定义策略。
 
-    > [!TIP]要帮助选择正确的策略，请参阅 [Microsoft Intune 策略参考](microsoft-intune-policy-reference.md)。
+    > [!TIP]
+    > 有关选择正确策略的帮助，请参阅 [Microsoft Intune 策略参考](microsoft-intune-policy-reference.md)。
 
 3.  准备好后，选择“创建策略”。
 
@@ -119,7 +114,7 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 在这种情况下，设备将按照以下设置在下次计划的签入到 Intune 服务时获取策略：
 
-- iOS - 每 6 小时
+- iOS 和 Mac OS X：- 每 6 小时
 - Android - 每 8 小时
 - Windows Phone - 每 8 小时
 - 已注册的 Windows RT 设备 - 每 24 小时
@@ -127,10 +122,10 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 如果设备刚进行注册，则签入会更频繁，具体如下：
 
-- iOS - 6 小时内每 15 分钟一次，之后每 6 小时一次
+- iOS 和 Mac OS X - 6 小时内每 15 分钟一次，之后每 6 小时一次
 - Android - 15 分钟内每 3 分钟一次，接下来的 2 小时内每 15 分钟一次，之后每 8 小时一次
 - Windows Phone - 15 分钟内每 5 分钟一次，接下来的 2 小时内每 15 分钟一次，之后每 8 小时一次
-- 注册为设备的 Windows PC - 30 分钟内每 3 分钟一次，之后每 24 小时一次
+- 注册为设备的 Windows 电脑 - 30 分钟内每 3 分钟一次，之后每 8 小时一次
 
 用户还可以启动公司门户应用并同步设备，立即随时检查策略。
 
@@ -149,7 +144,7 @@ Intune 策略划分为以下类别。 你使用的类别会影响你创建和部
 
 -   如果针对不同合规性策略中的相同设置进行评估，则应用限制最严格的合规性策略设置
 
--   如果针对不同配置策略中的相同设置进行评估，则应用限制最严格的配置策略设置
+-   如果配置策略设置与不同配置策略中的设置冲突，则将在 Intune 控制台中显示此冲突。 必须手动解决此类冲突。
 
 ### 移动应用程序管理 (MAM) 策略相互冲突时会发生什么情况？ 哪一种策略将应用于应用？
 除数字输入字段（如重置之前尝试 PIN）外，冲突值是移动应用程序管理策略中限制最严格的设置。  数字输入字段将设定为你使用建议的设置选项在控制台中创建 MAM 策略时一样的值。
@@ -178,7 +173,25 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载，它
         - 所需的密码类型
         - 密码过期（天数）
         - 记住密码历史记录
-        - 擦除设备前允许的重复登录失败次数 - 需要提供密码之前处于非活动状态的分钟数 - 所需密码类型 - 最小字符集数 - 允许照相机 - 需要对移动设备加密 - 允许可移动存储 - 允许 Web 浏览器 - 允许应用商店 - 允许抓屏 - 允许地理位置 - 允许 Microsoft 帐户 - 允许复制和粘贴 - 允许 Wi-Fi tethering - 允许自动连接到免费 Wi-Fi 热点 - 允许 Wi-Fi 热点报告 - 允许恢复出厂设置 - 允许蓝牙 - 允许 NFC - 允许 Wi-Fi
+        - 擦除设备前允许的重复登录失败次数
+        - 需要提供密码之前处于非活动状态的分钟数
+        - 所需密码类型 - 最小字符集数
+        - 允许照相机
+        - 需要对移动设备加密
+        - 允许可移动存储
+        - 允许 Web 浏览器
+        - 允许应用程序商店
+        - 允许屏幕捕获
+        - 允许地理位置
+        - 允许 Microsoft 帐户
+        - 允许复制和粘贴
+        - 允许 Wi-Fi tethering
+        - 允许自动连接到免费 Wi-Fi 热点
+        - 允许 Wi-Fi 热点报告
+        - 允许恢复出厂设置
+        - 允许蓝牙
+        - 允许 NFC
+        - 允许 Wi-Fi
     
     - **iOS** - 删除所有设置，但不包括：
         - 允许语音漫游
@@ -200,9 +213,10 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载，它
 
 ### 在哪里可以找到有关排查策略问题的帮助？
 
-请参阅 [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune)（Microsoft Intune 中的故障排除政策）。
+请参阅 [Microsoft Intune 中的故障排除策略](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)。
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 管理通过批量购买计划购买的 iOS 应用 | Microsoft Intune
-description:
-keywords:
+title: "管理通过批量购买计划购买的 iOS 应用 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Microsoft Intune 可帮助你管理通过这样的程序购买的应用，即从
 
 具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple 批量购买计划。 继续安装应用前，他们必须执行此操作。
 
-> [!TIP]查看**VPP 条款状态**列以查看向其部署应用的每个用户的接收状态。
+> [!TIP]
+> 查看 **VPP 条款状态**列以查看向其部署应用的每个用户的接受状态。
 
 如果没有更多的许可证可用，则部署将失败。
 
 ## 监视 Apple VPP 应用
 你可以从**托管软件**&gt;**批量购买的应用**节点中的**应用**工作区内监视已部署的 VPP 应用以及使用的许可证数。
 
-> [!TIP]你也可以使用应用**筛选器**来检查每个应用的安装状态。
+> [!TIP]
+> 你也可以使用应用“筛选器”来检查每个应用的安装状态。
 
 ### 另请参阅
 [在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

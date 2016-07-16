@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 客户端安装程序疑难解答 | Microsoft Intune
-description:
-keywords:
+title: "客户端安装程序疑难解答 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
+ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 -   如果 [Microsoft Intune 管理员控制台](https://manage.microsoft.com/)中未显示计算机的客户端软件部署警报，请检查计算机的网络连接和代理配置，并确保计算机能够与服务 URL [https://manage.microsoft.com](https://manage.microsoft.com/) 通信。 然后重新安装客户端软件。
 
--   当出现客户端软件部署故障警报时，你可以通过在  “管理员”工作区中配置通知规则向选中的收件人发送邮件。 有关详细信息，请参阅[通过 Microsoft Intune 警报获取通知](/intune/deploy-use/get-notified-by-microsoft-intune-alerts)。
+-   当出现客户端软件部署故障警报时，你可以通过在  “管理员”工作区中配置通知规则向选中的收件人发送邮件。 有关详细信息，请参阅[通过 Microsoft Intune 警报获取通知](/intune/deploy-use/get-notified-by-alerts)。
 
 -   如果客户端软件部署失败，Intune 会显示重要警报“客户端软件部署故障”。 这将显示在“系统概述”页面和 [Microsoft Intune 管理员控制台](https://manage.microsoft.com/)的“警报”页面。 下面介绍了如何检查警报：
 
@@ -56,23 +50,23 @@ ms.suite: ems
 
 ## 计算机注册包未下载
 **问题：**尝试注册计算机时遇到以下问题：
--  注册包下载失败 
+-  注册包下载失败
 -  出现下载对话框但超时
 
 **解决方法：**在下载使用的浏览器上，确保已在下载进行期间启用了下载，且加密文件可以保存到本地磁盘。
 
 ## 客户端安装挂起，错误代码 0x80040154
 **问题：**
- 
+
 -  注册挂起期间的客户端安装。
 
--  无法注册设备 
+-  无法注册设备
 
 -  WindowsUpdate.log 中的错误 0x80040154
 
 原因可能是电脑上缺少关键软件更新。
 
-**解决方法：**确保你的软件更新策略启用了关键更新的安装，如[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述 
+**解决方法：**确保你的软件更新策略启用了关键更新的安装，如[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述
 
 
 ## policyplatform.log 中与 Microsoft Intune 策略相关的错误
@@ -84,7 +78,8 @@ ms.suite: ems
 
 2.  等待 20 分钟，以便删除客户端软件。
 
-    > [!NOTE]请勿尝试从“程序和功能”中删除客户端。
+    > [!NOTE]
+    > 请勿尝试从“程序和功能”中删除客户端。
 
 3.  在开始菜单上，键入 **UAC** 以打开用户帐户控制设置。
 
@@ -130,6 +125,7 @@ ms.suite: ems
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

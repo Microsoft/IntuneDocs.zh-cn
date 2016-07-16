@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Exchange ActiveSync 和 Microsoft Intune 管理移动设备 | Microsoft Intune
-description:
-keywords:
+title: "使用 Exchange ActiveSync 和 Microsoft Intune 管理移动设备 | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+
 
 ---
 
@@ -41,14 +35,16 @@ Exchange 需要一组规则，这些规则用于定义当移动设备尝试连�
 -   [将 Intune 服务配置为托管 Exchange 的服务连接器](intune-service-to-service-exchange-connector.md)
 
 ## 将策略应用于 Exchange 管理的移动设备
-可以通过 Intune 控制台应用策略设置，请参阅 [Manage settings and features on your devices with Microsoft Intune policies（使用 Microsoft Intune 策略管理设备上的设置和功能）](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。 有关特定移动设备所支持的 Exchange ActiveSync 策略设置和功能的详细列表，请参阅 [Exchange ActiveSync Client Comparison Table（Exchange ActiveSync 客户端对照表）](http://go.microsoft.com/fwlink/?LinkId=247270)。
+可以通过 Intune 控制台应用策略设置，请参阅 [Manage settings and features on your devices with Microsoft Intune policies（使用 Microsoft Intune 策略管理设备上的设置和功能）](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。 有关特定移动设备所支持的 Exchange ActiveSync 策略设置和功能的详细列表，请参阅 [Exchange ActiveSync Client Comparison Table（](http://go.microsoft.com/fwlink/?LinkId=247270)Exchange ActiveSync 客户端对照表）。
 
+> [!NOTE]
 > 将 Intune 连接到 Microsoft Exchange 环境后，针对通过 Intune 管理的所有用户的 EAS 策略将重置为 Microsoft Exchange 服务器上的当前的默认策略，除非在 Intune 中定义了更加具体的策略。
 
 ## 从移动设备中擦除公司数据
 最后，如果公司数据不再使用，或者如果设备丢失或被盗，则可以[从 EAS 管理的移动设备中擦除公司数据](wipe-for-exchange-managed-mobile-devices.md)。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

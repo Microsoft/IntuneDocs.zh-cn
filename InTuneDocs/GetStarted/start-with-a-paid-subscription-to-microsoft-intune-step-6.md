@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 创建策略并发布应用程序 | Microsoft Intune
-description:
-keywords:
+title: "创建策略并发布应用程序 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+
 
 ---
 
@@ -63,7 +57,8 @@ Before using Intune to deploy apps, make sure that you have the appropriate lice
 
     ![admin-console-apps-workspace](./media/apps.png)
 
-    > [!NOTE] 首次启动 **Intune 软件发行者**时，安装应用程序时会出现短暂延迟。
+    > [!NOTE]
+    > 首次启动 **Intune 软件发行者** 时，安装应用程序时会出现短暂延迟。
 
 2.  查看安全警告并选择**运行**。
 
@@ -114,6 +109,7 @@ Skype 应用现已可从公司门户中在移动设备上安装，但首先你�
 >[&larr; **组织用户和设备**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**自定义公司门户** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 根据管理员角色自定义控制台视图 | Microsoft Intune
-description:
-keywords:
+title: "根据管理员角色自定义控制台视图 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 52a77e50b3dde24ba270766d4472bdd6176cc415
+
 
 ---
 
@@ -30,9 +24,9 @@ ms.suite: ems
 
 ## 如何创建自定义视图
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“管理” &gt; “服务管理员”
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”&gt;“服务管理员”。
 
-2.  从服务管理员列表中，选择要更改其指定内容的用户，然后选择“管理访问权限”
+2.  从服务管理员列表中，选择要更改其指定内容的用户，然后选择“管理访问权限”。
 
 3.  在 **“管理访问权限”** 对话框中，选择要授予所选用户的访问级别。 可以选择：
 
@@ -44,7 +38,7 @@ ms.suite: ems
 
     **支持人员 - 组节点**将管理员可以查看的内容和执行的操作限制为：
 
-    -   查看用户和设备的列表。 管理员不能使用筛选器来修改视图。 但你可以使用组筛选来修改管理员可以看到的内容。 有关详细信息，请参阅[通过 Microsoft Intune 使用组来管理用户和设备](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+    -   查看用户和设备的列表。 管理员不能使用筛选器来修改视图。 但你可以使用组筛选来修改管理员可以看到的内容。 有关详细信息，请参阅[通过 Microsoft Intune 使用组来管理用户和设备](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)。
 
     -   打印用户和设备的列表
 
@@ -73,6 +67,7 @@ ms.suite: ems
 当你配置的管理员下次打开 Intune 管理控制台时，他们将获得你指定的访问级别。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

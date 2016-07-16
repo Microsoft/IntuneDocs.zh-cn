@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 管理警报 | Microsoft Intune
-description:
-keywords:
+title: "管理警报 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+
 
 ---
 
@@ -36,6 +31,7 @@ ms.suite: ems
 
     -   要显示警报的摘要数据，请单击“警报”&gt;“概述”。 在“警报概述”页上，“警报类型摘要”区域显示警报的摘要。 严重警报显示在最前。 你可以单击这些警报中的链接向下钻取到更详细的信息。
 
+        > [!NOTE]
         > 在某些情况下，警报类型可能会在“警报类型摘要”列表中出现多次。
         > 
         > 例如，列表中可能会出现“逻辑磁盘可用空间”警报类型的以下实例：
@@ -60,7 +56,7 @@ ms.suite: ems
 
 #### 查看和管理公告板警报
 
-1.  在 Intune 管理控制台中，单击“系统概述”
+1.  在 Intune 管理控制台中，单击“系统概述”。
 
 2.  如果有重要服务公告，它们将显示在“公告板”区域。
 
@@ -71,7 +67,7 @@ ms.suite: ems
 
 #### 查看订阅的状态
 
-1.  在 Intune 管理控制台中，单击“系统概述”
+1.  在 Intune 管理控制台中，单击“系统概述”。
 
 2.  在“系统状态”区域中，你可以检查各个 Microsoft Intune 组件的状态。 许多项目都包含链接，使你能向下钻取来了解进一步的信息。 例如，在“Endpoint Protection”下，如果选择实例数，则将显示“Endpoint Protection”工作区，其中包含检测到的恶意软件的列表。 如果选择设备数，则将显示“组”工作区，其中包含已发现的具有恶意软件的设备列表。
 
@@ -104,13 +100,14 @@ ms.suite: ems
 
     名称和有关警报的附加信息将出现在管理列表窗格中。 有关所选警报的详细信息将出现在预览窗格中。
 
-3.  要重新激活所选的警报，请单击“重新激活警报”
+3.  要重新激活所选警报，请单击“重新激活警报”。
 
 ### 另请参阅
-[通过 Microsoft Intune 警报获取通知](get-notified-by-microsoft-intune-alerts.md)
+[通过 Microsoft Intune 警报获取通知](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

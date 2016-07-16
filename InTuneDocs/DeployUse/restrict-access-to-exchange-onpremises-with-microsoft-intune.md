@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 限制对 Exchange Online 内部部署和旧版 Exchange Online Dedicated 的电子邮件访问| Microsoft Intune
-description:
-keywords:
+title: "限制对 Exchange Online 内部部署和旧版 Exchange Online Dedicated 的电子邮件访问| Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+
 
 ---
 
@@ -75,7 +69,8 @@ ms.suite: ems
 -   iOS 上的本机电子邮件应用。
 
 -   Android 4 或更高版本上的本机电子邮件应用
-> [!NOTE]不支持 Android 和 iOS 上的 Microsoft Outlook 应用。
+> [!NOTE]
+> 不支持 Android 和 iOS 上的 Microsoft Outlook 应用。
 
 ## 对 PC 的支持
 
@@ -104,7 +99,8 @@ Windows 8 和更高版本上的**邮件**应用程序（向 [!INCLUDE[wit_nextre
 >如果想在授予电子邮件访问权限之前先阻止所有设备，请选择“阻止访问或隔离”规则。 默认规则将适用于所有设备类型，因此你作为平台例外配置的设备类型以及不受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 支持的设备类型也会受到影响。
 
   - **用户通知**：除了从 Exchange 发送的通知电子邮件之外，Intune 还将发送一封包含取消阻止设备的步骤的电子邮件。 你可以根据需求来自定义编辑默认消息。 由于已将包含修正说明的 Intune 通知电子邮件发送到用户的 Exchange 邮箱，因此，如果用户的设备在接收电子邮件消息之前已被阻止，则用户可以使用取消阻止的设备或其他方法来访问 Exchange 并查看该消息。 当“默认规则”设置为阻止或隔离时尤其如此。  在这种情况下，最终用户必须转到其应用商店，下载 Microsoft 公司门户应用并注册其设备。 这适用于 iOS、Windows 和 Samsung KNOX 设备。  对于不运行 Samsung KNOX 的设备，你需要将隔离电子邮件发送到备用电子邮件帐户，然后，最终用户必须将其复制到被阻止的设备来完成注册和合规性流程。|
-  > [!NOTE]若要让 Exchange 能够发送通知电子邮件，必须指定将用于发送通知电子邮件的帐户。
+  > [!NOTE]
+  > 若要让 Exchange 能够发送通知电子邮件，则必须指定应该用于发送通知电子邮件的帐户。
   >
   > 有关详细信息，请参阅[为本地或托管 Exchange 配置 Exchange 本地连接器](intune-on-premises-exchange-connector.md)。
 
@@ -126,6 +122,7 @@ Windows 8 和更高版本上的**邮件**应用程序（向 [!INCLUDE[wit_nextre
 [限制对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

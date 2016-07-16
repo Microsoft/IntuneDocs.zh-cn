@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 限制对 SharePoint Online 的访问 | Microsoft Intune
-description:
-keywords:
+title: "限制对 SharePoint Online 的访问 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+
 
 ---
 
@@ -30,7 +24,7 @@ ms.suite: ems
 条件性访问有两个组件：
 - 设备合规性策略，设备必须符合该策略才能被视为合规。
 - 条件性访问策略，你可以从中指定设备必须满足该策略才能访问服务的条件。
-若要了解有关条件性访问如何工作的详细信息，请阅读 [restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)（限制对电子邮件和 O365 服务的访问）主题。
+若要了解有关条件访问如何工作的详细信息，请阅读[限制对电子邮件、O365 服务和其它服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主题。
 
 当用户尝试在其设备上使用受支持的应用（如 OneDrive）连接到文件时，会进行以下评估：
 
@@ -66,6 +60,13 @@ ms.suite: ems
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 或更高版本
 - Windows Phone 8.1 及更高版本
 
+当通过 **iOS** 和 ** Android** 设备上的浏览器进行访问时，你可以限制对 SharePoint Online 的访问。  仅允许从合规设备上受支持的浏览器进行访问：
+* Safari (iOS)
+* Chrome (Android)
+* 托管浏览器（iOS 和 Android）
+
+**不受支持的浏览器将被阻止**。
+
 ## 对 PC 的支持
 - Windows 8.1 及更高版本（注册到 Intune 时）
 - Windows 7.0 或 Windows 8.1（若已加入域）
@@ -97,11 +98,13 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 ### 步骤 2：配置和部署合规性策略
 如果你尚未创建和部署合规性策略，请先创建合规性策略并将其部署到 SharePoint Online 策略将以其为目标的用户。
 
-> [!NOTE]将合规性策略部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
+> [!NOTE]
+> 将合规性策略部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
 
 有关如何配置合规性策略的详细信息，请参阅[创建合规性策略](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
-> [!IMPORTANT]如果尚未部署合规性策略，那么设备将被视为合规。
+> [!IMPORTANT]
+> 如果尚未部署合规性策略，那么设备将被视为合规。
 
 准备就绪后，继续 **步骤 3**。
 
@@ -110,8 +113,8 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略” > “条件性访问” > “SharePoint Online 策略”。
-![SharePoint Online 策略页面的屏幕截图](../media/IntuneSASharePointOnlineCAPolicy.png)
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件访问” > “SharePoint Online 策略”。
+![SharePoint Online 策略页面的屏幕截图](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  选择“启用 SharePoint Online 的条件性访问策略”。
 
@@ -120,6 +123,10 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
     -   **所有平台**
 
         这将要求用于访问 **SharePoint Online** 的任何设备已在 Intune 中注册且符合相应的策略。  任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果目前 Intune 不支持该平台，则会阻止对 **SharePoint Online** 的访问。
+
+        选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。  所有平台都需要已注册并合规，以下各项除外：
+        *   Windows 设备需要已注册并合规，并且/或者域已加入本地 Active Directory 域
+        * 不受支持的平台，如 Mac。  但是，仍将阻止使用来自这些平台的新式验证的应用。
         >[!TIP]
         >如果你尚未使用 PC 的条件性访问，则可能不会看到此选项。  请改用“特定平台”。 针对 PC 的条件性访问当前不可用于所有的 Intune 客户。   你可以在 [Microsoft Connect 站点](http://go.microsoft.com/fwlink/?LinkId=761472)上了解有关已知问题和如何访问此功能的详细信息。
 
@@ -135,11 +142,28 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
      -   **设备必须是合规的。** 选择此选项可要求 PC 必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中注册并且必须是合规的。 如果 PC 未注册，则会显示一条消息，其中包含有关如何注册的说明。
 
-4.  在“目标组” 下，单击“修改”  以选择将应用策略的 Azure Active Directory 安全组。 你可以选择将此应用于所有用户或仅针对选择的用户组。
+4.   在**浏览器访问** SharePoint Online 和 OneDrive for Business 下，你可以选择仅允许通过受支持的浏览器（Safari (iOS) 和 Chrome (Android)）来访问 Exchange Online。 将阻止从其它浏览器进行的访问。  为 OneDrive 的应用程序访问选择的相同平台限制在此处同样适用。
 
-5.  在“免除组” 下，可以选择“修改”  以选择从此策略中免除的 Azure Active Directory 安全组。
+  在 **Android** 设备上，用户必须启用浏览器访问。  若要执行此操作，最终用户必须在已注册的设备上启用“启用浏览器访问”选项，如下所示：
+  1.    启动**公司门户应用**。
+  2.    通过三个点 (…) 或硬件菜单按钮转到“设置”页面。
+  3.    按“启用浏览器访问”按钮。
+  4.  在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
 
-6.  完成后，请单击“保存” 。
+  在 **iOS 和 Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。  设备将显示证书，并提示最终用户选择证书，如下面的屏幕截图所示。 最终用户必须选先择此证书，然后才可以继续使用浏览器。
+
+  **iOS**
+
+  ![ipad 上的证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![Android 设备上的证书提示的屏幕截图](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  在“目标组”下，选择“修改”以选择将应用策略的 Azure Active Directory 安全组。 你可以选择将此应用于所有用户或仅针对选择的用户组。
+
+6.  或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
+
+6.  完成后，选择“保存”。
 
 不需要部署条件访问策略，它将立即生效。
 
@@ -158,6 +182,7 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 [使用 Microsoft Intune 限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: 为移动设备添加应用 | Microsoft Intune
-description:
-keywords:
+title: "为注册设备添加应用 | Microsoft Intune"
+description: "部署应用之前，必须将其添加到 Intune。 然后就可以在 Intune 控制台中对其进行部署和管理。"
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 795843f012434e1a50cd6abab05b6af2c811cf3e
+
 
 ---
 
-# 在 Microsoft Intune 中为移动设备添加应用
+# 为注册设备添加应用到 Intune
 
-通过本主题中的信息了解如何在部署应用之前将它们添加到 Intune。
+可部署或管理应用前，需将其添加到 Microsoft Intune。 本主题介绍如何为注册设备添加应用。
 
 
 > [!IMPORTANT]
@@ -36,14 +29,15 @@ ms.suite: ems
 ## 添加应用
 遵循以下过程，使用 Intune 软件发行者来配置应用的属性，并将该应用上载到云存储空间（如果适用）：
 
-1.  在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，单击**应用**&gt;**添加应用**启动 Intune 软件发行者。
+1.  在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，选择“应用”&gt;“添加应用”启动 Intune 软件发行者。
 
-    > [!TIP]在该发行者启动前，你可能需要先输入 Intune 用户名和密码。
+    > [!TIP]
+    > 在该发行者启动前，你可能需要先输入 Intune 用户名和密码。
 
 2.  在软件发行者的“软件安装程序”页上，针对“选择如何将此软件提供给设备”选择下列选项之一：
     - **软件安装程序**，适用于扩展名为 **.msi** 或 **.exe** 的应用，指定：
         - **选择软件安装程序文件类型** — 此选项指示要部署的软件类型。 例如，如果你想要安装 iOS 应用，请选择“iOS 应用包(&#42;.ipa 文件)”。
-        - **指定软件安装文件的位置** — 输入安装文件的位置，或单击“浏览”从列表中选择位置。
+        - **指定软件安装文件的位置** - 输入安装文件的位置，或选择“浏览”从列表中选择位置。
         - **包括同一文件夹中的其他文件和子文件夹** — 仅适用于 **Windows Installer** 文件类型。<br>某些使用 Windows Installer 的软件需要支持文件，这些支持文件通常与安装文件位于同一文件夹中。 如果还想要部署这些文件，请选择此选项。<br>此安装类型会使用一些云存储空间。
 
   -   **外部链接**，适用于要通过指定应用商店链接来创建的应用，指定：
@@ -64,7 +58,8 @@ ms.suite: ems
 
 3.  在“软件描述”页上，配置下列设置：
 
-    > [!TIP]根据所使用的安装程序类型，其中某些值可能已自动输入。
+    > [!TIP]
+    > 根据所使用的安装程序类型，其中某些值可能已自动输入。
 
     - **发行者** — 输入应用的发行者名称。
     - **名称** — 输入应用的名称，该名称将显示在公司门户中。<br>请确保使用的所有应用名称都是唯一的。 如果同一应用名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
@@ -81,13 +76,14 @@ ms.suite: ems
 
 4.  在“要求”页中，选择可以在设备上安装应用之前必须满足的要求。 例如，对于 iOS 应用包，你可以选择所需的最低 iOS 版本和必需的设备类型（如 iPhone 或 iPad）。
 
-    > [!TIP] 并非所有类型的应用都会显示相应的**要求**页。
+    > [!TIP]
+    > 并非所有类型的应用都会显示相应的“要求”页。
 
 5.  选择“Windows Installer”文件类型时，将会显示更多向导页。 将软件部署到已注册 Intune 并运行 Windows 10 或更高版本的电脑中时，会使用此文件类型。
 
-6.  在“摘要”页上，审阅你指定的信息。 准备就绪后，单击“上传”。
+6.  在“摘要”页上，审阅你指定的信息。 准备就绪后，选择“上载”。
 
-7.  单击“关闭”完成操作。
+7.  选择“关闭”完成操作。
 
 该应用将显示在“应用”工作区的“应用”节点中。
 
@@ -106,6 +102,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Wi-Fi 连接 | Microsoft Intune
-description:
-keywords:
+title: "Wi-Fi 连接 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 910ccd7c91593114ddf57c842c0bf9c9ffa54fdc
+ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
+
 
 ---
 
@@ -44,7 +38,7 @@ ms.suite: ems
 
 -   Mac OS X 10.9 及更高版本
 
-对于运行 Windows 8.1 及更高版本的设备，你可以导入之前导出到文件的 Wi-Fi 配置的配置文件。 有关详细信息，请参阅本主题中后面的导入 Wi-Fi 配置文件。
+对于运行 Windows 8.1 或 Windows 10 桌面或移动版的设备，你可以导入之前导出到文件的 Wi-Fi 配置文件。 有关详细信息，请参阅本主题中后面的**导入 Wi-Fi 配置文件**。
 
 ## 如何创建 Wi-Fi 配置文件
 
@@ -64,20 +58,39 @@ ms.suite: ems
 
 4. 指定 **“网络连接”** 值：
 
-  |设置|更多信息||-----------|--------------------|
-|**网络名称**|指定无线网络的描述性名称。 这是当他们选择无线网络时在用户的设备上显示的名称。| |**SSID（服务设置标识符）**|指定你的设备要连接到的无线网络的 (SSID)。 SSID 区分大小写，并且不会向用户显示。||**处于无线网络范围时自动连接**|选择此选项以在处于无线网络范围内时自动连接设备。||**在网络未公布其名称 (SSID) 时连接**|选择此选项以便在网络未显示在网络列表中（因为网络处于隐藏状态且未广播其名称）时允许设备连接到该网络。|
+  |设置|更多信息|
+|-----------|--------------------|
+|**网络名称**|指定无线网络的描述性名称。 这是当他们选择无线网络时显示在用户设备上的名称。|
+|**SSID（服务设置标识符）**|指定你的设备要连接到的无线网络的 (SSID)。 SSID 区分大小写，并且不会向用户显示。|
+|**当此网络处于范围内则自动连接**|选择此选项以在处于无线网络范围内时自动连接设备。|
+|**在网络未公布其名称 (SSID) 时连接**|选择此选项以便在网络未显示在网络列表中（因为网络处于隐藏状态且未广播其名称）时允许设备连接到该网络。|
 
 5. 为选定的平台配置 **“安全设置”** 。 可用的设置取决于你选择的安全类型。
 
   #### 对于 Android 设备
 
-  |设置名称|更多信息|何时使用：||----------------|--------------------|-------------|
-|**安全类型**|选择无线网络的安全协议：<br /><br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   如果网络不安全，则为**无身份验证（开放式）**。|始终| |**EAP 类型**|选择用于对安全无线连接进行身份验证的可扩展身份验证协议 (EAP) 类型：<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|选择 **WPA-Enterprise/WPA2-Enterprise** 安全类型。||**选择用于服务器验证的根证书|**|单击**选择**，然后选择用于对连接进行身份验证的受信任的根证书配置文件。 **重要提示：** 若要创建受信任的根证书配置文件，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。|选中任意 **EAP 类型**。||**身份验证方法**|选择连接的身份验证方法：<br /><br />-   **“证书”** 可指定客户端证书<br />-   **用户名和密码**可指定进行身份验证的不同方法|**EAP 类型**是 **PEAP** 或 **EAP-TTLS**。||**选择用于身份验证（内部标识）的非 EAP 方法**|选择验证以下连接的方法：<br /><br />-   **无**<br />-   **未加密的密码 (PAP)**<br />-   **质询握手身份验证协议 (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP 版本 2 (MS-CHAP v2)**<br /><br />可用的选项取决于你选择的 EAP 类型。|**身份验证方法**是**用户名和密码**。||**启用标识隐私（外部识别）**|指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|该 **EAP 类型**为 **PEAP** 或 **EAP-TTLS**。||**选择用于客户端身份验证的客户端证书（身份证书）**|单击**选择**，然后选择用于对连接进行身份验证的 SCEP 证书配置文件。 **重要提示：**要创建 SCEP 证书配置文件，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。|安全类型为 **WPA-Enterprise/WPA2-Enterprise**，且已选中任意 **EAP 类型**。|
+  |设置名|更多信息|何时使用：|
+|----------------|--------------------|-------------|
+|**安全类型**|选择无线网络的安全协议：<br /><br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   如果网络不安全，则为“无身份验证（开放式）”。|始终|
+|**EAP 类型**|请选择用于验证安全无线连接的可扩展身份验证协议 (EAP) 类型：<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|选择“WPA-Enterprise/WPA2-Enterprise”安全类型。|
+|**请选择用于服务器验证的根证书**|单击 **“选择”**，然后选择用于对连接进行身份验证的可信根证书配置文件。 **重要提示：**若要创建受信任的根证书配置文件，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。|选择的任意 **“EAP 类型”** 。|
+|**身份验证方法**|选择连接的身份验证方法：<br /><br />-   **“证书”** 可指定客户端证书<br />-   “用户名和密码”可指定进行身份验证的不同方法|“EAP 类型”是 **PEAP** 或 **EAP-TTLS**。|
+|**选择一个用于身份验证的非 EAP 方法（内部识别）**|选择对连接进行身份验证的方法：<br /><br />-   **无**<br />-   **未加密的密码 (PAP)**<br />-   **质询握手身份验证协议 (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP 版本 2 (MS-CHAP v2)**<br /><br />可用的选项取决于你选择的 EAP 类型。| **“身份验证方法”** 是 **“用户名和密码”**。|
+|**启用标识隐私（外部识别）**|请指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|“EAP 类型”是 **PEAP** 或 **EAP-TTLS**。|
+|**请选择客户端证书用于客户端身份验证（身份证书）**|单击 **“选择”**，然后选择用于对连接进行身份验证的 SCEP 证书配置文件。 **重要提示：**若要创建 SCEP 证书配置文件，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。|安全类型为“WPA-Enterprise/WPA2-Enterprise”，并选择任意“EAP 类型”。|
 
   #### 对于 iOS 和 Mac OS X 设备
 
-  |设置名称|更多信息|何时使用：||----------------|--------------------|-------------|
-|**安全类型**|选择无线网络安全协议：<br /><br />-   **WPA-Personal/WPA2-Personal**<br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **WEP**<br />-   如果网络不安全，则为**无身份验证（开放式）**。|始终| |**EAP 类型**|选择用于对安全无线连接进行身份验证的可扩展身份验证协议 (EAP) 类型：<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|选择 **WPA-Enterprise/WPA2-Enterprise** 安全类型。||**受信任的服务器证书名称**|选择用于对连接进行身份验证的受信任的根证书配置文件。 **重要提示：**若要创建受信任的根证书配置文件，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。|选择的 EAP 类型为 **EAP-TLS**、**PEAP**、**EAP-TTLS** 或 **EAP-FAST**。||**使用受保护的访问凭据 (PAC)**|选择以使用受保护的访问凭证在客户端和身份验证服务器之间建立身份验证隧道。 如果存在一个现有的 PAC 文件，则使用它。|**EAP 类型**为 **EAP-FAST**。||**配置 PAC**|对你的设备配置 PAC 文件。<br /><br />使用时，也可以选择**以匿名方式设置 PAC** 以确保在不对服务器进行身份验证的情况下设置 PAC 文件。|选中**使用受保护的访问凭证 (PAC)**。||**身份验证方法**|选择用于连接的身份验证方法：<br /><br /><ul><li>**“证书”** 可指定客户端证书</li><li>**用户名和密码**可指定以下非 EAP 方法之一用于身份验证（也称为内部标识）：<br /><br /><ul><li>**无**</li><li>**未加密的密码 (PAP)**</li><li>**质询握手身份验证协议 (CHAP)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP 版本 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|**EAP 类型**是 **PEAP** 或 **EAP-TTLS**。||**选择用于客户端身份验证的客户端证书（身份证书）**|选择用于对连接进行身份验证的 SCEP 证书配置文件。 **重要提示：**要创建 SCEP 证书配置文件，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。|当安全类型是 **WPA-Enterprise/WPA2-Enterprise** 并且 **EAP 类型**是 **EAP-TLS**、**PEAP** 或 **EAP-TTLS** 时。||**启用标识隐私（外部识别）**|指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。<br /><br />在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|当 **EAP 类型**设置为 **PEAP**、**EAP-TTLS** 或 **EAP-FAST** 时。|
+  |设置名|更多信息|何时使用：|
+|----------------|--------------------|-------------|
+|**安全类型**|选择无线网络安全协议：<br /><br />-   **WPA-Personal/WPA2-Personal**<br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **WEP**<br />-   如果网络不安全，则为“无身份验证（开放式）”。|始终|
+|**EAP 类型**|请选择用于验证安全无线连接的可扩展身份验证协议 (EAP) 类型：<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|选择的安全类型为“WPA-Enterprise/WPA2-Enterprise”的安全类型。|
+|**受信任的服务器证书名称**|选择用于对连接进行身份验证的受信任的根证书配置文件。 **重要提示：**若要创建受信任的根证书配置文件，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。|选择的 EAP 类型为“EAP-TLS”“PEAP”、“EAP-TTLS”或“EAP-FAST”。|
+|**使用受保护的访问凭证 (PAC)**|选择以使用受保护的访问凭证来建立客户端和身份验证服务器之间经过身份验证的隧道。 如果存在一个现有的 PAC 文件，则使用它。|“EAP 类型”为“EAP-FAST”。|
+|**配置 PAC**|对你的设备配置 PAC 文件。<br /><br />使用时，你也可以选择 **“以匿名方式配置 PAC”** 以确保在不进行服务器身份验证的情况下配置 PAC 文件。|选择**“使用受保护的访问凭证 (PAC)”** 。|
+|**身份验证方法**|请选择用于连接的身份验证方法：<br /><br /><ul><li>**“证书”** 可指定客户端证书</li><li>**用户名和密码**可指定以下非 EAP 方法之一用于身份验证（也称为内部标识）：<br /><br /><ul><li>**无**</li><li>**未加密的密码 (PAP)**</li><li>**质询握手身份验证协议 (CHAP)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP 版本 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|“EAP 类型”是“PEAP”或“EAP-TTLS”。|
+|**请选择客户端证书用于客户端身份验证（身份证书）**|选择用于对连接进行身份验证的 SCEP 证书配置文件。 **重要提示：**若要创建 SCEP 证书配置文件，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。|安全类型为“WPA-Enterprise/WPA2-Enterprise”并且“EAP 类型”为“EAP-TLS”、“PEAP”或“EAP-TTLS”时。|
+|**启用标识隐私（外部识别）**|请指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。<br /><br />在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|当“EAP 类型”设置为“PEAP”、“EAP-TTLS”或“EAP-FAST”时。|
 
 6. （仅限 iOS 和 MAC OS X）配置**代理设置**
 
@@ -104,14 +117,17 @@ ms.suite: ems
 
 4.  运行以下命令：`netsh wlan export profile name="ProfileName" folder=c:\Wifi`。这将在目标文件夹中创建一个名为“Wi-Fi-WiFiName.xml”的 Wi-Fi 配置文件。
 
-## 导入 Wi-Fi 配置文件
-使用“Windows Wi-Fi 导入策略”导入一组你可以随后部署到所需用户或设备组的 Wi-Fi 设置。 导出 Wi-Fi 配置文件的过程在下面内容中进行介绍：
+### 导入 Wi-Fi 配置文件
+使用“Windows Wi-Fi 导入策略”导入一组你可以随后部署到所需用户或设备组的 Wi-Fi 设置。
 
-1.  在 [Microsoft Intune 控制台](https://manage.microsoft.com)中，单击**策略**&gt;**添加策略**。
 
-2.  要配置该类型的策略，请转到 **Windows**&gt; **Windows Wi-Fi 导入策略**。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**策略**&gt;**添加策略**。
 
-    你仅可以创建和部署自定义的 Windows Wi-Fi 导入策略。 建议的设置不可用。
+2.  配置类型为“Windows”&gt;“Wi-Fi 导入（Windows 8.1 及更高版本）”的策略。
+
+    此策略可以应用于 Windows 8.1 和 Windows 10 桌面和移动版设备。 
+    
+    你仅可以创建和部署*自定义* Windows Wi-Fi 导入策略。 建议的设置不可用。
 
 3.  为 Windows Wi-Fi 导入策略指定以下常规值：
 
@@ -149,6 +165,7 @@ ms.suite: ems
 了解在[预共享密钥 Wi-Fi 配置文件中](pre-shared-key-wi-fi-profile.md)如何创建 Wi-Fi 配置文件
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

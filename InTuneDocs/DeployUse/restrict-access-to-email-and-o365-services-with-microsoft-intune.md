@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: 限制对电子邮件和 O365 服务的访问 | Microsoft Intune
-description:
-keywords:
+title: "限制对电子邮件和 O365 服务的访问 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# 使用 Microsoft Intune 限制对电子邮件和 O365 服务的访问
+# 使用 Microsoft Intune 限制对电子邮件、O365 和其它服务的访问
 可以使用 Intune 条件性访问限制对公司电子邮件和 O365 服务的访问。 Intune 的条件性访问功能使你能确保将对公司电子邮件和 O365 服务的访问限制在符合你设置的规则的设备。
 ## 条件性访问如何工作？
 合规性策略设置用于评估设备的合规性。 条件性访问策略使用该评估来限制或允许对特定服务的访问。 当条件性访问策略与合规性策略结合使用时，将仅允许合规的设备访问该服务。
@@ -37,7 +30,7 @@ ms.suite: ems
 
 条件性访问的典型工作流：
 
-![图示显示了用于确定允许还是阻止设备访问服务的决策点](./media/ConditionalAccess4.png)
+![图示显示了用于确定允许还是阻止设备访问服务的决策点](../media/ConditionalAccess4.png)
 
 ## 如何配置条件性访问？
 使用条件性访问管理对 Microsoft **Exchange 内部部署**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online** 和 **Skype for Business Online** 的访问。
@@ -67,8 +60,10 @@ ms.suite: ems
   - [为旧版 Exchange Online Dedicated 创建条件性访问策略](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [为 SharePoint Online 创建条件性访问策略](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [为 Skype for Business Online 创建条件性访问策略](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [为 Dynamics CRM Online 创建条件访问策略](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

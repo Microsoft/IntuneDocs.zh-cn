@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 启动 Microsoft Intune 前须知 | Microsoft Intune
-description:
-keywords:
+title: "启动 Microsoft Intune 前须知 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 06/08/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 09caaa76d08f99b0d455d291fbd4002289f2f11c
+ms.openlocfilehash: fe2ebc32005d04e92b93fd817981aa2a632c2288
+
 
 ---
 
@@ -36,7 +30,7 @@ ms.suite: ems
 - [Microsoft Intune 公司门户](microsoft-intune-company-portal.md)
 - [与 Microsoft 云服务和产品的 Intune 集成](integration-with-cloud-services.md)
 - [Intune 网络带宽使用](network-bandwidth-use.md)
-- [Microsoft Intune 的域名](domain-names-for-microsoft-intune.md)
+- [使用 Microsoft Intune 管理自定义域](domain-names-for-microsoft-intune.md)
 
 
 使用 Intune 之前，可能还想要查看 [Intune 移动设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)。 如果你从试用订阅开始，则可在稍后将其转换为完全订阅。 请参阅 [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx)（如何购买 Microsoft Intune）。
@@ -47,6 +41,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

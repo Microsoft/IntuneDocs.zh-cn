@@ -1,33 +1,28 @@
 ---
-# required metadata
-
-title: Microsoft Intune App SDK for iOS 开发人员指南 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune App SDK for iOS 开发人员指南 | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+
 
 ---
 
 # Microsoft Intune App SDK for iOS 开发人员指南
 
-> [!NOTE] 你可能希望首先阅读 [Intune App SDK 入门指南](intune-app-sdk-get-started.md)，该文档介绍了如何为每个受支持的平台上的集成做准备。* 
+> [!NOTE]
+> 你可能希望首先阅读 [ Intune App SDK 入门指南 ](intune-app-sdk-get-started.md)，该文档介绍了如何为每个受支持的平台上的集成做准备。* 
 
 Microsoft Intune App SDK for iOS 支持将 Intune 移动应用管理 (MAM) 集成到 iOS 应用中。 已启用 MAM 的应用与 Intune App SDK 相集成，允许 IT 管理员在主动管理移动应用时在该应用上部署策略。
 
@@ -232,7 +227,8 @@ ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否将所有 ADAL 日志（
 
 * 启动应用（在 Xcode 内部或外部）。 确认 PIN 是否工作正常。
 
-> [!NOTE] 现在你可以使用“设置 -> 你的应用名称 -> 启用测试策略”来启用和切换设置。
+> [!NOTE]
+> 现在你可以使用“设置 -> 你的应用名称 -> 启用测试策略”来启用和切换设置。
 
 # 建议使用的 iOS 最佳做法
 
@@ -244,6 +240,7 @@ IOS 文件系统是区分大小写的。 确保文件名的大小写正确，例
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

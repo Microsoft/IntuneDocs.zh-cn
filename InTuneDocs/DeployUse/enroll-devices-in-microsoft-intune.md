@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 注册设备 | Microsoft Intune
-description:
-keywords:
+title: "注册设备 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
+ms.openlocfilehash: 930cbc806d8fd1185cf33fd64d866b88ec9a6a04
+
 
 ---
 
@@ -33,6 +27,73 @@ Microsoft Intune 移动设备管理 (MDM) 使用注册将设备纳入管理以�
 Intune 可以管理以下设备平台：
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
+## 设备注册方法概述
+
+下表显示了公司拥有的设备的注册方法及其优势。
+
+**iOS 注册方法**
+
+| **方法** |  **[擦除](#Wipe)** | **[相关性](#Affinity)**   |   **[Locked](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | 否|    是 |   否 |
+|**[DEM](#DEM)**|   否 |否 |否  |
+|**[DEP](#DEP)**|   是 |   选择 |   选择|
+|**[USB-SA](#USB-SA)**| 是 |   选择 |   否|
+|**[USB-Direct](#USB-Direct)**| 否 |    否  | 否|
+
+**Windows 和 Android 的注册方法**
+
+| **方法** |  **[擦除](#Wipe)** | **[相关性](#Affinity)**   |   **[Locked](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | 否|    是 |   否 |
+|**[DEM](#DEM)**|   否 |否 |否  |
+
+**公司拥有的设备的注册方法**
+
+### BYOD
+“自带设备办公。” 用户安装公司门户应用并注册其设备。 通过公司门户注册设备将会使其加入工作区。 通过公司门户注册 iOS 设备需要 Apple ID。 对于公司拥有的设备，BYOD 无需其他配置。 参阅[设置设备管理](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)的相关步骤。 （[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）
+
+### DEM
+设备注册管理器。 管理员创建 DEM 帐户来管理企业自有设备。 然后，管理人员可安装公司门户并注册多个无用户设备。 了解有关 [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) 的详细信息。 （[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）
+
+### DEP
+Apple 设备注册计划。 管理员创建“无限升级”策略并将其部署到使用 DEP 购买和管理的企业自有 iOS 设备。 用户运行 iOS 设置助理时，就会对设备进行注册。 此方法支持**iOS 监督**模式，此模式转而又可：
+  - 锁定注册
+  - 条件性访问
+  - 越狱检测
+  - 移动应用程序管理
+
+了解有关 [DEP](ios-device-enrollment-program-in-microsoft-intune.md) 的详细信息。 （[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）
+
+### USB-SA
+USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出到 Apple Configurator。 使用 Intune 策略准备连接了 USB 的企业自有设备。 管理员必须手动注册每个设备。 用户收到其设备并运行设置助理，注册其设备。 此方法支持**iOS 监督**模式，此模式转而又可：
+  - 条件性访问
+  - 越狱检测
+  - 移动应用程序管理
+
+了解有关[使用 Apple Configurator 设置助理注册](ios-setup-assistant-enrollment-in-microsoft-intune.md)的详细信息。 （[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）
+
+### USB-Direct
+直接注册。 管理员创建 Intune 策略并将其导出到 Apple Configurator。 连接了 USB 的企业拥有设备可直接进行注册，无需恢复出厂设置。 管理员必须手动注册每个设备。 这些设备作为无用户设备进行管理。 它们未锁定、不受监控，且无法支持条件性访问、越狱检测和移动应用程序管理。 了解有关[使用 Apple Configurator 直接注册](ios-direct-enrollment-in-microsoft-intune.md)的详细信息。 （[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）
+
+**公司拥有的移动设备的行为**
+
+### 擦除
+指定是否需要将设备恢复出厂设置才可注册设备，该操作将删除设备中的所有数据，并将设备退回到原始状态。
+（[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）
+
+### 相关性
+指定注册方法是否支持“用户关联”，该关联可将设备与特定用户相连接。 无论是否关联了用户，都可注册“选择”设备。 需要关联用户才可支持以下内容：
+  - 移动应用程序管理 (MAM) 应用
+  - 对电子邮件和公司数据的条件性访问
+  - 公司门户应用
+
+（[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）
+
+### 锁定
+指定是否可锁定设备以防止用户删除 Intune 策略，进而使得设备不受管理。 对于 iOS 设备，其需要处于监管模式才可进行锁定。
+（[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）（[返回到表](#overview-of-corporate-owned-device-enrollment-methods)）
 
 ## 启用设备注册  
  注册使用户可以在其个人设备上访问公司资源，并使管理员可以确保这些设备符合保护公司资源的策略。 这是使用 Intune 实现“自带设备办公”方案的最佳方式。 管理员必须在 Intune 控制台中启用注册，这可能需要创建与设备的信任关系以及向用户分配许可证。 设备随后进行注册（通常由用户输入其工作或学校凭据）。 设备随后从 Intune 接收策略并获取对资源的访问权限。
@@ -64,6 +125,7 @@ Intune 可以管理以下设备平台：
 [使用 Intune 管理 Windows PC](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

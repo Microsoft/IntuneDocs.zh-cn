@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 在 Microsoft Intune 中注册企业所有的 iOS 设备 | Microsoft Intune
-description:
-keywords:
+title: "在 Microsoft Intune 中注册企业所有的 iOS 设备 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 48359b44bec9ac3e1c9510debc01d2cf8abf6d2b
+
 
 ---
 
@@ -43,6 +38,7 @@ Microsoft Intune 支持注册企业所拥有的 iOS 设备，方法是使用 App
 [为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

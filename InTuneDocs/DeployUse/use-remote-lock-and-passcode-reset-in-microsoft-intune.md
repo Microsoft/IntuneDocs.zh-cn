@@ -1,25 +1,19 @@
 ---
-title: 使用远程锁定和密码重置 | Microsoft Intune
-description:
-keywords:
+title: "使用远程锁定和密码重置 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+translationtype: Human Translation
+ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
+ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 ---
 # 使用远程锁定和密码重置功能帮助保护设备
 Microsoft Intune 提供远程锁定和密码重置功能。
@@ -39,14 +33,14 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 
 ### 通过 Intune 控制台远程锁定移动设备
 
-1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择“组” &gt; ”所有设备” &gt; ”所有移动设备”。
+1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择“组”&gt;“所有设备”&gt;“所有移动设备”。
 
-2.  对于在 Intune 中注册的设备，选择**所有直接托管设备**或**所有 Exchange ActiveSync 托管设备**
+2.  选择“所有直接托管设备”（对于在 Intune 中注册的设备）或“所有 Exchange ActiveSync 托管设备”。
 
     > [!TIP]
     > 你还可以按用户导航到设备。 选择**所有用户**。 在用户的“属性”页，选择**设备**，然后选择要擦除的移动设备的名称。
 
-3.  在列表中，选择要锁定的某个设备或多个设备。 在任务栏上，选择**远程任务**，然后选择**远程锁定**
+3.  在列表中，选择要锁定的某个设备或多个设备。 在任务栏上，选择“远程任务”，然后选择“远程锁定”。
 
 ## 重置设备的密码
 如果用户忘记密码，则你可以删除设备中的密码，或者在设备上强制使用新的临时密码，从而帮助用户解决问题。 下表列出了在不同的移动平台上是如何重置密码的。
@@ -62,20 +56,22 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 
 ### 重置密码
 
-1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组** &gt; **所有设备** &gt; **所有移动设备**。
+1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择“组”&gt;“所有设备”&gt;“所有移动设备”。
 
-2.  对于在 Intune 中注册的设备，选择**所有直接托管设备**或**所有 Exchange ActiveSync 托管设备**
+2.  选择“所有直接托管设备”（对于在 Intune 中注册的设备）或“所有 Exchange ActiveSync 托管设备”。
 
     > [!TIP]
     > 你还可以按用户导航到设备。 单击“所有用户”。 在用户的“属性”页，单击“设备”，然后单击你要擦除的移动设备的名称。
 
-3.  在列表中，选择要锁定的某个设备或多个设备。 在任务栏上，选择“远程任务”，然后选择“密码重置”
+3.  在列表中，选择要锁定的某个设备或多个设备。 在任务栏上，选择“远程任务”，然后选择“密码重置”。
 
 
 ### 另请参阅
-停用设备
+[注销设备](retire-devices-from-microsoft-intune-management.md)
+[设备数据管理的 Windows 选择性擦除](http://technet.microsoft.com/library/dn486874.aspx)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

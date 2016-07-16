@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 直接注册 iOS 设备 | Microsoft Intune
-description:
-keywords:
+title: "直接注册 iOS 设备 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+
 
 ---
 
@@ -46,6 +40,8 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
         -   “设备组预分配”– 部署此配置文件的所有设备将最初属于此组。 在注册后，可以将设备重新分配。
 
+        >[!Important]
+        >组分配会将从 Intune 移到 Azure Active Directory。 [了解详细信息](http://go.microsoft.com/fwlink/?LinkID=787064)
     3.  单击“保存配置文件”以添加配置文件。
 
 5.  **以 .mobileconfig 格式导出要部署到 iOS 设备的配置文件**选择你创建的设备配置文件。 选择“导出...” “导出…”。 选择“下载配置文件”并保存已下载的 .mobileconfig 文件。
@@ -89,6 +85,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 [为注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

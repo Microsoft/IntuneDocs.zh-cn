@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: 设备生命周期概述 | Microsoft Intune
-description:
-keywords:
+title: "MDM 生命周期概述 | Microsoft Intune"
+description: "了解 Intune 如何帮助你管理设备的整个生命周期（从注册到配置和最终停用）。"
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # 移动设备管理 (MDM) 生命周期概述
 
-Intune 设备生命周期从最初注册设备开始，然后经过几个步骤直到不再需要该设备时结束。
+你管理的所有设备都有一个*生命周期*。 Intune 可以帮助你管理此生命周期（从注册直到在不再需要时停用设备）：
 
 ![设备生命周期](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +44,7 @@ Intune 设备生命周期从最初注册设备开始，然后经过几个步骤�
 当设备丢失或被盗、需要更换，或当用户移到另一个位置时，通常需要[停用或擦除](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)设备。 有多种方法可以完成此操作，比如重置设备、从管理将其删除或擦除其上的企业数据等。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android MAM 策略设置 | Microsoft Intune
-description:
-keywords:
+title: "Android MAM 策略设置 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ ms.suite: ems
 
     **默认值 = 是**
 - **加密应用数据：**选择“是”以启用加密。 如果启用此设置，与移动应用管理策略关联的应用将由 Microsoft 进行加密。 数据在文件 I/O 操作期间同步加密。 设备存储中的内容始终被加密。
-  >[!NOTE]加密方法没有获得 FIPS 140-2 认证
+  >[!NOTE]
+  >加密方法没有获得 FIPS 140-2 认证
 
   **默认值 = 是**
 
-- **ContactSyncDisabled：**选择“是”以防止联系人信息同步到设备上的本机通讯簿应用。 如果选择“否”，应用会将联系人信息保存到设备上的本机通讯簿应用中。<br/>如果通过执行选择性擦除来删除公司数据，则将删除从应用直接同步到本机通讯簿的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 此设置目前仅适用于 **Microsoft Outlook** 应用。
+- **禁用联系人同步：**选择“是”，阻止联系人信息同步到设备上的本机通讯簿应用。 如果选择“否”，应用会将联系人信息保存到设备上的本机通讯簿应用中。<br/>如果通过执行选择性擦除来删除公司数据，则将删除从应用直接同步到本机通讯簿的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 此设置目前仅适用于 **Microsoft Outlook** 应用。
 
   **默认值 = 是**
 
@@ -100,6 +95,7 @@ ms.suite: ems
 - **阻止屏幕捕获和 Android 助手（Android 6 Marshmallow 或更高版本）：**选择“是”，以在使用该应用时阻止设备的屏幕捕获和 **Android 助手**功能。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

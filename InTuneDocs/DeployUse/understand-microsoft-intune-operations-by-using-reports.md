@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 通过使用报表了解操作 | Microsoft Intune
-description:
-keywords:
+title: "通过使用报表了解操作 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -43,8 +36,9 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 |**许可证安装报表**|依据批量许可服务中心 (VLSC) 将组织中计算机上的已安装软件与当前许可协议范围进行比较。 筛选器包括：<br /><br />**所有协议**显示由 Intune 托管的、经许可的所有软件产品。<br /><br />“批量许可协议”仅显示 VLSC 软件产品。<br /><br />“其他软件许可协议”显示在 VLSC 外部管理的软件产品。|
 |**条款和条件报告**|显示用户是否接受你部署的条款和条件以及他们接受的版本。 可以指定至多 10 个用户，显示其对部署到他们的条款和条件的接受情况，或显示部署到他们的特定条款的接受状态。|
 |**不符合要求的应用报表**|显示有关安装了应用的用户的信息，这些应用存在于你的符合要求和不符合要求的应用列表中。 使用此报表查找不符合公司应用策略的用户和设备。|
-|**证书符合性报表**|显示已通过 SCEP 或 PKCS #12 (.PFX) 向用户和设备颁发的证书。 使用此报表查找已颁发的、过期的以及吊销的证书。|
-|**设备历史记录报告**|显示停用、擦除和删除操作的历史的日志。 使用此报表以查看谁在过去启动设备上的操作。|
+|**证书符合性报表**|显示通过 SCEP 或 PKCS #12 (.PFX) 向用户和设备颁发的证书。 使用此报表查找已颁发的、过期的以及吊销的证书。|
+|**设备历史记录报告**|显示停用、擦除和删除操作的历史日志。 使用此报表以查看谁在过去启动设备上的操作。|
+|**运行状况证明报告**|显示移动设备的运行状况。|
 |**Mac OS X 硬件报表**|显示你选择的组中所有已注册的 Mac OS X 设备的硬件详细信息。 若要了解从这些设备收集到的硬件清单，请参阅[在 Microsoft Intune 中了解你的设备清单](understand-your-devices-with-inventory-in-microsoft-intune.md)。|
 |**Mac OS X 软件报表**|显示你选择的组中的所有 Mac OS X 设备上安装的软件。 该报表列出了软件名称（作为软件包 ID）、简短版本（或友好）名称以及已安装软件的设备数目。|
 
@@ -74,6 +68,7 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

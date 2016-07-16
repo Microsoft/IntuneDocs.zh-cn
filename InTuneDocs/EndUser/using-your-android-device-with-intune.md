@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 通过 Intune 使用 Android 设备 | Microsoft Intune
-description:
-keywords:
+title: "通过 Intune 使用 Android 设备 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
+ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+
 
 ---
 
@@ -52,6 +46,7 @@ ms.suite: ems
 - [如果你已拒绝“使用条款”，请取消注册你的设备](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [使用公司门户应用重置 Android 设备会发生什么情况？](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
 ## 修复设备问题
 
@@ -65,10 +60,16 @@ ms.suite: ems
 - [设备不符合最高操作系统版本](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [你的设备已取得 root 权限，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)
 - [你的设备缺少必需的证书](your-device-is-missing-a-required-certificate-android.md)
+- [系统要求你关闭未知源](you-are-asked-to-turn-off-unknown-sources-android.md)
+- [系统要求你关闭 USB 调试](you-are-asked-to-turn-off-usb-debugging-android.md)
+- [系统要求你启用“扫描设备的安全威胁”](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [你的设备不符合最低安全修补程序](your-device-does-not-meet-the-minimum-security-patch-android.md)
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO5-->
 
 

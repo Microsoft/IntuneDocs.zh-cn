@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 选择如何管理设备 | Microsoft Intune
-description:
-keywords:
+title: "选择如何管理设备 | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+
 
 ---
 
@@ -75,16 +69,17 @@ ms.suite: ems
 ## Exchange ActiveSync 管理
 你还可以使用 Exchange ActiveSync 来管理设备。 若要使用 Exchange ActiveSync 管理设备，你需要安装本地连接器或使用内置服务间连接器来连接到 Exchange Server。
 
-若要了解有关安装本地连接器的硬件和软件要求的信息，请参阅[本地连接器的要求](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector)。
+若要了解有关安装本地连接器的硬件和软件要求的信息，请参阅[本地连接器的要求](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect)。
 
-若要了解有关将本地连接器或服务间连接器与 Exchange 配合使用的信息，请参阅[使用 Exchange ActiveSync 和 Microsoft Intune 管理移动设备](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
+若要了解有关将本地连接器或服务间连接器与 Exchange 配合使用的信息，请参阅[使用 Exchange ActiveSync 和 Microsoft Intune 管理移动设备](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
 
 
 
 ## 后续步骤
-你已经了解向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备后可使用的一些功能。 接下来，你需要[注册设备](../deploy-use/enroll-devices-in-microsoft-intune)。 注册设备后，你就可以利用你在本主题中了解到的所有功能。 <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+你已经了解向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备后可使用的一些功能。 接下来，你需要[注册设备](/intune/deploy-use/enroll-devices-in-microsoft-intune)。 注册设备后，你就可以利用你在本主题中了解到的所有功能。 <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

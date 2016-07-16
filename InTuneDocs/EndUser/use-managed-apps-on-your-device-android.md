@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 在设备上使用托管应用 | Microsoft Intune
-description:
-keywords:
+title: "在设备上使用托管应用 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: maxles
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 5a25d845113ef6a3cb402923ef451fab63138979
+
 
 ---
 
@@ -82,6 +76,7 @@ IT 部门可能管理的常见应用程序有：
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
