@@ -3,18 +3,19 @@ title: "从公司门户网站重置设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: dcde651a95a7f1affaf5489c2664d96a7f5e9e8f
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 87dc788f09808c100b0b64c1fa0779630b70aae5
 
 
 ---
@@ -43,6 +44,6 @@ ms.openlocfilehash: dcde651a95a7f1affaf5489c2664d96a7f5e9e8f
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

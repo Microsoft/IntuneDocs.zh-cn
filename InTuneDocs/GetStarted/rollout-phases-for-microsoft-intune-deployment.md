@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune 部署的推出阶段 | Microsoft Intune"
-description: 
+description: "技术部署的典型阶段是项目范围、概念证明、试点、企业推出和运行状态。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 9f3fcead3c41506734508d588ad180d17cc901ee
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: c20f96481916d5e9468eade65d8aa0c1133646ef
 
 
 ---
@@ -62,6 +62,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

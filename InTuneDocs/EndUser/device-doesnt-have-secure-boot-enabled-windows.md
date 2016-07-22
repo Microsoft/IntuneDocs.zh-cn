@@ -3,18 +3,19 @@ title: "设备未启用安全启动 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: de881f1b-7622-4ec2-8bf8-025f71ca9887
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: e4c2066c0acb1c410ad420ebd5918535b72a5559
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: f0388a0f73b4ac1a9ee17fd3681bcfcb7a682099
 
 
 ---
@@ -34,6 +35,6 @@ ms.openlocfilehash: e4c2066c0acb1c410ad420ebd5918535b72a5559
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

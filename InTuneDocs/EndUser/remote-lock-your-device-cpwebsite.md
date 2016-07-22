@@ -3,18 +3,19 @@ title: "从公司门户网站远程锁定设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7e5d48d35e8216bac2fae8e2f9a1ba82d3493acc
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 48681950f23aaf4ce13418699fd80a5914f13e89
 
 
 ---
@@ -60,6 +61,6 @@ Windows Phone 8。0 | 不支持
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

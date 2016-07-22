@@ -16,6 +16,6 @@
 ## [电子邮件配置文件疑难解答](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [条件访问疑难解答](troubleshoot-conditional-access.md)
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

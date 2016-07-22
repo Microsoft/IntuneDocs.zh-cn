@@ -3,18 +3,19 @@ title: "设备未启用代码完整性 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: 793a3eb17aaa5e04c27a31302d93bfc46ff71cac
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 391035d0ba51e95eb3206a864cfcf375a98170f8
 
 
 ---
@@ -36,6 +37,6 @@ ms.openlocfilehash: 793a3eb17aaa5e04c27a31302d93bfc46ff71cac
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

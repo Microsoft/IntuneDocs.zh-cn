@@ -3,18 +3,19 @@ title: "从公司门户中删除设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 9f63869b6c4f3a082da7587921870004c6ffc5e1
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 80912ee8c78e00ae090d21259dfa780cc8d220a2
 
 
 ---
@@ -42,6 +43,6 @@ ms.openlocfilehash: 9f63869b6c4f3a082da7587921870004c6ffc5e1
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

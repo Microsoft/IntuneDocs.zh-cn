@@ -5,6 +5,6 @@
 ## [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
