@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 设置 Windows Phone 8.0 管理 | Microsoft Intune
-description:
-keywords:
+title: "设置 Windows Phone 8.0 管理 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
+ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Windows Phone 8.0 安装 Intune 公司门户应用并允许设备管理需要 Symantec 证书。 还要求使用证书对业务线应用签名。 下面的主题项仅用于 Windows Phone 8.0。 若要管理 Windows Phone 8.1 或更高版本（包括 Windows 10 移动版），请参阅[设置 Windows Phone 注册](set-up-windows-phone-management-with-microsoft-intune.md)。
 
-> [!IMPORTANT]从 2016 年 9 月开始，适用于 Windows 8.0 和 Windows Phone 8.0 的公司门户应用将不再可下载。
+> [!IMPORTANT]
+> 从 2016 年 9 月开始，适用于 Windows 8.0 和 Windows Phone 8.0 的公司门户应用将不再可下载。
 
 -   **Windows Phone 8** - 所需证书
 -   **Windows Phone 8.1 和 Windows 10 移动版**仅在以下情况下需要证书：
@@ -41,7 +36,8 @@ Windows Phone 8.0 安装 Intune 公司门户应用并允许设备管理需要 Sy
 
 ![证书要求图示](../media/wpcertreqs.png)
 
-  > [!IMPORTANT]用于管理某些 Windows 和 Windows Phone 移动设备的 Symantec 证书[必须定期续订](renew-a-symantec-code-signing-certificate.md)。
+  > [!IMPORTANT]
+  > 用于管理某些 Windows 和 Windows Phone 移动设备的 Symantec 证书[必须定期续订](renew-a-symantec-code-signing-certificate.md)。
 
 Window Phone 移动设备管理的设置要求取决于管理设备的方式。  在公司的 DNS 注册中设置两个 CNAME 可以更轻松地注册。 如果你的用户将从应用商店中下载公司门户应用，那么，配置 DNS 设置之后，你只需设置公司门户并告知用户如何注册。  对于将在其中部署公司门户的 Windows Phone 8.0 或 Windows Phone 8.1，则需要使用 Symntec 证书对应用进行代码签名。
 
@@ -186,6 +182,7 @@ Window Phone 移动设备管理的设置要求取决于管理设备的方式。 
     > -   如果需要安装旁加载应用并且 Windows Phone 8.0 设备需要注册和接收 ssp.xap，则创建新的 ssp.xap 软件部署并通过 **“卸载”** 操作对其进行部署。 Windows Phone 8.0 设备不支持强制安装或卸载应用，因此它们将忽略该部署。 Windows Phone 8.1 设备支持卸载操作并且将删除 ssp.xap。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

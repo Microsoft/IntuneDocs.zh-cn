@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 停用应用 | Microsoft Intune
-description:
-keywords:
+title: "停用应用 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 4857e2ff34175ee6daa64e6f95a59faaaaa3b322
+
 
 ---
 
@@ -31,9 +25,9 @@ ms.suite: ems
 
 ## 卸载应用
 
-1.  在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，选择“应用” &gt; “应用”
+1.  在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，选择“应用”&gt;“应用”。
 
-2.  选择要卸载的应用（之前已部署），然后选择“管理部署”
+2.  选择要卸载的应用（之前已部署），然后选择“管理部署”。
 
 3.  在“部署操作”  页上，从“批准”  列中选择“卸载”  ：
 
@@ -43,6 +37,7 @@ ms.suite: ems
 [在 Microsoft Intune 中添加应用](add-apps.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

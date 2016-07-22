@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Mac OS X 策略设置 | Microsoft Intune
-description:
-keywords:
+title: "Mac OS X 策略设置 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+
 
 ---
 
@@ -67,7 +60,8 @@ ms.suite: ems
 |**导入应用**|导入你已在逗号分隔值文件中指定的应用列表。 在文件中使用格式、应用名称、发布者和应用捆绑 ID。|
 |**编辑**|允许你编辑所选应用的名称、发布者和捆绑 ID。|
 |**删除**|从列表中删除选定的应用。|
-> [!TIP] 有关 Intune 报告的详细信息，请参阅[通过使用报表了解 Microsoft Intune 操作](understand-microsoft-intune-operations-by-using-reports.md)。
+> [!TIP]
+> 有关 Intune 报告的详细信息，请参阅[通过使用报表了解 Microsoft Intune 操作](understand-microsoft-intune-operations-by-using-reports.md)。
 
 > [!IMPORTANT]
 > Mac OS X 设备处于休眠模式时，无法传递策略和配置文件或列出它们的清单。 因此，Intune 控制台可能会暂时显示状态“策略设置错误”，直到下一次从休眠模式中唤醒设备。
@@ -105,7 +99,7 @@ ms.suite: ems
 |设置名|详细信息|
     |----------------|--------------------|
     |**自定义配置的配置文件名称（对用户显示）**|提供策略的名称，该名称将显示在设备上以及 Intune 策略报告中。|
-    |**配置的配置文件**|单击 **“导入”**，然后浏览到使用 Apple Configurator 创建的配置的配置文件。 **提示：**请参阅本主题中的[如何创建配置文件](#BKMK_Prof)以帮助创建配置文件。|
+    |**配置的配置文件**|单击 **“导入”**，然后浏览到使用 Apple Configurator 创建的配置的配置文件。 **提示：**请参阅本主题中的**如何创建配置文件**来帮助创建配置文件。|
     |**配置的配置文件详细信息**|显示导入的配置的配置文件的 xml 代码。|
 
 
@@ -126,6 +120,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

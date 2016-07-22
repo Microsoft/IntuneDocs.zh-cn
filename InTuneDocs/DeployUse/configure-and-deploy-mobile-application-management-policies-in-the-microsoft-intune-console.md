@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略 | Microsoft Intune
-description:
-keywords:
+title: "在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
@@ -34,7 +28,8 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 -   运行 iOS 7 和更高版本的设备。
 
-> [!TIP]移动应用程序管理策略支持向 Intune 注册的设备。
+> [!TIP]
+> 移动应用程序管理策略支持向 Intune 注册的设备。
 >
 > 如果你正在查找有关如何为不受 Intune 管理的设备创建应用管理策略的信息，请参阅[通过 Microsoft Intune 使用移动应用管理策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
@@ -46,9 +41,9 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 -   “使用‘已包装的’应用”– 使用 **Microsoft Intune 应用包装工具**对应用进行重新封装，以将应用 SDK 包括在内。 该工具通常用于处理公司内部开发的应用。 它可用于处理从应用商店下载的应用。 请参阅[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
 
-- **编写自己的包含 Intune App SDK 的应用** - Intune App SDK 允许你将应用管理功能合并到你正在编写的应用。 有关详细信息，请参阅 [Intune App SDK 概述](/develop/intune-app-sdk)
+- **编写自己的包含 Intune App SDK 的应用** - Intune App SDK 允许你将应用管理功能合并到你正在编写的应用。 有关详细信息，请参阅 [Intune App SDK 概述](/intune/develop/intune-app-sdk)
 
-有关是要选择应用包装工具还是 Intune App SDK 的帮助信息，请参阅 [Decide how to prepare apps for mobile application management with Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)（决定如何使用 Microsoft Intune 为移动应用程序管理准备应用）
+有关是要选择应用包装工具还是 Intune App SDK 的帮助信息，请参阅[决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 某些托管应用（比如用于 iOS 和 Android 的 Outlook 应用）支持**多身份**。 这意味着 Intune 仅对公司帐户或应用程序中的数据应用管理设置。
 
@@ -60,7 +55,8 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 -   使用的公司帐户必须与用于向 Intune 注册设备的帐户相同。
 
-> [!TIP] 如果将 Intune 与 Configuration Manager 结合使用，请参阅[如何使用 Configuration Manager 中的移动应用程序管理策略控制应用](https://technet.microsoft.com/library/mt131414.aspx)。
+> [!TIP]
+> 如果要将 Intune 与 Configuration Manager 结合使用，请参阅[如何使用 Configuration Manager 中的移动应用程序管理策略控制应用](https://technet.microsoft.com/library/mt131414.aspx)。
 
 ## 创建和部署具有移动应用程序管理策略的应用
 
@@ -152,7 +148,8 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 有关详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps.md)。
 
-> [!IMPORTANT] 对于运行 iOS 7.1 之前的操作系统的设备，关联的策略只有在卸载应用后才能删除。
+> [!IMPORTANT]
+> 对于运行 iOS 7.1 之前的操作系统的设备，关联的策略只有在卸载应用后才能删除。
 >
 > 如果设备从 Intune 取消注册，策略也不会从应用中删除；任何应用了策略的应用都将保留策略设置，即使卸载应用并重新安装也将如此。
 
@@ -163,7 +160,8 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 
 但是，对于运行 iOS 9 及更高版本的设备，Intune 将自动要求用户提供许可以接管现有应用。 如果用户同意，则应用将由 Intune 管理，并将应用你为其关联的任何移动应用程序管理策略。
 
-> [!TIP] 如果设备处于监督模式，则 Intune 无需要求用户提供许可即可接管现有应用。
+> [!TIP]
+> 如果设备处于监督模式，则 Intune 无需要求用户提供许可即可接管现有应用。
 
 ## **步骤 5：** 监视应用部署。
 创建并部署关联移动应用程序管理策略的应用后，使用以下步骤监视应用并解决任何策略冲突的问题。
@@ -198,6 +196,7 @@ Microsoft Intune 中的移动应用程序管理策略让你可以修改你所部
 -   如果尚无策略部署到设备，并且两个冲突设置已经部署，则将使用设备内的默认设置。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

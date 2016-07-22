@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 PSK 的 Wi-Fi | Microsoft Intune
+title: "使用 PSK 的 Wi-Fi | Microsoft Intune"
 description: 
-keywords:
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
+ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+
 
 
 ---
@@ -46,7 +40,7 @@ ms.suite: ems
 
    c.   **数据类型**：设置为“String(XML)”
 
-   d.   **OMA-URI**：./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**:/Vendor/MSFT/Wi-Fi/Profile/<SSID>/Settings
 
 注意：请务必在开头包括点字符。
 
@@ -182,19 +176,19 @@ SSID 是你为其创建策略的 SSID。 例如，
 每个设备在下次签入时，将应用该策略，且将在设备上创建 Wi-Fi 配置文件。 设备将能够自动连接到网络。
 ## 从现有的 Wi-Fi 连接创建 XML 文件
 还可以从现有的 Wi-Fi 连接创建 XML 文件：
-1.     在连接到或最近连接到无线网络的计算机上，打开下列文件夹：C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}。 最好使用尚未连接过许多无线网络的计算机，因为你必须搜索每个配置文件以找到正确的那个。
+1.     在连接到或最近连接到无线网络的计算机上，打开下列文件夹：C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid}。 最好使用尚未连接过许多无线网络的计算机，因为你必须搜索每个配置文件以找到正确的那个。
 3.     搜索 XML 文件以找到具有正确名称的那一个。
 4.     一旦找到了正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的数据字段中。
 
 ## 部署策略
 
-1.  在“策略”工作区中，选择想要部署的策略，然后单击“管理部署”
+1.  在“策略”  工作区中，选择想要部署的策略，然后单击“管理部署” 。
 
 2.  在“管理部署”  对话框中：
 
-    -   **部署策略** — 选择要向其部署策略的一个组或多个组，然后单击“添加” &gt; “确定”
+    -   **部署策略** - 选择要向其部署策略的一个或多个组，然后单击**添加**&gt;**确定**。
 
-    -   **关闭对话框而不部署** — 单击“取消”
+    -   **要关闭对话框而不部署** - 单击“取消”。
 
 如果你选择的是已部署的策略，则可以在策略列表的下半部分查看有关部署的详细信息。
 
@@ -202,6 +196,7 @@ SSID 是你为其创建策略的 SSID。 例如，
 [Microsoft Intune 中的 Wi-Fi 连接](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

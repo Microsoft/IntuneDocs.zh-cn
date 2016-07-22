@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 为托管 Exchange 配置 Microsoft Intune Exchange Connector | Microsoft Intune
-description:
-keywords:
+title: "为托管 Exchange 配置 Microsoft Intune Exchange Connector | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
+ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+
 
 ---
 
@@ -54,21 +48,22 @@ ms.suite: ems
 
 1. 使用对[上述](#exchange-cmdlet-requirements) cmdlet 具有 Exchange 管理员权限的用户帐户打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com)。 Microsoft Intune 会使用当前登录用户的电子邮件地址来设置连接。
 
-2.  在工作区快捷方式窗格中，选择“管理”，然后转到“移动设备管理” > “Microsoft Exchange” > “设置 Exchange 连接”
+2.  在工作区快捷方式窗格中，选择“管理”，然后转到“移动设备管理” > “Microsoft Exchange” > “设置 Exchange 连接”。
 ![“设置 Service To Service Connector”页](../media/intunesa5cservicetoserviceconnector.png)
 
-3.  在“设置 Exchange 连接”页上，选择“设置 Service To Service Connector”
+3.  在“设置 Exchange 连接”页上，选择“设置服务间连接器”。
 
 
 Service-to-Service Connector 将自动进行配置并与你的托管 Exchange 环境同步。
 
 ## 验证你的 Exchange 连接
 
-成功地配置了 Exchange Connector 之后，请在 Intune 管理控制台中选择“管理”工作区，转到“移动设备管理” > “Microsoft Exchange”，并验证你提供的详细信息是否出现在“Exchange 连接信息”下
+成功地配置了 Exchange Connector 之后，请在 Intune 管理控制台中选择“管理”工作区，转到“移动设备管理” > “Microsoft Exchange”，并验证你提供的详细信息是否出现在“Exchange 连接信息”下。
 
 你也可以检查最后一次成功同步尝试的时间和日期。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

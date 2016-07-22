@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Microsoft Intune 对 iOS 设备设置助理注册 | Microsoft Intune
-description:
-keywords:
+title: "使用 Microsoft Intune 对 iOS 设备设置助理注册 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
+ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+
 
 ---
 
@@ -67,6 +61,9 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
             -   “没有用户关联性”– 该设备不可多个用户共享。 将此隶属关系用于无需访问本地用户数据即可执行任务的设备。 需要用户隶属关系的应用程序已禁用或无法运行。
 
         -   “设备组预分配”– 部署此配置文件的所有设备将最初属于此组。 在注册后，可以将设备重新分配。
+
+        >[!Important]
+        >组分配会将从 Intune 移到 Azure Active Directory。 [了解详细信息](http://go.microsoft.com/fwlink/?LinkID=787064)
 
           -  **设备注册计划** - Apple 设备注册计划 (DEP) 不能与设置助理注册一起使用。 确保将切换设置为“关闭”。
 
@@ -143,9 +140,9 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
     9. 在“创建组织”窗格上，选择“组织”或创建新的组织，然后选择“下一步”。
 
-    10.在“配置 iOS 设置助理”窗格上，选择提供给用户的步骤，然后选择“准备”。 如果出现系统提示，请进行身份验证以更新信任设置。  
+    10. 在“配置 iOS 设置助理”窗格上，选择提供给用户的步骤，然后选择“准备”。 如果出现系统提示，请进行身份验证以更新信任设置。  
 
-    11.当 iOS 设备完成准备时，就可以断开 USB 电缆的连接。  
+    11. 当 iOS 设备完成准备时，就可以断开 USB 电缆的连接。  
 
 8.  **分发设备**设备现已准备好进行企业注册。 关闭设备电源，并将它们分发给用户。 当设备打开时，将启动设置助理。
 
@@ -155,6 +152,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 [为注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

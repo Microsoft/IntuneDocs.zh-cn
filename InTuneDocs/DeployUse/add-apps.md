@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 添加应用 | Microsoft Intune
-description:
-keywords:
+title: "添加应用 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ ms.suite: ems
 允许你管理和部署来自应用商店的免费 iOS 应用。 还允许你将[移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)与[兼容的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)相关联，并在管理员控制台中查看它们的状态。<br /><br />托管 iOS 应用不存储在 Intune 云存储空间中。
 > [!TIP]在将[移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md)为 Intune 之前，移动设备选项将不可用。
 
+## Intune 软件发行者
+从 Microsoft Intune 管理控制台中添加或修改应用时，将启动“Microsoft Intune 软件发行者”。 从发行者中，你可选择并配置一个软件安装程序类型，该安装程序类型将上载要存储在 Intune 云存储中的应用（适用于计算机的程序或适用于移动设备的应用），或者链接到在线商店或 Web 应用程序。
+
+### 要求
+开始使用 Microsoft Intune 软件发行者之前，必须安装 [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) 的完整版本。 安装之后，可能必须重启计算机，然后软件发行者才会正确打开。
+
+## 云存储空间
+使用软件安装程序安装类型（例如，业务线应用）创建的所有应用都必须打包并上传到 Microsoft Intune 云存储空间。 Intune 的试用订阅包括 2 千兆字节 (GB) 基于云的存储，用于存储托管应用和更新。 付费订阅包括 20 GB，并具有购买额外存储的选项。
+
+可以在“管理员”工作区的“存储使用量”节点中查看所使用的空间量以及购买更多存储。
+
+以下这些规则适用于为 Intune 购买基于云的额外存储的情况：
+
+-   要购买额外存储，你必须有有效的付费订阅。
+
+-   只有 Microsoft Online Service 的帐务管理员或全局管理员才能通过 Office 365 管理门户购买额外存储。 若要添加、删除或管理这些管理员，必须是全局管理员并登录到 Office 365 管理门户。
+
+-   如果你是通过企业协议购买了 Intune 或 Microsoft Intune 加载项的批量许可客户，请与 Microsoft 客户经理或 Microsoft 合作伙伴联系以了解定价信息和购买额外的存储。
+
+#### 云存储空间的要求
+
+-   确保所有应用安装文件位于同一文件夹。
+
+-   上传的任意文件的最大文件大小是 2 GB。
+
+
 ## 对通用 Windows 平台 (UWP) 应用的支持
 Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注册表项 **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** 必须将值设置为“1”才能启用旁加载。
 
@@ -96,6 +115,8 @@ Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注�
 
 接下来，你需要先在 Intune 控制台中添加应用，然后才能部署这些应用。 你可以为[已注册设备](add-apps-for-mobile-devices-in-microsoft-intune.md)或[使用 Intune 客户端软件管理的 Windows 电脑](add-apps-for-windows-pcs-in-microsoft-intune.md)添加应用。
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 

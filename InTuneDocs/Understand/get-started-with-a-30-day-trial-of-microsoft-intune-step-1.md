@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 注册 Microsoft Intune 的 30 天评估 | Microsoft Intune
-description:
-keywords:
+title: "注册 Microsoft Intune 的 30 天评估 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fe1587bead9e4cd350f5ffcf925fe04afd824ea0
+ms.openlocfilehash: f97b619d2b82556685cf0e247700d1fd8c8d4369
+
 
 ---
 
@@ -41,11 +35,11 @@ ms.suite: ems
 
 |如果下列任一项为 true，则注册新帐户：|在以下情况下，使用工作或学校帐户登录：|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**没有工作或学校帐户。** 当你与 Microsoft 签署批量许可协议或订阅 Office 365 时，提供工作或学校帐户。 如果你的组织尚未与 Microsoft 签署企业协议或等效的批量许可协议（或具有 Office 365 帐户），则你将不具有可用于登录到 Microsoft Online Services 的 Microsoft Online Services 帐户。<br /><br />**30 天评估结束后，你将放弃 Intune 租户。** 如果仅将 Intune 免费评估订阅用于评估目的，并且计划在评估后重新进行 Intune 服务设置和设备设置，则应注册一个新帐户。 如果你计划使用配有 System Center 2012 Configuration Manager 的 Intune，则建议这样操作。<br /><br />如果注册新帐户，则以后无法更改为使用现有工作或学校帐户来管理该帐户或将其与现有批量许可协议结合。|**拥有工作或学校帐户以及批量许可协议或 Office 365 订阅，并且要使用此评估来评估 Intune。**<br /><br />如果你使用现有帐户设置 Intune，我们建议你在继续这些步骤之前查看[选择如何管理设备](choose-how-to-manage-devices.md)。|
+|**没有工作或学校帐户。** 当你与 Microsoft 签署批量许可协议或订阅 Office 365 时，提供工作或学校帐户。 如果你的组织尚未与 Microsoft 签署企业协议或等效的批量许可协议（或具有 Office 365 帐户），则你将不具有可用于登录到 Microsoft Online Services 的 Microsoft Online Services 帐户。<br /><br />**30 天评估结束后，你将放弃 Intune 租户。** 如果仅将 Intune 免费评估订阅用于评估目的，并且计划在评估后重新进行 Intune 服务设置和设备设置，则应注册一个新帐户。 如果你计划使用配有 System Center 2012 Configuration Manager 的 Intune，则建议这样操作。<br /><br />如果注册新帐户，则以后无法更改为使用现有工作或学校帐户来管理该帐户或将其与现有批量许可协议结合。|**拥有工作或学校帐户以及批量许可协议或 Office 365 订阅，并且要使用此评估来评估 Intune。**<br /><br />如果你使用现有帐户设置 Intune，我们建议你在继续这些步骤之前查看[选择如何管理设备](/intune/get-started/choose-how-to-manage-devices)。|
 
 ## 注册或登录到 Intune
 
-1.  首先，[请单击此处访问 Intune 注册页面](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)
+1.  首先，[请单击此处访问 Intune 注册页面](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。
 
 2.  在“注册”  页上，你有两个选择：
 
@@ -63,9 +57,10 @@ ms.suite: ems
 
 >[!div class="step-by-step"]
 
->[&larr; **入门**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**添加用户** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
+>[&larr;**开始使用**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**添加用户**&rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 注册移动设备并安装应用 | Microsoft Intune
-description:
-keywords:
+title: "注册移动设备并安装应用 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6cb729533107d511fa0cc863ec6ab842e7624982
+ms.openlocfilehash: 78cf5472a6069e09b5072253635066d95094a89e
+
 
 ---
 
@@ -69,6 +63,7 @@ ms.suite: ems
 >[&larr;**注册设备**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)[**配置后任务**&rarr;](.\post-configuration-tasks.md)  
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

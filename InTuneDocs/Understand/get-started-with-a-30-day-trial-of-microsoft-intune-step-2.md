@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 向 Microsoft Intune 的 30 天评估添加用户 | Microsoft Intune
-description:
-keywords:
+title: "向 Microsoft Intune 的 30 天评估添加用户 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6cb729533107d511fa0cc863ec6ab842e7624982
+ms.openlocfilehash: 15e641f4f5f60c4a3eb3a7b09cab8cb9ef788cba
+
 
 ---
 
@@ -84,6 +78,7 @@ ms.suite: ems
 >[&larr;**注册评估**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**创建组** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: 策略推出 | Microsoft Intune
-description:
-keywords:
+title: "策略推出 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # 策略推出
 本主题针对在 Microsoft Intune 中策略的分阶段推出提供了具体的建议。 此方法适用于你在新的 Intune 部署中应用的第一个策略，或者你添加到现有部署的策略。
 
-有关推出阶段的一般信息，请参阅 [Microsoft Intune 部署的推出阶段](rollout-phases-for-microsoft-intune-deployment.md)
+有关推出阶段的常规信息，请参阅[Microsoft Intune 部署的推出阶段](rollout-phases-for-microsoft-intune-deployment.md)。
 
 ### 策略推出的阶段
 策略推出的阶段是：
@@ -61,7 +55,7 @@ ms.suite: ems
 ## 概念证明
 在概念证明阶段，在实验室环境中对已严格配置为用于测试目的的设备和用户进行策略部署测试。
 
--   让支持人员参与此阶段，以了解试点和生产部署期间可能出现的问题。 [排查 Microsoft Intune 中的策略问题](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)中提供了故障排除信息
+-   让支持人员参与此阶段，以了解试点和生产部署期间可能出现的问题。 [排查 Microsoft Intune 中的策略问题](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)中提供了故障排除信息。
 
 -   此时应当为试点和生产用户制定沟通计划。 该计划至少应包括以下内容：将改变的设备行为是什么以及何时改变、改变的业务目的为何，以及如果用户或 IT 人员遇到问题时要采取的措施（包括自助服务信息和如何与支持人员联系）。
 
@@ -102,6 +96,7 @@ ms.suite: ems
 [排查 Microsoft Intune 中的策略问题](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

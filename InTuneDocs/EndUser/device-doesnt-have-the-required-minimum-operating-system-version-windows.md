@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 设备没有必需的最低操作系统版本 | Microsoft Intune
-description:
-keywords:
+title: "设备没有必需的最低操作系统版本 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 12e559f51419da6c3edfa7af1d8b0f09c99e4caa
+
 
 ---
 
@@ -42,6 +36,7 @@ Windows 设备不满足 IT 部门要求的最低操作系统版本。 更新移�
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

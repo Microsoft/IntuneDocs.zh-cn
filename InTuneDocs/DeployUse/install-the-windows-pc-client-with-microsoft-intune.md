@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用 Microsoft Intune 安装 Windows PC 客户端 | Microsoft Intune
-description:
-keywords:
+title: "使用 Microsoft Intune 安装 Windows PC 客户端 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -46,11 +40,11 @@ ms.suite: ems
 
 -   [安装 Microsoft Intune 客户端软件作为映像的一部分](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
-如果不再需要使用 Intune 管理计算机，你可以停用计算机，这样即可同时从计算机中删除客户端软件。 有关详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows PC 管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+如果不再需要使用 Intune 管理计算机，你可以停用计算机，这样即可同时从计算机中删除客户端软件。 有关详细信息，请参阅[Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
 
 ### 下载客户端软件
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“管理员” &gt; “客户端软件下载”
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“管理”&gt;“客户端软件下载”
 
   ![下载 Intune PC 客户端](./media/pc-SA-client-download.png)
 
@@ -61,12 +55,14 @@ ms.suite: ems
 
 3.  将安装程序包的内容提取到网络上的安全位置。
 
+    > [!IMPORTANT]
     > 请不要重命名或删除提取的 **ACCOUNTCERT** 文件，否则客户端软件安装将失败。
 
 ### 手动部署客户端软件
 
 1.  在计算机上，浏览到客户端软件安装文件所在的文件夹，然后运行“Microsoft_Intune_Setup.exe”来安装客户端软件。
 
+    > [!NOTE]
     > 当你将鼠标悬停在客户端计算机上任务栏中的图标上时，将显示安装的状态。
 
 ### 使用组策略自动部署客户端软件
@@ -79,6 +75,7 @@ ms.suite: ems
 
 2.  将“Microsoft_Intune_x86.msi”文件、“Microsoft_Intune_x64.msi”文件和“MicrosoftIntune.accountcert”文件复制到要安装客户端软件的所有计算机都可访问的一个网络位置。
 
+    > [!IMPORTANT]
     > 请不要分隔或重命名文件，否则客户端软件安装将失败。
 
 3.  使用组策略将软件部署到网络上的计算机。
@@ -99,13 +96,13 @@ ms.suite: ems
 
 1.  从你要注册的计算机上登录到公司门户。
 
-2.  单击“添加设备”
+2.  单击“添加设备” 。
 
-3.  单击“下载软件”，然后单击“运行”
+3.  单击“下载软件”  ，然后单击“运行” 。
 
 4.  单击“下一步”启动 Microsoft Intune 安装向导。
 
-5.  安装向导完成后，单击“完成”
+5.  安装向导完成后，单击“完成” 。
 
 ### 安装 Microsoft Intune 客户端软件作为映像的一部分
 通过使用以下示例过程作为基础，你可以将 Intune 客户端软件作为操作系统映像的一部分部署到计算机：
@@ -142,7 +139,7 @@ ms.suite: ems
 
 ### 通过 Microsoft Intune 管理员控制台验证客户端软件的安装
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“组” &gt; >“所有设备” &gt; >“所有计算机”
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“组”&gt;“所有设备”&gt;“所有计算机”。
 
 2.  向下滚动计算机的列表以查找与 Intune 通信的被管理的计算机，或者在“搜索设备”框中键入计算机名或任何部分名称来搜索特定被管理的计算机。
 
@@ -150,12 +147,13 @@ ms.suite: ems
 
 ### 创建显示所有注册计算机的计算机清单报表
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“报表” &gt; “计算机清单报表”
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“报表”&gt;“计算机清单报表”。
 
-2.  在“创建新报表”页上，将所有字段保留为默认值（除非你要应用筛选器），并单击“查看报表”
+2.  在“创建新报表”  页上，将所有字段保留为默认值（除非你要应用筛选器），并单击“查看报表” 。
 
 3.  “计算机清单报告”页面会在新窗口中打开，窗口中会显示所有已在 Intune 中成功注册的计算机。
 
+    > [!TIP]
     > 单击报表中的任何列标题以按该列的内容对列表进行排序。
 
 
@@ -163,6 +161,7 @@ ms.suite: ems
 [使用 Microsoft Intune 管理 Windows PC](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

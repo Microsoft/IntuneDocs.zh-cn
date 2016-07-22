@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 重置（清除）丢失或被盗设备 | Microsoft Intune
-description:
-keywords:
+title: "重置（清除）丢失或被盗设备 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 63799f8242db4618ea7b71af9608e30b98a8a27a
+
 
 ---
 
@@ -32,7 +26,8 @@ ms.suite: ems
 
 若要了解重置设备时会发生什么情况，请参阅[使用公司门户重置设备会发生什么情况](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)。
 
-> [!WARNING]将设备重置为出厂默认值会删除设备中个人信息和工作单位或学校信息。
+> [!WARNING] 
+> 将设备重置为出厂默认值会删除设备中的个人信息和工作单位或学校信息。
 
 1.  在浏览器中，打开[公司门户网站](http://portal.manage.microsoft.com)，并登录到你的工作单位或学校帐户。
 
@@ -47,6 +42,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

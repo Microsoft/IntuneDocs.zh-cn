@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 规划用户和设备组 | Microsoft Intune
-description:
-keywords:
+title: "规划用户和设备组 | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Intune 提供九个无法编辑或删除的内置组： <!--maybe a screen shot 
 
 在我们的示例中，我们还创建了中东和亚洲组 (MEA)。
 
-> [!NOTE]如果组成员身份不是基于安全组成员资格填充的，请检查是否已将 Intune 许可证分配给这些成员。
+> [!NOTE]
+> 如果组成员身份不是基于安全组成员资格填充，请检查是否已将 Intune 许可证分配给这些成员。
 
 ### 针对特定硬件的组
 如果你的组织要求应用于特定硬件类型的策略，你可以创建基于此要求的组。 你可以把它们建立在你已在本地 AD 中创建的特定组的基础上，然后将它们同步到 Azure AD。 还可以直接在 Azure AD 中创建它们。 在此示例中，我们使用“美国用户组”作为“笔记本电脑用户”组的父组。
@@ -174,7 +169,8 @@ Intune 提供九个无法编辑或删除的内置组： <!--maybe a screen shot 
 
 按照前面示例中的相同方法，我们可以基于使用特定操作系统平台的用户<!--devices?-->创建组。
 
-> [!NOTE]如果有用户使用多个移动平台/操作系统且你没有自动将用户分类为 Android 用户、iOS 用户或 Windows 用户的方法，那么请考虑在设备级别应用策略，这将让你在应用特定于操作系统的策略时能够更加灵活。
+> [!NOTE]
+> 如果有用户使用多个移动平台/操作系统且你没有自动将用户分类为 Android 用户、iOS 用户或 Windows 用户的方法，那么请考虑在设备级别应用策略，这将让你在应用特定操作系统策略时有更好的灵活性。
 >
 > 不能基于设备的操作系统动态预配组。 使用 AD 或 AAD 安全组执行此操作。
 
@@ -218,6 +214,7 @@ Intune 提供九个无法编辑或删除的内置组： <!--maybe a screen shot 
 [创建组](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

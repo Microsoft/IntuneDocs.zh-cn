@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune 中的条款和条件策略设置 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune 中的条款和条件策略设置 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8079ca5abcedbe024fb6347e02c7cf61ae541a30
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 ## 创建条款和条件策略
 
-1.  在 [Microsoft Intune 管理员控制台](http://manage.microsoft.com)中，单击“策略” &gt; “条款和条件”
+1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
     ![条款和条件策略屏幕快照](./media/pol-sa-terms-conditions.png)
 
@@ -54,17 +48,17 @@ ms.suite: ems
 
 ## 部署条款和条件策略
 
-1.  在 [Microsoft Intune 管理员控制台](http://manage.microsoft.com)中，单击“策略” &gt; “条款和条件”
+1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
-2.  在“条款和条件策略”列表中，选择要部署的策略，然后单击“管理部署”
+2.  在“条款和条件策略”列表中，选择要部署的策略，然后单击“管理部署”。
 
-3.  在“管理部署”对话框中，选中要对其部署策略的用户组，然后单击“确定”
+3.  在“管理部署”对话框中，选中要对其部署策略的用户组，然后单击“确定”。
 
     当目标用户访问公司门户时，Intune 将显示部署的条款和条件。 用户必须接受这些条款，然后才能访问公司资源。
 
 ## 监视条款和条件策略
 
-1.  在 [Microsoft Intune 管理员控制台](http://manage.microsoft.com)中，单击“策略” &gt; “条款和条件”
+1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
 2.  在“创建新报告”窗口中，单击“查看报告”。 此时将打开详细说明用户接受了你部署的哪些条款和条件的报告。
 
@@ -73,9 +67,9 @@ ms.suite: ems
 
 ## 如何使用多个版本的条款和条件
 
-1.  在 [Microsoft Intune 管理员控制台](http://manage.microsoft.com)中，单击“策略” &gt; “条款和条件”
+1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
-2.  选择要编辑的条款和条件策略，然后单击“编辑”
+2.  选择要编辑的条款和条件策略，然后单击“编辑”。
 
 3.  在“编辑条款和条件”页上，进行任何所需的编辑，然后指定该新版本是要求所有用户都接受条款和条件，还是仅新用户能看到新版本。
 
@@ -85,6 +79,7 @@ ms.suite: ems
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

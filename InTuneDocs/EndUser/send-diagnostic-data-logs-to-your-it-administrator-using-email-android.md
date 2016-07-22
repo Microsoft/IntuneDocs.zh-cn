@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用电子邮件将诊断数据日志发送给 IT 管理员 | Microsoft Intune
-description:
-keywords:
+title: "使用电子邮件将诊断数据日志发送给 IT 管理员 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+
 
 ---
 
@@ -37,12 +31,12 @@ ms.suite: ems
 2.  点击**菜单** &gt; **设置**。
 
     > [!NOTE] 
-    >  **菜单**可以是软件按钮，也可以是硬件按钮，具体取决于你拥有的 Android 设备类型。
+    > “菜单”可以是软件按钮，也可以是硬件按钮，具体取决于你拥有的 Android 设备类型。
 
 3.  在“诊断数据”下，点击“发送数据”。
 
     > [!NOTE]
-    >  **如果你仅使用 Android 6.0 或更高版本的设备：**点击**发送数据**时，将显示消息**是否允许公司门户访问你设备上的照片、媒体和文件?**。 
+    > **如果你仅使用 Android 6.0 或更高版本的设备：**点击“发送数据”时，将显示消息“是否允许公司门户访问你设备上的照片、媒体和文件?”。 
 
     此消息有误导性，因为**Microsoft 绝不会访问你设备上的照片、媒体或文件！** 消息文本由 Google 管控，Microsoft 无法更改。  允许访问就意味着允许你的设备将数据日志写入设备的 SD 卡中，这可使你通过使用 USB 电缆移动这些日志。
 
@@ -54,6 +48,7 @@ ms.suite: ems
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

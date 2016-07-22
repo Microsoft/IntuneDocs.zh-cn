@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 管理 Windows 电脑软件的许可协议 | Microsoft Intune
-description:
-keywords:
+title: "管理 Windows 电脑软件的许可协议 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 575b8525b8b99d06358a911b8deb24ee5de48fe1
+
 
 ---
 
@@ -45,7 +39,8 @@ ms.suite: ems
 
 此外，还可以生成报表，这些报表显示软件产品的安装计数和许可证计数。 许可证报表可帮助你评估 Microsoft 软件和非 Microsoft 软件标题的完整许可证位置。
 
-> [!TIP]在至少使用 Intune Windows 电脑客户端管理一台 Windows 电脑后，管理员控制台中才会显示**许可证**工作区。
+> [!TIP]
+> 在使用 Intune Windows PC 客户端管理至少一台 Windows PC 后，“许可证”工作区才会显示在管理员控制台中。
 
 ## 添加 Microsoft 批量许可协议
 Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软件的许可证信息。 可通过提供匹配的协议编号对将 Microsoft 批量许可协议添加到 Intune 中。 协议或授权编号必须与正确的许可证或注册编号匹配。 协议编号对是在购买许可协议时通过 [批量许可服务中心 (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)获得的。
@@ -96,7 +91,8 @@ Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软�
 
         -   **许可证/注册/客户编号** - 输入许可证对的许可证/注册/客户编号。
 
-        > [!NOTE]如果添加若干个协议编号对，则 Intune 会用你指定的名称创建一个协议，你添加的所有对都将是此协议的一部分。
+        > [!NOTE]
+        > 如果添加若干个协议编号对，则 Intune 会用你指定的名称创建一个协议，你添加的所有对都将是此协议的一部分。
 
     可以单击**+**来添加另一个协议编号对，或单击**-**来删除已经输入的协议编号对。
 
@@ -114,7 +110,8 @@ Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软�
 
 要在 Intune 中添加许可协议之后更新批量许可证信息，请在“许可证概述”页中单击“立即刷新”。 此操作会从 [Microsoft 批量许可服务中心 (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)中检索当前许可证信息。
 
-> [!IMPORTANT]在刷新批量许可信息之前，你可能会在协议列表中看到不同的信息，并且可能会在**协议概述**页上看到授权信息。
+> [!IMPORTANT]
+> 在刷新批量许可信息之前，你可能会在协议列表中看到不同的信息，并且可能会在“协议概述”  页上看到授权信息。
 
 刷新批量许可证信息之后，可以将该许可证信息与“应用”  工作区中检测到的 Microsoft 软件进行比较。 还可以运行以下许可证报表：
 
@@ -122,7 +119,8 @@ Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软�
 
 -   **许可证安装报告** - 帮助你确定许可协议范围是否足够大。
 
-> [!NOTE]针对所有 Microsoft 批量许可证协议显示的**产品标题**为**不可用**。
+> [!NOTE]
+> 针对所有 Microsoft 批量许可证协议显示的“产品标题”  为“不可用” 。
 
 ## 添加和编辑其他软件许可协议
 除了 Microsoft 批量许可协议之外，还可以向 Intune 中添加其他类型的许可协议。 这些协议可以包括通过零售商购买的非 Microsoft 软件或 Microsoft 软件。
@@ -184,6 +182,7 @@ Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

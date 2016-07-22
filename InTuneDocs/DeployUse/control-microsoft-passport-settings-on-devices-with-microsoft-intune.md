@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 控制设备上的 Microsoft Passport 设置 | Microsoft Intune
-description:
-keywords:
+title: "控制设备上的 Microsoft Passport 设置 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+
 
 ---
 
@@ -57,7 +51,8 @@ Intune 以两种方式与 Passport for Work 集成：
     - **允许** — 用户可以在其 PIN 中使用该字符类型，但不强制使用。
     - **必需** — 用户在其 PIN 中必须至少包含其中一种字符类型。 例如，常见的做法是要求包含至少一个大写字母和一个特殊字符。
     - **不允许**（默认）— 用户不得在其 PIN 中使用这些字符类型（这也是不配置此设置时的行为）。
-    > [!TIP] 特殊字符包括：**! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**。
+    > [!TIP]
+    > 特殊字符包括：**！" # $ % &amp; ' ( ) &#42;+ , - ./ : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96;{& #124;}~**。
 - **PIN 有效期(天)** — 比较好的一种做法是指定 PIN 的有效期，在超过此期限后，最终用户必须更改该 PIN。 默认值为 41 天。 
 - **记住 PIN 历史记录** — 使用此设置来限制重用以前用过的 PIN。 默认情况下不能重用最近使用的 5 个 PIN。
 
@@ -79,6 +74,7 @@ Intune 以两种方式与 Passport for Work 集成：
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

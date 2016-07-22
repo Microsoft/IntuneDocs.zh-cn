@@ -1,5 +1,5 @@
 Microsoft Intune 管理员控制台
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

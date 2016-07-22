@@ -1,25 +1,21 @@
 ---
-title: 配置 PFX 证书基础结构 |Microsoft Intune
-description:
-keywords:
+title: "配置 PFX 证书基础结构 |Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6edb37708d26033358af30c47e955b20caedb6fd
+ms.openlocfilehash: 51def9dc80043bbf5a71578fb44cae9259fd48b1
+
 
 
 ---
@@ -51,7 +47,7 @@ ms.suite: ems
  > [!NOTE]           
 > -    承载 WAP 的服务器 [必须安装此更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](http://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](http://support.microsoft.com/kb/3011135)。
 >-  此外，托管 WAP 的服务器必须具有与要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
-有关 WAP 证书的信息，请参阅[计划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的“计划证书”部分。 有关 WAP 服务器的一般信息，请参阅 [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx)（使用 Web 应用程序代理）。|
+    有关 WAP 证书的信息，请参阅[计划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的“计划证书”部分。 有关 WAP 服务器的一般信息，请参阅 [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx)（使用 Web 应用程序代理）。|
 
 
 ### 证书和模板
@@ -82,12 +78,14 @@ ms.suite: ems
 
     -   在 **“扩展”** 选项卡上，确保 **“应用程序策略描述”** 包括了 **“客户端身份验证”**。
 
-        > [!IMPORTANT] 对于 iOS 和 Mac OS X 证书模板，在**扩展**选项卡上编辑**密钥用法**并确保未选择**数字签名为原件的证明**。
+        > [!IMPORTANT]
+        > 对于 iOS 和 Mac OS X 证书模板，在“扩展”选项卡上编辑“密钥用法”并确保未选择“数字签名为原件的证明”。
 
 
 3.  在模板的 **“常规”** 选项卡上查看 **“有效期”** 。 默认情况下，Intune 使用在模板中配置的值。 但是，你可以选择配置 CA 以允许请求者指定不同的值，随后你也能够在 Intune 管理员控制台设置该值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
 
-    > [!IMPORTANT] 无论你所做出的其他配置是什么，iOS 和 Mac OS X 平台都始终使用模板中设置的值。
+    > [!IMPORTANT]
+    > 无论你所做出的其他配置是什么，iOS 和 Mac OS X 平台都始终使用模板中设置的值。
 
     若要配置 CA 以允许请求者指定有效期，请在 CA 上运行以下命令：
 
@@ -134,7 +132,8 @@ ms.suite: ems
 
 4.  向导完成后，关闭向导前，单击“启动证书连接器 UI” 。
 
-    > [!TIP] 如果在启动证书连接器 UI 前关闭了向导，你可以通过运行以下命令重新打开它：
+    > [!TIP]
+    > 如果在启动证书连接器 UI 前关闭了向导，你可以通过运行以下命令重新打开它：
     >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -158,6 +157,7 @@ ms.suite: ems
 你现在可以像[配置证书配置文件](Configure-Intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

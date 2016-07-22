@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows 用户如何获取其应用 | Microsoft Intune
-description:
-keywords:
+title: "Windows 用户如何获取其应用 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9d867202b8b3cc5e6ed77d97bcfddce2beabdd40
+ms.openlocfilehash: f226ea2a7be64ef759f61c61903bb0dc964c1410
+
 
 ---
 
@@ -38,10 +32,12 @@ ms.suite: ems
 
 **非托管应用** - 可以通过策略管理并且未由 Intune 包装或未包含 Intune MAM SDK 的应用。 应用程序策略不能应用于这些应用。
 
-###另请参阅 [Android 用户如何获取其应用](how-your-android-users-get-their-apps.md)。</br>
+###另请参阅
+[Android 用户如何获取其应用](how-your-android-users-get-their-apps.md)</br>
 [iOS 用户如何获取其应用](how-your-ios-users-get-their-apps.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

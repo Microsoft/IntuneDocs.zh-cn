@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune 的发行说明 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune 的发行说明 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 1906f14568484ebbf23ac7c4350964fb2d5d508f
+
 
 ---
 
@@ -63,9 +57,9 @@ Microsoft 将继续与 Samsung 紧密合作，共同研究出修复程序和其�
 
 **解决方法：**对于必须在需要使用已验证代理服务器的网络上注册的 Windows 8.1 设备，在注册设备之前，请为代理服务器配置并保存凭据。 在 Windows 8.1 设备上配置和保存凭据：
 
-1.  在 Windows 8.1 设备上，打开“Internet Explorer”
+1.  在 Windows 8.1 设备上，打开“Internet Explorer”。
 
-2.  提示输入代理服务器凭据时，请输入凭据，然后选择“记住我的凭据”选项
+2.  提示输入代理服务器凭据时，请输入凭据，然后选择“记住我的凭据” 选项。
 
 3.  注册该设备。
 
@@ -78,7 +72,7 @@ Microsoft 将继续与 Samsung 紧密合作，共同研究出修复程序和其�
 ## 适用于 Android 的 Microsoft Intune 应用包装工具没有内置卸载功能
 **问题：****适用于 Android 的 Microsoft 应用包装工具**没有用于卸载该工具的内置功能。
 
-**解决方法：** 浏览到安装工具的位置，并删除该目录。 默认安装位置为：**C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**。 有关应用包装工具的详细信息，请参阅[使用应用包装工具准备管理 Android 应用](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+**解决方法：** 浏览到安装工具的位置，并删除该目录。 默认安装位置为：**C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**。 有关应用包装工具的详细信息，请参阅[使用应用包装工具准备管理 Android 应用](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)。
 
 ## 远程协助在运行 Windows 8 或 Windows 8.1 的计算机上不可用
 **问题：** 在此版本中，远程协助功能在运行 Windows 8 或 Windows 8.1 的计算机上不可用。
@@ -96,6 +90,7 @@ Azure 预览门户构建在新平台上并支持以下语言 - 中文（简体�
 Intune 管理控制台和面向移动体验的最终用户除了 Azure 预览门户中支持的所有语言外，还支持丹麦语、希腊语、芬兰语、挪威语和罗马尼亚语。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

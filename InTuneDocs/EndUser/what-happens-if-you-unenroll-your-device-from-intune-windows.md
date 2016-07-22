@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 从 Intune 取消注册设备会发生什么情况？ | Microsoft Intune
-description:
-keywords:
+title: "从 Intune 取消注册设备会发生什么情况？ | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
+ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+
 
 ---
 
@@ -43,7 +37,8 @@ ms.suite: ems
 
 -   从计算机中删除 Intune Endpoint Protection 软件。 如果计算机安装了其他病毒保护软件，并且该软件处于禁用状态，则删除 Intune Endpoint Protection 之后，可能会重新启用该软件。 在从公司门户中将你的计算机删除之后，你应对其进行检查。
 
-    > [!IMPORTANT]如果未重新启用其他病毒保护软件或未安装其他病毒保护软件，你的计算机可能容易受到病毒和恶意软件的攻击。
+    > [!IMPORTANT]
+    > 如果未重新启用其他病毒保护软件或未安装其他病毒保护软件，你的计算机可能容易受到病毒和恶意软件的攻击。
 
 -   将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机）。
 
@@ -97,6 +92,7 @@ ms.suite: ems
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

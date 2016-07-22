@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 准备注册设备 | Microsoft Intune
-description:
-keywords:
+title: "准备注册设备 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
+ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+
 
 ---
 
@@ -48,7 +42,8 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 在 Intune 公司门户中，用户可以访问公司数据和执行常见任务，比如注册设备、安装应用，以及查找信息以从 IT 部门获得帮助。
 
-> [!TIP] 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。
+> [!TIP]
+> 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。
 
 自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 若要实现此操作，只需以租户或服务管理员的身份登录 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)，选择**管理员** &gt; **公司门户**，然后配置公司门户的设置。
 
@@ -113,6 +108,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
  - [使用 IMEI 号码指定公司拥有的设备](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)以帮助注册设备和目标策略
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 针对残障人士的辅助功能 | Microsoft Intune
-description:
-keywords:
+title: "针对残障人士的辅助功能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a503548-434c-410a-a419-7eadd7e7fb99
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: c666275027344d2972a94bb515ca32109936290a
+
 
 ---
 
@@ -35,6 +29,7 @@ Microsoft 致力于让所有用户更轻松地使用其产品和服务。 以下
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

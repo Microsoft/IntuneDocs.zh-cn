@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 策略疑难解答 | Microsoft Intune
-description:
-keywords:
+title: "策略疑难解答 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
+ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+
 
 ---
 
@@ -53,12 +46,13 @@ ms.suite: ems
 
 ![Intune 设备策略](../media/Intune-Device-Policy-v.2.jpg)
 
+> [!NOTE]
 > [!NOTE] 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
 
 ## 策略刷新和更新间隔
 请注意，策略将定期刷新和更新。 一般情况下，应在进行更改后 15 分钟内在设备上注册策略。 以下是有关策略定期刷新的详细信息：
 
--   **针对 MDM 注册的 Windows 设备**：每天在当地时间上午 3:00 由计划的任务在设备上触发。
+-   **针对 MDM 注册的 Windows 设备**：Windows 8.1 和 Windows 10 设备每 8 小时更新一次策略，Windows RT 设备每 24 小时更新一次策略。
 
 -   **Windows Phone**：每 8 小时更新一次策略。 这可以通过在“设置”下的“公司门户”中刷新来强制进行。
 
@@ -75,6 +69,7 @@ ms.suite: ems
 
 2.  等待 20 分钟，以便删除客户端软件。
 
+    > [!NOTE]
     > [!NOTE]请勿尝试从“程序和功能”中删除客户端。
 
 3.  在开始菜单上，键入 **UAC** 以打开用户帐户控制设置。
@@ -116,6 +111,7 @@ Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策�
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

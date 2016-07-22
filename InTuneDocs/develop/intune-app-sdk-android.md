@@ -1,38 +1,32 @@
 ---
-# required metadata
-
-title: Microsoft Intune App SDK for Android 开发人员指南 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune App SDK for Android 开发人员指南 | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Microsoft Intune App SDK for Android 开发人员指南
 
-> [!NOTE] 建议首先阅读 [Intune App SDK 概述](intune-app-sdk.md)，该文档涵盖 SDK 的当前功能并介绍了如何在每个受支持的平台上准备集成。 
+> [!NOTE]
+> 你可能希望首先阅读 [Intune App SDK 概述](intune-app-sdk.md)，该文档涵盖 SDK 的当前功能并介绍了如何在每个受支持的平台上准备集成。 
 
 # 该 SDK 包含的内容 
 
-Intune App SDK for Android 是没有外部依赖项的标准 Android 库。 
-该 SDK 由以下内容组成:  
+Intune App SDK for Android 是没有外部依赖项的标准 Android 库。 该 SDK 由以下内容组成:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**：在应用中启用 MAM，以及启用与 Microsoft Intune 公司门户应用的互操作性所需的接口。 应用必须指定它作为 Android 库引用。
 
@@ -370,6 +364,7 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 * 避免以不明确的方式使用任何 API。 例如，不检查 requestCode 的 `Activity.startActivityForResult/onActivityResult` 会导致奇怪的行为。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

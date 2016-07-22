@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows PC 的防火墙策略 | Microsoft Intune
-description:
-keywords:
+title: "Windows PC 的防火墙策略 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
@@ -36,10 +30,11 @@ Microsoft Intune 可通过多种方式保护你使用 Intune 管理的 Windows P
 利用 Windows 防火墙策略，你能够创建和部署用于在被管理的 PC 上控制 Windows 防火墙的设置。 你无法管理 Windows 防火墙的自定义例外，这些设置不影响第三方防火墙。
 
 > [!NOTE]
-> 如果将 Microsoft Intune 策略和组策略都配置为管理 PC 上的相同设置，则组策略设置将替代 Microsoft Intune 策略。 有关如何避免 Intune 策略与组策略之间的冲突的信息，请参阅[解决 GPO 与 Microsoft Intune 之间的策略冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+> 如果将 Microsoft Intune 策略和组策略都配置为管理 PC 上的相同设置，则组策略设置将替代 Microsoft Intune 策略。 有关如何避免 Intune 策略与组策略之间的冲突的信息，请参阅[解决 GPO 与 Microsoft Intune 之间的策略冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 >
 > 如果你想要将 Windows 防火墙设置部署到运行 Windows Vista 的计算机，则必须先安装 [热修复补丁 KB971800](http://support2.microsoft.com/kb/971800) 到这些计算机上。
 
+> [!IMPORTANT]
 > 若要使用 Intune 管理 Windows 防火墙，必须确保在将要托管的计算机上启用以下两项服务：
 >
 > -   Windows 防火墙
@@ -47,7 +42,7 @@ Microsoft Intune 可通过多种方式保护你使用 Intune 管理的 Windows P
 
 ## 配置 Windows 防火墙策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略” &gt; “添加策略”
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略”&gt;“添加策略”。
 
 2.  配置和部署 **Windows 防火墙设置** 策略。 你可以使用建议的设置，或对设置进行自定义。 如果你需要有关如何创建和部署策略的详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
 
@@ -67,6 +62,7 @@ Microsoft Intune 可通过多种方式保护你使用 Intune 管理的 Windows P
 
 这些策略设置可将 Windows 防火墙配置为在被管理的计算机连接到域（例如，在工作区）、专用（可信）网络（例如家庭网络）或不可信的公共网络（如咖啡店）时阻止传入网络流量。 以上每个设置的默认值都是“是”，这是最安全的值。 
 
+> [!IMPORTANT]
 > 如果你的环境中包括运行 Windows Vista（未安装 Service Pack）的托管计算机，则必须安装与 Microsoft 知识库 [文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或在部署到这些计算机的策略中禁用“阻止所有传入连接”  策略设置。
 
 ### Windows 防火墙阻止新程序时通知用户
@@ -122,6 +118,7 @@ Microsoft Intune 可通过多种方式保护你使用 Intune 管理的 Windows P
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

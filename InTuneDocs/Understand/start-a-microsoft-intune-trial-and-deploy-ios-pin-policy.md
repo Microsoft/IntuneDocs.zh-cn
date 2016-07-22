@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: 开始试用 Microsoft Intune 试用版并部署 iOS PIN 策略 | Microsoft Intune
-description:
-keywords:
+title: "开始试用 Microsoft Intune 试用版并部署 iOS PIN 策略 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
 # 开始试用 Microsoft Intune 试用版并部署 iOS PIN 策略
-这些分步说明将帮助你进行 Intune 试用版的设置，并为 iOS 设备配置 PIN 策略。 有关可以尝试的一系列其他常见 Intune 评估任务，请参阅[常见 Microsoft Intune 评估任务](common-microsoft-intune-evaluation-tasks.md)
+这些分步说明将帮助你进行 Intune 试用版的设置，并为 iOS 设备配置 PIN 策略。 有关可以尝试的一系列其他常见 Intune 评估任务，请参阅[常见 Microsoft Intune 评估任务](common-microsoft-intune-evaluation-tasks.md)。
 
 
 
@@ -39,13 +33,14 @@ ms.suite: ems
 -   试用版注册时进行身份验证的电话
 
 ## 创建免费的 Intune 试用帐户
+> [!NOTE]
 > 如果你已经订阅了 Intune，请跳过这部分进入下一部分。
 
-1.  使用 Windows 电脑，右键单击“Internet Explorer”(IE)，选择“InPrivate 浏览”
+1.  使用 Windows 电脑，右键单击“Internet Explorer”(IE)，选择“InPrivate 浏览”。
 
     ![启动 InPrivate 浏览](../media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
-2.  转到 [Intune 注册门户](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1)，提供所需信息，然后单击“下一步”
+2.  转到 [Intune 注册门户](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1)，提供所需信息，然后单击“下一步”。
 
     ![注册一个帐户](../media/30-day-trial-walkthrus/30day-start-trial-2-abt-you.png)
 
@@ -57,7 +52,7 @@ ms.suite: ems
 
     ![验证你的详细信息](../media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
 
-5.  保存屏幕上的信息，然后单击“你已准备就绪...”
+5.  保存屏幕上的信息，然后单击“你可以转到...”。
 
     ![准备就绪](../media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
@@ -79,11 +74,11 @@ ms.suite: ems
 
     3.  清除“用户下次登录时须更改密码”复选框。
 
-    4.  单击“创建”
+    4.  单击“创建”。
 
     ![新建用户帐户](../media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
 
-4.  在用户创建确认页面上，单击“关闭”
+4.  在用户创建确认页面上，单击“关闭”。
 
     ![用户创建确认页](../media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
 
@@ -105,11 +100,11 @@ ms.suite: ems
 
 2.  启用 iOS 设备注册。 此过程在 Apple 推送通知服务 (APNs) 和你的 Intune 订阅之间设置了一个可信证书。
 
-    1.  单击“启用 iOS 和 Mac OS X 平台”
+    1.  单击“启用 iOS 和 Mac OS X 平台”。
 
         ![启用 iOS 和 Mac OS X 注册](../media/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png)
 
-    2.  单击“下载 APNs 证书请求”
+    2.  单击“下载 APN 证书请求”。
 
         ![下载 APNs 证书](../media/30-day-trial-walkthrus/30day-cfg-pol-14-dwnld-cert-reqst.png)
 
@@ -125,19 +120,19 @@ ms.suite: ems
 
         ![登录到 Apple Push Certificates portal（Apple 推送证书门户）](../media/30-day-trial-walkthrus/30day-cfg-pol-17-id-passw-signin.png)
 
-    6.  单击“创建证书”
+    6.  单击“创建证书”。
 
         ![创建 APNs 证书](../media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
 
-    7.  阅读 Apple 的使用条款，选中复选框，然后单击“接受”
+    7.  阅读 Apple 的使用条款，选中复选框，然后单击“接受”。
 
         ![接受条款](../media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
-    8.  单击“浏览”
+    8.  单击“浏览”。
 
         ![浏览到保存证书的位置](../media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
 
-    9. 选择之前保存的 CSR 文件，然后单击“打开”
+    9. 选择之前保存的 CSR 文件，然后单击“打开”。
 
         ![打开该证书](../media/30-day-trial-walkthrus/30day-cfg-pol-21-CSRfile-open.png)
 
@@ -145,43 +140,43 @@ ms.suite: ems
 
         ![上载证书](../media/30-day-trial-walkthrus/30day-cfg-pol-22-upld-reqst.png)
 
-    11. 系统提示你下载 JSON 文件时，单击“另存为”
+    11. 系统提示你下载 JSON 文件时，单击“另存为”。
 
         ![保存 JSON 文件](../media/30-day-trial-walkthrus/30day-cfg-pol-23-json-saveas.png)
 
-    12. 指定 JSON 文件的位置，然后单击“保存”
+    12. 指定 JSON 文件的位置，然后单击“保存”。
 
         ![指定保存 JSON 文件的位置](../media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
 
-        如果几秒钟后页面未自动重定向，则单击“取消”
+        如果几秒钟后页面未自动重定向，单击“取消”。
 
         ![如果页面没有重定向，则取消](../media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
-    13. 若要检索新创建的证书文件，请单击“下载”
+    13. 若要检索新创建的证书文件，单击“下载”。
 
         ![下载证书](../media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
 
-    14. 系统提示你下载 PEM 文件时，单击“另存为”
+    14. 系统提示你下载 PEM 文件时，单击“另存为”。
 
         ![下载 PEM 文件](../media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
 
-    15. 指定 PEM 文件的位置，然后单击“保存”
+    15. 指定 PEM 文件的位置，然后单击“保存”。
 
         ![保存 PEM 文件](../media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
 
-    16. 返回到 Intune 管理控制台选项卡，然后单击“上传 APNs 证书”
+    16. 返回到 Intune 管理控制台选项卡，然后单击“上传 APN 证书”。
 
         ![上传 APNs 证书](../media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
 
-    17. 输入你的 Apple ID，然后单击“浏览”
+    17. 输入你的 Apple ID，然后单击“浏览”。
 
         ![输入你的 Apple ID](../media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
 
-    18. 选择刚才保存的 PEM 文件，然后单击“打开”
+    18. 选择刚才保存的 PEM 文件，然后单击“打开”。
 
         ![打开 PEM 文件](../media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
 
-    19. 单击“上传”
+    19. 单击“上传”。
 
         ![上传 PEM 文件](../media/30-day-trial-walkthrus/30day-cfg-pol-32-pem-upload.png)
 
@@ -191,37 +186,37 @@ ms.suite: ems
 
 3.  为策略目标创建一个测试用户组：
 
-    1.  在左窗格中，单击“组”
+    1.  在左窗格中，单击“组”。
 
         ![打开组](../media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
-    2.  在最右侧，单击“创建组”
+    2.  在最右侧，单击“创建组”。
 
         ![创建组](../media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
-    3.  设置组名称，选择“所有用户”作为父组，然后单击“下一步”
+    3.  设置组名称，选择“所有用户”作为父组，然后单击“下一步”。
 
         ![选择“所有用户”作为父组](../media/30-day-trial-walkthrus/30day-cfg-pol-36-name-group.png)
 
-    4.  在“组成员资格开始为”字段中，选择“父组中的所有用户”，然后单击“完成”
+    4.  在“组成员资格开始为”字段中，选择“父组中的所有用户”，然后单击“完成”。
 
         ![组成员资格开始为父组](../media/30-day-trial-walkthrus/30day-cfg-pol-37-all-users-group.png)
 
 4.  创建 iOS PIN 策略并将其设定为测试用户组的目标：
 
-    1.  在左窗格中，单击“策略”
+    1.  在左窗格中，单击“策略”。
 
         ![打开策略工作区](../media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
-    2.  在最右侧，单击“添加策略”
+    2.  在最右侧，单击“添加策略”。
 
         ![添加策略](../media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
 
-    3.  展开 iOS 节点，选择“常规配置”行，然后单击“创建策略”
+    3.  展开 iOS 节点，选择“常规配置”行，然后单击“创建策略”。
 
         ![创建 iOS 常规配置策略](../media/30-day-trial-walkthrus/30day-cfg-pol-40-gen_cfg_pol.png)
 
-    4.  键入策略名称，打开“需要密码才可解锁移动设备”选项，然后将“最短密码长度”设置为“4”
+    4.  键入策略名称，打开“需要密码才可解锁移动设备”，然后将“最短密码长度”设置为“4”。
 
         ![配置密码设置](../media/30-day-trial-walkthrus/30day-cfg-pol-41-name-policy.png)
 
@@ -229,7 +224,7 @@ ms.suite: ems
 
         ![部署策略](../media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
-    6.  单击之前创建的用户组，单击“添加”，然后单击“确定”
+    6.  单击之前创建的用户组，单击“添加”然后单击“确定”。
 
         ![为策略选择组](../media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
@@ -243,7 +238,7 @@ ms.suite: ems
 
     ![安装公司门户](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
 
-2.  输入你的测试用户帐户名和密码，然后点击“登录”
+2.  输入你的测试用户帐户名和密码，然后点击“登录”。
 
     ![提供你的凭据](../media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.png)
 
@@ -251,19 +246,19 @@ ms.suite: ems
 
     ![开始注册](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
-4.  在“安装配置文件”屏幕上，点击“安装”
+4.  在“安装配置文件”屏幕上，点击“安装”。
 
     ![安装配置文件](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
-5.  在“安装配置文件”对话框中，点击“安装”
+5.  在“安装配置文件”对话框中，点击“安装”。
 
     ![继续安装配置文件](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
-6.  在“警告”屏幕上，点击“安装”
+6.  在“警告”屏幕上，点击“安装”。
 
     ![接受警告消息](../media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png)
 
-7.  在“远程管理”对话框中，点击“信任”
+7.  在“远程管理”对话框中，点击“信任”。
 
     ![信任远程管理](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
@@ -275,11 +270,11 @@ ms.suite: ems
 
     ![点击“确定”关闭公司门户应用](../media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.png)
 
-10. 当系统提示你配置密码时，点击“继续”
+10. 当系统提示你配置密码时，点击“继续”。
 
     ![接受提示以配置密码](../media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.png)
 
-11. 输入你的密码，点击“继续”，再次输入你的密码，然后点击“保存”
+11. 输入你的密码，点击“继续”再次输入你的密码，然后点击“保存”。
 
     ![提供一个密码](../media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg)
 
@@ -289,6 +284,7 @@ ms.suite: ems
 [Intune 评估指南](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
