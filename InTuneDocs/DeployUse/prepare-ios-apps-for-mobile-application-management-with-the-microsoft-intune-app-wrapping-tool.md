@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 使用应用包装工具准备管理 iOS 应用 | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "应用包装工具的包装 iOS 应用 | Microsoft Intune"
+description: "使用本题中提供的信息以了解不修改应用代码本身即可包装你的 iOS 应用的方法。 准备应用以便应用移动应用管理策略。"
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+
 
 ---
 
@@ -30,14 +24,14 @@ ms.suite: ems
 
 该工具是在应用周围创建“包装程序”的 Mac OS 命令行应用程序。 处理应用后，可以使用你配置的[移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)来更改应用的功能。
 
-若要下载该工具，请参阅[适用于 iOS 的 Microsoft Intune 应用包装工具](http://www.microsoft.com/en-us/download/details.aspx?id=45218)
+若要下载该工具，请参阅 [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218)。
 
 ## 步骤 1：满足使用应用包装工具的先决条件
 
 |要求|更多信息|
 |---------------|--------------------------------|
 |支持的操作系统和工具集|你必须在运行 OS X 10.8.5 或更高版本的 Mac 计算机上运行应用包装工具，计算机还要安装 XCode 工具集 5 或更高版本。|
-|签名证书和预配配置文件|你必须有 Apple 签名证书和预配配置文件。 请参阅 [Apple 开发人员文档](https://developer.apple.com/)|
+|签名证书和预配配置文件|你必须有 Apple 签名证书和预配配置文件。 请参阅 [Apple 开发人员文档](https://developer.apple.com/)。|
 |使用应用包装工具处理应用|应用必须由你公司或独立软件供应商 (ISV) 开发并签名。 你无法使用该工具处理 Apple Store 中的应用。 应用必须针对 iOS 7.0 或更高版本编写。 应用还必须是地址无关可执行文件 (PIE) 格式。 有关 PIE 格式的更多信息，请参阅 Apple 开发人员文档。 最后，应用的扩展名必须是 **.app** 或 **.ipa** 格式。|
 |包装工具无法处理的应用|加密应用、未签名应用和带有扩展文件属性的应用。|
 |使用 Azure Active Directory 库 (ADAL) 的应用|如果你的应用使用 ADAL，则应用结合的 ADAL 版本必须高于或等于 1.0.2，且开发人员必须授予其应用访问 Intune 移动应用程序管理资源的权限。<br /><br />有关如何使用 ADAL 的详细信息，请参阅本文中的[有关使用 Azure Active Directory 库的应用的信息](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library)。|
@@ -47,7 +41,7 @@ ms.suite: ems
 
 1.  从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=45218)“适用于 iOS 的 Microsoft Intune 应用包装工具”页上，将应用包装工具的安装文件下载到 Mac 计算机。
 
-2.  在 Mac 计算机上，双击安装文件 **Microsoft Intune App Wrapping Tool for iOS.dmg**
+2.  在 Mac 计算机上，双击安装文件 **Microsoft Intune App Wrapping Tool for iOS.dmg**。
 
 3.  选择“同意”以接受最终用户许可协议 (EULA)。 安装程序已安装并显示在 Mac 计算机上。
 
@@ -59,7 +53,7 @@ ms.suite: ems
 
 1.  在 Mac 计算机上，打开终端窗口并导航到你保存文件的文件夹。 由于可执行程序在包内，你必须运行以下命令：
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -126,7 +120,7 @@ ms.suite: ems
 
 1.  通过运行应用，再现该问题。
 
-2.  通过按照 Apple 的[调试已部署的 iOS 应用](https://developer.apple.com/library/ios/qa/qa1747/_index.html)说明操作，收集控制台输出
+2.  通过按照 Apple 的 [调试已部署的 iOS 应用](https://developer.apple.com/library/ios/qa/qa1747/_index.html)说明操作，收集控制台输出。
 
 3.  通过各控制台输入以下脚本，筛选应用限制输出的已保持的日志：
 
@@ -135,6 +129,7 @@ ms.suite: ems
     ```
     你可以将筛选后的日志提交给 Microsoft。
 
+    > [!NOTE]
     > 在日志文件中，“内部版本”代表 Xcode 的内部版本。
 
     包装的应用也将向用户提供在应用损坏后直接通过电子邮件从设备发送日志的选项。 用户可以将日志发送给你进行检查，并在需要时转发给 Microsoft。
@@ -148,7 +143,7 @@ ms.suite: ems
 
 -   应用结合的 ADAL 的版本必须高于或等于 1.0.2
 
--   开发人员必须授予其应用访问 Intune 移动应用程序管理资源的权限，如[对使用 ADAL 的应用所需执行的步骤](#steps-to-follow-for-apps-that-use-adal)中所述
+-   开发人员必须授予其应用访问 Intune 移动应用管理资源的权限，如[对使用 ADAL 的应用所需执行的步骤](#steps-to-follow-for-apps-that-use-adal)中所述。
 
 ### 所需获取的标识符的概述
 使用 ADAL 的应用必须通过 Azure 管理门户注册，以获得其应用的两个唯一标识符：
@@ -169,9 +164,9 @@ ms.suite: ems
 
     2.  单击 Azure Active Directory 中的 **“现有 LOB 应用程序注册”** 。
 
-    3.  在“配置”部分，选择“配置对其他应用程序中的 Web API 的访问权限”
+    3.  在配置部分，选择 **“配置对其他应用程序中的 Web API 的访问权限”**。
 
-    4.  在“对其他应用程序的权限”部分，从第一个下拉列表中选择“Intune 移动应用程序管理”
+    4.  在“**对其他应用程序的权限**”部分中，从第一个下拉列表中选择“**Intune 移动应用管理**”。
 
         现在可以在应用包装工具中使用应用的客户端 ID。 你可以在 Azure Active Directory 管理门户中找到应用的客户端 ID，如[所需获取的标识符的概述](#overview-of-identifiers-you-need-to-get)部分中所述。
 
@@ -198,7 +193,7 @@ ms.suite: ems
 -   如果提供了你的客户端应用程序的客户端 ID 和重定向 URI，则可以避免两次登录提示。 该客户端 ID 需要注册以访问在 AAD 仪表板中发布的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM 资源 ID。 如果不这样做，将导致应用运行时登录失败。
 
 ## 设置应用权利
-在包装应用之前，可以授予**权利**，以便为应用提供其他权限和功能，使其能够执行比一般情况下更多的操作。  **权利文件**在代码签名过程中用于指定应用内的特殊权限（例如，对共享密钥链的访问权限）。 在应用开发过程中，会在 Xcode 内启用称为**功能**的特定应用服务。 启用后，功能即反映在权利文件中。 有关权利和功能的详细信息，请参阅 iOS 开发人员库中的[添加功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。 有关支持的功能的完整列表，请参阅[支持的功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)
+在包装应用之前，可以授予**权利**，以便为应用提供其他权限和功能，使其能够执行比一般情况下更多的操作。  **权利文件**在代码签名过程中用于指定应用内的特殊权限（例如，对共享密钥链的访问权限）。 在应用开发过程中，会在 Xcode 内启用称为**功能**的特定应用服务。 启用后，功能即反映在权利文件中。 有关权利和功能的详细信息，请参阅 iOS 开发人员库中的[添加功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。 有关支持的功能的完整列表，请参阅[支持的功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)。
 
 ### 适用于 iOS 的应用包装工具支持的功能
 
@@ -210,7 +205,7 @@ ms.suite: ems
 |应用内购买|应用内购买直接将应用商店嵌入你的应用中，允许你连接到应用商店并且安全地处理用户付款。 你可以使用应用内购买收取有关增强功能或应用可用的其他内容的付款。||
 |密钥链共享|启用密钥链共享后，你的应用可以与你的团队开发的其他应用共享密钥链中的密码。|使用密钥链共享时，请使用反向 DNS 表示法：<br /><br />*com.companyName.KeychainGroup*|
 |个人 VPN|启用个人 VPN 后，你的应用可以使用网络扩展框架来创建和控制自定义系统 VPN 配置。||
-|推送通知|Apple Push Notification 服务 (APNs) 允许不在前台运行的应用通知用户，它有关于该用户的信息。|若要使推送通知正常工作，需使用应用特定的预配配置文件。<br /><br />按照 [Apple 开发人员文档](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)中的步骤操作|
+|推送通知|Apple Push Notification 服务 (APNs) 允许不在前台运行的应用通知用户，它有关于该用户的信息。|若要使推送通知正常工作，需使用应用特定的预配配置文件。<br /><br />按照 [Apple 开发人员文档](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)中的步骤操作。|
 |无线附件配置|启用无线附件配置可向项目添加外部附件框架，并允许应用配置 MFi Wi-Fi 附件。||
 
 ### 权利启用步骤
@@ -229,7 +224,7 @@ ms.suite: ems
 
     1.  登录到 Apple 开发人员会员中心。
 
-    2.  为应用创建预配配置文件。 有关说明，请参阅[如何获取适用于 iOS 的 Intune 应用包装工具的先决条件](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx)
+    2.  为应用创建预配配置文件。 有关说明，请参阅 [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)（如何获取 Intune App Wrapping Tool for iOS 的先决条件）。
 
     3.  在预配配置文件中，启用与应用中相同的权利。 你需要提供在应用开发过程中指定的相同 ID。
 
@@ -270,7 +265,7 @@ ms.suite: ems
 此命令将删除不在权利文件中的应用中的任何已启用功能。 如果删除应用正在使用的功能，它会中断你的应用。 如果拥有一个默认具有所有功能的供应商生产应用是一个你可能会删除丢失功能的情况示例。
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## 应用包装工具的安全和隐私
@@ -296,6 +291,7 @@ ms.suite: ems
 - [使用 SDK 启用针对移动应用程序管理的应用](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

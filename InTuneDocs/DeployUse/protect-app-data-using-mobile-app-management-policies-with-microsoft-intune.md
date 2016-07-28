@@ -1,10 +1,10 @@
 ---
-title: "使用移动应用管理策略保护应用数据 | Microsoft Intune"
-description: 
+title: "使用 MAM 策略保护应用数据 | Microsoft Intune"
+description: "本主题说明移动应用管理策略如何帮助保护你的公司数据、防止数据丢失，以及将个人和工作信息分离。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
+ms.openlocfilehash: 0ba8e40b06452002f33b09b37e399c62da54c352
 
 
 ---
@@ -24,21 +24,21 @@ ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
 ## 如何保护应用数据
 你的员工使用移动设备进行个人任务和工作任务。  你既要确保员工高效工作，又希望防止有意和无意的数据丢失。  此外，还想要具备保护设备（即使在该设备不由你管理的情况下）所访问的公司数据的能力。
 
-可使用 Intune 移动应用管理 (MAM) 策略帮助保护公司数据。 由于 Intune MAM 策略可以独立于任何移动设备管理 (MDM) 解决方案使用，所以无论是否在设备管理解决方案中注册设备，都可用它保护公司的数据。 通过实现**应用级别策略**，即可限制对公司资源的访问，并让数据处于 IT 部门的监控范围之内。
+可使用 Intune 移动应用管理 (MAM) 策略帮助保护公司数据。 由于 Intune MAM 策略可以**独立于任何移动设备管理 (MDM) 解决方案**使用，所以无论是否在设备管理解决方案中注册设备，都可用它保护公司的数据。 通过实现**应用级别策略**，即可限制对公司资源的访问，并让数据处于 IT 部门的监控范围之内。
 
-MAM 策略支持在以下设备上运行的应用：
-> [!IMPORTANT]
-> 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 连接到本地 Exchange 或 SharePoint 服务的应用不支持 MAM 策略。
+可对运行在设备上的应用进行配置的 MAM 策略包括：
 
+- **在 Microsoft Intune 中注册：**此类别中的设备通常是公司自有设备。
 
-- **在 Microsoft Intune 中托管和注册的设备**。 此类别中的设备通常是公司拥有的设备。
-
--   **在第三方移动设备管理**解决方案中托管和注册的设备。   此类别中的设备通常是公司拥有的设备。
+-   **在第三方移动设备管理 (MDM) 解决方案中注册：**该类别中的设备通常为公司自有设备。
 
   > [!NOTE]
   > 移动应用管理策略不应与第三方移动应用管理或安全容器解决方案一起使用。
 
--   **非托管设备**。  此类别中的设备通常是员工拥有的设备且未托管或在 Intune 或其他 MDM 解决方案中注册。
+-   **未在任何移动设备管理解决方案中注册：**该类别中的设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中托管或注册。
+
+> [!IMPORTANT]
+> 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 连接到本地 Exchange、Skype for Business 或 SharePoint 服务的应用不支持 MAM 策略。
 
 **使用 MAM 策略的主要优点有**
 
@@ -133,6 +133,6 @@ MDM 解决方案：
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

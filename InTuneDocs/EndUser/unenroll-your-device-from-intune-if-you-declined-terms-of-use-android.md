@@ -1,9 +1,9 @@
 ---
 title: "如果你已拒绝“使用条款”，请从 Intune 取消注册你的设备 | Microsoft Intune"
-description: 
+description: "介绍在你已拒绝“使用条款”且无法登录到公司门户应用的情况下，如何从 Intune 取消注册 Android 设备"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: abcb7dbe4f3423fcba108a7ea0c4b2efa295c970
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 06e2fa597e9e4143d17e817daee7eeac8eb46bf7
 
 
 ---
@@ -38,12 +38,13 @@ ms.openlocfilehash: abcb7dbe4f3423fcba108a7ea0c4b2efa295c970
 
     现在即可卸载公司门户应用。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
+
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

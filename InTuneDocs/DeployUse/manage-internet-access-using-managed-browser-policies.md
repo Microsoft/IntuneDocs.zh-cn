@@ -1,19 +1,20 @@
 ---
-title: "使用托管浏览器策略管理 Internet 访问 | Microsoft Intune"
-description: 
+title: "使用托管浏览器管理 Web 访问 | Microsoft Intune"
+description: "部署托管浏览器应用程序以限制 Web 浏览和传输到其他应用的 Web 数据传输。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
-ms.sourcegitcommit: 2df44199ecd904dcfb6774a942244338c1384186
-ms.openlocfilehash: c4462af584d54225084159dfa35f5e1d07c36397
+translationtype: Human Translation
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 882042349c19ef0b688954577eb6519d0c0ac860
 
 
 ---
@@ -150,6 +151,6 @@ Microsoft 会自动收集有关性能和利用托管浏览器来改进 Microsoft
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

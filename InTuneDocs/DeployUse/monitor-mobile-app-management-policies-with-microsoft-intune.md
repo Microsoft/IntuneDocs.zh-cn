@@ -1,10 +1,10 @@
 ---
-title: "使用 Microsoft Intune 监视移动应用管理策略 | Microsoft Intune"
-description: 
+title: "使用 Microsoft Intune 监视 MAM 策略| Microsoft Intune"
+description: "若要查看有多少用户拥有策略，请深入了解以获取详细信息。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
 
 
 ---
@@ -49,6 +49,9 @@ ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
 
   **未签入：**这意味着策略已部署到用户，但应用从那时起尚未在工作环境中使用。
 
+>[!NOTE]
+> 如果你搜索的用户没有部署 MAM 策略，你将看到一条消息，告知你用户不面向任何应用策略。
+
 若要查看用户的报告，请按照这些步骤进行操作：
 
 **步骤 1：**要选择一个用户，单击“摘要”磁贴或选择“设置”边栏选项卡中的“应用报告(按用户)”选项，如下所示：
@@ -72,6 +75,6 @@ ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,26 +1,27 @@
 ---
-title: "手动同步设备 | Microsoft Intune"
+title: "手动同步 iOS 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 3cb6b8236afc227df9df34848cb81bcbe82a612e
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: bec18af35f3907299bfcbbae9c0e1998a3ce2507
 
 
 ---
 
 
-# 手动同步设备
+# 手动同步 iOS 设备
 
 如果你的应用安装时间过长，请按照以下说明手动同步你的 iOS 设备，这可能有助于加快安装速度。 此同步功能仅适用于 iOS，不适用于 Mac OS X。
 
@@ -42,6 +43,6 @@ ms.openlocfilehash: 3cb6b8236afc227df9df34848cb81bcbe82a612e
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

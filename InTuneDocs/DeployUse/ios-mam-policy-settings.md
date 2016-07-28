@@ -1,10 +1,10 @@
 ---
 title: "iOS MAM 策略设置 | Microsoft Intune"
-description: 
+description: "本主题介绍适用于 iOS 设备的移动应用管理策略设置。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+ms.sourcegitcommit: 09bf7d1343580f7688671bf94d83f40f0a3405c5
+ms.openlocfilehash: e0db92b6ecf7a552589ea805f6507ca59e6554b1
 
 
 ---
@@ -37,6 +37,8 @@ ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
   - **无**：不允许将数据传输到任何应用，包括其他策略托管应用。
 
   此外，如果你将此选项设置为“策略托管应用”或“无”，则将阻止允许 Spotlight Search 在应用内搜索数据的 iOS 9 功能。
+
+  **此设置不控制移动设备上的“打开方式”功能的使用。若要管理“打开方式”，请参阅[此处](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**。
 
   **默认值 = 策略托管应用**
 
@@ -112,6 +114,6 @@ ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

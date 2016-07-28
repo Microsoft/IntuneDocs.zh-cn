@@ -13,8 +13,8 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
-ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
+ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
 
 
 ---
@@ -220,7 +220,7 @@ Intune App SDK 允许应用控制特定策略（如远程擦除策略）由 IT �
 
 # 保护备份数据 
 
-自 Android Marshmallow (API 23) 开始，Android 现在有两种方法可供应用来备份其数据。 这些选项可在应用中使用，需要不同步骤来确保正确应用 MAM 数据保护。 你可以查看下表以了解有关正确数据保护行为所需的对应操作的快速概览。  还可以在 [Android 开发人员数据备份指南](http://developer.android.com/guide/topics/data/backup.html.)。 
+自 Android Marshmallow (API 23) 开始，Android 现在有两种方法可供应用来备份其数据。 这些选项可在应用中使用，需要不同步骤来确保正确应用 MAM 数据保护。 你可以查看下表以了解有关正确数据保护行为所需的对应操作的快速概览。  还可以在 [Android 开发人员数据备份指南](http://developer.android.com/guide/topics/data/backup.html) 中找到有关 Android 备份的详细信息。 
 
 ## 自动完整备份
 
@@ -365,6 +365,6 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

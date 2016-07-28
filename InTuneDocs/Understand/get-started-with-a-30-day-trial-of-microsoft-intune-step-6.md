@@ -1,9 +1,9 @@
 ---
-title: "适用于 Intune 评估订阅的其他选项和其他功能 | Microsoft Intune"
-description: 
+title: "适用于 Intune 评估的其他选项和其他功能 | Microsoft Intune"
+description: "介绍警报、通知和报表，以及当你注册 Intune 的免费 30 天评估时需要了解的常规 Intune 功能"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0574891a021d43f54ef78ded20d6cf19c18eb25b
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 30ed78b967d8669999f59046d610eca6c78260a1
 
 
 ---
@@ -58,6 +58,6 @@ ms.openlocfilehash: 0574891a021d43f54ef78ded20d6cf19c18eb25b
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

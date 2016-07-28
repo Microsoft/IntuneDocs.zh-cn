@@ -1,10 +1,10 @@
 ---
 title: "Windows 10 策略设置 | Microsoft Intune"
-description: 
+description: "使用本主题中列出的策略设置可帮助你为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
+ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 ---
 
 # Microsoft Intune 中的 Windows 10 策略设置
 
-使用本主题中列出的策略设置帮助为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置设置。
+使用本主题中列出的策略设置可帮助你为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。
+
+> [!IMPORTANT]
+> 你可以通过两种方式管理 Windows 10 电脑：通过注册它们，或通过安装 Intune 电脑客户端软件。 每种方法提供不同的功能（有关详细信息，请参阅[选择如何管理设备](/intune/get-started/choose-how-to-manage-devices)）。
+> 当你管理安装了 Intune 电脑客户端软件的 Windows 10 电脑时，你不能使用本主题详述的策略和设置。 若要应用这些设置，Windows 10 设备必须向 Intune 注册。
 
 ## 常规配置策略设置
 
-使用适用于 Windows 10 的 Microsoft Intune **常规配置策略**为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置常规设置。 使用 Intune 客户端软件管理 Windows 10 PC 时，该策略无法使用。
+使用适用于 Windows 10 的 Microsoft Intune **常规配置策略**为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置常规设置。 
 
 
 ### Password
@@ -161,7 +166,7 @@ ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
 |**签名更新间隔**|指定 Defender 检查新签名文件的时间间隔。|
 |**允许使用云保护**|允许或阻止 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息。 此信息用于在将来改进本服务。|
 |**提示用户提交示例**|控制是否自动向 Microsoft 发送可能需要 Microsoft 的进一步分析以确定其是否为恶意的文件。|
-|**可能不需要的应用程序检测**|此设置可用于防止已注册的 Windows 台式计算机运行被 Windows Defender 分类为可能不需要的软件。 你可以防止这些应用程序运行，或使用审核模式在安装了不需要的应用程序时进行报告。|
+|**可能不需要的应用程序检测**|此设置可用于防止已注册的 Windows 桌面版设备运行被 Windows Defender 分类为可能不需要的软件。 你可以防止这些应用程序运行，或使用审核模式在安装了不需要的应用程序时进行报告。|
 |**在运行扫描或使用实时保护时要排除的文件和文件夹**|向排除列表添加一个或多个文件和文件夹（如 **C:\Path** 或 **%ProgramFiles%\Path\filename.exe**）。 不会在任何实时或计划的扫描中包括这些文件和文件夹。|
 |**在运行扫描或使用实时保护时要排除的文件扩展名**|向排除列表添加一个或多个文件扩展名（如 **jpg** 或 **txt**）。 不会在任何实时或计划的扫描中包括具有这些扩展名的任何文件。|
 |**在运行扫描或使用实时保护时要排除的进程**|向排除列表添加类型为 **.exe**、**.com** 或 **.scr** 的一个或多个进程。 不会在任何实时或计划的扫描中包括这些进程。| 
@@ -327,6 +332,6 @@ ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

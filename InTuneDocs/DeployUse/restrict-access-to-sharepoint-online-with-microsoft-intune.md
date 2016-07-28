@@ -1,10 +1,10 @@
 ---
 title: "限制对 SharePoint Online 的访问 | Microsoft Intune"
-description: 
+description: "使用条件访问保护和控制对 SharePoint Online 上的公司数据的访问。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 06/16/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 334eb869ddbc67767a6e9ed6711bd9135ceb558b
 
 
 ---
@@ -25,6 +25,8 @@ ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
 - 设备合规性策略，设备必须符合该策略才能被视为合规。
 - 条件性访问策略，你可以从中指定设备必须满足该策略才能访问服务的条件。
 若要了解有关条件访问如何工作的详细信息，请阅读[限制对电子邮件、O365 服务和其它服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主题。
+
+将合规性策略和条件访问策略部署到用户。 检查用户用于访问服务的任何设备是否符合策略。
 
 当用户尝试在其设备上使用受支持的应用（如 OneDrive）连接到文件时，会进行以下评估：
 
@@ -55,6 +57,10 @@ ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
 
 -   如果设备不合规，则显示一条消息，将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站，用户可从中找到有关问题及其修正方法的信息。
 
+**跨所有 SharePoint 站点强制实施条件访问并阻止外部共享**
+
+>[!NOTE]
+>如果你启用 SharePoint Online 的条件访问，我们建议你禁用列表上的域，如 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主题中所述。  
 ## 对移动设备的支持
 - iOS 7.1 及更高版本
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 或更高版本
@@ -183,6 +189,6 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

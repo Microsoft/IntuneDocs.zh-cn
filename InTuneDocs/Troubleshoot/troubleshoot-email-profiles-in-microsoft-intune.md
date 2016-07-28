@@ -1,6 +1,6 @@
 ---
 title: "电子邮件配置文件疑难解答 | Microsoft Intune"
-description: 
+description: "电子邮件配置文件问题，以及故障排除并解决这些问题的方式。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
-ms.openlocfilehash: 766c5d5f8e512ea1c36c73936b0ffb95977395ae
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: c695f39f128cf5ebee14b885b89ebe9833009ae9
 
 
 ---
@@ -52,6 +52,6 @@ ms.openlocfilehash: 766c5d5f8e512ea1c36c73936b0ffb95977395ae
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

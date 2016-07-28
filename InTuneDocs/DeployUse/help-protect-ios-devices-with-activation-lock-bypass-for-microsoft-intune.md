@@ -1,20 +1,20 @@
 ---
-title: "通过绕过激活锁定帮助保护 iOS 设备 | Microsoft Intune"
-description: 
+title: "管理设备上的 iOS 激活锁定 | Microsoft Intune"
+description: "Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 7.1 和更高版本设备上的“查找我的 iPhone”应用的功能。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 496679a196dc3e84c6b16ad0d3b830c81f12631b
-ms.openlocfilehash: 7bbd761b13f110297959a036ec15cafe1396377e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 724186bdff1ae40e956c1f1c49476d80c7e1d657
 
 
 ---
@@ -82,12 +82,16 @@ Intune 可以请求运行 iOS 7.1 和更高版本的监管和非监管设备的�
 
     如果选择“公司拥有的所有设备”节点中的设备，并为该设备启用了激活锁定，则还可以看到绕过代码。 此代码可用于手动发布绕过激活锁定命令。
 
+    > [!IMPORTANT]
+    >Intune 每 7 天从设备中对激活锁定执行一次清查。 因此，设备可能无法在 Intune 控制台中立即显示其激活锁定状态。
+
+
 ### 另请参阅
 [停用设备](retire-devices-from-microsoft-intune-management.md)
 [使用远程锁定和密码重置功能帮助保护设备](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

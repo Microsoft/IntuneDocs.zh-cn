@@ -1,10 +1,10 @@
 ---
-title: "管理从适用于企业的 Windows 应用商店中购买的应用 | Microsoft Intune"
-description: 
+title: "管理适用于企业的 Windows 应用商店应用 | Microsoft Intune"
+description: "如果想要从 Intune 控制台对批量采购的应用进行管理和部署，请将 Microsoft Intune 连接到适用于企业的 Windows 应用商店"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: b6e2f0ec13caa9616b72a2fa225e77fe43a4755c
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: fb553cfd5e22a22b0ab18d3c1a8301a3966e2806
 
 
 ---
@@ -77,6 +77,6 @@ ms.openlocfilehash: b6e2f0ec13caa9616b72a2fa225e77fe43a4755c
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

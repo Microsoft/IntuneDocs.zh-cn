@@ -1,10 +1,10 @@
 ---
 title: "移动设备管理功能 | Microsoft Intune"
-description: 
+description: "阅读本主题以了解 Intune 如何帮助你管理使用此服务注册的移动设备。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+ms.sourcegitcommit: 23054b2f02d11ca19cd0902ebc1e6fdcf499d1f1
+ms.openlocfilehash: 8f44256fe249c60df8e910858516a25463c8e875
 
 
 ---
@@ -42,7 +42,8 @@ ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
 |应用部署和管理|提供了一系列的工具以帮助你在移动应用的整个生命周期中对其进行管理，包括部署来自安装文件和应用商店的应用、对应用状态的详细监视以及应用删除。|[在 Microsoft Intune 中部署应用](/intune/deploy-use/deploy-apps)|
 |符合和不符合要求的应用程序|你可以指定符合（即允许用户安装）和不符合要求的应用程序（禁止用户安装）的列表。|[Microsoft Intune 中的 iOS 策略设置](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |移动应用程序管理|针对使用 Intune 进行管理设备和不使用 Intune 进行管理的设备，使用移动应用程序管理配置应用程序的限制。 这可以帮助您通过限制数据的复制和粘贴、外部备份和应用程序之间的数据传输等操作来提高您公司的数据的安全性。|[配置和部署 Microsoft Intune 控制台中的移动应用程序管理策略](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[使用 Microsoft Intune 创建和部署移动应用管理策略](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 iOS 应用](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[使用 Microsoft Intune 应用包装工具为移动应用程序管理准备 Android 应用](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
-|移动应用配置|使用移动应用配置策略可提供用户在运行 iOS 应用时可能需要的设置。 例如，某一个应用可能要求用户指定登录信息的端口号。 这可以帮助简化应用程序的配置并减少技术支持呼叫次数。|[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|iOS 移动应用配置|使用移动应用配置策略可提供用户在运行 iOS 应用时可能需要的设置。 例如，某一个应用可能要求用户指定登录信息的端口号。 这可以帮助简化应用程序的配置并减少技术支持呼叫次数。|[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|iOS 移动应用预配配置文件|Intune 为你提供了对即将到期的 iOS 应用主动部署预配配置文件的工具。|[使用 iOS 移动预配配置文件策略防止你的应用过期](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |托管浏览器|在把托管浏览器部署到您的用户后，您可以配置托管浏览器策略控制他们可以访问的网站。 此外，您可以将移动应用程序管理策略应用到托管浏览器。|[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|通过 Intune 可以与 Microsoft Passport for Work 集成，这是一种适用于 Windows 10 的替代登录方法，它使用 Active Directory 或 Azure Active Directory 帐户来取代密码、智能卡或虚拟智能卡。|[通过 Microsoft Intune 控制设备上的 Microsoft Passport 设置](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 
@@ -68,6 +69,6 @@ ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

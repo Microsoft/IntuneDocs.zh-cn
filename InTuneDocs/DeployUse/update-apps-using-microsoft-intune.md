@@ -1,10 +1,10 @@
 ---
 title: "更新应用 | Microsoft Intune"
-description: 
+description: "使用本主题中的信息了解在需要新版本时可如何更新应用。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
-ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: bb077902e33d6ab18dea33a6ab2d1ff9a70ce937
 
 
 ---
@@ -23,6 +24,16 @@ Microsoft Intune 可帮助你管理应用更新。 使用本主题中的信息�
 
 ## 如何更新应用
 当已部署的应用发布新版本后，Intune 将让你更新和部署应用的更新版本。 你只能用同一应用程序（使用相同的标识符）的更新版本替换部署。 无法使用应用更新来更新具有不同应用包的部署。
+
+### 应用标识符
+应用标识符是唯一标识应用的属性。 无法安装具有相同标识符的应用的多个副本。 例如：
+
+- **iOS** - 捆绑 ID（例如：com.microsoft.excel）
+- **Android** - 程序包 ID（例如：com.microsoft.excel）
+- **Windows Phone** -（xap 安装程序）使用产品 ID (GUID)
+- **Windows** - (appx/appxbundle)，使用程序包全名
+
+
 
 > [!IMPORTANT]
 > 如果你部署应用时采用的部署操作是 **“所需的安装”** ，但随后又将部署操作更改为 **“可用安装”**，则应用的更新不会自动安装到在更改部署前已安装到设备的应用上。 若要修复此问题，你可以执行以下操作：
@@ -49,6 +60,6 @@ Microsoft Intune 可帮助你管理应用更新。 使用本主题中的信息�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

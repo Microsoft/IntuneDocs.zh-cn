@@ -1,9 +1,9 @@
 ---
-title: "从 Intune 取消注册设备 | Microsoft Intune"
-description: 
+title: "从 Intune 取消注册 Windows 设备 | Microsoft Intune"
+description: "介绍如何从 Intune 取消注册 Windows 设备"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: c323aed2b4fbac831ae4919c8145b7253eb97ace
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e510d9800fde2f1f10c583da273dc28739044009
 
 
 ---
 
 
-# 从 Intune 取消注册你的设备
+# 从 Intune 取消注册 Windows 设备
 
 如果在 Intune 中进行了注册，但不再想使用工作单位或学校的 Windows 设备且无需访问工作或学校电子邮件、应用或其他资源，则需要取消注册你的设备。 你从 Intune 取消注册你的设备后，你就无法再访问这些资源。 若要深入了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)。
 
@@ -66,6 +66,6 @@ ms.openlocfilehash: c323aed2b4fbac831ae4919c8145b7253eb97ace
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

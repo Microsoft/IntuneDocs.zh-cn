@@ -1,5 +1,5 @@
 ---
-title: "使用 Intune 管理 Windows PC | Microsoft Intune"
+title: "使用 Intune 电脑客户端管理 Windows 电脑 | Microsoft Intune"
 description: 
 keywords: 
 author: nathbarn
@@ -13,21 +13,23 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0335b80afa8e330263baad054f0e902f019f75bb
-ms.openlocfilehash: 92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f
+ms.sourcegitcommit: e09381bbcf073baa67a431546059272e629b5423
+ms.openlocfilehash: d22714f7b6eda1632892785568463fc5bafce8d0
 
 
 ---
 
-# 使用 Microsoft Intune 管理 Windows PC
-除了注册设备，你还可以使用 Intune Windows PC 客户端软件管理运行受支持的操作系统的 Windows PC。 运行此计算机客户端的硬件和软件要求非常低 -- 基本上支持能够运行 Windows 7 或更高版本的任何系统。  还可在加入域的计算机（在任何域中）或非加入域的计算机上轻松安装该客户端软件。
+# 使用 Intune 电脑客户端软件管理 Windows 电脑
+你可以通过安装 Intune 客户端软件管理 Windows 电脑，而无需[将 Windows 电脑注册为移动设备](set-up-windows-device-management-with-microsoft-intune.md)。 
 
 Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对象 (GPO) 执行方式类似的策略来管理 Windows PC。 如果你要使用 Intune 管理 Active Directory 加入域的计算机，则应该[确保 Intune 策略不与组织中存在的任何 GPO 冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 
-> [!NOTE]
-> 独立服务形式的 Microsoft Intune 提供用于管理计算机的这些功能。 运行 Windows 8.1 的设备可使用 Intune 客户端进行管理，或者可将它们注册为移动设备。 下面的信息适用于运行 Intune 客户端的计算机。
+虽然 Intune 客户端通过管理软件更新、Windows 防火墙和 Endpoint Protection 支持[帮助保护电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)，由 Intune 客户端托管的电脑不能以其他 Intune 策略为目标。
 
-## Intune PC 管理要求
+> [!NOTE]
+> 运行 Windows 8.1 的设备可使用 Intune 客户端进行管理，或者可将它们注册为移动设备。 下面的信息适用于运行 Intune 客户端的计算机。 不支持安装 Intune 电脑客户端和为移动设备管理注册 Windows 设备。
+
+## Intune 电脑客户端管理要求
 
 **硬件**：安装 Intune 客户端的最低硬件要求如下：
 
@@ -41,20 +43,19 @@ Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对�
 
 |要求|更多信息|
 |---------------|--------------------|
-|管理权限|安装客户端软件的帐户必须具有该 PC 的本地管理员权限。|
+|操作系统 | 运行 Windows 7 或更高版本的 Windows 设备。 |
+|管理权限|安装客户端软件的帐户必须具有该设备的本地管理员权限。|
 |Windows Installer 3.1|PC 至少必须安装 Windows Installer 3.1。<br /><br />查看 PC 上 Windows Installer 的版本：<br /><br />- 在电脑上，右键单击“%windir%\System32\msiexec.exe”，然后单击“属性”。<br /><br />你可以从 Microsoft Developer Network 网站上的 [Windows Installer Redistributables（Windows Installer 可再分发文件）](http://go.microsoft.com/fwlink/?LinkID=234258) 中下载最新版本的 Windows Installer。|
 |删除不兼容的客户端软件|在安装 Intune 客户端软件之前，你必须从该 PC 卸载任何 Configuration Manager 或 System Management Server 客户端软件。|
 
 ## 安装 Intune 计算机客户端
-使用 Intune 管理 Windows PC 的第一步是安装客户端。 当注册了 PC 并且可由 Intune 服务进行管理之后，可通过以下方式之一安装客户端软件：
+Intune 客户端软件可以通过以下方式之一安装：
 
--   你可以[手动部署 Microsoft Intune 客户端软件](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software)。 在此类型的部署中，管理员下载 Intune 客户端软件，并在每台 PC 上手动安装它。
+-   [手动部署 Microsoft Intune 客户端软件](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software)。 在此类型的部署中，管理员下载 Intune 客户端软件，并在每台 PC 上手动安装它。
 
-    若要下载 Intune 客户端软件，请打开 Intune 管理控制台，并在“客户端软件下载”区域中下载客户端软件包。 安装客户端软件后，Intune 将自动安装对计算机进行管理所需的其他软件。
+  若要下载 Intune 客户端软件，请打开“[Intune 管理控制台](https://manage.microsoft.com)”，并选择“**管理**” > “**客户端软件下载**”，然后单击“**下载客户端软件**”。
 
 -   你可以使用下载的用于手动安装 Intune 客户端的相同文件[将客户端部署到使用 Active Directory GPO 的已加入域的计算机](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy)。
-
--   通过 Intune 公司门户[最终用户可自行注册每台计算机](install-the-windows-pc-client-with-microsoft-intune.md#how-users-can-self-enroll-their-computers)。 每台已注册计算机随后自动链接到用于安装 Intune 客户端软件的用户帐户。
 
 -   最后，还可以将 Intune 客户端软件作为[操作系统部署](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image)的一部分部署到计算机。
 
@@ -85,6 +86,6 @@ Intune 客户端代理通常在后台静默运行，无需许多用户交互或�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,39 +1,41 @@
 ---
-# required metadata
-
-title: Microsoft Intune 中的 Windows Phone 8.1 策略设置 |Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8.1 策略设置 | Microsoft Intune"
+description: "Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置常规设置。 此外，还可指定 OMA-URI 值创建 Intune 未提供的自定义设置。"
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: e11ca62eb242d7c530e8de2ad1e885315d220233
+
 
 ---
 
 # Microsoft Intune 中的 Windows Phone 8.1 策略设置
 
+Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置常规设置。 此外，还可指定 OMA-URI 值创建 Intune 未提供的自定义设置。
+
 ## 常规配置设置
 
-使用 Microsoft Intune **Windows Phone 常规配置策略**来为 Windows Phone 8.1 设备配置以下设置：
+使用 Microsoft Intune **Windows Phone 常规配置策略（Windows Phone 8.1 及更高版本）**为 Windows Phone 8.1 设备配置以下设置：
 
 -   **“移动设备安全设置”** – 从让你能够控制设备上的一系列功能的预定义设置列表中选择。
 
--   “相容和不相容应用”****- 指定在你的公司中相容或不相容的应用列表。 Windows Phone 设备可以阻止或允许这些应用的安装。
+-   “相容和不相容应用”- 指定在你的公司中相容或不相容的应用列表。 Windows Phone 设备可以阻止或允许这些应用的安装。
+
+### 适用性设置
+
+|设置名|详细信息|
+|----------------|----------------------------------|
+|**将所有配置应用到 Windows 10**|此策略中的设置除了可以应用到 Windows Phone 8.1 设备外，还可以应用到 Windows 10 移动设备。|
 
 ### 密码设置
 
@@ -54,7 +56,7 @@ ms.suite: ems
 
 |设置名|详细信息|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**需要对移动设备加密**|需要对支持的移动设备上的数据进行加密。<br>对于 Windows Phone 8 设备，必须将其设置为“是”****.|是|是|
+|**需要对移动设备加密**|需要对支持的移动设备上的数据进行加密。<br>对于 Windows Phone 8 设备，必须将其设置为 **“是”**。|是|是|
 
 ### 系统设置
 
@@ -108,7 +110,7 @@ ms.suite: ems
 |**允许复制和粘贴**|允许在设备上使用复制和粘贴功能。|否|是|
 
 ### 相容和不相容应用的设置
-在“相容和不相容应用”****列表中，使用以下信息指定相容或不相容应用列表：
+在“相容和不相容应用”列表中，使用以下信息指定相容或不相容应用列表：
 
 > [!NOTE]
 > 单个策略只能包含一个相容应用列表或一个不相容应用列表。 不能在同一策略中同时指定两个列表。
@@ -134,14 +136,14 @@ ms.suite: ems
 
 打开应用页面，并将该 URL 复制到剪贴板。 你现在可以在符合或不符合要求的应用列表中使用这个 URL。
 
-**例如：** 在应用商店中搜索 Skype 应用。 你将使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+**例如：** 在应用商店中搜索 Skype 应用。 你将使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**。
 
 ## 自定义策略设置 
 使用 Microsoft Intune **Windows Phone 自定义配置策略**来部署可用于控制 **Windows Phone 8.1 设备**上功能的 OMA-URI（开放移动联盟统一资源标识符）设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
-此功能旨在使你能够部署不能与 Intune 常规配置策略一起配置的 Windows Phone 设置。 若要了解可与这些策略一起配置的设置，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+此功能旨在使你能够部署不能与 Intune 常规配置策略一起配置的 Windows Phone 设置。 若要了解可与这些策略一起配置的设置，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-有关创建 Windows Phone 设备的 OMA-URI 设置的帮助，请参阅 [Windows Phone 8.1 MDM 协议文档](http://technet.microsoft.com/library/dn499787.aspx).
+有关创建 Windows Phone 设备的 OMA-URI 设置的帮助，请参阅 [Windows Phone 8.1 MDM 协议文档](http://technet.microsoft.com/library/dn499787.aspx)。
 
 ### 常规设置
 
@@ -152,9 +154,9 @@ ms.suite: ems
 
 ### OMA-URI 设置
 
-在“OMA-URI 设置”****部分，单击“添加”****以添加设置。 也可编辑或删除现有设置。
+在“OMA-URI 设置”部分，单击“添加”以添加设置。 也可编辑或删除现有设置。
 
-在“添加或编辑 OMA-URI 设置”****对话框中，指定以下信息：
+在“添加或编辑 OMA-URI 设置”对话框中，指定以下信息：
 
 |设置名|详细信息|
     |--------|--------------------|
@@ -169,6 +171,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

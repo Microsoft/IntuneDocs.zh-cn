@@ -1,26 +1,27 @@
 ---
-title: "手动同步设备 | Microsoft Intune"
+title: "手动同步 Windows 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: fbe46abe0b13e8972a5e9fa09566dff0c09b9939
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
 
 
 ---
 
 
-# 手动同步设备
+# 手动同步 Windows 设备
 如果你的应用安装时间过长，请按照以下说明手动同步你的 Windows 设备，这可能有助于加快安装速度。 仅支持列出的版本。 使用以上“本文内容”部分中所示且与你正在使用的设备类型匹配的链接：
 
 * [Windows 10 移动版](#windows-10-mobile)
@@ -98,6 +99,6 @@ ms.openlocfilehash: fbe46abe0b13e8972a5e9fa09566dff0c09b9939
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

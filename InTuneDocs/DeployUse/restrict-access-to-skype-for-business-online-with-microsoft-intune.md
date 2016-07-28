@@ -1,10 +1,10 @@
 ---
 title: "限制对 Skype for Business Online 的访问 | Microsoft Intune"
-description: 
+description: "使用条件访问保护和控制对 Skype for Business Online 的访问。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
-ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 693feee133a594032c0edc69f03f65681bacfb81
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
 在配置 Skype for Business Online 的条件性访问策略**之前**，必须：
 - 具有 **Skype for Business Online 订阅** 并将 Skype for Business Online 许可证分配给用户。
 - 已订阅了**企业移动性套件**或 **Azure Active Directory Premium**。
--   为 Skype for Business Online[启用“新式验证”](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。 
+-   为 Skype for Business Online[启用“新式验证”](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。
 -  所有的最终用户必须使用 **Skype for Business Online**。 如果你具有同时使用 Skype for Business Online 和 Skype for Business 本地部署进行的部署，那么条件性访问策略将不会应用到最终用户。
 
     需要访问 Skype for Business Online 的设备必须：
@@ -68,10 +69,12 @@ ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
 ### 步骤 2：配置和部署合规性策略
 [创建](create-a-device-compliance-policy-in-microsoft-intune.md)合规性策略并将其[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到将受此策略影响的所有设备。 这些将是“目标组”中的用户所使用的所有设备。
 
-> [!NOTE]将合规性策略部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
+> [!NOTE]
+> 将合规性策略部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
 
 
-> [!IMPORTANT]如果尚未部署合规性策略，那么设备将被视为合规。
+> [!IMPORTANT]
+> 如果尚未部署合规性策略，那么设备将被视为合规。
 
 准备就绪后，继续 **步骤 3**。
 
@@ -113,6 +116,6 @@ ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,27 @@
 ---
-title: "在设备上使用托管应用 | Microsoft Intune"
+title: "在 iOS 设备上使用托管应用 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 8feb4b293a021efd1f4cd26c43be76355d947143
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8a219cd10bbfe1dd01003e732c8e9bf11c29b0f5
 
 
 ---
 
 
-# 在设备上使用托管应用
+# 在 iOS 设备上使用托管应用
 
 托管应用是这样的应用，你的 IT 管理员可对其进行配置以帮助保护你在该应用中可访问的公司数据。 在 iOS 设备上的托管应用中访问公司数据时，你可能会注意到此应用与你预期的运作方式有些许不同。 例如，你可能无法复制和粘贴受保护的公司数据，或者你可能无法将该数据保存到特定位置。
 
@@ -66,6 +66,6 @@ ms.openlocfilehash: 8feb4b293a021efd1f4cd26c43be76355d947143
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

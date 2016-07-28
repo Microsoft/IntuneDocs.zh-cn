@@ -1,6 +1,6 @@
 ---
 title: "策略疑难解答 | Microsoft Intune"
-description: 
+description: "解决策略配置问题。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
 
 
 ---
@@ -47,7 +48,7 @@ ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
 ![Intune 设备策略](../media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
-> [!NOTE] 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
+> 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
 
 ## 策略刷新和更新间隔
 请注意，策略将定期刷新和更新。 一般情况下，应在进行更改后 15 分钟内在设备上注册策略。 以下是有关策略定期刷新的详细信息：
@@ -70,7 +71,7 @@ ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
 2.  等待 20 分钟，以便删除客户端软件。
 
     > [!NOTE]
-    > [!NOTE]请勿尝试从“程序和功能”中删除客户端。
+    > 请勿尝试从“程序和功能”中删除客户端。
 
 3.  在开始菜单上，键入 **UAC** 以打开用户帐户控制设置。
 
@@ -112,6 +113,6 @@ Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

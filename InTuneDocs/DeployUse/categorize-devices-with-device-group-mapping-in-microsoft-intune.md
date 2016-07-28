@@ -1,10 +1,10 @@
 ---
 title: "使用设备组映射对设备进行分类 | Microsoft Intune"
-description: 
+description: "使用 Microsoft Intune 设备组映射将设备分组为你定义的类别，以便更轻松地管理这些设备。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: sumitp
 ms.suite: ems
-ms.sourcegitcommit: bb30b8e61a768b15e2f09993f4dceae8f4e1bd8a
-ms.openlocfilehash: 55f811153bf37048a4fcdfc6da301a5f181700c3
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: c721df29fd71963feb151af71eea9ee7ebc2d3e4
 
 
 ---
@@ -52,6 +53,6 @@ ms.openlocfilehash: 55f811153bf37048a4fcdfc6da301a5f181700c3
 [通过 Microsoft Intune 使用组来管理用户和设备](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

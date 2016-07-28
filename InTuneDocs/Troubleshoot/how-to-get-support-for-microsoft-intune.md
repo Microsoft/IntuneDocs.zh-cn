@@ -1,10 +1,10 @@
 ---
 title: "如何获取支持 | Microsoft Intune"
-description: 
+description: "对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 05/26/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 632115d1010217f927e20a7e9532311d48f2b106
-ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 
 
 ---
@@ -26,34 +27,33 @@ ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
 有关 Intune 的自助服务，请参阅[有关 Microsoft Intune 的常规疑难解答提示](general-troubleshooting-tips-for-microsoft-intune.md)，或本主题的“另请参阅”部分中列出的针对特定问题的任何疑难解答主题。
 ## 创建在线服务请求
 
-1.  登录到 Intune，然后访问 [Office 365 管理中心](https://portal.office.com/Support/SupportEntry.aspx)。
+1.  使用你的 Intune 凭据登录到 [Office 365 管理中心](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage)。
 
-2.  在标题“创建服务请求”下，选择要开具票证的问题类别：
+2.  在“**创建服务请求**”下，选择要开具票证的问题类别：
 
-    -   针对计费和许可问题，请选择“计费和产品信息”。
+    -   对于帐单、授权和帐户问题，请选择“**帐单和产品信息**”。
 
-    -   针对所有其他 Intune 问题，请选择“移动设备管理” 此选项还涵盖 Office 365 MDM 和带有 Intune 的 System Center Configuration Manager。
+    -   针对所有其他 Intune 问题，请选择“移动设备管理”
 
     > [!NOTE]
-    > [!NOTE]若要查看所有类别，可能需单击列表底部的**更多**
+    > 若要查看所有类别，可能需选择列表底部的“**更多**”。
 
 3.  在“识别问题”页上，选择需要获得帮助的“功能”和“症状”。 系统会要求你提供“问题摘要”和“问题详细信息”。
 
-4.  在“查看建议”页上，你将找到指向可帮助你自行解决该问题的内容的链接。  如果无法解决该问题，可以单击页面底部的“是，继续”提交你的服务请求。
+4.  在“查看建议”页上，你将找到指向可帮助你自行解决该问题的内容的链接。  如果无法解决该问题，可以选择页面底部的“**是，继续**”提交你的服务请求。
 
-5.  在“添加详细信息”页上提供所请求的信息。 可以通过单击“附加文件”来附加屏幕截图或其他文档。
+5.  在“添加详细信息”页上提供所请求的信息。 可以通过选择“**附加文件**”来附加屏幕截图或其他文档。
 
-6.  在“确认并提交”页上，提供联系信息，查看你的请求，并单击“提交请求”。 提交请求后，你将转至服务请求列表。
+6.  在“**确认并提交**”页上，提供联系信息，查看你的请求，并选择“**提交请求**”。 提交请求后，你将转至服务请求列表。
 
 ## 电话支持
 请参阅[联系 Microsoft Intune 的辅助电话支持](contact-assisted-phone-support-for-microsoft-intune.md)以了解各个国家和地区的支持电话号码、支持时间和各个地区所支持的语言。
 
 ## 跟踪服务请求
-若要跟踪请求，请转到 [Office 365 管理中心](https://portal.office.com/admin/default.aspx)。 在“创建服务请求”列表底部，单击“查看所有支持票证”。 默认情况下，你将看到所有处于未结状态的服务请求。 若要更改所显示的服务请求，例如，查看已结请求，请单击顶部导航栏中的筛选器图标，并选择你的首选视图。
+若要跟踪请求，请转到 [Office 365 管理中心](https://portal.office.com/admin/default.aspx)。 在“**创建服务请求**”列表底部，选择“**查看所有支持票证**”。 默认情况下，你将看到所有处于未结状态的服务请求。 若要更改你所查看的服务请求，例如，查看已结请求，请选择顶部导航栏中的筛选器图标，并选择你的首选视图。
 
 > [!NOTE]
-> [!NOTE]
-**若使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与你的合作伙伴联系，或访问 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解决方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)以查找丰富的自助式材料（可通过电话或在线建立支持请求）。
+> **如果使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与你的合作伙伴联系，或访问 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解决方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)以查找丰富的自助式材料（可选择在线方式或通过电话建立支持请求）。
 >
 > System Center Configuration Manager 或 System Center Endpoint Protection 的技术支持需要付款，或者它将计为你现有的许可协议或顶级支持协议的递减。
 
@@ -140,6 +140,6 @@ ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "通过 Intune 使用 Android 设备 | Microsoft Intune"
-description: 
+description: "指向以下任务的链接列表：在 Intune 中注册设备时，你可以在你的 Android 移动设备上执行的任务"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/14/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
 
 
 ---
@@ -70,6 +70,6 @@ ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Intune"
-description: 
+description: "使用 Microsoft Intune 为 Windows 电脑（包括 Windows 10 设备）启用移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
 manager: jeffgilb
@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: 710e34f8f97377bf57a398f74773788df3794654
 
 
 ---
@@ -26,18 +26,20 @@ ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
 
 ### 设置 Windows 设备管理
 
-  1.  为公司的域创建 **CNAME** DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 EnterpriseEnrollment-s.manage.microsoft.com 的 CNAME。 如果有多个已验证的域，则为每个域创建 CNAME 记录。CNAME 资源记录必须包括以下信息：
+  1.  为公司的域创建 **CNAME** DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 EnterpriseEnrollment-s.manage.microsoft.com 的 CNAME。 虽然对于 Windows 设备注册 CNAME DNS 条目是可选的，但是建议根据需要创建一个或多个记录，以使 Windows 设备注册过程中的操作变得更简单。 如果找不到任何 CNAME 记录，则系统将提示用户手动输入 MDM 服务器名称。
+
+  如果存在多个经过验证的域，则为每个域创建一个 CNAME 记录。 CNAME 资源记录必须包含以下信息：
 
   |类型：|主机名|指向|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 小时|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 小时|
 
-    DNS 记录更改可能最多需要 72 小时才能进行传播。 你无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
+  DNS 记录更改可能最多需要 72 小时才能进行传播。 你无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
 
-    **EnterpriseEnrollment-s.manage.microsoft.com** – 支持从电子邮件的域名重定向到具有域识别的 Intune 服务
+  **EnterpriseEnrollment-s.manage.microsoft.com** – 支持从电子邮件的域名重定向到具有域识别的 Intune 服务
 
-    **EnterpriseRegistration.windows.net** – 支持将使用其工作或学校帐户向 Azure Active Directory 注册的 Windows 8.1 和 Windows 10 移动版设备
+  **EnterpriseRegistration.windows.net** – 支持将使用其工作或学校帐户向 Azure Active Directory 注册的 Windows 8.1 和 Windows 10 移动版设备
 
   2.  在 [Intune 管理控制台](http://manage.microsoft.com)中，单击“管理”&gt;“移动设备管理”&gt;“Windows”。
   ![Windows 设备管理对话框](../media/enroll-intune-winenr.png)
@@ -48,6 +50,6 @@ ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

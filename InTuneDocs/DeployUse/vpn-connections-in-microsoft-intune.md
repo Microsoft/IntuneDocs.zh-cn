@@ -1,10 +1,10 @@
 ---
 title: "VPN 连接 | Microsoft Intune"
-description: 
+description: "使用 VPN 配置文件将 VPN 设置部署到组织中的用户和设备。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
-ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 8d83e576c0c3e85c435e6738e3236f6cd4c43ccd
 
 
 ---
@@ -160,6 +160,6 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

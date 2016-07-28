@@ -1,6 +1,6 @@
 ---
 title: "用于 MAM 策略的 Azure 门户 | Microsoft Intune"
-description: 
+description: "使用 Azure 门户创建移动应用管理策略。 此处创建的策略可以应用于在 Intune 中注册或未注册的设备。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
 
 
 ---
@@ -28,8 +28,10 @@ Azure 门户支持为以下应用创建 MAM 策略：
 - 未在任何 MDM 解决方案中**注册**的设备上运行的应用
 - **已在第三方 MDM 解决方案中注册**的设备上运行的应用。
 
-如果你当前使用 **Intune 管理控制台**管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
 >[!IMPORTANT]
+
+> 如果你当前使用 Intune 管理控制台管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
+
 > 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 Azure 门户是创建 MAM 策略的新管理控制台。如果你同时在 Intune 管理控制台和 Azure 门户创建了 MAM 策略，则将 Azure 门户中的策略应用到应用程序，并部署到用户。
 
 ## 登录到 Azure 门户并自定义起始页
@@ -59,6 +61,6 @@ Azure 门户支持为以下应用创建 MAM 策略：
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

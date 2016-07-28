@@ -1,9 +1,9 @@
 ---
 title: "在 Intune 中注册 Mac OS X 设备 | Microsoft Intune"
-description: 
+description: "介绍如何在 Intune 中注册 Mac OS X 设备"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: b85d2ac62ca313f0740c68ff6d85918ff7bcd55a
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
 
 
 ---
@@ -54,6 +54,6 @@ ms.openlocfilehash: b85d2ac62ca313f0740c68ff6d85918ff7bcd55a
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

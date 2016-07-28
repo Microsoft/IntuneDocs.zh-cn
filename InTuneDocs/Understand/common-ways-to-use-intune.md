@@ -1,9 +1,9 @@
 ---
 title: "Intune 的常见使用方式 | Microsoft Intune"
-description: 
+description: "列出了用户想要 Intune 为其执行的六个最常见任务"
 keywords: 
 author: jeffgilb
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9cb6894cefad1da14332f9994fdf45fe2d1e9b9c
-ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3defa4b8f78e854532d32c66a17f0ed18d36cec7
 
 
 ---
@@ -23,7 +23,8 @@ ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
 
 在深入探讨实现任务之前，务必使公司的企业移动性利益干系人在业务目标上保持一致。  不管你是刚购买企业移动性产品还是迁移自另一个产品，这一点都很重要。  对企业移动性的需求在不断地动态演化，用于解决这些需求的 Microsoft 方法有时可能不同于市场上的其他解决方案。  在业务目标上保持一致的最好办法是，从你想要为员工、合作伙伴和 IT 实现的方案的角度，来表达你想达成的目标。  下面简单介绍了 6 种依赖于 Intune 的最常见的方案，并附有关于如何规划和部署其中每个方案的详细信息的链接。
 
->[!NOTE] 是否想了解 Microsoft IT 如何使用 Intune 来允许 Microsoft 员工访问其移动设备上的公司资源，同时保护公司数据？ 若要详细了解 Microsoft IT 如何使用 Intune 和其他服务来管理标识、设备、应用及数据，请[阅读本技术案例研究](https://www.microsoft.com/itshowcase/Article/Content/588)。  
+>[!NOTE]
+>是否想了解 Microsoft IT 如何使用 Intune 来允许 Microsoft 员工访问其移动设备上的公司资源，同时保护公司数据？ 若要详细了解 Microsoft IT 如何使用 Intune 和其他服务来管理标识、设备、应用及数据，请[阅读本技术案例研究](https://www.microsoft.com/itshowcase/Article/Content/588)。  
 
 ## 保护你的本地电子邮件和数据以供移动设备安全访问
 大多数企业移动性战略的第一步是制定一项计划，使在外部 Internet 上使用移动设备的员工能够安全地访问电子邮件。 许多组织仍然在公司网络上托管了本地数据和应用程序服务器（如 Microsoft Exchange）。 Intune 和企业移动性套件 (EMS) 为 Exchange Server 提供了独一无二的集成式条件性访问解决方案，确保在向 Intune 注册设备之前，任何移动应用都无法访问电子邮件，并且完全无需在公司网络边缘再部署一个网关计算机！
@@ -67,6 +68,6 @@ Intune 提供了大量预配和管理解决方案，这些解决方案与当今�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

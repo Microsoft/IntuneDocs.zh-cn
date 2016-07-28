@@ -1,27 +1,27 @@
 ---
-title: "Microsoft Intune 策略参考 | Microsoft Intune"
-description: 
+title: "配置策略参考 | Microsoft Intune"
+description: "通过本主题中的信息可帮助你确定管理设备所需要使用的 Microsoft Intune 策略。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
 
 
 ---
 
 # Microsoft Intune 策略参考
 
-通过本主题中的信息可帮助你确定管理设备所需要使用的 Microsoft Intune 策略。
+通过本主题中的信息可帮助你确定管理设备所需要使用的 Microsoft Intune 配置策略。
 
 > [!TIP]
 > 有关如何使用策略的详细信息，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
@@ -47,11 +47,14 @@ ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
 |**自定义配置（iOS 7.1 和更高版本）**|将配置文件部署到使用 Apple 配置器工具创建的 iOS 设备上。 这在配置策略不提供你需要的设置时十分有用。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 iOS 策略设置](ios-policy-settings-in-microsoft-intune.md)。|
 |**电子邮件配置文件（iOS 7.1 及更高版本）**|创建、部署和监视托管设备上的 Exchange Active Sync 电子邮件设置。 这样一来，用户无需进行特殊设置，就能通过个人设备访问企业电子邮件。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
 |**常规配置（iOS 7.1 及更高版本）**|配置移动设备安全设置和功能设置。<br />-   指定相容或不相容的应用，并在使用这些应用时进行报告。<br />配置锁定设备为只允许某些功能运行的展台模式，例如，允许设备只运行一个应用或禁用音量按钮。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 iOS 策略设置](ios-policy-settings-in-microsoft-intune.md)。|
+|**移动应用配置策略（iOS 7.1 及更高版本）**|移动应用配置策略可自动提供用户在运行 iOS 应用时可能需要的设置。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)。|
+|**移动预配配置文件策略（iOS 7.1 及更高版本）**|Apple iOS 业务线移动应用附带预配配置文件和证书签名的代码。 当应用在 iOS 设备上运行时，iOS 会确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。<br><br>用于签署应用的企业签名证书通常持续 3 年。 但是，预配配置文件将在 1 年后过期。 使用此策略对拥有即将过期（但证书仍然有效）应用的设备主动部署新的预配配置文件策略。<br><br>有关详细信息，请参阅[使用 iOS 移动预配配置文件策略防止你的应用过期](ios-mobile-app-provisioning-profiles.md)。|
+|**PKCS #12 (.PFX) 证书配置文件（iOS 7.1 及更高版本）**|使用此配置文件以建立和部署针对设备证书请求的 PFX 设置。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
 |**SCEP 证书配置文件（iOS 7.1 及更高版本）**|可以配置简单证书注册协议证书，该证书可与受信任的移动设备证书一起用于对移动设备进行身份验证，以允许它们访问 Wi-Fi 和 VPN 配置文件等配置的网络资源。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
 |**受信任证书配置文件（iOS 7.1 及更高版本）**|可以配置受信任的移动设备证书，该证书可用于对移动设备进行身份验证，以允许它们访问 Wi-Fi 和 VPN 配置文件等配置的网络资源。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
 |**VPN 配置文件（iOS 7.1 及更高版本）**|配置和部署授权用户从其移动设备安全访问您公司网络的设置。 通过部署这些设置，你可最大程度减少最终用户连接到其作业所需的工作。<br /><br />有关详细信息，请参阅 [Microsoft Intune.md 中的 VPN 连接](vpn-connections-in-microsoft-intune.md)。|
 |**Wi-Fi 配置文件（iOS 7.1 及更高版本）**|配置和部署到您的组织中的用户的无线网络设置。 通过部署这些设置，你可最大程度减少最终用户连接到无线网络所需的工作。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 Wi-Fi 连接](wi-fi-connections-in-microsoft-intune.md)。|
-|**移动应用配置策略（iOS 7.1 及更高版本）**|移动应用配置策略可自动提供用户在运行 iOS 应用时可能需要的设置。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)。|
+
 
 ## Mac OS X 配置策略
 
@@ -80,8 +83,10 @@ ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
 |**PKCS #12 (.PFX) 证书配置文件（Windows 10 桌面版和移动版及更高版本）**|使用此配置文件以建立和部署针对设备证书请求的 PFX 设置。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
 |**SCEP 证书配置文件（Windows 8.1 及更高版本）**<br /><br />**SCEP 证书配置文件（Windows Phone 8.1 及更高版本）**|可以配置简单证书注册协议证书，该证书可与受信任的移动设备证书一起用于对移动设备进行身份验证，以允许它们访问 Wi-Fi 和 VPN 配置文件等配置的网络资源。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
 |**受信任的证书配置文件（Windows 8.1 及更高版本）**<br /><br />**受信任的证书配置文件（Windows Phone 8.1 及更高版本）**|可以配置受信任的移动设备证书，该证书可用于对移动设备进行身份验证，以允许它们访问 Wi-Fi 和 VPN 配置文件等配置的网络资源。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
-|**VPN 配置文件（Windows 10 桌面版和移动版及更高版本）**<br /><br />**VPN 配置文件（Windows 8.1 及更高版本）**<br /><br />**VPN 配置文件（Windows Phone 8.1 及更高版本）**|配置和部署授权用户从其移动设备安全访问您公司网络的设置。 通过部署这些设置，你可最大程度减少最终用户连接到其作业所需的工作。<br /><br />有关详细信息，请参阅 [Microsoft Intune.md 中的 VPN 连接](vpn-connections-in-microsoft-intune.md)。|
+|**VPN 配置文件（Windows 10 桌面版和移动版及更高版本）**<br /><br />**VPN 配置文件（Windows 8.1 及更高版本）**<br /><br />**VPN 配置文件（Windows Phone 8.1 及更高版本）**|配置和部署授权用户从其移动设备安全访问您公司网络的设置。 通过部署这些设置，你可最大程度减少最终用户连接到其作业所需的工作。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 VPN 连接](vpn-connections-in-microsoft-intune.md)。|
 |**Wi-Fi 导入**|导入和部署你之前导出到文件的 Windows Wi-Fi 配置。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 Wi-Fi 连接](wi-fi-connections-in-microsoft-intune.md)。|
+|**Windows 信息保护**<br>（以前称为企业数据保护）|随着企业中员工拥有的设备的增加，通过应用和服务（如电子邮件、社交媒体和公共云）发生的意外数据泄露的风险也在增加，这是不受企业控制的。 例如，某位员工从其个人电子邮件帐户发送最新的工程图片、将产品信息复制并粘贴到推文，或将正在进行的销售报表保存到他的公有云存储。<br><br>Windows 信息保护有助于防范潜在的数据泄露，而不会干扰员工体验。 它还有助于防范企业应用和数据在企业自有设备和员工带到工作中的个人设备上的意外数据泄露，而无需对你的环境或其他应用进行更改。<br><br>此 Intune 策略管理由 Windows 信息保护的应用、企业网络位置、保护级别和加密设置的列表。<br><br>有关详细信息，请参阅 [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp)（使用 Windows 信息保护来保护你的企业数据）。|
+
 
 ## 软件策略
 
@@ -129,7 +134,6 @@ ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

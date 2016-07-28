@@ -1,10 +1,10 @@
 ---
 title: "直接注册 iOS 设备 | Microsoft Intune"
-description: 
+description: "使用 Apple 配置器工具直接注册公司自有的 iOS 设备（使用通过 USB 将其连接至 Mac 计算机的预定义策略）。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,16 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
 
 
 ---
 
 # 使用 Apple Configurator 直接注册 iOS 设备
-Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具。 此过程不会恢复设备的出厂设置，并使用预定义策略注册设备。 此方法针对“无用户关联”的设备，并且要求你通过 USB 将 iOS 设备连接到 Mac 计算机以设置企业注册。 直接注册的设备不支持公司门户应用。 本指南假定你在 Mac 计算机上使用 Apple Configurator 2.0。
+Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具。 此过程不会恢复设备的出厂设置，并使用预定义策略注册设备。 此方法针对“无用户关联”的设备，并且要求你通过 USB 将 iOS 设备连接到 Mac 计算机以设置企业注册。 直接注册 iOS 设备时，你可以注册设备，而无需获取设备的序列号。 在注册过程中，你还可以在 Intune 捕获设备名称前对设备命名以进行标识。 直接注册的设备不支持公司门户应用。 本指南假定你在 Mac 计算机上使用 Apple Configurator 2.0。
 
 1.  **创建设备的配置文件**设备注册配置文件定义应用于设备的设置。 如果尚无此配置文件，请使用 Apple Configurator 创建已注册的 iOS 设备的设备注册配置文件。
-
-    #### 创建配置文件
 
     1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择“添加...”。
 
@@ -40,8 +38,8 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
         -   “设备组预分配”– 部署此配置文件的所有设备将最初属于此组。 在注册后，可以将设备重新分配。
 
-        >[!Important]
-        >组分配会将从 Intune 移到 Azure Active Directory。 [了解详细信息](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     3.  单击“保存配置文件”以添加配置文件。
 
 5.  **以 .mobileconfig 格式导出要部署到 iOS 设备的配置文件**选择你创建的设备配置文件。 选择“导出...” “导出…”。 选择“下载配置文件”并保存已下载的 .mobileconfig 文件。
@@ -61,8 +59,6 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 8.  **安装配置文件**你已准备好在 iOS 设备上安装配置文件。 设备必须已经完成设置助理且准备好使用。  如果注册需要应用部署，设备应设置一个 Apple ID，因为应用部署将需要你有一个 Apple ID 登录到应用商店。
 
-    ###### 完成非监督的 iOS 设备的配置文件验收
-
     1.  解锁 iOS 设备。
 
     2.  在“管理配置文件”的“安装配置文件”对话框中，点击“安装”。
@@ -81,11 +77,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 10. **分发设备**iOS 设备现已向 Intune 注册并已托管。
 
 
-### 另请参阅
-[为注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

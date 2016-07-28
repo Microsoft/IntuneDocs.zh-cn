@@ -1,10 +1,10 @@
 ---
-title: "部署应用 | Microsoft Intune"
-description: 
+title: "如何部署应用 | Microsoft Intune"
+description: "使用本主题中的信息可帮助你使用 Microsoft Intune 部署应用。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 5ef1d2d69acfeea9670324f580d33b191001ffa9
+ms.openlocfilehash: 8ab2517a11ecb6ae5395814472dfbb3e83da132b
 
 ---
 # 在 Microsoft Intune 中部署应用
 
-使用本主题中的信息可帮助部署 Microsoft Intune 应用。
+使用本主题中的信息可帮助你使用 Microsoft Intune 部署应用。
 
 
 ## 部署应用
-在此过程中，你将对所选设备或用户部署应用。
+在此过程中，你将对所选设备组或用户组部署应用。
 
 ### 部署应用
 
@@ -52,11 +52,11 @@ ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
 ## 示例
 
 在此示例中，将应用程序作为“可用”部署到 iOS 设备。
-用户设备上的公司门户中将显示该应用，用户可从中安装该应用。 例如，在此屏幕截图中，iOS 版必应应用是使用“外部链接”安装类型（采用自定义图标）部署的，并且选中了选项“将此应用显示为特色应用并在公司门户中突出显示”。
-    ![iOS 可用应用](./media/available-install-on-iOS.png)
+用户设备上的公司门户中将显示该应用，用户可从中安装该应用。 例如，在此屏幕截图中，iOS 版必应应用是使用“外部链接”安装类型（采用自定义图标）部署的，并且选中了选项“将此应用显示为特色应用并在公司门户中突出显示”。  
+![iOS 可用应用](./media/available-install-on-iOS.png)
 
-如果将此应用作为“必需”到 iOS 设备，则用户将接收到通知，指示应用已准备就绪，可供安装。 例如，在此屏幕截图中，iOS 版工作文件夹应用是使用“来自应用商店的托管 iOS 应用”安装类型部署的。
-    ![iOS 必需应用](./media/iOS-Required-install.PNG)
+如果将此应用作为“必需”到 iOS 设备，则用户将接收到通知，指示应用已准备就绪，可供安装。 例如，在此屏幕截图中，iOS 版工作文件夹应用是使用“来自应用商店的托管 iOS 应用”安装类型部署的。  
+![iOS 必需应用](./media/iOS-Required-install.PNG)
 
 ## 后续步骤
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

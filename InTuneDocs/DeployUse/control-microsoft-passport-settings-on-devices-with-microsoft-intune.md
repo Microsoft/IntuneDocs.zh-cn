@@ -1,10 +1,10 @@
 ---
 title: "控制设备上的 Microsoft Passport 设置 | Microsoft Intune"
-description: 
+description: "了解 Intune 如何与 **Microsoft Passport for Work** 集成；Microsoft Passport for Work 是使用 Active Directory 或 Azure Active Directory 帐户取代密码、智能卡或虚拟智能卡进行登录的一种替代方法。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+ms.sourcegitcommit: ada366e91806c6f443ac4548af99c587ac218ec9
+ms.openlocfilehash: 934ae78edf4de2003d62179fa38269d97e6d7ef6
 
 
 ---
@@ -23,6 +23,9 @@ ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
 Microsoft Intune 允许集成 **Microsoft Passport for Work**，它是使用 Active Directory 或 Azure Active Directory 帐户取代密码、智能卡或虚拟智能卡进行登录的一种替代方法。
 
 通过 Passport，你可以使用**用户手势**取代密码进行登录。 用户手势可以是简单 PIN、Windows Hello 等生物识别身份验证或指纹读取器等外部设备。
+
+>[!TIP]
+>Microsoft Passport for Work 现在称为 Windows Hello 企业版。 Intune 控制台将更新以在将来的更新中反映此更改。
 
 Intune 以两种方式与 Passport for Work 集成：
 
@@ -52,7 +55,7 @@ Intune 以两种方式与 Passport for Work 集成：
     - **必需** — 用户在其 PIN 中必须至少包含其中一种字符类型。 例如，常见的做法是要求包含至少一个大写字母和一个特殊字符。
     - **不允许**（默认）— 用户不得在其 PIN 中使用这些字符类型（这也是不配置此设置时的行为）。
     > [!TIP]
-    > 特殊字符包括：**！" # $ % &amp; ' ( ) &#42;+ , - ./ : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96;{& #124;}~**。
+    > 特殊字符包括：**! “ # $ % &amp; ‘ ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**。
 - **PIN 有效期(天)** — 比较好的一种做法是指定 PIN 的有效期，在超过此期限后，最终用户必须更改该 PIN。 默认值为 41 天。 
 - **记住 PIN 历史记录** — 使用此设置来限制重用以前用过的 PIN。 默认情况下不能重用最近使用的 5 个 PIN。
 
@@ -75,6 +78,6 @@ Intune 以两种方式与 Passport for Work 集成：
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

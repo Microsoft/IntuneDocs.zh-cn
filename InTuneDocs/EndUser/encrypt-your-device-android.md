@@ -1,9 +1,9 @@
 ---
 title: "加密你的设备 | Microsoft Intune"
-description: 
+description: "介绍如何加密 Android 设备"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/07/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39bcea03cad061e5b84e073cc5affcdd14fc6015
-ms.openlocfilehash: 22e9071171d2dc63562e94cabe2abdec3b2bd85e
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 22e9071171d2dc63562e94cabe2abdec3b2bd85e
 
 **要执行的操作**：请确保设备上已设置 PIN 或密码。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
@@ -48,6 +48,6 @@ ms.openlocfilehash: 22e9071171d2dc63562e94cabe2abdec3b2bd85e
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

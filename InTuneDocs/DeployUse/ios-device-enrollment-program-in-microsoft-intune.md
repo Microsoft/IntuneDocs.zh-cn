@@ -1,10 +1,10 @@
 ---
-title: "使用 Microsoft Intune 对 iOS 设备进行 Apple DEP 管理 | Microsoft Intune"
-description: 
+title: "适用于 iOS 设备的 Apple DEP 管理 | Microsoft Intune"
+description: "部署注册配置文件，该配置文件以“无线”方式注册通过 iOS 设备注册程序 (DEP) 购买的 iOS 设备以管理 Apple 设备。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
 
 
 ---
 
 # 使用设备注册计划注册企业所有的 iOS 设备
-Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”方式注册通过设备注册计划 (DEP) 购买的 iOS 设备。 注册包包括设备的设置助理选项。 用户无法注销通过 DEP 注册的设备。
+Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”方式注册通过设备注册程序 (DEP) 购买的 iOS 设备。 注册包包括设备的设置助理选项。 用户无法注销通过 DEP 注册的设备。
 
 ## 使用 Microsoft Intune 对 iOS 设备进行 Apple DEP 管理
 要使用 Apple 的设备注册程序 (DEP) 管理企业所有的 iOS 设备，则你的组织必须加入 Apple DEP 并通过该程序获取设备。 该过程的详细信息，可以通过以下网站获得：  [https://deploy.apple.com](https://deploy.apple.com)。 该程序的优点包括免手动设置设备，无需通过 USB 将每个设备连接到计算机。
@@ -55,9 +55,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
     你还可以**将设备分配到以下组**。 单击“选择...”来选择组。
 
-    >[!Important]
-    >组分配会将从 Intune 移到 Azure Active Directory。 [了解详细信息](#changes-to-intune-group-assignments)
-
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     然后，启用**为该策略配置设备注册程序设置**以支持 DEP。
 
@@ -101,13 +99,13 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 ## Intune 组分配的更改
 
-从 9 月开始，设备组关联将移到 Azure Active Directory。 过渡到 Azure Active Directory 组后，组分配将不会出现在“企业注册配置文件”选项中。 由于此更改将历时数月，因此你可能不会立即看到更改。 不久后将会发布更多详细信息。
+从 9 月开始，设备组关联将移到 Azure Active Directory。 过渡到 Azure Active Directory 组后，组分配将不会出现在“企业注册配置文件”选项中。 由于此更改将历时数月，因此你可能不会立即看到更改。 可以根据企业注册配置文件名称在 Azure Active Directory 中定义新的动态设备组分配。 此过程可确保预分配到设备组的设备会自动注册到部署了策略和应用的组中。 [详细了解 Azure Active Directory 组](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### 另请参阅
 [为注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

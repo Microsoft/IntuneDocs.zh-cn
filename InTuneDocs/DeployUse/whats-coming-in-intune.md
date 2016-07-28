@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Lindavr
 manager: jeffgilb
-ms.date: 06/10/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,29 +13,27 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
-ms.sourcegitcommit: b203f51171d38f2b0fc2b46e556679322701d29b
-ms.openlocfilehash: 77d2e74dcb032ff52808998c56de7d6b8847ebbe
+translationtype: Human Translation
+ms.sourcegitcommit: 35ee5d0c8898c95898c0527a623cf13c454387f2
+ms.openlocfilehash: 831cec6cd0e02a94c1a3f67d4adf5a5dcbb01449
 
 
 ---
 
-# Microsoft Intune 即将推出的功能
+# Microsoft Intune 中即将推出的功能 - 7 月
 此信息在非常有限的情况下依据保密协议 (NDA) 提供，并不断变化。 此处列出的某些功能有无法按期发布的风险并可能推迟到以后的版本。 正在以试验模式（外部测试）测试其他功能，以确保它们可立即供客户使用。 如果有任何问题或顾虑，请联系 Intune/PM 好友。
 
 本页将定期更新。 回来查看即将推出的更新。
 
-下面的更改依据 Intune 开发。 所有这些功能还将支持混合客户部署（通过 Intune 使用 Configuration Manager）。 有关新的混合功能的详细信息，请查看[混合新增功能页](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx)。
+下面的更改依据 Intune 开发。 所有这些功能最终将支持混合客户部署（带 Intune 的 Configuration Manager）。 有关新的混合功能的详细信息，请查看[混合新增功能页](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx)。
 
 
 ## 应用管理
-- **增强的 Windows 10 企业数据策略配置体验。** 我们围绕创建应用规则、指定网络边界定义和其他企业数据保护设置增强了 Win 10 企业数据保护策略配置体验。
-<!---TFS 1303011--->
+### 改善应用预配配置文件更新体验
+Apple iOS 业务线移动应用附带预配配置文件和证书签名的代码。 当应用在 iOS 设备上运行时，iOS 会确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。
 
-- **浏览器的条件性访问。** 可以为 Exchange Online 和 SharePoint Online 设置条件性访问策略，以便仅允许托管且合规的 iOS 和 Android 设备对其进行访问。 尝试通过 iOS 和 Android 设备登录到 Outlook Web Access (OWA) 和 SharePoint 站点的最终用户，系统将提示通过 Intune 注册其设备以及在完成登录前解决任何非合规性问题。
-<!---TFS 1175844--->
-
-- **Dynamics CRM Online 支持条件性访问。** 客户将能够为 Dynamics CRM Online 设置条件访问策略，以便仅允许托管且合规的 iOS 和 Android 设备对其进行访问。 系统将提示尝试登录到 iOS 和 Android 设备上的 Dynamics CRM 移动应用的最终用户注册 Intune 并在登录完成前修正任何非合规性问题。
-<!---TFS1295358--->
+用于签署应用的企业签名证书通常持续 3 年。 但是，预配配置文件将在 1 年后过期。 利用此更新，Intune 将为你提供一些工具，用于主动地将新预配配置文件策略部署到安装了即将到期的应用而证书仍有效的设备。
+<!--- TFS 1280247--->
 
 ### Xamarin 支持
 Microsoft Intune 应用 SDK 将在这些方案中支持 Xamarin 应用：
@@ -44,26 +42,45 @@ Microsoft Intune 应用 SDK 将在这些方案中支持 Xamarin 应用：
 - 使用 Intune App Wrapping Tool 添加对现有业务线应用的 MAM 支持
 
 有关选择要使用的方法的帮助信息，请参阅 [Decide how to prepare apps for mobile application management with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)（决定如何使用 Microsoft Intune 为移动应用程序管理准备应用）。
+
 <!--- TFS 1061478 & TFS 1152340--->
 
 ## 设备管理
-- **Windows Defender 策略设置，可以避免可能不需要的应用。** 名为“**可能不需要的应用程序检测**”的新 Windows Defender 设置已被添加到 Windows 10 桌面版和移动版的常规配置。 你可以使用此设置以防止已注册的 Windows 台式计算机运行被 Windows Defender 分类为可能不需要的软件。 你可以防止这些应用程序运行，或使用审核模式在安装了不需要的应用程序时进行报告。
-<!---TFS 1244478--->
+### 提高了设备注册限制
+Intune 会将每个用户的设备的最大可配置设备注册限制从 5 提高到 15。
+<!---TFS 1289896 --->
 
-## 条件性访问
-**Intune 的 Cisco ISE 网络访问控制策略。**  使用 Cisco 标识服务引擎 (ISE) 2.1 并使用 Microsoft Intune 的客户可以在 ISE 中设置网络访问控制策略。
+## 组管理
+### Intune 组将于 2016 年 8 月初过渡到 Azure Active Directory 组
+Intune 正在创建将 Azure Active Directory (AAD) 安全组用作 Intune 中的用户和设备组的新组管理体验。 **当我们介绍新的基于 Azure 的 Intune 管理门户时**，这些组将用于所有组管理、策略部署和配置文件部署。
 
-此策略下，需要使用 WiFi 或 VPN 连接到网络的设备必须在符合以下条件后才被允许访问：
+此新体验将会使你无需在服务之间重复组，**允许你访问某些新的 Azure Active Directory Premium (AADP) 组功能**，并提供使用 PowerShell 和图表的可扩展性。 这还将跨企业移动性管理统一组管理体验。
 
-* 必须由 Intune 进行管理
-* 必须符合任何已部署的 Intune 合规性策略
+若要启用移动到安全组，**当前管理控制台**中的体验将进行一些修改。 **这些更改和 AAD 安全组的使用情况将记录在 Intune 文档中**。
 
-非合规设备的最终用户将被提示注册和修正任何合规性问题以获取访问权限。
-<!---TFS 1299144--->
+Intune 的新客户将看到**当前租户执行操作之前的一些安全组更改**。
+
+除了组管理中的更改，**还将弃用以下功能**：
+- 在创建新组的过程中排除成员或组
+- 服务管理员角色中的“管理组”
+- 对通知规则的基于组的自定义警报
+- 利用报表中的组进行透视
+
 
 ## Company Portal
-**对 iOS 公司门户应用中设备注册管理器帐户的更改。** 若要提高性能和可扩展性，Intune 将不再在 iOS 公司门户应用的“我的设备”窗格中显示所有设备注册管理器 (DEM) 设备。 将仅显示运行该应用的本地设备，且仅限该设备通过公司门户应用注册的情况下。 DEM 用户可能会在本地设备上执行操作，但只能从 Intune 管理员控制台远程管理其他已注册设备。  此外，Intune 将不支持通过 Apple 设备注册计划或 Apple 配置器工具使用 DEM 帐户。 这两种注册方法已支持共享的 iOS 设备的无用户注册。 当共享设备的无用户注册不可用时，仅使用 DEM 帐户。
+
+### 向 Android 公司门户添加“通知”
+我们即将于 8 月发布 Android 公司门户的更新，这将在主页上引入一个新的“**通知**”图标。 点击此图标将访问“**通知**”页，该页将向你的最终用户显示在公司门户应用中需要注意的所有项，例如，设备非合规性、注册更新和注册激活。 如果还使用 iOS 公司门户应用，你将已看到通知体验。 通过引入“**通知**”页，只要设备已经注册，每次启动或恢复 Android 公司门户时，你将不会看到“**公司访问设置**”页。 我们听说你们中的许多人都已创建最终用户指南，而且非常感谢你们在指南/屏幕快照可能需要更新时提前通知我们。 请更新你的文档，以反映体验中即将发生的更改。 有关更新的屏幕快照，请访问：https://aka.ms/androidcpupdate。  
+
+### 帮助用户解决工作区加入失败时的注册问题
+使用条件访问时，Windows 8.1、Windows 10 桌面版和 Windows 10 移动版的注册步骤已针对体验工作区加入 (WPJ) 失败的最终用户在公司门户网站中进行了简化。 以前，当最终用户尝试注册并执行 WPJ，而且注册已成功，但 WPJ 失败时，已注册的设备将不出现在用户标识的设备列表中，因而使用户感到困惑。 用户现在将看到单独的“设备注册”和“工作区加入”步骤，从而在 WPJ 失败后更易于看到设备的状态以及完成此过程。 执行单独的步骤还可以简化 IT 管理员排除故障的过程。
+
+### 对 iOS 公司门户应用中设备注册管理器帐户的更改
+若要提高性能和可扩展性，Intune 将不再在 iOS 公司门户应用的“我的设备”窗格中显示所有设备注册管理器 (DEM) 设备。 将仅显示运行该应用的本地设备，且仅限该设备通过公司门户应用注册的情况下。 DEM 用户可能会在本地设备上执行操作，但只能从 Intune 管理员控制台远程管理其他已注册设备。  此外，Intune 将不支持通过 Apple 设备注册计划或 Apple 配置器工具使用 DEM 帐户。 这两种注册方法已支持共享的 iOS 设备的无用户注册。 当共享设备的无用户注册不可用时，仅使用 DEM 帐户。
 <!---TFS 1233681--->
+### 限制旁加载应用安装到注册的 Android 设备
+Android 设备不能再通过公司门户网站安装应用程序，除非使用适用于 Android 的 Intune 公司门户应用已在 Intune 中注册设备。 
+<!---TFS 1299082--->
 
 ## 服务弃用
 **适用于 Windows 8 和 Windows Phone 8 的公司门户应用将从 2016 年 9 月起弃用。** 从 2016 年 9 月开始，Microsoft Intune 将结束为适用于 Windows Phone 8 和 Windows 8 平台的 Microsoft Intune 公司门户应用提供支持。 将设备更新到 Windows 8.1 和 Windows Phone 8.1，并使用相应的 Windows 8.1 和 Windows Phone 8.1 公司门户应用继续向这些设备分发应用。
@@ -73,9 +90,10 @@ Microsoft Intune 应用 SDK 将在这些方案中支持 Xamarin 应用：
 Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员。 当前，你可将通知规则配置为向你创建的 Intune 设备组中的设备所有用户发送电子邮件。 约从 2016 年 6 月 1 日起，已不再支持目标用户创建组。
 
 此更改的初步时间线如下：
-- 2016 年 8 月，新租户将看不到创建通知规则向导的步骤二。 正在退出的租户不受影响。
+- 2016 年 8 月，新租户将看不到创建通知规则向导的步骤二。 现有的租户不受影响。
 - 2016 年 9 月左右，某些现有租户将看不到向导中的“选择设备组”。
 - 2016 年 11 月左右，我们期望所有租户将不会看到向导中的“选择设备组”。
+
 <!---   TFS 1278864--->
 
 **iOS 公司门户应用的支持更改。**
@@ -89,11 +107,12 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 建议使用适用于 Android 的 Rights Management 应用（RMS 共享）而不是使用 Intune 查看器应用，前者只需部署一个应用而不是三个单独的应用便可安全地查看 Android 设备上的公司文件。 了解有关 RMS 共享应用（具有指向文档的链接）的详细信息。
 
 
+
 ### 另请参阅
 有关最近开发的详细信息，请参阅 [Microsoft Intune 中的新增功能](whats-new-in-microsoft-intune.md)。
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

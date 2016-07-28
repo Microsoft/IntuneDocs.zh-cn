@@ -1,26 +1,27 @@
 ---
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-
-title: Microsoft Intune 文档
-description: Microsoft Intune 技术文档 - 移动设备和应用程序管理
-keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
+title: "Intune 文档 - MDM 文档 | Microsoft 文档"
+description: "Microsoft Intune 技术文档 - 移动设备和应用程序管理"
+keywords: "Intune 文档、MDM 文档、移动设备管理文档、移动设备和应用程序管理文档"
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage
-ms.prod:
 ms.service: microsoft-intune
-ms.technology:
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
+translationtype: Human Translation
+ms.sourcegitcommit: c200c191168a8c5ae9382d62b3a25e9cfd1db3ac
+ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
+
 
 ---
-# Microsoft Intune 文档
+# Intune 文档
 <article id="main">
     <section id="hero-content">
-      <h1>Microsoft Intune 文档</h1>
-      <h2>了解如何部署和管理 Microsoft Intune（一种移动设备和应用程序管理服务）。</h2>
+      <h1>Intune 文档</h1>
+      <h2>了解如何部署和管理 Microsoft Intune 一种移动设备和应用程序管理服务。</h2>
       <h3>想要使用 Configuration Manager 管理 Intune？ <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">请查看 Configuration Manager 文档 &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
@@ -280,6 +281,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 </article>
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

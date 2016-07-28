@@ -1,10 +1,10 @@
 ---
-title: "使用“设备注册管理器”注册企业自有设备 |Microsoft Intune"
-description: 
+title: "使用设备注册管理器进行注册 | Microsoft Intune"
+description: "Microsoft Intune 的设备注册管理器 (DEM) 帐户可以管理大量带有单一用户帐户的企业自有的共享移动设备。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.sourcegitcommit: 7b0154d73ab540e7543fab9088463ed8b61b45a0
-ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 5c7eecf5b7801eca3d23dd0eee954203e9c9cb06
 
 
 ---
@@ -91,6 +92,7 @@ ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
 -   已删除的设备注册管理员帐户与注册的设备的关系仍存在，但不可以注册任何其他设备
 
 
-<!--HONumber=Jul16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "启用 MAM 的应用的最终用户体验 | Microsoft Intune"
-description: 
+description: "本主题介绍当你的应用由移动应用管理策略托管时会出现的情况。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
-ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
-ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+translationtype: Human Translation
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: e43dea5630975165ea7468836a8b0328f0656030
 
 
 ---
@@ -46,7 +47,8 @@ ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
 
     ![显示使用现有文件列表打开的文件位置的屏幕截图](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE]更改已部署策略时，将在下次打开该应用时应用更改。
+    > [!NOTE]
+    > 更改已部署策略时，将在下次打开该应用时应用更改。
 
 ##  在 Android 设备上访问 OneDrive
 
@@ -169,6 +171,6 @@ Intune 仅支持对于每个设备，将 MAM 策略部署到一个用户帐户�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

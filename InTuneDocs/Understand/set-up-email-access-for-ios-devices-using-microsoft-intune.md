@@ -1,9 +1,9 @@
 ---
-title: "使用 Microsoft Intune 设置适用于 iOS 设备的电子邮件访问权限 | Microsoft Intune"
-description: 
+title: "设置适用于 iOS 设备的电子邮件访问权限 | Microsoft Intune"
+description: "使用 Intune 设置适用于 iOS 设备的电子邮件访问权限"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3b6bb8602ddc7a1f75a0c21ffc4fb6327673d38d
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
 在本演练中，我们将使用带有试用订阅的托管 Exchange 服务器。
 1. 在 Intune 控制台中，单击“策略”，然后单击“添加策略”。
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. 在“创建新策略”对话框中，展开“iOS”，选择“电子邮件配置文件”，然后单击“创建策略”。
+2. 在“创建新策略”对话框中，展开“iOS”，选择“电子邮件配置文件”，然后单击“创建策略”。  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. 在“创建策略”页面上，输入策略名称（如 **iOS 电子邮件配置文件 - 用户密码**）和说明。 你可能拥有针对不同设备类型和不同身份验证方法的多个电子邮件配置文件，因此可以使用名称来显示配置文件对应的内容。
 4. 输入 Exchange 主机名。 由于我要使用托管在 Azure 上的 Exchange 服务器，因此对于主机名，我们只需输入：**outlook.office365.com**
@@ -51,21 +51,23 @@ ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
 8. 单击“保存策略”。
 9. 将显示一个对话框，询问你是否想要立即部署该策略。 单击“是”。
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. 在之后出现的窗口中，选择你想要将电子邮件配置文件部署到的用户组，单击“添加”，然后单击“确定”。
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png) 单击“确定”后，策略将在一到两分钟内向下传递到已注册的设备中。
+10. 在之后出现的窗口中，选择你想要将电子邮件配置文件部署到的用户组，单击“添加”，然后单击“确定”。  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
+单击“确定”后，策略将在一到两分钟内向下传递到已注册的设备中。
 
 ## 验证是否已成功应用配置文件的步骤
 
 若要验证是否已成功应用配置文件，你将需要访问已将电子邮件配置文件部署到其中的一个设备。
 1. 在 iOS 设备上，打开邮件应用。
-该应用将提示你输入用户的电子邮件用户名和密码。
+该应用将提示你输入用户的电子邮件用户名和密码。  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. 输入用户的 Exchange 电子邮件帐户的用户名和密码，然后点击“确定”。
  邮件应用将打开 Exchange 帐户，然后电子邮件开始同步到设备。
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. 为邮件应用签入帐户设置，以确保帐户名与在电子邮件配置中输入的帐户名相同（例如，**Contoso Mail**），并确认正确设置了同步设置。
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) 如果显示未自动将电子邮件配置文件应用到设备，则可以使用设备上的公司门户应用手动应用策略。
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
+  如果显示未自动将电子邮件配置文件应用到设备，则可以使用设备上的公司门户应用手动应用策略。
 1. 打开公司门户应用。
 2. 点击“我的设备”。
 3. 点击设备的名称。
@@ -78,6 +80,6 @@ ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

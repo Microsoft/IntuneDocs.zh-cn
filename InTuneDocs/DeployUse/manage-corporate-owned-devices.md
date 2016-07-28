@@ -1,10 +1,10 @@
 ---
 title: "管理公司拥有的设备 | Microsoft Intune"
-description: 
+description: "使用多种方法对公司自有设备 (COD) 进行管理，具体取决于设备、设备购买的方式以及组织的需要。"
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
-ms.openlocfilehash: e07053b9b26afacc03e45f2cb104eda6088a1e05
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
 
 
 ---
@@ -32,13 +32,27 @@ ms.openlocfilehash: e07053b9b26afacc03e45f2cb104eda6088a1e05
 
 [使用设备注册管理器注册企业自有设备](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
-## 国际移动设备标识 (IMEI)
-唯一的国际移动设备标识 (IMEI) 号是许多移动设备制造商的通用设备属性。 Intune 管理员可以导入公司拥有的设备的 IMEI 号。 当设备由 Intune 管理后，可以将它标记为公司所有的设备并对它使用相应的策略。
+## 注册公司自有的 Windows 10 桌面
+
+如果你的组织拥有 Azure Active Directory Premium (AADP) 或企业管理套件 (EMS)，你可以[注册 Windows 10 企业版](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)，当用户添加他们的工作或学校帐户时，它们将被自动标记为“公司自有”。
+
+## 将设备标识为“公司自有”
+
+公司自有设备在设备列表的“**所有权**”下，以“**公司**”列出。 设备可以通过以下方式被标识为“公司自有”：
+
+ - [使用设备注册管理器 (DEM) 注册](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ - 使用 Apple 的[设备注册程序 (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) 或 [Apple 配置器](ios-setup-assistant-enrollment-in-microsoft-intune.md)注册。
+ - [使用 IMEI 号预先说明设备](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+ - [Windows 10 设备的 Azure Active Directory/企业管理套件注册](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+
+### 国际移动设备标识 (IMEI)
+
+唯一的国际移动设备标识 (IMEI) 号是许多移动设备制造商的通用设备属性。 Intune 管理员可以导入公司拥有的设备的 IMEI 号。 当设备变为由 Intune 管理后，该设备被标记为公司自有设备。
 
 [根据国际移动设备标识 (IMEI) 号码指定公司拥有的设备](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

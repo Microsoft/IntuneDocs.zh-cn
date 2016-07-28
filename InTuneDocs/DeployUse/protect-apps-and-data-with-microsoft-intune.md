@@ -1,10 +1,10 @@
 ---
 title: "保护应用和数据 | Microsoft Intune"
 description: 
-keywords: 
+keywords: "本主题介绍供你使用的各种 Intune 特性和功能，以帮助保护你的公司应用和数据。"
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
 
 
 ---
@@ -39,7 +39,9 @@ Intune 通过多个技术层保护公司数据。  在标识层上，条件性�
 - 要求 PIN/密码或企业凭据，保障应用访问安全。
 - 在 Intune 托管浏览器中打开所有 Web 链接。
 
-这些规则组被称为[移动应用管理 (MAM) 策略](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。  可以将 MAM 策略应用到在不一定由你托管的设备上运行的应用。  可以针对已在 Intune 中注册的设备、由其他第三方 MDM 注册或托管的设备，或者可能不由你托管的设备（例如员工拥有的设备）使用 MAM 策略来保护公司数据。
+这些规则组被称为[移动应用管理 (MAM) 策略](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。  可以将 MAM 策略应用到在不一定由你托管的设备上运行的应用。  
+
+可以针对**已在 Intune 中注册**的设备、**由其他第三方 MDM 注册或托管**的设备，或者**未在任何 MDM 解决方案中注册**的设备（例如员工自有设备）使用 MAM 策略来保护公司数据。
 
 若要将应用与 MAM 策略相关联，该应用必须包含 Microsoft Intune 应用软件开发工具包 (SDK)，或使用应用包装工具。
 
@@ -51,6 +53,6 @@ Intune 通过多个技术层保护公司数据。  在标识层上，条件性�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

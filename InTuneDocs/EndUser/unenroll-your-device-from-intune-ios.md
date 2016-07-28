@@ -1,9 +1,9 @@
 ---
-title: "从 Intune 取消注册设备 | Microsoft Intune"
-description: 
+title: "从 Intune 取消注册 iOS 设备 | Microsoft Intune"
+description: "介绍如何从 Intune 取消注册 iOS 设备"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -14,18 +14,21 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 4dbb4d5d7151a6a579e00c2c4034a811f2357774
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e8572d873ca83f4fad7a1e1e01f60ece3f1319a6
 
 
 ---
 
 
-# 从 Intune 取消注册你的设备
+# 从 Intune 取消注册 iOS 设备
 
 当从 Intune 取消注册你的 iOS 设备时，该设备将无法再访问公司资源并不能再通过 Intune 进行托管。
 
-若要从 Intune 取消注册你的设备，请使用以下步骤，或观看此[视频](http://aka.ms/kfz8j1)：
+若要从 Intune 取消注册你的设备，请使用以下步骤，或观看此视频：
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+
 
 1.  在公司门户应用中“我的设备”下，选择要取消注册的设备。
 
@@ -55,6 +58,6 @@ ms.openlocfilehash: 4dbb4d5d7151a6a579e00c2c4034a811f2357774
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

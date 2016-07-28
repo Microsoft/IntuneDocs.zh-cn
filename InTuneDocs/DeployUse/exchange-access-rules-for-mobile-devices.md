@@ -1,26 +1,26 @@
 ---
-title: "Microsoft Intune 管理的移动设备的 Exchange 访问规则 | Microsoft Intune"
-description: 
+title: "移动设备的 Exchange 访问规则 | Microsoft Intune"
+description: "移动设备管理 (MDM) 的 Exchange ActiveSync 访问规则确定这些设备对 Exchange 拥有的访问级别。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f69c086333e359f7d1bf202a8d13667779bd3c86
 
 
 ---
 
 # 移动设备的 Exchange 访问规则
-移动设备的 Exchange 访问规则确定这些设备对 Exchange 拥有的访问级别。 这些设置会影响所有移动设备，包括未在 Microsoft Intune 中注册的设备。 你可以首先定义“默认规则”  ，该规则将应用于未应用自定义规则的任何移动设备。 下表包含 Exchange ActiveSync 管理的访问级别：
+移动设备的 Exchange 访问规则确定这些设备对 Exchange ActiveSync 拥有的访问级别。 这些设置会影响所有移动设备，包括未在 Microsoft Intune 中注册的设备。 你可以首先定义“默认规则”  ，该规则将应用于未应用自定义规则的任何移动设备。 下表包含 Exchange ActiveSync 管理的访问级别：
 
 |访问级别|描述|
 |----------------|---------------|
@@ -53,6 +53,6 @@ ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

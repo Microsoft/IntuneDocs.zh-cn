@@ -1,10 +1,10 @@
 ---
-title: "在 Microsoft Intune 中部署和监视法规遵从性策略 | Microsoft Intune"
-description: 
+title: "部署和监视设备合规性策略 | Microsoft Intune"
+description: "使用本主题中的分步说明来部署和监视设备合规性策略。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 42d326dbe937724141213dacc133aefe5020a61d
 
 
 ---
@@ -31,7 +31,8 @@ ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
 
 使用“策略”工作区“概述”页的状态摘要和警报来识别需要关注的策略问题。 此外，状态摘要会显示在“仪表板”  工作区中。
 
-> [!IMPORTANT]如果你尚未部署合规性策略，但是启用了 Exchange 条件访问策略，则将允许设定为目标的所有设备进行访问。
+> [!IMPORTANT]
+> 如果你尚未部署合规性策略，但是启用了 Exchange 条件访问策略，则将允许设定为目标的所有设备进行访问。
 
 ## 如何解决 Intune 策略冲突
 将多个 Intune 策略应用于设备时可能会发生策略冲突。 如果策略设置重叠，则 Intune 会使用以下规则解决任何冲突:
@@ -71,6 +72,6 @@ ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

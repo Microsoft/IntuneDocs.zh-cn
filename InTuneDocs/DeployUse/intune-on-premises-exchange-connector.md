@@ -1,19 +1,20 @@
 ---
-title: "为本地 Exchange 安装 Microsoft Intune Exchange Connector | Microsoft Intune"
-description: 
+title: "本地 EAS 的 Exchange 连接器 | Microsoft Intune"
+description: "使用连接器工具启用 Intune 管理控制台和本地 Exchange ActiveSync MDM 的 Exchange Server 之间的通信。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 ---
@@ -36,7 +37,6 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 |其他软件|Microsoft.NET Framework 4 和 Windows PowerShell 2.0 的完全安装必须安装在托管 Connector 的计算机上。|
 |Network (网络)|你在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 |已配置并且正在运行托管 Exchange|有关详细信息，请参阅 [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx)。 |
-|将移动设备管理机构设置为 Intune|[将移动设备机构设置为 Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Exchange cmdlet 要求
 
@@ -58,16 +58,14 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 
 ## 下载 On-Premises Exchange Connector 软件安装包
 
-1. 在支持 On-Premises Exchange Connector 的操作系统上，使用用户帐户打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com) (http://manage.microsoft.com)，该帐户应为 Exchange 租户中有权使用 Exchange 服务器的管理员。
+1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中有权使用 Exchange Server 的管理员）打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com) (http://manage.microsoft.com)。
 ![打开“设置 Exchange 连接”](../media/ExchangeConnector.gif)
 
-2.  在工作区快捷方式窗格中，选择“管理”。
+2.  在工作区快捷方式窗格中，依次选择“**管理**”，“**移动设备管理**” > “**Microsoft Exchange**”和“**设置 Exchange 连接**”。
 
-3.  在导航窗格中的“移动设备管理”下，展开“Microsoft Exchange”，然后选择“设置 Exchange 连接”。
+3.  在“设置 Exchange 连接”页上，选择“下载本地连接器”。
 
-4.  在“设置 Exchange 连接”页上，选择“下载本地连接器”。
-
-5.  On-Premises Exchange Connector 包含在可以打开或保存的压缩 (.zip) 文件夹中。 在“文件下载”对话框中，选择“保存”以将压缩的文件夹存储到安全位置。
+4.  On-Premises Exchange Connector 包含在可以打开或保存的压缩 (.zip) 文件夹中。 在“文件下载”对话框中，选择“保存”以将压缩的文件夹存储到安全位置。
 
 > [!IMPORTANT]
 > 请勿重命名或移动 On-Premises Exchange Connector 文件夹中的文件。 移动或重命名该文件夹的内容将中断安装。
@@ -133,6 +131,6 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

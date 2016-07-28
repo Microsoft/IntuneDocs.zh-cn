@@ -1,10 +1,10 @@
 ---
 title: "部署应用 | Microsoft Intune"
-description: 
+description: "本主题说明在开始使用 Intune 部署应用之前需要了解的概念。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
-ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
 
 
 ---
@@ -28,7 +29,8 @@ ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
 
 -   **所需的安装** – 应用安装在设备上，无需最终用户干预。
 
-    > [!TIP] 对于未处于监督模式的 iOS 设备，以及对于所有 Android 设备，用户在安装应用之前必须接受应用付费。
+    > [!TIP]
+    > 对于未处于监督模式的 iOS 设备，以及对于所有 Android 设备，用户在安装应用之前必须接受应用付费。
     > 
     >  如果最终用户卸载部署为必需安装的应用程序，则 Intune 将在下一清单周期之后自动重新安装该应用程序，该周期通常为 7 天。
 
@@ -52,7 +54,8 @@ ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
 |外部链接（已部署到设备组）|否|否|否|否|
 |来自应用商店的托管 iOS 应用程序（已部署到用户组）|是|是|是|是|
 |来自应用商店的托管 iOS 应用程序（已部署到设备组）|是|否|是|是|
-> [!TIP] 部署应用时，如果你同时选择用户和设备组，你只能将应用作为**可用安装**进行部署。
+> [!TIP]
+> 部署应用时，如果你同时选择用户和设备组，你只能将应用作为**可用安装**进行部署。
 
 ## 部署冲突
 如果某一设备收到具有相同部署操作的两个部署，则适用以下规则：
@@ -70,6 +73,6 @@ ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

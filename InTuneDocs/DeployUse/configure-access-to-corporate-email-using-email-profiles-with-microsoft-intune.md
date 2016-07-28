@@ -1,10 +1,10 @@
 ---
-title: "使用电子邮件配置文件配置对公司电子邮件的访问 | Microsoft Intune"
-description: 
+title: "使用电子邮件配置文件访问公司电子邮件 | Microsoft Intune"
+description: "电子邮件配置文件设置可用于配置移动设备上特定电子邮件客户端的电子邮件访问设置。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: Arob98
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
 
 如果需要额外的数据丢失防护 (DLP)，请选择[条件性访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)，它可以控制对任何电子邮件客户端（包括本机电子邮件客户端）的用户邮箱的访问。
 
-电子邮件配置文件设置可用于配置移动设备上特定电子邮件客户端的电子邮件访问设置。   大多数移动平台包含一个作为操作系统一部分附带的*本机* 电子邮件客户端。  在受支持的平台上，可以使用 Microsoft Intune 配置本机电子邮件客户端，使用户能够在不进行任何设置的情况下访问个人设备上的公司电子邮件。  
+电子邮件配置文件设置可用于配置移动设备上特定电子邮件客户端的电子邮件访问设置。 大多数移动平台包含一个作为操作系统一部分附带的*本机* 电子邮件客户端。  在受支持的平台上，可以使用 Microsoft Intune 配置本机电子邮件客户端，使用户能够在不进行任何设置的情况下访问个人设备上的公司电子邮件。  
 
 IT 管理员或用户还可以选择安装备用电子邮件客户端，例如，Microsoft Outlook for Android 或 iOS。  这些电子邮件客户端可能不支持电子邮件配置文件，并且不能使用 Microsoft Intune 电子邮件配置文件进行配置。  
 
@@ -111,6 +111,6 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端，例如�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

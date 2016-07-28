@@ -1,10 +1,10 @@
 ---
-title: "管理通过批量购买计划购买的 iOS 应用 | Microsoft Intune"
-description: 
+title: "管理批量购买的 iOS 应用 | Microsoft Intune"
+description: "使用 Intune 通过以下操作管理从 Apple 批量购买的应用：从应用商店导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
-ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 6e179ce99dbda518dbefcaab6f502cc24498d7a3
 
 
 ---
 
 # 使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 应用
-一些应用商店使你能够为你想在公司中运行的应用购买多个许可证。 这有助于降低跟踪多个已购买应用副本的管理成本。
+iOS 应用商店可以为你想要在公司中运行的应用购买多个许可证。 这有助于降低跟踪多个已购买应用副本的管理成本。
 
-Microsoft Intune 可帮助你管理通过这样的程序购买的应用，即从应用商店中导入许可证信息，跟踪你已使用的许可证的数量，并且阻止安装超出你所拥有的应用数量的应用副本。
+Microsoft Intune 可帮助你按以下操作管理通过此程序购买的应用：从应用商店中导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。
 
 > [!Important]
 > 目前，Intune 将 iOS VPP 应用程序许可证分配给用户，而不是设备。 因此，最终用户必须输入其 Apple ID 密码才能安装应用程序。
@@ -87,6 +87,6 @@ Microsoft Intune 可帮助你管理通过这样的程序购买的应用，即从
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

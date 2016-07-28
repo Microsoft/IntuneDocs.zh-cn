@@ -1,9 +1,9 @@
 ---
 title: "配置 PFX 证书基础结构 |Microsoft Intune"
-description: 
+description: "创建和部署 .PFX 证书配置文件。"
 keywords: 
 author: nbigman
-manager: jeffgilb
+manager: Arob98
 ms.date: 05/16/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6edb37708d26033358af30c47e955b20caedb6fd
-ms.openlocfilehash: 51def9dc80043bbf5a71578fb44cae9259fd48b1
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: f654dba31198115851feeeec90f04b8ad767e549
 
 
 
 ---
 # 配置证书基础结构
-本主题介绍创建和部署证书配置文件所需具备的条件。
+本主题介绍创建和部署 .PFX 证书配置文件所需具备的条件。
 
 若要在组织中执行任何基于证书的身份验证，你需要企业证书颁发机构。
 
@@ -158,6 +158,6 @@ ms.openlocfilehash: 51def9dc80043bbf5a71578fb44cae9259fd48b1
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,20 +1,20 @@
 ---
 title: "保护 Windows 电脑的策略 | Microsoft Intune"
-description: 
+description: "当 Windows 电脑由 Intune 客户端软件管理时，使用这些策略帮助你确保其安全性。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 8d1bad7af972a32ce3509d67edab3f4f9c9df299
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: d9a818f0be1f1b6fc1639cb705876c298d1570b4
 
 
 ---
@@ -44,6 +44,6 @@ Windows 防火墙帮助 Windows 电脑免于受到黑客、恶意软件和其他
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

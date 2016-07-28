@@ -1,26 +1,27 @@
 ---
-title: "安装公司门户应用并在 Intune 中注册设备后会发生什么？ | Microsoft Intune"
+title: "安装公司门户应用并在 Intune 中注册 Android 设备后会发生什么情况？ | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: e2f5849a63dceabb42b910b50f0257bc823a251a
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 39aafbccda265ee24c7561440a11f1b22fef6170
 
 
 ---
 
 
-# 安装公司门户应用并在 Intune 中注册设备后会发生什么？
+# 安装公司门户应用并在 Intune 中注册 Android 设备后会发生什么情况？
 
 当安装公司门户应用并在 Intune 中注册 Android 设备时，可以使用公司门户应用：
 
@@ -54,12 +55,13 @@ ms.openlocfilehash: e2f5849a63dceabb42b910b50f0257bc823a251a
 
     -   发送任何公司应用清单更新（这些更新不包含个人信息）。
 
-如有疑问，请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+需要帮助吗? 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
+
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

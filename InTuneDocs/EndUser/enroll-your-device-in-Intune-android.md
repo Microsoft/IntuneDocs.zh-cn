@@ -1,9 +1,9 @@
 ---
 title: "在 Intune 中注册 Android 设备 | Microsoft Intune"
-description: 
+description: "介绍如何在 Intune 中注册 Android 设备"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/14/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 76cc1a43e09039285be76858155ef22f7b41cf9b
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
 
 
 ---
@@ -115,13 +115,14 @@ ms.openlocfilehash: 76cc1a43e09039285be76858155ef22f7b41cf9b
 
 你需转到**设置** &gt; **安全**，然后打开**未知源**才能尝试安装公司应用。 如果你在尝试安装应用前未打开此选项，则会看到消息“已阻止安装。 出于安全性考虑，你的设置已被设置为阻止安装未知来源的应用。” 你可点击错误对话框上的“设置”以转到“未知来源”选项。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
+
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

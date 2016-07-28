@@ -1,19 +1,20 @@
 ---
 title: "适用于 Windows PC 的软件更新 | Microsoft Intune"
-description: 
+description: "Intune 通过确保向你所管理的计算机快速安装最新修补程序和软件，使你的计算机保持最新。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: d650eea62be0c00c414b51ed5c49310c5175acd7
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: bea1a090cf71129b34064378922a4c23f19e3cc7
 
 
 ---
@@ -253,6 +254,6 @@ Microsoft Intune 可通过多种方式帮助你保护托管计算机，其中包
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

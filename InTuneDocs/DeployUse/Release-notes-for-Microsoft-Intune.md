@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Intune 的发行说明 | Microsoft Intune"
-description: 
+description: "Intune 发行说明"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 1906f14568484ebbf23ac7c4350964fb2d5d508f
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: b7643ccb64185adb1eb4326a19d56814d8667462
 
 
 ---
@@ -91,6 +91,6 @@ Intune 管理控制台和面向移动体验的最终用户除了 Azure 预览门
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

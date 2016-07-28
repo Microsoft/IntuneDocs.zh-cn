@@ -1,10 +1,10 @@
 ---
 title: "添加应用 | Microsoft Intune"
-description: 
+description: "在开始使用 Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
-ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 3b35e835634733f542b7ddaf2ede2ad2464721fd
 
 
 ---
@@ -21,51 +22,20 @@ ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
 # 使用 Microsoft Intune 添加应用
 在开始使用 Microsoft Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。 这些概念将帮助你了解哪些应用可以部署到哪个平台，并了解这样做之前必须具备的先决条件。
 
-## 使用 Intune 可以部署的应用类型
-可以将应用部署到 Intune 支持的所有设备类型。 根据你想部署的应用类型，过程和支持的设备将有所不同。 使用以下信息可帮助你了解可以部署和不可以部署的应用类型：
+## 可以部署的应用类型
 
+### 软件安装程序
 
-### **Windows Installer（&#42;.exe、&#42;.msi）**
-- 这种类型的应用必须支持无用户输入的无提示安装。 你的应用文档应包含用于无提示安装应用的相关命令行选项（如 **/q**）。 可在[此处](https://support.microsoft.com/en-us/kb/227091)找到公共命令行选项的列表。
-- 你为应用安装程序文件指定的位置中必须提供应用的安装程序所需的所有其他文件和文件夹。
-- 大多数情况下，Windows Installer (.msi) 和 Windows Installer 修补程序 (.msp) 文件不需要任何命令行参数即可通过 Intune 进行安装。 请查看应用文档。 如果需要命令行参数，则必须以“名称=值对”（如 TRANSFORMS=custom_transform.mst）形式输入参数。
+|应用类型|详细信息|
+|----------------|-------|
+|**Windows Installer（&#42;.exe、&#42;.msi）**|这种类型的应用必须支持无用户输入的无提示安装。 你的应用文档应包含用于无提示安装应用的相关命令行选项（如 **/q**）。<br>可在[此处](https://support.microsoft.com/en-us/kb/227091)找到公共命令行选项的列表。<br><br>你为应用安装程序文件指定的位置中必须提供应用的安装程序所需的所有其他文件和文件夹。<br><br>大多数情况下，Windows Installer (.msi) 和 Windows Installer 修补程序 (.msp) 文件不需要任何命令行参数即可通过 Intune 进行安装。 请查看应用文档。<br><br>如果需要命令行参数，则必须以“名称=值对”（如 TRANSFORMS=custom_transform.mst）形式输入参数。|
+|**Android 应用包（&#42;.apk 文件）**|若要部署 Android 应用，你必须拥有有效的 .apk 包|
+|**iOS 应用包（&#42;.ipa 文件）**|若要部署 iOS 应用，你必须拥有有效的 .ipa 包。<br><br>.ipa 包必须由 Apple 签名，并且在预配配置文件中指明的到期日期必须有效。 Intune 可分发企业证书 iOS 应用程序。<br>并非所有 Apple 开发人员证书应用都受支持。<br><br>必须向 iOS Developer Enterprise Program 注册你的公司。<br><br>确保组织的防火墙允许访问 iOS 设置和认证网站。<br><br>你不需要使用该应用部署清单文件 (.plist)。|
+|**Windows Phone 应用包（&#42;.xap、.appx、.appxbundle）**|若要部署应用，你需要一个企业移动代码签名证书。<br>有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)。|
+|**Windows 应用包 (.appx、.appxbundle)**|若要部署应用，你需要一个企业移动代码签名证书。<br>有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows 设备管理](set-up-windows-device-management-with-microsoft-intune.md)。|
+|**通过 MDM 的 Windows Installer (&#42;.msi)**|允许你创建基于 Windows Installer 的应用，并将其部署到运行 Windows 10 的已注册电脑（MDM 托管）。<br /><br />只能上载扩展名为 .msi 的单个文件。<br><br>该文件的产品代码和产品版本将用于应用检测。<br><br>将使用该应用的默认重启行为。 Intune 不控制此行为。<br><br>将为单个用户安装每个用户 MSI 包。<br><br>将为设备上的所有用户安装每个计算机 MSI 包。<br><br>当前仅为设备上的所有用户安装双模式 MSI 包。<br><br>当每个版本的 MSI 产品代码相同时，支持应用更新。<br>
+所有软件安装程序的应用类型都上载到你的云存储空间。
 
-这种类型的应用将上载到云存储空间。
-### **Android 应用包（&#42;.apk 文件）**
-这种类型的应用将上载到云存储空间。
-### **iOS 应用包（&#42;.ipa 文件）**
-- 若要部署 iOS 应用，你必须拥有有效的 .ipa 包。
-- .ipa 包必须由 Apple 签名，并且在预配配置文件中指明的到期日期必须有效。 Intune 可分发企业证书 iOS 应用程序。 并非所有 Apple 开发人员证书应用都受支持。
-- 必须向 iOS Developer Enterprise Program 注册你的公司。
-- 确保组织的防火墙允许访问 iOS 设置和认证网站。
-- 清单文件 (.plist) 不需要与应用一起部署。
-
-这种类型的应用将上载到云存储空间。
-
-目前，最终用户无法直接从适用于 iOS 的 Intune 公司门户应用安装公司应用。 这是因为在 iOS 应用商店中发布的应用程序上放置限制 （请参阅 [应用程序存储区评审准则](https://developer.apple.com/app-store/review/guidelines/))。 用户可以通过在设备上启动公司门户应用并点击“公司应用”磁贴（将打开浏览器并将他们重定向到 Intune Web 门户）来访问公司应用（包括托管的应用商店应用和业务线应用包）。
-
-### **Windows Phone 应用包（&#42;.xap、.appx、.appxbundle）**
-- 若要部署应用，你需要一个企业移动代码签名证书。 有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)。
-
-这种类型的应用将上载到云存储空间。
-
-请参阅下面有关使用 Intune 安装业务线通用 Windows 平台 (UWP) 应用的信息。
-
-### **Windows 应用包 (.appx、.appxbundle)**
-- 若要部署应用，你需要一个企业移动代码签名证书。 有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows 设备管理](set-up-windows-device-management-with-microsoft-intune.md)。
-
-这种类型的应用将上载到云存储空间。
-### **通过 MDM 的 Windows Installer (&#42;.msi)**
-此安装程序类型允许你创建基于 Windows Installer 的应用，并将其部署到运行 Windows 10 的已注册电脑。<br /><br />使用此安装程序类型时，需要考虑下列注意事项：
-- 只能上载扩展名为 .msi 的单个文件。
-- 该文件的产品代码和产品版本将用于应用检测。
-- 将使用该应用的默认重启行为。 Intune 不控制此行为。
-- 将为单个用户安装每个用户 MSI 包。
-- 将为设备上的所有用户安装每个计算机 MSI 包。
-- 当前仅为设备上的所有用户安装双模式 MSI 包。
-- 当每个版本的 MSI 产品代码相同时，支持应用更新。
-
-这种类型的应用将上载到云存储空间。
 ### **外部链接**
 在具有下列项目时使用：
 - 让用户能从应用商店下载应用的 **URL**。
@@ -74,28 +44,21 @@ ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
 基于外部链接的应用不存储在 Intune 云存储空间中。
 ### **来自应用商店的托管 iOS 应用程序**
 允许你管理和部署来自应用商店的免费 iOS 应用。 还允许你将[移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)与[兼容的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)相关联，并在管理员控制台中查看它们的状态。<br /><br />托管 iOS 应用不存储在 Intune 云存储空间中。
-> [!TIP]在将[移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md)为 Intune 之前，移动设备选项将不可用。
+
+> [!TIP]
+> 在将[移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md)为 Intune 之前，移动设备选项将不可用。
 
 ## Intune 软件发行者
-从 Microsoft Intune 管理控制台中添加或修改应用时，将启动“Microsoft Intune 软件发行者”。 从发行者中，你可选择并配置一个软件安装程序类型，该安装程序类型将上载要存储在 Intune 云存储中的应用（适用于计算机的程序或适用于移动设备的应用），或者链接到在线商店或 Web 应用程序。
+从 Intune 管理员控制台中添加或修改应用时，将启动“**Microsoft Intune 软件发行者**”。 从发行者中，你可选择并配置一个软件安装程序类型，该安装程序类型将上载要存储在 Intune 云存储中的应用（适用于计算机的程序或适用于移动设备的应用），或者链接到在线商店或 Web 应用程序。
 
-### 要求
-开始使用 Microsoft Intune 软件发行者之前，必须安装 [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) 的完整版本。 安装之后，可能必须重启计算机，然后软件发行者才会正确打开。
+开始使用软件发行者之前，必须安装 [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) 的完整版本。 安装之后，可能必须重启计算机，然后软件发行者才会正确打开。
 
 ## 云存储空间
-使用软件安装程序安装类型（例如，业务线应用）创建的所有应用都必须打包并上传到 Microsoft Intune 云存储空间。 Intune 的试用订阅包括 2 千兆字节 (GB) 基于云的存储，用于存储托管应用和更新。 付费订阅包括 20 GB，并具有购买额外存储的选项。
+使用软件安装程序安装类型（例如，业务线应用）创建的所有应用都必须打包并上传到 Microsoft Intune 云存储空间。 Intune 的试用订阅包括 2 千兆字节 (GB) 基于云的存储，用于存储托管应用和更新。 完全订阅包括 20 GB 的存储空间。
 
-可以在“管理员”工作区的“存储使用量”节点中查看所使用的空间量以及购买更多存储。
+可以在“**管理员**”工作区的“**存储空间使用量**”节点中查看所使用的空间量。
 
-以下这些规则适用于为 Intune 购买基于云的额外存储的情况：
-
--   要购买额外存储，你必须有有效的付费订阅。
-
--   只有 Microsoft Online Service 的帐务管理员或全局管理员才能通过 Office 365 管理门户购买额外存储。 若要添加、删除或管理这些管理员，必须是全局管理员并登录到 Office 365 管理门户。
-
--   如果你是通过企业协议购买了 Intune 或 Microsoft Intune 加载项的批量许可客户，请与 Microsoft 客户经理或 Microsoft 合作伙伴联系以了解定价信息和购买额外的存储。
-
-#### 云存储空间的要求
+### 云存储空间的要求
 
 -   确保所有应用安装文件位于同一文件夹。
 
@@ -117,6 +80,6 @@ Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

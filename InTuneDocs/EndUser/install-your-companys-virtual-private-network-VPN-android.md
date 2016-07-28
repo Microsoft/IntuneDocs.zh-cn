@@ -3,18 +3,19 @@ title: "安装你的公司虚拟专用网络 (VPN) | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: d4c0e05002b3d6f2785b401159c2872d93313524
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 73fee953e10336fe659e271b49d96a518b2730aa
 
 
 ---
@@ -28,7 +29,9 @@ ms.openlocfilehash: d4c0e05002b3d6f2785b401159c2872d93313524
 
 2.  在“Play Store”中，单击“安装”并按照提示安装应用。
 
-3.  点击“安装公司 VPN 配置文件”并按照提示接受并激活应用。
+3.  点击“**安装公司 VPN 配置文件**”并按照提示操作。 安装步骤可能稍有不同，具体取决于你的公司使用的 VPN 提供者。
+
+
 
 仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
@@ -36,6 +39,6 @@ ms.openlocfilehash: d4c0e05002b3d6f2785b401159c2872d93313524
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

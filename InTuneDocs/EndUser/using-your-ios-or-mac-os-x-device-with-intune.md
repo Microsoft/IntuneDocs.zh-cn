@@ -1,9 +1,9 @@
 ---
 title: "通过 Intune 使用 iOS 或 Mac OS X 设备 | Microsoft Intune"
-description: 
+description: "指向以下任务的链接列表：在 Intune 中注册设备时，你可以在你的 iOS 或 Mac OS X 移动设备上执行的任务"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
 
 
 ---
@@ -50,7 +50,7 @@ ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
 
 此部分中的信息将帮助解决你在 Intune 中注册 iOS 设备时可能发生的问题。
 
-- [如何重新连接受威胁的 iOS 设备](how-to-reconnect-a-compromised-ios-device)
+- [如何重新连接受威胁的 iOS 设备](how-to-reconnect-a-compromised-ios-device.md)
 - [将错误发送给 IT 管理员](send-errors-to-your-it-admin-ios.md)
 - [使用公司门户应用时遇到错误](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [尝试在 Intune 中注册设备时遇到错误](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
@@ -63,6 +63,6 @@ ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

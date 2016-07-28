@@ -1,10 +1,10 @@
 ---
-title: "启用对使用证书配置文件的公司资源的访问 | Microsoft Intune"
-description: 
+title: "资源访问的证书配置文件 | Microsoft Intune"
+description: "使用每个用户设备上安装的证书保护 VPN、Wi-fi 和电子邮件访问。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c8158b6a54347f6bec1008142eed44daca8946d0
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
 > -    如果没有企业证书颁发机构，则必须创建一个。
 >- 如果你决定基于你的设备平台使用简化的证书注册协议 (SCEP) 配置文件，你还需要配置网络设备注册服务 (NDES) 服务器。
 >-  无论你计划使用 SCEP 配置文件还是 PFX 配置文件，都必须下载并配置 Microsoft Intune 证书连接器。
-> 主题[配置证书基础结构](configure-certificate-infrastructure.md)中介绍了所有这些配置。
+> [配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)和[配置 PFX 证书基础结构](configure-certificate-infrastructure-for-pfx.md)介绍了所有这些配置。
 
 ### 后续步骤
 - [配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

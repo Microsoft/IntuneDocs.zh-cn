@@ -1,10 +1,10 @@
 ---
-title: "决定如何使用 Microsoft Intune 为移动应用程序管理准备应用 | Microsoft Intune"
-description: 
+title: "针对移动应用管理准备应用 | Microsoft Intune"
+description: "本主题中的信息可帮助你决定何时应该使用 App Wrapping Tool 和应用 SDK 来启用你的自定义业务线应用，以使用移动应用管理策略。"
 keywords: 
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 4a15279bb4460c88412ede6c8678deea72a3629f
 
 
 ---
@@ -68,6 +69,6 @@ App SDK 主要面向在应用商店或 Play Store 中安装了应用并想使用
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

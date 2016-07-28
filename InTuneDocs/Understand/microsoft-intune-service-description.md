@@ -1,6 +1,6 @@
 ---
 title: "服务说明 | Microsoft Intune"
-description: 
+description: "Intune 是一项基于云的服务，可帮助你管理 Windows 电脑以及 iOS、Mac OS X、Android 和 Windows 移动设备。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
-ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 98a5013ef42732e6a1a541e128986bedbb004611
 
 
 ---
@@ -34,7 +34,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 -   [Microsoft Intune 中的移动设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
--   [Configuration Manager 中移动设备的常规设置](https://technet.microsoft.com/en-us/library/dn376523.aspx)
+-   [Configuration Manager 中移动设备的常规设置](https://technet.microsoft.com/library/dn376523.aspx)
 
 有关 System Center 2012 R2 Configuration Manager 的信息，请参阅 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)。
 
@@ -45,9 +45,10 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 若要了解有关 Intune 服务的更改信息，请参阅 [What's new in Microsoft Intune（Microsoft Intune 新增功能）](/intune/deploy-use/Whats-new-in-microsoft-intune.md)。 [Microsoft Intune 博客](http://blogs.technet.com/b/microsoftintune/)也讨论了该服务中的更改信息，并为你能够最大程度从 Intune 中获益提供了有用的提示。
 
-重要的服务更新将也会在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)消息中心传达给你。 如果安装了配套 [Office 365 管理移动应用](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，就可以在你的移动设备上接收通知。
+重要的服务更新将也会在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)消息中心传达给你。 如果安装了配套 [Office 365 管理移动应用](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，就可以在你的移动设备上接收通知。
 
-> [!NOTE] 你可以在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)中监视 Intune 服务运行状况。 在左侧窗格中选择**服务运行状况**。  
+> [!NOTE]
+> 你可以在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)中监视 Intune 服务运行状况。 在左侧窗格中选择**服务运行状况**。  
 
 以下是 Microsoft 提供的有关 Intune 服务的通知类型：
 -   为了帮助你对服务更改做好计划，我们将根据此更改的影响，至少在服务升级前 30-90 天通知你。 将使用诸如公告板警报之类的产品内传达通道进行传达。 这些更改可能包括：
@@ -82,6 +83,6 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

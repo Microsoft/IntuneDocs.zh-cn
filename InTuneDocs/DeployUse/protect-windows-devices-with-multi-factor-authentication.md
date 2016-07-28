@@ -1,10 +1,10 @@
 ---
-title: "使用多重身份验证保护 Windows 设备 | Microsoft Intune"
-description: 
+title: "Windows 的多重身份验证 | Microsoft Intune"
+description: "Intune 集成多重身份验证 (MFA) 来帮助你保护公司资源。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
-ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c2c1a35152dc0f9ec9464c056fed3300540bf33c
 
 
 ---
@@ -56,6 +56,6 @@ Microsoft Intune 集成多重身份验证 (MFA) 来帮助你保护公司资源�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

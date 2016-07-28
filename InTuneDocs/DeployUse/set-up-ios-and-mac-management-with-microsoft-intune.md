@@ -1,28 +1,26 @@
 ---
 title: "设置 iOS 和 Mac 管理 | Microsoft Intune"
-description: 
+description: "使用 Microsoft Intune 为 iOS 设备（包括 iPad 和 iPhone）以及 Mac OS X 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb44d53c87bec1b6892bf49a65f3df684199ed08
-ms.openlocfilehash: 9766b6e64259d809b04e6f6004c25ed88ad72659
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
 
 
 ---
 
 # 设置 iOS 和 Mac 设备管理
-利用 Microsoft Intune，可以为 iOS 和 Mac OS X 设备注册启用 BYOD（“自带设备办公”），以允许 iPhone、iPad 和 Mac 用户访问公司电子邮件和应用。 启用后，用户可以安装 Intune 公司门户应用并可以使用 Intune 管理控制台向其设备应用策略。
-
-在可以使用 Intune 管理 iOS 设备之前，设备必须能够与 Intune 通信。 Apple 要求通过导入 Apple Push Notification 服务 (APNs) 证书与 Intune 建立信任关系。
+iPad、iPhone 和 Mac OS X 设备的 Intune 移动设备管理并允许访问公司电子邮件和应用。 必须拥有 Apple 推送通知服务 (APNs) 证书，才能使用 Intune 管理 iOS 和 Mac 设备。 一旦证书添加到 Intune，用户就可以安装公司门户应用来注册其设备或管理员可以设置[企业自有的 iOS 设备管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
 
 1.  **设置 Intune**<br>
     如果你尚未设置，请通过[将移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
@@ -50,6 +48,6 @@ ms.openlocfilehash: 9766b6e64259d809b04e6f6004c25ed88ad72659
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

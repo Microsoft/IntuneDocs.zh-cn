@@ -1,10 +1,10 @@
 ---
-title: "使用 Microsoft Intune 对 iOS 设备设置助理注册 | Microsoft Intune"
-description: 
+title: "使用设置助理注册 iOS 设备 | Microsoft Intune"
+description: "使用 Apple 配置器工具注册企业自有的 iOS 设备以将设备恢复出厂设置，并准备对其运行设置助理。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
-ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
 
 
 ---
@@ -27,6 +27,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 可以使用 Apple Configurator 恢复 iOS 设备的出厂设置并做好准备，使新用户能够对设备进行设置。  此方法要求你通过 USB 将 iOS 设备连接到 Mac 计算机以设置企业注册，并且假定你使用的是 Apple Configurator 2.0。 大多数情况要求应用到 iOS 设备的策略包括“用户关联性”，以便启用 Intune 公司门户应用。
 
 **先决条件**
+* 通过安装 APNs 证书[启用 iOS 注册](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 * 具有对 iOS 设备的物理访问权限 - 设备必须在没有密码保护的情况下处于未配置状态（恢复出厂设置）
 * 设备序列号 - [如何获取 iOS 序列号](https://support.apple.com/en-us/HT204308)
 * USB 连接电缆
@@ -36,8 +37,6 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 1.  **创建移动设备组**（可选）如果你的业务要求借助移动设备组来管理设备，请创建这些组。 [通过 Microsoft Intune 使用组来管理用户和设备](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)。
 
 2.  **创建设备的配置文件**设备注册配置文件定义应用于设备组的设置。 如果尚无此配置文件，请使用 Apple Configurator 创建已注册的 iOS 设备的设备注册配置文件。
-
-    ###### 创建配置文件
 
     1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“策略”&gt;“企业拥有的设备”，然后单击“添加...”。
 
@@ -62,8 +61,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
         -   “设备组预分配”– 部署此配置文件的所有设备将最初属于此组。 在注册后，可以将设备重新分配。
 
-        >[!Important]
-        >组分配会将从 Intune 移到 Azure Active Directory。 [了解详细信息](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **设备注册计划** - Apple 设备注册计划 (DEP) 不能与设置助理注册一起使用。 确保将切换设置为“关闭”。
 
@@ -153,6 +151,6 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "应用程序推出 | Microsoft Intune"
-description: 
+description: "Microsoft Intune 中的应用的分阶段推出建议。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
+ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
 
 -   确认 Intune 应用分发支持你所选择的应用安装程序，如[使用 Microsoft Intune 添加应用](/intune/deploy-use/add-apps)中所述。
 
--   确保安装了应用分发必备组件。 <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->）。
+-   确保安装了应用分发必备组件。 <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   确定应用类型受 Intune 支持。
 
@@ -95,6 +95,6 @@ ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,20 +1,20 @@
 ---
-title: "使用 Microsoft Intune 安装 Windows PC 客户端 | Microsoft Intune"
-description: 
+title: "安装 Windows 电脑客户端 | Microsoft Intune"
+description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
-ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
 
 
 ---
@@ -35,8 +35,6 @@ ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
 -   [手动部署客户端软件](#to-manually-deploy-the-client-software)
 
 -   [使用组策略自动部署客户端软件](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [用户如何自我注册其计算机](#how-users-can-self-enroll-their-computers)
 
 -   [安装 Microsoft Intune 客户端软件作为映像的一部分](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
@@ -81,28 +79,6 @@ ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
 3.  使用组策略将软件部署到网络上的计算机。
 
     有关如何使用组策略来自动部署软件的详细信息，请参阅 Windows Server 文档。
-
-### 用户如何自我注册其计算机
-用户可以通过 Intune 公司门户自我注册每台计算机。 每台注册的计算机都链接到用于安装客户端软件的用户帐户。
-
-> [!NOTE]
-> -   用户必须是计算机上的管理员才能安装客户端软件。
-> -   自我注册时要求客户端计算机上安装有 Internet Explorer。
-> -   用户每次自我注册一台计算机时，计算机都将使用 Intune 许可证。
-> -   你必须使用单位或学校的帐户自我注册计算机。 你不能使用 Microsoft 帐户自我注册计算机。
-> -   如果客户端软件已安装在计算机上，最终用户将收到一个错误。
-
-### 自我注册计算机（适用于最终用户的信息）
-
-1.  从你要注册的计算机上登录到公司门户。
-
-2.  单击“添加设备” 。
-
-3.  单击“下载软件”  ，然后单击“运行” 。
-
-4.  单击“下一步”启动 Microsoft Intune 安装向导。
-
-5.  安装向导完成后，单击“完成” 。
 
 ### 安装 Microsoft Intune 客户端软件作为映像的一部分
 通过使用以下示例过程作为基础，你可以将 Intune 客户端软件作为操作系统映像的一部分部署到计算机：
@@ -158,10 +134,11 @@ ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
 
 
 ### 另请参阅
-[使用 Microsoft Intune 管理 Windows PC](manage-windows-pcs-with-microsoft-intune.md)
+[使用 Microsoft Intune 管理 Windows 电脑](manage-windows-pcs-with-microsoft-intune.md)
+[客户端安装程序疑难解答](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

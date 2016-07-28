@@ -1,6 +1,6 @@
 ---
 title: "限制对电子邮件和 O365 服务的访问 | Microsoft Intune"
-description: 
+description: "本主题介绍如何使用条件访问只允许合规设备在 SharePoint Online 和其他服务上访问公司电子邮件和公司数据。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
-ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: df430a31e13027c7a342beb90b78d48c74bce9e6
 
 
 ---
@@ -21,9 +22,9 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 # 使用 Microsoft Intune 限制对电子邮件、O365 和其它服务的访问
 可以使用 Intune 条件性访问限制对公司电子邮件和 O365 服务的访问。 Intune 的条件性访问功能使你能确保将对公司电子邮件和 O365 服务的访问限制在符合你设置的规则的设备。
 ## 条件性访问如何工作？
-合规性策略设置用于评估设备的合规性。 条件性访问策略使用该评估来限制或允许对特定服务的访问。 当条件性访问策略与合规性策略结合使用时，将仅允许合规的设备访问该服务。
+合规性策略设置用于评估设备的合规性。 条件性访问策略使用该评估来限制或允许对特定服务的访问。 当条件性访问策略与合规性策略结合使用时，将仅允许合规的设备访问该服务。 将合规性策略和条件访问策略部署到用户。 检查用户用于访问服务的任何设备是否符合策略。
 
-请记住，使用该设备的用户也必须将合规性策略部署到设备中，以便对其进行合规性评估。
+请记住，使用该设备的用户必须将合规性策略部署到设备中，以便对其进行合规性评估。
 如果没有将合规性策略部署到用户，则该设备将被视为合规且不会对其应用任何访问限制。
 
 当设备不满足策略中设置的条件时，将指导最终用户完成注册设备并修复阻止设备合规问题的流程。
@@ -64,6 +65,6 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

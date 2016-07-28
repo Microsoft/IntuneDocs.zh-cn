@@ -1,20 +1,21 @@
 ---
-title: "重置（清除）丢失或被盗设备 | Microsoft Intune"
+title: "重置（清除）丢失或被盗 Windows 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 2b2790826e46e6af43f3bdeeede6dc834845a83b
+ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
+ms.openlocfilehash: dec9fd3d2711513b4a99ca4bec586f72402cb619
 
 
 ---
@@ -22,25 +23,25 @@ ms.openlocfilehash: 2b2790826e46e6af43f3bdeeede6dc834845a83b
 
 # 重置（清除）丢失或被盗设备
 
-如果已注册的 Windows 设备丢失或被盗，可以将它重置为出厂默认设置。 下列步骤说明了如何使用公司门户应用重置设备。 还可以[从公司门户网站重置设备](reset-your-device-cpwebsite.md)。
+如果在 Intune 中注册的电话丢失或被盗，你可以通过使用[公司门户网站](http://portal.manage.microsoft.com) 将其重置为出厂默认设置。
 
 
 > [!WARNING]
 > 将设备重置为出厂默认设置会删除设备中你的个人信息和工作信息。 有关重置设备会造成的结果的详细信息，请参阅[What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)（使用公司门户重置设备会造成什么结果？）。
 
-1.  在浏览器中，打开你的公司门户，并登录到你的工作单位帐户。
+
+1.  在浏览器中，打开你的[公司门户网站](http://portal.manage.microsoft.com)，并登录到你的工作帐户。
 
 2.  在“我的设备”下，选择丢失或被盗的设备。
 
 3.  点击**重置** &gt; **重置**。
 
-> [!NOTE]
-> 如果无法重置丢失或被盗的设备，请让 IT 管理员为你重置。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如果无法重置丢失或被盗的设备，请让 IT 管理员为你重置。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

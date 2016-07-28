@@ -1,6 +1,6 @@
 ---
 title: "设备注册疑难解答 | Microsoft Intune"
-description: 
+description: "有关设备注册问题故障排除的建议。"
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
-ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 
 ---
@@ -160,8 +160,29 @@ ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
 
 2.  确认尚未向另一个 MDM 提供程序注册该设备，或者该设备尚未安装管理配置文件。
 
-
 4.  确认默认浏览器为适用于 Android 的 Chrome，并且已启用 Cookie。
+
+### Android 证书问题
+
+**问题**：用户在其设备上收到以下消息：*无法登录，因为设备缺少必需的证书。*
+
+**解决方法**： 
+
+- 用户也许能够按照[这些说明](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)检索缺少的证书。
+- 如果用户无法检索该证书，你可能在 ADFS 服务器上缺少中间证书。 Android 需要中间证书才信任该服务器。 
+
+你可以将证书导入到 ADFS 服务器或代理服务器上的中间存储中，如下所示：
+
+1.  在 ADFS 服务器上，启动“**Microsoft 管理控制台**”并向“**计算机帐户**”添加证书管理单元。 
+5.  查找 ADFS 服务正在使用的证书并查看其父证书。
+6.  复制该父证书并将其粘贴在 **Computer\Intermediate Certification Authorities\Certificates** 下。
+7.  复制 ADFS 证书、ADFS 解密证书和 ADFS 签名证书并将它们粘贴在 ADFS 服务的个人存储中。
+8.  重启 ADFS 服务器。
+
+现在用户应能够在 Android 设备上登录到公司门户。
+
+
+
 ## iOS 的问题
 ### 配置文件安装失败
 **问题：**用户的 iOS 设备上收到**配置文件安装失败**错误。
@@ -285,6 +306,6 @@ ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

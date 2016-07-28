@@ -1,6 +1,6 @@
 ---
 title: "创建和部署 MAM 策略 | Microsoft Intune"
-description: 
+description: "使用本主题中的分步说明来创建和部署移动应用管理策略。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
-ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
-ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+translationtype: Human Translation
+ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
+ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
 
 
 ---
@@ -26,10 +27,12 @@ ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
 - 由第三方 MDM 解决方案管理的设备
 - 不受任何 MDM 解决方案管理的设备 (BYOD)。
 
-如果你当前使用 **Intune 管理控制台**管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
+>[!IMPORTANT]
+
+> 如果你当前使用 **Intune 管理控制台**管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
 在 Intune 管理控制台中创建的 MAM 策略不能导入到 Azure 门户中。  在 Azure 门户中，必须重新创建 MAM 策略。
 
->[!IMPORTANT]
+
 > 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 Azure 门户是用于创建 MAM 策略的新管理控制台。 如果你同时在 Intune 管理控制台和 Azure 门户中创建了 MAM 策略，则 Azure 门户中的策略将应用到应用并部署到用户。
 
 若要查看 Android 和 iOS 平台支持的策略设置的列表，请选择以下值之一：
@@ -47,7 +50,7 @@ ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
     > [!TIP]
     > 如果首次使用 Azure 门户，请先阅读[用于 Microsoft Intune MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉该门户。
 
-2.  在“设置”边栏选项卡中，选择“应用策略”。  将打开“应用策略”  边栏选项卡，你将在此创建新策略和编辑现有策略。
+2.  在“设置”边栏选项卡中，选择“应用策略”。  将打开“**应用策略**”边栏选项卡，你将在此创建新策略和编辑现有策略。
 
     ![显示现有策略列表的“应用策略”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
@@ -155,8 +158,8 @@ ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
 若要查看 iOS 和 Android 的策略设置的完整列表，请选择以下值之一：
 
 > [!div class="op_single_selector"]
-  - [iOS 策略](ios-mam-policy-settings.md)
-  - [Android 策略](android-mam-policy-settings.md)
+- [iOS 策略](ios-mam-policy-settings.md)
+- [Android 策略](android-mam-policy-settings.md)
 
 ## 后续步骤
 [监视合规性和用户状态](monitor-mobile-app-management-policies-with-microsoft-intune.md)
@@ -166,6 +169,6 @@ ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

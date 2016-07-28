@@ -1,10 +1,10 @@
 ---
-title: "在 Microsoft Intune 中创建设备合规性策略 | Microsoft Intune"
-description: 
+title: "创建设备合规性策略 | Microsoft Intune"
+description: "创建合规性策略来帮助保护用于访问你的公司数据的移动设备和电脑。"
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 67d9b0e0231b8165500f6995d5c058fb5c3f2df1
 
 
 ---
@@ -32,12 +32,20 @@ ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
   -   密码和加密等系统安全设置
   -   设备运行状况设置，例如，设备是否已越狱，或者是否在 Windows 设备运行状况证明服务中被报告为正常。
   -   设备属性设置，例如所需的最低 OS 版本或允许的最高 OS 版本。
-![“创建策略”页的“常规”选项卡的屏幕截图 ](./media/intune-sa-3b-create-policy.png)
+![“创建策略”页的“常规”选项卡 ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  步骤 3：保存策略
 完成后，请选择“保存策略”。
 
 你可以选择在保存策略后立即部署策略，也可以选择稍后部署策略。 新的策略将在“策略”工作区的“合规性策略”节点处显示。
+
+##  步骤 4：设置合规性状态有效期
+若要指定设备必须签入的时间，在该设备被视为不合规之前，请转到合规性策略设置并更新时间。  默认设置为 30 天。
+
+![策略菜单栏中的合规性策略设置选项](../media/mdm-compliance-policy-settings.png)
+
+![合规性策略对话框](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## 支持的策略设置
 下表列出了合规性策略设置和支持这些设置的平台。
@@ -79,6 +87,6 @@ ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

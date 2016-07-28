@@ -1,6 +1,6 @@
 ---
 title: "使用 Microsoft Intune 设置 Windows 10 移动版和 Windows Phone 管理 | Microsoft Intune"
-description: 
+description: "使用 Microsoft Intune 为 Windows 10 移动版或 Windows Phone 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
 manager: jeffgilb
@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: d1bba612d9f613dde33f71790e2c3b2d6b33fe88
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
 
 2.  **为注册服务器地址设置 DNS 别名** （可选）
 
-    创建 DNS 别名（CNAME 记录类型）使用户能更轻松地注册其设备。 如果不创建 DNS 别名，则用户必须
+    创建 DNS 别名（CNAME 记录类型）使用户能更轻松地注册其设备。 虽然对于 Windows 设备注册 CNAME DNS 条目是可选的，但是建议根据需要创建一个或多个记录，以使 Windows 设备注册过程中的操作变得更简单。 如果找不到任何 CNAME 记录，则系统将提示用户手动输入 MDM 服务器名称。
 
   1.  为公司的域创建 **CNAME** DNS 资源记录。 例如，你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 manage.microsoft.com 的 CNAME。 如果有多个已验证的域，则为每个域创建 CNAME 记录。CNAME 资源记录必须包括以下信息：
 
@@ -56,6 +56,6 @@ ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

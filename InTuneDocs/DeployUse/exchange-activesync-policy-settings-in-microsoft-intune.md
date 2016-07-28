@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune 中的 Exchange ActiveSync 策略设置 |Microsoft Intune
-description:
-keywords:
+title: "Exchange ActiveSync 策略设置 | Microsoft Intune"
+description: "使用 Intune Exchange ActiveSync 策略来配置设置，这些设置可让你控制 Exchange ActiveSync 托管设备上的特性和功能。"
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 7cdb34c469d2932deb10deec592a899b9848226a
+
 
 ---
 
@@ -47,7 +41,7 @@ ms.suite: ems
 
 |设置名|详细信息|
 |----------------|
-|**需要对移动设备加密**<sup>1</sup>|需要对设备上的数据进行加密（受支持时）。<br>对于 Windows Phone 8 设备，必须将其设置为“是”.<br /><br />若要在 iOS 设备上启用加密，请启用设置“需要密码以解锁移动设备”.|
+|**需要对移动设备加密**<sup>1</sup>|需要对设备上的数据进行加密（受支持时）。<br>对于 Windows Phone 8 设备，必须将其设置为 **“是”**。<br /><br />若要在 iOS 设备上启用加密，请启用设置 **“需要密码以解锁移动设备”**。|
 |**需要对存储卡进行加密**|需要对存储在外部存储（如 SD 卡）上的数据进行加密（在支持的设备上）。
 <sup>1</sup> 运行 Windows 8.1 的设备的其他信息
 
@@ -86,6 +80,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

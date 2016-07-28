@@ -1,9 +1,9 @@
 ---
 title: "创建策略并发布应用程序 | Microsoft Intune"
-description: 
+description: "说明如何为 Intune 订阅创建策略并发布示例应用"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d079452cb41ca8b37c292d75a606eb72ba5304df
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 Intune 策略提供的设置有助于控制移动设备上的安全设置、维护计算机的 Windows 防火墙和 Endpoint Protection 设置以及部署应用程序。 你可以在[使用 Microsoft Intune 策略管理设备上的设置和功能](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)和[使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)中了解更多信息。
 
 可以使用 Intune 执行两种类型的应用安装。 第一种是 **必需安装**，它会自动将该应用部署到托管的计算机。 另一个是“可用安装”，它将应用或应用的链接部署到 Intune 公司门户，以便用户可以选择将其安装到计算机上或移动设备上。
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 下列步骤将帮助你设置移动设备配置策略和 Windows 电脑防火墙策略，并在移动设备注册后，将 Skype 配置为这些移动设备的可用安装。
 
@@ -46,6 +41,10 @@ Before using Intune to deploy apps, make sure that you have the appropriate lice
 3.  在**策略概述**页上的**任务**列表中，选择**添加策略**。
 
 4.  在策略列表中，展开想要为其创建策略的平台，然后选择**常规配置** > **使用建议的设置创建和部署策略** > **创建策略**。
+
+> [!NOTE]
+> 没有针对设备配置策略的建议设置，因为有很多选项可供选择。 你需要创建自定义设备配置策略。
+
 
 5.  当系统提示“选择你想要将此策略部署到的组”时，从可用的组列表中选择一个组，然后依次选择“添加” > “确定”。
 
@@ -110,6 +109,6 @@ Skype 应用现已可从公司门户中在移动设备上安装，但首先你�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
