@@ -3,7 +3,7 @@ title: "使用 Microsoft Intune 公司门户网站 | Microsoft Intune"
 description: "介绍公司门户网站并提供指向你可以在网站上执行任务的步骤的链接"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 118a25b6ebb156c4ed642fee8802ef6a54582f8e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: bfce55b6d23554d1c3df2b62d6bf5fdd4607974b
 
 
 ---
@@ -24,19 +24,19 @@ ms.openlocfilehash: 118a25b6ebb156c4ed642fee8802ef6a54582f8e
 
 可以使用公司门户网站执行以下操作：
 
--   [重置设备密码](reset-your-passcode-cpwebsite.md)
-
 -   [重命名设备](rename-your-device-cpwebsite.md)
 
 -   [移除设备](remove-your-device-cpwebsite.md)
 
 -   [重置设备](reset-your-device-cpwebsite.md)
 
+-   [重置设备密码](reset-your-passcode-cpwebsite.md)
+
 -   [远程锁定设备](remote-lock-your-device-cpwebsite.md)
 
 -   [手动同步你的设备，以加快较慢应用安装的速度](sync-your-device-manually-cpwebsite.md)
 
--   找到 IT 管理员的联系信息（如果 IT 管理员已配置）。 
+-   找到 IT 管理员的联系信息（如果 IT 管理员已配置）。
 
 -   查看有关设备的详细信息，包括它是否符合公司或学校的策略
 
@@ -50,6 +50,6 @@ ms.openlocfilehash: 118a25b6ebb156c4ed642fee8802ef6a54582f8e
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "手动同步 Windows 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 7ec8496317f354b5a2f0c3a214f457612c3105de
 
 
 ---
@@ -35,19 +35,19 @@ ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
 1. 请转到**所有应用**  >  **设置**  >  **帐户**。
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
-    
+
 2. 点击**工作单位访问**。
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
-    
+
 3. 在**注册到设备管理**下，点击你的公司名称，如下所示。
 
     ![win10m-sync-3-tap-comp-name](./media/win10m-sync-3-tap-comp-name.png)
-    
+
 4. 点击“同步”图标。
 
     ![win10m-sync-4-tap-sync](./media/win10m-sync-4-tap-sync.png)
-    
+
     屏幕顶部将显示“我们正在同步你的帐户”消息。 设备完成同步前，“同步”按钮将灰显。
 
 ## Windows 10 桌面版
@@ -56,23 +56,23 @@ ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
 1. 选择**启动**按钮，如下所示，然后选择**设置**。
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
-    
+
 2. 在**设置**页上，选择**帐户**。
- 
+
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
-    
+
 3. 在**帐户**页上，选择**工作单位访问**。
-    
+
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
-    
+
 4. 在**注册到设备管理**部分下，单击你的公司名称，如以下蓝色突出所示。
-    
+
     ![win10pc-sync-4-tap-com-name](./media/win10pc-sync-4-tap-com-name.png)
-   
+
 5. 选择“同步”按钮。
-    
+
     ![win10pc-sync-5-tap-sync](./media/win10pc-sync-5-tap-sync.png)
-   
+
    在同步完成之前，按钮将变为灰显。
 
 ## Windows Phone 8.1
@@ -81,15 +81,15 @@ ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
 1. 请转到**所有应用**  >  **设置**  >  **工作区**。
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
-    
+
 2. 点击你公司的名称，如下面的蓝色突出所示。
 
     ![wp81-2-sync-tap-compname](./media/wp81-2-sync-tap-compname.png)
-   
+
 3. 点击“同步”图标。
 
     ![wp81-3-sync-tap-sync-button](./media/wp81-3-sync-tap-sync-button.png)
-    
+
    设备完成同步前，屏幕顶部将显示“我们正在同步你的帐户”消息。
 
 仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
@@ -99,6 +99,6 @@ ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

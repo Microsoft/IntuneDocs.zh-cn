@@ -3,7 +3,7 @@ title: "同步 Active Directory 并将用户添加到 Intune | Microsoft Intune"
 description: "介绍将本地用户与 Azure AD 同步并授予对 Intune 订阅的管理员权限"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 8aeb23b709b50ccb8ad29868b4bc5ab96faf950f
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 49eb9d1658df352c68677eaa3f29e1d57c43947e
 
 
 ---
@@ -48,6 +48,6 @@ ms.openlocfilehash: 8aeb23b709b50ccb8ad29868b4bc5ab96faf950f
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

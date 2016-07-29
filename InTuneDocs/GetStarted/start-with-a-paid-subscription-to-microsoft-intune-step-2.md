@@ -3,7 +3,7 @@ title: "配置自定义域名 | Microsoft Intune"
 description: "介绍向你的 Intune 订阅添加自定义域名的过程"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: f18afc5487fe20ba4a13d938dad78fa6087128d7
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 1be1e1846281d930fadcf7eadaa6afe77146f0a2
 
 
 ---
@@ -40,6 +40,6 @@ ms.openlocfilehash: f18afc5487fe20ba4a13d938dad78fa6087128d7
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

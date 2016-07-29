@@ -3,7 +3,7 @@ title: "设备注册疑难解答 | Microsoft Intune"
 description: "有关设备注册问题故障排除的建议。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: e10ef68d97127b848a7d624ba40d219ffed3d06d
 
 
 ---
@@ -144,7 +144,7 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 **解决方法：**在 [Office 365 管理中心](https://portal.office.com/)，删除公司名称中的特殊字符并保存公司信息。
 
 ### 如果有多个已验证的域，则无法登录或注册设备
-**问题：**向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。 
+**问题：**向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
 
 
 **解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。  现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
@@ -166,14 +166,14 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 **问题**：用户在其设备上收到以下消息：*无法登录，因为设备缺少必需的证书。*
 
-**解决方法**： 
+**解决方法**：
 
 - 用户也许能够按照[这些说明](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)检索缺少的证书。
-- 如果用户无法检索该证书，你可能在 ADFS 服务器上缺少中间证书。 Android 需要中间证书才信任该服务器。 
+- 如果用户无法检索该证书，你可能在 ADFS 服务器上缺少中间证书。 Android 需要中间证书才信任该服务器。
 
 你可以将证书导入到 ADFS 服务器或代理服务器上的中间存储中，如下所示：
 
-1.  在 ADFS 服务器上，启动“**Microsoft 管理控制台**”并向“**计算机帐户**”添加证书管理单元。 
+1.  在 ADFS 服务器上，启动“**Microsoft 管理控制台**”并向“**计算机帐户**”添加证书管理单元。
 5.  查找 ADFS 服务正在使用的证书并查看其父证书。
 6.  复制该父证书并将其粘贴在 **Computer\Intermediate Certification Authorities\Certificates** 下。
 7.  复制 ADFS 证书、ADFS 解密证书和 ADFS 签名证书并将它们粘贴在 ADFS 服务的个人存储中。
@@ -200,34 +200,34 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 ### 通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
 **问题：**用户注册了 iOS 设备，但它未出现在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
 
-- 你可能已向某个帐户注册了 Intune 连接器，然后又将其注册到其他帐户。 
+- 你可能已向某个帐户注册了 Intune 连接器，然后又将其注册到其他帐户。
 - 你可能已从某个帐户下载了 MDM 证书，而在其他帐户上使用了它。
 
 
 **解决方法：**执行以下步骤：
 
-1. 禁用 Windows Intune 连接器内部的 iOS。 
+1. 禁用 Windows Intune 连接器内部的 iOS。
     1. 右键单击 Intune 订阅，然后选择**属性**。
     1. 在“iOS”选项卡上，取消选中“启用 iOS 注册”。
 
 
 
 1. 在 SQL 中的 CAS 数据库上运行以下步骤
-  
-    1. 更新 SC_ClientComponent_Property 设置 Value2 = ''，其中名称类似“%APNS%” 
-    1. 从 MDMPolicy（其中 PolicyType = 7）中删除 
+
+    1. 更新 SC_ClientComponent_Property 设置 Value2 = ''，其中名称类似“%APNS%”
+    1. 从 MDMPolicy（其中 PolicyType = 7）中删除
     1. 从 MDMPolicyAssignment（其中 PolicyType = 7）中删除
-    1. 更新 SC_ClientComponent_Property 设置 Value2 = ''，其中名称类似“%APNS%” 
-    1. 从 MDMPolicy（其中 PolicyType = 11）中删除 
-    1. 从 MDMPolicyAssignment（其中 PolicyType = 11）中删除 
+    1. 更新 SC_ClientComponent_Property 设置 Value2 = ''，其中名称类似“%APNS%”
+    1. 从 MDMPolicy（其中 PolicyType = 11）中删除
+    1. 从 MDMPolicyAssignment（其中 PolicyType = 11）中删除
     1. 删除 Drs_Signals
-1. 重启 SMS Executive 服务或 CM 服务器 
+1. 重启 SMS Executive 服务或 CM 服务器
 
 
 
 1. 获取新 APN 证书并将其上传：右键单击 Configuration Manager 左侧窗格中的“Intune 订阅”。 选择“创建 APNs 证书请求”，并按照说明进行操作。
 ## 使用 System Center Configuration Manager with Intune 时的问题
-### 移动设备消失 
+### 移动设备消失
 **问题：** 在向 Configuration Manager 成功注册移动设备后，它从移动设备集合中消失，但该设备仍然具有管理配置文件，并且列示在 CSS 网关中。
 
 **解决方法：**这可能是因为你有一个自定义进程用于删除未加入域的设备，或者是因为该用户已从订阅停用该设备。 若要验证并检查从 Configuration Manager 控制台中删除了该设备的是哪个进程或用户帐户，请执行以下步骤。
@@ -256,22 +256,22 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 ### 该计算机已注册 - 错误 hr 0x8007064c
 **问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
-  
+
 可能的原因是计算机先前已注册，或具有某台已注册的计算机的克隆映像。 先前帐户的帐户证书仍在此计算机上。
 
 
 
-**解决方法：** 
+**解决方法：**
 
-1. 从**开始**菜单中，选择**运行**  ->  **MMC**。 
+1. 从**开始**菜单中，选择**运行**  ->  **MMC**。
 1. **文件**  ->  **添加/删除管理单元**。
 1. 双击**证书**，依次选择**计算机帐户**和**下一步**，然后选择**本地计算机**。
-1. 双击**证书(本地计算机)**，再选择**个人/证书**。 
+1. 双击**证书(本地计算机)**，再选择**个人/证书**。
 1. 查找 Sc_Online_Issuing 发布的 Intune 证书，并将其删除（若存在）
 1. 删除注册表项 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**（若存在）及所有子项。
-1. 尝试重新注册。 
-1. 如果仍无法注册计算机，请查找并删除以下项（若存在）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。 
-1. 尝试重新注册。 
+1. 尝试重新注册。
+1. 如果仍无法注册计算机，请查找并删除以下项（若存在）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。
+1. 尝试重新注册。
 
     > [!IMPORTANT]
     > 此部分、方法或任务包含教你如何修改注册表的步骤。 但是，如果注册表修改不正确，可能会发生严重问题。 因此，请确保认真遵循这些步骤。 为提高保护程度，请在修改之前备份注册表。 那么，如果发生问题，你也可以恢复注册表。
@@ -306,6 +306,6 @@ ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

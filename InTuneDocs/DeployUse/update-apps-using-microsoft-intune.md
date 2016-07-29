@@ -3,7 +3,7 @@ title: "更新应用 | Microsoft Intune"
 description: "使用本主题中的信息了解在需要新版本时可如何更新应用。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: bb077902e33d6ab18dea33a6ab2d1ff9a70ce937
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 5e163cf4e8190d0bc967415f1d907465e4e13f36
 
 
 ---
@@ -60,6 +60,6 @@ Microsoft Intune 可帮助你管理应用更新。 使用本主题中的信息�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

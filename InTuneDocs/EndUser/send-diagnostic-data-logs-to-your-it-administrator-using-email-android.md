@@ -3,7 +3,7 @@ title: "使用电子邮件将诊断数据日志发送给 IT 管理员 | Microsof
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 30d325a9f5b920176ed5f4c9ce003564dcc6d3b5
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 00e23b0094ee03c2a54bf6d12295e9f38781373f
 
 
 ---
@@ -31,13 +31,13 @@ ms.openlocfilehash: 30d325a9f5b920176ed5f4c9ce003564dcc6d3b5
 
 2.  点击**菜单** &gt; **设置**。
 
-    > [!NOTE] 
+    > [!NOTE]
     > “菜单”可以是软件按钮，也可以是硬件按钮，具体取决于你拥有的 Android 设备类型。
 
 3.  在“诊断数据”下，点击“发送数据”。
 
     > [!NOTE]
-    > **如果你仅使用 Android 6.0 或更高版本的设备：**点击“发送数据”时，将显示消息“是否允许公司门户访问你设备上的照片、媒体和文件?”。 
+    > **如果你仅使用 Android 6.0 或更高版本的设备：**点击“发送数据”时，将显示消息“是否允许公司门户访问你设备上的照片、媒体和文件?”。
 
     此消息有误导性，因为**Microsoft 绝不会访问你设备上的照片、媒体或文件！** 消息文本由 Google 管控，Microsoft 无法更改。  允许访问就意味着允许你的设备将数据日志写入设备的 SD 卡中，这可使你通过使用 USB 电缆移动这些日志。
 
@@ -50,6 +50,7 @@ ms.openlocfilehash: 30d325a9f5b920176ed5f4c9ce003564dcc6d3b5
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

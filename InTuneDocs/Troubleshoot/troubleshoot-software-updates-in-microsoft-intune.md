@@ -3,7 +3,7 @@ title: "软件更新疑难解答 | Microsoft Intune"
 description: "解决 Microsoft Intune 中的软件更新问题。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 1615f564891ddf720dc42b18a599921572fb2157
 
 
 ---
@@ -244,7 +244,7 @@ ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
 **问题**你可能会遇到 Microsoft Intune 客户端出现以下一种或多种表现的情况：
 - 它们突然停止向 Microsoft 管理控制台进行报告。  
 - 它们出现高 CPU 使用率。
-- 当应用程序通过 Intune 门户安装时，安装速度缓慢。 
+- 当应用程序通过 Intune 门户安装时，安装速度缓慢。
 - Microsoft Intune Center 将触发以下错误：*更新计算机时出错。发现错误：代码 0x800705b4*。
 - “Intune 管理员控制台”>“组”>“所有设备”下的状态字段显示：*此计算机上安装的一个或多个代理存在错误。此计算机的信息可能不准确或不是最新的*。
 
@@ -254,7 +254,7 @@ ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
 1. 登录到 [Intune 管理控制台](https://manage.microsoft.com)。
 2. 依次选择**更新**  > **所有更新**。
 3. 使用上面的工具栏上的筛选器选项以筛选被取代的更新。
-4. 若被取代的更新可应用到 Windows 7 或在受影响的客户端上安装的应用程序（如 Microsoft Office），则拒绝所有此类更新。 
+4. 若被取代的更新可应用到 Windows 7 或在受影响的客户端上安装的应用程序（如 Microsoft Office），则拒绝所有此类更新。
 5. 重启受影响的客户端。
 
 此外，如果你正在运行 Windows 7，请确保已安装以下更新：[3050265 Windows 更新客户端（用于 Windows 7）：2015 年 6 月](https://support.microsoft.com/kb/3050265)。
@@ -264,7 +264,6 @@ ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

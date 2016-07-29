@@ -3,7 +3,7 @@ title: "应用部署问题疑难解答 | Microsoft Intune"
 description: "本主题有助于解决 Microsoft Intune 中的应用部署问题。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 2aef2df385cd17a0f261789c735282f4985cb442
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 46cb56da1623e0de9103ce3fa60465d5d367c974
 
 
 ---
@@ -81,7 +81,7 @@ ms.openlocfilehash: 2aef2df385cd17a0f261789c735282f4985cb442
 
 ### 错误：发布服务器不存在
 使用“添加其他软件协议”以添加第三方许可协议。 尝试从“其他软件许可协议”页添加发布服务器。 该页按字母顺序提供现有发布服务器的列表。
-输入缺少的发布服务器，但收到错误**发布服务器不存在**。 
+输入缺少的发布服务器，但收到错误**发布服务器不存在**。
 
 这是由于设计而导致的。 Intune 提供仅适用于常用软件标题的许可证跟踪。 Intune 要求至少有 4 个独立帐户报告此软件，才能将其提供为许可工作负荷中的一个选项。
 
@@ -105,6 +105,6 @@ ms.openlocfilehash: 2aef2df385cd17a0f261789c735282f4985cb442
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

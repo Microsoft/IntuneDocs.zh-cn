@@ -3,18 +3,18 @@ title: "客户端安装程序疑难解答 | Microsoft Intune"
 description: "解决常见的客户端安装程序问题。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: a1f9432e8789a40ec65c64cb958414b97c548f06
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 3f9c3a69d96aa6886138de2e1b4ff8b8913cb372
 
 
 ---
@@ -126,6 +126,6 @@ ms.openlocfilehash: a1f9432e8789a40ec65c64cb958414b97c548f06
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "从 Intune 取消注册 Android 设备 | Microsoft Intune"
 description: "介绍如何从 Intune 取消注册 Android 设备"
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 18b34de09cc24730cca6eacb0d5d2c5f99c24d1e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 1586e72eef5afdc0baefde8e5a3c105af22edb62
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 18b34de09cc24730cca6eacb0d5d2c5f99c24d1e
 
 若要从 Intune 取消注册设备并卸载公司门户应用，请按照下列步骤操作或观看此视频：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=K-Vi7lNfaMk&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
+<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
 
 1.  登录到公司门户应用。
 
@@ -49,6 +49,7 @@ ms.openlocfilehash: 18b34de09cc24730cca6eacb0d5d2c5f99c24d1e
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

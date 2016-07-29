@@ -3,7 +3,7 @@ title: "使用组来管理用户和设备 | Microsoft Intune"
 description: "使用“组”工作区创建和管理组。"
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 42328ee749517fd5abf923db35e7b13747e9f14b
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 53a7bda5dd5adcac512c413c7069723ae638f279
 
 
 ---
@@ -153,6 +153,6 @@ ms.openlocfilehash: 42328ee749517fd5abf923db35e7b13747e9f14b
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

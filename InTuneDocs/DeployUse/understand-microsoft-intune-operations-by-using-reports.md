@@ -3,7 +3,7 @@ title: "通过使用报表了解操作 | Microsoft Intune"
 description: "创建和管理有关组织中的软件、硬件和软件许可证的报表。"
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 06/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 10908e3bb8e235659db572667bd10820adf0be52
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 8d5dd37c6e41c6c9bb40b9bff6696583d4215730
 
 
 ---
@@ -69,7 +69,6 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

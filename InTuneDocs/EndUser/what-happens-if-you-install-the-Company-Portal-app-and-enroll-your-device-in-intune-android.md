@@ -3,7 +3,7 @@ title: "安装公司门户应用并在 Intune 中注册 Android 设备后会发�
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 39aafbccda265ee24c7561440a11f1b22fef6170
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6562ca63abb509bebe5fc8aa4764da8ed3a8e0f4
 
 
 ---
@@ -62,6 +62,7 @@ ms.openlocfilehash: 39aafbccda265ee24c7561440a11f1b22fef6170
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

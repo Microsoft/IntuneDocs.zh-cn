@@ -3,7 +3,7 @@ title: "设置锁定设备之前的时间量 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: fe54897fe42d07040b873d6112e34830652fdf20
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: df24ef5c0562d04c1f9aaf08c5905e4928b6c4fa
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: fe54897fe42d07040b873d6112e34830652fdf20
 # 设置锁定设备之前的时间量
 
 若要使 Android 设备上的数据更加安全，IT 管理员可以设置一个策略，要求你设置在设备自动锁定前，它可以保持空闲的时间量。 请按照以下步骤来设置锁定设备之前的时间量。
- 
+
 1.  在设备的**设置**中，单击**安全**&gt;**自动锁定**（在某些设备上显示为**以下时间后锁定电话**）。
 
 2.  指定密码超时值。
@@ -36,6 +36,6 @@ ms.openlocfilehash: fe54897fe42d07040b873d6112e34830652fdf20
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
