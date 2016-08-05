@@ -4,7 +4,7 @@ description: "本主题中的错误和状态代码可帮助你解决资源访问
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: f8594f6004dbd44306e00a76ab09c18bea4286b3
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
 
 
 ---
@@ -372,6 +372,6 @@ ms.openlocfilehash: f8594f6004dbd44306e00a76ab09c18bea4286b3
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

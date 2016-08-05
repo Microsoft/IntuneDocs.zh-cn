@@ -3,7 +3,7 @@ title: "限制对 SharePoint Online 的访问 | Microsoft Intune"
 description: "使用条件访问保护和控制对 SharePoint Online 上的公司数据的访问。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 334eb869ddbc67767a6e9ed6711bd9135ceb558b
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
 
 
 ---
@@ -189,6 +189,6 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

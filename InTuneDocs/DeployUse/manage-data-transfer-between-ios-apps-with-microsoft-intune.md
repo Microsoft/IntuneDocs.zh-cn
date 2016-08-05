@@ -3,7 +3,7 @@ title: "管理 iOS 应用之间的数据传输 | Microsoft Intune"
 description: "使用本主题以了解如何使用功能和移动应用管理策略中的 iOS Open 来管理应用之间的数据传输。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 52ddcb22b27443b42a365a84f1769e90f1e9e8a0
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
 
 
 ---
@@ -75,6 +75,6 @@ ms.openlocfilehash: 52ddcb22b27443b42a365a84f1769e90f1e9e8a0
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -3,7 +3,7 @@ title: "使用 MAM 策略保护应用数据 | Microsoft Intune"
 description: "本主题说明移动应用管理策略如何帮助保护你的公司数据、防止数据丢失，以及将个人和工作信息分离。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
-ms.openlocfilehash: 0ba8e40b06452002f33b09b37e399c62da54c352
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
 
 
 ---
@@ -133,6 +133,6 @@ MDM 解决方案：
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -4,7 +4,7 @@ description: "解决常见的客户端安装程序问题。"
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 3f9c3a69d96aa6886138de2e1b4ff8b8913cb372
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 3f7e5752780d7159ce3081ec7a194f4e81e4cd16
 
 
 ---
@@ -126,6 +126,6 @@ ms.openlocfilehash: 3f9c3a69d96aa6886138de2e1b4ff8b8913cb372
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

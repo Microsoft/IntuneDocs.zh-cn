@@ -3,8 +3,8 @@ title: "创建和部署 MAM 策略 | Microsoft Intune"
 description: "使用本主题中的分步说明来创建和部署移动应用管理策略。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
-ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
 
 
 ---
@@ -50,24 +50,20 @@ ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
     > [!TIP]
     > 如果首次使用 Azure 门户，请先阅读[用于 Microsoft Intune MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)以熟悉该门户。
 
-2.  在“设置”边栏选项卡中，选择“应用策略”。  将打开“**应用策略**”边栏选项卡，你将在此创建新策略和编辑现有策略。
-
-    ![显示现有策略列表的“应用策略”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  选择**添加策略**。
+2.  在“设置”边栏选项卡中，选择“应用策略”。  将打开“**应用策略**”边栏选项卡，你将在此创建新策略和编辑现有策略。 选择**添加策略**。
 
     ![突出显示“添加策略”菜单选项的“应用策略”边栏选项卡的屏幕截图 ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  为策略键入名称、添加简要说明并选择平台类型，以便为 iOS 或 Android 创建策略。  可以为每个平台创建多个策略。
+3.  为策略键入名称、添加简要说明并选择平台类型，以便为 iOS 或 Android 创建策略。  可以为每个平台创建多个策略。
 
     ![“添加策略”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表。 可从该列表中选择希望与正创建的策略关联的一个或多个应用。 选择应用后，选择“应用”边栏选项卡底部的“选择”按钮以保存你的选择。
+4.  选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表。 可从该列表中选择希望与正创建的策略关联的一个或多个应用。 选择应用后，选择“应用”边栏选项卡底部的“选择”按钮以保存你的选择。
 
     > [!IMPORTANT]
     > 必须至少选择一个应用才能创建策略。
 
-6.  在“添加策略”边栏选项卡上，选择“配置所需设置”以打开“策略设置”边栏选项卡。
+5.  在“添加策略”边栏选项卡上，选择“配置所需设置”以打开“策略设置”边栏选项卡。
 
     有两种类别的策略设置：“数据重定位”和“访问”。  数据重定位策略适用于将数据移入和移出应用，而访问策略将决定最终用户在工作环境中如何访问应用。
     为了帮助你入门，策略设置具有默认值。  如果默认值满足你的需求，则无须进行任何更改。
@@ -77,11 +73,11 @@ ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
 
     ![“设置”边栏选项卡以及“添加策略”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  选择“确定”保存此配置。  现将返回“添加策略”  边栏选项卡。 选择“创建”以创建策略并保存设置。
+6.  选择“确定”保存此配置。  现将返回“添加策略”  边栏选项卡。 选择“创建”以创建策略并保存设置。
 
     ![显示已配置“应用”和“设置”的“添加策略”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![包含“添加策略”通知的“应用策略”边栏选项卡的屏幕截图 ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 按上述流程创建策略后，它未部署到任何用户。  请按下述步骤部署策略。
 
@@ -169,6 +165,6 @@ ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

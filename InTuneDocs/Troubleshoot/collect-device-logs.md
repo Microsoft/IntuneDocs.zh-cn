@@ -3,25 +3,25 @@ title: "收集设备日志| Microsoft Intune"
 description: 
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac5c66f57194a84580aa495a58e5281683aa1cca
-ms.openlocfilehash: 4fc08fcea6cea897b9ddc3d0c00f2d83069f639d
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: fb4bc718212480b9e44dc964b432dc2e37b3e531
 
 
 ---
 
 # 设备日志
 
-作为故障诊断工作的一部分，你可能希望从用户设备中收集日志。 此处介绍了收集这些日志的说明。 通常，你可能需要访问设备，或者请求用户收集日志并将其发送给你。 
+作为故障诊断工作的一部分，你可能希望从用户设备中收集日志。 此处介绍了收集这些日志的说明。 通常，你可能需要访问设备，或者请求用户收集日志并将其发送给你。
 
 ### Android 日志位置
 Android 日志位于 *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*。 如[使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)中所述，用户还可以使用电子邮件向你发送日志文件。
@@ -46,6 +46,6 @@ Android 日志位于 *<Android Device>\Phone\Android\data\com.microsoft.windowsi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

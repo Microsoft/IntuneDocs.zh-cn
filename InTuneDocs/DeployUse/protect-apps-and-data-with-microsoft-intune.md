@@ -3,7 +3,7 @@ title: "保护应用和数据 | Microsoft Intune"
 description: 
 keywords: "本主题介绍供你使用的各种 Intune 特性和功能，以帮助保护你的公司应用和数据。"
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: cf2ef1510aa9dafeddf54855123c826c9ccc2fd0
 
 
 ---
@@ -53,6 +53,6 @@ Intune 通过多个技术层保护公司数据。  在标识层上，条件性�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

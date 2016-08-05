@@ -2,9 +2,9 @@
 title: "软件更新疑难解答 | Microsoft Intune"
 description: "解决 Microsoft Intune 中的软件更新问题。"
 keywords: 
-author: Nbigman
+author: robstack
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 1615f564891ddf720dc42b18a599921572fb2157
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: fd490bf3e745e8d0020299dc9be78bb7288edb0d
 
 
 ---
@@ -264,6 +264,6 @@ ms.openlocfilehash: 1615f564891ddf720dc42b18a599921572fb2157
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "设备合规性策略 | Microsoft Intune"
 description: "本主题介绍你了解什么是设备合规性策略及其工作原理所需的概念。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: f34ff402ae1012a471219647e94bc1f5225a6f07
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
 
 
 ---
@@ -62,6 +62,6 @@ ms.openlocfilehash: f34ff402ae1012a471219647e94bc1f5225a6f07
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

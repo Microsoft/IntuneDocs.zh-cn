@@ -2,19 +2,19 @@
 title: "策略疑难解答 | Microsoft Intune"
 description: "解决策略配置问题。"
 keywords: 
-author: Nbigman
+author: robstack
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
 
 
 ---
@@ -77,10 +77,6 @@ ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
 
 4.  将通知滑块移动到默认设置。
 
-## KNOX 设备的错误 0x87D1FDE8
-**问题**：为各种 Android 设备创建并部署适用于 Samsung KNOX 的 Exchange Active Sync 电子邮件配置文件后，它们在设备的“属性”&gt;“策略”选项卡中报告错误**0x87D1FDE8**或**修正失败**。
-
-请查看适用于 Samsung KNOX 的 EAS 配置文件的配置以及源策略。 Samsung Notes 同步选项不再受支持，因此，不应该在配置文件中选择此选项。 确保设备有足够的时间处理策略，最多为 24 小时。
 
 ## 警报：将访问规则保存到 Exchange 中的操作失败
 **问题**：你在管理控制台中收到警报“将访问规则保存到 Exchange 中的操作失败”   。
@@ -113,6 +109,6 @@ Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

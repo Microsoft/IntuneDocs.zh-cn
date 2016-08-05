@@ -3,7 +3,7 @@ title: "限制对电子邮件示例方案的访问 | Microsoft Intune"
 description: "几个示例方案以及使用条件访问实现这些方案的方式。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: bef94f44767347bcdb944eadf63ce673ffc1b7f3
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
 
 
 ---
@@ -81,6 +81,6 @@ ms.openlocfilehash: bef94f44767347bcdb944eadf63ce673ffc1b7f3
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

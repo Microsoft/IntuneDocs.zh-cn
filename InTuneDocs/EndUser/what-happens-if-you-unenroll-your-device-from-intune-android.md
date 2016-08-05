@@ -3,8 +3,8 @@ title: "从 Intune 取消注册 Android 设备会发生什么情况？ | Microso
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 140ccb4626f04b2397c63186a38310e74720f1b2
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 
 从 Intune 取消注册 Android 设备时：
 
--   取消注册设备意味着 IT 管理员不再管理此设备。 
+-   取消注册设备意味着 IT 管理员不再管理此设备。
 
 -   你将无法访问公司数据和资源。
 
@@ -35,7 +35,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 
 -   将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
 
-如果将设备设置为仅接收公司电子邮件，然后取消注册设备，则你的设备将不再显示在公司门户中。 
+如果将设备设置为仅接收公司电子邮件，然后取消注册设备，则你的设备将不再显示在公司门户中。
 
 有关如何取消注册的说明，请参阅[通过使用公司门户应用从 Intune 取消注册设备](unenroll-your-device-from-intune-android.md)。
 
@@ -46,6 +46,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 

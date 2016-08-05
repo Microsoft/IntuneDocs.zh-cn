@@ -3,7 +3,7 @@ title: "限制对 Exchange 内部部署的电子邮件访问 | Microsoft Intune"
 description: "使用条件访问保护和控制对本地 Exchange 的公司电子邮件的访问。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 490a1aa091547de1d2bccb0fe8ea72e40753a0a7
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
 
 
 ---
@@ -123,6 +123,6 @@ Windows 8 和更高版本上的**邮件**应用程序（向 [!INCLUDE[wit_nextre
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

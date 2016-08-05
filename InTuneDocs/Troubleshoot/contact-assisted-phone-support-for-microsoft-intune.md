@@ -3,8 +3,8 @@ title: "联系辅助电话支持 | Microsoft Intune"
 description: 
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
-ms.openlocfilehash: de00d31ab32916f29a111c93b39a578f82524f80
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 
 
 ---
@@ -117,7 +117,6 @@ ms.openlocfilehash: de00d31ab32916f29a111c93b39a578f82524f80
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

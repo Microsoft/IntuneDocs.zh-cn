@@ -2,9 +2,9 @@
 title: "设备注册疑难解答 | Microsoft Intune"
 description: "有关设备注册问题故障排除的建议。"
 keywords: 
-author: Nbigman
+author: nathbarn
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: e10ef68d97127b848a7d624ba40d219ffed3d06d
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 
 
 ---
@@ -306,6 +306,6 @@ ms.openlocfilehash: e10ef68d97127b848a7d624ba40d219ffed3d06d
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

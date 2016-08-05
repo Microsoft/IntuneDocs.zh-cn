@@ -3,7 +3,7 @@ title: "部署和监视设备合规性策略 | Microsoft Intune"
 description: "使用本主题中的分步说明来部署和监视设备合规性策略。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 42d326dbe937724141213dacc133aefe5020a61d
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
 
 
 ---
@@ -72,6 +72,6 @@ ms.openlocfilehash: 42d326dbe937724141213dacc133aefe5020a61d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

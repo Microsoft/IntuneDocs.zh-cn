@@ -3,8 +3,8 @@ title: "在 Intune 中注册 Windows 10 设备 | Microsoft Intune"
 description: "介绍如何在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/11/2016
+manager: angrobe
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
-ms.openlocfilehash: fff0a6205e7f9b02886a28c1266cf756ff0fc597
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 8dd807aa18f7e5729ae1ab1435c3196e324ffe44
 
 
 ---
@@ -67,7 +67,6 @@ ms.openlocfilehash: fff0a6205e7f9b02886a28c1266cf756ff0fc597
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

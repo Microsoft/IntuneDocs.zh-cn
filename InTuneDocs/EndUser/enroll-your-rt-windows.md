@@ -3,8 +3,8 @@ title: "在 Intune 中注册 Windows RT 设备 | Microsoft Intune"
 description: "介绍如何在 Intune 中注册 Windows RT 设备"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ca6519e8-d0da-4314-b0bc-1753784d7969
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 6d7bd56ae4617365ef89672903d411c5d713ea25
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: ddbe0bd7b9a69a92d5bf4681bf8c897d7712acee
 
 
 ---
@@ -53,7 +53,6 @@ ms.openlocfilehash: 6d7bd56ae4617365ef89672903d411c5d713ea25
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 
