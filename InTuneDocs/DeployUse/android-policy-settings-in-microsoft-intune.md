@@ -5,7 +5,7 @@ description: "创建控制通过 Intune 管理的 Android 设备上的设置及�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
-ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
@@ -197,65 +197,16 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
     |**OMA-URI（区分大小写）**|指定需为其提供设置的 OMA-URI。|
     |**值**|指定要与之前指定的 OMA-URI 关联的值。|
 
-### 示例：配置具有预共享密钥的自定义 Wi-Fi 配置文件
-尽管 Intune 支持 Android 设备的 Wi-Fi 配置文件，但此功能当前并不支持在配置中包含预共享密钥。 在此示例中，你将学习如何创建 Android 自定义策略，该策略在 Android 设备上创建具有预共享密钥的 Wi-Fi 配置文件。
+### 示例
 
-#### 创建具有预共享密钥的 Wi-Fi 配置文件
-
-1.  确保用户使用的是适用于 Android 的 [Intune 公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)应用的最新版本。
-
-2.  创建 Android 自定义策略，并添加以下设置：
-
-|设置名|详细信息|
-|----------------|--------------------|
-|**设置名**|为设置指定一个你所选择的名称。|
-|**设置描述**|指定设置的描述。|
-|**数据类型**|选择“字符串 (XML)”。|
-|**OMA-URI**|键入以下内容：./Vendor/MSFT/WiFi/Profile/*&lt;你的 Wi-Fi 配置文件&gt;*/Settings|
-
-3.  对于“值”，复制并粘贴以下 XML 代码：
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  完成后，保存该策略，并将其部署到所需的 Android 设备。 新的 Wi-Fi 配置文件将出现在设备的连接列表中。
+- [创建具有预共享密钥的 Wi-Fi 配置文件](pre-shared-key-wi-fi-profile.md)
+- [使用自定义策略创建适用于 Android 设备的 per-app VPN 配置文件](per-app-vpn-for-android-pulse-secure.md)
 
 ### 另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
