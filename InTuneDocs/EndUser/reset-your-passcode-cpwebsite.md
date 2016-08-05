@@ -3,8 +3,8 @@ title: "从公司门户网站重置设备密码 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
 
 如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](http://portal.manage.microsoft.com)进行重置。 公司门户网站是一个网页，可以用于管理计算机和在 Intune 中注册的设备，还可以在使用公司门户应用时用它来处理你可以执行的大多数相同任务。
 
-> [!NOTE] 
+> [!NOTE]
 > 公司门户网站上可能不会显示“重置密码”按钮，这具体取决于 IT 管理员配置 Intune 的方式。 Windows 8.1 和 Windows RT 设备不支持密码重置。
 
 重置密码：
@@ -34,7 +34,7 @@ ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
 
 2.  点击**重置密码**。
 
-    ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
+    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  点击“注销”，然后使用工作或学校凭据重新登录。 必须在五分钟内重新登录。
 
@@ -64,6 +64,7 @@ ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

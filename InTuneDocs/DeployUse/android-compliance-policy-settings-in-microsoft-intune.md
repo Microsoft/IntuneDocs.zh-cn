@@ -3,7 +3,7 @@ title: "适用于 Android 设备的合规性策略设置 | Microsoft Intune"
 description: "本主题介绍适用于 Android 设备的设备合规性策略设置。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
+ms.sourcegitcommit: 465a5f305ac191fdf761997df565423f4349ff91
+ms.openlocfilehash: ed358c07594507d3a9144e9c686b54dcbd30aede
 
 
 ---
@@ -56,9 +56,17 @@ ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
 ### 加密
 - **需要对移动设备进行加密：**将此选项设置为“是”，要求对移动设备进行加密以连接到资源。 当你配置“需要密码解锁移动设备”设置时将加密设备。
 
-## 设备运行状况设置
+## 设备运行状况和安全设置
 
 - **设备不得越狱或取得 root 权限：**如果启用此设置，已越狱的设备将评估为不符合要求。
+- **要求设备阻止安装来自未知来源的应用(Android 4.0 或更高版本)** 若要阻止启用了“**安全 > 未知源**”的设备，启用此设置并将其设置为“**是**”。  
+>[!IMPORTANT]
+>旁加载应用程序需要启用“**未知源**”设置。  如果不旁加载设备上的 Android 应用，则应仅强制执行此合规性策略。
+
+- **要求禁用 USB 调试(Android 4.2 或更高版本)**：此设置指定是否要检测并确认设备上启用了 USB 调试选项。
+- **要求设备已启用“扫描设备的安全威胁”(Android 4.2-4.4)**：此设置指定在设备上启用“**验证应用**”功能。
+- **最低 Android 安全修补程序级别 (Android 6.0 或更高版本)**：使用此设置指定最小 Android 修补程序级别。  不满足此修补程序级别的设备将会不相容。 必须将日期的格式指定为：YYYY-MM-DD。
+
 
 ## 设备属性设置
 - **所需的最低 OS 版本：**当设备不满足最低 OS 版本要求时，它将被报告为不符合要求。
@@ -68,6 +76,6 @@ ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

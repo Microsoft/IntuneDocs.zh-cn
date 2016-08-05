@@ -3,7 +3,7 @@ title: "根据管理员角色自定义控制台视图 | Microsoft Intune"
 description: "使用本主题可帮助你筛选 Intune 管理控制台视图，以允许管理员仅查看根据其角色所需查看的项目。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
+ms.sourcegitcommit: 217655d3c33ac88672f0739302f182cf6a6ae335
+ms.openlocfilehash: dc9bb2992d3e3ed8134cfa2146295e16edf4e459
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
 # 根据管理员角色自定义 Intune 控制台视图
 你可以筛选 Microsoft Intune 管理控制台视图，以允许管理员仅查看根据其角色所需查看的项目。 例如，你可以只允许管理控制台操作员更新恶意软件定义或重置设备上的密码。 这可通过使用分配给特定用户的预设**指定内容**来实现。 当这些用户访问管理控制台时，他们只能看到特定于其指定内容的项。
 
-## 如何创建自定义视图
+## 创建自定义视图
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”&gt;“服务管理员”。
 
@@ -62,12 +62,12 @@ ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
 
         -   远程锁定设备
 
-        -   密码重置
+        -   重置密码
 
 当你配置的管理员下次打开 Intune 管理控制台时，他们将获得你指定的访问级别。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

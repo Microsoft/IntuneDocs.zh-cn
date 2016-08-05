@@ -1,10 +1,10 @@
 ---
-title: "根据国际移动设备标识 (IMEI) 号码指定公司拥有的设备 | Microsoft Intune"
-description: 
+title: "指定 IMEI 号码 | Microsoft Intune"
+description: "Microsoft Intune 可让管理员为移动设备平台导入 IMEI 号码以帮助识别公司自有的移动设备"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 590b8bc5a307e238ba41d32f98f6878daebf1185
-ms.openlocfilehash: 7df281a3e35ac563f7b82e4b13407b413f8a7e4a
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 4e2092182dbda4523c19afeabc34aa0166962c40
 
 
 ---
 
 # 根据国际移动设备标识 (IMEI) 号码指定公司拥有的设备
-Microsoft Intune 让管理员可以导入具有 IMEI 号码的移动设备平台的国际移动设备标识 (IMEI) 号码，以帮助指定公司拥有的移动设备。 在 Intune 中注册后，可以在**组** > **概述** > **所有设备** > **公司预注册的设备** > **通过 IMEI (所有平台)**下查看导入了 IMEI 号码的设备。
+Microsoft Intune 让管理员可以导入具有 IMEI 号码的移动设备平台的国际移动设备标识 (IMEI) 号码，以帮助指定公司拥有的移动设备。 在 Intune 中注册后，可以在“**组** > **概述** > **所有设备**”下查看导入了 IMEI 号码的设备。 “**设备组**”列表在“**所有权**”列中显示导入的 IMEI 号码为“**公司**”的设备。
 
 1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，选择**组**&gt;**所有设备**&gt;**所有企业预注册设备**&gt;**按 IMEI (所有平台)**，然后单击**添加设备...**。 可以通过两种方式添加设备：
 
@@ -49,6 +49,6 @@ Microsoft Intune 让管理员可以导入具有 IMEI 号码的移动设备平台
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

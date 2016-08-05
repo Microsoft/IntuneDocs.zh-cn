@@ -3,8 +3,8 @@ title: "从公司门户网站远程锁定设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 48681950f23aaf4ce13418699fd80a5914f13e89
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 17f4b2a88fdd5976be842b22881f08e6e29e5343
 
 
 ---
@@ -43,15 +43,19 @@ Windows Phone 8。0 | 不支持
 
 2.  点击**远程锁定**。
 
+    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3.  阅读警告消息，指示将锁定你的设备，然后点击“**远程锁定**”使公司门户网站尝试锁定你的设备。
+
     一旦点击“远程锁定”，将出现“远程锁定挂起”状态。  “远程锁定”成功后，状态将更改为“远程锁定成功”。
 
     该“远程锁定”状态将在以下三个位置中显示：
 
-    * 网站的通知区域。 
+    * 网站的通知区域。
     * 设备的“详细信息”页。
     * 该页上“我的设备”部分显示设备名称的磁贴。
 
-    如果看到“远程锁定失败”的通知，请等待几分钟，然后再次尝试锁定设备。 一旦点击重试，状态将变回“远程锁定挂起”。 
+    如果看到“远程锁定失败”的通知，请等待几分钟，然后再次尝试锁定设备。 一旦点击重试，状态将变回“远程锁定挂起”。
 
     如果重试不起作用，请联系你的 IT 管理员以获取帮助。 如果使用“远程锁定”后找到了设备并希望对其进行解锁，则只需输入你的密码。
 
@@ -61,6 +65,7 @@ Windows Phone 8。0 | 不支持
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

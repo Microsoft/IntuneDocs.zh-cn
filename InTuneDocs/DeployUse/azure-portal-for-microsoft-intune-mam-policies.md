@@ -3,8 +3,8 @@ title: "用于 MAM 策略的 Azure 门户 | Microsoft Intune"
 description: "使用 Azure 门户创建移动应用管理策略。 此处创建的策略可以应用于在 Intune 中注册或未注册的设备。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 22aea1a9a2ff55ae7a8a115fae31b1358305a4a5
 
 
 ---
@@ -40,13 +40,13 @@ Azure 门户支持为以下应用创建 MAM 策略：
 
     ![Azure 门户登录页的屏幕截图](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  成功登录后，你将看到“仪表板”。 “仪表板”页附带一组默认磁贴，你可以删除磁贴和添加新的磁贴，以自定义该页面。
+2.  成功登录后，你将看到“仪表板”。 可以自定义“**仪表板**”页。
 
     ![Azure 门户仪表板的屏幕截图](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  从**浏览**菜单中查找 **Intune**。![突出显示 Intune 的浏览菜单的屏幕截图](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  单击**Intune>Intune 移动应用管理>设置**。
+4.  选择“**Intune > Intune 移动应用管理 > 设置**”。
 
     ![“Intune 移动应用程序管理”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -61,6 +61,6 @@ Azure 门户支持为以下应用创建 MAM 策略：
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

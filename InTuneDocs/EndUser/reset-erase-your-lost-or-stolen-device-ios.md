@@ -3,8 +3,8 @@ title: "重置（清除）丢失或被盗 iOS 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/09/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: f6e7e40973428762995feceac109a8367813dadd
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
 
 ## 使用公司门户应用重置设备
 
-1.  在浏览器中，打开你的公司门户，并登录到你的工作单位帐户。
+1.  从另一个已注册的设备，打开公司门户应用，并使用工作或学校帐户登录。
 
 2.  在“我的设备”下，选择丢失或被盗的设备。
 
@@ -40,7 +40,7 @@ ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
 
 可以使用以下步骤或观看此视频：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/3rrXe8XmtgU" frameborder="0" allowfullscreen></iframe>
 
 1.  在[公司门户网站](http://portal.manage.microsoft.com)中，选择要擦除的设备。
 
@@ -52,6 +52,7 @@ ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

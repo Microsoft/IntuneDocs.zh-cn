@@ -3,7 +3,7 @@ title: "Microsoft Intune 公司门户 |Microsoft Intune"
 description: "设置 Intune 公司门户"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: b7c8cc22f744449ce83084be88cfb4547e28779b
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 743be083ca9e8bed989982092f103b18f8f73582
 
 
 ---
@@ -28,7 +28,7 @@ Intune 公司门户是一种向用户提供公司数据和应用程序访问的�
 -   **公司门户应用**：在使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].管理的设备上可用的一个应用程序。 深入了解适用于 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) 和 [Windows](/Intune/EndUser/using-your-windows-device-with-intune)的公司门户应用。
 
 
-- **公司门户网站**：通过[支持的浏览器](supported-web-browsers.md)提供访问的一个网站。 URL 为 [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx)。 有关此网站的详细信息，请参阅[使用 Intune 公司门户网站](/Intune/EndUser/using-the-intune-company-portal-website)。
+- **公司门户网站**：从[支持的浏览器](supported-web-browsers.md)访问的网站，使最终用户能够从平台特定的公司门户应用完成大多数相同的任务。 URL 为 [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com)。 有关此网站的详细信息，请参阅[使用 Intune 公司门户网站](/Intune/EndUser/using-the-intune-company-portal-website)。
 
 在公司门户中用户可执行的一些任务有：
 
@@ -53,6 +53,6 @@ Intune 公司门户是一种向用户提供公司数据和应用程序访问的�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

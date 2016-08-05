@@ -3,7 +3,7 @@ title: "使用 PSK 的 Wi-Fi | Microsoft Intune"
 description: "使用自定义配置创建具有预共享密钥的 Wi-Fi 配置文件。"
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
+ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
+ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 
 
 
@@ -40,12 +40,15 @@ ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
 
    c.   **数据类型**：设置为“String(XML)”
 
-   d.   **OMA-URI**:/Vendor/MSFT/Wi-Fi/Profile/<SSID>/Settings
+   d.   **OMA-URI**： 
+        
+- **对于 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+- **对于 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
 注意：请务必在开头包括点字符。
 
 SSID 是你为其创建策略的 SSID。 例如，
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e.    值字段：这是粘贴 XML 代码的位置。 此处为一个示例。 每个值都应适于你的网络设置。 参阅代码的注释部分以获取一些指针。
 
@@ -197,6 +200,6 @@ SSID 是你为其创建策略的 SSID。 例如，
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

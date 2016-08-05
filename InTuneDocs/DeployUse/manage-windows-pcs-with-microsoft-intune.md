@@ -1,26 +1,26 @@
 ---
-title: "使用 Intune 电脑客户端管理 Windows 电脑 | Microsoft Intune"
-description: 
+title: "使用 Intune 客户端管理 Windows 电脑 | Microsoft Intune"
+description: "安装 Intune 客户端软件来管理 Windows 电脑。"
 keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e09381bbcf073baa67a431546059272e629b5423
-ms.openlocfilehash: d22714f7b6eda1632892785568463fc5bafce8d0
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
 
 
 ---
 
 # 使用 Intune 电脑客户端软件管理 Windows 电脑
-你可以通过安装 Intune 客户端软件管理 Windows 电脑，而无需[将 Windows 电脑注册为移动设备](set-up-windows-device-management-with-microsoft-intune.md)。 
+你可以通过安装 Intune 客户端软件管理 Windows 电脑，而无需[将 Windows 电脑注册为移动设备](set-up-windows-device-management-with-microsoft-intune.md)。
 
 Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对象 (GPO) 执行方式类似的策略来管理 Windows PC。 如果你要使用 Intune 管理 Active Directory 加入域的计算机，则应该[确保 Intune 策略不与组织中存在的任何 GPO 冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 
@@ -86,6 +86,6 @@ Intune 客户端代理通常在后台静默运行，无需许多用户交互或�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

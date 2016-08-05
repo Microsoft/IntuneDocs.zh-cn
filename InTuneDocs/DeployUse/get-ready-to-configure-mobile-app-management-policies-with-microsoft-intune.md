@@ -3,8 +3,8 @@ title: "准备好配置 MAM 策略 | Microsoft Intune"
 description: "本主题介绍可以创建移动应用管理策略之前的先决条件和用户设置。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: ca84a9ce4a1a418c1107f11dbb66cf64362a77f5
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
 
 
 ---
@@ -79,11 +79,13 @@ Azure 门户是用于创建 MAM 策略的新管理控制台。 我们建议你�
 
     ![Office 门户中的“活动用户”页](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Office 门户中的“编辑用户”页](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  若要赋予用户访问 Office 门户、Azure AD 门户和 Azure 门户的权限，请将“**全局管理员**”角色分配给此用户。
 
     ![Office 门户中用于编辑用户角色的页面](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  MAM 策略已部署到 Azure Active Directory 中的用户组。 若要创建用于 MAM 策略的用户组，请转到 Office 门户中的“**组**”页，然后单击 **+** 图标，以创建新的安全组。  键入名称和描述，然后单击“**创建**”。 创建组后，你可以通过单击“**编辑成员**”向该组添加用户。 即在 Azure Active Directory 中创建了安全组。
+5.  MAM 策略已部署到 Azure Active Directory 中的用户组。 若要创建用于 MAM 策略的用户组，请转到 Office 门户中的“**组**”页，然后在顶部菜单中选择“**添加组选项**”，以创建新的安全组。  键入名称和描述，然后单击“**创建**”。 创建组后，你可以通过单击“**编辑成员**”向该组添加用户。 即在 Azure Active Directory 中创建了安全组。
 
     ![Office 门户中的安全组页](../media/AppManagement/OfficePortal_CreateGroups.png)
 
@@ -123,6 +125,6 @@ Azure 门户是用于创建 MAM 策略的新管理控制台。 我们建议你�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

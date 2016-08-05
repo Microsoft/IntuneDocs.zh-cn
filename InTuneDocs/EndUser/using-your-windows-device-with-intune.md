@@ -3,8 +3,8 @@ title: "通过 Intune 使用 Windows 设备 | Microsoft Intune"
 description: "指向在 Intune 中注册设备时，你可以在你的 Windows 设备上执行的任务的链接列表"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
-ms.openlocfilehash: c1fe0db8967ad2c483718bdc908097967be8b459
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 85e6b4c4e507b83ba4a5f104e552e5a4f1fd68f2
 
 
 ---
 
 # 通过 Intune 使用 Windows 设备
 
-请使用以下步骤执行公司使用 Microsoft Intune 时需要在 Windows 设备或计算机上执行的任务。
+此网页包含指向最终用户在其 Intune 管理的设备上可以执行的所有任务的链接。 IT 管理员可以参阅此信息以查看用户执行各种任务时（按类别分组为：与注册相关的信息、管理任务和合规性问题）遵循的步骤。
 
 ## 公司门户应用安装和 Intune 注册
 
@@ -57,8 +57,6 @@ ms.openlocfilehash: c1fe0db8967ad2c483718bdc908097967be8b459
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

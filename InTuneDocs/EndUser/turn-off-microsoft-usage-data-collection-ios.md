@@ -3,8 +3,8 @@ title: "关闭针对 iOS 的 Microsoft 用法数据收集 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
-ms.openlocfilehash: 6e43167afc58e9c8592bf53c090b788c381fbf4f
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 835cab1f6d72d7a8621791f537c7807e2ed35045
 
 
 ---
@@ -23,16 +23,19 @@ ms.openlocfilehash: 6e43167afc58e9c8592bf53c090b788c381fbf4f
 
 # 关闭 Microsoft 使用情况数据收集
 
-为了改进其产品和服务，Microsoft 会自动收集有关公司门户应用的可靠性和性能以及使用情况的匿名数据。 
+为了改进其产品和服务，Microsoft 会自动收集有关公司门户应用的可靠性和性能以及使用情况的匿名数据。
 
-通过使用公司门户应用中的**用法数据**设置，可在 iOS 设备上关闭此数据的收集。 IT 管理员既不能控制该数据的收集，也不能更改你对此设置的选择。
+若要关闭 iOS 设备上的使用情况数据收集，请转至“**设置**”，点击“**公司门户**”，然后关闭“**使用情况数据**”设置。
 
-仍需帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+IT 管理员既不能控制该数据的收集，也不能更改你对此设置的选择。
+
+仍需帮助？ 请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

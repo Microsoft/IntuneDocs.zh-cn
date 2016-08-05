@@ -3,7 +3,7 @@ title: "管理公司拥有的设备 | Microsoft Intune"
 description: "使用多种方法对公司自有设备 (COD) 进行管理，具体取决于设备、设备购买的方式以及组织的需要。"
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
 
 
 ---
 
 # 在 Microsoft Intune 中注册公司所有的设备
-通过 Intune，可采用多种方法来管理组织或公司拥有的设备 (COD)，这具体取决于设备、其购买方式及组织需求。
+通过 Intune，可采用多种方法来管理组织或公司拥有的设备 (COD)，这具体取决于设备、其购买方式及组织需求。 也可以按“自带设备办公”(BYOD) 方案中所述安装公司门户应用，注册和管理公司自有设备。
 
 ## 公司所有的 iOS 设备
 这些注册方法非常适用于“选择你自己的设备”(CYOD) 的情况，即组织为用户购买设备，但想要保持对设备的管理。 如果组织已购买 iOS 设备，那么可以预配置注册，以便在用户第一次打开此设备时就可以对它进行管理。 针对[直接](ios-direct-enrollment-in-microsoft-intune.md)注册或[设置助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)注册，Intune 支持通过 [Apple 的设备注册计划 (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) 或者是使用 Mac 计算机上运行的 Apple Configurator 工具的注册。
@@ -53,6 +53,6 @@ ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

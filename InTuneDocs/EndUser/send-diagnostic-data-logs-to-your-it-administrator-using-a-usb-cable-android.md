@@ -3,8 +3,8 @@ title: "使用 USB 电缆将诊断数据日志发送给 IT 管理员 | Microsoft
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6cd0c267dc93d08369ecfb10939af8140b3c57e9
 
 
 ---
@@ -25,7 +25,9 @@ ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 如果你想要将数据日志发送给你的 IT 管理员以获取问题的一些帮助，你可以通过使用计算机和 USB 电缆发送日志，而不是从你的移动设备发送日志。 操作方法如下：
 
-1.  开始之前，请确保你有 IT 管理员的电子邮件地址。 它通常列示在公司门户网站上或公司门户应用中。
+1.  在错误屏幕上，点击“**发送信息**”。 当看到一条消息询问要使用哪种方法来发送日志时，选择将文件保存到设备的选项。
+
+2.  在开始之前，请确保你有 IT 管理员的电子邮件地址，通常列在[公司门户网站](http://portal.manage.microsoft.com)或公司门户应用中。
 
 2.  使用 USB 电缆将 Android 设备连接到计算机。
 
@@ -33,12 +35,13 @@ ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 4.  将所有文件附加到一封电子邮件并将它们发送给 IT 管理员。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

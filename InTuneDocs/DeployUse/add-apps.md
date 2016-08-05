@@ -3,7 +3,7 @@ title: "添加应用 | Microsoft Intune"
 description: "在开始使用 Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 3b35e835634733f542b7ddaf2ede2ad2464721fd
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 8bc18a2f77a2ebcc4a3a2fc4d0902e745991dfae
 
 
 ---
 
 # 使用 Microsoft Intune 添加应用
-在开始使用 Microsoft Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。 这些概念将帮助你了解哪些应用可以部署到哪个平台，并了解这样做之前必须具备的先决条件。
+在开始使用 Microsoft Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。 这些概念将帮助你了解哪些应用可以部署到哪些平台。 此外，可以帮助你了解部署应用之前必须到位的先决条件。
 
 ## 可以部署的应用类型
 
@@ -28,28 +28,31 @@ ms.openlocfilehash: 3b35e835634733f542b7ddaf2ede2ad2464721fd
 
 |应用类型|详细信息|
 |----------------|-------|
-|**Windows Installer（&#42;.exe、&#42;.msi）**|这种类型的应用必须支持无用户输入的无提示安装。 你的应用文档应包含用于无提示安装应用的相关命令行选项（如 **/q**）。<br>可在[此处](https://support.microsoft.com/en-us/kb/227091)找到公共命令行选项的列表。<br><br>你为应用安装程序文件指定的位置中必须提供应用的安装程序所需的所有其他文件和文件夹。<br><br>大多数情况下，Windows Installer (.msi) 和 Windows Installer 修补程序 (.msp) 文件不需要任何命令行参数即可通过 Intune 进行安装。 请查看应用文档。<br><br>如果需要命令行参数，则必须以“名称=值对”（如 TRANSFORMS=custom_transform.mst）形式输入参数。|
-|**Android 应用包（&#42;.apk 文件）**|若要部署 Android 应用，你必须拥有有效的 .apk 包|
-|**iOS 应用包（&#42;.ipa 文件）**|若要部署 iOS 应用，你必须拥有有效的 .ipa 包。<br><br>.ipa 包必须由 Apple 签名，并且在预配配置文件中指明的到期日期必须有效。 Intune 可分发企业证书 iOS 应用程序。<br>并非所有 Apple 开发人员证书应用都受支持。<br><br>必须向 iOS Developer Enterprise Program 注册你的公司。<br><br>确保组织的防火墙允许访问 iOS 设置和认证网站。<br><br>你不需要使用该应用部署清单文件 (.plist)。|
-|**Windows Phone 应用包（&#42;.xap、.appx、.appxbundle）**|若要部署应用，你需要一个企业移动代码签名证书。<br>有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)。|
-|**Windows 应用包 (.appx、.appxbundle)**|若要部署应用，你需要一个企业移动代码签名证书。<br>有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows 设备管理](set-up-windows-device-management-with-microsoft-intune.md)。|
-|**通过 MDM 的 Windows Installer (&#42;.msi)**|允许你创建基于 Windows Installer 的应用，并将其部署到运行 Windows 10 的已注册电脑（MDM 托管）。<br /><br />只能上载扩展名为 .msi 的单个文件。<br><br>该文件的产品代码和产品版本将用于应用检测。<br><br>将使用该应用的默认重启行为。 Intune 不控制此行为。<br><br>将为单个用户安装每个用户 MSI 包。<br><br>将为设备上的所有用户安装每个计算机 MSI 包。<br><br>当前仅为设备上的所有用户安装双模式 MSI 包。<br><br>当每个版本的 MSI 产品代码相同时，支持应用更新。<br>
+|**Windows Installer（&#42;.exe、&#42;.msi）**|这种类型的应用必须支持无用户输入的无提示安装。 你的应用文档应包含用于无提示安装应用的相关命令行选项（如 **/q**）。 你可以在 [Microsoft Windows Installer 工具的命令行开关](https://support.microsoft.com/en-us/kb/227091)中找到常见命令行选项的列表。<br><br>应用的安装程序所需的所有其他文件和文件夹都必须从你为应用安装程序文件指定的位置中提供。<br><br>大多数情况下，Windows Installer (.msi) 和 Windows Installer 修补程序 (.msp) 文件不需要 Intune 安装任何命令行参数。 请查看应用文档。<br><br>如果需要命令行参数，则必须以“名称=值对”（如 TRANSFORMS=custom_transform.mst）形式输入参数。|
+|**Android 应用包 (&#42;.apk)**|若要部署 Android 应用，你必须拥有有效的 .apk 包。|
+|**iOS 应用包 (&#42;.ipa)**|若要部署 iOS 应用，你必须拥有有效的 .ipa 包。<br><br>.ipa 包必须由 Apple 签名，并且预配配置文件中的到期日期必须有效。 Intune 可分发企业证书 iOS 应用程序。<br><br>并非所有 Apple 开发人员证书应用都受支持。<br><br>必须向 iOS Developer Enterprise Program 注册你的公司。<br><br>确保组织的防火墙允许访问 iOS 预配和认证网站。<br><br>你不需要使用该应用部署清单文件 (.plist)。|
+|**Windows Phone 应用包（&#42;.xap、.appx、.appxbundle）**|若要部署应用，你需要一个企业移动代码签名证书。 有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)。|
+|**Windows 应用包 (.appx、.appxbundle)**|若要部署应用，你需要一个企业移动代码签名证书。 有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows 设备管理](set-up-windows-device-management-with-microsoft-intune.md)。|
+|**通过 MDM 的 Windows Installer (&#42;.msi)**|你可使用此应用创建基于 Windows Installer 的应用，并将其部署到运行 Windows 10 的已注册电脑。 通过移动设备管理 (MDM) 管理这些电脑。<br /><br />只能上载扩展名为 .msi 的单个文件。<br><br>该文件的产品代码和产品版本将用于应用检测。<br><br>将使用该应用的默认重启行为。 Intune 不控制此行为。<br><br>将为单个用户安装每个用户 MSI 包。<br><br>将为设备上的所有用户安装每个计算机 MSI 包。<br><br>当前仅为设备上的所有用户安装双模式 MSI 包。<br><br>当每个版本的 MSI 产品代码相同时，支持应用更新。<br>
 所有软件安装程序的应用类型都上载到你的云存储空间。
 
 ### **外部链接**
-在具有下列项目时使用：
-- 让用户能从应用商店下载应用的 **URL**。
-- 指向基于 Web 的应用的**链接**，该应用从 Web 浏览器中运行。
+在你具有以下项时使用外部链接：
+- 让用户能从应用商店下载应用的 URL。
+- 指向基于 Web 的应用的链接，该应用从 Web 浏览器中运行。
 
 基于外部链接的应用不存储在 Intune 云存储空间中。
 ### **来自应用商店的托管 iOS 应用程序**
-允许你管理和部署来自应用商店的免费 iOS 应用。 还允许你将[移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)与[兼容的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)相关联，并在管理员控制台中查看它们的状态。<br /><br />托管 iOS 应用不存储在 Intune 云存储空间中。
+你可以使用托管 iOS 应用管理和部署来自应用商店的免费 iOS 应用。 你还可使用托管 iOS 应用将[移动应用管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)与[兼容的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)相关联，并在管理员控制台中查看它们的状态。<br /><br />托管 iOS 应用不存储在 Intune 云存储空间中。
 
 > [!TIP]
-> 在将[移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md)为 Intune 之前，移动设备选项将不可用。
+> 在[设置 MDM 机构](get-ready-to-enroll-devices-in-microsoft-intune.md)为 Intune 之前，移动设备选项将不可用。
 
 ## Intune 软件发行者
-从 Intune 管理员控制台中添加或修改应用时，将启动“**Microsoft Intune 软件发行者**”。 从发行者中，你可选择并配置一个软件安装程序类型，该安装程序类型将上载要存储在 Intune 云存储中的应用（适用于计算机的程序或适用于移动设备的应用），或者链接到在线商店或 Web 应用程序。
+从 Intune 管理员控制台中添加或修改应用时，将启动“Microsoft Intune 软件发行者”。 从发行者中，可以选择并配置以下软件安装程序类型：
+
+- 上载应用（适用于计算机的程序或移动设备的应用）以存储在 Intune 云存储中。
+- 链接到在线商店或 Web 应用程序。
 
 开始使用软件发行者之前，必须安装 [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) 的完整版本。 安装之后，可能必须重启计算机，然后软件发行者才会正确打开。
 
@@ -58,28 +61,27 @@ ms.openlocfilehash: 3b35e835634733f542b7ddaf2ede2ad2464721fd
 
 可以在“**管理员**”工作区的“**存储空间使用量**”节点中查看所使用的空间量。
 
-### 云存储空间的要求
+云存储空间的要求如下：
 
--   确保所有应用安装文件位于同一文件夹。
-
+-   所有应用安装文件必须位于同一文件夹。
 -   上传的任意文件的最大文件大小是 2 GB。
 
 
 ## 对通用 Windows 平台 (UWP) 应用的支持
 Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注册表项 **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** 必须将值设置为“1”才能启用旁加载。
 
-如果未配置此注册表项，Intune 在你第一次向设备部署应用时会自动将此值设置为“1”。 如果将此值设置为“0”，则 Intune 将无法自动更改此值，业务线应用部署将失败。
+如果未配置此注册表项，Intune 在你第一次向设备部署应用时会自动将此值设置为“1”。 如果将此值设置为 **0**，则 Intune 将无法自动更改此值，业务线应用部署将失败。
 
-通用 Windows 平台业务线应用必须使用代码签名证书签名，并且该证书应在应用部署到的每个设备上受信任。 你可以使用内部 PKI 基础结构中的证书，也可以使用设备上安装的第三方公共根证书中的证书。
+通用 Windows 平台业务线应用必须使用代码签名证书签名，并且该证书应在应用部署到的每个设备上受信任。 你可以使用内部公钥基础结构 (PKI) 中的证书，也可以使用设备上安装的第三方公共根证书中的证书。
 
 在 Windows 10 移动版设备上，可以使用非 Symantec 代码签名证书对通用 **.appx** 应用签名。 对于 **.xap** 应用以及要在 Windows 10 移动版设备上安装且针对 Windows Phone 8.1 生成的 **.appx** 包，必须使用 Symantec 代码签名证书。
 
-## 后续步骤 
+## 后续步骤
 
-接下来，你需要先在 Intune 控制台中添加应用，然后才能部署这些应用。 你可以为[已注册设备](add-apps-for-mobile-devices-in-microsoft-intune.md)或[使用 Intune 客户端软件管理的 Windows 电脑](add-apps-for-windows-pcs-in-microsoft-intune.md)添加应用。
+你需要先在 Intune 控制台中添加应用，然后才能部署这些应用。 你可以为[已注册设备](add-apps-for-mobile-devices-in-microsoft-intune.md)或[使用 Intune 客户端软件管理的 Windows 电脑](add-apps-for-windows-pcs-in-microsoft-intune.md)添加应用。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

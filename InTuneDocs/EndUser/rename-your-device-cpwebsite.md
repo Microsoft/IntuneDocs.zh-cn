@@ -3,18 +3,19 @@ title: "从公司门户网站重命名设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 301fdc58dbe827fa21ba7a76457ff5584bd2ff69
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: dc9d01cb24fbdd594c7f84b72d244d81a08d4384
 
 
 ---
@@ -30,7 +31,7 @@ ms.openlocfilehash: 301fdc58dbe827fa21ba7a76457ff5584bd2ff69
 
 2.  点击**重命名**。
 
-    ![重命名设备](./media/iwp-1-tap-reset-passcode.png)
+    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  在显示当前设备名称的框中，键入设备的新名称，然后点击“重命名”按钮。 你的设备现在将显示新的名称。
 
@@ -40,6 +41,7 @@ ms.openlocfilehash: 301fdc58dbe827fa21ba7a76457ff5584bd2ff69
 [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

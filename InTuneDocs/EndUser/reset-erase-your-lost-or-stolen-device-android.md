@@ -3,8 +3,8 @@ title: "重置（清除）丢失或被盗 Android 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 05/31/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9797eb4b7b18527d13fc1f0a9cbcc900d76dc54f
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: d9f31b48fb1b44a0bdf07a6eee3fe5b19f7bf610
 
 
 ---
@@ -27,12 +27,12 @@ ms.openlocfilehash: 9797eb4b7b18527d13fc1f0a9cbcc900d76dc54f
 
 若要了解重置设备时会发生什么情况，请参阅[使用公司门户重置设备会发生什么情况](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)。
 
-> [!WARNING] 
+> [!WARNING]
 > 将设备重置为出厂默认值会删除设备中的个人信息和工作单位或学校信息。
 
 ## 从公司门户应用重置设备
 
-1.  在浏览器中，打开[公司门户网站](http://portal.manage.microsoft.com)，并登录到你的工作单位或学校帐户。
+1.  从另一个已注册的设备，打开公司门户应用，并使用工作或学校帐户登录。
 
 2.  点击“我的设备”，然后选择丢失或被盗设备的名称。
 
@@ -42,7 +42,7 @@ ms.openlocfilehash: 9797eb4b7b18527d13fc1f0a9cbcc900d76dc54f
 
 可以使用以下步骤或观看此视频：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=K-Vi7lNfaMk&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6e73o7f8gxE" frameborder="0" allowfullscreen></iframe>
 
 1.  在浏览器中，打开你的[公司门户网站](http://portal.manage.microsoft.com)，并登录到你的工作帐户。
 
@@ -57,7 +57,6 @@ ms.openlocfilehash: 9797eb4b7b18527d13fc1f0a9cbcc900d76dc54f
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

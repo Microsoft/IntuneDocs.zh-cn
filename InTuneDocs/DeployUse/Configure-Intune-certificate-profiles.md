@@ -3,8 +3,8 @@ title: "配置证书配置文件 | Microsoft Intune"
 description: "了解如何创建 Intune 证书配置文件。"
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 07/21/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
 
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-3.  提供所需信息以配置 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 的受信任证书配置文件设置。 在“证书文件”设置中，导入你从发证 CA 导出的受信任的根 CA 证书 (**.cer**)。 “目标存储”设置仅适用于运行 Windows 8.1 及更高版本的设备并且该设备必须具有多个证书存储。
+3.  提供所需信息以配置 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 的受信任证书配置文件设置。 
+
+    - 在“证书文件”设置中，导入你从发证 CA 导出的受信任的根 CA 证书 (**.cer**)。 “目标存储”设置仅适用于运行 Windows 8.1 及更高版本的设备并且该设备必须具有多个证书存储。
+
+    
+    - 在“**使用者名称格式**”中选择“**自定义**”，提供自定义使用者名称格式。  
+
+        自定义格式当前支持的两个变量为**公用名 (CN)** 和**电子邮件 (E)**。 通过使用这些变量和静态字符串的组合，你可以创建自定义使用者名称格式，如本示例中所示：  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        在示例中，管理员创建了使用者名称格式，其中除了使用 CN 和 E 变量外，还使用了组织单位、组织、位置、省/直辖市/自治区和国家/地区字符串。 主题 [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)（CertStrToName 函数）中提供了受支持的字符串列表。  
 
 
 4.  完成后，请单击“保存策略” **Save Policy**。
@@ -83,6 +94,15 @@ ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 3.  按照配置文件配置页上的说明配置 SCEP 证书配置文件设置。
+    > [!NOTE]
+    > 
+    > 在“**使用者名称格式**”中选择“**自定义**”，提供自定义使用者名称格式。
+    > 
+    >  自定义格式当前支持的两个变量为公用名 (CN) 和电子邮件 (E)。 通过使用这些变量和静态字符串的组合，你可以创建自定义使用者名称格式，如本示例中所示：
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    在示例中，管理员创建了使用者名称格式，其中除了使用 *CN* 和 *E* 变量外，还使用了组织单位、组织、位置、省/直辖市/自治区和国家/地区字符串。 主题 [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)（CertStrToName 函数）中提供了受支持的字符串列表。
 
 4.  完成后，请单击“保存策略” **Save Policy**。
 
@@ -145,6 +165,6 @@ ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

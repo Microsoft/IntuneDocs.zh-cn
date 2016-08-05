@@ -3,8 +3,8 @@ title: "配置 SCEP 证书基础结构 |Microsoft Intune"
 description: "用于创建和部署 SCEP 证书配置文件的基础结构。"
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 05/16/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: e7d6bc1e06217237a79c547c9b449c1fc16aeed4
+ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
+ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
 
 ---
 # 配置 SCEP 证书基础结构
@@ -44,6 +44,8 @@ I
 从 Internet 到外围网络，从所有主机或 Internet 上的 IP 地址到 NDES 服务器，都支持 443 端口。
 
 从外围网络到受信任网络，支持域对已加入域的 NDES 服务器进行访问所需的所有端口和协议。 NDES 服务器需要证书服务器、DNS 服务器、Configuration Manager 服务器和域控制器的访问权限。
+
+建议通过代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access 代理](https://technet.microsoft.com/en-us/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>证书和模板
@@ -347,6 +349,6 @@ I
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
