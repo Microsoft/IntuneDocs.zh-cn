@@ -302,7 +302,7 @@ I
 
 ##### 启用对证书连接器的支持
 
-1.  打开“Intune 管理控制台”[](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
+1.  打开[“Intune 管理控制台”](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
 
 2.  单击**配置本地证书连接器**。
 
@@ -310,7 +310,7 @@ I
 
 ##### 下载、安装和配置证书连接器
 
-1.  打开“Intune 管理控制台”[](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
+1.  打开[“Intune 管理控制台”](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
 
 2.  下载完成后，在 Windows Server 2012 R2 服务器上运行下载的安装程序 (**ndesconnectorssetup.exe**)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 （CRP Web 服务 CertificateRegistrationSvc 运行为 IIS 中的应用程序）
 
