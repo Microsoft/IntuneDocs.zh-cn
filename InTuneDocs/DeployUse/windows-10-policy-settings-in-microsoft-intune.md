@@ -3,8 +3,8 @@ title: "Windows 10 策略设置 | Microsoft Intune"
 description: "使用本主题中列出的策略设置可帮助你为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/21/2016
+manager: angrobe
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
-ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 |**密码过期(天)**|指定必须更改设备密码之前的时间长度。|
 |**记住密码历史记录**|指定是否想要限制最终用户创建以前用过的密码。|
 |**“记住密码历史记录”** - **“防止重用以前的密码”**|指定设备记住的以前用过的密码数目。|
-|**允许图片密码和 PIN**|允许你使用图片上的简单手势或简单的 PIN 登录。<br>（仅限 Windows 10 桌面版）|
 |**当设备从空闲状态返回时需要密码**|如果启用，则用户必须输入密码以将设备从空闲状态解锁。<br>（仅限 Windows 10 移动版）|
 
 ### 加密
@@ -71,14 +70,6 @@ ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 |**支持 Microsoft 帐户**|使用户可以将 Microsoft 帐户与设备关联。|
 |**允许手动添加非 Microsoft 帐户**|使用户可以将电子邮件帐户添加到不与 Microsoft 帐户相关联的设备。|
 |**允许 Microsoft 帐户进行设置同步**|允许设备和应用设置与 Microsoft 帐户关联以在设备之间进行同步。|
-
-### 电子邮件设置
-
-|设置名|详细信息|
-|----------------|----------------------|---------------------|
-|**在 Windows Mail 应用程序中将 Microsoft 帐户设为可选**|进行这样的配置以免去在 Windows Mail 中需要使用 Microsoft 帐户这一要求。<br>仅限 Windows 10 桌面版|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 |**允许蓝牙**|允许使用设备上的蓝牙功能。|
 |**允许使用蓝牙可发现模式**|让其他已启用蓝牙的设备可发现此设备。|
 |**允许使用蓝牙广告**|允许设备通过蓝牙接收广告。|
-|**允许使用蓝牙可连接模式**|**重要提示：**Windows 10 不再支持此设置，并且将在以后删除此设置。|
 |**允许重置手机**|控制用户是否可以出厂重置其设备。|
 |**允许使用 USB 连接**|控制设备是否可以通过 USB 连接访问外部存储设备。|
 |**允许使用防盗模式**|配置是否启用 Windows 防盗模式。|
@@ -177,6 +167,7 @@ ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 |设置名|详细信息|
 |----------------|---------------|
 |**允许自动更新**|启用此设置以允许自动更新。 然后，配置以下设置之一以控制更新行为：<br /><br />**通知下载**<br /><br />**在维护时间自动安装**<br /><br />**在维护时间自动安装并重启**<br /><br />**在计划时间自动安装和重新启动****注意：**选择此选项时，还可以配置以下设置：**禁止向最终用户发送通知**和**定义计划更新的安装日期**。<br>（仅限 Windows 10 桌面版）|
+|**允许预发布功能**|允许 Microsoft 将预发行设置和功能部署到 Windows 10 设备。 你可以选择仅允许安装设置，或允许安装所有预发行设置和功能。|
 
 ## 自定义策略设置
 使用 Windows 10 和 Windows 10 移动版的 Microsoft Intune **自定义配置策略**来部署可用于控制 Windows 10 和 Windows 10 移动版设备上的功能的 OMA-URI（开放移动联盟统一资源标识符）设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
@@ -332,6 +323,6 @@ ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

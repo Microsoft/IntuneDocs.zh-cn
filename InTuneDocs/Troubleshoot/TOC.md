@@ -15,7 +15,8 @@
 ## [软件更新疑难解答](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [电子邮件配置文件疑难解答](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [条件访问疑难解答](troubleshoot-conditional-access.md)
+## [Exchange Connector 疑难解答](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

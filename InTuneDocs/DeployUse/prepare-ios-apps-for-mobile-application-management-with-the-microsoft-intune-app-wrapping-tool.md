@@ -3,8 +3,8 @@ title: "应用包装工具的包装 iOS 应用 | Microsoft Intune"
 description: "使用本题中提供的信息以了解不修改应用代码本身即可包装你的 iOS 应用的方法。 准备应用以便应用移动应用管理策略。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 05/11/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
 若要下载该工具，请参阅 [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218)。
 
 ## 步骤 1：满足使用应用包装工具的先决条件
+请阅读[此博客文章](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)了解有关先决条件以及如何对其进行设置的详细信息。
 
 |要求|更多信息|
 |---------------|--------------------------------|
 |支持的操作系统和工具集|你必须在运行 OS X 10.8.5 或更高版本的 Mac 计算机上运行应用包装工具，计算机还要安装 XCode 工具集 5 或更高版本。|
 |签名证书和预配配置文件|你必须有 Apple 签名证书和预配配置文件。 请参阅 [Apple 开发人员文档](https://developer.apple.com/)。|
-|使用应用包装工具处理应用|应用必须由你公司或独立软件供应商 (ISV) 开发并签名。 你无法使用该工具处理 Apple Store 中的应用。 应用必须针对 iOS 7.0 或更高版本编写。 应用还必须是地址无关可执行文件 (PIE) 格式。 有关 PIE 格式的更多信息，请参阅 Apple 开发人员文档。 最后，应用的扩展名必须是 **.app** 或 **.ipa** 格式。|
+|使用应用包装工具处理应用|应用必须由你公司或独立软件供应商 (ISV) 开发并签名。 你无法使用该工具处理 Apple Store 中的应用。 应用必须针对 iOS 7.1 或更高版本编写。 应用还必须是地址无关可执行文件 (PIE) 格式。 有关 PIE 格式的更多信息，请参阅 Apple 开发人员文档。 最后，应用的扩展名必须是 **.app** 或 **.ipa** 格式。|
 |包装工具无法处理的应用|加密应用、未签名应用和带有扩展文件属性的应用。|
 |使用 Azure Active Directory 库 (ADAL) 的应用|如果你的应用使用 ADAL，则应用结合的 ADAL 版本必须高于或等于 1.0.2，且开发人员必须授予其应用访问 Intune 移动应用程序管理资源的权限。<br /><br />有关如何使用 ADAL 的详细信息，请参阅本文中的[有关使用 Azure Active Directory 库的应用的信息](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library)。|
 |设置应用权利|在包装应用之前，必须设置权利，以便为应用提供除平常所授权限和功能以外的其他权限和功能。 有关说明，请参阅[设置应用权利](#setting-app-entitlements)。|
@@ -292,6 +293,6 @@ ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

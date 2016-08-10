@@ -3,7 +3,7 @@ title: "查找 per-app VPN 的包系列名称 (PFN) |Microsoft Intune"
 description: "查找 PFN，以便你可以配置每应用 VPN。"
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,17 +13,17 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a049127d79098bfb8992055a0a8b20fbfafd8c9
-ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
 
 
 ---
 
-# 查找 per-app VPN 配置的产品系列名称 (PFN)
+# 查找 per-app VPN 配置的包系列名称 (PFN)
 
 有两种方法来查找 PFN，以便你可以配置 per-app VPN。
 
-## 查找安装在 Windows 10 计算机上的应用的 PFN 
+## 查找安装在 Windows 10 计算机上的应用的 PFN
 
 如果你正在使用的应用已安装在 Windows 10 计算机上，则可以使用 [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell cmdlet 来获取 PFN。
 
@@ -74,7 +74,7 @@ Get-AppxPackage 的语法是：
 4.  在另一个选项卡上，粘贴下面的 URL，`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`，并将 `<app id>` 替换为从 https://www.microsoft.com/en-us/store/apps 获取的应用 ID，即步骤 3 中 URL 末尾的一系列字母。 在本示例中，以 OneNote 为例，粘贴：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
 
 你所需的信息会在边缘显示；在 Internet Explorer 中，单击**打开**来查看该信息。 PFN 值会在第一行给出。 本示例的结果如下所示：
- 
+
 
 `{`
 `  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",`
@@ -85,7 +85,6 @@ Get-AppxPackage 的语法是：
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

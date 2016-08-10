@@ -3,7 +3,7 @@ title: "准备好配置 MAM 策略 | Microsoft Intune"
 description: "本主题介绍可以创建移动应用管理策略之前的先决条件和用户设置。"
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: aeaa64124384a71126eeca7339416b80d395d07d
 
 
 ---
@@ -58,7 +58,7 @@ Azure 门户是用于创建 MAM 策略的新管理控制台。 我们建议你�
 -   以下事项需要 Office 365 订阅：
   - 将 MAM 策略应用于具有多个标识支持的应用。
   - 创建 SharePoint Online 和 Exchange Online 工作帐户。 不支持 Exchange 内部部署和 SharePoint 内部部署。
--   用于新式验证的 Skype for Business Online 设置。 有关详细信息，请参阅[启用新式验证](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md)。
+-   用于新式验证的 Skype for Business Online 设置。 有关详细信息，请参阅[启用新式验证](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
 
 
 - Azure Active Directory (Azure AD) 用于创建用户。 当用户打开应用并输入其凭据时，Azure AD 对用户进行身份验证。
@@ -125,6 +125,6 @@ Azure 门户是用于创建 MAM 策略的新管理控制台。 我们建议你�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

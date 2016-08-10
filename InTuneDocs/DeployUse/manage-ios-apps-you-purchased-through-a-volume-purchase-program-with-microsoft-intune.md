@@ -3,8 +3,8 @@ title: "管理批量购买的 iOS 应用 | Microsoft Intune"
 description: "使用 Intune 通过以下操作管理从 Apple 批量购买的应用：从应用商店导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/13/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 6e179ce99dbda518dbefcaab6f502cc24498d7a3
+ms.sourcegitcommit: c64fb33893027d0000cae4cc3d9c3ed28cc38901
+ms.openlocfilehash: 5db23913601973630a4d013aae86cf26af337c4b
 
 
 ---
@@ -64,6 +64,9 @@ Microsoft Intune 可帮助你按以下操作管理通过此程序购买的应用
 
 2.  选择你想要部署的应用，选择“管理部署”，然后使用[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)主题中的说明完成应用的上传、创建和部署。
 
+> [!TIP]
+> 必须选择**必需**的部署操作。 当前不支持可用安装。
+
 在应用部署为**必须**安装时，安装该应用的每个用户都将使用一个许可证。
 
 若要回收许可证，必须将部署操作更改为“卸载”。 应用卸载后，将回收许可证。
@@ -87,6 +90,6 @@ Microsoft Intune 可帮助你按以下操作管理通过此程序购买的应用
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

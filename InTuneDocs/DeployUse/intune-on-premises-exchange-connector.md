@@ -3,8 +3,8 @@ title: "本地 EAS 的 Exchange 连接器 | Microsoft Intune"
 description: "使用连接器工具启用 Intune 管理控制台和本地 Exchange ActiveSync MDM 的 Exchange Server 之间的通信。"
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 # 安装 Intune On-Premises Exchange Connector
 
 
-若要设置连接以使 Microsoft Intune 能够与托管移动设备邮箱的 Exchange 服务器通信，你必须从 Intune 管理员控制台下载和配置 On-Premises Connector 工具。
+若要设置连接以使 Microsoft Intune 能够与托管移动设备邮箱的 Exchange 服务器通信，你必须从 Intune 管理员控制台下载和配置 On-Premises Connector 工具。 Intune 仅支持每个订阅中存在一个 Exchange Connector 连接（任意类型）。
 
 ## 本地连接器的要求
 下表列出了你在其中安装 On-Premises Exchange Connector 的计算机的要求。
@@ -30,7 +30,7 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 |要求|更多信息|
 |---------------|--------------------|
 |操作系统|Intune 支持在运行任何版本的 Windows Server 2008 SP2 64 位、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的计算机上安装 On-Premises Exchange Connector。<br /><br />该连接器在任何服务器核心安装上都不受支持。|
-|Microsoft Exchange 版本|On-Premises Connector 需要 Microsoft Exchange 2010 SP1 或更高版本。|
+|Microsoft Exchange 版本|本地连接器需要 Microsoft Exchange 2010 SP1 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是**新**配置还是**旧**配置，请与帐户管理员联系。|
 |移动设备管理机构| [将移动设备管理机构设置为 Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)。|
 |硬件|安装连接器的计算机至少需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间的硬件。|
 |Active Directory 同步|你必须[设置 Active Directory 同步](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用任一 Connector 将 Intune 连接到 Exchange 服务器。|
@@ -131,6 +131,6 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

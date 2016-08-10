@@ -3,8 +3,8 @@ title: "Windows PC 管理功能 | Microsoft Intune"
 description: "了解使用 Intune 客户端软件管理 Windows 电脑时 Intune 的功能。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
 
 -   **反恶意软件保护** - Intune 包括 Endpoint Protection，它有助于保护你的电脑免遭恶意软件侵害。
 
--   **远程协助** - Intune 允许用户与 IT 支持人员联系，随后他们可使用 Intune 附带的远程桌面功能来提供协助<!--- (requires TeamViewer software)--->。
+-   **远程协助** - Intune 允许用户与 IT 支持人员联系，随后他们可使用 Intune 附带的远程桌面功能来提供协助（需要 TeamViewer 软件）。
 
 -   **软件许可证管理** - 跟踪有多少软件许可证可用，以及有多少可用的许可证已使用。
 -   **应用部署** - 将软件部署到你管理的 PC。 在使用客户端软件管理 PC 时，一些应用管理功能不可用。
@@ -48,7 +48,7 @@ Intune 可以管理运行以下 Windows 版本（x86 和 x64）的 PC：
 
 -   **Windows 8.1** - 专业版和企业版。
 
-- **Windows 10** - 家庭版、专业版、教育版和企业版。
+- **Windows 10** - 专业版、教育版和企业版。
 
 
 ## 最低硬件需求
@@ -74,6 +74,6 @@ Intune 可以管理运行以下 Windows 版本（x86 和 x64）的 PC：
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # 使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理
+若要设置你的 Windows 设备，可在[此处](../enduser/using-your-windows-device-with-intune.md)找到帮助。
+
 在可以使用 Microsoft Intune 管理 Windows 10 移动版或 Windows Phone 设备之前，设备必须能够与 Intune 通信。 若要简化此操作，可以创建 DNS 记录，这样用户无需输入服务器地址。 以下步骤介绍了如何简化用户注册。  
 
 大多数情况下，用户可以从 Windows 应用商店安装公司门户应用。 如果你管理 Windows Phone 8.0 设备或需要将公司门户部署到 Windows Phone 设备，则必须下载公司门户应用并对其进行签名。 请参阅[设置 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
@@ -50,12 +52,16 @@ ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
 
     3.  在**指定一个已验证的域名**框中键入公司网站结果验证的域的 URL，然后单击**测试自动检测**。
 
+    4.  你的用户将需要了解注册其设备的方式以及他们纳入管理之后会出现的情况。
+        - [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [适用于 Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 无需任何额外的工作，除非你要将公司门户部署到设备。  可以安全地忽略管理控制台中的步骤 2 和 3。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

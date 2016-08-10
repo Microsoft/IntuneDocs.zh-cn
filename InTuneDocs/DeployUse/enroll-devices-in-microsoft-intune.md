@@ -3,7 +3,7 @@ title: "注册设备 | Microsoft Intune"
 description: "移动设备管理 (MDM) 使用注册将设备纳入管理并允许访问资源。"
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6256b1ed5edb72bf9f623555a4c6e3fddb864b32
-ms.openlocfilehash: 71f0637a1cb6fdafb590ca274fcc0f80707ed6ce
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
 
 
 ---
@@ -89,7 +89,7 @@ USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出�
   - 对电子邮件和公司数据的条件性访问
   - 公司门户应用
 
-[用户关联](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#user-affinity-for-ios-corporate-owned-devices-using-the-company-portal)（[返回到表](#overview-of-device-enrollment-methods)）
+[用户关联](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices)（[返回到表](#overview-of-device-enrollment-methods)）
 
 ### 锁定
 指定是否可锁定设备以防止用户删除 Intune 策略，进而使得设备不受管理。 对于 iOS 设备，其需要处于监管模式才可进行锁定。
@@ -124,6 +124,6 @@ USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,13 +13,15 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 8a41c4c4f0ab4b4864fe366a2852046693b6baee
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 
 
 ---
 
 # 设置 iOS 和 Mac 设备管理
+若要设置你的 iOS 或 Mac 设备，可在[此处](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)找到帮助。
+
 iPad、iPhone 和 Mac OS X 设备的 Intune 移动设备管理并允许访问公司电子邮件和应用。 必须拥有 Apple 推送通知服务 (APNs) 证书，才能使用 Intune 管理 iOS 和 Mac 设备。 一旦证书添加到 Intune，用户就可以安装公司门户应用来注册其设备或管理员可以设置[企业自有的 iOS 设备管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
 
 1.  **设置 Intune**<br>
@@ -39,7 +41,9 @@ iPad、iPhone 和 Mac OS X 设备的 Intune 移动设备管理并允许访问公
     在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到**管理**&gt;**移动设备管理**&gt;**iOS 和 Mac OS X**&gt;**上载 APNs 证书**，并单击**上载 APNs 证书**。 **“浏览”** 到证书(.pem)文件，单击 **“打开”** ，然后输入你的 **“Apple ID”**。 使用 APN 证书，Intune 可通过将策略推送到注册的移动设备注册并管理 iOS 设备。
 
 5.  **告知用户如何通过公司门户访问公司资源**<br>
-    你的用户将需要了解注册其设备的方式以及他们纳入管理之后会出现的情况。 [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    你的用户将需要了解注册其设备的方式以及他们纳入管理之后会出现的情况。
+    - [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [适用于 iOS 和 Mac 设备的最终用户指南](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 如果公司或组织为用户购买了 iOS 设备，可以将这些设备注册为[公司拥有的 iOS 设备](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)，以便进行管理。
 
@@ -48,6 +52,6 @@ iPad、iPhone 和 Mac OS X 设备的 Intune 移动设备管理并允许访问公
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

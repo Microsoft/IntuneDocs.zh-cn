@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
@@ -27,7 +27,7 @@ Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对�
 虽然 Intune 客户端通过管理软件更新、Windows 防火墙和 Endpoint Protection 支持[帮助保护电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)，由 Intune 客户端托管的电脑不能以其他 Intune 策略为目标。
 
 > [!NOTE]
-> 运行 Windows 8.1 的设备可使用 Intune 客户端进行管理，或者可将它们注册为移动设备。 下面的信息适用于运行 Intune 客户端的计算机。 不支持安装 Intune 电脑客户端和为移动设备管理注册 Windows 设备。
+> 运行 Windows 8.1 或更高版本的设备可使用 Intune 客户端进行管理，或者可将它们注册为移动设备。 下面的信息适用于运行 Intune 客户端的计算机。 不支持安装 Intune 电脑客户端和为移动设备管理注册 Windows 设备。
 
 ## Intune 电脑客户端管理要求
 
@@ -86,6 +86,6 @@ Intune 客户端代理通常在后台静默运行，无需许多用户交互或�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

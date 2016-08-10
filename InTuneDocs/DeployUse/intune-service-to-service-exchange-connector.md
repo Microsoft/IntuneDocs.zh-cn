@@ -1,10 +1,10 @@
 ---
-title: "托管 Exchange 的 Exchange Connector | Microsoft Intune"
+title: Exchange Connector for Exchange Online | Microsoft Intune
 description: "将 Intune 连接到 Office 365 Exchange 服务以支持 Exchange ActiveSync 移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
 
 
 ---
 
 # 为 Exchange Online 配置 Intune Service-to-Service Connector
 
-利用以下信息连接由 Office 365 托管的 Microsoft Intune 和 Exchange Online 服务。
+利用以下信息连接 Microsoft Intune 和 Exchange Online 或新 Exchange Online Dedicated 服务。 若要确定 Exchange Online Dedicated 环境采用的是**新**配置还是**旧**配置，请与帐户管理员联系。 Intune 仅支持每个订阅中存在一个 Exchange Connector 连接（任意类型）。
 
 ## Service-to-Service Connector 的要求
-**Service to Service Connector** 仅支持托管 Exchange，对本地基础结构没有要求。
+**Service to Service Connector** 仅支持 Exchange Online 或新 Exchange Online Dedicated，且对本地基础结构没有要求。
 
 |要求|更多信息|
 |---------------|--------------------|
-|已配置并且正在运行托管 Exchange|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
+|已配置且正在运行 Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |移动设备管理机构| [将移动设备管理机构设置为 Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
-|Microsoft Exchange 版本|你必须有包含 Exchange Server 2013 或更高版本租户的 Office 365 订阅。 只要租户是 Exchange Server 2013 或更高版本，Connector 就支持同一环境中的 Exchange Server 2010。|
+|Microsoft Exchange 版本|Exchange Online 或新 Exchange Online Dedicated 服务|
 |Active Directory 同步|你必须[设置 Active Directory 同步](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用 Intune Connector。|
 
 ### Exchange cmdlet 要求
@@ -54,7 +54,7 @@ ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
 3.  在“设置 Exchange 连接”页上，选择“设置服务间连接器”。
 
 
-Service-to-Service Connector 将自动进行配置并与你的托管 Exchange 环境同步。
+Service-to-Service Connector 将自动配置并与 Exchange Online 或新 Exchange Online Dedicated 环境同步。
 
 ## 验证你的 Exchange 连接
 
@@ -64,6 +64,6 @@ Service-to-Service Connector 将自动进行配置并与你的托管 Exchange �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

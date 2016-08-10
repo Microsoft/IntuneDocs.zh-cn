@@ -3,8 +3,8 @@ title: "准备注册设备 | Microsoft Intune"
 description: "设置移动设备管理 (MDM) 先决条件并准备好注册不同的操作系统。"
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: f7fd551ab35408236a58ccd581382a6b11343dda
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
 
 
 ---
 
 # 为在 Microsoft Intune 中注册设备做好准备
-若要使员工可以向 Intune 注册移动设备（包括 [Android](set-up-android-management-with-microsoft-intune.md)、[iOS 和 Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)、[Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) 与 [Windows 电脑](set-up-windows-device-management-with-microsoft-intune.md)），必须启用设备注册。 若要允许注册，必须设置移动设备管理 (MDM) 机构、配置 Intune 公司门户、分配许可证并为设备平台启用注册。
+若要使员工可以向 Intune 注册移动设备（包括 [Android](set-up-android-management-with-microsoft-intune.md)、[iOS 和 Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)、[Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) 与 [Windows 电脑](set-up-windows-device-management-with-microsoft-intune.md)）或管理公司拥有的设备，则必须启用设备注册。 若要允许注册，必须设置移动设备管理 (MDM) 机构、配置 Intune 公司门户、分配许可证并为设备平台启用注册。
 
 ## 设置移动设备管理机构
 MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。 如果将 Configuration Manager 设置为管理机构，则没有其他服务可以用于移动设备管理。
@@ -109,6 +109,6 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

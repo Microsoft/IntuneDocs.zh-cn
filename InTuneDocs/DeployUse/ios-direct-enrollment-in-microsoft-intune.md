@@ -13,14 +13,14 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
+ms.sourcegitcommit: aabe68a3621a02b8f3142ab3f593190cc23053dd
+ms.openlocfilehash: 17836bc826bc89e3f041f7b369be09c1cce9ea4f
 
 
 ---
 
 # 使用 Apple Configurator 直接注册 iOS 设备
-Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具。 此过程不会恢复设备的出厂设置，并使用预定义策略注册设备。 此方法针对“无用户关联”的设备，并且要求你通过 USB 将 iOS 设备连接到 Mac 计算机以设置企业注册。 直接注册 iOS 设备时，你可以注册设备，而无需获取设备的序列号。 在注册过程中，你还可以在 Intune 捕获设备名称前对设备命名以进行标识。 直接注册的设备不支持公司门户应用。 本指南假定你在 Mac 计算机上使用 Apple Configurator 2.0。
+Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具。 此过程不会将设备恢复至出厂设置，并将使用预定义策略注册设备。 此方法针对“无用户关联”的设备，并且要求你通过 USB 将 iOS 设备连接到 Mac 计算机以设置企业注册。 直接注册 iOS 设备时，你可以注册设备，而无需获取设备的序列号。 在注册过程中，你还可以在 Intune 捕获设备名称前对设备命名以进行标识。 直接注册的设备不支持公司门户应用。 本指南假定你在 Mac 计算机上使用 Apple Configurator 2.0。
 
 1.  **创建设备的配置文件**设备注册配置文件定义应用于设备的设置。 如果尚无此配置文件，请使用 Apple Configurator 创建已注册的 iOS 设备的设备注册配置文件。
 
@@ -78,6 +78,6 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 
