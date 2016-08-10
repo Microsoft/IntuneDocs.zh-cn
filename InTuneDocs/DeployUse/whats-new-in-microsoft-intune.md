@@ -3,7 +3,7 @@ title: "新增功能 | Microsoft Intune"
 description: "了解 Microsoft Intune 的当月新增功能和过去版本"
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8bff8951c8ced7656f007787d614fd277401fd0
-ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
+ms.sourcegitcommit: b93c6fe16e598c6f4b0d87981de8655f3de9c8d3
+ms.openlocfilehash: 051f2994c59b2886a81a50d7c72f51627064bc6a
 
 
 ---
@@ -22,8 +22,17 @@ ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
 # Microsoft Intune 新增功能
 了解此版本 Microsoft Intune 中的新增功能。 你还可以发现需要计划的即将发生的更改，以及有关过去版本的信息。
 
-下面的更改依据 Intune 开发。 所有这些功能最终将支持混合客户部署（带 Intune 的 Configuration Manager）。 有关新的混合功能的详细信息，请查看[混合新增功能页](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx)。
+所有这些功能最终将支持混合客户部署（带 Intune 的 Configuration Manager）。 有关新的混合功能的详细信息，请查看[混合新增功能页](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx)。
 
+## 2016 年 8 月
+## 公司门户更新
+
+### Android
+- **Android 公司门户应用**<br/>
+适用于 Android 的 Intune 公司门户应用对于即将推出的 Android 7.0 移动设备的操作系统提供“day 0”支持。  
+
+- **Google 删除了 Android 7.0 设备上的远程密码重置功能**<br/>
+在 Android 7.0 设备上，由于 Google 已删除了 Android 7.0 设备上的远程密码重置功能，因此 Intune IT 管理员和最终用户将无法远程重置设备密码。 对于 Android 7.0 以前的版本，IT 管理员仍能远程重置用户的密码，且最终用户仍能从公司门户网站重置密码。
 
 ## 2016 年 7 月
 ## 应用管理
@@ -41,7 +50,9 @@ Intune 应用 SDK Xamarin 组件允许你在使用 Xamarin 生成的移动 iOS �
 Intune 将每个用户的设备的最大可配置设备注册限制从 5 提高到了 15。
 <!---TFS 1289896 --->
 
-
+### 运行 Intune 客户端软件的 Windows 电脑的 TeamViewer 集成
+运行 Intune 客户端的 Windows 电脑的 [TeamViewer](https://www.teamviewer.com) 集成让你可以与 Windows 电脑建立远程协助会话，从而帮助支持最终用户支持部门。 这包括 Windows 7、Windows 8、Windows 8.1 和 Windows 10。 有关详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)。
+<!---TFS 1284856--->
 
 ## 公司门户更新
 ### 公司门户网站
@@ -93,7 +104,7 @@ Intune 的新客户将看到当前租户执行操作之前的一些安全组更�
 有关缓解这些弃用功能的方式的详细信息，将于 8 月发布。
 
 ### 向 Android 公司门户添加“通知”
-我们即将于 8 月发布 Android 公司门户的更新，这将在主页上引入一个新的“**通知**”图标。 点击此图标将访问“**通知**”页，该页将向你的最终用户显示在公司门户应用中需要注意的所有项，例如，设备非合规性、注册更新和注册激活。 如果还使用 iOS 公司门户应用，你将已看到通知体验。 通过引入“**通知**”页，只要设备已经注册，每次启动或恢复 Android 公司门户时，你将不会看到“**公司访问设置**”页。 我们听说你们中的许多人都已创建最终用户指南，而且非常感谢你们在指南/屏幕快照可能需要更新时提前通知我们。 请更新你的文档，以反映体验中即将发生的更改。 在此查找更新的屏幕快照：https://aka.ms/androidcpupdate。  
+我们即将于 9 月发布 Android 公司门户的更新，这将在主页上引入一个新的“通知”图标。 点击此图标将访问“**通知**”页，该页将向你的最终用户显示在公司门户应用中需要注意的所有项，例如，设备非合规性、注册更新和注册激活。 如果还使用 iOS 公司门户应用，你将已看到通知体验。 通过引入“**通知**”页，只要设备已经注册，每次启动或恢复 Android 公司门户时，你将不会看到“**公司访问设置**”页。 我们听说你们中的许多人都已创建最终用户指南，而且非常感谢你们在指南/屏幕快照可能需要更新时提前通知我们。 请更新你的文档，以反映体验中即将发生的更改。 在此查找更新的屏幕快照：https://aka.ms/androidcpupdate。  
 
 
 
@@ -147,6 +158,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

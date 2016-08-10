@@ -13,13 +13,15 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 79377078bf5b4c6dad0a3dc4a07a2e84aa2563f8
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
 
 
 ---
 
 # 设置 Windows 设备管理
+若要设置你的 Windows 设备，可在[此处](../enduser/using-your-windows-device-with-intune.md)找到帮助。
+
 利用 Intune，可以为 Windows 电脑设备注册启用 BYOD（“自带设备办公”），以允许访问公司电子邮件和应用。 与 Azure Active Directory 一起使用，还可以以快速、无触控的方式将新的 Windows 10 设备纳入管理并获取访问公司资源的权限，而无需重置计算机的映像。 注册后，用户可以进行登录并使用 Intune 管理控制台向其设备应用策略、应用和设置。 你可能还需要通过 Intune 客户端[使用 Microsoft Intune 设置 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)或[使用 Intune 客户端软件管理计算机](manage-windows-pcs-with-microsoft-intune.md)。
 
 创建 DNS CNAME 可帮助用户进行连接 Intune 并在其中进行注册，而无需输入服务器名称。
@@ -43,13 +45,18 @@ ms.openlocfilehash: 79377078bf5b4c6dad0a3dc4a07a2e84aa2563f8
 
   2.  在 [Intune 管理控制台](http://manage.microsoft.com)中，单击“管理”&gt;“移动设备管理”&gt;“Windows”。
   ![Windows 设备管理对话框](../media/enroll-intune-winenr.png)
+
   3.  在**指定一个已验证的域名**框中键入公司网站结果验证的域的 URL，然后单击**测试自动检测**。
+
+  4.  你的用户将需要了解注册其设备的方式以及他们纳入管理之后会出现的情况。
+      - [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+      - [适用于 Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
 
 ### 另请参阅
 [为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

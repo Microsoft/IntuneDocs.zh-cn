@@ -3,8 +3,8 @@ title: "使用托管浏览器管理 Web 访问 | Microsoft Intune"
 description: "部署托管浏览器应用程序以限制 Web 浏览和传输到其他应用的 Web 数据传输。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/13/2016
+manager: angrobe
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 882042349c19ef0b688954577eb6519d0c0ac860
+ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
+ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
 
 
 ---
@@ -22,12 +22,13 @@ ms.openlocfilehash: 882042349c19ef0b688954577eb6519d0c0ac860
 # 使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问
 托管浏览器是一个 Web 浏览应用程序，可以使用 Microsoft Intune 在组织中进行部署。 托管浏览器策略可配置允许列表或阻止列表，限制托管浏览器的用户可以访问的网站。
 
-由于此应用是托管应用，因此你还可以向其应用移动应用程序管理策略，如控制使用剪切、复制和粘贴，阻止屏幕捕获，以及确保用户单击的内容链接仅在其他托管应用中打开。 有关详细信息，请参阅[在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)。
+因为该应用为托管应用，因此你还可以将移动应用程序管理策略应用到该应用中。 这些策略可能包括控制剪切、复制和粘贴的使用，阻止屏幕捕获，以及确保用户选择的内容链接仅在其他托管应用中打开。 有关详细信息，请参阅[在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)。
 
 > [!IMPORTANT]
->如果用户从应用商店安装托管浏览器，且其不由 Intune 托管，则以下行为适用：iOS - 可将托管浏览器应用程序用作基本 Web 浏览器，但某些功能将不可用，并且它将不能从其他 Intune 托管的应用访问数据。
-Android – 无法使用托管浏览器应用。
-如果用户自己在版本低于 iOS 9 的 iOS 设备上安装托管浏览器，那么创建的任何策略都不能对它进行管理。 若要确保浏览器由 Intune 管理，则用户必须先卸载该应用，然后你才可以将其作为托管应用部署给这些用户。 在 iOS 9 及更高版本中，如果用户自己安装托管浏览器，系统将提示他们允许托管浏览器变为由策略管理。
+>如果用户从应用商店安装托管浏览器且该浏览器不由 Intune 管理，则以下行为适用：<br /><br />
+iOS – 托管浏览器应用可以被用作基础 Web 浏览器，但一些功能将不可用，且它将不能访问其他 Intune 管理的应用中的数据。<br />
+Android – 无法使用托管浏览器应用。<br /><br />
+如果用户自己在版本早于 iOS 9 的 iOS 设备上安装托管浏览器，那么你创建的任何策略都不能对该浏览器进行管理。 若要确保浏览器由 Intune 管理，则用户必须先卸载该应用，然后你才能将其作为托管应用部署给这些用户。 在 iOS 9 及更高版本中，如果用户自己安装托管浏览器，系统将提示他们允许托管浏览器由策略管理。
 
 可以针对以下设备类型创建托管浏览器策略：
 
@@ -39,7 +40,7 @@ Intune 托管浏览器支持从 [Microsoft Intune 应用程序合作伙伴](http
 
 ## 创建托管浏览器策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击**策略**&gt;**添加策略**。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”。
 
 2.  配置以下 **“软件”** 策略类型之一：
 
@@ -49,17 +50,19 @@ Intune 托管浏览器支持从 [Microsoft Intune 应用程序合作伙伴](http
 
     有关如何创建和部署策略的详细信息，请参阅 [Manage settings and features on your devices with Microsoft Intune Policies（使用 Microsoft Intune 策略管理设备的设置和功能）](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)主题。
 
-3.  使用下表来帮助你配置托管浏览器策略设置：
+3.  使用以下内容来帮助你配置托管浏览器策略设置：
 
-|设置名|详细信息|
-    |----------------|--------------------|
-    |**Name**|输入托管浏览器策略的唯一名称，以帮助你在 Intune 控制台中识别它。|
-    |**说明**|提供对托管浏览器策略的概述以及可帮助你查找策略的其他相关信息。|
-    |**启用允许列表或阻止列表，以限制托管浏览器可以打开的 URL**|选择下列选项之一：<br /><br />“仅允许托管浏览器打开下面列出的 URL”– 指定托管浏览器可以打开的 URL 列表。<br /><br />“阻止托管浏览器打开下面列出的 URL”– 指定将阻止托管浏览器打开的 URL 列表。 **注意：**不能在相同的托管浏览器策略中同时包括允许的 URL 和阻止的 URL。<br />有关可以指定的 URL 格式的详细信息，请参阅本主题中的**允许的和阻止的 URL 的 URL 格式**。|
+    - **名称**。 输入托管浏览器策略的唯一名称，以帮助你在 Intune 控制台中识别它。
+    - **说明**。 提供对托管浏览器策略的概述以及可帮助你查找策略的其他相关信息。
+    - “启用允许列表或阻止列表，以限制托管浏览器可以打开的 URL”。 选择下列选项之一：
+        - “允许托管的浏览器仅打开下面列出的 URL”。 指定托管浏览器可以打开的 URL 列表。
+        - “阻止托管浏览器打开下面列出的 URL”。 指定将阻止托管浏览器打开的 URL 列表。
+**注意：**不能在相同的托管浏览器策略中同时包括允许的 URL 和阻止的 URL。
+有关可以指定的 URL 格式的详细信息，请参阅本主题中的**允许的和阻止的 URL 的 URL 格式**。
 
-4.  完成后，请单击“保存策略” **Save Policy**。
+4.  完成后，请选择“保存策略”。
 
-新的策略将在“策略”  工作区的“配置策略”  节点处显示。
+新的策略将在“**策略**”工作区的“**配置策略**”节点处显示。
 
 ## 创建托管浏览器应用的部署
 在创建托管浏览器策略后，可以创建托管浏览器应用的软件部署，并将它与所创建的托管浏览器策略相关联。
@@ -77,21 +80,21 @@ Intune 托管浏览器支持从 [Microsoft Intune 应用程序合作伙伴](http
 
 -   托管浏览器不使用用户在设备上对内置浏览器进行的设置。 这是因为托管浏览器无权访问这些设置。
 
--   如果在与托管浏览器关联的移动应用程序管理策略中配置 **“访问需要简单 PIN”** 或 **“访问需要公司凭据”** 选项，并且用户单击身份验证页上的帮助链接，则他们可以浏览任何 Internet 站点，而无论这些网站是否已添加到托管浏览器策略中的阻止列表。
+-   如果你在与托管浏览器关联的移动应用程序管理策略中配置了“访问需要简单 PIN”或“访问需要公司凭据”选项，且用户选择了“身份验证”页上的帮助链接，则他们可以浏览所有 Internet 站点，而无需考虑这些网站是否已添加到托管浏览器策略中的阻止列表中。
 
 -   托管浏览器仅能在直接访问站点时阻止访问。 使用中间服务（例如翻译服务）访问站点时，该策略则无法阻止访问。
 
--   若要允许身份验证并确保可以访问 Intune 文档，请从允许或阻止列表设置中移除 **&#42;.microsoft.com** - 将始终允许此操作。
+-   若要允许身份验证并确保可以访问 Intune 文档，请从允许或阻止列表设置中移除 ***.microsoft.com**。 始终允许。
 
 ### 关闭用法数据
-Microsoft 会自动收集有关性能和利用托管浏览器来改进 Microsoft 产品和服务的匿名数据，但用户可以通过使用设备上的“用法数据”设置关闭数据收集。 不具有对此数据的收集的控制。
+Microsoft 会自动收集有关性能和托管浏览器使用情况的匿名数据以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。
 
 ## 参考信息
 
 ### 允许的 URL 和阻止的 URL 的格式
-使用以下信息来了解有关指定允许和阻止列表中的 URL 时允许使用的格式和通配符。
+使用以下信息来了解有关指定允许和阻止列表中的 URL 时允许使用的格式和通配符：
 
--   可以根据下面的允许模式列表中的规则使用通配符“&#42;”。
+-   可以根据以下允许模式列表中的规则使用通配符 (*)。
 
 -   在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
 
@@ -101,7 +104,7 @@ Microsoft 会自动收集有关性能和利用托管浏览器来改进 Microsoft
 
     -   对于 https，使用端口 443
 
-    不支持对端口号使用通配符，例如，**http&colon;//www&period;contoso&period;com:*;** 和 **http&colon;//www&period;contoso&period;com: /*;**
+    不支持对端口号使用通配符。 例如，**http&colon;//www&period;contoso&period;com:*;** 和 **http&colon;//www&period;contoso&period;com: /*;** 不受支持。
 
 -   使用下表了解指定 URL 时可以使用的允许模式：
 
@@ -151,6 +154,6 @@ Microsoft 会自动收集有关性能和利用托管浏览器来改进 Microsoft
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

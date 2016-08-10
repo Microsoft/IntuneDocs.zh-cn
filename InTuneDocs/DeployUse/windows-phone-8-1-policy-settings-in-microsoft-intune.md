@@ -3,8 +3,8 @@ title: "Windows Phone 8.1 策略设置 | Microsoft Intune"
 description: "Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置常规设置。 此外，还可指定 OMA-URI 值创建 Intune 未提供的自定义设置。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: e11ca62eb242d7c530e8de2ad1e885315d220233
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置
 |----------------|-----------------------------------------|
 |**允许复制和粘贴**|允许在设备上使用复制和粘贴功能。|否|是|
 
-### 相容和不相容应用的设置
-在“相容和不相容应用”列表中，使用以下信息指定相容或不相容应用列表：
+### 允许和阻止的应用的设置
+在“允许和阻止的应用”列表中，使用以下信息指定你想要允许或阻止的应用的列表：
 
 > [!NOTE]
-> 单个策略只能包含一个相容应用列表或一个不相容应用列表。 不能在同一策略中同时指定两个列表。
+> 单个策略只能包含允许的应用的列表或阻止的应用的列表。 不能在同一策略中同时指定两个列表。
 
 |设置名|详细信息|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置
 > 如果你为 Windows Phone 8.1 设备指定了允许的应用列表，则必须将公司门户应用添加到此列表，否则此列表将被阻止。
 
 
-### 相容和不相容应用的参考信息
+### 有关允许和阻止的应用的参考信息
 
 #### 如何指定应用商店的 URL
-若要在符合和不符合要求的应用列表中指定应用 URL，请使用以下格式：
+若要在允许和阻止的的应用列表中指定应用 URL，请使用以下格式：
 
 在 [Windows Phone 应用 + 游戏](http://www.windowsphone.com/en-us/store/overview) 页面中，搜索你想要使用的应用。
 
-打开应用页面，并将该 URL 复制到剪贴板。 你现在可以在符合或不符合要求的应用列表中使用这个 URL。
+打开应用页面，并将该 URL 复制到剪贴板。 你现在可以在允许的或阻止的应用列表中将它用作 URL。
 
 **例如：** 在应用商店中搜索 Skype 应用。 你将使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**。
 
@@ -172,6 +172,6 @@ Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,8 +3,8 @@ title: "重置（清除）丢失或被盗 Windows 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: dec9fd3d2711513b4a99ca4bec586f72402cb619
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 083dd1a11e291ff0d92b1bfa3ec61033f26f3d4b
 
 
 ---
@@ -34,7 +34,7 @@ ms.openlocfilehash: dec9fd3d2711513b4a99ca4bec586f72402cb619
 
 2.  在“我的设备”下，选择丢失或被盗的设备。
 
-3.  点击**重置** &gt; **重置**。
+3.  点击“重置”图标，然后点击“重置”。
 
 如果无法重置丢失或被盗的设备，请让 IT 管理员为你重置。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
@@ -42,6 +42,7 @@ ms.openlocfilehash: dec9fd3d2711513b4a99ca4bec586f72402cb619
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 
