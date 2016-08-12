@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
-ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
+ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
+ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 可为 Intune 托管的 Android 设备创建 per-app VPN 配置文件。 首先，创建使用 Pulse Secure 连接类型的 VPN 配置文件，然后使用特定应用创建与此配置文件相关联的配置策略。 将这些策略部署到 Android 设备或用户组之后，在这些设备上打开某个指定应用将打开此应用的 VPN 连接。
 
-> [备注]
+> [!NOTE]
 > 
 > 此配置文件仅支持 Pulse Secure 连接类型。
 
@@ -37,7 +37,8 @@ ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 4. 完成并保存 VPN 配置文件。 有关 VPN 配置文件的更多详细信息，请参阅 [VPN 连接](vpn-connections-in-microsoft-intune.md)。
 
 > [!NOTE]
-记下 VPN 配置文件名称，以便在下一步中使用。 例如**MyAppVpnProfile**。
+> 
+> 记下 VPN 配置文件名称，以便在下一步中使用。   例如**MyAppVpnProfile**。
 
 ### 步骤 2：创建自定义配置策略
 
@@ -81,6 +82,6 @@ ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

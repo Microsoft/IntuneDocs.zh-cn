@@ -2,9 +2,9 @@
 title: "Intune 评估指南 | Microsoft Intune"
 description: "有关如何设置 Intune 的免费 30 天评估的简介和先决条件"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 813b4babc78ae29d213f7c783b6afb3e368c52bd
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
 
 
 ---
@@ -66,6 +66,6 @@ ms.openlocfilehash: 813b4babc78ae29d213f7c783b6afb3e368c52bd
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

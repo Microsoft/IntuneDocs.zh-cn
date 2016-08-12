@@ -2,9 +2,9 @@
 title: "向 Intune 的 30 天评估添加用户 | Microsoft Intune"
 description: "当你注册 Intune 的免费 30 天评估时，如何逐个或批量添加用户"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 5a5ebe474580b98a3696bbd970c889837283b6f0
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 4276d0fed0fc30490a640a067d78096ff0cf78ae
 
 
 ---
@@ -79,6 +79,6 @@ ms.openlocfilehash: 5a5ebe474580b98a3696bbd970c889837283b6f0
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

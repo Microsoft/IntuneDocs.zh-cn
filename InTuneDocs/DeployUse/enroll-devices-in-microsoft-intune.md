@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
-ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 41c21da7c95ef15f817aa344aa5b2d6479b65922
 
 
 ---
@@ -27,6 +27,31 @@ Microsoft Intune 移动设备管理 (MDM) 使用注册将设备纳入管理以�
 Intune 可以管理以下设备平台：
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
+## 设置移动设备管理机构
+MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。 如果将 Configuration Manager 设置为管理机构，则没有其他服务可以用于移动设备管理。
+
+>[!IMPORTANT]
+> 请仔细考虑是希望仅使用 Intune（联机服务），还是使用带 Intune 的 System Center Configuration Manager（与联机服务相结合的本地软件解决方案）来管理移动设备。 设置移动设备管理机构之后，无法进行更改。
+
+1.  在“[Microsoft Intune 管理控制台](http://manage.microsoft.com)”中，选择“**管理员**”&gt;“**移动设备管理**”。
+
+2.  在“任务”  列表中，单击“设置移动设备管理机构” 。 将打开“设置 MDM 机构”  对话框。
+
+    ![“设置 MDM 机构”对话框](../media/intune-mdm-authority.png)
+
+3.  Intune 要求确认你希望使用 Intune 作为 MDM 机构。 勾选复选框，然后选择“**是**”以使用 Microsoft Intune 管理移动设备。
+
+## 配置 Intune 公司门户
+
+在 Intune 公司门户中，用户可以访问公司数据和执行常见任务，比如注册设备、安装应用，以及查找信息以从 IT 部门获得帮助。
+
+> [!TIP]
+> 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。
+
+自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，只需以租户或服务管理员身份登录到“[Microsoft Intune 管理员控制台](https://manage.microsoft.com)”，选择“**管理员**”&gt;“**公司门户**”，然后配置公司门户设置。
+
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 ## 设备注册方法概述
 
@@ -124,6 +149,6 @@ USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
