@@ -3,7 +3,7 @@ title: "解决 GPO 与 Intune 之间的策略冲突 | Microsoft Intune"
 description: "了解如何解决组策略和 Intune 配置策略之间的冲突。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,30 +13,30 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 77f7bc40471437cf69fe5553d4d82dc71a6ba405
+ms.sourcegitcommit: e64c4e077a3d2b75a8c246f097fcf7472d7edac6
+ms.openlocfilehash: 286f159e57820a8c8723004c167ae7296626894c
 
 
 ---
 
 # 解决组策略对象 (GPO) 与 Microsoft Intune 之间的策略冲突
-Intune 使用策略来帮助管理你所管理的 Windows 电脑上的设置。 例如，你可以使用策略来控制电脑上 Windows 防火墙的设置。 Intune 的许多设置都类似于你可使用 Windows 组策略配置的设置。 但是，有时可能会有两种方法互相冲突。
+Intune 使用策略来帮助你管理 Windows 电脑上的设置。 例如，你可以使用策略来控制电脑上 Windows 防火墙的设置。 Intune 的许多设置都类似于你可使用 Windows 组策略配置的设置。 但是，有时可能会有两种方法互相冲突。
 
 发生冲突时，除非电脑无法登录到域，否则域级组策略优先于 Intune 策略。 在这种情况下，Intune 策略将应用于客户端电脑。
 
 ## 在使用组策略的情况下要执行的操作
-检查你应用的任何策略是否未通过组策略进行管理。 为了帮助防止冲突，你可以采用下列一种或多种方法：
+确保你应用的策略不受组策略管理。 为了帮助防止冲突，你可以采用下列一种或多种方法：
 
 -   在安装 Intune 客户端之前，将电脑移到未应用组策略设置的 Active Directory 组织单位 (OU)。 还可以在包含已在 Intune 中注册并且不希望应用组策略设置的电脑的 OU 上阻止组策略继承。
 
--   使用安全组筛选器将 GPO 仅限制到未由 Intune 托管的电脑。 
+-   使用安全组筛选器将 GPO 仅限制到未由 Intune 托管的电脑。
 
 -   禁用或删除与 Intune 策略冲突的组策略对象。
 
 有关 Active Directory 和 Windows 组策略的详细信息，请参阅 Windows Server 文档。
 
 ## 如何筛选现有 GPO 以避免与 Intune 策略冲突
-如果确定了其设置与 Intune 策略冲突的 GPO，则可以使用安全组筛选器将这些 GPO 仅限制到未由使用 Intune 托管的电脑。
+如果确定了其设置与 Intune 策略冲突的 GPO，则可以使用安全组筛选器将这些 GPO 仅限制到未由 Intune 托管的电脑。
 
 <!--- ### Use WMI filters
 WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all PCs in the enterprise before you enroll any PCs in the Intune service.
@@ -102,13 +102,13 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-利用组策略，你可以将 GPO 仅应用于在所选 GPO 的组策略管理控制台的“安全筛选”  区域中指定的那些安全组。 默认情况下，GPO 应用于“Authenticated Users” 。
+你可以将 GPO 仅应用于在所选 GPO 的组策略管理控制台的“安全筛选”区域中指定的那些安全组。 默认情况下，GPO 应用于“Authenticated Users”。
 
--   在“Active Directory 用户和计算机”管理单元中，创建包含不希望使用 Intune 管理的计算机和用户帐户的新安全组。 例如，可以将组命名为 **Not In Microsoft Intune**。
+-   在“Active Directory 用户和计算机”管理单元中，创建包含不希望使用 Intune 管理的计算机和用户帐户的新安全组。 例如，可以将组命名为 *Not In Microsoft Intune*。
 
 -   在组策略管理控制台中所选 GPO 的“委派”选项卡上，右键单击新的安全组以将相应的“读取”和“应用组策略”权限委派给该安全组中的用户和计算机。 （“应用组策略” 权限可在“高级”  对话框上找到。）
 
--   然后，将新的安全组筛选器应用于所选 GPO，并删除“Authenticated Users”  默认筛选器。
+-   然后，将新的安全组筛选器应用于所选 GPO，并删除“Authenticated Users”默认筛选器。
 
 在 Intune 服务中的注册发生更改时，必须对新安全组进行维护。
 
@@ -117,6 +117,6 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

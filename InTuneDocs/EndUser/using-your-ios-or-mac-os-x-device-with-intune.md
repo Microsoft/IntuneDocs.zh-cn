@@ -4,7 +4,7 @@ description: "指向以下任务的链接列表：在 Intune 中注册设备时�
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-此网页包含指向最终用户在其 Intune 管理的设备上可以执行的所有任务的链接。 IT 管理员可以参阅此信息以查看用户执行各种任务时（按类别分组为：与注册相关的信息、管理任务和合规性问题）遵循的步骤。
+本文包含最终用户在其 Intune 管理的设备上可以执行的所有任务的链接。 IT 管理员可以参考此信息以查看用户执行各种任务时遵循的步骤，这些任务按类别分组为： 
+- 公司门户应用安装和 Intune 注册 
+- 注册后管理任务
+- 合规性问题
 
 ## 公司门户应用安装和 Intune 注册
 
@@ -61,6 +64,6 @@ ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

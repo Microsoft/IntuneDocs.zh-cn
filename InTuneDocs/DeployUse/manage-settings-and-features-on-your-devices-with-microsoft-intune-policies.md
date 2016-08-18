@@ -3,7 +3,7 @@ title: "使用策略管理设备设置 | Microsoft Intune"
 description: "使用 Intune 创建和部署策略，该策略控制你所管理的注册设备上的设置和功能。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 661a8807076da4c67f3e55e82dfc8824071c6352
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -100,7 +100,7 @@ Intune 策略划分为以下类别。 使用的类别会影响创建和部署策
 
 2.  选择下列其中一项操作：
 
-- **编辑**：打开所选策略的属性以允许你进行更改。
+- **编辑**：打开所选策略的属性以便进行更改。
 - **删除**：删除所选的策略。<br>在删除策略时，会将该策略从它已部署到的所有组中删除。
 - **管理部署**：选中要对其部署策略的组，然后选择“**添加**”。
 
@@ -108,7 +108,7 @@ Intune 策略划分为以下类别。 使用的类别会影响创建和部署策
 ## 有关 Intune 策略的常见问题
 
 ### 策略或应用部署完成后，移动设备需要多长时间获取？
-策略或应用部署完成后，Intune 会立即开始尝试通知设备其应签入到 Intune 服务。 这通常可在 5 分钟内完成。
+策略或应用部署完成后，Intune 会立即开始尝试通知设备其应签入到 Intune 服务。 这通常可在五分钟内完成。
 
 如果首次发出通知后设备未签入以获取策略，则 Intune 还会尝试通知 3 次。  如果设备脱机（例如设备已关机或未连接至网络），则可能无法收到通知。 在这种情况下，设备将按照以下设置在下次计划的签入到 Intune 服务时获取策略：
 
@@ -128,7 +128,7 @@ Intune 策略划分为以下类别。 使用的类别会影响创建和部署策
 用户还可以打开公司门户应用并同步设备以立即随时检查策略。
 
 ### 哪些操作会导致 Intune 立即向设备发送通知？
-当设备收到告知它们签入的通知或者在定期的计划签入期间，设备会签入到 Intune。  当你针对某个设备或用户执行特定操作时，例如擦除、锁定、密码重置、应用部署、配置文件部署（Wi-Fi、VPN、电子邮件等）或策略部署，Intune 会立即开始尝试通知设备其应签入到 Intune 服务以接收这些更新。
+当设备收到告知它们签入的通知时或者在定期的计划签入期间，设备会签入到 Intune。  当你针对某个设备或用户执行特定操作时，例如擦除、锁定、密码重置、应用部署、配置文件部署（Wi-Fi、VPN、电子邮件等）或策略部署，Intune 会立即开始尝试通知设备其应签入到 Intune 服务以接收这些更新。
 
 其他变更（如在公司门户中修订合同信息）不会导致立即向设备发送通知。
 
@@ -145,14 +145,14 @@ Intune 策略划分为以下类别。 使用的类别会影响创建和部署策
 -   如果配置策略设置与不同配置策略中的设置冲突，则将在 Intune 控制台中显示此冲突。 必须手动解决此类冲突。
 
 ### 移动应用管理策略相互冲突时会发生什么情况？ 哪一种策略将应用于应用？
-除数字输入字段（如重置之前尝试 PIN）外，冲突值是 MAM 策略中限制最严格的设置。  数字输入字段将设定为你使用建议的设置选项在控制台中创建 MAM 策略时一样的值。
+除数字输入字段（如重置之前尝试 PIN）外，冲突值是 MAM 策略中限制最严格的设置。  数字输入字段将设定为与你使用建议的设置选项在控制台中创建 MAM 策略时一样的值。
 
 两个策略设置相同时即会发生冲突。  例如，除复制/粘贴设置外，你配置了两个完全相同的 MAM 策略。  在此方案中，复制/粘贴设置将设定为限制最严格的值，但其余设置将应用配置的值。
 
 如果一个策略部署到应用且生效，然后部署第二个策略，则第一个策略的优先级更高并且会继续应用该策略，而第二个策略将显示冲突。 如果两个策略同时应用，即它们的优先级一样，则两个都会显示冲突。 任何冲突的设置都将设定为限制最严格的值。
 
 ### iOS 自定义策略冲突时会发生什么情况？
-Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载。 它只作为传送机制。
+Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源标识符 (OMA-URI) URI 策略的负载。 它只作为传送机制。
 
 部署自定义策略时，请确保配置的设置不会与合规性、配置或其他自定义策略冲突。 如果自定义策略与设置冲突，则应用设置的顺序是随机的。
 
@@ -181,7 +181,7 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载。 �
         - 允许应用程序商店
         - 允许屏幕捕获
         - 允许地理位置
-        - 允许 Microsoft 帐户
+        - 支持 Microsoft 帐户
         - 允许复制和粘贴
         - 允许 Wi-Fi tethering
         - 允许自动连接到免费 Wi-Fi 热点
@@ -198,7 +198,7 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载。 �
 
 #### 运行 Intune 客户端软件的 Windows PC
 
-- **Endpoint Protection 设置**：设置还原为其建议值。 唯一的例外是默认值为“**否**”的“**加入 Microsoft Active Protection Service**”设置。 有关详细信息，请参阅[使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
+- **Endpoint Protection 设置**：设置还原为其建议值。 唯一的例外是默认值为“否”的“加入 Microsoft Active Protection Service”设置。 有关详细信息，请参阅[使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
 - **软件更新设置**：设置重置为操作系统的默认状态。 有关详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
 - **Microsoft Intune Center 设置**：从计算机中删除策略所配置的任何支持联系人信息。
 - **Windows 防火墙设置**：设置重置为计算机操作系统的默认值。 有关详细信息，请参阅[使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
@@ -215,6 +215,6 @@ Intune 不会评估 Apple 配置文件或自定义 OMA URI 策略的负载。 �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

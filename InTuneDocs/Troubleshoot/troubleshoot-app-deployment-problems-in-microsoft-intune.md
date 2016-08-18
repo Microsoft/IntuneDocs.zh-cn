@@ -2,7 +2,7 @@
 title: "应用部署问题疑难解答 | Microsoft Intune"
 description: "本主题有助于解决 Microsoft Intune 中的应用部署问题。"
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,24 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Microsoft Intune 中的应用部署问题疑难解答
-本主题有助于解决 Microsoft Intune 中的应用部署问题。
+如果在使用 Intune 部署和管理应用时出现问题，请从这里开始。 本主题包含你可能会遇到的一些常见问题以及解决方案。
 
-如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
+## 常见的应用部署问题
 
+### 用户不能登录到 Intune 公司门户
 
-## 典型应用部署问题
+1.  确保用户的帐户存在，并且已在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中启用。
 
-### 如果你不能登录到 Microsoft Intune 公司门户
+3.  在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，确保用户正在输入正确的用户名登录到 Intune，并且其格式为：**joe@domain.com**。 如果用户似乎在输入错误的密码，则要求他们重置密码。
 
-1.  检查你的帐户是否存在于 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中或者是否被禁用。
-
-2.  确保你在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中对此帐户进行了设置。
-
-3.  在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中，确保你正在使用正确的用户名和密码登录到 Intune，并且其格式为：**joe@domain.com**。
-
-### 如果公司门户中缺少“联系 IT”信息
+### 公司门户中缺少“联系 IT”信息
 
 1.  在 Intune 管理员控制台中，选择**管理**&gt;**公司门户**。
 
@@ -105,6 +100,6 @@ ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

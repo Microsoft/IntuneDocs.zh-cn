@@ -2,7 +2,7 @@
 title: "策略疑难解答 | Microsoft Intune"
 description: "解决策略配置问题。"
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,18 +13,15 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
+ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
+ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 
 ---
 
 # 排查 Microsoft Intune 中的策略问题
 
-下面列出了你的 Microsoft Intune 策略配置可能导致的一些问题以及这些问题的故障排除建议。
-
-如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
-
+如果你在使用 Intune 部署和管理策略时出现问题，请从这里开始。 本主题包含你可能会遇到的一些常见问题以及解决方案。
 
 ## 是否向设备应用了策略？
 **问题：** 不清楚是否向设备应用了特定的策略，或者设备的行为是否违反了策略。
@@ -109,6 +106,6 @@ Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

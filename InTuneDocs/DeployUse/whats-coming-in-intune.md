@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f941fad998c6c0e07437c8f476df55325a4741b
-ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
+ms.sourcegitcommit: f02d8791bbca65a4bfda69e61e9e22c8124c436b
+ms.openlocfilehash: 09fb5dac0276b4da49795539f40dbde15cd69bf5
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
 
 ## 应用管理
 ### iOS 9.3 隐藏和显示的应用
-对于运行 iOS 9.3 或更高版本的设备，能够将在 iOS 常规配置策略中的隐藏和显示的应用列表用于：
+对于运行 iOS 9.3 或更高版本的受监管设备，你能够将 iOS 常规配置策略中隐藏和显示的应用列表用于：
 - 指定对用户隐藏的应用列表。 用户无法查看，或启动这些应用。
 - 指定用户可以查看和启动的应用列表。 无法查看或启动其他应用。
 
@@ -50,7 +50,7 @@ ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
 ### 与移动应用程序管理 (MAM) 兼容的新应用
 无论设备是否注册，适用于 [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) 和 [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) 的 Yammer 应用将与 [Intune 移动应用程序管理 (MAM) 策略](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)兼容。
 
-有关 MAM 兼容的应用的完整列表，请参阅 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。
+有关 MAM 兼容应用的完整列表，请参阅 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)站点。
 <!--- TFS 1252335 & 1252336--->
 
 ## 设备管理
@@ -114,7 +114,7 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 - Intune PDF 查看器
 - Google Play 中适用于 Android 的 Intune 图像查看器
 
-建议使用适用于 Android 的 Rights Management 应用（RMS 共享）而不是使用 Intune 查看器应用，前者只需部署一个应用而不是三个单独的应用便可安全地查看 Android 设备上的公司文件。 了解有关 RMS 共享应用（具有指向文档的链接）的详细信息。
+建议使用适用于 Android 的 Rights Management 应用（RMS 共享）而不是使用 Intune 查看器应用，前者只需部署一个应用而不是三个单独的应用便可安全地查看 Android 设备上的公司文件。 了解有关 [RMS 共享应用](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app)的详细信息。
 <!--- goes in 1608 What's New--->
 
 
@@ -123,6 +123,6 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

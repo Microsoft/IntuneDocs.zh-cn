@@ -13,25 +13,55 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c61fd1070f84f359ac6abe9ff48e51d2787c4eb4
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: a09c9b55d7906ab792bda90b172a36b3656ed6dd
 
 
 ---
 
 # 使用 Microsoft Intune 的完全擦除或选择性擦除保护数据
-对于设备，你有时想要或需要[停用应用](retire-apps-using-microsoft-intune.md)（已部署到电脑或移动设备），因为不再需要它们。 你可能还想要从设备中删除公司数据。 若要执行此操作，Intune 将提供选择性擦除和完全擦除功能。 由于移动设备可能存储敏感公司数据并提供对许多公司资源的访问，因此，你可以从 Intune 中发出远程设备擦除命令以擦除遗失或被盗的设备。 此外，对于在 Intune 中注册的私人所有设备，用户可从 Intune 中发出远程设备擦除命令。
+无论出于什么原因（不再需要设备、要重新调整设备用途或设备已丢失），都可以从使用 Intune 管理的设备中擦除应用和数据。 若要执行此操作，Intune 将提供选择性擦除和完全擦除功能。 此外，对于在 Intune 中注册的私人所有设备，用户可从 Intune 公司门户中发出远程设备擦除命令。
 
   > [!NOTE]
-  > 本主题仅涉及擦除通过 Intune 管理的设备。 还可使用 [Azure 预览版门户](https://portal.azure.com)[从应用中擦除公司数据](wipe-managed-company-app-data-with-microsoft-intune.md)。
+  > 本主题仅涉及擦除通过 Intune 移动设备管理功能管理的设备。 还可使用 [Azure 预览版门户](https://portal.azure.com)[从应用中擦除公司数据](wipe-managed-company-app-data-with-microsoft-intune.md)。 还可以[停用使用 Intune 客户端软件管理的计算机](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md)。
 
 ## 完全擦除
 
-
 “完全擦除”将设备还原为其出厂默认设置，同时删除所有公司和用户数据和设置。 设备从 Intune 删除。 完全擦除可用于将设备授予新用户前或在设备丢失或被盗的情况下，对设备进行重置。  **请谨慎选择完全擦除。无法恢复设备上的数据**。
+
 
 > [!Warning]
 > 如果对 RAM 小于 4 GB 的 Windows 10 RTM 设备（即早于 Windows 10 版本 1511 的设备）进行了擦除，则可能会变得无法访问。 若要访问已无响应的 Windows 10 设备，可以通过 USB 驱动器或类似的解决方法启动设备。
+
+### 从 Intune 管理员控制台远程擦除设备
+
+1.  选择要擦除的设备。 你可以按用户或设备进行查找。
+
+    -   **按用户：**
+
+        1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组**&gt;**所有用户**。
+
+        2.  选择要擦除其移动设备的用户的名称。 选择**查看属性**。
+
+        3.  在用户的“属性”页，选择“设备”，然后选择要擦除的移动设备的名称。 按下 Ctrl 并点击以选择多个设备。
+
+    -   **按设备：**
+
+        1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组**&gt;**所有移动设备**。
+
+      ![启动停用或擦除操作](../media/dev-sa-wipe.png)
+
+        2.  选择“设备”，然后选择要擦除的移动设备的名称。 按下 Ctrl 并点击以选择多个设备。
+
+2.  选择**停用/擦除**。
+
+3.  此时将出现一条消息，提示你确认是否要停用设备。
+
+    -   若要执行仅删除公司应用和数据的**选择性擦除**，请选择**是**。
+
+    -   要执行将擦除所有应用和数据并将设备返回到出厂默认设置的**完全擦除**，请选择“在停用之前擦除设备”。 此操作适用于除 Windows 8.1 外的所有平台。 “无法恢复通过完全擦除删除的数据”。
+
+如果设备已打开并连接，擦除命令会在 15 分钟内跨所有设备类型进行传播。
 
 ## “选择性擦除”
 
@@ -78,36 +108,6 @@ ms.openlocfilehash: c61fd1070f84f359ac6abe9ff48e51d2787c4eb4
 |Email|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。|不支持|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。 删除由 Intune 预配的邮件帐户。|
 |Azure Active Directory (AAD) 脱离|否|否|AAD 记录删除|不适用。 Windows 10 不支持对已加入 Azure Active Directory 的设备使用选择性擦除|
 
-### 从 Intune 管理员控制台远程擦除设备
-
-1.  选择要擦除的设备。 你可以按用户或设备进行查找。
-
-    -   **按用户：**
-
-        1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组**&gt;**所有用户**。
-
-        2.  选择要擦除其移动设备的用户的名称。 选择**查看属性**。
-
-        3.  在用户的“属性”页，选择“设备”，然后选择要擦除的移动设备的名称。 按下 Ctrl 并点击以选择多个设备。
-
-    -   **按设备：**
-
-        1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组**&gt;**所有移动设备**。
-
-      ![启动停用或擦除操作](../media/dev-sa-wipe.png)
-
-        2.  选择“设备”，然后选择要擦除的移动设备的名称。 按下 Ctrl 并点击以选择多个设备。
-
-2.  选择**停用/擦除**。
-
-3.  此时将出现一条消息，提示你确认是否要停用设备。
-
-    -   若要执行仅删除公司应用和数据的**选择性擦除**，请选择**是**。
-
-    -   要执行将擦除所有应用和数据并将设备返回到出厂默认设置的**完全擦除**，请选择“在停用之前擦除设备”。 此操作适用于除 Windows 8.1 外的所有平台。 “无法恢复通过完全擦除删除的数据”。
-
-擦除在所有设备类型之间传播的时间不超过 15 分钟。
-
 ## 擦除启用了加密文件系统 (EFS) 的内容
 Windows 8.1 和 Windows RT 8.1 支持选择性擦除 EFS 加密内容。 下列各项适用于启用 EFS 的内容的选择性擦除：
 
@@ -142,6 +142,6 @@ EFS 选择性擦除当前支持下列数据和应用：
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

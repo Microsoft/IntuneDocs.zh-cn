@@ -3,7 +3,7 @@ title: "保护 Windows 电脑的策略 | Microsoft Intune"
 description: "当 Windows 电脑由 Intune 客户端软件管理时，使用这些策略帮助你确保其安全性。"
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,15 +13,15 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: d9a818f0be1f1b6fc1639cb705876c298d1570b4
+ms.sourcegitcommit: 321a19c38a4b69f5d16f10f054dd517b696b44eb
+ms.openlocfilehash: e649db8209f6c3c99af3353188fb8ebf463d922f
 
 
 ---
 
 # 使用策略帮助保护运行 Intune 客户端软件的 Windows 电脑
 
-当 Windows 电脑由 [Intune 客户端软件](manage-windows-pcs-with-microsoft-intune.md)管理时，Microsoft Intune 提供三个可用于帮助确保它们的安全性的策略。 
+当 Windows 电脑由 [Intune 客户端软件](manage-windows-pcs-with-microsoft-intune.md)管理时，Microsoft Intune 提供三个可用于帮助确保它们的安全性的策略。
 
 
 ## 软件更新
@@ -30,7 +30,7 @@ ms.openlocfilehash: d9a818f0be1f1b6fc1639cb705876c298d1570b4
 
 ## Windows 防火墙
 
-Windows 防火墙帮助 Windows 电脑免于受到黑客、恶意软件和其他威胁的攻击。 Intune 让你能够在你管理的所有电脑上[管理 Windows 防火墙的设置和功能](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
+Windows 防火墙帮助 Windows 电脑免于受到黑客、恶意软件和其他威胁的攻击。 你可以使用 Intune 在你管理的所有电脑上[管理 Windows 防火墙的设置和功能](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
 
 ## Endpoint Protection
 
@@ -43,7 +43,6 @@ Windows 防火墙帮助 Windows 电脑免于受到黑客、恶意软件和其他
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

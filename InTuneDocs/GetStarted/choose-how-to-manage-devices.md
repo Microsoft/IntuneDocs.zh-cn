@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -39,10 +39,10 @@ ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
 
 |注册类型|BYOD|CYOD|带管理人员帐户的共享设备|无用户帐户的共享设备|
 |-------------------|--------|--------|--------------------------------------|----------------------------------------|
-|**描述**|使用 Microsoft Intune 注册的个人设备|适用于单个用户的公司拥有的设备|使用多个用户共享的管理人员帐户的公司拥有的设备|由多个用户使用的公司拥有的无用户设备。|
+|**说明**|使用 Microsoft Intune 注册的个人设备|适用于单个用户的公司拥有的设备|使用多个用户共享的管理人员帐户的公司拥有的设备|由多个用户使用的公司拥有的无用户设备。|
 |**设备的用户**|Owner|分配的用户|没有特定于用户的帐户|未特定的用户|
 |**谁注册？**|Owner|管理员|设备管理器|任何人|
-|**谁注销？**|所有者或管理员|管理员|管理员|管理员|
+|**谁注销？**|所有者或管理员|平台 |管理员或用户|管理员或用户|
 |**谁可以重置？**|所有者或管理员|管理员|管理员|管理员|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

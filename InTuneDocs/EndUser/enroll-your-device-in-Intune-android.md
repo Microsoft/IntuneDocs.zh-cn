@@ -3,8 +3,8 @@ title: "在 Intune 中注册 Android 设备 | Microsoft Intune"
 description: "介绍如何在 Intune 中注册 Android 设备"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
+ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
+ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
 
 ---
@@ -44,7 +44,27 @@ ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  如果在使用 Android 6.0 或更高版本，则执行此步骤。 ·сФт，ЗлЧЄЦБПВТ»ІЅЦи。 
+5.  使用你的工作或学校帐户和密码登录公司门户应用，然后点击**登录**。
+
+    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+
+6.  在“公司访问设置”屏幕上，点击“开始”。
+
+    ![“公司访问设置”屏幕](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  在**为什么要注册设备？**屏幕上，阅读注册设备时你可以执行的操作，然后点击**继续**。
+
+    ![“为什么要注册设备？”屏幕](./media/and-enroll-4b-why-enroll.png)
+
+8.  查看 IT 管理员在你的设备上可以看到和不可以看到的内容的列表，然后点击**继续**。
+
+    ![隐私设置](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  在“接下来会发生的情况”屏幕上，阅读注册期间会发生的情况，然后点击“注册”。
+
+    ![“接下来会发生的情况”屏幕](./media/and-enroll-4d-what-comes-next.png)
+
+10.  如果在使用 Android 6.0 或更高版本，则执行此步骤。 ·сФт，ЗлЧЄЦБПВТ»ІЅЦи。
 
     如果 IT 管理员设置了特定策略，则你可能会看到以下消息：
     -   **“是否允许公司门户发起和管理电话呼叫?”**
@@ -63,26 +83,6 @@ ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
 
     如果拒绝访问，下次点击“发送数据”时将再次出现此消息，但是你可以点击“不再询问”复选框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **存储**，然后开启权限。
 
-6.  使用你的工作或学校帐户和密码登录公司门户应用，然后点击**登录**。
-
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
-
-7.  在“公司访问设置”屏幕上，点击“开始”。
-
-    ![“公司访问设置”屏幕](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  在**为什么要注册设备？**屏幕上，阅读注册设备时你可以执行的操作，然后点击**继续**。
-
-    ![“为什么要注册设备？”屏幕](./media/and-enroll-4b-why-enroll.png)
-
-9.  查看 IT 管理员在你的设备上可以看到和不可以看到的内容的列表，然后点击**继续**。
-
-    ![隐私设置](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  在“接下来会发生的情况”屏幕上，阅读注册期间会发生的情况，然后点击“注册”。
-
-    ![“接下来会发生的情况”屏幕](./media/and-enroll-4d-what-comes-next.png)
-
 11.  在“激活设备管理员”屏幕上，点击“激活”。
 
     ![“激活设备管理员”屏幕](./media/and-enroll-5-activate.png)
@@ -91,17 +91,11 @@ ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
 
     ![输入 PIN 或密码](./media/and-enroll-6-PIN-native.png)
 
-13.  按照以下与所使用的设备类型（本机 Android 或 Samsung Knox）匹配的说明进行操作。 若要确定你是否拥有 Samsung Knox 设备，请转到“**设置**”&gt;“**关于设备**”。 如果未在此处看到列出了“KNOX 版本”，则你具有本机 Android 设备。
-
-    -   本机（非 Samsung Knox）设备：在“对证书命名”屏幕上，点击“确定”接受默认证书。
-
-    ![“对证书命名”屏幕](./media/and-enroll-7-cert-native.png)
-
-    -   Samsung Knox 设备：接受 Samsung Knox 隐私策略并点击**确认**。
+13.  如果你使用的是 Samsung Knox 设备，请点击“确认”，你将看到一条指示正在注册设备的消息。 如果你使用的是本机 Android 设备，则只需注意下面的屏幕，其中显示正在注册设备。
 
     ![Samsung KNOX 隐私策略](./media/and-enroll-7-knox-privacy-policy.png)
 
-    在 Intune 注册设备时，你会看到以下消息显示在屏幕上。
+    此屏幕显示正在注册设备。
 
     ![注册设备屏幕](./media/and-enroll-8-device-enrolling.png)
 
@@ -123,6 +117,6 @@ ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
+ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
+ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 
 ---
@@ -40,7 +40,23 @@ ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 - 出现一条消息，指出仍需要加密。
 - 尝试使用公司门户应用时，发生错误。
 
-**要执行的操作**：请确保设备上已设置 PIN 或密码。
+**要尝试的操作**： 
+
+1. 确保设备已充电并已插入。
+
+2. 确保设备上已设置 PIN 或密码。
+
+3. 如果已在设备上设置 PIN 或密码，则尝试以下步骤，你的 IT 管理员可能要求你执行这些步骤来增强设备安全性。 你看到的菜单名称可能与这些步骤中的名称略有不同，具体取决于你的 Android 设备类型。
+
+    a. 转到“Settings”（设置） > “Security”（安全） > “Screen lock”（屏幕锁定）。 确认当前的 PIN 或密码。
+
+    b。 在“Choose screen lock”（选择屏幕锁定）屏幕上，选择要使用的屏幕锁定类型。
+
+    c. 在“Secure start-up”（安全启动）屏幕上，点击“Require PIN to start device”（要求输入 PIN 以启动设备），然后点击“Continue”（继续）。
+
+    d. 选择一个 PIN（可以输入之前输入的 PIN），然后点击“Confirm your PIN”（确认你的 PIN）。
+
+    e. 打开公司门户应用，选择你的设备，然后点击“Check Compliance”（检查合规性）。
 
 仍需要帮助？ 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
 
@@ -49,6 +65,6 @@ ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

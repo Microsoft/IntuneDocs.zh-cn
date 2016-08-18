@@ -13,8 +13,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6ddb0fda0e818b09d274276076fd6310d29b99cb
-ms.openlocfilehash: 8ce6b10478927177e5d6d8de0677cf06bed00f08
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
 
 
 ---
@@ -119,7 +119,7 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
 在停用计算机时：
 
--   将会从 Intune 清单中删除该计算机，并且与该计算机关联的许可证将可供重用。
+-   将会从 Intune 管理和清单中删除该计算机，并且与该计算机关联的许可证将可供重用。 停用/擦除会删除 Intune 软件客户端，但不会从计算机中删除应用或数据。
 
 -   其状态不再显示在 Intune 控制台中。
 

@@ -2,9 +2,9 @@
 title: "Intune 评估完成之后的后续步骤 | Microsoft Intune"
 description: "设置 Intune 的免费 30 天评估后，你需要了解有关订阅和授权的哪些内容"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 882ea746690197c98a8f686bd9a0adca591bb988
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
 
 
 ---
@@ -30,10 +30,10 @@ ms.openlocfilehash: 882ea746690197c98a8f686bd9a0adca591bb988
 
 -   **企业协议**（&gt; 250 名用户）- 适用于拥有超过 250 名用户的组织的最佳许可计划。 EA 使你能灵活地选择本地软件和在线服务来最好地适合你的用户需求，并帮助你优化技术支出。 有关详细信息，请与你的 Microsoft 客户经理或本地经销商联系，或查看 [企业批量许可站点](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx)。
 
--   **在线订阅计划**（&lt; 250 名用户）- [在线服务批量许可](http://www.microsoft.com/licensing/online-services/default.aspx)计划是专为用户数少于 250 名的组织制定的。 使用该计划来订阅、管理和部署你的 Intune 服务。
+-   **在线订阅计划**（&lt;250 名用户）— [Online Services 批量许可](http://www.microsoft.com/licensing/online-services/default.aspx)计划是专为用户数少于 250 名的组织设计的。 使用该计划来订阅、管理和部署你的 Intune 服务。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

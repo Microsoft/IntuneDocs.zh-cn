@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: d10bb6ce48ba000154d117b2481690a198d25e49
+ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
+ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: d10bb6ce48ba000154d117b2481690a198d25e49
 >[!NOTE]
 >本文重点介绍将 Intune 设置为独立服务。 或者，如果当前正在使用 Microsoft System Center Configuration Manager 管理计算机和服务器，则可以[扩展 Configuration Manager 以管理移动设备](https://technet.microsoft.com/library/jj884158.aspx)。 可以通过在混合的移动设备管理 (MDM) 部署中将 Intune 与 Configuration Manager 连接来执行此操作。
 
-此快速入门指南中的步骤分享了许多与 [Intune 评估指南](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)中相同的步骤。 但是，在完成评估和准备好开始管理移动设备后，你需要满足几个其他要求：
+此快速入门指南分享了许多与 [Intune 评估指南](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)中相同的步骤。 但是，在完成评估和准备好开始管理移动设备后，你需要满足几个其他要求：
 
 -   使用 Intune 和 Azure Active Directory 同步本地 Active Directory 帐户。
 
@@ -75,6 +75,6 @@ ms.openlocfilehash: d10bb6ce48ba000154d117b2481690a198d25e49
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 
