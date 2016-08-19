@@ -1,0 +1,42 @@
+---
+title: "使用公司门户重置 Android 设备会发生什么情况？ | Microsoft Intune"
+description: 
+keywords: 
+author: staciebarker
+manager: arob98
+ms.date: 05/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
+ROBOTS: noindex,nofollow
+ms.reviewer: arnab
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: ccadd02107f96c680cadd4e3b7a337292c530bae
+
+
+---
+
+
+# 使用公司门户重置 Android 设备会发生什么情况？
+
+使用公司门户重置 Android 设备时，将删除设备上的所有应用、设置和个人数据，并将设备恢复为默认出厂设置。
+
+Samsung Knox 设备通过选择公司门户中的**设备删除**选项可执行“选择性擦除”。 选择性擦除只删除以下内容：
+
+- IT 管理员向你提供的业务应用
+- 电子邮件、VPN 和 WiFi
+- IT 管理员强制实施某些设置的能力
+
+如有疑问，请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+
+### 另请参阅
+[通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
+
+
+<!--HONumber=Jul16_HO3-->
+
+
