@@ -1,5 +1,0 @@
-<Token xmlns:xlink="http://www.w3.org/1999/xlink">对于客户服务，可在太平洋时间星期一到星期五（节假日除外）的早晨 6:30 至下午 5:30，致电 (800) 892-5234 与 Microsoft 销售信息中心联系。</Token>
-
-<!--HONumber=May16_HO2-->
-
-
