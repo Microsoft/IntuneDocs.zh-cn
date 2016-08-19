@@ -13,8 +13,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
-ms.openlocfilehash: e42f49558ea9744b59693be873aa5130c7e1a0c3
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: 947a7ba62d817e6b02d8a6bb0a0d0bddf53e7d4e
 
 
 ---
@@ -44,14 +44,14 @@ Android 移动设备允许用户使用从 Google Play 可用的公司门户应�
     你的用户将需要了解注册其设备的方式以及他们纳入管理之后会出现的情况。 [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 4.  你的用户将需要了解注册其设备的方式以及他们纳入管理之后会出现的情况。
-        - [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-        - [适用于 Windows 设备的最终用户指南](../enduser/using-your-android-device-with-intune.md)
+  - [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [适用于 Windows 设备的最终用户指南](../enduser/using-your-android-device-with-intune.md)
 
 ### 另请参阅
 [为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

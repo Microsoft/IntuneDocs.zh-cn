@@ -13,13 +13,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 2f45c54d18156469488c77600626ea359374a588
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 7376713410e802ffbee6238e7242e6d8ecc204df
 
 
 
 ---
-# 配置证书基础结构
+# 配置 PFX 证书基础结构
 本主题介绍创建和部署 .PFX 证书配置文件所需具备的条件。
 
 若要在组织中执行任何基于证书的身份验证，你需要企业证书颁发机构。
@@ -158,6 +158,6 @@ ms.openlocfilehash: 2f45c54d18156469488c77600626ea359374a588
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
