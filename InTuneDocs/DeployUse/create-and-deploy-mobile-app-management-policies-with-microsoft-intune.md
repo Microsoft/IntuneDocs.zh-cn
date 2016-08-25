@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
+ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
+ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 
 
 ---
@@ -28,12 +28,16 @@ ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
 - 不受任何 MDM 解决方案管理的设备 (BYOD)。
 
 >[!IMPORTANT]
+如果你当前正在使用 **Intune 管理控制台**管理设备，请考虑以下内容：
 
-> 如果你当前使用 **Intune 管理控制台**管理设备，则可以创建一个 MAM 策略，来支持在 Intune 中使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
-在 Intune 管理控制台中创建的 MAM 策略不能导入到 Azure 门户中。  在 Azure 门户中，必须重新创建 MAM 策略。
+> * 你可使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) 创建支持在 Intune 中注册的设备应用的 MAM 策略。
+> * 在 Intune 管理控制台中创建的 MAM 策略不能导入到 Azure 门户中。  在 Azure 门户中，必须重新创建 MAM 策略。
 
+> * 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 Azure 门户是用于创建 MAM 策略的新管理控制台。
 
-> 你可能无法在 Intune 管理控制台中看到全部 MAM 策略设置。 Azure 门户是用于创建 MAM 策略的新管理控制台。 如果你同时在 Intune 管理控制台和 Azure 门户中创建了 MAM 策略，则 Azure 门户中的策略将应用到应用并部署到用户。
+> * 若要部署管理应用，必须在 Intune 管理控制台中创建 MAM 策略。 在此情况下，你可能需要在 Intune 管理控制台和 Azure 门户中创建 MAM 策略：Intune 管理控制台可确保你能部署托管应用，而选择 Azure 门户是因为它是具有所有 MAM 策略设置的新管理控制台。
+
+> * 如果你同时在 Intune 管理控制台和 Azure 门户中创建了 MAM 策略，则在 Azure 门户中创建的策略将应用到应用。
 
 若要查看 Android 和 iOS 平台支持的策略设置的列表，请选择以下值之一：
 
@@ -165,6 +169,6 @@ ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

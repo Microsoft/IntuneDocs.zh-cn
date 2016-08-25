@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # 在 Microsoft Intune 中部署和监视设备法规遵从性策略
 ## 部署合规性策略
-将[创建](create-a-device-compliance-policy-in-microsoft-intune.md)的法规遵从性策略部署到你组织中的一个或多个用户组或设备组。
+将你[创建](create-a-device-compliance-policy-in-microsoft-intune.md)的合规性策略部署到组织中的一个或多个用户组。 将合规性策略部署到用户后，会对用户设备检查合规性。
 
 1.  在“策略”工作区中，选择想要部署的策略，然后选择“管理部署”。
 ![法规遵从性策略页的屏幕截图，显示顶部的“管理部署”菜单选项](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  在“管理部署”对话框中，选择要向其部署策略的一个或多个组，然后选择“添加”>“确定”。
-![“管理部署”对话框的屏幕截图](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)可以将法规遵从性策略部署到用户和/或设备。 使用刚才创建的 Active Directory 组并同步到 Intune，或在 Intune 控制台中手动创建这些组。 若要了解有关如何部署策略的详细信息，请参阅[部署配置策略](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
+![“管理部署”对话框的屏幕截图](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)可以将合规性策略部署到用户。 使用刚才创建的 Active Directory 组并同步到 Intune，或在 Intune 控制台中手动创建这些组。 若要了解有关如何部署策略的详细信息，请参阅[部署配置策略](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 使用“策略”工作区“概述”页的状态摘要和警报来识别需要关注的策略问题。 此外，状态摘要会显示在“仪表板”  工作区中。
 
@@ -72,6 +72,6 @@ ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

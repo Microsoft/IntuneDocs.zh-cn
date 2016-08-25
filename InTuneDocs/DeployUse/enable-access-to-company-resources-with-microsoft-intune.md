@@ -3,7 +3,7 @@ title: "启用对公司资源的访问 | Microsoft Intune"
 description: "Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对所需文件和资源的访问权限。"
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,26 +13,26 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 9448b5fd9121a3bce33b947c79fee7290d2a43f9
+ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
+ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
 
 
 ---
 
 # 使用 Microsoft Intune 启用对公司资源的访问
-Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对成功完成其工作所需的文件和资源的访问权限，无论他们身在何处。 证书配置文件可帮助保护该访问。
+Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对完成其工作所需的文件和资源的访问权限，无论他们身在何处。 证书配置文件可帮助保护该访问。
 
 ## [Wi-Fi 配置文件](wi-fi-connections-in-microsoft-intune.md)和受支持的平台
 
-将无线网络设置部署到你的用户。 通过部署这些设置，你可最小化最终用户连接到公司网络时所需的工作。
+将无线网络设置部署到你的用户。 这些设置便于你的用户连接到公司网络。
 #### 受支持的平台
 
 |Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|是（你可以导入 Windows Wi-Fi 配置文件）|是（你可以配置 OMA-URI） |是|是|是|
+|是（你可以导入 Windows Wi-Fi 配置文件。）|是（你可以配置 OMA-URI。） |是|是|是|
 
 ## [VPN 配置文件](vpn-connections-in-microsoft-intune.md)和受支持的平台
-将虚拟专用网 (VPN) 设置部署到你的用户。 通过部署这些设置，你可最小化最终用户连接到公司网络上的资源时所需的工作。
+将虚拟专用网 (VPN) 设置部署到你的用户。 这些设置便于用户连接到公司网络上的资源。
 
 |Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
@@ -56,6 +56,6 @@ Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 
