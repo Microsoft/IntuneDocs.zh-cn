@@ -2,7 +2,7 @@
 title: "自定义公司门户 | Microsoft Intune"
 description: "说明如何为 Intune 订阅自定义公司门户"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: b7288cff2e589faac32b9d2a80655079d9490590
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: f43888e2ae923afec6c4ffbd4472fd8f36968472
 
 
 ---
@@ -70,6 +70,6 @@ ms.openlocfilehash: b7288cff2e589faac32b9d2a80655079d9490590
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

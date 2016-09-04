@@ -3,19 +3,19 @@ title: "Android 设备没有必需的最低操作系统版本 | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: bb629c3349ae201d5420249a62c5315ec11fc7dd
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 2be0f2f0f10b66fbefabea454defdd2cba34ef66
 
 
 ---
@@ -31,6 +31,7 @@ Android 设备不满足 IT 部门要求的最低操作系统版本。 更新设�
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

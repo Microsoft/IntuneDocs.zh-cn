@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: a1c7b3c02409a49114848864cbb00d0dee9a98a1
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 60e1c18e09f587f2d584f986dc2de05aa9a3cc52
 
 
 ---
@@ -27,13 +27,13 @@ ms.openlocfilehash: a1c7b3c02409a49114848864cbb00d0dee9a98a1
 
 若要打开或关闭“详细日志记录”，请使用你的工作或学校凭据登录到公司门户应用，点击“设置”，然后点击“详细日志记录”设置旁边的开/关按钮。
 
-仍需帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

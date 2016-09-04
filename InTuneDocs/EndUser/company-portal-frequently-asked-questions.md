@@ -3,19 +3,19 @@ title: "关于公司门户 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: fcc0395815499f3a46dafa55c0c74834e37bed97
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
 Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。 你可通过两种不同方式获取公司门户：
 
 - 通过在设备上安装公司门户应用。 通常通过转到设备的应用商店，可以获取公司门户应用，但 IT 管理员也可使用不同的方法为你安装公司门户应用。
-- 通过转到 IT 管理员已设置的[公司门户网站](http://portal.manage.microsoft.com)。 
+- 通过转到 IT 管理员已设置的[公司门户网站](http://portal.manage.microsoft.com)。
 
 公司门户应用和公司门户网站存在一些细微差别，但两者都可执行大部分相同任务。 下面是一些示例：
 
@@ -100,10 +100,6 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 
 
-
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
