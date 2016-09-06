@@ -2,8 +2,8 @@
 title: "与 Microsoft 云服务的 Intune 集成 | Microsoft Intune"
 description: "与 Microsoft 云服务和产品以及其他 Microsoft 产品的 Intune 集成"
 keywords: 
-author: Staciebarker
-manager: arob98
+author: barlanmsft
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e20293f431e0a9ff385f82276d25e71d460230de
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 83020d347a4bc036778d830f5189e68e7f8d85da
 
 
 ---
@@ -42,6 +42,7 @@ ms.openlocfilehash: e20293f431e0a9ff385f82276d25e71d460230de
 [启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

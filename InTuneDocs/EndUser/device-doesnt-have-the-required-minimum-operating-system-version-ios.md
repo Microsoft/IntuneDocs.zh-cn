@@ -3,19 +3,19 @@ title: "iOS 设备没有必需的最低操作系统版本 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 1d5ff475c2cd2ac678ee94f3850c0e18513ffe16
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e0c0955c58ef8d19c5f710b7c788d7db677043df
 
 
 ---
@@ -31,6 +31,7 @@ iOS 设备不满足 IT 部门要求的最低操作系统版本。  更新设备�
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

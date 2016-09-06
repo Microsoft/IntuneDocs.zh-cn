@@ -3,19 +3,19 @@ title: "Android 设备不符合最高操作系统版本 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: ed09e1b374c72fce1f5a4607c6e9cb5e85a5f9bf
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 8c271f284fbaa7a3704f862cf7d9ba8c6a353392
 
 
 ---
@@ -29,6 +29,7 @@ Android 设备不符合有关最高操作系统版本的 IT 管理员策略。 �
 [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

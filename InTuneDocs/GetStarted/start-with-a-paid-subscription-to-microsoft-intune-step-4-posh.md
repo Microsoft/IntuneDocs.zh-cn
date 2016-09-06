@@ -2,7 +2,7 @@
 title: "使用 PowerShell 管理 Intune 许可证 | Microsoft Intune"
 description: "使用 PowerShell 管理 Intune 许可证"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: aac4e230c3670cf27c57b063afac12b604abf53c
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 9108a81d1ec4213bf8fe70408fd7f8eef9691edb
 
 
 ---
@@ -67,6 +67,6 @@ ms.openlocfilehash: aac4e230c3670cf27c57b063afac12b604abf53c
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -14,15 +14,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
-ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-本文包含最终用户在其 Intune 管理的设备上可以执行的所有任务的链接。 IT 管理员可以参考此信息以查看用户执行各种任务时遵循的步骤，这些任务按类别分组为： 
+本文包含最终用户可在其 Intune 托管的设备上执行的所有任务的链接。 IT 管理员可以参考此信息以查看用户执行各种任务时遵循的步骤，这些任务按类别分组为： 
 - 公司门户应用安装和 Intune 注册 
 - 注册后管理任务
 - 合规性问题

@@ -8,9 +8,6 @@
 ### [注册移动设备并安装应用](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [其他选项和其他功能](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [后续步骤](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-## [常见 Intune 评估任务](common-microsoft-intune-evaluation-tasks.md)
-### [开始试用和部署 iOS PIN 策略](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [设置针对 iOS 设备的电子邮件访问权限](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [常见方案](common-ways-to-use-intune.md)
 ## [快速启动指南](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [阻止公司数据从 Office 365 移动应用中泄露](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -25,6 +22,6 @@
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

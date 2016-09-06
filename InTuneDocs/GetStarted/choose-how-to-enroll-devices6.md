@@ -13,8 +13,8 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 38dce11fa7df302bc2dffc3a2352d516c873fedb
+ms.sourcegitcommit: f65bdbc7aa708b37a766275494e080436d9a5485
+ms.openlocfilehash: 3e5c9ed2ba374172ea27b61a34f0746f582f0ebc
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 38dce11fa7df302bc2dffc3a2352d516c873fedb
 ## **你将如何管理专用的 iOS 设备？**
 
   > [!div class="button"]
-  [具有 IMEI 标记 >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 设置助理 >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [具有 IMEI 标记 >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)   [iOS 设置助理 >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [使用 IMEI 进行标记>](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   你可以使用专用用户注册公司拥有的设备，方法如下：
 
@@ -40,6 +40,6 @@ ms.openlocfilehash: 38dce11fa7df302bc2dffc3a2352d516c873fedb
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

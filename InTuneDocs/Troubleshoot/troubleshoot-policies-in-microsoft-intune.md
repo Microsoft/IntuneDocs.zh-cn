@@ -4,7 +4,7 @@ description: "解决策略配置问题。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
-ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
@@ -46,17 +46,6 @@ ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 > [!NOTE]
 > 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
-
-## 策略刷新和更新间隔
-请注意，策略将定期刷新和更新。 一般情况下，应在进行更改后 15 分钟内在设备上注册策略。 以下是有关策略定期刷新的详细信息：
-
--   **针对 MDM 注册的 Windows 设备**：Windows 8.1 和 Windows 10 设备每 8 小时更新一次策略，Windows RT 设备每 24 小时更新一次策略。
-
--   **Windows Phone**：每 8 小时更新一次策略。 这可以通过在“设置”下的“公司门户”中刷新来强制进行。
-
--   **iOS**：每天以随机时间间隔更新一次策略。 也可以通过打开公司门户、选择设备，然后选择**同步**强制进行。
-
--   **Android**：每天以随机时间间隔更新一次策略。 也可以通过打开公司门户、选择设备，然后选择**同步**强制进行。
 
 ## policyplatform.log 中与 Microsoft Intune 策略相关的错误
 对于非 MDM Windows 设备，policyplatform.log 文件中的策略错误可能是因设备上 Windows 用户帐户控制 (UAC) 中的非默认设置导致的。 某些非默认 UAC 设置会影响 Microsoft Intune 客户端安装和策略执行。
@@ -93,9 +82,6 @@ Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策�
 在左侧导航菜单底部有一个“重置安全策略”  链接。 选中它，然后选择**重置策略**按钮。
 对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS），可能需要将其停用并重新注册回服务，这样才能应用限制较少的策略。
 
-## Android 设备在最终用户未接受时不强制实施安全策略更改
-与其他平台不同，Android MDM 不允许服务在设备上强制实施初始策略更改。 这是由于 Android 功能的原因，与 Intune 服务无关。 Android 设备将通过相关策略更改（即密码、加密等）的通知窗口提示最终用户。  最终用户必须响应该提示，一旦接受，即应用策略。
-
 ## 如果公司名称包含特殊字符，则无法创建策略或注册客户端
 **问题：**无法创建策略或注册客户端。
 
@@ -106,6 +92,6 @@ Windows Phone 和 Windows RT 设备不允许通过 MDM 或 EAS 设置安全策�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

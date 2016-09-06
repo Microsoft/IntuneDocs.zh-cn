@@ -13,14 +13,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: 41c21da7c95ef15f817aa344aa5b2d6479b65922
+ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
+ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
 
 
 ---
 
 # 在 Intune 中注册设备以进行管理
 Microsoft Intune 移动设备管理 (MDM) 使用注册将设备纳入管理以及允许访问资源。 注册设备的方式取决于设备类型、所有权和所需管理级别。 “自带设备办公”(BYOD) 和公司拥有的设备 (COD) 方案需要注册过程。 使用 Exchange ActiveSync（在本地或在云中承载）的组织可以实现无需注册的更轻型管理。 还可以使用 Intune 客户端软件管理 Windows 电脑。
+
+请参阅[选择如何注册设备](/intune/get-started/choose-how-to-enroll-devices1)以获取帮助。
 
 ###  支持的设备平台
 
@@ -149,6 +151,6 @@ USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

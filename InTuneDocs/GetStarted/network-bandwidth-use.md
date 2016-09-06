@@ -2,8 +2,8 @@
 title: "Intune 网络带宽使用 | Microsoft Intune"
 description: "Intune 网络带宽使用"
 keywords: 
-author: Staciebarker
-manager: arob98
+author: barlanmsft
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: fe3f3bff7f3b636a24d7b81d308519fb36e998df
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 6534eb7bbff2fba39e1dfa9be4ad01196156cc15
 
 
 ---
@@ -87,6 +87,7 @@ ms.openlocfilehash: fe3f3bff7f3b636a24d7b81d308519fb36e998df
 [启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 
