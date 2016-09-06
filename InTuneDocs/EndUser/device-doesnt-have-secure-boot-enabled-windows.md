@@ -3,19 +3,19 @@ title: "设备未启用安全启动 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: de881f1b-7622-4ec2-8bf8-025f71ca9887
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: f0388a0f73b4ac1a9ee17fd3681bcfcb7a682099
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7b8717799854c9b887e2dc3462ac3c14fbd66f66
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: f0388a0f73b4ac1a9ee17fd3681bcfcb7a682099
 
 # 设备未启用安全启动
 
-组织要求启用 Windows 安全启动。此安全功能有助于保护设备。 
+组织要求启用 Windows 安全启动。此安全功能有助于保护设备。
 
-启用安全启动是一项高级任务。 如果你使用的是移动设备，请联系 IT 管理员获取帮助。 
+启用安全启动是一项高级任务。 如果你使用的是移动设备，请联系 IT 管理员获取帮助。
 
 如果你使用的是 PC，可以与 IT 管理员联系，也可以参阅[禁用安全启动](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)页面中的“重新启用安全启动”部分，尝试自己启用安全启动。
 
@@ -35,6 +35,7 @@ ms.openlocfilehash: f0388a0f73b4ac1a9ee17fd3681bcfcb7a682099
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

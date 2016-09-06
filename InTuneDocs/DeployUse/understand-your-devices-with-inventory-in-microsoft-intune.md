@@ -4,7 +4,7 @@ description: "使用 Intune 查看你管理的设备的硬件的相关信息。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -42,10 +42,10 @@ ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
 |**Exchange ActiveSync ID**|“所有设备”|
 |**已越狱或取得 root 权限**|仅限 iOS 和 Android 设备|
 |**唯一的设备 ID**|Exchange ActiveSync 以外的所有设备|
-|**序列号**|iOS、Mac OS X、Android、Windows 8.1、Windows 10 设备|
-|**总存储空间**|iOS、Mac OS X、Windows 8.1、Windows 10 设备|
-|**可用存储空间**|iOS、Mac OS X、Windows 8.1、Windows 10 设备|
-|**电话号码**<br>例如在运行移动设备清单报表时，归类为企业的手机将以其完整电话号码进行标识。 BYOD 电话号码将使用 &#42屏蔽；仅显示最后 4 位数字。|iOS、Android 和 Windows Phone 设备|
+|**序列号**|iOS、Mac OS X、Android、Windows 8.1 和 Windows 10 设备|
+|**总存储空间**|iOS、Mac OS X、Windows 8.1 和 Windows 10 设备|
+|**可用存储空间**|iOS、Mac OS X、Windows 8.1 和 Windows 10 设备|
+|**电话号码**<br>归类为企业的电话将以其完整的电话号码进行标识（例如在运行移动设备清单报表时）。 将使用 &#42 屏蔽 BYOD 电话号码；仅显示最后 4 位数字。|iOS、Android 和 Windows Phone 设备|
 |**IMEI**|Exchange ActiveSync、iOS、Android 和 Windows Phone 设备|
 |**MEID**<br>移动设备标识符|仅限 iOS 设备|
 |**Wi-Fi MAC**|Exchange ActiveSync 以外的所有设备|
@@ -59,7 +59,7 @@ ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
 |**已启用激活锁定**|仅限 iOS 设备|
 |**已启用加密**|“所有设备”|
 
-## 从 Windows 电脑收集的信息
+## 从 Windows 电脑收集了哪些信息？
 > [!IMPORTANT]
 > 本部分仅适用于运行 Intune Windows 电脑客户端软件的 Windows 电脑。
 
@@ -114,6 +114,6 @@ ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

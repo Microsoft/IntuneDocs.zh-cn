@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -233,6 +233,77 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许用户安装配置文件和证书**|允许用户安装配置文件和证书。|
 |**允许使用设备上的“邮件”应用**|允许使用“邮件”应用发送短信。|
 
+### 显示或隐藏应用
+
+使用“隐藏和显示应用列表”在运行 iOS 9.3 或更高版本的已监督设备上控制以下方面：
+
+- 指定对用户隐藏的应用列表。 用户无法查看，或启动这些应用。
+- 指定用户可以查看和启动的应用列表。 无法查看或启动其他应用。
+
+
+#### 如何创建隐藏或显示的应用列表
+
+指定以下设置：
+
+|设置名|详细信息|
+|-|-|
+|**隐藏和显示的应用列表**|如果想要创建的隐藏或显示的应用列表，请启用此设置。|
+|**隐藏用户列出的应用**|如果想要创建向用户隐藏的应用列表，请选择此选项。|
+|**仅向用户显示列出的应用**|如果想要创建向用户显示的应用列表，请选择此选项。<br>创建这种列表类型时，除了 iOS **设置**和 **电话**（适用于 iPhone）应用外，其他的所有应用都处于隐藏状态。<br>此外，必须将公司门户和任何已部署且使用 Intune 管理的应用添加到列表。|
+|**添加**|将应用添加到选定的列表。<br>对于隐藏列表，必须为要隐藏的每个应用指定**名称**、**发布者**和**应用 URL 或捆绑 ID**。<br>对于显示的列表中，可以**选择托管应用**，它为你提供要从中选择使用 Intune 托管的应用列表，或选择应用商店应用，此后必须为要显示的每个应用指定**名称**、**发布者**和**应用 URL 或捆绑 ID**。|
+|**导入应用**|导入你已在逗号分隔值文件中指定的应用列表。 在文件中使用格式、应用程序名称、发布者和应用 URL。|
+|**编辑**|允许你编辑选定应用的名称、发布者和 URL。|
+|**删除**|从列表中删除选定的应用。|
+
+#### 内置 iOS 应用的应用信息
+
+使用此列表中的信息识别想要显示或隐藏的内置 iOS 应用的名称、发布者和捆绑 ID。 如果想要显示或隐藏列表中的所有应用，可以将下面的数据复制到扩展名为 **.csv** 的文本文件中，然后使用“导入应用”选项同时导入所有应用。
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## 自定义策略设置
 
@@ -266,6 +337,6 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

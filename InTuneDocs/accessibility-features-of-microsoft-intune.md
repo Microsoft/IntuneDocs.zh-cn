@@ -3,8 +3,8 @@ title: "辅助功能 | Microsoft Intune"
 description: "了解 Intune 提供的更易于残障人士使用的功能。"
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 3356ed7337814df1003905dba031b7d65959fc0f
+ms.sourcegitcommit: 55bdbaf5e521caa05d44bc45d4ec226dc05bf64b
+ms.openlocfilehash: 819fdb5bf4fd06a2b3b5010057cdd003e46f4758
 
 
 ---
@@ -48,6 +48,6 @@ ms.openlocfilehash: 3356ed7337814df1003905dba031b7d65959fc0f
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

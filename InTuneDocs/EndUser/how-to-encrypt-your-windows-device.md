@@ -3,19 +3,19 @@ title: "如何加密你的 Windows 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 6/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: 8c3369d760444e222f65573e52e2d23ba61e1d72
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7418330fe3eac4936843eff38cf713cdcb6f64f4
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 8c3369d760444e222f65573e52e2d23ba61e1d72
 
 为了保护公司或学校数据，IT 管理员可能会要求你加密你的 Windows 设备。 如果你有 Windows Phone，并且已经注册，则在需要加密的时候，你的设备将自动进行加密。
 
-如果你有桌面设备，请按照下面的说明来对其进行加密。 
+如果你有桌面设备，请按照下面的说明来对其进行加密。
 
 1.  搜索，然后启动“管理 BitLocker”应用。
 
@@ -34,7 +34,6 @@ ms.openlocfilehash: 8c3369d760444e222f65573e52e2d23ba61e1d72
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

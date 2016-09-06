@@ -3,8 +3,8 @@ title: "Windows 用户如何获取其应用 | Microsoft Intune"
 description: "使 Windows 应用可供最终用户使用的方法"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 79495f03d13e41c5175c857ecbb07ed0221c5fe5
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: 205821f1e6a9685b2a60f6c6d3e0ba3e9e961d85
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 79495f03d13e41c5175c857ecbb07ed0221c5fe5
 
 # Windows 用户如何获取其应用
 
-使用此信息可了解最终用户如何以及在何处获取你通过 Microsoft Intune 分发的应用。 
+使用此信息可了解最终用户如何以及在何处获取你通过 Microsoft Intune 分发的应用。
 
 **必需应用** - 管理员所要求并且在用户参与程度最小的情况下安装在设备上的应用（具体取决于平台）。
 
@@ -38,6 +38,6 @@ ms.openlocfilehash: 79495f03d13e41c5175c857ecbb07ed0221c5fe5
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

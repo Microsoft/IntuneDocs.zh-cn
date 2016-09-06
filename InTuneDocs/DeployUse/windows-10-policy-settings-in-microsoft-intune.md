@@ -75,16 +75,16 @@ ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 |设置名|详细信息|
 |----------------|----------------------|
-|**允许 Web 浏览器**|允许在设备上使用 Edge Web 浏览器。<br>（仅限 Windows 10 移动版）|
+|**允许 Web 浏览器**|允许在设备上使用 Microsoft Edge Web 浏览器。<br>（仅限 Windows 10 移动版）|
 |**允许在地址栏中显示搜索建议**|使搜索引擎在你键入搜索短语时可建议站点。|
 |**允许将 Intranet 流量发送到 Internet Explorer**|允许用户在 Internet Explorer 中打开 intranet 网站。<br>（仅限 Windows 10 桌面版）|
-|**允许使用 Do Not Track**|配置 Edge 浏览器以将“不跟踪”标题发送到用户访问的网站。|
+|**允许使用 Do Not Track**|配置 Microsoft Edge 浏览器以将“不跟踪”标题发送到用户访问的网站。|
 |**启用 SmartScreen**|启用设备上的 SmartScreen 浏览器设置。|
-|**允许使用活动脚本**|允许在 Edge 浏览器中运行 JavaScript 等脚本。|
+|**允许使用活动脚本**|允许在 Microsoft Edge 浏览器中运行 JavaScript 等脚本。|
 |**允许弹出窗口**|启用或禁用浏览器弹出窗口阻止程序。<br>（仅限 Windows 10 桌面版）|
 |**允许使用 Cookie**|允许或禁用 cookie。|
 |**允许自动填充**|允许用户更改浏览器中的自动完成设置。<br>（仅限 Windows 10 桌面版）|
-|**允许使用密码管理器**|启用或禁用 Edge 密码管理器功能。|
+|**允许使用密码管理器**|启用或禁用 Microsoft Edge 密码管理器功能。|
 |**企业模式网站列表位置**|指定在哪里可以找到你想使用企业模式打开的网站的列表。 用户无法编辑此列表。<br>（仅限 Windows 10 桌面版）|
 
 ## - 应用
@@ -302,13 +302,13 @@ ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 |**ExcludedPaths**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**数据类型：**字符串<br /><br />**允许的值：**<br /><br />*&lt;以分号分隔的路径列表&gt;*<br /><br />示例：**c:\test;c:\test1.exe**<br /><br />**默认值：** 未排除任何路径|
 |**ExcludedProcesses**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**数据类型：**字符串<br /><br />**允许的值：**<br>*&lt;以分号分隔的路径列表&gt;*<br>示例：**c:\test.exe;c:\test1.exe**<br>**默认值：** 未排除任何进程|
 
-## - Edge 浏览器
+## - Microsoft Edge 浏览器
 
 |策略名称|详细信息|
 |---------------|------------|-----------|
 |**允许使用浏览器**<br>（仅限移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**：已关闭浏览<br>**1**：已打开浏览（默认值）|
 |**AllowSearchSuggestionsinAddressBar**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**：不显示搜索建议<br>**1**：显示搜索建议（默认值）|
-|**SendIntranetTraffictoInternetExplorer**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**：已禁用（在 Edge 浏览器中打开 Intranet 站点 - 默认值））<br>**1** – 已启用（在 Internet Explorer 中打开 Intranet 站点）。|
+|**SendIntranetTraffictoInternetExplorer**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0**：已禁用（在 Microsoft Edge 浏览器中打开 Intranet 站点 - 默认值））<br>**1** – 已启用（在 Internet Explorer 中打开 Intranet 站点）。|
 |**允许使用 Do Not Track**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** – 已禁用（不发送 DNT - 默认值）<br>**1** – 已启用（不发送）|
 |**配置 SmartScreen**<br>（桌面版和移动版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** – 不允许<br>**1** – 允许（默认值）|
 |**允许弹出窗口**<br>（仅限桌面版）|**URI 完整路径：**./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**数据类型：** 整数<br /><br />**允许的值：**<br>**0** – 阻止弹出窗口（默认值）<br>**1** – 允许弹出窗口|

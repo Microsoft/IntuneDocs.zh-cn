@@ -2,7 +2,7 @@
 title: "创建用于组织用户和设备的组 | Microsoft Intune"
 description: "说明如何为你的 Intune 订阅创建用户和组"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: afdff3d04fa0b6aeba44a3296147ebf207319c49
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 07a2de6922f6b3f3a2b56dfc6bbe4e5f09c7d976
 
 
 ---
@@ -75,6 +75,6 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -3,18 +3,18 @@ title: "常规疑难解答提示 | Microsoft Intune"
 description: "帮助解决 Intune 问题的常规资源。"
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 3fe277417c82bc4d60f355ac5366f0f7d70039ab
+ms.sourcegitcommit: ab7ccf4c72f8e8f3c67c65d99563fe6fbfdd42b9
+ms.openlocfilehash: 94c761071f4b578440297859662102b2b3080899
 
 
 ---
@@ -24,6 +24,7 @@ ms.openlocfilehash: 3fe277417c82bc4d60f355ac5366f0f7d70039ab
 
 > [!NOTE]
 > 若要创建支持请求或查看现有请求，请[访问 Office 365 管理中心](https://portal.office.com/admin/default.aspx)。 有关支持选项的详细信息，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)。
+
 ## 定义问题
 
 -   行为是什么？
@@ -92,6 +93,6 @@ ms.openlocfilehash: 3fe277417c82bc4d60f355ac5366f0f7d70039ab
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

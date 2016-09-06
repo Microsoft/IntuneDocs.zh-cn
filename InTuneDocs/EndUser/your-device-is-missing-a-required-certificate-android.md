@@ -3,19 +3,19 @@ title: "你的设备缺少必需的证书 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
 
 
 ---
@@ -74,7 +74,7 @@ ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. 在“**证书**”对话框中，单击“**证书路径**”选项卡，然后标识你需要从 Internet 获取的证书。 你需要的证书的名称将显示在与上面的示例屏幕截图中突出显示的位置相同的位置上。 
+5. 在“**证书**”对话框中，单击“**证书路径**”选项卡，然后标识你需要从 Internet 获取的证书。 你需要的证书的名称将显示在与上面的示例屏幕截图中突出显示的位置相同的位置上。
 
 ### 在你的 Android 移动设备上下载并安装缺少的证书。
 
@@ -94,12 +94,13 @@ ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
 
 7. 重新打开公司门户应用。 现在应能够登录到公司门户应用。 如果需要帮助，请与你的 IT 管理员联系。
 
-如果你看到相同的“缺少证书”消息（如上所示），且你已经按照上面的步骤执行了操作，这可能意味着还有另一个证书需要你的 IT 管理员帮助你安装。 与你的 IT 管理员取得联系并向他提供该[链接](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)，其中包含有助于解决此问题的步骤。 
+如果你看到相同的“缺少证书”消息（如上所示），且你已经按照上面的步骤执行了操作，这可能意味着还有另一个证书需要你的 IT 管理员帮助你安装。 与你的 IT 管理员取得联系并向他提供该[链接](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)，其中包含有助于解决此问题的步骤。
 
 ### 另请参阅
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "使用 Intune 创建和部署策略，该策略控制你所管理�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ Intune 策略划分为以下类别。 使用的类别会影响创建和部署策
 
 其他变更（如在公司门户中修订合同信息）不会导致立即向设备发送通知。
 
-> [!TIP]
-> 将包含设置的策略部署到 Android 设备时，系统将提示用户他们需要采取操作以遵循策略。 在用户采取此操作或设备重启前，新的策略设置将不会生效。
-
 ### 如果多个策略被部署到同一用户或设备，如何知道会应用哪些设置？
 当两个或多个策略被部署到同一用户或设备时，将在单个设置级别上评估具体应用哪个设置。
 
@@ -215,6 +212,6 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

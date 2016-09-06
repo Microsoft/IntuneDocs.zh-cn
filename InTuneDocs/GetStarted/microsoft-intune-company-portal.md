@@ -2,7 +2,7 @@
 title: "Microsoft Intune 公司门户 |Microsoft Intune"
 description: "设置 Intune 公司门户"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 743be083ca9e8bed989982092f103b18f8f73582
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: b6dc2a6b9f8464bb6accbbc5163700a6d7da1fdb
 
 
 ---
@@ -53,6 +53,6 @@ Intune 公司门户是一种向用户提供公司数据和应用程序访问的�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

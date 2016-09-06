@@ -3,18 +3,18 @@ title: "如何获取支持 | Microsoft Intune"
 description: "对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
 
 
 ---
@@ -25,6 +25,11 @@ ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 本主题介绍如何采用多种语言打开服务请求或电话支持呼叫。
 
 有关 Intune 的自助服务，请参阅[有关 Microsoft Intune 的常规疑难解答提示](general-troubleshooting-tips-for-microsoft-intune.md)，或本主题的“另请参阅”部分中列出的针对特定问题的任何疑难解答主题。
+
+>[!NOTE]
+>
+>高级客户可以在[高级支持页](https://support.microsoft.com/en-us/premier/contacts)上打开 Intune 支持票证。
+
 ## 创建在线服务请求
 
 1.  使用你的 Intune 凭据登录到 [Office 365 管理中心](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage)。
@@ -140,6 +145,6 @@ ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 
