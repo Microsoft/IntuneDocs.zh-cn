@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
+ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
+ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
 
 
 ---
@@ -76,7 +76,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 |**[BYOD](#BYOD)** | 否|    是 |   否 |
 |**[DEM](#DEM)**|   否 |否 |否  |
 
-**公司拥有的设备的注册方法**
+**设备注册方法**
 
 ### BYOD
 “自带设备办公。” 用户安装公司门户应用并注册其设备。 通过公司门户注册设备将会使其加入工作区。 通过公司门户注册 iOS 设备需要 Apple ID。 对于公司拥有的设备，BYOD 无需其他配置。 参阅[设置设备管理](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)的相关步骤。 （[返回到表](#overview-of-device-enrollment-methods)）
@@ -151,6 +151,6 @@ USB 连接、设置助理注册。 管理员创建 Intune 策略并将其导出�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

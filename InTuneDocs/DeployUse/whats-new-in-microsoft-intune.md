@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51ab5d486e7e23d2527f9cb95f105e7916cdb27
-ms.openlocfilehash: 138d362618c9859a55988b7a2ada85e44b0e95c5
+ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
+ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 138d362618c9859a55988b7a2ada85e44b0e95c5
 <!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
 ### iOS 9.3 隐藏和显示的应用
-对于运行 iOS 9.3 或更高版本的设备，你可将 iOS 常规配置策略中的隐藏和显示的应用列表用于：
+对于运行 iOS 9.3 或更高版本的受监管设备，可将 iOS 常规配置策略中的隐藏和显示的应用列表用于：
 - 指定对用户隐藏的应用列表。 用户无法查看，或启动这些应用。
 - 指定用户可以查看和启动的应用列表。 无法查看或启动其他应用。
 
@@ -102,6 +102,13 @@ Intune 的新客户将看到**当前租户执行操作之前的一些安全组�
 ### 向 Android 公司门户添加“通知”
 我们即将于 9 月发布 Android 公司门户的更新，这将在主页上引入一个新的“通知”图标。 点击此图标将访问“**通知**”页，该页将向你的最终用户显示在公司门户应用中需要注意的所有项，例如，设备非合规性、注册更新和注册激活。 如果还使用 iOS 公司门户应用，你将已看到通知体验。 通过引入“**通知**”页，只要设备已经注册，每次启动或恢复 Android 公司门户时，你将不会看到“**公司访问设置**”页。 我们听说你们中的许多人都已创建最终用户指南，而且非常感谢你们在指南/屏幕快照可能需要更新时提前通知我们。 请更新你的文档，以反映体验中即将发生的更改。 在此查找更新的屏幕快照：https://aka.ms/androidcpupdate。  
 
+### iOS 最终用户如何获取应用方面的改进
+于九月份在 iOS 的公司门户应用的应用磁贴中进行以下更改，从一个位置（公司门户网站中）即可将用户指向其所有应用的不同视图。 目前，Apple 限制禁止业务线和托管应用商店应用列于公司门户应用中，并要求用户访问不同视图来查找自己所有的应用。
+
+- **公司应用**磁贴目前指向公司门户网站“全部”选项卡中的所有应用的列表，此行为将继续以同种方式运作。 磁贴名称将更改为“**全部应用**”。
+- **其他应用**磁贴目前指向公司门户应用内部的一个视图，其中列出了 Apple 允许公司门户应用显示的所有应用。 磁贴名称将更改为“**特别推荐的应用**”，点击该磁贴会将用户转到公司门户网站的“特别推荐”选项卡。
+-  **类别**磁贴目前指向公司门户应用内部的一个视图，其中列出了应用类别。 磁贴名称不会更改，但是目前它将指向公司门户网站的“类别”选项卡。 你可以在[此处](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186)查看更新的屏幕截图。
+<!---TFS 1317133--->
 
 ### 云路线图
 通过[云平台路线图](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)实时了解 Intune 即将推出的开发内容。
@@ -146,6 +153,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

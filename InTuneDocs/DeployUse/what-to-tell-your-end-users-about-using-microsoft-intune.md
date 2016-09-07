@@ -3,8 +3,8 @@ title: "最终用户需要了解的有关 Intune 使用的内容 | Microsoft Int
 description: "指向与你的最终用户共享的信息的链接"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
 
 ## 最终用户查找常见任务相关信息的位置
 
-当最终用户查找有关在其设备上使用 Intune 的信息时，向他们提供以下最终用户帮助链接。 在这些链接中，用户会看到有关如何安装公司门户应用、注册其设备、获取托管应用、进行故障排除等等内容的步骤。
+当已注册用户在使用 Intune 过程中需要帮助时，通常会在公司门户网站或公司门户应用中看到一个链接，将其指向特定文章，其中会含有有关如何修复问题或完成任务的步骤。 例如，如果 Android 用户看到提示自己缺少必要证书的消息，该用户可以点击“如何解决此问题”的链接，转到介绍如何获取证书的步骤的文章。 
+
+以下链接适用于 IT 管理员。 这些页面包含指向将用户从公司门户网站或应用转到的所有文章的链接。 此类链接划分为多个部分：公司门户应用安装和 Intune 注册；用户在其设备上可以执行的任务，例如使用托管应用和手动同步自己的设备；及故障排除。
 
 - [通过 Intune 使用 Android 设备](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -59,8 +61,10 @@ ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
 
 若要帮助用户解决在使用公司门户时可能遇到的问题，你可以查看[用户可能在公司门户中看到的消息列表](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)。
 
+如果你还希望本文提供你想了解的其他信息，请将建议添加到本主题底部的“评论”框中。 谢谢!
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

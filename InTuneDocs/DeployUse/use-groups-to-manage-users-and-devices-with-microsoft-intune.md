@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# 在 Microsoft Intune 中使用组来管理用户和设备
+
+本主题介绍如何在 Intune 中创建组。 其中还提供了有关在未来数月将如何更改组的管理的信息。 若要了解有关组管理的*最新*方法，请参阅本主题中的[通过 Microsoft Intune 创建组来管理用户和设备](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)。
+
 ## 请注意有关针对组的管理员体验的即将进行的改进
 
 基于你对跨企业移动性 + 安全性具有一个分组和定位体验的反馈，我们会将 Intune 组转换为基于 Azure Active Directory 的安全组。 这将跨 Intune 和 Azure Active Directory (Azure AD) 统一组管理。 此新体验将使你无需在服务间复制组，并可使用 PowerShell 和 Graph 提供可扩展性。 
@@ -72,7 +76,7 @@ ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
 -  如果你有不具有在 Azure AD 中创建组的权限的管理员，请让你的 Azure AD 管理员将其添加到 **Intune 服务管理员** Azure AD 角色。
 
 
-# 通过 Microsoft Intune 创建组来管理用户和设备
+## 通过 Microsoft Intune 创建组来管理用户和设备
 
 本节介绍如何在 Intune 管理控制台中创建 Intune 组。
 
@@ -208,6 +212,6 @@ ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

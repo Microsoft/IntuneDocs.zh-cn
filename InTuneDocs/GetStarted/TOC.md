@@ -9,7 +9,7 @@
 ### [Company Portal](microsoft-intune-company-portal.md)
 ### [与 Microsoft 云服务和产品的集成](integration-with-cloud-services.md)
 ### [网络带宽使用](network-bandwidth-use.md)
-### [域名](domain-names-for-microsoft-intune.md)
+### [自定义域名](domain-names-for-microsoft-intune.md)
 
 ## [Intune 快速入门指南](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [登录到 Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -23,8 +23,8 @@
 ### [配置后任务](post-configuration-tasks.md)
 
 ## [选择如何管理设备](choose-how-to-manage-devices.md)
-### [移动设备管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows PC 管理功能](windows-pc-management-capabilities-in-microsoft-intune.md)
+### [已注册设备管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Intune 电脑软件客户端功能](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Intune 部署的推出阶段](rollout-phases-for-microsoft-intune-deployment.md)
 ### [项目审视](project-scope.md)
@@ -39,6 +39,6 @@
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

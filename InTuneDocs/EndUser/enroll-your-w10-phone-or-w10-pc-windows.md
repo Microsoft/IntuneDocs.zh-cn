@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 8dd807aa18f7e5729ae1ab1435c3196e324ffe44
+ms.sourcegitcommit: 02287eb01598c28906045fd8def9e8b4660e3da5
+ms.openlocfilehash: 8806231f8d02885a192053a35559694a8984d2f5
 
 
 ---
@@ -29,25 +29,64 @@ ms.openlocfilehash: 8dd807aa18f7e5729ae1ab1435c3196e324ffe44
 
 1.  转到 Windows“设置”，然后点击“帐户”。
 
-    ![settings-accounts](./media/W10-enroll-1-settings-accounts.png)
+    ![settings-accounts](./media/w10-enroll-rs1-settings-accounts.png)
+
+2.  查看接下来的两个屏幕，并找到与你在设备上看到的相似屏幕。 按照与你在设备上看到的屏幕相匹配的步骤操作。
+
+    如果你看到此屏幕，请按照[看到“访问工作单位或学校”时要执行的步骤](#steps-to-follow-if-you-see-access-work-or-school)中的步骤操作。
+
+    ![connect-to-work-or-school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    如果你看到此屏幕，请按照[看到“你的帐户”时要执行的步骤](#steps-to-follow-if-you-see-your-account)中的步骤操作。
+
+    ![your-account](./media/w10-enroll-2-accounts-your-account.png)
+
+## 看到“访问工作单位或学校”时要执行的步骤
+
+1.  点击“**访问工作单位或学校**”。
+
+    ![tap-access-work-school-account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2.  输入你的工作或学校电子邮件，然后点击“**下一步**”。
+
+    ![enter-your-work-or-school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+
+3. 使用你的工作或学校帐户登录 Intune。
+
+    ![add-work-school-account](./media/w10-enroll-rs1-enter-your-credentials.png)
+
+    你将看到指示你的公司或学校正在注册你的设备的消息。
+
+4. 当你看到**设置完成!** 页时，点击“**关闭**”。 大功告成。
+
+  ![tap-close-on-you-are-all-set-screen](./media/w10-enroll-rs1-youre-all-set.png)
+
+5. 如果你想要再次确认是否已正确连接，请返回到“**设置**”，现在你可以看到工作或学校帐户已列出。
+
+    ![validate-that-connection-was-set-up-correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+
+如果执行了以上步骤，但仍无法访问你的工作或学校电子邮件和文件，请按照[看到“访问工作单位或学校”时要执行的故障排除步骤](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)中的步骤操作。
+
+
+## 看到“你的帐户”时要执行的步骤
+
+1.  转到 Windows“设置”，然后点击“帐户”。
+
+    ![go-to-settings-accounts](./media/W10-enroll-1-settings-accounts.png)
 
 2.  点击“你的帐户”。
 
-    ![your-account](./media/W10-enroll-2-accounts-your-account.png)
+    ![tap-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
 3.  点击“添加工作单位或学校帐户”。
 
-    ![add-work-school-account](./media/W10-enroll-3-add-work-school-acct.png)
+    ![add-work-or-school-account](./media/w10-enroll-3-add-work-school-acct.png)
 
 4.  使用工作单位或学校凭据登录。
 
     ![sign-in](./media/W10-enroll-4-sign-in.png)
 
-如果遵循了以上步骤，但仍不能访问你的工作单位或学校电子邮件、文件和其他数据，请返回到“帐户”并点击“工作单位访问”。
-
--   如果你看到你的工作单位或学校帐户，那么恭喜你。 你已连接。
-
--   如果看不到工作单位或学校帐户，请点击“连接”，然后使用工作单位或学校凭据登录。
+如果执行了以上步骤，但仍无法访问你的工作或学校电子邮件、文件和其他数据，则尝试执行[看到“你的帐户”时要执行的故障排除步骤](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)中的故障排除步骤。
 
 我们还建议你安装公司门户应用，通过该应用，你可以轻松地识别和获取与你和你的角色相关的公司应用。 根据公司配置 Intune 的方式，公司门户应用可能已在注册过程中安装。 若要检查你是否具有该应用，请在应用列表中查找“公司门户”。 如果未在应用列表中看到“公司门户”，请按照这些步骤安装它。
 
@@ -62,11 +101,10 @@ ms.openlocfilehash: 8dd807aa18f7e5729ae1ab1435c3196e324ffe44
 仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 ### 另请参阅
-[在 Intune 中注册 Windows 设备](enroll-your-device-in-intune-windows.md)</br>
 [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

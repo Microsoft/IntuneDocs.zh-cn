@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
 >[!IMPORTANT]
 >具有使用新式验证的应用的 PC 和 Windows 10 移动设备的条件性访问当前不可用于所有的 Intune 客户。 如果你已在使用这些功能，则无需采取任何措施。 你可以继续使用它们。
 
->如果你尚未为具有使用新式验证的应用的 PC 或 Windows 10 移动设备创建条件性访问策略，并希望创建该策略，则必须提交请求。  你可以在 [Microsoft Connect 站点](http://go.microsoft.com/fwlink/?LinkId=761472)上了解有关已知问题和如何访问此功能的详细信息。
+>如果你还没有为使用新式验证的应用创建适用于电脑或 Windows 10 移动版的条件访问策略，并且想要执行此操作，可以注册 Azure Active Directory 公开预览版，其中包括针对 Intune 受管理设备或加入域的 Windows 电脑的基于设备的条件访问。 请阅读[此博客文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)以了解详细信息。  
 
 在你可以配置条件性访问**之前**，必须：
 
@@ -196,7 +196,7 @@ ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
         * 不受支持的平台，如 Mac OS。  但是，仍将阻止使用来自这些平台的新式验证的应用。
 
         >[!TIP]
-           如果你尚未使用 PC 的条件性访问，则可能不会看到此选项。  请改用“特定平台”。 针对 PC 的条件性访问当前不可用于所有的 Intune 客户。   你可以在 [Microsoft Connect 站点](http://go.microsoft.com/fwlink/?LinkId=761472)上了解有关已知问题和如何访问此功能的详细信息。
+           如果你尚未使用 PC 的条件性访问，则可能不会看到此选项。  请改用“特定平台”。 针对 PC 的条件性访问当前不可用于所有的 Intune 客户。   你还可以在[此博客文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)中找到有关如何访问此功能的详细信息。
 
     -   **特定平台**
 
@@ -260,6 +260,6 @@ ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

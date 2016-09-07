@@ -1,9 +1,9 @@
 ---
 title: "在 Intune 中注册设备 | Microsoft Intune"
-description: "提供指向有关如何在 Intune 中注册不同设备的步骤的链接"
+description: "提供指向有关如何在 Intune 中注册不同设备的信息的链接"
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/06/2016
 ms.topic: article
 ms.prod: 
@@ -11,8 +11,8 @@ ms.service:
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 4b4ba4c57b8675ad1fde256ce07904af93fd8cd7
+ms.sourcegitcommit: fc18b9f1caf9f0e6c6b1c8d21d95f42a0c40c507
+ms.openlocfilehash: 8d3cc70379fdba7c7e3f6c0c82bc6bfb7b534b2c
 
 
 ---
@@ -34,6 +34,7 @@ ms.openlocfilehash: 4b4ba4c57b8675ad1fde256ce07904af93fd8cd7
 - [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 
