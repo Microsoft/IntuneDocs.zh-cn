@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
 ## 密码设置
 
 |设置名|详细信息
-|----------------|
+|----------------|---|
 |**需要密码才可解锁移动设备**|指定是否必须使用密码锁定设备。<br>（不适用于运行 Windows RT 的设备）。|
 |**所需的密码类型**|指定需要的密码类型，例如仅限数字或字母数字。|
 |**最短密码长度**|指定设备密码中所需的最少字符数。|
@@ -40,7 +40,7 @@ ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
 ## 加密设置
 
 |设置名|详细信息|
-|----------------|
+|----------------|---|
 |**需要对移动设备加密**<sup>1</sup>|需要对设备上的数据进行加密（受支持时）。<br><br>对于 Windows Phone 8 设备，必须将其设置为 **“是”**。<br /><br />若要在 iOS 设备上启用加密，请启用设置“需要密码以解锁移动设备”。|
 |**需要对存储卡进行加密**|需要对存储在外部存储（如 SD 卡）上的数据进行加密（在支持的设备上）。
 <sup>1</sup> 运行 Windows 8.1 的设备的其他信息
@@ -56,7 +56,7 @@ ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
 ## 电子邮件设置
 
 |设置名|详细信息
-|----------------|
+|----------------|---|
 |**允许用户下载电子邮件附件**|指定是否可以将电子邮件附件下载到设备。|
 |**电子邮件同步时间段**|指定将同步到设备的已接收电子邮件的天数。
 |**“允许不完全支持 Exchange ActiveSync 设置的移动设备使用 Exchange 进行同步”**|指定是否在不支持一个或多个 Exchange ActiveSync 设置的设备上允许仅当 Exchange 访问。
@@ -64,13 +64,13 @@ ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
 ## 浏览器设置
 
 |设置名|详细信息
-|----------------|-
+|----------------|---|
 |**允许 Web 浏览器**|指定是否可以使用设备上的 Web 浏览器。<br>（不可用于 Windows RT 或 Windows Phone）。
 
 ## 硬件设置
 
 |设置名|详细信息
-|----------------|
+|----------------|---|
 |**允许照相机**|指定是否可以使用设备上的照相机。<br>（不可用于 Windows RT 或 Windows Phone）。
 
 
@@ -80,6 +80,6 @@ ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
