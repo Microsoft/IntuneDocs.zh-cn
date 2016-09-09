@@ -4,7 +4,7 @@ description: "Intune 中的移动应用配置策略可提供用户在运行 iOS 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f8808c064589128f7daae810ffbcb3595270685d
-ms.openlocfilehash: 953bb702fde1d51303aceff6f84fa62999c5ab57
+ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
+ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
 
 
 ---
@@ -139,6 +139,6 @@ Intune 在属性列表中支持以下数据类型：
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
+ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
 
 
 ---
@@ -29,33 +29,34 @@ ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
 ### 步骤 1：管理证书
 1. 在 Azure Active Directory (Azure AD) 控制台中，导出证书。
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. 以管理员身份运行 Internet Explorer 并登录到 Azure AD 控制台。
+   a. 以管理员身份运行 Internet Explorer 并登录到 Azure AD 控制台。
 
-    b。 在地址栏中选择锁定图标，然后选择“查看证书”。
+   b。 在地址栏中选择锁定图标，然后选择“查看证书”。
 
-    c. 在证书属性的“详细信息”选项卡上，选择“复制到文件”。
+   c. 在证书属性的“详细信息”选项卡上，选择“复制到文件”。
 
-    d. 在“证书导出向导”欢迎页上，选择“下一步”。
+   d. 在“证书导出向导”欢迎页上，选择“下一步”。
 
-    e. 在“导出文件格式”页上，保留默认值“DER 二进制编码 x.509 (.CER)”，然后选择“下一步”。  
+   e. 在“导出文件格式”页上，保留默认值“DER 二进制编码 x.509 (.CER)”，然后选择“下一步”。  
 
-    f. 在“要导出的文件”页上，选择“浏览”以选取要在其中保存文件的位置，并提供文件名。 尽管看起来似乎是你在选择要导出的文件，但实际上是在为导出的证书将要保存到的文件命名。 选择“下一步”&gt;“完成”。
+   f. 在“要导出的文件”页上，选择“浏览”以选取要在其中保存文件的位置，并提供文件名。 尽管看起来似乎是你在选择要导出的文件，但实际上是在为导出的证书将要保存到的文件命名。 选择“下一步”&gt;“完成”。
 
-    #### Safari
+#### Safari
 
-    a. 登录 Azure AD 控制台。
+ a. 登录 Azure AD 控制台。
 
-    b。 选择锁定图标&gt;“详细信息”。
+b。 选择锁定图标&gt;“详细信息”。
 
-    c. 选择“查看证书”&gt;“详细信息”。
+   c. 选择“查看证书”&gt;“详细信息”。
 
-    d. 选择证书，然后选择“导出”。  
+   d. 选择证书，然后选择“导出”。  
 
-    > [!IMPORTANT]
-    > 请检查该证书的到期日期，因为当它过期时，将必须导出该证书并导入新证书。
+> [!IMPORTANT]
+>
+> 请检查该证书的到期日期，因为当它过期时，将必须导出该证书并导入新证书。
 
 
 2. 从 ISE 控制台范围中，将 Intune 证书（你导出的文件）导入到“受信任的证书”存储中。
@@ -146,6 +147,6 @@ ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

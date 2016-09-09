@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
-ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 512ef2416e14f2a44e1c46e996c8519b5776581f
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
 
 Microsoft Intune App SDK for iOS 支持将 Intune 移动应用管理 (MAM) 集成到 iOS 应用中。 已启用 MAM 的应用与 Intune App SDK 相集成，允许 IT 管理员在主动管理移动应用时在该应用上部署策略。
 
-# SDK 包含什么
+## SDK 包含什么
 
 Intune App SDK for iOS 包括一个静态库、资源文件、API 标头、一个调试设置 plist 和一个配置器工具。 移动应用可能只包含资源文件，并且静态链接到库，以便实施大多数策略。 高级的 Intune MAM 功能是通过 API 来实现的。
 本指南将介绍集成 Intune App SDK for iOS 时如何使用以下项目：
@@ -37,13 +37,13 @@ Intune App SDK for iOS 包括一个静态库、资源文件、API 标头、一�
 
 * **标头**：用于公开 Intune App SDK API。 如果你使用 API，则需要包括包含该 API 的标头文件。 
 
-# Intune App SDK 的使用方式
+## Intune App SDK 的使用方式
 
 Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况下将管理功能添加到 iOS 应用中。 降低代码更改量可以缩短产品上市时间，并同时提高移动应用的一致性和稳定性。 
 
 需要将应用链接到静态库，并包含资源包。 MAMDebugSettings.plist 文件是可选的，可以包含在此工具包中，以便模拟要应用到应用的 MAM 策略，而无需通过 Microsoft Intune 部署此应用。 此外，在调试版本中，通过 iTunes 文件共享将 MAMDebugSettings.plist 文件传输到应用的 Documents 目录下，这样可以应用 MAMDebugSettings.plist 文件中的策略。
 
-# 使用 Intune App SDK 生成应用 
+## 使用 Intune App SDK 生成应用 
 
 完成以下步骤来启用 Intune App SDK：
 
@@ -133,7 +133,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 如果你的移动应用在其身份验证中使用 ADAL，请查看本文中的“配置 Azure 目录身份验证库设置”一节。
 
-## 遥测技术 
+### 遥测技术 
 
 默认情况下，Intune App SDK for iOS 记录使用事件的遥测数据，并将其发送到 Microsoft Intune。
 
@@ -155,15 +155,15 @@ Intune App SDK 在其身份验证和条件启动时使用 ADAL。 通常情况�
 
 2. 在项目的 `Info.plist`文件中，在具有键名称 `IntuneMAMSettings` 的 `ADALRedirectUri`字典下面指定要用于 ADAL 调用的重定向 URI。 你可能还需要根据应用的重定向 URI 的格式指定 `ADALRedirectScheme` 。
 
-## 生成扩展（可选） 
+### 生成扩展（可选） 
 
 生成扩展时，请按照与生成移动应用相同的说明执行操作，如本文的“使用 Intune App SDK 生成应用”一节所述。 此外，更新每个扩展的 info.plist 文件，以便在具有包含应用程序的程序包 ID 的 IntuneMAMSettings 字典下面添加 ContainingAppBundleId 键。
 
-## 生成框架（可选）
+### 生成框架（可选）
 
 在应用了对 Intune App SDK 的最新更改后，如果移动应用包含嵌入的应用程序框架，则无需使用任何特定的链接器标志编译此移动应用。 
 
-## 启动时的图像文件（可选）
+### 启动时的图像文件（可选）
 
 当已启用 MAM 的应用由 Microsoft Intune 主动管理时，Intune App SDK 将在应用启动时显示启动屏幕，用于向用户表示此应用已被管理。 你可以选择添加要在“由你的公司管理”启动页面显示的图像文件。 针对图像使用以下准则：
 
@@ -179,7 +179,7 @@ Intune App SDK 在其身份验证和条件启动时使用 ADAL。 通常情况�
 
 **注意**：此屏幕由启动触发，但可以由用户永久关闭。
 
-# 配置 Intune App SDK 设置
+## 配置 Intune App SDK 设置
 
 应用的 `IntuneMAMSettings` 文件中所包含的 `info.plist` 字典用于配置 Intune App SDK。 下面列出了所有支持的设置： 
 
@@ -197,7 +197,7 @@ SplashIconFile~ipad <br>IntuneMAMSettings  | 字符串  | 指定 Intune 的初�
 SplashDuration | 数字 | 应用启动时显示 Intune 初始屏幕的最小时间（以秒为单位）。 默认值为 1.5。 | 可选。
 ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否将所有 ADAL 日志（包括应用的 ADAL 调用，如果有）路由到它自己的日志文件。 默认值为 NO。 如果应用想要设置其自己的 ADAL 日志回调，则设置为 YES。 | 可选。
 
-# Intune App SDK 的标头 
+## Intune App SDK 的标头 
 
 以下标头包括启用 Intune App SDK 的功能所需的 API 函数调用。 
 
@@ -209,7 +209,7 @@ ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否将所有 ADAL 日志（
     IntuneMAMPolicyDelegate.h
     IntuneMAMLogger.h
 
-# 在 Xcode 中调试 Intune App SDK
+## 在 Xcode 中调试 Intune App SDK
 
 在使用 Microsoft Intune 测试已启用 MAM 的应用之前，可以在 Xcode 中使用 `Settings.bundle` 。 这样，你无需连接到 Intune 就可以设置测试策略。 要启用此功能：
 
@@ -230,7 +230,7 @@ ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否将所有 ADAL 日志（
 > [!NOTE]
 > 现在你可以使用“设置 -> 你的应用名称 -> 启用测试策略”来启用和切换设置。
 
-# 建议使用的 iOS 最佳做法
+## 建议使用的 iOS 最佳做法
 
 以下是针对 iOS 进行开发时建议采用的最佳做法：
 
@@ -241,6 +241,6 @@ IOS 文件系统是区分大小写的。 确保文件名的大小写正确，例
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

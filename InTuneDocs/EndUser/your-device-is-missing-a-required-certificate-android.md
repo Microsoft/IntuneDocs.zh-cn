@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 6740962e55b1232330c6fab43ce1250a54e3a97b
 
 
 ---
@@ -96,11 +96,10 @@ ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
 
 如果你看到相同的“缺少证书”消息（如上所示），且你已经按照上面的步骤执行了操作，这可能意味着还有另一个证书需要你的 IT 管理员帮助你安装。 与你的 IT 管理员取得联系并向他提供该[链接](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)，其中包含有助于解决此问题的步骤。
 
-### 另请参阅
-[通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

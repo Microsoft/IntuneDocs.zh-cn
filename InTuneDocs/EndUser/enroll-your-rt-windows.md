@@ -13,8 +13,8 @@ ms.assetid: ca6519e8-d0da-4314-b0bc-1753784d7969
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: ddbe0bd7b9a69a92d5bf4681bf8c897d7712acee
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 33a3a7b2a0fe155a5a4339681fa821ee0ef289aa
 
 
 ---
@@ -47,12 +47,10 @@ ms.openlocfilehash: ddbe0bd7b9a69a92d5bf4681bf8c897d7712acee
 
 仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
-### 另请参阅
-[在 Intune 中注册 Windows 设备](enroll-your-device-in-intune-windows.md)</br>
-[通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+
+<!--HONumber=Aug16_HO5-->
 
 

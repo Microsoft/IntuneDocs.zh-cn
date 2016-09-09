@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ae38f4a28167eb5dcce92db94a35736d03d1e186
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 04ffc982f7003028c276eb855ca7f89f56c45f39
 
 
 ---
@@ -25,11 +25,9 @@ ms.openlocfilehash: ae38f4a28167eb5dcce92db94a35736d03d1e186
 
 IT 管理员设置了允许你在 Windows 设备上使用的最高操作系统版本，但你的设备不符合改设置。 若要了解适用于你设备的允许的最高操作系统版本，需要与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
-### 另请参阅
-[通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
