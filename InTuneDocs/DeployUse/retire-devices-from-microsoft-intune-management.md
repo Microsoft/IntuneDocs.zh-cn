@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # 从 Intune 管理停用设备
 
-无论设备是公司拥有的还是个人的，都会有需要从 Intune 管理中删除受管理设备的时候。 设备停用是一项比较直接的操作。 你可以对作为移动设备进行管理的设备执行选择性擦除或完全擦除。 也可以停用使用 Intune 客户端软件管理的电脑。
+无论设备是公司拥有的还是个人的，都会有需要从 Intune 管理中删除受管理设备的时候。 设备可能会出于多种原因而需要停用：
+
+-   用户以计划方式离开公司（“托管式”离开）
+-   用户突然离开（被解雇、辞职等）。
+-   设备丢失
+-   改变设备用途（转移给其他用户、重新用于其他目的等）
+
+你可以对作为移动设备进行管理的设备执行选择性擦除或完全擦除，或锁定设备并重置设备密码。 擦除设备可释放用户的订阅，从而添加其他设备。 也可以停用使用 Intune 客户端软件管理的电脑。
 
 ## 从设备中擦除数据和应用
 选择性擦除和完全擦除通过删除策略和公司门户从 Intune 管理中删除设备，这意味着设备不再拥有用于登录到公司资源（如 Microsoft SharePoint、电子邮件或 Office 365）所需的凭据。
@@ -62,6 +69,6 @@ ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -13,14 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: 947a7ba62d817e6b02d8a6bb0a0d0bddf53e7d4e
+ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
+ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
 
 
 ---
 
 # 设置 Android 设备管理
-若要设置你的 Windows 设备，可在[此处](../enduser/using-your-android-device-with-intune.md)找到帮助。
+若要设置你的 Android 设备，可在[此处](../enduser/using-your-android-device-with-intune.md)找到帮助。
 
 利用 Microsoft Intune，可以为 Android 设备启用 BYOD（“自带设备办公”），而无需对平台进行任何额外的工作。
 
@@ -52,6 +52,6 @@ Android 移动设备允许用户使用从 Google Play 可用的公司门户应�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

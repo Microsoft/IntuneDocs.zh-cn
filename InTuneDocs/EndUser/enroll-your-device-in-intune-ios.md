@@ -3,8 +3,8 @@ title: "在 Intune 中注册 iOS 设备 | Microsoft Intune"
 description: "介绍如何在 Intune 中注册 iOS 设备"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/18/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 3cf778aa14aab093c9f5d58bda932a35f2db5089
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 3d8b33e5227ed7d13ffc0e6fb7867618c48cac6f
 
 
 ---
@@ -35,62 +35,62 @@ ms.openlocfilehash: 3cf778aa14aab093c9f5d58bda932a35f2db5089
 
 2. 在**公司访问设置**页上，点击**开始**。
 
-    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png) 
+    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
 
 3. 在**为什么要注册设备？**屏幕上，阅读注册设备时你可以执行的操作，然后点击**继续**。
 
-    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png) 
+    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
 4. 查看 IT 管理员在你注册的设备上可以看到和不可以看到的内容的列表，然后点击**继续**。
 
-    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png) 
+    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
 5.  在**接下来会发生的情况**屏幕上，阅读注册期间会发生的情况，然后点击**注册**。
 
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png) 
+    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  在“安装配置文件”屏幕上，点击“安装”，并根据系统提示输入你的密码。
 
-    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png) 
-  
+    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
+
 7.  点击“安装”。
 
     ![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
 
 8.  点击“安装”以表示你已阅读警告。
 
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png) 
+    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  点击“信任”。
 
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png) 
+    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  当屏幕更改为显示配置文件已完成安装时，点击**完成**。
 
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png) 
+    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     “正在注册设备”消息会显示在屏幕上。
 
 11.  当显示一条询问是否要在公司门户中打开页面的消息时，点击**打开**。
 
-    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png) 
+    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
 12. 在“公司访问设置”屏幕上，点击“继续”。 如果 IT 管理员设置了其他安全要求（例如需要设置密码），请按照屏幕上的说明进行操作，直到满足所有合规性要求并返回到“公司访问设置”屏幕，然后点击**继续**。
 
-    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png) 
+    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
-13. 点击“完成”。 
+13. 点击“完成”。
 
-    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png) 
+    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
 
 你的设备现已在 Intune 中注册，你会返回到公司门户应用。
 
 仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
-### 另请参阅
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

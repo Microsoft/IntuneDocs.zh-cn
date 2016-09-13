@@ -1,10 +1,10 @@
 ---
-title: "移动设备管理功能 | Microsoft Intune"
-description: "阅读本主题以了解 Intune 如何帮助你管理使用此服务注册的移动设备。"
+title: "已注册设备管理功能 | Microsoft Intune"
+description: "阅读本主题以了解 Intune 如何帮助你管理注册的设备。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2ef264e963f689bb5a47a795170e0b9915848eec
-ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
+ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
+ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 ---
-# Microsoft Intune 的移动设备管理功能
+# Microsoft Intune 已注册设备管理功能
 
 通过在 Microsoft Intune 服务中*注册*设备，你可以使用 Microsoft Intune 管理各种设备。 你可自己注册一些设备类型，或者用户可使用公司门户应用注册。 这还可让他们执行浏览和安装应用、确保其设备符合公司策略以及联系其 IT 支持人员等操作。
 
@@ -70,6 +70,6 @@ ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
