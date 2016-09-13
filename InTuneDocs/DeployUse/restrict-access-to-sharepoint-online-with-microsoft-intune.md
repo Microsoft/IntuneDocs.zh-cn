@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
 >[!IMPORTANT]
 >具有使用新式验证的应用的 PC 和 Windows 10 移动设备的条件性访问当前不可用于所有的 Intune 客户。 如果你已在使用这些功能，则无需采取任何措施。 你可以继续使用它们。
 
->如果你尚未为具有使用新式验证的应用的 PC 或 Windows 10 移动设备创建条件性访问策略，并希望创建该策略，则必须提交请求。  你可以在 [Connect 站点](http://go.microsoft.com/fwlink/?LinkId=761472)上了解有关已知问题和如何访问此功能的详细信息。
+>如果你还没有为使用新式验证的应用创建适用于电脑或 Windows 10 移动版的条件访问策略，并且想要执行此操作，可以注册 Azure Active Directory 公开预览版，其中包括针对 Intune 受管理设备或加入域的 Windows 电脑的基于设备的条件访问。 请阅读[此博客文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)以了解详细信息。
 
 在配置 SharePoint Online 的条件性访问策略**之前**，必须：
 - 具有 **SharePoint Online 订阅**，并且用户必须获得 SharePoint Online 许可。
@@ -134,7 +134,7 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
         *   Windows 设备需要已注册并合规，并且/或者域已加入本地 Active Directory 域
         * 不受支持的平台，如 Mac。  但是，仍将阻止使用来自这些平台的新式验证的应用。
         >[!TIP]
-        >如果你尚未使用 PC 的条件性访问，则可能不会看到此选项。  请改用“特定平台”。 针对 PC 的条件性访问当前不可用于所有的 Intune 客户。   你可以在 [Microsoft Connect 站点](http://go.microsoft.com/fwlink/?LinkId=761472)上了解有关已知问题和如何访问此功能的详细信息。
+        >如果你尚未使用 PC 的条件性访问，则可能不会看到此选项。  请改用“特定平台”。 针对 PC 的条件性访问当前不可用于所有的 Intune 客户。   你可以在[此博客文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)中查找有关如何访问此功能的详细信息。
 
     -   **特定平台**
 
@@ -189,6 +189,6 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

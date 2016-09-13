@@ -10,6 +10,6 @@
 [Intune 软件客户端](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)可以管理运行 Windows 7 或更高版本的操作系统的 Windows 电脑。 拥有企业管理套件 (EMS) 的客户还可以[使用 Azure Active Directory (AAD) 注册 Windows 10 设备](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)。
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

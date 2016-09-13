@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/15/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e8b6da8348f9c4d8ba1b85687510388cd40eac8a
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: e2493f93c08aaf7c10c47a0835de498349799e28
 
 
 ---
@@ -35,11 +35,10 @@ ms.openlocfilehash: e8b6da8348f9c4d8ba1b85687510388cd40eac8a
 |UserLicenseTypeInvalid|无法注册你的移动设备，因为你的用户帐户还不是所需用户组的成员。<br /><br />请联系你的 IT 管理员，告知其你在尝试注册移动设备时收到消息 **UserLicenseTypeInvalid**，并请其查看此表中的解决办法。|用户必须是正确的用户组成员才能注册其设备。 此消息表明用户持有的指定移动设备管理机构许可证类型不正确。 例如，如果已将 Intune 指定为移动设备管理机构，并且用户正在使用 System Center 2012 R2 Configuration Manager 许可证，则将收到此错误消息。<br /><br />有关详细信息，请查看以下内容：<br /><br />查看 [同步 Active Directory 并将用户添加到 Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) 和[组织用户和设备](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)中的[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)和有关设置用户的信息。|
 |MdmAuthorityNotDefined|IT 管理员需要配置你公司的移动设备的管理方式。<br /><br />请联系你的 IT 管理员，告知其你在尝试注册移动设备时收到消息 **MdmAuthorityNotDefined**，并请其查看此表中的解决办法。|尚未在 Intune 中指定移动设备管理机构。<br /><br />查看[开始使用 Microsoft Intune 的 30 天试用版](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)中的“步骤 6：注册移动设备并安装应用”部分的第 1 项。|
 
-### 另请参阅
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

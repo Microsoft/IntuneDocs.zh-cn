@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 85a036fd910bb91bf8f0728ca2aa486189471ac6
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 481f9570f4c1cf30bfb7be9beef2681fa5fc84f7
 
 
 ---
@@ -32,11 +32,10 @@ ms.openlocfilehash: 85a036fd910bb91bf8f0728ca2aa486189471ac6
 -   在公司门户应用中时，通过摇动设备并在诊断警报出现时点击“电子邮件”。 如果摇动设备时未出现该警报，请打开**设置** &gt; **公司门户**，确保**摇动手势**选项已打开。
 
 
-### 另请参阅
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 
