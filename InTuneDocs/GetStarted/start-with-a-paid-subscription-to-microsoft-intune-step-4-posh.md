@@ -13,14 +13,14 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: a2dbb6dadb2b68ace349e8b9b0567c132ac55482
+ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
+ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
 
 
 ---
 
 # 使用 PowerShell 管理 Intune 许可证
-在登录以使用 Intune 服务或将设备注册到管理组件之前，你必须首先为每个用户分配一个 Intune 订阅的许可证，如[管理 Intune 许可证](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)中所述。 但是，使用 Microsoft 企业移动性套件 (EMS) 的组织中可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。
+在登录以使用 Intune 服务或将设备注册到管理组件之前，你必须首先为每个用户分配一个 Intune 订阅的许可证，如[管理 Intune 许可证](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)中所述。 但是，使用 Microsoft 企业移动性 + 安全性的组织可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。
 
 若要有选择性地为 EMS 服务分配用户许可证，请使用已安装的[用于 Windows PowerShell 的 Azure Active Directory 模块](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule)在计算机上以管理员身份打开 PowerShell。 你可以在本地计算机或 ADFS 服务器上安装 PowerShell。
 
@@ -67,6 +67,6 @@ ms.openlocfilehash: a2dbb6dadb2b68ace349e8b9b0567c132ac55482
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
