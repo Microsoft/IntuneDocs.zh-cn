@@ -13,8 +13,8 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 7474d6fc583c2fd514cfd0b2d0dfd497b1d14480
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
 ## **员工携带他们自己的设备 (BYOD) 还是由你的组织 (COD) 为他们提供？**
 
 > [!div class="button"]
-[BYOD >](choose-how-to-enroll-devices2.md) [COD >](choose-how-to-enroll-devices3.md)
+[BYOD >](choose-how-to-enroll-devices2.md)<br>[COD >](choose-how-to-enroll-devices3.md)
 
 - **用户拥有的设备** -“BYOD”（自带设备办公）注册 – 用户可以在其设备上安装 Intune 公司门户应用，然后注册它，从而获取对公司资源（如电子邮件、公司应用、公司数据和支持）的访问权限。  
 
@@ -34,6 +34,6 @@ ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 
