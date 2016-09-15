@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
-ms.openlocfilehash: f45fc02003c6b40cc15fabeffff35cf0cde1a830
+ms.sourcegitcommit: b0653af30aa6e75888dd72c5b3a4afa0b2b1d596
+ms.openlocfilehash: a3cc5ea639c31e3fec08e86f27f118e193b8f4b3
 
 
 ---
@@ -84,9 +84,6 @@ Intune 的新客户将看到**当前租户执行操作之前的一些安全组�
 公司门户网站将允许最终用户点击位于页面底部的新的“反馈”链接，以便向 Microsoft 发送有关他们对站点的体验的反馈。 收集的匿名信息反馈将帮助 Microsoft 改进用户的公司门户网站体验。
 <!--- TFS 1313657--->
 
-### 向 Android 公司门户添加“通知”
-我们即将于 9 月发布 Android 公司门户的更新，这将在主页上引入一个新的“通知”图标。 点击此图标将访问“**通知**”页，该页将向你的最终用户显示在公司门户应用中需要注意的所有项，例如，设备非合规性、注册更新和注册激活。 如果还使用 iOS 公司门户应用，你将已看到通知体验。 通过引入“**通知**”页，只要设备已经注册，每次启动或恢复 Android 公司门户时，你将不会看到“**公司访问设置**”页。 我们听说你们中的许多人都已创建最终用户指南，而且非常感谢你们在指南/屏幕快照可能需要更新时提前通知我们。 请更新你的文档，以反映体验中即将发生的更改。 有关更新的屏幕快照，请访问：https://aka.ms/androidcpupdate。  
-
 ### iOS 最终用户如何获取应用方面的改进
 于九月份在 iOS 的公司门户应用的应用磁贴中进行以下更改，从一个位置（公司门户网站中）即可将用户指向其所有应用的不同视图。 目前，Apple 限制禁止业务线和托管应用商店应用列于公司门户应用中，并要求用户访问不同视图来查找自己所有的应用。
 
@@ -135,6 +132,6 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
