@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: 7f84ad1566431a7a72897750fadbc90cb56ec5ce
+ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
+ms.openlocfilehash: f45fc02003c6b40cc15fabeffff35cf0cde1a830
 
 
 ---
@@ -102,7 +102,7 @@ Intune 的新客户将看到**当前租户执行操作之前的一些安全组�
 
 ## 服务弃用
 ### 适用于 Windows 8 和 Windows Phone 8 的公司门户应用将从 2016 年 9 月起弃用
-从 2016 年 9 月开始，Microsoft Intune 将结束为适用于 Windows Phone 8 和 Windows 8 平台的 Microsoft Intune 公司门户应用提供支持。 将设备更新到 Windows 8.1 和 Windows Phone 8.1，并使用相应的 Windows 8.1 和 Windows Phone 8.1 公司门户应用继续向这些设备分发应用。
+从 2016 年 10 月开始，Microsoft Intune 将终止对 Windows 8 和 Windows Phone 8 公司门户应用的支持。 另外，Microsoft Intune 还将终止对 Windows Phone 8 平台的支持。 因此，你将无法注册或更新任何 Windows Phone 8 设备。 你可以继续管理已注册的 Windows Phone 8 和 Windows 8 设备。 将 Windows Phone 8 和 Windows 8 设备更新到 Windows 8.1 和 Windows Phone 8.1，并使用相应的 Windows 8.1 和 Windows Phone 8.1 公司门户应用在不中断的情况下继续向这些设备分发应用。
 <!---TFS 1255391--->
 
 ### 通知规则删除的自定义组目标
@@ -135,6 +135,6 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

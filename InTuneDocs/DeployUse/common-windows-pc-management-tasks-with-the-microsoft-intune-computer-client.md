@@ -1,6 +1,6 @@
 ---
 title: "常见 Windows 电脑管理任务 | Microsoft Intune"
-description: "查看本主题中的任务，了解如何管理运行 Intune 电脑客户端软件的计算机。"
+description: "查看本主题中的任务，了解如何管理运行 Intune 软件客户端的 Windows 电脑。"
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# 使用 Microsoft Intune 计算机客户端的常见 Windows PC 管理任务
-查看本主题中的任务，了解如何管理运行 Intune 电脑客户端软件的计算机。 如果你尚未在计算机上安装客户端，请参阅[使用 Microsoft Intune 安装 Windows 电脑客户端](install-the-windows-pc-client-with-microsoft-intune.md)。
+# 使用 Intune 软件客户端的常见 Windows 电脑管理任务
+查看本主题中的任务，了解如何管理运行 Intune 软件客户端的计算机。 如果尚未在计算机上安装客户端，请参阅[安装 Intune 软件客户端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
 
 ## 使用策略来简化电脑管理
-### 管理 Windows 防火墙
-策略可简化被管理的计算机上 Windows 防火墙设置的管理。 有关详细信息，请参阅[在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows 电脑](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
+
+可以使用 Intune 的**计算机管理**策略来管理运行 Intune 软件客户端的 Windows 电脑。
+
+![用于 Windows 电脑的策略模板](../media/pc_policy_template.png)
 
 ### 管理 Microsoft Intune Center
-Microsoft Intune Center 使用户能够：
+用户可以看到 Intune 软件客户端作为 **Microsoft Intune 中心**。 Microsoft Intune Center 使用户能够：
 
 -   从公司门户中获取应用程序。
 
@@ -49,11 +51,14 @@ Microsoft Intune Center 安装在所有被管理的计算机上。 你可以在 
 |**网站 URL**|支持网站的 URL。<br /><br />最大长度：150 个字符|
 |**注意**|向用户显示的注释。<br /><br />最大长度：120 个字符|
 
-### 管理软件更新设置
-使用策略来配置被管理的计算机用于从 Microsoft 和第三方检查并下载软件更新的设置。 有关详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
+## 软件更新设置
+使用策略来配置被管理的计算机用于从 Microsoft 和第三方检查并下载软件更新的设置。 这些更新不包括操作系统升级（即， 从 Windows 7 升级到 Windows 10，或从一个 Windows 10 版本升级到更高版本）。 有关详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
 
-### 管理 Endpoint Protection 设置
+### Endpoint Protection 设置
 使用策略来配置你随后部署到被管理的计算机的 Endpoint Protection 的设置。 其中包括扫描计划、要在检测到恶意软件时采取的操作等设置。 有关详细信息，请参阅[使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
+
+## Windows 防火墙设置
+策略可简化被管理的计算机上 Windows 防火墙设置的管理。 有关详细信息，请参阅[在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows 电脑](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
 
 ## 查看硬件和软件清单
 Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使用下列过程中的信息来了解如何创建：
@@ -113,17 +118,17 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
 2.  选择要停用的设备，然后选择**停用/擦除**。
 
-若要将计算机重新注册到 Intune 中，请使用[使用 Microsoft Intune 安装 Windows 电脑客户端](install-the-windows-pc-client-with-microsoft-intune.md)主题中的信息在该计算机上重新安装客户端软件。
+若要将计算机重新注册到 Intune 中，请使用[使用 Microsoft Intune 安装 Windows 电脑客户端](install-the-windows-pc-client-with-microsoft-intune.md)中的指南在电脑上重新安装软件客户端。
 
 如果计算机无法连接到 Intune，则“仪表板”工作区中会显示一条消息。
 
 在停用计算机时：
 
--   将会从 Intune 管理和清单中删除该计算机，并且与该计算机关联的许可证将可供重用。 停用/擦除会删除 Intune 软件客户端，但不会从计算机中删除应用或数据。
+-   将会从 Intune 管理和清单中删除该计算机，并且与该计算机关联的许可证将可供重用。 停用/擦除会删除 Intune 软件客户端，但不会从计算机中删除应用或数据。 此停用不会在计算机上执行完全擦除。
 
 -   其状态不再显示在 Intune 控制台中。
 
--   Intune 将从计算机中删除客户端软件。 如果计算机未连接到 Intune 服务，则在它下次连接时将会删除客户端软件。
+-   Intune 将从计算机中删除软件客户端。 如果计算机未连接到 Intune 服务，在它下次连接时将会删除软件客户端。
 
 -   Microsoft Intune Endpoint Protection 将从计算机中删除。 如果计算机安装了另一个终结点应用程序，并且此应用程序处于禁用状态，则删除 Microsoft Intune Endpoint Protection 之后，可以重新启用该应用程序以确保计算机得到保护。
 
@@ -160,9 +165,9 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 > [!TIP]
 > 如果想要限制最终用户将自己链接到计算机的能力，则启用“Microsoft Intune 代理设置”策略中的“限制用户将自己链接到计算机的能力”选项。
 
-## 请求并向使用 Intune 客户端软件的 Windows 电脑提供远程帮助
+## 请求并提供 Windows 电脑的远程协助
 
-Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件使运行 Intune 客户端软件的电脑用户可从你处获得远程帮助。 当用户从 Microsoft Intune Center 请求帮助时，你会收到警报通知，可接受请求并提供帮助。
+Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买）使运行 Intune 软件客户端的电脑用户获得由你提供的远程协助帮助。 当用户从 Microsoft Intune Center 请求帮助时，你会收到警报通知，可接受请求并提供帮助。
 此功能将替换 Intune 中现有的 Windows 远程协助功能。
 
 
@@ -211,6 +216,6 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件使运
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 
