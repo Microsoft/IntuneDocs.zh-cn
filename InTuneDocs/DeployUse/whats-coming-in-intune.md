@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0653af30aa6e75888dd72c5b3a4afa0b2b1d596
-ms.openlocfilehash: a3cc5ea639c31e3fec08e86f27f118e193b8f4b3
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: 0949172a7b8517b12fb46e8fd1f8a3cd70d93099
 
 
 ---
@@ -78,25 +78,6 @@ Intune 的新客户将看到**当前租户执行操作之前的一些安全组�
 - 利用报表中的组进行透视
 <!--- TFS 1295329--->
 
-## Company Portal
-
-### 从公司门户到 Microsoft 的反馈链接
-公司门户网站将允许最终用户点击位于页面底部的新的“反馈”链接，以便向 Microsoft 发送有关他们对站点的体验的反馈。 收集的匿名信息反馈将帮助 Microsoft 改进用户的公司门户网站体验。
-<!--- TFS 1313657--->
-
-### iOS 最终用户如何获取应用方面的改进
-于九月份在 iOS 的公司门户应用的应用磁贴中进行以下更改，从一个位置（公司门户网站中）即可将用户指向其所有应用的不同视图。 目前，Apple 限制禁止业务线和托管应用商店应用列于公司门户应用中，并要求用户访问不同视图来查找自己所有的应用。
-
-- **公司应用**磁贴目前指向公司门户网站“全部”选项卡中的所有应用的列表，此行为将继续以同种方式运作。 磁贴名称将更改为“**全部应用**”。
-- **其他应用**磁贴目前指向公司门户应用内部的一个视图，其中列出了 Apple 允许公司门户应用显示的所有应用。 磁贴名称将更改为“**特别推荐的应用**”，点击该磁贴会将用户转到公司门户网站的“特别推荐”选项卡。
--  **类别**磁贴目前指向公司门户应用内部的一个视图，其中列出了应用类别。 磁贴名称不会更改，但是目前它将指向公司门户网站的“类别”选项卡。
-你可以在[此处](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186)查看更新的屏幕截图。
-<!---TFS 1317133--->
-
-### 如果 IT 专业人员为应用设置该要求，则提示安装 iOS 托管浏览器应用
-在 iOS 公司门户应用的九月份发布的版本中，如果你已经将 Web Clip 配置为仅在托管的浏览器中打开，且托管浏览器未在设备上安装，则设备上的公司门户应用将提示用户安装托管浏览器后才能安装 Web Clip。 
-<!---TFS 1228570--->
-
 ## 服务弃用
 ### 适用于 Windows 8 和 Windows Phone 8 的公司门户应用将从 2016 年 9 月起弃用
 从 2016 年 10 月开始，Microsoft Intune 将终止对 Windows 8 和 Windows Phone 8 公司门户应用的支持。 另外，Microsoft Intune 还将终止对 Windows Phone 8 平台的支持。 因此，你将无法注册或更新任何 Windows Phone 8 设备。 你可以继续管理已注册的 Windows Phone 8 和 Windows 8 设备。 将 Windows Phone 8 和 Windows 8 设备更新到 Windows 8.1 和 Windows Phone 8.1，并使用相应的 Windows 8.1 和 Windows Phone 8.1 公司门户应用在不中断的情况下继续向这些设备分发应用。
@@ -132,6 +113,6 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
