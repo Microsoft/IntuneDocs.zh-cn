@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
-ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
+ms.sourcegitcommit: c636efee82331d6feac75153b872526f7af7c882
+ms.openlocfilehash: 814312b0ac6055ffff2efad2ddbdaa8664f84fde
 
 
 ---
@@ -29,6 +29,21 @@ ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
 >博客文章 - 使用 Microsoft Intune 确保移动设备保持最新<br>
 >鉴于最近针对 iOS 设备的“Trident”恶意软件攻击，我们发布了新的博客文章 [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)（使用 Microsoft Intune 确保移动设备保持最新），可帮助用户了解 Intune 可帮助保持设备安全且最新的不同方式。
 
+## 2016 年 9 月
+
+## 公司门户更新
+### Android
+
+**向 Android 公司门户添加“通知”**
+
+已将新的“通知”图标添加到 Android 公司门户的主页上。 点击此图标将访问“通知”页，该页将向你的最终用户显示在公司门户应用中需要注意的所有项，例如，设备非合规性、注册更新和注册激活。 iOS 公司门户应用已经有此通知体验。 拥有此新的“通知”页意味着，只要设备已注册，每次启动或恢复公司门户时，你将不会看到“公司访问设置”页。 如果你创建自己的最终用户指南，可能需要更新你的文档来反映此更改。 在[此处](https://aka.ms/androidcpupdate)查看更新的屏幕截图。  
+<!---TFS 1095560--->
+
+### Windows
+**添加到 Windows Phone 8.1 公司门户应用的反馈按钮**
+
+Windows Phone 8.1 公司门户应用让最终用户能够通过使用新的“发送反馈”按钮发送有关应用的反馈。 要找到该按钮，用户需点击公司门户应用屏幕右下方的的“三个点”菜单，然后点击“发送反馈”。 收集的匿名信息反馈将帮助 Microsoft 改进用户的公司门户应用体验。
+<!---TFS 1317806--->
 
 ## 2016 年 8 月
 ## 应用管理
@@ -87,6 +102,10 @@ Google 正在删除 Android 7.0 设备的 IT 管理员和最终用户远程重�
 <!---TFS 1313253 checked--->
 
 ## 即将推出
+
+### iOS 10 支持
+Intune 完全支持 iOS 10。 详细信息将紧随 iOS 10 公开发行版。
+
 ### Intune 组将于 2016 年 9 月初过渡到 Azure Active Directory 组
 Intune 正在创建将 Azure Active Directory (AAD) 安全组用作 Intune 中的用户和设备组的新组管理体验。 **当我们介绍新的基于 Azure 的 Intune 管理门户时**，这些组将用于所有组管理、策略部署和配置文件部署。
 
@@ -158,6 +177,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
