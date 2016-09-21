@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
-ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
 
 
 ---
@@ -64,7 +64,7 @@ ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
     ![“接下来会发生的情况”屏幕](./media/and-enroll-4d-what-comes-next.png)
 
-10.  如果在使用 Android 6.0 或更高版本，则执行此步骤。 ·сФт，ЗлЧЄЦБПВТ»ІЅЦи。
+10.  如果在使用 Android 6.0 或更高版本，则执行此步骤。 否则，请转到下一步。
 
     如果 IT 管理员设置了特定策略，则你可能会看到以下消息：
     -   **“是否允许公司门户发起和管理电话呼叫?”**
@@ -112,11 +112,10 @@ ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 仍需要帮助？ 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
 
 
-### 另请参阅
-[通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,7 +4,7 @@ description: "使用 VPN 配置文件将 VPN 设置部署到组织中的用户�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
+ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
+ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
 你可以使用 VPN 配置文件配置下列设备类型：
 
 * 运行 Android 4 和更高版本的设备
-* 运行 iOS 7.1 和更高版本的设备
+* 运行 iOS 8.0 及更高版本的设备
 * 运行 Max OS X 10.9 和更高版本的设备
 * 运行 Windows 8.1 和更高版本的已注册设备
 * 运行 Windows Phone 8.1 和更高版本的设备
@@ -45,6 +45,8 @@ Intune 支持使用以下连接类型创建 VPN 配置文件：
 连接类型 |iOS 和 Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 桌面版和移动版 |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|是 |是   |否    |     否    |否  |否    | 是（OMA URI，仅限移动版）|     
+Cisco (IPsec)|是 |否   |否  |  否|否  |否 | 否|
+Citrix|是 |否   |否  |  否|否  |否 | 否|
 脉冲安全|是  |是 |是   |否  |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |否  |是  |   是 |  是|   
 Dell SonicWALL Mobile Connect|是 |是 |是 |否  |是 |是 |是|         
@@ -83,7 +85,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**” > “**添加策略**”。
 2. 展开相关设备类型以选择新策略模板，然后为该设备选择 VPN 配置文件：
     * **VPN 配置文件（Android 4 及更高版本）**
-    * **VPN 配置文件（iOS 7.1 及更高版本）**
+    * **VPN 配置文件（iOS 8.0 及更高版本）**
     * **VPN 配置文件（Mac OS X 10.9 及更高版本）**
     * **VPN 配置文件（Windows 8.1 及更高版本）**
     * **VPN 配置文件（Windows Phone 8.1 及更高版本）**
@@ -111,6 +113,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 **登录组或域**|指定你想要连接到的登录组或域的名称。 此选项仅在连接类型为“Dell SonicWALL Mobile Connect”时显示。
 **指纹**|指定一个将用于验证 VPN 服务器是否可以信任的字符串（例如“Contoso Fingerprint Code”）。 指纹可以：发送到客户端，因此在连接时它知道信任任何提供相同指纹的服务器。 如果设备还没有指纹，则会提示用户信任正在连接的 VPN 服务器，并显示指纹。 （用户手动验证指纹，并选择“**信任**”进行连接）。此选项仅在连接类型为“**CheckPoint Mobile VPN**”时显示。
 **按应用 VPN**|如果你想要将此 VPN 连接与 iOS 或 Mac OS X 应用相关联，以便在运行该应用时打开连接，请选择此选项。 可在部署软件时将 VPN 配置文件与应用关联。 有关详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)。
+**按需 VPN**|可以为 iOS 8.0 及更高版本的设备设置按需 VPN。 [iOS 设备的按需 VPN](#on-demand-vpn-for-ios-devices)中提供了进行此设置的说明。
 “**自动检测代理设置**”（仅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1）|如果你的 VPN 服务器要求使用代理服务器进行连接，请指定你是否希望设备自动检测连接设置。 有关详细信息，请参阅 Windows Server 文档。
 **使用自动配置脚本**（仅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1）|如果你的 VPN 服务器要求使用代理服务器进行连接，请指定是否想要使用自动配置脚本来定义设置，然后指定包含该设置的文件的 URL。 有关详细信息，请参阅 Windows Server 文档。
 **使用代理服务器**（仅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1）|如果你的 VPN 服务器要求使用代理服务器进行连接，请选择此选项，然后指定代理服务器的地址和端口号。 有关详细信息，请参阅 Windows Server 文档。
@@ -141,6 +144,32 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 新的策略将在“**策略**”工作区的“**配置策略**”节点处显示。
 
+### iOS 设备的按需 VPN
+可以为 iOS 8.0 及更高版本的设备配置按需 VPN。
+
+> [!NOTE]
+>  
+> 不能在同一个策略中使用每个应用程序 VPN 和按需 VPN。
+ 
+1. 在策略配置页中，找到**此 VPN 连接的按需规则**。 将这些列标记为**匹配**（这些规则所检查的条件）以及标记为**操作**条件匹配时策略所触发的操作）。 
+2. 选择“**添加**”创建规则。 可以在规则中设置两种类型的匹配项。 只能为每个规则配置其中一种类型。
+  - **SSID**，表示无线网络。 
+  - **DNS 搜索域**，这些是.....  可以使用完全限定的域名，如 *team. corp.contoso.com*，或者使用域，如 *contoso.com*，这相当于使用  contoso.com*。
+3. 可选：提供 URL 字符串探测，这是规则用作测试的 URL。 如果安装有此配置文件的设备能在不重定向的情况下访问此 URL，则将建立 VPN，且该设备将连接到目标 URL。 用户将看不到该 URL 字符串探测站点。 URL 字符串探测示例是审核 Web 服务器的地址，用于在连接 VPN 前检查设备的相容性。 另一种可能性是 URL 通过 VPN 将设备连接到目标 URL 前，测试 VPN 连接至站点的能力。
+4. 选择以下操作之一：
+  - **连接**
+  - **评估连接**，具备三个设置 a。 **域操作** - 选择“**需要时进行连接**”或“**从不连接**”
+      b。 **逗号分隔的域列表** - 仅当你选择“**需要时进行连接**”的**域操作**，才会对其进行配置 
+      c。 **所需的 URL 字符串探测** - HTTP 或 HTTPS（首选）URL，如 *https://vpntestprobe.contoso.com*。 该规则将进行检查以确认是否有来自此地址的响应。 如果没有，并且**域操作**为“**需要时进行连接**”，则会触发 VPN。
+     > [!TIP]
+     >
+     >举例说明，当公司网络上的某些站点需要直接或 VPN 公司网络连接时，你可能会使用此操作，但其他情况则不需要。 如果在**逗号分隔的 DNS 搜索域列表** *corp.contoso.com* 中列出，则可以选择“**需要时进行连接**”，然后列出可能需要 VPN 的网络中的特定站点，如 *sharepoint.corp.contoso.com*。 然后该规则将检查是否可以访问 *vpntestprobe.contoso.com*。 如果不能，VPN 将会触发 sharepoint 站点。
+  - **忽略** - 这会导致 VPN 连接不发生更改。 如果 VPN 已连接，则保留连接状态，如果未连接，则不要进行连接。 例如，你可能有一个为所有内部企业网站连接 VPN 的规则，但仅当设备实际连接到公司网络时，才可访问其中一个内部站点。 在这种情况下，你将为该站点创建忽略规则。
+  - **断开连接** - 当条件匹配时，断开设备与 VPN 的连接。 例如，你可以在 **SSID** 字段中列出公司无线网络，并在设备连接到其中一个网络时，创建一个规则来断开设备与 VPN 的连接。
+
+在创建所有域规则之前评估特定于域的规则。 
+
+
 ## 部署策略
 
 1.  在“**策略**”工作区中，选择想要部署的策略，然后选择“**管理部署**”。
@@ -163,6 +192,6 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

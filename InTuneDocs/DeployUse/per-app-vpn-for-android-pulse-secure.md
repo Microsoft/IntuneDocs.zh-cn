@@ -4,7 +4,7 @@ description: "可为 Intune 托管的 Android 设备创建 per-app VPN 配置文
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a2464a9d2276319f75a3da7db70c2613152bed9b
-ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
+ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
+ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
 
 
 ---
 
 # 使用自定义策略创建适用于 Android 设备的 per-app VPN 配置文件
 
-可为 Intune 托管的 Android 设备创建 per-app VPN 配置文件。 首先，创建使用 Pulse Secure 连接类型的 VPN 配置文件。 然后，创建将 VPN 配置文件与特定应用关联的自定义配置策略。 将此策略部署到 Android 设备或用户组后，当用户打开这些设备之一上的一个特定应用时，此应用的 VPN 连接打开。
+可为由 Intune 管理的 Android 5.0 及更高版本设备创建每应用 VPN 配置文件。 首先，创建使用 Pulse Secure 连接类型的 VPN 配置文件。 然后，创建将 VPN 配置文件与特定应用关联的自定义配置策略。 
+
+将策略部署到 Android 设备或用户组后，用户应启动 PulseSecure VPN。 然后，PulseSecure 将仅允许来自指定应用的通信使用打开的 VPN 连接。
 
 > [!NOTE]
 >
@@ -49,8 +51,7 @@ ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
    6. 为**OMA-URI**指定以下字符串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中*Name*是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
    7.   对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
 
-
-    ![Android per-app VPN 自定义策略示例](..\media\android_per_app_vpn_oma_uri.png)
+![Android per-app VPN 自定义策略示例](./media/android_per_app_vpn_oma_uri.png)
 
 #### 将应用列表设置为方块列表或允许列表（可选）
   通过使用**方块列表**值，可指定列表中的应用将*不能*使用 VPN 连接。 所有其他应用将通过 VPN 连接。
@@ -76,6 +77,6 @@ ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

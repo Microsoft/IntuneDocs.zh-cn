@@ -4,7 +4,7 @@ description: "列出了 Intune 可提供帮助的六个最常见任务"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
+ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
+ms.openlocfilehash: 9cb6a1e28e36a972a14cb39c12c3a539f4425c71
 
 
 ---
@@ -26,15 +26,19 @@ ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
 >[!NOTE]
 >是否想了解 Microsoft IT 如何使用 Intune 来允许 Microsoft 员工访问其移动设备上的公司资源，同时保护公司数据？ 若要详细了解 Microsoft IT 如何使用 Intune 和其他服务来管理标识、设备、应用及数据，请[阅读本技术案例研究](https://www.microsoft.com/itshowcase/Article/Content/588)。  
 
-## 保护你的本地电子邮件和数据以供移动设备安全访问
-大多数企业移动性战略的第一步是制定一项计划，使在外部 Internet 上使用移动设备的员工能够安全地访问电子邮件。 许多组织仍然在公司网络上托管了本地数据和应用程序服务器（如 Microsoft Exchange）。 Intune 和企业移动性套件 (EMS) 为 Exchange Server 提供了独一无二的集成式[条件访问解决方案](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)，确保在向 Intune 注册设备之前，任何移动应用都无法访问电子邮件，并且完全无需在公司网络边缘再部署一个网关计算机！
+>[!IMPORTANT]
+>确保移动设备保持最新<br>
+>鉴于最近针对 iOS 设备的“Trident”恶意软件攻击，我们发布了新的博客文章 [Ensuring mobile devices are up to date using Microsoft Intune（使用 Microsoft Intune 确保移动设备保持最新）](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)，可帮助用户了解 Intune 可帮助保持设备安全且最新的不同方式。
 
-除了电子邮件，Intune 还支持对需要安全访问本地数据的移动应用（例如业务线应用服务器）启用访问权限。  为此，通常需要将用于访问控制的 [Intune 托管证书](/en-us/intune/deploy-use/secure-resource-access-with-certificate-profiles)与外围中的标准 VPN 网关或代理（如 Microsoft Azure AD 应用程序代理）结合使用。  在这些情况下，访问公司数据的唯一方法是将设备注册到管理系统中。  注册后，管理系统可确保访问公司数据的设备符合你的策略。  此外，可以借用 Intune 的[应用包装工具和应用 SDK](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) 将已访问的数据包含在业务线应用中，这样它就不能将公司数据传递给消费者应用或服务。
+## 保护你的本地电子邮件和数据以供移动设备安全访问
+大多数企业移动性战略的第一步是制定一项计划，使在外部 Internet 上使用移动设备的员工能够安全地访问电子邮件。 许多组织仍然在公司网络上托管了本地数据和应用程序服务器（如 Microsoft Exchange）。 Intune 和 Microsoft 企业移动性 + 安全性 (EMS) 为 Exchange Server 提供了独一无二的集成式[条件访问解决方案](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)，确保在向 Intune 注册设备之前，任何移动应用都无法访问电子邮件，并且完全无需在公司网络边缘再部署一个网关计算机！
+
+除了电子邮件，Intune 还支持对需要安全访问本地数据的移动应用（例如业务线应用服务器）启用访问权限。  为此，通常需要将用于访问控制的 [Intune 托管证书](/intune/deploy-use/secure-resource-access-with-certificate-profiles)与外围中的标准 VPN 网关或代理（如 Microsoft Azure AD 应用程序代理）结合使用。  在这些情况下，访问公司数据的唯一方法是将设备注册到管理系统中。  注册后，管理系统可确保访问公司数据的设备符合你的策略。  此外，可以借用 Intune 的[应用包装工具和应用 SDK](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) 将已访问的数据包含在业务线应用中，这样它就不能将公司数据传递给消费者应用或服务。
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
 ## 保护你的 Office 365 电子邮件和数据以供移动设备安全访问
-在 Office 365 中保护公司数据（电子邮件、文档、即时消息、联系人）既方便了你，又给用户带来了更加顺畅的体验。 Intune 和企业移动性套件提供了独一无二的集成式条件性访问解决方案，确保用户、应用或设备在符合公司的合规性要求（已执行[多重身份验证](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)，已向 Intune 注册，使用托管应用、受支持的 OS 版本、设备 PIN 和低用户风险配置文件等等）之前无法访问 Office 365 数据。 位于其各自应用存储中的 Office 移动应用可以与数据包含策略（可通过 Intune 配置）结合使用，使你能够避免与不受 IT 管理的应用（例如本机电子邮件应用）和存储位置（例如 Dropbox）共享数据。  此功能完全内置于 Office 365 和 EMS 中。  你无需部署其他基础结构便可获得此功能。
+在 Office 365 中保护公司数据（电子邮件、文档、即时消息、联系人）既方便了你，又给用户带来了更加顺畅的体验。 Intune 和 Microsoft 企业移动性 + 安全性提供了独一无二的集成式条件性访问解决方案，确保用户、应用或设备在符合公司的合规性要求（已执行[多重身份验证](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)，已向 Intune 注册，使用托管应用、受支持的 OS 版本、设备 PIN 和低用户风险配置文件等等）之前无法访问 Office 365 数据。 位于其各自应用存储中的 Office 移动应用可以与数据包含策略（可通过 Intune 配置）结合使用，使你能够避免与不受 IT 管理的应用（例如本机电子邮件应用）和存储位置（例如 Dropbox）共享数据。  此功能完全内置于 Office 365 和 EMS 中。  你无需部署其他基础结构便可获得此功能。
 
 在常见的 Office 365 部署做法中，如果需要使用公司应用/证书/Wi-Fi/VPN 配置完全预配设备（通常是公司拥有的设备），则必须将设备注册到管理系统中。  但是，如果用户只需访问公司电子邮件和文档（通常是个人拥有的设备），那么他需要使用 Office 移动应用（你已向其[应用数据包含策略](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)）并且完全跳过设备注册！  无论哪种方式，Office 365 数据都将受到已定义策略的保护。
 
@@ -62,12 +66,12 @@ Intune 提供了[大量预配和管理解决方案](/intune/deploy-use/manage-co
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## 允许你的员工从不受管理的公用网亭安全访问 Office 365
-有时，你的员工需要使用你无法管理的设备、应用或浏览器，例如展销会和酒店大堂的公用计算机。 你是否应该允许你的员工从其访问公司电子邮件？ 使用 Intune 和企业移动套件，<!--you have choices. The-->答案可以是“不”，你只需[限制为只允许受组织管理的设备访问电子邮件](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  这将确保经过强身份验证的员工不会无意中将公司数据留在不受信任的计算机上。
+有时，你的员工需要使用你无法管理的设备、应用或浏览器，例如展销会和酒店大堂的公用计算机。 你是否应该允许你的员工从其访问公司电子邮件？ 使用 Intune 和 Microsoft 企业移动性 + 安全性，<!--you have choices. The-->答案可以是“不”，你只需[限制为只允许受组织管理的设备访问电子邮件](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  这将确保经过强身份验证的员工不会无意中将公司数据留在不受信任的计算机上。
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

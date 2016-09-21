@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
 
 
 ---
@@ -25,7 +25,9 @@ ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
 ## **你的公司拥有的设备是共享的还是他们拥有专用用户？**
 
 > [!div class="button"]
-[共享 >](choose-how-to-enroll-devices4.md)   [专用 >](choose-how-to-enroll-devices6.md)
+[共享 >](choose-how-to-enroll-devices4.md)
+> [!div class="button"]
+[专用 >](choose-how-to-enroll-devices6.md)
 
 - **共享公司拥有的设备** - 这些设备没有单个用户，并且通常没有配置为可以访问电子邮件。 例如，网亭设备或面向任务的设备用户根据需要从池中抽取，然后返回。 建议的注册方法取决于设备的平台。
 
@@ -36,6 +38,6 @@ ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

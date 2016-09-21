@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
-ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
+ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
+ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 
 ---
@@ -108,6 +108,8 @@ ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
     为了被视为符合规范，PC 必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中进行注册且符合相应的策略。
 
     对于加入域的电脑，必须将它设置为[自动向 Azure Active Directory 注册设备](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。
+    >[!NOTE]
+    >运行 Intune 计算机客户端的电脑上不支持条件访问。
 
 -   [Office 365 新式验证必须已启用](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，且具有所有最新的 Office 更新。
 
@@ -260,6 +262,6 @@ ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

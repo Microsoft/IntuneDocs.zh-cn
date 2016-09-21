@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# 使用 Microsoft Intune 安装 Windows PC 客户端
-使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。
+# 在 Windows 电脑上安装 Intune 软件客户端
+通过安装 Intune 客户端软件来注册 Windows 电脑。 Intune 客户端软件可以通过以下方式安装：
 
-## 开始之前
-在开始安装 Intune 客户端软件之前，请阅读[解决 GPO 与 Microsoft Intune 之间的策略冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)主题以了解正确安装客户端所必备的前提条件，然后返回到这些说明。
+- 手动安装
+- 使用组策略安装
+- 包括在磁盘映像中
+- 由用户安装
 
-## 安装客户端
-使用以下步骤安装客户端：
+## 下载 Intune 客户端软件
 
--   [下载客户端软件](#to-download-the-client-software)
-
-然后使用下列一种或多种方法来安装客户端：
-
--   [手动部署客户端软件](#to-manually-deploy-the-client-software)
-
--   [使用组策略自动部署客户端软件](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [安装 Microsoft Intune 客户端软件作为映像的一部分](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-如果不再需要使用 Intune 管理计算机，你可以停用计算机，这样即可同时从计算机中删除客户端软件。 有关详细信息，请参阅[Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
-
-### 下载客户端软件
+除用户自行安装 Intune 客户端软件之外，其余所有方法都需要下载软件用于部署。
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“管理”&gt;“客户端软件下载”
 
-  ![下载 Intune PC 客户端](./media/pc-SA-client-download.png)
+  ![下载 Intune PC 客户端](../media/pc-sa-client-download.png)
 
 2.  在“客户端软件下载”页上，单击“下载客户端软件”，然后将包含该软件的“Microsoft_Intune_Setup.zip”程序包保存到网络上的安全位置。
 
@@ -56,14 +45,14 @@ ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
     > [!IMPORTANT]
     > 请不要重命名或删除提取的 **ACCOUNTCERT** 文件，否则客户端软件安装将失败。
 
-### 手动部署客户端软件
+## 手动部署
 
 1.  在计算机上，浏览到客户端软件安装文件所在的文件夹，然后运行“Microsoft_Intune_Setup.exe”来安装客户端软件。
 
     > [!NOTE]
     > 当你将鼠标悬停在客户端计算机上任务栏中的图标上时，将显示安装的状态。
 
-### 使用组策略自动部署客户端软件
+## 使用组策略部署
 
 1.  在包含文件 **Microsoft_Intune_Setup.exe** 和 **MicrosoftIntune.accountcert** 的文件夹中，运行以下命令提取适用于 32 位和 64 位计算机且基于 Windows Installer 的安装程序：
 
@@ -80,7 +69,7 @@ ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 
     有关如何使用组策略来自动部署软件的详细信息，请参阅 Windows Server 文档。
 
-### 安装 Microsoft Intune 客户端软件作为映像的一部分
+## 作为映像的一部分安装
 通过使用以下示例过程作为基础，你可以将 Intune 客户端软件作为操作系统映像的一部分部署到计算机：
 
 1.  将客户端安装文件“Microsoft_Intune_Setup.exe”和“MicrosoftIntune.accountcert”复制到引用计算机上的“%Systemdrive%\Temp\Microsoft_Intune_Setup”文件夹。
@@ -109,6 +98,12 @@ ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 当自动注册任务在下一个计划的时间运行时，它会检查是否存在“WindowsIntuneEnrollPending”注册表值，并尝试在 Intune 中注册目标 PC。 如果注册由于任何原因失败，则下次运行任务时会重新尝试注册。 重新尝试会持续一个月。
 
 注册成功后或一个月后，系统就会从目标计算机中删除 Intune 自动注册任务、“WindowsIntuneEnrollPending”注册表值和帐户证书。
+
+## 指示用户自行注册
+
+用户可以通过浏览到 [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com) 安装 Intune 客户端软件。 如果 Web 门户可以检测到该设备是 Windows 电脑，它将提示通过下载 Intune 软件客户端来注册电脑。 下载完成后，用户可以安装软件以对其电脑进行管理。
+
+![Intune 门户提示下载 Intune 软件客户端](../media/software-client-download.png)
 
 ## 监视和验证成功的客户端部署
 使用下列过程之一来帮助你监视和验证成功的客户端部署。
@@ -139,6 +134,6 @@ ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

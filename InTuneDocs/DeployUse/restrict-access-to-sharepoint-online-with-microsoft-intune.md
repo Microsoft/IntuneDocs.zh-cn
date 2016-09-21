@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
-ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
+ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
+ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
 
 
 ---
@@ -83,6 +83,9 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
   - 如果策略设置为要求加入域，且 PC 未加入域，则会显示一条与 IT 管理员联系的消息。
 
   - 如果策略设置要求加入域或合规，且 PC 不符合任一要求，则会显示一条消息，其中包含有关如何安装公司门户应用和进行注册的说明。
+  >[!NOTE]
+  >运行 Intune 计算机客户端的电脑上不支持条件访问。
+
 -    [Office 365 新式验证必须已启用](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，且具有所有最新的 Office 更新。
 
     新式验证将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Office 2013 Windows 客户端中，并实现诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。
@@ -189,6 +192,6 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

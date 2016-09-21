@@ -4,7 +4,7 @@ description: "使用 Intune 查看你管理的设备的硬件的相关信息。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/17/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
-ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
+ms.sourcegitcommit: 18ef1ca18244b202a35fc8fc23fc994105b7b47e
+ms.openlocfilehash: ff55533499494488cd4cd692c6e36fe547ade3e4
 
 
 ---
 
 # 在 Microsoft Intune 中了解你的设备清单
 通过 Microsoft Intune，你可查看运行 Intune 客户端软件的已注册设备和 Windows 电脑的清单。
+Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报表显示最近对设备进行的任何更改（例如，对设备名称的更改，或对免费存储空间的更改）的结果前可能会有一定的延迟。
 
 ## 从已注册的设备中收集了哪些信息？
 若要查看移动设备收集的清单，请运行[移动设备清单报表](understand-microsoft-intune-operations-by-using-reports.md)。 Intune 将从已注册设备收集以下清单：
@@ -114,6 +115,6 @@ ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
