@@ -4,7 +4,7 @@ description: "本主题有助于解决 Microsoft Intune 中的应用部署问题
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
-ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
+ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
+ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
 
 
 ---
@@ -22,49 +22,7 @@ ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 # Microsoft Intune 中的应用部署问题疑难解答
 如果在使用 Intune 部署和管理应用时出现问题，请从这里开始。 本主题包含你可能会遇到的一些常见问题以及解决方案。
 
-## 常见的应用部署问题
-
-### 公司门户中缺少“联系 IT”信息
-
-1.  在 Intune 管理员控制台中，选择**管理**&gt;**公司门户**。
-
-2.  设置“联系 IT”  详细信息。
-
-### 如果在列表中看不到特定应用
-
-1.  确保检查部署了该应用的用户或设备的应用列表。
-
-2.  确保设备满足应用的要求。
-
-### 如果在下载应用时收到错误
-
-1.  请确保每个用户最多有一个并发下载。 每个用户一次可以下载一个应用。
-
-2.  确保每个帐户没有过多的并发下载。 等待几分钟，然后重试。
-
-3.  如果收到 iOS 本机消息，称“你无法安装”、“已取消安装”或“你需要重试”，则可能是由高流量造成。 等待几分钟，然后重试。
-
-4.  如果 iOS 应用下载进程栏已完成但应用安装失败，则你提供的应用文件可能存在问题。
-
-
-### 如果应用在上载时一直显示“正在进行”
-
-1.  在上载应用时，首先会添加元数据，然后添加应用包。 上载了元数据后，应用将显示为正在进行。 如果你看到应用处于正在进行状态的时间特别长，请删除应用，然后再次上传。
-
-2.  确保不要在应用处于“正在进行”状态时对应用的部署进行管理。
-
-### 如果在安装 iOS 应用时遇到失败情况
-
-1.  确保组织的防火墙允许访问 Apple 设置和认证网站。
-
-2.  有关详细信息，请查看 Apple 开发人员文档。
-
-### 如果托管应用没有报告安装状态
-
-对于 2014 年 11 月 Microsoft Intune 服务更新之前的托管应用安装，不收集安装状态。 对于在此服务更新之前安装了托管应用的设备，通过适当部署操作（例如 **可用安装**）更新每个关联应用部署。 各个设备将在自动检查可用应用期间更新应用。 有关更多信息，请参阅[使用 Microsoft Intune 更新应用](/intune/deploy-use/update-apps-using-microsoft-intune)。
-
-## <a name="BKMK_SoftDistErrorCodes"></a>应用部署错误代码
-下表列出了 Intune 应用部署过程中可能发生的常见错误、可能的原因，以及有助于解决问题的潜在解决方案。
+## 常见的应用部署错误代码
 
 |错误代码|可能的问题|建议的解决方法|
 |--------------|--------------------|------------------------|
@@ -79,6 +37,6 @@ ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

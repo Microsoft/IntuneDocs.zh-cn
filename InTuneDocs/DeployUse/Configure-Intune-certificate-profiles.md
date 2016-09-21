@@ -4,7 +4,7 @@ description: "了解如何创建 Intune 证书配置文件。"
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
+ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 ---
@@ -48,15 +48,9 @@ ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
 
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-3.  输入所需信息以配置 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 的受信任证书配置文件设置。
-
-    - 在“**证书文件**”设置中，导入你从发证 CA 导出的受信任的根 CA 证书 (.cer file)。 “目标存储”设置仅适用于运行 Windows 8.1 及更高版本的设备并且该设备必须具有多个证书存储。
-    -  在“**使用者名称格式**”中选择“**自定义**”，输入自定义使用者名称格式。  
-        自定义格式当前支持的两个变量为 `Common Name (CN)` 和 `Email (E)`。 通过使用这些变量和静态字符串的组合，你可以创建自定义使用者名称格式，如下所示：  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        在本示例中，管理员创建了使用者名称格式，其中除了使用 `CN` 和 `E` 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)列出了受支持的字符串。  
+3.  输入所需信息以配置 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 的受信任证书配置文件设置。 
+4.  在“**证书文件**”设置中，导入你从发证 CA 导出的受信任的根 CA 证书 (.cer file)。 “目标存储”设置仅适用于运行 Windows 8.1 及更高版本的设备并且该设备必须具有多个证书存储。
+    
 4.  选择“**保存策略**”。
 
 新的策略将显示在“**策略**”工作区中。 现在你可以进行部署。
@@ -79,7 +73,7 @@ ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
 3.  按照配置文件配置页上的说明配置 SCEP 证书配置文件设置。
     > [!NOTE]
     >
-    > 在“**使用者名称格式**”中选择“**自定义**”，输入自定义使用者名称格式。
+    > 在“使用者名称格式”中选择“自定义”，输入自定义使用者名称格式（仅限 iOS 配置文件）。
     >
     > 自定义格式当前支持的两个变量为 `Common Name (CN)` 和 `Email (E)`。 通过使用这些变量和静态字符串的组合，你可以创建自定义使用者名称格式，如下所示：
 
@@ -136,6 +130,6 @@ ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
