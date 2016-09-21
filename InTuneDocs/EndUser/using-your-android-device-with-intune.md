@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,9 +22,9 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # 通过 Intune 使用 Android 设备
 
-本文包含最终用户可在其 Intune 托管的设备上执行的所有任务的链接。 IT 管理员可以参考此信息以查看用户执行各种任务时遵循的步骤，这些任务按类别分组为： 
+本文包含最终用户可在其 Intune 托管的设备上执行的所有任务的链接。 IT 管理员可以参考此信息以查看用户执行各种任务时必须采用的步骤，这些任务按以下类别分组：
 
-- 公司门户应用安装和 Intune 注册 
+- 公司门户应用安装和 Intune 注册
 - 注册后管理任务
 - 合规性问题
 
@@ -71,6 +71,6 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

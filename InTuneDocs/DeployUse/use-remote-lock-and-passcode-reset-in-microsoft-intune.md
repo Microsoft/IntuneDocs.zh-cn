@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # 使用远程锁定和密码重置功能帮助保护设备
 Microsoft Intune 提供远程锁定和密码重置功能。
 
 ## 远程锁定设备
-如果用户丢失其设备，你可以远程锁定该设备。 下表列出了在不同的移动平台上是如何远程锁定的。
+如果用户丢失其设备，你可以远程锁定该设备。 下表列出了在不同的移动平台上是如何远程锁定的。 不支持远程锁定
 
 |平台|远程锁定|
 |------------|---------------|
@@ -31,6 +31,7 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 |Windows RT 8.1 和 Windows RT|如果设备的当前用户是注册设备的相同用户，则支持。|
 |Windows 8.1|如果设备的当前用户是注册设备的相同用户，则支持。|
 
+使用 Intune 软件客户端注册的 Windows 电脑不支持远程锁定。
 
 ### 通过 Intune 控制台远程锁定移动设备
 
@@ -55,6 +56,8 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 |Windows RT 8.1 和 Windows RT|不支持|
 |Windows 8.1|不支持|
 
+使用 Intune 软件客户端注册的 Windows 电脑不支持密码重置。
+
 ### 重置密码
 
 1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择“组”&gt;“所有设备”&gt;“所有移动设备”。
@@ -73,6 +76,6 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

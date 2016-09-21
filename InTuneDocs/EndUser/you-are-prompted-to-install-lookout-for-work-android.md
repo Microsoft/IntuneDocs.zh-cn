@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/27/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,29 +12,73 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7be786dafa5b4707688bacd1f2b4790db91bad6c
+ms.sourcegitcommit: e1f0ee69c16c48932c7ea1fefff03f6f35416865
+ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
 
 
 ---
 
 # 系统会提示你安装 Lookout for Work
-注意：此功能已添加到 Android 公司门户应用，但在 2016 年 8 月后才能正常运行。
 
-Lookout for Work 应用通过检查风险和安全威胁来帮助保护设备。 如果看到必须安装 Lookout for Work 的通知，这意味着 IT 管理员已设置了一个策略，要求你从 Play Store 下载并安装该应用。
+如果看到如下所示消息“尚未安装并激活 Lookout for Work”，这意味着 IT 管理员要求安装 Lookout for Work 应用，该应用可通过查找潜在的安全威胁帮助保护你的设备。
 
-**需要执行的操作：**
+![必须解决合规性问题](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
-1.  按照提示下载并安装该应用。
-2.  安装完成后将返回公司门户应用，点击**检查合规性**完成此过程。 之后可继续使用设备访问公司数据和资源。
+**修复该问题所需执行的操作：**
+
+1.  从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 — 从 Play Store 安装 Lookout for Work”。
+
+    ![需要安装 Lookout for Work](./media/lookout-required-app-install-android.png)
+
+    将转至 Play Store 中的 Lookout for Work 安装页。
+
+2.  安装 Lookout for Work，然后点击“接受”以便 Lookout for Work 访问设备。
+
+    ![点击“接受”以便 Lookout for Work 访问设备](./media/lookout-accept-store-permissions-android.png)
+
+3. 打开 Lookout for Work，然后点击“激活”。
+
+    ![打开 Lookout for Work，然后点击“激活”](./media/lookout-activate-button-android.png)
+
+4. 点击“使用工作帐户登录”，然后输入你用于访问工作或学校电子邮件、文件和其他数据的帐户。
+
+    ![使用工作或学校帐户登录](./media/lookout-sign-in-android.png)
+
+5. 选择用于访问工作或学校电子邮件和文件的帐户，然后点击“添加帐户”。
+
+    ![选择工作或学校帐户，然后点击“添加帐户”](./media/lookout-pick-account-android.png)
+
+6. 点击“接受”以授予 Lookout for Work 让你登录并读取个人资料的权限。
+
+    ![点击“接受”以授予 Lookout for Work 读取你的个人资料的权限](./media/lookout-needs-permission-to-view-profile-android.png)
+
+    屏幕将显示“Lookout for Work 正在连接到 Lookout 安全云”。
+
+7. 查看关于 Lookout 如何保护设备的项，然后点击“确定”。
+
+    ![查看 Lookout for Work 如何保护设备](./media/lookout-how-it-protects-your-device-android.png)
+
+    当看到以下屏幕时，意味着 Lookout 当前已安装完毕且处于连接状态。
+
+    ![现已连接到 Lookout for Work](./media/lookout-you-are-now-connected-android.png)
+
+    Lookout for Work 将立即开始检查设备上的安全威胁。 如果未找到任何威胁，将看到以下屏幕。
+
+    ![Lookout for Work 未找到任何安全威胁](./media/lookout-scan-no-threats-found-android.png)
+
+    公司门户中的“设备详细信息”屏幕将显示你当前符合你公司的安全要求。
+
+    ![你的设备当前符合策略](./media/lookout-device-now-compliant-android.png)
+
+    如果 Lookout for Work 在设备上找到安全威胁，那么你将看到有关如何解决此问题的说明。
 
 仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
-### 另请参阅
-[通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,16 +13,16 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
+ms.sourcegitcommit: d0cc50bb5d79f4840afee7984cf3f58f6dd26dac
+ms.openlocfilehash: 8832235ffdc8cd0b5b3eec244315711cfa59e069
 
 
 ---
 
 # 通过 Intune 使用 Windows 设备
 
-本文包含最终用户可在其 Intune 托管的设备上执行的所有任务的链接。 IT 管理员可以参考此信息以查看用户执行各种任务时遵循的步骤，这些任务按类别分组为： 
-- 公司门户应用安装和 Intune 注册 
+本文包含用户可在其 Intune 托管的设备上执行的所有任务的链接。 IT 管理员可以参考此信息以查看用户执行各种任务时必须采用的步骤，这些任务按以下类别分组：
+- 公司门户应用安装和 Intune 注册
 - 注册后管理任务
 - 合规性问题
 
@@ -32,11 +32,11 @@ ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 
 - [在 Intune 中注册 Windows 设备](enroll-your-device-in-intune-windows.md)
 - [安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [当在 Intune 中注册设备时，IT 管理员可以看到哪些内容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+- [在 Intune 中注册设备时，IT 管理员可以看到哪些内容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## 在 Intune 中注册设备后可以执行的操作
 
-此部分中的信息将帮助你在 Intune 中注册Windows 设备后能够执行的操作。
+此部分中的信息将帮助你了解在 Intune 中注册 Windows 设备后能够执行的操作。
 
 - [加密你的设备](encrypt-your-device-windows.md)
 - [设置或更改密码](set-or-change-your-password-windows.md)
@@ -47,7 +47,7 @@ ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 - [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-windows.md)
 - [手动同步设备](sync-your-device-manually-windows.md)
 
-## 修复设备问题
+## 如何修复设备问题
 
 此部分中的信息将帮助解决你在 Intune 中注册 Windows 设备时可能发生的问题。
 
@@ -60,6 +60,6 @@ ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

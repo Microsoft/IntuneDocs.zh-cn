@@ -4,17 +4,17 @@ description: "阅读本主题以了解 Intune 如何帮助你管理注册的设�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 |iOS 移动应用配置|使用移动应用配置策略可提供用户在运行 iOS 应用时可能需要的设置。 例如，某一个应用可能要求用户指定端口号或登录信息。 这可以帮助简化应用程序的配置并减少支持呼叫次数。|[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |iOS 移动应用预配配置文件|帮助你将预配配置文件部署到即将到期的 iOS 应用。 |[使用 iOS 移动预配配置文件策略防止你的应用过期](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |托管浏览器|配置托管浏览器策略以控制设备用户可访问的网站。 此外，您可以将移动应用程序管理策略应用到托管浏览器。|[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|让你可以与 Microsoft Passport for Work 集成，这是一种适用于 Windows 10 的替代登录方法，它使用本地 Active Directory 或 Azure Active Directory 来取代密码、智能卡或虚拟智能卡。|[通过 Microsoft Intune 控制设备上的 Microsoft Passport 设置](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Windows Hello 企业版|让你可以与 Windows Hello 企业版集成，这是一种适用于 Windows 10 的替代登录方法，它使用本地 Active Directory 或 Azure Active Directory 来取代密码、智能卡或虚拟智能卡。|[使用 Microsoft Intune 控制设备上的 Windows Hello 企业版设置](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|批量购买应用程序|帮助你通过以下操作管理通过批量购买计划购买的应用：从应用商店中导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。|[使用 Microsoft Intune 管理批量购买的应用](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## 公司资源访问
 
@@ -70,6 +71,6 @@ ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
