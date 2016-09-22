@@ -66,8 +66,9 @@
 ## [停用设备](retire-devices-from-microsoft-intune-management.md)
 
 ## [添加应用](add-apps.md)
-### [为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [为 Windows 电脑添加应用](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [为注册设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [为 Intune 客户端电脑添加应用](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [管理 Intune 客户端电脑的许可协议](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [部署应用](deploy-apps.md)
 ### [将应用部署到设备和电脑](deploy-apps-in-microsoft-intune.md)
 ### [监视应用](monitor-apps-in-microsoft-intune.md)
@@ -101,6 +102,11 @@
 #### [限制电子邮件访问：示例](restrict-email-access-example-scenarios.md)
 
 ### [限制对网络的访问 (Cisco ISE)](restrict-access-to-networks.md)
+### [根据设备、网络和应用程序风险限制访问权限](restrict-access-based-on-device-network-app-risk.md)
+#### [设置 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+#### [在 Intune 中启用 Lookout](enable-lookout-mtp-connection-in-intune.md)
+#### [为工作应用部署 Lookout](configure-and-deploy-lookout-for-work-apps.md)
+#### [启用设备威胁防护合规性策略](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [使用 MAM 保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [适用于 MAM 策略的 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -137,6 +143,6 @@
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
