@@ -4,7 +4,7 @@ description: "如何在 Azure AD 中要求对设备注册进行多重身份验�
 keywords: 
 author: nbigman
 manager: angerobe
-ms.date: 08/17/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
-ms.openlocfilehash: d65846b09ac33fa18db037a6a2c05963607ef53f
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 
 ---
@@ -41,12 +41,13 @@ Intune 集成 Azure AD 多重身份验证 (MFA) 用于设备注册，从而帮�
     -  在设备未工作时，要求对注册进行多重身份验证。
     -  选择“**阻止访问企业资源**”，在设备尚未连接到企业网络时阻止该设备注册。 
 4. 你还可以单击链接以**定义/编辑你的工作网络位置**，以便配置对设备注册的网络连接要求。
+
 > [!IMPORTANT]
 > 
 > 请勿为 Microsoft Intune 注册配置**基于设备的访问规则**。
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
