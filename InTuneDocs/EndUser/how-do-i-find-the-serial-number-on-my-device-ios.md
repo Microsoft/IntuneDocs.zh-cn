@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
+ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
+ms.openlocfilehash: 4bab75748dc66ab675bab439863be8e9294b95c7
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
 
 # 如何在设备上查找序列号？
 
-在运行 iOS 7.1 及更高版本的设备上，点击**设置**图标，点击**常规**  >  **关于**，然后向下滚动直到找到**序列号**。
+在运行 iOS 8.0 及更高版本的设备上，点击“设置”图标，点击“常规” > “关于”，然后向下滚动直到找到“序列号”。
 
 仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
@@ -31,6 +31,6 @@ ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

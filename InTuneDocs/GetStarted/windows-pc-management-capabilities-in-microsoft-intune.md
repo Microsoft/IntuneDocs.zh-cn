@@ -4,7 +4,7 @@ description: "了解使用 Intune 软件客户端管理 Windows 电脑时的 Int
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
@@ -22,16 +22,16 @@ ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 # 使用 Intune 软件客户端时的 Windows 电脑管理功能
 在大多数情况下，你将向 Microsoft Intune 注册设备，这样可提供更多的功能。 但是，你也可以通过使用 Intune 软件客户端来管理电脑，该客户端提供以下功能：
 
--   **软件更新管理** - 可使电脑保持最新版本，并决定何时进行更新。
+-   **[软件更新管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - 可使电脑保持最新版本，并决定何时进行更新。
 
--   **Windows 防火墙策略** - 可帮助确保公司所用电脑的 Windows 防火墙均处于活动状态且均配置正确。
+-   **[Windows 防火墙策略](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** - 可帮助确保公司所用电脑的 Windows 防火墙均处于活动状态且均配置正确。
 
--   **反恶意软件保护** - Intune 包括 Endpoint Protection，它有助于保护你的电脑免遭恶意软件侵害。
+-   **[反恶意软件保护](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** - Intune 包括 Endpoint Protection，它有助于保护你的电脑免遭恶意软件侵害。
 
--   **远程协助** - Intune 允许用户与 IT 支持人员联系，后者可使用 Intune 附带的远程桌面功能来提供协助（需要 TeamViewer 软件）。
+-   **[远程协助](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - Intune 允许用户与 IT 支持人员联系，后者可使用 Intune 附带的远程桌面功能来提供协助（需要 TeamViewer 软件）。
 
--   **软件许可证管理** - 跟踪有多少软件许可证可用，以及有多少可用的许可证已使用。
--   **应用部署** - 将软件部署到你管理的 PC。 在使用软件客户端管理电脑时，一些应用管理功能不可用。
+-   **[软件许可证管理](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** - 跟踪有多少软件许可证可用，以及有多少可用的许可证已使用。
+-   **[应用部署](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** - 将软件部署到你管理的 PC。 在使用软件客户端管理电脑时，一些应用管理功能不可用。
 
 
 Intune 支持最多在 7,000 台 Windows 设备上安装软件客户端。
@@ -74,6 +74,6 @@ Intune 可以管理运行以下 Windows 版本（32 位和 64 位）的电脑：
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

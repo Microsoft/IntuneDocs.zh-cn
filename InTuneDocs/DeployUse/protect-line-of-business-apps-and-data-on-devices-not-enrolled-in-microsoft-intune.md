@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
 ##  步骤 1：准备应用
 在可将 MAM 策略应用于应用之前，首先必须使用 Microsoft Intune 应用包装工具包装此应用。  下载中包含应用包装工具的安装和使用说明。  
 >[!IMPORTANT]  
->此版本的应用包装工具（支持未在 Intune 上注册的设备）在此后几周将以个人预览版提供。 若有意参与，请发送邮件到 msintuneappsdk@microsoft.com 获取详细信息。
+>公共预览中此版本的应用包装工具可用（支持未在 Intune 上注册的设备）。 若希望参与公共预览，可从[此 github 页](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview)下载 iOS 工具，从[此 github 页](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)下载 Android 工具。
 
 ## 步骤 2：添加应用
 
@@ -75,6 +75,6 @@ ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

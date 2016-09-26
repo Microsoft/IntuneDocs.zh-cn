@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 2bbb17881a1e40cd6552fe4303d55bd0cb4ffcf6
 
 
 ---
@@ -67,7 +67,7 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 你可以从 **Outlook** 和其他**使用新式验证的应用**限制对 Exchange Online 电子邮件的访问：-
 
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本
-- iOS 7.1 及更高版本
+- iOS 8.0 及更高版本
 - Windows Phone 8.1 及更高版本
 
 **新式验证**将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Microsoft Office 客户端中。
@@ -93,7 +93,7 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本
 
-- iOS 7.1 及更高版本
+- iOS 8.0 及更高版本
 
 - Windows Phone 8.1 及更高版本
 
@@ -262,6 +262,6 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

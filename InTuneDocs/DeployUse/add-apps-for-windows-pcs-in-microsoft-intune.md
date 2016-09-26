@@ -1,5 +1,5 @@
 ---
-title: "为 Windows 电脑添加应用 | Microsoft Intune"
+title: "为运行 Intune 软件客户端的 Windows 电脑添加应用 | Microsoft Intune"
 description: "通过本主题中的信息了解如何在部署 Windows 电脑的应用之前将它们添加到 Intune。"
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# 在 Microsoft Intune 中为 Windows 电脑添加应用
+# 为运行 Intune 软件客户端的 Windows 电脑添加应用
 
 通过本主题中的信息了解如何在部署应用之前将它们添加到 Intune。
 
 > [!IMPORTANT]
-> 本主题中的信息可帮助你为使用 Intune 电脑客户端软件管理的 Windows 电脑添加应用。 如果想为已注册的 Windows 电脑和其他移动设备添加应用，请参阅[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)。
+> 本主题中的信息可帮助你为使用 Intune 软件客户端管理的 Windows 电脑添加应用。 如果想为已注册的 Windows 电脑和其他移动设备添加应用，请参阅[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)。
 
 
 ## 添加应用
@@ -90,6 +90,6 @@ ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

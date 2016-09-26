@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: a13c03cde29c46a78577b58f85daad30a076bf89
+ms.sourcegitcommit: a4cc8b7e34e8809eebd7fdec8ffac0599c96d309
+ms.openlocfilehash: ce27fc737fdf47903d7554eb15f24f07b3524406
 
 
 ---
@@ -43,7 +43,7 @@ Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对�
 
 |要求|更多信息|
 |---------------|--------------------|
-|操作系统 | 运行 Windows 7 或更高版本的 Windows 设备。 |
+|操作系统 | 运行 Windows Vista 或更高版本的 Windows 设备。 不支持家庭版各版本。|
 |管理权限|安装客户端软件的帐户必须具有该设备的本地管理员权限。|
 |Windows Installer 3.1|PC 至少必须安装 Windows Installer 3.1。<br /><br />查看 PC 上 Windows Installer 的版本：<br /><br />- 在电脑上，右键单击“%windir%\System32\msiexec.exe”，然后单击“属性”。<br /><br />你可以从 Microsoft Developer Network 网站上的 [Windows Installer Redistributables（Windows Installer 可再分发文件）](http://go.microsoft.com/fwlink/?LinkID=234258) 中下载最新版本的 Windows Installer。|
 |删除不兼容的客户端软件|在安装 Intune 客户端软件之前，你必须从该 PC 卸载任何 Configuration Manager 或 System Management Server 客户端软件。|
@@ -75,6 +75,6 @@ Intune 客户端代理通常在后台静默运行，无需许多用户交互或�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

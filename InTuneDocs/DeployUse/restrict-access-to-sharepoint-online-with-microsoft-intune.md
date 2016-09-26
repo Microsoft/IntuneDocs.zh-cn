@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
 
 
 ---
@@ -62,7 +62,7 @@ ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
 >[!NOTE]
 >如果你启用 SharePoint Online 的条件访问，我们建议你禁用列表上的域，如 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主题中所述。  
 ## 对移动设备的支持
-- iOS 7.1 及更高版本
+- iOS 8.0 及更高版本
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 或更高版本
 - Windows Phone 8.1 及更高版本
 
@@ -192,6 +192,6 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
