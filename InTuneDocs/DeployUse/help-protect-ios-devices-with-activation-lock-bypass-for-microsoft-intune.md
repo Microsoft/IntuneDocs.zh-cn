@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
-ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 2b44779fdac0764a3e7a18f1c365050e9800f902
 
 
 ---
 
 # 通过 Microsoft Intune 的绕过激活锁定帮助保护 iOS 设备
-Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 7.1 和更高版本设备上的“查找我的 iPhone”应用的功能。 当用户在设备上打开了“查找我的 iPhone”应用时，激活锁定将自动启用。 启用后，任何人都必须先输入用户的 Apple ID 和密码，然后才能执行以下操作： 
+Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 8.0 和更高版本设备上的“查找我的 iPhone”应用的功能。 当用户在设备上打开了“查找我的 iPhone”应用时，激活锁定将自动启用。 启用后，任何人都必须先输入用户的 Apple ID 和密码，然后才能执行以下操作： 
 
 -   关闭“查找我的 iPhone”
 
@@ -43,7 +43,7 @@ Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 7.1 和�
 > 在 iOS 设备的监管模式下，你可以使用 Apple Configurator 来锁定设备，以将设备的功能限制为完成特定的业务目的。 监管模式通常仅适用于公司拥有的设备。
 
 ## Intune 如何帮助你管理激活锁定
-Intune 可以请求运行 iOS 7.1 和更高版本的监管和非监管设备的激活锁定状态。 仅就监管设备而言，Intune 可以检索绕过激活锁定代码并直接将代码发布到设备。 如果已擦除设备，你可以直接使用该代码作为用户名并使用一个空密码来访问设备。
+Intune 可以请求运行 iOS 8.0 和更高版本的监管和非监管设备的激活锁定状态。 仅就监管设备而言，Intune 可以检索绕过激活锁定代码并直接将代码发布到设备。 如果已擦除设备，你可以直接使用该代码作为用户名并使用一个空密码来访问设备。
 
 **此功能的业务优势有**：
 
@@ -76,7 +76,7 @@ Intune 可以请求运行 iOS 7.1 和更高版本的监管和非监管设备的�
 
     -   未启用
 
-    对于不运行 iOS 7.1 或更高版本的设备而言，“激活锁定状态”框为空。
+    对于不运行 iOS 8.0 或更高版本的设备而言，“激活锁定状态”框为空。
 
 -   在组视图中选择一个设备以在“设备详细信息”窗格中查看激活锁定状态。
 
@@ -92,6 +92,6 @@ Intune 可以请求运行 iOS 7.1 和更高版本的监管和非监管设备的�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

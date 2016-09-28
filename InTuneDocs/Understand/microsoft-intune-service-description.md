@@ -3,25 +3,25 @@ title: "服务说明 | Microsoft Intune"
 description: "Intune 是一项基于云的服务，可帮助你管理 Windows 电脑以及 iOS、Mac OS X、Android 和 Windows 移动设备。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 98a5013ef42732e6a1a541e128986bedbb004611
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
 
 
 ---
 
 # Microsoft Intune 服务说明
 
-Microsoft Intune 是一项基于云的服务，可帮助你管理 Windows 电脑以及 iOS、Mac OS X、Android 和 Windows 移动设备。 Intune 还有助于保护公司的应用程序和数据。 你可以单独使用 Intune，也可以将它与 System Center 2012 R2 Configuration Manager 集成，以扩展管理能力。
+Microsoft Intune 是一项基于云的服务，可帮助你管理 Windows 电脑以及 iOS、Mac OS X、Android 和 Windows 移动设备。 Intune 还有助于保护公司的应用程序和数据。 可以单独使用 Intune，也可以将它与 System Center Configuration Manager 集成，以扩展管理能力。 
 
 Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 载入权益允许你与 Microsoft 专家远程合作，以便使你的 Intune 环境可供使用。 有关详细信息，请参阅[Microsoft Intune 载入权益说明](http://go.microsoft.com/fwlink/?LinkId=619281)。
 
@@ -32,18 +32,18 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 如需可以在移动设备上配置的设置的列表，请参阅：
 
--   [Microsoft Intune 中的移动设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Microsoft Intune 已注册设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
--   [Configuration Manager 中移动设备的常规设置](https://technet.microsoft.com/library/dn376523.aspx)
+-   [使用 System Center Configuration Manager 和 Microsoft Intune 的混合移动设备管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx) 
 
-有关 System Center 2012 R2 Configuration Manager 的信息，请参阅 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)。
+有关 System Center Configuration Manager 的信息，请参阅 [System Center Configuration Manager 的文档](https://technet.microsoft.com/library/mt346023.aspx)。
 
 ## 了解 Intune 服务更新对你的影响
 由于 Intune 是一项在线服务，因此，Microsoft 可以定期对其更新。
 
 使用本主题中的信息可帮助你了解这些服务更新的频率，以及我们在更新可能影响你使用该服务时提前向你发送的通知。
 
-若要了解有关 Intune 服务的更改信息，请参阅 [What's new in Microsoft Intune（Microsoft Intune 新增功能）](/intune/deploy-use/Whats-new-in-microsoft-intune.md)。 [Microsoft Intune 博客](http://blogs.technet.com/b/microsoftintune/)也讨论了该服务中的更改信息，并为你能够最大程度从 Intune 中获益提供了有用的提示。
+若要了解有关 Intune 服务的更改信息，请参阅 [Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune)。 [Microsoft Intune 博客](http://blogs.technet.com/b/microsoftintune/)也讨论了该服务中的更改信息，并为你能够最大程度从 Intune 中获益提供了有用的提示。 
 
 重要的服务更新将也会在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)消息中心传达给你。 如果安装了配套 [Office 365 管理移动应用](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，就可以在你的移动设备上接收通知。
 
@@ -65,7 +65,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 -   **Intune 独立配置。** 使用 Intune 中基于 Web 的管理控制台来管理组织中的设备。 可以在没有任何本地 IT 基础结构的情况下使用 Intune，但如果你将 Intune 与 Active Directory 域服务一起使用，则可以将使用域服务管理的域用户帐户用于 Intune。
 
--   **Intune 与 System Center Configuration Manager 的集成** 使用 Configuration Manager 管理控制台来管理企业中的计算机和移动设备。 此配置可帮助你通过单一控制台（Configuration Manager 管理控制台）管理组织的所有设备。 Configuration Manager 支持大量的移动设备、服务器和计算机。 有关详细信息，请参阅 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)中的[如何使用 Configuration Manager 和 Microsoft Intune 管理移动设备](http://go.microsoft.com/fwlink/?LinkID=271118)。  有关确定哪种方法最适合你的更多帮助，请参阅[在 Microsoft Intune 独立版和带 Configuration Manager 的混合移动设备管理之间选择](https://technet.microsoft.com/en-us/library/mt706478.aspx)。
+-   **Intune 与 System Center Configuration Manager 的集成** 使用 Configuration Manager 管理控制台来管理企业中的计算机和移动设备。 此配置可帮助你通过单一控制台（Configuration Manager 管理控制台）管理组织的所有设备。 Configuration Manager 支持大量的移动设备、服务器和计算机。 有关详细信息，请参阅[使用 System Center Configuration Manager 和 Microsoft Intune 的混合移动设备管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。  有关确定哪种方法最适合你的更多帮助，请参阅[在 Microsoft Intune 独立版和带 Configuration Manager 的混合移动设备管理之间选择](https://technet.microsoft.com/en-us/library/mt706478.aspx)。 
 
 
 ## 了解有关 Intune 的详细信息
@@ -73,7 +73,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 -   [Microsoft Intune 信任中心](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)提供了有关 Intune 的安全性、隐私和合规性实践的信息，并介绍了 Intune 的一些证书。
 
--   [Microsoft Intune 中的移动设备管理功能](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Microsoft Intune 已注册设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 ### 另请参阅
 [Microsoft Intune](https://docs.microsoft.com/intune/)
@@ -83,6 +83,6 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

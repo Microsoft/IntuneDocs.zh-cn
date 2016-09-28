@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
 
 
 ---
@@ -32,15 +32,15 @@ ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
 
 **非托管应用** - 可以通过策略管理并且未由 Intune 包装或未包含 Intune MAM SDK 的应用。 应用程序策略不能应用于这些应用。
 
-Apple 限制禁止业务线和托管应用商店应用列于公司门户应用中，这意味着用户必须访问不同视图才能找到自己所有的应用。 公司门户应用的“应用”页上显示的各个磁贴代表的应用可用情况如下：
+Apple 限制禁止公司门户应用列出业务线应用和托管应用商店应用。 要解决这一问题，用户可根据 iOS 公司门户应用中应用磁贴的指示，在同一位置（公司门户网站）切换到其他视图，以查看所有应用，如下所示：
 
-- **公司应用**磁贴指向[公司门户网站](http://portal.manage.microsoft.com)“**全部**”选项卡中所有应用的列表。
+- “公司应用”磁贴之前指向[公司门户网站](http://portal.manage.microsoft.com)“全部”选项卡中的所有应用的列表，此行为将继续以同种方式运作。 磁贴名称已更改为“全部应用”。
 
-- **其他应用**磁贴目前指向公司门户应用内部的一个视图，其中列出了 Apple 允许公司门户应用显示的所有应用。 其中包括除业务线和托管应用商店应用之外的所有应用。
+- “其他应用”磁贴之前指向公司门户应用内部的一个视图，其中列出了 Apple 允许公司门户应用显示的所有应用。 磁贴名称已更改为“特别推荐的应用”，点击该磁贴会将用户转到公司门户网站的“特别推荐”选项卡。
 
-- **类别**磁贴目前指向公司门户应用内部的一个视图，其中列出了应用类别。
+-  “类别”磁贴之前指向公司门户应用内部的一个视图，其中列出了应用类别。 磁贴名称未改变，但它现指向公司门户网站的“类别”选项卡。
+你可以在[此处](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186)查看更新的屏幕截图。
 
-    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
 
 
 ###另请参阅
@@ -49,6 +49,6 @@ Apple 限制禁止业务线和托管应用商店应用列于公司门户应用�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -4,7 +4,7 @@ description: "指向以下任务的链接列表：在 Intune 中注册设备时�
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
-ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
 
 
 ---
@@ -68,9 +68,11 @@ ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 - [系统要求你关闭 USB 调试](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [系统要求你启用“扫描设备的安全威胁”](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [你的设备不符合最低安全修补程序](your-device-does-not-meet-the-minimum-security-patch-android.md)
+- [系统提示在 Android 设备上安装 Lookout for Work](you-are-prompted-to-install-lookout-for-work-android.md)
+- [Lookout for Work 在 Android 设备上发现威胁，请解除该威胁](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

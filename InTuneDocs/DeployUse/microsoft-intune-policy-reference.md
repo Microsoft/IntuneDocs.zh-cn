@@ -13,8 +13,8 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
-ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: adf9a0603cbb1ed4183bff5110e1f3342bcf373a
 
 
 ---
@@ -44,16 +44,16 @@ ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 |策略名称|在你想要完成以下事项时使用:|
 |---------------|------------------------|
-|**自定义配置（iOS 7.1 和更高版本）**|将配置文件部署到使用 Apple 配置器创建的 iOS 设备。 这在配置策略未提供你需要的设置时十分有用。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 iOS 策略设置](ios-policy-settings-in-microsoft-intune.md)。|
-|**电子邮件配置文件（iOS 7.1 及更高版本）**|创建、部署和监视受管理设备上的 Exchange ActiveSync 电子邮件设置。 这样一来，用户无需进行特殊设置，就能通过个人设备访问企业电子邮件。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
-|**常规配置（iOS 7.1 及更高版本）**|配置移动设备安全设置和功能设置。<br />指定相容或不相容的应用，并在使用这些应用时进行报告。<br />配置锁定设备为只允许某些功能运行的展台模式，例如，允许设备只运行一个应用或禁用音量按钮。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 iOS 策略设置](ios-policy-settings-in-microsoft-intune.md)。|
-|**移动应用配置策略（iOS 7.1 及更高版本）**|移动应用配置策略可自动提供用户在运行 iOS 应用时可能需要的设置。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)。|
-|**移动预配配置文件策略（iOS 7.1 及更高版本）**|Apple iOS 业务线移动应用附带预配配置文件和证书签名的代码。 当应用在 iOS 设备上运行时，iOS 会确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。<br><br>用于签署应用的企业签名证书通常持续三年。 但是，预配配置文件在一年后过期。 使用此策略对拥有即将过期（但证书仍然有效）应用的设备主动部署新的预配配置文件策略。<br><br>有关详细信息，请参阅[使用 iOS 移动预配配置文件策略防止你的应用过期](ios-mobile-app-provisioning-profiles.md)。|
-|**PKCS #12 (.PFX) 证书配置文件（iOS 7.1 及更高版本）**|使用此配置文件针对设备证书请求创建和部署 .PFX 设置。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
-|**SCEP 证书配置文件（iOS 7.1 及更高版本）**|配置简单证书注册协议证书，该证书可与受信任的移动设备证书一起用于对移动设备进行身份验证，以允许它们访问 Wi-Fi 和 VPN 配置文件等配置的网络资源。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
-|**受信任证书配置文件（iOS 7.1 及更高版本）**|配置受信任的移动设备证书，该证书可用于对移动设备进行身份验证，以允许它们访问 Wi-Fi 和 VPN 配置文件等配置的网络资源。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
-|**VPN 配置文件（iOS 7.1 及更高版本）**|配置并部署授权用户从其移动设备安全访问你公司网络的设置。 通过部署这些设置，可以为最终用户简化到其工作的连接。<br /><br />有关详细信息，请参阅 [Microsoft Intune.md 中的 VPN 连接](vpn-connections-in-microsoft-intune.md)。|
-|**Wi-Fi 配置文件（iOS 7.1 及更高版本）**|配置和部署到您的组织中的用户的无线网络设置。 通过部署这些设置，可以为最终用户简化到无线网络的连接。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 Wi-Fi 连接](wi-fi-connections-in-microsoft-intune.md)。|
+|**自定义配置（iOS 8.0 和更高版本）**|将配置文件部署到使用 Apple 配置器创建的 iOS 设备。 这在配置策略未提供你需要的设置时十分有用。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 iOS 策略设置](ios-policy-settings-in-microsoft-intune.md)。|
+|**电子邮件配置文件（iOS 8.0 及更高版本）**|创建、部署和监视受管理设备上的 Exchange ActiveSync 电子邮件设置。 这样一来，用户无需进行特殊设置，就能通过个人设备访问企业电子邮件。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。|
+|**常规配置（iOS 8.0 及更高版本）**|配置移动设备安全设置和功能设置。<br />指定相容或不相容的应用，并在使用这些应用时进行报告。<br />配置锁定设备为只允许某些功能运行的展台模式，例如，允许设备只运行一个应用或禁用音量按钮。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 iOS 策略设置](ios-policy-settings-in-microsoft-intune.md)。|
+|**移动应用配置策略（iOS 8.0 及更高版本）**|移动应用配置策略可自动提供用户在运行 iOS 应用时可能需要的设置。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)。|
+|**移动预配配置文件策略（iOS 8.0 及更高版本）**|Apple iOS 业务线移动应用附带预配配置文件和证书签名的代码。 当应用在 iOS 设备上运行时，iOS 会确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。<br><br>用于签署应用的企业签名证书通常持续三年。 但是，预配配置文件在一年后过期。 使用此策略对拥有即将过期（但证书仍然有效）应用的设备主动部署新的预配配置文件策略。<br><br>有关详细信息，请参阅[使用 iOS 移动预配配置文件策略防止你的应用过期](ios-mobile-app-provisioning-profiles.md)。|
+|**PKCS #12 (.PFX) 证书配置文件（iOS 8.0 及更高版本）**|使用此配置文件针对设备证书请求创建和部署 .PFX 设置。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
+|**SCEP 证书配置文件（iOS 8.0 及更高版本）**|配置简单证书注册协议证书，该证书可与受信任的移动设备证书一起用于对移动设备进行身份验证，以允许它们访问 Wi-Fi 和 VPN 配置文件等配置的网络资源。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
+|**受信任证书配置文件（iOS 8.0 及更高版本）**|配置受信任的移动设备证书，该证书可用于对移动设备进行身份验证，以允许它们访问 Wi-Fi 和 VPN 配置文件等配置的网络资源。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。|
+|**VPN 配置文件（iOS 8.0 及更高版本）**|配置并部署授权用户从其移动设备安全访问你公司网络的设置。 通过部署这些设置，可以为最终用户简化到其工作的连接。<br /><br />有关详细信息，请参阅 [Microsoft Intune.md 中的 VPN 连接](vpn-connections-in-microsoft-intune.md)。|
+|**Wi-Fi 配置文件（iOS 8.0 及更高版本）**|配置和部署到您的组织中的用户的无线网络设置。 通过部署这些设置，可以为最终用户简化到无线网络的连接。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 Wi-Fi 连接](wi-fi-connections-in-microsoft-intune.md)。|
 
 
 ## Mac OS X 配置策略
@@ -92,8 +92,8 @@ ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 |策略名称|在你想要完成以下事项时使用:|
 |---------------|------------------------|
-|**托管浏览器策略 （Android 4 和更高版本）**<br /><br />**托管浏览器策略（iOS 7.1 及更高版本）**|指定用户在使用 Managed Browser 应用时，他们能或不能访问的网站。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](manage-internet-access-using-managed-browser-policies.md)。|
-|**移动应用程序管理策略 （Android 4 和更高版本）**<br /><br />**移动应用程序管理策略（iOS 7.1 及更高版本）**|修改您部署的应用程序的功能，以帮助使其符合您的公司的遵从性和安全策略。 例如，你可以限制受限制应用内的剪切、复制和粘贴操作，或配置应用以打开 Managed Browser 内的所有 Web 链接。<br /><br />有关详细信息，请参阅 [Configure and deploy mobile application management policies in the Microsoft Intune console（在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略）](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)。|
+|**托管浏览器策略 （Android 4 和更高版本）**<br /><br />**托管浏览器策略（iOS 8.0 及更高版本）**|指定用户在使用 Managed Browser 应用时，他们能或不能访问的网站。<br /><br />有关详细信息，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](manage-internet-access-using-managed-browser-policies.md)。|
+|**移动应用管理(Android 4 和更高版本)**<br /><br />**移动应用程序管理策略（iOS 8.0 及更高版本）**|修改您部署的应用程序的功能，以帮助使其符合您的公司的遵从性和安全策略。 例如，你可以限制受限制应用内的剪切、复制和粘贴操作，或配置应用以打开 Managed Browser 内的所有 Web 链接。<br /><br />有关详细信息，请参阅 [Configure and deploy mobile application management policies in the Microsoft Intune console（在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略）](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)。|
 
 ## 常用的移动设备设置
 
@@ -118,6 +118,6 @@ Microsoft Intune 现在拥有针对每个设备平台的单独**配置策略**�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -4,23 +4,23 @@ description: "本主题中的信息可帮助你决定何时应该使用 App Wrap
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
-ms.reviewer: jeffgilb
+ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: d2d11cc8bed7575b2fe818c9aa5b2359a62a77e0
+ms.sourcegitcommit: 70f9fb5580b114fe1ba14a1bd05de58467d5cd00
+ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
 
 
 ---
 
 # 决定如何使用 Microsoft Intune 为移动应用程序管理准备应用
-可以使用 Intune 应用包装工具或 Intune App SDK 来启用你的应用以使用移动应用程序管理策略。 通过此信息了解这两种方式以及何时使用这两种方式。
+可以使用 Intune 应用包装工具或 Intune App SDK 启用应用以使用移动应用程序管理 (MAM) 策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
 ## Intune 应用包装工具
 应用包装工具主要用于内部业务线 (LOB) 应用。 此工具是一个命令行应用程序。它可以在应用周围创建包装器，之后包装器将允许 Intune 移动应用程序管理策略管理该应用。 使用此工具不需要源代码，但需要签名凭据。  有关签名凭据的详细信息，请参阅 [Intune 博客](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。 有关应用包装工具文档的信息，请参阅 [Android 应用包装工具](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 和 [iOS 应用包装工具](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
@@ -29,10 +29,24 @@ ms.openlocfilehash: d2d11cc8bed7575b2fe818c9aa5b2359a62a77e0
 
 如果已编写应用或者如果源代码不可用，则应该使用应用包装工具，而不是 SDK。
 
+**公共预览版当前不支持在未在 Intune 中注册的设备上使用 MAM 应用包装工具。有关详细信息，请参阅[保护未在 Intune 中注册的设备上的 LOB 应用](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)主题**。
+
+### 支持的平台
+
+|**应用包装工具** | **Xamarin** |**Cordova** |
+|------|----|----|
+|**iOS** |是|是|
+|**Android**| 否 |是|
 ## Intune App SDK
 App SDK 主要面向在应用商店或 Play Store 中安装了应用并想使用 Intune 管理应用的客户。 但是，任何应用都可以集成 SDK，即使是 LOB 应用。
 
 若要了解有关 SDK 的详细信息，请参阅[概述](/intune/develop/intune-app-sdk)。 若要开始使用 SDK，请参阅 [Microsoft Intune App SDK 入门](/intune/develop/intune-app-sdk-get-started)。
+
+### 支持的平台
+|**Intune App SDK** |**Xamarin** |**Cordova**
+|------|----|----|
+|**iOS**|支持 - 使用 Intune App SDK Xamarin 组件|支持 - 使用 Intune App SDK Cordova 插件|
+|**Android**| 支持 - 使用 Intune App SDK Xamarin 组件|支持 - 使用 Intune App SDK Cordova 插件|
 
 ## 功能比较
 此表列出了可用于 App SDK 和应用包装工具的设置。
@@ -61,14 +75,14 @@ App SDK 主要面向在应用商店或 Play Store 中安装了应用并想使用
 |选择性擦除 <br></br>**注意：**对于 iOS 设备，删除管理配置文件时，也会删除该应用。|X||
 |防止“另存为” |X||
 |支持多身份标识|X||
-
 ### 另请参阅
+
 [Android 应用包装工具](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [iOS 应用包装工具](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [使用 SDK 启用针对移动应用程序管理的应用](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

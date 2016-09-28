@@ -4,7 +4,7 @@ description: "使用条件访问保护和控制对 Exchange Online 的公司电�
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
+ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 
 
 ---
@@ -67,7 +67,7 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 你可以从 **Outlook** 和其他**使用新式验证的应用**限制对 Exchange Online 电子邮件的访问：-
 
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本
-- iOS 7.1 及更高版本
+- iOS 8.0 及更高版本
 - Windows Phone 8.1 及更高版本
 
 **新式验证**将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Microsoft Office 客户端中。
@@ -93,7 +93,7 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本
 
-- iOS 7.1 及更高版本
+- iOS 8.0 及更高版本
 
 - Windows Phone 8.1 及更高版本
 
@@ -262,6 +262,6 @@ ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

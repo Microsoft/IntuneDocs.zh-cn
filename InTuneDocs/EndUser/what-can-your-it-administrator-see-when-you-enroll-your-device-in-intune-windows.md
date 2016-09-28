@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 48377dfbe945447c6c4141d86e134685b97db1e8
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 2631541ea974769308aea30d2b37a3a79c22db99
 
 
 ---
@@ -57,11 +57,12 @@ ms.openlocfilehash: 48377dfbe945447c6c4141d86e134685b97db1e8
 
 -   制造商
 
-
-如有疑问，请与你的 IT 管理员联系。 有关他们的联系信息，请查看 [公司门户网站](http://
-
+[了解详细信息](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)。
 
 
-<!--HONumber=Aug16_HO5-->
+
+
+
+<!--HONumber=Sep16_HO4-->
 
 
