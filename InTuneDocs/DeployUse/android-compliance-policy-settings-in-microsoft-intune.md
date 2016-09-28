@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
+ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
+ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
 
 
 ---
@@ -66,7 +66,14 @@ ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
 - **要求禁用 USB 调试(Android 4.2 或更高版本)**：此设置指定是否要检测并确认设备上启用了 USB 调试选项。
 - **要求设备已启用“扫描设备的安全威胁”(Android 4.2-4.4)**：此设置指定在设备上启用“**验证应用**”功能。
 - **最低 Android 安全修补程序级别 (Android 6.0 或更高版本)**：使用此设置指定最小 Android 修补程序级别。  不满足此修补程序级别的设备将会不相容。 必须将日期的格式指定为：YYYY-MM-DD。
+- **需要启用设备威胁保护**：使用此设置将 Lookout MTP 解决方案的风险评估视为合规性的条件。 从下面选择一个允许的最高威胁等级：
 
+  - **无（安全）**这是最安全的选项。 这意味着该设备不能具有任何威胁。 若检测到设备具有任一等级的威胁，则将其评为不合规。
+  - **低：**若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
+  - **中：**若设备设备上存在的威胁为低级或中级，则将其评为合规。 如果检测到高级威胁，则将其确定为不合规。
+  - **高：**这是最不安全的选项。 本质上而言，此选项允许所有威胁等级，可能仅在将此解决方案用于报告时有用。
+
+  有关详细信息，请参阅[在合规性策略中启用设备威胁保护规则](enable-device-threat-protection-rule-in-compliance-policy.md)。
 
 ## 设备属性设置
 - **所需的最低 OS 版本：**当设备不满足最低 OS 版本要求时，它将被报告为不符合要求。
@@ -76,6 +83,6 @@ ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
