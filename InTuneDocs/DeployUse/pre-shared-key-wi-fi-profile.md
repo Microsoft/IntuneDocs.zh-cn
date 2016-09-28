@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
-ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
 
 
 
@@ -55,12 +55,18 @@ ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 4. 选择“**确定**”，保存并部署策略。
 
     > [!NOTE]
-只可以将此策略部署到用户组。
+    > 只可以将此策略部署到用户组。
 
 每个设备在下次签入时，将应用该策略，且将在设备上创建 Wi-Fi 配置文件。 设备将能够自动连接到网络。
 ## Android 或 Windows Wi-Fi 配置文件
 
 下面是一个针对 Android 或 Windows Wi-Fi 配置文件的 XML 代码示例：
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`：请设置为 **false**，因为 **ture** 可能导致设备需要加密密码并尝试进行解密，这可能导致连接失败。
+> 
+>  `<hex>53534944</hex>` 应设置为 `<name><SSID of wifi profile></name>` 的十六进制值。
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -70,6 +76,7 @@ ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -207,6 +214,6 @@ ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

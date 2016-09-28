@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: e898d070eb61583ff379821c9bf24f3997ae177e
 
 
 ---
@@ -50,7 +50,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 5.  **添加企业设备注册策略**在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中转到**策略**&gt;**企业设备注册**然后单击**添加**。
 
     提供**常规**详细信息，包括**名称**和**说明**，指定分配到配置文件的设备是否拥有用户关联或是否属于某个组。
-      - **用户关联提示**：必须在初始设置过程中将设备与某个用户相关联，然后可以以该用户的身份允许此设备访问公司数据和电子邮件。  应该对属于用户且需要使用公司门户（即需要安装应用）的 DEP 托管设备配置**用户关联**。
+      - **用户关联提示**：必须在初始设置过程中将设备与某个用户相关联，然后可以以该用户的身份允许此设备访问公司数据和电子邮件。  应该对属于用户且需要使用公司门户（即需要安装应用）的 DEP 托管设备配置**用户关联**。 **注意：**具有用户关联的 DEP 设备不支持多重身份验证。
       - **没有用户关联**：该设备不与用户关联。 将此隶属关系用于无需访问本地用户数据即可执行任务的设备。 需要用户隶属关系的应用，包括用于安装业务线应用的公司门户应用无法运行。
 
     你还可以**将设备分配到以下组**。 单击“选择...”来选择组。
@@ -89,7 +89,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 6.  **分配 DEP 设备以进行管理**转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com)，然后使用公司 Apple ID 登录。 转到**部署计划**&gt;**设备注册计划**&gt;**管理设备**。 指定 **“选择设备”**的方式，提供设备信息并按设备 **“序列号”**、 **“订单编号”**指定详细信息，或 **“上载 CSV 文件”**。 接下来，选择**分配到服务器**，然后选择为 Microsoft Intune 指定的&lt;服务器名称&gt;，然后单击**确定**。
 
-7.  **同步 DEP 托管的设备**以管理用户身份，打开[Microsoft Intune 管理控制台](http://manage.microsoft.com)，转到**管理**&gt;**移动设备管理**&gt;**iOS**&gt;**设备注册程计划**，然后单击**立即同步**。 会向 Apple 发送同步请求。 若要在同步后查看 DEP 托管的设备，在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到**组**&gt; **企业拥有的所有设备**。 在“企业拥有的设备”工作区中，在打开设备并运行设置助理以注册设备之前，托管设备的“状态”将一直显示为“未连接”。
+7.  **同步 DEP 托管的设备**以管理用户身份，打开[Microsoft Intune 管理控制台](http://manage.microsoft.com)，转到**管理**&gt;**移动设备管理**&gt;**iOS**&gt;**设备注册程计划**，然后单击**立即同步**。 会向 Apple 发送同步请求。 若要在同步后查看 DEP 托管的设备，在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“组”&gt;“所有设备”&gt;“企业预注册设备”&gt;“按 iOS 序列号”。 在“按 iOS 序列号”工作区中，在打开设备并运行设置助理以注册设备之前，托管设备的“状态”将一直显示为“未连接”。
 
     为了遵从 Apple 的有关可接受的 DEP 流量的条款，Intune 规定了以下限制：
      -  每 7 天只运行一次完全的 DEP 同步。 无论之前是否同步了序列号，在完全同步时，Intune 都将刷新 Apple 分配给 Intune 的每个序列号。 如果在上一个完全同步的 7 天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
@@ -106,6 +106,6 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

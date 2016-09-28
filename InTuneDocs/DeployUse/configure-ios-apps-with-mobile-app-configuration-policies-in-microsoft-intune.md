@@ -4,7 +4,7 @@ description: "Intune 中的移动应用配置策略可提供用户在运行 iOS 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
+ms.sourcegitcommit: 360865bcd97230e264ee3439407e8dd3017d0055
+ms.openlocfilehash: 1f239270c26a70b161e52c24e94ca5c2cae9ca3a
 
 
 ---
@@ -37,7 +37,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 无需直接向用户和设备部署这些策略， 而是将策略与应用关联，然后部署应用。 只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
 
 > [!TIP]
-> 此策略类型目前仅适用于运行 iOS 7.1 及更高版本的设备。 它支持下列应用安装类型：
+> 此策略类型目前仅适用于运行 iOS 8.0 及更高版本的设备。 它支持下列应用安装类型：
 >
 > -   **来自应用商店的托管 iOS 应用程序**
 > -   **iOS 应用包**
@@ -139,6 +139,6 @@ Intune 在属性列表中支持以下数据类型：
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

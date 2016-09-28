@@ -4,7 +4,7 @@ description: "将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 C
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
-ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
+ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
+ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 你无需在 Intune 租户中进行任何设置即可启用此集成。 你需要为 Cisco ISE 服务器提供访问你的 Intune 租户的权限。 完成此操作后，设置的剩余步骤将在你的 Cisco ISE 服务器中进行。 本文提供有关为 ISE 服务器提供对 Intune 租户的访问权限的说明。
 
 ### 步骤 1：管理证书
-1. 在 Azure Active Directory (Azure AD) 控制台中，导出证书。
+从 Azure Active Directory (Azure AD) 控制台导出证书，然后将其导入 ISE 控制台的受信任证书存储：
 
 #### Internet Explorer 11
 
@@ -44,6 +44,8 @@ ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
    f. 在“要导出的文件”页上，选择“浏览”以选取要在其中保存文件的位置，并提供文件名。 尽管看起来似乎是你在选择要导出的文件，但实际上是在为导出的证书将要保存到的文件命名。 选择“下一步”&gt;“完成”。
 
+   g. 从 ISE 控制台范围中，将 Intune 证书（你导出的文件）导入到“受信任的证书”存储中。
+
 #### Safari
 
  a. 登录 Azure AD 控制台。
@@ -52,14 +54,13 @@ b。 选择锁定图标&gt;“详细信息”。
 
    c. 选择“查看证书”&gt;“详细信息”。
 
-   d. 选择证书，然后选择“导出”。  
+   d. 选择证书，然后选择“导出”。 
+
+   e. 从 ISE 控制台范围中，将 Intune 证书（你导出的文件）导入到“受信任的证书”存储中。
 
 > [!IMPORTANT]
 >
 > 请检查该证书的到期日期，因为当它过期时，将必须导出该证书并导入新证书。
-
-
-2. 从 ISE 控制台范围中，将 Intune 证书（你导出的文件）导入到“受信任的证书”存储中。
 
 
 ### 从 ISE 中获取自签名证书 
@@ -97,8 +98,57 @@ b。 选择锁定图标&gt;“详细信息”。
 |Oauth 2.0 令牌终结点|令牌颁发 URL|
 |使用你的客户端 ID 更新你的代码|客户端 ID|
 
+### 步骤 4：将自签名证书从 ISE 上传到在 Azure AD 中创建的 ISE 应用
+1.     获取 .cer X509 公用证书文件中的 base64 编码证书值和指纹。 此示例使用 PowerShell：
+   
+      
+    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
+     `$cer.Import(“mycer.cer”)`
+      `$bin = $cer.GetRawCertData()`
+      `$base64Value = [System.Convert]::ToBase64String($bin)`
+      `$bin = $cer.GetCertHash()`
+      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
+      `$keyid = [System.Guid]::NewGuid().ToString()`
+ 
+    存储 $base64Thumbprint、$base64Value 和 $keyid 值，在下一步中使用。
+2.       通过清单文件上传证书。 登录到 [Azure 管理门户](https://manage.windowsazure.com)
+2.      在 Azure AD 管理单元中，找出想要配置 X.509 证书的应用程序。
+3.      下载应用程序清单文件。 
+5.      使用以下 JSON 替换空的“KeyCredentials”: [] 属性。  [实体和复杂类型参考](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)中描述了 KeyCredentials 的复杂类型。
 
-### 步骤 3：配置 ISE 设置
+ 
+    `“keyCredentials“: [`
+    `{`
+     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
+     `“keyId“: “$keyid_from_above“,`
+     `“type”: “AsymmetricX509Cert”,`
+     `“usage”: “Verify”,`
+     `“value”:  “$base64Value_from_above”`
+     `}2. `
+     `], `
+ 
+例如：
+ 
+    `“keyCredentials“: [`
+    `{`
+    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
+    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
+    `“type”: “AsymmetricX509Cert”,`
+    `“usage”: “Verify”,`
+    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
+    `}`
+    `],`
+ 
+6.      保存更改到应用程序清单文件。
+7.      通过 Azure 管理门户上传已编辑应用程序清单文件。
+8.      可选：再次下载清单文件，检查应用程序上是否存在 X.509 证书。
+
+>[!NOTE]
+>
+> KeyCredentials 证书是一个集合，因此可上传多个 X.509 证书以适应变更方案，或在泄露方案中删除证书。
+
+
+### 步骤 4：配置 ISE 设置
 在 ISE 管理控制台中，提供以下设置值：
   - “服务器类型”：移动设备管理器
   - “身份验证类型”：OAuth – 客户端凭据
@@ -150,6 +200,6 @@ b。 选择锁定图标&gt;“详细信息”。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

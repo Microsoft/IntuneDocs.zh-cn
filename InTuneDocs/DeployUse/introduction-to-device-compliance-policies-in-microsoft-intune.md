@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 下表列出了合规性策略支持的设备类型，也列出了当该策略与条件访问策略一起使用时托管不符合合规性的设置的方式。
 
---------------
+-----------------------------
 
-|策略设置| Windows 8.1 及更高版本| Windows Phone 8.1 及更高版本| iOS 6.0 及更高版本|Android 4.0 及更高版本<br/>Samsung KNOX 标准版 4.0 和更高版本|
+|策略设置| Windows 8.1 及更高版本| Windows Phone 8.1 及更高版本| iOS 8.0 及更高版本|Android 4.0 及更高版本<br/>Samsung KNOX 标准版 4.0 和更高版本|
 |-----|----|----|----|----|
 |**PIN 或密码配置** |已修正|已修正|已修正|已隔离|
 |**设备加密**|不适用|已修正|已修正（通过设置 PIN）|已隔离|
@@ -43,7 +43,9 @@ ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 |**最低操作系统版本**|已隔离|已隔离|已隔离|已隔离|
 |**最高操作系统版本**|已隔离| 已隔离| 已隔离| 已隔离|
 |**Windows 运行状况证明**|Windows 10 和 Windows 10 移动版已被隔离。<br /><br />设置不适用于 Windows 8.1|不适用|不适用|不适用|
---------------
+
+------------------------------
+
 **已修正** = 合规性操作由设备操作系统强制执行（例如，强制用户设置 PIN）。  设置永远不会不合规。
 
 **已隔离** = 设备操作系统并不强制执行合规性操作（例如，Android 设备不强制用户加密设备）。 当设备不合规时，进行以下操作：
@@ -62,6 +64,6 @@ ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

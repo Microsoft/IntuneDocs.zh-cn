@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
-ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,7 +41,7 @@ ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 1.  在 [ Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**”&gt;“**添加策略**”。
 2.  添加以下策略类型之一：
     - **Android &gt; 受信任的证书配置文件（Android 4 及更高版本）**
-    - **iOS &gt; 受信任的证书配置文件（iOS 7.1 及更高版本）**
+    - **iOS &gt; 受信任的证书配置文件（iOS 8.0 及更高版本）**
     - **Mac OS X &gt; 受信任的证书配置文（Mac OS X 10.9 及更高版本）**
     - **Windows &gt; 受信任的证书配置文件（Windows 8.1 及更高版本）**
     - **Windows &gt; 受信任的证书配置文件（Windows Phone 8.1 及更高版本）**
@@ -63,7 +63,7 @@ ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 1.  在 [ Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**”&gt;“**添加策略**”。
 2.  添加以下策略类型之一：
     - **Android &gt; SCEP 证书配置文件(Android 4 及更高版本)**
-    - **iOS &gt; SCEP 证书配置文件(iOS 7.1 及更高版本)**
+    - **iOS &gt; SCEP 证书配置文件（iOS 8.0 及更高版本）**
     - **Mac OS X &gt; SCEP 证书配置文件(Mac OS X 10.9 及更高版本)**
     - **Windows &gt; SCEP 证书配置文件(Windows 8.1 及更高版本)**
     - **Windows &gt; SCEP 证书配置文件(Windows Phone 8.1 及更高版本)**
@@ -92,7 +92,7 @@ ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
   - **Android &gt; .PFX 证书配置文件（Android 4 及更高版本）**
   - **Windows &gt; PKCS #12 (.PFX) 证书配置文件（Windows 10 及更高版本）**
   - **Windows &gt; PKCS #12 (.PFX) 证书配置文件（Windows Phone 10 及更高版本）**
-  - **iOS > PKCS #12 (.PFX)证书配置文件(iOS 7.1 及更高版本)**    
+  - **iOS > PKCS #12 (.PFX) 证书配置文件（iOS 8.0 及更高版本）**    
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 3.  在策略窗体上输入请求的信息。
 4.  选择“**保存策略**”。
@@ -130,6 +130,6 @@ ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 

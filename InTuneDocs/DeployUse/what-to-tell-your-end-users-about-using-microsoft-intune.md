@@ -4,7 +4,7 @@ description: "指向与你的最终用户共享的信息的链接"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 09/20/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
+ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
+ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 
 ---
@@ -57,14 +57,12 @@ ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 - [iOS 用户如何获取其应用](how-your-ios-users-get-their-apps.md)
 - [Windows 用户如何获取其应用](how-your-windows-users-get-their-apps.md)
 
-## 帮助最终用户理解公司门户应用消息
 
-若要帮助用户解决在使用公司门户时可能遇到的问题，你可以查看[用户可能在公司门户中看到的消息列表](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)。
 
 如果你还希望本文提供你想了解的其他信息，请将建议添加到本主题底部的“评论”框中。 谢谢!
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

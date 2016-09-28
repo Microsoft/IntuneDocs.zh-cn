@@ -4,7 +4,7 @@ description: "介绍如何在 Intune 中注册 Android 设备"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
+ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
+ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 
 ---
@@ -71,7 +71,7 @@ ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为**Microsoft 绝不会发起或管理电话呼叫！** 消息文本由 Google 管控，Microsoft 无法更改。 允许访问就意味着允许你的设备将数据日志写入设备的 SD 卡中，这进而使你可以使用 USB 电缆移动这些日志。
+    如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为**Microsoft 绝不会发起或管理电话呼叫！** 消息文本由 Google 管控，Microsoft 无法更改。 允许访问即允许设备向 Intune 发送设备的 IMEI 编号。 IMEI 与序列号类似的编号，可唯一标识移动设备。
 
     如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”复选框关闭以后接收此消息。  如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
 
@@ -81,7 +81,7 @@ ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
 
     如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为**Microsoft 绝不会访问你的联系人！** 消息文本由 Google 管控，Microsoft 无法更改。 当你允许访问时，它只允许公司门户应用创建、使用和管理你的工作账户。
 
-    如果拒绝访问，下次点击“发送数据”时将再次出现此消息，但是你可以点击“不再询问”复选框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **存储**，然后开启权限。
+    如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”复选框关闭以后接收此消息。  如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
 
 11.  在“激活设备管理员”屏幕上，点击“激活”。
 
@@ -107,7 +107,7 @@ ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
 
     ![“公司访问设置完成”屏幕](./media/and-enroll-10-comp-access-setup-complete.png)
 
-你需转到**设置** &gt; **安全**，然后打开**未知源**才能尝试安装公司应用。 如果你在尝试安装应用前未打开此选项，则会看到消息“已阻止安装。 出于安全性考虑，你的设置已被设置为阻止安装未知来源的应用。” 你可点击错误对话框上的“设置”以转到“未知来源”选项。
+你需转到**设置** &gt; **安全**，然后打开**未知源**才能尝试安装公司应用。 如果你在尝试安装应用前未打开此选项，则会看到消息“已阻止安装”。 出于安全性考虑，你的设置已被设置为阻止安装未知来源的应用。” 你可点击错误对话框上的“设置”以转到“未知来源”选项。
 
 仍需要帮助？ 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
 
@@ -116,6 +116,6 @@ ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

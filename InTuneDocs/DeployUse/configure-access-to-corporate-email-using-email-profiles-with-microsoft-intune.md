@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 你可以使用电子邮件配置文件配置下列设备类型上的本机电子邮件客户端：
 -   Windows Phone 8 及更高版本
 -   Windows 10 桌面版、Windows 10 移动版及更高版本
--   iOS 7.1 及更高版本
+-   iOS 8.0 及更高版本
 -   Samsung KNOX 标准版（4.0 及更高版本）
 
 除了在设备上设置电子邮件帐户外，还可以设置要同步的电子邮件数量，并且根据设备类型设置要同步的内容类型。
@@ -71,7 +71,7 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
     -   **Samsung KNOX 标准（4.0 及更高版本）的电子邮件配置文件**
 
-    -   **电子邮件配置文件（iOS 7.1 及更高版本）**
+    -   **电子邮件配置文件（iOS 8.0 及更高版本）**
 
     -   **电子邮件配置文件（Windows Phone 8 及更高版本）**
 
@@ -122,6 +122,6 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

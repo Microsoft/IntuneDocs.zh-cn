@@ -1,5 +1,5 @@
 ---
-title: "系统会提示你安装 Lookout for Work | Microsoft Intune"
+title: "系统提示在 Android 设备上安装 Lookout for Work | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
@@ -12,19 +12,18 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e1f0ee69c16c48932c7ea1fefff03f6f35416865
-ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
+ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
+ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
 
 ---
 
 # 系统会提示你安装 Lookout for Work
 
-如果看到如下所示消息“尚未安装并激活 Lookout for Work”，这意味着 IT 管理员要求安装 Lookout for Work 应用，该应用可通过查找潜在的安全威胁帮助保护你的设备。
+在可访问工作之前，IT 管理员需要你安装 Lookout for Work 应用，该应用会查找潜在安全威胁来帮助保护你的设备。
 
-![必须解决合规性问题](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
-**修复该问题所需执行的操作：**
+**需要执行的操作：**
 
 1.  从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 — 从 Play Store 安装 Lookout for Work”。
 
@@ -32,7 +31,7 @@ ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
 
     将转至 Play Store 中的 Lookout for Work 安装页。
 
-2.  安装 Lookout for Work，然后点击“接受”以便 Lookout for Work 访问设备。
+2.  安装 Lookout for Work，然后点击“接受”以便 Lookout for Work 可访问设备。
 
     ![点击“接受”以便 Lookout for Work 访问设备](./media/lookout-accept-store-permissions-android.png)
 
@@ -40,7 +39,7 @@ ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
 
     ![打开 Lookout for Work，然后点击“激活”](./media/lookout-activate-button-android.png)
 
-4. 点击“使用工作帐户登录”，然后输入你用于访问工作或学校电子邮件、文件和其他数据的帐户。
+4. 点击“使用工作帐户登录”，然后输入用于访问工作/学校电子邮件和文件的帐户。
 
     ![使用工作或学校帐户登录](./media/lookout-sign-in-android.png)
 
