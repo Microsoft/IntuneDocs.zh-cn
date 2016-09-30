@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
 你可以使用托管 iOS 应用管理和部署来自应用商店的免费 iOS 应用。 你还可使用托管 iOS 应用将[移动应用管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)与[兼容的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)相关联，并在管理员控制台中查看它们的状态。<br /><br />托管 iOS 应用不存储在 Intune 云存储空间中。
 
 > [!TIP]
-> 在[设置 MDM 机构](get-ready-to-enroll-devices-in-microsoft-intune.md)为 Intune 之前，移动设备选项将不可用。
+> 在[设置 MDM 机构](prerequisites-for-enrollment.md)为 Intune 之前，移动设备选项将不可用。
 
 ## Intune 软件发行者
 从 Intune 管理员控制台中添加或修改应用时，将启动“Microsoft Intune 软件发行者”。 从发行者中，可以选择并配置以下软件安装程序类型：
@@ -82,6 +82,6 @@ Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -9,19 +9,16 @@
 ### [其他选项和其他功能](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [后续步骤](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [常见方案](common-ways-to-use-intune.md)
-## [快速启动指南](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [阻止公司数据从 Office 365 移动应用中泄露](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [向用户发布移动应用](publish-mobile-apps-to-users.md)
-### [保护 Windows 电脑免受恶意软件的威胁](protect-pcs-against-malware-threats.md)
-### [简化移动设备上的电子邮件配置](simplify-email-configuration-on-mobile-devices.md)
+## [词汇表](intune-glossary.md)
 
 # [开始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [部署和使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [开发和自定义应用](/intune/develop/intune-app-sdk)
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
