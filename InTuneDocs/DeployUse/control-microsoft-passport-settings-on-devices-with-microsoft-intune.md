@@ -4,7 +4,7 @@ description: "了解 Intune 如何与 Microsoft Hello for Business 集成（Micr
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d212869051719b6b1f1d527ee52044420df0c14
-ms.openlocfilehash: c2c2774dd85d8ce9c056248f801220e06f17063b
+ms.sourcegitcommit: 73379311acad6f2a7054e262dea701d3e7b9ad45
+ms.openlocfilehash: 40344947d7c94c90258c967da36c09c95a54335c
 
 
 ---
@@ -29,6 +29,18 @@ Intune 与 Hello for Business 集成的两种方式：
 -   可以使用 Intune 策略来控制用户能够和不能用于登录的手势。
 
 -   可在 Windows Hello for Business 密钥存储提供程序 (KSP) 中存储身份验证证书。 有关详细信息，请参阅[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](secure-resource-access-with-certificate-profiles.md)。
+
+> [!IMPORTANT]
+> 在周年更新前的 Windows 10 桌面版和移动版中，可以设置两种不同的 PIN，用于对资源进行身份验证：
+- **设备 PIN** 用于解锁设备并连接到云资源。
+- **工作 PIN** 用于访问用户个人设备 (BYOD) 上的 Azure AD 资源。
+
+>在周年更新中，这两个 PIN 合并为一个设备 PIN。
+设置用于控制设备 PIN 的任何 Intune 配置策略，以及所配置的任何 Windows Hello 企业版策略，现在都会设置这一新的 PIN 值。
+如果已设置这两个策略类型以控制 PIN，则 Windows Hello 企业版策略将同时适用于 Windows 10 桌面和移动设备。
+为确保解决策略冲突并正确应用 PIN 策略，请更新 Windows Hello 企业版策略以在配置策略中匹配该设置，并要求用户在公司门户应用中同步他们的设备。
+
+
 
 ## 创建 Windows Hello for Business 策略
 
@@ -67,6 +79,6 @@ Intune 与 Hello for Business 集成的两种方式：
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

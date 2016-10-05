@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 76aaa33832dc1b765e248f85f739a4955ca90e2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d88405e913fe61cef2c297f9d50408e10674cf3f
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 76aaa33832dc1b765e248f85f739a4955ca90e2d
 ## 公司门户应用注册
 可以让用户使用 Intune 公司门户应用安装和注册设备，从而注册他们的设备。 创建 DNS CNAME 可帮助用户进行连接 Intune 并在其中进行注册，而无需输入服务器名称。 如果你管理 Windows Phone 8.0 设备或需要将公司门户部署到 Windows Phone 设备，则必须下载公司门户应用并对其进行签名。 请参阅[设置 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
 
-1.  **设置 Intune**<br>如果你尚未设置，请通过[将移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
+1.  **设置 Intune**<br>如果你尚未设置，请通过[将移动设备管理机构设置](prerequisites-for-enrollment.md#set-mobile-device-management-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
 
 2.  **创建 CNAME**（可选）<br>为公司的域创建 **CNAME** DNS 资源记录。 例如，你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 manage.microsoft.com 的 CNAME。 如果存在多个经过验证的域，则为每个域创建一个 CNAME 记录。 CNAME 资源记录必须包含以下信息：
 
@@ -65,6 +65,6 @@ ms.openlocfilehash: 76aaa33832dc1b765e248f85f739a4955ca90e2d
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

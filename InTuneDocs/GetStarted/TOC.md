@@ -11,6 +11,12 @@
 ### [网络带宽使用](network-bandwidth-use.md)
 ### [自定义域名](domain-names-for-microsoft-intune.md)
 
+## [选择如何管理设备](choose-how-to-manage-devices.md)
+### [已注册设备管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Intune 电脑软件客户端功能](windows-pc-management-capabilities-in-microsoft-intune.md)
+
+## [迁移到 Intune](migrate-to-intune.md)
+
 ## [Intune 快速入门指南](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [登录到 Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [配置自定义域名](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -22,10 +28,6 @@
 ### [注册移动设备并安装应用](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [配置后任务](post-configuration-tasks.md)
 
-## [选择如何管理设备](choose-how-to-manage-devices.md)
-### [已注册设备管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Intune 电脑软件客户端功能](windows-pc-management-capabilities-in-microsoft-intune.md)
-
 ## [Intune 部署的推出阶段](rollout-phases-for-microsoft-intune-deployment.md)
 ### [项目审视](project-scope.md)
 ### [概念证明](proof-of-concept.md)
@@ -34,11 +36,12 @@
 ### [操作和维护](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [部署和使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [开发和自定义应用](/intune/develop/intune-app-sdk)
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
