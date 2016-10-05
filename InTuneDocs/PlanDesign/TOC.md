@@ -1,6 +1,5 @@
 # [了解和探索](/intune/understand-explore/introduction-to-microsoft-intune)
 # [开始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
-# [规划和设计](ways-to-do-enterprise-mobility.md)
 <!--- ## [Migrate to Intune](migrating-to-intune.md)
 ### [Set up Intune](migrating-to-intune-step-one.md)
 ### [Configure Intune](migrating-to-intune-step-two.md)
@@ -15,12 +14,12 @@
 ## [Help secure access from hotel kiosks](help-secure-access-from-hotel-kiosks.md)
 ## [Best practices for using Microsoft Intune](best-practices-for-using-intune.md)--->
 <!--- ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)--->
-
+# [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [部署和使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [开发和自定义应用](/intune/develop/intune-app-sdk)
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

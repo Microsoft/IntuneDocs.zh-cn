@@ -13,8 +13,8 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: a6438bb3ca21e5c46dca5ebe69266fd9bce9a4b8
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
 |要求|更多信息|
 |---------------|--------------------|
 |已配置且正在运行 Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|移动设备管理机构| [将移动设备管理机构设置为 Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
+|移动设备管理机构| [将移动设备管理机构设置为 Microsoft Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority)|
 |Microsoft Exchange 版本|Exchange Online 或新 Exchange Online Dedicated 服务|
 |Active Directory 同步|你必须[设置 Active Directory 同步](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用 Intune Connector。|
 
@@ -64,6 +64,6 @@ Service-to-Service Connector 将自动配置并与 Exchange Online 或新 Exchan
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

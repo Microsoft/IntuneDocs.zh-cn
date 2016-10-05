@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
--   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/gprerequisites-for-enrollment.md)
 -   [设置 iOS 和 Mac 设备管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [设置 Windows 设备管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -284,17 +284,17 @@ ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 |0x80CF0437 |未将客户端计算机上的时钟设置为正确的时间。|确保将客户端计算机上的时钟和时区设置为正确的时间和时区。|
 |0x80240438、0x80CF0438、0x80CF402C|无法连接到 Intune 服务。 检查客户端代理设置。|验证 Intune 是否支持客户端计算机上的代理配置，以及客户端计算机是否能够访问 Internet。|
 |0x80240438，0x80CF0438|未配置 Internet Explorer 和本地系统中的代理设置。|无法连接到 Intune 服务。 检查客户端代理设置，确认客户端计算机的代理配置受 Intune 支持，且客户端计算机拥有 Internet 访问。|
-|0x80043001،¢0x80CF3001،¢0x80043004،¢0x80CF3004|注册程序包过期。|从“管理”工作区中下载并安装最新的客户端软件包。|
-|0x80043002£¬0x80CF3002|帐户处于维护模式。|当帐户处于维护模式时，你无法注册新客户端计算机。 若要查看帐户设置，请登录到你的帐户。|
-|0x80043003£¬0x80CF3003|帐户被删除。|验证你的帐户和 Intune 订阅是否仍处于活动状态。 若要查看帐户设置，请登录到你的帐户。|
-|0x80043005£¬0x80CF3005|ТСЧўПъїН»§¶ЛјЖЛг»ъ،£|等几个小时并从计算机中删除任何较旧版本的客户端软件，然后重试客户端软件安装。|
-|0x80043006£¬0x80CF3006|ТСґпµЅХК»§ЛщФКРнµДЧоґуЧщО»Кэ،£|贵组织必须购买附加的座位，你才能在服务中注册更多客户端计算机。|
-|0x80043007£¬0x80CF3007|在安装程序所在的文件夹中找不到证书文件。|在开始安装之前提取所有文件。 请不要重命名或重新定位任何提取的文件：所有文件必须位于同一文件夹中，否则安装将失败。|
+|0x80043001、0x80CF3001、0x80043004、0x80CF3004|注册程序包过期。|从“管理”工作区中下载并安装最新的客户端软件包。|
+|0x80043002、0x80CF3002|帐户处于维护模式。|当帐户处于维护模式时，你无法注册新客户端计算机。 若要查看帐户设置，请登录到你的帐户。|
+|0x80043003、0x80CF3003|帐户被删除。|验证你的帐户和 Intune 订阅是否仍处于活动状态。 若要查看帐户设置，请登录到你的帐户。|
+|0x80043005、0x80CF3005|客户端计算机已停用。|等几个小时并从计算机中删除任何较旧版本的客户端软件，然后重试客户端软件安装。|
+|0x80043006、0x80CF3006|已达到允许此帐户拥有的最大座位数。|贵组织必须购买附加的座位，你才能在服务中注册更多客户端计算机。|
+|0x80043007、0x80CF3007|在安装程序所在的文件夹中找不到证书文件。|在开始安装之前提取所有文件。 请不要重命名或重新定位任何提取的文件：所有文件必须位于同一文件夹中，否则安装将失败。|
 |0x8024D015、0x00240005、0x80070BC2、0x80070BC9、0x80CFD015|无法安装软件，因为客户端计算机的重启处于挂起状态。|重启计算机，然后重试客户端软件安装。|
 |0x80070032|在客户端计算机上未找到用于安装客户端软件的一个或多个先决条件。|确保所有必需的更新都已安装在客户端计算机上，然后重试客户端软件安装。|
-|0x80043008£¬0x80CF3008|ОґДЬЖф¶Ї Microsoft Online Management Updates ·юОс،£|请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。|
-|0x80043009£¬0x80CF3009|已在服务中注册客户端计算机。|你必须先停用客户端计算机，然后才能在服务中重新注册该客户端计算机。|
-|0x8004300B£¬0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
+|0x80043008、0x80CF3008|未能启动 Microsoft Online Management 更新服务。|请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。|
+|0x80043009、0x80CF3009|已在服务中注册客户端计算机。|你必须先停用客户端计算机，然后才能在服务中重新注册该客户端计算机。|
+|0x8004300B、0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
 |0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 对 DLL 进行疑难解答时，可能必须使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/en-us/kb/198038)中描述的工具。|
 |0x80cf0440|到服务终结点的连接已终止。|试用或付费帐户处于挂起状态。 创建一个新的试用或付费帐户，并重新注册。|
 
@@ -306,6 +306,6 @@ ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
+ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
+ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 
 
@@ -64,9 +64,10 @@ ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`：请设置为 **false**，因为 **ture** 可能导致设备需要加密密码并尝试进行解密，这可能导致连接失败。
+> `<protected>false</protected>`必须设置为 **false**，因为 **ture** 可能导致设备需要加密密码并尝试进行解密，这可能导致连接失败。
 > 
 >  `<hex>53534944</hex>` 应设置为 `<name><SSID of wifi profile></name>` 的十六进制值。
+>  Windows 10 设备可能会返回误报的“0x87D1FDE8 修正失败”错误，但仍可以使用该配置文件进行预配。
 
     <!--
     <Name of wifi profile> = Name of profile
