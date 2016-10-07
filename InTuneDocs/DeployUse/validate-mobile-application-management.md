@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9301f6297065f752cea1dd19024efb11f0730
-ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5b6253d3d4c969b6947d83b5c8695a484f8c1d27
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 本主题提供有关设置移动应用管理 (MAM) 后检查问题的相关信息。 本指南适用于 Azure 门户中的 MAM 策略。
 
 ### 检查症状
-由于 MAM 是数据保护工具，因此用户不太可能报告问题。 如果 MAM 配置出现问题，用户将具有不受限制的访问权限，因为在没有 MAM 时他们也会具有不受限制的访问权限，所以也不会意识到出现了问题。 因此，建议让一小组可以专门测试 MAM 限制的用户试验 MAM 策略，从而验证 MAM 配置。 
+由于 MAM 是数据保护工具，因此用户不太可能报告问题。 如果 MAM 配置出现问题，用户将具有不受限制的访问权限，因为在没有 MAM 时他们也会具有不受限制的访问权限，所以也不会意识到出现了问题。 因此，建议让一小组可以专门测试 MAM 限制的用户试验 MAM 策略，从而验证 MAM 配置。
 
 
-### 要检查的内容 
+### 要检查的内容
 
 如果测试显示 MAM 策略行为与预期不符，建议检查以下各项：
 
@@ -40,7 +40,7 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 
 2. 从列表中选择用户或搜索并选择一个用户，然后选择“**选择用户**”。 在“**应用报告**”列顶部，将看到用户是否已获得 MAM 授权。 你可以从下面看到该用户是否已获得 O365 授权，以及所有用户设备的应用状态。
 
-![MAM 的应用状态](..\media\ts-mam-use-apps.png) 
+![MAM 的应用状态](..\media\ts-mam-user-apps.png) 
 
 ### 要执行的操作
 下面是要根据用户状态采取的操作：
@@ -57,6 +57,6 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 
