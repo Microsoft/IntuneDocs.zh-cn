@@ -4,7 +4,7 @@ description: "本主题有助于解决 Microsoft Intune 中的应用部署问题
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
-ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
+ms.sourcegitcommit: 30d42bc4ee38a45895320eebd665fe8f5a0cb4ee
+ms.openlocfilehash: 0db3e6a39bd0d30231c339cb4501ce25059e4657
 
 
 ---
@@ -32,11 +32,23 @@ ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
 |0x80073CFB|已经安装了提供的包，阻止重新安装此包|如果你正在安装的包与已安装的包并不完全相同，则可能会收到此错误。 确认数字签名也是包的一部分。 对包进行重新构建或者重新签名时，该包与以前安装的包在位方面不再完全相同。 用于修复此错误的两个可能的选项如下所示：<br /><br />-   递增应用的版本号，然后对包进行重新构建并重新签名。<br />-   在安装新包之前，请删除系统上每个用户的旧包。|
 |0x87D1041C|应用程序安装成功，但未检测到应用程序。|- 应用已通过 Intune 成功部署，并（可能由最终用户）随后卸载。 指示用户从公司门户重新安装应用。 在设备下次签入时，将自动重新安装所需应用。|
 
+## 对 Windows 应用商店中的应用进行故障排除
+
+[排除 Windows 应用商店应用的打包、部署和查询故障](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)主题中的信息可帮助你解决使用 Intune 或其他方式从 Windows 应用商店安装应用时可能会遇到的问题。
+
+## 对由 Intune 软件客户端管理的电脑的应用部署进行故障排除
+若要解决将应用部署到由 Intune 软件客户端管理的电脑时遇到的问题，可查看以下两个日志文件：
+- %ProgramFiles%\Microsoft\OnlineManagement\Logs folder
+- %ProgramFiles%\Microsoft\OnlineManagement\Updates\ReportingEvents.log
+
+此外，若需要打开 Intune 的支持案例，将这些日志发送给 Microsoft 会很有帮助。
+
+
 ### 后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

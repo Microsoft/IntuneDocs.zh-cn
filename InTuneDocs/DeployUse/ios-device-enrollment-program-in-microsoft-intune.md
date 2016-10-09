@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: e898d070eb61583ff379821c9bf24f3997ae177e
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d06d6e7de5c2e30ae8078642184ad8cfadf15be4
 
 
 ---
@@ -102,10 +102,10 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 从 10 月开始，设备组管理将移到 Azure Active Directory。 过渡到 Azure Active Directory 组后，组分配将不会出现在“企业注册配置文件”选项中。 由于此更改将历时数月，因此你可能不会立即看到更改。 移到新的门户后，可以根据企业注册配置文件名称定义动态设备组分配。 此过程可确保预分配到设备组的设备会自动注册到部署了策略和应用的组中。 [详细了解 Azure Active Directory 组](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### 另请参阅
-[为注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[注册设备的先决条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,14 +13,14 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 96d8911dafe7897458297867ddfef97206fdfc9c
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 9518381dfd967b8cbf8d01bf834d8148d2c2501b
 
 
 ---
 
 # 使用 Microsoft Intune 管理 Exchange ActiveSync 移动设备
-若要使用 Microsoft Intune 直接管理移动设备，则必须[在 Intune 中注册](get-ready-to-enroll-devices-in-microsoft-intune.md)设备。 或者，管理员可以启用限制更多的管理解决方案，该解决方案通过 Exchange Connector 使用 Exchange ActiveSync (EAS) 管理。 使用 Office 365，可以通过本地 Exchange 服务器和 Exchange Online 管理设备。 Intune 仅支持每个订阅中存在一个 Exchange Connector 连接（任意类型）。
+若要使用 Microsoft Intune 直接管理移动设备，则必须[在 Intune 中注册](prerequisites-for-enrollment.md)设备。 或者，管理员可以启用限制更多的管理解决方案，该解决方案通过 Exchange Connector 使用 Exchange ActiveSync (EAS) 管理。 使用 Office 365，可以通过本地 Exchange 服务器和 Exchange Online 管理设备。 Intune 仅支持每个订阅中存在一个 Exchange Connector 连接（任意类型）。
 
 ## 移动设备的 Exchange 访问规则 ##
 
@@ -46,6 +46,6 @@ Intune 控制台可用于管理 [EAS 策略设置](exchange-activesync-policy-se
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 182601f7e4a4bd38c70f7961188eb4af593f6107
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 4c72b39296c9c2f0fe435d57f1e829ba3114fc61
 
 
 ---
@@ -52,7 +52,7 @@ ms.openlocfilehash: 182601f7e4a4bd38c70f7961188eb4af593f6107
 
 在已注册的移动设备上打开“公司门户”，选择**应用**，然后安装**Microsoft Skype**。
 
-若要深入了解如何使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理移动设备，请参阅[准备好在 Microsoft Intune 中注册设备](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)。
+若要深入了解如何使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理移动设备，请参阅[在 Microsoft Intune 中注册设备的先决条件](/intune/deploy-use/prerequisites-for-enrollment.md)。
 
 
 ### 后续步骤
@@ -64,6 +64,6 @@ ms.openlocfilehash: 182601f7e4a4bd38c70f7961188eb4af593f6107
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

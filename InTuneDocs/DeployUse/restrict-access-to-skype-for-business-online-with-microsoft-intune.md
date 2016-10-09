@@ -13,8 +13,8 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 27d993974d71b34b36cbd3216b83a1303689bf15
+ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
+ms.openlocfilehash: 8b68465554946c198a8b5f0fd6cf2a8466c05e40
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 27d993974d71b34b36cbd3216b83a1303689bf15
 
 在配置 Skype for Business Online 的条件性访问策略**之前**，必须：
 - 具有 **Skype for Business Online 订阅** 并将 Skype for Business Online 许可证分配给用户。
-- 已订阅了**企业移动性套件**或 **Azure Active Directory Premium**。
+- 具有 **Azure AD premium 订阅**。 有关详细信息，请参阅 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。 **企业移动性套件和安全订阅**包括 Intune 和 Azure Active Directory Premium 订阅。 有关详细信息，请参阅[企业移动性套件定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)。
 -   为 Skype for Business Online[启用“新式验证”](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。
 -  所有的最终用户必须使用 **Skype for Business Online**。 如果你具有同时使用 Skype for Business Online 和 Skype for Business 本地部署进行的部署，那么条件性访问策略将不会应用到最终用户。
 
@@ -116,6 +116,6 @@ ms.openlocfilehash: 27d993974d71b34b36cbd3216b83a1303689bf15
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 

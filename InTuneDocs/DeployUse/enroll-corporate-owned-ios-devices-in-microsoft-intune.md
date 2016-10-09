@@ -13,8 +13,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bee93334e7b868ef6c827fba9efc3318c8419527
-ms.openlocfilehash: b295ee11d566fbfbe84513c045f3a76dfd51cda4
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c28b51146deb6a0a28070f72449972fd60076231
 
 
 ---
@@ -76,10 +76,10 @@ DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用�
 
 
 ### 另请参阅
-[为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[在 Microsoft Intune 中注册设备的先决条件](gprerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

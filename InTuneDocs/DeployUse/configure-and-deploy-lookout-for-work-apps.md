@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4d05b9ba7249e4068d21480b1c9db342277757e
-ms.openlocfilehash: 687a102ccb34cb7acfaab1e8a1d4b67cb54b9e92
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 46a6b836e344c9cf876d633f868753a49c0cd440
 
 
 ---
@@ -37,9 +37,9 @@ ms.openlocfilehash: 687a102ccb34cb7acfaab1e8a1d4b67cb54b9e92
 
 **若要将应用部署到用户**，请选择以上屏幕中显示的 Lookout for Work 应用，并选择“管理部署”。
 
-选择的用户必须与添加到 Lookout MTP 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) 部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
+选择的用户必须与添加到 Lookout 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout 设备威胁保护](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp)部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
 >[!IMPORTANT]
-> Intune 应用部署向导并未识别到 Azure AD 用户组且使用的是 Intune 用户组，因此必须基于在 Lookout MTP 控制台中注册的 Azure AD 用户组创建 Intune 用户组（如[本](plan-your-user-and-device-groups.md)主题所述）。
+> Intune 应用部署向导并未识别到 Azure AD 用户组且使用的是 Intune 用户组，因此必须基于在 Lookout 控制台中注册的 Azure AD 用户组创建 Intune 用户组（如[本](plan-your-user-and-device-groups.md)主题所述）。
 
 选择“必需安装”选项，该选项要求在用户设备上安装 Lookout 应用。
 
@@ -57,6 +57,6 @@ ms.openlocfilehash: 687a102ccb34cb7acfaab1e8a1d4b67cb54b9e92
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
-ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: a853eb4de5528b3ca219ca844a9df4f3b5ad9224
 
 
 ---
@@ -29,6 +29,7 @@ ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 还可以使用独立于条件性访问的合规性策略。 独立使用时，会评估目标设备并报告其合规性状态。 例如，你可能要报告未加密的设备数，或哪些设备已越狱或取得 root 权限。 但是，独立使用，不会实施对公司资源的访问限制。
 
 将合规性策略部署到用户。 将合规性策略部署到用户后，会对用户设备检查合规性。
+若要了解策略部署完成后，移动设备需要多长时间获取策略，请参阅[管理设备上的设置和功能](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)
 
 下表列出了合规性策略支持的设备类型，也列出了当该策略与条件访问策略一起使用时托管不符合合规性的设置的方式。
 
@@ -64,6 +65,6 @@ ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 
