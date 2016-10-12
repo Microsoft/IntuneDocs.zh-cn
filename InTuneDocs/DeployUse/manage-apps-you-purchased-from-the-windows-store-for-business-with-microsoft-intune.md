@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d40ec3b5b7c5c4ee2cfd48a95ada0dadcaa80be4
-ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
 
 ## 开始之前
 从适用于企业的 Windows 应用商店同步并部署应用之前，请查看以下信息：
-* 你必须将 Intune 配置为你的组织的移动设备管理机构。 有关详细信息，请参阅[为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)。
+* 你必须将 Intune 配置为你的组织的移动设备管理机构。 有关详细信息，请参阅[在 Microsoft Intune 中注册设备的先决条件](prerequisites-for-enrollment.md)。
 * 必须已在适用于企业的 Windows 应用商店中注册帐户。
 * 一旦将适用于企业的 Windows 应用商店帐户与 Intune 关联，将来你将无法更改为其他帐户。
 * 无法在 Intune 中手动添加或删除从应用商店购买的应用。 这些应用只能与适用于企业的 Windows 应用商店同步。
@@ -77,6 +77,6 @@ ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
