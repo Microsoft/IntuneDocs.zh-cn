@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fbe37aa081f850224ce4ee76f66e154c6001c9c
-ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
 
 >[!IMPORTANT]
 >
->在 Intune 门户中打开“组”工作区时，若显示 Azure Active Directory (Azure AD) 门户的链接，则表明 Intune 中的组管理已在使用新的 Azure AD 安全组方法，如[“组”的管理员体验改善通知](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 单击 Azure AD 门户链接以创建并管理组。 
+>在 Intune 门户中打开“组”工作区时，若显示 Azure Active Directory (Azure AD) 门户的链接，则表明 Intune 中的组管理已在使用新的 Azure AD 安全组方法，如[“组”的管理员体验改善通知](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 单击 Azure AD 门户链接以创建并管理组。
+>
+>![Azure 组管理链接的屏幕截图](../media/groups-link-azure.png) 
 >
 >若未显示 Azure AD 门户链接，则表明正在使用当前组管理方法，如[使用 Microsoft Intune 创建组以管理用户和设备](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)中所述。
 
@@ -202,6 +204,6 @@ ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

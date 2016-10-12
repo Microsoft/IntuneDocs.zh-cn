@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
-ms.openlocfilehash: ba7e7e19966ce3ad582c8a520b7c9174dba76bf5
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 
 
 ---
@@ -35,7 +35,8 @@ ms.openlocfilehash: ba7e7e19966ce3ad582c8a520b7c9174dba76bf5
 
 在配置 SharePoint Online 的条件性访问策略**之前**，必须：
 - 具有 **SharePoint Online 订阅**，并且用户必须获得 SharePoint Online 许可。
-- 具有 **Azure Active Directory Premium 订阅**。 有关详细信息，请参阅 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。**企业移动性套件和安全订阅**包括 Intune 和 Azure Active Directory Premium 订阅。 有关详细信息，请参阅[企业移动性套件定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)。
+- 具有**企业移动性 + 安全性或 Azure Active Directory Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+
 
   若要连接到所需文件，设备必须：
 -   已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] **注册** 或是已加入域的 PC。
@@ -193,6 +194,6 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 
