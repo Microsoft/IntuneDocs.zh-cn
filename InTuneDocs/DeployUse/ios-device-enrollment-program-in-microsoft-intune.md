@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: e898d070eb61583ff379821c9bf24f3997ae177e
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d06d6e7de5c2e30ae8078642184ad8cfadf15be4
 
 
 ---
@@ -87,7 +87,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
         - **允许** - 允许设备通过任何 PC 或 Mac 的 USB 连接进行通信
         - **需要证书** - 允许与具有导入到注册配置文件的证书的 Mac 配对
 
-6.  **分配 DEP 设备以进行管理**转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com)，然后使用公司 Apple ID 登录。 转到**部署计划**&gt;**设备注册计划**&gt;**管理设备**。 指定 **“选择设备”**的方式，提供设备信息并按设备 **“序列号”**、 **“订单编号”**指定详细信息，或 **“上载 CSV 文件”**。 接下来，选择**分配到服务器**，然后选择为 Microsoft Intune 指定的&lt;服务器名称&gt;，然后单击**确定**。
+6.  **分配 DEP 设备以进行管理**转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com) 然后使用公司 Apple ID 登录。 转到**部署计划**&gt;**设备注册计划**&gt;**管理设备**。 指定 **“选择设备”**的方式，提供设备信息并按设备 **“序列号”**、 **“订单编号”**指定详细信息，或 **“上载 CSV 文件”**。 接下来，选择**分配到服务器**，然后选择为 Microsoft Intune 指定的&lt;服务器名称&gt;，然后单击**确定**。
 
 7.  **同步 DEP 托管的设备**以管理用户身份，打开[Microsoft Intune 管理控制台](http://manage.microsoft.com)，转到**管理**&gt;**移动设备管理**&gt;**iOS**&gt;**设备注册程计划**，然后单击**立即同步**。 会向 Apple 发送同步请求。 若要在同步后查看 DEP 托管的设备，在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“组”&gt;“所有设备”&gt;“企业预注册设备”&gt;“按 iOS 序列号”。 在“按 iOS 序列号”工作区中，在打开设备并运行设置助理以注册设备之前，托管设备的“状态”将一直显示为“未连接”。
 
@@ -102,10 +102,10 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 从 10 月开始，设备组管理将移到 Azure Active Directory。 过渡到 Azure Active Directory 组后，组分配将不会出现在“企业注册配置文件”选项中。 由于此更改将历时数月，因此你可能不会立即看到更改。 移到新的门户后，可以根据企业注册配置文件名称定义动态设备组分配。 此过程可确保预分配到设备组的设备会自动注册到部署了策略和应用的组中。 [详细了解 Azure Active Directory 组](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### 另请参阅
-[为注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[注册设备的先决条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

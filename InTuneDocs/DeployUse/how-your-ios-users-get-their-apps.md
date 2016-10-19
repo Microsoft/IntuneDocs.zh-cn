@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 61c4cb00fba3352f6898ec41b6d07834da4ec63d
 
 
 ---
@@ -44,11 +44,12 @@ Apple 限制禁止公司门户应用列出业务线应用和托管应用商店�
 
 
 ###另请参阅
-[Android 用户如何获取其应用](how-your-android-users-get-their-apps.md)</br>
+[Android 用户如何获取其应用](how-your-android-users-get-their-apps.md)
+
 [Windows 用户如何获取其应用](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

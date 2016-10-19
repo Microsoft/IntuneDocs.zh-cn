@@ -2,12 +2,13 @@
 # [开始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [新功能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [部署和使用](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [设备和应用生命周期概述](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [设备生命周期](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [应用生命周期](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [注册设备](enroll-devices-in-microsoft-intune.md)
-### [准备好在 Intune 中注册设备](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [MDM 的先决条件](prerequisites-for-enrollment.md)
 #### [iOS 和 Mac 管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android 管理](set-up-android-management-with-microsoft-intune.md)
 #### [Windows 设备管理 ](set-up-windows-device-management-with-microsoft-intune.md)
@@ -103,7 +104,7 @@
 
 ### [限制对网络的访问 (Cisco ISE)](restrict-access-to-networks.md)
 ### [根据设备、网络和应用程序风险限制访问权限](restrict-access-based-on-device-network-app-risk.md)
-#### [设置 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+#### [设置 Lookout 设备威胁保护](set-up-your-subscription-with-lookout-mtp.md)
 #### [在 Intune 中启用 Lookout](enable-lookout-mtp-connection-in-intune.md)
 #### [为工作应用部署 Lookout](configure-and-deploy-lookout-for-work-apps.md)
 #### [启用设备威胁防护合规性策略](enable-device-threat-protection-rule-in-compliance-policy.md)
@@ -134,15 +135,11 @@
 
 ## [要告知最终用户的信息](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-## [迁移到 Intune](migrate-to-intune.md)
-
-## [新增功能](whats-new-in-microsoft-intune.md)
-
 # [开发和自定义应用](/intune/develop/intune-app-sdk)
 
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

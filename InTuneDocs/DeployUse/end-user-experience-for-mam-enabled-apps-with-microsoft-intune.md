@@ -3,8 +3,8 @@ title: "启用 MAM 的应用的最终用户体验 | Microsoft Intune"
 description: "本主题介绍当你的应用由移动应用管理策略托管时会出现的情况。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: e43dea5630975165ea7468836a8b0328f0656030
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Intune 仅支持对于每个设备，将 MAM 策略部署到一个用户帐户�
 
 ![错误消息以及删除操作的指令的屏幕截图](../media/AppManagement/Android_SwitchUser.png)
 
-##  使用权限管理共享应用查看媒体文件
-若要在 Android 设备上查看公司 AV、PDF 和图像文件，请使用 [Microsoft 权限管理 (RMS) 共享应用](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)。
+##  通过 Azure 信息保护应用（以前被称为 Rights Management 共享应用）查看媒体文件
+若要在 Android 设备上查看公司 AV、PDF 和图像文件，请使用 [Azure 信息保护应用](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)。
 
-从 Google Play 商店下载此应用。  在设备上安装该应用之后，便可启动该应用，并使用公司凭据进行身份验证。 现在应能够从其他策略托管应用查看未受保护和受保护的文件。
+从 Google Play 商店下载此应用。  
 
 支持以下文件类型：
 
 * **音频：**AAC LC、HE-AACv1 (AAC+)、HE-AACv2（增强型 AAC+）、AAC ELD（增强型低延迟 AAC）、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Vorbis、PCM/WAVE。
 * **视频：**H.263、H.264 AVC、MPEG-4 SP、VP8。
 * **图像：**jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif，jpeg、pjpeg。
-* PDF、PPDF
+* **PDF、PPDF**
 
 ------------
 |**pfile**|**text**|
 |----|----|
-|Pfile 是一种用于受保护文件的通用“包装”格式，它可封装加密内容和 RMS 许可证，还可用于保护任何文件类型。|即使是在受保护的情况下，也可在应用中打开文本文件（包括 XML 和 CSV 等）进行查看。 文件类型：txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+|Pfile 是一种用于受保护文件的通用“包装”格式，它可封装加密内容和 Azure 信息保护许可证，还可用于保护任何文件类型。|即使是在受保护的情况下，也可在应用中打开文本文件（包括 XML 和 CSV 等）进行查看。 文件类型：txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
 ---------------
-**未在 Intune 中注册的 Android 设备**
 
-需启动 RMS 应用并使用工作帐户进行身份验证，才可使用 RMS 共享应用以通过 Intune 托管的其他应用查看文件。  登录时，你将看到以下消息“**仅在不具备 RMS 许可证时**：
-
-**身份验证成功 – 现可查看公司文件；但尚未设置组织，无法保护文件。” 请联系 IT 管理员，以获取详细信息。**
-
-你仍可使用 RMS 共享应用来查看公司文件。 并仍可通过 Intune 托管的其他应用打开和查看公司文件，且还仍将应用 MAM 策略。  此消息是指你将不能添加 RMS 共享应用所提供的额外保护功能。  必须具有 RMS 许可证才可保护文件。 若要了解有关 RMS 文件保护功能的详细信息，请参阅[保护设备上的文件](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place)和[保护通过电子邮件共享的文件](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email)。
 
 
 ### 另请参阅
@@ -171,6 +165,6 @@ Intune 仅支持对于每个设备，将 MAM 策略部署到一个用户帐户�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

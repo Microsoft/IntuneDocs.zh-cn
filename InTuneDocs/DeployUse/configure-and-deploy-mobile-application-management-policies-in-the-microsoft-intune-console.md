@@ -4,7 +4,7 @@ description: "Microsoft Intune 中的移动应用管理策略让你可以修改�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
 -   运行 Android 4 和更高版本的设备。
 
--   运行 iOS 7 和更高版本的设备。
+-   运行 iOS 8.0 及更高版本的设备。
 
 > [!TIP]
 > 移动应用程序管理策略支持向 Intune 注册的设备。
@@ -112,7 +112,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
     -   **移动应用程序管理策略 （Android 4 和更高版本）**
 
-    -   **移动应用程序管理策略 （iOS 7 及更高版本）**
+    -   **移动应用程序管理策略（iOS 8.0 及更高版本）**
 
     你可以使用建议的设置，或对设置进行自定义。 有关详细信息，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
@@ -134,7 +134,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
     |**访问要求设备符合公司策略**|此设置仅允许设备在未越狱或获取根权限时使用此应用。|
     |**在一定时间后重新检查访问要求（分钟）**|在“**超时**”字段中，指定应用打开后重新检查应用访问要求前的时间段。|
     |**离线宽限期**|如果设备离线，指定应用重新检查访问要求前的时间段。|
-    |**加密应用数据**|此设置指定与此应用相关的所有数据均将加密。 这包括外部存储的数据，如在 SD 卡中的数据。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用管理策略关联的应用，通过 OS 提供的设备级加密对静态数据进行加密。 通过由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用管理策略的设置进行加密。 正如 Apple 文档所述，[iOS 7 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/en-us/HT202739)。<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用管理策略关联的应用，加密由 Microsoft 提供。 数据在文件 I/O 操作期间同步加密。  设备存储中的内容将始终被加密。 加密方法没有获得 FIPS 140-2 认证。|
+    |**加密应用数据**|此设置指定与此应用相关的所有数据均将加密。 这包括外部存储的数据，如在 SD 卡中的数据。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用管理策略关联的应用，通过 OS 提供的设备级加密对静态数据进行加密。 通过由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用管理策略的设置进行加密。 正如 Apple 文档所述，[iOS 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/en-us/HT202739)。<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用管理策略关联的应用，加密由 Microsoft 提供。 数据在文件 I/O 操作期间同步加密。  设备存储中的内容将始终被加密。 加密方法没有获得 FIPS 140-2 认证。|
     |**“阻止屏幕捕捉”** （仅限于 Android 设备）|此设置指定在使用该应用时，阻止设备的屏幕捕捉功能。|
     
 4. 完成后，请选择“保存策略”。
@@ -147,8 +147,6 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 有关详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps.md)。
 
 > [!IMPORTANT]
-> 对于运行 iOS 7.1 之前的操作系统的设备，关联的策略只有在卸载应用后才能删除。
->
 > 如果从 Intune 取消注册设备，则策略不会从应用中删除。 在卸载并重新安装了该应用后，应用了策略的任何应用均将保留策略设置。
 
 ### 应用已部署在设备上时应该如何操作
@@ -195,6 +193,6 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

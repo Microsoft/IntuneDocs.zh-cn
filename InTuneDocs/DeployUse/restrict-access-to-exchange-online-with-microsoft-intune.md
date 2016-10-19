@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
-ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 ---
@@ -26,14 +26,12 @@ ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 若要控制对 Exchange Online 或新版 Exchange Online Dedicated 环境的电子邮件访问，请在 Intune 中配置 Exchange Online 的条件性访问。
 若要了解有关条件访问如何工作的详细信息，请阅读文章[限制对电子邮件、O365 服务和其它服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
 
->[!IMPORTANT]
->具有使用新式验证的应用的 PC 和 Windows 10 移动设备的条件性访问当前不可用于所有的 Intune 客户。 如果你已在使用这些功能，则无需采取任何措施。 你可以继续使用它们。
-
->如果你还没有为使用新式验证的应用创建适用于电脑或 Windows 10 移动版的条件访问策略，并且想要执行此操作，可以注册 Azure Active Directory 公开预览版，其中包括针对 Intune 受管理设备或加入域的 Windows 电脑的基于设备的条件访问。 请阅读[此博客文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)以了解详细信息。  
 
 在你可以配置条件性访问**之前**，必须：
 
 -   拥有**包含 Exchange Online（例如 E3）的 Office 365 订阅**，并且用户必须获得 Exchange Online 许可。
+
+- 具有**企业移动性 + 安全性或 Azure Active Directory Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
 
 -  请考虑配置可选的“Microsoft Intune 服务间连接器”，它将 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 连接到 Microsoft Exchange Online，并通过 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台帮助你管理设备信息。 你不需要使用连接器来使用合规性策略或条件性访问策略，但要求你运行帮助评估条件性访问影响的报告。
 
@@ -84,9 +82,7 @@ ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 
 **不受支持的浏览器将被阻止**。
 
-不支持 iOS 和 Android 版 OWA 应用。  应通过 ADFS 声明规则进行阻止。
-
-
+**适用于 iOS 和 Android 的 OWA 应用可修改为不使用新式验证且不受支持。  必须通过 ADFS 声明规则阻止来自 OWA 应用的访问。**
 
 
 在以下平台上，你可以从内置的“Exchange ActiveSync 电子邮件客户端”限制对 Exchange 电子邮件的访问：
@@ -101,14 +97,18 @@ ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 
 你可以设置 PC 的条件性访问以访问满足以下要求的 PC 的“Exchange Online”  和“SharePoint Online”  ，其中该 PC 运行 Office 桌面应用程序：
 
--   电脑必须运行 Windows 7.0 或 Windows 8.1。
+-   电脑必须运行 Windows 7.0、Windows 8.1 或 Windows 10。
 
--   PC 必须已加入域或符合合规性策略规则。
+  >[!NOTE]
+  > 若要使用 Windows 10 电脑的条件访问，必须使用 Windows 10 周年更新更新电脑。
 
-    为了被视为符合规范，PC 必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中进行注册且符合相应的策略。
+  PC 必须已加入域或符合合规性策略规则。
 
-    对于加入域的电脑，必须将它设置为[自动向 Azure Active Directory 注册设备](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。
-    >[!NOTE]
+  为了被视为符合规范，PC 必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中进行注册且符合相应的策略。
+
+  对于加入域的电脑，必须将它设置为[自动向 Azure Active Directory 注册设备](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。
+
+  >[!NOTE]
     >运行 Intune 计算机客户端的电脑上不支持条件访问。
 
 -   [Office 365 新式验证必须已启用](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，且具有所有最新的 Office 更新。
@@ -177,6 +177,10 @@ ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 
 ### 步骤 4：配置条件访问策略
 
+>[!NOTE]
+> 此外，还可在 Azure AD 管理控制台中创建条件访问策略。 Azure AD 管理控制台允许你创建除其他条件访问策略（如多重身份验证）之外的 Intune 设备条件访问策略（在 Azure AD 中称为 **基于设备的条件访问策略**）。  还可为第三方企业应用（如 Azure AD 支持的 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将 Azure Active Directory 针对访问控制的基于设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
+
+
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件性访问” > “Exchange Online 策略”。
 ![Exchange Online 条件性访问策略页面的屏幕截图](../media/mdm-ca-exo-policy-configuration.png)
 
@@ -196,9 +200,6 @@ ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
         选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。  所有平台都需要已注册并合规，以下各项除外：
         *   Windows 设备需要已注册并合规，并且/或者域已加入本地 Active Directory 域
         * 不受支持的平台，如 Mac OS。  但是，仍将阻止使用来自这些平台的新式验证的应用。
-
-        >[!TIP]
-           如果你尚未使用 PC 的条件性访问，则可能不会看到此选项。  请改用“特定平台”。 针对 PC 的条件性访问当前不可用于所有的 Intune 客户。   你还可以在[此博客文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)中找到有关如何访问此功能的详细信息。
 
     -   **特定平台**
 
@@ -262,6 +263,6 @@ ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

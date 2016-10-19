@@ -13,8 +13,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9c2ffb5fe497d56d8250fe3dec7db606c2067a1c
-ms.openlocfilehash: 66242455279c20bac2aa2e17dda6c2739e9204c7
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5acf5c707a93aa0b5e7cefdcb0b160af09b9cf70
 
 
 ---
@@ -85,10 +85,10 @@ Azure AD 全局管理员用户未接受初始 Lookout 设置时，可能出现�
 
 
 ### 另请参阅
-[为订阅设置 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+[为订阅设置 Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

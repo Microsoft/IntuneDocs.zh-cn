@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 07ed8c922d53169839bba50547f56bbc979d58ac
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 |---------------|--------------------|
 |操作系统|Intune 支持在运行任何版本的 Windows Server 2008 SP2 64 位、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的计算机上安装 On-Premises Exchange Connector。<br /><br />该连接器在任何服务器核心安装上都不受支持。|
 |Microsoft Exchange 版本|本地连接器需要 Microsoft Exchange 2010 SP1 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是**新**配置还是**旧**配置，请与帐户管理员联系。|
-|移动设备管理机构| [将移动设备管理机构设置为 Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)。|
+|移动设备管理机构| [将移动设备管理机构设置为 Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority)。|
 |硬件|安装连接器的计算机至少需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间的硬件。|
 |Active Directory 同步|你必须[设置 Active Directory 同步](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用任一 Connector 将 Intune 连接到 Exchange 服务器。|
 |其他软件|Microsoft.NET Framework 4 和 Windows PowerShell 2.0 的完全安装必须安装在托管 Connector 的计算机上。|
@@ -131,6 +131,6 @@ ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

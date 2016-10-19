@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
-ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 40a641d807c3ad73079a5d2e130b00c2065da6cb
 
 
 ---
@@ -23,19 +23,16 @@ ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 # 最终用户需要了解的有关 Microsoft Intune 使用的内容
 
-使用这些链接和信息执行以下操作：
+使用这些链接和信息了解最终用户在 Intune 中执行不同的任务所遵循的步骤。
 
-- 了解你的用户在 Intune 中执行不同的任务所遵循的步骤。
-- 将它们提供给你的用户以帮助他们完成任务，并解决他们使用 Intune 时遇到的问题。
-
-当你[自定义公司门户](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7)时，请务必将 IT 管理员的联系信息包括在内，以便用户可以在需要时获得帮助。
+[自定义公司门户](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7)时，请务必将 IT 管理员的联系信息包括在内，以便用户可以在需要时获得帮助。
 
 
-## 最终用户查找常见任务相关信息的位置
+## 最终用户如何查找操作方法和疑难解答信息
 
-当已注册用户在使用 Intune 过程中需要帮助时，通常会在公司门户网站或公司门户应用中看到一个链接，将其指向特定文章，其中会含有有关如何修复问题或完成任务的步骤。 例如，如果 Android 用户看到提示自己缺少必要证书的消息，该用户可以点击“如何解决此问题”的链接，转到介绍如何获取证书的步骤的文章。 
+公司门户网站和公司门户应用向注册用户显示“了解更多”或“如何解决此问题”链接，帮助用户解决问题或完成任务。 例如，如果 Android 用户在 Android 公司门户应用中看到提示自己缺少必要证书的消息，该用户可以点击链接，转到介绍如何获取证书的步骤的文章。 
 
-以下链接适用于 IT 管理员。 这些页面包含指向将用户从公司门户网站或应用转到的所有文章的链接。 此类链接划分为多个部分：公司门户应用安装和 Intune 注册；用户在其设备上可以执行的任务，例如使用托管应用和手动同步自己的设备；及故障排除。
+使用以下链接可查看从公司门户网站或应用发送给用户的步骤。 此类链接划分为多个部分：公司门户应用安装和 Intune 注册、用户在其设备上可以执行的常规任务，以及故障排除。
 
 - [通过 Intune 使用 Android 设备](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -43,12 +40,11 @@ ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 - [使用 Intune 公司门户网站](/Intune/EndUser/using-the-intune-company-portal-website)
 
 
-## 注册指南和可以为你的用户自定义的模板
+## 可为用户自定义的注册指南
 
-- [IT 管理员的可自定义的最终用户 Intune 注册模板](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) - 具有适用于 iOS、Mac OS X 和 Android 设备的最终用户注册的详细步骤和屏幕快照的可自定义 Word 文档。 可以按原样使用本文档，或者可以先对说明进行自定义操作，然后将本文档提供给最终用户。</br></br>
-- [两页的可自定义文档，包含有关注册、取消注册和获取应用等的步骤和嵌入视频](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c#content) - 你可以自定义并提供给最终用户的文档。 各部分内容为如何注册 Android、iOS 和 Windows 设备、获取应用、取消注册、如果丢失设备该怎么办以及 IT 专业人员能在设备上看到的内容和不能看到的内容。
+可使用此 [面向 IT 管理员的可自定义的最终用户 Intune 注册模板](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)创建针对最终用户的注册说明。 此 Word 文档提供了详细步骤和最终用户注册 iOS、Mac OS X 和 Android 设备的屏幕截图。 
 
-##最终用户如何获取其应用
+## 最终用户如何获取其应用
 
 若要了解最终用户如何获取其应用，请从以下设备平台选项中选择：
 
@@ -63,6 +59,6 @@ ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

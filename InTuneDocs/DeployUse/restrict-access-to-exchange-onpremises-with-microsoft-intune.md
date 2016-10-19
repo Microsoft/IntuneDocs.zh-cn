@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
+ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
 
 
 ---
@@ -68,7 +68,7 @@ ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
 
 -   iOS 上的本机电子邮件应用。
 
--   Android 4 或更高版本上的本机电子邮件应用
+-   EAS 邮件客户端（如 Android 4 或更高版本上的 Gmail）
 > [!NOTE]
 > 不支持 Android 和 iOS 上的 Microsoft Outlook 应用。
 
@@ -123,6 +123,6 @@ Windows 8 和更高版本上的**邮件**应用程序（向 [!INCLUDE[wit_nextre
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 

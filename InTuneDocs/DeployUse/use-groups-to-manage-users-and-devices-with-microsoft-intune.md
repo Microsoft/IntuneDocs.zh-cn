@@ -4,7 +4,7 @@ description: "使用“组”工作区创建和管理组。"
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
 
 >[!IMPORTANT]
 >
->在 Intune 门户中打开“组”工作区时，若显示 Azure Active Directory (Azure AD) 门户的链接，则表明 Intune 中的组管理已在使用新的 Azure AD 安全组方法，如[“组”的管理员体验改善通知](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 单击 Azure AD 门户链接以创建并管理组。 若要了解如何使用 Azure AD 安全组，请参阅[使用 Azure Active Directory 组管理资源访问权限](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)。
+>在 Intune 门户中打开“组”工作区时，若显示 Azure Active Directory (Azure AD) 门户的链接，则表明 Intune 中的组管理已在使用新的 Azure AD 安全组方法，如[“组”的管理员体验改善通知](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 单击 Azure AD 门户链接以创建并管理组。
+>
+>![Azure 组管理链接的屏幕截图](../media/groups-link-azure.png) 
 >
 >若未显示 Azure AD 门户链接，则表明正在使用当前组管理方法，如[使用 Microsoft Intune 创建组以管理用户和设备](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)中所述。
 
@@ -42,7 +44,7 @@ ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
 
 
 ### 我将什么时候以何种方式迁移到新的组体验？
-将在一段时间内迁移当前 Intune 客户。 我们将最终确定迁移计划并将在数周后更新此主题，让你了解更多详细信息。 迁移前，会向你发送通知。 如果你有关于迁移的任何问题，请发送电子邮件到 <intunegrps@microsoft.com> 与我们的迁移团队联系。
+将在一段时间内迁移当前 Intune 客户。 我们将最终确定迁移计划并将在数周后更新此主题，让你了解更多详细信息。 迁移前，会向你发送通知。 如果你有关于迁移的任何问题，请发送电子邮件到 [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) 与我们的迁移团队联系。 有关如何迁移组的详细信息，请参阅[将组迁移到 Active Directory](migrating-groups-to-azure-active-directory.md)。
 
 ### 我的现有用户和设备组将发生什么情况？
  用户在 Intune 中创建的用户组和设备组将迁移到 Azure AD 安全组。 仅当迁移过程中将默认 Intune 组（如“所有用户”组）用于部署时，才会迁移默认 Intune 组。 对某些组而言，迁移可能更复杂。 若在用户组织中进行迁移需要额外步骤，将进行通知。
@@ -202,6 +204,6 @@ ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
