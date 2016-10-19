@@ -13,8 +13,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
-ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 263fb9add8d30c0f98af46e46b566f15513db109
 
 
 ---
@@ -22,10 +22,10 @@ ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 # 设置 iOS 和 Mac 设备管理
 若要设置你的 iOS 或 Mac 设备，可在[此处](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)找到帮助。
 
-iPad、iPhone 和 Mac OS X 设备的 Intune 移动设备管理并允许访问公司电子邮件和应用。 必须拥有 Apple 推送通知服务 (APNs) 证书，才能使用 Intune 管理 iOS 和 Mac 设备。 一旦证书添加到 Intune，用户就可以安装公司门户应用来注册其设备或管理员可以设置[企业自有的 iOS 设备管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
+Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理并允许用户访问公司电子邮件和应用。 必须拥有 Apple 推送通知服务 (APNs) 证书，才能使用 Intune 管理 iOS 和 Mac 设备。 一旦证书添加到 Intune，用户就可以安装公司门户应用来注册其设备或管理员可以设置[企业自有的 iOS 设备管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
 
 1.  **设置 Intune**<br>
-    如果你尚未设置，请通过[将移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
+    如果你尚未设置，请通过[将移动设备管理机构设置](prerequisites-for-enrollment.md#set-mobile-device-management-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
 
 2.  **获取证书签名请求**<br>
     以管理用户身份，打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com)，转到**管理**&gt;**移动设备管理**&gt;**iOS 和 Mac OS X**&gt;**上载 APNs 证书**，并单击**下载 APNs证书请求**。 本地保存证书签名请求 (.csr) 文件。 .Csr 文件用于从 Apple 推送证书门户请求信任关系证书。
@@ -48,10 +48,10 @@ iPad、iPhone 和 Mac OS X 设备的 Intune 移动设备管理并允许访问公
 如果公司或组织为用户购买了 iOS 设备，可以将这些设备注册为[公司拥有的 iOS 设备](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)，以便进行管理。
 
 ### 另请参阅
-[为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[在 Microsoft Intune 中注册的先决条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

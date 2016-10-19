@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
+ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
 
 ---
@@ -39,9 +39,9 @@ ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
     ![打开 Lookout for Work，然后点击“激活”](./media/lookout-activate-button-android.png)
 
-4. 点击“使用工作帐户登录”，然后输入用于访问工作/学校电子邮件和文件的帐户。
+4. 点击“使用 Azure Active Directory 登录”，然后输入用于访问工作/学校电子邮件和文件的帐户。
 
-    ![使用工作或学校帐户登录](./media/lookout-sign-in-android.png)
+    ![使用工作或学校帐户登录](./media/lookout-sign-in-azure-android.png)
 
 5. 选择用于访问工作或学校电子邮件和文件的帐户，然后点击“添加帐户”。
 
@@ -78,6 +78,6 @@ ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

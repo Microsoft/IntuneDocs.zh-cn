@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -39,13 +39,13 @@ ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
 
 -   删除公司相关的所有数据。 不会删除你的个人数据和设置。
 
--   强制你在设备上设置密码或 PIN，如果尝试输入太多次不正确的密码，你可能会被锁定，无法访问设备，或者将你的设备重置回制造商的默认设置（可能包括删除数据）。
+-   对你的设备设置要求，例如要求使用密码或 PIN 保护公司数据。 IT 管理员还可限制可输入错误密码的次数，并可在尝试次数过多时锁定设备。
 
 -   要求你接受条款和条件。
 
--   在设备上启用或禁用相机。
+-   禁用照相机（仅限 Samsung Knox 设备，不适用于 Nexus 设备），以防用户拍摄不应共享敏感工作资料。
 
--   强制对设备上的所有数据（包括公司和个人数据）进行加密。 如果设备丢失或被盗，这可帮助保护数据。
+-   要求对设备上的所有数据进行加密，以便在设备丢失或被盗时帮助保护数据。
 
 -   将你的设备添加到公司门户后，该设备将每隔大约 8 小时执行下列操作：
 
@@ -58,11 +58,8 @@ ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
 需要帮助吗? 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
 
 
-### 另请参阅
-[通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

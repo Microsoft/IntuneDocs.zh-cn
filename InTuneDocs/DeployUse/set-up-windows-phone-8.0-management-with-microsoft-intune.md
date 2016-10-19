@@ -13,8 +13,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 5b659bb63c34887684f90fd56ea853bade8bf791
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 
 
 ---
@@ -42,7 +42,7 @@ Windows Phone 8.0 安装 Intune 公司门户应用并允许设备管理需要 Sy
 Window Phone 移动设备管理的设置要求取决于管理设备的方式。  在公司的 DNS 注册中设置两个 CNAME 可以更轻松地注册。 如果你的用户将从应用商店中下载公司门户应用，那么，配置 DNS 设置之后，你只需设置公司门户并告知用户如何注册。  对于将在其中部署公司门户的 Windows Phone 8.0 或 Windows Phone 8.1，则需要使用 Symntec 证书对应用进行代码签名。
 
 ## 配置安装程序要求以启用 Windows Phone 管理
-1.  **设置 Intune** 如果你尚未设置，请将[移动设备管理机构](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)设置为**Microsoft Intune**并设置 MDM，为管理移动设备做好准备。
+1.  **设置 Intune** 如果尚未设置，请将[移动设备管理机构](prerequisites-for-enrollment.md#set-mobile-device-management-authority)设置为 **Microsoft Intune** 并设置 MDM，为管理移动设备做好准备。
 
 2.  **为注册服务器地址设置 DNS 别名** （可选）
 
@@ -183,6 +183,6 @@ Window Phone 移动设备管理的设置要求取决于管理设备的方式。 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

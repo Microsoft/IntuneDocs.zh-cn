@@ -4,7 +4,7 @@ description: "使用本主题中列出的策略设置可帮助你为已注册的
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ce69e8a22f1b25dac7060ff575bbd97934eff91
-ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
+ms.sourcegitcommit: b8522406a3c73746b09616c3ec917464cf751312
+ms.openlocfilehash: 6e482beb5e2edce648ecb6f1821baa6214fa0f2f
 
 
 ---
@@ -53,7 +53,7 @@ ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
 - **值** - 指定要与输入的 OMA-URI 关联的值。
 
 ### 示例
-在以下屏幕截图中，已启用设置 **Conectivity/AllowVPNOverCellular**。 这样一来，Windows 10 设备在处于移动电话网络中时会打开 VPN 连接。
+在以下屏幕截图中，已启用设置 **Connectivity/AllowVPNOverCellular**。 这样一来，Windows 10 设备在处于移动电话网络中时会打开 VPN 连接。
 
 > ![包含 VPN 设置的自定义策略的示例](./media/custom-policy-example.png)
 
@@ -326,6 +326,6 @@ ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

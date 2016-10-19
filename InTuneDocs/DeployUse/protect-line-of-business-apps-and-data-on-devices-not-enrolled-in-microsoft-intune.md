@@ -13,21 +13,27 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
-ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
+ms.sourcegitcommit: ffe11b4eb4b0f4c2ffdc831cad9deb30d7180809
+ms.openlocfilehash: 94de65185af64052226985f2c65c7b8a18e2f829
 
 
 ---
 
 # 保护未在 Microsoft Intune 上注册的设备上的业务线应用及数据
 
-通过限制复制和粘贴等数据移动或阻止用户将公司文件存至个人位置，移动应用管理 (MAM) 策略能帮助保护公司数据。   若要将 MAM 策略应用于 iOS 和/或 Android 业务线应用，首先必须使用 Microsoft Intune 应用包装工具包装此应用。  应用包装是一个将管理层应用于移动应用的过程，不要求对基础应用程序进行任何更改。  一旦应用包装完成，就可将 MAM 策略应用到其并将其分配到最终用户。  
+移动应用管理 (MAM) 策略通过限制可能会泄漏公司数据的操作和实施数据访问要求（如应用 PIN）来保护公司数据。 若要将 MAM 策略应用于 iOS 和/或 Android 业务线应用，首先必须使用 Microsoft Intune 应用包装工具包装此应用。  应用包装是一个将管理层应用于移动应用的过程，不要求对基础应用程序进行任何更改。  一旦应用包装完成，就可将 MAM 策略应用到其并将其分配到最终用户。  
 
-这一主题解释了将 MAM 策略应用于**非托管员工所有设备**和由**第三方移动设备管理 (MDM) 解决方案**管理的设备上访问的应用所需的步骤。  若要准备**已在 Intune 中注册的设备**上运行的业务线应用，请参阅[决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
+这一主题解释了将 MAM 策略应用于**非托管员工所有设备**和由**第三方移动设备管理 (MDM) 解决方案**管理的设备上访问的应用所需的步骤。  若要准备**已在 Intune MDM 中注册的设备**上运行的业务线应用，请参阅[决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
+
+
 ##  步骤 1：准备应用
-在可将 MAM 策略应用于应用之前，首先必须使用 Microsoft Intune 应用包装工具包装此应用。  下载中包含应用包装工具的安装和使用说明。  
+在可将 MAM 策略应用于应用之前，首先必须使用 Microsoft Intune 应用包装工具包装此应用。  有关下载和使用应用包装工具的说明，请参阅以下页面：
+
+- [使用 Intune 应用包装工具为移动应用程序管理准备 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [使用 Intune 应用包装工具为移动应用程序管理准备 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+
 >[!IMPORTANT]  
->公共预览中此版本的应用包装工具可用（支持未在 Intune 上注册的设备）。 若希望参与公共预览，可从[此 github 页](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview)下载 iOS 工具，从[此 github 页](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)下载 Android 工具。
+>此版本的应用包装工具支持未在 Intune 上注册的设备，在 iOS 和 Android 公开预览版中也受支持。 可从适用于 iOS 的 [GitHub 存储库](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)和适用于 Android 的 [GitHub 存储库](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)下载此工具。
 
 ## 步骤 2：添加应用
 
@@ -75,6 +81,6 @@ ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

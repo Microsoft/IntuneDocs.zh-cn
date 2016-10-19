@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6b182ebab1691c62e69cabaf4689ac7395ab31a
-ms.openlocfilehash: 0995d3ced978f5213fdb0e9905f508b64a1e5c09
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 145d373edd65d7ba01c696c3b851692a13831dad
 
 
 ---
@@ -35,17 +35,24 @@ ms.openlocfilehash: 0995d3ced978f5213fdb0e9905f508b64a1e5c09
 
 | **方法** |  **擦除** |  **相关性**    |   **锁定** | **详细信息** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | [更多](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[BYOD](#byod)** | 否|    是 |   否 | [更多](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   否 |否 |否  | [更多](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 |**[DEP](#dep)**|   是 |   可选 |  可选|[更多](ios-device-enrollment-program-in-microsoft-intune.md)|
 |**[USB-SA](#usb-sa)**| 是 |   可选 |  否| [更多](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
 |**[USB-Direct](#usb-direct)**| 否 |    否  | 否|[更多](ios-direct-enrollment-in-microsoft-intune.md)|
 
-**Windows 和 Android 的注册方法**
+**Windows 注册方法**
 
 | **方法** |  **擦除** |  **相关性**    |   **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | [更多](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[BYOD](#byod)** | 是|   是 |   否 | [更多](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[DEM](#dem)**|   否 |否 |否  |[更多](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**Android 注册方法**
+
+| **方法** |  **擦除** |  **相关性**    |   **锁定** | **详细信息**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | 否|    是 |   否 | [更多](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   否 |否 |否  |[更多](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 若要了解有助于找到适当方法的一系列问题，请参阅[选择如何注册设备](/intune/get-started/choose-how-to-enroll-devices1)。
@@ -111,6 +118,6 @@ Intune 可以管理以下设备平台：
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

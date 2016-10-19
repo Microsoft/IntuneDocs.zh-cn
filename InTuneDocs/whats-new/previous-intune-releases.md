@@ -2,7 +2,7 @@
 title: "早期发行版本 | Microsoft Intune"
 description: 
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3206634884807743576f2d9dc1ca17b6bbbc9cc6
-ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
+ms.sourcegitcommit: ffbb26f30c7801789a47d57ffed00696f5e6d81a
+ms.openlocfilehash: 11e90ce994d17d9dcc62edba775dd0ab8110414e
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
 - 指定对用户隐藏的应用列表。 用户无法查看，或启动这些应用。
 - 指定用户可以查看和启动的应用列表。 无法查看或启动其他应用。
 
-你可以指定的应用包括已部署的应用，以及内置的 iOS 应用，如“信息”和“备忘录”。 有关详细信息，请参阅 [Microsoft Intune 中的 iOS 策略设置]( https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+你可以指定的应用包括已部署的应用，以及内置的 iOS 应用，如“信息”和“备忘录”。 有关详细信息，请参阅 [Microsoft Intune 中的 iOS 策略设置]( /intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 <!---TFS 1279009 checked--->
 ### Samsung KNOX 设备允许和阻止的应用策略
 你现在可以配置适用于 Samsung KNOX 设备的自定义策略，该策略允许你创建以下项之一：
@@ -38,7 +38,7 @@ ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
 - 允许设备用户从 Google Play 商店中安装的应用的列表。 其他应用不能从应用商店安装。
 
 仅运行 Samsung KNOX 的设备可以使用这些设置。
-有关详细信息，请参阅[使用自定义策略允许和阻止适用于 Samsung KNOX 设备的应用]( custom-policy-to-allow-and-block-samsung-knox-apps.md)。
+有关详细信息，请参阅[使用自定义策略允许和阻止适用于 Samsung KNOX 设备的应用](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps)。
 <!---TFS 1311629 checked --->
 ### 与移动应用程序管理 (MAM) 兼容的新应用
 无论设备是否注册，适用于 [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) 和 [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) 的 Yammer 应用现在与 [Intune 移动应用程序管理 (MAM) 策略](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)兼容。
@@ -55,7 +55,7 @@ ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
 - Intune PDF 查看器
 - Google Play 中适用于 Android 的 Intune 图像查看器
 
-建议使用[适用于 Android 的 Rights Management 应用（RMS 共享）](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app)而不是使用 Intune 查看器应用，前者只需部署一个应用而不是三个单独的应用便可安全地查看 Android 设备上的公司文件。 如果不再支持 Intune 查看器应用，则将其从 Google 应用商店中删除并且不可供将来使用。
+建议使用[适用于 Android 的 Rights Management 应用（RMS 共享）](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app)而不是使用 Intune 查看器应用，前者只需部署一个应用而不是三个单独的应用便可安全地查看 Android 设备上的公司文件。 如果不再支持 Intune 查看器应用，则将其从 Google 应用商店中删除并且不可供将来使用。
 
 ## 设备管理
 ### Android 7.0 支持
@@ -159,7 +159,7 @@ Intune 将每个用户的设备的最大可配置设备注册限制从 5 提高�
 <!---TFS 1289896 --->
 
 #### 运行 Intune 客户端软件的 Windows 电脑的 TeamViewer 集成
-运行 Intune 客户端的 Windows 电脑的 [TeamViewer](https://www.teamviewer.com) 集成让你可以与 Windows 电脑建立远程协助会话，从而帮助支持最终用户支持部门。 这包括 Windows 7、Windows 8、Windows 8.1 和 Windows 10。 有关详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
+运行 Intune 客户端的 Windows 电脑的 [TeamViewer](https://www.teamviewer.com) 集成让你可以与 Windows 电脑建立远程协助会话，从而帮助支持最终用户支持部门。 这包括 Windows 7、Windows 8、Windows 8.1 和 Windows 10。 有关详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)。
 <!---TFS 1284856--->
 
 ### 公司门户更新
@@ -185,7 +185,7 @@ DEM 用户可能会在本地设备上执行操作，但只能从 Intune 管理�
 <!---TFS 1233681--->
 
 ### 对 Windows 功能名称的更改
-- [Microsoft Passport for Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) 现在称为 **Windows Hello 企业版**。
+- [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) 现在称为 **Windows Hello 企业版**。
 - [企业数据保护](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune)现在称为 **Windows 信息保护**。
 
 ## 2016 年 6 月
@@ -209,10 +209,10 @@ Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一�
     * 必须符合任何已部署的 Intune 合规性策略
 
  非合规设备的最终用户将被提示注册和修正任何合规性问题以获取访问权限。
-- **浏览器的条件性访问。** 可以为 [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md) 和 [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md) 设置条件访问策略，以便仅允许通过托管且合规的 iOS 和 Android 设备上受支持的 Web 浏览器对其进行访问。 尝试通过 iOS 和 Android 设备登录到 Outlook Web Access (OWA) 和 SharePoint 站点的最终用户，系统将提示通过 Intune 注册其设备以及在完成登录前解决任何非合规性问题。
+- **浏览器的条件性访问。** 可以为 [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) 和 [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) 设置条件访问策略，以便仅允许通过托管且合规的 iOS 和 Android 设备上受支持的 Web 浏览器对其进行访问。 尝试通过 iOS 和 Android 设备登录到 Outlook Web Access (OWA) 和 SharePoint 站点的最终用户，系统将提示通过 Intune 注册其设备以及在完成登录前解决任何非合规性问题。
 <!---TFS 1175844--->
 
-- **Dynamics CRM Online 支持条件性访问。** 可以为 [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md) 设置条件访问策略，以便仅允许托管且合规的 iOS 和 Android 设备对其进行访问。 系统将提示尝试登录到 iOS 和 Android 设备上的 Dynamics CRM 移动应用的最终用户注册 Intune 并在登录完成前修正任何非合规性问题。
+- **Dynamics CRM Online 支持条件性访问。** 可以为 [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) 设置条件访问策略，以便仅允许托管且合规的 iOS 和 Android 设备对其进行访问。 系统将提示尝试登录到 iOS 和 Android 设备上的 Dynamics CRM 移动应用的最终用户注册 Intune 并在登录完成前修正任何非合规性问题。
 <!---TFS1295358--->
 
 ##E 公司门户更新
@@ -249,9 +249,9 @@ Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一�
 
 
 ### 应用管理
-- **MAM SDK：支持 PIN 长度配置。** 你将能够指定类似于设备 PIN 的 MAM 应用的 PIN 的长度。 这将要求最终用户符合你设置的新限制。 他们将看到一个稍经修改的 PIN 屏幕来解释较长输入。 有关详细信息，请参阅[适用于 Android 的 MAM 策略设置](android-mam-policy-settings.md)和[适用于 iOS 的 MAM 策略设置](ios-mam-policy-settings.md)。
+- **MAM SDK：支持 PIN 长度配置。** 你将能够指定类似于设备 PIN 的 MAM 应用的 PIN 的长度。 这将要求最终用户符合你设置的新限制。 他们将看到一个稍经修改的 PIN 屏幕来解释较长输入。 有关详细信息，请参阅[适用于 Android 的 MAM 策略设置](/intune/deploy-use/android-mam-policy-settings)和[适用于 iOS 的 MAM 策略设置](/intune/deploy-use/ios-mam-policy-settings)。
 
-- **Skype for Business iOS 版和 Android 版。** 你现在可以通过 [MAM 以 Skype for Business 为目标，而不需要注册策略](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)。 用户登录后，将应用 MAM 策略。
+- **Skype for Business iOS 版和 Android 版。** 你现在可以通过 [MAM 以 Skype for Business 为目标，而不需要注册策略](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。 用户登录后，将应用 MAM 策略。
 
 - **可通过 MAM 策略管理的新应用。** 适用于 Android 的 Microsoft Word、Excel 和 PowerPoint 应用现在可与未向 Intune 注册的设备上的 MAM 策略相关联。 有关支持的应用的完整列表，请转到 [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)（Microsoft Intune 应用程序合作伙伴）页上的 Microsoft Intune mobile application gallery（Microsoft Intune 移动应用程序库）。
 
@@ -305,7 +305,7 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 所有这些功能也支持混合客户（与 Intune 集成的 Configuration Manager）。
 ### 应用管理
 - **MAM 用户合规性。**
-现在，你可以查看 Azure Active Directory (AAD) 租户中的任何用户的应用程序管理策略的[状态](monitor-mobile-app-management-policies-with-Microsoft-Intune.md)。 这包括：
+现在，你可以查看 Azure Active Directory (AAD) 租户中的任何用户的应用程序管理策略的[状态](/intune/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune)。 这包括：
    - 设备
    - 在设备上的应用
 
@@ -317,7 +317,7 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 
 - **防止 Outlook 联系人同步的 MAM 控件 (Android)。**
-适用于[移动应用程序管理](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)而无需注册设备的新设置。 此设置可以防止应用程序将联系人同步到 Android 设备的本机通讯簿。 启用此设置后，目标应用程序将不能再将联系人保存到本机通讯簿。 禁用此设置后，目标应用程序将能够将联系人保存到本机通讯簿。 [远程擦除设备或应用](wipe-managed-company-app-data-with-Microsoft-Intune.md)后，将删除已保存到本机通讯簿的所有联系人。 最初，Android 设备上的 Outlook 应用程序支持此新设置。
+适用于[移动应用程序管理](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)而无需注册设备的新设置。 此设置可以防止应用程序将联系人同步到 Android 设备的本机通讯簿。 启用此设置后，目标应用程序将不能再将联系人保存到本机通讯簿。 禁用此设置后，目标应用程序将能够将联系人保存到本机通讯簿。 [远程擦除设备或应用](/intune/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune)后，将删除已保存到本机通讯簿的所有联系人。 最初，Android 设备上的 Outlook 应用程序支持此新设置。
 
 ### 设备管理
 - **公司拥有的设备的电话号码标识。** 例如，当运行移动设备清单报表时，现在使用其完整的电话号码标识归类为“企业”的手机。 BYOD 电话号码将继续使用 **** 屏蔽，仅显示最后 4 位数字。
@@ -377,7 +377,7 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 ### 应用管理
 
-- **利用在第三方 MDM 解决方案中注册的设备的 iOS“Open in”管理**可通过第三方移动设备管理 (MDM) 供应商利用 iOS“Open-In”管理功能。 可以在配置文件设置中设置限制，并使用[管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)部署应用。
+- **利用在第三方 MDM 解决方案中注册的设备的 iOS“Open in”管理**可通过第三方移动设备管理 (MDM) 供应商利用 iOS“Open-In”管理功能。 可以在配置文件设置中设置限制，并使用[管理 iOS 应用之间的数据传输](/intune/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune)部署应用。
 
      此方法有两个主要优点：
 
@@ -388,22 +388,22 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 - **使用未在 Intune 中注册的设备的 MAM 策略管理 Microsoft Outlook 应用**现在你可以使用 Intune 移动应用程序管理策略管理未在 Intune 中注册的设备上的 Microsoft Outlook 应用。 具有 MAM 功能的已更新 Microsoft Outlook 应用适用于 [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) 和 [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) 设备。 使用[创建和部署移动应用管理策略](https://technet.microsoft.com/library/mt627829.aspx)主题中的说明来创建 MAM 策略。  
 
 
-- **移动应用配置策略使你能更灵活地为 iOS 应用指定用户详细信息**你可以提供打开 iOS 应用时可能需要的用户设置。 例如，你可以提供网络端口或用户名。 有关详细信息，请参阅[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)。
+- **移动应用配置策略使你能更灵活地为 iOS 应用指定用户详细信息**你可以提供打开 iOS 应用时可能需要的用户设置。 例如，你可以提供网络端口或用户名。 有关详细信息，请参阅[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
 
 
 - **将适用于 Microsoft Intune 的 Adobe Reader 部署到企业中 Intune 托管的 iOS 设备**现在可以使用 Intune 移动应用程序管理策略在已注册的设备上对适用于 iOS 的 Adobe Reader 应用进行管理。
 
-- **确保部署的 Web 剪辑在托管浏览器中打开**可以部署仅可在 iOS 和 Android 设备上使用托管浏览器打开的目标 Web 剪辑。 例如，你通过公司门户将链接部署到企业资源，当用户导航到该链接时，他们便可直接打开到在其中能受到 MAM 策略保护的托管浏览器中。 有关详细信息，请参阅[部署应用](deploy-apps.md)。
+- **确保部署的 Web 剪辑在托管浏览器中打开**可以部署仅可在 iOS 和 Android 设备上使用托管浏览器打开的目标 Web 剪辑。 例如，你通过公司门户将链接部署到企业资源，当用户导航到该链接时，他们便可直接打开到在其中能受到 MAM 策略保护的托管浏览器中。 有关详细信息，请参阅[部署应用](/intune/deploy-use/deploy-apps)。
 
 
-- **从 Intune 管理员控制台为 Windows 10 设备查找、管理和分配适用于企业的 Windows 应用商店应用**Intune 支持适用于企业的 Windows 应用商店，可帮助查找、管理和分配应用到你正在管理的 Windows 10 设备。 适用于企业的 Windows 应用商店可用于管理从 Intune 管理员控制台（管理其他应用时所用的同一控制台）部署和监视这些应用的进程。 具体来说，适用于企业的 Windows 应用商店管理“在线授权应用”的内容和授权。 有关详细信息，请参阅[管理从适用于企业的 Windows 应用商店购买的应用](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)。
+- **从 Intune 管理员控制台为 Windows 10 设备查找、管理和分配适用于企业的 Windows 应用商店应用**Intune 支持适用于企业的 Windows 应用商店，可帮助查找、管理和分配应用到你正在管理的 Windows 10 设备。 适用于企业的 Windows 应用商店可用于管理从 Intune 管理员控制台（管理其他应用时所用的同一控制台）部署和监视这些应用的进程。 具体来说，适用于企业的 Windows 应用商店管理“在线授权应用”的内容和授权。 有关详细信息，请参阅[管理从适用于企业的 Windows 应用商店购买的应用](/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)。
 
 
 ### 设备管理
-- **针对 iOS 设备的 PFX 证书分发**Intune 管理员可以为 iOS 设备上的 Wi-Fi、电子邮件和 VPN 身份验证创建和部署 iOS PFX 证书。 此功能已可用于 Android 和 Windows 10 设备。 有关详细信息，请参阅[启用对使用证书配置文件的公司资源的访问](secure-resource-access-with-certificate-profiles.md)。
+- **针对 iOS 设备的 PFX 证书分发**Intune 管理员可以为 iOS 设备上的 Wi-Fi、电子邮件和 VPN 身份验证创建和部署 iOS PFX 证书。 此功能已可用于 Android 和 Windows 10 设备。 有关详细信息，请参阅[启用对使用证书配置文件的公司资源的访问](/intune/deploy-use/secure-resource-access-with-certificate-profiles)。
 
 
-- **将应用和策略应用到基于用户类别选择的不同设备组** Intune 管理员现在可以定义自定义设备类别，以让用户在注册过程中从中进行选择。 例如，管理员可能想要用户指定是否要注册用于“收银机”或“送货车”或“库存间”的设备。 所选类别将使该设备成为 Intune 设备组的成员，这可用于将不同的应用和策略部署到已注册的设备。 有关详细信息，请参阅[使用设备组映射对设备进行分类](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)。
+- **将应用和策略应用到基于用户类别选择的不同设备组** Intune 管理员现在可以定义自定义设备类别，以让用户在注册过程中从中进行选择。 例如，管理员可能想要用户指定是否要注册用于“收银机”或“送货车”或“库存间”的设备。 所选类别将使该设备成为 Intune 设备组的成员，这可用于将不同的应用和策略部署到已注册的设备。 有关详细信息，请参阅[使用设备组映射对设备进行分类](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)。
 
 ### Microsoft 公司门户的更改和更新
 此版本已针对公司门户进行了如下更改：
@@ -447,9 +447,9 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
     * 安全启动
     * 代码完整性
 
-    阅读 [Microsoft Intune 的设备合规性策略简介](introduction-to-device-compliance-policies-in-microsoft-intune.md)以获取有关设备运行状况设置、收集的数据点和运行状况证明报告的详细信息。 [HAS 服务详细信息](https://msdn.microsoft.com/en-us/library/dn934876.aspx)深入解释了该服务。
+    阅读 [Microsoft Intune 的设备合规性策略简介](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)以获取有关设备运行状况设置、收集的数据点和运行状况证明报告的详细信息。 [HAS 服务详细信息](https://msdn.microsoft.com/en-us/library/dn934876.aspx)深入解释了该服务。
 
-* **Windows 10 Passport for Work 策略和证书管理**利用 Intune，可以[与 Microsoft Passport for Work 集成](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)，这是使用 Active Directory 或 Azure Active Directory 帐户替代密码、智能卡或虚拟智能卡的一种适用于 Windows 10 的替代登录方法。 通过 Passport，你可以使用用户手势取代密码进行登录。 用户手势可以是简单 PIN、Windows Hello 等生物识别身份验证或指纹读取器等外部设备。
+* **Windows 10 Passport for Work 策略和证书管理**利用 Intune，可以[与 Microsoft Passport for Work 集成](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)，这是使用 Active Directory 或 Azure Active Directory 帐户替代密码、智能卡或虚拟智能卡的一种适用于 Windows 10 的替代登录方法。 通过 Passport，你可以使用用户手势取代密码进行登录。 用户手势可以是简单 PIN、Windows Hello 等生物识别身份验证或指纹读取器等外部设备。
 
 * **特定应用的 VPN**你可以选择通过 VPN 自动连接到企业网络的应用。 设置 VPN 配置文件时创建应用列表，如“通过 Microsoft Intune 使用 VPN 配置文件帮助用户连接到其工作”中所述。
 
@@ -457,10 +457,10 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 
 ### Apple 批量采购计划 (VPP) 更新
-Intune 现在可以帮助你[管理通过适用于企业的 Apple 批量采购计划 (VPP) 购买的应用](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)。 这包括同步 Apple 和 Intune 之间的许可证信息，和跟踪你已部署的每个应用的副本数量。
+Intune 现在可以帮助你[管理通过适用于企业的 Apple 批量采购计划 (VPP) 购买的应用](/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)。 这包括同步 Apple 和 Intune 之间的许可证信息，和跟踪你已部署的每个应用的副本数量。
 
 ### 使用 IMEI 号码识别企业拥有的设备
-现在可以对具有 IMEI 号码的移动设备平台[导入国际移动设备标识 (IMEI) 号码](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)，以帮助识别企业拥有的移动设备。 在 Intune 中注册后，带有导入的 IMEI 号码的设备就会被标记为“企业”，这些设备可用于应用与应用到个人拥有设备的策略不同的策略。
+现在可以对具有 IMEI 号码的移动设备平台[导入国际移动设备标识 (IMEI) 号码](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)，以帮助识别企业拥有的移动设备。 在 Intune 中注册后，带有导入的 IMEI 号码的设备就会被标记为“企业”，这些设备可用于应用与应用到个人拥有设备的策略不同的策略。
 
 ### 更多应用现在与 Intune MAM 策略相兼容
 来自 Microsoft 合作伙伴的其他应用现在与 Intune 移动应用程序管理 (MAM) 策略（针对由 Intune 管理的设备）兼容：
@@ -479,6 +479,6 @@ Intune 现在可以帮助你[管理通过适用于企业的 Apple 批量采购�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

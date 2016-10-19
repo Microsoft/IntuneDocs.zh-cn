@@ -4,7 +4,7 @@ description: "了解如何使用 Intune 将 Windows 10 设备自动升级至最�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
-ms.openlocfilehash: 45130e3e12968d9df579a7a9d0cade0343b7c165
+ms.sourcegitcommit: f2aa531744dbd0774958e0450819e45e60a91086
+ms.openlocfilehash: 93a632f0f0b8d31149fa1d5fbe15b31d715d20a8
 
 
 ---
@@ -24,6 +24,12 @@ Microsoft Intune“版本升级策略”可以将运行以下任一 Windows 10 �
 * Windows 10 桌面版
 * Windows 10 全息版
 * Windows 10 移动版
+
+支持下列升级路径：
+- 从 Windows 10 专业版到 Windows 10 企业版
+- 从 Windows 10 家庭版到 Windows 10 教育版
+- 从 Windows 10 移动版到 Windows 10 移动企业版
+- Windows 10 全息专业版到Windows 10 全息企业版
 
 ## 开始之前
 在开始将设备升级至最新版本之前，你将需要以下内容之一：
@@ -46,6 +52,6 @@ Microsoft Intune“版本升级策略”可以将运行以下任一 Windows 10 �
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 

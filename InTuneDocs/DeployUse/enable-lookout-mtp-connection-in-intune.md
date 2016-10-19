@@ -13,14 +13,14 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1334500471d2aea5e8c58a3219c755bfd9953424
-ms.openlocfilehash: 4ae7d6c571f69c0cc51dc15355e50325afb88694
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 2052aca24baa752bc4fad3bd7a75f8efa109e9e9
 
 
 ---
 
 # 在 Intune 管理控制台中启用 Lookout MTP 连接
-本主题介绍如何在 Intune 中启用 Lookout MTP 连接。 执行此步骤前，应在 Lookout MTP 控制台配置好 Intune 连接器。  若未执行此操作，请按[为订阅设置 Lookout 移动威胁保护](set-up-your-subscription-with-lookout-mtp.md)所述步骤进行操作。
+本主题介绍如何在 Intune 中启用 Lookout MTP 连接。 执行此步骤前，应在 Lookout 控制台配置好 Intune 连接器。  若未执行此操作，请按[为订阅设置 Lookout 移动威胁保护](set-up-your-subscription-with-lookout-mtp.md)所述步骤进行操作。
 
 若要在 Intune 中启用 Lookout MTP 连接，请在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)的“管理”页，选择“第三方服务集成”。 选择“Lookout 状态”，使用切换按钮启用“与 MTP 同步”。
 
@@ -35,6 +35,6 @@ ms.openlocfilehash: 4ae7d6c571f69c0cc51dc15355e50325afb88694
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
   - 不可从公司门户重置设备。
   - 公司门户应用或网站中仅显示本地设备。
   - 无法使用 Apple 批量购买计划 (VPP) 应用，因为每个用户需具有 Apple ID 才可管理应用。
-  - 也不可向 Apple 配置器或 Apple 设备注册程序进行注册（iOS 设备）。
+  - (iOS) 也不能使用 Apple Configurator 或 Apple 设备注册计划 (DEP) 进行注册，但可在无用户关联的情况下注册由 DEP 或 Apple Configurator 托管的设备。
 
 > [!NOTE]
 > 若要将公司应用部署到设备注册管理器托管的设备，请将公司门户应用作为“**必需的安装**”部署到此设备注册管理器用户帐户。
@@ -95,6 +95,6 @@ ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

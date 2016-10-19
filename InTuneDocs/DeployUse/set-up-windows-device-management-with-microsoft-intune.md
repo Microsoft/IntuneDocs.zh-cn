@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 149508942b89b15308591e17723884add3ac78ae
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
 可以让用户使用 Intune 公司门户应用安装和注册设备，从而注册他们的设备。 创建 DNS CNAME 可帮助用户进行连接 Intune 并在其中进行注册，而无需输入服务器名称。
 
 1. **设置 Intune**<br>
-如果你尚未设置，请通过[将移动设备管理机构设置](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
+如果你尚未设置，请通过[将移动设备管理机构设置](prerequisites-for-enrollment.md#set-mobile-device-management-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
 
 2. **创建 CNAME**（可选）<br>为公司的域创建 **CNAME** DNS 资源记录以简化注册。 尽管创建 CNAME DNS 条目是可选的，但创建 CNAME 记录能够使用户注册更加简便。 如果未找到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称，`https://manage.microsoft.com`。  CNAME 资源记录必须包含以下信息：
 
@@ -60,10 +60,10 @@ ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
       - [适用于 Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
 
 ### 另请参阅
-[为在 Microsoft Intune 中注册设备做好准备](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[在 Microsoft Intune 中注册设备的先决条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

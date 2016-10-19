@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +49,10 @@ ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
 ### Windows Phone 8.1
 用户会安装 Windows Phone 应用商店中提供的 Microsoft Corporation 的“公司门户”应用，并使用前面添加的 Intune 用户凭据登录。  查看 **“注册的设备”** 以添加自己的设备。
 
- ### Windows Phone 8。0
- 用户单击“系统设置”&gt;“公司应用”，并使用前面添加的 Intune 用户凭据登录。 公司门户应用将部署到你的手机。
-
-如果系统提示输入 **“服务器地址”**，请键入“manage.microsoft.com”。
-
-
 ## 安装以前部署的应用
 在移动设备上打开“公司门户”，选择“应用”，然后安装“Microsoft Skype”。
 
-若要了解有关使用 Intune 进行移动设备管理的详细信息，请参阅[为在 Microsoft Intune 中注册设备做好准备](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)。
+若要了解有关使用 Intune 进行移动设备管理的详细信息，请参阅[为在 Microsoft Intune 中注册设备做好准备](/Intune/deploy-use/prerequisites-for-enrollment)。
 
 ### 后续步骤
 祝贺你！ 你刚完成了“Microsoft Intune 评估”演练的步骤 5。
@@ -69,6 +63,6 @@ ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
