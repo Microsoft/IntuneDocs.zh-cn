@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +64,7 @@ ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 ## 对移动设备的支持
 你可以从 **Outlook** 和其他**使用新式验证的应用**限制对 Exchange Online 电子邮件的访问：-
 
-- Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本
+- Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本以及 Android for Work
 - iOS 8.0 及更高版本
 - Windows Phone 8.1 及更高版本
 
@@ -225,6 +225,9 @@ ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 5.  在“Exchange ActiveSync 应用”下，你可以选择阻止非合规的设备访问 Exchange Online。 当设备运行不受支持的平台时，你还可以选择是允许还是阻止访问电子邮件。 受支持的平台包括 Android、iOS、Windows 和 Windows Phone。
 
+ Exchange Active Sync 应用 **Android for Work** 设备：
+ -  Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可在 Android for Work 设备上正常运行，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将其部署为**必需**安装。 
+
 6.  在 **“目标组”**下，选择策略将应用到的 Active Directory 安全用户组。 你可以选择面向所有用户或面向选定的用户组列表。
 ![Exchange Online 条件性访问策略页面的屏幕截图显示了“目标组”和“免除组”选项。](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +266,6 @@ ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
