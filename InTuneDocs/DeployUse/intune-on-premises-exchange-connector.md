@@ -58,7 +58,7 @@ ms.openlocfilehash: 07ed8c922d53169839bba50547f56bbc979d58ac
 
 ## 下载 On-Premises Exchange Connector 软件安装包
 
-1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中有权使用 Exchange Server 的管理员）打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com) (http://manage.microsoft.com)。
+1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中有权使用 Exchange Server 的管理员）打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com) (http://manage.microsoft.com) 。
 ![打开“设置 Exchange 连接”](../media/ExchangeConnector.gif)
 
 2.  在工作区快捷方式窗格中，依次选择“**管理**”，“**移动设备管理**” > “**Microsoft Exchange**”和“**设置 Exchange 连接**”。
