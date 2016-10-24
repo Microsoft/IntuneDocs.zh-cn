@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
@@ -122,8 +122,6 @@ MDM 解决方案：
 
 例如，最终用户使用其工作帐户启动 OneDrive 应用时，无法将文件移动到个人存储区。 但是，最终用户通过其个人帐户使用 OneDrive 时，可以无限制地从个人 OneDrive 复制和移动数据。  
 
-有关使用与 MAM 策略关联的应用体验，以及具有多身份支持的应用如何在工作环境中仅应用 MAM 策略的详细说明，请阅读[使用具有多身份支持的应用](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
-
 所有 Office 移动应用都支持多身份。
 
 ##  后续步骤
@@ -133,6 +131,6 @@ MDM 解决方案：
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

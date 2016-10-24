@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 
 
 ---
@@ -33,6 +33,7 @@ ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
 此部分中的信息将帮助你安装 Intune 公司门户以及注册 Android 设备。
 
 - [在 Intune 中注册设备](enroll-your-device-in-Intune-android.md)
+- [创建工作配置文件并在 Intune 中注册设备](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## 在 Intune 中注册设备后可以执行的操作
@@ -73,6 +74,6 @@ ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
