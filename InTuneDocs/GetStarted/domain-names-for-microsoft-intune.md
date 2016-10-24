@@ -3,6 +3,7 @@ title: "Microsoft Intune 的域名 | Microsoft Intune"
 description: "为 Intune 添加域名"
 keywords: 
 author: andredm7
+ms.author: andredm
 manager: swadhwa
 ms.date: 10/11/2016
 ms.topic: article

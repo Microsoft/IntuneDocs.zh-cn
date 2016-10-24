@@ -3,6 +3,7 @@ title: "公司资源访问权限问题疑难解答 | Microsoft Intune"
 description: "本主题中的错误和状态代码可帮助你解决资源访问权限问题。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

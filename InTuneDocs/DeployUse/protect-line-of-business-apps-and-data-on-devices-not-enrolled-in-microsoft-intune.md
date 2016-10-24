@@ -3,6 +3,7 @@ title: "保护未注册的设备上的 LOB 应用 | Microsoft Intune"
 description: "本主题介绍如何准备你的业务线应用，以便你可以应用可以帮助防止数据丢失的移动应用管理策略。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

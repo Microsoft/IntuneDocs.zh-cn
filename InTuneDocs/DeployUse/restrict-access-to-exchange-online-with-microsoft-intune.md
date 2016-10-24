@@ -3,6 +3,7 @@ title: "限制对 Exchange Online 的电子邮件访问 | Microsoft Intune"
 description: "使用条件访问保护和控制对 Exchange Online 的公司电子邮件的访问。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

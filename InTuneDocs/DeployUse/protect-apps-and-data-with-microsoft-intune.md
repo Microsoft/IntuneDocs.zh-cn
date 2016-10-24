@@ -3,6 +3,7 @@ title: "保护应用和数据 | Microsoft Intune"
 description: "本主题介绍供你使用的各种 Intune 特性和功能，以帮助保护你的公司应用和数据。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

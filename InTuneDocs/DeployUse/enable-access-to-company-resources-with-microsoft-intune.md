@@ -3,6 +3,7 @@ title: "启用对公司资源的访问 | Microsoft Intune"
 description: "Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对所需文件和资源的访问权限。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

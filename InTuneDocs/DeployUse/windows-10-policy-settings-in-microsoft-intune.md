@@ -3,6 +3,7 @@ title: "Windows 10 策略设置 | Microsoft Intune"
 description: "使用本主题中列出的策略设置可帮助你为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/03/2016
 ms.topic: article

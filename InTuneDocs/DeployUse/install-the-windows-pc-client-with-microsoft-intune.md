@@ -3,6 +3,7 @@ title: "安装电脑客户端软件 | Microsoft Intune"
 description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article

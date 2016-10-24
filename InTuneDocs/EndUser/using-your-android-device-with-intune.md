@@ -3,6 +3,7 @@ title: "通过 Intune 使用 Android 设备 | Microsoft Intune"
 description: "指向以下任务的链接列表：在 Intune 中注册设备时，你可以在你的 Android 移动设备上执行的任务"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

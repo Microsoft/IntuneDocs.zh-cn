@@ -3,6 +3,7 @@ title: "使用 iOS 移动应用配置策略 | Microsoft Intune"
 description: "Intune 中的移动应用配置策略可提供用户在运行 iOS 应用时可能需要的设置。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

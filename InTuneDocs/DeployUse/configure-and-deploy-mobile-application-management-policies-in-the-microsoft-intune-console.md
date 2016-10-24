@@ -3,6 +3,7 @@ title: "在 Intune 控制台中配置 MAM 策略 | Microsoft Intune"
 description: "Microsoft Intune 中的移动应用管理策略让你可以修改你所部署的应用的功能，以帮助它们符合你的公司合规性和安全策略。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

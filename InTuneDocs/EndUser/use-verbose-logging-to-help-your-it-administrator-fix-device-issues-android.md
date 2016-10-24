@@ -3,6 +3,7 @@ title: "使用详细日志记录帮助 IT 管理员修复设备问题 |Microsoft
 description: "通过使用详细日志记录帮助 IT 管理员修复设备问题"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

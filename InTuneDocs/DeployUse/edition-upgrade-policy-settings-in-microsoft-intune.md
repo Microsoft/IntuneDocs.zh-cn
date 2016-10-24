@@ -3,6 +3,7 @@ title: "Windows 版本升级策略设置 | Microsoft Intune"
 description: "了解如何使用 Intune 将 Windows 10 设备自动升级至最新版本。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

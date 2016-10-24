@@ -3,6 +3,7 @@ title: "本地 EAS 的 Exchange 连接器 | Microsoft Intune"
 description: "使用连接器工具启用 Intune 管理控制台和本地 Exchange ActiveSync MDM 的 Exchange Server 之间的通信。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

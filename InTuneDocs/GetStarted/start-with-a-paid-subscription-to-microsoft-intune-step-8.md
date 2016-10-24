@@ -3,6 +3,7 @@ title: "注册移动设备并安装应用 | Microsoft Intune"
 description: "说明如何注册移动设备并在注册 Intune 的设备上安装应用"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

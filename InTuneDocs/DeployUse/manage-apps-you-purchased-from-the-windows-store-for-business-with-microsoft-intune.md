@@ -3,6 +3,7 @@ title: "管理适用于企业的 Windows 应用商店应用 | Microsoft Intune"
 description: "如果想要从 Intune 控制台对批量采购的应用进行管理和部署，请将 Microsoft Intune 连接到适用于企业的 Windows 应用商店"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

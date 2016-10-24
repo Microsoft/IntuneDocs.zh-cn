@@ -3,6 +3,7 @@ title: "Intune 术语表 | Microsoft Intune"
 description: "了解 Microsoft Intune 中的一些术语"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/23/2016
 ms.topic: article

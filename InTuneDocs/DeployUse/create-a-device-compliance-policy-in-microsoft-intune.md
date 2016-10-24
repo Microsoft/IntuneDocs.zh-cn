@@ -3,6 +3,7 @@ title: "创建设备合规性策略 | Microsoft Intune"
 description: "创建合规性策略来帮助保护用于访问你的公司数据的移动设备和电脑。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

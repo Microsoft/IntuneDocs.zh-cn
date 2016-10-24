@@ -3,6 +3,7 @@ title: "注册评估移动设备 | Microsoft Intune"
 description: "当你注册 Intune 的免费 30 天评估时，如何注册移动设备并安装应用"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

@@ -3,6 +3,7 @@ title: "限制对 SharePoint Online 的访问 | Microsoft Intune"
 description: "使用条件访问保护和控制对 SharePoint Online 上的公司数据的访问。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

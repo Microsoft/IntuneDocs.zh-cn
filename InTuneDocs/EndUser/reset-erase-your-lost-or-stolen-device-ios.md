@@ -3,6 +3,7 @@ title: "重置（清除）丢失或被盗 iOS 设备 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

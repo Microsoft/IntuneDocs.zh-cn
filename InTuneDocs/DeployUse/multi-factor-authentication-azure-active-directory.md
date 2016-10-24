@@ -3,6 +3,7 @@ title: "使用 Azure AD 进行多重身份验证 | Microsoft Intune"
 description: "如何在 Azure AD 中要求对设备注册进行多重身份验证。"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "通过 Intune 使用 Windows 设备 | Microsoft Intune"
 description: "指向在 Intune 中注册设备时，你可以在你的 Windows 设备上执行的任务的链接列表"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
