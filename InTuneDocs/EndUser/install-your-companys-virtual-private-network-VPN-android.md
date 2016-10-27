@@ -3,6 +3,7 @@ title: "安装你的公司虚拟专用网络 (VPN) | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

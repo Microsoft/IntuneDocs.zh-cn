@@ -3,6 +3,7 @@ title: "控制设备上的 Windows Hello for Business 设置 |Microsoft Intune"
 description: "了解 Intune 如何与 Microsoft Hello for Business 集成（Microsoft Hello for Business 是使用 Active Directory 或 Azure Active Directory 帐户取代密码、智能卡或虚拟智能卡进行登录的一种替代方法）。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

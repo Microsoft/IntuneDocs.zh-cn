@@ -3,6 +3,7 @@ title: "设备注册疑难解答 | Microsoft Intune"
 description: "有关设备注册问题故障排除的建议。"
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

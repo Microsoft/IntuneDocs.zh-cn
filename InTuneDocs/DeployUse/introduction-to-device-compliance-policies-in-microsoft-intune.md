@@ -3,6 +3,7 @@ title: "设备合规性策略 | Microsoft Intune"
 description: "本主题介绍你了解什么是设备合规性策略及其工作原理所需的概念。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

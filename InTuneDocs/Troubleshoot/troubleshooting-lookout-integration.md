@@ -3,6 +3,7 @@ title: "使用 Intune 集成 Lookout 故障排除"
 description: "本主题介绍了 Lookout 集成中常见的故障排除问题"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

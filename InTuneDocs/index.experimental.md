@@ -6,6 +6,7 @@ title: "Intune 文档 - MDM 文档 | Microsoft 文档"
 description: "Microsoft Intune 技术文档 - 移动设备和应用程序管理"
 keywords: "Intune 文档、MDM 文档、移动设备管理文档、移动设备和应用程序管理文档"
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage

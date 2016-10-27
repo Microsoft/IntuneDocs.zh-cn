@@ -3,6 +3,7 @@ title: "关闭针对 Windows 的 Microsoft 用法数据收集 | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
