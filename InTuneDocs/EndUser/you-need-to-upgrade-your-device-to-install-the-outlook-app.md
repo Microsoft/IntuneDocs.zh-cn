@@ -3,6 +3,7 @@ title: "你需要升级你的设备以安装 Outlook 应用 |Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

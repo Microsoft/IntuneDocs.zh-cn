@@ -5,7 +5,7 @@ keywords:
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 10/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
-ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 
 ---
@@ -34,7 +34,7 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|正在检索内容|可能的原因：作业状态 30 指示用户下载应用失败。<br /><br />这可能是因为：<br /><br />在下载过程中，设备丢失 Internet 连接。<br /><br />在注册时向设备颁发的证书可能已过期。<br /><br />缓解操作：<br /><br />从设备上的控制面板启动公司应用，以确认设备证书尚未过期；如果它已过期，则将需要重新注册设备。<br /><br />确认设备已连接到 Internet 并尝试再次请求应用。|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|内容下载完成||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|安装进行中||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|出现安装错误|下载后应用安装失败。<br /><br />设备上不存在对应用签名所用的代码签名证书。<br /><br />设备上未安装应用程序依赖的框架依赖项。<br /><br />确保设备上存在对应用签名所使用的代码签名证书，并向管理员确认已将证书的目标设定为企业注册的所有 Windows RT 设备。<br /><br />如果安装失败是由于缺少框架依赖项，则管理员将需要再次重新发布应用程序，将框架和应用程序包一起打包。<br /><br />下载的应用程序包不是有效的包，可能已损坏，或可能与设备上的 OS 版本不兼容。|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|出现安装错误|下载后应用安装失败。<br /><br />设备上不存在对应用签名所用的代码签名证书。<br /><br />设备上未安装应用程序依赖的框架依赖项。<br /><br /><br />如果安装失败是由于缺少框架依赖项，则管理员将需要再次重新发布应用程序，将框架和应用程序包一起打包。<br /><br />下载的应用程序包不是有效的包，可能已损坏，或可能与设备上的 OS 版本不兼容。|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|安装成功||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|正在卸载||
 |90 (APP_CI_ENFORCEMENT_ERROR)|出现卸载错误||
@@ -373,6 +373,6 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

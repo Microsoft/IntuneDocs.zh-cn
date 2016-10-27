@@ -3,6 +3,7 @@ title: "iOS 策略设置 | Microsoft Intune"
 description: "创建策略，该策略控制通过 Intune 管理的 iOS 设备上的设置及功能。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -382,6 +383,6 @@ Weather,Apple,com.apple.weather
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

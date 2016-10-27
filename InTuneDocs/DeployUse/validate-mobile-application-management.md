@@ -4,6 +4,7 @@ title:
 description: "本主题介绍如何测试和验证是否已正确设置 MAM 策略并按预期方式工作。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

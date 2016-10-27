@@ -3,6 +3,7 @@ title: "限制对电子邮件和 O365 服务的访问 | Microsoft Intune"
 description: "本主题介绍如何使用条件访问只允许合规设备在 SharePoint Online 和其他服务上访问公司电子邮件和公司数据。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

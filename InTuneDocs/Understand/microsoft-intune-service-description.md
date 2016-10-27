@@ -3,6 +3,7 @@ title: "服务说明 | Microsoft Intune"
 description: "Intune 是一项基于云的服务，可帮助你管理 Windows 电脑以及 iOS、Mac OS X、Android 和 Windows 移动设备。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

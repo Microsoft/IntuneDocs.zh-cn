@@ -3,6 +3,7 @@ title: "使用公司门户重置你的 iOS 设备会发生什么情况？ | Micr
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

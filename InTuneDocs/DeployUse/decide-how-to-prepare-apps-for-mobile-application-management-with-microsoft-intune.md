@@ -3,6 +3,7 @@ title: "针对移动应用管理准备应用 | Microsoft Intune"
 description: "本主题中的信息可帮助你决定何时应该使用 App Wrapping Tool 和应用 SDK 来启用你的自定义业务线应用，以使用移动应用管理策略。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "注册企业自有的 iOS 设备 | Microsoft Intune"
 description: "使用 Apple 设备注册程序 (DEP) 或 Apple 配置器注册企业自有的 iOS 设备"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article

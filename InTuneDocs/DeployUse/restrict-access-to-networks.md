@@ -3,6 +3,7 @@ title: "使用 Cisco ISE 限制对网络的访问 | Microsoft Intune"
 description: "将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 Cisco ISE 控制的 Wi-Fi 和 VPN 前已注册 Intune 并且符合策略。"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/05/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "设置 Android 管理 | Microsoft Intune"
 description: "使用 Microsoft Intune 为 Android 和 KNOX 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article

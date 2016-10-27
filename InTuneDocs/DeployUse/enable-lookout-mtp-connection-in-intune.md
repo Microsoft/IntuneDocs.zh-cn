@@ -3,6 +3,7 @@ title: "在 Intune 中启用 Lookout MTP | Microsoft Intune"
 description: "在 Intune 管理员控制台中启用 Lookout 移动威胁保护。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

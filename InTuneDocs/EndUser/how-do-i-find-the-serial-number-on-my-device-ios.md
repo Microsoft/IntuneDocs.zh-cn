@@ -3,6 +3,7 @@ title: "如何在设备上查找序列号？ | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Windows Phone 8.1 策略设置 | Microsoft Intune"
 description: "Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置常规设置。 此外，还可指定 OMA-URI 值创建 Intune 未提供的自定义设置。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
