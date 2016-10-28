@@ -2,8 +2,8 @@
 title: "在 Intune 中注册 Windows 10 设备 | Microsoft Intune"
 description: "介绍如何在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# 在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备
 
 如果你的公司或学校使用 Microsoft Intune，则可以注册设备以获取对公司电子邮件、文件和其他资源的访问权限。 通过注册设备可以使组织保护公司数据的安全。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 管理员在你的设备上可以看到和不可以看到的内容](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
 
@@ -42,7 +42,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 
     ![你的帐户](./media/w10-enroll-2-accounts-your-account.png)
 
-## 看到“访问工作单位或学校”时要执行的步骤
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>看到“访问工作单位或学校”时要执行的步骤
 
 1.  点击“访问工作或学校”，然后点击“连接”。
 
@@ -69,7 +69,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 如果执行了之前的步骤，但仍无法访问你的工作或学校电子邮件帐户和文件，请按照[看到“访问工作单位或学校”时要执行的故障排除步骤](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)中的步骤操作。
 
 
-## 看到“你的帐户”时要执行的步骤
+## <a name="steps-to-follow-if-you-see-your-account"></a>看到“你的帐户”时要执行的步骤
 
 1.  转到 Windows“**设置**”，然后点击“**帐户**”。
 

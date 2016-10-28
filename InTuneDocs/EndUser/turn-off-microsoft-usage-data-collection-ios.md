@@ -2,8 +2,8 @@
 title: "关闭针对 iOS 的 Microsoft 用法数据收集 | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
 ---
 
 
-# 关闭 Microsoft 使用情况数据收集
+# <a name="turn-off-microsoft-usage-data-collection"></a>关闭 Microsoft 使用情况数据收集
 
 为了改进其产品和服务，Microsoft 会自动收集有关公司门户应用的可靠性和性能以及使用情况的匿名数据。
 
