@@ -1,8 +1,9 @@
 ---
-title: "如果你已拒绝“使用条款”，请从 Intune 取消注册你的设备 | Microsoft Intune"
-description: "介绍在你已拒绝“使用条款”且无法登录到公司门户应用的情况下，如何从 Intune 取消注册 Android 设备"
+title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Intune
+description: "介绍在已拒绝“使用条款”且无法登录到公司门户应用的情况下，如何从 Intune 取消注册 Android 设备"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,18 +14,18 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 373b349a6a43e79d83ce44a8c1670410ca17c6cf
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 4f5088bc645fed0451885078f5ab0dcd04a33d81
 
 
 ---
 
 
-# 如果你已拒绝“使用条款”，请从 Intune 取消注册你的设备
+# 如果已拒绝“使用条款”，请从 Intune 取消注册设备
 
-取消注册 Android 设备的最佳方法是接受“使用条款”，登录到公司门户应用，然后使用[以下说明](unenroll-your-device-from-intune-android.md)取消注册。 但是，如果你在尝试登录到公司门户应用时拒绝了使用条款，则在将来的尝试中将无法登录到公司门户应用，因此你需要使用这些"解决方法"说明来取消注册你的设备。
+取消注册 Android 设备的最佳方法是接受“使用条款”，登录到公司门户应用，然后使用[以下说明](unenroll-your-device-from-intune-android.md)取消注册。 但是，如果在尝试登录到公司门户应用时拒绝了“使用条款”，在未来则无法登录到公司门户应用。 为了防止出现这种情况，应按照这些“解决方法”说明来取消注册设备。
 
-取消注册公司门户应用的同时也将从 Intune 取消注册你的设备，这就意味着你的设备将无法再访问公司资源。  若要了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)。
+在卸载公司门户应用时，同时将从 Intune 取消注册设备。 设备将无法再访问公司资源。 若要了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)。
 
 你需转到“设备管理员”设置，并关闭“公司门户”才能卸载公司门户应用。 由于你拥有的 Android 设备的不同，操作步骤可能也有些许不同。
 
@@ -34,7 +35,7 @@ ms.openlocfilehash: 373b349a6a43e79d83ce44a8c1670410ca17c6cf
 
     完成此步骤将立即取消注册你的设备。
 
-2.  清除“公司门户”旁边的复选框（即将其关闭）。
+2.  取消勾选“公司门户”旁边的复选框或将其关闭。
 
     现在即可卸载公司门户应用。
 
@@ -42,7 +43,6 @@ ms.openlocfilehash: 373b349a6a43e79d83ce44a8c1670410ca17c6cf
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

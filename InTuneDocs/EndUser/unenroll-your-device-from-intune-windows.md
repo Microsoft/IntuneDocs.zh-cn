@@ -3,6 +3,7 @@ title: "从 Intune 取消注册 Windows 设备 | Microsoft Intune"
 description: "介绍如何从 Intune 取消注册 Windows 设备"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 93374a2098447a11b164ae3fb5d7b1b3d4824806
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 
 ---
@@ -44,11 +45,11 @@ ms.openlocfilehash: 93374a2098447a11b164ae3fb5d7b1b3d4824806
 
 1.  转至**电脑设置** &gt; **网络** &gt; **工作区**。
 
-2.  在下“工作区加入”下，点击“退出”。
+2.  在“工作区加入”下，选择“退出”。
 
-3.  在“打开设备管理”下，单击“关闭”。
+3.  在“打开设备管理”下，选择“关闭”。
 
-4.  在打开的弹出窗口中，点击“关闭”。
+4.  在打开的弹出窗口中，选择“关闭”。
 
 ## 取消注册 Windows Phone 8.1 设备
 
@@ -60,11 +61,10 @@ ms.openlocfilehash: 93374a2098447a11b164ae3fb5d7b1b3d4824806
 
 4.  在“删除帐户”对话框中，点击“删除”。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

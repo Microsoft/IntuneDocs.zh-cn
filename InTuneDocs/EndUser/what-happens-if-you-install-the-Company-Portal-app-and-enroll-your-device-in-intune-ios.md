@@ -2,9 +2,10 @@
 title: "安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备后会发生什么情况？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 当安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备时，可以使用公司门户应用：
 
--   访问公司网络、你的电子邮件和工作文件
+-   访问公司网络、你的电子邮件和工作文件。
 
--   从公司门户获取应用
+-   从公司门户获取公司应用。
 
--   在手机丢失或被盗时将它远程重置为出厂设置
+-   在手机丢失或被盗时将它远程重置为出厂设置。
 
--   自动配置公司电子邮件帐户
+-   自动设置公司电子邮件帐户。
 
-在 Intune 中注册设备时，即表示授予 IT 管理员管理你的设备的权限，以帮助保护设备上的公司信息。
+在 Intune 中注册设备时，会向 IT 管理员授予管理设备的权限，以帮助保护设备上的公司信息。
 
 **IT 管理员不能看到的内容**
 
@@ -91,10 +92,10 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 -   处于漫游模式下时，在设备上启用或禁用自动文件同步。 如果允许自动文件同步，则可能会产生漫游费用。
 
-如有疑问，请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

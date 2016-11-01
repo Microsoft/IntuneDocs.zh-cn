@@ -3,8 +3,9 @@ title: "配置证书配置文件 | Microsoft Intune"
 description: "了解如何创建 Intune 证书配置文件。"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 ---
@@ -38,13 +39,22 @@ ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 ### 创建受信任的证书配置文件
 
-1.  在 [ Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**”&gt;“**添加策略**”。
-2.  添加以下策略类型之一：
-    - **Android &gt; 受信任的证书配置文件（Android 4 及更高版本）**
-    - **iOS &gt; 受信任的证书配置文件（iOS 8.0 及更高版本）**
-    - **Mac OS X &gt; 受信任的证书配置文（Mac OS X 10.9 及更高版本）**
-    - **Windows &gt; 受信任的证书配置文件（Windows 8.1 及更高版本）**
-    - **Windows &gt; 受信任的证书配置文件（Windows Phone 8.1 及更高版本）**
+1.  在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”，然后选择设备平台。 可以为这些设备创建受信任的证书配置文件：
+
+-  Android 4 及更高版本
+
+-  Android for Work
+
+-  iOS 7.1 及更高版本
+
+-  Mac OS X 10.9 及更高版本
+
+-  Windows 8.1 及更高版本
+
+-  Windows Phone 8.1 及更高版本
+
+
+2.  添加**受信任的证书配置文件**策略。
 
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
@@ -55,19 +65,32 @@ ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 新的策略将显示在“**策略**”工作区中。 现在你可以进行部署。
 
+> [!NOTE]
+>
+> Android 和 Android for Work 设备将显示第三方已安装受信任的证书的通知。
+    
+
 ## **任务 3**：创建 SCEP 或 .PFX 证书配置文件
 创建受信任的 CA 证书配置文件后，为你要使用的各个平台创建 SCEP 或 .PFX 证书配置文件。 创建 SCEP 证书配置文件时，必须为相同平台指定受信任的证书配置文件。 这链接了两个证书配置文件，但仍然必须单独部署各个配置文件。
 
 ### 创建 SCEP 证书配置文件
 
-1.  在 [ Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**”&gt;“**添加策略**”。
-2.  添加以下策略类型之一：
-    - **Android &gt; SCEP 证书配置文件(Android 4 及更高版本)**
-    - **iOS &gt; SCEP 证书配置文件（iOS 8.0 及更高版本）**
-    - **Mac OS X &gt; SCEP 证书配置文件(Mac OS X 10.9 及更高版本)**
-    - **Windows &gt; SCEP 证书配置文件(Windows 8.1 及更高版本)**
-    - **Windows &gt; SCEP 证书配置文件(Windows Phone 8.1 及更高版本)**
+1.  在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”，然后选择设备平台。  可以为这些设备创建 SCEP 证书配置文件：
 
+-  Android 4 及更高版本
+
+-  Android for Work
+
+-  iOS 7.1 及更高版本
+
+-  Mac OS X 10.9 及更高版本
+
+-  Windows 8.1 及更高版本
+
+-  Windows Phone 8.1 及更高版本
+
+2.  添加 **SCEP 证书配置文件**策略
+    
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 3.  按照配置文件配置页上的说明配置 SCEP 证书配置文件设置。
@@ -87,13 +110,16 @@ ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 ### 创建 .PFX 证书配置文件
 
-1.  在 [ Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**”&gt;“**添加策略**”。
-2.  添加以下策略类型之一：
-  - **Android &gt; .PFX 证书配置文件（Android 4 及更高版本）**
-  - **Windows &gt; PKCS #12 (.PFX) 证书配置文件（Windows 10 及更高版本）**
-  - **Windows &gt; PKCS #12 (.PFX) 证书配置文件（Windows Phone 10 及更高版本）**
-  - **iOS > PKCS #12 (.PFX) 证书配置文件（iOS 8.0 及更高版本）**    
-    了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
+1.  在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”，然后选择设备平台。 对于以下各项支持 .PFX 证书：
+  - Android 4 及更高版本
+  - Android for Work
+  - Windows 10 及更高版本
+  - Windows Phone 10 及更高版本
+  - iOS 8.0 及更高版本）    
+
+    
+2.  添加 **.PFX 证书配置文件**策略。 
+      了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 3.  在策略窗体上输入请求的信息。
 4.  选择“**保存策略**”。
 
@@ -130,6 +156,6 @@ ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

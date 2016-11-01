@@ -1,5 +1,6 @@
 # [了解和探索](introduction-to-microsoft-intune.md)
 ## [Intune 简介](introduction-to-microsoft-intune.md)
+## [新式 Windows 管理](modern-windows-management)
 ## [Intune 评估指南](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [登录或注册 30 天评估版](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 ### [添加用户](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
@@ -19,6 +20,6 @@
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

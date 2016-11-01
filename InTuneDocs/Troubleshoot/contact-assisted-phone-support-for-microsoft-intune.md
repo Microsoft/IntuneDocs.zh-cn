@@ -1,8 +1,9 @@
 ---
 title: "联系辅助电话支持 | Microsoft Intune"
-description: 
+description: "Intune 支持的电话号码"
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
+ms.sourcegitcommit: 3a081109cd499d3bdda75cb6c8a4dab9d9d28fab
+ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
 
 
 ---
 
-# 联系 Microsoft Intune 的辅助电话支持
+# <a name="contact-assisted-phone-support-for-microsoft-intune"></a>联系 Microsoft Intune 的辅助电话支持
 
-## 电话号码和营业时间
+## <a name="phone-numbers-and-business-hours"></a>电话号码和营业时间
 
 |国家/地区|技术支持时间|营业时间|支持的语言|免费电话号码|当地电话号码|
 |------------------|---------------------------|------------------|-----------------------|---------------------------|-----------------------|
@@ -117,6 +118,6 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

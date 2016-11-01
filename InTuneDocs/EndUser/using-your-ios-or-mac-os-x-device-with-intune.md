@@ -3,6 +3,7 @@ title: "通过 Intune 使用 iOS 或 Mac OS X 设备 | Microsoft Intune"
 description: "指向以下任务的链接列表：在 Intune 中注册设备时，你可以在你的 iOS 或 Mac OS X 移动设备上执行的任务"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6e84676a8ea1e149f73871ef1468c2da80fa221c
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: e894ad75fd6e86d5d93393886b37e2af87b5eefc
 
 
 ---
@@ -61,9 +62,11 @@ ms.openlocfilehash: 6e84676a8ea1e149f73871ef1468c2da80fa221c
 - [如何在设备上查找序列号？](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [设备没有必需的最低操作系统版本](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
 - [设备不符合最高操作系统版本](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+- [系统提示在 iOS 设备上安装 Lookout for Work](you-are-prompted-to-install-lookout-for-work-ios.md)
+- [Lookout for Work 在 iOS 设备上发现威胁，请解除该威胁](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

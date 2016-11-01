@@ -3,8 +3,9 @@ title: "VPN 连接 | Microsoft Intune"
 description: "使用 VPN 配置文件将 VPN 设置部署到组织中的用户和设备。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +14,22 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
-ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
 
 # Microsoft Intune 中的 VPN 连接
- 你可以使用虚拟专用网络 (VPN) 为用户提供到你的公司网络的安全远程访问。 远程用户可以像其设备物理连接到网络一样地工作。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 Microsoft Intune 中的“*VPN 配置文件*”将 VPN 设置部署到你组织中的用户和设备。 通过部署这些设置，你可以最大限度减少最终用户连接到公司网络资源需要进行的工作。
+
+虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 Microsoft Intune 中的 VPN 配置文件将 VPN 设置部署到你组织中的用户和设备，以便它们可以方便且安全地连接到网络。 
 
 例如，假定你想要用连接到公司网络上的文件共享所需的设置预配所有 iOS 设备。 创建包含连接到公司网络所必需的设置的 VPN 配置文件，然后将此配置文件部署到所有使用 iOS 设备的用户。 用户将在可用网络的列表中看到 VPN 连接，并可以轻松连接。
 
 你可以使用 VPN 配置文件配置下列设备类型：
 
 * 运行 Android 4 和更高版本的设备
+* Android for Work 设备
 * 运行 iOS 8.0 及更高版本的设备
 * 运行 Max OS X 10.9 和更高版本的设备
 * 运行 Windows 8.1 和更高版本的已注册设备
@@ -42,20 +45,20 @@ Intune 支持使用以下连接类型创建 VPN 配置文件：
 
 
 
-连接类型 |iOS 和 Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 桌面版和移动版 |
+连接类型 |iOS 和 Mac OS X  |Android 和 Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 桌面版和移动版 |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|是 |是   |否    |     否    |否  |否    | 是（OMA URI，仅限移动版）|     
-Cisco (IPsec)|是 |否   |否  |  否|否  |否 | 否|
-Citrix|是 |否   |否  |  否|否  |否 | 否|
-脉冲安全|是  |是 |是   |否  |是  |是| 是|        
-F5 Edge Client|是 |是 |是 |否  |是  |   是 |  是|   
-Dell SonicWALL Mobile Connect|是 |是 |是 |否  |是 |是 |是|         
-CheckPoint Mobile VPN|是 |是 |是 |是 |是|是|是|
-Microsoft SSL (SSTP)|否 |否 |否 |否 |否|否|VPNv1 OMA-URI*|
-Microsoft Automatic|否 |否 |否 |否 |否|是 (OMA-URI)|是|
-IKEv2|iOS 自定义配置文件|否 |否 |否 |否|是 (OMA-URI)|是|
-PPTP|iOS 自定义配置文件|否 |否 |否 |否|否|是|
-L2TP|iOS 自定义配置文件|否 |否 |否 |否|是 (OMA-URI)|是|
+Cisco AnyConnect|是 |是   |否    |否  |否    | 是（OMA URI，仅限移动版）|     
+Cisco (IPsec)|是 |否   |否  |否  |否 | 否|
+Citrix|是 |否   |否  |否  |否 | 否|
+脉冲安全|是  |是 |是   |是  |是| 是|        
+F5 Edge Client|是 |是 |是 |是  |   是 |  是|   
+Dell SonicWALL Mobile Connect|是 |是 |是 |是 |是 |是|         
+CheckPoint Mobile VPN|是 |是 |是 |是|是|是|
+Microsoft SSL (SSTP)|否 |否 |否 |否|否|VPNv1 OMA-URI*|
+Microsoft Automatic|否 |否 |否 |否|是 (OMA-URI)|是|
+IKEv2|iOS 自定义配置文件|否 |否 |否|是 (OMA-URI)|是|
+PPTP|iOS 自定义配置文件|否 |否 |否|否|是|
+L2TP|iOS 自定义配置文件|否 |否 |否|是 (OMA-URI)|是|
 
 \* 没有适用于 Windows 10 的其他设置。
 
@@ -70,9 +73,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 ### 证书
 
-在创建 VPN 配置文件时，选择之前已在 Intune 中创建的 SCEP 或 PFX 证书配置文件。
-
-该配置文件又称为身份证书。 其用于对你创建的受信任的身份证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会部署到对 VPN 连接（通常是 VPN 服务器）进行身份验证的计算机。
+在创建 VPN 配置文件时，选择之前已在 Intune 中创建的 SCEP 或 PFX 证书配置文件。 该配置文件又称为身份证书。 其用于对你创建的受信任的身份证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会部署到对 VPN 连接（通常是 VPN 服务器）进行身份验证的计算机。
 
 有关如何在 Intune 中创建和使用配置文件的详细信息，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。
 
@@ -85,6 +86,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**” > “**添加策略**”。
 2. 展开相关设备类型以选择新策略模板，然后为该设备选择 VPN 配置文件：
     * **VPN 配置文件（Android 4 及更高版本）**
+    * **VPN 配置文件 (Android for Work)**
     * **VPN 配置文件（iOS 8.0 及更高版本）**
     * **VPN 配置文件（Mac OS X 10.9 及更高版本）**
     * **VPN 配置文件（Windows 8.1 及更高版本）**
@@ -92,6 +94,11 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
     * **VPN 配置文件（Windows 10 桌面版和移动版及更高版本）**
 
  你可以仅创建和部署自定义 VPN 配置文件策略。 建议的设置不可用。
+
+> [!Note]
+> Android for Work 设备的 VPN 配置文件仅针对安装在设备工作配置文件上的应用启用 VPN 连接。
+>
+> 某些 VPN 连接类型支持适用于 Android for Work 设备的每应用 VPN，还可用于通过 Intune 在已分配的应用上启用每应用 VPN。  
 
 3. 使用下表来帮助你配置 VPN 配置文件设置：
 
@@ -192,6 +199,6 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

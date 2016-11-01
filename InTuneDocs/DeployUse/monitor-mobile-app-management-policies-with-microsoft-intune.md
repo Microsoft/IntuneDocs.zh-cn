@@ -3,8 +3,9 @@ title: "使用 Microsoft Intune 监视 MAM 策略| Microsoft Intune"
 description: "若要查看有多少用户拥有策略，请深入了解以获取详细信息。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 07/06/2016
+ms.author: karaman
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: bc68a13b8d5694908cd00e5e615f81f6e15cfe22
 
 
 ---
@@ -71,10 +72,11 @@ ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
 ### 另请参阅
 [管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-[启用 MAM 的应用的最终用户体验](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [Android 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

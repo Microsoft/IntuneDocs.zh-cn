@@ -3,6 +3,7 @@ title: "使用公司门户重置 Android 设备会发生什么情况？ | Micros
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 27d49e53fdd23b82fbbb94d2f285978cb3b52b16
+ms.sourcegitcommit: 3f531adc042677d12c64e2efb4f8e3401e4b5bd4
+ms.openlocfilehash: ff0dca484b7e7a75dcaff69c86985510ee17277e
 
 
 ---
@@ -23,20 +24,18 @@ ms.openlocfilehash: 27d49e53fdd23b82fbbb94d2f285978cb3b52b16
 
 # 使用公司门户重置 Android 设备会发生什么情况？
 
-使用公司门户重置 Android 设备时，将删除设备上的所有应用、设置和个人数据，并将设备恢复为默认出厂设置。
+使用公司门户重置 Android 设备时，会删除设备上的所有应用、设置和个人数据。 此重置操作会将设备设置回其出厂默认设置。
 
-Samsung Knox 设备通过选择公司门户中的**设备删除**选项可执行“选择性擦除”。 选择性擦除只删除以下内容：
+通过从公司门户中选择“设备删除”选项，可在 Samsung Knox 设备上执行“选择性擦除”。 选择性擦除只会删除：
 
-- IT 管理员向你提供的业务应用
-- 电子邮件、VPN 和 WiFi
-- IT 管理员强制实施某些设置的能力
+- IT 管理员提供的业务应用。
+- 电子邮件、VPN 和 Wi-Fi。
+- IT 管理员强制实施某些设置的功能。
 
 如有疑问，请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
