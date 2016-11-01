@@ -3,7 +3,7 @@ title: "创建工作配置文件并在 Intune 中注册设备 | Microsoft Intune
 description: "介绍如何加密 Android 设备"
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -3,7 +3,7 @@ title: "Lookout for Work 在 iOS 设备上发现威胁，请解除该威胁 | Mi
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article

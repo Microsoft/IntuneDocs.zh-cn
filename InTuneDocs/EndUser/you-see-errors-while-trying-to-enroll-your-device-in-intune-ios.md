@@ -3,7 +3,7 @@ title: "尝试在 Intune 中注册 iOS 设备时遇到错误| Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/28/2016
 ms.topic: article

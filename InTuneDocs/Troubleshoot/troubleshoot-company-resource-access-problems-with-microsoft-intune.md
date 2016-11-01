@@ -2,8 +2,8 @@
 title: "公司资源访问权限问题疑难解答 | Microsoft Intune"
 description: "本主题中的错误和状态代码可帮助你解决资源访问权限问题。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP 许可证安装失败||
 |无状态 (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|状态当前未知。|
 
-## <a name="company-resource-access-(common-errors)"></a>公司资源访问（常见错误）
+## <a name="company-resource-access-common-errors"></a>公司资源访问（常见错误）
 
 |状态代码|十六进制错误代码|错误消息|
 |---------------|--------------------------|-----------------|

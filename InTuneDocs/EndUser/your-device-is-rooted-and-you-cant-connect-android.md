@@ -3,7 +3,7 @@ title: "你的 Android 设备已取得 root 权限，无法连接 |Microsoft Int
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
