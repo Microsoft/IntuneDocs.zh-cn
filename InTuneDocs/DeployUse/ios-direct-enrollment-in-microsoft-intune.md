@@ -2,8 +2,8 @@
 title: "直接注册 iOS 设备 | Microsoft Intune"
 description: "使用 Apple 配置器工具直接注册公司自有的 iOS 设备（使用通过 USB 将其连接至 Mac 计算机的预定义策略）。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -20,7 +20,7 @@ ms.openlocfilehash: 9526ac2eb902198597ba811c5d957d69e1b991c6
 
 ---
 
-# 使用 Apple Configurator 直接注册 iOS 设备
+# <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>使用 Apple Configurator 直接注册 iOS 设备
 Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) 工具。 此过程不会将设备恢复至出厂设置，并将使用预定义策略注册设备。 此方法针对“无用户关联”的设备，并且要求通过 USB 将 iOS 设备连接到 Mac 计算机以设置企业注册。
 
 直接注册 iOS 设备时，可以在无需获取设备的序列号的情况下注册设备。 在注册过程中，你还可以在 Intune 捕获设备名称前对设备命名以进行标识。 直接注册的设备不支持公司门户应用。 本指南假定你在 Mac 计算机上使用 Apple Configurator 2.0。
