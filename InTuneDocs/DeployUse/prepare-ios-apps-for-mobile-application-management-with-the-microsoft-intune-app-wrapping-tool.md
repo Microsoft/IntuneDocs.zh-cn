@@ -4,17 +4,17 @@ description: "使用本题中提供的信息以了解不修改应用代码本身
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
-ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
+ms.sourcegitcommit: 7c74ed8a157b694db003bdb09ee7a60f2d201550
+ms.openlocfilehash: 07cbb950cf35c5dd13d0f58d132ad05d6b510b30
 
 
 ---
@@ -24,7 +24,12 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 该工具是在应用周围创建“包装程序”的 Mac OS 命令行应用程序。 处理应用后，可以使用你配置的[移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)来更改应用的功能。
 
-若要下载该工具，请参阅 [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218)。
+若要下载该工具，请参阅[适用于 iOS 的 Microsoft Intune 应用包装工具](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)。
+
+>[!IMPORTANT]
+>公共预览中此版本的应用包装工具可用（支持未在 Intune 上注册的设备）。 若希望参与公共预览，可从 iOS 的[此 github 页面](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview)下载此工具。
+
+>该方案在[保护未在 Intune 中注册的设备上的 LOB 应用](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)主题中有所描述。
 
 ## 步骤 1：满足使用应用包装工具的先决条件
 请阅读[此博客文章](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)了解有关先决条件以及如何对其进行设置的详细信息。
@@ -33,26 +38,21 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 |---------------|--------------------------------|
 |支持的操作系统和工具集|你必须在运行 OS X 10.8.5 或更高版本的 Mac 计算机上运行应用包装工具，计算机还要安装 XCode 工具集 5 或更高版本。|
 |签名证书和预配配置文件|你必须有 Apple 签名证书和预配配置文件。 请参阅 [Apple 开发人员文档](https://developer.apple.com/)。|
-|使用应用包装工具处理应用|应用必须由你公司或独立软件供应商 (ISV) 开发并签名。 你无法使用该工具处理 Apple Store 中的应用。 应用必须针对 iOS 7.1 或更高版本编写。 应用还必须是地址无关可执行文件 (PIE) 格式。 有关 PIE 格式的更多信息，请参阅 Apple 开发人员文档。 最后，应用的扩展名必须是 **.app** 或 **.ipa** 格式。|
+|使用应用包装工具处理应用|应用必须由你公司或独立软件供应商 (ISV) 开发并签名。 你无法使用该工具处理 Apple Store 中的应用。 应用必须针对 iOS 8.0 或更高版本编写。 应用还必须是地址无关可执行文件 (PIE) 格式。 有关 PIE 格式的更多信息，请参阅 Apple 开发人员文档。 最后，应用的扩展名必须是 **.app** 或 **.ipa** 格式。|
 |包装工具无法处理的应用|加密应用、未签名应用和带有扩展文件属性的应用。|
-|使用 Azure Active Directory 库 (ADAL) 的应用|如果你的应用使用 ADAL，则应用结合的 ADAL 版本必须高于或等于 1.0.2，且开发人员必须授予其应用访问 Intune 移动应用程序管理资源的权限。<br /><br />有关如何使用 ADAL 的详细信息，请参阅本文中的[有关使用 Azure Active Directory 库的应用的信息](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library)。|
 |设置应用权利|在包装应用之前，必须设置权利，以便为应用提供除平常所授权限和功能以外的其他权限和功能。 有关说明，请参阅[设置应用权利](#setting-app-entitlements)。|
 
 ## 步骤 2：安装应用包装工具
 
-1.  从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=45218)“适用于 iOS 的 Microsoft Intune 应用包装工具”页上，将应用包装工具的安装文件下载到 Mac 计算机。
+1.  从 [Microsoft Github 页面](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)的“用于 iOS 的 Microsoft Intune 应用包装工具”页，将应用包装工具的文件下载到 Mac 计算机。
 
-2.  在 Mac 计算机上，双击安装文件 **Microsoft Intune App Wrapping Tool for iOS.dmg**。
-
-3.  选择“同意”以接受最终用户许可协议 (EULA)。 安装程序已安装并显示在 Mac 计算机上。
-
-4.  打开安装程序，将显示的文件复制到 Mac 计算机上的新文件夹中。 现在，你可以断开已装载的安装程序驱动器。
+2.  请务必阅读解释“最终用户许可证协议”的 license.txt 文件。
+3.  将文件本地保存到 Mac 计算机。
 
     你现已运行应用包装工具。
 
 ## 步骤 3：运行应用包装工具
-
-1.  在 Mac 计算机上，打开终端窗口并导航到你保存文件的文件夹。 由于可执行程序在包内，你必须运行以下命令：
+* 在 Mac 计算机上，打开终端窗口并导航到你保存文件的文件夹。 可执行工具名为 **IntuneMAMPackager**，位于 IntuneMAMPackager/Contents/MacOS。 需要如下所诉运行命令：
 ```
     ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
@@ -62,7 +62,7 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
     **Example:** The following example command runs the app wrapping tool on an app named **MyApp.ipa**. A provisioning profile and SHA-1 hash are specified. The processed app is created and stored in the **/users/myadmin/Documents** on the Mac computer.
 
     ```
-    /users/myadmin/Downloads/IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager -i /users/myadmin/Downloads/MyApp.ipa -o /users/myadmin/Documents/MyApp_Wrapped.ipa -p /users/myadmin/Downloads/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB –a 20e1cd0d-268e-4308-9583-02ae97dd353e –r https://contoso/ -v true
+    /users/myadmin/Downloads/IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager -i /users/myadmin/Downloads/MyApp.ipa -o /users/myadmin/Documents/MyApp_Wrapped.ipa -p /users/myadmin/Downloads/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
     ```
     You can use the following command line properties with the app wrapping tool:
 
@@ -73,15 +73,28 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
   |**-o**|指定保存处理后的应用的路径。|
   |**-p**|指定 iOS 应用的配置文件的路径。|
   |**-c**|指定签名证书的 SHA1 哈希。|
-  |**-a**|输入应用的客户端 ID（GUID 格式），如果应用使用 Azure Active Directory 库（可选）。|
-  |**-r**|输入文件的重定向 URI，如果应用使用 Azure Active Directory 库（可选）。|
   |**-v**|将详细消息输出到控制台（可选）。|
+  |-f |可选） <Path to a plist file specifying arguments>  |
+  |-b|（可选）如果希望已包装应用与输入应用的绑定版本相同，则不要指定此标记的参数。 如果希望已包装的应用具有自定义 CFBundleVersion，使用“-b<custom bundle version>”。 我们建议按重要组件的最小单元递增本机应用的 CFBundleVersion，例如 1.0.0 -> 1.0.1 |
 
-2. 处理完成后，将显示消息 **“应用程序已包装成功”** 。
+>[!IMPORTANT]
+>仅公共预览版应用包装工具支持 -f 和 -b 标记，该工具支持未在 Intune 上注册的设备。
+
+
+一种运行应用包装工具的方法是将所有命令参数置于 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 文件中。 Plist 是一种类似于 XML 的文件格式，可帮助用户将命令行参数输入到键值界面中。
+
+使用文本编辑器或 Xcode 打开一个空白 plist 模板，即 Parameters.plist。
+为输入路径、输出路径、预配配置文件路径、SHA1 证书哈希和启用的详细输入参数。
+最后，将 IntuneMAMPackager 与 plist 一起作为唯一参数运行：
+```
+./IntuneMAMPackager –f Parameters.plist
+```
+
+* 处理完成后，将显示消息 **“应用程序已包装成功”** 。
 
     如果出错，请参阅[错误消息](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages)以寻求帮助。
 
-3.  包装的应用已保存在你之前指定的输出文件夹内。 你现在可以将应用上载到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 并关联一份移动应用程序管理策略。
+*   包装的应用已保存在你之前指定的输出文件夹内。 你现在可以将应用上载到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 并关联一份移动应用程序管理策略。
 
     > [!IMPORTANT]
     > 你必须将应用上载为新应用。 你无法更新未包装版本的旧应用。
@@ -112,8 +125,6 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 |你指定的输入应用程序未签名。 指定已签名的有效应用程序。|应用包装工具需要已签名的应用。 咨询开发人员文档以了解如何对已包装的应用签名。|
 |你指定的输入应用程序必须为 .ipa 或 .app 格式。|应用包装工具仅接受 .app 或 .ipa 扩展名。 确保你的输入文件的扩展名有效，并且编译为的“.app”或“.ipa”文件。|
 |你指定的输入应用已包装，并且为最新的策略模板版本。|应用包装工具将不会用最新的策略模板版本重新包装现有的已包装的应用。|
-|所给的 Azure Active Directory 客户端 ID 不是格式正确的 GUID。 请指定有效的客户端 ID。|使用客户端 ID 参数时，确保你提供了有效的 GUID 格式客户端 ID。|
-|所给的 Azure Active Directory 回复 URI 不是格式正确的 URI。 请指定有效的回复 URI。|使用回复 URI 命令行属性时，请确保你提供了有效的回复 URI。|
 |警告：你没有指定 SHA1 证书哈希。 确保你的已包装应用程序在部署前已签名。|确保你指定了有效的 SHA 哈希（使用 **“–c”** 命令行属性）。|
 
 ### 应用包装工具的日志文件
@@ -135,43 +146,6 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
     包装的应用也将向用户提供在应用损坏后直接通过电子邮件从设备发送日志的选项。 用户可以将日志发送给你进行检查，并在需要时转发给 Microsoft。
 
-## 有关使用 Azure Active Directory 库的应用的信息
-该部分的信息仅适用于使用 Azure Active Directory 库 (ADAL) 的应用。 如果不确定你的应用是否使用此库，请联系应用的开发人员。
-
-应用结合的 ADAL 的版本必须高于或等于 1.0.2。
-
-对于使用 ADAL 的应用，则必须满足下列要求：
-
--   应用结合的 ADAL 的版本必须高于或等于 1.0.2
-
--   开发人员必须授予其应用访问 Intune 移动应用管理资源的权限，如[对使用 ADAL 的应用所需执行的步骤](#steps-to-follow-for-apps-that-use-adal)中所述。
-
-### 所需获取的标识符的概述
-使用 ADAL 的应用必须通过 Azure 管理门户注册，以获得其应用的两个唯一标识符：
-
-|标识符|更多信息|默认值|
-|--------------|--------------------|-----------------|
-|**客户端 ID**|在应用注册至 Azure Active Directory 后，会为每个应用生成唯一 GUID 标识符。<br /><br />如果知道应用的特定客户端 ID，则可以指定此值。 否则，将使用默认值。|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**重定向 URI**|开发人员可以在将他们的应用注册到 Azure Active Directory 时提供 URI 值，以确保身份验证令牌明确地返回到该端点。<br /><br />提供重定向 URI 是应用包装工具的一项可选参数。 如果未指定，则会使用默认 URI。|urn:ietf:wg:oauth:2。0:oob|
-
-
-### 对使用 ADAL 的应用所需执行的步骤
-
-1.  查看[所需获取的标识符的概述](#overview-of-identifiers-you-need-to-get)以确定需要获取的值。
-
-2.  通过执行以下操作，在 Azure Active Directory 中配置对移动应用程序管理的访问：
-
-    1. 在 Azure 管理门户登录现有的 Azure Active Directory 帐户。
-
-    2.  单击 Azure Active Directory 中的 **“现有 LOB 应用程序注册”** 。
-
-    3.  在配置部分，选择 **“配置对其他应用程序中的 Web API 的访问权限”**。
-
-    4.  在“**对其他应用程序的权限**”部分中，从第一个下拉列表中选择“**Intune 移动应用管理**”。
-
-        现在可以在应用包装工具中使用应用的客户端 ID。 你可以在 Azure Active Directory 管理门户中找到应用的客户端 ID，如[所需获取的标识符的概述](#overview-of-identifiers-you-need-to-get)部分中所述。
-
-3.  将 **Client-ID**（使用属性 **–a**）和 **Redirect-URI** 值用作应用包装工具中的命令行属性。 如果没有这些值，则使用默认值。 你必须同时指定这两个值，否则最终用户将无法成功地对已处理的应用进行身份验证。
 
 ### 证书、预配配置文件和身份验证要求
 
@@ -181,17 +155,6 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 |Certificate|**指定证书前，确保证书有效** - 处理 iOS 应用时，该工具不会检查证书是否已过期。 如果提供了过期证书的哈希，工具将对应用进行处理并签名，但是应用将无法安装在设备上。<br /><br />**确保用于给封装的应用程序签名的证书在配置文件中有匹配的配置文件** - 该工具不会验证配置文件是否有对应的用于给包装的应用程序签名的证书。|
 |身份验证|设备必须设置 PIN 以使加密起作用。 在你部署了已包装应用程序的设备上，点击设备上的状态栏将要求用户用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 重新进行身份验证。 已包装应用程序中的默认策略是“重新启动时进行身份验证”。 iOS 在退出应用然后重新启动时会处理任何外部通知（例如电话呼叫）。<br /><br />对于已包装的应用，将缓存第一个登录同一发布者的任何已包装的应用的用户。 此点之后，仅缓存允许访问该应用的用户。 要重置用户，设备必须取消注册然后再重新注册。|
 
-### 有关 ADAL 的故障排除和技术说明
-
--   如果没有找到 ADAL 资源，工具将包括 ADAL 动态库。 工具将在根文件夹中搜索名为 **“ADALiOS.bundle”** 的 ADAL 库。
-
--   该工具不会在应用内搜索 ADAL 二进制文件（如果有）。 如果应用链接至过时的版本，在启用了身份验证策略后，则可能在登录过程中出现运行时错误。
-
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 将 AAD 令牌提取至 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM 资源 ID，用于进行身份验证。 但是，它不用于任何会进而验证其有效性的调用中。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 仅读取已登录用户的 UPN 来确定应用的访问权限。 AAD 令牌不用于任何未来的服务调用。
-
--   由于身份验证令牌存储在同一 Keychain 内，则所以自同一发布者的应用共享身份验证令牌。 如果你想要隔离特定应用程序，则必须对该应用使用不同的签名证书和配置文件。
-
--   如果提供了你的客户端应用程序的客户端 ID 和重定向 URI，则可以避免两次登录提示。 该客户端 ID 需要注册以访问在 AAD 仪表板中发布的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM 资源 ID。 如果不这样做，将导致应用运行时登录失败。
 
 ## 设置应用权利
 在包装应用之前，可以授予**权利**，以便为应用提供其他权限和功能，使其能够执行比一般情况下更多的操作。  **权利文件**在代码签名过程中用于指定应用内的特殊权限（例如，对共享密钥链的访问权限）。 在应用开发过程中，会在 Xcode 内启用称为**功能**的特定应用服务。 启用后，功能即反映在权利文件中。 有关权利和功能的详细信息，请参阅 iOS 开发人员库中的[添加功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。 有关支持的功能的完整列表，请参阅[支持的功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)。
@@ -293,6 +256,6 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
