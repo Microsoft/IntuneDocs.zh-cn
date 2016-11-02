@@ -3,6 +3,7 @@ title: "设置你的 PIN 或密码 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,15 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: b6fe892098e382079a6259c4fe192baee501f74a
+ms.sourcegitcommit: 7f08be661936b092cfa100b2454a3f2a3dd24746
+ms.openlocfilehash: c2480f168d5ee06a8419c68d1b90bac62c2879b1
 
 
 ---
 
 # 设置你的 PIN 或密码
 
-当使用 Intune 来访问工作或学校的数据时，你的 IT 管理员可能要求你在 Android 设备上设置 PIN 或密码。 如果你看到一条提示你设置 PIN 或密码的消息，请使用以下步骤。
+当使用 Intune 来访问工作或学校的数据时，你的 IT 管理员可能要求你在 Android 设备上设置 PIN 或密码。 可能还会看到消息，要求使 PIN 或密码更长或更复杂，使其更加安全。  
+
+可以使用以下步骤设置 PIN 或密码。
 
 1.  点击**设置** &gt; **安全** &gt; **屏幕锁定** &gt; **密码**。
 
@@ -33,7 +36,6 @@ ms.openlocfilehash: b6fe892098e382079a6259c4fe192baee501f74a
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

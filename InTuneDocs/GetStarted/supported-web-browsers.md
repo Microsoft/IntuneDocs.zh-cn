@@ -4,17 +4,17 @@ description: "Intune 支持的 Web 浏览器"
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
-ms.reviewer: jeffgilb
+ms.reviewer: camoya
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7d2852c2ae18ff09eddd99bc76a1e1800546d304
+ms.sourcegitcommit: b63b82b6eb87a90013452825a2049c2a2bc4e91d
+ms.openlocfilehash: de5ca1b5fda988f96437696ff705178b9c49814f
 
 
 ---
@@ -25,16 +25,17 @@ ms.openlocfilehash: 7d2852c2ae18ff09eddd99bc76a1e1800546d304
 
 |Intune 功能 |支持的浏览器|
 |---------|---------|
-|Intune 管理控制台     |  Internet Explorer 10 或更高版本<br /><br />Google Chrome（42 版之前的版本）<br /><br />Mozilla Firefox <br /><br />**注意：**管理控制台不支持 Microsoft Edge 和移动浏览器。                      
+|Intune 管理控制台     |  Internet Explorer 10 或更高版本<br /><br />Google Chrome（42 版之前的版本）<br /><br />Mozilla Firefox <br /><br />**注意：**管理控制台<sup>1</sup> 不支持 Microsoft Edge 浏览器和移动浏览器。                      
 |Office 365 管理门户     |所有浏览器，包括移动浏览器和托管浏览器  |
 |公司门户网站     |**在移动设备上：**使用每个受支持平台的默认 Web 浏览器   <br /><br />**在 Windows 电脑上：**使用 Internet Explorer 10 或更高版本，或 Microsoft Edge<br /><br />**在 Mac OS X 10.9 或更高版操作系统的计算机上：**使用 Apple Safari    |
 
+> [!Note] <sup>1</sup>管理控制台不支持 Microsoft Edge 浏览器和移动浏览器，因为它们不支持 [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx)。 Intune 控制台会在一段时间内脱离 Silverlight 体验；最终，所有 Intune 的移动设备和应用程序管理功能将[提供在新的 Microsoft Azure 门户中](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/)。
 
 ### 另请参阅
 [启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

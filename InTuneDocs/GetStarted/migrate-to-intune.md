@@ -3,6 +3,7 @@ title: "迁移到 Intune |Microsoft Intune"
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 317b8cc277eb8dffc1cb29739f3f78cfa3241602
-ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
+ms.sourcegitcommit: 59041e1c35d2f4b5c4d9b663494f3f02504c12f6
+ms.openlocfilehash: b115912357e298016dee4e0fa87f2ed87f5f2f60
 
 
 ---
@@ -44,7 +45,7 @@ ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 ## 在 Intune 中注册设备
 
-计划执行迁移的用户应立即在 Intune 中注册，以便重新获得或防止丢失公司资源、电子邮件和应用程序的访问权限。 如果你已配置条件访问，并且用户未在 Intune 中注册，那么当用户尝试连接到电子邮件时，他们的访问将被阻止并收到注册电子邮件。 此电子邮件将引导他们在 Intune 中注册其设备。  或者，用户可以通过 Intune 公司门户应用注册 Intune，或者通过 Windows 8.1 和 Windows 10 Mobile 的操作系统在本机上注册。 有关每个平台的注册步骤的更多指南，请参阅 [What to tell your end users about using Microsoft Intune（最终用户需要了解的有关 Microsoft Intune 使用的内容）](what-to-tell-your-end-users-about-using-microsoft-intune.md)。
+计划执行迁移的用户应立即在 Intune 中注册，以便重新获得或防止丢失公司资源、电子邮件和应用程序的访问权限。 如果你已配置条件访问，并且用户未在 Intune 中注册，那么当用户尝试连接到电子邮件时，他们的访问将被阻止并收到注册电子邮件。 此电子邮件将引导他们在 Intune 中注册其设备。  或者，用户可以通过 Intune 公司门户应用注册 Intune，或者通过 Windows 8.1 和 Windows 10 Mobile 的操作系统在本机上注册。 有关每个平台注册步骤的更多指南，请参阅[最终用户需要了解的有关 Microsoft Intune 使用的内容](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。
 
 ## 配置 Intune 的条件性访问（可选）
 
@@ -73,6 +74,6 @@ ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

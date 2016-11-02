@@ -11,6 +11,7 @@
 ### [MDM 的先决条件](prerequisites-for-enrollment.md)
 #### [iOS 和 Mac 管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android 管理](set-up-android-management-with-microsoft-intune.md)
+#### [Android for Work 管理](set-up-android-for-work.md)
 #### [Windows 设备管理 ](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 移动版和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [管理企业自有设备](manage-corporate-owned-devices.md)
@@ -34,6 +35,7 @@
 ### [使用策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS 设置](ios-policy-settings-in-microsoft-intune.md)
 #### [Android 和 Samsung KNOX 设置](android-policy-settings-in-microsoft-intune.md)
+#### [Android for Work 设置](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 和 Windows 8.1设置](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 设置](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 桌面版和移动版设置](windows-10-policy-settings-in-microsoft-intune.md)
@@ -72,6 +74,7 @@
 #### [管理 Intune 客户端电脑的许可协议](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [部署应用](deploy-apps.md)
 ### [将应用部署到设备和电脑](deploy-apps-in-microsoft-intune.md)
+### [将应用部署到 Android for Work 设备](android-for-work-apps.md)
 ### [监视应用](monitor-apps-in-microsoft-intune.md)
 ### [管理批量采购的应用](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [管理批量采购的 iOS 应用](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -80,6 +83,7 @@
 ## [配置应用](update-apps-using-microsoft-intune.md)
 ### [更新应用 ](update-apps-using-microsoft-intune.md)
 ### [iOS 应用配置策略](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Android for Work 应用配置策略](afw-app-configuration-policy.md)
 ### [iOS 移动应用预配配置文件](ios-mobile-app-provisioning-profiles.md)
 ### [管理 Internet 访问](manage-internet-access-using-managed-browser-policies.md)
 
@@ -87,12 +91,13 @@
 ## [保护应用和数据](protect-apps-and-data-with-microsoft-intune.md)
 ### [设备合规性策略](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [创建设备合规性策略](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [适用于 Android](android-compliance-policy-settings-in-microsoft-intune.md)
-#### [适用于 iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-#### [适用于 Windows 和 Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
+#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+#### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Windows 和 Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [部署设备合规性策略](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [限制对电子邮件、O365 和其它服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [基于设备合规性限制访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 #### [Exchange Online 和新 Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -101,7 +106,9 @@
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [限制电子邮件访问：示例](restrict-email-access-example-scenarios.md)
-
+### [只允许策略托管应用访问 O365 服务](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [阻止没有 ADAL 的应用](block-apps-with-no-modern-authentication.md)
 ### [限制对网络的访问 (Cisco ISE)](restrict-access-to-networks.md)
 ### [根据设备、网络和应用程序风险限制访问权限](restrict-access-based-on-device-network-app-risk.md)
 #### [设置 Lookout 设备威胁保护](set-up-your-subscription-with-lookout-mtp.md)
@@ -118,7 +125,7 @@
 #### [验证 MAM 策略](validate-mobile-application-management.md)
 #### [监视策略合规性](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-#### [结束用户体验](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 #### [MAM 策略的 Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [准备适用于 MAM 的业务线应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
@@ -133,13 +140,16 @@
 ### [停用应用 ](retire-apps-using-microsoft-intune.md)
 ### [擦除托管公司应用数据](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [要告知最终用户的信息](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+## [有关最终用户体验的资源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+### [还原托管的 iOS 设备](restore-managed-ios-devices-from-backup.md)
+### [具有 MAM 策略的 Android 应用](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [具有 MAM 策略的 iOS 应用](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # [开发和自定义应用](/intune/develop/intune-app-sdk)
 
 # [故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

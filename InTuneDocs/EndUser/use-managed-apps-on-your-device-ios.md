@@ -3,6 +3,7 @@ title: "在 iOS 设备上使用托管应用 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 178d46860774d2595f06316f84fd1940c12c025f
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 509a0fda9355cc77a2f7690771dbe086c0cc59fc
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 178d46860774d2595f06316f84fd1940c12c025f
 
 # 在 iOS 设备上使用托管应用
 
-托管应用是这样的应用，你的 IT 管理员可对其进行配置以帮助保护你在该应用中可访问的公司数据。 在 iOS 设备上的托管应用中访问公司数据时，你可能会注意到此应用与你预期的运作方式有些许不同。 例如，你可能无法复制和粘贴受保护的公司数据，或者你可能无法将该数据保存到特定位置。
+IT 管理员可对托管应用进行配置，以帮助保护在该应用中可访问的公司数据。 在 iOS 设备上的托管应用中访问公司数据时，可能会注意到此应用与预期的运作方式有些许不同。 例如，你可能无法复制和粘贴受保护的公司数据，或者你可能无法将该数据保存到特定位置。
 
 不同的托管应用也可以在设备上协同工作，使你能在处理日常任务的同时始终保护公司数据。 例如，如果你在一托管应用中打开了一份公司文件，但是需打开另一托管应用才能查看该文件，则系统会自动打开后者以允许你查看该文件。 如果所需应用不可用，则某些特定操作（如打开文档或从托管文档中访问 Web 链接）可能不可用。
 
@@ -39,7 +40,7 @@ ms.openlocfilehash: 178d46860774d2595f06316f84fd1940c12c025f
 -   从 App Store 安装应用，然后使用由 Intune 管理的公司用户帐户登录该应用。
 
 ### IT 管理员可以管理应用中的哪些内容？
-以下是 IT 管理员可管理的应用中的一些选项示例，它们可影响你与你设备上公司数据的交互：
+以下是 IT 管理员可在应用中管理的一些选项示例，它们可影响用户在其设备上与公司数据的交互：
 
 -   对特定网站的访问
 
@@ -64,8 +65,6 @@ ms.openlocfilehash: 178d46860774d2595f06316f84fd1940c12c025f
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -2,7 +2,8 @@
 title: "找到的现有公司电子邮件帐户 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,20 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: eebc35277aedabb2575b753afbaf9ea05b1555e8
+ms.openlocfilehash: 6b7123dc4ec0b7a73e6e3151ca9c66a65354f9de
 
 
 ---
 
-# 找到的现有公司电子邮件帐户
-您已经有公司电子邮件帐户。 若要继续连接到您公司的电子邮件，您将需要执行以下步骤，若要启用您的 IT 管理人员正确设置和管理您的帐户：
+# <a name="existing-company-email-account-found"></a>找到的现有公司电子邮件帐户
+
+您已经有公司电子邮件帐户。 若要继续连接到公司电子邮件帐户，请执行以下步骤以使 IT 管理员可以正确设置和管理你的帐户：
 
 1.  在 **设置** 您在设备上，删除你先前设置为您公司的电子邮件的连接。
 
     例如，在 iOS 设备上，点击**设置** &gt; **邮件、联系人、日历**。 选择您的工作电子邮件帐户，然后单击 **删除**。
 
-2.  打开你的设备上的公司门户应用，然后点击“**检查法规遵从性**”。
+2.  打开设备上的公司门户应用，然后点击“检查合规性”。
 
 3.  等待新的电子邮件设置自动应用到您的设备很短时间。
 
@@ -35,6 +37,6 @@ ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

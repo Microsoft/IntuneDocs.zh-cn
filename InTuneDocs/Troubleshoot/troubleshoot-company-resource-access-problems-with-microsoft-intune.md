@@ -2,8 +2,8 @@
 title: "公司资源访问权限问题疑难解答 | Microsoft Intune"
 description: "本主题中的错误和状态代码可帮助你解决资源访问权限问题。"
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 ---
 
-# 排查 Microsoft Intune 中的公司资源访问权限问题
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>排查 Microsoft Intune 中的公司资源访问权限问题
 当 Microsoft Intune 操作返回错误代码时，使用本主题中的错误和状态代码可帮助你解决疑难问题。
 
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
-## MDM 托管的 Windows 设备的状态代码
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM 托管的 Windows 设备的状态代码
 
 |状态代码|错误消息|要执行的操作|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP 许可证安装失败||
 |无状态 (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|状态当前未知。|
 
-## 公司资源访问（常见错误）
+## <a name="company-resource-access-common-errors"></a>公司资源访问（常见错误）
 
 |状态代码|十六进制错误代码|错误消息|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 |-2016341111|0x87D11389|iOS 设备返回了意外的空闲状态|
 |-2016341112|0x87D11388|iOS 设备当前正忙|
 
-## iOS 设备返回的错误
+## <a name="errors-returned-by-ios-devices"></a>iOS 设备返回的错误
 
 |状态代码|十六进制错误代码|错误消息|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 |-2016335111|0x87D12AF9|1001:不受支持的配置文件版本|
 |-2016335112|0x87D12AF8|1000:配置文件格式不正确|
 
-## OMA 响应代码
+## <a name="oma-response-codes"></a>OMA 响应代码
 
 |状态代码|十六进制错误代码|错误消息|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 |-2016345912|0x87D100C8|SyncML 命令成功完成。|
 |-2016346011|0x87D10065|指定的 SyncML 命令正在执行，但尚未完成。|
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 

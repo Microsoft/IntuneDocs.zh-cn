@@ -3,6 +3,7 @@ title: "从 Intune 取消注册 iOS 设备 | Microsoft Intune"
 description: "介绍如何从 Intune 取消注册 iOS 设备"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: acd83d6cac946c7cc3c08bc179bf88dcc7475a69
 
 
 ---
@@ -23,20 +24,20 @@ ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
 
 # 从 Intune 取消注册 iOS 设备
 
-当从 Intune 取消注册你的 iOS 设备时，该设备将无法再访问公司资源并不能再通过 Intune 进行托管。
+从 Intune 取消注册 iOS 设备后，该设备将无法再访问公司资源并且无法再通过 Intune 进行托管。
 
 若要从 Intune 取消注册你的设备，请使用以下步骤，或观看此视频：
 
 <iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
 
 
-1.  在公司门户应用中“我的设备”下，选择要取消注册的设备。
+1.  在公司门户应用中的“我的设备”下，选择要取消注册的设备。
 
 2.  点击**删除**&gt;**删除**。
 
 从 Intune 取消注册设备后，将发生以下情况：
 
--   设备将不再出现在公司门户中
+-   设备将不再出现在公司门户中。
 
 -   再也不能从公司门户安装应用。
 
@@ -52,11 +53,10 @@ ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
 
 -   仅针对电子邮件配置的设备将不再出现在公司门户应用或网站中。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

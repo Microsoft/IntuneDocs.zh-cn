@@ -3,6 +3,7 @@ title: "创建和部署 MAM 策略 | Microsoft Intune"
 description: "使用本主题中的分步说明来创建和部署移动应用管理策略。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 >[!IMPORTANT]
 > 如果你使用 Intune 与配置管理器来管理 iOS 和 Android 设备，则该策略将仅应用于直接位于所选组中的用户。  所选组中嵌套子组的成员将不受影响。
 
-最终用户可以从 App store 或 Google Play 下载应用。 有关 MAM 如何保护设备上的公司数据的详细演练，请参阅[启用 MAM 的应用的最终用户体验](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)主题。
-
+最终用户可以从 App store 或 Google Play 下载应用。 有关详情，请参阅：
+* [Android 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  更改现有策略
 你可以编辑现有策略并将其应用于目标用户。 但是，当你更改现有策略时，已登录到应用的用户在 8 小时内将看不到更改。
 
@@ -165,10 +167,11 @@ ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 [监视合规性和用户状态](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### 另请参阅
-[启用 MAM 的应用的最终用户体验](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [Android 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

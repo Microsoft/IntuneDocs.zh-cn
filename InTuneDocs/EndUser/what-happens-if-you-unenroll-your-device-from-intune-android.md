@@ -3,6 +3,7 @@ title: "从 Intune 取消注册 Android 设备会发生什么情况？ | Microso
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 从 Intune 取消注册 Android 设备时：
 
--   取消注册设备意味着 IT 管理员不再管理此设备。
+-   IT 管理员不能够再管理设备。
 
--   你将无法访问公司数据和资源。
+-   你将无法再访问公司数据和资源。
 
--   设备将不再出现在公司门户中。
+-   设备将不再显示在公司门户中。
 
 -   再也不能从公司门户安装应用。
 
--   将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
+-   将不再应用当添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
 
 如果将设备设置为仅接收公司电子邮件，然后取消注册设备，则你的设备将不再显示在公司门户中。
 
@@ -43,7 +44,6 @@ ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 
