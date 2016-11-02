@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 381216889519b45f989db90ac5e12b8e3adcadf1
-ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
+ms.sourcegitcommit: 92e40930c0ccbeb3d98bef43b115fd92f24beaef
+ms.openlocfilehash: 93a29266ad9d18f444f0cc0c5aadf9b414eedfa2
 
 
 ---
@@ -24,19 +24,23 @@ ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
 
 |步骤|详细信息|  
 |-----------|-------------|  
-|**步骤 1：** [设备注册依赖关系](#step-1-device-enrollment-dependencies)|确保配置自定义域名并将网络通信准备就绪|  
-|**步骤 2：**[设置设备管理机构](#step-2-set-mobile-device-management-authority)|移动设备管理机构定义分配给设备的服务|
-|**步骤 3：**[配置 Intune 公司门户](#step-3-configure-the-intune-company-portal)|配置公司门户应用中面向用户的设置|  
-|**步骤 4：**[分配 Intune 用户许可证](#step-4-assign-intune-user-licenses)|将 Intune 许可证分配给用户，以便他们能够注册设备|
-|**步骤 5：**[设置设备管理](#step-5-set-up-device-management)|为 iOS 和 Windows 管理启用特定平台的设置。 Android 设备不需要其他配置。|
+|**步骤 1：**[启用连接](#step-1-enable-connections)|确保配置自定义域名并将网络通信准备就绪|  
+|**步骤 2：**[设置 MDM 机构](#step-2-set-mdm-authority)|移动设备管理机构定义分配给设备的服务|
+|**步骤 3：**[配置公司门户](#step-3-configure-company-portal)|配置公司门户应用中面向用户的设置|  
+|**步骤 4：**[分配用户许可证](#step-4-assign-user-licenses)|将 Intune 许可证分配给用户，以便他们能够注册设备|
+|**步骤 5：**[启用注册](#step-5-enable-enrollment)|为 iOS 和 Windows 管理启用特定平台的设置。 Android 设备不需要其他配置。|
 
-## 步骤 1：设备注册依赖关系
+想要使用 Configuration Manager 查找 Intune？
+> [!div class="button"]
+[查看 SCCM 文档 >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+
+## 步骤 1：启用连接
 
 启用移动设备注册前，请确保已完成以下步骤：
 - [查看所需网络 URL 和端口](../get-started/network-infrastructure-requirements-for-microsoft-intune)
 - [添加并验证域名](../get-started/domain-names-for-microsoft-intune)
 
-## 步骤 2：设置移动设备管理机构
+## 步骤 2：设置 MDM 机构
 MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。 如果将 Configuration Manager 设置为管理机构，则没有其他服务可以用于移动设备管理。
 
 >[!IMPORTANT]
@@ -52,7 +56,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 3.  Intune 要求确认你希望使用 Intune 作为 MDM 机构。 勾选复选框，然后选择“**是**”以使用 Microsoft Intune 管理移动设备。
 
-## 步骤 3：配置 Intune 公司门户
+## 步骤 3：配置公司门户
 
 在 Intune 公司门户中，用户可以访问公司数据和执行常见任务，比如注册设备、安装应用，以及查找信息以从 IT 部门获得帮助。
 
@@ -98,7 +102,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 保存更改之后，你可以使用管理控制台的“**公司门户**”页面底部提供的链接来查看公司门户网站。 无法更改这些链接。 当用户登录时，这些链接将在公司门户中显示你的订阅。
 
-## 步骤 4：分配 Intune 用户许可证
+## 步骤 4：分配用户许可证
 
 使用 **Office 365 管理门户**手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure Active Directory (Azure AD) 的帐户。 可[将本地用户同步到 Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md)。
 
@@ -115,7 +119,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 3. 运行 [Azure AD Connect 同步](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/)，以将本地用户与 Azure AD 集成。
 4. 成功同步用户帐户信息后，你可以使用 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)分配 Microsoft Intune 许可证。
 
-## 步骤 5：设置设备管理
+## 步骤 5：启用注册
 设置 MDM 机构之后，需要为组织要支持的操作系统设置设备管理。 设置设备管理所需的步骤因操作系统而异。 例如，Android OS 不需要你在 Intune 管理控制台中执行任何操作。 另一方面，Windows 和 iOS 需要设备与 Intune 之间存在信任关系才能允许进行管理。
 
 为下列平台设置管理：
@@ -130,6 +134,6 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

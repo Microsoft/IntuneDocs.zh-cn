@@ -3,8 +3,9 @@ title: "使用电子邮件配置文件访问公司电子邮件 | Microsoft Intun
 description: "电子邮件配置文件设置可用于配置移动设备上特定电子邮件客户端的电子邮件访问设置。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: befe1b3446770509c83a360c854993d4aaada09d
-ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
+ms.sourcegitcommit: 9f8767f191df76e8f166767c51fff357b251bbd4
+ms.openlocfilehash: f736c408f5a4ece65eeef35fb8d1be9a9b29c1b1
 
 
 ---
@@ -29,14 +30,14 @@ ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
 IT 管理员或用户还可以选择安装备用电子邮件客户端（例如，Microsoft Outlook for Android 或 iOS）。 这些电子邮件客户端可能不支持电子邮件配置文件，并且不能使用 Intune 电子邮件配置文件进行设置。  
 
 你可以使用电子邮件配置文件配置下列设备类型上的本机电子邮件客户端：
--   Windows Phone 8 及更高版本
+-   Windows Phone 8.1 及更高版本
 -   Windows 10 桌面版、Windows 10 移动版及更高版本
 -   iOS 8.0 及更高版本
 -   Samsung KNOX 标准版（4.0 及更高版本）
 -   Android for Work
 
 >[!NOTE]
->Intune 提供两个 Android for Work 电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，支持与 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的配置文件 
+>Intune 提供两个 Android for Work 电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，支持与 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的配置文件。
 
 除了在设备上设置电子邮件帐户外，还可以设置要同步的电子邮件数量，并且根据设备类型设置要同步的内容类型。
 
@@ -52,11 +53,11 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
 >由于 Samsung KNOX 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。
 
->**Android for Work**：Intune 配置文件只应用于设备的工作配置文件，不会影响设备用户配置文件上的电子邮件配置文件。
+>**Android for Work**：Intune 配置文件只应用于设备的工作配置文件中的特定电子邮件应用，不会影响设备用户配置文件上的电子邮件配置。
 
 
 ## 保护电子邮件配置文件
-可以使用以下两种方法之一来保护电子邮件配置文件：证书或密码。
+可以使用证书或密码保护电子邮件配置文件。
 
 ### 证书
 当你创建电子邮件配置文件时，你可以选择之前在 Intune 中创建的证书配置文件。 该配置文件又称为身份证书，用于根据受信任的证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会部署到对电子邮件连接进行身份验证的计算机（通常是本机邮件服务器）。
@@ -78,10 +79,10 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
     -   **电子邮件配置文件（iOS 8.0 及更高版本）**
 
-    -   **电子邮件配置文件（Windows Phone 8 及更高版本）**
+    -   **电子邮件配置文件（Windows Phone 8.1 及更高版本）**
 
     -   **电子邮件配置文件（Windows 10 桌面版和移动版及更高版本）**
-    
+
     -   **电子邮件配置文件 (Android for Work - Gmail)**
 
     -   **电子邮件配置文件 (Android for Work - Nine Work)**
@@ -107,8 +108,10 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
     |**使用 SSL**|发送电子邮件、接收电子邮件以及与 Exchange Server 通信时，请使用安全套接字层 (SSL) 通信。 对于运行 Samsung KNOX 4.0 或更高版本的设备，必须导出 Exchange Server 的 SSL 证书并将其部署为 Intune 中的 Android 可信证书配置文件。 如果此证书通过其他方式安装在 Exchange Server 上，则 Intune 不支持对其进行访问。|
     |**要同步的内容类型**（所有平台，Android for Work Gmail 除外）|请选择想要同步到设备的内容类型。|
     |**允许从第三方应用程序发送电子邮件**（仅针对 iOS）|允许用户选择此配置文件作为用于发送电子邮件的默认帐户，并允许第三方应用程序在本机电子邮件应用中打开电子邮件，例如，将文件附加到电子邮件。|
-    > [!IMPORTANT]
-    > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
+
+> [!IMPORTANT]
+>
+> 如果你部署了一个电子邮件配置文件，之后想要更改“主机”或“电子邮件地址”的值，则必须删除现有的电子邮件配置文件并创建一个具有所需值的新配置文件。
 
 4.  完成后，请单击“保存策略” **Save Policy**。
 
@@ -127,10 +130,11 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 “策略”  工作区“概述”  页的状态摘要和警报可识别需要关注的策略问题。 此外，状态摘要会显示在“仪表板”工作区中。
 
 > [!NOTE]
-> 如果想要从设备中删除电子邮件配置文件，则请编辑部署并删除包含该设备的任何组。
+> - 对于 Android for Work，请确保除了部署相应的电子邮件配置文件外，还部署了 Gmail 或 Nine Work 应用。
+> - 如果想要从设备中删除电子邮件配置文件，则请编辑部署并删除包含该设备的任何组。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

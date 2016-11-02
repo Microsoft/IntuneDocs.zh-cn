@@ -1,8 +1,9 @@
 ---
 title: "使用 SDK 启用针对 MAM 的应用 | Microsoft Intune"
-description: 
+description: "本主题简要概述了应使用 Intune SDK 的原因。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec08a92ff38f55ca04e9c1822c041e8bd0273fd
-ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
+ms.sourcegitcommit: 37e12d1d78f40acb616ad5762eeb5f034ecc0081
+ms.openlocfilehash: 57b7cefce3715568b77a8c16a857a16434d72821
 
 
 ---
 
 # 使用 SDK 启用针对移动应用程序管理的应用
-使用 Microsoft Intune App SDK 启用 Intune，以管理 iOS 或 Android 移动应用的某些功能。 启用应用后，即可向应用部署策略。 这些策略使用这些功能来保护你的公司数据。 可使用 SDK 实现的保护功能类型的示例包括：
+使用 Microsoft Intune App SDK 启用 Intune，以管理 iOS 或 Android 应用的某些功能。 启用应用后，即可向应用部署策略。 这些策略使用这些功能来保护你的公司数据。 可使用 SDK 实现的保护功能类型的示例包括：
 
 -   防止用户将公司文档复制到云中
 
@@ -39,6 +40,6 @@ ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

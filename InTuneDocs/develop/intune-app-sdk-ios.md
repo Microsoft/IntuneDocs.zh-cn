@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 975708b5204ab83108a9174083bb87dfeb04a063
-ms.openlocfilehash: 52ad28686fa279a7ec251d073283c3554d1c81fc
+ms.sourcegitcommit: 6b998728b3db60d10cadbcd34b5412fa76cb586f
+ms.openlocfilehash: ddc47ef5846bf448cf0de1e57b527e8ec4c562cc
 
 
 ---
@@ -415,6 +415,32 @@ Intune App SDK 现提供 iOS 应用从 Intune 接收 MAM 策略的功能，而�
  - 如果返回 true，则应用程序将负责处理重启。   
  - 如果返回 false，则 SDK 会在此方法返回后重启该应用程序。  SDK 会立即弹出一个对话框，告诉用户必须重启应用程序。 
 
+#实施“另存为”控件
+
+通过 Intune，IT 管理员可选择托管应用保存数据的存储位置。 应用可使用 **isSaveToAllowedForLocation** API 为允许的存储位置查询 Intune App SDK。
+
+将托管数据保存到云存储或本地位置前，应用必须使用 **isSaveToAllowedForLocation** API 进行检查，以了解 IT 管理员是否允许数据保存在此处。
+
+使用 **isSaveToAllowedForLocation** API 时，应用必须传入用于存储位置的 UPN（若可用）。
+
+##支持的位置
+
+**isSaveToAllowedForLocation** API 提供用于检查以下位置的常数：
+
+* IntuneMAMSaveLocationOther 
+* IntuneMAMSaveLocationOneDriveForBusiness 
+* IntuneMAMSaveLocationSharePoint 
+* IntuneMAMSaveLocationBox 
+* IntuneMAMSaveLocationDropbox 
+* IntuneMAMSaveLocationGoogleDrive 
+* IntuneMAMSaveLocationLocalDrive 
+
+应用应使用 **isSaveToAllowedForLocation** API 中的常数来检查数据是否可保存到被视为“已托管”的位置（例如 OneDrive for Business）或“个人”。 此外，无法确定位置为“已托管”或“个人”时，应使用 API。 
+
+如果已知位置为“个人”，应用应使用 **IntuneMAMSaveLocationOther** 值。 
+
+如果应用将数据保存到本地设备上的任何位置，应使用 **IntuneMAMSaveLocationLocalDrive** 常数。
+
 
 
 # 配置 Intune App SDK 设置
@@ -497,7 +523,7 @@ MAMTelemetryUsePPE | 布尔值 | 指定 SDK 是否会将数据发送到其预生
 标识只是帐户的用户名（例如 user@contoso.com）。 开发人员可以在以下不同级别上设置应用的标识： 
 
 * **进程标识**：进程标识用于设置进程级标识，并且主要用于单一标识应用程序。 此标识会影响所有操作、文件和 UI。
-* **UI 标识**：确定应用于主线程上 UI 操作中的策略类型，例如剪切/复制/粘贴、PIN、身份验证、数据共享等。UI 标识不会影响文件操作（如加密、备份等）。 
+* **UI 标识**：确定应用于主线程上 UI 操作中的策略类型，例如剪切/复制/粘贴、PIN、身份验证、数据共享等。UI 标识不会影响文件操作（如加密、备份等）。
 * **线程标识**：线程标识会影响应用于当前线程上的策略类型。 此标识会影响所有操作、文件和 UI。
 
 不论用户是否为托管，应用都会负责设置合适的标识。
@@ -523,9 +549,12 @@ SDK 跟踪本地文件所有者身份，并相应地应用策略。 文件所有
  
 如果应用包含共享扩展，则可以使用 `IntuneMAMDataProtectionManager` 中的 `protectionInfoForItemProvider` 方法检索要共享项的所有者。 如果共享项为文件，则 SDK 会处理设置文件所有者。 如果共享项为数据，且该数据被保存到文件，则应用会设置文件所有者，并会在在 UI 中显示此数据之前调用 `setUIPolicyIdentity` API（如下所述）。
  
-#启用多身份标识
+##开启多身份
  
-默认情况下，应用会被当作单身份标识，并且进程标识被设置为由 SDK 注册的用户。 若要启用多身份标识支持，应将一个具有名称“MultiIdentity”且值为“是”的布尔设置添加到应用的 Info.plist 文件中的 IntuneMAMSettings 字典。 启用多身份标识后，进程标识、UI 标识和线程标识将被设置为 nil，并且应用会对其进行适当调整。
+默认认为应用是单身份，SDK 将进程标志设置为已注册的用户。 若要启用多身份标识支持，必需将名为 `MultiIdentity`且值为“YES”的布尔量设置添加到应用的 Info.plist 文件中的 **IntuneMAMSettings** 字典。 
+
+> [!NOTE]
+> 启用多身份后，进程标识、UI 标识和线程标识将被设置为 nil。 应用有责任进行适当设置。
 
  
 ##切换标识
@@ -628,6 +657,6 @@ Intune App SDK 的静态库和框架构建均为通用二进制文件，这意�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

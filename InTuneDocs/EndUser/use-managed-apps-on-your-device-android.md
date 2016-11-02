@@ -3,6 +3,7 @@ title: "在 Android 设备上使用托管应用 | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/28/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
 
 # 在 Android 设备上使用托管应用
 
-托管应用是这样的应用，你的 IT 管理员可对其进行配置以帮助保护你在该应用中可访问的公司数据。 在 Android 设备的托管应用中访问公司数据时，你可能会注意到此应用与你预期的运作方式有些许不同。 例如，你可能无法复制和粘贴受保护的公司数据，或者你可能无法将该数据保存到特定位置。
+IT 管理员可对托管应用进行配置，以帮助保护在该应用中可访问的公司数据。 在 Android 设备上的托管应用中访问公司数据时，可能会注意到此应用与预期的运作方式有些许不同。 例如，你可能无法复制和粘贴受保护的公司数据，或者你可能无法将该数据保存到特定位置。
 
 不同的托管应用也可以在设备上协同工作，使你能在处理日常任务的同时始终保护公司数据。 例如，如果你在一托管应用中打开了一份公司文件，但是需打开另一托管应用才能查看该文件，则系统会自动打开后者以允许你查看该文件。 如果所需应用不可用，则某些特定操作（如打开文档或从托管文档中访问 Web 链接）可能不可用。
 
@@ -39,7 +40,7 @@ ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
 -   从 Play Store 安装应用，然后使用由 Intune 管理的公司用户帐户登录该应用。
 
 ## IT 管理员可以管理应用中的哪些内容？
-以下是 IT 管理员可管理的应用中的一些选项示例，它们可影响你与你设备上公司数据的交互：
+以下是 IT 管理员可在应用中管理的一些选项示例，它们可影响用户在其设备上与公司数据的交互：
 
 -   对特定网站的访问
 
@@ -69,14 +70,12 @@ IT 部门可能管理的常见应用程序有：
 
 -   Intune AV 播放器
 
--   Microsoft Word、Excel、PowerPoint
+-   Microsoft Word、Excel 和 PowerPoint
 
 有关设备上的托管应用的详细信息，请联系你的 IT 部门。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

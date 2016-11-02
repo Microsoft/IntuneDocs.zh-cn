@@ -3,8 +3,9 @@ title: "系统提示在 Android 设备上安装 Lookout for Work | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,15 +13,17 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
-ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
 
 # 系统会提示你安装 Lookout for Work
 
-在可访问工作之前，IT 管理员需要你安装 Lookout for Work 应用，该应用会查找潜在安全威胁来帮助保护你的设备。
+在可访问工作之前，IT 管理员要求你安装 Lookout for Work 应用，该应用会查找潜在安全威胁来帮助保护你的设备。
+
+如果遇到安装问题，请尝试本主题末尾的疑难解答步骤。
 
 
 **需要执行的操作：**
@@ -51,13 +54,13 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     ![点击“接受”以授予 Lookout for Work 读取你的个人资料的权限](./media/lookout-needs-permission-to-view-profile-android.png)
 
-    屏幕将显示“Lookout for Work 正在连接到 Lookout 安全云”。
+    屏幕将显示 Lookout for Work 正在连接到 Lookout 安全云。
 
 7. 查看关于 Lookout 如何保护设备的项，然后点击“确定”。
 
     ![查看 Lookout for Work 如何保护设备](./media/lookout-how-it-protects-your-device-android.png)
 
-    当看到以下屏幕时，意味着 Lookout 当前已安装完毕且处于连接状态。
+    看到以下屏幕时，Lookout 当前已安装完毕且处于连接状态。
 
     ![现已连接到 Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
@@ -71,13 +74,14 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     如果 Lookout for Work 在设备上找到安全威胁，那么你将看到有关如何解决此问题的说明。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+**安装不成功**
+
+有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试从 Play Store [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 手动安装 Lookout for Work 
+
+仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
