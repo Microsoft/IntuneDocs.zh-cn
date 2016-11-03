@@ -2,8 +2,8 @@
 title: "使用 Azure AD 进行多重身份验证 | Microsoft Intune"
 description: "如何在 Azure AD 中要求对设备注册进行多重身份验证。"
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -19,7 +19,7 @@ ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 ---
 
-# Microsoft Intune 的多重身份验证
+# <a name="multifactor-authentication-for-microsoft-intune"></a>Microsoft Intune 的多重身份验证
 
 Intune 集成 Azure AD 多重身份验证 (MFA) 用于设备注册，从而帮助你保护公司资源的安全。 除用户名和密码外，MFA 需要身份验证因素，例如文本身份验证。 在 iOS、Android、Windows 8.1 或更高版本、或 Windows Phone 8.1 或更高版本的设备中均支持身份验证。
 
@@ -27,7 +27,7 @@ Intune 集成 Azure AD 多重身份验证 (MFA) 用于设备注册，从而帮�
 >
 > 在较旧版本的配置管理器（早于版本 1610 的版本）中，你仍可以在配置管理器管理员控制台中看到 MFA 设置。 请勿尝试在配置管理器管理员控制台中配置 MFA，因为此操作无法生效。 按照本主题所述配置 MFA。
 
-### 将 Intune 配置为要求对设备注册进行多重身份验证
+### <a name="configuring-intune-to-require-multifactor-authentication-at-device-enrollment"></a>将 Intune 配置为要求对设备注册进行多重身份验证
 若要要求对设备注册执行 MFA，请按照以下步骤操作：
 
 1. 使用管理员凭据登录到 [Microsoft Azure 门户](https://manage.windowsazure.com)。
