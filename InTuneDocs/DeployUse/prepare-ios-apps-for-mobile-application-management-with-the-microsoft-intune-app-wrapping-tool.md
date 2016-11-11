@@ -3,6 +3,7 @@ title: "应用包装工具的包装 iOS 应用 | Microsoft Intune"
 description: "使用本题中提供的信息以了解不修改应用代码本身即可包装你的 iOS 应用的方法。 准备应用以便应用移动应用管理策略。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c74ed8a157b694db003bdb09ee7a60f2d201550
-ms.openlocfilehash: 07cbb950cf35c5dd13d0f58d132ad05d6b510b30
+ms.sourcegitcommit: c67a5042fd177a4c5bd897092e84281db0977f5e
+ms.openlocfilehash: 2c187b61b8fe25b2870d0cbc62f8352494583fc2
 
 
 ---
@@ -22,82 +23,98 @@ ms.openlocfilehash: 07cbb950cf35c5dd13d0f58d132ad05d6b510b30
 # 使用 Intune 应用包装工具为移动应用程序管理准备 iOS 应用
 使用**适用于 iOS 的 Microsoft Intune 应用包装工具**修改内部 iOS 应用的行为，方法是限制应用的功能，而无需更改应用自身的代码。
 
-该工具是在应用周围创建“包装程序”的 Mac OS 命令行应用程序。 处理应用后，可以使用你配置的[移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)来更改应用的功能。
+该工具是在应用周围创建“包装程序”的 Mac OS 命令行应用程序。 处理应用后，可以使用配置的 Intune [移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)更改应用的功能。
 
 若要下载该工具，请参阅[适用于 iOS 的 Microsoft Intune 应用包装工具](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)。
 
->[!IMPORTANT]
->公共预览中此版本的应用包装工具可用（支持未在 Intune 上注册的设备）。 若希望参与公共预览，可从 iOS 的[此 github 页面](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview)下载此工具。
 
->该方案在[保护未在 Intune 中注册的设备上的 LOB 应用](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)主题中有所描述。
 
-## 步骤 1：满足使用应用包装工具的先决条件
+## 步骤 1。 满足使用应用包装工具的先决条件
 请阅读[此博客文章](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)了解有关先决条件以及如何对其进行设置的详细信息。
 
 |要求|更多信息|
 |---------------|--------------------------------|
-|支持的操作系统和工具集|你必须在运行 OS X 10.8.5 或更高版本的 Mac 计算机上运行应用包装工具，计算机还要安装 XCode 工具集 5 或更高版本。|
+|支持的操作系统和工具集|必须在运行 OS X 10.8.5 或更高版本的 macOS 计算机上运行应用包装工具，计算机还要安装 XCode 工具集 5 或更高版本。|
 |签名证书和预配配置文件|你必须有 Apple 签名证书和预配配置文件。 请参阅 [Apple 开发人员文档](https://developer.apple.com/)。|
 |使用应用包装工具处理应用|应用必须由你公司或独立软件供应商 (ISV) 开发并签名。 你无法使用该工具处理 Apple Store 中的应用。 应用必须针对 iOS 8.0 或更高版本编写。 应用还必须是地址无关可执行文件 (PIE) 格式。 有关 PIE 格式的更多信息，请参阅 Apple 开发人员文档。 最后，应用的扩展名必须是 **.app** 或 **.ipa** 格式。|
 |包装工具无法处理的应用|加密应用、未签名应用和带有扩展文件属性的应用。|
 |设置应用权利|在包装应用之前，必须设置权利，以便为应用提供除平常所授权限和功能以外的其他权限和功能。 有关说明，请参阅[设置应用权利](#setting-app-entitlements)。|
 
-## 步骤 2：安装应用包装工具
+## 步骤 2。 安装应用包装工具
 
-1.  从 [Microsoft Github 页面](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)的“用于 iOS 的 Microsoft Intune 应用包装工具”页，将应用包装工具的文件下载到 Mac 计算机。
+1.  从 [托管于 GitHub 上](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)**适用于 iOS 的 Microsoft Intune 应用包装工具**存储库中，本地下载应用包装工具文件到 Mac 操作系统计算机。
 
-2.  请务必阅读解释“最终用户许可证协议”的 license.txt 文件。
-3.  将文件本地保存到 Mac 计算机。
+2.  双击安装文件 **Microsoft Intune App Wrapping Tool for iOS.dmg**。 将出现“最终用户许可协议 (EULA)”窗口。 仔细阅读该文档。
 
-    你现已运行应用包装工具。
+3. 选择“同意”接受 EULA，这会将包装载到计算机。
 
-## 步骤 3：运行应用包装工具
-* 在 Mac 计算机上，打开终端窗口并导航到你保存文件的文件夹。 可执行工具名为 **IntuneMAMPackager**，位于 IntuneMAMPackager/Contents/MacOS。 需要如下所诉运行命令：
-```
-    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
-```
+4.  打开 **IntuneMAMPackager** 包，并将文件保存到 macOS 计算机上的本地文件夹中。 你现已运行应用包装工具。
+
+## 步骤 3. 运行应用包装工具
+* 在 macOS 计算机上，打开终端窗口并导航到保存应用包装工具文件的文件夹。 可执行工具名为 **IntuneMAMPackager**，位于 **IntuneMAMPackager/Contents/MacOS**。 需要如下所诉运行命令：
+
+    ```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+
+    ```
+
     > [!NOTE]
-    > Some parameters are optional as shown in the table below.
+    > 下表显示的某些参数为可选。
 
-    **Example:** The following example command runs the app wrapping tool on an app named **MyApp.ipa**. A provisioning profile and SHA-1 hash are specified. The processed app is created and stored in the **/users/myadmin/Documents** on the Mac computer.
+    **示例：** 以下示例命令在名为 **MyApp.ipa**的应用上运行应用包装工具。 指定配置文件和 SHA-1 哈希。 创建已处理的应用，名为 **MyApp_Wrapped.ipa**，存储在用户的桌面文件夹上。
 
     ```
-    /users/myadmin/Downloads/IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager -i /users/myadmin/Downloads/MyApp.ipa -o /users/myadmin/Documents/MyApp_Wrapped.ipa -p /users/myadmin/Downloads/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
     ```
-    You can use the following command line properties with the app wrapping tool:
+    你可以使用应用包装工具的以下命令行属性：
 
-|属性|更多信息|
+    |属性|如何使用它|
   |------------|--------------------|
-  |**-h**|显示应用包装工具可用的命令行属性。|
-  |**-i**|指定输入应用的路径和文件名。|
-  |**-o**|指定保存处理后的应用的路径。|
-  |**-p**|指定 iOS 应用的配置文件的路径。|
-  |**-c**|指定签名证书的 SHA1 哈希。|
-  |**-v**|将详细消息输出到控制台（可选）。|
-  |-f |可选） <Path to a plist file specifying arguments>  |
-  |-b|（可选）如果希望已包装应用与输入应用的绑定版本相同，则不要指定此标记的参数。 如果希望已包装的应用具有自定义 CFBundleVersion，使用“-b<custom bundle version>”。 我们建议按重要组件的最小单元递增本机应用的 CFBundleVersion，例如 1.0.0 -> 1.0.1 |
+  |**-i**|`<Path of the input native iOS application file>`。 文件必须以 .app 或 .ipa 结尾。 |
+  |**-o**|`<Path of the wrapped output application>` |
+  |**-p**|`<Path of your provisioning profile for iOS apps>`|
+  |**-c**|`<SHA1 hash of the signing certificate>`|
+    |-h|在应用包装工具可用的命令行属性上显示详细的使用情况信息。|
+  |-v|（可选，但很有帮助）将详细信息输出到控制台。|
+  |-e | （可选）使用此标志可使应用包装工具在处理应用的过程中删除缺失的权利。 请参阅“设置应用权利”部分了解更多详细信息。|
+  |-xe| （可选）打印应用中的 iOS 扩展，以及使用这些扩展需要哪些权利的相关信息。 请参阅“设置应用权利”部分了解更多详细信息。 |
+  |-x| （可选）`<An array of paths to extension provisioning profiles>`。 如果应用需要扩展预配配置文件，使用此项。|
+  |-f |（可选）`<Path to a plist file specifying arguments.>`如果选择使用 plist 模板指定其余 IntuneMAMPackager 属性（-i、-o、-p 等），使用 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 前的此标志。请参阅“使用 plist 输入参数”部分了解更多详细信息。 |
+  |-b|（可选）如果希望已包装的输出应用与输入应用的绑定版本相同，使用不带参数的 -b（不推荐）。 <br/><br/> 如果希望已包装的应用具有自定义 CFBundleVersion，使用 `-b <custom bundle version>`。 如果选择指定自定义 CFBundleVersion，建议以最低有效组件递增本机应用的 CFBundleVersion，例如 1.0.0 -> 1.0.1. |
 
->[!IMPORTANT]
->仅公共预览版应用包装工具支持 -f 和 -b 标记，该工具支持未在 Intune 上注册的设备。
 
+###使用 plist 输入参数
+一种运行应用包装工具的简单方法是将所有命令参数置于 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 文件中。 Plist 是一种类似于 XML 的文件格式，可使用它通过窗体界面输入命令行参数。
 
-一种运行应用包装工具的方法是将所有命令参数置于 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 文件中。 Plist 是一种类似于 XML 的文件格式，可帮助用户将命令行参数输入到键值界面中。
+在 **IntuneMAMPackager/Contents/MacOS** 文件夹中，使用文本编辑器或 Xcode打开 `Parameters.plist`，一个空白 plist 模板。 为以下项输入参数：
 
-使用文本编辑器或 Xcode 打开一个空白 plist 模板，即 Parameters.plist。
-为输入路径、输出路径、预配配置文件路径、SHA1 证书哈希和启用的详细输入参数。
+| Plist 项 |  預設值| 注意 |
+|------------------|--------------|-----|
+| 输入应用程序包路径  |empty| 与 -i 相同。 |
+| 输出应用程序包路径 |empty| 与 -o 相同。|
+| 预配配置文件路径 |empty| 与 -p 相同。 |
+| SHA-1 证书哈希 |empty| 与 -c 相同。 |
+| 已启用详情 |false| 与 -v 相同。 |
+| 删除缺失的权利 | false| 与 -c 相同。|
+| 防止默认生成 |false | 相当于使用不带参数的 -b。 |
+|生成字符串替代 | empty| 已包装输出应用的自定义 CFBundleVersion |
+|扩展预配配置文件路径 | empty| 应用的一系列扩展预配配置文件。
+  
+
 最后，将 IntuneMAMPackager 与 plist 一起作为唯一参数运行：
+
 ```
 ./IntuneMAMPackager –f Parameters.plist
 ```
 
-* 处理完成后，将显示消息 **“应用程序已包装成功”** 。
+* 处理完成后，将显示消息“应用程序已成功包装”。
 
     如果出错，请参阅[错误消息](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages)以寻求帮助。
 
 *   包装的应用已保存在你之前指定的输出文件夹内。 你现在可以将应用上载到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 并关联一份移动应用程序管理策略。
 
     > [!IMPORTANT]
-    > 你必须将应用上载为新应用。 你无法更新未包装版本的旧应用。
+    > 上传已包装应用时，若已向 Intune 部署了较旧版本（已包装或本机）的应用，则可尝试更新旧版本应用。 若出现错误，将该应用作为新应用上传并删除旧版本。
 
     现在，可以将应用部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，并且该应用现将在使用所指定的应用限制的设备上运行。
 
@@ -105,7 +122,7 @@ ms.openlocfilehash: 07cbb950cf35c5dd13d0f58d132ad05d6b510b30
 使用以下信息可排查应用包装工具出现的问题。
 
 ### 错误消息
-如果应用包装工具失败，将显示以下错误消息之一：
+如果应用包装工具失败，将在控制台显示以下错误消息之一：
 
 |错误消息|更多信息|
 |-----------------|--------------------|
@@ -117,18 +134,18 @@ ms.openlocfilehash: 07cbb950cf35c5dd13d0f58d132ad05d6b510b30
 |未找到你指定的输入配置文件。 指定有效的输入配置文件。|确保输入配置文件的路径有效，并且你指定的文件存在。|
 |未找到你指定的输出应用程序文件夹。 指定输出应用程序的有效路径。|确保你指定的输出路径有效且存在。|
 |输出应用没有 .ipa 扩展名。|应用包装工具仅接受扩展名为 **“.app”** 和 **“.ipa”** 的应用。 确保你的输出文件的扩展名有效。|
-|指定了无效的签名证书。 指定有效的 Apple 签名证书。|确保你从 Apple 开发人员门户下载了正确的签名证书。 配置证书也可能已过期。 如果你的 Apple 证书和配置文件可以正确地在 Xcode 内为应用签名，则他们对应用包装工具是有效的。|
+|指定了无效的签名证书。 指定有效的 Apple 签名证书。|确保你从 Apple 开发人员门户下载了正确的签名证书。 证书可能已过期，或可能缺少公钥或私钥。 如果你的 Apple 证书和配置文件可以正确地在 Xcode 内为应用签名，则他们对应用包装工具是有效的。|
 |你指定的输入应用程序无效。 指定有效的应用程序。|确保你有编译为的“.app”或“.ipa”的有效 iOS 应用程序。|
-|你指定的输入应用程序已加密。 指定有效的未加密应用程序。|应用包装工具不支持加密的应用。 指定未加密的应用。|
+|你指定的输入应用程序已加密。 指定有效的未加密应用程序。|应用包装工具不支持加密的应用。 提供未加密的应用。|
 |你指定的输入应用程序不是地址无关可执行文件 (PIE) 格式。 指定有效的 PIE 格式应用程序。|地址无关可执行文件 (PIE) 应用运行时可以加载在随机内存地址，这对安全性有益。 有关详细信息，请参阅你的 Apple 开发人员文档。|
 |你指定的输入应用已包装。 指定有效的未包装应用程序。|你无法处理本工具已经处理过的应用。 如果你想要再次处理应用，请使用原版应用运行本工具。|
 |你指定的输入应用程序未签名。 指定已签名的有效应用程序。|应用包装工具需要已签名的应用。 咨询开发人员文档以了解如何对已包装的应用签名。|
 |你指定的输入应用程序必须为 .ipa 或 .app 格式。|应用包装工具仅接受 .app 或 .ipa 扩展名。 确保你的输入文件的扩展名有效，并且编译为的“.app”或“.ipa”文件。|
 |你指定的输入应用已包装，并且为最新的策略模板版本。|应用包装工具将不会用最新的策略模板版本重新包装现有的已包装的应用。|
-|警告：你没有指定 SHA1 证书哈希。 确保你的已包装应用程序在部署前已签名。|确保你指定了有效的 SHA 哈希（使用 **“–c”** 命令行属性）。|
+|警告：你没有指定 SHA1 证书哈希。 确保你的已包装应用程序在部署前已签名。|确保 **–c** 命令行标志后指定了有效的 SHA1 哈希。 |
 
 ### 应用包装工具的日志文件
-使用应用包装工具包装的应用生成写入 iOS 客户端设备控制台的日志。 此信息在你对应用程序存在疑问且如果该问题与应用包装工具有关并需要进行诊断的情况下有用。 若要检索此信息，请使用以下步骤：
+使用应用包装工具包装的应用生成写入 iOS 客户端设备控制台的日志。 在对应用程序存在疑问且如果该问题与应用包装工具有关并需要进行诊断时，此信息有用。 若要检索此信息，请使用以下步骤：
 
 1.  通过运行应用，再现该问题。
 
@@ -144,16 +161,18 @@ ms.openlocfilehash: 07cbb950cf35c5dd13d0f58d132ad05d6b510b30
     > [!NOTE]
     > 在日志文件中，“内部版本”代表 Xcode 的内部版本。
 
-    包装的应用也将向用户提供在应用损坏后直接通过电子邮件从设备发送日志的选项。 用户可以将日志发送给你进行检查，并在需要时转发给 Microsoft。
+    包装的应用也将向用户提供在应用损坏后直接通过电子邮件从设备发送日志的选项。 用户可以将日志发送给你进行检查，并在必要时转发给 Microsoft。
 
 
 ### 证书、预配配置文件和身份验证要求
 
+应用包装工具有一些必须满足的要求才能确保功能的完整性。
+
 |要求|详细信息|
 |---------------|-----------|
-|预配配置文件|**将配置文件包括在内之前，确保它有效** - 处理 iOS 应用时，应用包装工具不会检查配置文件是否已过期。 如果指定了过期的配置文件，应用包装工具将包括过期的配置文件，并且在将应用安装到 iOS 设备之前，你将无法知道存在问题。|
-|Certificate|**指定证书前，确保证书有效** - 处理 iOS 应用时，该工具不会检查证书是否已过期。 如果提供了过期证书的哈希，工具将对应用进行处理并签名，但是应用将无法安装在设备上。<br /><br />**确保用于给封装的应用程序签名的证书在配置文件中有匹配的配置文件** - 该工具不会验证配置文件是否有对应的用于给包装的应用程序签名的证书。|
-|身份验证|设备必须设置 PIN 以使加密起作用。 在你部署了已包装应用程序的设备上，点击设备上的状态栏将要求用户用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 重新进行身份验证。 已包装应用程序中的默认策略是“重新启动时进行身份验证”。 iOS 在退出应用然后重新启动时会处理任何外部通知（例如电话呼叫）。<br /><br />对于已包装的应用，将缓存第一个登录同一发布者的任何已包装的应用的用户。 此点之后，仅缓存允许访问该应用的用户。 要重置用户，设备必须取消注册然后再重新注册。|
+|预配配置文件|**将配置文件包括在内之前，确保它有效**。 处理 iOS 应用时，应用包装工具不会检查预配配置文件是否已过期。 如果指定了过期的配置文件，应用包装工具将包括过期的配置文件，并且在将应用安装到 iOS 设备之前，你将无法知道存在问题。|
+|Certificate|**指定证书前，确保它有效**。 处理 iOS 应用时，该工具不会检查证书是否已过期。 如果提供了过期证书的哈希，工具将对应用进行处理并签名，但是应用将无法安装在设备上。<br /><br />**确保提供用于对已包装应用程序进行签名的证书在预配配置文件中存在匹配项**。 如果预配配置文件中存在提供用于对已包装应用程序进行签名的证书的匹配项，则该工具不会进行验证。|
+|身份验证|设备必须具有 PIN 以使加密起作用。 在部署了已包装应用的设备上，点击设备上的状态栏将要求用户用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 重新进行身份验证。 已包装应用中的默认策略是“重新启动时进行身份验证”。 iOS 可处理所有外部通知（例如 电话呼叫），通过退出应用，然后重启应用实现。
 
 
 ## 设置应用权利
@@ -235,17 +254,17 @@ ms.openlocfilehash: 07cbb950cf35c5dd13d0f58d132ad05d6b510b30
 ## 应用包装工具的安全和隐私
 在你使用应用包装工具时，使用以下安全和隐私的最佳做法。
 
--   你指定的签名证书、配置证书和业务线应用必须在同一台你用于运行应用包装工具的 Mac 计算机上。 如果文件在 UNC 路径上，确保这些文件可以从 Mac 计算机上访问。 路径必须受到 IPsec 和 SMB 签名的保护。
+-   指定的签名证书、预配配置文件和业务线应用必须位于运行应用包装工具的同一台 macOS 计算机上。 如果文件在 UNC 路径上，确保可以从 Mac 操作系统计算机上访问这些文件。 路径必须受到 IPsec 和 SMB 签名的保护。
 
     导入到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台中的包装的应用程序应位于你在其上运行该工具的同一计算机上。 如果文件在 UNC 路径上，确保它可以在运行 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台的计算机上访问。 路径必须受到 IPsec 和 SMB 签名的保护。
 
--   从 Microsoft 下载中心站点下载应用包装工具的环境必须受到 IPsec 和 SMB 签名的保护。
+-   从 GitHub 存储库下载应用包装工具的环境必须受到 IPsec 和 SMB 签名的保护。
 
--   你处理的应用必须来自值得信任的来源，以保护不受攻击。
+-   处理的应用来源必须值得信赖，以确保不会受到攻击。
 
 -   确保你在应用包装工具中指定的输出文件夹是安全的，尤其当它是远程文件夹时。
 
--   包含文件上载对话框的 iOS 应用可以允许用户规避应用于应用的剪切、复制和粘贴限制。 例如，用户可能使用文件上载对话框来上载应用数据的屏幕截图。
+-   包含文件上传对话框的 iOS 应用可以允许用户规避应用于应用的剪切、复制和粘贴限制。 例如，用户可能使用文件上载对话框来上载应用数据的屏幕截图。
 
 -   如果用户在自己设备上从包装应用监视文档文件夹，他们可能看到一个名为 **“.msftintuneapplauncher”**的文件夹。 如果更改了该文件夹或将其删除，则可能影响受限制应用的正确运行。
 
@@ -256,6 +275,6 @@ ms.openlocfilehash: 07cbb950cf35c5dd13d0f58d132ad05d6b510b30
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
