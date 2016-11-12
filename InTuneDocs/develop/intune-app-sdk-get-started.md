@@ -19,15 +19,15 @@ ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 ---
 
-# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
+# Microsoft Intune App SDK 入门
 
 本入门指南可帮助你快速通过 Microsoft Intune 使用移动应用程序管理的移动应用。 先去了解 [Intune App SDK 概述](intune-app-sdk.md)中枚举的 Intune App SDK 优点，这一点可能很有用。
 
 本指南会指导完成使用 Microsoft Intune 在应用中启用移动应用管理所需的主要步骤。 Intune App SDK 支持跨平台的类似方案，且旨在跨平台为 IT 管理员创造一致的体验。 但是由于平台限制，某些功能的支持存在细微差异。
 
-# <a name="getting-started"></a>入门
+# 入门
 
-## <a name="register-your-store-app-with-microsoft"></a>向 Microsoft 注册应用商店应用
+## 向 Microsoft 注册应用商店应用
 
 **如果应用是公司内部应用，不会在公共应用商店中提供**：
 
@@ -55,12 +55,12 @@ Microsoft 将使用问卷表答复中列出的电子邮件地址来联系你并�
 
 
 
-## <a name="download-the-sdk-files"></a>下载 SDK 文件
+## 下载 SDK 文件
 
 用于本机 iOS 和 Android 的 Intune App SDK 都托管于 Microsoft GitHub 帐户。 下面的公共存储库包含适用于 iOS 和 Android 的 SDK 文件，分别为：
 
-* [用于 iOS 的 Intune 应用 SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
-* [用于 Android 的 Intune 应用 SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
+* [Intune App SDK for iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [Intune App SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
 **如果应用是 Xamarin 或 Cordova 应用，请使用以下开发人员工具**：
 
@@ -73,7 +73,7 @@ Microsoft 将使用问卷表答复中列出的电子邮件地址来联系你并�
 
 
 
-## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>使用 SDK 对 MAM 启用 iOS 或 Android 移动应用
+## 使用 SDK 对 MAM 启用 iOS 或 Android 移动应用
 
 若要将 Intune App SDK 集成到本机 iOS 应用，需查看以下文档： 
 
@@ -87,7 +87,7 @@ Microsoft 将使用问卷表答复中列出的电子邮件地址来联系你并�
 Intune App SDK Xamarin 组件和 Intune App SDK Cordova 插件的 GitHub 存储库中提供其各自的相关文档。 
 
 
-## <a name="configuring-telemetry-for-your-app"></a>配置应用的遥测
+## 配置应用的遥测
 
 Microsoft Intune 收集应用的使用情况统计数据。
 
@@ -97,7 +97,7 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
 * **Intune App SDK for Android**：不通过 SDK 记录遥测数据。
 
-## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>使用 Microsoft Intune 测试启用了 MAM 的应用
+## 使用 Microsoft Intune 测试启用了 MAM 的应用
 
 完成将 iOS 或 Android 应用与 Intune App SDK 集成所需步骤后，需要确保所有应用管理策略都已针对最终用户和 IT 管理员启用并正常工作。 若要测试已集成的应用，则需查看以下文档：
 
