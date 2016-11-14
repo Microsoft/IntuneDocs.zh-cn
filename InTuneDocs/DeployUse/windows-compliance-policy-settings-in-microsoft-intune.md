@@ -14,13 +14,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Microsoft Intune 中的适用于 Windows 设备的合规性策略设置
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 设备的合规性策略设置
 
 本主题中描述的策略设置适用于运行 Windows 操作系统的设备。 以下各节列出了支持的特定 Windows 版本。
 
@@ -28,12 +28,13 @@ ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
 > [!div class="op_single_selector"]
 - [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
+- [适用于 Android for Work 的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune)
 
-## 适用于 Windows Phone 设备的合规性策略设置
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>适用于 Windows Phone 设备的合规性策略设置
 本节中列出的设置支持 Windows Phone 8.1 及更高版本。
 
-## 系统安全设置
-### Password
+## <a name="system-security-settings"></a>系统安全设置
+### <a name="password"></a>Password
 - **需要密码才可解锁移动设备：**将此选项设置为“是”，以要求用户在访问其设备之前输入密码。
 
 - **允许简单密码：**将此选项设置为“是”，以允许用户创建简单密码，如“1234”或“1111”。
@@ -59,28 +60,28 @@ ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
 - **防止重用以前的密码：**如果选择了“记住密码历史记录”，请指定不能重用的以前用过的密码数量。
 - **当设备从空闲状态返回时需要密码：**此设置应该与**“需要提供密码之前处于非活动状态的分钟数”**设置一起使用。 设备在**“需要提供密码之前处于非活动状态的分钟数”**设置指定的时间内处于非活动状态时，将提示最终用户输入密码才能访问设备。
 
-  **此设置仅适用于 Windows 10 移动设备。**
-### 加密
+  **此设置仅适用于 Windows 10 移动版设备。**
+### <a name="encryption"></a>加密
 - **需要对移动设备进行加密：**将此选项设置为“是”，要求对移动设备进行加密以连接到资源。
 
-## 设备运行状况设置
+## <a name="device-health-settings"></a>设备运行状况设置
 - **要求设备被报告为正常：**你可以在新的或现有的合规性策略中设置规则，要求 **Windows 10 移动版**设备必须被报告为正常。  如果启用此设置，将通过运行状况证明服务 (HAS) 评估 Windows 10 设备的下列数据点：
   -  **启用 BitLocker：**Bitlocker 打开的情况下，当系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据，防止未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来保护 Windows 操作系统和用户数据，并确保即使计算机无人管理、丢失或被盗，计算机也不会被篡改。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥
   -  **启用代码完整性：**代码完整性是一种功能，可用于在每次将驱动器或系统文件载入内存时，验证它们的完整性。 代码完整性还可用于检测是否有未签名的驱动器或系统文件被载入到内核，或者系统文件是否被恶意软件（由具有管理员权限的用户帐户运行）修改。
   - **启用安全启动：**启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认这一点。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
 
   有关 HAS 服务工作方式的信息，请参阅[运行状况证明 CSP](https://msdn.microsoft.com/library/dn934876.aspx)。
-##  设备属性设置
+##  <a name="device-property-settings"></a>设备属性设置
 - **所需的最低 OS 版本：**当设备不满足最低 OS 版本要求时，它将被报告为不符合要求。
     将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 
 - **允许的最高 OS 版本：**当设备使用的 OS 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。 除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
 
-## 适用于 Windows PC 的合规性策略设置
+## <a name="compliance-policy-settings-for-windows-pcs"></a>适用于 Windows PC 的合规性策略设置
 此节中列出的设置在 Windows PC 上受支持。
-## 系统安全设置
-### Password
+## <a name="system-security-settings"></a>系统安全设置
+### <a name="password"></a>Password
 - **最短密码长度：** - 在 Windows 8.1 上受支持。
 
   指定用户密码必须包含的最小位数或最小字符数。
@@ -113,7 +114,7 @@ ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
 
   如果选择了**记住密码历史记录：**，请指定不能重用的以前用过的密码数量。
 
-## 设备运行状况设置
+## <a name="device-health-settings"></a>设备运行状况设置
 - **需要设备被报告为正常：** - 在 Windows 10 设备上受支持。
 你可以在新的或现有的合规性策略中设置规则，要求 Windows 10 设备必需被报告为正常。  如果启用此设置，将通过运行状况证明服务 (HAS) 评估 Windows 10 设备的下列数据点：
   -  **启用 BitLocker：**Bitlocker 打开的情况下，当系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据，防止未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来保护 Windows 操作系统和用户数据，并确保即使计算机无人管理、丢失或被盗，计算机也不会被篡改。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥
@@ -123,7 +124,7 @@ ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
 
   有关 HAS 服务工作方式的信息，请参阅[运行状况证明 CSP](https://msdn.microsoft.com/library/dn934876.aspx)。
 
-## 设备属性设置
+## <a name="device-property-settings"></a>设备属性设置
 - **所需的最低操作系统：** - 在 Windows 8.1 和 Windows 10 上受支持。
 
   在此处指定 major.minor.build 编号。 版本号必须与 winver 命令返回的版本一致。
@@ -141,6 +142,6 @@ ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

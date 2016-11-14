@@ -3,8 +3,9 @@ title: "擦除托管公司应用数据 | Microsoft Intune"
 description: "了解如何从设备中有选择地远程删除公司数据。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
 
 
 ---
 
-# 使用 Microsoft Intune 擦除托管司应用数据
+# <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>使用 Microsoft Intune 擦除托管司应用数据
 当设备丢失或被盗，或如果员工离开公司，你想要确保从设备中删除了公司应用数据。 但是，你可能不想删除设备上的个人数据，尤其是如果设备为员工所有。
 
 若要有选择地删除公司应用数据，则使用本主题中**创建擦除请求**部分中所述的步骤创建擦除请求。  完成请求之后，当应用下次在设备上运行时，会从应用中删除公司数据。
@@ -28,7 +29,7 @@ ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
 
 
 
-## 创建擦除请求
+## <a name="create-a-wipe-request"></a>创建擦除请求
 
 1.  在“Intune 移动应用程序管理”边栏选项卡中，选择“擦除请求”磁贴。
 
@@ -47,20 +48,24 @@ ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
 
 ![擦除请求磁贴的屏幕截图 ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
-## 监视擦除请求
+## <a name="monitor-your-wipe-requests"></a>监视擦除请求
 “Intune 移动应用程序管理”  边栏选项卡在“擦除请求”  磁贴上具有汇总报告。  它显示总体状态，并包含挂起的请求数和失败数。 可以按照下述步骤来获取更多详细信息：
 
 1.  在“Intune 移动应用程序管理”边栏选项卡中，选择“擦除请求”磁贴以打开“擦除请求”边栏选项卡。
 
 2.  在“擦除请求”  边栏选项卡中，可以查看按用户分组的请求的列表。  由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。  状态指示擦除请求是仍然“挂起” 、“失败” 还是“成功” 。
 
-### 另请参阅
-[使用移动应用管理策略保护应用 ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+用户必须打开应用才能进行擦除，进行请求后可能需要最多 30 分钟才能完成擦除。 
+
+手动删除之前将显示具有挂起状态的擦除。  若要手动删除擦除请求，右键单击并选择“删除”即可。
+
+### <a name="see-also"></a>另请参阅
+[使用移动应用管理策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [使用 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
