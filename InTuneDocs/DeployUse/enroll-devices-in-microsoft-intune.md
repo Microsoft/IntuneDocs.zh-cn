@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 3422d47a5759e22a512cf6de8578d774ad3bb8cd
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 
 ---
@@ -100,7 +100,7 @@ ms.openlocfilehash: 3422d47a5759e22a512cf6de8578d774ad3bb8cd
 
  - 报告软件和硬件清单
  - 安装桌面应用程序（例如 .exe 和 .msi 文件）
- - 防火墙设置
+ - 管理防火墙设置
 
 使用 Intune 客户端软件管理的电脑不能完全擦除，但可以选择性擦除。 使用 Intune 软件客户端管理的电脑不能利用许多 Intune 管理功能，如条件访问、VPN 和 Wi-Fi 设置或证书和电子邮件配置的部署。
 
@@ -119,6 +119,6 @@ Intune 可以管理以下设备平台：
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
