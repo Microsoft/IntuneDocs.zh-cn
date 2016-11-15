@@ -2,7 +2,8 @@
 title: "在 Intune 中注册 Windows Phone 8.1 设备 | Microsoft Intune"
 description: "介绍如何在 Intune 中注册 Windows Phone 8.1 设备"
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 
 ---
 
 
-# 在 Intune 中注册 Windows Phone 8.1 设备
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 中注册 Windows Phone 8.1 设备
 
-如果你的公司或学校使用 Microsoft Intune，则可以注册设备以获取对公司电子邮件、文件和其他资源的访问权限。 通过注册设备可以使组织保护公司数据的安全。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 管理员在你的设备上可以看到和不可以看到的内容](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
+如果你的公司或学校使用 Microsoft Intune，则可以注册设备以获取对公司电子邮件、文件和其他资源的访问权限。 注册设备后，组织可以保护公司数据的安全。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 管理员在你的设备上可以看到和不可以看到的内容](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
 
 
 若要在 Intune 中注册 Phone 8.1 设备，请按照适用于你公司或学校的说明进行操作：
@@ -31,12 +32,12 @@ ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
 
 -   [如果不允许你从 Windows Phone 访问 Windows 应用商店或者你没有 Microsoft 帐户](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## 如果公司允许你从 Windows 应用商店使用公司门户
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>如果公司允许你从 Windows 应用商店使用公司门户
 在设备上安装公司门户应用：
 
 1.  点击**开始** &gt; **应用商店**。
 
-2.  点击“搜索”，然后输入“公司门户”。
+2.  点击“**搜索**”，然后键入“**公司门户**”。
 
 3.  在结果列表中，点击“公司门户”。
 
@@ -66,27 +67,26 @@ ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
 
     ![工作区设置屏幕](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  按照请求输入其他信息，然后点击“登录”完成注册。 现在你应该可以在**设置** &gt; **工作区**页面上看到你的工作区帐户。
+7.  按照请求输入更多信息，然后点击“登录”完成注册。 现在你应该可以在**设置** &gt; **工作区**页面上看到你的工作区帐户。
 
     ![“已添加帐户”屏幕](./media/WP81-enroll-4-account-added.png)
 
-## 如果不允许你从 Windows Phone 访问 Windows 应用商店或者你没有 Microsoft 帐户
+## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>如果不允许你从 Windows Phone 访问 Windows 应用商店或者你没有 Microsoft 帐户
 
 1.  点击**设置** &gt; **工作区**。
 
 2.  点击“添加帐户”，然后使用工作单位帐户登录。
 
-3.  按照请求输入其他信息，然后点击“登录”完成注册。
+3.  按照请求输入更多信息，然后点击“登录”完成注册。
 
 4.  如果提示安装企业应用或中心，请确保选中相关复选框，然后点击“完成”。
 
-如果你的 IT 管理员已将公司门户配置为在注册过程中进行安装，则你的应用列表中将显示公司门户。
+如果你的 IT 管理员已将公司门户设置为在注册过程中进行安装，则你的应用列表中将显示公司门户。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
+仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
-<!--HONumber=Sep16_HO3-->
+
+<!--HONumber=Nov16_HO1-->
 
 
