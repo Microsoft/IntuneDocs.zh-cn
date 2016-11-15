@@ -14,17 +14,17 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5e41cbbf3bac3ed78ee3a6929e364f829fa1d4b
-ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
+ms.sourcegitcommit: 552473cb704ead5f7cc30a2311e2f722265bfcea
+ms.openlocfilehash: c7ecf73c28a8332bd3fe1465a2f64f7f09a7a690
 
 
 ---
 
-# Microsoft Intune 中的 Android 移动应用管理策略设置
+# <a name="android-mobile-app-management-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 移动应用管理策略设置
 可以在 Azure 门户的“设置”边栏选项卡上为移动应用管理 (MAM) 策略[配置](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)本主题所述的策略设置。
 有两种类别的策略设置：数据重定位设置和访问设置。 在本主题中，术语*策略托管应用*指使用 MAM 策略配置的应用。
 
-##  数据重定位设置
+##  <a name="data-relocation-settings"></a>数据重定位设置
 
 - **阻止 Android 备份**：选择“是”以禁用，或选择“否”以允许备份策略托管应用中的公司数据。
 
@@ -74,7 +74,7 @@ ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
 
   默认值 = **是**。
 
-##  访问设置
+##  <a name="access-settings"></a>访问设置
 
 - **访问需要 PIN**：选择“是”要求使用 PIN 访问策略托管应用。 用户首次在工作环境中运行应用时，将提示其进行此设置。
 
@@ -83,7 +83,9 @@ ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
  -  **允许简单 PIN**：指定是否允许用户使用简单的 PIN 序列，如 1234 或 1111。 默认值 = **是**。
  - **PIN 长度**：指定 PIN 必须包含的最小位数。 默认值 = **4**。
  - **PIN 重置之前的尝试次数**：指定输入 PIN 码的尝试次数，达到该次数后用户必须重置 PIN。 此设置没有默认值。
-- **访问需要公司凭据**：选择“是”要求使用公司凭据而不是 PIN 进行应用访问。 如果将其设置为“是”，则此设置将替代 PIN 或 Touch ID 的要求。 将提示用户提供其公司凭据。
+ - **需要指纹而不是 PIN (Android 6.0+)：**选择“是”以要求使用指纹标识而不是数字 PIN 进行应用访问。
+ 在 Android 设备上，你可以允许用户使用指纹而不是数字 PIN 来标识自己。 当最终用户使用其工作帐户尝试访问此应用时，会提示他们提供其指纹标识而不是输入 PIN 码。
+ - **访问需要公司凭据**：选择“是”要求使用公司凭据而不是 PIN 或指纹进行应用访问。 如果将其设置为“是”，则此设置将替代 PIN 或 Touch ID 的要求。 将提示用户提供其公司凭据。
 
   默认值 = **否**。
 - **阻止在已越狱或取得 root 权限的设备上运行托管应用**：选择“是”以阻止在已越狱或取得 root 权限的设备上运行应用。 用户仍将能够将这些应用用于个人任务，但必须使用其他设备进行工作。
@@ -105,6 +107,6 @@ ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,7 +2,8 @@
 title: "Intune 快速入门指南 | Microsoft Intune"
 description: "开始使用 Intune 订阅的要求和先决条件"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,15 +14,15 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: aecd5f76e234835c38bf47d8de7e13034d683998
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 2e385a6f1721c7b8acbc1e280b8d8c3277fa00f8
 
 
 ---
 
 
 # Intune 快速入门指南
-此快速入门指南将引导你完成设置 Microsoft Intune 的付费订阅的步骤，以快速、轻松地管理你的组织使用的移动设备和 Windows 电脑。 你可以按顺序执行每个步骤，也可在某个步骤不适用于你的特定环境或业务需求时直接跳过。
+此快速入门指南将引导完成设置 Microsoft Intune 付费订阅的步骤，快速、轻松地管理组织使用的移动设备和 Windows 电脑。 你可以按顺序执行每个步骤，也可在某个步骤不适用于你的特定环境或业务需求时直接跳过。
 
 >[!NOTE]
 >本文重点介绍将 Intune 设置为独立服务。 或者，如果当前正在使用 Microsoft System Center Configuration Manager 管理计算机和服务器，则可以[扩展 Configuration Manager 以管理移动设备](https://technet.microsoft.com/library/jj884158.aspx)。 可以通过在混合的移动设备管理 (MDM) 部署中将 Intune 与 Configuration Manager 连接来执行此操作。
@@ -75,6 +76,6 @@ ms.openlocfilehash: aecd5f76e234835c38bf47d8de7e13034d683998
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

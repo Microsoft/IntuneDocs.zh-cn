@@ -1,8 +1,9 @@
 ---
 title: "创建策略并发布应用程序 | Microsoft Intune"
-description: "说明如何为 Intune 订阅创建策略并发布示例应用"
+description: "为 Intune 订阅创建策略并发布示例应用"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 0bf3eb60b60e8ad1c91d3010230a41ce5d863dfe
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 748df2b7af8cf1679f31435f89730170ca723dc4
 
 
 ---
@@ -109,6 +110,6 @@ Skype 应用现已可从公司门户中在移动设备上安装，但首先你�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

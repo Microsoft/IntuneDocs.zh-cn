@@ -1,10 +1,11 @@
 ---
 title: "将注册错误发送给 IT 管理员 | Microsoft Intune"
-description: 
+description: "将注册错误发送给管理员"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 57e5707ab651dd18f1d83730b03ae0267de25e34
 
 
 ---
 
 
-# 将注册错误发送给 IT 管理员
+# <a name="send-enrollment-errors-to-your-it-admin"></a>将注册错误发送给 IT 管理员
 
-如果尝试在 Intune 中注册 Android 设备时遇到错误，可以通过点击**重试**再次尝试注册，或通过点击**发送信息**，在电子邮件中向 IT 管理员发送错误信息。
+如果尝试在 Intune 中注册 Android 设备时遇到错误，则可以通过点击“重试”来再次尝试注册。 还可以通过点击“发送信息”，通过电子邮件向 IT 管理员发送错误信息。
 
-一封以 IT 管理员作为发送地址的电子邮件会自动创建并包含 IT 管理员对设备进行故障排除所需的日志。
+点击“发送信息”时，会自动创建电子邮件。 该电子邮件将发送给 IT 管理员，其中包含帮助 IT 管理员对设备进行故障排除所需的日志。
 
 可通过不同的方法将设备的数据日志发送给 IT 管理员以获取有关此错误的帮助：
 
@@ -34,7 +35,6 @@ ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
 
 
 
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

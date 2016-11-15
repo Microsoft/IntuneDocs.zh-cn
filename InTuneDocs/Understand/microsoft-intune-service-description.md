@@ -2,8 +2,8 @@
 title: "服务说明 | Microsoft Intune"
 description: "Intune 是一项基于云的服务，可帮助你管理 Windows 电脑以及 iOS、Mac OS X、Android 和 Windows 移动设备。"
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
-ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 423282fd8dd80358311373862f808cdaa58212bd
 
 
 ---
 
-# Microsoft Intune 服务说明
+# <a name="microsoft-intune-service-description"></a>Microsoft Intune 服务说明
 
 Microsoft Intune 是一项基于云的服务，可帮助你管理 Windows 电脑以及 iOS、Mac OS X、Android 和 Windows 移动设备。 Intune 还有助于保护公司的应用程序和数据。 可以单独使用 Intune，也可以将它与 System Center Configuration Manager 集成，以扩展管理能力。 
 
@@ -33,13 +33,13 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 如需可以在移动设备上配置的设置的列表，请参阅：
 
--   [Microsoft Intune 已注册设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
+-   [Microsoft Intune 的已注册设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 -   [使用 System Center Configuration Manager 和 Microsoft Intune 的混合移动设备管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx) 
 
 有关 System Center Configuration Manager 的信息，请参阅 [System Center Configuration Manager 的文档](https://technet.microsoft.com/library/mt346023.aspx)。
 
-## 了解 Intune 服务更新对你的影响
+## <a name="understand-how-intune-service-updates-affect-you"></a>了解 Intune 服务更新对你的影响
 由于 Intune 是一项在线服务，因此，Microsoft 可以定期对其更新。
 
 使用本主题中的信息可帮助你了解这些服务更新的频率，以及我们在更新可能影响你使用该服务时提前向你发送的通知。
@@ -61,22 +61,22 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 -   Microsoft 在我们的每月服务更新中提供了有关新特征、新功能和对现有功能的改进的信息。 通常情况下，Microsoft 会在每个月的中旬左右汇总服务更新。 [Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune)中描述了相关更新。
 -   如果要停用 Intune 服务，我们将提前 12 个月通知你。
 
-## 选择适合你的管理解决方案
+## <a name="choose-the-management-solution-thats-right-for-you"></a>选择适合你的管理解决方案
 可以通过多种方式配置 Intune 来管理和帮助保护公司的移动设备和计算机（在本文档中称为“设备”）。
 
 -   **Intune 独立配置。** 使用 Intune 中基于 Web 的管理控制台来管理组织中的设备。 可以在没有任何本地 IT 基础结构的情况下使用 Intune，但如果你将 Intune 与 Active Directory 域服务一起使用，则可以将使用域服务管理的域用户帐户用于 Intune。
 
--   **Intune 与 System Center Configuration Manager 的集成** 使用 Configuration Manager 管理控制台来管理企业中的计算机和移动设备。 此配置可帮助你通过单一控制台（Configuration Manager 管理控制台）管理组织的所有设备。 Configuration Manager 支持大量的移动设备、服务器和计算机。 有关详细信息，请参阅[使用 System Center Configuration Manager 和 Microsoft Intune 的混合移动设备管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。  有关确定哪种方法最适合你的更多帮助，请参阅[在 Microsoft Intune 独立版和带 Configuration Manager 的混合移动设备管理之间选择](https://technet.microsoft.com/en-us/library/mt706478.aspx)。 
+-   **Intune 与 System Center Configuration Manager。** 使用 Configuration Manager 管理控制台来管理企业中的计算机和移动设备。 此配置可帮助你通过单一控制台（Configuration Manager 管理控制台）管理组织的所有设备。 Configuration Manager 支持大量的移动设备、服务器和计算机。 有关详细信息，请参阅[使用 System Center Configuration Manager 和 Microsoft Intune 的混合移动设备管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。  有关确定哪种方法最适合你的更多帮助，请参阅[在 Microsoft Intune 独立版和带 Configuration Manager 的混合移动设备管理之间选择](https://technet.microsoft.com/en-us/library/mt706478.aspx)。 
 
 
-## 了解有关 Intune 的详细信息
+## <a name="learn-more-about-intune"></a>了解有关 Intune 的详细信息
 使用以下资源可了解有关 Intune 的详细信息：
 
 -   [Microsoft Intune 信任中心](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)提供了有关 Intune 的安全性、隐私和合规性实践的信息，并介绍了 Intune 的一些证书。
 
--   [Microsoft Intune 已注册设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
+-   [Microsoft Intune 的已注册设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)
 
@@ -84,6 +84,6 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

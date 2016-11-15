@@ -2,8 +2,7 @@
 title: "设置 Windows 10 移动版和 Windows Phone 管理 | Microsoft Intune"
 description: "使用 Microsoft Intune 为 Windows 10 移动版或 Windows Phone 设备启用移动设备管理 (MDM)。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,14 +13,14 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0b4bf6aa6fa9d693c0458562e7fcb71fc8000bb4
-ms.openlocfilehash: 46bd457af51d3fac513cfc36af1766e1e37222cd
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: a077d5a6cd111d84cb98bfcb5e05cab0c0c4d49c
 
 
 ---
 
 
-# 使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理
+# <a name="set-up-windows-phone-and-windows-10-mobile-management-with-microsoft-intune"></a>使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理
 
 作为 Intune 管理员，可以通过两种方式为 Windows 10 移动版和 Windows Phone 设备启用注册和管理：
 
@@ -31,8 +30,8 @@ ms.openlocfilehash: 46bd457af51d3fac513cfc36af1766e1e37222cd
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## 公司门户应用注册
-可以让用户使用 Intune 公司门户应用安装和注册设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入服务器名称。 如果你管理 Windows Phone 8.0 设备或需要将公司门户部署到 Windows Phone 设备，则必须下载公司门户应用并对其进行签名。 请参阅[设置 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
+## <a name="company-portal-app-enrollment"></a>公司门户应用注册
+可以让用户使用 Intune 公司门户应用安装和注册设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入服务器名称。
 
 1.  **设置 Intune**<br>如果尚未设置，请通过[将移动设备管理 (MDM) 机构设置](prerequisites-for-enrollment.md#set-mobile-device-management-authority)为“Microsoft Intune”，然后设置 MDM，为管理移动设备做好准备。
 
@@ -55,16 +54,16 @@ ms.openlocfilehash: 46bd457af51d3fac513cfc36af1766e1e37222cd
 
     ![设置 Windows 的移动设备管理对话框](../media/windows-phone-enrollment.png)
 
-4.  **可选步骤**<br>在 Windows 10 中无需执行**添加旁加载密钥**步骤。 只有在向设备分配 Windows 应用商店中未提供的业务线 (LOB) 应用时才需要执行“上传代码签名证书”步骤。 [了解详细信息](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
+4.  **可选步骤**<br>在 Windows 10 中无需执行**添加旁加载密钥**步骤。 只有在向设备分配 Windows 应用商店中未提供的业务线 (LOB) 应用时才需要执行“上传代码签名证书”步骤。
 
 5.  **通知用户**<br>用户需要了解如何注册其设备以及在设备纳入管理之后会出现的情况。
-    - [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [最终用户需要了解的有关使用 Microsoft Intune 的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
     - [适用于 Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
 
 无需任何额外的工作，除非你要将公司门户部署到设备。  可以安全地忽略管理控制台中的步骤 2 和 3。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

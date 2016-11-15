@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
-ms.openlocfilehash: 2959ad5f09be686e4dae9b751e8ede5e6b60bd89
+ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
 
 
 ---
@@ -28,21 +28,21 @@ Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮
 将无线网络设置部署到你的用户。 这些设置便于你的用户连接到公司网络。
 #### <a name="supported-platforms"></a>受支持的平台
 
-|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX|
+|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX 标准版|
 |---------------------|---------------------------|---|-------|------------|
 |是（你可以导入 Windows Wi-Fi 配置文件。）|是（你可以配置 OMA-URI。） |是|是|是|
 
 ## <a name="vpn-profilesvpnconnectionsinmicrosoftintunemd-and-supported-platforms"></a>[VPN 配置文件](vpn-connections-in-microsoft-intune.md)和受支持的平台
 将虚拟专用网 (VPN) 设置部署到你的用户。 这些设置便于用户连接到公司网络上的资源。
 
-|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX|
+|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX 标准版|
 |---------------------|---------------------------|---|-------|------------|
 |是|是|是|是|是|
 
 ## <a name="email-profilesconfigureaccesstocorporateemailusingemailprofileswithmicrosoftintunemd-and-supported-platforms"></a>[电子邮件配置文件](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)和受支持的平台
 创建、部署和监视你的组织中的设备上的本机电子邮件设置。
 
-|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX|
+|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX 标准版|
 |---------------------|---------------------------|---|-------|------------|
 |否|是|是|否|是|
 > [!NOTE]
@@ -51,12 +51,12 @@ Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮
 ## <a name="certificate-profilessecureresourceaccesswithcertificateprofilesmd-and-supported-platforms"></a>[证书配置文件](secure-resource-access-with-certificate-profiles.md)和受支持的平台
 有助于安全访问公司资源（包括无线网络和 VPN 连接）。
 
-|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX|
+|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX 标准版|
 |---------------------|---------------------------|---|-------|------------|
 |是|是|是|是|是|
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,7 +2,8 @@
 title: "常见 Windows 电脑管理任务 | Microsoft Intune"
 description: "查看本主题中的任务，了解如何管理运行 Intune 软件客户端的 Windows 电脑。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
 
 
 ---
 
-# 使用 Intune 软件客户端的常见 Windows 电脑管理任务
+# <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 软件客户端的常见 Windows 电脑管理任务
 查看本主题中的任务，了解如何管理运行 Intune 软件客户端的计算机。 如果尚未在计算机上安装客户端，请参阅[安装 Intune 软件客户端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
 
-## 使用策略来简化电脑管理
+## <a name="use-policies-to-simplify-pc-management"></a>使用策略来简化电脑管理
 
 可以使用 Intune 的**计算机管理**策略来管理运行 Intune 软件客户端的 Windows 电脑。
 
 ![用于 Windows 电脑的策略模板](../media/pc_policy_template.png)
 
-### 管理 Microsoft Intune Center
+### <a name="manage-the-microsoft-intune-center"></a>管理 Microsoft Intune Center
 用户可以看到 Intune 软件客户端作为 **Microsoft Intune 中心**。 Microsoft Intune Center 使用户能够：
 
 -   从公司门户中获取应用程序。
@@ -51,16 +52,16 @@ Microsoft Intune Center 安装在所有被管理的计算机上。 你可以在 
 |**网站 URL**|支持网站的 URL。<br /><br />最大长度：150 个字符|
 |**注意**|向用户显示的注释。<br /><br />最大长度：120 个字符|
 
-## 软件更新设置
+## <a name="software-updates-settings"></a>软件更新设置
 使用策略来配置被管理的计算机用于从 Microsoft 和第三方检查并下载软件更新的设置。 这些更新不包括操作系统升级（即， 从 Windows 7 升级到 Windows 10，或从一个 Windows 10 版本升级到更高版本）。 有关详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
 
-### Endpoint Protection 设置
+### <a name="endpoint-protection-settings"></a>Endpoint Protection 设置
 使用策略来配置你随后部署到被管理的计算机的 Endpoint Protection 的设置。 其中包括扫描计划、要在检测到恶意软件时采取的操作等设置。 有关详细信息，请参阅[使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
 
-## Windows 防火墙设置
+## <a name="windows-firewall-settings"></a>Windows 防火墙设置
 策略可简化被管理的计算机上 Windows 防火墙设置的管理。 有关详细信息，请参阅[在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows 电脑](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
 
-## 查看硬件和软件清单
+## <a name="view-hardware-and-software-inventory"></a>查看硬件和软件清单
 Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使用下列过程中的信息来了解如何创建：
 
 -   列出有关计算机硬件性能的信息的报表。
@@ -69,7 +70,7 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
 -   如何刷新计算机清单以确保报表中的数据为最新。
 
-### 显示有关你的计算机的信息
+### <a name="to-display-information-about-your-computers"></a>显示有关你的计算机的信息
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**报表**&gt;**计算机清单报表**。
 
@@ -79,7 +80,7 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
     你可以选择各个列标题，按任何列（如“名称”、“底盘类型”或“制造商”）对报表进行排序。
 
-### 显示你的计算机上安装的软件
+### <a name="to-display-software-installed-on-your-computers"></a>显示你的计算机上安装的软件
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**报表**&gt;**检测到的软件报表**。
 
@@ -89,7 +90,7 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
     你可以选择各个列标题，按任何列（如“名称”、“发布者”或“类别”）对报表进行排序。 通过选择列表项旁边的方向箭头，可以展开列表中的更新以显示更多详细信息（例如安装了更新的计算机）。
 
-### 刷新计算机清单以确保其为最新
+### <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>刷新计算机清单以确保其为最新
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**组**&gt;**所有设备**（或包含需刷新清单的计算机的另一个组）。
 
@@ -102,7 +103,7 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
     “任务状态”  对话框显示当前远程任务、任务状态、设备名称和任何报告的错误，并提供指向疑难解答信息的链接。
 
 
-## 远程重启 Windows 电脑
+## <a name="remotely-restart-a-windows-pc"></a>远程重启 Windows 电脑
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**组**&gt;**所有设备**（或包含需重新启动的计算机的另一个组）。
 
@@ -112,7 +113,7 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
 4.  在“任务状态”  对话框中，查看当前远程任务、任务状态、设备名称以及报告的任何错误。
 
-## 停用计算机
+## <a name="retire-a-computer"></a>停用计算机
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**组**&gt;**所有设备**（或包含需停用的计算机的另一个组）。
 
@@ -143,10 +144,10 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
     如果未能卸载客户端，请阅读 [Endpoint Protection 疑难解答](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)以获取更多帮助。
 
-## 管理用户-设备链接
+## <a name="manage-userdevice-linking"></a>管理用户-设备链接
 你必须将用户链接到计算机，然后才能将软件部署到用户。 你可以将某个用户链接到多台计算机，但每台计算机只能链接到一个用户。 用户会自动链接到他们使用公司门户在 Intune 中注册的任何计算机。
 
-### 将用户链接到计算机
+### <a name="to-link-a-user-to-a-computer"></a>将用户链接到计算机
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**组**&gt;**所有设备**（或包含需链接到用户的计算机的另一个组）。
 
@@ -165,13 +166,13 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 > [!TIP]
 > 如果想要限制最终用户将自己链接到计算机的能力，则启用“Microsoft Intune 代理设置”策略中的“限制用户将自己链接到计算机的能力”选项。
 
-## 请求并提供 Windows 电脑的远程协助
+## <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>请求并提供 Windows 电脑的远程协助
 
 Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买）使运行 Intune 软件客户端的电脑用户获得由你提供的远程协助帮助。 当用户从 Microsoft Intune Center 请求帮助时，你会收到警报通知，可接受请求并提供帮助。
 此功能将替换 Intune 中现有的 Windows 远程协助功能。
 
 
-### 开始之前
+### <a name="before-you-start"></a>开始之前
 
 开始建立并响应远程协助请求之前，必须先确保以下先决条件已就绪：
 
@@ -179,7 +180,7 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 - 想要管理的 Windows 电脑必须[由 Windows 电脑客户端管理](manage-windows-pcs-with-microsoft-intune.md)
 - 可管理所有 Intune 支持的 Windows 电脑操作系统。
 
-### 配置 TeamViewer 连接器
+### <a name="configure-the-teamviewer-connector"></a>配置 TeamViewer 连接器
 
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**管理员**。
 2. 在**管理员**工作区中，选择 **TeamViewer**。
@@ -190,7 +191,7 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 7. 在 Intune 控制台中，验证 **TeamViewer 连接器**项是否显示为**已启用**。
 
 
-### 打开远程协助请求（最终用户）
+### <a name="open-a-remote-assistance-request-end-user"></a>打开远程协助请求（最终用户）
 
 1. 在客户端 Windows 电脑上，打开 **Microsoft Intune Center**。
 2. 在**远程协助**下，选择**请求远程协助**。
@@ -198,7 +199,7 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 4. 用户会看到询问你是否能控制其电脑的消息。 用户必须接受此消息才可继续。
 5. 远程协助会话期间，用户将看到一个显示你已连接的窗口。 如果用户关闭此窗口，远程会话将结束。
 
-### 响应远程协助请求
+### <a name="respond-to-a-remote-assistance-request"></a>响应远程协助请求
 
 1. 当用户提交远程协助请求时，你可在**监视** > **远程协助**下的**警报**工作区中查看。 例如：
 > ![远程协助请求屏幕截图](./media/team-viewer.png)
@@ -210,12 +211,12 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 
 在远程协助会话中，你可使用所有可用的 TeamViewer 命令来控制远程电脑。 有关这些命令的帮助，请从 TeamViewer 网站下载[远程控制指南](http://www.teamviewer.com/en/support/documents/)。
 
-### 关闭远程协助会话
+### <a name="close-the-remote-assistance-session"></a>关闭远程协助会话
 
 从 **TeamViewer** 窗口的**操作**菜单中，选择**结束会话**。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

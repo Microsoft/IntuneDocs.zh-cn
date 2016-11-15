@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
+ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 
 ---
@@ -68,7 +68,7 @@ ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 当通过 **iOS** 和 ** Android** 设备上的浏览器进行访问时，你可以限制对 SharePoint Online 的访问。  仅允许从合规设备上受支持的浏览器进行访问：
 * Safari (iOS)
 * Chrome (Android)
-* 托管浏览器（iOS 和 Android）
+* 托管浏览器（iOS 和 Android 5.0 及更高版本）
 
 **不受支持的浏览器将被阻止**。
 
@@ -195,6 +195,6 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,9 +2,10 @@
 title: "使用 PSK 的 Wi-Fi | Microsoft Intune"
 description: "使用自定义配置创建具有预共享密钥的 Wi-Fi 配置文件。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
-ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
+ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# 创建具有预共享密钥的 Wi-Fi 配置文件
+# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>使用自定义策略创建具有预共享密钥的 Wi-Fi 配置文件
 下面介绍了如何使用 Intune 的**自定义配置**创建具有预共享密匙的 Wi-Fi 配置文件。 本主题还有一个如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
 
 > [!NOTE]
@@ -48,8 +49,7 @@ ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
     > [!NOTE]
 请务必在开头包括点字符。
 
-    SSID 是你为其创建策略的 SSID。 例如，
-    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID 是你为其创建策略的 SSID。 例如，`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e. **值字段**：这是粘贴 XML 代码的位置。 此处为一个示例。 每个值都应适于你的网络设置。 参阅代码的注释部分以获取一些指针。
 4. 选择“**确定**”，保存并部署策略。
@@ -58,13 +58,13 @@ ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
     > 只可以将此策略部署到用户组。
 
 每个设备在下次签入时，将应用该策略，且将在设备上创建 Wi-Fi 配置文件。 设备将能够自动连接到网络。
-## Android 或 Windows Wi-Fi 配置文件
+## <a name="android-or-windows-wifi-profile"></a>Android 或 Windows Wi-Fi 配置文件
 
 下面是一个针对 Android 或 Windows Wi-Fi 配置文件的 XML 代码示例：
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`必须设置为 **false**，因为 **ture** 可能导致设备需要加密密码并尝试进行解密，这可能导致连接失败。
+> `<protected>false</protected>` 必须设置为 **false**，因为 **ture** 可能导致设备需要加密密码并尝试进行解密，这可能导致连接失败。
 > 
 >  `<hex>53534944</hex>` 应设置为 `<name><SSID of wifi profile></name>` 的十六进制值。
 >  Windows 10 设备可能会返回误报的“0x87D1FDE8 修正失败”错误，但仍可以使用该配置文件进行预配。
@@ -109,7 +109,7 @@ ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
       </MSM>
     </WLANProfile>
 
-## 基于 EAP 的 Wi-Fi 配置文件
+## <a name="eapbased-wifi-profile"></a>基于 EAP 的 Wi-Fi 配置文件
 下面是一个针对基于 EAP 的 Wi-Fi 配置文件的 XML 代码示例：
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
       </MSM>
     </WLANProfile>
 
-## 从现有的 Wi-Fi 连接创建 XML 文件
+## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>从现有的 Wi-Fi 连接创建 XML 文件
 还可以从现有的 Wi-Fi 连接创建 XML 文件：
 1. 在连接到或最近连接到无线网络的计算机上，打开下列文件夹：C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid}。
 
@@ -198,7 +198,7 @@ ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 3.     搜索 XML 文件以找到具有正确名称的那一个。
 4.     找到了正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的数据字段中。
 
-## 部署策略
+## <a name="deploy-the-policy"></a>部署策略
 
 1.  在“**策略**”工作区中，选择想要部署的策略，然后选择“**管理部署**”。
 
@@ -210,11 +210,11 @@ ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 如果你选择的是已部署的策略，则可以在策略列表的下半部分查看有关部署的详细信息。
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [Microsoft Intune 中的 Wi-Fi 连接](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

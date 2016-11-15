@@ -2,8 +2,8 @@
 title: "注册企业自有的 iOS 设备 | Microsoft Intune"
 description: "使用 Apple 设备注册程序 (DEP) 或 Apple 配置器注册企业自有的 iOS 设备"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: c28b51146deb6a0a28070f72449972fd60076231
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 81eb6df96f4c34e8524bb8f3faef964179c91dfc
 
 
 ---
 
-# 在 Microsoft Intune 中注册企业所有的 iOS 设备
+# <a name="enroll-corporateowned-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中注册企业所有的 iOS 设备
 Microsoft Intune 支持注册公司所有的 iOS 设备，方法是使用 Apple 的设备注册程序 (DEP)，或在 Mac 计算机上运行的 [Apple 配置器](http://go.microsoft.com/fwlink/?LinkId=518017)工具。
 
 **先决条件：**需要 [Apple 推送通知服务证书](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 
 你可以通过以下三种方式注册公司注册的 iOS 设备：通过使用 Apple 配置器、DEP 或公司门户。
 
-## 使用 Apple 配置器
+## <a name="use-apple-configurator"></a>使用 Apple 配置器
 
 可通过导出公司注册配置文件，然后将那些移动设备连接到运行 Apple 配置器的 Mac 来注册 iOS 设备。 Apple 配置器支持两种形式的注册：
 
@@ -35,10 +35,10 @@ Microsoft Intune 支持注册公司所有的 iOS 设备，方法是使用 Apple 
 
 - **直接注册**：在设备准备过程中创建 Apple 配置器兼容文件以供使用。 已注册设备没有进行出厂重置，但没有用户隶属关系。 此方法要求管理员通过 USB 将 iOS 设备连接到运行 [Apple 配置器](http://go.microsoft.com/fwlink/?LinkId=518017)的 Mac 计算机以注册设备。 有关详细信息，请参阅[使用 Apple 配置器直接注册注册 iOS 设备](ios-direct-enrollment-in-microsoft-intune.md)。
 
-## 使用设备注册程序 (DEP)
+## <a name="use-the-device-enrollment-program-dep"></a>使用设备注册程序 (DEP)
 DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用户在设备上运行设置助理时，设备会在 Intune 中进行注册。  用户无法注销通过 DEP 注册的设备。 有关详细信息，请参阅[注册设备注册程序 iOS 设备](ios-device-enrollment-program-in-microsoft-intune.md)。
 
-## 在注册了 DEP 或 Apple 配置器的设备上使用公司门户
+## <a name="use-the-company-portal-on-depenrolled-or-apple-configuratorenrolled-devices"></a>在注册了 DEP 或 Apple 配置器的设备上使用公司门户
 
 配置了用户关联的设备可以安装和运行公司门户应用，以下载应用和管理设备。 用户收到设备后，必须完成一些其他步骤，以便完成设置助理并安装公司门户应用。
 
@@ -68,7 +68,7 @@ DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用�
 
 8. 注册现已完成。 现在用户可以使用此设备的完整功能集。
 
-### 有关无用户关联的企业拥有的托管设备
+### <a name="about-corporateowned-managed-devices-with-no-user-affinity"></a>有关无用户关联的企业拥有的托管设备
 
 配置为无用户关联的设备不支持公司门户，并且不应安装应用。 公司门户适用于具有企业凭据的用户，并且需要访问个性化企业资源（例如邮件）的权限。 注册为无用户关联的设备并不具有专用的用户登录。 展台、销售点 (POS) 或共享实用程序设备是注册为“无用户关联”的设备的典型用例。
 
@@ -76,11 +76,11 @@ DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用�
 
 
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [在 Microsoft Intune 中注册设备的先决条件](gprerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,10 +2,10 @@
 title: "从 Intune 取消注册 Windows 设备 | Microsoft Intune"
 description: "介绍如何从 Intune 取消注册 Windows 设备"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
 
 
 ---
 
 
-# 从 Intune 取消注册 Windows 设备
+# <a name="unenroll-your-windows-device-from-intune"></a>从 Intune 取消注册 Windows 设备
 
 如果在 Intune 中进行了注册，但不再想使用工作单位或学校的 Windows 设备且无需访问工作或学校电子邮件、应用或其他资源，则需要取消注册你的设备。 你从 Intune 取消注册你的设备后，你就无法再访问这些资源。 若要深入了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)。
 
@@ -31,7 +31,7 @@ ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 -   [取消注册 Windows 8.1 计算机](#unenroll-your-windows-8-1-computer)
 -   [取消注册 Windows Phone 8.1 设备](#unenroll-your-windows-phone-8-1-device)
 
-## 取消注册 Windows 10 设备
+## <a name="unenroll-your-windows-10-device"></a>取消注册 Windows 10 设备
 
 1.  从应用列表，请点击“公司门户”  应用。
 
@@ -41,7 +41,7 @@ ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 4.  点击**删除** &gt; **删除**。
 
-## 取消注册 Windows 8.1 计算机
+## <a name="unenroll-your-windows-81-computer"></a>取消注册 Windows 8.1 计算机
 
 1.  转至**电脑设置** &gt; **网络** &gt; **工作区**。
 
@@ -51,7 +51,7 @@ ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 4.  在打开的弹出窗口中，选择“关闭”。
 
-## 取消注册 Windows Phone 8.1 设备
+## <a name="unenroll-your-windows-phone-81-device"></a>取消注册 Windows Phone 8.1 设备
 
 1.  转到**设置** &gt; **工作区**。
 
@@ -61,10 +61,10 @@ ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 4.  在“删除帐户”对话框中，点击“删除”。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
