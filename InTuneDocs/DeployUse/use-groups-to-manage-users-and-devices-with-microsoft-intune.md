@@ -2,9 +2,10 @@
 title: "使用组来管理用户和设备 | Microsoft Intune"
 description: "使用“组”工作区创建和管理组。"
 keywords: 
-author: Nbigman
+author: Mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +14,12 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 
 
 ---
-# 在 Microsoft Intune 中使用组来管理用户和设备
+# <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用组来管理用户和设备
 
 本主题介绍如何在 Intune 中创建组。 其中还提供了有关在未来数月将如何更改组的管理的信息。 
 
@@ -31,25 +32,25 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 >若未显示 Azure AD 门户链接，则表明正在使用当前组管理方法，如[使用 Microsoft Intune 创建组以管理用户和设备](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)中所述。
 
 
-## “组”的管理员体验改善通知
+## <a name="notice-of-upcoming-improvements-to-the-admin-experience-for-groups"></a>“组”的管理员体验改善通知
 
 用户称希望企业移动性和安全性具有一致的分组和目标设定体验。 我们不负众望。 根据用户反馈，Intune 组即将转换为基于 Azure Active Directory 的安全组。 这将跨 Intune 和 Azure Active Directory (Azure AD) 统一组管理。 新体验意味着用户无需在服务间复制组。 还通过选择使用 Windows PowerShell 和 Microsoft Graph 提供扩展性。
 
-### 这现在对我有何影响？
-此更改目前不会对用户造成影响。 但即将推出以下内容：
+### <a name="how-does-this-affect-me-right-now"></a>这现在对我有何影响？
+如果你已经是 Intune 客户，则此更改现在不会影响你。 但即将推出以下内容：
 
--   2016 年 9 月，月度服务发布后设置的新帐户将使用 Azure AD 安全组，而不是 Intune 用户组。   
--   2016 年 10 月，月度服务发布后设置的新帐户将管理 Azure AD 门户中基于用户和设备的组。 不会对现有客户造成影响。
--   2016 年 11 月，Intune 产品团队将开始将现有客户迁移到新的基于 Azure AD 的组管理体验。 现在 Intune 中的所有用户和设备组将迁移到 Azure AD 安全组。 从2016 年 11 月开始，将批量完成迁移。 仅当能够将对用户日常工作的影响降到最低，且预计不会对用户造成影响时，我们才会开始迁移。 还将在迁移帐户前通知用户。
+-   新帐户将使用 Azure AD 安全组而不是 Intune 用户组。   
+-   2016 年 11 月，月度服务发布后设置的新帐户将管理 Azure AD 门户中基于用户和设备的组。 不会对现有客户造成影响。
+-   2016 年 12 月，Intune 产品团队将开始将现有客户迁移到新的基于 Azure AD 的组管理体验。 现在 Intune 中的所有用户和设备组将迁移到 Azure AD 安全组。 仅当能够将对用户日常工作的影响降到最低，且预计不会对用户造成影响时，我们才会开始迁移。 还将在迁移帐户前通知用户。
 
 
-### 我将什么时候以何种方式迁移到新的组体验？
-将在一段时间内迁移当前 Intune 客户。 我们将最终确定迁移计划并将在数周后更新此主题，让你了解更多详细信息。 迁移前，会向你发送通知。 如果你有关于迁移的任何问题，请发送电子邮件到 [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) 与我们的迁移团队联系。 有关如何迁移组的详细信息，请参阅[将组迁移到 Active Directory](migrating-groups-to-azure-active-directory.md)。
+### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>我将什么时候以何种方式迁移到新的组体验？
+将在一段时间内迁移当前 Intune 客户。 我们将最终确定迁移计划并将在数周后更新此主题，让你了解更多详细信息。 迁移前，会向你发送通知。 如果有任何关于迁移的问题，请发送电子邮件到 [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) 与我们的迁移团队联系。 有关如何迁移组的详细信息，请参阅[将组迁移到 Active Directory](migrating-groups-to-azure-active-directory.md)。
 
-### 我的现有用户和设备组将发生什么情况？
+### <a name="what-happens-to-my-existing-user-and-device-groups"></a>我的现有用户和设备组将发生什么情况？
  用户在 Intune 中创建的用户组和设备组将迁移到 Azure AD 安全组。 仅当迁移过程中将默认 Intune 组（如“所有用户”组）用于部署时，才会迁移默认 Intune 组。 对某些组而言，迁移可能更复杂。 若在用户组织中进行迁移需要额外步骤，将进行通知。
 
-### 将为我提供哪些新功能？
+### <a name="what-new-features-will-be-available-to-me"></a>将为我提供哪些新功能？
 本次从 Intune 迁移到 Azure Active Directory 将引入以下新功能：
 
 -    在 Intune 中，所有类型的部署都将支持 Azure AD 安全组。
@@ -58,23 +59,23 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 -    管理员在 Azure AD 和 Intune 之间将拥有共享的组管理体验。
 - 将向 Azure AD 添加 Intune 服务管理员角色，以允许 Intune 服务管理员在 Azure AD 中执行组管理任务。
 
-### 哪种 Intune 功能将不可用？
+### <a name="what-intune-functionality-wont-be-available"></a>哪种 Intune 功能将不可用？
 尽管组体验将得到改善，但组织从 Intune 组迁移到 Azure AD 安全组后，某些 Intune 功能将无法使用。
 
-#### 组管理功能
+#### <a name="group-management-functionality"></a>组管理功能
 
 -   迁移后，新建组时无法排除成员或组。 但是，可通过 Azure AD 动态组使用属性创建高级规则，根据设置的条件从组中排除成员。
 -   将不支持“未分组的用户”和“未分组的设备”组。 我们不会将这些组从 Intune 迁移到 Azure AD。
 
 
-#### 组的依赖功能
+#### <a name="groupdependent-functionality"></a>组的依赖功能
 
 -   服务管理员角色将不会有“管理组”权限。
 -   你将不能对 Exchange ActiveSync 设备进行分组。 你的“所有 EAS 托管设备”组将从组转换为报告视图。
 -  利用报表中的组进行透视将不可用。
 -  通知规则的自定义组目标将不可用。
 
-### 我应该针对此更改做什么准备？
+### <a name="what-should-i-do-to-prepare-for-this-change"></a>我应该针对此更改做什么准备？
  以下建议将使你的转换更容易：
 
 - 迁移前清除任何不想要或不需要的 Intune 组。
@@ -82,7 +83,7 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 -  若有无权在 Azure AD 中创建组的管理员，请让 Azure AD 管理员将其添加到 Intune 服务管理员 Azure AD 角色。
 
 
-## 通过 Microsoft Intune 创建组来管理用户和设备
+## <a name="create-groups-to-manage-users-and-devices-with-microsoft-intune"></a>通过 Microsoft Intune 创建组来管理用户和设备
 
 本节介绍如何在 Intune 管理控制台中创建 Intune 组。
 
@@ -96,7 +97,7 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 你的组层次结构也会显示状态摘要，帮助你确定和解决所选组的相关成员问题。
 
-## 创建组
+## <a name="create-groups"></a>创建组
 
 > [!TIP]
 > 在创建组时，请考虑将如何应用策略。 例如，你可能有特定于设备操作系统的策略、特定于组织中不同角色的策略或特定于已在 Active Directory 中定义的组织单位的策略。 分别设置 iOS、Android 和 Windows 设备组，并为每个组织角色分别设置用户组，可能会很有用。
@@ -107,7 +108,7 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 >
 > 每次创建严格策略时，请将其传达给用户。 在创建更多常规组和策略后，请关注如何创建更小的组，以便减少不必要的通信。
 
-### 创建设备组
+### <a name="to-create-a-device-group"></a>创建设备组
 
 1.  在 Intune 管理员控制台中，依次选择“组”&gt;“概述”&gt;“创建组”。
 
@@ -127,7 +128,7 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 在“父组”下的“组”工作区中的“组”列表中，可找到新建的组。 还可以从此处编辑或删除组。
 
-### 创建用户组
+### <a name="to-create-a-user-group"></a>创建用户组
 
 1.  在 Intune 管理员控制台中，依次选择“组”&gt;“概述”&gt;“创建组”。
 
@@ -150,7 +151,7 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 > [!TIP]
 > 安全组是用于填充用户组的绝佳资源。 由于安全组定义谁有权访问哪些资源，因此可顺利地转换到 Intune 用户组。 从 Active Directory 同步到 Azure Active Directory 的安全组，或者在 Azure Active Directory 中通过 Office 365 管理中心或 Azure 门户直接创建的安全组，都可用于在 Intune 中创建用户组。
 
-## 按角色筛选管理员视图
+## <a name="filter-admin-views-by-role"></a>按角色筛选管理员视图
 在已筛选的组视图中，可以管理员角色为基础，定制 IT 管理员可查看的内容。 还可以限制每个 IT 管理员可以管理的组。 在以下情况下有用：
 
 -   希望 IT 管理员仅能够将项目部署到特定用户和设备
@@ -162,12 +163,12 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 -   **系统概述**
 -   **组概述**
--   **Endpoint Protection 概要**
+-   **Endpoint Protection 概述**
 -   **警报概述**
 -   **软件概述**
 -   **策略概述**
 
-### 创建已筛选组视图
+### <a name="to-create-a-filtered-group-view"></a>创建已筛选组视图
 
 1.  在 Intune 管理控制台中，依次选择“管理员”&gt;“管理员管理”&gt;“服务管理员”。
 
@@ -177,17 +178,17 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 设置已筛选组视图后，IT 管理员就只能够查看和选择选定的组。
 
-## 管理组
+## <a name="manage-your-groups"></a>管理组
 创建组后，可继续根据组织的需求对其进行管理。
 
 可以编辑组，更改它的名称或说明或是属于该组的成员。
 
 你可以删除不再能够满足组织需求的组。 删除组的不会删除属于该组的用户。
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 设置组和策略后，查看“预期值”和“状态”检查设计的实际含义。
 
-### 检查你的设计
+### <a name="to-check-your-design"></a>检查你的设计
 
 1. 从一个设备组中选择任何设备，并浏览页面顶部的信息类别。
 2. 选择“策略”。 你将看到的内容类似于此屏幕截图中的 Android 设备的策略设置。
@@ -204,6 +205,6 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
