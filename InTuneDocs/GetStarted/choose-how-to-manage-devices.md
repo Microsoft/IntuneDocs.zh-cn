@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -62,7 +62,6 @@ ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
 
 
 - [使用 Microsoft Intune 管理 Exchange ActiveSync 移动设备](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
-
 
 
 
