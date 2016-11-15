@@ -2,10 +2,10 @@
 title: "从 Intune 取消注册 Android 设备会发生什么情况？ | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
-ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
 
 
 ---
 
 
-# 从 Intune 取消注册 Android 设备会发生什么情况？
+# <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>从 Intune 取消注册 Android 设备会发生什么情况？
 
 从 Intune 取消注册 Android 设备时：
 
@@ -40,10 +40,10 @@ ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
 
 有关如何取消注册的说明，请参阅[通过使用公司门户应用从 Intune 取消注册设备](unenroll-your-device-from-intune-android.md)。
 
-需要帮助吗? 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
+需要帮助吗? 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 [Microsoft Android 团队](mailto:wintunedroidfbk@microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

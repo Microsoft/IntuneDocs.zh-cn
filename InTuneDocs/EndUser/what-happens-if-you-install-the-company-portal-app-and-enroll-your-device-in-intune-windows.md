@@ -2,10 +2,10 @@
 title: "安装公司门户应用并在 Intune 中注册 Windows 设备后会发生什么情况？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# 安装公司门户应用并在 Intune 中注册 Windows 设备后会发生什么情况？
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Windows 设备后会发生什么情况？
 
 安装公司门户应用，然后使用该应用注册 Windows 或 Windows Phone 设备，即表示你允许 IT 管理员管理你的设备以保护公司或学校数据的安全。 本主题介绍设备版本低于 Windows 10 时会发生的情况。 对于 Windows 10 设备，请参阅[相关主题](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)。
 
-## 注册后，所有 Windows 设备会发生什么情况
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>注册后，所有 Windows 设备会发生什么情况
 在 Intune 中注册 Windows 或 Windows Phone 设备，可实现以下操作：
 
 -   访问公司网络、你的电子邮件和工作文件。
@@ -41,7 +41,7 @@ ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 -   将设备重置回制造商的默认设置。 如果设备丢失或被盗，这非常有用。
 
--   仅删除公司相关文件和业务应用。 *不会删除你的个人数据和设置。*
+-   仅删除公司相关文件和业务应用。 *不会删除个人数据和设置。*
 
 -   IT 管理员可看到设备上安装的软件，包括个人安装的软件。
 
@@ -53,7 +53,7 @@ ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 -   阻止用户拍摄公司相关数据。
 
-## 注册后，所有 Windows 电脑会发生什么情况
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>注册后，所有 Windows 电脑会发生什么情况
 
 -  将在计算机上安装某个软件，使 IT 管理员能够管理计算机，并使你能够访问公司资源（如应用和支持信息）。 IT 管理员可能会自动更新此软件。
 
@@ -63,7 +63,7 @@ ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 -  IT 管理员可在计算机上安装应用和更新。
 
-## 设备注册之后每 8 小时会发生什么情况
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每 8 小时会发生什么情况
 已注册的设备将以约 8 小时的间隔执行以下操作：
 
 -   下载 IT 管理员已提供的任何策略或应用更新。
@@ -72,10 +72,10 @@ ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 -   发送任何公司应用清单更新。
 
-如有疑问，请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
