@@ -2,8 +2,8 @@
 title: "配置证书配置文件 | Microsoft Intune"
 description: "了解如何创建 Intune 证书配置文件。"
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
-ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
 
 
 ---
 
-# 配置 Itune 证书配置文件
+# <a name="configure-intune-certificate-profiles"></a>配置 Itune 证书配置文件
 按照[为 SCEP 配置证书基础结构](configure-certificate-infrastructure-for-scep.md)或[为 PFX 配置基础结构](configure-certificate-infrastructure-for-pfx.md)中所述配置基础结构和证书后，可以创建证书配置文件。 过程如下：
 
 - **任务 1**：导出受信任的根 CA 证书
@@ -29,15 +29,15 @@ ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
   - SCEP 证书配置文件
   - .PFX 证书配置文件
 
-## **任务 1**：导出受信任的根 CA 证书
+## <a name="task-1-export-the-trusted-root-ca-certificate"></a>**任务 1**：导出受信任的根 CA 证书
 将受信任的根证书颁发机构 (CA) 证书从发证 CA 或从信任你的发证 CA 的任何设备中导出为“**.cer**”文件。 不要导出私钥。
 
 设置受信任的证书配置文件时，将导入该证书。
 
-## **任务 2**创建受信任的证书配置文件
+## <a name="task-2-create-trusted-certificate-profiles"></a>**任务 2**创建受信任的证书配置文件
 必须在创建受信任的证书配置文件后，才能创建简单证书注册协议 (SCEP) 或 PKCS #12 (.PFX) 证书配置文件。 对于每个移动设备平台，你需要一个受信任的证书配置文件和一个 SCEP 或 .PFX 配置文件。
 
-### 创建受信任的证书配置文件
+### <a name="to-create-a-trusted-certificate-profile"></a>创建受信任的证书配置文件
 
 1.  在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”，然后选择设备平台。 可以为这些设备创建受信任的证书配置文件：
 
@@ -53,14 +53,15 @@ ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 -  Windows Phone 8.1 及更高版本
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 2.  添加**受信任的证书配置文件**策略。
 
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-3.  输入所需信息以配置 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 的受信任证书配置文件设置。 
+3.  输入所需信息以配置 Android、iOS、Mac OS X、Windows 8.1 或 Windows Phone 8.1 的受信任证书配置文件设置。
 4.  在“**证书文件**”设置中，导入你从发证 CA 导出的受信任的根 CA 证书 (.cer file)。 “目标存储”设置仅适用于运行 Windows 8.1 及更高版本的设备并且该设备必须具有多个证书存储。
-    
+
 4.  选择“**保存策略**”。
 
 新的策略将显示在“**策略**”工作区中。 现在你可以进行部署。
@@ -68,12 +69,12 @@ ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 > [!NOTE]
 >
 > Android 和 Android for Work 设备将显示第三方已安装受信任的证书的通知。
-    
 
-## **任务 3**：创建 SCEP 或 .PFX 证书配置文件
+
+## <a name="task-3-create-scep-or-pfx-certificate-profiles"></a>**任务 3**：创建 SCEP 或 .PFX 证书配置文件
 创建受信任的 CA 证书配置文件后，为你要使用的各个平台创建 SCEP 或 .PFX 证书配置文件。 创建 SCEP 证书配置文件时，必须为相同平台指定受信任的证书配置文件。 这链接了两个证书配置文件，但仍然必须单独部署各个配置文件。
 
-### 创建 SCEP 证书配置文件
+### <a name="to-create-an-scep-certificate-profile"></a>创建 SCEP 证书配置文件
 
 1.  在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”，然后选择设备平台。  可以为这些设备创建 SCEP 证书配置文件：
 
@@ -90,7 +91,7 @@ ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 -  Windows Phone 8.1 及更高版本
 
 2.  添加 **SCEP 证书配置文件**策略
-    
+
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
 3.  按照配置文件配置页上的说明配置 SCEP 证书配置文件设置。
@@ -108,7 +109,7 @@ ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 新的策略将显示在“**策略**”工作区中。 现在你可以进行部署。
 
-### 创建 .PFX 证书配置文件
+### <a name="to-create-a-pfx-certificate-profile"></a>创建 .PFX 证书配置文件
 
 1.  在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”，然后选择设备平台。 对于以下各项支持 .PFX 证书：
   - Android 4 及更高版本
@@ -117,15 +118,15 @@ ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
   - Windows Phone 10 及更高版本
   - iOS 8.0 及更高版本）    
 
-    
-2.  添加 **.PFX 证书配置文件**策略。 
+
+2.  添加 **.PFX 证书配置文件**策略。
       了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 3.  在策略窗体上输入请求的信息。
 4.  选择“**保存策略**”。
 
 新的策略将显示在“**策略**”工作区中。 现在你可以进行部署。
 
-## 部署证书配置文件
+## <a name="deploy-certificate-profiles"></a>部署证书配置文件
 部署证书配置文件时，将在设备上安装受信任的 CA 证书配置文件的证书文件。 设备使用 SCEP 或 .PFX 证书配置文件来创建设备需要的证书。
 
 证书配置文件仅安装在运行你创建配置文件时使用的平台的设备上。
@@ -146,7 +147,7 @@ ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 如果你选择的是已部署的策略，则可以在策略列表的下半部分看到有关部署的详细信息。
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 
 接下来，了解如何使用证书来帮助保护电子邮件、Wi-Fi 和 VPN 配置文件。
 
@@ -156,6 +157,6 @@ ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

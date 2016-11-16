@@ -2,7 +2,8 @@
 title: "与 Microsoft 云服务的 Intune 集成 | Microsoft Intune"
 description: "与 Microsoft 云服务和产品以及其他 Microsoft 产品的 Intune 集成"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 58f7293ed8fbb99572f8ed3a264defcc7a2d225c
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: b2df2a2ec092ed9bb7d12b7f51a4fd9c9858f041
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: 58f7293ed8fbb99572f8ed3a264defcc7a2d225c
 ##与其他 Microsoft 云服务的集成
 
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 与其他 Microsoft 云服务共享一个公用基础。 当你使用同一帐户订阅多个云服务时，那些服务将使用相同 Microsoft Azure AD 基础结构，并且它们是 Azure AD 的租户。 Azure AD 提供 Microsoft 云服务的核心目录和身份管理功能。
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 与其他 Microsoft 云服务共享一个公用基础。 使用同一帐户订阅多个云服务时，这些服务将使用相同 Microsoft Azure AD 基础结构，并且它们是 Azure AD 的租户。 Azure AD 提供 Microsoft 云服务的核心目录和身份管理功能。
 
 详细了解 TechNet 库中的[管理 Azure AD ](http://technet.microsoft.com/library/hh967611.aspx)。
 
@@ -36,13 +37,13 @@ ms.openlocfilehash: 58f7293ed8fbb99572f8ed3a264defcc7a2d225c
 
 当你使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 与 [!INCLUDE[cmshort](../includes/cmshort_md.md)] 时，不要使用 [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] 来管理 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]，而是改为使用 [!INCLUDE[cmshort](../includes/cmshort_md.md)] 控制台。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 仍会在 Azure 中使用其云存储以托管你部署到使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理的设备的软件。
 
-有关详细信息，请参阅 [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 文档中的[使用 Configuration Manager 和 Microsoft Intune 管理移动设备](http://msdn.microsoft.com/library/2c6bd0e5-d436-41c8-bf38-30152d76be10)。
+有关详细信息，请参阅 [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 文档中的[使用 Configuration Manager 和 Microsoft Intune 管理移动设备](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)。
 
 ### 另请参阅
 [启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

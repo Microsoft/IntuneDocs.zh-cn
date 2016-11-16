@@ -2,9 +2,10 @@
 title: "配置 SCEP 证书基础结构 |Microsoft Intune"
 description: "用于创建和部署 SCEP 证书配置文件的基础结构。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
-ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: fc9140ac9e6727ae5ac76b3da950baab29326078
 
 ---
-# 配置 SCEP 证书基础结构
+# <a name="configure-certificate-infrastructure-for-scep"></a>配置 SCEP 证书基础结构
 本主题介绍创建和部署 SCEP 证书配置文件需要具备的基础结构。
 
-### 本地基础结构
+### <a name="onpremises-infrastructure"></a>本地基础结构
 
 -    **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
 
@@ -39,7 +40,7 @@ I
 >-  此外，托管 WAP 的服务器必须具有与要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
     有关 WAP 证书的信息，请参阅[计划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的“计划证书”部分。 有关 WAP 服务器的一般信息，请参阅 [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx)（使用 Web 应用程序代理）。|
 
-### 网络要求
+### <a name="network-requirements"></a>网络要求
 
 从 Internet 到外围网络，从所有主机或 Internet 上的 IP 地址到 NDES 服务器，都支持 443 端口。
 
@@ -48,7 +49,7 @@ I
 建议通过代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access 代理](https://technet.microsoft.com/en-us/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
 
 
-### <a name="BKMK_CertsAndTemplates"></a>证书和模板
+### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a>证书和模板
 
 |对象|详细信息|
 |----------|-----------|
@@ -57,13 +58,13 @@ I
 |**服务器身份验证证书**|发证 CA 或公共 CA 请求你在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。|
 |**受信任的根 CA 证书**|你可以从根 CA 或信任该根 CA 的任何设备中将其导出为 **.cer** 文件，并通过使用可信 CA 证书配置文件将其部署到设备。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
 
-### <a name="BKMK_Accounts"></a>帐户
+### <a name="a-namebkmkaccountsaaccounts"></a>帐户
 
 |Name|详细信息|
 |--------|-----------|
 |**NDES 服务帐户**|指定用作 NDES 服务帐户的域用户帐户。|
 
-## <a name="BKMK_ConfigureInfrastructure"></a>配置你的基础结构
+## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a>配置基础结构
 在可以配置证书配置文件之前，必须完成以下需要 Windows Server 2012 R2 和 Active Directory Certificate Services (ADCS) 知识的任务：
 
 **任务 1**：创建 NDES 服务帐户
@@ -76,21 +77,21 @@ I
 
 **任务 5**：启用、安装和配置 Intune 证书连接器
 
-### 任务 1 - 创建 NDES 服务帐户
+### <a name="task-1-create-an-ndes-service-account"></a>任务 1 - 创建 NDES 服务帐户
 
 创建用作 NDES 服务帐户的域用户帐户。 你可以在安装和配置 NDES 之前，在配置发证 CA 上的模板时指定该帐户。 确保用户具有默认权限，即**本地登录**、**作为服务登录**和**作为批处理作业登录**的权限。 某些组织已采用强化策略禁用这些权限。
 
 
 
 
-### 任务 2 - 配置证书颁发机构上的证书模板
+### <a name="task-2-configure-certificate-templates-on-the-certification-authority"></a>任务 2 - 配置证书颁发机构上的证书模板
 在此任务中，你将：
 
 -   配置 NDES 证书模板
 
 -   发布 NDES 证书模板
 
-##### 配置证书颁发机构
+##### <a name="to-configure-the-certification-authority"></a>配置证书颁发机构
 
 1.  以企业管理员身份登录。 
 
@@ -143,12 +144,12 @@ I
 
 4.  在发证 CA 上，使用证书颁发机构管理单元发布证书模板。
 
-    1.  选择**证书模板**节点，单击**操作**-&gt;**新建**&gt;**要颁发的证书模板**，然后选择你在步骤 2 中创建的模板。
+    1.  选择“证书模板”节点，单击“操作”-&gt;“新建”&gt;“要颁发的证书模板”，然后选择步骤 2 中创建的模板。
 
     2.  通过查看 **“证书模板”** 文件夹下已发布的模板来对它进行验证。
 
 
-### 任务 3 - 在 NDES 服务器上配置必备组件
+### <a name="task-3-configure-prerequisites-on-the-ndes-server"></a>任务 3 - 在 NDES 服务器上配置必备组件
 在此任务中，你将：
 
 -   将 NDES 添加到 Windows Server 并配置 IIS 以支持 NDES
@@ -189,7 +190,7 @@ I
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### 任务 4 - 配置 NDES 以与 Intune 一起使用
+### <a name="task-4-configure-ndes-for-use-with-intune"></a>任务 4 - 配置 NDES 以与 Intune 一起使用
 在此任务中，你将：
 
 -   配置 NDES 以与发证 CA 一起使用
@@ -198,7 +199,7 @@ I
 
 -   在 IIS 中配置请求筛选
 
-##### 将 NDES 配置为与 Intune 一起使用的步骤
+##### <a name="to-configure-ndes-for-use-with-intune"></a>将 NDES 配置为与 Intune 一起使用的步骤
 
 1.  在 NDES 服务器上，打开“AD CS 配置”向导，然后进行以下配置。
 
@@ -247,7 +248,7 @@ I
 
     如果你收到 **503 服务不可用**的信息，请查看事件查看器。 可能是因 NDES 用户缺少权限导致应用程序池停止。 任务 1 中描述了这些权限。
 
-##### 要安装和绑定 NDES 服务器上的证书
+##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>要安装和绑定 NDES 服务器上的证书
 
 1.  在你的 NDES 服务器上，请求并安装来自你的内部 CA 或公共 CA 的 **服务器身份验证** 证书。 你随后将可以绑定 IIS 中的 SSL 证书。
 
@@ -271,7 +272,7 @@ I
 
     **使用者名称** — 必须与你安装证书的服务器（NDES 服务器）的 DNS 名称相同。
 
-##### 若要配置 IIS 请求筛选
+##### <a name="to-configure-iis-request-filtering"></a>若要配置 IIS 请求筛选
 
 1.  在 NDES 服务器上打开 **“IIS 管理器”**，在 **“连接”** 窗格中选择 **“默认网站”** ，然后打开 **“请求筛选”**。
 
@@ -293,14 +294,14 @@ I
 
 4.  重新启动 NDES 服务器。 服务器现已支持证书连接器。
 
-### 任务 5 — 启用、安装和配置 Intune 证书连接器
+### <a name="task-5-enable-install-and-configure-the-intune-certificate-connector"></a>任务 5 — 启用、安装和配置 Intune 证书连接器
 在此任务中，你将：
 
 在 Intune 中启用对 NDES 的支持。
 
 在 NDES 服务器上下载、安装和配置证书连接器。
 
-##### 启用对证书连接器的支持
+##### <a name="to-enable-support-for-the-certificate-connector"></a>启用对证书连接器的支持
 
 1.  打开[“Intune 管理控制台”](https://manage.microsoft.com)，单击**管理**&gt;**证书连接器**。
 
@@ -308,7 +309,7 @@ I
 
 3.  选择“启用证书连接器” ，然后单击“确定” 。
 
-##### 下载、安装和配置证书连接器
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下载、安装和配置证书连接器
 
 1.  打开[“Intune 管理控制台”](https://manage.microsoft.com)，然后单击**管理** &gt;**移动设备管理**&gt;**证书连接器**&gt;**下载证书连接器**。
 
@@ -342,13 +343,13 @@ I
 
 若要验证服务是否正在运行，打开浏览器然后输入以下 URL 将返回 **“403”** 错误：
 
-**http:// &lt;NDES 服务器的 FQDN&gt;/certsrv/mscep/mscep.dll**
+**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 你现在可以像[配置证书配置文件](Configure-Intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

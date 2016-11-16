@@ -1,9 +1,9 @@
 ---
 title: "管理 Intune 许可证 | Microsoft Intune"
-description: "说明如何为你的 Intune 订阅用户分配许可证"
+description: "为你的 Intune 订阅用户分配许可证"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -14,8 +14,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
-ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: df2a8c526f3c569a491d999ee4c80a36a30b77e3
 
 
 ---
@@ -43,7 +43,7 @@ ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
 
 3.  现在，该用户帐户拥有所需的权限，可以使用该服务并在管理组件中注册设备。
 
-> [!NOTE] 用户在注册设备后会显示在控制台中。 
+> [!NOTE] 用户在注册设备后会显示在控制台中。
 
 ### 使用 PowerShell 来选择性地管理 EMS 用户许可证
 使用 Microsoft 企业移动性 + 安全性（以前称为“企业移动性套件”）的组织中可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。
@@ -93,6 +93,6 @@ ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

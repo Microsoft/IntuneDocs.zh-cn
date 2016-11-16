@@ -2,8 +2,8 @@
 title: "使用电子邮件配置文件访问公司电子邮件 | Microsoft Intune"
 description: "电子邮件配置文件设置可用于配置移动设备上特定电子邮件客户端的电子邮件访问设置。"
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f8767f191df76e8f166767c51fff357b251bbd4
-ms.openlocfilehash: f736c408f5a4ece65eeef35fb8d1be9a9b29c1b1
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
 
 
 ---
 
-# 使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问
+# <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 许多移动平台包含一个作为操作系统一部分附带的本机电子邮件客户端。 可使用本主题中所述的电子邮件配置文件对这些客户端中的某一些进行设置。
 
 电子邮件配置文件设置可用于设置移动设备上特定电子邮件客户端的电子邮件访问设置。 在受支持的平台上，可以使用 Microsoft Intune 设置本机电子邮件客户端，以使用户能够在不进行任何其他设置的情况下在个人设备上访问公司电子邮件。
@@ -56,20 +59,20 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 >**Android for Work**：Intune 配置文件只应用于设备的工作配置文件中的特定电子邮件应用，不会影响设备用户配置文件上的电子邮件配置。
 
 
-## 保护电子邮件配置文件
+## <a name="secure-email-profiles"></a>保护电子邮件配置文件
 可以使用证书或密码保护电子邮件配置文件。
 
-### 证书
+### <a name="certificates"></a>证书
 当你创建电子邮件配置文件时，你可以选择之前在 Intune 中创建的证书配置文件。 该配置文件又称为身份证书，用于根据受信任的证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会部署到对电子邮件连接进行身份验证的计算机（通常是本机邮件服务器）。
 
 有关如何在 Intune 中创建和使用证书配置文件的详细信息，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。
 
-### 用户名和密码
+### <a name="user-name-and-password"></a>用户名和密码
 用户通过提供其用户名和密码向本机邮件服务器进行身份验证。
 
 密码不包含在电子邮件配置文件中，因此用户在连接到电子邮件时需要提供密码。
 
-### 创建一个电子邮件配置文件
+### <a name="create-an-email-profile"></a>创建一个电子邮件配置文件
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”。
 
@@ -95,9 +98,9 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 | ----------- | --------------- |
     |**Name**|电子邮件配置文件的唯一名称。|
     |**描述**|可帮助你识别此配置文件的说明。|
-    |**Host**|托管本机电子邮件服务的公司服务器的主机名。|
-    |**帐户名称**|电子邮件帐户的显示名称，因为它将在用户的设备上显示。|
-    |**Username**|获取电子邮件帐户用户名的方式。 对本地 Exchange 服务器选择“用户名”，或对 Office 365 选择“用户主体名称”。|
+    |**主机**|托管本机电子邮件服务的公司服务器的主机名。|
+    |**帐户名**|电子邮件帐户的显示名称，因为它将在用户的设备上显示。|
+    |**用户名**|获取电子邮件帐户用户名的方式。 对本地 Exchange 服务器选择“用户名”，或对 Office 365 选择“用户主体名称”。|
     |**电子邮件地址**|每个设备上用户电子邮件地址的生成方式。 选择“主 SMTP 地址”以使用主 SMTP 地址登录到 Exchange，或使用“用户主体名称”以使用完整主体名称作为电子邮件地址。|
     |**身份验证方法**（Android for Work、Samsung KNOX 和 iOS）|选择“用户名和密码”或“证书”作为电子邮件配置文件所用的身份验证方法。|
     |**为客户端身份验证选择客户端证书(身份证书)**（Android for Work、Samsung KNOX 和 iOS）|请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 证书。 有关如何在 Intune 中使用证书配置文件的详细信息，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。 仅当身份验证方法为“证书”时才会显示此选项。|
@@ -117,7 +120,7 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
 新的策略将在“策略”  工作区的“配置策略”  节点处显示。
 
-## 部署策略
+## <a name="deploy-the-policy"></a>部署策略
 
 1.  在“策略”工作区中，选择想要部署的策略，然后选择“管理部署”。
 
@@ -135,6 +138,6 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

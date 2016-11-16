@@ -2,7 +2,8 @@
 title: "管理帐户、网站和权限 | Microsoft Intune"
 description: "管理帐户权限网站"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 29d6f9cd31e6fbf287ae30fb2171bf752ff71157
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 69b19cec363c769209dab02a941f286057e9dc3e
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: 29d6f9cd31e6fbf287ae30fb2171bf752ff71157
 
 ## 管理员帐户和具有特殊权限的用户帐户
 
-以下帐户和权限将用于 Intune。
+以下将用于 Intune 的帐户和权限。
 
 ### 租户管理员
 |权限级别|更多信息|
@@ -94,6 +95,6 @@ ms.openlocfilehash: 29d6f9cd31e6fbf287ae30fb2171bf752ff71157
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

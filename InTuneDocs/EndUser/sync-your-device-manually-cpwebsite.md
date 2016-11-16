@@ -2,7 +2,8 @@
 title: "使用公司门户网站手动同步设备 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,26 +15,27 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 62b9808c234b31f08467a971d8e4d4cb600e563b
 
 
 ---
 
 
-# 使用公司门户网站手动同步设备
+# <a name="sync-your-device-manually-by-using-the-company-portal-website"></a>使用公司门户网站手动同步设备
 
-如果你的应用安装或一些其他任务所需时间过长，则可尝试手动同步设备，这可能有助于加快安装或执行任务的速度。 请使用以下与你所使用的设备类型相匹配的说明。 
+如果你的应用安装或一些其他任务所需时间过长，则可尝试手动同步设备。 手动同步可能有助于加快安装或执行任务的速度。
 
-同步功能仅适用于下面列出的版本。
+同步功能仅适用于以下设备。 如果未列出你的设备，则不支持同步。 使用与你正在使用的设备相匹配的链接。 
 
+* [iOS](sync-your-device-manually-ios.md)
 * [Windows 10 移动版](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 桌面版](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
-* [iOS](sync-your-device-manually-ios.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+
+<!--HONumber=Nov16_HO1-->
 
 

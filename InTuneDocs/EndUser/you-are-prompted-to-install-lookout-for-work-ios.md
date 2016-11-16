@@ -2,7 +2,7 @@
 title: "系统提示在 iOS 设备上安装 Lookout for Work | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
 
 ---
 
-# 系统提示在 iOS 设备上安装 Lookout for Work
+# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>系统提示在 iOS 设备上安装 Lookout for Work
 
 在可访问工作之前，IT 管理员需要你安装 Lookout for Work 应用，该应用会查找潜在安全威胁来帮助保护你的设备。 设备上显示的提示可能有所不同，具体取决于 IT 管理员对 Lookout for Work 的设置。
 
@@ -48,13 +48,13 @@ Lookout for Work 安装完成，如果设备上找不到安全威胁，将显示
 
 如果 Lookout for Work 在设备上找到安全威胁，那么你将看到有关如何解决此问题的说明。
 
-**安装不成功**
+**如果安装不成功**
 
 有时安装可能会因不可控的技术问题而失败。 如果发生此情况，请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

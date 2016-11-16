@@ -1,63 +1,75 @@
 ---
 title: "使用 App Wrapping Tool 包装 Android 应用 | Microsoft Intune"
-description: "使用本题中提供的信息以了解不修改应用代码本身即可包装你的 Android 应用的方法。 准备应用以便应用移动应用管理策略。"
+description: "使用本文中提供的信息，了解不更改应用本身代码即可包装 Android 应用的方法。 准备应用以便应用移动应用管理策略。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/06/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
+ms.sourcegitcommit: b25c7d7063ce586bb1cd960534f3e2ed57f6aec4
+ms.openlocfilehash: 7c61ad6a3122793ddd66547b7040f978705b540c
 
 
 ---
 
-# 使用 Intune 应用包装工具为移动应用程序管理准备 Android 应用
-使用**适用于 Android 的 Microsoft Intune 应用包装工具**修改内部 Android 应用的行为，让你配置应用的功能而无需修改应用自身的代码。
+# <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具为移动应用程序管理准备 Android 应用
 
-该工具是一个 Windows 命令行应用程序，它在 PowerShell 中运行并在应用周围创建“包装器”。 处理应用后，可以使用你配置的[移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)来更改应用的功能。
+通过限制应用的功能，而不更改应用自身的代码，使用适用于 Android 的 Microsoft Intune 应用包装工具，更改内部 Android 应用的行为。
 
-如果你的应用正在使用 Azure Active Directory 身份验证库 (ADAL)，则在包装你的应用之前，必须完成[如何包装使用 Azure Active Directory 库的应用](#how-to-wrap-apps-that-use-the-azure-active-directory-library)中的步骤。 如果不确定你的应用是否使用此库，请联系应用的开发人员。
+该工具是一个 Windows 命令行应用程序，它在 PowerShell 中运行并在 Android 应用周围创建“包装器”。 包装应用后，可通过在 Intune 中配置[移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)来更改应用的功能。
 
-在运行工具前查看[运行应用包装工具的安全注意事项](#security-considerations-for-running-the-app-wrapping-tool)。 若要下载该工具，请参阅[适用于 Android 的 Microsoft Intune 应用包装工具](https://www.microsoft.com/download/details.aspx?id=47267)。
 
-## 步骤 1：满足使用应用包装工具的先决条件
+在运行工具前查看[运行应用包装工具的安全注意事项](#security-considerations-for-running-the-app-wrapping-tool)。 若要下载该工具，请转到 GitHub 上的[适用于 Android 的 Microsoft Intune 应用包装工具](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)。
+
+
+
+## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>满足使用应用包装工具的先决条件
 
 -   必须在运行 Windows 7 或更高版本的 Windows 计算机上运行应用包装工具。
 
--   输入应用必须是有效的 Android 应用程序包且具有扩展名为 **.apk** 的文件，同时：
+-   输入应用必须是有效的 Android 应用程序包，且文件扩展名为 .apk，同时：
 
-    -   不能加密
+    -   不能对其进行加密。
+    -   必须尚未被 Intune 应用包装工具包装。
+    -   必须是针对 Android 4.0 或更高版本编写的。
 
-    -   必须尚未被应用包装工具包装
+-   应用必须由你的公司开发，或为你的公司开发。 无法将此工具用在从 Google Play 商店中下载的应用。
 
-    -   必须是针对 Android 4.0 或更高版本编写的
-
--   应用必须由公司开发，或为公司开发。 无法使用此工具处理从 Google Play 商店中下载的应用。
-
--   若要运行应用包装工具，必须安装最新版 [Java Runtime Environment](http://java.com/download/)，然后确保已在 Windows 环境变量中将 Java 路径变量设置为 **C:\ProgramData\Oracle\Java\javapath**。 有关更多帮助，请参阅 [Java 文档](http://java.com/download/help/)。
+-   若要运行应用包装工具，必须安装最新版 [Java 运行时环境](http://java.com/download/)，然后确保已在 Windows 环境变量中将 Java 路径变量设置为 C:\ProgramData\Oracle\Java\javapath。 有关更多帮助，请参阅 [Java 文档](http://java.com/download/help/)。
 
     > [!NOTE]
-    > 在某些情况下，32 位版本的 Java 可能会导致内存问题。 我们建议你改为安装 64 位版本。
+    > 在某些情况下，32 位版本的 Java 可能会导致内存问题。 最好安装 64 位版本。
 
-## 步骤 2：安装应用包装工具
+- Android 要求对所有应用包 (.apk) 进行签名。 使用 Java keytool 生成对已包装输出应用进行签名所需的凭据。 例如，以下命令使用 Java 可执行文件 keytool.exe 生成应用包装工具可用于对已包装输出应用进行签名的密钥。
 
-1.  将应用包装工具的安装文件从 Microsoft 下载中心下载到 Windows 计算机，并打开该安装文件。
+    ```
+    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
+    ```
+    此示例通过使用 RSA 算法生成密钥对（2,048 位公钥和相关私钥）。 然后将公钥包装成存储为单元素证书链的 X.509 v3 自签名证书。 此证书链和私钥被存储在一个名为“mykeystorefile”的新密钥存储条目中，由别名“mykeyalias”标识。 该密钥存储条目的有效期为 50,000 天。
+
+    该命令将提示为密钥存储和密钥提供密码。 使用安全的密码，但需要记住密码，因为运行应用包装工具时会用到该密码。
+
+    有关详细的文档，请在 Oracle 文档网站上了解更多关于 Java [密钥工具](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) 和 Java [密钥存储](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)的信息。
+
+## <a name="install-the-app-wrapping-tool"></a>安装应用包装工具
+
+1.  从 [GitHub 存储库](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)将 Intune App Wrapping Tool for Android 的安装文件 InstallAWT.exe 下载到 Windows 计算机。 打开该安装文件。
 
 2.  接受许可协议，然后完成安装。
 
-注意将工具安装到的文件夹。 默认位置为：**C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**。
+注意将工具安装到的文件夹。 默认位置为：C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool。
 
-## 步骤 3：运行应用包装工具
+## <a name="run-the-app-wrapping-tool"></a>运行应用包装工具
 
-1.  在安装了 App Wrapping Tool 的 Windows 计算机上，在管理员模式下打开 PowerShell 窗口。
+1.  在安装了应用包装工具的 Windows 计算机上，在管理员模式下打开 PowerShell 窗口。
 
 2.  从安装该工具的文件夹导入应用包装工具 PowerShell 模块：
 
@@ -65,116 +77,69 @@ ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  同时使用 **invoke-AppWrappingTool** 命令及以下参数来运行该工具。 标记为“可选”的参数适用于使用 Azure Active Directory 库 (ADAL) 的应用。 有关详细信息，请参阅[如何包装使用 Azure Active Directory 库的应用](#how-to-wrap-apps-that-use-the-azure-active-directory-library)。
+3.  通过使用 **invoke-AppWrappingTool** 命令运行该工具，它使用以下语法：
+    ```
+    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
+    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
+    ```
 
-|参数|更多信息|示例|
+ 下表详细说明了 **Invoke-appwrappingtool** 命令的属性：
+
+|属性|信息|示例|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|源 Android 应用 (.apk) 的路径。| |
-|**-OutputPath**&lt;String&gt;|到“输出”Android 应用的路径。 如果这是与 InputPath 相同的目录路径，则打包将失败。| |
-|**-KeyStorePath**&lt;String&gt;|到包含用于签名的公钥/私钥对的密钥库文件的路径。| |
-|**-KeyStorePassword**&lt;SecureString&gt;|用于解密密钥库的密码。 Android 要求对所有的应用程序包 (.apk) 签名。 使用 Java 密钥工具生成 KeyStorePassword，如示例中所示。 阅读有关 [keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) 的更多信息。|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
+|**-OutputPath**&lt;String&gt;|指向输出 Android 应用的路径。 如果这是与 InputPath 相同的目录路径，则打包将失败。| |
+|**-KeyStorePath**&lt;String&gt;|包含用于签名的公钥/私钥对的密钥库文件的路径。|默认情况下，密钥存储文件存储在“C:\Program Files (x86)\Java\jreX.X.X_XX\bin”中。 |
+|**-KeyStorePassword**&lt;SecureString&gt;|用于解密密钥库的密码。 Android 要求对所有的应用程序包 (.apk) 签名。 使用 Java keytool 生成 KeyStorePassword。 在此处了解更多有关 Java [密钥存储](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)的信息。| |
 |**-KeyAlias**&lt;String&gt;|要用于进行签名的密钥的名称。| |
 |**-KeyPassword**&lt;SecureString&gt;|用于解密私钥的密码，该私钥将用于签名。| |
-|**-SigAlg**&lt;SecureString&gt;|用于签名的签名算法的名称。 该算法必须与私钥兼容。|示例：SHA256withRSA、SHA1withRSA、MD5withRSA|
-|**-ClientID**&lt;GUID&gt;|输入应用的 Azure Active Directory 客户端 ID（可选）。| |
-|**-AuthorityURI**&lt;Uri&gt;|输入应用的 Azure Active Directory 颁发机构 URI（可选）。| |
-|**-SkipBroker**&lt;Boolean&gt;|指示输入应用程序是否支持设备级中转单一登录（可选）。 |**True** - 输入应用程序不支持设备级中转单一登录。 使用 NonBrokerRedirectURI 参数。 **False** - 输入应用程序支持设备级中转单一登录|
-|**-NonBrokerRedirectURI**&lt;URI&gt;|如果 SkipBroker 为 True，则使用 Azure Active Directory 重定向 URI（可选）。|  |
+|**-SigAlg**&lt;SecureString&gt;| （可选）用于签名的签名算法的名称。 该算法必须与私钥兼容。|示例：SHA256withRSA、SHA1withRSA、MD5withRSA|
+| **&lt;CommonParameters&gt;** | （可选）该命令支持常见的 PowerShell 参数，如 verbose 和 debug。 |
 
-
-**&lt;CommonParameters&gt;**
-    （可选 - 支持常见的 PowerShell 参数，如 verbose、debug 等。）
 
 - 有关常见参数的列表，请参阅 [Microsoft 脚本中心](https://technet.microsoft.com/library/hh847884.aspx)。
 
-- 若要查看工具的帮助，输入命令：
+- 若要查看该工具的详细使用情况信息，请输入命令：
 
     ```
     Help Invoke-AppWrappingTool
     ```
-- 若要了解有关 Azure Active Directory (AAD) 集成的详细信息，请参阅[如何包装使用 Azure Active Directory 库的应用](#how-to-wrap-apps-that-use-the-azure-active-directory-library)。
 
-**例如：**
+**示例：**
 
+导入 PowerShell 模块。
+```
+Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
+```
+在本机应用 HelloWorld.apk 上运行应用包装工具。
+```
+invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
+```
 
-    Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
+然后将提示输入 **KeyStorePassword** 和 **KeyPassword**。 输入用于创建密钥存储文件的凭据。
 
-然后将提示你输入 **KeyStorePassword** 和 **KeyPassword**。
+包装的应用和日志文件将在指定的输出路径中生成并保存。
 
-将在指定的输出路径中生成并保存包装的应用和日志文件。
-
-## 运行应用包装工具的安全注意事项
+## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>运行应用包装工具的安全注意事项
 防止潜在的欺骗、信息泄露和特权提升攻击：
 
--   确保输入业务线应用程序、输出应用程序和 Java KeyStore 位于运行应用包装工具的同一台计算机上。
+-   确保输入业务线 (LOB) 应用程序、输出应用程序和 Java 密钥存储位于运行应用包装工具的同一台 Windows 计算机上。
 
 -   将输出应用程序导入到运行该工具的同一台计算机上的 Intune 控制台。 有关 Java keytool 的详细信息，请参阅 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)。
 
--   如果输出应用程序和工具位于通用命名约定 (UNC) 路径，并且未在同一台计算机上运行工具和输入文件，则使用 [Internet 协议安全性 (IPsec)](http://en.wikipedia.org/wiki/IPsec) 或 [服务器消息块 (SMB) 签名](https://support.microsoft.com/en-us/kb/887429)将环境配置为安全。
+-   如果输出应用程序和工具位于通用命名约定 (UNC) 路径，并且未在同一台计算机上运行工具和输入文件，则使用 [Internet 协议安全性 (IPsec)](http://en.wikipedia.org/wiki/IPsec) 或 [服务器消息块 (SMB) 签名](https://support.microsoft.com/en-us/kb/887429)将环境设置为安全。
 
--   确保应用程序来自可靠来源，尤其是使用 Azure Active Directory (AAD) 时，这可能会使应用程序能够在运行时期间访问 AAD 令牌。
+-   确保应用程序来源可信。
 
 -   确保包含已包装应用的输出目录的安全。 考虑为输出使用用户级目录。
 
-## 如何包装使用 Azure Active Directory 库的应用
-如果你的应用正在使用 Azure Active Directory 身份验证库 (ADAL)，则在包装你的应用程序之前，必须完成这些步骤。
-
-### 步骤1：确保已满足 ADAL 的要求
-对于使用 ADAL 的应用，则必须满足下列要求：
-
--   应用结合的 ADAL 的版本必须高于或等于 1.0.2。
-
--   开发人员必须授予其应用访问 Intune 移动应用管理资源的权限，如[步骤 3：在 AAD 中配置对移动应用管理的访问权限](#step-3-configure-access-to-mobile-app-management-in-aad)中所述。
-
-### 步骤 2：查看注册应用时需要获取的标识符
-在下一步骤中，你将使用 Azure 管理门户来注册你的应用（该应用通过 Azure Active Directory (AAD) 使用 ADAL）以获取下表中列出的唯一标识符。 然后，在集成 ADAL 与该应用时将标识符提供给开发人员。
-
-|标识符|更多信息|默认值|
-|--------------|--------------------|-----------------|
-|**客户端 ID**|在应用注册到 AAD 后，为该应用生成的唯一 GUID 标识符。<br /><br />如果已知应用的客户端 ID，则指定该值。 否则，请使用默认值。|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**颁发机构 URI**|AAD 对象的颁发机构统一资源标识符 (URI) 值（例如，用户和组）。<br /><br />AuthorityURI 参数对应用包装工具为可选。 如果不使用此参数，则将使用默认 URI。||
-|**SkipBroker**|指示是否将把公司门户用作代理的值。<br /><br />**True** – 公司门户将不用于 ADAL 身份验证。<br /><br />**False** – 公司门户将用于 ADAL 身份验证。 公司门户出于单一登录目的使用已注册用户。||
-|**非代理重定向 URI**|ADAL 不使用代理应用（Intune 公司门户）时将使用的登录 URI。|urn:ietf:wg:oauth:2。0:oob|
-|**资源 ID**|指向应用的 AAD 资源的指针。||
-
-### 步骤 3：在 AAD 中配置对移动应用管理的访问权限
-在你可以在应用包装工具中使用应用的 AAD 注册值之前，应用开发人员必须通过执行以下步骤授予该应用对 Intune 移动应用程序管理资源的访问权限：
-
-1.  在 Azure 管理门户中登录到现有 AAD 帐户。
-
-2.  选择“**现有 LOB 应用程序注册**”。
-
-3.  在“配置”  部分，选择“配置对其他应用程序中的 Web API 的访问权限” 。
-
-4.  从“**对其他应用程序的权限**”部分中的第一个下拉列表中选择“**Intune 移动应用管理**”。
-
-你现在可以在应用包装工具中使用该应用的客户端 ID。 你可以在 Azure Active Directory 管理门户中找到客户端 ID，如[步骤 2：查看注册应用时需要获取的标识符](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app)中的表中所述。
-
-### 步骤 4：在应用包装工具中使用 AAD 标识符值
-使用你从注册过程获取的标识符值，在应用包装工具中输入该值作为命令行属性。 必须指定表中的所有值，以便最终用户可对应用成功进行身份验证。 如果不指定值，则使用默认值。
-
-|标识符|参数|
-|--------------|-------------|
-|客户端 ID|ClientID|
-|颁发机构 URI|颁发机构 URI|
-|SkipBroker|SkipBroker|
-|非代理重定向 URI|NonBrokerRedirectURI|
-|资源 ID|ResourceID|
-包装应用时请记住以下几点：
-
--   若要验证身份验证是否成功，[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 会获取与 MAM 资源 ID 相关联的 AAD 令牌。 但是，此令牌不用于任何会进而验证其有效性的调用中。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 仅读取已登录用户的用户主体名称 (UPN) 来确定应用的访问权限。 AAD 令牌不用于任何未来的服务调用。
-
--   如果提供了你的客户端应用程序的客户端 ID 和颁发机构 URI，则可以避免两次登录提示。 你需要注册该客户端 ID 以使其能够访问在 AAD 仪表板中发布的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM 资源 ID。 如果不注册该客户端 ID，则应用运行时用户登录失败。
-
-
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 - [使用 SDK 启用针对移动应用程序管理的应用](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

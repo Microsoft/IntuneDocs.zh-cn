@@ -2,8 +2,8 @@
 title: "设备注册疑难解答 | Microsoft Intune"
 description: "有关设备注册问题故障排除的建议。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 ---
 
-# 排查 Intune 中的设备注册问题
+# <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
 本主题提供有关设备注册问题故障排除的建议。 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
 
-## 初始故障排除步骤
+## <a name="initial-troubleshooting-steps"></a>初始故障排除步骤
 
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
@@ -44,15 +44,15 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-## 常规注册问题
+## <a name="general-enrollment-issues"></a>常规注册问题
 所有设备平台上都可能发生这些问题。
 
-### 已达到设备上限
+### <a name="device-cap-reached"></a>已达到设备上限
 **问题：**注册期间，用户在设备上收到一个错误，例如 iOS 设备上的“公司门户暂时不可用”错误，并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
 
 **解决方法：** 根据设计，用户注册的设备不能超过 5 台。
 
-#### 检查已注册的和允许的设备数量
+#### <a name="check-number-of-devices-enrolled-and-allowed"></a>检查已注册的和允许的设备数量
 
 1.  在 Intune 管理门户中，确保用户分配的设备不超过 5 台
 
@@ -62,7 +62,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 管理员可以在 Azure Active Directory 门户中删除设备。
 
-#### 在 Azure Active Directory 门户中删除设备
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>在 Azure Active Directory 门户中删除设备
 
 1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或从 [https://portal.office.com](https://portal.office.com) 选择**管理**&gt; **Azure AD**。
 
@@ -86,10 +86,10 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 >
 > 如果对添加到设备注册管理器组的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
-### 公司门户暂时不可用
+### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
 **问题：**用户的设备上收到“公司门户暂时不可用”错误。
 
-#### 排查“公司门户暂时不可用”错误
+#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>排查“公司门户暂时不可用”错误
 
 1.  从设备中删除 Intune 公司门户应用。
 
@@ -101,10 +101,10 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 5.  如果用户成功登录，iOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，你需要手动安装 Intune 公司门户应用，之后才能重试注册。
 
-### 未定义 MDM 机构
+### <a name="mdm-authority-not-defined"></a>未定义 MDM 机构
 **问题：**用户收到“未定义 MDM 机构”错误。
 
-#### 排查“未定义 MDM 机构”错误
+#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>排查“未定义 MDM 机构”错误
 
 1.  确保已针对你在使用的 Intune 服务版本（即 Intune、O365 MDM 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，在**管理员** &gt; **移动设备管理**中设置 MDM 机构。 对于 Configuration Manager with Intune，则在配置 Intune 连接器时对其进行设置，在 O365 中则对**移动设备**进行设置。
 
@@ -139,23 +139,23 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
         编写查询后，选择**!执行**。
         返回结果后，即可查找云用户 ID。  如果找不到任何 ID，则表示未授权该用户使用 Intune。
 
-### 如果公司名称包含特殊字符，则无法创建策略或注册设备
+### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名称包含特殊字符，则无法创建策略或注册设备
 **问题：**无法创建策略或注册设备。
 
 **解决方法：**在 [Office 365 管理中心](https://portal.office.com/)，删除公司名称中的特殊字符并保存公司信息。
 
-### 如果有多个已验证的域，则无法登录或注册设备
+### <a name="unable-to-log-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>如果有多个已验证的域，则无法登录或注册设备
 **问题：**向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
 
 
-**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。  现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com)）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。  现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
-## Android 的问题
-### 配置文件安装失败
+## <a name="android-issues"></a>Android 的问题
+### <a name="profile-installation-failed"></a>配置文件安装失败
 **问题：**用户在 Android 设备上收到**配置文件安装失败**错误。
 
-### 失败配置文件安装的故障排除步骤
+### <a name="troubleshooting-steps-for-failed-profile-installation"></a>失败配置文件安装的故障排除步骤
 
 1.  确认针对你在使用的 Intune 服务版本，该用户分配有适当的许可证。
 
@@ -163,7 +163,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 4.  确认默认浏览器为适用于 Android 的 Chrome，并且已启用 Cookie。
 
-### Android 证书问题
+### <a name="android-certificate-issues"></a>Android 证书问题
 
 **问题**：用户在其设备上收到以下消息：*无法登录，因为设备缺少必需的证书。*
 
@@ -184,11 +184,11 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-## iOS 的问题
-### 配置文件安装失败
+## <a name="ios-issues"></a>iOS 的问题
+### <a name="profile-installation-failed"></a>配置文件安装失败
 **问题：**用户的 iOS 设备上收到**配置文件安装失败**错误。
 
-### 失败配置文件安装的故障排除步骤
+### <a name="troubleshooting-steps-for-failed-profile-installation"></a>失败配置文件安装的故障排除步骤
 
 1.  确认针对你在使用的 Intune 服务版本，该用户分配有适当的许可证。
 
@@ -198,7 +198,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 4.  确认默认浏览器为适用于 iOS 的 Safari，并且已启用 Cookie。
 
-### 通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
 **问题：**用户注册了 iOS 设备，但它未出现在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
 
 - 你可能已向某个帐户注册了 Intune 连接器，然后又将其注册到其他帐户。
@@ -227,13 +227,13 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 1. 获取新 APN 证书并将其上传：右键单击 Configuration Manager 左侧窗格中的“Intune 订阅”。 选择“创建 APNs 证书请求”，并按照说明进行操作。
-## 使用 System Center Configuration Manager with Intune 时的问题
-### 移动设备消失
+## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager with Intune 时的问题
+### <a name="mobile-devices-disappear"></a>移动设备消失
 **问题：** 在向 Configuration Manager 成功注册移动设备后，它从移动设备集合中消失，但该设备仍然具有管理配置文件，并且列示在 CSS 网关中。
 
 **解决方法：**这可能是因为你有一个自定义进程用于删除未加入域的设备，或者是因为该用户已从订阅停用该设备。 若要验证并检查从 Configuration Manager 控制台中删除了该设备的是哪个进程或用户帐户，请执行以下步骤。
 
-#### 检查设备的删除途径
+#### <a name="check-how-device-was-removed"></a>检查设备的删除途径
 
 1.  在 Configuration Manager 管理控制台中，选择**监视** &gt; **系统状态** &gt; **状态消息查询**。
 
@@ -250,12 +250,12 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-### 其他 iOS 注册错误
+### <a name="other-ios-enrollment-errors"></a>其他 iOS 注册错误
 有关 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)。
 
-## PC 问题
+## <a name="pc-issues"></a>PC 问题
 
-### 该计算机已注册 - 错误 hr 0x8007064c
+### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
 **问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
 
 可能的原因是计算机先前已注册，或具有某台已注册的计算机的克隆映像。 先前帐户的帐户证书仍在此计算机上。
@@ -278,7 +278,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
     > 此部分、方法或任务包含教你如何修改注册表的步骤。 但是，如果注册表修改不正确，可能会发生严重问题。 因此，请确保认真遵循这些步骤。 为提高保护程度，请在修改之前备份注册表。 那么，如果发生问题，你也可以恢复注册表。
     > 有关如何备份和还原注册表的详细信息，请参阅 [如何在 Windows 中备份和还原注册表](https://support.microsoft.com/en-us/kb/322756)
 
-## 常规注册错误代码
+## <a name="general-enrollment-error-codes"></a>常规注册错误代码
 
 |错误代码|可能的问题|建议的解决方法|
 |--------------|--------------------|----------------------------------------|
@@ -302,11 +302,11 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

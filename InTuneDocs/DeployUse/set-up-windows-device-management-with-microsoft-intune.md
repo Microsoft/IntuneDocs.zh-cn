@@ -2,9 +2,8 @@
 title: "使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Intune"
 description: "使用 Microsoft Intune 为 Windows 电脑（包括 Windows 10 设备）启用移动设备管理 (MDM)。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
@@ -14,13 +13,13 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dfc5241376033471a232b059ac07fa4488f05514
-ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
 
 
 ---
 
-# 设置 Windows 设备管理
+# <a name="set-up-windows-device-management"></a>设置 Windows 设备管理
 
 作为 Intune 管理员，可以通过两种方式为 Windows 电脑启用注册和管理：
 
@@ -29,7 +28,7 @@ ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## 设置公司门户应用注册
+## <a name="set-up-company-portal-app-enrollment"></a>设置公司门户应用注册
 可以让用户使用 Intune 公司门户应用安装和注册设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入服务器名称。
 
 1. **设置 Intune**<br>
@@ -54,17 +53,17 @@ ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
 
   ![Windows 设备管理对话框](../media/enroll-intune-winenr.png)
 
-4.  **可选步骤**<br>在 Windows 10 中无需执行**添加旁加载密钥**步骤。 只有在向设备分配 Windows 应用商店中未提供的业务线 (LOB) 应用时才需要执行“上传代码签名证书”步骤。 [了解详细信息](set-up-windows-phone-8.0-management-with-microsoft-intune.md)。
+4.  **可选步骤**<br>在 Windows 10 中无需执行**添加旁加载密钥**步骤。 只有在向设备分配 Windows 应用商店中未提供的业务线 (LOB) 应用时才需要执行“上传代码签名证书”步骤。
 
 6.  **通知用户**<br>需要告诉用户如何注册其设备以及在设备纳入管理之后会出现的情况：
-      - [最终用户需要了解的有关 Microsoft Intune 使用的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+      - [最终用户需要了解的有关使用 Microsoft Intune 的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [适用于 Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [在 Microsoft Intune 中注册设备的先决条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

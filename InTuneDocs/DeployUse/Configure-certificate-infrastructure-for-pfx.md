@@ -2,9 +2,10 @@
 title: "配置 PFX 证书基础结构 |Microsoft Intune"
 description: "创建和部署 .PFX 证书配置文件。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ce620e073608f6bcbfc9d698255dd75deae4be
-ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
 
 
 
 ---
-# 配置证书基础结构
+# <a name="configure-certificate-infrastructure"></a>配置证书基础结构
 本主题介绍创建和部署 .PFX 证书配置文件所需具备的条件。
 
 若要在组织中执行任何基于证书的身份验证，你需要企业证书颁发机构。
@@ -30,7 +31,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 -  Intune 证书连接器，它在可以与证书颁发机构进行通信的计算机上运行。
 
-## 本地基础结构说明
+## <a name="onpremises-infrastructure-description"></a>本地基础结构说明
 
 
 -    **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
@@ -50,7 +51,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
     有关 WAP 证书的信息，请参阅[计划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的“计划证书”部分。 有关 WAP 服务器的一般信息，请参阅 [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx)（使用 Web 应用程序代理）。|
 
 
-### 证书和模板
+### <a name="certificates-and-templates"></a>证书和模板
 
 |对象|详细信息|
 |----------|-----------|
@@ -58,16 +59,16 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 |**受信任的根 CA 证书**|你可以从发证 CA 或信任该发证 CA 的任何设备中将其导出为 **.cer** 文件，并通过使用可信 CA 证书配置文件将其部署至设备。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
 
 
-## 配置你的基础结构
+## <a name="configure-your-infrastructure"></a>配置你的基础结构
 在配置证书配置文件前，必须完成以下任务。 完成这些任务需要 Windows Server 2012 R2 和 Active Directory 证书服务 (ADCS) 方面的知识：
 
 - **任务 1** - 配置证书颁发机构上的证书模板。
 - **任务 2** - 启用、安装和配置 Intune 证书连接器。
 
-### 任务 1 - 配置证书颁发机构上的证书模板
+### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>任务 1 - 配置证书颁发机构上的证书模板
 在该任务中，将发布证书模板。
 
-##### 配置证书颁发机构
+##### <a name="to-configure-the-certification-authority"></a>配置证书颁发机构
 
 1.  在发证 CA 上，使用证书模板管理单元创建新的自定义模板，或复制并编辑现有模板（与用户模板相似）以与 .PFX 配合使用。
 
@@ -97,18 +98,18 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 3.  在发证 CA 上，使用证书颁发机构管理单元发布证书模板。
 
-    a.  选择**证书模板**节点，单击**操作**-&gt;**新建**&gt;**要颁发的证书模板**，然后选择你在步骤 2 中创建的模板。
+    a.  选择“证书模板”节点，单击“操作”-&gt;“新建”&gt;“要颁发的证书模板”，然后选择步骤 2 中创建的模板。
 
     b。  通过查看 **“证书模板”** 文件夹下已发布的模板来对它进行验证。
 
 4.  在 CA 计算机上，确保托管 Intune 证书连接器的计算机具有注册权限，以便它可以访问在创建 .PFX 配置文件时使用的模板。 在 CA 计算机属性的“安全性”  选项卡上设置该权限。
 
-### 任务 2 - 启用、安装和配置 Intune 证书连接器
+### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>任务 2 - 启用、安装和配置 Intune 证书连接器
 在此任务中，你将：
 
 下载、安装和配置证书连接器。
 
-##### 启用对证书连接器的支持
+##### <a name="to-enable-support-for-the-certificate-connector"></a>启用对证书连接器的支持
 
 1.  打开“[Intune 管理控制台](https://manage.microsoft.com)”，选择“**管理**&gt;“**证书连接器**”。
 
@@ -116,7 +117,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 3.  选择“**启用证书连接器**”，然后选择“**确定**”。
 
-##### 下载、安装和配置证书连接器
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下载、安装和配置证书连接器
 
 1.  打开“[Intune 管理控制台](https://manage.microsoft.com)”，然后选择“**管理**&gt;“**移动设备管理**”&gt;“**证书连接器**”&gt;“**下载证书连接器**”。
 
@@ -153,13 +154,13 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 若要验证服务是否正在运行，打开浏览器然后输入以下 URL 将返回 **“403”** 错误：
 
-**http:// &lt;NDES 服务器的 FQDN&gt;/certsrv/mscep/mscep.dll**
+**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 你现在可以像[配置证书配置文件](Configure-Intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

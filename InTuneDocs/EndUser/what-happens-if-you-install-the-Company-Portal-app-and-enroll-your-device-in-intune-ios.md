@@ -2,7 +2,7 @@
 title: "安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备后会发生什么情况？ | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
 
 
 ---
 
 
-# 安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备后会发生什么情况？
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备后会发生什么情况？
 
 当安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备时，可以使用公司门户应用：
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

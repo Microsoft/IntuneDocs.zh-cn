@@ -2,9 +2,10 @@
 title: "通过警报获取通知 | Microsoft Intune"
 description: "了解警报让你始终了解 Microsoft Intune 中发生的情况。"
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbe2f13b2c41478181c396c4e16e5f3f9180e551
-ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 44b496aecd62d515512f10d2aae97f2c7a06dc6a
 
 
 ---
 
-# 通过 Microsoft Intune 警报获取通知
+# <a name="get-notified-by-microsoft-intune-alerts"></a>通过 Microsoft Intune 警报获取通知
 警报让你始终了解 Microsoft Intune 中发生的情况。
 
 例如，警报可以通知你有关以下事件：
@@ -31,7 +32,7 @@ ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
 -   检测到两个 Intune 策略之间存在冲突
 
 
-## 警报的工作方式
+## <a name="how-alerts-work"></a>警报的工作方式
 警报是基于“警报类型”（内置于 Intune 中的一组预配置规则）而生成的。 例如，警报类型“云存储有 10% 或更少的可用空间”会在云中存储应用的空间不足时发出警报。 你可以启用或禁用警报类型并配置每种警报类型的属性。 例如，使用以上警报类型，你可以配置：
 
 -   **状态:** 启用还是禁用此警报类型
@@ -51,7 +52,7 @@ ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
 
 此外，还可以配置 Intune 以在生成警报时通过电子邮件通知你。
 
-## 设置警报
+## <a name="set-up-alerts"></a>设置警报
 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，依次选择“管理”、&gt;“警报和通知”，然后选择以下任务之一：
 
 |任务|描述|
@@ -60,10 +61,10 @@ ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
 |**收件人**|选择“添加”来添加新电子邮件地址，该地址将接收所设置的电子邮件通知。<br /><br />还可以“编辑”或“删除”现有收件人。<br /><br />若要接收通知，你还必须在“通知规则”下将此电子邮件地址添加为收件人。|
 |**通知规则**|配置规则，该规则定义电子邮件警报将发送到的收件人。 你可以：<br /><br />**选择现有规则** - 选择一个规则，然后选择“选择收件人”。 然后，你可以选择在生成满足此规则的警报后将收到一封电子邮件的所有收件人。<br /><br />“创建新规则” - 输入规则名称，选择应用到规则的警报类型和警报严重性，再选择规则适用的设备组，然后选择生成警报时接受电子邮件的用户。<br /><br />还可以“启用”、“禁用”、“编辑”或“删除”现有规则。|
 
-## 使用警报
+## <a name="working-with-alerts"></a>使用警报
 使用下列选项可帮助你使用 Intune 管理控制台中的警报。
 
-|选项|描述|
+|选项|说明|
 |----------|---------------|
 |**查看活动警报**|选择以下选项之一：<br /><br />**查看警报摘要** - 在“仪表板”工作区中，最常发生的错误将显示在“警报”窗格中。 选择此窗格以查看更多详细信息。<br /><br />此外，你还可以查看“警报”  工作区的“概述”  页上的警报摘要。<br /><br />**查看所有警报** - 在**警报**工作区中，选择**所有警报**。|
 |**查看通知**|选择以下选项之一：<br /><br />在**仪表板**工作区中，选择**通知**。<br /><br />在**警报**工作区中，选择**所有警报**&gt;**通知**。|
@@ -80,11 +81,11 @@ Intune 警报将保持活动状态，直到：
 > [!TIP]
 > 如果运行不同操作系统的设备生成了相同的警报，则你可能会在警报列表中看到相同警报的多个版本。
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 进行监视和报告](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

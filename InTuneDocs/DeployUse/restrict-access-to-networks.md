@@ -2,10 +2,10 @@
 title: "使用 Cisco ISE 限制对网络的访问 | Microsoft Intune"
 description: "将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 Cisco ISE 控制的 Wi-Fi 和 VPN 前已注册 Intune 并且符合策略。"
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,23 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
+ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
+ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
 
 
 ---
 
-# 将 Cisco ISE 与 Microsoft Intune 配合使用
+# <a name="using-cisco-ise-with-microsoft-intune"></a>将 Cisco ISE 与 Microsoft Intune 配合使用
 将 Intune 与 Cisco 身份服务引擎 (ISE) 集成使你能够使用 Intune 设备注册和合规性状态在 ISE 环境中编写网络策略。 你可使用这些策略确保对公司网络的访问权限仅限于由 Intune 托管并符合 Intune 策略的设备。
 
-## 配置步骤
+## <a name="configuration-steps"></a>配置步骤
 
 你无需在 Intune 租户中进行任何设置即可启用此集成。 你需要为 Cisco ISE 服务器提供访问你的 Intune 租户的权限。 完成此操作后，设置的剩余步骤将在你的 Cisco ISE 服务器中进行。 本文提供有关为 ISE 服务器提供对 Intune 租户的访问权限的说明。
 
-### 步骤 1：管理证书
+### <a name="step-1-manage-the-certificates"></a>步骤 1：管理证书
 从 Azure Active Directory (Azure AD) 控制台导出证书，然后将其导入 ISE 控制台的受信任证书存储：
 
-#### Internet Explorer 11
+#### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
    a. 以管理员身份运行 Internet Explorer 并登录到 Azure AD 控制台。
@@ -47,7 +47,7 @@ ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
 
    g. 从 ISE 控制台范围中，将 Intune 证书（你导出的文件）导入到“受信任的证书”存储中。
 
-#### Safari
+#### <a name="safari"></a>Safari
 
  a. 登录 Azure AD 控制台。
 
@@ -64,18 +64,19 @@ b。 选择锁定图标&gt;“详细信息”。
 > 请检查该证书的到期日期，因为当它过期时，将必须导出该证书并导入新证书。
 
 
-### 从 ISE 中获取自签名证书 
+### <a name="obtain-a-selfsigned-cert-from-ise"></a>从 ISE 中获取自签名证书 
 
 1.  在 ISE 控制台中，转到“管理” > “证书” > “系统证书” > “生成自签名证书”。  
 2.       导出自签名证书。
-3. 在文本编辑器中，编辑导出的证书：[注释]：<> 在这两个语句的末尾不要加入句号，我认为这可能引起混淆。
+3. 在文本编辑器中，编辑导出的证书：
+
  - 删除 ** -----BEGIN CERTIFICATE-----**
  - 删除 ** -----END CERTIFICATE-----**
  
 确保所有文本都只占一行
 
 
-### 步骤 2：在 Azure AD 租户中创建用于 ISE 的应用
+### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>步骤 2：在 Azure AD 租户中创建用于 ISE 的应用
 1. 在 Azure AD 控制台中，选择“应用程序” > “添加应用程序” > “添加我的组织正在开发的应用程序”。
 2. 提供应用的名称和 URL。 URL 可以是你的公司网站。
 3. 下载应用清单（JSON 文件）。
@@ -99,7 +100,7 @@ b。 选择锁定图标&gt;“详细信息”。
 |Oauth 2.0 令牌终结点|令牌颁发 URL|
 |使用你的客户端 ID 更新你的代码|客户端 ID|
 
-### 步骤 4：将自签名证书从 ISE 上传到在 Azure AD 中创建的 ISE 应用
+### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步骤 4：将自签名证书从 ISE 上传到在 Azure AD 中创建的 ISE 应用
 1.     获取 .cer X509 公用证书文件中的 base64 编码证书值和指纹。 此示例使用 PowerShell：
    
       
@@ -136,7 +137,7 @@ b。 选择锁定图标&gt;“详细信息”。
 > KeyCredentials 证书是一个集合，因此可上传多个 X.509 证书以适应变更方案，或在泄露方案中删除证书。
 
 
-### 步骤 4：配置 ISE 设置
+### <a name="step-4-configure-ise-settings"></a>步骤 4：配置 ISE 设置
 在 ISE 管理控制台中，提供以下设置值：
   - “服务器类型”：移动设备管理器
   - “身份验证类型”：OAuth – 客户端凭据
@@ -147,7 +148,7 @@ b。 选择锁定图标&gt;“详细信息”。
 
 
 
-## Intune 租户和 Cisco ISE 服务器之间共享的信息
+## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune 租户和 Cisco ISE 服务器之间共享的信息
 此表列出了你的 Intune 租户和用于由 Intune 托管的设备的 Cisco ISE 服务器之间共享的信息。
 
 |属性|  描述|
@@ -166,7 +167,7 @@ b。 选择锁定图标&gt;“详细信息”。
 |lastContactTimeUtc|设备上次签入到 Intune 管理服务时的日期和时间。
 
 
-## 用户体验
+## <a name="user-experience"></a>用户体验
 
 当用户尝试使用未注册的设备访问资源时，会收到注册提示，如下所示：
 
@@ -182,12 +183,12 @@ b。 选择锁定图标&gt;“详细信息”。
 此外，还可以使用 [downloadable set of enrollment instructions](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)（注册说明的可下载集）来为你的用户体验创建自定义指导。
 
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 
-[Cisco 标识服务引擎管理员指南，版本 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
+[Cisco Identity Services Engine Administrator Guide, Release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)（Cisco 标识服务引擎管理员指南，版本 2.1）
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,7 +2,8 @@
 title: "移动设备的 Exchange 访问规则 | Microsoft Intune"
 description: "Exchange ActiveSync 访问规则以允许或阻止设备与 EAS 的连接"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 73c3b57ac8b896001758eb22181c865ff68c3b93
-ms.openlocfilehash: f933df0436e73a7db2cd94c9a104294591ea96c0
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: e11263115088005123562b2afae1804528d0d5d5
 
 
 ---
 
-# 移动设备的 Exchange 访问规则
+# <a name="exchange-access-rules-for-mobile-devices"></a>移动设备的 Exchange 访问规则
 移动设备的 Exchange 访问规则决定这些设备对 Exchange ActiveSync 拥有的访问级别。 这些设置会影响所有移动设备，包括未在 Microsoft Intune 中注册的设备。 可以先定义“**默认规则**”，该规则应用于未应用自定义规则的任何移动设备。
 
 下表包含 Exchange ActiveSync 管理的访问级别：
@@ -39,7 +40,7 @@ ms.openlocfilehash: f933df0436e73a7db2cd94c9a104294591ea96c0
 |允许和阻止相混合|除了创建允许和阻止列表外，你还可以在新的移动设备引入到组织中而你需要对其进行评估时将其隔离。 例如，如果你有组织中所不允许的移动设备的阻止列表，以及组织中所允许的移动设备的允许列表，则你可以将默认规则设置为隔离。 所有其他设备会自动隔离。 这使你可以在新设备引入到组织中时发现它们，并决定是否要将它们添加到允许或阻止列表。|
 下面的过程描述如何创建自定义规则。
 
-## 创建默认访问规则
+## <a name="create-a-default-access-rule"></a>创建默认访问规则
 
 1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，选择“**策略**”&gt;“**Exchange ActiveSync**”。
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: f933df0436e73a7db2cd94c9a104294591ea96c0
 
 下面的过程描述如何创建自定义规则：
 
-## 创建自定义访问规则
+## <a name="create-a-custom-access-rule"></a>创建自定义访问规则
 
 1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，选择“**策略**”&gt;“**Exchange ActiveSync**”。
 
@@ -55,6 +56,6 @@ ms.openlocfilehash: f933df0436e73a7db2cd94c9a104294591ea96c0
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
