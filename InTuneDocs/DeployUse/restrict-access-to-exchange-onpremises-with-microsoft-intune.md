@@ -3,8 +3,9 @@ title: "限制对 Exchange 内部部署的电子邮件访问 | Microsoft Intune"
 description: "使用条件访问保护和控制对本地 Exchange 的公司电子邮件的访问。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
-ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 4e8bf567601ad181238b74644b4c282e8f5bbf36
 
 
 ---
 
-# 使用 Intune 限制对 Exchange 内部部署和旧版 Exchange Online Dedicated 的电子邮件访问
+# <a name="restrict-email-access-to-exchange-onpremises-and-legacy-exchange-online-dedicated-with-intune"></a>使用 Intune 限制对 Exchange 内部部署和旧版 Exchange Online Dedicated 的电子邮件访问
 
 
 如果你具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
@@ -57,31 +58,35 @@ ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
 
 下图显示了 Exchange 内部部署的条件性访问策略用于评估是允许还是阻止设备的流程。
 
-![图示显示了确定是允许访问还是阻止设备访问 Exchange 内部部署的决策点](../media/ConditionalAccess8-2.png)如果不满足某个条件性访问策略，则用户会在登录时看到下述某条消息：
+![图示显示了确定是允许访问还是阻止设备访问 Exchange 本地部署的决策点](../media/ConditionalAccess8-2.png)。如果不满足某个条件性访问策略，则用户会在登录时看到下述某条消息：
 
 - 如果未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用、注册设备和激活电子邮件的说明。 此过程也将设备的 Exchange ActiveSync ID 和 Azure Active Directory 中的设备记录相关联。
 
 -   如果设备不合规，则显示一条消息，将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站或公司门户应用，用户可从中找到有关相关问题及其修正方法的信息。
 
-## 对移动设备的支持
--   Windows Phone 8 及更高版本
+## <a name="support-for-mobile-devices"></a>对移动设备的支持
+-   Windows Phone 8.1 及更高版本
 
 -   iOS 上的本机电子邮件应用。
 
--   EAS 邮件客户端（如 Android 4 或更高版本上的 Gmail）
+-   EAS 邮件客户端（如 Android 4 或更高版本上的 Gmail）。
+- EAS 邮件客户端 **Android for Work 设备：**Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可适用于 Android for Work，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将这些应用部署为必需安装。 
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 > [!NOTE]
 > 不支持 Android 和 iOS 上的 Microsoft Outlook 应用。
 
-## 对 PC 的支持
+## <a name="support-for-pcs"></a>对 PC 的支持
 
-Windows 8 和更高版本上的**邮件**应用程序（向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册时）
+Windows 8.1 和更高版本上的**邮件**应用程序（向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册时）
 
-##  配置条件性访问策略
+##  <a name="configure-a-conditional-access-policy"></a>配置条件性访问策略
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**策略**  >  **条件性访问**  >  **Exchange 本地策略**。
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  使用所需的设置来配置策略：![Exchange本地策略页面的屏幕截图](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2.  使用所需的设置来配置策略：![Exchange 本地策略页面的屏幕截图](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
   - **如果设备不符合要求或未注册到 Microsoft Intune，则阻止电子邮件应用访问 Exchange 内部部署**：当你选择此选项时，则会阻止未受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理的设备或不符合合规性策略的设备访问 Exchange 服务。
 
@@ -116,13 +121,13 @@ Windows 8 和更高版本上的**邮件**应用程序（向 [!INCLUDE[wit_nextre
 
 **若要查看如何配置条件性访问策略以限制设备访问的示例方案，请参阅[限制电子邮件访问的示例方案](restrict-email-access-example-scenarios.md)。**
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 [限制对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [限制对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,7 +2,7 @@
 title: "加密你的设备 | Microsoft Intune"
 description: "介绍如何加密 Android 设备"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b11a7080cf80ad2a261546bdf91f07bdbebd6c95
 
 
 ---
 
 
-# 加密你的设备
+# <a name="encrypt-your-device"></a>加密你的设备
 
 在你可以访问公司文件、电子邮件或数据之前，如果贵公司或组织要求你先对你的 Android 设备进行加密，请执行以下步骤来加密你的设备。 如果 IT 管理员要求使用 PIN 或密码，则加密前可能要求进行设置。
 
@@ -34,7 +34,7 @@ ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
 3.  按照屏幕上的说明操作。 加密时，你的设备可能会多次重启。
 
-### 如果遇到问题时该怎么办
+### <a name="what-to-do-if-you-have-issues"></a>如果遇到问题时该怎么办
 **问题**：你的设备已加密，然后你发现以下情形之一：
 
 - 已禁用加密按钮。
@@ -57,10 +57,10 @@ ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
     5. 打开公司门户应用，选择你的设备，然后点击“Check Compliance”（检查合规性）。
 
-仍需要帮助？ 请联系你的 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
+仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（地址为 wintunedroidfbk@microsoft.com.）
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

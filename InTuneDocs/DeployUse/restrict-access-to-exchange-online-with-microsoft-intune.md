@@ -14,13 +14,13 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
-ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 916a4d90b5aa64cad429ccd6559ad8d388ba301e
 
 
 ---
 
-# 使用 Intune 限制对 Exchange Online 和新版 Exchange Online Dedicated 的电子邮件访问
+# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>使用 Intune 限制对 Exchange Online 和新版 Exchange Online Dedicated 的电子邮件访问
 
 如果你具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
 
@@ -62,12 +62,14 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 ![图示显示了确定是允许还是阻止设备访问的决策点](../media/ConditionalAccess8-1.png)
 
-## 对移动设备的支持
+## <a name="support-for-mobile-devices"></a>对移动设备的支持
 你可以从 **Outlook** 和其他**使用新式验证的应用**限制对 Exchange Online 电子邮件的访问：-
 
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本以及 Android for Work
 - iOS 8.0 及更高版本
 - Windows Phone 8.1 及更高版本
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 **新式验证**将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Microsoft Office 客户端中。
 
@@ -79,11 +81,11 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 * Safari (iOS)
 * Chrome (Android)
-* 托管浏览器（iOS 和 Android）
+* 托管浏览器（iOS 和 Android 5.0 及更高版本）
 
 **不受支持的浏览器将被阻止**。
 
-**适用于 iOS 和 Android 的 OWA 应用可修改为不使用新式验证且不受支持。  必须通过 ADFS 声明规则阻止来自 OWA 应用的访问。**
+**适用于 iOS 和 Android 的 OWA 应用可修改为不使用新式验证且不受支持。必须通过 ADFS 声明规则阻止来自 OWA 应用的访问。**
 
 
 在以下平台上，你可以从内置的“Exchange ActiveSync 电子邮件客户端”限制对 Exchange 电子邮件的访问：
@@ -94,7 +96,7 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 - Windows Phone 8.1 及更高版本
 
-## 对 PC 的支持
+## <a name="support-for-pcs"></a>对 PC 的支持
 
 你可以设置 PC 的条件性访问以访问满足以下要求的 PC 的“Exchange Online”  和“SharePoint Online”  ，其中该 PC 运行 Office 桌面应用程序：
 
@@ -118,15 +120,15 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 -   设置 ADFS 声明规则以阻止“非新式验证”协议。 方案 3 中提供了详细的说明 - [阻止除了基于浏览器的应用程序之外的其他所有应用程序访问 O365](https://technet.microsoft.com/library/dn592182.aspx)。
 
-## 配置条件性访问
-### 步骤 1：配置和部署合规性策略
+## <a name="configure-conditional-access"></a>配置条件性访问
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>步骤 1：配置和部署合规性策略
 请确保[创建](create-a-device-compliance-policy-in-microsoft-intune.md)合规性策略并将其[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到也将会获得条件性访问策略的用户组。
 
 
 > [!IMPORTANT]
 > 如果尚未部署合规性策略，那么设备将被视为合规并将获得允许访问 Exchange。
 
-### 步骤 2：评估条件性访问策略的影响
+### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>步骤 2：评估条件性访问策略的影响
 在配置条件性访问策略后，你可以使用“移动设备清单报告”识别被阻止访问 Exchange 的设备。
 
 为此，请使用 [Microsoft Intune 服务间连接器](intune-service-to-service-exchange-connector.md)配置 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 和 Exchange 之间的连接。
@@ -161,7 +163,7 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 ----------------------
 你可以导出报告的内容，并使用“电子邮件地址”列来通知用户他们将会被阻止。
 
-### 步骤 3：为条件性访问策略配置用户组
+### <a name="step-3-configure-user-groups-for-the-conditional-access-policy"></a>步骤 3：为条件性访问策略配置用户组
 条件性访问策略针对不同的 Azure Active Directory 安全用户组。 你也可以将某些用户从此策略中免除。  如果将某个用户设定为策略的目标，则其使用的每个设备必须合规才能访问电子邮件。
 
 你可以在 **“Office 365 管理中心”**，或 **“Intune 帐户门户”**中配置这些组。
@@ -176,7 +178,7 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 仅评估条件性访问策略针对的组。
 
-### 步骤 4：配置条件访问策略
+### <a name="step-4-configure-the-conditional-access-policy"></a>步骤 4：配置条件访问策略
 
 >[!NOTE]
 > 此外，还可在 Azure AD 管理控制台中创建条件访问策略。 Azure AD 管理控制台允许你创建除其他条件访问策略（如多重身份验证）之外的 Intune 设备条件访问策略（在 Azure AD 中称为 **基于设备的条件访问策略**）。  还可为第三方企业应用（如 Azure AD 支持的 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将 Azure Active Directory 针对访问控制的基于设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
@@ -214,23 +216,23 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
   3.    按“启用浏览器访问”按钮。
   4.    在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
 
-  在 **iOS 和 Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。  设备将显示证书，并提示最终用户选择证书，如下面的屏幕截图所示。 最终用户必须选先择此证书，然后才可以继续使用浏览器。
-
-  **iOS**
-
-  ![ipad 上的证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
+  在 **iOS 和 Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。  设备将显示证书，并提示最终用户选择证书，如下面的屏幕截图所示。 最终用户必须选择此证书后，才能继续使用该浏览器。
 
   **Android**
+
+  ![ipad 上证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Outlook Web Access (OWA)**
 
   ![Android 设备上的证书提示的屏幕截图](../media/mdm-browser-ca-android-cert-prompt.png)
 
 5.  在“Exchange ActiveSync 应用”下，你可以选择阻止非合规的设备访问 Exchange Online。 当设备运行不受支持的平台时，你还可以选择是允许还是阻止访问电子邮件。 受支持的平台包括 Android、iOS、Windows 和 Windows Phone。
 
  Exchange Active Sync 应用 **Android for Work** 设备：
- -  Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可在 Android for Work 设备上正常运行，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将其部署为**必需**安装。 
+ -  Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可在 Android for Work 设备上正常运行，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将其部署为**必需**安装。
 
 6.  在 **“目标组”**下，选择策略将应用到的 Active Directory 安全用户组。 你可以选择面向所有用户或面向选定的用户组列表。
-![Exchange Online 条件性访问策略页面的屏幕截图显示了“目标组”和“免除组”选项。](../media/IntuneSA5eTargetedExemptedGroups.PNG)
+![Exchange Online 条件性访问策略页面的屏幕截图显示了“目标组”和“免除组”选项](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
     > 对于“目标组”中的用户，Intune 策略将替换 Exchange 规则和策略。
     >
@@ -253,20 +255,20 @@ ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 **若要查看如何配置条件性访问策略以限制设备访问的示例方案，请参阅[限制电子邮件访问的示例方案](restrict-email-access-example-scenarios.md)。**
 
-## 监视遵从性和条件性访问策略
+## <a name="monitor-the-compliance-and-conditional-access-policies"></a>监视遵从性和条件性访问策略
 
-#### 查看被 Exchange 阻止的设备
+#### <a name="to-view-devices-that-are-blocked-from-exchange"></a>查看被 Exchange 阻止的设备
 
 在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 仪表板上，选择“被 Exchange 阻止的设备”磁贴，以显示被阻止设备的数目以及指向相关详细信息的链接。
 ![Intune 仪表板的屏幕截图显示了被阻止访问 Exchange 的设备的数目](../media/IntuneSA6BlockedDevices.PNG)
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 [限制对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [限制对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

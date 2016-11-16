@@ -2,8 +2,8 @@
 title: "手动同步 Windows 设备 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -15,24 +15,24 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
-ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 
 ---
 
 
-# 手动同步 Windows 设备
+# <a name="sync-your-windows-device-manually"></a>手动同步 Windows 设备
 如果你的应用安装所需时间过长，则可尝试手动同步 Windows 设备。 手动同步可能有助于加快安装速度。
 
-仅支持以下版本。 请使用与你的设备类型相匹配的说明。
+仅支持以下版本。 如果未列出你的设备，则不支持同步。 请使用与你的设备类型相匹配的说明。
 
 * [Windows 10 移动版](#windows-10-mobile)
 * [Windows 10 桌面版](#windows-10-desktop)
 * [Windows Phone 8.1](#windows-phone-8-1)
 
 
-## Windows 10 移动版
+## <a name="windows-10-mobile"></a>Windows 10 移动版
 若要手动同步你的 Windows 10 移动设备，以加快较慢的应用安装的速度：
 
 1. 请转到**所有应用**  >  **设置**  >  **帐户**。
@@ -53,7 +53,7 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
     屏幕顶部将显示“我们正在同步你的帐户”消息。 设备完成同步前，“同步”按钮将灰显。
 
-## Windows 10 桌面版
+## <a name="windows-10-desktop"></a>Windows 10 桌面版
 由于存在多个 Windows 10 版本，因此有两组步骤。 若要了解使用哪组步骤，可查看屏幕截图，然后按照设备上显示的步骤执行操作。 
 
 1. 选择“启动”按钮，然后选择“设置”。
@@ -74,7 +74,7 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
     ![选择工作单位访问作为帐户类型](./media/win10pc-sync-3-work-access.png) 
 
-### 看到“访问工作单位或学校”时要执行的步骤
+### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>看到“访问工作单位或学校”时要执行的步骤
 
 1. 在“帐户”页上，选择“访问工作单位或学校”。
 
@@ -93,7 +93,7 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 4. 选择“同步”按钮。 设备将与 Intune 进行同步。
 
-### 看到“工作单位访问权限”时要执行的步骤
+### <a name="steps-to-follow-if-you-see-work-access"></a>看到“工作单位访问权限”时要执行的步骤
     
 1. 在“帐户”页上，选择“工作单位访问”。
 
@@ -109,7 +109,7 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
    在同步完成之前，该按钮将变为灰显。
 
-## Windows Phone 8.1
+## <a name="windows-phone-81"></a>Windows Phone 8.1
 若要手动同步你的 Windows Phone 8.1 设备，以加快较慢的应用安装的速度：
 
 1. 请转到**所有应用**  >  **设置**  >  **工作区**。
@@ -126,10 +126,10 @@ ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
    设备完成同步前，屏幕顶部将显示“我们正在同步你的帐户”消息。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

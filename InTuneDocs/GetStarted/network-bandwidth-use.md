@@ -2,7 +2,8 @@
 title: "Intune 网络带宽使用 | Microsoft Intune"
 description: "Intune 网络带宽使用"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: b40c5ce0d4447b10ec949af6933f28b091136315
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 18007f598f4182fd90592d4aeb365b834a73fc72
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: b40c5ce0d4447b10ec949af6933f28b091136315
 使用下列部分中的信息来规划 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 客户端的网络流量。
 
 ## 平均网络流量
-下表列出了对于每个客户端在网络上传输的常见内容的近似大小和频率。
+该表列出了对于每个客户端在网络上传输的常见内容的近似大小和频率。
 
 > [!NOTE]
 > 若要确保计算机和移动设备可以从 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 服务接收必须的更新和内容，他们必须定期连接到 Internet。 接收更新和内容所花费的时间会有差异，但作为参考，他们应该每天保持至少 1 个小时的 Internet 连接。
@@ -88,6 +89,6 @@ ms.openlocfilehash: b40c5ce0d4447b10ec949af6933f28b091136315
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

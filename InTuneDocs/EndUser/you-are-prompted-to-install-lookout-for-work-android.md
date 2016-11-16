@@ -2,8 +2,8 @@
 title: "系统提示在 Android 设备上安装 Lookout for Work | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
 
 
 ---
 
-# 系统会提示你安装 Lookout for Work
+# <a name="you-are-prompted-to-install-lookout-for-work"></a>系统会提示你安装 Lookout for Work
 
 在可访问工作之前，IT 管理员要求你安装 Lookout for Work 应用，该应用会查找潜在安全威胁来帮助保护你的设备。
 
@@ -74,14 +74,14 @@ ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
     如果 Lookout for Work 在设备上找到安全威胁，那么你将看到有关如何解决此问题的说明。
 
-**安装不成功**
+**如果安装不成功**
 
 有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试从 Play Store [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 手动安装 Lookout for Work 
 
-仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -8,19 +8,19 @@ manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
-ms.openlocfilehash: c074dd8850aef8cec79a9362222c3678d679bf4f
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: ec287d49910a72c22122f45a01850bcbd3a7d203
 
 
 ---
 
-# 在合规性策略中启用设备威胁保护规则
+# <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>在合规性策略中启用设备威胁保护规则
 通过附带 Lookout 移动威胁保护的 Intune，可检测设备上的移动威胁并进行风险评估。 可以创建合规性策略规则，使其包含风险评估，以便确定设备是否合规。 然后可通过条件访问策略，根据设备合规性允许或阻止访问 Exchange、SharePoint 及其他服务。
 
 要使 Lookout 设备威胁检测影响设备的合规性策略，请执行以下操作：
@@ -52,16 +52,16 @@ ms.openlocfilehash: c074dd8850aef8cec79a9362222c3678d679bf4f
 
 ![Intune 管理员控制台“设备”页面的屏幕截图，其中显示了设备的合规性状态](../media/mtp/mtp-device-status-intune-console.png)
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 * 创建条件访问策略
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange 内部部署](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   * [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune,md)
-  * [动态 CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+  * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,9 +2,10 @@
 title: "资源访问的证书配置文件 | Microsoft Intune"
 description: "使用每个用户设备上安装的证书保护 VPN、Wi-fi 和电子邮件访问。"
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: ee10ea01bb2e55a1c8b52a7ec0bdaf14f3c297f1
 
 
 ---
 
-# 使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性
+# <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性
 当你通过 VPN、Wi-Fi 或电子邮件配置文件给予用户对公司资源的访问权限时，你可以使用每个用户设备上安装的证书保护该访问权限。 以下是它的工作原理：
 
 1. 请确保你拥有正确的证书基础结构，如 [配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)和[配置 PFX 证书基础结构](configure-certificate-infrastructure-for-pfx.md)中所述。
@@ -28,13 +29,17 @@ ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
  -  iOS 8.0 及更高版本
  -  Mac OS X 10.9 及更高版本
  -  Android 4.0 及更高版本
+ -  Android for Work
  -  Windows 8.1 及更高版本
  -  Windows Phone 8.1 及更高版本
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. 创建证书配置文件以便设备请求一个将用于对 VPN、Wi-Fi 和电子邮件访问进行身份验证的证书，如[配置 Intune 证书配置文件](configure-intune-certificate-profiles.md)中所述。 可以为运行以下平台的设备创建并部署 **PKCS #12 (.PFX) 证书配置文件***或* **SCEP 证书配置文件**：
 
   -  iOS 8.0 及更高版本
   -  Android 4.0 及更高版本
+  -  Android for Work
   -  Windows 10（桌面版和移动版）及更高版本
 
   将 **SCEP 证书配置文件**用于运行以下平台的设备：
@@ -49,13 +54,13 @@ ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 >-  无论你计划使用 SCEP 配置文件还是 PFX 配置文件，都必须下载并配置 Microsoft Intune 证书连接器。
 >-  请在[配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)或[配置 PFX 证书基础结构](configure-certificate-infrastructure-for-pfx.md)中了解如何配置所有的必备服务。
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 - [配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)
 - [配置 PFX 证书基础结构](configure-certificate-infrastructure-for-pfx.md)
 - [配置 Itune 证书配置文件](configure-intune-certificate-profiles.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

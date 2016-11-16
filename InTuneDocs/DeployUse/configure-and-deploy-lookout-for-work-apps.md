@@ -2,6 +2,7 @@
 title: "部署 Lookout for Work 应用 | Microsoft Intune"
 description: "配置并部署 Android 版 Lookout for Work 应用。"
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -12,8 +13,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
-ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
+ms.sourcegitcommit: 557c1b3b36adf40ec4ad94f22ed7bb9705c6eec4
+ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
 
 
 ---
@@ -23,19 +24,27 @@ ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 ## Android（Google Play 商店应用）
 
-* **步骤 1：**按照[在 Microsoft Intune 中为移动设备添加应用](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)主题所述，在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中上传 Lookout for Work Android 应用。
+* **步骤 1**：在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，转到“应用”并选择“添加应用”。   
+* **步骤 2：**在发布者的“软件设置”页选择“外部链接”，并指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
 >[!NOTE]
-> 请勿单击要求使用托管浏览器的框。
+>请勿单击要求使用托管浏览器的框。
 
-![在列表中显示 Lookout for work 应用的 Intune 管理员控制台应用页屏幕截图](../media/mtp/lookout-app-listed-intune-console.png)
+* **步骤 3：**在“软件描述”页填入以下信息：
+  * **发布者：**Lookout Mobile Security
+  * **名称：**Lookout for Work
+  * **说明：**Lookout 能为设备提供针对移动威胁的最佳保护。 在设备上安装 Lookout 应用后，该应用可让设备免受威胁，并将在发现任何威胁时向用户、公司和管理员发出警报。
+  * **类型：**计算机管理
+* **步骤 4：**成功完成时将显示消息“数据已成功上传至 Microsoft Intune”。
 
-* **步骤 2：**将应用部署到用户。 选择以上屏幕中显示的 Lookout for Work 应用，并选择“管理部署”。
+在 Intune 控制台单击“应用”时，列表中立即显示 Lookout for Work 应用 ![Intune 管理员控制台应用页面的屏幕截图，其中显示了列出的 Lookout for Work 应用](../media/mtp/lookout-app-listed-intune-console.png)
 
-  选择的用户必须与添加到 Lookout 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout 设备威胁保护](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp)部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
->[!IMPORTANT]
-> Intune 应用部署向导并未识别到 Azure AD 用户组且使用的是 Intune 用户组，因此必须基于在 Lookout 控制台中注册的 Azure AD 用户组创建 Intune 用户组（如[本](plan-your-user-and-device-groups.md)主题所述）。
+* **步骤 5**：通过选择 Lookout for Work 应用，并选择“管理部署”，将应用部署到用户。
 
-选择“必需安装”选项，该选项要求在用户设备上安装 Lookout 应用。
+  选择的用户必须与添加到 Lookout MTP 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) 部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
+  >[!IMPORTANT]
+  > Intune 应用部署向导不会感知 Azure AD 用户组，而会使用 Intune 用户组。 因此，必须以在 Lookout MTP 控制台中注册的 Azure AD 用户组为基础创建 Intune 用户组，如[本主题](plan-your-user-and-device-groups.md)所述。
+
+* **步骤 6**：选择“所需的安装”选项，该选项要求在用户的设备上安装 Lookout 应用。
 
 
 ## iOS（企业签名的 Lookout 应用版本）
@@ -89,6 +98,6 @@ ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

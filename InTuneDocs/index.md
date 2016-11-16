@@ -3,41 +3,42 @@ experimental: true
 experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: "Intune 文档 - MDM 文档 | Microsoft 文档"
+title: "Intune 文档 | Microsoft 文档"
 description: "Microsoft Intune 技术文档 - 移动设备和应用程序管理"
-keywords: "Intune 文档、MDM 文档、移动设备管理文档、移动设备和应用程序管理文档"
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+keywords: "intune 文档, 应用管理,设备管理, MDM 文档, MAM 文档"
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 10/07/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
+ms.sourcegitcommit: 315c159869303fd6a26caa35160d5ba3c7ccdc1f
+ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
 
 
 ---
-# Intune 文档
+# <a name="intune-documentation"></a>Intune 文档
 <article id="main">
     <section id="hero-content">
       <h1>Intune 文档</h1>
       <h2>了解如何部署和管理 Microsoft Intune 一种移动设备和应用程序管理服务。</h2>
-      <h3>想要使用 Configuration Manager 管理 Intune？ <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">请查看 Configuration Manager 文档 &rarr;</a></h3>
+      <h3>要使用 Configuration Manager 管理 Intune？ <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Read about hybrid mobile device management &rarr;（了解混合移动设备管理）</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Microsoft Intune 简介</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">依赖于 Intune 的常见方案</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Intune 快速入门指南</a></li>
+          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">新增功能</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune 的常见使用方式</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">保护应用数据</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">设备和应用生命周期概述</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">保护应用数据</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">最终用户需要了解的有关 Intune 的信息</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">保护对公司资源的访问</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-ios">Microsoft Intune App SDK for iOS 开发人员指南</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-android">Microsoft Intune App SDK for Android 开发人员指南</a></li>
         </ul>
       </div>
     </section>
@@ -262,7 +263,7 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
       <div class="resource-list row">
           <ul class="column-half">
           <li><a href="https://microsoftintune.uservoice.com/" target="_blank">提供有关 Intune 功能的反馈</a></li>
-          <li><a href="https://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">提供有关 Intune 文档的反馈</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">提供有关文档的反馈</a></li>
           <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune 文档下载</a></li>
           </ul>
           <ul class="column-half">
@@ -277,13 +278,13 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
       <p>关注 Intune 最新信息</p>
       <ol class="action-list">
         <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune 团队博客</a></li>
-        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune on Twitter</a></li>
+        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">Twitter 上的 @MSIntune</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

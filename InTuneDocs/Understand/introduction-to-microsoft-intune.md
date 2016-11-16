@@ -5,6 +5,7 @@ title: "Microsoft Intune 简介 | Microsoft Intune"
 description: "了解 Intune 作为企业移动性 + 安全性解决方案的移动设备管理组件的工作原理。"
 keywords: 
 author: Lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article
@@ -15,20 +16,20 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: b3b46c1025ad0792ed4623656c878c53bd69d6cb
+ms.openlocfilehash: f2f5d901ae3b6ffb298b56eef4ae593842b80cfb
 
 
 ---
 
-# Intune 简介
-Microsoft Intune 是 Microsoft 企业移动性 + 安全（EMS，以前称为企业移动性套件）的“管理部分”。 企业移动性就是使员工可以在其所有设备上高效工作，同时保护组织的信息。  
+# <a name="introduction-to-intune"></a>Intune 简介
+Microsoft Intune 是 Microsoft 企业移动性 + 安全（EMS，以前称为企业移动性套件）的管理部分。 企业移动性就是使员工可以在其所有设备上高效工作，同时保护组织的信息。  
 
 EMS 是针对企业移动性的完整集成套件，包括工作效率、标识、访问控制、管理和数据保护。 它为你提供了在组织中部署和运行移动性解决方案的有效方式。  
 
 ![企业移动性愿景图](..\media\em-vision.png)
 
-Intune 帮助你管理移动设备和移动应用。 它与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访问控制，并与 Azure 权限管理 (Azure RMS) 集成以实现数据保护。  
+Intune 可帮助你管理移动设备和移动应用。 它与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访问控制，并与 Azure 权限管理 (Azure RMS) 集成以实现数据保护。  
 
 Intune 可帮助解决的常见业务问题包括：
 
@@ -48,13 +49,13 @@ Intune 提供的主要工具包括：
 
 在本文档中，我们将介绍如何使用 Intune 提供的工具支持你的业务方案。  我们将介绍如何将 Office 365、Azure AD、Azure RMS 和 Microsoft 移动性套件的其他部分与这些工具配合使用。 我们将向你大致介绍该技术的常规使用方法、它在你的环境中如何才能有所帮助，以及实施它们的过程。 技术本身是灵活的，并且可适用于各种类型的方案（不仅仅局限于我们在此处介绍的方案）。
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 * 了解一些 [Intune 的常见使用方式](common-ways-to-use-intune.md)。
 * 通过 [Intune 的 30 天试用版](get-started-with-a-30-day-trial-of-microsoft-intune.md)熟悉该产品。
 * 深入了解 Intune 的[技术要求和功能](/intune/get-started/what-to-know-before-you-start-microsoft-intune)。
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "使用 Intune 续订 Symantec 企业代码签名证书 | Microsoft Intune"
 description: "用于管理某些 Windows 和 Windows Phone 移动设备的 Symantec 证书续订指南"
 keywords: 
-author: NathBarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
@@ -13,17 +13,17 @@ ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
+ms.sourcegitcommit: 8fd2a90025ae9310a214978cd2d42ea7ad035fa3
+ms.openlocfilehash: 2479f8065a2bb46e63b0e3971700a8d2c0982755
 
 
 ---
 
-# 续订用于 Windows 设备的 Symantec 企业代码签名证书
+# <a name="renew-a-symantec-enterprise-codesigning-certificate-for-windows-devices"></a>续订用于 Windows 设备的 Symantec 企业代码签名证书
 
-用于管理某些 Windows 和 Windows Phone 移动设备的 Symantec 证书必须定期续订。 对于 Windows Phone 8.0 设备，设备注册需要已签名公司门户应用和代码签名证书。 更高版本的 Windows Phone 设备可以使用从应用商店下载的公司门户应用。 部署业务线应用也需要代码签名证书。
+用于部署 Windows 和 Windows Phone 移动应用的 Symantec 证书必须定期续订。
 
-## 如何续订 Symantec 企业代码签名证书
+## <a name="how-to-renew-the-symantec-enterprise-codesigning-certificate"></a>如何续订 Symantec 企业代码签名证书
 
 1.  大约在证书到期前 14 天查找发自 Symantec 的续订电子邮件。 电子邮件包括 Symantec 有关续订你的企业证书的说明。
 
@@ -33,7 +33,7 @@ ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
 
 3.  续订获批并支付后，下载该证书。
 
-## 如何为 Windows Phone 8.0 安装更新的证书
+## <a name="how-to-install-the-updated-certificate-for-windows-phone-80"></a>如何为 Windows Phone 8.0 安装更新的证书
 
 1.  在此处下载 Windows Phone 公司门户，并对其进行签名： [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)。
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
 
 提供签名的 SSP.xap 文件是当前提供更新的代码签名证书的唯一方法。 要支持签名的业务线应用，你必须对公司门户应用签名，并将其上载，即使你的用户将从应用商店安装公司门户应用。
 
-## 如何为 Windows Phone 8.1 和更高版本设备安装更新的证书
+## <a name="how-to-install-the-updated-certificate-for-windows-phone-81-and-later-devices"></a>如何为 Windows Phone 8.1 和更高版本设备安装更新的证书
 
 1.  从下载中心下载最新的 Windows Phone 公司门户，并对其进行签名： [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)。
 
@@ -60,12 +60,12 @@ ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
 5.  使用新证书对所有新的和任何更新的企业业务线应用签名。 现有应用程序不需要重新签名和重新部署。
 
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [设置 Windows Phone 8.0 管理](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 [设置 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

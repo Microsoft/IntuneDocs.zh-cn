@@ -2,9 +2,10 @@
 title: "VPN 配置文件的自定义配置 | Microsoft Intune"
 description: "使用自定义配置在 Intune 中创建 VPN 配置文件。"
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,18 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
+ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 
 
 ---
 
-# VPN 配置文件的自定义配置
+# <a name="custom-configurations-for-vpn-profiles"></a>VPN 配置文件的自定义配置
 
-## 创建自定义配置
+## <a name="create-a-custom-configuration"></a>创建自定义配置
 可以使用自定义配置在 Intune 中创建 VPN 配置文件。 若要创建自定义配置，请执行以下操作：
 
-   1. 在 Intune 管理控制台中，单击“策略” > “添加策略” > *<Expand platform>“自定义配置”* >  > “创建策略”。
+   1. 在 Intune 管理控制台中，单击“策略” > “添加策略” > “展开平台” > “自定义配置” > “创建策略”。
    2. 提供策略的名称。
    3. 对于每个 URI 设置，选择“添加”并提供所需的信息。 下面是一个示例：
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
    4.  输入所有 URI 设置后，选择“保存策略”，然后部署策略。
 
-## 部署配置策略
+## <a name="deploy-a-configuration-policy"></a>部署配置策略
 
 1.  在“策略”工作区中，选择想要部署的策略，然后单击“管理部署”。
 
@@ -44,7 +45,7 @@ ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 如果你选择的是已部署的策略，则可以在策略列表的下半部分查看有关部署的详细信息。
 
-##自定义 VPN 配置文件配置的 URI 设置示例
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>自定义 VPN 配置文件配置的 URI 设置示例
 以下是用于在名为 Contoso 的虚构公司为 VPN 创建自定义配置的 URI 值的示例条目。 有关详细信息，例如每个条目的数据类型，请参阅 [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)。
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +86,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 有关应如何使用这些设置的任何问题或者有关其作用的更多详细信息，客户应参考配置服务供应商 (CSP) 文档：https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx。
 
-## PulseSecure 上的 Android 每应用 VPN 的 URI 设置
-### 包列表的自定义 URI
+## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>PulseSecure 上的 Android 每应用 VPN 的 URI 设置
+### <a name="custom-uri-for-package-list"></a>包列表的自定义 URI
 -  数据类型 = 字符串
--  OMA-URI =./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  值 = 分隔符分隔的包列表。
    - 分隔符：分号 (;)、冒号 (:)、逗号 (,)、竖线 (|)
 
@@ -96,22 +97,22 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### 模式的自定义 URI（可选）
+### <a name="custom-uri-for-mode-optional"></a>模式的自定义 URI（可选）
 - 数据类型 = 字符串
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > 注意
 > - 请使用分配给自定义配置文件的同一个*名称*
-> - 可能的值：“全局”、“白名单”、“黑名单”
+> - 可能的值：“全局”、“允许列表”、“阻止列表”
 > - 如果未提供 PackageList，则默认为“全局”（与整个系统的配置文件向后兼容）
-> - 如果提供了 PackageList，则默认为“白名单”
+> - 如果提供了 PackageList，则默认为“允许列表”
 
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 （Microsoft Intune 中的 VPN 连接）[vpn-connections-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
