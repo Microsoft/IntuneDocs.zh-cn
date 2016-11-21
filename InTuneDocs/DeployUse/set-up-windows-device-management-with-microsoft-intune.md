@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: 9929294dd93e7bad47e6674ccafab0c036a1f89c
 
 
 ---
@@ -34,7 +34,11 @@ ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
 1. **设置 Intune**<br>
 如果尚未设置，请通过[将移动设备管理 (MDM) 机构设置](prerequisites-for-enrollment.md#set-mobile-device-management-authority)为“Microsoft Intune”，然后设置 MDM，为管理移动设备做好准备。
 
-2. **创建 CNAME**（可选）<br>为公司的域创建 **CNAME** DNS 资源记录以简化注册。 尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果未找到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称，`https://manage.microsoft.com`。 CNAME 资源记录必须具有以下信息：
+2. **创建 CNAME**（可选）<br>为公司的域创建 **CNAME** DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
+
+    如果你当前在 DNS 中有将 EnterpriseEnrollment.contoso.com 重定向到 manage.microsoft.com 的 CNAME，则我们建议将它替换为 DNS 中将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。 建议进行此更改，因为将针对未来版本中的注册弃用 manage.microsoft.com 终结点。
+
+    CNAME 资源记录必须具有以下信息：
 
   |类型：|主机名|指向|TTL|
   |--------|-------------|-------------|-------|
@@ -68,6 +72,6 @@ ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
