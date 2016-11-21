@@ -7,22 +7,22 @@ manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 557c1b3b36adf40ec4ad94f22ed7bb9705c6eec4
-ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 ---
 
-# 配置并部署 Lookout for Work 应用
+# <a name="configure-and-deploy-lookout-for-work-apps"></a>配置并部署 Lookout for Work 应用
 本文介绍了如何为 Android 和 iOS 设备配置和部署 Lookout for Work 应用。
 
-## Android（Google Play 商店应用）
+## <a name="android-google-play-store-app"></a>Android（Google Play 商店应用）
 
 * **步骤 1**：在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，转到“应用”并选择“添加应用”。   
 * **步骤 2：**在发布者的“软件设置”页选择“外部链接”，并指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
@@ -36,7 +36,7 @@ ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
   * **类型：**计算机管理
 * **步骤 4：**成功完成时将显示消息“数据已成功上传至 Microsoft Intune”。
 
-在 Intune 控制台单击“应用”时，列表中立即显示 Lookout for Work 应用 ![Intune 管理员控制台应用页面的屏幕截图，其中显示了列出的 Lookout for Work 应用](../media/mtp/lookout-app-listed-intune-console.png)
+在 Intune 控制台单击“应用”时，列表中立即显示 Lookout for Work 应用 ![在列表中显示 Lookout for work 应用的 Intune 管理员控制台应用页屏幕截图](../media/mtp/lookout-app-listed-intune-console.png)
 
 * **步骤 5**：通过选择 Lookout for Work 应用，并选择“管理部署”，将应用部署到用户。
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
 * **步骤 6**：选择“所需的安装”选项，该选项要求在用户的设备上安装 Lookout 应用。
 
 
-## iOS（企业签名的 Lookout 应用版本）
+## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS（企业签名的 Lookout 应用版本）
 
 * **步骤 1：**确保在设备上设置了 **iOS 管理**。 有关如何针对 iOS 管理设置设备的说明，请参阅[设置 iOS 和 Mac 设备管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 
@@ -82,7 +82,7 @@ ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
 
 选择“必需安装”选项，该选项要求在用户设备上安装 Lookout 应用。
 
-## 在设备上打开部署的应用时发生的情况
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在设备上打开部署的应用时发生的情况
 
 
 
@@ -91,13 +91,13 @@ ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
 
 * [系统提示在 Android 设备上安装 Lookout for Work](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [Lookout for Work 在 Android 设备上发现威胁，请解除该威胁](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [解除 Lookout for Work 在 Android 设备上发现的威胁](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 * [在合规性策略中启用设备威胁保护规则](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

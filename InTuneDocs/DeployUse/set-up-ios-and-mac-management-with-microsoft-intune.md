@@ -14,15 +14,13 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: b0fe31c93712f156711af16ed4028537060e8edc
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 930419b20b675aa48c2b8bf1c49a1b576bbab414
 
 
 ---
 
 # <a name="set-up-ios-and-mac-device-management"></a>设置 iOS 和 Mac 设备管理
-有关设置 iOS 或 Mac 设备的帮助，请参阅 [Using your iOS or Mac OS X device with Intune](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)（通过 Intune 使用 iOS 或 Mac OS X 设备）。
-
 Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，并允许用户访问公司电子邮件和应用。 必须拥有 Apple 推送通知服务 (APNs) 证书，才能使用 Intune 管理 iOS 和 Mac 设备。 在将证书添加到 Intune 后，用户就可以安装公司门户应用来注册其设备，或者管理员可以设置[企业自有的 iOS 设备管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
 
 1.  **设置 Intune**<br>
@@ -41,9 +39,12 @@ Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，
 4.  **将 APNs 证书添加到 Intune**<br>
     在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“管理”&gt;“移动设备管理”&gt;“iOS 和 Mac OS X”&gt;“上传 APNs 证书”，然后选择“上传 APNs 证书”。 转到证书 (.pem) 文件，选择“打开”，然后输入“Apple ID”。 使用 APN 证书，Intune 可通过将策略推送到注册的移动设备注册并管理 iOS 设备。
 
-5.  **告知用户如何通过公司门户访问公司资源**<br>
-    用户需要了解如何注册其设备以及在设备纳入管理之后会出现的情况。
-    - [最终用户需要了解的有关使用 Microsoft Intune 的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+5.  **告诉用户如何注册其设备以获取对公司资源的访问权限。**
+
+    有关最终用户注册说明，请参阅[在 Intune 中注册 iOS 设备](../enduser/enroll-your-device-in-intune-ios.md)和[在 Intune 中注册 Mac OS X 设备](../enduser/enroll-your-device-in-intune-mac-os-x.md)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
+
+    有关其他最终用户任务的信息，请参阅以下文章：
+    - [有关 Microsoft Intune 最终用户体验的资源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
     - [适用于 iOS 和 Mac 设备的最终用户指南](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 如果公司或组织为用户购买了 iOS 设备，也可以将这些设备注册为[公司拥有的 iOS 设备](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)，以便进行管理。
@@ -53,6 +54,6 @@ Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

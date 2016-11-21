@@ -2,7 +2,8 @@
 title: "管理公司拥有的设备 | Microsoft Intune"
 description: "可采用多种方法注册企业拥有的设备。这具体取决于设备的类型、其购买方式以及组织需求。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 88409332d203dc4ee82fdf98f89a94e5a89a7eed
-ms.openlocfilehash: c29cd2c0c4c5671a84f7c0b0ba473e6fb32604d9
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 7577cbab528d88635e8551bf8de1ffd49becaa84
 
 
 ---
@@ -33,7 +34,7 @@ ms.openlocfilehash: c29cd2c0c4c5671a84f7c0b0ba473e6fb32604d9
 
 ## <a name="create-a-device-enrollment-manager-account"></a>创建设备注册管理器帐户
 
-可在 Intune 中创建单用户设备注册管理器 (DEM) 帐户，为组织管理大量移动设备。 创建 DEM 帐户后，指定的帐户管理器可注册 5 台以上的设备（标准用户可注册 5 台设备）。
+可在 Intune 中创建单用户设备注册管理器 (DEM) 帐户，为组织管理大量移动设备。 创建 DEM 帐户后，指定的帐户管理器可注册超过 15 台设备（标准用户可注册 15 台设备）。
 
 仅可使用 DEM 帐户注册未被单个特定用户使用的设备。 这些类型的设备非常适用于销售点或实用工具应用，但是不适用于需要访问电子邮件或公司资源的用户。
 
@@ -60,6 +61,6 @@ ms.openlocfilehash: c29cd2c0c4c5671a84f7c0b0ba473e6fb32604d9
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

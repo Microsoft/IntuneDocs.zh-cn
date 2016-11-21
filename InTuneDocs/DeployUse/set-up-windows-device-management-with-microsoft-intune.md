@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
 
 
 ---
@@ -55,8 +55,12 @@ ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
 
 4.  **可选步骤**<br>在 Windows 10 中无需执行**添加旁加载密钥**步骤。 只有在向设备分配 Windows 应用商店中未提供的业务线 (LOB) 应用时才需要执行“上传代码签名证书”步骤。
 
-6.  **通知用户**<br>需要告诉用户如何注册其设备以及在设备纳入管理之后会出现的情况：
-      - [最终用户需要了解的有关使用 Microsoft Intune 的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+6.  **告诉用户如何注册其设备以及在纳入管理之后会出现的情况。**
+
+    有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](../enduser/enroll-your-device-in-intune-windows.md)。
+
+    有关最终用户任务的详细信息，请参阅以下文章：
+      - [有关 Microsoft Intune 最终用户体验的资源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [适用于 Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
 
 ### <a name="see-also"></a>另请参阅
@@ -64,6 +68,6 @@ ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
