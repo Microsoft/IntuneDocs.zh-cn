@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 2b781bc77dc32aff726683f33bdd9d29650661ea
+ms.sourcegitcommit: 1ed86339103f165092776ec94b50c5a02d054236
+ms.openlocfilehash: 7a5ff0f021b487f4586ca3199c6db2cb0ada3930
 
 
 ---
 
-# 启动 Microsoft Intune 前须知
+# <a name="what-to-know-before-you-start-microsoft-intune"></a>启动 Microsoft Intune 前须知
 
-开始设置 Microsoft Intune 之前，请查看以下每个要求：
+开始设置 Microsoft Intune 之前，请查看以下要求：
 
 - [支持的移动设备和计算机](supported-mobile-devices-and-computers.md)
 - [受 Intune 支持的 Web 浏览器](supported-web-browsers.md)
@@ -38,6 +38,6 @@ ms.openlocfilehash: 2b781bc77dc32aff726683f33bdd9d29650661ea
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

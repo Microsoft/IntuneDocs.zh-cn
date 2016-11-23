@@ -14,8 +14,8 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 14ba34d46df4b4ff9de4427800b146e383f8a3d2
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
 
 
 ---
@@ -38,7 +38,7 @@ Microsoft Intune 让管理员可以使用 IMEI 号码导入移动设备平台的
         AABBBBBBCCCCCCE,PO 1234
         ```
 
-    -   **手动添加设备详细信息** - 输入最多五台设备的 IMEI 号码和设备详细信息。
+    -   **手动添加设备详细信息** - 输入最多 15 台设备的 IMEI 号码和设备详细信息。
 
    *详细信息*的管理用途是识别与设备关联的 IMEI 号码。 此信息不会发送到设备，但它会出现在 Intune 控制台中。
 
@@ -50,6 +50,6 @@ Microsoft Intune 让管理员可以使用 IMEI 号码导入移动设备平台的
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
