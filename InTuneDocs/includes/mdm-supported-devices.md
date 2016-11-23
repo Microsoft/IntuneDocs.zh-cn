@@ -1,6 +1,6 @@
 
   - Apple iOS 8.0 及更高版本
-  - Google Android 4.0 及更高版本（包括 Samsung KNOX SDK 4.0 及更高版本）*
+  - Google Android 4.0 及更高版本（包括 Samsung KNOX Standard 4.0 及更高版本）*
   - Google 的 Android for Work（[要求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")）
   - Windows Phone 8.1 及更高版本
   - Windows 8.1 RT
@@ -11,11 +11,11 @@
   - Windows 全息版和 Windows 全息企业版
   - Mac OS X 10.9 及更高版本
 
-*Samsung Galaxy Ace 电话的以下型号都不能由 Intune 作为 Samsung KNOX 设备进行管理：SM-G313HU、SM-G313HY、SM-G313M、SM-G313MY 和 SM-G313U。 使用 Intune 注册这些设备时，将以标准 Android 设备管理它们。 有关详细信息，请参阅 [Samsung KNOX 网站](https://www.samsungknox.com/en)。
+*Samsung Galaxy Ace 电话的以下型号都不能由 Intune 作为 Samsung KNOX Standard 设备进行管理：SM-G313HU、SM-G313HY、SM-G313M、SM-G313MY 和 SM-G313U。 使用 Intune 注册这些设备时，将以标准 Android 设备管理它们。 有关详细信息，请参阅 [Samsung KNOX 网站](https://www.samsungknox.com/en)。
 
 拥有企业移动性 + 安全性 (EMS) 的客户还可以[使用 Azure Active Directory (AAD) 注册 Windows 10 设备](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)。 [Intune 软件客户端](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)可以管理运行 Windows Vista 操作系统及更高版本的 Windows 电脑，但不支持 Windows 家庭版的所有版本。  
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

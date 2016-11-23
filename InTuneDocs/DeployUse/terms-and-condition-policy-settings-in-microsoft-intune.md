@@ -2,8 +2,8 @@
 title: "条款和条件策略设置 | Microsoft Intune"
 description: "你可以将 Intune 条款和条件部署到用户组，以解释注册、访问工作资源和使用公司门户应用将如何影响设备和用户。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70fcc08a5619892387aaf8223e9a74661d9c90f6
-ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 ---
 
-# Microsoft Intune 中的条款和条件策略设置
+# <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的条款和条件策略设置
 可以将 Intune 条款和条件部署到用户组，以解释注册、访问工作资源和使用公司门户对设备和用户有何影响。 用户必须接受这些条款和条件，然后才能使用公司门户进行注册或访问工作。
 
 你可以创建和部署包含不同条款和条件的多个策略。 也可以用不同的语言生成相同条款和条件的不同版本，然后将它们部署到相应的组。
 
-## 创建条款和条件策略
+## <a name="create-a-terms-and-conditions-policy"></a>创建条款和条件策略
 
 1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
 
 4.  完成后，单击“保存”。 新策略将显示在“策略”工作区的“条款和条件”节点中。
 
-## 部署条款和条件策略
+## <a name="deploy-a-terms-and-conditions-policy"></a>部署条款和条件策略
 
 1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
@@ -57,16 +57,16 @@ ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
 
     当目标用户访问公司门户时，Intune 将显示部署的条款和条件。 用户必须接受这些条款，然后才能访问公司资源。
 
-## 监视条款和条件策略
+## <a name="monitor-a-terms-and-conditions-policy"></a>监视条款和条件策略
 
 1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
 2.  在“创建新报告”窗口中，单击“查看报告”。 此时将打开详细说明用户接受了你部署的哪些条款和条件的报告。
 
-### 条款和条件的更新和版本控制
+### <a name="updates-and-version-control-for-terms-and-conditions"></a>条款和条件的更新和版本控制
 编辑现有条款和条件策略时，可以选择在部署策略时执行该行为。 使用以下过程帮助你更新现有的条款和条件策略。
 
-## 使用多个版本的条款和条件
+## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>使用多个版本的条款和条件
 
 1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
@@ -76,11 +76,11 @@ ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
 
     建议增加版本号，并在条款和条件策略发生重大变更时要求用户接受。 如果修改错别字或更改格式设置，则维持当前版本号。
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: bb94cb21bce5fb25c821b6a01d952ccba2f94834
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
 
 
 ---
@@ -81,7 +81,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
         111111111,PO 1234
         ```
 
-    -   **手动添加设备详细信息** - 输入最多五台设备的序列号和设备详细信息。
+    -   **手动添加设备详细信息**&mdash;输入最多 15 台设备的序列号和设备详细信息。
 
     > [!NOTE]
     > 如果稍后必须从 Intune 管理中删除企业拥有的设备，则可能需要在“企业预注册的设备”下的“按 iOS 序列号”设备组中从 Intune 删除设备序列号，以禁用设备注册。 如果 Intune 在删除序列号时或大约在这一时间执行灾难恢复过程，则需要验证组里是否仅包含活动设备的序列号。
@@ -151,6 +151,6 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

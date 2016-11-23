@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: 9929294dd93e7bad47e6674ccafab0c036a1f89c
 
 
 ---
@@ -34,7 +34,11 @@ ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
 1. **设置 Intune**<br>
 如果尚未设置，请通过[将移动设备管理 (MDM) 机构设置](prerequisites-for-enrollment.md#set-mobile-device-management-authority)为“Microsoft Intune”，然后设置 MDM，为管理移动设备做好准备。
 
-2. **创建 CNAME**（可选）<br>为公司的域创建 **CNAME** DNS 资源记录以简化注册。 尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果未找到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称，`https://manage.microsoft.com`。 CNAME 资源记录必须具有以下信息：
+2. **创建 CNAME**（可选）<br>为公司的域创建 **CNAME** DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
+
+    如果你当前在 DNS 中有将 EnterpriseEnrollment.contoso.com 重定向到 manage.microsoft.com 的 CNAME，则我们建议将它替换为 DNS 中将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。 建议进行此更改，因为将针对未来版本中的注册弃用 manage.microsoft.com 终结点。
+
+    CNAME 资源记录必须具有以下信息：
 
   |类型：|主机名|指向|TTL|
   |--------|-------------|-------------|-------|
@@ -55,8 +59,12 @@ ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
 
 4.  **可选步骤**<br>在 Windows 10 中无需执行**添加旁加载密钥**步骤。 只有在向设备分配 Windows 应用商店中未提供的业务线 (LOB) 应用时才需要执行“上传代码签名证书”步骤。
 
-6.  **通知用户**<br>需要告诉用户如何注册其设备以及在设备纳入管理之后会出现的情况：
-      - [最终用户需要了解的有关使用 Microsoft Intune 的内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+6.  **告诉用户如何注册其设备以及在纳入管理之后会出现的情况。**
+
+    有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](../enduser/enroll-your-device-in-intune-windows.md)。
+
+    有关最终用户任务的详细信息，请参阅以下文章：
+      - [有关 Microsoft Intune 最终用户体验的资源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [适用于 Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
 
 ### <a name="see-also"></a>另请参阅
@@ -64,6 +72,6 @@ ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

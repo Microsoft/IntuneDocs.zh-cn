@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
+ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
+ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
@@ -76,7 +76,7 @@ ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
 
     -   为模板指定一个友好的 **“模板显示名称”** 。
 
-    -   在 **“使用者名称”** 选项卡上，选择 **“在请求中提供”**。 （由用于 NDES 的 Intune 策略模块强制实施安全性）。
+    -   在 **“使用者名称”** 选项卡上，选择 **“在请求中提供”**。 
 
     -   在 **“扩展”** 选项卡上，确保 **“应用程序策略描述”** 包括了 **“客户端身份验证”**。
 
@@ -142,8 +142,6 @@ ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
 
     a. 选择“**登录**”并输入你的 Intune 服务管理员凭据或具有全局管理权限的租户管理员的凭据。
 
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
     b。 选择“**高级**”选项卡，然后提供具有在证书颁发机构“**颁发和管理证书**”的权限的帐户凭据。
 
     c. 选择“**应用**”。
@@ -152,15 +150,12 @@ ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
 
 6.  打开命令提示符并键入 **services.msc**。 然后按 **Enter** 键，右键单击“**Intune 连接器服务**”后选择“**重新启动**”。
 
-若要验证服务是否正在运行，打开浏览器然后输入以下 URL 将返回 **“403”** 错误：
-
-**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ### <a name="next-steps"></a>后续步骤
 你现在可以像[配置证书配置文件](Configure-Intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

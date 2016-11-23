@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
-ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
@@ -23,7 +23,15 @@ ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 # <a name="custom-configurations-for-vpn-profiles"></a>VPN 配置文件的自定义配置
 
 ## <a name="create-a-custom-configuration"></a>创建自定义配置
-可以使用自定义配置在 Intune 中创建 VPN 配置文件。 若要创建自定义配置，请执行以下操作：
+可以使用自定义配置在 Intune 中创建适用于以下设备的 VPN 配置文件：
+
+* 运行 Android 4 和更高版本的设备
+* Android for Work 设备
+* 运行 Windows 8.1 和更高版本的已注册设备
+* 运行 Windows Phone 8.1 和更高版本的设备
+* 运行 Windows 10 桌面版和移动版的设备
+
+若要创建自定义配置，请执行以下操作：
 
    1. 在 Intune 管理控制台中，单击“策略” > “添加策略” > “展开平台” > “自定义配置” > “创建策略”。
    2. 提供策略的名称。
