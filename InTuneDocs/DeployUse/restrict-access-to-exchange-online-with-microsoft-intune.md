@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: 916a4d90b5aa64cad429ccd6559ad8d388ba301e
+ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
+ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
 
 
 ---
@@ -185,7 +185,7 @@ ms.openlocfilehash: 916a4d90b5aa64cad429ccd6559ad8d388ba301e
 
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件性访问” > “Exchange Online 策略”。
-![Exchange Online 条件性访问策略页面的屏幕截图](../media/mdm-ca-exo-policy-configuration.png)
+
 
 2.  在“Exchange Online 策略”  页面上，选择“启用 Exchange Online 的条件访问策略” 。
 
@@ -269,6 +269,6 @@ ms.openlocfilehash: 916a4d90b5aa64cad429ccd6559ad8d388ba301e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

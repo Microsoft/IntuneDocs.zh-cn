@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 1/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 391279e37007ead39be3506c04b382a8296329b5
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 7a4f1af9843cba6fa7b7325d0a678dd445cc1000
 
 
 ---
 
-# 后配置任务
+# <a name="post-configuration-tasks"></a>后配置任务
 完成 Intune 付费订阅的初始配置步骤后，应考虑启用其他移动设备管理功能。
 
 -   **将 Exchange 连接到 Intune：**对于有尚未在 Intune 中注册的移动设备的用户，可以使用本地 Exchange 和在 Microsoft Office 365 中的 Exchange Online 的连接器，启用 Exchange ActiveSync 管理。 Exchange 连接器将你与 Exchange 部署连接，使你能通过 Intune 管理控制台管理移动设备。 要了解有关 Exchange 连接器的详细信息，请参阅[使用 Exchange ActiveSync 和 Microsoft Intune 管理移动设备](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
@@ -31,6 +31,6 @@ ms.openlocfilehash: 391279e37007ead39be3506c04b382a8296329b5
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
