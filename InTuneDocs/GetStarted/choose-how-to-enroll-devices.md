@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
-ms.openlocfilehash: f15c9748b1c55ec46ddd0056445bf434fa323c59
+ms.sourcegitcommit: a563105aafb447c6e009cca09645e630709ff72d
+ms.openlocfilehash: 143f77bde09648a233ff09e9740668191a50cb1e
 
 
 ---
@@ -46,13 +46,13 @@ ms.openlocfilehash: f15c9748b1c55ec46ddd0056445bf434fa323c59
 
 ## <a name="what-operating-system-are-your-shared-devices-running"></a>**你的共享设备运行的是哪种操作系统？**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**如何管理共享的 iOS 设备？**
 
-  > [!div class="button"]
-  [iOS DEP 注册 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 直接注册 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [DEM 注册 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
+> [!div class="button"]
+[iOS DEP 注册 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 直接注册 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [DEM 注册 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
 
   - **Apple 的设备注册计划 (DEP)** - 通过 DEP 购买或管理的 iOS 设备可以与注册配置文件相关联。 用户首次打开设备时，设备将下载 DEP 配置文件，并使用配置文件 DEP 进行注册。
 
@@ -62,8 +62,8 @@ ms.openlocfilehash: f15c9748b1c55ec46ddd0056445bf434fa323c59
 
 ## <a name="how-will-you-manage-dedicated-ios-devices"></a>**如何管理专用 iOS 设备？**
 
-  > [!div class="button"]
-   [iOS DEP](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 设置助理](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [使用 IMEI 进行标记](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [!div class="button"]
+[iOS DEP](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 设置助理](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [使用 IMEI 进行标记](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   你可以使用专用用户注册公司拥有的设备，方法如下：
 
@@ -75,6 +75,6 @@ ms.openlocfilehash: f15c9748b1c55ec46ddd0056445bf434fa323c59
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

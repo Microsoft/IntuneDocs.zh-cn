@@ -1,5 +1,5 @@
 # [了解和探索](/intune/understand-explore/introduction-to-microsoft-intune)
-# [开始使用](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [开始使用](/intune/get-started/get-started)
 # [新增功能](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [部署和使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
@@ -23,6 +23,6 @@
 ## [Troubleshoot Lookout Integration](troubleshooting-lookout-integration.md)（Lookout 集成故障排除）
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
