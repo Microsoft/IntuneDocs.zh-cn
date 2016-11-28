@@ -9,14 +9,14 @@ keywords: "intune 文档, 应用管理,设备管理, MDM 文档, MAM 文档"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/07/2016
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: 315c159869303fd6a26caa35160d5ba3c7ccdc1f
-ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
+ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
+ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
       <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">新增功能</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">150 多个许可证？ 利用 FastTrack 权益</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune 的常见使用方式</a></li>
           <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">保护应用数据</a></li>
         </ul>
@@ -285,6 +285,6 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

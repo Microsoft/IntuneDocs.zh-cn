@@ -3,33 +3,34 @@ title: "选择如何注册移动设备 |Microsoft Intune"
 description: "决定如何通过回答几个简单的问题在 Intune 中注册移动设备"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 2bfba29b5b2585f276a85a8dee7e62009e41ec3f
-ms.openlocfilehash: b96b970b3326b0b17f1a5f57f6d1407756c78e41
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
 
 
 ---
-# 选择如何注册移动设备
+# <a name="choose-how-to-enroll-mobile-devices"></a>选择如何注册移动设备
 
 你对这一系列问题的回答将帮助确定你管理的设备的最佳注册方法。
 
-## **如何管理企业所拥有的专用设备？**
+## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**如何管理企业所拥有的专用设备？**
 
   > [!div class="button"]
 [iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
 [iOS 设置助理 >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
 > [!div class="button"]
-[标记 IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[IMEI 标记>](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   你可以使用专用用户注册公司拥有的设备，方法如下：
 
@@ -40,10 +41,10 @@ ms.openlocfilehash: b96b970b3326b0b17f1a5f57f6d1407756c78e41
   - **使用 IMEI 号码进行标记** - 通过导入公司拥有的设备的国际移动设备标识 (IMEI) 号，你可以在 Intune 中将它们标记为公司拥有的设备。 这是将专用（“单一用户”）Windows 和 Android 设备标识为由公司所有的唯一方法。 对于无法使用 Apple 设备注册程序或 Apple 配置器进行注册的 iOS 设备，也可使用 IMEI 号码进行标记。 预先声明设备以将其标记为“企业”后，可以将设备分配给用户。 然后，用户可以通过安装公司门户将其设备注册为专用设备，以访问公司资源（如电子邮件、应用和数据）。
 
   > [!div class="button"]
-  [< 上一步](choose-how-to-enroll-devices3.md)
+  [< 返回](choose-how-to-enroll-devices3.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

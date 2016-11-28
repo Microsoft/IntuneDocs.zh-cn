@@ -3,26 +3,27 @@ title: "选择如何注册移动设备 |Microsoft Intune"
 description: "决定如何通过回答几个简单的问题在 Intune 中注册移动设备"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 242de106-36a0-469f-a89c-4173ae8bdd7f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: 1e7c4f9963aaba3389a903e2fe2fd3fd582c8ce6
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 515f1edfc078e2061f74fc103ede42248cbea759
 
 
 ---
-# 选择如何注册移动设备
+# <a name="choose-how-to-enroll-mobile-devices"></a>选择如何注册移动设备
 
 你对这一系列问题的回答将帮助确定你管理的设备的最佳注册方法。
 
-## **你想启用哪个 BYOD 平台？**
+## <a name="which-byod-platform-do-you-want-to-enable"></a>**想要启用哪个 BYOD 平台？**
 
 > [!div class="button"]
 [Android >](/intune/deploy-use/set-up-android-management-with-microsoft-intune)
@@ -35,10 +36,10 @@ ms.openlocfilehash: 1e7c4f9963aaba3389a903e2fe2fd3fd582c8ce6
 
 
 > [!div class="button"]
-[< 上一步](choose-how-to-enroll-devices1.md)
+[< 返回](choose-how-to-enroll-devices1.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

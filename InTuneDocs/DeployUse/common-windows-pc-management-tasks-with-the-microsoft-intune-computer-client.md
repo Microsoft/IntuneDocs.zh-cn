@@ -14,8 +14,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
+ms.sourcegitcommit: cf6b4c0fbc8a739f205173f39093ce5550cb8321
+ms.openlocfilehash: 075ed3f7d8b5f8283b7936c1c89d20081a9264a6
 
 
 ---
@@ -41,25 +41,24 @@ ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
 
 -  请求远程协助。
 
-Microsoft Intune Center 安装在所有被管理的计算机上。 你可以在 Intune 策略中配置下列设置，并且这些设置将在 Microsoft Intune Center 中向用户显示：
+Microsoft Intune Center 安装在所有被管理的计算机上。 可以在 Intune 策略中配置下列设置，并且这些设置将在 Microsoft Intune Center 中向用户显示：
 
 |策略设置|详细信息|
 |------------------|--------------------|
-|**Name**|负责管理计算机的管理员的名称。<br /><br />最大长度：40 个字符|
-|**电话号码**|负责管理计算机的管理员的电话号码。<br /><br />最大长度：20 个字符|
-|**电子邮件地址**|负责管理计算机的管理员的电子邮件地址。<br /><br />最大长度：40 个字符|
-|**网站名称**|用户的支持网站的名称。<br /><br />最大长度：40 个字符|
-|**网站 URL**|支持网站的 URL。<br /><br />最大长度：150 个字符|
-|**注意**|向用户显示的注释。<br /><br />最大长度：120 个字符|
+|**Name**|负责管理计算机的管理员的名称。<br />最大长度：40 个字符|
+|**电话号码**|负责管理计算机的管理员的电话号码。<br />最大长度：20 个字符|
+|**电子邮件地址**|负责管理计算机的管理员的电子邮件地址。<br />最大长度：40 个字符|
+|**网站名称**|用户的支持网站的名称。<br />>最大长度：40 个字符|
+|**网站 URL**|支持网站的 URL。<br />最大长度：150 个字符|
+|**注意**|向用户显示的注释。<br />最大长度：120 个字符|
 
-## <a name="software-updates-settings"></a>软件更新设置
-使用策略来配置被管理的计算机用于从 Microsoft 和第三方检查并下载软件更新的设置。 这些更新不包括操作系统升级（即， 从 Windows 7 升级到 Windows 10，或从一个 Windows 10 版本升级到更高版本）。 有关详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。
+有关可对 Windows 电脑配置的策略和设置的相关信息，请参阅以下资源：
 
-### <a name="endpoint-protection-settings"></a>Endpoint Protection 设置
-使用策略来配置你随后部署到被管理的计算机的 Endpoint Protection 的设置。 其中包括扫描计划、要在检测到恶意软件时采取的操作等设置。 有关详细信息，请参阅[使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。
+- [在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新状态](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - 这些策略使托管计算机检查软件更新，并从 Microsoft 和第三方下载软件更新。 这些更新不包括操作系统更新（例如，从 Windows 7 升级到 Windows 10，或从一个 Windows 10 版本升级到更高版本）。
 
-## <a name="windows-firewall-settings"></a>Windows 防火墙设置
-策略可简化被管理的计算机上 Windows 防火墙设置的管理。 有关详细信息，请参阅[在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows 电脑](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)。
+- [使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) - 这些设置包括检测到恶意软件时要实施的扫描计划和操作。
+
+- [在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows 电脑](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - 这些策略可简化托管计算机上 Windows 防火墙设置的管理。
 
 ## <a name="view-hardware-and-software-inventory"></a>查看硬件和软件清单
 Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使用下列过程中的信息来了解如何创建：
@@ -144,7 +143,7 @@ Intune 收集有关被管理的计算机的硬件和软件的详细信息。 使
 
     如果未能卸载客户端，请阅读 [Endpoint Protection 疑难解答](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)以获取更多帮助。
 
-## <a name="manage-userdevice-linking"></a>管理用户-设备链接
+## <a name="manage-user-device-linking"></a>管理用户-设备链接
 你必须将用户链接到计算机，然后才能将软件部署到用户。 你可以将某个用户链接到多台计算机，但每台计算机只能链接到一个用户。 用户会自动链接到他们使用公司门户在 Intune 中注册的任何计算机。
 
 ### <a name="to-link-a-user-to-a-computer"></a>将用户链接到计算机
@@ -217,6 +216,6 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

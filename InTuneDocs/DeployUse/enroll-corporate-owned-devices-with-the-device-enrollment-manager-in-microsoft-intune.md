@@ -2,7 +2,8 @@
 title: "使用设备注册管理器进行注册 | Microsoft Intune"
 description: "设备注册管理器 (DEM) 帐户可以管理大量带有单一用户帐户的企业自有的共享移动设备。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
 
 
 ---
 
 
-# 使用 Microsoft Intune 中的设备注册管理器注册企业自有设备
-组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 *设备注册管理器* (DEM) 帐户是可注册最多 1000 台设备的特殊 Intune 帐户。 我们建议将通过此帐户注册的设备用作共享设备，而不是个人 ("BYOD") 设备。 例如，用户不能使用“本机”电子邮件应用。
+# <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的设备注册管理器注册企业自有设备
+组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 *设备注册管理器* (DEM) 帐户是可注册最多 1000 台设备的特殊 Intune 帐户。 每台已注册设备均使用单一许可证。 我们建议将通过此帐户注册的设备用作共享设备，而不是个人 ("BYOD") 设备。 例如，用户不能使用“本机”电子邮件应用。
 
 例如，你可以将设备注册管理器用户帐户指定给存储管理员或主管，允许他们执行下列操作：
 
@@ -50,10 +51,10 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 > 若要将公司应用部署到设备注册管理器托管的设备，请将公司门户应用作为“**必需的安装**”部署到此设备注册管理器用户帐户。
 > 为提高性能，在 DEM 设备上查看公司门户应用将仅显示本地设备。 仅可通过 Intune 管理控制台执行其他 DEM 设备的远程管理。
 
-## 创建设备注册管理器帐户
+## <a name="create-device-enrollment-manager-accounts"></a>创建设备注册管理器帐户
 设备注册管理员帐户是有权限注册大量企业自有设备的用户帐户。 只有 Intune 控制台中的用户可以是设备注册管理员。
 
-#### 将设备注册管理员添加到 Intune
+#### <a name="add-a-device-enrollment-manager-to-intune"></a>将设备注册管理员添加到 Intune
 
 1.  转到 [Microsoft Intune 帐户门户](http://go.microsoft.com/fwlink/?LinkId=698854)并登录管理员帐户。
 
@@ -71,7 +72,7 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 8.  设备注册管理器现在可以使用相同的过程注册移动设备，与最终用户在公司门户中针对 BYOD 方案采用的过程相同。
 
-## 从 Intune 删除设备注册管理员
+## <a name="delete-a-device-enrollment-manager-from-intune"></a>从 Intune 删除设备注册管理员
 
 1.  使用管理员凭据登录到 [Microsoft Intune 管理门户](http://manage.microsoft.com)。
 
@@ -95,6 +96,6 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

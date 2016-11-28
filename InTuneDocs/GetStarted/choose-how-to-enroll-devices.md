@@ -8,22 +8,22 @@ manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 2c14071f5fb1a3604b897d6b2f81797d40bedc6d
-ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: f15c9748b1c55ec46ddd0056445bf434fa323c59
 
 
 ---
 
-# 选择如何注册移动设备
+# <a name="choose-how-to-enroll-mobile-devices"></a>选择如何注册移动设备
 
 你对以下问题的回答可帮助确定所管理设备的最佳注册方法。
 
-## **员工携带他们自己的设备还是由你的组织为他们提供？**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**员工自带设备还是由你的组织提供？**
 
   - **用户拥有的设备** -“自带设备办公”(BYOD) 注册
   - **公司自有设备** - COD 注册
@@ -33,23 +33,23 @@ ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
 > [!div class="button"]
 [COD 注册 >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **你的用户可以注册哪些 BYOD 设备？**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**用户可以注册哪些 BYOD 设备？**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS 和 Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 移动版和 Window Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows 电脑](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **你的公司拥有的设备是共享的还是他们拥有专用用户？**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**你的公司拥有的设备是共享的还是他们拥有专用用户？**
 
 > [!div class="button"]
 [共享 >](#what-operating-system-are-your-shared-devices-running)   [专用 >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **你的共享设备运行的是哪种操作系统？**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**你的共享设备运行的是哪种操作系统？**
 
   > [!div class="button"]
   [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **你将如何管理共享的 iOS 设备？**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**如何管理共享的 iOS 设备？**
 
   > [!div class="button"]
   [iOS DEP 注册 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 直接注册 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [DEM 注册 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
@@ -60,7 +60,7 @@ ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
 
   - **设备注册管理器 (Intune)** - Intune 的设备注册管理器 (DEM) 允许管理器或管理员使用单个用户帐户注册多个移动设备。 这些设备不能有专用用户（用户关联），并且必须通过安装和登录到公司门户应用来注册。
 
-## **你将如何管理专用的 iOS 设备？**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**如何管理专用 iOS 设备？**
 
   > [!div class="button"]
    [iOS DEP](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 设置助理](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [使用 IMEI 进行标记](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
@@ -75,6 +75,6 @@ ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

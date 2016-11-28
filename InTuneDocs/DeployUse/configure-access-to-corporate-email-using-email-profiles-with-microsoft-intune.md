@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,7 +100,7 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
     |**描述**|可帮助你识别此配置文件的说明。|
     |**主机**|托管本机电子邮件服务的公司服务器的主机名。|
     |**帐户名**|电子邮件帐户的显示名称，因为它将在用户的设备上显示。|
-    |**用户名**|获取电子邮件帐户用户名的方式。 对本地 Exchange 服务器选择“用户名”，或对 Office 365 选择“用户主体名称”。|
+    |**用户名**|这是 Active Directory (AD) 或 Azure AD 中的属性，将用于生成此电子邮件配置文件的用户名。 选择主 SMTP 地址，例如 *user1@contoso.com* 或用户主体名称（如 *user1* 或 *user1@contoso.com*）。|
     |**电子邮件地址**|每个设备上用户电子邮件地址的生成方式。 选择“主 SMTP 地址”以使用主 SMTP 地址登录到 Exchange，或使用“用户主体名称”以使用完整主体名称作为电子邮件地址。|
     |**身份验证方法**（Android for Work、Samsung KNOX 和 iOS）|选择“用户名和密码”或“证书”作为电子邮件配置文件所用的身份验证方法。|
     |**为客户端身份验证选择客户端证书(身份证书)**（Android for Work、Samsung KNOX 和 iOS）|请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 证书。 有关如何在 Intune 中使用证书配置文件的详细信息，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。 仅当身份验证方法为“证书”时才会显示此选项。|
@@ -138,6 +138,6 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

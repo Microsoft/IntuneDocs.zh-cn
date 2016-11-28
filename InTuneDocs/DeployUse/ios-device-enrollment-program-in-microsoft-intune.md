@@ -2,8 +2,8 @@
 title: "适用于 iOS 设备的 Apple DEP 管理 | Microsoft Intune"
 description: "部署注册配置文件，该配置文件以“无线”方式注册通过 iOS 设备注册计划 (DEP) 购买的 iOS 设备以管理 Apple 设备。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -14,16 +14,16 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 021c02c9a148746a76309efc819b9e28a2748c4f
-ms.openlocfilehash: b608d6353db2f37eed03d34c9216726fa7cd1cb2
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
 
 
 ---
 
-# 使用设备注册计划注册企业所有的 iOS 设备
+# <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>使用设备注册计划注册企业所有的 iOS 设备
 Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”方式注册通过设备注册计划 (DEP) 购买的 iOS 设备。 注册包包括设备的设置助理选项。 用户无法注销通过 DEP 注册的设备。
 
-## 使用 Microsoft Intune 对 iOS 设备进行 Apple DEP 管理
+## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>使用 Microsoft Intune 对 iOS 设备进行 Apple DEP 管理
 要使用 Apple 的设备注册计划 (DEP) 管理公司拥有的 iOS 设备，组织必须加入 Apple DEP 并通过该计划获取设备。 该过程的详细信息，可以通过以下网站获得：  [https://deploy.apple.com](https://deploy.apple.com)。 该计划的优点包括免手动设置设备，无需通过 USB 电缆将每个设备连接到计算机。
 
 可以通过 DEP 注册公司拥有的 iOS 设备之前，需要从 Apple 获得 DEP 令牌。 此令牌允许 Intune 同步有关公司所拥有的且加入了 DEP 的设备的信息。 它也允许 Intune 将注册配置文件上传至 Apple，并向设备分配这些配置文件。
@@ -31,7 +31,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 1.  **开始使用 Microsoft Intune 管理 iOS 设备**</br>
     能够注册 iOS 设备注册计划 (DEP) 之前，必须完成对 Intune 启用 iOS 管理。
 
-2.  **获取加密密匙**</br>
+2.  **获取加密密钥**</br>
     以管理用户身份打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com)，转到“管理”&gt;“移动设备管理”&gt;“iOS”&gt;“设备注册计划”，然后选择“下载加密密钥”。 在本地保存加密密钥(.pem)文件。 .pem 文件用于从 Apple 设备注册计划门户请求信任关系证书。
 
       ![更新设备注册计划令牌](../media/dev-sa-ios-dep.png)
@@ -56,7 +56,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
     在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择“添加”。
 
     提供**常规**详细信息，包括**名称**和**说明**，然后指定分配到配置文件的设备是否拥有用户关联或是否属于某个组。
-      - **用户关联提示**：必须在初始设置过程中将设备与某个用户相关联，然后才能以该用户的身份允许此设备访问公司数据和电子邮件。 应该对属于用户且需要使用公司门户（即需要安装应用）的 DEP 托管设备设置**用户关联**。</br> **注意：**具有用户关联的 DEP 设备不支持多重身份验证。
+      - **用户关联提示**：必须在初始设置过程中将设备与某个用户相关联，然后才能以该用户的身份允许此设备访问公司数据和电子邮件。 应该对属于用户且需要使用公司门户（即需要安装应用）的 DEP 托管设备设置**用户关联**。 在具有用户关联的 DEP 设备上注册期间，多重身份验证 (MFA) 不起作用。 注册之后，MFA 在这些设备上会正常运行。 
 
       > [!NOTE]
       > 具有用户关联的 DEP 要求启用 WS-Trust 1.3 用户名/混合终结点以请求用户令牌。
@@ -107,15 +107,15 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 8.  **将设备分配给用户**你的企业拥有的设备现在可以分配给用户。 打开 iOS 设备时，它将注册为由 Intune 管理。
 
-## Intune 组分配的更改
+## <a name="changes-to-intune-group-assignments"></a>Intune 组分配的更改
 
 从 10 月开始，设备组管理将移到 Azure Active Directory。 过渡到 Azure Active Directory 组后，组分配将不会出现在“企业注册配置文件”选项中。 由于此更改将历时数月，因此你可能不会立即看到更改。 移到新的门户后，可以根据企业注册配置文件名称定义动态设备组分配。 此过程可确保分配到设备组的设备会自动注册到部署了策略和应用的组中。 [详细了解 Azure Active Directory 组](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [注册设备的先决条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

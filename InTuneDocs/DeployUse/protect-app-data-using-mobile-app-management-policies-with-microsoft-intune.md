@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
-ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: fc484be99d0956e707f96c0c285b2750754f746c
 
 
 ---
 
-# 通过 Microsoft Intune 使用移动应用管理策略保护应用数据
+# <a name="protect-app-data-using-mobile-app-management-policies-with-microsoft-intune"></a>通过 Microsoft Intune 使用移动应用管理策略保护应用数据
 
-## 如何保护应用数据
+## <a name="how-you-can-protect-app-data"></a>如何保护应用数据
 你的员工使用移动设备进行个人任务和工作任务。  你既要确保员工高效工作，又希望防止有意和无意的数据丢失。  此外，还想要具备保护设备（即使在该设备不由你管理的情况下）所访问的公司数据的能力。
 
 可使用 Intune 移动应用管理 (MAM) 策略帮助保护公司数据。 由于 Intune MAM 策略可以**独立于任何移动设备管理 (MDM) 解决方案**使用，所以无论是否在设备管理解决方案中注册设备，都可用它保护公司的数据。 通过实现**应用级别策略**，即可限制对公司资源的访问，并让数据处于 IT 部门的监控范围之内。
@@ -54,21 +54,21 @@ ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 - **MAM 策略确保应用层保护措施到位**。 例如，你可以要求在工作环境中使用 PIN 打开应用，要求应用之间是否可以共享数据，或要求阻止将公司应用数据保存到个人存储位置。
 
 
-### 当前以下设备支持 MAM 策略：
+### <a name="mam-polices-are-currently-supported-on"></a>当前以下设备支持 MAM 策略：
 -   iOS 8.1 或更高版本
 
 -   Android 4 或更高版本
 
 目前不支持 Windows 设备。
-##  MAM 策略如何保护应用数据
+##  <a name="how-mam-policies-protect-app-data"></a>MAM 策略如何保护应用数据
 
-####  没有 MAM 策略的应用：
+####  <a name="apps-without-mam-policies"></a>没有 MAM 策略的应用：
 
 ![当就地没有 MAM 策略时，显示数据的图像可在应用间自由移动](../media/Apps_without_MAM_policies.png)
 
 在无限制的情况下使用应用时，公司和个人数据可能混合。  公司数据可能最终位于个人存储空间等位置或传输到你监控范围外的应用中，导致数据丢失。 图中的箭头显示了（公司和个人）应用之间和移动到存储位置的无限制数据移动。
 
-### 通过 MAM 策略的数据保护：
+### <a name="data-protection-with-mam-policies"></a>通过 MAM 策略的数据保护：
 
 ![应用 MAM 策略时显示如何保护公司数据的图像 ](../media/Apps_with_mobile_app_policies.png)
 
@@ -76,7 +76,7 @@ ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 - 数据重定位策略，例如**阻止另存为**、**限制剪切、复制和粘贴**。
 - 访问策略设置，例如**访问需要简单 PIN**、**阻止在已越狱或取得 root 权限的设备上运行托管应用**。
 
-### MDM 解决方案管理的设备上通过 MDM 策略的数据保护：
+### <a name="data-protection-with-mam-policies-on-devices-managed-by-a-mdm-solution"></a>MDM 解决方案管理的设备上通过 MDM 策略的数据保护：
 
 ![显示 MAM 策略如何在 BYOD 设备上工作的图像](../media/MAM_BYOD_November.png)
 
@@ -101,7 +101,7 @@ MDM 解决方案：
 -   从应用擦除公司数据而不从设备删除这些应用
 
 
-### 用于未注册设备的通过 MAM 策略的数据保护
+### <a name="data-protection-with-mam-policies-for-devices-without-enrollment"></a>用于未注册设备的通过 MAM 策略的数据保护
 
 ![显示 MAM 策略如何在托管设备上工作的图像](../media/MAM_ManagedDevices_November.png)
 
@@ -117,7 +117,7 @@ MDM 解决方案：
 -   无法在这些设备上设置公司 Wi-Fi 和 VPN 设置。
 
 
-## 多身份
+## <a name="multi-identity"></a>多身份
 
 在工作环境中使用应用时，支持多身份的应用使你能够使用不同的帐户（工作和个人）访问已在其中应用 MAM 策略的相同应用。  
 
@@ -125,13 +125,13 @@ MDM 解决方案：
 
 所有 Office 移动应用都支持多身份。
 
-##  后续步骤
+##  <a name="next-steps"></a>后续步骤
 [准备好配置移动应用管理策略](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [使用 Microsoft Intune 创建和部署移动应用管理策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
