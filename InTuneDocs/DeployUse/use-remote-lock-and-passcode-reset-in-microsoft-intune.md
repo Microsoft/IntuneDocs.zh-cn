@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>使用远程锁定和密码重置功能帮助保护设备
@@ -25,6 +25,7 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 
 |平台|远程锁定|
 |------------|---------------|
+|macOS|不支持|
 |iOS|支持|
 |Android|支持|
 |Windows 10 和 Windows 10 移动版|支持|
@@ -50,12 +51,14 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 
 |平台|密码重置|
 |------------|------------------|
+|macOS|不支持|
 |iOS|支持以便清除设备中的密码。 不创建新的临时密码。|
 |Android|在早于 Android 7.0 的版本上受支持。 创建临时密码。|
 |Windows 10 移动版|支持|
 |Windows Phone 8 和 Windows Phone 8.1|支持|
-|Windows RT 8.1 和 Windows RT|不支持|
+|Windows RT 8.1|不支持|
 |Windows 8.1|不支持|
+|Windows 10 桌面版|不支持|
 
 使用 Intune 软件客户端注册的 Windows 电脑不支持密码重置。
 
@@ -76,6 +79,6 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
