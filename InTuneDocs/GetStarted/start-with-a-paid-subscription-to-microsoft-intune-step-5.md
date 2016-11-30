@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,28 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 5972910bf64274685298877da9bf4a0a6c5fd626
+ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
+ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
 
 
 ---
 
 
-# 创建用于组织用户和设备的组
+# <a name="create-groups-to-organize-users-and-devices"></a>创建用于组织用户和设备的组
 Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组设置为适应组织需要（例如，按地理位置、部门或硬件特性）并将其用于执行各种管理任务，上至为一组用户部署策略，下至将应用程序部署到一组设备。
+
+## <a name="group-management-moving-to-azure-ad"></a>组管理移动到 Azure AD
+
+**从 2016 年 11 月开始**，新帐户将在 Azure Acitve Directory (AD) 门户中管理用户和设备组。 2016 年 12 月，Intune 产品团队将开始将现有客户迁移到新的基于 Azure AD 的组管理体验。 所有用户和设备组都将迁移到 Azure AD 安全组。 仅当能够将对用户日常工作的影响降到最低，且预计不会对用户造成影响时，我们才会开始迁移。 还将在迁移帐户前通知用户。
+
+
+>[!IMPORTANT]
+>
+>在 Intune 门户中打开“组”工作区时，若显示 **Intune 用户组现在在 Azure Active Directory 中作为组进行管理**，且附带一个指向 Azure Active Directory 门户的链接，则表明你已在使用新的 Azure AD 安全组方法在 Intune 中进行组管理。 若要了解如何创建组，请参阅[在 Azure Active Directory 中管理组](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups)。
+>
+>如果没有看到 Azure AD 门户的链接，则表明你仍在使用 Intune 门户进行组管理。
+
+## <a name="group-management-in-the-intune-portal"></a>Intune 门户中的组管理
 
 设备和用户均在 Intune 管理控制台的“组”工作区中创建。
 
@@ -33,7 +46,7 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 > 若要了解有关使用组的详细信息，请参阅[通过 Microsoft Intune 使用组来管理用户和设备](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
 
 
-## 创建设备组
+## <a name="create-a-device-group"></a>创建设备组
 使用设备组来部署应用和更新，并配置其他功能。 例如，使用以下步骤设置“我的设备”组：
 
 1.  在 [Intune 管理控制台](https://manage.microsoft.com/)中，依次选择“组” > “概述” > “创建组”。
@@ -48,7 +61,7 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 在“所有设备”下的“组”工作区中的“组”列表中，可找到新建的组。 你还可以从此处编辑或删除组。
 
-## 创建用户组
+## <a name="create-a-user-group"></a>创建用户组
 使用用户组来部署软件和设备策略。 例如，使用以下步骤设置“Intune 用户”组：
 
 1.  在 [Intune 管理控制台](https://manage.microsoft.com/)中，依次选择“组” > “概述” > “创建组”。
@@ -67,7 +80,7 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 祝贺你！ 你刚刚完成了 *Intune 快速入门指南*的步骤 5。
 
 >[!div class="step-by-step"]
@@ -76,6 +89,6 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
