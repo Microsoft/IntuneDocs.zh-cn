@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: 00845ca053f443691a103c3d775906877eb59c9c
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
 
 
 ---
@@ -50,7 +50,7 @@ Intune 支持使用以下连接类型创建 VPN 配置文件：
 连接类型 |iOS 和 Mac OS X  |Android 和 Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 桌面版和移动版 |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|是 |是   |否    |否  |否    | 是（OMA URI，仅限移动版）|     
-Cisco (IPsec)|是 |否   |否  |否  |否 | 否|
+Cisco (IPsec)|是 |是   |否  |否  |否 | 否|
 Citrix|是 |否   |否  |否  |否 | 否|
 脉冲安全|是  |是 |是   |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |是  |   是 |  是|   
@@ -109,7 +109,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 **Name**     |输入 VPN 配置文件的唯一名称，以帮助你在 Intune 控制台中识别它。         
 **描述**     |提供相关描述，对 VPN 配置文件以及其他相关的信息的进行概述，这可帮助你找到 VPN 配置文件。         
 **VPN 连接名称（向用户显示）**     |指定 VPN 配置文件的名称。 用户将在其设备上的可用 VPN 连接列表中看到该名称。         
-**连接类型**     |  选择以下连接类型之一以在 VPN 配置文件中使用：“**Cisco AnyConnect**”（不可用于 Windows 8.1 或 Windows Phone 8.1）、“**Pulse Secure**”、“**F5 Edge Client**”、“**Dell SonicWALL Mobile Connect**”、“**CheckPoint Mobile VPN**”。
+**连接类型**     |  选择以下连接类型之一以在 VPN 配置文件中使用：**Cisco AnyConnect**（不适用于 Windows 8.1 或 Windows Phone 8.1）、**Pulse Secure**、**Citrix**、**F5 Edge Client**、**Dell SonicWALL Mobile Connect**、**CheckPoint Mobile VPN**。
 **VPN 服务器说明**     | 指定设备将连接到的 VPN 服务器的说明。 示例：**Contoso VPN 服务器**。 当连接类型是“F5 Edge Client”时，使用“服务器列表”字段来指定服务器说明和 IP 地址的列表。
 **服务器 IP 地址或 FQDN**    |提供 IP 地址或设备将连接到的 VPN 服务器的完全限定的域名。 示例：**192.168.1.1**、**vpn.contoso.com**。  当连接类型是“F5 Edge Client”时，使用“服务器列表”字段来指定服务器说明和 IP 地址的列表。         |         
 **服务器列表**     |选择**添加**以添加用于 VPN 连接的新 VPN 服务器。 你还可以指定哪个服务器将作为连接的默认服务器。 此选项仅在连接类型为“F5 Edge Client”时显示。         
@@ -117,8 +117,8 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 **身份验证方法**| 选择 VPN 连接使用的身份验证方法：“**证书**”或“**用户名和密码**”。 （连接类型为“Cisco AnyConnect”时，“**用户名和密码**”不可用。）“**身份验证方法**”选项不可用于 Windows 8.1。
 **每次登录时记住用户凭据**|选择此选项以确保记住用户凭据，使用户不必在每次建立连接时输入凭据。
 **选择客户端证书用于客户端身份验证（身份证书）**|选择之前创建的客户端 SCEP 证书，它将用于对 VPN 连接进行身份验证。 有关如何在 Intune 中使用配置文件的详细信息，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。 仅当身份验证方法为“证书”时才会显示此选项。
-**角色**| 指定有权访问此连接的用户角色的名称。 用户角色用于定义个人设置和选项，并启用或禁用某些访问功能。 此选项仅在连接类型为“脉冲安全”时显示。
-**领域**|指定你想要使用的身份验证领域的名称。 身份验证领域是“脉冲安全”连接类型使用的身份验证资源的分组。 此选项仅在连接类型为“脉冲安全”时显示。
+**角色**| 指定有权访问此连接的用户角色的名称。 用户角色用于定义个人设置和选项，并启用或禁用某些访问功能。 此选项仅在连接类型为 **Pulse Secure** 或 **Citrix** 时显示。
+**领域**|指定你想要使用的身份验证领域的名称。 身份验证领域是“Pulse Secure”或“Citrix”连接类型使用的身份验证资源的分组。 此选项仅在连接类型为 **Pulse Secure** 或 **Citrix** 时显示。
 **登录组或域**|指定你想要连接到的登录组或域的名称。 此选项仅在连接类型为“Dell SonicWALL Mobile Connect”时显示。
 **指纹**|指定一个将用于验证 VPN 服务器是否可以信任的字符串（例如“Contoso Fingerprint Code”）。 指纹可以：发送到客户端，因此在连接时它知道信任任何提供相同指纹的服务器。 如果设备还没有指纹，则会提示用户信任正在连接的 VPN 服务器，并显示指纹。 （用户手动验证指纹，并选择“**信任**”进行连接）。此选项仅在连接类型为“**CheckPoint Mobile VPN**”时显示。
 **Per App VPN**|如果你想要将此 VPN 连接与 iOS 或 Mac OS X 应用相关联，以便在运行该应用时打开连接，请选择此选项。 可在部署软件时将 VPN 配置文件与应用关联。 有关详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)。
@@ -153,7 +153,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 新的策略将在“**策略**”工作区的“**配置策略**”节点处显示。
 
-### <a name="ondemand-vpn-for-ios-devices"></a>iOS 设备的按需 VPN
+### <a name="on-demand-vpn-for-ios-devices"></a>iOS 设备的按需 VPN
 可以为 iOS 8.0 及更高版本的设备配置按需 VPN。
 
 > [!NOTE]
@@ -201,6 +201,6 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

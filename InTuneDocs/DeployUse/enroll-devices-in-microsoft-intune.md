@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
 
 
 ---
@@ -27,14 +27,15 @@ ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 ## <a name="overview-of-device-enrollment-methods"></a>设备注册方法概述
 
-下表列出了 Intune 的注册方法及其支持的功能。 这些功能包括：
-- **擦除** - 恢复设备出厂设置，删除所有数据。 有关详细信息，请参阅[停用设备](retire-devices-from-microsoft-intune-management.md)。
+下表列出了 Intune 注册方法、支持的功能以及每个方法的要求。 功能和要求如下所述。
+
+- **擦除** - 指示是否需要擦除设备后才使用户可注册设备。 术语“擦除”意味着对设备恢复出厂设置，这将删除所有数据。 有关详细信息，请参阅[停用设备](retire-devices-from-microsoft-intune-management.md)。
 - **关联** - 将设备与用户关联。 对于移动应用程序管理 (MAM) 和公司数据的条件访问是必需的。 有关详细信息，请参阅[用户关联](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices)。
 - **锁定** - 阻止用户删除设备使其不受管理。 iOS 设备需要使用监管模式进行锁定。 有关详细信息，请参阅[远程锁定](retire-devices-from-microsoft-intune-management.md#block-access-a-device)。
 
 **iOS 注册方法**
 
-| **方法** |  **擦除** |  **相关性**    |   **锁定** | **详细信息** |
+| **方法** |  **需要擦除？** |    **相关性**    |   **锁定** | **详细信息** |
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | 否|    是 |   否 | [详细信息](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   否 |否 |否  | [详细信息](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
@@ -44,14 +45,14 @@ ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 **Windows 注册方法**
 
-| **方法** |  **擦除** |  **相关性**    |   **锁定** | **详细信息**|
+| **方法** |  **需要擦除？** |    **相关性**    |   **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | 是|   是 |   否 | [详细信息](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   否 |否 |否  |[详细信息](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android 注册方法**
 
-| **方法** |  **擦除** |  **相关性**    |   **锁定** | **详细信息**|
+| **方法** |  **需要擦除？** |    **相关性**    |   **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | 否|    是 |   否 | [详细信息](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   否 |否 |否  |[详细信息](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
@@ -61,7 +62,7 @@ ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 ## <a name="byod"></a>BYOD
 “自带设备办公”用户安装公司门户应用并注册其设备。 这让用户可连接到公司网络，并加入该域或 Azure Active Directory。 对于大多数平台，需要为许多 COD 方案启用 BYOD 注册。 有关详细信息，请参阅[设备注册的先决条件](prerequisites-for-enrollment.md)。 （[返回到表](#overview-of-device-enrollment-methods)）
 
-## <a name="corporateowned-devices"></a>企业持有设备
+## <a name="corporate-owned-devices"></a>企业持有设备
 可以通过使用 Intune 控制台管理公司拥有的设备 (COD)。 可以直接通过 Apple 提供的工具注册 iOS 设备。 管理员或经理可以使用设备注册管理器注册所有设备类型。 具有 IMEI 号码的设备也可以标识并标记为公司拥有，以实现 COD 方案。
 
 有关详细信息，请参阅[注册公司拥有的设备](manage-corporate-owned-devices.md)。
@@ -78,7 +79,7 @@ ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 了解有关 [DEP](ios-device-enrollment-program-in-microsoft-intune.md) 的详细信息。 （[返回到表](#overview-of-device-enrollment-methods)）
 
-### <a name="usbsa"></a>USB-SA
+### <a name="usb-sa"></a>USB-SA
 使用 Intune 策略准备连接了 USB 的企业自有设备。 对于设置助理注册，管理员创建此 Intune 策略并将其导出到 Apple 配置器。 管理员必须手动注册每个设备。 用户收到其设备并运行设置助理，注册其设备。 此方法支持 **iOS 监督**模式，此模式又允许：
   - 条件性访问
   - 越狱检测
@@ -86,7 +87,7 @@ ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 了解有关[使用 Apple Configurator 设置助理注册](ios-setup-assistant-enrollment-in-microsoft-intune.md)的详细信息。 （[返回到表](#overview-of-device-enrollment-methods)）
 
-### <a name="usbdirect"></a>USB-Direct
+### <a name="usb-direct"></a>USB-Direct
 对于直接注册，管理员创建 Intune 策略并将其导出到 Apple 配置器。 连接了 USB 的公司拥有的设备可直接进行注册，无需恢复出厂设置。 管理员必须手动注册每个设备。 这些设备作为无用户设备进行管理。 它们未锁定、不受监控，且无法支持条件性访问、越狱检测或移动应用管理。 了解有关[使用 Apple Configurator 直接注册](ios-direct-enrollment-in-microsoft-intune.md)的详细信息。 （[返回到表](#overview-of-device-enrollment-methods)）
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>使用 Exchange ActiveSync 和 Intune 管理移动设备
@@ -119,6 +120,6 @@ Intune 可以管理以下设备平台：
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

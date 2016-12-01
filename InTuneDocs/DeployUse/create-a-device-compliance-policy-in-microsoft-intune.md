@@ -14,41 +14,41 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
-ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
+ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
+ms.openlocfilehash: 43c8d5e065e785269b9d0cbf1813dcea83464975
 
 
 ---
 
-# 在 Microsoft Intune 中创建设备合规性策略
+# <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备合规性策略
 本主题概述了创建合规性策略时可使用的步骤，设备必须遵循该策略才能被视为相容。
 
-##  步骤 1：添加新策略
+##  <a name="step-1-add-a-new-policy"></a>步骤 1：添加新策略
   在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“遵从性策略”&gt;“添加”。
 
   ![Intune 管理控制台中“合规性策略”页的屏幕截图，显示了页面顶部菜单中的“添加”选项](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  步骤 2：配置设置
+##  <a name="step-2-configure-settings"></a>步骤 2：配置设置
 在“创建策略” 页上启用所需的设置：
-  -   密码和加密等系统安全设置
+  -   密码和加密等系统安全设置。
   -   设备运行状况设置，例如，设备是否已越狱，或者是否在 Windows 设备运行状况证明服务中被报告为正常。
-  -   设备属性设置，例如所需的最低 OS 版本或允许的最高 OS 版本。
-![“创建策略”页的“常规”选项卡 ](./media/intune-sa-3b-create-policy.png)
+  -   设备属性设置，例如所需的最低操作系统版本或允许的最高操作系统版本。
+![“创建策略”页的“常规”选项卡](./media/intune-sa-3b-create-policy.png)
 
 
-##  步骤 3：保存策略
+##  <a name="step-3-save-the-policy"></a>步骤 3：保存策略
 完成后，请选择“保存策略”。
 
-你可以选择在保存策略后立即部署策略，也可以选择稍后部署策略。 新的策略将在“策略”工作区的“合规性策略”节点处显示。
+可以选择在保存策略后立即部署策略，也可以选择稍后部署策略。 新的策略将在“策略”工作区的“合规性策略”节点处显示。
 
-##  步骤 4：设置合规性状态有效期
-若要指定设备必须签入的时间，在该设备被视为不合规之前，请转到合规性策略设置并更新时间。  默认设置为 30 天。
+##  <a name="step-4-set-the-compliance-status-validity-period"></a>步骤 4：设置合规性状态有效期
+若要指定设备必须签入的时间，在该设备被视为不合规之前，请转到合规性策略设置并更新时间。 默认设置为 30 天。
 
 ![策略菜单栏中的合规性策略设置选项](../media/mdm-compliance-policy-settings.png)
 
 ![合规性策略对话框](../media/mdm-ca-compliance-status-validity-period.png)
 
-## 支持的策略设置
+## <a name="supported-policy-settings"></a>支持的策略设置
 下表列出了合规性策略设置和支持这些设置的平台。
 
 -------------
@@ -77,17 +77,17 @@ ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 > [!div class="op_single_selector"]
 - [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Windows 和 Windows Phone 的合规性策略设置 ](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [适用于 Windows 和 Windows Phone 的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 [部署和监视合规性策略](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [设备合规性策略简介](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

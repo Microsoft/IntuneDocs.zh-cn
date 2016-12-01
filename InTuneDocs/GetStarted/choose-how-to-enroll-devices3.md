@@ -3,26 +3,27 @@ title: "选择如何注册移动设备 |Microsoft Intune"
 description: "决定如何通过回答几个简单的问题在 Intune 中注册移动设备"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 09007527fe4c2c94c02a674ccef01c0bb8893709
 
 
 ---
-# 选择如何注册移动设备
+# <a name="choose-how-to-enroll-mobile-devices"></a>选择如何注册移动设备
 
 你对这一系列问题的回答将帮助确定你管理的设备的最佳注册方法。
 
-## **你的公司拥有的设备是共享的还是他们拥有专用用户？**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**你的公司拥有的设备是共享的还是他们拥有专用用户？**
 
 > [!div class="button"]
 [共享 >](choose-how-to-enroll-devices4.md)
@@ -34,10 +35,10 @@ ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
 - **专用用户** - 分发给个人用户的公司拥有的设备需要作为公司资产对其进行跟踪，同时允许用户作为个人设备访问电子邮件和数据。 建议的注册方法取决于设备的平台。
 
 > [!div class="button"]
-[< 上一步](choose-how-to-enroll-devices1.md)
+[< 返回](choose-how-to-enroll-devices1.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

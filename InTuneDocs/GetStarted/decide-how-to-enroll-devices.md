@@ -3,22 +3,23 @@ title: "选择如何注册移动设备 |Microsoft Intune"
 description: "决定如何通过回答几个简单的问题在 Intune 中注册移动设备"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 90a26e1008a8e0800b07940c11a8adcd00cbb241
-ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: b5cc645ea50e6c4bb521e04371037c3978c9426a
 
 
 ---
 
-# 选择如何注册移动设备
+# <a name="choose-how-to-enroll-mobile-devices"></a>选择如何注册移动设备
 
 移动设备注册是通过 Microsoft Intune 将智能手机、平板电脑和 PC 带入管理的过程。 作为管理员，你需要确定如何基于以下信息以最佳方式注册设备：
 
@@ -28,7 +29,7 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 
 你对以下问题的回答将帮助确定你管理的设备的最佳注册方法。
 
-## **员工携带他们自己的设备还是由你的组织为他们提供？**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**员工自带设备办公还是由组织为他们提供？**
 
   - **用户拥有的设备** -“BYOD”（自带设备办公）注册 – 用户可以在其设备上安装 Intune 公司门户应用，然后注册它，从而获取对公司资源（如电子邮件、公司应用、公司数据和支持）的访问权限。  
 
@@ -37,12 +38,12 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 > [!div class="button"]
 [BYOD 注册 >](#what-byod-devices-can-your-users-enroll)   [COD 注册 >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **你的用户可以注册哪些 BYOD 设备？**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**用户可以注册哪些 BYOD 设备？**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS 和 Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 移动版和 Window Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows 电脑](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **你的公司拥有的设备是共享的还是他们拥有专用用户？**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**你的公司拥有的设备是共享的还是他们拥有专用用户？**
 
 - **共享公司拥有的设备** - 这些设备没有单个用户，并且通常没有配置为可以访问电子邮件。 例如，网亭设备或面向任务的设备用户根据需要从池中抽取，然后返回。 建议的注册方法取决于设备的平台。
 
@@ -52,12 +53,12 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 [共享 >](#what-operating-system-are-your-shared-devices-running)   [专用 >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **你的共享设备运行的是哪种操作系统？**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**你的共享设备运行的是哪种操作系统？**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **你将如何管理共享的 iOS 设备？**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**如何管理共享的 iOS 设备？**
 
 - **Apple 的设备注册计划 (DEP)** - 通过 DEP 购买或管理的 iOS 设备可以面向注册配置文件。 当用户第一次开启他们的设备时，设备将下载 DEP 配置文件，并使用配置文件 DEP 进行注册
 
@@ -68,7 +69,7 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
   > [!div class="button"]
   [iOS DEP 注册 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 直接注册 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [DEM 注册 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
 
-## **你将如何管理专用的 iOS 设备？**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**如何管理专用 iOS 设备？**
 
 你可以使用专用用户注册公司拥有的设备，方法如下：
 
@@ -83,6 +84,6 @@ ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

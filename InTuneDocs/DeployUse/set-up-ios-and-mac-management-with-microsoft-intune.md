@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 930419b20b675aa48c2b8bf1c49a1b576bbab414
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: 1d7aa8f028d57d4749706b8632aec342483cac5e
 
 
 ---
@@ -34,7 +34,10 @@ Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，
 3.  **获取 Apple 推送通知服务证书**<br>
     转到 [Apple Push Certificates 门户](http://go.microsoft.com/fwlink/?LinkId=269844)，并使用公司 Apple ID 登录以使用 .csr 文件创建 APNs 证书。 在 Apple Push Certificates 门户上选择“上传”后，将收到不能用于 APNs 的 .json 文件。 完成下载后，返回到“第三方服务器的证书”的 Apple Push Certificates 门户，然后选择“下载”。
 
-    下载 APNs (.pem) 证书并本地保存文件。 之后必须使用此 Apple ID 才能续订 APNs 证书。
+    下载 APNs (.pem) 证书并本地保存文件。 
+
+    > [!NOTE]
+    > 每年都需要续订（不是替换）此 APNs 证书。 使用此相同的 Apple ID 登录到 Apple 推送证书门户来续订证书，然后按照本主题中相同的说明下载该证书，并将其上传到 Intune。
 
 4.  **将 APNs 证书添加到 Intune**<br>
     在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“管理”&gt;“移动设备管理”&gt;“iOS 和 Mac OS X”&gt;“上传 APNs 证书”，然后选择“上传 APNs 证书”。 转到证书 (.pem) 文件，选择“打开”，然后输入“Apple ID”。 使用 APN 证书，Intune 可通过将策略推送到注册的移动设备注册并管理 iOS 设备。
@@ -54,6 +57,6 @@ Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

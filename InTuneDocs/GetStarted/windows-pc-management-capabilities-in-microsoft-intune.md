@@ -3,8 +3,9 @@ title: "Intune 电脑软件客户端功能 | Microsoft Intune"
 description: "了解使用 Intune 软件客户端管理 Windows 电脑时的 Intune 功能。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
-ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
 
 
 ---
 
-# 使用 Intune 软件客户端时的 Windows 电脑管理功能
+# <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>使用 Intune 软件客户端时的 Windows 电脑管理功能
 在大多数情况下，你将向 Microsoft Intune 注册设备，这样可提供更多的功能。 但是，你也可以通过使用 Intune 软件客户端来管理电脑，该客户端提供以下功能：
 
 -   **[软件更新管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - 可使电脑保持最新版本，并决定何时进行更新。
@@ -36,7 +37,7 @@ ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 Intune 支持最多在 7,000 台 Windows 设备上安装软件客户端。
 
-## 操作系统要求
+## <a name="operating-system-requirements"></a>操作系统要求
 Intune 可以管理运行以下 Windows 版本（32 位和 64 位）的电脑：
 
 
@@ -51,7 +52,7 @@ Intune 可以管理运行以下 Windows 版本（32 位和 64 位）的电脑：
 - **Windows 10** - 专业版、教育版和企业版
 
 
-## 最低硬件需求
+## <a name="minimum-hardware-requirements"></a>最低硬件需求
 安装 Intune 软件客户端的最低硬件要求如下：
 
 |要求|详细信息|
@@ -60,7 +61,7 @@ Intune 可以管理运行以下 Windows 版本（32 位和 64 位）的电脑：
 |处理器和内存|请参阅 PC 操作系统的处理器和 RAM 要求。|
 |硬盘空间|安装客户端软件之前必须有 200 MB 可用磁盘空间。|
 
-## 其他要求
+## <a name="further-requirements"></a>其他要求
 安装 Intune 软件客户端的软件要求如下：
 
 |要求|详细信息|
@@ -69,11 +70,11 @@ Intune 可以管理运行以下 Windows 版本（32 位和 64 位）的电脑：
 |Windows Installer 3.1|PC 至少必须安装 Windows Installer 3.1。|
 |删除不兼容的客户端软件|在安装 Intune PC 客户端软件之前，你必须从该 PC 中卸载下列客户端软件：<br /><br />- 任何版本的 Configuration Manager<br />- 任何版本的 Microsoft Systems Management Server (SMS)|
 
-### 另请参阅
-[Microsoft Intune 已注册设备管理功能](./mobile-device-management-capabilities-in-microsoft-intune.md)
+### <a name="see-also"></a>另请参阅
+[Microsoft Intune 的已注册设备管理功能](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

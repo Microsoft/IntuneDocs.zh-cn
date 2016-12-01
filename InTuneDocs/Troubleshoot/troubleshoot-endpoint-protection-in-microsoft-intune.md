@@ -2,7 +2,8 @@
 title: "Endpoint Protection 疑难解答 | Microsoft Intune"
 description: "解决使用 Microsoft Intune Endpoint Protection 时出现的问题。"
 keywords: 
-author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 71f976fba252950fd9a8818fb27fbbb294369894
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
 
 
 ---
 
-# Troubleshoot Endpoint Protection in Microsoft Intune
+# <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
 此章节的信息有助于解决使用 Microsoft Intune Endpoint Protection 时出现的问题。
 
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
 
-### Endpoint Protection 错误消息
+### <a name="endpoint-protection-error-messages"></a>Endpoint Protection 错误消息
 本章节描述了在 [Intune 管理员控制台](https://manage.microsoft.com)的**Endpoint Protection 状态**窗格中显示的以下错误和警告的潜在原因和解决方案。
 
 |状态项|可能的原因|可能的解决方案|
@@ -44,11 +45,11 @@ ms.openlocfilehash: 71f976fba252950fd9a8818fb27fbbb294369894
 |**快速扫描逾期**|已经有 14 天未进行快速扫描。 这可能是快速扫描过程中重启所导致。|如果快速扫描过期，你可以从 [Intune 管理员控制台](https://manage.microsoft.com)运行一次快速扫描或定期重复进行快速扫描，方法是使用主题[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)中的信息。|
 |**正在运行的另一个端点防护应用程序**|另一个 Endpoint Protection 应用程序正在运行，并且计算机处于正常状态。|默认情况下，如果安装了其他 Endpoint Protection 应用程序并且 Intune 检测到该应用程序，则 Endpoint Protection 会自动禁用其自身。 如果 Intune 未检测到其他终结点应用程序，则 Endpoint Protection 将保持启用状态。 有关详细信息，请参阅[使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)。|
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
