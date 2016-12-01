@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
 
 如果设备已打开并连接，擦除命令会在 15 分钟内跨所有设备类型进行传播。
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>在 Azure Active Directory 门户中删除设备
+
+1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或从 [https://portal.office.com](https://portal.office.com) 选择**管理**&gt; **Azure AD**。
+
+2.  单击页面左侧的链接，使用组织 ID 登录。
+
+3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不会要求提供信用卡或付款（请选择**注册免费的 Azure Active Directory**订阅链接）。
+
+4.  选择“Active Directory”  ，然后选择你的组织。
+
+5.  选择“用户”  选项卡。
+
+6.  选择要删除其设备的用户。
+
+7.  选择**设备**。
+
+8.  根据需要删除设备，例如那些不再使用的设备或者定义不准确的设备。
+
+
 ## <a name="selective-wipe"></a>“选择性擦除”
 
 **选择性擦除**将删除公司数据，包括设备中的移动应用管理 (MAM) 数据(适用的)、设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。 设备从 Intune 删除。 下表描述了将删除什么数据，以及在选择性擦除之后对设备上保留的数据的影响。 （这些表按平台进行组织。）
@@ -95,7 +114,7 @@ ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|
 |证书配置文件设置|已吊销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
-|Email|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。 如果在本地托管 Microsoft Exchange，则不会删除电子邮件配置文件和缓存的电子邮件。|
+|Email|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
 |Outlook|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|
 |Azure Active Directory (AAD) 脱离|已删除 AAD 记录。|已删除 AAD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
@@ -111,7 +130,7 @@ ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
 |Email|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。|不支持。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。 删除由 Intune 预配的邮件帐户。</br>**例外**：如果在本地托管 Microsoft Exchange，则不会删除电子邮件帐户。|
 |Azure Active Directory (AAD) 脱离|否。|否。|已删除 AAD 记录。|不适用。 Windows 10 不支持对已加入 Azure Active Directory 的设备使用选择性擦除。|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>擦除启用了加密文件系统 (EFS) 的内容
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>擦除启用了加密文件系统 (EFS) 的内容
 Windows 8.1 和 Windows RT 8.1 支持选择性擦除 EFS 加密内容。 以下几点适用于启用 EFS 的内容的选择性擦除：
 
 -   仅选择性擦除使用同一 Internet 域作为 Intune 帐户通过 EFS 保护的应用和数据。 有关详细信息，请参阅[设备数据管理的 Windows 选择性擦除](http://technet.microsoft.com/library/dn486874.aspx)。
@@ -146,6 +165,6 @@ EFS 选择性擦除当前支持下列数据和应用：
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

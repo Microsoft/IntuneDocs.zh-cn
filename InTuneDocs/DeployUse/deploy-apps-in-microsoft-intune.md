@@ -3,6 +3,7 @@ title: "如何部署应用 | Microsoft Intune"
 description: "使用本主题中的信息可帮助你使用 Microsoft Intune 部署应用。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,19 +14,19 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
-ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
+ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
+ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
 
 ---
-# 在 Microsoft Intune 中部署应用
+# <a name="deploy-apps-in-microsoft-intune"></a>在 Microsoft Intune 中部署应用
 
 使用本主题中的信息可帮助你使用 Microsoft Intune 部署应用。
 
 
-## 部署应用
+## <a name="deploy-an-app"></a>部署应用
 在此过程中，你将对所选设备组或用户组部署应用。
 
-### 部署应用
+### <a name="to-deploy-an-app"></a>部署应用
 
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“应用”&gt;“应用”以查看管理的应用列表。
 
@@ -49,7 +50,12 @@ ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
 6. 如果要部署的应用与 Intune VPN 配置文件兼容，则会显示“VPN 配置文件”页。 在此页上，你可以选择将 iOS 应用与已部署的 VPN 配置文件关联。 在应用启动时，将自动打开 VPN 连接。 若要使 VPN 配置文件可用，则必须启用“Per-app VPN”配置文件设置。
  有关如何配置 VPN 配置文件的详细信息（包括有关如何将配置文件与应用相关联的信息），请参阅 [Microsoft Intune 中的 VPN 连接](vpn-connections-in-microsoft-intune.md)。
 
-## 示例
+<!---
+>[!TIP]
+>If an end user previously installed an iOS app and you now deploy it with a deployment action of **Available**, Intune will automatically begin to manage that app with no further action required by you, or the end-user.
+--->
+
+## <a name="example"></a>示例
 
 在此示例中，将应用程序作为“可用”部署到 iOS 设备。
 此应用将在公司门户中的用户设备上显示，用户可从此处安装。
@@ -60,12 +66,12 @@ ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
 如果将此应用作为“必需”到 iOS 设备，则用户将接收到通知，指示应用已准备就绪，可供安装。 例如，在此屏幕截图中，iOS 版工作文件夹应用是使用**来自应用商店的托管 iOS 应用**安装类型部署的。  
 ![iOS 必需应用](./media/iOS-Required-install.PNG)
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
 
 部署应用之后，需要监视其进度。 有关详细信息，请参阅[在 Microsoft Intune 中监视应用](monitor-apps-in-microsoft-intune.md)。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

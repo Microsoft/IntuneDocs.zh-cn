@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
-ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
 
 
 ---
 
-# 使用 Microsoft Intune 限制对 SharePoint Online 的访问
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制对 SharePoint Online 的访问
 使用 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 条件性访问以控制对位于 SharePoint Online 上的文件的访问。
 条件性访问有两个组件：
 - 设备合规性策略，设备必须符合该策略才能被视为合规。
@@ -55,12 +55,12 @@ ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 -   如果设备不合规，则显示一条消息，将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站，用户可从中找到有关问题及其修正方法的信息。
 
-**跨所有 SharePoint 站点强制实施条件访问并阻止外部共享**
+**条件访问不会应用于外部共享**。 若要了解如何在租户或站点集合中阻止外部共享，请参阅[管理 SharePoint Online 环境的外部共享](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 >[!NOTE]
 >如果你启用 SharePoint Online 的条件访问，我们建议你禁用列表上的域，如 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主题中所述。  
 
-## 对移动设备的支持
+## <a name="support-for-mobile-devices"></a>对移动设备的支持
 - iOS 8.0 及更高版本
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 或更高版本
 - Windows Phone 8.1 及更高版本
@@ -72,7 +72,7 @@ ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 **不受支持的浏览器将被阻止**。
 
-## 对 PC 的支持
+## <a name="support-for-pcs"></a>对 PC 的支持
 - Windows 8.1 及更高版本（注册到 Intune 时）
 - Windows 7.0、Windows 8.1 或 Windows 10（若已加入域）
 > [!NOTE]
@@ -92,9 +92,9 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
     新式验证将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Office 2013 Windows 客户端中，并实现诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。
 
 
-## 配置 SharePoint Online 的条件性访问
+## <a name="configure-conditional-access-for-sharepoint-online"></a>配置 SharePoint Online 的条件性访问
 
-### 步骤 1：配置 Active Directory 安全组
+### <a name="step-1-configure-active-directory-security-groups"></a>步骤 1：配置 Active Directory 安全组
 在开始之前，针对条件访问策略配置 Azure Active Directory 安全组。 你可以在 **“Office 365 管理中心”**，或 **“Intune 帐户门户”**中配置这些组。 这些组将用于以用户为目标或从策略中免除用户。 如果将某个用户设定为策略的目标，则其使用的每个设备必须合规才能访问资源。
 
 你可以在 SharePoint Online 策略中指定两种组类型：
@@ -105,7 +105,7 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 如果用户位于两个组中，则会将其从策略中免除。
 
-### 步骤 2：配置和部署合规性策略
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>步骤 2：配置和部署合规性策略
 如果你尚未创建和部署合规性策略，请先创建合规性策略并将其部署到 SharePoint Online 策略将以其为目标的用户。
 
 > [!NOTE]
@@ -118,7 +118,7 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 准备就绪后，继续 **步骤 3**。
 
-### 步骤 3：配置 SharePoint Online 策略
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>步骤 3：配置 SharePoint Online 策略
 接下来，配置策略以要求只有托管及合规设备才能访问 SharePoint Online。 此策略会存储在 Azure Active Directory 中。
 
 #### <a name="bkmk_spopolicy"></a>
@@ -148,7 +148,7 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
      对于 Windows PC，PC 必须已加入域，或是向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册并且必须是合规的。 可以设置以下要求：
 
-     -   **设备必须已加入域或必须是合规的。** 如果你想让 PC 加入域或符合 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中设置的策略，请选择此选项。 如果电脑不满足任一要求，则系统会提示用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备。
+     -   **设备必须已加入域或必须合规。** 如果你想让 PC 加入域或符合 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中设置的策略，请选择此选项。 如果电脑不满足任一要求，则系统会提示用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备。
 
      -   **设备必须已加入域。** 选择此选项可要求 PC 必须已加入域才能访问 Exchange Online。 如果 PC 未加入域，则系统会阻止对电子邮件的访问，并且提示用户与 IT 管理员联系。
 
@@ -162,11 +162,11 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
   3.    按“启用浏览器访问”按钮。
   4.  在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
 
-  在 **iOS 和 Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。  设备将显示证书，并提示最终用户选择证书，如下面的屏幕截图所示。 最终用户必须选先择此证书，然后才可以继续使用浏览器。
+  在 **iOS 和 Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。  设备将显示证书，并提示最终用户选择证书，如下面的屏幕截图所示。 最终用户必须选择此证书后，才能继续使用该浏览器。
 
   **iOS**
 
-  ![ipad 上的证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![ipad 上证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -179,7 +179,7 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 不需要部署条件访问策略，它将立即生效。
 
-### 步骤 4：监视符合性和条件访问策略
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>步骤 4：监视符合性和条件访问策略
 在“组”工作区中，可以查看设备的状态。
 
 选择任何移动设备组，然后在“设备”  选项卡上，选择以下“筛选器” 之一:
@@ -190,11 +190,11 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 -   **已向 AAD 注册的兼容设备** – 这些设备可以访问 SharePoint Online。
 
-### 另请参阅
+### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

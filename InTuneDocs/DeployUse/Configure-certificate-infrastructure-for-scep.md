@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: fc9140ac9e6727ae5ac76b3da950baab29326078
+ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
+ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>配置 SCEP 证书基础结构
 本主题介绍创建和部署 SCEP 证书配置文件需要具备的基础结构。
 
-### <a name="onpremises-infrastructure"></a>本地基础结构
+### <a name="on-premises-infrastructure"></a>本地基础结构
 
 -    **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
 
@@ -49,7 +49,7 @@ I
 建议通过代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access 代理](https://technet.microsoft.com/en-us/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a>证书和模板
+### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>证书和模板
 
 |对象|详细信息|
 |----------|-----------|
@@ -58,13 +58,13 @@ I
 |**服务器身份验证证书**|发证 CA 或公共 CA 请求你在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。|
 |**受信任的根 CA 证书**|你可以从根 CA 或信任该根 CA 的任何设备中将其导出为 **.cer** 文件，并通过使用可信 CA 证书配置文件将其部署到设备。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
 
-### <a name="a-namebkmkaccountsaaccounts"></a>帐户
+### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>帐户
 
 |Name|详细信息|
 |--------|-----------|
 |**NDES 服务帐户**|指定用作 NDES 服务帐户的域用户帐户。|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a>配置基础结构
+## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>配置基础结构
 在可以配置证书配置文件之前，必须完成以下需要 Windows Server 2012 R2 和 Active Directory Certificate Services (ADCS) 知识的任务：
 
 **任务 1**：创建 NDES 服务帐户
@@ -77,14 +77,14 @@ I
 
 **任务 5**：启用、安装和配置 Intune 证书连接器
 
-### <a name="task-1-create-an-ndes-service-account"></a>任务 1 - 创建 NDES 服务帐户
+### <a name="task-1---create-an-ndes-service-account"></a>任务 1 - 创建 NDES 服务帐户
 
 创建用作 NDES 服务帐户的域用户帐户。 你可以在安装和配置 NDES 之前，在配置发证 CA 上的模板时指定该帐户。 确保用户具有默认权限，即**本地登录**、**作为服务登录**和**作为批处理作业登录**的权限。 某些组织已采用强化策略禁用这些权限。
 
 
 
 
-### <a name="task-2-configure-certificate-templates-on-the-certification-authority"></a>任务 2 - 配置证书颁发机构上的证书模板
+### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>任务 2 - 配置证书颁发机构上的证书模板
 在此任务中，你将：
 
 -   配置 NDES 证书模板
@@ -149,7 +149,7 @@ I
     2.  通过查看 **“证书模板”** 文件夹下已发布的模板来对它进行验证。
 
 
-### <a name="task-3-configure-prerequisites-on-the-ndes-server"></a>任务 3 - 在 NDES 服务器上配置必备组件
+### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>任务 3 - 在 NDES 服务器上配置必备组件
 在此任务中，你将：
 
 -   将 NDES 添加到 Windows Server 并配置 IIS 以支持 NDES
@@ -190,7 +190,7 @@ I
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### <a name="task-4-configure-ndes-for-use-with-intune"></a>任务 4 - 配置 NDES 以与 Intune 一起使用
+### <a name="task-4---configure-ndes-for-use-with-intune"></a>任务 4 - 配置 NDES 以与 Intune 一起使用
 在此任务中，你将：
 
 -   配置 NDES 以与发证 CA 一起使用
@@ -294,7 +294,7 @@ I
 
 4.  重新启动 NDES 服务器。 服务器现已支持证书连接器。
 
-### <a name="task-5-enable-install-and-configure-the-intune-certificate-connector"></a>任务 5 — 启用、安装和配置 Intune 证书连接器
+### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>任务 5 — 启用、安装和配置 Intune 证书连接器
 在此任务中，你将：
 
 在 Intune 中启用对 NDES 的支持。
@@ -343,13 +343,13 @@ I
 
 若要验证服务是否正在运行，打开浏览器然后输入以下 URL 将返回 **“403”** 错误：
 
-**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
+**https:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ## <a name="next-steps"></a>后续步骤
 你现在可以像[配置证书配置文件](Configure-Intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
--   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [设置 iOS 和 Mac 设备管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [设置 Windows 设备管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -50,13 +50,13 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ### <a name="device-cap-reached"></a>已达到设备上限
 **问题：**注册期间，用户在设备上收到一个错误，例如 iOS 设备上的“公司门户暂时不可用”错误，并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
 
-**解决方法：** 根据设计，用户注册的设备不能超过 5 台。
+**解决方法：**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>检查已注册的和允许的设备数量
 
-1.  在 Intune 管理门户中，确保用户分配的设备不超过 5 台
+1.  在 Intune 管理门户中，确保用户分配的设备不超过允许的最大数量 15 台。
 
-2.  在 Intune 管理门户中的“管理\移动设备管理\注册规则”下，确保设备注册限制设置为 5
+2.  在 Intune 管理控制台中的“管理\移动设备管理\注册规则”下，确保设备注册限制设置为 15。
 
 移动设备用户可以在以下 URL 中删除设备： [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)。
 
@@ -89,7 +89,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
 **问题：**用户的设备上收到“公司门户暂时不可用”错误。
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>排查“公司门户暂时不可用”错误
+**解决方法：**
 
 1.  从设备中删除 Intune 公司门户应用。
 
@@ -104,7 +104,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ### <a name="mdm-authority-not-defined"></a>未定义 MDM 机构
 **问题：**用户收到“未定义 MDM 机构”错误。
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>排查“未定义 MDM 机构”错误
+**解决方法：**
 
 1.  确保已针对你在使用的 Intune 服务版本（即 Intune、O365 MDM 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，在**管理员** &gt; **移动设备管理**中设置 MDM 机构。 对于 Configuration Manager with Intune，则在配置 Intune 连接器时对其进行设置，在 O365 中则对**移动设备**进行设置。
 
@@ -152,16 +152,65 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 ## <a name="android-issues"></a>Android 的问题
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>设备无法签入 Intune 服务，并在 Intune 管理控制台中显示为“不正常”
+**问题：**运行 Android 版本 4.4.x 和 5.x 的某些 Samsung 设备可能会停止签入 Intune 服务。 如果设备不签入：
+
+- 它们将无法从 Intune 服务接收策略、应用和远程命令。
+- 它们在管理控制台中显示的管理状态为“不正常”。
+- 受条件访问策略保护的用户可能失去对公司资源的访问权限。
+
+Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Intune 公司门户及其组件。 当公司门户处于停用状态时，它无法在后台运行，因此无法联系 Intune 服务。
+
+**解决方法 #1：**
+
+告知你的用户手动启动公司门户应用。 应用重启后，设备将签入 Intune 服务。
+
+> [!IMPORTANT]
+> 手动打开公司门户应用只是一种临时解决方案，因为 Samsung Smart Manager 可能会再次停用公司门户应用。
+
+**解决方法 #2：**
+
+告知你的用户尝试升级到 Android 6.0。 停用问题不会发生在 Android 6.0 设备上。 若要检查是否有可用的更新，用户可以转到“设置” > “关于设备” > “手动下载更新”，然后按照设备上的提示进行操作。
+
+**解决方法 #3：**
+
+如果解决方案 #2 无效，请让你的用户按照以下步骤操作，使 Smart Manager 排除公司门户网站应用：
+
+1. 在设备上启动 Smart Manager 应用。
+
+  ![选择设备上的“Smart Manager”图标](./media/smart-manager-app-icon.png)
+
+2. 选择“电池”磁贴。
+
+  ![选择“电池”磁贴](./media/smart-manager-battery-tile.png)
+
+3. 在“应用省电”或“应用优化”下，选择“详细信息”。
+
+  ![在“应用省电”或“应用优化”下选择“详细信息”](./media/smart-manager-app-power-saving-detail.png)
+
+4. 从应用列表中选择“公司门户”。
+
+  ![从应用列表中选择“公司门户”](./media/smart-manager-company-portal.png)
+
+5. 选择“关闭”。
+
+  ![从“应用优化”对话框中选择“关闭”](./media/smart-manager-app-optimization-turned-off.png)
+
+6. 在“应用省电”或“应用优化”下，确认公司门户已关闭。
+
+  ![验证公司门户已关闭](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>配置文件安装失败
 **问题：**用户在 Android 设备上收到**配置文件安装失败**错误。
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>失败配置文件安装的故障排除步骤
+**解决方法：**
 
 1.  确认针对你在使用的 Intune 服务版本，该用户分配有适当的许可证。
 
 2.  确认尚未向另一个 MDM 提供程序注册该设备，或者该设备尚未安装管理配置文件。
 
-4.  确认默认浏览器为适用于 Android 的 Chrome，并且已启用 Cookie。
+3.  确认默认浏览器为适用于 Android 的 Chrome，并且已启用 Cookie。
 
 ### <a name="android-certificate-issues"></a>Android 证书问题
 
@@ -255,7 +304,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 ## <a name="pc-issues"></a>PC 问题
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
 **问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
 
 可能的原因是计算机先前已注册，或具有某台已注册的计算机的克隆映像。 先前帐户的帐户证书仍在此计算机上。
@@ -307,6 +356,6 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
