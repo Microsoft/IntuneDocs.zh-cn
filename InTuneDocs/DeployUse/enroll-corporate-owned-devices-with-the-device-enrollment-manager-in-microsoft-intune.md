@@ -14,15 +14,15 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 83b89d06793f6f3934537408fb600b3b89afd35b
 
 
 ---
 
 
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的设备注册管理器注册企业自有设备
-组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 *设备注册管理器* (DEM) 帐户是可注册最多 1000 台设备的特殊 Intune 帐户。 每台已注册设备均使用单一许可证。 我们建议将通过此帐户注册的设备用作共享设备，而不是个人 ("BYOD") 设备。 例如，用户不能使用“本机”电子邮件应用。
+组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 *设备注册管理器* (DEM) 帐户是可注册最多 1000 台设备的特殊 Intune 帐户。 每台已注册设备均使用单一许可证。 我们建议将通过此帐户注册的设备用作共享设备，而不是个人 ("BYOD") 设备。 例如，用户不能使用“本机”电子邮件应用。 DEM 许可是基于每个设备的，不是基于每个用户的。
 
 例如，你可以将设备注册管理器用户帐户指定给存储管理员或主管，允许他们执行下列操作：
 
@@ -70,7 +70,7 @@ ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
 
 7.  输入 Intune 帐户的“**用户 ID**”，然后选择“**确定**”。 设备注册管理器用户不能充当 Intune 管理员。
 
-8.  设备注册管理器现在可以使用相同的过程注册移动设备，与最终用户在公司门户中针对 BYOD 方案采用的过程相同。
+8.  设备注册管理器现在可以使用相同的过程注册移动设备，与最终用户在公司门户中针对 BYOD 方案采用的过程相同。 管理器最终用户可以使用 DEM 凭据在多达 1000 台设备上安装公司门户应用并注册设备。
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>从 Intune 删除设备注册管理员
 

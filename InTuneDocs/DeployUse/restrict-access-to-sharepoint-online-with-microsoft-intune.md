@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
-ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
+ms.sourcegitcommit: 4f6e7525ae2a125851ad402644d5fbc8767c77dc
+ms.openlocfilehash: 9bfc8886b464452f8fe35d4b740607ef3bc07a71
 
 
 ---
@@ -195,6 +195,6 @@ AAD DRS 将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
