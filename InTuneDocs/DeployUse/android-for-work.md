@@ -4,15 +4,15 @@ description: "Intune 管理 Android for Work，在用户将其 Android 设备用
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: aafeb58e28144740540a765ac04de68b41ae5ce5
+ms.sourcegitcommit: 83914246bde673b188ca3f7d9cf50b4d0de2edd4
+ms.openlocfilehash: 127db326fc96625c719b8136964bae014a904b3d
 
 
 ---
@@ -43,7 +43,7 @@ Google Play for Work 服务是应用分发和管理的必要组成部分。 所�
 
 ## <a name="app-configuration"></a>应用配置
 
-Android for Work 提供基础结构，用于将应用配置值部署到支持它们的应用。 通过为工作应用指定配置值，确保在用户首次启动该应用时已正确对其进行设置。 要支持应用配置，需要应用开发人员创建自己的 Android 应用，专门支持托管的配置值。 完成此操作后，可使用 Intune 指定和应用这些配置设置。 详细了解 [Android for Work 应用配置设置](deploy-use/afw-app-configuration-policy.md)。
+Android for Work 提供基础结构，用于将应用配置值部署到支持它们的应用。 通过为工作应用指定配置值，确保在用户首次启动该应用时已正确对其进行设置。 要支持应用配置，需要应用开发人员创建自己的 Android 应用，专门支持托管的配置值。 完成此操作后，可使用 Intune 指定和应用这些配置设置。 详细了解 [Android for Work 应用配置设置](afw-app-configuration-policy.md)。
 
 ## <a name="email-configuration"></a>电子邮件配置
 
@@ -77,7 +77,7 @@ VPN 支持类似于 Android VPN 配置文件。 提供了同样的 VPN 提供商
 
 详细了解[证书配置文件](secure-resource-access-with-certificate-profiles.md)。
 
-## <a name="wifi-profiles"></a>Wi-Fi 配置文件
+## <a name="wi-fi-profiles"></a>Wi-Fi 配置文件
 
 设备从 Intune 中停用且删除了工作配置文件时，确保删除 Android for Work 管理的 Wi-Fi 配置文件。 详细了解 [Wi-Fi 配置文件](wi-fi-connections-in-microsoft-intune.md)。
 
@@ -87,6 +87,6 @@ VPN 支持类似于 Android VPN 配置文件。 提供了同样的 VPN 提供商
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 

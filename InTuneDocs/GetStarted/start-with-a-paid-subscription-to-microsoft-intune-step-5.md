@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 >[!IMPORTANT]
 >
->在 Intune 门户中打开“组”工作区时，若显示 **Intune 用户组现在在 Azure Active Directory 中作为组进行管理**，且附带一个指向 Azure Active Directory 门户的链接，则表明你已在使用新的 Azure AD 安全组方法在 Intune 中进行组管理。 若要了解如何创建组，请参阅[在 Azure Active Directory 中管理组](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups)。
+>在 Intune 门户中打开“组”工作区时，若显示 **Intune 用户组现在在 Azure Active Directory 中作为组进行管理**，且附带一个指向 Azure Active Directory 门户的链接，则表明你已在使用新的 Azure AD 安全组方法在 Intune 中进行组管理。 若要了解如何创建组，请参阅[在 Azure Active Directory 中管理组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)。
 >
 >如果没有看到 Azure AD 门户的链接，则表明你仍在使用 Intune 门户进行组管理。
 
@@ -89,6 +89,6 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

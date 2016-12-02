@@ -3,7 +3,6 @@ title: "在合规性策略中启用设备保护规则 | Microsoft Intune"
 description: "在设备合规性策略中启用移动威胁保护规则。"
 keywords: 
 author: karthikaraman
-ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +13,8 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: ec287d49910a72c22122f45a01850bcbd3a7d203
+ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
+ms.openlocfilehash: 3e6aef013ae8764d9b031e880c333e184191feb4
 
 
 ---
@@ -57,11 +56,11 @@ ms.openlocfilehash: ec287d49910a72c22122f45a01850bcbd3a7d203
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange 内部部署](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  * [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune,md)
+  * [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 
