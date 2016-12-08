@@ -14,7 +14,7 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 
 
@@ -68,7 +68,7 @@ ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 -   将不支持“未分组的用户”和“未分组的设备”组。 我们不会将这些组从 Intune 迁移到 Azure AD。
 
 
-#### <a name="groupdependent-functionality"></a>组的依赖功能
+#### <a name="group-dependent-functionality"></a>组的依赖功能
 
 -   服务管理员角色将不会有“管理组”权限。
 -   你将不能对 Exchange ActiveSync 设备进行分组。 你的“所有 EAS 托管设备”组将从组转换为报告视图。

@@ -14,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>使用自定义策略创建具有预共享密钥的 Wi-Fi 配置文件
+# <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自定义策略创建具有预共享密钥的 Wi-Fi 配置文件
 下面介绍了如何使用 Intune 的**自定义配置**创建具有预共享密匙的 Wi-Fi 配置文件。 本主题还有一个如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
 
 > [!NOTE]
@@ -58,7 +58,7 @@ ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
     > 只可以将此策略部署到用户组。
 
 每个设备在下次签入时，将应用该策略，且将在设备上创建 Wi-Fi 配置文件。 设备将能够自动连接到网络。
-## <a name="android-or-windows-wifi-profile"></a>Android 或 Windows Wi-Fi 配置文件
+## <a name="android-or-windows-wi-fi-profile"></a>Android 或 Windows Wi-Fi 配置文件
 
 下面是一个针对 Android 或 Windows Wi-Fi 配置文件的 XML 代码示例：
 
@@ -109,7 +109,7 @@ ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
       </MSM>
     </WLANProfile>
 
-## <a name="eapbased-wifi-profile"></a>基于 EAP 的 Wi-Fi 配置文件
+## <a name="eap-based-wi-fi-profile"></a>基于 EAP 的 Wi-Fi 配置文件
 下面是一个针对基于 EAP 的 Wi-Fi 配置文件的 XML 代码示例：
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
       </MSM>
     </WLANProfile>
 
-## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>从现有的 Wi-Fi 连接创建 XML 文件
+## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>从现有的 Wi-Fi 连接创建 XML 文件
 还可以从现有的 Wi-Fi 连接创建 XML 文件：
 1. 在连接到或最近连接到无线网络的计算机上，打开下列文件夹：C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid}。
 
