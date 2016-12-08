@@ -14,7 +14,7 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
 
 
@@ -36,7 +36,7 @@ Exchange 需要一组规则，这些规则用于定义当移动设备尝试连�
 -   [安装适用于本地 Exchange 服务器和旧版 Exchange Online Dedicated 环境的 Intune 连接器](intune-on-premises-exchange-connector.md)
 
 
-## <a name="apply-policy-for-exchangemanaged-mobile-devices"></a>将策略应用于 Exchange 管理的移动设备
+## <a name="apply-policy-for-exchange-managed-mobile-devices"></a>将策略应用于 Exchange 管理的移动设备
 Intune 控制台可用于管理 [EAS 策略设置](exchange-activesync-policy-settings-in-microsoft-intune.md)和[限制对公司资源的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。 有关特定移动设备所支持的 Exchange ActiveSync 策略设置和功能的列表，请参阅 [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270)（Exchange ActiveSync 客户端对照表）。
 
 > [!NOTE]

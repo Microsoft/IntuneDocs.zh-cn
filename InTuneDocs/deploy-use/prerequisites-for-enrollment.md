@@ -14,7 +14,7 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
 
 
@@ -119,7 +119,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 3.  用户帐户即会添加到 Microsoft Intune 用户组，该用户组授予用户使用该服务和将设备注册到管理中的权限。
 
-### <a name="to-synchronize-onpremises-users-with-azure-ad"></a>将本地用户与 Azure AD 同步
+### <a name="to-synchronize-on-premises-users-with-azure-ad"></a>将本地用户与 Azure AD 同步
 
 1. 在本地 Active Directory 中，为你的自定义域[添加 UPN 后缀](https://technet.microsoft.com/en-us/library/cc772007.aspx)。
 2. 为计划导入的本地用户设置新的 UPN 后缀。

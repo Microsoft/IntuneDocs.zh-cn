@@ -14,18 +14,18 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c84b1e95b32ec878fffa001d0234940ebfb35576
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
 
 
 ---
 
-# <a name="install-the-intune-onpremises-exchange-connector"></a>安装 Intune On-Premises Exchange Connector
+# <a name="install-the-intune-on-premises-exchange-connector"></a>安装 Intune On-Premises Exchange Connector
 
 
 若要设置连接以使 Microsoft Intune 能够与托管移动设备邮箱的 Exchange Server 通信，则必须从 Intune 管理控制台下载和配置本地 Exchange Connector。 Intune 仅支持每个订阅中存在一个 Exchange Connector 连接（任意类型）。
 
-## <a name="onpremises-exchange-connector-requirements"></a>本地 Exchange Connector 的要求
+## <a name="on-premises-exchange-connector-requirements"></a>本地 Exchange Connector 的要求
 下表列出了你在其中安装本地 Exchange Connector 的计算机的要求。
 
 |要求|更多信息|
@@ -57,7 +57,7 @@ ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
  -   Set-ADServerSettings
  -   Get-Command
 
-## <a name="download-the-onpremises-exchange-connector-software-installation-package"></a>下载本地 Exchange Connector 软件安装包
+## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange Connector 软件安装包
 
 1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中的管理员且有权使用 Exchange Server）打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com) (http://manage.microsoft.com)。
 ![打开“设置 Exchange 连接”](../media/ExchangeConnector.gif)
@@ -71,7 +71,7 @@ ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
 > [!IMPORTANT]
 > 请勿重命名或移动本地 Exchange Connector 文件夹中的文件。 移动或重命名该文件夹的内容将导致安装失败。
 
-## <a name="install-and-configure-the-intune-onpremises-exchange-connector"></a>安装和配置 Intune On-Premises Exchange Connector
+## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>安装和配置 Intune On-Premises Exchange Connector
 执行下列步骤以安装 Intune On-Premises Exchange Connector。 每个 Intune 订阅只能安装一次本地 Exchange Connector，并且只能安装在一台计算机上。 如果尝试配置其他本地 Exchange Connector，新连接将替换原始连接。
 
 1.  在支持本地连接器的操作系统上，将 **Exchange_Connector_Setup.zip** 中的文件提取到安全位置。
