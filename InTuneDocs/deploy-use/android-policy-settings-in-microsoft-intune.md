@@ -15,7 +15,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
 
 
@@ -70,19 +70,19 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 |**允许提交诊断数据**|允许设备将诊断信息提交到 Google。|否|是|
 |**允许恢复出厂设置**|允许用户对设备执行恢复出厂设置。|否|是|
 
-### <a name="cloud-settings-documents-and-data"></a>云设置 - 文档和数据
+### <a name="cloud-settings---documents-and-data"></a>云设置 - 文档和数据
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|----|------------------------|----------------|
 |**允许 Google 备份**|允许使用 Google 备份。|否|是|
 
-### <a name="cloud-settings-accounts-and-synchronization"></a>云设置 - 帐户和同步
+### <a name="cloud-settings---accounts-and-synchronization"></a>云设置 - 帐户和同步
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|-----|-----------|----------------|
 |**允许 Google 帐户自动同步**|允许 Google 帐户设置自动同步。|否|是|
 
-### <a name="application-settings-browser"></a>应用设置 - 浏览器
+### <a name="application-settings---browser"></a>应用设置 - 浏览器
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|-----|-----------|----------------|
@@ -92,13 +92,13 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 |**允许使用 Cookie**|允许设备 Web 浏览器使用 Cookie。|否|是|
 |**允许使用活动脚本**|允许设备 Web 浏览器使用活动脚本。|否|是|
 
-### <a name="application-settings-apps"></a>应用设置 - 应用程序
+### <a name="application-settings---apps"></a>应用设置 - 应用程序
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|----|------------|----------------|
 |**允许 Google Play 商店**|允许用户访问设备上的 Google Play 商店。|否|是|
 
-### <a name="device-capabilities-settings-hardware"></a>设备性能设置 - 硬件
+### <a name="device-capabilities-settings---hardware"></a>设备性能设置 - 硬件
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|-----|-----------|----------------|
@@ -111,7 +111,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 |**允许蓝牙**|允许在设备上使用蓝牙。|否|是|
 |**允许关闭电源**|允许用户关闭设备电源。<br /><br />如果禁用了此设置，则 Samsung KNOX 标准版设备的“擦除设备前允许重复登录失败的次数”设置不起作用。|否|是|
 
-### <a name="device-capabilities-settings-cellular"></a>设备性能设置 - 蜂窝网络
+### <a name="device-capabilities-settings---cellular"></a>设备性能设置 - 蜂窝网络
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|---|-------------|----------------|
@@ -119,7 +119,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 |**允许数据漫游**|当设备处于移动电话网络中时允许数据漫游。|否|是|
 |**允许 SMS/MMS 消息传送**|允许在设备上使用短信和彩信消息传送。|否|是|
 
-### <a name="device-capabilities-settings-features"></a>设备性能设置 - 功能
+### <a name="device-capabilities-settings---features"></a>设备性能设置 - 功能
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|----|------------|----------------|
@@ -188,7 +188,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
     |**Name**|输入 Android 自定义策略的唯一名称，以帮助你在 Intune 控制台中识别它。|
     |**描述**|提供对 Android 自定义策略的概述以及可帮助你查找它的其他相关信息。|
 
-### <a name="omauri-settings"></a>OMA-URI 设置
+### <a name="oma-uri-settings"></a>OMA-URI 设置
 
    |设置名|详细信息|
     |--------|--------------------|

@@ -15,7 +15,7 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
 
 
@@ -77,7 +77,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android for Work 设�
     |**Name**|输入 Android 自定义策略的唯一名称，以帮助你在 Intune 控制台中识别它。|
     |**描述**|提供对 Android 自定义策略的概述以及可帮助你查找它的其他相关信息。|
 
-### <a name="omauri-settings"></a>OMA-URI 设置
+### <a name="oma-uri-settings"></a>OMA-URI 设置
 
    |设置名|详细信息|
     |--------|--------------------|
