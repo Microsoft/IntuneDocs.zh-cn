@@ -14,31 +14,40 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: karthikaraman
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: e2d43fff8772046fe7426b267e39d53b278d4e5c
+ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
+ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
 
 
 ---
 
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 组件
 
+> [!NOTE]
+> 你可能希望首先阅读 [ Intune App SDK 入门指南](intune-app-sdk-get-started.md)一文，其中介绍了如何为每个受支持的平台上的集成做准备。
+
+
+
 ## <a name="overview"></a>概述
-[Intune App SDK Xamarin 组件](https://components.xamarin.com/view/microsoft.intune.mam)允许在使用 Xamarin 生成的 iOS 和 Android 应用中启用 [Intune 移动应用管理功能](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 该组件可让开发人员轻松将应用限制和数据保护功能内置到基于 Xamarin 的应用中。
+[Intune App SDK Xamarin 组件](https://components.xamarin.com/view/microsoft.intune.mam)允许在使用 Xamarin 生成的 iOS 和 Android 应用中启用 [Intune 移动应用管理功能](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 该组件使开发人员可以轻松将 Intune 应用保护功能内置到基于 Xamarin 的应用中。
 
-你会发现你可以在不改变应用行为的情况下启用 SDK 功能。 将该组件内置到 iOS 或 Android 移动应用后，IT 管理员将能够通过 Microsoft Intune 部署策略，以便支持各种启用数据保护的功能。
+你会发现你可以在不改变应用行为的情况下启用 SDK 功能。 将该组件内置到 iOS 或 Android 移动应用后，IT 管理员将能够通过 Microsoft Intune 移动应用程序管理 (MAM) 部署策略，以便支持各种数据保护功能。
 
-## <a name="supported-scenarios"></a>支持的方案
+## <a name="whats-supported"></a>支持的功能
 
-### <a name="platforms"></a>平台
+### <a name="developer-machines"></a>开发人员计算机
+* Windows
+
+
+### <a name="mobile-app-platforms"></a>移动应用平台
 * Android
 * iOS
 
 
-### <a name="emm-scenarios"></a>EMM 方案
+### <a name="intune-mobile-application-management-scenarios"></a>Intune 移动应用程序管理方案
 
-* 注册了 Intune MDM 的设备上的 Intune MAM
-* 注册了第三方 EMM 的设备上的 Intune MAM
-* 未注册、非托管设备上的 Intune MAM
+* 注册了 Intune MDM 的设备
+* 注册了第三方 EMM 的设备
+* 非托管设备（未向任何 MDM 注册）
 
 使用 Intune App SDK Xamarin 组件生成的 Xamarin 应用现在可以在注册了 Intune 移动设备管理 (MDM) 的设备和未注册的设备上接收 Intune 移动应用程序管理 (MAM) 策略。
 
@@ -116,6 +125,6 @@ ms.openlocfilehash: e2d43fff8772046fe7426b267e39d53b278d4e5c
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

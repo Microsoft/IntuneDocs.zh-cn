@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b11a7080cf80ad2a261546bdf91f07bdbebd6c95
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
@@ -57,10 +57,10 @@ ms.openlocfilehash: b11a7080cf80ad2a261546bdf91f07bdbebd6c95
 
     5. 打开公司门户应用，选择你的设备，然后点击“Check Compliance”（检查合规性）。
 
-仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（地址为 wintunedroidfbk@microsoft.com.）
+仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 [Microsoft Android 团队](mailto:wintunedroidfbk@microsoft.com)。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
