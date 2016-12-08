@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 11/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f287a0ad082fa20a2e84abbf8f5585117aae6f57
-ms.openlocfilehash: e604b8809bd444d9069d449a6c691a8444296623
+ms.sourcegitcommit: 6dd584397451d38be86fa0780efff435ffb9b2af
+ms.openlocfilehash: d70ebf87bc930f853741ddc0d572d2174c636dac
 
 
 ---
@@ -51,6 +51,13 @@ Azure 门户中的管理体验将使用已公布的新分组和定向功能；�
 ### <a name="conditional-access-for-mam-with-sharepoint-online---vso-679339--"></a>MAM 与 SharePoint Online 的条件访问 <!--VSO 679339-->
 可以阻止不受 Intune 移动应用管理 (MAM) 策略支持的应用访问 SharePoint Online。  可以在 Azure 门户中开始使用 Intune 移动应用管理。 在“设置”边栏选项卡中查找“条件访问”部分，其中包含针对 SharePoint Online 的选项。 此功能将独立于服务版本的其余部分进行发布。
 
+### <a name="ability-to-restrict-intune-mobile-device-enrollment"></a>能够限制 Intune 移动设备注册
+Intune 新增了注册限制，可控制允许注册的移动设备平台。 Intune 将移动设备平台分为 iOS、macOS，Android、Windows 和 Windows Mobile。 
+* 可对 macOS 和 Windows 8.1 或更高版本进行限制，不允许将它们注册为移动设备平台。 
+* 限制移动设备注册不会限制电脑代理注册。 
+* 阻止个人自有设备的注册有一个附加选项，该选项仅适用于 iOS。 Intune 将所有新设备都标记为个人所有，除非 IT 管理员将设备标记为公司所有，如[本文](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices)所述。
+
+
 ## <a name="notices"></a>通知
 
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>注册移动到 Azure 门户时的多重身份验证 <!--VSO 750545-->
@@ -82,6 +89,6 @@ Android 版公司门户应用使用 Google Play Services 与 Microsoft Intune �
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

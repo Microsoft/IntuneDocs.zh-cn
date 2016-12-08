@@ -2,10 +2,10 @@
 title: "从 Intune 取消注册 Windows 设备会发生什么情况？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8975e57c604565c57c86472564ab660aed560a7b
-ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5cf2e7e821f962d2f12813062cc30b724e2fc45a
 
 
 ---
 
 
-# 从 Intune 取消注册 Windows 设备会发生什么情况？
+# <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>从 Intune 取消注册 Windows 设备会发生什么情况？
 
 使用此页面右侧“本文内容”下的链接，找到所使用设备类型的相关信息。
 
 
-## Windows 10，Windows 8.1，Windows 8，Windows 7，Windows Vista
+## <a name="windows-10-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10，Windows 8.1，Windows 8，Windows 7，Windows Vista
 
 -   设备将不再显示在公司门户中，并且你不能再从公司门户安装应用。
 
@@ -52,7 +52,7 @@ ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
 
 -   可能无法再访问设备上的某些公司资源（例如文件共享或内部网站）。
 
-## Windows 10 移动版和 Windows Phone 8.1
+## <a name="windows-10-mobile-and-windows-phone-81"></a>Windows 10 移动版和 Windows Phone 8.1
 
 -   从设备中卸载公司门户应用。 这意味着设备不再显示在公司门户中，且不能从公司门户应用或公司门户网站安装应用。
 
@@ -63,7 +63,7 @@ ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
     > [!IMPORTANT]
     > 唯一例外的是加密策略，这些策略仍适用。 如果公司策略要求对 Windows Phone 进行加密，则解密电话的唯一方式是使用“设置”菜单对其进行重置。
 
-## 运行 Windows 8.1 的 Windows RT
+## <a name="windows-rt-running-windows-81"></a>运行 Windows 8.1 的 Windows RT
 
 -   从设备中卸载公司门户应用。 这意味着设备不再显示于公司门户中，且不能从公司门户安装应用。
 
@@ -85,10 +85,10 @@ ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
 
 -   将不再应用当添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
 
-如有疑问，请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

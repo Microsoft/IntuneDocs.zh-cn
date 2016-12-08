@@ -2,10 +2,10 @@
 title: "安装公司门户应用并在 Intune 中注册 Windows 10 设备后会发生什么情况？ | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 0462635a4c995866f8ad504ea724e795424b4405
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
 
 
 ---
 
 
-# 安装公司门户应用并在 Intune 中注册 Windows 10 设备后会发生什么情况？
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Windows 10 设备后会发生什么情况？
 
 安装公司门户应用，然后使用该应用在 Intune 中注册 Windows 10 企业版或专业版设备后，可以将公司门户应用用于：
 
@@ -52,10 +52,10 @@ ms.openlocfilehash: 0462635a4c995866f8ad504ea724e795424b4405
 
 -   IT 管理员可能会在计算机上强制实施策略。 例如，可能要求你在计算机上设置密码或 PIN。 IT 管理员还可限制可输入错误密码的次数，并可在尝试次数过多时锁定设备或删除计算机硬盘上的所有数据。
 
-如有疑问，请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
