@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
 ## <a name="step-1-enable-connections"></a>步骤 1：启用连接
 
 启用移动设备注册前，请确保已完成以下步骤：
-- [查看所需网络 URL 和端口](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [添加并验证域名](../get-started/domain-names-for-microsoft-intune)
+- [查看所需网络 URL 和端口](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [添加并验证域名](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>步骤 2：设置 MDM 机构
 MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。 如果将 Configuration Manager 设置为管理机构，则没有其他服务可以用于移动设备管理。
@@ -111,7 +111,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 ## <a name="step-5-assign-user-licenses"></a>步骤 5：分配用户许可证
 
-使用 **Office 365 管理门户**手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure Active Directory (Azure AD) 的帐户。 可[将本地用户同步到 Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md)。
+使用 **Office 365 管理门户**手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure Active Directory (Azure AD) 的帐户。 可[将本地用户同步到 Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad)。
 
 1.  使用你的租户管理员凭据登录到 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)。
 
@@ -136,7 +136,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 - [Windows 电脑和笔记本电脑](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 移动版和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-还可以启用[公司拥有设备的注册](manage-corporate-owned-devices)。
+还可以启用[公司拥有设备的注册](manage-corporate-owned-devices.md)。
 
 ## <a name="step-7-next-steps"></a>步骤 7：后续步骤
 
@@ -149,6 +149,6 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

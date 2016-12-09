@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 13959c1456a0b160ce1fdcb76888d67cd13a5991
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7c518c176e315cbf005b2fceb8d74de09bdcfa98
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 13959c1456a0b160ce1fdcb76888d67cd13a5991
 可以让用户使用 Intune 公司门户应用安装和注册设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入服务器名称。
 
 1. **设置 Intune**<br>
-如果尚未设置，请通过[将移动设备管理 (MDM) 机构设置](prerequisites-for-enrollment.md#set-mobile-device-management-authority)为“Microsoft Intune”，然后设置 MDM，为管理移动设备做好准备。
+如果尚未设置，请通过[将移动设备管理 (MDM) 机构设置](prerequisites-for-enrollment.md#step-2-set-mdm-authority)为“Microsoft Intune”，然后设置 MDM，为管理移动设备做好准备。
 
 2. **创建 CNAME**（可选）<br>为公司的域创建 **CNAME** DNS 资源记录。 例如，如果公司网站为 contoso.com，则将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
 
@@ -72,6 +72,6 @@ ms.openlocfilehash: 13959c1456a0b160ce1fdcb76888d67cd13a5991
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

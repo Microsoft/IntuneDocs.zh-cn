@@ -2,8 +2,8 @@
 title: "限制对 Exchange Online 的电子邮件访问 | Microsoft Intune"
 description: "使用条件访问保护和控制对 Exchange Online 的公司电子邮件的访问。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/22/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
-ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 7ef78fb253ca88d63a550d5c54448103e6790574
 
 
 ---
@@ -218,11 +218,11 @@ ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
 
   在 **iOS 和 Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。  设备将显示证书，并提示最终用户选择证书，如下面的屏幕截图所示。 最终用户必须选择此证书后，才能继续使用该浏览器。
 
-  **Android**
+  **iOS**
 
   ![ipad 上证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Outlook Web Access (OWA)**
+  **Android**
 
   ![Android 设备上的证书提示的屏幕截图](../media/mdm-browser-ca-android-cert-prompt.png)
 
@@ -269,6 +269,6 @@ ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

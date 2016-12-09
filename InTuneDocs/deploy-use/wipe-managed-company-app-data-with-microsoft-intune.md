@@ -2,8 +2,8 @@
 title: "擦除托管公司应用数据 | Microsoft Intune"
 description: "了解如何从设备中有选择地远程删除公司数据。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/08/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
 
 
 ---
@@ -55,7 +55,7 @@ ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
 
 2.  在“擦除请求” 边栏选项卡中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起” 、“失败”还是“成功”。
 
-用户必须打开应用才能进行擦除，进行请求后可能需要最多 30 分钟才能完成擦除。 
+用户必须打开应用才能进行擦除，进行请求后可能需要最多 30 分钟才能完成擦除。
 
 手动删除之前将显示具有挂起状态的擦除。  若要手动删除擦除请求，右键单击并选择“删除”即可。
 
@@ -66,6 +66,6 @@ ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

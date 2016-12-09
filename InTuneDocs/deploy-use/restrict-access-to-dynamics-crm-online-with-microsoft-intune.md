@@ -2,8 +2,8 @@
 title: "限制对 Dynamics CRM Online 的访问 | Microsoft Intune"
 description: "使用条件访问保护和控制对 Dynamics CRM Online 的访问。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8dba2883b3261017bc66a409c5261f4422890015
+ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
+ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
 
 
 ---
@@ -27,7 +27,8 @@ ms.openlocfilehash: 8dba2883b3261017bc66a409c5261f4422890015
 
 若要了解有关条件访问如何工作的详细信息，请阅读文章[限制对电子邮件、O365 服务和其它服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
 
-> [!IMPORTANT] 若要部署条件性访问，必须订阅 Intune 和 Azure Active Directory Premium，且必须向用户授予这两项产品的许可。 **企业移动性 + 安全性 (EMS) 订阅**包括 Intune 和 Azure Active Directory Premium 订阅。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)。 如果没有 EMS 订阅，可获取 Azure Active Directory Premium 订阅。 请参阅 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+> [!IMPORTANT]
+> 若要部署条件性访问，必须订阅 Intune 和 Azure Active Directory Premium，且必须向用户授予这两项产品的许可。 **企业移动性 + 安全性 (EMS) 订阅**包括 Intune 和 Azure Active Directory Premium 订阅。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)。 如果没有 EMS 订阅，可获取 Azure Active Directory Premium 订阅。 请参阅 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
 
 当目标用户尝试在其设备上使用 Dynamics CRM 应用时，会进行以下评估：
 
@@ -100,6 +101,6 @@ ms.openlocfilehash: 8dba2883b3261017bc66a409c5261f4422890015
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "限制对电子邮件和 Office 365 服务的访问 | Microsoft Intune"
 description: "本主题介绍如何使用条件性访问只允许合规设备在 SharePoint Online 和其他服务上访问公司电子邮件和公司数据。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3a58e075813fac6a37ec8f82a39e44a856ef1cce
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 5665ca431eb186d4378953b7047228e07ae9dc60
 
 
 ---
@@ -66,6 +66,6 @@ ms.openlocfilehash: 3a58e075813fac6a37ec8f82a39e44a856ef1cce
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

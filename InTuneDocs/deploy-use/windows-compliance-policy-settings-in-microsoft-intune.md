@@ -2,8 +2,8 @@
 title: "适用于 Windows 设备的合规性策略设置 | Microsoft Intune"
 description: "本主题描述了可为 Windows 设备的合规性策略配置的规则和设置。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
 > [!div class="op_single_selector"]
 - [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Android for Work 的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune)
+- [适用于 Android for Work 的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>适用于 Windows Phone 设备的合规性策略设置
 本节中列出的设置支持 Windows Phone 8.1 及更高版本。
@@ -151,6 +151,6 @@ ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

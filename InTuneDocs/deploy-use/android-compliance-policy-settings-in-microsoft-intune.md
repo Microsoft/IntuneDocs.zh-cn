@@ -2,8 +2,8 @@
 title: "适用于 Android 设备的合规性策略设置 | Microsoft Intune"
 description: "本主题介绍适用于 Android 设备的设备合规性策略设置。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/08/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7d81d6e02602559c417a9f2a0cac51de8ab472e
-ms.openlocfilehash: aacdf9967cee3544d0b647fa2bff6240211df920
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
 
 
 ---
@@ -87,6 +87,6 @@ ms.openlocfilehash: aacdf9967cee3544d0b647fa2bff6240211df920
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
