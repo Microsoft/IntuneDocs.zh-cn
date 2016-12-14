@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
  ![注册此设备 macOS](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 了解[在 Intune 中注册设备会发生什么情况](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios)。
+  > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 了解[在 Intune 中注册设备会发生什么情况](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)。
 
 6. 将打开“系统偏好设置”，并询问是否要__安装“管理配置文件”？__ 单击“安装”以继续，或单击“显示配置文件”获取更多详细信息。
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

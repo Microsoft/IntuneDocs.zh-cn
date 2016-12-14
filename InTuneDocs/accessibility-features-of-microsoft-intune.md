@@ -3,8 +3,9 @@ title: "辅助功能 | Microsoft Intune"
 description: "了解 Intune 提供的更易于残障人士使用的功能。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55bdbaf5e521caa05d44bc45d4ec226dc05bf64b
-ms.openlocfilehash: 819fdb5bf4fd06a2b3b5010057cdd003e46f4758
+ms.sourcegitcommit: b99c90bfafd65e87e258e1e0ac01691e83581659
+ms.openlocfilehash: 9915f85e6bc2dc20b061618fc8ccc6da8f3cec36
 
 
 ---
 
-# Microsoft Intune 的可访问性功能
+# <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune 的可访问性功能
 除了 Microsoft Windows 中的辅助功能和工具之外，以下功能使 [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] 更易于残障人士访问：
 
 -   使用键盘快捷方式
@@ -27,7 +28,7 @@ ms.openlocfilehash: 819fdb5bf4fd06a2b3b5010057cdd003e46f4758
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## 使用键盘快捷方式
+## <a name="using-keyboard-shortcuts"></a>使用键盘快捷方式
 
 |若要执行此操作|使用此键盘快捷方式|
 |--------------|------------------------------|
@@ -43,11 +44,10 @@ ms.openlocfilehash: 819fdb5bf4fd06a2b3b5010057cdd003e46f4758
 |移到下一个应用程序组|向上键|
 |显示所选设备的操作|向右键|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] 可使用标准 Internet Explorer 键盘快捷方式在门户中导航。
+> 可使用标准 Internet Explorer 键盘快捷方式在 [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] 门户中导航。
 
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

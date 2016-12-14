@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 * [Windows 10 移动版](#windows-10-mobile)
 * [Windows 10 桌面版](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 移动版
@@ -54,7 +54,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
     屏幕顶部将显示“我们正在同步你的帐户”消息。 设备完成同步前，“同步”按钮将灰显。
 
 ## <a name="windows-10-desktop"></a>Windows 10 桌面版
-由于存在多个 Windows 10 版本，因此有两组步骤。 若要了解使用哪组步骤，可查看屏幕截图，然后按照设备上显示的步骤执行操作。 
+由于存在多个 Windows 10 版本，因此有两组步骤。 若要了解使用哪组步骤，可查看屏幕截图，然后按照设备上显示的步骤执行操作。
 
 1. 选择“启动”按钮，然后选择“设置”。
 
@@ -72,7 +72,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
     如果看到显示有“工作单位访问权限”的此屏幕，请按照[看到“工作单位访问权限”时要执行的步骤](#steps-to-follow-if-you-see-your-account)中的步骤操作。
 
-    ![选择工作单位访问作为帐户类型](./media/win10pc-sync-3-work-access.png) 
+    ![选择工作单位访问作为帐户类型](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>看到“访问工作单位或学校”时要执行的步骤
 
@@ -80,9 +80,9 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
     ![选择“访问工作单位或学校”](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. 选择工作或学校帐户。 根据 IT 管理员的设置方式，可能会看到与以下示例中类似的两个帐户。 一个帐户旁有一个公文包，另一个帐户旁有一个 Microsoft 徽标。 
+2. 选择工作或学校帐户。 根据 IT 管理员的设置方式，可能会看到与以下示例中类似的两个帐户。 一个帐户旁有一个公文包，另一个帐户旁有一个 Microsoft 徽标。
 
-    - 如果看到带有公文包的帐户，请选择它，并找到下面的“信息”按钮。 
+    - 如果看到带有公文包的帐户，请选择它，并找到下面的“信息”按钮。
     - 如果只看到带有 Microsoft 徽标的帐户，请选择该帐户，并找到下面的“信息”按钮。
 
     ![选择公文包或 Microsoft 徽标旁的帐户名](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 4. 选择“同步”按钮。 设备将与 Intune 进行同步。
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>看到“工作单位访问权限”时要执行的步骤
-    
+
 1. 在“帐户”页上，选择“工作单位访问”。
 
     ![选择工作单位访问作为帐户类型](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
