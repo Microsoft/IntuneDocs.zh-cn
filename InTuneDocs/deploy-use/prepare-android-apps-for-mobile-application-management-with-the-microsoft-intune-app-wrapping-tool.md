@@ -2,8 +2,8 @@
 title: "使用 App Wrapping Tool 包装 Android 应用 | Microsoft Intune"
 description: "使用本文中提供的信息，了解不更改应用本身代码即可包装 Android 应用的方法。 准备应用以便应用移动应用管理策略。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 7c61ad6a3122793ddd66547b7040f978705b540c
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: e8ca141b31104fb5759d9796f19b618debe74752
 
 
 ---
@@ -140,6 +140,6 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

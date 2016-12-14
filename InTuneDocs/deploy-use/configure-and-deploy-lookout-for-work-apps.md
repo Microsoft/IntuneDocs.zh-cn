@@ -1,8 +1,8 @@
 ---
 title: "部署 Lookout for Work 应用 | Microsoft Intune"
 description: "配置并部署 Android 版 Lookout for Work 应用。"
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 720fe241e7f1205dbad4b64af5cf7f16a80db23e
 
 
 ---
@@ -40,14 +40,15 @@ ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 * **步骤 5**：通过选择 Lookout for Work 应用，并选择“管理部署”，将应用部署到用户。
 
-  选择的用户必须与添加到 Lookout MTP 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) 部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
+  选择的用户必须与添加到 Lookout MTP 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) 部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
+
   >[!IMPORTANT]
   > Intune 应用部署向导不会感知 Azure AD 用户组，而会使用 Intune 用户组。 因此，必须以在 Lookout MTP 控制台中注册的 Azure AD 用户组为基础创建 Intune 用户组，如[本主题](plan-your-user-and-device-groups.md)所述。
 
 * **步骤 6**：选择“所需的安装”选项，该选项要求在用户的设备上安装 Lookout 应用。
 
 
-## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS（企业签名的 Lookout 应用版本）
+## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS（企业签名的 Lookout 应用版本）
 
 * **步骤 1：**确保在设备上设置了 **iOS 管理**。 有关如何针对 iOS 管理设置设备的说明，请参阅[设置 iOS 和 Mac 设备管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 
@@ -76,7 +77,8 @@ ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 * **步骤 6：****若要将应用部署到用户**，请选择 Lookout for Work 应用，然后选择“管理部署”。
 
-  选择的用户必须与添加到 Lookout 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout 设备威胁保护](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp)部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
+  选择的用户必须与添加到 Lookout 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout 设备威胁保护](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection)部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
+
 >[!IMPORTANT]
 > Intune 应用部署向导并未识别到 Azure AD 用户组且使用的是 Intune 用户组，因此必须基于在 Lookout 控制台中注册的 Azure AD 用户组创建 Intune 用户组（如[本](plan-your-user-and-device-groups.md)主题所述）。
 
@@ -98,6 +100,6 @@ ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

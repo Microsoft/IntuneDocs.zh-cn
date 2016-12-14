@@ -2,8 +2,8 @@
 title: "保护未注册设备上的 LOB 应用 | Microsoft Intune"
 description: "本主题介绍如何准备自定义的业务线应用，以便应用可帮助防止数据丢失的移动应用管理策略。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
 
 ##  <a name="step-1-prepare-the-app"></a>步骤 1：准备应用
 
-将 MAM 策略应用于某个应用时，首先必须使用 [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) 和 [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) 版 Microsoft Intune 应用包装工具包装该应用，或者使用 [Intune 应用 SDK](/../develop/intune-app-sdk) 手动集成 Intune 应用保护功能。
+将 MAM 策略应用于某个应用时，首先必须使用 [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 和 [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 版 Microsoft Intune 应用包装工具包装该应用，或者使用 [Intune 应用 SDK](../develop/intune-app-sdk.md) 手动集成 Intune 应用保护功能。
 
-若要深入了解应该使用应用包装工具还是 SDK，请参阅[决定如何使用 Microsoft Intune 为移动应用管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)。
+若要深入了解应该使用应用包装工具还是 SDK，请参阅[决定如何使用 Microsoft Intune 为移动应用管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
 
 ## <a name="step-2-add-the-app"></a>步骤 2：添加应用
 
@@ -81,6 +81,6 @@ ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

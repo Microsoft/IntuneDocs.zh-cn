@@ -2,8 +2,8 @@
 title: "使用 Intune 应用包装工具包装 iOS 应用 | Microsoft Intune"
 description: "通过本主题中提供的信息了解不更改应用代码本身即可包装 iOS 应用的方法。 准备应用以便应用移动应用管理策略。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba4ace8106e83f3579cbaf98dcea8ef240a202a9
-ms.openlocfilehash: d150c97197e11d4a81727dca5ddd8eb1310aa193
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
 
 
 ---
@@ -277,6 +277,6 @@ ms.openlocfilehash: d150c97197e11d4a81727dca5ddd8eb1310aa193
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

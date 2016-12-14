@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 可以从不再需要的、已重新调整用途的或已丢失的 Intune 托管设备中擦除应用和数据。 若要执行此操作，Intune 将提供选择性擦除和完全擦除功能。 对于在 Intune 中注册的私人所有设备，用户还可从 Intune 公司门户应用中发出远程设备擦除命令。
 
   > [!NOTE]
-  > 本主题仅涉及擦除通过 Intune 移动设备管理功能管理的设备。 还可使用 [Azure 门户](https://portal.azure.com)[从应用中擦除公司数据](wipe-managed-company-app-data-with-microsoft-intune.md)。 还可以[停用使用 Intune 客户端软件管理的计算机](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md)。
+  > 本主题仅涉及擦除通过 Intune 移动设备管理功能管理的设备。 还可使用 [Azure 门户](https://portal.azure.com)[从应用中擦除公司数据](wipe-managed-company-app-data-with-microsoft-intune.md)。 还可以[停用使用 Intune 客户端软件管理的计算机](retire-a-windows-pc-with-microsoft-intune.md)。
 
 ## <a name="full-wipe"></a>完全擦除
 
@@ -165,6 +165,6 @@ EFS 选择性擦除当前支持下列数据和应用：
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

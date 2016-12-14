@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
 8.  选择适当的设备，然后选择“删除设备”。 下一次与 Active Directory 同步时，将删除该设备。 这通常发生在 4 小时内。 同步之后，将从管理中删除该设备。 这会从该用户的设备限制中删除一台设备。
 
 ## <a name="retire-managed-computers"></a>停用被管理的计算机
-可以从 Intune 管理控制台的管理中删除 Intune 客户端软件管理的计算机。 删除的同时还会卸载客户端软件，并从计算机中删除 Intune 策略。 请参阅有关[停用使用 Intune 客户端软件管理的计算机](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md)的信息。
+可以从 Intune 管理控制台的管理中删除 Intune 客户端软件管理的计算机。 删除的同时还会卸载客户端软件，并从计算机中删除 Intune 策略。 请参阅有关[停用使用 Intune 客户端软件管理的计算机](retire-a-windows-pc-with-microsoft-intune.md)的信息。
 
 ## <a name="block-access-a-device"></a>阻止访问设备
 如果丢失了某个设备，或者因为某位员工离开公司时未归还公司拥有的硬件而必须要停用设备，则还可以[重置密码和远程锁定](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)该设备。 尽管你可能已将设备标记为丢失，但此操作可以防止公司信息被误用。
@@ -70,6 +70,6 @@ ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
