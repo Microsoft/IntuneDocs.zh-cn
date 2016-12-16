@@ -1,10 +1,11 @@
 ---
-title: "iOS 设备不符合最高操作系统版本 | Microsoft Intune"
+title: "设备不符合最高操作系统版本 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: e9ffe9caddf6c0f6bf93f19b49672f197dc64708
+ms.sourcegitcommit: 308706452538ea6d87546d72ca4478b227ced0d6
+ms.openlocfilehash: 928845c6e0bc21ae678fd6ba31c3bd0bbde5d338
 
 
 ---
 
 
-# iOS 设备不符合最高操作系统版本
+# <a name="your-devices-operating-system-version-isnt-yet-supported"></a>设备的操作系统版本尚不受支持
 
-iOS 设备不符合有关最高操作系统版本的 IT 管理员策略。 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+随着移动技术的快速发展，实际上有时 IT 管理员可能还没来得及进行测试，设备系统就已更新换代了。 可能最新版本的 iOS 无法与公司的某些其他工具搭配使用。
+
+需要联系 IT 管理员来解决此问题。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

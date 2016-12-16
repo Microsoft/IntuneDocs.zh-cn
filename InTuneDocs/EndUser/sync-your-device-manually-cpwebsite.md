@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,27 +15,27 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 62b9808c234b31f08467a971d8e4d4cb600e563b
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
 
 
 ---
 
 
-# <a name="sync-your-device-manually-by-using-the-company-portal-website"></a>使用公司门户网站手动同步设备
+# <a name="use-the-company-portal-website-to-sync-your-device"></a>使用公司门户网站同步设备
 
-如果你的应用安装或一些其他任务所需时间过长，则可尝试手动同步设备。 手动同步可能有助于加快安装或执行任务的速度。
+有时，安装应用或执行另一项任务可能会花费比正常情况下更多的时间。 如果花费时间太多，可尝试手动同步设备，以加快实现目标的速度。
 
-同步功能仅适用于以下设备。 如果未列出你的设备，则不支持同步。 使用与你正在使用的设备相匹配的链接。 
+> [!Note]
+> 当前，同步功能并不支持所有设备。 如果未列出你的设备，请尝试重置设备，可关闭 Wifi 大约 30 秒，然后重新连接网络。
 
 * [iOS](sync-your-device-manually-ios.md)
 * [Windows 10 移动版](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 桌面版](sync-your-device-manually-windows.md#windows-10-desktop)
-* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
+* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

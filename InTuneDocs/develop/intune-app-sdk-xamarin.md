@@ -1,21 +1,21 @@
 ---
-title: "Microsoft Intune App SDK Xamarin 组件 | Microsoft Intune"
+title: "Microsoft Intune App SDK Xamarin 组件 | Microsoft 文档"
 description: 
 keywords: "sdk、Xamarin、intune"
-author: oydang
-manager: karthikaraman
-ms.author: oydang
+author: mtillman
+manager: angrobe
+ms.author: mtillman
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
-ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 
 ---
@@ -83,7 +83,7 @@ ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
 
       ```
 
-2.  现在该组件已添加并初始化，便可以按照所需的常规步骤将 App SDK 内置到 iOS 移动应用中。 可在 [Intune App SDK for iOS 开发人员指南](intune-app-sdk-ios)中找到用于启用本机 iOS 应用的完整文档。
+2.  现在该组件已添加并初始化，便可以按照所需的常规步骤将 App SDK 内置到 iOS 移动应用中。 可在 [Intune App SDK for iOS 开发人员指南](intune-app-sdk-ios.md)中找到用于启用本机 iOS 应用的完整文档。
 3. **重要提示**：特定于基于 Xamarin 的 iOS 应用有几项修改。 例如，当启用密钥链组时，需要添加以下内容以包含组件中包括的 Xamarin 示例应用。 以下是“密钥链访问”组中需要的组的示例：
 
       ```xml
@@ -102,10 +102,10 @@ ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
       </plist>
       ```
 
-你已完成将组件内置到基于 Xamarin 的 iOS 应用所需的步骤。 如果使用 Xcode 生成项目，那么可以使用 `Intune App SDK Settings.bundle`。 这使你能够在生成项目以进行测试和调试时随时打开或关闭 Intune 策略设置。 若要利用此捆绑包，请按照 [Intune App SDK for iOS 开发人员指南](intune-app-sdk-ios)中的步骤操作，并阅读[在 Xcode 中调试](intune-app-sdk-ios#debug-information)部分。
+你已完成将组件内置到基于 Xamarin 的 iOS 应用所需的步骤。 如果使用 Xcode 生成项目，那么可以使用 `Intune App SDK Settings.bundle`。 这使你能够在生成项目以进行测试和调试时随时打开或关闭 Intune 策略设置。 若要利用此捆绑包，请按照 [Intune App SDK for iOS 开发人员指南](intune-app-sdk-ios.md)中的步骤操作，并阅读[在 Xcode 中调试](intune-app-sdk-ios.md#status-result-and-debug-notifications)部分。
 
 ## <a name="enabling-mam-in-your-android-mobile-app"></a>在 Android 移动应用中启用 MAM
-对不使用 UI 框架的基于 Xamarin 的 Android 应用，你需要阅读并遵循 [Intune App SDK for Android 开发人员指南]。 对基于 Xamarin 的 Android 应用，需要根据本指南所包含的[表](intune-app-sdk-android#replace-classes-methods-and-activities-with-their-mam-equivalent-required)将类、方法和活动替换为 MAM 等效项。 如果应用没有定义 `android.app.Application` 类，则需要创建一个，并确保继承自 `MAMApplication`。
+对不使用 UI 框架的基于 Xamarin 的 Android 应用，你需要阅读并遵循 [Intune App SDK for Android 开发人员指南]。 对基于 Xamarin 的 Android 应用，需要根据本指南所包含的[表](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent-required)将类、方法和活动替换为 MAM 等效项。 如果应用没有定义 `android.app.Application` 类，则需要创建一个，并确保继承自 `MAMApplication`。
 
 对于 Xamarin 窗体和其他 UI 框架，我们提供了名为 `MAM.Remapper` 的工具。 该工具将为你完成类替换。 但是，你需要执行以下步骤：
 
@@ -125,6 +125,6 @@ ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

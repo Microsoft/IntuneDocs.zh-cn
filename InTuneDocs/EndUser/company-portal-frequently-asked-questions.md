@@ -1,11 +1,11 @@
 ---
-title: "关于公司门户 | Microsoft Intune"
+title: "什么是公司门户？ | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
+ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
+ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 
 
 ---
@@ -42,7 +42,7 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
-- [iOS 和 Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS 和 macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows](using-your-windows-device-with-intune.md)
 - [公司门户网站](using-the-intune-company-portal-website.md)
 
@@ -53,12 +53,12 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 > [!div class="op_single_selector"]
 - [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS 和 Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [iOS 和 macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>可将何种计算机或设备添加到公司门户？
 
--   iPhone、iPad 和 Mac OS X 设备
+-   iPhone、iPad 和 macOS 设备
 
 -   Android 移动设备
 
@@ -75,7 +75,7 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
-- [iOS 和 Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [iOS 和 macOS](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
 *重置*计算机或设备后，公司门户会尝试将计算机或设备重置回制造商的默认设置。 重置设备将从设备删除所有公司和个人数据！ 如果设备丢失，还可在公司门户网站上远程重置。
@@ -84,7 +84,7 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 > [!div class="op_single_selector"]
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
-- [iOS 和 Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [iOS 和 macOS](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [从公司门户网站重置设备](reset-your-device-cpwebsite.md)
 
@@ -96,6 +96,6 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

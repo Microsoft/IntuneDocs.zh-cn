@@ -1,11 +1,11 @@
 ---
-title: "不支持的公司门户应用 | Microsoft Intune"
+title: "更新公司门户应用 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: a6b551ce5c0810ec98ed2303733f0efa43b8ffdb
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: b3e98f32901512b9164c2e28c38e3bad751f7e8a
 
 
 ---
 
-# 不支持的公司门户应用
-此版本的公司门户不再可用。 安装来自 Windows 应用商店的**公司门户**应用以继续。
+# <a name="your-company-portal-app-is-out-of-date"></a>公司门户应用已过时
+需要更新公司门户应用，以继续访问公司电子邮件、联系人和文档等内容。 若要解决此问题，请打开“Windows 应用商店”，安装最新版本的“公司门户”应用。
+
+仍需要帮助？ 请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 
