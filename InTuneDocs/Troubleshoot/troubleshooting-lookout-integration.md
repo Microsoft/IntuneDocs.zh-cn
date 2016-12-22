@@ -1,11 +1,11 @@
 ---
-title: "使用 Intune 集成 Lookout 故障排除"
+title: "Lookout 集成故障排除 | Microsoft Docs"
 description: "本主题介绍了 Lookout 集成中常见的故障排除问题"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ Azure AD 全局管理员用户未接受初始 Lookout 设置时，可能出现�
 
 ![显示登录错误的 Lookout 登录界面屏幕截图](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-若要解决此问题，全局管理员用户必须登录到 https://aad.lookout.com/les?action=consent，并接受启用设置的提示。 [为订阅设置 Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)主题中提供了更多详细信息
+若要解决此问题，全局管理员用户必须登录到 https://aad.lookout.com/les?action=consent，并接受启用设置的提示。 [为订阅设置 Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md)主题中提供了更多详细信息
 
 ## <a name="troubleshoot-device-status-issues"></a>设备状态问题故障排除
 
@@ -90,6 +90,6 @@ Azure AD 全局管理员用户未接受初始 Lookout 设置时，可能出现�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,21 +1,21 @@
 ---
-title: "用于 iOS 的 Microsoft Intune App SDK 开发人员指南 | Microsoft Intune"
+title: "用于 iOS 的 Microsoft Intune App SDK 开发人员指南 | Microsoft 文档"
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
 * 需要运行 OS X 10.8.5 或更高版本的 Mac OS 计算机，且需安装 Xcode 工具集版本 5 或更高版本。
 
 * 查看 [Intune App SDK for iOS 许可条款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 打印并保留一份许可条款，以留作记录。 下载和使用用于 iOS 的 Intune App SDK 即表示你同意这些许可条款。  如果不接受这些条款，请不要使用此软件。
+
+* 在 [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) 上下载用于 iOS 的 Intune App SDK 的文件。
 
 ## <a name="whats-in-the-sdk"></a>SDK 包含什么
 
@@ -322,9 +324,9 @@ Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能�
 
 在调用此 API 后，应用可继续正常工作。 如果注册成功，SDK 会通知用户需要重启应用。
 
-## <a name="debug-information"></a>调试信息
+## <a name="status-result-and-debug-notifications"></a>状态、结果和调试通知
 
-应用可接收有关以下针对 Intune MAM 服务的请求的调试通知：
+应用可接收有关以下向 Intune MAM 服务发出的请求的状态、结果和调试通知：
 
  - 注册请求
  - 策略更新请求
@@ -365,7 +367,7 @@ Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能�
 
 此对象连同可返回的特定状态代码在 Headers/IntuneMAMEnrollmentStatus.h 中进行定义。
 
-请注意，任何应用的业务逻辑都不应基于这些通知。 其想法是，应用可将此信息发送给遥测服务用于调试或监视目的。
+
 
 
 ## <a name="sample-code"></a>代码示例
@@ -637,7 +639,7 @@ SDK 将在后台定期执行以下操作：
 
 ## <a name="submit-your-app-to-the-app-store"></a>将应用提交到应用商店
 
-Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这意味着它们包含适用于所有设备和模拟器体系结构的代码。 如果应用含有模拟器代码，Apple 会拒绝将其提交到应用商店。 编译针对用于仅设备构建的静态库时，链接器会自动删除其中的模拟器代码。
+Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这意味着它们包含适用于所有设备和模拟器体系结构的代码。 如果应用含有模拟器代码，Apple 会拒绝将其提交到应用商店。 编译针对用于仅设备构建的静态库时，链接器会自动删除其中的模拟器代码。 按照下面的步骤确保将应用上载到应用商店之前删除所有模拟器代码。
 
 1. 请确保 `IntuneMAM.framework` 位于桌面上。
 
@@ -654,6 +656,6 @@ Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

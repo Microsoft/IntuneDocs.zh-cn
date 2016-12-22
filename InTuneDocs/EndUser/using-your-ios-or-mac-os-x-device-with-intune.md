@@ -1,6 +1,6 @@
 ---
-title: "通过 Intune 使用 iOS 或 Mac OS X 设备 | Microsoft Intune"
-description: "指向以下任务的链接列表：在 Intune 中注册设备时，你可以在你的 iOS 或 Mac OS X 移动设备上执行的任务"
+title: "通过 Intune 使用 iOS 或 macOS 设备 | Microsoft Intune"
+description: "指向以下任务的链接列表：在 Intune 中注册设备时，可在 iOS 或 macOS 移动设备上执行的任务"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -15,13 +15,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: e10c0eb3000bcf3a98a0cab891c40d32fe06d335
 
 
 ---
 
-# <a name="using-your-ios-or-mac-os-x-device-with-intune"></a>Using your iOS or Mac OS X device with Intune
+# <a name="using-your-ios-or-macos-device-with-intune"></a>通过 Intune 使用 iOS 或 macOS 设备
 
 本文包含最终用户可在其 Intune 托管的设备上执行的所有任务的链接。 IT 管理员可以参考此信息以查看用户执行各种任务时必须执行的步骤，这些任务按以下类别分组：
 - 公司门户应用安装和 Intune 注册
@@ -34,7 +34,7 @@ ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
 
 - [安装 Intune 公司门户应用并登录](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [在 Intune 中注册 iOS 设备](enroll-your-device-in-intune-ios.md)
-- [在 Intune 中注册 Mac OS X 设备](enroll-your-device-in-intune-mac-os-x.md)
+- [在 Intune 中注册 macOS 设备](enroll-your-device-in-intune-macos.md)
 - [安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
 ## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>在 Intune 中注册设备后用户可以执行的操作
@@ -67,6 +67,6 @@ ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
