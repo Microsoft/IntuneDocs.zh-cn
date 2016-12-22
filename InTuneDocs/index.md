@@ -9,14 +9,14 @@ keywords: "intune 文档, 应用管理,设备管理, MDM 文档, MAM 文档"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 12/7/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
-ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
+ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
+ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
 
 
 ---
@@ -24,8 +24,8 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 <article id="main">
     <section id="hero-content">
       <h1>Intune 文档</h1>
-      <h2>了解如何部署和管理 Microsoft Intune 一种移动设备和应用程序管理服务。</h2>
-      <h3>要使用 Configuration Manager 管理 Intune？ <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Read about hybrid mobile device management &rarr;（了解混合移动设备管理）</a></h3>
+      <h2>通过云实现的移动设备管理和应用管理以及电脑管理。 </h2>
+      <h3>要使用 Configuration Manager 管理 Intune？ <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Read about hybrid mobile device management &rarr;（了解混合移动设备管理）</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
@@ -33,7 +33,7 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
         <ul class="column column-half">
           <li><a href="http://fasttrack.microsoft.com/ems">150 多个许可证？ 利用 FastTrack 权益</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune 的常见使用方式</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">保护应用数据</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure 门户预览版中的 Intune</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">保护对公司资源的访问</a></li>
@@ -285,6 +285,6 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

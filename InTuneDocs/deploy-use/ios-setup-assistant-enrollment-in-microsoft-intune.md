@@ -14,7 +14,7 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
 
 
@@ -64,7 +64,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
     3.  单击“保存配置文件”以添加配置文件。
 
 3.  **通过设置助理添加 iOS 设备以进行注册**。
-    在“Microsoft Intune 管理控制台”[](http://manage.microsoft.com)中，转到“组”&gt;“所有设备”&gt;“所有企业拥有的设备”&gt;“所有设备”，然后选择“添加设备”。 可以通过两种方式添加设备：
+    在[“Microsoft Intune 管理控制台”](http://manage.microsoft.com)中，转到“组”&gt;“所有设备”&gt;“所有企业拥有的设备”&gt;“所有设备”，然后选择“添加设备”。 可以通过两种方式添加设备：
 
     ![添加设备对话框](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 

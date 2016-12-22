@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 >
 > 如果对添加到设备注册管理器组的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
-### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
+### <a name="company-portal-emporarily-unavailable"></a>公司门户暂时不可用
 **问题：**用户的设备上收到“公司门户暂时不可用”错误。
 
 **解决方法：**
@@ -216,21 +216,38 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 **问题**：用户在其设备上收到以下消息：*无法登录，因为设备缺少必需的证书。*
 
-**解决方法**：
+**解决方法 1**：
 
-- 用户也许能够按照[这些说明](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)检索缺少的证书。
-- 如果用户无法检索该证书，你可能在 ADFS 服务器上缺少中间证书。 Android 需要中间证书才信任该服务器。
+让用户按照[设备缺少必需的证书](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)中的说明操作。 如果用户按照此说明操作后仍出现此错误，请尝试解决方法 2。
 
-你可以将证书导入到 ADFS 服务器或代理服务器上的中间存储中，如下所示：
+**解决方法 2**：
 
-1.  在 ADFS 服务器上，启动“**Microsoft 管理控制台**”并向“**计算机帐户**”添加证书管理单元。
-5.  查找 ADFS 服务正在使用的证书并查看其父证书。
-6.  复制该父证书并将其粘贴在 **Computer\Intermediate Certification Authorities\Certificates** 下。
-7.  复制 ADFS 证书、ADFS 解密证书和 ADFS 签名证书并将它们粘贴在 ADFS 服务的个人存储中。
-8.  重启 ADFS 服务器。
+如果用户输入其公司凭据并在联合登录体验中重定向后仍然看到缺少证书的错误，那么 Active Directory 联合服务 (AD FS) 服务器可能缺失中间证书。
 
+此证书错误的发生是因为 Android 设备需要在 [SSL 服务器问候](https://technet.microsoft.com/library/cc783349.aspx)中包含中间证书，但是当前默认的 AD FS 服务器或 AD FS 代理服务器安装仅向 SSL 客户端问候发送 SSL 服务器问候响应中的 AD FS 的服务 SSL 证书。
+
+若要解决此问题，请按以下步骤将证书导入 AD FS 服务器或代理上的计算机个人证书：
+
+1.  在 ADFS 服务器和代理服务器上，右键单击“开始”按钮，选择“运行”，然后键入“certlm.msc”，以启动本地计算机的证书管理控制台。
+2.  展开“个人”，然后选择“证书”。
+3.  查找用于 AD FS 服务通信的证书（公共签名证书），然后双击以查看其属性。
+4.  选择“证书路径”选项卡以查看证书的父证书。
+5.  在每个父证书上，选择“查看证书”。
+6.  选择“详细信息”选项卡，然后选择“复制到文件...”。
+7.  按照向导提示将证书的公钥导出或保存到所需的文件位置。
+8.  将步骤 3 中导出的父证书导入到本地计算机\个人\证书，方法是右键单击“证书”，选择“所有任务” > “导入”，然后按照向导提示导入证书。
+9.  重启 AD FS 服务器。
+10. 在所有 AD FS 和代理服务器上重复上述步骤。
 现在用户应能够在 Android 设备上登录到公司门户。
 
+**若要验证是否正确安装证书**：
+
+以下步骤只描述了用于验证是否正确安装证书的许多方法和工具中的一种。
+
+1. 转到[免费的 Digicert 工具](ttps://www.digicert.com/help/)。
+2. 输入 AD FS 服务器的完全限定域名（例如，sts.contoso.com），并选择“检查服务器”。
+
+如果已正确安装服务器证书，则会在结果中看见所有复选标记。 如果存在上述问题，则会在报告的“证书名称匹配”和“已正确安装 SSL 证书”部分看见红色的 X。
 
 
 ## <a name="ios-issues"></a>iOS 的问题
@@ -356,6 +373,6 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

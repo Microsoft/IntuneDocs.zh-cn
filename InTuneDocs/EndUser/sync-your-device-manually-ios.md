@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 8a8f3416f22cb5ce11fe0951f126d8ce36a248bd
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 # <a name="sync-your-ios-device-manually"></a>手动同步 iOS 设备
 
-如果你的应用安装所需时间过长，则可尝试手动同步设备。 手动同步可能有助于加快安装速度。 此同步功能仅适用于 iOS，不适用于 Mac OS X。
+如果你的应用安装所需时间过长，则可尝试手动同步设备。 手动同步可能有助于加快安装速度。 此同步功能仅适用于 iOS，不适用于 macOS。
 
 1. 打开 iOS 公司门户应用。
 
@@ -42,6 +42,6 @@ ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

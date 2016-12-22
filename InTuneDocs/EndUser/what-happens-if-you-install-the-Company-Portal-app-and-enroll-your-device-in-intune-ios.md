@@ -1,5 +1,5 @@
 ---
-title: "安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备后会发生什么情况？ | Microsoft Intune"
+title: "如果安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS 设备会怎样？ | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备后会发生什么情况？
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>如果安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS 设备会怎样？
 
-当安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS X 设备时，可以使用公司门户应用：
+如果安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS 设备，则可以使用公司门户应用：
 
 -   访问公司网络、你的电子邮件和工作文件。
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 
