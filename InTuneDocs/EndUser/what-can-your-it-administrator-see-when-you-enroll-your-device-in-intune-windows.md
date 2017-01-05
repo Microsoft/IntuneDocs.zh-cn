@@ -1,5 +1,5 @@
 ---
-title: "当你在 Intune 中注册设备时，IT 管理员可以看到哪些内容？ | Microsoft Intune"
+title: "当你在 Intune 中注册设备时，IT 管理员可以看到哪些内容？ |Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 1bb9969d4ac8a7a03c599866857b7236408fdcef
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: c3c4fc47e953a562def6e1334502760fc08390ac
 
 
 ---

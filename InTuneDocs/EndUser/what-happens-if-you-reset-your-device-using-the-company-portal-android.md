@@ -1,11 +1,11 @@
 ---
-title: "使用公司门户重置 Android 设备会发生什么情况？ | Microsoft Intune"
+title: "使用公司门户重置 Android 设备会发生什么情况？ |Microsoft Docs"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f531adc042677d12c64e2efb4f8e3401e4b5bd4
-ms.openlocfilehash: ff0dca484b7e7a75dcaff69c86985510ee17277e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a696858380fe15efd4e40db9f2b4c6b5157051bc
 
 
 ---
 
 
-# 使用公司门户重置 Android 设备会发生什么情况？
+# <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>使用公司门户重置 Android 设备会发生什么情况？
 
 使用公司门户重置 Android 设备时，会删除设备上的所有应用、设置和个人数据。 此重置操作会将设备设置回其出厂默认设置。
 
@@ -32,10 +32,10 @@ ms.openlocfilehash: ff0dca484b7e7a75dcaff69c86985510ee17277e
 - 电子邮件、VPN 和 Wi-Fi。
 - IT 管理员强制实施某些设置的功能。
 
-如有疑问，请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如有疑问，请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
