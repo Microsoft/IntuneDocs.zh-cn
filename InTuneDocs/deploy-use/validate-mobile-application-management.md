@@ -21,6 +21,8 @@ ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
 
 # <a name="validating-your-mobile-application-management-setup"></a>验证移动应用管理设置
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题提供有关设置移动应用管理 (MAM) 后检查问题的相关信息。 本指南适用于 Azure 门户中的 MAM 策略。
 
 ### <a name="checking-for-symptoms"></a>检查症状

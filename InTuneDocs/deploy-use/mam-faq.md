@@ -1,5 +1,7 @@
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本文提供了针对 Intune 移动应用程序管理 (MAM) 和 Intune 应用保护的一些常见问题解答。
 
 ## <a name="mam-basics"></a>MAM 基础知识
