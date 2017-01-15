@@ -1,11 +1,11 @@
 ---
-title: "设备注册疑难解答 | Microsoft Intune"
+title: "设备注册疑难解答 | Microsoft Docs"
 description: "有关设备注册问题故障排除的建议。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
-ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: fa03c8c41fe60b469b66e640beb2143679d5ad41
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
--   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/prerequisites-for-enrollment.md)
+-   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/prerequisites-for-enrollment)
 -   [设置 iOS 和 Mac 设备管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [设置 Windows 设备管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -58,7 +58,7 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 2.  在 Intune 管理控制台中的“管理\移动设备管理\注册规则”下，确保设备注册限制设置为 15。
 
-移动设备用户可以在以下 URL 中删除设备： [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)。
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 管理员可以在 Azure Active Directory 门户中删除设备。
 
@@ -86,7 +86,7 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 >
 > 如果对添加到设备注册管理器组的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
-### <a name="company-portal-emporarily-unavailable"></a>公司门户暂时不可用
+### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
 **问题：**用户的设备上收到“公司门户暂时不可用”错误。
 
 **解决方法：**
@@ -317,9 +317,9 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 ### <a name="other-ios-enrollment-errors"></a>其他 iOS 注册错误
-有关 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)。
+有关 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-iOS-or-macOS-device-with-intune)。
 
-## <a name="pc-issues"></a>PC 问题
+## <a name="pc--issues"></a>PC 问题
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
 **问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
@@ -373,6 +373,6 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
