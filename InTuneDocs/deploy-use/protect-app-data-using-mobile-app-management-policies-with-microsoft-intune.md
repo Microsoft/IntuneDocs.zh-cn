@@ -1,9 +1,9 @@
 ---
-title: "使用 MAM 策略保护应用数据 | Microsoft Intune"
+title: "使用 MAM 策略保护应用数据 | Microsoft Docs"
 description: "本主题说明移动应用管理策略如何帮助保护公司数据、防止数据丢失，以及分别保存个人和工作信息。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>通过 Microsoft Intune 使用移动应用管理策略保护应用数据
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>如何保护应用数据
 你的员工使用移动设备进行个人任务和工作任务。 既要确保员工高效工作，又希望防止有意和无意的数据丢失。  此外，还希望能够保护员工通过使用不受管理的设备访问的公司数据。
@@ -130,6 +132,6 @@ MDM 解决方案：
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

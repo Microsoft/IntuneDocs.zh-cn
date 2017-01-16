@@ -1,5 +1,5 @@
 ---
-title: "设置 Windows 10 移动版和 Windows Phone 管理 | Microsoft Intune"
+title: "设置 Windows 10 移动版和 Windows Phone 管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 为 Windows 10 移动版或 Windows Phone 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: staciebarker
@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d58b2d57ec99add7bbc372584f0ecc430830530a
 
 
 ---
 
 
 # <a name="set-up-windows-phone-and-windows-10-mobile-management-with-microsoft-intune"></a>使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 作为 Intune 管理员，可以通过两种方式为 Windows 10 移动版和 Windows Phone 设备启用注册和管理：
 

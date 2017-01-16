@@ -1,5 +1,5 @@
 ---
-title: "部署策略和应用 | Microsoft Intune"
+title: "部署策略和应用 | Microsoft Docs"
 description: "可以启用策略设置并部署将在设备注册到管理后立即应用的应用。"
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>创建策略并发布应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 在开始将应用注册到 Intune 之前，可以启用策略设置以及将会在这些设备进入管理后立即部署的应用。 Intune 策略提供的设置有助于控制移动设备上的安全设置、维护计算机的 Windows 防火墙和 Endpoint Protection 设置以及部署应用程序。 可以配置策略、添加应用并对这些应用进行部署，以便设备在 Intune 中注册后立即接收设置和应用。
 
 策略和应用是特定于平台的。

@@ -1,5 +1,5 @@
 ---
-title: "移动设备注册的先决条件 | Microsoft Intune"
+title: "移动设备注册的先决条件 | Microsoft Docs"
 description: "设置移动设备管理 (MDM) 先决条件并准备好注册不同的操作系统。"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2b7fe00a2f3b289958aa77df5eaffd35de7c8c97
 
 
 ---
 
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune 中移动设备管理的先决条件
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 要使员工能在 Intune 中注册移动设备，需要执行以下步骤。 管理公司拥有的设备需要同样的步骤。
 
 |步骤|详细信息|  

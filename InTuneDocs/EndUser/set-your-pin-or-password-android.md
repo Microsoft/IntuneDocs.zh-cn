@@ -1,27 +1,29 @@
 ---
-title: "设置你的 PIN 或密码 | Microsoft Intune"
+title: "设置 PIN 或密码 | Microsoft Docs"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f08be661936b092cfa100b2454a3f2a3dd24746
-ms.openlocfilehash: c2480f168d5ee06a8419c68d1b90bac62c2879b1
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
 
 
 ---
 
-# 设置你的 PIN 或密码
+# <a name="set-your-pin-or-password"></a>设置你的 PIN 或密码
 
 当使用 Intune 来访问工作或学校的数据时，你的 IT 管理员可能要求你在 Android 设备上设置 PIN 或密码。 可能还会看到消息，要求使 PIN 或密码更长或更复杂，使其更加安全。  
 
@@ -32,10 +34,10 @@ ms.openlocfilehash: c2480f168d5ee06a8419c68d1b90bac62c2879b1
 2.  选择并确认新密码。
 
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

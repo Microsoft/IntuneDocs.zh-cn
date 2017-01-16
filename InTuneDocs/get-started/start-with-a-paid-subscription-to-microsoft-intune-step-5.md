@@ -1,5 +1,5 @@
 ---
-title: "创建用于组织用户和设备的组 | Microsoft Intune"
+title: "创建用于组织用户和设备的组 | Microsoft Docs"
 description: "为你的 Intune 订阅创建用户和组"
 keywords: 
 author: nathbarn
@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 85b2e7c50f4ea1e07bd1474e3902cebcbccc1467
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1587ffbc85470624e53983278b7a6d00b6dc8a51
 
 
 ---
