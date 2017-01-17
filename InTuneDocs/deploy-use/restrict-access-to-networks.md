@@ -1,11 +1,11 @@
 ---
-title: "使用 Cisco ISE 限制对网络的访问 | Microsoft Docs"
+title: "使用 Cisco ISE 保护对网络的访问 | Microsoft Docs"
 description: "将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 Cisco ISE 控制的 Wi-Fi 和 VPN 前已注册 Intune 并且符合策略。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>将 Cisco ISE 与 Microsoft Intune 配合使用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 将 Intune 与 Cisco 身份服务引擎 (ISE) 集成使你能够使用 Intune 设备注册和合规性状态在 ISE 环境中编写网络策略。 你可使用这些策略确保对公司网络的访问权限仅限于由 Intune 托管并符合 Intune 策略的设备。
 
 ## <a name="configuration-steps"></a>配置步骤
@@ -189,6 +192,6 @@ b。 选择锁定图标&gt;“详细信息”。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

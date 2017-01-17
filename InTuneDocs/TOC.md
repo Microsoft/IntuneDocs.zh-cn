@@ -142,20 +142,20 @@
 #### [Windows 和 Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [部署设备合规性策略](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [基于设备合规性限制访问](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [基于设备合规性保护访问](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online 和新 Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange 内部部署和旧版 Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [限制电子邮件访问：示例](deploy-use/restrict-email-access-example-scenarios.md)
+#### [保护电子邮件访问：示例](deploy-use/restrict-email-access-example-scenarios.md)
 ### [只允许策略托管应用访问 O365 服务](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [应用与 MAM CA](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [阻止没有 ADAL 的应用](deploy-use/block-apps-with-no-modern-authentication.md)
-### [限制对网络的访问 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [根据设备、网络和应用程序风险限制访问权限](deploy-use/restrict-access-based-on-device-network-app-risk.md)
+### [保护对网络的访问 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [根据设备、网络和应用程序风险保护访问](deploy-use/restrict-access-based-on-device-network-app-risk.md)
 #### [设置 Lookout 设备威胁防护](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 #### [在 Intune 中启用 Lookout](deploy-use/enable-lookout-mtp-connection-in-intune.md)
 #### [为工作应用部署 Lookout](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
@@ -179,6 +179,7 @@
 #### [在未由 Intune 托管的设备上的 LOB 应用](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [编写应用时使用 SDK](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [MAM 和应用保护常见问题解答](deploy-use/mam-faq.md)
 
 ## 停用应用和数据
 ### [使用完全擦除或选择性擦除](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -216,6 +217,6 @@
 ## [Troubleshoot Lookout Integration](troubleshoot/troubleshooting-lookout-integration.md)（Lookout 集成故障排除）
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

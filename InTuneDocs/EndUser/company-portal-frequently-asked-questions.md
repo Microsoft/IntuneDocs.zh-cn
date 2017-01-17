@@ -5,18 +5,20 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
-ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 # <a name="about-the-company-portal"></a>关于公司门户
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>什么是公司门户，使用它可以执行什么操作？
-Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。 你可通过两种不同方式获取公司门户：
+公司门户可让你访问公司或学校的数据和应用。 你可通过两种不同方式获取公司门户：
 
 - 通过在设备上安装公司门户应用。 通常通过在设备上转到应用商店，可以获取公司门户应用，但 IT 管理员也可为你安装公司门户应用。
 - 通过转到 IT 管理员设置的[公司门户网站](http://portal.manage.microsoft.com)。
@@ -42,7 +44,7 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 > [!div class="op_single_selector"]
 - [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
-- [通过 Intune 使用 iOS 和 macOS 设备](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [通过 Intune 使用 iOS 和 macOS 设备](using-your-ios-or-macOS-device-with-intune.md)
 - [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 - [使用公司门户网站](using-the-intune-company-portal-website.md)
 
@@ -96,6 +98,6 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

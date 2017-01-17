@@ -14,13 +14,15 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ed1b1ba4cb5ee48139e4f4dbf4dab8d04b53368f
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: a822559a55ee495065eca7eef5ec645cf4522e4b
 
 
 ---
 
 # <a name="resources-about-the-end-user-experience-with-microsoft-intune"></a>有关 Microsoft Intune 最终用户体验的资源
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 使用以下链接和信息了解最终用户在 Intune 中执行不同的任务所采用的步骤。
 
@@ -35,7 +37,7 @@ ms.openlocfilehash: ed1b1ba4cb5ee48139e4f4dbf4dab8d04b53368f
 使用以下链接可查看从公司门户网站或应用发送给用户的步骤。 此类链接划分为多个部分：公司门户应用安装和 Intune 注册、用户在其设备上可以执行的常规任务，以及故障排除。
 
 - [通过 Intune 使用 Android 设备](/Intune/EndUser/using-your-android-device-with-intune)
-- [通过 Intune 使用 iOS 或 macOS 设备](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [通过 Intune 使用 iOS 或 macOS 设备](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune)
 - [通过 Intune 使用 Windows 设备](/Intune/EndUser/using-your-windows-device-with-intune)
 - [使用 Intune 公司门户网站](/Intune/EndUser/using-the-intune-company-portal-website)
 
@@ -50,6 +52,6 @@ ms.openlocfilehash: ed1b1ba4cb5ee48139e4f4dbf4dab8d04b53368f
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "使用设备威胁防护限制访问 | Microsoft Docs"
-description: "根据设备、网络和应用程序风险，限制对公司资源的访问。"
+title: "使用设备威胁防护保护访问 | Microsoft Docs"
+description: "根据设备、网络和应用程序风险，保护对公司资源的访问。"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b83d06ecbe6e202bf022444c288e0866b3507c6
-ms.openlocfilehash: 1dd2c4a46857aef1ba273904d58d5eacae99c7bc
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 184002a3a9f4af671a467ce9fe79fe0050bd00df
 
 
 ---
 
-# <a name="restrict-access-to-company-resource-based-on-device-network-and-application-risk"></a>以设备、网络和应用程序威胁为基础，限制对公司资源的访问
+# <a name="protect-access-to-company-resource-based-on-device-network-and-application-risk"></a>根据设备、网络和应用程序风险，保护对公司资源的访问
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可根据 Lookout 给出的风险评估，控制移动设备对公司资源的访问，Lookout 是与 Microsoft Intune 集成的设备威胁防护解决方案。 基于通过 Lookout 服务从设备收集的遥测评估风险，包括：
 - 操作系统漏洞
 - 安装的恶意应用
@@ -71,7 +74,7 @@ Intune 中的合规性策略包括用于 Lookout 移动威胁防护的新规则�
 ![显示条件访问策略在解除威胁后将设备确定为合规时授予访问权限的图示](../media/mtp/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
-检测中间人攻击等网络威胁，并基于设备风险限制 WiFi 网络访问权限。
+检测中间人攻击等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
 
 **阻止通过 WiFi 的网络访问：**
 ![基于网络威胁阻止 WiFi 访问的条件访问图示](../media/mtp/network-wifi-blocked.png)
@@ -102,6 +105,6 @@ Intune 中的合规性策略包括用于 Lookout 移动威胁防护的新规则�
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "限制对电子邮件和 Office 365 服务的访问 | Microsoft Docs"
+title: "保护对电子邮件和 Office 365 服务的访问 | Microsoft Docs"
 description: "本主题介绍如何使用条件性访问只允许合规设备在 SharePoint Online 和其他服务上访问公司电子邮件和公司数据。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2e342bef07ff28bf2df027240471f74dfe373f83
-ms.openlocfilehash: a55087b96855645ef3f6e161fe85f6244c30120d
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: e80949d6207c54b9ff576bb63819c8833965a39a
 
 
 ---
 
-# <a name="restrict-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>使用 Microsoft Intune 限制对电子邮件、Office 365 和其他服务的访问
-通过使用企业移动性 + 安全性 (EMS) 条件访问，可限制访问公司电子邮件、Office 365 服务（如 **Exchange On-premises**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online**、**Skype for Business Online**）以及其他服务。 该功能可确保只有符合在 Intune 管理控制台或 Azure 经典门户中设置的条件性访问规则的设备，才能访问公司电子邮件和 Office 365 服务。
+# <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>使用 Microsoft Intune 保护对电子邮件、Office 365 和其他服务的访问
+通过使用企业移动性 + 安全性 (EMS) 条件访问，可保护对公司电子邮件、Office 365 服务（如 **Exchange 内部部署**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online**、**Skype for Business Online**）以及其他服务的访问。 该功能可确保只有符合在 Intune 管理控制台或 Azure 经典门户中设置的条件性访问规则的设备，才能访问公司电子邮件和 Office 365 服务。
 ## <a name="how-does-conditional-access-work"></a>条件性访问如何工作？
 可使用合规性策略设置评估设备的合规性。 条件性访问策略通过该评估来限制或允许对特定服务的访问。 结合使用条件性访问策略与设备合规性策略时，仅允许合规的设备访问该服务。 将合规性策略和条件访问策略部署到用户。 检查用户用于访问服务的任何设备是否符合策略。
 
@@ -54,7 +54,7 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
 
 ### <a name="conditional-access-policy"></a>条件性访问策略
 
-可以基于以下内容设置条件性访问策略以限制访问：
+可以基于以下内容设置条件性访问策略以保护访问：
 - 设备合规性状态。
 - 在设备上运行的平台。
 - 用于访问服务的应用类型。
@@ -79,6 +79,6 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

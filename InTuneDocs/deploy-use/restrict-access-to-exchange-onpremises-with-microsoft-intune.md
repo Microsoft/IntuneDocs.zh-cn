@@ -1,11 +1,11 @@
 ---
-title: "限制对 Exchange 内部部署的电子邮件访问 | Microsoft Docs"
+title: "保护对 Exchange 内部部署的电子邮件访问 | Microsoft Docs"
 description: "使用条件访问保护和控制对本地 Exchange 的公司电子邮件的访问。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 10dc9c06985c85c938822d38b0428b500f915923
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>使用 Intune 限制对 Exchange 内部部署和旧版 Exchange Online Dedicated 的电子邮件访问
+# <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>使用 Intune 保护对 Exchange 内部部署和旧版 Exchange Online Dedicated 的电子邮件访问
 
 > [!NOTE]
 > 如果你具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
 
 
 若要控制对 Exchange 内部部署或旧版 Exchange Online Dedicated 环境的电子邮件访问，可通过 Microsoft Intune 配置对 Exchange 内部部署的条件性访问。
-若要了解有关条件性访问如何工作的详细信息，请阅读文章[限制对电子邮件和 O365 服务的访问]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
+若要了解有关条件性访问如何工作的详细信息，请阅读文章[保护对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
 
 在可配置条件性访问**之前**，请先验证以下内容：
 
@@ -125,15 +125,15 @@ ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
 
 -   如果用户从 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 取消注册，可能需要 1-3 小时设备才会被阻止。
 
-**若要查看如何配置条件性访问策略以限制设备访问的示例方案，请参阅[限制电子邮件访问的示例方案](restrict-email-access-example-scenarios.md)。**
+**若要查看如何配置条件性访问策略以保护设备访问的示例方案，请参阅[保护电子邮件访问的示例方案](restrict-email-access-example-scenarios.md)。**
 
 ## <a name="next-steps"></a>后续步骤
--   [限制对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [保护对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [限制对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [保护对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

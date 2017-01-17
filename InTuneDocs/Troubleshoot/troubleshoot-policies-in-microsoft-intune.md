@@ -1,28 +1,25 @@
----
-title: "策略疑难解答 | Microsoft Docs"
-description: "解决策略配置问题。"
-keywords: 
-author: robstackmsft
-ms.author: robstack
-manager: angrobe
-ms.date: 12/27/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: tscott
-ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 2a620d1e499e286365e5913be0ceb3d1efe3b846
+--
+# <a name="required-metadata"></a>必需元数据
 
+title: 策略疑难解答 | Microsoft Docs description: 解决策略配置问题。
+keywords: author: robstackmsft ms.author: robstack manager: angrobe ms.date: 01/04/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
+
+# <a name="optional-metadata"></a>可选元数据
+
+#<a name="robots"></a>ROBOTS:
+#<a name="audience"></a>受众：
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: tscott ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
+#<a name="mscustom"></a>ms.custom:
 
 ---
 
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>排查 Microsoft Intune 中的策略问题
 
-如果你在使用 Intune 部署和管理策略时出现问题，请从这里开始。 本主题包含你可能会遇到的一些常见问题以及解决方案。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+如果你在部署和管理 Intune 策略时出现问题，请从这里开始。 本主题包含你可能会遇到的一些常见问题以及解决方案。
 
 ## <a name="general-issues"></a>一般问题
 
@@ -98,7 +95,6 @@ Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其�
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

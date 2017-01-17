@@ -1,11 +1,11 @@
 ---
-title: "限制对 Exchange Online 的电子邮件访问 | Microsoft Docs"
+title: "保护对 Exchange Online 的电子邮件访问 | Microsoft Docs"
 description: "使用条件访问保护和控制对 Exchange Online 的公司电子邮件的访问。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 
 ---
 
 
-# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>使用 Intune 限制对 Exchange Online 和新版 Exchange Online Dedicated 的电子邮件访问
+# <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>使用 Intune 保护对 Exchange Online 和新版 Exchange Online Dedicated 的电子邮件访问
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 >如果具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
 
-若要控制对 Exchange Online 或新版 Exchange Online Dedicated 环境的电子邮件访问，可使用 Microsoft Intune 配置 Exchange Online 的条件性访问。 若要了解有关条件访问如何工作的详细信息，请阅读文章[限制对电子邮件、O365 服务和其它服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
+若要控制对 Exchange Online 或新版 Exchange Online Dedicated 环境的电子邮件访问，可使用 Microsoft Intune 配置 Exchange Online 的条件性访问。 若要深入了解条件访问的工作原理，请阅读[保护对电子邮件、O365 服务和其他服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
 
 在你可以配置条件性访问**之前**，必须：
@@ -64,7 +66,7 @@ ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
 ![图显示了确定是允许还是阻止设备访问的决策点](../media/ConditionalAccess8-1.png)
 
 ## <a name="support-for-mobile-devices"></a>对移动设备的支持
-可从 **Outlook** 和其他**使用新式验证的应用**限制对 Exchange Online 电子邮件的访问。 支持以下设备：
+可从 **Outlook** 和其他**使用新式验证的应用**保护对 Exchange Online 电子邮件的访问。 支持以下设备：
 
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本以及 Android for Work
 - iOS 8.0 及更高版本
@@ -77,7 +79,7 @@ ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
 -   基于 ADAL 的身份验证使 Office 客户端能够实现基于浏览器的身份验证（也称为被动身份验证）。 为了进行身份验证，将用户导向登录网页。
 -   此新的登录方法实现了诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。 有关更多详细信息，请参阅[新式验证的工作原理](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)。 设置用于阻止“非新式验证”协议的 ADFS 声明规则。 方案 3 中提供了详细的说明：[阻止除了基于浏览器的应用程序之外的其他所有应用程序访问 O365](https://technet.microsoft.com/library/dn592182.aspx)。
 
-当用户通过 **iOS** 和 **Android** 设备上的浏览器进行访问时，可限制对 Exchange Online 上的 **Outlook Web Access (OWA)** 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
+用户通过 **iOS** 和 **Android** 设备上的浏览器进行访问时，可保护对 Exchange Online 上的 **Outlook Web Access (OWA)** 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
 
 * Safari (iOS)
 * Chrome (Android)
@@ -88,7 +90,7 @@ ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
 **适用于 iOS 和 Android 的 OWA 应用可修改为不使用新式验证且不受支持。必须通过 ADFS 声明规则阻止来自 OWA 应用的访问。**
 
 
-在以下平台上，你可以从内置的“Exchange ActiveSync 电子邮件客户端”限制对 Exchange 电子邮件的访问：
+在以下平台上，你可以从内置的“Exchange ActiveSync 电子邮件客户端”保护对 Exchange 电子邮件的访问：
 
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本
 
@@ -254,7 +256,7 @@ ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
 
 -   如果用户取消对其设备的注册，将会在大约六小时后阻止电子邮件。
 
-**若要查看如何配置条件性访问策略以限制设备访问的示例方案，请参阅**限制电子邮件访问的示例方案[。](restrict-email-access-example-scenarios.md)。
+**若要查看如何配置条件性访问策略以保护设备访问的示例方案**，请参阅[保护电子邮件访问的示例方案](restrict-email-access-example-scenarios.md)。
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>监视遵从性和条件性访问策略
 
@@ -264,12 +266,12 @@ ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
 ![Intune 仪表板的屏幕截图显示了被阻止访问 Exchange 的设备的数目](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>后续步骤
-- [限制对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+- [保护对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-- [限制对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+- [保护对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
