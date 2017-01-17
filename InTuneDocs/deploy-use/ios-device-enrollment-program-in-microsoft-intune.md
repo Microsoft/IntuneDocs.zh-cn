@@ -1,5 +1,5 @@
 ---
-title: "适用于 iOS 设备的 Apple DEP 管理 | Microsoft Intune"
+title: "适用于 iOS 设备的 Apple DEP 管理 | Microsoft Docs"
 description: "部署注册配置文件，该配置文件以“无线”方式注册通过 iOS 设备注册计划 (DEP) 购买的 iOS 设备以管理 Apple 设备。"
 keywords: 
 author: staciebarker
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f8f5c1e5d69cf91413ebc4a71f1f9f8f8e1c8231
 
 
 ---
@@ -116,6 +116,6 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

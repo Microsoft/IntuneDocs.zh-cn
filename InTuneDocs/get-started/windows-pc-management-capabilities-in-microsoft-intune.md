@@ -1,12 +1,12 @@
 ---
-title: "Intune 电脑软件客户端功能 | Microsoft Intune"
+title: "Intune 电脑软件客户端功能 | Microsoft Docs"
 description: "了解使用 Intune 软件客户端管理 Windows 电脑时的 Intune 功能。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 36a20feed1756ea8dde2230db81099b6c5f8c7f6
 
 
 ---
 
 # <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>使用 Intune 软件客户端时的 Windows 电脑管理功能
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 在大多数情况下，你将向 Microsoft Intune 注册设备，这样可提供更多的功能。 但是，你也可以通过使用 Intune 软件客户端来管理电脑，该客户端提供以下功能：
 
 -   **[软件更新管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - 可使电脑保持最新版本，并决定何时进行更新。
@@ -75,6 +78,6 @@ Intune 可以管理运行以下 Windows 版本（32 位和 64 位）的电脑：
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

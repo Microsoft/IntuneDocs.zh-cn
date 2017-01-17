@@ -1,5 +1,5 @@
 ---
-title: "使用远程擦除来帮助保护数据 |Microsoft Intune"
+title: "使用远程擦除来帮助保护数据 |Microsoft Docs"
 description: "Intune 提供选择性擦除和完全擦除功能，以删除敏感公司数据和删除对许多公司资源的访问权限。"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>使用 Microsoft Intune 的完全擦除或选择性擦除保护数据
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可以从不再需要的、已重新调整用途的或已丢失的 Intune 托管设备中擦除应用和数据。 若要执行此操作，Intune 将提供选择性擦除和完全擦除功能。 对于在 Intune 中注册的私人所有设备，用户还可从 Intune 公司门户应用中发出远程设备擦除命令。
 
   > [!NOTE]

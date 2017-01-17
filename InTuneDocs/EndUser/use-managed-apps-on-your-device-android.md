@@ -1,28 +1,30 @@
 ---
-title: "在 Android 设备上使用托管应用 | Microsoft Intune"
+title: "在 Android 设备上使用托管应用 | Microsoft Docs"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ca37b4bf393d03e61bed93fa8e7d83efe3922412
 
 
 ---
 
 
-# 在 Android 设备上使用托管应用
+# <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 
 IT 管理员可对托管应用进行配置，以帮助保护在该应用中可访问的公司数据。 在 Android 设备上的托管应用中访问公司数据时，可能会注意到此应用与预期的运作方式有些许不同。 例如，你可能无法复制和粘贴受保护的公司数据，或者你可能无法将该数据保存到特定位置。
 
@@ -32,14 +34,14 @@ IT 管理员可对托管应用进行配置，以帮助保护在该应用中可�
 
 ![open-managed-apps-message](./media/managed-apps-message.png)
 
-## 如何获取托管应用？
+## <a name="how-do-i-get-managed-apps"></a>如何获取托管应用？
 你可通过以下几种不同的方式获取托管应用：
 
 -   如果已在 Microsoft Intune 中注册设备，则你可以从公司门户应用或公司门户网站安装应用，或者可由 IT 管理员将其安装到你的设备。 若要了解相关注册信息，请参阅[在 Intune 中注册设备](enroll-your-device-in-Intune-android.md)。
 
 -   从 Play Store 安装应用，然后使用由 Intune 管理的公司用户帐户登录该应用。
 
-## IT 管理员可以管理应用中的哪些内容？
+## <a name="what-can-my-it-admin-manage-in-an-app"></a>IT 管理员可以管理应用中的哪些内容？
 以下是 IT 管理员可在应用中管理的一些选项示例，它们可影响用户在其设备上与公司数据的交互：
 
 -   对特定网站的访问
@@ -72,10 +74,10 @@ IT 部门可能管理的常见应用程序有：
 
 -   Microsoft Word、Excel 和 PowerPoint
 
-有关设备上的托管应用的详细信息，请联系你的 IT 部门。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+有关设备上的托管应用的详细信息，请联系你的 IT 部门。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

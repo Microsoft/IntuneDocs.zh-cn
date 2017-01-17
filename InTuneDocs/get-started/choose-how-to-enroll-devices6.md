@@ -1,12 +1,12 @@
 ---
-title: "选择如何注册移动设备 |Microsoft Intune"
+title: "选择如何注册移动设备 |Microsoft Docs"
 description: "决定如何通过回答几个简单的问题在 Intune 中注册移动设备"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/14/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,12 +14,14 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
-ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: bad5e7c342e481401db1d19388a8c87972fe69b8
 
 
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>选择如何注册移动设备
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 你对这一系列问题的回答将帮助确定你管理的设备的最佳注册方法。
 
@@ -45,6 +47,6 @@ ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

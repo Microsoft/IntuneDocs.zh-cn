@@ -1,11 +1,11 @@
 ---
-title: "收集设备日志| Microsoft Intune"
+title: "收集设备日志| Microsoft Docs"
 description: "了解如何收集托管设备中的日志。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c05b4e16f7b0a87215a0cd20f7d559cd8497296
-ms.openlocfilehash: 0f175b1eb2d80a68c8b7864d21f5a9e585de458b
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: 7009cf7626008124e4c8a71198e21ae6def93581
 
 
 ---
 
 # <a name="device-logs"></a>设备日志
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 在进行故障诊断工作的过程中，可能希望从用户设备中收集日志。 此处介绍了收集这些日志的说明。 通常需要访问设备获取日志，也可请求用户收集日志并发送。
 
@@ -57,6 +59,6 @@ Android 日志位于 *<Android Device>\Phone\Android\data\com.microsoft.windowsi
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

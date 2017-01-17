@@ -1,5 +1,5 @@
 ---
-title: "保护未注册设备上的 LOB 应用 | Microsoft Intune"
+title: "保护未注册的设备上的 LOB 应用 | Microsoft Docs"
 description: "本主题介绍如何准备自定义的业务线应用，以便应用可帮助防止数据丢失的移动应用管理策略。"
 keywords: 
 author: mtillman
@@ -14,13 +14,15 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
 
 
 ---
 
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保护未在 Microsoft Intune 上注册的设备上的业务线应用和数据
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 移动应用管理 (MAM) 策略通过限制可能会泄漏公司数据的操作以及实施数据访问要求（如应用 PIN）来保护公司数据。 若要将 MAM 策略应用于 iOS 和/或 Android 业务线应用，首先必须使用 Microsoft Intune 应用包装工具包装此应用。 应用包装是一个将管理层应用于移动应用的过程，不要求对基础应用程序进行任何更改。 一旦应用包装完成，就可向其应用 MAM 策略并将其分发给最终用户。  
 

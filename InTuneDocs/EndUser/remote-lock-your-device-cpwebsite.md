@@ -1,9 +1,9 @@
 ---
-title: "从公司门户网站远程锁定设备 | Microsoft Intune"
+title: "从公司门户网站远程锁定设备 | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 04c7ae7df65a0873e794420c1880aa901aa230b6
 
 
 ---
 
 
-# 从公司门户网站远程锁定设备
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>从公司门户网站远程锁定设备
 
 如果设备已丢失或被盗，则可以通过使用[公司门户网站](http://portal.manage.microsoft.com)上的“远程锁定”选项锁定该设备。 “远程锁定”适用于以下几种设备：
 
@@ -59,11 +59,11 @@ Windows Phone 8.1 | 仅在手机设置了密码时支持
 
     如果重试不起作用，请联系你的 IT 管理员以获取帮助。 如果使用“远程锁定”后找到了设备并希望对其进行解锁，则只需输入你的密码。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "限制对 SharePoint Online 的访问 | Microsoft Intune"
+title: "限制对 SharePoint Online 的访问 | Microsoft Docs"
 description: "使用条件访问保护和控制对 SharePoint Online 上公司数据的访问。"
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6b900f2bf41ea84088f8453f59b71136e013a884
 
 
 ---
@@ -45,7 +45,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 -   在 Azure Active Directory 中进行**注册**（向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册时会自动发生此情况）。
 
 
--   **符合**任何已部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 符合性策略。
+-   **符合**任何已部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
 
 根据指定的条件，设备状态存储在可授予或阻止对文件的访问权限的 Azure Active Directory 中。
 
@@ -180,7 +180,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 
 不需要部署条件访问策略—它会立即生效。
 
-### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>步骤 4：监视符合性和条件访问策略
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>步骤 4：监视合规性和条件访问策略
 在“组”工作区中，可以查看设备的状态。
 
 选择任一移动设备组。 然后在“设备” 选项卡上，选择以下“筛选器”之一：

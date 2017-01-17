@@ -1,9 +1,9 @@
 ---
-title: "从公司门户网站重置设备密码 | Microsoft Intune"
+title: "从公司门户网站重置设备密码 | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2aea845bc00c153f070e04abb67582a5d5a726ca
-ms.openlocfilehash: 47b36616f7a8ee23d4d47b41a1db2c41c185c6f5
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 975759db98854c8276999592d6ecdba195438681
 
 
 ---
 
 
-# 从公司门户网站重置设备密码
+# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>从公司门户网站重置设备密码
 
 如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](http://portal.manage.microsoft.com)进行重置。 可使用公司门户网站管理在 Intune 中注册的计算机和设备，还可以用于执行大多数使用公司门户应用时执行的相同任务。
 
@@ -59,10 +59,10 @@ ms.openlocfilehash: 47b36616f7a8ee23d4d47b41a1db2c41c185c6f5
 
     若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "在 Intune 中注册 Windows Phone 8.1 设备 | Microsoft Intune"
+title: "在 Intune 中注册 Windows Phone 8.1 设备 | Microsoft Docs"
 description: "介绍如何在 Intune 中注册 Windows Phone 8.1 设备"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: 756dc97161c560bd44ab003db64584c77661b625
 
 
 ---
@@ -87,6 +87,6 @@ ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

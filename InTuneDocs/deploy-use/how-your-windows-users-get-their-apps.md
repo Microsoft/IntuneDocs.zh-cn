@@ -1,5 +1,5 @@
 ---
-title: "Windows 用户如何获取其应用 | Microsoft Intune"
+title: "Windows 用户如何获取其应用 | Microsoft Docs"
 description: "使 Windows 应用可供用户使用的方法"
 keywords: 
 author: barlanmsft
@@ -14,14 +14,16 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e9c6add00356cbea0e86a1a5597813ba9b2811c4
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6e295c5df6ec52d3c106fe934d05f10dbc2a3e1f
 
 
 ---
 
 
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 用户如何获取其应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 使用此信息可了解用户如何以及在何处获取你通过 Microsoft Intune 分发的应用。
 

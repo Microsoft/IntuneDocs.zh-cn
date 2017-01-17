@@ -1,11 +1,11 @@
 ---
-title: "停用设备 | Microsoft Intune"
+title: "停用设备 | Microsoft Docs"
 description: "Intune 支持选择性擦除和完全擦除，通过删除其策略和公司门户从 Intune 管理中删除该设备。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>从 Intune 管理停用设备
 
-无论设备是公司拥有的还是个人的，最终都需要从 Intune 管理中删除一个托管设备。 出于多种原因，可能需要停用设备：
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+无论设备是公司拥有的还是个人的，最终都需要从 Intune 管理中删除一个托管设备。 
+
+没有你的干预，即使设备已有一段时间未连接到 Intune 服务，设备也永远不会从 Intune 中删除。 
+
+出于多种原因，可能需要停用设备：
 
 -   用户以计划方式离开公司（“托管式”离开）
 -   用户突然离开（被解雇、辞职等）。
@@ -70,6 +76,6 @@ ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

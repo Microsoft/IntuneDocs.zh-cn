@@ -1,5 +1,5 @@
 ---
-title: "通过 Intune 使用 Windows 设备 | Microsoft Intune"
+title: "通过 Intune 使用 Windows 设备 | Microsoft Docs"
 description: "指向在 Intune 中注册设备时，用户可以在其 Windows 设备上执行的任务链接列表"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: a3433e1976063513ee836189738ff02d85d40044
 
 
 ---
@@ -52,15 +54,15 @@ ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
 
 此部分中的信息将帮助解决用户在 Intune 中注册 Windows 设备时可能发生的问题。
 
-- [设备没有必需的最低操作系统版本](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
-- [设备不符合最高操作系统版本](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-- [设备未启用 BitLocker](device-doesnt-have-bitlocker-enabled-windows.md)
-- [设备未启用反恶意软件](device-doesnt-have-antimalware-software-enabled-windows.md)
-- [设备未启用安全启动](device-doesnt-have-secure-boot-enabled-windows.md)
-- [设备未启用代码完整性](device-doesnt-have-code-integrity-enabled-windows.md)
+- [设备没有必需的最低操作系统版本](you-need-to-update-your-windows-device.md)
+- [设备不符合最高操作系统版本](your-windows-version-isnt-yet-supported.md)
+- [设备未启用 BitLocker](you-need-to-enable-windows-encryption.md)
+- [设备未启用反恶意软件](your-device-needs-antimalware-software.md)
+- [设备未启用安全启动](you-need-to-enable-secure-boot-windows.md)
+- [设备未启用代码完整性](you-need-to-enable-code-integrity.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

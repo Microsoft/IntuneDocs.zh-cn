@@ -1,5 +1,5 @@
 ---
-title: "Lookout for Work 在 Android 设备上发现威胁，请解除该威胁 | Microsoft Intune"
+title: "Lookout for Work 在 Android 设备上发现威胁，请解除该威胁 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: aae9d4666ab356bb6d3c5e929d311c53ea065485
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b6f8cf9eda8983b8bfe4edd8fca6e6872e0c8103
 
 
 ---
@@ -43,12 +45,12 @@ Lookout for Work 在设备上发现潜在威胁，必须解决该问题才能重
 
 卸载该应用后，便可以立即重新访问公司电子邮件和数据。 如果忽略卸载该应用的请求，你将无法对电子邮件和数据进行访问，直到卸载该应用。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

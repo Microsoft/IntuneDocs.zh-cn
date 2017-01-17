@@ -1,11 +1,11 @@
 ---
-title: "创建策略并向用户发布应用 | Microsoft Intune"
+title: "创建策略并向用户发布应用 | Microsoft Docs"
 description: "当你注册 Intune 的免费 30 天评估时，如何创建策略并发布应用"
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>创建策略并向评估用户发布应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 策略提供的设置有助于控制移动设备上的安全设置、维护计算机的 Windows 防火墙和 Endpoint Protection 设置以及部署应用程序。 如果你打算在评估之后对你配置用于生产用的设备使用 Intune，请遵循[使用 Microsoft Intune 策略管理设备上的设置和功能](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)和[使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)中的说明，这绝对必要。
 
 可以使用 Intune 执行两种类型的应用安装。 第一种是“必需安装”，它会自动将该应用部署到托管的设备。 另一个是“可用安装”，它将应用或应用的链接部署到 Intune 公司门户，以便用户可以选择将其安装到计算机上或移动设备上。
@@ -102,6 +105,6 @@ Intune 策略提供的设置有助于控制移动设备上的安全设置、维�
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

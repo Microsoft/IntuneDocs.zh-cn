@@ -1,5 +1,5 @@
 ---
-title: "擦除托管公司应用数据 | Microsoft Intune"
+title: "擦除托管公司应用数据 | Microsoft Docs"
 description: "了解如何从设备中有选择地远程删除公司数据。"
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>使用 Microsoft Intune 擦除托管司应用数据
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 当设备丢失或被盗，或如果员工离开公司，你想要确保从设备中删除了公司应用数据。 但是，你可能不想删除设备上的个人数据，尤其是如果该设备为员工所有。
 
 若要选择性地删除公司应用数据，请按照本主题中的步骤创建擦除请求。 请求完成之后，应用下次在设备上运行时，会从应用中删除公司数据。

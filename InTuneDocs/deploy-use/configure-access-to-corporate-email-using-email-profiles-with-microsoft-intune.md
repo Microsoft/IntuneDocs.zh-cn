@@ -1,5 +1,5 @@
 ---
-title: "使用电子邮件配置文件访问公司电子邮件 | Microsoft Intune"
+title: "使用电子邮件配置文件访问公司电子邮件 | Microsoft Docs"
 description: "电子邮件配置文件设置可用于配置移动设备上特定电子邮件客户端的电子邮件访问设置。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
-ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 
 
 ---
 
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -138,6 +140,6 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

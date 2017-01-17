@@ -1,5 +1,5 @@
 ---
-title: "结合使用应用和 MAM CA | Microsoft Intune"
+title: "结合使用应用和 MAM CA | Microsoft Docs"
 description: "了解 MAM CA 如何帮助控制有权访问 O365 服务的应用的概念。"
 keywords: 
 author: andredm7
@@ -14,12 +14,15 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 317d101c34854fdf4913adcf53bdef614599deb7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 22746475bf50f8e4775c81e6833428c7f2ef9eba
 
 
 ---
 # <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>将应用与 MAM CA 结合使用时的预期行为
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 MAM CA 会借助必须在设备上存在的代理应用来验证已批准的应用程序的标识：
 *  在 **iOS** 上，**Azure Authenticator 应用**是代理应用。
 * 在 **Android** 上，**Intune 公司门户应用**是代理应用。 

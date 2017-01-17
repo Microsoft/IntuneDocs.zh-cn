@@ -1,11 +1,11 @@
 ---
-title: "Windows 的多重身份验证 | Microsoft Intune"
+title: "Windows 的多重身份验证 | Microsoft Docs"
 description: "Intune 集成多重身份验证 (MFA) 来帮助你保护公司资源。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1bfd17f9fcc73049254bc77351eae48da874fb4c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: cc60ffb2cd7a1d0cad141712ba7e2341954b1f02
 
 
 ---
 
 # <a name="protect-windows-devices-with-multi-factor-authentication"></a>Protect Windows devices with multi-factor authentication
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 集成多重身份验证 (MFA) 来帮助你保护公司资源。 除用户名和密码外，MFA 需要身份验证因素，例如文本身份验证。 Intune 支持在注册 Windows 8.1 或更高版本、Windows Phone 8.1 或 Windows 10 桌面版和移动设备期间使用 MFA。
+
+>[!NOTE]
+>
+>可以在 ADFS 服务器上基于每个用户或每个组要求进行 MFA。  
+
 
 ## <a name="on-premises-infrastructure-requirements-for-adfs-mfa"></a>ADFS MFA 的本地基础结构要求
 若要设置 Multi-Factor Authentication，你需要：
@@ -40,6 +48,7 @@ Microsoft Intune 集成多重身份验证 (MFA) 来帮助你保护公司资源�
 如果你的组织具有的本地 IT 基础结构，其中包括 Active Directory 联合身份验证服务 (ADFS) 的 Active Directory 域，则可以在联合服务器上设置 MFA，然后启用 MFA 进行 Intune 注册。 通过在 Intune 上配置 MFA，用户可在注册期间进行一次身份验证，然后便可以使用公司资源而无需每次重复 MFA 过程。
 
 >[!NOTE]
+>
 >可以在 ADFS 服务器上基于每个用户或每个组要求进行 MFA。  
 
 #### <a name="mfa-without-intune"></a>未使用 Intune 的 MFA
@@ -60,6 +69,6 @@ Microsoft Intune 集成多重身份验证 (MFA) 来帮助你保护公司资源�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

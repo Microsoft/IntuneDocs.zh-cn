@@ -1,9 +1,9 @@
 ---
-title: "用于 MAM 策略的 Azure 门户 | Microsoft Intune"
+title: "用于 MAM 策略的 Azure 门户 | Microsoft Docs"
 description: "通过使用 Azure 门户创建移动应用管理策略。 此处创建的策略可以应用于在 Intune 中注册或未注册的设备。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/22/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b377d527621693f4c231f6f8b16cab277853cdf7
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
 
 
 ---
 
 # <a name="azure-portal-for-microsoft-intune-mam-policies"></a>用于 Microsoft Intune MAM 策略的 Azure 门户
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="use-the-azure-portal"></a>使用 Azure 门户
 Azure 门户可用于创建和管理移动应用管理 (MAM) 策略。
@@ -67,6 +69,6 @@ Azure 门户支持为以下应用创建 MAM 策略：
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

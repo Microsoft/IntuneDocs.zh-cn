@@ -1,9 +1,9 @@
 ---
-title: "使用 Microsoft Intune 监视 MAM 策略| Microsoft Intune"
+title: "使用 Microsoft Intune 监视 MAM 策略 | Microsoft Docs"
 description: "查看有多少用户拥有策略，并深入了解获取详细信息。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 2a18ad7226c6fc6de0277f1f20443ea64dc8b918
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>使用 Microsoft Intune 监视移动应用管理策略
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 设置移动应用管理 (MAM) 策略并将其应用到用户后，可在 [Azure 门户](https://portal.azure.com)上监视合规性状态。 Azure 门户包括有关受策略影响的用户、合规性状态和任何用户可能遭遇的问题的信息。
 ## <a name="summary-view"></a>摘要视图
 可在“Intune 移动应用程序管理”边栏选项卡上查看合规性状态的摘要：
@@ -80,6 +83,6 @@ ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

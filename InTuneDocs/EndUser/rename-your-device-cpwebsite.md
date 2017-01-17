@@ -1,9 +1,9 @@
 ---
-title: "从公司门户网站重命名设备 | Microsoft Intune"
+title: "从公司门户网站重命名设备 | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 905d29289f621bcfd4c7faccb119adcf5ce9ef63
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: c539af3b4ac901029faeaa4947491eec8ff0c378
 
 
 ---
 
 
-# 从公司门户网站重命名设备
+# <a name="rename-your-device-from-the-company-portal-website"></a>从公司门户网站重命名设备
 
 如果决定重命名设备，则可以从[公司门户网站](http://portal.manage.microsoft.com)远程执行此操作。 公司门户网站是一个网页，可以用于管理计算机和在 Intune 中注册的设备，还可以在使用公司门户应用时用它来处理你可以执行的大多数相同任务。
 
@@ -36,10 +36,10 @@ ms.openlocfilehash: 905d29289f621bcfd4c7faccb119adcf5ce9ef63
 
 3.  在显示当前设备名称的框中，键入设备的新名称，然后点击“重命名”按钮。 你的设备现在将显示新的名称。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "管理 iOS 应用之间的数据传输 | Microsoft Intune"
+title: "管理 iOS 应用之间的数据传输 | Microsoft Docs"
 description: "使用本主题以了解如何使用功能和移动应用管理策略中的 iOS Open 来管理应用之间的数据传输。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 94163d5f303b293da2301b81a5c96f6c9c2e5e5d
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: fdbe65ff13b9b16a125ee37f9dd4614c727f2886
 
 
 ---
 
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>使用 Microsoft Intune 管理 iOS 应用之间的数据传输
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="manage-ios-apps"></a>管理 iOS 应用
 保护公司数据包括确保文件传输仅限于在你所管理的应用中进行。  可以通过以下方式管理 iOS 应用：
 
@@ -76,6 +79,6 @@ ms.openlocfilehash: 94163d5f303b293da2301b81a5c96f6c9c2e5e5d
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

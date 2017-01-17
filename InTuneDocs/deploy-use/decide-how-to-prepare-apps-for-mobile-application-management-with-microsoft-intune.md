@@ -1,11 +1,11 @@
 ---
-title: "针对移动应用管理准备应用 | Microsoft Intune"
+title: "为移动应用程序管理准备应用 | Microsoft Docs"
 description: "本主题中的信息可帮助决定何时应该使用应用包装工具和应用 SDK 来启用自定义业务线应用，以使用移动应用管理策略。"
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 8ee3f539e619d4646013db4982ea96223eea5896
 
 
 ---
 
 # <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>决定如何使用 Microsoft Intune 为移动应用程序管理准备应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可以使用 Intune 应用包装工具或 Intune App SDK 启用应用以使用移动应用程序管理 (MAM) 策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune 应用包装工具
@@ -106,6 +109,6 @@ iOS 应用包装工具[](prepare-ios-apps-for-mobile-application-management-with
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

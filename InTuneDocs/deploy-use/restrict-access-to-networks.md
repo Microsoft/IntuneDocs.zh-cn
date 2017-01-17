@@ -1,5 +1,5 @@
 ---
-title: "使用 Cisco ISE 限制对网络的访问 | Microsoft Intune"
+title: "使用 Cisco ISE 限制对网络的访问 | Microsoft Docs"
 description: "将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 Cisco ISE 控制的 Wi-Fi 和 VPN 前已注册 Intune 并且符合策略。"
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
 
 
 ---
@@ -64,7 +64,7 @@ b。 选择锁定图标&gt;“详细信息”。
 > 请检查该证书的到期日期，因为当它过期时，将必须导出该证书并导入新证书。
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>从 ISE 中获取自签名证书 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>从 ISE 中获取自签名证书 
 
 1.  在 ISE 控制台中，转到“管理” > “证书” > “系统证书” > “生成自签名证书”。  
 2.       导出自签名证书。
@@ -100,7 +100,7 @@ b。 选择锁定图标&gt;“详细信息”。
 |Oauth 2.0 令牌终结点|令牌颁发 URL|
 |使用你的客户端 ID 更新你的代码|客户端 ID|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步骤 4：将自签名证书从 ISE 上传到在 Azure AD 中创建的 ISE 应用
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步骤 4：将自签名证书从 ISE 上传到在 Azure AD 中创建的 ISE 应用
 1.     获取 .cer X509 公用证书文件中的 base64 编码证书值和指纹。 此示例使用 PowerShell：
    
       
@@ -189,6 +189,6 @@ b。 选择锁定图标&gt;“详细信息”。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

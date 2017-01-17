@@ -1,5 +1,5 @@
 ---
-title: "注册设备 | Microsoft Intune"
+title: "注册设备 | Microsoft Docs"
 description: "移动设备管理 (MDM) 使用注册将设备纳入管理并允许访问资源。"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
 
 
 ---
 
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可注册包括 Windows 电脑在内的设备，使用 Microsoft Intune 启用移动设备管理 (MDM)。 本主题介绍了在 Intune 管理中注册移动设备的不同方法。 注册设备的方式取决于设备类型、所有权和所需管理级别。 “自带设备办公”(BYOD) 注册允许用户注册其个人电话、平板电脑或电脑。 “企业拥有的设备” (COD) 注册允许用户为设备启用远程擦除、共享设备、或用户关联等管理方案。
 
 若使用 [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune)（在本地或在云中承载），无需注册就可启用简单的 Intune 管理。 还可以使用 [Intune 客户端软件](#manage-windows-pcs-with-intune)管理 Windows 电脑。

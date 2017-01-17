@@ -1,5 +1,5 @@
 ---
-title: "在 Intune 中注册 iOS 设备 | Microsoft Intune"
+title: "在 Intune 中注册 iOS 设备 | Microsoft Docs"
 description: "介绍如何在 Intune 中注册 iOS 设备"
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
+searchScope:
+- Company Portal
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 58295c0e27c6c74a1efb9771e0fe8fb917c6cca6
 
 
 ---

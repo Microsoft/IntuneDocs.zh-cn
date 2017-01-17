@@ -1,11 +1,11 @@
 ---
-title: "保护应用和数据 | Microsoft Intune"
+title: "保护应用和数据 | Microsoft Docs"
 description: "本主题介绍供你使用的各种 Intune 特性和功能，以帮助保护你的公司应用和数据。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 4f8cb86126a982b21ad3288108295d1784f08df3
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
 
 
 ---
 
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>使用 Microsoft Intune 保护应用和数据
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 通过多个技术层保护公司数据。 在标识层上，条件性访问通过仅允许从托管及合规设备进行访问来保护对服务的访问。 在客户端应用程序层上，移动应用管理 (MAM) 通过防止将数据移动到不受保护的应用或存储位置以及在设备丢失或被盗时擦除数据来防止数据丢失。 应结合使用这两个保护层，在保持移动办公人员高效工作的同时保护数据。
 
@@ -54,6 +55,6 @@ Intune 通过多个技术层保护公司数据。 在标识层上，条件性访
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

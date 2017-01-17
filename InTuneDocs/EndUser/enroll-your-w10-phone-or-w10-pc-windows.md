@@ -1,5 +1,5 @@
 ---
-title: "在 Intune 中注册 Windows 10 设备 | Microsoft Intune"
+title: "在 Intune 中注册 Windows 10 设备 | Microsoft Docs"
 description: "介绍如何在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 3e6a4ca1e415eb56dd5792c8d9f6a9fe83f6d362
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
 
 
 ---
@@ -49,10 +49,10 @@ ms.openlocfilehash: 3e6a4ca1e415eb56dd5792c8d9f6a9fe83f6d362
 3.  在“设备信息”下，点击“详细信息”。 你会看到有关设备的信息列表。 在此列表中，找到“版本”。
 4.  如果是 __1607__ 版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511__ 版本，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

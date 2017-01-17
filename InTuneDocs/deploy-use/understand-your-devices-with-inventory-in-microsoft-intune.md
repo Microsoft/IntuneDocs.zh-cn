@@ -1,5 +1,5 @@
 ---
-title: "了解你的设备清单 | Microsoft Intune"
+title: "通过清单了解设备 | Microsoft Docs"
 description: "使用 Intune 查看你管理的设备的硬件的相关信息。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
-ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 3ae5809f8506e2255d9443d3587f2564bc863066
 
 
 ---
 
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>在 Microsoft Intune 中了解你的设备清单
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 通过 Microsoft Intune，你可查看运行 Intune 客户端软件的已注册设备和 Windows 电脑的清单。
 Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报表显示最近对设备进行的任何更改（例如，对设备名称的更改，或对免费存储空间的更改）的结果前可能会有一定的延迟。
 
@@ -116,6 +119,6 @@ Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

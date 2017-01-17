@@ -1,5 +1,5 @@
 ---
-title: "安装 Intune 公司门户应用并登录| Microsoft Intune"
+title: "安装 Intune 公司门户应用并登录| Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: ebb2a164e631388d073d11440eb6072ae4d90468
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: fa7527d3dad71fada2abd0aeb8e2dd0f76b983b3
 
 
 ---
@@ -36,10 +38,10 @@ ms.openlocfilehash: ebb2a164e631388d073d11440eb6072ae4d90468
 
     如果首次登录到公司门户应用，并且你的公司或学校正在使用 Intune，则系统将提示你在 Intune 中注册你的设备。 若要注册，请按照[在 Intune 中注册 iOS 设备](enroll-your-device-in-intune-ios.md)或[在 Intune 中注册 macOS 设备](enroll-your-device-in-intune-macos.md)中的步骤执行。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

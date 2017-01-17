@@ -1,9 +1,9 @@
 ---
-title: "创建和部署 MAM 策略 | Microsoft Intune"
+title: "创建和部署 MAM 策略 | Microsoft Docs"
 description: "使用本主题中的分步说明来创建和部署移动应用管理策略。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
 
 
 ---
 
 # <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>使用 Microsoft Intune 创建和部署移动应用管理策略
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可以将移动应用管理 (MAM) 策略应用于在不一定由 Intune 管理的设备上运行的应用。 有关 MAM 策略工作原理以及 Intune MAM 策略所支持方案的更加详细的说明，请参阅[使用移动应用管理策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
 本主题介绍在 **Azure 门户**中创建 MAM 策略的过程。 Azure 门户是一款新的管理控制台，用于创建 MAM 策略；建议使用此门户来创建 MAM 策略。 Azure 门户支持以下 MAM 方案：
@@ -173,6 +176,6 @@ ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

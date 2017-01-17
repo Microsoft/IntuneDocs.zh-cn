@@ -1,5 +1,5 @@
 ---
-title: "通过 Intune 使用 Android 设备 | Microsoft Intune"
+title: "通过 Intune 使用 Android 设备 | Microsoft Docs"
 description: "在 Intune 中注册设备时，用户可在其 Android 移动设备上执行的任务链接列表"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
 
 
 ---
@@ -62,8 +62,8 @@ ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 - [使用电子邮件将诊断数据日志发送给 IT 管理员](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 - [使用 USB 电缆将诊断数据日志发送给 IT 管理员](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [将注册错误发送给 IT 管理员](send-enrollment-errors-to-your-it-administrator-android.md)
-- [设备没有必需的最低操作系统版本](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [设备不符合最高操作系统版本](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [设备没有必需的最低操作系统版本](you-need-to-update-your-android-device.md)
+- [设备不符合最高操作系统版本](your-android-version-isnt-yet-supported.md)
 - [设备已取得 root 权限，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)
 - [设备缺少必需的证书](your-device-is-missing-a-required-certificate-android.md)
 - [系统要求关闭未知源](you-are-asked-to-turn-off-unknown-sources-android.md)
@@ -75,6 +75,6 @@ ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

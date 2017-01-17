@@ -1,5 +1,5 @@
 ---
-title: "限制对电子邮件示例方案的访问 | Microsoft Intune"
+title: "限制对电子邮件示例方案的访问 | Microsoft Docs"
 description: "几个示例方案以及使用条件访问实现这些方案的方式。"
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 0f3c1816591007108fed19682d19ad4b87bd5559
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2d6ead1495a64e4e215c49b14064e390065a06de
 
 
 ---

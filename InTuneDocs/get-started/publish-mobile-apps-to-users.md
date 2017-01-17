@@ -1,12 +1,12 @@
 ---
-title: "向用户发布移动应用 | Microsoft Intune"
+title: "向用户发布移动应用 | Microsoft Docs"
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 21e79e5dc5fa47c3612182bbc7040c488f94849b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
 
 
 ---
 
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>快速入门指南：向用户发布移动应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 通过让最终用户快速轻松地从选择的设备访问所需的移动和桌面应用，Microsoft Intune 可帮助他们提高工作效率。 使最终用户轻松获取应用，可减少在搜索和安装正确应用上花费的时间和精力，这会减少用户在找不到所需应用时呼叫支持人员的次数。   
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>此快速入门指南适合我吗？
@@ -42,6 +45,6 @@ ms.openlocfilehash: 21e79e5dc5fa47c3612182bbc7040c488f94849b
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 
