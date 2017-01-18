@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 385565bd1ce05c9402a52cdd6eeb93f58caaf72a
-ms.openlocfilehash: 02bd3d2f62bd8b8e3f590de4bc8f4e6099f4917d
+ms.sourcegitcommit: 3da636b15807623bb60895870e6d43cd2e0aa01c
+ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
 
 
 ---
@@ -25,11 +27,11 @@ ms.openlocfilehash: 02bd3d2f62bd8b8e3f590de4bc8f4e6099f4917d
 
 如果你的公司或学校使用 Microsoft Intune，则可以注册 Android 设备以获取对公司电子邮件、文件和其他资源的访问权限。 注册设备时，IT 部门可以管理这些工作或学校资源，使其保持安全，并使你可以自由地使用首选设备来完成工作。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)。
 
-这些注册说明适用于 Samsung KNOX Android 设备和“本机”（非 Samsung Knox）Android 设备。 若要检查你是否拥有 Samsung KNOX 设备，请转到“设置”&gt;“关于设备”。 如果未在此处看到列出了“KNOX 版本”，则你具有本机 Android 设备。
+这些注册说明适用于 Samsung KNOX Android 设备和“本机”（非 Samsung Knox）Android 设备。 若要检查你拥有的设备是否是 Samsung KNOX 设备，请转到“设置” > “关于设备”。 如果未在此处看到列出了“KNOX 版本”，则你具有本机 Android 设备。
 
 注册前/后，系统可能会要求你选择最恰当地描述了你使用设备的方式的类别。 IT 管理员使用此类别来帮助检查你有权访问的应用。
 
-如果尝试在 Intune 中注册设备时遇到错误，则可以[将注册错误消息发送给 IT 管理员](send-enrollment-errors-to-your-it-administrator-android.md)。
+如果尝试在 Intune 中注册设备时遇到错误，则可以[将注册错误消息发送给 IT 管理员](send-enrollment-errors-to-your-it-admin-android.md)。
 
 **注册 Android 设备：**
 
@@ -110,10 +112,10 @@ ms.openlocfilehash: 02bd3d2f62bd8b8e3f590de4bc8f4e6099f4917d
 
 你需转到“设置”&gt;“安全性”，然后打开“未知源”才能尝试安装公司应用。 如果你在尝试安装应用前未打开此选项，则会看到以下消息：“已阻止安装”。 出于安全性考虑，你的设置已被设置为阻止安装未知来源的应用。” 你可点击错误对话框上的“设置”以转到“未知来源”选项。
 
-仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（地址为 wintunedroidfbk@microsoft.com.）
+仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

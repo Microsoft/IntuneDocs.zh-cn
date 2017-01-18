@@ -86,15 +86,17 @@
 
   2. **对哪些内容进行加密？** 根据 IT 管理员的应用保护策略，仅对标记为“公司”的数据进行加密。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。 对于由 Intune 应用包装工具启用的业务线应用，所有应用数据都会被视为“公司”数据。
 
-**Intune 如何远程擦除数据？** Intune 能够以两种不同方式擦除应用数据：完全擦除和选择性擦除。 有关远程擦除的详细信息，请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)。
+**Intune 如何远程擦除数据？** Intune 能够使用 3 种不同方式擦除应用数据：完全设备擦除、MDM 选择性擦除和 MAM 选择性擦除。 有关 MDM 远程擦除的详细信息，请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)。 有关使用 MAM 的选择性擦除的详细信息，请参阅[使用 Microsoft Intune 擦除托管公司应用数据](wipe-managed-company-app-data-with-microsoft-intune.md)
 
   1. **什么是完全擦除？** [完全擦除](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)会通过将设备还原到其出厂默认设置，从**设备**中删除所有用户数据和设置。 设备从 Intune 删除。
   >[!NOTE]
   > 完全擦除只有在注册了 Intune 移动设备管理 (MDM) 的设备上才能实现。
 
-  2. **什么是选择性擦除？** 请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)，以了解选择性擦除。
+  2. **什么是 MDM 选择性擦除？** 请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)，以了解选择性擦除。
 
-  3. **选择性擦除多久发生一次？** 如果用户在启用了选择性擦除的情况下使用应用，那么 Intune App SDK 会每 30 分钟检查一次来自 Intune MAM 服务的选择性擦除请求。 它还会在用户第一次启动应用并使用其工作或学校帐户登录时检查选择性擦除。
+  3. **什么是 MAM 选择性擦除？** MAM 选择性擦除仅删除应用中的公司应用数据。 使用 Intune Azure 门户启动该请求。 若要了解如何启动擦除请求，请参阅[使用 Microsoft Intune 擦除托管公司应用数据](wipe-managed-company-app-data-with-microsoft-intune.md)
+
+  4. **MAM 选择性擦除多久发生一次？** 如果用户在启用了选择性擦除的情况下使用应用，那么 Intune App SDK 会每 30 分钟检查一次来自 Intune MAM 服务的选择性擦除请求。 它还会在用户第一次启动应用并使用其工作或学校帐户登录时检查选择性擦除。
 
 **为什么本地服务不适用于 Intune 保护的应用？** Intune 应用保护要求用户的身份在应用程序与 Intune App SDK 之间保持一致。 保证此种一致的唯一方法是通过新式身份验证。 在某些情况下应用可能适用于本地配置，但它们既不一致也无法得到保证。
 
@@ -110,6 +112,6 @@
 **即使将数据传输策略设置为“仅托管应用”或“无应用”，我也可以使用 iOS 共享扩展在非托管应用中打开工作或学校数据。这样不会泄漏数据吗？** 在不管理设备的情况下，Intune 应用保护策略不能控制 iOS 共享扩展。 因此，Intune _**会在应用外共享“公司”数据之前对其进行加密**_。 可通过尝试在托管应用外打开“公司”文件对此进行验证。 该文件应该已加密，且无法在托管应用外打开。
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

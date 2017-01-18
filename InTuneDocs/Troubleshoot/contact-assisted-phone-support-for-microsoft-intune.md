@@ -1,11 +1,12 @@
+
 ---
-title: "联系辅助电话支持 | Microsoft Intune"
-description: "Intune 支持的电话号码"
-keywords: 
+title: "联系辅助电话支持 | Microsoft Docs"
+description: "Microsoft Intune 帮助的电话号码。"
+keywords: "营业时间"
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,15 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3a081109cd499d3bdda75cb6c8a4dab9d9d28fab
-ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
 
 
 ---
 
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>联系 Microsoft Intune 的辅助电话支持
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="phone-numbers-and-business-hours"></a>电话号码和营业时间
 
@@ -118,6 +121,6 @@ ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

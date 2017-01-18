@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
+ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
+ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
 
 > [!NOTE]
 >
-> 此配置文件仅支持 Pulse Secure 连接类型。
+> 此配置文件仅支持 Pulse Secure 和 Citrix 连接类型。
 
 
 ### <a name="step-1-create-a-vpn-profile"></a>步骤 1：创建 VPN 配置文件
@@ -80,6 +80,6 @@ ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

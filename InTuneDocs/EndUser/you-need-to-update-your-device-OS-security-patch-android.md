@@ -5,16 +5,18 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: f6fe6f76a700137914ef9cea7ce02753882e2fa3
-ms.openlocfilehash: 8893b397f5a29568ab5d4238e56d7e9806633e30
+ms.sourcegitcommit: 440d0e75c9373d5de44897b8a997da6c24de4e3c
+ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
 
 
 ---
@@ -27,18 +29,20 @@ ms.openlocfilehash: 8893b397f5a29568ab5d4238e56d7e9806633e30
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-## <a name="if-you-have-a-samsung-knox-device"></a>如果拥有 Samsung Knox 设备
+## <a name="for-most-android-devices-non-samsung-knox"></a>适用于大多数 Android 设备（非 Samsung Knox）
+
+转到“设置” > “关于” > “软件更新”。 安装更新，然后设备应该已安装了正确的安全修补程序。
+
+## <a name="for-samsung-knox-android-devices"></a>适用于 Samsung Knox Android 设备
 
 转到“设置” > “系统更新” > “检查新的系统更新”。 安装更新，然后 Samsung Knox 设备应该已安装了正确的安全修补程序。
 
-## <a name="if-you-do-not-have-a-samsung-knox-device"></a>如果拥有的并不是 Samsung Knox 设备
 
-转到“设置” > “关于” > “软件更新”。 安装更新，然后设备应该已安装了正确的安全修补程序。 
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

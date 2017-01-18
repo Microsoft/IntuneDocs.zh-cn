@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
-ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
+ms.sourcegitcommit: b264ea53e727f706bc635ed9c738ad605e1ac750
+ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
 
 
 ---
@@ -59,13 +59,13 @@ ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
 此部分中的信息将帮助解决用户在 Intune 中注册 Android 设备时可能发生的问题。
 
 - [使用详细日志记录来帮助 IT 管理员解决设备问题](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [使用电子邮件将诊断数据日志发送给 IT 管理员](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [使用 USB 电缆将诊断数据日志发送给 IT 管理员](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [将注册错误发送给 IT 管理员](send-enrollment-errors-to-your-it-administrator-android.md)
+- [使用电子邮件将日志发送给 IT 管理员](send-logs-to-your-it-admin-by-email-android.md)
+- [使用 USB 电缆将日志发送给 IT 管理员](send-logs-to-your-it-admin-using-cable-android.md)
+- [将注册错误发送给 IT 管理员](send-enrollment-errors-to-your-it-admin-android.md)
 - [设备没有必需的最低操作系统版本](you-need-to-update-your-android-device.md)
 - [设备不符合最高操作系统版本](your-android-version-isnt-yet-supported.md)
 - [设备已取得 root 权限，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)
-- [设备缺少必需的证书](your-device-is-missing-a-required-certificate-android.md)
+- [设备缺少必需的证书](your-device-is-missing-a-required-certificate-landing-android.md)
 - [系统要求关闭未知源](you-are-asked-to-turn-off-unknown-sources-android.md)
 - [系统要求关闭 USB 调试](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [系统要求启用“扫描设备的安全威胁”](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
@@ -75,6 +75,6 @@ ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

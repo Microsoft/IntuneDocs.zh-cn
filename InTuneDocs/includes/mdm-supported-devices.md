@@ -5,7 +5,7 @@
   - Mac OS X 10.9 及更高版本
 
 ### <a name="windows"></a>Windows
-  - 运行 Windows 10（家庭版、专业版、教育版和企业版）的电脑
+  - 运行 Windows 10（专业版、教育版和企业版）的电脑
   - Windows Phone 8.1 及更高版本
   - Windows 8.1 RT
   - 运行 Windows 8.1 的电脑
@@ -23,6 +23,6 @@
  
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

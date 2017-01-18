@@ -2,10 +2,10 @@
 title: "擦除托管公司应用数据 | Microsoft Docs"
 description: "了解如何从设备中有选择地远程删除公司数据。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: stabar
+ms.author: staciebarker
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
+ms.sourcegitcommit: 89f5dc1581571cfcb6e03b5dce740bc7f8a8a9ce
+ms.openlocfilehash: a02a015ce1208ee5fa081e60ce0b88c69d4efa50
 
 
 ---
@@ -34,29 +34,31 @@ ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
 
 ## <a name="create-a-wipe-request"></a>创建擦除请求
 
-1.  在“Intune 移动应用程序管理”边栏选项卡中，选择“擦除请求”磁贴。
+1.  登录到 Azure 门户，选择“更多服务” > “其他” > “Intune”。
 
-    ![具有摘要磁贴的 Intune 移动应用程序管理边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+2.  在 Intune 边栏选项卡上，选择“管理应用”。
 
-2.  选择“新建擦除请求”。 这会打开“新建擦除请求”边栏选项卡。
+3.  选择“新建擦除请求”。 这会打开“新建擦除请求”边栏选项卡。
 
     ![新建擦除请求边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
-3.  选择“用户”以打开“用户”边栏选项卡，然后选择要擦除其应用数据的用户。
+4.  选择“用户”以打开“用户”边栏选项卡，然后选择要擦除其应用数据的用户。
 
-4.  选择“设备”。  这会打开“设备”  边栏选项卡，其中列出与所选用户关联的所有设备。  选择要擦除的设备。
+5.  选择“设备”。  这会打开“设备”  边栏选项卡，其中列出与所选用户关联的所有设备。  选择要擦除的设备。
 
-5.  你现在已返回“新建擦除请求”边栏选项卡。 选择“确定”以进行擦除请求。 服务会为设备上的每个受保护应用创建并跟踪单独的擦除请求。
-
+6.  你现在已返回“新建擦除请求”边栏选项卡。 选择“确定”以进行擦除请求。 服务会为设备上的每个受保护应用创建并跟踪单独的擦除请求。
 
 ![擦除请求磁贴的屏幕截图 ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## <a name="monitor-your-wipe-requests"></a>监视擦除请求
-“Intune 移动应用程序管理”  边栏选项卡在“擦除请求”  磁贴上具有汇总报告。  它显示总体状态，并包含挂起的请求数和失败数。 可以按照下述步骤获取更多详细信息：
 
-1.  在“Intune 移动应用程序管理”边栏选项卡中，选择“擦除请求”磁贴打开“擦除请求”边栏选项卡。
+“擦除请求”磁贴上的汇总报表介绍了擦除请求的总体状态，包括挂起请求数和失败次数。 若要获取更多详细信息，请按以下步骤操作：
 
-2.  在“擦除请求” 边栏选项卡中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起” 、“失败”还是“成功”。
+1.  在 Intune 边栏选项卡上，选择“管理应用”。
+
+2.  在“擦除请求”边栏选项卡上，选择“擦除请求”磁贴，打开“擦除请求”边栏选项卡。
+
+3.  在“擦除请求” 边栏选项卡中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起” 、“失败”还是“成功”。
 
 用户必须打开应用才能进行擦除，进行请求后可能需要最多 30 分钟才能完成擦除。
 
@@ -69,6 +71,6 @@ ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
