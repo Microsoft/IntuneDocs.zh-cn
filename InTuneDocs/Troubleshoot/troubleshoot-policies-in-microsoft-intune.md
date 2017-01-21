@@ -1,17 +1,22 @@
---
-# <a name="required-metadata"></a>必需元数据
+---
+title: "策略疑难解答 | Microsoft Docs"
+description: "解决策略配置问题。"
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 01/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
+ms.reviewer: tscott
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
+ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
 
-title: 策略疑难解答 | Microsoft Docs description: 解决策略配置问题。
-keywords: author: robstackmsft ms.author: robstack manager: angrobe ms.date: 01/04/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# <a name="optional-metadata"></a>可选元数据
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>受众：
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: tscott ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-#<a name="mscustom"></a>ms.custom:
 
 ---
 
@@ -95,6 +100,7 @@ Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其�
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
-<!--HONumber=Jan17_HO1-->
+
+<!--HONumber=Jan17_HO2-->
 
 

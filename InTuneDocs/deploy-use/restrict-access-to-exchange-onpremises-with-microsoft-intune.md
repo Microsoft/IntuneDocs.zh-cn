@@ -14,16 +14,18 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 10dc9c06985c85c938822d38b0428b500f915923
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 
 ---
 
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>使用 Intune 保护对 Exchange 内部部署和旧版 Exchange Online Dedicated 的电子邮件访问
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!NOTE]
-> 如果你具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
+> 如果具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
 
 
 若要控制对 Exchange 内部部署或旧版 Exchange Online Dedicated 环境的电子邮件访问，可通过 Microsoft Intune 配置对 Exchange 内部部署的条件性访问。
@@ -134,6 +136,6 @@ ms.openlocfilehash: 10dc9c06985c85c938822d38b0428b500f915923
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
