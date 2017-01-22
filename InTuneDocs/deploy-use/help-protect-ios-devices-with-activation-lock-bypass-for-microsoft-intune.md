@@ -96,6 +96,6 @@ Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定�
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

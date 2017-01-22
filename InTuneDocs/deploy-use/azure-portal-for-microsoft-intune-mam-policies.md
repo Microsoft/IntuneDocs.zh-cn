@@ -66,6 +66,6 @@ Azure 门户可用于创建和管理以下项的移动应用管理 (MAM) 策略�
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
