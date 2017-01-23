@@ -1,5 +1,5 @@
 ---
-title: "Android 用户如何获取其应用 | Microsoft Intune"
+title: "Android 用户如何获取其应用 | Microsoft Docs"
 description: "使 Android 应用可供最终用户使用的方法"
 keywords: 
 author: barlanmsft
@@ -14,14 +14,17 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
-ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 370dd5d4a96253f0b7d208ef85659beeace18739
 
 
 ---
 
 
 # <a name="how-your-android-users-get-their-apps"></a>Android 用户如何获取其应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用此信息可了解 Android 最终用户如何以及在何处获取你通过 Microsoft Intune 分发的应用。 该信息可能因设备类型（本机 Android 设备或 Samsung Knox 标准版设备）而异。
 
 ## <a name="native-non-samsung-knox-standard-android-devices"></a>本机（非 Samsung Knox 标准）Android 设备
@@ -53,6 +56,6 @@ ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

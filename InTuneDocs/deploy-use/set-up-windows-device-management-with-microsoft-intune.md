@@ -1,5 +1,5 @@
 ---
-title: "使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Intune"
+title: "使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 为 Windows 电脑（包括 Windows 10 设备）启用移动设备管理 (MDM)。"
 keywords: 
 author: staciebarker
@@ -13,18 +13,21 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 7c518c176e315cbf005b2fceb8d74de09bdcfa98
+ms.sourcegitcommit: 31d58d9973cca4023186731a5411c9c9e830e32a
+ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
 
 
 ---
 
 # <a name="set-up-windows-device-management"></a>设置 Windows 设备管理
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 作为 Intune 管理员，可以通过两种方式为 Windows 电脑启用注册和管理：
 
-- **[使用 Azure Active Directory 自动注册](#azure-active-directory-enrollment)** - Windows 10 和 Windows 10 移动版用户通过向设备添加工作或学校帐户来注册设备
-- **[公司门户注册](#company-portal-app-enrollment)** - Windows 8.1 和更高版本的用户通过下载和安装公司门户应用，然后在应用中输入其工作或学校帐户凭据对设备进行注册。
+- **[使用 Azure Active Directory 自动注册](#azure-active-directory-enrollment)** - Windows 10 和 Windows 10 移动版用户通过向设备添加工作或学校帐户来注册设备。
+
+- **[公司门户注册](#set-up-company-portal-app-enrollment)** - Windows 8.1 和更高版本的用户通过下载和安装公司门户应用，然后在应用中输入其工作或学校帐户凭据对设备进行注册。
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
@@ -55,23 +58,20 @@ ms.openlocfilehash: 7c518c176e315cbf005b2fceb8d74de09bdcfa98
 
 3.  **验证 CNAME**<br>在 [Intune 管理员控制台](http://manage.microsoft.com)中，选择“管理员”&gt;“移动设备管理”&gt;“Windows”。 在“指定一个已验证的域名”框中输入公司网站经过验证的域的 URL，然后选择“测试自动检测”。
 
-  ![Windows 设备管理对话框](../media/enroll-intune-winenr.png)
-
 4.  **可选步骤**<br>在 Windows 10 中无需执行**添加旁加载密钥**步骤。 只有在向设备分配 Windows 应用商店中未提供的业务线 (LOB) 应用时才需要执行“上传代码签名证书”步骤。
 
 6.  **告诉用户如何注册其设备以及在纳入管理之后会出现的情况。**
 
-    有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](../enduser/enroll-your-device-in-intune-windows.md)。
+    有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)。
 
-    有关最终用户任务的详细信息，请参阅以下文章：
-      - [有关 Microsoft Intune 最终用户体验的资源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-      - [适用于 Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
+    有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。
+
 
 ### <a name="see-also"></a>另请参阅
 [在 Microsoft Intune 中注册设备的先决条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

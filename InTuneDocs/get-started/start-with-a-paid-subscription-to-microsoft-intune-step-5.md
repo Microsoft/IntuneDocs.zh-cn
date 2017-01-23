@@ -1,5 +1,5 @@
 ---
-title: "创建用于组织用户和设备的组 | Microsoft Intune"
+title: "创建用于组织用户和设备的组 | Microsoft Docs"
 description: "为你的 Intune 订阅创建用户和组"
 keywords: 
 author: nathbarn
@@ -14,14 +14,17 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 85b2e7c50f4ea1e07bd1474e3902cebcbccc1467
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 446156265047994f0a15890d7699991d032c0bd5
 
 
 ---
 
 
 # <a name="create-groups-to-organize-users-and-devices"></a>创建用于组织用户和设备的组
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组设置为适应组织需要（例如，按地理位置、部门或硬件特性）并将其用于执行各种管理任务，上至为一组用户部署策略，下至将应用程序部署到一组设备。
 
 ## <a name="group-management-moving-to-azure-ad"></a>组管理移动到 Azure AD
@@ -84,6 +87,6 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

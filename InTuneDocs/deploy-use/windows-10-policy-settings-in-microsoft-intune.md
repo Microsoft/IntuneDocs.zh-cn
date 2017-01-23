@@ -1,5 +1,5 @@
 ---
-title: "Windows 10 策略设置 | Microsoft Intune"
+title: "Windows 10 策略设置 | Microsoft Docs"
 description: "使用本主题中列出的策略设置可帮助你为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的 Intune 策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 本主题包含的信息可帮助你了解可用于管理 Windows 10 设备的 Intune 策略设置。 请阅读本主题以及[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)中的步骤，为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。 无法将这些策略用于运行“[Intune PC 客户端软件](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)”的电脑。
 

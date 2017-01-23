@@ -1,5 +1,5 @@
 ---
-title: "启用对公司资源的访问 | Microsoft Intune"
+title: "启用对公司资源的访问 | Microsoft Docs"
 description: "Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对所需文件和资源的访问权限。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda32f27216c7b65bd02334bae2882e840e7a99d
 
 
 ---
 
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>使用 Microsoft Intune 启用对公司资源的访问
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对完成其工作所需的文件和资源的访问权限，无论他们身在何处。 证书配置文件可帮助保护该访问。
 
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>[Wi-Fi 配置文件](wi-fi-connections-in-microsoft-intune.md)和受支持的平台
@@ -57,6 +60,6 @@ Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

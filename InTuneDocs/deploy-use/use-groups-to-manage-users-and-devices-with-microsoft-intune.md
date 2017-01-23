@@ -1,11 +1,11 @@
 ---
-title: "使用组来管理用户和设备 | Microsoft Intune"
+title: "使用组来管理用户和设备 | Microsoft Docs"
 description: "使用“组”工作区创建和管理组。"
 keywords: 
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,78 +14,26 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
+ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
+ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
 
 
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用组来管理用户和设备
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题介绍如何在 Intune 中创建组。 其中还提供了有关在未来数月将如何更改组的管理的信息。 
 
 >[!IMPORTANT]
 >
->在 Intune 门户中打开“组”工作区时，若显示 Azure Active Directory (Azure AD) 门户的链接，则表明 Intune 中的组管理已在使用新的 Azure AD 安全组方法，如[“组”的管理员体验改善通知](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)中所述。 单击 Azure AD 门户链接以创建并管理组。
+>在 Intune 门户中打开“组”工作区时，若显示 Azure Active Directory (Azure AD) 门户的链接，则表明你正在使用新的 Azure AD 安全组方法在 Intune 中进行组管理，如[将组迁移到 Azure Active Directory](migrating-groups-to-azure-active-directory.md) 中所述。 单击 Azure AD 门户链接以创建并管理组。
 >
 >![Azure 组管理链接的屏幕截图](../media/groups-link-azure.png) 
 >
 >若未显示 Azure AD 门户链接，则表明正在使用当前组管理方法，如[使用 Microsoft Intune 创建组以管理用户和设备](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)中所述。
 
-
-## <a name="notice-of-upcoming-improvements-to-the-admin-experience-for-groups"></a>“组”的管理员体验改善通知
-
-用户称希望企业移动性和安全性具有一致的分组和目标设定体验。 我们不负众望。 根据用户反馈，Intune 组即将转换为基于 Azure Active Directory 的安全组。 这将跨 Intune 和 Azure Active Directory (Azure AD) 统一组管理。 新体验意味着用户无需在服务间复制组。 还通过选择使用 Windows PowerShell 和 Microsoft Graph 提供扩展性。
-
-### <a name="how-does-this-affect-me-right-now"></a>这现在对我有何影响？
-如果你已经是 Intune 客户，则此更改现在不会影响你。 但即将推出以下内容：
-
--   新帐户将使用 Azure AD 安全组而不是 Intune 用户组。   
--   2016 年 11 月，月度服务发布后设置的新帐户将管理 Azure AD 门户中基于用户和设备的组。 不会对现有客户造成影响。
--   2016 年 12 月，Intune 产品团队将开始将现有客户迁移到新的基于 Azure AD 的组管理体验。 现在 Intune 中的所有用户和设备组将迁移到 Azure AD 安全组。 仅当能够将对用户日常工作的影响降到最低，且预计不会对用户造成影响时，我们才会开始迁移。 还将在迁移帐户前通知用户。
-
-
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>我将什么时候以何种方式迁移到新的组体验？
-将在一段时间内迁移当前 Intune 客户。 我们将最终确定迁移计划并将在数周后更新此主题，让你了解更多详细信息。 迁移前，会向你发送通知。 如果有任何关于迁移的问题，请发送电子邮件到 [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) 与我们的迁移团队联系。 有关如何迁移组的详细信息，请参阅[将组迁移到 Active Directory](migrating-groups-to-azure-active-directory.md)。
-
-### <a name="what-happens-to-my-existing-user-and-device-groups"></a>我的现有用户和设备组将发生什么情况？
- 用户在 Intune 中创建的用户组和设备组将迁移到 Azure AD 安全组。 仅当迁移过程中将默认 Intune 组（如“所有用户”组）用于部署时，才会迁移默认 Intune 组。 对某些组而言，迁移可能更复杂。 若在用户组织中进行迁移需要额外步骤，将进行通知。
-
-### <a name="what-new-features-will-be-available-to-me"></a>将为我提供哪些新功能？
-本次从 Intune 迁移到 Azure Active Directory 将引入以下新功能：
-
--    在 Intune 中，所有类型的部署都将支持 Azure AD 安全组。
--    Azure AD 安全组将支持对设备和用户进行分组。
--    Azure AD 安全组将支持具有 Intune 设备属性的动态组。 例如，将能够按平台（如 iOS）对设备进行动态分组。 在组织中注册新的 iOS 设备时，会将其自动添加到 iOS 动态设备组。
--    管理员在 Azure AD 和 Intune 之间将拥有共享的组管理体验。
-- 将向 Azure AD 添加 Intune 服务管理员角色，以允许 Intune 服务管理员在 Azure AD 中执行组管理任务。
-
-### <a name="what-intune-functionality-wont-be-available"></a>哪种 Intune 功能将不可用？
-尽管组体验将得到改善，但组织从 Intune 组迁移到 Azure AD 安全组后，某些 Intune 功能将无法使用。
-
-#### <a name="group-management-functionality"></a>组管理功能
-
--   迁移后，新建组时无法排除成员或组。 但是，可通过 Azure AD 动态组使用属性创建高级规则，根据设置的条件从组中排除成员。
--   将不支持“未分组的用户”和“未分组的设备”组。 我们不会将这些组从 Intune 迁移到 Azure AD。
-
-
-#### <a name="group-dependent-functionality"></a>组的依赖功能
-
--   服务管理员角色将不会有“管理组”权限。
--   你将不能对 Exchange ActiveSync 设备进行分组。 你的“所有 EAS 托管设备”组将从组转换为报告视图。
--  利用报表中的组进行透视将不可用。
--  通知规则的自定义组目标将不可用。
-
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>我应该针对此更改做什么准备？
- 以下建议将使你的转换更容易：
-
-- 迁移前清除任何不想要或不需要的 Intune 组。
-- 评估你对组中排除的使用，考虑重新设计你的组，使你无需使用排除。
--  若有无权在 Azure AD 中创建组的管理员，请让 Azure AD 管理员将其添加到 Intune 服务管理员 Azure AD 角色。
-
-
-## <a name="create-groups-to-manage-users-and-devices-with-microsoft-intune"></a>通过 Microsoft Intune 创建组来管理用户和设备
-
-本节介绍如何在 Intune 管理控制台中创建 Intune 组。
+本主题介绍如何在 Intune 管理控制台中创建 Intune 组。
 
 可在 Microsoft Intune 管理控制台中的“组”工作区创建和管理组。 “组概述”页显示了状态摘要，可帮助你确定需要关注的问题并划分其优先级。 状态摘要包含以下方面：
 
@@ -108,7 +56,7 @@ ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 >
 > 每次创建严格策略时，请将其传达给用户。 在创建更多常规组和策略后，请关注如何创建更小的组，以便减少不必要的通信。
 
-### <a name="to-create-a-device-group"></a>创建设备组
+## <a name="to-create-a-device-group"></a>创建设备组
 
 1.  在 Intune 管理员控制台中，依次选择“组”&gt;“概述”&gt;“创建组”。
 
@@ -128,7 +76,7 @@ ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 
 在“父组”下的“组”工作区中的“组”列表中，可找到新建的组。 还可以从此处编辑或删除组。
 
-### <a name="to-create-a-user-group"></a>创建用户组
+## <a name="to-create-a-user-group"></a>创建用户组
 
 1.  在 Intune 管理员控制台中，依次选择“组”&gt;“概述”&gt;“创建组”。
 
@@ -205,6 +153,6 @@ ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

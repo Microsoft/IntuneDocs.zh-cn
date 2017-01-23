@@ -1,9 +1,9 @@
 ---
-title: "MAM 策略的先决条件 | Microsoft Intune"
+title: "MAM 策略的先决条件 | Microsoft Docs"
 description: "本主题介绍创建移动应用管理策略之前设置用户的先决条件。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: ac820146d81fb121a60f7029f6a52a0056d6ab0a
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: cb525deb240668c0f0f14b19f39eb1226e338629
 
 
 ---
 
 # <a name="get-ready-to-configure-mobile-app-management-policies-on-the-azure-portal"></a>准备好在 Azure 门户中配置移动应用管理策略
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题介绍可以在 Azure 门户中创建移动应用管理 (MAM) 策略**之前**必须完成的先决条件和步骤。
 
 若要了解 Intune MAM 策略可以如何保护公司数据，请参阅[使用移动应用管理策略保护应用和数据](protect-apps-and-data-with-microsoft-intune.md)。
@@ -121,6 +124,6 @@ Azure 门户是用于创建 MAM 策略的新管理控制台。 它支持以下 M
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

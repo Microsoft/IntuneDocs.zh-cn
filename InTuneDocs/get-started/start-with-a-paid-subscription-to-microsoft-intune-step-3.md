@@ -1,5 +1,5 @@
 ---
-title: "添加用户并授予权限 | Microsoft Intune"
+title: "添加用户并授予权限 | Microsoft Docs"
 description: "将本地用户与 Azure AD 同步，并授予对 Intune 订阅的管理员权限"
 keywords: 
 author: nathbarn
@@ -14,13 +14,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 18d31a306549bae6dd44ab78d1dd08649ee71158
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 作为管理员，可直接添加用户或从本地 Active Directory 同步用户。 添加后，用户可注册设备并访问公司资源。 还可为用户提供更多权限，包括“租户管理员”、“服务管理员”和“设备注册管理器”权限。
 
@@ -101,6 +103,6 @@ ms.openlocfilehash: 18d31a306549bae6dd44ab78d1dd08649ee71158
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

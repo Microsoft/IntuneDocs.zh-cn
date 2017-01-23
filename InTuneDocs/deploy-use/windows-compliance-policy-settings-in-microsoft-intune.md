@@ -1,11 +1,11 @@
 ---
-title: "适用于 Windows 设备的合规性策略设置 | Microsoft Intune"
+title: "适用于 Windows 设备的合规性策略设置 | Microsoft Docs"
 description: "本主题描述了可为 Windows 设备的合规性策略配置的规则和设置。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
 
 
 ---
 
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 设备的合规性策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 本主题中描述的策略设置适用于运行 Windows 操作系统的设备。 以下各部分描述了支持的 Windows 版本。
 
@@ -151,6 +153,6 @@ ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

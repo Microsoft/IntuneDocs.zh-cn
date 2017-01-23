@@ -1,50 +1,46 @@
 ---
-title: "从公司门户中删除设备 | Microsoft Intune"
-description: 
+title: "从公司门户中删除设备 | Microsoft Docs"
+description: "从公司门户中删除设备"
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: f557aab61a61bde8937d72c99ccf652787170002
 
 
 ---
 
+# <a name="remove-your-device-from-the-company-portal"></a>从公司门户中删除设备
 
-# 从公司门户中删除设备
-
-如果决定不再需要 Intune 和 IT 管理员托管你的设备，则可以使用[公司门户网站](http://portal.manage.microsoft.com)将其从公司门户中删除。 公司门户网站是一个网页，可以用于管理计算机和在 Intune 中注册的设备，还可以在使用公司门户应用时用它来处理你可以执行的大多数相同任务。
-
-如果删除设备，则不会再将其列入公司门户，并且你可能也无法访问公司或学校数据、应用和电子邮件。
+如果决定不再需要公司或组织托管你的设备，则可以使用[公司门户网站](http://portal.manage.microsoft.com)将其从公司门户中删除。 公司门户网站是一个网页，可用于管理已向 IT 部门管理注册的计算机和设备。 如果删除设备，则不会再将其列入公司门户，并且你可能也无法访问公司或学校数据、应用和电子邮件。
 
 删除设备：
 
-1.  打开[公司门户网站](http://portal.manage.microsoft.com)，然后点击要更改其名称的设备。
+1.  打开[公司门户网站](http://portal.manage.microsoft.com)，点击要删除的设备的名称。
 
 2.  点击**删除**。
 
-    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![公司门户网站上的删除设备选项](./media/iwp-screen-with-all-options.png)
 
-3. 阅读警告消息，指示如果删除你的设备然后点击“**删除**”以从公司门户中删除设备会出现什么情况。
+3. 阅读警告消息，然后点击“删除”以从公司门户中删除设备。
 
-你的设备现在已删除。
-
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

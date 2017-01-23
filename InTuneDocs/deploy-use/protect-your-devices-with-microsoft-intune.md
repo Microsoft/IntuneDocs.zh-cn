@@ -1,11 +1,11 @@
 ---
-title: "保护设备 | Microsoft Intune"
+title: "保护设备 | Microsoft Docs"
 description: "了解有关 Intune 可帮助你保护你的设备免受未授权访问和其他威胁的一些方法。"
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 235db7eb1036bfccd074fd83b4b59e75529a5e34
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
 
 
 ---
 
 # <a name="protect-devices-with-microsoft-intune"></a>使用 Microsoft Intune 保护设备
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 提供一系列完整的功能，帮助保护你所管理的设备，以及存储在这些设备上的数据。 阅读本主题，了解这些功能的基础知识以及了解详细信息的方式。
 
@@ -63,6 +65,6 @@ Intune 继续支持适用于未注册但通过 Intune 计算机客户端软件�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

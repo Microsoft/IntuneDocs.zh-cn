@@ -20,6 +20,9 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 ---
 
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>在 Microsoft Intune 中评估移动设备管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本评估指南演示移动设备管理在 Intune 中的工作原理。 用户将：
 - 注册设备以使设备由 Intune 管理。
 - 创建用于组织用户和设备的组。
@@ -117,6 +120,6 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

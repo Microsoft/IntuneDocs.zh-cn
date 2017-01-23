@@ -1,5 +1,5 @@
 ---
-title: "系统要求你启用扫描设备的安全威胁 | Microsoft Intune"
+title: "系统要求启用“扫描设备的安全威胁”| Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: ad02abb58a5cf2ec1a131e3abda474da46b81f02
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 64152bc721dc2bc58a257496118e5d8ddbc17b8d
 
 
 ---
@@ -29,6 +29,6 @@ IT 管理员要求打开此设置以保护 Android 设备上的公司数据。 �
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "使用 Pulse Secure 的 Per-app VPN（针对 Android）| Microsoft Intune"
+title: "使用 Pulse Secure 的 Per-app VPN（针对 Android）| Microsoft Docs"
 description: "可为 Intune 托管的 Android 设备创建 per-app VPN 配置文件。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
+ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
+ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
 
 
 ---
 
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用自定义策略创建适用于 Android 设备的 per-app VPN 配置文件
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 可为由 Intune 管理的 Android 5.0 及更高版本设备创建每应用 VPN 配置文件。 首先，创建使用 Pulse Secure 或 Citrix 连接类型的 VPN 配置文件。 然后，创建将 VPN 配置文件与特定应用关联的自定义配置策略。 
 
@@ -28,7 +30,7 @@ ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
 
 > [!NOTE]
 >
-> 此配置文件仅支持 Pulse Secure 连接类型。
+> 此配置文件仅支持 Pulse Secure 和 Citrix 连接类型。
 
 
 ### <a name="step-1-create-a-vpn-profile"></a>步骤 1：创建 VPN 配置文件
@@ -78,6 +80,6 @@ ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

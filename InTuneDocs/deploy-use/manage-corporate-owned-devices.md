@@ -1,5 +1,5 @@
 ---
-title: "管理公司拥有的设备 | Microsoft Intune"
+title: "管理公司拥有的设备 | Microsoft Docs"
 description: "可采用多种方法注册企业拥有的设备。这具体取决于设备的类型、其购买方式以及组织需求。"
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
 
 
 ---
 
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 可通过 Intune 采用多种方法来管理组织或公司拥有的设备 (COD)，这具体取决于设备的类型、其购买方式及组织需求。 也可安装公司门户应用，注册和管理企业拥有的设备，如“自带设备办公”(BYOD) 方案中所述。
 
@@ -63,6 +65,6 @@ ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

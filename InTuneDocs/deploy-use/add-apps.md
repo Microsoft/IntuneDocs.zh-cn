@@ -1,11 +1,11 @@
 ---
-title: "添加应用 | Microsoft Intune"
+title: "添加应用 | Microsoft Docs"
 description: "在开始使用 Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>使用 Microsoft Intune 添加应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 在开始使用 Microsoft Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。 这些概念将帮助你了解哪些应用可以部署到哪些平台。 此外，可以帮助你了解部署应用之前必须到位的先决条件。
 
 ## <a name="app-types-that-you-can-deploy"></a>可以部署的应用类型
@@ -93,6 +96,6 @@ Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

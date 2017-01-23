@@ -1,5 +1,5 @@
 ---
-title: "注册或登录到 Intune | Microsoft Intune"
+title: "注册或登录到 Intune | Microsoft Docs"
 description: "如何注册 Intune 订阅或登录以开始你的订阅"
 keywords: 
 author: nathbarn
@@ -14,14 +14,17 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bf4a57146a77ce83a86112e08f5e839cf5f9eaf6
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>注册或登录到 Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 在登录或注册 Intune 之前，你需要确定你的组织是否已有 Microsoft Online Services 工作或学校帐户，或者你的组织是否与 Microsoft 签订了企业协议或等效的批量许可协议。 当你与 Microsoft 签署批量许可协议或订阅其他 Microsoft 云服务（如 Office 365）时，请提供工作或学校帐户。
 
 如果你已有工作或学校帐户，你只需使用该帐户**登录**就可将 Intune 添加到之前存在的订阅环境中。 否则，你将需要**注册**并创建新的帐户，以便为你的组织管理 Intune。
@@ -50,6 +53,6 @@ ms.openlocfilehash: bf4a57146a77ce83a86112e08f5e839cf5f9eaf6
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

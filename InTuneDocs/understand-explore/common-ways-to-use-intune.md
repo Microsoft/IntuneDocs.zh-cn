@@ -1,12 +1,12 @@
 ---
-title: "Intune 的常见使用方式 | Microsoft Intune"
+title: "Intune 的常见使用方式 | Microsoft Docs"
 description: "列出了 Intune 可提供帮助的六个最常见任务"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/09/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e68e467c3295f4751bf3466957a8a377a8e7d6
-ms.openlocfilehash: 095be86be3658a294d3f0aab525f5e0dd29b4cfe
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 6a38eb2a071dc2134c9b255b22b5b21a2ef783d0
 
 
 ---
 
 # <a name="common-ways-to-use-intune"></a>Intune 的常见使用方式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 在深入探讨实现任务之前，务必使公司的企业移动性利益干系人在业务目标上保持一致。  不管你是刚购买企业移动性产品还是迁移自另一个产品，这一点都很重要。  
 
@@ -99,6 +101,6 @@ Intune 提供了[大量预配和管理解决方案](/intune/deploy-use/manage-co
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

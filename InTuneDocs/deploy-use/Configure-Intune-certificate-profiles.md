@@ -1,5 +1,5 @@
 ---
-title: "配置证书配置文件 | Microsoft Intune"
+title: "配置证书配置文件 | Microsoft Docs"
 description: "了解如何创建 Intune 证书配置文件。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>配置 Itune 证书配置文件
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 按照[为 SCEP 配置证书基础结构](configure-certificate-infrastructure-for-scep.md)或[为 PFX 配置基础结构](configure-certificate-infrastructure-for-pfx.md)中所述配置基础结构和证书后，可以创建证书配置文件。 过程如下：
 
 - **任务 1**：导出受信任的根 CA 证书
@@ -157,6 +160,6 @@ ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

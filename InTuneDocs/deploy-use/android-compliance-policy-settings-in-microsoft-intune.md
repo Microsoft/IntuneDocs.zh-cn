@@ -1,5 +1,5 @@
 ---
-title: "适用于 Android 设备的合规性策略设置 | Microsoft Intune"
+title: "适用于 Android 设备的合规性策略设置 | Microsoft Docs"
 description: "本主题介绍适用于 Android 设备的设备合规性策略设置。"
 keywords: 
 author: andredm7
@@ -14,14 +14,16 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1c4721172d36f4f9b2b149f0da96e65bc65d9484
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的合规性策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 本主题中描述的策略设置适用于运行 Android 4.0 及更高版本或 Samsung KNOX 4.0 及更高版本的设备。
 

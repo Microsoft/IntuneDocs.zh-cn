@@ -1,11 +1,11 @@
 ---
-title: "电子邮件配置文件疑难解答 | Microsoft Intune"
+title: "电子邮件配置文件疑难解答 | Microsoft Docs"
 description: "电子邮件配置文件问题，以及故障排除并解决这些问题的方式。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
-ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
 
 
 ---
 
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中的电子邮件配置文件疑难解答
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 下面列出了一些电子邮件配置文件问题，以及排查并解决这些问题的方式。
 
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
 
-## <a name="unable-to-send-images-from-email-account"></a>无法从电子邮件帐户发送图像
+## <a name="unable-to-send-images-from--email-account"></a>无法从电子邮件帐户发送图像
 自动配置了电子邮件帐户的用户无法从其设备发送图片或图像。
 未启用“允许从第三方应用程序发送电子邮件”时，将发生此情况。
 
@@ -42,7 +45,7 @@ ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
 
 1.  打开 Configuration Manager 控制台&gt;**资产和合规性**。
 
-2.  展开“概述” -&gt;“符合性设置” -&gt;“公司资源访问”，选择“电子邮件配置文件”。
+2.  展开“概述” -&gt;“合规性设置” -&gt;“公司资源访问”，选择“电子邮件配置文件”。
 
 3.  右键单击电子邮件配置文件，然后打开**属性**。
 
@@ -61,7 +64,7 @@ ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
 
 由于 Samsung KNOX 不使用主机名识别配置文件，因此建议你不要创建多个电子邮件配置文件并部署到不同主机的同一邮件地址中，因为它们会相互覆盖。
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>KNOX 标准版设备的错误 0x87D1FDE8
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>KNOX 标准版设备的错误 0x87D1FDE8
 **问题**：为各种 Android 设备创建并部署适用于 Samsung KNOX 标准版的 Exchange Active Sync 电子邮件配置文件后，将在设备的“属性”&gt;“策略”选项卡中报告错误“0x87D1FDE8” 或“修正失败”。
 
 请查看适用于 Samsung KNOX 的 EAS 配置文件的配置以及源策略。 Samsung Notes 同步选项不再受支持，因此，不应该在配置文件中选择此选项。 确保设备有足够的时间处理策略，最多为 24 小时。
@@ -71,6 +74,6 @@ ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

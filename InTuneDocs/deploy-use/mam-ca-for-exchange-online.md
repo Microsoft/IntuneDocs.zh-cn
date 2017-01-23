@@ -1,5 +1,5 @@
 ---
-title: "为 Exchange Online 配置应用访问 | Microsoft Intune"
+title: "为 Exchange Online 配置应用访问 | Microsoft Docs"
 description: "本主题介绍如何为 MAM 应用配置条件访问策略。"
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: a0c0bac5082119b2cfa1518934dea8cdc3f75067
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 49b5b50016e2b36a7ad88fdf0a4e3ae2153290ba
 
 
 ---
 
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>创建 Exchange Online 条件访问以便仅允许 MAM 支持的应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题提供有关如何为 Exchange Online 设置条件访问以便仅允许支持 Intune 移动应用管理 (MAM) 策略的移动应用的分步说明。
 
 

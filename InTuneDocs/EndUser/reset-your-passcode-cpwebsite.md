@@ -1,33 +1,34 @@
 ---
-title: "从公司门户网站重置设备密码 | Microsoft Intune"
+title: "如何从公司门户网站重置设备密码 | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2aea845bc00c153f070e04abb67582a5d5a726ca
-ms.openlocfilehash: 47b36616f7a8ee23d4d47b41a1db2c41c185c6f5
+ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
+ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
 
 
 ---
 
-
-# 从公司门户网站重置设备密码
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何从公司门户网站重置设备密码
 
 如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](http://portal.manage.microsoft.com)进行重置。 可使用公司门户网站管理在 Intune 中注册的计算机和设备，还可以用于执行大多数使用公司门户应用时执行的相同任务。
 
 > [!NOTE]
-> 公司门户网站上可能不会显示“重置密码”按钮，这具体取决于 IT 管理员配置 Intune 的方式。 Windows 8.1 设备不支持密码重置。
+> 很可能你在公司门户网站中看不到“重置密码”按钮。 如果看不到该按钮，将需要联系 IT 管理员以通过公司门户网站获得支持。
 
 重置密码：
 
@@ -47,22 +48,21 @@ ms.openlocfilehash: 47b36616f7a8ee23d4d47b41a1db2c41c185c6f5
 
     查看此表以了解“重置密码”在设备上的工作方式。
 
-    |平台|Support|
+    |设备类型|重置密码时会发生什么情况|
     |------------|-----------|
-    |Android|创建临时字母数字密码。|
-    |iOS|从设备删除密码且不会创建临时密码。 如果使用的是 Touch ID，则需要在设备上对其进行重新设置，因为重置密码时会将其删除。|
-    |Windows 10（仅适用于移动设备）|创建临时字母数字密码。 支持 Windows Hello。|
-    |Windows Phone 8.1|创建临时数字密码。|
-    解锁设备后，可以转到设备上的“设置”来设置新密码。
+    |Android|删除现有密码，然后使用字母和数字创建临时密码|
+    |iOS|删除现有密码且不创建临时密码。 如果你使用 Touch ID 指纹扫描仪打开设备或购买商品，你将需要再次设置。|
+    |Windows 10 移动版|删除现有密码，然后使用字母和数字创建临时密码。 使用 Windows Hello 面部识别进行登录时仍然受支持。|
+    |Windows Phone 8.1|删除现有密码，然后使用数字创建临时密码。|
 
-5.  解锁设备，然后通过转到设备上的“设置”来设置新密码或更改临时密码。
+    5.  解锁设备，然后通过转到设备上的“设置”来设置新密码或更改临时密码。
 
     若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

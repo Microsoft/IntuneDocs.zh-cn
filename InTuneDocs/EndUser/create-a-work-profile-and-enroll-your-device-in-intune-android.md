@@ -1,5 +1,5 @@
 ---
-title: "创建工作配置文件并在 Intune 中注册设备 | Microsoft Intune"
+title: "创建工作配置文件并在 Intune 中注册设备 |Microsoft Docs"
 description: "介绍如何加密 Android 设备"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
 
 
 ---
@@ -81,12 +83,12 @@ ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
     ![Play Store for Work 应用页](./media/andr-afw-tap-work-play-store-icon.png)
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "为注册设备添加应用 | Microsoft Intune"
+title: "为已注册设备添加应用 | Microsoft Docs"
 description: "部署应用之前，必须将其添加到 Intune。 然后就可以在 Intune 控制台中对其进行部署和管理。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
+ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
+ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
 
 
 ---
 
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>为注册设备添加应用到 Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 可部署或管理应用前，需将其添加到 Microsoft Intune。 本主题介绍如何为注册设备添加应用。
 
@@ -57,6 +59,9 @@ ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
         例如，如果你想要将来自 iTunes 商店的 Microsoft Word 应用部署到设备，页面将如下所示：
 
         ![Intune 软件发行者](./media/publisher-for-mobile.png)
+
+> [!NOTE]
+> 如果要从商店添加和部署应用，最终用户必须具有该商店的帐户才能安装应用。
 
 3.  在“软件描述”页上，配置下列设置：
 
@@ -100,6 +105,6 @@ ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

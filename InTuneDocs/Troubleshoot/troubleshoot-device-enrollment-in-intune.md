@@ -1,11 +1,11 @@
 ---
-title: "设备注册疑难解答 | Microsoft Intune"
+title: "设备注册疑难解答 | Microsoft Docs"
 description: "有关设备注册问题故障排除的建议。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 01/10/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
-ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
+ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
+ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
 
 
 ---
 
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 本主题提供有关设备注册问题故障排除的建议。 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
@@ -29,7 +31,7 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
--   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/prerequisites-for-enrollment.md)
+-   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/prerequisites-for-enrollment)
 -   [设置 iOS 和 Mac 设备管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [设置 Windows 设备管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -37,11 +39,8 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 托管的设备用户可收集注册和诊断日志以供你查看。 以下提供了有关收集日志的用户说明：
 
-- [使用 USB 电缆将 Android 诊断数据日志发送给 IT 管理员](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-- [使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-- [将 Android 注册错误发送给 IT 管理员](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-- [将 iOS 注册错误发送给 IT 管理员](/intune/enduser/send-errors-to-your-it-admin-ios)
-
+- [将 Android 注册错误发送给 IT 管理员](https://docs.microsoft.com/intune/enduser/send-enrollment-errors-to-your-it-admin-android)
+- [将 iOS 错误发送给 IT 管理员](https://docs.microsoft.com/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>常规注册问题
@@ -56,9 +55,9 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 1.  在 Intune 管理门户中，确保用户分配的设备不超过允许的最大数量 15 台。
 
-2.  在 Intune 管理控制台中的“管理\移动设备管理\注册规则”下，确保设备注册限制设置为 15。
+2.  在 Intune 管理控制台中的“管理” > “移动设备管理” > “注册规则”下，确保设备注册限制设置为 15。
 
-移动设备用户可以在以下 URL 中删除设备： [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)。
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 管理员可以在 Azure Active Directory 门户中删除设备。
 
@@ -68,7 +67,7 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 2.  单击页面左侧的链接，使用组织 ID 登录。
 
-3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不会要求提供信用卡或付款（请选择**注册免费的 Azure Active Directory**订阅链接）。
+3.  如果还没有 Azure 订阅，请选择“注册免费 Azure Active Directory”订阅链接创建一个。 如果已有付费帐户，则无需使用信用卡或进行付款。
 
 4.  选择“Active Directory”  ，然后选择你的组织。
 
@@ -82,11 +81,11 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 > [!NOTE]
 
-> 可通过使用设备注册管理器来避免达到设备注册上限，如[使用 Microsoft Intune 中的设备注册管理器注册企业自有设备](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)中所述。
+> 可通过使用设备注册管理器帐户避免达到设备注册上限，如[使用 Microsoft Intune 中的设备注册管理器注册企业自有设备](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)中所述。
 >
-> 如果对添加到设备注册管理器组的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
+> 如果对添加到设备注册管理器帐户的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
-### <a name="company-portal-emporarily-unavailable"></a>公司门户暂时不可用
+### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
 **问题：**用户的设备上收到“公司门户暂时不可用”错误。
 
 **解决方法：**
@@ -95,23 +94,23 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 2.  在设备上，打开浏览器，浏览到 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然后尝试用户登录。
 
-3.  如果用户无法登录，则让他们尝试另一个网络。
+3.  如果用户无法登录，请让她尝试另一个网络。
 
 4.  如果仍然失败，请确保用户的凭据已与 Azure Active Directory 正确同步。
 
-5.  如果用户成功登录，iOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，你需要手动安装 Intune 公司门户应用，之后才能重试注册。
+5.  如果用户成功登录，iOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，需要手动安装 Intune 公司门户应用，之后才能重试注册。
 
 ### <a name="mdm-authority-not-defined"></a>未定义 MDM 机构
 **问题：**用户收到“未定义 MDM 机构”错误。
 
 **解决方法：**
 
-1.  确保已针对你在使用的 Intune 服务版本（即 Intune、O365 MDM 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，在**管理员** &gt; **移动设备管理**中设置 MDM 机构。 对于 Configuration Manager with Intune，则在配置 Intune 连接器时对其进行设置，在 O365 中则对**移动设备**进行设置。
+1.  验证是否已针对使用的 Intune 服务类型（即 Intune、Office 365 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，请在“管理员”&gt;“移动设备管理”中设置 MDM 机构。 对于 Configuration Manager with Intune，请在配置 Intune 连接器时对其进行设置，在 Office 365 中则对“移动设备”进行设置。
 
     > [!NOTE]
     > 设置 MDM 机构后，只能通过联系支持人员对其进行更改，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
-2.  确保该用户的凭据已与 Azure Active Directory 正确同步，方法是检查其 UPN 是否与帐户门户中的 Active Directory 信息匹配。
+2.  通过检查用户的 UPN 是否与 Office 365 门户中的 Active Directory 信息匹配，验证该用户的凭据是否已与 Azure Active Directory 正确同步。
     如果 UPN 与 Active Directory 信息不匹配：
 
     1.  关闭本地服务器上的目录同步。
@@ -148,7 +147,7 @@ ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 **问题：**向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
 
 
-**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com)）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。  现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com)）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。 现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的问题
@@ -251,6 +250,34 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 ## <a name="ios-issues"></a>iOS 的问题
+
+### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>设备处于非活动状态，或管理控制台不能与其通信
+**问题：**iOS 设备未使用 Intune 服务签入。 设备必须定期使用该服务签入，以保持对受保护的公司资源的访问权限。 如果设备不签入：
+
+- 它们将无法从 Intune 服务接收策略、应用和远程命令。
+- 它们在管理控制台中显示的管理状态为“不正常”。
+- 受条件访问策略保护的用户可能失去对公司资源的访问权限。
+
+**解决方法：**与最终用户共享以下解决方法，帮助他们重新获得公司资源的访问权限。
+
+如果用户启动了 iOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...” 内联通知。 
+
+  ![尝试同步通知](./media/ios_cp_app_trying_to_sync_notification.png)
+
+如果同步成功，将在 iOS 公司门户应用中看到“同步成功”内联通知，指示你的设备处于正常状态。
+
+  ![同步成功通知](./media/ios_cp_app_sync_successful_notification.png)
+
+如果同步失败，用户将在 iOS 公司门户应用中看到“无法同步”内联通知。 
+
+  ![无法同步通知](./media/ios_cp_app_unable_to_sync_notification.png)
+
+若要解决此问题，用户必须选择“设置”按钮，该按钮位于“无法同步”通知的右侧。 通过“设置”按钮，用户可转到“公司访问设置”流屏幕，在此处，用户可按提示注册设备。 
+
+  ![“公司访问设置”屏幕](./media/ios_cp_app_company_access_setup.png)
+
+注册后，设备将恢复到正常状态，并重新获得对公司资源的访问权限。
+
 ### <a name="profile-installation-failed"></a>配置文件安装失败
 **问题：**用户的 iOS 设备上收到**配置文件安装失败**错误。
 
@@ -317,9 +344,9 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 ### <a name="other-ios-enrollment-errors"></a>其他 iOS 注册错误
-有关 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)。
+有关 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune/enduser/using-your-iOS-or-macOS-device-with-intune)。
 
-## <a name="pc-issues"></a>PC 问题
+## <a name="pc--issues"></a>PC 问题
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
 **问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
@@ -330,14 +357,14 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 **解决方法：**
 
-1. 从**开始**菜单中，选择**运行**  ->  **MMC**。
-1. **文件**  ->  **添加/删除管理单元**。
-1. 双击**证书**，依次选择**计算机帐户**和**下一步**，然后选择**本地计算机**。
-1. 双击**证书(本地计算机)**，再选择**个人/证书**。
-1. 查找 Sc_Online_Issuing 发布的 Intune 证书，并将其删除（若存在）
-1. 删除注册表项 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**（若存在）及所有子项。
+1. 在“开始”菜单中，键入“运行” -> “MMC”。
+1. 选择“文件” > “添加/删除管理单元”。
+1. 双击“证书”，选择“计算机帐户” > “下一步”，然后选择“本地计算机”。
+1. 双击“证书(本地计算机)”，然后选择“个人/证书”。
+1. 查找 Sc_Online_Issuing 发布的 Intune 证书，并将其删除（若存在）。
+1. 如果以下注册表项存在，请将其删除：**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 及所有子项。
 1. 尝试重新注册。
-1. 如果仍无法注册计算机，请查找并删除以下项（若存在）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。
+1. 如果仍无法注册电脑，请查找并删除此项（若存在）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。
 1. 尝试重新注册。
 
     > [!IMPORTANT]
@@ -373,6 +400,6 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

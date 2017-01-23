@@ -1,5 +1,5 @@
 ---
-title: "启用设备注册 | Microsoft Intune"
+title: "启用设备注册 | Microsoft Docs"
 description: "设置 MDM 机构，并启用 iOS、Windows、Android 和 Mac 设备的注册。"
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
 
 
 ---
 
 # <a name="enroll-mobile-devices-and-install-an-app"></a>注册移动设备并安装应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 若要使用 Intune 设置移动设备管理，必须先设置“移动设备管理机构”，它标识可管理与你的帐户关联的设备的服务。 本指南假设你将使用 Intune 服务，而不是 System Center Configuration Manager。 设置 MDM 机构后，便可以启用对设备平台的管理，并使用公司门户应用注册设备。
 
 ## <a name="enable-device-enrollment"></a>启用设备注册
@@ -66,6 +69,6 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

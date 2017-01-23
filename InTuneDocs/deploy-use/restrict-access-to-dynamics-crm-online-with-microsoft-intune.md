@@ -1,11 +1,11 @@
 ---
-title: "限制对 Dynamics CRM Online 的访问 | Microsoft Intune"
+title: "保护对 Dynamics CRM Online 的访问 | Microsoft Docs"
 description: "使用条件访问保护和控制对 Dynamics CRM Online 的访问。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>使用 Intune 限制对 Dynamics CRM Online 的访问
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>使用 Intune 保护对 Dynamics CRM Online 的访问
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可使用 Microsoft Intune 条件性访问控制从 iOS 和 Android 设备对 Microsoft Dynamics CRM Online 进行的访问。  Intune 条件访问包含两个组成部分：
 * [设备合规性策略](introduction-to-device-compliance-policies-in-microsoft-intune.md)，设备必须符合才能被视为合规。
 * [条件性访问策略](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)，可指定设备必须满足才能访问服务的条件。
 
-若要了解有关条件访问如何工作的详细信息，请阅读文章[限制对电子邮件、O365 服务和其它服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
+若要了解有关条件访问如何工作的详细信息，请阅读[保护对电子邮件、O365 服务和其他服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
 > [!IMPORTANT]
 > 若要部署条件性访问，必须订阅 Intune 和 Azure Active Directory Premium，且必须向用户授予这两项产品的许可。 **企业移动性 + 安全性 (EMS) 订阅**包括 Intune 和 Azure Active Directory Premium 订阅。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)。 如果没有 EMS 订阅，可获取 Azure Active Directory Premium 订阅。 请参阅 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
@@ -92,15 +95,15 @@ ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
 * **已向 AAD 注册并合规的设备**。 允许这些设备访问 Dynamics CRM。
 
 ##  <a name="next-steps"></a>后续步骤
-* [限制对 Exchange Online 的访问](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [保护对 Exchange Online 的访问](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [限制对 Exchange 内部部署的访问](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [限制对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [保护对 Exchange 内部部署的访问](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [保护对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [限制对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [保护对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

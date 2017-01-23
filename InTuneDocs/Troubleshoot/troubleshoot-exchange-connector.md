@@ -1,8 +1,9 @@
 ---
-title: "Exchange Connector 疑难解答| Microsoft Intune"
+title: "Exchange Connector 疑难解答| Microsoft Docs"
 description: "解决与 Intune Exchange connector 相关的问题。"
 keywords: 
-author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -13,16 +14,19 @@ ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 04ac69a30f6c1d91fe755f9720fbc2adc51745f7
+ms.sourcegitcommit: 04c89b6dba34be4e3c49bfc907abe7a6240f3d51
+ms.openlocfilehash: 4ada25264aee779f5b31708fdec4f44d19b2e7f7
 
 
 ---
 
-# Exchange Connector 疑难解答
+# <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector 疑难解答
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题介绍如何解决可能与 Intune Exchange Connector 相关的问题。
 
-## 检查 Connector 配置的步骤 
+## <a name="steps-for-checking-the-connector-configuration"></a>检查 Connector 配置的步骤 
 
 检查 Exchange Connector 的配置，然后查看问题是否已得到解决。
 
@@ -31,7 +35,7 @@ ms.openlocfilehash: 04ac69a30f6c1d91fe755f9720fbc2adc51745f7
 - 配置 Exchange Connector 时，指定尽可能接近托管 Exchange Connector 的服务器的客户端访问服务器 (CAS)。 CAS 和 Exchange Connector 间的通信延迟可能导致设备发现延迟，尤其是在使用 O365 专用时。
 - 请注意，与 Exchange CAS 的 Exchange Connector 同步间存在时间滞后。 完全同步一天进行一次，而增量（快速）同步每两个小时进行一次。 持有新注册的设备的用户可能遇到访问延迟。
 - 
-## Exchange 中未发现的 Exchange ActiveSync 设备
+## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange 中未发现的 Exchange ActiveSync 设备
 请查看 Exchange Connector 是否正在与 Exchange 服务器同步。 若要进行此操作，请查找完全同步或增量同步的日志。 查看 Exchange Connector 日志。 如果自设备连接后完全同步或增量同步已成功完成，则你已将其作为问题的根源消除。 如果未进行任何同步，则收集相关的同步日志并将其添加到你的支持请求中。
 
 - 如果用户不具备 Intune 许可证，则 Exchange connector 将无法发现其设备。
@@ -40,16 +44,16 @@ ms.openlocfilehash: 04ac69a30f6c1d91fe755f9720fbc2adc51745f7
 - 对于 Exchange 专用（O365 专用）环境，必须在初始化设置期间的专用环境中将 Exchange Connector 指向 Exchange 2013（而非 2010）CAS，因为其在执行 Powershell cmdlet 时将只与此 CAS 进行通信。
 
 
-## 使用 Powershell 获取有关 Exchange Connector 问题的详细数据
+## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>使用 Powershell 获取有关 Exchange Connector 问题的详细数据
 - 若要获取某个邮箱的所有移动设备的列表，请使用 Get-ActiveSyncDeviceStatistics -mailbox mbx
 - 若要获取某个邮箱的 SMTP 地址的列表，请使用 Get-Mailbox -Identity user | select emailaddresses | fl。
 - 若要获取有关设备的访问状态的详细信息，请使用 Get-CASMailbox <upn> | fl
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

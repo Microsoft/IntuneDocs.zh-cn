@@ -1,5 +1,5 @@
 ---
-title: "使用设置助理注册 iOS 设备 | Microsoft Intune"
+title: "使用设置助理注册 iOS 设备 | Microsoft Docs"
 description: "使用 Apple Configurator 工具注册企业自有的 iOS 设备以将设备恢复出厂设置，并准备对其运行设置助理。"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 01de894167a65f6b3a46808610232feb8dd7e536
 
 
 ---
 
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>使用设置助理通过 Apple Configurator 注册 iOS 设备
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017)。 此过程可恢复设备的出厂设置，并将其准备好以运行设置助理，从而为设备的新用户安装公司策略。
 
 ## <a name="setup-assistant-enrollment-for-ios-devices-with-microsoft-intune"></a>使用 Microsoft Intune 对 iOS 设备设置助理注册
@@ -151,6 +154,6 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

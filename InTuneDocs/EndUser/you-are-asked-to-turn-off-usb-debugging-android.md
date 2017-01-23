@@ -1,5 +1,5 @@
 ---
-title: "系统要求你关闭 USB 调试 | Microsoft Intune"
+title: "系统要求关闭 USB 调试 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 8b9efea8bb43b8a7d1754c00a358595af3f0e42c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a2555deeb5829cf951ed56f856e43d69f8e8991
 
 
 ---
@@ -33,6 +33,6 @@ IT 管理员要求禁用此设置以保护 Android 设备上的公司数据。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

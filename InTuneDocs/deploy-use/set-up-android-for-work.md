@@ -1,5 +1,5 @@
 ---
-title: "设置 Android for Work 管理 | Microsoft Intune"
+title: "设置 Android for Work 管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 为 Android for Work 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
@@ -12,13 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: cfb1ba8ad3d737538fe1e54167121552571d7a1b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
 
 
 ---
 
 # <a name="enable-enrollment-of-android-for-work-devices"></a>启用 Android for Work 设备的注册
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 

@@ -1,11 +1,11 @@
 ---
-title: "限制对 Skype for Business Online 的访问 | Microsoft Intune"
+title: "保护对 Skype for Business Online 的访问 | Microsoft Docs"
 description: "使用条件访问保护和控制对 Skype for Business Online 的访问。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 04fcdceb593051a32b715cb39b53cc328f167d09
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 37915fcfc0f10e65aa65d400422d72adc63513fa
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制对 Skype for Business Online 的访问
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>使用 Microsoft Intune 保护对 Skype for Business Online 的访问
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可使用 **Skype for Business Online** 的条件性访问策略控制对 Skype for Business Online 的访问。
 条件性访问有两个组件：
 - 设备合规性策略，设备必须符合才能被视为合规。
 - 条件性访问策略，可指定设备必须满足才能访问服务的条件。
-若要了解有关条件性访问如何工作的详细信息，请阅读文章[限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
+若要了解有关条件性访问如何工作的详细信息，请阅读文章[保护对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
 
 当目标用户尝试在其设备上使用 Skype for Business Online 时，会进行以下评估：
 
@@ -117,6 +120,6 @@ ms.openlocfilehash: 04fcdceb593051a32b715cb39b53cc328f167d09
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

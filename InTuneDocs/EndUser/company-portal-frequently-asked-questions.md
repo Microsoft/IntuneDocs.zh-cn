@@ -1,22 +1,24 @@
 ---
-title: "什么是公司门户？ | Microsoft Intune"
+title: "什么是公司门户？ |Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 # <a name="about-the-company-portal"></a>关于公司门户
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>什么是公司门户，使用它可以执行什么操作？
-Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。 你可通过两种不同方式获取公司门户：
+公司门户可让你访问公司或学校的数据和应用。 你可通过两种不同方式获取公司门户：
 
 - 通过在设备上安装公司门户应用。 通常通过在设备上转到应用商店，可以获取公司门户应用，但 IT 管理员也可为你安装公司门户应用。
 - 通过转到 IT 管理员设置的[公司门户网站](http://portal.manage.microsoft.com)。
@@ -41,10 +43,10 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 若要查看与在设备上使用公司门户应用可以执行的操作相比，使用公司门户网站可执行的操作，请选择以下链接之一：
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS 和 macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [公司门户网站](using-the-intune-company-portal-website.md)
+- [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
+- [通过 Intune 使用 iOS 和 macOS 设备](using-your-ios-or-macOS-device-with-intune.md)
+- [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
+- [使用公司门户网站](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>将计算机或设备添加到公司门户时，会发生什么情况？
 当你将计算机或设备添加到公司门户时，可能会安装了某个软件或下载了某个应用（视设备而定）。  你还可以授予 IT 管理员管理你的设备的权限，以帮助保护设备上的公司信息。
@@ -58,9 +60,9 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>可将何种计算机或设备添加到公司门户？
 
--   iPhone、iPad 和 macOS 设备
+-   使用 iOS（iPhone、iPad）和 macOS（iMac、MacBook）的 Apple 设备
 
--   Android 移动设备
+-   Android 设备
 
 -   Windows 设备
     -   Windows 10 移动版
@@ -96,6 +98,6 @@ Microsoft Intune 公司门户可让你访问公司或学校的数据和应用。
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

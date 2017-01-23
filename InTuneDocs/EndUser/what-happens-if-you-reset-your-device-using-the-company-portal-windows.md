@@ -1,5 +1,5 @@
 ---
-title: "使用公司门户重置你的 Windows 设备会发生什么情况？ | Microsoft Intune"
+title: "使用公司门户重置你的 Windows 设备会发生什么情况？ |Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 
 ---
@@ -36,6 +38,6 @@ ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

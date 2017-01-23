@@ -1,5 +1,5 @@
 ---
-title: "用于 MAM 策略的 Android 应用 | Microsoft Intune"
+title: "具有 MAM 策略的 Android 应用 | Microsoft Docs"
 description: "本主题介绍当你的应用由移动应用管理策略托管时会出现的情况。"
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 945c9f48846fc37358c44b83990feed1f3694966
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: aeacfddb3ed42938dd9443e2734222c977436430
 
 
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-mam-policies"></a>Android 应用由 MAM 策略托管时会出现的情况
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题介绍具有移动应用管理 (MAM) 策略的应用的用户体验。 仅在工作环境中使用应用时才应用 MAM 策略：例如，用户使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件时。
 ##  <a name="access-apps"></a>访问应用
 

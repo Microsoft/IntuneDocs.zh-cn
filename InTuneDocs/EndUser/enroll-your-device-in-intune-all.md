@@ -1,5 +1,5 @@
 ---
-title: "在 Intune 中注册设备 | Microsoft Intune"
+title: "在 Intune 中注册设备 | Microsoft Docs"
 description: "提供指向有关如何在 Intune 中注册不同设备的信息的链接"
 keywords: 
 author: barlanmsft
@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
+searchScope:
+- Company Portal
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: da065b7ea92d9372b9dd8bbbcdf21b0f789cc241
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 50ec5fa3b7286d2da53af849bfaa4bcb27e388a5
 
 
 ---

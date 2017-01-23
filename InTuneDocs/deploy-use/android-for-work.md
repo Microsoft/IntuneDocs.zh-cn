@@ -1,5 +1,5 @@
 ---
-title: "关于 Android for Work | Microsoft Intune"
+title: "关于 Android for Work | Microsoft Docs"
 description: "Intune 管理 Android for Work，在用户将其 Android 设备用于工作时提供其他管理功能和隐私。"
 keywords: 
 author: nathbarn
@@ -11,13 +11,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: 83914246bde673b188ca3f7d9cf50b4d0de2edd4
-ms.openlocfilehash: 127db326fc96625c719b8136964bae014a904b3d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: e9a99868e7bd4c3aa45de4d221f28c1d2f3efb74
 
 
 ---
 
 # <a name="manage-android-for-work-devices-with-intune"></a>使用 Intune 管理 Android for Work 设备
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Android for Work 是一组 Android 设备功能和服务。 这些功能和服务在用户将其 Android 设备用于工作时提供其他管理功能和隐私。 Intune 可帮助用户将应用和公司资源部署到 Android for Work 设备，确保将工作和个人信息分开。 部署成功后，他们访问的应用和数据仍单独保留在设备上的 Android for Work 环境中。
 
@@ -87,6 +89,6 @@ VPN 支持类似于 Android VPN 配置文件。 提供了同样的 VPN 提供商
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

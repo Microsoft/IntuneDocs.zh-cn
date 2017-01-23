@@ -1,11 +1,11 @@
 ---
-title: "VPN 连接 | Microsoft Intune"
+title: "VPN 连接 | Microsoft Docs"
 description: "使用 VPN 配置文件将 VPN 设置部署到组织中的用户和设备。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
+ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>Microsoft Intune 中的 VPN 连接
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 Microsoft Intune 中的 VPN 配置文件将 VPN 设置部署到你组织中的用户和设备，以便它们可以方便且安全地连接到网络。
 
@@ -67,7 +69,7 @@ L2TP|iOS 自定义配置文件|否 |否 |否|是 (OMA-URI)|是|
 > [!IMPORTANT]
 > 在你能够使用已部署到设备的 VPN 配置文件之前，你必须安装适用于该配置文件的 VPN 应用。 你可以利用[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)主题中的信息帮助你使用 Intune 部署适用的应用。  
 
- 了解如何使用 [VPN 配置文件的自定义配置](custom-configurations-for-vpn-profiles.md)中的 URI 设置创建自定义 VPN 配置文件。     
+ 了解如何使用 [VPN 配置文件的自定义配置](create-custom-vpn-profiles.md)中的 URI 设置创建自定义 VPN 配置文件。     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>保护 VPN 配置文件的方法
 
@@ -194,13 +196,10 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 “策略”  工作区“概述”  页的状态摘要和警报可识别需要关注的策略问题。 此外，状态摘要会显示在“仪表板”工作区中。
 
-### <a name="see-also"></a>另请参阅
-[VPN 配置文件的自定义配置](Custom-configurations-for-VPN-profiles.md)
-
-[用于 Android Pulse Secure 的每个应用程序 VPN](per-app-vpn-for-android-pulse-secure.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Dec16_HO3-->
 
 
