@@ -7,7 +7,7 @@
 ### [其他选项和其他功能](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [转换为付费订阅](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [常见方案](understand-explore/common-ways-to-use-intune.md)
-## [术语表](understand-explore/intune-glossary.md)
+
 
 # [开始使用](get-started/get-started.md)
 ## [安装 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -44,6 +44,7 @@
 
 # 新功能
 ## [新增功能](whats-new/whats-new-in-microsoft-intune.md)
+## [Azure 预览版的新增功能](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [新增功能存档](whats-new/whats-new-archive.md)
 
 # 部署和使用
@@ -72,6 +73,7 @@
 #### [安装电脑客户端](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [常见电脑管理任务](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [解决电脑策略冲突](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [管理 Android for Work](deploy-use/android-for-work.md)
 
 ## 配置设备
 ### [使用策略管理设备上的设置和功能](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -97,6 +99,7 @@
 #### [Intune 中的 VPN 连接](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Intune 中的电子邮件配置文件](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [使用组管理用户和设备](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [将组迁移到 Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [将设备映射到组](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [了解你的设备清单](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
@@ -155,11 +158,11 @@
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [阻止没有 ADAL 的应用](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [保护对网络的访问 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [根据设备、网络和应用程序风险保护访问](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [设置 Lookout 设备威胁防护](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [在 Intune 中启用 Lookout](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [为工作应用部署 Lookout](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [启用设备威胁防护合规性策略](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [根据设备、网络和应用程序风险保护访问](deploy-use/device-threat-protection.md)
+#### [设置 Lookout 设备威胁防护](deploy-use/device-threat-protection-subscription-setup.md)
+#### [在 Intune 中启用 Lookout](deploy-use/device-threat-protection-enable.md)
+#### [为工作应用部署 Lookout](deploy-use/device-threat-protection-apps.md)
+#### [启用设备威胁防护合规性策略](deploy-use/device-threat-protection-policy.md)
 
 ### [使用 MAM 保护应用数据](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [适用于 MAM 策略的 Azure 门户](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -216,7 +219,9 @@
 
 ## [Troubleshoot Lookout Integration](troubleshoot/troubleshooting-lookout-integration.md)（Lookout 集成故障排除）
 
+# [术语表](understand-explore/intune-glossary.md)
 
-<!--HONumber=Jan17_HO1-->
+
+<!--HONumber=Jan17_HO3-->
 
 
