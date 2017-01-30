@@ -42,8 +42,8 @@
 ## [第 9 部分：测试和验证](plan-design/section-9-test-and-validation.md)
 ## [其他资源](plan-design/additional-resources.md)
 
-# 新功能
-## [新增功能](whats-new/whats-new-in-microsoft-intune.md)
+# [新增功能](whats-new/whats-new-in-microsoft-intune.md)
+## [Intune 应用 UI 的新增功能](whats-new/whats-new-in-intune-app-ui.md)
 ## [Azure 预览版的新增功能](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [新增功能存档](whats-new/whats-new-archive.md)
 

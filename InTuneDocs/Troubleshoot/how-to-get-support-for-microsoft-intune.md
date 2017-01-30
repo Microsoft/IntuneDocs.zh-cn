@@ -14,19 +14,35 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
+ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
+ms.openlocfilehash: e91c9da9614791e128a64add822d7f101818b9c0
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的管理支持
+# <a name="how-admins-get-support-for-microsoft-intune"></a>管理员如何获取对 Microsoft Intune 的支持
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft 对 Microsoft Intune 提供全球技术、售前、帐单和订阅支持。 对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。 在线技术支持可通过英语和日语提供。 电话支持和联机帐单支持可使用其他语言。
 
 Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免费。 顶级支持客户需要支付程序问题（例如，如何配置 Intune 功能）方面的费用。
+
+## <a name="find-help-without-opening-a-support-ticket"></a>在不创建支持票证的情况下寻求帮助
+
+在创建支持票证之前，查看下列资源，寻找答案。
+
+### <a name="microsoft-intune-technet-forums"></a>Microsoft Intune TechNet 论坛
+
+提出问题或与 Microsoft 技术专家展开讨论！ 具有搜索功能的 [Microsoft Intune TechNet 论坛](https://social.technet.microsoft.com/Forums/home)提供答案和见解。
+
+    ![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 产品反馈网站
+
+是否要向 Microsoft 提出改进 Intune 的建议？ 请在 Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) 反馈网站向我们提供你的想法。 也可以对其他人在 UserVoice 上提出的想法进行投票。 
+
+    ![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
 
 ## <a name="create-an-online-service-ticket"></a>创建在线服务票证
 
@@ -116,6 +132,6 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
