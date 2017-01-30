@@ -27,7 +27,7 @@ ms.openlocfilehash: 3a20dc18a72518ba9e01552cd1283170972b4bbb
 
 若要将用户链接到计算机：
 
-1.  在“Microsoft Intune 管理控制台”[](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含需链接到用户的计算机的另一个组）。
+1.  在[Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含需链接到用户的计算机的另一个组）。
 
 2.  选择要链接用户的计算机，然后选择“链接用户”。
 
