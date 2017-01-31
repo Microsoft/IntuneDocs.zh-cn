@@ -14,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
+ms.sourcegitcommit: 40298ae2de5f3bc8090e19882e039c5ec6471820
+ms.openlocfilehash: 3d3c3e0b5fa68f838b8cf1d72346d7abb140073a
 
 
 ---
@@ -60,7 +60,10 @@ ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
 -   iOS 8.1 或更高版本
 -   Android 4 或更高版本
 
-目前不支持 Windows 设备。
+>[!NOTE]
+>在无注册方案的情况下，MAM 中不支持 Windows 设备。 但是，使用 Intune 注册 Windows 10 设备时，可以使用 Windows 信息保护，它提供了类似功能。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+
+
 ##  <a name="how-mam-policies-protect-app-data"></a>MAM 策略如何保护应用数据
 
 ###  <a name="apps-without-mam-policies"></a>未实施 MAM 策略的应用
@@ -132,6 +135,6 @@ MDM 解决方案：
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

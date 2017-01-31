@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 12/31/2016
+ms.date: 1/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8063b933a767740a7951fa69a918a8677b664d02
-ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: 05b714e1aef180a65b7b203d5a04c0eeaf288257
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”方式注册通过设备注册计划 (DEP) 购买的 iOS 设备。 注册包包括设备的设置助理选项。 用户无法注销通过 DEP 注册的设备。
+Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”方式注册通过设备注册计划 (DEP) 购买的 iOS 设备。 注册包包括设备的设置助理选项。
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>使用 Microsoft Intune 对 iOS 设备进行 Apple DEP 管理
 要使用 Apple 的设备注册计划 (DEP) 管理公司拥有的 iOS 设备，组织必须加入 Apple DEP 并通过该计划获取设备。 该过程的详细信息，可以通过以下网站获得：  [https://deploy.apple.com](https://deploy.apple.com)。 该计划的优点包括免手动设置设备，无需通过 USB 电缆将每个设备连接到计算机。
@@ -83,9 +83,9 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
         - **受到监督** - 启用更多的管理选项，并默认禁用激活锁定
      - **将注册配置文件锁定到设备** - 在激活过程中设置，且只能通过恢复出厂设置更改
         - **禁用** - 允许从**设置**菜单中删除管理配置文件
-        - **启用** -（需要**准备模式** = **受到监督**）禁用可能允许删除管理配置文件的 iOS 设置
+        - **启用** -（需要**准备模式** = **受到监督**）会禁用用于删除管理配置文件的 iOS 设置菜单选项
      - **设置助理选项** - 这些可选设置可以稍后在 iOS 的“设置”菜单中设置。
-        - **密码** - 在激活过程中提示输入密码。 始终需要密码，除非设备将受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。
+        - **密码** - 在激活过程中提示输入密码。 始终需要密码，除非设备将受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限
         - **定位服务** - 如果启用，在激活过程中设置助手会提示此服务
         - **还原** - 如果启用，在激活过程中设置助手会提示进行 iCloud 备份
         - **Apple ID**如果启用，Intune 在没有 ID 的情况下尝试安装应用时，iOS 将提示用户提供 Apple ID。 下载 iOS 应用商店应用（包括由 Intune 安装的应用）时需要 Apple ID。
@@ -119,6 +119,6 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: stabar
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89f5dc1581571cfcb6e03b5dce740bc7f8a8a9ce
-ms.openlocfilehash: a02a015ce1208ee5fa081e60ce0b88c69d4efa50
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: 3417d2966dea166c96a2b727977e8c85a63af80c
 
 
 ---
@@ -36,9 +36,9 @@ ms.openlocfilehash: a02a015ce1208ee5fa081e60ce0b88c69d4efa50
 
 1.  登录到 Azure 门户，选择“更多服务” > “其他” > “Intune”。
 
-2.  在 Intune 边栏选项卡上，选择“管理应用”。
+2.  在 Intune 边栏选项卡上，选择“管理应用” > “应用选择性擦除”。
 
-3.  选择“新建擦除请求”。 这会打开“新建擦除请求”边栏选项卡。
+3.  选择“新建擦除请求”。 “新建擦除请求”边栏选项卡打开。
 
     ![新建擦除请求边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
