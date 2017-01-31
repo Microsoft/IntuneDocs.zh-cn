@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
+ms.sourcegitcommit: 4726cc621d65200211a5cef6f80c14b2c447b8a7
+ms.openlocfilehash: 4fcf991ec2d982c945814ccc49ae3862dece52b3
 
 
 ---
@@ -46,7 +46,7 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 
 为要管理的设备平台启用设备注册。 根据你的平台，需要的要求不同：
 
--  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [Windows 电脑](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 移动版和 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -69,6 +69,6 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO3-->
 
 

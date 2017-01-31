@@ -17,8 +17,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
-ms.openlocfilehash: 8e6aaaa40b28b1d3f61399c695530321824c2a05
+ms.sourcegitcommit: 2daa8a807b72e46d0cabed7d68747932b91a78b4
+ms.openlocfilehash: 0f6a00edbd97655db0cd64b3bfb75a6dee932ee8
 
 
 ---
@@ -69,6 +69,6 @@ ms.openlocfilehash: 8e6aaaa40b28b1d3f61399c695530321824c2a05
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 
