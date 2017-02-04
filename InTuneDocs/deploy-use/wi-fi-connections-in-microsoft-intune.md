@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -50,8 +50,6 @@ ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 -   Mac OS X 10.9 及更高版本
 
 对于运行 Windows 8.1 或 Windows 10 桌面版或移动版操作系统的设备，可以导入之前导出到文件的 Wi-Fi 配置文件。 有关详细信息，请参阅[导出或导入 Wi-Fi 配置的配置文件（适用于 Windows 设备）](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices)。
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”。
 
