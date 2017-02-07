@@ -2,8 +2,8 @@
 title: "使用 Lookout 设置订阅 | Microsoft Docs"
 description: "本主题详述如何配置 Lookout 设备威胁保护。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article

@@ -1,8 +1,8 @@
 ---
 title: "部署 Lookout for Work 应用 | Microsoft Docs"
 description: "配置并部署 Android 版 Lookout for Work 应用。"
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 12/20/2016
 ms.topic: article
