@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
@@ -45,8 +46,6 @@ ms.openlocfilehash: 215e630141aa2739a2fe73926476db965c42922a
 有关用于创建工作配置文件的步骤，请参阅[创建工作配置文件和注册设备](create-a-work-profile-and-enroll-your-device-in-intune-android.md)。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
 
 
 

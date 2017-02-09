@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
@@ -37,7 +38,7 @@ ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
 
 -   [远程锁定设备](remote-lock-your-device-cpwebsite.md)
 
--   [手动同步设备，加快速度较慢的应用安装](sync-your-device-manually-cpwebsite.md)
+-    [手动同步设备，加快速度较慢的应用安装](sync-your-device-manually-cpwebsite.md)
 
 -   找到 IT 管理员的联系信息（如果已配置）
 

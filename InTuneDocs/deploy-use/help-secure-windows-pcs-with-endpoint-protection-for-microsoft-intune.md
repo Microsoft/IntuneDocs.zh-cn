@@ -2,10 +2,10 @@
 title: "适用于 Windows 电脑的 Endpoint Protection | Microsoft Docs"
 description: "使用提供对恶意软件威胁的实时防护的 Endpoint Protection 保障托管计算机的安全。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
