@@ -2,8 +2,8 @@
 title: "Exchange ActiveSync 设备管理 | Microsoft Docs"
 description: "通过 Exchange Connector 使用 Exchange ActiveSync (EAS) 管理来管理移动设备"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
