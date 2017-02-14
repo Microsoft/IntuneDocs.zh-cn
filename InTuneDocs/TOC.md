@@ -11,7 +11,8 @@
 
 # [开始使用](get-started/get-started.md)
 ## [安装 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [必备条件](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [先决条件]
+#### [支持的设备](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [网络使用情况](get-started/network-bandwidth-use.md)
 ### [登录到 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [配置域](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -43,7 +44,7 @@
 ## [其他资源](plan-design/additional-resources.md)
 
 # [新增功能](whats-new/whats-new-in-microsoft-intune.md)
-## [Intune 应用 UI 的新增功能](whats-new/whats-new-in-intune-app-ui.md)
+## [应用 UI 中的新增功能](whats-new/whats-new-in-intune-app-ui.md)
 ## [Azure 预览版的新增功能](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [新增功能存档](whats-new/whats-new-archive.md)
 
@@ -57,7 +58,6 @@
 #### [Android 管理](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work 管理](deploy-use/set-up-android-for-work.md)
 #### [Windows 设备管理](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 移动版和 Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [管理企业拥有的设备](deploy-use/manage-corporate-owned-devices.md)
 #### [注册企业拥有的 iOS 设备](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [设置助理注册](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -106,7 +106,7 @@
 
 ## [保护设备](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [远程锁定和密码重置](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [使用 MFA 保护 Windows 设备](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [使用 MFA 保护 Windows 设备](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [控制 Windows Hello 企业版设置](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [在 iOS 上绕过激活锁定](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [保护 Windows 电脑的策略](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -159,9 +159,9 @@
 #### [阻止没有 ADAL 的应用](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [保护对网络的访问 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [根据设备、网络和应用程序风险保护访问](deploy-use/device-threat-protection.md)
-#### [设置 Lookout 设备威胁防护](deploy-use/device-threat-protection-subscription-setup.md)
-#### [在 Intune 中启用 Lookout](deploy-use/device-threat-protection-enable.md)
-#### [为工作应用部署 Lookout](deploy-use/device-threat-protection-apps.md)
+#### [设置设备威胁防护](deploy-use/device-threat-protection-subscription-setup.md)
+#### [启用设备威胁防护](deploy-use/device-threat-protection-enable.md)
+#### [部署设备威胁防护应用](deploy-use/device-threat-protection-apps.md)
 #### [启用设备威胁防护合规性策略](deploy-use/device-threat-protection-policy.md)
 
 ### [使用 MAM 保护应用数据](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -217,11 +217,11 @@
 
 ## [移动应用程序管理疑难解答](troubleshoot/troubleshoot-mam.md)
 
-## [Troubleshoot Lookout Integration](troubleshoot/troubleshooting-lookout-integration.md)（Lookout 集成故障排除）
+## [排除设备威胁防护方面的故障](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [术语表](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
