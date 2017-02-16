@@ -38,11 +38,12 @@
 #### [添加 Apple Configurator 序列号](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [使用设备注册计划注册 iOS 设备](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [使用设备注册管理器注册设备](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+### [注册 macOS 设备](enroll-devices/enroll-macos-devices.md)
 ### [注册 Windows 设备](enroll-devices/enroll-window-devices.md)
 ### 管理设备注册
 #### [创建条款和条件](enroll-devices/create-terms-and-conditions.md)
 #### [设置注册限制](enroll-devices/set-enrollment-restrictions.md)
-#### [映射设备组](enroll-devices/how-to-use-device-group-mapping.md)
+#### [将设备映射到组](enroll-devices/how-to-use-device-group-mapping.md)
 #### [添加企业标识符](enroll-devices/add-corporate-identifiers.md)
 #### [使用 Windows Hello 企业版](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
