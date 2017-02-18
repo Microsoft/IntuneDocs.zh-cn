@@ -1,11 +1,11 @@
 ---
-title: "适用于 Android for Work 的合规性策略设置 | Microsoft Docs"
+title: "Android for Work 的合规性设置 | Microsoft Docs"
 description: "本主题介绍适用于与 Android for Work 兼容的 Android 设备的设备合规性策略设置。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/13/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2b53e7a410d0ce268ce395c08161095af42857b7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 1b84b7137bd01b695d20bea67d77c694f2533b4e
 
 
 ---
@@ -24,8 +25,6 @@ ms.openlocfilehash: 2b53e7a410d0ce268ce395c08161095af42857b7
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android for Work 设备的合规性策略设置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 本主题中描述的策略设置适用于 Android for Work 设备。
 
@@ -70,7 +69,7 @@ ms.openlocfilehash: 2b53e7a410d0ce268ce395c08161095af42857b7
 - **要求禁用 USB 调试**：不必配置此设置，因为 USB 调试已在 Android for Work 设备上禁用。
 
 - **最低 Android 安全修补程序级别**：使用此设置指定最小 Android 修补程序级别。  不满足此修补程序级别的设备将会不相容。 必须将日期的格式指定为：YYYY-MM-DD。
-- **需要启用设备威胁保护**：使用此设置将 Lookout MTP 解决方案的风险评估视为合规性的条件。 从下面选择一个允许的最高威胁等级：
+- **需要启用设备威胁防护**：使用此设置将设备威胁防护解决方案的风险评估视为合规性的条件。 从下面选择一个允许的最高威胁等级：
 
   - **无（安全）**这是最安全的选项。 这意味着该设备不能具有任何威胁。 若检测到设备具有任一等级的威胁，则将其评为不合规。
   - **低：**若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
@@ -80,13 +79,13 @@ ms.openlocfilehash: 2b53e7a410d0ce268ce395c08161095af42857b7
   有关详细信息，请参阅[在合规性策略中启用设备威胁保护规则](enable-device-threat-protection-rule-in-compliance-policy.md)。
 
 ## <a name="device-property-settings"></a>设备属性设置
-- **所需的最低 OS 版本：**当设备不满足最低 OS 版本要求时，它将被报告为不符合要求。
+- **所需的最低操作系统版本**：设备不满足最低操作系统 (OS) 版本要求时，它将被报告为不符合要求。
   将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 
-- **允许的最高 OS 版本：**当设备使用的 OS 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。 除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
+- **允许的最高操作系统版本**：设备使用的操作系统 (OS) 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。 除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

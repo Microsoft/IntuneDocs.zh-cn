@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
@@ -25,9 +26,7 @@ ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-Intune 提供了一系列内置常规设置，你可以在 Android for Work 设备上进行配置。
+Intune 提供了一系列内置常规设置，你可以在 [Android for Work 设备](android-for-work.md)上进行配置。
 
 ## <a name="general-configuration-policy"></a>常规配置策略
 
@@ -60,8 +59,6 @@ Intune 提供了一系列内置常规设置，你可以在 Android for Work 设�
 |**允许在工作和个人配置文件之间共享数据**|允许工作配置文件中的应用与用户个人配置文件中的应用共享数据。 选择：<br><br>- **阻止任何跨边界的共享**<br>- **工作配置文件中的应用可处理来自个人配置文件的共享请求**<br>- **无共享限制**|
 |**设备锁定时隐藏工作配置文件通知**<br>（Android 6 及更高版本）|控制是否在设备锁定时显示来自工作配置文件的任何通知。|
 |**设置默认应用权限策略**<br>（Android 6 及更高版本）|为工作配置文件中的所有应用设置默认权限策略。|
-
-
 
 
 ## <a name="custom-policy-settings"></a>自定义策略设置
@@ -97,6 +94,6 @@ Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

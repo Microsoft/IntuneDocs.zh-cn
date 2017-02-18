@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/6/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 可采用与将应用部署到标准 Android 设备不同的方式，将应用部署到 Android for Work 设备。 为 Android for Work 安装的所有应用都来自 Google Play for Work 商店。 登录到该商店，浏览查找所需应用，然后批准它们。
 应用随后会出现在 Intune 控制台的“批量采购的应用”节点中。 在这里，可以采用与部署任何其他应用相同的方式管理应用的部署。
+
 此外，如果你创建了自己的业务线 (LOB) 应用，则可以部署它们。 若要执行该操作，你需要注册 Google 开发人员帐户，该帐户使你可以将应用发布到 Google Play 商店中的专用区域存储，然后将它们与 Intune 同步。
 
 ## <a name="before-you-start"></a>开始之前
@@ -40,9 +40,9 @@ ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
 1. 转到 [Google Play for Work 商店](https://play.google.com/work)。 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。
 2. 在商店中搜索要使用 Intune 部署的应用。
 3. 在所选应用的页面上，选择“批准”。 在此示例中，你选择了 Microsoft Excel 应用。<br>
-  ![批准应用示例](/intune/deploy-use/media/approve.png)
+  ![批准应用示例](media/approve.png)
 4. 一个用于该应用的窗口会打开，请你为该应用授予执行各种操作的权限。 必须选择“批准”才能继续。<br>
-  ![批准应用权限示例](/intune/deploy-use/media/approve-app-permissions.png)
+  ![批准应用权限示例](media/approve-app-permissions.png)
 5. 片刻之后，你会看到一个确认消息，指示应用已获批准，可在你的 IT 管理员控制台中使用。
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>从 Google Play for Work 商店发布，然后同步业务线应用
@@ -51,7 +51,7 @@ ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
 2. 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。 如果是首次登录，则必须注册，然后支付费用以成为 Google 开发人员计划的成员。
 3. 在控制台中，选择“添加新应用程序”。
 4. 采用与将任何应用发布到 Google Play 商店相同的方式，上传应用并提供有关应用的信息。 但是，你必须选择设置“仅使此应用程序可供我的组织(<*组织名称*>)使用”****，如下所示。<br>
-  ![用于仅使此应用可供你的组织使用的选项](/intune/deploy-use/media/restrict.png)<br>
+  ![用于仅使此应用可供你的组织使用的选项](media/restrict.png)<br>
 这可确保应用只能供你的组织使用，而在公开的 Google Play 商店中不可用。
 有关如何上传和发布 Android 应用的详细信息，请参阅 [Google 开发人员控制台帮助](https://support.google.com/googleplay/android-developer/answer/113469)。
 5. 发布了应用之后，请转到 [Google Play for Work 商店](https://play.google.com/work)。 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。
@@ -71,6 +71,6 @@ ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

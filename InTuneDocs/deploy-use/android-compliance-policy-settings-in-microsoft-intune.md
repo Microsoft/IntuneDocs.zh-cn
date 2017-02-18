@@ -1,11 +1,11 @@
 ---
-title: "适用于 Android 设备的合规性策略设置 | Microsoft Docs"
+title: "适用于 Android 的合规性策略设置 | Microsoft Docs"
 description: "本主题介绍适用于 Android 设备的设备合规性策略设置。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1c4721172d36f4f9b2b149f0da96e65bc65d9484
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 4ddc0839f05b2dd7cb1faf0a3e0901df67010f71
 
 
 ---
@@ -31,6 +32,7 @@ ms.openlocfilehash: 1c4721172d36f4f9b2b149f0da96e65bc65d9484
 > [!div class="op_single_selector"]
 - [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [适用于 Windows 设备的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [适用于 Android for Work 设备的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>系统安全设置
 ### <a name="password"></a>Password
@@ -89,6 +91,6 @@ ms.openlocfilehash: 1c4721172d36f4f9b2b149f0da96e65bc65d9484
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

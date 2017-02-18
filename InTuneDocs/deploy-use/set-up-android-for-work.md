@@ -1,19 +1,20 @@
 ---
-title: "设置 Android for Work 管理 | Microsoft Docs"
+title: "设置 Android for Work | Microsoft Docs"
 description: "使用 Microsoft Intune 为 Android for Work 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
@@ -21,8 +22,6 @@ ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
 # <a name="enable-enrollment-of-android-for-work-devices"></a>启用 Android for Work 设备的注册
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 若要启用 Android for Work 设备的管理，必须将 Android for Work 绑定添加到 Intune。 若要注册支持 Android for Work、但以前已作为常规 Android 设备注册的设备，这些设备必须取消注册，然后重新注册。
 
@@ -54,7 +53,7 @@ ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>取消绑定 Android for Work 管理帐户
 
-可以关闭 Android for Work 注册和管理。 单击“取消绑定”可从注册中删除所有已注册的 Android for Work 设备，并删除 Android for Work 帐户与 Intune 之间的关系。
+可以关闭 Android for Work 注册和管理。 在 Intune 管理控制台中单击“取消绑定”可从注册中删除所有已注册的 Android for Work 设备，并删除 Android for Work 帐户与 Intune 之间的关系。
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>如何取消绑定 Android for Work 帐户
 
@@ -66,6 +65,6 @@ ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
