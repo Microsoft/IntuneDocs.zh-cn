@@ -1,11 +1,11 @@
 ---
-title: "加密设备 | Microsoft Docs"
-description: "介绍如何加密 Android 设备"
+title: "如何通过加密保护 Android 设备 | Microsoft Docs"
+description: "保护 Android 设备"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>加密你的设备
+# <a name="how-to-protect-your-android-device-using-encryption"></a>如何通过加密保护 Android 设备
 
-在你可以访问公司文件、电子邮件或数据之前，如果贵公司或组织要求你先对你的 Android 设备进行加密，请执行以下步骤来加密你的设备。 如果 IT 管理员要求使用 PIN 或密码，则加密前可能要求进行设置。
+在加密设备时，将设备上的信息包装到一个保护代码层中以防止未经授权的人员访问这些信息。 为确保信息安全，组织会要求加密 Android 设备才能访问公司文件、电子邮件或数据。
+
+> [!Note]
+> 如果 IT 管理员要求使用 PIN 或密码，则加密前可能要求进行设置。
 
 如果取消注册手机，它将保持加密状态。
 
@@ -63,6 +68,6 @@ ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

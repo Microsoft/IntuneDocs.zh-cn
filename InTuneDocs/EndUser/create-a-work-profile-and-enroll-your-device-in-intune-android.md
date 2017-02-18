@@ -1,11 +1,11 @@
 ---
-title: "创建工作配置文件并在 Intune 中注册设备 |Microsoft Docs"
-description: "介绍如何加密 Android 设备"
+title: "使用工作配置文件注册设备 | Microsoft Docs"
+description: "如何通过工作配置文件使 Android 设备更安全。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,13 @@ ms.technology:
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 2384889d377713757b6172a12d608b32a1756978
 
 
 ---
@@ -71,7 +73,7 @@ ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
 
     你会短暂地看到消息“正在注册你的设备”。
 
-11. 当“公司访问设置”屏幕显示所有内容都已正确设置时，点击“继续”。 
+11. 当“公司访问设置”屏幕显示所有内容都已正确设置时，点击“继续”。
 
     ![“公司访问设置”显示工作配置文件和注册已完成](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -87,8 +89,6 @@ ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 
