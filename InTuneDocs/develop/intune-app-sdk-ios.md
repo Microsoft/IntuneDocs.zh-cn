@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: cb80d531a28eaccbd26bc53df3e13ad233522dcf
+ms.sourcegitcommit: 3fdbf7f561f526b68972c6f66d1b72b56f7fa8ad
+ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
 
 
 ---
@@ -119,7 +120,8 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 6. 选择每个项目目标的“功能”并启用“密钥链共享”开关，启用密钥链共享（如果尚未启用）。 需要启用 Keychain 共享才能继续执行下一步。
 
     > [!NOTE]
-    > 预配的配置文件需要支持新的 keychain 共享值。 keychain 访问组应支持通配符。 可通过以下方法进行验证：在文本编辑器中打开 .mobileprovision 文件，搜索 **keychain-access-groups**，确保其中包含通配符。 例如：     ```xml
+    > 预配的配置文件需要支持新的 keychain 共享值。 keychain 访问组应支持通配符。 可通过以下方法进行验证：在文本编辑器中打开 .mobileprovision 文件，搜索 **keychain-access-groups**，确保其中包含通配符。 例如：
+    ```xml
     <key>keychain-access-groups</key>
     <array>
     <string>YOURBUNDLESEEDID.*</string>
@@ -150,7 +152,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 9. 对于针对 iOS 9+ 开发的移动应用，需要在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中包括应用传递到 `UIApplication canOpenURL` 的每个协议。 此外，对于每个列出的协议，添加新的协议，并对新协议追加 `-intunemam`。 你还必须在此数组中包括 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
 
-10. 如果应用在其授权中定义了应用组，则将这些组作为字符串数组添加到 `AppGroupIdentitifiers` 键下面的 IntuneMAMSettings 字典中。
+10. 如果应用在其授权中定义了应用组，则将这些组作为字符串数组添加到 `AppGroupIdentifiers` 键下面的 IntuneMAMSettings 字典中。
 
 11. 将移动应用程序链接到 Azure 目录身份验证库 (ADAL)。 Objective C 的 ADAL 库[可在 GitHub 上获取](https://github.com/AzureAD/azure-activedirectory-library-for-objc)。
 
@@ -509,7 +511,7 @@ MAMTelemetryUsePPE | 布尔值 | 指定 SDK 是否会将数据发送到 PPE 后�
 
 ### <a name="identity-overview"></a>标识概述
 
-标识只是帐户的用户名，例如，user@contoso.com). 开发人员可以在以下级别设置应用的标识：
+标识就是帐户的用户名（例如 user@contoso.com)。 开发人员可在以下级别上设置应用的标识：
 
 * **进程标识**：设置进程级标识，并且主要用于单一标识应用程序。 此标识会影响所有任务、文件和 UI。
 * **UI 标识**：确定应用于主线程上 UI 任务的策略，例如剪切/复制/粘贴、PIN、身份验证和数据共享。 UI 标识不会影响文件任务（如加密和备份）。
@@ -604,6 +606,12 @@ SDK 跟踪本地文件所有者的标识，并相应地应用策略。 文件所
 
 ## <a name="faq"></a>常见问题
 
+
+**是否所有 API 都可通过本机 Swift 或 Objective-C 和 Swift 互操作性进行寻址？**
+
+Intune App SDK API 仅能以 Objective-C 进行寻址，且不支持本机 Swift。  
+
+
 **应用程序的所有用户是否都需要注册 MAM 服务？**
 
 否。 实际上，只有工作或学校帐户需要向 Intune App SDK 注册。 应用负责确定所使用的帐户是否为工作或学校账户。   
@@ -637,6 +645,8 @@ SDK 将在后台定期执行以下操作：
 
 是，IT 管理员可以向应用程序发送选择性擦除命令。 这将取消注册并注销用户，并且将擦除用户的数据。 SDK 自动处理此方案，并将通过取消注册委托方法发送通知。
 
+
+
 ## <a name="submit-your-app-to-the-app-store"></a>将应用提交到应用商店
 
 Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这意味着它们包含适用于所有设备和模拟器体系结构的代码。 如果应用含有模拟器代码，Apple 会拒绝将其提交到应用商店。 编译针对用于仅设备构建的静态库时，链接器会自动删除其中的模拟器代码。 按照下面的步骤确保将应用上载到应用商店之前删除所有模拟器代码。
@@ -656,6 +666,6 @@ Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

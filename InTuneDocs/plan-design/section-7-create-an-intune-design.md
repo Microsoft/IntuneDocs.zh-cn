@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -147,7 +148,7 @@ Intune 提供两个部署选项：独立和混合。 需要决定哪一个适合
 
 ### <a name="user-and-device-groups"></a>用户和设备组
 
-用户和设备组确定部署的目标。 这可能包括面向策略、应用程序和配置文件的部署。 Intune 云仅支持用户和设备组 - 需确定将需要哪些用户和设备组。 建议在本地 Active Directory 中创建所有组，然后将组同步到 Azure Active Directory。 可在下方找到有关用户和设备组规划和创建的详细信息。
+用户和设备组确定部署的目标。 这可能包括面向策略、应用程序和配置文件的部署。 Intune 仅限云支持用户和设备组 - 需确定将需要哪些用户和设备组。 建议在本地 Active Directory 中创建所有组，然后将组同步到 Azure Active Directory。 可在下方找到有关用户和设备组规划和创建的详细信息。
 
 -   了解有关[规划用户和设备组](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups)的详细信息。
 
@@ -411,6 +412,6 @@ Intune 支持以多种方式向用户或设备传递应用。 传递的应用程
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 

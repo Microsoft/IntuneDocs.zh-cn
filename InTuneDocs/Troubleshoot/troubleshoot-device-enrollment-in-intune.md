@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/10/17
+ms.date: 01/24/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
 
 
 ---
@@ -31,10 +32,10 @@ ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
 
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
--   [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/prerequisites-for-enrollment)
--   [设置 iOS 和 Mac 设备管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--   [使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
--   [设置 Windows 设备管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-    [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/prerequisites-for-enrollment)
+-    [设置 iOS 和 Mac 设备管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-    [使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-    [设置 Windows 设备管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 托管的设备用户可收集注册和诊断日志以供你查看。 以下提供了有关收集日志的用户说明：
@@ -227,16 +228,16 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 若要解决此问题，请按以下步骤将证书导入 AD FS 服务器或代理上的计算机个人证书：
 
-1.  在 ADFS 服务器和代理服务器上，右键单击“开始”按钮，选择“运行”，然后键入“certlm.msc”，以启动本地计算机的证书管理控制台。
-2.  展开“个人”，然后选择“证书”。
-3.  查找用于 AD FS 服务通信的证书（公共签名证书），然后双击以查看其属性。
-4.  选择“证书路径”选项卡以查看证书的父证书。
-5.  在每个父证书上，选择“查看证书”。
-6.  选择“详细信息”选项卡，然后选择“复制到文件...”。
-7.  按照向导提示将证书的公钥导出或保存到所需的文件位置。
-8.  将步骤 3 中导出的父证书导入到本地计算机\个人\证书，方法是右键单击“证书”，选择“所有任务” > “导入”，然后按照向导提示导入证书。
-9.  重启 AD FS 服务器。
-10. 在所有 AD FS 和代理服务器上重复上述步骤。
+1.    在 ADFS 服务器和代理服务器上，右键单击“开始”按钮，选择“运行”，然后键入“certlm.msc”，以启动本地计算机的证书管理控制台。
+2.    展开“个人”，然后选择“证书”。
+3.    查找用于 AD FS 服务通信的证书（公共签名证书），然后双击以查看其属性。
+4.    选择“证书路径”选项卡以查看证书的父证书。
+5.    在每个父证书上，选择“查看证书”。
+6.    选择“详细信息”选项卡，然后选择“复制到文件...”。
+7.    按照向导提示将证书的公钥导出或保存到所需的文件位置。
+8.    将步骤 3 中导出的父证书导入到本地计算机\个人\证书，方法是右键单击“证书”，选择“所有任务” > “导入”，然后按照向导提示导入证书。
+9.    重启 AD FS 服务器。
+10.    在所有 AD FS 和代理服务器上重复上述步骤。
 现在用户应能够在 Android 设备上登录到公司门户。
 
 **若要验证是否正确安装证书**：
@@ -294,32 +295,20 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
 **问题：**用户注册了 iOS 设备，但它未出现在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
 
-- 你可能已向某个帐户注册了 Intune 连接器，然后又将其注册到其他帐户。
+- Configuration Manager 站点中的 Microsoft Intune 连接器当前未与 Intune 服务进行通信。
+- 数据发现管理器 (ddm) 组件或状态管理器 (statmgr) 组件当前未处理来自 Intune 服务的消息。
 - 你可能已从某个帐户下载了 MDM 证书，而在其他帐户上使用了它。
 
 
-**解决方法：**执行以下步骤：
+**解决方法：**查看以下日志文件是否存在错误：
 
-1. 禁用 Windows Intune 连接器内部的 iOS。
-    1. 右键单击 Intune 订阅，然后选择**属性**。
-    1. 在“iOS”选项卡上，取消选中“启用 iOS 注册”。
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. 在 SQL 中的 CAS 数据库上运行以下步骤
-
-    1. 更新 SC_ClientComponent_Property 设置 Value2 = ''，其中名称类似“%APNS%”
-    1. 从 MDMPolicy（其中 PolicyType = 7）中删除
-    1. 从 MDMPolicyAssignment（其中 PolicyType = 7）中删除
-    1. 更新 SC_ClientComponent_Property 设置 Value2 = ''，其中名称类似“%APNS%”
-    1. 从 MDMPolicy（其中 PolicyType = 11）中删除
-    1. 从 MDMPolicyAssignment（其中 PolicyType = 11）中删除
-    1. 删除 Drs_Signals
-1. 重启 SMS Executive 服务或 CM 服务器
+即将增添有关在这些日志文件中查找哪些内容的示例。
 
 
-
-1. 获取新 APN 证书并将其上传：右键单击 Configuration Manager 左侧窗格中的“Intune 订阅”。 选择“创建 APNs 证书请求”，并按照说明进行操作。
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager with Intune 时的问题
 ### <a name="mobile-devices-disappear"></a>移动设备消失
 **问题：** 在向 Configuration Manager 成功注册移动设备后，它从移动设备集合中消失，但该设备仍然具有管理配置文件，并且列示在 CSS 网关中。
@@ -400,6 +389,6 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
