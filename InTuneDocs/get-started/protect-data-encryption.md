@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
@@ -42,9 +43,9 @@ Microsoft Intune 可通过多种方法助防止数据从 Office 移动应用中�
 本指南演示如何通过在员工用于访问敏感数据的移动应用上使用策略强制进行密码和数据加密，以帮助防止公司的数据丢失，而无需在任何设备管理解决方案中完全注册。 Microsoft Intune 允许在适用于 [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) 和 [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android) 的 Office 移动应用上设置移动应用程序管理 (MAM) 策略。 此方法无需用户将其设备注册到移动设备管理解决方案即可保护 O365 数据，同时也能保持 Office 移动应用出色的最终用户体验。
 
 ## <a name="how-do-i-do-it"></a>如何操作？
-1.  [查看如何保护应用数据](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.  [准备好配置移动应用管理策略](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.  [创建和部署移动应用管理策略](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.    [查看如何保护应用数据](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.    [准备好配置移动应用管理策略](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.    [创建和部署移动应用管理策略](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>其他信息:
 - [了解使用 Microsoft Intune 的启用 MAM 的应用的最终用户体验的相关信息。](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)

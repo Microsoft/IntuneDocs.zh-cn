@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
@@ -34,8 +35,8 @@ ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
 配置电子邮件配置文件后，可以通过 Intune 条件访问策略轻松地限制对公司电子邮件和 Office 365 服务的访问。 这些策略使你能确保将对公司电子邮件和 Office 365 服务的访问限制在符合你在 Intune 中设置的规则的设备。
 
 ## <a name="how-do-i-do-it"></a>如何操作？
-1.  在 Windows、iOS 和 Android 设备上自动[配置最终用户的电子邮件配置文件](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
-2.  使用条件访问策略[控制对公司电子邮件的访问](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
+1.    在 Windows、iOS 和 Android 设备上自动[配置最终用户的电子邮件配置文件](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
+2.    使用条件访问策略[控制对公司电子邮件的访问](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
 
 ### <a name="additional-information"></a>其他信息:

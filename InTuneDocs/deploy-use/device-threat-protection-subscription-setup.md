@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
 ms.openlocfilehash: a61cbc076167dfaffeb1af82d78654f2bb7f7721

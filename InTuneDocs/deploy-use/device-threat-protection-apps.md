@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
 ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
@@ -27,12 +28,12 @@ ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
 
 ## <a name="android-google-play-store-app"></a>Android（Google Play 商店应用）
 
-1.  在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，转到“应用”并选择“添加应用”。
-2.  在发布者的“软件设置”页，选择“外部链接”，并指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
+1.    在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，转到“应用”并选择“添加应用”。
+2.    在发布者的“软件设置”页，选择“外部链接”，并指定下列 URL：https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >请勿单击要求使用托管浏览器的框。
 
-3.  在“软件描述”页填入以下信息：
+3.    在“软件描述”页填入以下信息：
   * **发布者：**Lookout Mobile Security
   * **名称：**Lookout for Work
   * **说明：**Lookout 能为设备提供针对移动威胁的最佳保护。 在设备上安装 Lookout 应用后，该应用可让设备免受威胁，并将在发现任何威胁时向用户、公司和管理员发出警报。

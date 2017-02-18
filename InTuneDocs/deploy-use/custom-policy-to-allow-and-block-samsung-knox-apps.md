@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
@@ -40,9 +41,9 @@ ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
     
     - **设置名称。** 输入 **PreventStartPackages**。
     - **设置描述。** 输入可选描述，如“阻止运行的应用列表”。
-    -   **数据类型。** 在下拉列表中，选择“字符串”。
-    -   **OMA-URI。** 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **值。** 输入你要允许的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
+    -     **数据类型。** 在下拉列表中，选择“字符串”。
+    -     **OMA-URI。** 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -     **值。** 输入你要允许的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
 
     有关允许用户从 Google Play 商店中安装的应用（同时排除所有其他应用）的列表：
 

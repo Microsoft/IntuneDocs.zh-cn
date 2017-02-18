@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
 ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
