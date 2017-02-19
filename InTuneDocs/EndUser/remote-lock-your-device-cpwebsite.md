@@ -1,5 +1,5 @@
 ---
-title: "从公司门户网站远程锁定设备 | Microsoft Docs"
+title: "从公司门户锁定设备 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 
 ---
@@ -39,13 +40,13 @@ ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>使用“远程锁定”锁定你的设备
 
-1.  在[公司门户网站](http://portal.manage.microsoft.com)中，点击要锁定设备的名称。
+1.    在[公司门户网站](http://portal.manage.microsoft.com)中，点击要锁定设备的名称。
 
-2.  点击**远程锁定**。
+2.    点击**远程锁定**。
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  将显示一条通知，告知你将要锁定你的设备。 点击“远程锁定”，公司门户网站将尝试锁定你的设备。
+3.    将显示一条通知，告知你将要锁定你的设备。 点击“远程锁定”，公司门户网站将尝试锁定你的设备。
 
     点击“远程锁定”后，将出现“远程锁定挂起”消息。  “远程锁定”成功后，状态将更改为“远程锁定成功”。
 
@@ -64,6 +65,6 @@ ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

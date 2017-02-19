@@ -1,11 +1,11 @@
 ---
-title: "安装新版本的公司门户应用 | Microsoft Docs"
+title: "如何更新公司门户应用 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 82679d4d9ef017dd29429b83a039f3edbfb7911d
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 2e05e3af45628930eadec0ac97736b0354412aec
 
 
 ---
 
-# <a name="install-a-new-version-of-the-company-portal-app"></a>安装新版本的公司门户应用
+# <a name="how-to-update-the-company-portal-app"></a>如何更新公司门户应用
 
 如果不再支持你的公司门户应用版本，或者可以使用较新版本的公司门户应用，则需要将它更新到较高版本。 使用与你拥有的设备类型相匹配的步骤。
 
@@ -53,6 +54,6 @@ ms.openlocfilehash: 82679d4d9ef017dd29429b83a039f3edbfb7911d
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

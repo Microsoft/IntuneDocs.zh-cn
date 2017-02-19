@@ -1,11 +1,11 @@
 ---
-title: "安装公司门户应用并在 Intune 中注册 Android 设备后会发生什么情况？ |Microsoft Docs"
+title: "安装 Android 适用的公司门户应用 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d0e244659f8a78504ffa2a0b8a6579c829e3642b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: f80c6e7089519860e822f974753ac9dc0356e055
 
 
 ---
@@ -50,7 +51,7 @@ ms.openlocfilehash: d0e244659f8a78504ffa2a0b8a6579c829e3642b
 
 -   要求对设备上的所有数据进行加密，以便在设备丢失或被盗时帮助保护数据。
 
-将设备添加到公司门户后，该设备大约每 8 小时将执行下列操作：
+将设备添加到公司门户后，该设备大约每&8; 小时将执行下列操作：
 
 -   下载 IT 管理员已提供的任何策略或应用更新。
 
@@ -62,6 +63,6 @@ ms.openlocfilehash: d0e244659f8a78504ffa2a0b8a6579c829e3642b
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

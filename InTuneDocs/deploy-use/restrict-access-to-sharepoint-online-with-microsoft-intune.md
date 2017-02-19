@@ -1,5 +1,5 @@
 ---
-title: "保护对 SharePoint Online 的访问 | Microsoft Docs"
+title: "保护 SharePoint Online | Microsoft Docs"
 description: "使用条件访问保护和控制对 SharePoint Online 上公司数据的访问。"
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 ---
@@ -143,7 +144,7 @@ ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
         这要求用于访问 **SharePoint Online** 的设备已在 Intune 中注册且符合相应的策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果 Intune 当前不支持该平台，则会阻止对 **SharePoint Online** 的访问。
 
         选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需为已注册并合规，以下各项除外：
-        *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
+        *    Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
         * 不受支持的平台，如 Mac。 但是，仍将阻止使用来自这些平台的新式验证的应用。
 
     -   **特定平台**
@@ -199,6 +200,6 @@ ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "安装公司门户应用并在 Intune 中注册 Windows 设备后会发生什么情况？ |Microsoft Docs"
+title: "安装 Windows 适用的公司门户应用 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
 
 
 ---
@@ -65,8 +66,8 @@ ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
 
 -  IT 管理员可在计算机上安装应用和更新。
 
-## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每 8 小时会发生什么情况
-已注册的设备将以约 8 小时的间隔执行以下操作：
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每&8; 小时会发生什么情况
+已注册的设备将以约&8; 小时的间隔执行以下操作：
 
 -   下载 IT 管理员已提供的任何策略或应用更新。
 
@@ -78,6 +79,6 @@ ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

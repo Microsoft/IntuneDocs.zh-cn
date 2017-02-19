@@ -1,5 +1,5 @@
 ---
-title: "保护对电子邮件和 Office 365 服务的访问 | Microsoft Docs"
+title: "保护电子邮件和 Office 365 | Microsoft Docs"
 description: "本主题介绍如何使用条件性访问只允许合规设备在 SharePoint Online 和其他服务上访问公司电子邮件和公司数据。"
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 911c97a724c28b97bb2bc6e236532e4e0d89c7b1
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
 
 
 ---
@@ -82,6 +83,6 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

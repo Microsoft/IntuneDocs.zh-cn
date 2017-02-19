@@ -1,5 +1,5 @@
 ---
-title: "保护对 Skype for Business Online 的访问 | Microsoft Docs"
+title: "保护 Skype for Business Online | Microsoft Docs"
 description: "使用条件访问保护和控制对 Skype for Business Online 的访问。"
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 37915fcfc0f10e65aa65d400422d72adc63513fa
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 
 ---
@@ -120,6 +121,6 @@ ms.openlocfilehash: 37915fcfc0f10e65aa65d400422d72adc63513fa
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "在合规性策略中启用设备保护规则 | Microsoft Docs"
+title: "启用设备保护规则 | Microsoft Docs"
 description: "在设备合规性策略中启用移动威胁保护规则。"
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1a874d3a4969d65c78bb89929a15064d702ea708
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 08edca426901eda3017bf17dda3b330dd186ce58
 
 
 ---
@@ -62,6 +63,6 @@ ms.openlocfilehash: 1a874d3a4969d65c78bb89929a15064d702ea708
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

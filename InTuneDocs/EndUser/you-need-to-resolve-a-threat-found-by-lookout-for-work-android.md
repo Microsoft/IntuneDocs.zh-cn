@@ -1,11 +1,11 @@
 ---
-title: "Lookout for Work 在 Android 设备上发现威胁，请解除该威胁 | Microsoft Docs"
+title: "解决 Lookout for Work 在 Android 上发现的威胁 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: b6f8cf9eda8983b8bfe4edd8fca6e6872e0c8103
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a49f27dd42d2c9d16be49cb222e56147c4699208
 
 
 ---
@@ -49,8 +50,6 @@ Lookout for Work 在设备上发现潜在威胁，必须解决该问题才能重
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

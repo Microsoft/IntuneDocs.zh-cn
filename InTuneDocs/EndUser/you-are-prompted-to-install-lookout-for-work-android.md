@@ -1,11 +1,11 @@
 ---
-title: "系统提示在 Android 设备上安装 Lookout for Work | Microsoft Docs"
+title: "需要在 Android 设备上安装 Lookout for Work | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 05d2c3868175d405c49076ea93582eb151c9c791
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work"></a>系统会提示你安装 Lookout for Work
+# <a name="you-need-to-install-lookout-for-work"></a>需要安装 Lookout for Work
 
 在可访问工作之前，IT 管理员要求你安装 Lookout for Work 应用，该应用会查找潜在安全威胁来帮助保护你的设备。
 
@@ -30,13 +31,13 @@ ms.openlocfilehash: 05d2c3868175d405c49076ea93582eb151c9c791
 
 **需要执行的操作：**
 
-1.  从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 — 从 Play Store 安装 Lookout for Work”。
+1.    从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 — 从 Play Store 安装 Lookout for Work”。
 
     ![需要安装 Lookout for Work](./media/lookout-required-app-install-android.png)
 
     将转至 Play Store 中的 Lookout for Work 安装页。
 
-2.  安装 Lookout for Work，然后点击“接受”以便 Lookout for Work 可访问设备。
+2.    安装 Lookout for Work，然后点击“接受”以便 Lookout for Work 可访问设备。
 
     ![点击“接受”以便 Lookout for Work 访问设备](./media/lookout-accept-store-permissions-android.png)
 
@@ -78,12 +79,12 @@ ms.openlocfilehash: 05d2c3868175d405c49076ea93582eb151c9c791
 
 **如果安装不成功**
 
-有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试从 Play Store [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 手动安装 Lookout for Work 
+有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试从 Play Store [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 手动安装 Lookout for Work
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
