@@ -2,8 +2,8 @@
 title: "使用设备威胁防护保护访问 | Microsoft Docs"
 description: "根据设备、网络和应用程序风险，保护对公司资源的访问。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: eaf121f99dddab6f7c45c58ca9decf2504b00f67
+ms.sourcegitcommit: 931f222898a224c2f646ad203f12676c39b78946
+ms.openlocfilehash: aaa0965c2bd4d4093da0c57eaa2e3bd05eb6779a
 
 
 ---
@@ -97,14 +98,14 @@ Intune 中的合规性策略包括用于 Lookout 移动威胁防护的新规则�
 
 ## <a name="next-steps"></a>后续步骤
 要实施此解决方案，必须执行以下几个主要步骤：
-1.  [为订阅设置 Lookout 移动威胁保护](set-up-your-subscription-with-lookout-mtp.md)
-2.  [在 Intune 中启用 Lookout MTP 连接](enable-lookout-mtp-connection-in-intune.md)
-3.  [配置并部署 Lookout for Work 应用程序](configure-and-deploy-lookout-for-work-apps.md)
-4.  [配置合规性策略](enable-device-threat-protection-rule-in-compliance-policy.md)
-5.  [Troubleshoot Lookout Integration](http://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration)（Lookout 集成故障排除）
+1.    [为订阅设置设备威胁防护功能](device-threat-protection-subscription-setup.md)
+2.    [在 Intune 中实现设备威胁防护连接](device-threat-protection-enable.md)
+3.  [配置和部署设备威胁防护应用](device-threat-protection-apps.md)
+4.    [配置设备威胁防护合规性策略](device-threat-protection-policy.md)
+5.    [排除设备威胁防护集成方面的故障](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
