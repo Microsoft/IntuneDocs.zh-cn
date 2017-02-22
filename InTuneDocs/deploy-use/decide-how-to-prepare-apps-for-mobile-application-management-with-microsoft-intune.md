@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
-ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
@@ -55,7 +56,7 @@ ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用并想使用 Intune 管理应用的客户。 但是，任何应用都可以利用集成 SDK 的优势，即使是业务线应用。
 
-若要了解有关 SDK 的详细信息，请参阅[概述](/intune/develop/intune-app-sdk)。 若要开始使用 SDK，请参阅 [Microsoft Intune App SDK 入门](/intune/develop/intune-app-sdk-get-started)。
+若要了解有关 SDK 的详细信息，请参阅[概述](../develop/intune-app-sdk.md)。 若要开始使用 SDK，请参阅 [Microsoft Intune App SDK 入门](../develop/intune-app-sdk-get-started.md)。
 
 ### <a name="reasons-to-use-the-sdk"></a>使用 SDK 的原因
 * 应用未内置数据保护功能。
@@ -69,8 +70,8 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|支持 - 使用 [Intune 应用 SDK Xamarin 组件](/../develop/intune-app-sdk-xamarin)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](/../develop/intune-app-sdk-cordova)。|
-|**Android**| 支持 - 使用 [Intune 应用 SDK Xamarin 组件](/../develop/intune-app-sdk-xamarin)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](/../develop/intune-app-sdk-cordova)。|
+|**iOS**|支持 - 使用 [Intune 应用 SDK Xamarin 组件](../develop/intune-app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](../develop/intune-app-sdk-cordova.md)。|
+|**Android**| 支持 - 使用 [Intune 应用 SDK Xamarin 组件](../develop/intune-app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](../develop/intune-app-sdk-cordova.md)。|
 
 ## <a name="feature-comparison"></a>功能比较
 此表列出了可用于 App SDK 和应用包装工具的设置。
