@@ -5,7 +5,7 @@ description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 07/19/2016
+ms.date: 01/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,27 +14,29 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
-ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 
 
 ---
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
-通过安装 Intune 客户端软件来注册 Windows 电脑。 Intune 客户端软件可以通过以下方式安装：
+通过安装 Intune 客户端软件来注册 Windows 电脑。 Intune 客户端软件可通过以下方法安装：
 
-- 手动安装
-- 通过组策略安装
-- 包括在磁盘映像中
-- 由用户安装
+- 由 IT 管理员：
+  - 手动安装
+  - 通过组策略安装
+  - 随附在磁盘映像中安装
 
-首次下载的 Intune 软件客户端包含向 Intune 管理注册电脑所必需的最低软件配置。 注册电脑后，Intune 软件客户端才会下载电脑管理所需的完整客户端软件。
+- 由最终用户手动安装软件客户端
 
-这一系列的下载可以使在 Intune 中初始注册电脑所需的时间降至最低。 它还可确保第二次下载完成后，客户端将具有最新的软件。
+IT 管理员部署给用户或最终用户下载的 Intune 软件客户端包括在 Intune 管理中注册电脑时所需的最低配软件。 注册电脑后，Intune 软件客户端才会下载电脑管理所需的完整客户端软件。
+
+此系列下载可降低网络带宽的影响，并尽量减少最初在 Intune 中注册电脑时所需的时间。 它还可确保第二次下载完成后，客户端将具有最新的软件。
 
 ## <a name="download-the-intune-client-software"></a>下载 Intune 客户端软件
 
-除用户自行安装 Intune 客户端软件之外，其余所有方法都需要先下载软件才能进行部署。
+所有方法都要求 IT 管理员先下载软件才可将其后续部署给最终用户，但用户自行安装 Intune 客户端软件的方法除外。
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“管理员”&gt;“客户端软件下载”。
 
@@ -43,7 +45,7 @@ ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
 2.  在“客户端软件下载”页上，单击“下载客户端软件”。 然后将包含该软件的 **Microsoft_Intune_Setup.zip** 包保存到网络上的安全位置。
 
     > [!NOTE]
-    > Intune 客户端软件安装程序包中包含有关你的帐户的信息。 如果未经授权的用户获得了此安装包的访问权限，则他们可以用该包的嵌入式证书所代表的帐户注册计算机，并可获得访问公司资源的权限。
+    > Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（可在内嵌证书中使用）。 如果未经授权的用户获得了此安装包的访问权限，则他们可以用该包的嵌入式证书所代表的帐户注册计算机，并可获得访问公司资源的权限。
 
 3.  将安装程序包的内容提取到网络上的安全位置。
 
@@ -52,10 +54,10 @@ ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
 
 ## <a name="deploy-the-client-software-manually"></a>手动部署客户端软件
 
-在计算机上，转到客户端软件安装文件所在的文件夹。 然后运行 **Microsoft_Intune_Setup.exe** 安装客户端软件。
+在要安装软件客户端的计算机上，转到客户端软件安装文件所在的文件夹。 然后运行 **Microsoft_Intune_Setup.exe** 安装客户端软件。
 
-    > [!NOTE]
-    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
+> [!NOTE]
+> 当你将鼠标悬停在客户端计算机上任务栏中的图标上时，将显示安装的状态。
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>使用组策略部署客户端软件
 
@@ -72,7 +74,7 @@ ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
 
 3.  使用组策略将软件部署到网络上的计算机。
 
-    有关如何使用组策略来自动部署软件的详细信息，请参阅 Windows Server 文档。
+    有关如何使用组策略自动部署软件的详细信息，请参阅[适用于新手的组策略](https://technet.microsoft.com/library/hh147307.aspx)。
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>将客户端软件部署为映像的一部分
 通过使用以下示例过程作为指导，你可以将 Intune 客户端软件作为操作系统映像的一部分部署到计算机：
@@ -98,15 +100,17 @@ ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
 
 5.  捕获引用计算机的映像，然后将此映像部署到目标计算机。
 
-完成 Windows 安装程序后重启目标计算机时，会创建“WindowsIntuneEnrollPending”  注册表项。 注册包会检查是否注册了计算机。 如果注册了计算机，则不需要采取其他操作。 如果未注册计算机，则注册程序包会创建“Microsoft Intune 自动注册任务”。
+    完成 Windows 安装程序后重启目标计算机时，会创建“WindowsIntuneEnrollPending”  注册表项。 注册包会检查是否注册了计算机。 如果注册了计算机，则不需要采取其他操作。 如果未注册计算机，则注册程序包会创建“Microsoft Intune 自动注册任务”。
 
-当自动注册任务在下一个计划的时间运行时，它会检查是否存在“WindowsIntuneEnrollPending”注册表值，并尝试在 Intune 中注册目标 PC。 如果注册由于任何原因失败，则下次运行任务时会重新尝试注册。 重新尝试会持续一个月。
+    当自动注册任务在下一个计划的时间运行时，它会检查是否存在“WindowsIntuneEnrollPending”注册表值，并尝试在 Intune 中注册目标 PC。 如果注册由于任何原因失败，则下次运行任务时会重新尝试注册。 重新尝试会持续一个月。
 
-注册成功后或一个月后（以先发生者为准），系统就会从目标计算机中删除 Intune 自动注册任务、**WindowsIntuneEnrollPending** 注册表值和帐户证书。
+    注册成功后或一个月后（以先发生者为准），系统就会从目标计算机中删除 Intune 自动注册任务、**WindowsIntuneEnrollPending** 注册表值和帐户证书。
 
 ## <a name="instruct-users-to-self-enroll"></a>指示用户自行注册
 
 用户可以通过转到[公司门户网站](http://portal.manage.microsoft.com)安装 Intune 客户端软件。 如果 Web 门户可以检测到该设备是 Windows 电脑，它将提示用户通过下载 Intune 软件客户端来注册电脑。 软件下载完成后，用户可以安装软件以对其电脑进行管理。
+
+用户在 Web 门户中所见的确切信息可能不同，具体取决于帐户的 MDM 机构以及用户电脑的平台和版本。
 
 ![Intune 门户提示下载 Intune 软件客户端](../media/software-client-download.png)
 
@@ -139,6 +143,6 @@ ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
