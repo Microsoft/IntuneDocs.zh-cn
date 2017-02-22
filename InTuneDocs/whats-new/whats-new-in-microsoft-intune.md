@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3ab53e40f4b7ea67733127f445005ecb77a404f7
-ms.openlocfilehash: 37031eed6efa48ff52ec37a942fa77af414f78fe
+ms.sourcegitcommit: 053cf0a1b5d06496397b36cbd1a7ebdce420fed3
+ms.openlocfilehash: 5158d58c32066ea720335a878fef87451542c195
 
 
 ---
@@ -55,8 +55,11 @@ Links inside of the Company Portal app for iOS, including those to documentation
 ### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>改进对选择性擦除的移动应用管理支持<!--581242-->
 如果由于“擦除应用数据前的脱机时间间隔”策略导致自动删除了工作或学校数据，则将为最终用户提供有关如何重新获得这些数据的访问权限的其他指导。<!--, or the removal of the Intune Company Portal on Android.-->
 
+### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>iOS 版公司门户链接在应用内打开<!--665954-->
+iOS 版公司门户应用内的链接（包括文档和应用链接）将通过 Safari 的应用内视图直接在公司门户应用中打开。 此更新将与&1; 月的服务更新分开提供。
+
 ### <a name="modernizing-the-company-portal-website---753980--"></a>公司门户网站现代化<!--753980-->
-从&2; 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单”（即![公司门户网站汉堡菜单](../media/CP_hamburger_menu.png)，包括支持人员详细联系信息和现有托管设备的信息），这与 Microsoft 其他产品和服务保持一致。 将重新排列登录页，强调可供用户使用的应用，登录页上具有针对特色应用和最近更新应用的传送。 可在 [What's new in the Company Portal UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui#January_2017)（公司门户 UI 新增功能页面）中查看更改前和更改后的图片。
+从&2; 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单”（即![公司门户网站汉堡菜单](./media/CP_hamburger_menu.png)，包括支持人员详细联系信息和现有托管设备的信息），这与 Microsoft 其他产品和服务保持一致。 将重新排列登录页，强调可供用户使用的应用，登录页上具有针对特色应用和最近更新应用的传送。 可在 [Intune 应用 UI 的新增功能](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui#January_2017)页面中查看更改前和更改后的图片。
 
 ### <a name="new-documentation-for-app-protection-policies---583398--"></a>新的应用保护策略文档<!--583398-->
 针对想要使用 Intune 应用包装工具或 Intune App SDK 在 iOS 和 Android 应用中启用应用保护策略（称为 MAM 策略）的管理员和应用开发人员，我们更新了相关文档。
@@ -75,6 +78,9 @@ Links inside of the Company Portal app for iOS, including those to documentation
 
 <!--### Progress bar when launching the Company Portal on iOS <!--665978
 The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner.-->
+
+### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>在 iOS 上启动公司门户时的进度栏<!--665978-->
+IOS 版公司门户在启动屏幕上引入了一个进度栏，为用户提供所发生的加载进程的信息。 进度栏将逐步推出，以替代旋转图标。 这意味着某些用户将看到新的进度栏，而其他用户会继续看到旋转图标。
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 上的 Intune 管理体验公开预览版的新增功能<!--736542-->
 
@@ -97,6 +103,6 @@ Azure 门户中的管理体验将使用已公布的新分组和定向功能；�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

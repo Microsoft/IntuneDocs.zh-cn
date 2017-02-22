@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,18 @@ ms.technology:
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 50ec5fa3b7286d2da53af849bfaa4bcb27e388a5
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: d51bef2220ebf199df6f54e307e2f021faa83d33
 
 
 ---
 
 # <a name="enroll-your-device-in-intune"></a>在 Intune 中注册设备
 
-如果你的公司或学校使用 Microsoft Intune，则可以注册 Windows 设备以获取对公司电子邮件、文件和其他资源的访问权限。 通过注册设备可以使组织保护公司数据的安全。 若要深入了解注册以及你设备上可向 IT 管理员显示和隐藏的内容，请查看本主题底部的链接。
+如果你的公司或学校使用 Microsoft Intune，则可以注册设备以获取对公司电子邮件、文件和其他资源的访问权限。 通过注册设备可以使组织保护公司数据的安全。 若要深入了解注册以及你设备上可向 IT 管理员显示和隐藏的内容，请查看本主题底部的链接。
 
 若要查看注册说明，请使用与你当前所用设备相匹配的链接：
 
@@ -33,6 +35,6 @@ ms.openlocfilehash: 50ec5fa3b7286d2da53af849bfaa4bcb27e388a5
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
