@@ -1,10 +1,10 @@
 ---
 title: "使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Docs"
-description: "使用 Microsoft Intune 为 Windows 电脑（包括 Windows 10 设备）启用移动设备管理 (MDM)。"
+description: "使用 Microsoft Intune 为 Windows 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 11/29/2016
+ms.date: 02/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 31d58d9973cca4023186731a5411c9c9e830e32a
-ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
+ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
+ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
 
 
 ---
@@ -23,21 +23,29 @@ ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-作为 Intune 管理员，可以通过两种方式为 Windows 电脑启用注册和管理：
+使用下列方法之一为 Windows 设备设置注册：
 
-- **[使用 Azure Active Directory 自动注册](#azure-active-directory-enrollment)** - Windows 10 和 Windows 10 移动版用户通过向设备添加工作或学校帐户来注册设备。
+- **[使用 Azure Active Directory Premium 自动注册 Windows 10 和 Windows 10 移动版](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+ -  此方法仅适用于 Windows 10 和 Windows 10 移动版设备。
+ -  必须具有 Azure Active Directory Premium 才能使用此方法。 否则，请使用适用于 Windows 8.1 和 Windows Phone 8.1 的注册方法。
+ -  如果选择不启用自动注册，请使用适用于 Windows 8.1 和 Windows Phone 8.1 的注册方法。
 
-- **[公司门户注册](#set-up-company-portal-app-enrollment)** - Windows 8.1 和更高版本的用户通过下载和安装公司门户应用，然后在应用中输入其工作或学校帐户凭据对设备进行注册。
+
+- **[通过配置 CNAME 注册 Windows 8.1 和 Windows Phone 8.1](#set-up-windows-8--1-and-windows-phone-8--1-enrollment-by-configuring-cname)** 
+ - 必须使用此方法注册 Windows 8.1 和 Windows Phone 8.1 设备。
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="set-up-company-portal-app-enrollment"></a>设置公司门户应用注册
-可以让用户使用 Intune 公司门户应用安装和注册设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入服务器名称。
+## <a name="set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname"></a>通过配置 CNAME 设置 Windows 8.1 和 Windows Phone 8.1 注册
+可以让用户使用 Intune 公司门户安装和注册其设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入服务器名称。
 
 1. **设置 Intune**<br>
 如果尚未设置，请通过[将移动设备管理 (MDM) 机构设置](prerequisites-for-enrollment.md#step-2-set-mdm-authority)为“Microsoft Intune”，然后设置 MDM，为管理移动设备做好准备。
 
-2. **创建 CNAME**（可选）<br>为公司的域创建 **CNAME** DNS 资源记录。 例如，如果公司网站为 contoso.com，则将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
+2. **创建 CNAME**（可选）<br>
+为公司的域创建 **CNAME** DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
+
+    尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果未找到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。    
 
     如果你当前在 DNS 中有将 EnterpriseEnrollment.contoso.com 重定向到 manage.microsoft.com 的 CNAME，则我们建议将它替换为 DNS 中将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。 建议进行此更改，因为将针对未来版本中的注册弃用 manage.microsoft.com 终结点。
 
@@ -58,9 +66,7 @@ ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
 
 3.  **验证 CNAME**<br>在 [Intune 管理员控制台](http://manage.microsoft.com)中，选择“管理员”&gt;“移动设备管理”&gt;“Windows”。 在“指定一个已验证的域名”框中输入公司网站经过验证的域的 URL，然后选择“测试自动检测”。
 
-4.  **可选步骤**<br>在 Windows 10 中无需执行**添加旁加载密钥**步骤。 只有在向设备分配 Windows 应用商店中未提供的业务线 (LOB) 应用时才需要执行“上传代码签名证书”步骤。
-
-6.  **告诉用户如何注册其设备以及在纳入管理之后会出现的情况。**
+4.  **告诉用户如何注册其设备以及在纳入管理之后会出现的情况。**
 
     有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)。
 
@@ -72,6 +78,6 @@ ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

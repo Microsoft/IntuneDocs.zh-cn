@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
+ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
+ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>使用 Microsoft Intune 监视移动应用管理策略
-将移动应用管理 (MAM) 策略应用到用户后，可在 [Azure 门户](https://portal.azure.com)的 Intune 应用保护边栏选项卡中监视策略的合规性状态。 可找到的信息包括受 MAM 策略影响的用户、它的合规性状态和用户可能遭遇的任何问题。
+你可以监视已应用于用户的移动应用管理 (MAM) 策略的合规性状态。 可找到的信息包括受 MAM 策略影响的用户、它的合规性状态和用户可能遭遇的任何问题。
 
-可在 3 个不同的位置监视合规性状态：
+可在&3; 个不同的位置监视合规性状态：
 
 -   摘要视图
 
@@ -33,10 +33,10 @@ ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
 
 ## <a name="summary-view"></a>摘要视图
 
-请按下面 3 个步骤打开“摘要”视图：
+请按下面&3; 个步骤打开“摘要”视图：
 
 1. 转到 [Azure 门户](https://portal.azure.com)，然后输入你的凭据。
-2. 选择“更多服务”，然后键入“Intune”。
+2. 选择“更多服务”，然后在筛选器文本框中键入“Intune”。
 3. 选择“Intune 应用保护”。
 
 在“Intune 移动应用程序管理”边栏选项卡上，可查看合规性状态的摘要：
@@ -89,13 +89,11 @@ ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
 
 可从详细视图中找到相同报表，还可通过其他报表了解 MAM 策略的合规性状态：
 
-![屏幕快照 - 4](../media/MAM-reporting-7.png)
+![屏幕快照 -&4;](../media/MAM-reporting-7.png)
 
 -   **应用保护用户报表：**概述了可在以上详细视图部分下的“用户状态”中找到的相同信息。
 
 -   **应用保护应用报表：**提供了生成报表前，管理员可选择的两种不同应用保护状态。 状态可以为受保护，也可以为不受保护。
-
-    ![屏幕快照 - 1](../media/MAM-reporting-1.png)
 
     -   托管 MAM 活动的用户状态（受保护）：此报表概述了 每个用的每个托管 MAM 应用的活动。
 
@@ -107,7 +105,28 @@ ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
 
         -   已签入所有应用，但应用还未获取任何 MAM 策略。
 
-![屏幕快照 - 2](../media/MAM-reporting-4.png)
+![屏幕快照 -&2;](../media/MAM-reporting-4.png)
+
+## <a name="table-grouping"></a>表格分组
+
+“应用保护用户报表”数据出现后，可按照以下方式聚合数据：
+
+- **验证结果：**数据显示为按应用保护状态分组，可能是失败、警告或成功。
+- **应用名称：**数据显示为按应用（实际应用名称）分组，有失败、警告或成功。
+
+## <a name="export-app-protection-activities-to-csv"></a>将应用保护活动导出到 CSV
+
+可以将所有应用保护策略活动导出到单个 .csv 文件。 这可帮助分析用户报告的所有应用保护状态。
+
+按照下列步骤进行操作可生成应用保护报表：
+
+1. 在“Intune 移动应用程序管理”边栏选项卡中，选择“应用保护报表”。
+
+    ![屏幕快照 -&6;](../media/app-protection-report-csv-2.png)
+
+2. 选择“是”以保存报表，然后选择“另存为”，并选择要在其中保存报表的文件夹。
+
+    ![屏幕快照 -&7;](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>另请参阅
 [管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -117,6 +136,6 @@ ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

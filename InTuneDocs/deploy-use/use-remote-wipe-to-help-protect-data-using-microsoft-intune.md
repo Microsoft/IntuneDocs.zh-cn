@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
@@ -117,10 +118,14 @@ ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|
 |证书配置文件设置|已吊销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
-|Email|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
-|Outlook|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|
+|Email|N/A。 查看 Outlook 项。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
+|Outlook|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Microsoft Outlook 应用接收的电子邮件。 否则取消注册时不会擦除 Outlook。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Microsoft Outlook 应用接收的电子邮件。 否则取消注册时不会擦除 Outlook。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|
 |Azure Active Directory (AAD) 脱离|已删除 AAD 记录。|已删除 AAD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
+
+**Android for Work**
+
+在 Android for Work 设备上执行选择性擦除将删除该设备上工作配置文件中的所有数据、应用和设置。 这将从 Intune 管理中停用设备。 Android for Work 不支持完全擦除。
 
 **Windows**
 
@@ -168,6 +173,6 @@ EFS 选择性擦除当前支持下列数据和应用：
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

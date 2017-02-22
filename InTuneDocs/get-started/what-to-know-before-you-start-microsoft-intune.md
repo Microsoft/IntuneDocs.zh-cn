@@ -1,11 +1,11 @@
 ---
-title: "先决条件 | Microsoft Docs"
-description: "指向 Intune 先决条件和要求的链接"
+title: "支持的设备 - Microsoft Intune | Microsoft Docs"
+description: "列出用于 Intune 设备管理支持的设备平台和浏览器"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a567d55141c4510a5c81861df1522f118104de61
-ms.openlocfilehash: 900b3a9bcc9ce58cd165b14592c850b50739a33a
+ms.sourcegitcommit: b3732d0c6461f9fb8462ae5584055204d597aae0
+ms.openlocfilehash: 0af4f49713a65900079d69a09f20d210797c935c
 
 
 ---
 
-# <a name="prerequisites-to-getting-started-with-intune"></a>开始使用 Intune 的先决条件
+# <a name="supported-devices-and-browsers"></a>支持的设备和浏览器
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本文适用于负责企业中的设备管理的系统管理员。 有关在手机上安装 Intune 的帮助，请参阅[使用托管设备来完成工作](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)。
 
 开始设置 Microsoft Intune 之前，请查看以下要求：
 
@@ -43,7 +46,7 @@ Intune 设备管理提供[这些功能](mobile-device-management-capabilities-in
 
 ### <a name="windows-pc-software-client"></a>Windows 电脑软件客户端
 
-作为一种备用注册方法，可在 Windows 电脑上部署和安装 [Intune 软件客户端](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)。 可使用 Intune 软件客户端管理 Windows 7 和更高版本的电脑。 使用可提供[这些功能](windows-pc-management-capabilities-in-microsoft-intune.md)的客户端软件管理电脑。
+作为一种备用注册方法，可在 Windows 电脑上部署和安装 [Intune 软件客户端](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)。 可使用 Intune 软件客户端管理 Windows 7 和更高版本的电脑，Windows 10 家庭版除外。 使用可提供[这些功能](windows-pc-management-capabilities-in-microsoft-intune.md)的客户端软件管理电脑。
 
 ### <a name="exchange-activesync-management"></a>Exchange ActiveSync 管理
 
@@ -74,6 +77,6 @@ Intune 设备管理提供[这些功能](mobile-device-management-capabilities-in
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
