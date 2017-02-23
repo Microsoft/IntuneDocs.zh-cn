@@ -5,7 +5,7 @@ description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 01/24/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
+ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
+ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
 
 
 ---
@@ -23,14 +24,11 @@ ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 通过安装 Intune 客户端软件来注册 Windows 电脑。 Intune 客户端软件可通过以下方法安装：
 
-- 由 IT 管理员：
-  - 手动安装
-  - 通过组策略安装
-  - 随附在磁盘映像中安装
+- IT 管理员可使用以下方法之一：手动安装、组策略或包括在磁盘映像中的安装
 
-- 由最终用户手动安装软件客户端
+- 最终用户可手动安装客户端软件
 
-IT 管理员部署给用户或最终用户下载的 Intune 软件客户端包括在 Intune 管理中注册电脑时所需的最低配软件。 注册电脑后，Intune 软件客户端才会下载电脑管理所需的完整客户端软件。
+Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软件配置。 注册电脑后，Intune 客户端软件才会下载电脑管理所需的完整客户端软件。
 
 此系列下载可降低网络带宽的影响，并尽量减少最初在 Intune 中注册电脑时所需的时间。 它还可确保第二次下载完成后，客户端将具有最新的软件。
 
@@ -44,8 +42,7 @@ IT 管理员部署给用户或最终用户下载的 Intune 软件客户端包括
 
 2.  在“客户端软件下载”页上，单击“下载客户端软件”。 然后将包含该软件的 **Microsoft_Intune_Setup.zip** 包保存到网络上的安全位置。
 
-    > [!NOTE]
-    > Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（可在内嵌证书中使用）。 如果未经授权的用户获得了此安装包的访问权限，则他们可以用该包的嵌入式证书所代表的帐户注册计算机，并可获得访问公司资源的权限。
+Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（可在内嵌证书中使用）。 如果未经授权的用户获得了此安装包的访问权限，则他们可以用该包的嵌入式证书所代表的帐户注册电脑，并可能获得访问公司资源的权限。
 
 3.  将安装程序包的内容提取到网络上的安全位置。
 
@@ -54,10 +51,10 @@ IT 管理员部署给用户或最终用户下载的 Intune 软件客户端包括
 
 ## <a name="deploy-the-client-software-manually"></a>手动部署客户端软件
 
-在要安装软件客户端的计算机上，转到客户端软件安装文件所在的文件夹。 然后运行 **Microsoft_Intune_Setup.exe** 安装客户端软件。
+在要安装客户端软件的计算机上，转到客户端软件安装文件所在的文件夹。 然后运行 **Microsoft_Intune_Setup.exe** 安装客户端软件。
 
 > [!NOTE]
-> 当你将鼠标悬停在客户端计算机上任务栏中的图标上时，将显示安装的状态。
+> 将鼠标悬停在客户端电脑上任务栏中的图标上时，将显示安装的状态。
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>使用组策略部署客户端软件
 
@@ -108,11 +105,56 @@ IT 管理员部署给用户或最终用户下载的 Intune 软件客户端包括
 
 ## <a name="instruct-users-to-self-enroll"></a>指示用户自行注册
 
-用户可以通过转到[公司门户网站](http://portal.manage.microsoft.com)安装 Intune 客户端软件。 如果 Web 门户可以检测到该设备是 Windows 电脑，它将提示用户通过下载 Intune 软件客户端来注册电脑。 软件下载完成后，用户可以安装软件以对其电脑进行管理。
+用户可通过访问[公司门户网站](http://portal.manage.microsoft.com)安装 Intune 客户端软件。 用户在 Web 门户中所见的确切信息有所不同，具体取决于帐户的 MDM 机构以及用户电脑的 OS 平台和/版本。 
 
-用户在 Web 门户中所见的确切信息可能不同，具体取决于帐户的 MDM 机构以及用户电脑的平台和版本。
+如果用户尚未分配 Intune 许可证，或尚未将组织的 MDM 机构设置为 Intune，则不会向用户显示任何注册选项。
 
-![Intune 门户提示下载 Intune 软件客户端](../media/software-client-download.png)
+如果用户已分配 Intune 许可证，且已将组织的 MDM 机构设置为 Intune：
+
+- Windows 7 或 Windows 8 电脑用户将只看到一个选项：通过下载和安装组织唯一的电脑客户端软件注册 Intune。
+
+- Windows 10 或 Windows 8.1 电脑用户将看到两个注册选项：
+
+  -  **将电脑注册为移动设备**：用户选择“了解注册方法”按钮并获取如何将其电脑注册为移动设备的相关说明。 此按钮将突出显示，因为 MDM 注册被视为默认的首选注册选项。 但是，MDM 选项不适用于本主题，本主题只介绍客户端软件安装。
+  - **使用 Intune 客户端软件注册电脑**：请让你的用户选择“单击此处下载”链接，然后将转到客户端软件安装。
+
+下表概述了这些选项。
+
+  ![每个平台的默认注册选项](../media/default-enrollment-options-table.png)
+
+以下屏幕截图显示用户使用软件客户端注册设备时将看到的内容。
+
+首先系统将提示用户标识或注册其设备。
+
+  ![标识或注册设备](../media/identify-device-or-enroll.png)
+
+若要让用户安装电脑客户端软件，请让他们选择“单击此处下载”链接，这将使用户能够下载电脑客户端软件并完成安装过程。 “了解注册方法”按钮可将用户转到一个文档（与这些软件客户端说明无关），该文档说明如何使用 MDM 注册进行注册。
+
+  ![选择“单击此处下载”链接](../media/enroll-your-windows-device.png)
+
+用户单击此链接时将看到“下载软件”按钮，选择此按钮可启动电脑客户端软件安装。
+
+  ![选择“下载软件”按钮](../media/download-pc-client-software.png)
+
+然后会提示用户使用公司凭据进行登录。
+
+  ![使用凭据登录](../media/sign-in-to-intune.png)
+
+用户将被转到安装的欢迎页面。
+
+  ![电脑客户端安装的欢迎页面](../media/welcome-to-pc-agent-install-wizard.png)
+
+用户选择“下一步”，然后开始安装。
+
+  ![电脑客户端安装的欢迎页面](../media/welcome-to-pc-agent-install-wizard.png)
+
+安装完成后，用户选择“完成”。
+
+  ![完成电脑客户端安装](../media/completed-the-setup-wizard.png)
+
+如果用户在使用 Intune 电脑客户端软件注册后，尝试将其电脑注册为移动设备，则会看到以下错误屏幕。
+
+  ![如果电脑已注册，则会显示此屏幕](../media/page-shown-if-pc-already-enrolled.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>监视和验证成功的客户端部署
 使用下列过程之一来帮助你监视和验证成功的客户端部署。
@@ -143,6 +185,6 @@ IT 管理员部署给用户或最终用户下载的 Intune 软件客户端包括
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
