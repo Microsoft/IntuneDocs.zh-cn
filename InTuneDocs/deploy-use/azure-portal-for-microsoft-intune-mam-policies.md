@@ -13,18 +13,19 @@ ms.technology:
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: fa8d839da1cf0b2d207edc0b28de8a714ba0df02
+ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
+ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
 
 ---
 
-# <a name="azure-portal-for-microsoft-intune-mam-policies"></a>用于 Microsoft Intune MAM 策略的 Azure 门户
+# <a name="azure-portal-for-intune-app-protection-policies"></a>提供 Intune 应用保护策略的 Azure 门户
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Azure 门户可用于创建和管理以下项的移动应用管理 (MAM) 策略：
+Azure 门户可用于创建和管理以下项的应用保护策略：
 
 - **Intune 中注册和管理**的设备上运行的应用。
 
@@ -32,9 +33,9 @@ Azure 门户可用于创建和管理以下项的移动应用管理 (MAM) 策略�
 - **已在第三方 MDM 解决方案中注册**的设备上运行的应用。
 
 >[!IMPORTANT]
-> Azure 门户是创建 MAM 策略的新管理控制台，但你也可以创建一个 MAM 策略，用于支持在 Intune 中使用 MDM 方案的 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
+> Azure 门户是创建应用保护策略的新管理控制台，但也可以创建一个应用保护策略，用于支持在 Intune 中使用 MDM 方案的 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
 
-> 可能无法在 Intune 管理控制台上看到所有可用的 MAM 策略设置。 此外，如果同时在 Intune 管理控制台和 Azure 门户中创建了 MAM 策略，则在 Azure 门户中创建的策略将替代在 Intune 管理控制台中创建的策略。 在这种情况下，Azure 门户 MAM 策略将应用于应用并部署到用户。
+> 可能无法在 Intune 管理控制台上看到所有可用的应用保护策略设置。 此外，如果同时在 Intune 管理控制台和 Azure 门户中创建了应用保护策略，则在 Azure 门户中创建的策略将替代在 Intune 管理控制台中创建的策略。 在这种情况下，Azure 门户应用保护策略将应用于应用并部署到用户。
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>登录到 Azure 门户并自定义起始页
@@ -47,11 +48,11 @@ Azure 门户可用于创建和管理以下项的移动应用管理 (MAM) 策略�
 
     ![Azure 门户仪表板的屏幕截图](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  在“浏览”菜单中，找到“Intune”。
+3.  从左侧菜单中选择“更多服务”，然后在文本框筛选器中键入 **Intune**。
 
     ![突出显示 Intune 的“浏览”菜单的屏幕快照](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-4.  选择“Intune” > “Intune 移动应用管理” > “设置”。
+4.  选择“Intune 应用保护” > “Intune 移动应用程序管理” > “所有设置”。
 
     ![“Intune 移动应用程序管理”边栏选项卡的屏幕截图](../media/AppManagement/MAM-Azure-Portal-2.png)
 
@@ -62,10 +63,10 @@ Azure 门户可用于创建和管理以下项的移动应用管理 (MAM) 策略�
     ![具有固定 Intune 磁贴的仪表板的屏幕截图](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
 
 ## <a name="next-steps"></a>后续步骤
-[准备好配置移动应用管理策略](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[准备好配置应用保护策略](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

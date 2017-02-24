@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jieyan
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
-ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 在 Microsoft Intune 中注册设备可使 Windows 10 设备获取访问组织安全数据（包括电子邮件、文件和其他资源）的权限。 这适用于 Windows 10 桌面设备和 Windows 10 移动设备。 注册设备有助于为你和你的组织确保这类访问的安全，且有助于将工作数据与个人数据分开。
 
-想要了解更多信息？ 了解[在 Intune 中注册设备](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)后会发生的情况，以及这对[设备上的信息](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)的意义。
+想要了解更多信息？ 了解[在 Intune 中注册设备](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)后会发生的情况，以及这对[设备上的信息](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)的意义。
 
 ## <a name="windows-10-desktop-devices"></a>Windows 10 桌面设备
 1.    转到“开始”。
@@ -56,6 +57,6 @@ ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

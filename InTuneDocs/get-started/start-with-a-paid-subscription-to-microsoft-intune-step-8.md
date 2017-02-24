@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/17/2017
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4726cc621d65200211a5cef6f80c14b2c447b8a7
-ms.openlocfilehash: 4fcf991ec2d982c945814ccc49ae3862dece52b3
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>注册移动设备并安装应用
+# <a name="enable-enrollment-for-mobile-devices"></a>启用移动设备注册
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主题指导 Intune 管理员如何启用移动设备注册。 有关在手机上使用 Intune 的帮助，请参阅[使用托管设备来完成工作](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)。 
 
 若要使用 Intune 设置移动设备管理，必须先设置“移动设备管理机构”，它标识可管理与你的帐户关联的设备的服务。 本指南假设你将使用 Intune 服务，而不是 System Center Configuration Manager。 设置 MDM 机构后，便可以启用对设备平台的管理，并使用公司门户应用注册设备。
 
@@ -69,6 +72,6 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 2f1687af70f4b41dc190a718da3127516fabeafd
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
 
 
 ---
@@ -90,6 +91,6 @@ Azure AD 全局管理员用户未接受初始 Lookout 设置时，会出现以�
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

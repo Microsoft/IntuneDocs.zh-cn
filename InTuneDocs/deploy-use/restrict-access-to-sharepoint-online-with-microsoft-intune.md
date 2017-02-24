@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
      -   **设备必须已加入域或必须是合规的。** 选择此选项要求电脑必须已加入域或符合在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中设置的策略。 如果电脑不满足任一要求，则系统会提示用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备。
 
-     -   **设备必须已加入域。** 选择此选项要求电脑必须已加入域，才能访问 Exchange Online。 如果电脑未加入域，则系统会阻止对电子邮件的访问，并且提示用户与 IT 管理员联系。
-
      -   **设备必须是合规的。** 选择此选项要求电脑必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中注册并且必须合规。 如果电脑未注册，则会显示一条消息，其中包含有关如何注册的说明。
 
 4.   在**浏览器访问** SharePoint Online 和 OneDrive for Business 下，可选择仅允许通过受支持的浏览器（Safari (iOS) 和 Chrome (Android)）访问 Exchange Online。 将阻止来自其他浏览器的访问。 为 OneDrive 的应用程序访问选择的相同平台限制在此处同样适用。
@@ -200,6 +198,6 @@ ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

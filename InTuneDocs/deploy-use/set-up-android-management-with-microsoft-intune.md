@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 26ddc03985ab8a4959a1d2c9a47e77f042ab9310
-ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
 
 
 ---
@@ -25,6 +26,8 @@ ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 作为 Intune 管理员，你可以从公司门户启用 Android 设备管理，包括 Samsung Knox 标准版设备。 然后，用户可以使用从 Google Play 提供的公司门户应用注册其设备。
+
+默认情况下，Android 设备可在 Intune 中进行注册。 若要阻止 Android 设备注册，请使用管理员凭据登录 [Microsoft Intune 管理门户](http://manage.microsoft.com)。 选择“管理员” > “移动设备管理” > “注册规则”，然后清除“允许 Android 设备”复选框。
 
 1.  **设置 Intune**<br>
     如果你尚未设置，请通过[将移动设备管理机构设置](prerequisites-for-enrollment.md#step-2-set-mdm-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
@@ -37,7 +40,7 @@ ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
     有关最终用户注册说明，请参阅[在 Intune 中注册 Android 设备](../enduser/enroll-your-device-in-intune-android.md)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
 
     有关其他最终用户任务的信息，请参阅以下文章：
-  - [有关 Microsoft Intune 最终用户体验的资源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [有关 Microsoft Intune 最终用户体验的资源](how-to-educate-your-end-users-about-microsoft-intune.md)
   - [适用于 Android 设备的最终用户指南](../enduser/using-your-android-device-with-intune.md)
 
 由于中国地区没有 Google Play 商店，Android 设备必须从中国的应用市场获取公司门户。 可在以下应用商店下载用于 Android 的公司门户应用：
@@ -62,6 +65,6 @@ Android 版公司门户应用使用 Google Play Services 与 Microsoft Intune �
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
@@ -24,6 +25,8 @@ ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 # <a name="sign-up-or-sign-in-to-intune"></a>注册或登录到 Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主题指导系统管理员如何注册 Intune 帐户。
 
 在登录或注册 Intune 之前，你需要确定你的组织是否已有 Microsoft Online Services 工作或学校帐户，或者你的组织是否与 Microsoft 签订了企业协议或等效的批量许可协议。 当你与 Microsoft 签署批量许可协议或订阅其他 Microsoft 云服务（如 Office 365）时，请提供工作或学校帐户。
 
@@ -53,6 +56,6 @@ ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

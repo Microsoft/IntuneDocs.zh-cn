@@ -1,5 +1,6 @@
 ---
-title: "Microsoft Intune 中的设备配置文件疑难解答 | Intune Azure 预览版 | Microsoft Docs"
+title: "Microsoft Intune 中的设备配置文件疑难解答"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：如果遇到问题无法解决，请使用本主题来解决 Intune 设备配置文件的问题。"
 keywords: 
 author: robstackmsft
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 132c0b308031a57277c20cedd5b4ad37bfdf92e6
-ms.openlocfilehash: fe2a694d7b6135b4e8f7aaf1c863bc1685e93ea6
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 
 ---
@@ -499,6 +501,6 @@ Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其�
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)中所述。
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

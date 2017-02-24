@@ -15,8 +15,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
 
 
 ---
@@ -34,14 +34,14 @@ ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
 >[!IMPORTANT]
 > 创建合规性策略规则和配置条件访问前，**必须**配置 Lookout for Work 应用。 这样可以确保最终用户能够安装应用，以便访问电子邮件或其他公司资源。
 
-按此步骤可在 Intune 管理控制台中完成 Lookout 与 Intune 的集成设置。  接下来执行此解决方案的几个步骤将涉及部署 [Lookout for Work 应用](configure-and-deploy-lookout-for-work-apps.md)、设置[合规性](enable-device-threat-protection-rule-in-compliance-policy.md)策略。
+按此步骤可在 Intune 管理控制台中完成 Lookout 与 Intune 的集成设置。  接下来执行此解决方案的几个步骤将涉及部署 [Lookout for Work 应用](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)、设置[合规性](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy)策略。
 
 
 ## <a name="next-steps"></a>后续步骤
-[配置 Lookout for Work 应用](configure-and-deploy-lookout-for-work-apps.md)
+[配置 Lookout for Work 应用](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

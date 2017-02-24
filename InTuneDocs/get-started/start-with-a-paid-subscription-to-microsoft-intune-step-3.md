@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主题指导管理员如何向 Intune 添加用户以及 Intune 服务中可用的管理权限。
 
 作为管理员，可直接添加用户或从本地 Active Directory 同步用户。 添加后，用户可注册设备并访问公司资源。 还可为用户提供更多权限，包括“租户管理员”、“服务管理员”和“设备注册管理器”权限。
 
@@ -35,7 +38,7 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
   - [设备注册管理器](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>添加用户到 Intune
-可通过 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)手动将用户添加到 Intune 订阅，系统不会自动向这些用户分配 Intune 许可证。 相反，Intune 租户管理员必须稍后编辑用户帐户才能从 Office 365 门户中向用户分配许可证。 有关操作指南，请参阅[向 Office 365 门户逐一或批量添加用户](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
+可通过 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)手动将用户添加到 Intune 订阅，但系统不会自动向这些用户分配 Intune 许可证。 相反，Intune 租户管理员必须稍后编辑用户帐户才能从 Office 365 门户中向用户分配许可证。 有关操作指南，请参阅[向 Office 365 门户逐一或批量添加用户](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>同步 Active Directory 并将用户添加到 Intune
 可配置目录同步，将用户帐户从本地 Active Directory 导入到包含 Intune 用户的 Microsoft Azure Active Directory (Azure AD)。 让本地 Active Directory 服务与你所有基于 Azure Active Directory 的服务相连接，使管理用户标识变得更简单。 还可以配置单一登录功能，使用户的身份验证体验熟悉且简单。 通过将同一 [Azure AD 租户](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)与多个服务相链接，先前同步的用户帐户便可用于所有基于云的服务。
@@ -95,7 +98,7 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 
 ### <a name="device-enrollment-managers"></a>设备注册管理器
 
-设备注册管理器是标准用户帐户，具有可注册更多无用户设备的额外权限。 默认情况下，每个 Intune 用户最多可注册 15 台设备。 作为管理员，可向用户账户授予设备注册管理器权限。 该帐户可注册大量企业自有设备。 当设备临时分配给用户或在展台模式（无需用户与设备关联）下运行时，这将非常有用。 有关详细信息，请参阅[设备注册管理器](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
+设备注册管理器是标准用户帐户，具有可注册更多无用户设备的额外权限。 默认情况下，每个 Intune 用户最多可注册&15; 台设备。 作为管理员，可向用户账户授予设备注册管理器权限。 该帐户可注册大量企业自有设备。 当设备临时分配给用户或在展台模式（无需用户与设备关联）下运行时，这将非常有用。 有关详细信息，请参阅[设备注册管理器](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
 
 >[!div class="step-by-step"]
 
@@ -103,6 +106,6 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

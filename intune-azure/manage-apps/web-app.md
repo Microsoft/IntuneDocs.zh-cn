@@ -1,11 +1,12 @@
 ---
-title: "如何将 Web 应用添加到 Intune | Intune Azure 预览版 | Microsoft Docs"
+title: "如何将 Web 应用添加到 Intune"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何将 Web 应用添加到 Intune。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,14 @@ ms.technology:
 ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 4188957e263717d416853f308a50e3dbd7a9244a
-ms.openlocfilehash: 4f8af0008300550d284957c1002be779e0e53f79
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c2e54d3e57a4b02ba277b88cc672d5587c449281
 
 ---
 
-# <a name="how-to-add-web-apps-to-intune"></a>如何将 Web 应用添加到 Intune
+# <a name="how-to-add-web-apps-to-microsoft-intune"></a>如何将 Web 应用添加到 Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -43,6 +45,6 @@ ms.openlocfilehash: 4f8af0008300550d284957c1002be779e0e53f79
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

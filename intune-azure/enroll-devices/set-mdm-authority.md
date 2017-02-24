@@ -1,5 +1,6 @@
 ---
-title: "设置移动设备管理机构 | Intune Azure 预览版 | Microsoft Docs"
+title: "设置移动设备管理机构"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何在 Intune 中设置移动设备管理机构。 "
 keywords: 
 author: staciebarker
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
 
 ---
 
@@ -34,9 +36,9 @@ ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
 >[!IMPORTANT]
 >移动设备管理机构一旦设定，若要进行更改，必须联系 [Microsoft 支持](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune)，所以请谨慎选择。
 
-**若要设置移动设备管理机构，请执行以下操作：**
+**若要设置移动设备管理机构：**
 
-1. 在 Azure 门户中，选择“更多服务”，在文本框中输入“Intune”，然后选择“其他” > “Intune”。
+1. 在 Azure 门户中，选择“更多服务” > “监视和管理” > “Intune”。
 
 2. 在“Intune”边栏选项卡上，选择“注册设备”，然后选择“概述”。
 
@@ -44,6 +46,6 @@ ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

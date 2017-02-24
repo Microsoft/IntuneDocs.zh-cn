@@ -18,8 +18,8 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -38,36 +38,6 @@ ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
 -   自动设置公司电子邮件帐户。
 
 在 Intune 中注册设备时，会向 IT 管理员授予管理设备的权限，以帮助保护设备上的公司信息。
-
-**IT 管理员不能看到的内容**
-
--   调用和 Web 历史记录
-
--    位置
-
--   电子邮件和短信
-
--   联系人
-
--    密码
-
--   日历
-
--   照相机胶卷
-
-**IT 管理员能够看到的内容**
-
--   型号
-
--   序列号
-
--   操作系统
-
--   应用名称
-
--   Owner
-
--   设备名称
 
 注册设备后，IT 管理员可以：
 
@@ -99,6 +69,6 @@ ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
 
 
 ---
@@ -25,6 +26,7 @@ ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+本主题指导管理员如何创建 DNS CNAME 以简化和自定义其登录体验。
 
 当你的组织注册 Microsoft 提供的基于云的服务（如 Intune）时，你将获得一个 Azure Active Directory (AD) 中托管的初始域名，其形式如下所示：**yourdomain.onmicrosoft.com**。 在此示例中，**yourdomain** 是你在注册时选择的域名，**onmicrosoft.com** 是分配给你添加到订阅的帐户的后缀。 如果你的组织拥有自定义域，你可以配置 Intune 的实例来使用该域，而不是使用订阅提供的域名。
 
@@ -62,6 +64,6 @@ ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

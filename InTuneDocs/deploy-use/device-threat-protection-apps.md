@@ -14,8 +14,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: ab94439d9fd5300d61c5991434d41f7fdca693d2
 
 
 ---
@@ -78,7 +78,7 @@ ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
 
 6. **若要将应用部署到用户**，请选择 Lookout for Work 应用，然后选择“管理部署”。
 
-  选择的用户必须与添加到 Lookout 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout 设备威胁保护](configure-and-deploy-lookout-for-work-apps.md)部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
+  选择的用户必须与添加到 Lookout 控制台“注册管理”选项中的用户一致。  请参阅[为订阅配置 Lookout 设备威胁保护](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps)部分中的步骤 3，了解有关将用户组添加到 Lookout MTP 的信息。
 
   >[!IMPORTANT]
   > Intune 应用部署向导并未识别到 Azure AD 用户组且使用的是 Intune 用户组，因此必须基于在 Lookout 控制台中注册的 Azure AD 用户组创建 Intune 用户组（如[本](plan-your-user-and-device-groups.md)主题所述）。
@@ -94,10 +94,10 @@ ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
 * [解除 Lookout for Work 在 Android 设备上发现的威胁](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>后续步骤
-* [在合规性策略中启用设备威胁保护规则](enable-device-threat-protection-rule-in-compliance-policy.md)
+* [在合规性策略中启用设备威胁保护规则](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 
