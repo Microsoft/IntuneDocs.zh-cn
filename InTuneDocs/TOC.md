@@ -156,7 +156,7 @@
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [保护电子邮件访问：示例](deploy-use/restrict-email-access-example-scenarios.md)
 ### [只允许策略托管应用访问 O365 服务](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [应用与 MAM CA](deploy-use/use-apps-with-mam-ca.md)
+#### [将应用与基于应用的 CA 结合使用](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [阻止没有 ADAL 的应用](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [保护对网络的访问 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
@@ -224,6 +224,6 @@
 # [术语表](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO3-->
+<!--HONumber=Feb17_HO4-->
 
 
