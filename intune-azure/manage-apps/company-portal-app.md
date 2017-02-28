@@ -1,5 +1,6 @@
 ---
-title: "如何配置公司门户应用 | Intune Azure 预览版 | Microsoft Docs"
+title: "如何配置公司门户应用"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何将特定于公司的品牌应用到 Intune 公司门户应用。 "
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 142b57f48c2950f6eecc228decfa06ce44c76319
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9ebfadd945916b6be8225b9e07d67100e3f91222
+ms.lasthandoff: 02/18/2017
 
 ---
 

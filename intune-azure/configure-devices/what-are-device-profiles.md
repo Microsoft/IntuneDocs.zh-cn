@@ -1,5 +1,6 @@
 ---
-title: "什么是 Microsoft Intune 中的设备配置文件？ | Intune Azure 预览版 | Microsoft Docs"
+title: "什么是 Microsoft Intune 中的设备配置文件？"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解 Intune 设备配置文件，以及它们如何帮助管理和保护公司设备。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: a5f6ad4dd5339b31a6a1fd549a3b29b0ff258a5b
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
+ms.lasthandoff: 02/18/2017
 
 
 ---
