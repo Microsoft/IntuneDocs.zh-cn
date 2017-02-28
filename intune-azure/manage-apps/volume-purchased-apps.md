@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/06/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d85fa974865af56cad9d3df42f562b9f0c3981d3
-ms.openlocfilehash: 6e538b1da0bebcbcea6845d05227a45dc3c33181
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 774d5970af9389ed0ef99c0bbb494c5a1b6d051d
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="manage-volume-purchased-apps"></a>管理批量采购的应用
+# <a name="manage-volume-purchased-apps-with-micrsoft-intune"></a>使用 Microsoft Intune 管理批量购买的应用
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -33,9 +34,4 @@ Microsoft Intune 可帮助你管理通过这样的计划购买的应用，方法
 
 [管理 iOS 批量购买的应用](ios-vpp-apps.md)
 [管理从适用于企业的 Windows 应用商店中批量购买的应用](wsfb-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

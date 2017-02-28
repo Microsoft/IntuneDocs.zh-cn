@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: ac3a901c4ecb900cb728c8dda04943071669f063
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bb31b9fac5b6ab7dd26425f5520cb3fb694bf4e7
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-android-store-apps-to-intune"></a>如何将 Android 应用商店应用添加到 Intune
+# <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>如何将 Android 应用商店应用添加到 Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -47,8 +48,3 @@ ms.openlocfilehash: ac3a901c4ecb900cb728c8dda04943071669f063
 8. 完成后，在“添加应用”边栏选项卡上，选择“保存”。
 
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 79faa771a9af0761703ca3e72b937fab1a83a81f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-email-settings"></a>如何配置电子邮件设置 
+# <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置电子邮件设置
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -85,9 +86,4 @@ ms.openlocfilehash: 79faa771a9af0761703ca3e72b937fab1a83a81f
 - **Windows**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 Intune 会覆盖由用户创建的现有电子邮件配置文件。
 - **Android**：基于电子邮件地址检测到现有的重复电子邮件帐户，并使用 Intune 配置文件将其覆盖。
 由于 Android 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

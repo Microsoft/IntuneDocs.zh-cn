@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Intune 预览版新增功能 | Intune Azure 预览版 | Microsoft Docs"
-description: "Intune Azure 预览版：了解 Intune Azure 预览版新增功能"
+description: "了解 Intune Azure 预览版新增功能"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,28 +14,40 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e405363f9d0a89b1589b01d18ee8d2861b07ec60
-ms.openlocfilehash: 70007f5501fba37964a0a54807c0e0f565510a74
-
+ms.sourcegitcommit: 9852fdb9d1bfeede4931f0ead2fa0898dfcacb0b
+ms.openlocfilehash: a05c7464b3f2fbca467d44218904671529320dda
+ms.lasthandoff: 02/15/2017
 
 ---
 
 # <a name="whats-new-in-the-microsoft-intune-preview"></a>Microsoft Intune 预览版新增功能
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-
 
 随着公共预览版的不断改进，添加了更多功能，以下是相关介绍。
 
-<!--## February 2017-->
+## <a name="february-2017"></a>2017 年 2 月
 
-<!--### Custom app categories <!--748805
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+### <a name="ability-to-restrict-mobile-device-enrollment---747600-795782--"></a>限制移动设备注册的功能<!--747600, 795782-->
+Intune 新增了注册限制，可控制允许注册的移动设备平台。 Intune 将移动设备平台分为 iOS、macOS，Android、Windows 和 Windows Mobile。
 
-<!--### Display device categories <!--814654
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+* 限制移动设备注册不会限制电脑客户端注册。  
+* 阻止个人自有设备的注册有一个附加选项，该选项仅适用于 iOS 和 Android。
+
+Intune 将所有新设备都标记为个人所有，除非 IT 管理员将设备标记为公司所有，如[本文](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices)所述。
+
+### <a name="view-all-actions-on-managed-devices---677150--"></a>查看托管设备上的所有操作<!--677150-->
+新添加的__设备操作__报表显示了在设备上执行远程操作（如出厂重置）的操作者，还额外显示了该操作的状态。 请参阅 [What is device management?](https://docs.microsoft.com/intune-azure/manage-devices/what-is)（什么是设备管理？）。
+
+### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>非托管设备可访问已分配的应用<!--664691-->
+公司门户网站上的设计更改之一是，iOS 和 Android 用户能够在其非托管设备上安装分配到的“可用且无需注册”设备。 用户可使用其 Intune 凭据登录到公司门户网站，并查看分配到的应用列表。 “可用且无需注册”应用的应用包可通过公司门户网站进行下载。 需要注册才能安装的应用不受此更改影响，如果用户想安装这类应用，则会提示用户注册其设备。
+
+### <a name="custom-app-categories---748805--"></a>自定义应用类别<!--748805-->
+现可以为添加到 Intune 的应用创建、编辑和分配类别。 目前，只能以英文指定类别。
+请参阅[如何将应用添加到 Intune](/intune-azure/manage-apps/add-apps)。
+
+### <a name="display-device-categories---814654--"></a>显示设备类别<!--814654-->
+现在可以将设备类别作为设备列表中的一列进行查看。 并且还可以在设备属性边栏选项卡的属性部分编辑该类别。 请参阅[如何将应用添加到 Intune](/intune-azure/manage-apps/add-apps)。 
 
 ## <a name="january-2017"></a>2017 年 1 月
 
@@ -83,9 +95,4 @@ Azure 门户不支持 Apple 设备注册计划 (DEP) 设备序列号的“默认
 
 #### <a name="how-to-get-ready-for-this-change"></a>如何针对此更改做好准备
 我们提前提供此信息，如果此更改将对你产生影响，你可以提醒支持管理员注意。 预计在 2017 年上半年向 Azure 门户迁移时将继续使用此更改。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c2b49fb985290b2806e172543f95db21727c113e
-ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-intune-azure-preview"></a>在 Intune Azure 预览版中使用自定义策略以允许和阻止适用于 Samsung KNOX 标准版设备的应用
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用自定义策略以允许和阻止适用于 Samsung KNOX 标准版设备的应用
 [!INCLUDE[azure_preview](../includes/azure_preview.md)] 使用此主题中的过程创建 Microsoft Intune 自定义策略，该策略创建以下内容之一：
 
 - 阻止在设备上运行的应用的列表。 阻止运行此列表中的应用，即使应用此策略时已安装这些应用也是如此。
@@ -45,9 +46,9 @@ ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
 
 - **名称** - 输入 **PreventStartPackages**。
 - **描述** - 输入可选描述，如“阻止运行的应用列表”。
--   **数据类型** - 在下拉列表中，选择“字符串”。
--   **OMA-URI** - 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
--   **值** - 输入你要允许的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
+-     **数据类型** - 在下拉列表中，选择“字符串”。
+-     **OMA-URI** - 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+-     **值** - 输入你要允许的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>有关允许用户从 Google Play 商店中安装的应用（同时排除所有其他应用）的列表：
 - **名称** - 输入 **AllowInstallPackages**。
@@ -65,9 +66,4 @@ ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
 
 
 <!---## Assign the custom profile--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

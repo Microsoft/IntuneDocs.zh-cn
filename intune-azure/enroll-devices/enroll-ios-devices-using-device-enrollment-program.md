@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -50,7 +51,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 设备注册配置文件定义应用于设备组的设置。 以下步骤说明如何为使用 DEP 注册的 iOS 设备创建设备注册配置文件。
 
-1. 在 Azure 门户中，选择“更多服务”，在文本框中输入“Intune”，然后选择“其他” > “Intune”。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
 2. 在“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
 
@@ -110,17 +111,19 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 ## <a name="synchronize-dep-managed-devices"></a>同步 DEP 管理的设备
 
-1. 在Azure 门户的“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
-2. 在“管理 Apple 设备注册计划(DEP)设置”下，选择“DEP 序列号”。
+2. 在Azure 门户的“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
+
+3. 在“管理 Apple 设备注册计划(DEP)设置”下，选择“DEP 序列号”。
 
 4. 在“Apple DEP 序列号”边栏选项卡上，选择“同步”。
 
 5. 在“同步”边栏选项卡，选择“请求同步”。 进度栏显示再次请求同步之前必须等待的时长。
 
     为了遵从 Apple 的有关可接受的 DEP 流量的条款，Intune 规定了以下限制：
-     -  每七天只运行一次完全的 DEP 同步。 无论之前是否同步了序列号，在完全同步时，Intune 都将刷新 Apple 分配给 Intune 的每个序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
-     -  任何同步请求都在 10 分钟内完成。 在此期间或在请求成功之前，“同步”按钮处于禁用状态。
+     -    每七天只运行一次完全的 DEP 同步。 无论之前是否同步了序列号，在完全同步时，Intune 都将刷新 Apple 分配给 Intune 的每个序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
+     -    任何同步请求都在 10 分钟内完成。 在此期间或在请求成功之前，“同步”按钮处于禁用状态。
 
 >[!NOTE]
 >还可以从“Apple DEP 序列号”边栏选项卡将 DEP 序列号分配给配置文件。
@@ -153,9 +156,4 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 7. 验证序列号后，公司门户应用将重定向到公司门户网站以完成注册。 然后该网站会提示用户返回到应用。
 
 注册现已完成，现在用户可以使用此设备的完整功能。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

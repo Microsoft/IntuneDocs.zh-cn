@@ -3,9 +3,9 @@ title: "将 IMEI 标识符添加到 Intune | Intune Azure 预览版 | Microsoft 
 description: "Intune Azure 预览版：了解如何将企业标识符（IMEI 号码）添加到 Microsoft Intune。 "
 keywords: 
 author: staciebarker
-ms.author: stabark
+ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: e134a6e3ff143dacce1d70ef0ab44ade0722ed57
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8667f063de65fd5fa86149ac124b236a432eecef
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -34,7 +35,7 @@ ms.openlocfilehash: e134a6e3ff143dacce1d70ef0ab44ade0722ed57
 
 **添加企业标识符 .csv 列表**
 
-1. 在 Azure 门户中，选择“更多服务”，在文本框中输入“Intune”，然后选择“其他” > “Intune”。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
 2. 在 Intune 边栏选项卡上，选择“注册设备”，然后选择“企业设备标识符”。
 
@@ -44,12 +45,9 @@ ms.openlocfilehash: e134a6e3ff143dacce1d70ef0ab44ade0722ed57
 
 **删除企业标识符 .csv 列表**
 
-1. 在 Intune 边栏选项卡上，选择“注册设备”，然后选择“企业设备标识符”。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
-2. 选择“删除”。
+2. 在 Intune 边栏选项卡上，选择“注册设备”，然后选择“企业设备标识符”。
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+3. 选择“删除”。
 

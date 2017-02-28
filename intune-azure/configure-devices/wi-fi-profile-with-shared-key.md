@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +14,37 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: b46d445ce1da103308559939a5bfd8e5e38d46d3
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 009fa0f9ab097d57389f96d2d86a88b0811fef4e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-an-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key-in-intune-azure-preview"></a>在 Intune Azure 预览版中使用 Intune 自定义设备配置文件创建具有预共享密钥的 Wi-Fi 配置文件
+# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用 Microsoft Intune 自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 下面介绍了如何使用 Intune 的“自定义设备配置文件”创建具有预共享密匙的 Wi-Fi 配置文件。 本主题还有一个如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
 
 > [!NOTE]
--   如下所述，你可能会发现从连接到网络的计算机复制代码更加轻松。
+-    如下所述，你可能会发现从连接到网络的计算机复制代码更加轻松。
 - 对于 Android，还可以选择使用此由 Johnathon Biersack 提供的 [Android PSK 生成器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
--   可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
+-    可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
 -  对于 iOS，在 Mac 工作站上使用 Apple Configurator 来设置配置文件。 或者，使用此由 Johnathon Biersack 提供的 [iOS PSK 移动配置生成器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
 
 
-1.  若要为 Android 或 Windows 创建具有预共享密钥的 Wi-Fi 配置文件或基于 EAP 的配置文件，则在创建设备配置文件时，为该设备平台选择“自定义”，而不是 Wi-Fi 配置文件。
+1.    若要为 Android 或 Windows 创建具有预共享密钥的 Wi-Fi 配置文件或基于 EAP 的配置文件，则在创建设备配置文件时，为该设备平台选择“自定义”，而不是 Wi-Fi 配置文件。
 
-2.  提供名称和说明。
-3.  添加新的 OMA-URI 设置：
+2.    提供名称和说明。
+3.    添加新的 OMA-URI 设置：
 
-   a.   输入此 Wi-Fi 网络设置的名称。
+   a.    输入此 Wi-Fi 网络设置的名称。
 
-   b。   输入 OMA-URI 设置的说明或留空。
+   b。    输入 OMA-URI 设置的说明或留空。
 
-   c.   **数据类型**：设置为“字符串”。
+   c.    **数据类型**：设置为“字符串”。
 
-   d.   **OMA-URI**：
+   d.    **OMA-URI**：
 
     - **对于 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **对于 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -204,9 +205,4 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
     最好使用尚未连接到许多无线网络的计算机，因为必须搜索每个配置文件以找到正确的文件。
 3.     搜索 XML 文件以找到具有正确名称的那一个。
 4.     找到了正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的数据字段中。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

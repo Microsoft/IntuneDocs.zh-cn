@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 694e5ac5eff0e2d39d44d992fe9dcc2262c112ce
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: f7d6ebc9d71a077492ab615a3bc5397e092b1deb
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -29,7 +30,7 @@ ms.openlocfilehash: 694e5ac5eff0e2d39d44d992fe9dcc2262c112ce
 
 **创建条款和条件**：
 
-1. 在 Azure 门户中，选择“更多服务”，在文本框中输入“Intune”，然后选择“其他” > “Intune”。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
 2. 在 Intune 边栏选项卡上，选择“注册设备”，然后选择“条款和条件”。
 
@@ -50,9 +51,4 @@ ms.openlocfilehash: 694e5ac5eff0e2d39d44d992fe9dcc2262c112ce
    - **条款和条件**：用户可查看且必须接受或拒绝的法律标签，例如：“我同意条款和条件”。
 
 6. 选择“确定”。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

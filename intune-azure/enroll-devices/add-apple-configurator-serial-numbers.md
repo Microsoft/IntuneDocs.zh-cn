@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/17
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,18 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
+ms.sourcegitcommit: 37c56d0c219c61c345874b24e8ba9ac640f1ef76
+ms.openlocfilehash: 4c2ebe535935518127a799ae0518c43a2e53de72
+ms.lasthandoff: 02/17/2017
 
 
 ---
 
-# <a name="add-apple-configurator-serial-numbers"></a>添加 Apple Configurator 序列号 
+# <a name="add-apple-configurator-serial-numbers"></a>添加 Apple Configurator 序列号
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-想要[使用 Apple Configurator 和设置助理注册公司拥有的 iOS 设备]((enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)时，请使用以下步骤将序列号添加到 Intune。 可以一次添加一个序列号，也可以上传序列号的逗号分隔值 (CSV) 文件。 添加序列号后，即可向其分配配置文件。 配置文件包含要应用于设备的特定管理设置。 
+若要[使用 Apple Configurator 和设置助理注册公司拥有的 iOS 设备](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)，请使用以下步骤将序列号添加到 Intune。 可以一次添加一个序列号，也可以上传序列号的逗号分隔值 (CSV) 文件。 添加序列号后，即可向其分配配置文件。 配置文件包含要应用于设备的特定管理设置。
 
 [选择在 Intune 中注册 iOS 设备的方式](choose-ios-enrollment-method.md)中介绍了注册 iOS 设备的其他方法。
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
     F7TLWCLBX196,设备详细信息</br>
     DLXQPCWVGHMJ,设备详细信息
 
-2. 在 Azure 门户中，选择“更多服务”，在文本框中输入“Intune”，然后选择“其他” > “Intune”。
+2. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
 3.  在“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
 
@@ -51,11 +52,13 @@ ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
 
 通过 Intune 可以从 Azure 门户中两个不同位置分配配置文件。 可以使用下面的步骤，也可以在创建配置文件的“Apple Configurator 注册配置文件”边栏选项卡中分配配置文件（请参阅[使用设置助理通过 Apple Configurator 注册 iOS 设备](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)。 只能在已创建配置文件后，才能使用以下步骤分配配置文件。
 
-1. 在“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
-2. 在“Apple Configurator 序列号”边栏选项卡上，选择要向其分配配置文件的序列号，然后选择“分配配置文件”。
+2. 在“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
 
-3. 在“分配配置文件”边栏选项卡上，选择要分配的配置文件，然后选择“分配”。
+3. 在“Apple Configurator 序列号”边栏选项卡上，选择要向其分配配置文件的序列号，然后选择“分配配置文件”。
+
+4. 在“分配配置文件”边栏选项卡上，选择要分配的配置文件，然后选择“分配”。
 
 ## <a name="delete-serial-numbers"></a>删除序列号
 可以删除以前导入的序列号。 只能先取消注册设备后，才能删除序列号。 删除序列号后，无法通过设置助理使用 Apple Configurator，除非重新添加序列号。
@@ -70,9 +73,4 @@ ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
 **查看序列号状态**
 
 在“Apple Configurator 序列号”边栏选项卡上，选择想查看其状态的序列号，然后在“状态”项中查看。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

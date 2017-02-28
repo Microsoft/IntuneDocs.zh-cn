@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/06/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,14 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 040c4e18d87110ab7380a64540d08127574a7c46
-ms.openlocfilehash: 5a967cc1be387f83f95591186f786db61d3debcd
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 5ed437eca48375def0e4da9715693325845f53a9
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-is-device-management"></a>什么是设备管理？ 
+# <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？ 
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -53,9 +54,4 @@ ms.openlocfilehash: 5a967cc1be387f83f95591186f786db61d3debcd
     ![检测到的应用程序节点](./media/detected-applications.png)
 - **监视** 选择“设备操作”查看在所管理的设备上执行的设备操作列表，以及这些操作的当前状态。
 ![监视设备操作](./media/monitor-device-actions.png)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

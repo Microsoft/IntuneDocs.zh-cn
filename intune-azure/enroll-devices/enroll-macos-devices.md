@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 1/3/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba2affcdbcdfcd690d671c7b20f9d1e14a74f764
-ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: f217988313debd33bcba3f8168aa03b6dbf8586e
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-作为 Intune 管理员，你可以管理 macOS 设备。 默认情况下，Azure 门户允许用户注册其 macOS 设备。 只需告知用户转到[公司门户网站](http://portal.manage.microsoft.com)并注册其 macOS 设备即可。 
+可借助 Intune 管理 macOS 设备。 若要启用设备管理，用户必须转到[公司门户网站](http://portal.manage.microsoft.com)，并按照提示注册其设备。 macOS 设备处于托管状态后，可[为 macOS 设备创建自定义设置](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos)。 即将推出更多功能。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -39,20 +40,17 @@ ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
 
 ## <a name="set-up-macos-enrollment"></a>设置 macOS 注册
 
-默认情况下，Intune 已准备好进行设置，以允许注册 macOS 设备。 
+默认情况下，Intune 允许注册 macOS 设备。 
 
-若要查看允许或阻止注册 macOS 设备的设置，请转到 Azure 门户中的“Intune”边栏选项卡，然后选择“注册” > “注册限制”。 
+若要阻止 macOS 注册设备，请参阅[设置设备类型限制](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)。 
+
+若要设置用户可注册的最多设备数，请参阅 [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions)（设置设备限制约束）。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告诉用户如何注册其设备以访问公司资源
 
-有关最终用户注册说明，请参阅[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
+需告知最终用户转到[公司门户网站](http://portal.manage.microsoft.com)并按照提示注册其设备。 还可以向他们发送指向在线注册步骤的链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)。 
 
 有关其他最终用户任务的信息，请参阅以下文章：
 
 - [有关 Microsoft Intune 最终用户体验的资源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [通过 Intune 使用 iOS 或 macOS 设备](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
 
 ## <a name="user-owned-ios-devices-byod"></a>用户拥有的 iOS 设备 (BYOD)
 
-如果用户要注册其个人、BYOD（自带设备）设备，唯一可用注册方法是让该用户从 App Store 下载适用于 iOS 的公司门户应用，然后按照应用中的注册说明进行操作。 注册后，用户可连接到公司网络、加入域或 Azure Active Directory，并有权访问公司资源。
+如果用户要注册其个人、BYOD（自带设备）设备，唯一可用注册方法是让该用户从 App Store 下载适用于 iOS 的公司门户应用，然后按照应用中的注册说明进行操作。 注册后，用户可连接到公司网络、加入域或 Azure Active Directory，并有权访问公司资源。 可阻止个人拥有的 iOS 设备的注册。 请参阅 [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)（设置设备类型限制）了解相关说明。
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用�
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>使用设备注册管理器 (DEM)
 设备注册管理器是可注册和管理最多 1,000 台设备的用户帐户类型。 将现有用户添加到 DEM 帐户以向他们提供这些功能。 DEM 用户注册的每个设备使用各自的 Intune 许可证。 有关详细信息，请参阅[使用设备注册管理器注册设备](enroll-devices-using-device-enrollment-manager.md)。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

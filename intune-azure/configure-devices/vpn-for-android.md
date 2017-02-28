@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: f93ab44889837fe8acc5dd5287b63f3b30678159
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: edf359b326626155a2e6acd01f72321c4cd0fe9c
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-android-devices-in-intune-azure-preview"></a>Intune Azure 预览版中适用于 Android 设备的 VPN 设置
+# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的 VPN 设置
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -41,9 +42,4 @@ ms.openlocfilehash: f93ab44889837fe8acc5dd5287b63f3b30678159
 
 - **指纹**（仅限 Check Point Capsule VPN）- 指定一个将用于验证 VPN 服务器是否可以信任的字符串（例如“Contoso Fingerprint Code”）。 指纹可以：发送到客户端，因此在连接时它知道信任任何提供相同指纹的服务器。 如果设备还没有指纹，则会提示用户信任正在连接的 VPN 服务器，并显示指纹（用户手动验证指纹，并选择信任以进行连接）。
 - **输入 Citrix VPN 属性的键值对**（仅限 Citrix）- 输入由 Citrix 提供的键值对，以配置 VPN 连接的属性。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
