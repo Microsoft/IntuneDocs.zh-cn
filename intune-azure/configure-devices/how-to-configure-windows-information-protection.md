@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 828e14936d250123b3da3bbc0dbc06747fe78b65
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 0d62e8a7e9117a724770750c7724ff8f46cef7d6
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-windows-information-protection"></a>如何配置 Windows 信息保护 
+# <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Windows 信息保护
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -32,9 +33,4 @@ ms.openlocfilehash: 828e14936d250123b3da3bbc0dbc06747fe78b65
 
 ### <a name="next-steps"></a>后续步骤
 有关详细信息，请参阅 [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)（使用 Windows 信息保护来保护你的企业数据）。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

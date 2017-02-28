@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: e36ecf949bf9a604c29de2f21a3761125eb60f7f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: e48ef79726c542da210e167707c4ca044a7cdd51
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-monitor-device-profiles-with-intune-azure-preview"></a>如何使用 Intune Azure 预览版监视设备配置文件
+# <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中监视设备配置文件
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -34,9 +35,4 @@ ms.openlocfilehash: e36ecf949bf9a604c29de2f21a3761125eb60f7f
 2. 在“配置文件列表”边栏选项卡中，选择要管理的配置文件，然后执行以下任一操作：
     - 在<配置文件名称> “报表”边栏选项卡上，选择“概述”以查看有关配置文件及其分配的基本信息。
     - 在<配置文件名称> “报表”边栏选项卡上，选择“报表”以查看有关配置文件及其分配的更多详细信息。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

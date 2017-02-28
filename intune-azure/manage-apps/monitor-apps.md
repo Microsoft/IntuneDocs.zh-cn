@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: c4e634bb584e2b593b441a7d81d9ecf72bafa79f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 0e6b072c68e3a67e8111ab3ccf5727b4e47cbfb9
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-monitor-app-assignments"></a>如何监视应用分配
+# <a name="how-to-monitor-app-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 监视应用分配
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -29,9 +30,4 @@ ms.openlocfilehash: c4e634bb584e2b593b441a7d81d9ecf72bafa79f
 2. 在“应用列表”边栏选项卡中，选择所需的应用，然后执行以下任一操作：
     - 在<应用名称>边栏选项卡上，选择“概述”以查看有关应用及其分配的基本信息。
     - 在<应用名称>边栏选项卡上，选择“报表”以查看有关应用及其分配的更多详细信息。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

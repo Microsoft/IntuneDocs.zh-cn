@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 103e17a4-2993-4359-b340-73e2acf4cf7d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac907e4cb63e4175dafc4c50239d3e0cbe581ad9
-ms.openlocfilehash: 03227912dd8a51342c71505746f087bf6b6a4da0
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: e4d42dd165d6a485e9b5691ef9ed9f420d82d3dc
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="intune-wi-fi-settings-for-android-devices-in-intune-azure-preview"></a>Intune Azure 预览版中适用于 Android 设备的 Intune Wi-Fi 设置
+# <a name="wi-fi-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的 Wi-Fi 设置
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -59,9 +60,4 @@ ms.openlocfilehash: 03227912dd8a51342c71505746f087bf6b6a4da0
 |----------|--------------|----------|
 |**用于客户端身份验证的客户端证书（身份证书）**|选择用于对连接进行身份验证的 SCEP 或 PKCS 证书配置文件。|EAP 类型为 **EAP-TLS**|
 |**身份验证方法**|选择连接的身份验证方法：<br>- **证书** 选择要作为标识证书提交给服务器的 SCEP 或 PKCS 客户端证书。<br><br>- **用户名和密码** 可指定进行身份验证的其他方法。 <br><br>如果选择了“用户名和密码”，请配置：<br><br>-  **非 EAP 方法（内部标识）**，然后从以下项选择对连接进行身份验证的方式：<br>- **无**<br>- **未加密的密码 (PAP)**<br>- **质询握手身份验证协议 (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 版本 2 (MS-CHAP v2)**<br>可用的选项取决于你选择的 EAP 类型。<br><br>**和**<br><br>- **标识隐私（外部标识）** - 指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|EAP 类型为 **EAP-TTLS** 或 **PEAP**|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

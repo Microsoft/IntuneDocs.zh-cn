@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: a5f6ad4dd5339b31a6a1fd549a3b29b0ff258a5b
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-are-device-profiles"></a>什么是设备配置文件？
-<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
+# <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-使用 Microsoft Intune“配置设备”工作负荷来管理所有你管理的设备上的设置和功能。
+使用 Microsoft Intune“配置设备”工作负荷来管理所有你管理的设备上的设置和功能。 主要使用此工作负荷创建设备配置文件，从而管理并控制所管理设备上各种不同功能。
 
 打开此工作负荷时，将看到以下选项：
 
@@ -60,10 +60,6 @@ ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
 此配置文件类型让你可以配置受信任证书、SCEP 证书和 PKCS 证书，这些证书可以分配到设备，并用于对 Wi-Fi、VPN 和电子邮件配置文件进行身份验证。
 有关详细信息，请参阅[如何配置证书](how-to-configure-certificates.md) 支持：Android、iOS、Windows Phone 8.1、Windows 8.1 和 Windows 10。
 
-## <a name="education"></a>教育
-帮助指定用于在教育环境中使用 iOS 设备的正确证书。
-有关详细信息，请参阅[如何配置适用于 iOS 设备的 Intune 教育设置](education-settings-for-ios.md) 支持：仅限 iOS。
-
 ## <a name="edition-upgrade"></a>版本升级
 此配置文件类型可以将运行 Windows 10 某些版本的设备自动升级为更新的版本。有关详细信息，请参阅[如何配置 Windows 10 版本升级](how-to-configure-windows-10-edition-upgrade.md) 支持：仅限 Windows 10。
 
@@ -74,9 +70,4 @@ Windows 信息保护有助于防范数据泄露，而不会干扰员工体验。
 ## <a name="custom"></a>自定义
 自定义设置可让你分配未在 Intune 中内置的设备设置。 例如，在 Android 设备上，可以指定配置设备的 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。
 有关详细信息，请参阅[如何配置自定义设置](how-to-configure-custom-settings.md) 支持：Android、iOS、macOS 和 Windows Phone 8.1。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

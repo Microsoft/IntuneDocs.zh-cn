@@ -1,11 +1,12 @@
 ---
-title: "如何使用 Intune 配置证书 | Intune Azure 预览版 | Microsoft Docs"
+title: "如何使用 Intune 配置证书"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何使用 Intune 创建和分配证书，以保护 Wi-Fi、VPN 和其他连接的安全性。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>如何使用 Intune Azure 预览版配置证书
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置证书
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
 
     对于以下平台只能使用 SCEP 证书配置文件：
 
--   macOS 10.9 和更高版本
--   Windows Phone 8.1 及更高版本
+-     macOS 10.9 和更高版本
+-     Windows Phone 8.1 及更高版本
 
 必须为每个设备平台创建单独的配置文件。 在创建配置文件时，将其与已创建的受信任的根证书配置文件关联。
 
@@ -196,9 +199,4 @@ ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
 
 ## <a name="next-steps"></a>后续步骤
 有关如何分配设备配置文件的信息，请参阅[如何分配设备配置文件](how-to-assign-device-profiles.md)。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

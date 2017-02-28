@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f6770556e6ee4e6a6fa1173c8c65c7e54d159016
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 642ecb716a4325d736be6fc392f39162e903d835
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -53,7 +54,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 设备注册配置文件定义应用于设备组的设置。 以下步骤说明如何使用 Apple Configurator 创建已注册 iOS 设备的设备注册配置文件。
 
-1. 在 Azure 门户中，选择“更多服务”，在文本框中输入“Intune”，然后选择“其他” > “Intune”。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
 2. 在“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
 
@@ -98,9 +99,4 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 4. 在 iOS 设备上，打开“设置”并转到“常规” > “设备管理”  > “管理配置文件”。 确认配置文件安装已列出，并检查 iOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
 
 5. 分配设备。 iOS 设备现已向 Intune 注册并已托管。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

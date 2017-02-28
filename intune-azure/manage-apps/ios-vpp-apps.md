@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87250baede6c86e7ac5c402e79026908e712f48c
-ms.openlocfilehash: 809fe8d8eea7e472d80f6ee22e26c1f376e870eb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7a2d494a995072c6fa61cf99aa5f841256e86885
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program"></a>如何管理通过批量购买计划购买的 iOS 应用
+# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 应用
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -81,9 +82,4 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 若要回收许可证，必须将分配操作更改为“卸载”。 卸载应用后，将回收许可证。
 
 具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 继续安装应用前，他们必须执行此操作。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

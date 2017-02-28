@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 8c6c92e6e7bd375063f2f19308fe19f6e44962ac
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -54,7 +55,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 设备注册配置文件定义应用于设备组的设置。 以下步骤说明如何使用 Apple Configurator 创建已注册 iOS 设备的设备注册配置文件。
 
-1. 在 Azure 门户中，选择“更多服务”，在文本框中输入“Intune”，然后选择“其他” > “Intune”。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
 2. 在“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
 
@@ -78,11 +79,13 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 ### <a name="assign-serial-numbers-to-apple-configurator-profiles"></a>将序列号分配给 Apple Configurator 配置文件
 
-1. 在“Apple Configurator 注册配置文件”边栏选项卡中，选择要为其分配序列号的配置文件。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
-2. 在为配置文件命名的的边栏选项卡中，选择“序列号” > “分配”。
+2. 在“Apple Configurator 注册配置文件”边栏选项卡中，选择要为其分配序列号的配置文件。
 
-3. 选择要分配给配置文件的序列号，然后选择“分配”按钮。
+3. 在为配置文件命名的的边栏选项卡中，选择“序列号” > “分配”。
+
+4. 选择要分配给配置文件的序列号，然后选择“分配”按钮。
 
 ## <a name="export-the-profile-to-ios-devices"></a>将配置文件导出到 iOS 设备
 
@@ -90,11 +93,13 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 ### <a name="export-a-profile-using-setup-assistant-enrollment"></a>使用设置助理注册导出配置文件
 
-1. 在“Apple Configurator 注册配置文件”边栏选项卡中，选择要导出的配置文件。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
-2. 在配置文件的边栏选项卡中，选择“导出配置文件”。
+2. 在“Apple Configurator 注册配置文件”边栏选项卡中，选择要导出的配置文件。
 
-3. 将配置文件 URL 复制到附加了 iOS 设备的 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)。 稍后你将在 Apple Configurator 中将其上传，以定义 iOS 设备使用的 Intune 配置文件。
+3. 在配置文件的边栏选项卡中，选择“导出配置文件”。
+
+4. 将配置文件 URL 复制到附加了 iOS 设备的 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)。 稍后你将在 Apple Configurator 中将其上传，以定义 iOS 设备使用的 Intune 配置文件。
 
   要支持 Apple Configurator 2，必须编辑 2.0 配置文件 URL。 为此，请将代码替换为：
     ```
@@ -108,7 +113,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
    你可以按照以下过程使用 Apple Configurator 将此配置文件 URL 上载到 Apple DEP 服务，以定义 iOS 设备使用的 Intune 配置文件。
 
-4. 使用 Apple Configurator 将此配置文件 URL 上传到 Apple DEP 服务，以定义 iOS 设备使用的 Intune 配置文件。
+5. 使用 Apple Configurator 将此配置文件 URL 上传到 Apple DEP 服务，以定义 iOS 设备使用的 Intune 配置文件。
 
 
     1.  在 Mac 计算机上，打开“Apple Configurator 2”。 在菜单栏中，选择“Apple Configurator 2”，然后选择“首选项”。
@@ -139,7 +144,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
     10. iOS 设备完成准备后，断开 USB 电缆的连接。  
 
-8.  **分配设备**。
+6.  **分配设备**。
     设备现已准备好进行企业注册。 关闭设备，并将它们分发给用户。 用户打开其设备时，将启动设置助理。
 
 ## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>用户如何在其设备上安装和使用公司门户
@@ -165,9 +170,4 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 7. 验证序列号后，公司门户应用将重定向到公司门户网站以完成注册。 然后该网站会提示用户返回到应用。
 
 注册现已完成，现在用户可以使用此设备的完整功能。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

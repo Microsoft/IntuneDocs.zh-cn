@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,11 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
-ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
+ms.sourcegitcommit: d0b3a883bb307fb06cb8d16500798086f328314a
+ms.openlocfilehash: eeebf8b6b3bc5c7c35386eb20c96097af1f6769c
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -34,7 +36,7 @@ ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
 ## <a name="new-capabilities"></a>新功能
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>公司门户网站现代化<!--753980-->
-公司门户网站将支持面向不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单”（![汉堡菜单的小图，该图片现已添加到公司门户网站左上角](./media/CP_hamburger_menu.png)，它包括了支持人员详细联系信息和现有托管设备的信息），这与 Microsoft 其他产品和服务保持一致。 将重新排列登录页，强调可供用户使用的应用，登录页上具有针对特色应用和最近更新应用的传送。 可在 [UI 更新页](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui)上查看提供的最初和最后的图像。
+从&2; 月开始，公司门户网站的设计将使用新的撞色配色方案、动态图和“汉堡菜单”（![汉堡菜单的小图，该图片现已添加到公司门户网站左上角](./media/CP_hamburger_menu.png)，它包括了支持人员详细联系信息和现有托管设备的信息），这与 Microsoft 其他产品和服务保持一致。 将重新排列登录页，强调可供用户使用的应用，登录页上具有针对特色应用和最近更新应用的传送。 可在 [UI 更新页](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui)上查看提供的最初和最后的图像。
 
 ### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Windows 10 公司门户新的引导式体验<!--713927-->
 从 3 月开始，适用于 Windows 10 的公司门户将为尚未被标识或注册的设备提供引导式的 Intune 演练体验。 新体验根据用户的 Windows 10 版本提供分步说明，引导用户执行 AAD 注册（用于条件访问功能的标识）和 MDM 注册（用于设备管理功能）。 引导式体验将可从公司门户主页访问，并且是可选的；如果用户未完成注册，仍然可以继续使用该应用，但有些功能可能会受到限制。
@@ -114,9 +116,4 @@ Intune 将所有新设备都标记为个人所有，除非 IT 管理员将设备
 
 ### <a name="see-also"></a>另请参阅
 有关最近开发的详细信息，请参阅 [Microsoft Intune 中的新增功能](whats-new-in-microsoft-intune.md)。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

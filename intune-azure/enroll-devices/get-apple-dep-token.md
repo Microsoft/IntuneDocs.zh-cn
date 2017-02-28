@@ -14,8 +14,9 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -31,7 +32,7 @@ ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
 > 本说明仅针对已从 Intune 管理控制台迁移到 Azure 门户的客户。 如果在迁移期间从 Intune 管理控制台删除了 Apple DEP 令牌，则可能会发现 DEP 令牌已还原到 Intune 帐户。 如果发生这种情况，只需在 Azure 门户中删除 DEP 令牌。 
 
 **获取 Apple DEP 证书**</br>
-在 Azure 门户中，选择“更多服务”，在文本框中输入“Intune”，然后选择“其他” > “Intune”。 在“Intune”边栏选项卡上，选择“注册设备” > “Apple DEP 令牌”，然后按照 Azure 门户中的编号步骤操作，如下所示。
+在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。 在“Intune”边栏选项卡上，选择“注册设备” > “Apple DEP 令牌”，然后按照 Azure 门户中的编号步骤操作，如下所示。
 
 **步骤 1.下载创建 Apple DEP 令牌所需的 Intune 公钥证书。**<br>
 选择“下载公钥”，本地下载和保存加密密钥 (.pem) 文件。 .pem 文件用于从 Apple 设备注册计划门户请求信任关系证书。
@@ -53,9 +54,4 @@ ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
 
 **步骤 4：浏览到要上传的 Apple DEP 令牌。Intune 会自动与 DEP 帐户同步。**<br>
 转到证书 (.pem) 文件，选择“打开”，然后选择“上传”。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

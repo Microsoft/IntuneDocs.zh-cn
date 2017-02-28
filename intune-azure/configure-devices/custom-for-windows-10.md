@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Intune Azure 预览版中适用于 Windows Phone 10 设备的自定义设备设置
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的自定义设备设置
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
 |**允许保存密码**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|桌面版和移动版<br />**数据类型：** 整数<br />**值：**<br>**0** – 禁用密码管理器； <br>**1** – 启用密码管理器（默认值）|
 |**允许自动填充**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|仅限桌面版<br />**数据类型：** 整数<br />**值：** **0** – 已禁用（默认值），**1** – 已启用|
 |**配置企业站点列表**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|仅限桌面版<br />**数据类型：**字符串<br />**值：<br>**0** – 未配置<br>**1** – 使用 IE 的企业模式站点列表（如果已配置，默认值）<br>**2** – 指定企业站点列表的位置|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

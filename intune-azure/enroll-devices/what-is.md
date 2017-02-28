@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 10cf9980468eff912557747c31994747c17a3ab4
-ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -43,33 +44,33 @@ ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
 
 **iOS 注册方法**
 
-| **方法** |  **需要擦除？** |    **相关性**    |   **锁定** | **详细信息** |
+| **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | 详细信息稍后发布|
-|**[DEM](#dem)**|   否 |否 |否  | [详细信息](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[DEP](#dep)**|   是 |   可选 |  可选|[详细信息](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[USB-SA](#usb-sa)**| 是 |   可选 |  否| [详细信息](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**| 否 |    否  | 否|[详细信息](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | 详细信息稍后发布|
+|**[DEM](#dem)**|    否 |否 |否    | [详细信息](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[DEP](#dep)**|    是 |    可选 |    可选|[详细信息](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[USB-SA](#usb-sa)**|    是 |    可选 |    否| [详细信息](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|    否 |    否    | 否|[详细信息](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
 
 
 **Windows 注册方法**
 
-| **方法** |  **需要擦除？** |    **相关性**    |   **锁定** | **详细信息**|
+| **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|   是 |   否 | 详细信息稍后发布|
-|**[DEM](#dem)**|   否 |否 |否  |[详细信息](enroll-devices-using-device-enrollment-manager.md)|
+|**[BYOD](#byod)** | 是|    是 |    否 | 详细信息稍后发布|
+|**[DEM](#dem)**|    否 |否 |否    |[详细信息](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android 注册方法**
 
-| **方法** |  **需要擦除？** |    **相关性**    |   **锁定** | **详细信息**|
+| **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |   否 | 详细信息稍后发布|
-|**[DEM](#dem)**|   否 |否 |否  |[详细信息](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | 详细信息稍后发布|
+|**[DEM](#dem)**|    否 |否 |否    |[详细信息](enroll-ios-devices-using-device-enrollment-program.md)|
 
 
 ## <a name="byod"></a>BYOD
-“自带设备办公”用户安装公司门户应用并注册其设备。 这让用户可连接到公司网络，并加入该域或 Azure Active Directory。 对于大多数平台，需要为许多 COD 方案启用 BYOD 注册。
+“自带设备办公”用户安装公司门户应用并注册其设备。 这让用户可连接到公司网络，并加入该域或 Azure Active Directory。 对于大多数平台，需要为许多 COD 方案启用 BYOD 注册。 可阻止个人拥有的 iOS 和 Android 设备的注册。 请参阅 [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)（设置设备类型限制）了解相关说明。
 
 ## <a name="corporate-owned-devices"></a>企业持有设备
 可以使用 Azure 门户管理公司拥有的设备 (COD)。 可以直接通过 Apple 提供的工具注册 iOS 设备。 管理员或经理可以使用设备注册管理器注册所有设备类型。 具有 IMEI 号码的设备也可以标识并标记为公司拥有，以实现 COD 方案。
@@ -80,8 +81,8 @@ ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
 ### <a name="dep"></a>DEP
 通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 设备。 用户第一次开启设备并运行 iOS 设置助理时，将注册设备。 此方法支持 **iOS 监督**模式，此模式又允许：
 
-  - 锁定注册
-  - 展台模式以及其他高级配置和限制
+  -    锁定注册
+  -    展台模式以及其他高级配置和限制
 
 若要了解有关 iOS 注册的详细信息，请参阅：
 
@@ -91,8 +92,8 @@ ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
 
 ### <a name="usb-sa"></a>USB-SA
 IT 管理员通过 USB 使用 Apple Configurator 手动准备每台公司自有设备，以便使用设备助理进行注册。 IT 管理员创建注册配置文件并将其导出到 Apple Configurator。 用户收到设备时，系统随后会提示其运行设备助理来注册设备。 此方法支持 **iOS 监督**模式，此模式又允许：
-  - 锁定注册
-  - 展台模式以及其他高级配置和限制
+  -    锁定注册
+  -    展台模式以及其他高级配置和限制
 
 若要了解有关 iOS 注册的详细信息，请参阅：
 
@@ -127,9 +128,4 @@ IT 管理员通过 USB 使用 Apple Configurator 手动准备每台公司自有�
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理
 
 当移动设备与 Intune 服务通信时，将自动续订 MDM 证书。 如果移动设备（不是电脑）被擦除，或者它们在一段时间内无法与 Intune 服务通信，则 MDM 证书将不会续订。 MDM 证书过期 180 天后，设备将从 Azure 门户中删除。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

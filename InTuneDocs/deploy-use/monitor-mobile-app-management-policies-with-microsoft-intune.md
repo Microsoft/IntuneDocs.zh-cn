@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>使用 Microsoft Intune 监视移动应用管理策略
-你可以监视已应用于用户的移动应用管理 (MAM) 策略的合规性状态。 可找到的信息包括受 MAM 策略影响的用户、它的合规性状态和用户可能遭遇的任何问题。
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 监视应用保护策略
+可以监视已应用于用户的应用保护策略的符合性状态。 可找到的信息包括受应用保护策略影响的用户、它的符合性状态和用户可能遭遇的任何问题。
 
 可在&3; 个不同的位置监视合规性状态：
 
@@ -59,7 +61,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 可搜索单个用户并查看该用户的合规性状态。 “应用报告”边栏选项卡显示已选择用户的以下信息：
 - 与用户帐户关联的设备
 
-- 设备上具有 MAM 策略的应用
+- 设备上具有应用保护策略的应用
 
 - 状态:
 
@@ -68,7 +70,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
   - **未签入**：策略已部署到用户，但应用从那时起尚未在工作环境中使用。
 
 >[!NOTE]
-> 如果搜索的用户没有部署 MAM 策略，你将看到一条消息，告知你用户不是任何 MAM 策略的目标对象。
+> 如果搜索的用户没有部署应用保护策略，你将看到一条消息，告知你用户不是任何应用保护策略的目标对象。
 
 若要查看用户的报告，请按照这些步骤进行操作：
 
@@ -87,7 +89,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 ## <a name="reporting-view"></a>报表视图
 
-可从详细视图中找到相同报表，还可通过其他报表了解 MAM 策略的合规性状态：
+可从详细视图中找到相同报表，还可通过其他报表了解应用保护策略的符合性状态：
 
 ![屏幕快照 -&4;](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
     -   托管 MAM 活动的用户状态（受保护）：此报表概述了 每个用的每个托管 MAM 应用的活动。
 
-        -   它显示了每个用户的 MAM 策略所面向的所有应用，并通过 MAM 策略将每个应用的状态细分为“已签入”，或者显示以 MAM 策略为目标但应用从未签入的应用。
+        -   它显示了每个用户的应用保护策略所面向的所有应用，并通过应用保护策略将每个应用的状态细分为“已签入”，或者显示以应用保护策略为目标但应用从未签入的应用。
 <br></br>
     -   非托管 MAM 活动的用户状态（不受保护）：此报表概述了每个用户目前已启用 MAM 的非托管应用的活动。 发生这种情况的原因如下：
 
-        -   用户正在使用这些应用，或者这些应用是 MAM 策略目前未针对的应用。
+        -   用户正在使用这些应用，或者这些应用是应用保护策略目前未针对的应用。
 
-        -   已签入所有应用，但应用还未获取任何 MAM 策略。
+        -   已签入所有应用，但应用还未获取任何应用保护策略。
 
 ![屏幕快照 -&2;](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 ## <a name="see-also"></a>另请参阅
 [管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Android 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [Android 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

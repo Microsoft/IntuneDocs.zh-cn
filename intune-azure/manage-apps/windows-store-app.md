@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: ee0079d7b1098c2c9a2a679c46336e2fb8e09585
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 80fe042dbdc909d1c81098567b1a87d8b089cc19
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-windows-store-apps-to-intune"></a>如何将 Windows 应用商店应用添加到 Intune
+# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>如何将 Windows 应用商店应用添加到 Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -33,7 +34,7 @@ ms.openlocfilehash: ee0079d7b1098c2c9a2a679c46336e2fb8e09585
 7. 在“编辑应用”边栏选项卡中，配置以下信息。 完成后，单击“添加”。 根据所选择的应用，此边栏选项卡中的某些值可能已自动填充：
     - **应用名称** - 输入应用的名称，该名称将显示在公司门户中。 请确保使用的所有应用名称都是唯一的。 如果同一应用名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - **应用描述** - 为应用输入描述。 这将在公司门户中向用户显示。
-    - **发行者** - 输入应用的发行者名称。
+    - **发行者** — 输入应用的发行者名称。
     - **应用商店 URL** - 输入要创建的应用的应用商店 URL。
     - **最低操作系统** - 从列表中选择可安装应用的最低操作系统版本。 如果将应用分配到具有较低操作系统的设备，则不会安装该应用。
     - **类别（可选）**- 选择一个或多个内置应用类别或你创建的类别。 这可让用户在浏览公司门户时更轻松地查找应用。
@@ -47,8 +48,3 @@ ms.openlocfilehash: ee0079d7b1098c2c9a2a679c46336e2fb8e09585
 8. 完成后，在“添加应用”边栏选项卡上，选择“保存”。
 
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1609ed2f127fe9d7d1f1c3b3e923bd12f1088200
-ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 57dce5b23b9c8cd878a9ce746e6459a69f1270ff
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -41,7 +42,7 @@ ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
 ## <a name="how-to-configure-device-categories"></a>如何配置设备类别
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>步骤 1 - 在 Azure 门户的“Intune”边栏选项卡中创建设备类别
-1. 登录到 Azure 门户中。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 2. 选择“更多服务” > “其他” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“注册设备”。
 3. 在“注册”边栏选项卡中，选择“设备类别”。
@@ -61,17 +62,20 @@ ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
 在你配置设备组且用户注册其设备后，他们将看到你配置的类别的列表。 用户选择某个类别并完成注册后，其设备将添加到与其选择的类别相对应的 Active Directory 安全组。
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>如何查看所管理设备的类别
-1.    在 Azure 门户的“Intune”边栏选项卡中，选择“设备和组”。
 
-2.    在“管理”下，单击“所有设备”。
+1.    在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
-3.    在设备列表中，查看“类别”列。
+2. 在 Azure 门户的“Intune”边栏选项卡中，选择“设备和组”。
+
+3.    在“管理”下，单击“所有设备”。
+
+4.    在设备列表中，查看“类别”列。
 
 如果未显示“类别”列，则单击“列”，从列表中选择“类别”，然后单击“应用”。
 
 ### <a name="to-change-the-category-of-a-device"></a>更改设备的类别
 
-1. 登录到 Azure 门户中。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 2. 选择“更多服务” > “其他” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备和组”。
 4. 在“设备和组”边栏选项卡上，选择“管理” > “所有设备”。
@@ -85,10 +89,5 @@ ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
 
 - 删除某个类别后，分配到该类别的所有设备的类别名称随后都将显示“未分配”。
 
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

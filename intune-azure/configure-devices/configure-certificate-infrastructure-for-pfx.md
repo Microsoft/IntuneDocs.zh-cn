@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: 74f2cc7221e737371d7db97ec25d872578df273d
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6f08dc63a9afaa5e92b188883d160d0b76f3631f
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="configure-your-intune-certificate-infrastructure-for-pkcs"></a>为 PKCS 配置 Intune 证书基础结构
+# <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>为 PKCS 配置 Microsoft Intune 证书基础结构
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 本主题介绍使用 Intune 创建和部署 .PKCS 证书配置文件所需具备的条件。
@@ -157,9 +158,4 @@ ms.openlocfilehash: 74f2cc7221e737371d7db97ec25d872578df273d
 
 ### <a name="next-steps"></a>后续步骤
 此时，可以开始设置证书配置文件，如[如何使用 Microsoft Intune 配置证书](how-to-configure-certificates.md)中所述。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

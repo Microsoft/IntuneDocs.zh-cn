@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/23/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: b404df57e94afe7b80dd39163ed72a24d8b05508
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d9da3f1c2ccade5391e2e874336802602a016700
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-custom-device-settings"></a>如何配置自定义设备设置
+# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置自定义设备设置
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -56,10 +57,5 @@ ms.openlocfilehash: b404df57e94afe7b80dd39163ed72a24d8b05508
 
 将创建配置文件并在“配置文件列表”边栏选项卡上显示。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](how-to-assign-device-profiles.md)。
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

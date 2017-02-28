@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: b29374c3abcca90de6cba7ed83866c04350f69c5
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6026c942aea906e7e730152e6e92797ec5775bc3
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-ios-store-apps-to-intune"></a>如何将 iOS 应用商店应用添加到 Intune
+# <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>如何将 iOS 应用商店应用添加到 Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -55,8 +56,3 @@ ms.openlocfilehash: b29374c3abcca90de6cba7ed83866c04350f69c5
 3. 完成后，在“添加应用”边栏选项卡上，选择“保存”。
 
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
-
-
-<!--HONumber=Feb17_HO1-->
-
-
