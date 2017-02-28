@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: 113572430f0ef82c9a6fa533e3d6fc17b86119cb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 13648aa35057201ac7420e2f1d334aee206605fe
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-settings-for-macos-devices-in-intune-azure-preview"></a>Intune Azure 预览版中适用于 macOS 设备的自定义设置
+# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 macOS 设备的自定义设置
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,9 +38,4 @@ ms.openlocfilehash: 113572430f0ef82c9a6fa533e3d6fc17b86119cb
 确保在要部署 macOS 自定义策略的设备上从 Apple Configurator 工具导出的设置与 macOS 版本兼容。 有关如何解析不兼容的设置的信息，可搜索 [Apple 开发人员](https://developer.apple.com/)网站上的“配置描述文件参考”和“移动设备管理协议参考”。
 
 你已导入的文件将在边栏选项卡的“文件内容”区域显示。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
