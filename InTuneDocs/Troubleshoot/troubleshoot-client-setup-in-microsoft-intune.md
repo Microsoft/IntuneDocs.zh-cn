@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: 9de1c3f8c3dbb7a5e00c5384cc7321aedfa5b9b5
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -120,17 +121,22 @@ ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
 |**0x80070032**|在客户端计算机上未找到用于安装客户端软件的一个或多个先决条件。|确保所有必需的更新都已安装在客户端计算机上，然后重试客户端软件安装。 若要深入了解用于安装客户端软件的先决条件，请参阅 [Microsoft Intune 的网络基础结构要求](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)。|
 |**0x80043008**|无法启动 Microsoft Online Management 更新服务。|请联系支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。|
 |**0x80043009**|已在服务中注册客户端计算机。|你必须先停用客户端计算机，然后才能在服务中重新注册该客户端计算机。 相关说明，请参阅[从 Microsoft Intune 管理停用设备](/intune/deploy-use/retire-devices-from-microsoft-intune-management)。|
+|**0x8004300A**|（阶段 21）注册包部署到 GPO 以安装在用户范围（而不是计算机范围）时出错。 |确保在计算机范围内通过 GPSI 将 GPO 正确设定为目标。 若要查看有关该主题的论坛帖子，请访问 [TechNet 论坛](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod)。|
 |**0x8004300B**|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。 有关受支持的操作系统的列表，请参阅 [Microsoft Intune 的网络基础结构要求](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)。|
 |**0xAB2**|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 对 DLL 进行疑难解答时，可能必须使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](http://go.microsoft.com/fwlink/?LinkID=234255)中描述的工具。|
 |**0x8004300f**|软件无法安装，是因为已安装了 System Center Configuration Manager 客户端。|删除 Configuration Manager 客户端，然后重试客户端软件安装。|
 |**0x80043010**|无法安装此软件，因为已经安装了开放移动联盟设备管理 (OMADM) 客户端。|注销 OMADM 客户端，然后重试客户端软件安装。|
 如果安装问题仍然存在，请联系支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。 使客户端计算机注册日志（位于 %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log 和 %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log 中）和 Windows 更新日志 (%*windir*%\windowsupdate.log)可对支持工程师显示。
 
+## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>如果卸载客户端时未卸载 Endpoint Protection，应执行什么操作
+
+运行上述命令后，有时可能会遗留主机保护 (Endpoint Protection) 代理。 如果发生这种情况，请从提升的提示符处运行以下命令：
+
+    ```
+    "C:\Program Files\Managed Defender\Setup.exe" /x /q /s
+    ```
+
+
 ### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

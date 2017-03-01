@@ -5,7 +5,7 @@ keywords: "Mac OS X、macOS、OS X"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
+ms.sourcegitcommit: e2a507ff6f803cf022536824ca2f12f6d6a64d75
+ms.openlocfilehash: 4b532299070bdb8ddf0e9de1e6b598e8dcd8ffb3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,37 +37,36 @@ ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
 
   [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-3. 登录后，可看到任何可用的“应用”、“我的设备”以及任何可用的 IT 人员“联系信息”。 在页面顶部，会看到一条通知，显示**此设备未注册，或公司门户无法识别。<u>点击此处</u>选择其他设备。** 单击“点击此处”。
+3. 登录时将看到可用的“主页”、“应用”和“类别”选项卡。 此页将显示可安装的所有应用。 如果尚未注册任何设备，将看到通知“无法显示任何应用”。 可以通过选择“我的设备”继续下一步操作。
 
- ![公司门户 macOS 登录页](./media/macOS_enroll_001_landing_page.png)
+ ![Web 门户登录页面的屏幕截图，Web 门户显示没有可安装的应用，下方有“我的设备”按钮。](./media/macOS_enroll_001_landing_page.png)
 
-4. 将显示一个弹出窗口，并简要说明为何需要__标识或注册此设备__。 查看此内容，然后单击“注册”以继续。
+4. 在“我的设备”页上，显示已注册的设备列表或仅显示横幅。 这取决于是否已注册设备（macOS 或其他设备）。 若要注册未列出的设备，请选择显示“如果设备已列出，请点击此处进行识别。如果设备未列出，请点击此处注册设备”的横幅。
 
- ![标识或注册此设备 macOS](./media/macOS_enroll_002_IDenroll_popup.png)
+  ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
 
-5. 系统会显示第二个弹出窗口，并简要说明__注册此设备__会发生什么情况。 查看此内容，然后单击“安装”以继续。
+5. 将显示一个弹出窗口，并简要说明为何需要__标识或注册此设备__。 查看此内容，然后单击“注册”以继续。
 
- ![注册此设备 macOS](./media/macOS_enroll_003_enroll_popup.png)
+ ![标识或注册此设备 macOS](./media/macOS_enroll_003_IDenroll_popup.png)
+
+6. 系统会显示第二个弹出窗口，并简要说明__注册此设备__会发生什么情况。 查看此内容，然后单击“安装”以继续。
+
+ ![注册此设备 macOS](./media/macOS_enroll_004_enroll_popup.png)
 
   > [!NOTE]
   > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 了解[在 Intune 中注册设备会发生什么情况](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)。
 
-6. 将打开“系统偏好设置”，并询问是否要__安装“管理配置文件”？__ 单击“安装”以继续，或单击“显示配置文件”获取更多详细信息。
+7. 将打开“系统偏好设置”，并询问是否要__安装“管理配置文件”？__ 单击“安装”以继续，或单击“显示配置文件”获取更多详细信息。
 
- ![安装管理配置文件](./media/macOS_enroll_004_sysprefs_mgmt_profile.png)
+ ![安装管理配置文件](./media/macOS_enroll_005_sysprefs_mgmt_profile.png)
 
-7. 将出现一个 macOS 弹出窗口。 通过提供计算机的“用户名”和“密码”，然后单击“确定”，确认要进行更改。 这会将管理配置文件安装到你的 Mac 上。
+8. 将出现一个 macOS 弹出窗口。 通过提供计算机的“用户名”和“密码”，然后单击“确定”，确认要进行更改。 这会将管理配置文件安装到你的 Mac 上。
 
- ![macOS 配置文件安装弹出窗口](./media/macOS_enroll_005_sysprefs_admin_login.png)
+ ![macOS 配置文件安装弹出窗口](./media/macOS_enroll_006_sysprefs_admin_login.png)
 
-8. 你可能会在 Mac 中看到有关配置文件详细信息或是否确定要“安装”的额外消息。 单击“继续”和“安装”以继续。 安装完成后，便可以在“设备配置文件”列表中查看新安装的“管理配置文件”。
+9. 你可能会在 Mac 中看到有关配置文件详细信息或是否确定要“安装”的额外消息。 单击“继续”和“安装”以继续。 安装完成后，便可以在“设备配置文件”列表中查看新安装的“管理配置文件”。
 
- ![macOS 配置文件已安装](./media/macOS_enroll_006_sysprefs_installed_profile.png)
+ ![macOS 配置文件已安装](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 仍需要帮助？ 向你的 IT 管理员登记。 可以在[公司门户网站](http://portal.manage.microsoft.com)中查找他们的联系信息。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

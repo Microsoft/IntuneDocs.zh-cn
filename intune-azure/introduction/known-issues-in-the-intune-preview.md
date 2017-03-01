@@ -1,5 +1,6 @@
 ---
-title: "Microsoft Intune 预览版中的已知问题 | Intune Azure 预览版 | Microsoft Docs"
+title: "Microsoft Intune 预览版中的已知问题"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：阅读预览版中的已知问题"
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f479b4236243fd05630229520633a09c451e6e1e
-ms.openlocfilehash: c1f79db598651b6a8a1c2a34627a901eff6a0beb
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -35,9 +38,4 @@ ms.openlocfilehash: c1f79db598651b6a8a1c2a34627a901eff6a0beb
 ## <a name="administration-and-accounts"></a>管理和帐户
 
 - 全局管理员（也被称为租户管理员）可以继续在没有单独的 Intune 或企业移动性套件 (EMS) 许可证的情况下进行日常的管理任务。 但是，如果全局管理员想要使用服务（例如注册他们自己的设备、企业设备，或使用 Intune 公司门户），与任何其他用户一样，他们需要 Intune 或 EMS 许可证。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

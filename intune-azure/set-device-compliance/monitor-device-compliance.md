@@ -1,5 +1,6 @@
 ---
-title: "如何监视设备合规性 | Intune Azure 预览版 | Microsoft Docs"
+title: "如何监视设备符合性"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何监视设备合规性。"
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: eb27002f449b3bbebb2a9b4ed780350c71eda881
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d59d94aafa71a9891a6746902339255ea7a9ad15
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -44,9 +47,4 @@ ms.openlocfilehash: eb27002f449b3bbebb2a9b4ed780350c71eda881
 - 设置所应用到的平台。
 
 可以向下钻取每个设置，以查看有关已启用这些设置的配置文件的详细信息以及设置的配置值。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

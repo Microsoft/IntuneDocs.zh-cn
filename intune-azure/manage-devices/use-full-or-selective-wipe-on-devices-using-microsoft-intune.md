@@ -1,5 +1,6 @@
 ---
-title: "使用 Intune 在设备上进行完全擦除或选择性擦除 | Intune Azure 预览版 | Microsoft Docs"
+title: "使用 Intune 在设备上进行完全擦除或选择性擦除"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何在设备上对公司数据进行选择性擦除，或进行完全擦除以将设备恢复为出厂设置。"
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
 3.  在显示设备名称的边栏选项卡上，选择“删除公...”（代表删除公司数据），然后选择“是”以确认擦除。
 
 如果设备已打开并连接，擦除命令会在 15 分钟内跨所有设备类型进行传播。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

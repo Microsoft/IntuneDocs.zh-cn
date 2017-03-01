@@ -1,5 +1,6 @@
 ---
-title: "使用应用保护策略的 Android 应用 | Intune Azure 预览版 | Microsoft Docs"
+title: "具有应用保护策略的 Android 应用"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：本主题描述 Android 应用由应用保护策略托管时会出现的情况。"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 949686ea8a13072e820d1fdc4f14a22e2730e8f1
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 896a7143bc0b7ec80f69482681f4ed17d79661d4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -80,9 +83,4 @@ Intune 仅支持对于每个设备，将应用保护策略部署到一个用户�
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 创建和部署应用保护策略](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

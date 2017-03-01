@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
+ms.sourcegitcommit: f413846b6f302502c31ca7b4178ebca4d1e0350e
+ms.openlocfilehash: 8d5165465e0e99462cefaae9494481d618acc80f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,17 @@ ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
 
 重命名设备：
 
-1.  打开[公司门户网站](http://portal.manage.microsoft.com)，然后点击要更改其名称的设备。
+1.    在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
-2.  点击**重命名**。
+2. 在“我的设备”页上，选择想要重命名的设备名称。
 
-    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  在显示设备名称的文本框中，键入设备的新名称，然后点击“重命名”按钮。 你的设备现在将显示新的名称。
+3.    设备将在弹出窗口中打开。 点击“重命名”按钮。
+
+    ![公司门户网站上已选设备的所有选项，包括重命名、删除、重置设备、重置密码和远程锁定。 ](./media/iwp-screen-with-all-options.png)
+
+4.  在显示设备名称的文本框中，键入设备的新名称，然后点击“重命名”按钮。 你的设备现在将显示新的名称。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

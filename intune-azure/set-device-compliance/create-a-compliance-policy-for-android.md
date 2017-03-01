@@ -1,5 +1,6 @@
 ---
-title: "如何创建适用于 Android 的合规性策略 | Intune Azure 预览版 | Microsoft Docs"
+title: "如何创建 Android 符合性策略"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何创建适用于 Android 设备的合规性策略。"
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 16308e61986a4354181b8b0eeace012d65769c66
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -126,9 +129,4 @@ ms.openlocfilehash: 16308e61986a4354181b8b0eeace012d65769c66
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

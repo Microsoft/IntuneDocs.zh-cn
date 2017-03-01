@@ -1,5 +1,6 @@
 ---
-title: "Exchange 内部部署条件性访问策略 | Intune Azure 预览版 | Microsoft Docs"
+title: "Exchange 本地条件访问策略"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：如何在 Intune 中配置 Exchange 内部部署条件性访问和旧版 Exchange Online Dedicated"
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -96,9 +99,4 @@ Windows 8.1 和更高版本上的**邮件**应用程序（向 Intune 注册时�
   - 将此项设置为阻止访问时，一开始就会立即阻止所有设备阻止访问 Exchange 内部部署。  属于“包含的组”中用户的设备在 Intune 中注册并且被评估为符合要求后，即可获得访问权限。 将始终阻止无法运行 Samsung KNOX 标准版的 Android 设备，因为此设备不支持此设置。
 10. 在“设备平台例外”下，选择“添加”以指定平台。 如果将“非托管设备访问”设置为“已阻止”，即使平台例外进行了阻止，但也会允许已注册并符合要求的设备。 选择“确定”保存设置。
 11. 在“本地”边栏选项卡上，单击“保存”保存条件性访问策略。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

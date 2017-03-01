@@ -1,5 +1,6 @@
 ---
-title: "配置适用于 iOS 的 Intune 教育设置 | Intune Azure 预览版 | Microsoft Docs"
+title: "配置适用于 iOS 的 Intune 教育设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可用于在 iOS 设备上控制教育设置的设置。"
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 44c427f8-0f22-43c2-8c29-e0f9fa533b1f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: e52fdf8c30a680d62071cd31e308dd0180e8b9dc
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 8d801c0b264e95348f55b1d4046c00e43ead5d10
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -43,9 +46,4 @@ ms.openlocfilehash: e52fdf8c30a680d62071cd31e308dd0180e8b9dc
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
 将创建配置文件并在“配置文件列表”边栏选项卡上显示。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

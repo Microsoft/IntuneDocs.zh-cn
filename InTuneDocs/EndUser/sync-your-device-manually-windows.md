@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
-ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: ff5a4313337c89da00cb87e0f4dd6c8dcc233361
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 有时在 Windows 设备上尝试安装应用可能会比预计时间长。 如果发生这种情况，可尝试手动同步 Windows 设备。 同步可能会帮助提高安装速度。
 
-> [!Note] 
+> [!Note]
 > 如果网络速度较慢或同时下载内容的设备数量较多，应用可能需要一段时间才能完成安装。
 
 以下 Windows 版本可手动同步。 遗憾的是，如果设备使用的是其他版本的 Windows，则无法启动手动同步。
@@ -131,9 +133,4 @@ ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
    设备完成同步前，屏幕顶部将显示“我们正在同步你的帐户”消息。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

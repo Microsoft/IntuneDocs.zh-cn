@@ -1,5 +1,6 @@
 ---
-title: "创建和部署应用保护策略 | Intune Azure 预览版 | Microsoft Docs"
+title: "创建和部署应用保护策略"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解 Intune 应用保护策略如何有助于保护你管理的应用所使用的公司数据。"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -122,9 +125,4 @@ ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
 ### <a name="see-also"></a>另请参阅
 * [Android 应用由应用保护策略托管时会出现的情况](app-protection-enabled-android-apps.md)
 * [iOS 应用由应用保护策略托管时会出现的情况](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

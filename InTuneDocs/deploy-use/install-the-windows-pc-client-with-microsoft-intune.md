@@ -5,7 +5,7 @@ description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 02/14/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -178,13 +179,85 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
     > [!TIP]
     > 单击报表中的任何列标题以按该列的内容对列表进行排序。
 
+## <a name="uninstall-the-windows-client-software"></a>卸载 Windows 客户端软件
+
+有两种方法可以取消注册 Windows 客户端软件：
+
+- 使用 Intune 管理控制台（推荐方法）
+- 使用客户端上的命令提示符
+
+### <a name="unenroll-by-using-the-intune-admin-console"></a>通过使用 Intune 管理控制台取消注册
+
+若要通过使用 Intune 管理控制台取消注册软件客户端，请转到“组” > “所有计算机” > “设备”。 右键单击客户端，然后选择“停用/擦除”。
+
+### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>通过使用客户端上的命令提示符取消注册
+
+使用提升的命令提示符运行以下命令之一。
+
+**方法 1**：
+
+    ```
+    "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
+    ```
+
+**方法 2**（请注意：并非每个 Windows SKU 上都安装了这些代理）：
+
+    ```
+    wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Microsoft Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Microsoft Policy Platform" call uninstall<br>
+    wmic product where name="Microsoft Security Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client Service" call uninstall<br>
+    wmic product where name="Microsoft Easy Assist v2" call uninstall<br>
+    wmic product where name="Microsoft Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Microsoft Intune Center" call uninstall<br>
+    wmic product where name="Microsoft Online Management Update Manager" call uninstall<br>
+    wmic product where name="Microsoft Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Microsoft Intune" call uninstall<br>
+    wmic product where name="Windows Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Windows Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Windows Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Windows Policy Platform" call uninstall<br>
+    wmic product where name="Windows Security Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client Service" call uninstall<br>
+    wmic product where name="Windows Easy Assist v2" call uninstall<br>
+    wmic product where name="Windows Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Windows Intune Center" call uninstall<br>
+    wmic product where name="Windows Online Management Update Manager" call uninstall<br>
+    wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Windows Intune" call uninstall
+    ```
+
+> [!TIP]
+> 客户端取消注册将为受影响的客户端留下过时的服务器端记录。 取消注册过程是异步过程，需要卸载 9 个代理，因此最多需要 30 分钟完成。
+
+### <a name="check-the-unenrollment-status"></a>检查取消注册状态
+
+检查“%ProgramFiles%\Microsoft\OnlineManagement”并确保左侧仅显示以下目录：
+
+- AgentInstaller
+- 日志
+- Updates
+- 公用 
+
+### <a name="remove-the-onlinemanagement-folder"></a>删除 OnlineManagement 文件夹
+
+取消注册过程不会删除 OnlineManagement 文件夹。 卸载后等待 30 分钟，然后运行此命令。 如果过早运行，则卸载可能停留在未知状态。 若要删除该文件夹，请启用提升的提示符并运行：
+
+    ```
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    ```
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 管理 Windows 电脑](manage-windows-pcs-with-microsoft-intune.md)
 [客户端安装程序疑难解答](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: "本地 EAS 的 Exchange Connector | Intune Azure 预览版 | Microsoft Docs"
+title: "本地 EAS 的 Exchange 连接器"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：Exchange ActiveSync MDM - 使用连接器工具启用 Intune 管理控制台和本地 Exchange Server 之间的通信"
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 2871136fc15f945fe5b757a6e4364d3980832e37
-ms.openlocfilehash: 92e4a15630c70ac80dd07684baafbbd15cd2f38c
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d112f453302361ac95eb2c44d7440a72d212cc4a
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -133,9 +136,4 @@ Exchange Connector 设置连接后，与在 Exchange Connector 中管理的用�
 
 ## <a name="next-steps"></a>后续步骤
 [为 Exchange 内部部署创建条件访问策略](create-conditional-access-policy-for-exchange-on-premises.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

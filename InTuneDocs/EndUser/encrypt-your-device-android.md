@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
-ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,6 +41,9 @@ ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
     （在某些手机上，需要选择“存储”&gt;“存储加密”或“存储”&gt;“锁定屏幕和安全”&gt;“其他安全设置”以找到“加密”选项）。
 
 3.  按照屏幕上的说明操作。 加密时，你的设备可能会多次重启。
+
+> [!Note]
+> 无法加密某些 Android 设备。 请单击[此处](your-device-appears-encrypted-but-cp-says-otherwise-android.md)，查看详细信息。
 
 ### <a name="what-to-do-if-you-have-issues"></a>如果遇到问题时该怎么办
 **问题**：你的设备已加密，然后你发现以下情形之一：
@@ -64,10 +68,6 @@ ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
     5. 打开公司门户应用，选择你的设备，然后点击“Check Compliance”（检查合规性）。
 
+
 仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 [Microsoft Android 团队](mailto:wintunedroidfbk@microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

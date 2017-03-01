@@ -1,5 +1,6 @@
 ---
-title: "设备合规性入门 | Intune Azure 预览版 | Microsoft Docs"
+title: "设备符合性入门"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：使用本主题了解在 Microsoft Intune 中创建合规性策略所需先决条件"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: c868bc9adc0afbc216d47530a7eace10f8ca2d9b
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -79,9 +82,4 @@ This section is a detailed view of what you see in the **Overview**. A list of a
 [创建 iOS 合规性策略](create-a-compliance-policy-for-ios.md)
 
 [创建 Windows 合规性策略](create-a-compliance-policy-for-windows.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

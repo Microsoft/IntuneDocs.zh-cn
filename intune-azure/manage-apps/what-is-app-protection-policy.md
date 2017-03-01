@@ -1,5 +1,6 @@
 ---
-title: "什么是应用保护策略 | Intune Azure 预览版 | Microsoft Docs"
+title: "什么是应用保护策略"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：通过本主题来了解如何使用 Microsoft Intune 应用保护策略保护公司数据。"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 34f5f17e581e8e146fccce6534202939d1418135
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -134,9 +137,4 @@ MDM 解决方案：
 ##  <a name="next-steps"></a>后续步骤
 
 [如何使用 Microsoft Intune 创建和部署应用保护策略](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

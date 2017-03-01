@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -61,7 +63,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |电子邮件配置文件|此策略可用于为移动设备上的特定电子邮件客户端设置[电子邮件访问设置](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)，最大限度地减少最终用户需要进行的设置。|
 |EMS|Microsoft 企业移动性 + 安全性（以前称为企业移动性套件）在确保用户可[访问所需应用和内容](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility)的同时，可保护公司数据。|
-|最终用户|使用 Intune 管理的[手机和电脑等设备的用户](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。|
+|最终用户|使用 Intune 管理的[手机和电脑等设备的用户](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。|
 |注册|Microsoft Intune 使用[注册](/intune/deploy-use/enroll-devices-in-microsoft-intune)将设备纳入管理并允许访问资源。|
 
 ## <a name="f"></a>F
@@ -145,9 +147,4 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |||
 |-|-|
 |Wi-Fi 配置文件|一种将[无线网络设置](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)部署到设备的策略，可让用户连接到你的公司网络而无需了解或配置任何设置。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

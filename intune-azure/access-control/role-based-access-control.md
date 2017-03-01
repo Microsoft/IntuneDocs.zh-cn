@@ -1,11 +1,12 @@
 ---
-title: "Microsoft Intune 的基于角色的访问控制 (RBAC) | Intune Azure 预览版 | Microsoft Docs"
+title: "Microsoft Intune 的基于角色的访问控制 (RBAC)"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解 RBAC 如何使你控制可执行操作和进行更改的人员。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
+ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
+ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,7 +43,7 @@ ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
 - **Intune 管理员** - 具有所有 Intune 操作的完全权限。
 - **应用程序管理器** - 管理和部署应用程序及配置文件。
 - **配置策略管理器** - 管理和部署配置设置及配置文件。
-- **支持人员** - 执行远程任务，并查看用户和设备信息。
+- **支持人员** - 执行远程任务，以及查看用户和设备信息。
 - **只读操作员** - 可在 Intune 门户中查看信息，但无法进行更改。
 
 
@@ -171,8 +174,3 @@ ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
 |**删除**|删除条款和条件设置。|
 |**读取**|读取 Intune 门户中的条款和条件设置。|
 |**更新**|更新现有的条款和条件设置。|
-
-
-<!--HONumber=Feb17_HO1-->
-
-

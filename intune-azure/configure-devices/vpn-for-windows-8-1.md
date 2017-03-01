@@ -1,5 +1,6 @@
 ---
-title: "适用于 Windows 8.1 设备的 Intune VPN 设置 | Intune Azure 预览版 | Microsoft Docs"
+title: "适用于 Windows 8.1 设备的 Intune VPN 设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可用于在 Windows 8.1 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: f38526a3e60f2a6628e61ffca5f5d179a2718e9b
+ms.lasthandoff: 02/18/2017
 
 
 ---

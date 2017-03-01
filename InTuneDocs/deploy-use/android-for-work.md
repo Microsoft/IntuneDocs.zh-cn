@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: 1c7c0967cfd29f68e8d6d0428f1f8407e2cbd9cb
+ms.sourcegitcommit: a5c024c2139536f004799b18a0f6d1d1eb4875b2
+ms.openlocfilehash: bdacb61d1713bf24b2f33f144afa0db356e10ee0
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -84,10 +85,6 @@ VPN 支持类似于 Android VPN 配置文件。 可使用相同的 VPN 提供商
 
 ## <a name="next-steps"></a>后续步骤
 [启用 Android for Work 注册](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)
+
 [为 Android for Work 部署应用](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: "在 Intune 中设置注册限制 | Intune Azure 预览版 | Microsoft 文档"
+title: "在 Intune 中设置注册限制"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：按平台限制注册，并在 Intune 中设置设备注册限制。 "
 keywords: 
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 56996592febf0be5ab74b158a70404728fe17a4d
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -23,9 +26,9 @@ ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-可对获允进行注册的设备的类型和最大数量进行设置。 在“注册限制”边栏选项卡上，可以设置：
+可对允许进行注册的设备的类型和最大数量进行设置。 在“注册限制”边栏选项卡上，可以设置：
 
-- 获允进行注册的平台，以及是否阻止私人拥有的 Android 和 iOS 设备的注册。
+- 允许进行注册的平台，以及是否阻止私人拥有的 Android 和 iOS 设备的注册。
 
 - 允许用户注册的设备的最大数量。
 
@@ -48,7 +51,7 @@ ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
 
 7. 选择“平台配置”。
 
-8. 选择“允许”还是“阻止”个人拥有的 iOS 和 Android 设备进行注册。
+8. 选择“允许”或“阻止”个人拥有的 iOS 和 Android 设备进行注册。
 
 9. 选择“保存”。
 
@@ -63,9 +66,4 @@ ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
 4. 在“所有用户”边栏选项卡上，选择“设备限制”。
 
 5. 选择用户可以注册的最大设备数量，然后选择“保存”。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

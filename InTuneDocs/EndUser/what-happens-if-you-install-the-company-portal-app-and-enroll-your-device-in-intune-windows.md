@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
 
 -   访问公司网络、你的电子邮件和工作文件。
 
--   从公司门户网站获取公司应用。 （对于 Windows 7 和 Windows Vista，仅可以从公司门户网站获取公司应用。）
+-   从公司门户网站获取公司应用。 （__注意__：对于 Windows 7 和 Windows Vista，仅可以从公司门户网站获取公司应用。）
 
 -   自动设置公司或学校电子邮件帐户。
 
@@ -67,6 +68,7 @@ ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
 -  IT 管理员可在计算机上安装应用和更新。
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每&8; 小时会发生什么情况
+
 已注册的设备将以约&8; 小时的间隔执行以下操作：
 
 -   下载 IT 管理员已提供的任何策略或应用更新。
@@ -76,9 +78,4 @@ ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
 -   发送任何公司应用清单更新。
 
 如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

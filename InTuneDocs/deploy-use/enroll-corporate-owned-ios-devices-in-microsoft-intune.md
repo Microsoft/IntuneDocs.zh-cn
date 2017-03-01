@@ -2,10 +2,10 @@
 title: "注册企业自有的 iOS 设备 | Microsoft Docs"
 description: "使用 Apple 设备注册程序 (DEP) 或 Apple 配置器注册企业自有的 iOS 设备"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -49,7 +50,7 @@ Microsoft Intune 支持注册公司所有的 iOS 设备，方法是使用 Apple 
 - **直接注册**：在设备准备过程中创建 Apple 配置器兼容文件以供使用。 已注册设备没有进行出厂重置，但没有用户隶属关系。 此方法要求管理员通过 USB 将 iOS 设备连接到运行 [Apple 配置器](http://go.microsoft.com/fwlink/?LinkId=518017)的 Mac 计算机以注册设备。 有关详细信息，请参阅[使用 Apple 配置器直接注册注册 iOS 设备](ios-direct-enrollment-in-microsoft-intune.md)。
 
 ## <a name="use-the-device-enrollment-program-dep"></a>使用设备注册程序 (DEP)
-DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用户在设备上运行设置助理时，设备会在 Intune 中进行注册。  用户无法注销通过 DEP 注册的设备。 有关详细信息，请参阅[注册设备注册程序 iOS 设备](ios-device-enrollment-program-in-microsoft-intune.md)。
+DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用户在设备上运行设置助理时，设备会在 Intune 中进行注册。 有关详细信息，请参阅[注册设备注册程序 iOS 设备](ios-device-enrollment-program-in-microsoft-intune.md)。
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>在注册了 DEP 或 Apple 配置器的设备上使用公司门户
 
@@ -91,9 +92,4 @@ DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用�
 
 ### <a name="see-also"></a>另请参阅
 [在 Microsoft Intune 中注册设备的先决条件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
