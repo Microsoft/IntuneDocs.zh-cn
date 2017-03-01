@@ -1,5 +1,6 @@
 ---
-title: "如何配置 Intune 自定义设备设置 | Intune Azure 预览版 | Microsoft Docs"
+title: "如何配置 Intune 自定义设备设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何使用 Intune 来配置你管理的设备上的自定义设置。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: d9da3f1c2ccade5391e2e874336802602a016700
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c8c8fc2c56f30557482cc1e4fa5d2d9b5da20050
+ms.lasthandoff: 02/18/2017
 
 
 ---

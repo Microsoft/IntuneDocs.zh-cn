@@ -1,5 +1,6 @@
 ---
-title: "适用于 Windows 8.1 的 Intune 设备限制设置 |Intune Azure 预览版 | Microsoft Docs"
+title: "适用于 Windows 8.1 的 Intune 设备限制设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可用于控制 Windows 8.1 设备上的设备设置和功能的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: fa27874726c016840470c189910f8ea8a1878a43
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 24758b04f45427b25980e8a7eb833c51c73ba077
+ms.lasthandoff: 02/18/2017
 
 
 ---

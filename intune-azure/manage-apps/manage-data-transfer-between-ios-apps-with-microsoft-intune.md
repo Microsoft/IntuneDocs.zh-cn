@@ -1,5 +1,6 @@
 ---
-title: "管理 iOS 应用之间的数据传输 |Intune Azure 预览版 | Microsoft Docs"
+title: "管理 iOS 应用之间的数据传输 |Intune Azure 预览版"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：使用本主题了解如何使用 iOS 打开方式功能和移动应用管理策略来管理应用之间的数据传输。"
 keywords: 
 author: NathBarn
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 4ad494b42313e064a2d5ecc8056e19a522cfe051
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 2b589f98ef77329ca495c894054acd7cd6c2812e
+ms.lasthandoff: 02/18/2017
 
 
 ---

@@ -1,5 +1,6 @@
 ---
-title: "使用 Intune 管理批量购买的应用 | Intune Azure 预览版 | Microsoft Docs"
+title: "使用 Intune 管理批量购买的应用"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何使用 Intune 管理和监视在商店中批量购买的应用的使用情况。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 774d5970af9389ed0ef99c0bbb494c5a1b6d051d
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 354320193456574a49d5bfc39045fd713fc88da5
+ms.lasthandoff: 02/18/2017
 
 ---
 

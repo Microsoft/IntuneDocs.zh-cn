@@ -1,5 +1,6 @@
 ---
-title: "适用于 Android 设备的 Intune 自定义设置 | Intune Azure 预览版 | Microsoft Docs"
+title: "适用于 Android 设备的 Intune 自定义设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可以在 Android 自定义配置文件中使用的设置。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 6a49a87984a465c6a656ad40122d0e64b23599fc
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d6181b24d94bb151df036241d0a8b6b987f1483d
+ms.lasthandoff: 02/18/2017
 
 
 ---

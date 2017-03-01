@@ -1,5 +1,6 @@
 ---
-title: "Android 设备的 Intune 电子邮件设置 | Intune Azure 预览版 | Microsoft Docs"
+title: "适用于 Android 设备的 Intune 电子邮件设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可用于在 Android 设备上配置电子邮件连接的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 29a4346a04470192553ad2d4f0962a2a21d637ec
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 4a97af7fdf52e0e3055932f307223cb32e75c001
+ms.lasthandoff: 02/18/2017
 
 
 ---

@@ -1,5 +1,6 @@
 ---
-title: "适用于 iOS 设备的 VPN 设置 | Intune Azure 预览版 | Microsoft Docs"
+title: "适用于 iOS 设备的 Intune VPN 设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可用于在 iOS 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 61bb77b24314aca234e20df42c2eaa975dfcee8d
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5b450c74a5c6353219393e10acf69ba9e61a2ccb
+ms.lasthandoff: 02/18/2017
 
 
 ---

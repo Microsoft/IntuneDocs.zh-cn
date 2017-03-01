@@ -206,6 +206,7 @@
 
 # [故障排除](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [如何获取支持](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [使用报表监视 Intune](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection 疑难解答](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [公司资源访问权限问题疑难解答](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [应用部署问题疑难解答](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
@@ -222,8 +223,3 @@
 ## [排除设备威胁防护方面的故障](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [术语表](understand-explore/intune-glossary.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

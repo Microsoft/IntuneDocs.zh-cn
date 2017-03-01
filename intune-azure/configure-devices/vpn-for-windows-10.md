@@ -1,5 +1,6 @@
 ---
-title: "适用于 Windows 10 设备的 Intune VPN 设置 | Intune Azure 预览版 | Microsoft Docs"
+title: "适用于 Windows 10 设备的 Intune VPN 设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可用于在 Windows 10 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 7f09fa9bb8a9817aaad40c6452cff2a866a926d9
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 87004408ddcb07571507f68d5b9925b7e475282a
+ms.lasthandoff: 02/18/2017
 
 
 ---

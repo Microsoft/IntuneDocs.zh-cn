@@ -1,5 +1,6 @@
 ---
-title: "适用于 iOS 设备的 Intune Wi-Fi 设置 | Intune Azure 预览版 | Microsoft Docs"
+title: "适用于 iOS 设备的 Intune Wi-Fi 设置"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可用于配置 iOS 设备上 Wi-Fi 连接的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 85224b2758eeb1f9c7745b9f18f250a7d1292e0f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 0fd7b82dde498d2ab53126943cb60965aa17f40b
+ms.lasthandoff: 02/18/2017
 
 
 ---

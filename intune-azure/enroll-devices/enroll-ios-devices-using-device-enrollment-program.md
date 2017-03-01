@@ -1,5 +1,6 @@
 ---
-title: "注册 iOS 设备 - 设备注册计划 | Intune Azure 预览版 | Microsoft Docs"
+title: "注册 iOS 设备 - 设备注册计划"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何使用设备注册计划注册企业拥有的 iOS 设备。"
 keywords: 
 author: staciebarker
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
+ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -63,7 +65,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 6. 对于“用户关联”，请选择具有此配置文件的设备是否通过用户关联进行注册。
 
- - **通过用户关联注册** - 必须在初始设置过程中将设备与某个用户相关联，然后才能允许此设备访问公司数据和电子邮件。 对属于用户且需要使用公司门户获取服务（如安装应用）的 DEP 托管设备，选择用户关联。 请注意：在具有用户关联的 DEP 设备上注册期间，多重身份验证 (MFA) 不起作用。 注册之后，MFA 在这些设备上会正常运行。
+ - **通过用户关联注册** - 必须在初始设置过程中将设备与某个用户相关联，然后才能允许此设备访问公司数据和电子邮件。 对属于用户且需要使用公司门户获取服务（如安装应用）的 DEP 托管设备，选择用户关联。 请注意：在具有用户关联的 DEP 设备上注册期间，多重身份验证 (MFA) 不起作用。 注册之后，MFA 在这些设备上会正常运行。 注册 DEP 设备时，需要更改密码的新用户在首次登录时不会获得提示。 此外，在 DEP 注册过程中，密码已过期的用户不会获得重置密码的提示，必须使用其他设备重置密码。
 
     >[!NOTE]
     >具有用户关联的 DEP 要求启用 WS-Trust 1.3 用户名/混合终结点以请求用户令牌。
@@ -101,11 +103,11 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>将 Apple DEP 序列号分配给 MDM 服务器
 
-1. 转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com)，然后使用公司 Apple ID 登录。 
+1. 转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com)，然后使用公司 Apple ID 登录。
 
-2. 转到“部署计划”&gt;“设备注册计划”&gt;“管理设备”。 
+2. 转到“部署计划”&gt;“设备注册计划”&gt;“管理设备”。
 
-3. 指定**选择设备**的方式，然后提供设备信息并按设备**序列号**、**订单编号**指定详细信息，或**上传 CSV 文件**。 
+3. 指定**选择设备**的方式，然后提供设备信息并按设备**序列号**、**订单编号**指定详细信息，或**上传 CSV 文件**。
 
 4. 选择“分配到服务器”，然后选择为 Microsoft Intune 指定的 &lt;ServerName&gt;，然后选择“确定”。
 
@@ -137,7 +139,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 配置了用户关联的设备可以安装和运行公司门户应用，以下载应用和管理设备。 用户收到设备后，必须完成如下所述的其他步骤，才能完成设置助理并安装公司门户应用。
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>用户如何注册具有用户关联的公司所有的 iOS 设备 
+### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>用户如何注册具有用户关联的公司所有的 iOS 设备
 
 1. 用户打开设备时，系统会提示其完成设置助理。 安装过程中，系统会提示用户输入其凭据。 用户必须使用与其在 Intune 中的订阅相关联的凭据（即唯一的个人名称或 UPN）。
 

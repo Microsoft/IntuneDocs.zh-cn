@@ -1,5 +1,6 @@
 ---
-title: "在 Intune 中注册 Android 设备 | Intune Azure 预览版 | Microsoft Docs"
+title: "在 Intune 中注册 Android 设备"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何在 Intune Azure 预览版中注册 Android 设备。"
 keywords: 
 author: staciebarker
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 99b790e33843efcf83a4687490b186a6e174bd81
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b7188dd8163334429396e7b7c8687810a6e63bb2
+ms.lasthandoff: 02/18/2017
 
 
 ---

@@ -1,5 +1,6 @@
 ---
-title: "什么是 Microsoft Intune 设备注册 | Intune Azure 预览版 | Microsoft Docs"
+title: "什么是 Microsoft Intune 设备注册"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何为 iOS 设备、Android 设备和 Windows 设备注册。"
 keywords: 
 author: staciebarker
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 本主题介绍了 Intune 管理中的注册并列出了注册移动设备的不同方法。
 
-在 Intune 中注册设备（包括 Windows 电脑）以便对其进行管理。 我们在 Intune 文档中将此功能称为移动设备管理 (MDM)。 设备注册为移动设备（而不是电脑）时，会向其颁发 MDM 证书，设备随后会使用这些证书与 Intune 服务进行通信。 
+在 Intune 中注册设备（包括 Windows 电脑）以便对其进行管理。 我们在 Intune 文档中将此功能称为移动设备管理 (MDM)。 设备注册为移动设备（而不是电脑）时，会向其颁发 MDM 证书，设备随后会使用这些证书与 Intune 服务进行通信。
 
 注册设备的方式取决于设备类型、所有权和所需的管理级别。 “自带设备办公”(BYOD) 注册允许用户注册其个人电话、平板电脑或电脑。 通过公司自有设备 (COD) 注册，可实现自动注册、共享设备或预授权注册要求等管理方案。
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 02/15/2017
 可以使用 Azure 门户管理公司拥有的设备 (COD)。 可以直接通过 Apple 提供的工具注册 iOS 设备。 管理员或经理可以使用设备注册管理器注册所有设备类型。 具有 IMEI 号码的设备也可以标识并标记为公司拥有，以实现 COD 方案。
 
 ### <a name="dem"></a>DEM
-设备注册管理员是一个特殊的用户帐户，用于注册和管理多个企业持有设备。 管理员可安装公司门户并注册多个无用户设备。 了解有关 [DEM](enroll-devices-using-device-enrollment-manager.md) 的详细信息。 （[返回到表](#overview-of-device-enrollment-methods)）
+设备注册管理员 (DEM) 是一个特殊的用户帐户，用于注册和管理多个企业拥有的设备。 管理员可安装公司门户并注册多个无用户设备。 了解有关 [DEM](enroll-devices-using-device-enrollment-manager.md) 的详细信息。 （[返回到表](#overview-of-device-enrollment-methods)）
 
 ### <a name="dep"></a>DEP
 通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 设备。 用户第一次开启设备并运行 iOS 设置助理时，将注册设备。 此方法支持 **iOS 监督**模式，此模式又允许：
@@ -87,7 +88,7 @@ ms.lasthandoff: 02/15/2017
 若要了解有关 iOS 注册的详细信息，请参阅：
 
 - [选择 iOS 设备注册方式](choose-ios-enrollment-method.md)
-- [使用设备注册计划注册 iOS 设备](enroll-ios-devices-using-device-enrollment-program.md)。 
+- [使用设备注册计划注册 iOS 设备](enroll-ios-devices-using-device-enrollment-program.md)
 - [返回到上表](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
@@ -98,10 +99,10 @@ IT 管理员通过 USB 使用 Apple Configurator 手动准备每台公司自有�
 若要了解有关 iOS 注册的详细信息，请参阅：
 
 - [决定 iOS 设备注册方式](choose-ios-enrollment-method.md)
-- [使用配置器和设置助理注册 iOS 设备](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)。 
+- [使用 Configurator 和设置助理注册 iOS 设备](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-对于直接注册，管理员必须创建注册策略并将其导出到 Apple Configurator，进而手动注册每台设备。 连接了 USB 的公司拥有的设备可直接进行注册，无需恢复出厂设置。 这些设备作为无用户设备进行管理。 它们未锁定、不受监控，且无法支持条件性访问、越狱检测或移动应用管理。 
+对于直接注册，管理员必须创建注册策略并将其导出到 Apple Configurator，进而手动注册每台设备。 连接了 USB 的公司拥有的设备可直接进行注册，无需恢复出厂设置。 这些设备作为无用户设备进行管理。 它们未锁定、不受监控，且无法支持条件性访问、越狱检测或移动应用管理。
 
 若要了解有关 iOS 注册的详细信息，请参阅：
 

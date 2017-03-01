@@ -1,5 +1,6 @@
 ---
-title: "适用于 Android 的每应用 VPN 配置文件 - Pulse Secure | Intune Azure 预览版 | Microsoft Docs"
+title: "适用于 Android - Pulse Secure 的每应用 VPN 配置文件"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何为 Intune 管理的 Android 设备创建每应用 VPN 配置文件。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: aeed271699656addce8f2bd8cde2a69ab8ede8f9
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 0cf638348df2f01d70c0765a4932abc3eb801f23
+ms.lasthandoff: 02/18/2017
 
 
 ---
