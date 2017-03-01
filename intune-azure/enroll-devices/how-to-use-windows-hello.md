@@ -1,5 +1,6 @@
 ---
-title: "如何使用 Windows Hello 企业版 | Intune Azure 预览版 | Microsoft Docs"
+title: "如何使用 Windows Hello 企业版"
+titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何创建策略以控制 Windows Hello 企业版在托管设备上的使用。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 56e78f2c80c860c4cdf1c79bf94d7575d5cd9674
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 1844cf87ae51c7d0832e3ba6315efde734ff56cc
+ms.lasthandoff: 02/18/2017
 
 
 ---
