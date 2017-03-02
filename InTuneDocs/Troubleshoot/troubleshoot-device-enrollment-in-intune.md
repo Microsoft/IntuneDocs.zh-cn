@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 01/25/2017
 
 
 ---
@@ -261,7 +262,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 **解决方法：**与最终用户共享以下解决方法，帮助他们重新获得公司资源的访问权限。
 
-如果用户启动了 iOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...” 内联通知。 
+如果用户启动了 iOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...” 内联通知。
 
   ![尝试同步通知](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -269,11 +270,11 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
   ![同步成功通知](./media/ios_cp_app_sync_successful_notification.png)
 
-如果同步失败，用户将在 iOS 公司门户应用中看到“无法同步”内联通知。 
+如果同步失败，用户将在 iOS 公司门户应用中看到“无法同步”内联通知。
 
   ![无法同步通知](./media/ios_cp_app_unable_to_sync_notification.png)
 
-若要解决此问题，用户必须选择“设置”按钮，该按钮位于“无法同步”通知的右侧。 通过“设置”按钮，用户可转到“公司访问设置”流屏幕，在此处，用户可按提示注册设备。 
+若要解决此问题，用户必须选择“设置”按钮，该按钮位于“无法同步”通知的右侧。 通过“设置”按钮，用户可转到“公司访问设置”流屏幕，在此处，用户可按提示注册设备。
 
   ![“公司访问设置”屏幕](./media/ios_cp_app_company_access_setup.png)
 
@@ -386,9 +387,4 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 ### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
