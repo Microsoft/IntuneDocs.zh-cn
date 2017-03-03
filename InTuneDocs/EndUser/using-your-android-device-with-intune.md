@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 76001bd12e5f665eb1a5a0f0fe5442f0a6fedb8c
-ms.openlocfilehash: d653d3eb1d71d30e2bf1104b1d55bfbcf2725c13
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
+ms.openlocfilehash: 5732f52474a8b2b61426e349647f88f4f142d2e2
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -43,7 +43,8 @@ ms.lasthandoff: 02/18/2017
 - [设置 PIN 或密码](set-your-pin-or-password-android.md)
 - [安装公司的虚拟专用网络 (VPN)](install-your-companys-virtual-private-network-VPN-android.md)
 - [设置锁定设备之前的时间量](set-the-amount-of-time-before-your-device-is-locked-android.md)
-- [重置（清除）丢失或被盗设备](reset-erase-your-lost-or-stolen-device-android.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+- [重置（清除）丢失或被盗设备](reset-erase-your-device-cpwebsite.md)
 - [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-android.md)
 - [从 Intune 取消注册设备](unenroll-your-device-from-intune-android.md)
 - [如果拒绝“使用条款”，则取消注册设备](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
