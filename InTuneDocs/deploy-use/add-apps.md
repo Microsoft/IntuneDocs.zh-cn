@@ -1,11 +1,11 @@
 ---
-title: "添加应用 | Microsoft Intune"
+title: "添加应用 | Microsoft Docs"
 description: "在开始使用 Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
+ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>使用 Microsoft Intune 添加应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 在开始使用 Microsoft Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。 这些概念将帮助你了解哪些应用可以部署到哪些平台。 此外，可以帮助你了解部署应用之前必须到位的先决条件。
 
 ## <a name="app-types-that-you-can-deploy"></a>可以部署的应用类型
@@ -60,7 +64,7 @@ ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
 ## <a name="cloud-storage-space"></a>云存储空间
 使用软件安装程序安装类型（例如，业务线应用）创建的所有应用都必须打包并上传到 Microsoft Intune 云存储空间。 Intune 的试用订阅包括 2 千兆字节 (GB) 基于云的存储，用于存储托管应用和更新。 完全订阅包括 20 GB 的存储空间。
 
-可以在“**管理员**”工作区的“**存储空间使用量**”节点中查看所使用的空间量。
+可以在“**管理员**”工作区的“**存储空间使用量**”节点中查看所使用的空间量。 可以使用原始购买方法购买额外的 Intune 存储空间。  如果通过发票或信用卡付款，请访问[订阅管理门户](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否则，请联系合作伙伴或销售人员。
 
 云存储空间的要求如下：
 
@@ -93,6 +97,6 @@ Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,30 +1,33 @@
 ---
-title: "Intune 的常见使用方式 | Microsoft Intune"
+title: "Intune 的常见使用方式 | Microsoft Docs"
 description: "列出了 Intune 可提供帮助的六个最常见任务"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/09/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39e68e467c3295f4751bf3466957a8a377a8e7d6
-ms.openlocfilehash: 095be86be3658a294d3f0aab525f5e0dd29b4cfe
+ms.sourcegitcommit: f8a47bef930e5e194f4543b0532b4585c0ebd5e9
+ms.openlocfilehash: 514c1cee1137f6f658b0e887dd4f4a02f1cd0f21
 
 
 ---
 
 # <a name="common-ways-to-use-intune"></a>Intune 的常见使用方式
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 在深入探讨实现任务之前，务必使公司的企业移动性利益干系人在业务目标上保持一致。  不管你是刚购买企业移动性产品还是迁移自另一个产品，这一点都很重要。  
 
-对企业移动性的需求在不断地动态演化，用于解决这些需求的 Microsoft 方法有时可能不同于市场上的其他解决方案。  在业务目标上保持一致的最好办法是，从你想要为员工、合作伙伴和 IT 部门实现的方案的角度，来表达你的目标。  
+对企业移动性的需求在不断地动态演化，用于解决这些需求的 Microsoft 方法有时可能不同于市场上的其他解决方案。 在业务目标上保持一致的最好办法是，从你想要为员工、合作伙伴和 IT 部门实现的方案的角度，来表达你的目标。  
 
 下面简单介绍了六种依赖于 Intune 的最常见的方案，并附有关于如何规划和部署其中每个方案的详细信息的链接。
 
@@ -49,14 +52,13 @@ Intune 还支持对需要安全访问本地数据的移动应用（例如业务�
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>保护 Office 365 电子邮件和数据以供移动设备安全访问
 在 Office 365 中保护公司数据（电子邮件、文档、即时消息、联系人）既方便了你，又给用户带来了更加顺畅的体验。
 
-Intune 和 Microsoft 企业移动性 + 安全性提供了独一无二的集成式条件性访问解决方案，确保用户、应用或设备在符合公司的合规性要求（已执行[多重身份验证](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)，已向 Intune 注册，使用托管应用、受支持的 OS 版本、设备 PIN 和低用户风险配置文件等等）之前无法访问 Office 365 数据。 位于其各自应用存储中的 Office 移动应用可以与数据包含策略（可通过 Intune 配置）结合使用，使你能够避免与不受 IT 管理的应用（例如本机电子邮件应用）和存储位置（例如 Dropbox）共享数据。  此功能完全内置于 Office 365 和 EMS 中。  你无需部署其他基础结构便可获得此功能。
+Intune 和 Microsoft 企业移动性 + 安全性提供了独一无二的集成式条件性访问解决方案，确保用户、应用或设备在符合公司的合规性要求（已执行[多重身份验证](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)，已向 Intune 注册，使用托管应用、受支持的 OS 版本、设备 PIN 和低用户风险配置文件等等）之前无法访问 Office 365 数据。
 
-相应应用商店中的 Office 移动应用备有可通过 Intune 配置的数据包含策略。 这使你能够避免与未由 IT 管理的应用（例如本机电子邮件应用）和存储位置（例如 Dropbox）共享数据。  此功能完全内置于 Office 365 和 EMS 中。  无需部署其他基础结构便可获得此功能。
+相应应用商店中的 Office 移动应用备有可通过 Intune 配置的数据包含策略。 这使你能够避免与未由 IT 管理的应用（例如本机电子邮件应用）和存储位置（例如 Dropbox）共享数据。 此功能完全内置于 Office 365 和 EMS 中。 无需部署其他基础结构便可获得此功能。
 
+在常见的 Office 365 部署做法中，如果需要使用公司应用/证书/Wi-Fi/VPN 配置来完全设置设备（公司拥有设备常见方案），则必须将设备注册到管理系统中。  
 
-在常见的 Office 365 部署做法中，如果需要使用公司应用/证书/Wi-Fi/VPN 配置来完全设置设备（通常是公司拥有的设备），则必须将设备注册到管理系统中。  
-
-但是，如果用户只需访问公司电子邮件和文档（通常是个人拥有的设备），那么他必须使用 Office 移动应用（已向其[应用数据包含策略](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)）并且完全跳过设备注册！  
+但是，如果用户只需访问公司电子邮件和文档（通常是个人拥有的设备），则可要求用户使用 Office 移动应用（已向其[应用数据包含策略](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)）并且完全跳过设备注册！  
 
 无论哪种方式，Office 365 数据都将受到已定义策略的保护。
 
@@ -68,14 +70,14 @@ Intune 和 Microsoft 企业移动性 + 安全性提供了独一无二的集成�
 
 在设备注册不可行的情况下，Intune 提供替代的 BYOD 方法，可简单地[管理包含公司数据的应用](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)。  与 Office 移动应用一样，即使是有问题的应用访问公司和个人数据，Intune 也能保护公司数据。  
 
-作为管理员，可以要求用户从 Office 移动应用访问 Office 365 并使用可保护数据的策略（如加密、利用 pin 进行保护等等）配置应用。  这些策略可防止在不受管理的应用和存储位置中丢失数据 — 无论是在这些应用的内部还是外部。  例如，这些策略会阻止用户将公司电子邮件配置文件中的文本复制到消费者电子邮件配置文件，即使这两个配置文件都是在 Outlook Mobile 中配置的。  可以为 BYOD 用户所需的其他服务和应用程序部署类似的配置。
+作为管理员，可以要求用户从 Office 移动应用访问 Office 365 并使用可保护数据的策略（如加密、利用 pin 进行保护等等）配置应用。 这些策略可防止在不受管理的应用和存储位置中丢失数据 — 无论是在这些应用的内部还是外部。 例如，这些策略会阻止用户将公司电子邮件配置文件中的文本复制到消费者电子邮件配置文件，即使这两个配置文件都是在 Outlook Mobile 中配置的。 可以为 BYOD 用户所需的其他服务和应用程序部署类似的配置。
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 
 ## <a name="issue-corporate-owned-phones-to-your-information-workers"></a>向信息工作者发放公司拥有的手机
-现在的大多数信息工作者都是移动办公，这使得移动设备上的工作效率成为提高竞争力的必要途径。  这些员工需要随时随地无缝访问所有公司应用和数据。  需要确保公司数据是安全的并且管理成本较低。  
+现在的大多数信息工作者都是移动办公，这使得移动设备上的工作效率成为提高竞争力的必要途径。 这些员工需要随时随地无缝访问所有公司应用和数据。 需要确保公司数据是安全的并且管理成本较低。  
 
-Intune 提供了[大量预配和管理解决方案](/intune/deploy-use/manage-corporate-owned-devices)，这些解决方案与当今市场上的主流公司设备管理平台集成，包括 Apple 设备注册程序和 Samsung KNOX 移动安全平台。  通过使用 Intune 集中创作设备配置，可帮助实现公司设备预配的高度自动化。  
+Intune 提供了[大量预配和管理解决方案](/intune/deploy-use/manage-corporate-owned-devices)，这些解决方案与当今市场上的主流公司设备管理平台集成，包括 Apple 设备注册程序和 Samsung KNOX 移动安全平台。 通过使用 Intune 集中创作设备配置，可帮助实现公司设备预配的高度自动化。  
 
 想象一下：将一个未开封的 iPhone 手机盒发放给员工。 员工打开手机后，完成公司自创的设置流程，在此过程中他必须进行身份验证。 这部 iPhone 手机无缝配置了[安全策略](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)（例如，加密硬盘驱动器、设备 pin）、[电子邮件/Wi-Fi/VPN/证书配置文件](/intune/deploy-use/enable-access-to-company-resources-with-microsoft-intune)和一系列基础[应用](/intune/deploy-use/add-apps)。
 
@@ -84,9 +86,9 @@ Intune 提供了[大量预配和管理解决方案](/intune/deploy-use/manage-co
 <!-- Learn more about how to plan and deploy Intune to support corporate owned devices. -->
 
 ## <a name="issue-limited-use-shared-tablets-to-your-task-workers"></a>向任务工作者发放使用受限的共享平板电脑
-任务工作者开始越来越多地使用移动技术。  例如，零售店员工现在广泛使用共享平板电脑。  无论是用于处理销售还是即时检查库存，平板电脑都有助于创造良好的顾客交互体验。
+任务工作者开始越来越多地使用移动技术。 例如，零售店员工现在广泛使用共享平板电脑。  无论是用于处理销售还是即时检查库存，平板电脑都有助于创造良好的顾客交互体验。
 
-在这种情况下，用户体验的简单性至关重要。  出于此原因，发放给员工的平板电脑通常采用使用受限模式，使员工只能与单个业务线应用交互。  Intune 允许你批量预配、保护和集中管理这些可配置为在此使用受限模式下运行的共享 [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings) 和 [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) 平板电脑。
+在这种情况下，用户体验的简单性至关重要。 出于此原因，发放给员工的平板电脑通常采用使用受限模式，使员工只能与单个业务线应用交互。 Intune 允许你批量预配、保护和集中管理这些可配置为在此使用受限模式下运行的共享 [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings) 和 [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) 平板电脑。
 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
@@ -99,6 +101,6 @@ Intune 提供了[大量预配和管理解决方案](/intune/deploy-use/manage-co
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

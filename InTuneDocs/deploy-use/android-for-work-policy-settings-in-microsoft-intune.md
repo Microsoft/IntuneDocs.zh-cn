@@ -1,12 +1,12 @@
 ---
 
-title: "Android for Work 策略设置 | Microsoft Intune"
+title: "Android for Work 策略设置 | Microsoft Docs"
 description: "创建控制通过 Intune 管理的 Android for Work 设备上的设置及功能的策略。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,19 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 策略设置
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune 提供了一系列内置常规设置，你可以在 Android for Work 设备上进行配置。
+Intune 提供了一系列内置常规设置，你可以在 [Android for Work 设备](android-for-work.md)上进行配置。
 
 ## <a name="general-configuration-policy"></a>常规配置策略
 
@@ -60,15 +61,11 @@ Intune 提供了一系列内置常规设置，你可以在 Android for Work 设�
 |**设置默认应用权限策略**<br>（Android 6 及更高版本）|为工作配置文件中的所有应用设置默认权限策略。|
 
 
-
-
 ## <a name="custom-policy-settings"></a>自定义策略设置
 使用 Microsoft Intune 的 **Android for Work 自定义配置策略**来部署可用于控制 Android for Work 设备功能的 OMA URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
 此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。
-
-> [!NOTE]
-> 目前，Android 自定义策略仅支持为包含预共享密钥的 Android 设备配置 Wi-Fi 设置。
+Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题的示例，查找可配置的策略。
 
 ### <a name="general-settings"></a>常规设置
 
@@ -97,6 +94,6 @@ Intune 提供了一系列内置常规设置，你可以在 Android for Work 设�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

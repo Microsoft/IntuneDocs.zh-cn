@@ -1,11 +1,11 @@
 ---
-title: "iOS 策略设置 | Microsoft Intune"
+title: "iOS 策略设置 | Microsoft Docs"
 description: "创建策略，该策略控制通过 Intune 管理的 iOS 设备上的设置及功能。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置。 此外，还可使用 Apple Configurator 工具创建 Intune 未提供的自定义设置。
 
@@ -78,12 +81,12 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |----------------|-------|
 |**允许备份到 iCloud**|允许用户将设备备份到 iCloud。|
 |**允许将文档与 iCloud 同步**|允许将文档和键值同步到 iCloud 存储空间。|
-|**允许将照片流与 iCloud 同步**|允许将设备上的照片同步到 iCloud。|
+|**允许将照片流与 iCloud 同步**|允许用户在其设备上启用“我的照片流”，该操作可将照片同步到 iCloud 并在所有用户设备上使用。|
 |**需要加密的备份**|需要将任何设备备份进行加密。|
 |**允许托管应用将数据同步到 iCloud**|允许你使用 Intune 管理的应用将数据同步到用户的 iCloud 帐户。|
 |**允许 Handoff 在另一台设备上继续活动**|允许用户在一台 iOS 或 Mac OS X 设备上继续进行在另一台 iOS 设备上开始的工作。|
-|**允许 iCloud 照片共享**|允许使用 iOS 共享照片流功能。|
-|**允许 iCloud 照片库**|允许用户在 iCloud 上存储照片。 如果禁用，则存储在 iCloud 上的所有照片都将被删除。|
+|**允许 iCloud 照片共享**|将其设置为“否”以在设备上禁用“iCloud 照片共享”。|
+|**允许 iCloud 照片库**|如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。    如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。|
 
 ### <a name="application-settings-for-the-browser"></a>浏览器的应用程序设置
 所有设置均适用于 iOS 8.0 及更高版本。
@@ -172,6 +175,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**导入应用**|导入你已在逗号分隔值文件中指定的应用列表。 在文件中使用此格式：应用程序名称、发布者和应用 URL。|
 |**编辑**|编辑选定应用的名称、发布者和 URL。|
 |**删除**|从列表中删除选定的应用。|
+
+必须将包含合规和不合规应用设置的策略部署到用户组。
 
 ### <a name="kiosk-mode-settings"></a>展台模式设置
 
@@ -383,6 +388,6 @@ Weather,Apple,com.apple.weather
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -6,22 +6,23 @@
 ### [创建策略并发布应用](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [其他选项和其他功能](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [转换为付费订阅](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [MAM 和应用保护常见问题解答](understand-explore/mam-faq.md)
 ## [常见方案](understand-explore/common-ways-to-use-intune.md)
-## [术语表](understand-explore/intune-glossary.md)
+
 
 # [开始使用](get-started/get-started.md)
-## [快速入门指南](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [必备条件](get-started/what-to-know-before-you-start-microsoft-intune.md)
-#### [支持的设备和浏览器](get-started/supported-mobile-devices-and-computers.md)
-#### [网络带宽使用](get-started/network-bandwidth-use.md)
+## [安装 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+### [先决条件]
+#### [支持的设备](get-started/what-to-know-before-you-start-microsoft-intune.md)
+#### [网络使用情况](get-started/network-bandwidth-use.md)
 ### [登录到 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [配置域名](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [配置域](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [添加用户](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [管理 Intune 许可证](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [管理许可证](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [组织用户和设备](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [部署策略和应用](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [自定义公司门户](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [注册移动设备](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [注册设备](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [配置后任务](get-started/post-configuration-tasks.md)
 ## [迁移到 Intune](get-started/migrate-to-intune.md)
 ## 后续步骤
@@ -30,14 +31,23 @@
 ### [向用户发布移动应用](get-started/publish-mobile-apps-to-users.md)
 ### [简化移动设备上的电子邮件配置](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [保护 Windows 电脑免受恶意软件的威胁](get-started/protect-pcs-against-malware-threats.md)
-## [Intune 部署阶段](get-started/rollout-phases-for-microsoft-intune-deployment.md)
-### [项目范围](get-started/project-scope.md)
-### [概念证明](get-started/proof-of-concept.md)
-### [试点](get-started/pilot.md)
-### [企业推出](get-started/enterprise-rollout.md)
-### [操作和维护](get-started/operations-and-maintenance.md)
+
+# [规划和设计](plan-design/introduction.md)
+## [第 1 部分：确定部署目标和难题](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
+## [第 2 部分：确定用例方案](plan-design/section-2-identify-use-case-scenarios.md)
+## [第 3 部分：确定用例方案要求](plan-design/section-3-determine-use-case-requirements.md)
+## [第 4 部分：制定推出计划](plan-design/section-4-develop-a-rollout-plan.md)
+## [第 5 部分：制定通信计划](plan-design/section-5-develop-a-rollout-communication-plan.md)
+## [第 6 部分：制定支持计划](plan-design/section-6-develop-a-support-plan.md)
+## [第 7 部分：创建 Intune 设计](plan-design/section-7-create-an-intune-design.md)
+## [第 8 部分：实施 Intune](plan-design/section-8-onboarding-process.md)
+## [第 9 部分：测试和验证](plan-design/section-9-test-and-validation.md)
+## [其他资源](plan-design/additional-resources.md)
 
 # [新增功能](whats-new/whats-new-in-microsoft-intune.md)
+## [应用 UI 中的新增功能](whats-new/whats-new-in-intune-app-ui.md)
+## [Azure 预览版的新增功能](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
+## [新增功能存档](whats-new/whats-new-archive.md)
 
 # 部署和使用
 ## [设备和应用生命周期概述](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -49,7 +59,6 @@
 #### [Android 管理](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work 管理](deploy-use/set-up-android-for-work.md)
 #### [Windows 设备管理](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 移动版和 Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [管理企业拥有的设备](deploy-use/manage-corporate-owned-devices.md)
 #### [注册企业拥有的 iOS 设备](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [设置助理注册](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -65,10 +74,12 @@
 #### [安装电脑客户端](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [常见电脑管理任务](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [解决电脑策略冲突](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [管理 Android for Work](deploy-use/android-for-work.md)
 
 ## 配置设备
 ### [使用策略管理设备上的设置和功能](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS 设置](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [还原托管的 iOS 设备](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android 和 Samsung KNOX 设置](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [使用自定义策略创建具有预共享密钥的 Wi-Fi 配置文件](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [使用自定义策略创建适用于 Android 设备的 per-app VPN 配置文件](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -90,13 +101,14 @@
 #### [Intune 中的 VPN 连接](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Intune 中的电子邮件配置文件](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [使用组管理用户和设备](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [将组迁移到 Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [将设备映射到组](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [了解你的设备清单](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
 
 ## [保护设备](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [远程锁定和密码重置](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [使用 MFA 保护 Windows 设备](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [使用多重身份验证保护设备](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [控制 Windows Hello 企业版设置](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [在 iOS 上绕过激活锁定](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [保护 Windows 电脑的策略](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -135,33 +147,34 @@
 #### [Windows 和 Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [部署设备合规性策略](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [基于设备合规性限制访问](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [基于设备合规性保护访问](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online 和新 Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange 内部部署和旧版 Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [限制电子邮件访问：示例](deploy-use/restrict-email-access-example-scenarios.md)
+#### [保护电子邮件访问：示例](deploy-use/restrict-email-access-example-scenarios.md)
 ### [只允许策略托管应用访问 O365 服务](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [应用与 MAM CA](deploy-use/use-apps-with-mam-ca.md)
+#### [将应用与基于应用的 CA 结合使用](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [阻止没有 ADAL 的应用](deploy-use/block-apps-with-no-modern-authentication.md)
-### [限制对网络的访问 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [根据设备、网络和应用程序风险限制访问权限](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [设置 Lookout 设备威胁防护](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [在 Intune 中启用 Lookout](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [为工作应用部署 Lookout](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [启用设备威胁防护合规性策略](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [保护对网络的访问 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [根据设备、网络和应用程序风险保护访问](deploy-use/device-threat-protection.md)
+#### [设置设备威胁防护](deploy-use/device-threat-protection-subscription-setup.md)
+#### [启用设备威胁防护](deploy-use/device-threat-protection-enable.md)
+#### [部署设备威胁防护应用](deploy-use/device-threat-protection-apps.md)
+#### [启用设备威胁防护合规性策略](deploy-use/device-threat-protection-policy.md)
 
 ### [使用 MAM 保护应用数据](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [适用于 MAM 策略的 Azure 门户](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [准备好配置 MAM 策略](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [创建和部署 MAM 策略](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [适用于 Android 的 MAM 策略](deploy-use/android-mam-policy-settings.md)
-#### [适用于 iOS 的 MAM 策略](deploy-use/ios-mam-policy-settings.md)
-#### [验证 MAM 策略](deploy-use/validate-mobile-application-management.md)
-#### [监视策略合规性](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [提供应用保护策略的 Azure 门户](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [准备好配置应用保护策略](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [创建和部署应用保护策略](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [面向 Android 的应用保护策略](deploy-use/android-mam-policy-settings.md)
+#### [面向 iOS 的应用保护策略](deploy-use/ios-mam-policy-settings.md)
+#### [验证应用保护策略](deploy-use/validate-mobile-application-management.md)
+#### [监视应用保护策略符合性](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [管理 iOS 应用之间的数据传输](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [MAM 策略的 Intune 管理控制台](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -178,10 +191,10 @@
 ### [停用应用](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [擦除托管公司应用数据](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [有关最终用户体验的资源](deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
-### [还原托管的 iOS 设备](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [具有 MAM 策略的 Android 应用](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [具有 MAM 策略的 iOS 应用](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+## [如何使最终用户了解 Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+### [Android 用户如何获取其应用](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS 用户如何获取其应用](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows 用户如何获取其应用](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # 开发和自定义应用
 ## [Microsoft Intune App SDK 概述](develop/intune-app-sdk.md)
@@ -193,6 +206,7 @@
 
 # [故障排除](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [如何获取支持](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [使用报表监视 Intune](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection 疑难解答](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [公司资源访问权限问题疑难解答](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [应用部署问题疑难解答](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
@@ -206,9 +220,6 @@
 
 ## [移动应用程序管理疑难解答](troubleshoot/troubleshoot-mam.md)
 
-## [Troubleshoot Lookout Integration](troubleshoot/troubleshooting-lookout-integration.md)（Lookout 集成故障排除）
+## [排除设备威胁防护方面的故障](troubleshoot/device-threat-protection-troubleshooting.md)
 
-
-<!--HONumber=Dec16_HO2-->
-
-
+# [术语表](understand-explore/intune-glossary.md)

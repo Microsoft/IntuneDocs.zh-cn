@@ -1,5 +1,5 @@
 ---
-title: "移动设备安全策略设置 | Microsoft Intune"
+title: "移动设备安全策略设置 | Microsoft Docs"
 description: "使用 Intune 配置各种可部署到组织中的托管设备的设置。"
 keywords: 
 author: robstackmsft
@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的移动设备安全策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > 现在，Microsoft Intune 针对每个设备平台都具有单独的配置策略。 这些策略包含可使用的最新设置。 你可以继续使用移动设备安全策略，并且任何现有的部署仍将起作用。 但是，你应计划尽快迁移到新的配置策略，因为以后会删除移动设备安全策略。
 
@@ -53,7 +57,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**最短密码长度**|是|是|是|是|是|
 |**允许简单密码**<br /><br />简单密码包括“0000”和“1234”。|否|否|是|是|否|
 |**擦除设备前允许的重复登录失败次数**|是|是|是|是|是|
-|**屏幕关闭前处于非活动状态的分钟数**1|是|是|是|是|是|
+|**屏幕关闭前处于非活动状态的分钟数**<sup>1</sup>|是|是|是|是|是|
 |**密码过期（天数）**|是|是|是|是|是|
 |**记住密码历史记录**|是|是|是|是|是|
 |**“记住密码历史记录”** – **“防止重用以前的密码”**|是|是|是|是|是|
@@ -61,7 +65,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允许图片密码和 PIN**|是|是|否|否|否|
 |**需要提供密码之前处于非活动状态的分钟数**|否|否|否|是|否|
 |**允许指纹解锁**|否|否|否|iOS 7 及更高版本|否|
-1对于 iOS 设备，配置“屏幕关闭前处于非活动状态的分钟数”和“需要提供密码之前处于非活动状态的分钟数”设置时，它们会按顺序应用。 例如，如果你设置的两个设置的值均为“5”  分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
+<sup>1</sup>对于 iOS 设备，配置“屏幕关闭前处于非活动状态的分钟数”和“需要提供密码之前处于非活动状态的分钟数”设置时，它们会按顺序应用。 例如，如果你设置的两个设置的值均为“5”  分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
 
 当你将密码长度策略部署到运行 Windows RT 的设备时，用户会被强制重置密码，即使他们当前的密码是符合策略要求的。
 
@@ -69,9 +73,9 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 |设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**需要对移动设备加密**1<br /><br />对于 Windows Phone 8 设备，必须将其设置为 **“是”**。<br /><br />若要在 iOS 设备上启用加密，请启用设置 **“需要密码以解锁移动设备”**。|是|否|是|否|是|
+|**需要对移动设备加密**<sup>1</sup><br /><br />对于 Windows Phone 8 设备，必须将其设置为 **“是”**。<br /><br />若要在 iOS 设备上启用加密，请启用设置 **“需要密码以解锁移动设备”**。|是|否|是|否|是|
 |**需要对存储卡进行加密**<br /><br />此设置也适用于由 Exchange ActiveSync 托管的设备。|n/a|n/a|n/a <br />会对应用和关联的数据进行自动加密。|n/a|是|
-1以下是运行 Windows 8.1 的设备的其他信息：
+<sup>1</sup>以下是运行 Windows 8.1 的设备的其他信息：
 
 -   若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](http://support.microsoft.com/kb/3013816) 。
 
@@ -105,7 +109,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**允许恢复出厂设置**|否|否|否|否|是（仅 Samsung KNOX 标准版）|
 
 
-## <a name="cloud-settings-documents-and-data"></a>云设置 – 文档和数据
+## <a name="cloud-settings--documents-and-data"></a>云设置 – 文档和数据
 
 |设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +120,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 |**工作文件夹 URL**<br /><br />此设置设置工作文件夹的 URL，以允许跨设备同步文档。|是|否|否|否|否|
 |**允许 Google 备份**|否|否|否|否|是（仅 Samsung KNOX 标准版）|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>云设置 – 帐户和同步
+## <a name="cloud-settings--accounts-and-synchronization"></a>云设置 – 帐户和同步
 
 |设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -127,7 +131,7 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 |设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**允许用户下载电子邮件附件**1|n/a|n/a|n/a|n/a|n/a|
+|**允许用户下载电子邮件附件**<sup>1</sup>|n/a|n/a|n/a|n/a|n/a|
 |**电子邮件同步时间段** <br /><br />此设置也适用于由 Exchange ActiveSync 托管的设备。|n/a|n/a|n/a|n/a|n/a|
 |**允许支持以上部分设置的移动设备与 Exchange (Exchange ActiveSync) 进行同步** <br /><br />此设置也适用于由 Exchange ActiveSync 托管的设备。|n/a|n/a|n/a|n/a|n/a|
 |**在 Windows 邮件应用程序中将 Microsoft 帐户设为可选**|是|否|否|否|否|
@@ -214,6 +218,6 @@ ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

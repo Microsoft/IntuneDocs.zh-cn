@@ -1,5 +1,5 @@
 ---
-title: "条款和条件策略设置 | Microsoft Intune"
+title: "条款和条件策略设置 | Microsoft Docs"
 description: "你可以将 Intune 条款和条件部署到用户组，以解释注册、访问工作资源和使用公司门户应用将如何影响设备和用户。"
 keywords: 
 author: staciebarker
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
 
 
 ---
 
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的条款和条件策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可以将 Intune 条款和条件部署到用户组，以解释注册、访问工作资源和使用公司门户对设备和用户有何影响。 用户必须接受这些条款和条件，然后才能使用公司门户进行注册或访问工作。
 
 你可以创建和部署包含不同条款和条件的多个策略。 也可以用不同的语言生成相同条款和条件的不同版本，然后将它们部署到相应的组。
@@ -81,6 +85,6 @@ ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

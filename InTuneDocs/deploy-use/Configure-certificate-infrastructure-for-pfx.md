@@ -1,5 +1,5 @@
 ---
-title: "配置 PFX 证书基础结构 |Microsoft Intune"
+title: "配置 PFX 证书基础结构 |Microsoft Docs"
 description: "创建和部署 .PFX 证书配置文件。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>配置证书基础结构
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题介绍创建和部署 .PFX 证书配置文件所需具备的条件。
 
 若要在组织中执行任何基于证书的身份验证，你需要企业证书颁发机构。
@@ -31,7 +35,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 -  Intune 证书连接器，它在可以与证书颁发机构进行通信的计算机上运行。
 
-## <a name="onpremises-infrastructure-description"></a>本地基础结构说明
+## <a name="on-premises-infrastructure-description"></a>本地基础结构说明
 
 
 -    **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
@@ -65,7 +69,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 - **任务 1** - 配置证书颁发机构上的证书模板。
 - **任务 2** - 启用、安装和配置 Intune 证书连接器。
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>任务 1 - 配置证书颁发机构上的证书模板
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>任务 1 - 配置证书颁发机构上的证书模板
 在该任务中，将发布证书模板。
 
 ##### <a name="to-configure-the-certification-authority"></a>配置证书颁发机构
@@ -104,7 +108,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 4.  在 CA 计算机上，确保托管 Intune 证书连接器的计算机具有注册权限，以便它可以访问在创建 .PFX 配置文件时使用的模板。 在 CA 计算机属性的“安全性”  选项卡上设置该权限。
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>任务 2 - 启用、安装和配置 Intune 证书连接器
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>任务 2 - 启用、安装和配置 Intune 证书连接器
 在此任务中，你将：
 
 下载、安装和配置证书连接器。
@@ -156,6 +160,6 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "适用于 Intune 评估的其他选项和其他功能 | Microsoft Intune"
+title: "适用于 Intune 评估的其他选项和其他功能 | Microsoft Docs"
 description: "介绍警报、通知和报表，以及当你注册 Intune 的免费 30 天评估时需要了解的常规 Intune 功能"
 keywords: 
 author: lindavr
@@ -12,14 +12,17 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>适用于 Intune 评估订阅的其他选项和其他功能
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="alerts-notifications-and-reports"></a>警报、通知和报表
 在 Intune 管理控制台中，“警报”用于快速访问你组织中的托管设备的总体运行状况。 你可以配置和自定义警报，以便它们仅报告和显示你需要的组织信息。 你可以设置是启用还是禁用警报，配置严重性，使用显示阈值来确定在显示警报之前必须触发警报事件的频率，还可以配置特定于某些警报类型的设置。
@@ -56,6 +59,6 @@ ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "启用设备注册 | Microsoft Intune"
+title: "启用设备注册 | Microsoft Docs"
 description: "设置 MDM 机构，并启用 iOS、Windows、Android 和 Mac 设备的注册。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,20 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>注册移动设备并安装应用
+# <a name="enable-enrollment-for-mobile-devices"></a>启用移动设备注册
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主题指导 Intune 管理员如何启用移动设备注册。 有关在手机上使用 Intune 的帮助，请参阅[使用托管设备来完成工作](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)。 
+
 若要使用 Intune 设置移动设备管理，必须先设置“移动设备管理机构”，它标识可管理与你的帐户关联的设备的服务。 本指南假设你将使用 Intune 服务，而不是 System Center Configuration Manager。 设置 MDM 机构后，便可以启用对设备平台的管理，并使用公司门户应用注册设备。
 
 ## <a name="enable-device-enrollment"></a>启用设备注册
@@ -43,7 +49,7 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 
 为要管理的设备平台启用设备注册。 根据你的平台，需要的要求不同：
 
--  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [Windows 电脑](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 移动版和 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,6 +72,6 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

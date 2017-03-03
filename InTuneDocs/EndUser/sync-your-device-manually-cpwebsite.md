@@ -1,28 +1,31 @@
 ---
-title: "使用公司门户网站手动同步设备 | Microsoft Intune"
+title: "将设备与公司门户网站同步 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 1dded693cb60bacb9c0a445bb26c818dde778a7a
 
 
 ---
 
 
-# <a name="use-the-company-portal-website-to-sync-your-device"></a>使用公司门户网站同步设备
+# <a name="sync-your-device-with-the-company-portal-website"></a>将设备与公司门户网站同步
 
 有时，安装应用或执行另一项任务可能会花费比正常情况下更多的时间。 如果花费时间太多，可尝试手动同步设备，以加快实现目标的速度。
 
@@ -36,6 +39,6 @@ ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

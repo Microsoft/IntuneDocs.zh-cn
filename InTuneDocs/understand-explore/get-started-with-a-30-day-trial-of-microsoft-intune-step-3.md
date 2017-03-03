@@ -1,5 +1,5 @@
 ---
-title: "创建用于组织用户和设备的组 | Microsoft Intune"
+title: "创建用于免费试用版中的组织用户和设备的组 | Microsoft Docs"
 description: "注册 Microsoft Intune 的免费 30 天评估时，如何创建设备组和用户组。"
 keywords: 
 author: lindavr
@@ -12,14 +12,18 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab451a1213923ecd27dfc0b8ca353041e70435ed
+ms.sourcegitcommit: 89e190e6a3e514c0f38b33409cde2abea0776885
+ms.openlocfilehash: 0cdf5bf8f9fad1f44dbb0ef11de71aea55949d89
 
 
 ---
 
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>创建用于组织评估订阅用户和设备的组
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组设置为适应组织需要（例如，按地理位置、部门或硬件特性）并将其广泛用于执行各种管理任务，上至为一组用户设置策略，下至将应用程序部署到一组设备。
 
 ## <a name="create-a-device-group"></a>创建设备组
@@ -61,6 +65,6 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

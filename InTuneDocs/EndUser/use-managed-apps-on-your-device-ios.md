@@ -1,5 +1,5 @@
 ---
-title: "在 iOS 设备上使用托管应用 | Microsoft Intune"
+title: "在 iOS 设备上使用托管应用 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
 
 
 ---

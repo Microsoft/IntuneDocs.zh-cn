@@ -1,30 +1,33 @@
 ---
-title: "从 Intune 取消注册 iOS 设备会发生什么情况？ | Microsoft Intune"
+title: "取消注册 iOS 或 macOS 设备会造成什么结果？ |Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: esmich, elocholi
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
-ms.openlocfilehash: a47d3fc5c3a2063e49e9f250e15eb8d6126bb903
+ms.sourcegitcommit: 9b2eba939bccf5b1296e21868fdf3af93297b42c
+ms.openlocfilehash: e8065b2964e8995a58a2aa3e6322fb235f0829af
 
 
 ---
 
 
-# 从 Intune 取消注册 iOS 设备会发生什么情况？
+# <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>从 Intune 取消注册 iOS 或 macOS 设备会发生什么情况？
 
-从 Intune 取消注册 iOS 设备时：
+当从 Intune 取消注册 iOS 或 macOS 设备时：
 
 -   设备将不再显示在公司门户中。
 
@@ -42,10 +45,10 @@ ms.openlocfilehash: a47d3fc5c3a2063e49e9f250e15eb8d6126bb903
 
 有关如何取消注册的说明，请参阅[从 Intune 取消注册设备](unenroll-your-device-from-intune-ios.md)。
 
-如有疑问，请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

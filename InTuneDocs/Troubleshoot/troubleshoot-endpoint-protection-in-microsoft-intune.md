@@ -1,11 +1,11 @@
 ---
-title: "Endpoint Protection 疑难解答 | Microsoft Intune"
+title: "Endpoint Protection 疑难解答 | Microsoft Docs"
 description: "解决使用 Microsoft Intune Endpoint Protection 时出现的问题。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,21 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
 
 # <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
-此章节的信息有助于解决使用 Microsoft Intune Endpoint Protection 时出现的问题。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+此章节的信息有助于解决使用 Microsoft Intune Endpoint Protection 时出现的问题。 还可以查看有关 [Windows Defender 疑难解答](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10)的信息。
 
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
-
 
 ### <a name="endpoint-protection-error-messages"></a>Endpoint Protection 错误消息
 本章节描述了在 [Intune 管理员控制台](https://manage.microsoft.com)的**Endpoint Protection 状态**窗格中显示的以下错误和警告的潜在原因和解决方案。
@@ -50,6 +52,6 @@ ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

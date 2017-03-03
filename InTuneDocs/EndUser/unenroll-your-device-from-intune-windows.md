@@ -1,5 +1,5 @@
 ---
-title: "从 Intune 取消注册 Windows 设备 | Microsoft Intune"
+title: "从 Intune 取消注册 Windows 设备 | Microsoft Docs"
 description: "介绍如何从 Intune 取消注册 Windows 设备"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7d06eabf07039b14a5d24617d94a968bc2e85f22
 
 
 ---
@@ -27,9 +31,9 @@ ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
 
 若要注册设备，请使用上述部分“文本内容”中所示的、与你当前所用设备类型相匹配的链接：
 
--   [取消注册 Windows 10 设备](#unenroll-your-windows-10-device)
--   [取消注册 Windows 8.1 计算机](#unenroll-your-windows-8-1-computer)
--   [取消注册 Windows Phone 8.1 设备](#unenroll-your-windows-phone-8-1-device)
+-    [取消注册 Windows 10 设备](#unenroll-your-windows-10-device)
+-    [取消注册 Windows 8.1 计算机](#unenroll-your-windows-8-1-computer)
+-    [取消注册 Windows Phone 8.1 设备](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>取消注册 Windows 10 设备
 
@@ -65,6 +69,6 @@ ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
 ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
@@ -57,22 +58,22 @@ ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 ## <a name="get-started"></a>入门
 
-1.  从[此处](https://components.xamarin.com/submit/xpkg)下载 **Xamarin component.exe** 并将其解压缩。
+1.    从[此处](https://components.xamarin.com/submit/xpkg)下载 **Xamarin component.exe** 并将其解压缩。
 
 2. 阅读 Microsoft Intune MAM Xamarin 组件的[许可条款](https://components.xamarin.com/license/microsoft.intune.mam)。
 
-3.  从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) 下载 Intune App SDK Xamarin 组件文件夹并从中提取。 在 步骤 1 和 2 中下载的这两个文件应处于相同的目录级别。
+3.    从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) 下载 Intune App SDK Xamarin 组件文件夹并从中提取。 在 步骤 1 和 2 中下载的这两个文件应处于相同的目录级别。
 
-4.  在命令行中以管理员身份运行 `Xamain.Component.exe install <.xam> file`。
+4.    在命令行中以管理员身份运行 `Xamain.Component.exe install <.xam> file`。
 
-5.  在 Visual Studio 中，右键单击以前创建的 Xamarin 项目中的**组件**。
+5.    在 Visual Studio 中，右键单击以前创建的 Xamarin 项目中的**组件**。
 
-6.  选择“编辑组件”并添加以本地方式下载到计算机上的 Intune App SDK 组件。
+6.    选择“编辑组件”并添加以本地方式下载到计算机上的 Intune App SDK 组件。
 
 
 
 ## <a name="enabling-intune-mam-in-your-ios-mobile-app"></a>在 iOS 移动应用中启用 Intune MAM
-1.  为了初始化 Intune App SDK，需要调用 `AppDelegate.cs` 类中的任意一个 API。 例如：
+1.    为了初始化 Intune App SDK，需要调用 `AppDelegate.cs` 类中的任意一个 API。 例如：
 
       ```csharp
       public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
@@ -83,7 +84,7 @@ ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
       ```
 
-2.  现在该组件已添加并初始化，便可以按照所需的常规步骤将 App SDK 内置到 iOS 移动应用中。 可在 [Intune App SDK for iOS 开发人员指南](intune-app-sdk-ios.md)中找到用于启用本机 iOS 应用的完整文档。
+2.    现在该组件已添加并初始化，便可以按照所需的常规步骤将 App SDK 内置到 iOS 移动应用中。 可在 [Intune App SDK for iOS 开发人员指南](intune-app-sdk-ios.md)中找到用于启用本机 iOS 应用的完整文档。
 3. **重要提示**：特定于基于 Xamarin 的 iOS 应用有几项修改。 例如，当启用密钥链组时，需要添加以下内容以包含组件中包括的 Xamarin 示例应用。 以下是“密钥链访问”组中需要的组的示例：
 
       ```xml
@@ -109,15 +110,15 @@ ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 对于 Xamarin 窗体和其他 UI 框架，我们提供了名为 `MAM.Remapper` 的工具。 该工具将为你完成类替换。 但是，你需要执行以下步骤：
 
-1.  将引用添加到 ` Microsoft.Intune.MAM.Remapper.Tasks` nuget 包版本 0.1.0.0 或更高版本。
+1.    将引用添加到 ` Microsoft.Intune.MAM.Remapper.Tasks` nuget 包版本 0.1.0.0 或更高版本。
 
-2.  将以下行添加到 Android csproj：
+2.    将以下行添加到 Android csproj：
   ```xml
   <Import
   Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
-3.  将所添加 `remapping-config.json` 文件的生成操作设置为 **RemappingConfigFile**。 所包含的 `remapping-config.json` 仅适用于 Xamarin.Forms。 对于其他 UI 框架，请参阅 Remapper nuget 包中所包含的自述文件。
+3.    将所添加 `remapping-config.json` 文件的生成操作设置为 **RemappingConfigFile**。 所包含的 `remapping-config.json` 仅适用于 Xamarin.Forms。 对于其他 UI 框架，请参阅 Remapper nuget 包中所包含的自述文件。
 
 ## <a name="test-your-app"></a>测试应用程序
 

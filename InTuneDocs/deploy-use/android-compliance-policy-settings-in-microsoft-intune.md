@@ -1,11 +1,11 @@
 ---
-title: "适用于 Android 设备的合规性策略设置 | Microsoft Intune"
+title: "适用于 Android 的合规性策略设置 | Microsoft Docs"
 description: "本主题介绍适用于 Android 设备的设备合规性策略设置。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 4ddc0839f05b2dd7cb1faf0a3e0901df67010f71
 
 
 ---
@@ -23,12 +24,15 @@ ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
 
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的合规性策略设置
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题中描述的策略设置适用于运行 Android 4.0 及更高版本或 Samsung KNOX 4.0 及更高版本的设备。
 
 如果要查找关于其他平台的信息，请选择以下选项之一：
 > [!div class="op_single_selector"]
 - [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [适用于 Windows 设备的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [适用于 Android for Work 设备的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>系统安全设置
 ### <a name="password"></a>Password
@@ -87,6 +91,6 @@ ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

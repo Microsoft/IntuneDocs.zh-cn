@@ -1,49 +1,52 @@
 ---
-title: "设置或更改密码 | Microsoft Intune"
-description: 
+title: "设置或更改密码 | Microsoft Docs"
+description: "设置或更改密码"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb508a92db99533502914f1b5dba69b956838d1e
+ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
+ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
 
 
 ---
 
-# 设置或更改密码
+# <a name="set-or-change-your-passcode"></a>设置或更改密码
 
 如果 iOS 设备与 IT 管理员的密码策略不符，则会出现一条消息，简要描述了该问题并说明了使你的密码符合要求所需执行的操作。
 
-IT 管理员可以设置多个密码要求。 例如，密码可能必须包含一定数量的字符，并且可能必须是数字和字母的组合，等等。由于可能会设置有多个要求，这些说明只能解释如何设置或更改密码。 而不对每种可能组合的要求进行解释。
+IT 管理员可以设置多个密码要求。 例如，密码可能必须包含一定数量的字符，并且可能需要混合使用数字、字母和字符。 由于可能会设置有多个要求，这些说明只能解释如何设置或更改密码。 而不对每种可能组合的要求进行解释。
 
-若在设置符合所有密码要求的密码时遇到问题，请联系 IT 管理员获得帮助。
+若在设置符合密码要求的密码时遇到问题，请联系 IT 管理员获得帮助。
 
-## 设置密码：
+## <a name="set-your-passcode"></a>设置密码
 
 1. 点击**设置**  >  **Touch ID 和密码**。
-2. 在 **Touch ID 和密码**菜单上，点击**启用密码**。
+2. 在“Touch ID 和密码”菜单上，点击“启用密码”。
 3. 输入符合 IT 管理员要求的新密码，然后再次输入以确认密码。
 
-## 更改密码：
+## <a name="change-your-passcode"></a>更改密码
 
 1. 点击**设置**  >  **Touch ID 和密码**。
 2. 输入密码： 此时将打开“Touch ID 和密码”菜单。
 2. 点击**更改密码**并输入旧密码。
 3. 输入符合 IT 管理员要求的新密码，然后再次输入以确认密码。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

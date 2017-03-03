@@ -1,11 +1,11 @@
 ---
-title: "Wi-Fi 连接 | Microsoft Intune"
+title: "Wi-Fi 连接 | Microsoft Docs"
 description: "使用 Wi-Fi 配置文件来帮助用户连接到 Wi-Fi 网络。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>配置设备以连接到公司 Wi-Fi 网络
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune Wi-Fi 配置文件将无线网络设置部署到组织中的用户和设备。 部署 Wi-Fi 配置文件时，你的用户有权访问你公司的 Wi-Fi，而无需自行配置。
 
@@ -41,15 +44,13 @@ ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 
 -   Android 4.0 及更高版本
 
--   Android for Work   
+-    Android for Work   
 
 -   iOS 8.0 及更高版本
 
 -   Mac OS X 10.9 及更高版本
 
 对于运行 Windows 8.1 或 Windows 10 桌面版或移动版操作系统的设备，可以导入之前导出到文件的 Wi-Fi 配置文件。 有关详细信息，请参阅[导出或导入 Wi-Fi 配置的配置文件（适用于 Windows 设备）](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices)。
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”。
 
@@ -158,7 +159,7 @@ ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 |**EAP 类型**|请选择用于验证安全无线连接的可扩展身份验证协议 (EAP) 类型：<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|如果选择“WPA-Enterprise/WPA2-Enterprise”安全类型。|
 |**请选择用于服务器验证的根证书**|选择“选择”，然后选择用于对连接进行身份验证的受信任根证书配置文件。 有关创建受信任的根证书配置文件的详细信息，请转到[使用证书配置文件保护资源访问的安全](secure-resource-access-with-certificate-profiles.md)。|如果选择任意“EAP 类型”。|
 |**身份验证方法**|请选择用于连接的身份验证方法：<br /><br />-   **证书**可指定客户端证书<br />-   **用户名和密码**可指定进行身份验证的不同方法|“EAP 类型”是 **PEAP** 或 **EAP-TTLS**。|
-|**选择一个用于身份验证的非 EAP 方法（内部识别）**|选择对连接进行身份验证的方法：<br /><br />-   **无**<br />-   **未加密的密码 (PAP)**<br />-   **质询握手身份验证协议 (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP 版本 2 (MS-CHAP v2)**<br /><br />可用的选项取决于所选择的 EAP 类型。| **“身份验证方法”** 是 **“用户名和密码”**。|
+|**选择一个用于身份验证的非 EAP 方法（内部识别）**|选择对连接进行身份验证的方法：<br /><br />-   **无**<br />-   **未加密的密码 (PAP)**<br />-   **质询握手身份验证协议 (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP 版本 2 (MS-CHAP v2)**<br /><br />可用的选项取决于所选择的 EAP 类型。|**“身份验证方法”** 是 **“用户名和密码”**。|
 |**启用标识隐私（外部识别）**|请指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证期间，首先会发送该匿名标识。 然后会在安全隧道中发送真实标识。|如果“EAP 类型”是“PEAP”或“EAP-TTLS”。|
 |**选择客户端证书用于客户端身份验证（身份证书）**|选择“选择”，然后选择用于对连接进行身份验证的 SCEP 证书配置文件。 有关创建 SCEP 根证书配置文件的详细信息，请转到[使用证书配置文件保护资源访问的安全](secure-resource-access-with-certificate-profiles.md)。|如果安全类型为“WPA-Enterprise/WPA2-Enterprise”，并选择了任意“EAP 类型”。|
 
@@ -181,6 +182,6 @@ ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

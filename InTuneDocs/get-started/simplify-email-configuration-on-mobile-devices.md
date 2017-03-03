@@ -1,26 +1,30 @@
 ---
-title: "简化移动设备上的电子邮件配置 | Microsoft Intune"
+title: "简化移动设备上的电子邮件配置 | Microsoft Docs"
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 12/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: a2ddf2b972f90aea6ac0e47372bd4f0b4de5cf19
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
 
 
 ---
 
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>快速入门指南：简化移动设备上的电子邮件配置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 通过允许你将电子邮件（以及 VPN 和 WiFi）配置文件部署到 Intune 服务管理的 Windows、iOS 和 Android 移动设备，Microsoft Intune 可节省你的公司时间和资源。 自动配置电子邮件配置文件可以极大地改善最终用户体验及提高满意程度，同时减少支持人员成本。
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>此快速入门指南适合我吗？
@@ -31,8 +35,8 @@ ms.openlocfilehash: a2ddf2b972f90aea6ac0e47372bd4f0b4de5cf19
 配置电子邮件配置文件后，可以通过 Intune 条件访问策略轻松地限制对公司电子邮件和 Office 365 服务的访问。 这些策略使你能确保将对公司电子邮件和 Office 365 服务的访问限制在符合你在 Intune 中设置的规则的设备。
 
 ## <a name="how-do-i-do-it"></a>如何操作？
-1.  在 Windows、iOS 和 Android 设备上自动[配置最终用户的电子邮件配置文件](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
-2.  使用条件访问策略[控制对公司电子邮件的访问](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
+1.    在 Windows、iOS 和 Android 设备上自动[配置最终用户的电子邮件配置文件](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
+2.    使用条件访问策略[控制对公司电子邮件的访问](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
 
 ### <a name="additional-information"></a>其他信息:
@@ -47,6 +51,6 @@ ms.openlocfilehash: a2ddf2b972f90aea6ac0e47372bd4f0b4de5cf19
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

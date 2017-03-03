@@ -1,5 +1,5 @@
 ---
-title: "设置 iOS 和 Mac 管理 | Microsoft Intune"
+title: "设置 iOS 和 Mac 管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 为 iOS 设备（包括 iPad 和 iPhone）以及 Mac OS X 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: staciebarker
@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 641d2db2bfb49ce6c4f88d823188a714e61f683c
+ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
+ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
 
 
 ---
 
 # <a name="set-up-ios-and-mac-device-management"></a>设置 iOS 和 Mac 设备管理
-Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，并允许用户访问公司电子邮件和应用。 必须拥有 Apple 推送通知服务 (APNs) 证书，才能使用 Intune 管理 iOS 和 Mac 设备。 在将证书添加到 Intune 后，用户就可以安装公司门户应用来注册其设备，或者管理员可以设置[企业自有的 iOS 设备管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Intune 启用了 iPad、iPhone 和 macOS 设备的移动设备管理 (MDM)，并允许用户访问公司电子邮件和应用。 必须拥有 Apple 推送通知服务 (APNs) 证书，才能使用 Intune 管理 iOS 和 Mac 设备。 在将证书添加到 Intune 后，用户就可以安装公司门户应用来注册其设备，或者管理员可以设置[企业自有的 iOS 设备管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)。
 
 1.  **设置 Intune**<br>
     如果你尚未设置，请通过[将移动设备管理机构设置](prerequisites-for-enrollment.md#step-2-set-mdm-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
@@ -44,11 +48,11 @@ Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，
 
 5.  **告诉用户如何注册其设备以获取对公司资源的访问权限。**
 
-    有关最终用户注册说明，请参阅[在 Intune 中注册 iOS 设备](../enduser/enroll-your-device-in-intune-ios.md)和[在 Intune 中注册 Mac OS X 设备](../enduser/enroll-your-device-in-intune-macos.md)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
+    有关最终用户注册说明，请参阅[在 Intune 中注册 iOS 设备](../enduser/enroll-your-device-in-intune-ios.md)和[在 Intune 中注册 macOS 设备](../enduser/enroll-your-device-in-intune-macos.md)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
 
     有关其他最终用户任务的信息，请参阅以下文章：
-    - [有关 Microsoft Intune 最终用户体验的资源](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-    - [适用于 iOS 和 Mac 设备的最终用户指南](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
+    - [有关 Microsoft Intune 最终用户体验的资源](how-to-educate-your-end-users-about-microsoft-intune.md)
+    - [适用于 iOS 和 Mac 设备的最终用户指南](../enduser/using-your-ios-or-macOS-device-with-intune.md)
 
 如果公司或组织为用户购买了 iOS 设备，也可以将这些设备注册为[公司拥有的 iOS 设备](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)，以便进行管理。
 
@@ -57,6 +61,6 @@ Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

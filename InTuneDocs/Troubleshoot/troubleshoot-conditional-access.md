@@ -1,5 +1,5 @@
 ---
-title: "条件访问疑难解答 | Microsoft Intune"
+title: "条件访问疑难解答 | Microsoft Docs"
 description: "用户无法通过 Intune 条件访问对资源进行访问时可执行的操作。"
 keywords: 
 author: andredm7
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
-ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 
 ---
 
 # <a name="troubleshoot-conditional-access"></a>条件访问疑难解答
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 通常情况下，用户在尝试访问电子邮件或 SharePoint 时会收到注册提示。 该提示会使用户转到公司门户。
 
@@ -31,11 +34,11 @@ ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 为使条件访问起作用，需满足以下条件：
 
--   必须由 Intune 管理设备。
--   设备必须注册 Azure Active Directory (AAD)。 正常情况下，此注册在 Intune 注册时自动进行
--   设备必须符合设备或设备用户的 Intune 合规性策略。  如果不存在合规性策略，则 Intune 注册可充分进行。
--   如果用户通过设备的本机邮件客户端而不是通过 Outlook 检索邮件，则必须在设备上激活 Exchange ActiveSync。     此操作在 iOS、Windows Phone 和 Android/KNOX 标准设备上自动进行。
--   Intune Exchange Connector 应正确配置。 有关详细信息，请参阅 [Microsoft Intune 中的 Exchange Connector 疑难解答](troubleshoot-exchange-connector.md)。
+-    必须由 Intune 管理设备。
+-    设备必须注册 Azure Active Directory (AAD)。 正常情况下，此注册在 Intune 注册时自动进行
+-    设备必须符合设备或设备用户的 Intune 合规性策略。  如果不存在合规性策略，则 Intune 注册可充分进行。
+-    如果用户通过设备的本机邮件客户端而不是通过 Outlook 检索邮件，则必须在设备上激活 Exchange ActiveSync。     此操作在 iOS、Windows Phone 和 Android/KNOX 标准设备上自动进行。
+-    Intune Exchange Connector 应正确配置。 有关详细信息，请参阅 [Microsoft Intune 中的 Exchange Connector 疑难解答](troubleshoot-exchange-connector.md)。
 
 可在 Azure 管理门户和设备清单报告中针对各个设备查看这些条件。
 
@@ -47,16 +50,16 @@ ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 ## <a name="compliance-issues"></a>合规性问题
 
  -  设备不符合 Intune 策略。 常见的问题是加密和密码要求。 用户将被重定向到公司门户中，他们可在其中配置设备以符合要求。
- -  为设备注册符合性信息需要一点时间。 请稍等几分钟，然后重试。
+ -  为设备注册合规性信息需要一点时间。 请稍等几分钟，然后重试。
  -  对于 iOS 设备：
      -   用户创建的现有电子邮件配置文件将阻止由 Intune 管理员创建的配置文件的部署。 这是一个常见问题，因为 iOS 用户通常将创建电子邮件配置文件，然后注册。 公司门户将通知用户由于其手动配置的电子邮件配置文件而导致他们不符合要求，并提示用户删除该配置文件。用户应删除其电子邮件配置文件，以便可以部署 Intune 配置文件。 为防止此问题，请告知用户注册时不要安装电子邮件配置文件，并允许 Intune 部署配置文件。
-     -   iOS 设备可能在检查合规性状态过程中受阻，进而阻止用户初始化其他签入。 重启公司门户可能可以修复此问题，且合规性状态将反映 Intune 中的设备状态。 通过设备同步收集所有的数据后，合规性检查将快速进行，平均速度不超过半秒。
+     -     iOS 设备可能在检查合规性状态过程中受阻，进而阻止用户初始化其他签入。 重启公司门户可能可以修复此问题，且合规性状态将反映 Intune 中的设备状态。 通过设备同步收集所有的数据后，合规性检查将快速进行，平均速度不超过半秒。
 
         通常，设备保持此状态的原因是其在连接到服务时出现问题或同步花费的时间较长。  如果经过设备重启并已验证 SSP 在设备上为最新后，此问题继续存在于不同网络配置（移动电话网络、Wi-Fi、VPN）中，则请按照[如何获取 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中的说明与Microsoft 支持取得联系。
 
 ## <a name="policy-issues"></a>策略问题
 
-创建符合性策略并将其链接到电子邮件策略时，必须将这两个策略部署到同一用户，因此在规划将哪些策略部署到哪些组时需谨慎。 只应用了一个策略的用户很可能发现他们的设备不合规。
+创建合规性策略并将其链接到电子邮件策略时，必须将这两个策略部署到同一用户，因此在规划将哪些策略部署到哪些组时需谨慎。 只应用了一个策略的用户很可能发现他们的设备不合规。
 
 
 ## <a name="exchange-activesync-issues"></a>Exchange ActiveSync 问题
@@ -123,7 +126,7 @@ ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--   通过搜索“**快速同步**”定位日志中的快速（增量）同步。
+-    通过搜索“**快速同步**”定位日志中的快速（增量）同步。
 
 ##### <a name="exceptions-in-get-next-command"></a>获取下一条命令中的异常
 查看针对“**获取下一条命令**”中的异常的 Exchange Connector 日志，并将其提供给 Microsoft 支持。
@@ -132,9 +135,9 @@ ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 若要启用详细日志记录：
 
-1.  打开 Exchange Connector 跟踪配置文件。 该文件位于：%ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml。
-2.  通过以下密钥查找 TraceSourceLine：OnPremisesExchangeConnectorService
-3.  如下所示，将“**SourceLevel**”节点值从 **Warning ActivityTracing**（默认值）更改为 **Verbose ActivityTracing**。
+1.    打开 Exchange Connector 跟踪配置文件。 该文件位于：%ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml。
+2.    通过以下密钥查找 TraceSourceLine：OnPremisesExchangeConnectorService
+3.    如下所示，将“**SourceLevel**”节点值从 **Warning ActivityTracing**（默认值）更改为 **Verbose ActivityTracing**。
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -159,6 +162,6 @@ ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

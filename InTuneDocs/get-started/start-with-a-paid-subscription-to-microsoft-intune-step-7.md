@@ -1,11 +1,11 @@
 ---
-title: "自定义公司门户 | Microsoft Intune"
+title: "自定义公司门户 | Microsoft Docs"
 description: "Intune 公司门户允许用户执行常见任务，如注册设备、安装应用和查找 IT 部门信息。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,25 @@ ms.technology:
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
 
 
 ---
 
 # <a name="customize-the-company-portal"></a>自定义公司门户
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主题指导管理员如何自定义 Intune 公司门户应用和公司门户网站。
+
 在 Intune 公司门户中，用户可以访问公司数据和执行常见任务，比如注册设备、安装应用，以及查找信息以从 IT 部门获得帮助。
 
 Intune 公司门户向用户提供对公司数据和应用的访问权限。 公司门户有两种形式：
 
--   **公司门户应用**：在使用 Intune.管理的设备上可用的一个应用程序。 深入了解适用于 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) 和 [Windows](/Intune/EndUser/using-your-windows-device-with-intune)的公司门户应用。
+-   **公司门户应用**：在使用 Intune.管理的设备上可用的一个应用程序。 深入了解适用于 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) 和 [Windows](/Intune/EndUser/using-your-windows-device-with-intune)的公司门户应用。
 
 
 - **公司门户网站**：一个可让最终用户通过公司门户应用完成大部分可执行任务的网站。 Intune 公司门户 URL 为 [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com)。 有关此网站的详细信息，请参阅[使用 Intune 公司门户网站](/Intune/EndUser/using-the-intune-company-portal-website)。
@@ -42,11 +48,6 @@ Intune 公司门户向用户提供对公司数据和应用的访问权限。 公
 -   远程锁定设备
 -   下载组织部署的软件
 -   联系 IT 部门以获得支持
-
-> [!NOTE]
-> 公司门户应用在某些国家/地区尚不可用。
-> __iOS__：适用于 iOS 的公司门户应用会发布在 Apple iOS 应用商店的[所有可用区域](https://go.microsoft.com/fwlink/?linkid=831284)中。
-> __Android__：适用于 Android 的公司门户应用当前未在中国提供。 对于这些国家/地区，[旁加载 Android 版本的公司门户应用](https://www.microsoft.com/en-us/download/details.aspx?id=49140)是一种替代解决方案。  
 
 ## <a name="customize-company-portal-settings"></a>自定义公司门户设置
 自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 以租户或服务管理员的身份登录到 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，选择“管理员”&gt;“公司门户”，然后配置公司门户设置。
@@ -91,6 +92,6 @@ Intune 公司门户向用户提供对公司数据和应用的访问权限。 公
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

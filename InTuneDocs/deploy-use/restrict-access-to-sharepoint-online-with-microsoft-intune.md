@@ -1,11 +1,11 @@
 ---
-title: "限制对 SharePoint Online 的访问 | Microsoft Intune"
+title: "保护 SharePoint Online | Microsoft Docs"
 description: "使用条件访问保护和控制对 SharePoint Online 上公司数据的访问。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 限制对 SharePoint Online 的访问
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 保护对 SharePoint Online 的访问
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 条件性访问控制对位于 SharePoint Online 上的文件的访问。
 条件性访问有两个组件：
 - 设备合规性策略，设备必须符合才能被视为合规。
 - 条件性访问策略，可指定设备必须满足才能访问服务的条件。
-若要深入了解条件访问如何工作，请阅读[限制对电子邮件、O365 服务和其它服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)主题。
+若要深入了解条件访问的工作原理，请参阅主题[保护对电子邮件、O365 服务和其他服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
 
 将合规性和条件性访问策略部署到用户。 检查用户用于访问服务的设备是否符合策略。
 
@@ -45,7 +49,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 -   在 Azure Active Directory 中进行**注册**（向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册时会自动发生此情况）。
 
 
--   **符合**任何已部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 符合性策略。
+-   **符合**任何已部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
 
 根据指定的条件，设备状态存储在可授予或阻止对文件的访问权限的 Azure Active Directory 中。
 
@@ -66,7 +70,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 或更高版本
 - Windows Phone 8.1 及更高版本
 
-当通过 **iOS** 和 ** Android** 设备上的浏览器进行访问时，可限制对 SharePoint Online 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
+通过 **iOS** 和 ** Android** 设备上的浏览器进行访问时，可保护对 SharePoint Online 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser（iOS 和 Android 5.0 及更高版本）
@@ -140,7 +144,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
         这要求用于访问 **SharePoint Online** 的设备已在 Intune 中注册且符合相应的策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果 Intune 当前不支持该平台，则会阻止对 **SharePoint Online** 的访问。
 
         选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需为已注册并合规，以下各项除外：
-        *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
+        *    Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
         * 不受支持的平台，如 Mac。 但是，仍将阻止使用来自这些平台的新式验证的应用。
 
     -   **特定平台**
@@ -150,8 +154,6 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
      对于 Windows 电脑，电脑必须已加入域，或是已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册并且合规。 可以设置以下要求：
 
      -   **设备必须已加入域或必须是合规的。** 选择此选项要求电脑必须已加入域或符合在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中设置的策略。 如果电脑不满足任一要求，则系统会提示用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备。
-
-     -   **设备必须已加入域。** 选择此选项要求电脑必须已加入域，才能访问 Exchange Online。 如果电脑未加入域，则系统会阻止对电子邮件的访问，并且提示用户与 IT 管理员联系。
 
      -   **设备必须是合规的。** 选择此选项要求电脑必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中注册并且必须合规。 如果电脑未注册，则会显示一条消息，其中包含有关如何注册的说明。
 
@@ -180,7 +182,7 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 
 不需要部署条件访问策略—它会立即生效。
 
-### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>步骤 4：监视符合性和条件访问策略
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>步骤 4：监视合规性和条件访问策略
 在“组”工作区中，可以查看设备的状态。
 
 选择任一移动设备组。 然后在“设备” 选项卡上，选择以下“筛选器”之一：
@@ -192,10 +194,10 @@ ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
 -   **已向 AAD 注册并合规的设备**。 这些设备可访问 SharePoint Online。
 
 ### <a name="see-also"></a>另请参阅
-[使用 Microsoft Intune 限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[使用 Microsoft Intune 保护对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

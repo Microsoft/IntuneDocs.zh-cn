@@ -1,50 +1,49 @@
 ---
-title: "从公司门户中删除设备 | Microsoft Intune"
-description: 
+title: "从公司门户中删除设备 | Microsoft Docs"
+description: "从公司门户中删除设备"
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
+ms.sourcegitcommit: b47b5159a5de5180859a9d3d9edc500b0853448c
+ms.openlocfilehash: dfcc383f88d82ff1a12d917905ca25740f2e9ac0
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
+# <a name="remove-your-device-from-the-company-portal"></a>从公司门户中删除设备
 
-# 从公司门户中删除设备
-
-如果决定不再需要 Intune 和 IT 管理员托管你的设备，则可以使用[公司门户网站](http://portal.manage.microsoft.com)将其从公司门户中删除。 公司门户网站是一个网页，可以用于管理计算机和在 Intune 中注册的设备，还可以在使用公司门户应用时用它来处理你可以执行的大多数相同任务。
-
-如果删除设备，则不会再将其列入公司门户，并且你可能也无法访问公司或学校数据、应用和电子邮件。
+如果决定不再需要公司或组织托管你的设备，则可以使用[公司门户网站](http://portal.manage.microsoft.com)将其从公司门户中删除。 公司门户网站是一个网页，可用于管理已向 IT 部门管理注册的计算机和设备。 如果删除设备，则不会再将其列入公司门户，并且你可能也无法访问公司或学校数据、应用和电子邮件。
 
 删除设备：
 
-1.  打开[公司门户网站](http://portal.manage.microsoft.com)，然后点击要更改其名称的设备。
+1.    在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
-2.  点击**删除**。
+  ![公司门户网站的图像，屏幕左侧有展开的侧菜单，其中包括“主页”、“所有应用”、“我的设备”、“支持人员”和“注销”按钮。](/media/iwp-expanded-sidebar.png)
 
-    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+2. 在“我的设备”页上，选择想要删除的设备名称。
 
-3. 阅读警告消息，指示如果删除你的设备然后点击“**删除**”以从公司门户中删除设备会出现什么情况。
+    ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
 
-你的设备现在已删除。
+3.    设备将在弹出窗口中打开。 点击“删除”按钮。
 
-仍需要帮助？ 请与你的 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+      ![公司门户网站上已选设备的所有选项，包括重命名、删除、重置设备、重置密码和远程锁定。 ](./media/iwp-screen-with-all-options.png)
 
+4. 阅读警告消息，然后点击“删除”以从公司门户中删除设备。
 
-
-
-
-<!--HONumber=Sep16_HO3-->
-
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 

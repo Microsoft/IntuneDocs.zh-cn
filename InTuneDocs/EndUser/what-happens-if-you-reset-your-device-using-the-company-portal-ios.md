@@ -1,22 +1,25 @@
 ---
-title: "使用公司门户重置你的 iOS 设备会发生什么情况？ | Microsoft Intune"
+title: "重置 iOS 设备会造成什么结果？ |Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 1ec1c17d7ae18c227427fdd708b9fe76a0f552be
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 0306dea937b2b58bce06032d5f5bbe1e744902b8
 
 
 ---
@@ -42,8 +45,6 @@ ms.openlocfilehash: 1ec1c17d7ae18c227427fdd708b9fe76a0f552be
 
 
 
-
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "请求并提供 Windows 电脑的远程协助 | Microsoft Intune"
-description: "向最终用户和 IT 管理员介绍提供 Windows 电脑远程协助以及远程启动电脑的步骤。"
+title: "请求并提供 Windows 电脑的远程协助 | Microsoft Docs"
+description: "向最终用户和 IT 管理员介绍为作为电脑管理的 Windows 桌面提供远程协助，以及远程启动电脑的步骤。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab954204fffa6ad67a4a0d0f5e2e521c795eae31
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>请求并提供 Windows 电脑的远程协助
 
-Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买）使运行 Intune 软件客户端的用户获得远程协助。 当用户从 Microsoft Intune Center 请求帮助时，你会收到警报通知，可接受请求并提供帮助。 此功能将替换 Intune 中现有的 Windows 远程协助功能。
+本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。
+
+Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买）使运行 Intune 软件客户端的用户获得远程协助。 当用户从 Microsoft Intune Center 请求帮助时，你会收到警报通知，可接受请求并提供帮助。 此功能将替换 Intune 中现有的 Windows 远程协助功能。
 
 
 ## <a name="before-you-start"></a>开始之前
@@ -30,7 +33,7 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 开始建立并响应远程协助请求之前，请先确保以下先决条件已就绪：
 
 - 必须[注册 TeamViewer 帐户](https://login.teamviewer.com/LogOn#register)，以登录到 TeamViewer 网站。
-- 想要管理的 Windows 电脑必须[由 Windows 电脑客户端管理](manage-windows-pcs-with-microsoft-intune.md)
+- 想要管理的 Windows 电脑必须[由 Windows 软件客户端管理](manage-windows-pcs-with-microsoft-intune.md)
 - 可管理所有 Intune 支持的 Windows 电脑操作系统。
 
 ## <a name="configure-the-teamviewer-connector"></a>配置 TeamViewer 连接器
@@ -59,7 +62,7 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 
 <br>如果请求超过 4 小时未获得应答，则会被删除。
 2. 若要接受请求，请选择**批准请求并启动远程协助**。
-3. 在**新的远程协助请求正等待处理**对话框中，选择**接受远程协助请求**。 如尚未安装，TeamViewer 将会在计算机上安装任何必要的应用。
+3. 在**新的远程协助请求正等待处理**对话框中，选择**接受远程协助请求**。 如尚未安装，TeamViewer 将在电脑上安装任何必要的应用。
 4. 然后 TeamViewer 会通知最终用户你想控制其电脑。 用户接受该请求后，TeamViewer 窗口将打开，然后就可控制其电脑。
 
 在远程协助会话中，你可使用所有可用的 TeamViewer 命令来控制远程电脑。 有关这些命令的帮助，请从 TeamViewer 网站下载[远程控制指南](http://www.teamviewer.com/en/support/documents/)。
@@ -71,9 +74,9 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 ## <a name="remotely-restart-a-windows-pc"></a>远程重启 Windows 电脑
 帮助用户解决问题时，可能需要不时远程重启其电脑。 请按照以下步骤远程重启 Windows 电脑。
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**组**&gt;**所有设备**（或包含需重新启动的计算机的另一个组）。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含要重启的电脑的另一个组）。
 
-2.  选择一台或多台计算机，然后选择**远程任务**&gt;**重新启动计算机**。
+2.  选择一台或多台电脑，然后选择“远程任务”&gt;“重启计算机”。
 
 3.  若要查看任务状态，请选择页面右下角的“远程任务”。
 
@@ -84,6 +87,6 @@ Microsoft Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单
 [使用 Intune 软件客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "配置 SCEP 证书基础结构 |Microsoft Intune"
+title: "配置 SCEP 证书基础结构 |Microsoft Docs"
 description: "用于创建和部署 SCEP 证书配置文件的基础结构。"
 keywords: 
 author: robstackmsft
@@ -13,12 +13,16 @@ ms.technology:
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>配置 SCEP 证书基础结构
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题介绍创建和部署 SCEP 证书配置文件需要具备的基础结构。
 
 ### <a name="on-premises-infrastructure"></a>本地基础结构
@@ -93,7 +97,7 @@ I
 
 ##### <a name="to-configure-the-certification-authority"></a>配置证书颁发机构
 
-1.  以企业管理员身份登录。 
+1.  以企业管理员身份登录。
 
 2.  在发证 CA 上，使用证书模板管理单元创建新的自定义模板，或复制现有模板然后编辑现有模板（与用户模板相似）以与 NDES 配合使用。
 
@@ -109,7 +113,7 @@ I
         > 对于 iOS 和 Mac OS X 证书模板，在“扩展”选项卡上编辑“密钥用法”并确保未选择“数字签名为原件的证明”。
 
     -   在“安全性”选项卡上，添加 NDES 服务帐户，并授予它“注册”模板的权限。 将创建 SCEP 配置文件的 Intune 管理员需要**读取**权限，以便在创建 SCEP 配置文件时可以浏览到该模板。
-    
+
     > [!NOTE]
     > 若要吊销证书，NDES 服务帐户需要针对证书配置文件所用的每个证书模板具有“颁发和管理证书”权限。
 
@@ -120,19 +124,19 @@ I
 
 以下是一个示例模板配置的屏幕截图。
 
-![模板，“请求处理”选项卡](..\media\scep_ndes_request_handling.png) 
+![模板，“请求处理”选项卡](..\media\scep_ndes_request_handling.png)
 
-![模板，“使用者名称”选项卡](..\media\scep_ndes_subject_name.jpg) 
+![模板，“使用者名称”选项卡](..\media\scep_ndes_subject_name.jpg)
 
-![模板，“安全”选项卡](..\media\scep_ndes_security.jpg) 
+![模板，“安全”选项卡](..\media\scep_ndes_security.jpg)
 
-![模板，“扩展”选项卡](..\media\scep_ndes_extensions.jpg) 
+![模板，“扩展”选项卡](..\media\scep_ndes_extensions.jpg)
 
-![模板，“颁发要求”选项卡](..\media\scep_ndes_issuance_reqs.jpg) 
+![模板，“颁发要求”选项卡](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > 对于应用程序策略（在第 4 个屏幕截图中），只添加所需的应用程序策略即可。 与你的安全管理员确认你的选择。
-   
+
 
 
 若要配置 CA 以允许请求者指定有效期，请在 CA 上运行以下命令：
@@ -239,12 +243,12 @@ I
 
 4. 在 IIS 管理器中，选择**默认网站** -> **请求筛选** -> **编辑功能设置**，并将**最大 URL 长度**和**最大查询字符串**更改为 *65534*，如上所示。
 
-    ![IIS 的最大 URL 长度和最大查询长度](..\media\SCEP_IIS_max_URL.png) 
+    ![IIS 的最大 URL 长度和最大查询长度](..\media\SCEP_IIS_max_URL.png)
 
 5.  重新启动服务器。 在服务器上运行 **iisreset** 将不足以完成这些更改。
 6. 浏览到 http://*FQDN*/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
 
-    ![测试 NDES](..\media\SCEP_NDES_URL.png) 
+    ![测试 NDES](..\media\SCEP_NDES_URL.png)
 
     如果你收到 **503 服务不可用**的信息，请查看事件查看器。 可能是因 NDES 用户缺少权限导致应用程序池停止。 任务 1 中描述了这些权限。
 
@@ -350,6 +354,6 @@ I
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

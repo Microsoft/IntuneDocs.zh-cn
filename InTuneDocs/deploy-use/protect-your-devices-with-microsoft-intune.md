@@ -1,11 +1,11 @@
 ---
-title: "保护设备 | Microsoft Intune"
+title: "使用 Microsoft Intune 保护设备| Microsoft Docs"
 description: "了解有关 Intune 可帮助你保护你的设备免受未授权访问和其他威胁的一些方法。"
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 235db7eb1036bfccd074fd83b4b59e75529a5e34
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
 
 # <a name="protect-devices-with-microsoft-intune"></a>使用 Microsoft Intune 保护设备
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 提供一系列完整的功能，帮助保护你所管理的设备，以及存储在这些设备上的数据。 阅读本主题，了解这些功能的基础知识以及了解详细信息的方式。
 
@@ -43,10 +47,10 @@ Intune 功能[设备合规策略](introduction-to-device-compliance-policies-in-
 ### <a name="protect-apps-and-the-data-they-use"></a>保护他们使用的应用和数据
 Intune 为你提供了一系列功能，帮助保护应用及其数据。 例如，移动应用管理 (MAM) 策略可以阻止数据从受保护的应用进行备份、限制复制并向其他应用粘贴，以及在访问应用时要求提供 PIN 等。 有关保护应用的详细信息，请参阅[使用 Microsoft Intune 保护应用和数据](protect-apps-and-data-with-microsoft-intune.md)
 
-## <a name="further-capabilities-for-windows-devices"></a>适用于 Windows 设备的更多功能
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>向设备添加额外的保护层
+[多重身份验证 (MFA)](multi-factor-authentication-azure-active-directory.md) 是验证网络中设备的用户身份的更安全方式。  使用 MFA 时，除用户名和密码外，用户还需要通过电话呼叫或短信确认其身份。
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>向 Windows 设备添加额外的保护层
-[多重身份验证 (MFA)](protect-windows-devices-with-multi-factor-authentication.md) 是验证网络中 Windows 和 Windows Phone 设备用户身份更安全的方式。  使用 MFA 时，除用户名和密码外，用户还需要通过电话呼叫或短信确认其身份。
+## <a name="further-capabilities-for-windows-devices"></a>适用于 Windows 设备的更多功能
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>控制 Windows 设备上的 Windows Hello 企业版设置
 Intune 允许集成 [Windows Hello 企业版](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)（以前称为 Microsoft Passport），这是一种适用于 Windows 10 及更高版本的替代登录方法，它使用 Active Directory 或 Azure Active Directory 帐户来取代密码、智能卡或虚拟智能卡。
@@ -60,9 +64,4 @@ Intune 允许集成 [Windows Hello 企业版](control-microsoft-passport-setting
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>保护通过 Intune 客户端管理的 Windows 电脑
 Intune 继续支持适用于未注册但通过 Intune 计算机客户端软件管理的 Windows 电脑的安全性策略。 若要了解这些策略如何帮助你保护 Windows 电脑，请参阅[使用策略来帮助保护运行 Intune 客户端软件的 Windows 电脑](policies-to-protect-windows-pcs-in-microsoft-intune.md)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "使用策略简化 Windows 电脑管理 | Microsoft Intune"
+title: "使用策略简化 Windows 电脑管理 | Microsoft Docs"
 description: "介绍 Windows PC 管理策略以及 Microsoft Intune Center 的设置。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>使用策略简化 Windows 电脑管理
 
-可以使用 Intune 的**计算机管理**策略来管理运行 Intune 软件客户端的 Windows 电脑。 使用 Intune 的**计算机管理**策略在 Microsoft Intune Center 中配置设置，控制电脑的更新，以及为电脑配置 Windows 防火墙。
+若要通过在 Windows 桌面上运行 Intune 软件客户端将桌面作为电脑管理，可只在 Intune 管理控制台中使用“计算机管理”下的策略。 管理控制台中列出所有其他策略都仅适用于移动设备。 使用**计算机管理**策略，可在 Microsoft Intune Center 中配置设置、控制对电脑的更新，以及为电脑配置 Windows 防火墙。
 
 ![用于 Windows 电脑的策略模板](../media/pc_policy_template.png)
 
@@ -63,6 +64,6 @@ Microsoft Intune Center 安装在所有被管理的计算机上。 可以在 Int
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

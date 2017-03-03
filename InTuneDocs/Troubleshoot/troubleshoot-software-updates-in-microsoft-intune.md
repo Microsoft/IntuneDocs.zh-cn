@@ -1,10 +1,11 @@
 ---
-title: "软件更新疑难解答 | Microsoft Intune"
+title: "软件更新疑难解答 | Microsoft Docs"
 description: "解决 Microsoft Intune 中的软件更新问题。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +13,23 @@ ms.technology:
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 906371576609152aaf61e033da5ce60744ddd255
-ms.openlocfilehash: 07e5737b75870319445f5af4d7038916b155d083
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
 
 
 ---
 
-# 排查 Microsoft Intune 中的软件更新问题
+# <a name="troubleshoot-software-updates-in-microsoft-intune"></a>排查 Microsoft Intune 中的软件更新问题
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本节中的信息有助于解决 Microsoft Intune 中的软件更新问题。
 
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
-## 更新代理错误代码
+## <a name="update-agent-error-codes"></a>更新代理错误代码
 
 下表列出了 Intune **更新代理**错误代码。 如果无法在此表中找到特定错误代码，请参阅 [Windows Update Agent Result Codes（Windows 更新代理结果代码）](http://go.microsoft.com/fwlink/?LinkID=221542)。
 
@@ -240,7 +245,7 @@ ms.openlocfilehash: 07e5737b75870319445f5af4d7038916b155d083
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|安装失败，因为存在待定的强制重新启动。|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|已经取消了下载。|
 
-## 基于 Windows 7 且具有很多被取代更新的计算机停止向 Microsoft Intune 控制台进行报告
+## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>基于 Windows 7 且具有很多被取代更新的计算机停止向 Microsoft Intune 控制台进行报告
 **问题**你可能会遇到 Microsoft Intune 客户端出现以下一种或多种表现的情况：
 - 它们突然停止向 Microsoft 管理控制台进行报告。  
 - 它们出现高 CPU 使用率。
@@ -259,11 +264,11 @@ ms.openlocfilehash: 07e5737b75870319445f5af4d7038916b155d083
 
 此外，如果你正在运行 Windows 7，请确保已安装以下更新：[3050265 Windows 更新客户端（用于 Windows 7）：2015 年 6 月](https://support.microsoft.com/kb/3050265)。
 
-### 后续步骤
+### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

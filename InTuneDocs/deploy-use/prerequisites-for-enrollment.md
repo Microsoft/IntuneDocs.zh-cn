@@ -1,11 +1,11 @@
 ---
-title: "移动设备注册的先决条件 | Microsoft Intune"
+title: "移动设备注册的先决条件 | Microsoft Docs"
 description: "设置移动设备管理 (MDM) 先决条件并准备好注册不同的操作系统。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune 中移动设备管理的先决条件
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 要使员工能在 Intune 中注册移动设备，需要执行以下步骤。 管理公司拥有的设备需要同样的步骤。
 
 |步骤|详细信息|  
@@ -47,8 +52,7 @@ ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。 如果将 Configuration Manager 设置为管理机构，则没有其他服务可以用于移动设备管理。
 
 >[!IMPORTANT]
-> 请仔细考虑是希望仅使用 Intune（联机服务），还是使用带 Intune 的 System Center Configuration Manager（与联机服务相结合的本地软件解决方案）来管理移动设备。 设置移动设备管理机构之后，无法进行更改。
-
+> 请仔细考虑是希望仅使用 Intune（联机服务），还是使用带 Intune 的 System Center Configuration Manager（与联机服务相结合的本地软件解决方案）来管理移动设备。 设置移动设备管理机构后，如果没有 Microsoft 支持部门的帮助，将无法对其进行更改。 有关说明，请参阅[如果选择了错误的 MDM 机构设置怎么办](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
 
 
 1.  在“[Microsoft Intune 管理控制台](http://manage.microsoft.com)”中，选择“**管理员**”&gt;“**移动设备管理**”。
@@ -147,8 +151,63 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 - [添加应用](add-apps.md)和[部署应用](deploy-apps.md)到托管设备
 - [创建设备合规性策略](introduction-to-device-compliance-policies-in-microsoft-intune.md)和[基于合规性限制访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
+## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>如果选择了错误的 MDM 机构设置怎么办
 
+如果确定选择了错误的 MDM 机构设置并需要对其进行更改，则必须与 Microsoft 支持部门联系。 无法自行更改该设置。 联系 Microsoft 支持部门之前，请查看以下信息（Microsoft 支持部门需要获得这些信息才能进行更改）。
 
-<!--HONumber=Dec16_HO2-->
+有三种方法可以重置 MDM 机构。 在支持请求中，需要选择适用于你的情况的方式。 如果请求的方案未列出，请进而与 Microsoft 支持部门联系。
 
+Microsoft 支持部门将让你确认下列信息：
+
+- 租户 ID：用于登录到服务的域（例如 intune.onmicrosoft.com）
+- 想要更改为该机构的 MDM 机构
+- 确认已完成的必需步骤，如下所示
+
+如果正在使用共存，则需要验证 Intune 和 Office 365 清单。
+
+### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>将 MDM 机构从 Intune 重置为 Configuration Manager
+
+请在联系 Microsoft 支持部门之前完成这些步骤以重置 MDM 机构。
+
+- 从 Intune 管理员控制台停用所有设备。 请勿尝试从设备停用设备。 
+- 删除 Service To Service Connector（“管理” > “移动设备管理” > “Microsoft Exchange”下），或禁用 Exchange Connector（如果已设置）。 
+- 在“管理员” > “设备注册管理器”中删除设备注册管理器角色。
+- 在“管理员” > “移动设备管理” > “设备组映射”中关闭设备组映射。
+- 从“管理员” > “移动设备管理” > “Windows” > “旁加载密钥”删除旁加载密钥。
+- 在“管理员” > “移动设备管理” > “iOS”页中，删除 iOS APN 证书。
+- 在“管理员” > “移动设备管理” > “iOS”页中，删除 iOS DEP 令牌。
+- 在“策略” > “配置策略”下，删除适用于 MDM 设备的所有策略。
+- 在“应用” > “托管软件”中，删除适用于 MDM 设备的所有已发布应用程序。
+
+### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>将 MDM 机构从 Configuration Manager 重置为 Intune
+
+请在联系 Microsoft 支持部门之前完成这些步骤以重置 MDM 机构。
+
+- 从 Configuration Manager 控制台停用所有设备（作为移动设备管理的设备）。 请勿尝试从设备停用设备。 
+- 删除 Intune 用户组中的所有用户。 将 Intune 订阅指向空用户集合，或删除目标集合中的所有用户。  在 CloudUserSync.log 中确认用户已删除。 
+- 取消选中 iOS 平台以清除 APN 证书。
+- 删除适用于 MDM 设备的所有已发布应用程序。
+- 删除适用于 MDM 设备的所有策略。 
+- 从 Configuration Manager 控制台（仅适用于 R2 SP1 或更低版本）删除 Windows Intune 连接器。
+通过右键单击订阅并选择“删除”，可删除 Intune 订阅。
+- 重启 SMS Executive 服务。
+- 请提供一些示例用户，以便完成该过程后，我们可以验证 Configuration Manager 许可证已删除。
+
+### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>将 MDM 机构从 Office 365 重置为 Configuration Manager
+
+1. 导航到 [https://protection.office.com](https://protection.office.com)。
+2. 选择“安全策略”选项卡，然后选择“设备管理”。 
+3. 通过选择“选择性擦除”停用所有设备。 请勿尝试从设备停用设备。 如果已禁用“选择性擦除”，则不需要进一步操作。
+4. 选择“安全策略”选项卡，然后选择“安全策略”。 
+5. 对所有现有策略选择“删除”。 如果策略都处于挂起状态，则不需要进一步操作。
+
+>[!NOTE]
+>无法删除 IOS APN 证书，该证书仍附加到帐户。 
+
+### <a name="next-steps-for-mdm-authority-resets"></a>MDM 机构重置的后续步骤
+
+Microsoft 支持部门验证适用清单上的项后，重置 MDM 机构最多需要&3; 个工作日，但通常在一天之内完成。 
+
+>[!IMPORTANT]
+>在 Microsoft 支持部门确认已成功完成重置之前，请勿尝试配置订阅！ 过早配置可能会导致损坏并/或影响 Intune 服务的使用。 
 

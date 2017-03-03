@@ -1,26 +1,28 @@
 ---
-title: "安装公司门户应用并在 Intune 中注册 Windows 10 设备后会发生什么情况？ | Microsoft Intune"
+title: "安装 Windows 10 适用的公司门户应用 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Windows 10 设备后会发生什么情况？
 
@@ -34,7 +36,7 @@ ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
 
 -   在手机丢失或被盗时将它重置为出厂设置。
 
-有关注册步骤，请参阅[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)。 若要了解 IT 管理员可以在你的设备上看到的内容，请参阅[当我在 Intune 中注册设备后，IT 管理员可以看到哪些内容？](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
+有关注册步骤，请参阅[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)。 若要了解 IT 管理员可以在你的设备上看到的内容，请参阅[当我在 Intune 中注册设备后，IT 管理员可以看到哪些内容？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
 在添加计算机时：
 
@@ -56,6 +58,6 @@ ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

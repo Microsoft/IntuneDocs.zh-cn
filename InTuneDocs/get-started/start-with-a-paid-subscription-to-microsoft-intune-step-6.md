@@ -1,11 +1,11 @@
 ---
-title: "部署策略和应用 | Microsoft Intune"
+title: "部署策略和应用 | Microsoft Docs"
 description: "可以启用策略设置并部署将在设备注册到管理后立即应用的应用。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,27 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>创建策略并发布应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主题指导 Intune 管理员如何创建策略和发布应用，并将其部署到托管设备。
+
 在开始将应用注册到 Intune 之前，可以启用策略设置以及将会在这些设备进入管理后立即部署的应用。 Intune 策略提供的设置有助于控制移动设备上的安全设置、维护计算机的 Windows 防火墙和 Endpoint Protection 设置以及部署应用程序。 可以配置策略、添加应用并对这些应用进行部署，以便设备在 Intune 中注册后立即接收设置和应用。
 
 策略和应用是特定于平台的。
 
 ## <a name="manage-device-settings"></a>管理设备设置
 
- 设备策略设置是以每个平台基础进行配置和管理的。 可以为以下平台配置策略：
+ 设备策略设置是以每个平台基础进行配置和管理的。 以下链接提供了适用于各平台的可用设置的列表：
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android 和 Samsung KNOX 标准版](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -69,6 +75,6 @@ ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

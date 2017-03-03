@@ -1,11 +1,11 @@
 ---
-title: "使用 Microsoft Intune 监视 MAM 策略| Microsoft Intune"
+title: "使用 Microsoft Intune 监视 MAM 策略 | Microsoft Docs"
 description: "查看有多少用户拥有策略，并深入了解获取详细信息。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,35 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>使用 Microsoft Intune 监视移动应用管理策略
-设置移动应用管理 (MAM) 策略并将其应用到用户后，可在 [Azure 门户](https://portal.azure.com)上监视合规性状态。 Azure 门户包括有关受策略影响的用户、合规性状态和任何用户可能遭遇的问题的信息。
-## <a name="summary-view"></a>摘要视图
-可在“Intune 移动应用程序管理”边栏选项卡上查看合规性状态的摘要：
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 监视应用保护策略
+可以监视已应用于用户的应用保护策略的符合性状态。 可找到的信息包括受应用保护策略影响的用户、它的符合性状态和用户可能遭遇的任何问题。
 
+可在&3; 个不同的位置监视合规性状态：
+
+-   摘要视图
+
+-   详细视图
+
+-   报表视图
+
+## <a name="summary-view"></a>摘要视图
+
+请按下面&3; 个步骤打开“摘要”视图：
+
+1. 转到 [Azure 门户](https://portal.azure.com)，然后输入你的凭据。
+2. 选择“更多服务”，然后在筛选器文本框中键入“Intune”。
+3. 选择“Intune 应用保护”。
+
+在“Intune 移动应用程序管理”边栏选项卡上，可查看合规性状态的摘要：
 
 ![“Intune 移动应用程序管理”边栏选项卡上的“摘要”磁贴。](../media/mam-azure-portal-user-status-summary.png)
 
@@ -38,13 +55,13 @@ ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
 
 
 ## <a name="detailed-view"></a>详细视图
-可以通过选择“用户状态”磁贴和“已标记用户”磁贴转到摘要的详细视图。
+可以通过选择“用户状态”磁贴（基于设备操作系统平台）和“已标记用户”磁贴转到摘要的详细视图。
 
 ### <a name="user-status"></a>用户状态
 可搜索单个用户并查看该用户的合规性状态。 “应用报告”边栏选项卡显示已选择用户的以下信息：
 - 与用户帐户关联的设备
 
-- 设备上具有 MAM 策略的应用
+- 设备上具有应用保护策略的应用
 
 - 状态:
 
@@ -53,33 +70,69 @@ ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
   - **未签入**：策略已部署到用户，但应用从那时起尚未在工作环境中使用。
 
 >[!NOTE]
-> 如果你搜索的用户没有部署 MAM 策略，你将看到一条消息，告知你用户不面向任何应用策略。
+> 如果搜索的用户没有部署应用保护策略，你将看到一条消息，告知你用户不是任何应用保护策略的目标对象。
 
 若要查看用户的报告，请按照这些步骤进行操作：
 
-1.  要选择用户，单击“摘要”磁贴或在“设置”边栏选项卡上选择“应用报告(按用户)”选项：
+1.  若要选择用户，请选择“摘要”磁贴。
 
-    ![“设置”边栏选项卡上的“应用报告”选项](../media/mam-azure-portal-app-reporting-by-user-settings-blade.png)
+    ![屏幕快照 3](../media/MAM-reporting-6.png)
 
 2. 在打开的“应用报表”边栏选项卡上，选择“选择用户”以搜索 Azure Active Directory 用户。
 
-    ![“应用报告”边栏选项卡上的“选择用户”选项](../media/mam-azure-portal-app-reporting-select-user.png)
+    ![“应用报告”边栏选项卡上的“选择用户”选项](../media/MAM-reporting-2.png)
 
 3. 从列表中选择一个用户。 可以看到该用户合规性状态的详细信息。
 
-    ![应用报告详细信息](../media/mam-azure-portal-app-reporting-by-user.png)
-
 ### <a name="flagged-users"></a>已标记用户
-详细视图显示错误消息、错误发生时访问的应用、设备的平台和时间戳。  
+详细视图显示错误消息、错误发生时访问的应用、受影响的设备操作系统平台和时间戳。
 
-### <a name="see-also"></a>另请参阅
+## <a name="reporting-view"></a>报表视图
+
+可从详细视图中找到相同报表，还可通过其他报表了解应用保护策略的符合性状态：
+
+![屏幕快照 -&4;](../media/MAM-reporting-7.png)
+
+-   **应用保护用户报表：**概述了可在以上详细视图部分下的“用户状态”中找到的相同信息。
+
+-   **应用保护应用报表：**提供了生成报表前，管理员可选择的两种不同应用保护状态。 状态可以为受保护，也可以为不受保护。
+
+    -   托管 MAM 活动的用户状态（受保护）：此报表概述了 每个用的每个托管 MAM 应用的活动。
+
+        -   它显示了每个用户的应用保护策略所面向的所有应用，并通过应用保护策略将每个应用的状态细分为“已签入”，或者显示以应用保护策略为目标但应用从未签入的应用。
+<br></br>
+    -   非托管 MAM 活动的用户状态（不受保护）：此报表概述了每个用户目前已启用 MAM 的非托管应用的活动。 发生这种情况的原因如下：
+
+        -   用户正在使用这些应用，或者这些应用是应用保护策略目前未针对的应用。
+
+        -   已签入所有应用，但应用还未获取任何应用保护策略。
+
+![屏幕快照 -&2;](../media/MAM-reporting-4.png)
+
+## <a name="table-grouping"></a>表格分组
+
+“应用保护用户报表”数据出现后，可按照以下方式聚合数据：
+
+- **验证结果：**数据显示为按应用保护状态分组，可能是失败、警告或成功。
+- **应用名称：**数据显示为按应用（实际应用名称）分组，有失败、警告或成功。
+
+## <a name="export-app-protection-activities-to-csv"></a>将应用保护活动导出到 CSV
+
+可以将所有应用保护策略活动导出到单个 .csv 文件。 这可帮助分析用户报告的所有应用保护状态。
+
+按照下列步骤进行操作可生成应用保护报表：
+
+1. 在“Intune 移动应用程序管理”边栏选项卡中，选择“应用保护报表”。
+
+    ![屏幕快照 -&6;](../media/app-protection-report-csv-2.png)
+
+2. 选择“是”以保存报表，然后选择“另存为”，并选择要在其中保存报表的文件夹。
+
+    ![屏幕快照 -&7;](../media/app-protection-report-csv-1.png)
+
+## <a name="see-also"></a>另请参阅
 [管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Android 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS 应用由 MAM 策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+* [Android 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

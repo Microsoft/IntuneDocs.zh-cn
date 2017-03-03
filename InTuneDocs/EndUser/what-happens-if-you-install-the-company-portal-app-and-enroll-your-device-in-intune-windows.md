@@ -1,22 +1,26 @@
 ---
-title: "安装公司门户应用并在 Intune 中注册 Windows 设备后会发生什么情况？ | Microsoft Intune"
+title: "安装 Windows 适用的公司门户应用 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -31,7 +35,7 @@ ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 -   访问公司网络、你的电子邮件和工作文件。
 
--   从公司门户网站获取公司应用。 （对于 Windows 7 和 Windows Vista，仅可以从公司门户网站获取公司应用。）
+-   从公司门户网站获取公司应用。 （__注意__：对于 Windows 7 和 Windows Vista，仅可以从公司门户网站获取公司应用。）
 
 -   自动设置公司或学校电子邮件帐户。
 
@@ -63,8 +67,9 @@ ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 -  IT 管理员可在计算机上安装应用和更新。
 
-## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每 8 小时会发生什么情况
-已注册的设备将以约 8 小时的间隔执行以下操作：
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每&8; 小时会发生什么情况
+
+已注册的设备将以约&8; 小时的间隔执行以下操作：
 
 -   下载 IT 管理员已提供的任何策略或应用更新。
 
@@ -73,9 +78,4 @@ ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 -   发送任何公司应用清单更新。
 
 如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

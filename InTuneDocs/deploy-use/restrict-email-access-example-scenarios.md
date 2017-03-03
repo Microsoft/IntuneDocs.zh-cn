@@ -1,11 +1,11 @@
 ---
-title: "限制对电子邮件示例方案的访问 | Microsoft Intune"
+title: "保护电子邮件方案 | Microsoft Docs"
 description: "几个示例方案以及使用条件访问实现这些方案的方式。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 0f3c1816591007108fed19682d19ad4b87bd5559
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 
 
 ---
 
-# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>使用 Microsoft Intune 限制对电子邮件的访问：示例方案
+# <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>使用 Microsoft Intune 保护对电子邮件的访问：示例方案
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>方案 1：阻止用户使用非合规的设备访问 Exchange Online
 ### <a name="scenario-requirements"></a>方案要求
@@ -82,6 +85,6 @@ ms.openlocfilehash: 0f3c1816591007108fed19682d19ad4b87bd5559
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

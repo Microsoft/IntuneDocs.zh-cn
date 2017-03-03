@@ -1,5 +1,5 @@
 ---
-title: "使用 Intune 应用包装工具包装 iOS 应用 | Microsoft Intune"
+title: "使用 Intune 应用包装工具包装 iOS 应用 | Microsoft Docs"
 description: "通过本主题中提供的信息了解不更改应用代码本身即可包装 iOS 应用的方法。 准备应用以便应用移动应用管理策略。"
 keywords: 
 author: mtillman
@@ -13,35 +13,160 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具为移动应用程序管理准备 iOS 应用
 
-使用适用于 iOS 的 Microsoft Intune 应用包装工具更改内部 iOS 应用的行为，方法是启用 Intune 应用保护功能，而无需更改应用自身的代码。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-该工具是在应用周围创建包装程序的 macOS 命令行应用程序。 处理应用后，可以使用 IT 管理员部署的 Intune [移动应用程序管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)来更改应用的功能。
+使用适用于 iOS 的 Microsoft Intune 应用包装工具启用内部 iOS 应用的 Intune 应用保护策略，无需更改应用自身的代码。
+
+该工具是在应用周围创建包装程序的 macOS 命令行应用程序。 处理应用后，通过向其部署[应用保护策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)可更改应用功能。
 
 若要下载该工具，请参阅 GitHub 上的 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)（适用于 iOS 的 Microsoft Intune 应用包装工具）。
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>满足应用包装工具的先决条件
-若要了解有关如何获取先决条件的详细信息，请参阅[如何获取适用于 iOS 的 Intune 应用包装工具的先决条件](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)博客文章。
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>应用包装工具的常规先决条件
 
-|要求|更多信息|
-|---------------|--------------------------------|
-|支持的操作系统和工具集 | 必须在运行 OS X 10.8.5 或更高版本的 macOS 计算机上运行应用包装工具，并安装 XCode 工具集版本 5 或更高版本。|
-|签名证书和预配配置文件 | 你必须有 Apple 签名证书和预配配置文件。 请参阅 [Apple 开发人员文档](https://developer.apple.com/)。|
-|使用应用包装工具处理应用  |应用必须由你公司或独立软件供应商 (ISV) 开发并签名。 你无法使用该工具处理 Apple Store 中的应用。 应用必须针对 iOS 8.0 或更高版本编写。 应用还必须是地址无关可执行文件 (PIE) 格式。 有关 PIE 格式的详细信息，请参阅 Apple 开发人员文档。 最后，应用的扩展名必须是 **.app** 或 **.ipa**。|
-|工具无法处理的应用 | 加密应用、未签名应用和带有扩展文件属性的应用。|
-|设置应用权利|在包装应用之前，必须设置权利，以便为应用提供除平常所授权限和功能以外的其他权限和功能。 有关说明，请参阅[设置应用权利](#setting-app-entitlements)。|
+在运行应用包装工具之前，需要满足一些常规的先决条件：
 
-## <a name="install-the-app-wrapping-tool"></a>安装应用包装工具
+* 从 GitHub 下载[适用于 iOS 的 Microsoft Intune 应用包装工具](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)。
+
+* 运行 OS X 10.8.5 或更高版本并且已安装 Xcode 工具集版本 5 或更高版本的 macOS 计算机。
+
+* 输入 iOS 应用必须由公司或独立软件供应商 (ISV) 开发并签名。
+
+  * 输入应用文件必须具有 **.ipa** 或 **.app** 扩展名。
+
+  * 输入应用必须针对 iOS 8.0 或更高版本进行编译。
+
+  * 不能加密输入应用。
+
+  * 输入应用不具备扩展文件属性。
+
+  * 输入应用必须授权才能由 Intune 应用包装工具进行处理。 [授权](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)向应用提供除平常所授权限和功能以外的其他权限和功能。 有关说明，请参阅[设置应用权利](#setting-app-entitlements)。
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>应用包装工具的 Apple 者先决条件
+
+
+若要将包装的应用专门分发给组织用户，需要一个 [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) 帐户，以及链接到 Apple 开发者帐户用于应用签名的几个实体。
+
+若要了解有关从内部将 iOS 应用分发到组织用户的详细信息，请参阅[分发 Apple Developer Enterprise Program 应用](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1)的官方指南。
+
+分发由 Intune 包装的应用需要以下项：
+
+* Apple Developer Enterprise Program 的开发人员帐户。
+
+* 具有有效团队标识符的内部和临时分发签名证书。
+
+  * 需要签名证书的 SHA1 哈希作为 Intune 应用包装工具的参数。
+
+
+* 内部分发的预配配置文件。
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>创建 Apple 开发者企业帐户的步骤
+1. 转到 [Apple Developer Enterprise Program 站点](https://developer.apple.com/programs/enterprise/)。
+
+2. 在页面的右上角单击“注册”。
+
+3. 请阅读需要注册内容的清单。 在页面底部单击“开始注册”。
+
+4. 使用组织的 Apple ID 进行**登录**。 如果没有 Apple ID，请单击“创建 Apple ID”。
+
+5. 选择“实体类型”，然后单击“继续”。
+
+6. 在表单中填写组织的信息。 单击“继续” 。 这时，Apple 将与你联系，验证你是否有权注册组织。
+
+8. 验证之后，单击“同意许可”。
+
+9. 同意许可之后，单击“购买和激活程序”即可完成操作。
+
+10. 如果你是团队代理（代表组织联接 Apple Developer Enterprise Program 的人员），首先通过邀请团队成员并分配角色来组建团队。 若要了解如何管理团队，请参阅关于[管理开发人员帐户团队](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1)的 Apple 文档。
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>创建 Apple 签名证书的步骤
+
+1. 转到 [Apple 开发者门户](https://developer.apple.com/)。
+
+2. 在页面的右上角单击“帐户”。
+
+3. **使用 Apple ID 登录**。
+
+4. 单击“证书、ID 和配置文件”。
+
+  ![Apple 开发者门户](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. 安装完成后，单击 ![“Apple 开发者门户”](../media/app-wrapper/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 证书。
+
+6. 在“生产”下选择创建“内部和临时”证书。
+
+  ![选择内部和临时证书](../media/app-wrapper/iOS-signing-cert-3.png)
+
+>[!NOTE]
+>如果不打算分发应用，只希望进行内部测试，可以使用 iOS 应用开发证书来代替生产证书。 如果使用开发证书，请确保移动设置配置文件引用将安装应用的设备。
+
+7. 单击页面底部的“下一步”。
+
+8. 阅读关于使用 macOS 计算机上的 Keychain Access 应用程序来创建**证书签名请求 (CSR)** 的说明。
+
+  ![阅读有关创建 CSR 的说明](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. 按照上面的说明来创建证书签名请求。 在 macOS 计算机上启动 **Keychain Access** 应用程序。
+
+10. 在屏幕顶部的 macOS 菜单中，转到“Keychain Access”>“证书助手”>“向证书颁发机构请求证书” 。  
+
+  ![在 Keychain Access 应用中向证书颁发机构请求证书](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. 请按照 Apple 开发者站点上有关如何创建 CSR 文件的说明进行操作。 将 CSR 文件保存到 macOS 的计算机。
+
+  ![在 Keychain Access 应用中向证书颁发机构请求证书](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. 返回到 Apple 开发者站点。 单击“继续” 。 然后上传 CSR 文件。
+
+13. Apple 将生成签名证书。 下载签名证书并将其保存到 macOS 计算机上容易记住的位置。
+
+  ![下载签名证书](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. 双击刚下载的证书，将证书添加密钥链。
+
+15. 再次打开 **Keychain Access**。 在右上角的搜索栏中搜索证书名称，查找证书。 右键单击项目以打开菜单，然后单击“获取信息”。 在示例屏幕中，使用的是开发证书而非生产证书。
+
+
+  ![将证书添加到密钥链](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. 将显示消息窗口。 滚动到底部并在“指纹”标签下查看。 复制 **SHA1** 字符串（模糊显示），将其用作应用包装工具的“-c”参数。
+
+  ![将证书添加到密钥链](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>创建内部分发的预配配置文件的步骤
+
+1. 返回到[Apple 开发者帐户门户](https://developer.apple.com/account/)并使用组织的 Apple ID **登录**。
+
+2. 单击“证书、ID 和配置文件”。
+
+3. 安装完成后，单击 ![“Apple 开发者门户”](../media/app-wrapper/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 预配配置文件。
+
+4. 在“分发”下选择创建“内部”预配配置文件。
+
+  ![选择内部预配配置文件](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. 单击“继续” 。 请确保将以前生成的签名证书链接到预配配置文件。
+
+6. 请按照此步骤将配置文件（扩展名为 .mobileprovision）下载到 macOS 计算机。
+
+7. 将文件保存在容易记住的位置。 使用应用包装工具时此文件将用于 -p 参数。
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>下载应用包装工具
 
 1.  将应用包装工具文件从 [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) 下载到 macOS 计算机。
 
@@ -277,6 +402,6 @@ ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

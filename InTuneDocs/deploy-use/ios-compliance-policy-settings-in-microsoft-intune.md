@@ -1,11 +1,11 @@
 ---
-title: "适用于 iOS 设备的合规性策略设置 | Microsoft Intune"
+title: "适用于 iOS 设备的合规性策略设置 | Microsoft Docs"
 description: "本主题介绍可在 iOS 设备的合规性策略中设置的规则和设置。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,18 @@ ms.technology:
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: 0ee697472a7cb553d78aef9977381197149c3177
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 iOS 设备的合规性策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 本主题中描述的策略设置适用于运行 iOS 8.0 及更高版本的设备。
 
@@ -82,6 +85,6 @@ ms.openlocfilehash: 0ee697472a7cb553d78aef9977381197149c3177
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

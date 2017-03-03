@@ -1,12 +1,12 @@
 ---
-title: "选择如何管理设备 | Microsoft Intune"
+title: "选择如何管理设备 | Microsoft Docs"
 description: "了解让你可以注册和管理设备的各种方法。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
-ms.topic: article
+ms.date: 02/16/2017
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b97ee1e99778c2a39e92061dd5aa051ecdf35caa
+ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
+ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
 
 
 ---
 
 # <a name="choose-how-to-manage-devices"></a>选择如何管理设备
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 若要利用 Intune 提供的各种功能（如应用部署和设备设置控制），设备必须处于*受管理*状态。 如何管理设备取决于你想要使用的 Intune 功能。 本主题可帮助选择满足需求的方法。
 
@@ -44,7 +46,7 @@ ms.openlocfilehash: b97ee1e99778c2a39e92061dd5aa051ecdf35caa
 - 使用 TeamViewer 软件向用户提供远程协助
 
 有关每种方法提供的管理功能的详细列表，请参阅[移动设备管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)和 [Intune 电脑软件客户端功能](windows-pc-management-capabilities-in-microsoft-intune.md)。
-要了解 Intune 支持的设备和电脑，请参阅[支持的移动设备和计算机](/intune/get-started/supported-mobile-devices-and-computers)。
+要了解 Intune 支持的设备和电脑，请参阅[支持的移动设备和计算机](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices)。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -54,6 +56,6 @@ ms.openlocfilehash: b97ee1e99778c2a39e92061dd5aa051ecdf35caa
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

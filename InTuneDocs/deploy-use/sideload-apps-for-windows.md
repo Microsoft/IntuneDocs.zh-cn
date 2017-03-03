@@ -1,5 +1,5 @@
 ---
-title: "适用于 Windows 和 Windows Phone 的旁加载应用 | Microsoft Intune"
+title: "适用于 Windows 和 Windows Phone 的旁加载应用 | Microsoft Docs"
 description: "了解如何对业务线应用进行签名，以便可以使用 Intune 部署它们。"
 keywords: 
 author: robstackmsft
@@ -10,13 +10,16 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 作为 Intune 管理员，可以将业务线 (LOB) 应用部署到 Windows 和 Windows 10 移动版设备，包括公司门户应用。 若要将 .appx 或 .xap 应用部署到 Windows 10 和 Windows 10 移动版设备，或将任何 LOB 应用部署到 Windows 8.1 或 Windows Phone 8.1 设备，必须获取 **Symantec 企业移动代码签名证书**。 对于各类 Windows 设备的这些应用，仅有 Symantec 证书才受信任。 可以对 Windows 10 应用和“通用”应用使用自己的证书颁发机构。 此证书用于：
 

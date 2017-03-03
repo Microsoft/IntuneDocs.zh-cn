@@ -1,26 +1,28 @@
 ---
-title: "将错误发送给 IT 管理员 | Microsoft Intune"
+title: "将错误发送给 IT 管理员 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 577e26066095b42542cfcd7b917877ddb0a88c55
+ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
+ms.openlocfilehash: 5de975c1c4b06d1cce0dcdb2564826d09a53260e
 
 
 ---
-
 
 # <a name="send-errors-to-your-it-admin"></a>将错误发送给 IT 管理员
 
@@ -30,10 +32,12 @@ ms.openlocfilehash: 577e26066095b42542cfcd7b917877ddb0a88c55
 
 -   在公司门户应用的“关于”屏幕上，点击“发送诊断报告”。
 
--   在公司门户应用中，摇动设备，然后在诊断警报出现时点击“电子邮件”。 如果摇动设备时未出现该警报，请打开**设置** &gt; **公司门户**，确保**摇动手势**选项已打开。
+-   在公司门户应用中，摇动设备，然后在诊断警报出现时点击“电子邮件”。 如果摇动设备时未出现该警报，请打开“设置” > “公司门户”，确保“摇一摇”选项已打开。
+
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

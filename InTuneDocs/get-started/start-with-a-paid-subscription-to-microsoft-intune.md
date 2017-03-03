@@ -1,5 +1,5 @@
 ---
-title: "入门 | Microsoft Intune"
+title: "入门 | Microsoft Docs"
 description: "开始使用 Intune 订阅的要求和先决条件"
 keywords: 
 author: nathbarn
@@ -14,14 +14,18 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 6963f14de4bf54ba37166e7e37cd8395a941db51
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 804c62c3ee840a01ee7b3f7d96bf984bc9501ea0
+ms.lasthandoff: 01/18/2017
 
 
 ---
 
 
 # <a name="intune-quick-start-guide"></a>Intune 快速入门指南
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本指南可帮助实现 Microsoft Intune 付费订阅入门。 请按照以下步骤管理移动设备和 Windows 电脑，以及组织内部的应用。 可按顺序执行每个步骤，如果某个步骤不适用于自己的环境或业务需求，也可直接跳过。 如果想要试用 Intune，请参阅 [Intune 评估指南](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)。  
 
 如果当前正在使用 Microsoft System Center Configuration Manager 管理计算机和服务器，则可以[扩展 Configuration Manager 以管理移动设备](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
@@ -47,9 +51,4 @@ ms.openlocfilehash: 6963f14de4bf54ba37166e7e37cd8395a941db51
 
 >[!div class="step-by-step"]
 [**先决条件** &rarr;](what-to-know-before-you-start-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "适用于 Windows 设备的合规性策略设置 | Microsoft Intune"
+title: "适用于 Windows 设备的合规性策略设置 | Microsoft Docs"
 description: "本主题描述了可为 Windows 设备的合规性策略配置的规则和设置。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 设备的合规性策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 本主题中描述的策略设置适用于运行 Windows 操作系统的设备。 以下各部分描述了支持的 Windows 版本。
 
@@ -42,7 +46,7 @@ ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 -  **最短密码长度**：指定用户密码必须包含的最小位数或最小字符数。
 - **所需的密码类型**：指定用户必须创建“字母数字”密码还是“数字”密码。
 
-  对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过 8 个字符或者最小字符集数大于 2，则将无法正确评估合规性策略。
+  对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过&8; 个字符或者最小字符集数大于&2;，则将无法正确评估合规性策略。
 
 - **最小字符集数**：如果“所需的密码类型”设置为“字母数字”，此设置将指定密码必须包含的最小字符集数。 四个字符集为：
   -   小写字母
@@ -50,7 +54,7 @@ ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
   -   符号
   -   数字
 
-  设置的数字越大，要求用户创建的密码越复杂。 对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过 8 个字符或者最小字符集数大于 2，则将无法正确评估合规性策略。
+  设置的数字越大，要求用户创建的密码越复杂。 对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过&8; 个字符或者最小字符集数大于&2;，则将无法正确评估合规性策略。
 
 - **要求提供密码之前的非活动分钟数**：此设置指定用户必须重新输入其密码前的空闲时间。
 
@@ -73,6 +77,9 @@ ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
   -  **启用代码完整性**：代码完整性是一种功能，可用于在每次将驱动程序或系统文件载入内存时，验证它们的完整性。 代码完整性检测是否正在将未签名的驱动程序或系统文件加载到内核中。 它还检测系统文件是否已被具有管理员权限的用户帐户运行的恶意软件进行了修改。
   - **启用安全启动**：启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认这一点。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
 
+  > [!IMPORTANT]
+  > Windows 设备不支持作为设备运行状况证明的一部分安装的第三方**开机初期启动的反恶意软件** (ELAM)。
+
   有关 HAS 服务工作方式的信息，请参阅[运行状况证明 CSP](https://msdn.microsoft.com/library/dn934876.aspx)。
 ###  <a name="device-property-settings"></a>设备属性设置
 - **所需的最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。
@@ -89,7 +96,7 @@ ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
   指定用户密码必须包含的最小位数或最小字符数。
 
-  对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过 8 个字符或者“最小字符集数”大于 2 个字符，则将无法正确评估合规性策略。
+  对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过&8; 个字符或者“最小字符集数”大于&2; 个字符，则将无法正确评估合规性策略。
 
 - **所需密码类型**：在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。
 
@@ -103,7 +110,7 @@ ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
   -   符号
   -   数字     
 
-  设置的数字越大，要求用户创建的密码越复杂。 对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过 8 个字符或者“最小字符集数”大于 2 个字符，则将无法正确评估合规性策略。
+  设置的数字越大，要求用户创建的密码越复杂。 对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过&8; 个字符或者“最小字符集数”大于&2; 个字符，则将无法正确评估合规性策略。
 
 - **要求提供密码之前的非活动状态分钟数**：在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。
 
@@ -148,9 +155,4 @@ ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 - 对运行 Windows 10 的电脑，版本应设置为 **10.0** + **winver** 命令返回的 OS 内部版本号。 例如，它可能类似于 10.0.10586。
 > ![“关于Windows”对话框中突出显示的操作系统内部版本号](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

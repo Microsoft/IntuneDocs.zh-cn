@@ -1,0 +1,68 @@
+---
+title: "启用设备保护规则 | Microsoft Docs"
+description: "在设备合规性策略中启用移动威胁保护规则。"
+keywords: 
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/19/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
+ms.reviewer: sandera
+ms.suite: ems
+ms.custom: intune-classic
+translationtype: Human Translation
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 08edca426901eda3017bf17dda3b330dd186ce58
+
+
+---
+
+# <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>在合规性策略中启用设备威胁保护规则
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+具有 Lookout 移动威胁防护的 Intune 可检测移动设备上的威胁，并评估这些设备上的风险。 可创建评估风险的合规性策略规则，确定设备是否合规。 然后可使用条件性访问策略，根据设备合规性阻止对服务的访问。
+
+包含 Lookout 设备威胁防护的合规性策略的先决条件：
+
+- [设置 Lookout 设备威胁防护订阅](set-up-your-subscription-with-lookout-mtp.md)
+- [在 Intune 中启用 Lookout 连接](enable-lookout-mtp-connection-in-intune.md)
+- [配置 Lookout for Work 应用](configure-and-deploy-lookout-for-work-apps.md)
+
+作为 Lookout 设备威胁防护设置过程的一部分，需在 [Lookout 控制台](https://aad.lookout.com)中，创建一个将各种威胁分类为高、中和低的策略。 在 Intune 合规性策略中，设置允许的最大威胁级别。
+
+1. 在 [Intune 管理员控制台](https://manage.microsoft.com)中，转到“合规性策略”页。 可使用现有合规性策略或创建新策略。 转到“设备运行状况”并启用“设备威胁防护”。
+  ![显示设备威胁保护规则设置的屏幕截图](../media/mtp/mtp-compliance-policy-rule.png)
+
+2. 选择**允许的最大威胁级别**：
+  * **无(安全)**：这是最安全的选项。  设备不能存在任何威胁，且仍可访问公司资源。  如果发现了任何威胁，设备都将被视为不合规。  
+  * **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
+  * **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果设备中检测到高级威胁，则视为不合格。
+  * **高**：这是最不安全的选项。 此选项允许所有威胁级别，且仅将 Lookout 移动威胁防护用作报告目的。
+
+![显示设备威胁保护规则设置威胁等级选项的屏幕截图](../media/mtp/mtp-compliance-policy-setting.png)
+
+如果为 Office 365 或其他服务创建条件性访问策略，将考虑上述合规性评估，阻止不合规的设备访问这些服务，直到解决威胁。
+
+## <a name="monitor-device-threats"></a>监视设备威胁
+若要查看设备的合规性状态，请转到 [Intune 管理员控制台](https://manage.microsoft.com)，然后查看“所有设备”。
+
+![Intune 管理员控制台“设备”页面的屏幕截图，其中显示了设备的合规性状态](../media/mtp/mtp-device-status-intune-console.png)
+
+## <a name="next-steps"></a>后续步骤
+* 创建条件访问策略
+  * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+  * [Exchange 内部部署](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+  * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+  * [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+
+
+
+<!--HONumber=Jan17_HO4-->
+
+

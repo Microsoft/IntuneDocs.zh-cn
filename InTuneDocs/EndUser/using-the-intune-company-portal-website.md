@@ -1,5 +1,5 @@
 ---
-title: "使用 Microsoft Intune 公司门户网站 | Microsoft Intune"
+title: "使用 Intune 公司门户网站 | Microsoft Docs"
 description: "介绍公司门户网站并提供指向最终用户可在网站上执行的任务步骤链接"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
 
 
 ---
@@ -35,7 +39,7 @@ ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
 
 -   [远程锁定设备](remote-lock-your-device-cpwebsite.md)
 
--   [手动同步设备，加快速度较慢的应用安装](sync-your-device-manually-cpwebsite.md)
+-    [手动同步设备，加快速度较慢的应用安装](sync-your-device-manually-cpwebsite.md)
 
 -   找到 IT 管理员的联系信息（如果已配置）
 
@@ -46,11 +50,11 @@ ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
 最终用户可以在**公司门户网站**上执行大多数可使用安装在设备上的 **公司门户应用**执行的任务。 请在以下页面查看指向最终用户在其设备上可以执行的所有任务的链接：
 
 - [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
-- [通过 Intune 使用 iOS 或 macOS 设备](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [通过 Intune 使用 iOS 或 macOS 设备](using-your-ios-or-macOS-device-with-intune.md)
 - [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,26 +1,31 @@
 ---
-title: "Intune 网络带宽使用 | Microsoft Intune"
+title: "Intune 网络带宽使用 | Microsoft Docs"
 description: "Intune 网络带宽使用"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 363300f04480a9ed80bd710db5c4ec7c90dd8be3
+ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
+ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
 
 
 ---
 
 # <a name="intune-network-bandwidth-use"></a>Intune 网络带宽使用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本指南适用于负责企业中的设备管理的系统管理员。 有关在移动设备上使用 Intune 的帮助，请参阅[有关 Intune 公司门户的常见问题](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)。
 
 设置 Microsoft Intune 之前，请查看本主题以及[启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)中列出的其他要求。
 
@@ -106,7 +111,9 @@ Intune 不使用本地基础结构，如运行 Intune 软件的服务器，但�
 
 |**域**|**端口**|**IP 地址**|
 |------|----|---|
-|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>m.manage.microsoft.com<br>p.manage.microsoft.com<br>portal.manage.microsoft.com<br>r.manage.microsoft.com|80 和 443|134.170.168.254<br>134.170.51.126
+|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>p.manage.microsoft.com<br>r.manage.microsoft.com|80 和 443|134.170.168.254<br>134.170.51.126
+|m.manage.microsoft.com|80 和 443| 13.91.59.243<br>40.68.30.140
+|portal.manage.microsoft.com|80 和 443|40.121.50.69<br>52.169.30.159
 |account.manage.microsoft.com|80 和 443|157.56.13.59
 |fef.msua01.manage.microsoft.com|80 和 443|138.91.243.97
 |fef.msua02.manage.microsoft.com|80 和 443|23.96.112.46
@@ -223,10 +230,10 @@ Intune 不使用本地基础结构，如运行 Intune 软件的服务器，但�
 
 >[!div class="step-by-step"]
 
->[&larr;**先决条件**](supported-mobile-devices-and-computers.md)     [**网络**&rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
+>[&larr; **先决条件**](what-to-know-before-you-start-microsoft-intune.md)     [**订阅**&rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

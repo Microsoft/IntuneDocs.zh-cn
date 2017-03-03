@@ -1,11 +1,11 @@
 ---
-title: "应用预配配置文件 | Microsoft Intune"
+title: "应用预配配置文件 | Microsoft Docs"
 description: "Intune 提供了一些工具，用于将新的预配配置文件策略主动部署到安装了即将到期应用的设备。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 409433dbe5ca777b33b21a2655e15cde8003b4a2
-ms.openlocfilehash: d67b26b23e65d4a144c1efda1494de1df94cc33c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
 
 
 ---
 
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>使用 iOS 移动预配配置文件策略防止你的应用过期
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 部署到 iPhone 和 iPad 的 Apple iOS 业务线应用附带已包含的预配配置文件和证书签名的代码。 应用运行时，iOS 将确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。 发生以下验证：
 
@@ -53,6 +55,6 @@ ms.openlocfilehash: d67b26b23e65d4a144c1efda1494de1df94cc33c
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

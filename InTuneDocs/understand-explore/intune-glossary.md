@@ -1,24 +1,28 @@
 ---
-title: "Intune 术语表 | Microsoft Intune"
+title: "Intune 术语表 | Microsoft Docs"
 description: "了解 Microsoft Intune 中的一些术语"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/17/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6c9d44e6a328b4bfb3827f54ac35b83e3c7aac
-ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -32,7 +36,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 ## <a name="b"></a>B
 |||
 |-|-|
-|BYOD|[自带设备办公](/intune/get-started/choose-how-to-enroll-devices1)。 用户可在其设备上安装 Intune 公司门户应用，然后进行注册，获取对公司资源（如电子邮件、公司应用、公司数据和支持）的访问权限。| 
+|BYOD|[自带设备办公](/intune/get-started/choose-how-to-enroll-devices1)。 用户可在其设备上安装 Intune 公司门户应用，然后进行注册，获取对公司资源（如电子邮件、公司应用、公司数据和支持）的访问权限。|
 
 ## <a name="c"></a>C
 |||
@@ -59,7 +63,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |电子邮件配置文件|此策略可用于为移动设备上的特定电子邮件客户端设置[电子邮件访问设置](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)，最大限度地减少最终用户需要进行的设置。|
 |EMS|Microsoft 企业移动性 + 安全性（以前称为企业移动性套件）在确保用户可[访问所需应用和内容](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility)的同时，可保护公司数据。|
-|最终用户|使用 Intune 管理的[手机和电脑等设备的用户](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。|
+|最终用户|使用 Intune 管理的[手机和电脑等设备的用户](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。|
 |注册|Microsoft Intune 使用[注册](/intune/deploy-use/enroll-devices-in-microsoft-intune)将设备纳入管理并允许访问资源。|
 
 ## <a name="f"></a>F
@@ -95,7 +99,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |Managed Browser|这是一个 [Web 浏览应用程序](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)，可以使用 Microsoft Intune 在组织中进行部署。 托管浏览器策略可配置允许列表或阻止列表，限制托管浏览器的用户可以访问的网站。|
 |移动应用程序管理|[移动应用管理 (MAM)](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) 能够为用户发布、推送、配置、保护、监视和更新移动应用。
-|移动设备管理|[移动设备管理 (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) 能够将设备注册到 Intune 中，以便对这些设备进行预配、配置、监视和执行操作。 
+|移动设备管理|[移动设备管理 (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) 能够将设备注册到 Intune 中，以便对这些设备进行预配、配置、监视和执行操作。
 |MDM 机构|[MDM 机构](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。|
 |移动应用预配策略|帮助你确保部署的 iOS 应用的[预配配置文件](/intune/deploy-use/ios-mobile-app-provisioning-profiles)不会过期的 iOS 策略。|
 |移动应用配置策略|用于在应用运行时为[兼容的 iOS 应用提供设置](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)（例如公司名称或服务器地址）的 iOS 策略。|
@@ -143,12 +147,4 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |||
 |-|-|
 |Wi-Fi 配置文件|一种将[无线网络设置](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)部署到设备的策略，可让用户连接到你的公司网络而无需了解或配置任何设置。
-
-
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

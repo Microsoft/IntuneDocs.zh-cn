@@ -1,22 +1,25 @@
 ---
-title: "从 Intune 取消注册 Android 设备会发生什么情况？ | Microsoft Intune"
+title: "取消注册 Android 设备会造成什么结果？ |Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
 
 
 ---
@@ -28,7 +31,7 @@ ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
 
 -   IT 管理员不能够再管理设备。
 
--   你将无法再访问公司数据和资源。
+-    你将无法再访问公司数据和资源。
 
 -   设备将不再显示在公司门户中。
 
@@ -44,6 +47,6 @@ ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

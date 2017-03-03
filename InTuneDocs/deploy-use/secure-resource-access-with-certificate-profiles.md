@@ -1,11 +1,11 @@
 ---
-title: "资源访问的证书配置文件 | Microsoft Intune"
+title: "资源访问的证书配置文件 | Microsoft Docs"
 description: "使用每个用户设备上安装的证书保护 VPN、Wi-fi 和电子邮件访问。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/23/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 35d08100b4332cc63667a401143c17972225a908
-ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
 
 
 ---
 
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 当你通过 VPN、Wi-Fi 或电子邮件配置文件给予用户对公司资源的访问权限时，你可以使用每个用户设备上安装的证书保护该访问权限。 以下是它的工作原理：
 
 1. 请确保你拥有正确的证书基础结构，如 [配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)和[配置 PFX 证书基础结构](configure-certificate-infrastructure-for-pfx.md)中所述。
@@ -44,7 +48,7 @@ ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
 
   将 **SCEP 证书配置文件**用于运行以下平台的设备：
     -   Mac OS X 10.9 及更高版本
-    -   Windows Phone 8.1 
+    -   Windows Phone 8.1
 
 必须为每个平台创建单独的配置文件。 在创建配置文件时，将其与已创建的**受信任的根证书配置文件**关联。
 
@@ -61,6 +65,6 @@ ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

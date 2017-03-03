@@ -1,11 +1,11 @@
 ---
-title: "针对移动应用管理准备应用 | Microsoft Intune"
+title: "决定如何使用 Microsoft Intune 为移动应用程序管理准备应用 | Microsoft Docs"
 description: "本主题中的信息可帮助决定何时应该使用应用包装工具和应用 SDK 来启用自定义业务线应用，以使用移动应用管理策略。"
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>决定如何使用 Microsoft Intune 为移动应用程序管理准备应用
+# <a name="prepare-line-of-business-apps-for-mam"></a>准备适用于 MAM 的业务线应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 可以使用 Intune 应用包装工具或 Intune App SDK 启用应用以使用移动应用程序管理 (MAM) 策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune 应用包装工具
@@ -52,7 +56,7 @@ ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用并想使用 Intune 管理应用的客户。 但是，任何应用都可以利用集成 SDK 的优势，即使是业务线应用。
 
-若要了解有关 SDK 的详细信息，请参阅[概述](/intune/develop/intune-app-sdk)。 若要开始使用 SDK，请参阅 [Microsoft Intune App SDK 入门](/intune/develop/intune-app-sdk-get-started)。
+若要了解有关 SDK 的详细信息，请参阅[概述](../develop/intune-app-sdk.md)。 若要开始使用 SDK，请参阅 [Microsoft Intune App SDK 入门](../develop/intune-app-sdk-get-started.md)。
 
 ### <a name="reasons-to-use-the-sdk"></a>使用 SDK 的原因
 * 应用未内置数据保护功能。
@@ -66,8 +70,8 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|支持 - 使用 [Intune 应用 SDK Xamarin 组件](/../develop/intune-app-sdk-xamarin)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](/../develop/intune-app-sdk-cordova)。|
-|**Android**| 支持 - 使用 [Intune 应用 SDK Xamarin 组件](/../develop/intune-app-sdk-xamarin)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](/../develop/intune-app-sdk-cordova)。|
+|**iOS**|支持 - 使用 [Intune 应用 SDK Xamarin 组件](../develop/intune-app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](../develop/intune-app-sdk-cordova.md)。|
+|**Android**| 支持 - 使用 [Intune 应用 SDK Xamarin 组件](../develop/intune-app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](../develop/intune-app-sdk-cordova.md)。|
 
 ## <a name="feature-comparison"></a>功能比较
 此表列出了可用于 App SDK 和应用包装工具的设置。
@@ -106,6 +110,6 @@ iOS 应用包装工具[](prepare-ios-apps-for-mobile-application-management-with
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

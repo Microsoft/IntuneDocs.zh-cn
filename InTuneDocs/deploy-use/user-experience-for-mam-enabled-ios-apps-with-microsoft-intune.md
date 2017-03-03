@@ -1,11 +1,11 @@
 ---
-title: "用于 MAM 策略的 iOS 应用 | Microsoft Intune"
+title: "具有 MAM 策略的 iOS 应用 | Microsoft Docs"
 description: "本主题介绍 iOS 应用由移动应用管理策略托管时会出现的情况。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,28 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>iOS 应用由 MAM 策略托管时会出现的情况
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  本主题介绍具有移动访问管理 (MAM) 策略的应用的用户体验。 仅在工作环境中使用应用时才应用 MAM 策略：例如，用户使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件时。
 
 ##  <a name="access-apps"></a>访问应用
 
-如果设备**未在 Intune 中注册**，则用户首次使用应用时需要重启该应用。  必须重启才能将 MAM 策略应用到该应用。 以下 Skype 应用的屏幕截图对重启进行了解释：
+如果设备**未在 Intune 中注册**，则用户首次使用应用时需要重启该应用。  必须重启才能将 MAM 策略应用到该应用。 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![显示 PIN 提示的 iOS 设备的屏幕截图](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 对于**在 Intune 中注册并托管**的设备，用户看到一条消息，提示应用目前已托管：
 
@@ -68,6 +74,6 @@ Intune 仅支持将 MAM 策略部署到每个设备的一个用户帐户。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

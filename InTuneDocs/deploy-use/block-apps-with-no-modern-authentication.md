@@ -1,5 +1,5 @@
 ---
-title: "阻止没有现代身份验证的应用 | Microsoft Intune"
+title: "阻止没有新式验证的应用 | Microsoft Docs"
 description: 
 keywords: 
 author: andredm7
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 5c95cd8510faa437a33ac25d6602a2bcc57c05d5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 0e1fa2341c0f74492a0ef80d0054922052bbe561
 
 
 ---
 
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>阻止不使用现代身份验证 (ADAL) 的应用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 具有 MAM 策略的应用的条件访问 (MAM CA) 依赖于使用作为 OAuth2 实现的[现代身份验证](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)的应用程序。 最新的 Office 移动和桌面应用程序使用现代身份验证，但是也有第三方应用和较旧 Office 应用使用其他身份验证方法（如基本身份验证和基于表单的身份验证）。
 
 若要阻止对这些应用进行访问，我们建议执行以下操作：

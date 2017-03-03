@@ -1,11 +1,11 @@
 ---
-title: "使用 Cisco ISE 限制对网络的访问 | Microsoft Intune"
+title: "使用 Cisco ISE 保护对网络的访问 | Microsoft Docs"
 description: "将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 Cisco ISE 控制的 Wi-Fi 和 VPN 前已注册 Intune 并且符合策略。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>将 Cisco ISE 与 Microsoft Intune 配合使用
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 将 Intune 与 Cisco 身份服务引擎 (ISE) 集成使你能够使用 Intune 设备注册和合规性状态在 ISE 环境中编写网络策略。 你可使用这些策略确保对公司网络的访问权限仅限于由 Intune 托管并符合 Intune 策略的设备。
 
 ## <a name="configuration-steps"></a>配置步骤
@@ -64,7 +68,7 @@ b。 选择锁定图标&gt;“详细信息”。
 > 请检查该证书的到期日期，因为当它过期时，将必须导出该证书并导入新证书。
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>从 ISE 中获取自签名证书 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>从 ISE 中获取自签名证书 
 
 1.  在 ISE 控制台中，转到“管理” > “证书” > “系统证书” > “生成自签名证书”。  
 2.       导出自签名证书。
@@ -100,7 +104,7 @@ b。 选择锁定图标&gt;“详细信息”。
 |Oauth 2.0 令牌终结点|令牌颁发 URL|
 |使用你的客户端 ID 更新你的代码|客户端 ID|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步骤 4：将自签名证书从 ISE 上传到在 Azure AD 中创建的 ISE 应用
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步骤 4：将自签名证书从 ISE 上传到在 Azure AD 中创建的 ISE 应用
 1.     获取 .cer X509 公用证书文件中的 base64 编码证书值和指纹。 此示例使用 PowerShell：
    
       
@@ -151,7 +155,7 @@ b。 选择锁定图标&gt;“详细信息”。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune 租户和 Cisco ISE 服务器之间共享的信息
 此表列出了你的 Intune 租户和用于由 Intune 托管的设备的 Cisco ISE 服务器之间共享的信息。
 
-|属性|  描述|
+|属性|    描述|
 |---------------|------------------------------------------------------------|
 |complianceState|指示设备是否合规的 true 或 false 字符串。|
 |isManaged|指示客户端是否由 Intune 托管的 true 或 false 字符串。|
@@ -189,6 +193,6 @@ b。 选择锁定图标&gt;“详细信息”。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

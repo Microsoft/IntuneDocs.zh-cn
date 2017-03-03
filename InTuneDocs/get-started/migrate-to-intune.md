@@ -1,11 +1,11 @@
 ---
-title: "迁移到 Intune |Microsoft Intune"
-description: 
+title: "迁移到 Intune | Microsoft Docs"
+description: "从现有的企业移动性管理解决方案迁移到 Intune 可以按照以下大致的流程进行。"
 keywords: 
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 11/22/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
 
 # <a name="migrate-to-intune"></a>迁移到 Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 从现有的企业移动性管理解决方案迁移到 Intune 可以按照以下大致的流程进行：
 
@@ -45,7 +47,7 @@ ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
 
 ## <a name="enrolling-devices-in-intune"></a>在 Intune 中注册设备
 
-计划执行迁移的用户应立即在 Intune 中注册，以便重新获得或防止丢失公司资源、电子邮件和应用程序的访问权限。 如果你已配置条件访问，并且用户未在 Intune 中注册，那么当用户尝试连接到电子邮件时，他们的访问将被阻止并收到注册电子邮件。 此电子邮件将引导他们在 Intune 中注册其设备。  或者，用户可以通过 Intune 公司门户应用注册 Intune，或者通过 Windows 8.1 和 Windows 10 Mobile 的操作系统在本机上注册。 有关每个平台注册步骤的更多指南，请参阅[最终用户需要了解的有关 Microsoft Intune 使用的内容](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。
+计划执行迁移的用户应立即在 Intune 中注册，以便重新获得或防止丢失公司资源、电子邮件和应用程序的访问权限。 如果你已配置条件访问，并且用户未在 Intune 中注册，那么当用户尝试连接到电子邮件时，他们的访问将被阻止并收到注册电子邮件。 此电子邮件将引导他们在 Intune 中注册其设备。  或者，用户可以通过 Intune 公司门户应用注册 Intune，或者通过 Windows 8.1 和 Windows 10 Mobile 的操作系统在本机上注册。 有关每个平台注册步骤的更多指南，请参阅[最终用户需要了解的有关 Microsoft Intune 使用的内容](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。
 
 ## <a name="configure-intune-conditional-access-optional"></a>配置 Intune 的条件性访问（可选）
 
@@ -74,6 +76,6 @@ ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

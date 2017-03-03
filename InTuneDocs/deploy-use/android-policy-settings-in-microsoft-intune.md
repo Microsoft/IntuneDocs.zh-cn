@@ -1,12 +1,12 @@
 ---
 
-title: "Android 和 Samsung KNOX 标准版策略设置 | Microsoft Intune"
+title: "Android 和 Samsung KNOX 策略设置 | Microsoft Docs"
 description: "创建控制通过 Intune 管理的 Android 设备上的设置及功能的策略。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.technology:
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版策略设置
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 提供了一系列内置常规设置，你可以在 Android 设备上进行配置。 此外，还可指定开放移动联盟统一资源标识符 (OMA-URI) 值创建 Intune 未提供的自定义设置。
 
@@ -144,6 +147,8 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 |**编辑**|允许你编辑选定应用的名称、发布者和 URL。|
 |**删除**|从列表中删除选定的应用。|
 
+必须将包含合规和不合规应用设置的策略部署到用户组。
+
 ### <a name="kiosk-mode-settings"></a>展台模式设置
 为“Samsung KNOX 标准版设备”指定以下设置：
 
@@ -177,9 +182,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 使用 Microsoft Intune 的 **Android 自定义配置策略**来部署可用于控制 Android 设备功能的 OMA URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
 此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。
-
-> [!NOTE]
-> 目前，Android 自定义策略仅支持为包含预共享密钥的 Android 设备配置 Wi-Fi 设置。
+Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题的示例，查找可配置的策略。
 
 ### <a name="general-settings"></a>常规设置
 
@@ -209,6 +212,6 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "使用公司门户重置你的 Windows 设备会发生什么情况？ | Microsoft Intune"
+title: "重置 Windows 设备会造成什么结果？ |Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -24,7 +27,7 @@ ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>使用公司门户重置你的 Windows 设备会发生什么情况？
 
-当使用公司门户应用或[公司门户网站](reset-your-device-cpwebsite.md)重置你的 Windows 设备时，它将你的设备重置为出厂默认设置，并删除所有应用程序、设置和数据（包括你的个人数据）。 每台设备上具体发生的情况取决于所拥有的设备类型以及使用设备的方式（如下表中所述）。 有关重置丢失或被盗设备的方法说明，请参阅[重置（擦除）丢失或被盗设备](reset-erase-your-lost-or-stolen-device-windows.md)。
+当使用公司门户应用或[公司门户网站](reset-erase-your-device-cpwebsite.md)重置你的 Windows 设备时，它将你的设备重置为出厂默认设置，并删除所有应用程序、设置和数据（包括你的个人数据）。 每台设备上具体发生的情况取决于所拥有的设备类型以及使用设备的方式（如下表中所述）。 有关重置丢失或被盗设备的方法说明，请参阅[重置（擦除）丢失或被盗设备](reset-erase-your-device-cpwebsite.md)。
 
 |设备配置和管理|设备类型|
 |---------------------------------------|---------------|
@@ -36,6 +39,6 @@ ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO4-->
 
 

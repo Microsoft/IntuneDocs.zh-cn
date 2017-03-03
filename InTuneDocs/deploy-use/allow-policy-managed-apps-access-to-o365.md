@@ -1,5 +1,5 @@
 ---
-title: "对 0365 进行的基于应用的条件访问 | Microsoft Intune"
+title: "对 0365 基于应用的条件性访问 | Microsoft Docs"
 description: "了解 MAM CA 如何帮助控制有权访问 O365 服务的应用的概念。"
 keywords: 
 author: andredm7
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c966d955365611781e83eea9f2aec743f0fc0321
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 
 
 ---
 
 # <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>仅允许支持 Intune MAM 策略的移动应用访问 Office 365 服务
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [Intune 移动应用管理 (MAM) 策略](protect-apps-and-data-with-microsoft-intune.md)可帮助保护在 Intune 中注册进行管理的设备上的公司数据。 还可以在**员工拥有的未在 Intune 中注册进行管理的设备**上使用 MAM 策略。  在这种情况下，即使不管理该设备，仍需要确保公司数据和资源受保护。 通过使用 MAM 的条件访问 (MAM CA)，可以创建仅允许支持 Intune MAM 策略的移动应用访问 O365 服务（如 Exchange Online）的策略。
 
 例如，通过仅允许 **Microsoft Outlook 应用**访问 Exchange Online，可以**阻止 iOS 和 Android 上的内置邮件应用**，这些应用不具有 Intune MAM 策略提供的数据保护，从而无法从 **Exchange Online** 获取电子邮件。

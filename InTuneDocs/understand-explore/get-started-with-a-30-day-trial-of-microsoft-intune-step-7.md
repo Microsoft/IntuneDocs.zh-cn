@@ -1,5 +1,5 @@
 ---
-title: "转换为付费订阅 | Microsoft Intune"
+title: "转换为付费订阅 | Microsoft Docs"
 description: "设置 Intune 的免费 30 天评估后，需要了解有关订阅和授权的哪些内容。"
 keywords: 
 author: lindavr
@@ -12,14 +12,18 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a2b037e0c066422d53d71ffd401deb3e48a2ba7f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
 
 
 ---
 
 # <a name="ways-to-subscribe-to-microsoft-intune"></a>订阅 Microsoft Intune 的方式
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 如果在符合条件的计划中购买至少 150 个 Microsoft Intune 的许可证，则可以使用“FastTrack 中心权益”服务，通过该服务，Microsoft 专家可以和你一起为 Intune 准备好环境。 请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems)。
 
 可以通过以下方式将免费 Intune 评估转换为付费订阅：
@@ -34,6 +38,6 @@ ms.openlocfilehash: a2b037e0c066422d53d71ffd401deb3e48a2ba7f
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,57 +1,42 @@
 ---
-title: "手动同步 Windows 设备 | Microsoft Intune"
+title: "手动同步 Windows 设备 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: ff5a4313337c89da00cb87e0f4dd6c8dcc233361
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-
 # <a name="sync-your-windows-device-manually"></a>手动同步 Windows 设备
-如果你的应用安装所需时间过长，则可尝试手动同步 Windows 设备。 手动同步可能有助于加快安装速度。
 
-仅支持以下版本。 如果未列出你的设备，则不支持同步。 请使用与你的设备类型相匹配的说明。
+有时在 Windows 设备上尝试安装应用可能会比预计时间长。 如果发生这种情况，可尝试手动同步 Windows 设备。 同步可能会帮助提高安装速度。
 
-* [Windows 10 移动版](#windows-10-mobile)
-* [Windows 10 桌面版](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-81)
+> [!Note]
+> 如果网络速度较慢或同时下载内容的设备数量较多，应用可能需要一段时间才能完成安装。
 
+以下 Windows 版本可手动同步。 遗憾的是，如果设备使用的是其他版本的 Windows，则无法启动手动同步。
 
-## <a name="windows-10-mobile"></a>Windows 10 移动版
-若要手动同步你的 Windows 10 移动设备，以加快较慢的应用安装的速度：
-
-1. 请转到**所有应用**  >  **设置**  >  **帐户**。
-
-    ![在“设置”屏幕上选择帐户](./media/win10m-sync-1-settings-accounts.png)
-
-2. 选择“工作单位访问”。
-
-    ![选择工作单位访问作为帐户类型](./media/win10m-sync-2-work-access.png)
-
-3. 在“注册到设备管理”下，选择你的公司名称。
-
-    ![为设备管理选择公司名称](./media/win10m-sync-3-tap-comp-name.png)
-
-4. 选择“同步”图标。
-
-    ![选择“同步”图标](./media/win10m-sync-4-tap-sync.png)
-
-    屏幕顶部将显示“我们正在同步你的帐户”消息。 设备完成同步前，“同步”按钮将灰显。
+* [同步 Windows 10 桌面版](#windows-10-desktop)
+* [同步 Windows 10 移动版](#windows-10-mobile)
+* [同步 Windows Phone 8.1](#windows-phone-81)
 
 ## <a name="windows-10-desktop"></a>Windows 10 桌面版
 由于存在多个 Windows 10 版本，因此有两组步骤。 若要了解使用哪组步骤，可查看屏幕截图，然后按照设备上显示的步骤执行操作。
@@ -109,6 +94,27 @@ ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
    在同步完成之前，该按钮将变为灰显。
 
+   ## <a name="windows-10-mobile"></a>Windows 10 移动版
+   若要手动同步你的 Windows 10 移动设备，以加快较慢的应用安装的速度：
+
+   1. 请转到**所有应用**  >  **设置**  >  **帐户**。
+
+       ![在“设置”屏幕上选择帐户](./media/win10m-sync-1-settings-accounts.png)
+
+   2. 选择“工作单位访问”。
+
+       ![选择工作单位访问作为帐户类型](./media/win10m-sync-2-work-access.png)
+
+   3. 在“注册到设备管理”下，选择你的公司名称。
+
+       ![为设备管理选择公司名称](./media/win10m-sync-3-tap-comp-name.png)
+
+   4. 选择“同步”图标。
+
+       ![选择“同步”图标](./media/win10m-sync-4-tap-sync.png)
+
+       屏幕顶部将显示“我们正在同步你的帐户”消息。 设备完成同步前，“同步”按钮将灰显。
+
 ## <a name="windows-phone-81"></a>Windows Phone 8.1
 若要手动同步你的 Windows Phone 8.1 设备，以加快较慢的应用安装的速度：
 
@@ -127,9 +133,4 @@ ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
    设备完成同步前，屏幕顶部将显示“我们正在同步你的帐户”消息。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
