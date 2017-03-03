@@ -20,10 +20,10 @@ ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: f80c6e7089519860e822f974753ac9dc0356e055
+ms.lasthandoff: 01/24/2017
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Android 设备后会发生什么情况？
 
@@ -60,9 +60,4 @@ ms.openlocfilehash: f80c6e7089519860e822f974753ac9dc0356e055
 -   发送任何公司应用清单更新。 （这些更新不包含任何个人信息。）
 
 需要帮助吗? 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 [Microsoft Android 团队](mailto:wintunedroidfbk@microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
