@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0e4d08c4fd66bb1ae3fe683db503915725bc3134
-ms.openlocfilehash: 5f09c46e7dcd5aabc603838ce60a1e8e7fed694e
+ms.sourcegitcommit: 6bc3afe58d5e0f1f12c8b6c6fc62e37d01cd5132
+ms.openlocfilehash: cab9833a1e1b92c156a2eb77411436289c70ad71
 
 
 ---
@@ -25,6 +26,54 @@ ms.openlocfilehash: 5f09c46e7dcd5aabc603838ce60a1e8e7fed694e
 此页是 [Microsoft Intune 的新增功能](whats-new-in-microsoft-intune.md)中的声明列表。
 
 [!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+
+## <a name="july-2016"></a>2016 年 7 月
+
+### <a name="app-management"></a>应用管理
+
+__改善应用预配配置文件更新体验__ Apple iOS 业务线移动应用附带预配配置文件和证书签名的代码。 当应用在 iOS 设备上运行时，iOS 会确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。
+
+用于签署应用的企业签名证书通常持续 3 年。 但是，预配配置文件将在 1 年后过期。 利用此更新，Intune 会为你提供一些工具，用于主动地将新预配配置文件策略部署到安装了即将到期的应用而证书仍有效的设备。 有关详细信息，请参阅[使用 iOS 移动预配配置文件策略以保持你的业务线应用最新](/intune/deploy-use/ios-mobile-app-provisioning-profiles)。
+<!--- TFS 1280247--->
+
+__用于 Intune 应用的 SDK Xamarin 已推出__ Intune App SDK Xamarin 组件允许在使用 Xamarin 生成的移动 iOS 和 Android 应用中启用 Intune 移动应用管理功能。 你可以在 [Xamarin 应用商店](https://components.xamarin.com/view/Microsoft.Intune.MAM)中或在 [Microsoft Intune Github 页面](https://github.com/msintuneappsdk)上找到该组件。
+<!--- TFS 1061478 --->
+
+### <a name="device-management"></a>设备管理
+__提高了设备注册限制__ Intune 将每个用户的最大可配置设备注册限制从 5 提高到了 15。
+<!---TFS 1289896 --->
+
+__运行 Intune 客户端软件的 Windows 电脑的 TeamViewer 集成__
+运行 Intune 客户端的 Windows 电脑的 [TeamViewer](https://www.teamviewer.com) 集成能够实现与 Windows 电脑建立远程协助会话，从而帮助支持最终用户支持部门。 这包括 Windows 7、Windows 8、Windows 8.1 和 Windows 10。 有关详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)。
+<!---TFS 1284856--->
+
+### <a name="company-portal-updates"></a>公司门户更新
+
+__公司门户网站__
+- **改善了注册 Windows 设备时的最终用户体验**<br/>
+使用条件访问时，Windows 8.1、Windows 10 桌面版和 Windows 10 移动版的注册步骤已在公司门户网站中阐明。 用户现在将看到单独的“设备注册”和“工作区加入”步骤，从而在他们遇到工作区加入 (WPJ) 失败时更易于看到设备的状态以及完成此过程。 执行单独的步骤还可以简化 IT 管理员排除故障的过程。 以前，当最终用户尝试注册并且 WPJ 除外的所有注册步骤都成功时，已注册的设备将不出现在用户要标识的设备列表中，因而使用户感到困惑。
+
+__Android__
+- **Android 公司门户应用**<br/>
+如果 Android 最终用户看到一条错误消息，指出其设备缺少所需的证书，用户可以点击“如何解决此问题”按钮以获取安装缺少的证书的[步骤](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)。 如果用户完成这些步骤，但看到另一条“缺少证书”的错误消息，系统会要求用户联系其 IT 管理员，并提供此[链接](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)，其中包含 IT 管理员可以用于解决证书问题的步骤。
+
+- **限制旁加载的应用安装到注册的设备**<br/>
+Android 设备不能再通过公司门户网站安装应用程序，除非使用适用于 Android 的 Intune 公司门户应用已在 Intune 中注册设备。
+<!---TFS 1299082--->
+
+__iOS__
+- **对 iOS 公司门户应用中设备注册管理器帐户的更改**<br/>
+若要提高性能和可扩展性，Intune 不再在 iOS 公司门户应用的“**我的设备**”窗格中显示所有设备注册管理器 (DEM) 设备。 仅显示运行该应用的本地设备，且仅限该设备通过公司门户应用注册的情况下。
+
+DEM 用户可能会在本地设备上执行操作，但只能从 Intune 管理员控制台远程管理其他已注册设备。 此外，Intune 将不支持通过 Apple 设备注册计划或 Apple 配置器工具使用 DEM 帐户。 这两种注册方法已支持共享的 iOS 设备的无用户注册。
+
+当共享设备的无用户注册不可用时，仅使用 DEM 帐户。 有关详细信息，请参阅[使用 Microsoft Intune 中的“设备注册管理器”注册企业自有设备](https://docs.microsoft.com/en-us/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
+<!---TFS 1233681--->
+
+### <a name="change-of-names-for-windows-features"></a>对 Windows 功能名称的更改
+- [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) 现在称为 **Windows Hello 企业版**。
+- [企业数据保护](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune)现在称为 **Windows 信息保护**。
+
 
 ## <a name="june-2016"></a>2016 年 6 月
 ### <a name="intune-service-health"></a>Intune 服务运行状况
@@ -170,6 +219,6 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

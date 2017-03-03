@@ -2,8 +2,8 @@
 title: Exchange Connector for Exchange Online | Microsoft Docs
 description: "将 Intune 连接到 Office 365 Exchange 服务以支持 Exchange ActiveSync 移动设备管理 (MDM)。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2

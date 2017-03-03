@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: 7009cf7626008124e4c8a71198e21ae6def93581
+ms.sourcegitcommit: 211b996263aae7a42f8370eb343c7e759ef87790
+ms.openlocfilehash: 5aae8edd2b851eb94156e82bc9b6e604644cb900
 
 
 ---
@@ -35,7 +36,7 @@ Android 日志位于 *<Android Device>\Phone\Android\data\com.microsoft.windowsi
 
 - [使用详细日志记录帮助 IT 管理员修复设备问题](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) - 介绍用户如何启用详细日志记录（自动发送其所有数据日志）。 在默认情况下，详细日志记录处于启用状态。
 
-- [使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune/enduser/send-logs-to-your-it-admin-by-email-android)
 
 - [使用 USB 电缆将诊断数据日志发送给 IT 管理员](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 
@@ -59,6 +60,6 @@ Android 日志位于 *<Android Device>\Phone\Android\data\com.microsoft.windowsi
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

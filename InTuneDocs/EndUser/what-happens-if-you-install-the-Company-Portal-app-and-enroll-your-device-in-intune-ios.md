@@ -1,11 +1,11 @@
 ---
-title: "如果安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS 设备会怎样？ |Microsoft Docs"
+title: "安装 iOS 和 macOS 适用的公司门户应用 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -37,36 +38,6 @@ ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
 -   自动设置公司电子邮件帐户。
 
 在 Intune 中注册设备时，会向 IT 管理员授予管理设备的权限，以帮助保护设备上的公司信息。
-
-**IT 管理员不能看到的内容**
-
--   调用和 Web 历史记录
-
--   位置
-
--   电子邮件和短信
-
--   联系人
-
--   密码
-
--   日历
-
--   照相机胶卷
-
-**IT 管理员能够看到的内容**
-
--   型号
-
--   序列号
-
--   操作系统
-
--   应用名称
-
--   Owner
-
--   设备名称
 
 注册设备后，IT 管理员可以：
 
@@ -98,6 +69,6 @@ ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "从公司门户网站远程锁定设备 | Microsoft Docs"
+title: "从公司门户锁定设备 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
+ms.sourcegitcommit: 7f2bd282056b035b6f7008db4159d1e2f44953a5
+ms.openlocfilehash: 424d3deedbec2ba28d6c92d0ccd1cb8dc26845b4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -39,15 +41,21 @@ ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>使用“远程锁定”锁定你的设备
 
-1.  在[公司门户网站](http://portal.manage.microsoft.com)中，点击要锁定设备的名称。
+1.    在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
-2.  点击**远程锁定**。
+  ![公司门户网站的图像，屏幕左侧有展开的侧菜单，其中包括“主页”、“所有应用”、“我的设备”、“支持人员”和“注销”按钮。](/media/iwp-expanded-sidebar.png)
 
-    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+2. 在“我的设备”页上，选择想要锁定的设备名称。
 
-3.  将显示一条通知，告知你将要锁定你的设备。 点击“远程锁定”，公司门户网站将尝试锁定你的设备。
+  ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
 
-    点击“远程锁定”后，将出现“远程锁定挂起”消息。  “远程锁定”成功后，状态将更改为“远程锁定成功”。
+3.    设备将在弹出窗口中打开。 点击“远程锁定”按钮。
+
+    ![公司门户网站上已选设备的所有选项，包括重命名、删除、重置设备、重置密码和远程锁定。 ](./media/iwp-screen-with-all-options.png)
+
+4.    将显示一条通知，告知你将要锁定你的设备。 点击“远程锁定”，公司门户网站将尝试锁定你的设备。
+
+    选择“远程锁定”后，将出现“远程锁定挂起”消息。  “远程锁定”成功后，状态将更改为“远程锁定成功”。
 
     该“远程锁定”状态将在以下三个位置中显示：
 
@@ -61,9 +69,4 @@ ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
 如果使用“远程锁定”后找到了设备并希望对其进行解锁，则只需输入你的密码。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

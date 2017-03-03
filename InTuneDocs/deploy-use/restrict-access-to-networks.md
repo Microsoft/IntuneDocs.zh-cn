@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
 ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
@@ -154,7 +155,7 @@ b。 选择锁定图标&gt;“详细信息”。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune 租户和 Cisco ISE 服务器之间共享的信息
 此表列出了你的 Intune 租户和用于由 Intune 托管的设备的 Cisco ISE 服务器之间共享的信息。
 
-|属性|  描述|
+|属性|    描述|
 |---------------|------------------------------------------------------------|
 |complianceState|指示设备是否合规的 true 或 false 字符串。|
 |isManaged|指示客户端是否由 Intune 托管的 true 或 false 字符串。|

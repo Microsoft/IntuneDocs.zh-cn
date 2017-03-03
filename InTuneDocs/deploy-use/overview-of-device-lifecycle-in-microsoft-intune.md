@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 106b24e73a21d7cd8608c44c4dd7ded4c0eebe4f
+ms.sourcegitcommit: b7a066c1387a97d6100be0e6ab22d78222bf2a30
+ms.openlocfilehash: 3311ba5081c4b04d72fdeb1f9a558ffc2e1b02fc
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -40,15 +42,10 @@ ms.openlocfilehash: 106b24e73a21d7cd8608c44c4dd7ded4c0eebe4f
 
 ## <a name="protect"></a>保护
 在现代 IT 世界中，保护设备免受未经授权的访问是你要执行的最重要的任务之一。 除了设备生命周期的**配置**步骤中的项之外，Intune 还提供以下功能来帮助保护你管理的设备免受未经授权的访问或恶意攻击：
-- [**Multi-Factor Authentication**](protect-windows-devices-with-multi-factor-authentication.md)。 对用户登录添加一层额外的身份验证可以帮助增强设备安全性。 Windows、Windows Phone 和 Windows Mobile 设备提供 Multi-Factor Authentication，这要求提供第二重身份验证（如电话呼叫或短信），用户才能获得访问权限。
+- [**Multi-Factor Authentication**](protect-your-devices-with-microsoft-intune.md)。 对用户登录添加一层额外的身份验证可以帮助增强设备安全性。 很多设备支持多重身份验证，这要求提供第二重身份验证（如电话呼叫或短信），用户才能获得访问权限。
 - [**Microsoft Passport 设置**](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)。 Microsoft Passport 是一种备用登录方法，可让用户使用*手势*（如指纹或 Windows Hello）而无需密码进行登录。
 - [**保护 Windows 电脑的策略（使用 Intune 客户端软件）**](policies-to-protect-windows-pcs-in-microsoft-intune.md)。 当你使用 Intune 客户端软件管理 Windows 电脑时，可以使用允许你在所管理的电脑上控制 Endpoint Protection、软件更新和 Windows 防火墙的设置的策略。
 
 ## <a name="retire"></a>停用
 当设备丢失或被盗、需要更换，或当用户移到另一个位置时，通常需要[停用或擦除](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)设备。 有多种方法可以完成此操作，包括重置设备、从管理将其删除以及擦除其上的公司数据。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

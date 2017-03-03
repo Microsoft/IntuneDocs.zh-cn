@@ -2,19 +2,20 @@
 title: "远程锁定和密码重置 | Microsoft Docs"
 description: "Intune 提供远程锁定和密码重置功能。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 01/06/17
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>使用远程锁定和密码重置功能帮助保护设备
@@ -24,7 +25,7 @@ ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 Microsoft Intune 提供远程锁定和密码重置功能。
 
 ## <a name="lock-a-device-remotely"></a>远程锁定设备
-如果用户丢失其设备，你可以远程锁定该设备。 设备必须已设置 PIN 或密码才能使用远程锁定。 
+如果用户丢失其设备，你可以远程锁定该设备。 设备必须已设置 PIN 或密码才能使用远程锁定。
 
 下表列出了是如何在不同的移动平台上进行远程锁定的。
 
@@ -33,7 +34,8 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 |macOS|不支持|
 |iOS|支持|
 |Android|支持|
-|Windows 10 和 Windows 10 移动版|支持|
+|Windows 10（移动版）|支持|
+|Windows 10（桌面版）|不支持|
 |Windows Phone 8 和 Windows Phone 8.1|支持|
 |Windows RT 8.1 和 Windows RT|如果设备的当前用户是注册设备的相同用户，则支持。|
 |Windows 8.1|如果设备的当前用户是注册设备的相同用户，则支持。|
@@ -84,6 +86,6 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

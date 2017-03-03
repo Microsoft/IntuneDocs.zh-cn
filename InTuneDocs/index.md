@@ -15,8 +15,8 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
-ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -25,15 +25,15 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
     <section id="hero-content">
       <h1>Intune 文档</h1>
       <h2>通过云实现的移动设备管理和应用管理以及电脑管理。 </h2>
-      <h3>要使用 Configuration Manager 管理 Intune？ <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Read about hybrid mobile device management &rarr;（了解混合移动设备管理）</a></h3>
+      <h3>要使用 Configuration Manager 管理 Intune？ <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">了解混合移动设备管理&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">150 多个许可证？ 利用 FastTrack 权益</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">150 多个许可证？利用 FastTrack 权益</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune 的常见使用方式</a></li>
-          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure 门户预览版中的 Intune</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure 门户预览中的 Intune</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">保护对公司资源的访问</a></li>
@@ -140,7 +140,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>要告知最终用户的信息</h3>
                     <p>了解你的最终用户需要执行哪些步骤才能配合 Intune 使用其设备，并将这些信息与最终用户共享，以帮助他们自行完成任务。</p>
                   </a>
@@ -278,13 +278,13 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
       <p>关注 Intune 最新信息</p>
       <ol class="action-list">
         <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune 团队博客</a></li>
-        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">Twitter 上的 @MSIntune</a></li>
+        <li>Twitter 上的 <a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

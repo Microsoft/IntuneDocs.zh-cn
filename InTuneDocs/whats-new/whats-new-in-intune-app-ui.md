@@ -1,0 +1,76 @@
+---
+title: "Intune 最终用户应用的 UI 更新 | Microsoft Docs"
+description: "了解 Intune 中针对最终用户设备上可用的应用所做的 UI 更改。"
+keywords: 
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 02/15/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
+ms.reviewer: priyar
+ms.suite: ems
+ms.custom: intune-classic
+translationtype: Human Translation
+ms.sourcegitcommit: bac9e6784ed6814d27bec9ad07b507facc9e8fc2
+ms.openlocfilehash: 48fe5f0a124a6608434f87905c24cda822fe63b7
+
+
+---
+# <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
+了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户之间的通信以及用于支持部署的已创建的任何更新自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+
+> [!Note]
+> 请注意，以下图像为预览版，发布的产品可能与当前版本有所不同。
+
+## <a name="whats-coming"></a>即将推出
+
+### <a name="february-2017"></a>2017 年 2 月
+
+#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android 适用的公司门户应用的最新用户体验<!--621622, announced 1702-->
+从&3; 月开始，Android 适用的公司门户应用将按照[材料设计指南](https://material.io/guidelines/material-design/introduction.html)来打造更具现代感的外观。 这将改善以下用户体验：
+
+* __颜色__：可以根据自定义调色板对选项卡标头着色。
+
+![左侧为更新之前的 Android 适用的公司门户应用的图像。 右侧为更新之后的 Android 适用的公司门户应用的图像。 两张图像中都选定了“应用”、“设备”和“联系 IT”三个可用选项卡中的“设备”选项卡。](./media/CP_Android_DevicesTab_BeforeAfter.png)
+
+* __界面__：“应用”选项卡上已更新了“特色应用”和“所有应用”按钮。 “搜索”按钮现在是浮动的操作按钮。
+
+![左侧为更新之前的 Android 适用的公司门户应用的图像。 右侧为更新之后的 Android 适用的公司门户应用的图像。 两张图像中都选定了“应用”、“设备”和“联系 IT”三个可用选项卡中的“应用”选项卡。](./media/CP_Android_AppsTab_BeforeAfter.png)
+
+* __导航__：“所有应用”以选项卡形式呈现出“特色”、“所有”和“分类”视图，便于导航。 “联系 IT”已经简化，改善了可读性。
+
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/en-us/InTune/whats-new/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width=200 height=366 align=center>
+          </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+### <a name="january-2017"></a>2017 年 1 月
+
+#### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>公司门户网站现代化<!--753980, announced 1701-->
+从&2; 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![（汉堡菜单的小图，该图片现已添加到公司门户网站左上角，](./media/CP_hamburger_menu.png) 它包括了支持人员详细联系信息和现有托管设备的信息），这与 Microsoft 其他产品和服务保持一致。 将重新排列登录页，强调可供用户使用的应用，登录页上具有针对特色应用和最近更新应用的传送。
+
+![左侧是当前版本的公司门户网站的图像，其中包含之前版本的应用、“我的设备”以及“特别推荐”视图和“类别”视图。 右侧是更新版本的公司门户网站的图像，其中包含刷新的应用轮播、“最近发布”的应用列表和更新的“类别”视图。](./media/CP_Website_BeforeAfter_Feb2016.png)
+
+
+### <a name="see-also"></a>另请参阅
+* [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [云平台路线图](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Azure 预览版的新增功能](https://docs.microsoft.com/intune-azure/introduction/whats-new)
+* [新增功能存档](whats-new-archive.md)
+
+
+
+<!--HONumber=Feb17_HO3-->
+
+

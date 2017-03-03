@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: ddfd4e8a23f1a7e20230c188ac8203a11e48c4a6
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 178fbaeb1d3235a81cb4da49b7a955f6999c49a2
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -677,7 +679,7 @@ public final class MAMDataProtectionManager {
      * @param input
      *            Input stream to get information on. Either this input
  *            stream must have been returned by a previous call to
-     *            protect OR input.markSupported() must return true.
+      *            protect OR input.markSupported() must return true.
  *            Otherwise it will be impossible to get protection info
  *            without advancing the stream position. The stream must be
  *            positioned at the beginning of the protected data.
@@ -752,9 +754,4 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 * 派生的任何函数都必须调用到其超类版本。
 
 * 避免以不明确的方式使用任何 API。 例如，使用 `Activity.startActivityForResult/onActivityResult` 而不检查 `requestCode` 会导致奇怪的行为。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

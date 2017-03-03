@@ -1,5 +1,5 @@
 ---
-title: "保护对 Exchange 内部部署的电子邮件访问 | Microsoft Docs"
+title: "保护发送到 Exchange 内部部署的电子邮件 | Microsoft Docs"
 description: "使用条件访问保护和控制对本地 Exchange 的公司电子邮件的访问。"
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
@@ -24,28 +25,31 @@ ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+可通过 Microsoft Intune 配置对 Exchange 内部部署或旧版 Exchange Online Dedicated 的条件性访问，以控制电子邮件的访问。
+若要了解有关条件性访问如何工作的详细信息，请阅读文章[保护对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
+
 > [!NOTE]
 > 如果具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
 
+## <a name="before-you-begin"></a>在开始之前
 
-若要控制对 Exchange 内部部署或旧版 Exchange Online Dedicated 环境的电子邮件访问，可通过 Microsoft Intune 配置对 Exchange 内部部署的条件性访问。
-若要了解有关条件性访问如何工作的详细信息，请阅读文章[保护对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
-
-在可配置条件性访问**之前**，请先验证以下内容：
+请务必验证以下各项：
 
 -   你的 Exchange 版本必须是 **Exchange 2010 或更高版本**。 支持 Exchange Server 客户端访问服务器 (CAS) 阵列。
 
--   必须使用**本地 Exchange 连接器**，它将 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 连接到 Exchange 内部部署。 这样就可以通过 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台管理设备。 有关连接器的详细信息，请参阅 [Intune 本地 Exchange 连接器](intune-on-premises-exchange-connector.md)。
+-   必须使用 [Intune 本地 Exchange Connector](intune-on-premises-exchange-connector.md)，该连接器可将 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 连接到 Exchange 内部部署。 这样就可以通过 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台管理设备。
 
-    -   Intune 控制台中可供你使用的本地 Exchange 连接器特定于你的 Intune 租户，且不能用于其他任何租户。 建议你同时确保**仅在一台计算机上**安装适用于你的租户的 Exchange 连接器。
+    -   Intune 控制台中可供你使用的本地 Exchange Connector 特定于你的 Intune 租户，且不能用于其他任何租户。 建议你同时确保**仅在一台计算机上**安装适用于你的租户的 Exchange Connector。
 
-        可从 Intune 管理控制台下载连接器。 有关如何配置本地 Exchange 连接器的演练，请参阅[为本地或托管 Exchange 配置 Exchange 本地连接器](intune-on-premises-exchange-connector.md)。
+        可从 Intune 管理控制台下载连接器。 有关如何配置本地 Exchange Connector 的演练，请参阅[为本地或托管 Exchange 配置 Exchange 本地连接器](intune-on-premises-exchange-connector.md)。
 
     -   可在任何计算机上安装该连接器，只要该计算机可与 Exchange 服务器通信。
 
     -   此连接器支持 **Exchange CAS 环境**。 从技术上讲，如果你愿意，可直接在 Exchange CAS 服务器上安装该连接器。 但不建议这样做，因为这样做会增加服务器上的负载。 配置连接器时，必须对其进行设置，以便与其中一个 Exchange CAS 服务器通信。
 
 -   必须使用基于证书的身份验证或用户凭据条目来配置 **Exchange ActiveSync**。
+
+### <a name="device-compliance-requirements"></a>设备合规性要求
 
 配置条件性访问策略并将它们面向用户时，在用户可以连接到其电子邮件前，他们使用的**设备**必须：
 
@@ -57,11 +61,13 @@ ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 -   **符合**任何部署到该设备的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>条件性访问对 Exchange 内部部署的作用方式
+
 下图显示了 Exchange 内部部署的条件性访问策略用于评估是允许还是阻止设备的流程。
 
 ![图示显示了确定是允许访问还是阻止设备访问 Exchange 内部部署的决策点](../media/ConditionalAccess8-2.png)
 
-如果不满足条件性访问策略，用户在登录时将看到以下消息之一：
+如果未满足条件访问策略，则用户在登录时，收到以下隔离邮件之一与设备被阻止之间的时间间隔为 10 分钟：
 
 - 如果设备未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用、注册设备和激活电子邮件的说明。 此过程也将设备的 Exchange ActiveSync ID 和 Azure Active Directory 中的设备记录相关联。
 
@@ -121,11 +127,11 @@ ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 -   不需要部署条件访问策略—它会立即生效。
 
--   用户设置 Exchange ActiveSync 配置文件后，可能需要 1-3 小时设备才会被阻止（如果它不由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理）。
+-   用户设置 Exchange ActiveSync 配置文件后，可能需要&1;-3 小时设备才会被阻止（如果它不由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理）。
 
--   如果被阻止的用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备并更正非合规性，将在 2 分钟内解除电子邮件访问阻止。
+-   如果被阻止的用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备并更正非合规性，将在&2; 分钟内解除电子邮件访问阻止。
 
--   如果用户从 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 取消注册，可能需要 1-3 小时设备才会被阻止。
+-   如果用户从 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 取消注册，可能需要&1;-3 小时设备才会被阻止。
 
 **若要查看如何配置条件性访问策略以保护设备访问的示例方案，请参阅[保护电子邮件访问的示例方案](restrict-email-access-example-scenarios.md)。**
 
@@ -136,6 +142,6 @@ ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

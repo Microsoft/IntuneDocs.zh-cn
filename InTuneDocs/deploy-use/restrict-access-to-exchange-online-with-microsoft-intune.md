@@ -1,11 +1,11 @@
 ---
-title: "保护对 Exchange Online 的电子邮件访问 | Microsoft Docs"
+title: "保护发送到 Exchange Online 的电子邮件 | Microsoft Docs"
 description: "使用条件访问保护和控制对 Exchange Online 的公司电子邮件的访问。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -25,24 +26,26 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+可通过 Microsoft Intune 配置对 Exchange Online 或 Exchange Online Dedicated 的条件性访问。 若要深入了解条件访问的工作原理，请阅读[保护对电子邮件、O365 服务和其他服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
+
 > [!NOTE]
 >如果具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
 
-若要控制对 Exchange Online 或新版 Exchange Online Dedicated 环境的电子邮件访问，可使用 Microsoft Intune 配置 Exchange Online 的条件性访问。 若要深入了解条件访问的工作原理，请阅读[保护对电子邮件、O365 服务和其他服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
+## <a name="before-you-begin"></a>在开始之前
 
-
-在你可以配置条件性访问**之前**，必须：
+若要配置条件性访问，必须：
 
 -   拥有**包含 Exchange Online（例如 E3）的 Office 365 订阅**，并且用户必须获得 Exchange Online 许可。
 
 - 具有**企业移动性 + 安全性 (EMS) 订阅**或 **Azure Active Directory (Azure AD) Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
 
 -  请考虑配置可选的“Intune 服务间连接器”，它将 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 连接到 Exchange Online，并通过 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台帮助你管理设备信息。 不需要通过连接器来使用合规性策略或条件性访问策略，但要求运行帮助评估条件性访问影响的报告。
+    -  了解有关 [Intune Service-to-Service Connector](intune-service-to-service-exchange-connector.md) 的详细信息。
 
    > [!NOTE]
-   > 如果要同时对 Exchange Online 和 Exchange 内部部署使用条件性访问，则不要配置服务间连接器。
+   > 若要同时对 Exchange Online 和 Exchange 内部部署使用条件访问，则不要配置 Intune Service-to-Service Connector。
 
-   有关如何配置连接器的说明，请参阅 [Intune 服务间连接器](intune-service-to-service-exchange-connector.md)。
+### <a name="device-compliance-requirements"></a>设备合规性要求
 
 配置条件性访问策略并将它们面向用户时，在用户可以连接到其电子邮件前，他们使用的**设备**必须：
 
@@ -54,12 +57,15 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 -   **符合**任何已部署到该设备或已加入到本地域的域的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
 
-如果不满足条件性访问策略，用户在登录时将看到以下消息之一：
+### <a name="when-the-device-is-not-compliant"></a>设备不合规时
+
+如果不满足条件访问策略，则设备将立即被隔离，并且用户会收到一封电子邮件，告知他们在登录时将看到以下隔离通知之一：
 
 - 如果设备未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用、注册设备和激活电子邮件的说明。 此过程也将设备的 Exchange ActiveSync ID 和 Azure Active Directory 中的记录相关联。
 
 -   如果设备被评估为不符合合规性策略规则，会将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站或公司门户应用，从中他们可以找到有关问题以及其修正方法的信息。
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>条件性访问对 Exchange Online 的作用方式
 
 下图显示了 Exchange Online 条件性访问策略使用的流程。
 
@@ -70,7 +76,6 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本以及 Android for Work
 - iOS 8.0 及更高版本
-- Windows Phone 8.1 及更高版本
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,7 +90,8 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 * Chrome (Android)
 * Intune Managed Browser（iOS、Android 5.0 及更高版本）
 
-**将阻止不受支持的浏览器**。
+   > [!IMPORTANT]
+   > **将阻止不受支持的浏览器**。
 
 **适用于 iOS 和 Android 的 OWA 应用可修改为不使用新式验证且不受支持。必须通过 ADFS 声明规则阻止来自 OWA 应用的访问。**
 
@@ -204,7 +210,7 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
         这要求用于访问 **Exchange Online** 的任何设备已在 Intune 中注册且符合策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果目前 Intune 不支持该平台，则会阻止对 **Exchange Online** 的访问。
 
         选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需已注册并合规，以下各项除外：
-        *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
+        *    Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
         * 不受支持的平台，如 Mac OS。 但是，仍将阻止使用来自这些平台的新式验证的应用。
 
     -   **特定平台**
@@ -272,6 +278,6 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

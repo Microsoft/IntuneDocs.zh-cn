@@ -1,5 +1,5 @@
 ---
-title: "保护对 SharePoint Online 的访问 | Microsoft Docs"
+title: "保护 SharePoint Online | Microsoft Docs"
 description: "使用条件访问保护和控制对 SharePoint Online 上公司数据的访问。"
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -143,7 +144,7 @@ ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
         这要求用于访问 **SharePoint Online** 的设备已在 Intune 中注册且符合相应的策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果 Intune 当前不支持该平台，则会阻止对 **SharePoint Online** 的访问。
 
         选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需为已注册并合规，以下各项除外：
-        *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
+        *    Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
         * 不受支持的平台，如 Mac。 但是，仍将阻止使用来自这些平台的新式验证的应用。
 
     -   **特定平台**
@@ -153,8 +154,6 @@ ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
      对于 Windows 电脑，电脑必须已加入域，或是已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册并且合规。 可以设置以下要求：
 
      -   **设备必须已加入域或必须是合规的。** 选择此选项要求电脑必须已加入域或符合在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中设置的策略。 如果电脑不满足任一要求，则系统会提示用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备。
-
-     -   **设备必须已加入域。** 选择此选项要求电脑必须已加入域，才能访问 Exchange Online。 如果电脑未加入域，则系统会阻止对电子邮件的访问，并且提示用户与 IT 管理员联系。
 
      -   **设备必须是合规的。** 选择此选项要求电脑必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中注册并且必须合规。 如果电脑未注册，则会显示一条消息，其中包含有关如何注册的说明。
 
@@ -199,6 +198,6 @@ ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

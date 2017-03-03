@@ -2,8 +2,8 @@
 title: "移动设备的 Exchange 访问规则 | Microsoft Docs"
 description: "Exchange ActiveSync 访问规则以允许或阻止设备与 EAS 的连接"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835

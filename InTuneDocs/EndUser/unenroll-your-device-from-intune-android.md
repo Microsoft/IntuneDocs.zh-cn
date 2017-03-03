@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +13,39 @@ ms.technology:
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
-ms.openlocfilehash: 098fc108bb423f80a52e27fabfe2dfeb0124d72e
+ms.sourcegitcommit: d10e764b5444f21f6151286e85d6f47dd02d5206
+ms.openlocfilehash: febc9a65ac004a05d6fdbf86a033a5a993ee7ec9
 
 
 ---
 
 
-# <a name="unenroll-your-android-device-from-intune"></a>从 Intune 取消注册 Android 设备
+# <a name="how-to-unenroll-your-android-device-from-intune"></a>如何从 Intune 取消注册 Android 设备
 
-当从 Intune 取消注册你的 Android 设备时，该设备无法再访问公司资源。  若要了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)。
+当从 Intune 取消注册你的 Android 设备时，该设备无法再访问公司资源。  若要了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
 若要从 Intune 取消注册设备并卸载公司门户应用，请按照下列步骤操作或观看此视频：
 
 <iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
 
-1.  登录到公司门户应用。
+1. 打开“设置”应用，打开“设备管理员”，然后关掉“公司门户”。 根据设备不同，“设备管理员”设置在首选项列表中的名称或位置可能稍有不同。
 
-2.  点击“我的设备”，然后选择要取消注册的设备。
+2.  登录到公司门户应用。
+
+3.  点击“我的设备”，然后选择要取消注册的设备。
 
     ![选择要取消注册的设备。](./media/andr-1-my-devices-choose.png)
 
-3.  点击回收站图标。
+4.  点击回收站图标。
 
     ![点击回收站图标。](./media/andr-2-tap-trashcan.png)
 
-4.  在警告页上，点击“确定”以取消注册你的设备。
+5.  在警告页上，点击“确定”以取消注册你的设备。
 
     ![删除设备。](./media/andr-3-warning-about-remove.png)
 
@@ -49,6 +53,6 @@ ms.openlocfilehash: 098fc108bb423f80a52e27fabfe2dfeb0124d72e
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

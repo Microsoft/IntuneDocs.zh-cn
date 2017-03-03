@@ -1,5 +1,5 @@
 ---
-title: "保护对 Dynamics CRM Online 的访问 | Microsoft Docs"
+title: "保护 Dynamics CRM Online | Microsoft Docs"
 description: "使用条件访问保护和控制对 Dynamics CRM Online 的访问。"
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 
 
 ---
@@ -81,8 +82,8 @@ ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
   * **iOS**
   * **Android**
 4.  在“目标组”下，选择“修改”以选择将应用策略的 Azure Active Directory 安全组。 你可以选择将此应用于所有用户或仅针对选择的用户组。
-5.  或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
-6.  完成后，选择“保存”。
+5.    或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
+6.    完成后，选择“保存”。
 
 现在你已配置了Dynamics CRM 的条件访问。 条件性访问策略无需部署，其立即生效。
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>监视遵从性和条件性访问策略
@@ -104,6 +105,6 @@ ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

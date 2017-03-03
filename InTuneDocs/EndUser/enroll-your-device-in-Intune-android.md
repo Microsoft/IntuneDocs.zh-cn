@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,13 @@ ms.technology:
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3da636b15807623bb60895870e6d43cd2e0aa01c
-ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: b1de425a00e3c4200f71c8bf03661e4d0aca45c7
 
 
 ---
@@ -25,9 +27,11 @@ ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
 
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 中注册 Android 设备
 
-如果你的公司或学校使用 Microsoft Intune，则可以注册 Android 设备以获取对公司电子邮件、文件和其他资源的访问权限。 注册设备时，IT 部门可以管理这些工作或学校资源，使其保持安全，并使你可以自由地使用首选设备来完成工作。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)。
+如果你的公司或学校使用 Microsoft Intune，则可以注册 Android 设备以获取对公司电子邮件、文件和其他资源的访问权限。 注册设备时，IT 部门可以管理这些工作或学校资源，使其保持安全，并使你可以自由地使用首选设备来完成工作。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 
-这些注册说明适用于 Samsung KNOX Android 设备和“本机”（非 Samsung Knox）Android 设备。 若要检查你拥有的设备是否是 Samsung KNOX 设备，请转到“设置” > “关于设备”。 如果未在此处看到列出了“KNOX 版本”，则你具有本机 Android 设备。
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+这些注册说明适用于本机设备和 Samsung KNOX Android 设备。 Samsung KNOX 是一种安全性，某些 Samsung 设备通过其提供本机 Android 提供的保护之外的额外保护。 若要检查你拥有的设备是否是 Samsung KNOX 设备，请转到“设置” > “关于设备”。 如果未在此处看到列出了“KNOX 版本”，则你具有本机 Android 设备。
 
 注册前/后，系统可能会要求你选择最恰当地描述了你使用设备的方式的类别。 IT 管理员使用此类别来帮助检查你有权访问的应用。
 
@@ -70,7 +74,7 @@ ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
 10.  如果在使用 Android 6.0 或更高版本，则执行此步骤。 否则，请转到下一步。
 
     如果 IT 管理员设置了特定策略，则你可能会看到以下消息：
-    -   **是否允许公司门户发起和管理电话呼叫？**
+    -    **是否允许公司门户发起和管理电话呼叫？**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
@@ -78,7 +82,7 @@ ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
 
     如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
 
-    -   **是否允许公司门户访问你的联系人？**
+    -    **是否允许公司门户访问你的联系人？**
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -116,6 +120,6 @@ ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

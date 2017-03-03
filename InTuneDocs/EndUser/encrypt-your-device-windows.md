@@ -1,11 +1,11 @@
 ---
-title: "加密 Windows 设备 | Microsoft Docs"
+title: "如何通过加密保护 Windows 设备 | Microsoft Docs"
 description: "介绍如何加密 Windows 设备"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
-ms.openlocfilehash: ce4e912259321d72e6bb4278e5b3e8da5cf39332
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: c6414623087ed1a61ca26ca83d6ddccb2b1c1f70
 
 
 ---
 
 
-# <a name="encrypt-your-windows-device"></a>加密你的 Windows 设备
+# <a name="how-to-protect-your-windows-device-using-encryption"></a>如何通过加密保护 Windows 设备
 
-IT 管理员可能会要求你加密你的 Windows 设备以保护公司或学校数据。 如果你有 Windows Phone，并且已经注册，则在需要加密的时候，你的设备将自动进行加密。
+在加密设备时，将设备上的信息包装到一个保护代码层中以防止未经授权的人员访问这些信息。 为确保信息安全，组织会要求加密 Windows 设备，以保护公司或学校数据。
+
+> [!Note]
+> 如果你有 Windows Phone，并且已经注册，则在需要加密的时候，你的设备将自动进行加密。
 
 如果你有桌面设备，则以下说明介绍了如何对它进行加密。
 
@@ -37,6 +42,6 @@ IT 管理员可能会要求你加密你的 Windows 设备以保护公司或学�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

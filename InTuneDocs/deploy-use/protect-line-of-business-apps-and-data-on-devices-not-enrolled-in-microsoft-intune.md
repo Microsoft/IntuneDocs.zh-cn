@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
@@ -46,7 +47,7 @@ ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
 2. 在“业务线应用”边栏选项卡中，选择“添加自定义应用”。
 
   ![“添加自定义应用”按钮位于顶部的“业务线应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-add-lob-app-action.png)
-3.  提供应用名称、应用标识符字段的捆绑标识符以及平台（iOS 或 Android）。
+3.    提供应用名称、应用标识符字段的捆绑标识符以及平台（iOS 或 Android）。
 
   ![“添加自定义应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-add-app-details.png)
 
@@ -71,11 +72,11 @@ ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
 ##  <a name="remove-apps"></a>删除应用
 可从应用列表中删除业务线应用。 这会从列表中删除该应用及与 MAM 策略的关联，但不会从用户设备中删除或卸载该应用。  
 
-1.  在 [Azure 门户](https://portal.azure.com/)中，转到“Intune 移动应用管理” > “设置”。 在**设置**边栏选项卡上，选择**业务线**打开现有应用的列表。  
-2.  选择要删除的应用，并选择“...”上下文菜单。
+1.    在 [Azure 门户](https://portal.azure.com/)中，转到“Intune 移动应用管理” > “设置”。 在**设置**边栏选项卡上，选择**业务线**打开现有应用的列表。  
+2.    选择要删除的应用，并选择“...”上下文菜单。
 
   ![含省略号的“业务线应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-lob-context-menu.png)
-3.  选择**删除应用程序**以删除该应用。
+3.    选择**删除应用程序**以删除该应用。
 
   ![含“删除应用程序”选项的“业务线”边栏选项卡的屏幕截图](../media/mam-azure-portal-delete-app.png)
 

@@ -1,11 +1,11 @@
 ---
-title: "使用 Android for Work 移动应用配置策略 | Microsoft Docs"
+title: "Android for Work 应用配置策略 | Microsoft Docs"
 description: "Intune 中的移动应用配置策略可提供用户在运行 Android for Work 应用时可能需要的设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -28,19 +29,17 @@ ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
 
 Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时可能需要的设置。 例如，应用可能要求用户指定：
 
--   自定义端口号。
+-   自定义端口号
+-   语言设置
+-   公司徽标之类的品牌设置
 
--   语言设置。
+如果用户输入的设置不正确，可能会加重支持人员的负担并降低新应用的采用率。
 
--   公司徽标之类的品牌设置。
+移动应用配置策略可让你在用户运行应用前将这些设置部署到设备。 会自动提供这些设置，用户无需执行任何操作。
 
-如果用户输入的这些设置不正确，可能会加重支持人员的负担并降低新应用的采用率。
+若要利用应用配置策略，应用开发人员必须在创建企业应用配置时公开了配置。 例如，Google Chrome 公开了使你可以设置默认书签、允许和拒绝的站点等内容的设置。 请与应用的开发人员联系，以了解是否支持这些设置以及如何在策略中指定它们。
 
-通过让你在运行应用之前将这些设置部署给用户，移动应用配置策略可消除此类问题。 随后这些设置会自动提供，用户无需执行任何操作。
-
-若要利用应用配置策略，应用的开发人员必须在创建企业应用配置时公开了配置。 例如，Google Chrome 公开了使你可以设置默认书签、允许和拒绝的站点等内容的设置。 请与应用的开发人员联系，以了解是否支持这些设置以及如何在策略中指定它们。
-
-对其部署应用配置策略的用户应与对其部署要配置的应用的用户相同。 每当运行应用时，便会使用策略设置。
+对其部署应用配置策略的用户应与对其部署要配置的应用的用户相同。 运行应用时使用应用设置。
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>配置移动应用配置策略
 
@@ -80,6 +79,6 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "设置锁定设备之前的时间量 | Microsoft Docs"
+title: "如何设置锁定设备之前的时间量 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,18 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 336a71888b729869be5fc325bd82d841f59428de
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: eab9321df021972c91af66ca8b4dc69c8cc8795b
 
 
 ---
 
 
-# <a name="set-the-amount-of-time-before-your-device-is-locked"></a>设置锁定设备之前的时间量
+# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>如何设置锁定设备之前的时间量
 
-若要使 Android 设备上的数据更加安全，IT 管理员可以设置一个策略，要求你设置在设备自动锁定前，它可以保持空闲的时间量。 请按照以下步骤来设置锁定设备之前的时间量。
+若要使 Android 设备上的数据更加安全，IT 管理员可以设置一个策略，要求用户设置在设备自动锁定前，它可以保持空闲的时间量。 请按照以下步骤来设置锁定设备之前的时间量。
 
 1.  在设备的**设置**中，单击**安全**&gt;**自动锁定**（在某些设备上显示为**以下时间后锁定电话**）。
 
@@ -36,8 +37,6 @@ ms.openlocfilehash: 336a71888b729869be5fc325bd82d841f59428de
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

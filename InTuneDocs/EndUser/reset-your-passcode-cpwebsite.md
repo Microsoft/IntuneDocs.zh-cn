@@ -1,11 +1,11 @@
 ---
-title: "如何从公司门户网站重置设备密码 | Microsoft Docs"
+title: "如何从公司门户网站重置密码 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
-ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
+ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
+ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -32,21 +34,26 @@ ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
 
 重置密码：
 
-1.  打开[公司门户网站](http://portal.manage.microsoft.com)，然后选择要重置密码的设备。
+1.    在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
-2.  选择“重置密码”。
+2. 在“我的设备”页上，选择想要重置密码的设备名称。
 
-    ![具有“重置密码”按钮的设备详细信息](./media/iwp-screen-with-all-options.png)
+  ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  选择“注销”，然后使用工作或学校凭据重新登录。 必须在五分钟内重新登录。
+3.    设备将在弹出窗口中打开。 选择“重置密码”按钮。
 
-    ![具有“注销”按钮的重置消息](./media/iwp-2-sign-out.png)
+    ![公司门户网站上已选设备的所有选项，包括重命名、删除、重置设备、重置密码和远程锁定。 ](./media/iwp-screen-with-all-options.png)
 
-4.  选择“重置密码”。
+4.  系统会显示横幅，询问你是否确定要重置密码并在重置密码后从设备中注销。 然后，需要等待 5 分钟后才能重新登录。
 
-    ![重置密码时说明当前操作的消息](./media/iwp-3-tap-reset-passcode-after-signin.png)
+  ![重置密码横幅，显示关于重置设备密码的警告以及用户将如何注销。 用户输入的按钮为“注销”和“取消”。](./media/iwp-reset-passcode-popup.png)
 
-    查看此表以了解“重置密码”在设备上的工作方式。
+4.  选择“注销”，将收到最后一条消息，告知你已删除设备中的密码。 如果设备未在身边，请勿删除密码，因为对设备具有物理访问权限的任何人将能够访问设备上的大部分信息（个人或公司信息）。
+
+  ![第二条重置密码横幅，显示关于重置设备密码的警告以及将如何删除设备中的密码。 该横幅还介绍了通过设备设置来设置新密码的方法。](./media/iwp-reset-passcode-2nd-popup.png)
+
+
+由于不同设备具有不同类型的密码，可以通过下表了解重置密码对特定设备造成的影响。 
 
     |设备类型|重置密码时会发生什么情况|
     |------------|-----------|
@@ -60,9 +67,4 @@ ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
     若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

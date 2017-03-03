@@ -1,6 +1,6 @@
 ---
 
-title: "Android 和 Samsung KNOX 标准版策略设置 | Microsoft Docs"
+title: "Android 和 Samsung KNOX 策略设置 | Microsoft Docs"
 description: "创建控制通过 Intune 管理的 Android 设备上的设置及功能的策略。"
 keywords: 
 author: robstackmsft
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
-ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
 
 
 ---
@@ -211,6 +212,6 @@ Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

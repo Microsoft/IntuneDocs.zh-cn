@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: cb80d531a28eaccbd26bc53df3e13ad233522dcf
+ms.sourcegitcommit: 96861614075d4eed41ca440af8a8cc42e5f2ff38
+ms.openlocfilehash: 8633de5aea6cc3f98c5e331fc3de43daf85903ae
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -25,7 +27,7 @@ ms.openlocfilehash: cb80d531a28eaccbd26bc53df3e13ad233522dcf
 > [!NOTE]
 > 建议首先阅读 [ Intune App SDK 入门指南](intune-app-sdk-get-started.md)一文，该文章介绍了如何在每个受支持的平台准备集成。
 
-用于 iOS 的 Microsoft Intune App SDK 支持将 Intune 应用保护策略以移动应用管理 (MAM) 的形式合并到 iOS 应用中。 启用了 MAM 的应用程序是指与 Intune App SDK 集成的应用程序。 它允许 IT 管理员在通过 Intune 主动管理移动应用时在该应用上部署策略。
+用于 iOS 的 Microsoft Intune App SDK 支持将 Intune 应用保护策略（也称为 MAM）合并到 iOS 应用中。 启用了 MAM 的应用程序是指与 Intune App SDK 集成的应用程序。 它支持 IT 管理员在 Intune 主动管理移动应用时在该应用上部署应用保护策略。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -62,7 +64,6 @@ ms.openlocfilehash: cb80d531a28eaccbd26bc53df3e13ad233522dcf
 
 Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况下将管理功能添加到 iOS 应用中。 代码更改越少，面市时间就越短，同时不影响移动应用程序的一致性和稳定性。
 
-需要将应用程序链接到静态库，并必须包含资源包。 MAMDebugSettings.plist 文件为可选文件。 可以包含在此工具包中，以便模拟要应用到应用程序的 MAM 策略，而无需通过 Microsoft Intune 部署此应用程序。 此外，在调试版本中，通过 iTunes 文件共享将文件传输到应用的 Documents 目录下，可以应用 MAMDebugSettings.plist 文件中的策略。
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>将 SDK 构建到移动应用中
 
@@ -119,7 +120,8 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 6. 选择每个项目目标的“功能”并启用“密钥链共享”开关，启用密钥链共享（如果尚未启用）。 需要启用 Keychain 共享才能继续执行下一步。
 
     > [!NOTE]
-    > 预配的配置文件需要支持新的 keychain 共享值。 keychain 访问组应支持通配符。 可通过以下方法进行验证：在文本编辑器中打开 .mobileprovision 文件，搜索 **keychain-access-groups**，确保其中包含通配符。 例如：     ```xml
+    > 预配的配置文件需要支持新的 keychain 共享值。 keychain 访问组应支持通配符。 可通过以下方法进行验证：在文本编辑器中打开 .mobileprovision 文件，搜索 **keychain-access-groups**，确保其中包含通配符。 例如：
+    ```xml
     <key>keychain-access-groups</key>
     <array>
     <string>YOURBUNDLESEEDID.*</string>
@@ -148,9 +150,9 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 8. 如果应用在其 Info.plist 文件中定义了 URL 方案，则为每个 URL 方案添加另一个具有 `-intunemam` 后缀的方案。
 
-9. 对于针对 iOS 9+ 开发的移动应用，需要在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中包括应用传递到 `UIApplication canOpenURL` 的每个协议。 此外，对于每个列出的协议，添加新的协议，并对新协议追加 `-intunemam`。 你还必须在此数组中包括 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
+9. 对于 iOS 9+ 上开发的移动应用，需要在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中包括应用传递到 `UIApplication canOpenURL` 的每个协议。 此外，对于每个列出的协议，添加新的协议，并对新协议追加 `-intunemam`。 你还必须在此数组中包括 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
 
-10. 如果应用在其授权中定义了应用组，则将这些组作为字符串数组添加到 `AppGroupIdentitifiers` 键下面的 IntuneMAMSettings 字典中。
+10. 如果应用在其授权中定义了应用组，则将这些组作为字符串数组添加到 `AppGroupIdentifiers` 键下面的 IntuneMAMSettings 字典中。
 
 11. 将移动应用程序链接到 Azure 目录身份验证库 (ADAL)。 Objective C 的 ADAL 库[可在 GitHub 上获取](https://github.com/AzureAD/azure-activedirectory-library-for-objc)。
 
@@ -162,6 +164,8 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 13. 链接到此库时请使用 `-force_load PATH_TO_ADAL_LIBRARY` 链接器选项。
 
     将 `-force_load {PATH_TO_LIB}/libADALiOS.a` 添加到项目的 `OTHER_LDFLAGS` 内部版本配置设置中或 UI 的“其他链接器标志”中。 应将 `PATH_TO_LIB` 替换为 ADAL 二进制文件位置。
+
+
 
 ## <a name="set-up-azure-directory-authentication-library"></a>设置 Azure Directory 身份验证库
 
@@ -193,22 +197,14 @@ Intune App SDK 目前使用 [ 上的 ADAL](https://github.com/AzureAD/azure-acti
 
 **如何强制 Intune App SDK 使用应用已在使用的 ADAL 设置？**
 
-如果应用已使用 ADAL，请参阅 IntuneMAMSettings 中的小节，了解有关填充以下设置的信息：  
+如果应用已使用 ADAL，请参阅 [Intune App SDK 的配置设置](#configure-settings-for-the-intune-app-sdk)，了解有关填充以下设置的信息：  
 
 * ADALClientId
+* ADALAuthority
 * ADALRedirectUri
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
 
-**如何在 Azure AD 生产环境和内部测试环境之间进行切换？**
-
-可以使用 MAMPolicies.plist 中的 `AadAuthorityURI` 设置指定用于 ADAL 调用的 Azure AD 环境。 当前已设置为默认使用 Azure AD 预生产环境 (PPE)，除非被替代。
-
-若要对 PPE 进行测试，可以使用编译时或运行时切换。
-
-对于 MAM 服务 URL 和 Azure AD 的编译时环境切换，请在 MAMEnvironment.plist 中将 `UsePPE` 布尔标志设置为 true。 （注意，不支持通过 Info.plist 执行此操作。）
-
-对于运行时环境切换，请将标准用户默认值中的 `com.microsoft.intune.mam.useppe` 设置为“1”，以使用 PPE。 这将替换现有的 `com.microsoft.intune.mam.AADAuthorityEnvironment` 设置。
 
 **如何使用运行时提供的特定于租户的 URL 替代 Azure AD 颁发机构 URL？**
 
@@ -223,9 +219,11 @@ SDK 会继续使用此颁发机构 URL 进行策略刷新和任何后续注册�
 
 如果应用已经使用 ADAL 进行身份验证，则必须执行以下操作：
 
-* 在项目的 Info.plist 中，在键名称为 `ADALClientId` 的 IntuneMAMSettings 字典下指定要用于 ADAL 调用的客户端 ID。
+1. 在项目的 Info.plist 中，在键名称为 `ADALClientId` 的 IntuneMAMSettings 字典下指定要用于 ADAL 调用的客户端 ID。
 
-* 在项目的 Info.plist 中，在键名称为 `ADALRedirectUri` 的 IntuneMAMSettings 字典下指定要用于 ADAL 调用的重定向 URI。 可能还需要根据应用的重定向 URI 的格式指定 `ADALRedirectScheme` 。
+2. 在键名称为 `ADALAuthority` 的 IntuneMAMSettings 字典下指定 Azure AD 颁发机构。
+
+3. 在键名称为 `ADALRedirectUri` 的 IntuneMAMSettings 字典下指定要用于 ADAL 调用的重定向 URI。 可能还需要根据应用的重定向 URI 的格式指定 `ADALRedirectScheme` 。
 
 **如果应用尚未使用 ADAL 进行身份验证该怎么办？**
 
@@ -234,22 +232,15 @@ SDK 会继续使用此颁发机构 URL 进行策略刷新和任何后续注册�
 ## <a name="register-your-app-with-the-intune-mam-service"></a>向 Intune MAM 服务注册应用
 
 ### <a name="use-the-apis"></a>使用 API
-Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能，而无需通过移动设备管理 (MDM) 向 Intune 注册。 为支持这一新功能，SDK 提供了新的 API，允许应用接收 MAM 策略。 若要使用新的 API，请执行以下步骤：
+Intune App SDK 现提供可让 iOS 应用从 Intune 接收应用保护策略的功能，而无需通过移动设备管理 (MDM) 向 Intune 注册。 为支持这一新功能，SDK 提供了新的 API，允许应用接收应用保护策略。 若要使用新的 API，请执行以下步骤：
 
-1. 使用 Intune App SDK 的最新版本，无论设备是否注册，该版本都支持应用管理。 如果应用使用了不含此功能的旧版本 SDK，则需要更新 Intune MAM 库，以及带有来自最新 SDK 的标头的标头文件夹。
+1. 使用 Intune App SDK 的最新版本，无论设备是否注册，该版本都支持应用管理。 。
 
 2. 将 IntuneMAMEnrollment.h 添加到任何要调用 API 的文件。
 
-3. 若要对 PPE 进行测试，可以使用编译时或运行时切换。
-
-    对于 MAM 服务 URL 和 Azure AD 的编译时环境切换，请在 MAMEnvironment.plist 中将 `UsePPE` 布尔标志设置为 true。 （注意，不支持通过 Info.plist 执行此操作。）
-
-    对于运行时环境切换，请将标准用户默认值中的 `com.microsoft.intune.mam.useppe` 设置为“1”，以使用 PPE。 这将替换现有的 `com.microsoft.intune.mam.AADAuthorityEnvironment` 设置。
-
-
 ### <a name="register-accounts"></a>注册帐户
 
-如果应用代表指定的用户帐户进行注册，则该应用可从 Intune 服务接收 MAM 策略。 应用负责使任何新登录的用户向 Intune App SDK 注册。 新用户帐户经身份验证后，应用应调用 Headers/IntuneMAMEnrollment.h 中的 `registerAndEnrollAccount` 方法：
+如果应用代表指定的用户帐户进行注册，则该应用可从 Intune 服务接收应用保护策略。 应用负责使任何新登录的用户向 Intune App SDK 注册。 新用户帐户经身份验证后，应用应调用 Headers/IntuneMAMEnrollment.h 中的 `registerAndEnrollAccount` 方法：
 
 ```objc
 /**
@@ -265,7 +256,7 @@ Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能�
 ```
 通过调用 `registerAndEnrollAccount` 方法，SDK 会注册用户帐户并尝试代表此帐户注册应用。 如果注册由于任何原因失败，SDK 会在 24 小时后自动重试注册。 出于调试目的，应用可通过委托接收有关任何注册请求的结果的通知。
 
-在调用此 API 后，应用程序可继续正常工作。 如果注册成功，SDK 会通知用户需要重启应用。 此时，用户可立即重启应用。
+在调用此 API 后，应用可继续正常工作。 如果注册成功，SDK 会通知用户需要重启应用。 此时，用户可立即重启应用。
 
 ### <a name="deregister-accounts"></a>取消注册帐户
 
@@ -273,7 +264,7 @@ Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能�
 
 1. 不再对用户的帐户进行注册重试。
 
-2. 如果用户已成功注册应用程序，则会从 Intune MAM 服务中取消注册该用户和应用，并删除 MAM 策略。
+2. 如果用户已成功注册应用程序，则会从 Intune MAM 服务中取消注册该用户和应用，并删除应用保护策略。
 
 3. 如果应用启动选择性擦除（可选），则将删除任何与工作相关或与学校相关的数据。
 
@@ -303,9 +294,9 @@ Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能�
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
 
-## <a name="enroll-without-prior-sign-in"></a>未登录注册
+### <a name="enroll-without-prior-sign-in"></a>未登录注册
 
-未使用 Azure Active Directory 登录用户的应用仍可通过调用 API 从 Intune 服务接收 MAM 策略，以使 SDK 处理该身份验证。 当应用尚未使用 Azure AD 对用户进行身份验证，但仍需要检索 MAM 策略以帮助保护数据时，应使用此方法。 例如，正在使用另一个身份验证服务进行应用登录时，或应用完全不支持登录时。 若要执行此操作，应用程序应调用 Headers/IntuneMAMEnrollment.h 中的 `loginAndEnrollAccount` 方法：
+未使用 Azure Active Directory 登录用户的应用仍可从 Intune 服务接收应用保护策略，方法为调用 API 使 SDK 处理该身份验证。 当应用尚未使用 Azure AD 对用户进行身份验证，但仍需要检索应用保护策略以帮助保护数据时，应使用此方法。 例如，正在使用另一个身份验证服务进行应用登录时，或应用完全不支持登录时。 若要执行此操作，应用程序应调用 Headers/IntuneMAMEnrollment.h 中的 `loginAndEnrollAccount` 方法：
 
 ```objc
 /**
@@ -365,66 +356,40 @@ Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能�
 - 带有状态代码说明的错误字符串
 - 一个 `NSError` 对象
 
-此对象连同可返回的特定状态代码在 Headers/IntuneMAMEnrollmentStatus.h 中进行定义。
+此对象连同可返回的特定状态代码在 IntuneMAMEnrollmentStatus.h 中进行定义。
 
 
 
 
-## <a name="sample-code"></a>代码示例
+### <a name="sample-code"></a>代码示例
 
 以下是委托方法的示例实现：
 
 ```objc
 - (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"enrollment result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
 
 - (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"policy check-in result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
-
 - (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
 ```
 
 ## <a name="app-restart"></a>应用重启
 
-应用首次接收 MAM 策略时必须重启才能应用所需挂钩。 为了通知应用需要重启，SDK 在 Headers/IntuneMAMPolicyDelegate.h 中提供了委托方法。
+应用首次接收应用保护策略时必须重启才能应用所需的挂钩。 为了通知应用需要重启，SDK 在 Headers/IntuneMAMPolicyDelegate.h 中提供了委托方法。
 
 ```objc
  - (BOOL) restartApplication
@@ -432,19 +397,34 @@ Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能�
 此方法的返回值会告诉 SDK 应用程序是否会处理所需的重启：   
 
  - 如果返回 true，则应用程序将处理重启。   
+
  - 如果返回 false，则 SDK 会在此方法返回后重启该应用程序。 SDK 会立即显示一个对话框，告知用户重启应用程序。
 
-## <a name="implement-save-as-controls"></a>实现“另存为”控件
+## <a name="customize-your-apps-behavior"></a>自定义应用行为
 
-通过 Intune，IT 管理员可选择托管应用保存数据的存储位置。 应用可使用 **isSaveToAllowedForLocation** API 为允许的存储位置查询 Intune App SDK。
+可以调用 Intune App SDK 的几个 API 以获取有关部署到应用的 Intune 应用保护策略的信息。 可以使用此数据自定义应用行为。 大多数应用程序保护策略设置由 SDK（而不是应用程序）自动强制执行。 应用应实现的唯一设置是“另存为”控件。
+
+### <a name="get-the-app-protection-policy-settings"></a>获取应用保护策略设置
+
+#### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
+IntuneMAMPolicyManager 类公开部署到应用程序的 Intune 应用保护策略。 值得注意的是，它公开对[启用多身份标识](#-enable-multi-identity-optional)有用的 API。
+
+#### <a name="intunemampolicyh"></a>IntuneMAMPolicy.h
+IntuneMAMPolicy 类公开部署到应用程序的 Intune 应用保护策略。 此类中公开的大多数策略设置都由 SDK 强制执行，但可根据策略设置的强制执行方式自定义应用行为。
+
+此类公开实现“另存为”控件所需的一些 API（将在下一节中详细描述）。
+
+### <a name="implement-save-as-controls"></a>实现“另存为”控件
+
+通过 Intune，IT 管理员可选择托管应用保存数据的存储位置。 应用可使用在 **IntuneMAMPolicy.h** 中定义的 **isSaveToAllowedForLocation** API，针对允许的存储位置查询 Intune App SDK。
 
 将托管数据保存到云存储或本地位置前，应用必须使用 **isSaveToAllowedForLocation** API 进行检查，以了解 IT 管理员是否允许数据保存在此处。
 
 使用 **isSaveToAllowedForLocation** API 时，应用必须传入用于存储位置的 UPN（如可用）。
 
-### <a name="supported-save-locations"></a>支持的存储位置
+#### <a name="supported-save-locations"></a>支持的存储位置
 
-**isSaveToAllowedForLocation** API 提供常量来检查 IT 管理员是否允许将数据保存到以下位置：
+**isSaveToAllowedForLocation** API 提供常量来检查 IT 管理员是否允许将数据保存到在 IntuneMAMPolicy.h 中定义的以下位置：
 
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
@@ -456,45 +436,49 @@ Intune App SDK 现提供可让 iOS 应用从 Intune 接收 MAM 策略的功能�
 
 应用应使用 **isSaveToAllowedForLocation** API 中的常量来检查是否可将数据保存到“托管”位置（如 OneDrive for Business）或“个人”。 此外，应用无法确定是“托管”还是“个人”位置时，应使用 API。
 
-如果已知位置为“个人”，应用应使用 **IntuneMAMSaveLocationOther** 值。
+`IntuneMAMSaveLocationOther` 常数代表已知为“个人”的位置。
 
-如果应用将数据保存到本地设备上的任何位置，应使用 **IntuneMAMSaveLocationLocalDrive** 常数。
+如果应用将数据保存到本地设备上的任何位置，应使用 `IntuneMAMSaveLocationLocalDrive` 常数。
 
-## <a name="set-up-the-intune-app-sdk"></a>设置 Intune App SDK
+## <a name="configure-settings-for-the-intune-app-sdk"></a>配置 Intune App SDK 设置
 
-可以使用应用程序的 Info.plist 文件中的 IntuneMAMSettings 字典设置 Intune App SDK。 下表列出了所有支持的设置。
+可以使用应用程序的 Info.plist 文件中的 **IntuneMAMSettings** 字典设置和配置 Intune App SDK。 下表列出了所有支持的设置。
 
 其中的一些设置可能已在前面各节中提及，一些设置则不适用于所有应用。
 
 Setting  | 类型  | 定义 | 是否必需？
 --       |  --   |   --       |  --
-ADALClientId  | 字符串  | 应用的 Azure AD 客户端标识符。 | 如果应用使用 ADAL 则需要。
-ADALRedirectUri  | 字符串  | 应用的 Azure AD 重定向 URI。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。
-ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。
-ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否会将所有 ADAL 日志（包括应用的 ADAL 调用（如果有））路由到它自己的日志文件。 默认值为 NO。 如果应用要设置其自己的 ADAL 日志回调，则设置为 YES。 | 可选。
-ADALCacheKeychainGroupOverride | 字符串  | 指定要用于 ADAL 缓存而不是“com.microsoft.adalcache”的 keychain 组。 注意，这并不包含应用 ID 前缀。 这将作为运行时提供的字符串的前缀。 | 可选。
-AppGroupIdentifiers | 字符串数组  | 应用的授权 com.apple.security.application 组部分的应用组数组。 | 如果应用使用应用组，则需要此设置。
-ContainingAppBundleId | 字符串 | 指定扩展的包含应用程序的程序包 ID。 | iOS 扩展需要此设置。
-DebugSettingsEnabled| 布尔值 | 如果设置为“是”，则可以应用设置包中的测试策略。 应用程序*不*会因启用此设置而提供。 | 可选。
-MainNibFile<br>MainNibFile ~ ipad  | 字符串  | 此设置应包含应用程序的主要 nib 文件名。  | 如果应用程序在 Info.plist 中定义了 MainNibFile，则需要此设置。
-MainStoryboardFile<br>MainStoryboardFile~ipad  | 字符串  | 此设置应包含应用程序的主要 Storyboard 文件名。 | 如果应用程序在 Info.plist 中定义了 UIMainStoryboardFile，则需要此设置。
-MAMPolicyRequired| 布尔值| 如果应用没有 Intune MAM 策略，指定是否要阻止应用启动。 默认值为 NO。 | 可选。
-MAMPolicyWarnAbsent | 布尔值| 如果应用没有 Intune MAM 策略，指定应用是否在启动期间警告用户。 注意：此设置设为 YES 时，无法将应用提交到商店。 | 可选。
-MultiIdentity | 布尔值| 指定应用是否识别多身份标识。 | 可选。
-SplashIconFile~ipad <br>IntuneMAMSettings | 字符串  | 指定 Intune 初始屏幕（启动）图标文件。 | 可选。
-SplashDuration | 数字 | 应用程序启动时显示 Intune 启动屏幕的最小时间（以秒为单位）。 默认值为 1.5。 | 可选。
-BackgroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的背景色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。   | 可选。 默认为浅灰色。
-ForegroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的前景色，如文本颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。  | 可选。 默认为黑色。
-AccentColor | 字符串| 指定 PIN 屏幕的主题色，例如按钮文本颜色和框高亮颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。| 可选。 默认为系统蓝色。
-MAMTelemetryDisabled| 布尔值| 指定 SDK 是否会将任何遥测数据发送到其后端。| 可选。
-MAMTelemetryUsePPE | 布尔值 | 指定 SDK 是否会将数据发送到 PPE 后端。 使用 Intune 策略测试应用时使用该布尔值，以便测试遥测数据不会与客户数据相混淆。 | 可选。
+ADALClientId  | 字符串  | 应用的 Azure AD 客户端标识符。 | 如果应用使用 ADAL 则需要。 |
+ADALAuthority | 字符串 | 应用使用的 Azure AD 颁发机构。 应使用已配置 AAD 帐户的你自己的环境。 | 如果应用使用 ADAL 则需要。 如果此值不存在，则使用 Intune 默认值。|
+ADALRedirectUri  | 字符串  | 应用的 Azure AD 重定向 URI。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。  |
+ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。 |
+ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否会将所有 ADAL 日志（包括应用的 ADAL 调用（如果有））路由到它自己的日志文件。 默认值为 NO。 如果应用要设置其自己的 ADAL 日志回调，则设置为 YES。 | 可选。 |
+ADALCacheKeychainGroupOverride | 字符串  | 指定要用于 ADAL 缓存而不是“com.microsoft.adalcache”的 keychain 组。 注意，这并不包含应用 ID 前缀。 这将作为运行时提供的字符串的前缀。 | 可选。 |
+AppGroupIdentifiers | 字符串数组  | 应用的授权 com.apple.security.application 组部分的应用组数组。 | 如果应用使用应用组，则需要此设置。 |
+ContainingAppBundleId | 字符串 | 指定扩展的包含应用程序的程序包 ID。 | iOS 扩展需要此设置。 |
+DebugSettingsEnabled| 布尔值 | 如果设置为“是”，则可以应用设置包中的测试策略。 应用程序*不*会因启用此设置而提供。 | 可选。 |
+MainNibFile<br>MainNibFile ~ ipad  | 字符串  | 此设置应包含应用程序的主要 nib 文件名。  | 如果应用程序在 Info.plist 中定义了 MainNibFile，则需要此设置。 |
+MainStoryboardFile<br>MainStoryboardFile~ipad  | 字符串  | 此设置应包含应用程序的主要 Storyboard 文件名。 | 如果应用程序在 Info.plist 中定义了 UIMainStoryboardFile，则需要此设置。 |
+MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为“是”时，无法将应用提交到应用商店。 | 可选。 |
+MAMPolicyWarnAbsent | 布尔值| 如果应用没有 Intune 应用保护策略，指定应用是否在启动期间警告用户。 注意：此设置设为 YES 时，无法将应用提交到商店。 | 可选。 |
+MultiIdentity | 布尔值| 指定应用是否识别多身份标识。 | 可选。 |
+SplashIconFile~ipad <br>IntuneMAMSettings | 字符串  | 指定 Intune 初始屏幕（启动）图标文件。 | 可选。 |
+SplashDuration | 数字 | 应用程序启动时显示 Intune 启动屏幕的最小时间（以秒为单位）。 默认值为 1.5。 | 可选。 |
+BackgroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的背景色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。   | 可选。 默认为浅灰色。 |
+ForegroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的前景色，如文本颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。  | 可选。 默认为黑色。 |
+AccentColor | 字符串| 指定 PIN 屏幕的主题色，例如按钮文本颜色和框高亮颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。| 可选。 默认为系统蓝色。 |
+MAMTelemetryDisabled| 布尔值| 指定 SDK 是否会将任何遥测数据发送到其后端。| 可选。 |
+
+> [!NOTE]
+> 如果应用程序将发布到应用商店，根据应用商店标准，必须将 `MAMPolicyRequired` 设置为“否”。
 
 ## <a name="telemetry"></a>遥测技术
 
 默认情况下，用于 iOS 的 Intune App SDK 会记录以下使用情况事件的遥测数据。 会将此数据发送到 Microsoft Intune。
 
 * **应用启动事件**：用于帮助 Microsoft Intune 按照管理类型（含 MDM 的 MAM、不含 MDM 注册的 MAM 等）了解已启用 MAM 的应用的使用情况。
-* **EnrollApplication API 调用事件**：用于帮助 Microsoft Intune 了解客户端的 `enrollApplication` 调用的成功率和其他各种性能指标。
+
+* **注册调用**：用于帮助 Microsoft Intune 了解客户端启动的注册调用的成功率和其他各种性能指标。
 
 > [!NOTE]
 > 如果选择不将 Intune App SDK 遥测数据从移动应用程序发送到 Microsoft Intune，则必须禁用 Intune App SDK 遥测数据捕获功能。 在 IntuneMAMSettings 字典中将属性 `MAMTelemetryDisabled` 设置为“是”。
@@ -509,15 +493,19 @@ MAMTelemetryUsePPE | 布尔值 | 指定 SDK 是否会将数据发送到 PPE 后�
 
 ### <a name="identity-overview"></a>标识概述
 
-标识只是帐户的用户名，例如，user@contoso.com). 开发人员可以在以下级别设置应用的标识：
+标识就是帐户的用户名（例如 user@contoso.com）。 开发人员可在以下级别上设置应用的标识：
 
 * **进程标识**：设置进程级标识，并且主要用于单一标识应用程序。 此标识会影响所有任务、文件和 UI。
+
 * **UI 标识**：确定应用于主线程上 UI 任务的策略，例如剪切/复制/粘贴、PIN、身份验证和数据共享。 UI 标识不会影响文件任务（如加密和备份）。
+
 * **线程标识**：线程标识会影响应用于当前线程上的策略类型。 此标识会影响所有任务、文件和 UI。
 
 不论用户是否为托管，应用都会负责设置合适的标识。
 
-在任何时候，每个线程都具有用于 UI 任务和文件任务的有效标识。 此标识是用于确定应应用哪些策略（如有）的标识。 如果此标识为“无标识”或用户不是托管的，则不会应用任何策略。
+在任何时候，每个线程都具有用于 UI 任务和文件任务的有效标识。 此标识是用于确定应应用哪些策略（如有）的标识。 如果此标识为“无标识”或用户不是托管的，则不会应用任何策略。 下图显示如何确定有效的标识。
+
+  ![Intune App SDK iOS：链接的框架和库](../media/intune-app-sdk/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>线程队列
 
@@ -604,6 +592,12 @@ SDK 跟踪本地文件所有者的标识，并相应地应用策略。 文件所
 
 ## <a name="faq"></a>常见问题
 
+
+**是否所有 API 都可通过本机 Swift 或 Objective-C 和 Swift 互操作性进行寻址？**
+
+Intune App SDK API 仅能以 Objective-C 进行寻址，且不支持本机 Swift。  
+
+
 **应用程序的所有用户是否都需要注册 MAM 服务？**
 
 否。 实际上，只有工作或学校帐户需要向 Intune App SDK 注册。 应用负责确定所使用的帐户是否为工作或学校账户。   
@@ -618,14 +612,14 @@ SDK 跟踪本地文件所有者的标识，并相应地应用策略。 文件所
 
 SDK 会在上一次注册失败后每隔 24 小时自动重试。 SDK 这样做是为了确保：即使用户的组织在用户登录到应用程序后启用了 MAM，用户也能成功注册并接收策略。
 
-SDK 会在检测到用户已成功注册该应用程序后停止重试。 这是因为只有 1 位用户可以在特定时间注册应用程序。 如果用户未注册，则将在同样 24 小时间隔后再次开始重试。
+SDK 会在检测到用户已成功注册该应用程序后停止重试。 这是因为只有&1; 位用户可以在特定时间注册应用程序。 如果用户未注册，则将在同样 24 小时间隔后再次开始重试。
 
 **为何用户需要取消注册？**
 
 SDK 将在后台定期执行以下操作：
 
  - 如果应用程序尚未注册，SDK 会每隔 24 小时尝试注册所有已注册的帐户。
- - 如果应用程序已注册，SDK 会每隔 8 小时检查 MAM 策略更新。
+ - 如果应用程序已注册，SDK 会每隔 8 小时检查应用保护策略更新。
 
 取消注册用户会通知 SDK 用户不再使用该应用程序，并且 SDK 可以停止该用户帐户的任何周期事件。 如有必要，这也会触发应用取消注册和选择性擦除。
 
@@ -636,6 +630,8 @@ SDK 将在后台定期执行以下操作：
 **是否有其他可以取消注册应用程序的方法？**
 
 是，IT 管理员可以向应用程序发送选择性擦除命令。 这将取消注册并注销用户，并且将擦除用户的数据。 SDK 自动处理此方案，并将通过取消注册委托方法发送通知。
+
+
 
 ## <a name="submit-your-app-to-the-app-store"></a>将应用提交到应用商店
 
@@ -653,9 +649,4 @@ Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这�
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     第一个命令用于从框架的 DYLIB 文件中删除模拟器体系结构。 第二个命令用于将仅设备 DYLIB 复制回框架目录。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

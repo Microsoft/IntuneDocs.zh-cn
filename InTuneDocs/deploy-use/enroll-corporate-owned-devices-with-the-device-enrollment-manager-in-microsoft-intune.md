@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/17
+ms.date: 01/29/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b06bb501e71bae5225d451d9ee460213eee183de
-ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
 
 
 ---
@@ -25,9 +26,12 @@ ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 设备注册管理器 (DEM) 帐户是可注册最多 1,000 台设备的特殊用户帐户。 将现有用户添加到 DEM 帐户以向他们提供特殊 DEM 功能。 每台已注册设备均使用单一许可证。 我们建议将通过此帐户注册的设备用作共享设备，而不是个人 ("BYOD") 设备。  
+组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 设备注册管理器 (DEM) 帐户是可注册最多 1,000 台设备的特殊用户帐户。 将现有用户添加到 DEM 帐户以向他们提供特殊 DEM 功能。 每台已注册设备均使用单一许可证。 建议将通过此帐户注册的设备用作共享设备（即没有用户关联），而不是个人 ("BYOD") 设备。  
 
 用户必须在 Azure 门户中存在才能添加为设备注册管理器。 为获得最佳安全性，DEM 用户也不应是 Intune 管理员。
+
+>[!NOTE]
+>DEM 注册方法不能与 [Apple Configurator 设置助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)、[直接注册](ios-direct-enrollment-in-microsoft-intune.md)或 [DEP 注册方法](ios-device-enrollment-program-in-microsoft-intune.md)共同使用。 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>设备注册管理器方案示例
 
@@ -105,6 +109,6 @@ DEM 用户可以：
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

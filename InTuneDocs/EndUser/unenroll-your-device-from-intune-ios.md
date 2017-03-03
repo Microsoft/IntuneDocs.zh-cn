@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 searchScope:
 - Company Portal
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: eb41be0b4096c2b2ee5711204b34e8c3bb13e25b

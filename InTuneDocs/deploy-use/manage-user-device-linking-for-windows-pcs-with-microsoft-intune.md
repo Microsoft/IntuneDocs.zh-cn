@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 53c99d63-c312-442a-8a71-de1b10fcd39b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 3a20dc18a72518ba9e01552cd1283170972b4bbb
@@ -27,7 +28,7 @@ ms.openlocfilehash: 3a20dc18a72518ba9e01552cd1283170972b4bbb
 
 若要将用户链接到计算机：
 
-1.  在“Microsoft Intune 管理控制台”[](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含需链接到用户的计算机的另一个组）。
+1.  在[Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含需链接到用户的计算机的另一个组）。
 
 2.  选择要链接用户的计算机，然后选择“链接用户”。
 

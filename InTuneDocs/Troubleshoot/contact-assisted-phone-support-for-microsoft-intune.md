@@ -1,4 +1,3 @@
-
 ---
 title: "联系辅助电话支持 | Microsoft Docs"
 description: "Microsoft Intune 帮助的电话号码。"
@@ -14,6 +13,7 @@ ms.technology:
 ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
 ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480

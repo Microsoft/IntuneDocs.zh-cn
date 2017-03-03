@@ -1,11 +1,11 @@
 ---
-title: "从 Intune 取消注册 iOS 设备会发生什么情况？ |Microsoft Docs"
+title: "取消注册 iOS 或 macOS 设备会造成什么结果？ |Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,20 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: esmich, elocholi
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a88b89114db0f9d76c783bf99ff55e4eb4107865
+ms.sourcegitcommit: 9b2eba939bccf5b1296e21868fdf3af93297b42c
+ms.openlocfilehash: e8065b2964e8995a58a2aa3e6322fb235f0829af
 
 
 ---
 
 
-# <a name="what-happens-if-you-unenroll-your-ios-device-from-intune"></a>从 Intune 取消注册 iOS 设备会发生什么情况？
+# <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>从 Intune 取消注册 iOS 或 macOS 设备会发生什么情况？
 
-从 Intune 取消注册 iOS 设备时：
+当从 Intune 取消注册 iOS 或 macOS 设备时：
 
 -   设备将不再显示在公司门户中。
 
@@ -48,6 +49,6 @@ ms.openlocfilehash: a88b89114db0f9d76c783bf99ff55e4eb4107865
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 
 
 ---
@@ -26,6 +27,8 @@ ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
 
 > [!IMPORTANT]
 > 本主题中的信息可帮助你为使用 Intune 软件客户端管理的 Windows 电脑添加应用。 如果想为已注册的 Windows 电脑和其他移动设备添加应用，请参阅[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)。
+
+要将应用安装到电脑，这些应用必须可以静默方式安装而无需用户交互。 否则，安装将失败。
 
 
 ## <a name="add-the-app"></a>添加应用
@@ -40,7 +43,7 @@ ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
 
     - **选择软件安装程序文件类型**。 此设置指示要部署的软件的类型。 对于 Windows 电脑，选择**Windows Installer**。
     - **指定软件安装程序文件的位置**。 输入安装文件的位置，或选择“**浏览**”选择列表中某个位置。
-    - **包括同一文件夹中的其他文件和子文件夹**。 某些使用 Windows Installer 的软件要求安装支持文件。 通常在安装文件所在的文件夹中可以找到这些软件。 如果还想要部署这些支持文件，请选择此选项。
+    - **包括同一文件夹中的其他文件和子文件夹**。 某些使用 Windows Installer 的软件要求安装支持文件。 这些文件必须位于安装文件所在的文件夹中。 如果还想要部署这些支持文件，请选择此选项。
 
     例如，如果你要将一个名为 Application.msi 的应用发布到 Intune，页面将如下所示：![发行者软件安装程序页](./media/publisher-for-pc.png)
 
@@ -73,7 +76,11 @@ ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
 
     如果应用满足任何配置的规则，则不会安装该应用。
 
-6.  仅对于“**Windows Installer**”文件类型（.msi 和 .exe）：在“**命令行参数**”页上，选择是否想要为安装程序提供可选命令行参数。 例如，某些安装程序可能支持参数 **/q**，以便无需用户干预进行无提示安装。
+6.  仅对于“**Windows Installer**”文件类型（.msi 和 .exe）：在“**命令行参数**”页上，选择是否想要为安装程序提供可选命令行参数。
+    Intune 自动添加以下参数：
+    - 对于 .exe 文件，添加 **/install**。
+    - 对于 .msi 文件，添加 **/quiet**。
+    请注意，只有在应用包的创建者启用了相应功能的情况下，这些选项才会生效。
 
 7.  仅对于“**Windows Installer**”文件类型（仅 .exe）：在“**返回代码**”页上，你可以添加新的错误代码，在托管 Windows 电脑上安装应用时，Intune 将解释这些错误代码。
 
@@ -89,8 +96,10 @@ ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
 
 创建应用后，下一步是进行部署。 若要获取详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps.md)。
 
+如需阅读有关将软件部署到 Windows 电脑的提示和技巧的详细信息，请参阅博客文章 [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/)（支持提示：将 Intune 软件分发到电脑的最佳实践）。
 
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Feb17_HO3-->
 
 

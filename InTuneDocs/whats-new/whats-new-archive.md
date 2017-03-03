@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/11/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,16 @@ ms.technology:
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 53d53edf174b325788c10e0c553addf3e4078509
+ms.sourcegitcommit: 43e951d763d788d94e97c35ea4c25a9c700baf1e
+ms.openlocfilehash: 1b1775507b454d45a673ca30c1674ac54b92a056
 
 
 ---
-# <a name="whats-new---archive"></a>新增功能 - 存档
+# <a name="whats-new-archive"></a>新增功能存档
 
-此页是 [Microsoft Intune 新增功能](whats-new-in-microsoft-intune.md)中最近 6 个月的滚动声明列表。
+此页是 [Microsoft Intune 新增功能](whats-new-in-microsoft-intune.md)中最近&6; 个月的滚动声明列表。
 
 [!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
 
@@ -30,6 +31,6 @@ ms.openlocfilehash: 53d53edf174b325788c10e0c553addf3e4078509
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

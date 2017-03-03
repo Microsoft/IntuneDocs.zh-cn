@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
 ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
@@ -71,7 +72,7 @@ MDM 通过使用移动操作系统中的可用协议或 API 来工作。 它包�
 当在 EMS 中结合其他服务使用 Intune 时，可以通过应用配置提供高于移动操作系统和移动应用本身提供的组织移动应用安全。 使用 EMS 管理的应用可以访问更多的移动应用和数据保护，包括：
 
 * [单一登录](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [多重身份验证](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
+*    [多重身份验证](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
 * [应用条件性访问（如果移动应用中包含公司数据，则允许访问）](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
 * [在同一个应用内将个人数据与公司数据隔离](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [应用保护策略（PIN、加密、另存为、剪贴板等等）](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)

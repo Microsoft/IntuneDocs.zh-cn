@@ -1,11 +1,11 @@
 ---
-title: "尝试注册时系统要求对设备进行标识 | Microsoft Docs"
+title: "尝试注册时需要对 iOS 设备进行标识 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 94380907981fbb50892b35244ef5eecab8fd8e7b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a1a669b12e3c072bf532dc25352889015aec7d47
 
 
 ---
 
 
-# <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>尝试注册时被要求对设备进行标识
+# <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>尝试注册时需要对设备进行标识
 
 如果尝试在 Intune 中注册 iOS 或 macOS 设备时显示要求标识设备的屏幕，说明设备中至少有一个已使用公司门户应用以外的方法注册并分配到帐户。 为了使公司门户应用正常工作，必须确认你使用的设备是否已在 Intune 中完成注册。
 
@@ -36,6 +37,6 @@ ms.openlocfilehash: 94380907981fbb50892b35244ef5eecab8fd8e7b
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

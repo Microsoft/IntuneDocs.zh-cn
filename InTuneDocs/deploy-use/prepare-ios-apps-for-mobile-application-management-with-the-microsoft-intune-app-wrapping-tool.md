@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -107,6 +108,9 @@ ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
   ![选择内部和临时证书](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>如果不打算分发应用，只希望进行内部测试，可以使用 iOS 应用开发证书来代替生产证书。 如果使用开发证书，请确保移动设置配置文件引用将安装应用的设备。
+
 7. 单击页面底部的“下一步”。
 
 8. 阅读关于使用 macOS 计算机上的 Keychain Access 应用程序来创建**证书签名请求 (CSR)** 的说明。
@@ -131,11 +135,12 @@ ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 14. 双击刚下载的证书，将证书添加密钥链。
 
-15. 再次打开 **Keychain Access**。 在 Keychain Access 窗口右上角的搜索栏中搜索“iPhone”查找证书。 右键单击项目以打开菜单，然后单击“获取信息”。
+15. 再次打开 **Keychain Access**。 在右上角的搜索栏中搜索证书名称，查找证书。 右键单击项目以打开菜单，然后单击“获取信息”。 在示例屏幕中，使用的是开发证书而非生产证书。
+
 
   ![将证书添加到密钥链](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. 将显示消息窗口。 滚动到底部并在“指纹”标签下查看。 复制 **SHA1** 字符串，将其用作应用包装工具的 -c 参数。
+16. 将显示消息窗口。 滚动到底部并在“指纹”标签下查看。 复制 **SHA1** 字符串（模糊显示），将其用作应用包装工具的“-c”参数。
 
   ![将证书添加到密钥链](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -397,6 +402,6 @@ ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

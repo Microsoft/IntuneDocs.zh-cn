@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
-ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
+ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
+ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
 
 
 ---
@@ -40,20 +41,16 @@ ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 VPN 配置文件配置选项因你选择的设备类型而有所不同。
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 ## <a name="vpn-connection-types"></a>VPN 连接类型
 
 Intune 支持使用以下连接类型创建 VPN 配置文件：
-
-
 
 
 连接类型 |iOS 和 Mac OS X  |Android 和 Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 桌面版和移动版 |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|是 |是   |否    |否  |否    | 是（OMA URI，仅限移动版）|     
 Cisco (IPsec)|是 |是   |否  |否  |否 | 否|
-Citrix|是 |否   |否  |否  |否 | 否|
+Citrix|是 |是（仅 Android）   |否  |否  |否 | 否|
 脉冲安全|是  |是 |是   |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |是  |   是 |  是|   
 Dell SonicWALL Mobile Connect|是 |是 |是 |是 |是 |是|         
@@ -198,8 +195,6 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

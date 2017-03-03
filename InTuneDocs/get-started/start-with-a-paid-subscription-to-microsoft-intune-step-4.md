@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -24,9 +26,11 @@ ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-在用户登录以使用 Intune 服务或将设备注册到管理组件之前，必须先使用 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)为每个用户分配一个你的 Intune 订阅的许可证。
+本主题指导管理员如何向用户分配 Intune 许可证，以便他们能够对设备进行管理。
 
-使用 Microsoft 企业移动性 + 安全性 (EMS) 的组织中可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。 有关详细信息，请参阅 [Manage Intune licenses using PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)（使用 PowerShell 管理 Intune 许可证）。
+在用户登录以使用 Intune 服务或将设备注册到管理组件之前，必须先在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中为每个用户分配一个你的 Intune 订阅的许可证。
+
+使用 Microsoft 企业移动性 + 安全性 (EMS) 的组织中可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。 有关详细信息，请参阅 [Manage Intune licenses using PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)（使用 PowerShell 管理 Intune 许可证）。
 
 ## <a name="how-intune-licenses-are-assigned"></a>如何分配 Intune 许可证
 当从本地上 Active Directory 同步用户帐户或通过 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)将用户帐户手动添加到云服务订阅时，将不会为用户帐户自动分配 Intune 许可证。 相反，Intune 租户管理员必须稍后编辑用户帐户才能从 Office 365 门户中向用户分配许可证。
@@ -87,16 +91,11 @@ ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
 
 验证方式：
 
-    (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
+    (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
 >[!div class="step-by-step"]
 
 >[&larr; **将用户同步到 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**组织用户和设备** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

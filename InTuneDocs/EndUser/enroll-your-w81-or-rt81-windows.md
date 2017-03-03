@@ -1,11 +1,11 @@
 ---
 title: "如何注册 Windows 8.1 或 Windows RT 8.1 设备 | Microsoft Docs"
-description: "了解如何在 Intune 中注册 Windows 8.1 或 Windows RT 8.1 设备"
+description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,20 @@ ms.technology:
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: 70a7f590ba19cc672086671edfdaa5faf5f3e568
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: 8e030c7b4b4aad7793b55e274a4d022bcf098611
 
 
 ---
 
-# <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>在 Intune 中注册 Windows 8.1 或 Windows RT 8.1 设备
+# <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>如何在 Intune 中注册 Windows 8.1 或 Windows RT 8.1 设备
 
-如果你的公司或学校使用 Microsoft Intune，则可以注册设备以获取对公司电子邮件、文件和其他资源的访问权限。 注册设备后，组织可以保护公司数据的安全。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 管理员在你的设备上可以看到和不可以看到的内容](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)。
+如果你的公司或学校使用 Microsoft Intune，则可以注册设备以获取对公司电子邮件、文件和其他资源的访问权限。 注册设备后，组织可以保护公司数据的安全。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和 [IT 管理员在你的设备上可以看到和不可以看到的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
 
 注册 Windows 8.1 或 Windows RT 8.1 设备：
@@ -67,6 +69,6 @@ ms.openlocfilehash: 70a7f590ba19cc672086671edfdaa5faf5f3e568
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

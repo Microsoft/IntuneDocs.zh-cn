@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
@@ -85,7 +86,7 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许托管应用将数据同步到 iCloud**|允许你使用 Intune 管理的应用将数据同步到用户的 iCloud 帐户。|
 |**允许 Handoff 在另一台设备上继续活动**|允许用户在一台 iOS 或 Mac OS X 设备上继续进行在另一台 iOS 设备上开始的工作。|
 |**允许 iCloud 照片共享**|将其设置为“否”以在设备上禁用“iCloud 照片共享”。|
-|**允许 iCloud 照片库**|如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。   如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。|
+|**允许 iCloud 照片库**|如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。    如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。|
 
 ### <a name="application-settings-for-the-browser"></a>浏览器的应用程序设置
 所有设置均适用于 iOS 8.0 及更高版本。

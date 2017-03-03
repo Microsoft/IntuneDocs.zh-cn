@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6b5ea7323f08ae63ce37adedbf23b9fab31a6f55
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: dd71cc8f0d1fc5802f7f24e5f275089ffa24a1c5
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 6b5ea7323f08ae63ce37adedbf23b9fab31a6f55
 # <a name="manage-intune-licenses-using-powershell"></a>使用 PowerShell 管理 Intune 许可证
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+本主题指导管理员如何使用 PowerShell 管理 Intune 用户许可证。
 
 在登录以使用 Intune 服务或将设备注册到管理组件之前，你必须首先为每个用户分配一个 Intune 订阅的许可证，如[管理 Intune 许可证](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)中所述。 但是，使用 Microsoft 企业移动性 + 安全性的组织可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。
 
@@ -71,6 +74,6 @@ ms.openlocfilehash: 6b5ea7323f08ae63ce37adedbf23b9fab31a6f55
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

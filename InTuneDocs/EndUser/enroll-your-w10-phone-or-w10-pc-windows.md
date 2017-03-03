@@ -13,11 +13,13 @@ ms.technology:
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jieyan
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
-ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
 
 
 ---
@@ -27,10 +29,10 @@ ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 在 Microsoft Intune 中注册设备可使 Windows 10 设备获取访问组织安全数据（包括电子邮件、文件和其他资源）的权限。 这适用于 Windows 10 桌面设备和 Windows 10 移动设备。 注册设备有助于为你和你的组织确保这类访问的安全，且有助于将工作数据与个人数据分开。
 
-想要了解更多信息？ 了解[在 Intune 中注册设备](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)后会发生的情况，以及这对[设备上的信息](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)的意义。
+想要了解更多信息？ 了解[在 Intune 中注册设备](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)后会发生的情况，以及这对[设备上的信息](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)的意义。
 
 ## <a name="windows-10-desktop-devices"></a>Windows 10 桌面设备
-1.  转到“开始”。
+1.    转到“开始”。
 
  ![Windows“开始”菜单](../media/windows-start-menu.png)。
 
@@ -38,23 +40,23 @@ ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
  ![搜索关于电脑的设置](../media/searching_for_about_your_pc.png)
 
-2.  在“设置”中，会看到安装在电脑上的 Windows 10 版本的相关信息列表。 在此列表中，找到“版本”。
+2.    在“设置”中，会看到安装在电脑上的 Windows 10 版本的相关信息列表。 在此列表中，找到“版本”。
 
  ![关于电脑的 Windows 10 桌面](../media/settings_about_pc.png)
 
-3.  如果是 __1607__ 版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511 或更低版本__，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
+3.    如果是 __1607__ 版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511 或更低版本__，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 移动设备
 
-1.  在“开始”中，轻扫到“所有应用”列表，然后选择“设置”应用。
-2.  点击“系统”，然后点击“关于”。
-3.  在“设备信息”下，点击“详细信息”。 你会看到有关设备的信息列表。 在此列表中，找到“版本”。
-4.  如果是 __1607__ 版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511 或更低版本__，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
+1.    在“开始”中，轻扫到“所有应用”列表，然后选择“设置”应用。
+2.    点击“系统”，然后点击“关于”。
+3.    在“设备信息”下，点击“详细信息”。 你会看到有关设备的信息列表。 在此列表中，找到“版本”。
+4.    如果是 __1607__ 版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511 或更低版本__，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

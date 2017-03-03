@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
 ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
@@ -52,7 +53,7 @@ ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
    4. 输入设置名称。
    5. 为“数据类型”，指定“字符串”。
    6. 为**OMA-URI**指定以下字符串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中*Name*是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
-   7.   对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
+   7.    对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
 
 ![Android per-app VPN 自定义策略示例](./media/android_per_app_vpn_oma_uri.png)
 
