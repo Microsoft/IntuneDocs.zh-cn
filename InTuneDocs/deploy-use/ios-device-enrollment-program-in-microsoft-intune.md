@@ -4,7 +4,7 @@ description: "部署注册配置文件，该配置文件以“无线”方式注
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
