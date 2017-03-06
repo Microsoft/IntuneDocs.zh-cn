@@ -193,9 +193,12 @@
 ### [擦除托管公司应用数据](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [如何使最终用户了解 Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Android 用户如何获取其应用](deploy-use/how-your-android-users-get-their-apps.md)
-### [iOS 用户如何获取其应用](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Windows 用户如何获取其应用](deploy-use/how-your-windows-users-get-their-apps.md)
+### [通过 Intune 使用 Android 设备](EndUser/using-your-android-device-with-intune.md)
+#### [Android 用户如何获取其应用](deploy-use/how-your-android-users-get-their-apps.md)
+### [通过 Intune 使用 iOS 设备](EndUser/using-your-iOS-or-macos-device-with-intune.md)
+#### [iOS 用户如何获取其应用](deploy-use/how-your-ios-users-get-their-apps.md)
+### [通过 Intune 使用 Windows 设备](EndUser/using-your-windows-device-with-intune.md)
+#### [Windows 用户如何获取其应用](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # 开发和自定义应用
 ## [Microsoft Intune App SDK 概述](develop/intune-app-sdk.md)
