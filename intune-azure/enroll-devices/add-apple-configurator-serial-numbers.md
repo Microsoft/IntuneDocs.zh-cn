@@ -3,8 +3,8 @@ title: "添加 Apple Configurator 序列号"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何使用 Apple Configurator 将序列号添加到公司拥有的 iOS 设备。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

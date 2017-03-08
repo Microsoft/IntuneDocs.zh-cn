@@ -3,8 +3,8 @@ title: "注册 iOS 设备 - 设备注册计划"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何使用设备注册计划注册企业拥有的 iOS 设备。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

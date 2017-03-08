@@ -2,8 +2,8 @@
 title: "直接注册 iOS 设备 | Microsoft Docs"
 description: "使用 Apple 配置器工具直接注册公司自有的 iOS 设备（使用通过 USB 将其连接至 Mac 计算机的预定义策略）。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article

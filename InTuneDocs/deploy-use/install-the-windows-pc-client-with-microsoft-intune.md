@@ -3,8 +3,8 @@
 title: "安装电脑客户端软件 | Microsoft Docs"
 description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 

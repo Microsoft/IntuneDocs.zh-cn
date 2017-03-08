@@ -2,8 +2,8 @@
 title: "使用设备注册管理器进行注册 | Microsoft Docs"
 description: "设备注册管理器 (DEM) 帐户可以管理大量带有单一用户帐户的企业自有的共享移动设备。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -106,9 +107,4 @@ DEM 用户可以：
 -   已删除的设备注册管理器帐户凭据仍无法擦除或停用设备。
 
 -   已删除的设备注册管理器帐户与已注册设备的关系仍存在，但不可以注册任何其他设备。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

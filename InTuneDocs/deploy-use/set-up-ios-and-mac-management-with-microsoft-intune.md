@@ -2,8 +2,8 @@
 title: "设置 iOS 和 Mac 管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 为 iOS 设备（包括 iPad 和 iPhone）以及 Mac OS X 设备启用移动设备管理 (MDM)。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/17/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
 ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -58,9 +59,4 @@ Intune 启用了 iPad、iPhone 和 macOS 设备的移动设备管理 (MDM)，并
 
 ### <a name="see-also"></a>另請參閱
 [在 Microsoft Intune 中注册的先决条件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -2,8 +2,8 @@
 title: "如何获取支持 | Microsoft Docs"
 description: "对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 01/28/2017
 
 
 ---
@@ -146,9 +147,4 @@ Office 365 的 Microsoft Intune 和移动设备管理订阅中随附有“故障
 如果支持工程师要求你打开其他问题的其他支持事件，请谅解，这有利于每位用户。 感谢你的理解和合作，我们力争提供一流的支持体验！
 
 有关每个事件和严重级别的价格，请参阅[专业支持选项](https://support.microsoft.com/gp/offerprophone)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -2,8 +2,8 @@
 title: "设置 Android 管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 为 Android 和 KNOX 标准版设备启用移动设备管理 (MDM)。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
 ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -62,9 +63,4 @@ Android 版公司门户应用使用 Google Play Services 与 Microsoft Intune �
 
 ### <a name="see-also"></a>另请参阅
 [在 Microsoft Intune 中注册设备的先决条件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

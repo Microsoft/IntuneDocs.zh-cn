@@ -2,8 +2,8 @@
 title: "使用策略简化 Windows 电脑管理 | Microsoft Docs"
 description: "介绍 Windows PC 管理策略以及 Microsoft Intune Center 的设置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -61,9 +62,4 @@ Microsoft Intune Center 安装在所有被管理的计算机上。 可以在 Int
 ### <a name="see-also"></a>另请参阅
 
 [使用 Intune 软件客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

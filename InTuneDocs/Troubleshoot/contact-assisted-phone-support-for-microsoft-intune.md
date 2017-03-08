@@ -2,8 +2,8 @@
 title: "联系辅助电话支持 | Microsoft Docs"
 description: "Microsoft Intune 帮助的电话号码。"
 keywords: "营业时间"
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
 ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
+ms.lasthandoff: 01/23/2017
 
 
 ---
@@ -118,9 +119,4 @@ ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
 |乌拉圭|全天候|星期一到星期五<br /><br />09:00 – 17:00 UYST (UTC -2)|西班牙语*、英语|000-411-002-7131||
 |委内瑞拉|全天候|星期一到星期五<br /><br />09:00 – 17:00 VET (UTC -4:30)|西班牙语*、英语|0-800-100-8763||
 * 支持通过电话进行解释。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

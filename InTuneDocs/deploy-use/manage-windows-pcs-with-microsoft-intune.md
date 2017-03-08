@@ -2,8 +2,8 @@
 title: "使用客户端软件管理电脑 | Microsoft Docs"
 description: "安装 Intune 客户端软件来管理 Windows 电脑。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

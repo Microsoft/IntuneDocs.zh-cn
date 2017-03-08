@@ -3,8 +3,8 @@ title: "获取 Apple MDM Push Certificate"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解获取 Apple MDM Push Certificate 以使用 Intune 管理 iOS 设备的步骤。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

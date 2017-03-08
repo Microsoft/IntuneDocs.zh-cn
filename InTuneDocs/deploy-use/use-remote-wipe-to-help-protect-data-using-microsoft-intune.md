@@ -2,8 +2,8 @@
 title: "使用远程擦除来帮助保护数据 |Microsoft Docs"
 description: "Intune 提供选择性擦除和完全擦除功能，以删除敏感公司数据和删除对许多公司资源的访问权限。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
 ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
+ms.lasthandoff: 02/08/2017
 
 
 ---
@@ -170,9 +171,4 @@ EFS 选择性擦除当前支持下列数据和应用：
 [停用设备](retire-devices-from-microsoft-intune-management.md)
 
 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx)（设备数据管理的 Windows 选择性擦除）
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -3,8 +3,8 @@ title: "使用 Intune 在设备上进行完全擦除或选择性擦除"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何在设备上对公司数据进行选择性擦除，或进行完全擦除以将设备恢复为出厂设置。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

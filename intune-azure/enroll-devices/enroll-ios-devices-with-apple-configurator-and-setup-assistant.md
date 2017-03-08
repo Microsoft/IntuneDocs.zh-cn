@@ -3,8 +3,8 @@ title: "注册 iOS 设备- Apple Configurator-设置助理"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何通过 Apple Configurator 使用设置助理来注册公司拥有的 iOS 设备。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

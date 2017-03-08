@@ -3,8 +3,8 @@ title: "设置电信费用管理服务"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：将 Saaswedo 电信费用管理服务配置为与 Intune 集成。"
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article

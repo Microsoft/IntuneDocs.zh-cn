@@ -3,8 +3,8 @@ title: "获取 Intune 的 Apple DEP 证书"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：有关配置和上传 MDM push certificate 的说明，这是在 Intune 中管理 Apple 设备的先决条件。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/03/17
 ms.topic: article

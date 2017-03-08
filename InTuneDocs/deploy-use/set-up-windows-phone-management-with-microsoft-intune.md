@@ -2,7 +2,8 @@
 title: "设置 Windows 10 移动版和 Windows Phone 管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 为 Windows 10 移动版或 Windows Phone 设备启用移动设备管理 (MDM)。"
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

@@ -3,8 +3,8 @@ title: "什么是 Microsoft Intune 设备注册"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何为 iOS 设备、Android 设备和 Windows 设备注册。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article

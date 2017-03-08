@@ -3,8 +3,8 @@ title: "在 Intune 中注册 macOS 设备"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何在 Intune Azure 预览版中注册 macOS 设备。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: article

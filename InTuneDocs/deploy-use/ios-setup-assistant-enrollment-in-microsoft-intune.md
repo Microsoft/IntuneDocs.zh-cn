@@ -2,8 +2,8 @@
 title: "使用设置助理注册 iOS 设备 | Microsoft Docs"
 description: "使用 Apple Configurator 工具注册企业自有的 iOS 设备以将设备恢复出厂设置，并准备对其运行设置助理。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
 ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -186,9 +187,4 @@ iOS 设备连接到 Mac 计算机，并注册移动设备管理。
 
 ### <a name="see-also"></a>另请参阅
 [注册设备的先决条件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
