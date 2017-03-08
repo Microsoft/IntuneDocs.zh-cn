@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
 ms.openlocfilehash: 5ce680b35ff2a931b13e0395d7bb550f534d2b29
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -44,9 +45,4 @@ ms.openlocfilehash: 5ce680b35ff2a931b13e0395d7bb550f534d2b29
 3.  在“**帮助**”下，点击“**获取帮助**”。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

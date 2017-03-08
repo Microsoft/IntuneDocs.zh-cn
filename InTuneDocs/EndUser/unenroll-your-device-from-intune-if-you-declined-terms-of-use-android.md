@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
 ms.openlocfilehash: 73dfec1fe1a0a027aa560de62b6bd7ed7732faa0
+ms.lasthandoff: 02/09/2017
 
 
 ---
@@ -44,9 +45,4 @@ ms.openlocfilehash: 73dfec1fe1a0a027aa560de62b6bd7ed7732faa0
     现在即可卸载公司门户应用。
 
 仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 [Microsoft Android 团队](mailto:wintunedroidfbk@microsoft.com)。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

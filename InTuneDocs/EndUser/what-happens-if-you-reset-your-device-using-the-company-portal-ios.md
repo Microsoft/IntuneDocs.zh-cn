@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 0306dea937b2b58bce06032d5f5bbe1e744902b8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -42,9 +43,4 @@ ms.openlocfilehash: 0306dea937b2b58bce06032d5f5bbe1e744902b8
 -   将删除你的公司电子邮件帐户和未保存的电子邮件。
 
 如有疑问，请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

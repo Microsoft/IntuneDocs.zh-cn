@@ -12,13 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 2b60f327c2e48c3c933a6cff0a68df138df4dd3d
 ms.openlocfilehash: ffc912af791c4b243877f026a554cc14b614ffa0
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -40,9 +42,4 @@ ms.openlocfilehash: ffc912af791c4b243877f026a554cc14b614ffa0
 4.  选择文件，然后将它们附加到电子邮件。 将此电子邮件发送给 IT 管理员。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

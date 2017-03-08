@@ -4,7 +4,7 @@ description: "本主题为准备将 Microsoft Intune 部署到其管理的企业
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 03/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,6 +14,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 9dc65b442a165609963cb5625009a723cbcb55dd
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,9 +29,4 @@ ms.openlocfilehash: 9dc65b442a165609963cb5625009a723cbcb55dd
 - [Intune 快速入门指南](start-with-a-paid-subscription-to-microsoft-intune.md) - 提供将试用订阅从测试用途转换为企业管理或为组织设置新订阅的分步说明
 - [迁移到 Intune ](migrate-to-intune.md) - 指导从当前企业移动性管理解决方案迁移到 Intune
 - [Intune 后续步骤](prevent-company-data-leaks-from-Office-365-mobile-apps.md) - 常见 Intune 任务的概述和后续步骤
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

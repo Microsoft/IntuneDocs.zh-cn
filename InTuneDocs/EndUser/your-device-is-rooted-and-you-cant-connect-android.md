@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
 ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
 - 你的设备制造商在设备上安装了根检测软件认为会带来安全风险的软件。 在此情况下，需要联系 IT 管理员获取帮助。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
 如果你已自行 root 设备，那么需要逆转此过程，并将设备还原到其非 root 状态。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
