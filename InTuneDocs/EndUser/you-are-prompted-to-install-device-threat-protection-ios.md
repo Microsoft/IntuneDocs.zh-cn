@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 6157cef87c5cdad6d0e293946321fa8bdf18e61a
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -54,9 +55,4 @@ Lookout for Work 安装完成，如果设备上找不到安全威胁，将显示
 **如果安装不成功**
 
 有时安装可能会因不可控的技术问题而失败。 如果发生此情况，请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

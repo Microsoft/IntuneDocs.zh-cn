@@ -2,10 +2,10 @@
 title: "Microsoft Intune 的发行说明 | Microsoft Docs"
 description: "Intune 发行说明"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
+ms.sourcegitcommit: f0e027d1c63435084c434c591fed7bb71b5c07f2
+ms.openlocfilehash: 8369cc039ac1c4c24b29927a96360cd872f8e9bc
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -27,21 +28,21 @@ ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
 
 Microsoft Intune 是基于云的综合性客户端管理解决方案，它向最新版本的 Windows 提供工具、报告和升级许可证。 它还有助于保持你的计算机使用最新程序且安全可靠。 此外，利用 Intune，你可以通过 Exchange ActiveSync 或直接通过 Intune 管理网络上的移动设备。 以下发行说明描述了 Microsoft Intune 中的重要信息和已知问题。
 
+<!-- 3-6-17: customer asked if this is still current; Stacie asked Chris Baldwin about it. Chris said it's a Samsung issue, but that he hasn't heard any reports about it for months, so he suggested that I share that with the customer and remove this item from the release notes. I'm only going to comment it out in case it resurfaces.
+## Android users can’t send email when conditional access for Exchange Online is implemented
 
-## <a name="android-users-cant-send-email-when-conditional-access-for-exchange-online-is-implemented"></a>当执行对 Exchange Online 的条件性访问时，Android 用户无法发送电子邮件
+**Issue:** Users running Samsung Android 5.1.1 and later on their devices can't send email when conditional access for Exchange Online has been set up. Samsung acknowledges that the issue is in its built-in email client in Android 5.1.1 and later, and is investigating a fix.
 
-**问题：**设置了 Exchange Online 的条件访问时，在设备上运行 Samsung Android 5.1.1 及更改版本的用户无法发送电子邮件。 Samsung 承认其 Android 5.1.1 及更高版本的内置电子邮件客户端中存在此问题，且正在研究修复程序。
+**Workaround 1:** Advise users to use the Outlook app for Android.
 
-**解决方法 1：**建终用户使用适用于 Android 的 Outlook 应用。
+**Workaround 2:** To let affected users send email, you can follow these steps:
 
-**解决方法 2：**要让受影响用户能够发送电子邮件，可以遵循下列步骤：
+1. Put each affected user in a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Let the user temporarily sync email on the built-in email client.
+3. Remove the affected user from the exempted group, and confirm that the user can now send email.
 
-1. 将受影响用户加入在 Exchange Online 条件访问策略的“免除组”部分中的安全组。
-2. 允许用户在内置电子邮件客户端上临时同步电子邮件。
-3. 将受影响用户从免除组中移出，并确认用户现在可以发送电子邮件。
-
-Microsoft 将继续与 Samsung 紧密合作，共同研究出修复程序和其他解决方法。
-
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+-->
 
 
 ## <a name="changing-resource-access-profiles-between-groups-for-ios-and-android-might-fail"></a>更改 iOS 和 Android 组之间的资源访问配置文件可能会失败
@@ -92,9 +93,4 @@ Microsoft 将继续与 Samsung 紧密合作，共同研究出修复程序和其�
 Azure 门户支持以下这些语言：中文（简体）、中文（繁体）、捷克语、荷兰语、英语、德语、匈牙利语、意大利语、日语、葡萄牙语（巴西）、葡萄牙语（葡萄牙）、俄语、西班牙语、英语、法语、朝鲜语、波兰语、瑞典语和土耳其语。
 
 Intune 管理控制台和面向用户的移动体验除了 Azure 门户中支持的所有语言外，还支持丹麦语、希腊语、芬兰语、挪威语和罗马尼亚语。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

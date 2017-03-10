@@ -17,6 +17,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
 ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
 ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -278,13 +279,8 @@ ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
       <p>关注 Intune 最新信息</p>
       <ol class="action-list">
         <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune 团队博客</a></li>
-        <li>Twitter 上的 <a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune</a></li>
+        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent"> Twitter 上的@MSIntune</a></li>
       </ol>
     </aside>
 </article>
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

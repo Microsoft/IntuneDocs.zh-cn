@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 0e47c60c8cbbd635427916b84690959d2c69ce31
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: b9d7c7970ddc334dd6c500105b250d516a60a6d4
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -49,9 +50,4 @@ Lookout for Work 在设备上发现潜在威胁，必须解决该问题才能重
 卸载该应用后，你能立即重新访问电子邮件和其他公司或学校数据。 如果忽略卸载该应用的请求，将无法对公司电子邮件和数据进行访问，直到卸载该应用。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
