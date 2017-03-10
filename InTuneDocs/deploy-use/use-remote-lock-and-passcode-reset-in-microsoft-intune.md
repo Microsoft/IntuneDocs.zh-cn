@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
-ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>使用远程锁定和密码重置功能帮助保护设备
@@ -34,6 +35,7 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 |macOS|不支持|
 |iOS|支持|
 |Android|支持|
+|Android for Work|支持|
 |Windows 10（移动版）|支持|
 |Windows 10（桌面版）|不支持|
 |Windows Phone 8 和 Windows Phone 8.1|支持|
@@ -61,6 +63,7 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 |macOS|不支持|
 |iOS|支持以便清除设备中的密码。 不创建新的临时密码。|
 |Android|在早于 Android 7.0 的版本上受支持。 创建临时密码。|
+|Android for Work|不支持|
 |Windows 10 移动版|支持|
 |Windows Phone 8 和 Windows Phone 8.1|支持|
 |Windows RT 8.1|不支持|
@@ -83,9 +86,4 @@ Microsoft Intune 提供远程锁定和密码重置功能。
 
 ### <a name="see-also"></a>另请参阅
 [停用设备](retire-devices-from-microsoft-intune-management.md)和[设备数据管理的 Windows 选择性擦除](http://technet.microsoft.com/library/dn486874.aspx)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
