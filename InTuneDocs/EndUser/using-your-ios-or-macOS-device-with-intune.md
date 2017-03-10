@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ ms.lasthandoff: 03/02/2017
 
 - [在设备上使用托管应用](use-managed-apps-on-your-device-ios.md)
 - [设置或更改密码](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [重置（清除）丢失或被盗设备](reset-erase-your-device-cpwebsite.md)
 - [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-ios.md)
 - [从 Intune 取消注册设备](unenroll-your-device-from-intune-ios.md)
