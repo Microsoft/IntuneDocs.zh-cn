@@ -2,10 +2,10 @@
 title: "指定 IMEI 号码 | Microsoft Docs"
 description: "Microsoft Intune 使管理员可以为移动设备平台导入 IMEI 号码，以帮助识别公司拥有的移动设备"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -50,13 +51,11 @@ Microsoft Intune 让管理员可以使用 IMEI 号码导入移动设备平台的
 3.  在“查看设备”窗格中，可确认已导入的设备 IMEI 号码。 对于要再次导入的 IMEI 号码，还可以决定是否要覆盖“详细信息”。 可以取消选中“覆盖”复选框，以保留当前详细信息。 选择**完成**以导入 IMEI 号码。
 4.  已导入的 IMEI 号码和说明会添加到“按 IMEI (所有平台)”列表中。
 
+> [!IMPORTANT]
+> 如果要导入适用于 Android 设备的 IMEI 号码，请注意某些 Android 设备可以有多个 IMEI 号码。 如果导入一个 IMEI 号码，但它与设备报告给 Intune 的 IMEI 不符，就会将设备归类为个人设备，而非公司自有设备。
+
 当具有 IMEI 号码的设备在 Intune 中注册后，通常当用户安装公司门户应用并完成注册过程时，设备会被标记为“公司拥有”，并在“IMEI 设备”组中显示为“已注册”。
 
->[!NOTE] 
+>[!NOTE]
 > 组织随后迁移到新的 Azure 门户时，将看到此功能的更改。 在现有的 Intune 管理员控制台中，管理员可以从上传的 CSV 中获取相关详细信息，并覆盖各个硬件标识符的现有详细信息。 在新的 Azure 门户中，可以自动覆盖所有硬件标识符的详细信息，或忽略现有标识符的所有新详细信息。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

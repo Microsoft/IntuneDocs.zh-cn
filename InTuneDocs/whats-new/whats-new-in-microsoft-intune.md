@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cb1679deda0ba325ee3bd7288713f12317489006
-ms.openlocfilehash: 37d44dc2752815ef7abf47e5d4a658a126892a86
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: a9336e3d230de962d2623dd627e45c6e9262a822
+ms.openlocfilehash: cfe4a0bb802956278387ac2a39d5316482e09332
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -80,6 +80,12 @@ Azure 门户中的管理体验将使用已公布的新分组和定向功能；�
 如果对租户迁移的时间表有任何疑问，请通过 [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) 联系我们的迁移团队。
 
 在[此处](https://docs.microsoft.com/intune-azure/introduction/whats-new)可找到 Azure 中 Intune 预览版的新增功能。
+
+## <a name="whats-coming"></a>即将推出
+
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 将要求更新应用传输安全<!--748318-->
+
+自 2017 年春季开始，Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求。 使用 ATS 对所有通过 HTTPS 的应用通信实施更严格的安全措施。 此更改会影响使用 iOS 公司门户应用的 Intune 客户。 请查看 [Intune 支持博客](https://aka.ms/compportalats)，了解更多详细信息。 
 
 ### <a name="see-also"></a>另请参阅
 * [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)

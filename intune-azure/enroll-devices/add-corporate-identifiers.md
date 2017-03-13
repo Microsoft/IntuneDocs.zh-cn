@@ -3,10 +3,10 @@ title: "将 IMEI 标识符添加到 Intune"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何将企业标识符（IMEI 号码）添加到 Microsoft Intune。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 0d7c8eedbdad917a43d43d2e79ead5663e8e2871
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 47d326c4422a2908dd29dd963fd8835b36b9f9f3
+ms.lasthandoff: 02/25/2017
 
 ---
 
@@ -44,6 +44,9 @@ ms.lasthandoff: 02/18/2017
 3. 若要导入包含新详细信息（将覆盖现有信息）的文件，请选择“覆盖现有标识符详细信息”以将现有详细信息替换为新的详细信息。
 
 4. 导航到 IMEI CSV 文件，然后选择“添加”。
+
+> [!IMPORTANT]
+> 如果要导入适用于 Android 设备的 IMEI 号码，请注意某些 Android 设备可以有多个 IMEI 号码。 如果导入一个 IMEI 号码，但它与设备报告给 Intune 的 IMEI 不符，就会将设备归类为个人设备，而非公司自有设备。
 
 **删除企业标识符 .csv 列表**
 

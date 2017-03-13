@@ -15,21 +15,22 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: d53cded6670069f10bf645d23ff9a9102bd97539
+ms.lasthandoff: 02/25/2017
 
 
 ---
 
-# <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>仅允许支持 Intune MAM 策略的移动应用访问 Office 365 服务
+# <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>仅允许支持 Intune 应用保护策略的移动应用访问 Office 365 服务
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[Intune 移动应用管理 (MAM) 策略](protect-apps-and-data-with-microsoft-intune.md)可帮助保护在 Intune 中注册进行管理的设备上的公司数据。 还可以在**员工拥有的未在 Intune 中注册进行管理的设备**上使用 MAM 策略。  在这种情况下，即使不管理该设备，仍需要确保公司数据和资源受保护。 通过使用 MAM 的条件访问 (MAM CA)，可以创建仅允许支持 Intune MAM 策略的移动应用访问 O365 服务（如 Exchange Online）的策略。
+[Intune 应用保护策略](protect-apps-and-data-with-microsoft-intune.md)可帮助保护在 Intune 中注册进行管理的设备上的公司数据。 还可在 **Intune 中注册进行管理的员工自有设备**上使用应用保护策略。  在这种情况下，即使不管理该设备，仍需要确保公司数据和资源受保护。 使用基于应用的 MAM 条件性访问，可创建相应策略，仅允许支持 Intune 应用保护策略的移动应用访问 O365 服务（如 Exchange Online）。
 
 例如，通过仅允许 **Microsoft Outlook 应用**访问 Exchange Online，可以**阻止 iOS 和 Android 上的内置邮件应用**，这些应用不具有 Intune MAM 策略提供的数据保护，从而无法从 **Exchange Online** 获取电子邮件。
 
-下图说明 MAM CA 策略用于确定何时允许和阻止访问的流：![显示各种用于确定是允许还是阻止访问的所含条件的图表](../media/mam-ca-decision-flow_simple.png)。
+下图说明了基于应用的条件性访问策略采用何种流程来确定何时允许或阻止访问：![显示是否允许访问时的各种必备条件的图表](../media/mam-ca-decision-flow_simple.png)。
 
 图表中使用的缩写的说明：
 * **CP**：公司门户应用
@@ -38,13 +39,13 @@ ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 * **EAS**：Exchange Active Sync
 
 ## <a name="prerequisites"></a>先决条件
-可以配置 MAM CA 策略**之前**，你必须具有**企业移动性 + 安全性或 Azure Active Directory Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+创建基于应用的条件性访问策略**之前**，必须具有**“企业移动性 + 安全性”或 Azure Active Directory Premium 订阅**，且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
 
 
 ## <a name="supported-apps"></a>受支持的应用
 **Exchange Online**：**Microsoft Outlook** for Android 和 Microsoft Outlook for iOS。
 
-若要了解具有 MAM CA 策略的应用的用户体验，请参阅[将应用与 MAM CA 结合使用时预期会出现的情况](use-apps-with-mam-ca.md)。
+若要了解应用具有基于应用的条件性访问策略时的用户使用体验如何，请参阅[将应用与 MAM CA 结合使用时预期会出现的情况](use-apps-with-mam-ca.md)。
 
 
 ## <a name="next-steps"></a>后续步骤
@@ -54,10 +55,5 @@ ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 
 ### <a name="see-also"></a>另请参阅
 
-[使用 MAM 策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+[使用应用保护策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
