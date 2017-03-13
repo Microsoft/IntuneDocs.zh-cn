@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -35,8 +35,8 @@ ms.lasthandoff: 02/18/2017
 
 可以使用以下连接类型创建 VPN 配置文件：
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |连接类型|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |脉冲安全|是|是|是|是|是|是|
 |Cisco (IPSec)|否|是|否|否|否|否|
