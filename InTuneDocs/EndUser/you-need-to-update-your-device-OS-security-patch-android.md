@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 440d0e75c9373d5de44897b8a997da6c24de4e3c
-ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: e8a25b1c89dc84adb05458a93b2048c7149c2a6f
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -26,24 +27,19 @@ ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
 
 如果看到消息告知“未配置最低 Android 安全修补程序级别”，则需要安装更新以确保设备保持安全。 修补程序发布用于维护软件以使其顺畅运行且处于最新版本。 IT 管理员要求安装此修补程序来确保公司数据在你的设备上尽可能地受到保护。 所需的安全修补程序的位置不定，具体取决于你的 Samsung 设备是否为特定型号。
 
-如果你拥有 Samsung 设备，请转到“设置” > “关于手机”，然后查看屏幕上是否有“Knox”一词。 如果有，则请遵循下面的 Samsung Knox 说明。
+如果拥有 Samsung 设备，请转到“设置” > “关于手机”，然后查看屏幕上是否有“KNOX”一词。 如果有，请遵循下面的 Samsung KNOX 说明操作。
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-## <a name="for-most-android-devices-non-samsung-knox"></a>适用于大多数 Android 设备（非 Samsung Knox）
+## <a name="for-most-android-devices-non-samsung-knox"></a>适用于大多数 Android 设备（非 Samsung KNOX）
 
 转到“设置” > “关于” > “软件更新”。 安装更新，然后设备应该已安装了正确的安全修补程序。
 
-## <a name="for-samsung-knox-android-devices"></a>适用于 Samsung Knox Android 设备
+## <a name="for-samsung-knox-android-devices"></a>适用于 Samsung KNOX Android 设备
 
-转到“设置” > “系统更新” > “检查新的系统更新”。 安装更新，然后 Samsung Knox 设备应该已安装了正确的安全修补程序。
+转到“设置” > “系统更新” > “检查新的系统更新”。 安装更新，然后 Samsung KNOX 设备应该已安装了正确的安全修补程序。
 
 
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
-ms.lasthandoff: 01/28/2017
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -42,15 +42,13 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 产品反馈网站
 
-是否要向 Microsoft 提出改进 Intune 的建议？ 请在 Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) 反馈网站向我们提供你的想法。 也可以对其他人在 UserVoice 上提出的想法进行投票。 
+是否要向 Microsoft 提出改进 Intune 的建议？ 请在 Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) 反馈网站向我们提供你的想法。 也可以对其他人在 UserVoice 上提出的想法进行投票。
 
 ![Microsoft Intune UserVoice 反馈页面](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>创建在线支持票证
+## <a name="create-a-support-ticket"></a>创建支持票证
 
-如果无法通过自助资源找到答案，可创建在线支持票证。
-
-**请将每个支持票证限制为单个问题**，帮助我们更好地为你服务。 原因如下：
+如果无法通过自助资源找到答案，可创建在线支持票证。 **请将每个支持票证限制为单个问题**，帮助我们更好地为你服务。 原因如下：
 
 - 提供协助的支持工程师可能专攻特定领域，且这更方便确认要协助解决问题的适当主题专家。
 - 工程团队可优先处理当前滋生最多事件的产品领域。
@@ -58,12 +56,15 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 
 创建支持票证前，请查看[支持事件的定义](#definition-of-a-support-incident)。
 
-**创建在线支持票证**：
+### <a name="steps-to-create-an-online-support-ticket"></a>在线支持票证的创建步骤
 
 1.  使用你的 Intune 凭据登录到 [Office 365 管理中心](https://portal.office.com)。
+
+    而顶级支持客户应在[顶级支持页](https://support.microsoft.com/en-us/premier/contacts)上打开 Intune 支持票证。
+
     >[!NOTE]
     >
-    >顶级支持客户可在[顶级支持页](https://support.microsoft.com/en-us/premier/contacts)上打开 Intune 支持票证。
+    >顶级支持客户应在[顶级支持页](https://support.microsoft.com/en-us/premier/contacts)上打开 Intune 支持票证。
 
 2.  选择“管理员”磁贴。
 3.  在左侧的“支持”下，选择“支持”创建票证。
@@ -84,9 +85,9 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 
 3.  按照说明打开请求。
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>通过备用方法创建支持票证
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>通过备用方法创建支持票证的步骤
 
-如果支持页外观是如下所示，请执行以下步骤：
+如果 Office 365 管理中心的支持页外观如下所示，请执行以下步骤：
 
 ![Intune 替代支持](../media/alternate-support-ui.png)
 
@@ -102,30 +103,30 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 请参阅[联系 Microsoft Intune 的辅助电话支持](contact-assisted-phone-support-for-microsoft-intune.md)了解各个国家和地区的支持电话号码、支持时间和各个地区所支持的语言。
 
 ## <a name="track-your-support-requests"></a>跟踪支持请求
-1.  使用你的 Intune 凭据登录到 [Office 365 管理中心](https://portal.office.com)。
+1.  使用 Intune 管理员凭据登录到 [Office 365 管理中心](https://portal.office.com)。
 2.  选择“管理员”磁贴。
 3.  在左侧的“支持”下，选择“服务请求”。 然后即可查看请求。
 
-我们对支持请求的初步响应取决于问题的严重程度。 对专业客户非常严重的问题，会在两小时内做出初始响应。 对于顶级支持客户，响应时间根据支持协议而有所不同。 下面是一些示例：
+我们对支持请求的初步响应取决于问题的严重程度。 对专业客户非常严重的问题，会在两小时内做出初始响应。 对于顶级支持客户，响应时间根据支持协议而有所不同。 一种情况**最严重**，此时：
 
 - 一个或多个服务无法访问或不可用。
 - 生产、操作或部署截止时间受到严重影响，或者将会对生产或盈利能力产生严重影响。
 - 多个用户或服务受到影响。
 
-对专业客户较严重的问题，会在四小时内做出初始响应。 对于顶级支持客户，响应时间根据支持协议而有所不同。  下面是一些示例：
+对专业客户较严重的问题，会在四小时内做出初始响应。 对于顶级支持客户，响应时间根据支持协议而有所不同。 一种情况是**中等严重**，此时：
 
 - 该服务可用，但无法像往常一样正常工作。
 - 情况会对业务产生中等程度的影响，并可在营业时间内得到处理。
 - 单一用户、客户或服务受到部分影响。
 
-对专业客户的其他问题，会在八小时内做出初始响应。 对于顶级支持客户，响应时间根据支持协议而有所不同。  下面是一些示例：
+对于专业客户的其他问题，会在&8; 小时内做出第一个响应。 对于顶级支持客户，响应时间根据支持协议而有所不同。 还有一种最不严重的情况，此时：
 
 - 情况对业务的影响很小。
 - 问题很重要，但不会对客户的当前服务或工作效率产生明显影响。
 - 单一用户会体验到部分中断情况，但有可接受的解决方法。
 
 > [!NOTE]
-> **如果使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与合作伙伴联系，或访问 [Microsoft System Center Configuration Manager 和 System Center Endpoint Protection 解决方案中心](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)查找丰富的自助式材料。 它还提供通过在线方式或通过电话创建支持请求的选项。
+> **如果使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与合作伙伴联系，或访问 [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) 和 [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) 文档查找丰富的自助式材料。 它还提供通过在线方式或通过电话创建支持请求的选项。
 >
 > System Center Configuration Manager 或 System Center Endpoint Protection 的技术支持需要付款，或者它将计为你现有的许可协议或顶级支持协议的递减。
 

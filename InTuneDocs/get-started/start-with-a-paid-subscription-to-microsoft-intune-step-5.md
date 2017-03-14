@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: 434eea4244931f0708eb05cfc39d0c97b4936830
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -32,7 +33,7 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 ## <a name="group-management-moving-to-azure-ad"></a>组管理移动到 Azure AD
 
-**从 2016 年 11 月开始**，新帐户将在 Azure Acitve Directory (AD) 门户中管理用户和设备组。 2016 年 12 月，Intune 产品团队将开始将现有客户迁移到新的基于 Azure AD 的组管理体验。 所有用户和设备组都将迁移到 Azure AD 安全组。 仅当能够将对用户日常工作的影响降到最低，且预计不会对用户造成影响时，我们才会开始迁移。 还将在迁移帐户前通知用户。
+**自 2016 年 11 月起**，新帐户将在 Azure Active Directory (AD) 门户中管理用户和设备组。 2016 年 12 月，Intune 产品团队将开始将现有客户迁移到新的基于 Azure AD 的组管理体验。 所有用户和设备组都将迁移到 Azure AD 安全组。 仅当能够将对用户日常工作的影响降到最低，且预计不会对用户造成影响时，我们才会开始迁移。 还将在迁移帐户前通知用户。
 
 
 >[!IMPORTANT]
@@ -87,9 +88,4 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 >[!div class="step-by-step"]
 
 >[&larr;**管理 Intune 许可证**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**创建策略和应用**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

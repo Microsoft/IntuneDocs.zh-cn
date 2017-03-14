@@ -5,21 +5,22 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: c7fa06ea443523c51a79c33af7e8094d7a7777c5
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: cfa3fe7bafeeb2f63b1277d573b52a0681a8ade8
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -97,10 +98,8 @@ ms.openlocfilehash: c7fa06ea443523c51a79c33af7e8094d7a7777c5
 
 你的设备现已在 Intune 中注册，你会返回到公司门户应用。
 
+> [!Note]
+> 如果组织使用的是电信费用管理软件，则还需要完成其他几个步骤才能完全注册设备。 请单击[此处](enroll-your-device-with-telecom-expense-management-ios.md)，查看详细信息。
+
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

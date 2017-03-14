@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Intune 提供了一系列内置常规设置，你可以在 [Android for Work 设
 |----------------|-|
 |**允许在工作和个人配置文件之间共享数据**|允许工作配置文件中的应用与用户个人配置文件中的应用共享数据。 选择：<br><br>- **阻止任何跨边界的共享**<br>- **工作配置文件中的应用可处理来自个人配置文件的共享请求**<br>- **无共享限制**|
 |**设备锁定时隐藏工作配置文件通知**<br>（Android 6 及更高版本）|控制是否在设备锁定时显示来自工作配置文件的任何通知。|
-|**设置默认应用权限策略**<br>（Android 6 及更高版本）|为工作配置文件中的所有应用设置默认权限策略。|
+|**设置默认应用权限策略**<br>（Android 6 及更高版本）|为工作配置文件中的所有应用设置默认权限策略。 自 Android 6 起，系统在运行时将向最终用户提示应用所需的一些权限。  此策略设置可让 IT 部门决定：用户是否会收到以及以何种方式收到为工作配置文件中的应用授予权限的提示。 <br/><br/>例如，IT 可能将应用推送到需要位置访问权限的工作配置文件。  通常，应用将弹出一个对话框，询问用户是否要授予应用的位置访问权限，用户可允许也可拒绝。  此策略使 IT 部门能决定：在无提示的情况下自动授予所有权限、在无提示的情况下自动拒绝，还是让最终用户决定。|
 
 
 ## <a name="custom-policy-settings"></a>自定义策略设置
@@ -91,9 +92,4 @@ Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

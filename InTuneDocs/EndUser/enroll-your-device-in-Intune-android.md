@@ -5,21 +5,22 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: b1de425a00e3c4200f71c8bf03661e4d0aca45c7
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 49a28a493abd5c0835606e4d550bf2229b7e5bac
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -98,7 +99,7 @@ ms.openlocfilehash: b1de425a00e3c4200f71c8bf03661e4d0aca45c7
 
     ![输入 PIN 或密码](./media/and-enroll-6-PIN-native.png)
 
-13.  如果你使用的是 Samsung Knox 设备，请点击“确认”，你将看到一条指示正在注册设备的消息。 如果你使用的是本机 Android 设备，则只需注意下面的屏幕，其中显示正在注册设备。
+13.  如果使用的是 Samsung KNOX 设备，请点击“确认”，随后将看到一条指示正在注册设备的消息。 如果你使用的是本机 Android 设备，则只需注意下面的屏幕，其中显示正在注册设备。
 
     ![Samsung KNOX 隐私策略](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -116,10 +117,8 @@ ms.openlocfilehash: b1de425a00e3c4200f71c8bf03661e4d0aca45c7
 
 你需转到“设置”&gt;“安全性”，然后打开“未知源”才能尝试安装公司应用。 如果你在尝试安装应用前未打开此选项，则会看到以下消息：“已阻止安装”。 出于安全性考虑，你的设置已被设置为阻止安装未知来源的应用。” 你可点击错误对话框上的“设置”以转到“未知来源”选项。
 
+> [!Note]
+> 如果组织使用的是电信费用管理软件，则还需要完成其他几个步骤才能完全注册设备。 请单击[此处](enroll-your-device-with-telecom-expense-management-android.md)，查看详细信息。
+
 仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 Microsoft Android 团队（发送至 wintunedroidfbk@microsoft.com）。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
