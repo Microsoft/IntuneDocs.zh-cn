@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: 47d326c4422a2908dd29dd963fd8835b36b9f9f3
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: f12d538b1f4cd327b893d234f2b558185cdd9d85
+ms.lasthandoff: 03/09/2017
 
 ---
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/25/2017
 4. 导航到 IMEI CSV 文件，然后选择“添加”。
 
 > [!IMPORTANT]
-> 如果要导入适用于 Android 设备的 IMEI 号码，请注意某些 Android 设备可以有多个 IMEI 号码。 如果导入一个 IMEI 号码，但它与设备报告给 Intune 的 IMEI 不符，就会将设备归类为个人设备，而非公司自有设备。
+> 某些 Android 设备具有多个 IMEI 号码。 Intune 为每台设备列出一个 IMEI 号码。 如果导入一个 IMEI 号码，但它与 Intune 列出的 IMEI 不符，就会将设备归类为个人设备，而非公司拥有的设备。 如果为设备导入多个 IMEI 号码，未列出号码的注册状态将显示为“未知”。
 
 **删除企业标识符 .csv 列表**
 

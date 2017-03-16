@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
-ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -57,6 +57,13 @@ ms.lasthandoff: 03/02/2017
      -     iOS 设备可能在检查合规性状态过程中受阻，进而阻止用户初始化其他签入。 重启公司门户可能可以修复此问题，且合规性状态将反映 Intune 中的设备状态。 通过设备同步收集所有的数据后，合规性检查将快速进行，平均速度不超过半秒。
 
         通常，设备保持此状态的原因是其在连接到服务时出现问题或同步花费的时间较长。  如果设备重启且已验证 SSP 在设备上为最新后，此问题继续存在于不同网络配置（移动电话网络、Wi-Fi、VPN）中，请按照[如何获取 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中的说明，与Microsoft 支持人员取得联系。
+
+ - 对于 Android 设备：
+     - 某些 Android 设备看似已加密，但公司门户应用还是会将这些设备识别为未加密。 
+    
+        -    遇到这种情况的设备需要用户设置一个安全启动密码。 用户会在公司门户应用中看到一条设备通知，通知中要求为设备设置一个启动密码。 点击设备通知并确认现有 PIN 或密码后，在“安全启动”屏幕上选择“需要 PIN 才能启动设备”选项。 然后在公司门户应用中点击设备的“检查符合性”按钮。 现在设备应该被标识为已加密。
+    
+        -     某些设备制造商使用默认 PIN，而不是用户设置的机密 PIN 来加密其设备。 Intune 会将使用默认 PIN 的加密识别为不安全，因为这种加密方式会让设备上的数据受到威胁，使数据可能泄露给对设备具有物理访问权限的恶意用户。 如果存在此问题，建议使用[应用保护策略](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
 
 ## <a name="policy-issues"></a>策略问题
 
