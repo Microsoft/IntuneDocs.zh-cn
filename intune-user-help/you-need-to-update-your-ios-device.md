@@ -1,5 +1,5 @@
 ---
-title: "设备不合规 | Microsoft Docs"
+title: "需更新 iOS 设备 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
+ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 searchScope:
 - User help
 ROBOTS: 
@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c111993248e900f663640cf45db4525dc7c7df95
+ms.openlocfilehash: bb9dfe52aa2c0150bd48f5c5cfad48a03748142c
 ms.lasthandoff: 03/16/2017
 
 
 ---
 
-# <a name="your-device-is-noncompliant"></a>设备不合规
+# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS 设备没有必需的最低操作系统版本
 
-设备不符合至少一条组织的安全策略，但无法立即显示错误。  
+[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-在公司门户应用中，点击“检查合规性”。 公司门户应用将显示导致设备不合规的原因。
+通过点击“设置” > “常规” > “软件更新”，更新 iOS 设备。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 

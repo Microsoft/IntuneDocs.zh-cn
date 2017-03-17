@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,13 +18,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
+ms.lasthandoff: 03/16/2017
 
 
 ---
-
 
 # <a name="use-managed-apps-on-your-ios-device"></a>在 iOS 设备上使用托管应用
 
@@ -63,7 +62,6 @@ IT 管理员可对托管应用进行配置，以帮助保护在该应用中可�
 -   截取屏幕截图的能力
 
 -   数据加密要求
-
 
 有关设备上的托管应用的详细信息，请联系你的 IT 部门。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
