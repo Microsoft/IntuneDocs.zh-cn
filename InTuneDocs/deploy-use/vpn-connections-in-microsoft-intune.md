@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
   - **评估连接**，具备三个设置 a。 **域操作** - 选择“**需要时进行连接**”或“**从不连接**”
       b。 **逗号分隔的域列表** - 仅当你选择“**需要时进行连接**”的**域操作**，才会对其进行配置
       c。 **所需的 URL 字符串探测** - HTTP 或 HTTPS（首选）URL，如 *https://vpntestprobe.contoso.com*。 该规则将进行检查以确认是否有来自此地址的响应。 如果没有，并且**域操作**为“**需要时进行连接**”，则会触发 VPN。
+      
      > [!TIP]
      >
      >举例说明，当公司网络上的某些站点需要直接或 VPN 公司网络连接时，你可能会使用此操作，但其他情况则不需要。 如果在**逗号分隔的 DNS 搜索域列表** *corp.contoso.com* 中列出，则可以选择“**需要时进行连接**”，然后列出可能需要 VPN 的网络中的特定站点，如 *sharepoint.corp.contoso.com*。 然后该规则将检查是否可以访问 *vpntestprobe.contoso.com*。 如果不能，VPN 将会触发 sharepoint 站点。
@@ -192,9 +194,4 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 成功部署后，用户将在其设备上的 VPN 连接列表中看到你指定的 VPN 连接名称。
 
 “策略”  工作区“概述”  页的状态摘要和警报可识别需要关注的策略问题。 此外，状态摘要会显示在“仪表板”工作区中。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
