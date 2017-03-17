@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 54bb8e68ac4435d2ae687f27317445cd18c7a5db
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -37,6 +37,7 @@ ms.lasthandoff: 02/21/2017
 - [如何在设备上查找序列号？](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [需要更新 iOS 设备](you-need-to-update-your-ios-device.md)
 - [目前不支持我的 iOS 版本](your-ios-version-isnt-yet-supported.md)
+- [使用电子邮件将日志发送给 IT 管理员](send-logs-to-your-it-admin-by-email-iOS.md)
 - [需要在 iOS 设备上安装 Lookout for Work](you-are-prompted-to-install-lookout-for-work-ios.md)
 - [需要解除 Lookout for Work 在 iOS 设备上发现的威胁](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 

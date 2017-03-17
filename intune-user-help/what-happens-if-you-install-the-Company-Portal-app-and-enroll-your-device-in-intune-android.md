@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/33/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: af410079cf7d2ab61eb2a0285e1c410fee4e4463
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 2517ad3d019b185ce3a048b95e595c189f08821e
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -59,5 +59,5 @@ ms.lasthandoff: 03/08/2017
 
 -   发送任何公司应用清单更新。 （这些更新不包含任何个人信息。）
 
-需要帮助吗? 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 [Microsoft Android 团队](mailto:wintunedroidfbk@microsoft.com)。
+需要帮助吗? 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
 
