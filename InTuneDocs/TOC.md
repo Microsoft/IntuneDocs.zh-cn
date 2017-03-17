@@ -120,6 +120,7 @@
 
 ## [添加应用](deploy-use/add-apps.md)
 ### [为已注册设备添加应用](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [旁加载 Windows 应用](deploy-use/sideload-apps-for-windows.md)
 ### [为 Intune 客户端电脑添加应用](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [管理 Intune 客户端电脑的许可协议](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [部署应用](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Android for Work 应用配置策略](deploy-use/afw-app-configuration-policy.md)
 ### [iOS 移动应用预配配置文件](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [管理 Internet 访问](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [旁加载 LOB 应用](deploy-use/sideload-apps-for-windows.md)
 
 ## [保护应用和数据](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [设备合规性策略](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
