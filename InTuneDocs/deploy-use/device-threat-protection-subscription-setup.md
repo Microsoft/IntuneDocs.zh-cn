@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
 ms.openlocfilehash: a61cbc076167dfaffeb1af82d78654f2bb7f7721
+ms.lasthandoff: 01/14/2017
 
 
 ---
@@ -76,7 +77,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 
   请参阅 [Lookout 集成疑难解答](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration)获取有关登录问题的帮助。
 
-3.  在“Lookout 控制台”[](https://aad.lookout.com)中，从“系统”模块选择“连接器”选项卡，然后选择“Intune”。
+3.  在[“Lookout 控制台”](https://aad.lookout.com)中，从“系统”模块选择“连接器”选项卡，然后选择“Intune”。
 
   ![Lookout 控制台的屏幕截图，其中打开了“连接器”选项卡并突出显示了“Intune”选项](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
@@ -89,7 +90,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 
   Azure AD 注册组中标识和支持的所有受 Lookout 支持并注册了 Intune 的设备，都注册了 Lookout 设备威胁防护并可在其中激活。
 
-2. 在“Lookout 控制台”[](https://aad.lookout.com)的“系统”模块中，选择“连接器”选项卡，然后选择“注册管理”定义一组其设备应注册 Lookout 的用户。 添加用于注册的 Azure AD 安全组“显示名称”。
+2. 在[“Lookout 控制台”](https://aad.lookout.com)的“系统”模块中，选择“连接器”选项卡，然后选择“注册管理”定义一组其设备应注册 Lookout 的用户。 添加用于注册的 Azure AD 安全组“显示名称”。
 
   ![Intune 连接器注册页面的屏幕截图](../media/mtp/lookout-mtp-enrollment.png)
 
@@ -137,9 +138,4 @@ Lookout 设备威胁保护将移动威胁分为多种类型。 [Lookout 威胁�
 此步骤完成后，Lookout 设备威胁保护将开始轮询 Azure AD，查找与指定注册组相对应的设备。  可在“设备”模块查看有关已注册设备的信息。  设备的初始状态显示为“待定”。  在设备上安装、打开和激活 Lookout for Work 应用后，设备状态将发生改变。  有关如何将 Lookout for Work 应用推送到设备的详细信息，请参阅[配置并部署 Lookout for Work 应用](configure-and-deploy-lookout-for-work-apps.md)主题。
 ## <a name="next-steps"></a>后续步骤
 [启用 Lookout MTP 连接 Intune](enable-lookout-mtp-connection-in-intune.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
