@@ -16,6 +16,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
 ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
+ms.lasthandoff: 12/15/2016
 
 
 ---
@@ -47,7 +48,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 ### <a name="post-sign-up-considerations"></a>注册后的注意事项
 注册试用版时，在注册过程中提供的电子邮件地址将收到一封电子邮件，该电子邮件中包含帐户信息。 该电子邮件用于确认试用版处于活动状态。
 
-完成注册过程后，系统会定向到一个页面，该页面用于使用 Office 365 管理中心添加用户并为其分配许可证。 下次登录到“经典 Intune”时 (https://manage.microsoft.com)，将自动定向到 Intune 管理控制台。
+完成注册过程后，系统会定向到一个页面，该页面用于使用 Office 365 管理中心添加用户并为其分配许可证。 下次登录到“经典 Intune”时 (https://manage.microsoft.com) ，将自动定向到 Intune 管理控制台。
 
 如果试用版位于“Azure 门户”中，请转到 https://portal.azure.com 并使用 Intune 试用版凭据登录。
 
@@ -146,9 +147,4 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 - [多重身份验证要求](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 深入了解如何使用 [Intune 与 System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
