@@ -74,7 +74,7 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
 2. [创建设备合规性策略](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
 2.  为以下任一项 Microsoft 云服务/产品创建条件性访问策略：
-> [!div class="op_single_selector"]
+
   - [为 Exchange Online 创建条件性访问策略](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [为 Exchange 内部部署创建条件性访问策略](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [为新版 Exchange Online Dedicated 创建条件性访问策略](restrict-access-to-exchange-online-with-microsoft-intune.md)
