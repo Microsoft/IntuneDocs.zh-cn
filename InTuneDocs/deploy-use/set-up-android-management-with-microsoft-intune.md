@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: a5a4f11ae341480b2e674ca55a514b62831bdd60
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -38,11 +38,11 @@ ms.lasthandoff: 02/18/2017
 
 3.  **告诉用户如何注册其设备以获取对公司资源的访问权限。**
 
-    有关最终用户注册说明，请参阅[在 Intune 中注册 Android 设备](../enduser/enroll-your-device-in-intune-android.md)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
+    有关最终用户注册说明，请参阅[在 Intune 中注册 Android 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
 
     有关其他最终用户任务的信息，请参阅以下文章：
   - [有关 Microsoft Intune 最终用户体验的资源](how-to-educate-your-end-users-about-microsoft-intune.md)
-  - [适用于 Android 设备的最终用户指南](../enduser/using-your-android-device-with-intune.md)
+  - [适用于 Android 设备的最终用户指南](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 由于中国地区没有 Google Play 商店，Android 设备必须从中国的应用市场获取公司门户。 可在以下应用商店下载用于 Android 的公司门户应用：
 * [百度](https://go.microsoft.com/fwlink/?linkid=836946)
