@@ -41,7 +41,7 @@
 #### [使用设备注册计划注册 iOS 设备](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [使用设备注册管理器注册设备](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [注册 macOS 设备](enroll-devices/enroll-macos-devices.md)
-### [注册 Windows 设备](enroll-devices/enroll-window-devices.md)
+### [注册 Windows 设备](enroll-devices/enroll-windows-devices.md)
 ### 管理设备注册
 #### [创建条款和条件](enroll-devices/create-terms-and-conditions.md)
 #### [设置注册限制](enroll-devices/set-enrollment-restrictions.md)
