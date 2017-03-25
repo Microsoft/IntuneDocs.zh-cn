@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,21 +16,21 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 26991bd0c7632d04b75ecbec023d96c1045f337a
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 82585886bb053d5b6b5981f61d0337fc6feffea4
+ms.openlocfilehash: b26d66d557e084b5b328aec2222c50c2db254bf7
+ms.lasthandoff: 03/14/2017
 
 
 ---
 
-# <a name="get-an-apple-mdm-push-certificate"></a>获取 Apple MDM Push Certificate 
+# <a name="get-an-apple-mdm-push-certificate"></a>获取 Apple MDM Push Certificate
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune 启用了 iPad、iPhone 和 Mac OS X 设备的移动设备管理 (MDM)，并允许用户访问公司电子邮件和应用。 必须拥有 Apple 推送通知服务 (APNs) 证书，才能使用 Intune 管理 iOS 和 Mac 设备。 在将证书添加到 Intune 后，用户可以安装公司门户应用以注册其设备，或者你可以设置公司拥有的 iOS 设备管理。
+Intune 启用了 iPad、iPhone 和 Mac 计算机的移动设备管理 (MDM)，并允许用户访问公司电子邮件和应用。 必须拥有 MDM Push Certificate 才能使用 Intune 管理 iOS 和 Mac 设备。 在将证书添加到 Intune 后，用户可以安装公司门户应用以注册其设备。 此外，你还可以设置具备 Apple 设备注册计划的公司所有的 iOS 设备管理，或使用 Apple Configurator 等注册设备。 有关注册选项的详细信息，请参阅[选择 iOS 设备的注册方式](https://docs.microsoft.com/intune-azure/enroll-devices/choose-ios-enrollment-method)。
 
 ## <a name="steps-to-get-your-certificate"></a>获取证书的步骤
-在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。 在“Intune”边栏选项卡上，选择“注册设备” > “Apple MDM Push Certificate”，然后按照 Azure 门户中的编号步骤操作，如下所示。
+在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。 在“Intune”边栏选项卡上，选择“**注册设备**” > “**Apple 注册**”“**Apple MDM Push Certificate**”，然后按照 Azure 门户中的编号步骤操作，如下所示。
 
 **步骤 1.下载创建 Apple MDM Push Certificate 所需的 Intune 证书签名请求。**<br>
 选择“下载 CSR”，本地下载并保存 .csr 文件。 .Csr 文件用于从 Apple 推送证书门户请求信任关系证书。

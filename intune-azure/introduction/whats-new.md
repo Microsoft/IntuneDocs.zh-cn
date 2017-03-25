@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ffbc91edbdec4abbb5c3c9e28c3b44df03117492
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 92bb81440b9374b2b0b433b32fc0a1301998ea80
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -27,6 +27,58 @@ ms.lasthandoff: 02/18/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 随着公共预览版的不断改进，添加了更多功能，以下是相关介绍。
+
+> [!Note]
+> 此页上提供了针对 Azure 门户预览列出的更改。 但是，鉴于 Intune 服务的更新方式，所做的更改可能无法立即使用。  在新门户功能可用之前，必须按顺序更新服务的多个组件。 在本月晚些时候推出时查找这些更改。
+
+## <a name="march-2017"></a>2017 年 3 月
+
+### <a name="support-for-ios-lost-mode---431695--"></a>对 iOS 丢失模式的支持<!--431695-->
+
+对于 iOS 9.3 和更高版本设备，Intune 增加了对**丢失模式**的支持。 现在可以锁定设备以防止所有使用并显示设备锁定屏幕的消息和联系人电话号码。
+
+最终用户将无法解锁设备，直到管理员禁用丢失模式。 启用丢失模式后，可以使用查找设备操作在 Intune 控制台中的地图上显示该设备的地理位置。
+
+有关详细信息，请参阅[什么是 Microsoft Intune 设备管理](/intune-azure/manage-devices/what-is)？
+
+### <a name="improvements-to-device-actions-report---677150--"></a>改进设备操作报告<!--677150-->
+
+改进了设备操作报告，进而改善了性能。 此外，现可按状态筛选报告。 例如，可筛选报告以仅显示“已完成”的设备操作。
+
+### <a name="actions-for-non-compliance---730266--"></a>针对不合规的操作<!--730266-->
+
+“针对不合规的操作”是合规性策略的新功能，允许在不合规的设备上执行操作。 可指定单个或多个操作，并指定这些操作必然会发生的时间段。 例如，可在设备变为不合规后，立即通过电子邮件通知该不合规设备的用户，或可在 3 天宽限期后，通过条件性访问阻止不合规设备访问公司资源。
+
+### <a name="custom-app-categories---748805--"></a>自定义应用类别<!--748805-->
+
+现可以为添加到 Intune 的应用创建、编辑和分配类别。 目前，只能以英文指定类别。
+请参阅[如何将应用添加到 Intune](/intune-azure/manage-apps/add-apps)。
+
+### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>将 LOB 应用分配给未注册设备的用户<!--748823-->
+
+现在，无论用户的设备是否已注册 Intune，都可以从应用商店向用户分配业务线应用。 如果用户设备未注册 Intune，他们必须转到公司门户网站（而非公司门户应用）安装它。
+
+### <a name="new-compliance-reports---846671--"></a>新符合性报告<!--846671-->
+
+现可通过符合性报告了解设备在公司中的符合性状态，以便快速解决用户遇到的与符合性相关的问题。 可查看以下相关信息
+
+- 设备的总体符合性状态
+- 单个设置的符合性状态
+- 单个策略的符合性状态
+
+还可使用这些报告向下钻取各个设备，查看影响该设备的特定设置和策略。
+
+<!--- You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
+
+- Windows 10 Professional
+- Windows 10 Professional N
+- Windows 10 Professional Education
+- Windows 10 Professional Education N --->
+
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接访问 Apple 注册方案<!--951869-->
+
+对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 预览门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，仅能通过经典 Intune 门户中的链接访问 Apple 注册预览版。 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的这些功能。 迁移的计划目前尚未公布，但详细信息将尽快发布。 强烈建议创建一个试用帐户，在现有帐户无法访问预览版时测试新体验。
+
 
 ## <a name="february-2017"></a>2017 年 2 月
 
@@ -49,7 +101,13 @@ Intune 将所有新设备都标记为个人所有，除非 IT 管理员将设备
 请参阅[如何将应用添加到 Intune](/intune-azure/manage-apps/add-apps)。
 
 ### <a name="display-device-categories---814654--"></a>显示设备类别<!--814654-->
-现在可以将设备类别作为设备列表中的一列进行查看。 并且还可以在设备属性边栏选项卡的属性部分编辑该类别。 请参阅[如何将应用添加到 Intune](/intune-azure/manage-apps/add-apps)。 
+现在可以将设备类别作为设备列表中的一列进行查看。 并且还可以在设备属性边栏选项卡的属性部分编辑该类别。 请参阅[如何将应用添加到 Intune](/intune-azure/manage-apps/add-apps)。
+
+### <a name="configure-windows-update-for-business-settings---776716--"></a>配置 Windows Update for Business 设置<!--776716-->
+
+Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 开始，任何新的功能更新和质量更新都将包含所有此前更新的内容。 这意味着，只要安装了最新更新，你的 Windows 10 设备将完全保持最新状态。 与以前版本的 Windows 不同的是，现在必须安装完整的更新，而不是部分更新。
+
+借助 Windows Update for Business 可以简化更新管理体验，不需要批准设备组的单个更新。 通过配置更新推出策略仍可以管理环境中的风险，并且 Windows 更新将确保在适当的时间安装更新。 Microsoft Intune 提供在设备上配置更新设置的功能，使你能够延迟更新安装。 Intune 不会存储更新，仅存储更新策略分配。 设备直接访问 Windows 更新以进行更新。使用 Intune 来配置和管理 **Windows 10 更新通道**。 更新通道包含一组设置，可配置何时以及如何安装 Windows 10 更新。 有关详细信息，请参阅[配置 Windows Update for Business 设置](/intune-azure/configure-devices/how-to-configure-windows-update-for-business)。
 
 ## <a name="january-2017"></a>2017 年 1 月
 

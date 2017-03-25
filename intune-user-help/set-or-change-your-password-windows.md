@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="make-your-device-safer-with-the-right-password"></a>使用合适的密码确保设备更安全
 
-用户可能每天都需要从其 Windows 设备访问公司资源，例如电子邮件和文档。 组织希望确保设备安全地访问资源。 确保设备安全访问这些资源的一种方法是要求设备使用密码。
+用户可能每天都需要从其 Windows 设备访问公司资源，例如电子邮件和文档。 组织希望确保设备安全地访问资源。 确保设备安全访问这些资源的一种方法是要求设备使用密码。 例如，这些密码用于从锁定屏幕访问你的设备。
 
 如果 Windows 设备与 IT 管理员设置的密码策略不相符，则会出现一条消息，其中简要描述了该问题并指出使密码符合要求所需的操作。
 

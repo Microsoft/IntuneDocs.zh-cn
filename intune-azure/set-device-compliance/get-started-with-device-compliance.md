@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-本主题介绍开始创建设备合规性策略前的详细需知，以及 Azure 门户中可见内容和可执行操作的快速概览。 如果你尚不熟悉设备合规性，可阅读此主题，了解设备合规性的定义及其在公司中的使用方法。
+在本主题中，你将了解以下内容： 
+
+- 开始创建设备符合性策略之前需要执行的操作。
+- 快速浏览在 Intune Azure 预览门户中可以查看和执行的操作。 
+
+如果不熟悉设备符合性，可以阅读[本主题](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance)，了解什么是设备符合性，以及如何在组织中使用。
 
 ##  <a name="pre-requisites"></a>先决条件
-
 
 -   订阅 Intune
 
 -   Azure Active Directory 订阅
 
-
-
 ##  <a name="supported-platforms"></a>受支持的平台：
-
 
 -   Android
 
@@ -54,8 +55,7 @@ ms.lasthandoff: 02/18/2017
 
 ##  <a name="azure-portal-workflow"></a>Azure 门户工作流
 
-
-下面概述如何在 Azure 门户中创建和管理设备合规性。
+以下是如何在 Intune Azure 预览门户中创建和管理设备符合性的概述。
 
 <!---### Overview
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a062b92cba0042153ffe22b949ce8a3b7b740b3f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -222,7 +222,7 @@ ms.lasthandoff: 02/18/2017
 -     **iCloud 照片库** - 如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。    如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。
 -     **通过托管的应用同步到云** - 允许通过 Intune 管理的应用将数据同步到用户的 iCloud 帐户。
 -     **共享照片流** - 将其设置为“否”以在设备上禁用“iCloud 照片共享”。
--     **活动延续** - 允许用户在其他 iOS 或 Mac OS X 设备上继续进行在某台 iOS 设备上开始的工作（切换）。
+-     **活动延续** - 允许用户在其他 iOS 或 macOS 设备上继续进行在某台 iOS 设备上开始的工作（切换）。
 
 ## <a name="kiosk"></a>Kiosk
 -     **激活锁** - 在受监管的 iOS 设备上启用激活锁。

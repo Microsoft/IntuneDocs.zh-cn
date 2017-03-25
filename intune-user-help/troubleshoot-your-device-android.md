@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 9862ef9fd1d4827ae99480cd2cf2eac8dfca54d8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,6 +28,7 @@ ms.lasthandoff: 02/21/2017
 
 有时 Android 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](http://portal.manage.microsoft.com)上的 IT 管理员联系信息与其联系。
 
+- [在 Android 设备上检查符合性](check-compliance-on-your-device-android.md)
 - [使用详细日志记录来帮助 IT 管理员解决设备问题](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [使用电子邮件将日志发送给 IT 管理员](send-logs-to-your-it-admin-by-email-android.md)
 - [使用 USB 电缆将日志发送给 IT 管理员](send-logs-to-your-it-admin-using-cable-android.md)

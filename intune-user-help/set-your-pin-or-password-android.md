@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="set-your-pin-or-password"></a>设置你的 PIN 或密码
 
-当使用 Intune 来访问工作或学校的数据时，你的 IT 管理员可能要求你在 Android 设备上设置 PIN 或密码。 可能还会看到消息，要求使 PIN 或密码更长或更复杂，使其更加安全。  
+当使用 Intune 来访问工作或学校的数据时，你的 IT 管理员可能要求你在 Android 设备上设置 PIN 或密码。 可能还会看到消息，要求使 PIN 或密码更长或更复杂，使其更加安全。 例如，这些密码用于在锁定屏幕中访问你的设备。
 
 可以使用以下步骤设置 PIN 或密码。
 

@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
-ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: e21b088dbb7fdcef9996e2b970bb406cab5ee0aa
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 Intune 支持计划有助于更有效地识别和解决与 Intune 相关的问题并改善最终用户的整体 Intune 体验。 下面是制定 Intune 支持计划时要考虑的一些问题：
 
--   哪些（哪个）团队负责提供 Intune 支持？
+-   哪些团队负责提供 Intune 支持？
 
 -   如果支持组织有多个层（例如，1-3 层），Intune 支持对每个层负有哪些责任？
 
@@ -95,9 +96,4 @@ Intune 支持计划有助于更有效地识别和解决与 Intune 相关的问�
 ## <a name="next-section"></a>下一节
 
 下一节介绍有关[设计 Intune](section-7-create-an-intune-design.md)的指南。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

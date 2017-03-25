@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d73777a0fb6cb981d57c92740a70e9d3058c03cb
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -32,9 +32,9 @@ ms.lasthandoff: 12/21/2016
 当系统主动使用安全启动时，将自动开启代码完整性。
 
 > [!Tip]
-> 启用安全启动是一项高级任务。 如果使用的是 Windows 移动设备，请联系 IT 管理员获取帮助。 如果使用的是桌面设备，请与 IT 管理员联系。
+> 启用安全启动是一项高级任务。 我们建议联系你的 IT 管理员，寻求有关此任务的帮助。
 
-<!--Or, see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.-->
+如果你认为可以继续操作，请参阅[禁用安全启动](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)页中的“重新启用安全启动”部分，尝试自己启用安全启动。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 

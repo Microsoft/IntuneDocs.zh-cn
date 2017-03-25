@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 如果首次发出通知后设备未签入以获取策略，则 Intune 还会尝试通知&3; 次。  如果设备脱机（例如设备已关机或未连接至网络），则可能无法收到通知。 在这种情况下，设备将按照以下设置在下次计划的签入到 Intune 服务时获取策略：
 
-- iOS 和 Mac OS X：每 6 小时。
+- iOS 和 macOS：每 6 小时。
 - Android：每 8 小时。
 - Windows Phone：每 8 小时。
 - 注册为设备的 Windows 8.1 和 Windows 10 电脑 - 每 8 小时。
 
 如果设备刚进行注册，则签入会更频繁，具体如下：
 
-- iOS 和 Mac OS X：6 小时内每 15 分钟一次，之后每 6 小时一次。
+- iOS 和 macOS：6 小时内每 15 分钟一次，之后每 6 小时一次。
 - Android：15 分钟内每 3 分钟一次，接下来的 2 小时内每 15 分钟一次，之后每 8 小时一次。
 - Windows Phone：15 分钟内每 5 分钟一次，接下来的 2 小时内每 15 分钟一次，之后每 8 小时一次。
 - 注册为设备的 Windows 电脑：30 分钟内每 3 分钟一次，之后每 8 小时一次。
@@ -499,8 +500,3 @@ Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其�
 
 ### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)中所述。
-
-
-<!--HONumber=Feb17_HO3-->
-
-

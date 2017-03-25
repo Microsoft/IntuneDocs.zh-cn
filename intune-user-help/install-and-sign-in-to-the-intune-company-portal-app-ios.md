@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d4491a6068ebde632b8af0dfa6bee500def8e4b2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 
 公司门户是一款安装在 iOS 设备上的应用，可通过它来访问公司或学校的应用、电子邮件和网络。  必须先安装公司门户应用，并使用该应用在 Microsoft Intune 中注册设备，然后才能获取访问权限。 有关详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
 
-1.  打开“应用商店”并搜索“intune”。
+1.  打开“**应用商店**”并搜索 **intune 公司门户**。
 
 2.  下载 **Microsoft Intune 公司门户**应用。
 
