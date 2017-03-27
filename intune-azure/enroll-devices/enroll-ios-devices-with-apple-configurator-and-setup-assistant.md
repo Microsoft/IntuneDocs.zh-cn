@@ -23,7 +23,7 @@ ms.lasthandoff: 02/18/2017
 
 ---
 
-# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>使用 Apple Configurator 和设置助理注册 iOS 设备 
+# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>使用 Apple Configurator 和设置助理注册 iOS 设备
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -102,50 +102,39 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 3. 在配置文件的边栏选项卡中，选择“导出配置文件”。
 
 4. 将配置文件 URL 复制到附加了 iOS 设备的 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)。 稍后你将在 Apple Configurator 中将其上传，以定义 iOS 设备使用的 Intune 配置文件。
-
   要支持 Apple Configurator 2，必须编辑 2.0 配置文件 URL。 为此，请将代码替换为：
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
     ```
     此代码：
-
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
-
-   你可以按照以下过程使用 Apple Configurator 将此配置文件 URL 上载到 Apple DEP 服务，以定义 iOS 设备使用的 Intune 配置文件。
+你可以按照以下过程使用 Apple Configurator 将此配置文件 URL 上载到 Apple DEP 服务，以定义 iOS 设备使用的 Intune 配置文件。
 
 5. 使用 Apple Configurator 将此配置文件 URL 上传到 Apple DEP 服务，以定义 iOS 设备使用的 Intune 配置文件。
+ 1.  在 Mac 计算机上，打开“Apple Configurator 2”。 在菜单栏中，选择“Apple Configurator 2”，然后选择“首选项”。
 
+  > [!WARNING]
+  > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 连接设备时，设备应处于 **Hello** 屏幕界面。
 
-    1.  在 Mac 计算机上，打开“Apple Configurator 2”。 在菜单栏中，选择“Apple Configurator 2”，然后选择“首选项”。
+  2. 在“首选项”窗格中，选择“服务器”，然后选择加号 (+) 启动 MDM 服务器向导。 选择**下一步**。
 
-         > [!WARNING]
-         > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 连接设备时，设备应处于 **Hello** 屏幕界面。
+  3. 在使用 Microsoft Intune 对 iOS 设备设置助理注册的情况下，为第 6 步中的 MDM 服务器输入**名称**和**注册 URL**。 对于注册 URL，请输入从 Intune 中导出的注册配置文件 URL。 选择**下一步**。  
 
-    2. 在“首选项”窗格中，选择“服务器”，然后选择加号 (+) 启动 MDM 服务器向导。 选择**下一步**。
+  可安全忽略警告“未验证服务器 URL”。 若要继续，请选择“下一步”，直到完成该向导。
 
-    3. 在使用 Microsoft Intune 对 iOS 设备设置助理注册的情况下，为第 6 步中的 MDM 服务器输入**名称**和**注册 URL**。 对于注册 URL，请输入从 Intune 中导出的注册配置文件 URL。 选择**下一步**。  
+  4.  用 USB 适配器将 iOS 移动设备连接到 Mac 计算机。
 
-       可安全忽略警告“未验证服务器 URL”。 若要继续，请选择“下一步”，直到完成该向导。
+  > [!WARNING]
+  > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 启动设置助理时，设备应处于 **Hello** 屏幕界面。
 
-    4.  用 USB 适配器将 iOS 移动设备连接到 Mac 计算机。
-
-        > [!WARNING]
-        > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 启动设置助理时，设备应处于 **Hello** 屏幕界面。
-
-    5.  选择“准备”。 在“准备 iOS 设备”窗格上，选择“手动”，然后选择“下一步”。
-
-    6. 在“在 MDM 服务器中注册”窗格上，选择你创建的服务器名称，然后选择“下一步”。
-
-    7. 在“监督设备”窗格上，选择监督级别，然后选择“下一步”。
-
-    8. 在“创建组织”窗格上，选择“组织”或创建新的组织，然后选择“下一步”。
-
-    9. 在“配置 iOS 设置助理”上，选择要提供给用户的步骤，然后选择“准备”。 如果出现系统提示，请进行身份验证以更新信任设置。  
-
-    10. iOS 设备完成准备后，断开 USB 电缆的连接。  
-
+  5.  选择“准备”。 在“准备 iOS 设备”窗格上，选择“手动”，然后选择“下一步”。
+  6. 在“在 MDM 服务器中注册”窗格上，选择你创建的服务器名称，然后选择“下一步”。
+  7. 在“监督设备”窗格上，选择监督级别，然后选择“下一步”。
+  8. 在“创建组织”窗格上，选择“组织”或创建新的组织，然后选择“下一步”。
+  9. 在“配置 iOS 设置助理”上，选择要提供给用户的步骤，然后选择“准备”。 如果出现系统提示，请进行身份验证以更新信任设置。  
+  10. iOS 设备完成准备后，断开 USB 电缆的连接。  
 6.  **分配设备**。
     设备现已准备好进行企业注册。 关闭设备，并将它们分发给用户。 用户打开其设备时，将启动设置助理。
 

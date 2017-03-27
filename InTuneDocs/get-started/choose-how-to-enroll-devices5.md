@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/16/2017
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: b4295fbc9df88fa537f18b1280dfcc32702ccc51
 ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -25,7 +26,6 @@ ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 你对这一系列问题的回答将帮助确定你管理的设备的最佳注册方法。
-
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**如何管理共享的 iOS 设备？**
 
@@ -42,11 +42,6 @@ ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
 
   - **设备注册管理器** - Intune 的设备注册管理器 (DEM) 允许管理器或管理员使用单个用户帐户注册多个移动设备。 这些设备不能有用户相关性（即专用用户），并且必须通过安装和登录到公司门户应用来注册。
 
-  > [!div class="button"]
-  [< 返回](choose-how-to-enroll-devices3.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+> [!div class="button"]
+[< 返回](choose-how-to-enroll-devices3.md)
 
