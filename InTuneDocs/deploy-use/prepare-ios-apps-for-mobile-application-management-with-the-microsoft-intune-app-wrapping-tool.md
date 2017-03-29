@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
 ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
+ms.lasthandoff: 01/14/2017
 
 
 ---
@@ -119,7 +120,7 @@ ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 9. 按照上面的说明来创建证书签名请求。 在 macOS 计算机上启动 **Keychain Access** 应用程序。
 
-10. 在屏幕顶部的 macOS 菜单中，转到“Keychain Access”>“证书助手”>“向证书颁发机构请求证书” 。  
+10. 在屏幕顶部的 macOS 菜单中，转到“Keychain Access”>“证书助手”>“向证书颁发机构请求证书”。  
 
   ![在 Keychain Access 应用中向证书颁发机构请求证书](../media/app-wrapper/iOS-signing-cert-5.png)
 
@@ -399,9 +400,4 @@ ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
 - [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [使用 SDK 启用针对移动应用程序管理的应用](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
