@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -109,7 +110,7 @@ Microsoft 会自动收集有关性能和托管浏览器使用情况的匿名数�
 
     -   对于 https，使用端口 443
 
-    不支持对端口号使用通配符。 例如，**http&colon;//www&period;contoso&period;com:*;** 和 **http&colon;//www&period;contoso&period;com: /*;** 不受支持。
+    不支持对端口号使用通配符。 例如，**http&colon;//www&period;contoso&period;com:*;**和**http&colon;//www&period;contoso&period;com: /*;** 不受支持。
 
 -   使用下表了解指定 URL 时可以使用的允许模式：
 
@@ -156,9 +157,4 @@ Microsoft 会自动收集有关性能和托管浏览器使用情况的匿名数�
 -   如果设备是首次接收托管浏览器策略而两个策略发生冲突，则不会在设备上强制执行 URL。 使用 **“策略”** 工作区的 **“策略冲突”** 节点查看这些冲突。
 
 -   如果设备已接收托管浏览器策略而部署的第二个策略具有冲突的设置，则将在设备上保留原始设置。 使用 **“策略”** 工作区的 **“策略冲突”** 节点查看这些冲突。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
