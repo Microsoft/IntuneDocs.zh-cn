@@ -33,6 +33,7 @@
 ### [获取 Apple DEP 令牌](enroll-devices/get-apple-dep-token.md)
 ### [选择 iOS 设备注册方式](enroll-devices/choose-ios-enrollment-method.md)
 ## 如何
+### [向用户分配许可证](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [注册 Android 设备](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### 注册 iOS 设备
 #### [使用设置助理注册 iOS 设备](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
