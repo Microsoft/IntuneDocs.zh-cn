@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -139,7 +140,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
     |**访问要求设备符合公司策略**|此设置仅允许设备在未越狱或获取根权限时使用此应用。|
     |**在一定时间后重新检查访问要求（分钟）**|在“**超时**”字段中，指定应用打开后重新检查应用访问要求前的时间段。|
     |**脱机宽限期**|如果设备离线，指定应用重新检查访问要求前的时间段。|
-    |**加密应用数据**|此设置指定与此应用相关的所有数据均将加密。 这包括外部存储的数据，如在 SD 卡中的数据。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用管理策略关联的应用，通过 OS 提供的设备级加密对静态数据进行加密。 通过由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用管理策略的设置进行加密。 正如 Apple 文档所述，[iOS 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/en-us/HT202739)。<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用管理策略关联的应用，加密由 Microsoft 提供。 数据在文件 I/O 操作期间同步加密。  设备存储中的内容将始终被加密。 加密方法没有获得 FIPS 140-2 认证。|
+    |**加密应用数据**|此设置指定与此应用相关的所有数据均将加密。 这包括外部存储的数据，如在 SD 卡中的数据。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用管理策略关联的应用，通过 OS 提供的设备级加密对静态数据进行加密。 通过由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用管理策略的设置进行加密。 正如 Apple 文档所述，[iOS 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/en-us/HT202739)。<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用管理策略关联的应用，加密由 Microsoft 提供。 数据在文件 I/O 操作期间同步加密。  设备存储中的内容将始终被加密。 加密方法是 FIPS 140-2，仅与 Samsung KNOX 设备兼容。|
     |**“阻止屏幕捕捉”** （仅限于 Android 设备）|此设置指定在使用该应用时，阻止设备的屏幕捕捉功能。|
 
 4. 完成后，请选择“保存策略”。
@@ -195,9 +196,4 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 -   如果策略已经部署到设备，则现有策略设置不会被覆盖。
 
 -   如果尚无策略部署到设备，并且两个冲突设置已经部署，则将使用设备内的默认设置。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

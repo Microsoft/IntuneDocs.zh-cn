@@ -3,10 +3,10 @@ title: "Microsoft Intune 预览版新增功能"
 titleSuffix: Intune Azure preview
 description: "了解 Intune Azure 预览版新增功能"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 92bb81440b9374b2b0b433b32fc0a1301998ea80
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 586bdab54ee60ba8d620857ab3506aa27622d17a
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -37,7 +37,9 @@ ms.lasthandoff: 03/15/2017
 
 对于 iOS 9.3 和更高版本设备，Intune 增加了对**丢失模式**的支持。 现在可以锁定设备以防止所有使用并显示设备锁定屏幕的消息和联系人电话号码。
 
-最终用户将无法解锁设备，直到管理员禁用丢失模式。 启用丢失模式后，可以使用查找设备操作在 Intune 控制台中的地图上显示该设备的地理位置。
+最终用户将无法解锁设备，直到管理员禁用丢失模式。 启用丢失模式后，可以使用“查找设备”操作在 Intune 控制台中的地图上显示该设备的地理位置。
+
+此设备必须是处于监督模式下通过 EDP 注册的公司所有的 iOS 设备。
 
 有关详细信息，请参阅[什么是 Microsoft Intune 设备管理](/intune-azure/manage-devices/what-is)？
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 464b9b60e9e8a5cb3e195bbec88d496eb4dc9ecf
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -60,10 +60,10 @@ ms.lasthandoff: 03/16/2017
 
     ![“公司访问设置”屏幕](./media/and-enroll-4a-comp-access-setup.png)
 
-> [!NOTE]
-> 黄色三角形并不意味着发生了错误。 这些图标指示注册过程中仍存在需要完成的步骤。
+    > [!NOTE]
+    > 黄色三角形并不意味着发生了错误。 这些图标指示注册过程中仍存在需要完成的步骤。
 
-7.  在**为什么要注册设备？**屏幕上，阅读注册设备时你可以执行的操作，然后点击**继续**。
+7. 在**为什么要注册设备？**屏幕上，阅读注册设备时你可以执行的操作，然后点击**继续**。
 
     ![“为什么要注册设备？”屏幕](./media/and-enroll-4b-why-enroll.png)
 
@@ -90,13 +90,19 @@ ms.lasthandoff: 03/16/2017
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为 **Microsoft 绝不会访问你的联系人！** 消息文本由 Google 管控，Microsoft 无法更改。 当你允许访问时，它只允许公司门户应用创建、使用和管理你的工作账户。
+        如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为 **Microsoft 绝不会访问你的联系人！** 消息文本由 Google 管控，Microsoft 无法更改。 当你允许访问时，它只允许公司门户应用创建、使用和管理你的工作账户。
 
-    如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
+        如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
 
 11.  在“激活设备管理员”屏幕上，点击“激活”。
 
     ![“激活设备管理员”屏幕](./media/and-enroll-5-activate.png)
+
+    公司门户需要通过设备管理员角色来管理设备。 它允许管理员查看某些信息（如解锁屏幕的失败尝试次数）以及执行部分操作。
+
+    要注意的关键的一点是，这些都是出于安全考虑执行的操作。 IT 管理员尝试侵犯你的隐私或擦除你的信息，目的在于保证公司数据的安全。
+
+    Microsoft 不会控制此消息，而且我们知道其措辞可能看起来有点极端。 公司门户无法仅显示与你的组织相关的限制和访问权限。 所有权限会同时在屏幕上授予。 如果你对单个组织的使用存在疑问，请使用[公司门户网站](http://portal.manage.microsoft.com)中的联系信息与你的 IT 管理员联系以获取更多信息。
 
 12.  按照提示输入 PIN 或密码。 如果已经在此设备上设置 PIN 或密码，将不会显示此屏幕或要求你输入新的 PIN 或密码。
 
@@ -108,21 +114,21 @@ ms.lasthandoff: 03/16/2017
 
     此屏幕显示正在注册设备。
 
-      ![注册设备屏幕](./media/and-enroll-8-device-enrolling.png)
+    ![注册设备屏幕](./media/and-enroll-8-device-enrolling.png)
 
 14. “公司访问设置”屏幕出现时，点击“继续”。 如果消息指示你的设备不兼容，请按照说明修复该问题，然后点击“继续”。
 
-  ![设备不兼容，但已注册](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![设备不兼容，但已注册](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![出现设备兼容性问题，需要解决方案](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![出现设备兼容性问题，需要解决方案](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-可以通过点击问题了解有关详细信息。 
+    可以通过点击问题了解有关详细信息。
 
-  ![展开的设备兼容性问题](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![展开的设备兼容性问题](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-    ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+    ![“公司访问设置”屏幕](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. 在“公司访问设置完成”屏幕上，点击“完成”。 你的设备现已注册。
+15. 在“公司访问设置完成”屏幕上，点击“完成”。 你的设备现已注册。
 
     ![“公司访问设置完成”屏幕](./media/and-enroll-10-comp-access-setup-complete.png)
 

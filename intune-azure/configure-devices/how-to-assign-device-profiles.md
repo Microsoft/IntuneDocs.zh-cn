@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 238c67c3edb843ef62deccb42cfa2879232e1434
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “其他” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“配置设备”。
-1. 在“配置设备”边栏选项卡上，选择“管理” > “配置文件”。
+3. 在“Intune”边栏选项卡上，选择“设备配置”。
+1. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
 2. 在“配置文件列表”边栏选项卡上，选择要管理的配置文件，然后在“<配置文件名称> 报表”边栏选项卡上，选择“管理” > “分配”。
 3. 在下一个边栏选项卡上，单击“选择组”，然后在“选择组”边栏选项卡上，选择要向其分配配置文件的 Azure AD 组。 可以按住“Ctrl”键以选择多个组。
 4. 完成后，在“选择组”边栏选项卡上，选择“选择”。

@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b7ab3041a38bd394195a67690d245d1ad9fd0566
-ms.openlocfilehash: fd54a1c94c9a4a279710d6be9f7cfe3b48468cb7
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: c3c5126b1c9437c2689b162c28e1a60e5dc4b108
+ms.openlocfilehash: ad39f4b2cc4a51346fcf226dc07208af336d3581
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,14 +41,15 @@ ms.lasthandoff: 03/03/2017
 
 移动威胁防御解决方案判定设备受到感染时：
 
-![](http://i.imgur.com/kF8tI42.png)
+![移动威胁防御感染的设备](../media/mtp/MTD-image-1.png)
 
 修正设备时授予访问权限：
 
-![](http://i.imgur.com/zG4ZrzX.png)
+![授予移动威胁防御访问权限](../media/mtp/MTD-image-2.png)
 
 ## <a name="mobile-threat-defense-partners"></a>移动威胁防御合作伙伴
 
 了解如何根据设备、网络和应用程序风险，通过以下工具保护对公司资源的访问：
 
 - [Lookout](https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector)
+- [Skycure](https://docs.microsoft.com/intune/deploy-use/skycure-mobile-threat-defense-connector)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ iOS 设备丢失或被盗时，可以启用丢失模式。 通过该模式可以
 2.    在“**丢失模式**”边栏选项卡上，启用丢失模式，输入将要显示的消息，以及联系电话号码（可选）。
 3.    单击" **确定**"。
 启用丢失模式时，将阻止对该设备的所有使用。 最终用户无法访问设备，直到你禁用丢失模式。 虽然丢失模式已启用，但可以使用**查找设备**操作找到设备所在的位置。
+要使用丢失模式，此设备必须是处于监督模式下通过 EDP 注册的公司所有的 iOS 设备。
 
 ### <a name="locate-device"></a>**查找设备**
-使用此远程操作在地图上显示丢失或被盗 iOS 设备的位置。 此设备必须是处于监督模式下的公司所有的 iOS 设备。 使用此操作之前，必须将此设备置于丢失模式。
+使用此远程操作在地图上显示丢失或被盗 iOS 设备的位置。 此设备必须是处于监督模式下通过 EDP 注册的公司所有的 iOS 设备。 使用此操作之前，必须将此设备置于丢失模式。
 1.    在 iOS 设备的属性边栏选项卡上，选择“**更多**” > “**查找设备**”。
 2.    找到设备后，**查找设备**边栏选项卡上会显示其位置。 
     ![查找设备边栏选项卡](./media/locate-device.png)

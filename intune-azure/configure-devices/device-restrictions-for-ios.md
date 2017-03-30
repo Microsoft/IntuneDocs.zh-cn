@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **键盘快捷方式（仅限被监督的设备）** - 允许使用键盘快捷方式。
 -     **已配对的 Apple Watch 的手腕检测** - 启用后，Apple Watch 在未穿戴时不会显示通知。
 - **需要 AirPlay 传出请求配对密码** - 当用户使用 AirPlay 将内容流式传输到其他 Apple 设备时，需要提供配对密码。
-- **帐户修改（仅限被监督的设备）** - 允许用户更改帐户设置，如电子邮件配置。
+- **帐户修改（仅受到监督）** - 受到阻止时，这可以防止用户从 iOS 设置应用修改特定于设备的设置，如创建新的设备帐户和更改用户名或密码。
+这同样适用于可从 iOS 设置应用（如邮件、联系人、日历、Facebook 和 Twitter）进行访问的设置。 这不适用于具备不可从 iOS 设置应用进行配置的帐户设置的应用，例如，Microsoft Outlook 应用。
 - **Apple Watch 配对（仅限被监督的设备）** - 允许设备与 Apple Watch 配对。
 - **蓝牙修改（仅限被监督的设备）** - 阻止最终用户更改设备上的蓝牙设置。
 - **通过 Classroom 应用观测远程屏幕（仅限被监督的设备）** - 允许或阻止 Classroom 应用观测远程设备上的屏幕。

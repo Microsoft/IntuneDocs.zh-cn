@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-使用 Microsoft Intune“配置设备”工作负荷来管理所有你管理的设备上的设置和功能。 主要使用此工作负荷创建设备配置文件，从而管理并控制所管理设备上各种不同功能。
+使用 Microsoft Intune“设备配置”工作负荷来管理你管理的所有设备上的设置和功能。 主要使用此工作负荷创建设备配置文件，从而管理并控制所管理设备上各种不同功能。
 
 打开此工作负荷时，将看到以下选项：
 
@@ -41,8 +41,13 @@ ms.lasthandoff: 02/18/2017
 
 可在设备上管理以下功能：
 
+## <a name="device-features"></a>设备功能
+
+借助设备功能，你能够在 iOS 和 macOS 设备上控制 AirPrint、通知，和共享设备配置等功能。
+有关详细信息，请参阅[如何配置设备功能设置](how-to-configure-device-features.md)支持：iOS 和 macOS。
+
 ## <a name="device-restrictions"></a>设备限制
-设备限制让你可以跨众多类别控制你所管理的各种设置和功能，包括安全性、浏览器、硬件和数据共享设置。 例如，可以创建一个设备限制配置文件，用于阻止 iOS 设备用户访问设备相机。
+设备限制使你能够跨众多类别控制设备上你所管理的各种设置，包括安全性、浏览器、硬件和数据共享设置。 例如，可以创建一个设备限制配置文件，用于阻止 iOS 设备用户访问设备相机。
 有关详细信息，请参阅[如何配置设备限制设置](how-to-configure-device-restrictions.md) 支持：Android、iOS、macOS、Windows 10 和 Windows 10 协同版。
 
 ## <a name="email"></a>Email
@@ -57,6 +62,10 @@ ms.lasthandoff: 02/18/2017
 虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 VPN 配置文件将 VPN 设置部署到组织中的用户和设备，以便它们可以方便且安全地连接到网络。
 有关详细信息，请参阅[如何配置 VPN 设置](how-to-configure-vpn-settings.md)。
 支持：Android、iOS、macOS、Windows Phone 8.1、Windows 8.1 和 Windows 10。
+
+## <a name="education"></a>教育
+你可以配置 Windows Take a Test 应用的选项。 在配置这些选项时，直到测试完成才可以在设备上运行其他应用。
+有关详细信息，请参阅[如何配置教育设置](how-to-configure-education-settings.md)
 
 ## <a name="certificates"></a>证书
 此配置文件类型让你可以配置受信任证书、SCEP 证书和 PKCS 证书，这些证书可以分配到设备，并用于对 Wi-Fi、VPN 和电子邮件配置文件进行身份验证。

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
-ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,23 +48,23 @@ ms.lasthandoff: 02/24/2017
 
   ![重置密码横幅，显示关于重置设备密码的警告以及用户将如何注销。 用户输入的按钮为“注销”和“取消”。](./media/iwp-reset-passcode-popup.png)
 
-4.  选择“注销”，将收到最后一条消息，告知你已删除设备中的密码。 如果设备未在身边，请勿删除密码，因为对设备具有物理访问权限的任何人将能够访问设备上的大部分信息（个人或公司信息）。
+5.  选择“注销”，将收到最后一条消息，告知你已删除设备中的密码。 如果设备未在身边，请勿删除密码，因为对设备具有物理访问权限的任何人将能够访问设备上的大部分信息（个人或公司信息）。
 
   ![第二条重置密码横幅，显示关于重置设备密码的警告以及将如何删除设备中的密码。 该横幅还介绍了通过设备设置来设置新密码的方法。](./media/iwp-reset-passcode-2nd-popup.png)
 
+  不同的设备具有不同的密码类型。
 
-由于不同设备具有不同类型的密码，可以通过下表了解重置密码对特定设备造成的影响。 
+  **Android**：删除现有密码，然后使用字母和数字创建临时密码
 
-    |设备类型|重置密码时会发生什么情况|
-    |------------|-----------|
-    |Android|删除现有密码，然后使用字母和数字创建临时密码|
-    |iOS|删除现有密码且不创建临时密码。 如果你使用 Touch ID 指纹扫描仪打开设备或购买商品，你将需要再次设置。|
-    |Windows 10 移动版|删除现有密码，然后使用字母和数字创建临时密码。 使用 Windows Hello 面部识别进行登录时仍然受支持。|
-    |Windows Phone 8.1|删除现有密码，然后使用数字创建临时密码。|
+  **iOS**：删除现有密码且不创建临时密码。 如果你使用 Touch ID 指纹扫描仪打开设备或购买商品，你将需要再次设置。
 
-    5.  解锁设备，然后通过转到设备上的“设置”来设置新密码或更改临时密码。
+  **Windows 10 移动版**：删除现有密码，然后使用字母和数字创建临时密码。 使用 Windows Hello 面部识别进行登录时仍然受支持。
+    
+  **Windows Phone 8.1**：删除现有密码，然后使用数字创建临时密码
 
-    若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
+6.  解锁设备，然后通过转到设备上的“设置”来设置新密码或更改临时密码。
+
+若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 
