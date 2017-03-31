@@ -2,8 +2,8 @@
 title: "具有应用保护策略的 iOS 应用 | Microsoft Docs"
 description: "本主题描述 iOS 应用由应用保护策略托管时会出现的情况。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
