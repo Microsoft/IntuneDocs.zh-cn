@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 组织可能使用电信费用管理软件确保其数据和语音计划在可接受的限制内使用。 设备注册完成后，系统随即将提示选择适合该设备的最佳类别。
 
-  ![iOS 设备上“选择设备的最佳类别”屏幕的屏幕截图。 它显示了企业注册或个人注册选项。](./media/and-enroll-11-tem-select-best-category.png)
+![iOS 设备上“选择设备的最佳类别”屏幕的屏幕截图。 它显示了企业注册或个人注册选项。](./media/and-enroll-11-tem-select-best-category.png)
 
 1. 选择适当的选项，随后将收到从 Google Play 商店安装 [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) 应用的通知。 组织可使用 Datalert 应用测量数据的使用情况。 点击屏幕右上角的“下一步”箭头继续。
 
