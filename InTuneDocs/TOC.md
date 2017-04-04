@@ -11,7 +11,7 @@
 
 
 # [开始使用](get-started/get-started.md)
-## [安装 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [设置 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [先决条件]
 #### [支持的设备](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [网络使用情况](get-started/network-bandwidth-use.md)
