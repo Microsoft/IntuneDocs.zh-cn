@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
-ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
-ms.lasthandoff: 03/23/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -53,7 +53,7 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
 由于 Samsung KNOX 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。
 
-**Android for Work**<br>Intune 提供两个 Android for Work 电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，安装在设备工作配置文件中，并支持与 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的配置文件。 Nine Work 等电子邮件应用可能需付费使用。 若有任何问题，请查看应用的许可详细信息或与应用公司联系。
+**Android for Work**<br>Intune 提供两个 Android for Work 电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，且安装在设备工作配置文件中，因此它们不会导致出现重复的配置文件。 这两个应用支持到 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的电子邮件配置文件。 Nine Work 等电子邮件应用可能需付费使用。 若有任何问题，请查看应用的许可详细信息或与应用公司联系。
 
 ## <a name="secure-email-profiles"></a>保护电子邮件配置文件
 可以使用证书或密码保护电子邮件配置文件。

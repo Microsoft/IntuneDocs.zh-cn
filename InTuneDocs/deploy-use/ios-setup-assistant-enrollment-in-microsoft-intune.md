@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -85,7 +85,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>通过设置助理添加 iOS 设备以进行注册
 
-1. 在[“Microsoft Intune 管理控制台”](http://manage.microsoft.com)中，转到“组”&gt;“所有设备”&gt;“所有企业拥有的设备”&gt;“所有设备”，然后选择“添加设备”。 
+1. 在[“Microsoft Intune 管理控制台”](http://manage.microsoft.com)中，转到“组”&gt;“所有设备”&gt;“所有企业拥有的设备”&gt;“所有设备”，然后选择“添加设备”。
 
    可以通过两种方式添加设备：
 
@@ -107,13 +107,13 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
   -  **手动添加设备详细信息** - 输入最多 15 台设备的序列号和任何注释或详细信息。
 
-  可在“查看设备”窗格中确认序列号。 还可以决定是否覆盖正在重新导入的序列号的“详细信息”，或者取消选中“覆盖”框以保留当前的详细信息。 
+  可在“查看设备”窗格中确认序列号。 还可以决定是否覆盖正在重新导入的序列号的“详细信息”，或者取消选中“覆盖”框以保留当前的详细信息。
 
-> [!NOTE] 
+> [!NOTE]
 > 在现有的 Intune 管理员控制台中，管理员可以从上传的 CSV 中获取相关详细信息，并覆盖各个序列号的现有详细信息。 在新的 Azure 门户中，只能覆盖所有序列号的详细信息，或者忽略所有序列号的新详细信息。
 
-  > [!NOTE]
-  > 若要稍后从 Intune 管理中删除公司拥有的设备，则可能需要转到“企业预注册设备”下的“按 iOS 序列号”设备组，并从 Intune 删除设备序列号，以禁用设备注册。 如果 Intune 在删除序列号时或大约在这一时间执行灾难恢复过程，则需要验证该组是否仅包含活动设备的序列号。
+> [!NOTE]
+> 若要稍后从 Intune 管理中删除公司拥有的设备，则可能需要转到“企业预注册设备”下的“按 iOS 序列号”设备组，并从 Intune 删除设备序列号，以禁用设备注册。 如果 Intune 在删除序列号时或大约在这一时间执行灾难恢复过程，则需要验证该组是否仅包含活动设备的序列号。
 
 2. 选择**下一步**。
 
@@ -128,23 +128,22 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>导出要部署到 iOS 设备的配置文件
 
-1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择要部署到移动设备的设备配置文件。 
+1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择要部署到移动设备的设备配置文件。
 
 2. 选择任务栏中的**“导出”**。 复制并保存 **“配置文件 URL”**。 稍后你将在 Apple Configurator 中将其上传，以定义 iOS 设备使用的 Intune 配置文件。
 
   要支持 Apple Configurator 2，必须编辑 2.0 配置文件 URL。 为此，请将代码替换为：
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    此代码：
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  此代码：
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    你可以按照以下过程使用 Apple Configurator 将此配置文件 URL 上载到 Apple DEP 服务，以定义 iOS 设备使用的 Intune 配置文件。
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>用 Apple Configurator 准备设备
 
@@ -180,9 +179,10 @@ iOS 设备连接到 Mac 计算机，并注册移动设备管理。
 
 ### <a name="distribute-devices"></a>分配设备
 
-设备现已准备好进行企业注册。 
+设备现已准备好进行企业注册。 关闭设备，并将它们分发给用户。 用户打开其设备时，将启动设置助理。
 
-关闭设备，并将它们分发给用户。 用户打开其设备时，将启动设置助理。
+>[!NOTE]
+>如果用户试图注册 DEP 设备，但超过了其设备限制，注册将以静默方式失败而不会警告用户。
 
 
 ### <a name="see-also"></a>另请参阅

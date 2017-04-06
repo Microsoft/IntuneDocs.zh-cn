@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
-ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 9e70ef08eabb1595804f84247fc1663c5c6f985e
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -48,7 +48,7 @@ ms.lasthandoff: 03/20/2017
 
     ![Android“欢迎”屏幕的公司门户应用要求用户使用其所需的工作或学校帐户登录。 请注意，不接受 Microsoft 帐户和其他个人帐户。](./media/and-enroll-0-welcome-screen.png)   
 
-4.  如果 IT 管理员设置了公司条款和条件，请点击“接受”以接受这些条款。
+4.  如果 IT 管理员设置了公司条款和条件，请点击“接受”以接受这些条款。 根据你当前正在使用的 Android 版本，此屏幕可能与下图所示的屏幕略有不同。
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 

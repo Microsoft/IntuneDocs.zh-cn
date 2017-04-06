@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -87,6 +87,12 @@ Remember that you need to implement conditional access policies in addition to c
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>从 Intune 经典控制台迁移到 Intune Azure 预览门户
+
+在 [Intune 经典控制台](https://manage.microsoft.com)中创建的设备符合性策略不会出现在新的 [Intune Azure 门户](https://portal.azure.com)中。 但是，它们将仍面向用户并且可以通过 Intune 经典控制台进行管理。
+
+如果想要利用 Intune Azure 门户中新设备符合性相关的功能，需要在 Intune Azure 门户中创建新的设备符合性策略。 如果在 Intune Azure 门户中向某个用户分配新的设备符合性策略，但该用户同时还分配有 Intune 经典门户的设备符合性策略，则 Intune Azure 门户中的设备符合性策略优先于在 Intune 经典控制台中创建的策略。
 
 ##  <a name="next-steps"></a>后续步骤
 

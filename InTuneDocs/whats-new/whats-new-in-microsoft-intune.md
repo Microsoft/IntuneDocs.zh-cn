@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 2a602b351cf7f345bd56f20394943ea25f2d2060
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -28,6 +28,17 @@ ms.lasthandoff: 03/15/2017
 > 所有这些功能最终将支持混合客户部署（带 Intune 的 Configuration Manager）。 有关新的混合功能的详细信息，请查看[混合新增功能页](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
 
 ## <a name="new-capabilities"></a>新功能
+
+### <a name="support-for-skycure"></a>对 Skycure 的支持
+
+现在可根据 Skycure 给出的风险评估，使用条件访问控制移动设备对公司资源的访问，Skycure 是与 Microsoft Intune 集成的移动威胁防御解决方案。 基于从运行 Skycure 的设备收集的遥测评估风险，包括：
+
+- 物理防御
+- 网络防御
+- 应用程序防御
+- 漏洞防御
+
+可基于通过 Intune 设备符合性策略启用的 Skycure 风险评估配置 EMS 条件访问策略。 根据检测到的威胁，可使用这些策略允许或阻止不符合设备访问企业资源。 有关详细信息，请参阅 [Skycure 移动威胁防御连接器](/intune/deploy-use/skycure-mobile-threat-defense-connector)。
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 适用的公司门户应用的最新用户体验<!--621622-->
 
@@ -51,6 +62,12 @@ ms.lasthandoff: 03/15/2017
 
 
 ## <a name="notices"></a>通知
+
+### <a name="support-for-ios-103"></a>对 iOS 10.3 的支持
+
+IOS 10.3 发行版于 2017 年 3 月 27 面向 iOS 用户推出。 所有现有的 Intune MDM 和 MAM 方案与最新版本的 Apple 操作系统兼容。 在用户将设备和应用升级到 iOS 10.3 时，预计当前可用于管理 iOS 设备的所有现有 Intune 功能都将继续工作。
+
+目前没有任何要共享的已知问题。 如果你遇到有关 iOS 10.3 的任何问题，请随时联系 [Intune 支持团队](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)。
 
 ### <a name="improved-support-for-android-users-based-in-china---720444--"></a>改进了对身处中国的 Android 用户的支持<!--720444-->
 
@@ -82,10 +99,15 @@ Microsoft 已宣布发布 Microsoft Teams 的通用版本。 适用于 iOS 和 A
 
 新的试用租户将于本月开始在 Azure 门户中看到新管理体验的公开预览版。 在预览状态下，将以迭代方式交付现有 Intune 控制台的功能和奇偶校验。
 
-Azure 门户中的管理体验将使用已公布的新分组和定向功能；当现有租户迁移到新的分组体验时，也会将你迁移，以预览租户上的新管理体验。 在此期间，如果想要在租户迁移之前测试或查看任何新功能，请注册新的 Intune 试用帐户或查阅[新文档](https://docs.microsoft.com/intune-azure/introduction/whats-new)。
+Azure 门户中的管理体验将使用已公布的新分组和定向功能；当现有租户迁移到新的分组体验时，也会将你迁移，以预览租户上的新管理体验。 在此期间，如果想要在租户迁移之前测试或查看任何新功能，请注册新的 Intune 试用帐户或查阅[新文档](/intune-azure/introduction/whats-new)。
 
 > [!Note]
 > 对于 Azure 门户预览版，我们将在本月推出更新。 但是，鉴于 Intune 服务的推出方式，所做的更改可能无法立即使用。  在新门户功能可用之前，必须按顺序更新服务的多个组件。 在本月晚些时候推出时可查找 Azure 门户预览版中的更改。 有关更改的完整列表，请参阅 [Microsoft Intune 预览版中的新增功能](/intune-azure/introduction/whats-new)。
+
+### <a name="administration-roles-being-replaced-in-azure-portal"></a>在 Azure 门户中被替换的管理角色
+
+在 Intune 经典门户 (Silverlight) 中使用的现有移动应用程序管理 (MAM) 管理角色（参与者、所有者和只读）被替换为 Intune Azure 门户中一套完整的基于角色的新的管理控制方法 (RBAC)。 在迁移到 Azure 门户后，需要将管理员重新分配到这些新的管理角色。 有关 RBAC 和新角色的详细信息，请参阅 [Microsoft Intune 基于角色的访问控制](/intune-azure/access-control/role-based-access-control)。
+
 
 ## <a name="whats-coming"></a>即将推出
 
