@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -266,9 +267,4 @@ ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
 
 ### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
