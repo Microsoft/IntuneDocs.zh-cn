@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
+ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -27,6 +27,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 作为一名 IT 管理员，你可以创建和导入用逗号分隔的值 (.csv) 文件，该文件列出了国际移动设备识别 (IMEI) 编号来识别公司所有的设备。 每个 IMEI 编号可以在列表中指定详细信息，以便用于管理。
+
+为公司拥有的 iOS 设备上载序列号时，它们必须与公司注册配置文件成对使用。 然后，必须使用 Apple 的设备注册程序 (DEP) 或 Apple 配置器注册这些设备，以使其显示为公司所有。 
 
 ## <a name="create-a-csv-file"></a>创建 .csv 文件
 若要创建列表，请创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加 IMEI 标识符，在右列添加详细信息。 详细信息最多允许 128 个字符。 当前限制为每个 .csv 文件 500 行。
