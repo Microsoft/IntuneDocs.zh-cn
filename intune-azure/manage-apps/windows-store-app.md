@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e6e6ba0aae5da25b3f8b07326a2e323c75268ff5
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: 145fd465eb837a4f1a2a62358912fb8e824d4913
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -50,3 +50,7 @@ ms.lasthandoff: 02/18/2017
 8. 完成后，在“添加应用”边栏选项卡上，选择“保存”。
 
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
+
+## <a name="sign-the-windows-10-company-portal-app"></a>对 Windows 10 公司门户应用进行签名
+对于需要下载和旁加载 Windows 10 Company Portal 应用的客户，现在可以使用脚本简化并精简组织的应用签名过程。 若要下载脚本及其使用说明，请参阅 TechNet 库中的 [Windows 10 公司门户的 Microsoft Intune 签名脚本](https://aka.ms/win10cpscript)。
+

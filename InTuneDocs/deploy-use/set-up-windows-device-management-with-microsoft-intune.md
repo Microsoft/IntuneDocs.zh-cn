@@ -2,9 +2,9 @@
 title: "使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Docs"
 description: "使用 Microsoft Intune 为 Windows 设备启用移动设备管理 (MDM)。"
 keywords: 
-author: staciebarker
-manager: stabar
-ms.date: 02/15/2017
+author: NathBarn
+manager: angrobe
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: 6277f82483eb8fb7f5a4e4a832a909490ba0050c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: f66bc5a26f137f62defef4a83a36b22247be4ec1
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -27,13 +27,13 @@ ms.lasthandoff: 02/18/2017
 
 使用下列方法之一为 Windows 设备设置注册：
 
-- [**使用 Azure Active Directory Premium 自动注册 Windows 10 和 Windows 10 移动版**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
+- [**使用 Azure Active Directory Premium 自动注册 Windows 10 和 Windows 10 移动版**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
  -  此方法仅适用于 Windows 10 和 Windows 10 移动版设备。
  -  必须具有 Azure Active Directory Premium 才能使用此方法。 否则，请使用适用于 Windows 8.1 和 Windows Phone 8.1 的注册方法。
  -  如果选择不启用自动注册，请使用适用于 Windows 8.1 和 Windows Phone 8.1 的注册方法。
 
 
-- [**通过配置 CNAME 注册 Windows 8.1 和 Windows Phone 8.1**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname) 
+- [**通过配置 CNAME 注册 Windows 8.1 和 Windows Phone 8.1**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - 必须使用此方法注册 Windows 8.1 和 Windows Phone 8.1 设备。
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
@@ -41,17 +41,18 @@ ms.lasthandoff: 02/18/2017
 ## <a name="set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname"></a>通过配置 CNAME 设置 Windows 8.1 和 Windows Phone 8.1 注册
 可以让用户使用 Intune 公司门户安装和注册其设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入服务器名称。
 
-1. **设置 Intune**<br>
+### <a name="step-1-set-up-intune"></a>步骤 1：设置 Intune
+
 如果尚未设置，请通过[将移动设备管理 (MDM) 机构设置](prerequisites-for-enrollment.md#step-2-set-mdm-authority)为“Microsoft Intune”，然后设置 MDM，为管理移动设备做好准备。
 
-2. **创建 CNAME**（可选）<br>
+### <a name="step-2-create-cnames-optional"></a>步骤 2：创建 CNAME（可选）
+
 为公司的域创建 **CNAME** DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
 
 
-    尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果未找到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 https://enrollment.manage.microsoft.com。
+   尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果未找到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。
 
-
-    CNAME 资源记录必须具有以下信息：
+   CNAME 资源记录必须具有以下信息：
 
   |类型：|主机名|指向|TTL|
   |--------|-------------|-------------|-------|
@@ -66,16 +67,15 @@ ms.lasthandoff: 02/18/2017
 
   例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 EnterpriseEnrollment-s.manage.microsoft.com 的 CNAME。 对 DNS 记录所做的更改可能最多需要 72 小时才能进行传播。 你无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
 
-3.  **验证 CNAME**<br>在 [Intune 管理员控制台](http://manage.microsoft.com)中，选择“管理员”&gt;“移动设备管理”&gt;“Windows”。 在“指定一个已验证的域名”框中输入公司网站经过验证的域的 URL，然后选择“测试自动检测”。
+### <a name="step-3-verify-cname"></a>步骤 3：验证 CNAME
 
-4.  **告诉用户如何注册其设备以及在纳入管理之后会出现的情况。**
+在 [Intune 管理员控制台](http://manage.microsoft.com)中，选择“管理员”&gt;“移动设备管理”&gt;“Windows”。 在“指定一个已验证的域名”框中输入公司网站经过验证的域的 URL，然后选择“测试自动检测”。
 
-    有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)。
+### <a name="step-4-tell-your-users-how-to-enroll-their-devices-and-what-to-expect-after-theyre-brought-into-management"></a>步骤 4：告诉用户如何注册其设备以及在纳入管理之后会出现的情况。
 
-    有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。
+   有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)。
 
-有关最终用户任务的详细信息，请参阅以下文章：      - [有关 Microsoft Intune 最终用户体验的资源](how-to-educate-your-end-users-about-microsoft-intune.md)
-      - [Windows 设备的最终用户指南](../enduser/using-your-windows-device-with-intune.md)
+   有关最终用户任务的详细信息，请参阅[如何使最终用户了解 Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) 和[适用于 Windows 设备的最终用户指南](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)。
 
 ### <a name="see-also"></a>另请参阅
 [在 Microsoft Intune 中注册设备的先决条件](prerequisites-for-enrollment.md)

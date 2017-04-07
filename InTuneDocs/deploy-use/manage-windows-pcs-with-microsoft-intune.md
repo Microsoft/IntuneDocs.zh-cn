@@ -2,10 +2,10 @@
 title: "使用客户端软件管理电脑 | Microsoft Docs"
 description: "安装 Intune 客户端软件来管理 Windows 电脑。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>使用 Intune 电脑客户端软件管理 Windows 电脑
-[将 Windows 电脑注册为移动设备](set-up-windows-device-management-with-microsoft-intune.md)是将 Windows 电脑注册到 Intune 中的首选方法，但也可选择按本主题中所述，通过安装 Intune 客户端软件来注册和管理 Windows 电脑。
+[将 Windows 电脑注册为移动设备](set-up-windows-device-management-with-microsoft-intune.md)是将 Windows 电脑注册到 Intune 中的首选方法，但作为 IT 管理员，你也可选择按本主题中所述，通过安装 Intune 客户端软件来注册和管理 Windows 电脑。 Intune 软件客户端不支持作为移动设备进行注册。
 
 Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对象 (GPO) 执行方式类似的策略来管理 Windows 电脑。 如果要使用 Intune 管理 Active Directory 加入域的计算机，请[确保 Intune 策略不与组织中存在的任何 GPO 冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。 可以阅读有关 [GPO](https://technet.microsoft.com/library/hh147307.aspx) 的详细信息。
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>用于 Intune 软件客户端的策略和应用部署
 
-虽然 Intune 客户端软件通过管理软件更新、Windows 防火墙和 Endpoint Protection 支持[帮助保护电脑的管理功能](policies-to-protect-windows-pcs-in-microsoft-intune.md)，但由 Intune 客户端软件管理的电脑不能以其他 Intune 策略为目标，包括特定于移动设备管理的 **Windows** 策略设置。 
+虽然 Intune 客户端软件通过管理软件更新、Windows 防火墙和 Endpoint Protection 支持[帮助保护电脑的管理功能](policies-to-protect-windows-pcs-in-microsoft-intune.md)，但由 Intune 客户端软件管理的电脑不能以其他 Intune 策略为目标，包括特定于移动设备管理的 **Windows** 策略设置。
 
 在使用 Intune 客户端软件管理 Windows 电脑时，只能使用“计算机管理”部分下显示的策略。
 
@@ -57,7 +57,7 @@ Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对�
 |---------------|--------------------|
 |网络|客户端要求 PC 具有 Internet 连接。|
 |处理器和内存|请参阅 PC 操作系统的处理器和 RAM 要求。|
-|硬盘空间|安装客户端软件之前必须有&200; MB 可用磁盘空间。|
+|硬盘空间|安装客户端软件之前必须有 200 MB 可用磁盘空间。|
 
 **软件**：安装该客户端软件的软件要求如下：
 
@@ -70,7 +70,7 @@ Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对�
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>使用 Intune 客户端软件时具有的计算机管理功能
 
-安装 Intune 客户端软件后，管理功能包括： 
+安装 Intune 客户端软件后，管理功能包括：
 
 - [应用程序管理](deploy-apps-in-microsoft-intune.md)
 

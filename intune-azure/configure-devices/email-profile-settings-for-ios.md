@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: c388cb26be11edb6f8f4b23d455632fad9ca98c9
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 78f99bba07180c06f979fec997a7bfb749d879c8
+ms.openlocfilehash: f18fd3ceee5c73a96444092691c590c7d9a7419c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/18/2017
 - **身份验证方法** - 选择“用户名和密码”或“证书”作为电子邮件配置文件所用的身份验证方法。
     - 如果已选择“证书”，请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。
 - **SSL** - 发送电子邮件、接收电子邮件以及与 Exchange 服务器通信时，使用安全套接字层 (SSL) 通信。
-- **S/MIME** - 使用 S/MIME 加密发送传出电子邮件。
+- **S/MIME** - 使用 S/MIME 签名发送传出的电子邮件。
     - 如果已选择“证书”，请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。
 - **要同步的电子邮件数** - 选择要同步的电子邮件的天数，或选择“无限制”以同步所有可用的电子邮件。
 - **允许将消息移动到其他电子邮件帐户** - 此选项允许用户在其设备上已配置的不同帐户间移动电子邮件。

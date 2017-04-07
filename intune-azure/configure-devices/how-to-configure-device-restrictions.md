@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 14b26c06ce9f880e44167c194d1d14f78c5e7386
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: b593b2ddd756bc5bf7700eca4f2544b87008a8ab
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/18/2017
     - **Windows Phone 8.1**
     - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
-6. 在“配置文件”类型下拉列表中，选择“设备限制”。 如果想要为 Windows 10 协同版设备（如 Surface Hub）创建设备限制配置文件，请选择“设备限制( Windows 10 协同版)”。
+6. 在“配置文件类型”类型下拉列表中，选择“设备限制”。 如果想要为 Windows 10 协同版设备（如 Surface Hub）创建设备限制配置文件，请选择“设备限制( Windows 10 协同版)”。
 7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
     - [Android 设置](device-restrictions-for-android.md)
     - [iOS 设置](device-restrictions-for-ios.md)

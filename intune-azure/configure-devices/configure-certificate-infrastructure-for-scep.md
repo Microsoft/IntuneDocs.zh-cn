@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>在 Microsoft Intune 中配置 SCEP 证书基础结构
@@ -54,7 +54,7 @@ ms.lasthandoff: 02/18/2017
 建议通过代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access 代理](https://technet.microsoft.com/en-us/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>证书和模板
+### <a name="BKMK_CertsAndTemplates"></a>证书和模板
 
 |对象|详细信息|
 |----------|-----------|
@@ -63,13 +63,13 @@ ms.lasthandoff: 02/18/2017
 |**服务器身份验证证书**|发证 CA 或公共 CA 请求你在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。|
 |**受信任的根 CA 证书**|你可以从根 CA 或信任该根 CA 的任何设备中将其导出为 **.cer** 文件，并通过使用可信 CA 证书配置文件将其部署到设备。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>帐户
+### <a name="BKMK_Accounts"></a>帐户
 
 |Name|详细信息|
 |--------|-----------|
 |**NDES 服务帐户**|指定用作 NDES 服务帐户的域用户帐户。|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>配置基础结构
+## <a name="BKMK_ConfigureInfrastructure"></a>配置基础结构
 在可以配置证书配置文件之前，必须完成以下需要 Windows Server 2012 R2 和 Active Directory Certificate Services (ADCS) 知识的任务：
 
 **任务 1**：创建 NDES 服务帐户
@@ -108,7 +108,7 @@ ms.lasthandoff: 02/18/2017
     -   在 **“扩展”** 选项卡上，确保 **“应用程序策略描述”** 包括了 **“客户端身份验证”**。
 
         > [!IMPORTANT]
-        > 对于 iOS 和 Mac OS X 证书模板，在“扩展”选项卡上编辑“密钥用法”并确保未选择“数字签名为原件的证明”。
+        > 对于 iOS 和 mac OS 证书模板，在“**扩展**”选项卡上编辑“**密钥用法**”并确保未选择“**数字签名为原件的证明**”。
 
     -   在“安全性”选项卡上，添加 NDES 服务帐户，并授予它“注册”模板的权限。 将创建 SCEP 配置文件的 Intune 管理员需要**读取**权限，以便在创建 SCEP 配置文件时可以浏览到该模板。
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 02/18/2017
 3.  在模板的 **“常规”** 选项卡上查看 **“有效期”** 。 默认情况下，Intune 使用在模板中配置的值。 但是，你可以选择配置 CA 以允许请求者指定不同的值，随后你也能够在 Intune 管理员控制台设置该值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
 
     > [!IMPORTANT]
-    > 无论你所做出的其他配置是什么，iOS 和 Mac OS X 平台都始终使用模板中设置的值。
+    > 无论你所做出的其它配置是什么，iOS 和 macOS 都始终使用模板中设置的值。
 
 以下是一个示例模板配置的屏幕截图。
 

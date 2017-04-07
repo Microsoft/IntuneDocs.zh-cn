@@ -3,8 +3,8 @@ title: "设备注册疑难解答"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何排查设备注册问题。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -388,9 +389,4 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 ### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune)中所述。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

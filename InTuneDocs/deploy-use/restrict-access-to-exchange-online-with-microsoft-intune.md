@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -275,9 +276,4 @@ ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 - [保护对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [保护对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

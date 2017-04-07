@@ -3,8 +3,8 @@ title: "设置电信费用管理服务"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：将 Saaswedo 电信费用管理服务配置为与 Intune 集成。"
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
@@ -16,16 +16,16 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
+ms.lasthandoff: 03/17/2017
 
 ---
 
 # <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>在 Intune Azure 预览版中设置电信费用管理服务
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-可借助 Intune 管理从企业拥有的移动设备上的数据使用量产生的电信费用。 为启用此功能，Intune 已集成第三方软件开发商 Saaswedo 的 Datalert 电信费用管理解决方案。 Datalert 是一款实时电信费用管理软件，可管理 Intune 托管设备的电信数据流量，避免昂贵和意外的数据和漫游过量。 
+借助 Intune，可管理企业拥有的移动设备上数据使用产生的电信费用。 为启用此功能，Intune 已集成第三方软件开发商 Saaswedo 的 Datalert 电信费用管理解决方案。 Datalert 是一款实时电信费用管理软件，可管理 Intune 托管设备的电信数据流量，避免昂贵和意外的数据和漫游过量。 
 
 Intune 与 Datalert 相集成，通过在限制超过定义的阈值时使用自动报警，来实现集中设置、监视和强制实施漫游和国内数据流量限制。 可以将服务配置为对最终用户的个人或群组应用不同的操作，包括在用户超出阈值时禁用漫游。 可在 Datalert 管理控制台中查看提供数据流量和监视信息的报告。
 
@@ -83,7 +83,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 
-3. 在“Intune”边栏选项卡上，选择“配置设备”。
+3. 在“Intune”边栏选项卡上，选择“设备配置”。
 
 4. 在“设备配置”边栏选项卡上，选择“设置” > “电信费用管理”。 
 

@@ -2,8 +2,8 @@
 title: "条款和条件策略设置 | Microsoft Docs"
 description: "你可以将 Intune 条款和条件部署到用户组，以解释注册、访问工作资源和使用公司门户应用将如何影响设备和用户。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -82,9 +83,4 @@ ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

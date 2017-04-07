@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 70d013768c07f1782255a309b5941f05c2222912
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -27,13 +27,14 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-电子邮件配置文件设置可用于配置使用连接和同步公司电子邮件所需的设置管理的设备。 这有助于确保设置在所有设备中是标准的，还有助于减少对不了解正确电子邮件设置的最终用户的支持呼叫。
+如果设备通过连接到公司电子邮件和与其同步时所需的设置进行管理，则其可使用电子邮件配置文件进行配置。 这有助于确保设置在所有设备中是标准的，还有助于减少对不了解正确电子邮件设置的最终用户的支持呼叫。
 
 大多数平台支持内置邮件客户端。 当前不支持大多数第三方电子邮件应用。
 
 你可以使用电子邮件配置文件配置下列设备类型上的本机电子邮件客户端：
 
-- Android 4.0 及更高版本
+- Android Samsung KNOX 标准版 4.0 和更高版本
+- Android for Work
 - iOS 8.0 及更高版本
 - Windows Phone 8.1 及更高版本
 - Windows 10（桌面版）和 Windows 10 移动版
@@ -44,7 +45,7 @@ ms.lasthandoff: 02/18/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “其他” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“配置设备”。
+3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入电子邮件配置文件的“名称”和“说明”。

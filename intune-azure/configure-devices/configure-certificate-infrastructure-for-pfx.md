@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 74899f8d9721ff3a6ddbdd0716fb935c937a5a55
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
+ms.lasthandoff: 03/13/2017
 
 
 
@@ -86,12 +86,12 @@ ms.lasthandoff: 02/18/2017
     -   在 **“扩展”** 选项卡上，确保 **“应用程序策略描述”** 包括了 **“客户端身份验证”**。
 
         > [!IMPORTANT]
-        > 对于 iOS 和 Mac OS X 证书模板，在“**扩展**”选项卡上编辑“**密钥用法**”并确保未选择“**数字签名为原件的证明**”。
+        > 对于 iOS 和 macOS 证书模板，在“**扩展**”选项卡上编辑“**密钥用法**”，并确保未选择“**数字签名为原件的证明**”。
 
 2.  在模板的 **“常规”** 选项卡上查看 **“有效期”** 。 默认情况下，Intune 使用在模板中配置的值。 但是，你可以选择配置 CA 以允许请求者指定不同的值，随后你也能够在 Intune 管理员控制台设置该值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
 
     > [!IMPORTANT]
-    > 无论你所做出的其他配置是什么，iOS 和 Mac OS X 平台都始终使用模板中设置的值。
+    > 无论你所做出的其他配置是什么，iOS 和 macOS 都始终使用模板中设置的值。
 
     若要配置 CA 以允许请求者指定有效期，请在 CA 上运行以下命令：
 

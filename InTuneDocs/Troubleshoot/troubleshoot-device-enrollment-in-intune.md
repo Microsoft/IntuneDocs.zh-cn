@@ -2,10 +2,10 @@
 title: "设备注册疑难解答 | Microsoft Docs"
 description: "有关设备注册问题故障排除的建议。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ ms.lasthandoff: 01/25/2017
 
 -    [为在 Microsoft Intune 中注册设备做好准备](/intune/deploy-use/prerequisites-for-enrollment)
 -    [设置 iOS 和 Mac 设备管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [使用 Microsoft Intune 设置 Windows Phone 和 Windows 10 移动版管理](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [设置 Windows 设备管理](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [设置 Android 设备管理](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - 无需其他步骤
+-    [设置 Android for Work 设备管理](/intune/deploy-use/set-up-android-for-work)
 
 托管的设备用户可收集注册和诊断日志以供你查看。 以下提供了有关收集日志的用户说明：
 
@@ -149,7 +149,7 @@ ms.lasthandoff: 01/25/2017
 **问题：**向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
 
 
-**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com)）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。 现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。 现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的问题
@@ -279,6 +279,18 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
   ![“公司访问设置”屏幕](./media/ios_cp_app_company_access_setup.png)
 
 注册后，设备将恢复到正常状态，并重新获得对公司资源的访问权限。
+
+### <a name="verify-ws-trust-13-is-enabled"></a>确认已启用 WS-Trust 1.3
+**问题**无法注册设备注册计划 (DEP) iOS 设备
+
+注册具有用户相关性的设备注册计划设备要求启用 WS-Trust 1.3 Username/Mixed 终结点以请求用户令牌。 默认情况下，Active Directory 启用此终结点。 通过使用 Get-AdfsEndpoint PowerShell cmdlet 和查找 trust/13/UsernameMixed 终结点可获取已启用的终结点列表。 例如：
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+有关详细信息，请参阅 [Get-AdfsEndpoint 文档](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+
+有关详细信息，请参阅[保护 Active Directory 联合身份验证服务安全的最佳做法](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs)。 如果你需要更多的帮助来确定联合身份验证提供程序中是否启用了 WS-Trust 1.3 Username/Mixed，并且你使用的是 ADFS，请联系 Microsoft 支持部门或第三方身份标识供应商。
+
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败
 **问题：**用户的 iOS 设备上收到**配置文件安装失败**错误。

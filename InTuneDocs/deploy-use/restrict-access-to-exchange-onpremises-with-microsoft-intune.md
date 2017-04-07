@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -80,11 +81,12 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 -   iOS 上的本机电子邮件应用。
 
 -   Exchange ActiveSync 邮件客户端（如 Android 4 或更高版本上的 Gmail）。
-- **Android for Work 设备上的 Exchange ActiveSync 邮件客户端：**Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可适用于 Android for Work，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将这些应用部署为必需安装。 
+-   **Android for Work 设备上的 Exchange ActiveSync 邮件客户端：**Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可适用于 Android for Work，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将这些应用部署为必需安装。 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > 不支持 Android 和 iOS 上的 Microsoft Outlook 应用。
 
 ## <a name="support-for-pcs"></a>对 PC 的支持
@@ -110,14 +112,12 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
   - **平台例外**：选择“添加规则”配置一个规则，为指定的移动设备系列和模型定义访问级别。 因为这些设备可为任何类型，所以还可配置不受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 支持的设备类型。
 
   - **默认规则**：对于不受其他任何规则约束的设备，可选择允许或阻止其访问 Exchange，也可以隔离它。 对于已注册并合规的设备，如果将该规则设置为允许访问，将会自动向 iOS、Windows 和 Samsung KNOX 设备授予电子邮件访问权限。 用户不必执行任何过程即可获取其电子邮件。
-
-        在不运行 Samsung KNOX 的 Android 设备上，用户会收到一封包含指导性演练的隔离电子邮件，用于验证注册和合规性，验证后他们才能访问电子邮件。 如果将该规则设置为阻止访问或隔离设备，将阻止所有设备访问 Exchange，无论设备是否已在 Intune 中注册。 若要防止已注册并符合要求的设备受此规则影响，请选中“替代默认规则”框。
+      - 在不运行 Samsung KNOX 的 Android 设备上，用户会收到一封包含指导性演练的隔离电子邮件，用于验证注册和合规性，验证后他们才能访问电子邮件。 如果将该规则设置为阻止访问或隔离设备，将阻止所有设备访问 Exchange，无论设备是否已在 Intune 中注册。 若要防止已注册并符合要求的设备受此规则影响，请选中“替代默认规则”框。
 >[!TIP]
 >如果想在授予电子邮件访问权限之前先阻止所有设备，请选择“阻止访问”规则或“隔离”规则。 默认规则适用于所有设备类型，因此作为平台例外配置且不受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 支持的设备类型也会受到影响。
 
   - **用户通知**：除了 Exchange 发送的通知电子邮件之外，Intune 还将发送一封包含取消阻止设备的步骤的电子邮件。 你可以根据需求来自定义编辑默认消息。 如果用户的设备在接收包含修正说明的 Intune 通知电子邮件之前已被阻止（此电子邮件发送到用户的 Exchange 邮箱），则用户可使用取消阻止的设备或其他方法来访问 Exchange 并查看该邮件。
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - 当“默认规则”设置为阻止或隔离时尤其如此。 在这种情况下，用户必须转到其应用商店，下载 Microsoft 公司门户应用并注册其设备。 这适用于 iOS、Windows 和 Samsung KNOX 设备。 对于不运行 Samsung KNOX 的设备，需要将隔离电子邮件发送到备用电子邮件帐户。 用户必须将电子邮件复制到其被阻止的设备，以完成注册和符合性过程。
   > [!NOTE]
   > 若要让 Exchange 能够发送通知电子邮件，必须指定用于发送通知电子邮件的帐户。
   >
@@ -127,11 +127,11 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 -   不需要部署条件访问策略—它会立即生效。
 
--   用户设置 Exchange ActiveSync 配置文件后，可能需要&1;-3 小时设备才会被阻止（如果它不由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理）。
+-   用户设置 Exchange ActiveSync 配置文件后，可能需要 1-3 小时设备才会被阻止（如果它不由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理）。
 
--   如果被阻止的用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备并更正非合规性，将在&2; 分钟内解除电子邮件访问阻止。
+-   如果被阻止的用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备并更正非合规性，将在 2 分钟内解除电子邮件访问阻止。
 
--   如果用户从 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 取消注册，可能需要&1;-3 小时设备才会被阻止。
+-   如果用户从 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 取消注册，可能需要 1-3 小时设备才会被阻止。
 
 **若要查看如何配置条件性访问策略以保护设备访问的示例方案，请参阅[保护电子邮件访问的示例方案](restrict-email-access-example-scenarios.md)。**
 
@@ -139,9 +139,4 @@ ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 -   [保护对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [保护对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

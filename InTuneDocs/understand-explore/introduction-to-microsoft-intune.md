@@ -5,7 +5,7 @@ keywords: "什么是 Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -31,7 +32,7 @@ Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮助员工提
 * 通过帮助控制员工访问和共享公司信息的方式来保护公司信息。
 * 确保设备和应用符合公司安全要求。
 
-Intune 与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访问控制，并与 Azure 权限管理 (Azure RMS) 集成以实现数据保护。 它负责 Microsoft 企业移动性 +安全性 (EMS) 的管理，而 Office 365 则负责 Microsoft 移动解决方案的高效工作。  
+Intune 与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访问控制，并与 Azure 信息保护集成以实现数据保护。 它负责 Microsoft 企业移动性 +安全性 (EMS) 的管理，而 Office 365 则负责 Microsoft 移动解决方案的高效工作。  
 
 结合 Office 365 和 EMS，使员工可以在其所有设备上高效工作，同时保护组织的信息。 Office 365 搭配 EMS 是针对企业移动性的完整集成套件，包括工作效率、标识、访问控制、管理和数据保护。 它为你提供了在组织中部署和运行移动性解决方案的有效方式。
 
@@ -114,9 +115,4 @@ Intune 提供移动应用安全的一种方法是通过其**应用保护策略**
 * 了解一些 [Intune 的常见使用方式](common-ways-to-use-intune.md)。
 * 通过 [Intune 的 30 天试用版](get-started-with-a-30-day-trial-of-microsoft-intune.md)熟悉该产品。
 * 深入了解 Intune 的[技术要求和功能](/intune/get-started/what-to-know-before-you-start-microsoft-intune)。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
 
 -   **已在第三方 MDM 解决方案中注册：**此类设备通常是公司自有设备。
 
-  > [!NOTE]
-  > 不建议在第三方移动应用程序管理或安全容器解决方案中使用应用保护策略。
+      > [!NOTE]
+      > 不建议在第三方移动应用程序管理或安全容器解决方案中使用应用保护策略。
 
 -   **未在任何 MDM 解决方案中注册：**此类设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中管理或注册。
 
@@ -133,9 +134,4 @@ MDM 解决方案：
 - [准备好配置应用保护策略](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [使用 Microsoft Intune 创建和部署应用保护策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

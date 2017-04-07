@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -39,10 +40,10 @@ ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
 
 -   **不由任何 MDM 解决方案管理的员工所有的设备：**可以将[应用保护策略设置](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)设置为“仅允许应用将数据传输到托管应用”。 当最终用户在非策略托管应用中打开受保护的文件时，文件不可读。
 
--   **由 Intune 管理的设备：**对于在 Intune 中注册的设备，在已通过 Intune 部署应用保护策略和其他托管的 iOS 应用的情况下自动允许在应用之间进行数据传输。 要允许具有应用保护策略的应用之间进行数据传输，请启用“仅允许应用将数据传输到托管应用”设置。 可使用“打开方式管理”功能控制在通过 Intune 部署的应用之间进行的数据传输。   
+-   **由 Intune 管理的设备：**对于在 Intune 中注册的设备，自动允许在具有应用保护策略的应用与其他通过 Intune 部署的托管 iOS 应用之间进行数据传输。 要允许具有应用保护策略的应用之间进行数据传输，请启用“仅允许应用将数据传输到托管应用”设置。 可使用“打开方式管理”功能控制在通过 Intune 部署的应用之间进行的数据传输。   
 
 -   **第三方 MDM 解决方案管理的设备：**你可以使用“打开方式管理”功能将数据传输限制为仅在托管应用之间进行。
-若要确保使用第三方 MDM 解决方案部署的应用也与在 Intune 中配置的应用保护策略相关联，必须按照[配置用户 UPN 设置](#configure-user-upn-setting-for-third-party-emm)演练中所述配置用户 UPN 设置。  如果已使用用户 UPN 设置部署应用，则会在最终用户使用其工作帐户登录时将应用保护策略应用到该应用。
+若要确保使用第三方 MDM 解决方案部署的应用也与在 Intune 中配置的应用保护策略相关联，必须按照[配置用户 UPN 设置](#configure-user-upn-setting-for-third-party-emm)演练中所述配置用户 UPN 设置。  如果应用是使用用户 UPN 设置部署的，则会在最终用户使用其工作帐户登录时将应用保护策略应用到该应用。
 
 > [!IMPORTANT]
 > 只有部署到由第三方 MDM 管理的设备的应用才需使用用户 UPN 设置。  Intune 托管设备不需要使用此设置。
@@ -76,9 +77,9 @@ ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
 
 |第三方 MDM 提供程序| Configuration 注册表项 | 值类型 | 配置值|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | 字符串 | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | 字符串 | ${userUPN} **或** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | 字符串 | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | 字符串 | $EMAIL$**或**$USER_UPN$ |
+| MobileIron 云 | IntuneMAMUPN | 字符串 | ${userUPN} **或** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>示例 2：最终用户体验示例
 
@@ -95,7 +96,7 @@ ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
 
 5.  登录成功后，会将应用保护策略设置应用到 Word 应用。
 
-6.  现在数据传输成功，并且已在应用中将该文档标记为企业标识。 此外，在工作环境中处理数据并相应地应用策略设置。
+6.  现在文件传输已成功，并且已在应用中将该文档标记为企业标识。 此外，在工作环境中处理文件并相应地应用策略设置。
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>为第三方 EMM 验证用户 UPN 设置
 
@@ -109,9 +110,4 @@ ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
 
 ### <a name="see-also"></a>另请参阅
 [通过 Microsoft Intune 使用应用保护策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

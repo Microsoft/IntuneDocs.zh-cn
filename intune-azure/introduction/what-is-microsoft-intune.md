@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
-ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -30,11 +30,11 @@ ms.lasthandoff: 02/16/2017
 
 Microsoft Intune 正在向 Azure 门户迁移，这意味着你习惯使用的工作流和功能将发生改变。
 新门户提供 Azure 门户中新功能和更新功能的预览，可在其中管理组织的移动设备、电脑和应用。
-所有 Intune 功能最终都会迁移到 Azure，但现在可以在 Azure 门户中执行某些 Intune 任务。 由于此新体验是在预览版中，因此门户中可能尚不提供某些功能。 有关详细信息，请查看[预览版新增功能](#what's-new-in-the-preview)部分。
+所有 Intune 功能最终都会迁移到 Azure，但现在可以在 Azure 门户中执行许多 Intune 任务。 由于此新体验是在预览版中，因此门户中可能尚不提供某些功能。 有关详细信息，请查看[新增功能](#what's-new)部分。
 
 > [!IMPORTANT]
 > **还没有看到新门户？**<br>
-> 我们已经开始向选定的租户推出预览版。 现有租户将从 2017 年初开始迁移到新体验。 在租户迁移之前，你将在 Office 邮件中心收到通知。 如果对租户迁移的时间表有任何疑问，请通过 [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) 联系我们的迁移团队。
+> 我们已经开始向选定的租户推出预览版。 现有租户将从 2017 年初开始迁移到新体验。 在租户迁移之前，你将在 Office 邮件中心收到通知。
 
 
 可以在此库中找到新的产品文档，并且它将在预览期间不断更新。 如果你想提出建议，请在主题评论中留下反馈。 我们很乐意倾听你的想法。
@@ -74,24 +74,25 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 
 ![Azure 门户工作负荷](./media/azure-portal-workloads.png)
 
-<!--- ### Plan and design
-Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started) --->
-### <a name="enroll-devices"></a>注册设备
+### <a name="introduction-and-get-started"></a>简介和入门
+本部分包含有关 Intune 的[新增功能](/intune-azure/introduction/whats-new)、[已知问题](/intune-azure/introduction/known-issues-in-the-intune-preview)、[如何获得支持](/intune-azure/introduction/how-to-get-support-for-microsoft-intune)和如何[开始使用免费试用版](/intune-azure/introduction/sign-up-free-trial-microsoft-intune)的信息。
+### <a name="plan-and-design"></a>规划和设计
+帮助你[规划和设计](/intune-azure/plan-and-design/get-started) Intune 环境的信息。
+### <a name="device-enrollment"></a>设备注册
 [如何通过 Intune 管理设备](/intune-azure/enroll-devices/what-is)。
-### <a name="devices--groups"></a>设备和组
+### <a name="devices"></a>设备
 [了解使用清单和报表管理的设备](/intune-azure/manage-devices/what-is)。
-### <a name="manage-users"></a>管理用户
-[了解管理的设备的用户](/intune-azure/manage-users/what-is)。
+### <a name="manage-users-and-groups"></a>管理用户和组
+[了解有关所管理的以及将资源分类到组的设备的用户](/intune-azure/manage-users/what-is)。
 ### <a name="manage-apps"></a>管理应用
 [如何发布、管理、配置和保护应用](/intune-azure/manage-apps/what-is-app-management)。
-### <a name="configure-devices"></a>配置设备
+### <a name="device-configuration"></a>设备配置
 [了解可在管理的设备上用来配置设置和功能的配置文件](/intune-azure/configure-devices/what-are-device-profiles)。
-### <a name="set-device-compliance"></a>设置设备合规性
+### <a name="device-compliance"></a>设备合规性
 [为设备定义符合性级别，然后报告不符合要求的任何设备](/intune-azure/set-device-compliance/what-is-device-compliance)。
 ### <a name="conditional-access"></a>条件性访问
 [根据指定的条件限制对 Exchange 服务的访问](/intune-azure/conditional-access/what-is-conditional-access)。
-### <a name="access-control"></a>访问控制
+### <a name="intune-roles"></a>Intune 角色
 [控制可以执行各种 Intune 操作的人员，以及这些操作适用的人员](/intune-azure/access-control/role-based-access-control)。 可以使用涵盖一些常见 Intune 方案的内置角色，也可以创建自己的角色。
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -38,27 +39,21 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 -    Windows 10 桌面版、Windows 10 移动版及更高版本
 -    iOS 8.0 及更高版本
 -    Samsung KNOX 标准版（4.0 及更高版本）
--    Android for Work
-
->[!NOTE]
->Intune 提供两个 Android for Work 电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，支持与 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的配置文件。
+-    Android for Work（第三方电子邮件应用，本机电子邮件应用仅为个人配置文件）
 
 除了在设备上设置电子邮件帐户外，还可以设置要同步的电子邮件数量，并且根据设备类型设置要同步的内容类型。
 
->[!NOTE]
->
->如果用户在通过 Intune 设置配置文件前已安装了电子邮件配置文件，则 Intune 电子邮件配置文件部署的结果将取决于设备平台：
+如果用户在通过 Intune 设置配置文件前已安装了电子邮件配置文件，则 Intune 电子邮件配置文件部署的结果将取决于设备平台：
 
->**iOS**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 用户创建的重复电子邮件配置文件会阻止由 Intune 管理员创建的配置文件的部署。 这是一个常见问题，因为 iOS 用户通常会创建电子邮件配置文件，然后注册。 公司门户将通知用户由于他们的电子邮件配置文件是手动配置的，因此他们不合规，并提示用户删除该配置文件。 用户应删除其电子邮件配置文件，以便设置 Intune 配置文件。 为防止此问题，请告知用户在安装电子邮件配置文件前进行注册，并允许 Intune 设置配置文件。
+**iOS**<br>基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 用户创建的重复电子邮件配置文件会阻止由 Intune 管理员创建的配置文件的部署。 这是一个常见问题，因为 iOS 用户通常会创建电子邮件配置文件，然后注册。 公司门户将通知用户由于他们的电子邮件配置文件是手动配置的，因此他们不合规，并提示用户删除该配置文件。 用户应删除其电子邮件配置文件，以便设置 Intune 配置文件。 为防止此问题，请告知用户在安装电子邮件配置文件前进行注册，并允许 Intune 设置配置文件。
 
->**Windows**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 Intune 会覆盖由用户创建的现有电子邮件配置文件。
+**Windows**<br>基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 Intune 会覆盖由用户创建的现有电子邮件配置文件。
 
->**Samsung KNOX**：基于电子邮件地址检测到现有的重复电子邮件帐户，并使用 Intune 配置文件将其覆盖。 如果用户设置该帐户，则 Intune 配置文件将再次覆盖该帐户。 请注意，这可能会使用户感到迷惑。
+**Samsung KNOX**<br>基于电子邮件地址检测到现有的重复电子邮件帐户，并使用 Intune 配置文件将其覆盖。 如果用户设置该帐户，则 Intune 配置文件将再次覆盖该帐户。 请注意，这可能会使用户感到迷惑。
 
->由于 Samsung KNOX 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。
+由于 Samsung KNOX 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。
 
->**Android for Work**：Intune 配置文件只应用于设备的工作配置文件中的特定电子邮件应用，不会影响设备用户配置文件上的电子邮件配置。
-
+**Android for Work**<br>Intune 提供两个 Android for Work 电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，且安装在设备工作配置文件中，因此它们不会导致出现重复的配置文件。 这两个应用支持到 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的电子邮件配置文件。 Nine Work 等电子邮件应用可能需付费使用。 若有任何问题，请查看应用的许可详细信息或与应用公司联系。
 
 ## <a name="secure-email-profiles"></a>保护电子邮件配置文件
 可以使用证书或密码保护电子邮件配置文件。
@@ -105,7 +100,7 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
     |**电子邮件地址**|每个设备上用户电子邮件地址的生成方式。 选择“主 SMTP 地址”以使用主 SMTP 地址登录到 Exchange，或使用“用户主体名称”以使用完整主体名称作为电子邮件地址。|
     |**身份验证方法**（Android for Work、Samsung KNOX 和 iOS）|选择“用户名和密码”或“证书”作为电子邮件配置文件所用的身份验证方法。|
     |**为客户端身份验证选择客户端证书(身份证书)**（Android for Work、Samsung KNOX 和 iOS）|请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 证书。 有关如何在 Intune 中使用证书配置文件的详细信息，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。 仅当身份验证方法为“证书”时才会显示此选项。|
-    |**使用 S/MIME**（Samsung KNOX 和 iOS）|发送使用 S/MIME 加密的传出电子邮件。|
+    |**使用 S/MIME**（Samsung KNOX 和 iOS）|使用 S/MIME 签名发送传出的电子邮件。|
     |**签名证书**（Samsung KNOX 和 iOS）|选择将用于签署发送电子邮件的签名证书。 仅当你选择**使用 S/MIME**时才会显示此选项。|
     |**要同步的电子邮件的天数**|你想要同步的电子邮件的天数，或选择“无限制”以同步所有可用的电子邮件。|
     |**同步计划**（Android for Work、Samsung KNOX、Windows Phone 8 及更高版本、Windows 10）|选择设备同步 Exchange Server 的数据所依据的计划。 你还可以选择“在邮件到达时”（在邮件到达时同步数据），或选择“手动”（设备用户必须启动同步）。|
@@ -136,9 +131,4 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 > [!NOTE]
 > - 对于 Android for Work，请确保除了部署相应的电子邮件配置文件外，还部署了 Gmail 或 Nine Work 应用。
 > - 如果想要从设备中删除电子邮件配置文件，则请编辑部署并删除包含该设备的任何组。 请注意，如果电子邮件配置文件是设备上唯一的电子邮件配置文件，则无法通过此方法将其删除。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

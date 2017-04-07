@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 02/21/2017
 
 - **擦除** - 指示是否需要擦除设备后才使用户可注册设备。 术语“擦除”意味着对设备恢复出厂设置，这将删除所有数据。 有关详细信息，请参阅[停用设备](retire-devices-from-microsoft-intune-management.md)。
 - **关联** - 将设备与用户关联。 对于移动应用程序管理 (MAM) 和公司数据的条件访问是必需的。 有关详细信息，请参阅[用户关联](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices)。
-- **锁定** - 指示是否阻止用户使用本机操作系统菜单取消注册其设备。 用户可使用公司门户应用在所有平台上取消注册其设备。 
+- **锁定** - 指示是否阻止用户使用本机操作系统菜单取消注册其设备。 用户可使用公司门户应用在所有平台上取消注册其设备。
 
 **iOS 注册方法**
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 02/21/2017
 
 | **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|    是 |    否 | [详细信息](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [详细信息](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|    否 |否 |否    |[详细信息](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android 注册方法**
@@ -75,7 +75,7 @@ ms.lasthandoff: 02/21/2017
 
 | **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 是|    是 |    否 | [详细信息](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | 否|    是 |    否 | [详细信息](prerequisites-for-enrollment.md)|
 
 
 若要了解有助于找到适当方法的一系列问题，请参阅[选择如何注册设备](/intune/get-started/choose-how-to-enroll-devices1)。

@@ -2,8 +2,8 @@
 title: "查看 Windows 电脑的硬件和软件清单 | Microsoft Docs"
 description: "如何查看使用 Intune 软件客户端作为电脑管理的 Windows 桌面硬件和软件信息。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 8425cee511cdd54e051a93a10a941142c33df893
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -66,8 +67,3 @@ Intune 收集使用 Intune 软件客户端作为电脑管理的桌面硬件和�
 ### <a name="see-also"></a>另请参阅
 
 [使用 Intune 软件客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
 * **iOS 设备**：打开 Azure Authenticator 应用，轻扫帐户左侧，然后选择注销。  
 * **Android 设备**：卸载公司门户应用或从“系统设置”删除帐户。
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>基于应用的 CA 与基于设备符合性的条件访问  
+## <a name="app-based-ca-with-device-based-ca"></a>基于应用的 CA 和基于设备的 CA  
 
 可以在 [Intune 管理员控制台](https://manage.microsoft.com)或 [Azure AD Premium 管理控制台] (https://manage.windowsazure.com) 上配置[基于设备合规性的条件访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)（**设备 CA**）。 设备 CA 要求用户只能通过符合 Intune 设备合规性策略的 Intune 托管设备或已加入域的电脑连接到 Exchange Online。  如果用户属于针对基于应用的 CA 和设备 CA 策略的一个或多个安全组，则用户必须满足以下两个要求之一：
 * 用于访问服务的应用是支持的移动应用 
@@ -63,9 +62,4 @@ ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
 ### <a name="see-also"></a>另请参阅
 
 [使用应用保护策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

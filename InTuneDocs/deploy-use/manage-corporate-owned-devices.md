@@ -2,8 +2,8 @@
 title: "管理公司拥有的设备 | Microsoft Docs"
 description: "可采用多种方法注册企业拥有的设备。这具体取决于设备的类型、其购买方式以及组织需求。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -65,9 +66,4 @@ ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
  - 设备在 [Azure Active Directory 或企业移动性套件中注册为 Windows 10 企业版设备](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)（仅限 Windows 10）。
 
 设备标记为公司设备时，管理员控制台中该设备记录的“所有权”列会显示为“公司”。 
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

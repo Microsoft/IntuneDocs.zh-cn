@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a062b92cba0042153ffe22b949ce8a3b7b740b3f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 02/18/2017
 -     **键盘快捷方式（仅限被监督的设备）** - 允许使用键盘快捷方式。
 -     **已配对的 Apple Watch 的手腕检测** - 启用后，Apple Watch 在未穿戴时不会显示通知。
 - **需要 AirPlay 传出请求配对密码** - 当用户使用 AirPlay 将内容流式传输到其他 Apple 设备时，需要提供配对密码。
-- **帐户修改（仅限被监督的设备）** - 允许用户更改帐户设置，如电子邮件配置。
+- **帐户修改（仅受到监督）** - 受到阻止时，这可以防止用户从 iOS 设置应用修改特定于设备的设置，如创建新的设备帐户和更改用户名或密码。
+这同样适用于可从 iOS 设置应用（如邮件、联系人、日历、Facebook 和 Twitter）进行访问的设置。 这不适用于具备不可从 iOS 设置应用进行配置的帐户设置的应用，例如，Microsoft Outlook 应用。
 - **Apple Watch 配对（仅限被监督的设备）** - 允许设备与 Apple Watch 配对。
 - **蓝牙修改（仅限被监督的设备）** - 阻止最终用户更改设备上的蓝牙设置。
 - **通过 Classroom 应用观测远程屏幕（仅限被监督的设备）** - 允许或阻止 Classroom 应用观测远程设备上的屏幕。
@@ -222,7 +223,7 @@ ms.lasthandoff: 02/18/2017
 -     **iCloud 照片库** - 如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。    如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。
 -     **通过托管的应用同步到云** - 允许通过 Intune 管理的应用将数据同步到用户的 iCloud 帐户。
 -     **共享照片流** - 将其设置为“否”以在设备上禁用“iCloud 照片共享”。
--     **活动延续** - 允许用户在其他 iOS 或 Mac OS X 设备上继续进行在某台 iOS 设备上开始的工作（切换）。
+-     **活动延续** - 允许用户在其他 iOS 或 macOS 设备上继续进行在某台 iOS 设备上开始的工作（切换）。
 
 ## <a name="kiosk"></a>Kiosk
 -     **激活锁** - 在受监管的 iOS 设备上启用激活锁。

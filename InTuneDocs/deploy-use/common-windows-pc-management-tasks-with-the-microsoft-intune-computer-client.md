@@ -2,8 +2,8 @@
 title: "常见 Windows 电脑管理任务 | Microsoft Docs"
 description: "了解运行 Intune 软件客户端的 Windows 电脑的管理方法。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,10 +36,5 @@ ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
 
 - [请求并提供 Windows 电脑的远程协助](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) - 说明 Intune 电脑用户如何获取远程协助并介绍先决条件和 TeamViewer 设置。
 
-
-
-
-
-<!--HONumber=Dec16_HO3-->
 
 

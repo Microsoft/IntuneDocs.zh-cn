@@ -4,7 +4,7 @@ description: "Intune 管理 Android for Work，在用户将其 Android 设备用
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a5c024c2139536f004799b18a0f6d1d1eb4875b2
-ms.openlocfilehash: bdacb61d1713bf24b2f33f144afa0db356e10ee0
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: e04ab9c14ea6e7cc38430ec6a4d478a65e23ba96
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,9 +41,9 @@ Intune 提供了一系列内置常规设置，你可以在 Android for Work 设�
 
 ## <a name="app-publishing-and-distribution"></a>应用发布和分发
 
-Google Play for Work 服务是 Android for Work 应用分发和管理的必要组成部分。 部署到 Android for Work 设备的所有应用，在工作配置文件中都会显示为来自 Play for Work 服务。 若要管理和部署 Play Store 中的应用，需以 Intune 管理员的身份登录到 Play for Work 网站，为 Intune 租户核准应用。 这些应用将同步到 Intune 控制台中，然后可在控制台中使用 Intune 进行部署和管理。 组织开发的业务线 (LOB) 应用必须使用 Google Android 应用发布控制台发布到 Play for Work。 业务线应用必须在 Android 应用发布控制台中进行配置，限制对组织的访问。
+Google Play for Work 服务是 Android for Work 应用分发和管理的必要组成部分。 部署到 Android for Work 设备的所有应用，在工作配置文件中都会显示为来自 Play for Work 服务。 若要在 Play Store 中管理和部署应用，请使用公司用于 Google 管理的管理员凭据登录到 Google Play 网站。 可以批准用于 Android for Work 部署的应用，使其显示在设备的工作配置文件中。 然后，这些应用将同步到 Intune 控制台中，可在控制台中使用 Intune 进行部署和管理。 组织开发的业务线 (LOB) 应用必须使用 Google Android 应用发布控制台发布到 Play for Work。 业务线应用必须在 Android 应用发布控制台中进行配置，限制对组织的访问。
 
-应用安装无需用户交互，且不要求用户允许**从未知源安装**。 若要浏览和安装可选或可用应用，用户可在其设备上浏览 Play Store。 详细了解[为 Android for Work 部署应用](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)。
+应用安装无需用户交互，且不要求用户允许**从未知源安装**。 若要浏览和安装可选或可用应用，用户可在其设备上浏览 Play for Work 应用商店。 详细了解[为 Android for Work 部署应用](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)。
 
 ## <a name="app-configuration"></a>应用配置
 
@@ -53,13 +53,13 @@ Android for Work 提供基础结构，用于将应用配置值部署到支持它
 
 Android for Work 不提供默认电子邮件应用或如 iOS 提供的本机电子邮件配置文件对象。 而可以通过将应用配置设置应用到支持它们的电子邮件应用中，来设置电子邮件配置。 Gmail 和 Nine Work 是 Play Store 中的两种 Exchange ActiveSync (EAS) 客户端应用，它们支持使用 Android for Work 应用配置进行配置。
 
-Intune 为 Gmail 和 Nine Work 应用提供配置模板。 其他支持应用配置的配置文件的电子邮件应用可使用移动应用配置策略进行配置。
+在 Gmail 和 Nine Work 应用作为工作应用管理时，Intune 为其提供配置模板。 其他支持应用配置的配置文件的电子邮件应用可使用移动应用配置策略进行配置。
 
 如果对 Android for Work 设备使用的是 Exchange ActiveSync 条件访问，则必须使用 Gmail 或 Nine Work 电子邮件应用。 同样支持 Microsoft Outlook for Android 应用，以及任何通过 ADAL 使用新式验证的其他电子邮件应用。 详细了解[公司电子邮件的电子邮件配置文件](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)。
 
-## <a name="mobile-app-management-policies"></a>移动应用管理策略
+## <a name="app-protection-policies"></a>应用保护策略
 
-工作配置文件和个人配置文件中完全支持应用到为移动应用程序管理 (MAM) 启用的应用上的限制策略。 可在 Android 应用发布控制台中发布业务线应用，地址为 https://play.google.com/apps/publish。 此控制台包含让应用专用于组织的选项。 详细了解 [Android for Work 合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)。 有关 MAM 策略的常规信息，请参阅[移动应用管理策略](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
+工作配置文件和个人配置文件完全支持所应用的应用保护策略。 可在 Android 应用发布控制台中发布业务线应用，地址为 https://play.google.com/apps/publish。 此控制台包含让应用专用于组织的选项。 详细了解 [Android for Work 合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)。 有关应用防护策略的常规信息，请参阅[应用策略](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
 ## <a name="vpn-profiles"></a>VPN 配置文件
 

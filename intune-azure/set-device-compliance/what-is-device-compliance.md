@@ -16,34 +16,35 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b245dac28f88e7eab70dfa9d759b15e155f8a7df
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
 
 # <a name="what-is-device-compliance-in-intune-azure-preview"></a>什么是 Intune Azure 预览版中的设备合规性？
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-若要帮助保护公司数据，则需确保用于访问公司应用和数据的设备符合特定规则。 这些规则可能包括使用 PIN 访问设备和加密存储在设备上的数据。 一组这样的规则就称为**合规性策略**。
+Intune 中的设备符合性策略定义设备必须遵从的规则和设置，以便将设备视为符合 Intune 和 EMS 条件访问策略。 也可使用设备符合性策略来监视和修正设备的符合性问题。 
 
-##  <a name="how-should-i-use-a-device-compliance-policy"></a>应如何使用设备合规性策略？
-可以将合规性策略与条件访问结合使用，以便只允许符合合规性策略规则的设备访问电子邮件和其他服务。
+这些规则包括以下内容：
 
-还可以使用独立于条件访问的合规性策略。
-独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，你可以获取有关未加密的设备数，或哪些设备已越狱或取得 root 权限的报告。 但是独立使用合规性策略时，不会实施对公司资源的访问限制。
+- 使用密码来访问设备
+- 加密
+- 设备是否越狱或取得 root 权限
+- 所需的最低操作系统版本
+- 允许的最高操作系统版本
+- 要求设备不高于移动威胁防御级别
 
-将合规性策略部署到用户。 将合规性策略部署到用户后，会对用户设备检查合规性。 若要了解策略部署完成后，移动设备需要多长时间获取策略，请参阅“管理设备上的设置和功能”。
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  <a name="concepts"></a>概念
-以下是一些有助于理解如何使用合规性策略的术语和概念。
+### Device compliance requirements
+Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-### <a name="compliance-requirements"></a>合规性要求
-合规性要求本质上是规则，如针对某个合规性策略，根据实际所需来要求是否指定设备 PIN 或加密。
-
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -66,30 +67,39 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="differences-between-the-classic-intune-admin-console-and-intune-in-the-azure-portal"></a>Azure 门户中经典 Intune 管理控制台和 Intune 之间的差异
+##  <a name="how-should-i-use-a-device-compliance-policy"></a>应如何使用设备合规性策略？
 
+### <a name="using-ems-conditional-access"></a>使用 EMS 条件访问
+可以将符合性策略与 EMS 条件访问结合使用，以便只允许符合一个或多个设备符合性策略规则的设备访问电子邮件和其他公司资源。
 
-如果你以前一直使用经典 Intune 管理控制台，请注意以下差异，以帮助转换到 Azure 门户中的新设备合规性工作流：
+### <a name="not-using-ems-conditional-access"></a>不使用 EMS 条件访问
+还可以使用独立于 EMS 条件访问的设备符合性策略。
+独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，你可以获取有关未加密的设备数，或哪些设备已越狱或取得 root 权限的报告。 但是独立使用合规性策略时，不会实施对公司资源的访问限制。
 
+将合规性策略部署到用户。 将合规性策略部署到用户后，会对用户设备检查合规性。 若要了解策略部署完成后，移动设备需要多长时间获取策略，请参阅“管理设备上的设置和功能”。
+
+##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Intune 经典管理员控制台与Intune Azure 预览门户
+
+如果你一直使用 Intune 经典管理控制台，请注意以下差异，以帮助转换到 Azure 门户中的新设备符合性策略工作流：
 
 -   在 Azure 门户中，合规性策略是针对每个受支持的平台单独创建的。 在 Intune 管理控制台中，一个合规性策略普遍适用于所有受支持的平台。
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>从 Intune 经典控制台迁移到 Intune Azure 预览门户
+
+在 [Intune 经典控制台](https://manage.microsoft.com)中创建的设备符合性策略不会出现在新的 [Intune Azure 门户](https://portal.azure.com)中。 但是，它们将仍面向用户并且可以通过 Intune 经典控制台进行管理。
+
+如果想要利用 Intune Azure 门户中新设备符合性相关的功能，需要在 Intune Azure 门户中创建新的设备符合性策略。 如果在 Intune Azure 门户中向某个用户分配新的设备符合性策略，但该用户同时还分配有 Intune 经典门户的设备符合性策略，则 Intune Azure 门户中的设备符合性策略优先于在 Intune 经典控制台中创建的策略。
+
 ##  <a name="next-steps"></a>后续步骤
 
-[合规性策略入门](get-started-with-device-compliance.md)
+[设备符合性策略入门](get-started-with-device-compliance.md)
 
 
 <!---### See also
 
 Conditional access--->
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

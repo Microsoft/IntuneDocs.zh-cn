@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-本指南的此节应与第 2 节中的其他主题并行使用。 此设计基于正在收集的信息以及为完成本指南之前的部分将制定的决策。 在此设计部分中，我们的重点是独立 Intune，它是一个驻留在云中的基于 Microsoft 云的服务。
+本指南的此节应与第 2 节中的其他主题并行使用。 此设计基于正在收集的信息以及为完成本指南之前的部分将制定的决策。 在此设计部分中，我们的重点是独立 Intune，它是一个基于 Microsoft 云的服务。
 
-虽然存在最低的本地基础结构要求，但依然建议进行设计规划，确保拥有满足目标、目的和要求的正确移动设备管理解决方案。
+虽然存在最低的本地基础结构要求，但仍需进行设计规划以确保拥有满足目标、目的和要求的正确移动设备管理解决方案。
 
-此外，在实现和测试阶段常常有设计更改，请务必记录所有这些更改以及进行更改背后的依据。 我们将讨论以下几个方面：
+此外，在实现和测试阶段常常有设计更改，请务必记录这些更改以及进行更改背后的依据。 我们将讨论以下几个方面：
 
 -   当前环境
 
@@ -250,7 +251,7 @@ Intune 支持公司拥有和 BYOD 所有权。 如果设备由设备注册管理
 
 配置策略用于管理设备上的安全设置和功能。 设计配置策略时，请参阅用例要求部分，确定 Intune 设备所需的配置。 记录哪些设置以及应如何配置它们，同时记录它们将面向哪些用户或设备组。
 
-每个平台应至少创建一个配置策略。 如果需要，每个平台可创建多个配置策略。 下面是一个针对不同平台和用例场景设计 4 个不同配置策略的示例。
+每个平台应至少创建一个配置策略。 如果需要，每个平台可创建多个配置策略。 下面是一个针对不同平台和用例场景设计&4; 个不同配置策略的示例。
 
 | **策略名称** | **设备平台** | **设置** | **目标组** |   
 |:---:|:---:|:---:|:---:|
@@ -409,9 +410,4 @@ Intune 支持以多种方式向用户或设备传递应用。 传递的应用程
 ## <a name="next-section"></a>下一节
 
 下一节提供 [Intune 实现过程](section-8-onboarding-process.md)的相关指南。
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

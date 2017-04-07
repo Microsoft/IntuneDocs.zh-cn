@@ -3,9 +3,9 @@
 title: "安装电脑客户端软件 | Microsoft Docs"
 description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。"
 keywords: 
-author: staciebarker
-ms.author: stabar
-ms.date: 02/22/2017
+author: nathbarn
+ms.author: nathbarn
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
 
 ## <a name="instruct-users-to-self-enroll"></a>指示用户自行注册
 
-用户可通过访问[公司门户网站](http://portal.manage.microsoft.com)安装 Intune 客户端软件。 用户在 Web 门户中所见的确切信息有所不同，具体取决于帐户的 MDM 机构以及用户电脑的 OS 平台和/版本。 
+用户可通过访问[公司门户网站](http://portal.manage.microsoft.com)安装 Intune 客户端软件。 用户在 Web 门户中所见的确切信息有所不同，具体取决于帐户的 MDM 机构以及用户电脑的 OS 平台和/版本。
 
 如果用户尚未分配 Intune 许可证，或尚未将组织的 MDM 机构设置为 Intune，则不会向用户显示任何注册选项。
 
@@ -200,7 +200,7 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**方法 2**（请注意：并非每个 Windows SKU 上都安装了这些代理）：
+**方法 2**<br>请注意：每个 Windows SKU 上都安装了这些代理：
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -247,7 +247,7 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
 - AgentInstaller
 - 日志
 - Updates
-- 公用 
+- 公用
 
 ### <a name="remove-the-onlinemanagement-folder"></a>删除 OnlineManagement 文件夹
 

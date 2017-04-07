@@ -2,7 +2,8 @@
 title: "常规疑难解答提示 | Microsoft Docs"
 description: "帮助解决 Intune 问题的常规资源。"
 keywords: 
-author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/08/2016
 ms.topic: article
@@ -16,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
 ms.openlocfilehash: ef6c482a45a7c759cec1062b129d2644562d0da2
+ms.lasthandoff: 01/23/2017
 
 
 ---
@@ -94,9 +96,4 @@ ms.openlocfilehash: ef6c482a45a7c759cec1062b129d2644562d0da2
 [Microsoft Intune 中的客户端安装问题疑难解答](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Microsoft Intune 中的软件更新问题疑难解答](troubleshoot-software-updates-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
 ms.openlocfilehash: dd71cc8f0d1fc5802f7f24e5f275089ffa24a1c5
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -33,7 +34,7 @@ ms.openlocfilehash: dd71cc8f0d1fc5802f7f24e5f275089ffa24a1c5
 
 必须创建仅应用于所需服务计划的新许可证 SKU 定义。 若要执行此操作，请禁用不想应用的计划。 例如，你可以创建一个不分配 Intune 许可证的许可证 SKU 定义。 若要查看从可用服务的列表，请键入：
 
-    (Get-MsolAccountSku | Where {$_.SkuPartNumber -eq "EMS"}).ServiceStatus
+    (Get-MsolAccountSku | Where {$\_.SkuPartNumber -eq "EMS"}).ServiceStatus
 
 你可以运行下面的命令来排除 Intune 服务计划。 你可以使用相同的方法来扩展整个安全组，或者使用更精细的筛选器。
 
@@ -71,9 +72,4 @@ ms.openlocfilehash: dd71cc8f0d1fc5802f7f24e5f275089ffa24a1c5
 >[!div class="step-by-step"]
 
 >[&larr; **将用户同步到 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**组织用户和设备** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

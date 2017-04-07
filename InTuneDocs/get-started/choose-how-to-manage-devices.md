@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
 ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
+ms.lasthandoff: 12/20/2016
 
 
 ---
@@ -53,9 +55,4 @@ ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
 - [选择如何注册移动设备](/intune/get-started/choose-how-to-enroll-devices1)
 - [使用 Intune 电脑客户端软件管理 Windows 电脑](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [使用 Microsoft Intune 管理 Exchange ActiveSync 移动设备](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

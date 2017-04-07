@@ -2,8 +2,8 @@
 title: "客户端安装程序疑难解答 | Microsoft Docs"
 description: "解决常见的客户端安装程序问题。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

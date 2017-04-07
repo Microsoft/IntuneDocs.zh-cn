@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: arob98
-ms.date: 01/31/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -171,11 +172,12 @@ Microsoft Active Protection Service 是一个可帮助你决定如何应对潜�
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>如何在计算机上查看恶意软件的最近检测路径
 Intune 可以在设备上显示多达 10 个最近检测到的恶意软件实例的路径。 **“最近检测路径”** 默认处于禁用状态。 启用此视图：
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组” > “所有设备” > “恶意软件”。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组” > “所有设备” > “所有计算机”。
+2. 右键单击要查看其最近检测路径的计算机，然后选择“属性”。
+3. 从顶部的选项卡中选择“恶意软件”。
 
-2.  右键单击列标题。 将显示可用列的列表。
-
-3.  在列表中选择“最近检测路径”复选框。 将出现“最近检测路径”列，并显示在设备上监视的多达 10 个最近的恶意软件实例。
+   ![选择“恶意软件”选项卡，然后单击“最近检测路径”复选框](../media/malware-path-column.png)
+4. 右键单击列标题。 将显示可用列的列表。 在列表中选择“最近检测路径”复选框。 将出现“最近检测路径”列，并显示在设备上监视的多达 10 个最近的恶意软件实例。
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>在计算机上运行恶意软件扫描或更新恶意软件定义
 Intune 可以在安装有 Intune 客户端的远程托管电脑上使用 Endpoint Protection 或 Windows Defender 运行完整或快速的恶意软件扫描。
@@ -184,17 +186,9 @@ Intune 可以在安装有 Intune 客户端的远程托管电脑上使用 Endpoin
 
 2. 选择“远程任务”下拉列表，然后选择要在远程计算机上运行的任务。
 
-
-
-
 ## <a name="need-more-help"></a>需要更多帮助？
 有关更多帮助和支持，请参阅 [Microsoft Intune 中的 Endpoint Protection 疑难解答](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)。
 
 ### <a name="see-also"></a>另请参阅
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

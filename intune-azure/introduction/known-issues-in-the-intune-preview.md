@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ ms.lasthandoff: 02/18/2017
 ## <a name="administration-and-accounts"></a>管理和帐户
 
 - 全局管理员（也被称为租户管理员）可以继续在没有单独的 Intune 或企业移动性套件 (EMS) 许可证的情况下进行日常的管理任务。 但是，如果全局管理员想要使用服务（例如注册他们自己的设备、企业设备，或使用 Intune 公司门户），与任何其他用户一样，他们需要 Intune 或 EMS 许可证。
+
+## <a name="apple-enrollment-profile-migration"></a>Apple 注册配置文件迁移
+- 在接下来的几个月里，Intune 将通过新的 Azure 门户实现管理你的 Apple 设备注册计划和 Apple 配置器注册。 如果你删除了 Apple 设备注册计划令牌，而且没有上载更新的令牌，将在新的 Azure 门户中作为迁移 Intune 帐户的一部分还原原始令牌。 若要删除此令牌并禁止 DEP 注册，在 Azure 门户中删除令牌即可。 
 

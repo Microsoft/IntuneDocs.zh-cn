@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,8 +30,9 @@ ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
 ## <a name="how-does-conditional-access-work"></a>条件性访问如何工作？
 可使用合规性策略设置评估设备的合规性。 条件性访问策略通过该评估来限制或允许对特定服务的访问。 结合使用条件性访问策略与设备合规性策略时，仅允许合规的设备访问该服务。 将合规性策略和条件访问策略部署到用户。 检查用户用于访问服务的任何设备是否符合策略。
 
-记住，必须向使用该设备的用户部署合规性策略，才能评估设备的合规性。
-如果未向用户部署合规性策略，该设备将被视为合规且不会对其应用任何访问限制。
+> [!IMPORTANT] 
+> 记住，必须向使用该设备的用户部署合规性策略，才能评估设备的合规性。
+> 如果未向用户部署合规性策略，该设备将被视为合规且不会对其应用任何访问限制。
 
 当设备不满足策略中设置的条件时，将指导最终用户完成注册设备并修复导致设备不合规问题的过程。
 
@@ -72,7 +74,7 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
 2. [创建设备合规性策略](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
 2.  为以下任一项 Microsoft 云服务/产品创建条件性访问策略：
-> [!div class="op_single_selector"]
+
   - [为 Exchange Online 创建条件性访问策略](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [为 Exchange 内部部署创建条件性访问策略](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [为新版 Exchange Online Dedicated 创建条件性访问策略](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -80,9 +82,4 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
   - [为 SharePoint Online 创建条件性访问策略](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [为 Skype for Business Online 创建条件性访问策略](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [为 Dynamics CRM Online 创建条件性访问策略](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

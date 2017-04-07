@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
-ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -33,10 +34,10 @@ ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 |应用类型|详细信息|
 |----------------|-------|
-|**Windows Installer (*.exe, *.msi)**|这种类型的应用必须支持无用户输入的无提示安装。 你的应用文档应包含用于无提示安装应用的相关命令行选项（如 **/q**）。 你可以在 [Microsoft Windows Installer 工具的命令行开关](https://support.microsoft.com/en-us/kb/227091)中找到常见命令行选项的列表。<br><br>应用的安装程序所需的所有其他文件和文件夹都必须从你为应用安装程序文件指定的位置中提供。<br><br>大多数情况下，Windows Installer (.msi) 和 Windows Installer 修补程序 (.msp) 文件不需要 Intune 安装任何命令行参数。 请查看应用文档。<br><br>如果需要命令行参数，则必须以“名称=值对”（如 TRANSFORMS=custom_transform.mst）形式输入参数。|
+|**Windows Installer (*.exe, *.msi)**|这种类型的应用必须支持无用户输入的无提示安装。 你的应用文档应包含用于无提示安装应用的相关命令行选项（如 **/q**）。 你可以在 [Microsoft Windows Installer 工具的命令行开关](https://support.microsoft.com/en-us/kb/227091)中找到常见命令行选项的列表。<br><br>应用的安装程序所需的所有其他文件和文件夹都必须从你为应用安装程序文件指定的位置中提供。<br><br>大多数情况下，Windows Installer (.msi) 和 Windows Installer 修补程序 (.msp) 文件不需要 Intune 安装任何命令行参数。 请查看应用文档。<br><br>如果需要命令行参数，则必须以“名称=值对”（如 TRANSFORMS=custom_transform.mst）形式输入参数。<br><br>此应用类型仅适用于运行 Intune 软件客户端的电脑。|
 |**Android 应用包 (*.apk)**|若要部署 Android 应用，你必须拥有有效的 .apk 包。|
 |**iOS 应用包 (*.ipa)**|若要部署 iOS 应用，你必须拥有有效的 .ipa 包。<br><br>.ipa 包必须由 Apple 签名，并且预配配置文件中的到期日期必须有效。 Intune 可分发企业证书 iOS 应用程序。<br><br>并非所有 Apple 开发人员证书应用都受支持。<br><br>必须向 iOS Developer Enterprise Program 注册你的公司。<br><br>确保组织的防火墙允许访问 iOS 预配和认证网站。<br><br>你不需要使用该应用部署清单文件 (.plist)。|
-|**Windows Phone 应用包（*.xap、.appx、.appxbundle）**|若要部署应用，你需要一个企业移动代码签名证书。 有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](set-up-windows-phone-management-with-microsoft-intune.md)。|
+|**Windows Phone 应用包（*.xap、.appx、.appxbundle）**|若要部署应用，你需要一个企业移动代码签名证书。 有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](set-up-windows-device-management-with-microsoft-intune.md)。|
 |**Windows 应用包（.appx、.appxbundle）**|若要部署应用，你需要一个企业移动代码签名证书。 有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows 设备管理](set-up-windows-device-management-with-microsoft-intune.md)。|
 |**通过 MDM 的 Windows Installer (*.msi)**|你可使用此应用创建基于 Windows Installer 的应用，并将其部署到运行 Windows 10 的已注册电脑。 通过移动设备管理 (MDM) 管理这些电脑。<br /><br />只能上载扩展名为 .msi 的单个文件。<br><br>该文件的产品代码和产品版本将用于应用检测。<br><br>将使用该应用的默认重启行为。 Intune 不控制此行为。<br><br>将为单个用户安装每个用户 MSI 包。<br><br>将为设备上的所有用户安装每个计算机 MSI 包。<br><br>当前仅为设备上的所有用户安装双模式 MSI 包。<br><br>当每个版本的 MSI 产品代码相同时，支持应用更新。<br>
 所有软件安装程序的应用类型都上载到你的云存储空间。
@@ -94,9 +95,4 @@ Windows 10 电脑安装业务线应用时无需旁加载密钥。 但是，注�
 ## <a name="next-steps"></a>后续步骤
 
 你需要先在 Intune 控制台中添加应用，然后才能部署这些应用。 你可以为[已注册设备](add-apps-for-mobile-devices-in-microsoft-intune.md)或[使用 Intune 客户端软件管理的 Windows 电脑](add-apps-for-windows-pcs-in-microsoft-intune.md)添加应用。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

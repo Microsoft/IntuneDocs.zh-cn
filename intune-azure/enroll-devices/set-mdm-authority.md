@@ -3,8 +3,8 @@ title: "设置移动设备管理机构"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何在 Intune 中设置移动设备管理机构。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -43,9 +44,4 @@ ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
 2. 在“Intune”边栏选项卡上，选择“注册设备”，然后选择“概述”。
 
 3. 在“开始管理设备”边栏选项卡上，选择“将 MDM 机构设置为 Intune”。 将出现一条消息，表明已成功将 MDM 机构设置为 Intune。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

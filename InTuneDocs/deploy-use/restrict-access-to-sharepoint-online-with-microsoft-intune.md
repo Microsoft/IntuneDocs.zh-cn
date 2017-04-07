@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
 ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -70,7 +71,7 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 或更高版本
 - Windows Phone 8.1 及更高版本
 
-通过 **iOS** 和 ** Android** 设备上的浏览器进行访问时，可保护对 SharePoint Online 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
+通过 **iOS** 和 **Android** 设备上的浏览器进行访问时，可保护对 SharePoint Online 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser（iOS 和 Android 5.0 及更高版本）
@@ -195,9 +196,4 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 保护对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

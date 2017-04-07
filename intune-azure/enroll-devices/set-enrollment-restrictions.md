@@ -3,8 +3,8 @@ title: "在 Intune 中设置注册限制"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：按平台限制注册，并在 Intune 中设置设备注册限制。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

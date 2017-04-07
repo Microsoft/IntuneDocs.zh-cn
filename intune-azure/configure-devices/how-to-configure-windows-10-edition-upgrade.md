@@ -6,19 +6,19 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5edcdf20d07c63a33707c31134af8adf22049929
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -29,9 +29,10 @@ ms.lasthandoff: 02/18/2017
 
 使用本主题中的信息了解如何配置 Windows 10 版本升级配置文件。 此配置文件可以将运行以下任一 Windows 10 版本的设备自动升级至较新的版本：
 
-- Windows 10 桌面版
+- Windows 10 家庭版
 - Windows 10 全息版
 - Windows 10 移动版
+
 
 支持下列升级路径：
 
@@ -39,6 +40,7 @@ ms.lasthandoff: 02/18/2017
 - 从 Windows 10 家庭版到 Windows 10 教育版
 - 从 Windows 10 移动版到 Windows 10 移动企业版
 - Windows 10 全息专业版到Windows 10 全息企业版
+
 
 ## <a name="before-you-start"></a>开始之前
 在开始将设备升级至最新版本之前，你将需要以下内容之一：
@@ -50,7 +52,7 @@ ms.lasthandoff: 02/18/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “其他” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“配置设备”。
+3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入版本升级配置文件的“名称”和“说明”。

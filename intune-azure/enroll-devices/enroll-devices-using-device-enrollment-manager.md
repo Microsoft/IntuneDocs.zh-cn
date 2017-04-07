@@ -3,8 +3,8 @@ title: "注册设备 - 设备注册管理员"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：使用设备注册管理器帐户在 Intune 中注册设备。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

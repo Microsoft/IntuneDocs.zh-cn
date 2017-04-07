@@ -2,8 +2,8 @@
 title: "移动设备注册的先决条件 | Microsoft Docs"
 description: "设置移动设备管理 (MDM) 先决条件并准备好注册不同的操作系统。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article

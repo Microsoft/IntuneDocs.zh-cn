@@ -1,12 +1,13 @@
 # 简介
 ## [什么是 Azure 门户预览？](introduction/what-is-microsoft-intune.md)
+## [Azure 中的 Intune 功能](introduction/ui-changes-in-microsoft-intune.md)
 ## 入门
 <!---(introduction/get-started.md) --->
 ### [注册免费试用版](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [新增功能](introduction/whats-new.md)
 ## [已知问题](introduction/known-issues-in-the-intune-preview.md)
 ## [获取支持](introduction/how-to-get-support-for-microsoft-intune.md)
-<!--- 
+<!---
 
 ## [Related resources](introduction/related-resources.md)
 
@@ -33,6 +34,7 @@
 ### [获取 Apple DEP 令牌](enroll-devices/get-apple-dep-token.md)
 ### [选择 iOS 设备注册方式](enroll-devices/choose-ios-enrollment-method.md)
 ## 如何
+### [向用户分配许可证](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [注册 Android 设备](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### 注册 iOS 设备
 #### [使用设置助理注册 iOS 设备](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
@@ -41,7 +43,7 @@
 #### [使用设备注册计划注册 iOS 设备](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [使用设备注册管理器注册设备](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [注册 macOS 设备](enroll-devices/enroll-macos-devices.md)
-### [注册 Windows 设备](enroll-devices/enroll-window-devices.md)
+### [注册 Windows 设备](enroll-devices/enroll-windows-devices.md)
 ### 管理设备注册
 #### [创建条款和条件](enroll-devices/create-terms-and-conditions.md)
 #### [设置注册限制](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +110,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## 如何
 ### [配置设备配置文件](configure-devices/how-to-create-device-profiles.md)
+
+### [配置设备功能](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [配置设备限制](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
@@ -138,6 +145,7 @@
 #### [Windows 8.1 和 Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [配置 Windows 10 版本升级设置](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [配置 Windows 更新商业版设置](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [配置证书](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
@@ -168,6 +176,8 @@
 ### [创建 Android for Work 合规性策略](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [创建 iOS 合规性策略](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [创建 Windows 合规性策略](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [创建不符合性纠正措施](set-device-compliance/actions-for-noncompliance.md)
+### [监视设备合规性](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 

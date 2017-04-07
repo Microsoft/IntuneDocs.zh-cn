@@ -2,8 +2,8 @@
 title: "请求并提供 Windows 电脑的远程协助 | Microsoft Docs"
 description: "向最终用户和 IT 管理员介绍为作为电脑管理的 Windows 桌面提供远程协助，以及远程启动电脑的步骤。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -85,8 +86,3 @@ Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买�
 ### <a name="see-also"></a>另请参阅
 
 [使用 Intune 软件客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

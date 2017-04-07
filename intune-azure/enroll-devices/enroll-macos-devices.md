@@ -3,8 +3,8 @@ title: "在 Intune 中注册 macOS 设备"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何在 Intune Azure 预览版中注册 macOS 设备。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: article
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 63ac5ecf6fbe9ae66c879466c7785b051dfb7a61
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -42,17 +42,18 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="set-up-macos-enrollment"></a>设置 macOS 注册
 
-默认情况下，Intune 允许注册 macOS 设备。 
+默认情况下，Intune 允许注册 macOS 设备。
 
-若要阻止 macOS 注册设备，请参阅[设置设备类型限制](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)。 
+若要阻止 macOS 注册设备，请参阅[设置设备类型限制](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)。
 
 若要设置用户可注册的最多设备数，请参阅 [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions)（设置设备限制约束）。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告诉用户如何注册其设备以访问公司资源
 
-需告知最终用户转到[公司门户网站](http://portal.manage.microsoft.com)并按照提示注册其设备。 还可以向他们发送指向在线注册步骤的链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)。 
+需告知最终用户转到[公司门户网站](http://portal.manage.microsoft.com)并按照提示注册其设备。 还可以向他们发送指向在线注册步骤的链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)。
 
 有关其他最终用户任务的信息，请参阅以下文章：
 
-- [有关 Microsoft Intune 最终用户体验的资源](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+- [有关 Microsoft Intune 最终用户体验的资源](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
 - [通过 Intune 使用 iOS 或 macOS 设备](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
+

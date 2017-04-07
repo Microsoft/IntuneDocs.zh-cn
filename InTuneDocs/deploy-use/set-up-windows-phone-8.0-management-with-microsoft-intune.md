@@ -12,9 +12,11 @@ ms.technology:
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: c1e39aa0944785f2f0fa624a8ba2cd55814ece7f
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -24,9 +26,4 @@ ms.openlocfilehash: c1e39aa0944785f2f0fa624a8ba2cd55814ece7f
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 截至 2016 年 9 月，Windows 8.0 公司门户应用已弃用。 将继续管理已经注册的 Window 8.0设备，但不能再注册新设备。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
