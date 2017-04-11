@@ -63,7 +63,7 @@ ms.lasthandoff: 03/21/2017
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange Connector 软件安装包
 
-1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中的管理员且有权使用 Exchange Server）打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com) (http://manage.microsoft.com)。
+1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中的管理员且有权使用 Exchange Server）打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com) ( http://manage.microsoft.com )。
 ![打开“设置 Exchange 连接”](../media/ExchangeConnector.gif)
 
 2.  在工作区快捷方式窗格中，选择“管理”>“移动设备管理” > “Microsoft Exchange”>“设置 Exchange 连接”。
