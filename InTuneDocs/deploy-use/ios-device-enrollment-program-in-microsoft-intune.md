@@ -54,7 +54,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 ### <a name="get-a-device-enrollment-program-token"></a>获取设备注册计划令牌
 
-1. 转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com)，然后使用公司 Apple ID 登录。 之后必须使用此 Apple ID 才能续订 DEP 令牌。
+1. 转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com), 然后使用公司 Apple ID 登录。 之后必须使用此 Apple ID 才能续订 DEP 令牌。
 
 2.  在**设备注册计划门户**中，转到“设备注册计划”&gt;“管理服务器”，然后选择“添加 MDM 服务器”。
 
@@ -131,7 +131,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 ### <a name="assign-dep-devices-for-management"></a>分配 DEP 设备以进行管理
 
-1. 转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com)，然后使用公司 Apple ID 登录。
+1. 转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com) 然后使用公司 Apple ID 登录。
 
 2. 转到“部署计划”&gt;“设备注册计划”&gt;“管理设备”。
 
