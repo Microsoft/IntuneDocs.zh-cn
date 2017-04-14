@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 9dc65b442a165609963cb5625009a723cbcb55dd
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: e4a6aaa1a8e23dc2c58345f73ff8db86018843e1
+ms.openlocfilehash: 1c36ab91a3657cccc51d7db58068a02c73c48cb8
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -27,6 +27,6 @@ ms.lasthandoff: 12/16/2016
 
 本指南包括：
 - [Intune 快速入门指南](start-with-a-paid-subscription-to-microsoft-intune.md) - 提供将试用订阅从测试用途转换为企业管理或为组织设置新订阅的分步说明
-- [迁移到 Intune ](migrate-to-intune.md) - 指导从当前企业移动性管理解决方案迁移到 Intune
+- [迁移到 Intune ](https://docs.microsoft.com/intune/plan-design/intune-mdm-migration-guide) - 指导从当前企业移动性管理解决方案迁移到 Intune
 - [Intune 后续步骤](prevent-company-data-leaks-from-Office-365-mobile-apps.md) - 常见 Intune 任务的概述和后续步骤
 

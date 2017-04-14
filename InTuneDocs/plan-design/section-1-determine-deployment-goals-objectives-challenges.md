@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -91,12 +92,7 @@ ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
 <br>
     -   **缓解措施：**迫不及待地进入项目之前，请确保已清晰地定义自己的目标和目的。 将这些目标纳入所有的认知和培训活动中，有助于确保用户了解组织选择 Intune 的原因。
 
-## <a name="next-section"></a>下一节
+## <a name="next-steps"></a>后续步骤
 
 确定部署目标、目的和可能遇到的难题后，让我们进入到下一节：[确定用例方案](section-2-identify-use-case-scenarios.md)。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
