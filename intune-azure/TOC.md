@@ -74,9 +74,7 @@
 ## [Plan and design](manage-apps/plan-and-design.md) --->
 ## 如何管理应用
 ### [添加应用](manage-apps/add-apps.md)
-#### [Android 业务线应用](manage-apps/android-lob-app.md)
 #### [Android 应用商店应用](manage-apps/android-store-app.md)
-#### [iOS 业务线应用](manage-apps/ios-lob-app.md)
 #### [iOS 应用商店应用](manage-apps/ios-store-app.md)
 #### [Web 应用](manage-apps/web-app.md)
 #### [Windows Phone 8.1 应用商店应用](manage-apps/windows-phone-8-1-store-app.md)
