@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: a2f8067bc169147a60db582d796631bea1ea5a8d
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-本主题指导 Intune 管理员如何启用移动设备注册。 有关在手机上使用 Intune 的帮助，请参阅[使用托管设备来完成工作](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)。 
+本主题指导 Intune 管理员如何启用移动设备注册。 有关在手机上使用 Intune 的帮助，请参阅[使用托管设备来完成工作](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)。
 
 若要使用 Intune 设置移动设备管理，必须先设置“移动设备管理机构”，它标识可管理与你的帐户关联的设备的服务。 本指南假设你将使用 Intune 服务，而不是 System Center Configuration Manager。 设置 MDM 机构后，便可以启用对设备平台的管理，并使用公司门户应用注册设备。
 
@@ -49,9 +50,9 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 
 为要管理的设备平台启用设备注册。 根据你的平台，需要的要求不同：
 
--  [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--  [Windows 电脑](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Windows 10 移动版和 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS 和 macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Windows 10 和 Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Windows 电脑](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)（Intune 软件客户端）
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 启用注册后，用户可以将公司门户应用下载到其设备，并完成设备注册过程。
@@ -60,18 +61,12 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 还可以启用多种[公司拥有的设备注册](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices)方案，包括：
 - [Apple 设备注册计划](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Apple Configurator 设置助理注册](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Apple Configurator 设置助理注册](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Apple Configurator 直接注册](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [设备注册管理器](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### <a name="next-steps"></a>后续步骤
 祝贺你！ 你刚刚完成了 *Intune 快速入门指南*的最后一步。 由于已完成初始配置，你可考虑启用附加的 MDM 功能。
 
 >[!div class="step-by-step"]
-
 >[&larr;**注册设备**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)[**配置后任务**&rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 64b59ccb29e05af0472d463f426a06509d242034
-ms.openlocfilehash: 7a13afcbfd6b37a209c2cb879a47370f9a00b937
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -57,9 +58,10 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 ##  <a name="supported-platforms"></a>受支持的平台
 - iOS 8.1 或更高版本
 - Android 4 或更高版本
+- Windows 10
 
 >[!NOTE]
->Windows 设备不支持这些应用保护策略。 但是，使用 Intune 注册 Windows 10 设备时，可以使用 Windows 信息保护，它提供了类似功能。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+>从版本 1703 开始，无需注册方案便可在 MAM 中为 Windows 10 设备定义应用保护策略。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 
 ##  <a name="supported-apps"></a>受支持的应用
 * **Microsoft 应用：**这些应用内置有 Intune 应用 SDK，且无需进一步处理就可应用应用保护策略。
@@ -106,9 +108,4 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 
 ## <a name="next-steps"></a>后续步骤
 [使用 Microsoft Intune 创建和部署应用保护策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 145fd465eb837a4f1a2a62358912fb8e824d4913
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
+ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
+ms.lasthandoff: 04/04/2017
 
 ---
 
@@ -51,6 +51,59 @@ ms.lasthandoff: 03/15/2017
 
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
 
-## <a name="sign-the-windows-10-company-portal-app"></a>对 Windows 10 公司门户应用进行签名
-对于需要下载和旁加载 Windows 10 Company Portal 应用的客户，现在可以使用脚本简化并精简组织的应用签名过程。 若要下载脚本及其使用说明，请参阅 TechNet 库中的 [Windows 10 公司门户的 Microsoft Intune 签名脚本](https://aka.ms/win10cpscript)。
+## <a name="manually-deploy-windows-10-company-portal-app"></a>手动部署 Windows 10 公司门户应用
+最终用户可以从 Windows 应用商店安装公司门户应以管理设备和安装应用。 但是，如果你的业务需求需要部署公司门户应用，即使尚未将 Intune 与适用于企业的 Windows 应用商店集成，也可以直接从 Intune 手动部署 Windows 10 公司门户应用。
+
+ > [!NOTE]
+ > 每次发布应用更新时，此选项都需要部署手动更新。
+
+1. 在[适用于企业的 Windows 应用商店](https://www.microsoft.com/business-store)中登录到你的账户，并获取公司门户应用的**脱机许可证**版本。  
+2. 获得应用之后，选择“**清单**”页中的应用。  
+3. 选择“**Windows 10 所有设备**”作为“**平台**”，然后选择相应的**体系结构**并下载。 此应用不需要应用许可证文件。
+![Windows 10 所有设备和供下载的体系结构 X86 包详细信息的图像](../media/Win10CP-all-devices.png)
+4. 下载“所需框架”下的所有包。 必须对 x86、x64 和 ARM 体系结构完成此操作，并生成如下所示的共 9 个包。
+
+![要下载的依赖项文件的图像 ](../media/Win10CP-dependent-files.png)
+5. 将公司门户应用上载到 Intune 之前，按以下方式创建一个包含构建的包的文件夹（例如，C:\Company Portal）：
+  1. 将公司门户包放置在 C:\Company Portal 中。 并在此位置创建一个 Dependencies 子文件夹。  
+  ![随 APPXBUN 文件一起保存的 Dependencies 文件夹的图像](../media/Win10CP-Dependencies-save.png)
+  2. 将九个依赖项包置于 Dependencies 文件夹中。  
+  如果依赖项未按此格式放置，Intune 将无法在包上载期间将其识别并上载，从而导致上载失败并出现以下错误。  
+  ![在应用程序文件夹中找不到此软件安装程序的 Windows 应用依赖项。 你可以继续创建和部署此应用程序，但直到提供缺少的 Windows 应用依赖项后，此应用程序才能运行。](../media/Win10CP-error-message.png)
+6. 返回到 Intune，然后将公司门户作为新的应用上载。 将其作为所需的应用部署到所需的目标用户集。  
+
+有关 Intune 如何处理通用应用的依赖项的详细信息，请参阅[通过 Microsoft Intune MDM 部署具有依赖项的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  
+
+### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>如果已从应用商店安装旧版应用，那么如何更新用户设备上的公司门户？
+如果你的用户已从应用商店安装 Windows 8.1 或 Windows Phone 8.1 公司门户应用，那么它们应自动更新到新版本，你或你的用户无需执行任何操作。 如果未更新，则要求用户检查他们是否在设备上启用了应用商店应用的自动更新。   
+
+### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将我的旁加载 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
+我们推荐的迁移途径是通过将部署操作设置为“卸载”，删除 Windows 8.1 公司门户应用的部署。 完成此操作后，可以使用上面任意选项部署 Windows 10 公司门户应用。  
+
+如果需要旁加载应用并且在未使用 Symantec 证书进行签名的情况下部署了 Windows 8.1 公司门户，则直接通过上面的 Intune 部分按照“部署”中的步骤完成升级。
+
+如果需要旁加载应用，并且使用 Symantec 代码签名证书签名和部署了 Windows 8.1 公司门户，请按照以下部分内容的步骤操作。  
+
+### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将已签名和旁加载的 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
+我们推荐的迁移路径是通过将部署操作设置为“卸载”，删除 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用的现有部署。 完成此操作后，Windows 10 公司门户应用便可以正常部署。  
+
+否则，Windows 10公司门户应用需要进行相应更新和签名，以确保遵循升级过程。  
+
+如果 Windows 10 公司门户应用已按此方式签名和部署，则需要在应用商店中可用时为每个新的应用更新重复此过程。 应用商店更新时，应用不会自动更新。  
+
+以下是签名和部署应用的方式：
+
+1. 从 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下载 Microsoft Intune Windows 10 公司门户应用签名脚本。  此脚本需要在主计算机上安装适用于 Windows 10 的 Windows SDK。 若要下载适用于 Windows 10 的 Windows SDK，请访问 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
+2. 如上所述，从适用于企业的 Windows 应用商店下载 Windows 10 公司门户应用。  
+3. 运行在脚本标头中详细说明了其输入参数的脚本，对 Windows 10 公司门户应用进行签名（以下进行了提取）。 不需要将依赖项传入该脚本。 只有在应用上载到 Intune 管理控制台时才需要依赖项。
+
+|参数 | 描述|
+| ------------- | ------------- |
+|InputWin10AppxBundle |定位到源 appxbundle 文件所在位置的路径 |
+|OutputWin10AppxBundle |已签名的 appxbundle 文件 Win81Appx 的输出路径。  定位到 Windows 8.1 或 Windows Phone 8.1 公司门户 (.APPX) 文件所在位置的路径。|
+|PfxFilePath |Symantec 企业移动代码签名证书 (.PFX) 文件的路径。 |
+|PfxPassword| Symantec 企业移动代码签名证书的密码。 |
+|PublisherId |企业的发布者 ID。 如果不存在，则使用 Symantec 企业移动代码签名证书的“使用者”字段。|
+|SdkPath | 适用于 Windows 10 的 Windows SDK 的根文件夹路径。 此参数为可选，默认为 ${env:ProgramFiles(x86)}\Windows Kits\10|
+在运行结束时，该脚本将输出签名版本的 Windows 10 公司门户应用。 然后可以通过 Intune 将签名版应用部署为 LOB 应用，后者会将当前部署的版本升级到此新的应用。  
 
