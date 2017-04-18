@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 - [iOS 和 Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows 电脑和笔记本电脑](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 移动版和 Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 移动版和 Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows 电脑和笔记本电脑](manage-windows-pcs-with-microsoft-intune.md)（Intune 客户端软件）
 
 还可以启用[公司拥有设备的注册](manage-corporate-owned-devices.md)。
 
@@ -170,7 +170,7 @@ Microsoft 支持部门将让你确认下列信息：
 请在联系 Microsoft 支持部门之前完成这些步骤以重置 MDM 机构。
 
 - 从 Intune 管理员控制台停用所有设备。 请勿尝试从设备停用设备。 
-- 删除 Service To Service Connector（“管理” > “移动设备管理” > “Microsoft Exchange”下），或禁用 Exchange Connector（如果已设置）。 
+- 删除 Service To Service Connector（“管理” > “移动设备管理” > “Microsoft Exchange”下），或禁用 Exchange Connector（如果已设置）。
 - 在“管理员” > “设备注册管理器”中删除设备注册管理器角色。
 - 在“管理员” > “移动设备管理” > “设备组映射”中关闭设备组映射。
 - 从“管理员” > “移动设备管理” > “Windows” > “旁加载密钥”删除旁加载密钥。
@@ -187,7 +187,7 @@ Microsoft 支持部门将让你确认下列信息：
 - 删除 Intune 用户组中的所有用户。 将 Intune 订阅指向空用户集合，或删除目标集合中的所有用户。  在 CloudUserSync.log 中确认用户已删除。 
 - 取消选中 iOS 平台以清除 APN 证书。
 - 删除适用于 MDM 设备的所有已发布应用程序。
-- 删除适用于 MDM 设备的所有策略。 
+- 删除适用于 MDM 设备的所有策略。
 - 从 Configuration Manager 控制台（仅适用于 R2 SP1 或更低版本）删除 Windows Intune 连接器。
 通过右键单击订阅并选择“删除”，可删除 Intune 订阅。
 - 重启 SMS Executive 服务。
@@ -196,18 +196,18 @@ Microsoft 支持部门将让你确认下列信息：
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>将 MDM 机构从 Office 365 重置为 Configuration Manager
 
 1. 导航到 [https://protection.office.com](https://protection.office.com)。
-2. 选择“安全策略”选项卡，然后选择“设备管理”。 
+2. 选择“安全策略”选项卡，然后选择“设备管理”。
 3. 通过选择“选择性擦除”停用所有设备。 请勿尝试从设备停用设备。 如果已禁用“选择性擦除”，则不需要进一步操作。
-4. 选择“安全策略”选项卡，然后选择“安全策略”。 
+4. 选择“安全策略”选项卡，然后选择“安全策略”。
 5. 对所有现有策略选择“删除”。 如果策略都处于挂起状态，则不需要进一步操作。
 
 >[!NOTE]
->无法删除 IOS APN 证书，该证书仍附加到帐户。 
+>无法删除 IOS APN 证书，该证书仍附加到帐户。
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>MDM 机构重置的后续步骤
 
-Microsoft 支持部门验证适用清单上的项后，重置 MDM 机构最多需要&3; 个工作日，但通常在一天之内完成。 
+Microsoft 支持部门验证适用清单上的项后，重置 MDM 机构最多需要 3 个工作日，但通常在一天之内完成。
 
 >[!IMPORTANT]
->在 Microsoft 支持部门确认已成功完成重置之前，请勿尝试配置订阅！ 过早配置可能会导致损坏并/或影响 Intune 服务的使用。 
+>在 Microsoft 支持部门确认已成功完成重置之前，请勿尝试配置订阅！ 过早配置可能会导致损坏并/或影响 Intune 服务的使用。
 

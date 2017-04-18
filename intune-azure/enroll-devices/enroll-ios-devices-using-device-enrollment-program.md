@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
-ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
+ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -27,48 +27,64 @@ ms.lasthandoff: 02/23/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”方式注册通过设备注册计划 (DEP) 购买的 iOS 设备。 配置文件包含想要应用于设备的管理设置。 注册包包括设备的设置助理选项。 用户无法注销通过 DEP 注册的设备。
+本主题帮助 IT 管理员注册通过 [Apple 设备注册计划 (DEP)](https://deploy.apple.com) 购买的公司所属的 iOS 设备。 Microsoft Intune 可以无线部署注册 DEP 的注册配置文件，因此管理员不必接触每个托管设备。 DEP 配置文件包含你想要在注册期间应用于设备的管理设置。 注册包包括设备的设置助理选项。
 
 >[!NOTE]
->此注册方法不能与[设备注册管理器](enroll-devices-using-device-enrollment-manager.md)方法共同使用。
+>DEP 注册不能与[设备注册管理器](enroll-devices-using-device-enrollment-manager.md)共同使用。
+>此外，如果用户使用公司门户应用注册其 iOS 设备，然后导入这些设备的序列号并为这些序列号分配了 DEP 配置文件，设备将从 Intune 取消注册。
 
-要使用 Apple 的设备注册计划 (DEP) 管理公司拥有的 iOS 设备，组织必须加入 Apple DEP 并通过该计划获取设备。 该过程的详细信息，可以通过以下网站获得：  [https://deploy.apple.com](https://deploy.apple.com)。 该计划的优点包括免手动设置设备，无需通过 USB 电缆将每个设备连接到计算机。
+**DEP 注册步骤**
+1. [获取 Apple DEP 令牌](#get-the-apple-dep-certificate)
+2. [创建 DEP 配置文件](#create-anapple-dep-profile)
+3. [将 Apple DEP 序列号分配给 Intune 服务器](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+4. [同步 DEP 托管的设备](#synchronize-dep-managed-devices)
+5. 将设备分配给用户
 
-可以通过 DEP 注册公司拥有的 iOS 设备之前，需要从 Apple [获得 DEP 令牌](get-apple-dep-token.md)。 此令牌允许 Intune 同步有关公司所拥有的且加入了 DEP 的设备的信息。 它也允许 Intune 将注册配置文件上传至 Apple，并向设备分配这些配置文件。
 
-[选择在 Intune 中注册 iOS 设备的方式](choose-ios-enrollment-method.md)中介绍了注册 iOS 设备的其他方法。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="get-the-apple-dep-certificate"></a>获取 Apple DEP 证书
+使用 Apple 的设备注册计划 (DEP) 注册公司拥有的 iOS 设备之前，需要从 Apple 获取 DEP 证书 (.p7m) 文件。 此令牌允许 Intune 同步有关公司所拥有的且加入了 DEP 的设备的信息。 它也允许 Intune 将注册配置文件上传至 Apple，并向设备分配这些配置文件。
 
-在设置 iOS 设备注册前，完成以下先决条件：
+要使用 DEP 管理公司拥有的 iOS 设备，组织必须加入 Apple DEP 并通过该计划获取设备。 该过程的详细信息，可以通过以下网站获得：https://deploy.apple.com。 该计划的优点包括免手动设置设备，无需通过 USB 电缆将每个设备连接到计算机。
 
-- [配置域](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [设置 MDM 机构](set-mdm-authority.md)
-- [创建组](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- 在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中分配用户许可证
-- [获取 Apple MDM Push Certificate](get-an-apple-mdm-push-certificate.md)
-- [获取 Apple DEP 令牌](get-apple-dep-token.md)
+> [!NOTE]
+> 如果你的 Intune 租户从 Intune 经典控制台迁移到 Azure 门户，并且在迁移期间从 Intune 管理控制台中删除了 Apple DEP 令牌，则 DEP 令牌可能已被还原到你的 Intune 帐户。 可在 Azure 门户中再次删除 DEP 令牌。
 
-## <a name="create-an-apple-dep-profile-for-devices"></a>为设备创建 Apple DEP 配置文件
+
+
+
+**步骤 1.下载创建 Apple DEP 令牌所需的 Intune 公钥证书。**<br>
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。 在 Intune 边栏选项卡上，选择“设备注册” > “Apple DEP令牌”。
+2. 选择“下载公钥”，本地下载和保存加密密钥 (.pem) 文件。 .pem 文件用于从 Apple 设备注册计划门户请求信任关系证书。
+
+**步骤 2：从相应的 Apple 网站下载 Apple DEP 令牌。**<br>
+选择“通过 Apple 部署计划创建 DEP 令牌”[](https://deploy.apple.com)(https://deploy.apple.com)，并使用公司的 Apple ID 登录。 可使用此 Apple ID 续订 DEP 令牌。
+
+   1.  在 Apple 的[设备注册计划门户](https://deploy.apple.com)中，转到“设备注册计划”&gt;“管理服务器”，然后选择“添加 MDM 服务器”。
+   2.  输入“MDM 服务器名称”，然后选择“下一步”。 服务器名称供参考，用于识别移动设备管理 (MDM) 服务器。 它不是 Microsoft Intune 服务器的名称或 URL。
+   3.  此时将打开“添加 &lt;服务器名称&gt;”对话框。 选择“选择文件…” 以上传 .pem 文件，然后选择“下一步”。
+   4.  “添加 &lt;ServerName&gt;”对话框显示“你的服务器令牌”链接。 将服务器令牌 (.p7m) 文件下载到计算机，然后选择“完成”。
+
+**步骤 3：输入用于创建 Apple DEP 令牌的 Apple ID。此 ID 可以用于续订 Apple DEP 令牌。**
+
+**步骤 4：浏览到要上传的 Apple DEP 令牌。Intune 会自动与 DEP 帐户同步。**<br>
+转到证书 (.pem) 文件，选择“打开”，然后选择“上传”。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。
+
+## <a name="create-an-apple-dep-profile"></a>创建 Apple DEP 配置文件
 
 设备注册配置文件定义应用于设备组的设置。 以下步骤说明如何为使用 DEP 注册的 iOS 设备创建设备注册配置文件。
 
 1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
-
 2. 在“Intune”边栏选项卡上，选择“注册设备”，然后选择“Apple 注册”。
-
 3. 在“管理 Apple 设备注册计划 (DEP) 设置”下，选择“DEP 配置文件”。
-
 4. 在“Apple DEP 配置文件”边栏选项卡上，选择“创建”。
-
 5. 在“创建注册配置文件”边栏选项卡上，输入配置文件的名称和说明。
-
 6. 对于“用户关联”，请选择具有此配置文件的设备是否通过用户关联进行注册。
 
- - **通过用户关联注册** - 必须在初始设置过程中将设备与某个用户相关联，然后才能允许此设备访问公司数据和电子邮件。 对属于用户且需要使用公司门户获取服务（如安装应用）的 DEP 托管设备，选择用户关联。 请注意：在具有用户关联的 DEP 设备上注册期间，多重身份验证 (MFA) 不起作用。 注册之后，MFA 在这些设备上会正常运行。 注册 DEP 设备时，需要更改密码的新用户在首次登录时不会获得提示。 此外，在 DEP 注册过程中，密码已过期的用户不会获得重置密码的提示，必须使用其他设备重置密码。
+ - **通过用户关联注册** - 必须在初始设置过程中将设备与某个用户相关联，然后才能允许此设备访问公司数据和电子邮件。 对属于用户且需要使用公司门户获取服务（如安装应用）的 DEP 托管设备，选择用户关联。 请注意：在具有用户关联的 DEP 设备上注册期间，多重身份验证 (MFA) 不起作用。 注册之后，MFA 在这些设备上会正常运行。 注册 DEP 设备时，需要在首次登录时更改密码的新用户不会获得提示。 此外，在 DEP 注册过程中，密码已过期的用户不会获得重置密码的提示，必须使用其他设备重置密码。
 
     >[!NOTE]
-    >具有用户关联的 DEP 要求启用 WS-Trust 1.3 用户名/混合终结点以请求用户令牌。
+    >具有用户关联的 DEP 要求启用 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints)以请求用户令牌。 [详细了解 WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
  - **不通过用户关联注册** - 该设备不与用户关联。 将此隶属关系用于无需访问本地用户数据即可执行任务的设备。 需要用户隶属关系的应用（包括用于安装业务线应用的公司门户应用）无法运行。
 
@@ -111,7 +127,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 4. 选择“分配到服务器”，然后选择为 Microsoft Intune 指定的 &lt;ServerName&gt;，然后选择“确定”。
 
-## <a name="synchronize-dep-managed-devices"></a>同步 DEP 管理的设备
+## <a name="synchronize-dep-managed-devices"></a>同步 DEP 托管的设备
 
 1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
@@ -151,7 +167,7 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 5. 登录后，系统会提示用户注册其设备。 第一步是识别其设备。 应用会提供一份已为公司注册并已被分配到用户的 Intune 帐户的 iOS 设备列表。 他们应选择匹配的设备。 如果该设备还不是公司注册的设备，他们应选择新设备以使用标准注册流程继续操作。
 
-6. 在下一个屏幕上，用户需要确认新设备的序列号。 若要执行此操作，用户需选择出现的链接。 链接将启动“设置”应用，用户便可验证其序列号。 然后用户必须将序列号的最后&4; 个字符输入到公司门户应用中。
+6. 在下一个屏幕上，用户需要确认新设备的序列号。 若要执行此操作，用户需选择出现的链接。 链接将启动“设置”应用，用户便可验证其序列号。 然后用户必须将序列号的最后 4 个字符输入到公司门户应用中。
 
    此步骤验证该设备是否是在 Intune 中注册的企业设备。 如果设备上的序列号不匹配，则用户选择了错误的设备。 用户必须返回到上一屏幕并选择其他设备。
 

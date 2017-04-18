@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -93,8 +94,6 @@ ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
     ![显示已配置“应用”和“设置”的“添加策略”边栏选项卡的屏幕截图](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 按上述流程创建策略后，它未部署到任何用户。 若要部署策略，请参阅下面的部分，即“将策略部署到用户”。
 
 > [!IMPORTANT]
@@ -105,6 +104,46 @@ ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 > -   你将这两个策略关联到了同一应用。
 > -   从 Azure 控制台中创建的策略为优先策略，且允许复制。
 > -   但是，Intune 控制台中的状态和报告将错误地指示已阻止复制。
+
+## <a name="line-of-business-lob-apps-optional"></a>业务线 (LOB) 应用（可选）
+
+从 Intune 1703 版本开始，当你在创建新的应用保护策略时通常可以选择将 LOB 应用添加到 Intune。 这样，你就可以选择使用 MAM SDK 定义 LOB 应用的应用保护策略，而不需要完整的应用部署权限。
+
+> [!TIP] 
+> 在进入 [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) 工作流时，你还可以将 LOB 应用添加到 Intune。
+
+> [!IMPORTANT]
+> 如果用户仅具有部署 MAM 应用的特定权限，而不具有完整的应用部署权限，则他们可以在 Intune 中部署任何应用，虽然他们无法进入 Intune SDK 工作流，但仍可以通过 MAM 应用保护策略创建工作流添加其 LOB 应用。
+
+### <a name="to-add-lob-apps-ios-and-android"></a>添加 LOB 应用（iOS 和 Android）
+
+1.  在“添加一个策略”边栏选项卡上，选择“配置应用”打开“应用”边栏选项卡。
+
+    ![MAM“添加一个策略”边栏选项卡](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  单击“更多应用”，然后输入“捆绑 ID”（适用于 iOS）或“包 ID”（适用于 Android），然后单击“选择”添加你的 LOB 应用。
+
+    ![MAM“更多应用”边栏选项卡](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>添加 LOB 应用 (Windows)
+
+> [!IMPORTANT] 
+> 创建新的应用保护策略时，需要从平台下拉列表中选择 Windows 10。
+
+1.  在“添加一个策略”边栏选项卡上，选择“允许的应用”或“豁免应用”以打开“允许或豁免应用”边栏选项卡。
+
+    > [!NOTE]
+    > 
+    - **允许的应用**：这些应用需要符合此策略。
+    - **豁免应用**：这些应用从此策略中豁免，可以无限制地访问公司数据。
+<br></br>
+2. 在“允许或豁免应用”边栏选项卡上，单击“添加应用”。 你可以添加推荐的 Microsoft 应用、应用商店或桌面应用。
+
+    a.  **推荐的应用：**一份预先填写好的应用列表（主要为 Office 应用），便于管理员轻松导入策略。
+
+    b。  **应用商店应用：**管理员可以将 Windows 应用商店中的任何应用程序添加到策略。
+
+    c.  **Windows 桌面应用：**管理员可以将任何传统 Windows 桌面应用添加到策略（例如，exe、dll 等）
 
 ## <a name="deploy-a-policy-to-users"></a>将策略部署到用户
 
@@ -181,9 +220,4 @@ ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 ### <a name="see-also"></a>另请参阅
 * [Android 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 * [iOS 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
