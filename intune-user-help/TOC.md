@@ -1,6 +1,7 @@
 # 有关 Intune 的用户帮助
 ## [使用托管设备来完成工作](use-managed-devices-to-get-work-done.md)
 ## [我的公司可以使用 Intune 看到哪些信息？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+## [当我重置设备时，会发生什么情况？](what-happens-if-you-reset-your-device-cpwebsite.md)
 ## [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 ### [注册 Android 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [修复 Android 的常见问题](troubleshoot-your-device-android.md)
@@ -12,8 +13,3 @@
 ### [注册 Windows 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [修复 Windows 的常见问题](troubleshoot-your-device-windows.md)
 ## [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
