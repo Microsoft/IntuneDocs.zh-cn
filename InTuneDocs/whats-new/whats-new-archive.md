@@ -23,7 +23,7 @@ ms.lasthandoff: 02/07/2017
 ---
 # <a name="whats-new-archive"></a>新增功能存档
 
-此页是 [Microsoft Intune 新增功能](whats-new-in-microsoft-intune.md)中最近&6; 个月的滚动声明列表。
+此页是 [Microsoft Intune 新增功能](whats-new-in-microsoft-intune.md)中最近 6 个月的滚动声明列表。
 
 [!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
 
