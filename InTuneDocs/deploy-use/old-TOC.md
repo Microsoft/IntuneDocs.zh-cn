@@ -1,3 +1,4 @@
+
 # <a name="understand-and-exploreintuneunderstand-exploreintroduction-to-microsoft-intune"></a>[了解和探索](/intune/understand-explore/introduction-to-microsoft-intune)
 # <a name="get-startedintuneget-startedget-started"></a>[开始使用](/intune/get-started/get-started)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
@@ -152,8 +153,3 @@
 # <a name="develop-and-customize-appsintunedevelopintune-app-sdk"></a>[开发和自定义应用](/intune/develop/intune-app-sdk)
 
 # <a name="troubleshootintunetroubleshootgeneral-troubleshooting-tips-for-microsoft-intune"></a>[故障排除](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
