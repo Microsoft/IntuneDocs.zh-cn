@@ -43,6 +43,7 @@
 ### [设备注册管理器](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [注册 macOS 设备](enroll-devices/enroll-macos-devices.md)
 ### [注册 Windows 设备](enroll-devices/enroll-windows-devices.md)
+### [批量注册 Windows 设备](enroll-devices/bulk-enroll-windows.md)
 ### 管理设备注册
 #### [创建条款和条件](enroll-devices/create-terms-and-conditions.md)
 #### [设置注册限制](enroll-devices/set-enrollment-restrictions.md)
@@ -57,6 +58,7 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## 如何
 ### [使用完全擦除或选择性擦除](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
+### [远程控制 Android 设备](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # 管理用户
@@ -75,7 +77,9 @@
 ## 如何管理应用
 ### [添加应用](manage-apps/add-apps.md)
 #### [Android 应用商店应用](manage-apps/android-store-app.md)
+#### [Android LOB 应用](manage-apps/android-lob-app.md)
 #### [iOS 应用商店应用](manage-apps/ios-store-app.md)
+#### [iOS LOB 应用](manage-apps/ios-lob-app.md)
 #### [Web 应用](manage-apps/web-app.md)
 #### [Windows Phone 8.1 应用商店应用](manage-apps/windows-phone-8-1-store-app.md)
 #### [Windows 应用商店应用](manage-apps/windows-store-app.md)
@@ -109,8 +113,12 @@
 ### [配置设备配置文件](configure-devices/how-to-create-device-profiles.md)
 
 ### [配置设备功能](configure-devices/how-to-configure-device-features.md)
-#### [iOS](configure-devices/device-features-for-ios.md)
-#### [macOS](configure-devices/device-features-for-macos.md)
+#### [适用于 iOS 和 MacOS 的 AirPrint](configure-devices/air-print-settings-for-ios-and-macos.md)
+#### [适用于 iOS 的 AirPlay](configure-devices/airplay-settings-for-ios-devices.md)
+#### [适用于 iOS 的主屏幕布局](configure-devices/home-screen-settings-for-ios.md)
+#### [适用于 iOS 的应用通知](configure-devices/app-notification-settings-for-ios.md)
+#### [适用于 iOS 的共享设备](configure-devices/shared-device-settings-for-ios.md)
+#### [适用于 iOS 的 Web 内容筛选器](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [配置设备限制](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -120,6 +128,7 @@
 #### [Windows Phone 8.1](configure-devices/device-restrictions-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/device-restrictions-for-windows-10.md)
 #### [Windows 10 协同版](configure-devices/device-restrictions-for-windows-10-team.md)
+#### [Android for Work](configure-devices/device-restrictions-for-afw.md)
 
 ### [配置电子邮件设置](configure-devices/how-to-configure-email-settings.md)
 #### [Android](configure-devices/email-profile-settings-for-android.md)
@@ -142,6 +151,7 @@
 #### [Windows 8.1 和 Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [配置 Windows 10 版本升级设置](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [配置 Windows 10 教育版设置](configure-devices/how-to-configure-education-settings.md)
 ### [配置 Windows 更新商业版设置](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [配置证书](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
@@ -159,6 +169,7 @@
 #### [macOS](configure-devices/custom-for-macos.md)
 #### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/custom-for-windows-10.md)
+#### [Android for Work](configure-devices/custom-android-for-work.md)
 
 ### [分配设备配置文件](configure-devices/how-to-assign-device-profiles.md)
 ### [监视设备配置文件](configure-devices/how-to-monitor-device-profiles.md)
