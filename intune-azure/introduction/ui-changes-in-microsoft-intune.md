@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
-ms.openlocfilehash: 791486a8d4cc490cd452ea9075fe323395635b5f
-ms.lasthandoff: 03/31/2017
+ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
+ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/31/2017
 我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 因此，我们创作了此参考指南，以满足那些非常熟悉经典控制台中的 Intune 并且想知道如何在 Azure 上的 Intune 中完成工作的用户。 如果本文未涵盖你正在查找的功能，请在文章末尾处留下评论，以便我们更新。
 ## <a name="quick-reference-guide"></a>快速参考指南
 | 功能 | 经典控制台中的路径 | Azure 上的 Intune 中的路径 ||------------||---------------|---------------|
-| 设备注册计划 (DEP) | 管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划 |[注册设备 > Apple 注册 > 注册计划令牌](#where-did-apple-dep-go) |
-| 设备注册计划 (DEP) | 管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划 |[注册设备 > Apple 注册 > 注册计划序列号](#where-did-apple-dep-go) |
-| 注册规则 |管理员 > 移动设备管理 > 注册规则 |[注册设备 > 注册限制](#where-did-enrollment-rules-go) |
-| 按 iOS 序列号排列的组 | 组 > 所有设备 > 企业预注册的设备 > 按 iOS 系列号排列 |[注册设备 > Apple 注册 > 注册计划序列号](#where-did-corporate-pre-enrolled-devices-go) |
-| 按 iOS 序列号排列的组 | 组 > 所有设备 > 企业预注册设备 > 按 iOS 序列号排列 |[注册设备 > Apple 注册 > AC 序列号](#where-did-corporate-pre-enrolled-devices-go)|
-| 按 IMEI 排列的组（所有平台）| 组 > 所有设备 > 企业预注册设备 > 按 IMEI 排列（所有平台）|[注册设备 > 企业设备标识符](#by-imei-all-platforms)|
-企业设备注册配置文件 | 策略 > 企业设备注册 |[注册设备 > Apple 注册 > 注册计划配置文件](#where-did-corporate-pre-enrolled-devices-go) |
-| 企业设备注册配置文件 | 策略 > 企业设备注册 |[注册设备 > Apple注册 > AC 配置文件](#where-did-corporate-pre-enrolled-devices-go) |
+| 设备注册计划 (DEP) | 管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划|[设备注册 > Apple 注册 > 注册计划令牌](#where-did-apple-dep-go) |
+| 设备注册计划 (DEP) | 管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划 |[设备注册 > Apple 注册 > 注册计划序列号](#where-did-apple-dep-go) |
+| 注册规则 |管理员 > 移动设备管理 > 注册规则|[设备注册 > 注册限制](#where-did-enrollment-rules-go) |
+| 按 iOS 序列号排列的组 | 组 > 所有设备 > 企业预注册的设备 > 按 iOS 系列号排列 |[设备注册 > Apple 注册 > 注册计划序列号](#where-did-corporate-pre-enrolled-devices-go) |
+| 按 iOS 序列号排列的组 | 组 > 所有设备 > 企业预注册设备 > 按 iOS 序列号排列| [设备注册 > Apple 注册 > AC 序列号](#where-did-corporate-pre-enrolled-devices-go)|
+| 按 IMEI 排列的组（所有平台）| 组 > 所有设备 > 企业预注册设备 > 按 IMEI 排列（所有平台）| [设备注册 > 企业设备标识符](#by-imei-all-platforms)|
+企业设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple 注册 > 注册计划配置文件](#where-did-corporate-pre-enrolled-devices-go) |
+| 企业设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple注册 > AC 配置文件](#where-did-corporate-pre-enrolled-devices-go) |
 
 
 ## <a name="where-do-i-manage-groups"></a>在哪个位置管理组？
