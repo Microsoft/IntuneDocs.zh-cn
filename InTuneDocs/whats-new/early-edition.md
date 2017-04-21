@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
-ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ Microsoft MyApps 现在在托管浏览器中具有更好的支持。 面向管�
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>托管浏览器和公司门户的新图标 <!--918433, 918431-->
 
-托管浏览器正在接收 Android 和 iOS 版本应用的更新图标。 新图标将包含更新的 Intune 徽章，使其与企业移动性 + 安全性 (EM+S) 中的其他应用更加一致。
+托管浏览器正在接收 Android 和 iOS 版本应用的更新图标。 新图标将包含更新的 Intune 徽章，使其与企业移动性 + 安全性 (EM+S) 中的其他应用更加一致。 你可以在 [Intune 应用 UI 页面中的新增内容](whats-new-in-intune-app-ui.md)上查看 Managed Browser 的新图标。
 
 公司门户还正在接收 Android、iOS 和 Windows 版本应用的更新图标，以提高与 EM + S 中其他应用的一致性。 这些图标将在 4 月至 5 月下旬逐渐发布。
 
@@ -59,7 +59,7 @@ Microsoft MyApps 现在在托管浏览器中具有更好的支持。 面向管�
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司门户中的登录进度指示器 <!--953374-->
 
-用户启动或恢复应用时，Android 公司门户应用的更新会显示进度指示器。 该指示器将依次显示新的状态，从“正在连接...”开始，然后“正在登录...”，最后“正在检查安全性要求...”，完成后即允许用户访问该应用。
+用户启动或恢复应用时，Android 公司门户应用的更新会显示进度指示器。 该指示器将依次显示新的状态，从“正在连接...”开始，然后“正在登录...”，最后“正在检查安全性要求...”，完成后即允许用户访问该应用。 你可以在 [Intune 应用 UI 页面中的新增内容](whats-new-in-intune-app-ui.md)上查看适用于 Android 的公司门户应用的新屏幕。 
 
 
 ## <a name="notices"></a>通知
@@ -175,11 +175,6 @@ Intune 将使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买�
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>同步 Apple VPP 应用商店的电子书 <!-- 800878 -->
 
 可以与 Intune 同步从 Apple 批量采购计划应用商店购买的书，并将其分配给用户。
-
-### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Samsung KNOX 标准版设备的共享班次辅助设备 <!-- 773753 -->
-
-你可以在 Intune 门户中将 Samsung KNOX 标准版设备配置为共享班次辅助设备。 设备处于共享模式后，设备上的应用、策略和电子邮件将与登录公司门户的用户的标识进行绑定。
-用户可以使用其 Azure Active Directory 凭据登录公司门户应用，并将其应用、策略和电子邮件设置自动应用于设备。
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Samsung KNOX 标准版设备的多用户管理 <!-- 971988 -->
 

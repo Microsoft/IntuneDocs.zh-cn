@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
-ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
-ms.lasthandoff: 03/25/2017
+ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
+ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -41,6 +41,7 @@ ms.lasthandoff: 03/25/2017
 - [需要关闭 USB 调试](you-need-to-turn-off-usb-debugging-android.md)
 - [需要打开“扫描安全威胁”](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [设备不符合最低安全修补程序](you-need-to-update-your-device-OS-security-patch-android.md)
+- [你的设备显示已加密，但公司门户应用另有说明](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [系统将提示你在 Android 设备上安装设备威胁防护应用](you-are-prompted-to-install-mtd-android.md)
 - [解除设备威胁防护应用在 Android 设备上发现的威胁](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 

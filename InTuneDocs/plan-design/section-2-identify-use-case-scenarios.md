@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
+ms.sourcegitcommit: 3c5744e7c1290bf9016bc03dcb2db9a1bd9f43dd
+ms.openlocfilehash: 031820d505e0e9cb007e47a5397934d0e505aed4
+ms.lasthandoff: 04/10/2017
 
 
 ---
@@ -47,7 +48,7 @@ ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
 
 -   Kiosk
 
-下面是几个用例和子用例场景示例。 还可利用下表输入组织的用例和子用例场景：
+下面是几个用例和子用例场景示例。 还可使用下表输入组织的用例和子用例场景：
 
 | **用例** | **子用例** |
 |:---:|:---:|
@@ -81,12 +82,7 @@ ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
 | BYOD | 信息工作者 | 营销、销售 | iOS |                                                           
 | BYOD | 高级管理人员 | 营销、销售 | iOS |
 
-## <a name="next-section"></a>下一节
+## <a name="next-steps"></a>后续步骤
 
 下一节提供[如何为每个用例场景确定 Intune 要求](section-3-determine-use-case-requirements.md)的相关指南。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

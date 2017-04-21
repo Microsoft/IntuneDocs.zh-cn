@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,23 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
-ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
+ms.lasthandoff: 04/12/2017
 
 
 ---
 
-# <a name="how-admins-get-support-for-microsoft-intune"></a>管理员如何获取对 Microsoft Intune 的支持
+# <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft 对 Microsoft Intune 提供全球技术、售前、帐单和订阅支持。 对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。 在线技术支持可通过英语和日语提供。 电话支持和联机帐单支持可使用其他语言。
 
 Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免费。 顶级支持客户需要支付程序问题（例如，如何配置 Intune 功能）方面的费用。
+
+>[!IMPORTANT]
+> 有关可与 Intune 协作、但不是由 Microsoft 提供的产品（例如 SaaSwedo、Cisco 或 Lookout）的技术支持，请首先与该产品的供应商联系，确保配置正确，然后再就你所遇到的问题与 Intune 支持联系以获取帮助。
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>在不创建支持票证的情况下寻求帮助
 
@@ -39,6 +42,13 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 提出问题或与 Microsoft 技术专家展开讨论！ 具有搜索功能的 [Microsoft Intune TechNet 论坛](https://social.technet.microsoft.com/Forums/home)提供答案和见解。
 
 ![Microsoft Intune TechNet 论坛](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>开始使用论坛
+
+1. 在论坛页的“论坛”框中输入 Microsoft Intune，然后从列表中选择它。<br>
+![Intune 论坛选择控件](./media/forum-select-intune.png)
+2. 现在，你可以在所选论坛列表中看到 Microsoft Intune。<br>
+![论坛控件中所选的 Intune](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 产品反馈网站
 
@@ -119,7 +129,7 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 - 情况会对业务产生中等程度的影响，并可在营业时间内得到处理。
 - 单一用户、客户或服务受到部分影响。
 
-对于专业客户的其他问题，会在&8; 小时内做出第一个响应。 对于顶级支持客户，响应时间根据支持协议而有所不同。 还有一种最不严重的情况，此时：
+对于专业客户的其他问题，会在 8 小时内做出第一个响应。 对于顶级支持客户，响应时间根据支持协议而有所不同。 还有一种最不严重的情况，此时：
 
 - 情况对业务的影响很小。
 - 问题很重要，但不会对客户的当前服务或工作效率产生明显影响。
