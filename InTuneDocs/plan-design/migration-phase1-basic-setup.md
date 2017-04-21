@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: b01b68b7587cb91f24285cdffafeab43296886e6
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fce3edb43a147491465d8a58d1a9a4f009fba55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ Intune 要求 Azure Active Directory (AAD) 作为标识和用户分组提供者�
 
 -   了解有关[规划用户和设备组](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups)的详细信息。
 
--   了解[如何创建用户和设备组](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
+-   了解[如何创建用户和设备组](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
 
 如果组织已在使用 Office 365，则 Intune 务必使用相同的 Azure Active Directory 环境。
 

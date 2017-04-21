@@ -15,8 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4c13eb3149ea0cc21604a5a05445cfccdc984293
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,15 +41,10 @@ Microsoft Intune 可以使用移动应用管理 (MAM) 策略帮助你保护组�
 ### <a name="additional-information"></a>其他信息:
 - 使用启用 MAM 的应用的[最终用户体验](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)。
 - [使用 Intune 准备适用于 MAM 的 LOB 应用](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- <a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners" target="_blank">Microsoft Intune 应用程序合作伙伴列表 &rarr;</a> 提供启用了 MAM 的应用。
+- <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">Microsoft Intune 应用程序合作伙伴列表 &rarr;</a> 提供启用了 MAM 的应用。
 
 ## <a name="what-should-i-do-next"></a>接下来我该怎么办？
 [从非 Microsoft MDM 解决方案迁移到 Microsoft Intune](/intune/deploy-use/migrate-to-intune)
 
 [在 Intune MDM 中注册设备](/intune/deploy-use/enroll-devices-in-microsoft-intune)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

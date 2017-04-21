@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/21/2017
 
 在配置 SharePoint Online 的条件性访问策略**之前**，必须：
 - 具有 **SharePoint Online 订阅**，并且用户必须获得 SharePoint Online 许可。
-- 具有**企业移动性 + 安全性 (EMS) 订阅**或 **Azure Active Directory (Azure AD) Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+- 具有**企业移动性 + 安全性 (EMS) 订阅**或 **Azure Active Directory (Azure AD) Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 
   若要连接到所需文件，设备必须：
@@ -60,10 +60,10 @@ ms.lasthandoff: 02/21/2017
 
 -   如果设备不合规，则会显示一条消息，将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站，用户可从中找到有关问题及其修正方法的信息。
 
-**条件访问不会应用于外部共享**。 若要了解如何在租户或站点集合中阻止外部共享，请参阅[管理您的 SharePoint Online 环境的外部共享](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)。
+**条件访问不会应用于外部共享**。 若要了解如何在租户或站点集合中阻止外部共享，请参阅[管理您的 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)。
 
 >[!NOTE]
->如果启用 SharePoint Online 的条件访问，建议你禁用列表上的域，如 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) 主题中所述。  
+>如果启用 SharePoint Online 的条件访问，建议你禁用列表上的域，如 [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx) 主题中所述。  
 
 ## <a name="support-for-mobile-devices"></a>对移动设备的支持
 支持以下设备：
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/21/2017
 > [!NOTE]
 >若要使用 Windows 10 电脑的条件访问，必须使用 Windows 10 周年更新更新电脑。
 
-  - 必须将已加入域的电脑设置为[自动注册](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/)到 Azure Active Directory。 Azure AD 设备注册服务将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 设备注册服务的用户不会在本地 Active Directory 上看到已注册的设备。
+  - 必须将已加入域的电脑设置为[自动注册](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)到 Azure Active Directory。 Azure AD 设备注册服务将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 设备注册服务的用户不会在本地 Active Directory 上看到已注册的设备。
 
   - 如果策略设置为要求加入域，而电脑未加入域，则会显示一条消息，要求与 IT 管理员联系。
 
@@ -93,7 +93,7 @@ ms.lasthandoff: 02/21/2017
   >[!NOTE]
   >运行 Intune 计算机客户端的电脑不支持条件访问。
 
-[Office 365 新式验证必须已启用](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，并且具有所有最新的 Office 更新。
+[Office 365 新式验证必须已启用](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，并且具有所有最新的 Office 更新。
 
 新式验证将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Office 2013 Windows 客户端中，并实现诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。
 
@@ -130,7 +130,7 @@ ms.lasthandoff: 02/21/2017
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> 还可在 Azure AD 管理控制台中为 Intune 设备创建条件访问策略，该策略在 Azure AD 中称为“基于设备的条件访问策略”。 此外，可创建其他条件访问策略，如多重身份验证。 还可为 Azure AD 支持的第三方企业应用（如 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将 Azure Active Directory 针对访问控制的基于设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
+> 还可在 Azure AD 管理控制台中为 Intune 设备创建条件访问策略，该策略在 Azure AD 中称为“基于设备的条件访问策略”。 此外，可创建其他条件访问策略，如多重身份验证。 还可为 Azure AD 支持的第三方企业应用（如 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将 Azure Active Directory 针对访问控制的基于设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
 
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件访问” > “SharePoint Online 策略”。

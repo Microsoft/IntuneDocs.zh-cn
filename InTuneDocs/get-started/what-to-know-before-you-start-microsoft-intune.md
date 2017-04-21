@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 61851f7669e9a5c3a192b2eda344fcde9c4fa3e6
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +67,7 @@ Intune 设备管理提供[这些功能](mobile-device-management-capabilities-in
 |**公司门户网站**     |**在移动设备上：**使用每个受支持平台的默认 Web 浏览器   <br /><br />**在 Windows 电脑上：**使用 Internet Explorer 10 或更高版本，或 Microsoft Edge<br /><br />**在 Mac OS X 10.9 或更高版操作系统的计算机上：**使用 Apple Safari    |
 
 > [!Note]
-> 管理控制台不支持 Microsoft Edge 浏览器和移动浏览器，因为它们不支持 [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx)。 Intune 控制台会在一段时间内脱离 Silverlight 体验；最终，所有 Intune 的移动设备和应用程序管理功能将[提供在新的 Microsoft Azure 门户中](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/)。
+> 管理控制台不支持 Microsoft Edge 浏览器和移动浏览器，因为它们不支持 [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx)。 Intune 控制台会在一段时间内脱离 Silverlight 体验；最终，所有 Intune 的移动设备和应用程序管理功能将[提供在新的 Microsoft Azure 门户中](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/)。
 
 
 只有拥有服务管理员权限或者身份是具有全局管理员角色的租户管理员的用户才能登录到此门户。 要访问管理控制台，你的帐户必须具有使用 Intune 的许可证，并且登录状态为“已允许”。

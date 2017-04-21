@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 86062a73092f6e438de7a315d9ec1c2f395c9c50
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,22 +49,17 @@ ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
 3. 选择“添加域”，然后键入你的自定义域名。
 
 4. “验证域”对话框将打开，为你提供用于在 DNS 托管提供者中创建 TXT 记录的值。
-    - **GoDaddy 用户**：Office 365 管理门户会将你重定向到 GoDaddy 的登录页。 输入你的凭据并接受域更改权限协议后，自动创建 TXT 记录。 你还可以[创建 TXT 记录](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US)。
-    - **Register.com 用户**：按照[分步说明](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify)创建 TXT 记录。
+    - **GoDaddy 用户**：Office 365 管理门户会将你重定向到 GoDaddy 的登录页。 输入你的凭据并接受域更改权限协议后，自动创建 TXT 记录。 你还可以[创建 TXT 记录](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a)。
+    - **Register.com 用户**：按照[分步说明](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify)创建 TXT 记录。
 
     > [!TIP]
     > 在 DNS 托管提供者中进行更改时，确保为 [Windows 设备注册](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)创建 DNS 别名 (CNAME)。
 
-也可在 [Azure Active Directory 中执行](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/)添加和验证自定义域的步骤。
+也可在 [Azure Active Directory 中执行](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)添加和验证自定义域的步骤。
 
-可了解更多[关于 Office 365 中的初始 onmicrosoft.com 域](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)的信息
+可了解更多[关于 Office 365 中的初始 onmicrosoft.com 域](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)的信息
 
 >[!div class="step-by-step"]
 
 >[&larr;**登录到 Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**将用户添加到 Intune**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

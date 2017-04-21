@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 - Windows 10
 
 >[!NOTE]
->从版本 1703 开始，无需注册方案便可在 MAM 中为 Windows 10 设备定义应用保护策略。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+>从版本 1703 开始，无需注册方案便可在 MAM 中为 Windows 10 设备定义应用保护策略。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 
 ##  <a name="supported-apps"></a>受支持的应用
 * **Microsoft 应用：**这些应用内置有 Intune 应用 SDK，且无需进一步处理就可应用应用保护策略。
-若要查看受支持的 Microsoft 应用的完整列表，请转到 Microsoft Intune 应用程序合作伙伴页上的 [Microsoft Intune 移动应用程序库](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)。 单击应用可查看支持的方案和平台以及查看应用是否支持多个标识。
+若要查看受支持的 Microsoft 应用的完整列表，请转到 Microsoft Intune 应用程序合作伙伴页上的 [Microsoft Intune 移动应用程序库](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 单击应用可查看支持的方案和平台以及查看应用是否支持多个标识。
 
 * **组织的业务线应用：**必须准备这些应用以包含 Intune App SDK，才可应用应用保护策略。
 
@@ -76,7 +76,7 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 ## <a name="prerequisites"></a>先决条件
 
 -   **Microsoft Intune 订阅**。 用户需要 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证以获取具有应用保护策略的应用。
-如果当前使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来管理设备，那么你已经具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。 如果你已购买企业移动性套件 (EMS) 许可证，那么你还具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。 如果要试用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来检查 MAM 功能，可在 [Microsoft Intune 页面](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)上获取试用帐户。
+如果当前使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来管理设备，那么你已经具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。 如果你已购买企业移动性套件 (EMS) 许可证，那么你还具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。 如果要试用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来检查 MAM 功能，可在 [Microsoft Intune 页面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)上获取试用帐户。
 
     若要验证是否具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅，请在 Office 门户中转到“帐单”页面。  如果拥有订阅，应可以看到在订阅中 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 显示为“活动”状态。
 
@@ -98,13 +98,13 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 
 1.  使用管理员凭据登录到 [Office 门户](http://portal.office.com)。
 
-2.  按照 [Intune 评估指南](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)的**完成 30 天 Intune 评估的步骤**部分所述，添加用户，然后分配 Intune 许可证。 若要赋予用户访问 Office 门户、Azure AD 门户和 Azure 门户的权限，请将“**全局管理员**”角色分配给此用户。
+2.  按照 [Intune 评估指南](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)的**完成 30 天 Intune 评估的步骤**部分所述，添加用户，然后分配 Intune 许可证。 若要赋予用户访问 Office 门户、Azure AD 门户和 Azure 门户的权限，请将“**全局管理员**”角色分配给此用户。
 
-5.  应用保护策略已部署到 Azure Active Directory 中的用户组。 若要创建应用保护策略的用户组，请按照[创建用于组织评估订阅用户和设备的组](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3)的**创建用户组**部分所述，创建用户组。
+5.  应用保护策略已部署到 Azure Active Directory 中的用户组。 若要创建应用保护策略的用户组，请按照[创建用于组织评估订阅用户和设备的组](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3)的**创建用户组**部分所述，创建用户组。
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>向非全局管理员用户分配角色
 
-全局管理员具有访问 [Azure 门户](https://portal.azure.com)的权限。  如果希望非全局管理员用户能够配置策略和执行其他移动应用管理任务，请参阅[使用角色分配管理 Azure 订阅资源的访问](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/)文章。
+全局管理员具有访问 [Azure 门户](https://portal.azure.com)的权限。  如果希望非全局管理员用户能够配置策略和执行其他移动应用管理任务，请参阅[使用角色分配管理 Azure 订阅资源的访问](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/)文章。
 
 ## <a name="next-steps"></a>后续步骤
 [使用 Microsoft Intune 创建和部署应用保护策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

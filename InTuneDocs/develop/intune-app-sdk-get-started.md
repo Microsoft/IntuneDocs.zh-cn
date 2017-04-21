@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dc059b2865cef32091582b0f0d2a2ced8b35e8fa
-ms.openlocfilehash: 55e4be001c3ff946b8a63291ed9227bc3d185001
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 95c12111693e00fb6f67d20464dd159aeb4bb609
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,14 +38,14 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 则_**必须**_首先向 Microsoft Intune 注册应用并同意注册条款。 然后，IT 管理员可将应用保护策略应用到启用的应用，该应用将被列为 Intune 应用合作伙伴。
 
-除非已完成注册并已由 Microsoft Intune 团队确认，否则 Intune 管理员不能向应用深层链接应用应用保护策略。 Microsoft 还会将你的应用添加到其 [Microsoft Intune 合作伙伴页](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)。 在该页面中，将显示应用的图标，表明它支持 Intune 应用保护策略。
+除非已完成注册并已由 Microsoft Intune 团队确认，否则 Intune 管理员不能向应用深层链接应用应用保护策略。 Microsoft 还会将你的应用添加到其 [Microsoft Intune 合作伙伴页](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 在该页面中，将显示应用的图标，表明它支持 Intune 应用保护策略。
 
 若要开始注册过程，请填写 [Microsoft Intune 应用合作伙伴调查表](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)。
 
 我们将使用调查表答复中列出的电子邮件地址来联系你并继续注册过程。 此外，如果我们有任何问题，我们会使用你的注册电子邮件地址与你联系。
 
 > [!NOTE]
-> 在调查表中以及通过与 Microsoft Intune 团队的电子邮件通信收集到的所有信息都会遵循 [Microsoft 隐私声明](https://www.microsoft.com/en-us/privacystatement/default.aspx)。
+> 在调查表中以及通过与 Microsoft Intune 团队的电子邮件通信收集到的所有信息都会遵循 [Microsoft 隐私声明](https://www.microsoft.com/privacystatement/default.aspx)。
 
 **注册过程中会出现的情况**：
 
@@ -52,7 +53,7 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 2. 接收到所有必要信息后，我们将发送 Microsoft Intune 应用合作伙伴协议供你签名。 此协议描述了你的公司在成为 Microsoft Intune 应用合作伙伴之前必须接受的条款。
 
-3. 向 Microsoft Intune 服务成功注册应用后以及在 [Microsoft Intune 合作伙伴](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)站点上推荐你的应用时会予以通知。
+3. 向 Microsoft Intune 服务成功注册应用后以及在 [Microsoft Intune 合作伙伴](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)站点上推荐你的应用时会予以通知。
 
 4. 最后，会将你的应用的深层链接添加到下个月的 Intune 服务更新中。 例如，如果注册信息在七月完成，则会在八月中旬支持深层链接。
 
@@ -137,9 +138,4 @@ Microsoft Intune 收集应用的使用情况统计数据。
 * 一个图像处理应用程序，可读取 **.eps** 文件，或一个 Adobe 应用程序，可以读取 **.ai** 文件。
 
 * 可在 Microsoft Intune GitHub 上找到 [Intune 应用标记资产和指导原则](https://github.com/msintuneappsdk/intune-app-partner-badge)。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

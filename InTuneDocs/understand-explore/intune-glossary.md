@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |电子邮件配置文件|此策略可用于为移动设备上的特定电子邮件客户端设置[电子邮件访问设置](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)，最大限度地减少最终用户需要进行的设置。|
-|EMS|Microsoft 企业移动性 + 安全性（以前称为企业移动性套件）在确保用户可[访问所需应用和内容](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility)的同时，可保护公司数据。|
+|EMS|Microsoft 企业移动性 + 安全性（以前称为企业移动性套件）在确保用户可[访问所需应用和内容](https://www.microsoft.com/cloud-platform/enterprise-mobility)的同时，可保护公司数据。|
 |最终用户|使用 Intune 管理的[手机和电脑等设备的用户](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。|
 |注册|Microsoft Intune 使用[注册](/intune/deploy-use/enroll-devices-in-microsoft-intune)将设备纳入管理并允许访问资源。|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |远程锁定|一项 Intune 功能，即使设备不属于你，也可以使用此功能[锁定受支持的设备](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune)。|
 |Reports|Intune 提供一系列[内置报表](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports)，可提供所管理设备的有关信息。|
 |“必需安装”|使用此操作部署应用时，[无需用户介入](/intune/deploy-use/deploy-apps)就可将其安装在设备上（尽管对于某些平台，最终用户可能必须接受该安装）。|
-|要求|一项[应用部署操作](/en-us/intune/deploy-use/add-apps)，安装应用前，可借助此操作选择必须满足的设备要求。 例如，可以在安装应用前指定必须安装的 iOS 操作系统的版本。|
+|要求|一项[应用部署操作](/intune/deploy-use/add-apps)，安装应用前，可借助此操作选择必须满足的设备要求。 例如，可以在安装应用前指定必须安装的 iOS 操作系统的版本。|
 
 ## <a name="s"></a>S
 |||

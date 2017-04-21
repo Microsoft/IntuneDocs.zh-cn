@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 8e8257a426bd6b9a99e21e928b08c84f162d5da3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 5975ba0219f464c8f5aa1735657ff3d1c186b991
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,7 +30,7 @@ Microsoft Intune 是一项基于云的服务，有助于管理运行 Windows、M
 
 Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 载入权益允许你与 Microsoft 专家远程合作，以便使你的 Intune 环境可供使用。 有关载入权益的详细信息，请参阅 [Microsoft Intune 载入权益说明](http://go.microsoft.com/fwlink/?LinkId=619281)。
 
-可以通过包含 100 个用户许可证的 30 天免费试用版开始使用 Intune。 若要开始免费试用，[请转到 Intune 注册页面](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)。 如果组织有企业协议或等效的批量许可协议，请与 Microsoft 代表联系以设置免费试用版。
+可以通过包含 100 个用户许可证的 30 天免费试用版开始使用 Intune。 若要开始免费试用，[请转到 Intune 注册页面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)。 如果组织有企业协议或等效的批量许可协议，请与 Microsoft 代表联系以设置免费试用版。
 
 > [!NOTE]
 > 如果你的组织已有 Microsoft Online Services 工作或学校帐户，并且你有可能会在试用期结束后继续在生产中使用此 Intune 订阅，请选择该页上的“登录”选项，并使用组织的全局管理员帐户进行身份验证。 此操作将确保你的 Intune 试用版链接到你的现有工作或学校帐户。
@@ -69,13 +70,13 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 -**Intune 独立配置。** 使用 Intune 中基于 Web 的管理控制台来管理组织中的设备。 可以在没有任何本地 IT 基础结构的情况下使用 Intune。 如果将 Intune 与 Active Directory 域服务一起使用，则可以将使用域服务管理的域用户帐户用于 Intune。
 
--**Intune 与 System Center Configuration Manager。** 使用 Configuration Manager 管理控制台来管理企业中的计算机和移动设备。 此配置有助于通过单一控制台（Configuration Manager 管理控制台）管理组织的所有设备。 Configuration Manager 支持大量的移动设备、服务器和计算机。 有关 Configuration Manager 的详细信息，请参阅[使用 System Center Configuration Manager 和 Microsoft Intune 的混合移动设备管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。 有关确定哪种方法最适合你的更多帮助，请参阅[在 Microsoft Intune 独立版和带 Configuration Manager 的混合移动设备管理之间选择](https://technet.microsoft.com/en-us/library/mt706478.aspx)。
+-**Intune 与 System Center Configuration Manager。** 使用 Configuration Manager 管理控制台来管理企业中的计算机和移动设备。 此配置有助于通过单一控制台（Configuration Manager 管理控制台）管理组织的所有设备。 Configuration Manager 支持大量的移动设备、服务器和计算机。 有关 Configuration Manager 的详细信息，请参阅[使用 System Center Configuration Manager 和 Microsoft Intune 的混合移动设备管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)。 有关确定哪种方法最适合你的更多帮助，请参阅[在 Microsoft Intune 独立版和带 Configuration Manager 的混合移动设备管理之间选择](https://technet.microsoft.com/library/mt706478.aspx)。
 
 
 ## <a name="learn-more-about-intune"></a>了解有关 Intune 的详细信息
 使用以下资源可了解有关 Intune 的详细信息：
 
-- [Microsoft Intune 信任中心](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)提供了有关 Intune 的安全性、隐私和合规性实践的信息，并介绍了 Intune 的一些证书。
+- [Microsoft Intune 信任中心](https://www.microsoft.com/server-cloud/products/intune-trust-center/)提供了有关 Intune 的安全性、隐私和合规性实践的信息，并介绍了 Intune 的一些证书。
 
 - [Microsoft Intune 的已注册设备管理功能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
@@ -84,9 +85,4 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 [System Center 2012 Configuration Manager 的文档库](https://technet.microsoft.com/library/gg682041.aspx)
 
 [Microsoft Intune 新增功能](/intune/deploy-use/whats-new-in-microsoft-intune)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
     > 目前，如果你的组包括特定安全组或管理员组中的成员，同时排除某些组中的成员将删除最初包括的成员。 若要创建既有包含成员又有排除成员的组，建议先创建具有包含成员的父组。 然后为该父组创建子组。 在新建子组中，列出排除成员。 然后，使用该子组管理 Intune 策略、配置文件和应用分发。
 
     > [!NOTE]
-    > 在 Azure 门户中，可基于用户的直接管理员创建组。 此类组为动态组，当向 Azure Active Directory 中的管理者团队添加或从中删除员工时，该组将随之变化。 在**将组配置为“管理员”组**部分，[使用属性创建高级规则](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)介绍了如何基于管理员名称创建 Azure 组。
+    > 在 Azure 门户中，可基于用户的直接管理员创建组。 此类组为动态组，当向 Azure Active Directory 中的管理者团队添加或从中删除员工时，该组将随之变化。 在**将组配置为“管理员”组**部分，[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)介绍了如何基于管理员名称创建 Azure 组。
 
 4.  在“定义直属成员资格”页上，选择“浏览”，选择要包含或排除的单独用户。 如果选择的用户不在指定的父组中，这些设备将自动添加到父组。 “手动添加用户”选项位于“选择成员”对话框的底部。 如果你想要添加尚无已注册设备的用户，可使用此选项。
 
@@ -151,9 +152,4 @@ ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
 
 > [!NOTE]
 > 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

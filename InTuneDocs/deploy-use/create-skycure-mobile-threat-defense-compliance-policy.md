@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3a7322bd389b6d2ca72108b9f54318000857895b
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: a2597a43e48d8cdde6c29070986528dcba473d8e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/22/2017
 
 包含 Skycure 设备威胁防护的符合性策略的先决条件：
 
--   [使用 Intune 设置 Skycure 集成](https://docs.microsoft.com/en-us/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [使用 Intune 设置 Skycure 集成](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 -   [在 Intune 中启用 Skycure 连接](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 

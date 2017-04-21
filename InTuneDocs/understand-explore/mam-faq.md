@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7447a85e03e38aa0f536ce008bae9f3c82528cec
-ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
 **什么是 MAM？** [Intune 移动应用程序管理](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md)指的是 Intune 管理功能套件，通过它能够为用户发布、推送、配置、保护、监视和更新移动应用。
 
-**使用 MAM 应用保护有什么好处？** MAM 可保护应用程序内组织的数据。 通过 MAM-WE，可以在几乎任何设备上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。 许多生产型应用，例如 Microsoft Office 应用，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)的官方列表。
+**使用 MAM 应用保护有什么好处？** MAM 可保护应用程序内组织的数据。 通过 MAM-WE，可以在几乎任何设备上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。 许多生产型应用，例如 Microsoft Office 应用，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
 
 **MAM 支持哪些设备配置？** Intune MAM 支持两种配置：
   1. **Intune MDM + MAM**：这是首次启动 MAM 时它所支持的第一个配置。 IT 管理员仅可在已进行 Intune 移动设备管理 (MDM) 注册的设备上使用 MAM 和应用保护策略管理应用。 若要使用 MDM + MAM 管理应用，客户应使用 http://manage.microsoft.com 上的 Intune 独立控制台。
@@ -48,7 +49,7 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>可使用应用保护策略进行管理的应用
 
-**可通过应用保护策略管理哪些应用？** 已通过 [Intune App SDK](../develop/intune-app-sdk.md) 启用的或通过 [Intune 应用包装工具](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)包装的任何应用都可使用 Intune 应用保护策略进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)的官方列表。
+**可通过应用保护策略管理哪些应用？** 已通过 [Intune App SDK](../develop/intune-app-sdk.md) 启用的或通过 [Intune 应用包装工具](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)包装的任何应用都可使用 Intune 应用保护策略进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
 
 **在 Intune 启用的应用上使用应用保护策略的基本要求有哪些？**
   1. 最终用户必须具有 Azure Active Directory (AAD) 帐户。 请参阅[添加用户并授予对 Intune 的管理权限](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)，了解如何在 Azure Active Directory 中创建 Intune 用户。
@@ -59,18 +60,18 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
   4. 最终用户必须使用其 AAD 帐户登录到应用。
 
-**使用 [Outlook 移动应用](https://www.microsoft.com/en-us/outlook-com/mobile/)有什么其他要求？**
+**使用 [Outlook 移动应用](https://www.microsoft.com/outlook-com/mobile/)有什么其他要求？**
 
   1. 最终用户必须将 Outlook 移动应用安装到其设备上。
 
-  2. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 Exchange Online](https://products.office.com/en-us/exchange/exchange-online) 邮箱和许可证。
+  2. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) 邮箱和许可证。
 
   >[!NOTE]
   > Outlook 移动应用当前仅支持 Microsoft Exchange Online，不支持 Exchange 内部部署或 Office 365 Dedicated 中的 Exchange。
 
 **使用 [Word、Excel 和 PowerPoint](https://products.office.com/business/office) 应用有什么其他要求？**
 
-  1. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用和 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US)可在 [Office 门户](http://portal.office.com)中分配 Office 365 许可证。
+  1. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用和 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)可在 [Office 门户](http://portal.office.com)中分配 Office 365 许可证。
 
   2. 最终用户必须将 [OneDrive](https://onedrive.live.com/about/) 应用安装到其设备上并使用 AAD 帐户进行登录。
 
@@ -109,7 +110,7 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
   2. **对哪些内容进行加密？** 根据 IT 管理员的应用保护策略，仅对标记为“公司”的数据进行加密。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。 对于由 Intune 应用包装工具启用的业务线应用，所有应用数据都会被视为“公司”数据。
 
-**Intune 如何远程擦除数据？** Intune 能够使用&3; 种不同方式擦除应用数据：完全设备擦除、MDM 选择性擦除和 MAM 选择性擦除。 有关 MDM 远程擦除的详细信息，请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)。 有关使用 MAM 的选择性擦除的详细信息，请参阅[使用 Microsoft Intune 擦除托管公司应用数据](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
+**Intune 如何远程擦除数据？** Intune 能够使用 3 种不同方式擦除应用数据：完全设备擦除、MDM 选择性擦除和 MAM 选择性擦除。 有关 MDM 远程擦除的详细信息，请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)。 有关使用 MAM 的选择性擦除的详细信息，请参阅[使用 Microsoft Intune 擦除托管公司应用数据](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
   1. **什么是完全擦除？** [完全擦除](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)会通过将设备还原到其出厂默认设置，从**设备**中删除所有用户数据和设置。 设备从 Intune 删除。
   >[!NOTE]
@@ -140,9 +141,4 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 - [验证移动应用管理设置](../deploy-use/validate-mobile-application-management.md)
 - [准备好使用 Microsoft Intune 配置移动应用管理策略](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [如何获取对 Microsoft Intune 的支持](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

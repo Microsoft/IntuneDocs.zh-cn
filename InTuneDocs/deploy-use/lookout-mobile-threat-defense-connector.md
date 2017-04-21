@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: dfed1ece238210e8b98934d8add7dbb9b0f1c1fb
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 47645e1f133b172d059f849e2f73e59e115046c6
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 ## <a name="supported-platforms"></a>受支持的平台：
 在 Intune 中注册时，Lookout 支持以下平台：
 * **Android 4.1 及更高版本**
-* **iOS 8 及更高版本** 有关平台和语言支持的其他相关信息，请访问 [Lookout 网站](https://personal.support.lookout.com/hc/en-us/articles/114094140253)。
+* **iOS 8 及更高版本** 有关平台和语言支持的其他相关信息，请访问 [Lookout 网站](https://personal.support.lookout.com/hc/articles/114094140253)。
 
 ## <a name="prerequisites"></a>先决条件：
 * Microsoft Intune 订阅

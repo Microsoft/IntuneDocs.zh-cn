@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 029b5c4c011ddf3ff7dbb06c55b48ef0c18c725e
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: dcd876e31d3b5c65d27f317aab1582da1a883646
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -55,9 +55,9 @@ ms.lasthandoff: 03/17/2017
     - [macOS 设置](custom-for-macos.md)
     - [Windows Phone 8.1 设置](custom-for-windows-phone-8-1.md)
     - [Windows 10 设置](custom-for-windows-10.md)
+    - [Android for Work 设置](custom-android-for-work.md)
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
 将创建配置文件并在“配置文件列表”边栏选项卡上显示。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](how-to-assign-device-profiles.md)。
-
 

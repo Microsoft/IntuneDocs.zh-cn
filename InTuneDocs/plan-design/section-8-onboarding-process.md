@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,7 +62,7 @@ ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
 
 如之前的要求部分所确定的一样，EMS 或 Intune 订阅是必需的。 如果组织没有 EMS 或 Intune 订阅，请联系 Microsoft 或 Microsoft 帐户团队表明想要购买企业移动性 + 安全 (EMS) 或 Intune 的意愿。
 
--   了解有关[如何购买 Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) 的详细信息。
+-   了解有关[如何购买 Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) 的详细信息。
 
 #### <a name="task-2-add-office-365-subscription"></a>任务 2：添加 Office 365 订阅
 
@@ -115,7 +116,7 @@ Microsoft Intune 支持电子邮件、Wi-Fi 和 VPN 配置文件。 在 Intune �
 
 Microsoft Intune 支持 Web、LOB 和公共应用商店应用的部署。 此外，支持管理通过与 MAM 策略相关联集成 Intune SDK 的应用。 在 Intune 管理门户的“应用”工作区中完成添加和部署应用。 在 Intune 管理门户的“策略”工作区中完成添加 MAM 策略。 根据 Intune 部署用例和要求，适当地添加应用，并将其部署到目标组。
 
--   了解有关[添加和部署应用程序](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps)的详细信息。
+-   了解有关[添加和部署应用程序](https://docs.microsoft.com/intune/deploy-use/deploy-apps)的详细信息。
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>任务 11： 添加和部署合规性策略
 
@@ -141,9 +142,4 @@ Intune 支持 iOS、Mac OS、Android、Windows 桌面版和 Windows Mobile 设�
 ## <a name="next-section"></a>下一节
 
 下一节提供[测试和验证 Intune 部署](section-9-test-and-validation.md)的相关指南。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

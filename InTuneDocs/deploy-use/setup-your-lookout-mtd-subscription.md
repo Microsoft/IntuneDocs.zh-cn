@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 074af85385a843bd5fac9747abf0209a3ba92b9c
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 60dbfa644a53fec3823e1182f5dec7eb97d8b5df
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -55,12 +55,12 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 
 1. 登录到 [Azure AD 管理门户](https://manage.windowsazure.com)，然后选择订阅。 
   ![显示租户名称的 Azure AD 页面的屏幕快照](../media/mtp/aad_tenant_name.png)
-2. 选择订阅名称时，所生成的 URL 包括订阅 ID。  如果查找订阅 ID 时遇到任何问题，请参阅 [Microsoft 支持文章](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US)获取有关查找订阅 ID 的提示。 
+2. 选择订阅名称时，所生成的 URL 包括订阅 ID。  如果查找订阅 ID 时遇到任何问题，请参阅 [Microsoft 支持文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)获取有关查找订阅 ID 的提示。 
 3. 查找 Azure AD 组 ID。 Lookout 控制台支持 2 个级别的访问：  
   * **完全访问：**Azure AD 管理员可创建具有完全访问权限的用户组，还可创建具有受限访问权限的用户组。  仅这两个组的用户可登录到 **Lookout 控制台**。
   * **受限访问：**该组中的用户无法访问 Lookout 控制台的某些配置和注册相关模块，可对 Lookout 控制台的“安全策略”模块进行只读访问。  
 
-  有关各种权限的详细信息，请参阅 Lookout 网站上的[这篇文章](https://personal.support.lookout.com/hc/en-us/articles/114094105653)。
+  有关各种权限的详细信息，请参阅 Lookout 网站上的[这篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
 
   “组对象 ID”位于“Azure AD 管理控制台”的组“属性”页。
 
@@ -127,7 +127,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 ![显示用户帐户的“首选项”页面屏幕截图](../media/mtp/lookout-mtp-email-notifications.png) 如果希望不再收到通知，请将通知设置为“关闭”并保存修改。
 
 ### <a name="configure-threat-classification"></a>配置威胁分类
-Lookout 移动威胁防御将移动威胁分为多种类型。 [Lookout 威胁分类](http://personal.support.lookout.com/hc/en-us/articles/114094130693)关联了默认威胁等级。 可随时对其进行修改，以满足公司需求。
+Lookout 移动威胁防御将移动威胁分为多种类型。 [Lookout 威胁分类](http://personal.support.lookout.com/hc/articles/114094130693)关联了默认威胁等级。 可随时对其进行修改，以满足公司需求。
 
 ![显示威胁和分类的“策略”页面屏幕截图](../media/mtp/lookout-mtp-threat-classification.png)
 
@@ -137,5 +137,5 @@ Lookout 移动威胁防御将移动威胁分为多种类型。 [Lookout 威胁�
 ## <a name="watching-enrollment"></a>监视注册
 此步骤完成后，Lookout 移动威胁防御将开始轮询 Azure AD，查找与指定注册组相对应的设备。  可在“设备”模块查看有关已注册设备的信息。  设备的初始状态显示为“待定”。  在设备上安装、打开和激活 Lookout for Work 应用后，设备状态将发生改变。  有关如何将 Lookout for Work 应用推送到设备的详细信息，请参阅[配置并部署 Lookout for Work 应用](configure-and-deploy-lookout-for-work-apps.md)主题。
 ## <a name="next-steps"></a>后续步骤
-[启用 Lookout MTP 连接 Intune](enable-lookout-mtp-connection-in-intune.md)
+[启用 Lookout MTP 连接 Intune](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
 

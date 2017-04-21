@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 178fbaeb1d3235a81cb4da49b7a955f6999c49a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 17fa23f1d04e22a2cb10452fe3a9425f7482a6de
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -80,7 +80,7 @@ Intune App SDK 需要具有三个 [Android 系统权限](https://developer.andro
 
 * `android.permission.USE_CREDENTIALS`
 
-Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) 需要这些权限以执行代理身份验证。 如果未对应用授予这些权限或权限被用户废除，则将禁用需要代理（公司门户应用）的身份验证流。
+Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要这些权限以执行代理身份验证。 如果未对应用授予这些权限或权限被用户废除，则将禁用需要代理（公司门户应用）的身份验证流。
 
 
 ###<a name="company-portal-app"></a>公司门户应用

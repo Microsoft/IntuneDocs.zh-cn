@@ -14,9 +14,9 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9a988945c499c3145208b86d6832d02c28136ece
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,8 +43,8 @@ ms.lasthandoff: 01/05/2017
 ## <a name="whats-not-covered"></a>不包含的内容
 |如果感兴趣 |阅读本文 |
 |------------------------|----------|
-|非测试环境中的 MDM | [入门](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|使用 Intune 和 System Center Configuration Manager 的 MDM | [混合移动设备管理](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|非测试环境中的 MDM | [入门](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|使用 Intune 和 System Center Configuration Manager 的 MDM | [混合移动设备管理](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 由于上述指南可帮助在生产环境中设置 Intune，因此相较评估指南而言，这些指南内容更多，提供工作所需的更多决策点。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 01/05/2017
 
 如果使用 Intune 独立版本（由于此试用版假设正在或即将使用 Intune 作为企业移动性 + 安全性 (EMS) 订阅的一部分），需要将 Intune 设置为移动设备管理机构。 也就是说，指定 Intune 作为用于在组织内部管理移动设备的服务。
 
-希望使用 Intune 和 System Center Configuration Manager 来管理移动设备的客户需要决定是否使用 Intune 或 Configuration Manager 作为其移动设备管理机构。 这是生产环境中需要制定的一项重要决策，因为一旦设置，当前将很难更改，这超出了本评估指南的范围。 要深入了解将 Intune 或 Configuration Manager 设置为 MDM 机构的意义，请参阅[在独立的 Intune 与混合移动设备管理之间进行选择](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
+希望使用 Intune 和 System Center Configuration Manager 来管理移动设备的客户需要决定是否使用 Intune 或 Configuration Manager 作为其移动设备管理机构。 这是生产环境中需要制定的一项重要决策，因为一旦设置，当前将很难更改，这超出了本评估指南的范围。 要深入了解将 Intune 或 Configuration Manager 设置为 MDM 机构的意义，请参阅[在独立的 Intune 与混合移动设备管理之间进行选择](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
 
 对于试用版，将 Intune 设置为 MDM 机构，这不会影响生产环境，除非决定在生产环境中使用试用版。
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 01/05/2017
 3.    **将 APNs 证书添加到 Intune**<BR/>
 在 Microsoft Intune 管理控制台中，转到“管理” > “移动设备管理” > “iOS 和 Mac OS X” > “上传 APNs 证书”，然后选择“上传 APNs 证书”。 转到证书 (.pem) 文件，选择“打开”，然后输入 Apple ID。 使用 APNs 证书， Intune 可通过将策略推送到已注册的移动设备注册并管理 iOS 设备。
 4.    **告诉用户如何注册其设备以获取对公司资源的访问权限。**<br/>
-有关最终用户注册说明，请参阅[在 Intune 中注册 iOS 设备](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios)和[在 Intune 中注册 Mac OS X 设备](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
+有关最终用户注册说明，请参阅[在 Intune 中注册 iOS 设备](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios)和[在 Intune 中注册 Mac OS X 设备](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
 
 
 ### <a name="learn-more-about-device-enrollment"></a>深入了解设备注册

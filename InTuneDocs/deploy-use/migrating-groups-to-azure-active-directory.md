@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -51,9 +51,9 @@ Intune 组某些现有功能在 Azure AD 中不可用：
 ## <a name="how-to-get-ready"></a>如何做好准备
 
 - 阅读以下 Azure AD 主题，了解 Azure AD 安全组及其工作原理：
-    -  [使用 Azure Active Directory 组管理对资源的访问](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)。
-    -  [在 Azure Active Directory 中管理组](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)。
-    -  [使用属性创建高级规则](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
+    -  [使用 Azure Active Directory 组管理对资源的访问](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)。
+    -  [在 Azure Active Directory 中管理组](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
+    -  [使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
 - 请考虑删除迁移前不再使用的任何 Intune 组。
 -  确保将任何需要创建组的管理员添加到 **Intune 服务管理员** Azure AD 角色。 请注意，Azure AD 服务管理员角色没有**管理组**权限。
 -  如果使用含“排除特定成员”选项的组，请考虑你是否可重新设计这些组，而不需排除项，或是否可在 Azure AD 查询中使用高级规则以达到相同的结果。

@@ -15,9 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 70fba8f983efb245afc3fb19fa38287d1a84b1f4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: acfcb5fc8bf0af2ba5fb897e9e18d61e60f11978
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -108,7 +108,7 @@ ms.lasthandoff: 02/18/2017
 
     >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
 
-    > 在本示例中，管理员创建了使用者名称格式，其中除了使用 `CN` 和 `E` 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)列出了受支持的字符串。
+    > 在本示例中，管理员创建了使用者名称格式，其中除了使用 `CN` 和 `E` 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)列出了受支持的字符串。
 
 4.  选择“**保存策略**”。
 

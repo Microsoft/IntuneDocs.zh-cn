@@ -15,8 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 924dc37b310b27fe40ece9f8019061b02cb7ac2d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>配置 SCEP 证书基础结构
@@ -32,7 +33,7 @@ ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
 -  **证书颁发机构** (CA)：在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关如何设置证书颁发机构的说明，请参阅 [安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
     如 CA 运行的是 Windows Server 2008 R2，则必须 [安装修补程序 KB2483564](http://support.microsoft.com/kb/2483564/)。
 I
--  **NDES 服务器**：在运行 Windows Server 2012 R2 或更高版本的服务器上，必须设置网络设备注册服务 (NDES)。 如果在服务器上运行了企业 CA，则同时在该服务器上运行的 Intune 将不支持使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管网络设备注册服务的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。 NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同一服务器上。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅 [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/en-us/library/dn473016.aspx)（结合使用策略模块和网络设备注册服务）。
+-  **NDES 服务器**：在运行 Windows Server 2012 R2 或更高版本的服务器上，必须设置网络设备注册服务 (NDES)。 如果在服务器上运行了企业 CA，则同时在该服务器上运行的 Intune 将不支持使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管网络设备注册服务的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。 NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同一服务器上。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅 [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx)（结合使用策略模块和网络设备注册服务）。
 
 -  **Microsoft Intune 证书连接器**：使用 Intune 管理控制台下载**证书连接器**安装程序 (**ndesconnectorssetup.exe**)。 随后可以在想要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe** 。
 -  **Web 应用程序代理服务器**（可选）：可以使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器。 该配置：
@@ -50,10 +51,10 @@ I
 
 从外围网络到受信任网络，支持域对已加入域的 NDES 服务器进行访问所需的所有端口和协议。 NDES 服务器需要证书服务器、DNS 服务器、Configuration Manager 服务器和域控制器的访问权限。
 
-建议通过代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web Access 代理](https://technet.microsoft.com/en-us/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
+建议通过代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web Access 代理](https://technet.microsoft.com/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>证书和模板
+### <a name="BKMK_CertsAndTemplates"></a>证书和模板
 
 |对象|详细信息|
 |----------|-----------|
@@ -62,13 +63,13 @@ I
 |**服务器身份验证证书**|发证 CA 或公共 CA 请求你在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。|
 |**受信任的根 CA 证书**|你可以从根 CA 或信任该根 CA 的任何设备中将其导出为 **.cer** 文件，并通过使用可信 CA 证书配置文件将其部署到设备。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>帐户
+### <a name="BKMK_Accounts"></a>帐户
 
 |Name|详细信息|
 |--------|-----------|
 |**NDES 服务帐户**|指定用作 NDES 服务帐户的域用户帐户。|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>配置基础结构
+## <a name="BKMK_ConfigureInfrastructure"></a>配置基础结构
 在可以配置证书配置文件之前，必须完成以下需要 Windows Server 2012 R2 和 Active Directory Certificate Services (ADCS) 知识的任务：
 
 **任务 1**：创建 NDES 服务帐户
@@ -351,9 +352,4 @@ I
 
 ## <a name="next-steps"></a>后续步骤
 你现在可以像[配置证书配置文件](Configure-Intune-certificate-profiles.md)中所述的那样配置证书配置文件了。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

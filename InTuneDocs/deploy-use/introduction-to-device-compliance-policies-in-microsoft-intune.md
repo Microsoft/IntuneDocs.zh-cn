@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2de9a7d639ee667ee195ded2875a8ac8e478fffb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +35,7 @@ ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
 还可以使用独立于条件性访问的合规性策略。 独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，你可能要报告未加密的设备数，或哪些设备已越狱或取得 root 权限。 但是独立使用合规性策略时，不会实施对公司资源的访问限制。
 
 将合规性策略部署到用户。 将合规性策略部署到用户后，会对用户设备检查合规性。
-若要了解策略部署完成后，移动设备需要多长时间获取策略，请参阅[管理设备上的设置和功能](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)。
+若要了解策略部署完成后，移动设备需要多长时间获取策略，请参阅[管理设备上的设置和功能](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)。
 
 下表列出了合规性策略支持的设备类型。 该表还说明了结合使用合规性策略和条件访问策略时如何管理非合规性设置。
 
@@ -67,9 +68,4 @@ ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
 
 ### <a name="see-also"></a>另请参阅
 [限制对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

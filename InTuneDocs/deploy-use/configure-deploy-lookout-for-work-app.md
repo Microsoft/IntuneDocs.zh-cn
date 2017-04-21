@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: ad1133d17f8d64c79c08437b914ae28e00cae638
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/21/2017
 
 1. 确保在设备上设置了 **iOS 管理**。 有关如何针对 iOS 管理设置设备的说明，请参阅[设置 iOS 和 Mac 设备管理](set-up-ios-and-mac-management-with-microsoft-intune.md)。
 
-2. **重新签名** Lookout for Work iOS 应用。 Lookout 会在 iOS 应用商店之外分发其 Lookout for Work iOS 应用。 **分发应用之前**，必须使用 iOS 企业开发人员证书对应用重新签名。 有关对 Lookout for Work iOS 应用重新签名的详细说明，请参阅 Lookout 站点上的 [Lookout for Work iOS 应用重新签名过程](https://personal.support.lookout.com/hc/en-us/articles/114094038714)。
+2. **重新签名** Lookout for Work iOS 应用。 Lookout 会在 iOS 应用商店之外分发其 Lookout for Work iOS 应用。 **分发应用之前**，必须使用 iOS 企业开发人员证书对应用重新签名。 有关对 Lookout for Work iOS 应用重新签名的详细说明，请参阅 Lookout 站点上的 [Lookout for Work iOS 应用重新签名过程](https://personal.support.lookout.com/hc/articles/114094038714)。
 
 3. 通过执行以下操作为 iOS 用户启用 Azure Active Directory 身份验证：
   1.  登录到 [Azure Active Directory 管理门户](https://manage.windowsazure.com)，并导航到应用程序页。
@@ -67,13 +67,13 @@ ms.lasthandoff: 03/21/2017
   4.  添加其他重定向 URI：**&lt;companyportal://code/>**，后跟原始重定向 URI 的 URL 编码形式版本。
   5.  将**委托的权限**添加到应用。
 
-  有关详细信息，请参阅[配置本机客户端应用程序](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)。
+  有关详细信息，请参阅[配置本机客户端应用程序](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)。
 
-4. 按照[在 Microsoft Intune 中为移动设备添加应用](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)主题中所述，上传重新签名的 .ipa 文件。 将最低操作系统版本为 iOS 8.0 或更高版本。
+4. 按照[在 Microsoft Intune 中为移动设备添加应用](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)主题中所述，上传重新签名的 .ipa 文件。 将最低操作系统版本为 iOS 8.0 或更高版本。
 
   ![Intune 管理员控制台中在应用列表中显示了 Lookout for work 应用的应用页的屏幕截图](../media/mtp/ios-app-uploaded-intune.png)
 
-5. 按照[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](https://docs.microsoft.com/en-us/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)主题中所述，创建托管应用配置策略。
+5. 按照[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)主题中所述，创建托管应用配置策略。
 
   ![突出显示了 iOS 8.0 或更高版本应用配置策略的创建新策略向导的屏幕截图](../media/mtp/ios-app-config.png)
 

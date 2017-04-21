@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 若要了解有关条件访问如何工作的详细信息，请阅读[保护对电子邮件、O365 服务和其他服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
 > [!IMPORTANT]
-> 若要部署条件性访问，必须订阅 Intune 和 Azure Active Directory Premium，且必须向用户授予这两项产品的许可。 **企业移动性 + 安全性 (EMS) 订阅**包括 Intune 和 Azure Active Directory Premium 订阅。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)。 如果没有 EMS 订阅，可获取 Azure Active Directory Premium 订阅。 请参阅 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+> 若要部署条件性访问，必须订阅 Intune 和 Azure Active Directory Premium，且必须向用户授予这两项产品的许可。 **企业移动性 + 安全性 (EMS) 订阅**包括 Intune 和 Azure Active Directory Premium 订阅。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)。 如果没有 EMS 订阅，可获取 Azure Active Directory Premium 订阅。 请参阅 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 当目标用户尝试在其设备上使用 Dynamics CRM 应用时，会进行以下评估：
 
@@ -102,9 +103,4 @@ ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 * [保护对 SharePoint Online 的访问](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [保护对 Skype for Business Online 的访问](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

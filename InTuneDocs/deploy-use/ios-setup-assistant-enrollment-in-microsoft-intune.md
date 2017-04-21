@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -39,7 +39,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 - 确保对 iOS 设备拥有物理访问权限 - 设备必须在没有密码保护的情况下恢复出厂设置
 
-- 获取设备序列号 - 请参阅[如何获取 iOS 序列号](https://support.apple.com/en-us/HT204308)
+- 获取设备序列号 - 请参阅[如何获取 iOS 序列号](https://support.apple.com/HT204308)
 
 - 准备好 USB 连接电缆
 

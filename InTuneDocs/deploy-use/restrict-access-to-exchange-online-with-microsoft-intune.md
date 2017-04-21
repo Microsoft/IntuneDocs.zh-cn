@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/21/2017
 
 -   拥有**包含 Exchange Online（例如 E3）的 Office 365 订阅**，并且用户必须获得 Exchange Online 许可。
 
-- 具有**企业移动性 + 安全性 (EMS) 订阅**或 **Azure Active Directory (Azure AD) Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+- 具有**企业移动性 + 安全性 (EMS) 订阅**或 **Azure Active Directory (Azure AD) Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 -  请考虑配置可选的“Intune 服务间连接器”，它将 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 连接到 Exchange Online，并通过 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台帮助你管理设备信息。 不需要通过连接器来使用合规性策略或条件性访问策略，但要求运行帮助评估条件性访问影响的报告。
     -  了解有关 [Intune Service-to-Service Connector](intune-service-to-service-exchange-connector.md) 的详细信息。
@@ -83,7 +83,7 @@ ms.lasthandoff: 03/21/2017
 **新式验证**将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Microsoft Office 客户端中。
 
 -   基于 ADAL 的身份验证使 Office 客户端能够实现基于浏览器的身份验证（也称为被动身份验证）。 为了进行身份验证，将用户导向登录网页。
--   此新的登录方法实现了诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。 有关更多详细信息，请参阅[新式验证的工作原理](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)。 设置用于阻止“非新式验证”协议的 ADFS 声明规则。 方案 3 中提供了详细的说明：[阻止除了基于浏览器的应用程序之外的其他所有应用程序访问 O365](https://technet.microsoft.com/library/dn592182.aspx)。
+-   此新的登录方法实现了诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。 有关更多详细信息，请参阅[新式验证的工作原理](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)。 设置用于阻止“非新式验证”协议的 ADFS 声明规则。 方案 3 中提供了详细的说明：[阻止除了基于浏览器的应用程序之外的其他所有应用程序访问 O365](https://technet.microsoft.com/library/dn592182.aspx)。
 
 用户通过 **iOS** 和 **Android** 设备上的浏览器进行访问时，可保护对 Exchange Online 上的 **Outlook Web Access (OWA)** 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
 
@@ -123,7 +123,7 @@ ms.lasthandoff: 03/21/2017
   >[!NOTE]
     >运行 Intune 计算机客户端的电脑不支持条件访问。
 
--   [Office 365 新式验证必须已启用](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，并且具有所有最新的 Office 更新。
+-   [Office 365 新式验证必须已启用](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，并且具有所有最新的 Office 更新。
 
     新式验证将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Office 2013/Windows 客户端中。 此方法实现了诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 03/21/2017
 >[!NOTE]
 > 此外，还可在 Azure AD 管理控制台中创建条件访问策略。 Azure AD 管理控制台允许创建除其他条件访问策略（如多重身份验证）之外的 Intune 设备条件访问策略（在 Azure AD 中称为 **基于设备的条件访问策略**）。
 
->还可为 Azure AD 支持的第三方企业应用（如 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将访问控制的基于 Azure Active Directory 设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
+>还可为 Azure AD 支持的第三方企业应用（如 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将访问控制的基于 Azure Active Directory 设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
 
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件性访问” > “Exchange Online 策略”。
