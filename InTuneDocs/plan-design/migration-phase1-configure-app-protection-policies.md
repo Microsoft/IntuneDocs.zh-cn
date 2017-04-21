@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 35543604ed68393e859517e32f5186247be001df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f30ab8799b2e049372139c7f9ee7213547736bb0
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/27/2017
 
 ## <a name="app-protection-policies-with-lob-apps"></a>LOB 应用的应用保护策略
 
-还可以通过利用适用于 [IOS](https://www.microsoft.com/en-us/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) 和 [Android](https://www.microsoft.com/en-us/download/details.aspx?id=47267) 平台的 [Microsoft Intune APP SDK](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) 或 Microsoft Intune App Wrapping Tool 将移动应用保护策略扩展到业务线 (LOB) 应用。
+还可以通过利用适用于 [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) 和 [Android](https://www.microsoft.com/download/details.aspx?id=47267) 平台的 [Microsoft Intune APP SDK](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) 或 Microsoft Intune App Wrapping Tool 将移动应用保护策略扩展到业务线 (LOB) 应用。
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>应用保护策略在迁移过程中起到什么作用？
 
@@ -46,9 +46,9 @@ Intune 可以在迁移过程中提供企业数据保护，因此，在没有设�
 
 ## <a name="task-list-for-app-protection-policies"></a>应用保护策略的任务列表
 
--   任务 1：了解[如何准备好配置移动应用保护](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)策略
+-   任务 1：了解[如何准备好配置移动应用保护](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)策略
 
--   任务 2：了解[如何创建和部署移动应用保护策略](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+-   任务 2：了解[如何创建和部署移动应用保护策略](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="next-steps"></a>后续步骤 
 

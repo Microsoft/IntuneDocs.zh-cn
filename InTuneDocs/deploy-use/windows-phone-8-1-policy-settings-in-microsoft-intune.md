@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2fd7ebc53c3b033982297dbce4a091cd9336fbb1
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -136,7 +137,7 @@ Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置
 #### <a name="how-to-specify-urls-to-app-stores"></a>如何指定应用商店的 URL
 若要在允许和阻止的的应用列表中指定应用 URL，请使用以下格式：
 
-在 [Windows Phone 应用 + 游戏](http://www.windowsphone.com/en-us/store/overview)页面中，搜索想要使用的应用。
+在 [Windows Phone 应用 + 游戏](http://www.windowsphone.com/store/overview)页面中，搜索想要使用的应用。
 
 打开应用页面，并将该 URL 复制到剪贴板。 你现在可以在允许的或阻止的应用列表中将它用作 URL。
 
@@ -172,9 +173,4 @@ Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

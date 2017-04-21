@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/01/2017
 
 |应用类型|详细信息|
 |----------------|-------|
-|**Windows Installer (*.exe, *.msi)**|这种类型的应用必须支持无用户输入的无提示安装。 你的应用文档应包含用于无提示安装应用的相关命令行选项（如 **/q**）。 你可以在 [Microsoft Windows Installer 工具的命令行开关](https://support.microsoft.com/en-us/kb/227091)中找到常见命令行选项的列表。<br><br>应用的安装程序所需的所有其他文件和文件夹都必须从你为应用安装程序文件指定的位置中提供。<br><br>大多数情况下，Windows Installer (.msi) 和 Windows Installer 修补程序 (.msp) 文件不需要 Intune 安装任何命令行参数。 请查看应用文档。<br><br>如果需要命令行参数，则必须以“名称=值对”（如 TRANSFORMS=custom_transform.mst）形式输入参数。<br><br>此应用类型仅适用于运行 Intune 软件客户端的电脑。|
+|**Windows Installer (*.exe, *.msi)**|这种类型的应用必须支持无用户输入的无提示安装。 你的应用文档应包含用于无提示安装应用的相关命令行选项（如 **/q**）。 你可以在 [Microsoft Windows Installer 工具的命令行开关](https://support.microsoft.com/kb/227091)中找到常见命令行选项的列表。<br><br>应用的安装程序所需的所有其他文件和文件夹都必须从你为应用安装程序文件指定的位置中提供。<br><br>大多数情况下，Windows Installer (.msi) 和 Windows Installer 修补程序 (.msp) 文件不需要 Intune 安装任何命令行参数。 请查看应用文档。<br><br>如果需要命令行参数，则必须以“名称=值对”（如 TRANSFORMS=custom_transform.mst）形式输入参数。<br><br>此应用类型仅适用于运行 Intune 软件客户端的电脑。|
 |**Android 应用包 (*.apk)**|若要部署 Android 应用，你必须拥有有效的 .apk 包。|
 |**iOS 应用包 (*.ipa)**|若要部署 iOS 应用，你必须拥有有效的 .ipa 包。<br><br>.ipa 包必须由 Apple 签名，并且预配配置文件中的到期日期必须有效。 Intune 可分发企业证书 iOS 应用程序。<br><br>并非所有 Apple 开发人员证书应用都受支持。<br><br>必须向 iOS Developer Enterprise Program 注册你的公司。<br><br>确保组织的防火墙允许访问 iOS 预配和认证网站。<br><br>你不需要使用该应用部署清单文件 (.plist)。|
 |**Windows Phone 应用包（*.xap、.appx、.appxbundle）**|若要部署应用，你需要一个企业移动代码签名证书。 有关详细信息，请参阅[使用 Microsoft Intune 设置 Windows Phone 管理](set-up-windows-device-management-with-microsoft-intune.md)。|
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/01/2017
 
 基于外部链接的应用不存储在 Intune 云存储空间中。
 ### <a name="managed-ios-app-from-the-app-store"></a>**来自应用商店的托管 iOS 应用程序**
-你可以使用托管 iOS 应用管理和部署来自应用商店的免费 iOS 应用。 你还可使用托管 iOS 应用将[移动应用管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)与[兼容的应用](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)相关联，并在管理员控制台中查看它们的状态。<br /><br />托管 iOS 应用不存储在 Intune 云存储空间中。
+你可以使用托管 iOS 应用管理和部署来自应用商店的免费 iOS 应用。 你还可使用托管 iOS 应用将[移动应用管理策略](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)与[兼容的应用](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)相关联，并在管理员控制台中查看它们的状态。<br /><br />托管 iOS 应用不存储在 Intune 云存储空间中。
 
 > [!TIP]
 > 在[设置 MDM 机构](prerequisites-for-enrollment.md)为 Intune 之前，移动设备选项将不可用。

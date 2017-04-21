@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: 2e7bcedebdf777db64a9ec90aa758822634ed435
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4bf9bd15f3f22e0609c4f56f5651454a62dbb7a8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/28/2017
 
 -   用户是否熟悉常规技术和 IT？
 
-### <a name="what-is-your-device-security-policy"></a>什么是设备安全策略？ 
+### <a name="what-is-your-device-security-policy"></a>什么是设备安全策略？
 
 -   是否需要设备级别的加密？
 
@@ -84,7 +84,7 @@ ms.lasthandoff: 03/28/2017
 
 ## <a name="additional-information"></a>其他信息
 
--   更多详细示例，请阅读来自各行业领域的[案例研究](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，了解组织如何评估他们的移动设备管理要求。
+-   更多详细示例，请阅读来自各行业领域的[案例研究](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，了解组织如何评估他们的移动设备管理要求。
 
 ## <a name="next-steps"></a>后续步骤
 

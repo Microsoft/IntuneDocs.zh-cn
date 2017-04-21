@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 ## <a name="how-does-conditional-access-work"></a>条件性访问如何工作？
 可使用合规性策略设置评估设备的合规性。 条件性访问策略通过该评估来限制或允许对特定服务的访问。 结合使用条件性访问策略与设备合规性策略时，仅允许合规的设备访问该服务。 将合规性策略和条件访问策略部署到用户。 检查用户用于访问服务的任何设备是否符合策略。
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 记住，必须向使用该设备的用户部署合规性策略，才能评估设备的合规性。
 > 如果未向用户部署合规性策略，该设备将被视为合规且不会对其应用任何访问限制。
 
@@ -48,7 +48,7 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
 
 可以单独购买 **Azure AD Premium 许可证**，也可以作为企业版协议的一部分（与 Intune 一起）购买。 如果使用 Intune 部署条件性访问策略，请确保获得正确的 Azure AD Azure AD Premium 或**EMS 许可证**。
 
-- 了解有关[企业移动性定价页](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/en-us/pricing/details/active-directory/)的详细信息。
+- 了解有关[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)的详细信息。
 
 此外，请确保将 [Azure AD Premium 或 EMS 许可证](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)分配给计划应用条件性访问策略的用户。
 

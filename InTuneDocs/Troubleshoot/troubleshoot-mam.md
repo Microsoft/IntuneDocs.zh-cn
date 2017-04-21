@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
-ms.openlocfilehash: 6258917de60bdbf8efde4720c17ec6fc643154bd
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c795b0b5b12d900155e55e0874009177b32a2546
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.openlocfilehash: 6258917de60bdbf8efde4720c17ec6fc643154bd
 | 问题 | 说明 | 解决方法 |
 | -- | -- | -- |
 | 策略不适用于 Skype for Business | Azure 门户中制定的无需设备注册的应用保护策略不适用于 iOS 和 Android 设备上的 Skype for Business 应用。 | 必须将 Skype for Business 设置为进行新式验证。  请按照[为租户启用新式验证](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)中的指示为 Skype 设置新式验证。 |
-| Office 应用策略不适用 | 应用保护策略不适用于任何用户的任何[支持的 Office 应用](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)。 | 确认用户已获得 Intune 许可，且 Office 应用是某个已部署的应用保护策略的目标对象。 可能需要最多 8 小时来使新部署的应用保护策略生效。 |
+| Office 应用策略不适用 | 应用保护策略不适用于任何用户的任何[支持的 Office 应用](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。 | 确认用户已获得 Intune 许可，且 Office 应用是某个已部署的应用保护策略的目标对象。 可能需要最多 8 小时来使新部署的应用保护策略生效。 |
 | 管理员无法在 Azure 门户中配置应用保护策略 | IT 管理员用户无法在 Azure 门户中配置应用保护策略。 | 下列用户角色可访问 Azure 门户： <ul><li>全局管理员，可在 [Office 门户](http://portal.office.com/)中设置</li><li>所有者，可在 [Azure 门户](https://portal.azure.com/)设置中。</li><li>参与者，可在 [Azure 门户](https://portal.azure.com/)设置中。</li></ul>  请参阅[准备好使用 Microsoft Intune 配置移动应用管理策略](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)，获取设置这些角色的帮助。|
 |应用保护策略报表中缺少用户帐户 | 管理控制台报表不显示最近部署了应用保护策略的用户帐户。 | 若用户是应用保护策略的新目标用户，则可能要 24 小时后，该用户才会在报表中显示为目标用户。 |
 | 策略更改无效 | 对应用保护策略的更改和更新可能需要 8 小时才能应用。 | 如果适用，最终用户可注销该应用，然后重新登录，强行与服务同步。 |
@@ -87,7 +88,7 @@ Android | **需要公司门户**：若要将工作或学校帐户用于此应用
 **欢迎使用 Intune Managed Browser**：当由 Microsoft Intune 管理时，此应用运行效果最佳。 可始终使用此应用浏览 Web，并且当它由 Microsoft Intune 管理时，可访问附加的数据保护功能。 | 未能检测到 Intune Managed Browser 应用所需的应用保护策略。 <br><br>用户仍可使用该应用浏览 Web，但该应用不由 Intune 托管。 | 确保将 iOS 应用保护策略部署到用户的安全组，并以 Intune Managed Browser 应用为目标。
 **登录失败**：目前无法登录。 请稍后重试。 | 未能在用户尝试使用其工作或学校帐户登录后，向 MAM 服务注册该用户。 | 确保将 iOS 应用保护策略部署到用户的安全组，并以此应用为目标。
 **帐户未设置**：组织未设置你的帐户来访问工作或学校数据。 请联系 IT 管理员寻求帮助。 | 用户帐户没有 Intune A Direct 许可证。 | 确保用户的帐户在 [Office 门户](http://portal.office.com)中分配有 Intune 许可证。
-**设备不合规**：无法使用此应用，因为正在使用越狱的设备。 请联系你的 IT 管理员获取帮助。 | Intune 检测到用户正在使用越狱的设备。 | 将设备重置为默认出厂设置。 按照 Apple 支持站点中的[这些说明](https://support.apple.com/en-us/HT201274)操作。
+**设备不合规**：无法使用此应用，因为正在使用越狱的设备。 请联系你的 IT 管理员获取帮助。 | Intune 检测到用户正在使用越狱的设备。 | 将设备重置为默认出厂设置。 按照 Apple 支持站点中的[这些说明](https://support.apple.com/HT201274)操作。
 **需要 Internet 连接**：必须连接到 Internet 才可验证是否可使用此应用。 | 设备未连接到 Internet。 | 将设备连接到 WiFi 或数据网络。
 **未知故障**：尝试重启此应用。 如果问题仍然存在，请与 IT 管理员联系以寻求帮助。 | 发生未知故障。 | 请稍后重试。 如果错误仍然存在，请通过 Intune 在[此处](how-to-get-support-for-microsoft-intune.md)创建支持票证。
 **访问组织数据**：指定的工作或学校帐户无权访问此应用。 可能必须使用其他帐户登录。 请联系你的 IT 管理员获取帮助。 | Intune 检测到用户尝试使用另一个工作或学校帐户（不同于已注册 MAM 的设备帐户）登录。 对于每个设备，MAM 一次只能管理一个工作或学校帐户。 | 让用户使用具有通过登录屏幕预填充的用户名的相应帐户登录。 <br> <br> 或让用户使用新的工作或学校帐户登录，并删除已注册 MAM 的现有帐户。
@@ -116,9 +117,4 @@ Android | **需要公司门户**：若要将工作或学校帐户用于此应用
 - [验证移动应用管理设置](../deploy-use/validate-mobile-application-management.md)
 - [准备好使用 Microsoft Intune 配置移动应用管理策略](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,9 +38,9 @@ ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 在配置 Skype for Business Online 的条件性访问策略**之前**，必须：
 - 具有 **Skype for Business Online 订阅** 并将 Skype for Business Online 许可证分配给用户。
-- 具有**企业移动性 + 安全性 (EMS) 订阅**或 **Azure Active Directory (Azure AD) Premium 订阅**，并让用户获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价](https://azure.microsoft.com/en-us/pricing/details/active-directory/)。
+- 具有**企业移动性 + 安全性 (EMS) 订阅**或 **Azure Active Directory (Azure AD) Premium 订阅**，并让用户获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价](https://azure.microsoft.com/pricing/details/active-directory/)。
 
--   为 Skype for Business Online[启用“新式验证”](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。
+-   为 Skype for Business Online[启用“新式验证”](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)。
 -  让所有用户使用 **Skype for Business Online**。 如果本地具有同时使用 Skype for Business Online 和 Skype for Business 进行的部署，那么条件性访问策略将不会应用到用户。
 
 需要访问 Skype for Business Online 的设备必须：
@@ -118,9 +119,4 @@ ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 * **不合规的设备**：阻止这些设备访问 Skype for Business Online。
 
 * **已向 AAD 注册并合规的设备**：这些设备可以访问 Skype for Business Online。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

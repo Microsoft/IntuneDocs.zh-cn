@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: dbc5c6afc9f2748b50e064b912e519e8f2de9022
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
 若要将限制应用到应用，该应用必须包含 Microsoft Intune App SDK。 可通过三种方法获取此类应用：
 
--   **使用策略托管的应用**。 策略托管应用内置了应用 SDK。 要添加此类型的应用，你可以从 iTunes 应用商店或 Google Play 等应用商店指定应用的链接。 对于此类应用，无需进一步的处理。 有关详细信息，请参阅 [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)（可配合 Microsoft Intune 移动应用管理策略使用的应用的列表）。
+-   **使用策略托管的应用**。 策略托管应用内置了应用 SDK。 要添加此类型的应用，你可以从 iTunes 应用商店或 Google Play 等应用商店指定应用的链接。 对于此类应用，无需进一步的处理。 有关详细信息，请参阅 [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)（可配合 Microsoft Intune 移动应用管理策略使用的应用的列表）。
 
 -   **使用已包装的应用**。 已包装的应用 – 使用 Microsoft Intune App Wrapping Tool 对应用进行重新封装，以将应用 SDK 包括在内。 该工具通常用于处理公司内部开发的应用。 无法用于处理从应用商店下载的应用。 有关详细信息，请参阅[使用 Microsoft Intune App Wrapping Tool 为移动应用管理准备 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[使用 Microsoft Intune App Wrapping Tool 为移动应用管理准备 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
 
@@ -140,7 +140,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
     |**访问要求设备符合公司策略**|此设置仅允许设备在未越狱或获取根权限时使用此应用。|
     |**在一定时间后重新检查访问要求（分钟）**|在“**超时**”字段中，指定应用打开后重新检查应用访问要求前的时间段。|
     |**脱机宽限期**|如果设备离线，指定应用重新检查访问要求前的时间段。|
-    |**加密应用数据**|此设置指定与此应用相关的所有数据均将加密。 这包括外部存储的数据，如在 SD 卡中的数据。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用管理策略关联的应用，通过 OS 提供的设备级加密对静态数据进行加密。 通过由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用管理策略的设置进行加密。 正如 Apple 文档所述，[iOS 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/en-us/HT202739)。<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用管理策略关联的应用，加密由 Microsoft 提供。 数据在文件 I/O 操作期间同步加密。  设备存储中的内容将始终被加密。 加密方法是 FIPS 140-2，仅与 Samsung KNOX 设备兼容。|
+    |**加密应用数据**|此设置指定与此应用相关的所有数据均将加密。 这包括外部存储的数据，如在 SD 卡中的数据。<br /><br />**适用于 iOS 的加密**<br /><br />对于与 Intune 移动应用管理策略关联的应用，通过 OS 提供的设备级加密对静态数据进行加密。 通过由 IT 管理员设置的设备 PIN 策略启用。 需要 PIN 时，数据将根据移动应用管理策略的设置进行加密。 正如 Apple 文档所述，[iOS 所使用的模块经过了 FIPS 140-2 的认证](http://support.apple.com/HT202739)。<br /><br />**适用于 Android 的加官**<br /><br />对于与 Intune 移动应用管理策略关联的应用，加密由 Microsoft 提供。 数据在文件 I/O 操作期间同步加密。  设备存储中的内容将始终被加密。 加密方法是 FIPS 140-2，仅与 Samsung KNOX 设备兼容。|
     |**“阻止屏幕捕捉”** （仅限于 Android 设备）|此设置指定在使用该应用时，阻止设备的屏幕捕捉功能。|
 
 4. 完成后，请选择“保存策略”。

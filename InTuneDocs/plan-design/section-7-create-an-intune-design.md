@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -153,7 +153,7 @@ Intune 提供两个部署选项：独立和混合。 需要决定哪一个适合
 
 -   了解有关[规划用户和设备组](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups)的详细信息。
 
--   了解[如何创建用户和设备组](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
+-   了解[如何创建用户和设备组](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)。
 
 ### <a name="public-key-infrastructure-pki"></a>公钥基础结构 (PKI)
 
@@ -251,7 +251,7 @@ Intune 支持公司拥有和 BYOD 所有权。 如果设备由设备注册管理
 
 配置策略用于管理设备上的安全设置和功能。 设计配置策略时，请参阅用例要求部分，确定 Intune 设备所需的配置。 记录哪些设置以及应如何配置它们，同时记录它们将面向哪些用户或设备组。
 
-每个平台应至少创建一个配置策略。 如果需要，每个平台可创建多个配置策略。 下面是一个针对不同平台和用例场景设计&4; 个不同配置策略的示例。
+每个平台应至少创建一个配置策略。 如果需要，每个平台可创建多个配置策略。 下面是一个针对不同平台和用例场景设计 4 个不同配置策略的示例。
 
 | **策略名称** | **设备平台** | **设置** | **目标组** |   
 |:---:|:---:|:---:|:---:|
@@ -326,7 +326,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 电子邮件配置文件允许电子邮件客户端自动通过连接信息进行安装，并设置电子邮件配置。 Intune 在某些设备上支持电子邮件配置文件。
 
--   了解有关[电子邮件配置文件](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)以及支持哪些平台的详细信息。
+-   了解有关[电子邮件配置文件](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)以及支持哪些平台的详细信息。
 
 下面是一个记录电子邮件配置文件设计的示例：
 

@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 57c739444c18d12a6d7ee8ca591f9a1dd72985d7
+ms.lasthandoff: 04/14/2017
 
 ---
 
@@ -77,7 +78,7 @@ ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
 
 在此步骤中，你将在 Azure 门户中基于设备类别和设备类别名称创建动态组。
 
-若要继续，请参阅 Azure Active Directory 文档中的主题[使用属性创建高级规则](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)。
+若要继续，请参阅 Azure Active Directory 文档中的主题[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)。
 按照本主题中的信息可使用 **deviceCategory** 属性创建具有高级规则的设备组。
 例如 (**device.deviceCategory -eq** "<*从 Intune 管理控制台获取的设备类别名称*>")
 
@@ -88,9 +89,4 @@ ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
 
 ### <a name="see-also"></a>另请参阅
 [通过 Microsoft Intune 使用组来管理用户和设备](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

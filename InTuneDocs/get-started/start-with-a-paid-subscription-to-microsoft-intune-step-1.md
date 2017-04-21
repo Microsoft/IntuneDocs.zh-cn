@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -44,7 +45,7 @@ ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 ## <a name="post-sign-up-considerations"></a>注册后的注意事项
 如果注册了新订阅，你将在注册过程中提供的电子邮件地址中收到一封含有帐户信息的电子邮件。 这封电子邮件将确认你的订阅处于活动状态。
 
-完成注册过程后，系统会将你定向到一个页面，该页面用于使用 Office 365 管理中心添加用户并为其分配许可证。 如果你只有使用默认 onmicrosoft.com 域名的基于云的帐户，那么你此时可以继续操作，并添加用户和分配许可证。 但是，如果你将使用组织的自定义域名，或者想要从本地 Active Directory 同步用户帐户信息，则可以关闭该浏览器窗口并转到本快速入门指南的步骤 2。 你还可以了解更多[关于 Office 365 中的初始 onmicrosoft.com 域](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)的信息
+完成注册过程后，系统会将你定向到一个页面，该页面用于使用 Office 365 管理中心添加用户并为其分配许可证。 如果你只有使用默认 onmicrosoft.com 域名的基于云的帐户，那么你此时可以继续操作，并添加用户和分配许可证。 但是，如果你将使用组织的自定义域名，或者想要从本地 Active Directory 同步用户帐户信息，则可以关闭该浏览器窗口并转到本快速入门指南的步骤 2。 你还可以了解更多[关于 Office 365 中的初始 onmicrosoft.com 域](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)的信息
 
 >[!TIP]
 > 下次登录到 Intune 时，你将自动定向到 Intune 管理控制台。
@@ -53,9 +54,4 @@ ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 >[!div class="step-by-step"]
 
 >[&larr; **先决条件**](.\what-to-know-before-you-start-microsoft-intune.md)     [**域设置** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

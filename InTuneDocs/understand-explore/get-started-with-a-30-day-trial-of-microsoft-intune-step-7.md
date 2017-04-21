@@ -14,8 +14,9 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 08b5b555ed44275c428c15fe3529bd683dc8c004
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -28,16 +29,11 @@ ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
 
 可以通过以下方式将免费 Intune 评估转换为付费订阅：
 
--   **Intune 订阅** - 向每个用户授予许可证。 有关详细信息，请参阅 [如何购买 Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx)。 完成购买后，请按照[开始使用 Microsoft Intune 付费订阅](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)中的步骤操作，并在开始使用 Intune 时查看其他配置步骤。
+-   **Intune 订阅** - 向每个用户授予许可证。 有关详细信息，请参阅 [如何购买 Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/Purchasing.aspx)。 完成购买后，请按照[开始使用 Microsoft Intune 付费订阅](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)中的步骤操作，并在开始使用 Intune 时查看其他配置步骤。
 
--   **企业移动性 + 安全性** - 提供 Intune、Azure Active Directory Premium 和 Azure RMS 服务。 有关详细信息，请与 Microsoft 客户经理或本地经销商联系，或者[了解 EMS 功能](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx)和[定价](http://www.microsoft.com/en-us/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx)。
+-   **企业移动性 + 安全性** - 提供 Intune、Azure Active Directory Premium 和 Azure RMS 服务。 有关详细信息，请与 Microsoft 客户经理或本地经销商联系，或者[了解 EMS 功能](https://www.microsoft.com/server-cloud/enterprise-mobility/overview.aspx)和[定价](https://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx)。
 
 -   **企业协议**（&gt; 250 名用户）- 适用于拥有超过 250 名用户的组织的最佳许可计划。 EA 使你能灵活地选择本地软件和在线服务来最好地适合你的用户需求，并帮助你优化技术支出。 有关详细信息，请与你的 Microsoft 客户经理或本地经销商联系，或查看 [企业批量许可站点](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx)。
 
 -   **在线订阅计划**（&lt;250 名用户）— [Online Services 批量许可](http://www.microsoft.com/licensing/online-services/default.aspx)计划是专为用户数少于 250 名的组织设计的。 使用该计划来订阅、管理和部署你的 Intune 服务。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
