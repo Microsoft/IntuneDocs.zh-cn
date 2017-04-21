@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>在 Microsoft Intune 中部署应用
@@ -48,7 +49,7 @@ ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
 
 5. 如果可以通过移动应用程序管理策略来配置要部署的应用，则会显示“移动应用程序管理”页。 在此页上，选择想要与此应用关联的移动应用程序管理策略。
 
-    [查看与移动应用程序管理策略兼容的 Microsoft 应用。](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [查看与移动应用程序管理策略兼容的 Microsoft 应用。](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. 如果要部署的应用与 Intune VPN 配置文件兼容，则会显示“VPN 配置文件”页。 在此页上，你可以选择将 iOS 应用与已部署的 VPN 配置文件关联。 在应用启动时，将自动打开 VPN 连接。 若要使 VPN 配置文件可用，则必须启用“Per-app VPN”配置文件设置。
  有关如何配置 VPN 配置文件的详细信息（包括有关如何将配置文件与应用相关联的信息），请参阅 [Microsoft Intune 中的 VPN 连接](vpn-connections-in-microsoft-intune.md)。
@@ -72,9 +73,4 @@ ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
 ## <a name="next-steps"></a>后续步骤
 
 部署应用之后，需要监视其进度。 有关详细信息，请参阅[在 Microsoft Intune 中监视应用](monitor-apps-in-microsoft-intune.md)。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
