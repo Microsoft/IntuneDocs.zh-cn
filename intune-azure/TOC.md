@@ -58,13 +58,13 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## 如何
 ### [使用完全擦除或选择性擦除](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [远程控制 Android 设备](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # 管理用户
 ## [什么是用户管理？](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [入门](manage-users/get-started-with-groups.md)
+## [帮助用户](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
