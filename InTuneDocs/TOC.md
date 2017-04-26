@@ -12,7 +12,7 @@
 
 # [开始使用](get-started/get-started.md)
 ## [设置 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [先决条件]
+### 先决条件
 #### [支持的设备](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [网络使用情况](get-started/network-bandwidth-use.md)
 ### [登录到 Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [使用 MAM 保护应用数据](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [提供应用保护策略的 Azure 门户](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [准备好配置应用保护策略](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [创建和部署应用保护策略](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [准备好配置面向 iOS 和 Android 的应用保护策略](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [准备好配置面向 Windows 10 的应用保护策略](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [面向 Android 的应用保护策略](deploy-use/android-mam-policy-settings.md)
 #### [面向 iOS 的应用保护策略](deploy-use/ios-mam-policy-settings.md)
+#### [面向 Windows 的应用保护策略](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [创建和部署面向 iOS 和 Android 的应用保护策略](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [创建和部署面向 Windows 10 的 WIP 应用保护策略](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [验证应用保护策略](deploy-use/validate-mobile-application-management.md)
 #### [监视应用保护策略符合性](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
