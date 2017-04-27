@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -36,8 +37,6 @@ ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
  -  Android for Work
  -  Windows 8.1 及更高版本
  -  Windows Phone 8.1 及更高版本
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. 创建证书配置文件以便设备请求一个将用于对 VPN、Wi-Fi 和电子邮件访问进行身份验证的证书，如[配置 Intune 证书配置文件](configure-intune-certificate-profiles.md)中所述。 可以为运行以下平台的设备创建并部署 **PKCS #12 (.PFX) 证书配置文件***或* **SCEP 证书配置文件**：
 
@@ -62,9 +61,4 @@ ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
 - [配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)
 - [配置 PFX 证书基础结构](configure-certificate-infrastructure-for-pfx.md)
 - [配置 Itune 证书配置文件](configure-intune-certificate-profiles.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -58,8 +58,6 @@ ms.lasthandoff: 04/14/2017
 
 -  Windows Phone 8.1 及更高版本
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  添加**受信任的证书配置文件**策略。
 
     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
