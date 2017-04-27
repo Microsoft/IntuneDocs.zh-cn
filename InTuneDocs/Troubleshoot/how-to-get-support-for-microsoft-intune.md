@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
-ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 15229d2dff3b5e9a13bf1f9321ba09df81717052
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -70,11 +70,11 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 
 1.  使用你的 Intune 凭据登录到 [Office 365 管理中心](https://portal.office.com)。
 
-    而顶级支持客户应在[顶级支持页](https://support.microsoft.com/en-us/premier/contacts)上打开 Intune 支持票证。
+    而顶级支持客户应在[顶级支持页](https://support.microsoft.com/premier/contacts)上打开 Intune 支持票证。
 
     >[!NOTE]
     >
-    >顶级支持客户应在[顶级支持页](https://support.microsoft.com/en-us/premier/contacts)上打开 Intune 支持票证。
+    >顶级支持客户应在[顶级支持页](https://support.microsoft.com/premier/contacts)上打开 Intune 支持票证。
 
 2.  选择“管理员”磁贴。
 3.  在左侧的“支持”下，选择“支持”创建票证。
@@ -136,7 +136,7 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 - 单一用户会体验到部分中断情况，但有可接受的解决方法。
 
 > [!NOTE]
-> **如果使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与合作伙伴联系，或访问 [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) 和 [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) 文档查找丰富的自助式材料。 它还提供通过在线方式或通过电话创建支持请求的选项。
+> **如果使用 Microsoft System Center Configuration Manager** 或 **Microsoft System Center Endpoint Protection：**有关 Configuration Manager 或 Endpoint Protection 的技术支持，请与合作伙伴联系，或访问 [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) 和 [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) 文档查找丰富的自助式材料。 它还提供通过在线方式或通过电话创建支持请求的选项。
 >
 > System Center Configuration Manager 或 System Center Endpoint Protection 的技术支持需要付款，或者它将计为你现有的许可协议或顶级支持协议的递减。
 
