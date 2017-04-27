@@ -78,8 +78,6 @@ ms.lasthandoff: 04/14/2017
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 及更高版本以及 Android for Work
 - iOS 8.0 及更高版本
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 **新式验证**将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Microsoft Office 客户端中。
 
 -   基于 ADAL 的身份验证使 Office 客户端能够实现基于浏览器的身份验证（也称为被动身份验证）。 为了进行身份验证，将用户导向登录网页。

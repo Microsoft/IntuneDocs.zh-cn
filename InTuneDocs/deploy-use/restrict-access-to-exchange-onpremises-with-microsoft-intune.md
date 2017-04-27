@@ -83,10 +83,7 @@ ms.lasthandoff: 03/30/2017
 -   Exchange ActiveSync 邮件客户端（如 Android 4 或更高版本上的 Gmail）。
 -   **Android for Work 设备上的 Exchange ActiveSync 邮件客户端：**Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可适用于 Android for Work，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将这些应用部署为必需安装。 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > 不支持 Android 和 iOS 上的 Microsoft Outlook 应用。
 
 ## <a name="support-for-pcs"></a>对 PC 的支持

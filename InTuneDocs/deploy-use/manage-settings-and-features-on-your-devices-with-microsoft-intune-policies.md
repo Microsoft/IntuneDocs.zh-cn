@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -41,7 +42,6 @@ Intune 策略划分为以下类别。 使用的类别会影响创建和部署策
 - **资源访问策略**：这些策略一同协作，帮助你的用户在任何地方都可以获取成功完成其工作所需的文件和资源的访问权限。
 有关详细信息，请参阅[使用 Microsoft Intune 启用对公司资源的访问](enable-access-to-company-resources-with-microsoft-intune.md)。
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 有关 Intune 策略的完整列表，请参阅 [Microsoft Intune 策略参考](microsoft-intune-policy-reference.md)。
 
@@ -212,9 +212,4 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>在哪里可以找到有关排查策略问题的帮助？
 
 请参阅 [Microsoft Intune 中的故障排除策略](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
