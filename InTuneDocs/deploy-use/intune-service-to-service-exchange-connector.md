@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: dce7050a7439a7e24e34be3c79473d6ec3159c83
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
 
 ## <a name="set-up-the-service-to-service-connector"></a>设置服务间连接器
 
-1. 使用对[上述](#exchange-cmdlet-requirements) cmdlet 具有 Exchange 管理员权限的用户帐户打开 [Microsoft Intune](http://manage.microsoft.com) 管理控制台。 Microsoft Intune 会使用当前登录用户的电子邮件地址来设置连接。
+1. 使用对[上述](#exchange-cmdlet-requirements) cmdlet 具有 Exchange 管理员权限的用户帐户打开 [Microsoft Intune](https://manage.microsoft.com) 管理控制台。 Microsoft Intune 会使用当前登录用户的电子邮件地址来设置连接。
 
 2.  在工作区快捷方式窗格中，选择“管理”>“移动设备管理” > “Microsoft Exchange” > “设置 Exchange 连接”。
 ![设置服务间连接器页面](../media/intunesa5cservicetoserviceconnector.png)
@@ -62,12 +63,7 @@ ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
 
 ## <a name="validate-your-exchange-connection"></a>验证你的 Exchange 连接
 
-成功配置 Exchange Connector 后，请转到 [Microsoft Intune 管理控制台](http://manage.microsoft.com)。 选择“管理”> “移动设备管理” > “Microsoft Exchange”。 然后，验证你提交的详细信息是否显示在 **Exchange 连接信息**之下。
+成功配置 Exchange Connector 后，请转到 [Microsoft Intune 管理控制台](https://manage.microsoft.com)。 选择“管理”> “移动设备管理” > “Microsoft Exchange”。 然后，验证你提交的详细信息是否显示在 **Exchange 连接信息**之下。
 
 你也可以检查最后一次成功同步尝试的时间和日期。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

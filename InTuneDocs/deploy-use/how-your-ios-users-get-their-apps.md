@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -40,13 +41,13 @@ Apple 限制禁止公司门户应用列出业务线应用和托管应用商店�
 
 在公司门户应用上的“应用”屏幕上，已注册用户可以通过点击以下磁贴获取他们的应用：
 
-- **所有应用**指向[公司门户网站](http://portal.manage.microsoft.com)“全部”选项卡中所有应用的列表。
+- **所有应用**指向[公司门户网站](https://portal.manage.microsoft.com)“全部”选项卡中所有应用的列表。
 
 - **特色应用**使用户进入公司门户网站的“特别推荐”选项卡。
 
 - **类别**指向公司门户网站的“类别”选项卡。
 
- 
+
 ![iOS 公司门户应用屏幕](./media/ios-cp-app-main-apps-screen.png)
 
 有关如何添加应用并将其放入这些磁贴的信息，请参阅[将已注册设备的应用添加到 Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)。
@@ -55,9 +56,4 @@ Apple 限制禁止公司门户应用列出业务线应用和托管应用商店�
 [Android 用户如何获取其应用](how-your-android-users-get-their-apps.md)
 
 [Windows 用户如何获取其应用](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/01/2017
 
 请按照以下步骤来创建应用保护策略：
 
-1. 转到 [Azure 门户](http://portal.azure.com)，然后输入你的凭据。
+1. 转到 [Azure 门户](https://portal.azure.com)，然后输入你的凭据。
 
 2. 选择“更多服务”，然后键入“Intune”。
 
@@ -109,7 +109,7 @@ ms.lasthandoff: 04/01/2017
 
 从 Intune 1703 版本开始，当你在创建新的应用保护策略时通常可以选择将 LOB 应用添加到 Intune。 这样，你就可以选择使用 MAM SDK 定义 LOB 应用的应用保护策略，而不需要完整的应用部署权限。
 
-> [!TIP] 
+> [!TIP]
 > 在进入 [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) 工作流时，你还可以将 LOB 应用添加到 Intune。
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ ms.lasthandoff: 04/01/2017
 
 ### <a name="to-add-lob-apps-windows"></a>添加 LOB 应用 (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 创建新的应用保护策略时，需要从平台下拉列表中选择 Windows 10。
 
 1.  在“添加一个策略”边栏选项卡上，选择“允许的应用”或“豁免应用”以打开“允许或豁免应用”边栏选项卡。
 
     > [!NOTE]
-    > 
+    >
     - **允许的应用**：这些应用需要符合此策略。
     - **豁免应用**：这些应用从此策略中豁免，可以无限制地访问公司数据。
 <br></br>
