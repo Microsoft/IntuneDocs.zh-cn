@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 设备注册配置文件定义应用于设备组的设置。
 
-1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择“添加”。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择“添加”。
 
   ![创建设备注册配置文件](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>通过设置助理添加 iOS 设备以进行注册
 
-1. 在[“Microsoft Intune 管理控制台”](http://manage.microsoft.com)中，转到“组”&gt;“所有设备”&gt;“所有企业拥有的设备”&gt;“所有设备”，然后选择“添加设备”。
+1. 在[“Microsoft Intune 管理控制台”](https://manage.microsoft.com)中，转到“组”&gt;“所有设备”&gt;“所有企业拥有的设备”&gt;“所有设备”，然后选择“添加设备”。
 
    可以通过两种方式添加设备：
 
@@ -105,7 +105,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
     111111111,PO 1234
     ```
 
-  -  **手动添加设备详细信息** - 输入最多 15 台设备的序列号和任何注释或详细信息。
+  -  **手动添加设备详细信息**  - 输入最多 15 台设备的序列号和任何注释或详细信息。
 
   可在“查看设备”窗格中确认序列号。 还可以决定是否覆盖正在重新导入的序列号的“详细信息”，或者取消选中“覆盖”框以保留当前的详细信息。
 
@@ -128,7 +128,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>导出要部署到 iOS 设备的配置文件
 
-1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择要部署到移动设备的设备配置文件。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择要部署到移动设备的设备配置文件。
 
 2. 选择任务栏中的**“导出”**。 复制并保存 **“配置文件 URL”**。 稍后你将在 Apple Configurator 中将其上传，以定义 iOS 设备使用的 Intune 配置文件。
 

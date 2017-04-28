@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 02743ee216ce09c74a9d0ab2455e826b36e8aa4a
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5d317c837d43d58b9ac4750fa6f0e054fe2ff7da
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 Microsoft Intune 让管理员可以使用 IMEI 号码导入移动设备平台的国际移动设备标识 (IMEI) 号码，以帮助识别公司拥有的移动设备。 在 Intune 中注册设备后，可以在“组” > “概述” > “所有设备”下看到已导入 IMEI 号码的设备。 “设备组”在“所有权”列中将已导入 IMEI 号码的设备列为“公司”。
 
-1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，选择“组”&gt;“所有设备”&gt;“所有企业预注册设备”&gt;“按 IMEI (所有平台)”，然后单击“添加设备...”。 可以通过两种方式添加设备：
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“组”&gt;“所有设备”&gt;“所有企业预注册设备”&gt;“按 IMEI (所有平台)”，然后单击“添加设备...”。 可以通过两种方式添加设备：
 
     -   **上传含序列号的 .csv 文件** - 创建两列不带标头的逗号分隔值 (.csv) 列表，并将列表限制为每个 .csv 文件 5,000 台设备或 5 MB。 此详细信息字段最多允许 128 个字符。
 

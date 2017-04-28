@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 1.  如果尚未使用，请通过 Apple Configurator 创建已注册的 iOS 设备的设备注册配置文件。 设备注册配置文件定义应用于设备的设置。
 
-    1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择“添加”。
+    1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择“添加”。
 
         ![创建设备注册配置文件页面](../media/pol-sa-corp-enroll.png)
 

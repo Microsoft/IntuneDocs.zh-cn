@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ __这将会对最终用户造成哪些不便？__ 需要时间安装应用、注
 
 * __提供个性化内容。__ 如果提供不具有部署针对性的说明，最终用户会觉得你没有仔细考虑他们的体验。 可使用此[面向 IT 管理员的可自定义的最终用户 Intune 注册模板](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c)创建针对最终用户的注册说明。
 
-* __寻找不同的沟通方式。__ 和[不同的学习方式](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)一样，用户偏好的信息使用方式也各有不同。 对于偏好视频（而非文档）的用户，第 9 频道提供[有关如何注册各种设备类型的视频版本](https://channel9.msdn.com/Series/IntuneEnrollment)等。 可将这些视频直接嵌入你自己的 [SharePoint 网站](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)或下载本地副本（视频或仅音频音轨）。
+* __寻找不同的沟通方式。__ 和[不同的学习方式](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)一样，用户偏好的信息使用方式也各有不同。 对于偏好视频（而非文档）的用户，第 9 频道提供[有关如何注册各种设备类型的视频版本](https://channel9.msdn.com/Series/IntuneEnrollment)等。 可将这些视频直接嵌入你自己的 [SharePoint 网站](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)或下载本地副本（视频或仅音频音轨）。
 
 * __深入了解。__ 最终用户的体验将会影响你的工作效率，了解他们的体验将有利于你更轻松地解决他们的问题。 了解最终用户获取应用的方式有利于你更轻松地诊断他们遇到的问题并更快地解决问题。
 
