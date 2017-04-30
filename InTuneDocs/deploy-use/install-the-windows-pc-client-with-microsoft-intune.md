@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
 
 ## <a name="instruct-users-to-self-enroll"></a>指示用户自行注册
 
-用户可通过访问[公司门户网站](http://portal.manage.microsoft.com)安装 Intune 客户端软件。 用户在 Web 门户中所见的确切信息有所不同，具体取决于帐户的 MDM 机构以及用户电脑的 OS 平台和/版本。
+用户可通过访问[公司门户网站](https://portal.manage.microsoft.com)安装 Intune 客户端软件。 用户在 Web 门户中所见的确切信息有所不同，具体取决于帐户的 MDM 机构以及用户电脑的 OS 平台和/版本。
 
 如果用户尚未分配 Intune 许可证，或尚未将组织的 MDM 机构设置为 Intune，则不会向用户显示任何注册选项。
 

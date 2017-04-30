@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 660d0c69fc09c6ec8b82185b3808269ef4bb6852
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/01/2017
 如果你尚未设置，请通过[将移动设备管理机构设置](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
 
 2. **配置 Android for Work 绑定**<br>
-   以 Intune 管理员身份，打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com)，转到“管理”**** &gt; “移动设备管理”**** &gt; “Android for Work”**** ，然后单击“配置”**** 打开 Google Play 的 Android for Work 网站。 这会在浏览器的新选项卡中打开。
+   以 Intune 管理员身份，打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，转到“管理”**** &gt; “移动设备管理”**** &gt; “Android for Work”**** ，然后单击“配置”**** 打开 Google Play 的 Android for Work 网站。 这会在浏览器的新选项卡中打开。
 
 3. **登录到 Google**<br>
    在 Google 的登录页上，输入将与此租户的所有 Android for Work 管理任务相关联的 Google 帐户。 这是在组织的 IT 管理员之间共享的 Google 帐户，用于在 Play for Work 控制台中管理和发布应用。
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/01/2017
 ### <a name="how-to-unbind-an-android-for-work-account"></a>如何取消绑定 Android for Work 帐户
 
 1. **取消绑定 Android for Work 绑定**<br>
-   以管理用户身份，打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com)，转到“管理”**** &gt; “移动设备管理”**** &gt; “Android for Work”**** ，然后单击“取消绑定”**** 。
+   以管理用户身份，打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，转到“管理”**** &gt; “移动设备管理”**** &gt; “Android for Work”**** ，然后单击“取消绑定”**** 。
 
 2. **同意删除 Android for Work 绑定**<br>
   单击“是”可删除绑定并从 Intune 取消注册所有 Android for Work 设备。

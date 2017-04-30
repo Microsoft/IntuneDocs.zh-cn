@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -46,7 +47,7 @@ ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
 
 ## <a name="create-a-default-access-rule"></a>创建默认访问规则
 
-1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，选择“**策略**”&gt;“**Exchange ActiveSync**”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**”&gt;“**Exchange ActiveSync**”。
 
 2.  在“**默认规则**”列表中，选择要应用于规则或个人例外未涵盖的所有移动设备的访问规则。 选择“保存”。
 
@@ -54,12 +55,7 @@ ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
 
 ## <a name="create-a-custom-access-rule"></a>创建自定义访问规则
 
-1. 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，选择“**策略**”&gt;“**Exchange ActiveSync**”。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“**策略**”&gt;“**Exchange ActiveSync**”。
 
 2.  在“**平台例外**”列表中，选择“**添加规则**”，然后创建自定义规则。 选择“保存”。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

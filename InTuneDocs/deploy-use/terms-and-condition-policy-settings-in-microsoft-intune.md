@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="create-a-terms-and-conditions-policy"></a>创建条款和条件策略
 
-1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
     ![条款和条件策略屏幕快照](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>部署条款和条件策略
 
-1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
 2.  在“条款和条件策略”列表中，选择要部署的策略，然后单击“管理部署”。
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>监视条款和条件策略
 
-1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
 2.  在“创建新报告”窗口中，单击“查看报告”。 此时将打开详细说明用户接受了你部署的哪些条款和条件的报告。
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>使用多个版本的条款和条件
 
-1.  在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，单击“策略”&gt;“条款和条件”。
 
 2.  选择要编辑的条款和条件策略，然后单击“编辑”。
 

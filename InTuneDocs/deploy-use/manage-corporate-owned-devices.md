@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 8ef5f26eced99dac547be727fc96e41c11d3a0e7
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/31/2017
 
 可通过 Intune 采用多种方法来管理组织或公司拥有的设备 (COD)，这具体取决于设备的类型、其购买方式及组织需求。 也可安装公司门户应用，注册和管理企业拥有的设备，如“自带设备办公”(BYOD) 方案中所述。
 
-默认情况下，适用于所有平台的设备都可在 Intune 中进行注册。 若要阻止设备注册，请使用管理员凭据登录 [Microsoft Intune 管理门户](http://manage.microsoft.com)。 选择“管理” > “移动设备管理” > “注册规则”，然后清除要阻止的平台对应的复选框。
+默认情况下，适用于所有平台的设备都可在 Intune 中进行注册。 若要阻止设备注册，请使用管理员凭据登录 [Microsoft Intune 管理门户](https://manage.microsoft.com)。 选择“管理” > “移动设备管理” > “注册规则”，然后清除要阻止的平台对应的复选框。
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>注册企业拥有的 iOS 设备
 

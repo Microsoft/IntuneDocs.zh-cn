@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 |**监视计算机上的文件和程序活动**|启用对计算机上的传入文件和传出文件以及程序活动的监视。 利用此设置，Endpoint Protection 可监视文件和程序何时开始运行，并将它们所执行的任何操作或针对它们执行的操作的相关信息通知你。<br /><br />建议的值： **是**|
 |**受监视的文件**|允许选择只监视传入文件、传出文件或所有文件。<br /><br />建议的值： **监视所有文件**|
 |**启用行为监视**|确保 Microsoft Intune Endpoint Protection 可检查客户端计算机上特定模式的可疑活动。<br /><br />建议的值： **是**|
-|**启用网络检查系统**|在客户端计算机上启用网络检查系统 (NIS)。 NIS 使用 [Microsoft Malware Protection Center（Microsoft 恶意软件防护中心）](http://go.microsoft.com/fwlink/?LinkId=234249) 中的已知漏洞签名来帮助检测和阻止恶意网络流量。<br /><br />建议的值： **是**|
+|**启用网络检查系统**|在客户端计算机上启用网络检查系统 (NIS)。 NIS 使用 [Microsoft Malware Protection Center（Microsoft 恶意软件防护中心）](https://go.microsoft.com/fwlink/?LinkId=234249) 中的已知漏洞签名来帮助检测和阻止恶意网络流量。<br /><br />建议的值： **是**|
 
   ![Endpoint Protection 的实时设置](./media/pol-sa-pc-policy-realtime.png)
 
