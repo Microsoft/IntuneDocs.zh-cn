@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 160b8a7fe883b8af61831b30b711ad0243a3ec08
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 > 请仔细考虑是希望仅使用 Intune（联机服务），还是使用带 Intune 的 System Center Configuration Manager（与联机服务相结合的本地软件解决方案）来管理移动设备。 设置移动设备管理机构后，如果没有 Microsoft 支持部门的帮助，将无法对其进行更改。 有关说明，请参阅[如果选择了错误的 MDM 机构设置怎么办](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
 
 
-1.  在“[Microsoft Intune 管理控制台](http://manage.microsoft.com)”中，选择“**管理员**”&gt;“**移动设备管理**”。
+1.  在“[Microsoft Intune 管理控制台](https://manage.microsoft.com)”中，选择“**管理员**”&gt;“**移动设备管理**”。
 
 2.  在“任务”  列表中，单击“设置移动设备管理机构” 。 将打开“设置 MDM 机构”  对话框。
 

@@ -15,9 +15,9 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
-ms.openlocfilehash: a5a4f11ae341480b2e674ca55a514b62831bdd60
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/21/2017
 
 作为 Intune 管理员，你可以从公司门户启用 Android 设备管理，包括 Samsung Knox 标准版设备。 然后，用户可以使用从 Google Play 提供的公司门户应用注册其设备。
 
-默认情况下，Android 设备可在 Intune 中进行注册。 若要阻止 Android 设备注册，请使用管理员凭据登录 [Microsoft Intune 管理门户](http://manage.microsoft.com)。 选择“管理员” > “移动设备管理” > “注册规则”，然后清除“允许 Android 设备”复选框。
+默认情况下，Android 设备可在 Intune 中进行注册。 若要阻止 Android 设备注册，请使用管理员凭据登录 [Microsoft Intune 管理门户](https://manage.microsoft.com)。 选择“管理员” > “移动设备管理” > “注册规则”，然后清除“允许 Android 设备”复选框。
 
 1.  **设置 Intune**<br>
     如果你尚未设置，请通过[将移动设备管理机构设置](prerequisites-for-enrollment.md#step-2-set-mdm-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。

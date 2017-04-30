@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
-ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ef1fbee09172a89e0f83cbe905a00f3a3ef25b05
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune 启用了 iPad、iPhone 和 macOS 设备的移动设备管理 (MDM)，并
     如果你尚未设置，请通过[将移动设备管理机构设置](prerequisites-for-enrollment.md#step-2-set-mdm-authority)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
 
 2.  **获取证书签名请求**<br>
-    以管理用户身份，打开 [Microsoft Intune 管理控制台](http://manage.microsoft.com)，转到“管理”&gt;“移动设备管理”&gt;“iOS 和 Mac OS X”&gt;“上传 APNs 证书”，然后选择“上传 APNs 证书请求”。 本地保存证书签名请求 (.csr) 文件。 .Csr 文件用于从 Apple 推送证书门户请求信任关系证书。
+    以管理用户身份，打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，转到“管理”&gt;“移动设备管理”&gt;“iOS 和 Mac OS X”&gt;“上传 APNs 证书”，然后选择“上传 APNs 证书请求”。 本地保存证书签名请求 (.csr) 文件。 .Csr 文件用于从 Apple 推送证书门户请求信任关系证书。
 
     ![上传 APNs 证书对话框](../media/Intune-iOS-enrollment-with-apns.png)
 
@@ -45,7 +45,7 @@ Intune 启用了 iPad、iPhone 和 macOS 设备的移动设备管理 (MDM)，并
     > 每年都需要续订（不是替换）此 APNs 证书。 使用此相同的 Apple ID 登录到 Apple 推送证书门户来续订证书，然后按照本主题中相同的说明下载该证书，并将其上传到 Intune。
 
 4.  **将 APNs 证书添加到 Intune**<br>
-    在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，转到“管理”&gt;“移动设备管理”&gt;“iOS 和 Mac OS X”&gt;“上传 APNs 证书”，然后选择“上传 APNs 证书”。 转到证书 (.pem) 文件，选择“打开”，然后输入“Apple ID”。 使用 APN 证书，Intune 可通过将策略推送到注册的移动设备注册并管理 iOS 设备。
+    在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，转到“管理”&gt;“移动设备管理”&gt;“iOS 和 Mac OS X”&gt;“上传 APNs 证书”，然后选择“上传 APNs 证书”。 转到证书 (.pem) 文件，选择“打开”，然后输入“Apple ID”。 使用 APN 证书，Intune 可通过将策略推送到注册的移动设备注册并管理 iOS 设备。
 
 5.  **告诉用户如何注册其设备以获取对公司资源的访问权限。**
 

@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44af7e7805843eeb6a2112afc89057c10c26f835
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ ms.lasthandoff: 04/14/2017
 6.  **将应用上传到 Intune**<br>
     上传已签名应用文件和你的代码签名证书，以便最终用户可以使用此应用。
 
-    1.  在 [Intune 管理控制台中](http://manage.microsoft.com)，单击**管理**&gt;**Windows Phone**。
+    1.  在 [Intune 管理控制台中](https://manage.microsoft.com)，单击**管理**&gt;**Windows Phone**。
 
     2.  单击“上传已签名的应用文件”并用 Intune 管理员 ID 进行签名。
 
