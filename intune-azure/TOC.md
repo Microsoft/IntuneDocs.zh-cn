@@ -118,7 +118,6 @@
 #### [适用于 iOS 的主屏幕布局](configure-devices/home-screen-settings-for-ios.md)
 #### [适用于 iOS 的应用通知](configure-devices/app-notification-settings-for-ios.md)
 #### [适用于 iOS 的共享设备](configure-devices/shared-device-settings-for-ios.md)
-#### [适用于 iOS 的 Web 内容筛选器](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [配置设备限制](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +193,8 @@
 ## [什么是条件访问？](conditional-access/what-is-conditional-access.md)
 ## 如何
 ### [安装 Exchange 内部部署连接器](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [创建条件访问策略](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [创建并分配条件性访问策略](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [监视器条件性访问符合性](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # 访问控制
 ## [什么是基于角色的访问控制？](access-control/role-based-access-control.md)
