@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
 |**需要对存储卡进行加密**|需要对存储在外部存储（如 SD 卡）上的数据进行加密（在支持的设备上）。
 <sup>1</sup>运行 Windows 8.1 的设备的其他信息
 
--   若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](http://support.microsoft.com/kb/3013816)。
+-   若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](https://support.microsoft.com/kb/3013816)。
 
 -   如果对 Windows 8.1 设备启用此设置，则该设备的所有用户必须都具有 Microsoft 帐户。
 
@@ -82,9 +83,4 @@ ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
