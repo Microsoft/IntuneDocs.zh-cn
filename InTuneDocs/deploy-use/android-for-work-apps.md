@@ -51,7 +51,7 @@ ms.lasthandoff: 03/10/2017
 1. 转到 Google Play 开发人员控制台 [play.google.com/apps/publish](https://play.google.com/apps/publish)。
 2. 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。 如果是首次登录，则必须注册，然后支付费用以成为 Google 开发人员计划的成员。
 3. 在控制台中，选择“添加新应用程序”。
-4. 采用与将任何应用发布到 Google Play 商店相同的方式，上传应用并提供有关应用的信息。 但是，你必须选择设置“仅使此应用程序可供我的组织(< *组织名称 *>)使用”****，如下所示。<br>
+4. 采用与将任何应用发布到 Google Play 商店相同的方式，上传应用并提供有关应用的信息。 但是，你必须选择设置“仅使此应用程序可供我的组织(<组织名称>)使用”**，如下所示。<br>
   ![用于仅使此应用可供你的组织使用的选项](media/restrict.png)<br>
 这可确保应用只能供你的组织使用，而在公开的 Google Play 商店中不可用。
 有关如何上传和发布 Android 应用的详细信息，请参阅 [Google 开发人员控制台帮助](https://support.google.com/googleplay/android-developer/answer/113469)。
