@@ -94,6 +94,8 @@
 ### [配置公司门户应用](manage-apps/company-portal-app.md)
 ## 如何使用应用保护策略
 ### [创建和分配应用保护策略](manage-apps/app-protection-policies.md)
+### [准备使用 WIP 应用保护策略](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [创建和分配 WIP 应用保护策略](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android 设置](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS 设置](manage-apps/ios-app-protection-policy-settings.md)
 ### [验证应用保护策略](manage-apps/validate-app-protection-policies.md)
@@ -151,6 +153,7 @@
 
 ### [配置 Windows 10 版本升级设置](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [配置 Windows 10 教育版设置](configure-devices/how-to-configure-education-settings.md)
+### [配置 iOS 教育设置](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [配置 Windows 更新商业版设置](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [配置证书](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
