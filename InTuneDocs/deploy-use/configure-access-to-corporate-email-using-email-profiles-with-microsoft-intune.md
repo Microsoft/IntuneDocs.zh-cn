@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/27/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
-ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -131,4 +131,5 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 > [!NOTE]
 > - 对于 Android for Work，请确保除了部署相应的电子邮件配置文件外，还部署了 Gmail 或 Nine Work 应用。
 > - 如果想要从设备中删除电子邮件配置文件，则请编辑部署并删除包含该设备的任何组。 请注意，如果电子邮件配置文件是设备上唯一的电子邮件配置文件，则无法通过此方法将其删除。
+> - 如果更改以前部署的电子邮件配置文件，最终用户可能会看到一条消息，请求他们批准重新配置其电子邮件设置。
 

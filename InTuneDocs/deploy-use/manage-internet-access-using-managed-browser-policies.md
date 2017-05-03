@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: e45d1f0cec7d07ea7d01be0f6ec8443e6521681a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ Android – 无法使用托管浏览器应用。<br /><br />
 
 -   运行 iOS 8.0 及更高版本的设备
 
-Intune 托管浏览器支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)打开 Web 内容。
+Intune 托管浏览器支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)打开 Web 内容。
 
 ## <a name="create-a-managed-browser-policy"></a>创建托管浏览器策略
 
@@ -110,7 +110,7 @@ Microsoft 会自动收集有关性能和托管浏览器使用情况的匿名数�
 
     -   对于 https，使用端口 443
 
-    不支持对端口号使用通配符。 例如，**http&colon;//www&period;contoso&period;com:*;**和**http&colon;//www&period;contoso&period;com: /*;** 不受支持。
+    不支持对端口号使用通配符。 例如，**http&colon;//www&period;contoso&period;com:*;** 和 **http&colon;//www&period;contoso&period;com: /*;** 不受支持。
 
 -   使用下表了解指定 URL 时可以使用的允许模式：
 
