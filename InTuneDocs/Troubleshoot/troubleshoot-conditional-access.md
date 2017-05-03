@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ ms.lasthandoff: 03/04/2017
     
         -    遇到这种情况的设备需要用户设置一个安全启动密码。 用户会在公司门户应用中看到一条设备通知，通知中要求为设备设置一个启动密码。 点击设备通知并确认现有 PIN 或密码后，在“安全启动”屏幕上选择“需要 PIN 才能启动设备”选项。 然后在公司门户应用中点击设备的“检查符合性”按钮。 现在设备应该被标识为已加密。
     
-        -     某些设备制造商使用默认 PIN，而不是用户设置的机密 PIN 来加密其设备。 Intune 会将使用默认 PIN 的加密识别为不安全，因为这种加密方式会让设备上的数据受到威胁，使数据可能泄露给对设备具有物理访问权限的恶意用户。 如果存在此问题，建议使用[应用保护策略](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
+        -     某些设备制造商使用默认 PIN，而不是用户设置的机密 PIN 来加密其设备。 Intune 会将使用默认 PIN 的加密识别为不安全，因为这种加密方式会让设备上的数据受到威胁，使数据可能泄露给对设备具有物理访问权限的恶意用户。 如果存在此问题，建议使用[应用保护策略](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。
 
 ## <a name="policy-issues"></a>策略问题
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 03/04/2017
 ### <a name="exchange-connector-logs"></a>Exchange Connector 日志
 
 #### <a name="general-log-information"></a>常规日志信息
-若要查看 Exchange Connector 日志，请使用 [Server Trace Viewer Tool]（服务跟踪查看器工具 (https://msdn.microsoft.com/zh-cn/library/ms732023(v=vs.110).aspx'）。 此工具需要下载 Windows Server SDK。
+若要查看 Exchange Connector 日志，请使用 [Server Trace Viewer Tool]（服务跟踪查看器工具 (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'）。 此工具需要下载 Windows Server SDK。
 
 >[!NOTE]
 >该日志位于 C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs。 该日志包含在 30 个日志文件的系列中，其中以 *Connector0.log* 开始并以 *Connector29.log* 结束。 一个日志中的数据累积 10 MB 后，将滚动更新到另一个日志。 日志到达 Connector29 后，将重新从 Connector0 开始，覆盖先前的日志文件。
