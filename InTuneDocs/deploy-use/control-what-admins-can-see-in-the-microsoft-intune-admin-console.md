@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +40,7 @@ ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
     -   **只读访问**
     -   **支持人员 - 组节点**
 
-    完全访问和只读访问无需加以说明。 <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    完全访问和只读访问无需加以说明。 <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **支持人员 - 组节点**将管理员可以查看的内容和执行的操作限制为：
 
@@ -70,9 +71,4 @@ ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
         -   重置密码
 
 当你配置的管理员下次打开 Intune 管理控制台时，他们将获得你指定的访问级别。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
