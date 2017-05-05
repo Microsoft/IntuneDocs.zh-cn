@@ -1,5 +1,6 @@
 # 简介
 ## [什么是 Azure 门户预览？](introduction/what-is-microsoft-intune.md)
+## [什么是 Intune for Education？](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Azure 中的 Intune 功能](introduction/ui-changes-in-microsoft-intune.md)
 ## 入门
 <!---(introduction/get-started.md) --->
@@ -82,10 +83,13 @@
 #### [iOS LOB 应用](manage-apps/ios-lob-app.md)
 #### [Web 应用](manage-apps/web-app.md)
 #### [Windows Phone 8.1 应用商店应用](manage-apps/windows-phone-8-1-store-app.md)
+#### [Windows Phone LOB 应用](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows 应用商店应用](manage-apps/windows-store-app.md)
+#### [Windows LOB 应用](manage-apps/windows-line-of-business-app.md)
 ### [分配应用](manage-apps/deploy-apps.md)
 ### [监视应用](manage-apps/monitor-apps.md)
-### [使用应用配置策略](manage-apps/app-configuration-policies.md)
+### [使用应用配置文件](manage-apps/app-configuration-policies.md)
+### [使用 iOS 应用预配配置文件](manage-apps/ios-app-provisioning-profile.md)
 ### [选择性地擦除应用](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [使用批量采购的应用](manage-apps/volume-purchased-apps.md)
