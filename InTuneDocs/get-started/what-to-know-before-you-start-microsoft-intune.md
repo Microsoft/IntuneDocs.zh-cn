@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 7171dab36ace4915b51def2dd717e63df8438135
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +47,7 @@ Intune 设备管理提供[这些功能](mobile-device-management-capabilities-in
 
 ### <a name="windows-pc-software-client"></a>Windows 电脑软件客户端
 
-作为一种备用注册方法，可在 Windows 电脑上部署和安装 [Intune 软件客户端](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)。 可使用 Intune 软件客户端管理 Windows 7 和更高版本的电脑，Windows 10 家庭版除外。 使用可提供[这些功能](windows-pc-management-capabilities-in-microsoft-intune.md)的客户端软件管理电脑。
+作为一种备用注册方法，可在 Windows 电脑上部署和安装 [Intune 软件客户端](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)。 可使用 Intune 软件客户端管理 Windows 7 和更高版本的电脑，Windows 10 家庭版除外。
 
 ### <a name="exchange-activesync-management"></a>Exchange ActiveSync 管理
 
