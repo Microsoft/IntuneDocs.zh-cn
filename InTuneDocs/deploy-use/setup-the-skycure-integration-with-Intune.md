@@ -15,14 +15,14 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 6ff56f736c289dbc9a8340ad76e044363acbfea5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 18afa2b84c90e77280daf7ed9b1b8357365f7380
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="setup-the-skycure-integration-with-intune"></a>使用 Intune 设置 Skycure 集成
+# <a name="set-up-the-skycure-integration-with-intune"></a>使用 Intune 设置 Skycure 集成
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -54,7 +54,7 @@ Skycure 支持与 Intune 集成的两种模式：
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>在 Intune 和 Skycure 之间设置只读集成
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Skycure 管理员凭据是必须属于 Azure Active Directory 中有效用户的电子邮件，否则登录失败。 Skycure 使用 Azure Active Directory 对使用单一登录 (SSO) 的管理员进行身份验证。
 
 1.  转到 [Skycure 管理控制台](https://aad.skycure.com)。
@@ -75,7 +75,7 @@ Skycure 支持与 Intune 集成的两种模式：
 
     ![iOS 应用完成屏幕](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > 为 **Skycure Android** 应用和**管理**应用重复相同的过程。
 
 ### <a name="add-an-azure-ad-security-group-into-skycure"></a>将 Azure AD 安全组添加到 Skycure

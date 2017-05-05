@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 742fac9c401c24bfc0f2500a238c41fa00c47fd3
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -47,6 +48,8 @@ Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 8.0 和�
 > [!TIP]
 > 在 iOS 设备的监管模式下，你可以使用 Apple Configurator 来锁定设备，以将设备的功能限制为完成特定的业务目的。 监管模式通常仅适用于公司拥有的设备。
 
+可以在 [此处](https://support.apple.com/en-us/HT201365)阅读有关激活锁定的详细信息。
+
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Intune 如何帮助你管理激活锁定
 Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定状态。 仅就监管设备而言，Intune 可以检索绕过激活锁定代码并直接将代码发布到设备。 如果已擦除设备，可通过使用空的用户名和代码作为密码来直接访问设备。
 
@@ -54,7 +57,15 @@ Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定�
 
 -   用户能够获得 Find My iPhone 应用所具有的安全优势。
 
--   你可以让用户在知道如下事实的情况下进行工作：当需要重新调整设备的用途时，你可以停用或解锁设备。
+-   你可以让用户在知道如下事实的情况下进行工作：当需要重新调整设备的用途时，可以停用或解锁设备。
+
+## <a name="before-you-start"></a>开始之前
+
+必须先在设备上启用“激活锁定”，然后才能绕过它。 为此，请执行以下操作：
+
+1. 使用[借助 Microsoft Intune 策略管理设备的设置和功能](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)主题中的信息创建 iOS [设备配置策略](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)。
+2. 在设置页面的“注册”部分中，将设置“允许在设备处于监督模式时使用激活锁定”配置为“是”。
+3. 保存策略，然后将其部署到要对其管理“激活锁定”绕过的设备。
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>如何从 Intune 管理员控制台使用绕过激活锁定
 > [!IMPORTANT]
@@ -94,9 +105,4 @@ Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定�
 ### <a name="see-also"></a>另请参阅
 [停用设备](retire-devices-from-microsoft-intune-management.md)
 [使用远程锁定和密码重置功能帮助保护设备](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

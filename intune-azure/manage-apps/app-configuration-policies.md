@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 73360154765d53fe1f42e4e97699ad9385bfda6f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -54,8 +54,8 @@ Microsoft Intune 中的应用配置策略可提供用户在运行应用时可能
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “其他” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“管理应用”。
-1.  在“管理应用”工作负荷中，选择“管理” > “应用配置策略”。
+3. 在“Intune”边栏选项卡上，选择“移动应用”。
+1.  在“移动应用”工作负荷中，选择“管理” > “应用配置策略”。
 
 2.  在“策略列表”边栏选项卡中，选择“添加”。
 

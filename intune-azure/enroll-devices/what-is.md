@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 03/17/2017
 
 本主题介绍了 Intune 管理中的注册并列出了注册移动设备的不同方法。
 
-在 Intune 中注册设备（包括 Windows 电脑）以便对其进行管理。 我们在 Intune 文档中将此功能称为移动设备管理 (MDM)。 设备注册为移动设备（而不是电脑）时，会向其颁发 MDM 证书，设备随后会使用这些证书与 Intune 服务进行通信。
+在 Intune 中注册设备以便对其进行管理。 我们在 Intune 文档中将此功能称为移动设备管理 (MDM)。 在 Intune 中注册设备后，会向其颁发 MDM 证书，设备随后会使用这些证书与 Intune 服务进行通信。
 
 注册设备的方式取决于设备类型、所有权和所需的管理级别。 “自带设备办公”(BYOD) 注册允许用户注册其个人电话、平板电脑或电脑。 通过公司自有设备 (COD) 注册，可实现自动注册、共享设备或预授权注册要求等管理方案。
 
-若使用 Exchange ActiveSync（在本地或在云中托管），无需注册就可启用简单的 Intune 管理（详细信息稍后发布）。 建议将 Windows 电脑作为移动设备管理，方法如下所述。 也可以使用 [Intune 客户端软件](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)将其作为电脑管理。
+若使用 Exchange ActiveSync（在本地或在云中托管），无需注册就可启用简单的 Intune 管理（详细信息稍后发布）。 建议将 Windows 电脑作为移动设备管理，方法如下所述。
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>设备注册方法概述
@@ -53,21 +53,20 @@ ms.lasthandoff: 03/17/2017
 |**[USB-SA](#usb-sa)**|    是 |    可选 |    否| [详细信息](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|    否 |    否    | 否|[详细信息](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
-
-
 **Windows 注册方法**
 
 | **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否 |    是 |    否 | 详细信息稍后发布|
+|**[BYOD](#byod)** | 否 |    是 |    否 | [详细信息](#enroll-windows-devices.md)|
 |**[DEM](#dem)**|    否 |否 |否    |[详细信息](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android 注册方法**
 
 | **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |    否 | 详细信息稍后发布|
+|**[BYOD](#byod)** | 否|    是 |    否 | [详细信息](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|    否 |否 |否    |[详细信息](enroll-ios-devices-using-device-enrollment-program.md)|
+|[**Android for Work**](#android-for-work)| 否 | 是 | 否| [详细信息](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## <a name="byod"></a>BYOD
@@ -112,21 +111,11 @@ IT 管理员通过 USB 使用 Apple Configurator 手动准备每台公司自有�
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>使用 Exchange ActiveSync 和 Intune 管理移动设备
 可以使用 EAS MDM 策略，通过 Intune 管理未注册、但连接到 Exchange ActiveSync (EAS) 的移动设备。 Intune 使用 Exchange Connector 与 EAS 在本地或云托管环境中进行通信。 详细信息稍后发布。
 
-
-## <a name="windows-pc-management-with-intune"></a>使用 Intune 管理 Windows 电脑  
-还可以使用 Microsoft Intune 管理使用 Intune 客户端软件的 Windows 电脑。 使用 Intune 客户端管理的电脑可以：
-
- - 报告软件和硬件清单
- - 安装桌面应用程序（例如 .exe 和 .msi 文件）
- - 管理防火墙设置
-
-使用 Intune 客户端软件管理的电脑不能完全擦除，但可以选择性擦除。 使用 Intune 软件客户端管理的电脑不能利用许多 Intune 管理功能，如条件访问、VPN 和 Wi-Fi 设置或证书和电子邮件配置的部署。 详细信息稍后发布。
-
 ## <a name="supported-device-platforms-and-browsers"></a>支持的设备平台和浏览器
 
 请参阅 [Intune 支持的设备和浏览器](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理
 
-当移动设备与 Intune 服务通信时，将自动续订 MDM 证书。 如果移动设备（不是电脑）被擦除，或者它们在一段时间内无法与 Intune 服务通信，则 MDM 证书将不会续订。 MDM 证书过期 180 天后，设备将从 Azure 门户中删除。
+当移动设备与 Intune 服务通信时，将自动续订 MDM 证书。 如果移动设备被擦除，或者它们在一段时间内无法与 Intune 服务通信，则 MDM 证书将不会续订。 MDM 证书过期 180 天后，设备将从 Azure 门户中删除。
 

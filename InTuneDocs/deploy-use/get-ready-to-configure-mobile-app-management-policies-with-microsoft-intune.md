@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -86,7 +86,7 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 
   - 创建 SharePoint Online 和 Exchange Online 工作帐户。 不支持 Exchange 内部部署和 SharePoint 内部部署。
 
--   **用于新式验证的 Skype for Business Online 设置**。 有关详细信息，请参阅[启用新式验证](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
+-   **用于新式验证的 Skype for Business Online 设置**。 有关详细信息，请参阅[启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
 
 
 - Azure Active Directory (Azure AD) 用于创建用户。 当用户打开应用并输入其凭据时，Azure AD 对用户进行身份验证。
@@ -96,7 +96,7 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 
 ### <a name="create-users-and-assign-microsoft-intune-licenses"></a>创建用户并分配 Microsoft Intune 许可证
 
-1.  使用管理员凭据登录到 [Office 门户](http://portal.office.com)。
+1.  使用管理员凭据登录到 [Office 门户](https://portal.office.com)。
 
 2.  按照 [Intune 评估指南](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)的**完成 30 天 Intune 评估的步骤**部分所述，添加用户，然后分配 Intune 许可证。 若要赋予用户访问 Office 门户、Azure AD 门户和 Azure 门户的权限，请将“**全局管理员**”角色分配给此用户。
 

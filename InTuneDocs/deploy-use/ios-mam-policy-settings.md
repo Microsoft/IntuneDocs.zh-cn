@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/14/2017
 | **加密应用数据** | 对于策略托管应用，使用 iOS 提供的设备级别的加密方案对数据进行静态加密。 需要 PIN 时，根据应用保护策略中的设置对数据进行加密。 <br><br> 转到[此处](https://support.apple.com/HT202739)官方 Apple 文档，查看哪些 iOS 加密模块由 FIPS 140-2 认证或挂起 FIPS 140-2 证书。 <br><br> 指定何时加密应用中工作或学校数据。 选择： <ul><li>**锁定设备时**：锁定设备时，加密与此策略关联的所有应用数据。</li><li>**锁定设备并具有打开的文件时**：锁定设备时，对与此策略相关联的所有应用数据进行加密，当前已在应用中打开的文件中的数据除外。</li><li>**设备重启后**：设备重启后，对与此策略相关联的所有应用数据进行加密，直到首次解锁设备。</li><li>**使用设备设置**：基于设备上的默认设置对应用数据进行加密。 启用此设置时，用户必须设置并使用 PIN 才能访问其设备。  如果未为设备访问设置 PIN，则不启动应用，并将通过“公司要求先启用设备 PIN 才能访问此应用”消息提示用户设置 PIN。 </li></ul> | 当设备锁定 |
 | **禁用联系人同步** | 选择“是”，阻止应用将数据保存到设备上的本机“联系人”应用。 如果选择“否”，应用可将数据保存到设备上的本机“联系人”应用。 <br><br>执行选择性擦除从应用删除工作或学校数据时，将删除从应用直接同步到本机“联系人”应用的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 目前仅适用于 Microsoft Outlook 应用。 | 否 |
 | **禁用打印** | 选择“是”，阻止应用打印工作或学校数据。 | 否 |
-
+| **选择可保存公司数据的存储服务** | 用户可以保存到所选的服务（OneDrive for Busines、SharePoint 和本地存储）中。 将阻止所有其他服务。 | OneDrive for Business 和 SharePoint |
 
 > [!NOTE]
 > 无数据重定位设置控制 iOS 设备上由 Apple 托管的打开方式功能。 要使用管理 Apple 打开方式，请参阅[使用 Microsoft Intune 管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)。
@@ -72,6 +72,7 @@ ms.lasthandoff: 04/14/2017
 | **阻止在已越狱或取得 root 权限的设备上运行托管应用** |  选择“是”，阻止在已越狱或取得 root 权限的设备上运行此应用。 用户仍能够将此应用用于个人任务，但必须使用其他设备访问此应用中的工作或学校数据。 | 是 |
 | **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，管理员在策略中启用 PIN，则用户打开 MAM 应用就必须输入 PIN。 使用此设置时，用户在 **30 分钟**（默认值）内无需在任何 MAM 应用上再次输入 PIN。</li><li>**脱机宽限期**：指 MAM 应用可脱机运行的分钟数，需在重新检查应用访问要求之前指定该时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。 此时间段到期后，应用将要求用户对 AAD 进行身份验证，以便应用可以继续运行。</li></ul>| 超时：30 <br><br> 脱机：720 |
 | **擦除应用数据前的脱机时间间隔(天)** | 在脱机运行相应天数（由管理员定义）后，应用会自行执行选择性擦除。 此选择性擦除功能与管理员可在 MAM 擦除工作流中启动的擦除相同。 <br><br> | 90 天 |
+| **托管设备 PIN 后禁用应用 PIN** | 在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 | 否 |
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 应用的加载项
 

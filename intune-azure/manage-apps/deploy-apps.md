@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -76,8 +76,8 @@ ms.lasthandoff: 02/18/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“管理应用”。
-1. 在“管理应用”工作负荷中，选择“管理” > “应用”。
+3. 在“Intune”边栏选项卡上，选择“移动应用”。
+1. 在“移动应用”工作负荷中，选择“管理” > “应用”。
 2. 在“应用列表”边栏选项卡中，单击要分配的应用。
 3. 在“<应用名称> - 概述”边栏选项卡上，选择“管理” > “分配”。
 4. 选择“选择组”，然后在“选择组”边栏选项卡上，选择要将应用分配到的 Azure AD 组。

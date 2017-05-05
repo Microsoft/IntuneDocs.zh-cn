@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 02/18/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “其他” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“管理应用”。
+3. 在“Intune”边栏选项卡上，选择“移动应用”。
 1. 在“移动应用”边栏选项卡上，选择“设置” > “适用于企业的 Windows 应用商店”。
 2. 单击“启用”。
 3. 如果尚未这样做，请单击适用于企业的 Windows 应用商店的注册链接，并按之前详述的步骤关联帐户。
@@ -67,14 +67,14 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="synchronize-apps"></a>同步应用
 
-1. 在“管理应用”工作负荷中，选择“设置” > “适用于企业的 Windows 应用商店”。
+1. 在“移动应用”工作负荷中，选择“设置” > “适用于企业的 Windows 应用商店”。
 2. 单击“同步”，将从 Windows 应用商店购买的应用同步到 Intune。
 
 ## <a name="assign-apps"></a>分配应用
 
 分配应用商店中应用的方式与分配任何其他 Intune 应用的方式相同。 有关详细信息，请参阅[如何使用 Microsoft Intune 将应用分配到组](deploy-apps.md)。 但是，不是从“所有应用”页面分配应用，而是从“获得许可的应用”页面分配应用。
 
-分配适用于企业的 Windows 应用商店的应用时，安装此应用的每个用户都会使用&1; 个许可证。 如果使用了部署应用的所有可用许可证，则你将无法再部署任何副本。 必须执行下列操作之一：
+分配适用于企业的 Windows 应用商店的应用时，安装此应用的每个用户都会使用 1 个许可证。 如果使用了部署应用的所有可用许可证，则你将无法再部署任何副本。 必须执行下列操作之一：
 * 从一些设备上卸载应用。
 * 减小当前部署的范围，仅针对具有足够许可证的用户。
 * 从适用于企业的 Windows 应用商店中购买应用的更多副本。

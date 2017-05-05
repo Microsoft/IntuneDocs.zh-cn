@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/14/2017
 **使用 MAM 应用保护有什么好处？** MAM 可保护应用程序内组织的数据。 通过 MAM-WE，可以在几乎任何设备上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。 许多生产型应用，例如 Microsoft Office 应用，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
 
 **MAM 支持哪些设备配置？** Intune MAM 支持两种配置：
-  1. **Intune MDM + MAM**：这是首次启动 MAM 时它所支持的第一个配置。 IT 管理员仅可在已进行 Intune 移动设备管理 (MDM) 注册的设备上使用 MAM 和应用保护策略管理应用。 若要使用 MDM + MAM 管理应用，客户应使用 http://manage.microsoft.com 上的 Intune 独立控制台。
+  1. **Intune MDM + MAM**：这是首次启动 MAM 时它所支持的第一个配置。 IT 管理员仅可在已进行 Intune 移动设备管理 (MDM) 注册的设备上使用 MAM 和应用保护策略管理应用。 若要使用 MDM + MAM 管理应用，客户应使用 https://manage.microsoft.com 上的 Intune 独立控制台。
 
   2. **无需设备注册的 MAM**：无需设备注册的 MAM 或 MAM-WE 使 IT 管理员可以在未进行 Intune MDM 注册的设备上使用 MAM 和应用保护策略管理应用。 这意味着可以在进行了第三方 EMM 提供程序注册的设备上通过 Intune 管理应用。 若要使用 MAM-WE 管理应用，客户应使用 http://portal.azure.com 上的 Azure 门户中的 Intune 控制台。
 

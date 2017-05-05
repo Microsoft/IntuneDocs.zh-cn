@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
-ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 5211d2222e5e8ef9328f60ed13f0146925194c5f
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,11 +26,7 @@ ms.lasthandoff: 02/10/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-本指南适用于负责企业中的设备管理的系统管理员。 有关在移动设备上使用 Intune 的帮助，请参阅[有关 Intune 公司门户的常见问题](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)。
-
-设置 Microsoft Intune 之前，请查看本主题以及[启动 Microsoft Intune 前须知](what-to-know-before-you-start-microsoft-intune.md)中列出的其他要求。
-
-使用下列部分中的信息来规划 Microsoft Intune 客户端的网络流量。
+本指南可帮助 Intune 管理员了解 Intune 服务的网络要求。 可以使用此信息了解代理设置所需的带宽要求和 IP 地址及端口设置。
 
 ## <a name="average-network-traffic"></a>平均网络流量
 该表列出了对于每个客户端在网络上传输的常见内容的近似大小和频率。

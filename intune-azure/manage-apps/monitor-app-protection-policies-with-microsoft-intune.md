@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 将移动应用管理 (MAM) 策略应用到用户后，可在 [Azure 门户](https://portal.azure.com)的 Intune 应用保护边栏选项卡中监视策略的合规性状态。 可找到的信息包括受 MAM 策略影响的用户、它的合规性状态和用户可能遭遇的任何问题。
 
-可在&3; 个不同的位置监视合规性状态：
+可在 3 个不同的位置监视合规性状态：
 
 -   摘要视图
 
@@ -42,8 +43,8 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “其他” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“管理应用”。
-4. 在“管理应用”工作负荷中，选择“监视” > “应用保护用户状态”，以查看摘要视图：
+3. 在“Intune”边栏选项卡上，选择“移动应用”。
+4. 在“移动应用”工作负荷中，选择“监视” > “应用保护用户状态”，以查看摘要视图：
 
 ![“Intune 移动应用程序管理”边栏选项卡上的“摘要”磁贴。](../media/app-protection-user-status-summary.png)
 
@@ -93,7 +94,7 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 可从详细视图中找到相同报表，还可通过其他报表了解 MAM 策略的合规性状态：
 
-![屏幕快照 -&4;](../media/MAM-reporting-7.png)
+![屏幕快照 - 4](../media/MAM-reporting-7.png)
 
 -   **应用保护用户报表：**概述了可在以上详细视图部分下的“用户状态”中找到的相同信息。
 
@@ -109,7 +110,7 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
         -   已签入所有应用，但应用还未获取任何 MAM 策略。
 
-![屏幕快照 -&2;](../media/MAM-reporting-4.png)
+![屏幕快照 - 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>表格分组
 
@@ -126,20 +127,15 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 1. 在“Intune 移动应用程序管理”边栏选项卡中，选择“应用保护报表”。
 
-    ![屏幕快照 -&6;](../media/app-protection-report-csv-2.png)
+    ![屏幕快照 - 6](../media/app-protection-report-csv-2.png)
 
 2. 选择“是”以保存报表，然后选择“另存为”，并选择要在其中保存报表的文件夹。
 
-    ![屏幕快照 -&7;](../media/app-protection-report-csv-1.png)
+    ![屏幕快照 - 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>另请参阅
 [管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [Android 应用由应用保护策略托管时会出现的情况](app-protection-enabled-android-apps.md)
 * [iOS 应用由应用保护策略托管时会出现的情况](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
