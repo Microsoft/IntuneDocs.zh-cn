@@ -1,5 +1,6 @@
 # 了解和探索
 ## [Intune 简介](understand-explore/introduction-to-microsoft-intune.md)
+## [教育的 Intune](understand-explore/introduction-to-intune-education.md)
 ## [注册免费试用版](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
 ## [评估 Intune MDM](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
 ### [创建用于组织用户和设备的组](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
