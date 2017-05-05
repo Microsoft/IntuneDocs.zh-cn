@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 3794981387e73176152c212854a97b4333023f5d
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -34,7 +35,7 @@ Intune 公司门户向用户提供对公司数据和应用的访问权限。 公
 -   **公司门户应用**：在使用 Intune.管理的设备上可用的一个应用程序。 深入了解适用于 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) 和 [Windows](/Intune/EndUser/using-your-windows-device-with-intune)的公司门户应用。
 
 
-- **公司门户网站**：一个可让最终用户通过公司门户应用完成大部分可执行任务的网站。 Intune 公司门户 URL 为 [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com)。 有关此网站的详细信息，请参阅[使用 Intune 公司门户网站](/Intune/EndUser/using-the-intune-company-portal-website)。
+- **公司门户网站**：一个可让最终用户通过公司门户应用完成大部分可执行任务的网站。 Intune 公司门户 URL 为 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)。 有关此网站的详细信息，请参阅[使用 Intune 公司门户网站](/Intune/EndUser/using-the-intune-company-portal-website)。
 
 > [!TIP]
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。
@@ -89,9 +90,4 @@ Intune 公司门户向用户提供对公司数据和应用的访问权限。 公
 >[!div class="step-by-step"]
 
 >[&larr;**创建策略和应用**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**注册设备**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

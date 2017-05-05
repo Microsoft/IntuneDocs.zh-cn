@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>部署批量购买的应用
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“应用”&gt;“托管软件”&gt;“批量购买应用”。 此列表显示已从 Apple VPP 服务同步的所有应用。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“应用”&gt;“应用” &gt;“批量购买应用”**V**。 此列表显示已从 Apple VPP 服务同步的所有应用。
 
 2.  选择你想要部署的应用，选择“管理部署”，然后按照[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)主题中的说明完成应用的上载、创建和部署。
 
@@ -77,24 +78,16 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 
 若要回收许可证，必须将部署操作更改为“卸载”。 卸载应用后，将回收许可证。
 
-具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple 批量购买计划。 继续安装应用前，他们必须执行此操作。
-
-> [!TIP]
-> 查看 **VPP 条款状态**列以查看向其部署应用的每个用户的接受状态。
+具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 继续安装应用前，他们必须执行此操作。
 
 如果没有更多的许可证可用，则部署将失败。
 
 ## <a name="to-monitor-apple-vpp-apps"></a>监视 Apple VPP 应用
-你可以从“托管软件”&gt;“批量购买的应用”节点中的“应用”工作区内监视已部署的 VPP 应用以及使用的许可证数。
+你可以从“批量购买的应用”节点中的“应用”工作区内监视已部署的 VPP 应用以及使用的许可证数。
 
 > [!TIP]
 > 你也可以使用应用“筛选器”来检查每个应用的安装状态。
 
 ### <a name="see-also"></a>另请参阅
 [在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

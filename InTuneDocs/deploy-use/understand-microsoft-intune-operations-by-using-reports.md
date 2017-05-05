@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/28/2017
 ## <a name="using-reports"></a>使用报表
 Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 报表可以帮助你确认当前需求以及预测将来的花费。 “报表”  工作区为你提供创建和管理报表的工具。 
 
-### <a name="report-types"></a>报表类型
+## <a name="report-types"></a>报表类型
 
 |报表类型|描述|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 |**运行状况证明报告**|显示移动设备的运行状况。|
 |**Mac OS X 硬件报表**|显示所选择的组中所有已注册的 Mac OS X 设备的硬件详细信息。 若要了解从这些设备收集到的硬件清单，请参阅[在 Microsoft Intune 中了解你的设备清单](understand-your-devices-with-inventory-in-microsoft-intune.md)。|
 |**Mac OS X 软件报表**|显示所选择的组中的所有 Mac OS X 设备上安装的软件。 该报表列出了软件名称（作为软件包 ID）、简短版本（或友好）名称以及已安装软件的设备数目。|
+|**Windows 信息保护报告**|显示管理的设备上 Windows 信息保护 (WIP) 操作的相关信息。|
+|**运行状况证明报告**|显示用于托管设备的 Windows 运行状况证明服务报告的信息。|
 
-#### <a name="to-create-a-report"></a>创建报表
+## <a name="to-create-a-report"></a>创建报表
 
 1.  在 Intune 管理控制台中，选择“**报表**”。 然后选择要生成的报表类型，如上表所述。
 

@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 9ebfadd945916b6be8225b9e07d67100e3f91222
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: eae3a7d0771724076680ec7152b09e7364603880
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/18/2017
 > [!Tip]
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。
 
-自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“管理应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。
+自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“移动应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。
 
 ## <a name="company-contact-information-and-privacy-statement"></a>公司联系人信息和隐私声明
 公司名称显示为公司门户的标题。 联系人信息和详细信息将在公司门户的“联系 IT 部门”屏幕中向用户显示。 当用户单击隐私链接时，将显示隐私声明。

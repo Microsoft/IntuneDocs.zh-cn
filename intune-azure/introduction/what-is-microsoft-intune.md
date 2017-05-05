@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92e07a49205ffaf287fc3aa2da6a6376b75fda4f
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -80,20 +80,26 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 帮助你[规划和设计](/intune-azure/plan-and-design/get-started) Intune 环境的信息。
 ### <a name="device-enrollment"></a>设备注册
 [如何通过 Intune 管理设备](/intune-azure/enroll-devices/what-is)。
-### <a name="devices"></a>设备
-[了解使用清单和报表管理的设备](/intune-azure/manage-devices/what-is)。
-### <a name="manage-users-and-groups"></a>管理用户和组
-[了解有关所管理的以及将资源分类到组的设备的用户](/intune-azure/manage-users/what-is)。
-### <a name="manage-apps"></a>管理应用
-[如何发布、管理、配置和保护应用](/intune-azure/manage-apps/what-is-app-management)。
+### <a name="device-compliance"></a>设备符合性
+[为设备定义符合性级别，然后报告不符合要求的任何设备](/intune-azure/set-device-compliance/what-is-device-compliance)。
 ### <a name="device-configuration"></a>设备配置
 [了解可在管理的设备上用来配置设置和功能的配置文件](/intune-azure/configure-devices/what-are-device-profiles)。
-### <a name="device-compliance"></a>设备合规性
-[为设备定义符合性级别，然后报告不符合要求的任何设备](/intune-azure/set-device-compliance/what-is-device-compliance)。
+### <a name="devices"></a>设备
+[了解使用清单和报表管理的设备](/intune-azure/manage-devices/what-is)。
+### <a name="mobile-apps"></a>移动应用
+[如何发布、管理、配置和保护应用](/intune-azure/manage-apps/what-is-app-management)。
 ### <a name="conditional-access"></a>条件性访问
 [根据指定的条件限制对 Exchange 服务的访问](/intune-azure/conditional-access/what-is-conditional-access)。
+### <a name="on-premises-access"></a>本地访问
+[配置本地 Exchange ActiveSync 和 Exchange 访问权限](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+### <a name="users"></a>Users
+[了解有关所管理的以及将资源分类到组的设备的用户](/intune-azure/manage-users/what-is)。
+### <a name="groups"></a>组
+[了解如何通过 Intune 使用 Azure Active Directory 组](/intune-azure/manage-users/get-started-with-groups)
 ### <a name="intune-roles"></a>Intune 角色
 [控制可以执行各种 Intune 操作的人员，以及这些操作适用的人员](/intune-azure/access-control/role-based-access-control)。 可以使用涵盖一些常见 Intune 方案的内置角色，也可以创建自己的角色。
+### <a name="software-updates"></a>软件更新
+[了解如何配置 Windows 10 设备的软件更新](/intune-azure/configure-devices/how-to-configure-windows-update-for-business)。
 
 
 

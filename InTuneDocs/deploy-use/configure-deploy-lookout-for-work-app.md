@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 44429b8694d15006f77a9eb5206293a6bcc8090b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -87,12 +87,11 @@ ms.lasthandoff: 04/14/2017
   选择“必需安装”选项，该选项要求在用户设备上安装 Lookout 应用。
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在设备上打开部署的应用时发生的情况
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md 用户在设备上打开 Lookout for Work 时，将提示其激活应用并选择“使用 Azure Active Directory 登录”选项。 以下主题中提供了最终用户操作流程的详细指导：
 
-用户在设备上打开 Lookout for Work 时，将提示其激活应用并选择“使用 Azure Active Directory 登录”选项。 以下主题中提供了最终用户操作流程的详细指导：
+* [系统提示在 Android 设备上安装 Lookout for Work](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [系统提示在 Android 设备上安装 Lookout for Work](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-* [解除 Lookout for Work 在 Android 设备上发现的威胁](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [解除 Lookout for Work 在 Android 设备上发现的威胁](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>后续步骤
 * [在 Intune 中创建 Lookout 设备符合性策略](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

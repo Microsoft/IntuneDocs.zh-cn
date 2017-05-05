@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 26d11bc64802005bcce8cc1962d531af6ffe5cd5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 12584743534a76d0b2ce92e5de6cb5f916453938
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +50,7 @@ ms.lasthandoff: 03/27/2017
 
 -   在对此前解决方案的用户启用条件访问之前，他们可能无法使用非管理设备访问资源。
 
-> [!TIP] 
+> [!TIP]
 > 这是众多方法之一。 你可以选择一个更简单的过程来延迟所有条件访问，直到指示每个阶段进行注册，也可以选择一个更为严格的过程，从一开始就强制实施条件访问并要求所有访问完全具备符合性。
 
 -   了解有关[条件性访问](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access)的详细信息。
@@ -61,7 +61,7 @@ ms.lasthandoff: 03/27/2017
 
 -   了解[如何配置条件访问](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
-### <a name="task-2-setup-intune-conditional-access"></a>任务 2：设置 Intune 条件访问
+### <a name="task-2-set-up-intune-conditional-access"></a>任务 2：设置 Intune 条件访问
 
 选择以下任一条件访问策略类型并了解详细信息：
 
