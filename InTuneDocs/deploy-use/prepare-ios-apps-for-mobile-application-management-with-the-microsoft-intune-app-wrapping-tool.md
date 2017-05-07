@@ -15,9 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
-ms.lasthandoff: 01/14/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -109,8 +109,8 @@ ms.lasthandoff: 01/14/2017
 
   ![选择内部和临时证书](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->如果不打算分发应用，只希望进行内部测试，可以使用 iOS 应用开发证书来代替生产证书。 如果使用开发证书，请确保移动设置配置文件引用将安装应用的设备。
+  >[!NOTE]
+  >如果不打算分发应用，只希望进行内部测试，可以使用 iOS 应用开发证书来代替生产证书。 如果使用开发证书，请确保移动设置配置文件引用将安装应用的设备。
 
 7. 单击页面底部的“下一步”。
 
@@ -120,7 +120,7 @@ ms.lasthandoff: 01/14/2017
 
 9. 按照上面的说明来创建证书签名请求。 在 macOS 计算机上启动 **Keychain Access** 应用程序。
 
-10. 在屏幕顶部的 macOS 菜单中，转到“Keychain Access”>“证书助手”>“向证书颁发机构请求证书”。  
+10. 在屏幕顶部的 macOS 菜单中，转到“Keychain Access”>“证书助手”>“向证书颁发机构请求证书” 。  
 
   ![在 Keychain Access 应用中向证书颁发机构请求证书](../media/app-wrapper/iOS-signing-cert-5.png)
 
@@ -137,7 +137,6 @@ ms.lasthandoff: 01/14/2017
 14. 双击刚下载的证书，将证书添加密钥链。
 
 15. 再次打开 **Keychain Access**。 在右上角的搜索栏中搜索证书名称，查找证书。 右键单击项目以打开菜单，然后单击“获取信息”。 在示例屏幕中，使用的是开发证书而非生产证书。
-
 
   ![将证书添加到密钥链](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -206,7 +205,7 @@ ms.lasthandoff: 01/14/2017
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|在应用包装工具可用的命令行属性上显示详细的使用情况信息。|
-|**-v**|（可选）将详细信息输出到控制台。|
+|**-v**|（可选）将详细信息输出到控制台。 建议使用此标志来调试任何错误。|
 |**-e**| （可选）使用此标志可使应用包装工具在处理应用的过程中删除缺失的权利。 有关更多详细信息，请参阅“设置应用权利”。|
 |**-xe**| （可选）打印应用中的 iOS 扩展，以及使用这些扩展需要哪些权利的相关信息。 有关更多详细信息，请参阅“设置应用权利”。 |
 |**-x**| （可选）`<An array of paths to extension provisioning profiles>`。 如果应用需要扩展预配配置文件，使用此项。|

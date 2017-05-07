@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: b664620f424f9ef612d17beb810564dbdd68ff79
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: b2cbabea781840df0a2a283f803dc76520590aba
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,6 +28,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 可借助 Intune 管理 Android 设备，包括 Samsung Knox 标准版设备。 若要启用设备管理，用户必须下载 Intune 公司门户应用（Google Play 中提供），然后打开该应用并按照注册提示来注册其设备。 Android 设备处于托管状态后，可[创建符合性策略](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android)、[管理应用](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management)等。
+
+现在，运行 Samsung KNOX 标准版的设备支持 Intune 进行多用户管理。 这意味着最终用户可以使用其 Azure AD 凭据登录和注销设备，并且无论是否正在使用，都会集中管理设备。 当最终用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销时，会清除所有应用数据。
 
 ## <a name="prerequisite"></a>先决条件
 

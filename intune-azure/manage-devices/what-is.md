@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？ 
+# <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ ms.lasthandoff: 04/13/2017
 - **概述** 获得有关已注册设备的信息，以及每个设备运行的操作系统的相关信息。
 - **管理** - 选择“所有设备”查看所管理的所有设备列表。
     选择列表中的某个设备，打开<设备名称> “概述”边栏选项卡，可在其中选择下列选项之一：
-    - **概述** - 查看有关设备的常规信息，包括设备名称、所有者、是否是 BYOD 设备、上次登录时间等。 
-                
+    - **概述** - 查看有关设备的常规信息，包括设备名称、所有者、是否是 BYOD 设备、上次登录时间等。
+
     - **硬件** - 请查看有关设备的详细信息，包括其可用存储空间、型号和制造商等。
     ![托管设备硬件清单](./media/hardware-inventory.png)
     - **检测到的应用程序** - 显示 Intune 发现的安装在设备上的所有应用列表。
@@ -67,6 +67,12 @@ ms.lasthandoff: 04/13/2017
 ### <a name="bypass-activation-lock"></a>**绕过激活锁**
 此功能无需用户的 Apple ID 和密码即可删除 iOS 设备中的激活锁。 绕过激活锁后，启动“查找 iPhone”应用时设备将再次打开激活锁。 请仅在拥有对设备的物理访问权限的情况下绕过激活锁。
 
+### <a name="fresh-start"></a>**重新开始**
+
+删除在运行创意者更新的 Windows 10 电脑上安装的所有应用，然后将电脑自动更新到 Windows 的最新版本。
+这可用于删除新电脑通常附带的预先安装的 (OEM) 应用。 发出此设备操作时可以配置是否保留用户数据。 在这种情况下，应用和设置已删除，但会保留用户主页文件夹的内容。
+
+
 ### <a name="lost-mode"></a>**丢失模式**
 iOS 设备丢失或被盗时，可以启用丢失模式。 通过该模式可以指定在设备的锁定屏幕上显示的信息和电话号码。 为此，请执行以下操作：
 1.    在 iOS 设备的属性边栏选项卡上，选择“**更多**” > “**丢失模式**”。
@@ -78,7 +84,7 @@ iOS 设备丢失或被盗时，可以启用丢失模式。 通过该模式可以
 ### <a name="locate-device"></a>**查找设备**
 使用此远程操作在地图上显示丢失或被盗 iOS 设备的位置。 此设备必须是处于监督模式下通过 EDP 注册的公司所有的 iOS 设备。 使用此操作之前，必须将此设备置于丢失模式。
 1.    在 iOS 设备的属性边栏选项卡上，选择“**更多**” > “**查找设备**”。
-2.    找到设备后，**查找设备**边栏选项卡上会显示其位置。 
+2.    找到设备后，**查找设备**边栏选项卡上会显示其位置。
     ![查找设备边栏选项卡](./media/locate-device.png)
 
 >[!NOTE]

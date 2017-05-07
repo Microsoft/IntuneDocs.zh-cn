@@ -6,7 +6,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 586bdab54ee60ba8d620857ab3506aa27622d17a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 9554a431859665312daf414f2c6cdfb47baf8547
+ms.lasthandoff: 04/20/2017
 
 ---
 
@@ -30,6 +30,127 @@ ms.lasthandoff: 03/17/2017
 
 > [!Note]
 > 此页上提供了针对 Azure 门户预览列出的更改。 但是，鉴于 Intune 服务的更新方式，所做的更改可能无法立即使用。  在新门户功能可用之前，必须按顺序更新服务的多个组件。 在本月晚些时候推出时查找这些更改。
+
+## <a name="april-2017"></a>2017 年 4 月
+
+### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>支持 Android 应用的托管配置选项 <!-- 621621 -->
+
+Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune 进行配置。  通过此功能，IT 可查看应用支持的配置值列表，并提供优质的引导式 UI，以便配置这些值。
+
+### <a name="new-android-policy-for-complex-pins----722069---"></a>复杂 PIN 的新 Android 策略 <!-- 722069 -->
+
+现在可以在运行 Android 5.0 及更高版本的设备的 Android 设备配置文件中设置数字复杂度的必需[密码](/intune-azure/configure-devices/device-restrictions-for-android#password)类型。  使用此设置可防止设备用户创建包含重复或连续数字（如 1111 或 1234）的 PIN。
+
+### <a name="additional-support-for-android-for-work-devices"></a>对 Android for Work 设备的其他支持
+
+- **管理密码及工作配置文件设置** <!-- 612808 -->
+
+  通过新的 Android for Work 设备限制策略，现在可让你在管理的 Android for Work 设备上管理密码和工作配置文件设置。
+
+- **允许在工作和个人配置文件之间共享数据** <!-- 1045102 -->
+
+此 Android for Work 设备限制配置文件现在具有新的选项来帮助你配置工作和个人配置文件之间共享的数据。
+
+- **限制工作和个人配置文件之间的复制和粘贴** <!-- 1046094 -->
+
+  借助适用于 Android for Work 设备的新的自定义设备配置文件，现在可以限制是否允许在工作和个人应用之间进行复制和粘贴操作。
+
+有关详细信息，请参阅 [Android for Work 的设备限制](/intune-azure/configure-devices/device-restrictions-for-afw)。
+
+### <a name="assign-lob-apps-to-ios-and-android-devices----1057568---"></a>将 LOB 应用分配到 iOS 和 Android 设备 <!-- 1057568 -->
+
+现在可以为用户或设备分配适用于 [iOS](/intune-azure/manage-apps/ios-lob-app)（.ipa 文件）和 [Android](/intune-azure/manage-apps/android-lob-app)（.apk 文件）的业务线 (LOB) 应用。
+
+###  <a name="new-device-policies-for-ios----723774-723815-723826-723830---"></a>适用于 iOS 的新设备策略<!-- 723774, 723815, 723826, 723830 -->
+
+- **主屏幕上的应用** - 控制用户在[其 iOS 设备的主屏幕](/intune-azure/configure-devices/home-screen-settings-for-ios)上看到的应用。 此策略将更改主屏幕的布局，但不会部署指定的任何未安装的应用。
+
+- **与 AirPrint 设备的连接** - 控制 iOS 设备的最终用户可以连接到的 [AirPrint 设备](/intune-azure/configure-devices/air-print-settings-for-ios-and-macos)（网络打印机）。
+
+- **与 AirPlay 设备的连接** - 控制 iOS 设备的最终用户可以连接到的 [AirPlay 设备](/intune-azure/configure-devices/airplay-settings-for-ios-devices)（如 Apple TV）。
+
+- **自定义锁屏界面消息** - 配置用户将在其 iOS 设备的锁屏界面上看到的自定义消息（替换默认的锁屏界面消息）。 有关详细信息，请参阅[可用的设备操作](/intune-azure/manage-devices/what-is#available-device-actions)
+
+
+### <a name="restrict-push-notifications-for-ios-apps----723767---"></a>限制 iOS 应用的推送通知 <!-- 723767 -->
+
+在 Intune 设备限制配置文件中，现在可以为 iOS 设备配置以下[通知设置](/intune-azure/configure-devices/app-notification-settings-for-ios)：
+
+- 完全打开或关闭指定应用的通知。
+- 在通知中心中打开或关闭指定应用的通知。
+- 指定警报类型：“无”、“横幅”或“提醒”。
+- 指定是否允许此应用的徽章。
+- 指定是否允许通知声音。
+
+### <a name="configure-ios-apps-to-run-in-single-app-mode-autonomously----737837---"></a>配置 iOS 应用以单一应用模式自主运行 <!-- 737837 -->
+
+可以使用 Intune 设备配置文件配置 iOS 设备，以[自主单一应用模式](/intune-azure/configure-devices/device-restrictions-for-ios#autonomous-single-app-mode-supervised-only)运行指定应用。 配置此模式并运行应用时，将锁定设备，因此该设备只能运行该应用。 举个例子，当你配置一个允许用户在设备上进行测试的应用时就是如此。 应用的操作完成或删除此策略时，设备将恢复正常状态。
+
+### <a name="configure-trusted-domains-for-email-and-web-browsing-on-ios-devices----723765---"></a>为 iOS 设备上的电子邮件和 web 浏览配置受信任的域 <!-- 723765 -->
+
+现在可以从 iOS 设备限制配置文件配置以下[域设置](/intune-azure/configure-devices/device-restrictions-for-ios#domains)：
+
+- **未标记的电子邮件域** - 用户发送或接收的电子邮件如果不匹配在此处指定的域，将标记为不受信任。
+
+- **托管的 Web 域** - 从此处指定的 URL 下载的文档将被视为托管(仅限 Safari)。  
+
+- **Safari 密码自动填充域** - 用户只能在 Safari 中保存与你在此处指定的模式相匹配的 URL 的密码。 若要使用此设置，设备必须处于监督模式，不配置为用于多个用户。 （iOS 9.3 及更高版本）
+
+
+### <a name="vpp-apps-available-in-ios-company-portal----748782---"></a>iOS 公司门户中可用的 VPP 应用 <!-- 748782 -->
+
+现在可以将 iOS 批量购买的 (VPP) 应用作为**可用**安装分配给最终用户。 最终用户需要具有 Apple Store 帐户才能安装该应用。
+
+### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>同步 Apple VPP 应用商店的电子书 <!-- 800878 -->
+
+现在可以与 Intune [同步从 Apple 批量采购计划应用商店购买的书](/intune-azure/manage-apps/ios-vpp-apps)，并将其分配给用户。
+
+### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Samsung KNOX 标准版设备的多用户管理 <!-- 971988 -->
+
+现在，运行 Samsung KNOX 标准版的设备支持 Intune 进行[多用户管理](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices)。 这意味着最终用户可以使用其 Azure Active Directory 凭据登录和注销设备，并且无论是否正在使用，都会集中管理设备。  当最终用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销时，会清除所有应用数据。
+
+### <a name="additional-windows-device-restriction-settings----818566---"></a>其他 Windows 设备限制设置 <!-- 818566 -->
+
+我们添加了对其他 [Windows 设备限制设置](/intune-azure/configure-devices/device-restrictions-for-windows-10)的支持，如其他 Microsoft Edge 浏览器支持、设备锁屏界面自定义、开始菜单自定义、Windows 聚焦搜索集壁纸和代理设置。
+
+### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 创意者更新的多用户支持 <!-- 822547 -->
+
+我们为运行 Windows 10 创意者更新的设备和加入 Azure Active Directory 域的设备添加了对[多用户管理](/intune-azure/enroll-devices/enroll-windows-devices)的支持。 这意味着当不同的标准用户使用其 Azure AD 凭据登录设备时，他们将收到分配给其用户名的所有应用和策略。 用户当前无法将公司门户用于自助服务方案，如安装应用。
+
+### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 电脑的 Fresh Start <!-- 1004830 -->
+
+现在提供 Windows 10 电脑的全新 [Fresh Start 设备操作](/intune-azure/manage-devices/what-is#available-device-actions)。  发出此操作时，电脑上安装的任何应用都将被删除，而且电脑会自动更新到最新版本的 Windows。 这可用于删除新电脑通常附带的预先安装的 OEM 应用。 发出此设备操作时可以配置是否保留用户数据。
+
+### <a name="additional-windows-10-upgrade-paths----903672---"></a>Windows 10 其他升级途径<!-- 903672 -->
+
+现可创建[版本升级策略](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)，将设备升级到以下的其他 Windows 10 版本：
+
+- Windows 10 专业版
+- Windows 10 专业版 N
+- Windows 10 专业教育版
+- Windows 10 专业教育版 N
+
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>批量注册 Windows 10 设备 <!-- 747607 -->
+
+现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](/intune-azure/enroll-devices/bulk-enroll-windows)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将程序包应用到设备后，设备将加入 Azure AD 并注册 Intune，以供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户并接收分配的策略和必需的应用。 目前不支持自助服务和公司门户方案。
+
+### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>PIN 和托管存储位置的新 MAM 设置 <!-- 581122, 736644 -->
+
+现在这两个新的应用设置可用于帮助你处理移动应用程序管理 (MAM) 方案：
+
+- **托管设备 PIN 时禁用应用 PIN** - 检测注册设备上是否存在设备 PIN，如果是，则忽略应用保护策略触发的应用 PIN。 此设置允许减少用户在注册设备上打开已启用 MAM 的应用程序时所看到的 PIN 提示次数。 此功能适用于 Android 和 iOS。
+
+- **选择可将公司数据保存到其中的存储服务** - 允许你指定可将公司数据保存到哪些存储位置。 用户可以保存到所选存储位置服务，这意味着将阻止所有未列出的其他存储位置服务。
+
+  支持的存储位置服务列表：
+
+  - OneDrive
+  - Business SharePoint Online
+  - 本地存储
+
+### <a name="help-desk-troubleshooting-portal----907448---"></a>支持人员疑难解答门户<!-- 907448 -->
+
+新的[疑难解答门户](/intune-azure/manage-users/help-desk)允许技术支持人员和 Intune 管理员查看用户及其设备，并执行任务以解决 Intune 技术问题。
 
 ## <a name="march-2017"></a>2017 年 3 月
 

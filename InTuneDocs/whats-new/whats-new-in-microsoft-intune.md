@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
-ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: b3cf8d8f60482be2d4d903d1b2c00c1a3a392b73
+ms.lasthandoff: 04/20/2017
 
 
 ---
-# <a name="whats-new-in-microsoft-intune---march-2017"></a>Microsoft Intune 中的新增功能 - 2017 年 3 月
+# <a name="whats-new-in-microsoft-intune---april-2017"></a>Microsoft Intune 中的新增功能 - 2017 年 4 月
 了解此版本 Microsoft Intune 中的新增功能。 你还可以发现需要计划的即将发生的更改，以及有关过去版本的信息。
 
 > [!Note]
@@ -29,68 +29,55 @@ ms.lasthandoff: 03/29/2017
 
 ## <a name="new-capabilities"></a>新功能
 
-### <a name="support-for-skycure"></a>对 Skycure 的支持
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
 
-现在可根据 Skycure 给出的风险评估，使用条件访问控制移动设备对公司资源的访问，Skycure 是与 Microsoft Intune 集成的移动威胁防御解决方案。 基于从运行 Skycure 的设备收集的遥测评估风险，包括：
+我们正在不断改进适用于 Android、 iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。
 
-- 物理防御
-- 网络防御
-- 应用程序防御
-- 漏洞防御
+可以在“应用 UI 中的新增功能”[](whats-new-in-intune-app-ui.md)页看到使用凭据进行登录的以前的登录体验和新登录体验，以及从其他设备进行登录的新登录体验的屏幕快照。
 
-可基于通过 Intune 设备符合性策略启用的 Skycure 风险评估配置 EMS 条件访问策略。 根据检测到的威胁，可使用这些策略允许或阻止不符合设备访问企业资源。 有关详细信息，请参阅 [Skycure 移动威胁防御连接器](/intune/deploy-use/skycure-mobile-threat-defense-connector)。
+### <a name="myapps-available-for-managed-browser---822308-822303--"></a>MyApps 可用于托管浏览器 <!--822308, 822303-->
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 适用的公司门户应用的最新用户体验<!--621622-->
+Microsoft MyApps 现在在托管浏览器中具有更好的支持。 面向管理的托管浏览器用户将直接转到 MyApps 服务，他们可在此处访问管理员预配的 SaaS 应用。 面向 Intune 管理的用户将能够继续从内置托管浏览器书签访问 MyApps。
 
-适用于 Android 的公司门户应用将更新其用户界面，提供更现代的外观和感受以及更好的用户体验。 值得注意的更新包括：
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>托管浏览器和公司门户的新图标 <!--918433, 918431, 971473-->
 
-- 颜色：公司门户选项卡标头将按 IT 定义的品牌进行着色。
-- 应用：“应用”选项卡上将更新“特色应用”和“所有应用”按钮。
-- 搜索：“应用”选项卡上的“搜索”按钮现在是浮动的操作按钮。
-- 导航应用：“所有应用”视图以选项卡形式呈现出“特色”、“所有”和“分类”，便于导航。
-- 支持：更新“我的设备”和“联系 IT”选项卡以提高可读性。
+托管浏览器正在接收 Android 和 iOS 版本应用的更新图标。 新图标将包含更新的 Intune 徽章，使其与企业移动性 + 安全性 (EM+S) 中的其他应用更加一致。 可以在 [Intune 应用 UI 页面中的新增内容](whats-new-in-intune-app-ui.md)上查看 Managed Browser 的新图标。
 
-有关这些更改的详细信息，请参阅 [Intune 最终用户应用的 UI 更新](whats-new-in-intune-app-ui.md)。
+公司门户还正在接收 Android、iOS 和 Windows 版本应用的更新图标，以提高与 EM + S 中其他应用的一致性。 这些图标将在 4 月至 5 月下旬逐渐发布。
 
-### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>非托管设备可访问已分配的应用<!--664691-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司门户中的登录进度指示器 <!--953374-->
 
-公司门户网站上的设计更改之一是，iOS 和 Android 用户能够在其非托管设备上安装分配到的“可用且无需注册”设备。 用户可使用其 Intune 凭据登录到公司门户网站，并查看分配到的应用列表。 “可用且无需注册”应用的应用包可通过公司门户网站进行下载。 需要注册才能安装的应用不受此更改影响，如果用户想安装这类应用，则会提示用户注册其设备。
+用户启动或恢复应用时，Android 公司门户应用的更新会显示进度指示器。 该指示器将依次显示新的状态，从“正在连接...”开始，然后“正在登录...”，最后“正在检查安全性要求...”，完成后即允许用户访问该应用。 可以在 [Intune 应用 UI 页面中的新增内容](whats-new-in-intune-app-ui.md)上查看适用于 Android 的公司门户应用的新屏幕。
 
-### <a name="signing-script-for-windows-10-company-portal---941642--"></a>对 Windows 10 公司门户的脚本进行签名<!--941642-->
+### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>阻止应用访问 SharePoint Online<!-- 679339 -->
 
-如果你需要下载和旁加载 Windows 10 公司门户应用，现在可以使用脚本简化并精简组织的应用签名过程。   要下载脚本及其使用说明，请参阅 TechNet 库中的 [Windows 10 公司门户的 Microsoft Intune 签名脚本](https://aka.ms/win10cpscript)。 有关此公告的详细信息，请参阅 Intune 支持团队博客上的[更新 Windows 10 公司门户应用](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)。
+现在可以创建基于应用的条件访问策略以阻止应用（没有对这些应用适用的应用保护策略）访问 [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online)。 在基于应用程序的条件访问方案中，可以使用 Azure 门户指定想要有权访问 SharePoint Online 的应用。
 
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>批量注册 Windows 10 设备 <!-- 747607 -->
+
+现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](/intune/deploy-use/bulk-enroll-windows)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将程序包应用到设备后，设备将加入 Azure AD 并注册 Intune，以供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户并接收分配的策略和必需的应用。 目前不支持自助服务和公司门户方案。
 
 ## <a name="notices"></a>通知
 
-### <a name="support-for-ios-103"></a>对 iOS 10.3 的支持
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接访问 Apple 注册方案<!--951869-->
 
-IOS 10.3 发行版于 2017 年 3 月 27 面向 iOS 用户推出。 所有现有的 Intune MDM 和 MAM 方案与最新版本的 Apple 操作系统兼容。 在用户将设备和应用升级到 iOS 10.3 时，预计当前可用于管理 iOS 设备的所有现有 Intune 功能都将继续工作。
+对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 预览门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，仅能通过经典 Intune 门户中的链接访问 Apple 注册预览版。 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的这些功能。 迁移的计划目前尚未公布，但详细信息将尽快发布。 强烈建议创建一个试用帐户，在现有帐户无法访问预览版时测试新体验。
 
-目前没有任何要共享的已知问题。 如果你遇到有关 iOS 10.3 的任何问题，请随时联系 [Intune 支持团队](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)。
+### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Azure 上 Intune 的 Appx 的新增功能 <!-- 1000270 -->
 
-### <a name="improved-support-for-android-users-based-in-china---720444--"></a>改进了对身处中国的 Android 用户的支持<!--720444-->
+在迁移到 Azure 上的 Intune 的过程中，我们做出了 3 个 appx 更改：
 
-由于中国地区没有 Google Play 商店，Android 设备必须从中国的市场获取应用。 公司门户将支持此工作流，方法是将中国的 Android 用户重定向为从本地应用商店下载公司门户和 Outlook 应用。 对于移动设备管理和移动应用程序管理，此举将改善启用条件性访问策略时的用户体验。 下列中文应用商店中提供适用于 Android 的公司门户和 Outlook 应用：
+1. 在仅能部署到 MDM 注册的设备的经典 Intune 控制台中添加新的 appx 应用类型。
+2. 重用现有的 appx 应用类型，以仅面向通过 Intune PC 代理托管的 PC。
+3. 通过迁移将所有现有的 appxs 转换为 MDM appx。
 
-- [百度](https://go.microsoft.com/fwlink/?linkid=836946)
-- [小米](https://go.microsoft.com/fwlink/?linkid=836947)
-- [腾讯](https://go.microsoft.com/fwlink/?linkid=836949)
-- [华为](https://go.microsoft.com/fwlink/?linkid=836948)
-- [豌豆荚](https://go.microsoft.com/fwlink/?linkid=836950)
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
 
-### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>最佳做法：确保你的公司门户应用处于最新状态<!--879465-->
+这不会影响通过 Intune PC 代理管理的设备的任何现有部署。 但是，迁移后将无法将这些已迁移的 appx 部署到由先前未面向的 Intune PC 代理托管的任何新设备。
 
-2016 年 12 月，我们发布了一个更新，在一组用户注册 iOS、Android、Windows 8.1 + 或 Windows Phone 8.1 + 设备时强制进行多重身份验证 (MFA)。 如果没有适用于 Android (v5.0.3419.0+) 和 iOS (v2.1.17+) 的公司门户应用的某些基线版本，此功能将无法正常运行。
+#### <a name="what-action-do-i-need-to-take"></a>我需要执行什么操作
 
-通过将新函数添加到控制台和所有受支持平台上的公司门户应用，Microsoft 不断改进 Intune。 因此，Microsoft 仅发布针对我们在当前版本公司门户应用中所发现问题的修补程序。 因此建议使用最新版本的公司门户应用以获取最佳用户体验。
-
->[!Tip]
-> 让用户设置其设备以在相应的应用商店中自动更新应用。 如果你使 Android 公司门户应用在网络共享上可用，可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=49140)下载最新版本。
-
-### <a name="microsoft-teams-is-now-enabled-for-mam-on-ios-and-android"></a>现已在 iOS 和 Android 上为 MAM 启用 Microsoft Teams
-
-Microsoft 已宣布发布 Microsoft Teams 的通用版本。 适用于 iOS 和 Android 的更新的 Microsoft Teams 应用现已具备 Intune 移动应用管理 (MAM) 功能，让你的团队可以自由地跨设备工作，同时确保对话和公司数据始终受到保护。 有关详细信息，请参阅企业移动性和安全性博客上的 [Microsoft Teams 公告](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)。
+迁移后，如果要进行新的 PC 部署，则需要将 appx 作为电脑 appx 再次上传。 若要了解详细信息，请参阅 [Intune 支持团队博客上的 ](https://aka.ms/appxchange)Azure 上 Intune 中的 Appx 更改。  
 
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 上的 Intune 管理体验公开预览版的新增功能<!--736542-->
@@ -117,7 +104,7 @@ Azure 门户中的管理体验将使用已公布的新分组和定向功能；�
 
 ### <a name="see-also"></a>另请参阅
 * [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [云平台路线图](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [云平台路线图](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Azure 预览版的新增功能](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [What's new in the Company Portal UI](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui)（公司门户 UI 新增功能）
 * [新增功能存档](whats-new-archive.md)

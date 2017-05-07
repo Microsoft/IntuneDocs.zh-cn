@@ -1,5 +1,5 @@
 ---
-title: "结合使用应用和 MAM CA | Microsoft Docs"
+title: "将应用与 MAM CA 结合使用"
 description: "了解 MAM CA 如何帮助控制有权访问 O365 服务的应用的概念。"
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ ms.lasthandoff: 02/25/2017
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> 在 Android 设备上：
+  * 必须在设备上安装公司门户应用，但最终用户不必登录到应用。
+  * 必须通过 OneDrive 或 Outlook 应用完成设备注册。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>从 Azure AD 注册删除设备。
 可通过 Azure AD 管理控制台删除设备注册，IT 管理员通常采用此种方式。  还可由最终用户在设备本身完成删除操作。

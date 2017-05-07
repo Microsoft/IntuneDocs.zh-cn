@@ -1,12 +1,12 @@
 ---
 title: "使用 Intune 配置 Windows 10 版本升级"
 titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Intune 升级你管理的 Windows 10 设备。"
+description: "Intune Azure 预览版：了解如何使用 Intune 将你管理的 Windows 10 设备升级到其他版本。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 0274a76fa7dd301ab19d1e8bc155c4ef2c79266f
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-使用本主题中的信息了解如何配置 Windows 10 版本升级配置文件。 此配置文件可以将运行以下任一 Windows 10 版本的设备自动升级至较新的版本：
+使用本主题中的信息了解如何配置 Windows 10 版本升级配置文件。 此配置文件可以将运行以下任一 Windows 10 版本的设备自动升级至其他版本：
 
 - Windows 10 家庭版
 - Windows 10 全息版

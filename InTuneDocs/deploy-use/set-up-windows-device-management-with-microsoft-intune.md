@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: f6014c5500b05762d123b2285ef859d67382e402
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 1d9bd55a8abee4175d2e71727d7ff18274defd3d
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,21 +25,21 @@ ms.lasthandoff: 04/06/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-使用下列方法之一为 Windows 设备设置注册：
+此主题可帮助 IT 管理员为用户简化 Windows 注册过程。  无需任何其他步骤即可注册 Windows 设备，但你还可为用户简化注册过程。
 
-- [**使用 Azure Active Directory Premium 自动注册 Windows 10**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
- -  此方法仅适用于 Windows 10 设备。
- -  必须具有 Azure Active Directory Premium 才能使用此方法。
- -  如果选择不启用自动注册，请使用适用于 Windows 8.1 和 Windows Phone 8.1 的注册方法。
+两个因素决定你简化 Windows 设备注册的方式：
+- **是否使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 随附企业移动性 + 安全性和其他许可计划。
+- **将注册什么版本的 Windows？** <br>可通过添加工作或学校帐户自动注册 Windows 10 设备。 早期版本必须使用公司门户应用进行注册。
 
-- [**不具备 Azure AD Premium 自动注册的注册**](#enable-windows-enrollment-without-azure-ad-premium)
- - 必须使用此方法注册 Windows 8.1 和 Windows Phone 8.1 设备。
- - 如果不想使用 Azure Active Directory (AD) Premium，可以将此方法用于 Windows 8.1 以及更高版本的设备。
+||**Azure AD Premium**|**其他 AD**|
+|----------|---------------|---------------|  
+|**Windows 10**|[自动注册](#enable-windows-10-automatic-enrollment) |[用户注册](#enable-windows-enrollment-without-azure-ad-premium)|
+|**早期 Windows 版本**|[用户注册](#enable-windows-enrollment-without-azure-ad-premium)|[用户注册](#enable-windows-enrollment-without-azure-ad-premium)|
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>启用 Windows 注册（不使用自动注册）
-可以让用户安装和注册其设备，而无需自动注册 Azure AD Premium。 将许可证分配给用户帐户后，用户可以将该帐户添加到 Windows 设备，并同意注册管理中的设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入服务器名称。
+无需 Azure AD Premium 自动注册即可让用户注册其设备。 分配许可证后，用户即可在将他们的工作帐户添加到其个人拥有的设备后或在将其企业拥有的设备加入到你的 Azure AD 后进行注册。 创建 DNS 别名（CNAME 记录类型）使用户能更轻松地注册其设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入 Intune 服务器名称。
 
 **步骤 1：创建 CNAME**（可选）<br>
 为公司的域创建 CNAME DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
