@@ -1,22 +1,23 @@
 ---
 title: "Windows 版本升级策略设置 | Microsoft Docs"
-description: "了解如何使用 Intune 将 Windows 10 设备自动升级至最新版本。"
+description: "了解如何使用 Intune 将 Windows 10 设备自动升级至其他版本。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune“版本升级策略”可以将运行以下任一 Windows 10 版本的设备自动升级至较新的版本：
+Microsoft Intune“版本升级策略”可以将运行以下任一 Windows 10 版本的设备自动升级至其他版本：
 * Windows 10 桌面版
 * Windows 10 全息版
 * Windows 10 移动版
@@ -54,9 +55,4 @@ Microsoft Intune“版本升级策略”可以将运行以下任一 Windows 10 �
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

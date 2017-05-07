@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
-ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 21d1e624069117d905dc7aced33b70abeb0e1109
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +68,7 @@ Intune 策略提供的设置有助于控制移动设备上的安全设置、维�
 
     -   **Android：**[https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
 
-    -   **Windows Phone 8.1：**[http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
+    -   **Windows Phone 8.1:** [http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
 6.  在“软件描述”页上，提供你希望用户在软件的公司门户中看到的信息，然后选择“下一步”。 以下设置可用（此示例指 Skype）：
 
@@ -103,9 +104,4 @@ Intune 策略提供的设置有助于控制移动设备上的安全设置、维�
 了解 [Intune 的常见使用方式](common-ways-to-use-intune.md)
 
 转换为[付费订阅](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

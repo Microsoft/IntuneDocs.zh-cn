@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: e1bc6388ec1927693bac676a20a18935cdbf894e
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -44,8 +44,12 @@ ms.lasthandoff: 03/17/2017
     - **macOS**
 6. 在“配置文件类型”类型下拉列表中，选择“设备功能”。 
 7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
-    - [iOS 设置](device-features-for-ios.md)
-    - [macOS 设置](device-features-for-macos.md)
+    - [适用于 iOS 和 MacOS 的 AirPrint 设置](air-print-settings-for-ios-and-macos.md)
+     - [适用于 iOS 的 AirPlay 设置](airplay-settings-for-ios-devices.md)
+    - [适用于 iOS 的主屏幕布局设置](home-screen-settings-for-ios.md)
+    - [适用于 iOS 的应用通知设置](app-notification-settings-for-ios.md)
+    - [适用于 iOS 的共享设备配置设置](shared-device-settings-for-ios.md)
+    - [适用于 iOS 的 Web 内容筛选器设置](web-content-filter-settings-for-ios.md)
 
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 

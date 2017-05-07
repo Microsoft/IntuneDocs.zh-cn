@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -42,6 +42,7 @@ ms.lasthandoff: 03/30/2017
 |**屏幕捕获**|让用户以图像形式捕获屏幕内容。|否|是|
 |**语音助手**|允许在设备上使用语音助手软件。|否|是|
 |**YouTube**|允许在设备上使用 YouTube 应用。|否|是|
+|**共享设备**|将托管的 Samsung KNOX 标准设备配置为共享。 在此模式下，最终用户可以使用其 Azure AD 凭据登录和注销设备，并且无论设备是否正在使用，都会对其集中管理。<br>当最终用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销时，会清除所有应用数据。|否|是|
 
 ## <a name="password"></a>Password
 
@@ -53,11 +54,18 @@ ms.lasthandoff: 03/30/2017
 |**屏幕锁定前的最大非活动分钟数**|指定设备自动锁定之前处于非活动状态的分钟数。|是|是|
 |**擦除设备前的登录失败次数**|指定在擦除设备前允许的登录失败次数。|是|是|
 |**密码过期（天数）**|指定必须更改设备密码前的天数。|是|是|
-|**所需的密码类型**|指定所需的密码复杂性级别以及是否可以使用生物识别设备。|是|是|
+|**所需的密码类型**|指定所需的密码复杂性级别以及是否可以使用生物识别设备。 选择：<br><br>    -     **设备默认值**<br>-     **低安全性生物识别**<br>    -     **至少为数字**<br>    -     **数字复杂度**（不允许重复或连续数字，如“1111”或“1234”）<sup>1</sup><br>    -     **至少为字母**<br>    -     **至少包含字母数字**<br>    -     **至少为字母数字与符号**|是|是|
 |**防止重用以前的密码**|阻止最终用户创建以前使用过的密码。|是|是|
 |**指纹解锁**|允许使用指纹解锁支持的设备。|否|是|
 |**Smart Lock 和其他信任代理**|允许在兼容的 Android 设备上控制 Smart Lock 功能（Samsung KNOX Standard 5.0 及更高版本）。 如果设备处于可信位置（例如当它连接到特定蓝牙设备时，或者在 NFC 标记附近时），则此手机功能（有时称为信任代理）使你可以禁用或绕过设备锁屏界面密码。可以使用此设置防止用户配置 Smart Lock。|是（5.0 及更高版本）|否|
 |**加密**|要求对设备上的文件进行加密。|是|是|
+
+<sup>1</sup>向设备分配此设置时，请确保目标设备上的公司门户应用已更新至最新版本。
+
+如果配置**数值复杂度**设置，然后将其分配到运行 5.0 之前的 Android 版本的设备，则适用以下行为。
+- 如果公司门户应用正在运行 1704 以前的版本，则不会向设备应用任何 PIN 策略，并将在 Intune 门户中显示错误。
+- 如果公司门户应用已更新至 1704 版本，则将仅应用简单的 PIN。 5.0 以前的 Android 版本不支持此设置。 在 Intune 门户中未显示错误。
+
 
 ## <a name="google-play-store"></a>Google Play Store
 

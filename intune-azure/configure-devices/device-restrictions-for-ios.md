@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -225,6 +225,67 @@ ms.lasthandoff: 03/17/2017
 -     **共享照片流** - 将其设置为“否”以在设备上禁用“iCloud 照片共享”。
 -     **活动延续** - 允许用户在其他 iOS 或 macOS 设备上继续进行在某台 iOS 设备上开始的工作（切换）。
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>自治单应用模式（仅限监督的应用）
+
+使用这些设置配置 iOS 设备，以自主单一应用模式运行指定应用。 配置此模式并运行应用时，将锁定设备，因此该设备只能运行该应用。 举个例子，当你配置一个允许用户在设备上进行测试的应用时就是如此。 应用的操作完成或删除此策略时，设备将恢复正常状态。
+
+### <a name="settings"></a>设置
+
+- **应用名称** - 输入应用的名称，因为它将出现在此边栏选项卡上的应用列表中。
+- **应用捆绑 ID** - 输入应用的捆绑 ID。 如需帮助，请参阅本主题中的**适用于内置 iOS 应用的捆绑 ID 引用**。
+
+指定每个应用名称和捆绑 ID 后，选择“添加”以将其追加到列表。
+
+- **导入** - 导入以逗号分隔的值 (.csv) 文件，其中包含应用名称的列表及其相关联的捆绑 ID。
+- **导出** - 导出应用名称以及向逗号分隔的值 (.csv) 文件配置的相关联的捆绑 ID。
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>内置 iOS 应用的捆绑 ID 引用
+
+此列表显示了一些常见的内置 iOS 应用的捆绑 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。
+
+|||
+|-|-|
+|应用程序名称|BundleID|
+|App Store|com.apple.AppStore|
+|计算器|com.apple.calculator|
+|日历|com.apple.mobilecal|
+|照相机|com.apple.camera|
+|时钟|com.apple.mobiletimer|
+|指南针|com.apple.compass|
+|联系人|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|查找好友|com.apple.mobileme.fmf1|
+|查找 iPhone|com.apple.mobileme.fmip1|
+|游戏中心|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|运行状况|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes 商店|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|映射|com.apple.Maps|
+|消息|com.apple.MobileSMS|
+|音乐|com.apple.Music|
+|新闻|com.apple.news|
+|注意|com.apple.mobilenotes|
+|数字|com.apple.Numbers|
+|页面|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|照片|com.apple.mobileslideshow|
+|播客|com.apple.podcasts|
+|提醒|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|设置|com.apple.Preferences|
+|股票|com.apple.stocks|
+|提示|com.apple.tips|
+|视频|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|电子钱包|com.apple.Passbook|
+|观看|com.apple.Bridge|
+|天气|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Kiosk
 -     **激活锁** - 在受监管的 iOS 设备上启用激活锁。
 -     **在展台模式下运行的应用** - 选择“托管应用”以选择已添加到 Intune 的应用，或选择“应用商店应用”以指定应用商店中应用的 URL。 不允许在设备上运行其他应用。 若要获取更多帮助，请参阅本主题后面的“如何指定应用商店的 URL”。
@@ -256,4 +317,21 @@ ms.lasthandoff: 03/17/2017
 -     **JavaScript** - 允许在浏览器中运行 Java 脚本。
 -     **欺诈警告** - 允许在浏览器中使用欺诈警告。
 -     **弹出窗口** - 启用或禁用浏览器弹出窗口阻止程序。
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>未标记的电子邮件域
+
+在“电子邮件域 URL”字段中，向列表添加一个或多个 URL。 当最终用户从你所配置的域以外的域接收电子邮件时，该电子邮件将在 iOS 邮件应用中被标记为不受信任。
+
+
+### <a name="managed-web-domains"></a>托管的 Web 域
+
+在“Web 域 URL”字段中，向列表添加一个或多个 URL。 从指定域下载的文档将被视为托管。 此设置仅适用于使用 Safari 浏览器下载的文档。
+
+
+### <a name="safari-password-auto-fill-domains"></a>Safari 密码自动填充域
+
+在“域 URL”字段中，向列表添加一个或多个 URL。 用户仅能保存来自此列表中的 URL 的 Web 密码。 此设置仅适用于 Safari 浏览器以及监督模式下的 iOS 9.3 和更高版本的设备。 如未指定任何 URL，则可从所有网站保存密码。
 

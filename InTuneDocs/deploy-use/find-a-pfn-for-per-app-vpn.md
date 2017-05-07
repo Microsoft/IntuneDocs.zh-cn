@@ -15,8 +15,9 @@ ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b0006416f2b078c8c0cf5eb14ccea4749604e1dc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fd7d7e1e09f193479c6ad221c8ace7470942c5a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,10 +73,10 @@ Get-AppxPackage 的语法是：
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>计算机上未安装该应用时查找 PFN
 
-1.    转到 https://www.microsoft.com/en-us/store/apps。
+1.    转到 https://www.microsoft.com/store/apps。
 2.    在搜索栏中输入应用的名称。 在本示例中，我们搜索 OneNote。
-3.    选择应用的链接。 请注意，URL 末尾有一系列字母。 在我们的示例中，URL 如下所示：`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`。
-4.    在另一个选项卡上，粘贴下面的 URL：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`。 并将 `<app id>` 替换为从 https://www.microsoft.com/en-us/store/apps 获取的应用 ID，即步骤 3 中 URL 末尾的一系列字母。 以 OneNote 为例，粘贴：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
+3.    选择应用的链接。 请注意，URL 末尾有一系列字母。 在我们的示例中，URL 如下所示：`https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`。
+4.    在另一个选项卡上，粘贴下面的 URL：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`。 将 `<app id>` 替换为从 https://www.microsoft.com/store/apps 获取的应用 ID，即步骤 3 中 URL 末尾的一系列字母。 以 OneNote 为例，粘贴：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
 
 Microsoft Edge 会显示你所需的信息；在 Internet Explorer 中，选择“打开”来查看该信息。 PFN 值会在第一行给出。 以下是我们示例的结果：
 
@@ -86,9 +87,4 @@ Microsoft Edge 会显示你所需的信息；在 Internet Explorer 中，选择�
 `  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",`
 `  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`
 `}`
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

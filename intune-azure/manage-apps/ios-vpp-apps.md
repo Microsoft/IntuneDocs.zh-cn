@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
+ms.lasthandoff: 04/19/2017
 
 ---
 
@@ -30,6 +30,11 @@ ms.lasthandoff: 04/06/2017
 iOS 应用商店允许你为想要在公司运行的应用购买多个许可证。 这有助于降低跟踪多个已购买应用副本的管理成本。
 
 Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应用：从应用商店中导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。
+
+此外，可以与 Intune 同步、管理和分配从 Apple 批量采购计划应用商店购买的书，并将其分配给用户。 使用 Intune 门户中的 **Books** 工作负荷来管理书籍。 管理书籍的过程与管理应用的过程相同。
+必须上载 Apple 批量采购计划令牌才能执行上述操作。 目前，只能将书籍分配为**必需的**安装。
+在向设备分配一本书时，该设备必须安装内置的 iBooks 应用， 否则最终用户必须重新安装该应用才能阅读书籍。 当前不能使用 Intune 来还原已删除的内置应用。
+
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理批量采购的适用于 iOS 设备的应用程序
 通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)或 [Apple Volume Purchase Program 教育版](http://volume.itunes.apple.com/us/store)购买多个 iOS 应用许可证。 这涉及到从 Apple 网站设置一个 Apple VPP 帐户并将 Apple VPP 令牌上载到 Intune。  然后你可以将你的批量购买信息与 Intune 同步并追踪你的批量购买的应用的使用情况。
@@ -43,7 +48,6 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 * 默认情况下，Intune 与 Apple VPP 服务一天同步两次。 可以随时开始手动同步。
 * 将 VPP 令牌导入 Intune 之后，不要将同一令牌导入任何其他设备管理解决方案。 这样做可能导致许可证分配和用户记录丢失。
 * 在开始将 iOS VPP 与 Intune 配合使用之前，先删除使用其他移动设备管理 (MDM) 供应商创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步 Apple VPP 服务中由 Intune 创建的数据。
-* 无法将 iOS VPP 应用分配到使用设备注册协议 (DEP) 注册的设备。
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
@@ -69,7 +73,7 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 2. 在“应用列表”边栏选项卡中，选择要分配的应用，然后选择“**...**” >“分配组”。
 3. 在<应用名称> -“已分配的组”边栏选项卡中，选择“管理” > “已分配的组”。
 4. 选择“分配组”，然后在“选择组”边栏选项卡上，选择要将应用分配到的 Azure AD 用户或设备组。
-必须选择**必需**的分配操作。 当前不支持可用安装。 此外，对设备组的分配可用于 2017 年 1 月之后创建的新租户。 如果你的租户在此之前创建的，并且没有选择将 VPP 应用分配给设备组，请联系 Intune 支持。
+必须选择**必需**的分配操作。 此外，对设备组的分配可用于 2017 年 1 月之后创建的新租户。 如果你的租户在此之前创建的，并且没有选择将 VPP 应用分配给设备组，请联系 Intune 支持。
 5. 完成后，选择“保存”。
 
 有关帮助监视应用分配的信息，请参阅[如何监视应用](monitor-apps.md)。
@@ -81,4 +85,6 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 若要回收许可证，必须将分配操作更改为“卸载”。 卸载应用后，将回收许可证。
 
 具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 继续安装应用前，他们必须执行此操作。
+
+在将 VPP 应用部署为可用后，会直接从应用商店部署应用内容和许可证。
 

@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
-ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
+ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -34,6 +34,7 @@ ms.lasthandoff: 04/12/2017
 | 按 IMEI 排列的组（所有平台）| 组 > 所有设备 > 企业预注册设备 > 按 IMEI 排列（所有平台）| [设备注册 > 企业设备标识符](#by-imei-all-platforms)|
 企业设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple 注册 > 注册计划配置文件](#where-did-corporate-pre-enrolled-devices-go) |
 | 企业设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple注册 > AC 配置文件](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | 管理员 > 移动设备管理 > Android for Work | 设备注册 > Android for Work 注册 | | 条款和条件 | 策略 > 条款和条件 | 设备注册 > 条款和条件 |
 
 
 ## <a name="where-do-i-manage-groups"></a>在哪个位置管理组？

@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -59,7 +59,7 @@ Microsoft MyApps 现在在托管浏览器中具有更好的支持。 面向管�
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司门户中的登录进度指示器 <!--953374-->
 
-用户启动或恢复应用时，Android 公司门户应用的更新会显示进度指示器。 该指示器将依次显示新的状态，从“正在连接...”开始，然后“正在登录...”，最后“正在检查安全性要求...”，完成后即允许用户访问该应用。 你可以在 [Intune 应用 UI 页面中的新增内容](whats-new-in-intune-app-ui.md)上查看适用于 Android 的公司门户应用的新屏幕。 
+用户启动或恢复应用时，Android 公司门户应用的更新会显示进度指示器。 该指示器将依次显示新的状态，从“正在连接...”开始，然后“正在登录...”，最后“正在检查安全性要求...”，完成后即允许用户访问该应用。 你可以在 [Intune 应用 UI 页面中的新增内容](whats-new-in-intune-app-ui.md)上查看适用于 Android 的公司门户应用的新屏幕。
 
 
 ## <a name="notices"></a>通知
@@ -186,7 +186,7 @@ Intune 将使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买�
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 创意者更新的多用户支持 <!-- 822547 -->
 
-我们为运行 Windows 10 创意者更新的设备和加入 Azure Active Directory 域的设备添加了对多用户管理的支持。 这意味着当不同的用户使用 AAD 凭据登录设备时，他们将收到分配给其用户名的所有应用和策略。
+我们为运行 Windows 10 创意者更新的设备和加入 Azure Active Directory 域的设备添加了对多用户管理的支持。 这意味着当不同的标准用户使用其 Azure AD 凭据登录设备时，他们将收到分配给其用户名的所有应用和策略。 用户当前无法将公司门户用于自助服务方案，如安装应用。
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 电脑的 Fresh Start <!-- 1004830 -->
 
@@ -203,7 +203,7 @@ Intune 将使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买�
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>批量注册 Windows 10 设备 <!-- 747607 -->
 
-可以使用 IT 自动化工具将大量 Windows 10 设备连接到 Azure Active Directory 和 Intune。 若要为你的 Azure AD 租户启用自动 MDM 注册，请创建一个预配包，该预配包将使用 Windows 配置设计器将设备连接到 Azure AD 租户。 将该包应用于你要批量注册和管理的公司所属的设备。  应用包后，设备将连接到 Azure AD 并注册 Intune，以供 Azure AD 用户登录。
+可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要为你的 Azure AD 租户启用自动 MDM 注册，请创建一个预配包，该预配包将使用 Windows 配置设计器将设备加入到 Azure AD 租户，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将程序包应用到设备后，设备将加入 Azure AD 并注册 Intune，以供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户并接收分配的策略和必需的应用。 目前不支持自助服务和公司门户方案。
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>PIN 和托管存储位置的新 MAM 设置 <!-- 58112, 736644 -->
 

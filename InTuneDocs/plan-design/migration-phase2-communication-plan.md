@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: d59ddb11ef96e90fdc47ad556c300cfa1dd53de5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9178404c1ed0b09ac4ae21c9c3a1b8d817241ea0
+ms.openlocfilehash: 4c5e436373303d44e01a9ee8d1474334cf8655db
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/27/2017
     -   [下载电子邮件 \#2 模板以在组织中使用。](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **电子邮件 \#3：**在访问受到影响之前，为用户提供日程表。 同样，提醒用户有关迁移的好处和战略原因。 电子邮件计时应有滑动窗口以匹配各阶段的管道。 例如 在 6 月将电子邮件 \#1 发送至阶段用户，将电子邮件 \#2 发送至阶段 2 用户并将电子邮件 \#1 发送至阶段 3 用户。
+-   **电子邮件 \#3：**在访问受到影响之前，为用户提供日程表。 同样，提醒用户有关迁移的好处和战略原因。 电子邮件计时应有滑动窗口以匹配各阶段的管道。 例如 在 6 月将电子邮件 \#1 发送至阶段 1 用户，将电子邮件 \#2 发送至阶段 2 用户，将电子邮件 \#1 发送至阶段 3 用户。
 
     -   [下载电子邮件 \#3 模板以在组织中使用。](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 03/27/2017
 
 Intune 还具有其他模板资源，可用于推动最终用户注册设备：
 
--   有关每个手机操作系统平台注册步骤的更多指南，请参阅[最终用户需要了解的有关 Microsoft Intune 使用的内容](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+-   有关每个手机操作系统平台注册步骤的更多指南，请参阅[最终用户需要了解的有关 Microsoft Intune 使用的内容](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 
 -   为 IT 管理员下载可自定义的[最终用户 Intune 注册模板](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)
 

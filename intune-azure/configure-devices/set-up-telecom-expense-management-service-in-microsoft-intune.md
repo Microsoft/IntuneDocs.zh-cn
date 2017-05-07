@@ -16,16 +16,16 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
+ms.lasthandoff: 04/19/2017
 
 ---
 
 # <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>在 Intune Azure 预览版中设置电信费用管理服务
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-借助 Intune，可管理企业拥有的移动设备上数据使用产生的电信费用。 为启用此功能，Intune 已集成第三方软件开发商 Saaswedo 的 Datalert 电信费用管理解决方案。 Datalert 是一款实时电信费用管理软件，可管理 Intune 托管设备的电信数据流量，避免昂贵和意外的数据和漫游过量。 
+借助 Intune，可管理企业拥有的移动设备上数据使用产生的电信费用。 为启用此功能，Intune 已集成第三方软件开发商 Saaswedo 的 Datalert 电信费用管理解决方案。 Datalert 是一款实时电信费用管理软件，可管理 Intune 托管设备的电信数据流量，避免昂贵和意外的数据和漫游过量。
 
 Intune 与 Datalert 相集成，通过在限制超过定义的阈值时使用自动报警，来实现集中设置、监视和强制实施漫游和国内数据流量限制。 可以将服务配置为对最终用户的个人或群组应用不同的操作，包括在用户超出阈值时禁用漫游。 可在 Datalert 管理控制台中查看提供数据流量和监视信息的报告。
 
@@ -85,7 +85,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 
-4. 在“设备配置”边栏选项卡上，选择“设置” > “电信费用管理”。 
+4. 在“设备配置”边栏选项卡上，选择“设置” > “电信费用管理”。
 
    在页面顶部查找“活动”连接状态。
 
@@ -97,7 +97,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>定义设备类别和映射到各类别的设备组
 
-根据组织的需求，至少需要创建两个设备类别（例如，公司和个人）并为每个类别创建动态设备组。 可以根据需要为组织创建更多类别。 
+根据组织的需求，至少需要创建两个设备类别（例如，公司和个人）并为每个类别创建动态设备组。 可以根据需要为组织创建更多类别。
 
 在注册过程中，将向用户显示这些类别。 根据用户选择的类别，会将已注册的设备移至相应的设备组。 有关如何创建设备类别的步骤，请参阅[将设备映射到组](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping)。
 
@@ -109,7 +109,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
 1. 在 Azure 门户的“Intune”边栏选项卡上，选择“管理应用”。
 
-2. 在“管理应用”边栏选项卡上，选择“管理” > “应用”。 
+2. 在“管理应用”边栏选项卡上，选择“管理” > “应用”。
 
 3. 选择“添加”添加一个应用。
 
@@ -129,7 +129,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
 1. 选择在前一步骤中创建的 iOS Datalert 应用。
 
-2. 在“应用”边栏选项卡上，转到“管理” > “分配”。 
+2. 在“应用”边栏选项卡上，转到“管理” > “分配”。
 
 3. 选择“选择组”，然后按照步骤选择公司设备组。
 
@@ -137,9 +137,9 @@ Intune 目前与下列电信费用管理提供商集成：
 
   ![“添加策略”边栏选项卡的屏幕截图](../media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>步骤 4：将公司付费电话线路添加到 Datalert 控制台 
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>步骤 4：将公司付费电话线路添加到 Datalert 控制台
 
-现已配置 Intune 和 Datalert 服务以彼此进行通信。 现需将公司付费电话线路添加到 Datalert 控制台，并为任何手机网络或漫游使用冲突定义阈值和操作。 
+现已配置 Intune 和 Datalert 服务以彼此进行通信。 现需将公司付费电话线路添加到 Datalert 控制台，并为任何手机网络或漫游使用冲突定义阈值和操作。 可以将公司付费的电话线手动添加到 Datalert 控制台，或在 Intune 中注册设备后自动添加线路。
 
 若要设置这些项，请转到[适用于 Microsoft Intune 的 Datalert 设置页面](http://www.datalert.fr/microsoft-intune/intune-setup)(http://www.datalert.fr/microsoft-intune/intune-setup)，然后按照“设置”选项卡下的设置向导中的步骤操作。
 
@@ -147,6 +147,11 @@ Intune 目前与下列电信费用管理提供商集成：
 
 
 Datalert 服务目前处于活动状态，它开始监控数据流量，并在超过所配置流量限制的设备上禁用手机网络和漫游数据。
+
+## <a name="client-enrollment-experience"></a>客户端注册体验
+有关客户端注册体验的信息，请参阅以下内容：
+-    [在电信费用管理中注册 iOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-    [在电信费用管理中注册 Android 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>关闭 Datalert 服务
 

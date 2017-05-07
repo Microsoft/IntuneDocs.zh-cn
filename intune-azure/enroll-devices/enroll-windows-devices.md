@@ -5,7 +5,7 @@ description: "Intune Azure 预览版：启用适用于 Windows 设备的 Intune 
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/21/17
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: b62a5704605f5cf89efb4052180f09f88eb788e1
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3c764b269916ae1a9b076617842eb26d7fd13bab
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,7 +28,10 @@ ms.lasthandoff: 04/06/2017
 
 此主题可帮助 IT 管理员为用户简化 Windows 注册过程。  无需任何其他步骤即可注册 Windows 设备，但你还可为用户简化注册过程。
 
-两个因素决定注册 Windows 设备的方式：
+运行 Windows 10 创意者更新并加入了 Azure Active Directory 域的设备现在支持 Intune 的多用户管理。 这意味着当不同的标准用户使用其 Azure AD 凭据登录设备时，他们将收到分配给其用户名的所有应用和策略。 用户当前无法将公司门户用于自助服务方案，如安装应用。
+
+两个因素决定你简化 Windows 设备注册的方式：
+
 - **是否使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 随附企业移动性 + 安全性和其他许可计划。
 - **将注册什么版本的 Windows？** <br>可通过添加工作或学校帐户自动注册 Windows 10 设备。 早期版本必须使用公司门户应用进行注册。
 
@@ -40,7 +43,7 @@ ms.lasthandoff: 04/06/2017
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>启用 Windows 注册（不使用 Azure AD Premium）
-无需 Azure AD Premium 自动注册即可让用户注册其设备。 将许可证分配给用户帐户后，用户可以将该帐户添加到 Windows 设备，并同意注册管理中的设备。 创建 DNS 别名（CNAME 记录类型）使用户能更轻松地注册其设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入 Intune 服务器名称。
+无需 Azure AD Premium 自动注册即可让用户注册其设备。 分配许可证后，用户即可在将他们的工作帐户添加到其个人拥有的设备后或在将其企业拥有的设备加入到你的 Azure AD 后进行注册。 创建 DNS 别名（CNAME 记录类型）使用户能更轻松地注册其设备。 如果创建 DNS CNAME 资源记录，用户即可连接 Intune 并在其中进行注册，而无需输入 Intune 服务器名称。
 
 **步骤 1：创建 CNAME**（可选）<br>
 为公司的域创建 CNAME DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
