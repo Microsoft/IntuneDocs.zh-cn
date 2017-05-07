@@ -190,7 +190,7 @@
 ### [创建 Android for Work 合规性策略](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [创建 iOS 合规性策略](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [创建 Windows 合规性策略](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [创建不符合性纠正措施](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [监视设备合规性](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
