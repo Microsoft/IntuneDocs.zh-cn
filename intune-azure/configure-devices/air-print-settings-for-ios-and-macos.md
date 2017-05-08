@@ -15,9 +15,10 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
 ms.openlocfilehash: a0f60cad9a5e679c83572375c3dd83bc7aeebd93
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/19/2017
 
 

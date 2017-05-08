@@ -15,9 +15,10 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
 ms.openlocfilehash: 0274a76fa7dd301ab19d1e8bc155c4ef2c79266f
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/15/2017
 
 

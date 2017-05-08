@@ -15,9 +15,10 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
 ms.openlocfilehash: 7d0821ee6941e9e6f05e2da59cf1c0ddd25a9501
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/15/2017
 
 

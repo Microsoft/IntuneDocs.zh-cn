@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
 ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/19/2017
 
 

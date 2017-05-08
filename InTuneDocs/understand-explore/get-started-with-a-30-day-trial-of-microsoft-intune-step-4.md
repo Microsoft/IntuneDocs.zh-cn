@@ -14,9 +14,10 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
 ms.openlocfilehash: 21d1e624069117d905dc7aced33b70abeb0e1109
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/14/2017
 
 

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: f0a477c9eb1ed0580314e79135e377809eaab197
 ms.openlocfilehash: 9b0ae19b211373548061e2c2979620739a0bf0a0
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/17/2017
 
 ---
