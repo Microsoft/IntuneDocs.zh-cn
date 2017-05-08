@@ -17,9 +17,10 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
 ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/20/2017
 
 

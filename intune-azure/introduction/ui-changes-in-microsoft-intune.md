@@ -15,9 +15,10 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
 ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/18/2017
 
 

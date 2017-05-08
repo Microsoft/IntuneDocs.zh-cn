@@ -15,9 +15,10 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
 ms.openlocfilehash: b2cbabea781840df0a2a283f803dc76520590aba
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/19/2017
 
 

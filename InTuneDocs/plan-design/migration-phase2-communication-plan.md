@@ -14,9 +14,10 @@ ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9178404c1ed0b09ac4ae21c9c3a1b8d817241ea0
 ms.openlocfilehash: 4c5e436373303d44e01a9ee8d1474334cf8655db
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/17/2017
 
 

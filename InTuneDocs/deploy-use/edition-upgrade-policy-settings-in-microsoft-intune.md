@@ -14,9 +14,10 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
 ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/15/2017
 
 
