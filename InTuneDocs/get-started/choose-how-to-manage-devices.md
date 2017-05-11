@@ -14,10 +14,11 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
-ms.lasthandoff: 12/20/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0ec828e881182dc0e0fb3bae671f0aec58f52aad
+ms.contentlocale: zh-cn
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/20/2016
 - Endpoint Protection 和 Windows 防火墙
 - 使用 TeamViewer 软件向用户提供远程协助
 
-有关每种方法提供的管理功能的详细列表，请参阅[移动设备管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)和 [Intune 电脑软件客户端功能](windows-pc-management-capabilities-in-microsoft-intune.md)。
+有关每种方法提供的管理功能的详细列表，请参阅[移动设备管理功能](mobile-device-management-capabilities-in-microsoft-intune.md)和[使用 Intune 电脑客户端软件管理 Windows 电脑](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)。
 要了解 Intune 支持的设备和电脑，请参阅[支持的移动设备和计算机](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices)。
 
 ## <a name="next-steps"></a>后续步骤

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68738f25393eec006a8bc7a78412669859f91c27
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -123,7 +124,7 @@ ms.lasthandoff: 04/19/2017
 
 使用搜索引擎，查找你想在 iTunes 应用商店中使用的应用并打开该应用的页面。
 复制页面的 URL，并使用此 URL 配置允许或禁止应用列表或你想要在展台模式下运行的应用。
-必须将包含受限制的应用设置的设备配置文件部署到用户组。
+必须将包含受限制的应用设置的设备配置文件分配到用户组。
 
 示例：搜索 Microsoft Word for iPad。 你将使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
 
@@ -160,52 +161,6 @@ ms.lasthandoff: 04/19/2017
 ### <a name="additional-options"></a>其他选项
 
 还可以单击“导入”，填充 csv 文件中的列表（格式为 <*应用 URL*>,<*应用名称*>,<*应用发布者*>），或单击“导出”，创建包含隐藏或可见应用列表内容且格式相同的 csv 文件。
-
-### <a name="app-information-for-built-in-ios-apps"></a>内置 iOS 应用的应用信息
-使用此列表中的信息识别想要显示或隐藏的内置 iOS 应用的名称、发布者和捆绑 ID。 如果想要显示或隐藏列表中的所有应用，可以将下面的数据复制到扩展名为 **.csv** 的文本文件中，然后使用“导入”选项同时导入所有应用。
-
-
-    App Store,Apple,com.apple.AppStore
-    Calculator,Apple,com.apple.calculator
-    Calendar,Apple,com.apple.mobilecal
-    Camera,Apple,com.apple.camera
-    Clock,Apple,com.apple.mobiletimer
-    Compass,Apple,com.apple.compass
-    Contacts,Apple,com.apple.MobileAddressBook
-    FaceTime,Apple,com.apple.facetime
-    Find Friends,Apple,com.apple.mobileme.fmf1
-    Find iPhone,Apple,com.apple.mobileme.fmip1
-    Game Center,Apple,com.apple.gamecenter
-    GarageBand,Apple,com.apple.mobilegarageband
-    Health,Apple,com.apple.Health
-    iBooks,Apple,com.apple.iBooks
-    iTunes Store,Apple,com.apple.MobileStore
-    iTunes U,Apple,com.apple.itunesu
-    Keynote,Apple,com.apple.Keynote
-    Mail,Apple,com.apple.mobilemail
-    Maps,Apple,com.apple.Maps
-    Messages,Apple,com.apple.MobileSMS
-    Music,Apple,com.apple.Music
-    News,Apple,com.apple.news
-    Notes,Apple,com.apple.mobilenotes
-    Numbers,Apple,com.apple.Numbers
-    Pages,Apple,com.apple.Pages
-    Photo Booth,Apple,com.apple.Photo-Booth
-    Photos,Apple,com.apple.mobileslideshow
-    Podcasts,Apple,com.apple.podcasts
-    Reminders,Apple,com.apple.reminders
-    Safari,Apple,com.apple.mobilesafari
-    Settings,Apple,com.apple.Preferences
-    Stocks,Apple,com.apple.stocks
-    Tips,Apple,com.apple.tips
-    Videos,Apple,com.apple.videos
-    VoiceMemos,Apple,com.apple.VoiceMemos
-    Wallet,Apple,com.apple.Passbook
-    Watch,Apple,com.apple.Bridge
-    Weather,Apple,com.apple.weather
-
-
-
 
 
 ## <a name="cellular"></a>移动电话
@@ -308,7 +263,7 @@ ms.lasthandoff: 04/19/2017
 
 >[!NOTE]
 > 必须使用 Apple Configurator 工具或 Apple 设备注册程序将设备置于监督模式后才能为 iOS 设备配置展台模式。 有关 Apple Configurator 工具的详细信息，请参阅 Apple 文档。
->如果在部署配置策略之后安装指定的 iOS 应用，则设备将在重启后才会进入展台模式。
+>如果在分配配置文件之后安装指定的 iOS 应用，则设备将在重启后才会进入展台模式。
 
 ## <a name="safari"></a>Safari
 -     **Safari（仅限被监督的设备）** - 指定是否可以在设备上使用 Safari 浏览器。

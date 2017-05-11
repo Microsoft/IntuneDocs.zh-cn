@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d6181b24d94bb151df036241d0a8b6b987f1483d
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 0ac1a6eeca125261f44607bbbb76b04253d5270e
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -27,14 +28,14 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-使用 Microsoft Intune 的 Android **自定义**配置文件来部署可用于控制 Android 设备功能的 OMA-URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
+使用 Microsoft Intune 的 Android **自定义**配置文件来分配可用于控制 Android 设备功能的 OMA-URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
-此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。
+此功能旨在使你能够分配不能使用 Intune 策略配置的 Android 设置。
 
 ## <a name="custom-profile-settings-for-android-devices"></a>适用于 Android 设备的自定义配置文件设置
 
 1. 按照[如何在 Microsoft Intune 中配置自定义设备设置](how-to-configure-custom-settings.md)中的说明进行操作。
-2. 在“创建配置文件”边栏选项卡上，选择“设置”添加&1; 个或多个 OMA-URI 设置。
+2. 在“创建配置文件”边栏选项卡上，选择“设置”添加 1 个或多个 OMA-URI 设置。
 3. 在“编辑行”边栏选项卡上，为每个设置配置以下值：
     - **名称** - 输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。
     - **说明** - 提供对设置进行概述的说明以及帮助你找到该设置的其他相关信息。

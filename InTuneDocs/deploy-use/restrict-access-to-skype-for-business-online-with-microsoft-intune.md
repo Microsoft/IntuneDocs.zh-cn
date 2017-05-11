@@ -14,10 +14,11 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 5888ffa6f16e9a9807ce1f9a9eb0594ed31b5b18
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -47,18 +48,18 @@ ms.lasthandoff: 04/14/2017
 
 -   是 **Android** 或 **iOS** 设备。
 
--   **已注册**到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]。
+-   已向 Intune **注册**。
 
--   **符合**任何已部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
+-   **符合**任何已部署的 Intune 符合性策略。
 
 
 基于指定的条件，设备状态存储在可授予或阻止访问权限的 Azure Active Directory 中。
 
 如果不满足条件，用户在登录时将看到以下其中消息之一：
 
--   如果未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用和进行注册的说明。
+-   如果设备未向 Intune 注册，或未在 Azure Active Directory 中注册，则会显示一条消息，说明如何安装公司门户应用并进行注册。
 
--   如果设备不合规，则显示一条消息，将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站或公司门户应用，用户可从中找到相关问题及其修复方法的信息。
+-   如果设备不符合策略，则显示一条消息，将用户定向到 Intune 公司门户网站或公司门户应用，用户可从中找到相关问题及其修复方法的信息。
 
 ## <a name="configure-conditional-access-for-skype-for-business-online"></a>配置 Skype for Business Online 的条件性访问
 
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/14/2017
 [创建](create-a-device-compliance-policy-in-microsoft-intune.md)合规性策略并将其[部署](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)到将受此策略影响的所有设备。 这些将是“目标组”中的用户所使用的所有设备。
 
 > [!NOTE]
-> 将合规性策略部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
+> 将合规性策略部署到 Intune 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
 
 
 > [!IMPORTANT]

@@ -14,10 +14,11 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: a7d38caac1cfd035c66d02579766d60d4394dd5e
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -157,7 +158,7 @@ ms.lasthandoff: 04/24/2017
 
     你现已创建策略并将其部署到用户。
 
-仅分配有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证的用户会受该策略影响。 所选安全组中未分配有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证的用户不会受到影响。
+仅分配有 Intune 许可证的用户会受该策略影响。 所选安全组中未分配有 Intune 许可证的用户不会受到影响。
 
 >[!IMPORTANT]
 > 如果你使用 Intune 与配置管理器来管理 iOS 和 Android 设备，则该策略将仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不会受影响。

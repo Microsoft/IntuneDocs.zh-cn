@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 96756c4aa5afa52821614d5f7fbc6d0bca15895b
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 571d12427a8d5103470837819ab356923a2fcccd
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 Microsoft Intune 中的 VPN 配置文件将 VPN 设置部署到你组织中的用户和设备，以便它们可以方便且安全地连接到网络。
+虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 Microsoft Intune 中的“VPN 配置文件”将 VPN 设置分配到你组织中的用户和设备，从而可以方便且安全地连接到网络。
 
 例如，假定你想要用连接到公司网络上的文件共享所需的设置预配所有 iOS 设备。 创建包含连接到公司网络所必需的设置的 VPN 配置文件，然后将此配置文件分配到所有使用 iOS 设备的用户。 用户将在可用网络的列表中看到 VPN 连接，并可以轻松连接。
 
@@ -53,7 +54,7 @@ ms.lasthandoff: 03/17/2017
 
 
 > [!IMPORTANT]
-> 在你能够使用已部署到设备的 VPN 配置文件之前，你必须安装适用于该配置文件的 VPN 应用。 [什么是 Microsoft Intune 中的应用管理？](/intune-azure/manage-apps/what-is-app-management)主题中的信息可帮助你使用 Intune 部署应用。  
+> 在你能够使用已分配到设备的 VPN 配置文件之前，必须安装适用于该配置文件的 VPN 应用。 [什么是 Microsoft Intune 中的应用管理？](/intune-azure/manage-apps/what-is-app-management)主题中的信息可帮助你使用 Intune 分配应用。  
 
 了解如何使用[创建自定义 VPN 配置文件](create-custom-vpn-profiles.md)中的 URI 设置创建自定义 VPN 配置文件。     
 
@@ -92,7 +93,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 ### <a name="certificates"></a>证书
 
-在创建 VPN 配置文件时，选择之前已在 Intune 中创建的 SCEP 或 PKCS 证书配置文件。 该配置文件又称为身份证书。 其用于对你创建的受信任的身份证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会部署到对 VPN 连接（通常是 VPN 服务器）进行身份验证的计算机。
+在创建 VPN 配置文件时，选择之前已在 Intune 中创建的 SCEP 或 PKCS 证书配置文件。 该配置文件又称为身份证书。 其用于对你创建的受信任的身份证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会分配到对 VPN 连接（通常是 VPN 服务器）进行身份验证的计算机。
 
 有关如何在 Intune 中创建和使用证书配置文件的详细信息，请参阅[如何使用 Microsoft Intune 配置证书](how-to-configure-certificates.md)。
 

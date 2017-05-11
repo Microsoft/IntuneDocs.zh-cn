@@ -1,12 +1,12 @@
 ---
-title: "如何使用 Intune 配置证书"
+title: "如何使用 Intune 配置证书 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何使用 Intune 创建和分配证书，以保护 Wi-Fi、VPN 和其他连接的安全性。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 7d1d3c101aaa3832e36a0b9e9369fd1eeb0a6250
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: dfbf8e4f6a2ead4fa9ba1b476a0bf6ce6190d0a3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/19/2017
     - Windows 8.1 及更高版本
     - Windows Phone 8.1 及更高版本
     - Windows 10 及更高版本
-3. 创建证书配置文件以便设备请求 1 个将用于对 VPN、Wi-Fi 和电子邮件访问进行身份验证的证书。 可以为运行以下平台的设备创建并部署 **PKCS** 或 **SCEP** 证书配置文件：
+3. 创建证书配置文件以便设备请求 1 个将用于对 VPN、Wi-Fi 和电子邮件访问进行身份验证的证书。 可以为运行以下平台的设备创建并分配 **PKCS** 或 **SCEP** 证书配置文件：
     - iOS 8.0 及更高版本
     - Android 4.0 及更高版本
     - Android for Work

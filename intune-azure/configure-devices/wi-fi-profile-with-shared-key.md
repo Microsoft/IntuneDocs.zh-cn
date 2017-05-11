@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 174e919a2980ca2cf0e97cc41f5b048183a9d4a7
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: d318b8c1b6ba6ac73920e3f55519ae0472cb570c
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 02/18/2017
 4. 选择“确定”，保存并分配策略。
 
     > [!NOTE]
-    > 只可以将此策略部署到用户组。
+    > 只能将此策略分配到用户组。
 
 每个设备在下次签入时，将应用该策略，且将在设备上创建 Wi-Fi 配置文件。 设备将能够自动连接到网络。
 

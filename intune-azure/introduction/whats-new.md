@@ -6,7 +6,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 04/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: 9554a431859665312daf414f2c6cdfb47baf8547
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: b9f56099c1f102472ba7f6c6a67b16cf29649365
+ms.openlocfilehash: 255b36b0c4473ff2450bf6f9a2db920c731bddc1
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/02/2017
 
 ---
 
@@ -32,6 +33,11 @@ ms.lasthandoff: 04/20/2017
 > 此页上提供了针对 Azure 门户预览列出的更改。 但是，鉴于 Intune 服务的更新方式，所做的更改可能无法立即使用。  在新门户功能可用之前，必须按顺序更新服务的多个组件。 在本月晚些时候推出时查找这些更改。
 
 ## <a name="april-2017"></a>2017 年 4 月
+
+### <a name="support-for-managing-the-apple-classroom-app"></a>支持管理 Apple Classroom 应用
+
+现在可以在 iPad 设备上管理 iOS Classroom 应用。 使用正确的班级和学生数据设置教师 iPad 上的 Classroom 应用，然后配置已注册到某个班级的学生 iPad，方便使用此应用进行控制。
+有关详细信息，请参阅[配置 iOS 教育设置](/intune-azure/configure-devices/how-to-configure-ios-edu-settings)。
 
 ### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>支持 Android 应用的托管配置选项 <!-- 621621 -->
 

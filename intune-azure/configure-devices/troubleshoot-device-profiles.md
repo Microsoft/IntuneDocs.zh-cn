@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Intune 中的设备配置文件疑难解答"
+title: "Microsoft Intune 中的设备配置文件疑难解答 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：如果遇到问题无法解决，请使用本主题来解决 Intune 设备配置文件的问题。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: c984c908afe97c988b9a1b9f46262c5a14a7d4d8
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -30,10 +31,10 @@ ms.lasthandoff: 03/13/2017
 
 本主题中的信息可用于帮助解决与 Intune 设备配置文件相关的常见问题。
 
-## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>策略或应用部署完成后，移动设备需要多长时间获取？
-策略或应用部署完成后，Intune 会立即开始尝试通知设备其应签入到 Intune 服务。 这通常可在五分钟内完成。
+## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>策略或应用分配完成后，移动设备需要多长时间获取？
+策略或应用分配完成后，Intune 会立即开始尝试通知设备其应签入到 Intune 服务。 这通常可在五分钟内完成。
 
-如果首次发出通知后设备未签入以获取策略，则 Intune 还会尝试通知&3; 次。  如果设备脱机（例如设备已关机或未连接至网络），则可能无法收到通知。 在这种情况下，设备将按照以下设置在下次计划的签入到 Intune 服务时获取策略：
+如果首次发出通知后设备未签入以获取策略，则 Intune 还会尝试通知 3 次。  如果设备脱机（例如设备已关机或未连接至网络），则可能无法收到通知。 在这种情况下，设备将按照以下设置在下次计划的签入到 Intune 服务时获取策略：
 
 - iOS 和 macOS：每 6 小时。
 - Android：每 8 小时。
@@ -50,12 +51,12 @@ ms.lasthandoff: 03/13/2017
 用户还可以打开公司门户应用并同步设备以立即随时检查策略。
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>哪些操作会导致 Intune 立即向设备发送通知？
-当设备收到告知它们签入的通知时或者在定期的计划签入期间，设备会签入到 Intune。  当你针对某个设备或用户执行特定操作时，例如擦除、锁定、密码重置、应用部署、配置文件部署（Wi-Fi、VPN、电子邮件等）或策略部署，Intune 会立即开始尝试通知设备其应签入到 Intune 服务以接收这些更新。
+当设备收到告知它们签入的通知时或者在定期的计划签入期间，设备会签入到 Intune。  当你针对某个设备或用户执行特定操作时，例如擦除、锁定、密码重置、应用分配、配置文件分配（Wi-Fi、VPN、电子邮件等）或策略分配，Intune 会立即开始尝试通知设备其应签入到 Intune 服务以接收这些更新。
 
 其他变更（如在公司门户中修订合同信息）不会导致立即向设备发送通知。
 
-## <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>如果多个策略被部署到同一用户或设备，如何知道会应用哪些设置？
-当两个或多个策略被部署到同一用户或设备时，将在单个设置级别上评估具体应用哪个设置。
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>如果多个策略被分配到同一用户或设备，如何知道会应用哪些设置？
+当两个或多个策略被分配到同一用户或设备时，将在单个设置级别上评估具体应用哪个设置：
 
 -   合规性策略设置始终优先于配置策略设置。
 
@@ -63,25 +64,25 @@ ms.lasthandoff: 03/13/2017
 
 -   如果配置策略设置与不同配置策略中的设置冲突，则将在 Intune 控制台中显示此冲突。 必须手动解决此类冲突。
 
-## <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>移动应用管理策略相互冲突时会发生什么情况？ 哪一种策略将应用于应用？
-除数字输入字段（如重置之前尝试 PIN）外，冲突值是 MAM 策略中限制最严格的设置。  数字输入字段将设定为与你使用建议的设置选项在控制台中创建 MAM 策略时一样的值。
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>应用保护策略互相冲突时会发生什么情况？ 哪一种策略将应用于应用？
+除数字输入字段（如重置之前尝试 PIN）外，冲突值是应用保护策略中限制最严格的设置。  数字输入字段将设定为与你使用建议的设置选项在控制台中创建 MAM 策略时一样的值。
 
-两个策略设置相同时即会发生冲突。  例如，除复制/粘贴设置外，你配置了两个完全相同的 MAM 策略。  在此方案中，复制/粘贴设置将设定为限制最严格的值，但其余设置将应用配置的值。
+两个配置文件设置相同时即会发生冲突。  例如，除复制/粘贴设置外，你配置了两个完全相同的 MAM 策略。  在此方案中，复制/粘贴设置将设定为限制最严格的值，但其余设置将应用配置的值。
 
-如果一个策略部署到应用且生效，然后部署第二个策略，则第一个策略的优先级更高并且会继续应用该策略，而第二个策略将显示冲突。 如果两个策略同时应用，即它们的优先级一样，则两个都会显示冲突。 任何冲突的设置都将设定为限制最严格的值。
+如果一个配置文件已分配到应用且生效，然后分配了第二个配置文件，则第一个配置文件的优先级更高并且会继续应用该配置文件，而第二个配置文件将显示冲突。 如果两个配置文件同时应用，即没有优先的配置文件，则两个都会显示冲突。 任何冲突的设置都将设定为限制最严格的值。
 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS 自定义策略冲突时会发生什么情况？
-Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源标识符 (OMA-URI) URI 策略的负载。 它只作为传送机制。
+Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源标识符 (OMA-URI) URI 配置文件的负载。 它只作为传送机制。
 
-部署自定义策略时，请确保配置的设置不会与合规性、配置或其他自定义策略冲突。 如果自定义策略与设置冲突，则应用设置的顺序是随机的。
+分配自定义配置文件时，请确保配置的设置不会与符合性、配置或其他自定义策略冲突。 如果自定义配置文件与设置冲突，则应用设置的顺序是随机的。
 
-## <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>当策略被删除，或不再适用时，会发生什么情况？
-当你删除某个策略，或从策略部署到的组中删除设备时，策略和设置将会根据下表从设备中删除。
+## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>当配置文件被删除，或不再适用时，会发生什么情况？
+当你删除某个配置文件，或从分配有配置文件的组中删除设备时，该配置文件和设置将会根据下表从设备中删除。
 
 ### <a name="enrolled-devices"></a>“注册的设备”
 
 - Wi-Fi、VPN、证书和电子邮件配置文件：这些配置文件会从所有支持的已注册设备中删除。
-- 所有其他策略类型：
+- 所有其他配置文件类型：
     - **Windows 和 Android 设备**：设置不会从设备中删除。
     - **Windows Phone 8.1 设备**：会删除以下设置：
         - 需要密码才可解锁移动设备
@@ -115,44 +116,13 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
         - 允许数据漫游
         - 允许漫游时自动同步
 
-### <a name="windows-pcs-running-the-intune-client-software"></a>运行 Intune 客户端软件的 Windows PC
+## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>我更改了设备限制配置文件，但更改尚未生效
+Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”  设置为 8，然后尝试将其减少到 4。 已向设备应用更严格的配置文件。
 
-- **Endpoint Protection 设置**：设置还原为其建议值。 唯一的例外是默认值为“否”的“加入 Microsoft Active Protection Service”设置。 有关详细信息，请参阅[使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)。
-- **软件更新设置**：设置重置为操作系统的默认状态。 有关详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)。
-- **Microsoft Intune Center 设置**：从计算机中删除策略所配置的任何支持联系人信息。
-- **Windows 防火墙设置**：设置重置为计算机操作系统的默认值。 有关详细信息，请参阅[使用 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows 电脑的安全](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)。
-
-
-## <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>如何刷新设备的策略以确保是最新的策略（仅适用于运行 Intune 客户端软件的 Windows 电脑）？
-
-1.  在任一设备组中，选择要在其上刷新策略的设备，然后选择“远程任务”&gt;“刷新策略”。
-2.  选择 Intune 管理控制台右下角的“**远程任务**”可检查任务状态。
-
-
-
-### <a name="how-do-i-know-that-my-profile-was-assigned-to-a-device"></a>如何知道配置文件已分配给设备？
-
-在 Intune 管理控制台中，每个设备的“设备属性”下都有一个策略选项卡 。 每个策略都有 **“预期值”** 和 **“状态”**。 预期值是指在分配策略时想要获得的值。 状态是指综合考虑应用于设备的所有策略，以及硬件和操作系统的限制及要求时，实际应用的内容。 可能的状态为：
-
--   **符合**：设备已收到策略，并向服务报告该策略符合设置。
-
--   **不适用**：策略设置不适用。 例如，iOS 设备的电子邮件设置不适用于 Android 设备。
-
--   **挂起**：策略已发送到设备，但尚未将状态报告给服务。 例如，Android 上的加密需要用户启用加密，因此可能会处于挂起状态。
-
-
-> [!NOTE]
-> 请记住，当具有不同限制级别的两个策略应用于同一个设备或用户时，实际会使用限制更严格的策略。
-
-
-## <a name="i-changed-a-device-restriction-policy-but-the-changes-havent-taken-effect"></a>我更改了设备限制策略，但更改尚未生效
-Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”  设置为 8，然后尝试将其减少到 4。 已向设备应用更严格的策略。
-
-如果要将策略更改为安全级别较低的值，可能需要重置安全策略，具体视设备平台而定。
+如果要将配置文件更改为安全级别较低的值，可能需要重置安全策略，具体视设备平台而定。
 例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”栏并选择“设置”&gt;“控制面板”。  选择“用户帐户”  小程序。
 在左侧导航菜单底部有一个“重置安全策略”  链接。 选中它，然后选择**重置策略**按钮。
-对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS），可能需要将其停用并重新注册回服务，这样才能应用限制较少的策略。
-
+对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS），可能需要将其停用并重新注册回服务，这样才能应用限制较少的配置文件。
 
 <!--- ## Status codes for MDM managed Windows devices
 
@@ -499,4 +469,4 @@ Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其�
 --->
 
 ### <a name="next-steps"></a>后续步骤
-如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)中所述。
+如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](/intune-azure/introduction/how-to-get-support-for-microsoft-intune)中所述。

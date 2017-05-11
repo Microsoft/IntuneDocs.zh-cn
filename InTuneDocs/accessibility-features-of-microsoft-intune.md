@@ -2,10 +2,10 @@
 title: "辅助功能 | Microsoft Docs"
 description: "了解 Intune 提供的更易于残障人士使用的功能。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 05/04/2017
 ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,17 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9e3d509cf404c89b27f92ad54c900e927ce3878b
-ms.openlocfilehash: c1b585da0b2875f393a0cbe929f11d3a04875905
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: b54dffd23db966d9ed15ec23fe25a7e58a187d0b
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
 
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune 的可访问性功能
-除了 Microsoft Windows 中的辅助功能和工具之外，以下功能使 [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] 更易于残障人士访问：
+除了 Microsoft Windows 中的辅助功能和工具之外，以下功能使 Microsoft Intune 更易于残障人士访问：
 
 -   使用键盘快捷方式
 
@@ -45,10 +47,5 @@ ms.openlocfilehash: c1b585da0b2875f393a0cbe929f11d3a04875905
 |移到下一个应用程序组|向上键|
 |显示所选设备的操作|向右键|
 > [!NOTE]
-> 可使用标准 Internet Explorer 键盘快捷方式在 [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] 门户中导航。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
+> 可使用标准 Internet Explorer 键盘快捷方式在 Microsoft Intune 门户中导航。
 

@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>方案 1：阻止用户使用非合规的设备访问 Exchange Online
 ### <a name="scenario-requirements"></a>方案要求
 - 如果设备不符合部署的合规性策略，必须阻止“会计”Azure Active Directory 安全组中的所有用户访问 Exchange Online。
-- 如果任何属于此组的用户的设备不受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 支持，则必须阻止这些用户在该设备上访问 Exchange Online。
+- 如果任何属于此组的用户的设备不受 Intune 支持，则必须阻止这些用户在该设备上访问 Exchange Online。
 - “财务”Azure Active Directory 安全组中的用户必须从策略中免除，即使它们也位于“会计”安全组中。
 
 为此，请使用以下设置来配置 Exchange Online 的条件性访问：
@@ -68,7 +70,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>方案3：任何 Android 设备均不可访问 Exchange 内部部署
 ### <a name="scenario-requirements"></a>方案要求
 - 应阻止所有 Android 设备访问 Exchange。
-- 所有其他受支持的设备可访问 Exchange，只要它们由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理。
+- 所有其他受支持的设备均可访问 Exchange，前提是它们由 Intune 管理。
 
 为此，请使用以下设置来配置 Exchange 内部部署的条件性访问：
 
@@ -82,9 +84,4 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 以下流程用于确定哪些设备可以访问 Exchange：
 
 ![设备访问流程](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
