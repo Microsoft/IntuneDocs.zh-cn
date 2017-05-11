@@ -14,10 +14,11 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/14/2017
 
 - 具有**企业移动性 + 安全性 (EMS) 订阅**或 **Azure Active Directory (Azure AD) Premium 订阅**，并且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)。
 
--  请考虑配置可选的“Intune 服务间连接器”，它将 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 连接到 Exchange Online，并通过 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台帮助你管理设备信息。 不需要通过连接器来使用合规性策略或条件性访问策略，但要求运行帮助评估条件性访问影响的报告。
+-  请考虑配置可选的“Intune 服务间连接器”，它将 Intune 连接到 Exchange Online，并通过 Intune 控制台帮助你管理设备信息。 不需要通过连接器来使用合规性策略或条件性访问策略，但要求运行帮助评估条件性访问影响的报告。
     -  了解有关 [Intune Service-to-Service Connector](intune-service-to-service-exchange-connector.md) 的详细信息。
 
    > [!NOTE]
@@ -50,21 +51,21 @@ ms.lasthandoff: 04/14/2017
 
 配置条件性访问策略并将它们面向用户时，在用户可以连接到其电子邮件前，他们使用的**设备**必须：
 
--   已加入域的电脑或已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] **注册**。
+-   是已加入域的电脑或已向 Intune **注册**。
 
--  **已在 Azure Active Directory 中注册**。 向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备时，会自动发生此情况。 此外，还必须向 Azure Active Directory 注册客户端 Exchange ActiveSync ID。
+-  **已在 Azure Active Directory 中注册**。 向 Intune 注册设备时，会自动发生此情况。 此外，还必须向 Azure Active Directory 注册客户端 Exchange ActiveSync ID。
 
   Azure Active Directory 设备注册服务自动对 Intune 和 Office 365 客户激活。 已经部署了 ADFS 设备注册服务的用户不会在本地 Active Directory 上看到已注册的设备。
 
--   **符合**任何已部署到该设备或已加入到本地域的域的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
+-   **符合**任何已部署到该设备或已加入到本地域的域的 Intune 符合性策略。
 
 ### <a name="when-the-device-is-not-compliant"></a>设备不合规时
 
 如果不满足条件访问策略，则设备将立即被隔离，并且用户会收到一封电子邮件，告知他们在登录时将看到以下隔离通知之一：
 
-- 如果设备未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用、注册设备和激活电子邮件的说明。 此过程也将设备的 Exchange ActiveSync ID 和 Azure Active Directory 中的记录相关联。
+- 如果设备未向 Intune 注册，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用、注册设备和激活电子邮件的说明。 此过程也将设备的 Exchange ActiveSync ID 和 Azure Active Directory 中的记录相关联。
 
--   如果设备被评估为不符合合规性策略规则，会将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站或公司门户应用，从中他们可以找到有关问题以及其修正方法的信息。
+-   如果设备被评估为不遵循符合性策略规则，会将用户定向到 Intune 公司门户网站或公司门户应用，方便他们找到有关该问题及其修正方法的信息。
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>条件性访问对 Exchange Online 的作用方式
 
@@ -114,7 +115,7 @@ ms.lasthandoff: 04/14/2017
 
   PC 必须已加入域或符合合规性策略规则。
 
-  为了被视为符合规范，PC 必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中进行注册且符合相应的策略。
+  为遵循符合性，电脑必须在 Intune 中注册且符合相应的策略。
 
   对于加入域的电脑，必须设置条件性访问以便[自动向 Azure Active Directory.注册设备](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。
 
@@ -138,11 +139,11 @@ ms.lasthandoff: 04/14/2017
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>步骤 2：评估条件性访问策略的影响
 在配置条件性访问策略后，你可以使用“移动设备清单报告”识别被阻止访问 Exchange 的设备。
 
-为此，请使用 [Microsoft Intune 服务间连接器](intune-service-to-service-exchange-connector.md)配置 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 和 Exchange 之间的连接。
+为此，请使用 [Microsoft Intune 服务间连接器](intune-service-to-service-exchange-connector.md)配置 Intune 和 Exchange 之间的连接。
 1.  导航到“报告” > “移动设备清单报告”。
 ![移动设备清单报告页面的屏幕截图](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
-2.  在报表参数中，选择想要评估的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，并根据需要选择策略将应用到的设备平台。
+2.  在报表参数中，选择想要评估的 Intune 组，并根据需要选择将应用策略的设备平台。
 3.  选择符合组织需求的标准后，选择“查看报告”。
 将在新窗口中打开报表查看器。
 ![移动设备清单报告示例的屏幕截图](../media/IntuneSA2cViewReport.PNG)
@@ -200,7 +201,7 @@ ms.lasthandoff: 04/14/2017
     > [!NOTE]
     > 如果尚未部署合规性策略，那么设备将被视为合规。
     >
-    > 无论合规性状态如何，策略针对的所有用户都需要使用[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]注册其设备。
+    > 无论符合性状态如何，策略针对的所有用户都需要向 Intune 注册其设备。
 
 3.  在“应用程序访问”下，对于使用新式验证的应用，有两种方式可选择策略应该应用到的平台。 受支持的平台包括 Android、iOS、Windows 和 Windows Phone。
 
@@ -257,7 +258,7 @@ ms.lasthandoff: 04/14/2017
 
 -   用户创建电子邮件帐户后，设备将立即被阻止。
 
--   如果被阻止的用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备并修复任何非合规性的问题，将在两分钟内解除对电子邮件访问的阻止。
+-   如果被阻止的用户向 Intune 注册设备并修复任何不符合性的问题，将在两分钟内解除对电子邮件访问的阻止。
 
 -   如果用户取消对其设备的注册，将会在大约六小时后阻止电子邮件。
 
@@ -267,7 +268,7 @@ ms.lasthandoff: 04/14/2017
 
 #### <a name="to-view-devices-that-are-blocked-from-exchange"></a>查看被 Exchange 阻止的设备
 
-在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 仪表板上，选择“被 Exchange 阻止的设备”磁贴，以显示被阻止设备的数目以及指向相关详细信息的链接。
+在 Intune 仪表板上，选择“被 Exchange 阻止的设备”磁贴，以显示被阻止设备的数目以及指向相关详细信息的链接。
 ![Intune 仪表板的屏幕截图显示了被阻止访问 Exchange 的设备的数目](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>后续步骤

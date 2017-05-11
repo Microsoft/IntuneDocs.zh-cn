@@ -15,10 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a391f9e16faf315c5fb88191f3de3f8f2f3d5178
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: 7322b19b544e7c0456c94f12746844ac12669873
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -70,6 +71,11 @@ ms.lasthandoff: 02/18/2017
 | **阻止在已越狱或取得 root 权限的设备上运行托管应用** |  选择“是”，阻止在已越狱或取得 root 权限的设备上运行此应用。 用户仍能够将此应用用于个人任务，但必须使用其他设备访问此应用中的工作或学校数据。 | 是 |
 | **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指定重新检查应用访问要求之前的时间（以分钟为单位）。 默认值 = **30** 分钟。</li><li>**脱机宽限期**：如果设备脱机，请指定重新检查应用访问要求之前的时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。</li></ul>| 超时：30 <br><br> 脱机：720 |
 | **擦除应用数据前的脱机时间间隔(天)** | 如果设备已脱机超过一段时间，可擦除此应用中的工作或学校数据。 可指定从设备删除工作或学校数据前该设备可脱机的天数。 <br><br> | 90 天 |
+| **要求最低 iOS 操作系统版本** | 选择“是”将要求要使用此应用需具备的最低 iOS 操作系统版本。 如果设备上的 iOS 版本不符合此要求，将阻止用户访问。 <br><br> | 否 |
+| **要求最低 iOS 操作系统版本(仅警告)** | 选择“是”将建议要使用此应用需具备的最低 iOS 操作系统版本。 如果设备上的 iOS 版本不符合此要求，用户将看到一个通知。 可忽略此通知。 <br><br> | 否 |
+| **要求最低应用版本** | 选择“是”将要求要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，将阻止用户访问。<br><br>选择要作为目标的应用时，请注意应用之间通常具有不同的版本方案。<br><br> | 否 |
+| **要求最低应用版本(仅警告)** | 选择“是”将建议要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，用户将看到一个通知。 可忽略此通知。<br><br>选择要作为目标的应用时，请注意应用之间通常具有不同的版本方案。<br><br> | 否 |
+| **要求最低 Intune 应用保护策略 SDK 版本** | 选择“是”将要求要使用的应用上的最低 Intune 应用保护策略 SDK 版本。 如果应用的 Intune 应用保护策略 SDK 版本不符合此要求，将阻止用户访问。 <br> <br> 若要了解有关 Intune 应用保护策略 SDK 的详细信息，请参阅 [Intune 应用 SDK 概述](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) <br><br> | 否 |
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 应用的加载项
 

@@ -1,12 +1,12 @@
 ---
-title: "适用于 macOS 设备的 Intune VPN 设置"
+title: "适用于 macOS 设备的 Intune VPN 设置 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解可用于在 macOS 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 068dcd5209ff1cc2b2799919fe38bdfbf809423a
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 76fdf944a21a7dfcd300ef71d12954e4f61831f5
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -40,12 +41,12 @@ ms.lasthandoff: 02/18/2017
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**
-    - ** F5 Edge Client**
+    -  **F5 Edge Client**
     - **Pulse Secure**
     - **自定义 VPN**
 - “拆分隧道” - “启用”或“禁用”，此选项让设备根据流量确定使用哪个连接。 例如，旅馆中的用户使用 VPN 连接来访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。
 
-<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you deploy the software. For more information, see [How to deploy and monitor apps](/intune-azure/manage-apps/deploy-apps). --->
+<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../manage-apps/deploy-apps.md). --->
 
 ## <a name="custom-vpn-settings"></a>自定义 VPN 设置
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
-ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 5eb84fed9fccbcedaefa227c34985a5303339b1e
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 ---
 
@@ -51,11 +52,11 @@ ms.lasthandoff: 04/04/2017
 
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
 
-## <a name="manually-deploy-windows-10-company-portal-app"></a>手动部署 Windows 10 公司门户应用
-最终用户可以从 Windows 应用商店安装公司门户应以管理设备和安装应用。 但是，如果你的业务需求需要部署公司门户应用，即使尚未将 Intune 与适用于企业的 Windows 应用商店集成，也可以直接从 Intune 手动部署 Windows 10 公司门户应用。
+## <a name="manually-assign-windows-10-company-portal-app"></a>手动分配 Windows 10 公司门户应用
+最终用户可以从 Windows 应用商店安装公司门户应以管理设备和安装应用。 但是，如果你的业务需求需要分配公司门户应用，即使尚未将 Intune 与适用于企业的 Windows 应用商店集成，也可以直接从 Intune 手动分配 Windows 10 公司门户应用。
 
  > [!NOTE]
- > 每次发布应用更新时，此选项都需要部署手动更新。
+ > 每次发布应用更新时，此选项都需要分配手动更新。
 
 1. 在[适用于企业的 Windows 应用商店](https://www.microsoft.com/business-store)中登录到你的账户，并获取公司门户应用的**脱机许可证**版本。  
 2. 获得应用之后，选择“**清单**”页中的应用。  
@@ -69,8 +70,8 @@ ms.lasthandoff: 04/04/2017
   ![随 APPXBUN 文件一起保存的 Dependencies 文件夹的图像](../media/Win10CP-Dependencies-save.png)
   2. 将九个依赖项包置于 Dependencies 文件夹中。  
   如果依赖项未按此格式放置，Intune 将无法在包上载期间将其识别并上载，从而导致上载失败并出现以下错误。  
-  ![在应用程序文件夹中找不到此软件安装程序的 Windows 应用依赖项。 你可以继续创建和部署此应用程序，但直到提供缺少的 Windows 应用依赖项后，此应用程序才能运行。](../media/Win10CP-error-message.png)
-6. 返回到 Intune，然后将公司门户作为新的应用上载。 将其作为所需的应用部署到所需的目标用户集。  
+  ![在应用程序文件夹中找不到此软件安装程序的 Windows 应用依赖项。 你可以继续创建和分配此应用程序，但直到提供缺少的 Windows 应用依赖项后，此应用程序才能运行。](../media/Win10CP-error-message.png)
+6. 返回到 Intune，然后将公司门户作为新的应用上载。 将其作为所需的应用分配到所需的目标用户集。  
 
 有关 Intune 如何处理通用应用的依赖项的详细信息，请参阅[通过 Microsoft Intune MDM 部署具有依赖项的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  
 
@@ -78,20 +79,20 @@ ms.lasthandoff: 04/04/2017
 如果你的用户已从应用商店安装 Windows 8.1 或 Windows Phone 8.1 公司门户应用，那么它们应自动更新到新版本，你或你的用户无需执行任何操作。 如果未更新，则要求用户检查他们是否在设备上启用了应用商店应用的自动更新。   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将我的旁加载 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
-我们推荐的迁移途径是通过将部署操作设置为“卸载”，删除 Windows 8.1 公司门户应用的部署。 完成此操作后，可以使用上面任意选项部署 Windows 10 公司门户应用。  
+我们推荐的迁移途径是通过将分配操作设置为“卸载”，删除 Windows 8.1 公司门户应用的分配。 完成此操作后，可以使用上面任意选项分配 Windows 10 公司门户应用。  
 
-如果需要旁加载应用并且在未使用 Symantec 证书进行签名的情况下部署了 Windows 8.1 公司门户，则直接通过上面的 Intune 部分按照“部署”中的步骤完成升级。
+如果需要旁加载应用并且在未使用 Symantec 证书进行签名的情况下分配了 Windows 8.1 公司门户，则直接通过上面的 Intune 部分按照“分配”中的步骤完成升级。
 
-如果需要旁加载应用，并且使用 Symantec 代码签名证书签名和部署了 Windows 8.1 公司门户，请按照以下部分内容的步骤操作。  
+如果需要旁加载应用，并且使用 Symantec 代码签名证书签名和分配了 Windows 8.1 公司门户，请按照以下部分内容的步骤操作。  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将已签名和旁加载的 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
-我们推荐的迁移路径是通过将部署操作设置为“卸载”，删除 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用的现有部署。 完成此操作后，Windows 10 公司门户应用便可以正常部署。  
+我们推荐的迁移路径是通过将分配操作设置为“卸载”，删除 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用的现有分配。 完成此操作后，Windows 10 公司门户应用便可以正常分配。  
 
 否则，Windows 10公司门户应用需要进行相应更新和签名，以确保遵循升级过程。  
 
-如果 Windows 10 公司门户应用已按此方式签名和部署，则需要在应用商店中可用时为每个新的应用更新重复此过程。 应用商店更新时，应用不会自动更新。  
+如果 Windows 10 公司门户应用已按此方式签名和分配，则需要在应用商店中可用时为每个新的应用更新重复此过程。 应用商店更新时，应用不会自动更新。  
 
-以下是签名和部署应用的方式：
+以下是签名和分配应用的方式：
 
 1. 从 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下载 Microsoft Intune Windows 10 公司门户应用签名脚本。  此脚本需要在主计算机上安装适用于 Windows 10 的 Windows SDK。 若要下载适用于 Windows 10 的 Windows SDK，请访问 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
 2. 如上所述，从适用于企业的 Windows 应用商店下载 Windows 10 公司门户应用。  
@@ -105,5 +106,5 @@ ms.lasthandoff: 04/04/2017
 |PfxPassword| Symantec 企业移动代码签名证书的密码。 |
 |PublisherId |企业的发布者 ID。 如果不存在，则使用 Symantec 企业移动代码签名证书的“使用者”字段。|
 |SdkPath | 适用于 Windows 10 的 Windows SDK 的根文件夹路径。 此参数为可选，默认为 ${env:ProgramFiles(x86)}\Windows Kits\10|
-在运行结束时，该脚本将输出签名版本的 Windows 10 公司门户应用。 然后可以通过 Intune 将签名版应用部署为 LOB 应用，后者会将当前部署的版本升级到此新的应用。  
+在运行结束时，该脚本将输出签名版本的 Windows 10 公司门户应用。 然后可以通过 Intune 将签名版应用分配为 LOB 应用，后者会将当前分配的版本升级到此新的应用。  
 

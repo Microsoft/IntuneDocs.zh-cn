@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-使用 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] 条件性访问控制对位于 SharePoint Online 上的文件的访问。
+使用 Microsoft Intune 条件访问控制对 SharePoint Online 上文件的访问。
 条件性访问有两个组件：
 - 设备合规性策略，设备必须符合才能被视为合规。
 - 条件性访问策略，可指定设备必须满足才能访问服务的条件。
@@ -45,20 +46,20 @@ ms.lasthandoff: 04/14/2017
 
 
   若要连接到所需文件，设备必须：
--   已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] **注册**或是已加入域的电脑。
+-   已向 Intune **注册**或是已加入域的电脑。
 
--   在 Azure Active Directory 中进行**注册**（向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册时会自动发生此情况）。
+-   已在 Azure Active Directory 中**注册**（向 Intune 注册设备时会自动发生此情况）。
 
 
--   **符合**任何已部署的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
+-   **符合**任何已部署的 Intune 合规性策略。
 
 根据指定的条件，设备状态存储在可授予或阻止对文件的访问权限的 Azure Active Directory 中。
 
 如果不满足条件，用户在登录时将看到以下消息之一：
 
--   如果未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用和进行注册的说明。
+-   如果未向 Intune 注册设备，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用和进行注册的说明。
 
--   如果设备不合规，则会显示一条消息，将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站，用户可从中找到有关问题及其修正方法的信息。
+-   如果设备不符合策略，则会显示一条消息，将用户定向到 Intune 公司门户网站，用户可从中找到有关问题及其修正方法的信息。
 
 **条件访问不会应用于外部共享**。 若要了解如何在租户或站点集合中阻止外部共享，请参阅[管理您的 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)。
 
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/14/2017
 - Android 4.0 及更高版本、Samsung Knox 标准版 4.0 或更高版本
 - Windows Phone 8.1 及更高版本
 
-通过 **iOS** 和 **Android** 设备上的浏览器进行访问时，可保护对 SharePoint Online 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
+通过 **iOS** 和  **Android** 设备上的浏览器进行访问时，可保护对 SharePoint Online 的访问。 仅允许从合规设备上受支持的浏览器进行访问：
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser（iOS 和 Android 5.0 及更高版本）
@@ -115,7 +116,7 @@ ms.lasthandoff: 04/14/2017
 如果尚未执行此操作，请先创建合规性策略并将其部署到 SharePoint Online 策略将视为目标的用户。
 
 > [!NOTE]
-> 将合规性策略部署到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
+> 将合规性策略部署到 Intune 组，而条件性访问策略以 Azure Active Directory 安全组为目标。
 
 若要深入了解如何配置合规性策略，请参阅[创建合规性策略](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
@@ -152,11 +153,11 @@ ms.lasthandoff: 04/14/2017
 
          条件性访问策略会应用到在你指定的平台上使用新式验证的任何客户端应用。
 
-     对于 Windows 电脑，电脑必须已加入域，或是已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册并且合规。 可以设置以下要求：
+     Windows 电脑必须加入域，或是向 Intune 注册并符合策略。 可以设置以下要求：
 
-     -   **设备必须已加入域或必须是合规的。** 选择此选项要求电脑必须已加入域或符合在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中设置的策略。 如果电脑不满足任一要求，则系统会提示用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备。
+     -   **设备必须已加入域或必须是合规的。** 选择此选项要求电脑必须已加入域或符合在 Intune 中设置的策略。 如果电脑不满足任一要求，系统会提示用户向 Intune 注册设备。
 
-     -   **设备必须是合规的。** 选择此选项要求电脑必须在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 中注册并且必须合规。 如果电脑未注册，则会显示一条消息，其中包含有关如何注册的说明。
+     -   **设备必须是合规的。** 选择此选项要求电脑必须在 Intune 中注册并且必须符合策略。 如果电脑未注册，则会显示一条消息，其中包含有关如何注册的说明。
 
 4.   在**浏览器访问** SharePoint Online 和 OneDrive for Business 下，可选择仅允许通过受支持的浏览器（Safari (iOS) 和 Chrome (Android)）访问 Exchange Online。 将阻止来自其他浏览器的访问。 为 OneDrive 的应用程序访问选择的相同平台限制在此处同样适用。
 

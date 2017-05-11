@@ -14,10 +14,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7901508dc482af55f0ef2296cf35576f09340fb0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -75,10 +76,10 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 
 ## <a name="prerequisites"></a>先决条件
 
--   **Microsoft Intune 订阅**。 用户需要 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 许可证以获取具有应用保护策略的应用。
-如果当前使用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来管理设备，那么你已经具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。 如果你已购买企业移动性套件 (EMS) 许可证，那么你还具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅。 如果要试用 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 来检查 MAM 功能，可在 [Microsoft Intune 页面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)上获取试用帐户。
+-   **Microsoft Intune 订阅**。 用户需要 Intune 许可证才能获取具有应用保护策略的应用。
+如果当前使用 Intune 来管理设备，那么你已经具有 Intune 订阅。 如果你已购买企业移动性套件 (EMS) 许可证，那么你还具有 Intune 订阅。 如果要试用 Intune 来检查 MAM 功能，可在 [Microsoft Intune 页面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)上获取试用帐户。
 
-    若要验证是否具有 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 订阅，请在 Office 门户中转到“帐单”页面。  如果拥有订阅，应可以看到在订阅中 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 显示为“活动”状态。
+    若要验证是否具有 Intune 订阅，请在 Office 门户中转到“帐单”页面。  如果拥有订阅，应可以看到在订阅中 Intune 显示为“活动”状态。
 
 -   以下事项需要 **Office 365 订阅**：
 

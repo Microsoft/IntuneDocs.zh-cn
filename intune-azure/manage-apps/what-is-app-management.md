@@ -1,12 +1,12 @@
 ---
-title: "什么是应用管理"
+title: "什么是应用管理 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：通过本主题了解使用 Microsoft Intune 进行应用管理的基础知识"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 33def827fc7417930338e56c650d01df4dad85fb
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -46,6 +47,7 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 |向设备和用户添加和分配应用|是|是|是|是|
 |将应用分配到未注册 Intune 的设备|是|是|否|否|
 |使用应用配置策略来控制应用的启动行为|否|是|否|否|
+|使用移动应用预配策略续订过期应用|否|是|否|否|
 |使用应用保护策略来保护应用中的公司数据|是|是|否|否<sup>1</sup>|
 |仅从已安装应用中删除公司数据（应用选择性擦除）|是|是|是|是|
 |监视应用分配|是|是|是|是|
@@ -68,7 +70,7 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“管理应用”。
+3. 在“Intune”边栏选项卡上，选择“移动应用”。
 
     ![移动应用工作负荷](./media/apps-workload.png)
 
@@ -77,19 +79,21 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
     - [添加应用](add-apps.md)
     - [分配应用](deploy-apps.md)
     - [监视应用](monitor-apps.md)
-- **许可应用** - 查看、部署和监视从应用商店批量购买的应用。
-    - [适用于企业批量采购应用的 Windows 应用商店](wsfb-apps.md)
 - **应用配置策略** - 应用配置策略可提供用户在运行应用时可能需要的设置。 有关详细信息，请参阅：
     - [应用配置策略](app-configuration-policies.md)
 - **应用保护策略** - 可将设置与应用关联，从而帮助保护其使用的公司数据。 例如，可以限制某应用与其他应用进行通信的功能，或要求用户输入 PIN 才能访问公司应用。
     - [应用保护策略](app-protection-policies.md)
 - **应用选择性擦除** - 仅从所选用户设备中删除公司数据。
     - [应用选择性擦除](app-selective-wipe.md)
+- **iOS 预配配置文件** - iOS 应用包含一个预配配置文件和一个证书签名的代码。 证书过期后，应用无法再运行。 Intune 提供了一些工具，用于将新的预配配置文件策略主动分配到安装了即将到期应用的设备。
+    - [iOS 应用预配配置文件](ios-app-provisioning-profile.md)
 
 ### <a name="monitor"></a>监视
+- **许可应用** - 查看、分配和监视从应用商店批量购买的应用。
+    - [适用于企业批量采购应用的 Windows 应用商店](wsfb-apps.md)
 - **发现的应用** - 显示由 Intune 分配，并安装在设备上的所有应用。
 - **应用安装状态** - 显示你创建的应用分配的状态。
-- **应用保护用户状态** - 显示所选用户的应用保护策略的状态。
+- **应用保护状态** - 显示所选用户的应用保护策略的状态。
 
 有关详细信息，请参阅[监视应用](monitor-apps.md)
 

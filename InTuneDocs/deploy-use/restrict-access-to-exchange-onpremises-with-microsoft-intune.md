@@ -14,10 +14,11 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 3098a301550413a982d3ce9664646f7dfc0b1d1f
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/30/2017
 
 -   你的 Exchange 版本必须是 **Exchange 2010 或更高版本**。 支持 Exchange Server 客户端访问服务器 (CAS) 阵列。
 
--   必须使用 [Intune 本地 Exchange Connector](intune-on-premises-exchange-connector.md)，该连接器可将 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 连接到 Exchange 内部部署。 这样就可以通过 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 控制台管理设备。
+-   必须使用 [Intune 本地 Exchange Connector](intune-on-premises-exchange-connector.md)，该连接器可将 Intune 连接到 Exchange 本地环境。 这样就可以通过 Intune 控制台管理设备。
 
     -   Intune 控制台中可供你使用的本地 Exchange Connector 特定于你的 Intune 租户，且不能用于其他任何租户。 建议你同时确保**仅在一台计算机上**安装适用于你的租户的 Exchange Connector。
 
@@ -54,13 +55,13 @@ ms.lasthandoff: 03/30/2017
 
 配置条件性访问策略并将它们面向用户时，在用户可以连接到其电子邮件前，他们使用的**设备**必须：
 
--  是已加入域的电脑或已向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] **注册**。
+-  是已加入域的电脑或已向 Intune **注册**。
 
 -  **已在 Azure Active Directory 中注册**。 此外，还必须向 Azure Active Directory 注册客户端 Exchange ActiveSync ID。
 
   Azure Active Directory 设备注册服务自动对 Intune 和 Office 365 客户激活。 已经部署了 ADFS 设备注册服务的用户不会在本地 Active Directory 上看到已注册的设备。 **这不适用于 Windows 电脑和 Windows Phone 设备**。
 
--   **符合**任何部署到该设备的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 合规性策略。
+-   **符合**任何部署到该设备的 Intune 符合性策略。
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>条件性访问对 Exchange 内部部署的作用方式
 
@@ -70,9 +71,9 @@ ms.lasthandoff: 03/30/2017
 
 如果未满足条件访问策略，则用户在登录时，收到以下隔离邮件之一与设备被阻止之间的时间间隔为 10 分钟：
 
-- 如果设备未向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用、注册设备和激活电子邮件的说明。 此过程也将设备的 Exchange ActiveSync ID 和 Azure Active Directory 中的设备记录相关联。
+- 如果设备未向 Intune 注册，或未在 Azure Active Directory 中注册，则会显示一条消息，其中包含有关如何安装公司门户应用、注册设备和激活电子邮件的说明。 此过程也将设备的 Exchange ActiveSync ID 和 Azure Active Directory 中的设备记录相关联。
 
--   如果设备不合规，则显示一条消息，将用户定向到 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 公司门户网站或公司门户应用，用户可从中找到相关问题及其修正方法的相关信息。
+-   如果设备不符合策略，则会显示一条消息，将用户定向到 Intune 公司门户网站或公司门户应用，用户可在其中找到有关该问题及其修正方法的信息。
 
 ## <a name="support-for-mobile-devices"></a>对移动设备的支持
 支持以下设备：
@@ -88,7 +89,7 @@ ms.lasthandoff: 03/30/2017
 
 ## <a name="support-for-pcs"></a>对 PC 的支持
 支持以下项：
--   Windows 8.1 及更高版本上的**邮件**应用程序（向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册电脑时）。
+-   Windows 8.1 及更高版本上的**邮件**应用程序（向 Intune 注册电脑时）。
 
 ##  <a name="configure-a-conditional-access-policy"></a>配置条件性访问策略
 
@@ -97,21 +98,21 @@ ms.lasthandoff: 03/30/2017
 
 2.  使用所需的设置来配置策略：![Exchange 内部部署策略页面的屏幕截图](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **如果设备不符合要求或未向 Microsoft Intune 注册，则阻止电子邮件应用访问 Exchange 内部部署**：选择此选项时，会阻止未受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理的设备或不符合合规性策略的设备访问 Exchange 服务。
+  - **如果设备不符合策略或未向 Microsoft Intune 注册，则阻止电子邮件应用访问本地 Exchange**：选择此选项时，会阻止未受 Intune 管理的设备或不符合策略的设备访问 Exchange 服务。
 
   - **替代默认规则 - 始终允许已注册并符合要求的设备访问 Exchange**：选择此选项时，允许已在 Intune 中注册并符合合规性策略的设备访问 Exchange。
   此规则将替代“默认规则”，这意味着，即使将“默认规则”设置为隔离或阻止访问，已注册并符合要求的设备也仍然能够访问 Exchange。
 
-  - **目标组**：选择 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 用户组，这些用户组必须先向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册其设备，然后才能访问 Exchange。
+  - **目标组**：选择 Intune 用户组，这些用户组必须先向 Intune 注册其设备，然后才能访问 Exchange。
 
-  - **免除组**：选择将从条件性访问策略中免除的 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 用户组。 此列表中的用户将会被免除，即使它们也位于“目标组”列表中。
+  - **免除组**：选择将从条件性访问策略中免除的 Intune 用户组。 此列表中的用户将会被免除，即使它们也位于“目标组”列表中。
 
-  - **平台例外**：选择“添加规则”配置一个规则，为指定的移动设备系列和模型定义访问级别。 因为这些设备可为任何类型，所以还可配置不受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 支持的设备类型。
+  - **平台例外**：选择“添加规则”配置一个规则，为指定的移动设备系列和模型定义访问级别。 因为这些设备可为任何类型，所以还可配置不受 Intune 支持的设备类型。
 
   - **默认规则**：对于不受其他任何规则约束的设备，可选择允许或阻止其访问 Exchange，也可以隔离它。 对于已注册并合规的设备，如果将该规则设置为允许访问，将会自动向 iOS、Windows 和 Samsung KNOX 设备授予电子邮件访问权限。 用户不必执行任何过程即可获取其电子邮件。
       - 在不运行 Samsung KNOX 的 Android 设备上，用户会收到一封包含指导性演练的隔离电子邮件，用于验证注册和合规性，验证后他们才能访问电子邮件。 如果将该规则设置为阻止访问或隔离设备，将阻止所有设备访问 Exchange，无论设备是否已在 Intune 中注册。 若要防止已注册并符合要求的设备受此规则影响，请选中“替代默认规则”框。
 >[!TIP]
->如果想在授予电子邮件访问权限之前先阻止所有设备，请选择“阻止访问”规则或“隔离”规则。 默认规则适用于所有设备类型，因此作为平台例外配置且不受 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 支持的设备类型也会受到影响。
+>如果想在授予电子邮件访问权限之前先阻止所有设备，请选择“阻止访问”规则或“隔离”规则。 默认规则适用于所有设备类型，因此作为平台例外配置且不受 Intune 支持的设备类型也会受到影响。
 
   - **用户通知**：除了 Exchange 发送的通知电子邮件之外，Intune 还将发送一封包含取消阻止设备的步骤的电子邮件。 你可以根据需求来自定义编辑默认消息。 如果用户的设备在接收包含修正说明的 Intune 通知电子邮件之前已被阻止（此电子邮件发送到用户的 Exchange 邮箱），则用户可使用取消阻止的设备或其他方法来访问 Exchange 并查看该邮件。
       - 当“默认规则”设置为阻止或隔离时尤其如此。 在这种情况下，用户必须转到其应用商店，下载 Microsoft 公司门户应用并注册其设备。 这适用于 iOS、Windows 和 Samsung KNOX 设备。 对于不运行 Samsung KNOX 的设备，需要将隔离电子邮件发送到备用电子邮件帐户。 用户必须将电子邮件复制到其被阻止的设备，以完成注册和符合性过程。
@@ -124,11 +125,11 @@ ms.lasthandoff: 03/30/2017
 
 -   不需要部署条件访问策略—它会立即生效。
 
--   用户设置 Exchange ActiveSync 配置文件后，可能需要 1-3 小时设备才会被阻止（如果它不由 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 管理）。
+-   用户设置 Exchange ActiveSync 配置文件后，可能需要 1-3 小时设备才会被阻止（如果它不由 Intune 管理）。
 
--   如果被阻止的用户向 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 注册设备并更正非合规性，将在 2 分钟内解除电子邮件访问阻止。
+-   如果被阻止的用户随后向 Intune 注册设备并更正不符合性，将在两分钟内解除电子邮件访问阻止。
 
--   如果用户从 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 取消注册，可能需要 1-3 小时设备才会被阻止。
+-   如果用户从 Intune 取消注册，可能需要 1-3 小时设备才会被阻止。
 
 **若要查看如何配置条件性访问策略以保护设备访问的示例方案，请参阅[保护电子邮件访问的示例方案](restrict-email-access-example-scenarios.md)。**
 

@@ -1,5 +1,5 @@
 ---
-title: "什么是 Microsoft Intune 中的设备配置文件？"
+title: "什么是 Microsoft Intune 中的设备配置文件？ | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解 Intune 设备配置文件，以及它们如何帮助管理和保护公司设备。"
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: c7ddc58d15ea260b31adad0bab65428df7e4b9ac
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -51,15 +52,15 @@ ms.lasthandoff: 03/17/2017
 有关详细信息，请参阅[如何配置设备限制设置](how-to-configure-device-restrictions.md) 支持：Android、iOS、macOS、Windows 10 和 Windows 10 协同版。
 
 ## <a name="email"></a>Email
-电子邮件配置文件让你可在管理的设备上创建、部署和监视 Exchange ActiveSync 电子邮件设置。 通过部署这些设置，可以确保一致性，减少支持呼叫，并让最终用户能够在不进行任何所需设置的情况下在其个人设备上访问公司电子邮件。
+电子邮件配置文件让你可在管理的设备上创建、分配和监视 Exchange ActiveSync 电子邮件设置。 通过分配这些设置，可以确保一致性，减少支持呼叫，并让最终用户能够在不进行任何所需设置的情况下在其个人设备上访问公司电子邮件。
 有关详细信息，请参阅[如何配置电子邮件设置](how-to-configure-email-settings.md) 支持：Android、iOS、Windows Phone 8.1 和 Windows 10。
 
 ## <a name="wi-fi"></a>Wi-Fi
-使用 Wi-Fi 配置文件将无线网络设置部署到组织中的用户和设备。 部署 Wi-Fi 配置文件时，你的用户将有权访问你公司的 Wi-Fi，而无需自行配置。
+使用 Wi-Fi 配置文件将无线网络设置分配到组织中的用户和设备。 分配 Wi-Fi 配置文件时，你的用户将有权访问你公司的 Wi-Fi，而无需自行配置。
 有关详细信息，请参阅[如何配置 Wi-Fi 设置](how-to-configure-wi-fi-settings.md) 支持：Android、iOS、macOS 和 Windows 8.1（仅可导入）。
 
 ## <a name="vpn"></a>VPN
-虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 VPN 配置文件将 VPN 设置部署到组织中的用户和设备，以便它们可以方便且安全地连接到网络。
+虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 VPN 配置文件将 VPN 设置分配到组织中的用户和设备，从而可以方便且安全地连接到网络。
 有关详细信息，请参阅[如何配置 VPN 设置](how-to-configure-vpn-settings.md)。
 支持：Android、iOS、macOS、Windows Phone 8.1、Windows 8.1 和 Windows 10。
 

@@ -1,12 +1,12 @@
 ---
-title: "如何将应用分配到组"
+title: "如何将应用分配到组 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：将应用添加到 Intune 后，需要将其分配给用户或设备组。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: e0134f1a3aec2774de50b636b1cbea393847e886
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -53,21 +54,21 @@ ms.lasthandoff: 04/24/2017
 ||||||
 |-|-|-|-|-|
 |**Intune 经典版（租户迁移前）**|-|**Intune Azure（完成租户迁移后）**|-|**详细信息**|
-|**父组部署意图**|**子组部署意图**|**先前父组和子组常见成员产生的分配意图**|**父组成员产生的分配意图操作**|-|    
+|**父组分配意图**|**子组分配意图**|**先前父组和子组常见成员产生的分配意图**|**父组成员产生的分配意图操作**|-|    
 |可用|必需|必需和可用|可用|必需和可用表示作为必需进行分配的应用也可显示在公司门户应用中。
-|不适用|可用|不适用|不适用|解决方法：从 Intune 父组删除“不适用”部署意图。
+|不适用|可用|不适用|不适用|解决方法：从 Intune 父组删除“不适用”分配意图。
 |必需|可用|必需和可用|必需|-|
 |必需和可用<sup>1</sup>|可用|必需和可用|必需和可用|-|    
 |必需|不适用|必需|必需|-|    
 |必需和可用|不适用|必需和可用|必需和可用|-|    
 |必需|“卸载”|必需|必需|-|    
 |必需和可用|“卸载”|必需和可用|必需和可用|-|
-<sup>1</sup>仅针对托管 iOS 应用商店应用：将这些应用添加到 Intune 并将其部署为“必需”时，将自动使用“必需”和“可用”意图进行创建。
+<sup>1</sup> 仅针对托管 iOS 应用商店应用：将这些应用添加到 Intune 并将其分配为“必需”时，将自动使用“必需”和“可用”意图进行创建。
 
-可采用以下操作，避免部署冲突：
+可采用以下操作，避免分配冲突：
 
-1.    如果先前已将应用部署到了相关 Intune 父组和子组，请考虑在开始迁移租户前删除这些部署。
-2.    从父组删除子组，并创建包含旧子组成员的新组。 然后可向此组创建新应用部署。
+1.    如果先前已将应用分配到了相关 Intune 父组和子组，请考虑在开始迁移租户前删除这些分配。
+2.    从父组删除子组，并创建包含旧子组成员的新组。 然后可向此组创建新应用分配。
 注意：如果上一个父组为“所有用户”，则需要创建一个不包含子组成员的新动态组。
 必须在用户和设备组的 [Azure 门户](https://portal.azure.com/)中更改组。 [经典 Azure 门户](https://manage.windowsazure.com/)只允许更改用户组。
 

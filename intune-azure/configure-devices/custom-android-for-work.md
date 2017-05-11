@@ -15,19 +15,20 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: ac27b1915483568b9b9857405f7acaf704fd53d9
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 69a500c78e0cc732cee2967c35ea4b2fec53b54b
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/05/2017
 
 
 ---
 
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>创建适用于 Android for Work 设备的 Intune 自定义配置文件设置
 
-使用 Intune 的 Android for Work 自定义配置策略来部署可用于控制 Android for Work 设备功能的 OMA-URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
+使用 Intune 的 Android for Work 自定义配置策略来分配可用于控制 Android for Work 设备功能的 OMA-URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
-此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。 Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题的示例，查找可配置的策略。
+此功能旨在使你能够分配不能使用 Intune 策略配置的 Android 设置。 Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题的示例，查找可配置的策略。
 
 ## <a name="create-a-custom-profile"></a>创建自定义配置文件
 
