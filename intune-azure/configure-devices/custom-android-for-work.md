@@ -16,10 +16,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 69a500c78e0cc732cee2967c35ea4b2fec53b54b
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 05afa9140e34b372cc49ace03a3ada965b907c17
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/05/2017
 
 ## <a name="create-a-custom-profile"></a>创建自定义配置文件
 
-1. 按照[如何配置自定义设备设置](/intune-azure/configure-devices/how-to-configure-custom-settings)中的说明进行操作。
+1. 按照[如何配置自定义设备设置](how-to-configure-custom-settings.md)中的说明进行操作。
 2. 在“自定义 OMA-URI 设置”边栏选项卡上，选择“添加”可添加新设置。
 3. 在“添加行”边栏选项卡上，配置以下内容：
     - **名称** - 输入 Android for Work 自定义设置的唯一名称，以帮助你在 Intune 门户中识别它。

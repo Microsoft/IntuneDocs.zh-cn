@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 5eb84fed9fccbcedaefa227c34985a5303339b1e
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 45b00ac17232aad7c404c7455fd10ca5cf8cb3f9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 05/05/2017
     - **上传图标** - 上传将与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
 8. 完成后，在“添加应用”边栏选项卡上，选择“保存”。
 
-创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
+创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](deploy-apps.md)。
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>手动分配 Windows 10 公司门户应用
 最终用户可以从 Windows 应用商店安装公司门户应以管理设备和安装应用。 但是，如果你的业务需求需要分配公司门户应用，即使尚未将 Intune 与适用于企业的 Windows 应用商店集成，也可以直接从 Intune 手动分配 Windows 10 公司门户应用。

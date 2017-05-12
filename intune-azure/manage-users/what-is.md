@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 03860275184824e72c94937ef3bb32c76cfef933
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 41de68c6962056164e8ac62aea657a74dd9b229e
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 02/18/2017
 
 如果尚不熟悉 Azure 门户中的 Intune，请不要再为 Intune 创建组。 像你使用的许多其他应用程序一样，Intune 也使用 Azure AD 组。
 
-若要深入了解如何在 Azure AD 中使用组，请参阅[使用 Azure Active Directory 组管理对资源的访问](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups)。
+若要深入了解如何在 Azure AD 中使用组，请参阅[使用 Azure Active Directory 组管理对资源的访问](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)。
 
 若要在 [Azure 门户](https://portal.azure.com)中管理组，可搜索 **Intune**，选择“管理用户”，将转到“用户和组”工作负荷，可在其中执行以下操作：
 
@@ -43,5 +44,5 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="next-step"></a>下一步
 
-[组入门](/intune-azure/manage-users/get-started-with-groups)
+[组入门](../manage-users/get-started-with-groups.md)
 

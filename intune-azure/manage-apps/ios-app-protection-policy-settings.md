@@ -16,10 +16,10 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
-ms.openlocfilehash: 7322b19b544e7c0456c94f12746844ac12669873
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b68c731d48551db8fc7d7f0acad766ff4fc5a1e1
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/04/2017
 | **允许应用从其他应用接收数据** | 指定哪些应用可将数据传输到此应用： <ul><li>**策略托管应用**：仅允许从其他策略托管应用传输。</li><li>**所有应用**：允许从任何应用传输数据。</li><li>**无**：不允许从任何应用传输数据，包括其他策略托管应用。 </li></ul> <p>  有一些豁免应用和服务，Intune 可能会允许从其传输数据。 有关应用和服务的完整列表，请参阅[数据传输豁免](#Data-transfer-exemptions)。 | 所有应用 |
 | **阻止“另存为”** | 选择“是”，在此应用中禁用“另存为”选项。 如果你希望允许使用“另存为”，请选择“否”。 | 否 |
 | **限制剪切、复制和粘贴到其他应用程序** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。 | 任何应用 |
-|**限制显示在 Managed Browser 内的 Web 内容** | 选择“是”，强制在 Managed Browser 应用中打开应用中的 Web 链接。 <br><br> 对于未在 Intune 中注册的设备，策略托管应用中的 Web 链接将仅可在 Managed Browser 应用中打开。 <br><br> 如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](https://docs.microsoft.com/en-us/intune/deploy-use/manage-internet-access-using-managed-browser-policies)。 | 否 |
+|**限制显示在 Managed Browser 内的 Web 内容** | 选择“是”，强制在 Managed Browser 应用中打开应用中的 Web 链接。 <br><br> 对于未在 Intune 中注册的设备，策略托管应用中的 Web 链接将仅可在 Managed Browser 应用中打开。 <br><br> 如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](https://docs.microsoft.com/intune/deploy-use/manage-internet-access-using-managed-browser-policies)。 | 否 |
 | **加密应用数据** | 对于策略托管应用，使用 iOS 提供的设备级别的加密方案对数据进行静态加密。 需要 PIN 时，根据应用保护策略中的设置对数据进行加密。 <br><br> 转到[此处](https://support.apple.com/HT202739)官方 Apple 文档，查看哪些 iOS 加密模块由 FIPS 140-2 认证或挂起 FIPS 140-2 证书。 <br><br> 指定何时加密应用中工作或学校数据。 选择： <ul><li>**锁定设备时**：锁定设备时，加密与此策略关联的所有应用数据。</li><li>**锁定设备并具有打开的文件时**：锁定设备时，对与此策略相关联的所有应用数据进行加密，当前已在应用中打开的文件中的数据除外。</li><li>**设备重启后**：设备重启后，对与此策略相关联的所有应用数据进行加密，直到首次解锁设备。</li><li>**使用设备设置**：基于设备上的默认设置对应用数据进行加密。 启用此设置时，用户必须设置并使用 PIN 才能访问其设备。  如果未为设备访问设置 PIN，则不启动应用，并将通过“公司要求先启用设备 PIN 才能访问此应用”消息提示用户设置 PIN。 </li></ul> | 当设备锁定 |
 | **禁用联系人同步** | 选择“是”，阻止应用将数据保存到设备上的本机“联系人”应用。 如果选择“否”，应用可将数据保存到设备上的本机“联系人”应用。 <br><br>执行选择性擦除从应用删除工作或学校数据时，将删除从应用直接同步到本机“联系人”应用的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 目前仅适用于 Microsoft Outlook 应用。 | 否 |
 | **禁用打印** | 选择“是”，阻止应用打印工作或学校数据。 | 否 |
@@ -75,7 +75,7 @@ ms.lasthandoff: 05/04/2017
 | **要求最低 iOS 操作系统版本(仅警告)** | 选择“是”将建议要使用此应用需具备的最低 iOS 操作系统版本。 如果设备上的 iOS 版本不符合此要求，用户将看到一个通知。 可忽略此通知。 <br><br> | 否 |
 | **要求最低应用版本** | 选择“是”将要求要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，将阻止用户访问。<br><br>选择要作为目标的应用时，请注意应用之间通常具有不同的版本方案。<br><br> | 否 |
 | **要求最低应用版本(仅警告)** | 选择“是”将建议要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，用户将看到一个通知。 可忽略此通知。<br><br>选择要作为目标的应用时，请注意应用之间通常具有不同的版本方案。<br><br> | 否 |
-| **要求最低 Intune 应用保护策略 SDK 版本** | 选择“是”将要求要使用的应用上的最低 Intune 应用保护策略 SDK 版本。 如果应用的 Intune 应用保护策略 SDK 版本不符合此要求，将阻止用户访问。 <br> <br> 若要了解有关 Intune 应用保护策略 SDK 的详细信息，请参阅 [Intune 应用 SDK 概述](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) <br><br> | 否 |
+| **要求最低 Intune 应用保护策略 SDK 版本** | 选择“是”将要求要使用的应用上的最低 Intune 应用保护策略 SDK 版本。 如果应用的 Intune 应用保护策略 SDK 版本不符合此要求，将阻止用户访问。 <br> <br> 若要了解有关 Intune 应用保护策略 SDK 的详细信息，请参阅 [Intune 应用 SDK 概述](https://docs.microsoft.com/intune/develop/intune-app-sdk) <br><br> | 否 |
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 应用的加载项
 

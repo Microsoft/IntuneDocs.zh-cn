@@ -16,10 +16,10 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/19/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -100,7 +100,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
 根据组织的需求，至少需要创建两个设备类别（例如，公司和个人）并为每个类别创建动态设备组。 可以根据需要为组织创建更多类别。
 
-在注册过程中，将向用户显示这些类别。 根据用户选择的类别，会将已注册的设备移至相应的设备组。 有关如何创建设备类别的步骤，请参阅[将设备映射到组](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping)。
+在注册过程中，将向用户显示这些类别。 根据用户选择的类别，会将已注册的设备移至相应的设备组。 有关如何创建设备类别的步骤，请参阅[将设备映射到组](../enroll-devices/how-to-use-device-group-mapping.md)。
 
   ![“添加策略”边栏选项卡的屏幕截图](../media/tem-dynamic-membership-rules.png)
 

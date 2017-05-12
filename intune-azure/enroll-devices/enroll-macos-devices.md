@@ -15,10 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fcbeb30fb11b6bc8def3a1c245bff56b3f7cca4
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-可借助 Intune 管理 macOS 设备。 若要启用设备管理，用户必须转到[公司门户网站](http://portal.manage.microsoft.com)，并按照提示注册其设备。 macOS 设备处于托管状态后，可[为 macOS 设备创建自定义设置](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos)。 即将推出更多功能。
+可借助 Intune 管理 macOS 设备。 若要启用设备管理，用户必须转到[公司门户网站](http://portal.manage.microsoft.com)，并按照提示注册其设备。 macOS 设备处于托管状态后，可[为 macOS 设备创建自定义设置](../configure-devices/custom-for-macos.md)。 即将推出更多功能。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 03/22/2017
 - [配置域](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [设置 MDM 机构](set-mdm-authority.md)
 - [创建组](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [配置公司门户](/intune-azure/manage-apps/company-portal-app.md)
+- [配置公司门户](../manage-apps/company-portal-app.md)
 - 在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中分配用户许可证
 - [获取 Apple MDM Push Certificate](get-an-apple-mdm-push-certificate.md)
 
@@ -44,9 +45,9 @@ ms.lasthandoff: 03/22/2017
 
 默认情况下，Intune 允许注册 macOS 设备。
 
-若要阻止 macOS 注册设备，请参阅[设置设备类型限制](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)。
+若要阻止 macOS 注册设备，请参阅[设置设备类型限制](set-enrollment-restrictions.md#set-device-type-restrictions)。
 
-若要设置用户可注册的最多设备数，请参阅 [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions)（设置设备限制约束）。
+若要设置用户可注册的最多设备数，请参阅 [Set device limit restrictions](set-enrollment-restrictions.md#set-device-limit-restrictions)（设置设备限制约束）。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告诉用户如何注册其设备以访问公司资源
 

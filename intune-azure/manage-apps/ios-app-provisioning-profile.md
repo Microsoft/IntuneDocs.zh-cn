@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: dfa2fb44e7366d7e139b22d9a08d882ae5353fb4
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: fa3e0b481c31779261d5f6b23b729ca55331266b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -54,5 +54,5 @@ ms.lasthandoff: 05/05/2017
 
 ## <a name="next-steps"></a>后续步骤
 
-将该配置文件分配给所需的 iOS 设备。 有关详细信息，请使用[如何分配设备配置文件](/intune-azure/configure-devices/how-to-assign-device-profiles)中的步骤。
+将该配置文件分配给所需的 iOS 设备。 有关详细信息，请使用[如何分配设备配置文件](../configure-devices/how-to-assign-device-profiles.md)中的步骤。
 

@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +55,7 @@ Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 �
 
     ![诊断和使用情况数据的 Windows 设置](./media/telemetry-basic.png)
 
-    你可以手动配置此设置，也可以使用适用于 Windows 10 及更高版本的 Intune 设备限制配置文件。 为此，请将“**常规**” > “**诊断数据提交**”设置至少配置为“**基本**”。 有关设备配置文件的详细信息，请参阅[如何配置设备限制设置](/intune-azure/configure-devices/how-to-configure-device-restrictions)。
+    你可以手动配置此设置，也可以使用适用于 Windows 10 及更高版本的 Intune 设备限制配置文件。 为此，请将“**常规**” > “**诊断数据提交**”设置至少配置为“**基本**”。 有关设备配置文件的详细信息，请参阅[如何配置设备限制设置](how-to-configure-device-restrictions.md)。
 
 - 在经典 Intune 管理控制台中，有四个可控制软件更新行为的设置。 这些设置是 Windows 10 桌面设备和移动设备的常规配置策略的一部分：
     - **允许自动更新**
@@ -82,7 +83,7 @@ Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 �
 7. 在“**设置**”边栏选项卡上，配置以下信息：
     - **服务分支**：设置设备将接收 Windows 更新的分支（Current Branch 或 Current Branch for Business）。
     - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
-    - **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
+    -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延期期限（天）** - 指定质量更新延期的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 
@@ -94,7 +95,7 @@ Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 �
     例如：  
     **如果服务分支设置为 CB 并且延期期限为 30 天**：假设功能更新 X 在一月份作为 CB 在 Windows 更新上首次公开提供。 设备将在 2 月（即 30 天后）才收到更新。
 
-    **如果服务分支设置为 CBB 并且延期期限为 30 天**：假设功能更新 X 在一月份作为 CB 在 Windows 更新上首次公开提供。 功能更新 X 将在四个月后（即&4; 月份）发布到 CBB。 设备将在此 CBB 发布后的 30 天后接收此功能更新，并将在 5 月更新。
+    **如果服务分支设置为 CBB 并且延期期限为 30 天**：假设功能更新 X 在一月份作为 CB 在 Windows 更新上首次公开提供。 功能更新 X 将在四个月后（即 4 月份）发布到 CBB。 设备将在此 CBB 发布后的 30 天后接收此功能更新，并将在 5 月更新。
 
     - **传递优化** - 选择设备下载 Windows 更新的方式。 有关详细信息，请参阅 [DeliveryOptimization/DEDownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode)。
 8. 完成后，单击“**确定**”，然后在“**创建更新通道**”边栏选项卡上单击“**创建**”。
@@ -120,7 +121,7 @@ Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 �
 - **设置说明**：为 Windows Analytics 解决方案配置商业 ID
 - **数据类型**：字符串
 - **OMA-URI**（区分大小写）：./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
-- **值**：<*使用 OMS 工作空间中的 Windows 遥测选项卡上显示的 GUID*>
+- **值**：<*使用 OMS 工作空间中的 Windows 遥测选项卡上显示的 GUID* >
 
 ![诊断和使用情况数据的 Windows 设置](./media/commID.png)
 

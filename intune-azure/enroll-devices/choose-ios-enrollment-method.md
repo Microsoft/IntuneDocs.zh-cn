@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="user-owned-ios-devices-byod"></a>用户拥有的 iOS 设备 (BYOD)
 
-如果用户要注册其个人、BYOD（自带设备）设备，唯一可用注册方法是让该用户从 App Store 下载适用于 iOS 的公司门户应用，然后按照应用中的注册说明进行操作。 注册后，用户可连接到公司网络、加入域或 Azure Active Directory，并有权访问公司资源。 可阻止个人拥有的 iOS 设备的注册。 请参阅 [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)（设置设备类型限制）了解相关说明。
+如果用户要注册其个人、BYOD（自带设备）设备，唯一可用注册方法是让该用户从 App Store 下载适用于 iOS 的公司门户应用，然后按照应用中的注册说明进行操作。 注册后，用户可连接到公司网络、加入域或 Azure Active Directory，并有权访问公司资源。 可阻止个人拥有的 iOS 设备的注册。 请参阅 [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions)（设置设备类型限制）了解相关说明。
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
