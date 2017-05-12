@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 9a7d1e6fa032cbc281ced07302d6faaca4ba22e3
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 011f33d1d8569a079f73baaca6ba2a665131691d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 05/05/2017
 
 ## <a name="before-you-start"></a>开始之前
 
-如果应用在应用商店中是免费的，则只能使用此方法分配应用。 如果要使用 Intune 分配付费应用，请考虑使用 [iOS 批量购买计划](/intune-azure/manage-apps/ios-vpp-apps)。
+如果应用在应用商店中是免费的，则只能使用此方法分配应用。 如果要使用 Intune 分配付费应用，请考虑使用 [iOS 批量购买计划](ios-vpp-apps.md)。
 
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>步骤 1 - 在应用商店中搜索应用
@@ -62,5 +62,5 @@ ms.lasthandoff: 05/05/2017
 - **上传图标** - 上传将与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
 3. 完成后，在“添加应用”边栏选项卡上，选择“保存”。
 
-创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
+创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](deploy-apps.md)。
 

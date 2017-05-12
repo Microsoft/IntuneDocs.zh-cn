@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 2a011bf390bb55d685f580cfc782b21ff0c2ebd5
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 289635354e7e2244857f56655de6ee227bf97ee7
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2017
 
 - Exchange 版本必须是 **Exchange 2010 SP1 或更高版本**。 支持 Exchange Server 客户端访问服务器 (CAS) 阵列。
 
-- 必须使用 [Exchange Active Sync 本地 Exchange 连接器](https://docs.microsoft.com/intune-azure/conditional-access/install-intune-on-premises-exchange-connector)，它将 Intune 连接到本地 Exchange。
+- 必须使用 [Exchange Active Sync 本地 Exchange 连接器](install-intune-on-premises-exchange-connector.md)，它将 Intune 连接到本地 Exchange。
 
     >[!IMPORTANT]
     >本地 Exchange 连接器特定于你的 Intune 租户，且不能用于其他任何租户。 还应确保**仅在一台计算机上**安装适用于你的租户的 Exchange 连接器。

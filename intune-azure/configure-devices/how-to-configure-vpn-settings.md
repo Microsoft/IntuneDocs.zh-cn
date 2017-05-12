@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 571d12427a8d5103470837819ab356923a2fcccd
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: d44eec0cdfc2a7762a0f0ca62da4dacd0d083484
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +54,7 @@ ms.lasthandoff: 05/05/2017
 
 
 > [!IMPORTANT]
-> 在你能够使用已分配到设备的 VPN 配置文件之前，必须安装适用于该配置文件的 VPN 应用。 [什么是 Microsoft Intune 中的应用管理？](/intune-azure/manage-apps/what-is-app-management)主题中的信息可帮助你使用 Intune 分配应用。  
+> 在你能够使用已分配到设备的 VPN 配置文件之前，必须安装适用于该配置文件的 VPN 应用。 [什么是 Microsoft Intune 中的应用管理？](../manage-apps/what-is-app-management.md)主题中的信息可帮助你使用 Intune 分配应用。  
 
 了解如何使用[创建自定义 VPN 配置文件](create-custom-vpn-profiles.md)中的 URI 设置创建自定义 VPN 配置文件。     
 

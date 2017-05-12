@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: c984c908afe97c988b9a1b9f46262c5a14a7d4d8
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e2d0adc25417db96a2aeb1e57c2ef444dc96ff4d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -469,4 +469,4 @@ Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其�
 --->
 
 ### <a name="next-steps"></a>后续步骤
-如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](/intune-azure/introduction/how-to-get-support-for-microsoft-intune)中所述。
+如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](../introduction/how-to-get-support-for-microsoft-intune.md)中所述。

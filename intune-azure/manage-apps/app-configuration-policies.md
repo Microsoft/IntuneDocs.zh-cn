@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
-ms.openlocfilehash: d3a3ef32f480d60a15b33312e436b2e40cc07bdd
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 847ddf08fdd7308475895af36f43c5391c9556fa
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -49,7 +49,7 @@ Microsoft Intune 中的应用配置策略可提供用户在运行应用时可能
 > -   **来自应用商店的托管 iOS 应用程序**
 > -   **iOS 应用包**
 >
-> 有关应用安装类型的详细信息，请参阅[如何将应用添加到 Microsoft Intune](/intune-azure/manage-apps/add-apps)。
+> 有关应用安装类型的详细信息，请参阅[如何将应用添加到 Microsoft Intune](add-apps.md)。
 
 ## <a name="create-an-app-configuration-policy"></a>创建应用配置策略
 

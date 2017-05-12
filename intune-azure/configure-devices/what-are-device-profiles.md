@@ -16,10 +16,10 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
-ms.openlocfilehash: c7ddc58d15ea260b31adad0bab65428df7e4b9ac
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/03/2017
 
 ## <a name="getting-started"></a>开始使用
 
-创建设备配置文件的工作流对于所有配置文件来说是类似的。 请参阅[如何创建 Microsoft Intune 设备配置描述文件](/intune-azure/configure-devices/how-to-create-device-profiles)，获取有关如何创建配置文件的信息。 然后继续阅读有关为每种配置文件类型创建设置的具体信息。
+创建设备配置文件的工作流对于所有配置文件来说是类似的。 请参阅[如何创建 Microsoft Intune 设备配置描述文件](how-to-create-device-profiles.md)，获取有关如何创建配置文件的信息。 然后继续阅读有关为每种配置文件类型创建设置的具体信息。
 
 可在设备上管理以下功能：
 

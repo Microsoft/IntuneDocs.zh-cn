@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
-ms.openlocfilehash: dfbf8e4f6a2ead4fa9ba1b476a0bf6ce6190d0a3
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: ecb6a806e7870fd2b1986c4247607c9374431151
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -72,8 +72,8 @@ ms.lasthandoff: 05/03/2017
 
 参阅以下主题，以了解为各种类型的证书配置文件配置基础结构的帮助：
 
-- [使用 Intune 配置和管理 SCEP 证书](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [使用 Intune 配置和管理 PKCS 证书](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [使用 Intune 配置和管理 SCEP 证书](configure-certificate-infrastructure-for-scep.md)
+- [使用 Intune 配置和管理 PKCS 证书](configure-certificate-infrastructure-for-pfx.md)
 
 
 ## <a name="step-2---export-your-trusted-root-ca-certificate"></a>步骤 2 - 导出受信任的根 CA 证书
@@ -120,8 +120,8 @@ ms.lasthandoff: 05/03/2017
 
 参阅以下主题，以了解配置和分配各个类型的证书配置文件的帮助：
 
-- [使用 Intune 配置和管理 SCEP 证书](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [使用 Intune 配置和管理 PKCS 证书](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [使用 Intune 配置和管理 SCEP 证书](configure-certificate-infrastructure-for-scep.md)
+- [使用 Intune 配置和管理 PKCS 证书](configure-certificate-infrastructure-for-pfx.md)
 
 创建受信任的证书配置文件后，为要使用的各个平台创建 SCEP 或 PKCS 证书配置文件。 创建 SCEP 证书配置文件时，必须为相同平台指定受信任的证书配置文件。 尽管该平台链接了两个证书配置文件，但仍然必须单独分配各个配置文件。
 

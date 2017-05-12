@@ -15,10 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: f9b828c7546b2dafe03177c193a18203e5905e5a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -128,11 +129,11 @@ MDM 解决方案：
 
 ## <a name="multi-identity"></a>多身份
 
-在工作环境中使用应用时，支持多身份的应用使你能够使用不同的帐户（工作和个人）访问已在其中应用应用保护策略的相同应用。
+支持多身份的应用允许用户使用不同的帐户（工作和个人）访问相同的应用，但仅当在工作环境中使用这些应用时，才会应用应用保护策略。
 
-例如，最终用户使用其工作帐户启动 OneDrive 应用时，无法将文件移动到个人存储区。 但是，最终用户通过其个人帐户使用 OneDrive 时，可以无限制地从个人 OneDrive 复制和移动数据。
+例如，当用户使用其工作帐户启动 OneDrive 应用时，无法将文件移到个人存储位置。 但是，当用户通过其个人帐户使用 OneDrive 时，可无限制地从个人 OneDrive 复制和移动数据。
 
-所有 Office 移动应用都支持多身份。
+- 了解支持 Intune 的 [MAM 和多身份](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的应用的详细信息。
 
 ##  <a name="next-steps"></a>后续步骤
 

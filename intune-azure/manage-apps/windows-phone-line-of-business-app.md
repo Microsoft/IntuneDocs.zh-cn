@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
-ms.openlocfilehash: 05ca385d2fee544915dd244a3edf1a7a606ac073
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 95d0c1b5598785ff30bfd912f65c39cc5e46b85c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -66,5 +66,5 @@ ms.lasthandoff: 05/04/2017
 1. 在“添加应用”边栏选项卡上，验证配置的信息是否正确。
 2. 选择“添加”将应用上传到 Intune。
 
-创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
+创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](deploy-apps.md)。
 

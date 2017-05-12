@@ -15,10 +15,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 74a905ed2ba9ec04ae14df96fcd3f6b6caf1241c
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -39,16 +40,16 @@ ms.lasthandoff: 03/17/2017
     - **平台** - 选择要创建的配置文件的平台类型。
     - **配置文件类型** - 选择要创建的配置文件的类型。 可用类型的列表根据你选择的平台而有所不同。
     - **设置** - 有关每种配置文件类型的设置的信息，请参阅以下主题：
-        -  [设备功能设置](/intune-azure/configure-devices/how-to-configure-device-features)
-        -  [设备限制设置](/intune-azure/configure-devices/how-to-configure-device-restrictions)
-        -  [电子邮件设置](/intune-azure/configure-devices/how-to-configure-email-settings)
-        -  [VPN 设置](/intune-azure/configure-devices/how-to-configure-vpn-settings)
-        -  [Wi-Fi 设置](/intune-azure/configure-devices/how-to-configure-wi-fi-settings)
-        -  [Windows 10 版本升级设置](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
-        -  [证书设置](/intune-azure/configure-devices/how-to-configure-certificates)
-        -  [Windows 信息保护设置](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [教育设置](/intune-azure/configure-devices/how-to-configure-education-settings)
-        -  [自定义设置](/intune-azure/configure-devices/how-to-configure-custom-settings)
+        -  [设备功能设置](how-to-configure-device-features.md)
+        -  [设备限制设置](how-to-configure-device-restrictions.md)
+        -  [电子邮件设置](how-to-configure-email-settings.md)
+        -  [VPN 设置](how-to-configure-vpn-settings.md)
+        -  [Wi-Fi 设置](how-to-configure-wi-fi-settings.md)
+        -  [Windows 10 版本升级设置](how-to-configure-windows-10-edition-upgrade.md)
+        -  [证书设置](how-to-configure-certificates.md)
+        -  [Windows 信息保护设置](how-to-configure-windows-information-protection.md)
+        -  [教育设置](how-to-configure-education-settings.md)
+        -  [自定义设置](how-to-configure-custom-settings.md)
 
     ![创建设备配置文件](./media/create-device-profile.png)
 4. 完成配置设置后，在“创建配置文件”边栏选项卡上，选择“创建”。
@@ -58,5 +59,5 @@ ms.lasthandoff: 03/17/2017
 
 
 ### <a name="next-steps"></a>后续步骤
-有关如何分配设备配置文件的信息，请参阅[如何使用 Microsoft Intune 分配设备配置文件](/intune-azure/configure-devices/how-to-assign-device-profiles)。
+有关如何分配设备配置文件的信息，请参阅[如何使用 Microsoft Intune 分配设备配置文件](how-to-assign-device-profiles.md)。
 

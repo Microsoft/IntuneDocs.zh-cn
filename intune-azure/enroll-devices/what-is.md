@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/25/2017
 
 下表列出了 Intune 注册方法、支持的功能以及每个方法的要求。 功能和要求如下所述。 表中使用以下术语：
 
-- **擦除** - 指示是否需要擦除设备后才使用户可注册设备。 术语“擦除”意味着对设备恢复出厂设置，这将删除所有数据。 有关详细信息，请参阅[在设备上使用完全擦除或选择性擦除](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune)。
+- **擦除** - 指示是否需要擦除设备后才使用户可注册设备。 术语“擦除”意味着对设备恢复出厂设置，这将删除所有数据。 有关详细信息，请参阅[在设备上使用完全擦除或选择性擦除](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)。
 - **关联** - 将设备与用户关联。 对于移动应用程序管理 (MAM) 和公司数据的条件访问是必需的。 有关详细信息，请参阅[用户关联](enroll-ios-devices-using-device-enrollment-program.md)。
 - **锁定** - 指示是否阻止用户从管理取消注册其设备。 用户可使用公司门户应用在所有平台上取消注册其设备。 用户不能使用本机操作系统菜单来取消注册。
 
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/25/2017
 
 
 ## <a name="byod"></a>BYOD
-“自带设备办公”用户安装公司门户应用并注册其设备。 这让用户可连接到公司网络，并加入该域或 Azure Active Directory。 对于大多数平台，需要为许多 COD 方案启用 BYOD 注册。 可阻止个人拥有的 iOS 和 Android 设备的注册。 请参阅 [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)（设置设备类型限制）了解相关说明。
+“自带设备办公”用户安装公司门户应用并注册其设备。 这让用户可连接到公司网络，并加入该域或 Azure Active Directory。 对于大多数平台，需要为许多 COD 方案启用 BYOD 注册。 可阻止个人拥有的 iOS 和 Android 设备的注册。 请参阅 [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions)（设置设备类型限制）了解相关说明。
 
 ## <a name="corporate-owned-devices"></a>企业持有设备
 可以使用 Azure 门户管理公司拥有的设备 (COD)。 可以直接通过 Apple 提供的工具注册 iOS 设备。 管理员或经理可以使用设备注册管理器注册所有设备类型。 具有 IMEI 号码的设备也可以标识并标记为公司拥有，以实现 COD 方案。

@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: faacf9a71deed1b9597ee42849d426a76e81d831
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 37bfb7c9c35e5da5a346c822ed9d4252b5fff0e4
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -77,7 +77,7 @@ ms.lasthandoff: 05/05/2017
 可以使用以下两种方法之一来帮助保护电子邮件配置文件：
 
 1. **证书** - 创建电子邮件配置文件时，可以选择之前在 Intune 中创建的证书配置文件。 该配置文件又称为身份证书，用于根据受信任的证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会分配到对电子邮件连接进行身份验证的计算机（通常是本机邮件服务器）。
-有关如何在 Intune 中创建和使用证书配置文件的详细信息，请参阅[如何使用 Intune 配置证书](/intune-azure/configure-devices/how-to-configure-certificates)。
+有关如何在 Intune 中创建和使用证书配置文件的详细信息，请参阅[如何使用 Intune 配置证书](how-to-configure-certificates.md)。
 2. **用户名和密码** - 用户通过提供其用户名和密码向本机邮件服务器进行身份验证。
 密码不包含在电子邮件配置文件中，因此用户在连接到电子邮件时需要提供密码。
 
