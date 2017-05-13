@@ -1,12 +1,12 @@
 ---
-title: "管理来自适用于企业的 Windows 应用商店的应用"
+title: "管理来自适用于企业的 Windows 应用商店的应用 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解如何从适用于企业的 Windows 应用商店将应用同步到 Intune，并对其进行分配和跟踪。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 40b07a011d0d4126945f6cce6304a4cbf5e8b6aa
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -31,10 +32,10 @@ ms.lasthandoff: 04/24/2017
 * 你可以将从应用商店中购买的应用列表与 Intune 同步。
 * Intune 管理控制台中将显示已同步的应用，可以像分配所有其他应用那样分配这些应用。
 * 你可以跟踪可用许可证的数量以及正在 Intune 管理控制台中使用的许可证数量。
-* 如果可用许可证数量不足，则 Intune 将阻止应用的部署和安装。
+* 如果可用许可证数量不足，Intune 将阻止应用的分配和安装。
 
 ## <a name="before-you-start"></a>开始之前
-从适用于企业的 Windows 应用商店同步并部署应用之前，请查看以下信息：
+从适用于企业的 Windows 应用商店同步并分配应用之前，请查看以下信息：
 * 你必须将 Intune 配置为你的组织的移动设备管理机构。
 * 必须已在适用于企业的 Windows 应用商店中注册帐户。
 * 一旦将适用于企业的 Windows 应用商店帐户与 Intune 关联，将来你将无法更改为其他帐户。
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/24/2017
 3. 在“管理工具”页上选择“添加管理工具”，然后选择“Microsoft Intune”。
 
 > [!NOTE]
-> 使用多个管理工具部署适用于企业的 Windows 应用商店时，以前只能将一个管理工具与适用于企业的 Windows 应用商店相关联。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
+> 使用多个管理工具分配适用于企业的 Windows 应用商店时，以前只能将一个管理工具与适用于企业的 Windows 应用商店相关联。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
 
 现在可以继续，并在 Intune 控制台中设置同步。
 
@@ -74,11 +75,11 @@ ms.lasthandoff: 04/24/2017
 
 分配应用商店中应用的方式与分配任何其他 Intune 应用的方式相同。 有关详细信息，请参阅[如何使用 Microsoft Intune 将应用分配到组](deploy-apps.md)。 但是，不是从“所有应用”页面分配应用，而是从“获得许可的应用”页面分配应用。
 
-分配适用于企业的 Windows 应用商店的应用时，安装此应用的每个用户都会使用 1 个许可证。 如果使用了部署应用的所有可用许可证，则你将无法再部署任何副本。 必须执行下列操作之一：
+分配适用于企业的 Windows 应用商店的应用时，安装此应用的每个用户都会使用 1 个许可证。 如果使用了分配应用的所有可用许可证，则无法再分配任何副本。 必须执行下列操作之一：
 * 从一些设备上卸载应用。
-* 减小当前部署的范围，仅针对具有足够许可证的用户。
+* 减小当前分配的范围，仅针对具有足够许可证的用户。
 * 从适用于企业的 Windows 应用商店中购买应用的更多副本。
 
 > [!Important]
-> 已部署的应用程序仅可用于最初注册了该设备的用户。 其他用户不能访问该应用。
+> 已分配的应用程序仅可用于最初注册了该设备的用户。 其他用户不能访问该应用。
 
