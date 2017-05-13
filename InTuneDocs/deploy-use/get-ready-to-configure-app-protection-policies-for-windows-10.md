@@ -14,9 +14,10 @@ ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
 ms.openlocfilehash: 86a59771fc57971a626f71083e81cd4b7d858cfa
+ms.contentlocale: zh-cn
 ms.lasthandoff: 04/25/2017
 
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/25/2017
 
 3.  “Azure AD”边栏选项卡打开后，选择“移动性(MDM 和 MAM)”，然后单击“Microsoft Intune”。
 
-    ![移动性 MDM 和 MAM](../media/AppManagement/mam-provider-sc-1.png)
+    ![移动性 MDM 和 MAM](../media/AppManagement/mam-provider-sc-2.png)
 
 4.  配置边栏选项卡打开后，首先选择“还原默认 MAM URL”，然后配置以下内容：
 
