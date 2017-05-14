@@ -15,9 +15,10 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 2fe54f4d97c28825f06d40ec47a8a9dc40da2554
+ms.contentlocale: zh-cn
 ms.lasthandoff: 02/18/2017
 
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 02/18/2017
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **Dell SonicWALL Mobile Connect**
-    - ** F5 Edge Client**
+    - **F5 Edge Client**
     - **Pulse Secure**
 
 - **登录组或域**（仅限 Dell SonicWALL Mobile Connect）- 指定要连接到的登录组或域的名称。

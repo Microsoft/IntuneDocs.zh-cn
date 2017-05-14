@@ -15,9 +15,10 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 87004408ddcb07571507f68d5b9925b7e475282a
+ms.contentlocale: zh-cn
 ms.lasthandoff: 02/18/2017
 
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 02/18/2017
 
 **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
 - **Pulse Secure**
-- ** F5 Edge Client**
+- **F5 Edge Client**
 - **Dell SonicWALL Mobile Connect**
 - **Check Point Capsule VPN**
 - **自动**
