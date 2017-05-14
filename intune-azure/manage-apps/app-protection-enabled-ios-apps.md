@@ -15,9 +15,10 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 5a4ce6d6248378ba48cddeaefb941c139dd990f6
+ms.contentlocale: zh-cn
 ms.lasthandoff: 02/18/2017
 
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 02/18/2017
 
 使用应用时，仅在工作环境中启用应用保护策略，因此根据工作或个人环境，应用可能有不同的行为。  
 
-对于支持多身份的应用，仅当最终用户在工作环境中使用该应用时，Intune 才会启用应用保护策略。  例如，最终用户访问工作数据时将收到 PIN 提示。  对于 **Outlook 应用**，将在最终用户启动应用时提示其输入 PIN。 对于 **OneDrive 应用**，将在最终用户键入工作帐户时进行提示。  对于 Microsoft **Word**、**PowerPoint*和 **Excel**，将在最终用户访问存储在公司 OneDrive for Business 位置的文档时进行提示。
+对于支持多身份的应用，仅当最终用户在工作环境中使用该应用时，Intune 才会启用应用保护策略。  例如，最终用户访问工作数据时将收到 PIN 提示。  对于 **Outlook 应用**，将在最终用户启动应用时提示其输入 PIN。 对于 **OneDrive 应用**，将在最终用户键入工作帐户时进行提示。  对于 Microsoft **Word**、**PowerPoint*和* *Excel**，将在最终用户访问存储在公司 OneDrive for Business 位置的文档时进行提示。
 ##  <a name="managing-user-accounts-on-the-device"></a>在设备上管理用户帐户
 
 Intune 仅支持对于每个设备，将应用保护策略部署到一个用户帐户。
@@ -55,7 +56,7 @@ Intune 仅支持对于每个设备，将应用保护策略部署到一个用户�
 
 阅读以下示例方案以更深入地了解如何处理多个用户帐户。
 
-用户 A 为两家公司（“X 公司”和“Y 公司”）工资。用户 A 对于每家公司具有&1; 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与“X 公司”关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果你希望与 Y 公司关联的用户帐户通过应用保护策略管理，则必须删除与 X 公司关联的用户帐户。
+用户 A 为两家公司（“X 公司”和“Y 公司”）工资。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与“X 公司”关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果你希望与 Y 公司关联的用户帐户通过应用保护策略管理，则必须删除与 X 公司关联的用户帐户。
 ### <a name="adding-a-second-account"></a>添加第二个帐户
 
 如果使用 iOS 设备，则在同一设备上尝试添加第二个工作帐户时，可能会看到拦截消息。  随即显示帐户，可从中选择要删除的帐户。

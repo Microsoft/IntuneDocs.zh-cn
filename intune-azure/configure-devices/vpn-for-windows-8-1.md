@@ -15,9 +15,10 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: f38526a3e60f2a6628e61ffca5f5d179a2718e9b
+ms.contentlocale: zh-cn
 ms.lasthandoff: 02/18/2017
 
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 02/18/2017
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
 - **Check Point Capsule VPN**
 - **Dell SonicWALL Mobile Connect**
-- ** F5 Edge Client**
+- **F5 Edge Client**
 - **Pulse Secure**
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
