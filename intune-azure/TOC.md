@@ -86,6 +86,7 @@
 #### [Windows Phone LOB 应用](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows 应用商店应用](manage-apps/windows-store-app.md)
 #### [Windows LOB 应用](manage-apps/windows-line-of-business-app.md)
+#### [Android for Work 应用](/manage-apps/android-for-work-apps.md)
 ### [分配应用](manage-apps/deploy-apps.md)
 ### [监视应用](manage-apps/monitor-apps.md)
 ### [使用应用配置文件](manage-apps/app-configuration-policies.md)
