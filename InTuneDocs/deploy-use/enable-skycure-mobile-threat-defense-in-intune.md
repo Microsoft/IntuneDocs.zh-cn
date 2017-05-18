@@ -14,9 +14,10 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
 ms.openlocfilehash: a110f2ae4d8a101a7fb977aa651e5ce2c8828e7e
+ms.contentlocale: zh-cn
 ms.lasthandoff: 03/22/2017
 
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/22/2017
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>在 Intune 中启用 Skycure MTD 连接
 
-1.  转到“Intune 经典控制台”[](https://manage.microsoft.com/)，然后输入你的凭据。
+1.  转到“[Intune 经典控制台](https://manage.microsoft.com/)”，然后输入你的凭据。
 
 2.  选择“管理员”&gt;“第三方服务集成”，然后选择“Skycure 状态”并使用切换按钮启用“与 MTD 同步”。
 
