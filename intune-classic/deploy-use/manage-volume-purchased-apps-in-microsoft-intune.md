@@ -14,9 +14,11 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 35c0d56a91d8bd13ed35d54dc6964403832c5ab8
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 8e82c36c768db98c2a5797aa0b05545125eebd67
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -36,9 +38,4 @@ Microsoft Intune 可帮助你管理通过这样的计划购买的应用，方法
 
 - [管理批量购买的 iOS 应用](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 - [管理从适用于企业的 Windows 应用商店中批量购买的应用](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

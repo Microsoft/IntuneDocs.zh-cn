@@ -14,10 +14,11 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 64a31832012aba65c4ad5b1c3dc67fa4aa748246
-ms.lasthandoff: 03/07/2017
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -58,7 +59,7 @@ Intune 仅支持将应用保护策略部署到每个设备的一个用户帐户�
 
 阅读以下示例场景以更深入地了解如何处理多个用户帐户。
 
-用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有&1; 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与 **X 公司**关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户。
+用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与 **X 公司**关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户。
 ### <a name="add-a-second-account"></a>添加第二个帐户
 ####  <a name="android"></a>Android
 如果使用 Android 设备，则可能会看到具有删除现有帐户并添加新帐户指令的阻止消息。  若要删除现有帐户，请转到“设置”&gt;“常规”&gt;应用程序管理器”&gt;“公司门户”， 然后选择“清除数据”。

@@ -14,9 +14,11 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: c2e4087790cc6fe7025f2b3b634ba115f13a7856
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: da14fe58510f54e099ae6aeb2e9f656b9f68a470
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -32,9 +34,4 @@ ms.openlocfilehash: c2e4087790cc6fe7025f2b3b634ba115f13a7856
 为便于管理，所有设备都具有生命周期。 生命周期从注册设备开始，直到停用。 [设备管理生命周期](overview-of-device-lifecycle-in-microsoft-intune.md)指导如何注册设备、如何配置和保护设备以及如何从管理中删除设备。
 
 同样，你使用的应用具有其自身的[应用生命周期](overview-of-app-lifecycle-in-microsoft-intune.md)，它包括从添加应用到 Intune 开始，一直到当不再需要它们时将其删除的整个步骤。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

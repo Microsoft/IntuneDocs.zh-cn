@@ -2,8 +2,8 @@
 title: "配置 SCEP 证书基础结构 |Microsoft Docs"
 description: "用于创建和部署 SCEP 证书配置文件的基础结构。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 11/15/2016
 ms.topic: article
@@ -14,10 +14,11 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 88fd05cf1ccaf2c033b737ce76a3ce5d83557313
-ms.lasthandoff: 04/25/2017
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>配置 SCEP 证书基础结构
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/25/2017
 
 -    **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
 
--  **证书颁发机构** (CA)：在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关如何设置证书颁发机构的说明，请参阅 [安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
+-  **证书颁发机构** (CA)：在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关如何设置证书颁发机构的说明，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
     如 CA 运行的是 Windows Server 2008 R2，则必须 [安装修补程序 KB2483564](http://support.microsoft.com/kb/2483564/)。
 I
 -  **NDES 服务器**：在运行 Windows Server 2012 R2 或更高版本的服务器上，必须设置网络设备注册服务 (NDES)。 如果在服务器上运行了企业 CA，则同时在该服务器上运行的 Intune 将不支持使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管网络设备注册服务的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。 NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同一服务器上。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅 [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx)（结合使用策略模块和网络设备注册服务）。
@@ -43,7 +44,7 @@ I
  > [!NOTE]           
 > -    承载 WAP 的服务器 [必须安装此更新](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](https://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](https://support.microsoft.com/kb/3011135)。
 >-  此外，托管 WAP 的服务器必须具有与要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
-    有关 WAP 证书的信息，请参阅[计划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的“计划证书”部分。 有关 WAP 服务器的一般信息，请参阅 [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx)（使用 Web 应用程序代理）。|
+    若要了解 WAP 证书，请参阅[规划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的**规划证书**部分。 有关 WAP 服务器的一般信息，请参阅 [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx)（使用 Web 应用程序代理）。|
 
 ### <a name="network-requirements"></a>网络要求
 
@@ -106,7 +107,7 @@ I
 
     -   为模板指定一个友好的 **“模板显示名称”** 。
 
-    -   在 **“使用者名称”** 选项卡上，选择 **“在请求中提供”**。 （由用于 NDES 的 Intune 策略模块强制实施安全性）。
+    -   在“使用者名称”选项卡上，选择“在请求中提供”。 （由适用于 NDES 的 Intune 策略模块强制实施安全措施）。
 
     -   在 **“扩展”** 选项卡上，确保 **“应用程序策略描述”** 包括了 **“客户端身份验证”**。
 
@@ -118,7 +119,7 @@ I
     > [!NOTE]
     > 若要吊销证书，NDES 服务帐户需要针对证书配置文件所用的每个证书模板具有“颁发和管理证书”权限。
 
-3.  在模板的 **“常规”** 选项卡上查看 **“有效期”** 。 默认情况下，Intune 使用在模板中配置的值。 但是，你可以选择配置 CA 以允许请求者指定不同的值，随后你也能够在 Intune 管理员控制台设置该值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
+3.  在模板的 **“常规”** 选项卡上查看 **“有效期”** 。 默认情况下，Intune 使用模板中配置的值。 不过，可以视需要将 CA 配置为允许申请者指定其他值，随后便能够在 Intune 管理员控制台中设置此值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
 
     > [!IMPORTANT]
     > 无论你所做出的其他配置是什么，iOS 和 Mac OS X 平台都始终使用模板中设置的值。

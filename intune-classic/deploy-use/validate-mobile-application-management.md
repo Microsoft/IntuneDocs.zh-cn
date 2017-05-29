@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -57,9 +59,4 @@ ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
 [准备好使用 Microsoft Intune 配置移动应用管理策略](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [通过 Microsoft Intune 使用移动应用管理策略保护应用数据](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

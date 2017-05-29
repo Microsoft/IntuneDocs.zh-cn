@@ -14,9 +14,11 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ee0d10f9b86b1122d0f16568b71b087c341e88df
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -47,9 +49,4 @@ ms.openlocfilehash: ee0d10f9b86b1122d0f16568b71b087c341e88df
 在应用的“软件属性”页上，选择以下任一选项卡：“常规”— 显示关于应用及其安装状态的常规信息，“设备”— 显示成功安装了应用的目标部署的设备，“用户”— 显示其设备成功安装了应用的目标部署的用户。
 
 如前所述，你可以使用“筛选器”下拉列表来配置每个选项卡上显示的值。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

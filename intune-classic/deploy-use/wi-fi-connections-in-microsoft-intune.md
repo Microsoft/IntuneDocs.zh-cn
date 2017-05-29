@@ -2,8 +2,8 @@
 title: "Wi-Fi 连接 | Microsoft Docs"
 description: "使用 Wi-Fi 配置文件来帮助用户连接到 Wi-Fi 网络。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
@@ -14,9 +14,11 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 65fe17c42921d2c53153dca386ea40b9dea47d04
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -179,9 +181,4 @@ ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 ### <a name="see-also"></a>另请参阅
 在[预共享密钥 Wi-Fi 配置文件](pre-shared-key-wi-fi-profile.md)中了解如何创建具有预共享密钥的 Wi-Fi 配置文件。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

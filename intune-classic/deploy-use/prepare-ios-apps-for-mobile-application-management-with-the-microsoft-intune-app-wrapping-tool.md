@@ -15,10 +15,10 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/20/2017
+ms.lasthandoff: 05/23/2017
 
 
 ---

@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 0f192c0e41cf3b639cbfdac3f8c4fc3b8167266d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/23/2017
 
 
 ---

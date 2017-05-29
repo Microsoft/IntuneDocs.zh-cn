@@ -14,9 +14,11 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: b9e6d1def269bc80d54f259bc8b7c12dbb520e06
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -48,9 +50,4 @@ Intune 控制台可用于管理 [EAS 策略设置](exchange-activesync-policy-se
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>从移动设备中擦除公司数据
 最后，如果公司数据不再使用，或者如果设备丢失或被盗，则可以[从 EAS 管理的移动设备中擦除公司数据](wipe-for-exchange-managed-mobile-devices.md)。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

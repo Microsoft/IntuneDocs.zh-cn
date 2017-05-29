@@ -14,10 +14,11 @@ ms.assetid: 53c99d63-c312-442a-8a71-de1b10fcd39b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
-ms.openlocfilehash: 3a20dc18a72518ba9e01552cd1283170972b4bbb
-ms.lasthandoff: 12/16/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 44edcb211852224e9e9e9a82dd2d097d84b49b74
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -39,7 +40,7 @@ ms.lasthandoff: 12/16/2016
 
     -   若要使计算机与其当前用户（如果存在当前用户）链接，请选择“取消”。
 
-    -   若要删除指向当前用户的链接（如果有），请选择**删除链接**&gt;**确定**。
+    -   若要删除指向当前用户的链接（如果有），请选择“删除链接”&gt;“确定”。
 
     -   若要将计算机链接到新用户，请在“所有用户”列表中，选择用户。 确认用户数据正确，然后选择**确定**。
 

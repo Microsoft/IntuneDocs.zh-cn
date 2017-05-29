@@ -2,8 +2,8 @@
 title: "公司资源访问权限问题疑难解答 | Microsoft Docs"
 description: "本主题中的错误和状态代码可帮助你解决资源访问权限问题。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -14,9 +14,11 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dd1ada2bf6505552e7dbf8b185c929fa4e40104c
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 9956d92c5d1b294c4ccf04ebecd15cdb59794c90
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -374,9 +376,4 @@ ms.openlocfilehash: dd1ada2bf6505552e7dbf8b185c929fa4e40104c
 
 ### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](../troubleshoot/how-to-get-support-for-microsoft-intune.md)中所述。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
