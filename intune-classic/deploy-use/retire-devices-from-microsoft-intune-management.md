@@ -14,10 +14,11 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
-ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -63,7 +64,7 @@ ms.lasthandoff: 02/14/2017
 
 7.  选择**设备**。
 
-8.  选择适当的设备，然后选择“删除设备”。 下一次与 Active Directory 同步时，将删除该设备。 这通常发生在&4; 小时内。 同步之后，将从管理中删除该设备。 这会从该用户的设备限制中删除一台设备。
+8.  选择适当的设备，然后选择“删除设备”。 下一次与 Active Directory 同步时，将删除该设备。 这通常发生在 4 小时内。 同步之后，将从管理中删除该设备。 这会从该用户的设备限制中删除一台设备。
 
 ## <a name="retire-managed-computers"></a>停用被管理的计算机
 可以从 Intune 管理控制台的管理中删除 Intune 客户端软件管理的计算机。 删除的同时还会卸载客户端软件，并从计算机中删除 Intune 策略。 请参阅有关[停用使用 Intune 客户端软件管理的计算机](retire-a-windows-pc-with-microsoft-intune.md)的信息。

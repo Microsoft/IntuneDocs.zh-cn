@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: e83299392fc516ed2b11248f28341403419d6758
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -94,8 +95,8 @@ ms.lasthandoff: 03/13/2017
 
    在同步完成之前，该按钮将变为灰显。
 
-   ## <a name="windows-10-mobile"></a>Windows 10 移动版
-   若要手动同步你的 Windows 10 移动设备，以加快较慢的应用安装的速度：
+### <a name="windows-10-mobile"></a>Windows 10 移动版
+若要手动同步你的 Windows 10 移动设备，以加快较慢的应用安装的速度：
 
    1. 请转到**所有应用**  >  **设置**  >  **帐户**。
 

@@ -14,9 +14,11 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 824605544487c987c8726e0efe91d06a597fadb2
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 512f19a1e894479404d25d2500b0db79ba0882cf
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -60,9 +62,4 @@ Microsoft Intune 可帮助你管理应用更新。 使用本主题中的信息�
 对于从应用包（业务线应用）安装的应用，该应用将对必需和可用的部署进行自动升级，只要该应用具有相同的标识符。
 
 对于以链接形式部署到商店的应用，更新将由该应用所属的商店进行管理。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

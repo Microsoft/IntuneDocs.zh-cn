@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
-ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
-ms.lasthandoff: 02/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 3d8e399f937c98b8e91a932928b5ba4518d895e7
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -67,9 +68,9 @@ ms.lasthandoff: 02/21/2017
 
 -  IT 管理员可在计算机上安装应用和更新。
 
-## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每&8; 小时会发生什么情况
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每 8 小时会发生什么情况
 
-已注册的设备将以约&8; 小时的间隔执行以下操作：
+已注册的设备将以约 8 小时的间隔执行以下操作：
 
 -   下载 IT 管理员已提供的任何策略或应用更新。
 

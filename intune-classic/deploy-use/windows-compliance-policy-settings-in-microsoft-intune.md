@@ -14,10 +14,11 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -46,7 +47,7 @@ ms.lasthandoff: 02/22/2017
 -  **最短密码长度**：指定用户密码必须包含的最小位数或最小字符数。
 - **所需的密码类型**：指定用户必须创建“字母数字”密码还是“数字”密码。
 
-  对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过&8; 个字符或者最小字符集数大于&2;，则将无法正确评估合规性策略。
+  对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过 8 个字符或者最小字符集数大于 2，则将无法正确评估合规性策略。
 
 - **最小字符集数**：如果“所需的密码类型”设置为“字母数字”，此设置将指定密码必须包含的最小字符集数。 四个字符集为：
   -   小写字母
@@ -54,7 +55,7 @@ ms.lasthandoff: 02/22/2017
   -   符号
   -   数字
 
-  设置的数字越大，要求用户创建的密码越复杂。 对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过&8; 个字符或者最小字符集数大于&2;，则将无法正确评估合规性策略。
+  设置的数字越大，要求用户创建的密码越复杂。 对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过 8 个字符或者最小字符集数大于 2，则将无法正确评估合规性策略。
 
 - **要求提供密码之前的非活动分钟数**：此设置指定用户必须重新输入其密码前的空闲时间。
 
@@ -96,7 +97,7 @@ ms.lasthandoff: 02/22/2017
 
   指定用户密码必须包含的最小位数或最小字符数。
 
-  对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过&8; 个字符或者“最小字符集数”大于&2; 个字符，则将无法正确评估合规性策略。
+  对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过 8 个字符或者“最小字符集数”大于 2 个字符，则将无法正确评估合规性策略。
 
 - **所需密码类型**：在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。
 
@@ -110,7 +111,7 @@ ms.lasthandoff: 02/22/2017
   -   符号
   -   数字     
 
-  设置的数字越大，要求用户创建的密码越复杂。 对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过&8; 个字符或者“最小字符集数”大于&2; 个字符，则将无法正确评估合规性策略。
+  设置的数字越大，要求用户创建的密码越复杂。 对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过 8 个字符或者“最小字符集数”大于 2 个字符，则将无法正确评估合规性策略。
 
 - **要求提供密码之前的非活动状态分钟数**：在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。
 

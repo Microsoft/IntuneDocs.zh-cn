@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>在 Intune 中注册 Windows 10 设备
 
-1.  通过转到“开始菜单”并选择“设置”按钮，打开 Windows“设置”应用。 还可以在搜索栏中搜索“设置”。
+> [!NOTE]
+> Windows 10 适用于所有类型的设备。 无论使用台式电脑、手机还是平板电脑，所遵循的步骤都相同，但是这些步骤可能与此页面上的图像略有差异。
 
-2. 选择“帐户”。
+1.  转到“开始”。
+
+  - 如果使用 Windows 10 桌面版设备，请转到“开始”菜单。
+  - 如果使用 Windows 10 移动版设备，请转到“开始”屏幕，然后轻扫至“所有应用”列表。
+
+2. 通过在搜索栏中搜索“设置”，打开 Windows“设置”应用。
+
+3. 选择“帐户”。
 
     ![转到“设置”和“帐户”](./media/W10-enroll-1-settings-accounts.png)
 
-3. 选择“你的帐户”。
+4. 选择“你的帐户”。
 
     ![选择“你的帐户”](./media/W10-enroll-2-accounts-your-account.png)
 
-4. 选择“添加工作单位或学校帐户”。
+5. 选择“添加工作单位或学校帐户”。
 
     ![选择“添加工作单位或学校帐户”](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. 使用工作单位或学校凭据登录。
+6. 使用工作单位或学校凭据登录。
 
     ![登录](./media/W10-enroll-4-sign-in.png)
 

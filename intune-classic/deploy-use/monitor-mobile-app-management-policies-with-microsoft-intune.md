@@ -14,10 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.lasthandoff: 02/14/2017
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 监视应用保护策略
 可以监视已应用于用户的应用保护策略的符合性状态。 可找到的信息包括受应用保护策略影响的用户、它的符合性状态和用户可能遭遇的任何问题。
 
-可在&3; 个不同的位置监视合规性状态：
+可在 3 个不同的位置监视合规性状态：
 
 -   摘要视图
 
@@ -35,7 +36,7 @@ ms.lasthandoff: 02/14/2017
 
 ## <a name="summary-view"></a>摘要视图
 
-请按下面&3; 个步骤打开“摘要”视图：
+请按下面 3 个步骤打开“摘要”视图：
 
 1. 转到 [Azure 门户](https://portal.azure.com)，然后输入你的凭据。
 2. 选择“更多服务”，然后在筛选器文本框中键入“Intune”。
@@ -91,7 +92,7 @@ ms.lasthandoff: 02/14/2017
 
 可从详细视图中找到相同报表，还可通过其他报表了解应用保护策略的符合性状态：
 
-![屏幕快照 -&4;](../media/MAM-reporting-7.png)
+![屏幕快照 - 4](../media/MAM-reporting-7.png)
 
 -   **应用保护用户报表：**概述了可在以上详细视图部分下的“用户状态”中找到的相同信息。
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 02/14/2017
 
         -   已签入所有应用，但应用还未获取任何应用保护策略。
 
-![屏幕快照 -&2;](../media/MAM-reporting-4.png)
+![屏幕快照 - 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>表格分组
 
@@ -124,11 +125,11 @@ ms.lasthandoff: 02/14/2017
 
 1. 在“Intune 移动应用程序管理”边栏选项卡中，选择“应用保护报表”。
 
-    ![屏幕快照 -&6;](../media/app-protection-report-csv-2.png)
+    ![屏幕快照 - 6](../media/app-protection-report-csv-2.png)
 
 2. 选择“是”以保存报表，然后选择“另存为”，并选择要在其中保存报表的文件夹。
 
-    ![屏幕快照 -&7;](../media/app-protection-report-csv-1.png)
+    ![屏幕快照 - 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>另请参阅
 [管理 iOS 应用之间的数据传输](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
