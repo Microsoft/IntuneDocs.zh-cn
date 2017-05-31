@@ -18,7 +18,7 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 973e97c7dc5f16df93d2c74546b9a4c6c05a0354
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/31/2017
 
 
 ---
@@ -80,8 +80,7 @@ Intune App SDK 是没有外部依赖项的标准 Android 库。 **Microsoft.Intu
 Azure Active Directory 身份验证库 (ADAL) 可能有其自己的 ProGuard 限制。 如果应用集成 ADAL，则必须遵循 ADAL 文档中的这些限制。
 
 ### <a name="entry-points"></a>入口点
-=======
-Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要这些权限以执行代理身份验证。 如果未对应用授予这些权限或权限被用户废除，则将禁用需要代理（公司门户应用）的身份验证流。
+======= Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要这些权限以执行代理身份验证。 如果未对应用授予这些权限或权限被用户废除，则将禁用需要代理（公司门户应用）的身份验证流。
 
 Intune App SDK 需要更改应用的源代码才能启用 Intune 应用保护策略。 此操作可通过将 Android 基类替换为等效的 Intune 基类（其名称具有前缀 **MAM**）来完成。 SDK 类介于 Android 基类与应用自己的该类派生版本之间。 以一个活动为例，你最终会得到类似于下面这样的继承层次结构： `Activity` > `MAMActivity` > `AppSpecificActivity`。
 
