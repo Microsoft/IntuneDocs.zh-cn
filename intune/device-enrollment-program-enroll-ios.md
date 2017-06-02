@@ -55,7 +55,7 @@ ms.lasthandoff: 05/23/2017
 2. 选择“下载公钥”，本地下载和保存加密密钥 (.pem) 文件。 .pem 文件用于从 Apple 设备注册计划门户请求信任关系证书。
 
 **步骤 2：从相应的 Apple 网站下载 Apple DEP 令牌。**<br>
-选择“通过 Apple 部署计划创建 DEP 令牌”[](https://deploy.apple.com)(https://deploy.apple.com)，并使用公司的 Apple ID 登录。 可使用此 Apple ID 续订 DEP 令牌。
+选择[“通过 Apple 部署计划创建 DEP 令牌”](https://deploy.apple.com) (https://deploy.apple.com) ，并使用公司的 Apple ID 登录。 可使用此 Apple ID 续订 DEP 令牌。
 
    1.  在 Apple 的[设备注册计划门户](https://deploy.apple.com)中，转到“设备注册计划”&gt;“管理服务器”，然后选择“添加 MDM 服务器”。
    2.  输入“MDM 服务器名称”，然后选择“下一步”。 服务器名称供参考，用于识别移动设备管理 (MDM) 服务器。 它不是 Microsoft Intune 服务器的名称或 URL。
