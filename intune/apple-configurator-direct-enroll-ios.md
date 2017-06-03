@@ -73,7 +73,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 ## <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>将配置文件作为 .mobileconfig 导出到 iOS 设备
 
-1. 在“导出配置文件”边栏选项卡上，将注册配置文件下载到 Apple Configurator[](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)，作为管理配置文件直接推送到已连接的 iOS 设备。 此方法不会将设备恢复至出厂设置。
+1. 在“导出配置文件”边栏选项卡上，将注册配置文件下载到 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)，作为管理配置文件直接推送到已连接的 iOS 设备。 此方法不会将设备恢复至出厂设置。
 
 2. 通过以下步骤使用 Apple Configurator 准备设备。
 
