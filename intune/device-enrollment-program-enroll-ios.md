@@ -117,7 +117,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>将 Apple DEP 序列号分配给 MDM 服务器
 必须在 Apple DEP Web 门户中向你的 Intune MDM 服务器分配设备序列号才能允许 Intune 管理这些设备。
 
-1. 转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com)，然后使用公司 Apple ID 登录。
+1. 转到[设备注册计划门户](https://deploy.apple.com) (https://deploy.apple.com) ，然后使用公司 Apple ID 登录。
 
 2. 转到“部署计划”&gt;“设备注册计划”&gt;“管理设备”。
 
