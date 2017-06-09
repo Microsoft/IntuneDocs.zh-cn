@@ -29,17 +29,17 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="add-android-for-work-binding-for-intune"></a>为 Intune 添加 Android for Work 绑定
 
-1. **设置 Intune**<br>
+1. 设置 Intune<br>
 如果你尚未设置，请通过[将移动设备管理机构设置](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment)为“Microsoft Intune”并设置 MDM，为管理移动设备做好准备。
 
-2. **配置 Android for Work 绑定**<br>
-   以 Intune 管理员身份，打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，转到**“管理”** &gt; **“移动设备管理”** &gt; **“Android for Work”**，然后单击**“配置”** 打开 Google Play 的 Android for Work 网站。  这会在浏览器的新选项卡中打开。
+2. 配置 Android for Work 绑定<br>
+   以 Intune 管理员身份，打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，转到****“管理” &gt; ****“移动设备管理” &gt; ****“Android for Work”，然后单击****“配置” 打开 Google Play 的 Android for Work 网站。  这会在浏览器的新选项卡中打开。
 
 3. **登录到 Google**<br>
    在 Google 的登录页上，输入将与此租户的所有 Android for Work 管理任务相关联的 Google 帐户。 这是在组织的 IT 管理员之间共享的 Google 帐户，用于在 Play for Work 控制台中管理和发布应用。
 
 4. **提供组织详细信息**<br>
-   为**“组织名称”**提供你公司的名称。 对于**企业移动性管理 (EMM) 提供程序**，应显示 Microsoft Intune。 同意 Android for Work 协议，然后单击**“确认”**。 你的请求会进行处理。
+   为“组织名称”提供你公司的名称。 对于企业移动性管理 (EMM) 提供程序，应显示 Microsoft Intune。 同意 Android for Work 协议，然后单击“确认”。 你的请求会进行处理。
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>指定 Android for Work 注册设置
    Android for Work 仅在特定 Android 设备上受支持。 请参阅 Google 的 [Android for Work 要求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")。  支持 Android for Work 的任何设备也支持传统的 Android 管理。  Intune 允许你指定应如何管理支持 Android for Work 的设备：
@@ -60,8 +60,8 @@ ms.lasthandoff: 05/23/2017
 ### <a name="how-to-unbind-an-android-for-work-account"></a>如何取消绑定 Android for Work 帐户
 
 1. **取消绑定 Android for Work 绑定**<br>
-   以管理用户身份，打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，转到**“管理”** &gt; **“移动设备管理”** &gt; **“Android for Work”** ，然后单击**“取消绑定”**。
+   以管理用户身份，打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，转到“管理”**** &gt; “移动设备管理”**** &gt; “Android for Work”**** ，然后单击“取消绑定”****。
 
 2. **同意删除 Android for Work 绑定**<br>
-  单击**“是”**可删除绑定并从 Intune 取消注册所有 Android for Work 设备。
+  单击“是”可删除绑定并从 Intune 取消注册所有 Android for Work 设备。
 

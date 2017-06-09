@@ -25,7 +25,7 @@ ms.lasthandoff: 05/23/2017
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)] 本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
 ##  <a name="accessing-apps"></a>访问应用
 
 Android 设备上与应用保护策略关联的所有应用都需要公司门户应用。

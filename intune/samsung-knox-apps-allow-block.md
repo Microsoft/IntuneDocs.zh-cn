@@ -25,7 +25,7 @@ ms.lasthandoff: 05/23/2017
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用自定义策略以允许和阻止适用于 Samsung KNOX 标准版设备的应用
-[!INCLUDE[azure_preview](./includes/azure_preview.md)] 使用此主题中的过程创建 Microsoft Intune 自定义策略，该策略创建以下内容之一：
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]使用此主题中的过程创建 Microsoft Intune 自定义策略，该策略创建以下内容之一：
 
 - 阻止在设备上运行的应用的列表。 阻止运行此列表中的应用，即使应用此策略时已安装这些应用也是如此。
 - 允许设备用户从 Google Play 商店中安装的应用的列表。 仅可安装你列出的应用。 其他应用不能从应用商店安装。

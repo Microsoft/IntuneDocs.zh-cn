@@ -25,7 +25,7 @@ ms.lasthandoff: 05/23/2017
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略托管时会出现的情况
-[!INCLUDE[azure_preview](./includes/azure_preview.md)] 本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
 ##  <a name="accessing-apps"></a>访问应用
 
 如果设备**未在 Intune 中注册**，则最终用户首次使用应用时需要重启该应用。  必须重启才能将应用保护策略应用到该应用。 以下屏幕截图使用 Skype 应用对此进行解释：

@@ -127,7 +127,7 @@ ms.lasthandoff: 05/23/2017
 
 #### <a name="locating-sync-logs"></a>定位同步日志
 
--    通过搜索“**完全同步**”定位日志中的完全同步。 完全同步的开始部分将通过以下文本标记：
+-    通过搜索“**full sync**”定位日志中的完全同步。 完全同步的开始部分将通过以下文本标记：
 
     'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users`
 
@@ -135,7 +135,7 @@ ms.lasthandoff: 05/23/2017
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--    通过搜索“**快速同步**”定位日志中的快速（增量）同步。
+-    通过搜索“**quick sync**”定位日志中的快速（增量）同步。
 
 ##### <a name="exceptions-in-get-next-command"></a>获取下一条命令中的异常
 查看针对“**获取下一条命令**”中的异常的 Exchange Connector 日志，并将其提供给 Microsoft 支持。
