@@ -63,7 +63,7 @@ ms.lasthandoff: 05/23/2017
 
 1.  在 Intune 经典控制台中，选择“应用”&gt;“添加应用”来启动 Intune 软件发行者，然后单击“下一步”。
 
-2.  在“软件安装程序”页上，选择“来自应用商店的托管 iOS 应用”，然后在“指定 URL”下粘贴“适用于 iOS 的 Skycure 应用 URL”[](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
+2.  在“软件安装程序”页上，选择“来自应用商店的托管 iOS 应用”，然后在“指定 URL”下粘贴[“适用于 iOS 的 Skycure 应用 URL”](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
 
     ![Intune 软件发行者托管的 iOS 应用](../media/mtp/skycure-add-apps-3.png)
 
@@ -79,7 +79,7 @@ ms.lasthandoff: 05/23/2017
 
 1.  在 Intune 经典控制台中，选择“应用”&gt;“添加应用”来启动 Intune 软件发行者，然后单击“下一步”。
 
-2.  在“软件安装程序”页上，选择“来自应用商店的托管 iOS 应用”，然后在“指定 URL”下粘贴“适用于 iOS 的 Microsoft Authenticator 应用 URL”[](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
+2.  在“软件安装程序”页上，选择“来自应用商店的托管 iOS 应用”，然后在“指定 URL”下粘贴[“适用于 iOS 的 Microsoft Authenticator 应用 URL”](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
 
     ![Intune 软件发行者托管的 iOS 应用 2](../media/mtp/skycure-add-apps-5.png)
 
