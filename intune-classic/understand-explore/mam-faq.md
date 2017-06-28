@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a39f67a532f53ef6ab2e3cc5d17b2d593a3483ae
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="mam-basics"></a>MAM 基础知识
 
 
-**什么是 MAM？** [Intune 移动应用程序管理](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md)指的是 Intune 管理功能套件，通过它能够为用户发布、推送、配置、保护、监视和更新移动应用。
+**什么是 MAM？** [Intune 移动应用程序管理](/intune/app-lifecycle)指的是 Intune 管理功能套件，通过它能够为用户发布、推送、配置、保护、监视和更新移动应用。
 
 **使用 MAM 应用保护有什么好处？** MAM 可保护应用程序内组织的数据。 通过 MAM-WE，可以在几乎任何设备上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。 许多生产型应用，例如 Microsoft Office 应用，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
 
@@ -50,12 +50,12 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>可使用应用保护策略进行管理的应用
 
-**可通过应用保护策略管理哪些应用？** 已通过 [Intune App SDK](../develop/intune-app-sdk.md) 启用的或通过 [Intune 应用包装工具](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)包装的任何应用都可使用 Intune 应用保护策略进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
+**可通过应用保护策略管理哪些应用？** 已通过 [Intune App SDK](/intune/app-sdk) 启用的或通过 [Intune 应用包装工具](/intune/apps-prepare-mobile-application-management)包装的任何应用都可使用 Intune 应用保护策略进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
 
 **在 Intune 启用的应用上使用应用保护策略的基本要求有哪些？**
-  1. 最终用户必须具有 Azure Active Directory (AAD) 帐户。 请参阅[添加用户并授予对 Intune 的管理权限](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)，了解如何在 Azure Active Directory 中创建 Intune 用户。
+  1. 最终用户必须具有 Azure Active Directory (AAD) 帐户。 请参阅[添加用户并授予对 Intune 的管理权限](/intune/users-permissions-add)，了解如何在 Azure Active Directory 中创建 Intune 用户。
 
-  2. 最终用户必须具有分配给其 Azure Active Directory 帐户的 Microsoft Intune 许可证。 请参阅[管理 Intune 许可证](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)，了解如何将 Intune 许可证分配给最终用户。
+  2. 最终用户必须具有分配给其 Azure Active Directory 帐户的 Microsoft Intune 许可证。 请参阅[管理 Intune 许可证](/intune/licenses-assign)，了解如何将 Intune 许可证分配给最终用户。
 
   3. 最终用户必须属于应用保护策略所面向的一个安全组。 同一应用保护策略必须面向正在使用的特定应用。 可以在 [Azure 门户](http://portal.azure.com)的 Intune 控制台中创建和部署应用保护策略。 当前可以在 [Office 门户](http://portal.office.com)中创建安全组。
 

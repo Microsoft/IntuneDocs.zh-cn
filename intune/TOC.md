@@ -1,99 +1,112 @@
-# 简介
-## [什么是 Azure 门户预览？](what-is-intune.md)
-## [什么是 Intune for Education？](/intune-classic/understand-explore/introduction-to-intune-education?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+# [简介](introduction-intune.md)
+## [什么是 Azure 门户？](what-is-intune.md)
+## [什么是 Intune for Education？](introduction-intune-education.md)
 ## [Azure 中的 Intune 功能](ui-changes.md)
-## 入门
-<!---(get-started.md) --->
-### [注册免费试用版](free-trial-sign-up.md)
+## [注册免费试用版](free-trial-sign-up.md)
 ## [新增功能](whats-new.md)
+### [应用 UI 中的新增功能](whats-new-app-ui.md)
+### [新增功能存档（Azure 门户）](whats-new-archive.md)
+### [新增功能存档（经典门户）](whats-new-archive-classic.md)
+
+<!--## High-level architecture-->
+
+## [设备和应用生命周期](introduction-device-app-lifecycles.md)
+### [设备生命周期](device-lifecycle.md)
+### [应用生命周期](app-lifecycle.md)
+## [常见方案](common-scenarios.md)
 ## [已知问题](known-issues.md)
 ## [获取支持](get-support.md)
-<!---
+## [Intune 服务说明](microsoft-intune-service-description.md)
 
-## [Related resources](related-resources.md)
-
-## [Get started](plan-and-design/get-started.md) --->
-
-# 规划和设计
-
-## [部署规划、设计和实施](/intune-classic/plan-design/introduction?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 1 部分：确定部署目标和难题](/intune-classic/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 2 部分：确定用例方案](/intune-classic/plan-design/section-2-identify-use-case-scenarios?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 3 部分：确定用例方案要求](/intune-classic/plan-design/section-3-determine-use-case-requirements?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 4 部分：制定推出计划](/intune-classic/plan-design/section-4-develop-a-rollout-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 5 部分：制定通信计划](/intune-classic/plan-design/section-5-develop-a-rollout-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 6 部分：制定支持计划](/intune-classic/plan-design/section-6-develop-a-support-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 7 部分：创建 Intune 设计](/intune-classic/plan-design/section-7-create-an-intune-design?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 8 部分：实施 Intune](/intune-classic/plan-design/section-8-onboarding-process?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [第 9 部分：测试和验证](/intune-classic/plan-design/section-9-test-and-validation?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [其他资源](/intune-classic/plan-design/additional-resources?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-
-## [迁移](/intune-classic/plan-design/intune-mdm-migration-guide?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [阶段 1：针对 MDM 进行 Intune 准备](/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [基本设置](/intune-classic/plan-design/migration-phase1-basic-setup?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [配置设备和应用管理策略](/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [配置应用保护策略](/intune-classic/plan-design/migration-phase1-configure-app-protection-policies?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [特殊迁移注意事项](/intune-classic/plan-design/migration-phase1-special-migration-considerations?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [阶段 2：迁移活动](/intune-classic/plan-design/migration-phase2-migration-campaign?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [通信计划](/intune-classic/plan-design/migration-phase2-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [推进采用](/intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [典型迁移周期](/intune-classic/plan-design/migration-phase2-typical-migration-cycle?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+<!--# Get started
+## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
+## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
+## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
 
 
-# 注册设备
-## [什么是设备注册？](device-enrollment.md)
-## 入门
+# 规划部署
+## [规划指南](planning-guide.md)
+### [确定目标和宗旨](planning-guide-deployment-goals.md)
+### [确定方案](planning-guide-scenarios.md)
+### [确定要求](planning-guide-requirements.md)
+### [制定推出计划](planning-guide-rollout-plan.md)
+### [制定通信计划](planning-guide-communication-plan.md)
+### [制定支持计划](planning-guide-support-plan.md)
+### [设计](planning-guide-design.md)
+### [实施](planning-guide-onboarding.md)
+### [测试和验证](planning-guide-test-validation.md)
+### [其他资源](planning-guide-resources.md)
+<!-- ## Scenario implementation guides
+### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
+### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
+### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
+### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
+### [Manage shared devices](/enterprise-mobility-security/solutions/limited-use-shared-devices?toc=/intune/toc.json) -->
+## [迁移指南](migration-guide.md)
+### [准备 Intune](migration-guide-prepare.md)
+#### [基本设置](migration-guide-setup.md)
+#### [配置设备和应用管理策略](migration-guide-configure-policies.md)
+#### [配置应用保护策略](migration-guide-app-protection-policies.md)
+#### [迁移注意事项](migration-guide-considerations.md)
+### [迁移活动](migration-guide-campaign.md)
+#### [计划通信](migration-guide-communication-plan.md)
+#### [推进采用](migration-guide-drive-adoption.md)
+#### [典型迁移周期](migration-guide-cycle.md)
+
+
+# 如何
+
+## 设置 Intune[](setup-steps.md)
+### [必备条件](supported-devices-browsers.md)
+#### [网络带宽使用](network-bandwidth-use.md)
+### [登录 Intune](account-sign-up.md)
+### [配置域](custom-domain-name-configure.md)
+### [添加用户](users-permissions-add.md)
+### [分配许可证](licenses-assign.md)       
+### [自定义公司门户](company-portal-customize.md)     
 ### [设置 MDM 机构](mdm-authority-set.md)
-## 规划和设计
-### [获取 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
-### [选择 iOS 设备注册方式](enrollment-method-choose-ios.md)
-## 如何
-### [向用户分配许可证](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [注册 Android 设备](android-enroll.md)
-### 注册 iOS 设备
-#### [Apple Configurator - 设置助理](apple-configurator-setup-assistant-enroll-ios.md)
-#### [Apple Configurator - 直接注册](apple-configurator-direct-enroll-ios.md)
-#### [添加 Apple Configurator 序列号](apple-configurator-serial-numbers-add.md)
-#### [DEP](device-enrollment-program-enroll-ios.md)
-### [设备注册管理器](device-enrollment-manager-enroll.md)
-### [注册 macOS 设备](macos-enroll.md)
-### [注册 Windows 设备](windows-enroll.md)
-### [批量注册 Windows 设备](windows-bulk-enroll.md)
-### 管理设备注册
-#### [创建条款和条件](terms-and-conditions-create.md)
-#### [设置注册限制](enrollment-restrictions-set.md)
+
+## [注册设备](device-enrollment.md)
+### 安装选项
+#### [条款和条件](terms-and-conditions-create.md)
+#### [限制](enrollment-restrictions-set.md)
+#### [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
+#### [企业标识符](corporate-identifiers-add.md)
+#### [设备注册管理器](device-enrollment-manager-enroll.md)
 #### [将设备映射到组](device-group-mapping.md)
-#### [添加企业标识符](corporate-identifiers-add.md)
-#### [使用 Windows Hello 企业版](windows-hello.md)
-<!--- ## [Troubleshoot](troubleshooting.md) --->
+### [设置 Windows 注册](windows-enroll.md)
+#### [批量注册](windows-bulk-enroll.md)
+### [设置 Android 注册](android-enroll.md)
+### 设置 iOS 注册
+#### [使用设备注册计划](device-enrollment-program-enroll-ios.md)
+#### [使用 Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [使用 Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [设置 macOS 注册](macos-enroll.md)
 
-# 设备和组
-## [什么是设备管理？](device-management.md)
-<!--- ## [Get started](get-started.md) --->
-<!--- ## [Plan and design](plan-and-design.md) --->
-## 如何
-### [使用完全擦除或选择性擦除](devices-wipe.md)
-<!--- ## [Troubleshoot](troubleshooting.md) --->
+## [管理设备](device-management.md)
+### [擦除设备](devices-wipe.md)
+### [绕过激活锁](device-activation-lock-bypass.md)
+### [出厂重置设备](device-factory-reset.md)
+### [管理 Windows Fresh Start](device-fresh-start.md)
+### [找到丢失的 iOS 设备](device-locate.md)
+### [启用 iOS 丢失模式](device-lost-mode.md)
+### [锁定设备](device-remote-lock.md)
+### [删除公司数据](device-company-data-remove.md)
+### [重置密码](device-passcode-reset.md)
+### [重新启动设备](device-restart.md)
+### [适用于 Android 的远程控制](device-profile-android-teamviewer.md)
+### [检查设备清单](device-inventory.md)
 
-# 管理用户
-## [什么是用户管理？](user-management.md)
-<!--- Was What is users & group management--->
-## [入门](groups-get-started.md)
-## [帮助用户](help-desk-operators.md)
-<!--- ## [Plan and design](plan-and-design.md) --->
+## [管理用户](user-management.md)
+### [组入门](groups-get-started.md)
+<!--### Add and delete users -->
 
-<!--- ## [Troubleshoot](troubleshooting.md) --->
-
-# 管理应用
-## [什么是应用管理？](app-management.md)
-## [什么是应用保护策略？](app-protection-policy.md)
-<!--- ## [Get started](get-started.md)
-## [Plan and design](plan-and-design.md) --->
-## 如何管理应用
+## [管理应用](app-management.md)
 ### [添加应用](apps-add.md)
 #### [Android 应用商店应用](store-apps-android.md)
 #### [Android LOB 应用](lob-apps-android.md)
-#### [iOS 应用商店应用](store-apps-ios.md)
+#### [iOS App Store 应用](store-apps-ios.md)
 #### [iOS LOB 应用](lob-apps-ios.md)
 #### [Web 应用](web-app.md)
 #### [Windows Phone 8.1 应用商店应用](store-apps-windows-phone-8-1.md)
@@ -103,43 +116,36 @@
 #### [Android for Work 应用](apps-add-android-for-work.md)
 ### [分配应用](apps-deploy.md)
 ### [监视应用](apps-monitor.md)
-### [使用应用配置文件](app-configuration-policies.md)
+### [iOS 应用配置的配置文件](app-configuration-policies-use-ios.md)
+### [Android 应用配置的配置文件](app-configuration-policies-use-android.md)
 ### [使用 iOS 应用预配配置文件](app-provisioning-profile-ios.md)
 ### [选择性地擦除应用](apps-selective-wipe.md)
-<!---Is this specific to app protection policy or more general app management?--->
-### [使用批量采购的应用](vpp-apps.md)
+### [使用批量采购的应用和书籍](vpp-apps.md)
 #### [iOS VPP 应用](vpp-apps-ios.md)
 #### [适用于企业的 Windows 应用商店应用](windows-store-for-business.md)
+#### [iOS 电子书](vpp-ebooks-ios.md)
 ### [配置公司门户应用](company-portal-app.md)
-## 如何使用应用保护策略
-### [创建和分配应用保护策略](app-protection-policies.md)
+### [配置托管浏览器](app-configuration-managed-browser.md)
+## [使用应用保护策略](app-protection-policies.md)
 ### [准备使用 WIP 应用保护策略](app-protection-policies-configure-windows-10.md)
 ### [创建和分配 WIP 应用保护策略](windows-information-protection-policy-create.md)
 ### [Android 设置](app-protection-policy-settings-android.md)
 ### [iOS 设置](app-protection-policy-settings-ios.md)
 ### [验证应用保护策略](app-protection-policies-validate.md)
 ### [监视应用保护用户状态](app-protection-policies-monitor.md)
+### [准备使用 WIP 应用保护策略](app-protection-policies-configure-windows-10.md)
+### [创建和分配 WIP 应用保护策略](windows-information-protection-policy-create.md)
 ### [管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)
-### [具有应用保护策略的 Android 应用](app-protection-enabled-apps-android.md)
-### [具有应用保护策略的 iOS 应用](app-protection-enabled-apps-ios.md)
 
-
-<!--- ##  [Troubleshoot apps](troubleshooting.md) --->
-
-# 配置设备
-## [什么是设备配置文件？](device-profiles.md)
-<!---## [Get started](get-started.md)
-## [Plan and design](plan-and-design.md) --->
-## 如何
+## [配置设备](device-profiles.md)
 ### [配置设备配置文件](device-profile-create.md)
-
 ### [配置设备功能](device-features-configure.md)
 #### [适用于 iOS 和 MacOS 的 AirPrint](air-print-settings-ios-macos.md)
 #### [适用于 iOS 的 AirPlay](airplay-settings-ios.md)
 #### [适用于 iOS 的主屏幕布局](home-screen-settings-ios.md)
 #### [适用于 iOS 的应用通知](app-notification-settings-ios.md)
 #### [适用于 iOS 的共享设备](shared-device-settings-ios.md)
-
+#### [适用于 iOS 的 Web 筛选器设置](web-content-filter-settings-ios.md)
 ### [配置设备限制](device-restrictions-configure.md)
 #### [Android](device-restrictions-android.md)
 #### [iOS](device-restrictions-ios.md)
@@ -149,13 +155,11 @@
 #### [Windows 10](device-restrictions-windows-10.md)
 #### [Windows 10 协同版](device-restrictions-windows-10-teams.md)
 #### [Android for Work](device-restrictions-android-for-work.md)
-
 ### [配置电子邮件设置](email-settings-configure.md)
 #### [Android](email-settings-android.md)
 #### [iOS](email-settings-ios.md)
 #### [Windows Phone 8.1](email-settings-windows-phone-8-1.md)
 #### [Windows 10](email-settings-windows-10.md)
-
 ### [配置 VPN 设置](vpn-settings-configure.md)
 #### [Android](vpn-settings-android.md)
 #### [iOS](vpn-settings-ios.md)
@@ -163,13 +167,11 @@
 #### [Windows 8.1](vpn-settings-windows-8-1.md)
 #### [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
 #### [Windows 10](vpn-settings-windows-10.md)
-
 ### [配置 Wi-Fi 设置](wi-fi-settings-configure.md)
 #### [Android](wi-fi-settings-android.md)
 #### [iOS](wi-fi-settings-ios.md)
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 和 Windows 10](wi-fi-settings-import-windows-8-1.md)
-
 ### [配置 Windows 10 版本升级设置](edition-upgrade-configure-windows-10.md)
 ### [配置 Windows 10 教育版设置](education-settings-configure.md)
 ### [配置 iOS 教育设置](education-settings-configure-ios.md)
@@ -177,53 +179,107 @@
 ### [配置证书](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
-
 ### [配置 Windows 信息保护设置](windows-information-protection-configure.md)
-<!--- ### [Configure iOS education settings](education-settings-for-ios.md) --->
+### [分配配置文件](device-profile-assign.md)
+### [监视配置文件](device-profile-monitor.md)
+### [配置文件疑难解答](device-profile-troubleshoot.md)
 
-### [配置自定义设置](custom-settings-configure.md)
-#### [Android](custom-settings-android.md)
-##### [具有预共享密钥的 Wi-Fi 配置文件](wi-fi-profile-shared-key.md)
-##### [每应用 VPN 配置文件](android-pulse-secure-per-app-vpn.md)
-##### [允许/阻止使用 Samsung KNOX 标准版的应用](samsung-knox-apps-allow-block.md)
-#### [iOS](custom-settings-ios.md)
-#### [macOS](custom settings-macos.md)
-#### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
-#### [Windows 10](custom-settings-windows-10.md)
-#### [Android for Work](custom-settings-android-for-work.md)
-
-### [分配设备配置文件](device-profile-assign.md)
-### [监视设备配置文件](device-profile-monitor.md)
-### [设置电信费用管理服务](telecom-expenses-monitor.md)
-## [故障排除](device-profile-troubleshoot.md)
-
-# 设置设备合规性
-## [什么是设备合规性？](device-compliance.md)
-## [入门](device-compliance-get-started.md)
-## 如何
-### [创建 Android 合规性策略](compliance-policy-create-android.md)
-### [创建 Android for Work 合规性策略](compliance-policy-create-android-for-work.md)
-### [创建 iOS 合规性策略](compliance-policy-create-ios.md)
-### [创建 Windows 合规性策略](compliance-policy-create-windows.md)
-<!---### [Create Actions for noncompliance](actions-for-noncompliance.md)--->
+## [设置设备合规性](device-compliance.md)
+### [必备条件](device-compliance-get-started.md)
+### [创建 Android 策略](compliance-policy-create-android.md)
+### [创建 Android for Work 策略](compliance-policy-create-android-for-work.md)
+### [创建 iOS 策略](compliance-policy-create-ios.md)
+### [创建 Windows 策略](compliance-policy-create-windows.md)
+<!--### Create Actions for noncompliance-->
 ### [监视设备合规性](compliance-policy-monitor.md)
-<!--- ### [Monitor device compliance](device-compliance-monitor.md)--->
 
-
-
-# 条件性访问
-## [什么是条件访问？](conditional-access.md)
-## 如何
+## [设置条件性访问](conditional-access.md)
+### [条件性访问的常见使用方式](conditional-access-intune-common-ways-use.md)
+### [基于应用的条件性访问](app-based-conditional-access-intune.md)
 ### [安装 Exchange 内部部署连接器](exchange-connector-install.md)
 ### [创建并分配条件性访问策略](conditional-access-exchange-create.md)
+### [为 Exchange Online 设置基于应用的条件性访问](app-based-conditional-access-intune-exchange-online-create.md)
+### [为 SharePoint Online 设置基于应用的条件性访问](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [ADAL 和 Intune](app-modern-authentication-block.md)
 ### [监视器条件性访问符合性](conditional-access-exchange-monitor.md)
 
-# 访问控制
-## [什么是基于角色的访问控制？](role-based-access-control.md)
+## 保护数据和设备
+
+### [移动威胁防御](mobile-threat-defense.md)
+
+#### [设置 Lookout](lookout-mobile-threat-defense-connector.md)
+##### [Lookout 和 Intune 集成](lookout-mtd-connector-integration.md)
+#### [设置 Skycure](skycure-mobile-threat-defense-connector.md)
+##### [配置 Azure AD SSO](skycure-azure-sso-configure.md)
+##### [下载 iOS 应用配置策略](skycure-ios-app-configuration-policy-download.md)
+##### [Skycure 和 Intune 集成](skycure-mtd-connector-integration.md)
+#### [添加并分配 MTD 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [在 Intune 中启用 MTD](mtd-connector-enable.md)
+#### [创建并分配 MTD 设备符合性策略](mtd-device-compliance-policy-create.md)
+
+### [网络访问控制](network-access-control-integrate.md)
+
+### [设置 Windows Hello](windows-hello.md)        
+<!-- ### Protect devices with remote actions        -->
+
+## [管理角色](role-based-access-control.md)
+<!-- ### Create a custom role
+### Assign a role -->
+### [使用支持人员角色](help-desk-operators.md)
+<!-- ### Custom role settings -->
+
+## [使用软件代理管理 PC](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [比较 PC 管理](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
+### [安装电脑客户端](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
+### [常见电脑管理任务](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
+#### [PC 策略](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
+#### [查看库存](/intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [停用 PC](/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune?toc=/intune/toc.json)
+#### [关联 PC 与用户](/intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+#### [远程协助](/intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [保护 Windows 电脑的策略](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [软件更新](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune?toc=/intune/toc.json)
+#### [Windows 防火墙](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune?toc=/intune/toc.json)
+#### [Endpoint Protection](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune?toc=/intune/toc.json)
+### [为 Intune 客户端电脑添加应用](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [管理许可协议](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
+### [解决策略冲突](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
+
+## [培训用户](end-user-educate.md)
+### [公司门户消息](end-user-company-portal-messages.md)
+### [Android 上已启用 MAM 的应用](end-user-mam-apps-android.md)
+### [iOS 上已启用 MAM 的应用](end-user-mam-apps-ios.md)
+### [如何获取 Android 应用](end-user-apps-android.md)
+### [如何获取 iOS 应用](end-user-apps-ios.md)
+### [如何获取 Windows 应用](end-user-apps-windows.md)
+
+# 监视和故障排除
+## [监视电信费用](telecom-expenses-monitor.md)
+
 
 # 开发和自定义
-## [Intune 应用包装工具](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [iOS 应用包装工具](/intune-classic/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Android 应用包装工具](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-## [Intune App SDK](/intune-classic/develop/intune-app-sdk?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [配置自定义设备设置](custom-settings-configure.md)
+### [Android](custom-settings-android.md)
+#### [具有预共享密钥的 Wi-Fi 配置文件](wi-fi-profile-shared-key.md)
+#### [每应用 VPN 配置文件](android-pulse-secure-per-app-vpn.md)
+#### [允许/阻止使用 Samsung KNOX 标准版的应用](samsung-knox-apps-allow-block.md)
+### [iOS](custom-settings-ios.md)
+### [macOS](custom-settings-macos.md)
+### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
+### [Windows 10](custom-settings-windows-10.md)
+### [Android for Work](custom-settings-android-for-work.md)
+## [准备适用于 MAM 的 LOB 应用](apps-prepare-mobile-application-management.md)
+### [iOS 应用包装工具](app-wrapper-prepare-ios.md)
+### [Android 应用包装工具](app-wrapper-prepare-android.md)
+## [旁加载 Windows 应用](app-sideload-windows.md)
+## [Intune App SDK](app-sdk.md)
+### [Intune App SDK 入门](app-sdk-get-started.md)
+### [用于 iOS 的 Intune 应用 SDK](app-sdk-ios.md)
+### [用于 Android 的 Intune 应用 SDK](app-sdk-android.md)
+### [Intune App SDK Cordova 插件](app-sdk-cordova.md)
+### [Intune App SDK Xamarin 组件](app-sdk-xamarin.md)
+## [如何使用 Intune Graph API](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+
+
+# [术语表](intune-glossary.md)

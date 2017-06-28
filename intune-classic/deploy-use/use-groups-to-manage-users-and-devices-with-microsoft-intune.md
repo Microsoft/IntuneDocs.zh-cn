@@ -1,5 +1,5 @@
 ---
-title: "使用组来管理用户和设备 | Microsoft Docs"
+title: "使用组来管理用户和设备"
 description: "使用“组”工作区创建和管理组。"
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ ms.lasthandoff: 05/23/2017
 -   希望 IT 管理员仅能够将项目部署到特定用户和设备
 -   希望 IT 管理员只能查看与该管理员相关的组
 
-在 Intune 管理控制台中，可为服务管理员配置已筛选的组视图。 有关详细信息，请参阅[使用 Microsoft Intune 前须知](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune)。
+在 Intune 管理控制台中，可为服务管理员配置已筛选的组视图。 有关详细信息，请参阅[使用 Microsoft Intune 前须知](/intune/supported-devices-browsers)。
 
 为服务管理员部署设置已筛选的组后，该管理员在部署软件/策略或运行报表时只能查看和选择指定的组。 该管理员还无法在管理控制台的以下页面上查看状态信息：
 

@@ -1,5 +1,5 @@
 ---
-title: "移动应用程序管理故障排除 | Microsoft Docs"
+title: "移动应用程序管理故障排除"
 description: "本主题介绍条件性访问部署的一些故障排除提示。"
 keywords: 
 author: oydang
@@ -13,10 +13,10 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c795b0b5b12d900155e55e0874009177b32a2546
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: dd4b216f04c909321bbf57f4dec5998e48cb490c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

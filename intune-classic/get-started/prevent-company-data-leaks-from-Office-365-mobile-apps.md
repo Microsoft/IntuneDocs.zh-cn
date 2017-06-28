@@ -1,5 +1,5 @@
 ---
-title: "阻止公司数据从 Office 365 移动应用中泄露 | Microsoft Docs"
+title: "阻止公司数据从 Office 365 移动应用中泄露"
 description: "可通过 Intune，使用移动应用管理 (MAM) 策略保护组织的数据，此策略可防止公司数据从 Office 365 移动应用或其他业务线 (LOB) 应用中泄露。"
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ Microsoft Intune 可以使用移动应用管理 (MAM) 策略帮助你保护组�
 如果是，Microsoft Intune 允许你在 iOS 和 Android 上设置 Office 365 移动应用的 MAM 策略，包括剪切/复制/粘贴限制、防止“另存为”、设置 PIN 要求以及能够以远程方式擦除 MAM 保护的数据。  这样无需用户将其设备注册到 MDM 解决方案即可保护公司数据，同时保持 Office 移动应用有很好的最终用户体验。
 
 ## <a name="how-do-i-do-it"></a>如何操作？
-1.    基本了解 Intune 移动应用程序管理 (MAM) 的工作原理 /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。
-2.    了解在 Azure 门户中[创建 MAM 策略之前需要执行的操作](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
-3.    使用 Intune [创建和部署 MAM 策略](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
+1.  基本了解 [Intune 移动应用管理 (MAM) 的工作原理](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。
+2.  了解在 Azure 门户中[创建 MAM 策略之前需要执行的操作](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
+3.  使用 Intune [创建和部署 MAM 策略](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
 
 ### <a name="additional-information"></a>其他信息:
 - 使用启用 MAM 的应用的[最终用户体验](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)。
-- [使用 Intune 准备适用于 MAM 的 LOB 应用](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [使用 Intune 准备适用于 MAM 的 LOB 应用](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">Microsoft Intune 应用程序合作伙伴列表 &rarr;</a> 提供启用了 MAM 的应用。
 
 ## <a name="what-should-i-do-next"></a>接下来我该怎么办？

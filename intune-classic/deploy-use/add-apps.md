@@ -1,5 +1,5 @@
 ---
-title: "添加应用 | Microsoft Docs"
+title: "添加应用"
 description: "在开始使用 Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 18272f21799253128cfe0ad6aa66e108b24a0b50
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -66,11 +66,11 @@ ms.lasthandoff: 05/23/2017
 ## <a name="cloud-storage-space"></a>云存储空间
 使用软件安装程序安装类型（例如，业务线应用）创建的所有应用都必须打包并上传到 Microsoft Intune 云存储空间。 Intune 的试用订阅包括 2 千兆字节 (GB) 基于云的存储，用于存储托管应用和更新。 完全订阅包括 20 GB 的存储空间。
 
-可以在“**管理员**”工作区的“**存储空间使用量**”节点中查看所使用的空间量。 可以使用原始购买方法购买额外的 Intune 存储空间。  如果通过发票或信用卡付款，请访问[订阅管理门户](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否则，请联系合作伙伴或销售人员。
+可以在“**管理员**”工作区的“**存储空间使用量**”节点中查看所使用的空间量。 可以使用原始购买方法购买额外的 Intune 存储空间。  如果是通过发票或信用卡付款，请访问[订阅管理门户](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否则，请联系合作伙伴或销售内勤。
 
 云存储空间的要求如下：
 
--   所有应用安装文件必须位于同一文件夹。
+-   所有应用安装文件都必须位于同一文件夹内。
 -   上传的任意文件的最大文件大小是 2 GB。
 
 

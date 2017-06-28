@@ -1,5 +1,5 @@
 ---
-title: "移动设备安全策略设置 | Microsoft Docs"
+title: "移动设备安全策略设置"
 description: "使用 Intune 配置各种可部署到组织中的托管设备的设置。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 95adade7940e99768feb8e4cf50eca1401a46dd6
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 15b56f822557d80d0088467099c5c1232848bf82
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 

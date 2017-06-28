@@ -1,5 +1,5 @@
 ---
-title: "保护应用和数据 | Microsoft Docs"
+title: "保护应用和数据"
 description: "本主题介绍供你使用的各种 Intune 特性和功能，以帮助保护你的公司应用和数据。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -52,7 +52,7 @@ Intune 通过多个技术层保护公司数据。 在标识层上，条件性访
 
 与 Microsoft Office 应用类似的应用内置了 Intune 应用 SDK。 若要查看所支持应用的完整列表，请转到 Microsoft Intune 应用程序合作伙伴页面上的 [Microsoft Intune 移动应用程序库](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 选择应用可查看支持的方案、平台以及应用是否支持多身份。
 
-还可[启用自定义构建的业务线应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)，与 MAM 策略配合使用。
+还可[启用自定义构建的业务线应用](/intune/apps-prepare-mobile-application-management)，与 MAM 策略配合使用。
 
 如果设备丢失或被盗，或者用户不再与公司合作，除了限制数据移动之外，还可[选择性擦除公司数据](wipe-managed-company-app-data-with-microsoft-intune.md)，仅保留个人数据。
 

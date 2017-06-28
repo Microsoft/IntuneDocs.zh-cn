@@ -1,5 +1,5 @@
 ---
-title: "后配置任务 | Microsoft Docs"
+title: "后配置任务"
 description: "完成可选配置任务，以增强移动设备管理功能。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 705605070b2e80f1548f550aa2632b988820612a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

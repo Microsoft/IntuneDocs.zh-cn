@@ -1,5 +1,5 @@
 ---
-title: "使用 Microsoft Intune 设置 Windows 设备管理 | Microsoft Docs"
+title: "使用 Microsoft Intune 设置 Windows 设备管理"
 description: "使用 Microsoft Intune 为 Windows 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
@@ -14,10 +14,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: be2587f8ccb43632d861012416bbbca720698bb1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: cf77cb313d5a36c5e7975e70d54bf044aa2d30c8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -69,7 +69,7 @@ CNAME 资源记录必须具有以下信息：
 告诉用户如何注册其 Windows 设备以及在纳入管理之后会出现的情况。
 有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)。 还可以将用户发送到 [IT 管理员可以在我的设备上看到什么](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)。
 
-有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。
+有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](/intune/end-user-educate)。
 
 ### <a name="see-also"></a>另请参阅
 [在 Microsoft Intune 中注册设备的先决条件](prerequisites-for-enrollment.md)

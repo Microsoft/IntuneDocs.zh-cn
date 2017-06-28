@@ -1,5 +1,5 @@
 ---
-title: "公司资源访问权限问题疑难解答 | Microsoft Docs"
+title: "公司资源访问权限问题疑难解答"
 description: "本主题中的错误和状态代码可帮助你解决资源访问权限问题。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9956d92c5d1b294c4ccf04ebecd15cdb59794c90
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e440864e76e1b64e65b185606fe65bc9cb94c545
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

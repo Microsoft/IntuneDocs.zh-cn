@@ -1,5 +1,5 @@
 ---
-title: "已注册设备管理功能 | Microsoft Docs"
+title: "已注册设备管理功能"
 description: "阅读本主题以了解 Intune 如何帮助你管理注册的设备。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 364c7e1fe2bf17b0c804960c3ebaadb1cf4652a8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5fc5e6108e7e7841ed142f24f463d85273ae8a12
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/23/2017
 
 |功能|详细信息|更多信息|
 |--------------|-----------|--------------------|
-|配置策略<br><br>自定义策略| 让你可在组织中管理移动设备上多个设置和功能。 例如，你可以申请密码、限制失败尝试次数、限制屏幕锁定前的时间量、设置密码过期时间，以及阻止使用以前用过的密码。 你还可以控制硬件和软件功能的使用，例如设备的摄像头或 Web 浏览器。<br><br>在配置策略不包含你需要的设置时使用自定义策略。 对于 iOS 设备，你可以导入你从 Apple 配置工具中导出的设置。 对于其他设备，可使用开放性移动联盟统一资源标识符 (OMA-URI) 设置来在设备上配置设置和功能。/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)<br />|
+|配置策略<br><br>自定义策略| 让你可在组织中管理移动设备上多个设置和功能。 例如，你可以申请密码、限制失败尝试次数、限制屏幕锁定前的时间量、设置密码过期时间，以及阻止使用以前用过的密码。 你还可以控制硬件和软件功能的使用，例如设备的摄像头或 Web 浏览器。<br><br>在配置策略不包含你需要的设置时使用自定义策略。 对于 iOS 设备，你可以导入你从 Apple 配置工具中导出的设置。 对于其他设备，你可以使用开放移动联盟统一资源标识符 (OMA-URI) 设置配置设备上的设置和功能。|[使用 Microsoft Intune 策略管理设备上的设置和功能](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)|
 |远程擦除、远程锁定和密码重置|在设备丢失或被盗时，清除敏感数据。 例如，你可以远程锁定设备、将其还原为出厂设置或仅擦除企业数据。<br><br>你可以在用户无法访问其设备时重置密码，锁定遗失或被盗的设备，甚至擦除遗失或被盗设备的数据。|[使用远程锁定和密码重置功能帮助保护设备](/intune-classic/deploy-use/retire-devices-from-microsoft-intune-management)|
 |展台模式|允许你锁定移动设备的某些功能，如屏幕捕捉和电源开关。 此外允许您限制设备运行您指定的单个应用程序。|[Microsoft Intune 中的 iOS 配置策略设置](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
@@ -47,8 +47,8 @@ ms.lasthandoff: 05/23/2017
 |功能|详细信息|更多信息|
 |--------------|-----------|--------------------|
 |应用部署和管理|提供了一系列的工具以帮助你在移动应用的整个生命周期中对其进行管理，包括部署来自安装文件和应用商店的应用、对应用状态的详细监视以及应用删除。|[在 Microsoft Intune 中部署应用](/intune-classic/deploy-use/deploy-apps)|
-|符合和不符合要求的应用程序|允许你指定符合应用（允许用户安装的应用）的列表和非符合应用（不允许用户安装的应用的列表）。/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
-|移动应用程序管理|使用针对所有设备（无论是否由 Intune 托管）的移动应用程序管理配置应用的限制。 这可以帮助你通过限制数据的复制和粘贴、外部备份和应用程序之间的数据传输等操作来提高你公司的数据的安全性。|[在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
+|符合和不符合要求的应用程序|你可以指定符合（即允许用户安装）和不符合要求的应用程序（不允许用户安装）的列表。|[Microsoft Intune 中的 iOS 策略设置](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
+|移动应用程序管理|使用针对所有设备（无论是否由 Intune 托管）的移动应用程序管理配置应用的限制。 这可以帮助你通过限制数据的复制和粘贴、外部备份和应用程序之间的数据传输等操作来提高你公司的数据的安全性。|[在 Microsoft Intune 控制台中配置和部署移动应用程序管理策略](/intune/app-wrapper-prepare-android)|
 |iOS 移动应用配置|使用移动应用配置策略可提供用户在运行 iOS 应用时可能需要的设置。 例如，某一个应用可能要求用户指定端口号或登录信息。 这可以帮助简化应用程序的配置并减少支持呼叫次数。|[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |iOS 移动应用预配配置文件|帮助你将预配配置文件部署到即将到期的 iOS 应用。 |[使用 iOS 移动预配配置文件策略防止应用过期](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)|
 |托管浏览器|配置托管浏览器策略以控制设备用户可访问的网站。 此外，您可以将移动应用程序管理策略应用到托管浏览器。|[使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)|
@@ -59,7 +59,7 @@ ms.lasthandoff: 05/23/2017
 
 |功能|详细信息|更多信息|
 |--------------|-----------|--------------------|
-|证书配置文件|创建并部署受信任的证书配置文件和简单证书注册协议 (SCEP) 证书，它们可用于保护和验证 Wi-Fi、VPN 和电子邮件配置文件。/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
+|证书配置文件|创建和部署受信任的证书配置文件和简单证书注册协议 (SCEP) 证书，这些文件和证书可对 Wi-Fi、VPN 和电子邮件配置文件进行保护和身份验证。|[使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
 |Wi-Fi 配置文件|将无线网络设置部署到你的用户。 通过部署这些设置，你可最小化用户连接到公司网络时所需的工作。|[Microsoft Intune 中的 Wi-Fi 连接](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)|
 |电子邮件配置文件|创建电子邮件设置并将其部署到设备。 这意味着用户无需进行特殊设置，就能通过个人设备访问企业电子邮件。|[使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |VPN 配置文件|将 VPN 设置部署到用户和你的组织中的设备。 通过部署这些设置，你可以最大限度减少用户连接到公司网络资源需要进行的工作。|[Microsoft Intune 中的 VPN 连接](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune)|

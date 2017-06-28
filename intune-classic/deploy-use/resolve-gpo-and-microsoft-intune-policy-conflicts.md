@@ -1,5 +1,5 @@
 ---
-title: "解决 GPO 与 Intune 的策略冲突 | Microsoft Docs"
+title: "解决 GPO 与 Intune 之间的策略冲突"
 description: "了解如何解决组策略和 Intune 配置策略之间的冲突。"
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解决组策略对象 (GPO) 与 Microsoft Intune 之间的策略冲突
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 使用策略来帮助你管理 Windows 电脑上的设置。 例如，你可以使用策略来控制电脑上 Windows 防火墙的设置。 Intune 的许多设置都类似于你可使用 Windows 组策略配置的设置。 但是，有时可能会有两种方法互相冲突。
 
 发生冲突时，除非电脑无法登录到域，否则域级组策略优先于 Intune 策略。 在这种情况下，Intune 策略将应用于客户端电脑。

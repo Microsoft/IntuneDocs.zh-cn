@@ -1,5 +1,5 @@
 ---
-title: "适用于 Windows 设备的合规性策略设置 | Microsoft Docs"
+title: "适用于 Windows 设备的合规性策略设置"
 description: "本主题描述了可为 Windows 设备的合规性策略配置的规则和设置。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 67810c51c7a7b2ec1e1ff33c11a27a8757b2bcbd
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

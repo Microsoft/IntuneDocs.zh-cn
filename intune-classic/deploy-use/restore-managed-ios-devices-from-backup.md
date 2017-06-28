@@ -1,5 +1,5 @@
 ---
-title: "从备份还原 Intune 托管 iOS 设备 | Microsoft Docs"
+title: "从备份还原 Intune 托管 iOS 设备"
 description: "向最终用户提供有关如何在从备份还原之后重新注册其设备的指南。"
 keywords: "还原，托管，iOS"
 author: barlanmsft
@@ -15,10 +15,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 438a478be79bb4def8675856075ecedfe8290bb7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

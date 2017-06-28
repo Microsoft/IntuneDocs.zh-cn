@@ -1,5 +1,5 @@
 ---
-title: "辅助功能 | Microsoft Docs"
+title: "辅助功能"
 description: "了解 Intune 提供的更易于残障人士使用的功能。"
 keywords: 
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d5dafeecdddd0c780673b01543c077dde9e881b2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 33d9fea9c0177722d6772e33b9a343a9c1edfe5c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

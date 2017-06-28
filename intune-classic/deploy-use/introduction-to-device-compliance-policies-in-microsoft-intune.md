@@ -1,5 +1,5 @@
 ---
-title: "设备合规性策略 | Microsoft Docs"
+title: "设备合规性策略"
 description: "本主题介绍了设备合规性策略的涵义及其工作原理。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a14c9d7f0fcf6a99007380bb01f5f7bc94f0b413
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2cb4e331ff4b6e96df0e640af02f33dc88ccfe0f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

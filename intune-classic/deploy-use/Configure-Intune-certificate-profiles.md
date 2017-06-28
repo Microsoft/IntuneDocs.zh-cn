@@ -1,5 +1,5 @@
 ---
-title: "配置证书配置文件 | Microsoft Docs"
+title: "配置证书配置文件"
 description: "了解如何创建 Intune 证书配置文件。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2cd8394b520e29a8bbe405bda19e8bc4fc0efe5b
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: aaf7bf3cb05708457c57070f4a300ece987421c3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
