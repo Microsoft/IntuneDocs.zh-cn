@@ -1,5 +1,5 @@
 ---
-title: "管理公司拥有的设备 | Microsoft Docs"
+title: "管理企业自有设备"
 description: "可采用多种方法注册企业拥有的设备。这具体取决于设备的类型、其购买方式以及组织需求。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8ef5f26eced99dac547be727fc96e41c11d3a0e7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

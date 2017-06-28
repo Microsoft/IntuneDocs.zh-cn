@@ -1,5 +1,5 @@
 ---
-title: "停用设备 | Microsoft Docs"
+title: "停用设备"
 description: "Intune 支持选择性擦除和完全擦除，通过删除其策略和公司门户从 Intune 管理中删除该设备。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ ms.lasthandoff: 05/23/2017
 
 出于多种原因，可能需要停用设备：
 
--    用户以计划方式离开公司（“托管式”离开）
--    用户突然离开（被解雇、辞职等）。
--    设备丢失
--    改变设备用途（转移给其他用户、重新用于其他目的等）
+-   用户以计划方式离开公司（“托管式”离开）
+-   用户突然离开（被解雇、辞职等）。
+-   设备丢失
+-   改变设备用途（转移给其他用户、重新用于其他目的等）
 
 可以对作为移动设备进行管理的设备执行选择性擦除或完全擦除，或者可以锁定设备并重置密码。 擦除设备可释放用户的订阅，以添加其他设备。 也可以停用使用 Intune 客户端软件管理的电脑。
 

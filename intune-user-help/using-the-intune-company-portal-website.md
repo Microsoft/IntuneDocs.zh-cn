@@ -18,16 +18,16 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a4f5cbc81ed1fa7a1d1110080cc298a18463b22
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: f01d8b31f493b7103fe788aa62d37f9c73981984
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/26/2017
 
 
 ---
 
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司门户网站
-[公司门户网站](http://portal.manage.microsoft.com)是一个网页，最终用户可将其用于管理已在 Intune 中注册的计算机和设备。
+[公司门户网站](https://portal.manage.microsoft.com)是一个网页，最终用户可将其用于管理已在 Intune 中注册的计算机和设备。
 
 用户可从公司门户网站执行以下任务：
 

@@ -1,12 +1,12 @@
 ---
 title: "如何使用 Microsoft Intune 创建自定义 VPN 配置文件"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "使用自定义配置在 Intune 中创建 VPN 配置文件。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b38cbfb323ad4165e6cfc3edbc3c156e4fc1d6a4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 11da0d31a9a00364a6105006c3e75b6bb6f2cb77
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="to-create-a-custom-configuration-policy"></a>创建自定义配置策略：
 
 1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 4. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 5. 在配置文件边栏选项卡上，选择“创建配置文件”。

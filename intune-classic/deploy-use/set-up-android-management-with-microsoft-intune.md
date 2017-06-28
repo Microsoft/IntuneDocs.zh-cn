@@ -1,5 +1,5 @@
 ---
-title: "设置 Android 管理 | Microsoft Docs"
+title: "设置 Android 管理"
 description: "使用 Microsoft Intune 为 Android 和 KNOX 标准版设备启用移动设备管理 (MDM)。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 927259d2f3b3078c9fdb0f1ba3bb22a69b555ab6
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -42,7 +42,7 @@ ms.lasthandoff: 05/23/2017
     有关最终用户注册说明，请参阅[在 Intune 中注册 Android 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)。 注册过程会告知用户将出现的情况，以及 IT 管理员在其设备上可以看到和不能看到的内容。
 
     有关其他最终用户任务的信息，请参阅以下文章：
-  - [有关 Microsoft Intune 最终用户体验的资源](how-to-educate-your-end-users-about-microsoft-intune.md)
+  - [有关 Microsoft Intune 最终用户体验的资源](/intune/end-user-educate)
   - [适用于 Android 设备的最终用户指南](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 由于中国地区没有 Google Play 商店，Android 设备必须从中国的应用市场获取公司门户。 可在以下应用商店下载用于 Android 的公司门户应用：

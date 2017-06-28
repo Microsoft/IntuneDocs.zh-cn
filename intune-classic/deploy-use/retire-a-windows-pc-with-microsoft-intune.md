@@ -1,5 +1,5 @@
 ---
-title: "停用 Windows 电脑 | Microsoft Docs"
+title: "停用 Windows 电脑"
 description: "如何停用 Intune 管理的 Windows 电脑。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 30781be121782196b760f5aa163e922122480d33
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09bba1ea199b51fdd1503cb1f0a3beeb97b6aa47
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="retire-a-windows-pc"></a>停用 Windows 电脑
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 使用以下步骤停用作为电脑管理的桌面，通过在桌面上运行 Intune 软件客户端实现。 停用一台电脑时，会从 Intune 管理中将其删除。 无法从 Intune 对电脑恢复出厂设置来将其设置回原始出厂设置。
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含要停用的电脑的另一个组）。

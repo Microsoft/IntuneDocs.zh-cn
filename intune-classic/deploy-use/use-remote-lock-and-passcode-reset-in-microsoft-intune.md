@@ -1,5 +1,5 @@
 ---
-title: "远程锁定和密码重置 | Microsoft Docs"
+title: "远程锁定和密码重置"
 description: "Intune 提供远程锁定和密码重置功能。"
 keywords: 
 author: NathBarn
@@ -14,10 +14,10 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e7cc218f34173443057eaa628ca8c7e4de8e3507
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f43c2fb3c2aaff43aaef8cb033185c8c517d83a0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>使用远程锁定和密码重置功能帮助保护设备

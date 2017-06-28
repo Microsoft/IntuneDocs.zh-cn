@@ -18,10 +18,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1727e8b8fcb248a66842f34e7084c5d461f3eb10
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/26/2017
 
 
 ---
@@ -67,5 +67,5 @@ ms.lasthandoff: 05/23/2017
 
 -   处于漫游模式下时，在设备上启用或禁用自动文件同步。 如果允许自动文件同步，则可能会产生漫游费用。
 
-如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
 

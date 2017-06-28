@@ -1,5 +1,5 @@
 ---
-title: "管理 Windows 电脑的用户设备链接 | Microsoft Docs"
+title: "管理 Windows 电脑的用户设备链接"
 description: "如何将用户链接到 Intune 管理的 Windows 电脑。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44edcb211852224e9e9e9a82dd2d097d84b49b74
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9641c40229be52066a97389584e55f2f95bc286d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="manage-user-device-linking-for-windows-pcs"></a>管理 Windows 电脑的用户设备链接
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 
 
 必须将用户链接到计算机，然后才能将软件部署到用户。 可将某个用户链接到多台计算机，但每台计算机只能链接到一个用户。 用户会自动链接到他们使用公司门户在 Intune 中注册的任何计算机。

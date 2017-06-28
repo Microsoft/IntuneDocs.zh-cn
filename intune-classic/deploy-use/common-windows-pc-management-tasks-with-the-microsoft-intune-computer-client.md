@@ -1,5 +1,5 @@
 ---
-title: "常见 Windows 电脑管理任务 | Microsoft Docs"
+title: "常见 Windows PC 管理任务"
 description: "了解运行 Intune 软件客户端的 Windows 电脑的管理方法。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 548a4b84fe662d5634e2b82363f2ab3d86e48849
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 软件客户端的常见 Windows 电脑管理任务
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 本主题列出了通过安装 Intune 软件客户端，管理作为电脑管理的桌面可执行的任务。 本主题不涉及将电脑作为移动设备进行管理。 如果尚未在电脑上安装客户端，请参阅[安装 Intune 软件客户端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
 

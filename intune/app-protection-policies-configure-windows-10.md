@@ -1,12 +1,12 @@
 ---
-title: "准备好配置面向 Windows 10 的应用保护策略 | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "准备好配置面向 Windows 10 的应用保护策略"
+titleSuffix: Intune on Azure
 description: "在 Azure AD 中设置移动应用程序管理 (MAM) 提供程序"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e179f72e4cd99a8cd1bdc017e9965f7d1eb608bf
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: bf56d3a80f0d167baa95e9dfdb20d08e02590984
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>准备好配置面向 Windows 10 的应用保护策略
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 创建并使用 Windows 10 应用保护策略前，必须在 Azure AD 中设置 MAM 提供程序，以启用面向 Windows 10 的移动应用程序管理 (MAM)。 通过 Intune 新建 Windows 信息保护 (WIP) 策略时可以通过此配置定义注册状态。
 
@@ -59,5 +59,5 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="next-steps"></a>后续步骤
 
-[创建 WIP 应用保护策略](https://docs.microsoft.comwindows-information-protection-policy-create.md)
+[创建 WIP 应用保护策略](windows-information-protection-policy-create.md)
 

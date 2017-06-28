@@ -1,5 +1,5 @@
 ---
-title: "如何获取支持 | Microsoft Docs"
+title: "如何获得支持"
 description: "对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。"
 keywords: 
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1fd8637dceb134ac1b69be77ee7c2a3f3e29fb54
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d58c4ead1edf85480a43a9ceec0ed8a36af79673
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -111,7 +111,7 @@ Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免
 3. 查看建议的联机资源，或选择“呼叫服务”获取 Microsoft 技术支持的呼叫服务。
 
 ## <a name="get-phone-support"></a>获取电话支持
-请参阅[联系 Microsoft Intune 的辅助电话支持](contact-assisted-phone-support-for-microsoft-intune.md)了解各个国家和地区的支持电话号码、支持时间和各个地区所支持的语言。
+请参阅[联系 Microsoft Intune 的辅助电话支持](contact-assisted-phone-support-for-microsoft-intune.md)了解各个国家/地区的支持电话号码、支持时间和各个地区所支持的语言。
 
 ## <a name="track-your-support-requests"></a>跟踪支持请求
 1.  使用 Intune 管理员凭据登录到 [Office 365 管理中心](https://portal.office.com)。
