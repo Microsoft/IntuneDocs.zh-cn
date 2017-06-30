@@ -1,5 +1,5 @@
 ---
-title: "iOS 策略设置 | Microsoft Docs"
+title: "iOS 策略设置"
 description: "创建策略，该策略控制通过 Intune 管理的 iOS 设备上的设置及功能。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -61,7 +61,7 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**“记住密码历史记录”** – **“防止重用以前的密码”**|指定设备记住的以前用过的密码数目。|
 |**屏幕关闭前处于非活动状态的分钟数**<sup>1</sup>|指定设备显示屏关闭之前的分钟数。|
 |**允许指纹解锁**|允许使用指纹解锁设备。|
-<sup>1</sup>对于 iOS 设备，配置“屏幕关闭前处于非活动状态的分钟数”和“需要提供密码之前处于非活动状态的分钟数”设置时，它们会按顺序应用。 例如，如果你设置的两个设置的值均为“5”  分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
+<sup>1</sup>对于 iOS 设备，配置“屏幕关闭前处于非活动状态的分钟数”和“需要提供密码之前处于非活动状态的分钟数”设置时，它们会按顺序应用。 例如，如果你设置的两个设置的值均为“5”分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
 
 ### <a name="system-settings"></a>系统设置
 所有设置均适用于 iOS 8.0 及更高版本。
@@ -88,7 +88,7 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许托管应用将数据同步到 iCloud**|允许你使用 Intune 管理的应用将数据同步到用户的 iCloud 帐户。|
 |**允许 Handoff 在另一台设备上继续活动**|允许用户在一台 iOS 或 Mac OS X 设备上继续进行在另一台 iOS 设备上开始的工作。|
 |**允许 iCloud 照片共享**|将其设置为“否”以在设备上禁用“iCloud 照片共享”。|
-|**允许 iCloud 照片库**|如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。    如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。|
+|**允许 iCloud 照片库**|如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。   如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。|
 
 ### <a name="application-settings-for-the-browser"></a>浏览器的应用程序设置
 所有设置均适用于 iOS 8.0 及更高版本。
@@ -209,7 +209,7 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 
 ### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>相容和不相容应用的参考信息
 
-使用“不相容应用报告”  查看允许和阻止的应用的相容性。
+使用“不相容应用报告”查看允许和阻止的应用的相容性。
 
 ##### <a name="to-run-the-noncompliant-apps-report"></a>运行不相容应用报告
 
@@ -218,7 +218,7 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 2.  选择你想要检查的设备组，选择要检查相容应用还是不相容应用，或是同时检查两者，然后选择“查看报告”。
 
 #### <a name="how-to-specify-urls-to-app-stores"></a>如何指定应用商店的 URL
-要在相容和不相容应用列表中或在 **“选择一个在设备处于展台模式时能够运行的托管应用”** 选项(仅限 iOS)中指定一个应用 URL，请使用以下格式:
+要在相容和不相容应用列表中或在“选择一个在设备处于展台模式时能够运行的托管应用”选项(仅限 iOS)中指定一个应用 URL，请使用以下格式:
 
 1. 使用搜索引擎，查找你想在 iTunes 应用商店中使用的应用并打开该应用的页面。
 

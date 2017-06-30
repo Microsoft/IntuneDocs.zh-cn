@@ -1,5 +1,5 @@
 ---
-title: "使用客户端软件管理电脑 | Microsoft Docs"
+title: "使用客户端软件管理 PC"
 description: "安装 Intune 客户端软件来管理 Windows 电脑。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 提供了可供组织管理移动设备的全面的解决方案。 Intune 可以使用 Windows 10 操作系统的内置新式设备管理功能将 Windows 电脑作为移动设备进行管理。 Intune 也可通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理，从而满足组织的管理需求。 此管理方法使用旧版 Windows 操作系统中的传统计算机管理功能。
 
@@ -79,7 +81,7 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 
 在使用 Intune 客户端软件管理 Windows 电脑时，只能使用“计算机管理”部分下显示的策略。
 
-Intune 使用策略管理 Windows 电脑，类似于 Windows Server Active Directory 域服务 (AD DS) 组策略对象 (GPO) 的工作原理。如果使用 Intune 管理加入 Active Directory 域的计算机，请确保 Intune 策略与组织中使用的其他 GPO /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) 无冲突。 请参阅[组策略入门](https://technet.microsoft.com/library/hh147307.aspx)了解详细信息。
+Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对象 (GPO) 执行方式类似的策略来管理 Windows 电脑。 如果使用 Intune 管理 Active Directory 加入域的计算机，请[确保 Intune 策略不与组织中使用的其他 GPO 冲突](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts)。 请参阅[组策略入门](https://technet.microsoft.com/library/hh147307.aspx)了解详细信息。
 
   ![为新的 Windows 电脑策略选择模板](../media/select-template-for-pc-policy.png)
 

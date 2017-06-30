@@ -1,7 +1,7 @@
 ---
 title: "配置 Intune 设备限制设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Intune 来配置你管理的设备上的设置和功能。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune 配置你管理的设备上的设置和功能。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 600ff92bf1b53800712fc2e77fef7158ab765970
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置设备限制设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 设备限制让你可以跨众多类别控制你所管理的各种设置和功能，包括安全性、浏览器、硬件和数据共享设置。 例如，可以创建一个设备限制配置文件，用于阻止 iOS 设备用户访问设备相机。
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>创建包含设备限制设置的设备配置文件
 
 1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“配置设备”。
 2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。

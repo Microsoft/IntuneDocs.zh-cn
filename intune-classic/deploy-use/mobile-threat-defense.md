@@ -1,5 +1,5 @@
 ---
-title: "Intune 移动威胁防御 | Microsoft Docs"
+title: "Intune 移动威胁防御"
 description: "根据设备风险，保护对公司资源的访问。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56cd18e1a5556178d951ec47c6e894d8fc2e6f86
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 85f3ed28b021c0aa2b00f128297eb0d99cf0bc1c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

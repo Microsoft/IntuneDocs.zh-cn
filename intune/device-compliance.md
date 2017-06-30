@@ -1,7 +1,7 @@
 ---
-title: "设备合规性"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：通过本主题了解 Microsoft Intune 中的设备合规性"
+title: "设备符合性"
+titleSuffix: Intune on Azure
+description: "通过本主题了解 Microsoft Intune 中的设备符合性"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,17 +16,17 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>什么是 Intune Azure 预览版中的设备合规性？
+# <a name="what-is-device-compliance-in-intune"></a>什么是 Intune 中的设备符合性？
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 中的设备符合性策略定义设备必须遵从的规则和设置，以便将设备视为符合 Intune 和 EMS 条件访问策略。 也可使用设备符合性策略来监视和修正设备的符合性问题。 
 
@@ -79,7 +79,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 将合规性策略部署到用户。 将合规性策略部署到用户后，会对用户设备检查合规性。 若要了解策略部署完成后，移动设备需要多长时间获取策略，请参阅“管理设备上的设置和功能”。
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Intune 经典管理员控制台与Intune Azure 预览门户
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Intune 经典管理员控制台与Azure 门户上的 Intune
 
 如果你一直使用 Intune 经典管理控制台，请注意以下差异，以帮助转换到 Azure 门户中的新设备符合性策略工作流：
 
@@ -89,7 +89,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>从 Intune 经典控制台迁移到 Intune Azure 预览门户
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>在 Azure 门户上从 Intune 经典控制台迁移到 Intune
 
 在 [Intune 经典控制台](https://manage.microsoft.com)中创建的设备符合性策略不会出现在新的 [Intune Azure 门户](https://portal.azure.com)中。 但是，它们将仍面向用户并且可以通过 Intune 经典控制台进行管理。
 

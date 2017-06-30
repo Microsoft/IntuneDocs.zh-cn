@@ -1,7 +1,7 @@
 ---
 title: "创建和分配本地 Exchange 条件访问策略"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：如何在 Intune 中配置 Exchange 内部部署条件性访问和旧版 Exchange Online Dedicated"
+titleSuffix: Intune on Azure
+description: "如何在 Intune 中配置 Exchange 内部部署条件性访问和旧版 Exchange Online Dedicated"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,17 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 61434f104ccba9e1d37a4845e38b75ac858bce63
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>如何在 Microsoft Intune Azure 预览版中创建和分配 Exchange 本地和旧版 Exchange Online Dedicated 的条件访问策略
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建和分配 Exchange 本地和旧版 Exchange Online Dedicated 的条件访问策略
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主题介绍根据设备合规性配置 Exchange 内部部署的条件性访问的过程。
 
@@ -93,8 +93,8 @@ Windows 8.1 和更高版本上的本机**邮件**应用程序（向 Intune 注�
 
 8. 在“Exchange 内部部署访问”边栏选项卡上，选择“是”以启用 Exchange 内部部署访问控制。
 
-      > [!NOTE]
-      > 尚未配置 Exchange Active Sync 本地连接器时，将禁用此选项。  启用 Exchange 内部部署的条件性访问之前，必须首先安装并配置此连接器。 有关详细信息，请参阅[安装 Intune 本地 Exchange Connector](exchange-connector-install.md)
+    > [!NOTE]
+    > 尚未配置 Exchange Active Sync 本地连接器时，将禁用此选项。  启用 Exchange 内部部署的条件性访问之前，必须首先安装并配置此连接器。 有关详细信息，请参阅[安装 Intune 本地 Exchange Connector](exchange-connector-install.md)
 
 9. 在“分配”下，选择“包含的组”。  使用应该应用条件性访问的安全用户组。 这需要用户在 Intune 中注册其设备，并满足合规性配置文件。
 
@@ -114,12 +114,12 @@ Windows 8.1 和更高版本上的本机**邮件**应用程序（向 Intune 注�
 
 15. 在“本地”边栏选项卡上，单击“保存”保存条件性访问策略。
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>在 Intune Azure 预览版中创建 Azure AD 条件访问策略
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>在 Intune 中创建 Azure AD 条件性访问策略
 
-从 Intune 1704 版本开始，管理员可以方便地从 Intune Azure 预览版中创建 Azure AD 条件访问策略，从而不必在 Azure 和 Intune 工作负荷之间进行切换。
+从 Intune 1704 版本开始，管理员可以方便地从 Intune Azure 门户中创建 Azure AD 条件性访问策略，而不再需要在 Azure 和 Intune 工作负荷之间进行切换。
 
 > [!IMPORTANT]
-> 需要具备 Azure AD Premium 许可证才能从 Intune Azure 预览门户创建 Azure AD 条件访问策略。
+> 需要具备 Azure AD Premium 许可证才能从 Intune Azure 门户创建 Azure AD 条件性访问策略。
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>创建 Azure AD 条件访问策略
 

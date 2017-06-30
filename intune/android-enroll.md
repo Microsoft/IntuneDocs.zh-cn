@@ -1,23 +1,32 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>必需元数据
-
-title: 在 Intune 中注册所有 Android 设备 titleSuffix: Intune Azure 预览版 description: Intune Azure 预览版：了解如何在 Intune Azure 预览版中注册 Android 设备。
-keywords: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04/12/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>可选元数据
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>受众：
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
+---
+title: "在 Intune 中注册 Android 设备"
+titleSuffix: Intune on Azure
+description: "了解如何在 Intune 中注册 Android 设备。"
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 04/12/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
 ms.custom: intune-azure
+ms.translationtype: Human Translation
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6920a17d1be4ffa9ee83d2da0af6ba69996ae028
+ms.contentlocale: zh-cn
+ms.lasthandoff: 06/08/2017
+
 
 ---
 
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 可借助 Intune 以 Intune 管理员身份管理 Android 设备，包括 Samsung Knox 标准版设备。 也可以管理 [Android for Work 设备](#enable-enrollment-of-android-for-work-devices)上的工作配置文件。
 
@@ -56,7 +65,7 @@ ms.custom: intune-azure
    在 Google 的登录页上，输入将与此租户的所有 Android for Work 管理任务相关联的 Google 帐户。 这是在组织的 IT 管理员之间共享的 Google 帐户，用于在 Play for Work 控制台中管理和发布应用。
 
     3. **提供组织详细信息**<br>
-   为“组织名称”提供你公司的名称。 对于**企业移动性管理 (EMM) 提供程序**，应显示 Microsoft Intune。 同意 Android for Work 协议，然后单击“确认”。 你的请求会进行处理。
+   为“组织名称”提供你公司的名称。 对于企业移动性管理 (EMM) 提供程序，应显示 Microsoft Intune。 同意 Android for Work 协议，然后单击“确认”。 你的请求会进行处理。
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>指定 Android for Work 注册设置
    Android for Work 仅在特定 Android 设备上受支持。 请参阅 Google 的 [Android for Work 要求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")。 支持 Android for Work 的任何设备也支持传统的 Android 管理。  Intune 允许你指定应如何管理支持 Android for Work 的设备：
@@ -78,7 +87,7 @@ After configuring the Android for Work binding and settings, you can do the foll
 
 有关其他最终用户任务的信息，请参阅以下文章：
 
-- [有关 Microsoft Intune 最终用户体验的资源](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [有关 Microsoft Intune 最终用户体验的资源](end-user-educate.md)
 - [通过 Intune 使用 Android 设备](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>取消绑定 Android for Work 管理帐户
@@ -92,3 +101,4 @@ After configuring the Android for Work binding and settings, you can do the foll
 
 2. **同意删除 Android for Work 绑定**<br>
   单击“是”可删除绑定并从 Intune 取消注册所有 Android for Work 设备。
+

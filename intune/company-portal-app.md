@@ -1,7 +1,7 @@
 ---
 title: "如何配置公司门户应用"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何将特定于公司的品牌应用到 Intune 公司门户应用。 "
+titleSuffix: Intune on Azure
+description: "了解如何将特定于公司的品牌应用到 Intune 公司门户应用。 &quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8f68fef45f42df9a3ef11532749d91c632196781
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5ea6c6ce480f327c5b1497a8dc61faf56724442c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 在 Microsoft Intune 公司门户中，用户可以访问公司数据和执行常见任务，比如注册设备、安装应用，以及查找信息以从 IT 部门获得帮助。
 

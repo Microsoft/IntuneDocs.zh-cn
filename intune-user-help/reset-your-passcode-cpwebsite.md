@@ -35,13 +35,13 @@ ms.lasthandoff: 05/23/2017
 
 重置密码：
 
-1.    在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
+1.  在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
 2. 在“我的设备”页上，选择想要重置密码的设备名称。
 
   ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    设备将在弹出窗口中打开。 选择“重置密码”按钮。
+3.  设备将在弹出窗口中打开。 选择“重置密码”按钮。
 
     ![公司门户网站上已选设备的所有选项，包括重命名、删除、重置设备、重置密码和远程锁定。 ](./media/iwp-screen-with-all-options.png)
 

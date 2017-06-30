@@ -1,5 +1,5 @@
 ---
-title: "适用于 iOS 设备的 Apple DEP 管理 | Microsoft Docs"
+title: "适用于 iOS 设备的 Apple DEP 管理"
 description: "部署注册配置文件，该配置文件以“无线”方式注册通过 iOS 设备注册计划 (DEP) 购买的 iOS 设备以管理 Apple 设备。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d5facd519f53ea8534445ad95ae9221cf537b50a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -81,8 +81,8 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
    - **用户关联提示**：必须在初始设置过程中将设备与某个用户相关联，然后才能以该用户的身份允许此设备访问公司数据和电子邮件。 应该对属于用户且需要使用公司门户（即需要安装应用）的 DEP 托管设备设置**用户关联**。 在具有用户关联的 DEP 设备上注册期间，多重身份验证 (MFA) 不起作用。 注册之后，MFA 在这些设备上会正常运行。 注册 DEP 设备时，需要在首次登录时更改密码的新用户不会获得提示。 此外，在 DEP 注册过程中，密码已过期的用户不会获得重置密码的提示，必须使用其他设备重置密码。
 
-       >[!NOTE]
-       >具有用户关联的 DEP 要求启用 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints)以请求用户令牌。 [详细了解 WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+    >[!NOTE]
+    >具有用户关联的 DEP 要求启用 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints)以请求用户令牌。 [详细了解 WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
    - **没有用户关联**：该设备不与用户关联。 将此隶属关系用于无需访问本地用户数据即可执行任务的设备。 需要用户隶属关系的应用（包括用于安装业务线应用的公司门户应用）无法运行。
 

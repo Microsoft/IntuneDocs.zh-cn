@@ -1,12 +1,12 @@
 ---
-title: "什么是应用管理 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：通过本主题了解使用 Microsoft Intune 进行应用管理的基础知识"
+title: "什么是应用管理"
+titleSuffix: Intune on Azure
+description: "通过本主题了解使用 Microsoft Intune 进行应用管理的基础知识"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -27,13 +27,13 @@ ms.lasthandoff: 05/23/2017
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-作为 IT 管理员，很可能需要负责确保最终用户有权访问完成其工作所需的应用。 这个任务很有挑战性，因为：
+作为 IT 管理员，需要负责确保最终用户有权访问完成其工作所需的应用。 这个任务很有挑战性，因为：
 - 有众多的设备平台和应用类型。
-- 可能不但需要管理公司设备上的应用，还需要管理用户自有设备上的应用。
-- 你需要做到所有这些事，同时还要确保你的网络和数据安全。 
+- 可能需要管理公司设备和用户自有设备上的应用。
+- 你必须确保网络和数据受到保护。
 
 此外，你可能还会想在未注册 Intune 的设备上分配和管理应用。
 
@@ -63,24 +63,24 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
 <sup>2</sup>仅适用于由 Intune 管理的设备。
 
-
 ## <a name="how-to-get-started"></a>如何开始？
 
 可在“移动应用”工作负荷中找到大部分与应用相关的内容，并可通过以下步骤进行访问：
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“移动应用”。
+3. 在 Intune 边栏选项卡上，选择“移动应用”。
 
     ![移动应用工作负荷](./media/apps-workload.png)
 
 ### <a name="manage"></a>管理计算机上的
-- **应用** - 可在此处添加、分配和监视大多数应用。 
+- **应用** - 可在此节点处添加、分配和监视大多数应用。
     - [添加应用](apps-add.md)
     - [分配应用](apps-deploy.md)
     - [监视应用](apps-monitor.md)
-- **应用配置策略** - 应用配置策略可提供用户在运行应用时可能需要的设置。 有关详细信息，请参阅：
-    - [应用配置策略](app-configuration-policies.md)
+- **应用配置策略** - 应用配置策略可提供用户在运行应用时可能需要的设置。
+    - [iOS 应用配置策略](app-configuration-policies-use-ios.md)
+    - [Android 应用配置策略](app-configuration-policies-use-android.md)
 - **应用保护策略** - 可将设置与应用关联，从而帮助保护其使用的公司数据。 例如，可以限制某应用与其他应用进行通信的功能，或要求用户输入 PIN 才能访问公司应用。
     - [应用保护策略](app-protection-policies.md)
 - **应用选择性擦除** - 仅从所选用户设备中删除公司数据。
@@ -100,8 +100,8 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **适用于企业的 Windows 应用商店** - 设置与适用于企业的 Windows 应用商店的集成。 执行此操作后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。 
+- **适用于企业的 Windows 应用商店** - 设置与适用于企业的 Windows 应用商店的集成。 然后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。
     - [适用于企业批量采购应用的 Windows 应用商店](windows-store-for-business.md)
-- **公司门户品牌** - 自定义公司门户，向其提供公司品牌。 
+- **公司门户品牌** - 自定义公司门户，向其提供公司品牌。
     - [公司门户配置](company-portal-app.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "保护发送到 Exchange Online 的电子邮件 | Microsoft Docs"
+title: "保护发送到 Exchange Online 的电子邮件"
 description: "使用条件访问保护和控制对 Exchange Online 的公司电子邮件的访问。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c428d7f01872c9f0968bb69dc4dc1886a7c1828b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -210,7 +210,7 @@ ms.lasthandoff: 05/31/2017
         这要求用于访问 **Exchange Online** 的任何设备已在 Intune 中注册且符合策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果目前 Intune 不支持该平台，则会阻止对 **Exchange Online** 的访问。
 
         选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需已注册并合规，以下各项除外：
-        *    Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
+        *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
         * 不受支持的平台，如 Mac OS。 但是，仍将阻止使用来自这些平台的新式验证的应用。
 
     -   **特定平台**

@@ -1,7 +1,7 @@
 ---
 title: "注册 30 天免费试用版"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：如何在 Azure 上注册 Intune。"
+titleSuffix: Intune on Azure
+description: "如何在 Azure 上注册 Intune。"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -15,19 +15,19 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3be43e12abc1cf90da3584450ddd56ab63bdfac1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b74482d92ba40fafb6c98793fd9b218b2a3278f7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal-preview"></a>注册 Azure 门户预览的 Microsoft Intune 免费试用版
+# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal"></a>注册 Azure 门户的 Microsoft Intune 免费试用版
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-本文将指导你注册 Azure 门户预览的 Intune 独立试用版。 <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
+本文将指导你注册 Azure 门户的 Intune 独立试用版。 <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
 
 <!--- ## Assumptions
 This sign-up article and the evaluation guide assume you are using the trial for evaluation purposes only and intend to start with a clean environment when you subscribe.
@@ -38,15 +38,15 @@ You can do everything in the trial version that you can do in a subscription ver
 
 <!--- ## Sign up for your trial--->
 1. 请访问 [Intune 注册](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)页面并填写表单，注册试用订阅。
-
- <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article assumes that you are not using such an account.---><br/> ![注册页的图像](./media/1-clicking-try.png)
+account-sign-up.md
+ <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](account-sign-up.md) instead. However, this article assumes that you are not using such an account.---><br/> ![注册页的图像](./media/1-clicking-try.png)
 
  > [!TIP]
 > 如果大多数 IT 操作和用户都位于不同于你所在地的区域，则建议在“公司位于哪里？”下选择该区域设置。
 
-2. 注册过程结束时，将收到一条包含新帐户信息的消息。 <br/> ![帐户信息的图像](./media/2-end-of-sign-up-process.png) <br/>此时如果单击“准备就绪”，则将转到 Office 365 管理中心，可以在此将用户添加到测试环境。 <br/><br/>但是如果想直接进入 Intune Azure 门户预览版，请打开新的浏览器窗口，然后在地址栏中输入 **https://portal.azure.com**。 将转到 Azure 登录页，可以在此使用获得的凭据进行登录。 任何时候想登录 Intune 试用版时都请使用该地址。 <br/> ![Azure 门户登录页的图像](./media/azure-portal-signin.png)
+2. 注册过程结束时，将收到一条包含新帐户信息的消息。 <br/> ![帐户信息的图像](./media/2-end-of-sign-up-process.png) <br/>此时如果单击“准备就绪”，则将转到 Office 365 管理中心，可以在此将用户添加到测试环境。 <br/><br/>但是，如果想直接进入 Intune Azure 门户，请打开一个新的浏览器窗口，然后在地址栏中输入 **https://portal.azure.com**。 将转到 Azure 登录页，可以在此使用获得的凭据进行登录。 任何时候想登录 Intune 试用版时都请使用该地址。 <br/> ![Azure 门户登录页的图像](./media/azure-portal-signin.png)
 
-第一次登录到 Intune Azure 预览版 时，可能不会在 Azure 仪表板上看到 Intune。 将 Intune 服务添加到 Azure 的仪表板：
+第一次登录到 Intune Azure 门户时，可能不会在 Azure 仪表板上看到 Intune。 将 Intune 服务添加到 Azure 的仪表板：
 1. 在仪表板左侧的 Azure 服务列表中选择“更多服务 >”，并在搜索框中输入“Intune”。
 2. 从该列表中选择“Intune”，然后选择星号将服务添加到服务列表中。<br/> ![从服务列表中选择 Intune 这一操作的图像](./media/azure-add-intune1.png)
 3. 然后在服务列表中选择“Intune”以打开 Intune 仪表板。
@@ -57,7 +57,7 @@ You can do everything in the trial version that you can do in a subscription ver
 <!--- ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
 
-In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#Next-steps) section of this article.
+In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](https://docs.microsoft.comusers-permissions-add.md) and in the [Next steps](#Next-steps) section of this article.
 
 ### Add an individual user
 1. Choose either of the options to add a use to open a form that allows you to create a user. Only the items starred with an asterisk (\*) are required.
@@ -111,8 +111,7 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 
 ![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)--->
 
-<!---### Intune Azure preview--->
-将有三个门户用于 Intune Azure 预览：
+将有三个门户用于 Intune Azure 门户：
 - Azure 中的 Intune 仪表板 ([portal.azure.com](https://portal.azure.com))，在此可以了解 [Azure 门户中的 Intune 功能](what-is-intune.md)。
 - Office 365 管理中心 ([portal.office.com](https://portal.office.com))，可以在此添加和管理用户（如果未使用 Azure Active Directory 来达到此目的）。 还可以管理帐户的帐单和支持等其他方面。
 - 经典 Intune 管理控制台 ([manage.microsoft.com](https://manage.microsoft.com))，可以在此了解尚未添加到 Azure 的功能。
@@ -121,7 +120,7 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 
 可通过选择“打开经典 Intune 门户”磁贴，从仪表板转到经典 Intune 管理控制台。
 
-若要返回 Intune Azure 预览版，请在浏览器地址栏中输入 https://portal.azure.com，然后再次从服务列表选择“Intune”。
+若要返回 Intune Azure 门户，请在浏览器地址栏中输入 https://portal.azure.com，然后再次从服务列表选择 Intune。
 
  ![Intune 仪表板图像](./media/intune-azure-dashboard.png)
 
@@ -136,8 +135,8 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 
 ## <a name="next-steps"></a>后续步骤
 
-### <a name="intune-azure-preview"></a>Intune Azure 预览
-了解有关 [Azure 门户预览版中的 Intune](what-is-intune.md) 的详细信息
+### <a name="intune-on-azure"></a>Azure 上的 Intune
+了解有关 [Azure 门户中的 Intune](what-is-intune.md) 的详细信息
 ### <a name="classic-intune"></a>经典 Intune
 评估方案：[在 Microsoft Intune 中评估移动设备管理](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 

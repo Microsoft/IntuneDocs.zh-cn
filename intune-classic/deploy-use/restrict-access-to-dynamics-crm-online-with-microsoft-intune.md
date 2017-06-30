@@ -1,5 +1,5 @@
 ---
-title: "保护 Dynamics CRM Online | Microsoft Docs"
+title: "保护 Dynamics CRM Online"
 description: "使用条件访问保护和控制对 Dynamics CRM Online 的访问。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: da92d75cfafa2a605ed8606ba7c8f3ec18dc6063
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -84,8 +84,8 @@ ms.lasthandoff: 05/23/2017
   * **iOS**
   * **Android**
 4.  在“目标组”下，选择“修改”以选择将应用策略的 Azure Active Directory 安全组。 你可以选择将此应用于所有用户或仅针对选择的用户组。
-5.    或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
-6.    完成后，选择“保存”。
+5.  或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
+6.  完成后，选择“保存”。
 
 现在你已配置了Dynamics CRM 的条件访问。 条件性访问策略无需部署，其立即生效。
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>监视遵从性和条件性访问策略

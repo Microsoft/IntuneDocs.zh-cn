@@ -1,5 +1,5 @@
 ---
-title: "选择如何管理设备 | Microsoft Docs"
+title: "选择如何管理设备"
 description: "了解让你可以注册和管理设备的各种方法。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dfd79323c7db53cb3291f729878bcd1d36f93fe7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -48,8 +48,8 @@ ms.lasthandoff: 05/23/2017
 - Endpoint Protection 和 Windows 防火墙
 - 使用 TeamViewer 软件向用户提供远程协助
 
-有关每种方法提供的管理功能的详细列表，请参阅[移动设备管理功能](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)。
-要了解 Intune 支持的设备和电脑，请参阅[支持的移动设备和计算机](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices)。
+有关每种方法提供的管理功能的详细列表，请参阅[移动设备管理/intune/supported-devices-browserssoft-intune)。
+要了解 Intune 支持的设备和电脑，请参阅[支持的移动设备和计算机](/intune/supported-devices-browsers#intune-supported-devices)。
 
 ## <a name="next-steps"></a>后续步骤
 

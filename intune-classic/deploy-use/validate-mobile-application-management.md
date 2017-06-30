@@ -1,5 +1,5 @@
 ---
-title: "验证 MAM 设置 | Microsoft Docs"
+title: "验证 MAM 设置"
 description: "本主题介绍如何测试和验证是否已正确设置 MAM 策略并按预期方式工作。"
 keywords: 
 author: andredm7
@@ -14,10 +14,10 @@ ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -50,7 +50,7 @@ ms.lasthandoff: 05/23/2017
 ### <a name="what-to-do"></a>要执行的操作
 下面是要根据用户状态采取的操作：
 
-- 如果用户未获得 MAM 授权，则按“[管理 Intune 许可证](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md)”中所述向用户分配 Intune 许可证。
+- 如果用户未获得 MAM 授权，则按“[管理 Intune 许可证](/intune/setup-steps)”中所述向用户分配 Intune 许可证。
 - 如果用户未获得 O365 授权，则为该用户获取许可证。
 - 如果用户的应用被列为“**未签入**”，请检查是否已为该应用正确配置 MAM 策略。
 - 确保这些条件适用于要应用 MAM 策略的所有用户。

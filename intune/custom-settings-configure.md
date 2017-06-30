@@ -1,12 +1,12 @@
 ---
 title: "如何配置 Intune 自定义设备设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Intune 来配置你管理的设备上的自定义设置。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune 配置你所管理设备上的自定义设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 40a37a02ac49a74e3f715b0e2191868ecf2e264b
+ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
+ms.openlocfilehash: 769c566c7ebb91743fc0f18ebf8f3e76377ca847
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/12/2017
 
 
 ---
 
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置自定义设备设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="when-to-use-custom-settings"></a>何时使用自定义设置
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-custom-settings"></a>创建包含自定义设置的设备配置文件
 
 1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
@@ -53,7 +53,7 @@ ms.lasthandoff: 05/23/2017
 7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
     - [Android 设置](custom-settings-android.md)
     - [iOS 设置](custom-settings-ios.md)
-    - [macOS 设置](custom settings-macos.md)
+    - [macOS 设置](custom-settings-macos.md)
     - [Windows Phone 8.1 设置](custom-settings-windows-phone-8-1.md)
     - [Windows 10 设置](custom-settings-windows-10.md)
     - [Android for Work 设置](custom-settings-android-for-work.md)

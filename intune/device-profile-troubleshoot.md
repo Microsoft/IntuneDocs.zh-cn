@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Intune 中的设备配置文件疑难解答 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：如果遇到问题无法解决，请使用本主题来解决 Intune 设备配置文件的问题。"
+title: "Microsoft Intune 中的设备配置文件疑难解答"
+titleSuffix: Intune on Azure
+description: "如果遇到困扰，请使用此主题来帮助解决 Intune 设备配置文件相关的问题。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f3586c4cbe37c44cc289ba3ea47bf127c150d35
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Microsoft Intune 中的设备配置文件疑难解答
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主题中的信息可用于帮助解决与 Intune 设备配置文件相关的常见问题。
 
@@ -79,7 +79,7 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>当配置文件被删除，或不再适用时，会发生什么情况？
 当你删除某个配置文件，或从分配有配置文件的组中删除设备时，该配置文件和设置将会根据下表从设备中删除。
 
-### <a name="enrolled-devices"></a>“注册的设备”
+### <a name="enrolled-devices"></a>注册的设备
 
 - Wi-Fi、VPN、证书和电子邮件配置文件：这些配置文件会从所有支持的已注册设备中删除。
 - 所有其他配置文件类型：
@@ -117,11 +117,11 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
         - 允许漫游时自动同步
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>我更改了设备限制配置文件，但更改尚未生效
-Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”  设置为 8，然后尝试将其减少到 4。 已向设备应用更严格的配置文件。
+Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”设置为 8，然后尝试将其减少到 4。 已向设备应用更严格的配置文件。
 
 如果要将配置文件更改为安全级别较低的值，可能需要重置安全策略，具体视设备平台而定。
-例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”栏并选择“设置”&gt;“控制面板”。  选择“用户帐户”  小程序。
-在左侧导航菜单底部有一个“重置安全策略”  链接。 选中它，然后选择**重置策略**按钮。
+例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”栏并选择“设置”&gt;“控制面板”。  选择“用户帐户”小程序。
+在左侧导航菜单底部有一个“重置安全策略”  链接。 选中它，然后选择“重置策略”按钮。
 对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS），可能需要将其停用并重新注册回服务，这样才能应用限制较少的配置文件。
 
 <!--- ## Status codes for MDM managed Windows devices

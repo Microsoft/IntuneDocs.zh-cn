@@ -1,7 +1,7 @@
 ---
-title: "使用应用保护策略的 iOS 应用 | Intune Azure 预览版"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：本主题描述 iOS 应用由应用保护策略托管时会出现的情况。"
+title: "具有应用保护策略的 iOS 应用"
+titleSuffix: Intune on Azure
+description: "本主题描述 iOS 应用由应用保护策略管理时会出现的情况。"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,16 +16,16 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5e172b940dfae32213c870b29f05f56573192704
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略托管时会出现的情况
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
+# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
+[!INCLUDE[azure_portal](./includes/azure_portal.md)] 本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
 ##  <a name="accessing-apps"></a>访问应用
 
 如果设备**未在 Intune 中注册**，则最终用户首次使用应用时需要重启该应用。  必须重启才能将应用保护策略应用到该应用。 以下屏幕截图使用 Skype 应用对此进行解释：
@@ -47,7 +47,7 @@ ms.lasthandoff: 05/23/2017
 Intune 仅支持对于每个设备，将应用保护策略部署到一个用户帐户。
 
 * 根据所使用的应用，第二个用户可能会也可能不会在设备上受阻。 但是在所有情况下，只有获取应用保护策略的第一个用户才会受该策略影响。
-  * “Microsoft Word”、“Excel”和“PowerPoint”不会阻止第二个用户帐户，但第二个用户帐户不受应用保护策略影响。  
+  * Microsoft Word、Excel 和 PowerPoint 不会阻止第二个用户帐户，但第二个用户帐户不受应用保护策略影响。  
 
   * 对于“OneDrive 和 Outlook 应用”，只能使用一个工作帐户。  将阻止在这些应用中添加多个工作帐户。  但是，你可以在设备上删除用户并添加其他用户。
 

@@ -1,5 +1,5 @@
 ---
-title: "联系辅助电话支持 | Microsoft Docs"
+title: "联系辅助电话支持 "
 description: "Microsoft Intune 帮助的电话号码。"
 keywords: "营业时间"
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e514aaf67881a754eb2e75b2920445536978a68c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 99d837e589ed981f2d14f5f89312a195f45d26e2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

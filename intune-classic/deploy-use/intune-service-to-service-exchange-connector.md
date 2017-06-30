@@ -1,5 +1,5 @@
 ---
-title: Exchange Connector for Exchange Online | Microsoft Docs
+title: "适用于 Exchange Online 的 Exchange 连接器"
 description: "将 Intune 连接到 Office 365 Exchange 服务以支持 Exchange ActiveSync 移动设备管理 (MDM)。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b73767f585cfa6283c7fb0601e7061efe42c606
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c2f30e7827db280ba49fc49b6b7a00c9a8d9eade
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,8 +36,8 @@ ms.lasthandoff: 05/23/2017
 |---------------|--------------------|
 |已配置且正在运行 Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |移动设备管理机构| [将移动设备管理机构设置为 Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Microsoft Exchange 版本|Exchange Online 或新 Exchange Online Dedicated 服务|
-|Active Directory 同步|你必须[设置 Active Directory 同步](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用 Intune Connector。|
+|Microsoft Exchange 版本|Exchange Online 或新 Exchange Online Dedicated 服务|/intune/users-permissions-add
+|Active Directory 同步|你必须[设置 Active Directory 同步](/intune/users-permissions-add)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用 Intune Connector。|
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange cmdlet 要求
 

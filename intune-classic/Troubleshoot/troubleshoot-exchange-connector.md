@@ -1,5 +1,5 @@
 ---
-title: "Exchange Connector 疑难解答| Microsoft Docs"
+title: "Exchange Connector 疑难解答"
 description: "解决与 Intune Exchange connector 相关的问题。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0519145b6cc7c837490892089c18bf20e08d57
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ebcbcbc36c925b3c3d9600eb9a5039b70d7e056d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

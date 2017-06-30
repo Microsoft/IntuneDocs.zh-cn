@@ -1,7 +1,7 @@
 ---
 title: "创建具有预共享密钥的 Wi-Fi 配置文件"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：使用 Intune 自定义配置文件创建具有预共享密钥的 Wi-Fi 配置文件。"
+titleSuffix: Intune on Azure
+description: "使用 Intune 自定义配置文件创建具有预共享密钥的 Wi-Fi 配置文件。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,38 +16,38 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fe7d9e9998156825bfd9637c3f9d80df80b916cf
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用 Microsoft Intune 自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 下面介绍了如何使用 Intune 的“自定义设备配置文件”创建具有预共享密匙的 Wi-Fi 配置文件。 本主题还有一个如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
 
 > [!NOTE]
--    如下所述，你可能会发现从连接到网络的计算机复制代码更加轻松。
+-   如下所述，你可能会发现从连接到网络的计算机复制代码更加轻松。
 - 对于 Android，还可以选择使用此由 Johnathon Biersack 提供的 [Android PSK 生成器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
--    可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
+-   可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
 -  对于 iOS，在 Mac 工作站上使用 Apple Configurator 来设置配置文件。 或者，使用此由 Johnathon Biersack 提供的 [iOS PSK 移动配置生成器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
 
 
-1.    若要为 Android 或 Windows 创建具有预共享密钥的 Wi-Fi 配置文件或基于 EAP 的配置文件，则在创建设备配置文件时，为该设备平台选择“自定义”，而不是 Wi-Fi 配置文件。
+1.  若要为 Android 或 Windows 创建具有预共享密钥的 Wi-Fi 配置文件或基于 EAP 的配置文件，则在创建设备配置文件时，为该设备平台选择“自定义”，而不是 Wi-Fi 配置文件。
 
-2.    提供名称和说明。
-3.    添加新的 OMA-URI 设置：
+2.  提供名称和说明。
+3.  添加新的 OMA-URI 设置：
 
-   a.    输入此 Wi-Fi 网络设置的名称。
+   a.   输入此 Wi-Fi 网络设置的名称。
 
-   b。    输入 OMA-URI 设置的说明或留空。
+   b。   输入 OMA-URI 设置的说明或留空。
 
-   c.    **数据类型**：设置为“字符串”。
+   c.   **数据类型**：设置为“字符串”。
 
-   d.    **OMA-URI**：
+   d.   **OMA-URI**：
 
     - **对于 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **对于 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml

@@ -1,7 +1,7 @@
 ---
 title: "适用于 Windows 8.1 设备的 Intune VPN 设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用于在 Windows 8.1 设备上配置 VPN 连接的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解可用于在 Windows 8.1 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 71e842d24e435c25bf24e453b36449c68d281370
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d851a8900ae1e164cb22f1878b352c3e90096f73
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 8.1 设备的 VPN 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 根据所选择的设置，下表中并非所有值都可配置。
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/23/2017
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
 - **Check Point Capsule VPN**
 - **Dell SonicWALL Mobile Connect**
--  **F5 Edge Client**
+- **F5 Edge Client**
 - **Pulse Secure**
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->

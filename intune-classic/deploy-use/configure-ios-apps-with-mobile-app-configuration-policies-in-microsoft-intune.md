@@ -1,5 +1,5 @@
 ---
-title: "使用 iOS 移动应用配置策略 | Microsoft Docs"
+title: "使用 iOS 移动应用配置策略"
 description: "Intune 中的移动应用配置策略可提供用户在运行 iOS 应用时可能需要的设置。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 48f31fa1a883abc2bba372c3aaffb1f998d33c00
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2f13baeec9e0a38ac27ae42d1bc766cf22d73634
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -105,14 +105,14 @@ Intune 在属性列表中支持以下数据类型：
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>将移动应用配置策略与应用关联
 创建移动应用配置策略后，必须将其与 iOS 应用（希望将配置策略设置应用到的应用）关联。
 
-为此，请按照[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)和[使用 Microsoft Intune 部署应用](deploy-apps-in-microsoft-intune.md)中创建应用部署的步骤操作。 到达向导的“**移动应用配置**”页时，请从“**应用配置策略**”下拉列表选择要与应用关联的策略。
+为此，请按照[在 Microsoft Intune 中为移动设备添加应用](add-apps-for-mobile-devices-in-microsoft-intune.md)和[使用 Microsoft Intune 部署应用](deploy-apps-in-microsoft-intune.md)中创建应用部署的步骤操作。 到达向导的“移动应用配置”页时，请从“应用配置策略”下拉列表选择要与应用关联的策略。
 
 然后，如往常一样继续部署和监视应用部署。
 
 当部署的应用在设备上运行时，将使用你在移动应用配置策略中配置的设置运行。
 
 > [!TIP]
-> 如果一个或多个移动应用配置策略发生冲突，则不会强制实施任一策略。 在 Intune 管理控制台**仪表板**中将报告冲突。
+> 如果一个或多个移动应用配置策略发生冲突，则不会强制实施任一策略。 在 Intune 管理控制台“仪表板”中将报告冲突。
 
 ## <a name="example-format-for-a-mobile-app-configuration-xml-file"></a>移动应用配置 XML 文件的示例格式
 

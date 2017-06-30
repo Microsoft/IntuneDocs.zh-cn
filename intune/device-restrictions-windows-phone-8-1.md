@@ -1,7 +1,7 @@
 ---
 title: "适用于 Windows Phone 8.1 的 Intune 设备限制设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览：了解可用来控制 Windows Phone 8.1 设备上的设备设置和功能的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解可用来控制 Windows Phone 8.1 设备上的设备设置和功能的 Intune 设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,48 +16,48 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 754833026331868efebcbcd157e8ce76e3ae35bb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows Phone 8.1 设备限制设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>常规
--     **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
--     **相机** - 允许或阻止设备的相机。
--     **复制和粘贴** - 允许或阻止在设备上使用复制和粘贴功能。
--     **可移动存储** - 允许设备使用可移动存储，如 SD 卡。
--     **地理位置** - 允许设备利用位置信息。
--     **Microsoft 帐户** - 允许或阻止用户将 Microsoft 帐户链接到设备。
--     **屏幕捕获** - 让用户以图像文件形式捕获屏幕内容。
--     **诊断数据提交** - 允许设备将诊断信息提交到 Microsoft。
--     **自定义电子邮件帐户同步** - 允许设备连接到非 Microsoft 电子邮件帐户。
+-   **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
+-   **相机** - 允许或阻止设备的相机。
+-   **复制和粘贴** - 允许或阻止在设备上使用复制和粘贴功能。
+-   **可移动存储** - 允许设备使用可移动存储，如 SD 卡。
+-   **地理位置** - 允许设备利用位置信息。
+-   **Microsoft 帐户** - 允许或阻止用户将 Microsoft 帐户链接到设备。
+-   **屏幕捕获** - 让用户以图像文件形式捕获屏幕内容。
+-   **诊断数据提交** - 允许设备将诊断信息提交到 Microsoft。
+-   **自定义电子邮件帐户同步** - 允许设备连接到非 Microsoft 电子邮件帐户。
 
 ## <a name="password"></a>Password
--     **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
--     **需要密码** - 需要最终用户输入密码才能访问设备。
-    -     **需要的密码类型** - 指定需要的密码类型，例如仅限字母数字或数字。
-    -     **最短密码长度** - 指定密码中所需的最少字符数。
-    -     **简单密码** - 指定可使用如“0000”和“1234”之类的简单密码。
-    -     **擦除设备前登录失败的次数** - 指定在擦除设备前允许输入错误密码的次数。
-    -     **屏幕锁定前的最大非活动分钟数** - 指定屏幕自动锁定之前，设备必须处于空闲状态的时间。
-    -     **密码过期(天)** - 指定必须更改设备密码前的天数。
-    -     **防止重用以前的密码** - 指定需要记住多少个以前用过的密码。
--     **加密** - 需要对支持的移动设备上的数据进行加密。
+-   **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
+-   **需要密码** - 需要最终用户输入密码才能访问设备。
+    -   **需要的密码类型** - 指定需要的密码类型，例如仅限字母数字或数字。
+    -   **最短密码长度** - 指定密码中所需的最少字符数。
+    -   **简单密码** - 指定可使用如“0000”和“1234”之类的简单密码。
+    -   **擦除设备前登录失败的次数** - 指定在擦除设备前允许输入错误密码的次数。
+    -   **屏幕锁定前的最大非活动分钟数** - 指定屏幕自动锁定之前，设备必须处于空闲状态的时间。
+    -   **密码过期(天)** - 指定必须更改设备密码前的天数。
+    -   **防止重用以前的密码** - 指定需要记住多少个以前用过的密码。
+-   **加密** - 需要对支持的移动设备上的数据进行加密。
 
 ## <a name="app-store"></a>App Store
--     **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
--     **应用商店** - 允许用户从设备连接到应用商店。
+-   **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
+-   **应用商店** - 允许用户从设备连接到应用商店。
 
 ## <a name="restricted-apps"></a>受限制的应用
 
--     **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
+-   **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
 
 在受限制的应用列表中，可以配置以下列表之一：
 
@@ -84,15 +84,15 @@ ms.lasthandoff: 05/23/2017
 
 
 ## <a name="browser"></a>浏览器
--     **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
--     **Web 浏览器** - 允许或阻止设备上的内置 Web 浏览器。
+-   **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
+-   **Web 浏览器** - 允许或阻止设备上的内置 Web 浏览器。
 
 ## <a name="cellular-and-connectivity"></a>手机网络和连接性
--     **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
--     **Wi-Fi** - 启用或禁用设备的 Wi-Fi 功能。
--     **Wi-Fi Tethering** - 允许在设备上使用 Wi-Fi Tethering。
--     **自动连接到 Wi-Fi 热点** - 允许设备自动连接到免费的 Wi-Fi 热点并自动接受任何使用条款。
--     **Wi-Fi 热点报告** - 发送有关 Wi-Fi 连接的信息，以帮助用户发现附近的连接。
--     **NFC** - 启用或禁用在支持近场通信的设备上使用近场通信的操作。
--     **蓝牙** - 启用或禁用设备的蓝牙功能。
+-   **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
+-   **Wi-Fi** - 启用或禁用设备的 Wi-Fi 功能。
+-   **Wi-Fi Tethering** - 允许在设备上使用 Wi-Fi Tethering。
+-   **自动连接到 Wi-Fi 热点** - 允许设备自动连接到免费的 Wi-Fi 热点并自动接受任何使用条款。
+-   **Wi-Fi 热点报告** - 发送有关 Wi-Fi 连接的信息，以帮助用户发现附近的连接。
+-   **NFC** - 启用或禁用在支持近场通信的设备上使用近场通信的操作。
+-   **蓝牙** - 启用或禁用设备的蓝牙功能。
 

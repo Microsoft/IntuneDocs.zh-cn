@@ -1,12 +1,12 @@
 ---
 title: "导入适用于 Windows 8.1 和更高版本的 Wi-Fi 设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：如何将 Wi-Fi 设置从 Windows 导入 Intune Wi-Fi 配置文件。"
+titleSuffix: Intune on Azure
+description: "如何将 Wi-Fi 设置从 Windows 导入 Intune Wi-Fi 配置文件。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 80181ce809265dc4289e56ef65aff66214d2e765
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c4ef9bf6ed3f731afada55d2af71d56367f4638d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>如何在 Microsoft Intune 中导入适用于 Windows 8.1 及更高版本设备的 Wi-Fi 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 对于运行 Windows 8.1 或 Windows 10 桌面或移动版的设备，你可以导入之前导出到文件的 Wi-Fi 配置描述文件。
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="import-the-wi-fi-settings-into-intune"></a>将 Wi-Fi 设置导入 Intune
 
 1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
 3. 在“配置文件”边栏选项卡上，单击“创建配置文件”。

@@ -1,6 +1,6 @@
 ---
 
-title: "安装电脑客户端软件 | Microsoft Docs"
+title: "安装 PC 客户端软件"
 description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 通过安装 Intune 客户端软件来注册 Windows 电脑。 Intune 客户端软件可通过以下方法安装：
 
 - IT 管理员可使用以下方法之一：手动安装、组策略或包括在磁盘映像中的安装
@@ -80,7 +83,7 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
 
 1.  将客户端安装文件 **Microsoft_Intune_Setup.exe** 和 **MicrosoftIntune.accountcert** 复制到引用计算机上的 **%Systemdrive%\Temp\Microsoft_Intune_Setup** 文件夹。
 
-2.  通过向“SetupComplete.cmd”  脚本中添加以下命令来创建“WindowsIntuneEnrollPending”  注册表项：
+2.  通过向“SetupComplete.cmd”脚本中添加以下命令来创建“WindowsIntuneEnrollPending”注册表项：
 
     ```
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
@@ -99,7 +102,7 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
 
 5.  捕获引用计算机的映像，然后将此映像部署到目标计算机。
 
-    完成 Windows 安装程序后重启目标计算机时，会创建“WindowsIntuneEnrollPending”  注册表项。 注册包会检查是否注册了计算机。 如果注册了计算机，则不需要采取其他操作。 如果未注册计算机，则注册程序包会创建“Microsoft Intune 自动注册任务”。
+    完成 Windows 安装程序后重启目标计算机时，会创建“WindowsIntuneEnrollPending”注册表项。 注册包会检查是否注册了计算机。 如果注册了计算机，则不需要采取其他操作。 如果未注册计算机，则注册程序包会创建“Microsoft Intune 自动注册任务”。
 
     当自动注册任务在下一个计划的时间运行时，它会检查是否存在“WindowsIntuneEnrollPending”注册表值，并尝试在 Intune 中注册目标 PC。 如果注册由于任何原因失败，则下次运行任务时会重新尝试注册。 重新尝试会持续一个月。
 

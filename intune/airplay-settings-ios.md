@@ -1,12 +1,12 @@
 ---
 title: "适用于 iOS 设备的 Intune AirPlay 设置"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "了解如何使用 Intune 来帮助 iOS 设备自动连接到与 AirPlay 兼容的设备。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,23 +16,23 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad2f20603261ec0eac4156facd3fd23b2982f517
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 47780d00b282fc260c16b06baa69091aad812b87
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="intune-airplay-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune AirPlay 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用这些设置帮助你所管理的 iOS 设备连接到你的网络上与 AirPlay 兼容的设备（如 Apple TV 设备）。
+使用这些设置帮助你所管理的 iOS 设备连接到网络上与 AirPlay 兼容的设备（如 Apple TV 设备）。
 借助此功能，可以：
 
-- **配置设备和密码列表** - 使用 AirPlay 设备的名称和密码配置设备，以使其在连接范围内自动连接。 如果提供了密码，则最终用户无需在进行连接时提供密码。
-- **配置允许的目标** - 配置 AirPlay 设备的列表（按设备 ID）。 最终用户将仅能查看并连接到你所列出的设备（仅限监督的设备）。
+- **配置设备和密码列表** - 使用户自动连接到处于范围内的 AirPlay 设备。 为他们配置 AirPlay 设备的名称和密码，这样他们在进行连接时则无需提供这些内容。
+- **配置允许的目标** - 配置 AirPlay 设备的列表（按设备 ID）。 最终用户仅能查看并连接到你所列出的设备（仅限监督的设备）。
 
 ## <a name="get-started"></a>入门
 
@@ -48,11 +48,13 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="configure-allowed-destinations"></a>配置允许的目标
 
-1. 在 *“允许的目标”（仅限监督的设备）边栏选项卡中，输入 Airplay 设备的“设备 ID”，例如 52:46:CD:51:83:4C。
+1. 在“允许的目标”（仅限监督的设备）边栏选项卡中，输入 Airplay 设备的“设备 ID”，例如 52:46:CD:51:83:4C。
 2. 输入设备 ID 后，单击“添加”。 该 ID 将出现在“设备 ID”列表中。
 3. 继续添加设备。 完成后，请选择“确定”。
 
-还可以导入设备和密码，并允许来自逗号分隔的值 (csv) 文件的目标。
+还可以从逗号分隔值 (csv) 文件中导入设备、密码和允许的目标。
+
+
 
 
 

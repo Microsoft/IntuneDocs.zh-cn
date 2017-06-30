@@ -1,12 +1,12 @@
 ---
-title: "如何使用 Intune 配置证书 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Intune 创建和分配证书，以保护 Wi-Fi、VPN 和其他连接的安全性。"
+title: "如何使用 Intune 配置证书"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune 创建和分配证书，以帮助保护 Wi-Fi、VPN 和其他连接的安全性。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81c7e04d4b4cc7599b63917e5507775b38b65ba7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置证书
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 通过 VPN、Wi-Fi 或电子邮件配置文件给予用户对公司资源的访问权限时，可以使用证书对这些连接进行身份验证。 此操作使你无需再输入用户名和密码即可对连接进行身份验证。
 
@@ -56,8 +56,8 @@ ms.lasthandoff: 05/23/2017
 
     对于以下平台只能使用 SCEP 证书配置文件：
 
--     macOS 10.9 和更高版本
--     Windows Phone 8.1 及更高版本
+-   macOS 10.9 和更高版本
+-   Windows Phone 8.1 及更高版本
 
 必须为每个设备平台创建单独的配置文件。 在创建配置文件时，将其与已创建的受信任的根证书配置文件关联。
 
@@ -88,7 +88,7 @@ ms.lasthandoff: 05/23/2017
 ### <a name="to-create-a-trusted-certificate-profile"></a>要创建“可信证书”配置文件
 
 1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。

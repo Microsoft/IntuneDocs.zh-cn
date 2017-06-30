@@ -1,7 +1,7 @@
 ---
 title: "适用于 Android for Work 的 Intune 自定义配置文件设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何创建适用于 Android for Work 设备的 Intune 自定义配置文件设置。"
+titleSuffix: Intune on Azure
+description: "了解如何创建适用于 Android for Work 设备的 Intune 自定义配置文件设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,10 +16,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: cd81e911dd1ab7c5d166ee14f2e184ebd54a18df
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

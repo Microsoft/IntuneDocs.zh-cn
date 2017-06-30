@@ -1,7 +1,7 @@
 ---
 title: "设置电信费用管理服务"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：将 Saaswedo 电信费用管理服务配置为与 Intune 集成。"
+titleSuffix: Intune on Azure
+description: "将 Saaswedo 电信支出管理服务配置为与 Intune 集成。"
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -16,15 +16,15 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41ac9ad43b6ddaa2b78d588cb01b467d37f2178a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>在 Intune Azure 预览版中设置电信费用管理服务
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 借助 Intune，可管理企业拥有的移动设备上数据使用产生的电信费用。 为启用此功能，Intune 已集成第三方软件开发商 Saaswedo 的 Datalert 电信费用管理解决方案。 Datalert 是一款实时电信费用管理软件，可管理 Intune 托管设备的电信数据流量，避免昂贵和意外的数据和漫游过量。
 
@@ -43,7 +43,7 @@ Intune 与 Datalert 相集成，通过在限制超过定义的阈值时使用自
 
 ## <a name="prerequisites"></a>先决条件
 
-- Microsoft Intune 订阅和访问 Azure 门户的权限，当前在公共预览版中提供。
+- 订阅 Microsoft Intune 和拥有 Azure 门户的访问权限。
 - Datalert 电信费用管理服务订阅
 
 ## <a name="list-of-telecom-expense-management-providers"></a>电信费用管理提供商列表
@@ -108,9 +108,9 @@ Intune 目前与下列电信费用管理提供商集成：
 
 按照下列步骤，在 Intune 中为每个平台创建 Datalert 应用。 以下步骤使用 iOS 作为示例。
 
-1. 在 Azure 门户的“Intune”边栏选项卡上，选择“管理应用”。
+1. 在 Azure 门户的 Intune 边栏选项卡上，选择“移动应用”。
 
-2. 在“管理应用”边栏选项卡上，选择“管理” > “应用”。
+2. 在“移动应用”边栏选项卡上，选择“管理” > “应用”。
 
 3. 选择“添加”添加一个应用。
 
@@ -151,8 +151,8 @@ Datalert 服务目前处于活动状态，它开始监控数据流量，并在�
 
 ## <a name="client-enrollment-experience"></a>客户端注册体验
 有关客户端注册体验的信息，请参阅以下内容：
--    [在电信费用管理中注册 iOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--    [在电信费用管理中注册 Android 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [在电信费用管理中注册 iOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [在电信费用管理中注册 Android 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>关闭 Datalert 服务
 

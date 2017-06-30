@@ -1,5 +1,5 @@
 ---
-title: "Android MAM 策略设置 | Microsoft Docs"
+title: "Android MAM 策略设置"
 description: "本主题介绍适用于 Android 设备的移动应用管理策略设置。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 017c316ce102b71b3ef9552d8fe69181b79473de
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 785e36bb9354e02e4040b5cf2271cbf6f10c4041
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

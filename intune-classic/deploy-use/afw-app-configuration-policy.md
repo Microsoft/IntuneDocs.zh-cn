@@ -1,5 +1,5 @@
 ---
-title: "Android for Work 应用配置策略 | Microsoft Docs"
+title: "Android for Work 应用配置策略"
 description: "Intune 中的移动应用配置策略可提供用户在运行 Android for Work 应用时可能需要的设置。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 69cee5763cb8a24b4a3be6e981bcd46512bfc3ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f2284920852de5a79cf47fee81922a5b069157c3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -50,7 +50,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
     > [!TIP]
     > 你只能配置此策略类型的自定义设置。 建议的设置不可用。
 
-3.  在“**创建策略**”页的“**常规**”部分中，输入移动应用配置策略的名称和可选描述。
+3.  在“创建策略”页的“常规”部分中，输入移动应用配置策略的名称和可选描述。
 
 4. 在该页的“移动应用配置策略”部分中，指定以下信息：
     - **此配置适用的应用程序的包 ID** - 包 ID 可以在 Google Play 页上应用 URL 的“id=”中找到。 例如，Microsoft Excel 应用的包 ID 是 **com.microsoft.office.excel**。
@@ -60,9 +60,9 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
     > [!IMPORTANT]
     > 单击“验证”后，Intune 会检查所输入的配置数据的格式是否有效。 它不会检查这些数据是否会与其关联的应用共同发挥作用。
 
-6.  完成后，单击 **“保存策略”**。
+6.  完成后，单击**“保存策略”**。
 
-新策略显示在“配置策略”  节点中。
+新策略显示在“配置策略”节点中。
 
 
 ## <a name="deploy-the-app-configuration-policy"></a>部署应用配置策略

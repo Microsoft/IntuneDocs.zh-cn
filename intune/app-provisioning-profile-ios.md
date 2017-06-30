@@ -1,7 +1,7 @@
 ---
-title: "应用预配配置文件 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：Intune 提供了一些工具，用于将新的预配配置文件主动分配到安装了即将到期应用的设备。"
+title: "应用预配配置文件"
+titleSuffix: Intune on Azure
+description: "Intune 提供了一些工具，用于将新的预配配置文件主动分配到安装了即将到期应用的设备。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 966c097280ebebac68749e71c20381ee816360da
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 移动预配配置文件防止应用过期
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>简介
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>如何创建 iOS 移动应用预配配置文件
 
 1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“移动应用”。
 1.  在“移动应用”工作负荷中，选择“管理” > “iOS 预配配置文件”。
 2.  在配置文件边栏选项卡列表中，选择“创建配置文件”。

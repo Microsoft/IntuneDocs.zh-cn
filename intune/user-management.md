@@ -1,7 +1,7 @@
 ---
 title: "什么是管理用户工作负荷？"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Microsoft Intune 和 Azure 查看和管理用户。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Microsoft Intune 和 Azure 查看和管理用户。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,10 +15,10 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 29c8f436d611e590ef1304d221e27da0ceef2450
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 # <a name="what-is-user-management"></a>什么是用户管理？
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 如果尚不熟悉 Azure 门户中的 Intune，请不要再为 Intune 创建组。 像你使用的许多其他应用程序一样，Intune 也使用 Azure AD 组。
 

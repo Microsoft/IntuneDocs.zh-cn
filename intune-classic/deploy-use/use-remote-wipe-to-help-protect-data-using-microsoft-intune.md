@@ -1,5 +1,5 @@
 ---
-title: "使用远程擦除来帮助保护数据 |Microsoft Docs"
+title: "使用远程擦除来帮助保护数据"
 description: "Intune 提供选择性擦除和完全擦除功能，以删除敏感公司数据和删除对许多公司资源的访问权限。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b3aeb3e81a14b0c5e461422741d62c02ab635f7e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -78,9 +78,9 @@ ms.lasthandoff: 05/23/2017
 
 3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不会要求提供信用卡或付款（请选择**注册免费的 Azure Active Directory**订阅链接）。
 
-4.  选择“Active Directory”  ，然后选择你的组织。
+4.  选择“Active Directory”，然后选择你的组织。
 
-5.  选择“用户”  选项卡。
+5.  选择“用户”选项卡。
 
 6.  选择要删除其设备的用户。
 

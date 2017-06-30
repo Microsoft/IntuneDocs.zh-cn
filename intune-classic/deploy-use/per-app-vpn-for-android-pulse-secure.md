@@ -1,11 +1,11 @@
 ---
-title: "使用 Pulse Secure 的 Per-app VPN（针对 Android）| Microsoft Docs"
+title: "使用 Pulse Secure 的 Per-app VPN（针对 Android）"
 description: "可为 Intune 托管的 Android 设备创建 per-app VPN 配置文件。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -45,7 +45,7 @@ ms.lasthandoff: 05/23/2017
 
 > [!NOTE]
 >
-> 记下 VPN 配置文件名称，以便在下一步中使用。 例如，MyAppVpnProfile。
+> 记录 **VPN 连接名称（向用户显示）：**创建 VPN 配置文件时指定的值。 在下一步中将会用到此名称。 例如**MyAppVpnProfile**。
 
 ### <a name="step-2-create-a-custom-configuration-policy"></a>步骤 2：创建自定义配置策略
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 05/23/2017
    4. 输入设置名称。
    5. 为“数据类型”，指定“字符串”。
    6. 为 **OMA-URI** 指定以下字符串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中 *Name* 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
-   7.    对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
+   7.   对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
 
 ![Android per-app VPN 自定义策略示例](./media/android_per_app_vpn_oma_uri.png)
 
@@ -72,12 +72,12 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="step-3-deploy-both-policies"></a>步骤 3：部署两个策略
 
-必须向*相同*Intune 组部署*这两个*策略。
+必须向*相同*Intune 组部署这两个策略。
 
-1.  在“**策略**”工作区中，选择想要部署的策略，然后选择“**管理部署**”。
-2.  在“管理部署”  对话框中：
+1.  在“策略”工作区中，选择想要部署的策略，然后选择“管理部署”。
+2.  在“管理部署”对话框中：
     -   **若要部署策略**，选择要部署策略的一个组或多个组，然后选择“添加” > “确定”。
     -   **若要关闭对话框而不部署策略**，选择“取消”。
 
-“策略”  工作区“概述”  页的状态摘要和警报可识别需要关注的策略问题。 状态摘要也出现在“仪表板”工作区中。
+“策略”工作区“概述”页的状态摘要和警报可识别需要关注的策略问题。 状态摘要也出现在“仪表板”工作区中。
 

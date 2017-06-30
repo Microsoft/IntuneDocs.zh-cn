@@ -1,12 +1,12 @@
 ---
-title: "管理 iOS 应用之间的数据传输 |Intune Azure 预览版"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：使用本主题了解如何使用 iOS 打开方式功能和移动应用管理策略来管理应用之间的数据传输。"
+title: "管理 iOS 应用之间的数据传输"
+titleSuffix: Intune on Azure
+description: "使用本主题了解如何使用  iOS Open-in 功能和移动应用管理策略来管理应用之间的数据传输。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/23/2017
 ##  <a name="using-app-protection-with-ios-apps"></a>对 iOS 应用使用应用保护
 应用保护策略可与 iOS 的“打开方式管理”功能结合使用来通过以下方式保护公司数据：
 
--   **不由任何 MDM 解决方案管理的员工所有的设备：**可以将应用保护策略设置设置为“仅允许应用将数据传输到托管应用”。 最终用户无法打开非策略托管应用中的受保护文件。
+-   **不由任何 MDM 解决方案管理的员工自带设备：**可以将应用保护策略设置设置为“仅允许应用将数据传输到策略托管应用”。 策略托管应用中的 Open In 行为只会将其他策略托管应用用作共享选项。 如果用户尝试从 OneDrive 以本机邮件附件发送策略保护的文件，则该文件将无法读取。
 
 -   **由 Intune 管理的设备：**对于在 Intune 中注册的设备，自动允许在具有应用保护策略的应用与其他通过 Intune 部署的托管 iOS 应用之间进行数据传输。 要允许具有应用保护策略的应用之间进行数据传输，请启用“仅允许应用将数据传输到托管应用”设置。 可使用“打开方式管理”功能控制在通过 Intune 部署的应用之间进行的数据传输。   
 

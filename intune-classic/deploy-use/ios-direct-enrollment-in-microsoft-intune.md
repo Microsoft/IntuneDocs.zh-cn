@@ -1,5 +1,5 @@
 ---
-title: "直接注册 iOS 设备 | Microsoft Docs"
+title: "直接注册 IOS 设备"
 description: "使用 Apple 配置器工具直接注册公司自有的 iOS 设备（使用通过 USB 将其连接至 Mac 计算机的预定义策略）。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9909e1dd4f9891a2efb47383242ed7765d3f0291
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -42,7 +42,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
     2.  输入设备配置文件的详细信息：
 
-        -   “名称” 设备注册配置文件的名称。 对用户不可见。
+        -   “名称”设备注册配置文件的名称。 对用户不可见。
 
         -   “说明”- 设备注册配置文件的说明。 对用户不可见。
 

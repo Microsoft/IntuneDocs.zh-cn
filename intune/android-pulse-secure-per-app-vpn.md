@@ -1,12 +1,12 @@
 ---
 title: "适用于 Android - Pulse Secure 的每应用 VPN 配置文件"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何为 Intune 管理的 Android 设备创建每应用 VPN 配置文件。"
+titleSuffix: Intune on Azure
+description: "了解如何为 Intune 托管的 Android 设备创建每应用 VPN 配置文件。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: babeaa13da863ca3335c3a05dbabb4a9ac7889ce
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f0e3a8363eb25ba3a3b2c16f15b8188acb694938
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 可为由 Intune 管理的 Android 5.0 及更高版本设备创建每应用 VPN 配置文件。 首先，创建使用 Pulse Secure 连接类型的 VPN 配置文件。 然后，创建将 VPN 配置文件与特定应用关联的自定义配置策略。
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 05/23/2017
 
 
 1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
 2. 在配置文件列表边栏选项卡中，选择“创建配置文件”。
@@ -50,12 +50,12 @@ ms.lasthandoff: 05/23/2017
 5. 在“配置文件类型”下拉列表中，选择“VPN”。
 3. 选择“设置”  > “配置”，然后按照[如何配置 VPN 设置](vpn-settings-configure.md)和[适用于 Android 设备的 Intune VPN 设置](vpn-settings-android.md)中的设置配置 VPN 配置文件。
 
-记下 VPN 配置文件名称，以便在下一步中使用。 例如**MyAppVpnProfile**。
+记录创建 VPN 配置文件时指定的“连接名称”值。 在下一步中将会用到此名称。 例如**MyAppVpnProfile**。
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>步骤 2：创建自定义配置策略
 
 1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
 3. 在“配置文件”边栏选项卡上，单击“创建配置文件”。
@@ -73,7 +73,7 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>将应用列表设置为方块列表或允许列表（可选）
   通过使用**方块列表**值，可指定列表中的应用将*不能*使用 VPN 连接。 所有其他应用将通过 VPN 连接。
-或者，你可使用 **WHITELIST** 值来指定*可以*使用 VPN 连接的应用列表。 不在列表中的应用将不会通过 VPN 连接。
+或者，你可使用 **WHITELIST** 值来指定*可以*使用 VPN 连接的应用列表。 不在列表中的应用不会通过 VPN 连接。
   1.    在“自定义 OMA-URI 设置”边栏选项卡上，选择“添加”。
   2.    输入设置名称。
   3.    为“数据类型”，指定“字符串”。

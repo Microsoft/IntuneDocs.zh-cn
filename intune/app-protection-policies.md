@@ -1,7 +1,7 @@
 ---
 title: "创建和部署应用保护策略"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解 Intune 应用保护策略如何有助于保护你管理的应用所使用的公司数据。"
+titleSuffix: Intune on Azure
+description: "了解 Intune 应用保护策略如何帮助保护你所管应用使用的公司数据。"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,20 +16,24 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d63e99561766268941b2c6d8b3bb6a1dd028f72c
+ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
+ms.openlocfilehash: 56a19bc4d970f230f719af9369dada45ffb65e76
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/15/2017
 
 ---
 
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**如果没有使用 Azure 门户预览版计划中的 Intune 服务**，本主题介绍在经典的 Intune 控制台中，[如何创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
+## <a name="before-you-begin"></a>在开始之前
+
+如果你要查找 Intune 经典控制台中的说明，请参阅[如何创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
 无论设备是否由 Intune 托管，都可以将应用保护策略应用到该设备上运行的应用中。 若要详细了解应用保护策略的工作原理以及 Intune 应用保护策略支持的方案，请参阅[什么是 Microsoft Intune 应用保护策略](app-protection-policy.md)。
+
+如果你要查找 MAM 支持应用的列表，请参阅 [MAM 应用列表](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 
 ##  <a name="create-an-app-protection-policy"></a>创建应用保护策略
 1.  在“移动应用”工作负荷中，选择“管理” > “应用保护策略”。
@@ -66,7 +70,7 @@ ms.lasthandoff: 05/23/2017
 
   ![突出显示“添加用户组”菜单选项的“用户组”边栏选项卡的屏幕截图](./media/app-protection-policy-add-users.png)
 
-2.  用户组列表将显示在“添加用户组”  边栏选项卡上。 这是你“Azure Active Directory” 中所有安全组的列表。 可选择希望将此策略应用于的用户组，然后选择“选择”。 选择“选择”会将策略部署到用户。
+2.  用户组列表将显示在“添加用户组”边栏选项卡上。 这是你“Azure Active Directory”中所有安全组的列表。 可选择希望将此策略应用于的用户组，然后选择“选择”。 选择“选择”会将策略部署到用户。
   ![显示 Azure Active Directory 用户列表的“添加用户组”边栏选项卡的屏幕截图](./media/azure-ad-user-group-list.png)
 
 你现已创建策略并将其部署到用户。
@@ -116,7 +120,6 @@ ms.lasthandoff: 05/23/2017
 ## <a name="policy-settings"></a>策略设置
 若要查看 iOS 和 Android 的策略设置的完整列表，请选择以下值之一：
 
-> [!div class="op_single_selector"]
 - [iOS 策略](app-protection-policy-settings-ios.md)
 - [Android 策略](app-protection-policy-settings-android.md)
 

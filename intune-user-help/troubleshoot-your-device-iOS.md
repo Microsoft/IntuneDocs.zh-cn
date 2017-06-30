@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,10 +18,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c06d03943863f6ab46a0943b08e1d986b210e58a
+ms.sourcegitcommit: 02018f2f96dbd94c337dd28e7ed111666841aa96
+ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
@@ -32,6 +32,7 @@ ms.lasthandoff: 05/23/2017
 
 - [需要重新连接受威胁的 iOS 设备](how-to-reconnect-a-compromised-ios-device.md)
 - [需要将错误发送给 IT 管理员](send-errors-to-your-it-admin-ios.md)
+- [需要将错误发送给 Microsoft](send-logs-to-microsoft-ios.md)
 - [使用公司门户应用时遇到错误](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [需要识别设备以进行注册](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 - [如何在设备上查找序列号？](how-do-i-find-the-serial-number-on-my-device-ios.md)

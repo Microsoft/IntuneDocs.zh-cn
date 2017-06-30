@@ -1,7 +1,7 @@
 ---
 title: "如何创建 Windows 符合性策略"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何创建适用于 Windows 设备的合规性策略。"
+titleSuffix: Intune on Azure
+description: "了解如何创建适用于 Windows 设备的符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,17 +16,17 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4de81c3dc6f1499c2364d8bf9c3b49b219248684
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 91f0a71ed7b924746425822ce10190a8ec7a7a40
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune-azure-preview"></a>如何在 Intune Azure 预览版中创建适用于 Windows 设备的设备合规性策略
+# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中创建适用于 Windows 设备的设备符合性策略
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 为每个平台创建合规性策略。  可以在 Azure 门户中创建合规性策略。 若要详细了解什么是合规性策略，请参阅[什么是设备合规性](device-compliance.md)主题。 若要了解创建合规性策略之前需要解决的先决条件，请参阅[设备合规性入门](device-compliance-get-started.md)主题。
 

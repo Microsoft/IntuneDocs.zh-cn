@@ -1,11 +1,11 @@
 ---
-title: "设备注册疑难解答 | Microsoft Docs"
+title: "设备注册疑难解答"
 description: "有关设备注册问题故障排除的建议。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e72051f9318d24ed36fc39ea6645041f0a150a40
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -34,11 +34,11 @@ ms.lasthandoff: 05/23/2017
 
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
--    [为在 Microsoft Intune 中注册设备做好准备](/intune-classic/deploy-use/prerequisites-for-enrollment)
--    [设置 iOS 和 Mac 设备管理](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [设置 Windows 设备管理](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--    [设置 Android 设备管理](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - 无需其他步骤
--    [设置 Android for Work 设备管理](/intune-classic/deploy-use/set-up-android-for-work)
+-   [为在 Microsoft Intune 中注册设备做好准备](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-   [设置 iOS 和 Mac 设备管理](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [设置 Windows 设备管理](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-   [设置 Android 设备管理](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - 无需其他步骤
+-   [设置 Android for Work 设备管理](/intune-classic/deploy-use/set-up-android-for-work)
 
 托管的设备用户可收集注册和诊断日志以供你查看。 以下提供了有关收集日志的用户说明：
 
@@ -110,8 +110,8 @@ ms.lasthandoff: 05/23/2017
 
 1.  验证是否已针对使用的 Intune 服务类型（即 Intune、Office 365 或 System Center Configuration Manager with Intune）正确设置 MDM 机构。 对于 Intune，请在“管理员”&gt;“移动设备管理”中设置 MDM 机构。 对于 Configuration Manager with Intune，请在配置 Intune 连接器时对其进行设置，在 Office 365 中则对“移动设备”进行设置。
 
-    > [!NOTE]
-    > 设置 MDM 机构后，只能通过联系支持人员对其进行更改，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
+    > [!NOTE]    
+    > 在 Configuration Manager 版本 1610 或更高版本和 Microsoft Intune 版本 1705 中，你将可以更改 MDM 颁发机构，而无需联系 Microsoft 支持部门，并且无需取消注册并重新注册现有的受管理设备。 有关详细信息，请参阅[如果选择了错误的 MDM 颁发机构设置怎么办](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
 
 2.  通过检查用户的 UPN 是否与 Office 365 门户中的 Active Directory 信息匹配，验证该用户的凭据是否已与 Azure Active Directory 正确同步。
     如果 UPN 与 Active Directory 信息不匹配：
@@ -230,16 +230,16 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 若要解决此问题，请按以下步骤将证书导入 AD FS 服务器或代理上的计算机个人证书：
 
-1.    在 ADFS 服务器和代理服务器上，右键单击“开始”按钮，选择“运行”，然后键入“certlm.msc”，以启动本地计算机的证书管理控制台。
-2.    展开“个人”，然后选择“证书”。
-3.    查找用于 AD FS 服务通信的证书（公共签名证书），然后双击以查看其属性。
-4.    选择“证书路径”选项卡以查看证书的父证书。
-5.    在每个父证书上，选择“查看证书”。
-6.    选择“详细信息”选项卡，然后选择“复制到文件...”。
-7.    按照向导提示将证书的公钥导出或保存到所需的文件位置。
-8.    将步骤 3 中导出的父证书导入到本地计算机\个人\证书，方法是右键单击“证书”，选择“所有任务” > “导入”，然后按照向导提示导入证书。
-9.    重启 AD FS 服务器。
-10.    在所有 AD FS 和代理服务器上重复上述步骤。
+1.  在 ADFS 服务器和代理服务器上，右键单击“开始”按钮，选择“运行”，然后键入“certlm.msc”，以启动本地计算机的证书管理控制台。
+2.  展开“个人”，然后选择“证书”。
+3.  查找用于 AD FS 服务通信的证书（公共签名证书），然后双击以查看其属性。
+4.  选择“证书路径”选项卡以查看证书的父证书。
+5.  在每个父证书上，选择“查看证书”。
+6.  选择“详细信息”选项卡，然后选择“复制到文件...”。
+7.  按照向导提示将证书的公钥导出或保存到所需的文件位置。
+8.  将步骤 3 中导出的父证书导入到本地计算机\个人\证书，方法是右键单击“证书”，选择“所有任务” > “导入”，然后按照向导提示导入证书。
+9.  重启 AD FS 服务器。
+10. 在所有 AD FS 和代理服务器上重复上述步骤。
 现在用户应能够在 Android 设备上登录到公司门户。
 
 **若要验证是否正确安装证书**：
@@ -261,10 +261,10 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|找不到注册策略|检查是否已设置所有注册必备组件（如 Apple Push Notification 服务 (APNs) 证书），并确保已启用“iOS 平台”。 有关说明，请参阅[设置 iOS 和 Mac 设备管理](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)。|
 |DeviceCapReached|已注册太多的移动设备。|注册其他移动设备前，用户必须从公司门户中删除当前已注册的移动设备之一。 请参阅你使用的设备类型的说明：[Android ](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) 和 [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
-|APNSCertificateNotValid|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供与已注册 iOS 设备通信的通道。 如果未执行获取 APNs 证书的步骤，或者 APNs 证书已过期，则注册尝试将失败并将显示此消息。<br /><br />查看[同步 Active Directory 并将用户添加到 Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) 和[组织用户和设备](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)中有关如何设置用户的信息。|
+|APNSCertificateNotValid|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供与已注册 iOS 设备通信的通道。 如果未执行获取 APNs 证书的步骤，或者 APNs 证书已过期，则注册尝试将失败并将显示此消息。<br /><br />查看[同步 Active Directory 并将用户添加到 Intune](/intune/users-permissions-add) 和[组织用户和设备](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)中有关如何设置用户的信息。|
 |AccountNotOnboarded|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供与已注册 iOS 设备通信的通道。 如果未执行获取 APNs 证书的步骤，或者 APNs 证书已过期，则注册尝试将失败并将显示此消息。<br /><br />有关详细信息，请查看[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)。|
 |DeviceTypeNotSupported|用于可能已尝试使用非 iOS 设备进行注册。 不支持你正在尝试注册的移动设备类型。<br /><br />确认设备正在运行 iOS 版本 8.0 或更高版本。<br /><br />|请确保用户的设备正在运行 iOS 版本 8.0 或更高版本。|
-|UserLicenseTypeInvalid|无法注册设备，因为用户帐户还不是所需用户组的成员。<br /><br />|用户必须是相应用户组的成员才能注册其设备。 此消息表明用户持有的指定移动设备管理机构许可证类型不正确。 例如，如果已将 Intune 指定为移动设备管理机构，并且用户正在使用 System Center 2012 R2 Configuration Manager 许可证，则将收到此错误消息。<br /><br />有关详细信息，请查看以下内容：<br /><br />查看[同步 Active Directory 并将用户添加到 Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) 和[组织用户和设备](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)中的[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)以及有关如何设置用户的信息。|
+|UserLicenseTypeInvalid|无法注册设备，因为用户帐户还不是所需用户组的成员。<br /><br />|用户必须是相应用户组的成员才能注册其设备。 此消息表明用户持有的指定移动设备管理机构许可证类型不正确。 例如，如果已将 Intune 指定为移动设备管理机构，并且用户正在使用 System Center 2012 R2 Configuration Manager 许可证，则将收到此错误消息。<br /><br />有关详细信息，请查看以下内容：<br /><br />查看[同步 Active Directory 并将用户添加到 Intune](/intune/users-permissions-add) 和[组织用户和设备](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)中的[使用 Microsoft Intune 设置 iOS 和 Mac 管理](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)以及有关如何设置用户的信息。|
 |MdmAuthorityNotDefined|尚未定义移动设备管理机构。<br /><br />|尚未在 Intune 中指定移动设备管理机构。<br /><br />查看[开始使用 Microsoft Intune 的 30 天试用版](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)中的“步骤 6：注册移动设备并安装应用”部分的第 1 项。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>设备处于非活动状态，或管理控制台不能与其通信

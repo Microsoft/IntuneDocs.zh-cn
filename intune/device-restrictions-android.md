@@ -1,12 +1,12 @@
 ---
 title: "适用于 Android 的 Intune 设备限制设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用来控制 Android 设备上的设备设置和功能的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解可用来控制 Android 设备上的设备设置和功能的 Intune 设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3627b28b60908c225ce1797968123ce854a70a8b
+ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
+ms.openlocfilehash: 44d80e1c72b58eccd4e69b1d561c7d651f39b3c3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/15/2017
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版设备限制设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+使用这些具有 Android 设备限制策略的设置配置组织中的设备。
 
 ## <a name="general"></a>常规
 
@@ -39,11 +41,11 @@ ms.lasthandoff: 05/23/2017
 |**诊断数据提交**|阻止用户从设备提交诊断数据。|否|是|
 |**恢复出厂设置**|允许用户对设备执行恢复出厂设置。|否|是|
 |**地理位置**|允许设备利用位置信息（仅限 Samsung KNOX 标准版）。|否|是|
-|**关机**|允许用户关闭设备电源。<br>如果禁用此设置，则对于 Samsung KNOX 标准版设备，“擦除设备前登录失败的次数”设置无效。|否|是|
+|**关机**|允许用户关闭设备电源。<br>如果禁用，则无法设置**擦除设备前的登录失败次数**。|否|是|
 |**屏幕捕获**|让用户以图像形式捕获屏幕内容。|否|是|
 |**语音助手**|允许在设备上使用语音助手软件。|否|是|
 |**YouTube**|允许在设备上使用 YouTube 应用。|否|是|
-|**共享设备**|将托管的 Samsung KNOX 标准设备配置为共享。 在此模式下，最终用户可以使用其 Azure AD 凭据登录和注销设备，并且无论设备是否正在使用，都会对其集中管理。<br>当最终用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销时，会清除所有应用数据。|否|是|
+|**共享设备**|将托管的 Samsung KNOX 标准设备配置为共享。 在此模式下，最终用户可以使用其 Azure AD 凭据登录和注销设备。 该设备仍然受管，无论是否正在使用。<br>当最终用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销时，会清除所有应用数据。|否|是|
 
 ## <a name="password"></a>Password
 
@@ -58,14 +60,14 @@ ms.lasthandoff: 05/23/2017
 |**所需的密码类型**|指定所需的密码复杂性级别以及是否可以使用生物识别设备。 选择：<br><br>    -     **设备默认值**<br>-     **低安全性生物识别**<br>    -     **至少为数字**<br>    -     **数字复杂度**（不允许重复或连续数字，如“1111”或“1234”）<sup>1</sup><br>    -     **至少为字母**<br>    -     **至少包含字母数字**<br>    -     **至少为字母数字与符号**|是|是|
 |**防止重用以前的密码**|阻止最终用户创建以前使用过的密码。|是|是|
 |**指纹解锁**|允许使用指纹解锁支持的设备。|否|是|
-|**Smart Lock 和其他信任代理**|允许在兼容的 Android 设备上控制 Smart Lock 功能（Samsung KNOX Standard 5.0 及更高版本）。 如果设备处于可信位置（例如当它连接到特定蓝牙设备时，或者在 NFC 标记附近时），则此手机功能（有时称为信任代理）使你可以禁用或绕过设备锁屏界面密码。可以使用此设置防止用户配置 Smart Lock。|是（5.0 及更高版本）|是|
+|**Smart Lock 和其他信任代理**|允许在兼容的 Android 设备上控制 Smart Lock 功能（Samsung KNOX Standard 5.0 及更高版本）。 如果设备处于可信位置，则使用此手机功能（有时称为“信任代理”）可禁用或绕过设备锁屏界面密码。 例如，这可以在设备连接到特定蓝牙设备或靠近 NFC 标签时使用。 可以使用此设置防止用户配置 Smart Lock。|是（5.0 及更高版本）|是|
 |**加密**|要求对设备上的文件进行加密。|是|是|
 
-<sup>1</sup>向设备分配此设置时，请确保目标设备上的公司门户应用已更新至最新版本。
+<sup>1</sup> 向设备分配此设置之前，请确保将这些设备上的公司门户更新至最新版本。
 
 如果配置**数值复杂度**设置，然后将其分配到运行 5.0 之前的 Android 版本的设备，则适用以下行为。
 - 如果公司门户应用正在运行 1704 以前的版本，则不会向设备应用任何 PIN 策略，并将在 Intune 门户中显示错误。
-- 如果公司门户应用已更新至 1704 版本，则将仅应用简单的 PIN。 5.0 以前的 Android 版本不支持此设置。 在 Intune 门户中未显示错误。
+- 如果公司门户应用运行 1704 版本或更高版本，则只能应用简单的 PIN。 5.0 以前的 Android 版本不支持此设置。 在 Intune 门户中未显示错误。
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -77,10 +79,10 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="restricted-apps"></a>受限制的应用
 
-在受限制的应用列表中，可以配置以下列表之一：
+在受限制的应用列表中，你可以配置以下适用于 Android 和 Samsung KNOX 标准版设备的列表之一：
 
 **禁止的应用**列表 - 列出用户不得安装和运行的应用（未由 Intune 托管）。
-**批准的应用**列表 - 列出允许用户安装的应用。 为了保持相容状态，用户不得安装未列出的应用。 自动允许由 Intune 托管的应用。
+**批准的应用**列表 - 列出允许用户安装的应用。 为了保持兼容性，用户不得安装其他应用。 自动允许由 Intune 托管的应用。
 必须将包含受限制的应用设置的设备配置文件分配到用户组。
 
 若要配置列表，请单击“添加”，然后指定所选应用的名称、应用发布者（可选）和该应用在应用商店中的 URL。
@@ -93,11 +95,11 @@ ms.lasthandoff: 05/23/2017
 
 打开应用的安装页面，然后将 URL 复制到剪贴板。 你现在可以在符合或不符合要求的应用列表中使用这个 URL。
 
-示例：搜索适用于 Microsoft Office Mobile 的 Google Play。 你使用的 URL 将为 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**。
+示例：搜索适用于 Microsoft Office Mobile 的 Google Play。 使用 URL：**https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**。
 
 ### <a name="additional-options"></a>其他选项
 
-还可以单击“导入”，填充 csv 文件中的列表（格式为 <*应用 URL*>,<*应用名称*>,<*应用发布者*>），或单击“导出”，创建包含受限制应用列表内容且格式相同的 csv 文件。        
+你也可以单击**导入**，从 csv 文件中获取列表。 使用格式 <*应用 URL**应用名称*>, <*应用发布者*>，或单击“导出”，导出包含受限制应用列表内容且格式相同的 csv 文件。      
 
 ## <a name="browser"></a>浏览器
 |||||
@@ -127,7 +129,7 @@ ms.lasthandoff: 05/23/2017
 |**语音拨号**|启用或禁用设备上的语音拨号功能。|否|是|
 |**语音漫游**|当设备处于移动电话网络中时允许语音漫游。|否|是|
 |**蓝牙**|允许在设备上使用蓝牙。|否|是|
-|**NFC**|允许使用近场通信（如果设备支持）的操作。|否|是|
+|**NFC**|允许在支持的设备上使用近场通信的操作。|否|是|
 |**Wi-Fi**|允许使用设备的 Wi-Fi 功能。|否|是|
 |**Wi-Fi Tethering**|允许在设备上使用 Wi-Fi Tethering。|否|是|
 
@@ -135,7 +137,7 @@ ms.lasthandoff: 05/23/2017
 |||||
 |-|-|-|-|
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
-|**选择托管应用**|进行浏览，然后选择当设备处于展台模式时可以运行的托管应用（目前尚不支持指定为指向应用商店的链接的应用）。 不允许在设备上运行其他应用。|否|是|
+|**选择托管应用**|选择以下选项之一，添加一个或多个当设备处于展台模式时可以运行的应用。 不允许在设备上运行其他应用。<br><br>- **按包名称添加应用**<br>- **按 URL 添加应用**<br>- **添加托管应用**|否|是|
 |**屏幕睡眠按钮**|启用或禁用设备上的屏幕睡眠唤醒按钮。|否|是|
 |**音量按钮**|启用或禁用设备上的音量按钮。|否|是|
 

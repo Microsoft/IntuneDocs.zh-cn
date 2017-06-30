@@ -1,7 +1,7 @@
 ---
 title: "使用 Apple Configurator 和直接注册来注册 iOS 设备"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何通过 Apple Configurator 使用直接注册来注册公司拥有的 iOS 设备。"
+titleSuffix: Intune on Azure
+description: "了解如何通过 Apple Configurator 使用直接注册来注册公司拥有的 iOS 设备。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5347e2023a9ce19f8e8ab960e2eebf8107530220
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>使用 Apple Configurator 和直接注册来注册 iOS 设备 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)。 此过程不会将设备恢复至出厂设置，并将使用预定义策略注册设备。 此方法针对“无用户关联”的设备，并且要求通过 USB 将 iOS 设备连接到 Mac 计算机以设置企业注册。
 
@@ -42,7 +42,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 在设置 iOS 设备注册前，完成以下先决条件：
 
-- [配置域](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [配置域](custom-domain-name-configure.md)
 - [设置 MDM 机构](mdm-authority-set.md)
 - [创建组](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [配置公司门户](company-portal-app.md)

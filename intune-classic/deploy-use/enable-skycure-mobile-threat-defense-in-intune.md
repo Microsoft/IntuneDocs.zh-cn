@@ -1,5 +1,5 @@
 ---
-title: "在 Intune 中启用 Skycure 移动威胁防御 | Microsoft Docs"
+title: "在 Intune 中启用 Skycure 移动威胁防御"
 description: "在 Intune 经典控制台中启用 Skycure 移动威胁防御。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9be25144ce8c556e890668979e674dd56370f8cd
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 05/23/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-若要启用 Skycure 移动威胁防御，则应已经在 Skycure 控制台中配置 Intune 连接器 /intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)。
+若要启用 Skycure 移动威胁防御，应已经[在 Skycure 控制台中配置 Intune 连接器] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)。
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>在 Intune 中启用 Skycure MTD 连接
 
-1.  转到“[Intune 经典控制台](https://manage.microsoft.com/)”，然后输入你的凭据。
+1.  转到“Intune 经典控制台[](https://manage.microsoft.com/)”，然后输入你的凭据。
 
 2.  选择“管理员”&gt;“第三方服务集成”，然后选择“Skycure 状态”并使用切换按钮启用“与 MTD 同步”。
 

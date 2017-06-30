@@ -1,7 +1,7 @@
 ---
-title: "Intune Azure 门户预览版中的组入门"
-titleSuffix: Intune Azure preview
-description: "了解 Intune Azure 门户预览版中的组的新增功能"
+title: "Intune 中的组入门"
+titleSuffix: Intune on Azure
+description: "了解 Intune Azure 门户中组的新增功能"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6e2b75b1c85c0cd0ed98623dcd9d87b15eb082
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 98809446cefde3e949b620ca8ca801822e6f2759
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="get-started-with-groups"></a>组入门
 
-[!INCLUDE[azure preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 根据你的反馈，我们对 Microsoft Intune 中组的使用方法进行了某些更改。
 如果你从 Azure 门户使用 Intune，Intune 组已迁移到 Azure Active Directory 安全组。

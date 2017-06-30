@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Intune 的 Intune 角色 (RBAC)"
+title: "使用 Intune 的 RBAC"
 titleSuffix: Intune Azure preview
 description: "Intune Azure 预览版：了解 RBAC 如何使你控制可执行操作和进行更改的人员。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,160 +16,119 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9a6dfde1d02313e51f59d4fd101a175f347f6cec
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: 0e4b474ef53ba730c5c88e43cae4f607e627481c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="intune-roles-rbac-for-microsoft-intune"></a>Microsoft Intune 的 Intune 角色 (RBAC)
+# <a name="role-based-administration-control-rbac-with-intune"></a>使用 Intune 的基于角色的管理控制 (RBAC)
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，以及这些任务适用于哪些人员。 可以使用涵盖一些常见 Intune 方案的内置角色，也可以创建自己的角色。 角色是根据以下几点定义的：
 
-简单来说，Intune **角色**（或 RBAC）可帮助你控制可以执行各种 Intune 操作的人员，以及这些操作适用的人员。 可以使用涵盖一些常见 Intune 方案的内置角色，也可以创建自己的角色。
+- **角色定义**：角色名称、其管理的资源和授予每个资源的权限。
+- **成员**：获得授权的用户组。
+- **范围**：成员可以管理的用户组或设备组。
+- **作用域**：配置定义、成员和作用域后，将分配角色。
 
-角色是根据以下几点定义的：
+![Intune RBAC 示例](./media/intune-rbac-1.PNG)
 
-- **定义** - 角色的名称及其配置的权限。
-- **成员** - 将被授予这些权限的用户或用户组。
-- **作用域** - 指定人员（成员）可以管理的用户或设备。
-- **分配** - 当定义、成员和作用域配置完成后，则将分配角色。
+从新的 Intune 门户开始，**Azure Active Directory (Azure AD)** 将提供两个可与 Intune 一起使用的目录角色。 这些角色被授予完全权限，可在 Intune 中执行所有活动：
+
+- **全局管理员：**具有此角色的用户可访问 Azure AD 中的所有管理功能以及与 Azure AD 联合的服务（如 Exchange Online、SharePoint Online 和 Skype for Business Online）。 注册 Azure AD 租户的人员均将成为全局管理员。 只有全局管理员才能分配其他 Azure AD 管理员角色。 组织中可以有多个全局管理员。 全局管理员可以重置任意用户和所有其他管理员的密码。
+
+- **Intune 服务管理员：**服务存在时，具有该角色的用户拥有 Intune 内的全局权限。 另外，该角色提供管理用户、设备和以及创建并管理组的功能。
+
+    > [!IMPORTANT]
+    > Intune 服务管理员角色不提供管理 Azure AD 条件性访问设置的功能。
+
+    > [!TIP]
+    > Intune 还显示三个 Azure AD 扩展：**用户****组**和**条件性访问**，均使用 Azure AD RBAC 控制。 此外，**用户帐户管理员**仅执行 AAD 用户/组活动，而不具备在 Intune 中执行所有活动的完全权限。 请参阅[使用 Azure AD 的 RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)获取详细信息。
+
+## <a name="roles-created-in-the-intune-classic-console"></a>在 Intune 经典控制台中创建的角色
+
+仅具有“完全”权限的 Intune **服务管理员**可从 Intune 经典控制台迁移到 Azure 上的 Intune。 你需要对 Azure 门户中的 Intune 角色重新分配具有“只读”或“支持人员”访问权限的 Intune **服务管理员**，并将其从经典门户中删除。
+
+> [!IMPORTANT]
+> 如果管理员仍然需要使用 Intune 访问以管理 PC 的使用，你可能需要在经典控制台中保留 Intune 服务管理员访问权限。
 
 ## <a name="built-in-roles"></a>内置角色
 
-以下角色内置在 Intune 中，你可以自定义这些角色，也可以将它们分配到无需进一步配置的组。
+以下角色内置在 Intune 中，无需做更多配置即可将它们分配到组：
 
-- **Intune 管理员** - 具有所有 Intune 操作的完全权限。
-- **应用程序管理器** - 管理和部署应用程序及配置文件。
-- **配置策略管理器** - 管理和部署配置设置及配置文件。
-- **支持人员** - 执行远程任务，以及查看用户和设备信息。
-- **只读操作员** - 可在 Intune 门户中查看信息，但无法进行更改。
+- **支持操作员**：在用户和设备上执行远程任务，并可以将应用程序或策略分配给用户或设备。 
+- **策略和配置文件管理员**：管理符合性策略、配置文件、Apple 注册和企业设备标识符。
+- **只读操作员**：查看用户、设备、注册、配置和应用程序信息，但不能在 Intune 中进行更改。
+- **应用程序管理员**：管理移动和托管应用程序，并可以读取设备信息。
 
+### <a name="to-assign-a-built-in-role"></a>若要分配一个内置角色
 
-## <a name="custom-roles"></a>自定义角色
+1. 在“Intune 角色”上，选择你要分配的内置角色。
 
-如果没有任何内置角色满足你的需求，则可以通过选择跨许多 Intune 功能的设置来创建自己的角色。 可以在本主题后面看到可用设置的列表。
+2. 在<角色名称> -“属性”边栏选项卡上，依次选择“管理”、“分配”。
 
-### <a name="example"></a>示例
+    > [!NOTE] 
+    > 无法删除或编辑内置角色
+    
+3. 在“自定义角色”边栏选项卡，选择“分配”。
 
-你雇佣一个新的 IT 管理员，他将负责为伦敦办事处的用户部署和管理应用。 用户位于名为**伦敦**的 Azure AD 组中。 你希望确保 IT 管理员无法将应用部署到任何其他办公室的用户。 执行下列操作：
-
-- 为内置“应用程序管理器”角色分配以下属性：
-    - **成员** - 选择包含将部署应用的 IT 管理员的组
-    - **作用域** - 选择**伦敦** Azure AD 组。
-
-    >[!IMPORTANT]
-    >若要创建、编辑或分配角色，你的帐户必须在 Azure AD 中具有以下权限之一：
-    >- **全局 AAD 管理员**
-    >- **Intune 服务管理员**
-
-### <a name="how-to-create-a-custom-role"></a>如何创建自定义角色
-
-1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**Intune 角色**”。
-![访问控制工作负荷](./media/axxess-control.png)
-1. 在“访问控制”工作负荷的“角色”边栏选项卡上，选择“添加自定义”。
-2. 在“添加自定义角色”边栏选项卡上，输入新角色的名称和说明，然后单击“权限”。
-3. 在“权限”边栏选项卡上，选择要用于此角色的权限。 使用本主题后面的自定义角色设置参考列表来帮助你。
-4. 完成后，请单击“确定”。
-5. 在“添加自定义角色”边栏选项卡上，单击“创建”。
-
-新角色会显示在“角色”边栏选项卡上的列表中。
-
-## <a name="how-to-assign-a-role"></a>如何分配角色
-
-1. 在“访问控制”工作负荷的“角色”边栏选项卡上，选择想要分配的内置角色或自定义角色。
-2. 在<角色名称> -“属性”边栏选项卡上，选择“管理” > “分配”。 在此边栏选项卡上，还可以编辑或删除现有角色。
-3. 在下一个边栏选项卡上，选择“分配”。
 4. 在“角色分配”边栏选项卡上，输入分配的“名称”和可选“说明”，然后选择以下各项：
     - **成员** - 选择包含想要对其授予权限的用户的组。
     - **作用域** - 选择包含上述成员将有权管理的用户的组。
-5. 完成后，请单击“确定”。
+<br></br>
+5. 完成后，请单击“确定”。 新分配将显示在分配列表中。
 
-新分配将显示在分配列表中。
+### <a name="intune-rbac-table"></a>Intune RBAC 表
 
-## <a name="custom-role-settings-reference"></a>自定义角色设置参考
+- 下载 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)，以查看有关每个角色可以执行的操作的详细信息。
 
-创建自定义角色时，可以配置一个或多个以下设置：
+## <a name="custom-roles"></a>自定义角色
 
-### <a name="device-configurations"></a>设备配置
+你可以创建一个自定义角色，以包含具体作业职能所需的任何权限。 例如，如果 IT 部门组管理应用程序、策略和配置的配置文件，则可以在一个自定义角色中添加所有这些权限。
 
-|||
-|-|-|
-|**分配**|将设备配置文件分配到组。|
-|**创建**|创建设备配置文件。|
-|**删除**|删除设备配置文件。|
-|**读取**|读取设备配置文件及其属性。|
-|**更新**|更新现有设备配置文件。|
+> [!IMPORTANT]
+> 若要创建、编辑或分配角色，你的帐户必须在 Azure AD 中具有以下权限之一：
+> - **全局管理员**
+> - **Intune 服务管理员**
 
-### <a name="managed-apps"></a>托管应用
+### <a name="to-create-a-custom-role"></a>若要创建自定义角色
 
-|||
-|-|-|
-|**分配**|将托管应用分配到组。|
-|**创建**|将新的托管应用添加到 Intune。|
-|**删除**|删除托管应用。|
-|**读取**|读取托管应用及其属性。|
-|**更新**|更新现有的托管应用。|
-|**擦除**|从设备中擦除托管应用。|
+1. 使用 Intune 凭据登录 [Azure 门户](https://portal.azure.com)。
 
-### <a name="managed-devices"></a>托管设备
+2. 从左侧菜单中选择“更多服务”，然后在文本框筛选器中键入 Intune。
 
-|||
-|-|-|
-|**删除**|从 Intune 中删除托管设备。|
-|**读取**|在 Intune 门户中查看有关托管设备的信息。|
-|**更新**|更新有关托管设备的信息。|
+3. 选择 Intune 后，即打开“Intune 仪表板”，选择“Intune 角色”。
 
-### <a name="mobile-apps"></a>移动应用
+4. 在“Intune 角色”边栏选项卡上，依次选择“Intune 角色”“添加自定义”。
 
-|||
-|-|-|
-|**分配**|将移动应用分配到组。|
-|**创建**|将新的移动应用添加到 Intune。|
-|**删除**|删除移动应用。|
-|**读取**|读取移动应用及其属性。|
-|**更新**|更新现有的移动应用。|
+5. 在“添加自定义角色”边栏选项卡上，输入新角色的名称和说明，然后单击“权限”。
 
-### <a name="organization"></a>组织
+3. 在“权限”边栏选项卡上，选择要用于此角色的权限。 使用 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)帮助你确定要应用哪些权限。
 
-|||
-|-|-|
-|**读取**|读取租户设置。|
-|**更新**|更新租户设置。|
+4. 完成后，选择“确定”。
 
-### <a name="remote-tasks"></a>远程任务
+5. 在“添加自定义角色”边栏选项卡上，单击“创建”。 新角色会显示在“Intune 角色”边栏选项卡的列表中。
 
-|||
-|-|-|
-|**绕过激活锁**|此功能无需用户的 Apple ID 和密码即可删除 iOS 设备中的激活锁。 |
-|**禁用丢失模式**|禁用丢失模式。 丢失模式可让你指定一条在设备的锁定屏幕上显示的信息和电话号码。|
-|**启用丢失模式**|启用丢失模式。 丢失模式可让你指定一条在设备的锁定屏幕上显示的信息和电话号码。|
-|**查找设备**|-|
-|**立即重启**|将重新启动设备。|
-|**远程锁定**|锁定设备。 设备所有者必须使用其密码才能解锁设备。|
-|**重置密码**|为设备生成一个新密码，新密码将显示在 <device name> 概述边栏选项卡上。|
-|**停用**|只删除由 Intune 管理的公司数据。 不会删除设备中的个人数据。|
-|**擦除**|将设备恢复为其默认设置。|
+### <a name="to-assign-a-custom-role"></a>若要分配自定义角色
 
+1. 在“Intune 角色”上，选择你要分配的自定义角色。
 
+2. 在<角色名称> -“属性”边栏选项卡上，依次选择“管理”、“分配”。 在此边栏选项卡上，还可以编辑或删除现有角色。
 
-### <a name="telecom-expenses"></a>电信费用
+3. 在“自定义角色”边栏选项卡，选择“分配”。
 
-|||
-|-|-|
-|**读取**|读取电信费用管理 (TEM) 设置。|
-|**更新**|更新电信费用管理 (TEM) 设置。|
+4. 在“角色分配”边栏选项卡上，输入分配的“名称”和可选“说明”，然后选择以下各项：
+    - **成员** - 选择包含想要对其授予权限的用户的组。
+    - **作用域** - 选择包含上述成员将有权管理的用户的组。
+<br></br>
+5. 完成后，请单击“确定”。 新分配将显示在分配列表中。
 
-### <a name="terms-and-conditions"></a>条款和条件
+## <a name="next-steps"></a>后续步骤
 
-|||
-|-|-|
-|**分配**|向组分配条款和条件。|
-|**创建**|创建条款和条件设置。|
-|**删除**|删除条款和条件设置。|
-|**读取**|读取 Intune 门户中的条款和条件设置。|
-|**更新**|更新现有的条款和条件设置。|
+[通过疑难解答门户使用 Intune 支持操作员角色](help-desk-operators.md)
+
+## <a name="see-also"></a>另请参阅
+
+[使用 Azure AD 的分配角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

@@ -1,5 +1,5 @@
 ---
-title: "配置 Skycure 以使用 Azure Active Directory 单一登录 | Microsoft Docs"
+title: "配置 Skycure 以使用 Azure Active Directory 单一登录"
 description: "配置 Skycure 以使用 Azure Active Directory 单一登录 (SSO)"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: bf4cf8441a0ff53abf3f7830f0cdd955a4317fb0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a26292f2247c4fa65e9aa2df047a9ef1fe98476a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

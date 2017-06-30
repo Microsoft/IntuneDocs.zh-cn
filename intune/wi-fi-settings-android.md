@@ -1,12 +1,12 @@
 ---
 title: "适用于 Android 设备的 Intune Wi-Fi 设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用于配置 Android 设备上 Wi-Fi 连接的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解 Intune 在 Android 和 Android for Work 设备配置的 Wi-Fi 连接设置。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,19 +16,21 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0dd0b8c4e4cf6733c20282817cba99d8379ef24e
+ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
+ms.openlocfilehash: 8e1c64730dc8bb91a0fe5e7936ed963d67be1feb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
 
-# <a name="wi-fi-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的 Wi-Fi 设置
+# <a name="wi-fi-settings-for-android-and-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 和 Android for Work 设备的 Wi-Fi 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>适用于基本配置文件和企业配置文件的 Wi-Fi 设置
+
+以下 Wi-Fi 设置可用于 Android 和 Andorid for Work 设备：
 
 - **网络名称** - 输入此 Wi-Fi 连接的名称。 用户浏览设备上的可用连接列表时，将看到该名称。
 - **SSID** - 服务设置标识符的英文缩写。 这是设备将连接到的无线网络的真实名称。 但是，用户在选择连接时只会看到上面创建的网络名称。

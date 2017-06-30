@@ -1,5 +1,5 @@
 ---
-title: "使用 MAM 策略保护应用数据 | Microsoft Docs"
+title: "使用 MAM 策略保护应用数据"
 description: "本主题说明移动应用管理策略如何帮助保护公司数据、防止数据丢失，以及分别保存个人和工作信息。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,8 +38,8 @@ ms.lasthandoff: 05/31/2017
 
 -   **已在第三方 MDM 解决方案中注册：**此类设备通常是公司自有设备。
 
-      > [!NOTE]
-      > 不建议在第三方移动应用程序管理或安全容器解决方案中使用应用保护策略。
+    > [!NOTE]
+    > 不建议在第三方移动应用程序管理或安全容器解决方案中使用应用保护策略。
 
 -   **未在任何 MDM 解决方案中注册：**此类设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中管理或注册。
 

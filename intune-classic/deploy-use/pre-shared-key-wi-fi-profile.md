@@ -1,5 +1,5 @@
 ---
-title: "使用 PSK 的 Wi-Fi | Microsoft Docs"
+title: "使用 PSK 的 Wi-Fi"
 description: "使用自定义配置创建具有预共享密钥的 Wi-Fi 配置文件。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6845097b768e67c7fbc6ff16bf41f27982c4b33e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7f3432f914c2f4a76d7a9303924d106b270220a1
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 
@@ -30,24 +30,24 @@ ms.lasthandoff: 05/23/2017
 下面介绍了如何使用 Intune 的**自定义配置**创建具有预共享密匙的 Wi-Fi 配置文件。 本主题还有一个如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
 
 > [!NOTE]
--    如下所述，你可能会发现从连接到网络的计算机复制代码更加轻松。
+-   如下所述，你可能会发现从连接到网络的计算机复制代码更加轻松。
 - 对于 Android，还可以选择使用此由 Johnathon Biersack 提供的 [Android PSK 生成器](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)。
--    可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
+-   可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
 -  对于 iOS，在 Mac 工作站上使用 Apple Configurator 来设置配置文件。 或者，使用此由 Johnathon Biersack 提供的 [iOS PSK 移动配置生成器](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)。
 
 
-1.    若要为 Android 或 Windows 创建具有预共享密钥的 Wi-Fi 配置文件或基于 EAP 的配置文件，则在你创建策略时为该设备平台选择“**自定义配置**”，而不是 Wi-Fi 配置文件。
+1.  若要为 Android 或 Windows 创建具有预共享密钥的 Wi-Fi 配置文件或基于 EAP 的配置文件，则在你创建策略时为该设备平台选择“**自定义配置**”，而不是 Wi-Fi 配置文件。
 
-2.    提供名称和说明。
-3.    添加新的 OMA-URI 设置：
+2.  提供名称和说明。
+3.  添加新的 OMA-URI 设置：
 
-   a.    输入此 Wi-Fi 网络设置的名称。
+   a.   输入此 Wi-Fi 网络设置的名称。
 
-   b。    输入 OMA-URI 设置的说明或留空。
+   b。   输入 OMA-URI 设置的说明或留空。
 
-   c.    **数据类型**：设置为“String(XML)”
+   c.   **数据类型**：设置为“String(XML)”
 
-   d.    **OMA-URI**：
+   d.   **OMA-URI**：
 
     - **对于 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **对于 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml

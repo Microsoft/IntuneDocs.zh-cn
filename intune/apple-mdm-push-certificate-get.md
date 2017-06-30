@@ -1,12 +1,12 @@
 ---
 title: "获取 Apple MDM Push Certificate"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解获取 Apple MDM Push Certificate 以使用 Intune 管理 iOS 设备的步骤。"
+titleSuffix: Intune on Azure
+description: "了解获取 Apple MDM Push Certificate 以使用 Intune 管理 iOS 设备的步骤。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3ff50fa65eff897147081f2ec9ab366dbf50140
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3df23e1f29543701cf3806a8fecc132ef3ac4f43
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="get-an-apple-mdm-push-certificate"></a>获取 Apple MDM Push Certificate
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 启用了 iPad、iPhone 和 Mac 计算机的移动设备管理 (MDM)，并允许用户访问公司电子邮件和应用。 必须拥有 MDM Push Certificate 才能使用 Intune 管理 iOS 和 Mac 设备。 在将证书添加到 Intune 后，用户可以安装公司门户应用以注册其设备。 此外，你还可以设置具备 Apple 设备注册计划的公司所有的 iOS 设备管理，或使用 Apple Configurator 等注册设备。 有关注册选项的详细信息，请参阅[选择 iOS 设备的注册方式](enrollment-method-choose-ios.md)。
 
 ## <a name="steps-to-get-your-certificate"></a>获取证书的步骤
-在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。 在“Intune”边栏选项卡上，选择“**注册设备**” > “**Apple 注册**”“**Apple MDM Push Certificate**”，然后按照 Azure 门户中的编号步骤操作，如下所示。
+在 Intune 门户中，选择“设备注册” > “Apple 注册”“Apple MDM Push Certificate”，然后按照 Azure 门户中的编号步骤操作，如下所示。
 
 **步骤 1.下载创建 Apple MDM Push Certificate 所需的 Intune 证书签名请求。**<br>
 选择“下载 CSR”，本地下载并保存 .csr 文件。 .Csr 文件用于从 Apple 推送证书门户请求信任关系证书。
@@ -55,7 +55,7 @@ Apple MDM Push Certificate 有效期为一年，且必须手动续订才能维�
 > [!NOTE]
 > 证书与用于创建它的 Apple ID 相关联。 将公司 Apple ID 用于管理工具，此为最佳做法。 切勿使用个人 Apple ID。
 
-1. 在 [Azure Intune 门户](https://portal.azure.com)中，选择“设备注册” > “Apple 注册”，然后选择“Apple MDM Push Certificate”。
+1. 在 Intune 门户中，选择“设备注册” > “Apple 注册”，然后选择“Apple MDM Push Certificate”。
 2. 选择“下载 CSR”，本地下载并保存 .csr 文件。 .Csr 文件用于从 Apple 推送证书门户请求信任关系证书。
 3. 找到要续订的证书并选择“续订”。
 4. 在“续订 Push Certificate”屏幕上，提供备注以便有助于将来识别证书，选择“选择文件”浏览至要下载的新 .csr 文件，然后选择“上传”。

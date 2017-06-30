@@ -1,5 +1,5 @@
 ---
-title: "使用 Managed Browser 管理 Web 访问 | Microsoft Docs"
+title: "使用 Managed Browser 应用管理 Web 访问"
 description: "部署托管浏览器应用程序以限制 Web 浏览和传输到其他应用的 Web 数据传输。"
 keywords: 
 author: robstackmsft
@@ -15,15 +15,15 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 49ad005846265deb7d4b34b52a1c139e8f61372b
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 89f60e34fd89784ca8ea1fa3999927c7b0bc66e4
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -37,13 +37,13 @@ ms.lasthandoff: 05/31/2017
 **Android** – 无法使用托管浏览器应用。<br /><br />
 如果用户自己在版本早于 iOS 9 的 iOS 设备上安装托管浏览器，那么你创建的任何策略都不能对该浏览器进行管理。 若要确保浏览器由 Intune 管理，则用户必须先卸载该应用，然后你才能将其作为托管应用部署给这些用户。 在 iOS 9 及更高版本中，如果用户自己安装托管浏览器，系统将提示他们允许托管浏览器由策略管理。
 
-可以针对以下设备类型创建托管浏览器策略：
+可以针对以下设备类型创建 Managed Browser 策略：
 
 -   运行 Android 4 和更高版本的设备
 
 -   运行 iOS 8.0 及更高版本的设备
 
-Intune 托管浏览器支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)打开 Web 内容。
+Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)打开 Web 内容。
 
 ## <a name="create-a-managed-browser-policy"></a>创建托管浏览器策略
 
@@ -81,20 +81,20 @@ Intune 托管浏览器支持从 [Microsoft Intune 应用程序合作伙伴](http
 
 有关如何部署应用的详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)。
 
-## <a name="security-and-privacy-for-the-managed-browser"></a>托管浏览器的安全和隐私
+## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser 的安全和隐私
 
 -   在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
 
--   托管浏览器不使用用户在设备上对内置浏览器进行的设置。 这是因为托管浏览器无权访问这些设置。
+-   Managed Browser 不使用用户在设备上对内置浏览器进行的设置。 这是因为 Managed Browser 无权访问这些设置。
 
--   如果你在与托管浏览器关联的移动应用程序管理策略中配置了“访问需要简单 PIN”或“访问需要公司凭据”选项，且用户选择了“身份验证”页上的帮助链接，则他们可以浏览所有 Internet 站点，而无需考虑这些网站是否已添加到托管浏览器策略中的阻止列表中。
+-   如果你在与 Managed Browser 关联的移动应用程序管理策略中配置了“访问需要简单 PIN”或“访问需要公司凭据”选项，且用户选择了“身份验证”页上的帮助链接，则他们可以浏览任何 Internet 站点，而无需考虑这些网站是否已添加到 Managed Browser 策略中的阻止列表。
 
--   托管浏览器仅能在直接访问站点时阻止访问。 使用中间服务（例如翻译服务）访问站点时，该策略则无法阻止访问。
+-   Managed Browser 仅能在直接访问站点时阻止访问。 使用中间服务（例如翻译服务）访问站点时，该策略则无法阻止访问。
 
 -   若要允许身份验证并确保可以访问 Intune 文档，请从允许或阻止列表设置中移除 **&#42;.microsoft.com**。 始终允许。
 
 ### <a name="turn-off-usage-data"></a>关闭用法数据
-Microsoft 会自动收集有关性能和托管浏览器使用情况的匿名数据以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。
+Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。
 
 ## <a name="reference-information"></a>参考信息
 

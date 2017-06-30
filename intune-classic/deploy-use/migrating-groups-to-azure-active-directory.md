@@ -1,5 +1,5 @@
 ---
-title: "迁移到 Azure Active Directory 组 | Microsoft Docs"
+title: "迁移到 Azure Active Directory 组"
 description: "如何将组从 Intune 迁移到 Azure AD"
 keywords: 
 author: robstackmsft
@@ -13,10 +13,10 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 829057773e1ef40b179435b5b81bfcd9fc5c84f3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

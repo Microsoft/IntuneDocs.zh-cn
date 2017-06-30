@@ -1,7 +1,7 @@
 ---
 title: "适用于 iOS 设备的 Intune 主屏幕布局设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用于在 iOS 设备上自定义主屏幕和停靠的设置。"
+titleSuffix: Intune on Azure
+description: "了解可在 iOS 设备上使用自定义主屏幕和停靠的设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7743573ab893b7d54c11e183133fa02368c00779
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 77b4e0929af72d6c4522f1b8674ba7a185b52a84
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune 主屏幕布局设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用这些设置配置停靠上的应用、文件夹和 Web 剪辑的布局，以及分配了策略的所有 iOS 设备的主屏幕。
 

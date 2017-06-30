@@ -1,7 +1,7 @@
 ---
 title: "监视 Intune 设备符合性策略"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何监视设备符合性策略。"
+titleSuffix: Intune on Azure
+description: "了解如何监视设备符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,10 +16,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
+ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/15/2017
 
 
 ---
@@ -122,8 +122,6 @@ ms.lasthandoff: 05/23/2017
     -   错误
 
 如果单击“**更新**”按钮，弹出窗口应关闭，结果应根据所选的筛选条件进行更新。
-
-![筛选器更新按钮](./media/idc-5.png)
 
 ##### <a name="device-details"></a>设备详细信息
 

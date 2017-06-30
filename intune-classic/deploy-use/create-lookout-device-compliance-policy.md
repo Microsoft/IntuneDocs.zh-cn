@@ -1,5 +1,5 @@
 ---
-title: "启用设备保护规则 | Microsoft Docs"
+title: "启用设备保护规则"
 description: "在设备合规性策略中启用移动威胁保护规则。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67913bfcbca3cef52e309ad86bfe722db6e16895
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 28ae825a9e33547a1987989d38667417214b97b2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

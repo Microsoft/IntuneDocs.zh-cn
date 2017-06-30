@@ -1,5 +1,5 @@
 ---
-title: "Android for Work 的合规性设置 | Microsoft Docs"
+title: "Android for Work 的合规性设置"
 description: "本主题介绍适用于与 Android for Work 兼容的 Android 设备的设备合规性策略设置。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88774055297f06d6901f1a9eea8e6fd60a697e64
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 79be4993c9b23294d1f49743f863588f9d0cb9b5
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

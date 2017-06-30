@@ -1,5 +1,5 @@
 ---
-title: "创建和部署 MAM 策略 | Microsoft Docs"
+title: "创建和部署 MAM 策略"
 description: "使用本主题中的分步说明来创建和部署移动应用管理策略。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 73675b3c42691f030cd292d1956e225f2175ff00
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -109,9 +109,9 @@ ms.lasthandoff: 05/23/2017
 ## <a name="line-of-business-lob-apps-optional"></a>业务线 (LOB) 应用（可选）
 
 从 Intune 1703 版本开始，当你在创建新的应用保护策略时通常可以选择将 LOB 应用添加到 Intune。 这样，你就可以选择使用 MAM SDK 定义 LOB 应用的应用保护策略，而不需要完整的应用部署权限。
-
+/intune/app-sdk-get-started
 > [!TIP]
-> 在进入 [Intune App SDK](/intune-classic/develop/intune-app-sdk-get-started) 工作流时，你还可以将 LOB 应用添加到 Intune。
+> 在进入 [Intune App SDK](/intune/app-sdk-get-started) 工作流时，你还可以将 LOB 应用添加到 Intune。
 
 > [!IMPORTANT]
 > 如果用户仅具有部署 MAM 应用的特定权限，而不具有完整的应用部署权限，则他们可以在 Intune 中部署任何应用，虽然他们无法进入 Intune SDK 工作流，但仍可以通过 MAM 应用保护策略创建工作流添加其 LOB 应用。

@@ -1,7 +1,7 @@
 ---
 title: "设备符合性入门"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：使用本主题了解在 Microsoft Intune 中创建合规性策略所需先决条件"
+titleSuffix: Intune on Azure
+description: "使用本主题了解在 Microsoft Intune 中创建符合性策略所需先决条件"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,23 +16,23 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f59801abf29d15581fcdc577c5320942208595b1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Itune Azure 预览版中的设备合规性入门
+# <a name="get-started-with-device-compliance-in-intune"></a>Itune 中的设备符合性入门
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 在本主题中，你将了解以下内容： 
 
 - 开始创建设备符合性策略之前需要执行的操作。
-- 快速浏览在 Intune Azure 预览门户中可以查看和执行的操作。 
+- 快速浏览在 Intune Azure 门户中可以查看和执行的操作。 
 
 如果不熟悉设备符合性，可以阅读[本主题](device-compliance.md)，了解什么是设备符合性，以及如何在组织中使用。
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 05/23/2017
 
 ##  <a name="azure-portal-workflow"></a>Azure 门户工作流
 
-以下是如何在 Intune Azure 预览门户中创建和管理设备符合性的概述。
+下面概述如何在 Intune Azure 门户中创建和管理设备符合性。
 
 <!---### Overview
 

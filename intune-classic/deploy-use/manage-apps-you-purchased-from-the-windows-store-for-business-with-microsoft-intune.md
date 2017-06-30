@@ -1,5 +1,5 @@
 ---
-title: "管理适用于企业的 Windows 应用商店应用 | Microsoft Docs"
+title: "管理适用于企业的 Windows 应用商店应用"
 description: "如果想要从 Intune 控制台对批量采购的应用进行管理和部署，请将 Microsoft Intune 连接到适用于企业的 Windows 应用商店"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6c84735b6bb8e7f636ea155437e7d90b8f3cc0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 888d825fb9955e97b49e54a0c36ab882055076d8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -63,7 +63,7 @@ ms.lasthandoff: 05/23/2017
  * 注册后，请选择“配置同步”。
 4. 在**配置适用于企业的 Windows 应用商店的应用同步**对话框中，选择**启用适用于企业的 Windows 应用商店同步**。
 5. 在“语言”下拉列表中，选择适用于企业的 Windows 应用商店的应用在 Intune 控制台中显示时使用的语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
-6. 单击" **确定**"。
+6. 单击“确定”。
 
 ## <a name="synchronize-apps"></a>同步应用
 

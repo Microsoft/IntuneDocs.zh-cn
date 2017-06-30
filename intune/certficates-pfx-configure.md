@@ -1,12 +1,12 @@
 ---
 title: "使用 Intune 配置和管理 PKCS 证书"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何配置基础结构，然后使用 Intune 创建并分配 PKCS 证书。"
+titleSuffix: Intune on Azure
+description: "了解如何配置基础结构，然后使用 Intune 创建并分配 PKCS 证书。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>使用 Intune 配置和管理 PKCS 证书
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主题介绍了如何配置基础结构，然后使用 Intune 创建并分配 PKCS 证书配置文件。
 
@@ -117,8 +117,8 @@ ms.lasthandoff: 05/23/2017
 
 ### <a name="to-enable-support-for-the-certificate-connector"></a>如何启用对证书连接器的支持
 
-1.  登录 Azure 门户。
-2.  依次选择“更多服务” > “其他” > “Intune”。
+1.  登录到 Azure 门户中。
+2.  选择“更多服务” > “监视 + 管理” > “Intune”。
 3.  在“Intune”边栏选项卡上，选择“配置设备”。
 2.  在“设备配置”边栏选项卡上，依次选择“设置” > “证书颁发机构”。
 2.  在“第 1 步”下，选择“启用”。
@@ -153,7 +153,7 @@ ms.lasthandoff: 05/23/2017
 
     你现在可以关闭证书连接器 UI。
 
-6.  打开命令提示符，然后键入“services.msc”。 然后，按 **Enter** 键，右键单击“Intune 连接器服务”，然后选择“重启”。
+6.  打开命令提示符，然后键入“services.msc”。 然后，按 Enter 键，右键单击“Intune 连接器服务”，然后选择“重启”。
 
 若要验证服务是否在运行，请打开浏览器，然后输入以下 URL（应返回“403”错误）：
 
@@ -184,18 +184,19 @@ ms.lasthandoff: 05/23/2017
     - 证书颁发机构名称 - 输入证书颁发机构的名称。
     - 证书模板名称 - 输入配置使用网络设备注册服务且已添加到发证 CA 的证书模板的名称。
     请确保此名称与运行网络设备注册服务的服务器的注册表中所列证书模板名称之一完全匹配。 确保指定证书模板名称，而不是证书模板显示名称。 
-    若要查找证书模板的名称，请浏览到以下项：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP。 你将看到作为 **EncryptionTemplate**、 **GeneralPurposeTemplate**和 **SignatureTemplate**的值而列出的证书模板。 默认情况下，所有三个证书模板的值均为“IPSECIntermediateOffline”，映射到模板显示名称“IPSec (脱机请求)”。 
+    若要查找证书模板的名称，请浏览到以下项：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP。 你将看到作为 **EncryptionTemplate**、**GeneralPurposeTemplate**和 **SignatureTemplate** 的值而列出的证书模板。 默认情况下，所有三个证书模板的值均为“IPSECIntermediateOffline”，映射到模板显示名称“IPSec (脱机请求)”。 
     - 使用者名称格式 - 在列表中，选择 Intune 如何在证书请求中自动创建使用者名称。 如果证书用于用户，还可包含使用者名称中的用户电子邮件地址。 选择：
         - 未配置
         - 公用名称
         - 包含电子邮件地址的公用名称
         - 作为电子邮件地址的公用名称
-    - 使用者可选名称 - 指定 Intune 如何在证书请求中自动创建使用者可选名称 (SAN) 的值。 例如，你选择了用户证书类型，则可以在使用者可选名称中包括用户主体名称 (UPN)。 如果将使用客户端证书向网络策略服务器进行验证，则必须将使用者可选名称设置为 UPN。
-    - 扩展密钥用法 (Android) - 选择“添加”，添加证书的使用目的值。 大多数情况下，证书将需要“客户端身份验证”  以便用户或设备能够向服务器进行验证。 但，你可以根据需要添加任何其他密钥用法。 
+    - 使用者可选名称 - 指定 Intune 如何在证书请求中自动创建使用者可选名称 (SAN) 的值。 例如，你选择了用户证书类型，则可以在使用者可选名称中包括用户主体名称 (UPN)。 如果使用客户端证书向“网络策略服务器”进行身份验证，则要将使用者可选名称设置为 UPN。 
+    另外，也可以选择“自定义 Azure AD 属性”。 选择此选项后，将会显示另一个下拉字段。 在“自定义 Azure AD 属性”下拉字段中，有一个选项：“部门”。 选择此选项后，如果 Azure AD 中未标识部门，则不会颁发证书。 若要解决此问题，请标识部门并保存更改。 在设备下次签入时，问题将得到解决并将颁发证书。 ASN.1 是此字段使用的表示法。 
+    - 扩展密钥用法 (Android) - 选择“添加”，添加证书的使用目的值。 大多数情况下，证书将需要“客户端身份验证”以便用户或设备能够向服务器进行验证。 但，你可以根据需要添加任何其他密钥用法。 
     - 根证书 (Android) - 选择之前配置并分配给用户或设备的根 CA 证书配置文件。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。 这是之前创建的受信任的证书配置文件。
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+8. 完成后，返回“创建配置文件”边栏选项卡，然后单击“创建”。
 
-此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
+系统将创建配置文件并在“配置文件列表”边栏选项卡上显示。
 
 ## <a name="how-to-assign-the-certificate-profile"></a>如何分配证书配置文件
 

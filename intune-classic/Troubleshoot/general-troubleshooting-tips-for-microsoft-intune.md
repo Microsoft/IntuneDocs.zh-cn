@@ -1,5 +1,5 @@
 ---
-title: "常规疑难解答提示 | Microsoft Docs"
+title: "常规疑难解答技巧"
 description: "帮助解决 Intune 问题的常规资源。"
 keywords: 
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 63bb7ca097390582d85f3ea7daced42d2a97fbb4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d348cc2850864206552bf53ab1beec9b9cb55bab
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -58,7 +58,7 @@ ms.lasthandoff: 05/23/2017
   - [将 Android 注册错误发送给 IT 管理员](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [将 iOS 注册错误发送给 IT 管理员](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   利用管理控制台数据（例如，策略实现问题），检查目标策略和该策略的状态，如通过 Microsoft Intune 使用组来管理用户和设备 /intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) 中所述。
+-   使用管理控制台数据（例如，针对策略实施问题）检查目标策略及其状态，如[通过 Microsoft Intune 使用组来管理用户和设备](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)中所述。
 
 ## <a name="research-the-solution"></a>研究解决方案
 

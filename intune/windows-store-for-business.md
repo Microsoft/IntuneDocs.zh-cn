@@ -1,12 +1,12 @@
 ---
-title: "管理来自适用于企业的 Windows 应用商店的应用 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何从适用于企业的 Windows 应用商店将应用同步到 Intune，并对其进行分配和跟踪。"
+title: "管理来自适用于企业的 Windows 应用商店的应用"
+titleSuffix: Intune on Azure
+description: "了解如何从适用于企业的 Windows 应用商店将应用同步到 Intune，并对其进行分配和跟踪。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b1a76e9f30e3587157d4b3085b1b3ce2abe0b37c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 95edb26152cf2d11413cfd7e46b8a37bdafc78ab
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Windows 应用商店中购买的应用
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 你可以在[适用于企业的 Windows 应用商店](https://www.microsoft.com/business-store)中为你的组织查找和购买应用，可以购买单个或批量购买。 通过将此应用商店连接到 Microsoft Intune，你可以在 Intune 门户中管理批量购买的应用。 例如：
@@ -58,7 +58,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="configure-synchronization"></a>配置同步
 
 1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“移动应用”。
 1. 在“移动应用”边栏选项卡上，选择“设置” > “适用于企业的 Windows 应用商店”。
 2. 单击“启用”。

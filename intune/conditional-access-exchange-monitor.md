@@ -1,6 +1,6 @@
 ---
 title: "监视本地 Exchange 和 Exchange Online 的条件访问符合性"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "通过 Intune Azure 门户监视本地 Exchange 和 Exchange Online 的条件访问符合性"
 keywords: 
 author: andredm7
@@ -15,15 +15,15 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>在 Intune Azure 预览版中监视本地 Exchange 和 Exchange Online 的条件访问符合性
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>在 Intune 中监视本地 Exchange 和 Exchange Online 的条件性访问符合性
 
 从 Intune 1704 版本开始，管理员可以查看与 Exchange ActiveSync 设备记录（通过本地 Exchange Connector 或 Intune 服务到服务连接器（Exchange Online 连接器）与 Intune 同步）相关的报告信息。 条件访问符合性报告将提供具有不同同步状态的设备摘要：
 

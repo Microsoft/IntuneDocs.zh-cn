@@ -1,7 +1,7 @@
 ---
 title: "如何使用 Windows Hello 企业版"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何创建策略以控制 Windows Hello 企业版在托管设备上的使用。"
+titleSuffix: Intune on Azure
+description: "了解如何创建策略以控制 Windows Hello 企业版在托管设备上的使用。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,10 +16,10 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d375a40283a5f3c1e9b7302d659739d4ca3d508
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0ef9e70dc918b485f893cf3193f7e76f6084a896
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 # <a name="use-windows-hello-for-business"></a>使用 Windows Hello 企业版
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 与 Windows Hello 企业版（以前称为 Microsoft Passport for Work）集成，Windows Hello 企业版是使用 Active Directory 或 Azure Active Directory 帐户取代密码、智能卡或虚拟智能卡进行登录的一种替代方法。
 

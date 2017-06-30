@@ -1,5 +1,5 @@
 ---
-title: "部署策略和应用 | Microsoft Docs"
+title: "部署策略和应用"
 description: "可以启用策略设置并部署将在设备注册到管理后立即应用的应用。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 90ca67757367f89a7c1a0eebea70f107eb279378
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: cf86d82fe636d2641f82ca951e508bea93abf683
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/23/2017
 - [iOS](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android 和 Samsung KNOX 标准版](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune)
 - [Android for Work](/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
-- [Windows 10 /intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 10（电脑版和移动版）](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
 - [Windows 8.1](/intune-classic/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
 - [Windows Phone 8.1](/intune-classic/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
 - [Windows 团队](/intune-classic/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
@@ -73,5 +73,5 @@ ms.lasthandoff: 05/23/2017
 
 >[!div class="step-by-step"]
 
->[&larr; **组织用户和设备**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**自定义公司门户** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
+>[&larr; **组织用户和设备**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**自定义公司门户** &rarr;](/intune/company-portal-customize)  
 

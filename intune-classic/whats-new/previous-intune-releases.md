@@ -1,5 +1,5 @@
 ---
-title: "早期发行版本 | Microsoft Docs"
+title: "早期版本"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,10 +15,10 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fd1e154aed6b2afecb7a7b24b927f7a5f92acba9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0226b8677f2a1ac91e2d7512aa45d44928ecbd95
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "部署 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略 | Microsoft Docs"
+title: "部署 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略"
 description: "将 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略部署到 Intune 经典控制台。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19c8ca7bbfe19649585d63ce2c0c96a8f57b3739
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 60f4ab5a656a2e253d82971d7bea6b3a6c9eb25a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

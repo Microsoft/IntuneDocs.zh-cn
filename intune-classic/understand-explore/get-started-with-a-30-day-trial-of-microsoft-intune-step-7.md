@@ -1,5 +1,5 @@
 ---
-title: "转换为付费订阅 | Microsoft Docs"
+title: "转换为付费订阅"
 description: "设置 Intune 的免费 30 天评估后，需要了解有关订阅和授权的哪些内容。"
 keywords: 
 author: lindavr
@@ -14,10 +14,10 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d9adaa6cfc3c3c575e2bbe48a8a62945e7afff7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0ff65ec54ed6fe8701995d6ad629b34a1ba013b8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -28,9 +28,8 @@ ms.lasthandoff: 05/23/2017
 
 如果在符合条件的计划中购买至少 150 个 Microsoft Intune 的许可证，则可以使用“FastTrack 中心权益”服务，通过该服务，Microsoft 专家可以和你一起为 Intune 准备好环境。 请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems)。
 
-可以通过以下方式将免费 Intune 评估转换为付费订阅：
-
--   **Intune 订阅** - 向每个用户授予许可证。 有关详细信息，请参阅[如何购买 Microsoft Intune](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune)，并在开始使用 Intune 时查看其他配置步骤。
+可以通过以下方式将免费 Intune 评估转换为付费订阅：/intune/setup-steps)
+-   **Intune 订阅** - 向每个用户授予许可证。 有关详细信息，请参阅[如何购买 Microsoft Intune](/intune/setup-steps)，并在开始使用 Intune 时查看其他配置步骤。
 
 -   **企业移动性 + 安全性** - 提供 Intune、Azure Active Directory Premium 和 Azure RMS 服务。 有关详细信息，请与 Microsoft 客户经理或本地经销商联系，或者[了解 EMS 功能](https://www.microsoft.com/server-cloud/enterprise-mobility/overview.aspx)和[定价](https://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx)。
 

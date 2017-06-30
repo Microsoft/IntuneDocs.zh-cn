@@ -1,7 +1,7 @@
 ---
 title: "iOS 的 Intune 共享设备配置设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解在 iOS 设备锁定屏幕上显示信息可以使用的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解在 iOS 设备锁定屏幕上显示信息可以使用的 Intune 设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6a2aba8b2f062a3e06d517a572992b84fd977514
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 31e7f0d56d3fd6e637671b3bf551708eb626f5dc
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>用于在 iOS 设备锁定屏幕上显示消息的共享设备配置设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 共享设备配置设置使你能够指定在登录窗口和锁定屏幕上显示的可选文本（即“如果丢失，返回到”消息和资产标记信息）。 
 

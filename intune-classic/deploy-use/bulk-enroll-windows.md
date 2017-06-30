@@ -1,5 +1,5 @@
 ---
-title: "Windows 10 的批量注册 | Microsoft Docs"
+title: "Windows 10 的批量注册"
 description: "为 Microsoft Intune 创建批量注册包"
 keywords: 
 author: NathBarn
@@ -14,10 +14,10 @@ ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 027f2ff4e822f7800405bd0f318afe28a47c5a00
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
@@ -48,19 +48,19 @@ Windows 设备的批量注册需要以下条件：
   - **项目文件夹** - 新项目保存的位置
   - **说明** - 项目的可选说明![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](../media/bulk-enroll-name.png)
 
-4.    输入设备的唯一名称。 名称可以包含序列号 (%%SERIAL%%) 或一组随机的字符。 （可选）如果正在升级 Windows 版本，还可以输入产品密钥、将设备配置为共享以及删除预安装的软件。<BR>
+4.  输入设备的唯一名称。 名称可以包含序列号 (%%SERIAL%%) 或一组随机的字符。 （可选）如果正在升级 Windows 版本，还可以输入产品密钥、将设备配置为共享以及删除预安装的软件。<BR>
 ![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](../media/bulk-enroll-device.png)
 
-5.    （可选）可以配置 Wi-Fi 网络设备首次启动时所连接到的网络。  如未配置此项，则在设备首次启动时，需要有线网络连接。
+5.  （可选）可以配置 Wi-Fi 网络设备首次启动时所连接到的网络。  如未配置此项，则在设备首次启动时，需要有线网络连接。
 ![在 Windows 配置设计器应用中启用包括网络 SSID 和网络类型选项的 Wi-Fi 的屏幕快照](../media/bulk-enroll-network.png)
 
-6.    选择“在 Azure AD 中注册”，输入“批量令牌到期”日期，然后选择“获取批量令牌”。
+6.  选择“在 Azure AD 中注册”，输入“批量令牌到期”日期，然后选择“获取批量令牌”。
 ![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](../media/bulk-enroll-account.png)
 
 7. 提供你的 Azure AD 凭据，以获取批量令牌。
 ![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](../media/bulk-enroll-cred.png)
 
-8.    成功提取“批量令牌”后，单击“下一步”。
+8.  成功提取“批量令牌”后，单击“下一步”。
 
 9. （可选）可以“添加应用程序”和“添加证书”。 将在此设备上配置应用和证书。
 

@@ -1,7 +1,7 @@
 ---
 title: "适用于 Windows Phone 8.1 设备的 Intune 自定义设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可以在 Windows Phone 8.1 自定义配置文件中使用的设置。"
+titleSuffix: Intune on Azure
+description: "了解可以在 Windows Phone 8.1 自定义配置文件中使用的设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 646d0ec4274e068487ad9546ff0b5dabfc815e46
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b3dcad95b85d967e48c8b05d655a5e679daa0aee
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows Phone 8.1 设备的自定义设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用 Microsoft Intune 的 Windows Phone 8.1 **自定义**配置文件来分配可用于控制 Windows Phone 8.1 设备功能的 OMA-URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 

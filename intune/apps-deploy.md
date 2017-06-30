@@ -1,7 +1,7 @@
 ---
-title: "如何将应用分配到组 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：将应用添加到 Intune 后，需要将其分配给用户或设备组。"
+title: "如何将应用分配到组"
+titleSuffix: Intune on Azure
+description: "将应用添加到 Intune 后，需要将其分配给用户组或设备组。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1246ef539c044b894b4e4a93f449e60e6462600a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 631f6fb88c6b348c6fcd0063093d622f0e4aa2c8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 将应用分配到组
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 将应用添加到 Intune 后，需要将其交给用户和设备。 通过分配执行此操作。
 
@@ -46,10 +46,10 @@ ms.lasthandoff: 05/23/2017
 > [!NOTE]
 > 目前，可将（业务线和应用商店购买的）iOS 和 Android 应用分配到未注册到 Intune 的设备。
 
-## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>更改如何在 Intune 预览版将应用分配到组
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune"></a>对在 Intune 中将应用分配到组的方式的更改
 
-在 Intune Azure 预览版中，无法再使用 Intune 组来分配应用；现在需使用 Azure Active Directory (Azure AD) 安全组。 因此，需要了解应用分配的工作方式的变化，特别是已将应用分配到 Intune 子组时。
-最需要注意的是，Azure AD 中不存在子组的概念。 但是，有些组可能包含相同的成员。 在这种情况下，经典 Intune 和 Intune Azure 预览版之间的行为是不同的。 下表对这一情况进行了说明：
+在 Intune Azure 门户中，不再使用 Intune 组来分配应用；现在需使用 Azure Active Directory (Azure AD) 安全组。 因此，需要了解应用分配的工作方式的变化，特别是已将应用分配到 Intune 子组时。
+最需要注意的是，Azure AD 中不存在子组的概念。 但是，有些组可能包含相同的成员。 在这种情况下，经典 Intune 和 Intune Azure 门户之间的行为是不同的。 下表对这一情况进行了说明：
 
 ||||||
 |-|-|-|-|-|
@@ -61,14 +61,14 @@ ms.lasthandoff: 05/23/2017
 |必需和可用<sup>1</sup>|可用|必需和可用|必需和可用|-|
 |必需|不适用|必需|必需|-|
 |必需和可用|不适用|必需和可用|必需和可用|-|
-|必需|“卸载”|必需|必需|-|
-|必需和可用|“卸载”|必需和可用|必需和可用|-|
+|必需|卸载|必需|必需|-|
+|必需和可用|卸载|必需和可用|必需和可用|-|
 <sup>1</sup> 仅针对托管 iOS 应用商店应用：将这些应用添加到 Intune 并将其分配为“必需”时，将自动使用“必需”和“可用”意图进行创建。
 
 可采用以下操作，避免分配冲突：
 
-1.    如果先前已将应用分配到了相关 Intune 父组和子组，请考虑在开始迁移租户前删除这些分配。
-2.    从父组删除子组，并创建包含旧子组成员的新组。 然后可向此组创建新应用分配。
+1.  如果先前已将应用分配到了相关 Intune 父组和子组，请考虑在开始迁移租户前删除这些分配。
+2.  从父组删除子组，并创建包含旧子组成员的新组。 然后可向此组创建新应用分配。
 注意：如果上一个父组为“所有用户”，则需要创建一个不包含子组成员的新动态组。
 必须在用户和设备组的 [Azure 门户](https://portal.azure.com/)中更改组。 [经典 Azure 门户](https://manage.windowsazure.com/)只允许更改用户组。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 05/23/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“移动应用”。
+3. 在 Intune 边栏选项卡上，选择“移动应用”。
 1. 在“移动应用”工作负荷中，选择“管理” > “应用”。
 2. 在“应用列表”边栏选项卡中，单击要分配的应用。
 3. 在“<应用名称> - 概述”边栏选项卡上，选择“管理” > “分配”。
