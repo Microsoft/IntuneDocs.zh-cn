@@ -1,5 +1,5 @@
 ---
-title: "应用预配配置文件 | Microsoft Docs"
+title: "应用预配配置文件"
 description: "Intune 提供了一些工具，用于将新的预配配置文件策略主动部署到安装了即将到期应用的设备。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: adebcc5a8d8f43bed383b51bb094fa122ebabc0a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6e975aa7ee22f826c7a0a60d637d651fd347bc54
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

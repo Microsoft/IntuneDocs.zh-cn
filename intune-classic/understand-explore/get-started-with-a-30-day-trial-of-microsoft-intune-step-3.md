@@ -1,5 +1,5 @@
 ---
-title: "创建用于免费试用版中的组织用户和设备的组 | Microsoft Docs"
+title: "创建用于免费试用版中的组织用户和设备的组"
 description: "注册 Microsoft Intune 的免费 30 天评估时，如何创建设备组和用户组。"
 keywords: 
 author: lindavr
@@ -14,10 +14,10 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f6a5926876bdd7224d0e9bfef55aa86f51c87aff
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 084cc155a64a58582e3008df10e86c1e5266054d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "如何创建 Android 符合性策略"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何创建适用于 Android 设备的合规性策略。"
+titleSuffix: Intune on Azure
+description: "了解如何创建 Android 设备符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,20 +16,20 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 08d503fad2304b25e6feb7f41cf0b93546dd26fd
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>如何在 Intune Azure 预览门户中创建适用于 Android 设备的设备符合性策略
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中创建适用于 Android 设备的设备符合性策略
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-将为 Intune Azure 预览门户中的所有平台创建设备符合性策略。 
+将为 Intune Azure 门户中的所有平台创建设备符合性策略。 
 
 - 若要详细了解什么是合规性策略，请参阅[什么是设备合规性](device-compliance.md)主题。
 - 若要了解创建合规性策略之前需要解决的先决条件，请参阅[设备合规性入门](device-compliance-get-started.md)主题。

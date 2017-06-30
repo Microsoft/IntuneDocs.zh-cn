@@ -1,12 +1,12 @@
 ---
-title: "管理 iOS 批量购买的应用 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何可以将从 iOS 应用商店中批量购买的应用同步到 Intune 中，然后管理并跟踪其使用情况。"
+title: "管理批量购买的 iOS 应用"
+titleSuffix: Intune on Azure
+description: "了解如何可以将从 iOS 应用商店批量购买的应用同步到 Intune 中，然后管理并跟踪其使用情况。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 06/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3974145b4c244e251ee91a6216a79a6d8b1ad792
+ms.sourcegitcommit: 77277069a8c436c09be3940493a2c3e7b5dd8dc4
+ms.openlocfilehash: 32b57bba8347d815ada9705317bf467dd4644124
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/19/2017
 
 ---
 
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 应用
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 iOS 应用商店允许你为想要在公司运行的应用购买多个许可证。 这有助于降低跟踪多个已购买应用副本的管理成本。
 
@@ -54,7 +54,7 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
 1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“移动应用”。
 1.  在“移动应用”工作负载中，依次选择“设置” > “iOS VPP 标记”。
 2.  在 VPP 标记列表边栏选项卡上，单击“添加”。
@@ -69,24 +69,27 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 
 你可以随时通过选择“立即同步”将 Apple 保存的数据与 Intune 同步。
 
+> [!NOTE]
+> Microsoft Intune 将仅同步可通过 iTunes 应用商店公开获得的应用的信息。 尚不支持“针对 iOS 的自定义 B2B 应用”。 如果你的方案针对此类应用，将不同步应用信息。
+
 ## <a name="to-assign-a-volume-purchased-app"></a>如何分配批量购买应用
 
 1. 在“移动应用”工作负载中，依次选择“管理” > “获得许可的应用”。
-2. 在应用列表边栏选项卡上，选择要分配的应用，然后依次选择“...” >“分配组”。
+2. 在应用列表边栏选项卡上，选择要分配的应用，然后依次选择“...” > “分配组”。
 3. 在<应用名称> -“已分配的组”边栏选项卡中，选择“管理” > “已分配的组”。
 4. 选择“分配组”，然后在“选择组”边栏选项卡上，选择要将应用分配到的 Azure AD 用户或设备组。
-必须选择**必需**的分配操作。 此外，对设备组的分配可用于 2017 年 1 月之后创建的新租户。 如果你的租户在此之前创建的，并且没有选择将 VPP 应用分配给设备组，请联系 Intune 支持。
+必须选择“必需”的分配操作。 此外，对设备组的分配可用于 2017 年 1 月之后创建的新租户。 如果你的租户在此之前创建的，并且没有选择将 VPP 应用分配给设备组，请联系 Intune 支持。
 5. 完成后，选择“保存”。
 
 有关帮助监视应用分配的信息，请参阅[如何监视应用](apps-monitor.md)。
 
 ## <a name="further-information"></a>更多信息
 
-在将应用分配为**必需**安装后，安装该应用的每个用户都将使用许可证。
+在将应用分配为“必需”安装后，安装该应用的每个用户都将使用许可证。
 
 若要回收许可证，必须将分配操作更改为“卸载”。 卸载应用后，将回收许可证。
 
-具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 继续安装应用前，他们必须执行此操作。
+具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 继续安装应用前，他们必须执行此操作。 加入 Apple Volume Purchase 计划的邀请需要用户可以使用 iOS 设备上的 iTunes 应用。 如果你已经设置了自定义配置策略，以禁用 iTunes 应用商店应用，则 VPP 应用的基于用户的许可将会无效。 解决方案是删除策略，或使用基于设备的许可来允许 iTunes 应用。
 
 在将 VPP 应用分配为可用后，会直接从应用商店分配应用内容和许可证。
 

@@ -1,11 +1,11 @@
 ---
-title: "移动设备注册的先决条件 | Microsoft Docs"
+title: "移动设备注册先决条件"
 description: "设置移动设备管理 (MDM) 先决条件并准备好注册不同的操作系统。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6877c5263f3c97b9cff295d62d39a365027151eb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -46,19 +46,18 @@ ms.lasthandoff: 05/23/2017
 ## <a name="step-1-enable-connections"></a>步骤 1：启用连接
 
 启用移动设备注册前，请确保已完成以下步骤：
-- [查看所需网络 URL 和端口](../get-started/network-bandwidth-use.md)
-- [添加并验证域名](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [查看所需网络 URL 和端口](/intune/network-bandwidth-use)
+- [添加并验证域名](/intune/custom-domain-name-configure)
 
 ## <a name="step-2-set-mdm-authority"></a>步骤 2：设置 MDM 机构
 MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。 如果将 Configuration Manager 设置为管理机构，则没有其他服务可以用于移动设备管理。
 
 >[!IMPORTANT]
-> 请仔细考虑是希望仅使用 Intune（联机服务），还是使用带 Intune 的 System Center Configuration Manager（与联机服务相结合的本地软件解决方案）来管理移动设备。 设置移动设备管理机构后，如果没有 Microsoft 支持部门的帮助，将无法对其进行更改。 有关说明，请参阅[如果选择了错误的 MDM 机构设置怎么办](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
-
+> 在 Configuration Manager 版本 1610 或更高版本和 Microsoft Intune 版本 1705 中，你将可以更改 MDM 颁发机构，而无需联系 Microsoft 支持部门，并且无需取消注册并重新注册现有的受管理设备。 有关详细信息，请参阅[如果选择了错误的 MDM 颁发机构设置怎么办](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
 
 1.  在“[Microsoft Intune 管理控制台](https://manage.microsoft.com)”中，选择“**管理员**”&gt;“**移动设备管理**”。
 
-2.  在“任务”  列表中，单击“设置移动设备管理机构” 。 将打开“设置 MDM 机构”  对话框。
+2.  在“任务”列表中，单击“设置移动设备管理机构”。 将打开“设置 MDM 机构”对话框。
 
     ![“设置 MDM 机构”对话框](../media/intune-mdm-authority.png)
 
@@ -116,7 +115,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 ## <a name="step-5-assign-user-licenses"></a>步骤 5：分配用户许可证
 
-使用 **Office 365 管理门户**手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure Active Directory (Azure AD) 的帐户。 可[将本地用户同步到 Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad)。
+使用 **Office 365 管理门户**手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure Active Directory (Azure AD) 的帐户。 可[将本地用户同步到 Azure AD](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad)。
 
 1.  使用你的租户管理员凭据登录到 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)。
 
@@ -154,7 +153,13 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 ## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>如果选择了错误的 MDM 机构设置怎么办
 
-如果确定选择了错误的 MDM 机构设置并需要对其进行更改，则必须与 Microsoft 支持部门联系。 无法自行更改该设置。 联系 Microsoft 支持部门之前，请查看以下信息（Microsoft 支持部门需要获得这些信息才能进行更改）。
+如果确定选择了错误的 MDM 颁发机构设置并需要对其进行更改，请使用以下选项。
+
+### <a name="change-the-mdm-authority-yourself"></a>自己更改 MDM 颁发机构
+从 Configuration Manager 版本 1610 和 Microsoft Intune 版本 1705 开始，你将可以将 MDM 颁发机构从 Microsoft Intune 更改为 Configuration Manager（混合），反之亦然，而无需联系 Microsoft 支持部门，并且无需取消注册并重新注册现有的托管设备。 有关详细信息，请参阅[更改 MDM 颁发机构]( /sccm/mdm/deploy-use/change-mdm-authority)。
+
+### <a name="contact-microsoft-support"></a>联系 Microsoft 支持部门
+如果 Configuration Manager 早于版本 1610，你必须联系 Microsoft 支持部门。 无法自行更改该设置。 联系 Microsoft 支持部门之前，请查看以下信息（Microsoft 支持部门需要获得这些信息才能进行更改）。
 
 有三种方法可以重置 MDM 机构。 在支持请求中，需要选择适用于你的情况的方式。 如果请求的方案未列出，请进而与 Microsoft 支持部门联系。
 
@@ -166,7 +171,7 @@ Microsoft 支持部门将让你确认下列信息：
 
 如果正在使用共存，则需要验证 Intune 和 Office 365 清单。
 
-### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>将 MDM 机构从 Intune 重置为 Configuration Manager
+#### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>将 MDM 机构从 Intune 重置为 Configuration Manager
 
 请在联系 Microsoft 支持部门之前完成这些步骤以重置 MDM 机构。
 
@@ -180,7 +185,7 @@ Microsoft 支持部门将让你确认下列信息：
 - 在“策略” > “配置策略”下，删除适用于 MDM 设备的所有策略。
 - 在“应用” > “托管软件”中，删除适用于 MDM 设备的所有已发布应用程序。
 
-### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>将 MDM 机构从 Configuration Manager 重置为 Intune
+#### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>将 MDM 机构从 Configuration Manager 重置为 Intune
 
 请在联系 Microsoft 支持部门之前完成这些步骤以重置 MDM 机构。
 
@@ -194,7 +199,7 @@ Microsoft 支持部门将让你确认下列信息：
 - 重启 SMS Executive 服务。
 - 请提供一些示例用户，以便完成该过程后，我们可以验证 Configuration Manager 许可证已删除。
 
-### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>将 MDM 机构从 Office 365 重置为 Configuration Manager
+#### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>将 MDM 机构从 Office 365 重置为 Configuration Manager
 
 1. 导航到 [https://protection.office.com](https://protection.office.com)。
 2. 选择“安全策略”选项卡，然后选择“设备管理”。
@@ -205,7 +210,7 @@ Microsoft 支持部门将让你确认下列信息：
 >[!NOTE]
 >无法删除 IOS APN 证书，该证书仍附加到帐户。
 
-### <a name="next-steps-for-mdm-authority-resets"></a>MDM 机构重置的后续步骤
+#### <a name="next-steps-for-mdm-authority-resets"></a>MDM 机构重置的后续步骤
 
 Microsoft 支持部门验证适用清单上的项后，重置 MDM 机构最多需要 3 个工作日，但通常在一天之内完成。
 

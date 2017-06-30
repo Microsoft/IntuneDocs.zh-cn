@@ -1,5 +1,5 @@
 ---
-title: "使用 SDK 启用针对 MAM 的应用 | Microsoft Docs"
+title: "使用 SDK 启用针对 MAM 的应用"
 description: "本主题简要概述了应使用 Intune App SDK 的原因。"
 keywords: 
 author: mtillman
@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ec4e2f966fa8c24505ce1fa74a59c95908273bd1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: de7c4f57e6d42ac36ba5873e3d0ba1eaee6a5e8b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -39,8 +39,8 @@ ms.lasthandoff: 05/23/2017
 
 你需要访问应用的源代码才可使用 SDK，但你可启用大部分 SDK 功能而无需更改应用的行为。
 
-有关 SDK 的概述，请参阅[概述](/intune-classic/develop/intune-app-sdk-get-started)。
+有关 SDK 的概述，请参阅[概述](/intune/app-sdk-get-started)。
 
 ### <a name="see-also"></a>另请参阅
-[决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+[决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](/intune/apps-prepare-mobile-application-management)
 

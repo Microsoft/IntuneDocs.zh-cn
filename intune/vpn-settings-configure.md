@@ -1,12 +1,12 @@
 ---
 title: "如何配置 Intune VPN 设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Intune 来配置你管理的设备上的 VPN 连接。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune 配置所管设备上的 VPN 连接。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8a8742d0b579fec734dd8335e2a610d126db21fa
+ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
+ms.openlocfilehash: e6a59c1f5fcb94d427b6d12eef19d4d49ff930ce
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
 
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 VPN 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 Microsoft Intune 中的“VPN 配置文件”将 VPN 设置分配到你组织中的用户和设备，从而可以方便且安全地连接到网络。
 
@@ -36,12 +36,11 @@ ms.lasthandoff: 05/23/2017
 
 可以使用以下连接类型创建 VPN 配置文件：
 
-||||||||
+|连接类型|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|连接类型|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |脉冲安全|是|是|是|是|是|是|
 |Cisco (IPSec)|否|是|否|否|否|否|
-|Citrix|是|是|否|否|否|否|
+|Citrix|是（仅 Android）|是|否|否|否|否|
 |F5 Edge Client|是|是|是|是|是|是|
 |Dell SonicWALL Mobile Connect|是|是|是|是|是|是|
 |Check Point Capsule VPN|是|是|是|是|是|是|
@@ -61,13 +60,14 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>创建包含 VPN 设置的设备配置文件
 
 1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “其他” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+3. 在 Intune 边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入 VPN 配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用 VPN 设置的设备平台。 目前，可以为 VPN 设备设置选择以下平台之一：
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -75,7 +75,7 @@ ms.lasthandoff: 05/23/2017
     - **Windows 10 及更高版本**
 6. 在“配置文件”类型下拉列表中，选择“VPN”。
 7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
-    - [Android 设置](vpn-settings-android.md)
+    - [Android 和 Android for Work 设置](vpn-settings-android.md)
     - [iOS 设置](vpn-settings-ios.md)
     - [macOS 设置](vpn-settings-macos.md)
     - [Windows Phone 8.1 设置](vpn-settings-windows-phone-8-1.md)

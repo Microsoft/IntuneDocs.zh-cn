@@ -1,7 +1,7 @@
 ---
-title: "如何监视应用信息和分配 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：将应用分配给用户或设备后，请使用此信息来帮助你监视其状态。"
+title: "如何监视应用信息和分配"
+titleSuffix: Intune on Azure
+description: "将应用分配给用户或设备后，请使用此信息来帮助你监视其状态。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7c39c904cd2a7bd20525d9072067c6e484b4437a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d588ecc8f2e211b5a8ccdfe7b7720869cc6327b8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 监视应用信息和分配
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 提供了许多可以用于监视所托管应用的属性及其分配状态的方法。
 

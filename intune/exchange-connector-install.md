@@ -1,12 +1,12 @@
 ---
-title: "本地 EAS 的 Exchange 连接器"
+title: "使用 Intune 设置本地 EAS 的 Exchange 连接器"
 titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：Exchange ActiveSync MDM - 使用连接器工具启用 Intune 管理控制台和本地 Exchange Server 之间的通信"
+description: "Intune Azure 预览版：Exchange ActiveSync MDM - 使用连接器工具启用 Intune 和本地 Exchange Server 之间的通信"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,20 +16,26 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 317b88e289fce216916dfa4ec3890ba7c9559c16
+ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
+ms.openlocfilehash: 9f4a310078a30f7dfefe66a9aba60cc74ad4e29b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="install-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>在 Microsoft Intune Azure 预览版中安装 Intune 本地 Exchange Connector
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>在 Microsoft Intune Azure 预览版中设置 Intune 本地 Exchange Connector
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+基于设备是否在 Intune 中注册且符合 Intune 设备符合性策略，本地 Exchange Server 环境可以使用 Intune 本地 Exchange Connector 来管理设备对本地 Exchange 邮箱的访问。 本地 Exchange Connector 还负责通过使用 Intune 与现有的 Exchange Active Sync (EAS) 记录同步，发现连接到本地 Exchange Server 的移动设备。
 
+> [!IMPORTANT]
+> Intune 仅支持每个订阅中存在一个本地 Exchange Connector 连接（任意类型）。
 
-若要设置连接以使 Microsoft Intune 能够与托管移动设备邮箱的 Exchange Server 通信，则必须从 Intune 管理控制台下载和配置本地 Exchange Connector。 Intune 仅支持每个订阅中存在一个 Exchange Connector 连接（任意类型）。
+若要设置允许 Microsoft Intune 与本地 Exchange Server 通信的连接，你需要遵循以下步骤：
+
+1.  从 Intune 门户下载 Intune 本地 Exchange Connector。
+2.  安装和配置 Intune 本地 Exchange Connector。
+3.  验证 Exchange 连接。
 
 ## <a name="on-premises-exchange-connector-requirements"></a>本地 Exchange Connector 的要求
 下表列出了你在其中安装本地 Exchange Connector 的计算机的要求。
@@ -39,8 +45,8 @@ ms.lasthandoff: 05/23/2017
 |操作系统|Intune 支持在运行任何版本的 Windows Server 2008 SP2 64 位、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 的计算机上安装 本地 Exchange Connector。<br /><br />该连接器在任何 Server Core 安装上都不受支持。|
 |Microsoft Exchange|本地连接器需要 Microsoft Exchange 2010 SP1 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是**新**配置还是**旧**配置，请与帐户管理员联系。|
 |移动设备管理机构| [将移动设备管理机构设置为 Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set)。|
-|硬件|安装连接器的计算机需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间。|
-|Active Directory 同步|必须[设置 Active Directory 同步](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用连接器将 Intune 连接到 Exchange Server。|
+|硬件|安装连接器的计算机需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间。|users-permissions-add.md
+|Active Directory 同步|必须[设置 Active Directory 同步](users-permissions-add.md)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用连接器将 Intune 连接到 Exchange Server。|
 |其他软件|Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完全安装必须安装在托管连接器的计算机上。|
 |网络|在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 
@@ -65,17 +71,18 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange Connector 软件安装包
 
-1. 在本地 Exchange Connector 支持的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](http://portal.azure.com)。
+1. 在本地 Exchange Connector 支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](http://portal.azure.com)。
 
-2.  选择“条件访问”工作负荷。
-3.  在 Azure 门户中选择“条件访问”工作负荷以打开“本地”边栏选项卡。
+2. 从左侧菜单中选择“更多服务”，然后在文本框筛选器中键入 Intune。
 
-4. 在“设置”部分中，选择“Exchange ActiveSync 本地连接器”，然后选择“下载本地连接器”。
+3. 选择 Intune 后，即打开“Intune 仪表板”，选择“本地访问”。
 
-4.  本地 Exchange Connector 包含在可以打开或保存的压缩 (.zip) 文件夹中。 在“文件下载”对话框中，选择“保存”以将压缩的文件夹存储到安全位置。
+4. 在“本地访问 - Exchange ActiveSync 连接器”边栏选项卡的“设置”部分，选择“下载本地连接器”。
 
-> [!IMPORTANT]
-> 请勿重命名或移动本地 Exchange Connector 文件夹中的文件。 移动或重命名该文件夹的内容将导致安装失败。
+5.  本地 Exchange Connector 包含在可以打开或保存的压缩 (.zip) 文件夹中。 在“文件下载”对话框中，选择“保存”以将压缩的文件夹存储到安全位置。
+
+    > [!IMPORTANT]
+    > 请勿重命名或移动本地 Exchange Connector 文件夹中的文件。 移动或重命名该文件夹的内容将导致 Exchange Connector 安装失败。
 
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>安装和配置 Intune On-Premises Exchange Connector
 执行下列步骤以安装 Intune On-Premises Exchange Connector。 每个 Intune 订阅只能安装一次本地 Exchange Connector，并且只能安装在一台计算机上。 如果尝试配置其他本地 Exchange Connector，新连接将替换原始连接。
@@ -120,7 +127,8 @@ ms.lasthandoff: 05/23/2017
 
     8. 选择“连接”。
 
-可能需要几分钟时间才能完成配置该连接。
+    > [!NOTE]
+    > 可能需要几分钟时间才能完成配置该连接。
 
 在配置期间，Exchange Connector 会存储你的代理设置以便能够访问 Internet。 如果代理设置发生更改，则必须重新配置 Exchange Connector 才能将更新的代理设置应用于 Exchange Connector。
 
@@ -131,7 +139,9 @@ Exchange Connector 设置连接后，与在 Exchange Connector 中管理的用�
 
 ## <a name="validate-the-exchange-connection"></a>验证 Exchange 连接
 
-在成功配置 Exchange Connector 之后，可以查看连接的状态和最后一次成功同步尝试的状态。 在 [Azure 门户](http://portal.azure.com)中，选择“Intune” > “条件访问”工作负荷。 在“设置”下，选择“Exchange 本地连接器”，然后验证连接是否显示为活动状态。
+在成功配置 Exchange Connector 之后，可以查看连接的状态和最后一次成功同步尝试的状态。 若要验证验证 Exchange Connector 连接：
+
+- 在“Intune 仪表板”中，选择“本地访问”。 在“管理”下，选择“Exchange 本地访问”以验证连接状态。
 
 你也可以检查最后一次成功同步尝试的时间和日期。
 

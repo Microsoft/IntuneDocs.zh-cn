@@ -1,7 +1,7 @@
 ---
-title: "在 Office 365 应用上设置基本数据管理 - Intune Azure 预览版"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：“管理 Office 365 应用”向导的支持文档。"
+title: "在 Intune 的 Office 365 应用上设置基本数据管理"
+titleSuffix: Intune on Azure
+description: "管理 Office 365 应用向导的支持文档。"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -17,10 +17,10 @@ ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -129,7 +129,7 @@ ms.lasthandoff: 05/23/2017
 你始终可以编辑这些策略设置以满足你组织的要求。
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>如何查看和编辑由向导创建的策略？
-若要查看或更新这些策略，或在 Intune Azure 预览版中创建的任何策略，请从仪表板中选择“管理应用” > “应用保护策略”。 策略列表将在右侧打开。 选择想要查看的策略以查看和编辑设置。 <br/>
+若要查看或更新这些策略，或在 Intune Azure 门户中创建的任何策略，请从仪表板中选择“管理应用” > “应用保护策略”。 策略列表将在右侧打开。 选择想要查看的策略以查看和编辑设置。 <br/>
 ![用于查看策略的用户界面路径的图像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>后续步骤

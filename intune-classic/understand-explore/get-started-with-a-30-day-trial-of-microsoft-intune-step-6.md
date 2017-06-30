@@ -1,5 +1,5 @@
 ---
-title: "适用于 Intune 评估的其他选项和其他功能 | Microsoft Docs"
+title: "适用于 Intune 评估的其他选项和功能"
 description: "介绍警报、通知和报表，以及当你注册 Intune 的免费 30 天评估时需要了解的常规 Intune 功能"
 keywords: 
 author: lindavr
@@ -14,10 +14,10 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dcaf3ccc8c8581704351a19bce0a0ab57013040
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c0299b9bcb8c4cf35e2ddf60da428cc04bbdb4f0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -46,16 +46,14 @@ ms.lasthandoff: 05/23/2017
 
 -   **控制对公司资源的访问。** 您可以把证书、电子邮件配置文件、VPN 配置文件和 Wi-fi 配置文件部署到移动设备，使其更方便地快速设置移动设备。 有关详细信息，请参阅[使用 Microsoft Intune 启用对公司资源的访问](/intune-classic/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune)。
 
-若要了解 Intune 的所有功能，请参阅：
-- [Microsoft Intune 的已注册设备管理功能](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
-- [Microsoft Intune 中的 Windows 电脑管理功能](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)
+若要了解有关 Intune 的完整功能，请参阅 [Microsoft Intune 中的已注册设备管理功能](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)。
 
-若要了解有关 Intune 中最近引入的功能的详细信息，请参阅 [Microsoft Intune 新增功能](/intune-classic/Deploy-Use/whats-new-in-microsoft-intune)。
+若要了解有关 Intune 中最近引入的功能的详细信息，请参阅 [Microsoft Intune 新增功能](/intune-classic/whats-new/whats-new-in-microsoft-intune)。
 
 [如何获取对 Microsoft Intune 的支持](/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune)中对支持选项进行了相关说明，可加入 [Microsoft Intune 论坛](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)中有关 Intune 的讨论。
 
 ## <a name="next-steps"></a>后续步骤
-了解 [Intune 的常见使用方式](common-ways-to-use-intune.md)
+了解 [Intune 的常见使用方式](/intune/common-scenarios)
 
 转换为[付费订阅](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 

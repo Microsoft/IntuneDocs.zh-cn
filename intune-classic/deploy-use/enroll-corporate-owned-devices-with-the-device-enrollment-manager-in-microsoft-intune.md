@@ -1,5 +1,5 @@
 ---
-title: "使用设备注册管理器进行注册 | Microsoft Docs"
+title: "使用设备注册管理器进行注册"
 description: "设备注册管理器 (DEM) 帐户可以管理大量带有单一用户帐户的企业自有的共享移动设备。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1f63a9e65435e2cfc421c23de3ad87363bc446d
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 095b89d1428d6b8f06143043d8bb6ed37fd8fa5b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -76,9 +76,9 @@ DEM 用户可以：
 
 3.  在导航窗格中，选择“**管理员**”，转到“**管理员管理**”，然后选择“**设备注册管理器**”。 此时将打开**设备注册管理器**页。
 
-4.  选择“添加…”。 打开“添加设备注册管理员”  对话框。
+4.  选择“添加…”。 打开“添加设备注册管理员”对话框。
 
-5.  输入 Intune 帐户的“**用户 ID**”，然后选择“**确定**”。
+5.  输入 Intune 帐户的“用户 ID”，然后选择“确定”。
 
     DEM 用户现在可以使用相同的过程注册移动设备，与最终用户在公司门户中针对 BYOD 方案采用的过程相同。 管理器最终用户可以使用 DEM 凭据在多达 1000 台设备上安装公司门户应用并注册设备。 若要深入了解用于每个平台的最终用户注册步骤，请参阅：
 
@@ -95,7 +95,7 @@ DEM 用户可以：
 
 3.  选择要删除的设备注册管理员“用户”，然后选择“删除”。 不会从 Intune 中删除此用户，并且此用户管理的设备仍将在 Intune 中处于注册状态。 删除设备注册管理员可防止该用户在 Intune 中注册更多设备。
 
-4.  选择“**是**”，确认删除此设备注册管理器。
+4.  选择“是”，确认删除此设备注册管理器。
 
 删除设备注册管理器不会影响注册的设备。 删除设备注册管理器时：
 

@@ -1,7 +1,7 @@
 ---
 title: "适用于 Windows 10 协同版的 Intune 设备限制"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解 Windows 10 协同版设备的设备限制。"
+titleSuffix: Intune on Azure
+description: "了解 Windows 10 协同版设备的设备限制。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: afbbe6b7649e1ffc3f84ada64396d9033a2db200
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7a5c3eaf3d2b1fc4383282473352124c793b666f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 协同版设备限制设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 - **有人在房间内时唤醒屏幕** - 允许设备在其传感器检测到房间内有人时自动唤醒。
 - **用于无线投影的 PIN** - 指定是否必须先输入 PIN，然后才能使用设备的无线投影功能。

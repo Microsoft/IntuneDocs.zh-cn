@@ -1,5 +1,5 @@
 ---
-title: "Windows 8.0 公司门户应用已弃用 | Microsoft Docs"
+title: "Windows 8.0 公司门户应用已弃用"
 description: "使用 Microsoft Intune 为 Windows Phone 8.0 设备启用移动设备管理 (MDM)。"
 keywords: 
 author: NathBarn
@@ -14,10 +14,10 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4cfbfb1e370f0210781f5611788564ab89f5e99e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a91ae7623080a6adbcec2f3b2803d14cd0e38433
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

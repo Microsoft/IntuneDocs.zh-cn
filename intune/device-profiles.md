@@ -1,7 +1,7 @@
 ---
-title: "什么是 Microsoft Intune 中的设备配置文件？ | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解 Intune 设备配置文件，以及它们如何帮助管理和保护公司设备。"
+title: "什么是 Microsoft Intune 中的设备配置文件？"
+titleSuffix: Intune on Azure
+description: "了解 Intune 设备配置文件，以及它们如何帮助管理和保护公司的设备。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 54b20d405613a67e54e9d22df45a3055f093fafa
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 4e08de2a001bbd77ab3fcb7a534a7d4ec52d48a9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用 Microsoft Intune“设备配置”工作负荷来管理你管理的所有设备上的设置和功能。 主要使用此工作负荷创建设备配置文件，从而管理并控制所管理设备上各种不同功能。
 

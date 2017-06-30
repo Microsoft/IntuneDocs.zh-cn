@@ -1,5 +1,5 @@
 ---
-title: "Exchange 管理的移动设备的擦除 | Microsoft Docs"
+title: "Exchange 管理的移动设备的擦除"
 description: "Microsoft Intune 允许你擦除或重置结合使用 Exchange ActiveSync (EAS) 与 Intune Exchange Connector 管理的移动设备"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b0914ab12456fd3ad5f957d68a59df9de539176
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 665f57a4cdb25c1e9f2bef7f1c25f284589df16f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

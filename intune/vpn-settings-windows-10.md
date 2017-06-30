@@ -1,7 +1,7 @@
 ---
 title: "适用于 Windows 10 设备的 Intune VPN 设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用于在 Windows 10 设备上配置 VPN 连接的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解可用于在 Windows 10 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6dd98b176c76e19d6ff261a4dafbabfb9698f787
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的 VPN 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 根据所选择的设置，下表中并非所有值都可配置。
 

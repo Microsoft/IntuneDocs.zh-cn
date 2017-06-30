@@ -1,5 +1,5 @@
 ---
-title: "创建用于组织用户和设备的组 | Microsoft Docs"
+title: "创建用于组织用户和设备的组"
 description: "为你的 Intune 订阅创建用户和组"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 058006b2356d62c77c3a5a6ee0f4c8ed74ed4a50
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a6e9eb087b730c66bcf32f877fd22f2d3be0c121
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -61,7 +61,7 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 2.  对于“组名称”，键入“我的设备”，并从父组列表中选择“所有设备”，然后选择“下一步”。
 
-3.  在 **“定义成员资格条件”** 页上，选择 **“所有设备”** 以指示该组包括移动设备和计算机。
+3.  在“定义成员资格条件”页上，选择“所有设备”，以指示该组包括移动设备和计算机。
 
 4.  在“定义直属成员资格”页上，选择“下一步”。 如果之前创建了未包括所有设备的组，并且希望向新组中添加特定设备，则可在此处执行该操作。
 
@@ -76,7 +76,7 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 2.  对于“组名称”，键入“Intune 用户”，并从父组列表中选择“所有用户”，然后选择“下一步”。
 
-3.  在 **“定义成员资格条件”** 页上，将 **“组成员资格开始为”** 设置为 **“父组中的所有用户”**。
+3.  在“定义成员资格条件”页上，将“组成员资格开始为”设置为“父组中的所有用户”。
 
 4.  在“从这些安全组中排除成员”旁边，选择“浏览”，然后选择“公司管理员”。 通过这种排除方式，可让你在不影响“公司管理员”帐户（也称为租户管理员）的情况下管理“Intune 用户”组。
 
@@ -87,6 +87,5 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 在“所有用户”下的“组”工作区中的“组”列表中，可找到新建的组。 你还可以从此处编辑或删除组。
 
 >[!div class="step-by-step"]
-
->[&larr;**管理 Intune 许可证**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**创建策略和应用**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+/intune/licenses-assign [&larr; **管理 Intune 许可证**](/intune/licenses-assign)       [**创建策略和应用** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
 

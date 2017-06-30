@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi 连接 | Microsoft Docs"
+title: "Wi-Fi 连接"
 description: "使用 Wi-Fi 配置文件来帮助用户连接到 Wi-Fi 网络。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65fe17c42921d2c53153dca386ea40b9dea47d04
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9b99762dfc8e527fc845755365a09fab8a0d3a0c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/23/2017
 
 -   Android 4.0 及更高版本
 
--    Android for Work   
+-   Android for Work   
 
 -   iOS 8.0 及更高版本
 

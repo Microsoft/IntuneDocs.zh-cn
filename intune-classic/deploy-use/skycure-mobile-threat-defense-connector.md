@@ -1,5 +1,5 @@
 ---
-title: "Skycure 移动威胁防御连接器 | Microsoft Docs"
+title: "Skycure 移动威胁防御连接器"
 description: "通过 Skycure 移动威胁防御连接器和 Intune，根据设备、网络和应用程序风险，为公司资源提供访问保护。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 15b00957f694863bb10ee32162eb20fc39bcda88
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d0b401babf356e44479229c3bea27c956926a6f9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -119,7 +119,7 @@ Intune 支持与 Skycure 集成的两种模式：
 
 以下是将 Intune 与 Skycure 集成需要完成的步骤：
 
-1.  [将 Skycure 配置为使用 Azure Active Directory 单一登录 /intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
+1.  [配置 Skycure 以使用 Azure Active Directory 单一登录 (SS)](/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
 2.  [下载 Skycure iOS 应用配置策略](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 

@@ -1,11 +1,11 @@
 ---
 title: "注册 Windows 设备"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：启用适用于 Windows 设备的 Intune 移动设备管理 (MDM)。"
+titleSuffix: Intune on Azure
+description: "启用适用于 Windows 设备的 Intune 移动设备管理 (MDM)。"
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 04/12/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 687be18cedd063b3c2701937f2522e801e51644b
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e24066ef91d61a9b44e9281fec9957bff243caaf
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="enroll-windows-devices"></a>注册 Windows 设备
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 此主题可帮助 IT 管理员为用户简化 Windows 注册过程。  无需任何其他步骤即可注册 Windows 设备，但你还可为用户简化注册过程。
 
@@ -73,5 +73,5 @@ ms.lasthandoff: 05/23/2017
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>告知用户如何注册 Windows 设备
 告诉用户如何注册其 Windows 设备以及在纳入管理之后会出现的情况。 有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)。 还可以告诉用户 [IT 管理员可以在我的设备上看到什么](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)。
 
-有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。
+有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](end-user-educate.md)。
 

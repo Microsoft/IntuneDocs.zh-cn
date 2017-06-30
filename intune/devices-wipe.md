@@ -1,12 +1,12 @@
 ---
 title: "使用 Intune 在设备上进行完全擦除或选择性擦除"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何在设备上对公司数据进行选择性擦除，或进行完全擦除以将设备恢复为出厂设置。"
+titleSuffix: Intune on Azure
+description: "了解如何选择的擦除设备上的公司数据，或完全擦除以将设备恢复为出厂设置。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-full-or-selective-wipe"></a>使用完全擦除或选择性擦除
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 可以从不再需要的、已重新调整用途的或已丢失的 Intune 托管设备中擦除应用和数据。 若要执行此操作，Intune 将提供选择性擦除和完全擦除功能。 对于在 Intune 中注册的私人所有设备，用户还可从 Intune 公司门户应用中发出远程设备擦除命令。
 
@@ -59,9 +59,9 @@ ms.lasthandoff: 05/23/2017
 
 3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不会要求提供信用卡或付款（请选择**注册免费的 Azure Active Directory**订阅链接）。
 
-4.  选择“Active Directory”  ，然后选择你的组织。
+4.  选择 Active Directory，然后选择你的组织。
 
-5.  选择“用户”  选项卡。
+5.  选择“用户”选项卡。
 
 6.  选择要删除其设备的用户。
 
@@ -70,9 +70,9 @@ ms.lasthandoff: 05/23/2017
 8.  根据需要删除设备，例如那些不再使用的设备或者定义不准确的设备。
 
 
-## <a name="selective-wipe"></a>“选择性擦除”
+## <a name="selective-wipe"></a>选择性擦除
 
-**选择性擦除**将删除公司数据，包括设备中的移动应用管理 (MAM) 数据(适用的)、设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。 设备从 Intune 删除。 下表描述了将删除什么数据，以及在选择性擦除之后对设备上保留的数据的影响。 （这些表按平台进行组织。）
+**选择性擦除**可删除公司数据，包括设备中的移动应用管理 (MAM) 数据(适用的)、设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。 设备从 Intune 删除。 下表描述了将删除什么数据，以及在选择性擦除之后对设备上保留的数据的影响。 （这些表按平台进行组织。）
 
 **iOS**
 
@@ -101,8 +101,8 @@ ms.lasthandoff: 05/23/2017
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|
 |证书配置文件设置|已吊销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
-|Email|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
-|Outlook|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|
+|Email|n/a（Android 设备不支持电子邮件配置文件）|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
+|Outlook|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|
 |Azure Active Directory (AAD) 脱离|已删除 AAD 记录。|已删除 AAD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
 

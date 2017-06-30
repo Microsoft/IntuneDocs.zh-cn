@@ -1,6 +1,7 @@
 ---
-title: "配置 Windows Update for Business 设置 - Intune | Intune Azure 预览版 | Microsoft Docs"
-description: "Intune Azure 预览版：了解如何在 Intune 中配置 Windows Update for Business 设置，以控制 Windows 10 设备的更新。"
+title: "配置 Windows Update for Business 设置 - Intune"
+titleSuffix: Intune on Azure
+description: "了解如何在 Intune 中配置 Windows Update for Business 设置，以控制 Windows 10 设备的更新。"
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -14,17 +15,17 @@ ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>如何使用 Microsoft Intune 配置 Windows Update for Business 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>简介
 Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 开始，任何新的功能更新和质量更新都将包含所有此前更新的内容。 这意味着，只要安装了最新更新，你的 Windows 10 设备将完全保持最新状态。 与以前版本的 Windows 不同的是，现在必须安装完整的更新，而不是部分更新。
@@ -83,11 +84,11 @@ Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 �
 7. 在“**设置**”边栏选项卡上，配置以下信息：
     - **服务分支**：设置设备将接收 Windows 更新的分支（Current Branch 或 Current Branch for Business）。
     - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
-    -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
+    - **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延期期限（天）** - 指定质量更新延期的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 
-      质量更新通常是对现有 Windows 功能的修复和改进，且通常在每月的第一个星期二发布，但也可由 Microsoft 随时发布。 你可以定义在质量更新发布后，是否延迟接收质量更新（以及延迟多长时间）。
+    质量更新通常是对现有 Windows 功能的修复和改进，且通常在每月的第一个星期二发布，但也可由 Microsoft 随时发布。 你可以定义在质量更新发布后，是否延迟接收质量更新（以及延迟多长时间）。
     - **功能更新延期期限（天）** - 指定功能更新延期的天数。 自功能更新发布起，你最晚应在 180 天内接收这些功能更新。
 
     功能更新通常是 Windows 的新功能。 配置“**服务分支**”设置（**CB** 或 **CBB**）后，你可以在 Windows 更新上定义在 Microsoft 发布功能更新后，是否延迟接收功能更新（以及延迟多长时间）。

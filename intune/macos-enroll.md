@@ -1,7 +1,7 @@
 ---
 title: "在 Intune 中注册 macOS 设备"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何在 Intune Azure 预览版中注册 macOS 设备。"
+titleSuffix: Intune on Azure
+description: "了解如何在 Intune 中注册 macOS 设备。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -16,25 +16,25 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c10a28a51e9f6bed99a657cd940b00f3114e4588
+ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
+ms.openlocfilehash: 59bb332519d3800e9f29e2ff160dece4b9a611d2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/12/2017
 
 
 ---
 
-# <a name="enroll-macos-devices-in-intune-azure-preview"></a>在 Intune Azure 预览版中注册 macOS 设备
+# <a name="enroll-macos-devices-in-intune"></a>在 Intune 中注册 macOS 设备
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-可借助 Intune 管理 macOS 设备。 若要启用设备管理，用户必须转到[公司门户网站](http://portal.manage.microsoft.com)，并按照提示注册其设备。 macOS 设备处于托管状态后，可[为 macOS 设备创建自定义设置](custom settings-macos.md)。 即将推出更多功能。
+可借助 Intune 管理 macOS 设备。 若要启用设备管理，用户必须转到[公司门户网站](http://portal.manage.microsoft.com)，并按照提示注册其设备。 macOS 设备处于托管状态后，可[为 macOS 设备创建自定义设置](custom-settings-macos.md)。 即将推出更多功能。
 
 ## <a name="prerequisites"></a>先决条件
 
 设置 macOS 设备注册之前请先完成以下先决条件：
 
-- [配置域](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [配置域](custom-domain-name-configure.md)
 - [设置 MDM 机构](mdm-authority-set.md)
 - [创建组](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [配置公司门户](company-portal-app.md)
@@ -55,6 +55,6 @@ ms.lasthandoff: 05/23/2017
 
 有关其他最终用户任务的信息，请参阅以下文章：
 
-- [有关 Microsoft Intune 最终用户体验的资源](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [有关 Microsoft Intune 最终用户体验的资源](end-user-educate.md)
 - [通过 Intune 使用 iOS 或 macOS 设备](https://docs.microsoft.com/intune-user-help/using-your-ios-or-mac-os-x-device-with-intune)
 

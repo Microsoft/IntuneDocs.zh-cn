@@ -1,5 +1,5 @@
 ---
-title: "在 Intune 控制台中配置 MAM 策略 | Microsoft Docs"
+title: "在 Intune 控制台中配置 MAM 策略"
 description: "Microsoft Intune 中的移动应用管理策略让你可以修改你所部署的应用的功能，以帮助它们符合你的公司合规性和安全策略。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -46,11 +46,10 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
 -   **使用策略托管的应用**。 策略托管应用内置了应用 SDK。 要添加此类型的应用，你可以从 iTunes 应用商店或 Google Play 等应用商店指定应用的链接。 对于此类应用，无需进一步的处理。 有关详细信息，请参阅 [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)（可配合 Microsoft Intune 移动应用管理策略使用的应用的列表）。
 
--   **使用已包装的应用**。 已包装的应用 – 使用 Microsoft Intune App Wrapping Tool 对应用进行重新封装，以将应用 SDK 包括在内。 该工具通常用于处理公司内部开发的应用。 无法用于处理从应用商店下载的应用。 有关详细信息，请参阅[使用 Microsoft Intune App Wrapping Tool 为移动应用管理准备 iOS 应用](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)和[使用 Microsoft Intune App Wrapping Tool 为移动应用管理准备 Android 应用](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)。
+-   **使用已包装的应用**。 已包装的应用 – 使用 Microsoft Intune App Wrapping Tool 对应用进行重新封装，以将应用 SDK 包括在内。 该工具通常用于处理公司内部开发的应用。 无法用于处理从应用商店下载的应用。 有关详细信息，请参阅[使用 Microsoft Intune App Wrapping Tool 为移动应用管理准备 iOS 应用](/intune/app-wrapper-prepare-ios)和[使用 Microsoft Intune App Wrapping Tool 为移动应用管理准备 Android 应用](/intune/app-wrapper-prepare-android)。
 
-- **编写自己的应用，其中包含 Intune App SDK**。 Intune App SDK 允许你将应用管理功能合并到你正在编写的应用。 有关详细信息，请参阅 [Intune App SDK 概述](/intune-classic/develop/intune-app-sdk)。
-
-有关是要选择 App Wrapping Tool 还是 Intune App SDK 的帮助信息，请参阅[决定如何使用 Microsoft Intune 为移动应用管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
+- **编写自己的应用，其中包含 Intune App SDK**。 Intune App SDK 允许你将应用管理功能合并到你正在编写的应用。 有关详细信息，请参阅 [Intune App SDK 概述](/intune/app-sdk)。
+/intune/apps-prepare-mobile-application-management 有关是要选择 App Wrapping Tool 还是 Intune App SDK 的帮助信息，请参阅[决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](/intune/apps-prepare-mobile-application-management)。
 
 某些托管应用（比如用于 iOS 和 Android 的 Outlook 应用）支持*多身份*。 这意味着 Intune 仅对公司帐户或应用中的数据应用管理设置。
 

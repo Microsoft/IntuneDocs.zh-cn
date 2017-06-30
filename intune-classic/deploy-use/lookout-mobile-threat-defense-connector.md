@@ -1,5 +1,5 @@
 ---
-title: "Lookout 移动威胁防御连接器 | Microsoft Docs"
+title: "查询移动威胁防御连接器"
 description: "根据设备、网络和应用程序风险，通过 Lookout 移动威胁防御连接器和 Intune 保护对公司资源的访问。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67654722e5c2bcbb768cf840a3f7ff1a24f99739
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6ed808e3dd1db1bf58d4c0caa8cddccbc49c05f7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/23/2017
 - 安装的恶意应用
 - 恶意网络配置文件
 
-可基于通过 Intune 合规性策略启用的 Lookout 风险评估配置条件性访问策略。 基于检测到的威胁，通过设置允许或阻止不符合要求的设备。
+可基于通过 Intune 符合性策略启用的 Lookout 风险评估配置条件性访问策略。 基于检测到的威胁，通过设置允许或阻止不符合要求的设备。
 
 ## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Intune 和 Lookout 移动威胁防御如何帮助保护公司资源？
 在移动设备上安装并运行 Lookout 移动应用 **Lookout for work**。 此应用可捕获文件系统、网络堆栈以及设备和应用程序遥测（如果有），然后将其发送到 Lookout 云服务，评估设备的移动威胁风险。 可在 Lookout 控制台中更改威胁的风险等级分类以满足你的需求。  
@@ -93,9 +93,9 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 
 ## <a name="next-steps"></a>后续步骤
 要实施此解决方案，必须执行以下几个主要步骤：
-1.    [设置 Lookout 订阅](setup-your-lookout-mtd-subscription.md)
-2.    [在 Intune 中启用 Lookout 移动威胁防御](enable-lookout-mtd-connection.md)
+1.  [设置 Lookout 订阅](setup-your-lookout-mtd-subscription.md)
+2.  [在 Intune 中启用 Lookout 移动威胁防御](enable-lookout-mtd-connection.md)
 3.  [配置和部署 Lookout 移动威胁防御应用](configure-deploy-lookout-for-work-app.md)
-4.    [配置 Lookout 设备符合性策略](create-lookout-device-compliance-policy.md)
-5.    [Lookout 移动威胁防御集成故障排除](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
+4.  [配置 Lookout 设备符合性策略](create-lookout-device-compliance-policy.md)
+5.  [Lookout 移动威胁防御集成故障排除](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
 

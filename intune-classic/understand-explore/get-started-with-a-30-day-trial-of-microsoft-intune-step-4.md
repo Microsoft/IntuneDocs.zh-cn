@@ -1,5 +1,5 @@
 ---
-title: "创建策略并向用户发布应用 | Microsoft Docs"
+title: "创建策略并向用户发布应用"
 description: "当你注册 Intune 的免费 30 天评估时，如何创建策略并发布应用"
 keywords: 
 author: lindavr
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0e836571b869e7a32b19968da1d78035a6bae7f2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 335d91cd6583052bfcc72fc018b387eed8823b7e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -102,7 +102,7 @@ Intune 策略提供的设置有助于控制移动设备上的安全设置、维�
 ## <a name="next-steps"></a>后续步骤
 深入了解其他 [Intune 功能](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 
-了解 [Intune 的常见使用方式](common-ways-to-use-intune.md)
+了解 [Intune 的常见使用方式](/intune/common-scenarios)
 
 转换为[付费订阅](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 

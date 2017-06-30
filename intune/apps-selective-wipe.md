@@ -1,7 +1,7 @@
 ---
 title: "如何仅擦除应用中的公司数据"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Microsoft Intune 选择性地擦除应用。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Microsoft Intune 选择性地擦除应用。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何仅擦除 Intune 托管应用中的企业数据
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 当设备丢失或被盗，或如果员工离开公司，你想要确保从设备中删除了公司应用数据。 但是，你可能不想删除设备上的个人数据，尤其是如果该设备为员工所有。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/23/2017
 
 1.  登录到 [Azure 门户](https://portal.azure.com)。
 
-2.  选择“更多服务”，在筛选器文本框中键入“Intune”，然后选择“Intune”。 Intune 预览版边栏选项卡将打开，选择“管理应用”边栏选项卡。
+2.  选择“更多服务”，在筛选器文本框中键入“Intune”，然后选择“Intune”。 Intune 边栏选项卡将打开，选择“管理应用”边栏选项卡。
 
     ![新建擦除请求边栏选项卡的屏幕截图](./media/intune-azure-preview-blade.png)
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 05/23/2017
 
 你将获得一个汇总报表，其中介绍了擦除请求的总体状态，并包括挂起请求数和失败次数。 若要获取更多详细信息，请按以下步骤操作：
 
-1.  在“移动应用 - 应用选择性擦除” 边栏选项卡中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起” 、“失败”还是“成功”。
+1.  在“移动应用 - 应用选择性擦除”边栏选项卡中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起”、“失败”还是“成功”。
 
     ![新建擦除请求边栏选项卡的屏幕截图](./media/wipe-request-status-1.png)
 

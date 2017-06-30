@@ -1,5 +1,5 @@
 ---
-title: "Exchange ActiveSync 设备管理 | Microsoft Docs"
+title: "Exchange ActiveSync 设备管理"
 description: "通过 Exchange Connector 使用 Exchange ActiveSync (EAS) 管理来管理移动设备"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b9e6d1def269bc80d54f259bc8b7c12dbb520e06
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8982072b93c22e0294b6e454d597e0aa5bbb7b71
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

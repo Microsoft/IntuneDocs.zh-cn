@@ -1,5 +1,5 @@
 ---
-title: "VPN 连接 | Microsoft Docs"
+title: "VPN 连接"
 description: "使用 VPN 配置文件将 VPN 设置部署到组织中的用户和设备。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -194,5 +194,5 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 成功部署后，用户将在其设备上的 VPN 连接列表中看到你指定的 VPN 连接名称。
 
-“策略”  工作区“概述”  页的状态摘要和警报可识别需要关注的策略问题。 此外，状态摘要会显示在“仪表板”工作区中。
+“策略”工作区“概述”页的状态摘要和警报可识别需要关注的策略问题。 此外，状态摘要会显示在“仪表板”工作区中。
 

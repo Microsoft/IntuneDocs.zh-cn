@@ -1,12 +1,12 @@
 ---
 title: "将 IMEI 标识符添加到 Intune"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何将企业标识符（IMEI 号码）添加到 Microsoft Intune。 "
+titleSuffix: Intune on Azure
+description: "了解如何将企业标识符（IMEI 号码）添加到 Microsoft Intune。 &quot;"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/22/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 25414cd42159d1c3e09b80d236ccb12f0df5662a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: bfa4a6065f02261b91ef5379c32ded9b89a67056
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="add-corporate-identifiers"></a>添加企业标识符
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 作为一名 IT 管理员，你可以创建和导入用逗号分隔的值 (.csv) 文件，该文件列出了国际移动设备识别 (IMEI) 编号来识别公司所有的设备。 每个 IMEI 编号可以在列表中指定详细信息，以便用于管理。
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="add-corporate-identifiers"></a>添加企业标识符
 若要创建列表，请创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加 IMEI 标识符，在右列添加详细信息。 详细信息限制为 128 个字符，且仅用于管理。 在设备上不显示详细信息。 当前限制为每个 .csv 文件 500 行。
 
-**上传含序列号的 .csv 文件** - 创建两列不带标头的逗号分隔值 (.csv) 列表，并将列表限制为每个 .csv 文件 5,000 台设备或 5 MB。 
+**上传含序列号的 .csv 文件** - 创建两列不带标头的逗号分隔值 (.csv) 列表，并将列表限制为每个 .csv 文件 5,000 台设备或 5 MB。
 
 |||
 |-|-|
@@ -54,21 +54,17 @@ ms.lasthandoff: 05/23/2017
 
 **添加企业标识符 .csv 列表**
 
-1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 在 Intune 门户上，依次选择“设备注册” > “注册限制”、“公司设备标识符”，然后单击“添加”。
 
-2. 在 Intune 边栏选项卡上，依次选择“设备注册” > “注册限制”、“公司设备标识符”，然后单击“添加”。
+2. 在“添加标识符”边栏选项卡中，指定标识符类型 **IMEI**。 你可以指定先前导入的号码是否应“覆盖现有标识符的详细信息”。  
 
-3. 在“添加标识符”边栏选项卡中，指定标识符类型 **IMEI**。 你可以指定先前导入的号码是否应“覆盖现有标识符的详细信息”。  
-
-4. 单击文件夹图标并指定要导入的列表的路径。 导航到 IMEI CSV 文件，然后选择“添加”。
+3. 单击文件夹图标并指定要导入的列表的路径。 导航到 IMEI CSV 文件，然后选择“添加”。
 
 导出后，这些设备可能已/未注册，其状态可能为“已注册”或“未连接”。 “未连接”表示该设备没有与 Intune 服务通信。
 
 ## <a name="delete--corporate-identifiers"></a>删除企业标识符
 
-1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
-
-2. 在 Intune 边栏选项卡上，依次选择“设备注册” > “注册限制”、“公司设备标识符”，然后选择“删除”。
+1. 在 Intune 门户上，依次选择“设备注册” > “注册限制”、“公司设备标识符”，然后选择“删除”。
 
 3. 在“删除标识符”边栏选项卡中，浏览到要删除的设备 ID 的 .csv 文件，然后单击“删除”。
 

@@ -1,7 +1,7 @@
 ---
-title: "如何将 Windows 业务线应用添加到 Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何将 Windows 业务线应用添加到 Intune。"
+title: "如何将 Windows 业务线应用添加到 Intune"
+titleSuffix: Intune on Azure
+description: "了解如何将 Windows 业务线应用添加到 Intune。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 696c8f8e72e21c792474f5e52fad9054b3dfade9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8f8be4f6bf47ceb966e9042465dc8839d9aa9119
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 Windows 业务线 (LOB) 应用添加到 Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>步骤 1 - 指定软件安装程序文件

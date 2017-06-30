@@ -1,5 +1,5 @@
 ---
-title: "KNOX 允许和阻止的应用 | Microsoft Docs"
+title: "允许的和阻止的 KNOX 应用"
 description: "自定义配置文件以创建 KNOX 允许和阻止的应用的列表。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 
@@ -43,9 +43,9 @@ ms.lasthandoff: 05/23/2017
     
     - **设置名称。** 输入 **PreventStartPackages**。
     - **设置描述。** 输入可选描述，如“阻止运行的应用列表”。
-    -     **数据类型。** 在下拉列表中，选择“字符串”。
-    -     **OMA-URI。** 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -     **值。** 输入你要阻止的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
+    -   **数据类型。** 在下拉列表中，选择“字符串”。
+    -   **OMA-URI。** 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -   **值。** 输入你要阻止的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
 
     有关允许用户从 Google Play 商店中安装的应用（同时排除所有其他应用）的列表：
 

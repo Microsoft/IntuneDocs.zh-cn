@@ -1,12 +1,12 @@
 ---
-title: "Azure 门户预览版中的 Intune 简介"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：获取有关 Azure 门户预览版中 Intune 的基础知识，以及它如何帮助你管理设备。"
+title: "Azure 门户中的 Intune 简介"
+titleSuffix: Intune on Azure
+description: "获取有关 Azure 门户中 Intune 的基础知识，以及它如何帮助你管理设备。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,31 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
+ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
+ms.openlocfilehash: 49747940e60e2463db5bdd18754bdb9f1444cd6d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Azure 门户预览版中的 Microsoft Intune 简介
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune 正在向 Azure 门户迁移，这意味着你习惯使用的工作流和功能将发生改变。
-新门户提供 Azure 门户中新功能和更新功能的预览，可在其中管理组织的移动设备、电脑和应用。
-所有 Intune 功能最终都会迁移到 Azure，但现在可以在 Azure 门户中执行许多 Intune 任务。 由于此新体验是在预览版中，因此门户中可能尚不提供某些功能。 有关详细信息，请查看[新增功能](#whats-new)部分。
+Microsoft Intune 现在位于 Azure 门户中，这意味着你习惯使用的工作流和功能已经不同了。
+新门户提供了 Azure 门户中的新功能和更新功能，可在其中管理组织的移动设备、电脑和应用。
 
 > [!IMPORTANT]
 > **还没有看到新门户？**<br>
-> 我们已经开始向选定的租户推出预览版。 现有租户将从 2017 年初开始迁移到新体验。 在租户迁移之前，你将在 Office 邮件中心收到通知。
+> 现有租户正在迁移到新的门户体验。 你的租户迁移之前，通知会显示在 Office 消息中心中。
 >
-> 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的 Apple 注册工作流。 迁移的计划目前尚未公布，但详细信息将尽快发布。 强烈建议创建一个试用帐户，在现有帐户无法访问预览版时测试新体验。
+> 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的 Apple 注册工作流。 迁移计划尚未宣布。 如果现有帐户无法访问 Azure 门户，我们强烈建议创建一个试用帐户。
 
 
-可以在此库中找到新的产品文档，并且它将在预览期间不断更新。 如果你想提出建议，请在主题评论中留下反馈。 我们很乐意倾听你的想法。
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+你可以在此库中查找有关新门户的信息，并且信息会不断更新。 如果你有什么建议，请在主题评论中留下反馈。 我们很乐意倾听你的想法。
 
 新体验的亮点包括：
 
@@ -78,9 +75,9 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 ![Azure 门户工作负荷](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>简介和入门
-本部分包含有关 Intune 的[新增功能](whats-new.md)、[已知问题](known-issues.md)、[如何获得支持](get-support.md)和如何[开始使用免费试用版](free-trial-sign-up.md)的信息。
+本部分包含[介绍性信息](introduction-intune.md)，可帮助你开始使用 Intune。
 ### <a name="plan-and-design"></a>规划和设计
-帮助你[规划和设计](/intune-classic/plan-and-design/introduction) Intune 环境的信息。
+帮助你[规划和设计](/intune-classic/plan-design/introduction) Intune 环境的信息。
 ### <a name="device-enrollment"></a>设备注册
 [如何通过 Intune 管理设备](device-enrollment.md)。
 ### <a name="device-compliance"></a>设备符合性
@@ -108,5 +105,5 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 
 ## <a name="whats-new"></a>新增功能
 
-[了解预览版新增功能](whats-new.md)。
+[了解 Intune 中的新增功能](whats-new.md)。
 

@@ -1,7 +1,7 @@
 ---
 title: "验证应用保护策略"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：本主题介绍如何测试和验证应用保护策略是否已正确设置并按预期方式工作。"
+titleSuffix: Intune on Azure
+description: "本主题介绍如何测试和验证应用保护策略是否已正确设置并按预期方式工作。"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,20 +16,20 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 26e191965eff482cf97b920e028cdf60d1881d32
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>如何验证应用保护策略设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-本主题提供设置应用保护策略后如何检查问题的相关信息。 本指南适用于 Azure 门户**预览版**中的应用保护策略。
+本主题提供设置应用保护策略后如何检查问题的相关信息。 本指南适用于 Azure 门户中的应用保护策略。
 
 ### <a name="checking-for-symptoms"></a>检查症状
 由于应用保护是数据保护工具，因此用户不太可能报告问题。 如果应用保护配置出现问题，用户将具有不受限制的访问权限，因为在没有应用保护时他们也会具有不受限制的访问权限，所以也不会意识到出现了问题。 因此，建议让一小组可专门测试应用保护限制的用户试验应用保护策略，从而验证应用保护配置。
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/23/2017
 #### <a name="user-app-protection-status"></a>用户应用保护状态
 1. 在 Azure 门户中选择“管理应用” > “监视” >  “应用保护用户状态” > “用户”。
 
-2. 从列表中选择用户或搜索并选择一个用户，然后选择“**选择用户**”。 在“应用报告”列顶部，将看到用户是否已获得应用保护授权。 你可以从下面看到该用户是否已获得 O365 授权，以及所有用户设备的应用状态。
+2. 从列表中选择用户或搜索并选择一个用户，然后选择“选择用户”。 在“应用报告”列顶部，将看到用户是否已获得应用保护授权。 你可以从下面看到该用户是否已获得 O365 授权，以及所有用户设备的应用状态。
 
 
 

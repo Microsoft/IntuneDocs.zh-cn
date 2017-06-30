@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,20 +17,22 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c3276885a588e964f30b871fd1ee91ff83f3676
+ms.sourcegitcommit: 02018f2f96dbd94c337dd28e7ed111666841aa96
+ms.openlocfilehash: 526cfed5e8f42d739c57882b454745ba5b20181c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
 
 # <a name="fix-common-issues-with-your-windows-device"></a>解决 Windows 设备的常见问题
 
-有时 Windows 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](http://portal.manage.microsoft.com)上的 IT 管理员联系信息与其联系。
+有时 Windows 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://portal.manage.microsoft.com)上的 IT 管理员联系信息与其联系。
 
 - [Windows 10 设备无法注册](troubleshoot-your-windows-10-device-windows.md)
-- [需更新 Windows 设备](you-need-to-update-your-windows-device.md)
+- [需要更新我的 Windows 设备](you-need-to-update-your-windows-device.md)
+- [需要从公司门户应用将日志发送给我的 IT 管理员](send-logs-to-your-it-admin-cp-windows.md)
+- [需要从“设置”应用将日志发送给我的 IT 管理员](send-logs-to-your-it-admin-settings-windows.md)
 - [尚不支持我的 Windows 版本](your-windows-version-isnt-yet-supported.md)
 - [需要启用 Windows 加密](you-need-to-enable-windows-encryption.md)
 - [设备需要反恶意软件](your-device-needs-antimalware-software.md)

@@ -1,5 +1,5 @@
 ---
-title: "使用 Cisco ISE 保护对网络的访问 | Microsoft Docs"
+title: "保护通过 Cisco ISE 对网络的访问"
 description: "将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 Cisco ISE 控制的 Wi-Fi 和 VPN 前已注册 Intune 并且符合策略。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -157,7 +157,7 @@ b。 选择锁定图标&gt;“详细信息”。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune 租户和 Cisco ISE 服务器之间共享的信息
 此表列出了你的 Intune 租户和用于由 Intune 托管的设备的 Cisco ISE 服务器之间共享的信息。
 
-|属性|    描述|
+|属性|  描述|
 |---------------|------------------------------------------------------------|
 |complianceState|指示设备是否合规的 true 或 false 字符串。|
 |isManaged|指示客户端是否由 Intune 托管的 true 或 false 字符串。|

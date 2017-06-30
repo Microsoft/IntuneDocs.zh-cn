@@ -1,7 +1,7 @@
 ---
 title: "适用于 iOS 设备的 Intune VPN 设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用于在 iOS 设备上配置 VPN 连接的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解可用于在 iOS 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 17859701baa3dc4750ba51482db2228de092c93f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a6cc079b05037cc18b7d27dd0d2674e87e1d54d0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 iOS 设备的 VPN 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 根据所选择的设置，下表中并非所有值都可配置。
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 05/23/2017
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**
-    -  **F5 Edge Client**
+    - **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPSec)**
     - **Citrix**

@@ -1,5 +1,5 @@
 ---
-title: "配置策略参考 | Microsoft Docs"
+title: "配置策略参考"
 description: "通过本主题中的信息可帮助你确定管理设备所需要使用的 Microsoft Intune 策略。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 986e720f2b0722dd3f16e35f54c975eac5a12153
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: af13a591bdd0e3185a92702aab093d9ae3bc6434
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

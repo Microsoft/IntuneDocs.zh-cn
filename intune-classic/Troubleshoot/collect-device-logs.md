@@ -1,5 +1,5 @@
 ---
-title: "收集设备日志| Microsoft Docs"
+title: "收集设备日志"
 description: "了解如何收集托管设备中的日志。"
 keywords: 
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f75719a02e37f6285fb1d7c5de32bb7eb4b3a1ed
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b15e4b7fa0c650a85a080c42d00cd75cb8783c62
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -46,7 +46,7 @@ Android 日志位于 *<Android Device>\Phone\Android\data\com.microsoft.windowsi
 
 如[将 iOS 注册错误发送给 IT 管理员](/intune-user-help/send-errors-to-your-it-admin-ios)中所述，用户可向你发送注册错误。
 
-用户可发送设备日志，如[发送 iOS 设备日志](/intune-user-help/send-logs-to-your-it-admin-by-email-ios)所述。
+用户可发送设备日志，如[发送 iOS 设备日志](/intune-user-help/send-logs-to-microsoft-ios)所述。
 
 ### <a name="mac-os-x-logs"></a>Mac OS X 日志
 

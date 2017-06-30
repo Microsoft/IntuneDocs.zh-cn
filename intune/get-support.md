@@ -1,7 +1,7 @@
 ---
 title: "如何获取对 Microsoft Intune 的支持"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。"
+titleSuffix: Intune on Azure
+description: "对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 771cd13aaac159d5286812fd509ca598dceb31f8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 45b111c31afe8c79f3bd567401da14bbbbce3b69
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft 对 Microsoft Intune 提供全球技术、售前、帐单和订阅支持。 对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。 在线技术支持可通过英语和日语提供。 电话支持和联机帐单支持可使用其他语言。
 

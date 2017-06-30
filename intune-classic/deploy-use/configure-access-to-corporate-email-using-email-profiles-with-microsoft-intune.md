@@ -1,5 +1,5 @@
 ---
-title: "使用电子邮件配置文件访问公司电子邮件 | Microsoft Docs"
+title: "使用电子邮件配置文件访问公司电子邮件"
 description: "电子邮件配置文件设置可用于配置移动设备上特定电子邮件客户端的电子邮件访问设置。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,11 +36,11 @@ ms.lasthandoff: 05/23/2017
 IT 管理员或用户还可以选择安装备用电子邮件客户端（例如，Microsoft Outlook for Android 或 iOS）。 这些电子邮件客户端可能不支持电子邮件配置文件，并且不能使用 Intune 电子邮件配置文件进行设置。  
 
 你可以使用电子邮件配置文件配置下列设备类型上的本机电子邮件客户端：
--    Windows Phone 8.1 及更高版本
--    Windows 10 桌面版、Windows 10 移动版及更高版本
--    iOS 8.0 及更高版本
--    Samsung KNOX 标准版（4.0 及更高版本）
--    Android for Work（第三方电子邮件应用，本机电子邮件应用仅为个人配置文件）
+-   Windows Phone 8.1 及更高版本
+-   Windows 10 桌面版、Windows 10 移动版及更高版本
+-   iOS 8.0 及更高版本
+-   Samsung KNOX 标准版（4.0 及更高版本）
+-   Android for Work（第三方电子邮件应用，本机电子邮件应用仅为个人配置文件）
 
 除了在设备上设置电子邮件帐户外，还可以设置要同步的电子邮件数量，并且根据设备类型设置要同步的内容类型。
 
@@ -85,7 +85,7 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
     -   **电子邮件配置文件 (Android for Work - Gmail)**
 
-    -    **电子邮件配置文件 (Android for Work - Nine Work)**
+    -   **电子邮件配置文件 (Android for Work - Nine Work)**
 
     你只能创建和部署自定义电子邮件配置文件策略。 建议的设置不可用。
 

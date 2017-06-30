@@ -1,5 +1,5 @@
 ---
-title: "Windows PC 的防火墙策略 | Microsoft Docs"
+title: "适用于 Windows 电脑的防火墙策略"
 description: "Intune 可通过多种方式帮助你保护使用 Intune 客户端管理的电脑，其中包括帮助你配置 Windows 防火墙设置。"
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d96fd3cf4d8963f1e79ef4ed27c1b826c8893b5f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13ec6a424c3665e48938315d4af11cc986a83339
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows PC
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管理的 Windows 电脑。 其中的一种方法是提供使你能够在电脑上配置 Windows 防火墙设置的策略。
 
 如果你尚未在计算机上安装 Intune Windows 电脑客户端，请参阅[使用 Microsoft Intune 安装 Windows 电脑客户端](install-the-windows-pc-client-with-microsoft-intune.md)。
@@ -48,7 +51,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略”&gt;“添加策略”。
 
-2.  配置和部署 **Windows 防火墙设置** 策略。 你可以使用建议的设置，或对设置进行自定义。 如果你需要有关如何创建和部署策略的详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
+2.  配置和部署 **Windows 防火墙设置**策略。 你可以使用建议的设置，或对设置进行自定义。 如果你需要有关如何创建和部署策略的详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
 
     以下部分列出你可在策略中配置的值，还列出将在你未自定义策略的情况下使用的默认值。
 

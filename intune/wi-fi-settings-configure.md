@@ -1,12 +1,12 @@
 ---
 title: "如何配置 Intune Wi-Fi 设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Intune 来配置你管理的设备上的 Wi-Fi 连接。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Intune 来配置你所管设备上的 Wi-Fi 连接。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3378df904936def8737ca3b5b791feebdb95823b
+ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
+ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
 
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用 Microsoft Intune Wi-Fi 配置文件将无线网络设置分配到组织中的用户和设备。 分配 Wi-Fi 配置文件后，你的用户将有权访问你公司的 Wi-Fi 网络，而无需自行配置。
 
@@ -39,6 +39,7 @@ ms.lasthandoff: 05/23/2017
 Wi-Fi 配置文件支持以下设备平台：
 
 - Android 4 及更高版本
+- Android for Work
 - iOS 8.0 及更高版本
 - macOS（Mac OS X 10.9 及更高版本）
 
@@ -49,13 +50,14 @@ Wi-Fi 配置文件支持以下设备平台：
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>创建包含 Wi-Fi 设置的设备配置文件
 
 1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入 Wi-Fi 配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用 Wi-Fi 设置的设备平台。 目前，可以为 Wi-Fi 设置选择以下平台之一：
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows 8.1 及更高版本（导入配置文件）**
@@ -63,7 +65,7 @@ Wi-Fi 配置文件支持以下设备平台：
     >[!TIP]
     >使用“Wi-fi 基本”可提供基本功能，如网络名称和 SSID。 “Wi-Fi 企业”允许你提供更高级的信息，如可扩展身份验证协议 (EAP)（如果你的 Wi-Fi 网络使用此协议）。 “Wi-Fi 导入”（适用于 Windows 8.1 和 Windows 10）允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
 7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
-    - [Android 设置](wi-fi-settings-android.md)
+    - [Android 和 Android for Work 设置](wi-fi-settings-android.md)
     - [iOS 设置](wi-fi-settings-ios.md)
     - [macOS 设置](wi-fi-settings-macos.md)
     - [Windows Phone 8.1 设置](wi-fi-settings-import-windows-8-1.md)
@@ -71,5 +73,4 @@ Wi-Fi 配置文件支持以下设备平台：
 
 将创建配置文件并在“配置文件列表”边栏选项卡上显示。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
-
 

@@ -1,7 +1,7 @@
 ---
 title: "如何将 Windows Phone 8.1 应用商店应用添加到 Intune"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何将 Windows Phone 8.1 应用商店应用添加到 Intune。"
+titleSuffix: Intune on Azure
+description: "了解如何将 Windows Phone 8.1 应用商店应用添加到 Intune。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 72a883b77a4f74abd312f68f276f6250d89b5dd7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: dd2d590514ba370b34745c5426c0f047364a1062
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>如何将 Windows Phone 8.1 应用商店应用添加到 Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. 登录到 Azure 门户中。

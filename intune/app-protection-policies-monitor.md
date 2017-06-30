@@ -1,7 +1,7 @@
 ---
 title: "如何监视应用保护策略"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：查看有多少用户拥有策略，并深入了解更多详细信息。"
+titleSuffix: Intune on Azure
+description: "查看有多少用户拥有策略，并深入了解以获取详细信息。”"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,18 +16,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e7294e5c7bb1136718ca6d651d9375a22796fa7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**如果没有使用 Azure 中的 Intune 预览版**，本主题将介绍在经典 Intune 控制台中，[如何创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
+**如果没有使用 Azure 门户**，本主题还介绍了在经典 Intune 控制台中，[如何创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
 
 将移动应用管理 (MAM) 策略应用到用户后，可在 [Azure 门户](https://portal.azure.com)的 Intune 应用保护边栏选项卡中监视策略的合规性状态。 可找到的信息包括受 MAM 策略影响的用户、它的合规性状态和用户可能遭遇的任何问题。
@@ -43,7 +43,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="summary-view"></a>摘要视图
 
 1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “其他” > “Intune”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“移动应用”。
 4. 在“移动应用”工作负荷中，选择“监视” > “应用保护用户状态”，以查看摘要视图：
 

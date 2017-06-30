@@ -1,12 +1,12 @@
 ---
 title: "什么是 Microsoft Intune 设备注册"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何为 iOS 设备、Android 设备和 Windows 设备注册。"
+titleSuffix: Intune on Azure
+description: "了解如何为 iOS 设备、Android 设备和 Windows 设备注册。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 57bad4be991b61fe5212d340ab8d89cb6af3b0f7
+ms.sourcegitcommit: b74082a73972c9d72ea399b962c01aafce5ace27
+ms.openlocfilehash: 927e2f21aad4ff39c9351bef68eb510e93410c37
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
 
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主题介绍了 Intune 管理中的注册并列出了注册移动设备的不同方法。
 
@@ -37,66 +37,67 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="overview-of-device-enrollment-methods"></a>设备注册方法概述
 
-下表列出了 Intune 注册方法、支持的功能以及每个方法的要求。 功能和要求如下所述。 表中使用以下术语：
+下表概要列出了 Intune 注册的各种方法，并在后面部分对其相关功能和要求进行了说明。
+**图例**
 
-- **擦除** - 指示是否需要擦除设备后才使用户可注册设备。 术语“擦除”意味着对设备恢复出厂设置，这将删除所有数据。 有关详细信息，请参阅[在设备上使用完全擦除或选择性擦除](devices-wipe.md)。
-- **关联** - 将设备与用户关联。 对于移动应用程序管理 (MAM) 和公司数据的条件访问是必需的。 有关详细信息，请参阅[用户关联](device-enrollment-program-enroll-ios.md)。
-- **锁定** - 指示是否阻止用户从管理取消注册其设备。 用户可使用公司门户应用在所有平台上取消注册其设备。 用户不能使用本机操作系统菜单来取消注册。
-
+- **需要重置** - 设备在注册过程中恢复出厂设置。
+- **用户关联** - 将设备与用户关联。 有关详细信息，请参阅[用户关联](device-enrollment-program-enroll-ios.md)。
+- **锁定** - 防止用户取消注册设备。
 
 **iOS 注册方法**
 
-| **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息** |
+| **方法** |  **需要重置** |    **用户关联**   |   **锁定** | **详细信息** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |    否 | 详细信息稍后发布|
-|**[DEM](#dem)**|    否 |否 |否    | [详细信息](device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|    是 |    可选 |    可选|[详细信息](device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**|    是 |    可选 |    否| [详细信息](apple-configurator-setup-assistant-enroll-ios.md)|
-|**[USB-Direct](#usb-direct)**|    否 |    否    | 否|[详细信息](apple-configurator-direct-enroll-ios.md)|
+|**[BYOD](#byod)** | 否|    是 |   否 | [详细信息](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#dem)**|   否 |否 |否  | [详细信息](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#dep)**|   是 |   可选 |  可选|[详细信息](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| 是 |   可选 |  否| [详细信息](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB-Direct](#usb-direct)**| 否 |    否  | 否|[详细信息](./apple-configurator-direct-enroll-ios.md)|
 
 **Windows 注册方法**
 
-| **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息**|
+| **方法** |  **需要重置** |    **用户关联**   |   **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否 |    是 |    否 | [详细信息](windows-enroll.md)|
-|**[DEM](#dem)**|    否 |否 |否    |[详细信息](device-enrollment-manager-enroll.md)|
+|**[BYOD](#byod)** | 否 |   是 |   否 | [详细信息](windows-enroll.md)|
+|**[DEM](#dem)**|   否 |否 |否  |[详细信息](device-enrollment-manager-enroll.md)|
+|**自动注册** | 否 |是 |否 | [详细信息](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**批量注册** |否 |否 |否 | [详细信息](./windows-bulk-enroll.md) |
 
 **Android 注册方法**
 
-| **方法** |    **需要擦除？** |    **相关性**    |    **锁定** | **详细信息**|
+| **方法** |  **需要重置** |    **用户关联**   |   **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |    否 | [详细信息](android-enroll.md)|
-|**[DEM](#dem)**|    否 |否 |否    |[详细信息](device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| 否 | 是 | 否| [详细信息](android-enroll.md) |
+|**[BYOD](#byod)** | 否|    是 |   否 | [详细信息](./android-enroll.md)|
+|**[DEM](#dem)**|   否 |否 |否  |[详细信息](./device-enrollment-program-enroll-ios.md)|
+|**Android for Work**| 否 | 是 | 否| [详细信息](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## <a name="byod"></a>BYOD
-“自带设备办公”用户安装公司门户应用并注册其设备。 这让用户可连接到公司网络，并加入该域或 Azure Active Directory。 对于大多数平台，需要为许多 COD 方案启用 BYOD 注册。 可阻止个人拥有的 iOS 和 Android 设备的注册。 请参阅 [Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions)（设置设备类型限制）了解相关说明。
+“自带设备办公”的用户需要安装并运行公司门户应用，以注册其设备。 此程序可让用户访问电子邮件等公司资源。
 
-## <a name="corporate-owned-devices"></a>企业持有设备
-可以使用 Azure 门户管理公司拥有的设备 (COD)。 可以直接通过 Apple 提供的工具注册 iOS 设备。 管理员或经理可以使用设备注册管理器注册所有设备类型。 具有 IMEI 号码的设备也可以标识并标记为公司拥有，以实现 COD 方案。
+## <a name="corporate-owned-devices"></a>公司拥有的设备
+以下是公司拥有的设备 (COD) 注册方案。 可以直接通过 Apple 提供的工具注册 iOS 设备。 管理员或经理可以使用设备注册管理器注册所有设备类型。 具有 IMEI 号码的设备也可以标识并标记为公司拥有，以实现 COD 方案。
 
 ### <a name="dem"></a>DEM
-设备注册管理员 (DEM) 是一个特殊的用户帐户，用于注册和管理多个企业拥有的设备。 管理员可安装公司门户并注册多个无用户设备。 了解有关 [DEM](device-enrollment-manager-enroll.md) 的详细信息。 （[返回到表](#overview-of-device-enrollment-methods)）
+设备注册管理员 (DEM) 是一个特殊的用户帐户，用于注册和管理多个企业拥有的设备。 管理员可安装公司门户并注册多个无用户设备。 了解有关 [DEM](./device-enrollment-manager-enroll.md) 的详细信息。
 
 ### <a name="dep"></a>DEP
-通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 设备。 用户第一次开启设备并运行 iOS 设置助理时，将注册设备。 此方法支持 **iOS 监督**模式，此模式又允许：
+通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 设备。 用户第一次开启设备并运行 iOS 设置助理时，将注册设备。 此方法支持“iOS 监管”模式，从而可以使用下列功能：
 
-  -    锁定注册
-  -    展台模式以及其他高级配置和限制
+  - 锁定注册
+  - 展台模式以及其他高级配置和限制
 
-若要了解有关 iOS 注册的详细信息，请参阅：
+了解有关 iOS DEP 注册的详细信息：
 
 - [选择 iOS 设备注册方式](enrollment-method-choose-ios.md)
 - [使用设备注册计划注册 iOS 设备](device-enrollment-program-enroll-ios.md)
-- [返回到上表](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
-IT 管理员通过 USB 使用 Apple Configurator 手动准备每台公司自有设备，以便使用设备助理进行注册。 IT 管理员创建注册配置文件并将其导出到 Apple Configurator。 用户收到设备时，系统随后会提示其运行设备助理来注册设备。 此方法支持 **iOS 监督**模式，此模式又允许：
-  -    锁定注册
-  -    展台模式以及其他高级配置和限制
+IT 管理员可通过 USB 使用 Apple Configurator，手动准备每台公司拥有的设备，以便使用“设置助理”进行注册。 IT 管理员创建注册配置文件并将其导出到 Apple Configurator。 用户收到设备时，系统随后会提示其运行设备助理来注册设备。 此方法支持“iOS 监管”模式，从而可以使用下列功能：
+  - 锁定注册
+  - 展台模式以及其他高级配置和限制
 
-若要了解有关 iOS 注册的详细信息，请参阅：
+了解有关使用“设置助理”注册 iOS Apple Configurator 的详细信息：
 
 - [决定 iOS 设备注册方式](enrollment-method-choose-ios.md)
 - [使用 Configurator 和设置助理注册 iOS 设备](apple-configurator-setup-assistant-enroll-ios.md)
@@ -111,10 +112,6 @@ IT 管理员通过 USB 使用 Apple Configurator 手动准备每台公司自有�
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>使用 Exchange ActiveSync 和 Intune 管理移动设备
 可以使用 EAS MDM 策略，通过 Intune 管理未注册、但连接到 Exchange ActiveSync (EAS) 的移动设备。 Intune 使用 Exchange Connector 与 EAS 在本地或云托管环境中进行通信。 详细信息稍后发布。
-
-## <a name="supported-device-platforms-and-browsers"></a>支持的设备平台和浏览器
-
-请参阅 [Intune 支持的设备和浏览器](https://docs.microsoft.com/intune-classic/get-started/supported-mobile-devices-and-computers)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理
 

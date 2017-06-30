@@ -1,7 +1,7 @@
 ---
 title: "什么是应用保护策略"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：通过本主题来了解如何使用 Microsoft Intune 应用保护策略保护公司数据。"
+titleSuffix: Intune on Azure
+description: "通过本主题来了解如何使用 Microsoft Intune 应用保护策略保护公司数据。"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,10 +16,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e6b6664dee5e8533e1cad76a06c377e090f31086
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢失。
 
@@ -113,7 +113,7 @@ MDM 解决方案：
 
 ### <a name="data-protection-with-app-protection-policies-for-devices-without-enrollment"></a>采用上适用于未注册设备的应用保护策略保护数据
 
-![图像显示应用保护策略如何在托管设备上起作用](./media/app-protection-policies-without-mdm.png)
+![图像显示应用保护策略如何在受管理设备上起作用](./media/app-protection-policies-without-mdm.png)
 
 以上图示显示了在不没有 MDM 的情况下，数据保护策略如何在应用级别工作。
 

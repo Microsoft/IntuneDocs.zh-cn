@@ -1,7 +1,7 @@
 ---
 title: "添加 Apple Configurator 序列号"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何使用 Apple Configurator 将序列号添加到公司拥有的 iOS 设备。"
+titleSuffix: Intune on Azure
+description: "了解如何使用 Apple Configurator 将序列号添加到公司拥有的 iOS 设备。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="add-apple-configurator-serial-numbers"></a>添加 Apple Configurator 序列号
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 若要[使用 Apple Configurator 和设置助理注册公司拥有的 iOS 设备](apple-configurator-setup-assistant-enroll-ios.md)，请使用以下步骤将序列号添加到 Intune。 可以一次添加一个序列号，也可以上传序列号的逗号分隔值 (CSV) 文件。 添加序列号后，即可向其分配配置文件。 配置文件包含要应用于设备的特定管理设置。
 

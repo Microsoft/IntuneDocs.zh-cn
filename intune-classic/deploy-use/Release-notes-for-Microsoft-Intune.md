@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune 的发行说明 | Microsoft Docs"
+title: "Microsoft Intune 的发行说明"
 description: "Intune 发行说明"
 keywords: 
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2c7563ba79819a59740ba81c078c5540d0792ee5
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 751bd0bc90b762c5b51b85fae2129e53773b54fe
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -78,7 +78,7 @@ Microsoft will continue to work closely with Samsung on a fix or additional work
 ## <a name="microsoft-intune-app-wrapping-tool-for-android-has-no-built-in-uninstall-capability"></a>适用于 Android 的 Microsoft Intune 应用包装工具没有内置卸载功能
 **问题：****适用于 Android 的 Microsoft 应用包装工具**没有用于卸载该工具的内置功能。
 
-**解决方法：** 浏览到安装工具的位置，并删除该目录。 默认安装位置是：**C:\Program Files /intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)。
+**解决方法：** 浏览到安装工具的位置，并删除该目录。 默认安装位置为：**C:\Program Files\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool。 有关应用包装工具的详细信息，请参阅[使用应用包装工具准备管理 Android 应用](/intune/app-wrapper-prepare-android)。
 
 ## <a name="remote-assistance-is-not-available-on-computers-that-run-windows-8-or-windows-81"></a>远程协助在运行 Windows 8 或 Windows 8.1 的计算机上不可用
 **问题：** 在此版本中，远程协助功能在运行 Windows 8 或 Windows 8.1 的计算机上不可用。

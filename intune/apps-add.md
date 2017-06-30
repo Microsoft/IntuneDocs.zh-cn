@@ -1,7 +1,7 @@
 ---
-title: "如何将应用添加到 Microsoft Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：这些过程可助你将应用添加到 Intune，做好分配到用户和设备的准备。 "
+title: "如何将应用添加到 Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "这些过程可助你将应用添加到 Intune，做好分配到用户和设备的准备。 &quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 36cafd2b943ab1dd5045a8ed1fe1fcf1b28af385
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6b4df1ca6db5ce733ab7dab4e715ab0850dd7c8b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何向 Microsoft Intune 添加应用
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 必须先向 Intune 添加应用，然后才能为用户管理和分配应用。 Intune 支持各种不同的应用类型，具体选项可能因每种类型而异。
 

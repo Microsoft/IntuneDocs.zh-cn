@@ -1,7 +1,7 @@
 ---
 title: "适用于 iOS 设备的 Intune 电子邮件设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解 iOS 设备上可用于配置电子邮件连接的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解可用于在 iOS 设备上配置电子邮件连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f941247295761815804b2e91234ce664c90e06f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: dcac410ae5c20b5942bf37f5eaa9a46205a4cc07
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 iOS 设备的电子邮件配置文件设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 

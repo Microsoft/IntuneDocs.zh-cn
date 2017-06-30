@@ -1,7 +1,7 @@
 ---
 title: "适用于 iOS 设备的 Intune 应用通知设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用来控制 iOS 设备上的应用通知的设置。"
+titleSuffix: Intune on Azure
+description: "了解可用来控制 iOS 设备上的应用通知的设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c64167275a2628c6a3a4e899e00c25df4c10b06b
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c87f5b80309242420730bb2f38da81c528e1c217
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="intune-app-notifications-settings-for-ios-devices"></a>适用于 IOS 设备的 Intune 应用通知设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 允许你配置在设备上安装的应用如何发送通知。 此设置支持运行 iOS 9.3 及更高版本的已监督设备。
 

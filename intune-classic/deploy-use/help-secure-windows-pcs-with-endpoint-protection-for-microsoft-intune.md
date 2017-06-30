@@ -1,5 +1,5 @@
 ---
-title: "适用于 Windows 电脑的 Endpoint Protection | Microsoft Docs"
+title: "适用于 Windows 电脑的 Endpoint Protection"
 description: "使用提供对恶意软件威胁的实时防护的 Endpoint Protection 保障托管计算机的安全。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 180da5e2e0d6980214fff1cfffa3fb1d5b0058d3
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c51f9e471b432b13e0680538c5cf4ad68c1c12f1
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 通提供对恶意软件威胁的实时防护、使恶意软件定义保持最新以及自动扫描计算机的 Endpoint Protection，Microsoft Intune 可帮助保障托管计算机的安全。 Endpoint Protection 还提供可帮助你管理和监视恶意软件攻击的工具。
 
 如果你尚未在计算机上安装 Intune 客户端，请参阅[使用 Microsoft Intune 安装 Windows 电脑客户端](install-the-windows-pc-client-with-microsoft-intune.md)。
@@ -56,7 +59,7 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>配置 Microsoft Intune Endpoint Protection
 使用以下步骤可帮助你配置适用于 Microsoft Intune 的 Endpoint Protection。
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“**策略**” > “**添加策略**”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略” > “添加策略”。
 
 2.  展开“计算机管理”，然后选择“Microsoft Intune 代理设置”。 选择“创建并部署自定义策略”，为 Endpoint Protection 设置指定策略。 然后选择“创建策略”按钮。
 
@@ -70,13 +73,13 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 
 |策略设置|详细信息|
 |------------------|--------------------|
-|**安装 Endpoint Protection**|设置为“是”即可在被管理的计算机上安装 Endpoint Protection。 如果在安装期间检测到第三方 Endpoint Protection 应用程序，则将不安装 Endpoint Protection，除非将**即使安装了第三方 Endpoint Protection 应用程序，也安装 Endpoint Protection** 设置为“是”。 **注意：**Intune Endpoint Protection 已默认安装在托管计算机上。 如果不希望在收管理的计算机上安装 Endpoint Protection，则必须将此策略显式设置为“否”。 如果之前安装了 Endpoint Protection，且该策略已更新为“否”，则 Endpoint Protection 客户端将卸载。<br />建议的值： **是**|
-|**即使安装了第三方 Endpoint Protection 应用程序，仍要安装 Endpoint Protection**|设置为“是”后，即使检测到第三方 Endpoint Protection 应用程序也能安装 Microsoft Intune Endpoint Protection。<br /><br />建议的值： **是**|
-|**启用 Endpoint Protection**|设置为“是”可在具有 Endpoint Protection 客户端的计算机上启用 Microsoft Intune Endpoint Protection。<br /><br />如果设置为“否”，并且安装了 Microsoft Intune Endpoint Protection，则不向用户显示 Endpoint Protection 客户端用户界面，并且所有保护功能处于非活动状态。<br /><br />建议的值： **是**|
-|**禁用客户端 UI**|设置为“是”即可向用户隐藏 Microsoft Intune Endpoint Protection 客户端用户界面（重启客户端计算机后才能生效）。<br /><br />建议的值： **否**|
-|**即使安装了第三方 Endpoint Protection 应用程序，仍要安装 Endpoint Protection**|设置为“是”后，即使检测到第三方 Endpoint Protection 应用程序也能强制安装 Microsoft Intune Endpoint Protection。<br /><br />建议的值： **否**|
-|**在修正恶意软件之前创建系统还原点**|设置为“是”  以在任何恶意软件修正开始之前创建 Windows 系统还原点。<br /><br />建议的值： **是**|
-|**跟踪已解决的恶意软件(天)**|让 Endpoint Protection 跟踪解决的恶意软件一段指定的时间，以便你能够手动检查以前感染的计算机。<br /><br />可以指定从 0 到 30 天的值。<br /><br />建议的值： **7 天**|
+|**安装 Endpoint Protection**|设置为“是”即可在被管理的计算机上安装 Endpoint Protection。 如果在安装期间检测到第三方 Endpoint Protection 应用程序，则将不安装 Endpoint Protection，除非将**即使安装了第三方 Endpoint Protection 应用程序，也安装 Endpoint Protection** 设置为“是”。 **注意：**Intune Endpoint Protection 已默认安装在托管计算机上。 如果不希望在收管理的计算机上安装 Endpoint Protection，则必须将此策略显式设置为“否”。 如果之前安装了 Endpoint Protection，且该策略已更新为“否”，则 Endpoint Protection 客户端将卸载。<br />建议的值：**是**|
+|**即使安装了第三方 Endpoint Protection 应用程序，仍要安装 Endpoint Protection**|设置为“是”后，即使检测到第三方 Endpoint Protection 应用程序也能安装 Microsoft Intune Endpoint Protection。<br /><br />建议的值：**是**|
+|**启用 Endpoint Protection**|设置为“是”可在具有 Endpoint Protection 客户端的计算机上启用 Microsoft Intune Endpoint Protection。<br /><br />如果设置为“否”，并且安装了 Microsoft Intune Endpoint Protection，则不向用户显示 Endpoint Protection 客户端用户界面，并且所有保护功能处于非活动状态。<br /><br />建议的值：**是**|
+|**禁用客户端 UI**|设置为“是”即可向用户隐藏 Microsoft Intune Endpoint Protection 客户端用户界面（重启客户端计算机后才能生效）。<br /><br />建议的值：**否**|
+|**即使安装了第三方 Endpoint Protection 应用程序，仍要安装 Endpoint Protection**|设置为“是”后，即使检测到第三方 Endpoint Protection 应用程序也能强制安装 Microsoft Intune Endpoint Protection。<br /><br />建议的值：**否**|
+|**在修正恶意软件之前创建系统还原点**|设置为“是”以在任何恶意软件修正开始之前创建 Windows 系统还原点。<br /><br />建议的值：**是**|
+|**跟踪已解决的恶意软件(天)**|让 Endpoint Protection 跟踪解决的恶意软件一段指定的时间，以便你能够手动检查以前感染的计算机。<br /><br />可以指定从 0 到 30 天的值。<br /><br />建议的值：**7 天**|
 如果将“安装 Endpoint Protection”和“启用 Endpoint Protection”设置的策略值设置为“是”，并将“即使安装了第三方 Endpoint Protection 应用程序，仍安装 Endpoint Protection”的策略值设置为“否”，则 Microsoft Intune Endpoint Protection 将会检测是否安装了其他 Endpoint Protection 应用程序。 这意味着不会安装 Endpoint Protection（若已安装则将其卸载）。 但是，Microsoft Intune Endpoint Protection 会报告 Intune 中其他 Endpoint Protection 应用程序的运行状况。
 
   当潜在威胁（如病毒和间谍软件）试图在电脑上进行安装或运行时，Microsoft Security Essentials 可通过实时保护发出提醒。 出现这种情况时，你会在任务栏右侧的通知区域中看到一条消息。
@@ -85,12 +88,12 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 
 |策略设置|详细信息|
 |------------------|--------------------|
-|**启用实时保护**|启用对所访问的所有文件和应用程序的监视和扫描。 在任何恶意文件和应用程序能够在计算机上运行之前，此设置还会阻止这些文件和应用程序。<br /><br />建议的值： **是**|
-|**扫描所有下载**|启用对从 Internet 下载到计算机的所有文件和附件的扫描。<br /><br />建议的值： **是**|
-|**监视计算机上的文件和程序活动**|启用对计算机上的传入文件和传出文件以及程序活动的监视。 利用此设置，Endpoint Protection 可监视文件和程序何时开始运行，并将它们所执行的任何操作或针对它们执行的操作的相关信息通知你。<br /><br />建议的值： **是**|
-|**受监视的文件**|允许选择只监视传入文件、传出文件或所有文件。<br /><br />建议的值： **监视所有文件**|
-|**启用行为监视**|确保 Microsoft Intune Endpoint Protection 可检查客户端计算机上特定模式的可疑活动。<br /><br />建议的值： **是**|
-|**启用网络检查系统**|在客户端计算机上启用网络检查系统 (NIS)。 NIS 使用 [Microsoft Malware Protection Center（Microsoft 恶意软件防护中心）](https://go.microsoft.com/fwlink/?LinkId=234249) 中的已知漏洞签名来帮助检测和阻止恶意网络流量。<br /><br />建议的值： **是**|
+|**启用实时保护**|启用对所访问的所有文件和应用程序的监视和扫描。 在任何恶意文件和应用程序能够在计算机上运行之前，此设置还会阻止这些文件和应用程序。<br /><br />建议的值：**是**|
+|**扫描所有下载**|启用对从 Internet 下载到计算机的所有文件和附件的扫描。<br /><br />建议的值：**是**|
+|**监视计算机上的文件和程序活动**|启用对计算机上的传入文件和传出文件以及程序活动的监视。 利用此设置，Endpoint Protection 可监视文件和程序何时开始运行，并将它们所执行的任何操作或针对它们执行的操作的相关信息通知你。<br /><br />建议的值：**是**|
+|**受监视的文件**|允许选择只监视传入文件、传出文件或所有文件。<br /><br />建议的值：**监视所有文件**|
+|**启用行为监视**|确保 Microsoft Intune Endpoint Protection 可检查客户端计算机上特定模式的可疑活动。<br /><br />建议的值：**是**|
+|**启用网络检查系统**|在客户端计算机上启用网络检查系统 (NIS)。 NIS 使用 [Microsoft Malware Protection Center（Microsoft 恶意软件防护中心）](https://go.microsoft.com/fwlink/?LinkId=234249) 中的已知漏洞签名来帮助检测和阻止恶意网络流量。<br /><br />建议的值：**是**|
 
   ![Endpoint Protection 的实时设置](./media/pol-sa-pc-policy-realtime.png)
 
@@ -98,25 +101,25 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 
 |策略设置|更多信息|
 |------------------|--------------------|
-|**计划每日一次快速扫描**|计划对计算机上的常用文件和重要系统文件每天进行一次快速扫描。 此快速扫描对性能的影响最小。<br /><br />建议的值： **是**|
-|**如果错过两次连续的扫描，则运行快速扫描**|配置 Endpoint Protection 以在计算机错过两次连续快速扫描的情况下自动运行快速扫描。<br /><br />建议的值： **是**|
-|**计划完全扫描**|配置对本地计算机硬盘上的所有文件和资源进行完全扫描。 此扫描可能需要一些时间，并可能会影响计算机性能（具体时间取决于扫描的文件和资源的数目）。<br /><br />建议的值： **否**|
+|**计划每日一次快速扫描**|计划对计算机上的常用文件和重要系统文件每天进行一次快速扫描。 此快速扫描对性能的影响最小。<br /><br />建议的值：**是**|
+|**如果错过两次连续的扫描，则运行快速扫描**|配置 Endpoint Protection 以在计算机错过两次连续快速扫描的情况下自动运行快速扫描。<br /><br />建议的值：**是**|
+|**计划完全扫描**|配置对本地计算机硬盘上的所有文件和资源进行完全扫描。 此扫描可能需要一些时间，并可能会影响计算机性能（具体时间取决于扫描的文件和资源的数目）。<br /><br />建议的值：**否**|
 |**如果错过两次连续的完全扫描，则运行完全扫描**|配置 Endpoint Protection 以在计算机错过两次连续扫描的情况下自动运行完全扫描。<br /><br />建议的值：未配置|
 
 ### <a name="specify-scan-options-settings"></a>指定扫描选项设置
 
 |策略设置|详细信息|
 |------------------|--------------------|
-|**在安装 Endpoint Protection 后运行完全扫描**|设置为“是”Endpoint Protection 在计算机上安装之后自动运行一次完全系统扫描。 此扫描仅在计算机空闲时运行，以最大程度减小对用户工作效率的影响。<br /><br />建议的值： **是**|
-|**需要在删除恶意软件后执行后续操作时自动运行完全扫描**|设置为“是”以让 Endpoint Protection 在恶意软件删除之后在计算机上自动运行一次完全系统扫描，以帮助确认其他文件未受影响。<br /><br />建议的值： **是**|
-|**仅在计算机空闲时才开始计划的扫描**|设置为“是”  以在计算机处于使用状态时防止计划扫描开始，以避免对用户工作效率造成任何损失。<br /><br />建议的值： **是**|
-|**在开始扫描之前检查最新的恶意软件定义**|设置为“是”以让 Endpoint Protection 在开始在计算机上扫描之前自动检查是否有最新的恶意软件定义。<br /><br />建议的值： **是**|
-|**扫描存档文件**|设置为“是”以将 Endpoint Protection 配置为在计算机上的存档文件（如 .zip 或 .cab 文件）中扫描恶意软件。<br /><br />建议的值： **否**|
-|**扫描电子邮件**|设置为“是”以将 Endpoint Protection 配置为当电子邮件到达计算机上时对其进行扫描。<br /><br />建议的值： **是**|
-|**扫描从网络共享文件夹中打开的文件**|设置为“是”以将 Endpoint Protection 配置为对从网络上的共享文件夹中打开的文件进行扫描。 这些通常是使用通用命名约定 (UNC) 路径访问的文件。 启用此功能可能会导致具有只读访问权限的用户遇到问题，因为他们无法删除恶意软件。<br /><br />建议的值： **否**|
-|**扫描映射的网络驱动器**|设置为“是”以将 Endpoint Protection 配置对映射的网络驱动器上的文件进行扫描。 启用此功能可能会导致具有只读访问权限的用户遇到问题，因为他们无法删除恶意软件。<br /><br />建议的值： **否**|
-|**扫描可移动驱动器**|设置为“是”以将 Endpoint Protection 配置为当你在计算机上运行完全扫描时在可移动驱动器（如 USB 闪存驱动器）上扫描恶意软件和不需要的软件。<br /><br />建议的值： **是**|
-|**在扫描期间限制 CPU 使用率**|设置在计算机上进行计划扫描期间可使用的最大 CPU 使用率百分比。 可以将此值设置为 1% 到 100%。<br /><br />建议的值： **50%**|
+|**在安装 Endpoint Protection 后运行完全扫描**|设置为“是”Endpoint Protection 在计算机上安装之后自动运行一次完全系统扫描。 此扫描仅在计算机空闲时运行，以最大程度减小对用户工作效率的影响。<br /><br />建议的值：**是**|
+|**需要在删除恶意软件后执行后续操作时自动运行完全扫描**|设置为“是”以让 Endpoint Protection 在恶意软件删除之后在计算机上自动运行一次完全系统扫描，以帮助确认其他文件未受影响。<br /><br />建议的值：**是**|
+|**仅在计算机空闲时才开始计划的扫描**|设置为“是”以在计算机处于使用状态时防止计划扫描开始，以避免对用户工作效率造成任何损失。<br /><br />建议的值：**是**|
+|**在开始扫描之前检查最新的恶意软件定义**|设置为“是”以让 Endpoint Protection 在开始在计算机上扫描之前自动检查是否有最新的恶意软件定义。<br /><br />建议的值：**是**|
+|**扫描存档文件**|设置为“是”以将 Endpoint Protection 配置为在计算机上的存档文件（如 .zip 或 .cab 文件）中扫描恶意软件。<br /><br />建议的值：**否**|
+|**扫描电子邮件**|设置为“是”以将 Endpoint Protection 配置为当电子邮件到达计算机上时对其进行扫描。<br /><br />建议的值：**是**|
+|**扫描从网络共享文件夹中打开的文件**|设置为“是”以将 Endpoint Protection 配置为对从网络上的共享文件夹中打开的文件进行扫描。 这些通常是使用通用命名约定 (UNC) 路径访问的文件。 启用此功能可能会导致具有只读访问权限的用户遇到问题，因为他们无法删除恶意软件。<br /><br />建议的值：**否**|
+|**扫描映射的网络驱动器**|设置为“是”以将 Endpoint Protection 配置对映射的网络驱动器上的文件进行扫描。 启用此功能可能会导致具有只读访问权限的用户遇到问题，因为他们无法删除恶意软件。<br /><br />建议的值：**否**|
+|**扫描可移动驱动器**|设置为“是”以将 Endpoint Protection 配置为当你在计算机上运行完全扫描时在可移动驱动器（如 USB 闪存驱动器）上扫描恶意软件和不需要的软件。<br /><br />建议的值：**是**|
+|**在扫描期间限制 CPU 使用率**|设置在计算机上进行计划扫描期间可使用的最大 CPU 使用率百分比。 可以将此值设置为 1% 到 100%。<br /><br />建议的值：**50%**|
 
 ### <a name="choose-default-actions-settings"></a>选择默认操作设置
 
@@ -171,7 +174,7 @@ Microsoft Active Protection Service 是一个可帮助你决定如何应对潜�
   ![监视 Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>如何在计算机上查看恶意软件的最近检测路径
-Intune 可以在设备上显示多达 10 个最近检测到的恶意软件实例的路径。 **“最近检测路径”** 默认处于禁用状态。 启用此视图：
+Intune 可以在设备上显示多达 10 个最近检测到的恶意软件实例的路径。 **“最近检测路径”**默认处于禁用状态。 启用此视图：
 
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组” > “所有设备” > “所有计算机”。
 2. 右键单击要查看其最近检测路径的计算机，然后选择“属性”。

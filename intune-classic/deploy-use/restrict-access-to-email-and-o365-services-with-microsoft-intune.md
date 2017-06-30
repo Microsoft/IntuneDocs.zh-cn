@@ -1,5 +1,5 @@
 ---
-title: "保护电子邮件和 Office 365 | Microsoft Docs"
+title: "保护电子邮件和 Office 365"
 description: "本主题介绍如何使用条件性访问只允许合规设备在 SharePoint Online 和其他服务上访问公司电子邮件和公司数据。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -51,7 +51,7 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
 
 - 了解有关[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)的详细信息。
 
-此外，请确保将 [Azure AD Premium 或 EMS 许可证](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)分配给计划应用条件性访问策略的用户。
+此外，请确保将 [Azure AD Premium 或 EMS 许可证](/intune/licenses-assign)分配给计划应用条件性访问策略的用户。
 
 ### <a name="device-compliance-settings"></a>设备合规性设置
 

@@ -1,12 +1,12 @@
 ---
-title: "iOS Classroom 应用的 Intune设置 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用于控制 iOS 设备上 Classroom 应用设置的 Intune 设置。"
+title: "iOS Classroom 应用的 Intune设置"
+titleSuffix: Intune on Azure
+description: "了解可用于控制 iOS 设备上 Classroom 应用设置的 Intune 设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f24636687291ff55686277c3f24b2774cfb32f4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7ea8e8d95f331cf75fe7111c8f8acdfe01877cdd
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何配置 iOS Classroom 应用的 Intune 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>简介
 [Classroom](https://itunes.apple.com/app/id1085319084) 是一款可帮助教师在教室中指导学习及控制学生设备的应用。 例如，教师可以使用此应用执行以下操作：
@@ -77,14 +77,14 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 ### <a name="configure-general-settings"></a>配置常规设置
 
 1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “其他” > “Intune”。
-3.    在“Intune”边栏选项卡上，选择“配置设备”。
-4.    在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
-5.    在配置文件边栏选项卡上，选择“创建配置文件”。
-6.    在“创建配置文件”边栏选项卡上，输入 iOS 教育配置文件的“名称”和“说明”。
-7.    在“平台”下拉列表中，选择“iOS”。
-8.    在“配置文件类型”类型下拉列表中，选择“教育”。
-9.    选择“设置” > “配置”。
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+3.  在“Intune”边栏选项卡上，选择“配置设备”。
+4.  在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
+5.  在配置文件边栏选项卡上，选择“创建配置文件”。
+6.  在“创建配置文件”边栏选项卡上，输入 iOS 教育配置文件的“名称”和“说明”。
+7.  在“平台”下拉列表中，选择“iOS”。
+8.  在“配置文件类型”类型下拉列表中，选择“教育”。
+9.  选择“设置” > “配置”。
 
 
 接下来，需要使用证书在教师和学生 iPad 之间建立信任关系。 证书用于在无提示情况下对设备间的连接进行无缝式身份验证，而无需输入用户名和密码。
@@ -120,8 +120,8 @@ iOS 教育配置文件仅支持 PFX 证书，不支持 SCEP 证书。
 
 ### <a name="configure-student-certificates"></a>配置学生证书
 
-1.    在“教育”边栏选项卡上，选择“学生证书”。
-2.    在“学生证书”边栏选项卡的“学生设备证书”类型列表中，选择“1:1”。
+1.  在“教育”边栏选项卡上，选择“学生证书”。
+2.  在“学生证书”边栏选项卡的“学生设备证书”类型列表中，选择“1:1”。
 
 #### <a name="configure-student-root-certificate"></a>配置学生根证书
 
@@ -143,8 +143,8 @@ iOS 教育配置文件仅支持 PFX 证书，不支持 SCEP 证书。
 
 ## <a name="finish-up"></a>完成
 
-1.    在“教育”边栏选项卡上，选择“确定”。
-2.    在“创建配置文件”边栏选项卡上，选择“创建”。
+1.  在“教育”边栏选项卡上，选择“确定”。
+2.  在“创建配置文件”边栏选项卡上，选择“创建”。
     
 将创建配置文件并在“配置文件列表”边栏选项卡上显示。
 

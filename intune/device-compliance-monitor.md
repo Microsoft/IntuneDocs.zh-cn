@@ -1,7 +1,7 @@
 ---
 title: "如何监视设备符合性"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何监视设备合规性。"
+titleSuffix: Intune on Azure
+description: "了解如何监视设备符合性。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,21 +16,21 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>如何在 Intune Azure 预览版中监视设备符合性
+# <a name="how-to-monitor-device-compliance-in-intune"></a>如何在 Intune 中监视设备符合性
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 可以在“概述”边栏选项卡中查看“合规性配置文件”的状态摘要。
-可以以交互方式单击各图表以深入查看详细信息。 如果配置了多个合规性配置文件，则还可以通过转到“策略”边栏选项卡并选择“管理”部分中的“报表”来查看每个策略的状态。  下面列出了可用于预览的报表的详细信息。
+可以以交互方式单击各图表以深入查看详细信息。 如果配置了多个合规性配置文件，则还可以通过转到“策略”边栏选项卡并选择“管理”部分中的“报表”来查看每个策略的状态。  下面列出了可用报表的详细信息。
 
-##  <a name="device-compliance"></a>设备合规性
+##  <a name="device-compliance"></a>设备符合性
 
 设备合规性报表的摘要视图首先向你显示有关设备数的聚合信息，其报告为以下之一：
 

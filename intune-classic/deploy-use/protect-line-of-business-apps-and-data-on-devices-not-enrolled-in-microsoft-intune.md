@@ -1,5 +1,5 @@
 ---
-title: "保护未注册的设备上的 LOB 应用 | Microsoft Docs"
+title: "保护未注册的设备上的 LOB 应用"
 description: "本主题介绍如何准备自定义的业务线应用，以便应用可帮助防止数据丢失的移动应用管理策略。"
 keywords: 
 author: mtillman
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f30837d90954b9b30b27e77240bb241db6e2b037
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,16 +27,16 @@ ms.lasthandoff: 05/23/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-移动应用管理 (MAM) 策略通过限制可能会泄漏公司数据的操作以及实施数据访问要求（如应用 PIN）来保护公司数据。 若要将 MAM 策略应用于 iOS 和/或 Android 业务线应用，首先必须使用 Microsoft Intune 应用包装工具包装此应用。 应用包装是一个将管理层应用于移动应用的过程，不要求对基础应用程序进行任何更改。 一旦应用包装完成，就可向其应用 MAM 策略并将其分发给最终用户。  
+移动应用管理 (MAM) 策略通过限制可能会泄漏公司数据的操作以及实施数据访问要求（如应用 PIN）来保护公司数据。 若要将 MAM 策略应用于 iOS 和/或 Android 业务线应用，首先必须使用 Microsoft Intune 应用包装工具包装此应用。 应用包装是将管理层应用于移动应用，而无需对其进行任何更改 /intune/apps-prepare-mobile-application-managementes，并将其分发给用户的过程。  
 
-本主题说明将 MAM 策略应用于用户在**不受管理的员工自有设备**以及**由第三方移动设备管理 (MDM) 解决方案管理的设备**上访问的应用所需的步骤。  若要准备**已在 Intune MDM 中注册的设备**上运行的业务线应用，请参阅[决定如何使用 Microsoft Intune 为移动应用管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
+本主题说明将 MAM 策略应用于用户在**不受管理的员工自有设备**以及**由第三方移动设备管理 (MDM) 解决方案管理的设备**上访问的应用所需的步骤。  若要准备**已在 Intune MDM 中注册的设备**上运行的业务线应用，请参阅[决定如何使用 Microsoft Intune 为移动应用管理准备应用](/intune/apps-prepare-mobile-application-management)。
 
 
 ##  <a name="step-1-prepare-the-app"></a>步骤 1：准备应用
 
-将 MAM 策略应用于某个应用时，首先必须使用 [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 和 [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 版 Microsoft Intune 应用包装工具包装该应用，或者使用 [Intune 应用 SDK](../develop/intune-app-sdk.md) 手动集成 Intune 应用保护功能。
+将 MAM 策略应用于某个应用前，首先必须使用 [IOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) 版 Microsoft Intune 应用包装工具包装该应用，或者使用 [Intune App SDK](/intune/app-sdk) 手动集成 Intune 应用保护功能。
 
-若要深入了解应该使用应用包装工具还是 SDK，请参阅[决定如何使用 Microsoft Intune 为移动应用管理准备应用](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)。
+若要深入了解应该使用应用包装工具还是 SDK，请参阅[决定如何使用 Microsoft Intune 为移动应用管理准备应用](/intune/apps-prepare-mobile-application-management)。
 
 ## <a name="step-2-add-the-app"></a>步骤 2：添加应用
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 05/23/2017
 2. 在“业务线应用”边栏选项卡中，选择“添加自定义应用”。
 
   ![“添加自定义应用”按钮位于顶部的“业务线应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-add-lob-app-action.png)
-3.    提供应用名称、应用标识符字段的捆绑标识符以及平台（iOS 或 Android）。
+3.  提供应用名称、应用标识符字段的捆绑标识符以及平台（iOS 或 Android）。
 
   ![“添加自定义应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-add-app-details.png)
 
@@ -74,11 +74,11 @@ ms.lasthandoff: 05/23/2017
 ##  <a name="remove-apps"></a>删除应用
 可从应用列表中删除业务线应用。 这会从列表中删除该应用及与 MAM 策略的关联，但不会从用户设备中删除或卸载该应用。  
 
-1.    在 [Azure 门户](https://portal.azure.com/)中，转到“Intune 移动应用管理” > “设置”。 在**设置**边栏选项卡上，选择**业务线**打开现有应用的列表。  
-2.    选择要删除的应用，并选择“...”上下文菜单。
+1.  在 [Azure 门户](https://portal.azure.com/)中，转到“Intune 移动应用管理” > “设置”。 在**设置**边栏选项卡上，选择**业务线**打开现有应用的列表。  
+2.  选择要删除的应用，并选择“...”上下文菜单。
 
   ![含省略号的“业务线应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-lob-context-menu.png)
-3.    选择**删除应用程序**以删除该应用。
+3.  选择**删除应用程序**以删除该应用。
 
   ![含“删除应用程序”选项的“业务线”边栏选项卡的屏幕截图](../media/mam-azure-portal-delete-app.png)
 

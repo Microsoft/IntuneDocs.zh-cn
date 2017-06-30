@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,10 +18,10 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3fe1ec94f3112a252b9694449d341f336e97e635
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: 9af52f5433798f6852026335ca169fd295d4ed50
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -31,25 +31,15 @@ ms.lasthandoff: 05/23/2017
 
 当从 Intune 取消注册你的 Android 设备时，该设备无法再访问公司资源。  若要了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
-若要从 Intune 取消注册设备并卸载公司门户应用，请按照下列步骤操作或观看此视频：
+若要从 Intune 取消注册设备并删除公司门户应用，请按照下列步骤操作：
 
-<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
+1. 通过单击公司门户应用右上角的三个垂直点，打开“操作菜单”。 
 
-1. 打开“设置”应用，打开“设备管理员”，然后关掉“公司门户”。 根据设备不同，“设备管理员”设置在首选项列表中的名称或位置可能稍有不同。
+![Android 公司门户应用的图像和操作菜单将在右上角打开。 新的“删除公司门户”选项是第三个选项，位于“我的配置文件“和“设置”的下方，以及“条款和条件”、“帮助和反馈”和“关于”的上方。](./media/android_remove_cp_menu_action_after_1705.png)
 
-2.  登录到公司门户应用。
+2. 系统将弹出一条确认消息，询问你是否确定要删除“公司门户”。 它将提供一些信息，说明取消注册设备会发生的情况。 阅读此消息后，单击“确定”继续。 
 
-3.  点击“我的设备”，然后选择要取消注册的设备。
-
-    ![选择要取消注册的设备。](./media/andr-1-my-devices-choose.png)
-
-4.  点击回收站图标。
-
-    ![点击回收站图标。](./media/andr-2-tap-trashcan.png)
-
-5.  在警告页上，点击“确定”以取消注册你的设备。
-
-    ![删除设备。](./media/andr-3-warning-about-remove.png)
+![在操作菜单中选择新的“删除公司门户”选项后，将出现一个确认对话图像。 该对话将通知用户“删除公司门户，设备将不再由 IT 管理员管理，并且可能删除对公司数据、公司应用和公司电子邮件的访问权限。” 然后，它会要求用户通过选择“是”确认删除“公司门户”应用。](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
 

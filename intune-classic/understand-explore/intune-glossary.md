@@ -1,22 +1,23 @@
 ---
-title: "Intune 术语表 | Microsoft Docs"
+title: "Intune 术语表"
 description: "了解 Microsoft Intune 中的一些术语"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 43b6dbfc004e8687eaf2a0ee185728136f457bfc
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: be3b078edc4e133fb586bb9476ba1dd770d0f389
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -29,10 +30,17 @@ ms.lasthandoff: 05/23/2017
 
 |||
 |-|-|
-|App SDK|通过 [Microsoft Intune App SDK](/intune-classic/develop/intune-app-sdk) 可添加功能到内部编写的应用，确保应用可由 Intune 移动应用管理策略进行管理。|
-|应用包装工具|[命令行应用程序](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)可在企业应用周围创建包装器，之后包装器将允许 Intune 移动应用管理策略管理该应用。|
-|“可用安装”|使用此操作部署应用时，应用显示在公司门户中，用户可[按需安装](/intune-classic/deploy-use/deploy-apps)。|
-|Azure 门户|即将引入的新的 Intune 控制台。 此时可使用 Azure 门户创建设备的 [Intune MAM 策略](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)。|
+|应用配置的配置文件|在运行 iOS 应用之前，请使用[特定设置](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)对其进行配置。|
+|应用程序部署|可让用户[查找、下载和安装](/intune-classic/deploy-use/deploy-apps)所需的应用。|
+|应用监视|可让你[查看与应用部署相关的最新状态和活动](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)。|
+|应用保护数据删除任务|可从用户的设备中[删除应用数据](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。|
+|应用保护策略|可确保用户应用符合[公司数据保护策略](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。|
+|应用报告|可让你[查看有关应用部署状态和活动的历史数据](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)。|
+|App SDK|通过 [Microsoft Intune App SDK](/intune/app-sdk) 可添加功能到内部编写的应用，确保应用可由 Intune 移动应用管理策略进行管理。|
+|应用卸载操作|可让你从用户的设备[卸载应用](/intune-classic/deploy-use/deploy-apps)。|
+|应用包装工具|[命令行应用程序](/intune/apps-prepare-mobile-application-management)可在企业应用周围创建包装器，之后包装器将允许 Intune 移动应用管理策略管理该应用。|
+|可用安装|使用此操作部署应用时，应用显示在公司门户中，用户可[按需安装](/intune-classic/deploy-use/deploy-apps)。|
+|Azure 门户|即将引入适用于 Intune 的新控制台。 [阅读更多关于新门户的信息](/intune/what-is-intune)。|
 
 ## <a name="b"></a>B
 |||
@@ -56,7 +64,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |部署|向管理的设备或用户发送应用或策略的操作。|
 |部署操作|[部署应用](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)时的选择。 可选择将应用安装设为必须、可选或卸载应用。|
-|设备注册管理器|组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 设备注册管理 (DEM) 帐户是特殊的 Intune 帐户，可注册多达 1,000 台设备。/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)|
+|设备注册管理器|组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 [设备注册管理器 (DEM) 帐户](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)是一个特殊的 Intune 帐户，可以注册多达 1,000 台设备。|
 |设备组映射|帮助你根据你或最终用户可分配到设备的设备类型（如“个人”或“销售”）[自动将设备添加到组](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)。|
 
 ## <a name="e"></a>E
@@ -64,7 +72,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |电子邮件配置文件|此策略可用于为移动设备上的特定电子邮件客户端设置[电子邮件访问设置](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)，最大限度地减少最终用户需要进行的设置。|
 |EMS|Microsoft 企业移动性 + 安全性（以前称为企业移动性套件）在确保用户可[访问所需应用和内容](https://www.microsoft.com/cloud-platform/enterprise-mobility)的同时，可保护公司数据。|
-|最终用户|使用 Intune 管理的[手机和电脑等设备的用户](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)。|
+|最终用户|使用 Intune 管理的[手机和电脑等设备的用户](/intune/end-user-educate)。|
 |注册|Microsoft Intune 使用[注册](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)将设备纳入管理并允许访问资源。|
 
 ## <a name="f"></a>F
@@ -99,8 +107,8 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Managed Browser|这是一个 [Web 浏览应用程序](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)，可以使用 Microsoft Intune 在组织中进行部署。 托管浏览器策略可配置允许列表或阻止列表，限制托管浏览器的用户可以访问的网站。|
-|移动应用程序管理|通过移动应用程序管理 (MAM) /intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) 可为用户发布、推送、配置、保护、监视和更新移动应用。
-|移动设备管理|移动设备管理 (MDM) /intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) 能够将设备注册到 Intune 中，以便对这些设备进行预配、配置、监视和执行操作。
+|移动应用程序管理|[移动应用管理 (MAM)](/intune/app-lifecycle) 能够为用户发布、推送、配置、保护、监视和更新移动应用。
+|移动设备管理|[移动设备管理 (MDM)](/intune/device-lifecycle) 能够将设备注册到 Intune 中，以便对这些设备进行预配、配置、监视和执行操作。
 |MDM 机构|[MDM 机构](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。|
 |移动应用预配策略|帮助你确保部署的 iOS 应用的[预配配置文件](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)不会过期的 iOS 策略。|
 |移动应用配置策略|用于在应用运行时为[兼容的 iOS 应用提供设置](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)（例如公司名称或服务器地址）的 iOS 策略。|
@@ -122,13 +130,13 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |远程锁定|一项 Intune 功能，即使设备不属于你，也可以使用此功能[锁定受支持的设备](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune)。|
 |Reports|Intune 提供一系列[内置报表](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)，可提供所管理设备的有关信息。|
-|“必需安装”|使用此操作部署应用时，[无需用户介入](/intune-classic/deploy-use/deploy-apps)就可将其安装在设备上（尽管对于某些平台，最终用户可能必须接受该安装）。|
+|必需安装|使用此操作部署应用时，[无需用户介入](/intune-classic/deploy-use/deploy-apps)就可将其安装在设备上（尽管对于某些平台，最终用户可能必须接受该安装）。|
 |要求|一项[应用部署操作](/intune-classic/deploy-use/add-apps)，安装应用前，可借助此操作选择必须满足的设备要求。 例如，可以在安装应用前指定必须安装的 iOS 操作系统的版本。|
 
 ## <a name="s"></a>S
 |||
 |-|-|
-|“选择性擦除”|[选择性擦除](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)将只删除公司数据，包括设备中适用的移动应用管理 (MAM) 数据、设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。|
+|选择性擦除|[选择性擦除](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)将只删除公司数据，包括设备中适用的移动应用管理 (MAM) 数据、设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。|
 |订阅|输入的协议允许你访问 Intune 租户。|
 
 ## <a name="t"></a>T

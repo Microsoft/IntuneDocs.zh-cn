@@ -1,7 +1,7 @@
 ---
-title: "如何将 Windows Phone 业务线应用添加到 Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解如何将 Windows Phone 业务线应用添加到 Intune。"
+title: "如何将 Windows Phone 业务线应用添加到 Intune"
+titleSuffix: Intune on Azure
+description: "了解如何将 Windows Phone 业务线应用添加到 Intune。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,23 +16,23 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d9adb9a5120c83023bb25199f666f1352752562
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5c27b1a7d0c24bacc206cabe65bd3529a50fc2b4
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 Windows Phone 业务线 (LOB) 应用添加到 Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>步骤 1 - 指定软件安装程序文件
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“管理应用”。
+3. 在 Intune 边栏选项卡上，选择“管理应用”。
 4. 在“移动应用”工作负荷中，选择“管理” > “应用”。
 5. 在应用列表的上方，选择“添加”。
 6. 在“添加应用”边栏选项卡中，选择“业务线应用”。

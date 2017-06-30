@@ -1,7 +1,7 @@
 ---
 title: "适用于 Windows Phone 8.1 设备的 Intune VPN 设置"
-titleSuffix: Intune Azure preview
-description: "Intune Azure 预览版：了解可用于在 Windows Phone 8.1 设备上配置 VPN 连接的 Intune 设置。"
+titleSuffix: Intune on Azure
+description: "了解可用于在 Windows Phone 8.1 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: bd6d6debcf2f62599518aec7b6998ecf29c3dd6a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a009a16c7c475864f665f6ad0ab8fe1853c801b4
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows Phone 8.1 设备的 VPN 设置
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 根据所选择的设置，下表中并非所有值都可配置。
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 05/23/2017
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **Dell SonicWALL Mobile Connect**
-    -  **F5 Edge Client**
+    - **F5 Edge Client**
     - **Pulse Secure**
 
 - **登录组或域**（仅限 Dell SonicWALL Mobile Connect）- 指定要连接到的登录组或域的名称。

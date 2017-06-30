@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online 的应用访问 | Microsoft Docs"
+title: "Exchange Online 应用访问"
 description: "本主题介绍如何为 MAM 应用配置条件访问策略。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: df84bdf2358b596905299c7099ce22e128e9d17d
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2ef4a0c0e642026d625d7139b2ea2629cdd96930
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-本主题提供有关如何为 Exchange Online 设置条件访问以便仅允许支持 Intune 应用保护策略的移动应用的分步说明。
+本主题介绍有关如何为 Exchange Online 设置条件性访问，以便仅允许支持 Intune 应用保护策略的移动应用的分步说明。
 
 
 ## <a name="create-an-exchange-online-policy"></a>创建 Exchange Online 策略
