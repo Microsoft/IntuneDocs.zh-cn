@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ ms.lasthandoff: 06/14/2017
 
 ## <a name="before-you-start"></a>开始之前
 
-1. 确保在 Intune 控制台的**“管理员”**选项卡中将 Intune 和 Android for Work 配置为协同工作。
+确保在 Intune 控制台的**“管理员”**选项卡中将 Intune 和 Android for Work 配置为协同工作。
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>从 Google Play for Work 商店同步应用
 
