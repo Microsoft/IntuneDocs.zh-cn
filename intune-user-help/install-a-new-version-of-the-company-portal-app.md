@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 586a5355e2ee4b0dda6e0238628fa71bdce6f1a2
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-update-the-company-portal-app"></a>如何更新公司门户应用
 
 如果不再支持你的公司门户应用版本，或者可以使用较新版本的公司门户应用，则需要将它更新到较高版本。 使用与你拥有的设备类型相匹配的步骤。
@@ -53,4 +49,3 @@ ms.lasthandoff: 05/23/2017
 
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

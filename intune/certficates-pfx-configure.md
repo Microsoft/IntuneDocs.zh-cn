@@ -15,14 +15,11 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>使用 Intune 配置和管理 PKCS 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -209,4 +206,3 @@ ms.lasthandoff: 06/08/2017
 - 尽管是单独分配每个配置文件，但仍需分配受信任的根 CA 和 PKCS 配置文件。 否则，PKCS 证书策略将失败。
 
 若要了解如何分配配置文件，请参阅[如何分配设备配置文件](device-profile-assign.md)。
-

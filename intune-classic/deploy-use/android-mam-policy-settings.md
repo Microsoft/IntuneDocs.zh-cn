@@ -14,15 +14,12 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 785e36bb9354e02e4040b5cf2271cbf6f10c4041
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ ms.lasthandoff: 06/08/2017
 | **擦除应用数据前的脱机时间间隔(天)** | 在脱机运行相应天数（由管理员定义）后，应用会自行执行选择性擦除。 此选择性擦除功能与管理员可在 MAM 擦除工作流中启动的擦除相同。 <br><br> | 90 天 |
 | **阻止屏幕捕获和 Android 助手 (Android 6.0+)** | 选择“是”，则在使用此应用时，阻止设备的屏幕捕获和“Android 助手”功能。 选择“是”还会在通过工作或学校帐户使用此应用时，导致应用切换器预览图像模糊。 | 否 |
 | **托管设备 PIN 后禁用应用 PIN** | 在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 | 否 |
-

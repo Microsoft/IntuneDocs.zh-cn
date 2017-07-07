@@ -15,14 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用 Microsoft Intune 自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -208,4 +205,3 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
     最好使用尚未连接到许多无线网络的计算机，因为必须搜索每个配置文件以找到正确的文件。
 3.     搜索 XML 文件以找到具有正确名称的那一个。
 4.     找到了正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的数据字段中。
-

@@ -15,13 +15,11 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 91f0a71ed7b924746425822ce10190a8ec7a7a40
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中创建适用于 Windows 设备的设备符合性策略
 
@@ -195,4 +193,3 @@ ms.lasthandoff: 06/08/2017
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

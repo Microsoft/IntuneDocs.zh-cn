@@ -14,15 +14,12 @@ ms.assetid: 08d87906-8158-4d5e-a49d-ad919efef3d1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 85f3ed28b021c0aa2b00f128297eb0d99cf0bc1c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-mobile-threat-defense-connectors"></a>Intune 移动威胁防御连接器
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -54,4 +51,3 @@ ms.lasthandoff: 06/08/2017
 
 - [Lookout](/intune-classic/deploy-use/lookout-mobile-threat-defense-connector)
 - [Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)
-

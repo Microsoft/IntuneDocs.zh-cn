@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 371e534a25df470edf2731b901640092e1a6e366
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 
 IT 管理员可对托管应用进行配置，以帮助保护在该应用中可访问的公司数据。 在 Android 设备上的托管应用中访问公司数据时，可能会注意到此应用与预期的运作方式有些许不同。 例如，你可能无法复制和粘贴受保护的公司数据，或者你可能无法将该数据保存到特定位置。
@@ -78,4 +73,3 @@ IT 部门可能管理的常见应用程序有：
 -   Microsoft Word、Excel 和 PowerPoint
 
 有关设备上的托管应用的详细信息，请联系你的 IT 部门。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

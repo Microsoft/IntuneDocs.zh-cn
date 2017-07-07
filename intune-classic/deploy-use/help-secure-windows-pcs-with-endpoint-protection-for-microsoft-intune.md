@@ -14,15 +14,12 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c51f9e471b432b13e0680538c5cf4ad68c1c12f1
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -195,4 +192,3 @@ Intune 可以在安装有 Intune 客户端的远程托管电脑上使用 Endpoin
 
 ### <a name="see-also"></a>另请参阅
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

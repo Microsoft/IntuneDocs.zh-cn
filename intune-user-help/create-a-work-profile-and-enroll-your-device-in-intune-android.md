@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>创建工作配置文件并在 Intune 中注册设备
 
 注册 Android 设备可以访问公司电子邮件、应用和其他工作数据。 注册过程中将设置工作配置文件，用于分隔设备上的个人数据和工作数据。 IT 管理员只能管理包含工作数据的工作配置文件。 IT 管理员无法管理设备上的个人数据。 找到有关[创建工作配置文件时会发生的情况](what-happens-when-you-create-a-work-profile-android.md)的详细信息。
@@ -88,4 +83,3 @@ ms.lasthandoff: 05/23/2017
     ![Play Store for Work 应用页](./media/andr-afw-tap-work-play-store-icon.png)
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

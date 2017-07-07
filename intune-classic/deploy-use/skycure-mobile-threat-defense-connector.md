@@ -14,15 +14,12 @@ ms.assetid: 7a004e6c-604a-448c-bfb8-cfda63749f5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d0b401babf356e44479229c3bea27c956926a6f9
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure 移动威胁防御连接器
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -132,4 +129,3 @@ Intune 支持与 Skycure 集成的两种模式：
 6.  [在 Intune 中启用 Skycure 移动威胁防御](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
 7.  [在 Intune 中创建 Skycure 移动威胁防御符合性策略](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
-

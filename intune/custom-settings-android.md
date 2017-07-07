@@ -15,15 +15,12 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的自定义设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -43,4 +40,3 @@ ms.lasthandoff: 06/08/2017
     - **OMA-URI** 指定需为其提供设置的 OMA-URI。
     - **值** - 输入要与已输入的 OMA-URI 关联的值。
 4. 完成后，单击“确定”，根据需要继续添加其他设置。
-

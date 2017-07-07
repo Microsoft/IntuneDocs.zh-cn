@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 设备注册疑难解答
 如果你按照“[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)”中的步骤操作，但是仍无法访问工作或学校电子邮件和文件，请尝试以下故障排除步骤。
 
@@ -60,4 +56,3 @@ ms.lasthandoff: 05/23/2017
 - 如果看不到工作单位或学校帐户，请点击“连接”，然后使用工作单位或学校凭据登录。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

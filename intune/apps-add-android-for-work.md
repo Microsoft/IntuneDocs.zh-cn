@@ -15,15 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 352242b940a90539e0645ea1646dcaebfe245e05
 ms.openlocfilehash: 94394a889d97b4d1bdf09303b11cdc3688e4f55a
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/14/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 将应用分配到 Android for Work 设备
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -89,7 +86,6 @@ Android for Work 需要你先在 Google 的托管 Play Web 控制台中批准应
 3. 访问“更新”选项卡，查看是否有应用需要更新。  列出的所有应用都需要新权限，且在应用新权限之前不会进行分配。  
 
 或者，可将 Google Play 配置为自动根据每个应用的情况重新审批应用权限。 
-
 
 
 

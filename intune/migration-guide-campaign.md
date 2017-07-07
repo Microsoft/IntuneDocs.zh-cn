@@ -14,15 +14,12 @@ ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 9690572fd5f17fece0de7b533c98bfc52d77615b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="phase-2-migration-campaign"></a>阶段 2：迁移活动
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -73,4 +70,3 @@ ms.lasthandoff: 06/13/2017
 ## <a name="next-steps"></a>后续步骤
 
 [通信计划](migration-guide-communication-plan.md)
-

@@ -13,12 +13,11 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -88,4 +87,3 @@ Windows 设备的批量注册需要以下条件：
 
 - 如果因为缺少网络连接导致域加入过程失败，则尝试加入 Active Directory 域或不创建本地帐户的 Azure Active Directory 租户的配置包可能会使设备无法访问。
 - 通过配置包运行的脚本在系统上下文中运行，能够对设备文件系统和配置进行任意更改。 恶意或不正确的脚本可将设备置于仅能通过重置映像或恢复出厂设置才能将其恢复的状态。
-

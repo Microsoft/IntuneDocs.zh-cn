@@ -14,15 +14,12 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 13c4046ed431dc25bda9a2facc59dbcb6d3e5ab5
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="deploy-apps-with-microsoft-intune"></a>使用 Microsoft Intune 部署应用
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,4 +73,3 @@ ms.lasthandoff: 06/08/2017
 ## <a name="next-steps"></a>后续步骤
 
 了解如何[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)。
-

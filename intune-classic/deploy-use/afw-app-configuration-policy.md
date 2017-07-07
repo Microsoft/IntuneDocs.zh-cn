@@ -14,15 +14,12 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f2284920852de5a79cf47fee81922a5b069157c3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用移动应用配置策略配置 Android for Work 应用
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,4 +73,3 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 > [!TIP]
 > 对于每个应用，只能将一个应用配置策略部署给用户。
-

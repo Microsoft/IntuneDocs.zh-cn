@@ -14,15 +14,12 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: aad5b158e1217155c3e3ec671654ee6e81054675
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-lookout-mtd-connection-in-the-intune-classic-console"></a>在 Intune 经典控制台中启用 Lookout MTD 连接
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -41,4 +38,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="next-steps"></a>后续步骤
 [配置 Lookout for Work 应用](/intune-classic/deploy-use/device-threat-protection-apps)
-

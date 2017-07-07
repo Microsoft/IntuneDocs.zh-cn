@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>密码不符合 IT 管理员要求
 
 用于访问公司或学校资源的密码不符合 IT 管理员设置的一个或多个要求。 若要解决此问题，请按照设备上显示的说明进行操作。 下面列出了问题的相关描述。
@@ -51,4 +47,3 @@ PIN 或密码问题描述：
 - **密码不够复杂，无法满足要求**。 IT 管理员要求在密码中使用更复杂的字符。 尝试使用如数字、大写字母和类似 $、%和 # 等符号的字符。 这也适用于设备上的其他帐户，因此请务必检查任何其他工作帐户，以确保密码满足 IT 为设备设置的要求。
 
 如果你在如何使密码符合要求的过程中遇到问题，请联系 IT 管理员。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

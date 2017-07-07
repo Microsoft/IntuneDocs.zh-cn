@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>配置和部署 Microsoft Intune 控制台中的移动应用程序管理策略
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -196,4 +193,3 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 -   如果策略已经部署到设备，则现有策略设置不会被覆盖。
 
 -   如果尚无策略部署到设备，并且两个冲突设置已经部署，则将使用设备内的默认设置。
-

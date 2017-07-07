@@ -11,20 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 63595e9905a220c326c315f5932379a9b743d3de
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>你的 Android 设备缺少通常随附安装在电话上的证书
 
 如果设备未在 Intune 中注册，并且它缺少通常随附安装在电话上的证书，则无法登录到公司门户应用。 在尝试登录时，你将看到以下消息：
@@ -51,4 +48,3 @@ ms.lasthandoff: 05/23/2017
 > 如果安装此证书未解决问题，并且看到另一条“缺少证书”消息，则需要采取额外步骤来[安装缺少的证书](your-device-is-missing-an-IT-required-certificate-android.md)。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

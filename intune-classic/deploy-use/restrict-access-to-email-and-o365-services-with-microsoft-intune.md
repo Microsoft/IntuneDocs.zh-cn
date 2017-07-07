@@ -14,15 +14,12 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>使用 Microsoft Intune 保护对电子邮件、Office 365 和其他服务的访问
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -83,4 +80,3 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
   - [为 SharePoint Online 创建条件性访问策略](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [为 Skype for Business Online 创建条件性访问策略](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [为 Dynamics CRM Online 创建条件性访问策略](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

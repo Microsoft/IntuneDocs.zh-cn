@@ -14,15 +14,12 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用自定义策略创建适用于 Android 设备的 per-app VPN 配置文件
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -80,4 +77,3 @@ ms.lasthandoff: 06/08/2017
     -   **若要关闭对话框而不部署策略**，选择“取消”。
 
 “策略”工作区“概述”页的状态摘要和警报可识别需要关注的策略问题。 状态摘要也出现在“仪表板”工作区中。
-

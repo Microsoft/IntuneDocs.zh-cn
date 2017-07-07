@@ -14,15 +14,12 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>在 Microsoft Intune 中利用软件更新使 Windows PC 保持最新版本
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -258,4 +255,3 @@ Microsoft Intune 可通过多种方式帮助你保护托管计算机，其中包
 
 ### <a name="see-also"></a>另请参阅
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

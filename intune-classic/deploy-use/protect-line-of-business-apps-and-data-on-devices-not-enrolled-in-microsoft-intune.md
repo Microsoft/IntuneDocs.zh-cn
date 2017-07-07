@@ -14,15 +14,12 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保护未在 Microsoft Intune 上注册的设备上的业务线应用和数据
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -83,4 +80,3 @@ ms.lasthandoff: 06/08/2017
   ![含“删除应用程序”选项的“业务线”边栏选项卡的屏幕截图](../media/mam-azure-portal-delete-app.png)
 
   这会从业务线应用列表及 MAM 策略中的目标应用列表中删除该应用。
-

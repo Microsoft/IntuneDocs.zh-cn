@@ -14,15 +14,12 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 18091d5dea0ff4b4519082973255a21e5cbc311e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>使用 Microsoft Intune 启用对公司资源的访问
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -60,4 +57,3 @@ Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮
 |Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX 标准版|
 |---------------------|---------------------------|---|-------|------------|
 |是|是|是|是|是|
-

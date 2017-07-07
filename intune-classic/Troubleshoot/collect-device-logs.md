@@ -14,15 +14,12 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b15e4b7fa0c650a85a080c42d00cd75cb8783c62
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="device-logs"></a>设备日志
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -61,4 +58,3 @@ Android 日志位于 *<Android Device>\Phone\Android\data\com.microsoft.windowsi
 ### <a name="windows"></a>Windows
 
 对于 Windows 公司门户，日志位于 *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState*。
-

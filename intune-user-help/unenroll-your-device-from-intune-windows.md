@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>从 Intune 取消注册 Windows 设备
 
 如果在 Intune 中进行了注册，但不再想使用工作单位或学校的 Windows 设备且无需访问工作或学校电子邮件、应用或其他资源，则需要取消注册你的设备。 你从 Intune 取消注册你的设备后，你就无法再访问这些资源。 若要深入了解取消注册设备后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)。
 
 若要注册设备，请使用上述部分“文本内容”中所示的、与你当前所用设备类型相匹配的链接：
 
--    [取消注册 Windows 10 设备](#unenroll-your-windows-10-device)
--    [取消注册 Windows 8.1 计算机](#unenroll-your-windows-81-computer)
--    [取消注册 Windows Phone 8.1 设备](#unenroll-your-windows-phone-81-device)
+-   [取消注册 Windows 10 设备](#unenroll-your-windows-10-device)
+-   [取消注册 Windows 8.1 计算机](#unenroll-your-windows-81-computer)
+-   [取消注册 Windows Phone 8.1 设备](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>取消注册 Windows 10 设备
 
@@ -68,4 +63,3 @@ ms.lasthandoff: 05/23/2017
 4.  在“删除帐户”对话框中，点击“删除”。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

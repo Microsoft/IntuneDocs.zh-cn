@@ -14,15 +14,12 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c820a7071340599be161dd92441720f1eb7e9ff7
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="install-the-intune-on-premises-exchange-connector"></a>安装 Intune On-Premises Exchange Connector
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -134,4 +131,3 @@ Exchange Connector 设置连接后，与在 Exchange Connector 中管理的用�
 
 
 你也可以检查最后一次成功同步尝试的时间和日期。
-

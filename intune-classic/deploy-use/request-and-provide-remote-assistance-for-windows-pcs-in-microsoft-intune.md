@@ -14,15 +14,12 @@ ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3d173cf9a9ec8617cb7feec858b696aa0e80c12d
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>请求并提供 Windows 电脑的远程协助
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]

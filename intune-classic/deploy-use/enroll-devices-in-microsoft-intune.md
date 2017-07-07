@@ -14,15 +14,12 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -132,4 +129,3 @@ Intune 可以管理以下设备平台：
 - [设备注册的先决条件](prerequisites-for-enrollment.md)
 - [管理企业拥有的设备](manage-corporate-owned-devices.md)
 - [支持的移动设备和计算机](/intune/supported-devices-browsers#intune-supported-devices)
-

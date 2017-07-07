@@ -14,15 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -117,4 +114,3 @@ Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对�
 Intune 客户端软件通常在后台静默运行，无需许多用户交互或故障排除。 如果需要解决电脑管理问题，可以检查日志。 Intune 客户端软件和相应的日志安装在 %Program Files%\Microsoft\OnlineManagement 目录下。
 
 还可以查看[故障排除 Microsoft Intune 中的客户端安装问题](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune)来检查可能出现的问题以及任何解决方案或解决方法。
-

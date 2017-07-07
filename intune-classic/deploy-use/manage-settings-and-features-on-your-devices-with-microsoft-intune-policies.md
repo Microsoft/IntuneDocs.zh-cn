@@ -14,15 +14,12 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f8ceb98181543d846934a16b8c9551207892ae0e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>使用 Microsoft Intune 策略管理设备上的设置和功能
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -213,4 +210,3 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>在哪里可以找到有关排查策略问题的帮助？
 
 请参阅 [Microsoft Intune 中的故障排除策略](/intune-classic/troubleshoot/troubleshoot-policies-in-microsoft-intune)。
-

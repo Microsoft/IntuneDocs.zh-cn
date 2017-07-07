@@ -15,15 +15,12 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d851a8900ae1e164cb22f1878b352c3e90096f73
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 8.1 设备的 VPN 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -97,4 +94,3 @@ ms.lasthandoff: 06/08/2017
     - **地址** - 输入代理服务器地址（作为 IP 地址）。
     - **端口号** - 输入与代理服务器关联的端口号。
 - **不对本地地址使用代理服务器** - 如果 VPN 服务器要求使用代理服务器进行连接，在不想对指定的本地地址使用代理服务器时选择此选项。 有关详细信息，请参阅 Windows Server 文档。
-

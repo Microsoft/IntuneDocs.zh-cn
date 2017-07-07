@@ -15,14 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 5ea6c6ce480f327c5b1497a8dc61faf56724442c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: ee3d77b74f2313a0746b041335865f1d967ad926
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -68,4 +66,3 @@ ms.lasthandoff: 06/08/2017
 |**显示公司徽标**|如果启用此选项，你可以上传公司徽标以显示在公司门户中。 你可以上传两个徽标：一个在公司门户背景为白色时显示的徽标，以及一个在公司门户背景使用所选主题颜色时使用的徽标。 每个徽标必须是 .png 或 .jpg 文件类型，最大分辨率为 400 x 100 像素，大小等于或小于 750 KB。<br>还可以显示在已上传徽标旁边输入的公司名称。|      
 
 保存所做的更改后，可以选择“预览 Intune Web 门户中的设置”，查看配置的外观。
-

@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: dd4b216f04c909321bbf57f4dec5998e48cb490c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-mobile-application-management"></a>移动应用程序管理故障排除
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -118,4 +115,3 @@ Android | **需要公司门户**：若要将工作或学校帐户用于此应用
 - [验证移动应用管理设置](../deploy-use/validate-mobile-application-management.md)
 - [准备好使用 Microsoft Intune 配置移动应用管理策略](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)
-

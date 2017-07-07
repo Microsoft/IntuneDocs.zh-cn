@@ -14,15 +14,12 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: cf86d82fe636d2641f82ca951e508bea93abf683
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-policies-and-publish-apps"></a>创建策略并发布应用
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -74,4 +71,3 @@ ms.lasthandoff: 06/08/2017
 >[!div class="step-by-step"]
 
 >[&larr; **组织用户和设备**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**自定义公司门户** &rarr;](/intune/company-portal-customize)  
-

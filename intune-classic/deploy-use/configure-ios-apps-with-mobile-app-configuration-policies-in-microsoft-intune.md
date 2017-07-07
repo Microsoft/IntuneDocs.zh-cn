@@ -14,15 +14,12 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 2f13baeec9e0a38ac27ae42d1bc766cf22d73634
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -143,4 +140,3 @@ Intune 在属性列表中支持以下数据类型：
 </dict>
 
 ```
-

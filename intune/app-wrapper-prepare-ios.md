@@ -14,15 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 7e96611b74e3539ab1310085b1812317f68088a3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具为移动应用程序管理准备 iOS 应用
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -400,4 +397,3 @@ ms.lasthandoff: 06/13/2017
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)</br>
 - [使用 Microsoft Intune 策略管理设备上的设置和功能](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [使用 SDK 启用针对移动应用程序管理的应用](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
-

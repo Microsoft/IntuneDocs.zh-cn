@@ -14,15 +14,12 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 2d2acab722c0a1f0c5757f6bbe75687cd8416485
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>在 Microsoft Intune 中了解你的设备清单
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -119,4 +116,3 @@ Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报
 ### See Also
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 -->
-

@@ -15,15 +15,12 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: e6a59c1f5fcb94d427b6d12eef19d4d49ff930ce
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/17/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 VPN 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -61,7 +58,7 @@ ms.lasthandoff: 06/17/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在 Intune 边栏选项卡上，选择“设备配置”。
+3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入 VPN 配置文件的“名称”和“说明”。
@@ -100,4 +97,3 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 ### <a name="user-name-and-password"></a>用户名和密码
 
 用户通过提供用户名和密码向 VPN 服务器进行身份验证。
-

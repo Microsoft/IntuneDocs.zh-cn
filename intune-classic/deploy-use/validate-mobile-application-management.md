@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>验证移动应用管理设置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -59,4 +56,3 @@ ms.lasthandoff: 06/08/2017
 [准备好使用 Microsoft Intune 配置移动应用管理策略](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [通过 Microsoft Intune 使用移动应用管理策略保护应用数据](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

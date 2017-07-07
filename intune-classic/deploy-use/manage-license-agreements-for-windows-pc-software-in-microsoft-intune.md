@@ -14,15 +14,12 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows PC 软件的许可协议
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -184,4 +181,3 @@ Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软�
 |重命名许可证组|在“许可证”工作区中，选择一个许可证组，然后从“任务”菜单中选择“编辑许可证组”。|
 |删除许可证组|在“许可证”工作区中，选择一个许可证组，然后从“任务”菜单中选择“删除许可证组”。 **提示：**删除的组中包含的所有许可证都会移动到“未分配的协议”许可证组中。|
 |删除许可协议|在“许可证”工作区中，选择一个协议，然后选择“删除”。 **提示：**若要在删除批量许可协议后更新许可证信息，请在“许可证概述”页上或在特定许可证组的“常规”选项卡上选择“立即刷新”。|
-

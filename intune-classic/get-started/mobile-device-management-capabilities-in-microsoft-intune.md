@@ -14,13 +14,11 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 5fc5e6108e7e7841ed142f24f463d85273ae8a12
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 已注册设备管理功能
 
@@ -70,4 +68,3 @@ ms.lasthandoff: 06/08/2017
 |功能|详细信息|更多信息|
 |--------------|-----------|--------------------|
 |清单和报告|查找有关你管理的设备以及设备正在使用的软件的信息。|[在 Microsoft Intune 中通过清单了解设备](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
-

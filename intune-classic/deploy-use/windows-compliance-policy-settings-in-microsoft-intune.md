@@ -14,15 +14,12 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 67810c51c7a7b2ec1e1ff33c11a27a8757b2bcbd
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 设备的合规性策略设置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -156,4 +153,3 @@ ms.lasthandoff: 06/08/2017
 
 - 对运行 Windows 10 的电脑，版本应设置为 **10.0** + **winver** 命令返回的 OS 内部版本号。 例如，它可能类似于 10.0.10586。
 > ![“关于Windows”对话框中突出显示的操作系统内部版本号](./media/ca_win10-os-version.png)
-

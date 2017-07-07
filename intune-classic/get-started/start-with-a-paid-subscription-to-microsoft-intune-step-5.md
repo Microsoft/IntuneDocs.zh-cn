@@ -14,16 +14,12 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a6e9eb087b730c66bcf32f877fd22f2d3be0c121
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-groups-to-organize-users-and-devices"></a>创建用于组织用户和设备的组
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,4 +84,3 @@ Intune 中的组使你能非常灵活地管理设备和用户。 你可以将组
 
 >[!div class="step-by-step"]
 /intune/licenses-assign [&larr; **管理 Intune 许可证**](/intune/licenses-assign)       [**创建策略和应用** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-

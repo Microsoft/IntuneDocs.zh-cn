@@ -14,16 +14,12 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 095b89d1428d6b8f06143043d8bb6ed37fd8fa5b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的设备注册管理器注册企业自有设备
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -108,4 +104,3 @@ DEM 用户可以：
 -   已删除的设备注册管理器帐户凭据仍无法擦除或停用设备。
 
 -   已删除的设备注册管理器帐户与已注册设备的关系仍存在，但不可以注册任何其他设备。
-

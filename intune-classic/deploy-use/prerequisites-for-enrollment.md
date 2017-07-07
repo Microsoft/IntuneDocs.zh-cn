@@ -14,15 +14,12 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune 中移动设备管理的先决条件
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -216,4 +213,3 @@ Microsoft 支持部门验证适用清单上的项后，重置 MDM 机构最多�
 
 >[!IMPORTANT]
 >在 Microsoft 支持部门确认已成功完成重置之前，请勿尝试配置订阅！ 过早配置可能会导致损坏并/或影响 Intune 服务的使用。
-

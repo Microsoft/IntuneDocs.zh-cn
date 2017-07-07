@@ -1,5 +1,4 @@
 ---
-
 title: "Android 和 Samsung KNOX 策略设置"
 description: "创建控制通过 Intune 管理的 Android 设备上的设置及功能的策略。"
 keywords: 
@@ -15,15 +14,12 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 07d49d9f9628dd296c3708a063de34d485c77acb
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版策略设置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -211,4 +207,3 @@ Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

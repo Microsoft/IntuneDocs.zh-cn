@@ -14,15 +14,12 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f79ebec4dea17bd03b88d97aa1d7b30a58e35cdb
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中的电子邮件配置文件疑难解答
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -74,4 +71,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
-

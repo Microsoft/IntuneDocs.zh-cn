@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-ios-device-from-intune"></a>从 Intune 取消注册 iOS 设备
 
 从 Intune 取消注册 iOS 设备后，该设备将无法再访问公司资源并且无法再通过 Intune 进行托管。
@@ -59,4 +54,3 @@ ms.lasthandoff: 05/23/2017
 -   仅针对电子邮件配置的设备将不再出现在公司门户应用或网站中。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

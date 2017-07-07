@@ -14,15 +14,12 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-cisco-ise-with-microsoft-intune"></a>将 Cisco ISE 与 Microsoft Intune 配合使用
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -192,4 +189,3 @@ b。 选择锁定图标&gt;“详细信息”。
 ### <a name="see-also"></a>另请参阅
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)（Cisco 标识服务引擎管理员指南，版本 2.1）
-

@@ -15,14 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8f8be4f6bf47ceb966e9042465dc8839d9aa9119
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 Windows 业务线 (LOB) 应用添加到 Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -68,4 +66,3 @@ ms.lasthandoff: 06/08/2017
 2. 选择“添加”将应用上传到 Intune。
 
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](apps-deploy.md)。
-

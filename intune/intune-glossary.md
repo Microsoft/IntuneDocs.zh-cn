@@ -13,15 +13,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -155,4 +152,3 @@ ms.lasthandoff: 06/16/2017
 |||
 |-|-|
 |Wi-Fi 配置文件|一种将[无线网络设置](/intune/wi-fi-settings-configure)分配到设备的策略，可让用户连接到你的公司网络而无需了解或配置任何设置。
-

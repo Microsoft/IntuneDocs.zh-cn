@@ -14,15 +14,12 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-manage-devices"></a>选择如何管理设备
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -56,4 +53,3 @@ ms.lasthandoff: 06/08/2017
 - [选择如何注册移动设备](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [使用 Intune 电脑客户端软件管理 Windows 电脑](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [使用 Microsoft Intune 管理 Exchange ActiveSync 移动设备](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)。
-

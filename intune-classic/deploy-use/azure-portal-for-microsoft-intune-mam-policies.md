@@ -14,15 +14,12 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 00328885d7fb5e75ffe894326591c0225f4b07ab
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="azure-portal-for-intune-app-protection-policies"></a>提供 Intune 应用保护策略的 Azure 门户
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -66,4 +63,3 @@ Azure 门户可用于创建和管理以下项的应用保护策略：
 
 ## <a name="next-steps"></a>后续步骤
 [准备好配置应用保护策略](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-

@@ -14,15 +14,12 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8982072b93c22e0294b6e454d597e0aa5bbb7b71
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>使用 Microsoft Intune 管理 Exchange ActiveSync 移动设备
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,4 +47,3 @@ Intune 控制台可用于管理 [EAS 策略设置](exchange-activesync-policy-se
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>从移动设备中擦除公司数据
 最后，如果公司数据不再使用，或者如果设备丢失或被盗，则可以[从 EAS 管理的移动设备中擦除公司数据](wipe-for-exchange-managed-mobile-devices.md)。
-

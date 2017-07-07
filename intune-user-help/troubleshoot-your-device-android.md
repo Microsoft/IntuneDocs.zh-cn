@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f720befe-a6f9-4422-aa9b-4d85c9fc94e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-android-device"></a>解决 Android 设备的常见问题
 
 有时 Android 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](http://portal.manage.microsoft.com)上的 IT 管理员联系信息与其联系。
@@ -45,4 +41,3 @@ ms.lasthandoff: 05/23/2017
 - [你的设备显示已加密，但公司门户应用另有说明](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [系统将提示你在 Android 设备上安装设备威胁防护应用](you-are-prompted-to-install-mtd-android.md)
 - [解除设备威胁防护应用在 Android 设备上发现的威胁](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-
