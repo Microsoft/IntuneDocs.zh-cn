@@ -14,15 +14,12 @@ ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: 0b3f13dbc5abb8110627cfb39aa61040a977bf38
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="develop-a-rollout-plan"></a>制定推出计划
 
 推出计划将标识要针对 Intune 推出的组织组、每个组的推出时间段和你将要使用的注册方法。
@@ -108,4 +105,3 @@ Intune 用户注册的途径还可以选择 IT 技术博览会。 在此活动�
 ## <a name="next-section"></a>下一节
 
 下一节提供[如何开发 Intune 推出交流计划](planning-guide-communication-plan.md)的相关指南。
-

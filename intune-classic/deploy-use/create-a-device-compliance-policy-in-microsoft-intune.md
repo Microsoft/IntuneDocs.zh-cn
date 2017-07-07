@@ -14,15 +14,12 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3dcafbd3cfdbccdfa851e8d21572d834d629564b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备合规性策略
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ ms.lasthandoff: 06/08/2017
 
 ### <a name="see-also"></a>另请参阅
 [设备合规性策略简介](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-

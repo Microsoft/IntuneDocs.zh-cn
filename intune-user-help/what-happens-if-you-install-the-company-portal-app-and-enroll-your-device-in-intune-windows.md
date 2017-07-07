@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Windows 设备后会发生什么情况？
 
 安装公司门户应用，然后使用该应用注册 Windows 或 Windows Phone 设备，即表示你允许 IT 管理员管理你的设备以保护公司或学校数据的安全。 本主题介绍设备版本低于 Windows 10 时会发生的情况。 对于 Windows 10 设备，请参阅[相关主题](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)。
@@ -79,4 +74,3 @@ ms.lasthandoff: 05/26/2017
 -   发送任何公司应用清单更新。
 
 如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8b73f1f5c7b8beecdb336aba463f5494c4b99160
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="sync-your-ios-device-manually"></a>手动同步 iOS 设备
 
 从公司门户下载应用有时会需要很长时间。 如果发生这种情况，可尝试手动同步设备。 这意味着让设备重试，以获取可能无法轻松下载的信息。
@@ -44,4 +39,3 @@ ms.lasthandoff: 05/23/2017
 加载栏将显示在屏幕上，并将在同步完成前进行加载。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

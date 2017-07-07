@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Android 设备后会发生什么情况？
 
 当安装公司门户应用并在 Intune 中注册 Android 设备时，可以使用公司门户应用：
@@ -61,4 +57,3 @@ ms.lasthandoff: 05/26/2017
 -   发送任何公司应用清单更新。 （这些更新不包含任何个人信息。）
 
 需要帮助吗? 请联系 IT 管理员（访问[公司门户网站](https://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
-

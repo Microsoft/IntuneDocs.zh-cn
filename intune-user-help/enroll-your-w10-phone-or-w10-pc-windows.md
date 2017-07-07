@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: dd8af3f07abc772408ccececf12a062a82a82e71
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-devices-in-intune"></a>在 Intune 中注册 Windows 10 设备
 
 在 Microsoft Intune 中注册设备可使 Windows 10 设备获取访问组织安全数据（包括电子邮件、文件和其他资源）的权限。 这适用于 Windows 10 桌面设备和 Windows 10 移动设备。 注册设备有助于为你和你的组织确保这类访问的安全，且有助于将工作数据与个人数据分开。
@@ -40,18 +36,17 @@ ms.lasthandoff: 05/23/2017
 
  ![搜索关于电脑的设置](media/searching_for_about_your_pc.png)
 
-3.    在“设置”中，会看到安装在电脑上的 Windows 10 版本的相关信息列表。 在此列表中，找到“版本”。
+3.  在“设置”中，会看到安装在电脑上的 Windows 10 版本的相关信息列表。 在此列表中，找到“版本”。
 
  ![关于电脑的 Windows 10 桌面](media/settings_about_pc.png)
 
-4.    如果是 1607 或更高版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511 或更低版本__，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
+4.  如果是 1607 或更高版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511 或更低版本__，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 移动设备        
 
-1.    在“开始”中，轻扫到“所有应用”列表，然后选择“设置”应用。        
-2.    点击“系统”，然后点击“关于”。        
-3.    在“设备信息”下，点击“详细信息”。 你会看到有关设备的信息列表。 在此列表中，找到“版本”。        
-4.    如果是 __1607__ 版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511 或更低版本__，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
+1.  在“开始”中，轻扫到“所有应用”列表，然后选择“设置”应用。        
+2.  点击“系统”，然后点击“关于”。       
+3.  在“设备信息”下，点击“详细信息”。 你会看到有关设备的信息列表。 在此列表中，找到“版本”。        
+4.  如果是 __1607__ 版本，请继续[这些步骤](enroll-your-w10-device-access-work-or-school.md)。 如果是 __1511 或更低版本__，请继续[这些步骤](enroll-your-w10-device-your-account.md)。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-
