@@ -15,15 +15,12 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -289,4 +286,3 @@ ms.lasthandoff: 06/08/2017
 ### <a name="safari-password-auto-fill-domains"></a>Safari 密码自动填充域
 
 在“域 URL”字段中，向列表添加一个或多个 URL。 用户仅能保存来自此列表中的 URL 的 Web 密码。 此设置仅适用于 Safari 浏览器以及监督模式下的 iOS 9.3 和更高版本的设备。 如未指定任何 URL，则可从所有网站保存密码。
-

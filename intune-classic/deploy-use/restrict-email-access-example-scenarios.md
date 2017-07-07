@@ -14,15 +14,12 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a60c41d5a35ee60677db3835818ca8b90420c715
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>使用 Microsoft Intune 保护对电子邮件的访问：示例方案
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +81,3 @@ ms.lasthandoff: 06/08/2017
 以下流程用于确定哪些设备可以访问 Exchange：
 
 ![设备访问流程](./media/ConditionalAccess8-4.png)
-

@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0ff65ec54ed6fe8701995d6ad629b34a1ba013b8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ways-to-subscribe-to-microsoft-intune"></a>订阅 Microsoft Intune 的方式
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,4 +33,3 @@ ms.lasthandoff: 06/08/2017
 -   **企业协议**（&gt; 250 名用户）- 适用于拥有超过 250 名用户的组织的最佳许可计划。 EA 使你能灵活地选择本地软件和在线服务来最好地适合你的用户需求，并帮助你优化技术支出。 有关详细信息，请与你的 Microsoft 客户经理或本地经销商联系，或查看 [企业批量许可站点](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx)。
 
 -   **在线订阅计划**（&lt;250 名用户）— [Online Services 批量许可](http://www.microsoft.com/licensing/online-services/default.aspx)计划是专为用户数少于 250 名的组织设计的。 使用该计划来订阅、管理和部署你的 Intune 服务。
-

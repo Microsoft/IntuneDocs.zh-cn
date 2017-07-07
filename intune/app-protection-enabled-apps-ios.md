@@ -15,15 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
 [!INCLUDE[azure_portal](./includes/azure_portal.md)] 本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
 ##  <a name="accessing-apps"></a>访问应用
@@ -67,4 +64,3 @@ Intune 仅支持对于每个设备，将应用保护策略部署到一个用户�
 [Android 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-android.md)
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 创建和部署应用保护策略](app-protection-policies.md)
-

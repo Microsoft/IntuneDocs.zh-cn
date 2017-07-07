@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-your-windows-device-with-intune"></a>通过 Intune 使用 Windows 设备
 
 你可以通过 Intune 处理许多事情，使工作生活更轻松。 以下是公司可能要求你做的最常见事项的列表。
@@ -57,4 +53,3 @@ Intune 也支持其他的一些 Windows 版本，例如 [Windows 10 全息版](h
 - [使用公司门户重置设备可能会发生什么情况？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-windows.md)
 - [手动同步设备](sync-your-device-manually-windows.md)
-

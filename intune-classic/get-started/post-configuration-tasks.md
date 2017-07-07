@@ -14,15 +14,12 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="post-configuration-tasks"></a>后配置任务
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,4 +31,3 @@ ms.lasthandoff: 06/08/2017
 -   **Intune 报表：**Microsoft Intune 提供警报和报告，它们有助于监视设备，以及软件许可证状态和影响设备的操作（例如擦除设备）。  若要了解有关报表的详细信息，请参阅[通过使用报表了解 Microsoft Intune 操作](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)。
 
 -   **保护公司资源：**配置 Intune 并注册设备后，需要确保设备得到保护，以防止数据丢失和其他威胁。 若要了解有关保护资源的详细信息，请参阅[使用 Microsoft Intune 保护应用和数据](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)。
-

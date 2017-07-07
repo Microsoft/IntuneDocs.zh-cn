@@ -15,15 +15,12 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: cef8602418be6d35848dd48766c0e46269f4f215
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 8.1 及更高版本设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -41,7 +38,7 @@ ms.lasthandoff: 06/08/2017
 -   **密码过期(天)** - 指定必须更改设备密码前的天数。
 -   **防止重用以前的密码** - 指定用户是否可以配置以前用过的密码。
 -   **图片密码和 PIN** - 允许使用图片密码和 PIN。 图片密码允许用户使用图片上的手势登录。 PIN 允许用户使用 4 位代码快速登录。
--   **加密** - 要求对设备上的文件进行加密。<br>若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](https://support.microsoft.com/en-us/kb/3013816) 。
+-   **加密** - 要求对设备上的文件进行加密。<br>若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](https://support.microsoft.com/kb/3013816) 。
 如果对 Windows 8.1 设备启用此设置，则该设备的所有用户必须都具有 Microsoft 帐户。
 为了使加密有效，该设备必须满足 Microsoft [InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) 硬件认证要求。
 在设备上强制加密时，恢复密钥仅可从用户的 Microsoft 帐户（从用户的 OneDrive 帐户访问）进行访问。 无法代表用户恢复此密钥。     
@@ -70,4 +67,3 @@ ms.lasthandoff: 06/08/2017
 ## <a name="cloud-and-storage"></a>云和存储
 -   **工作文件夹 URL** - 设置工作文件夹的 URL，以允许跨设备同步文档。
 -   **不使用 Microsoft 帐户而访问 Windows Mail 应用** 允许在没有 Microsoft 帐户的情况下访问 Windows Mail 应用程序。    
-

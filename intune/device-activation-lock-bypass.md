@@ -14,21 +14,18 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 309183cd546b1c69309fc0e49548fe235d71ab70
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0b92949efca2e4dac5836755e2f32b0527d4762d
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在已监督 iOS 设备上启用激活锁定
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 8.0 和更高版本设备上的“查找我的 iPhone”应用的功能。 当用户在设备上打开了“查找我的 iPhone”应用时，激活锁定将自动启用。 启用后，任何人都必须先输入用户的 Apple ID 和密码，然后才能执行以下操作： 
+Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 8.0 和更高版本设备上的“查找我的 iPhone”应用的功能。 当用户在设备上打开了“查找我的 iPhone”应用时，激活锁定将自动启用。 启用后，任何人都必须先输入用户的 Apple ID 和密码，然后才能执行以下操作：
 
 - 关闭“查找我的 iPhone”
 - 擦除设备
@@ -37,7 +34,7 @@ Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 8.0 和�
 ## <a name="how-activation-lock-affects-you"></a>激活锁定对你有何影响
 
 尽管激活锁定可帮助保护 iOS 设备的安全，并可提高找回丢失和被盗设备的几率，但对于 IT 管理员来说，此功能仍然带来了许多挑战。 例如：
- 
+
 - 某个用户在设备上设置了激活锁定。 该用户之后离开了公司并返回使用其设备。 如果不提供用户的 Apple ID 和密码，则不能重新激活该设备。
 - 你需要报告启用了激活锁定的所有设备。
 - 更新你组织中的设备分配情况时，你希望将某些设备分配重新给另一个部门。 你只能重新分配未启用激活锁定的设备。
@@ -47,13 +44,13 @@ Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 8.0 和�
 >[!TIP]
 >在 iOS 设备的监管模式下，你可以使用 Apple Configurator 来锁定设备，以将设备的功能限制为完成特定的业务目的。 监管模式通常仅适用于公司拥有的设备。
 
-可以在 [Apple 的网站](https://support.apple.com/en-us/HT201365)上阅读有关激活锁定的详细信息。
+可以在 [Apple 的网站](https://support.apple.com/HT201365)上阅读有关激活锁定的详细信息。
 
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Intune 如何帮助你管理激活锁定
 Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定状态。 仅就监管设备而言，Intune 可以检索绕过激活锁定代码并直接将代码发布到设备。 如果已擦除设备，可通过使用空的用户名和代码作为密码来直接访问设备。
- 
+
 **此功能的业务优势有：**
- 
+
 - 用户能够获得 Find My iPhone 应用所具有的安全优势。
 - 你可以让用户在知道如下事实的情况下进行工作：当需要重新调整设备的用途时，可以停用或解锁设备。
 
@@ -74,12 +71,8 @@ Intune **绕过激活锁定**远程设备操作无需用户的 Apple ID 和密�
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备”。
+3. 在“**Intune**”边栏选项卡上，选择“**设备**”。
 4. 在“设备和组”边栏选项卡上，选择“所有设备”。
 5. 从管理的设备列表中，选择一台监管的 iOS 设备，然后选择“绕过激活锁定”设备远程操作。
 
 你可以在“管理设备”工作负荷中的设备的详细信息页上查看解锁请求的状态。
-
-
-
-

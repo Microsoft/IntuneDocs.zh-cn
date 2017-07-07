@@ -5,27 +5,23 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
-ms.openlocfilehash: f01d8b31f493b7103fe788aa62d37f9c73981984
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/26/2017
-
-
+ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司门户网站
 [公司门户网站](https://portal.manage.microsoft.com)是一个网页，最终用户可将其用于管理已在 Intune 中注册的计算机和设备。
 
@@ -41,7 +37,7 @@ ms.lasthandoff: 05/26/2017
 
 -   [远程锁定设备](remote-lock-your-device-cpwebsite.md)
 
--    [手动同步设备，以便更快地安装应用](sync-your-device-manually-cpwebsite.md)
+-   [手动同步设备，以便更快地安装应用](sync-your-device-manually-cpwebsite.md)
 
 -   找到 IT 管理员的联系信息（如果已配置）
 
@@ -49,9 +45,4 @@ ms.lasthandoff: 05/26/2017
 
 -   远程管理电脑（仅适用于电脑）
 
-最终用户可以在**公司门户网站**上执行大多数可使用安装在设备上的 **公司门户应用**执行的任务。 请在以下页面查看指向最终用户在其设备上可以执行的所有任务的链接：
-
-- [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
-- [通过 Intune 使用 iOS 或 macOS 设备](using-your-ios-or-macOS-device-with-intune.md)
-- [通过 Intune 使用 Windows 设备](using-your-windows-device-with-intune.md)
-
+仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

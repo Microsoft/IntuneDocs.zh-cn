@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>你的用户将如何在托管 Office 365 应用上体验基本保护
 
 “管理 Office 365 应用”向导为每个设备平台创建应用保护策略。
@@ -134,4 +130,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="next-steps"></a>后续步骤
 详细了解[应用保护策略](https://docs.microsoft.comapp-protection-policy.md)。
-

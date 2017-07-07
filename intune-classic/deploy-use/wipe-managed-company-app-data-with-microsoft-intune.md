@@ -14,15 +14,12 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7025bdd5d89e52f1c99f9cd834232daf324f3285
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="wipe-company-app-data-with-intune-mam"></a>使用 Intune MAM 擦除公司应用数据
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,7 +64,7 @@ ms.lasthandoff: 06/08/2017
 
 2.  在“擦除请求”边栏选项卡上，选择“擦除请求”磁贴，打开“擦除请求”边栏选项卡。
 
-3.  在“擦除请求” 边栏选项卡中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起” 、“失败”还是“成功”。
+3.  在“擦除请求” 边栏选项卡中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起”、“失败”还是“成功”。
 
     ![新建擦除请求边栏选项卡的屏幕截图](../media/AppManagement/wipe-request-status-1.png)
 
@@ -95,4 +92,3 @@ ms.lasthandoff: 06/08/2017
 [使用移动应用管理策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [使用 Azure 门户](azure-portal-for-microsoft-intune-mam-policies.md)
-

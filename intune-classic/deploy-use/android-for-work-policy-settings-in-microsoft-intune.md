@@ -1,5 +1,4 @@
 ---
-
 title: "Android for Work 策略设置"
 description: "创建控制通过 Intune 管理的 Android for Work 设备上的设置及功能的策略。"
 keywords: 
@@ -15,15 +14,12 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 858c4a525945694326952e8afe280e4b66cd2ccb
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 策略设置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -82,7 +78,7 @@ Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题
     |--------|--------------------|
     |**设置名称**|输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。|
     |**设置描述**|提供对设置进行概述的说明以及帮助你找到该设置的其他相关信息。|
-    |**数据类型**|选择将在其中指定此 OMA-URI 设置的日期类型。 从“**字符串、字符串 (XML)、日期和时间、整数、浮点**”，或者“**布尔值**”中进行选择。|
+    |**数据类型**|选择将在其中指定此 OMA-URI 设置的日期类型。 从“字符串、字符串 (XML)、日期和时间、整数、浮点”，或者“布尔值”中进行选择。|
     |**OMA-URI（区分大小写）**|指定需为其提供设置的 OMA-URI。|
     |**值**|指定要与之前指定的 OMA-URI 关联的值。|
 
@@ -93,4 +89,3 @@ Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -14,15 +14,12 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解决组策略对象 (GPO) 与 Microsoft Intune 之间的策略冲突
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -121,4 +118,3 @@ For more information about how to apply WMI filters in Group Policy, see the blo
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 管理 Windows 电脑](manage-windows-pcs-with-microsoft-intune.md)
-

@@ -15,15 +15,12 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>如何验证应用保护策略设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -61,4 +58,3 @@ ms.lasthandoff: 06/08/2017
 ### <a name="see-also"></a>另请参阅
 
 [什么是 Intune 应用保护策略？](app-protection-policies.md)
-

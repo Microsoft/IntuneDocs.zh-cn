@@ -14,15 +14,12 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 215d579c7e8806f98d99db9319aa5808d99653c1
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>设置 Lookout 移动威胁防御订阅
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,7 +73,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 
   ![首次登录 Lookout 控制台时登录页面的屏幕截图](../media/mtp/lookout_mtp_initial_login.png) 接受并同意后，会重定向到 Lookout 控制台。
 
-  请参阅 [Lookout 集成疑难解答](/intune-classic/troubleshoot/troubleshooting-lookout-integration)获取有关登录问题的帮助。
+  请参阅 [Lookout 集成疑难解答](/intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md)获取有关登录问题的帮助。
 
 3.  在[“Lookout 控制台”](https://aad.lookout.com)中，从“系统”模块选择“连接器”选项卡，然后选择“Intune”。
 
@@ -139,4 +136,3 @@ Lookout 移动威胁防御将移动威胁分为多种类型。 [Lookout 威胁�
 此步骤完成后，Lookout 移动威胁防御将开始轮询 Azure AD，查找与指定注册组相对应的设备。  可在“设备”模块查看有关已注册设备的信息。  设备的初始状态显示为“待定”。  在设备上安装、打开和激活 Lookout for Work 应用后，设备状态将发生改变。  有关如何将 Lookout for Work 应用推送到设备的详细信息，请参阅[配置并部署 Lookout for Work 应用](configure-deploy-lookout-for-work-app.md)主题。
 ## <a name="next-steps"></a>后续步骤
 [启用 Lookout MTP 连接 Intune](/intune-classic/deploy-use/enable-lookout-mtd-connection)
-

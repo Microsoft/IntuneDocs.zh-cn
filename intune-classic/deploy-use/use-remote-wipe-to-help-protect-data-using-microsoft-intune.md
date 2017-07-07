@@ -14,15 +14,12 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>使用 Microsoft Intune 的完全擦除或选择性擦除保护数据
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -80,7 +77,7 @@ ms.lasthandoff: 06/08/2017
 
 4.  选择“Active Directory”，然后选择你的组织。
 
-5.  选择“用户”选项卡。
+5.  选择“用户”  选项卡。
 
 6.  选择要删除其设备的用户。
 
@@ -172,4 +169,3 @@ EFS 选择性擦除当前支持下列数据和应用：
 [停用设备](retire-devices-from-microsoft-intune-management.md)
 
 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx)（设备数据管理的 Windows 选择性擦除）
-

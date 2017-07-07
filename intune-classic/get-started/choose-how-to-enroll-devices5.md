@@ -14,13 +14,11 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e978a9df5d0c0e2e94f484c5e683a970f66dc945
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>选择如何注册移动设备
 
@@ -45,4 +43,3 @@ ms.lasthandoff: 06/08/2017
 
 > [!div class="button"]
 [< 返回](choose-how-to-enroll-devices3.md)
-

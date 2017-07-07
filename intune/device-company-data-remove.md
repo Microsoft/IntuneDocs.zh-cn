@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: f021e95f-157f-4e8a-9253-1cff03d6ee3e
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 39acd12333e9685f94d23416fb1a61ce93f45476
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="remove-company-data-from-intune-managed-devices"></a>从 Intune-托管设备中删除公司数据
 
 
@@ -37,4 +34,3 @@ ms.lasthandoff: 06/08/2017
 5. 从管理的设备列表中选择一台设备，然后选择“删除公司数据”设备远程操作。
 
 若要查看刚执行的操作的状态，请在“设备和组”边栏选项卡上选择“设备操作”。
-

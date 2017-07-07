@@ -15,17 +15,14 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略管理时会出现的情况 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
+[!INCLUDE[azure_portal](./includes/azure_portal.md)] 本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
 ##  <a name="accessing-apps"></a>访问应用
 
 Android 设备上与应用保护策略关联的所有应用都需要公司门户应用。
@@ -45,7 +42,7 @@ Intune 仅支持对于每个设备，将应用保护策略部署到一个用户�
 
 * 根据所使用的应用，第二个用户可能会也可能不会在设备上受阻。 但是在所有情况下，只有获取应用保护策略的第一个用户才会受该策略影响。
 
-  * Microsoft Word、Excel  和 PowerPoint 不会阻止第二个用户帐户，但第二个用户帐户不受应用保护策略影响。
+  * Microsoft Word、Excel 和 PowerPoint 不会阻止第二个用户帐户，但第二个用户帐户不受应用保护策略影响。
 
   * 对于“OneDrive 和 Outlook 应用”，只能使用一个工作帐户。  将阻止在这些应用中添加多个工作帐户。  但是，你可以在设备上删除用户并添加其他用户。
 
@@ -84,4 +81,3 @@ Intune 仅支持对于每个设备，将应用保护策略部署到一个用户�
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 创建和部署应用保护策略](app-protection-policies.md)
-

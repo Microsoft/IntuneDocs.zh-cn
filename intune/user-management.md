@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-user-management"></a>什么是用户管理？
 
 
@@ -45,4 +42,3 @@ ms.lasthandoff: 06/08/2017
 ## <a name="next-step"></a>下一步
 
 [组入门](groups-get-started.md)
-

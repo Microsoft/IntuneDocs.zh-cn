@@ -14,16 +14,12 @@ ms.assetid: e116b620-1e12-4b5c-9905-2f7acf2ae530
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 665f57a4cdb25c1e9f2bef7f1c25f284589df16f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>Exchange 管理的移动设备的擦除
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -35,4 +31,3 @@ Microsoft Intune 允许你擦除或重置结合使用 Exchange ActiveSync (EAS) 
 |完全擦除|删除邮件帐户和缓存的邮件。|XFactory 重置。|恢复出厂设置。|
 |选择性擦除/电子邮件|删除电子邮件帐户。|不支持。|不支持。|
 |选择性擦除/策略|删除策略实施，但设置不变|删除 XPolicy 实施，但设置不变。|删除策略实施，但设置不变。|
-

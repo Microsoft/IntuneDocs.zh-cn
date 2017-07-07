@@ -14,15 +14,12 @@ ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
-ms.openlocfilehash: 53932f8d76dcf05374d8ffca69821165594590c4
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
-
+ms.openlocfilehash: 0b2fbcc1d63f229e1b63873841bc300bdde92fa3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="drive-end-user-adoption-with-conditional-access"></a>推动最终用户采用条件性访问
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -66,7 +63,7 @@ ms.lasthandoff: 06/13/2017
 
 选择下列选项之一：
 
--   [在 Azure Active Directory 中配置条件性访问](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal)
+-   [在 Azure Active Directory 中配置条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
 -   [使用 Intune 安装本地 Exchange 连接器](/intune/exchange-connector-install)
 
@@ -79,4 +76,3 @@ ms.lasthandoff: 06/13/2017
 ## <a name="next-steps"></a>后续步骤
 
 [典型迁移周期](migration-guide-cycle.md)
-

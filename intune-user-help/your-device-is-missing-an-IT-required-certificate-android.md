@@ -11,20 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>你的 Android 设备缺少 IT 管理员所需的证书
 
 如果设备未在 Intune 中注册，并且缺少 IT 管理员所需的特定证书，则无法登录到公司门户应用。 在尝试登录时，你将看到以下消息：
@@ -73,4 +70,3 @@ ms.lasthandoff: 05/23/2017
 7. 重新打开公司门户应用。 现在应能够登录到公司门户应用。 如果需要帮助，请与 IT 管理员联系。
 
 如果看到相同的“缺少证书”消息（如之前所示），且已经按照步骤执行了操作，说明可能存在另一个需要 IT 管理员帮助你安装的证书。 请使用[公司门户网站](http://portal.manage.microsoft.com)上可用的联系信息，联系 IT 管理员获取帮助。
-

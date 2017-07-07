@@ -15,14 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 移动预配配置文件防止应用过期
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -55,4 +53,3 @@ ms.lasthandoff: 06/08/2017
 ## <a name="next-steps"></a>后续步骤
 
 将该配置文件分配给所需的 iOS 设备。 有关详细信息，请使用[如何分配设备配置文件](device-profile-assign.md)中的步骤。
-

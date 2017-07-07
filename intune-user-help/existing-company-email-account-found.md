@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="an-existing-company-email-account-was-found"></a>找到现有公司电子邮件帐户
 
 你已有组织或公司的电子邮件帐户，现在你想在移动设备上访问该帐户。 IT 管理员需要你提供协助，从向你的设备发送电子邮件的用户开始，全程保护电子邮件访问的安全。 当前电子邮件可能已经处理，但执行以下步骤将使信息更安全。
@@ -39,4 +35,3 @@ ms.lasthandoff: 05/23/2017
 3.  等待新的电子邮件设置自动应用到您的设备很短时间。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

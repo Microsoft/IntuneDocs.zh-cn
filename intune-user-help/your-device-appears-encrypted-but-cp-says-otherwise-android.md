@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 269ad7968242f8f5ce7095c9c73347987675e846
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>你的 Android 设备似乎已加密，但公司门户将该设备识别为未加密
 
 加密设备是指在设备上使用只有你自己知道的密钥编码信息，用以防止未经授权的人员访问设备。 为确保信息安全，组织会要求加密 Android 设备才能访问公司文件、电子邮件或数据。
@@ -64,4 +59,3 @@ ms.lasthandoff: 05/26/2017
 
 - [华为 Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
 - [小米 Mi 智能手机](https://xiaomi-mi.com/mi-smartphones/)
-

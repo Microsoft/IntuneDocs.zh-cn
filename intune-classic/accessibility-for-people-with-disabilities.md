@@ -14,15 +14,12 @@ ms.assetid: 3a503548-434c-410a-a419-7eadd7e7fb99
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0b101170523c02aea0e9df46e7887cf423abef7c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="accessibility-for-people-with-disabilities"></a>针对残疾人士的辅助功能
 Microsoft 致力于让所有用户更轻松地使用其产品和服务。 以下主题提供有关使残障人士更易于访问 Microsoft Intune 的功能、产品和服务的信息。
 
@@ -30,4 +27,3 @@ Microsoft 致力于让所有用户更轻松地使用其产品和服务。 以下
 [Microsoft Intune 的辅助功能](accessibility-features-of-microsoft-intune.md)介绍 Microsoft Intune 的辅助功能。
 
 [Microsoft 的辅助功能产品和服务](accessibility-products-and-services-from-microsoft.md)介绍可从 Microsoft 获取的辅助功能产品和服务。
-

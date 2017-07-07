@@ -14,15 +14,12 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>从备份还原 Intune 托管 iOS 设备
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -52,4 +49,3 @@ ms.lasthandoff: 06/08/2017
 
 ### <a name="for-users-who-will-use-both-their-old-and-new-devices"></a>对于同时使用新旧设备的用户
 通过点击“设置” > “Safari” > “清除历史记录和网站数据”从 Safari 中清除 cookie。 在清除后，卸载并重新安装公司门户应用，然后按照标准注册步骤[将 iOS 设备注册到 Intune](/intune-user-help/enroll-your-device-in-intune-ios)。
-

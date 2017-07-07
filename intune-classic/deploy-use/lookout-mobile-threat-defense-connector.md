@@ -14,15 +14,12 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 6ed808e3dd1db1bf58d4c0caa8cddccbc49c05f7
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout 移动威胁防御连接器与 Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -98,4 +95,3 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 3.  [配置和部署 Lookout 移动威胁防御应用](configure-deploy-lookout-for-work-app.md)
 4.  [配置 Lookout 设备符合性策略](create-lookout-device-compliance-policy.md)
 5.  [Lookout 移动威胁防御集成故障排除](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
-

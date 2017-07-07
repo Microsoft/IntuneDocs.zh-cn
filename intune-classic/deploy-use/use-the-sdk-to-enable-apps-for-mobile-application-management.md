@@ -14,15 +14,12 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: de7c4f57e6d42ac36ba5873e3d0ba1eaee6a5e8b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>使用 SDK 启用针对移动应用程序管理的应用
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -43,4 +40,3 @@ ms.lasthandoff: 06/08/2017
 
 ### <a name="see-also"></a>另请参阅
 [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](/intune/apps-prepare-mobile-application-management)
-

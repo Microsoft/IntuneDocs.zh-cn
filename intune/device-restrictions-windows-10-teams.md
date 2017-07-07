@@ -15,15 +15,12 @@ ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7a5c3eaf3d2b1fc4383282473352124c793b666f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 协同版设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,4 +34,3 @@ ms.lasthandoff: 06/08/2017
 - **欢迎屏幕背景图像 URL** - 启用此设置以在 Windows 10 协同版设备上的“欢迎”屏幕上显示来自指定 URL 的自定义背景。<br>图片必须为 PNG 格式，并且 URL 必须以 **https://** 开头。
 - **用于更新的维护时段** - 配置可以对设备进行更新的时段。 可以配置该时段的开始时间和持续时间（1-5 小时）。
 - **Azure Operational Insights** - Azure Operational Insights 是 Microsoft Operations Manager 套件的一部分，对 Windows 10 协同版设备的日志文件数据进行收集、存储和分析。<br>若要连接到 Azure Operational insights，必须指定**工作区 ID** 和**工作区密钥**。
-

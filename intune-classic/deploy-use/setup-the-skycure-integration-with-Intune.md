@@ -14,15 +14,12 @@ ms.assetid: 93722f66-7641-4a3f-b1fb-3a0a58a36675
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d5a59f34a5dacdc2e1a0d5c6601b4ede1a908e4
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-the-skycure-integration-with-intune"></a>使用 Intune 设置 Skycure 集成
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -112,4 +109,3 @@ Skycure 将运行其移动威胁防御服务的设备与 Azure AD 安全组同�
 ## <a name="next-steps"></a>后续步骤
 
 [在 Intune 中启用 Skycure 移动威胁防御](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
-

@@ -14,15 +14,12 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 35bb4e87888a8769b3606659b93e3a73480b566f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-intune-licenses-using-powershell"></a>使用 PowerShell 管理 Intune 许可证
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -72,4 +69,3 @@ ms.lasthandoff: 06/08/2017
 祝贺你！ 你刚刚完成了 *Intune 快速入门指南*的步骤 4。
 >[!div class="step-by-step"]
 (/intune/custom-domain-name-configure) [&larr; **将用户同步到 Intune**](/intune/custom-domain-name-configure)     [**组织用户和设备** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
-

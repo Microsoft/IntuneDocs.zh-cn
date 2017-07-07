@@ -15,15 +15,12 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a261e01b81e3ad1caa7d8b780a79004dfbbe6ecd
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>联系 Microsoft Intune 的辅助电话支持
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -121,4 +118,3 @@ ms.lasthandoff: 06/08/2017
 |乌拉圭|全天候|星期一到星期五<br /><br />09:00 – 17:00 UYST (UTC -2)|西班牙语*、英语|000-411-002-7131||
 |委内瑞拉|全天候|星期一到星期五<br /><br />09:00 – 17:00 VET (UTC -4:30)|西班牙语*、英语|0-800-100-8763||
 * 支持通过电话进行解释。
-

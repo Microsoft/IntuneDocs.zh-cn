@@ -11,15 +11,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 12045c3e81686ad3e351cd5a85bc663832b87b2e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-android-for-work-devices-with-intune"></a>使用 Intune 管理 Android for Work 设备
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,4 +85,3 @@ VPN 支持类似于 Android VPN 配置文件。 可使用相同的 VPN 提供商
 [启用 Android for Work 注册](/intune-classic/deploy-use/set-up-android-for-work)
 
 [为 Android for Work 部署应用](/intune-classic/deploy-use/android-for-work-apps)
-

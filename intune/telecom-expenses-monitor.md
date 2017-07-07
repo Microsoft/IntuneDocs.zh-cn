@@ -15,14 +15,12 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -173,4 +171,3 @@ Datalert 服务目前处于活动状态，它开始监控数据流量，并在�
 目前，仅在 Saaswedo 的 Datalert 管理控制台中提供数据流量报告。
 
 即将添加最终用户安装 Datalert 应用需遵循的操作说明。
-

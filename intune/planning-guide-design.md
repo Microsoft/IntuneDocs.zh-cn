@@ -14,15 +14,12 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: fdd75bd2b96eb20e0e73b7f8f76cf1a5cc035011
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-a-design"></a>创建设计
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -411,4 +408,3 @@ Intune 支持以多种方式向用户或设备传递应用。 传递的应用程
 ## <a name="next-section"></a>下一节
 
 下一节提供 [Intune 实现过程](planning-guide-onboarding.md)的相关指南。
-

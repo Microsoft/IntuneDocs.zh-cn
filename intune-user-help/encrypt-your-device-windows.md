@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 5db7489d379ca374e41030870df20ff16b919bbc
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>如何通过加密保护 Windows 设备
 
 在加密设备时，将设备上的信息包装到一个保护代码层中以防止未经授权的人员访问这些信息。 为确保信息安全，组织会要求加密 Windows 设备，以保护公司或学校数据。
@@ -41,4 +36,3 @@ ms.lasthandoff: 05/23/2017
 2.  选择“启用 BitLocker”，然后按照说明加密你的各个驱动器。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

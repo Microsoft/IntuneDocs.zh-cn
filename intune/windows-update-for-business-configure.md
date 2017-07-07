@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>如何使用 Microsoft Intune 配置 Windows Update for Business 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -149,4 +146,3 @@ Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 �
 > [!IMPORTANT]
 > 发出暂停命令时，设备在下次检查服务时会收到此命令。 可能的情况是，在设备签入前，它们可能安装了计划更新。
 > 此外，如果在发出暂停命令时关闭目标设备，则当打开它时，可能会在它使用 Intune 签入前下载并安装计划的更新。
-

@@ -14,15 +14,12 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 00f3487ed7f9fe920d89f449703723bfe80eb109
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>排查 Microsoft Intune 中的策略问题
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -65,7 +62,7 @@ ms.lasthandoff: 06/08/2017
 Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”  设置为 8，然后尝试将其减少到 4。 已向设备应用更严格的策略。
 
 如果要将策略更改为安全级别较低的值，可能需要重置安全策略，具体视设备平台而定。
-例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”栏并选择“设置”&gt;“控制面板”。  选择“用户帐户”  小程序。
+例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”栏并选择“设置”&gt;“控制面板”。  选择“用户帐户”小程序。
 在左侧导航菜单底部有一个“重置安全策略”  链接。 选中它，然后选择**重置策略**按钮。
 对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS），可能需要将其停用并重新注册回服务，这样才能应用限制较少的策略。
 
@@ -101,4 +98,3 @@ Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其�
 
 ### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)中所述。
-

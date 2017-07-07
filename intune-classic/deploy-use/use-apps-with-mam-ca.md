@@ -14,13 +14,11 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>将应用与基于应用的 CA 结合使用时的预期行为
 
@@ -68,4 +66,3 @@ ms.lasthandoff: 05/23/2017
 ### <a name="see-also"></a>另请参阅
 
 [使用应用保护策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

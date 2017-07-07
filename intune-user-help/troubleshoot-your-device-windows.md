@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 48644443-ff50-4af1-9c23-443e6e5c3b47
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 02018f2f96dbd94c337dd28e7ed111666841aa96
 ms.openlocfilehash: 526cfed5e8f42d739c57882b454745ba5b20181c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/05/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-windows-device"></a>解决 Windows 设备的常见问题
 
 有时 Windows 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://portal.manage.microsoft.com)上的 IT 管理员联系信息与其联系。
@@ -38,4 +34,3 @@ ms.lasthandoff: 06/05/2017
 - [设备需要反恶意软件](your-device-needs-antimalware-software.md)
 - [需要启用安全启动](you-need-to-enable-secure-boot-windows.md)
 - [需要启用代码完整性](you-need-to-enable-code-integrity.md)
-

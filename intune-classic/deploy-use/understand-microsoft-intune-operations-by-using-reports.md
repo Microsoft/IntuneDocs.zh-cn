@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>通过使用报表了解 Microsoft Intune 操作
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 |**保存**|在“创建新报表”页上，每个用户可保存最多 100 个报表。 依据要求配置报表参数，然后选择“保存”或“另存为”（如果要使用其他名称）。|
 |**加载**|在“创建新报表”页上，选择“加载”检索任何以前保存的报表参数集。|
 |**删除**|在“报表”工作区中，选择所需的报表类型，然后选择“加载”。 然后，在报表列表中，选择该报表旁边的删除 (x) 图标。|
-
 
 

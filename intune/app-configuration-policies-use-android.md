@@ -15,14 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>如何使用适用于 Android for Work 的 Microsoft Intune 应用配置策略
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -91,4 +89,3 @@ ms.lasthandoff: 06/08/2017
 8. 要分配应用配置策略，请依次选择“应用配置策略”、“分配”，然后选择“选择组”。
 9. 选择要分配的组，然后选择“选择”。
 10. 选择“保存”以分配策略。
-
