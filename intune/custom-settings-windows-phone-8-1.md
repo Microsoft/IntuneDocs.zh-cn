@@ -15,15 +15,12 @@ ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b3dcad95b85d967e48c8b05d655a5e679daa0aee
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows Phone 8.1 设备的自定义设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -44,4 +41,3 @@ ms.lasthandoff: 06/08/2017
     - **值** - 输入要与已输入的 OMA-URI 关联的值。
 
 4. 完成后，单击“确定”，根据需要继续添加其他设置。
-

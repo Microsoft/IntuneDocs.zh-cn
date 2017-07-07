@@ -14,15 +14,12 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 89f60e34fd89784ca8ea1fa3999927c7b0bc66e4
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -158,4 +155,3 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 -   如果设备是首次接收托管浏览器策略而两个策略发生冲突，则不会在设备上强制执行 URL。 使用 **“策略”** 工作区的 **“策略冲突”** 节点查看这些冲突。
 
 -   如果设备已接收托管浏览器策略而部署的第二个策略具有冲突的设置，则将在设备上保留原始设置。 使用 **“策略”** 工作区的 **“策略冲突”** 节点查看这些冲突。
-

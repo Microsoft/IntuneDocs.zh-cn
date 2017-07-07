@@ -14,15 +14,12 @@ ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 352242b940a90539e0645ea1646dcaebfe245e05
-ms.openlocfilehash: 31d0a2b86b08f0fc89cae89e8870a6a0426b1822
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/14/2017
-
-
+ms.openlocfilehash: adc4a343e610a1a75f8a5bc51a1894f6fcf998bb
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 将应用部署到 Android for Work 设备
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -53,7 +50,7 @@ ms.lasthandoff: 06/14/2017
 
 1. 转到 Google Play 开发人员控制台 [play.google.com/apps/publish](https://play.google.com/apps/publish)。
 2. 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。 如果是首次登录，则必须注册，然后支付费用以成为 Google 开发人员计划的成员。
-3. 在控制台中，选择“添加新应用程序”。
+3. 在控制台中，选择**“添加新应用程序”**。
 4. 采用与将任何应用发布到 Google Play 商店相同的方式，上传应用并提供有关应用的信息。 但是，你必须选择设置**“仅使此应用程序可供我的组织(<组织名称>)使用”****：<br>
   ![用于仅使此应用可供你的组织使用的选项](media/restrict.png)<br>
 此操作可确保应用只能供你的组织使用，而在公开的 Google Play 商店中不可用。
@@ -89,4 +86,3 @@ Android for Work 需要你先在 Google 的托管 Play Web 控制台中批准应
 3. 访问**“更新”**选项卡，查看是否有应用需要更新。  列出的所有应用都需要新权限，且在应用新权限之前不会进行分配。  
 
 或者，可将 Google Play 配置为自动根据每个应用的情况重新审批应用权限。 
-

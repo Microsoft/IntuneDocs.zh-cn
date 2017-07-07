@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-managed-devices-to-get-work-done"></a>使用托管设备完成工作
 Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板电脑和电脑）、应用和电子邮件等其他公司资源的软件。 这样员工可以在几乎任何地方从几乎任意设备访问其工作信息，并且还能保护公司信息安全。
 
@@ -101,4 +97,3 @@ Microsoft 建议首先尝试自己解决问题。 对于 Intune 支持的每个�
 - [解决 Windows 设备的常见问题](troubleshoot-your-device-windows.md)
 
 你可以在底部发表评论请求帮助，但是由于每个组织的需求不同，所以我们可能无法回答你的每一个问题。 向 IT 管理员寻求帮助可能是获得最快和最相关回复的好方法。 [公司门户网站](https://portal.manage.microsoft.com)应该会提供他们的联系信息。
-

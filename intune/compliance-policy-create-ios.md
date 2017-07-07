@@ -15,15 +15,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中创建适用于 iOS 设备的设备符合性策略
 
 
@@ -31,7 +28,7 @@ ms.lasthandoff: 06/08/2017
 
 为每个平台创建符合性策略。  可以在 Azure 门户中创建符合性策略。 若要详细了解什么是符合性策略，请参阅[什么是设备符合性](device-compliance.md)主题。 若要了解创建符合性策略之前需要解决的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)主题。
 
-下表说明了将符合性策略与条件性访问策略一起使用时如何管理非符合性设置。
+下表说明了将合规性策略与条件访问策略一起使用时如何管理非合规性设置。
 
 -------------------------------
 
@@ -124,4 +121,3 @@ ms.lasthandoff: 06/08/2017
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

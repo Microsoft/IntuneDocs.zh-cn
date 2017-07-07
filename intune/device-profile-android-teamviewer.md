@@ -15,14 +15,12 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 15a005ae2b84c7bd4f913f892089965c10f3b23e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>针对 Intune 托管 Android 设备提供远程协助
 
 Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（另行购买）为运行 Android 设备的用户提供远程协助。 请使用本主题介绍的信息进行设置并开始使用。
@@ -70,5 +68,4 @@ Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（另行购买�
 ## <a name="end-user-notifications"></a>最终用户通知
 
 最终用户将在其设备上的公司门户应用图标上看到一个通知标志，打开应用时还会看到一条通知。 然后，他们就可以接受远程协助请求了。
-
 

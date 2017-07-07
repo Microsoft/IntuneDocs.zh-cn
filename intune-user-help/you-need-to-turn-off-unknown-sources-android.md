@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4afd57da42d634dbead124d2f0dec4b4715c546e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-turn-off-unknown-sources"></a>需要关闭未知源
 
 你的 Android 设备能从多个位置安装应用。 对于大多数用户而言，Google Play 商店包含丰富的应用。 某些应用（如由你的公司开发以供内部使用的应用）可能会从其他市场安装。 从未经验证的位置安装应用会导致设备出现问题，并可能导致安全问题。 为了确保公司数据的安全，IT 管理员决定关闭对“未知源”的访问。
@@ -33,4 +29,3 @@ ms.lasthandoff: 05/23/2017
 关闭“未知源”后，可能需要几分钟才能继续使用 Android 设备访问公司或学校数据。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

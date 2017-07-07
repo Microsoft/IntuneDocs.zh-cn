@@ -15,15 +15,12 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: bda9e939e2d4aba4c4d005ea55ba65bec9c6e217
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的自定义设备设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -62,6 +59,5 @@ ms.lasthandoff: 06/08/2017
 并非所有设置均兼容所有 Windows 10 版本。 Windows 主题中的表将告诉你各个 CSP 支持的版本。
 
 此外，Intune 并不支持本主题中列出的所有设置。 若要查明 Intune 是否支持所需的设置，请打开适用于该设置的主题。 每个设置页面将显示其支持的操作。 若要使用 Intune，设置必须支持“添加”或“替换”操作。
-
 
 

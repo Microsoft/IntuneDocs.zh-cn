@@ -15,15 +15,12 @@ ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: e23972944551d9b8ec536f5055a8ef991d6ba8c1
 ms.openlocfilehash: 57c4ec3621ffaef5c1aaffd55c87baac91e50154
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 macOS 设备的自定义设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -41,4 +38,3 @@ ms.lasthandoff: 06/12/2017
 确保在要分配 macOS 自定义策略的设备上从 Apple Configurator 工具导出的设置与 macOS 版本兼容。 有关如何解析不兼容的设置的信息，可搜索 [Apple 开发人员](https://developer.apple.com/)网站上的“配置描述文件参考”和“移动设备管理协议参考”。
 
 你已导入的文件将在边栏选项卡的“文件内容”区域显示。
-

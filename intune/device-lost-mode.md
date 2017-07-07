@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a34d008ae76355578c6f24a932c9e1e501d5b46b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="activate-lost-mode-on-ios-devices"></a>激活 iOS 设备上的丢失模式
 
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 06/08/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备”。
+3. 在“**Intune**”边栏选项卡上，选择“**设备**”。
 4. 在“设备和组”边栏选项卡上，选择“所有设备”。
 5. 从管理设备列表中，选择一台 iOS 设备，然后选择“丢失模式”远程操作。
 6. 在“丢失模式”边栏选项卡上，启用丢失模式，输入将要显示的消息，以及联系电话号码（可选）。
@@ -49,5 +46,4 @@ ms.lasthandoff: 06/08/2017
 - 该数据存储 24 小时，然后删除。 不能手动删除位置数据。
 - 位置数据在存储和传输时均进行加密处理。
 - 在配置丢失模式时，我们建议在锁屏界面上显示的输入消息中加入可帮助捡到设备的人返还设备的信息。
-
 

@@ -14,16 +14,12 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>监视 Microsoft Intune 中的应用部署 | Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -49,4 +45,3 @@ ms.lasthandoff: 06/08/2017
 在应用的“软件属性”页上，选择以下任一选项卡：“常规”— 显示关于应用及其安装状态的常规信息，“设备”— 显示成功安装了应用的目标部署的设备，“用户”— 显示其设备成功安装了应用的目标部署的用户。
 
 如前所述，你可以使用“筛选器”下拉列表来配置每个选项卡上显示的值。
-

@@ -14,16 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
-ms.openlocfilehash: 7dfcc0bf8f3da1e600df59927db6e78ec2021e0f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/12/2017
-
-
+ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
-
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
 > [!NOTE]
@@ -80,7 +76,8 @@ Intune App SDK 是没有外部依赖项的标准 Android 库。 **Microsoft.Intu
 Azure Active Directory 身份验证库 (ADAL) 可能有其自己的 ProGuard 限制。 如果应用集成 ADAL，则必须遵循 ADAL 文档中的这些限制。
 
 ### <a name="entry-points"></a>入口点
-======= Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要这些权限以执行代理身份验证。 如果未对应用授予这些权限或权限被用户废除，则将禁用需要代理（公司门户应用）的身份验证流。
+
+Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要这些权限以执行代理身份验证。 如果未对应用授予这些权限或权限被用户废除，则将禁用需要代理（公司门户应用）的身份验证流。
 
 Intune App SDK 需要更改应用的源代码才能启用 Intune 应用保护策略。 此操作可通过将 Android 基类替换为等效的 Intune 基类（其名称具有前缀 **MAM**）来完成。 SDK 类介于 Android 基类与应用自己的该类派生版本之间。 以一个活动为例，你最终会得到类似于下面这样的继承层次结构： `Activity` > `MAMActivity` > `AppSpecificActivity`。
 
@@ -161,7 +158,7 @@ Intune App SDK 需要具有三个 [Android 系统权限](https://developer.andro
 
 * `android.permission.USE_CREDENTIALS`
 
-Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) 需要这些权限以执行代理身份验证。 如果未对应用授予这些权限或权限被用户废除，则将禁用需要代理（公司门户应用）的身份验证流。
+Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) 需要这些权限以执行代理身份验证。 如果未对应用授予这些权限或权限被用户废除，则将禁用需要代理（公司门户应用）的身份验证流。
 
 ## <a name="logging"></a>Logging
 
@@ -410,7 +407,7 @@ public interface MAMNotificationReceiver {
 
 首先，请阅读 [GitHub 上的 ADAL 存储库](https://github.com/AzureAD/azure-activedirectory-library-for-android)中的 ADAL 集成指南。
 
-SDK 依赖于 [ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) 实现其[身份验证](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/)和条件启动方案，这要求应用通过 [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/) 进行配置。 配置值通过 AndroidManifest 元数据传递给 SDK。
+SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) 实现其[身份验证](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)和条件启动方案，这要求应用通过 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) 进行配置。 配置值通过 AndroidManifest 元数据传递给 SDK。
 
 要配置应用并启用适当的身份验证，请将以下内容添加到 AndroidManifest.xml 中的应用节点。 其中某些配置在一般情况下，仅当应用使用 ADAL 进行身份验证时才需要；在这种情况下，需要应用用于向 AAD 注册自己的特定值。 这样做是为了确保系统不会由于 AAD 识别到两个单独的注册值（一个来自应用，一个来自 SDK）而两次提示最终用户进行身份验证。
 
@@ -1181,4 +1178,3 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 * 使用最新的 Android SDK 生成工具。
 
 * 删除所有不必要和未使用的库（例如 android.support.v4）
-

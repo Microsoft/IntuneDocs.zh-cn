@@ -15,15 +15,12 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -67,5 +64,4 @@ ms.lasthandoff: 06/08/2017
 在此高级示例中，将创建设备限制政策，阻止在 Android 设备上使用内置相机应用。
 
 ![如何在 Android 设备上禁用相机](./media/disable-android-camera.png)
-
 

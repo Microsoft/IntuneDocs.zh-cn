@@ -15,15 +15,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置证书
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -128,4 +125,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="next-steps"></a>后续步骤
 有关如何分配设备配置文件的信息，请参阅[如何分配设备配置文件](device-profile-assign.md)。
-

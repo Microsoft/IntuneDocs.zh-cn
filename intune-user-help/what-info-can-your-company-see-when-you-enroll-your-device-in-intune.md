@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>在 Intune 中注册我的设备时，我的公司可以看到什么信息？
 
 将设备注册到管理中，即表示你授予公司 IT 部门访问设备上某些信息的权限以帮助保护设备上的公司数据。
@@ -32,11 +28,11 @@ ms.lasthandoff: 05/23/2017
 **IT 管理员不能看到的内容**
 
 - 调用和 Web 浏览历史记录
--    位置
+-   位置
 - 个人电子邮件
 - 文本消息
 - 联系人
--    个人帐户的密码
+-   个人帐户的密码
 - 日历事件
 - 图片，包括照片应用中的照片或本机照片
 
@@ -50,4 +46,3 @@ ms.lasthandoff: 05/23/2017
 -   设备名称
 -   制造商（对于非 Apple 生产的设备）
 -   电话号码（对于工作设备，则为整个号码。 对于个人设备，只取后四位数字。）
-

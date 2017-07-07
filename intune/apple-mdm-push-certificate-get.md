@@ -15,15 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3df23e1f29543701cf3806a8fecc132ef3ac4f43
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-an-apple-mdm-push-certificate"></a>获取 Apple MDM Push Certificate
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -63,4 +60,3 @@ Apple MDM Push Certificate 有效期为一年，且必须手动续订才能维�
 6. 在 Azure Intune 门户中，选择“Apple MDM Push Certificate”浏览图标，然后选择已从 Apple 下载的 .pem 文件，最后选择“上传”。
 
 Apple MDM Push Certificate 显示“激活”，有效期为 365 天。
-

@@ -14,15 +14,12 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: e17fe40fc50f40bf8adefa6dfdc4d4583cc6cc80
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>确定移动设备管理用例场景
 
 确定用例场景是成功 Intune 部署规划过程的重要组成部分。 通过用例场景，你可以根据用户类型或角色以及用户设备的所有权（例如，公司或个人）将用户划分成若干个可管理的组，因此，用例场景非常有用。
@@ -90,4 +87,3 @@ ms.lasthandoff: 06/16/2017
 ## <a name="next-steps"></a>后续步骤
 
 下一节提供[如何为每个用例场景确定 Intune 要求](planning-guide-requirements.md)的相关指南。
-

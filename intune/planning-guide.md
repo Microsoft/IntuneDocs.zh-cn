@@ -14,15 +14,12 @@ ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
 ms.openlocfilehash: ceee7a766fa8f60b91d3a84b6577223e1bfd652e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 部署规划、设计和实施指南
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -64,4 +61,3 @@ ms.lasthandoff: 06/15/2017
 ## <a name="next-steps"></a>后续步骤
 
 让我们开始第一部分：[确定部署目标、宗旨和难题](planning-guide-deployment-goals.md)。
-

@@ -15,15 +15,12 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>使用 Apple Configurator 和直接注册来注册 iOS 设备 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -102,4 +99,3 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 4. 在 iOS 设备上，打开“设置”并转到“常规” > “设备管理”  > “管理配置文件”。 确认配置文件安装已列出，并检查 iOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
 
 5. 分配设备。 iOS 设备现已向 Intune 注册并已托管。
-

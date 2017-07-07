@@ -14,15 +14,12 @@ ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 65e3bb4b6a4e6e8dcfa1dd16738ae47758f4fb9b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>阶段 1：为移动设备管理 (MDM) 准备 Intune
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -90,4 +87,3 @@ ms.lasthandoff: 06/13/2017
 ## <a name="next-steps"></a>后续步骤
 
 [基本设置](migration-guide-setup.md)
-

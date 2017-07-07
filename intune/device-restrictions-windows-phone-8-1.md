@@ -15,15 +15,12 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows Phone 8.1 设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -95,4 +92,3 @@ ms.lasthandoff: 06/08/2017
 -   **Wi-Fi 热点报告** - 发送有关 Wi-Fi 连接的信息，以帮助用户发现附近的连接。
 -   **NFC** - 启用或禁用在支持近场通信的设备上使用近场通信的操作。
 -   **蓝牙** - 启用或禁用设备的蓝牙功能。
-

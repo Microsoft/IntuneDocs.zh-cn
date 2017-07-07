@@ -14,15 +14,12 @@ ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7a2eab6ece5628598a7b5a5f9414aa43abc60d69
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>移动设备管理 (MDM) 生命周期概述
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -49,4 +46,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="retire"></a>停用
 当设备丢失或被盗、需要更换，或当用户移到另一个位置时，通常需要[停用或擦除](device-management.md)设备（[经典门户](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)）。 有多种方法可以完成此操作，包括重置设备、从管理将其删除以及擦除其上的公司数据。
-

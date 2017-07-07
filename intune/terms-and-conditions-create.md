@@ -15,14 +15,12 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d21f440ee6806b545d2b346559d6516993a9cbf
 ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/14/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ensure-users-accept-company-terms-for-access"></a>确保用户接受公司的访问条款
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -90,4 +88,3 @@ ms.lasthandoff: 06/14/2017
 4.  选择“确定”，然后选择“保存”。
 
 用户仅需接受一次更新的条款和条件。 有多台设备的用户无需在每台设备上都接受条款和条件。
-

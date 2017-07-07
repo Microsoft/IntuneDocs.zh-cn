@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-your-ios-or-macos-device-with-intune"></a>通过 Intune 使用 iOS 或 macOS 设备
 
 你可以通过 Intune 处理许多事情，使工作生活更轻松。 以下是公司可能要求你做的最常见事项的列表。
@@ -52,4 +48,3 @@ Intune 当前支持 iOS 8.0 及更高版本。 它也支持 macOS 10.9 Mavericks
 - [从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 - [使用公司门户重置设备可能会发生什么情况？](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 - [手动同步设备](sync-your-device-manually-ios.md)
-

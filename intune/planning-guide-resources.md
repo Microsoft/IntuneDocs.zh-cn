@@ -14,15 +14,12 @@ ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: 4f893c0c8308a246d7bab15fed68a78c4e10b70a
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>规划 Intune 部署的其他资源
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -61,4 +58,3 @@ ms.lasthandoff: 06/15/2017
 -   [Intune 用户之声](http://microsoftintune.uservoice.com/) - 想要请求某项功能，或与其他客户进行功能投票？ 通过“用户之声”提供关于 Intune 的反馈。 我们始终在倾听用户的声音。
 
 -   [注册指南](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - 一组文档，你可以原样使用，或作为通信计划的一部分与最终用户一起进行修改，以帮助他们了解在 Intune 中注册其个人设备意味着什么。
-

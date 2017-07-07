@@ -14,15 +14,12 @@ ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: ce26c68916867929e7e1fb17e25bc1a4d9c3beab
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>确定部署目标、宗旨和难题
 
 良好的部署计划首先从确定组织的部署目标、目的及可能遇到的难题开始。 让我们详细地讨论每个部分。
@@ -94,4 +91,3 @@ ms.lasthandoff: 06/16/2017
 ## <a name="next-steps"></a>后续步骤
 
 确定部署目标、目的和可能遇到的难题后，让我们进入到下一节：[确定用例方案](planning-guide-scenarios.md)。
-
