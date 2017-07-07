@@ -14,15 +14,12 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 5570c13b9ca1782b12ad7ca718d18c98bda7bbfa
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -62,4 +59,3 @@ ms.lasthandoff: 06/08/2017
 - [配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)
 - [配置 PFX 证书基础结构](configure-certificate-infrastructure-for-pfx.md)
 - [配置 Itune 证书配置文件](configure-intune-certificate-profiles.md)
-

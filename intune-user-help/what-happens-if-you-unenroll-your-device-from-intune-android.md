@@ -11,29 +11,24 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 075435a190fba28d548b1fa54ba7bafeec3ba217
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>从 Intune 取消注册 Android 设备会发生什么情况？
 
 从 Intune 取消注册 Android 设备时：
 
 -   IT 管理员不能够再管理设备。
 
--    你将无法再访问公司数据和资源。
+-   你将无法再访问公司数据和资源。
 
 -   设备将不再显示在公司门户中。
 
@@ -46,4 +41,3 @@ ms.lasthandoff: 05/23/2017
 有关如何取消注册的说明，请参阅[通过使用公司门户应用从 Intune 取消注册设备](unenroll-your-device-from-intune-android.md)。
 
 需要帮助吗? 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
-

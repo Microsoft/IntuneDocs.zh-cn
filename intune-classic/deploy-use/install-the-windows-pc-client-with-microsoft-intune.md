@@ -1,5 +1,4 @@
 ---
-
 title: "安装 PC 客户端软件"
 description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。"
 keywords: 
@@ -14,15 +13,12 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -264,4 +260,3 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 管理 Windows 电脑](manage-windows-pcs-with-microsoft-intune.md)
 [客户端安装程序疑难解答](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-

@@ -14,15 +14,12 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ade7caf544d71c062c0fa251d7a113facb700a36
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-implementation"></a>Intune 实现
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -143,4 +140,3 @@ Intune 支持 iOS、Mac OS、Android、Windows 桌面版和 Windows Mobile 设�
 ## <a name="next-section"></a>下一节
 
 下一节提供[测试和验证 Intune 部署](planning-guide-test-validation.md)的相关指南。
-

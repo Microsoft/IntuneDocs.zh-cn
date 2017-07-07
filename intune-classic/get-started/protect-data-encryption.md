@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>快速入门指南：使用数据加密保护公司数据
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -53,4 +50,3 @@ Microsoft Intune 可通过多种方法助防止数据从 Office 移动应用中�
 - [了解使用 Microsoft Intune 的启用 MAM 的应用的最终用户体验的相关信息。](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用。](/intune/apps-prepare-mobile-application-management)
 - [查看 Microsoft Intune 应用程序合作伙伴列表](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
-
