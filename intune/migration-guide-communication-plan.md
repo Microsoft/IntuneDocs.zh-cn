@@ -14,15 +14,12 @@ ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: ba85331629f88a4fc6df9f7c2ee5fcf1eda2d8ee
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="plan-communications"></a>计划通信 
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -62,4 +59,3 @@ Intune 还具有其他模板资源，可用于推动最终用户注册设备：
 ## <a name="next-steps"></a>后续步骤
 
 [推动最终用户采用条件访问](migration-guide-drive-adoption.md)
-

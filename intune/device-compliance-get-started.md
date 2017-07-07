@@ -15,15 +15,12 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-device-compliance-in-intune"></a>Itune 中的设备符合性入门
 
 
@@ -83,4 +80,3 @@ This section is a detailed view of what you see in the **Overview**. A list of a
 [创建 iOS 合规性策略](compliance-policy-create-ios.md)
 
 [创建 Windows 合规性策略](compliance-policy-create-windows.md)
-

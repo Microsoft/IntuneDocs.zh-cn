@@ -15,14 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8245bb3fa8f08e719df903a70f079f4fdf534ca5
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用自定义策略以允许和阻止适用于 Samsung KNOX 标准版设备的应用
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]使用此主题中的过程创建 Microsoft Intune 自定义策略，该策略创建以下内容之一：
@@ -69,4 +66,3 @@ ms.lasthandoff: 06/08/2017
 
 
 <!---## Assign the custom profile--->
-

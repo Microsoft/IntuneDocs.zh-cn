@@ -14,15 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: e8b218ce38a7e76135a62b1155dbf9060ba511cc
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prepare-line-of-business-apps-for-mam"></a>准备适用于 MAM 的业务线应用
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -110,4 +107,3 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 [Android 应用包装工具](app-wrapper-prepare-android.md)</br>
 [iOS 应用包装工具](app-wrapper-prepare-ios.md)</br>
 [使用 SDK 启用针对移动应用程序管理的应用](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
-

@@ -15,15 +15,12 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: 44d80e1c72b58eccd4e69b1d561c7d651f39b3c3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -140,4 +137,3 @@ ms.lasthandoff: 06/15/2017
 |**选择托管应用**|选择以下选项之一，添加一个或多个当设备处于展台模式时可以运行的应用。 不允许在设备上运行其他应用。<br><br>- **按包名称添加应用**<br>- **按 URL 添加应用**<br>- **添加托管应用**|否|是|
 |**屏幕睡眠按钮**|启用或禁用设备上的屏幕睡眠唤醒按钮。|否|是|
 |**音量按钮**|启用或禁用设备上的音量按钮。|否|是|
-

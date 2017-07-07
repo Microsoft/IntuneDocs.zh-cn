@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 42734b9181c7637807bf3f787a058c0403e70abc
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-turn-off-usb-debugging"></a>需要关闭 USB 调试
 
 _USB 调试_是一种允许 Android 设备与计算机进行通信的模式，让开发人员更容易使用 Android 设备。 它允许对大多数用户无需定期交互的手机特定区域开启某些访问权限。 尽管有用，但开启此访问权限会使设备面临额外风险 - 连接到计算机时可能会导致信息泄露。 IT 管理员已要求关闭此设置以更好地保护设备上的公司数据。
@@ -33,4 +29,3 @@ _USB 调试_是一种允许 Android 设备与计算机进行通信的模式，�
 关闭“USB 调试”后，请等待几分钟，然后才能正常使用 Android 设备访问公司或学校数据。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

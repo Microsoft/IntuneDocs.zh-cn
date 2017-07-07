@@ -15,15 +15,12 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: dcac410ae5c20b5942bf37f5eaa9a46205a4cc07
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 iOS 设备的电子邮件配置文件设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -43,4 +40,3 @@ ms.lasthandoff: 06/08/2017
 - **允许将消息移动到其他电子邮件帐户** - 此选项允许用户在其设备上已配置的不同帐户间移动电子邮件。
 - **允许从第三方应用程序发送电子邮件** - 允许用户选择此配置文件作为用于发送电子邮件的默认帐户，并允许第三方应用程序在本机电子邮件应用中打开电子邮件，例如，将文件附加到电子邮件。
 - **同步最近使用的电子邮件地址** - 此功能允许用户将设备上最近使用的电子邮件地址的列表与服务器同步。
-

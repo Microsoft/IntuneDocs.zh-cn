@@ -14,15 +14,12 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 5e848dda6643a28141a8f5f1d0bdc01f2bd9d390
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-device-compliance-and-app-management-policies"></a>配置设备符合性和应用管理策略
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -103,4 +100,3 @@ ms.lasthandoff: 06/13/2017
 ## <a name="next-steps"></a>后续步骤 
 
 [配置应用保护策略（可选）](migration-guide-app-protection-policies.md)
-

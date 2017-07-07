@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -133,4 +130,3 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 > - 对于 Android for Work，请确保除了部署相应的电子邮件配置文件外，还部署了 Gmail 或 Nine Work 应用。
 > - 如果想要从设备中删除电子邮件配置文件，则请编辑部署并删除包含该设备的任何组。 请注意，如果电子邮件配置文件是设备上唯一的电子邮件配置文件，则无法通过此方法将其删除。
 > - 如果更改以前部署的电子邮件配置文件，最终用户可能会看到一条消息，请求他们批准重新配置其电子邮件设置。
-

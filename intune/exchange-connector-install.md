@@ -15,15 +15,12 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 9f4a310078a30f7dfefe66a9aba60cc74ad4e29b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>在 Microsoft Intune Azure 预览版中设置 Intune 本地 Exchange Connector
 
 基于设备是否在 Intune 中注册且符合 Intune 设备符合性策略，本地 Exchange Server 环境可以使用 Intune 本地 Exchange Connector 来管理设备对本地 Exchange 邮箱的访问。 本地 Exchange Connector 还负责通过使用 Intune 与现有的 Exchange Active Sync (EAS) 记录同步，发现连接到本地 Exchange Server 的移动设备。
@@ -147,4 +144,3 @@ Exchange Connector 设置连接后，与在 Exchange Connector 中管理的用�
 
 ## <a name="next-steps"></a>后续步骤
 [为 Exchange 内部部署创建条件访问策略](conditional-access-exchange-create.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "设置移动设备管理机构"
 titleSuffix: Intune on Azure
-description: "了解如何在 Intune 中设置移动设备管理机构。 &quot;"
+description: "了解如何在 Intune 中设置移动设备管理机构。 \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,14 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 449c45e0edcc0d0a33352ba154ad68fa6c4725c0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-the-mobile-device-management-authority"></a>设置移动设备管理机构
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -51,4 +49,3 @@ ms.lasthandoff: 06/08/2017
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理
 
 当移动设备与 Intune 服务通信时，将自动续订 MDM 证书。 如果移动设备被擦除，或者它们在一段时间内无法与 Intune 服务通信，则 MDM 证书将不会续订。 MDM 证书过期 180 天后，设备将从 Azure 门户中删除。
-

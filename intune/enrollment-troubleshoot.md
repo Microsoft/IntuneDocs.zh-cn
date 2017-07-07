@@ -15,15 +15,12 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 40e20445b1cf41c081fcdd33f0e32d0154e1f393
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 9b7af9168164f1cccf3feae5bbdfd8014f8c7c1f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -66,7 +63,7 @@ ms.lasthandoff: 06/08/2017
 
 4.  选择“Active Directory”，然后选择你的组织。
 
-5.  选择“用户”选项卡。
+5.  选择“用户”  选项卡。
 
 6.  选择要删除其设备的用户。
 
@@ -362,7 +359,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
     > [!IMPORTANT]
     > 此部分、方法或任务包含教你如何修改注册表的步骤。 但是，如果注册表修改不正确，可能会发生严重问题。 因此，请确保认真遵循这些步骤。 为提高保护程度，请在修改之前备份注册表。 那么，如果发生问题，你也可以恢复注册表。
-    > 有关如何备份和还原注册表的详细信息，请阅读[如何在 Windows 中备份和还原注册表](https://support.microsoft.com/en-us/kb/322756)。
+    > 有关如何备份和还原注册表的详细信息，请阅读[如何在 Windows 中备份和还原注册表](https://support.microsoft.com/kb/322756)。
 
 ## <a name="general-enrollment-error-codes"></a>常规注册错误代码
 
@@ -382,7 +379,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 |0x80043008、0x80CF3008|未能启动 Microsoft Online Management 更新服务。|请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)中所述。|
 |0x80043009、0x80CF3009|已在服务中注册客户端计算机。|你必须先停用客户端计算机，然后才能在服务中重新注册该客户端计算机。|
 |0x8004300B、0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
-|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 对 DLL 进行疑难解答时，可能必须使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/en-us/kb/198038)中描述的工具。|
+|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 对 DLL 进行疑难解答时，可能必须使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/kb/198038)中描述的工具。|
 |0x80cf0440|到服务终结点的连接已终止。|试用或付费帐户处于挂起状态。 创建一个新的试用或付费帐户，并重新注册。|
 
 
@@ -390,4 +387,3 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 ### <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)中所述。
-

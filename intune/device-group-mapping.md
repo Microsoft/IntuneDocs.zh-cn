@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="map-device-groups"></a>映射设备组
 
 
@@ -95,6 +92,5 @@ ms.lasthandoff: 06/08/2017
 - 可以在 Azure 门户中编辑设备类别，但如果这样做，则必须手动更新引用此类别的所有 Azure Active Directory 安全组。
 
 - 删除某个类别后，分配到该类别的所有设备的类别名称随后都将显示“未分配”。
-
 
 

@@ -15,14 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
 ms.openlocfilehash: 56a19bc4d970f230f719af9369dada45ffb65e76
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -70,7 +68,7 @@ ms.lasthandoff: 06/15/2017
 
   ![突出显示“添加用户组”菜单选项的“用户组”边栏选项卡的屏幕截图](./media/app-protection-policy-add-users.png)
 
-2.  用户组列表将显示在“添加用户组”边栏选项卡上。 这是你“Azure Active Directory”中所有安全组的列表。 可选择希望将此策略应用于的用户组，然后选择“选择”。 选择“选择”会将策略部署到用户。
+2.  用户组列表将显示在“添加用户组”  边栏选项卡上。 这是你“Azure Active Directory” 中所有安全组的列表。 可选择希望将此策略应用于的用户组，然后选择“选择”。 选择“选择”会将策略部署到用户。
   ![显示 Azure Active Directory 用户列表的“添加用户组”边栏选项卡的屏幕截图](./media/azure-ad-user-group-list.png)
 
 你现已创建策略并将其部署到用户。
@@ -129,4 +127,3 @@ ms.lasthandoff: 06/15/2017
 ### <a name="see-also"></a>另请参阅
 * [Android 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-android.md)
 * [iOS 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-ios.md)
-

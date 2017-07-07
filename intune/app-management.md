@@ -15,15 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
 
@@ -104,4 +101,3 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
     - [适用于企业批量采购应用的 Windows 应用商店](windows-store-for-business.md)
 - **公司门户品牌** - 自定义公司门户，向其提供公司品牌。
     - [公司门户配置](company-portal-app.md)
-

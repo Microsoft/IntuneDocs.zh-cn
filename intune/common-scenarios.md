@@ -14,15 +14,12 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: 237e141eacb413eb130b17217116b6d0c7e085f8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-ways-to-use-intune"></a>Intune 的常见使用方式
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -104,4 +101,3 @@ Intune 提供了[批量预配和管理解决方案](device-enrollment.md)（[经
 有时，你的员工需要使用你无法管理的设备、应用或浏览器，例如展销会和酒店大堂的公用计算机。
 
 你是否应该允许你的员工通过这些设备访问公司电子邮件？ 答案只能是“不允许”。借助 Intune 和 Microsoft 企业移动性 + 安全性解决方案，即可将此[限制为只允许受组织管理的设备访问电子邮件](conditional-access.md)（[经典门户](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)）。 这样可确保经过强身份验证的员工不会无意中将公司数据留在不受信任的计算机上。
-

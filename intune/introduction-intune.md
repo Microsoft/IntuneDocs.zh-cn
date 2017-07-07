@@ -14,15 +14,12 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-intune"></a>什么是 Intune？
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -116,4 +113,3 @@ Intune 提供移动应用安全的一种方法是通过其**应用保护策略**
 * 了解一些 [Intune 的常见使用方式](common-scenarios.md)（[经典控制台](/intune-classic/understand-explore/common-ways-to-use-intune)）。
 * 通过 [Intune 的 30 天试用版](free-trial-sign-up.md)熟悉该产品（[经典控制台](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)）。
 * 深入了解 Intune 的[技术要求和功能](supported-devices-browsers.md)（[经典控制台](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)）。
-

@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何使最终用户了解 Microsoft Intune
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 通过 Microsoft Intune，可让员工将移动设备用于工作，同时保护公司数据。 确保部署成功需要许多步骤，包括通过[免费试用版](app-sdk.md)评估 Intune。
 
@@ -57,15 +56,15 @@ __这将会对最终用户造成哪些不便？__ 需要时间安装应用、注
 
 * **Android**
   * [通过 Intune 使用 Android 设备](/intune-user-help/using-your-android-device-with-intune)
-  * [Android 用户如何获取其应用](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Android 用户如何获取其应用](end-user-apps-android.md)
 
 * **iOS**
   * [通过 Intune 使用 iOS 设备](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [iOS 用户如何获取其应用](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [iOS 用户如何获取其应用](end-user-apps-ios.md)
 
 * **Windows**
   * [通过 Intune 使用 Windows 设备](/intune-user-help/using-your-windows-device-with-intune)
-  * [Windows 用户如何获取其应用](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Windows 用户如何获取其应用](end-user-apps-windows.md)
 
 * __及时告知。__ 清楚地告知用户要在其设备上管理的内容。 告知要收集的数据类型以及收集的原因。 告知计划如何使用所有资产数据。 [Microsoft 认为你有权获得尽可能多的有关我们如何在云中处理客户数据的信息](https://www.microsoft.com/trustcenter/about/transparency)，我们相信这一理念可以大大提高最终用户对 Intune 的满意度。
 
@@ -73,4 +72,3 @@ __这将会对最终用户造成哪些不便？__ 需要时间安装应用、注
 > 尽可能透明是部署成功的基础。
 
 可以尝试将信任和精心制定的符合性策略相结合，确保最终用户知道即使你可以查看某些类型的个人数据，但是你并不想查看这些数据，以及如果侵犯他们的隐私，你需要承担的责任。 通过与法律和 HR 部门一起制定相关声明，有助于说服特别固执的员工。
-

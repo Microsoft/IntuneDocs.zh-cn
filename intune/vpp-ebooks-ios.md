@@ -15,14 +15,12 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 电子书
 
 
@@ -83,7 +81,6 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 ## <a name="next-steps"></a>后续步骤
 
 有关帮助监视书籍分配的信息，请参阅[如何监视应用](apps-monitor.md)。
-
 
 
 

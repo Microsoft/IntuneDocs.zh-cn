@@ -15,15 +15,12 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f0e3a8363eb25ba3a3b2c16f15b8188acb694938
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -85,4 +82,3 @@ ms.lasthandoff: 06/08/2017
 ## <a name="step-3-assign-both-policies"></a>步骤 3：分配这两个策略
 
 使用[如何分配设备配置文件](device-profile-assign.md)中的说明，将两个配置文件分配给所需用户或设备。
-

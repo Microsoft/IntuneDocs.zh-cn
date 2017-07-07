@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
 ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -152,4 +150,3 @@ ms.lasthandoff: 06/15/2017
 单击设置符合性磁贴后，接着单击其中一个设备符合性策略设置，将可以看到每个设备（由设备符合性策略设置指定）的**符合性状态**、**用户的电子邮件别名**、**设备模型**和**位置**。
 
 ![设置符合性磁贴](./media/idc-11.png)
-

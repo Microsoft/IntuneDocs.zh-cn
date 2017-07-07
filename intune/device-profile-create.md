@@ -15,15 +15,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: 6df6813667241d3ad5f8768585f2e1a34f0fe6e3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建设备配置文件
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -60,4 +57,3 @@ ms.lasthandoff: 06/16/2017
 
 ### <a name="next-steps"></a>后续步骤
 有关如何分配设备配置文件的信息，请参阅[如何使用 Microsoft Intune 分配设备配置文件](device-profile-assign.md)。
-

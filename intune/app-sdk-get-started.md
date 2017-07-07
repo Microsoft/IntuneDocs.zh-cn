@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
 本指南将帮助通过 Microsoft Intune 快速对移动应用启用应用保护策略。 先去了解 [Intune App SDK 概述](app-sdk.md)中介绍的 Intune App SDK 优点可能会很有帮助。
@@ -139,4 +136,3 @@ Microsoft Intune 收集应用的使用情况统计数据。
 * 一个图像处理应用程序，可读取 **.eps** 文件，或一个 Adobe 应用程序，可以读取 **.ai** 文件。
 
 * 可在 Microsoft Intune GitHub 上找到 [Intune 应用标记资产和指导原则](https://github.com/msintuneappsdk/intune-app-partner-badge)。
-

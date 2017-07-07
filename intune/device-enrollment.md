@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b74082a73972c9d72ea399b962c01aafce5ace27
 ms.openlocfilehash: 927e2f21aad4ff39c9351bef68eb510e93410c37
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/28/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -116,4 +113,3 @@ IT 管理员可通过 USB 使用 Apple Configurator，手动准备每台公司�
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理
 
 当移动设备与 Intune 服务通信时，将自动续订 MDM 证书。 如果移动设备被擦除，或者它们在一段时间内无法与 Intune 服务通信，则 MDM 证书将不会续订。 MDM 证书过期 180 天后，设备将从 Azure 门户中删除。
-

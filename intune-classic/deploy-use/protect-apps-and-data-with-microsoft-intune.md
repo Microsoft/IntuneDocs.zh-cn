@@ -14,15 +14,12 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>使用 Microsoft Intune 保护应用和数据
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -55,4 +52,3 @@ Intune 通过多个技术层保护公司数据。 在标识层上，条件性访
 还可[启用自定义构建的业务线应用](/intune/apps-prepare-mobile-application-management)，与 MAM 策略配合使用。
 
 如果设备丢失或被盗，或者用户不再与公司合作，除了限制数据移动之外，还可[选择性擦除公司数据](wipe-managed-company-app-data-with-microsoft-intune.md)，仅保留个人数据。
-

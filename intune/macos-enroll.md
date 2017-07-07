@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 06/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
-ms.openlocfilehash: 59bb332519d3800e9f29e2ff160dece4b9a611d2
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/12/2017
-
-
+ms.openlocfilehash: e1e87705380167a01753f9fe82e6a42ca8fa5787
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-macos-devices-in-intune"></a>在 Intune 中注册 macOS 设备
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -45,9 +42,7 @@ ms.lasthandoff: 06/12/2017
 
 默认情况下，Intune 允许注册 macOS 设备。
 
-若要阻止 macOS 注册设备，请参阅[设置设备类型限制](enrollment-restrictions-set.md#set-device-type-restrictions)。
-
-若要设置用户可注册的最多设备数，请参阅 [Set device limit restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions)（设置设备限制约束）。
+若要阻止 macOS 注册设备，请参阅[设置设备类型限制](enrollment-restrictions-set.md)。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告诉用户如何注册其设备以访问公司资源
 
@@ -57,4 +52,3 @@ ms.lasthandoff: 06/12/2017
 
 - [有关 Microsoft Intune 最终用户体验的资源](end-user-educate.md)
 - [通过 Intune 使用 iOS 或 macOS 设备](https://docs.microsoft.com/intune-user-help/using-your-ios-or-mac-os-x-device-with-intune)
-

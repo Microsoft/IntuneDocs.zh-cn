@@ -14,15 +14,12 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c2f30e7827db280ba49fc49b6b7a00c9a8d9eade
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>为 Exchange Online 配置 Intune 服务间连接器
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,4 +64,3 @@ ms.lasthandoff: 06/08/2017
 成功配置 Exchange Connector 后，请转到 [Microsoft Intune 管理控制台](https://manage.microsoft.com)。 选择“管理”> “移动设备管理” > “Microsoft Exchange”。 然后，验证你提交的详细信息是否显示在 **Exchange 连接信息**之下。
 
 你也可以检查最后一次成功同步尝试的时间和日期。
-

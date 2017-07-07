@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 531b09bb-ddfd-498f-8ee3-6675d2466208
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2d9065281436d4c44e6af7d7a4401786a2a01965
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/31/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-app-based-conditional-access-ca-policies-for-sharepoint-online"></a>为 SharePoint Online 设置基于应用的条件性访问 (CA) 策略
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
@@ -44,7 +41,7 @@ ms.lasthandoff: 05/31/2017
 5. 在“允许的应用”边栏选项卡上，选择“允许支持 Intune 应用策略的应用”选项以便仅允许 Intune 应用保护策略支持的应用。
 
     > [!NOTE] 
-    > 当选中仅允许 Intune 应用保护策略支持的应用的选项时，将显示**仅**包含支持的应用列表。
+    > 当选中仅允许 Intune 应用保护策略支持的应用的选项时，将显示仅包含支持的应用列表。
 
     ![显示应用列表的允许应用边栏选项卡的屏幕快照](../media/mam-ca-spo-allowed-apps.png)
 
@@ -81,4 +78,3 @@ ms.lasthandoff: 05/31/2017
 [使用应用保护策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [为 Exchange Online 配置基于应用的 CA](mam-ca-for-exchange-online.md)
-

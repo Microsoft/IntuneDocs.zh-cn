@@ -13,15 +13,12 @@ ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1362c42cb44848d5ab3a88d08b19d8f6aee195b9
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="plan-your-user-and-device-groups"></a>规划用户和设备组
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -218,4 +215,3 @@ Intune 提供九个无法编辑或删除的内置组：<!--maybe a screen shot w
 
 ## <a name="next-steps"></a>后续步骤
 [创建组](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-

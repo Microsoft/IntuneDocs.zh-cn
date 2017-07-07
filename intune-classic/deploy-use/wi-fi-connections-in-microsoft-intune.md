@@ -14,15 +14,12 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9b99762dfc8e527fc845755365a09fab8a0d3a0c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>配置设备以连接到公司 Wi-Fi 网络
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -181,4 +178,3 @@ ms.lasthandoff: 06/08/2017
 
 ### <a name="see-also"></a>另请参阅
 在[预共享密钥 Wi-Fi 配置文件](pre-shared-key-wi-fi-profile.md)中了解如何创建具有预共享密钥的 Wi-Fi 配置文件。
-

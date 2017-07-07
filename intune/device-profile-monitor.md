@@ -15,15 +15,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b624d360ff42a0bb73fb8b9dfadb700253cf87af
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中监视设备配置文件
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -38,4 +35,3 @@ ms.lasthandoff: 06/08/2017
 2. 在“配置文件列表”边栏选项卡中，选择要管理的配置文件，然后执行以下任一操作：
     - 在<配置文件名称> “报表”边栏选项卡上，选择“概述”以查看有关配置文件及其分配的基本信息。
     - 在<配置文件名称> “报表”边栏选项卡上，选择“报表”以查看有关配置文件及其分配的更多详细信息。
-
