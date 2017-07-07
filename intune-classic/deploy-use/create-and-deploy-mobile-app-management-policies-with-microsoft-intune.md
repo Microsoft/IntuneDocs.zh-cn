@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 73675b3c42691f030cd292d1956e225f2175ff00
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 创建和部署应用保护策略
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -164,8 +161,8 @@ ms.lasthandoff: 06/08/2017
 > 如果你使用 Intune 与配置管理器来管理 iOS 和 Android 设备，则该策略将仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不会受影响。
 
 最终用户可以从 App Store 或 Google Play 下载应用。 有关详情，请参阅：
-* [Android 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Android 应用由应用保护策略托管时会出现的情况](/intune/end-user-mam-apps-android)
+* [iOS 应用由应用保护策略托管时会出现的情况](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>更改现有策略
 你可以编辑现有策略并将其应用于目标用户。 但是，当你更改现有策略时，已登录到应用的用户在 8 小时内将看不到更改。
@@ -219,6 +216,5 @@ ms.lasthandoff: 06/08/2017
 [监视合规性和用户状态](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>另请参阅
-* [Android 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS 应用由应用保护策略托管时会出现的情况](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Android 应用由应用保护策略托管时会出现的情况](/intune/end-user-mam-apps-android)
+* [iOS 应用由应用保护策略托管时会出现的情况](/intune/end-user-mam-apps-ios)

@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 66436fd8-1582-41f5-9c3b-abd914365f2d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 02018f2f96dbd94c337dd28e7ed111666841aa96
 ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/05/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-ios-device"></a>修复 iOS 设备的常见问题
 
 有时 iOS 设备可能出现一些可通过故障排除修复的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](http://portal.manage.microsoft.com)上的 IT 管理员联系信息与其联系。
@@ -40,4 +36,3 @@ ms.lasthandoff: 06/05/2017
 - [目前不支持我的 iOS 版本](your-ios-version-isnt-yet-supported.md)
 - [我需要在我的 iOS 设备上安装移动威胁防御应用](you-are-prompted-to-install-mtd-ios.md)
 - [我需要解除 iOS 设备上由移动威胁防御应用发现的威胁](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
-
