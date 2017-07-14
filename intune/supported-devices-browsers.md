@@ -20,7 +20,8 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="supported-devices-and-browsers"></a>支持的设备和浏览器
+# 支持的设备和浏览器
+<a id="supported-devices-and-browsers" class="xliff"></a>
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -33,7 +34,8 @@ ms.lasthandoff: 07/01/2017
 
 还应熟悉 [Intune 网络带宽使用限制](network-bandwidth-use.md)（[经典控制台](/intune-classic/get-started/network-bandwidth-use)）。
 
-## <a name="intune-supported-devices"></a>支持 Intune 的设备
+## 支持 Intune 的设备
+<a id="intune-supported-devices" class="xliff"></a>
 
 使用 Intune 移动设备管理，可管理以下设备：
 
@@ -41,7 +43,8 @@ ms.lasthandoff: 07/01/2017
 
 Intune 不能用于管理 Windows Server 操作系统。
 
-### <a name="windows-pc-software-client"></a>Windows 电脑软件客户端
+### Windows 电脑软件客户端
+<a id="windows-pc-software-client" class="xliff"></a>
 
 作为一种备用注册方法，可在 Windows 电脑上部署和安装 [Intune 软件客户端](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)。 使用 Intune 经典控制台时，此功能才可用。 可使用 Intune 软件客户端管理 Windows 7 和更高版本的电脑，Windows 10 家庭版除外。
 
@@ -49,7 +52,8 @@ Intune 不能用于管理 Windows Server 操作系统。
 
 You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
 
-## <a name="intune-supported-web-browsers"></a>受 Intune 支持的 Web 浏览器
+## 受 Intune 支持的 Web 浏览器
+<a id="intune-supported-web-browsers" class="xliff"></a>
 
 不同的管理任务要求使用以下管理网站之一。
 
@@ -63,9 +67,10 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 - Chrome（最新版本）
 - Firefox（最新版本）
 
-### <a name="intune-classic-portal"></a>Intune 经典门户
+### Intune 经典门户
+<a id="intune-classic-portal" class="xliff"></a>
 
-Intune 经典功能（例如 Intune 计算机软件客户端和与 Mobile Threat Defense 合作伙伴的集成）仅适用于 Intune 经典门户 (https://manage.microsoft.com)。 Intune 经典控制台需要 Silverlight 浏览器支持。
+Intune 经典功能（例如 Intune 计算机软件客户端和与 Mobile Threat Defense 合作伙伴的集成）仅适用于 Intune 经典门户 (https://manage.microsoft.com) 。 Intune 经典控制台需要 Silverlight 浏览器支持。
 
 以下 Silverlight 浏览器支持 Intune 经典控制台：
 - Internet Explorer 10 或更高版本
