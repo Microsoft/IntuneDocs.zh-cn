@@ -2,8 +2,8 @@
 title: "具有应用保护策略的 iOS 应用"
 description: "本主题描述 iOS 应用由应用保护策略托管时会出现的情况。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 05/05/2017
 ms.topic: article
@@ -14,21 +14,23 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a4b7ad6cfd8e07137bac9d430088274d9161c7ac
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e66042e5198b76ec484fe0218127acb653394cce
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略托管时会出现的情况
+# iOS 应用由应用保护策略托管时会出现的情况
+<a id="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies" class="xliff"></a>
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
  本主题介绍了使用已应用应用保护策略的应用时的用户体验。 仅在工作环境中使用应用时，应用保护策略才适用；例如，用户使用工作帐户访问应用，或访问公司 OneDrive 企业版位置存储的文件时。
 
-##  <a name="access-apps"></a>访问应用
+##  访问应用
+<a id="access-apps" class="xliff"></a>
 
-如果设备**未在 Intune 中注册**，则用户首次使用应用时需要重启该应用。 必须重启才能将应用保护策略应用到该应用。 
+如果设备**未在 Intune 中注册**，则用户首次使用应用时需要重启该应用。 必须重启才能将应用保护策略应用到该应用。
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
@@ -37,7 +39,8 @@ ms.lasthandoff: 07/01/2017
 
 对于**在 Intune 中注册并托管**的设备，用户看到一条消息，提示应用目前已托管。
 
-##  <a name="use-apps-with-multi-identity-support"></a>使用具有多身份支持的应用
+##  使用具有多身份支持的应用
+<a id="use-apps-with-multi-identity-support" class="xliff"></a>
 
 支持多身份的应用允许用户使用不同的帐户（工作和个人）访问相同的应用，但仅当在工作环境中使用这些应用时，才会应用应用保护策略。  
 
@@ -47,7 +50,8 @@ ms.lasthandoff: 07/01/2017
 
 应用保护策略仅用于工作环境。 因此，应用的行为可能有所不同，具体取决于是工作环境还是个人环境。
 
-##  <a name="manage-user-accounts-on-the-device"></a>在设备上管理用户帐户
+##  在设备上管理用户帐户
+<a id="manage-user-accounts-on-the-device" class="xliff"></a>
 
 Intune 仅支持将应用保护策略部署到每个设备的一个用户帐户。
 
@@ -63,9 +67,11 @@ Intune 仅支持将应用保护策略部署到每个设备的一个用户帐户�
 
 用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与 **X 公司**关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户。
 
-### <a name="add-a-second-account"></a>添加第二个帐户
+### 添加第二个帐户
+<a id="add-a-second-account" class="xliff"></a>
 
 如果使用 iOS 设备，则在同一设备上尝试添加第二个工作帐户时，可能会看到拦截消息。 随即显示帐户，可从中选择要删除的帐户。
 
-## <a name="next-steps"></a>后续步骤
+## 后续步骤
+<a id="next-steps" class="xliff"></a>
 [Android 应用由应用保护策略托管时会出现的情况](end-user-mam-apps-android.md)

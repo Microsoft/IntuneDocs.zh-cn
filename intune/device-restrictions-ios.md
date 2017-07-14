@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备限制设置
+# Microsoft Intune 中的 iOS 设备限制设置
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>常规
+## 常规
+<a id="general" class="xliff"></a>
 -   **相机** - 选择是否可以使用设备上的相机。   
 -   **诊断数据提交** - 允许或阻止设备将诊断数据提交到 Apple。
 -   **FaceTime** -允许在设备上使用 FaceTime 应用。
@@ -73,7 +75,8 @@ ms.lasthandoff: 07/01/2017
 - **Apple 新闻（仅限被监督的设备）** - 允许使用 Apple 新闻应用。
 - **配置描述文件更改** - 允许用户安装配置描述文件。
 
-## <a name="password"></a>Password
+## Password
+<a id="password" class="xliff"></a>
 -   **需要密码** - 需要最终用户输入密码才能访问设备。
 -   **简单密码** - 允许 0000 和 1234 等简单密码。
 -   **所需的密码类型** - 指定需要的密码类型，例如仅限数字或字母数字。
@@ -88,7 +91,8 @@ ms.lasthandoff: 07/01/2017
 
 <sup>1</sup>配置设置“屏幕锁定前的非活动状态最大分钟数”和“屏幕锁定后要求提供密码前的最大分钟数”时，它们会依次应用。 例如，如果你设置的两个设置的值均为“5”  分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
 
-## <a name="app-store-doc-viewing-gaming"></a>App Store、文档查看和游戏
+## App Store、文档查看和游戏
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **App Store（仅限被监督的设备）** - 阻止访问受监督设备上的 App Store。
@@ -106,7 +110,8 @@ ms.lasthandoff: 07/01/2017
 -   **分级区域** - 选择要为其配置允许的下载的分级区域，然后为**电影**和**电视节目**选择允许的分级。
 -   **应用** - 选择用户可下载允许年龄分级的应用，或者可以选择“允许所有应用”。
 
-## <a name="restricted-apps"></a>受限制的应用
+## 受限制的应用
+<a id="restricted-apps" class="xliff"></a>
 
 在受限制的应用列表中，可以配置以下列表之一：
 
@@ -115,7 +120,8 @@ ms.lasthandoff: 07/01/2017
 
 若要配置列表，请单击“添加”，然后指定所选应用的名称、应用发布者（可选）和该应用在应用商店中的 URL。
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>如何指定应用商店中应用的 URL
+### 如何指定应用商店中应用的 URL
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 若要在应用列表中指定应用 URL，请使用以下格式：
 
@@ -130,11 +136,13 @@ ms.lasthandoff: 07/01/2017
 
 
 
-### <a name="additional-options"></a>其他选项
+### 其他选项
+<a id="additional-options" class="xliff"></a>
 
 还可以单击“导入”，填充 csv 文件中的列表（格式为 <*应用 URL*>,<*应用名称*>,<*应用发布者*>），或单击“导出”，创建包含受限制应用列表内容且格式相同的 csv 文件。
 
-## <a name="show-or-hide-apps"></a>显示或隐藏应用
+## 显示或隐藏应用
+<a id="show-or-hide-apps" class="xliff"></a>
 
 在“显示或隐藏应用”列表中，可以配置以下列表之一（需要运行 iOS 9.3 或更高版本的受监控设备）。
 
@@ -143,7 +151,8 @@ ms.lasthandoff: 07/01/2017
 
 若要配置列表，请单击“添加”，然后指定所选应用的名称、应用发布者（可选）和该应用在应用商店中的 URL。
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>如何指定应用商店中应用的 URL
+### 如何指定应用商店中应用的 URL
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 若要在应用列表中指定应用 URL，请使用以下格式：
 
@@ -155,19 +164,22 @@ ms.lasthandoff: 07/01/2017
 > [!Note]
 > 你还可以使用 iTunes 软件查找应用程序，然后使用“复制链接”  命令获取应用的 URL。
 
-### <a name="additional-options"></a>其他选项
+### 其他选项
+<a id="additional-options" class="xliff"></a>
 
 还可以单击“导入”，填充 csv 文件中的列表（格式为 <*应用 URL*>,<*应用名称*>,<*应用发布者*>），或单击“导出”，创建包含隐藏或可见应用列表内容且格式相同的 csv 文件。
 
 
-## <a name="cellular"></a>移动电话
+## 移动电话
+<a id="cellular" class="xliff"></a>
 -   **数据漫游** - 当设备在手机网络中时允许数据漫游。
 -   **漫游时进行全局后台提取** - 允许当设备在手机网络漫游时提取数据，例如电子邮件。
 -   **语音拨号** - 允许在设备上使用语音拨号功能。
 -   **语音漫游** - 当设备在手机网络中时允许语音漫游。
 -   **更改应用的移动电话数据使用情况设置（仅限被监督的设备）** - 允许用户控制允许哪些应用使用手机数据。
 
-## <a name="cloud-and-storage"></a>云和存储
+## 云和存储
+<a id="cloud-and-storage" class="xliff"></a>
 -   **备份到 iCloud** - 允许用户将设备备份到 iCloud。
 -   **将文档同步到 iCloud（仅限被监督的设备）** - 允许将文档和键值同步到 iCloud 存储空间。
 -   **将照片流同步到 iCloud** - 允许用户在其设备上启用“我的照片流”，该操作可将照片同步到 iCloud 并在所有用户设备上可用。
@@ -177,11 +189,13 @@ ms.lasthandoff: 07/01/2017
 -   **共享照片流** - 将其设置为“否”以在设备上禁用“iCloud 照片共享”。
 -   **活动延续** - 允许用户在其他 iOS 或 macOS 设备上继续进行在某台 iOS 设备上开始的工作（切换）。
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>自治单应用模式（仅限监督的应用）
+## 自治单应用模式（仅限监督的应用）
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 使用这些设置配置 iOS 设备，以自主单一应用模式运行指定应用。 配置此模式并运行应用时，将锁定设备，因此该设备只能运行该应用。 举个例子，当你配置一个允许用户在设备上进行测试的应用时就是如此。 应用的操作完成或删除此策略时，设备将恢复正常状态。
 
-### <a name="settings"></a>设置
+### 设置
+<a id="settings" class="xliff"></a>
 
 - **应用名称** - 输入应用的名称，因为它将出现在此边栏选项卡上的应用列表中。
 - **应用捆绑 ID** - 输入应用的捆绑 ID。 如需帮助，请参阅本主题中的**适用于内置 iOS 应用的捆绑 ID 引用**。
@@ -191,54 +205,57 @@ ms.lasthandoff: 07/01/2017
 - **导入** - 导入以逗号分隔的值 (.csv) 文件，其中包含应用名称的列表及其相关联的捆绑 ID。
 - **导出** - 导出应用名称以及向逗号分隔的值 (.csv) 文件配置的相关联的捆绑 ID。
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>内置 iOS 应用的捆绑 ID 引用
+### 内置 iOS 应用的捆绑 ID 引用
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 此列表显示了一些常见的内置 iOS 应用的捆绑 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。
 
-|||
-|-|-|
-|应用程序名称|BundleID|
-|App Store|com.apple.AppStore|
-|计算器|com.apple.calculator|
-|日历|com.apple.mobilecal|
-|照相机|com.apple.camera|
-|时钟|com.apple.mobiletimer|
-|指南针|com.apple.compass|
-|联系人|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|查找好友|com.apple.mobileme.fmf1|
-|查找 iPhone|com.apple.mobileme.fmip1|
-|游戏中心|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|运行状况|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes 商店|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|映射|com.apple.Maps|
-|消息|com.apple.MobileSMS|
-|音乐|com.apple.Music|
-|新闻|com.apple.news|
-|注意|com.apple.mobilenotes|
-|数字|com.apple.Numbers|
-|页面|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|照片|com.apple.mobileslideshow|
-|播客|com.apple.podcasts|
-|提醒|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|设置|com.apple.Preferences|
-|股票|com.apple.stocks|
-|提示|com.apple.tips|
-|视频|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|电子钱包|com.apple.Passbook|
-|观看|com.apple.Bridge|
-|天气|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>Kiosk
+```
+
+
+## Kiosk
+<a id="kiosk" class="xliff"></a>
 -   **激活锁** - 在受监管的 iOS 设备上启用激活锁。
 -   **在展台模式下运行的应用** - 选择“托管应用”以选择已添加到 Intune 的应用，或选择“应用商店应用”以指定应用商店中应用的 URL。 不允许在设备上运行其他应用。 若要获取更多帮助，请参阅本主题后面的“如何指定应用商店的 URL”。
 -   **辅助触摸** - 启用或禁用“辅助触摸”辅助功能设置，它可帮助用户执行可能难以执行的屏幕手势。
@@ -262,7 +279,8 @@ ms.lasthandoff: 07/01/2017
 > 必须使用 Apple Configurator 工具或 Apple 设备注册程序将设备置于监督模式后才能为 iOS 设备配置展台模式。 有关 Apple Configurator 工具的详细信息，请参阅 Apple 文档。
 >如果在分配配置文件之后安装指定的 iOS 应用，则设备将在重启后才会进入展台模式。
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **Safari（仅限被监督的设备）** - 指定是否可以在设备上使用 Safari 浏览器。
 -   **自动填充** - 允许用户更改浏览器中的自动完成设置。
 -   **Cookie** - 允许浏览器使用 Cookie。
@@ -271,18 +289,22 @@ ms.lasthandoff: 07/01/2017
 -   **弹出窗口** - 启用或禁用浏览器弹出窗口阻止程序。
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>未标记的电子邮件域
+### 未标记的电子邮件域
+<a id="unmarked-email-domains" class="xliff"></a>
 
 在“电子邮件域 URL”字段中，向列表添加一个或多个 URL。 当最终用户从你所配置的域以外的域接收电子邮件时，该电子邮件将在 iOS 邮件应用中被标记为不受信任。
 
 
-### <a name="managed-web-domains"></a>托管的 Web 域
+### 托管的 Web 域
+<a id="managed-web-domains" class="xliff"></a>
 
 在“Web 域 URL”字段中，向列表添加一个或多个 URL。 从指定域下载的文档将被视为托管。 此设置仅适用于使用 Safari 浏览器下载的文档。
 
 
-### <a name="safari-password-auto-fill-domains"></a>Safari 密码自动填充域
+### Safari 密码自动填充域
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 在“域 URL”字段中，向列表添加一个或多个 URL。 用户仅能保存来自此列表中的 URL 的 Web 密码。 此设置仅适用于 Safari 浏览器以及监督模式下的 iOS 9.3 和更高版本的设备。 如未指定任何 URL，则可从所有网站保存密码。

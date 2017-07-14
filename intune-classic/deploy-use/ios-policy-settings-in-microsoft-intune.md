@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8036dbbb6486d06fa46f7f96199055b9ca7a398c
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 策略设置
+# Microsoft Intune 中的 iOS 策略设置
+<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置。 此外，还可使用 Apple Configurator 工具创建 Intune 未提供的自定义设置。
 
-## <a name="general-configuration-policy-settings"></a>常规配置策略设置
+## 常规配置策略设置
+<a id="general-configuration-policy-settings" class="xliff"></a>
 
 使用 Microsoft Intune 的“iOS 常规配置策略”为以下对象配置设置：
 
@@ -41,7 +43,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 
 如果你寻找的设置没有在此主题中出现，你可能可以使用 iOS 自定义策略创建它，通过该策略你可以使用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)导入你创建的设置。 有关详细信息，请参阅本主题后面的“自定义策略设置”。
 
-### <a name="security-settings"></a>安全设置
+### 安全设置
+<a id="security-settings" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -60,7 +63,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许指纹解锁**|允许使用指纹解锁设备。|
 <sup>1</sup>对于 iOS 设备，配置“屏幕关闭前处于非活动状态的分钟数”和“需要提供密码之前处于非活动状态的分钟数”设置时，它们会按顺序应用。 例如，如果你设置的两个设置的值均为“5”分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
 
-### <a name="system-settings"></a>系统设置
+### 系统设置
+<a id="system-settings" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -73,7 +77,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许提交诊断数据**|允许或阻止设备将诊断数据提交到 Apple。|
 |**允许在锁定时使用 passbook**|允许用户在设备锁定时访问 Passbook 应用。|
 
-### <a name="cloud-settings-for-documents-and-data"></a>文档和数据的云设置
+### 文档和数据的云设置
+<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -87,7 +92,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许 iCloud 照片共享**|将其设置为“否”以在设备上禁用“iCloud 照片共享”。|
 |**允许 iCloud 照片库**|如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。   如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。|
 
-### <a name="application-settings-for-the-browser"></a>浏览器的应用程序设置
+### 浏览器的应用程序设置
+<a id="application-settings-for-the-browser" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -99,7 +105,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许使用 Java 脚本**|允许在浏览器中运行 Java 脚本。|
 |**允许使用欺诈警告**|允许在浏览器中使用欺诈警告。|
 
-### <a name="application-settings-for-apps"></a>应用的应用程序设置
+### 应用的应用程序设置
+<a id="application-settings-for-apps" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -113,7 +120,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许用户信任新的企业应用的作者**|允许用户选择信任不是从应用商店下载的应用。|
 
 
-### <a name="application-settings-for-games"></a>游戏的应用程序设置
+### 游戏的应用程序设置
+<a id="application-settings-for-games" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -121,7 +129,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许添加游戏中心好友**|允许用户在游戏中心添加好友。|
 |**允许多玩家游戏**|允许用户在设备上玩多玩家游戏。|
 
-### <a name="application-settings-for-media-content"></a>媒体内容的应用程序设置
+### 媒体内容的应用程序设置
+<a id="application-settings-for-media-content" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -131,7 +140,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许用户从标记为“Erotica”的 iBook 商店下载内容**|允许用户下载类别为“成人作品”的书籍。|
 
 
-### <a name="device-capabilities-settings-for-hardware"></a>硬件的设备性能设置
+### 硬件的设备性能设置
+<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -140,7 +150,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**强制已配对的 Apple Watch 使用手腕检测**|启用后，Apple Watch 在未穿戴时不会显示通知。|
 |**要求提供配对密码来传出 AirPlay 请求**|当用户使用 AirPlay 将内容流式传输到其他 Apple 设备时，需要提供配对密码。|
 
-### <a name="device-capabilities-settings-for-cellular"></a>手机网络的设备性能设置
+### 手机网络的设备性能设置
+<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -149,7 +160,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许数据漫游**|当设备在移动电话网络中时允许数据漫游。|
 |**允许漫游时进行全局后台获取**|允许当设备在移动电话网络漫游时提取数据，例如电子邮件。|
 
-### <a name="device-capabilities-settings-for-features"></a>功能的设备性能设置
+### 功能的设备性能设置
+<a id="device-capabilities-settings-for-features" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
@@ -160,7 +172,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**不允许托管应用使用 Airdrop**|停止托管应用通过 Airdrop 发送数据的功能 。|
 
 
-### <a name="settings-for-compliant-and-noncompliant-apps"></a>相容和不相容应用的设置
+### 相容和不相容应用的设置
+<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
 在“相容和不相容应用”列表中，使用以下信息指定相容或不相容应用列表。
 
 > [!NOTE]
@@ -177,7 +190,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 
 必须将包含合规和不合规应用设置的策略部署到用户组。
 
-### <a name="kiosk-mode-settings"></a>展台模式设置
+### 展台模式设置
+<a id="kiosk-mode-settings" class="xliff"></a>
 
 |设置名|详细信息|
 |----------------|--------------------|
@@ -204,17 +218,20 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 > -   必须使用 [Apple 配置器工具](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)或 [Apple 设备注册程序](ios-device-enrollment-program-in-microsoft-intune.md)将设备置于监管模式后才能为 iOS 设备配置展台模式。 有关 Apple Configurator 工具的详细信息，请参阅 Apple 文档。
 > -   如果在部署配置策略之后安装指定的 iOS 应用，则设备将在重启后才会进入展台模式。
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>相容和不相容应用的参考信息
+### 相容和不相容应用的参考信息
+<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
 
 使用“不相容应用报告”查看允许和阻止的应用的相容性。
 
-##### <a name="to-run-the-noncompliant-apps-report"></a>运行不相容应用报告
+##### 运行不相容应用报告
+<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“报告”&gt;“不合规应用报告”。
 
 2.  选择你想要检查的设备组，选择要检查相容应用还是不相容应用，或是同时检查两者，然后选择“查看报告”。
 
-#### <a name="how-to-specify-urls-to-app-stores"></a>如何指定应用商店的 URL
+#### 如何指定应用商店的 URL
+<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
 要在相容和不相容应用列表中或在“选择一个在设备处于展台模式时能够运行的托管应用”选项(仅限 iOS)中指定一个应用 URL，请使用以下格式:
 
 1. 使用搜索引擎，查找你想在 iTunes 应用商店中使用的应用并打开该应用的页面。
@@ -226,17 +243,20 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 > [!NOTE]
 > 你还可以使用 iTunes 软件查找应用程序，然后使用“复制链接”  命令获取应用的 URL。
 
-### <a name="enrollment-settings"></a>注册设置
+### 注册设置
+<a id="enrollment-settings" class="xliff"></a>
 所有设置均适用于 iOS 8.0 及更高版本。
 
 |设置名|详细信息|
 |----------------|--------------------|
 |**设备处于监督模式时允许激活锁定**|在已监督的 iOS 设备上启用激活锁定。|
 
-### <a name="supervised-mode-settings"></a>监督模式设置
+### 监督模式设置
+<a id="supervised-mode-settings" class="xliff"></a>
 可以在运行 iOS 8.0 及更高版本的处于监督模式的设备上配置以下设置。
 
-### <a name="supervised-mode-settings-for-device-restrictions"></a>设备限制的监督模式设置
+### 设备限制的监督模式设置
+<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
 
 |设置名|详细信息|
 |----------------|--------------------|
@@ -252,7 +272,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许修改通知设置**|允许用户更改设备通知设置。|
 |**允许修改壁纸**|允许用户更改设备壁纸。|
 
-### <a name="supervised-mode-settings-for-feature-restrictions"></a>功能限制的监督模式设置
+### 功能限制的监督模式设置
+<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
 
 |设置名|详细信息|
 |----------------|--------------------|
@@ -266,7 +287,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许键盘拼写检查**|允许设备拼写检查程序。|
 |**允许键盘快捷方式**|允许使用键盘快捷方式。|
 
-### <a name="supervised-mode-settings-for-app-restrictions"></a>应用限制的监督模式设置
+### 应用限制的监督模式设置
+<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
 
 |设置名|详细信息|
 |----------------|--------------------|
@@ -283,7 +305,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**允许游戏中心**|允许使用 Game Center 应用。|
 
 
-### <a name="show-or-hide-apps"></a>显示或隐藏应用
+### 显示或隐藏应用
+<a id="show-or-hide-apps" class="xliff"></a>
 
 使用“隐藏和显示应用列表”在运行 iOS 9.3 或更高版本的已监督设备上控制以下方面：
 
@@ -291,7 +314,8 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 - 指定用户可以查看和启动的应用列表。 无法查看或启动其他应用。
 
 
-#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>如何创建隐藏或显示的应用列表
+#### 如何创建隐藏或显示的应用列表
+<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
 
 指定以下设置：
 
@@ -305,49 +329,50 @@ Intune 提供了一系列可在 iOS 设备上进行配置的内置常规设置�
 |**编辑**|允许你编辑选定应用的名称、发布者和 URL。|
 |**删除**|从列表中删除选定的应用。|
 
-#### <a name="app-information-for-built-in-ios-apps"></a>内置 iOS 应用的应用信息
+#### 内置 iOS 应用的应用信息
+<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
 
 使用此列表中的信息识别想要显示或隐藏的内置 iOS 应用的名称、发布者和捆绑 ID。 如果想要显示或隐藏列表中的所有应用，可以将下面的数据复制到扩展名为 **.csv** 的文本文件中，然后使用“导入应用”选项同时导入所有应用。
 
 ```
-App Store,Apple,com.apple.AppStore
-Calculator,Apple,com.apple.calculator
-Calendar,Apple,com.apple.mobilecal
-Camera,Apple,com.apple.camera
-Clock,Apple,com.apple.mobiletimer
-Compass,Apple,com.apple.compass
-Contacts,Apple,com.apple.MobileAddressBook
-FaceTime,Apple,com.apple.facetime
-Find Friends,Apple,com.apple.mobileme.fmf1
-Find iPhone,Apple,com.apple.mobileme.fmip1
-Game Center,Apple,com.apple.gamecenter
-GarageBand,Apple,com.apple.mobilegarageband
-Health,Apple,com.apple.Health
-iBooks,Apple,com.apple.iBooks
-iTunes Store,Apple,com.apple.MobileStore
-iTunes U,Apple,com.apple.itunesu
-Keynote,Apple,com.apple.Keynote
-Mail,Apple,com.apple.mobilemail
-Maps,Apple,com.apple.Maps
-Messages,Apple,com.apple.MobileSMS
-Music,Apple,com.apple.Music
-News,Apple,com.apple.news
-Notes,Apple,com.apple.mobilenotes
-Numbers,Apple,com.apple.Numbers
-Pages,Apple,com.apple.Pages
-Photo Booth,Apple,com.apple.Photo-Booth
-Photos,Apple,com.apple.mobileslideshow
-Podcasts,Apple,com.apple.podcasts
-Reminders,Apple,com.apple.reminders
-Safari,Apple,com.apple.mobilesafari
-Settings,Apple,com.apple.Preferences
-Stocks,Apple,com.apple.stocks
-Tips,Apple,com.apple.tips
-Videos,Apple,com.apple.videos
-VoiceMemos,Apple,com.apple.VoiceMemos
-Wallet,Apple,com.apple.Passbook
-Watch,Apple,com.apple.Bridge
-Weather,Apple,com.apple.weather
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
 ```
@@ -355,26 +380,30 @@ Weather,Apple,com.apple.weather
 
 
 
-## <a name="custom-policy-settings"></a>自定义策略设置
+## 自定义策略设置
+<a id="custom-policy-settings" class="xliff"></a>
 
 使用 Microsoft Intune 的“iOS 自定义策略”将使用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)创建的设置部署到 iOS 设备。 使用此工具可以创建控制这些设备的操作的许多设置，并将其导出到配置的配置文件中。 然后可将此配置文件导入到 Intune iOS 自定义策略并将这些设置部署到组织中的用户和设备。
 
 此功能允许你部署不能与 Intune 常规配置策略一起配置的 iOS 设置。
 
-### <a name="prerequisites"></a>先决条件
+### 先决条件
+<a id="prerequisites" class="xliff"></a>
 在开始之前，必须已安装了 Apple Configurator并创建了包含需部署到用户或设备的设置的配置文件。 可从 [Mac 应用商店](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)下载和了解 Apple Configurator。
 
 > [!NOTE]
 > Intune 不会报告 iOS 自定义策略中各个设置的合规性。 但会报告策略的总体合规性。
 
-### <a name="general-settings"></a>常规设置
+### 常规设置
+<a id="general-settings" class="xliff"></a>
 
 |设置名|详细信息|
     |----------------|--------------------|
     |**Name**|输入 iOS 自定义策略的唯一名称，以帮助你在 Intune 控制台中识别它。|
     |**描述**|提供对 iOS 自定义策略的概述以及可帮助你查找它的其他相关信息。|
 
-### <a name="custom-settings"></a>自定义设置
+### 自定义设置
+<a id="custom-settings" class="xliff"></a>
 
 |设置名|详细信息|
     |----------------|--------------------|
@@ -382,5 +411,6 @@ Weather,Apple,com.apple.weather
 |**配置的配置文件**|选择“导入”，然后浏览到使用 Apple Configurator 创建的配置文件。 **注意：**确保从 Apple Configurator 工具导出的设置在要部署 iOS 自定义策略的设备上与 iOS 版本兼容。 有关如何解析不兼容的设置的信息，可搜索 [Apple 开发人员](https://developer.apple.com/)网站上的“配置文件参考”和“移动设备管理协议参考”。|
     |**配置的配置文件详细信息**|显示导入的配置文件的 XML 代码。|
 
-### <a name="see-also"></a>另请参阅
+### 另请参阅
+<a id="see-also" class="xliff"></a>
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

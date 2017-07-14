@@ -14,13 +14,14 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c094d59d7261b602c51196233286d10c27732236
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-is-intune-for-education"></a>什么是 Intune for Education？
+# 什么是 Intune for Education？
+<a id="what-is-intune-for-education" class="xliff"></a>
 
 Intune for Education 旨在使学校数据受到保护的同时让教师和学生能够高效地工作和学习。 Intune 是基于云的企业移动性管理 (EMM) 服务，该服务是 Intune for Education 的基础。
 
@@ -30,7 +31,7 @@ Intune for Education 旨在使学校数据受到保护的同时让教师和学�
 
 Intune for Education 可以单独使用，也可以与 [Intune 提供的完整的设备管理体验](introduction-intune.md)完美结合。 它还可以与 [Microsoft Education](https://microsoft.com/education) 中提供的其他工具一起使用，方便你轻松地将 Intune for Education 与 Microsoft 其他有用的教学工具结合使用。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ukrnCwcLvV8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 通过 Intune 和 Intune for Education 可以实现以下功能：
 * 管理员工用于访问数据的移动设备。
@@ -38,7 +39,8 @@ Intune for Education 可以单独使用，也可以与 [Intune 提供的完整�
 * 通过帮助控制用户访问和共享组织信息的方式来保护组织信息。
 * 确保设备和应用符合安全要求。
 
-### <a name="next-steps"></a>后续步骤
+### 后续步骤
+<a id="next-steps" class="xliff"></a>
 * 通过 [Intune 的 30 天试用版](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)熟悉该产品。
 * 了解[开始使用 Intune for Education](/intune-education/what-is-express-configuration) 的最快速方式。
 * 深入了解 Intune 的[技术要求和功能](/intune/supported-devices-browsers)。

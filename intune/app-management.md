@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
+# 什么是 Microsoft Intune 应用管理？
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +37,8 @@ ms.lasthandoff: 07/01/2017
 
 Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
-## <a name="app-management-capabilities-by-platform"></a>按平台分类的应用管理功能
+## 按平台分类的应用管理功能
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
@@ -56,11 +58,12 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 |来自应用商店的应用|是|是|是|是|
 |更新应用|是|是|是|是|
 
-<sup>1</sup> 考虑使用 [Windows 信息保护]windows-information-protection-configure.md) 保护运行 Windows 10 的设备上的应用。
+<sup>1</sup>请考虑使用 [Windows 信息保护](windows-information-protection-configure.md)来保护运行 Windows 10 的设备上的应用。
 
 <sup>2</sup>仅适用于由 Intune 管理的设备。
 
-## <a name="how-to-get-started"></a>如何开始？
+## 如何开始？
+<a id="how-to-get-started" class="xliff"></a>
 
 可在“移动应用”工作负荷中找到大部分与应用相关的内容，并可通过以下步骤进行访问：
 
@@ -70,7 +73,8 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
     ![移动应用工作负荷](./media/apps-workload.png)
 
-### <a name="manage"></a>管理计算机上的
+### 管理计算机上的
+<a id="manage" class="xliff"></a>
 - **应用** - 可在此节点处添加、分配和监视大多数应用。
     - [添加应用](apps-add.md)
     - [分配应用](apps-deploy.md)
@@ -85,7 +89,8 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 - **iOS 预配配置文件** - iOS 应用包含一个预配配置文件和一个证书签名的代码。 证书过期后，应用无法再运行。 Intune 提供了一些工具，用于将新的预配配置文件策略主动分配到安装了即将到期应用的设备。
     - [iOS 应用预配配置文件](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>监视
+### 监视
+<a id="monitor" class="xliff"></a>
 - **许可应用** - 查看、分配和监视从应用商店批量购买的应用。
     - [适用于企业批量采购应用的 Windows 应用商店](windows-store-for-business.md)
 - **发现的应用** - 显示由 Intune 分配，并安装在设备上的所有应用。
@@ -94,7 +99,8 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
 有关详细信息，请参阅[监视应用](apps-monitor.md)
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **适用于企业的 Windows 应用商店** - 设置与适用于企业的 Windows 应用商店的集成。 然后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。
