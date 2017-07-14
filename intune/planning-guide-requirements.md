@@ -14,13 +14,14 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 032427a9965f368d7be17339e3cbe5b426800347
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="determine-use-case-scenario-requirements"></a>确定用例场景要求
+# 确定用例场景要求
+<a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 在此部分，你将确定对每个用例场景内每个组织组的要求。 此过程有助于为其他 Intune 部署规划领域做准备，例如体系结构和设计、载入和推出。 还有助于确定与 Intune 部署项目相关的潜在缺陷和难题。
 
@@ -41,7 +42,8 @@ ms.lasthandoff: 07/01/2017
 你可以[下载上表的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来输入组织的用例和子用例要求。
 
 
-## <a name="examples-of-requirements"></a>要求示例
+## 要求示例
+<a id="examples-of-requirements" class="xliff"></a>
 
 下面是可在“要求”列使用的几个其他示例：
 
@@ -62,6 +64,7 @@ ms.lasthandoff: 07/01/2017
     - 具有应用保护策略的 Office 365
     - 具有应用保护策略的业务线 (LOB)
 
-## <a name="next-section"></a>下一节
+## 后续步骤
+<a id="next-steps" class="xliff"></a>
 
 下一节提供[如何开发 Intune 推出计划](planning-guide-rollout-plan.md)的相关指南。
