@@ -2,6 +2,7 @@
 ## [使用托管设备来完成工作](use-managed-devices-to-get-work-done.md)
 ## [我的公司可以使用 Intune 看到哪些信息？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 ## [当我重置设备时，会发生什么情况？](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [如何登录到公司门户](sign-in-to-the-company-portal.md)
 ## [通过 Intune 使用 Android 设备](using-your-android-device-with-intune.md)
 ### [注册 Android 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [修复 Android 的常见问题](troubleshoot-your-device-android.md)
