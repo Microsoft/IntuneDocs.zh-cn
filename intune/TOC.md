@@ -38,9 +38,9 @@
 ### [实施](planning-guide-onboarding.md)
 ### [测试和验证](planning-guide-test-validation.md)
 ### [其他资源](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## 方案实现指南
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -62,16 +62,15 @@
 ## 设置 Intune[](setup-steps.md)
 ### [必备条件](supported-devices-browsers.md)
 #### [网络带宽使用](network-bandwidth-use.md)
-### [登录 Intune](account-sign-up.md)
+### [登录到 Intune](account-sign-up.md)
 ### [配置域](custom-domain-name-configure.md)
-### [添加用户](users-permissions-add.md)
+### [添加用户](users-add.md)
 ### [添加组](groups-add.md)
-### [分配许可证](licenses-assign.md)       
-### [自定义公司门户](company-portal-customize.md)     
+### [分配许可证](licenses-assign.md)
 ### [设置 MDM 机构](mdm-authority-set.md)
 
 ## [注册设备](device-enrollment.md)
-### 安装选项
+### [注册选项](enrollment-options.md)
 #### [条款和条件](terms-and-conditions-create.md)
 #### [限制](enrollment-restrictions-set.md)
 #### [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -105,7 +104,6 @@
 ### [Windows 10 PIN 重置](device-windows-pin-reset.md)
 ### [检查设备清单](device-inventory.md)
 
-## [管理用户](user-management.md)
 <!--### Add and delete users -->
 
 ## [管理应用](app-management.md)
@@ -120,6 +118,7 @@
 #### [Windows 应用商店应用](store-apps-windows.md)
 #### [Windows LOB 应用](lob-apps-windows.md)
 #### [Android for Work 应用](apps-add-android-for-work.md)
+#### [适用于 Windows 10 的 Office 365 应用](apps-add-office365.md)
 ### [分配应用](apps-deploy.md)
 ### [监视应用](apps-monitor.md)
 ### [iOS 应用配置的配置文件](app-configuration-policies-use-ios.md)
@@ -219,32 +218,24 @@
 
 #### [设置 Lookout](lookout-mobile-threat-defense-connector.md)
 ##### [Lookout 和 Intune 集成](lookout-mtd-connector-integration.md)
+
 #### [设置 Skycure](skycure-mobile-threat-defense-connector.md)
-##### [配置 Azure AD SSO](skycure-azure-sso-configure.md)
-##### [下载 iOS 应用配置策略](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure 和 Intune 集成](skycure-mtd-connector-integration.md)
+
+#### [设置检查点](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [检查点和 Intune 集成](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [添加 MTD 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [在 Intune 中启用 MTD](mtd-connector-enable.md)
 #### [创建 MTD 设备符合性策略](mtd-device-compliance-policy-create.md)
 
 ### [网络访问控制](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection        
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [设置 Windows Hello](windows-hello.md)        
 <!-- ### Protect devices with remote actions -->
 
 ## [管理角色](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [使用软件代理管理 PC](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [比较 PC 管理](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
