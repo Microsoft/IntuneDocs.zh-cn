@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 61434f104ccba9e1d37a4845e38b75ac858bce63
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建和分配 Exchange 本地和旧版 Exchange Online Dedicated 的条件访问策略
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -85,7 +82,7 @@ Windows 8.1 和更高版本上的本机**邮件**应用程序（向 Intune 注�
 
 4. 选择“Intune”，将看到“Intune 仪表板”。
 
-5.  选择“条件访问”，然后选择
+5. 选择“本地访问”，然后选择
 
 6. “本地”边栏选项卡中显示了条件性访问策略的状态和受其影响的设备。
 

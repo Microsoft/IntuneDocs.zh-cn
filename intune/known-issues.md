@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 06/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
-ms.openlocfilehash: 754f20c7f10f6421e7a9a0aa5429b3c3c6b2fd72
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/15/2017
-
-
+ms.openlocfilehash: 4fda224613d8b69be82ef7f9681ba9165be33e52
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
 
@@ -36,11 +33,13 @@ ms.lasthandoff: 06/15/2017
 
 如果要为 Intune 请求新功能，可以考虑在我们的 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 网站上提交报告。
 
-## <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>在迁移过程中 Intune 所创建的组可能会影响其他 Microsoft 产品的功能
+## <a name="migration"></a>迁移
+
+### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>在迁移过程中 Intune 所创建的组可能会影响其他 Microsoft 产品的功能
 
 从经典 Intune 迁移到 Azure 时，可能会看到一个名为 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** 的新组。 此组包含 Azure Active Directory 中的所有用户，而不仅仅是 Intune 许可的用户。 如果你希望某些现有用户或新用户不属于任何组的成员，此用法会导致其他 Microsoft 产品出现问题。
 
-## <a name="secondary-migration-required-for-select-capabilities"></a>优选功能所需的辅助迁移
+### <a name="secondary-migration-required-for-select-capabilities"></a>优选功能所需的辅助迁移
 
 必须先迁移在 2017 年 1 月之前创建的 Intune 帐户，然后才可以在 Azure 门户中使用这些功能：
 
@@ -54,44 +53,78 @@ ms.lasthandoff: 06/15/2017
 - 在经典控制台中禁用它们
 - 在 Azure 控制台中启用它们。  
 
-如果你目前在 Azure 门户中管理这些 Intune 功能，请注意以下更改：
+如果目前在 Azure 门户中管理这些 Intune 功能，请注意以下几点：
 
-### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>删除 Apple DEP 中默认的企业设备注册配置文件
+#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>删除 Apple DEP 中默认的企业设备注册配置文件
 Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备注册配置文件。 经典 Silverlight Intune 控制台中提供的此功能将停用，以防止无意中分配配置文件。 当在 Azure 门户中同步 DEP 序列号时，不会分配企业设备注册配置文件。 在使用该设备之前，必须分配注册配置文件。
 
-## <a name="altering-groups-created-by-intune-during-migration-delays-migration"></a>在迁移期间更改 Intune 创建的组将会延迟迁移
+#### <a name="apple-dep-token-restored-with-migration"></a>通过迁移还原的 Apple DEP 令牌
 
-为准备迁移，将你的组从 Intune 复制到 Azure AD。 在经典 Intune 门户中进行的任何进一步更改都将在 Azure AD 组中更新。 但是，在 Azure AD 中进行的任何更改都不会同步回经典 Intune 控制台。 这种情况可能导致到 Azure 门户的迁移失败，并导致迁移延迟。
+如果在经典 Intune (Silverlight) 门户中删除了 Apple 设备注册计划令牌，且没有向 Azure 门户上传新令牌，则迁移时将在 Azure 门户中还原原始令牌。 若要删除此令牌并禁止 DEP 注册，请从 Azure 门户中删除令牌。
 
-## <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Intune 的符合性策略不会在新控制台中显示
+### <a name="status-blades-for-migrated-policies-do-not-work"></a>迁移策略的状态边栏选项卡不起作用
+
+你无法查看从 Azure 门户中的经典门户中迁移的策略的状态信息。 但是，你可以继续在经典门户中查看这些策略的报表。
+若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
+
+## <a name="apps"></a>应用
+
+### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>仅适用于默认 Intune 租户语言的 iOS 批量采购应用
+会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户账户国家/区域代码相同的的应用。 例如，如果要购买仅可通过美国商店获得的应用，但 Intune 账户所在地区为德国，则 Intune 不会显示该应用。
+
+### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>会上传同一 iOS 批量采购计划的多个副本
+不要为相同的 VPP 令牌多次单击“上传”按钮。 这将导致上传重复的 VPP 令牌，并导致应用针对同一 VPP 令牌发生多次同步。 
+
+<!-- ## Groups -->
+
+## <a name="device-configuration"></a>设备配置
+
+### <a name="you-cannot-save-a-windows-information-protection-policy-for-some-devices"></a>无法为某些设备保存 Windows 信息保护策略
+
+对于未向 Intune 注册的设备，你只能在 Windows 信息保护策略设置中的“企业标识”字段中指定主域。
+如果你添加了其他域（使用“高级设置” > “网络外围” > “添加受保护的域”），则你无法保存策略。 你看到的错误消息将会更改为更准确的消息。
+
+### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN 客户端支持
+ 
+最新版本的 Cisco AnyConnect VPN 客户端 (4.0.07072) 目前与 Intune 不兼容。 将来的 Intune 更新将提供与此 VPN 客户端版本的兼容性。 在此之前，建议不更新 Cisco AnyConnect VPN 客户端，并继续使用现有版本。
+
+### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>对 macOS Sierra 设备使用数字密码类型
+
+目前，如果你在 macOS Sierra 设备的设备限制配置文件中选择“数值”作为“所需的密码类型”，则将强制使用“字母数字”。 如果你想对这些设备使用数字密码，则不要配置此设置。
+macOS 的未来版本中可能会解决此问题。
+
+有关这些设置的详细信息，请参阅 [Microsoft Intune 中的 macOS 设备限制设置](device-restrictions-macos.md)。
+
+## <a name="compliance"></a>合规性
+
+### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Intune 的符合性策略不会在新控制台中显示
 
 在经典门户中创建的任何符合性策略都将被迁移，但不会显示在 Azure 门户中，因为 Azure 门户中进行了设计更改。 仍将强制执行在经典 Intune 门户中创建的符合性策略，但是你必须在经典 Intune 门户中进行查看和编辑。
 此外，在 Intune 门户中创建的新符合性策略不会在经典门户中显示。
 
 有关详细信息，请参阅[什么是设备符合性](device-compliance.md)。
 
+<!-- ## Enrollment -->
+
+
+<!-- ## Data protection -->
+
+
 ## <a name="administration-and-accounts"></a>管理和帐户
 
 全局管理员（也被称为租户管理员）可以继续在没有单独的 Intune 或企业移动性套件 (EMS) 许可证的情况下进行日常的管理任务。 但是，要使用服务（例如注册他们自己的设备、企业设备，或使用 Intune 公司门户），他们需要 Intune 或 EMS 许可证。
 
-## <a name="apple-enrollment-profile-migration"></a>Apple 注册配置文件迁移
+<!-- ## Additional items -->
 
-在接下来的几个月里，Intune 将通过新的 Azure 门户实现管理你的 Apple 设备注册计划和 Apple 配置器注册。 如果你删除了 Apple 设备注册计划令牌，而且没有上传新的令牌，则迁移时将在 Azure 门户中还原原始令牌。 若要删除此令牌并禁止 DEP 注册，请在 Azure 门户中删除令牌。 
 
-## <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>对 macOS Sierra 设备使用数字密码类型
 
-目前，如果你在 macOS Sierra 设备的设备限制配置文件中选择“数值”作为“所需的密码类型”，则将强制使用“字母数字”。 如果你想对这些设备使用数字密码，则不要配置此设置。
-macOS 的未来版本中可能会解决此问题。
 
-有关这些设置的详细信息，请参阅[ Microsoft Intune 中的 macOS 设备限制设置](device-restrictions-macos.md)
 
-## <a name="you-cannot-save-a-windows-information-protection-policy-for-some-devices"></a>无法为某些设备保存 Windows 信息保护策略
 
-对于未向 Intune 注册的设备，你只能在 Windows 信息保护策略设置中的“企业标识”字段中指定主域。
-如果你添加了其他域（使用“高级设置” > “网络外围” > “添加受保护的域”），则你无法保存策略。 你看到的错误消息将会更改为更准确的消息。
 
-## <a name="status-blades-for-migrated-policies-do-not-work"></a>迁移策略的状态边栏选项卡不起作用
 
-你无法查看从 Azure 门户中的经典门户中迁移的策略的状态信息。 但是，你可以继续在经典门户中查看这些策略的报表。
-若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
 
+
+
+
+ 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,17 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 77b4e0929af72d6c4522f1b8674ba7a185b52a84
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune 主屏幕布局设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用这些设置配置停靠上的应用、文件夹和 Web 剪辑的布局，以及分配了策略的所有 iOS 设备的主屏幕。
+使用这些设置配置停靠上的应用、文件夹和 Web 剪辑的布局和 iOS 设备的主屏幕。
 
 分配了配置文件的 iOS 设备必须处于监督模式下并运行 iOS 9.3 或更高版本。
 
@@ -37,11 +34,11 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="add-items-to-the-dock"></a>向停靠添加项目
 
-在“停靠”边栏选项卡上，可以向 iOS 屏幕底部的停靠添加最多 6 个项目或文件夹。 但是，许多设置支持的项目少于 6 个，例如，iPhone 设备最多支持 4 个项目。 在这种情况下，在设备上将仅显示你配置的前四个项目。
+在“停靠”边栏选项卡上，可以向 iOS 屏幕的停靠添加最多 6 个项目或文件夹。 但是，许多设备支持的项目更少，例如，iPhone 设备最多支持 4 个项目。 在这种情况下，在设备上仅显示配置的前四个项目。
 
 1. 选择“添加”向停靠添加项目。
 2. 在“添加行”边栏选项卡上，选择想要添加“应用”还是“文件夹”。
-3. 使用本主题中的“如何向列表添加应用”和“如何向列表添加文件夹”部分中的信息，配置想要出现在停靠中的应用和文件夹。
+3. 使用本主题中的信息，配置要显示在停靠面板上的应用和文件夹。
 4. 继续添加项目。 完成后，单击每个边栏选项卡上的“确认”，直到返回到“创建配置文件”边栏选项卡。 选择“创建”。
 
 >[!TIP]
@@ -53,7 +50,7 @@ ms.lasthandoff: 06/08/2017
 
 ![示例 iOS 停靠设置](http://i.imgur.com/FfFiUcP.png)
 
-向 iPhone 分配策略时，结果将是类似于以下的停靠：
+向 iPhone 分配策略时，结果是类似于此屏幕截图的停靠：
 
 ![iPhone 上的示例 iOS 停靠布局](http://i.imgur.com/bAgCe8F.png)
 
@@ -63,9 +60,9 @@ ms.lasthandoff: 06/08/2017
 
 
 1. 在“页面”边栏选项卡上，选择“添加”。
-2. 在“添加行”边栏选项卡上，输入“页面名称”。 这用于在 Intune 门户中你的引用，且*不显示*在 iOS 设备上。
+2. 在“添加行”边栏选项卡上，输入“页面名称”。 此名称在 Intune 门户中用作参考，且*不显示*在 iOS 设备上。
 3. 选择“添加”，然后选择是否想要将“应用”或“文件夹”添加到页面。
-4. 使用本主题中的“如何向列表添加应用”和“如何向列表添加文件夹”部分中的信息，配置想要出现在页面上的应用和文件夹。
+4. 使用本主题中的信息，配置要显示在页面上的应用和文件夹。
 
 ### <a name="example"></a>示例
 
@@ -73,13 +70,13 @@ ms.lasthandoff: 06/08/2017
 
 ![iOS 主屏幕设置示例](http://i.imgur.com/Jc2OxyX.png)
 
-向 iPhone 分配策略时，结果将是类似于以下的页面：
+向 iPhone 分配策略时，结果是类似于此屏幕截图的页面：
 
 ![使用修改后的主屏幕的 iOS 设备](http://i.imgur.com/Bd37PHa.png)
 
 ## <a name="how-to-add-an-app-to-the-list"></a>如何将应用添加到列表
 
-1. 输入“应用名称”。 这用于在 Intune 门户中你的引用，且*不显示*在 iOS 设备上。
+1. 输入“应用名称”。 此名称在 Intune 门户中用作参考，且*不显示*在 iOS 设备上。
 2. 输入想要显示的应用的“应用捆绑 ID”。 请参阅本主题稍后部分中介绍的**适用于内置 iOS 应用的捆绑 ID 引用**，了解帮助信息。
 3. 单击“确定”，然后继续添加项，对于设备停靠，最多能添加 **6** 个，对于设备页面，最多能添加 **60** 个。
 4. 完成后单击“确定” 。
@@ -88,10 +85,10 @@ ms.lasthandoff: 06/08/2017
 
 添加到文件夹中的页面的应用按从左到右的方式，以列表中指定的顺序排列。 如果添加了超过页面能够容纳的应用，则该应用将被移动到后续页面。
 
-1. 输入**文件夹名称**。 这将显示在用户的设备上。
+1. 输入**文件夹名称**。 该名称将显示在用户的设备上。
 2. 选择“添加”以在文件夹中创建一个页面。 可以添加最多 20 页。
-3. 在“添加行”边栏选项卡上，输入页面的名称。 这用于在 Intune 门户中你的引用，且*不显示*在 iOS 设备上。
-3. 输入“应用名称”。 这用于在 Intune 门户中你的引用，且*不显示*在 iOS 设备上。
+3. 在“添加行”边栏选项卡上，输入页面的名称。 此名称在 Intune 门户中用作参考，且*不显示*在 iOS 设备上。
+3. 输入“应用名称”。 此名称在 Intune 门户中用作参考，且*不显示*在 iOS 设备上。
 2. 输入想要显示的应用的“应用捆绑 ID”。 请参阅“如何将应用添加到列表”的相关帮助。
 3. 选择“添加”。 可以添加最多 60 项。
 4. 完成后单击“确定” 。
@@ -144,3 +141,6 @@ ms.lasthandoff: 06/08/2017
 |天气|com.apple.weather|
 
 
+## <a name="next-steps"></a>后续步骤
+
+现在可将设备配置文件分配到所选择的组。 有关详细信息，请参阅[如何分配设备配置文件](device-profile-assign.md)。

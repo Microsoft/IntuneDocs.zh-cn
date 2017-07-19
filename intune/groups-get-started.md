@@ -1,5 +1,5 @@
 ---
-title: "Intune 中的组入门"
+title: "Azure 门户中的 Intune 经典组"
 titleSuffix: Intune on Azure
 description: "了解 Intune Azure 门户中组的新增功能"
 keywords: 
@@ -13,16 +13,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 98809446cefde3e949b620ca8ca801822e6f2759
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3e7cf02ed43507eabdf6038940058f94eb09b0fa
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/05/2017
 ---
-
-# <a name="get-started-with-groups"></a>组入门
+# <a name="intune-classic-groups-in-the-azure-portal"></a>Azure 门户中的 Intune 经典组
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -38,7 +35,7 @@ Azure AD 安全组支持将所有类型的 Intune 部署到用户和设备。 �
 你可能使用过的某些 Intune 组功能在 Azure AD 中不可用：
 
 - “未分组用户”和“未分组设备”Intune 组将不再可用。
-- Azure 门户中不存在从某个组中“排除特定成员”的选项。 但是，可使用具有高级规则的 Azure AD 安全组复制此行为。 例如，若要在安全组中创建包含销售部门所有成员的高级规则，但排除职位中含有“助手”一词的成员，可使用此高级规则：
+- Azure 门户中不存在从某个组中“排除特定成员”的选项。 但是，可使用具有高级规则的 Azure AD 安全组复制此行为。 例如，若要在安全组中创建包含销售部门所有成员的高级规则，但排除职位中含有“助手”一词的组，可使用此高级规则：
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
 - Intune 控制台中的“所有 Exchange ActiveSync 托管设备”组未迁移到 Azure AD。 但仍可从 Azure 门户访问 EAS 托管设备的相关信息。
@@ -46,9 +43,9 @@ Azure AD 安全组支持将所有类型的 Intune 部署到用户和设备。 �
 ## <a name="how-to-get-started"></a>如何开始？
 
 - 阅读以下主题，了解 Azure AD 安全组及其工作原理：
-    -  [使用 Azure Active Directory 组管理对资源的访问](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)。
-    -  [在 Azure Active Directory 中管理组](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)。
-    -  [使用属性创建高级规则](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
+    -  [使用 Azure Active Directory 组管理对资源的访问](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)。
+    -  [在 Azure Active Directory 中管理组](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
+    -  [使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
 -  确保将需要创建组的管理员添加到 **Intune 服务管理员** Azure AD 角色。 Azure AD 服务管理员角色没有**管理组**权限。
 -  如果 Intune 组使用“排除特定成员”选项，需确定是否可在不排除项的情况下重新设计这些组，或是否需要高级规则以满足业务需求。
 
@@ -56,7 +53,7 @@ Azure AD 安全组支持将所有类型的 Intune 部署到用户和设备。 �
 ## <a name="what-happened-to-intune-groups"></a>Intune 组出现了什么情况？
 组从经典 Intune 门户迁移到 Azure 门户中的 Intune 时，将应用以下规则：
 
-| Intune 中的组|Azure AD 中的组|
+| 经典 Intune 中的组|Azure AD 中的组|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |静态用户组|静态 Azure AD 安全组|
 |动态用户组|具有 Azure AD 安全组层次结构的静态 Azure AD 安全组|
@@ -71,7 +68,7 @@ Azure AD 安全组支持将所有类型的 Intune 部署到用户和设备。 �
 在经典 Intune 控制台中，所有组都有一个父组。 组只能包含其父组的成员。 在 Azure AD 中，子组可包含父组中没有的成员。
 
 ## <a name="group-attributes"></a>组属性
-属性是指可用于定义组的设备属性。 下表描述如何将这些条件迁移到 Azure AD 安全组。
+属性是指可用于定义组的设备属性。 此表介绍这些条件是如何迁移至 Azure AD 安全组的。
 
 | Intune 中的属性|Azure AD 中的属性|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
@@ -87,5 +84,4 @@ Azure AD 安全组支持将所有类型的 Intune 部署到用户和设备。 �
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>以前部署的策略和应用会出现什么情况？
 
-像之前一样，策略和应用仍会部署到组。 但现在将从 Azure 门户，而非经典 Intune 控制台来管理这些组。
-
+像之前一样，策略和应用仍会部署到组。 但现在从 Azure 门户，而非经典 Intune 控制台来管理这些组。

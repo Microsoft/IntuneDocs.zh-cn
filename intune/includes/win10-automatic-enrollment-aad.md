@@ -9,7 +9,7 @@
 
 ### <a name="configure-automatic-mdm-enrollment"></a>配置自动 MDM 注册
 
-1. 登录到 [Azure 管理门户](https://portal.azure.com) (https://manage.windowsazure.com)，然后选择“Azure Active Directory”。
+1. 登录到 [Azure 管理门户](https://portal.azure.com) (https://manage.windowsazure.com)， 然后选择“Azure Active Directory”。
 
   ![Azure 门户的屏幕截图](../media/auto-enroll-azure-main.png)
 
@@ -33,6 +33,9 @@
     - **MDM 使用条款 URL**
     - **MDM 发现 URL**
     - **MDM 符合性 URL**
+
+    > [!IMPORTANT]
+    > 如果用户是一个组的成员，且该组会自动注册 MDM 并启用 MAM，并且用户试图在工作区加入其个人设备，则仅会启用 MAM。 
 
 6. 选择“保存”。
 

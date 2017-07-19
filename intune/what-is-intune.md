@@ -14,16 +14,12 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
-ms.openlocfilehash: 49747940e60e2463db5bdd18754bdb9f1444cd6d
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
-
+ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/10/2017
 ---
-
-
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 
 
@@ -37,6 +33,8 @@ Microsoft Intune 现在位于 Azure 门户中，这意味着你习惯使用的�
 > 现有租户正在迁移到新的门户体验。 你的租户迁移之前，通知会显示在 Office 消息中心中。
 >
 > 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的 Apple 注册工作流。 迁移计划尚未宣布。 如果现有帐户无法访问 Azure 门户，我们强烈建议创建一个试用帐户。
+>
+> 查看潜在阻止程序的列表 https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
 你可以在此库中查找有关新门户的信息，并且信息会不断更新。 如果你有什么建议，请在主题评论中留下反馈。 我们很乐意倾听你的想法。
@@ -93,7 +91,7 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 ### <a name="on-premises-access"></a>本地访问
 [配置本地 Exchange ActiveSync 和 Exchange 访问权限](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### <a name="users"></a>Users
-[了解有关所管理的以及将资源分类到组的设备的用户](user-management.md)。
+[了解有关所管理的以及将资源分类到组的设备的用户](users-add.md)。
 ### <a name="groups"></a>组
 [了解如何通过 Intune 使用 Azure Active Directory 组](groups-get-started.md)
 ### <a name="intune-roles"></a>Intune 角色
@@ -106,4 +104,3 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 ## <a name="whats-new"></a>新增功能
 
 [了解 Intune 中的新增功能](whats-new.md)。
-

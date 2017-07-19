@@ -1,12 +1,12 @@
 ---
 title: "如何将应用添加到 Microsoft Intune"
 titleSuffix: Intune on Azure
-description: "这些过程可助你将应用添加到 Intune，做好分配到用户和设备的准备。 &quot;"
+description: "这些过程可助你将应用添加到 Intune，做好分配到用户和设备的准备。 \""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 6b4df1ca6db5ce733ab7dab4e715ab0850dd7c8b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何向 Microsoft Intune 添加应用
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -67,7 +65,7 @@ Intune 支持添加并分配以下类型的应用：
 
 ## <a name="how-to-create-and-edit-categories-for-apps"></a>如何创建和编辑应用类别
 
-应用类别可有助于对应用进行排序，让最终用户在公司门户中更容易查找应用。 可以向应用分配一个或多个类别（例如，“开发者应用”或“通信应用”）。
+应用类别可用于对应用进行排序，让用户在公司门户中更容易查找应用。 可以向应用分配一个或多个类别（例如，“开发者应用”或“通信应用”）。
 向 Intune 添加应用时，可以视需要选择所需的类别。 请参阅平台专属主题，了解如何添加应用并分配类别。 若要创建和编辑你自己的类别，请按以下过程操作：
 
 1. 登录 Azure 门户。

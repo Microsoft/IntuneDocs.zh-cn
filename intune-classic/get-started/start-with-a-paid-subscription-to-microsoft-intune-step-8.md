@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>启用移动设备注册
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="enable-device-enrollment"></a>启用设备注册
 
-1. **将 Intune 设置为移动设备管理机构**
-    在 [Intune 管理控制台](https://manage.microsoft.com/)中，选择****“管理”  >  **“移动设备管理”**，然后在**“任务”**下选择“设置 MDM 机构”。  ****  
+1. **将 Intune 设置为移动设备管理机构** 在“Intune 管理控制台”[](https://manage.microsoft.com/)中，选择“管理”>“移动设备管理”，然后在“任务”下选择“设置 MDM 机构”。  
 
 2. 在“MDM 机构”对话框中选择“是”。
 
@@ -70,4 +66,3 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 
 >[!div class="step-by-step"]
 >[&larr;**注册设备**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)[**配置后任务**&rarr;](.\post-configuration-tasks.md)  
-

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,34 @@ ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: c87f5b80309242420730bb2f38da81c528e1c217
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 36a9e9a5be9b2dc45ded1a99c7a5871780f7d9b2
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/05/2017
 ---
-
-# <a name="intune-app-notifications-settings-for-ios-devices"></a>适用于 IOS 设备的 Intune 应用通知设置
+# <a name="intune-app-notifications-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune 应用通知设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-允许你配置在设备上安装的应用如何发送通知。 此设置支持运行 iOS 9.3 及更高版本的已监督设备。
+允许你配置在设备上安装的应用如何发送通知。 这些设置支持运行 iOS 9.3 及更高版本的已监督设备。
 
 ## <a name="configure-settings"></a>配置设置
 
-1. 在“设备功能”边栏选项卡上，选择“应用通知(仅已监督设备)”。
+1. 在设备功能边栏选项卡上，选择“应用通知(仅已监督设备)”。
 2. 在“应用通知”边栏选项卡上，选择“添加”，然后配置以下值：
     - **应用捆绑 ID** - 输入想要配置的应用的**应用捆绑 ID**。 请参阅本主题的稍后部分中介绍的**适用于内置 iOS 应用的捆绑 ID 引用**，了解帮助信息。
     - **应用名称** - 输入要配置的应用的名称。 该名称不在此设备上显示，并用于帮助你识别列表中的应用。
-    - **发行者** - 输入要配置的应用的发行者。 该名称不在此设备上显示，并用于帮助你识别列表中的应用。
+    - **发行者** - 输入要配置的应用的发行者。 发布者名称不在此设备上显示，仅用于帮助识别列表中的应用。
     - **通知** - 启用或禁用应用向设备发送通知。 如果禁用此设置，还将禁用以下设置。
-        - **在通知中心中显示** - 启用可允许应用在设备通知中心中显示通知。
-        - **在锁定屏幕中显示** - 启用可在设备锁定屏幕上看到应用的通知。
+        - **在通知中心中显示** - 启用此设置以允许应用在设备通知中心中显示通知。
+        - **在锁定屏幕中显示** - 启用此设置以在设备锁定屏幕上看到应用的通知。
         - **警报类型** - 选择希望从解除锁定设备看到的通知类型：
             - **无** - 不显示任何通知。
             - **横幅** - 呈现通知的简要显示的横幅。
             - **模式** - 显示通知，并且用户必须先手动消除通知，才能继续使用设备。
-        - **应用图标上的徽章** - 启用此选项可将一个徽章添加到应用图标，以指示应用发送通知。
-        - **声音** - 启用可在通知送达时播放声音。
+        - **应用图标上的徽章** - 启用此设置可将一个徽章添加到应用图标，以指示应用发送通知。
+        - **声音** - 启用此设置可在通知送达时播放声音。
 3. 继续添加所需数量的应用。 完成后，请选择“确定”。
 4. 选择“确定”，直到返回到“创建配置文件”边栏选项卡，然后选择“创建”。 
 
@@ -95,3 +92,7 @@ ms.lasthandoff: 06/08/2017
 |电子钱包|com.apple.Passbook|
 |观看|com.apple.Bridge|
 |天气|com.apple.weather|
+
+## <a name="next-steps"></a>后续步骤
+
+现在可将设备配置文件分配到所选择的组。 有关详细信息，请参阅[如何分配设备配置文件](device-profile-assign.md)。

@@ -5,7 +5,7 @@ keywords: "Intune graphapi c# powershell 权限角色"
 author: lleonard-msft
 manager: angrobe
 ms.author: alleonar
-ms.date: 06/12/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
-ms.openlocfilehash: 64b476151d03978f30e15ab1743ae6e63d7a69ff
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
+ms.openlocfilehash: 4ff36855e7a20aa7696444416d8993f9be62cbe5
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>如何使用 Azure AD 访问 Intune Graph API
 
-[Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) 现在支持具有特定 API 和权限角色的 Microsoft Intune。  Graph API 使用 Azure Active Directory (Azure AD) 进行身份验证和访问控制。  
+[Microsoft Graph API](https://developer.microsoft.com/graph/) 现在支持具有特定 API 和权限角色的 Microsoft Intune。  Graph API 使用 Azure Active Directory (Azure AD) 进行身份验证和访问控制。  
 对 Intune Graph API 的访问要求：
 
 - 应用程序 ID 需要具有：
@@ -45,13 +44,13 @@ ms.lasthandoff: 06/13/2017
 
 - 提供 C# 和 PowerShell 的 Intune Graph API 身份验证示例。
 
-- 描述如何支持多个租户 
+- 描述如何支持多个租户
 
 若要了解更多信息，请参阅以下文章：
 
-- [授权使用 OAuth 2.0 和 Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) 访问 Web 应用程序
-- [Azure AD 身份验证入门](https://www.visualstudio.com/en-us/docs/integrate/get-started/auth/oauth)
-- [将应用程序与 Azure Active Directory 集成](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)
+- [授权使用 OAuth 2.0 和 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code) 访问 Web 应用程序
+- [Azure AD 身份验证入门](https://www.visualstudio.com/docs/integrate/get-started/auth/oauth)
+- [将应用程序与 Azure Active Directory 集成](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [了解 OAuth 2.0](https://oauth.net/2/)
 
 ## <a name="register-apps-to-use-graph-api"></a>注册应用以使用 Graph API
@@ -66,21 +65,21 @@ ms.lasthandoff: 06/13/2017
 
 2.  从菜单中依次选择“Azure Active Directory”&gt;“应用注册”。
 
-    <img src="./media/app-registration-manage.png" width="239" height="276" alt="The App registrations menu command" />
+    <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
 3.  选择“新应用程序注册”，以创建新的应用程序，或选择现有应用程序。  （如果你选择现有应用程序，请跳过下一步。）
 
-4.  在“创建”边栏选项卡上，指定下列信息： 
+4.  在“创建”边栏选项卡上，指定下列信息：
 
     1.  应用程序的**名称**（用户登录时显示）。
 
     2.  “应用程序类型”和“重定向 URI”值。
 
-        这些信息会因要求的不同而异。 例如，如果你正在使用 Azure AD [Authentication Library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)，请将“应用程序类型”设置为 `Native`，将“重定向 URI”设置为 `urn:ietf:wg:oauth:2.0:oob`。
+        这些信息会因要求的不同而异。 例如，如果你正在使用 Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)，请将“应用程序类型”设置为 `Native`，将“重定向 URI”设置为 `urn:ietf:wg:oauth:2.0:oob`。
 
-        <img src="media/app-registration-redirect.png" width="355" height="232" alt="The Redirect URI value" />
+        <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
-        要了解详细信息，请参阅 [Azure AD 的身份验证方案息](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios)。
+        要了解详细信息，请参阅 [Azure AD 的身份验证方案息](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)。
 
 5.  从应用程序边栏选项卡：
 
@@ -88,17 +87,17 @@ ms.lasthandoff: 06/13/2017
 
     2.  选择“设置”&gt;“API 访问”&gt;“所需权限”。
 
-    <img src="media/app-registration-req-perms.png" width="554" height="217" alt="The Required permissions setting" />
+    <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
 6.  从“所需权限”边栏选项卡中，选择“添加”&gt;“添加 API 访问权限”&gt;“选择 API”。
 
-    <img src="media/app-registration-graph-api.png" width="558" height="165" alt="The Microsoft Graph setting" />
+    <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
 7.  从“选择 API”边栏选项卡中，依次选择“Microsoft Graph”&gt;“选择”。  打开“启用访问权限”边栏选项卡，并列出你的应用程序可用的权限范围。
 
-    <img src="media/aad-auth-role-permissions.png" width="479" height="293" alt="Intune Graph API permission scopes" />
+    <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    通过在相关名称的左侧打一个复选标记来选择应用所需的角色。  要了解具体的 Intune 权限范围，请参阅 [Intune 权限范围](#user-content-intune-permission-scopes)。  要了解其他 Graph API 权限范围，请参阅 [Microsoft Graph 权限引用](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)。
+    通过在相关名称的左侧打一个复选标记来选择应用所需的角色。  要了解具体的 Intune 权限范围，请参阅 [Intune 权限范围](#user-content-intune-permission-scopes)。  要了解其他 Graph API 权限范围，请参阅 [Microsoft Graph 权限引用](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
 
     为获得最佳效果，请选择实现应用程序所需的最少角色。
 
@@ -112,7 +111,7 @@ ms.lasthandoff: 06/13/2017
 
     第一次运行应用程序时，系统会提示你授予应用程序执行所选角色的权限。
 
-    <img src="media/app-registration-grant-perms.png" width="512" height="232" alt="The Grant permissions button" />
+    <img src="media/azure-ad-grant-perm.png" width="351" height="162" alt="The Grant permissions button" />
 
 - 使应用可供租户之外的用户使用。  （这通常仅适用于支持多个租户/组织的合作伙伴。）  
 
@@ -120,7 +119,7 @@ ms.lasthandoff: 06/13/2017
 
     1. 从应用程序边栏选项卡中选择“清单”，将打开“编辑清单”边栏选项卡。
 
-    <img src="media/app-registration-other-tenants.png" width="531" height="168" alt="The Edit manifest blade" />
+    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
     2. 将 `availableToOtherTenants` 设置的值更改为 `true`。
 
@@ -133,32 +132,32 @@ Azure AD 和 Graph API 使用权限范围来控制对公司资源的访问。
 权限范围（也称为 _OAuth 范围_）控制对特定 Intune 实体及其属性的访问权限。 本节概要总结了 Intune Graph API 功能的权限范围。
 
 若要了解更多信息，请参阅以下内容：
-- [Azure AD 身份验证](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
-- [应用程序权限范围](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)
+- [Azure AD 身份验证](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
+- [应用程序权限范围](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
 当向 Graph API 授予权限时，你可以指定以下范围来控制对 Intune 功能的访问权限：下表总结了 Intune Graph API 权限范围。  第一列显示 Azure 门户中显示的功能名称，第二列显示权限范围名称。
 
 _启用访问权限_设置 | 作用域名称
 :--|:--
-__在 Microsoft Intune 设备上执行影响用户的远程操作（预览）__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
-__读取和写入 Microsoft Intune 设备（预览）__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
-__Microsoft Intune 设备（预览）__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
-__读取和写入 Microsoft Intune RBAC 设置（预览）__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__读取 Microsoft Intune RBAC 设置（预览）__ | [DeviceManagementRBAC.Read.All](#rac=ro)
-__读取和写入 Microsoft Intune 应用（预览）__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
-__读取 Microsoft Intune 应用（预览）__ | [DeviceManagementApps.Read.All](#app-ro)
-__读取和写入 Microsoft Intune 设备配置和策略（预览）__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
-__读取和写入 Microsoft Intune 设备配置和策略（预览）__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
-__读取和写入 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfiguration.ReadWrite.All](#svc-rw)
-__读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfiguration.Read.All](#svc-ra)
+__在 Microsoft Intune 设备上执行影响用户的远程操作__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__读取和写入 Microsoft Intune 设备__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
+__读取 Microsoft Intune 设备__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
+__读取和写入 Microsoft Intune RBAC 设置__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
+__读取 Microsoft Intune RBAC 设置__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__读取和写入 Microsoft Intune 应用__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
+__读取 Microsoft Intune 应用__ | [DeviceManagementApps.Read.All](#app-ro)
+__读取和写入 Microsoft Intune 设备配置和策略__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__读取 Microsoft Intune 设备配置和策略__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
+__读取和写入 Microsoft Intune 配置__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
+__读取 Microsoft Intune 配置__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
 
-该表按照设置在 Azure 门户中的显示顺序进行列示。 以下部分按字母顺序描述范围。
+该表罗列设置的顺序与 Azure 门户中设置的显示顺序一致。 以下部分按字母顺序描述范围。
 
 此时，所有 Intune 权限范围都需要管理员访问权限。  这意味着在运行访问 Intune Graph API 资源的应用或脚本时需要相应的凭据。
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
-- **启用访问权限**设置：__读取 Microsoft Intune 应用（预览）__
+- **启用访问权限**设置：__读取 Microsoft Intune 应用__
 
 - 允许对以下实体属性和状态执行读取访问权限：
     - Mobile Apps
@@ -168,7 +167,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
-- **启用访问权限**设置：__读取和写入 Microsoft Intune 应用（预览）__
+- **启用访问权限**设置：__读取和写入 Microsoft Intune 应用__
 
 - 允许与 __DeviceManagementApps.Read.All__ 相同的操作
 
@@ -181,7 +180,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- **启用访问权限**设置：__读取 Microsoft Intune 设备配置和策略（预览）__
+- **启用访问权限**设置：__读取 Microsoft Intune 设备配置和策略__
 
 - 允许对以下实体属性和状态执行读取访问权限：
     - 设备配置
@@ -190,7 +189,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- **启用访问权限**设置：__读取和写入 Microsoft Intune 设备配置和策略（预览）__
+- **启用访问权限**设置：__读取和写入 Microsoft Intune 设备配置和策略__
 
 - 允许与 __DeviceManagementConfiguration.Read.All__ 相同的操作
 
@@ -201,7 +200,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- **启用访问权限**设置：__对 Microsoft Intune 设备执行影响用户的远程操作（预览）__
+- **启用访问权限**设置：__对 Microsoft Intune 设备执行影响用户的远程操作__
 
 - 允许对受管理设备执行下列远程操作：
     - 停用
@@ -215,7 +214,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
-- **启用访问权限**设置：__读取和写入 Microsoft Intune 设备（预览）__
+- **启用访问权限**设置：__读取 Microsoft Intune 设备__
 
 - 允许对以下实体属性和状态执行读取访问权限：
     - 受管理设备
@@ -226,7 +225,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
-- **启用访问权限**设置：__读取和写入 Microsoft Intune 设备（预览）__
+- **启用访问权限**设置：__读取和写入 Microsoft Intune 设备__
 
 - 允许与 __DeviceManagementManagedDevices.Read.All__ 相同的操作
 
@@ -241,7 +240,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
-- **启用访问权限**设置：__读取 Microsoft Intune RBAC 设置（预览）__
+- **启用访问权限**设置：__读取 Microsoft Intune RBAC 设置__
 
 - 允许对以下实体属性和状态执行读取访问权限：
     - 角色分配
@@ -250,7 +249,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
-- **启用访问权限**设置：__读取和写入 Microsoft Intune RBAC 设置（预览）__
+- **启用访问权限**设置：__读取和写入 Microsoft Intune RBAC 设置__
 
 - 允许与 __DeviceManagementRBAC.Read.All__ 相同的操作
 
@@ -258,9 +257,9 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
     - 角色分配
     - 角色定义
 
-### <a name="svc-ro"></a>DeviceManagementServiceConfiguration.Read.All
+### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
-- **启用访问权限**设置：__读取 Microsoft Intune 配置（预览）__
+- **启用访问权限**设置：__读取 Microsoft Intune 配置__
 
 - 允许对以下实体属性和状态执行读取访问权限：
     - 设备注册
@@ -274,11 +273,11 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
     - 品牌打造
     - 移动威胁防御
 
-### <a name="svc-rw"></a>DeviceManagementServiceConfiguration.ReadWrite.All
+### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
-- **启用访问权限**设置：__读取和写入 Microsoft Intune 配置（预览）__
+- **启用访问权限**设置：__读取和写入 Microsoft Intune 配置__
 
-- 允许与 DeviceManagementServiceConfiguration.Read.All_ 相同的操作
+- 允许与 DeviceManagementServiceConfig.Read.All_ 相同的操作
 
 - 此外，应用还可以配置以下 Intune 功能：
     - 设备注册
@@ -298,17 +297,17 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 在每个示例中，将需要指定至少一个具有 `DeviceManagementManagedDevices.Read.All` 权限范围（前面讨论过）的应用程序 ID。
 
-测试任一示例时，可能会收到类似下面所示的 HTTP 状态 403（禁止）错误： 
+测试任一示例时，可能会收到类似下面所示的 HTTP 状态 403（禁止）错误：
 
 ``` javascript
 {
   "error": {
     "code": "Forbidden",
-    "message": "Application is not authorized to perform this operation - Operation ID " + 
-       "(for customer support): 00000000-0000-0000-0000-000000000000 - " + 
-       "Activity ID: cc7fa3b3-bb25-420b-bfb2-1498e598ba43 - " + 
-       "Url: https://example.manage.microsoft.com/" + 
-       "Service/Resource/RESTendpoint?" + 
+    "message": "Application is not authorized to perform this operation - Operation ID " +
+       "(for customer support): 00000000-0000-0000-0000-000000000000 - " +
+       "Activity ID: cc7fa3b3-bb25-420b-bfb2-1498e598ba43 - " +
+       "Url: https://example.manage.microsoft.com/" +
+       "Service/Resource/RESTendpoint?" +
        "api-version=2017-03-06 - CustomApiErrorPhrase: ",
     "innerError": {
       "request-id": "00000000-0000-0000-0000-000000000000",
@@ -324,14 +323,14 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
 
 - 租户凭据是否支持管理功能。
 
-- 你的代码是否与显示的示例类似。 
+- 你的代码是否与显示的示例类似。
 
 
 ### <a name="authenticate-azure-ad-in-c"></a>在 C\# 中验证 Azure AD
 
-此示例说明如何使用 C# 检索与 Intune 帐户关联的设备列表。 
+此示例说明如何使用 C# 检索与 Intune 帐户关联的设备列表。
 
-1.  启动 Visual Studio，然后创建新的 Visual C# 控制台应用（.net 框架）项目。 
+1.  启动 Visual Studio，然后创建新的 Visual C# 控制台应用（.net 框架）项目。
 
 2.  输入项目的名称，并根据需要提供其他详细信息。
 
@@ -362,7 +361,7 @@ __读取 Microsoft Intune 配置（预览）__ | [DeviceManagementServiceConfigu
         Uri redirectUri = new Uri("urn:ietf:wg:oauth:2.0:oob");
         AuthenticationContext context = new AuthenticationContext(authority);
         AuthenticationResult result = await context.AcquireTokenAsync(
-            "https://graph.microsoft.com", 
+            "https://graph.microsoft.com",
             applicationId, redirectUri,
             new PlatformParameters(PromptBehavior.Auto));
         return result.CreateAuthorizationHeader();
@@ -435,7 +434,7 @@ namespace IntuneGraphExample
 
 ### <a name="authenticate-azure-ad-powershell"></a>验证 Azure AD (PowerShell)
 
-以下 PowerShell 脚本使用 AzureAD PowerShell 模块进行身份验证。  要了解详细信息，请参阅 [Azure Active Directory PowerShell 版本 2](https://docs.microsoft.com/en-us/powershell/azure/install-adv2?view=azureadps-2.0) 和 [Intune PowerShell 示例](https://github.com/microsoftgraph/powershell-intune-samples)。
+以下 PowerShell 脚本使用 AzureAD PowerShell 模块进行身份验证。  要了解详细信息，请参阅 [Azure Active Directory PowerShell 版本 2](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) 和 [Intune PowerShell 示例](https://github.com/microsoftgraph/powershell-intune-samples)。
 
 在此示例中，更新 `$clientID` 的值以匹配有效的应用程序 ID。
 
@@ -450,7 +449,7 @@ function Get-AuthToken {
 
     $userUpn = New-Object "System.Net.Mail.MailAddress" -ArgumentList $User
     $tenant = $userUpn.Host
-   
+
     Write-Host "Checking for AzureAD module..."
 
     $AadModule = Get-Module -Name "AzureAD" -ListAvailable
@@ -490,7 +489,7 @@ function Get-AuthToken {
     $redirectUri = "urn:ietf:wg:oauth:2.0:oob"
     $resourceAppIdURI = "https://graph.microsoft.com"
     $authority = "https://login.microsoftonline.com/$Tenant"
-     
+
     try {
         $authContext = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" -ArgumentList $authority
         # https://msdn.microsoft.com/library/azure/microsoft.identitymodel.clients.activedirectory.promptbehavior.aspx
@@ -566,11 +565,11 @@ catch {
 
 1.  从“快速任务”面板选择“添加来宾用户”。
 
-    <img src="media/aad-multiple-tenant-add-user.png" width="559" height="166" alt="Use Quick Tasks to add a guest user" />
+    <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
 2.  输入客户的电子邮件地址并添加个性化邮件进行邀请（可选）。
 
-    <img src="media/aad-multiple-tenant-invite-guest.png" width="508" height="373" alt="Inviting an external user as a guest" />
+    <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
 3.  选择“邀请”。
 
@@ -603,4 +602,3 @@ catch {
     ``` csharp
     string authority = "https://login.microsoftonline.com/northwind.onmicrosoft.com/";
     ```
-

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 95edb26152cf2d11413cfd7e46b8a37bdafc78ab
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: de6ed7623e33a50bdf8452cbf1bad9c648b13d04
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Windows 应用商店中购买的应用
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,14 +33,17 @@ ms.lasthandoff: 06/08/2017
 * 如果可用许可证数量不足，Intune 将阻止应用的分配和安装。
 
 ## <a name="before-you-start"></a>开始之前
+
 从适用于企业的 Windows 应用商店同步并分配应用之前，请查看以下信息：
-* 你必须将 Intune 配置为你的组织的移动设备管理机构。
-* 必须已在适用于企业的 Windows 应用商店中注册帐户。
-* 一旦将适用于企业的 Windows 应用商店帐户与 Intune 关联，将来你将无法更改为其他帐户。
-* 无法在 Intune 中手动添加或删除从应用商店购买的应用。 这些应用只能与适用于企业的 Windows 应用商店同步。
-* Intune 只同步你已从适用于企业的 Windows 应用商店中购买的联机已授权应用。
-* 设备必须已加入 Active Directory 域服务或工作区才可使用此功能。
-* 已注册的设备必须使用 Windows 10 的 1511 版本或更高版本。
+
+- 将 Intune 配置为组织的移动设备管理机构。
+- 必须已在适用于企业的 Windows 应用商店中注册帐户。
+- 一旦将适用于企业的 Windows 应用商店帐户与 Intune 关联，将来你将无法更改为其他帐户。
+- 无法在 Intune 中手动添加或删除从应用商店购买的应用。 这些应用只能与适用于企业的 Windows 应用商店同步。
+- Intune 会同时同步从适用于企业的 Windows 应用商店中购买的联机和脱机授权应用。
+- 仅免费的脱机应用可同步到 Intune。
+- 设备必须已加入 Active Directory 域服务或工作区才可使用此功能。
+- 已注册的设备必须使用 Windows 10 的 1511 版本或更高版本。
 
 ## <a name="associate-your-windows-store-for-business-account-with-intune"></a>将适用于企业的 Windows 应用商店帐户与 Intune 相关联
 在 Intune 控制台中启用同步之前，必须将你的应用商店帐户配置为将 Intune 作为一种管理工具使用：
@@ -51,7 +52,7 @@ ms.lasthandoff: 06/08/2017
 3. 在“管理工具”页上选择“添加管理工具”，然后选择“Microsoft Intune”。
 
 > [!NOTE]
-> 使用多个管理工具分配适用于企业的 Windows 应用商店时，以前只能将一个管理工具与适用于企业的 Windows 应用商店相关联。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
+> 在以前，只能将一个用于分配应用的管理工具关联到适用于企业的 Windows 应用商店。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
 
 现在可以继续，并在 Intune 控制台中设置同步。
 
@@ -75,11 +76,13 @@ ms.lasthandoff: 06/08/2017
 
 分配应用商店中应用的方式与分配任何其他 Intune 应用的方式相同。 有关详细信息，请参阅[如何使用 Microsoft Intune 将应用分配到组](apps-deploy.md)。 但是，不是从“所有应用”页面分配应用，而是从“获得许可的应用”页面分配应用。
 
-分配适用于企业的 Windows 应用商店的应用时，安装此应用的每个用户都会使用 1 个许可证。 如果使用了分配应用的所有可用许可证，则无法再分配任何副本。 必须执行下列操作之一：
+脱机应用可面向用户组、设备组或同时具有用户和设备的组。
+可为设备上的特定用户或所有用户安装脱机应用。 
+
+
+分配适用于企业的 Windows 应用商店的应用时，安装此应用的每个用户都会使用 1 个许可证。 如果使用了分配应用的所有可用许可证，则无法再分配任何副本。 请执行下列操作之一：
 * 从一些设备上卸载应用。
 * 减小当前分配的范围，仅针对具有足够许可证的用户。
 * 从适用于企业的 Windows 应用商店中购买应用的更多副本。
 
-> [!Important]
-> 已分配的应用程序仅可用于最初注册了该设备的用户。 其他用户不能访问该应用。
 

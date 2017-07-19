@@ -1,12 +1,12 @@
 ---
 title: "下载 Skycure iOS 应用配置策略以配合使用 Intune"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "下载 Skycure iOS 应用配置策略以配合使用 Intune。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: 1bdc2ecf-32d0-4b6a-80b4-dbcdb9909010
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d21f440ee6806b545d2b346559d6516993a9cbf
-ms.openlocfilehash: f346b365915b482772e9f5eeaa86afb2cee9319f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/14/2017
-
-
+ms.openlocfilehash: ffe1027e90203d4e300a2446f15e72cc5bf53973
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="download-skycure-ios-app-configuration-policy"></a>下载 Skycure iOS 应用配置策略
 
 ## <a name="before-you-begin"></a>在开始之前
@@ -52,5 +49,4 @@ ms.lasthandoff: 06/14/2017
 
 ## <a name="next-steps"></a>后续步骤
 
-[添加 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
-
+[添加并分配 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略](mtd-apps-ios-app-configuration-policy-add-assign.md)
