@@ -15,6 +15,7 @@
 ### [设备生命周期](device-lifecycle.md)
 ### [应用生命周期](app-lifecycle.md)
 ## [常见方案](common-scenarios.md)
+## [服务说明](microsoft-intune-service-description.md)
 ## [已知问题](known-issues.md)
 ## [获取支持](get-support.md)
 
@@ -59,7 +60,7 @@
 
 # 如何
 
-## 设置 Intune[](setup-steps.md)
+## [设置 Intune](setup-steps.md)
 ### [必备条件](supported-devices-browsers.md)
 #### [网络带宽使用](network-bandwidth-use.md)
 ### [登录到 Intune](account-sign-up.md)
@@ -81,10 +82,10 @@
 #### [Windows 注册](windows-enroll.md)
 #### [批量注册](windows-bulk-enroll.md)
 ### [设置 Android 注册](android-enroll.md)
-### 设置 iOS 注册
-#### [使用设备注册计划](device-enrollment-program-enroll-ios.md)
-#### [使用 Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [使用 Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [设置 iOS 注册](ios-enroll.md)
+#### [设备注册计划](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [设置 macOS 注册](macos-enroll.md)
 
 ## [管理设备](device-management.md)
