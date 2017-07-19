@@ -6,25 +6,21 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
-ms.reviewer: heenamac
+ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 7ea8e8d95f331cf75fe7111c8f8acdfe01877cdd
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 4188c3951c9cb864b77bde52a5d19f022f17c11c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何配置 iOS Classroom 应用的 Intune 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -38,14 +34,14 @@ ms.lasthandoff: 06/08/2017
 - 将学生 iPad 导航到某个书签，或书本的某个章节
 - 在 Apple TV 上显示某个学生 iPad 中的屏幕
 
-使用 Intune iOS **Education** 设备配置文件和本主题中的信息可帮助你设置 Classroom 应用及要使用此应用的设备。
+使用 Intune iOS 教育设备配置文件和本主题中的信息可帮助你设置 Classroom 应用以及会使用此应用的设备。
 
 ## <a name="before-you-start"></a>开始之前
 
 开始配置这些设置前请考虑以下内容：
 
 - 教师和学生 iPad 必须均已在 Intune 中注册
-- 确保已在教师设备上安装 [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) 应用。 你可以手动执行此操作，也可以使用 [Intune 应用管理](app-management.md)。
+- 确保已在教师设备上安装 [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) 应用。 也可以手动安装此应用，或使用 [Intune 应用管理](app-management.md)。
 - 必须配置证书以对教师和学生设备之间的连接进行身份验证（请参阅步骤 2）
 - 教师和学生 iPad 必须处于同一 Wi-Fi 网络覆盖区域内，并且必须均已启用蓝牙
 - Classroom 应用在运行 iOS 9.3 或更高版本的受监督 iPad 上运行
@@ -57,9 +53,9 @@ ms.lasthandoff: 06/08/2017
 使用 Microsoft 的学校数据同步 (SDS) 将现有学生信息系统 (SIS) 中的学校记录导入 Azure Active Directory (Azure AD)。
 SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮助你组织用户和设备的 Microsoft 管理系统。 使用此数据有助于管理学生和班级。 [了解有关如何部署 SDS 的详细信息](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)。
 
-### <a name="how-to-import-data-using-sds"></a>如何使用 SDS 导入数据？
+### <a name="how-to-import-data-using-sds"></a>如何使用 SDS 导入数据
 
-可以使用以下任一方式将信息导入 SDS：
+可以使用以下任一方法将信息导入 SDS：
 
 - [CSV 文件](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - 手动导出并编译逗号分隔值 (.csv) 文件
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - 一个 SIS 提供程序，可以简化与 Azure AD 的同步操作
@@ -83,7 +79,7 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 5.  在配置文件边栏选项卡上，选择“创建配置文件”。
 6.  在“创建配置文件”边栏选项卡上，输入 iOS 教育配置文件的“名称”和“说明”。
 7.  在“平台”下拉列表中，选择“iOS”。
-8.  在“配置文件类型”类型下拉列表中，选择“教育”。
+8.  在“配置文件类型”下拉列表中，选择“教育”。
 9.  选择“设置” > “配置”。
 
 
@@ -92,7 +88,7 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 >[!IMPORTANT]
 >所使用的教师和学生证书必须由不同的证书颁发机构 (CA) 颁发。 必须创建两个新的连接到你的现有证书基础结构的从属 CA；一个用于教师，一个用于学生。
 
-iOS 教育配置文件仅支持 PFX 证书，不支持 SCEP 证书。
+iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 除用户身份验证以外，所创建的证书还必须支持服务器身份验证。
 
@@ -146,7 +142,7 @@ iOS 教育配置文件仅支持 PFX 证书，不支持 SCEP 证书。
 1.  在“教育”边栏选项卡上，选择“确定”。
 2.  在“创建配置文件”边栏选项卡上，选择“创建”。
     
-将创建配置文件并在“配置文件列表”边栏选项卡上显示。
+系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
 
 将该配置文件分配给与 Azure AD 同步学校数据时创建的教室组中的学生设备（请参阅[如何分配设备配置文件](device-profile-assign.md)）。
 
@@ -156,3 +152,4 @@ iOS 教育配置文件仅支持 PFX 证书，不支持 SCEP 证书。
 
 有关 Classroom 应用的详细信息，请参阅 Apple 网站上的 [Classroom 帮助](https://help.apple.com/classroom/ipad/2.0/)。
 
+如果要为学生配置共享 iPad 设备，请参阅[如何配置适用于共享 iPad 设备的 Intune 教育设置](education-settings-configure-ios-shared.md)。

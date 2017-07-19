@@ -3,10 +3,10 @@ title: "Microsoft Intune 新增功能"
 titleSuffix: Intune on Azure
 description: "了解 Intune Azure 门户新增功能"
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: brenduns
+ms.author: brenduns
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
-ms.openlocfilehash: 1a3069e128e25f4f0f5df7cc90392055729134fa
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/16/2017
-
+ms.openlocfilehash: fdda99bfd72c71d36a19449d43bc6cbf6a00babe
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -32,14 +30,104 @@ ms.lasthandoff: 06/16/2017
 > [!Note]
 > 许多功能最终将支持带 Configuration Manager 的混合客户部署。 有关新的混合功能的详细信息，请查看[混合新增功能页](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
 
+
+<!-- Common categories:  
+  ### Role-based access control
+  ### Device enrollment
+  ### Device management
+  ### App management
+  ### Device configuration
+-->   
+
+
+
+## <a name="week-of-june-26th-2017"></a>2017 年 6 月 26 日的这一周
+
+### <a name="role-based-access-control"></a>基于角色的访问控制
+#### <a name="new-role-based-administration-access-for-intune-admins------1099990---"></a>面向 Intune 管理员的全新基于角色的管理访问权限   <!-- 1099990 -->  
+将添加新的条件性访问管理员角色，以查看、创建、修改和删除 Azure AD 条件性访问策略。 以前，只有全局管理员和安全管理员具有此权限。 可以为 Intune 管理员授予此角色权限，以便他们有权访问条件性访问策略。
+
+
+### <a name="device-enrollment"></a>设备注册
+#### <a name="tag-corporate-owned-devices-with-serial-number----1215070---"></a>用序列号标记公司拥有的设备 <!-- 1215070 -->  
+Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标识符。 此时，你将不能使用序列号来阻止个人设备进行注册，因为在注册过程中未验证序列号。 在不久的将来将推出按序列号阻止个人设备。
+
+
+### <a name="device-management"></a>设备管理
+#### <a name="new-remote-actions-for-ios-devices----854689---"></a>适用于 iOS 设备的新远程操作 <!-- 854689 -->
+在此版本中，我们添加了两个适用于 iOS 设备的新远程设备操作：
+
+-   “注销当前用户”[](device-logout-user.md)- 注销所选 iOS 设备上的当前用户。
+-   “删除用户”[](device-remove-user.md)- 从 iOS 设备上的本地缓存中删除所选用户。
+
+
+通过使用这些远程操作，管理员可以在共享 iPad 上管理缓存的用户帐户，还可以注销当前正登录到设备的用户。
+
+注册期间，管理员决定可以在设备上缓存的用户帐户的最大数。 “删除用户”允许管理员删除已缓存的特定用户。
+
+“注销当前用户”将会注销当前登录到设备的用户。 可以在设备概述边栏选项卡顶部找到此操作，设备操作通常都显示在该位置。
+
+“删除用户”将从设备的本地缓存中删除特定用户。 可通过导航到“监视”>“用户”> 右键单击列表中特定的用户，找到此操作。 任何与此用户帐户关联但尚未同步的数据将会丢失。 此外，用户列表最多可能需要 24 小时才能反映出用户已被删除。
+
+#### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>支持与 iOS Classroom 应用共享 iPad<!-- 1044681 -->
+在此版本中，我们扩展了对管理 iOS Classroom 应用的支持，以便为使用托管 Apple ID 登录共享 iPad 的学生提供支持。
+
+
+### <a name="app-management"></a>应用管理  
+#### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>支持来自适用于企业的 Windows 应用商店的脱机应用<!--- 777044 --->
+你从适用于企业的 Windows 应用商店购买的脱机应用现在将同步至 Intune 门户。 然后，便可以将这些应用部署到设备组或用户组。 脱机应用由 Intune 安装，而不是由应用商店安装。
+
+#### <a name="microsoft-teams-is-now-part-of-the-app-based-ca-list-of-approved-apps------1257019---"></a>Microsoft Teams 现在是已批准应用的基于应用的 CA 列表的一部分   <!-- 1257019 -->
+
+对于适用于 Exchange 和 SharePoint Online 的基于应用的条件性访问策略，适用于 iOS 和 Android 的 Microsoft Teams 应用现属于已批准应用。 将能够利用基于应用的条件性访问通过 Azure 门户中的“Intune 应用保护”边栏选项卡为所有租户配置应用。
+
+#### <a name="managed-browser-and-app-proxy-integration----1287310---"></a>Managed Browser 和应用代理集成 <!-- 1287310 -->
+ Intune Managed Browser 现在可与 Azure AD 应用程序代理服务集成，以使用户甚至可在远程工作的时候访问内部网站。 浏览器用户只需像平时一样简单输入网站 URL，Managed Browser 便会通过应用代理 Web 网关路由请求。 有关详细信息，请参阅[使用 Managed Browser 策略管理 Internet 访问](app-configuration-managed-browser.md)。
+
+
+#### <a name="new-app-configuration-settings-for-the-intune-managed-browser----682951---"></a>Intune 托管浏览器的新应用配置设置 <!-- 682951 -->
+在此版本中，我们为适用于 iOS 和 Android 的 Intune Managed Browser 应用添加了进一步配置。 现在你能够使用应用配置策略为浏览器配置默认主页和书签。
+有关详细信息，请参阅[使用 Managed Browser 策略管理 Internet 访问](app-configuration-managed-browser.md)
+
+
+
+
+### <a name="device-configuration"></a>设备配置  
+#### <a name="bitlocker-settings-for-windows-10-----951707---"></a>Windows 10 的 BitLocker 设置  <!-- 951707 -->
+你现在可以使用新的 Intune 设备配置文件为 Windows 10 设备配置 BitLocker 设置。 例如，可以要求加密设备，还可以配置在打开 BitLocker 时应用的进一步设置。
+有关详细信息，请参阅[适用于 Windows 10 及更高版本的 Endpoint Protection 设置](endpoint-protection-windows-10.md)。
+
+### <a name="new-settings-for-windows-10-device-restriction-profile-----978527--978550-978569-1050031-1058611-----"></a>Windows 10 设备限制配置文件的新设置 <!--- 978527,  978550, 978569, 1050031, 1058611,  --->
+
+在此版本中，我们为 Windows 10 设备限制配置文件添加了新设置，按照以下类别：
+
+ -  Windows Defender
+-  手机网络和连接性
+-  锁定屏幕体验
+-  隐私
+-  搜索
+-  Windows 聚焦
+-  Edge 浏览器
+
+有关 Windows 10 设置的详细信息，请参阅 [Windows 10 及更高版本的设备限制设置](device-restrictions-windows-10.md)。
+
 ## <a name="week-of-june-12-2017"></a>2017 年 6 月 12 日的这一周
+
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>适用于 Android 的公司门户应用现推出了全新的应用保护政策最终用户体验 <!--1305217-->
+根据客户反馈，已修改适用于 Android 的公司门户应用，以便显示“访问公司内容”按钮。 其目的在于，使最终用户在仅需要访问支持应用保护策略（Intune 移动应用程序管理的一项功能）的应用时，无需完成不必要的注册过程。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
 
 ### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>新增可轻松删除公司门户的菜单操作 <!--1164569-->
 根据用户反馈，适用于 Android 的公司门户应用新添加了一个菜单操作，可启动对设备中公司门户的删除。 此操作可将设备从 Intune 管理中删除，以便用户删除设备中的应用。 你可以在[应用 UI 中的新增功能](whats-new-app-ui.md)页和 [Android 最终用户文档](/intune-user-help/unenroll-your-device-from-intune-android)中查看这些更改。
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>与 Windows 10 创意者更新的应用同步改进 <!--676505-->
 
-面向 Windows 10 的公司门户应用，现在将针对具有 Windows 10 创意者更新（版本 1703）的设备自动启动应用安装请求同步。 这将减少“正在挂起同步”状态下的应用安装停止问题。 此外，用户将可以从该应用内部手动启动同步。 
+面向 Windows 10 的公司门户应用，现在将针对具有 Windows 10 创意者更新（版本 1703）的设备自动启动应用安装请求同步。 这将减少“正在挂起同步”状态下的应用安装停止问题。 此外，用户将可以从该应用内部手动启动同步。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
+
+### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Windows 10 公司门户新的引导式体验<!---1058938--->
+
+适用于 Windows 10 的公司门户应用将为尚未被标识或注册的设备提供引导式的 Intune 演练体验。 新体验提供了循序渐进的说明，引导用户完成 AAD 注册（条件性访问功能所需）和 MDM 注册（设备管理功能所需）。 引导式体验可从公司门户主页获取。 如果用户未完成注册和登记，可以继续使用应用，但能够体验的功能将很有限。
+
+此更新仅在运行 Windows 10 周年更新（内部版本 1607）或更高版本的设备上可见。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
 
 ## <a name="week-of-june-5-2017"></a>2017 年 6 月 5 日的这一周
 
@@ -61,7 +149,7 @@ Intune 现在 portal.azure.com 中可见，但在 Azure 控制台中没有“预
 
 ### <a name="change-your-mdm-authority-without-unenrolling-managed-devices---1103950--"></a>更改 MDM 颁发机构，而无需取消注册托管设备 <!--1103950-->
 
-你现在可以更改 MDM 颁发机构，而无需联系 Microsoft 支持部门，并且无需取消注册并重新注册现有的受管理设备。 在 Configuration Manager 控制台中，可以通过“设置”将 [MDM 颁发机构](/sccm/mdm/deploy-use/change-mdm-authority)从“Configuration Manager (混合)”更改为“Microsoft Intune (独立)”，反之亦然。 
+你现在可以更改 MDM 颁发机构，而无需联系 Microsoft 支持部门，并且无需取消注册并重新注册现有的受管理设备。 在 Configuration Manager 控制台中，可以通过“设置”将 [MDM 颁发机构](/sccm/mdm/deploy-use/change-mdm-authority)从“Configuration Manager (混合)”更改为“Microsoft Intune (独立)”，反之亦然。
 
 
 ### <a name="improved-notification-for-samsung-knox-startup-pins---1087143--"></a>Samsung KNOX 启动 PIN 改进通知 <!--1087143-->
@@ -178,11 +266,34 @@ IT 支持人员用户现在可以在“疑难解答”边栏选项卡中查看�
 
 ## <a name="whats-coming"></a>即将推出
 
+### <a name="platform-support-reminder-windows-phone-81-mainstream-support-will-end-july-11-2017"></a>平台支持提醒：Windows Phone 8.1 主流支持将于 2017 年 7 月 11 日结束
+<!-- 1327781 -->
+
+2017 年 7 月 11 日，Windows Phone 8.1 平台的主流支持将迎来结束。 Windows 8.1 电脑支持不受影响。
+
+不会对任何由 Intune 服务管理的 Windows Phone 8.1 设备产生即时影响。 注册的设备将继续工作，并且所有策略、配置和应用都将继续按预期方式工作。 请注意，对于 Intune 服务中的 Windows Phone 8.1 平台以及 Windows Phone 8.1 公司门户应用，不推出任何功能改进。 
+
+建议尽早将符合条件的 Windows Phone 8.1 设备升级到 Windows 10 移动版。 
+
+### <a name="changes-in-support-for-the-intune-ios-company-portal-app-----1164474----"></a>Intune iOS 公司门户应用的支持更改 <!-- 1164474  -->
+
+
+Microsoft Intune 公司门户应用 iOS 版即将会有新的版本，该版本仅支持运行 iOS 9.0 或更高版本的设备。 支持 iOS 8 的公司门户版本在未来短时间内仍将可用。 但是，请注意，如果你还使用启用了 MAM 的 iOS 应用（支持 iOS 9.0 和更高版本），需确保你的最终用户更新到最新 OS。 
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+虽然我们无法提供具体日期，但我们仍将此提前告知于你，以便你有时间做出计划。 请确保你的用户更新到 iOS 9+，且当公司门户应用发布后，请求最终用户更新其公司门户应用。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+
+鼓励用户更新到 iOS 9.0 或更高版本以充分利用 Intune 的新功能。  鼓励用户安装公司门户的新版本，从而利用它将提供的新功能。
+
+在 Azure 门户上转到 Intune，然后查看“设备”>“所有设备”，并按 iOS 版本进行筛选以查看任何操作系统早于 iOS 9 的当前设备。
+
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
 
 我们宣布将在接下来的几个月内推出一项更新，用以提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。
 
-若要查看使用凭据进行登录的以前的登录体验和新登录体验，以及从其他设备进行登录的新登录体验的屏幕快照，请参阅[应用 UI 中的新增功能](/intune/whats-new-app-ui)。
+若要查看使用凭据进行登录的以前的登录体验和新登录体验，以及从其他设备进行登录的新登录体验的屏幕截图，请参阅[应用 UI 中的新增功能](/intune/whats-new-app-ui)。
 
 ### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>做好应对更改的计划：Intune 将更改 Intune 合作伙伴门户体验<!-- 1050016 -->
 
@@ -204,4 +315,3 @@ Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求�
 * [云平台路线图](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [What's new in the Company Portal UI](whats-new-app-ui.md)（公司门户 UI 新增功能）
 * [前几个月的新增功能](whats-new-archive.md)
-

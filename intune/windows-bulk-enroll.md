@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/2017
+ms.date: 06/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: e647e215cede901fe351739393355aeadce37db4
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: 4e9dae27b981533dfff2080a5b7f9ca961509cd8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -85,8 +84,14 @@ Windows 设备的批量注册需要以下条件：
 
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Windows 批量注册的疑难解答
 
+### <a name="provisioning-issues"></a>设置问题
 配置旨在用于新的 Windows 设备上。 配置失败可能需要对设备进行恢复出厂设置或通过启动映像来恢复设备。 这些示例描述了配置失败的一些原因：
 
 - 如果因为缺少网络连接导致域加入过程失败，则尝试加入 Active Directory 域或不创建本地帐户的 Azure Active Directory 租户的配置包可能会使设备无法访问。
 - 通过配置包运行的脚本在系统上下文中运行，能够对设备文件系统和配置进行任意更改。 恶意或不正确的脚本可将设备置于仅能通过重置映像或恢复出厂设置才能将其恢复的状态。
 
+### <a name="problems-with-bulk-enrollment-and-company-portal"></a>有关批量注册和公司门户的问题
+如果用户尝试使用公司门户注册之前曾批量注册的设备，会收到警告，指示其设备需要执行进一步操作，如设置或注册。 设备已注册，但公司门户应用或站点不识别此注册。
+
+### <a name="conditional-access"></a>条件性访问
+条件性访问不适用于使用批量注册登记的 Windows 设备。

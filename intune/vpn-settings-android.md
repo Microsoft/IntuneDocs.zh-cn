@@ -1,7 +1,7 @@
 ---
 title: "适用于 Android 设备的 Intune VPN 设置"
 titleSuffix: Intune on Azure
-description: "了解可用于在 Android 设备上配置 VPN 连接的 Intune 设置。"
+description: "了解可用于在 Android 设备上配置 VPN 连接的 Intune 设置"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
-ms.openlocfilehash: 46c889b2ea08ff328c08793542b6e303a1634131
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/17/2017
-
-
+ms.openlocfilehash: 69def564b145e58c2d5b58183e4044ae1997091d
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的 VPN 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -67,4 +64,3 @@ ms.lasthandoff: 06/17/2017
     - **Pulse Secure**
 
 - **拆分隧道** - 启用该设置后，可在其他流量在 VPN 中使用 Internet 时，允许某些 Web 流量使用 VPN 连接。 如果你希望在活动时让所有流量均使用 VPN，请禁用此设置。
-

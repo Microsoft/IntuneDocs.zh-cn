@@ -15,15 +15,12 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>添加 Apple Configurator 序列号
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,7 +34,7 @@ ms.lasthandoff: 06/08/2017
 1. 创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加 IMEI 标识符，在右列添加详细信息。 目前，该列表的最大长度为 500 行。 在文本编辑器中，该 .csv 列表可能如下所示：
 
     F7TLWCLBX196,设备详细信息</br>
-    DLXQPCWVGHMJ,设备详细信息
+    DLXQPCWVGHMJ，设备详细信息
 
 2. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
@@ -76,4 +73,3 @@ ms.lasthandoff: 06/08/2017
 **查看序列号状态**
 
 在“Apple Configurator 序列号”边栏选项卡上，选择想查看其状态的序列号，然后在“状态”项中查看。
-

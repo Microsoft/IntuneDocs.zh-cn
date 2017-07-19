@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 9fad536aab83f0e8ae12aff8cab44943ae1ac82d
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
 > [!NOTE]
@@ -460,6 +457,17 @@ MAMTelemetryDisabled| 布尔值| 指定 SDK 是否会将任何遥测数据发送
 > [!NOTE]
 > 如果应用程序将发布到应用商店，根据应用商店标准，必须将 `MAMPolicyRequired` 设置为“否”。
 
+## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>为 iOS 应用程序启用面向 MAM 的配置
+面向 MAM 的配置允许应用通过 Intune App SDK 接收配置数据。 应用程序所有者/开发人员须定义此数据的格式和变体并将其传达给 Intune 客户。 Intune 管理员可以通过 Intune Azure 控制台确定并部署配置数据。 从适用于 iOS (v 7.0.1) 的 Intune App SDK 开始，参与面向 MAM 的配置的应用均可通过 MAM 服务获取面向 MAM 的配置数据。 通过 MAM 服务直接将应用程序配置数据推送到应用，而非通过 MDM 渠道。 Intune App SDK 提供一个类，可用于访问从这些控制台检索的数据。 请考虑以下先决条件： <br>
+* 访问面向 MAM 的配置 UI 之前，应用需注册 MAM-WE。 有关 MAM-WE 的详细信息，请参阅 [Intune App SDK 指南中的应用保护策略（不注册设备）](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment)。
+* 将 ```IntuneMAMAppConfigManager.h``` 包括在应用的源文件中。
+* 调用 ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` 以获取应用配置对象。
+* 对 ```IntuneMAMAppConfig``` 对象调用适当的选择器。 例如，如果应用程序密钥是一个字符串，则需要使用 ```stringValueForKey``` 或 ```allStringsForKey```。 ```IntuneMAMAppConfig.h header``` 文件描述返回值/错误条件。
+
+有关与面向 MAM 的配置值相关的 Graph API 功能的详细信息，请参阅 [Graph API 参考面向 MAM 的配置](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。 <br>
+
+关于如何在 iOS 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 iOS 的 Microsoft Intune 应用配置策略](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios)。
+
 ## <a name="telemetry"></a>遥测技术
 
 默认情况下，用于 iOS 的 Intune App SDK 会记录以下使用情况事件的遥测数据。 会将此数据发送到 Microsoft Intune。
@@ -656,4 +664,3 @@ Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这�
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     第一个命令用于从框架的 DYLIB 文件中删除模拟器体系结构。 第二个命令用于将仅设备 DYLIB 复制回框架目录。
-

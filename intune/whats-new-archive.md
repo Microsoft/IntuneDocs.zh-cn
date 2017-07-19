@@ -16,14 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 5661c6ef6f60fc11447f77283718c4f00347b25c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: cf2322a4009310e5dd561693ea6b3cdb97ab6e28
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -65,7 +63,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 
 ###  <a name="new-device-policies-for-ios----723774-723815-723826-723830---"></a>适用于 iOS 的新设备策略<!-- 723774, 723815, 723826, 723830 -->
 
-- **主屏幕上的应用** - 控制用户在[其 iOS 设备的主屏幕](home-screen-settings-ios.md)上看到的应用。 此策略将更改主屏幕的布局，但不会部署指定的任何未安装的应用。
+- **主屏幕上的应用** - 控制用户在[其 iOS 设备的主屏幕](home-screen-settings-ios.md)上看到的应用。 此策略将更改主屏幕的布局，但不会部署任何应用。
 
 - **与 AirPrint 设备的连接** - 控制 iOS 设备的最终用户可以连接到的 [AirPrint 设备](air-print-settings-ios-macos.md)（网络打印机）。
 
@@ -104,11 +102,11 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>同步 Apple VPP 应用商店的电子书 <!-- 800878 -->
 
-现在可以与 Intune [同步从 Apple 批量采购计划应用商店购买的书](vpp-apps-ios.md)，并将其分配给用户。
+现在可以将 Intune 与从 Apple 批量采购计划应用商店购买的书[同步](vpp-apps-ios.md)，并将其分配给用户。
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Samsung KNOX 标准版设备的多用户管理 <!-- 971988 -->
 
-现在，运行 Samsung KNOX 标准版的设备支持 Intune 进行[多用户管理](android-enroll.md)。 这意味着最终用户可以使用其 Azure Active Directory 凭据登录和注销设备，并且无论是否正在使用，都会集中管理设备。  当最终用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销时，会清除所有应用数据。
+现在，运行 Samsung KNOX 标准版的设备支持 Intune 进行[多用户管理](android-enroll.md)。 这意味着最终用户可以使用其 Azure Active Directory 凭据登录和注销设备，并且无论是否正在使用，都会集中管理设备。  最终用户登录时，可以访问应用，还可以获得已应用于应用的任何策略。 用户注销时，会清除所有应用数据。
 
 ### <a name="additional-windows-device-restriction-settings----818566---"></a>其他 Windows 设备限制设置 <!-- 818566 -->
 
@@ -116,7 +114,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 创意者更新的多用户支持 <!-- 822547 -->
 
-我们为运行 Windows 10 创意者更新的设备和加入 Azure Active Directory 域的设备添加了对[多用户管理](windows-enroll.md)的支持。 这意味着当不同的标准用户使用其 Azure AD 凭据登录设备时，他们将收到分配给其用户名的所有应用和策略。 用户当前无法将公司门户用于自助服务方案，如安装应用。
+我们为运行 Windows 10 创意者更新的设备和加入 Azure Active Directory 域的设备添加了对[多用户管理](windows-enroll.md)的支持。 这意味着不同的标准用户使用其 Azure AD 凭据登录设备时，他们将收到分配给其用户名的所有应用和策略。 用户当前无法将公司门户用于自助服务方案，如安装应用。
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 电脑的 Fresh Start <!-- 1004830 -->
 
@@ -169,10 +167,6 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 
 改进了设备操作报告，进而改善了性能。 此外，现可按状态筛选报告。 例如，可筛选报告以仅显示“已完成”的设备操作。
 
-### <a name="actions-for-non-compliance---730266--"></a>针对不合规的操作<!--730266-->
-
-“针对不合规的操作”是合规性策略的新功能，允许在不合规的设备上执行操作。 可指定单个或多个操作，并指定这些操作必然会发生的时间段。 例如，可在设备变为不合规后，立即通过电子邮件通知该不合规设备的用户，或可在 3 天宽限期后，通过条件性访问阻止不合规设备访问公司资源。
-
 ### <a name="custom-app-categories---748805--"></a>自定义应用类别<!--748805-->
 
 现可以为添加到 Intune 的应用创建、编辑和分配类别。 目前，只能以英文指定类别。
@@ -180,7 +174,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 
 ### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>将 LOB 应用分配给未注册设备的用户<!--748823-->
 
-现在，无论用户的设备是否已注册 Intune，都可以从应用商店向用户分配业务线应用。 如果用户设备未注册 Intune，他们必须转到公司门户网站（而非公司门户应用）安装它。
+现在，无论用户的设备是否已注册 Intune，都可以设置应用商店到用户业务线应用程序。 如果用户设备未注册 Intune，他们必须转到公司门户网站（而非公司门户应用）安装它。
 
 ### <a name="new-compliance-reports---846671--"></a>新符合性报告<!--846671-->
 
@@ -190,7 +184,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 - 单个设置的符合性状态
 - 单个策略的符合性状态
 
-还可使用这些报告向下钻取各个设备，查看影响该设备的特定设置和策略。
+还可使用这些报告深入了解各个设备，查看影响该设备的特定设置和策略。
 
 <!--- You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
 
@@ -282,4 +276,3 @@ Azure 门户不支持 Apple 设备注册计划 (DEP) 设备序列号的“默认
 
 ### <a name="see-also"></a>另请参阅
 有关最近开发的详细信息，请参阅 [Microsoft Intune 中的新增功能](whats-new.md)。
-

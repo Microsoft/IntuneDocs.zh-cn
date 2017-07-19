@@ -14,15 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 95edaa22f90743bb2821f2f656fdb8e9013c4b35
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的条件性访问与 Intune 的协作
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -53,6 +50,8 @@ ms.lasthandoff: 06/08/2017
     - 适用于 iOS 和 Android 的 Microsoft PowerPoint
     - 适用于 iOS 和 Android 的 Microsoft OneDrive for Business
     - 适用于 iOS 的 Microsoft OneNote
+<br></br>
+- **Microsoft Teams**
 
     > [!NOTE] 
     > 基于应用的条件性访问[还支持 LOB 应用](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)，但这些应用需要使用 [Office 365 现代身份验证](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)。
@@ -92,9 +91,6 @@ ms.lasthandoff: 06/08/2017
 11.  将企业电子邮件发送到用户的邮箱。
 
 ## <a name="next-steps"></a>后续步骤
-[为 MAM 应用创建 Exchange Online 策略](app-based-conditional-access-intune-exchange-online-create.md)
-
-[为 MAM 应用创建 SharePoint Online 策略](app-based-conditional-access-intune-sharepoint-online-create.md)
+[创建基于应用的条件性访问策略](app-based-conditional-access-intune-create.md)
 
 [阻止不具有新式验证的应用](app-modern-authentication-block.md)
-

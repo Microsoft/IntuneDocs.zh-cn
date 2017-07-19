@@ -14,20 +14,17 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 62b17061d78387627ec2134937ba0b77fef85dbe
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 560ce922fa58e759157358c6b7348fe0388ce408
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>对比作为计算机或移动设备管理 Windows 电脑
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-组织可以使用 Microsoft Intune 作为具有移动设备管理 (MDM) 的移动设备或具有 Intune 软件客户端的计算机来管理 Windows 电脑。  Microsoft 建议客户尽可能使用 MDM Windows 电脑管理解决方案。 但是，为了帮助你更好地了解这些选项之间的差异，以下图表对两个管理选项做了比较：
+组织可以使用 Microsoft Intune 作为具有移动设备管理 (MDM) 的移动设备或具有 Intune 软件客户端的计算机来管理 Windows 电脑。  Microsoft 建议客户尽可能使用 MDM 管理解决方案。 但是，为了帮助你更好地了解这些选项之间的差异，以下图表对两个管理选项做了比较：
 
 |**功能/方案** |**Windows 作为计算机**<br>Intune 软件客户端 | **Windows 作为移动设备**<br>MDM |
 |--------------|-------------------------------|-------------------------------|
@@ -53,4 +50,3 @@ ms.lasthandoff: 06/08/2017
 - **简洁性** - 使用在操作系统中包含的现代管理功能，无需依赖已下载软件客户端
 - **一致性** - 像管理组织中所有其他移动设备一样管理 Windows 电脑
 <!-- - **Cloud optimization** - -->
-

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: b4bbddaedffe1ec171d77654af3e0e79ae23df09
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 743eb9a71efe1a5ea18b15312fdd4fe684f0ff07
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>适用于 iOS 和 macOS 设备的 AirPrint 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -34,7 +31,7 @@ ms.lasthandoff: 06/08/2017
 
 使用此过程将 AirPrint 信息添加到 AirPrint 负载，以便 iOS 设备用户可以打印到已知的 AirPrint 打印机。
 
-1. 在连接到同一本地网络（子网）作为 Airprint 打印机的 Mac 上，打开终端（从“/应用程序/实用程序”）
+1. 在连接到同一本地网络（子网）作为 AirPrint 打印机的 Mac 上，打开终端（从“/应用程序/实用程序”）
 2. 在终端中，键入“ippfind”，然后按 Enter 键。
 3. 记下该命令返回的任何打印机信息，例如：**ipp://myprinter.local.:631/ipp/port1**。 该信息的第一部分是你的打印机的名称，最后一部分是资源路径。
 4. 在终端中，键入“ping myprinter.local”，然后按 Enter 键。
@@ -49,3 +46,7 @@ ms.lasthandoff: 06/08/2017
 
 此外，还可以从逗号分隔值 (.csv) 文件导入打印机列表或导出该列表。
 
+
+## <a name="next-steps"></a>后续步骤
+
+现在可将设备配置文件分配到所选择的组。 有关详细信息，请参阅[如何分配设备配置文件](device-profile-assign.md)。

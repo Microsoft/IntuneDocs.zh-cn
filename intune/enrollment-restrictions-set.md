@@ -1,12 +1,12 @@
 ---
 title: "在 Intune 中设置注册限制"
 titleSuffix: Intune on Azure
-description: "按平台限制注册，并在 Intune 中设置设备注册限制。 &quot;"
+description: "按平台限制注册，并在 Intune 中设置设备注册限制。 \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,52 +15,54 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: b13ec0113096e4efc83463ed09e4c0db7fd7d6e1
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: 2dfcba8c788f262ce816dcd23dc2921fd57f331b
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-可对允许进行注册的设备的类型和最大数量进行设置。 在“注册限制”边栏选项卡上，可以设置：
+作为 Intune 管理员，可决定哪些设备可注册 Intune 管理。 使用 Intune 门户设置以下设备注册限制：
 
-- 允许进行注册的平台，以及是否阻止私人拥有的 Android 和 iOS 设备的注册。
+- 最大设备注册数
+- 可注册的设备平台：
+  - Android
+  - iOS
+  - macOS
+  - Windows
+- 限制私人拥有的设备（仅 iOS 和 Android）
 
-- 允许用户注册的设备的最大数量。
+>[!NOTE]
+>注册限制不是一项安全功能。 遭到入侵的设备可能会误报字符。 这些限制是针对非恶意用户的最合适的障碍。
 
 ## <a name="set-device-type-restrictions"></a>设置设备类型限制
+默认注册限制适用于未分配有更高优先级注册限制的所有用户。  
+1. 在 Intune 门户中，选择“设备注册”，然后选择“注册限制”。
+![设备限制工作区的屏幕截图，其中含有默认设备类型限制和与设备限制相关的限制。](media/device-restrictions-set-default.png)
+2. 在“注册限制” > “设备类型限制”下，选择“默认”。
+3. 在“所有用户”下，选择“平台”。 为每个平台选择“允许”或“阻止”：
+  - **Android**
+  - **iOS**
+  - **macOS**
+  - **Windows**
 
-1. 在 Intune 门户中，选择“注册设备”，然后选择“注册限制”。
+  单击“保存” 。
+4. 在“所有用户” 中，选择“平台配置”，然后选择以下配置：
+  - “私人拥有”**-** 对于 Android 和 iOS 设备，指定是“允许”还是“阻止”。
+  ![设备限制工作区的屏幕截图，含默认设备平台配置，其中显示已配置私人所有的设置。](media/device-restrictions-platform-configurations.png)
+  单击“保存” 。
 
-2. 在“设备类型限制”下，选择“默认”。
-
-3. 在“所有用户”边栏选项卡上，选择“平台”。
-
-4. 对于允许在 Intune 中注册的平台，选择“允许”。 对于想阻止其注册的平台，选择“阻止”。 默认情况下，平台设置为“允许”。
-
-    >[!NOTE]
-    >这些设置不适用于或会阻止使用 Intune 软件客户端进行的 Windows 注册。 这些设置仅影响使用移动设备管理进行的注册。
-
-6. 选择“保存”。
-
-7. 选择“平台配置”。
-
-8. 选择“允许”或“阻止”个人拥有的 iOS 和 Android 设备进行注册。
-
-9. 选择“保存”。
+>[!NOTE]
+>如果阻止私人拥有的 Android 设备进行注册，Android for Work 设备仍可进行注册。
 
 ## <a name="set-device-limit-restrictions"></a>设置设备限制
-
+默认注册限制适用于未分配有更高优先级注册限制的所有用户。  
 1. 在 Intune 门户中，选择“设备注册”，然后选择“注册限制”。
+2. 选择“注册限制” > “设备限制”。
+3. 在“所有用户”下，选择“设备限制”。 指定每个用户的最大注册设备数。  
+![含设备限制的设备限制边栏选项卡的屏幕截图。](./media/device-restrictions-limit.png)
 
-3. 在“设备限制”下，选择“默认”。
-
-4. 在“所有用户”边栏选项卡上，选择“设备限制”。
-
-5. 选择用户可以注册的最大设备数量，然后选择“保存”。
-
+  单击“保存” 。

@@ -15,15 +15,12 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: 1d74fbcebfe89bbafc545d11dd6316cb602db8ee
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/17/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -78,7 +75,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 1. 创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加 IMEI 标识符，在右列添加详细信息。 目前，该列表的最大长度为 500 行。 在文本编辑器中，该 .csv 列表可能如下所示：
 
     F7TLWCLBX196,设备详细信息</br>
-    DLXQPCWVGHMJ,设备详细信息
+    DLXQPCWVGHMJ，设备详细信息
 
 2. 在 Azure 门户中，选择“注册设备”，然后选择“Apple 注册”。
 3. 在“管理 Apple Configurator 注册设置”下，选择“Apple Configurator 序列号”。
@@ -114,7 +111,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
   > [!WARNING]
   > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 连接设备时，设备应处于 **Hello** 屏幕界面。
   2. 在“首选项”窗格中，选择“服务器”，然后选择加号 (+) 启动 MDM 服务器向导。 选择“下一步”。
-  3. 在使用 Microsoft Intune 对 iOS 设备注册设置助理的情况下，为 MDM 服务器输入主机名称或 URL以及注册 URL。 对于注册 URL，请输入从 Intune 中导出的注册配置文件 URL。 选择“下一步”。  
+  3. 在使用 Microsoft Intune 对 iOS 设备注册设置助理的情况下，为 MDM 服务器输入主机名称或 URL以及注册 URL。 对于注册 URL，请输入从 Intune 中导出的注册配置文件 URL。 选择**下一步**。  
 
     可安全忽略警告“未验证服务器 URL”。 若要继续，请选择“下一步”，直到完成该向导。
   4.  用 USB 适配器将 iOS 移动设备连接到 Mac 计算机。
@@ -162,4 +159,3 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 ## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>用户如何在其设备上安装和使用公司门户
 
 配置了用户关联的设备可以安装和运行公司门户应用，以下载应用和管理设备。 用户收到设备后，必须完成如下所述的其他步骤，才能完成设置助理并安装公司门户应用。
-

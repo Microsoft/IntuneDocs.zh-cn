@@ -1,6 +1,6 @@
 ---
 title: "Lookout 移动威胁防御连接器与 Intune"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "设置 Lookout 移动威胁防御连接器与 Intune。"
 keywords: 
 author: andredm7
@@ -15,15 +15,12 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d21f440ee6806b545d2b346559d6516993a9cbf
-ms.openlocfilehash: 24b75be721281f58e930e48bfbe28039c8357d7b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/14/2017
-
-
+ms.openlocfilehash: a7b76d62c8ab095dc4e631afda5e9f66c92134df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout 移动威胁防御连接器与 Intune
 
 可根据 Lookout 给出的风险评估，控制移动设备对公司资源的访问，Lookout 是与 Microsoft Intune 集成的移动威胁防御解决方案。 基于通过 Lookout 服务从设备收集的遥测评估风险，包括：
@@ -95,9 +92,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 
 ## <a name="next-steps"></a>后续步骤
 要实施此解决方案，必须执行以下几个主要步骤：
-1.  [设置 Lookout 订阅](lookout-mtd-subscription-setup.md)
-2.  [在 Intune 中启用 Lookout 移动威胁防御](lookout-mtd-connector-enable.md)
-3.  [配置和部署 Lookout for Work 应用](lookout-for-work-app-configure-deploy.md)
-4.  [配置 Lookout 设备符合性策略](lookout-device-compliance-policy-create.md)
-5.  [Lookout 移动威胁防御集成故障排除](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
-
+1.  [设置 Lookout 集成](lookout-mtd-connector-integration.md)
+2.  [在 Intune 中启用 Lookout 移动威胁防御](mtd-connector-enable.md)
+3.  [添加和分配 Lookout for Work 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4.  [配置 Lookout 设备符合性策略](mtd-device-compliance-policy-create.md)

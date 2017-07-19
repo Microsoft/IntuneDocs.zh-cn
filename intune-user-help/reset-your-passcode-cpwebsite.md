@@ -5,37 +5,33 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何从公司门户网站重置设备密码
 
 如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](http://portal.manage.microsoft.com)进行重置。 可使用公司门户网站管理在 Intune 中注册的计算机和设备，还可以用于执行大多数使用公司门户应用时执行的相同任务。
 
 > [!NOTE]
-> 很可能你在公司门户网站中看不到“重置密码”按钮。 如果看不到该按钮，将需要联系 IT 管理员以通过公司门户网站获得支持。
+> 如果使用企业注册设备，在公司门户网站上可能看不到“重置密码”按钮。 如果看不到，请联系 IT 管理员为你重置密码。
 
 重置密码：
 
-1.  在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
+1.  在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/intune/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
 2. 在“我的设备”页上，选择想要重置密码的设备名称。
 
@@ -55,7 +51,10 @@ ms.lasthandoff: 05/23/2017
 
   不同的设备具有不同的密码类型。
 
-  **Android**：删除现有密码，然后使用字母和数字创建临时密码
+  **Android**：删除现有密码，然后使用字母和数字创建临时密码 
+  
+  > [!NOTE]
+  > 不能为 Android 7.0 或更高版本的设备重置密码。 如果忘记密码，必须将设备重置为出厂设置。
 
   **iOS**：删除现有密码且不创建临时密码。 如果你使用 Touch ID 指纹扫描仪打开设备或购买商品，你将需要再次设置。
 
@@ -70,4 +69,3 @@ ms.lasthandoff: 05/23/2017
 若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
-

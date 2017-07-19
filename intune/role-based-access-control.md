@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
-ms.openlocfilehash: 0e4b474ef53ba730c5c88e43cae4f607e627481c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/13/2017
-
-
+ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="role-based-administration-control-rbac-with-intune"></a>使用 Intune 的基于角色的管理控制 (RBAC)
 
 RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，以及这些任务适用于哪些人员。 可以使用涵盖一些常见 Intune 方案的内置角色，也可以创建自己的角色。 角色是根据以下几点定义的：
@@ -40,6 +37,8 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 - **全局管理员：**具有此角色的用户可访问 Azure AD 中的所有管理功能以及与 Azure AD 联合的服务（如 Exchange Online、SharePoint Online 和 Skype for Business Online）。 注册 Azure AD 租户的人员均将成为全局管理员。 只有全局管理员才能分配其他 Azure AD 管理员角色。 组织中可以有多个全局管理员。 全局管理员可以重置任意用户和所有其他管理员的密码。
 
 - **Intune 服务管理员：**服务存在时，具有该角色的用户拥有 Intune 内的全局权限。 另外，该角色提供管理用户、设备和以及创建并管理组的功能。
+
+- 条件性访问管理员：具有此角色的用户仅有权查看、创建、修改和删除条件性访问策略。
 
     > [!IMPORTANT]
     > Intune 服务管理员角色不提供管理 Azure AD 条件性访问设置的功能。

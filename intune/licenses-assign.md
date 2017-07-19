@@ -14,15 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4f84acfa48c0de6e1478be3ee8624a7fd4841ad
-ms.openlocfilehash: 6116ccd5614a1ff3eb528f8f0ac2eb87565534a2
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/16/2017
-
-
+ms.openlocfilehash: 317fad8beb708a10a4dbf81a04f03c2faab41925
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="assign-intune-licenses-to-your-user-accounts"></a>将 Intune 许可证分配给用户帐户
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -39,6 +36,8 @@ ms.lasthandoff: 06/16/2017
 
 3.  将 **Intune** 或**企业移动性 + 安全性**切换为“打开”，然后选择”保存”。
 
+  ![Office 365 门户分配产品许可证的图像。](./media/office-assign-license.png)
+
 4. 现在，该用户帐户拥有所需的权限，可以使用该服务并在管理组件中注册设备。
 
 > [!NOTE]
@@ -53,7 +52,7 @@ ms.lasthandoff: 06/16/2017
 
 ![产品许可证设置图像](./media/i4e-set-licenses.png)
 
-请参阅此[学校数据同步概述](https://support.office.com/en-us/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US)，了解有关 SDS 的详细信息。
+请参阅此[学校数据同步概述](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US)，了解有关 SDS 的详细信息。
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>用户和设备许可证如何影响对服务的访问
 * 每个你向其分配用户软件许可证的**用户**，均可访问和使用联机服务和相关软件（包括 System Center 软件）来管理应用程序和多达 15 台的设备。
@@ -99,4 +98,3 @@ ms.lasthandoff: 06/16/2017
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
-
