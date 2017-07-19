@@ -1,12 +1,6 @@
 # 了解和探索
 ## [Intune 简介](/intune/introduction-intune?toc=/intune-classic/toc.json)
 ## [教育的 Intune](/intune/introduction-intune-education?toc=/intune-classic/toc.json)
-## [注册免费试用版](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
-## [评估 Intune MDM](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
-### [创建用于组织用户和设备的组](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [创建策略并发布应用](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [其他选项和其他功能](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [转换为付费订阅](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [MAM 和应用保护常见问题解答](understand-explore/mam-faq.md)
 ## [常见方案](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
