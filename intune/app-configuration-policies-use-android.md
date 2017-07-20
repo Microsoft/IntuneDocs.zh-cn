@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>如何使用适用于 Android for Work 的 Microsoft Intune 应用配置策略
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 07/01/2017
 
 将创建该策略并在“策略列表”边栏选项卡上显示。
 
-然后，照常继续[分配](apps-deploy.md)和[监视](apps-monitor.md)应用。
+
 
 当分配的应用在设备上运行时，将使用你在应用配置策略中配置的设置运行。
 
@@ -89,3 +89,8 @@ ms.lasthandoff: 07/01/2017
 8. 要分配应用配置策略，请依次选择“应用配置策略”、“分配”，然后选择“选择组”。
 9. 选择要分配的组，然后选择“选择”。
 10. 选择“保存”以分配策略。
+
+## <a name="next-steps"></a>后续步骤
+
+照常继续[分配](apps-deploy.md)和[监视](apps-monitor.md)应用。
+

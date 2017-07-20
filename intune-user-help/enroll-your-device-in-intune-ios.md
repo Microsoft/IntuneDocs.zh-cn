@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,27 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>在 Intune 中注册 iOS 设备
 
 如果你的公司或学校使用 Microsoft Intune，则可以注册 iOS 设备以获取对公司电子邮件、文件和其他资源的访问权限。 注册设备时，IT 部门可以管理这些工作或学校资源，使其保持安全，并使你可以自由地使用首选设备来完成工作。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
-> 若要注册 macOS 设备（如 MacBook Pro 或 iMac），请[改用这些说明](enroll-your-device-in-intune-macos.md)。
+> 如果尝试注册 macOS 设备（如 MacBook Pro 或 iMac），请[改用这些说明](enroll-your-device-in-intune-macos.md)。
 
 **准备工作：**
 
-- 确保在开始步骤之后完成注册。 暂停超过几分钟后，通常会停止该过程，并需要重新启动。
-- 如果出于任何原因注册失败，将需要返回到公司门户应用以重试。
+- 确保在开始步骤之后完成注册。 暂停超过几分钟后，通常会停止该过程，并需要重启。
+- 如果出于任何原因注册失败，则需返回公司门户应用以重试。
 - 确保 Wi-Fi 正常工作。 否则，注册将失败。
-- 如果在设备上阻止了 Safari，请对其解除阻止。 必须使用 Safari 才能注册。
+- 如果在设备上阻止了 Safari，请对其解除阻止。 设备注册过程中，需要使用 Safari。
 
 
 **注册 iOS 设备：**
@@ -51,8 +51,8 @@ ms.lasthandoff: 07/01/2017
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-> [!NOTE]
-> 黄色三角形并不意味着发生了错误。 这些图标指示注册过程中仍存在需要完成的步骤。
+  > [!NOTE]
+  > 黄色三角形并不意味着发生了错误。 这些图标指示注册过程中仍存在需要完成的步骤。
 
 4. 查看 IT 管理员在你的已注册设备上可以看到和不可以看到的内容的列表，然后点击“继续”。
 
@@ -88,7 +88,7 @@ ms.lasthandoff: 07/01/2017
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
-12. 在“公司访问设置”屏幕上，点击“继续”。 如果 IT 管理员设置了其他安全要求（例如需要设置密码），请按照屏幕上的说明进行操作，直到满足所有合规性要求并返回到“公司访问设置”屏幕，然后点击“继续”。
+12. 在“公司访问设置”屏幕上，点击“继续”。 此屏幕显示使设备符合要求需执行的其他操作，例如设置密码。 请按照屏幕上的说明操作，直至满足所有符合性要求。 完成后，返回“公司访问设置”屏幕。 点击“继续”。
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -99,6 +99,6 @@ ms.lasthandoff: 07/01/2017
 你的设备现已在 Intune 中注册，你会返回到公司门户应用。
 
 > [!Note]
-> 如果组织使用的是电信费用管理软件，则还需要完成其他几个步骤才能完全注册设备。 请单击[此处](enroll-your-device-with-telecom-expense-management-ios.md)，查看详细信息。
+> 在完成设备注册前，还有几步要做。 了解关于[使用电信费用管理注册设备](enroll-your-device-with-telecom-expense-management-ios.md)的详细信息。 如果组织正在使用 Apple 的设备注册计划，请在[此处](enroll-your-device-dep-ios.md)了解详细信息。
 
 仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
