@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca51c413e3148039b05a9d05a9a511e7158c9a1c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 361777884187937632b2af02d7a7f15f0574193f
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 设备限制设置
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 ### <a name="work-profile-password"></a>工作配置文件密码
 - **需要工作配置文件密码** -（启用了工作配置文件的 Android 7.0 和更高版本）定义只适用工作配置文件中应用的密码策略。 默认情况下，最终用户可以选择使用两个单独定义的 PIN，或者他们可以选择将两个定义的 PIN 合并为二者中较强大的一个 PIN。
 - **最短密码长度** - 输入用户密码必须包含的最少字符数 (**4**-**16**)
-- **屏幕锁定之前处于非活动状态的最大分钟数** - 选择处于非活动状态的设备要求用户重新输入工作配置文件密码以在工作配置文件中运行应用之前的时长。
+- 屏幕锁定前的最大非活动分钟数 - 选择工作配置文件锁定前的时间。 然后，用户必须输入凭据才能重获访问权限。
 - **擦除设备前登录失败的次数** - 输入擦除设备上的工作配置文件之前允许输入错误密码的次数。
 - **密码过期（天数）**- 输入必须更改最终用户的密码前的天数（从 **1**-**255**）。
 - **所需的密码类型** - 选择在设备上必须设置的密码类型。 选择：
@@ -77,3 +77,7 @@ ms.lasthandoff: 07/01/2017
 - **防止重用以前的密码** - 在重用旧密码前，必须输入已使用的新密码的数字（从 **1**-**24**）。
 - **指纹解锁** - 阻止最终用户使用设备指纹扫描程序以对其解锁。
 - **Smart Lock 和其他信任代理** - 允许在兼容的设备上控制 Smart Lock 功能。 如果设备处于可信位置（例如当它连接到特定蓝牙设备时，或者在 NFC 标记附近时），则此手机功能（有时称为信任代理）使你可以禁用或绕过设备锁屏界面密码。可以使用此设置来防止用户配置 Smart Lock。
+
+## <a name="next-steps"></a>后续步骤
+
+使用[如何配置设备限制设置](device-restrictions-configure.md)主题中的信息保存配置文件，并将其分配给用户和设备。

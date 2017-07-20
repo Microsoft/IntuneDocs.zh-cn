@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,35 +16,36 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 269ad7968242f8f5ce7095c9c73347987675e846
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 370fbcf8bb424030eb7b7dbaba66fa943f08aa42
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>你的 Android 设备似乎已加密，但公司门户将该设备识别为未加密
 
-加密设备是指在设备上使用只有你自己知道的密钥编码信息，用以防止未经授权的人员访问设备。 为确保信息安全，组织会要求加密 Android 设备才能访问公司文件、电子邮件或数据。
+加密设备是指在设备上使用只有你自己知道的密钥编码信息。 这可防止未经授权的人员访问设备。 许多组织要求用户先加密 Android 设备，才能访问公司文件、电子邮件或数据。
 
 ## <a name="common-issues"></a>常见问题
 
-较新版本的 Android（尤其是以 v7.0 开头的），需要启动密码以确保你的设备已完全加密。 不同设备制造商的启动密码说明和位置会有所不同。 大多数情况下，这称为“安全启动”。 
+较新版本的 Android（尤其是以 v7.0 开头的），需要启动密码以确保你的设备已完全加密。 不同设备制造商的启动密码说明和位置会有所不同。 大多数情况下，此设置称为“安全启动”。 
 
 ## <a name="solutions"></a>解决方案
 
 ### <a name="add-a-startup-pin"></a>添加启动 PIN
 
-某些 Android 设备将要求你创建启动 PIN，以确保设备的安全。 有多个来自不同制造商版本的 Android。 你可以尝试通过在设置应用中查找位置启用此选项来解决此问题。 例如，在 Samsung Galaxy S7 上，通过转到“设置” > “锁定屏幕和安全性” > “安全启动”启用“安全启动”。  
+某些 Android 设备需要创建启动 PIN，确保设备安全。 有多个来自不同制造商版本的 Android。 你可以尝试通过在设置应用中查找位置启用此选项来解决此问题。 例如，在 Samsung Galaxy S7 上，通过转到“设置” > “锁定屏幕和安全性” > “安全启动”启用“安全启动”。  
 
 ### <a name="downgrade-your-version-of-android"></a>降级 Android 版本
+
 如果设备提供降级到 Android 6.0+ 的选项，请进行降级。 如果尝试进行设备降级，将存在数据丢失的风险。 若要避免此风险，建议联系 IT 管理员解决此问题。 可在[公司门户网站](http://portal.manage.microsoft.com)获取 IT 管理员的联系信息。
 
 ## <a name="specific-manufacturer-issues"></a>特定制造商问题
 
-一些 Android 设备（版本 7.0+）会以与某些 Android 平台标准不同的方式加密数据。 这些设备可能看起来已加密，但 Intune 认为所使用的这些方法会让设备信息受到具有对设备的物理访问权限的恶意用户的威胁。
+一些 Android 设备（版本 7.0+）会以与某些 Android 平台标准不同的方式加密数据。 即使这些设备是全新的，也有可能显示已加密。 Intune 认识到，这些设备的加密方法会对设备信息构成风险。 这种风险主要源自对设备拥有物理访问权限的恶意用户。
 
 > [!Note]
-> Microsoft 将与制造商协作以解决我们在测试中发现的，或用户上报的任何问题。 每当有可用的新信息时，我们将更新本文。 
+> Microsoft 将与制造商协作以解决我们在测试中发现的，或用户上报的任何问题。 每当有新的信息可用时，我们会更新本文。 
 
 ## <a name="known-devices"></a>已知设备
 
@@ -57,5 +58,8 @@ ms.lasthandoff: 07/01/2017
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>目前无法更新来解决此问题的已知设备
 
+无法在下列设备上解决此问题。 可能需要使用其他设备来访问公司资源。 
+
 - [华为 Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [华为 Mate 9](http://consumer.huawei.com/en/phones/mate9/)
 - [小米 Mi 智能手机](https://xiaomi-mi.com/mi-smartphones/)
