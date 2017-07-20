@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3129b2a8d93e91493455da5f3e5fd1a59dd77bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9ea12f3707b830f0e3426526a7ae91d176d6e809
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="basic-setup"></a>基本设置
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 评估环境后，即可设置 Intune。
 
@@ -30,27 +27,25 @@ ms.lasthandoff: 07/01/2017
 
 ### <a name="identity"></a>标识
 
-Intune 要求 Azure Active Directory (AAD) 作为标识和用户分组提供者。
+Intune 要求 Azure Active Directory (AAD) 作为标识和用户分组提供者。 了解详细信息：
 
--   了解有关[标识要求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)的详细信息。
+-  [身份要求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   了解有关[目录同步要求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)的详细信息。
+-   [目录同步路线图](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   了解有关[多重身份验证要求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)的详细信息。
+-   [多重身份验证 (MFA) 要求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
--   了解有关[规划用户和设备组](/intune/users-permissions-add)的详细信息。
+-   [规划用户和设备组](users-add.md)
 
--   了解[如何创建用户和设备组](/intune/groups-get-started)。
+-   [如何创建用户和设备组](groups-get-started.md)
 
-如果组织已在使用 Office 365，则 Intune 务必使用相同的 Azure Active Directory 环境。
+如果组织已在使用 Office 365，则 Intune 必须使用相同的 Azure Active Directory 环境。
 
 ### <a name="pki-optional"></a>PKI（可选）
 
-如果打算将针对 VPN、Wi-Fi 或电子邮件配置文件的基于证书的身份验证与 Intune 结合使用，需确保具有受支持的 [PKI 基础结构](/intune/certificates-configure)，并准备好创建和部署证书配置文件。
+如果打算将针对 VPN、Wi-Fi 或电子邮件配置文件的基于证书的身份验证与 Intune 结合使用，需确保具有受支持的 [PKI 基础结构](certificates-configure.md)，并准备好创建和部署证书配置文件。 有关在 Intune 中配置证书的详细信息，请参阅：
 
-以下介绍了有关在 Intune 中配置证书的详细信息。
-
--   [如何配置 SCEP 证书基础结构](/intune/certificates-scep-configure)。
+-   [如何配置 SCEP 证书基础结构](/intune/certificates-scep-configure)
 
 -   [如何配置 PFX 证书基础结构](/intune/certficates-pfx-configure)。
 
@@ -75,15 +70,15 @@ Intune 要求 Azure Active Directory (AAD) 作为标识和用户分组提供者�
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>任务 3：将 MDM 机构设置为 Intune
 
-可以通过 Azure 门户或 Configuration Manager 当前分支控制台管理 Intune。 除非你需要将 Intune 与 Configuration Manager 当前分支部署相集成，否则建议从 [Azure 门户](https://portal.azure.com)管理 Intune。
+可以通过 Azure 门户或 Configuration Manager 当前分支控制台管理 Intune。 除非需要将 Intune 与 Configuration Manager Current Branch 部署相集成，否则建议从 [Azure 门户](https://portal.azure.com)管理 Intune。
 
-将你的 MDM 机构设置为**Intune** 以启用 Intune Azure 门户。 使用不同的 MDM 机构以使 Intune 将 MDM 管理传输到备用 Microsoft 管理控制台。 这种情况并不常见。
+将 MDM 机构设置为 Intune，启用 Intune Azure 门户。 使用不同的 MDM 机构以使 Intune 将 MDM 管理传输到备用 Microsoft 管理控制台。 这种情况并不常见。
 
 > [!IMPORTANT]
 > 如果你是第一次将移动设备管理传输到 Intune，则应将 MDM 机构设置为 Intune。
 
--   了解[如何设置移动管理机构](/intune/mdm-authority-set)。
+了解[如何设置移动管理机构](mdm-authority-set.md)。
 
 ## <a name="next-step"></a>下一步
 
-[配置设备和应用管理策略](migration-guide-configure-policies.md)
+配置[设备和应用管理策略](migration-guide-configure-policies.md)。

@@ -1,11 +1,11 @@
 ---
 title: "Intune 测试和验证"
-description: "本文为你提供在环境中测试和验证 Intune 仅云解决方案时需考虑的所有详细信息。"
+description: "在环境中测试和验证仅限云的 Intune 解决方案时需考虑的细节。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,48 +13,41 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 4ea2974c4724564cd8f9972fdb238b06d1b100e6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ddeb71c6a678ff42b5075d65c2bb4e0d89ae47f1
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
 # <a name="intune-testing-and-validation"></a>Intune 测试和验证
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
+测试阶段在实现阶段和实现之后都会发生。 为了测试以前标识的所有必需的 IT（管理员）和最终用户（用例）方案，需要测试帐户、组和设备。
 
-测试阶段应在实现阶段过程中和之后进行，你需要有测试帐户、组以及用于测试之前确定的所有必要 IT（管理员）和最终用户（用例）场景的设备。
-
-建议将 IT 支持/支持人员纳入测试阶段，以便创建支持文档，且 IT 支持/支持人员适应支持该产品。 如果组件或场景在该用例的基础上不起作用，请确保记录必需的更改并附上进行更改的原因。
+建议将 IT 支持和支持人员纳入测试阶段，以便创建支持文档，且 IT 支持和支持人员能够轻松提供对该产品的支持。 如果组件或场景在该用例的基础上不起作用，请确保记录必需的更改并附上进行更改的原因。
 
 ## <a name="before-you-begin"></a>在开始之前
 
 建议记录以下内容：
 
--   **测试条件：**确定针对其进行测量的基准。
+-   测试条件：确定针对其进行测量的基准。
 
--   **设计组件：**必须至少存在于 1 个测试条件。
+-   设计组件：必须存在于至少 1 个测试条件。
 
-如果设计组件未至少存在于 1 个符合要求或场景的测试条件中，请考虑该设计组件是否必需。 此外，请确保具备以下项：
+如果设计组件未存在于至少 1 个符合要求或场景的测试条件中，请考虑该设计组件是否必需。 此外，请确保具备以下项：
 
--   **帐户：**测试中使用的帐户应为许可 EMS 和 Office 365 测试所有用例场景的测试帐户。
+-   帐户：测试帐户应为许可 EMS 和 Office 365 测试所有用例场景的测试帐户。
 
--   **设备：**此时使用的设备应为测试设备，这些设备可能会被清除或重置为出厂默认值。
+-   设备：测试设备可擦除或重置为出厂默认设置。
 
--   **集成组件：**如果需要，应安装和配置所有集成组件（证书连接器、适用于托管 Exchange 的 Intune 服务间连接器和 Intune 本地 Exchange Connector）。
+-   集成组件：如果需要，应安装和配置所有集成组件（证书连接器、适用于托管 Exchange 的 Intune 服务间连接器和 Intune 本地 Exchange Connector）。
 
 可能需要进行设计更改以适应无法预料的困难。 此外，应完整记录所有设计更改，并随附每项更改的原因。 以下示例演示了可能的更改：
 
--   你可能会意识到你不满足网络设备注册服务 (NDES) 的要求，并且还了解到在没有 NDES 实现的情况下，可使用满足相同要求的根 CA 来配置 VPN 和 Wi-Fi 配置文件。
+<blockquote>你意识到自己不满足网络设备注册服务 (NDES) 的要求，还了解到在没有 NDES 实现的情况下，可使用满足相同要求的根 CA 来配置 VPN 和 Wi-Fi 配置文件。</blockquote>
 
-在测试和验证过程中，你可能会遇到需要技术指导或专门的故障排除的挑战或问题。 建议通过 Microsoft 支持渠道寻求帮助。
+在测试和验证过程中，可能会遇到需要技术指导或专项疑难解答的挑战或问题。 建议通过 Microsoft 支持渠道寻求帮助。
 
--   [了解如何获得 Intune 支持](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
-
--   [Microsoft Intune 常规疑难解答提示](/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
-
--   [了解如何获取对 Microsoft Intune 的支持。](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
+-   [了解如何获得 Intune 支持](get-support.md)
 
 -   [联系 Microsoft Intune 的辅助电话支持](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
 
@@ -66,20 +59,22 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="use-case-validation-testing"></a>用例验证测试
 
-应执行用例验证测试，验证场景是否完整且实用。 存在两种类型的用例场景 - IT 管理员和最终用户。
+执行用例验证测试，验证场景是否完整且实用。 存在两种类型的用例场景：IT 管理员和最终用户。
 
 ### <a name="it-admin"></a>IT 管理员
 
-应执行 IT 管理员验证测试，验证在设备上执行的操作或用户功能是否正确。 请查看下面的 IT 管理端到端验证场景示例。
+执行 IT 管理员验证测试，验证在设备上执行的操作或用户功能是否正确。 请查看下面的 IT 管理员端到端验证场景示例。
 
 ![第 9 节表 2](./media/section-9-image-2-table.PNG)
 
 ### <a name="end-user"></a>最终用户
 
-应执行最终用户提供验证测试，验证最终用户体验在所有用户通信中是否按预期正确显示。 请务必验证最终用户体验是否正确，因为验证失败可能会导致采用率较低，而支持人员呼叫量较高。
+执行最终用户提供验证测试，验证最终用户体验在所有用户通信中是否按预期正确显示。 请务必验证最终用户体验是否正确。 如果不进行验证，可能导致低采用率，并加重支持人员的工作负担。
 
 ![第 9 节表 3](./media/section-9-image-3-table.PNG)
 
 ## <a name="next-steps"></a>后续步骤
 
-现在，已测试并验证 Intune 功能和用例场景，可开始推出 Intune 生产。 请参阅[其他资源](planning-guide-resources.md)了解详细信息。
+现在，已测试并验证 Intune 功能和用例场景，可开始[推出 Intune 生产](planning-guide-rollout-plan.md)。
+
+请参阅[其他资源](planning-guide-resources.md)，获取更多计划模板和相关信息。
