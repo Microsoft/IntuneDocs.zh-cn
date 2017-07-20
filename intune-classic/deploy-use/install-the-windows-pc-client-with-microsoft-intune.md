@@ -4,7 +4,7 @@ description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
@@ -32,6 +32,8 @@ ms.lasthandoff: 07/01/2017
 Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软件配置。 注册电脑后，Intune 客户端软件才会下载电脑管理所需的完整客户端软件。
 
 此系列下载可降低网络带宽的影响，并尽量减少最初在 Intune 中注册电脑时所需的时间。 它还可确保第二次下载完成后，客户端将具有最新的软件。
+
+一个 Intune 许可证允许在最多五台电脑上安装 Intune 客户端软件。
 
 ## <a name="download-the-intune-client-software"></a>下载 Intune 客户端软件
 
