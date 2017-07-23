@@ -15,13 +15,16 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1354d3170f007af2a4bf7f5b2f233a186175c621
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c6b05522c7390acb3974e088ecd60d13db46ef5a
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 创建移动威胁防御 (MTD) 设备符合性策略
+
+> [!NOTE] 
+> 本主题适用于所有移动威胁防御合作伙伴。
 
 搭载 MTD 的 Intune 可帮助检测移动设备上存在的威胁和评估相关风险。 可创建评估风险的 Intune 设备符合性策略规则，确定设备是否合规。 然后可使用条件性访问策略，根据设备合规性阻止对服务的访问。
 
@@ -57,7 +60,7 @@ MTD 设备符合性策略先决条件：
 
     c.  **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果设备中检测到高级威胁，则视为不合格。
 
-    d.  **高**：这是最不安全的选项。 此选项会许可所有威胁级别，且仅将 Skycure 移动威胁防御用作报告目的。
+    d.  **高**：这是最不安全的选项。 此选项将许可所有威胁级别，且仅将移动威胁防御用作报告目的。 设备必须使用此设置激活 MTD 应用。
 
 8.  单击“确定”两次，然后选择“创建”。
 

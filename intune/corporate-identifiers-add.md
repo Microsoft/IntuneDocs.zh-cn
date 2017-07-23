@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 57ab3b79ad53a4b195fac426d211a114f054602f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a9852759983a4bc68c596146e2f5691893376cfd
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="add-corporate-identifiers"></a>添加企业标识符
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-IT 管理员可以创建和导入用逗号分隔的值 (.csv) 文件，该文件列出了国际移动设备识别码 (IMEI) 编号或序列号来识别公司所有的设备。 可以仅声明 iOS 和 Android 设备的序列号。 每个 IMEI 或序列号可以在列表中指定详细信息，以便用于管理。
+作为 Intune 管理员，你可以创建和导入列出国际移动设备标识符 (IMEI) 编号或序列号的用逗号分隔值的 (.csv) 文件。 Intune 将使用这些标示符来指定设备的所有权为公司。 仅可以声明所有支持平台的 IMEI 编号。 可以仅声明 iOS 和 Android 设备的序列号。 每个 IMEI 或序列号可以在列表中指定详细信息，以便用于管理。
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
-[了解如何查找 Apple 设备序列号](https://support.apple.com/HT204308)。
+[了解如何查找 Apple 设备序列号](https://support.apple.com/HT204308)。<br>
 [了解如何查找 Android 设备序列号](https://support.google.com/store/answer/3333000)。
 
 ## <a name="add-corporate-identifiers"></a>添加企业标识符
@@ -50,7 +50,10 @@ IT 管理员可以创建和导入用逗号分隔的值 (.csv) 文件，该文件
 ```
 
 > [!IMPORTANT]
-> 某些 Android 设备具有多个 IMEI 号码。 对于每个已注册的设备，Intune 仅读取一个 IMEI 号码。 如果导入一个 IMEI 号码，但它与 Intune 列出的 IMEI 不符，就会将设备归类为个人设备，而非公司拥有的设备。 如果为设备导入多个 IMEI 号码，未列出号码的注册状态将显示为“未知”。
+> 某些 Android 设备具有多个 IMEI 号码。 对于每个已注册的设备，Intune 仅读取一个 IMEI 号码。 如果导入一个 IMEI 号码，但它与 Intune 列出的 IMEI 不符的情况下，就会将设备归类为个人设备，而非公司拥有的设备。 如果为设备导入多个 IMEI 号码，则未列出号码的注册状态将显示为“未知”。<br>
+>另请注意：Android 序列号不确保存在或是唯一的。 请与你的设备提供商核实，以明确序列号是否是可信的设备 ID。
+>设备向 Intune 报告的序列号可能与设备的“Android 设置/关于”菜单中显示的 ID 不一致。 请验证设备制造商报告的序列号的类型。
+
 
 **添加企业标识符 .csv 列表**
 
@@ -58,13 +61,13 @@ IT 管理员可以创建和导入用逗号分隔的值 (.csv) 文件，该文件
 
  ![企业设备标识符工作区的屏幕截图，其中突出显示了“添加”按钮。](./media/add-corp-id.png)
 
-2. 在“添加标识符”边栏选项卡中，指定标识符类型 **IMEI** 或**序列号**。 你可以指定先前导入的号码是否应“覆盖现有标识符的详细信息”。
+2. 在“添加标识符”边栏选项卡中，指定标识符类型：IMEI 或“序列号”。 你可以指定先前导入的号码是否应“覆盖现有标识符的详细信息”。
 
 3. 单击文件夹图标并指定要导入的列表的路径。 导航到 .csv 文件，然后选择“添加”。 可单击“刷新”，查看新的设备标识符。
 
-导出后，这些设备可能已/未注册，其状态可能为“已注册”或“未连接”。 “未连接”表示该设备没有与 Intune 服务通信。
+导入设备不一定必须进行注册。 设备状态可以是“已注册”或“未连接”。 “未连接”表示该设备没有与 Intune 服务通信。
 
-## <a name="delete--corporate-identifiers"></a>删除企业标识符
+## <a name="delete-corporate-identifiers"></a>删除企业标识符
 
 1. 在 Intune 门户上，依次选择“设备注册” > “注册限制”、“公司设备标识符”，然后选择“删除”。
 
