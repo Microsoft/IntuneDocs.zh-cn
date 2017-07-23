@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5eab3fb933b2999e23115091cf0ded3f140e114c
-ms.sourcegitcommit: f5c6e8b218431dc9a8d85464d7f58adebd048866
+ms.openlocfilehash: b8d281e3af2458bd5ab343dfa5123b31075d28ed
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2017"></a>Microsoft Intune 的早期版本 - 2017 年 7 月
 
@@ -40,11 +40,11 @@ ms.lasthandoff: 07/06/2017
 
 
 
-## <a name="whats-coming-to-intune-on-the-azure-portal"></a>Azure 门户上的 Intune 的新增功能
+## <a name="intune-on-the-azure-portal"></a>Azure 门户上的 Intune
 
 ### <a name="easier-installation-of-office-365-apps-----1121362----"></a>更简易的 Office 365 应用安装 <!--- 1121362 --->
 通过使用一种新的 **Office 365 ProPlus** 应用类型，可轻松将 Office 365 ProPlus 应用分配到所管理的运行 Windows 10 最新版本的设备。 此外，如果拥有 Microsoft Project 和 Microsoft Visio 的许可证，也可以安装这些应用。 所需的应用将被捆绑在一起，并且将显示为 Intune 控制台的应用列表中的一个应用。
- 
+
 
 ### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>用于强制设备与 Intune 同步的新设备操作 <!-- 711369 -->    
 将添加一个新的设备操作，可强制所选设备立即通过 Intune 签入。 当设备签入时，该设备会立即收到已分配给自己的任何挂起的操作或策略。  此操作可帮助立即验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
@@ -105,7 +105,7 @@ Intune 现支持限制 iOS、Android 和 macOS 设备使用设备序列号进行
 ### <a name="end-of-support-for-ios-80----1164477---"></a>停止对 iOS 8.0 的支持<!---1164477--->
 适用于 iOS 的托管应用和公司门户应用需要使用 iOS 9.0 和更高版本才能访问公司资源。 今年 9 月之前不更新的设备将不再能够访问公司门户应用或这些应用。 截至 12 月底，将阻止对包括电子邮件在内的公司资源的任何访问。 
 
-### <a name="end-of-support-for-android-43-and-lower----1171127---"></a>停止对 Android 4.3 及更低版本的支持 <!---1171127--->
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>停止对 Android 4.3 及更低版本的支持 <!---1171127, 1326920 --->
 Android 托管的应用和公司门户应用需要使用 Android 4.4 和更高版本访问公司资源。 在 10 月初之前还未更新的设备将不再能够访问公司门户应用或这些应用。 截至 12 月，所有已注册的设备将在 12 月强制停用，从而导致无法访问公司资源。 如果使用应用保护策略而不使用 MDM，应用将不会收到更新，并且随着时间推移其体验质量将会降低。
 
 
@@ -122,7 +122,7 @@ Android 托管的应用和公司门户应用需要使用 Android 4.4 和更高�
 
 
 
-## <a name="whats-coming-to-intune-apps"></a>Intune 应用的新增功能
+## <a name="intune-apps"></a>Intune 应用
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->    
 我们宣布将在接下来的几个月内推出一项更新，该更新将提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。

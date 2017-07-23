@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fdda99bfd72c71d36a19449d43bc6cbf6a00babe
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -55,25 +55,25 @@ Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标
 
 ### <a name="device-management"></a>设备管理
 #### <a name="new-remote-actions-for-ios-devices----854689---"></a>适用于 iOS 设备的新远程操作 <!-- 854689 -->
-在此版本中，我们添加了两个适用于 iOS 设备的新远程设备操作：
+在此版本中，我们增加了两个适用于托管 Apple 课堂应用的共享 iPad 设备的新远程设备操作：
 
--   “注销当前用户”[](device-logout-user.md)- 注销所选 iOS 设备上的当前用户。
--   “删除用户”[](device-remove-user.md)- 从 iOS 设备上的本地缓存中删除所选用户。
+-   注销当前用户[](device-logout-user.md) - 注销所选 iOS 设备上的当前用户。
+-   删除用户[](device-remove-user.md) - 从 iOS 设备上的本地缓存中删除所选用户。
 
-
-通过使用这些远程操作，管理员可以在共享 iPad 上管理缓存的用户帐户，还可以注销当前正登录到设备的用户。
-
-注册期间，管理员决定可以在设备上缓存的用户帐户的最大数。 “删除用户”允许管理员删除已缓存的特定用户。
-
-“注销当前用户”将会注销当前登录到设备的用户。 可以在设备概述边栏选项卡顶部找到此操作，设备操作通常都显示在该位置。
-
-“删除用户”将从设备的本地缓存中删除特定用户。 可通过导航到“监视”>“用户”> 右键单击列表中特定的用户，找到此操作。 任何与此用户帐户关联但尚未同步的数据将会丢失。 此外，用户列表最多可能需要 24 小时才能反映出用户已被删除。
 
 #### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>支持与 iOS Classroom 应用共享 iPad<!-- 1044681 -->
 在此版本中，我们扩展了对管理 iOS Classroom 应用的支持，以便为使用托管 Apple ID 登录共享 iPad 的学生提供支持。
 
 
 ### <a name="app-management"></a>应用管理  
+
+#### <a name="changes-to-intune-built-in-apps----1332306---"></a>Intune 内置应用的更改 <!-- 1332306 -->
+
+之前，Intune 包含了一些可供快速分配的内置应用。 根据你的反馈，我们已将此列表删除，你将不再看到内置应用。
+但是，如果你已分配任何内置应用，则在应用列表中仍会看到这些应用。 你可以根据需要继续分配这些应用。
+在后续版本中，我们计划添加一种更为简单的方式，以供从 Intune 门户选择和分配内置应用。
+
+
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>支持来自适用于企业的 Windows 应用商店的脱机应用<!--- 777044 --->
 你从适用于企业的 Windows 应用商店购买的脱机应用现在将同步至 Intune 门户。 然后，便可以将这些应用部署到设备组或用户组。 脱机应用由 Intune 安装，而不是由应用商店安装。
 
@@ -266,12 +266,16 @@ IT 支持人员用户现在可以在“疑难解答”边栏选项卡中查看�
 
 ## <a name="whats-coming"></a>即将推出
 
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>停止对 Android 4.3 及更低版本的支持 <!---1171127, 1326920 --->
+Android 托管的应用和公司门户应用需要使用 Android 4.4 和更高版本访问公司资源。 在 10 月初之前还未更新的设备将不再能够访问公司门户应用或这些应用。 截至 12 月，所有已注册的设备将在 12 月强制停用，从而导致无法访问公司资源。 如果使用应用保护策略而不使用 MDM，应用将不会收到更新，并且随着时间推移其体验质量将会降低。
+
+
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-will-end-july-11-2017"></a>平台支持提醒：Windows Phone 8.1 主流支持将于 2017 年 7 月 11 日结束
 <!-- 1327781 -->
 
 2017 年 7 月 11 日，Windows Phone 8.1 平台的主流支持将迎来结束。 Windows 8.1 电脑支持不受影响。
 
-不会对任何由 Intune 服务管理的 Windows Phone 8.1 设备产生即时影响。 注册的设备将继续工作，并且所有策略、配置和应用都将继续按预期方式工作。 请注意，对于 Intune 服务中的 Windows Phone 8.1 平台以及 Windows Phone 8.1 公司门户应用，不推出任何功能改进。 
+不会对任何由 Intune 服务管理的 Windows Phone 8.1 设备产生即时影响。 注册的设备将继续工作，并且所有策略、配置和应用都将继续按预期方式工作。 请注意，对于 Intune 服务中的 Windows Phone 8.1 平台以及 Windows Phone 8.1 公司门户应用，不推出任何功能改进。
 
 建议尽早将符合条件的 Windows Phone 8.1 设备升级到 Windows 10 移动版。 
 

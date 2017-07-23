@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c102e93738ca2da3c247ad364db160c812b91118
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何向 Microsoft Intune 添加应用
 
@@ -79,34 +79,9 @@ Intune 支持添加并分配以下类型的应用：
 
 ## <a name="apps-added-automatically-by-intune"></a>Intune 自动添加的应用
 
-Microsoft 发布的以下应用已内置到 Intune 中，并可供分配：
-
-|||
-|-|-|
-|Name|平台|应用类型|
-|Azure 信息保护|Android|托管 Android 应用商店应用|
-|适用于手机的 Dynamics CRM|Android|托管 Android 应用商店应用|
-|适用于平板电脑的 Dynamics CRM|Android|托管 Android 应用商店应用|
-|Excel|iOS|托管 iOS App Store 应用|
-|Excel|Android|托管 Android 应用商店应用|
-|Managed Browser|Android|托管 Android 应用商店应用|
-|Managed Browser|iOS|托管 iOS App Store 应用|
-|手机上的 Microsoft Dynamics CRM|iOS|托管 iOS App Store 应用|
-|平板电脑上的 Microsoft Dynamics CRM|iOS|托管 iOS App Store 应用|
-|Microsoft Power BI|iOS|托管 iOS App Store 应用|
-|Microsoft Power BI|Android|托管 Android 应用商店应用|
-|Microsoft SharePoint|iOS|托管 iOS App Store 应用|
-|Microsoft SharePoint|Android|托管 Android 应用商店应用|
-|Microsoft Teams|Android|托管 Android 应用商店应用|
-|Microsoft Teams|iOS|托管 iOS App Store 应用|
-|OneDrive|iOS|托管 iOS App Store 应用|
-|OneDrive|Android|托管 Android 应用商店应用|
-|OneNote|iOS|托管 iOS App Store 应用|
-|Outlook|Android|托管 Android 应用商店应用|
-|Outlook|iOS|托管 iOS App Store 应用|
-|Outlook 组|Android|托管 Android 应用商店应用|
-|Outlook 组|iOS|托管 iOS App Store 应用|
-|PowerPoint|iOS|托管 iOS App Store 应用|
+之前，Intune 包含了一些可供快速分配的内置应用。 根据你的反馈，我们已将此列表删除，你将不再看到内置应用。
+但是，如果你已分配任何内置应用，则在应用列表中仍会看到这些应用。 你可以根据需要继续分配这些应用。
+在后续版本中，我们计划添加一种更为简单的方式，以供从 Intune 门户选择和分配内置应用。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -121,4 +96,5 @@ Microsoft 发布的以下应用已内置到 Intune 中，并可供分配：
 - [Windows Phone LOB 应用](lob-apps-windows-phone.md)
 - [Windows 应用商店应用](store-apps-windows.md)
 - [Windows LOB 应用](lob-apps-windows.md)
+- [适用于 Windows 10 的 Office 365 应用](apps-add-office365.md)
 

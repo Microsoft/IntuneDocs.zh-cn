@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/11/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 560ce922fa58e759157358c6b7348fe0388ce408
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 37c4c3a1b51479b1a6450cc66ab502d579804015
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>对比作为计算机或移动设备管理 Windows 电脑
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 07/01/2017
 |**Windows 防火墙策略**|可用 <br>[使用 Windows 防火墙策略帮助保护 Windows 电脑](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |不可用|
 |**反恶意软件保护**|Endpoint Protection<br>[使用 Endpoint Protection 帮助保障 Windows 电脑的安全](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Windows Defender 设置](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|
 |**远程协助** |TeamViewer<br>[请求并提供 Windows 电脑的远程协助](https://docs.microsoft.com/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune)|不可用 |
-|**应用程序部署** | 不可用于适用于企业的 Microsoft 应用商店，<br>仅限 .exe、.appx 和多文件 .msi 格式<br>[为运行 Intune 软件客户端的 Windows 电脑添加应用](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|可用于 Microsoft 应用商店应用和业务线应用<br>[如何添加 Windows 应用商店应用](https://docs.microsoft.com/intune-azure/manage-apps/windows-store-app)<br>即将推出 Microsoft 应用部署和 Win32 应用 |
+|**应用程序部署** | 不可用于适用于企业的 Microsoft 应用商店，<br>仅限 .exe、.appx 和多文件 .msi 格式<br>[为运行 Intune 软件客户端的 Windows 电脑添加应用](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|可用于 Microsoft 应用商店应用和业务线应用<br>[如何添加 Windows 应用商店应用](https://docs.microsoft.com/intune/store-apps-windows)<br>[如何添加 Windows 业务线 (LOB) 应用](https://docs.microsoft.com/intune/lob-apps-windows)|
 |**应用保护**|不可用|可用 <br>[什么是应用保护策略？](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)|
 
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 112f60ff208c27825ddd0f4c812535b255894333
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>如何使用适用于 iOS 的 Microsoft Intune 应用配置策略
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用 Microsoft Intune 中的应用配置策略，可提供用户在运行 iOS 应用时可能需要的设置。 例如，应用可能要求用户指定：
+使用 Microsoft Intune 中的应用配置策略，可提供用户在运行 iOS 应用时使用的设置。 例如，应用可能要求用户指定：
 
 -   自定义端口号。
 
@@ -50,61 +50,39 @@ ms.lasthandoff: 07/03/2017
 > 有关应用安装类型的详细信息，请参阅[如何将应用添加到 Microsoft Intune](apps-add.md)。
 
 ## <a name="create-an-app-configuration-policy"></a>创建应用配置策略
-
-1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“移动应用”。
-1.  在“移动应用”工作负荷中，选择“管理” > “应用配置策略”。
-
-2.  在“策略列表”边栏选项卡中，选择“添加”。
-
-3.  在“添加配置策略”边栏选项卡上，为应用配置策略提供名称和可选描述。
-4.  选择“关联应用”，然后在“关联应用”边栏选项卡上，选择要对其应用配置的托管应用。
-5.  在“添加配置策略”边栏选项卡上，选择“配置设置”，然后在“配置设置”边栏选项卡上，从以下来源选择想要指定构成配置描述文件的 XML 值：
-    - **输入 XML 数据** - 输入或粘贴 XML 属性列表，此列表包含所需的应用配置设置。 根据你所配置的应用，XML 属性列表的格式可能有所不同。 若需了解要使用确切格式的详细信息，请联系应用供应商。
-    Intune 会检查所输入的 XML 的格式是否有效。 它不会检查 XML 属性列表是否会与其关联的应用共同发挥作用。
-    若要了解有关 XML 属性列表的详细信息，请参阅 iOS 开发人员库中的[了解 XML 属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)。
-    - **使用配置设计器** - 允许直接在门户中指定 XML 键值对。
-8. 完成后，返回“添加配置策略”边栏选项卡，然后点击“创建”。
+1.  登录到 Azure 门户中。
+2.  选择“更多服务” > “监视 + 管理” > “Intune”。
+3.  在“Intune”边栏选项卡上，选择“移动应用”。
+4.  在“移动应用”工作负荷中，选择“管理” > “应用配置策略”。
+5.  在“策略列表”边栏选项卡中，选择“添加”。
+6.  在“添加配置策略”边栏选项卡上，为应用配置策略提供“名称”和可选“描述”。
+7.  对于“设备注册类型”，选择以下选项之一：
+    - 已注册 Intune - 适用于已集成 Intune App SDK 并且由 Intune 托管的应用。
+    - 未注册 Intune - 适用于已集成 Intune App SDK 但不由 Intune 托管，或由其他解决方案托管的应用。
+8.  对于“平台”，选择 **iOS**（仅适用于已注册 Intune 的设备）
+9.  选择“关联应用”，然后在“关联应用”边栏选项卡上，选择要对其应用配置的托管应用。
+10. 在“添加配置策略”边栏选项卡上，选择“配置设置”
+11. 在“配置设置”边栏选项卡上，从以下来源选择想要指定构成配置文件的 XML 值：
+    - 输入 XML 数据（仅适用于已注册 Intune 的设备）- 输入或粘贴 XML 属性列表，此列表包含所需的应用配置设置。 根据你所配置的应用，XML 属性列表的格式可能有所不同。 若需了解要使用确切格式的详细信息，请联系应用供应商。
+Intune 会检查所输入的 XML 的格式是否有效。 它不会检查 XML 属性列表是否会与其关联的应用共同发挥作用。
+若要了解有关 XML 属性列表的详细信息，请参阅 iOS 开发人员库中的[了解 XML 属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)。
+    - 使用配置设计器（无论设备是否已注册 Intune）- 允许直接在门户中指定 XML 键值对。
+11. 完成后，返回“添加配置策略”边栏选项卡，然后点击“创建”。
 
 将创建该策略并在“策略列表”边栏选项卡上显示。
 
-然后，照常继续[分配](apps-deploy.md)和[监视](apps-monitor.md)应用。
+
+
+>[!Note]
+>无论设备是否已注册 Intune，均可以使用 [Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) 为将业务线应用由 Intune 应用保护策略和应用配置策略托管做准备。 例如，可以使用应用配置策略来配置 [Intune Managed Browser](app-configuration-managed-browser.md) 允许的和阻止的 URL。 一旦应用与这些策略兼容，则可使用策略配置它们。
+
 
 当分配的应用在设备上运行时，将使用你在应用配置策略中配置的设置运行。
+请参阅适用于你所配置的应用的文档，了解有关一个或多个应用配置策略冲突后将发生情况的信息。
 
-> [!TIP]
-> 如果一个或多个应用配置策略发生冲突，则不会强制实施任一策略。
+>[!Tip]
+>此外，可以使用图形 API 完成这些任务。 有关详细信息，请参阅[针对 Graph API 参考 MAM 的配置](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。
 
-## <a name="create-a-mam-targeted-configuration-policy"></a>创建针对 MAM 的配置策略
-面向 MAM 的配置允许应用通过 Intune App SDK 接收配置数据。 应用程序所有者/开发人员须定义此数据的格式和变体并将其传达给 Intune 客户。 Intune 管理员可以通过 Intune Azure 控制台确定并部署配置数据。 可以通过 MAM 服务将针对 MAM 的配置数据提供给启用 MAM-WE 的应用程序。 例如，[Intune Managed Browser](https://docs.microsoft.com/intune/app-configuration-managed-browser) 已允许/阻止 URL 列表。 通过 MAM 服务直接将应用程序配置数据推送到应用，而非通过 MDM 渠道。 [MDM 应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#create-an-app-configuration-policy)是 MDM 中的原生解决方案。 针对 MAM 配置的主要不同在于运行应用的设备无需注册 MDM。 针对 MAM 的配置适用于 iOS 和 Android。 对于 iOS，应用必须结合适用于 iOS的 Intune APP SDK (v 7.0.1)，并参与应用配置设置。 创建针对 MAM 的配置策略的步骤如下所示： 
-
-1. 登录到 **Azure 门户**。
-
-2. 选择“Intune > 移动应用 - 应用配置策略”。
-
-3. 在“应用配置策略”边栏选项卡上，选择“添加”。
-
-4. 输入应用配置设置的“名称”和可选“描述”，并选择“未注册 Intune”。
-
-5. 选择“选择所需应用”，然后在“目标应用”边栏选项卡上，针对目标平台选择应用。 <br>
-**注意：**对于 LOB 应用，请选择“更多应用”****。 输入应用程序的包 ID。
-
-6. 选择“确定”，返回“添加应用配置”边栏选项卡。
-
-7. 选择“定义配置”。 在“配置”边栏选项卡上，定义键值对以提供配置。
-
-8. 完成后，选择“确定”。
-
-9. 在“添加应用配置”边栏选项卡上，选择“创建”。
-
-创建新配置后，其显示在“应用配置”边栏选项卡上。
-
-然后，照常继续[分配](apps-deploy.md)和[监视](apps-monitor.md)应用。
-
-当分配的应用（已集成 Intune 应用 SDK）在设备上运行时，将使用你在针对 MAM 的配置策略中配置的设置运行。 分配的应用必须已集成支持的 Intune 应用 SDK 版本。 有关使用针对 MAM 的配置策略的应用开发要求详细信息，请参阅 [iOS Intune 应用 SDK 集成指南](https://docs.microsoft.com/intune/app-sdk-ios)。
-
-有关与针对 MAM 的配置值相关的 Graph API 功能的详细信息，请参阅 [Graph API 参考针对 MAM 的配置](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。
 
 ## <a name="information-about-the-xml-file-format"></a>有关 XML 文件格式的信息
 
@@ -161,3 +139,7 @@ Intune 在属性列表中支持以下数据类型：
 </dict>
 
 ```
+
+## <a name="next-steps"></a>后续步骤
+
+照常继续[分配](apps-deploy.md)和[监视](apps-monitor.md)应用。

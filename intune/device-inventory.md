@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/25/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dae92c117bcf8a4a8ff133ed613f9f77ea0c07c2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>如果查看 Intune 设备清单
 
@@ -44,9 +44,13 @@ ms.lasthandoff: 07/01/2017
     ![托管设备硬件清单](./media/hardware-inventory.png)
     - **发现的应用** - 显示 Intune 发现的安装在设备上的所有应用列表。
     ![发现的应用节点](./media/detected-applications.png)
+    
+
+
     - **设备符合性** - 显示已分配给设备的所有符合性策略的符合性状态。
     - **设备配置** - 显示已分配给设备的所有设备配置策略的符合性状态。
 - **监视** 选择“设备操作”查看在所管理的设备上执行的设备操作列表，以及它们的当前状态。
 - **安装程序** > **TeamViewer 连接器** - 用于在使用 TeamViewer 软件的设备上配置远程管理。 有关详情，请参阅[针对 Intune 托管 Android 设备提供远程协助](/intune/device-profile-android-teamviewer)。
 
-
+>[!NOTE]
+> Intune 仅收集公司拥有的设备上的应用清单。 个人设备上的应用不会列入清单。 对于 Windows 10 电脑，仅收集公司拥有的设备上的新型应用清单。 Intune 不会收集设备上的 Win32 应用的相关信息。

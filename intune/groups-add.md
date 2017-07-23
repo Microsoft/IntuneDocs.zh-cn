@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c9d10e4e2a1d2a745b9e327bf9a8a9cd99e5ce4
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: ce779e8dad2c9813d5faf1f03bca9b33690508fe
+ms.sourcegitcommit: b287025b1a0d09d41faf51cf98c34b676fa1d98e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 07/07/2017
 ---
 # <a name="add-groups-in-intune"></a>在 Intune 中添加组
 Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 Intune 管理员，可以设置适合组织需要的组。 创建组，以便按地理位置、部门或硬件特性来组织用户或设备。 使用组来管理大规模的任务。 例如，可设置用于大量用户的策略，或向一组设备部署应用。
@@ -50,5 +50,5 @@ Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 
 5. 选择“创建”以添加新组。
 
 ## <a name="see-also"></a>另请参阅
-[使用 Azure Active Directory 组管理资源访问权限](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-[Azure 门户中的 Intune 经典组](groups-get-started.md)
+- [使用 Azure Active Directory 组管理对资源的访问](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
+- [Azure 门户中的 Intune 经典组](groups-get-started.md)
