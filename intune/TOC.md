@@ -183,13 +183,12 @@
 ### [监视配置文件](device-profile-monitor.md)
 ### [配置文件疑难解答](device-profile-troubleshoot.md)
 
-## [设置设备合规性](device-compliance.md)
-### [必备条件](device-compliance-get-started.md)
+## [设置设备合规性](device-compliance-get-started.md)
 ### [创建 Android 策略](compliance-policy-create-android.md)
 ### [创建 Android for Work 策略](compliance-policy-create-android-for-work.md)
 ### [创建 iOS 策略](compliance-policy-create-ios.md)
+### [创建 macOS 策略](compliance-policy-create-mac-os.md)
 ### [创建 Windows 策略](compliance-policy-create-windows.md)
-### 创建针对不符合性的操作
 ### [监视设备合规性](compliance-policy-monitor.md)
 
 ## [设置条件性访问](conditional-access.md)
