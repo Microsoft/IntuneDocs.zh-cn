@@ -5,7 +5,7 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/12/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -83,7 +83,7 @@ Intune App SDK 需要更改应用的源代码才能启用 Intune 应用保护策
 
 例如，如果 `AppSpecificActivity` 与其父级进行交互（如调用 `super.onCreate()`），则 `MAMActivity` 是超类。
 
-典型 Android 应用具有单一模式，可以通过其[**上下文**](https://developer.android.com/reference/android/content/Context.html)对象访问系统。 另一方面，已集成 Intune App SDK 的应用则具有双模式。 这些应用通过 `Context` 对象继续访问系统。 根据使用的基本 `Activity`，`Context` 将由 Android 提供，或者以智能方式在系统的受限视图与 Android 提供的 `Context` 之间进行多路复用。
+典型 Android 应用具有单一模式，可以通过其[**上下文**](https://developer.android.com/reference/android/content/Context.html)对象访问系统。 另一方面，已集成 Intune App SDK 的应用则具有双模式。 这些应用通过 `Context` 对象继续访问系统。 根据使用的基本 `Activity`，`Context` 将由 Android 提供，或者以智能方式在系统的受限视图与 Android 提供的 `Context` 之间进行多路复用。 从其中一个 MAM 入口点进行派生后，便可正常使用 `Context`--例如，启动 `Activity` 类以及使用 `PackageManager`。
 
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>将类、方法和活动替换为其 MAM 等效项
@@ -136,7 +136,7 @@ Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下
 
 
 ### <a name="renamed-methods"></a>重命名的方法
-从其中一个 MAM 入口点进行派生后，便可正常使用 `Context`--例如，启动 `Activity` 类以及使用 `PackageManager`。
+
 
 在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（通常使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `onCreate()` 并调用 `super.onCreate()`）时，`Activity` 必须替代 `onMAMCreate()` 并调用 `super.onMAMCreate()`。 Java 编译器应强制执行最终限制，以防止意外替代原始方法（而不是 MAM 等效项）。
 
@@ -146,7 +146,7 @@ Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下
 ### <a name="manifest-replacements"></a>清单替换
 请注意，可能需要在清单以及 Java 代码中执行上述一些类替换。 特别说明：
 * `android.support.v4.content.FileProvider` 的清单引用必须替换为 `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider`。
-
+* 如果应用程序不需要其自己的派生的 Application 类，则必须将 `com.microsoft.intune.mam.client.app.MAMApplication` 设置为清单中使用的 Application 类的名称。
 
 ## <a name="sdk-permissions"></a>SDK 权限
 
@@ -198,7 +198,7 @@ public interface MAMLogHandlerWrapper {
 
 ## <a name="enable-features-that-require-app-participation"></a>启用需要应用参与的功能
 
-SDK 无法单独实现某些应用保护策略。 通过使用下面的 `AppPolicy` 接口中包含的多个 API，该应用可控制其行为以实现这些功能。
+SDK 无法单独实现某些应用保护策略。 通过使用下面的 `AppPolicy` 接口中包含的多个 API，该应用可控制其行为以实现这些功能。 若要检索 `AppPolicy` 实例，请使用 `MAMPolicyManager.getPolicy`。
 
 ```java
 /**
@@ -267,7 +267,7 @@ String toString();
 ```
 
 > [!NOTE]
-> `MAMComponents.get(AppPolicy.class)` 会始终返回非 null 应用策略（即使设备或应用不在 Intune 管理策略下，也是如此）。
+> `MAMPolicyManager.getPolicy` 会始终返回非 null 应用策略（即使设备或应用不在 Intune 管理策略下，也是如此）。
 
 ### <a name="example-determine-if-pin-is-required-for-the-app"></a>示例：确定应用是否需要 PIN
 
@@ -321,13 +321,13 @@ SaveLocation service, String username);
 
     * SaveLocation.ONEDRIVE_FOR_BUSINESS
     * SaveLocation.LOCAL
-    * SaveLocation.OTHER
+    * SaveLocation.SHAREPOINT
 
 之前确定用户策略是否允许用户将数据保存到不同位置的方法是同一个 **AppPolicy** 类中的 `getIsSaveToPersonalAllowed()`。 现在**不推荐使用**也不应使用此功能，以下调用等效于 `getIsSaveToPersonalAllowed()`：
 
 ```java
 
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
 >[!NOTE]
@@ -748,13 +748,17 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 ### <a name="overview"></a>概述
 默认情况下，Intune App SDK 会将策略作为一个整体应用到该应用。 多标识是一种可选的 Intune 应用保护功能，可以启用该功能以允许策略应用到单标识级别。 这需要比其他应用保护功能还要多得多的应用参与。
 
-应用_必须_在打算更改活动标识时通知 SDK，SDK 也会在需要更改标识时通知应用。 用户注册设备或应用后，SDK 会注册此标识并将其作为主要 Intune 托管标识。 应用中的其他用户会被视为具有不受限策略设置的非托管标识。
+应用必须在其打算更改现用身份时通知 SDK。 在某些情况下，SDK 也会在需要标识更改时通知应用。 然而，在大多数情况下，MAM 不知道 UI 中正在显示的数据或在给定的时间内在线程上使用的数据，并且要依赖应用设置正确的标识以避免数据泄漏。 在随后各部分中，将会调用需要应用操作的一些特定方案。
+
+> [!NOTE]
+>  缺少正确的应用参与可能会导致数据泄漏和其他安全问题。
+
+用户注册设备或应用后，SDK 会注册此标识并将其作为主要 Intune 托管标识。 应用中的其他用户会被视为具有不受限策略设置的非托管标识。
 
 > [!NOTE]
 > 目前，每台设备仅支持一个 Intune 托管标识。
 
 注意，标识被简单地定义为字符串。 标识**不区分大小写**，而且向 SDK 请求标识可能会返回在设置标识时最初使用的相同大小写情况。
-
 
 ### <a name="enabling-multi-identity"></a>启用多标识
 
@@ -774,7 +778,9 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
   2. 上下文（通常为活动）级别
   3. 进程级别
 
-在线程级别上设置的标识可取代在上下文级别上设置的标识，而在上下文级别上设置的标识可取代在进程级别上设置的标识。 在上下文上设置的标识仅用于相应的关联方案中，例如，文件 IO 操作没有关联的上下文。 `MAMPolicyManager` 上的以下方法可用于设置标识和检索以前设置的标识值。
+在线程级别上设置的标识可取代在上下文级别上设置的标识，而在上下文级别上设置的标识可取代在进程级别上设置的标识。 在上下文中设置的标识仅在合适的相关方案中使用。 例如，文件 IO 操作就不具有相关联的上下文。 最常见的情况是，应用将在活动上设置上下文标识。 除非活动的标识设置为相同标识，否则应用不得显示托管标识的数据。 通常情况下，仅当在所有线程上一次只能有一名用户使用应用时，进程级标识才有用。 许多应用可能不需要使用它。
+
+`MAMPolicyManager` 上的以下方法可用于设置标识和检索以前设置的标识值。
 
 ```java
   public static void setUIPolicyIdentity(final Context context, final String identity, final MAMSetUIIdentityCallback mamSetUIIdentityCallback);
@@ -797,8 +803,8 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
   public static AppPolicy getPolicy();
 
   /**
-   * Get the currently applicable app policy, taking the context
-   * identity into account.
+  * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -820,9 +826,11 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 | 返回值 | 方案 |
 |--|--|
 | SUCCEEDED | 标识更改成功。 |
-| NOT_ALLOWED | 不允许更改标识。 <br><br>如果尝试切换到与该注册用户属于同一组织的另一托管用户，将出现此问题。 在当前线程上已设置另一标识时尝试设置 UI（上下文）标识，也将出现此问题。 |
+| NOT_ALLOWED | 不允许更改标识。 不允许更改标识。 在当前线程上已设置另一标识时尝试设置 UI（上下文）标识，会出现此问题。 |
 | CANCELLED | 用户取消了标识更改，通常是在出现 PIN 或身份验证提示时按了“后退”按钮。 |
 | FAILED | 标识更改失败，原因不明。|
+
+在显示或使用公司数据之前，应用必须确保标识切换成功。 目前，对于启用多标识的应用，进程和线程标识切换将始终成功，但是我们保留添加故障条件的权利。 如果 UI 标识与线程标识相冲突，或者如果用户取消条件启动要求（例如，按下 PIN 屏幕上的后退按钮），则 UI 标识切换会因参数无效而失败。
 
 
 对于设置上下文标识，会以异步方式报告结果。 如果上下文是一个活动，则 SDK 不会知道标识更改是否成功，直到执行条件启动--此操作可能需要用户输入 PIN 或公司凭据。 应用应实现 `MAMSetUIIdentityCallback` 以接收此结果，你可以为此参数传递 null。
@@ -927,10 +935,10 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
   ```java
     public final class MAMFileProtectionManager {
+    /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
+           file, and will tag the file for future protection changes.
 
-        /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the file, and will tag the file for
-         * future protection changes.
          *
          * @param identity
          *            Identity to set.
@@ -940,23 +948,37 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
+        
+        /**
+        * Protect a file obtained from a content provider. This is intended to be used for
+        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+        * It may also be used with descriptors referring to private files owned by this app.
+        * It is not intended to be used for files owned by other apps and such usage will fail. If
+        * creating a new file via a content provider exposed by another MAM-integrated app, the new
+        * file identity will automatically be set correctly if the ContentResolver in use was
+        * obtained via a Context with an identity or if the thread identity is set.
+        *
+        * This will synchronously trigger whatever protection is required for the file, and will tag
+        * the file for future protection changes. If an identity is set on a directory, it is set
+        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+        * method will silently do nothing.
+        *
+        * @param identity
+        *       Identity to set.
+        * @param file
+        *       File to protect.
+        *
+        * @throws IOException
+        *       If the file cannot be protected.
+
+        */
+        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
         /**
          * Get the protection info on a file.
          *
          * @param file
          *            File or directory to get information on.
-         * @return File protection info, or null if there is no protection info.
-         * @throws IOException
-         *             If the file cannot be read or opened.
-         */
-        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
-
-        /**
-         * Get the protection info on a file.
-         *
-         * @param file
-         *            File to get information on.
          * @return File protection info, or null if there is no protection info.
          * @throws IOException
          *             If the file cannot be read or opened.
@@ -970,6 +992,19 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
     }
 
   ```
+#### <a name="app-responsibility"></a>应用责任
+MAM 无法自动推断出要在 `Activity` 中读取的文件和在其中显示的数据之间的关系。 应用必须在显示公司数据之前适当地设置 UI 标识。 这包括从文件中读取的数据。 如果一个文件来自应用外部（来自 `ContentProvider` 或从公开可写的位置读取），则应用必须在显示从文件中读取的信息之前尝试确定文件标识（使用 `MAMFileProtectionManager.getProtectionInfo`）。 如果 `getProtectionInfo` 报告非 NULL、非空的标识，则必须将 UI 标识设置为匹配此标识（使用 `MAMActivity.switchMAMIdentity` 或 `MAMPolicyManager.setUIPolicyIdentity`）。 如果标识切换失败，则不得显示来自该文件的数据。
+
+示例流如下所示：
+  * 用户选择要在应用中打开的文档
+  * 在打开流程期间，在从磁盘读取数据之前，应用确认应该用于显示内容的标识
+    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+    * 应用会一直等待，直到将结果报告给回叫
+    * 如果报告的结果是一个故障，则应用不显示文档。
+  * 应用将打开并呈现该文件
+
+## <a name="offline-scenarios"></a>脱机方案
 
 文件标识标记可识别脱机模式。 应考虑以下几点：
 
@@ -1093,6 +1128,150 @@ public final class MAMDataProtectionManager {
 
 如果多身份标识感知应用希望完成 MAM 默认选择性擦除_**并**_希望针对擦除执行其自己的操作，则应注册 `WIPE_USER_AUXILIARY_DATA` 通知。 此通知将在执行 MAM 默认选择性擦除前一秒由 SDK 发出。 应用绝不会同时注册 WIPE_USER_DATA 和 WIPE_USER_AUXILIARY_DATA。
 
+## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>为 Android 应用程序启用面向 MAM 的配置（可选）
+应用程序特定的键值对可以在 Intune 控制台中进行配置。 这些键值对根本不会被 Intune 解释，只是被传递给应用。 想要接收这种配置的应用程序可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 类进行这些操作。 如果多个策略针对同一个应用，则可能会有多个冲突的值可用于同一个键。
+
+### <a name="example"></a>示例
+```
+MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
+String identity = "user@contoso.com"
+MAMAppConfig appConfig = configManager.getAppConfig(identity);
+LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
+String valueToUse = null;
+if (appConfig.hasConflict("foo")) {
+    List<String> values = appConfig.getAllStringsForKey("foo");
+    for (String value : values) {
+        if (isCorrectValue(value)) {
+            valueToUse = value;
+        }
+    }
+} else {
+    valueToUse = appConfig.getStringForKey("foo", MAMAppConfig.StringQueryType.Any);
+}
+LOGGER.info("Found value " + valueToUse);
+```
+
+### <a name="mamappconfig-reference"></a>MAMAppConfig 引用
+
+```
+public interface MAMAppConfig {
+    /**
+     * Conflict resolution types for Boolean values.
+     */
+    enum BooleanQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns true if any of the values are true.
+         */
+        Or,
+        /**
+         * In case of conflict, returns false if any of the values are false.
+         */
+        And
+    }
+
+    /**
+     * Conflict resolution types for integer and double values.
+     */
+    enum NumberQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the minimum Integer.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the maximum Integer.
+         */
+        Max
+    }
+
+    /**
+     * Conflict resolution types for Strings.
+     */
+    enum StringQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the first result ordered alphabetically.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the last result ordered alphabetically.
+         */
+        Max
+    }
+
+    /**
+     * Retrieve the List of Dictionaries containing all the custom
+     *  config data sent by the MAMService. This will return every
+     * Application Configuration setting available for this user, one
+     *  mapping for each policy applied to the user.
+     */
+    List<Map<String, String>> getFullData();
+
+    /**
+     * Returns true if there is more than one targeted custom config setting for the key provided. 
+     */
+    boolean hasConflict(String key);
+
+    /**
+     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
+     * null if none exists or it cannot be coerced.
+     */
+    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
+
+    /**
+     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
+     */
+    Long getIntegerForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
+     */
+    Double getDoubleForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a String value for the given key, or null if none exists.
+     */
+    String getStringForKey(String key, StringQueryType queryType);
+
+    /**
+     * Like getBooleanForKey except returns all values if multiple are present.
+     */
+    List<Boolean> getAllBooleansForKey(String key);
+
+    /**
+     * Like getIntegerForKey except returns all values if multiple are present.
+     */
+    List<Long> getAllIntegersForKey(String key);
+
+    /**
+     * Like getDoubleForKey except returns all values if multiple are present.
+     */
+    List<Double> getAllDoublesForKey(String key);
+
+    /**
+     * Like getStringForKey except returns all values if multiple are present.
+     */
+    List<String> getAllStringsForKey(String key);
+}
+```
+
+### <a name="notification"></a>通知
+应用配置会添加一个新的通知类型：
+* **REFRESH_APP_CONFIG**：此通知在 `MAMUserNotification` 中发送，并通知应用新的应用配置数据可用。
+
+有关与面向 MAM 的配置值相关的 Graph API 功能的详细信息，请参阅 [Graph API 参考面向 MAM 的配置](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。 <br>
+
+关于如何在 Android 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 Android 的 Microsoft Intune 应用配置策略](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android)。
 
 ## <a name="style-customization-optional"></a>样式自定义（可选）
 
@@ -1141,18 +1320,22 @@ public final class MAMDataProtectionManager {
 1.  对字段的 65K 限制。
 2.  对方法的 65K 限制。
 
-
-
 ### <a name="policy-enforcement-limitations"></a>策略强制实施限制
 
 * **屏幕捕获**：SDK 无法在已完成 Activity.onCreate 的活动中强制执行新的屏幕捕获设置值。 这可能会产生一段时间，在这段时间内，应用配置为禁用屏幕截图，但仍可以拍摄屏幕截图。
 
 * **使用内容解析程序**：“传输或接收”Intune 策略可能会阻止或部分阻止使用内容解析程序访问其他应用中的内容提供程序。 这将导致 ContentResolver 方法返回 null 或引发失败值（例如 `openOutputStream` 在受阻时会引发 `FileNotFoundException` ）。 应用可以通过进行以下调用，来确定是否策略已导致（或策略会导致）通过内容解析程序写入数据失败：
+    ```java
+    MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
+    ```
+    或如果没有关联活动
 
     ```java
-    MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI);
+    MAMPolicyManager.getPolicy().getIsSaveToLocationAllowed(contentURI);
     ```
 
+    在第二种情况下，多标识应用必须注意适当地设置线程标识（或将显式标识传递给 `getPolicy` 调用）。
+    
 ### <a name="exported-services"></a>导出的服务
 
  Intune App SDK 中包括的 AndroidManifest.xml 文件包含 **MAMNotificationReceiverService**，它必须是导出的服务才能允许公司门户将通知发送到已启用应用。 服务会检查调用方以确保仅允许公司门户发送通知。

@@ -1,49 +1,92 @@
 ---
-title: "设备符合性入门"
+title: "Intune 设备符合性策略"
 titleSuffix: Intune on Azure
-description: "使用本主题了解在 Microsoft Intune 中创建符合性策略所需先决条件"
+description: "通过本主题了解 Microsoft Intune 中的设备符合性"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
+ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9723e5a8b001068e8b7c9994723e6c7111e7a80d
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/20/2017
 ---
-# <a name="get-started-with-device-compliance-in-intune"></a>Itune 中的设备符合性入门
-
+# <a name="get-started-with-intune-device-compliance-policies"></a>Intune 设备符合性策略入门
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-在本主题中，你将了解以下内容： 
+## <a name="what-is-device-compliance-in-intune"></a>什么是 Intune 中的设备符合性？
 
-- 开始创建设备符合性策略之前需要执行的操作。
-- 快速浏览在 Intune Azure 门户中可以查看和执行的操作。 
+Intune 设备符合性策略定义设备必须遵从的规则和设置，以便将设备视为符合 Intune。
 
-如果不熟悉设备符合性，可以阅读[本主题](device-compliance.md)，了解什么是设备符合性，以及如何在组织中使用。
+这些规则包括以下内容：
+
+- 使用密码来访问设备
+
+- 加密
+
+- 设备是否越狱或取得 root 权限
+
+- 所需的最低操作系统版本
+
+- 允许的最高操作系统版本
+
+- 要求设备不高于移动威胁防御级别
+
+也可使用设备符合性策略来监视设备的符合性状态。
+
+### <a name="device-compliance-requirements"></a>设备合规性要求
+
+合规性要求本质上是规则，如针对某个合规性策略，根据实际所需来要求是否指定设备 PIN 或加密。
+
+<!---### Actions for noncompliance
+
+You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
+When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
+actions for a device that continues to be in the noncompliant status for
+a week:
+
+-   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+
+-   3 days after initial noncompliance state, a follow up reminder is sent to the user.
+
+-   5 days after initial noncompliance state, a final reminder with a notification that access to company resources will be blocked on the device in 2 days if the compliance issues are not remediated is sent to the user.
+
+-   7 days after initial noncompliance state, access to company resources is blocked. This requires that you have conditional access policy that specifies that access from noncompliant devices should    be blocked for services such as Exchange and SharePoint.
+
+### Grace Period
+
+This is the time between when a device is first determined as
+noncompliant to when access to company resources on that device is blocked. This time allows for time that the user has to resolve
+compliance issues on the device. You can also use this time to create your action sequences to send notifications to the user before their access is blocked.
+
+Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ##  <a name="pre-requisites"></a>先决条件
 
--   订阅 Intune
+需要具有以下订阅才能使用 Intune 设备符合性策略：
 
--   Azure Active Directory 订阅
+- Intune EMS
 
-##  <a name="supported-platforms"></a>受支持的平台：
+- Azure AD 高级版
+
+###  <a name="supported-platforms"></a>受支持的平台：
 
 -   Android
 
 -   iOS
+
+-   macOS（预览）
 
 -   Windows 8.1
 
@@ -51,32 +94,48 @@ ms.lasthandoff: 07/01/2017
 
 -   Windows 10
 
-##  <a name="azure-portal-workflow"></a>Azure 门户工作流
+> [!IMPORTANT]
+> 设备必须注册到 Intune 才能报告其符合性状态。
 
-下面概述如何在 Intune Azure 门户中创建和管理设备符合性。
+## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Intune 设备符合性策略如何与 Azure AD 配合使用
 
-<!---### Overview
+当设备注册到 Intune 时，会发生 Azure AD 注册过程，这将具有更多信息的设备属性更新到 Azure AD。 其中一个关键设备信息就是设备符合性状态，条件访问策略使用该状态阻止或允许访问电子邮件和其他公司资源。
 
-When you choose the **Set device compliance** workload, the blade opens with an  **Overview** section that displays a summary view of your compliance policies that you have created and the status of the devices they have been applied to. If you
-don’t have any policies configured yet, the overview will just include the various reports but with no data.--->
+- 详细了解 [Azure AD 注册流程](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)。
 
-### <a name="manage"></a>管理计算机上的
+##  <a name="ways-to-use-device-compliance-policies"></a>使用设备符合性策略的方式
 
-可以创建、编辑和删除设备合规性策略。 还可从此处向用户分配策略。
+### <a name="with-conditional-access"></a>使用条件访问
+可以将符合性策略与条件访问结合使用，以便只允许符合一个或多个设备符合性策略规则的设备访问电子邮件和其他公司资源。
 
-<!---### Monitor
+### <a name="without-conditional-access"></a>不使用条件访问
+还可以使用独立于条件访问的设备符合性策略。 独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，你可以获取有关未加密的设备数，或哪些设备已越狱或取得 root 权限的报告。 但是独立使用合规性策略时，不会实施对公司资源的访问限制。
 
-This section is a detailed view of what you see in the **Overview**. A list of all the reports are displayed in this section and you can interactively drill down through each of these reports.--->
+将合规性策略部署到用户。 将合规性策略部署到用户后，会对用户设备检查合规性。 若要了解策略部署完成后，移动设备需要多长时间获取策略，请参阅“管理设备上的设置和功能”。
 
-### <a name="setup"></a>Setup
+##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>在 Intune 经典门户与 Azure 门户中使用设备符合性策略
 
-合规性状态有效期
+请注意主要区别，以帮助用户在 Azure 门户中实现过渡到新的设备符合性策略的工作流。
+
+- 在 Azure 门户中，合规性策略是针对每个受支持的平台单独创建的。
+- 在 Intune 经典门户中，一个设备符合性策略普遍适用于所有受支持的平台。
+
+<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
+
+-   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>将设备符合性策略从 Intune 经典门户迁移到 Azure 门户
+
+在 [Intune 经典门户](https://manage.microsoft.com)中创建的设备符合性策略不会出现在新的 [Intune Azure 门户](https://portal.azure.com)中。 但是，它们仍面向用户并且可以通过 Intune 经典门户进行管理。
+
+如果想要利用 Azure 门户中新设备符合性相关的功能，需要在 Azure 门户中创建新的设备符合性策略。 如果在 Azure 门户中向某个用户分配新的设备符合性策略，但该用户同时还分配有 Intune 经典门户的设备符合性策略，则 Intune Azure 门户中的设备符合性策略优先于在 Intune 经典门户中创建的策略。
 
 ##  <a name="next-steps"></a>后续步骤
-[创建 Android 合规性策略](compliance-policy-create-android.md)
 
-[创建 Android for Work 合规性策略](compliance-policy-create-android-for-work.md)
+为以下平台创建设备符合性策略：
 
-[创建 iOS 合规性策略](compliance-policy-create-ios.md)
-
-[创建 Windows 合规性策略](compliance-policy-create-windows.md)
+- [Android](compliance-policy-create-android.md)
+- [Android for Work](compliance-policy-create-android-for-work.md)
+- [iOS](compliance-policy-create-ios.md)
+- [macOS](compliance-policy-create-mac-os.md)
+- [Windows](compliance-policy-create-windows.md)

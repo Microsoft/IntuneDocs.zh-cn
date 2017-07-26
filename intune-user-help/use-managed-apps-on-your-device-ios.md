@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>在 iOS 设备上使用托管应用
 
@@ -38,6 +38,8 @@ IT 管理员可对托管应用进行配置，以帮助保护在该应用中可�
 -   如果已在 Microsoft Intune 中注册设备，则你可以从公司门户应用或公司门户网站安装应用，或者可由 IT 管理员将其安装到你的设备。 若要了解相关注册信息，请参阅[在 Intune 中注册 iOS 设备](enroll-your-device-in-intune-ios.md)或[在 Intune 中注册 macOS 设备](enroll-your-device-in-intune-macos.md)。
 
 -   从 App Store 安装应用，然后使用由 Intune 管理的公司用户帐户登录该应用。
+
+IT 管理员有时可能会为你安装的应用购买多个许可证。 如果你看到一条消息，要求你接受 Apple Volume Purchase Program 协议，这是正常现象，可以接受该协议。 如果不接受，你将无法安装该应用。
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>IT 管理员可以管理应用中的哪些内容？
 以下是 IT 管理员可在应用中管理的一些选项示例，它们可影响用户在其设备上与公司数据的交互：

@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: ca98230a54ba7c2067062676420e9e06ff9bf7d7
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -73,6 +73,10 @@ Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标
 但是，如果你已分配任何内置应用，则在应用列表中仍会看到这些应用。 你可以根据需要继续分配这些应用。
 在后续版本中，我们计划添加一种更为简单的方式，以供从 Intune 门户选择和分配内置应用。
 
+#### <a name="easier-installation-of-office-365-apps-----1121362----"></a>更简易的 Office 365 应用安装 <!--- 1121362 --->
+通过使用新的 Office 365 专业增强版应用类型，可轻松将 Office 365 专业增强版 2016 应用分配到所管理的运行 Windows 10 最新版本的设备。 此外，如果拥有 Microsoft Project 和 Microsoft Visio 的许可证，还可以安装这两个应用。 所需的应用将被捆绑在一起，并且显示为 Intune 控制台的应用列表中的一个应用。
+有关详细信息，请参阅[如何为 Windows 10 添加 Office 365 应用](apps-add-office365.md)。
+
 
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>支持来自适用于企业的 Windows 应用商店的脱机应用<!--- 777044 --->
 你从适用于企业的 Windows 应用商店购买的脱机应用现在将同步至 Intune 门户。 然后，便可以将这些应用部署到设备组或用户组。 脱机应用由 Intune 安装，而不是由应用商店安装。
@@ -101,7 +105,7 @@ Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标
 
 在此版本中，我们为 Windows 10 设备限制配置文件添加了新设置，按照以下类别：
 
- -  Windows Defender
+-  Windows Defender
 -  手机网络和连接性
 -  锁定屏幕体验
 -  隐私
@@ -223,7 +227,7 @@ IT 支持人员用户现在可以在“疑难解答”边栏选项卡中查看�
 具有作为 Android for Work 设备管理的工作配置文件的 Android 7.0 及更高版本的设备，可让管理员定义仅适用于工作配置文件中应用于各应用的密码策略。  选项包括：
 
 - 定义仅设备范围的密码策略 - 这是用户解锁整个设备时必须使用的密码。
- 仅定义工作配置文件密码策略 - 只要打开工作配置文件中的任何应用，系统均会提示用户输入密码。
+- 仅定义工作配置文件密码策略 - 只要打开工作配置文件中的任何应用，系统均会提示用户输入密码。
 - 同时定义设备和工作配置文件策略 - IT 管理员可以选择同时以不同的长度定义设备密码策略和工作配置文件密码策略（例如，使用四位数的 PIN 来解锁设备，使用六位数的 PIN 来打开任意工作应用）。
 
 有关详细信息，请参阅 [Microsoft Intune 中的 Android for Work 设备限制设置](device-restrictions-android-for-work.md)。

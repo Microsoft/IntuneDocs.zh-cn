@@ -6,19 +6,19 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.custom: 
+ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
+ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 
@@ -28,13 +28,10 @@ ms.lasthandoff: 07/10/2017
 Microsoft Intune 现在位于 Azure 门户中，这意味着你习惯使用的工作流和功能已经不同了。
 新门户提供了 Azure 门户中的新功能和更新功能，可在其中管理组织的移动设备、电脑和应用。
 
-> [!IMPORTANT]
-> **还没有看到新门户？**<br>
-> 现有租户正在迁移到新的门户体验。 你的租户迁移之前，通知会显示在 Office 消息中心中。
->
-> 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的 Apple 注册工作流。 迁移计划尚未宣布。 如果现有帐户无法访问 Azure 门户，我们强烈建议创建一个试用帐户。
->
-> 查看潜在阻止程序的列表 https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+* [我的功能位于 Azure 的什么位置？](ui-changes.md)是一个参考，显示随着移动到 Azure 而更改的特定工作流程和 UI。
+* [Azure 门户中的 Intune 经典组](groups-get-started.md)解释了转移到 Azure Active Directory 安全组以进行组管理的含义。
+
+
 
 
 你可以在此库中查找有关新门户的信息，并且信息会不断更新。 如果你有什么建议，请在主题评论中留下反馈。 我们很乐意倾听你的想法。
@@ -47,7 +44,14 @@ Microsoft Intune 现在位于 Azure 门户中，这意味着你习惯使用的�
 - Azure Active Directory (AD) 组提供跨所有 Azure 应用程序的兼容性
 - 支持大多数新式 Web 浏览器
 
-若要查找有关经典 Intune 控制台的文档，请参阅 [Intune 文档库](https://docs.microsoft.com/intune-classic/)。
+> [!IMPORTANT]
+> **还没有看到新门户？**<br>
+> 现有租户正在迁移到新的门户体验。 你的租户迁移之前，通知会显示在 Office 消息中心中。
+>
+> 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的 Apple 注册工作流。 迁移计划尚未宣布。 如果现有帐户无法访问 Azure 门户，我们强烈建议创建一个试用帐户。
+>
+> 查看潜在阻止程序的列表 https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+
 
 ## <a name="before-you-start"></a>开始之前
 

@@ -1,7 +1,7 @@
 ---
-title: "注册 30 天免费试用版"
-titleSuffix: Intune on Azure
-description: "如何在 Azure 上注册 Intune。"
+title: "注册 Microsoft Intune 的 30 天免费试用版"
+titleSuffix: 
+description: "如何注册 Intune 的 30 天免费试用版。"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -13,22 +13,22 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 7dafdb974dd975eaa7f3268119de6c047c50f858
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal"></a>注册 Azure 门户的 Microsoft Intune 免费试用版
+# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>注册 Microsoft Intune 免费试用版
 
 
 本文将指导你注册 Azure 门户的 Intune 独立试用版。
 
 1. 请访问 [Intune 注册](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)页面并填写表单，注册试用订阅。
-account-sign-up.md
+* 如果有工作或学校帐户并希望将该帐户用于 Intune 试用版，请按照[登录说明](/intune/account-sign-up)进行操作。
 
-  如果大多数 IT 操作和用户都位于不同于你所在地的区域，则建议在“公司位于哪里？”下选择该区域设置。
+* 如果大多数 IT 操作和用户都位于不同于你所在地的区域，则建议在“公司位于哪里？”下选择该区域设置。
 
 2. 注册过程结束后，将收到一条包含新帐户信息的消息。 <br/> ![帐户信息的图像](./media/2-end-of-sign-up-process.png) <br/>此时如果单击“准备就绪”，则将转到 Office 365 管理中心，可以在此将用户添加到测试环境。 <br/><br/>但是，如果想直接进入 Intune Azure 门户，请打开一个新的浏览器窗口，然后在地址栏中输入 **https://portal.azure.com**。 将转到 Azure 登录页，可以在此使用获得的凭据进行登录。 任何时候想登录 Intune 试用版时都请使用该地址。 <br/> ![Azure 门户登录页的图像](./media/azure-portal-signin.png)
 
@@ -70,8 +70,6 @@ account-sign-up.md
 
 ### <a name="intune-on-azure"></a>Azure 上的 Intune
 了解有关 [Azure 门户中的 Intune](what-is-intune.md) 的详细信息
-### <a name="classic-intune"></a>经典 Intune
-评估方案：[在 Microsoft Intune 中评估移动设备管理](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>与其他产品的集成
 深入了解如何在 Intune 中使用 Azure Active Directory 用户帐户：
