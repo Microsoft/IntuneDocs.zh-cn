@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 2720cf6f1c5d6b71966c4b4987734cc40dca8aa9
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
@@ -43,11 +43,11 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
 
   ![下载 Intune PC 客户端](../media/pc-sa-client-download.png)
 
-2.  在“客户端软件下载”页上，单击“下载客户端软件”。 然后将包含该软件的 **Microsoft_Intune_Setup.zip** 包保存到网络上的安全位置。
+2. 在“客户端软件下载”页上，单击“下载客户端软件”。 然后将包含该软件的 **Microsoft_Intune_Setup.zip** 包保存到网络上的安全位置。
 
-Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（可在内嵌证书中使用）。 如果未经授权的用户获得了此安装包的访问权限，则他们可以用该包的嵌入式证书所代表的帐户注册电脑，并可能获得访问公司资源的权限。
+  Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（可在内嵌证书中使用）。 如果未经授权的用户获得了此安装包的访问权限，则他们可以用该包的嵌入式证书所代表的帐户注册电脑，并可能获得访问公司资源的权限。
 
-3.  将安装程序包的内容提取到网络上的安全位置。
+3. 将安装程序包的内容提取到网络上的安全位置。
 
     > [!IMPORTANT]
     > 请不要重命名或删除提取的 **ACCOUNTCERT** 文件，否则客户端软件安装将失败。
@@ -198,13 +198,10 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
 
 **方法 1**：
 
-    ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
-    ```
 
 **方法 2**<br>请注意：每个 Windows SKU 上都安装了这些代理：
 
-    ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
     wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
     wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
@@ -237,7 +234,6 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
     wmic product where name="Windows Online Management Update Manager" call uninstall<br>
     wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
     wmic product where name="Windows Intune" call uninstall
-    ```
 
 > [!TIP]
 > 客户端取消注册将为受影响的客户端留下过时的服务器端记录。 取消注册过程是异步过程，需要卸载 9 个代理，因此最多需要 30 分钟完成。
@@ -255,10 +251,8 @@ Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（�
 
 取消注册过程不会删除 OnlineManagement 文件夹。 卸载后等待 30 分钟，然后运行此命令。 如果过早运行，则卸载可能停留在未知状态。 若要删除该文件夹，请启用提升的提示符并运行：
 
-    ```
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
-    ```
 
-### <a name="see-also"></a>另请参阅
+### <a name="next-steps"></a>后续步骤
 [使用 Microsoft Intune 管理 Windows 电脑](manage-windows-pcs-with-microsoft-intune.md)
 [客户端安装程序疑难解答](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

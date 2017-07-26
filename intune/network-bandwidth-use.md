@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune 网络带宽使用
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/03/2017
 该表列出了对于每个客户端在网络上传输的常见内容的近似大小和频率。
 
 > [!NOTE]
-> 若要确保计算机和移动设备可以从 Intune 服务接收必需的更新和内容，必须将其定期连接到 Internet。 接收更新和内容所花费的时间会有差异，但作为参考，他们应该每天保持至少 1 个小时的 Internet 连接。
+> 为了确保设备从 Intune 接收更新和内容，它们必须定期连接到 Internet。 接收更新和内容所需的时间可能有所不同，但它们应每天保持至少一个小时的 Internet 连接。
 
 |内容类型|近似大小|频率和详细信息|
 |----------------|--------------------|-------------------------|
@@ -51,9 +51,9 @@ ms.lasthandoff: 07/03/2017
 可以使用下列一种或多种方法来减少 Intune 客户端的网络带宽使用。
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>使用代理服务器来缓存内容请求
-你可以使用代理服务器，该代理服务器可以缓存内容来减少重复下载，并减少从 Internet 请求内容的客户端使用的网络带宽。
+代理服务器可以缓存内容来减少重复下载，并减少从 Internet 获取内容所使用的网络带宽。
 
-缓存代理服务器接收来自网络上的客户端计算机的内容请求，从 Internet 中检索该内容，然后缓存 HTTP 响应和二进制下载。 服务器使用缓存的信息来应答来自 Intune 客户端计算机的后续请求。
+从客户端接收内容请求的缓存代理服务器可以检索该内容，并缓存 Web 响应和下载。 服务器使用缓存的数据来应答来自客户端的后续请求。
 
 下面是针对缓存 Intune 客户端内容的代理服务器所使用的典型设置。
 
@@ -70,7 +70,7 @@ Intune 支持在 Windows 计算机上使用后台智能传输服务 (BITS) 来�
 要详细了解 BITS 和 Windows 计算机，请参阅 TechNet 库中的 [后台智能传输服务](http://technet.microsoft.com/library/bb968799.aspx)。
 
 ### <a name="use-branchcache-on-computers"></a>在计算机上使用 BranchCache
-Intune 客户端可以使用 BranchCache 来减少广域网 (WAN) 流量。 作为客户端得到支持的下列操作系统也支持 BranchCache：
+Intune 客户端可以使用 BranchCache 来减少广域网 (WAN) 流量。 以下操作系统支持 BranchCache：
 
 - Windows 7
 - Windows 8.0
@@ -79,22 +79,26 @@ Intune 客户端可以使用 BranchCache 来减少广域网 (WAN) 流量。 作�
 
 要使用 BranchCache，客户端计算机必须已启用 BranchCache，然后针对“分布式缓存模式”进行配置。
 
-默认情况下，当安装 Intune 客户端时，会在计算机上启用 BranchCache 和分布式缓存模式。 但是，如果客户端已有禁用 BranchCache 的组策略，则 Intune 不会替代该策略，BranchCache 在该计算机上将保持禁用状态。
+默认情况下，当安装 Intune 客户端时，会在计算机上启用 BranchCache 和分布式缓存模式。 但是，如果组策略已禁用 BranchCache，则 Intune 不会替代该策略，并且 BranchCache 仍保持禁用状态。
 
-如果使用 BranchCache，你应与组织中负责管理组策略和 Intune 防火墙策略的其他管理员沟通，以确保他们不会部署禁用 BranchCache 或防火墙例外的策略。 有关 BranchCache 的详细信息，请参阅 [BranchCache 概述](http://technet.microsoft.com/library/hh831696.aspx)。
+如果使用 BranchCache，请与组织中的其他管理员一起协作来管理组策略和 Intune 防火墙策略。 确保他们不会部署禁用 BranchCache 或防火墙例外的策略。 有关 BranchCache 的详细信息，请参阅 [BranchCache 概述](http://technet.microsoft.com/library/hh831696.aspx)。
 
 ## <a name="network-communication-requirements"></a>网络通信要求
 
-必须在管理和用于管理 Intune 订阅的设备与基于云的服务所需的网站之间启用网络通信。
+在所管理的设备与基于云的服务所需的网站之间启用网络通信。
 
 Intune 不使用本地基础结构，如运行 Intune 软件的服务器，但有一些使用本地基础结构（包括 Exchange 和 Active Directory 同步工具）的选项。
 
-要管理防火墙和代理服务器后面的计算机，则必须将防火墙和代理服务器设置为允许 Intune 的通信。 要管理代理服务器后面的计算机，应意识到：
+若要管理防火墙和代理服务器后面的计算机，必须启用 Intune 的通信。
 
 -   由于 Intune 客户端使用 **HTTP (80)** 和 **HTTPS (443)**，因此代理服务器必须支持这两种协议
--   对于某些操作（例如下载软件和更新），Intune 需要对 manage.microsoft.com 的未经身份验证的代理服务器访问权限
+-   对于某些任务（例如下载软件和更新），Intune 需要对 manage.microsoft.com 的未经身份验证的代理服务器访问权限
 
 你可以在单独的客户端计算机上修改代理服务器设置，或者可以使用组策略设置更改位于指定代理服务器后面的所有客户端计算机的设置。
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 托管的设备需要允许“所有用户”通过防火墙访问服务的配置。
 

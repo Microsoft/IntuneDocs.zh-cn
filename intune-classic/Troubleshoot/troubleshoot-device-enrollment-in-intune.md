@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 07/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
@@ -151,6 +151,17 @@ ms.lasthandoff: 07/01/2017
 
 
 ## <a name="android-issues"></a>Android 的问题
+
+### <a name="android-enrollment-errors"></a>Android 注册错误
+
+下表列出了在 Intune 中注册 Android 设备时最终用户可能会遇到的错误。
+
+|错误消息|问题|解决方法|
+|---|---|---|
+|**IT 管理员需要分配许可证才能进行访问**<br>IT 管理员未授予你使用此应用的权限。 请向 IT 管理员寻求帮助或稍后重试。|无法注册设备，因为该用户的帐户没有必要的许可证。|必须先为用户分配必要的许可证，用户才能注册其设备。 此消息表明用户持有的指定移动设备管理机构许可证类型不正确。 例如，如果已将 Intune 指定为移动设备管理机构，并且用户正在使用 System Center 2012 R2 Configuration Manager 许可证，则将收到此错误消息。<br><br>请参阅有关如何[将 Intune 许可证分配给用户帐户](/intune/licenses-assign.md)的信息。
+|**IT 管理员需要设置 MDM 机构<br>看起来 IT 管理员并未设置 MDM 机构。 请向 IT 管理员寻求帮助或稍后重试。|尚未定义移动设备管理机构。|尚未在 Intune 中指定移动设备管理机构。 请参阅有关如何[设置移动设备管理机构](/intune/mdm-authority-set.md)的信息。|
+
+
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>设备无法签入 Intune 服务，并在 Intune 管理控制台中显示为“不正常”
 **问题：**运行 Android 版本 4.4.x 和 5.x 的某些 Samsung 设备可能会停止签入 Intune 服务。 如果设备不签入：
 
