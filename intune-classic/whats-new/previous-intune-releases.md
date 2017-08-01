@@ -42,7 +42,7 @@ __用于 Intune 应用的 SDK Xamarin 已推出__ Intune App SDK Xamarin 组件�
 __提高了设备注册限制__ Intune 将每个用户的最大可配置设备注册限制从 5 提高到了 15。
 <!---TFS 1289896 --->
 
-运行 Intune 客户端软件的 Windows 电脑的 TeamViewer 集成____
+运行 Intune 客户端软件的 Windows 电脑的 TeamViewer 集成
 [TeamViewer](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)。
 <!---TFS 1284856--->
 
