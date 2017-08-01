@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 什么是 Intune for Education？
-<a id="what-is-intune-for-education" class="xliff"></a>
+# <a name="what-is-intune-for-education"></a>什么是 Intune for Education？
 
 Intune for Education 旨在使学校数据受到保护的同时让教师和学生能够高效地工作和学习。 Intune 是基于云的企业移动性管理 (EMM) 服务，该服务是 Intune for Education 的基础。
 
@@ -39,8 +38,7 @@ Intune for Education 可以单独使用，也可以与 [Intune 提供的完整�
 * 通过帮助控制用户访问和共享组织信息的方式来保护组织信息。
 * 确保设备和应用符合安全要求。
 
-### 后续步骤
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>后续步骤
 * 通过 [Intune 的 30 天试用版](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)熟悉该产品。
 * 了解[开始使用 Intune for Education](/intune-education/what-is-express-configuration) 的最快速方式。
 * 深入了解 Intune 的[技术要求和功能](/intune/supported-devices-browsers)。

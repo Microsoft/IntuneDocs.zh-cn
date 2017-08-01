@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/12/2017
 ---
-# 什么是 Microsoft Intune 应用管理？
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ ms.lasthandoff: 07/12/2017
 
 Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
-## 按平台分类的应用管理功能
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>按平台分类的应用管理功能
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
 <sup>2</sup>仅适用于由 Intune 管理的设备。
 
-## 如何开始？
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>如何开始？
 
 可在“移动应用”工作负荷中找到大部分与应用相关的内容，并可通过以下步骤进行访问：
 
@@ -73,8 +70,7 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
     ![移动应用工作负荷](./media/apps-workload.png)
 
-### 管理计算机上的
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>管理计算机上的
 - **应用** - 可在此节点处添加、分配和监视大多数应用。
     - [添加应用](apps-add.md)
     - [分配应用](apps-deploy.md)
@@ -89,8 +85,7 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 - **iOS 预配配置文件** - iOS 应用包含一个预配配置文件和一个证书签名的代码。 证书过期后，应用无法再运行。 Intune 提供了一些工具，用于将新的预配配置文件策略主动分配到安装了即将到期应用的设备。
     - [iOS 应用预配配置文件](app-provisioning-profile-ios.md)
 
-### 监视
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>监视
 - **许可应用** - 查看、分配和监视从应用商店批量购买的应用。
     - [适用于企业批量采购应用的 Windows 应用商店](windows-store-for-business.md)
 - **发现的应用** - 显示由 Intune 分配，并安装在设备上的所有应用。
@@ -99,8 +94,7 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
 有关详细信息，请参阅[监视应用](apps-monitor.md)
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **适用于企业的 Windows 应用商店** - 设置与适用于企业的 Windows 应用商店的集成。 然后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。

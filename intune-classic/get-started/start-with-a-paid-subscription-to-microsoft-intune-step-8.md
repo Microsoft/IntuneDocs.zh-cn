@@ -30,7 +30,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="enable-device-enrollment"></a>启用设备注册
 
-1. **将 Intune 设置为移动设备管理机构** 在“Intune 管理控制台”[](https://manage.microsoft.com/)中，选择“管理”>“移动设备管理”，然后在“任务”下选择“设置 MDM 机构”。  
+1. **将 Intune 设置为移动设备管理机构** 在[“Intune 管理控制台”](https://manage.microsoft.com/)中，选择“管理”>“移动设备管理”，然后在“任务”下选择“设置 MDM 机构”。  
 
 2. 在“MDM 机构”对话框中选择“是”。
 
