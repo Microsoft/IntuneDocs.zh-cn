@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="use-full-or-selective-wipe"></a>使用完全擦除或选择性擦除
 
@@ -80,8 +80,8 @@ ms.lasthandoff: 07/01/2017
 |Wi-Fi 和 VPN 配置文件设置|删除。|
 |证书配置文件设置|已删除并吊销证书。|
 |管理代理|删除管理配置文件。|
-|Email|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。 如果在本地托管 Microsoft Exchange，则不会删除电子邮件配置文件和缓存的电子邮件。|
-|Outlook|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|
+|Email|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
+|Outlook|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。|
 |Azure Active Directory (AAD) 脱离|已删除 AAD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
 
@@ -99,7 +99,7 @@ ms.lasthandoff: 07/01/2017
 |证书配置文件设置|已吊销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
 |Email|n/a（Android 设备不支持电子邮件配置文件）|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
-|Outlook|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。</br>例外：如果在本地托管 Exchange，则不会删除电子邮件。|
+|Outlook|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。|
 |Azure Active Directory (AAD) 脱离|已删除 AAD 记录。|已删除 AAD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
 
@@ -115,7 +115,7 @@ ms.lasthandoff: 07/01/2017
 |设置|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|不支持。|删除。|
 |证书配置文件设置|已删除并吊销证书。|已删除并吊销证书。|不支持。|已删除并吊销证书。|
-|Email|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。|不支持。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。 删除由 Intune 预配的邮件帐户。</br>**例外**：如果在本地托管 Microsoft Exchange，则不会删除电子邮件帐户。|
+|Email|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。|不支持。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。 删除由 Intune 预配的邮件帐户。|
 |Azure Active Directory (AAD) 脱离|否。|否。|已删除 AAD 记录。|不适用。 Windows 10 不支持对已加入 Azure Active Directory 的设备使用选择性擦除。|
 
 **进行选择性擦除**：

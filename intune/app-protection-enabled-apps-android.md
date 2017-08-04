@@ -15,14 +15,17 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 97a7a2d2727d823c24e720b61531dce78f6935d1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略管理时会出现的情况 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)] 本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
+# <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况 
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
 ##  <a name="accessing-apps"></a>访问应用
 
 Android 设备上与应用保护策略关联的所有应用都需要公司门户应用。

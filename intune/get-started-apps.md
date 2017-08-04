@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a086da185681a91daad214f1be2d4ff0e2827fbb
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 71093f8ac17fc6d6938f5c263a40204f89419726
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-with-apps"></a>应用入门
 
-![其中显示了添加 Microsoft Word 应用这一操作的图像。](/intune/media/generic-add-apps.png)
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-未安装正确应用的工作设备是无用的。 Intune 支持多种将应用部署到公司设备上的方式：
+Intune 支持多种将应用部署到公司设备上的方式：
 
 * **软件安装程序**：用于上传下载到用户设备的文件
 * __外部链接__：适用于在公共应用商店拥有应用或拥有 Web 应用的情况

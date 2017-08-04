@@ -19,11 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/11/2017
 ---
-# 规划 Intune 部署的其他资源
-<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+# <a name="additional-resources-for-planning-your-intune-deployment"></a>规划 Intune 部署的其他资源
 
-## 模板
-<a id="templates" class="xliff"></a>
+## <a name="templates"></a>模板
 
 在规划指南中所用表的 Microsoft Excel 模板将可供[下载](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)。
 
@@ -44,8 +42,7 @@ ms.lasthandoff: 07/11/2017
 | | 条件性访问策略|-|
 
 
-## 深入阅读
-<a id="further-reading" class="xliff"></a>
+## <a name="further-reading"></a>深入阅读
 
 查看以下其他信息的资源，这些信息可能在 Intune 部署规划、设计和实现过程中有所帮助。
 

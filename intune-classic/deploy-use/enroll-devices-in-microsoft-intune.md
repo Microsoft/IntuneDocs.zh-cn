@@ -14,11 +14,11 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2e08a228c19e934e92ed2db1de407859e20559f7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 07/01/2017
 
 可注册包括 Windows 电脑在内的设备，使用 Microsoft Intune 启用移动设备管理 (MDM)。 本主题介绍了在 Intune 管理中注册移动设备的不同方法。 注册设备的方式取决于设备类型、所有权和所需管理级别。 “自带设备办公”(BYOD) 注册允许用户注册其个人电话、平板电脑或电脑。 通过公司自有设备 (COD) 注册，可实现自动注册、共享设备或预授权注册要求等管理方案。
 
-若使用 [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune)（在本地或在云中承载），无需注册就可启用简单的 Intune 管理。 还可以使用 [Intune 客户端软件](#manage-windows-pcs-with-intune)管理 Windows 电脑。
+若使用 [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune)（在本地或在云中承载），无需注册就可启用简单的 Intune 管理。 还可以使用 [Intune 客户端软件](#windows-pc-management-with-intune)管理 Windows 电脑。
 
 默认情况下，适用于所有平台的设备都可在 Intune 中进行注册。 若要阻止设备注册，请使用管理员凭据登录 [Microsoft Intune 管理门户](https://manage.microsoft.com)。 选择“管理” > “移动设备管理” > “注册规则”，然后清除要阻止的平台对应的复选框。
 
