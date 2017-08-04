@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 8.1 及更高版本设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>常规
--   **将所有配置应用到 Windows 10** - 使此策略中的设置除了可以应用到 Windows 8.1 设备外，还可以应用到 Windows 10 设备。
+
 -   **诊断数据提交** - 允许设备将诊断信息提交到 Microsoft。
 -   **防火墙** - 需要 Windows 防火墙处于打开状态。
 -   **用户帐户控制** - 需要在设备上使用用户帐户控制 (UAC)。
+
 ## <a name="password"></a>Password
 -   **所需密码类型** - 需要最终用户输入密码才能访问设备。
 -   **最短密码长度** - 配置密码所需的最小长度（以字符计算）。
@@ -62,8 +63,10 @@ ms.lasthandoff: 07/03/2017
 -   **企业模式菜单访问** - 允许用户从 Internet Explorer 访问企业模式菜单选项。
 如果选择此设置，你还可以指定**日志记录报告位置**，其中包含指向一个报表的 URL，该报表显示了用户为其启用了企业模式访问的网站。
 -   **企业模式站点列表位置** – 指定活动状态下将使用企业模式的网站列表的位置。
+
 ## <a name="cellular"></a>移动电话
 -   **数据漫游** - 当设备处于手机网络中时允许数据漫游。
+
 ## <a name="cloud-and-storage"></a>云和存储
 -   **工作文件夹 URL** - 设置工作文件夹的 URL，以允许跨设备同步文档。
 -   **不使用 Microsoft 帐户而访问 Windows Mail 应用** 允许在没有 Microsoft 帐户的情况下访问 Windows Mail 应用程序。    

@@ -20,13 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/11/2017
 ---
-# 制定推出计划
-<a id="develop-a-rollout-plan" class="xliff"></a>
+# <a name="develop-a-rollout-plan"></a>制定推出计划
 
 推出计划将标识要针对 Intune 推出的组织组、每个组的推出时间段和你将要使用的注册方法。
 
-## 目标组和时间段
-<a id="targeted-groups-and-timeframes" class="xliff"></a>
+## <a name="targeted-groups-and-timeframes"></a>目标组和时间段
 
 首先，查看针对 Intune 推出的组和你在[用例方案](planning-guide-scenarios.md)中标识的组。
 
@@ -38,20 +36,17 @@ ms.lasthandoff: 07/11/2017
 * 地理位置
 * 业务风险
 
-## 实施阶段
-<a id="rollout-phases" class="xliff"></a>
+## <a name="rollout-phases"></a>实施阶段
 组织通常会在 IT 部门中选择一小组用户进行初步试点，然后开始推出 Intune。 可以扩大试点，加入更多的 IT 部门用户，还可以加入其他组织组的用户。
 
-### 试点
-<a id="pilot" class="xliff"></a>
+### <a name="pilot"></a>试点
 推出的第一阶段应是试点用户。 试点用户应了解自己是新解决方案的第一批用户。 试点用户必须愿意提供反馈以帮助改进配置、文档、通知，为后续推出阶段的所有其他用户简化方法。 这些用户不应是主管人员或 VIP。
 
 试点是你测试各种[挑战](planning-guide-deployment-goals.md)和优化之前收集的[要求](planning-guide-requirements.md)的好机会。
 
 包括你的[通信](planning-guide-communication-plan.md)计划、[支持](planning-guide-support-plan.md)计划和[测试和验证](planning-guide-test-validation.md)，以将影响用户的问题解决在萌芽状态。
 
-### 产品推出
-<a id="production-rollout" class="xliff"></a>
+### <a name="production-rollout"></a>产品推出
 一个试点成功后，即可开始进行针对组织中其他组进行完整生产推出。 不同的推出组和阶段的示例如下：
 
 -   **部门** <br/>每个部门可以为一个推出阶段。 一次针对整个部门。 在此类推出中，每个部门中的用户都有可能以相同的方式使用移动设备并访问相同的应用程序。 用户很可能具有相同类型的策略。
@@ -71,26 +66,22 @@ ms.lasthandoff: 07/11/2017
 | 产品推出阶段 3 |  |  |  | 人力资源（50 位用户），财务（40 位用户），主管人员（30 位用户） |
 
 你可以[下载上表的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来输入组织的推出阶段。
-## 将推出组与注册方法匹配
-<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
+## <a name="match-rollout-groups-to-enrollment-approaches"></a>将推出组与注册方法匹配
 
 至此，已确定 Intune 推出的目标组和时段，接下来为每个组选择最合适的 Intune 注册方法。 你可以使用不同的注册方法，包括：
 * 用户自助服务
 * 用户辅助注册
 * IT 技术博览会
 
-### 用户自助服务
-<a id="user-self-service" class="xliff"></a>
+### <a name="user-self-service"></a>用户自助服务
 
 在这种情况下，用户通常按照 IT 组织所提供的注册说明自行注册其设备。 此方法最常用于组织中，相比用户辅助注册，可扩展性更强。
 
-### 用户辅助注册
-<a id="user-assisted-enrollment" class="xliff"></a>
+### <a name="user-assisted-enrollment"></a>用户辅助注册
 
 这称为“白色手套”方法。 IT 团队成员会亲自或通过 Skype 帮助用户完成注册过程。 这种方法通常用于主管人员以及其他在注册过程中可能需要获得更多帮助的组。
 
-### IT 技术博览会
-<a id="it-tech-fair" class="xliff"></a>
+### <a name="it-tech-fair"></a>IT 技术博览会
 
 Intune 用户注册的途径还可以选择 IT 技术博览会。 在此活动中，IT 小组将安排一个 Intune 注册辅助展位，用户可以在展位上了解 Intune 注册信息、询问以及获得注册帮助。 该方法对 IT 小组和用户都大有益处，尤其是在 Intune 推出的早期阶段。
 
@@ -111,7 +102,6 @@ Intune 用户注册的途径还可以选择 IT 技术博览会。 在此活动�
 | 自助服务 |  |  |  | 人力资源、财务 |
 | 白色手套 |  |  |  | 高级管理人员 |
 
-## 后续步骤
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>后续步骤
 
 下一节提供[如何开发 Intune 推出交流计划](planning-guide-communication-plan.md)的相关指南。

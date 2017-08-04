@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/11/2017
 ---
-# 确定用例场景要求
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>确定用例场景要求
 
 在此部分，你将确定对每个用例场景内每个组织组的要求。 此过程有助于为其他 Intune 部署规划领域做准备，例如体系结构和设计、载入和推出。 还有助于确定与 Intune 部署项目相关的潜在缺陷和难题。
 
@@ -42,8 +41,7 @@ ms.lasthandoff: 07/11/2017
 你可以[下载上表的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来输入组织的用例和子用例要求。
 
 
-## 要求示例
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>要求示例
 
 下面是可在“要求”列使用的几个其他示例：
 
@@ -64,7 +62,6 @@ ms.lasthandoff: 07/11/2017
     - 具有应用保护策略的 Office 365
     - 具有应用保护策略的业务线 (LOB)
 
-## 后续步骤
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>后续步骤
 
 下一节提供[如何开发 Intune 推出计划](planning-guide-rollout-plan.md)的相关指南。

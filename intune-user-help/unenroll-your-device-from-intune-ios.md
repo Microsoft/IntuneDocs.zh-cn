@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 从 Intune 取消注册 iOS 设备
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>从 Intune 取消注册 iOS 设备
 
 从 Intune 取消注册 iOS 设备后，该设备将无法再访问公司资源并且无法再通过 Intune 进行托管。
 

@@ -20,16 +20,14 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/01/2017
 ---
-<a id="install-the-intune-on-premises-exchange-connector" class="xliff"></a>
-# 安装 Intune On-Premises Exchange Connector
+# <a name="install-the-intune-on-premises-exchange-connector"></a>安装 Intune On-Premises Exchange Connector
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 若要设置连接以使 Microsoft Intune 能够与托管移动设备邮箱的 Exchange Server 通信，则必须从 Intune 管理控制台下载和配置本地 Exchange Connector。 Intune 仅支持每个订阅中存在一个 Exchange Connector 连接（任意类型）。
 
-<a id="on-premises-exchange-connector-requirements" class="xliff"></a>
-## 本地 Exchange Connector 的要求
+## <a name="on-premises-exchange-connector-requirements"></a>本地 Exchange Connector 的要求
 下表列出了你在其中安装本地 Exchange Connector 的计算机的要求。
 
 |要求|更多信息|
@@ -43,8 +41,7 @@ ms.lasthandoff: 07/01/2017
 |网络|在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 
 
-<a id="exchange-cmdlet-requirements" class="xliff"></a>
-### Exchange cmdlet 要求
+### <a name="exchange-cmdlet-requirements"></a>Exchange cmdlet 要求
 
 你必须创建 Intune Exchange Connector 使用的 Active Directory 用户帐户。 帐户必须具有运行以下要求的 Windows PowerShell Exchange cmdlets 的权限：
 
@@ -62,8 +59,7 @@ ms.lasthandoff: 07/01/2017
  -   Set-ADServerSettings
  -   Get-Command
 
-<a id="download-the-on-premises-exchange-connector-software-installation-package" class="xliff"></a>
-## 下载本地 Exchange Connector 软件安装包
+## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange Connector 软件安装包
 
 1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中的管理员且有权使用 Exchange Server）打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com) (https://manage.microsoft.com) 。
 ![打开“设置 Exchange 连接”](../media/ExchangeConnector.gif)
@@ -77,8 +73,7 @@ ms.lasthandoff: 07/01/2017
 > [!IMPORTANT]
 > 请勿重命名或移动本地 Exchange Connector 文件夹中的文件。 移动或重命名该文件夹的内容将导致安装失败。
 
-<a id="install-and-configure-the-intune-on-premises-exchange-connector" class="xliff"></a>
-## 安装和配置 Intune On-Premises Exchange Connector
+## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>安装和配置 Intune On-Premises Exchange Connector
 执行下列步骤以安装 Intune On-Premises Exchange Connector。 每个 Intune 订阅只能安装一次本地 Exchange Connector，并且只能安装在一台计算机上。 如果尝试配置其他本地 Exchange Connector，新连接将替换原始连接。
 
 1.  在支持本地连接器的操作系统上，将 **Exchange_Connector_Setup.zip** 中的文件提取到安全位置。
@@ -130,8 +125,7 @@ Exchange Connector 设置连接后，与在 Exchange Connector 中管理的用�
 > [!NOTE]
 > 如果已经安装了本地 Exchange Connector 并且在某一时刻删除 Exchange 连接，则必须从安装了本地 Exchange Connector 的计算机中卸载此软件。
 
-<a id="validate-the-exchange-connection" class="xliff"></a>
-## 验证 Exchange 连接
+## <a name="validate-the-exchange-connection"></a>验证 Exchange 连接
 
 在成功配置 Exchange Connector 之后，可以查看连接的状态和最后一次成功同步尝试的状态。 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理”工作区。 在“移动设备管理”下选择“Microsoft Exchange”，然后验证你提供的详细信息是否出现在“Exchange 连接信息”下。
 
