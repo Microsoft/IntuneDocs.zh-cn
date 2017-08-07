@@ -8,9 +8,7 @@
 ### [应用 UI 中的新增功能](whats-new-app-ui.md)
 ### [新增功能存档（Azure 门户）](whats-new-archive.md)
 ### [新增功能存档（经典门户）](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [高级体系结构](high-level-architecture.md)
 ## [设备和应用生命周期](introduction-device-app-lifecycles.md)
 ### [设备生命周期](device-lifecycle.md)
 ### [应用生命周期](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # 监视和故障排除
 ## [使用支持人员角色](help-desk-operators.md)
+## [使用 Intune 数据仓库](reports-nav-create-intune-reports.md)
+### [使用 Power BI 连接到数据仓库](reports-proc-get-a-link-powerbi.md)
 
 # 开发和自定义
 ## [配置自定义设备设置](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Intune App SDK Xamarin 组件](app-sdk-xamarin.md)
 ## [如何使用 Intune Graph API](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune 数据库仓库 API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [数据仓库 API 终结点](reports-api-url.md)
+### [数据库仓库数据模型](reports-ref-data-model.md)
+#### [数据实体引用](reports-ref-date.md)
+#### [用户实体引用](reports-ref-user.md)
+#### [移动引用管理 (MAM) 实体引用](reports-ref-mobile-app-management.md)
+#### [设备实体引用](reports-ref-devices.md)
+#### [应用程序实体引用](reports-ref-application.md)
+#### [策略实体引用](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [术语表](intune-glossary.md)
