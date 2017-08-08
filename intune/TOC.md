@@ -83,7 +83,7 @@
 ### [设置 iOS 注册](ios-enroll.md)
 #### [设备注册计划](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [设置 macOS 注册](macos-enroll.md)
 
 ## [管理设备](device-management.md)
@@ -101,6 +101,7 @@
 ### [删除用户](device-remove-user.md)
 ### [适用于 Android 的远程控制](device-profile-android-teamviewer.md)
 ### [Windows 10 PIN 重置](device-windows-pin-reset.md)
+### [同步设备](device-sync.md)
 ### [检查设备清单](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -171,6 +172,7 @@
 ### [配置 Windows 10 教育版设置](education-settings-configure.md)
 ### [配置 iOS 教育设置](education-settings-configure-ios.md)
 ### [配置 iOS 教育共享设备](education-settings-configure-ios-shared.md)
+### [配置 iOS 更新策略](software-updates-ios.md)
 ### [配置 Windows 更新商业版设置](windows-update-for-business-configure.md)
 ### [配置证书](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
