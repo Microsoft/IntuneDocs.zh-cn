@@ -6,7 +6,7 @@ keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 01/09/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>你的用户将如何在托管 Office 365 应用上体验基本保护
 
@@ -48,15 +48,14 @@ ms.lasthandoff: 07/01/2017
 
 1. 启动 OneDrive for Business 应用以打开登录页。  <br/> ![iOS 的 OneDrive 登录屏幕的图像](./media/onedrive-ios-sign-in.png)
 2. 键入你的工作帐户用户名。 你将会重定向到“Office 365 身份验证”页，以便输入工作凭据。 <br/> ![Office 365 登录页的图像](./media/o365-sign-in-ios.png)
-3. 凭据成功通过 Azure Active Directory 的身份验证后，将应用移动应用管理 (MAM) 策略，并将要求你重启 OneDrive for Business 应用。  <br/>![iOS 的重启提示的图像](./media/ios-restart-prompt.png)
->[!NOTE]
->“需要重启”消息仅在未注册 Intune 的设备上显示。
+3. 凭据成功通过 Azure Active Directory 的身份验证后，将应用应用保护策略，并要求重启 OneDrive for Business 应用。  <br/>![iOS 的重启提示的图像](./media/ios-restart-prompt.png)    
+  > [!NOTE]
+  > “需要重启”消息仅在未注册 Intune 的设备上显示。
 
 
-4. 重启 OneDrive for Business 应用。 该应用启动时将启用 MAM 策略，并提示你设置设备的 PIN（如果尚未为设备配置 PIN）。 <br/> ![创建 PIN 的提示的图像](./media/pin-prompt-ios.png)
-
->[!NOTE]
->大多数用户不会看到此提示。 只有尚未在其 iOS 设备上启用 PIN 的用户才会看到此提示。
+4. 重启 OneDrive for Business 应用。 该应用启动时将启用应用保护策略，并提示设置设备的 PIN（如果尚未为设备配置 PIN）。 <br/> ![创建 PIN 的提示的图像](./media/pin-prompt-ios.png)    
+  > [!NOTE]
+  > 大多数用户不会看到此提示。 只有尚未在其 iOS 设备上启用 PIN 的用户才会看到此提示。
 
 
 5. 设置 PIN 并进行确认后，返回到 OneDrive for Business 应用。 将看到一个一次性通知，表明你的 IT 管理员正在保护 OneDrive 中的工作数据。 <br/> ![来自 IT 管理员的一次性通知的图像](./media/one-time-notice.png)
@@ -70,9 +69,9 @@ ms.lasthandoff: 07/01/2017
 
 1. 启动 OneDrive for Business 应用以打开登录页。  <br/> ![OneDrive 应用欢迎屏幕的图像](./media/onedrive-android-welcome.png)
 2. 键入你的工作帐户用户名。 你将会重定向到“Office 365 身份验证”页，以便输入工作凭据。 <br/> ![Android 上的 O365 登录的图像](./media/o365-sign-in-android.png)
-3. 凭据成功通过 Azure Active Directory 的身份验证后，如果尚未在设备上安装公司门户应用，则会看到一条消息指示你进行安装。 点击“转至应用商店”以继续。 <br/> ![获取公司门户应用的消息的图像](./media/get-company-portal-android.png) <br/>如果已经在手机上安装了公司门户应用，则 OneDrive for Business 应用将自动启动，并且你可以跳到尾注。
->[!IMPORTANT]
->在 Android 上将 Office 应用设置为由 MAM 策略管理后，设备用户就**必须**安装公司门户应用才能访问工作电子邮件和文档，即使最终用户不需要打开或登录到应用来实际阅读电子邮件或文档。
+3. 凭据成功通过 Azure Active Directory 的身份验证后，如果尚未在设备上安装公司门户应用，则会看到一条消息指示你进行安装。 点击“转至应用商店”以继续。 <br/> ![获取公司门户应用的消息的图像](./media/get-company-portal-android.png) <br/>如果已经在手机上安装了公司门户应用，则 OneDrive for Business 应用将自动启动，并且你可以跳到尾注。    
+  > [!IMPORTANT]
+  > 在 Android 上将 Office 应用设置为由应用保护策略管理后，设备用户必须安装公司门户应用才能访问工作电子邮件和文档，即使最终用户不需要打开或登录到应用来实际阅读电子邮件或文档也是如此。
 
 4. 你现在位于 Google Play 应用商店，可在其中下载和安装公司门户应用。 该应用有助于保护数据安全。 <br/> ![Google Play 应用商店中应用的图像](./media/google-play-get-app-android.png)
 5. 完成应用安装后，选择“接受”以接受条款。 OneDrive for Business 应用将自动启动。
@@ -118,9 +117,9 @@ ms.lasthandoff: 07/01/2017
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>为什么只为 Android 设备配置了应用 PIN 策略？
 加密在 iOS 和 Android 上的工作方式不同。
 
-在 iOS 上，对于与 Intune MAM 策略关联的应用，使用操作系统提供的设备级别的加密对数据进行静态加密。 因此，在启用应用加密策略后，还将自动要求用户具有并输入设备 PIN 才能访问工作数据。 将会提示尚未在设备上配置设备 PIN 的用户创建设备 PIN。
+在 iOS 上，对于与 Intune 应用保护策略关联的应用，将使用操作系统提供的设备级别的加密对数据进行静态加密。 因此，在启用应用加密策略后，还将自动要求用户具有并输入设备 PIN 才能访问工作数据。 将会提示尚未在设备上配置设备 PIN 的用户创建设备 PIN。
 
-在 Android 上，对于与 Intune MAM 策略关联的应用，将会在文件 I/O 任务期间对数据进行同步加密。 始终加密设备存储中的内容。 在非 MDM 管理的设备上，MAM 策略不能强制要求设备 PIN。 若要确保用户需要使用某些 PIN 才能访问工作数据，可通过向导启用应用 PIN 策略。
+在 Android 上，对于与 Intune 应用保护策略关联的应用，将会在文件 I/O 任务期间对数据进行同步加密。 始终加密设备存储中的内容。 在非 MDM 管理的设备上，应用保护策略不能强制要求设备 PIN。 若要确保用户需要使用某些 PIN 才能访问工作数据，可通过向导启用应用 PIN 策略。
 
 你始终可以编辑这些策略设置以满足你组织的要求。
 

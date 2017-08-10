@@ -5,7 +5,7 @@ keywords: "什么是 Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>什么是 Intune？
 
@@ -37,7 +37,7 @@ Intune 与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访�
 ## <a name="how-does-intune-work"></a>Intune 如何工作？
 Intune 提供移动设备管理 (MDM) 和移动应用管理 (MAM)。 Intune 的 MDM 和 MAM 功能促成数据保护和相容性方案的 EMS 套件。  
 
-使用 Intune 和 EMS 数据保护的 MDM / MAM 功能的方式取决于[尝试解决的业务问题](#common-business-problems-that-intune-helps-solve)。 例如：
+使用 Intune 和 EMS 数据保护的 MDM/MAM 功能的方式取决于[尝试解决的业务问题](#common-business-problems-that-intune-helps-solve)。 例如：
 * 如果要创建一次性设备池供零售商店中的轮班员工共享，那么会充分利用 MDM。
 * 如果允许员工使用其个人设备访问公司数据 (BYOD)，则会依赖于 MAM 和数据保护。  
 * 如果向信息工作者发放公司电话，那么将十分依赖所有这些技术。
@@ -72,10 +72,10 @@ MDM 通过使用移动操作系统中的可用协议或 API 来工作。 它包�
 
 * [单一登录](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [多重身份验证](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [应用条件性访问 - 如果移动应用中包含公司数据，则允许访问](app-based-conditional-access-intune.md)（[经典控制台](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365)）
-* [在同一个应用内将个人数据与公司数据隔离](app-protection-policy.md)（[经典控制台](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)）
-* [应用保护策略（PIN、加密、另存为、剪贴板等等）](app-protection-policies.md)（[经典控制台](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)）
-* [从移动应用擦除公司数据](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [应用条件访问 - 如果移动应用中包含公司数据，则允许访问](app-based-conditional-access-intune.md)
+* [在同一个应用内将个人数据与公司数据隔离](app-protection-policy.md)
+* [应用保护策略（PIN、加密、另存为、剪贴板等等）](app-protection-policies.md)
+* [从移动应用擦除公司数据](apps-selective-wipe.md)
 * [权限管理支持](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![显示应用管理数据安全级别的图片](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ Intune 提供移动应用安全的一种方法是通过其**应用保护策略**
 * [向任务工作者发放使用受限的共享平板电脑](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>后续步骤
-* 了解一些 [Intune 的常见使用方式](common-scenarios.md)（[经典控制台](/intune-classic/understand-explore/common-ways-to-use-intune)）。
-* 通过 [Intune 的 30 天试用版](free-trial-sign-up.md)熟悉该产品（[经典控制台](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)）。
-* 深入了解 Intune 的[技术要求和功能](supported-devices-browsers.md)（[经典控制台](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)）。
+* 了解一些 [Intune 的常见使用方式](common-scenarios.md)。
+* 通过 [Intune 的 30 天试用版](free-trial-sign-up.md)熟悉该产品。
+* 深入了解 Intune 的[技术要求和功能](supported-devices-browsers.md)。

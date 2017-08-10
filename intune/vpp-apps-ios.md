@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 应用
 
@@ -33,6 +33,19 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 - 从应用商店中导入许可证信息
 - 跟踪已使用的许可证数量
 - 防止安装的应用副本数超过所拥有的数目
+
+可通过两种方法分配批量采购的应用：
+
+### <a name="device-licensing"></a>设备许可
+
+将应用分配到设备时，需使用一个应用证书，此证书将与其分配到的设备保持关联。
+将批量采购的应用分配到设备时，设备的最终用户不必提供 Apple ID 即可访问应用商店。 
+
+### <a name="user-licensing"></a>用户许可
+
+将应用分配给用户时，需使用一个应用证书，此证书将与用户关联。 可以在用户拥有的多个设备上运行该应用。
+将批量采购的应用分配给用户时，每个最终用户必须具有有效的 Apple ID 才能访问应用商店。
+
 
 此外，还可以使用 Intune 同步和管理从 Apple Volume Purchase Program 商店购买的电子图书。 使用 Intune 门户中的 **Books** 工作负荷来管理书籍。 管理书籍的过程与管理应用的过程相同。
 必须上传 Apple Volume Purchase Program 令牌才能执行上述操作。 目前，只能将书籍分配为**必需的**安装。
@@ -81,24 +94,28 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 
 ## <a name="to-assign-a-volume-purchased-app"></a>如何分配批量购买应用
 
-1. 在“移动应用”工作负载中，依次选择“管理” > “获得许可的应用”。
-2. 在应用列表边栏选项卡上，选择要分配的应用，然后依次选择“...” > “分配组”。
-3. 在<应用名称> -“已分配的组”边栏选项卡中，选择“管理” > “已分配的组”。
-4. 选择“分配组”，然后在“选择组”边栏选项卡上，选择要将应用分配到的 Azure AD 用户或设备组。
-必须选择“必需”的分配操作。 此外，对设备组的分配可用于 2017 年 1 月之后创建的新租户。 如果租户是在此日期之前创建的，并且没有选择将 VPP 应用分配给设备组，请联系 Intune 支持。
-5. 完成后，选择“保存”。
+1.  在“移动应用”工作负荷中，选择“管理” > “应用许可证”。
+2.  在应用列表边栏选项卡上，选择要分配的应用，然后依次选择“...” > “分配组”。
+3.  在“<app name> -  分配”边栏选项卡上，选择“管理” > “分配”。
+4.  选择“选择组”，然后在“选择组”边栏选项卡上，选择要将应用分配到的 Azure AD 用户或设备组。
+5.  请为选择的每个组选择以下设置：
+    - 类型 - 选择应用将为“可用”（最终用户可以从公司门户安装应用）还是“必需”（最终用户设备将自动安装应用）。
+将 VPP 应用分配为“可用”后，会直接从应用商店分配应用内容和许可证。
+    - 许可证类型 - 选择“用户许可”或“设备许可”。
+6.  完成后，选择“保存”。
+
 
 >[!NOTE]
 >所显示的应用列表中的每个应用与一个令牌相关联。 如果具有一个与多个 VPP 令牌相关联的应用，会看到同一应用显示多次，一次对应一个令牌。
 
-有关帮助监视应用分配的信息，请参阅[如何监视应用](apps-monitor.md)。
-
 ## <a name="further-information"></a>更多信息
-
-在将应用分配为“必需”安装后，安装该应用的每个用户都将使用许可证。
 
 若要回收许可证，必须将分配操作更改为“卸载”。 卸载应用后，将回收许可证。
 
 符合条件设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 开始安装应用前，他们必须加入该计划。 加入 Apple Volume Purchase 计划的邀请需要用户可以使用 iOS 设备上的 iTunes 应用。 如果已设置禁用 iTunes 应用商店应用的策略，基于用户许可的 VPP 应用将无法工作。 解决方案是删除策略，或使用基于设备的许可来允许 iTunes 应用。
 
-在将 VPP 应用分配为可用后，会直接从应用商店分配应用内容和许可证。
+
+
+## <a name="next-steps"></a>后续步骤
+
+有关帮助监视应用分配的信息，请参阅[如何监视应用](apps-monitor.md)。

@@ -1,11 +1,11 @@
 ---
 title: "通过 Microsoft Intune 启用 BYOD"
-description: 
+description: "用于设置 Intune 的高级别工作流，以便为组织启用自带设备办公 (BYOD) 解决方案。"
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 880b83a63eefe13a96ab8838c7092c185aa32cd0
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enable-byod-with-intune"></a>通过 Intune 实现 BYOD
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/11/2017
 
 -   [注册设备和检查符合性](#enroll-devices-and-check-for-compliance)介绍了如何让用户将个人设备注册到 Intune 以进行管理。 Intune 可管理 iOS、macOS、Android 和 Windows 设备。 本部分还介绍如何向设备部署策略，并确保其满足基本的安全要求。
 
-- [提供对公司资源的访问](#provide-access-to-company-resources)演示了 IT 如何使用户轻松安全地访问公司资源。 为此，可将访问配置文件部署到托管设备。 本部分还介绍如何使用 Intune 管理批量采购的应用部署。
+- [提供对公司资源的访问权限](#provide-access-to-company-resources)演示了如何轻松安全地允许用户访问公司资源。 为此，可将访问配置文件部署到托管设备。 本部分还介绍如何使用 Intune 管理批量采购的应用部署。
 
 -   [保护公司数据](#protect-company-data)有助于了解如何提供对公司资源的条件访问、防止数据丢失，以及当设备上的公司应用和数据不再需要或丢失被盗时如何将其删除。
 
@@ -38,19 +38,17 @@ ms.lasthandoff: 07/11/2017
 ## <a name="before-you-begin"></a>在开始之前
 需要先准备 Intune 服务本身，用户才能注册设备。 为此，请[向用户分配许可证](licenses-assign.md)并[设置移动设备管理机构](mdm-authority-set.md)。
 
-执行这些操作时，还应该[自定义公司门户](company-portal-customize.md)。 添加公司品牌，并向用户提供支持信息。 这将为用户创造值得信赖的注册和支持体验。
+执行这些操作时，还应该[自定义公司门户](company-portal-customize.md)。 添加公司品牌，并向用户提供支持信息。 这将为用户创造值得信赖的注册和支持体验。 还可以创建用户注册前必须接受的[使用条款](terms-and-conditions-create.md)，或创建[设备限制](enrollment-restrictions-set.md)来指定你支持的平台。
 
 ## <a name="enroll-devices-and-check-for-compliance"></a>注册设备和检查符合性
 
 Intune 服务准备就绪后，需要满足要管理的不同设备类型的各种注册需求。 这时，注册设备进行管理的过程就非常直接了，但注册过程因设备类型而略有不同。
 
--   iOS 和 Mac 设备 - 注册 iPad、iPhone 或 MacOS 设备需要[获取 Apple Push Notification 服务 (APN) 证书](apple-mdm-push-certificate-get.md)。 将 APN 证书上传到 Intune 后，用户可使用公司门户应用[注册 iOS 设备](/intune-user-help/enroll-your-device-in-intune-ios)，并使用公司门户网站[注册 MacOS 设备](/intune-user-help/enroll-your-device-in-intune-macos)。
+-   iOS 和 Mac 设备 - 注册 iPad、iPhone 或 MacOS 设备需要[获取 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)。 将 MDM Push Certificate 上传到 Intune 后，用户可使用公司门户应用[注册 iOS 设备](/intune-user-help/enroll-your-device-in-intune-ios)，并使用公司门户网站[注册 MacOS 设备](/intune-user-help/enroll-your-device-in-intune-macos)。
 
--   Android 设备 - 将 Intune 服务注册到 Android 设备无需任何准备工作。 用户可使用 Google Play 提供的公司门户应用[将 Android 设备注册](/intune-user-help/enroll-your-device-in-intune-android.md)到管理。
+-   Android 设备 - 将 Intune 服务注册到 Android 设备无需任何准备工作。 用户可使用 Google Play 提供的公司门户应用[将 Android 设备注册](/intune-user-help/enroll-your-device-in-intune-android)到管理。
 
--   Windows Phone 和电脑 - 若要更轻松地注册 Windows 设备，应[设置注册服务器的 DNS 别名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)。 另外，用户可以通过添加工作或学校帐户[注册 Windows 设备](/intune-user-help/enroll-your-w10-phone-or-w10-pc-windows)。
-
-  - 如果拥有 Azure AD Premium，则用户可通过[启用自动注册](windows-enroll.md)更轻松地注册 Windows 设备。 用户添加工作或学校帐户来注册自己的个人设备时，此功能将自动向 Intune 注册设备。 它还适用于加入组织 Azure AD 的公司拥有的设备。
+-   Windows Phone 和电脑 - 可使用其他配置注册 Windows 设备。 若要简化用户体验，可为使用 Azure Active Directory (AD) Premium 的 Windows 10 电脑和 Windows 10 移动设备启用自动注册。 如果没有 Azure AD Premium 或者需要支持 Windows 8.1，则可以创建[注册服务器的 DNS 别名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)来简化注册过程。
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>确保托管设备符合基本安全要求
@@ -61,13 +59,13 @@ Intune 服务准备就绪后，需要满足要管理的不同设备类型的各�
 
 ## <a name="provide-access-to-company-resources"></a>提供对公司资源的访问
 
-大多数员工希望通过其移动设备做的第一件事是访问公司电子邮件和文档。 他们希望设置步骤简单，不需要询问支持人员。 使用 Intune，可轻松为预安装在移动设备上的本机电子邮件应用[创建和部署电子邮件设置](conditional-access-intune-common-ways-use.md)。
-<!--- this was old link: (https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune). check with Andre--->
+大多数员工希望通过其移动设备做的第一件事是访问公司电子邮件和文档。 他们希望设置步骤简单，不需要询问支持人员。 使用 Intune，可轻松为预安装在移动设备上的本机电子邮件应用[创建和部署电子邮件设置](email-settings-configure.md)。
+
 
 > [!NOTE]
 > Intune 支持 Google Play 商店中的 Gmail 和 Nine Work 电子邮件应用使用 Android for Work 电子邮件配置文件配置。
 
-用户在公司外办公时，Intune 还可用来控制和保护对本地公司数据的访问。 结合使用 Intune [Wi-Fi](https://docs.microsoft.com/intune/deploy-use/wi-fi-connections-in-microsoft-intune)、[VPN](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune#create-a-vpn-profile) 和电子邮件配置文件，用户无论身在何处，都能获得完成工作所需的文件和资源的访问权限。 使用 Azure Active Directory 应用程序代理和条件性访问，也可实现对公司 Web 应用程序和本地托管服务的安全访问和保护。
+用户在公司外办公时，Intune 还可用来控制和保护对本地公司数据的访问。 结合使用 Intune [Wi-Fi](wi-fi-settings-configure.md)、[VPN](vpn-settings-configure.md) 和电子邮件配置文件，用户无论身在何处，都能获得完成工作所需的文件和资源的访问权限。 使用 Azure Active Directory 应用程序代理和条件性访问，也可实现对公司 Web 应用程序和本地托管服务的安全访问和保护。
 
 ### <a name="manage-volume-purchased-apps"></a>管理批量采购的应用
 使用 Intune，轻松完成如下操作：
@@ -109,8 +107,8 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 
 ### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>在保留个人数据完整的同时，擦除公司数据
 
-如果不再需要某设备用于办公、设备改变用途或丢失，则需要从此设备删除公司的应用和数据。 为此，可使用 Intune 的选择性擦除和完全擦除功能。 用户也可从 Intune 公司门户远程擦除注册到 Intune 的自有设备。
+如果不再需要某设备用于办公、设备改变用途或丢失，则可以从此设备删除公司的应用和数据。 为此，可使用 Intune 的选择性擦除和完全擦除功能。 用户也可从 Intune 公司门户远程擦除注册到 Intune 的自有设备。
 
 [完全擦除](devices-wipe.md)将设备还原为出厂默认设置，同时删除用户数据和设置。 [选择性擦除](devices-wipe.md#selective-wipe)仅删除设备上的公司数据，但会完整保留用户的个人数据。
 
-启动后，设备会立即开始选择性擦除流程，从管理中删除数据。 流程完成后，便已删除所有公司数据，设备名称也从 Intune 管理员控制台中删除。 设备管理生命周期结束。
+启动后，设备会立即开始选择性擦除流程，从管理中删除数据。 流程完成后，所有公司数据都将删除，设备名称也会从 Intune 门户中删除。 设备管理生命周期结束。

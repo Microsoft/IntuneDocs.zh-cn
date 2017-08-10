@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6a3cdc2b5d95f57f1ffc1f68b6748b357f2ef4
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版 2016 应用分配到 Windows 10 设备
 
-此应用类型使用户可以轻松地将 Office 365 专业增强版 2016 应用分配到所管理的运行 Windows 10 的设备。 此外，还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的一个应用。
+此应用类型使用户可以轻松地将 Office 365 专业增强版 2016 应用分配到所管理的运行 Windows 10 的设备。 还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的一个应用。
 
 
 ## <a name="before-you-start"></a>开始之前
@@ -34,11 +34,8 @@ ms.lasthandoff: 07/17/2017
 - 部署这些应用的设备必须运行 Windows 10 创意者更新或更高版本。
 - Intune 仅支持从 Office 365 专业增强版 2016 套件添加 Office 应用。
 - 当 Intune 安装应用套件时，如果任何 Office 应用处于打开状态，最终用户可能会丢失未保存文件中的数据。
-- 如果在已安装 Office 的设备上安装 Office，请阅读以下注意事项：
-    - 无论使用的是哪个 Office 版本，都不能在同一台设备上同时安装 32 位和 64 位 Office 产品。
-    - 不能在同一台设备上安装相同版本的即点即用和 MSI 版本的 Office，但可以安装不同的主版本。
-    - 如果已经拥有使用即点即用安装的早期版本的 Office，则必须删除要用较新版本替换的任何应用。 例如，如果设备上有较旧版本的 Word，并且想要分配最新的版本，则必须首先删除旧版本。
-    - 如果某设备已经安装 Office 365，则将 Office 365 专业增强版 2016 套件分配到该设备可能意味着必须要更改 Office 订阅级别。
+- Windows 10S 设备不支持此安装方法。
+- 如果将此应用类型作为“可用”分配给具有不同分配的多个用户，则他们将只能看到最新的目标分配。
 
 
 ## <a name="get-started"></a>入门

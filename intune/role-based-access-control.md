@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
+ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>使用 Intune 的基于角色的管理控制 (RBAC)
 
@@ -38,13 +38,13 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 - **Intune 服务管理员：**服务存在时，具有该角色的用户拥有 Intune 内的全局权限。 另外，该角色提供管理用户、设备和以及创建并管理组的功能。
 
-- 条件性访问管理员：具有此角色的用户仅有权查看、创建、修改和删除条件性访问策略。
+- 条件访问管理员：具有此角色的用户仅有权查看、创建、修改和删除条件访问策略。
 
     > [!IMPORTANT]
     > Intune 服务管理员角色不提供管理 Azure AD 条件性访问设置的功能。
 
     > [!TIP]
-    > Intune 还显示三个 Azure AD 扩展：**用户****组**和**条件性访问**，均使用 Azure AD RBAC 控制。 此外，**用户帐户管理员**仅执行 AAD 用户/组活动，而不具备在 Intune 中执行所有活动的完全权限。 请参阅[使用 Azure AD 的 RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)获取详细信息。
+    > Intune 还显示三个 Azure AD 扩展：用户、组和条件访问，均使用 Azure AD RBAC 控制。 此外，**用户帐户管理员**仅执行 AAD 用户/组活动，而不具备在 Intune 中执行所有活动的完全权限。 请参阅[使用 Azure AD 的 RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)获取详细信息。
 
 ## <a name="roles-created-in-the-intune-classic-console"></a>在 Intune 经典控制台中创建的角色
 
@@ -57,9 +57,9 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 以下角色内置在 Intune 中，无需做更多配置即可将它们分配到组：
 
-- **支持操作员**：在用户和设备上执行远程任务，并可以将应用程序或策略分配给用户或设备。 
-- **策略和配置文件管理员**：管理符合性策略、配置文件、Apple 注册和企业设备标识符。
-- **只读操作员**：查看用户、设备、注册、配置和应用程序信息，但不能在 Intune 中进行更改。
+- 技术支持人员：对用户和设备执行远程任务，并可以将应用程序或策略分配给用户或设备。
+- 策略和配置文件管理员：管理符合性策略、配置的配置文件、Apple 注册和企业设备标识符。
+- 只读操作员：查看用户、设备、注册、配置和应用程序信息。 不能对 Intune 进行更改。
 - **应用程序管理员**：管理移动和托管应用程序，并可以读取设备信息。
 
 ### <a name="to-assign-a-built-in-role"></a>若要分配一个内置角色
@@ -68,9 +68,9 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 2. 在<角色名称> -“属性”边栏选项卡上，依次选择“管理”、“分配”。
 
-    > [!NOTE] 
+    > [!NOTE]
     > 无法删除或编辑内置角色
-    
+
 3. 在“自定义角色”边栏选项卡，选择“分配”。
 
 4. 在“角色分配”边栏选项卡上，输入分配的“名称”和可选“说明”，然后选择以下各项：

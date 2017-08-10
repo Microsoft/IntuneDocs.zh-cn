@@ -15,17 +15,17 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1c4f6d18fd78f455be8e333bb765080184c908
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="get-started-with-users"></a>用户入门
 
-![Azure 中的一般用户](/intune/media/generic-intune-user.png)
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Azure AD 管理组织的对象（如设备和应）组以及用户组。 可将用户或设备归组，而无需单独管理每个设备。 通过这种方式可轻松向数量较大的用户和设备分配应用和设置。
+Azure Active Directory 管理组织的对象（如设备和应）组以及用户组。 可将用户或设备归组，而无需单独管理每个设备。 通过这种方式可轻松向数量较大的用户和设备分配应用和设置。
 
 ## <a name="how-do-i-create-a-user"></a>如何创建用户？
 

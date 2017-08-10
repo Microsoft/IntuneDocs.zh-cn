@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>如何使用适用于 iOS 的 Microsoft Intune 应用配置策略
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 07/12/2017
 
 如果用户输入的这些设置不正确，可能会加重支持人员的负担并降低新应用的采用率。
 
-通过让你在运行应用之前将策略中的这些设置分配给用户，应用配置策略可消除此类问题。 随后这些设置会自动提供，用户无需执行任何操作。
+通过让你在运行应用之前将策略中的这些设置分配给用户，应用配置策略可消除此类问题。 随后这些设置会自动提供，用户无需执行任何操作。 应用必须编写为支持使用应用配置。 有关详细信息，请咨询应用供应商。
 
 无需直接向用户和设备分配这些策略。 而是将策略与应用关联，然后分配应用。 只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
 
@@ -57,8 +57,8 @@ ms.lasthandoff: 07/12/2017
 5.  在“策略列表”边栏选项卡中，选择“添加”。
 6.  在“添加配置策略”边栏选项卡上，为应用配置策略提供“名称”和可选“描述”。
 7.  对于“设备注册类型”，选择以下选项之一：
-    - 已注册 Intune - 适用于已集成 Intune App SDK 并且由 Intune 托管的应用。
-    - 未注册 Intune - 适用于已集成 Intune App SDK 但不由 Intune 托管，或由其他解决方案托管的应用。
+    - 向 Intune 注册 - 适用于由 Intune 托管的应用。
+    - 不向 Intune 注册 - 适用于不由 Intune 托管或由其他解决方案托管的应用。
 8.  对于“平台”，选择 **iOS**（仅适用于已注册 Intune 的设备）
 9.  选择“关联应用”，然后在“关联应用”边栏选项卡上，选择要对其应用配置的托管应用。
 10. 在“添加配置策略”边栏选项卡上，选择“配置设置”
