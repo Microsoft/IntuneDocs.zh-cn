@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7da261fcb59b8ac90ea412155d093dd09bf41d46
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Windows 10 版本升级
 
@@ -41,10 +41,10 @@ ms.lasthandoff: 07/01/2017
 
 
 ## <a name="before-you-start"></a>开始之前
-在开始将设备升级至最新版本之前，你将需要以下内容之一：
+开始将设备升级至最新版本之前，需要以下内容之一：
 
-- 在该策略针对的所有设备上安装 Windows 新版本使用的有效产品密钥（针对于 Windows 10 桌面版）。 你可以使用多激活密钥 (MAK) 或密钥管理服务器 (KMS) 密钥。 或者包含在遵循策略的所有设备上安装 Windows 新版本许可信息的 Microsoft 许可证文件（用于 Windows 10 移动版和 Windows 10 全息版）。
-- 作为目标的 Windows 10 设备必须在 Microsoft Intune 中进行注册。 无法将版本升级策略用于运行 Intune 电脑客户端软件的电脑。
+- 在该策略针对的所有设备上安装 Windows 新版本使用的有效产品密钥（针对于 Windows 10 桌面版）。 可以使用多次激活密钥 (MAK) 或密钥管理服务器 (KMS) 密钥，或者使用包含在遵循策略的所有设备上安装新版 Windows 所需的许可信息的 Microsoft 许可证文件（用于 Windows 10 移动版和 Windows 10 全息版）。
+- 为其分配策略的 Windows 10 设备必须在 Microsoft Intune 中进行注册。 无法将版本升级策略用于运行 Intune 电脑客户端软件的电脑。
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>创建包含设备限制设置的设备配置文件
 
@@ -56,13 +56,19 @@ ms.lasthandoff: 07/01/2017
 4. 在“创建配置文件”边栏选项卡上，输入版本升级配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择“Windows 10 及更高版本”。
 6. 从“配置文件类型”下拉列表中，选择“版本升级”。
-7. 在“版本升级”边栏选项卡上，配置以下各项：
+7. 在“版本升级”边栏选项卡上，配置以下设置：
     - **要升级的版本** - 从下拉列表中选择想要在设备上升级的 Windows 10 版本。
     - **将升级到的版本** - 从下拉列表中，选择你想将目标设备升级到的版本：Windows 10 桌面版、Windows 10 全息版或 Windows 10 移动版。
     - **产品密钥** - 指定从 Microsoft 获取并且可以用于升级所有目标 Windows 10 桌面版设备的产品密钥。<br>在创建包含产品密钥的策略后，将无法对产品密钥进行编辑。 这是因为出于安全考虑，密钥将被遮盖。 若要更改产品密钥，必须重新输入完整的密钥。
     - **许可证文件** - 选择“浏览”以选择从 Microsoft 获取的许可证文件，该文件包含要将目标设备升级到的 Windows 全息版或 Windows 10 移动版的许可证信息。
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-将创建配置文件并在“配置文件列表”边栏选项卡上显示。
+系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
+
+## <a name="next-steps"></a>后续步骤
+
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
+
+>[!NOTE]
+>如果稍后删除分配的策略，设备上的 Windows 版本将不会还原，并继续正常运行。
 

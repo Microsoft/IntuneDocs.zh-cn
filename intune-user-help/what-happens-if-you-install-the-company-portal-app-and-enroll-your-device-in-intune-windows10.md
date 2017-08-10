@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Windows 10 设备后会发生什么情况？
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 07/01/2017
 
 -   在手机丢失或被盗时将它重置为出厂设置。
 
-有关注册步骤，请参阅[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)。 若要了解 IT 管理员可以在你的设备上看到的内容，请参阅[当我在 Intune 中注册设备后，IT 管理员可以看到哪些内容？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+有关注册步骤，请参阅[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)。 若要了解 IT 管理员可以在你的设备上看到的内容，请参阅[当我在 Intune 中注册设备后，IT 管理员可以看到哪些内容？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 在添加计算机时：
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 07/17/2017
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>在迁移过程中 Intune 所创建的组可能会影响其他 Microsoft 产品的功能
 
-从经典 Intune 迁移到 Azure 时，可能会看到一个名为 **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** 的新组。 此组包含 Azure Active Directory 中的所有用户，而不仅仅是 Intune 许可的用户。 如果你希望某些现有用户或新用户不属于任何组的成员，此用法会导致其他 Microsoft 产品出现问题。
+从经典 Intune 迁移到 Azure 门户时，可能会看到一个名为“All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421”的新组。 此组包含 Azure Active Directory 中的所有用户，而不仅仅是 Intune 许可的用户。 如果你希望某些现有用户或新用户不属于任何组的成员，此用法会导致其他 Microsoft 产品出现问题。
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>优选功能所需的辅助迁移
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 07/17/2017
 
 因为无法从经典 Silverlight 和 Azure 控制台管理这些功能，因此迁移将会：
 - 在经典控制台中禁用它们
-- 在 Azure 控制台中启用它们。  
+- 在 Azure 控制台中启用它们  
 
 如果目前在 Azure 门户中管理这些 Intune 功能，请注意以下几点：
 
@@ -64,13 +64,12 @@ Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>迁移策略的状态边栏选项卡不起作用
 
-你无法查看从 Azure 门户中的经典门户中迁移的策略的状态信息。 但是，你可以继续在经典门户中查看这些策略的报表。
-若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
+你无法查看从 Azure 门户中的经典门户中迁移的策略的状态信息。 但可以继续在经典门户中查看这些策略的报表。 若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
 
 ## <a name="apps"></a>应用
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>仅适用于默认 Intune 租户语言的 iOS 批量采购应用
-会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户账户国家/区域代码相同的的应用。 例如，如果要购买仅可通过美国商店获得的应用，但 Intune 账户所在地区为德国，则 Intune 不会显示该应用。
+会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户账户国家/区域代码相同的的应用。 例如，如果要购买仅可通过美国商店获得的应用，但 Intune 帐户所在地区为德国，则 Intune 不会显示该应用。
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>会上传同一 iOS 批量采购计划的多个副本
 不要为相同的 VPP 令牌多次单击“上传”按钮。 这将导致上传重复的 VPP 令牌，并导致应用针对同一 VPP 令牌发生多次同步。 
@@ -111,7 +110,7 @@ macOS 的未来版本中可能会解决此问题。
 
 ### <a name="ios-app-protection-policies"></a>iOS 应用保护策略
 
-可以定义适用于无需注册即可通过 MAM 管理的设备上的用户的 [iOS 应用保护策略](app-protection-policy-settings-ios.md)。 由于临时错误，只能为具有单个小数点版本而不是多个小数点的 iOS 版本定义这些策略。 将最低版本设置为 iOS 10.3，而不是设置为 iOS 10.3.1。 使用 iOS SDK 的即将推出的更新将解决此问题。
+可以定义 [iOS 应用保护策略](app-protection-policy-settings-ios.md)使这些策略适用于无需注册即可通过移动应用管理 (MAM) 进行管理的设备上的用户。 由于临时错误，只能为具有单个小数点版本而不是多个小数点的 iOS 版本定义这些策略。 将最低版本设置为 iOS 10.3，而不是设置为 iOS 10.3.1。 使用 iOS SDK 的即将推出的更新将解决此问题。
 
 
 ## <a name="administration-and-accounts"></a>管理和帐户

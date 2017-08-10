@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具为移动应用程序管理准备 Android 应用
 
@@ -50,16 +50,7 @@ ms.lasthandoff: 07/18/2017
     > [!NOTE]
     > 在某些情况下，32 位版本的 Java 可能会导致内存问题。 最好安装 64 位版本。
 
-- Android 要求对所有应用包 (.apk) 进行签名。 使用 Java keytool 生成对已包装输出应用进行签名所需的凭据。 例如，以下命令使用 Java 可执行文件 keytool.exe 生成应用包装工具可用于对已包装输出应用进行签名的密钥。
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    此示例通过使用 RSA 算法生成密钥对（2,048 位公钥和相关私钥）。 然后将公钥包装成存储为单元素证书链的 X.509 v3 自签名证书。 此证书链和私钥被存储在一个名为“mykeystorefile”的新密钥存储条目中，由别名“mykeyalias”标识。 该密钥存储条目的有效期为 50,000 天。
-
-    该命令将提示为密钥存储和密钥提供密码。 使用安全的密码，但需要记住密码，因为运行应用包装工具时会用到该密码。
-
-    有关详细的文档，请在 Oracle 文档网站上了解更多关于 Java [密钥工具](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) 和 Java [密钥存储](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)的信息。
+- Android 要求对所有应用包 (.apk) 进行签名。 有关重复使用现有证书和证书签名的综合指南，请参阅[重复使用签名证书和包装应用](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)。 Java 可执行文件 keytool.exe 可用于生成对已包装的输出应用进行签名所需的新凭据。 必须保证设置的所有密码的安全性，但需要记住密码，因为运行应用包装工具时需要使用。
 
 ## <a name="install-the-app-wrapping-tool"></a>安装应用包装工具
 
@@ -95,7 +86,7 @@ ms.lasthandoff: 07/18/2017
 |**-KeyStorePassword**&lt;SecureString&gt;|用于解密密钥库的密码。 Android 要求对所有的应用程序包 (.apk) 签名。 使用 Java keytool 生成 KeyStorePassword。 在此处了解更多有关 Java [密钥存储](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)的信息。| |
 |**-KeyAlias**&lt;String&gt;|要用于进行签名的密钥的名称。| |
 |**-KeyPassword**&lt;SecureString&gt;|用于解密私钥的密码，该私钥将用于签名。| |
-|**-SigAlg**&lt;SecureString&gt;| （可选）用于签名的签名算法的名称。 该算法必须与私钥兼容。|示例：SHA256withRSA、SHA1withRSA、MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| （可选）用于签名的签名算法的名称。 该算法必须与私钥兼容。|示例：SHA256withRSA、SHA1withRSA|
 | **&lt;CommonParameters&gt;** | （可选）该命令支持常见的 PowerShell 参数，如 verbose 和 debug。 |
 
 

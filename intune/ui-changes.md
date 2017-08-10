@@ -15,16 +15,27 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
 我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 因此，我们创作了此参考指南，以满足那些非常熟悉经典控制台中的 Intune 并且想知道如何在 Azure 上的 Intune 中完成工作的用户。 如果本文未涵盖你正在查找的功能，请在文章末尾处留下评论，以便我们更新。
 ## <a name="quick-reference-guide"></a>快速参考指南
-| 功能 | 经典控制台中的路径 | Azure 上的 Intune 中的路径| |------------||---------------|---------------| |设备注册计划 (DEP) | 管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划|[设备注册 > Apple 注册 > 注册计划令牌](#where-did-apple-dep-go) | |设备注册计划 (DEP) | 管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划 |[设备注册 > Apple 注册 > 注册计划序列号](#where-did-apple-dep-go) | |注册规则 |管理员 > 移动设备管理 > 注册规则|[设备注册 > 注册限制](#where-did-enrollment-rules-go) | |按 iOS 序列号排列的组 | 组 > 所有设备 > 企业预注册的设备 > 按 iOS 系列号排列|[设备注册 > Apple 注册 > 注册计划序列号](#where-did-corporate-pre-enrolled-devices-go) | |按 iOS 序列号排列的组 | 组 > 所有设备 > 企业预注册设备 > 按 iOS 序列号排列| [设备注册 > Apple 注册 > AC 序列号](#where-did-corporate-pre-enrolled-devices-go)| |按 IMEI 排列的组（所有平台）| 组 > 所有设备 > 企业预注册设备 > 按 IMEI 排列（所有平台） | [设备注册 > 企业设备标识符](#by-imei-all-platforms)| | 企业设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple 注册 > 注册计划配置文件](#where-did-corporate-pre-enrolled-devices-go) | | 企业设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple注册 > AC 配置文件](#where-did-corporate-pre-enrolled-devices-go) | | Android for Work | 管理员 > 移动设备管理 > Android for Work | 设备注册 > Android for Work 注册 | | 条款和条件 | 策略 > 条款和条件 | 设备注册 > 条款和条件 |
+|功能 |经典控制台中的路径|Azure 上的 Intune 中的路径|
+|------------|---------------|---------------|
+|设备注册计划 (DEP) |管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划|[设备注册 > Apple 注册 > 注册计划令牌](#where-did-apple-dep-go) |
+|设备注册计划 (DEP)| 管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划 |[设备注册 > Apple 注册 > 注册计划序列号](#where-did-apple-dep-go) |
+|注册规则 |管理员 > 移动设备管理 > 注册规则|[设备注册 > 注册限制](#where-did-enrollment-rules-go) |
+|按 iOS 序列号分组 |组 > 所有设备 > 企业预注册设备 > 按 iOS 序列号|[设备注册 > Apple 注册 > 注册计划序列号](#where-did-corporate-pre-enrolled-devices-go) |
+|按 iOS 序列号分组 |组 > 所有设备 > 企业预注册设备 > 按 iOS 序列号| [设备注册 > Apple 注册 > AC 序列号](#where-did-corporate-pre-enrolled-devices-go)|
+|按 IMEI 分组（所有平台）| 组 > 所有设备 > 企业预注册设备 > 按 IMEI（所有平台） | [设备注册 > 公司设备标识符](#by-imei-all-platforms)|
+| 公司设备注册配置文件| 策略 > 企业设备注册 | [设备注册 > Apple 注册 > 注册计划配置文件](#where-did-corporate-pre-enrolled-devices-go) |
+| 公司设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple 注册 > AC 配置文件](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | 管理员 > 移动设备管理 > Android for Work | 设备注册 > Android for Work 注册 |
+| 条款和条件 | 策略 > 条款和条件 | 设备注册 > 条款和条件 |
 
 
 ## <a name="where-do-i-manage-groups"></a>在哪个位置管理组？

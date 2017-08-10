@@ -1,37 +1,35 @@
 ---
 title: "Intune 术语表"
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: "了解 Microsoft Intune 中使用的一些术语"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |应用分配|可让用户[查找、下载和安装](/intune/app-management)所需的应用。 该操作之前称为“应用部署”。|
-|应用配置的配置文件|在运行应用之前，请使用特定设置对 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 应用进行配置。|
+|应用配置的配置文件 <br/><br/>应用配置策略|适用于具有特定于供应商配置的移动应用。 在运行应用之前，请使用特定设置对 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 应用进行配置。|
 |应用监视|可让你[查看与应用分配相关的最新状态和活动](/intune/apps-monitor)。|
 |应用保护数据删除任务|可从用户的设备中[删除应用数据](/intune/app-protection-policies)。|
-|应用保护策略|可确保用户应用符合[公司数据保护策略](/intune/app-protection-policies)。|
+|应用保护策略|适用于集成了企业移动性 + 安全性 (EMS) 技术的移动应用。 可确保用户应用符合[公司数据保护策略](/intune/app-protection-policies)。|
 |App SDK|通过 [Microsoft Intune App SDK](/intune/app-sdk)，可让你为内部编写的应用添加功能性，使其能够通过 Intune 应用保护策略进行管理。|
 |应用卸载操作|可让你从用户的设备[卸载应用](/intune/apps-deploy)。|
 |应用包装工具|一个[命令行应用程序](/intune/apps-prepare-mobile-application-management)，可围绕业务线应用创建包装器，使其可通过 Intune 应用保护策略进行管理。|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Managed Browser|可通过使用 Intune 在组织中分配的 [Web 浏览应用程序](/intune/app-configuration-managed-browser)。 托管浏览器策略可配置允许列表或阻止列表，限制托管浏览器的用户可以访问的网站。|
 |MDM 机构|[MDM 机构](/intune/mdm-authority-set)定义有权管理一组设备的管理服务。 适用于 MDM 机构的选项包括 Intune 本身以及带 Intune 的 Configuration Manager。|
-|移动应用配置策略|[iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 策略，用于在运行应用时，提供设置以兼容应用（例如公司名称或服务器地址）。|
+|移动应用配置策略|适用于具有特定于供应商配置的移动应用。 例如，用于在兼容应用运行时为其提供设置（例如公司名称或服务器地址）的 [iOS](/intune/app-configuration-policies-use-ios) 或 [Android](/intune/app-configuration-policies-use-android) 策略。|
 |移动应用预配策略|iOS 策略，用于帮助你确保为 iOS 应用分配的[预配配置文件](/intune/app-provisioning-profile-ios)不过期。|
 |移动应用程序管理|[移动应用管理 (MAM)](/intune/app-lifecycle) 能够为用户发布、推送、配置、保护、监视和更新移动应用。
 |移动设备管理|[移动设备管理 (MDM)](/intune/device-lifecycle) 能够将设备注册到 Intune 中，以便对这些设备进行预配、配置、监视和管理。
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|选择性擦除|[选择性擦除](/intune/device-company-data-remove)将只删除公司数据，包括设备中适用的移动应用管理 (MAM) 数据、设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。|
+|“选择性擦除”|[选择性擦除](/intune/device-company-data-remove)只删除应用保护策略保护的公司数据，包括设备中的设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。|
 |旁加载|无需从应用商店访问业务线应用即可进行安装的操作。|
 |订阅|输入的协议允许你访问 Intune 租户。|
 

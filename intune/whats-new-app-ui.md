@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,62 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户之间的通信以及用于支持部署的已创建的任何更新自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+
+## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日的这一周
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
+
+我们宣布将在接下来的几个月内推出一项更新，该更新将提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。  
+
+下面，将向你介绍使用凭据进行登录的以前的登录体验和新登录体验，以及从其他设备进行登录的新登录体验。
+
+__以前的登录体验__
+
+![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![点击“登录”后，用户在此页上输入其凭据，系统要求输入用户的电子邮件和密码，还提供其他方法以解决密码出错的情况。](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![提供密码后，公司门户应用登录，并通过加载栏进行提示。](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__新的登录体验__
+
+![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![提示用户只提供电子邮件地址，而不是在同一屏幕上同时提供电子邮件和密码。](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![在接受其电子邮件地址之后，提示用户输入密码。](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![在经过身份验证过程后，公司门户应用进行登录，并通过加载栏进行提示。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__从其他设备登录时的新登录体验__
+
+![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+点击“从其他设备登录”链接。
+
+![通过使用工作计算机的唯一密码访问 aka.ms/devicelogin 页面，然后使用验证码进行登录可获得说明。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+启动浏览器，然后转到 [https://aka.ms/devicelogin](https://aka.ms/devicelogin)。
+
+![用户工作计算机上用户浏览器的图像，而不是公司门户应用的图像。 显示的“设备登录”页将提示用户输入他们在公司门户应用中收到的验证码。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+输入在公司门户应用中看到的验证码。 选择“继续”，你将能够使用受贵公司支持的任意方法进行身份验证，如智能卡。
+
+![用户已将唯一代码输入到字段中，“设备登录”站点要求确认 Intune 公司门户是接收授权以进行登录的正确应用。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![确认页显示用户现在已登录其设备上的公司门户应用，可以关闭此页。](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+公司门户应用将开始进行登录。
+
+![在经过身份验证过程后，公司门户应用进行登录，并通过加载栏进行提示。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="week-of-june-12-2017"></a>2017 年 6 月 12 日的这一周
 
@@ -180,51 +228,12 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 > [!Note]
 > 请注意，以下图像可能是预览版，发布的产品可能与当前版本有所不同。
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>公司门户网站的用户界面更新 <!--1313244 part 2-->
 
-我们宣布将在接下来的几个月内推出一项更新，该更新将提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。  
+__对精选应用的更新__ 我们在网站中添加了一个专用页面，用户可在其中浏览精选的应用，还可以对主页的“精选”部分做出一些用户界面调整。
 
-下面，将向你介绍使用凭据进行登录的以前的登录体验和新登录体验，以及从其他设备进行登录的新登录体验。
+![显示应用的彩色磁贴。 它们是每个应用下方的较大方形，填充颜色取决于应用徽标的主体颜色。 “精选应用”部分在公司门户应用的顶部单独显示。](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__以前的登录体验__
-
-![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![点击“登录”后，用户在此页上输入其凭据，系统要求输入用户的电子邮件和密码，还提供其他方法以解决密码出错的情况。](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![提供密码后，公司门户应用登录，并通过加载栏进行提示。](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__新的登录体验__
-
-![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![提示用户只提供电子邮件地址，而不是在同一屏幕上同时提供电子邮件和密码。](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![在接受其电子邮件地址之后，提示用户输入密码。](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![在经过身份验证过程后，公司门户应用进行登录，并通过加载栏进行提示。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__从其他设备登录时的新登录体验__
-
-![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-点击“从其他设备登录”链接。
-
-![通过使用工作计算机的唯一密码访问 aka.ms/devicelogin 页面，然后使用验证码进行登录可获得说明。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-启动浏览器，然后转到 [https://aka.ms/devicelogin](https://aka.ms/devicelogin)。
-
-![用户工作计算机上用户浏览器的图像，而不是公司门户应用的图像。 显示的“设备登录”页将提示用户输入他们在公司门户应用中收到的验证码。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-输入在公司门户应用中看到的验证码。 选择“继续”，你将能够使用受贵公司支持的任意方法进行身份验证，如智能卡。
-
-![用户已将唯一代码输入到字段中，“设备登录”站点要求确认 Intune 公司门户是接收授权以进行登录的正确应用。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![确认页显示用户现在已登录其设备上的公司门户应用，可以关闭此页。](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-公司门户应用将开始进行登录。
-
-![在经过身份验证过程后，公司门户应用进行登录，并通过加载栏进行提示。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### <a name="see-also"></a>另请参阅
 * [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [云平台路线图](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)

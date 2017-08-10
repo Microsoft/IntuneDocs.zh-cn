@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 将应用分配到组
 
@@ -59,6 +59,7 @@ ms.lasthandoff: 07/01/2017
     - **必需** - 应用安装在所选组中的设备上。
     - **卸载** - 已从所选组中设备上卸载应用。
     - **注册与否都可用** - 可将此应用分配到未将其设备注册到 Intune 的用户组。
+6. 仅适用于 iOS 应用 - 如果已创建包含每个应用的 VPN 设置的 iOS VPN 配置文件，可在“VPN”下将其选中。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅 [iOS 设备的 VPN 设置](vpn-settings-ios.md)。
 6. 完成后，选择“保存”。
 
 应用现已分配给所选组。
@@ -100,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |可用用户（未注册）|可用用户|可用|
 |可用用户（未注册）|必需设备|必需和可用（未注册）|
 |可用用户（未注册）|不可用的设备|可用（未注册）|
-|可用用户（未注册）|设备卸载|卸载和必需（未注册）。<br>如果用户并非从公司门户安装应用，则会执行卸载。<br>如果用户从公司门户安装应用，那么安装将优先于卸载。|
+|可用用户（未注册）|设备卸载|卸载和必需（未注册）。<br>如果用户并非从公司门户安装应用，则会执行卸载。<br>如果用户从公司门户安装应用，则安装将优先于卸载。|
 
 >[!NOTE]
 >仅针对托管 iOS 应用商店应用：将这些应用添加到 Intune 并将其分配为“必需”时，将自动使用“必需”和“可用”意图进行创建。

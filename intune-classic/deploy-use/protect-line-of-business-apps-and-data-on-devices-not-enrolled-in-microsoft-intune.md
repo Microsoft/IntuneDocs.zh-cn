@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保护未在 Microsoft Intune 上注册的设备上的业务线应用和数据
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 07/18/2017
 
 ##  <a name="step-1-prepare-the-app"></a>步骤 1：准备应用
 
-将 MAM 策略应用于某个应用前，首先必须使用 [IOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) 版 Microsoft Intune 应用包装工具包装该应用，或者使用 [Intune App SDK](/intune/app-sdk) 手动集成 Intune 应用保护功能。
+将 MAM 策略应用于某个应用前，首先必须使用 [iOS](/intune/app-wrapper-prepare-ios) 和 [Android](/intune/app-wrapper-prepare-android) 版 Microsoft Intune 应用包装工具包装该应用，或者使用 [Intune 应用 SDK](/intune/app-sdk) 手动集成 Intune 应用保护功能。
 
 若要深入了解应该使用应用包装工具还是 SDK，请参阅[决定如何使用 Microsoft Intune 为移动应用管理准备应用](/intune/apps-prepare-mobile-application-management)。
 

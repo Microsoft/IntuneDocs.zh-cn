@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e442a0ee7953fe5474d39e1a29a88dfcca58800d
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>使用 Intune 创建适用于 macOS 设备（预览）的设备符合性策略
 
@@ -104,6 +104,9 @@ ms.lasthandoff: 07/20/2017
 
 - **要防止重用的以前的密码数**：指定以前用过的不能重复使用的密码数。
 
+    > [!IMPORTANT]
+    > 当 macOS 设备上的密码要求发生更改时，直到用户下次更改密码时此更改才会生效。 例如，如果将密码长度限制设置为 8 位数，而 macOS 设备当前使用的是 6 位数密码，则在用户下次更新设备上的密码前，该设备将仍保持符合状态。
+
 ## <a name="to-create-a-device-compliance-policy"></a>创建设备符合性策略
 
 1. 转到 [Azure 门户](https://portal.azure.com)，然后使用 Intune 凭据登录。
@@ -128,7 +131,7 @@ ms.lasthandoff: 07/20/2017
 
 ## <a name="assign-user-groups"></a>分配用户组
 
-若要为用户分配合规性策略，请选择已配置的策略。 可在“合规性 - 策略”边栏选项卡中找到现有策略。
+若要为用户分配合规性策略，请选择已配置的策略。 可在“符合性策略”边栏选项卡中找到现有策略。
 
 1. 选择要分配给用户的设备符合性策略，然后选择“分配”。 此操作将打开边栏选项卡，可以在其中选择“Azure Active Directory 安全组”并将其分配给策略。
 

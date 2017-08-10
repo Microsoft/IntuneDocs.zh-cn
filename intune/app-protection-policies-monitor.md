@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 978e32476069183865f7e729de9791e13bc81ebc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ ms.lasthandoff: 07/01/2017
 
 ![“Intune 移动应用程序管理”边栏选项卡上的“摘要”磁贴。](./media/app-protection-user-status-summary.png)
 
--   **用户**：公司中正在使用与该策略相关联的应用的用户总数。
+-   **用户**：公司中正在工作环境中使用与该策略相关联的应用的用户总数。
 
--   **由策略管理**：在工作环境中至少使用过其中一种应用的用户数量。
+-   **通过策略进行管理**：已在工作环境中使用某应用且已分配到策略的用户数。
 
--   **无策略**：正在使用与该策略相关联的应用，但却不是策略的目标用户的数量。 可以考虑将这些用户添加到策略。
+-   **无策略**：正在工作环境中使用任何策略均不以其为目标的应用的用户数。 可以考虑将这些用户添加到策略。
+    > [!NOTE]
+    > 如果每个平台有多个策略且已至少为用户分配了一个策略，则会考虑通过策略对用户进行管理。
 
 - **已标记用户**：遇到问题的用户数量。 目前仅将具有已越狱设备的用户报告在“已标记用户”下。
 
