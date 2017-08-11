@@ -263,7 +263,7 @@
 ### [如何获取 Windows 应用](end-user-apps-windows.md)
 
 # 监视和故障排除
-## [使用支持人员角色](help-desk-operators.md)
+## [帮助用户解决问题](help-desk-operators.md)
 ## [使用 Intune 数据仓库](reports-nav-create-intune-reports.md)
 ### [使用 Power BI 连接到数据仓库](reports-proc-get-a-link-powerbi.md)
 
