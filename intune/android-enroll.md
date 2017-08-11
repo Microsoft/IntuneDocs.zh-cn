@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 183e60af4d6174c18fc3883f2cdd9827505d2aba
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
@@ -49,7 +49,6 @@ ms.lasthandoff: 07/01/2017
 
 1. **设置 Intune MDM**<br>
 如果你尚未准备就绪，请将[移动设备管理机构设置](mdm-authority-set.md)为“Microsoft Intune”。
-
 2. **配置 Android for Work 绑定**<br>
     作为 Intune 管理员，在“Azure 门户”中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
