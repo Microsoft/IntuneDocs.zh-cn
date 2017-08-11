@@ -2,8 +2,8 @@
 title: "准备好配置面向 Windows 10 的应用保护策略"
 description: "在 Azure AD 中设置移动应用程序管理 (MAM) 提供程序"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f159ead358807872b5099bb9c670f372eed401e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d4c410913adb32a5957552e453b49de9c7cda097
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>准备好配置面向 Windows 10 的应用保护策略
 

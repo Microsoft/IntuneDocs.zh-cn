@@ -3,8 +3,8 @@ title: "如何监视应用保护策略"
 titleSuffix: Intune on Azure
 description: "查看有多少用户拥有策略，并深入了解以获取详细信息。”"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 978e32476069183865f7e729de9791e13bc81ebc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 241ae7d2d615cd58babfc2d14b98e2bfb2f63f7d
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
