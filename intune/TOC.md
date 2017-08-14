@@ -74,6 +74,7 @@
 #### [限制](enrollment-restrictions-set.md)
 #### [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 #### [企业标识符](corporate-identifiers-add.md)
+#### [多重身份验证](multi-factor-authentication.md)
 #### [设备注册管理器](device-enrollment-manager-enroll.md)
 #### [将设备映射到组](device-group-mapping.md)
 ### 设置 Windows 注册
@@ -291,7 +292,7 @@
 ## [如何使用 Intune Graph API](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 ## [Intune 数据库仓库 API](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [通过 REST 客户端使用数据仓库 API 获取数据](reports-proc-data-rest.md)
 ### [数据仓库 API 终结点](reports-api-url.md)
 ### [数据库仓库数据模型](reports-ref-data-model.md)
 #### [数据实体引用](reports-ref-date.md)
@@ -300,6 +301,6 @@
 #### [设备实体引用](reports-ref-devices.md)
 #### [应用程序实体引用](reports-ref-application.md)
 #### [策略实体引用](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [术语表](intune-glossary.md)
