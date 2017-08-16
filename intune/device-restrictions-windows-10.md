@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="privacy"></a>隐私
 
--   **输入个性化** – 不允许使用 Cortana、听写或 Windows 应用商店应用的基于云的语音服务。 如果允许这些服务，Microsoft 可能会收集语音数据以改进服务。
+-   “输入个性化”- 不允许使用 Cortana、听写或 Microsoft 应用商店应用的基于云的语音服务。 如果允许这些服务，Microsoft 可能会收集语音数据以改进服务。
 -   **自动接受配对和隐私用户同意提示** – 允许 Windows 在运行应用时自动接受配对和隐私同意消息。
 
 
@@ -91,12 +91,12 @@ ms.lasthandoff: 08/03/2017
 ## <a name="app-store"></a>App Store
 
 -   **应用商店（仅限移动版）** - 在 Windows 10 移动设备上启用或阻止使用应用商店。
--   **自动更新应用商店的应用** - 允许自动更新从 Windows 应用商店安装的应用。
+-   “自动更新应用商店的应用”- 允许自动更新从 Microsoft 应用商店安装的应用。
 -   **受信任的应用安装** - 允许对使用受信任的证书签名的应用进行旁加载。
 -   **开发人员解锁** - 允许 Windows 开发人员设置，如允许最终用户修改旁加载的应用。
 -   **共享用户应用数据** - 允许应用在同一设备上的不同用户之间共享数据。
 -   **仅使用专用存储** - 启用此选项，仅允许最终用户从你的专用存储下载应用。
--   **存储初次的应用启动** - 用于禁用设备上预安装或从 Windows 应用商店下载的所有应用。
+-   “启动来自应用商店的应用”- 用于禁用设备上预安装或从 Microsoft 应用商店下载的所有应用。
 -   **在系统卷上安装应用数据** - 阻止应用在设备的系统卷上存储数据。
 -   **在系统驱动器上安装应用** - 阻止应用在设备的系统驱动器上存储数据。
 -   **游戏 DVR（仅限桌面版）**- 配置是否允许游戏的录制和广播。

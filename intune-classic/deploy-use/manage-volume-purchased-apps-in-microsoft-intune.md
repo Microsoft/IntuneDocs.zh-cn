@@ -14,11 +14,11 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba965dfdfa91920c0f76b4142dec05516c472cab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4527f7ccf1125992841b8f317024cc64837484ab
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>使用 Microsoft Intune 管理批量购买的应用
 
@@ -30,8 +30,8 @@ Microsoft Intune 可帮助你管理通过这样的计划购买的应用，方法
 
 ## <a name="which-types-of-apps-can-you-manage"></a>你可以管理哪些类型的应用？
 
-你可以使用 Intune 管理从 iOS 应用商店和适用于企业的 Windows 应用商店批量购买的应用。
+使用 Intune，可管理从 iOS 应用商店和适用于企业的 Microsoft 应用商店批量购买的应用。
 若要了解如何管理从每个商店购买的具有许可证的应用，请选择下面的主题之一：
 
 - [管理批量购买的 iOS 应用](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-- [管理从适用于企业的 Windows 应用商店中批量购买的应用](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
+- [管理从适用于企业的 Microsoft 应用商店批量购买的应用](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)

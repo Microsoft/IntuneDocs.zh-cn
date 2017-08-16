@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3597af6117832adab40a2d6213ed4e2a6a9f338e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5278179f22d174de6e97aa990bbe8761d8c8f8f8
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 远程重启设备
 
@@ -27,10 +27,22 @@ ms.lasthandoff: 07/01/2017
 
 **重新启动**设备操作将重启你选择的设备。 设备所有者不会获得重新启动的自动通知，因此工作可能丢失。
 
+## <a name="supported-platforms"></a>受支持的平台
+
+- Windows - Windows 8.1 及更高版本支持
+- Windows Phone - Windows Phone 8.1 及更高版本支持
+- iOS - 不支持
+- macOS - 不支持
+- Android - 不支持
+
+## <a name="how-to-restart-a-device"></a>如何重启设备
+
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在 Intune 边栏选项卡上，选择“设备”。
 4. 在“设备和组”边栏选项卡上，选择“所有设备”。
 5. 从管理设备列表中，选择一台设备，然后选择“重新启动”设备远程操作。
+
+## <a name="next-steps"></a>后续步骤
 
 若要查看刚执行的操作的状态，请在“设备和组”边栏选项卡上选择“设备操作”。

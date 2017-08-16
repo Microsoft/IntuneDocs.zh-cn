@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 4e9dae27b981533dfff2080a5b7f9ca961509cd8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 67af5f6545a0ef4a833c6f709fc4685de7f64113
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -37,7 +37,7 @@ Windows 设备的批量注册需要以下条件：
 
 ## <a name="create-a-provisioning-package"></a>创建预配包
 
-1. 从 Windows 应用商店下载 [Windows 配置设计器 (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22)。
+1. 从 Microsoft 应用商店下载 [Windows 配置设计器 (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22)。
 ![Windows 配置设计器应用应用商店屏幕快照和说明的屏幕快照](media/bulk-enroll-store.png)
 
 2. 打开“Windows 配置设计器”应用，然后选择“配置桌面设备”。

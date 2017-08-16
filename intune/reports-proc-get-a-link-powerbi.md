@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 连接到数据仓库
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-可下载一个文件与 Microsoft Power BI 结合使用，从而为 Intune 租户加载动态生成的交互式报表。 数据仓库 Power BI 文件 (pbix) 包含租户连接设置及以下示例报表和图表： 
+可下载一个文件与 Microsoft Power BI 结合使用，从而为 Intune 租户加载动态生成的交互式报表。 数据仓库 Power BI 文件 (pbix) 包含租户连接设置及以下示例报表和图表：  
 
   -  设备
   -  注册
@@ -45,6 +45,9 @@ ms.lasthandoff: 08/04/2017
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>使用 Power BI 文件 (pbix) 加载数据和报表
 
 Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据模型的预置报表。 在 Power BI Desktop 中打开文件并登录 Azure AD。 报表从 Intune 租户加载数据。
+
+> [!Important]  
+> 每个 Power BI 文件 (pbix) 可能会因租户位置而有所不同。 如果要管理多个 Intune 租户，请在登录该租户时，确保使用从 Azure 门户下载的文件。  
 
 1.  登录 Azure 门户，选择“监视 + 管理” > “Intune”。 还可搜索 Intune 资源。  
 2.  打开“Microsoft Intune 数据仓库 API (预览)”边栏选项卡。

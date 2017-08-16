@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="map-device-groups"></a>映射设备组
 
@@ -43,11 +43,11 @@ ms.lasthandoff: 07/01/2017
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>步骤 1 - 在 Azure 门户的“Intune”边栏选项卡中创建设备类别
 1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“注册设备”。
-3. 在“注册”边栏选项卡中，选择“设备类别”。
+3. 在“Intune”边栏选项卡上，选择“设备注册”。
+3. 在“设备注册”边栏选项卡中，选择“设备类别”。
 4. 在“设备类别”页上，选择“创建”以添加新类别。
 5. 在下一个边栏选项卡中，输入新类别的“名称”和可选“说明”。
-6. 完成后单击“创建”。 将在类别列表中看到刚才创建的类别。
+6. 完成后，单击“创建”。 将在类别列表中看到刚才创建的类别。
 
 在步骤 2 中创建 Azure Active Directory 安全组时将使用设备类别名称。
 
