@@ -1,7 +1,7 @@
 ---
-title: "管理来自适用于企业的 Windows 应用商店的应用"
+title: "管理来自适用于企业的 Microsoft 应用商店的应用"
 titleSuffix: Intune on Azure
-description: "了解如何从适用于企业的 Windows 应用商店将应用同步到 Intune，并对其进行分配和跟踪。"
+description: "了解如何从适用于企业的 Microsoft 应用商店将应用同步到 Intune，并对其进行分配和跟踪。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,18 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de6ed7623e33a50bdf8452cbf1bad9c648b13d04
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8f5f1b49d0785682f72d208287098466934ff0e1
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Windows 应用商店中购买的应用
+# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-你可以在[适用于企业的 Windows 应用商店](https://www.microsoft.com/business-store)中为你的组织查找和购买应用，可以购买单个或批量购买。 通过将此应用商店连接到 Microsoft Intune，你可以在 Intune 门户中管理批量购买的应用。 例如：
+可在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店连接到 Microsoft Intune，你可以在 Intune 门户中管理批量购买的应用。 例如：
 * 你可以将从应用商店中购买的应用列表与 Intune 同步。
 * Intune 管理控制台中将显示已同步的应用，可以像分配所有其他应用那样分配这些应用。
 * 你可以跟踪可用许可证的数量以及正在 Intune 管理控制台中使用的许可证数量。
@@ -34,25 +34,25 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="before-you-start"></a>开始之前
 
-从适用于企业的 Windows 应用商店同步并分配应用之前，请查看以下信息：
+从适用于企业的 Microsoft 应用商店同步并分配应用之前，请查看以下信息：
 
 - 将 Intune 配置为组织的移动设备管理机构。
-- 必须已在适用于企业的 Windows 应用商店中注册帐户。
+- 必须已在适用于企业的 Microsoft 应用商店中注册帐户。
 - 一旦将适用于企业的 Windows 应用商店帐户与 Intune 关联，将来你将无法更改为其他帐户。
-- 无法在 Intune 中手动添加或删除从应用商店购买的应用。 这些应用只能与适用于企业的 Windows 应用商店同步。
-- Intune 会同时同步从适用于企业的 Windows 应用商店中购买的联机和脱机授权应用。
+- 无法在 Intune 中手动添加或删除从应用商店购买的应用。 这些应用只能与适用于企业的 Microsoft 应用商店同步。
+- Intune 会同时同步从适用于企业的 Microsoft 应用商店中购买的联机和脱机授权应用。
 - 仅免费的脱机应用可同步到 Intune。
 - 设备必须已加入 Active Directory 域服务或工作区才可使用此功能。
 - 已注册的设备必须使用 Windows 10 的 1511 版本或更高版本。
 
-## <a name="associate-your-windows-store-for-business-account-with-intune"></a>将适用于企业的 Windows 应用商店帐户与 Intune 相关联
+## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>将适用于企业的 Microsoft 应用商店帐户与 Intune 关联
 在 Intune 控制台中启用同步之前，必须将你的应用商店帐户配置为将 Intune 作为一种管理工具使用：
 1. 确保使用与登录 Intune 相同的租户帐户登录企业应用商店。
 2. 在企业应用商店中，选择**设置** > **管理工具**。
 3. 在“管理工具”页上选择“添加管理工具”，然后选择“Microsoft Intune”。
 
 > [!NOTE]
-> 在以前，只能将一个用于分配应用的管理工具关联到适用于企业的 Windows 应用商店。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
+> 以前只能将一个用于分配应用的管理工具关联到适用于企业的 Microsoft 应用商店。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
 
 现在可以继续，并在 Intune 控制台中设置同步。
 
@@ -61,16 +61,16 @@ ms.lasthandoff: 07/01/2017
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“移动应用”。
-1. 在“移动应用”边栏选项卡上，选择“设置” > “适用于企业的 Windows 应用商店”。
+1. 在“移动应用”边栏选项卡上，选择“设置” > “适用于企业的 Microsoft 应用商店”。
 2. 单击“启用”。
-3. 如果尚未这样做，请单击适用于企业的 Windows 应用商店的注册链接，并按之前详述的步骤关联帐户。
-5. 在“语言”下拉列表中，选择适用于企业的 Windows 应用商店的应用在 Intune 门户中显示时使用的语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
-6. 单击“同步”，将从 Windows 应用商店购买的应用同步到 Intune。
+3. 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接，并按之前详述的步骤关联帐户。
+5. 在“语言”下拉列表中，选择适用于企业的 Microsoft 应用商店的应用在 Intune 门户中显示时使用的语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
+6. 单击“同步”，将从 Microsoft 应用商店购买的应用同步到 Intune。
 
 ## <a name="synchronize-apps"></a>同步应用
 
-1. 在“移动应用”工作负荷中，选择“设置” > “适用于企业的 Windows 应用商店”。
-2. 单击“同步”，将从 Windows 应用商店购买的应用同步到 Intune。
+1. 在“移动应用”工作负荷中，选择“设置” > “适用于企业的 Microsoft 应用商店”。
+2. 单击“同步”，将从 Microsoft 应用商店购买的应用同步到 Intune。
 
 ## <a name="assign-apps"></a>分配应用
 
@@ -80,9 +80,9 @@ ms.lasthandoff: 07/01/2017
 可为设备上的特定用户或所有用户安装脱机应用。 
 
 
-分配适用于企业的 Windows 应用商店的应用时，安装此应用的每个用户都会使用 1 个许可证。 如果使用了分配应用的所有可用许可证，则无法再分配任何副本。 请执行下列操作之一：
+分配适用于企业的 Microsoft 应用商店的应用时，安装此应用的每个用户都会使用一个许可证。 如果使用了分配应用的所有可用许可证，则无法再分配任何副本。 请执行下列操作之一：
 * 从一些设备上卸载应用。
 * 减小当前分配的范围，仅针对具有足够许可证的用户。
-* 从适用于企业的 Windows 应用商店中购买应用的更多副本。
+* 从适用于企业的 Microsoft 应用商店中购买应用的更多副本。
 
 

@@ -2,8 +2,8 @@
 title: "通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略"
 description: "通过 Intune 创建和部署 WIP 应用保护策略"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7aa879307ef3b72660d1ba7b3c3c2f99fc82dc97
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 78352c995311f5b097954ce86098165408d5d810
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -35,6 +35,13 @@ ms.lasthandoff: 07/01/2017
 -   **允许的应用**：这些应用需要符合此策略。
 
 -   **豁免应用**：这些应用从此策略中豁免，可以无限制地访问公司数据。
+
+> [!IMPORTANT]  
+> Intune 建议将公司门户应用添加到豁免列表，从而支持应用程序正常工作。 为此，请将以下“应用商店应用”添加到“豁免应用”列表：  
+>   - 名称：公司门户  
+>   - 发布者：CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
+>   - 产品名称：Microsoft.CompanyPortal  
+
 
 ### <a name="types-of-apps"></a>应用类型
 

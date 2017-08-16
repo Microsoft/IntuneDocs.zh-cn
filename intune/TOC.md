@@ -291,7 +291,7 @@
 ### [Intune App SDK Xamarin 组件](app-sdk-xamarin.md)
 ## [如何使用 Intune Graph API](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-## [Intune 数据库仓库 API](reports-nav-intune-date-warehouse.md)
+## [Intune 数据仓库 API](reports-nav-intune-data-warehouse.md)
 ### [通过 REST 客户端使用数据仓库 API 获取数据](reports-proc-data-rest.md)
 ### [数据仓库 API 终结点](reports-api-url.md)
 ### [数据库仓库数据模型](reports-ref-data-model.md)
