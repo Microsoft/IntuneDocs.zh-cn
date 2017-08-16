@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e85306934b68f64bad8c223ac117190607db8473
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
+ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/05/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -49,6 +49,11 @@ Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
 -   运行 Android 4 和更高版本的设备
 
 -   运行 iOS 8.0 及更高版本的设备
+
+>[!IMPORTANT]
+>自 2017 年 10 月起，Android 版 Intune Managed Browser 应用将仅支持运行 Android 4.4 及更高版本的设备。 iOS 上的 Intune Managed Browser 应用将仅支持运行 iOS 9.0 及更高版本的设备。
+>早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
+
 
 Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)打开 Web 内容。
 
@@ -84,19 +89,15 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 
 可将 Intune Managed Browser 和 [Azure AD 应用程序代理]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)配合使用，以支持 iOS 和 Android 设备用户实现以下方案：
 
-- 用户下载并登录到 Microsoft Outlook 应用。  将自动应用 Intune 应用保护策略。 它们对保存的数据进行加密，并阻止用户将公司文件传输到设备上的非托管应用或位置。 当用户接下来点击 Outlook 中 intranet 站点的链接时，可以指定在 Managed Browser 应用中而不是在另一个浏览器中打开链接。
-Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问该网站且 Outlook 中的链接也按预期工作。  
-
-- 远程用户打开 Managed Browser 应用程序，并使用内部 URL 导航到 intranet 站点。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。
-之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问。  
+- 用户下载并登录到 Microsoft Outlook 应用。 将自动应用 Intune 应用保护策略。 它们对保存的数据进行加密，并阻止用户将公司文件传输到设备上的非托管应用或位置。 当用户接下来点击 Outlook 中 intranet 站点的链接时，可以指定在 Managed Browser 应用中而不是在另一个浏览器中打开链接。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问该网站且 Outlook 中的链接也按预期工作。
+- 远程用户打开 Managed Browser 应用程序，并使用内部 URL 导航到 intranet 站点。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问。
 
 ### <a name="before-you-start"></a>开始之前
 
-- 确保通过 Azure AD 应用程序代理发布内部应用程序。
-- 要配置应用程序代理和发布应用程序，请参阅[设置文档]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
-- 必须使用 Managed Browser 应用的最低版本 1.2.0。
-- Managed Browser 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
-- 用户只能看到针对分配给自己的应用程序代理应用的自动重定向操作。
+- 通过 Azure AD 应用程序代理设置内部应用程序。
+    - 要配置应用程序代理和发布应用程序，请参阅[设置文档]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
+    - 必须使用 Managed Browser 应用的最低版本 1.2.0。
+    - Managed Browser 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>步骤 1：从 Outlook 启用指向 Managed Browser 的自动重定向
 Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中显示**这一设置的应用保护策略。

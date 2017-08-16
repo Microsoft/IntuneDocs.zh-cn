@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b92949efca2e4dac5836755e2f32b0527d4762d
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在已监督 iOS 设备上启用激活锁定
 
@@ -39,23 +39,23 @@ Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 8.0 和�
 - 你需要报告启用了激活锁定的所有设备。
 - 更新你组织中的设备分配情况时，你希望将某些设备分配重新给另一个部门。 你只能重新分配未启用激活锁定的设备。
 
-为了帮助解决这些问题，Apple 在 iOS 7.1 中引入了绕过激活锁定。 借助此功能，你无需用户的 Apple ID 和密码即可删除监管设备中的激活锁定。 监管设备可以生成设备特定的绕过激活锁定代码，该代码存储在 Apple 的激活服务器上。
+为了帮助解决这些问题，Apple 在 iOS 7.1 中引入了绕过激活锁定。 通过绕过激活锁，无需用户的 Apple ID 和密码即可删除受监督设备中的激活锁。 监管设备可以生成设备特定的绕过激活锁定代码，该代码存储在 Apple 的激活服务器上。
 
 >[!TIP]
->在 iOS 设备的监管模式下，你可以使用 Apple Configurator 来锁定设备，以将设备的功能限制为完成特定的业务目的。 监管模式通常仅适用于公司拥有的设备。
+>在 iOS 设备的监管模式下，你可以使用 Apple Configurator 来锁定设备，以将设备的功能限制为完成特定的业务目的。 监督模式仅适用于公司拥有的设备。
 
 可以在 [Apple 的网站](https://support.apple.com/HT201365)上阅读有关激活锁定的详细信息。
 
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Intune 如何帮助你管理激活锁定
 Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定状态。 仅就监管设备而言，Intune 可以检索绕过激活锁定代码并直接将代码发布到设备。 如果已擦除设备，可通过使用空的用户名和代码作为密码来直接访问设备。
 
-**此功能的业务优势有：**
+使用 Intune 来管理激活锁的业务优点包括：
 
 - 用户能够获得 Find My iPhone 应用所具有的安全优势。
-- 你可以让用户在知道如下事实的情况下进行工作：当需要重新调整设备的用途时，可以停用或解锁设备。
+- 你可以让用户在知道如下事实的情况下进行工作：当需要重新调整设备的用途时，你可以停用或解锁设备。
 
 ## <a name="before-you-start"></a>开始之前
-必须先在设备上启用“激活锁定”，然后才能绕过它。 为此，请执行以下操作：
+必须先按照以下说明在设备上启用“激活锁”，然后才能绕过它：
 
 1. 使用[如何配置设备限制设置](/intune-azure/configure-devices/how-to-configure-device-restrictions)中的信息为 iOS 配置 Intune 设备限制配置文件。
 2. 启用“展台”模式设置“激活锁定”。
@@ -65,7 +65,7 @@ Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定�
 ## <a name="how-to-use-activation-lock-bypass"></a>如何使用绕过激活锁定
 
 >[!IMPORTANT]
->绕过设备上的激活锁定后，如果“查找我的 iPhone”应用处于打开状态，将自动应用新的激活锁定。 因此，**你应实际拥有该设备，才能执行此过程**。
+>绕过设备上的激活锁后，如果“查找我的 iPhone”应用处于打开状态，将自动应用新的激活锁。 因此，**你应实际拥有该设备，才能执行此过程**。
 
 Intune **绕过激活锁定**远程设备操作无需用户的 Apple ID 和密码即可去除 iOS 设备中的激活锁定。 绕过激活锁后，启动“查找 iPhone”应用时设备将再次打开激活锁。 请仅在拥有对设备的物理访问权限的情况下绕过激活锁。
 
@@ -74,5 +74,7 @@ Intune **绕过激活锁定**远程设备操作无需用户的 Apple ID 和密�
 3. 在“**Intune**”边栏选项卡上，选择“**设备**”。
 4. 在“设备和组”边栏选项卡上，选择“所有设备”。
 5. 从管理的设备列表中，选择一台监管的 iOS 设备，然后选择“绕过激活锁定”设备远程操作。
+
+## <a name="next-steps"></a>后续步骤
 
 你可以在“管理设备”工作负荷中的设备的详细信息页上查看解锁请求的状态。
