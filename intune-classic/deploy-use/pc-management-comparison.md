@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37c4c3a1b51479b1a6450cc66ab502d579804015
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: a09235d53b9340d853dba95299fc5788494ed165
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>对比作为计算机或移动设备管理 Windows 电脑
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 07/13/2017
 |**设备配置文件**|不可用|可用 <br>[什么是 Microsoft Intune 设备配置文件？](https://docs.microsoft.com/intune-azure/configure-devices/what-are-device-profiles)|
 |**无代理注册**|不可用 |可用<br>[注册 Windows 设备](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices)|
 |**软件更新管理**| Windows 更新和 Microsoft 应用更新<br>[利用软件更新使 Windows 电脑保持最新版本](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)|针对 Windows 10 和 Microsoft 应用更新的适用于企业的 Microsoft 应用商店<br> [配置 Windows 更新商业版设置](https://docs.microsoft.com/intune-azure/configure-devices/how-to-configure-windows-update-for-business) |
-|**软件许可证管理**|可用 <br>[管理 Windows 电脑软件的许可协议](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|适用于企业的 Microsoft 应用商店（仅 .appx 应用）<br>[管理从适用于企业的 Windows 应用商店购买的应用](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
+|**软件许可证管理**|可用 <br>[管理 Windows 电脑软件的许可协议](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|适用于企业的 Microsoft 应用商店（仅 .appx 应用）<br>[管理从适用于企业的 Microsoft 应用商店购买的应用](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
 |**清单**|可用 <br>[查看 Windows 电脑的硬件和软件清单](https://docs.microsoft.com/intune/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune)|可用 <br>[如何监视应用信息](https://docs.microsoft.com/intune/apps-monitor)<br>[什么是设备管理](https://docs.microsoft.com/intune/device-management)|
 |**Windows 防火墙策略**|可用 <br>[使用 Windows 防火墙策略帮助保护 Windows 电脑](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |不可用|
 |**反恶意软件保护**|Endpoint Protection<br>[使用 Endpoint Protection 帮助保障 Windows 电脑的安全](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Windows Defender 设置](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|

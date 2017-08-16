@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80aa0e5afd1f8862b181d455ff6b545e462f90c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c6035ce5119b618ed63cf817082dd3eedc6eda7
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 定位丢失或被盗的 iOS 设备
 
@@ -26,6 +26,16 @@ ms.lasthandoff: 07/01/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 这款“定位设备”的设备操作可在地图上显示丢失或被盗 iOS 设备的位置。 此设备必须是处于监督模式下通过 EDP 注册的公司所有的 iOS 设备。 使用此操作之前，必须将此设备置于[丢失模式](/intune-azure/manage-devices/lost-mode.md)。
+
+## <a name="supported-platforms"></a>受支持的平台
+
+- Windows - 不支持
+- Windows Phone - 不支持
+- iOS - iOS 9.3 及更高版本（丢失模式下），公司拥有的受监督设备支持
+- macOS - 不支持
+- Android - 不支持
+
+## <a name="how-to-locate-a-lost-or-stolen-device"></a>如何定位丢失或被盗的设备
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
@@ -44,3 +54,8 @@ ms.lasthandoff: 07/01/2017
 - 该数据存储 24 小时，然后删除。 不能手动删除位置数据。
 - 位置数据在存储和传输时均进行加密处理。
 - 在配置丢失模式时，我们建议在锁屏界面上显示的输入消息中加入可帮助捡到设备的人返还设备的信息。
+
+
+## <a name="next-steps"></a>后续步骤
+
+若要查看刚执行的操作的状态，请在“设备和组”边栏选项卡上选择“设备操作”。

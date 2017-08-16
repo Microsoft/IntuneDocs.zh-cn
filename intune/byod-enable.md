@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>通过 Intune 实现 BYOD
 
@@ -75,14 +75,14 @@ Intune 服务准备就绪后，需要满足要管理的不同设备类型的各�
 * [向托管设备传递应用商店应用](apps-deploy.md)
 * 使用公司门户网站将应用定位到非托管设备
 
-使用 Intune，还可以管理和部署从 iOS App Store 和适用于企业的 Windows 应用商店批量购买的应用。 这有助于降低跟踪批量购买应用的管理成本。
+使用 Intune，还可以管理和部署从 iOS App Store 和适用于企业的 Microsoft 应用商店批量购买的应用。 这有助于降低跟踪批量购买应用的管理成本。
 
 > [!TIP]
 > 可以[使用 Azure AD Connect 配置单一登录 (SSO)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。 通过 SSO，用户可凭借在本地使用的域用户名和密码来登录应用。 此外，还可使用 Azure Active Directory 应用程序代理来[提供对本地托管 Web 应用的基于 Internet 的访问](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)。
 
 -   [管理批量采购的适用于 iOS 设备的应用](vpp-apps-ios.md)。 通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)购买多个 iOS 应用许可证。 需要在 Apple 网站设置一个 Apple VPP 帐户，并将 Apple VPP 令牌上传到 Intune。 然后，可将批量购买信息与 Intune 同步，并追踪批量购买应用的使用情况。
 
--   [管理从适用于企业的 Windows 应用商店购买的应用](windows-store-for-business.md)。 可在[适用于企业的 Windows 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店连接到 Intune，可在 Intune 门户中管理批量购买的应用。
+-   [管理从适用于企业的 Microsoft 应用商店购买的应用](windows-store-for-business.md)。 可在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店连接到 Intune，可在 Intune 门户中管理批量购买的应用。
 
 ## <a name="protect-company-data"></a>保护公司数据
 
@@ -105,10 +105,10 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 
 使用 [Windows 信息保护 (WIP) 策略](app-protection-policies-configure-windows-10.md)对托管的 Windows 10 设备可执行相同操作。 这些策略不会影响员工体验。 无需更改网络环境或其他应用。
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>在保留个人数据完整的同时，擦除公司数据
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>在完整保留个人数据的同时，删除公司数据
 
-如果不再需要某设备用于办公、设备改变用途或丢失，则可以从此设备删除公司的应用和数据。 为此，可使用 Intune 的选择性擦除和完全擦除功能。 用户也可从 Intune 公司门户远程擦除注册到 Intune 的自有设备。
+如果不再需要某设备用于办公、设备改变用途或丢失，则可以从此设备删除公司的应用和数据。 为此，可使用 Intune 的删除公司数据和恢复出厂设置功能。 用户也可从 Intune 公司门户远程重置注册到 Intune 的自有设备。
 
-[完全擦除](devices-wipe.md)将设备还原为出厂默认设置，同时删除用户数据和设置。 [选择性擦除](devices-wipe.md#selective-wipe)仅删除设备上的公司数据，但会完整保留用户的个人数据。
+[恢复出厂设置](devices-wipe.md)会将设备还原为出厂默认设置，删除用户数据和设置，并从 Intune 管理中删除该设备。 [删除公司数据](devices-wipe.md#remove-company-data)仅删除设备上的公司数据，但会完整保留用户的个人数据。
 
-启动后，设备会立即开始选择性擦除流程，从管理中删除数据。 流程完成后，所有公司数据都将删除，设备名称也会从 Intune 门户中删除。 设备管理生命周期结束。
+启动后，设备会立即开始重置过程。 流程完成后，所有公司数据都将删除，设备名称也会从 Intune 中删除。 设备管理生命周期结束。

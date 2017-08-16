@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 中注册 Windows Phone 8.1 设备
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 07/01/2017
 
 若要在 Intune 中注册 Phone 8.1 设备，请按照适用于你公司或学校的说明进行操作：
 
--   [如果公司允许你从 Windows 应用商店使用公司门户](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [如果公司允许使用 Microsoft 应用商店中的公司门户](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [如果不允许你从 Windows Phone 访问 Windows 应用商店或者你没有 Microsoft 帐户](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [如果不允许从 Windows Phone 访问 Microsoft 应用商店或者没有 Microsoft 帐户](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>如果公司允许你从 Windows 应用商店使用公司门户
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>如果公司允许使用 Microsoft 应用商店中的公司门户
 在设备上安装公司门户应用：
 
 1.  点击**开始** &gt; **应用商店**。
@@ -72,7 +72,7 @@ ms.lasthandoff: 07/01/2017
 
     ![“已添加帐户”屏幕](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>如果不允许你从 Windows Phone 访问 Windows 应用商店或者你没有 Microsoft 帐户
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>如果不允许从 Windows Phone 访问 Microsoft 应用商店或者没有 Microsoft 帐户
 
 1.  点击**设置** &gt; **工作区**。
 

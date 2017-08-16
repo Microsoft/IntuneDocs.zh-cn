@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用这些具有 Android 设备限制策略的设置配置组织中的设备。
+
+>[!TIP]
+>如果所需设置不可用，可能能够使用[自定义配置文件](custom-settings-android.md)来配置设备。 
 
 ## <a name="general"></a>常规
 
@@ -132,3 +135,8 @@ ms.lasthandoff: 08/03/2017
     - 添加托管应用。
 - **屏幕睡眠按钮** - 启用或禁用设备上的屏幕睡眠唤醒按钮。
 - **音量按钮** - 启用或禁用设备上的音量按钮。
+
+
+## <a name="next-steps"></a>后续步骤
+
+继续使用[如何配置设备限制设置](device-restrictions-configure.md)中的说明，创建设备限制配置文件，然后进行分配。

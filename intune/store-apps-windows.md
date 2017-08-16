@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>如何将 Windows 应用商店应用添加到 Microsoft Intune
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 如需帮助，请参阅[如何将应用分配到组](apps-deploy.md)。
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>手动分配 Windows 10 公司门户应用
-最终用户可以从 Windows 应用商店安装公司门户应以管理设备和安装应用。 但是，如果你的业务需求需要分配公司门户应用，即使尚未将 Intune 与适用于企业的 Windows 应用商店集成，也可以直接从 Intune 手动分配 Windows 10 公司门户应用。
+最终用户可从 Microsoft 应用商店安装公司门户应用，用于管理设备和安装应用。 但是，如果业务需求需要分配公司门户应用，即使尚未将 Intune 与适用于企业的 Microsoft 应用商店集成，也可以直接从 Intune 手动分配 Windows 10 公司门户应用。
 
  > [!NOTE]
  > 每次发布应用更新时，此选项都需要分配手动更新。
 
-1. 在[适用于企业的 Windows 应用商店](https://www.microsoft.com/business-store)中登录到你的账户，并获取公司门户应用的**脱机许可证**版本。  
+1. 在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中登录到帐户，并获取公司门户应用的脱机许可证版本。  
 2. 获得应用之后，选择“**清单**”页中的应用。  
 3. 选择“**Windows 10 所有设备**”作为“**平台**”，然后选择相应的**体系结构**并下载。 此应用不需要应用许可证文件。
 ![Windows 10 所有设备和供下载的体系结构 X86 包详细信息的图像](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ ms.lasthandoff: 07/01/2017
 以下是签名和分配应用的方式：
 
 1. 从 [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) 下载 Microsoft Intune Windows 10 公司门户应用签名脚本。  此脚本需要在主计算机上安装适用于 Windows 10 的 Windows SDK。 若要下载适用于 Windows 10 的 Windows SDK，请访问 [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296)。
-2. 如上所述，从适用于企业的 Windows 应用商店下载 Windows 10 公司门户应用。  
+2. 如上所述，从适用于企业的 Microsoft 应用商店下载 Windows 10 公司门户应用。  
 3. 运行在脚本标头中详细说明了其输入参数的脚本，对 Windows 10 公司门户应用进行签名（以下进行了提取）。 不需要将依赖项传入该脚本。 只有在应用上载到 Intune 管理控制台时才需要依赖项。
 
 |参数 | 描述|

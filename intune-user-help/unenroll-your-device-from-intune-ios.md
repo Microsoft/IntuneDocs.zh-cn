@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b2af07817b15c2afd2d2674aa0c6d8a403147421
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 1753545450d684f366ef4e323104d92ff0a55cbb
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>从 Intune 取消注册 iOS 设备
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/13/2017
 
 1.  在公司门户应用中的“我的设备”下，选择要取消注册的设备。
 
-2.  点击“**删除**”>“**删除**”。
+2.  点击“删除” > “删除”。
 
 从 Intune 取消注册设备后，将发生以下情况：
 

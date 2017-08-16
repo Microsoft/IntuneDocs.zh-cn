@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -87,7 +87,7 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 
 ### <a name="monitor"></a>监视
 - **许可应用** - 查看、分配和监视从应用商店批量购买的应用。
-    - [适用于企业批量采购应用的 Windows 应用商店](windows-store-for-business.md)
+    - [从适用于企业的 Microsoft 应用商店批量购买的应用](windows-store-for-business.md)
 - **发现的应用** - 显示由 Intune 分配，并安装在设备上的所有应用。
 - **应用安装状态** - 显示你创建的应用分配的状态。
 - **应用保护状态** - 显示所选用户的应用保护策略的状态。
@@ -97,7 +97,7 @@ Intune 提供多种功能，帮助你在所需设备上获取所需应用。
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **适用于企业的 Windows 应用商店** - 设置与适用于企业的 Windows 应用商店的集成。 然后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。
-    - [适用于企业批量采购应用的 Windows 应用商店](windows-store-for-business.md)
+- **适用于企业的 Microsoft 应用商店** - 设置与适用于企业的 Microsoft 应用商店的集成。 然后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。
+    - [从适用于企业的 Microsoft 应用商店批量购买的应用](windows-store-for-business.md)
 - **公司门户品牌** - 自定义公司门户，向其提供公司品牌。
     - [公司门户配置](company-portal-app.md)

@@ -14,11 +14,11 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f935a454f077caf096c43c892980a948dcd4c3a3
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Microsoft Intune 中的应用部署问题疑难解答
 
@@ -36,9 +36,9 @@ ms.lasthandoff: 07/01/2017
 |0x80073CFB|已经安装了提供的包，阻止重新安装此包|如果你正在安装的包与已安装的包并不完全相同，则可能会收到此错误。 确认数字签名也是包的一部分。 对包进行重新构建或者重新签名时，该包与以前安装的包在位方面不再完全相同。 用于修复此错误的两个可能的选项如下所示：<br /><br />-   递增应用的版本号，然后对包进行重新构建并重新签名。<br />-   在安装新包之前，请删除系统上每个用户的旧包。|
 |0x87D1041C|应用程序安装成功，但未检测到应用程序。|- 应用已通过 Intune 成功部署，随后可能由最终用户卸载了。 指示用户从公司门户重新安装应用。 在设备下次签入时，将自动重新安装所需应用。|
 
-## <a name="troubleshooting-apps-from-the-windows-store"></a>对 Windows 应用商店中的应用进行故障排除
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>对 Microsoft 应用商店中的应用进行故障排除
 
-[排除 Windows 应用商店应用的打包、部署和查询故障](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)主题中的信息可帮助你解决使用 Intune 或其他方式从 Windows 应用商店安装应用时可能会遇到的问题。
+[排除 Microsoft 应用商店应用的打包、部署和查询故障](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)主题中的信息有助于解决使用 Intune 或其他方式从 Microsoft 应用商店安装应用时可能会遇到的问题。
 
 ## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>对由 Intune 软件客户端管理的电脑的应用部署进行故障排除
 若要解决将应用部署到由 Intune 软件客户端管理的电脑时遇到的问题，可查看以下两个日志文件：

@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 8/3/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5861c999752bfef05b8a33161d0bf75a6d4daf59
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: 5d5d8e0500a0ee928b1037a978f6d4dadab71495
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2017"></a>Microsoft Intune 的早期版本 - 2017 年 8 月
 
@@ -42,29 +42,8 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="intune-on-the-azure-portal"></a>Azure 门户上的 Intune
 
-
-
-
-### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>用于强制设备与 Intune 同步的新设备操作 <!-- 711369 -->    
-我们将添加一个新的设备操作，可强制所选设备立即通过 Intune 签入。 当设备签入时，该设备会立即收到已分配给自己的任何挂起的操作或策略。  此操作可帮助立即验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
-
 ### <a name="actions-for-non-compliance----730266--"></a>针对不合规的操作<!--730266-->     
 “针对不合规的操作”是合规性策略的新功能，允许在不合规的设备上执行操作。 可指定单个或多个操作，并指定这些操作必然会发生的时间段。 例如，可在设备变为不合规后，立即通过电子邮件通知该不合规设备的用户，或可在 3 天宽限期后，通过条件性访问阻止不合规设备访问公司资源。
-
-
-### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version------1333256--1245463----"></a>按 OS 版本限制 Android 和 iOS 设备注册 <!--- 1333256,  1245463 --->  
-Intune 现在支持按操作系统版本号限制 iOS 和 Android 注册。 通过“Intune” > “注册限制” > “设备类型限制” > “默认” > “平台限制”，IT 管理员现在能够设置平台配置，以限制介于最低和最高操作系统值之间的操作系统注册。 Android 操作系统版本必须指定为 Major.Minor.Build.Rev，其中 Build 和 Rev 为可选。 iOS 版本必须指定为 Major.Minor.Build，其中.Build 为可选。
-
->[!NOTE]
->此设置不限制通过 Apple 注册计划进行的注册，这些注册计划包括 Apple 设备注册计划和 Apple School Manager 或 Apple Configurator。
-
-### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment------1333272--1333275-1245709----"></a>限制 Android、iOS 和 macOS 设备的个人私有设备注册<!--- 1333272,  1333275, 1245709 --->
-Intune 现支持限制 iOS、Android 和 macOS 设备使用设备序列号进行个人私有设备注册。 某些设备不报告序列号。 请咨询设备制造商获取详细信息。 通过将序列号上传到 Intune，可将设备预声明为企业所有的设备。 使用注册限制，可以阻止私人拥有的设备 (BYOD)，仅允许企业所有的设备进行注册。
-
-若要在 Intune 门户中导入序列号，请转至“设备注册” > “企业设备标识符”，单击“添加”，然后上传一个 CSV 文件。 该文件应不包含标头，其有两列，分别是序列号和详细信息，如 IMEI 号。  若要限制私人拥有的设备，请转到“设备注册” > “注册限制”。 在“设备类型限制”下，选择“默认”，然后选择“平台配置”。 可以针对 iOS、Android 和 macOS“允许”或“阻止”私人拥有的设备。 
-
-### <a name="force-supervised-ios-devices-to-automatically-install-the-latest-available-software-update----777100---"></a>强制受监视的 iOS 设备自动安装可用的最新软件更新 <!-- 777100 -->   
-软件更新工作区将推出一项新策略，可在该工作区中强制受监视的 iOS 设备自动安装可用的最新软件更新。 还将能够查看新报告，其中列出了使用较旧版本的 iOS 设备以及这些设备为何过期的原因摘要。
 
 ### <a name="new-report-that-lists-ios-devices-with-older-ios-versions------1352223---"></a>列出使用较旧 iOS 版本的 iOS 设备的新报表   <!-- 1352223 -->
 可在“软件更新”工作区中获取“过期 iOS 设备”报表。 在报表中，可以查看已应用 iOS 更新策略且具有可用更新的受监督 iOS 设备的列表。 可以查看每个设备的状态，了解该设备未自动更新的原因。 
@@ -115,9 +94,6 @@ IT 管理员可以通过 Azure AD 工作负荷中的新条件访问策略设置�
 ### <a name="system-center-operations-manager-management-pack-for-exchange-connector----885457---"></a>适用于 Exchange 连接器的 System Center Operations Manager 管理包<!-- 885457 -->   
 将会提供适用于 Exchange 连接器的 System Center Operations Manager 管理包帮助你分析 Exchange 连接器日志。 此管理包将在需要进行问题故障排除时为你提供监控 Intune 的多种方式。
 
-### <a name="conditional-access-support-for-mac-devices-----720172---"></a>对 Mac 设备的条件性访问支持 <!-- 720172 -->   
-将很快能够设置一种条件性访问策略，该策略要求 Mac 设备注册 Intune 且符合其设备合规性策略。 例如，用户可以下载适用于 macOS 的 Intune 公司门户应用并向 Intune 注册其 Mac 设备。 Intune 会评估 Mac 设备是否符合 PIN、加密、OS 版本和系统完整性等要求。
-
 ### <a name="end-of-support-for-ios-80----1164477---"></a>停止对 iOS 8.0 的支持<!---1164477--->
 适用于 iOS 的托管应用和公司门户应用需要使用 iOS 9.0 和更高版本才能访问公司资源。 今年 9 月之前不更新的设备将不再能够访问公司门户应用或这些应用。 截至 12 月底，将阻止对包括电子邮件在内的公司资源的任何访问。 
 
@@ -132,13 +108,11 @@ Android 托管的应用和公司门户应用需要使用 Android 4.4 和更高�
 
 建议尽早将符合条件的 Windows Phone 8.1 设备升级到 Windows 10 移动版。 
 
-
-
-
 ## <a name="intune-apps"></a>Intune 应用
 
-### <a name="light-and-dark-modes-available-for-the-company-portal-app-for-windows-10----676547---"></a>适用于 Windows 10 公司门户应用的浅色和深色模式<!---676547--->
-最终用户将能够为 Windows 10 公司门户应用自定义颜色模式。 用户能够在公司门户应用的“设置”部分进行更改。 更改将在用户重启应用后显示。 对于 Windows 10 版本 1607 及更高版本，应用模式默认为系统设置。 对于运行 Windows 10 1511 版及更早版本的桌面，应用模式将默认为浅色模式。
+### <a name="intune-managed-browser-support-for-ios-and-android----1374196---"></a>iOS 和 Android 的 Intune Managed Browser 支持<!---1374196--->
+
+自 2017 年 10 月起，Android 版 Intune Managed Browser 应用将仅支持运行 Android 4.4 及更高版本的设备。 iOS 上的 Intune Managed Browser 应用将仅支持运行 iOS 9.0 及更高版本的设备。 早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
 
 ### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>允许最终用户无需进行注册便可访问适用于 Android 的公司门户应用 <!---1169910--->  
 最终用户很快将无需注册其设备就能访问 Android 公司门户应用。 使用应用保护策略的组织中的最终用户在打开公司门户应用时将不再收到指示其注册设备的提示。 最终用户也将能够从公司门户安装应用而无需注册其设备。 

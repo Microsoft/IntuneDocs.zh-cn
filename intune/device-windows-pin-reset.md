@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>使用 Intune 在与 Microsoft PIN 重置服务集成的 Windows 设备上重置密码
 
 适用于 Windows 设备的重置密码功能与 Microsoft PIN 重置服务相集成，让用户能够为运行 Windows 10 移动版的设备生成新密码。 设备必须运行 Windows 10 创建者更新或更高版本。
+
+## <a name="supported-platforms"></a>受支持的平台
+
+- Windows - Windows 10 创意者更新及更高版本（已加入 Azure AD）支持
+- Windows Phone - 不支持
+- iOS - 不支持
+- macOS - 不支持
+- Android - 不支持
 
 
 ## <a name="before-you-start"></a>开始之前
@@ -43,10 +51,11 @@ ms.lasthandoff: 07/06/2017
 若要在所管理的 Windows 设备上配置 PIN 重置，请使用 [Intune Windows 10 自定义设备策略](custom-settings-windows-10.md)来启用这项功能。 使用以下 Windows 策略配置服务提供程序 (CSP) 来配置策略：
 
 
-- **对于用户** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **对于设备** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- 对于设备 - **./Device/Vendor/MSFT/PassportForWork/租户 ID**/Policies/EnablePinRecovery
 
-这些 CSP 的值必须都设置为“True”。
+“租户 ID” 是指 Azure Active Directory 的 Directory ID，可从 Azure Active Directory 的“属性”页获取。
+
+将此 CSP 的值设置为“True”。
 
 ## <a name="steps-to-reset-the-passcode"></a>重置密码的步骤
 
