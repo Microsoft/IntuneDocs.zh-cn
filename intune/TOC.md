@@ -17,11 +17,12 @@
 ## [已知问题](known-issues.md)
 ## [获取支持](get-support.md)
 
-# [入门](get-started-evaluation.md)
-## [创建组](get-started-groups.md)
+# [Intune 入门](get-started-evaluation.md)
+## [导航 Azure 门户](get-started-azure.md)
 ## [创建用户](get-started-users.md)
-## [注册设备](get-started-enroll.md)
+## [创建组](get-started-groups.md)
 ## [分配策略](get-started-policies.md)
+## [注册设备](get-started-enroll.md)
 ## [分配应用](get-started-apps.md)
 
 
