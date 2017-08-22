@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: db6661dd92b890d711f655a60eb883b417a30d8a
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: cb311429e0537709b3476154bdef24347cb99026
+ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>使用 Intune 数据仓库
 
@@ -41,4 +41,4 @@ ms.lasthandoff: 08/04/2017
 **后续步骤**
 
 - 获取链接并使用 Power BI 来获取见解。 有关说明，请参阅[使用 Power BI 连接到 Intune 数据仓库](reports-proc-get-a-link-powerbi.md)。
-- 有关 Intune 数据仓库 API、数据模型及实体间关系的详细信息<!-- , and an example of creating a custom client to retrieve data,-->，请参阅 [Intune 数据仓库 API](reports-nav-intune-date-warehouse.md)。
+- 有关 Intune 数据仓库 API、数据模型及实体间关系的详细信息<!-- , and an example of creating a custom client to retrieve data,-->，请参阅 [Intune 数据仓库 API](reports-nav-intune-data-warehouse.md)。

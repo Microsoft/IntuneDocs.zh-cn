@@ -3,8 +3,8 @@ title: "如何将应用添加到 Microsoft Intune"
 titleSuffix: Intune on Azure
 description: "这些过程可助你将应用添加到 Intune，做好分配到用户和设备的准备。 \""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/17/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c102e93738ca2da3c247ad364db160c812b91118
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 14f2ac5b25cfe3e688363a21775872baaa9ff89a
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何向 Microsoft Intune 添加应用
 
