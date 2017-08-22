@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e41eceed55a323a7f3c07c7b5d8ab2da7764ff53
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版 2016 应用分配到 Windows 10 设备
 
@@ -35,7 +35,6 @@ ms.lasthandoff: 08/08/2017
 - Intune 仅支持从 Office 365 专业增强版 2016 套件添加 Office 应用。
 - 当 Intune 安装应用套件时，如果任何 Office 应用处于打开状态，最终用户可能会丢失未保存文件中的数据。
 - Windows 10S 设备不支持此安装方法。
-- 如果将此应用类型作为“可用”分配给具有不同分配的多个用户，则他们将只能看到最新的目标分配。
 - 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Windows 应用商店中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。
 
 
