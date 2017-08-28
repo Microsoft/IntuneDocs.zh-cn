@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Intune 的注册选项
 
@@ -41,6 +41,9 @@ ms.lasthandoff: 07/11/2017
 ## <a name="corporate-identifiers"></a>企业标识符
 
 可列出国际移动设备标识符 (IMEI) 号码和序列号，以标识公司拥有的设备。 详细了解[企业标识符](corporate-identifiers-add.md)。
+## <a name="multi-factor-authentication"></a>多重身份验证
+
+可要求用户在注册设备时使用其他验证方法，例如电话、PIN 或生物特征数据。 了解[多重身份验证](multi-factor-authentication.md)的详细信息。
 
 ## <a name="device-enrollment-manager"></a>设备注册管理器
 可让用户成为设备注册管理员。  DEM 用户可使用单个用户帐户注册大量移动设备。 设备注册管理员 (DEM) 帐户最多可注册 1,000 台设备。 详细了解[设备注册管理员](device-enrollment-manager-enroll.md)。

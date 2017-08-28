@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>使用疑难解答门户帮助用户
 
@@ -41,7 +41,7 @@ Intune 管理员可以将技术支持人员角色分配给一个用户组。 该
 添加技术支持用户：
 1. [将用户添加到 Intune](users-add.md)（如有必要）。
 2. [创建技术支持组](groups-add.md)并将用户添加到该组。
-3. [分配 RBAC 技术支持人员角色](role-based-access-control.md#built-in-roles)
+3. [分配 RBAC 技术支持人员角色](role-based-access-control.md#built-in-roles)。
 
   ![Intune 门户的屏幕截图，其中突出显示了 Intune 角色，同时显示了一系列内置角色，包括技术支持人员](./media/help-desk-user-add.png) 还可[创建自定义角色](role-based-access-control.md#custom-roles)，可进一步对其进行修改，为技术支持人员提供访问权限。  技术支持人员需要具有以下权限才可帮助解决用户问题：
     - MobileApps：读取
@@ -61,8 +61,6 @@ Intune 管理员可以将技术支持人员角色分配给一个用户组。 该
 - 登录到 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”，然后转到“帮助和支持” > “疑难解答”。
 
 单击“选择用户”查看用户和该用户的详细信息。
-
-![包含“选择用户”链接的 Intune“疑难解答”工作负载的屏幕截图](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>使用疑难解答门户
 

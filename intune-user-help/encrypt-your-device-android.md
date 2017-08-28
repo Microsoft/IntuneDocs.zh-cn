@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何通过加密保护 Android 设备
 
@@ -33,8 +33,8 @@ ms.lasthandoff: 07/01/2017
 
 1.  确保已经为你设备设置了锁屏 PIN 或密码。
 
-2.  在“**设置**”中，选择“**安全性**”&gt;“**加密设备**”。
-    （在某些手机上，需要选择“存储”&gt;“存储加密”或“存储”&gt;“锁定屏幕和安全”&gt;“其他安全设置”以找到“加密”选项）。
+2.  在“设置”中，选择“安全性” > “加密设备”。
+    （在某些手机上，需要选择“存储” > “存储加密”或“存储” > “锁定屏幕和安全性” > “其他安全设置”以找到“加密”选项）。
 
 3.  按照屏幕上的说明操作。 加密时，你的设备可能会多次重启。
 
@@ -54,14 +54,16 @@ ms.lasthandoff: 07/01/2017
 - 确保设备上已设置 PIN 或密码。
 - 如果已在设备上设置 PIN 或密码，则尝试以下步骤，IT 管理员可能要求你执行这些步骤来增强设备安全性。 你看到的菜单名称可能与这些步骤中的名称略有不同，具体取决于 Android 设备类型。
 
-    1. 转到“Settings”（设置） > “Security”（安全） > “Screen lock”（屏幕锁定）。 确认当前的 PIN 或密码。
+    1. 转到“设置” > “锁定屏幕和安全性” > “屏幕锁定”。 确认当前的 PIN 或密码。
 
-    2. 在“Choose screen lock”（选择屏幕锁定）屏幕上，选择要使用的屏幕锁定类型。
+    2. 在“Choose screen lock”（选择屏幕锁定）屏幕上，选择要使用的屏幕锁定类型。 
 
-    3. 在“Secure start-up”（安全启动）屏幕上，点击“Require PIN to start device”（要求输入 PIN 以启动设备），然后点击“Continue”（继续）。
+    3. 选择屏幕锁定后，返回到“锁定屏幕和安全性”屏幕并选择“安全启动”。 
+    
+    4. 在“安全启动”屏幕上，点击“要求输入 PIN 以启动设备”，然后点击“继续”。
 
-    4. 选择一个 PIN（可以输入之前输入的 PIN），然后点击“Confirm your PIN”（确认你的 PIN）。
+    5. 选择一个 PIN（可以输入之前输入的 PIN），然后点击“Confirm your PIN”（确认你的 PIN）。
 
-    5. 打开公司门户应用，选择你的设备，然后点击“Check Compliance”（检查合规性）。
+    6. 打开公司门户应用，选择你的设备，然后点击“Check Compliance”（检查合规性）。
 
 仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。

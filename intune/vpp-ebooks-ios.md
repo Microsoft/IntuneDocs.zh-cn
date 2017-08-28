@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 电子书
 
@@ -44,7 +44,6 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 * 默认情况下，Intune 与 Apple VPP 服务一天同步两次。 可以随时开始手动同步。
 * 将 VPP 令牌导入 Intune 之后，不要将同一令牌导入任何其他设备管理解决方案。 这样做可能导致许可证分配和用户记录丢失。
 * 在开始使用 Intune 管理 iOS 书籍之前，请先删除使用其他移动设备管理 (MDM) 供应商创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步 Apple VPP 服务中由 Intune 创建的数据。
-* 目前，只能将书籍分配为**必需的**安装。 在将书籍分配为**必需**安装后，安装该书籍的每个用户都将使用一个许可证。
 * 在向设备分配一本书时，该设备必须安装内置的 iBooks 应用， 否则，最终用户必须重新安装该应用才能阅读书籍。 当前不能使用 Intune 来还原已删除的内置应用。
 * 你只能从 Apple Volume Purchase Program 站点分配书籍。 你无法上传，然后分配在内部创建的书籍。
 * 你当前无法使用与应用相同的操作方式将书籍分配到最终用户类别。
@@ -72,10 +71,10 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 ## <a name="to-assign-a-volume-purchased-app"></a>如何分配批量购买应用
 
 1. 在“电子书”工作负荷中选择“管理” > “所有电子书”。
-2. 在书籍列表边栏选项卡上，选择要分配的书籍，然后依次选择“...” > “分配组”。
+2. 在书籍列表边栏选项卡上，选择要分配的书籍，然后依次选择“...”>“分配组”。
 3. 在<书籍名称> -“已分配的组”边栏选项卡中，选择“管理” > “已分配的组”。
 4. 选择“分配组”，然后在“选择组”边栏选项卡上，选择要将书籍分配到的 Azure AD 组。 目前不支持设备组。
-选择**必需**的分配操作。 
+选择一个“可用”或“必需”的分配操作。 
 5. 完成后，选择“保存”。
 
 ## <a name="next-steps"></a>后续步骤

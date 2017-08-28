@@ -1,12 +1,12 @@
 ---
 title: "注册设备入门"
 titleSuffix: Intune on Azure
-description: 
+description: "通过完整体验 iOS 设备的注册过程了解整个注册过程。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>注册设备入门
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>设备注册入门
 
 通过 Microsoft Intune，可让员工将移动设备用于工作，同时保护公司数据。 由于最终用户将在自己的设备而非管理员控制台上与 Intune 交互，因此需确保注册体验是流畅的。 这样一来，便可以将精心设计的符合性策略与你的经验相结合，亲身感受用户的使用体验。 这一点尤其重要，因为用户将可以准确地知道你作为管理员可以看见什么信息：
 
-## <a name="what-it-cannot-see"></a>IT 管理员不能看到的内容
-* 调用和 Web 浏览历史记录
-* 位置
-* 个人电子邮件
-* 文本消息
-* 联系人
-* 个人帐户的密码
-* 日历事件
-* 图片，包括照片应用中的照片或本机照片
-
-## <a name="what-it-can-see"></a>IT 管理员能够看到的内容
-* 型号
-* 序列号
-* 操作系统版本
-* 应用名称
-* Owner
-* 设备名称
-* 制造商（对于非 Apple 生产的设备）
-* 电话号码（对于工作设备，则为整个号码。 对于个人设备，只取后四位数字。）
+| IT 管理员不能看到的内容 | IT 管理员能够看到的内容 |
+|---|---|
+| 调用和 Web 浏览历史记录 | 型号 |
+| 位置 | 序列号 |
+| 个人电子邮件 | 操作系统版本 |
+| 文本消息 | 应用名称 |
+| 联系人 | Owner |
+| 个人帐户的密码 | 设备名称 |
+| 日历事件 | 制造商（对于非 Apple 生产的设备） |
+| 图片，包括照片应用中的照片或本机照片 | 电话号码（对于工作设备，则为整个号码。 对于个人设备，只取后四位数字。） |
 
 ## <a name="how-do-i-enroll-a-device"></a>如何注册设备？
 
@@ -67,3 +56,13 @@ ms.lasthandoff: 08/03/2017
 14. 屏幕更改为显示配置文件已完成安装时，点击“完成”。
 15. 屏幕上将显示“正在注册设备”消息，然后显示设备已成功注册。 弹出框会询问是否在公司门户打开页面。 点击“打开”。
 16. 将返回到“公司访问设置”屏幕。 如果未设置测试策略，那么设备会显示符合。 如果有任何测试策略，则点击“设备符合性”将显示为确保设备安全需要执行一些操作。
+
+## <a name="next-steps"></a>后续步骤
+
+[应用添加入门](get-started-apps.md) - 查找应用并将应用添加到设备，以便员工完成工作。
+
+## <a name="learn-more"></a>了解详细信息
+
+* [Intune 注册选项](enrollment-options.md)
+* [通过 Intune 启用“自带设备办公”](byod-enable.md)
+* [让最终用户了解注册和设备管理](end-user-educate.md)

@@ -1,12 +1,12 @@
 ---
 title: "应用入门"
 titleSuffix: Intune on Azure
-description: 
+description: "查找应用并将应用添加到设备，以便员工完成工作。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71093f8ac17fc6d6938f5c263a40204f89419726
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 7ac2a6f027a78c6b0093a0d299a7cae3265e5954
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-apps"></a>应用入门
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-adding-apps"></a>应用添加入门
 
 Intune 支持多种将应用部署到公司设备上的方式：
 
@@ -33,7 +31,7 @@ Intune 支持多种将应用部署到公司设备上的方式：
 
 将通过分配公共应用商店应用，实施一种更快捷的应用程序部署方法。
 
-__如何分配公共应用商店应用？__
+## <a name="how-do-i-assign-a-public-store-app"></a>如何分配公共应用商店应用？
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 使用“搜索资源”，搜索 Intune。
@@ -43,3 +41,9 @@ __如何分配公共应用商店应用？__
 6. 在“添加应用”边栏选项卡中，选择“应用信息”，然后确保完整填入所有应用程序信息。 可添加其他可选填的详细信息，来帮助组织此应用，如“所有者”、“说明”、“开发人员”和用于公司隐私策略的“隐私 URL”。
 7. 针对“在公司门户中将此显示为特色应用”，请确保选择“是”，然后选择“确定”。
 8. 选择“添加”以添加一个应用。 此时将转到应用的**概述**。 选择“分配”，然后单击“选择组”以将其分配到测试组。 让应用**可供下载**。 然后在测试设备上，应用应显示为**特色应用**。
+
+## <a name="learn-more"></a>了解详细信息
+
+* [什么是使用 Intune 进行应用管理？](app-management.md)
+* [应用生命周期概述](app-lifecycle.md)
+* [什么是应用保护策略？](app-protection-policy.md)
