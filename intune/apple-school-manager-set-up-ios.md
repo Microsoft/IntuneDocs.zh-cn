@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 进行 iOS 设备注册
 
@@ -103,18 +103,16 @@ ms.lasthandoff: 08/07/2017
 
     - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。
 
-    - **注册锁定** -（需要管理模式 = 受到监督）禁用可能允许删除管理配置文件的 iOS 设置。 如果将此复选框保留为空，它将允许从“设置”菜单中删除管理配置文件。
+     - **注册锁定** -（需要管理模式 = 受到监督）禁用可能允许删除管理配置文件的 iOS 设置。 如果将此复选框保留为空，它将允许从“设置”菜单中删除管理配置文件。
+   - **Shared iPad** -（要求“通过用户关联进行注册”和“受监督”模式。）允许多个用户使用托管 Apple ID 登录到已注册的 iPad。 在 Apple School Manager 门户中创建托管的 Apple ID。 了解有关[共享 iPad](education-settings-configure-ios-shared.md) 的详细信息。
+   >[!NOTE]
+   >如果“用户关联”设置为“使用用户关联”或者“受监督”模式设置为“关闭”，则注册配置文件将禁用“Shared iPad”模式。
 
-  - **Shared iPad** -（要求“通过用户关联进行注册”和“受监督”模式。）允许多个用户使用托管 Apple ID 登录到已注册的 iPad。 在 Apple School Manager 门户中创建托管的 Apple ID。
-
-  >[!NOTE]
-  >如果“用户关联”设置为“使用用户关联”或者“受监督”模式设置为“关闭”，则注册配置文件将禁用“Shared iPad”模式。
-
-  - **最大缓存用户数** - （要求“Shared iPad” = “是”）将在设备上为每个用户创建一个分区。 建议值是在某个时间段内可能使用此设备的学生人数。 例如，如果 6 个学生在一周内定期使用此设备，则将此数值设置为 6。  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **允许配对** - 指定 iOS 设备是否可以与计算机同步。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
 
-    - Apple Configurator 证书 - 如果在“允许配对”下选择“通过证书允许 Apple Configurator”，请选择要导入的 Apple Configurator 证书。
+      - Apple Configurator 证书 - 如果在“允许配对”下选择“通过证书允许 Apple Configurator”，请选择要导入的 Apple Configurator 证书。
 
 7. 选择“设置助理设置”，配置以下配置文件设置，然后选择“保存”：
 
@@ -140,15 +138,15 @@ ms.lasthandoff: 08/07/2017
 
 1. 在“注册计划令牌”边栏选项卡上，选择蓝色的信息横幅或“连接 SDS”。
 2. 选择“允许 Microsoft 学校数据同步使用此令牌”，并设置为“允许”。 此设置将允许 Intune 与 Office 365 中的 SDS 连接。
-3. 若要允许 Apple School Manager 与 Azure AD 连接，请选择“设置 Microsoft 学校数据同步”。 详细了解[如何设置学校数据同步](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)。
+3. 若要允许 Apple School Manager 与 Azure AD 连接，请选择“设置 Microsoft 学校数据同步”。详细了解[如何设置学校数据同步](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)。
 4. 单击“确定”，以保存并继续。
 
 ## <a name="sync-managed-devices"></a>同步托管设备
 至此，已将管理 Apple School Manager 设备的权限分配给 Intune，接下来可以通过 Apple 服务同步 Intune，以便在 Intune 中查看托管设备。
 
 1. 在 Azure 门户的 Intune 中，选择“设备注册”，然后选择“Apple 注册”。
-2. 在“注册计划设备”下，选择“同步”。 进度栏显示再次请求同步之前必须等待的时长。
-3. 在“同步”边栏选项卡上，选择“请求同步”。 进度栏显示再次请求同步之前必须等待的时长。
+2. 在“注册计划设备”下，选择“同步”。进度栏显示再次请求同步之前必须等待的时长。
+3. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
 
   ![选中“请求同步”链接的“同步”边栏选项卡屏幕截图。](./media/enrollment-program-device-request-sync.png)
 

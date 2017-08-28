@@ -175,7 +175,6 @@
 ### [配置 iOS 教育设置](education-settings-configure-ios.md)
 ### [配置 iOS 教育共享设备](education-settings-configure-ios-shared.md)
 ### [配置 iOS 更新策略](software-updates-ios.md)
-### [配置 Windows 更新商业版设置](windows-update-for-business-configure.md)
 ### [配置证书](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
@@ -237,7 +236,7 @@
 <!-- ### Protect devices with remote actions -->
 
 ## [管理角色](role-based-access-control.md)
-
+## [管理软件更新](windows-update-for-business-configure.md)
 
 ## [使用软件代理管理 PC](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [比较 PC 管理](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)

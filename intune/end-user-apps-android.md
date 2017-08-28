@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4f0364750edf2e97e2b621c27fb25bea8e0f537c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 用户如何获取其应用
 
@@ -32,6 +32,14 @@ ms.lasthandoff: 07/01/2017
 | ------------- |-------------| -----|
 | 可用应用      | 用户在公司门户中点击“**安装**”。 此时将出现一条通知，用户需要点击该通知以开始安装。 安装成功后，通知即会消失。 | 用户在公司门户中点击应用，并转到 Play Store中的应用页，他们可以在那里开始安装。|
 | Required apps      | 用户将看到一条通知（用户无法关闭此通知），指示他们需要安装应用。 用户点击通知以开始安装。 安装成功后，通知即会消失。    | 用户将看到一条通知（用户无法关闭此通知），指示他们需要安装应用。 用户点击该通知，并转到 Play Store 中的应用页，他们可以在那里开始安装。 安装成功后，通知即会消失。 |
+
+最终用户需要允许来自未知源的安装才能安装 [LOB 应用](lob-apps-android.md)。 这些应用通常位于两个位置：
+
+* Android 7.1.2 及更低版本：“设置” > “安全性” > “未知源”
+* Android 8.0 及更高版本：“设置” > “应用和通知” > “特殊应用访问” > “安装未知应用” > “公司门户” > “允许来自此源”
+
+在这种情况下，公司门户应用将通知最终用户，并将最终用户直接引导至相应设置。 
+
 
 ## <a name="samsung-knox-standard-android-devices"></a>Samsung Knox 标准版 Android 设备
 

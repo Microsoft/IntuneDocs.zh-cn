@@ -1,12 +1,12 @@
 ---
 title: "策略入门"
 titleSuffix: Intune on Azure
-description: 
+description: "通过创建策略防止用户使用其设备进行未授权的操作。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>策略入门
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>策略入门
 
 Intune 入门的主要目标之一是注册设备，以确保其符合公司策略。 符合性策略不仅有助于管理专用的设备类型，如公司拥有的网亭，还可帮助管理个人（自带）设备、平板电脑和无用户设备。
 
@@ -56,3 +54,12 @@ __如何创建策略？__
 7. 返回到“创建策略”边栏选项卡，然后选择“创建”。
 8. 策略创建后，选择“分配”将策略分配到测试组。 选择测试组 – 其中应包含测试用户 – 然后通过单击“保存”将策略分配到该组。
 9. 等待几分钟，然后注册的设备会提示它需要更新密码以便与公司策略保持一致。 还可以通过依次点击设备名称和“同步”按钮，在“适用于 iOS 的公司门户应用”中对此进行手动检查。
+
+## <a name="next-steps"></a>后续步骤
+
+[设备注册入门](get-started-enroll.md) - 通过完整体验 iOS 设备的注册过程了解整个注册过程。
+
+## <a name="learn-more"></a>了解详细信息
+
+* [监视 Intune 设备符合性策略](compliance-policy-monitor.md)
+* [通过 Intune 使用条件性访问策略的常见方式](conditional-access-intune-common-ways-use.md)

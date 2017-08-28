@@ -1,12 +1,12 @@
 ---
-title: "配置 Windows Update for Business 设置 - Intune"
-titleSuffix: Intune on Azure
+title: "管理软件更新"
+titleSuffix: Configure Windows Update for Business settings - Intune
 description: "了解如何在 Intune 中配置 Windows Update for Business 设置，以控制 Windows 10 设备的更新。"
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,19 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
+ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/22/2017
 ---
-# <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>如何使用 Microsoft Intune 配置 Windows Update for Business 设置
+# <a name="manage-software-updates"></a>管理软件更新
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="introduction"></a>简介
-Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 开始，任何新的功能更新和质量更新都将包含所有此前更新的内容。 这意味着，只要安装了最新更新，你的 Windows 10 设备将完全保持最新状态。 与以前版本的 Windows 不同的是，现在必须安装完整的更新，而不是部分更新。
+Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，新的功能更新和质量更新包含了所有此前更新的内容。 这意味着，只要安装了最新更新，你的 Windows 10 设备将完全保持最新状态。 与以前版本的 Windows 不同的是，现在必须安装完整的更新，而不是部分更新。
 
-借助 Windows Update for Business 可以简化更新管理体验，不需要批准设备组的单个更新。 通过配置更新推出策略仍可以管理环境中的风险，并且 Windows 更新将确保在适当的时间安装更新。 Microsoft Intune 提供在设备上配置更新设置的功能，使你能够延迟更新安装。 Intune 不会存储更新，仅存储更新策略分配。 设备直接访问 Windows 更新以进行更新。使用 Intune 来配置和管理 **Windows 10 更新通道**。 更新通道包含一组设置，可配置何时以及如何安装 Windows 10 更新。 例如，可以配置以下内容：
+借助 Windows Update for Business 可以简化更新管理体验，不需要批准设备组的单个更新。 通过配置更新推出策略仍可以管理环境中的风险，并且 Windows 更新可确保在适当的时间安装更新。 Microsoft Intune 提供在设备上配置更新设置的功能，使你能够延迟更新安装。 Intune 不会存储更新，仅存储更新策略分配。 设备直接访问 Windows 更新以进行更新。使用 Intune 来配置和管理 **Windows 10 更新通道**。 更新通道包含一组设置，可配置何时以及如何安装 Windows 10 更新。 例如，可以配置以下内容：
 
 - **Windows 10 服务分支**：选择是否要让设备组接收来自 Current Branch 或 Current Branch for Business 的更新。  
 - **延期设置**：配置更新延期设置，以延迟设备组的更新安装。 然后，你将有一个阶段性的更新部署，以便随时查看进度。
@@ -81,7 +80,7 @@ Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 �
 7. 在“**设置**”边栏选项卡上，配置以下信息：
     - **服务分支**：设置设备将接收 Windows 更新的分支（Current Branch 或 Current Branch for Business）。
     - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
-    - **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
+    -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延期期限（天）** - 指定质量更新延期的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 

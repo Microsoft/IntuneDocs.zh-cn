@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>应用程序实体引用
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 08/04/2017
 
 AppRevision 实体列出了应用的所有版本。
 
-| 属性  | 描述 | 示例 |
+| 属性  | 说明 | 示例 |
 |---------|------------|--------|
 | AppKey |应用的唯一标识符 |123 |
 | ApplicationId |应用的唯一标识符 - 类似于 AppKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |
@@ -52,9 +52,9 @@ AppRevision 实体列出了应用的所有版本。
 | IsCurrent |表明此应用修订版本目前是否在数据仓库中 |True/False |
 | RowLastModifiedDateTimeUTC |上次在数据仓库中修改此应用版本的 UTC 日期和时间 |2016/11/23 - 中午 12:00:00 |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-AppInstallerTypes 实体列出了应用的安装源。
+AppTypes 实体列出了应用的安装源。
 
 | 属性  | 描述 |
 |---------|------------|
@@ -80,44 +80,6 @@ AppInstallerTypes 实体列出了应用的安装源。
 | 11 |Windows Mobile MSI |MSI 业务线应用 |
 | 12 |Windows Phone LOB 应用 |Windows Phone 业务线应用 |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-ApplicationTypes 实体列出了可能的应用类型。
-
-| 属性  | 说明 |
-|---------|------------|
-| ApplicationTypeID |类型的 ID |
-| ApplicationTypeKey |密钥的代理键 |
-| ApplicationTypeName |应用类型 |
-
-## <a name="example"></a>示例
-
-| ApplicationTypeID  | Name | 说明 |
-|---------|------------|--------|
-| 0 |InHouse |内部开发的应用 |
-| 1 |DeepLink |指向应用商店中应用的链接 |
-| 2 |WebLink |指向 Web 应用的链接 |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-ManagedSoftwareTypes 实体列出了应用的可能托管软件类型。
-
-| 属性  | 说明 |
-|---------|------------|
-| SoftwareTypeID |类型 ID |
-| SoftwareTypeKey |密钥的代理键 |
-| SoftwareTypeName |软件类型 |
-
-## <a name="example"></a>示例
-
-| SoftwareTypeID  | Name | 描述 |
-|---------|------------|--------|
-| 0 |“桌面” |桌面应用 |
-| 2 |更新 |窗口更新 |
-| 5 |SideCarAgent | |
-| 1 |“移动” |移动应用 |
-| 3 |WebLink |网页链接 |
-| 4 |VppDeepLink |指向应用商店中作为 VPP（批量购买计划）一部分的应用的链接 |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

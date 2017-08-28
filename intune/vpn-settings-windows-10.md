@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的 VPN 设置
 
@@ -96,10 +96,13 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="conditional-access"></a>条件性访问
 
-**对此 VPN 连接的条件访问** -
-**使用备用证书进行单一登录 (SSO)** -
-**扩展密钥用法** -
-**颁发者哈希** -
+此 VPN 连接的条件性访问 - 从客户端启用设备符合性流。 如果启用，VPN 客户端将尝试与 Azure Active Directory 进行通信，以获取用于身份验证的证书。 VPN 应设置为使用证书进行身份验证，并且 VPN 服务器必须信任由 Azure Active Directory 返回的服务器。
+
+使用替代证书进行单一登录 (SSO) - 为验证设备符合性，可使用除 VPN 身份验证证书以外的其他证书来进行 Kerberos 身份验证。 使用以下设置指定证书： 
+
+- 扩展密钥用法 - 扩展密钥用法 (EKU) 的名称。
+- 对象标识符 - EKU 的对象标识符。
+- 颁发者哈希 - SSO 证书的指纹。
 
 ## <a name="dns-settings"></a>DNS 设置
 

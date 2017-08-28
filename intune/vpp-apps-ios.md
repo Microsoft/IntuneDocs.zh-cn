@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 08/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 1433951e8c17ae226d37705223a80e2e79f7483b
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 应用
 
@@ -30,9 +30,9 @@ iOS 应用商店允许你为想要在公司运行的应用购买多个许可证�
 
 Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 
-- 从应用商店中导入许可证信息
+- 报告应用商店中的许可证信息
 - 跟踪已使用的许可证数量
-- 防止安装的应用副本数超过所拥有的数目
+- 帮助防止安装的应用副本数超过所拥有的数目
 
 可通过两种方法分配批量采购的应用：
 
@@ -41,15 +41,15 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 将应用分配到设备时，需使用一个应用证书，此证书将与其分配到的设备保持关联。
 将批量采购的应用分配到设备时，设备的最终用户不必提供 Apple ID 即可访问应用商店。 
 
+
+
 ### <a name="user-licensing"></a>用户许可
 
-将应用分配给用户时，需使用一个应用证书，此证书将与用户关联。 可以在用户拥有的多个设备上运行该应用。
-将批量采购的应用分配给用户时，每个最终用户必须具有有效的 Apple ID 才能访问应用商店。
+将应用分配给用户时，需使用一个应用证书，此证书将与用户关联。 可以在用户拥有的多个（数量限制由 Apple 控制）设备上运行该应用。
+将批量采购的应用分配给用户时，每个最终用户必须具有有效且唯一的 Apple ID 才能访问应用商店。
 
 
-此外，还可以使用 Intune 同步和管理从 Apple Volume Purchase Program 商店购买的电子图书。 使用 Intune 门户中的 **Books** 工作负荷来管理书籍。 管理书籍的过程与管理应用的过程相同。
-必须上传 Apple Volume Purchase Program 令牌才能执行上述操作。 目前，只能将书籍分配为**必需的**安装。
-在向设备分配一本书时，该设备必须安装内置的 iBooks 应用， 否则最终用户必须重新安装该应用才能阅读书籍。 当前不能使用 Intune 来还原已删除的内置应用。
+此外，还可以使用 Intune 同步和管理从 Apple Volume Purchase Program 商店购买的电子图书。 有关详细信息，请参阅[如何管理通过批量购买计划购买的 iOS 电子书](vpp-ebooks-ios.md)。
 
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理批量采购的适用于 iOS 设备的应用程序
@@ -62,14 +62,17 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 * 如果你以前使用过不同产品的 VPP 令牌，必须生成一个新的令牌在 Intune 中使用。
 * 每个令牌的有效期为一年。
 * 默认情况下，Intune 与 Apple VPP 服务一天同步两次。 可以随时开始手动同步。
-* 将 VPP 令牌导入 Intune 之后，不要将同一令牌导入任何其他设备管理解决方案。 这样做可能导致许可证分配和用户记录丢失。
 * 在开始将 iOS VPP 与 Intune 配合使用之前，先删除使用其他移动设备管理 (MDM) 供应商创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步 Apple VPP 服务中由 Intune 创建的数据。
 * Intune 支持最多添加 256 个 VPP 令牌。
 * 如果要为通过设备注册配置文件或 Apple Configurator 注册的设备分配批量购买的应用，则此操作只适用于面向设备的应用。 不能让批量采购的应用面向 DEP 设备的用户，这不存在任何用户关联。
+因为 iOS VPP 用户许可机制能让数千台设备使用同一用户帐户进行注册。 iOS VPP 用户许可允许最终用户在 5-10 台设备上安装同一应用。
+这意味着前几台 DEM 注册设备可使用用户许可安装 VPP 应用，后续其他设备则无法再安装该应用。
 * 仅支持一次在一个 Intune 帐户上使用一个 VPP 令牌。 不要将同一个 VPP 令牌重复用于多个 Intune 账户。
 * 使用用户授权模型向用户或设备（具有用户关联）分配 VPP 应用时，每个 Intune 用户在其设备上接受 Apple 条款与条件时都需与一个唯一的 Apple ID 或电子邮件地址相关联。
 确保为新的 Intune 用户设置设备时，使用该用户的唯一 Apple ID 或电子邮件地址来配置设备。 Apple ID 或电子邮件地址与 Intune 用户配成唯一对，并可最多用于 5 台设备。
 
+>[!IMPORTANT]
+>将 VPP 令牌导入 Intune 之后，不要将同一令牌导入任何其他设备管理解决方案。 这样做可能导致许可证分配和用户记录丢失。
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
@@ -95,12 +98,11 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 ## <a name="to-assign-a-volume-purchased-app"></a>如何分配批量购买应用
 
 1.  在“移动应用”工作负荷中，选择“管理” > “应用许可证”。
-2.  在应用列表边栏选项卡上，选择要分配的应用，然后依次选择“...” > “分配组”。
+2.  在应用列表边栏选项卡上，选择要分配的应用，然后依次选择“...”>“分配组”。
 3.  在“<app name> -  分配”边栏选项卡上，选择“管理” > “分配”。
 4.  选择“选择组”，然后在“选择组”边栏选项卡上，选择要将应用分配到的 Azure AD 用户或设备组。
 5.  请为选择的每个组选择以下设置：
     - 类型 - 选择应用将为“可用”（最终用户可以从公司门户安装应用）还是“必需”（最终用户设备将自动安装应用）。
-将 VPP 应用分配为“可用”后，会直接从应用商店分配应用内容和许可证。
     - 许可证类型 - 选择“用户许可”或“设备许可”。
 6.  完成后，选择“保存”。
 
@@ -110,9 +112,9 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 
 ## <a name="further-information"></a>更多信息
 
-若要回收许可证，必须将分配操作更改为“卸载”。 卸载应用后，将回收许可证。
+若要回收许可证，必须将分配操作更改为“卸载”。 卸载应用后，将回收许可证。 如果删除了分配给用户的应用，Intune 会尝试回收与该用户关联的所有应用许可证。
 
-符合条件设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 开始安装应用前，他们必须加入该计划。 加入 Apple Volume Purchase 计划的邀请需要用户可以使用 iOS 设备上的 iTunes 应用。 如果已设置禁用 iTunes 应用商店应用的策略，基于用户许可的 VPP 应用将无法工作。 解决方案是删除策略，或使用基于设备的许可来允许 iTunes 应用。
+符合条件设备的用户首次尝试在设备上安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 开始安装应用前，他们必须加入该计划。 加入 Apple Volume Purchase 计划的邀请需要用户可以使用 iOS 设备上的 iTunes 应用。 如果已设置禁用 iTunes 应用商店应用的策略，基于用户许可的 VPP 应用将无法工作。 解决方案是删除策略，或使用基于设备的许可来允许 iTunes 应用。
 
 
 

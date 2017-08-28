@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
+ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -41,22 +41,24 @@ ms.lasthandoff: 08/03/2017
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>优选功能所需的辅助迁移
 
-必须先迁移在 2017 年 1 月之前创建的 Intune 帐户，然后才可以在 Azure 门户中使用这些功能：
+必须先迁移在 2017 年 1 月之前创建的 Intune 帐户，然后才可以在 Azure 门户中使用以下功能：
 
 - 公司设备注册配置文件
 - Apple 设备注册计划
-- 按 iOS 序列号组划分的企业预注册设备
-- 设备注册管理器
+- 按 iOS 序列号预声明公司设备
+- 设备注册管理员帐户
 - Apple Volume Purchase Program
 
-因为无法从经典 Silverlight 和 Azure 控制台管理这些功能，因此迁移将会：
+因为无法从经典 Intune (Silverlight) 控制台和 Azure 门户管理这些功能，因此迁移将会：
 - 在经典控制台中禁用它们
-- 在 Azure 控制台中启用它们  
+- 在 Azure 门户中启用它们  
+
+2017 年 9 月 11 日之后，这些功能的迁移将并入到 Azure 的主迁移。 如果帐户已迁移并使用 Azure 门户，则会在 2017 年 9 月 11 日至 22 日期间进行此辅助迁移。 帐户开始迁移后，将在同一天内完成迁移。 从在 Intune 经典控制台中禁用这些功能开始算起，迁移将在 6 小时内完成。
 
 如果目前在 Azure 门户中管理这些 Intune 功能，请注意以下几点：
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>删除 Apple DEP 中默认的企业设备注册配置文件
-Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备注册配置文件。 经典 Silverlight Intune 控制台中提供的此功能将停用，以防止无意中分配配置文件。 当在 Azure 门户中同步 DEP 序列号时，不会分配企业设备注册配置文件。 在使用该设备之前，必须分配注册配置文件。
+Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备注册配置文件。 经典 Intune (Silverlight) 控制台中提供的此功能将停用，以防止无意中分配配置文件。 当在 Azure 门户中同步 DEP 序列号时，不会分配企业设备注册配置文件。 在使用该设备之前，必须分配注册配置文件。
 
 #### <a name="apple-dep-token-restored-with-migration"></a>通过迁移还原的 Apple DEP 令牌
 
@@ -72,7 +74,7 @@ Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备
 会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户账户国家/区域代码相同的的应用。 例如，如果要购买仅可通过美国商店获得的应用，但 Intune 帐户所在地区为德国，则 Intune 不会显示该应用。
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>会上传同一 iOS 批量采购计划的多个副本
-不要为相同的 VPP 令牌多次单击“上传”按钮。 这将导致上传重复的 VPP 令牌，并导致应用针对同一 VPP 令牌发生多次同步。 
+不要为相同的 VPP 令牌多次单击“上传”按钮。 这将导致上传重复的 VPP 令牌，并导致应用针对同一 VPP 令牌发生多次同步。
 
 <!-- ## Groups -->
 
@@ -84,8 +86,9 @@ Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备
 如果你添加了其他域（使用“高级设置” > “网络外围” > “添加受保护的域”），则你无法保存策略。 你看到的错误消息将会更改为更准确的消息。
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN 客户端支持
- 
-最新版本的 Cisco AnyConnect VPN 客户端 (4.0.07072) 目前与 Intune 不兼容。 将来的 Intune 更新将提供与此 VPN 客户端版本的兼容性。 在此之前，建议不更新 Cisco AnyConnect VPN 客户端，并继续使用现有版本。
+
+最新版本的 Cisco AnyConnect VPN 客户端 (4.0.07072) 目前与 Intune 不兼容。
+将来的 Intune 更新将提供与此 VPN 客户端版本的兼容性。 在此之前，建议不更新 Cisco AnyConnect VPN 客户端，并继续使用现有版本。
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>对 macOS Sierra 设备使用数字密码类型
 
@@ -118,16 +121,3 @@ macOS 的未来版本中可能会解决此问题。
 全局管理员（也被称为租户管理员）可以继续在没有单独的 Intune 或企业移动性套件 (EMS) 许可证的情况下进行日常的管理任务。 但是，要使用服务（例如注册他们自己的设备、企业设备，或使用 Intune 公司门户），他们需要 Intune 或 EMS 许可证。
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 

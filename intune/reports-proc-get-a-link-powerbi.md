@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 连接到数据仓库
 
@@ -60,18 +60,20 @@ Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据
 
 借助经 Azure AD 身份验证的客户端，OData URL 可连接到数据仓库 API 中的 RESTful 终结点，该终结点向报告客户端公开数据模型。 按以下说明使用 Power BI Desktop 连接并创建自己的报表。 无需局限于 Power BI Desktop，可将自己最喜爱的分析工具与 OData URL 配合使用，前提是客户端支持 OAUTH2.0 身份验证和 OData v4.0 标准。
 
-1.  在报表边栏选项卡中检索 **OData URL**，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`。
-2.  打开 Power BI Desktop。
-3.  选择“开始” > “获取数据”。 选择“OData 源”。
-4.  选择“基本”。
-5.  在 URL 框中键入或粘贴 OData URL。
-6.  单击" **确定**"。
-7.  如果尚未从 Power BI 桌面客户端为租户进行 Azure AD 身份验证，请键入凭据。  
-    a.  选择“组织帐户”。  
-    b。  键入用户名和密码。  
-    c.  单击“登录”。  
-    d.  单击“连接” 。  
-8.  单击“加载”。
+1.  登录 Azure 门户，选择“监视 + 管理” > “Intune”。 还可搜索 Intune 资源。  
+2.  打开“Microsoft Intune 数据仓库 API (预览)”边栏选项卡。
+3. 在报表边栏选项卡中检索自定义源 URL，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+4. 打开 Power BI Desktop。
+5. 选择“开始” > “获取数据”。 选择“OData 源”。
+6. 选择“基本”。
+7. 在 URL 框中键入或粘贴 OData URL。
+8. 单击" **确定**"。
+9. 如果尚未从 Power BI 桌面客户端为租户进行 Azure AD 身份验证，请键入凭据。  
+    1.  选择“组织帐户”。  
+    2.  键入用户名和密码。  
+    3.  单击“登录”。  
+    4.  单击“连接” 。  
+10. 单击“加载”。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -79,4 +81,4 @@ Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  已整理租户数据，便于用户从数据中获取见解。 有关数据组织方式的详细信息，请参阅[数据仓库数据模型](reports-ref-data-model.md)。 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  还可以从 RESTful 接口访问数据，并将数据整合到自己的应用中。 有关详细信息，请参阅[使用 REST 客户端从数据仓库 API 获取数据](reports-proc-data-rest.md)。
