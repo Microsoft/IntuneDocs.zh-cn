@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5d5d8e0500a0ee928b1037a978f6d4dadab71495
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: ba953f1f471cc8bdbfdadad75c8f4eeb8acc2279
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2017"></a>Microsoft Intune 的早期版本 - 2017 年 8 月
 
@@ -57,15 +57,12 @@ ms.lasthandoff: 08/10/2017
 可以通过 URL、包名称或从管理的应用列表中指定应用。
 
 ### <a name="new-settings-for-windows-10-device-restriction-profile"></a>Windows 10 设备限制配置文件的新设置
-<!--- 978575, 1308849, 1308850 -->
+<!--- 978575, 1308849, -->
 我们将向 Windows Defender SmartScreen 类别中的 Windows 10 设备限制配置文件中添加新设置。
 
 有关 Windows 10 设备限制配置文件的详细信息，请参阅 [Windows 10 和更高版本的设备限制设置]( device-restrictions-windows-10.md)。
 
-### <a name="new-device-restriction-settings-for-windows-10------1063965---"></a>适用于 Windows 10 的 Intune 设备限制设置   <!-- 1063965 -->
-我们将向以下类别中的 [Windows 10 设备限制配置文件](/intune/device-restrictions-windows-10)添加新设置：
-- Windows Defender SmartScreen
-- App Store
+
 
 
 ### <a name="android-for-work-support-for-lookout----1087312---"></a>Lookout 的 Android for Work 支持<!-- 1087312 -->   
@@ -118,13 +115,11 @@ Android 托管的应用和公司门户应用需要使用 Android 4.4 和更高�
 最终用户很快将无需注册其设备就能访问 Android 公司门户应用。 使用应用保护策略的组织中的最终用户在打开公司门户应用时将不再收到指示其注册设备的提示。 最终用户也将能够从公司门户安装应用而无需注册其设备。 
 
 ### <a name="improved-error-message-for-when-a-user-reaches-the-maximum-number-of-devices-allowed-to-enroll----1270370---"></a>改进了用户达到允许注册的最大设备数时提示的错误消息 <!-- 1270370 -->
-最终用户将不再看到普通错误消息，而将看到一条友好且可操作的错误消息：“注册设备数已达到 IT 管理员允许的最大数量。 请删除已注册的设备，或者向 IT 管理员寻求帮助。”
+最终用户将不再看到普通错误消息，而将看到一条友好且可操作的错误消息：“注册设备数已达到 IT 管理员允许的最大数量。请删除已注册的设备，或者向 IT 管理员寻求帮助。”
 
-### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android 公司门户用户和应用保护策略用户的新登录体验 <!-- 621669 -->
-最终用户将能够在不注册 Android 设备的情况下，使用 Android 公司门户应用浏览应用、管理设备以及查看 IT 联系人信息。 此外，如果最终用户已使用受 Intune 应用保护策略保护的应用，并启动了 Android 公司门户，最终用户将不再会接收到注册设备的提示。 
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>通知最终用户可查看哪些 iOS 设备信息 <!--739894-->
-我们将在 iOS 公司门户应用的“设备详细信息”屏幕上添加“所有权类型”。 这样，用户便可直接在 Intune 最终用户文档的此页中发现详细隐私信息。 用户还将能在“关于”屏幕中找到此信息。
+我们将在 iOS 公司门户应用的“设备详细信息”屏幕上添加“所有权类型”。 这样，用户便可直接在 Intune 最终用户文档的此页中发现详细隐私信息。用户还将能在“关于”屏幕中找到此信息。
 
 ### <a name="apps-details-pages-display-new-information-for-android-devices---1287476--"></a>应用详细信息页显示 Android 设备的新信息 <!--1287476-->
 Android 公司门户应用的应用详细信息页将显示 IT 管理员为该应用定义的应用类别。
