@@ -6,7 +6,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 8/02/2017
+ms.date: 8/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,83 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31617fb9992937f43f5bfc3b882f09d4be7de7b6
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 98b4d1dd438b352164c697af5f1531a0d79538ad
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+## <a name="july-2017"></a>2017 年 7 月
+
+### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version------1333256--1245463----"></a>按 OS 版本限制 Android 和 iOS 设备注册 <!--- 1333256,  1245463 --->
+Intune 现在支持按操作系统版本号限制 iOS 和 Android 注册。 在“设备类型限制”下，IT 管理员现可设置平台配置，限制最低和最高操作系统值之间的注册。 Android 操作系统版本必须指定为 Major.Minor.Build.Rev，其中 Minor、Build 和 Rev 是可选的。 iOS 版本必须指定为 Major.Minor.Build，其中 Minor 和 Build 是可选的。 详细了解[设备注册限制](enrollment-restrictions-set.md)。
+
+>[!NOTE]
+>请勿通过 Apple 注册计划或 Apple Configurator 限制注册。
+
+### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment------1333272--1333275-1245709----"></a>限制 Android、iOS 和 macOS 设备的个人私有设备注册<!--- 1333272,  1333275, 1245709 --->
+Intune 可通过将企业设备 IMEI 号码列入允许列表来限制个人设备注册。 Intune 现已使用设备序列号将此功能扩展到 iOS、Android 和 macOS。 通过将序列号上传到 Intune，可将设备预声明为企业所有的设备。 使用注册限制，可以阻止私人拥有的设备 (BYOD)，仅允许企业所有的设备进行注册。 详细了解[设备注册限制](enrollment-restrictions-set.md)。
+
+若要导入序列号，请转至“设备注册” > “公司设备标识符”，单击“添加”，然后上传一个 CSV 文件（无标头，含两列，分别是序列号和详细信息，如 IMEI 号）。  若要限制私人拥有的设备，请转到“设备注册” > “注册限制”。 在“设备类型限制”下，选择“默认”，然后选择“平台配置”。 可以针对 iOS、Android 和 macOS“允许”或“阻止”私人拥有的设备。 
+
+
+### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>用于强制设备与 Intune 同步的新设备操作 <!-- 711369 -->
+在此版本中，我们添加了一个新的设备操作，可强制所选设备立即通过 Intune 签入。 当设备签入时，该设备会立即收到已分配给自己的任何挂起的操作或策略。  此操作可帮助立即验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
+有关详细信息，请参阅[同步设备](device-sync.md)
+
+### <a name="force-supervised-ios-devices-to-automatically-install-the-latest-available-software-update----777100---"></a>强制受监视的 iOS 设备自动安装可用的最新软件更新 <!-- 777100 -->
+软件更新工作区推出了一项新策略，可在该工作区中强制受监视的 iOS 设备自动安装可用的最新软件更新。 有关详细信息，请参阅[配置 iOS 更新策略](/intune/software-updates-ios)
+
+### <a name="check-point-sandblast-mobile---new-mobile-threat-defense-partner-----954651-1172027---"></a>Check Point SandBlast Mobile - 新移动威胁防御伙伴<!-- 954651, 1172027 -->
+可根据 Check Point SandBlast Mobile 给出的风险评估，使用条件访问控制移动设备对公司资源的访问，Check Point SandBlast Mobile 是与 Microsoft Intune 集成的移动威胁防御解决方案。
+
+#### <a name="how-integration-with-intune-works"></a>与 Intune 的集成是如何发挥作用的？
+基于从运行 Check Point SandBlast Mobile 的设备收集的遥测评估风险。 可基于通过 Intune 设备符合性策略启用的 Check Point SandBlast Mobile 风险评估配置 EMS 条件访问策略。 根据检测到的威胁，可允许或阻止不符合的设备访问企业资源。
+
+
+### <a name="deploy-an-app-as-available-in-the-microsoft-store-for-business----748101---"></a>将应用部署为在适用于企业的 Microsoft 应用商店中可用<!-- 748101 -->
+通过此版本，管理员现可将适用于企业的 Microsoft 应用商店分配为可用。 设置为可用时，最终用户可安装来自公司门户应用或网站的应用，而无需重定向到 Microsoft 应用商店。
+
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-1--"></a>公司门户网站的用户界面更新 <!--1313244 part 1-->
+我们对[公司门户网站](https://portal.manage.microsoft.com)的用户界面进行了几项更新，目的是增强最终用户体验。
+
+- __对应用磁贴的改进__：应用图标现在显示时将具有基于图标主导颜色（如果可检测到）自动生成的背景色。 适用时，此背景会替代以前应用磁贴上显示的灰色边框。
+
+    在即将发布的版本中，公司门户网站会尽可能显示大图标。 建议 IT 管理员使用像素大小不低于 120 x120 的高分辨率图标发布应用。 
+
+- __导航更改__：导航栏项已移至左上角的汉堡菜单。 已删除“类别”页面。 用户现在可在浏览时按类别筛选内容。
+
+- __对精选应用的更新__：我们在网站中添加了一个专用页面，用户可在其中浏览精选的应用，还可以对主页的“精选”部分做出一些用户界面调整。
+
+### <a name="ibooks-support-for-the-company-portal-website---1231841--"></a>针对公司门户网站的 iBooks 支持<!--1231841-->
+我们已向公司门户网站添加了一个专用页面，允许用户浏览和下载 iBooks。 
+
+
+### <a name="additional-help-desk-troubleshooting-details------applies-to-1263399-1326964-1341642----"></a>有关支持人员故障排除的其他详细信息 <!---  Applies to 1263399, 1326964, 1341642 --->
+Intune 更新了故障排除的显示内容，并添加了提供给管理人员和支持人员的信息。 现在用户可以看到一个“分配”表，表中按组成员身份汇总了针对用户的所有分配。 此列表包括：
+- 移动应用
+- 相容性策略
+- 配置文件
+ 
+此外，“设备”表格现包括“Azure AD 联接类型”和“Azure AD 符合性”列。 有关详细信息，请参阅[帮助用户解决问题](help-desk-operators.md)。
+
+
+
+### <a name="intune-data-warehouse-public-preview"></a>Intune 数据仓库（公共预览版）
+Intune 数据仓库每天对数据进行采样，提供租户的历史视图。 可使用 Power BI 文件 (PBIX) 访问数据，该文件是一个 OData 链接，可与许多分析工具兼容或与 REST API 交互。 有关详细信息，请参阅[使用 Intune 数据仓库](reports-nav-create-intune-reports.md)。
+
+
+### <a name="light-and-dark-modes-available-for-the-company-portal-app-for-windows-10----676547---"></a>适用于 Windows 10 公司门户应用的浅色和深色模式<!---676547--->
+最终用户将能够为 Windows 10 公司门户应用自定义颜色模式。 用户能够在公司门户应用的“设置”部分进行更改。 更改将在用户重启应用后显示。 对于 Windows 10 版本 1607 及更高版本，应用模式将默认为系统设置。 对于 Windows 10 版本 1511 及更早版本，应用模式将默认为浅色模式。
+
+### <a name="enable-end-users-to-tag-their-device-group-in-the-company-portal-app-for-windows-10----807046--"></a>让最终用户能够在 Windows 10 公司门户应用中标记其设备组<!---807046-->
+最终用户现在能够选择其设备所属的组，方法是直接从 Windows 10 公司门户应用中标记该组。
+
+
 
 ## <a name="june-2017"></a>2017 年 6 月
 
@@ -383,53 +451,3 @@ Intune 将所有新设备都标记为个人所有，除非 IT 管理员将设备
 Windows 即服务是为 Windows 10 提供更新的新方式。 从 Windows 10 开始，任何新的功能更新和质量更新都将包含所有此前更新的内容。 这意味着，只要安装了最新更新，你的 Windows 10 设备将完全保持最新状态。 与以前版本的 Windows 不同的是，现在必须安装完整的更新，而不是部分更新。
 
 借助 Windows Update for Business 可以简化更新管理体验，不需要批准设备组的单个更新。 通过配置更新推出策略仍可以管理环境中的风险，并且 Windows 更新将确保在适当的时间安装更新。 Microsoft Intune 提供在设备上配置更新设置的功能，使你能够延迟更新安装。 Intune 不会存储更新，仅存储更新策略分配。 设备直接访问 Windows 更新以进行更新。使用 Intune 来配置和管理 **Windows 10 更新通道**。 更新通道包含一组设置，可配置何时以及如何安装 Windows 10 更新。 有关详细信息，请参阅[配置 Windows Update for Business 设置](windows-update-for-business-configure.md)。
-
-## <a name="january-2017"></a>2017 年 1 月
-
-### <a name="assign-line-of-business-apps-whether-or-not-devices-are-enrolled---748823--"></a>分配业务线应用（无论设备是否注册）<!--748823-->
-现在，无论用户的设备是否已注册 Intune，都可以从应用商店向用户分配业务线和应用。 如果用户设备未注册 Intune，他们必须转到公司门户网站（而非公司门户应用）安装它。 请参阅[什么是应用管理](app-management.md)。
-
-### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>解决 iOS 设备处于非活动状态，或管理控制台不能与其通信的问题
-如果用户的设备失去与 Intune 的联系，可向其提供新的故障排除步骤，帮助他们重新获得公司资源的访问权限。 请参阅[设备处于非活动状态，或管理控制台不能与其通信](enrollment-troubleshoot.md#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)。
-
-## <a name="december-2016-initial-release"></a>2016 年 12 月（初始版本）
-
-### <a name="telecom-expense-management-integration-in-azure-portal--747605--"></a>Azure 门户中的电信支出管理集成<!--747605-->
-现在，我们将开始在 Azure 门户中预览与第三方电信费用管理 (TEM) 服务的集成。 可以使用 Intune 强制实施对国内和漫游数据使用的限制。 我们将使用 [Saaswedo](http://www.saaswedo.com) 开始这些集成。 若要在试用租户中启用此功能，请[联系 Microsoft 支持](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)。
-
-- 将应用从应用商店部署到 iOS、Android 和 Windows 设备并对其进行管理
-- 将业务线 (LOB) 应用部署到 iOS、Android 和 Windows 设备并对其进行管理
-- 将批量购买应用部署到 iOS 和 Windows 设备并对其进行管理
-- 部署和管理适用于 Android、iOS 和 Windows 设备的 Web 应用
-- iOS 托管应用配置描述文件
-- 配置应用保护策略，并将业务线应用部署到未向 Intune 注册的设备
-- VPN 配置文件、每个应用 VPN、Wi-Fi、电子邮件和证书配置文件
-- 相容性策略
-- Azure AD 的条件性访问
-- 本地 Exchange 的条件性访问
-- 设备注册
-- 基于角色的访问控制
-
-## <a name="deprecated-features-in-the-azure-portal"></a>Azure 门户中的弃用功能
-
-### <a name="support-for-row-by-row-review-of-hardware-identifiers"></a>支持逐行查看硬件标识符
-对于 IMEI 号码和 Apple 序列号，Azure 门户不支持逐行查看硬件标识符。 在经典 Intune 控制台中，可以从逗号分隔值 (.csv) 文件导入详细信息，然后覆盖单个硬件标识符的现有详细信息。 Azure 门户提供一种单一、简化的选项，此选项可自动覆盖所有硬件标识符的详细信息，或忽略现有标识符的新详细信息。
-
-#### <a name="how-this-affects-you"></a>此更改的影响
-在 Azure 门户中，你将无法逐行决定要更新哪些国际移动设备标识 (IMEI) 设备。 经典 Intune 控制台将继续支持此功能。
-
-#### <a name="how-to-get-ready-for-this-change"></a>如何针对此更改做好准备
-我们提前提供此信息，如果此更改将对你产生影响，你可以提醒支持管理员注意。 预计在 2017 年上半年向 Azure 门户迁移时将继续使用此更改。
-
-
-### <a name="support-for-default-corporate-device-enrollment-profiles-in-apple-dep"></a>支持 Apple DEP 中默认的企业设备注册配置文件
-Azure 门户不支持 Apple 设备注册计划 (DEP) 设备序列号的“默认”公司设备注册配置文件。 经典 Intune 控制台中提供的此功能将停用，以防止无意中分配配置文件。 在 Azure 门户中，从 Apple DEP 帐户同步的序列号最初将不会分配公司设备注册配置文件。
-
-#### <a name="how-this-affects-you"></a>此更改的影响
-在 Azure 门户中，你将无法跨所有 Apple 设备设置默认配置文件策略。 经典 Intune 控制台将继续支持此功能。
-
-#### <a name="how-to-get-ready-for-this-change"></a>如何针对此更改做好准备
-我们提前提供此信息，如果此更改将对你产生影响，你可以提醒支持管理员注意。 预计在 2017 年上半年向 Azure 门户迁移时将继续使用此更改。
-
-### <a name="see-also"></a>另请参阅
-有关最近开发的详细信息，请参阅 [Microsoft Intune 中的新增功能](whats-new.md)。

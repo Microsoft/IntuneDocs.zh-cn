@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
-ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
+ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>使用疑难解答门户帮助用户
 
@@ -29,7 +29,6 @@ ms.lasthandoff: 08/12/2017
 例如，当用户就 Intune 技术问题联系支持人员时，技术支持人员会输入该用户的名字。 Intune 可显示有助于解决许多第 1 层问题的有用数据，包括：
 - 用户状态
 - 分配
-- 应用安装失败
 - 合规性问题
 - 设备未响应
 -   设备不具有 VPN 或 Wi-fi 设置
