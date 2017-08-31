@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户之间的通信以及用于支持部署的已创建的任何更新自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
 
+## <a name="week-of-august-21-2017"></a>含 2017 年 8 月 21 日的那周
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>“Intune 移动应用管理”(MAM) 对话框将具有新式界面<!-- 1199015 -->
+
+更新后，“Intune 移动应用管理”(MAM) 对话框将具有新式外观和体验。 对话框功能与以前相同。
+
+之前的体验
+
+![旧界面](media\NewUI_Old_AttachFileHandler.jpg)
+
+新式体验
+
+![新式界面](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>含 2017 年 8 月 14 日的那周
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>适用于 Windows 10 的公司门户应用上“设备详细信息”页的更新
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>适用于 Windows 10 的公司门户应用上“设备详细信息”页的更新<!---1287448--->
 
 适用于 Windows 10 的公司门户应用将标题下的“类别”标签移动至“设备详细信息”页上的一个属性。
 
 ![适用于 Windows 的公司门户应用的“设备详细信息”屏幕，现在“类别”字段显示为一个属性，而不是直接显示在屏幕标题的下方。](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日的这一周
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>应用详细信息页显示 Android 设备的新信息<!--1287476-->
+
+Android 版“公司门户”应用的应用详细信息页现在会显示 IT 管理员为该应用定义的应用类别。
+
+![新的应用详细信息页](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ __从其他设备登录时的新登录体验__
 
 ## <a name="week-of-june-5-2017"></a>2017 年 6 月 5 日的这一周
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>对适用于 iOS 的公司门户应用中应用磁贴的改进
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>对适用于 iOS 的公司门户应用中应用磁贴的改进<!--1230777-->
 我们更新了主页上的应用磁贴设计，以反映你为公司门户设置的品牌颜色。
 
 **之前**

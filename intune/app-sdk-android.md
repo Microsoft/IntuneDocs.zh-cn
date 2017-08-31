@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -597,7 +597,7 @@ Result getRegisteredAccountStatus(String upn);
 
 * 如果应用未返回有效的 AAD 令牌，则注册尝试的最终结果将是 `AUTHENTICATION_NEEDED`。 如果应用通过通知收到此结果，它可以通过获取 **MAMService 令牌**并调用 `updateToken()` 方法重新启动注册过程来加快注册过程。 但是，因为 SDK 会定期重试注册并调用回调来获取令牌，所以这并_非_硬性要求。
 
-* 还将调用应用的已注册 `MAMServiceAuthenticationCallback` 来获取令牌，以定期进行应用保护策略刷新签入。 如果应用在请求时不能提供令牌，它将不会收到通知，但它应尝试获取令牌并在下次方便的时候调用 `updateToken()`，以加快签入过程。 如果未提供令牌，则仍将在尝试下一次签入时调用回调。
+* 还将调用应用的已注册 `MAMServiceAuthenticationCallback` 来获取令牌，以定期进行应用保护策略刷新签入。如果应用在请求时不能提供令牌，它将不会收到通知，但它应尝试获取令牌并在下次方便的时候调用 `updateToken()`，以加快签入过程。 如果未提供令牌，则仍将在尝试下一次签入时调用回调。
 
 #### <a name="registration"></a>注册
 
@@ -663,6 +663,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
     ```xml
 android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
+
 
 2. **[可选]**如果实现可选的自定义 BackupAgent，则需要确保使用 MAMBackupAgent 或 MAMBackupAgentHelper。 请参阅以下部分。 考虑切换为使用 Intune 的 **MAMDefaultFullBackupAgent**（如步骤 1 中所述），它在 Android M 及更高版本上提供轻松备份。
 
@@ -1340,8 +1341,6 @@ public interface MAMAppConfig {
 
  Intune App SDK 中包括的 AndroidManifest.xml 文件包含 **MAMNotificationReceiverService**，它必须是导出的服务才能允许公司门户将通知发送到已启用应用。 服务会检查调用方以确保仅允许公司门户发送通知。
 
-
-
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK 使用者的期望
 
 Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实施而更频繁地触发失败条件。 这些 Android 最佳做法可减少发生失败的可能性：
@@ -1353,6 +1352,13 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 * 派生的任何函数都必须调用到其超类版本。
 
 * 避免以不明确的方式使用任何 API。 例如，使用 `Activity.startActivityForResult` 而不检查 requestCode 会导致奇怪的行为。
+
+## <a name="telemetry"></a>遥测技术
+
+Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，“公司门户”应用程序会记录以下使用情况事件的遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。
+
+> [!NOTE]
+> 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
 ## <a name="recommended-android-best-practices"></a>建议使用的 Android 最佳做法
 

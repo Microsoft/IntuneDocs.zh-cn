@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f28ce989b5907f7e7474543c364508424dc0c9cf
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 77f433037e4e576b29cf5800e9666008300ce568
+ms.sourcegitcommit: 3d1ec7a68977e6f5727821366ffd25657b459818
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/26/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -32,98 +32,65 @@ ms.lasthandoff: 08/21/2017
 
 
 <!-- Common categories:  
-  ### Role-based access control
   ### Device enrollment
   ### Device management
   ### App management
   ### Device configuration
+  ### Role-based access control
   ### Intune apps
+  ### Monitor and troubleshoot
+
 -->   
 
 
 ## <a name="week-of-august-21-2017"></a>含 2017 年 8 月 21 日的那周
+
+### <a name="device-enrollment"></a>设备注册
+#### <a name="improvements-to-device-overview----1404453---"></a>设备概述改进<!-- 1404453 -->  
+设备概述改进现在显示已注册设备，但不包含由 Exchange ActiveSync 管理的设备。 Exchange ActiveSync 设备没有与已注册设备相同的管理选项。 要在 Azure 门户的 Intune 中查看已注册设备数和各平台的已注册设备数，请转到“设备” > “概述”。
+
+### <a name="device-management"></a>设备管理
+#### <a name="improvements-to-device-inventory-collected-by-intune"></a>Intune 所收集设备清单的改进
+<!-- 961134, 1104426, 1281327, 1333543 -->
+此版本中，我们对由你管理的设备收集的清单信息做出了以下改进：
+ 
+-   对于 Android 设备，现在可向设备清单添加一列，显示每个设备的最新修补程序级别。 将“安全修补程序级别”列添加到设备列表可查看此项。
+-   筛选设备视图时，现在可按设备注册日期筛选设备。 例如，可仅显示于指定日期后注册的设备。
+-   我们已对“上次签入日期”项所用的筛选器做出了一些改进。
+-   在设备列表中，现在可显示公司拥有设备的电话号码。
+此外，还可使用筛选器窗格按电话号码搜索设备。
+ 
+有关设备清单的详细信息，请参阅[如何查看 Intune 设备清单](device-inventory.md)。
+
+#### <a name="conditional-access-support-for-mac-devices"></a>对 Mac 设备的条件访问支持 
+<!-- 720172 -->
+现在可设置一个条件访问策略，要求 Mac 设备注册 Intune 且符合其设备符合性策略。 例如，用户可以下载适用于 macOS 的 Intune 公司门户应用并向 Intune 注册其 Mac 设备。 Intune 会评估 Mac 设备是否符合 PIN、加密、OS 版本和系统完整性等要求。
+
+#### <a name="new-device-restriction-settings-for-windows-10"></a>适用于 Windows 10 的 Intune 新设备限制设置    
+<!--1063965, 1308850  -->
+在此版本中，我们为 [Windows 10 设备限制配置文件](/intune/device-restrictions-windows-10)添加了新设置，类别如下：
+
+-   Windows Defender SmartScreen
+-   App Store
+
+#### <a name="updates-to-the-windows-10-endpoint-protection-device-profile-for-bitlocker-settings"></a>更新至 Windows 10 终结点保护设备配置文件以应用 BitLocker 设置
+<!--1459533 -->    
+此版本中，我们已对 BitLocker 设置在 Windows 10 终结点保护设备配置文件中的作用方式做出如下改进：
+ 
+在“Bitlocker OS 驱动器设置”下，对于“包含非兼容 TPM 芯片的 BitLocker”设置，选择“阻止”后，以前这会导致实际上允许 BitLocker 的问题。 我们已修复此问题，在选中“阻止”后会阻止 BitLocker。
+在“Bitlocker OS 驱动器设置”下，对于“基于证书的数据恢复代理”设置，现在可显式阻止基于证书的数据恢复代理。 但是，默认情况下允许此代理。
+在“BitLocker 固定数据驱动器设置”下，对于“数据恢复代理”设置，现在可显式阻止数据恢复代理。
+有关详细信息，请参阅[适用于 Windows 10 及更高版本的 Endpoint Protection 设置](endpoint-protection-windows-10.md)。
+
+
 ### <a name="app-management"></a>应用管理
 #### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android 公司门户用户和应用保护策略用户的新登录体验 <!-- 621669 -->
-
 最终用户现在可以在不注册 Android 设备的情况下，使用 Android 公司门户应用浏览应用、管理设备以及查看 IT 联系人信息。 此外，如果最终用户已使用受 Intune 应用保护策略保护的应用，并启动了 Android 公司门户，最终用户不会再接收到注册设备的提示。
 
-## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日的这一周
-### <a name="device-enrollment"></a>设备注册  
-
-#### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version------1333256--1245463----"></a>按 OS 版本限制 Android 和 iOS 设备注册 <!--- 1333256,  1245463 --->
-Intune 现在支持按操作系统版本号限制 iOS 和 Android 注册。 在“设备类型限制”下，IT 管理员现可设置平台配置，限制最低和最高操作系统值之间的注册。 Android 操作系统版本必须指定为 Major.Minor.Build.Rev，其中 Minor、Build 和 Rev 是可选的。 iOS 版本必须指定为 Major.Minor.Build，其中 Minor 和 Build 是可选的。 详细了解[设备注册限制](enrollment-restrictions-set.md)。
-
->[!NOTE]
->请勿通过 Apple 注册计划或 Apple Configurator 限制注册。
-
-#### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment------1333272--1333275-1245709----"></a>限制 Android、iOS 和 macOS 设备的个人私有设备注册<!--- 1333272,  1333275, 1245709 --->
-Intune 可通过将企业设备 IMEI 号码列入允许列表来限制个人设备注册。 Intune 现已使用设备序列号将此功能扩展到 iOS、Android 和 macOS。 通过将序列号上传到 Intune，可将设备预声明为企业所有的设备。 使用注册限制，可以阻止私人拥有的设备 (BYOD)，仅允许企业所有的设备进行注册。 详细了解[设备注册限制](enrollment-restrictions-set.md)。
-
-若要导入序列号，请转至“设备注册” > “公司设备标识符”，单击“添加”，然后上传一个 CSV 文件（无标头，含两列，分别是序列号和详细信息，如 IMEI 号）。  若要限制私人拥有的设备，请转到“设备注册” > “注册限制”。 在“设备类型限制”下，选择“默认”，然后选择“平台配置”。 可以针对 iOS、Android 和 macOS“允许”或“阻止”私人拥有的设备。 
-
-
-### <a name="device-management"></a>设备管理   
-
-#### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>用于强制设备与 Intune 同步的新设备操作 <!-- 711369 -->
-在此版本中，我们添加了一个新的设备操作，可强制所选设备立即通过 Intune 签入。 当设备签入时，该设备会立即收到已分配给自己的任何挂起的操作或策略。  此操作可帮助立即验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
-有关详细信息，请参阅[同步设备](device-sync.md)
-
-#### <a name="force-supervised-ios-devices-to-automatically-install-the-latest-available-software-update----777100---"></a>强制受监视的 iOS 设备自动安装可用的最新软件更新 <!-- 777100 -->
-软件更新工作区推出了一项新策略，可在该工作区中强制受监视的 iOS 设备自动安装可用的最新软件更新。 有关详细信息，请参阅[配置 iOS 更新策略](/intune/software-updates-ios)
-
-#### <a name="check-point-sandblast-mobile---new-mobile-threat-defense-partner-----954651-1172027---"></a>Check Point SandBlast Mobile - 新移动威胁防御伙伴<!-- 954651, 1172027 -->
-可根据 Check Point SandBlast Mobile 给出的风险评估，使用条件访问控制移动设备对公司资源的访问，Check Point SandBlast Mobile 是与 Microsoft Intune 集成的移动威胁防御解决方案。
-
-##### <a name="how-integration-with-intune-works"></a>与 Intune 的集成是如何发挥作用的？
-基于从运行 Check Point SandBlast Mobile 的设备收集的遥测评估风险。 可基于通过 Intune 设备符合性策略启用的 Check Point SandBlast Mobile 风险评估配置 EMS 条件访问策略。 根据检测到的威胁，可允许或阻止不符合的设备访问企业资源。
-
-
-### <a name="app-management"></a>应用管理
-
-#### <a name="deploy-an-app-as-available-in-the-microsoft-store-for-business----748101---"></a>将应用部署为在适用于企业的 Microsoft 应用商店中可用<!-- 748101 -->
-通过此版本，管理员现可将适用于企业的 Microsoft 应用商店分配为可用。 设置为可用时，最终用户可安装来自公司门户应用或网站的应用，而无需重定向到 Microsoft 应用商店。
-
-
-### <a name="intune-apps"></a>Intune 应用  
-
-#### <a name="ui-updates-to-the-company-portal-website---1313244-part-1--"></a>公司门户网站的用户界面更新 <!--1313244 part 1-->
-我们对[公司门户网站](https://portal.manage.microsoft.com)的用户界面进行了几项更新，目的是增强最终用户体验。
-
-- __对应用磁贴的改进__：应用图标现在显示时将具有基于图标主导颜色（如果可检测到）自动生成的背景色。 适用时，此背景会替代以前应用磁贴上显示的灰色边框。
-
-    在即将发布的版本中，公司门户网站会尽可能显示大图标。 建议 IT 管理员使用像素大小不低于 120 x120 的高分辨率图标发布应用。 
-
-- __导航更改__：导航栏项已移至左上角的汉堡菜单。 已删除“类别”页面。 用户现在可在浏览时按类别筛选内容。
-
-- __对精选应用的更新__：我们在网站中添加了一个专用页面，用户可在其中浏览精选的应用，还可以对主页的“精选”部分做出一些用户界面调整。
-
-#### <a name="ibooks-support-for-the-company-portal-website---1231841--"></a>针对公司门户网站的 iBooks 支持<!--1231841-->
-我们已向公司门户网站添加了一个专用页面，允许用户浏览和下载 iBooks。 
-
-### <a name="monitor-and-troubleshoot"></a>监视和故障排除
-
-#### <a name="additional-help-desk-troubleshooting-details------applies-to-1263399-1326964-1341642----"></a>有关支持人员故障排除的其他详细信息 <!---  Applies to 1263399, 1326964, 1341642 --->
+#### <a name="multi-identity-support-for-onenote-for-ios---------1234281---"></a>对适用于 iOS 的 OneNote 的多身份支持<!-- 1234281 -->
+最终用户现在可对适用于 iOS 的 Microsoft OneNote 使用不同的帐户（工作帐户和个人帐户）。 应用保护策略可应用到工作笔记本中的公司数据，而不会影响个人笔记本。 例如，可通过应用策略允许用户查找工作笔记本中的信息，但阻止用户将工作笔记本中的公司数据复制粘贴到个人笔记本。
  
-Intune 更新了故障排除的显示内容，并添加了提供给管理人员和支持人员的信息。 现在用户可以看到一个“分配”表，表中按组成员身份汇总了针对用户的所有分配。 此列表包括：
-- 移动应用
-- 相容性策略
-- 配置文件
- 
-此外，“设备”表格现包括“Azure AD 联接类型”和“Azure AD 符合性”列。 有关详细信息，请参阅[帮助用户解决问题](help-desk-operators.md)。
-
-### <a name="reporting"></a>报表
-
-#### <a name="intune-data-warehouse-public-preview"></a>Intune 数据仓库（公共预览版）
-
-Intune 数据仓库每天对数据进行采样，提供租户的历史视图。 可使用 Power BI 文件 (PBIX) 访问数据，该文件是一个 OData 链接，可与许多分析工具兼容或与 REST API 交互。 有关详细信息，请参阅[使用 Intune 数据仓库](reports-nav-create-intune-reports.md)。
-
-## <a name="week-of-july-23rd-2017"></a>2017 年 7 月 23 日的这一周
-
-### <a name="light-and-dark-modes-available-for-the-company-portal-app-for-windows-10----676547---"></a>适用于 Windows 10 公司门户应用的浅色和深色模式<!---676547--->
-最终用户将能够为 Windows 10 公司门户应用自定义颜色模式。 用户能够在公司门户应用的“设置”部分进行更改。 更改将在用户重启应用后显示。 对于 Windows 10 版本 1607 及更高版本，应用模式将默认为系统设置。 对于 Windows 10 版本 1511 及更早版本，应用模式将默认为浅色模式。
-
-### <a name="enable-end-users-to-tag-their-device-group-in-the-company-portal-app-for-windows-10----807046--"></a>让最终用户能够在 Windows 10 公司门户应用中标记其设备组<!---807046-->
-最终用户现在能够选择其设备所属的组，方法是直接从 Windows 10 公司门户应用中标记该组。
+- 详细了解支持 Intune 的[应用保护和多身份](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的应用。
 
 
 
@@ -134,7 +101,7 @@ Intune 数据仓库每天对数据进行采样，提供租户的历史视图。 
 [更新后的 DNS 名称和 IP 地址列表](/intune/network-bandwidth-use)可用于防火墙代理设置。
 
 ### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>使用 Azure Active Directory 进行条件性访问 <!-- 967947 -->
-条件性访问位于 Azure 控制台的 Azure Active Directory 部分，可为云应用（例如 Office 365 Exchange Online 和 SharePoint Online ）的设置策略提供更强大和更灵活的框架。  使用“Azure Active Directory 中的条件访问”边栏选项卡（而非经典 Intune 控制台）配置策略。 需要在 Azure 控制台中重新创建经典 Intune 控制台中的现有策略。 有关详细信息，请参阅[创建 Azure AD 条件性访问策略](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview)
+条件性访问位于 Azure 控制台的 Azure Active Directory 部分，可为云应用（例如 Office 365 Exchange Online 和 SharePoint Online ）的设置策略提供更强大和更灵活的框架。  使用“Azure Active Directory 中的条件访问”边栏选项卡（而非经典 Intune 控制台）配置策略。 需要在 Azure 控制台中重新创建经典 Intune 控制台中的现有策略。 有关详细信息，请参阅[创建 Azure AD 条件访问策略](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview)。
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接访问 Apple 注册方案<!--951869-->
 对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，仅能通过经典 Intune 门户中的链接访问 Apple 注册预览版。 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的这些功能。 迁移的计划目前尚未公布，但详细信息将尽快发布。 强烈建议创建一个试用帐户，在现有帐户无法访问 Azure 门户时测试新体验。

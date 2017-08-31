@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>使用设备注册管理器注册设备
 
@@ -40,9 +40,9 @@ ms.lasthandoff: 07/01/2017
 
 DEM 用户可以：
 
--   在 Intune 中最多注册 1000 台设备。
--   登录到公司门户以获得公司应用。
--   通过向平板电脑部署特定于角色的应用来配置对公司数据的访问权限。
+-   在 Intune 中最多注册 1000 台设备
+-   登录到公司门户以获得公司应用
+-   通过向平板电脑部署特定于角色的应用来配置对公司数据的访问权限
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>使用 DEM 帐户注册的设备限制
 

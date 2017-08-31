@@ -14,35 +14,35 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8b218ce38a7e76135a62b1155dbf9060ba511cc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2394068c43e652accfb428ff644229f794d33f24
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
-# <a name="prepare-line-of-business-apps-for-mam"></a>准备适用于 MAM 的业务线应用
+# <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-可以使用 Intune 应用包装工具或 Intune App SDK 启用应用以使用移动应用程序管理 (MAM) 策略。 通过此信息了解这两种方式以及何时使用这两种方式。
+可以使用 Intune 应用包装工具或 Intune App SDK 来支持应用使用应用保护策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune 应用包装工具
-应用包装工具主要用于内部业务线 (LOB) 应用。 此工具是一个命令行应用程序。它可以在应用周围创建包装器，之后包装器将允许 Intune MAM 策略管理该应用。
+应用包装工具主要用于内部业务线 (LOB) 应用。 此工具是一个命令行应用程序。它可以在应用周围创建包装器，之后包装器将允许 Intune 应用保护策略管理该应用。
 
-使用此工具不需要源代码，但需要签名凭据。  有关签名凭据的详细信息，请参阅 [Intune 博客](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。 有关应用包装工具文档的信息，请参阅 [Android 应用包装工具](app-wrapper-prepare-android.md) 和 [iOS 应用包装工具](app-wrapper-prepare-ios.md)。
+使用此工具不需要源代码，但需要签名凭据。 有关签名凭据的详细信息，请参阅 [Intune 博客](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。 有关应用包装工具文档的信息，请参阅 [Android 应用包装工具](app-wrapper-prepare-android.md) 和 [iOS 应用包装工具](app-wrapper-prepare-ios.md)。
 
 应用包装工具**不**支持 Apple App Store 或 Google Play 商店中的应用。 也不支持某些需要开发人员集成的功能（请参阅以下功能对照表）。
 
 
-有关未在 Intune 中注册的设备上的 MAM 应用包装工具的详细信息，请参阅[保护未在 Microsoft Intune 上注册的设备上的业务线应用及数据](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)。
+有关未在 Intune 中注册的设备上的应用保护策略应用包装工具的详细信息，请参阅[保护未在 Microsoft Intune 中注册的设备上的业务线应用及数据](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)。
 
-### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用应用包装工具的原因：
-* 应用未内置数据保护功能。
-* 应用非常简单。
-* 应用在内部部署。
+### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用应用包装工具的原因
+* 应用未内置数据保护功能
+* 应用非常简单
+* 应用是在内部部署的
 * 无权访问应用的源代码。
-* 未开发应用。
-* 应用包含最少的用户身份验证体验。
+* 未开发应用
+* 应用包含最少的用户身份验证体验
 
 
 ### <a name="supported-app-development-platforms"></a>受支持的应用开发平台
@@ -58,12 +58,12 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 若要了解有关 SDK 的详细信息，请参阅[概述](app-sdk.md)。 若要开始使用 SDK，请参阅 [Microsoft Intune App SDK 入门](app-sdk-get-started.md)。
 
 ### <a name="reasons-to-use-the-sdk"></a>使用 SDK 的原因
-* 应用未内置数据保护功能。
-* 应用复杂且包含许多体验。
-* 应用部署在 Google Play 或 Apple App Store 等公共应用商店中。
-* 自己是应用开发者，拥有使用 SDK 的技术背景。
-* 应用具有其他 SDK 集成。
-* 应用频繁更新。
+* 应用未内置数据保护功能
+* 应用复杂且包含许多体验
+* 应用部署在 Google Play 商店或 Apple App Store 等公共应用商店中
+* 自己是应用开发者，拥有使用 SDK 的技术背景
+* 应用具有其他 SDK 集成
+* 应用频繁更新
 
 ### <a name="supported-app-development-platforms"></a>受支持的应用开发平台
 
@@ -84,7 +84,7 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |阻止 Android、iTunes 或 iCloud 备份|X|X|
 |允许应用向其他应用传送数据|X|X|
 |允许应用从其他应用接收数据|X|X|
-|限制剪切、复制和粘贴到其他应用程序|X|X|
+|限制使用其他应用剪切、复制和粘贴|X|X|
 |访问需要简单 PIN|X|X|
 |使用 Intune PIN 替换内置应用 PIN|X||
 |指定重置 PIN 前的尝试次数|X|X|
@@ -102,8 +102,10 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |目标应用程序配置 |X||
 |支持多身份标识|X||
 |可自定义样式 |X|||
-### <a name="see-also"></a>另请参阅
+## <a name="next-steps"></a>后续步骤
 
-[Android 应用包装工具](app-wrapper-prepare-android.md)</br>
-[iOS 应用包装工具](app-wrapper-prepare-ios.md)</br>
-[使用 SDK 启用针对移动应用程序管理的应用](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+要详细了解应用保护策略和 Intune，请参阅以下主题：
+
+  -  [Android 应用包装工具](app-wrapper-prepare-android.md)</br>
+  - [iOS 应用包装工具](app-wrapper-prepare-ios.md)</br>
+  - [使用 SDK 启用针对移动应用程序管理的应用](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

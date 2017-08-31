@@ -4,7 +4,7 @@ description: "Intune 应用 SDK 适用于 iOS 和 Android 平台，并允许通�
 keywords: 
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a9b0c398c4b6dd46823ceaaefd68ee193ab4502
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概述
 Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用保护策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 你会发现你可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用我们的 API 针对需要应用参与的功能来自定义应用行为。
@@ -62,8 +62,7 @@ IT 管理员可以要求用户使用其工作或学校帐户登录以访问该�
 ### <a name="app-protection-without-device-enrollment"></a>无需设备注册的应用保护
 
 >[!IMPORTANT]
->Intune App SDK for Android 尚不提供无需设备注册的 Intune 应用保护。 这一功能可通过 Intune 应用包装工具、SDK for iOS、SDK Xamarin 组件和 SDK Cordova 插件来实现。
-
+>Intune 应用包装工具、Intune App SDK for Android、Intune App SDK for iOS、SDK Xamarin 组件和 SDK Cordova 插件提供无需设备注册的 Intune 应用保护。
 
 许多用户使用个人设备，他们希望在不为其个人设备注册移动设备管理 (MDM) 提供程序的情况下访问公司数据。 由于 MDM 注册要求对设备的全局控制权，而用户对于将其个人设备的控制权交给公司有所顾虑。
 
