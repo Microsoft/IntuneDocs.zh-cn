@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4994656afcf1cdb97fdcd3877f6dabdadfb7d374
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f38320ca84a734f645c3d8554c5aef53836fd1be
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 10 及更高版本的 Endpoint Protection 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-通过 Endpoint Protection 配置文件可以控制 Windows 10 设备上的安全功能（如 BitLocker）。
+通过 Endpoint Protection 配置文件可以控制 Windows 10 设备上的安全功能（如 BitLocker 和 Windows Defender）。
 
 使用本主题中的信息，了解如何创建 Endpoint Protection 配置文件。
 
@@ -38,13 +38,18 @@ ms.lasthandoff: 07/01/2017
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入设备功能配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择“Windows 10 及更高版本”。
-6. 在“配置文件类型”下拉列表中，选择“Endpoint Protection”。 
+6. 在“配置文件类型”下拉列表中，选择“Endpoint Protection”。
 7. 在“Windows 加密”边栏选项卡上，配置所需的设置。 使用本主题中的详细信息可帮助了解每个设置的作用。 完成后，请选择“确定”。
 8. 返回到“创建配置文件”边栏选项卡，然后选择“创建”。
 
 系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
 
-## <a name="endpoint-protection-profile-settings-reference"></a>Endpoint Protection 配置文件设置参考
+## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen 设置
+
+- **用于应用和文件的 SmartScreen** - 支持 Windows SmartScreen 用于执行文件和运行应用。
+- **未经验证的文件执行** - 阻止最终用户运行尚未经 Windows SmartScreen 验证的文件。
+
+## <a name="windows-encryption-settings"></a>Windows 加密设置
 
 ### <a name="windows-settings"></a>Windows 设置
 
@@ -62,16 +67,16 @@ ms.lasthandoff: 07/01/2017
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker OS 驱动器设置
 
-- “在启动时需要额外身份验证” - 
-    - “在没有兼容的 TPM 芯片的设备上阻止 BitLocker” - 
-    - “TPM 启动”- 配置是允许、不允许还是必须要求 TPM 芯片。 
-    - “TPM 启动 PIN”- 配置是允许、不允许还是必须要求使用带 TPM 芯片的启动 PIN。 
-    - “TPM 启动密钥”- 配置是允许、不允许还是必须要求使用带 TPM 芯片的启动密钥。 
+- “在启动时需要额外身份验证” -
+    - 包含非兼容 TPM 芯片的 BitLocker -
+    - “TPM 启动”- 配置是允许、不允许还是必须要求 TPM 芯片。
+    - “TPM 启动 PIN”- 配置是允许、不允许还是必须要求使用带 TPM 芯片的启动 PIN。
+    - “TPM 启动密钥”- 配置是允许、不允许还是必须要求使用带 TPM 芯片的启动密钥。
     - “TPM 启动密钥和 PIN”- 配置是允许、不允许还是必须要求使用带 TPM 芯片的启动密钥和 PIN。
 - “最小 PIN 长度”- 启用此设置以配置 TPM 启动 PIN 的最小长度。
     - “最少字符数”- 输入启动 PIN 所需的字符数（介于 **4**-**20**）。
 - “启用 OS 驱动器恢复”- 启用此设置以控制在所需启动信息不可用时如何恢复受 BitLocker 保护的操作系统驱动器。
-    - “允许基于证书的数据恢复代理”- 如果希望数据恢复代理能够用于受 BitLocker 保护的操作系统驱动器，则启用此设置。
+    - “基于证书的数据恢复代理”- 如果希望数据恢复代理能够用于受 BitLocker 保护的操作系统驱动器，则启用此设置。
     - “用户创建恢复密码”- 配置是允许、不允许还是要求用户生成 48 位数的恢复密码。
     - “用户创建恢复密钥”- 配置是允许、不允许还是要求用户生成 256 位数的恢复密钥。
     - “隐藏 BitLocker 安装向导中的恢复选项”- 启用此设置以防止用户在打开 BitLocker 时看到或更改恢复选项。
@@ -92,7 +97,7 @@ ms.lasthandoff: 07/01/2017
 
 - “拒绝对不受 BitLocker 保护的固定数据驱动器进行写入访问”- 如果启用，则必须在所有固定或内置数据驱动器上启用 BitLocker 保护，才能写入它们。
 - “启用固定驱动器恢复”- 启用此设置以控制在所需启动信息不可用时如何恢复受 BitLocker 保护的固定驱动器。
-    - “允许据恢复代理”- 如果希望数据恢复代理可用于受 BitLocker 保护的固定驱动器，则启用此设置。
+    - “据恢复代理”- 如果希望数据恢复代理可用于受 BitLocker 保护的固定驱动器，则启用此设置。
     - “用户创建恢复密码”- 配置是允许、不允许还是要求用户生成 48 位数的恢复密码。  
     - “用户创建恢复密钥”- 配置是允许、不允许还是要求用户生成 256 位数的恢复密钥。
     - “隐藏 BitLocker 安装向导中的恢复选项”- 启用此设置以防止用户在打开 BitLocker 时看到或更改恢复选项。
@@ -113,5 +118,3 @@ ms.lasthandoff: 07/01/2017
 ## <a name="next-steps"></a>后续步骤
 
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
-
-

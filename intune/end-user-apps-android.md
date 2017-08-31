@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 用户如何获取其应用
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 08/21/2017
 
 应用可以是托管应用，也可以是非托管应用，如下所述。 托管应用的过程对于所有类型的 Android 设备都是相同的。
 
-**托管应用** - 这些是可以通过策略管理的应用。 它们由 Intune“包装”或使用 Intune 移动应用程序管理 (MAM) 软件开发工具包 (SDK) 构建。 这些应用可以由 Intune 进行管理，应用程序策略可以应用于它们。
+**托管应用** - 这些是可以通过策略管理的应用。 它们已由 Intune“包装”或通过 Intune App SDK 生成。 这些应用可以由 Intune 进行管理，应用程序策略可以应用于它们。
 
-**非托管应用** - 这些是无法通过策略管理的应用。 它们未由 Intune 包装或未包含 Intune MAM SDK。 应用程序策略不能应用于这些应用。
+**非托管应用** - 这些是无法通过策略管理的应用。 它们未由 Intune 包装或不包含 Intune App SDK。 应用程序策略不能应用于这些应用。
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 添加应用](apps-add.md)

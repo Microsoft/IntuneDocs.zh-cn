@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: e0bbbdfae73dfd843f4b011cecf0217d2c6eb699
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 08/08/2017
 -   **在系统卷上安装应用数据** - 阻止应用在设备的系统卷上存储数据。
 -   **在系统驱动器上安装应用** - 阻止应用在设备的系统驱动器上存储数据。
 -   **游戏 DVR（仅限桌面版）**- 配置是否允许游戏的录制和广播。
--   仅限来自应用商店的应用 - 配置用户是否可以安装应用商店以外位置的应用。
+-   **仅限来自应用商店的应用** - 配置用户是否可以安装应用商店以外位置的应用。
 
 
 

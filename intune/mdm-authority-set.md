@@ -6,20 +6,20 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 4eb211fdeb8c51b67edc08f956c99c2af8319679
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>设置移动设备管理机构
 
@@ -41,13 +41,13 @@ ms.lasthandoff: 08/21/2017
 ## <a name="set-mdm-authority-to-intune"></a>将 MDM 机构设置为 Intune
 
 1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”[](https://portal.azure.com)。
-2. 在“Intune”边栏选项卡上，选择“设备注册”，然后选择“概述”。
-![Intune 移动设备管理机构设置屏幕的屏幕截图](media/set-mdm-auth.png)
-
+2. 选择橙色横幅，打开“移动设备管理机构”设置。
 3. 在“移动设备管理机构”下，从以下选项中选择你的 MDM 机构：
   - Intune MDM 机构
   - Configuration Manager MDM 机构
   - **无**
+
+  ![Intune 移动设备管理机构设置屏幕的屏幕截图](media/set-mdm-auth.png)
 
   将出现一条消息，表明已成功将 MDM 机构设置为 Intune。
 

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02d7dfd2331db232269869fd941b687465f8221
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: be626985a020d518bd4285a4d0b280c6c66932a6
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建和分配 Exchange 本地和旧版 Exchange Online Dedicated 的条件访问策略
 
@@ -122,11 +122,7 @@ Windows 8.1 和更高版本上的本机**邮件**应用程序（向 Intune 注�
 
 1. 在“Intune 仪表板”中，选择“条件访问”。
 
-2. 在“条件访问仪表板”中，选择“Azure Active Directory 中的条件访问”。
-
-3. 选择“新建策略”以创建新的 Azure AD 条件访问策略。
-
-    ![Azure AD 条件访问策略](./media/Azure-AD-CA-Intune.png)
+2. 在“策略”边栏选项卡中，选择“新建策略”，创建新的 Azure AD 条件访问策略。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 08/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: ae92a75958abdc97d781c5b518d70a4e54f4939a
+ms.sourcegitcommit: b5d7442e03d9727793acd1a1dd946779dbe9218d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/22/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在已监督 iOS 设备上启用激活锁定
 
@@ -58,8 +58,8 @@ Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定�
 必须先按照以下说明在设备上启用“激活锁”，然后才能绕过它：
 
 1. 使用[如何配置设备限制设置](/intune-azure/configure-devices/how-to-configure-device-restrictions)中的信息为 iOS 配置 Intune 设备限制配置文件。
-2. 启用“展台”模式设置“激活锁定”。
-3. 保存配置文件，然后将其分配到要管理“绕过激活锁定”的设备。
+2. 在 [iOS 的设备限制设置](device-restrictions-ios.md)中，在“常规”设置下启用“激活锁”选项。
+3. 保存配置文件，然后将其[分配](device-profile-assign.md)到要管理“绕过激活锁”的设备。
 
 
 ## <a name="how-to-use-activation-lock-bypass"></a>如何使用绕过激活锁定

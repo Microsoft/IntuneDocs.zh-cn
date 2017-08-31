@@ -14,11 +14,11 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0061d4ecd8d71f8b7363193e36b838741aa56a92
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 72291be81df5e0358c9477a2749fb7d9d7cb8fdc
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 用户如何获取其应用
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 07/01/2017
 
 **可用应用** -- 在公司门户应用列表中提供的应用和用户可以根据需要选择安装的应用。
 
-**托管应用** -- 可以通过策略管理并且由 Intune“包装”或使用 Intune 移动应用管理 (MAM) 软件开发工具包 (SDK) 构建的应用。 这些应用可以由 Intune 进行管理，应用程序策略可以应用于它们。
+**托管应用** - 可通过策略管理，并由 Intune“包装”或使用 Intune 应用软件开发工具包 (SDK) 生成的应用。 这些应用可以由 Intune 进行管理，应用保护策略可以应用于它们。
 
-**非托管应用** -- 可以通过策略管理并且未由 Intune 包装或未包含 Intune MAM SDK 的应用。 应用程序策略不能应用于这些应用。
+**非托管应用** - 可通过策略管理，并且未由 Intune 包装或不包含 Intune App SDK 的应用。 应用程序策略不能应用于这些应用。
 
 Apple 限制禁止公司门户应用列出业务线应用和托管应用商店应用。 要解决这一问题，用户可根据 iOS 公司门户应用中磁贴的指示，在同一位置（公司门户网站）切换到其他视图，以查看所有应用。
 

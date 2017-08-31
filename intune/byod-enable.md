@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>通过 Intune 实现 BYOD
 
@@ -44,18 +44,18 @@ ms.lasthandoff: 08/08/2017
 
 Intune 服务准备就绪后，需要满足要管理的不同设备类型的各种注册需求。 这时，注册设备进行管理的过程就非常直接了，但注册过程因设备类型而略有不同。
 
--   iOS 和 Mac 设备 - 注册 iPad、iPhone 或 MacOS 设备需要[获取 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)。 将 MDM Push Certificate 上传到 Intune 后，用户可使用公司门户应用[注册 iOS 设备](/intune-user-help/enroll-your-device-in-intune-ios)，并使用公司门户网站[注册 MacOS 设备](/intune-user-help/enroll-your-device-in-intune-macos)。
+-   **iOS 和 Mac 设备** 注册 iPad、iPhone 或 macOS 设备需要[获取 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)。 将 MDM Push Certificate 上传到 Intune 后，用户可使用公司门户应用[注册 iOS 设备](/intune-user-help/enroll-your-device-in-intune-ios)，并使用公司门户网站[注册 macOS 设备](/intune-user-help/enroll-your-device-in-intune-macos)。
 
 -   Android 设备 - 将 Intune 服务注册到 Android 设备无需任何准备工作。 用户可使用 Google Play 提供的公司门户应用[将 Android 设备注册](/intune-user-help/enroll-your-device-in-intune-android)到管理。
 
--   Windows Phone 和电脑 - 可使用其他配置注册 Windows 设备。 若要简化用户体验，可为使用 Azure Active Directory (AD) Premium 的 Windows 10 电脑和 Windows 10 移动设备启用自动注册。 如果没有 Azure AD Premium 或者需要支持 Windows 8.1，则可以创建[注册服务器的 DNS 别名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)来简化注册过程。
+-   Windows Phone 和电脑 - 可使用其他配置注册 Windows 设备。 要简化最终用户体验，可为使用 Azure Active Directory (AD) Premium 的 Windows 10 电脑和 Windows 10 移动设备启用自动注册。 如果没有 Azure AD Premium 或者需要支持 Windows 8.1，则可以创建[注册服务器的 DNS 别名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)来简化注册过程。
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>确保托管设备符合基本安全要求
 
 用户将设备注册到管理后，IT 需要确保用于访问公司应用和数据的设备符合基本安全要求。 这些规则可能包括使用 PIN 访问设备和加密存储在设备上的数据。 一组这样的规则就称为[合规性策略](device-compliance.md)。
 
-向用户[部署符合性策略](device-compliance-get-started.md)时，Intune 将检查由它管理的所有用户设备，查看其是否满足定义为 BYOD 策略一部分的基本安全要求。 对设备进行策略符合性评估后，系统会将其状态报告回 Intune。 在某些情况下，系统可能要求用户修复设置，例如 PIN 或设备加密。 其他情况下，公司门户应用仅会通知用户任何与策略不符的设置。
+向用户[部署符合性策略](device-compliance-get-started.md)时，Intune 会检查该用户通过 Intune 管理的每个设备，查看设备是否满足在 BYOD 策略中定义的基本安全要求。 对设备进行策略符合性评估后，系统会将其状态报告回 Intune。 在某些情况下，系统可能要求用户修复设置，例如 PIN 或设备加密。 其他情况下，公司门户应用仅会通知用户任何与策略不符的设置。
 
 ## <a name="provide-access-to-company-resources"></a>提供对公司资源的访问
 
@@ -86,7 +86,7 @@ Intune 服务准备就绪后，需要满足要管理的不同设备类型的各�
 
 ## <a name="protect-company-data"></a>保护公司数据
 
-Intune 通过多个技术层保护公司数据。 在标识层上，条件访问可保护对服务的访问。 条件访问仅允许托管设备和合规设备访问公司资源。 在客户端应用程序层上，移动应用管理 (MAM) 可防止数据丢失。  应用保护策略可防止数据移动到不受保护的应用或存储位置。 借助这些策略，还可在设备丢失或被盗时擦除公司数据。
+Intune 通过多个技术层保护公司数据。 在标识层上，条件访问可保护对服务的访问。 条件访问仅允许托管设备和合规设备访问公司资源。 在客户端应用层上，应用保护策略可防止数据丢失。 应用保护策略可防止数据移动到不受保护的应用或存储位置。 借助这些策略，还可在设备丢失或被盗时擦除公司数据。
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>强制执行对公司资源的条件访问
 
@@ -97,17 +97,17 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > 如果用于验证合规性的合规性策略未准备就绪，则无法使用条件访问策略。
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>使用应用程序保护策略防止公司数据丢失
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>使用应用保护策略防止公司数据丢失
 
-利用 Intune 应用程序保护策略，可选择访问数据的方式（无论设备注册与否）。 这种多功能性可以保护公司数据，即使用户没有在 Intune 中注册其设备，也能安全地访问公司数据。
+利用 Intune 应用保护策略，可选择访问数据的方式（无论设备注册与否）。 这种多功能性可以保护公司数据，即使用户没有在 Intune 中注册其设备，也能安全地访问公司数据。
 
-可使用 [Intune 应用保护策略](app-protection-policies.md)帮助保护由用户的 iOS 和 Android 设备访问的公司数据。 使用这些应用级策略时，即使设备本身不受 Intune 管理，你也可以控制员工使用和共享公司数据的方式
+可使用 [Intune 应用保护策略](app-protection-policies.md)帮助保护通过 iOS 和 Android 设备访问的公司数据。 使用这些应用级策略时，即使设备本身不受 Intune 管理，你也可以控制员工使用和共享公司数据的方式
 
-使用 [Windows 信息保护 (WIP) 策略](app-protection-policies-configure-windows-10.md)对托管的 Windows 10 设备可执行相同操作。 这些策略不会影响员工体验。 无需更改网络环境或其他应用。
+可使用 [Windows 信息保护 (WIP)](app-protection-policies-configure-windows-10.md) 对托管的 Windows 10 设备执行相同操作。 这些策略不会影响员工体验。 无需更改网络环境或其他应用。
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>在完整保留个人数据的同时，删除公司数据
 
-如果不再需要某设备用于办公、设备改变用途或丢失，则可以从此设备删除公司的应用和数据。 为此，可使用 Intune 的删除公司数据和恢复出厂设置功能。 用户也可从 Intune 公司门户远程重置注册到 Intune 的自有设备。
+如果不再需要某设备用于办公、设备改变用途或丢失，可以从其中删除公司的应用和数据。 为此，可使用 Intune 的删除公司数据和恢复出厂设置功能。 用户也可从 Intune 公司门户远程重置注册到 Intune 的自有设备。
 
 [恢复出厂设置](devices-wipe.md)会将设备还原为出厂默认设置，删除用户数据和设置，并从 Intune 管理中删除该设备。 [删除公司数据](devices-wipe.md#remove-company-data)仅删除设备上的公司数据，但会完整保留用户的个人数据。
 
