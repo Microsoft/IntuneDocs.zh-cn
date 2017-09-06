@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61bdbc7ca68995e23295cf099ce73dfdcaeba37c
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 8bae9bd48493f20bb4abb94290013f27a6a75dd6
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
 
@@ -32,7 +32,19 @@ Intune 启用了 iPad 和 iPhone 的移动设备管理 (MDM)，以允许用户�
 - [设置 Intune](setup-steps.md) - 这些步骤用于设置 Intune 基础结构。 具体而言，设备注册需要用户[设置 MDM 机构](mdm-authority-set.md)。
 - [获取 Apple MDM 推送证书](apple-mdm-push-certificate-get.md) - Apple 需要证书才能启用 iOS 和 macOS 设备的管理。
 
-在完成这些先决条件后，用户就可以安装公司门户应用来注册其个人的 iOS 设备，或者管理员可以设置企业自有的 iOS 设备管理。 管理员还可以分配[设备注册管理员](device-enrollment-manager-enroll.md)，这些管理员可以使用单个管理帐户注册多个设备。 Intune 支持以下公司自有的 iOS 设备注册方法：
+## <a name="user-owned-ios-devices-byod"></a>用户拥有的 iOS 设备 (BYOD)
+
+可以让用户注册其个人设备用于 Intune 管理，这称为“自带设备办公”或 BYOD。 完成先决条件并分配用户许可证后，用户便可从 App Store 下载适用于 iOS 的公司门户应用，然后按照应用中的注册说明进行操作。
+
+## <a name="company-owned-ios-devices"></a>公司拥有的 iOS 设备
+对于为用户购买设备的组织，Intune 还支持以下公司自有的 iOS 设备注册方法：
+
+- Apple 设备注册计划 (DEP)
+- Apple School Manager
+- Apple Configurator 设置助理注册
+- Apple Configurator 直接注册
+
+还可使用[设备注册管理器](device-enrollment-manager-enroll.md)帐户注册公司自有的 iOS 设备。
 
 ## <a name="device-enrollment-program"></a>设备注册程序
 组织可以通过 Apple 的设备注册计划 (DEP) 购买 iOS 设备。 DEP 允许用户通过“无线方式”部署注册配置文件以对设备进行管理。 详细了解[设备注册计划](device-enrollment-program-enroll-ios.md)。

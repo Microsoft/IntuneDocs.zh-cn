@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户之间的通信以及用于支持部署的已创建的任何更新自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+
+## <a name="week-of-august-28-2017"></a>含 2017 年 8 月 28 日的那周
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 邮件应用将支持 OAuth<!---1196951--->
+
+在使用 OAuth 的 iOS 设备上，使用 Intune 的条件访问支持更安全的身份验证。 为支持此功能，适用于 iOS 的公司门户应用上现在有一个不同的流，允许更安全的身份验证。 如果最终用户在邮件应用中尝试登录新的 Exchange 帐户，将会看到一个 Web 视图提示。 在 Intune 中注册后，用户会看到提示，要求允许本机邮件应用访问证书。 大多数最终用户不会再看到隔离电子邮件。 现有邮件帐户会继续使用基本身份验证协议，因此仍会收到隔离电子邮件。 最终用户的这种登录体验与 Office 移动应用的登录体验类似。
+
+![选择本机邮件应用中的帐户类型。](./media/ios-11-ca-email-after-1708-01.png)
+
+![选择 Exchange 后，iOS 设备提示输入电子邮件地址和帐户名。](./media/ios-11-ca-email-after-1708-02.png)
+
+![提供电子邮件地址和帐户名。](./media/ios-11-ca-email-after-1708-03.png)
+
+![已发送到外部 Microsoft 登录页。](./media/ios-11-ca-email-after-1708-04.png)
+
+![在 Microsoft 页提供密码。](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft 提示用户向管理系统注册设备。](./media/ios-11-ca-email-after-1708-06.png)
+
+![系统会提示用户从公司门户网站进行注册。](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>含 2017 年 8 月 21 日的那周
 
@@ -31,11 +52,11 @@ ms.lasthandoff: 08/25/2017
 
 之前的体验
 
-![旧界面](media\NewUI_Old_AttachFileHandler.jpg)
+![旧界面](./media/NewUI_Old_AttachFileHandler.jpg)
 
 新式体验
 
-![新式界面](media\NewUI_Modern_AttachFileHandler.jpg)
+![新式界面](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>含 2017 年 8 月 14 日的那周
