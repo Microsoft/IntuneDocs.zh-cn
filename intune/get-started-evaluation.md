@@ -1,10 +1,10 @@
 ---
 title: "Intune 入门"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "通过一系列简短的实操练习了解 Intune。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5dc7a76ddac12dd3e002c8780541d3dd4e976896
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: abfd1c1a05ce0eac3e6ab835d6ac8b017c9a6d77
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 可以为公司带来什么好处？
 
@@ -27,7 +27,7 @@ Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮助员工提
 
 ![Microsoft Intune 的高级体系结构图表](/intune/media/intunearchitecture.svg)
 
-我们了解移动设备管理的最初阶段并不容易，因为你需要代表公司做出各种不同的决策。 这些练习将演示一些任务，帮助你了解如何利用 Intune 来保护公司资源。 
+我们了解移动设备管理的最初阶段并不容易，因为你需要代表公司做出各种不同的决策。 这些练习将演示一些任务，帮助你了解如何利用 Intune 来保护公司资源。
 
 ## <a name="what-are-the-exercises"></a>有哪些练习？
 

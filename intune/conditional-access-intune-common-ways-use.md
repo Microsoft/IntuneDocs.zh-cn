@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 的条件访问"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "通过 Intune 使用条件性访问的常见方式"
 keywords: 
 author: andredm7
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ba1f12d762a6288fc2e7a3bfdae637f8ae13a94
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a75cf12fb1e03873d4ef3307e9c377ab6df6b75a
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件性访问的常见方式
 

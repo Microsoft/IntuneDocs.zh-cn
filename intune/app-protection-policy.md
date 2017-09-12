@@ -1,6 +1,6 @@
 ---
 title: "什么是应用保护策略"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "通过本主题来了解如何使用 Microsoft Intune 应用保护策略保护公司数据。"
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a776de8a27c5fc7b1c472df067610ba7140b07b
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 48294a922e191fa570c39d3e0de815b695506709
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 

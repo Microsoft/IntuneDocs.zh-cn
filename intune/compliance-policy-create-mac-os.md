@@ -1,6 +1,6 @@
 ---
 title: "如何创建 macOS 符合性策略"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何创建 macOS 设备符合性策略。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0c6e3c3f8e31d9ac6d42c3a2c519836dee186f0b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>使用 Intune 创建适用于 macOS 设备（预览）的设备符合性策略
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 08/03/2017
 
 - **最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 用户可以选择升级其设备。 然后可访问公司资源。
 
-- **最高操作系统版本**：设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。 除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
+- **最高操作系统版本**：设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
 ### <a name="system-security-settings"></a>系统安全设置
 

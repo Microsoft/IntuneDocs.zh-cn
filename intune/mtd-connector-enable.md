@@ -1,6 +1,6 @@
 ---
 title: "通过 Intune 启用移动威胁防御连接器"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "在 Intune 中启用移动威胁防御连接器。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5dfef35c9f2d2fa543d8b19c2566b25d47b8f72
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 3ed7ac5467fe3a37a133aac61a9ccffe2e6119e6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>在 Intune 中启用移动威胁防御
 

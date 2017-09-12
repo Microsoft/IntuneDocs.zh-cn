@@ -1,6 +1,6 @@
 ---
 title: "适用于 iOS 的 Intune 设备限制设置"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解可用来控制 iOS 设备上的设备设置和功能的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eec078fa0ddc0414b2912e3df841841d96b2e79e
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 10b27d6fc806ab2565631353761ed1c31795610d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备限制设置
 

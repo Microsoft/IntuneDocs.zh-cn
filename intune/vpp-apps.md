@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 管理批量购买的应用和书籍"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用 Intune 管理和监视在应用商店批量购买的应用和书籍的使用情况。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fced0a52db719fe2228d6cd91786b7de8f539f57
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 76f6cedf638a5e1957a35da584ecf275afd7cd17
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>使用 Microsoft Intune 管理批量购买的应用和书籍
 

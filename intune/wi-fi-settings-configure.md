@@ -1,6 +1,6 @@
 ---
 title: "如何配置 Intune Wi-Fi 设置"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何使用 Intune 来配置你所管设备上的 Wi-Fi 连接。"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2c2417c4739a85c30fa18c000ee06fac6fe83282
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 

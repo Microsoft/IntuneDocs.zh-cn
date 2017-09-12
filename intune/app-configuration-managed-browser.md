@@ -1,6 +1,6 @@
 ---
 title: "使用 Managed Browser 应用管理 Web 访问"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "部署 Managed Browser 应用程序，以限制 Web 浏览和到其他应用的 Web 数据传输。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 4f8534b51c89cd8dedc674468c5299b79a29f608
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -113,7 +113,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>如何配置 Managed Browser 的主页
 
-使用此设置可配置用户启动 Managed Browser 或创建新选项卡时看到的主页。 使用创建 Managed Browser 应用配置的过程提供以下键值对：
+使用此设置可配置用户启动 Managed Browser 或创建新选项卡时看到的主页。使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
 |||
 |-|-|

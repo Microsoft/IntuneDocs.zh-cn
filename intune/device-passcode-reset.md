@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 重置设备密码"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何重置使用 Intune 管理的设备密码。"
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30fac990d8b4a0a088180598e7787e23b1f708b7
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 7a292342000a4f60455aa44202a1bf0493ae66f0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>重置受 Intune 管理的设备密码
 

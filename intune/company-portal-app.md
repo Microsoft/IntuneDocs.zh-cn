@@ -1,6 +1,6 @@
 ---
 title: "如何配置公司门户应用"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何将特定于公司的品牌应用到 Intune 公司门户应用。 \""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 118e842c40574a0858f6b8071fd9c0c8db5cb3a3
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 303d4a4cbce9d63abc0809a27ae1e22dcd1e195b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/15/2017
 
 |字段名称|最大长度|更多信息|        
 |-|-|-|     
-|**支持网站 URL**|150|如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 **https://www.contoso.com** 格式。 如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。|        
+|**支持网站 URL**|150|如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 **https://www.contoso.com** 格式。如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。|        
 |**支持网站名称**|40|此名称是为支持网站的 URL 显示的友好名称。 如果指定支持网站 URL 而不指定友好名称，则公司门户中的“联系 IT 部门”页上将显示“转到 IT 网站”。       
 
 ## <a name="company-branding-customization"></a>公司品牌自定义       

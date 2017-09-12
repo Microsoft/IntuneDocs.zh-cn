@@ -1,6 +1,6 @@
 ---
 title: "设置电信费用管理服务"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "将 Saaswedo 电信支出管理服务配置为与 Intune 集成。"
 keywords: Saaswedo
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a868ce81e9d67e7c959e32eaf6d8c455a19131be
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]

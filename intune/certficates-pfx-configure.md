@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 配置和管理 PKCS 证书"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何配置基础结构，然后使用 Intune 创建并分配 PKCS 证书。"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1dff7d3e00b26b4f186beb71bacf13738ac857a3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>使用 Intune 配置和管理 PKCS 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
