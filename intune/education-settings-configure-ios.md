@@ -1,6 +1,6 @@
 ---
 title: "iOS Classroom 应用的 Intune设置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解可用于控制 iOS 设备上 Classroom 应用设置的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4188c3951c9cb864b77bde52a5d19f022f17c11c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1ea9c38fc7d2dd82171d4018cfe1048c8f139386
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何配置 iOS Classroom 应用的 Intune 设置
 

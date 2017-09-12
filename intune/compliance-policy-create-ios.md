@@ -1,6 +1,6 @@
 ---
 title: "如何创建 iOS 符合性策略"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何创建 iOS 设备符合性策略。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3b0fdb06b072c325d30b3e5ee72f1982c5f61849
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中创建适用于 iOS 设备的设备符合性策略
 
@@ -116,7 +116,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="device-properties"></a>设备属性
 
 - **所需的最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 用户可以选择升级其设备。 然后可访问公司资源。
-- **允许的最高操作系统版本**：设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。 除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
+- **允许的最高操作系统版本**：设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
 <!--- ## Next steps
 

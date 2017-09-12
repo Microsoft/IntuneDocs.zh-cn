@@ -1,6 +1,6 @@
 ---
 title: "网络访问控制与 Intune 集成"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "网络访问控制 (NAC) 与 Intune 集成"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15651b3f03959fd96edf1a585d0075204e35e61b
-ms.sourcegitcommit: ce49a5c50e0d1e377ecb94185c4e6ac450e4701d
+ms.openlocfilehash: 6d75d996f4166fb2a760d1ccb518ca7a228c1a0d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 

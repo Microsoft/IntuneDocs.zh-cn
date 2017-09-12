@@ -1,6 +1,6 @@
 ---
 title: "如何使用 Intune 分配设备配置文件"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "创建 Intune 设备配置文件后，请使用此主题了解如何将其分配给设备。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6bd6cb301491c031e382236eee509e17f08383
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 36b967ac740cc2f39d631c17556f73abb9f2f785
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-microsoft-intune-device-profiles"></a>如何分配 Microsoft Intune 设备配置文件
 

@@ -1,6 +1,6 @@
 ---
 title: "用于 Android 和 Android for Work 设备的电子邮件设置"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解可用于在 Android 设备上配置电子邮件连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1f80e09241609b420a186011ff8dd059f0dd8df
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 436db2f645a3f2e787cb27a8c110630a8fbb1f38
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的电子邮件配置文件设置
 

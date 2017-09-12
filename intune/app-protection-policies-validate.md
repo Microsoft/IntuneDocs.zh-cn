@@ -1,6 +1,6 @@
 ---
 title: "验证应用保护策略"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "本主题介绍如何测试和验证应用保护策略是否已正确设置并按预期方式工作。"
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28fcd15d2d2e11e4aa2ba6982fc3cb8567e56a31
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 0c97fbbffa416dce6b9aa8f56ecda7c265f377db
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>如何验证应用保护策略设置
 

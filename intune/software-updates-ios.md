@@ -1,6 +1,6 @@
 ---
 title: "配置 iOS 更新策略"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "为 iOS 配置更新策略，强制受监视的 iOS 设备自动安装可用的最新软件更新。"
 keywords: 
 author: dougeby
@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: d4af2d58ec21c54362cf451eac1a33b2088885d5
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: a119f00cc8a92aa6cf7a1009f910df817593e0e8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-ios-update-policies"></a>配置 iOS 更新策略
 通过 iOS 的更新策略，可强制受监视的 iOS 设备自动安装可用的最新软件更新。 可选择配置不希望设备安装更新的日期和时间。

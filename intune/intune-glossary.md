@@ -1,6 +1,6 @@
 ---
 title: "Intune 术语表"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "了解 Microsoft Intune 中使用的一些术语"
 keywords: 
 author: robstackmsft
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8eaf82e995e3b572d897b63aaf36480424603ce6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 08/03/2017
 ## <a name="i"></a>I
 |||
 |-|-|
-|Intune 门户|用于大多数 Intune 管理操作的 Azure 门户。|
+|Azure 门户|用于大多数 Intune 管理操作的 Azure 门户。|
 |Intune 软件客户端|[管理一些 Windows 电脑](/intune-classic/get-started/choose-how-to-manage-devices)的备用方法，有助于决定要使用哪种方法。|
 |Intune 软件发行者|使用此工具[定义想要部署的应用并将其上传至云存储空间](/intune-classic/deploy-use/add-apps)。|
 |库存|用于查看[管理的设备的硬件和安装的软件](/intune/device-inventory)。|

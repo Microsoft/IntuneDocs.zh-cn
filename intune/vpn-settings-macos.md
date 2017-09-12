@@ -1,6 +1,6 @@
 ---
 title: "适用于 macOS 设备的 Intune VPN 设置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解可用于在 macOS 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83e3776aacbddc37e5e7586d8fd7580143dead64
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3cb9d3eb3e1a52b8b68ddd1f12f7dad78e0a6329
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 macOS 设备的 VPN 设置
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 07/01/2017
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**
-    - **F5 Edge Client**
+    - ** F5 Edge Client**
     - **Pulse Secure**
     - **自定义 VPN**
 - “拆分隧道” - “启用”或“禁用”，此选项让设备根据流量确定使用哪个连接。 例如，旅馆中的用户使用 VPN 连接来访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。

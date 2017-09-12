@@ -1,6 +1,6 @@
 ---
 title: "适用于 iOS 设备的 Intune AirPlay 设置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用 Intune 来帮助 iOS 设备自动连接到与 AirPlay 兼容的设备。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e44c1d438fc5782d696cba0b39c3c4d65492096
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 03ecd2de215ff5b825dc8240d0b4f1bb77891d46
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune AirPlay 设置
 

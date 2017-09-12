@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 的条件访问"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何定义用户和设备在 Microsoft Intune 中访问公司资源必须满足的条件。"
 keywords: 
 author: andredm7
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f6f7443224b9ec114f0323d1715f343b0adfec4
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 970b84c51c994b5917a87992de2eae666c94c027
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="whats-conditional-access"></a>什么是条件性访问？
 

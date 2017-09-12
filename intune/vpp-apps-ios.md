@@ -1,6 +1,6 @@
 ---
 title: "管理批量购买的 iOS 应用"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何可以将从 iOS 应用商店批量购买的应用同步到 Intune 中，然后管理并跟踪其使用情况。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1433951e8c17ae226d37705223a80e2e79f7483b
-ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
+ms.openlocfilehash: addcc2c9a939b8dc62d708b3f9f000cb7c09cef3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 应用
 

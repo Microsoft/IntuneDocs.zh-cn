@@ -1,6 +1,6 @@
 ---
 title: "如何配置 Intune VPN 设置"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何使用 Intune 配置所管设备上的 VPN 连接。"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e6a59c1f5fcb94d427b6d12eef19d4d49ff930ce
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c894a0314af1967dce67a7ffc5b3279bff6125f4
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 VPN 设置
 

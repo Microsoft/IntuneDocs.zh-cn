@@ -1,6 +1,6 @@
 ---
 title: "如何在 Intune 中使用设备类别"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解如何使用用户在 Intune 中注册其设备时可以选择的设备类别。"
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 00becba338f9a64e341b0b6d220b1a4ace3b40a9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="map-device-groups"></a>映射设备组
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 08/09/2017
 
 若要继续，请参阅 Azure Active Directory 文档中的主题[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)。 
 
-按照本部分中的信息可使用 **deviceCategory** 属性创建具有高级规则的设备组。 例如 (**device.deviceCategory -eq** "*<the device category name you got from the Intune portal>*")
+按照本部分中的信息可使用 **deviceCategory** 属性创建具有高级规则的设备组。 例如 (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
 在你配置设备组且用户注册其设备后，他们将看到你配置的类别的列表。 用户选择某个类别并完成注册后，其设备将添加到与其选择的类别相对应的 Active Directory 安全组。
 
