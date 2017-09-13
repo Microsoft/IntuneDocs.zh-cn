@@ -1,12 +1,12 @@
 ---
 title: "查看 Intune 设备清单"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何查看使用 Intune 管理的设备，并了解其硬件和已安装的应用。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 45ef07d68248ab4c0c6f3a3e6e8da83cb210c5c7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>如果查看 Intune 设备清单
 
@@ -54,3 +54,4 @@ ms.lasthandoff: 07/12/2017
 
 >[!NOTE]
 > Intune 仅收集公司拥有的设备上的应用清单。 个人设备上的应用不会列入清单。 对于 Windows 10 电脑，仅收集公司拥有的设备上的新型应用清单。 Intune 不会收集设备上的 Win32 应用的相关信息。
+> 可能不会收集所有清单项，这取决于设备所用的运营商。
