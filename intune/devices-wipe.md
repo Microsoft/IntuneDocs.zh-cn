@@ -1,12 +1,12 @@
 ---
 title: "使用 Intune 恢复设备的出厂设置或删除设备上的公司数据"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何删除设备上的公司数据或将设备恢复出厂设置。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>通过恢复出厂设置或删除公司数据删除设备
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 08/10/2017
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>从 Azure Active Directory 门户删除设备
 
-由于通信问题或设备丢失，可能需要从 Azure Active Directory (AD) 删除设备。 删除命令不会从管理中删除设备，但可使用“删除”从 Azure 控制台删除已知道无法访问且不太可能再与 Azure 通信的设备记录。
+由于通信问题或设备丢失，可能需要从 Azure Active Directory (AD) 删除设备。 虽然删除命令不会从管理计划中删除设备，但可使用 Delete 从 Azure 门户中删除已知无法访问且不太可能再与 Azure 通信的设备记录。
 
 1.  使用管理员凭据登录 [Azure 门户中的 Azure Active Directory](http://aka.ms/accessaad)。 还可使用页面左侧的链接登录 [Office 365 门户](https://portal.office.com)，然后选择“管理员”&gt;“Azure AD”。
 3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不会要求提供信用卡或付款（请选择**注册免费的 Azure Active Directory**订阅链接）。

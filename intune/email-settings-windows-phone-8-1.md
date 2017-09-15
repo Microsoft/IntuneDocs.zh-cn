@@ -1,6 +1,6 @@
 ---
 title: "适用于 Windows Phone 8.1 的 Intune 电子邮件设置"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解可用于在 Windows Phone 8.1 设备上配置电子邮件连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
@@ -15,18 +15,18 @@ ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4925ceb1be344a12270ee40519096a62b1f0c739
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 611ef17c72e27a31360c3c9d75bb282fdb8388a9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows Phone 8.1 设备的电子邮件配置文件设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-- **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
+- **将所有设置仅应用于 Windows Phone 8.1** - 可以在 Intune 经典门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
 - **电子邮件服务器** - Exchange 服务器的主机名。
 - **帐户名称** - 电子邮件帐户的显示名称，它将显示在用户设备上。
 - **AAD 中的用户名属性** - 这是 Active Directory (AD) 或 Azure AD 中的属性，将用于生成此电子邮件配置文件的用户名。 选择“主 SMTP 地址”，例如 **user1@contoso.com**，或“用户主体名称”，例如 **user1** 或 **user1@contoso.com**。

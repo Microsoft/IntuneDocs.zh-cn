@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 将 Office 365 专业增强版应用安装到 Windows 10 设备"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用 Intune 更轻松地在 Windows 10 设备上安装 Office 365 应用。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: c3613c1e0482654d799329069f56ec0b0aac7772
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版 2016 应用分配到 Windows 10 设备
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 08/14/2017
 
 ## <a name="configure-app-information"></a>配置应用信息
 
-在此步骤中，提供有关该应用套件的信息。 此信息有助于在 Intune 控制台中识别该应用套件，而且还可以帮助最终用户在公司门户应用中找到它。
+在此步骤中，提供有关该应用套件的信息。 此信息有助于在 Intune 中识别它，也有助于用户在公司门户应用中找到它。
 
 1.  在“添加应用”边栏选项卡上，选择“应用套件信息”。
 2.  在“应用套件信息”边栏选项卡上，指定以下信息： 

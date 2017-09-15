@@ -1,6 +1,6 @@
 ---
 title: "在 Intune 中设置注册限制"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "按平台限制注册，并在 Intune 中设置设备注册限制。 \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>在 Intune 中添加组
 Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 Intune 管理员，可以设置适合组织需要的组。 创建组，以便按地理位置、部门或硬件特性来组织用户或设备。 使用组来管理大规模的任务。 例如，可设置用于大量用户的策略，或向一组设备部署应用。
@@ -33,8 +33,8 @@ Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 
 ## <a name="add-a-new-group"></a>添加新组
 
 使用以下步骤来创建新组。
-1. 在 Intune 门户中，转到“组”，然后在“所有组”边栏选项卡中选择“新建组”。
-  ![Intune 门户的屏幕截图，其中显示选中了“新建组”](./media/groups-add-new.png)
+1. 在 Azure 门户中，转到“组”，再选择“所有组”边栏选项卡中的“新建组”。
+  ![显示“新建组”已选择的 Azure 门户的屏幕截图](./media/groups-add-new.png)
 2. 指定此新组的“名称”和“说明”。 这些属性仅出现在管理门户中，并且不会向用户显示。
 
 3. 选择成员身份类型：

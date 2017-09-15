@@ -1,6 +1,6 @@
 ---
-title: "管理软件更新"
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "在 Intune 中配置 Windows Update for Business 设置"
+titleSuffix: Azure portal
 description: "了解如何在 Intune 中配置 Windows Update for Business 设置，以控制 Windows 10 设备的更新。"
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>管理软件更新
 
@@ -54,20 +54,20 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
     你可以手动配置此设置，也可以使用适用于 Windows 10 及更高版本的 Intune 设备限制配置文件。 为此，请将“**常规**” > “**诊断数据提交**”设置至少配置为“**基本**”。 有关设备配置文件的详细信息，请参阅[如何配置设备限制设置](device-restrictions-configure.md)。
 
-- 在经典 Intune 管理控制台中，有四个可控制软件更新行为的设置。 这些设置是 Windows 10 桌面设备和移动设备的常规配置策略的一部分：
+- 在 Intune 管理控制台中，有四个设置可控制软件更新行为。 这些设置是 Windows 10 桌面设备和移动设备的常规配置策略的一部分：
     - **允许自动更新**
     - **允许预发布功能**
     - **计划安装日期**
     - **计划安装时间**
 
-  经典控制台在设备配置文件中还具有数量有限的其他 Windows 10 更新设置。 在迁移到 Azure 门户时，如果在经典 Intune 管理控制台中配置了任意这些设置，强烈建议你执行以下操作：
+  经典门户在设备配置文件中也有数量有限的其他 Windows 10 更新设置。 在迁移到 Azure 门户时，如果在 Intune 管理控制台中配置了其中任何设置，强烈建议执行以下操作：
 
 1. 使用所需的设置在 Azure 门户中创建 Windows 10 更新通道。 Azure 门户不支持“**允许预发布的功能**”设置，因为它不再适用于最新的 Windows 10 版本。 创建更新通道时，可以配置其他三项设置，以及其他 Windows 10 更新设置。
 
   > [!NOTE]
-  > 迁移后，在经典控制台中创建的 Windows 10 更新设置不会显示在 Azure 门户中。 但是，可继续应用这些设置。 如果你已迁移任意这些设置并从 Azure 门户编辑迁移的策略，这些设置将从该策略中删除。
+  > 迁移后，在经典门户中创建的 Windows 10 更新设置不会显示在 Azure 门户中。 但是，可继续应用这些设置。 如果你已迁移任意这些设置并从 Azure 门户编辑迁移的策略，这些设置将从该策略中删除。
 
-2. 删除经典控制台中的更新设置。 迁移到 Azure 门户并将相同设置添加到更新通道后，必须删除经典门户中的设置，以避免任何潜在的策略冲突。 例如，使用不同的值配置相同的设置会导致冲突，并且没有可以了解这种情况的简单方法，因为在经典控制台中配置的设置不会显示在 Azure 门户中。
+2. 删除经典门户中的更新设置。 迁移到 Azure 门户并将相同设置添加到更新通道后，必须删除经典门户中的设置，以避免任何潜在的策略冲突。 例如，使用不同的值配置相同的设置会导致冲突，并且确定起来很难，因为在经典门户中配置的设置不会显示在 Azure 门户中。
 
 ## <a name="how-to-create-and-assign-update-rings"></a>如何创建并分配更新通道
 
@@ -80,7 +80,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 7. 在“**设置**”边栏选项卡上，配置以下信息：
     - **服务分支**：设置设备将接收 Windows 更新的分支（Current Branch 或 Current Branch for Business）。
     - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
-    -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
+    - ** Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延期期限（天）** - 指定质量更新延期的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 
@@ -118,7 +118,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 - **设置说明**：为 Windows Analytics 解决方案配置商业 ID
 - **数据类型**：字符串
 - **OMA-URI**（区分大小写）：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **值**：<*使用 OMS 工作空间中的 Windows 遥测选项卡上显示的 GUID* >
+- **值**：<*使用 OMS 工作空间中的 Windows 遥测选项卡上显示的 GUID *>
 
 ![诊断和使用情况数据的 Windows 设置](./media/commID.png)
 

@@ -1,12 +1,12 @@
 ---
 title: "适用于 Android 的 Intune 设备限制设置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解可用来控制 Android 设备上的设备设置和功能的 Intune 设置。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版设备限制设置
 
@@ -67,8 +67,8 @@ ms.lasthandoff: 08/08/2017
 <sup>1</sup> 向设备分配此设置之前，请确保将这些设备上的公司门户更新至最新版本。
 
 如果配置**数值复杂度**设置，然后将其分配到运行 5.0 之前的 Android 版本的设备，则适用以下行为。
-- 如果公司门户应用正在运行 1704 以前的版本，则不会向设备应用任何 PIN 策略，并将在 Intune 门户中显示错误。
-- 如果公司门户应用运行 1704 版本或更高版本，则只能应用简单的 PIN。 5.0 以前的 Android 版本不支持此设置。 在 Intune 门户中未显示错误。
+- 如果公司门户应用运行的版本低于 1704，则不会向设备应用任何 PIN 策略，并且 Azure 门户中会显示错误。
+- 如果公司门户应用运行 1704 版本或更高版本，则只能应用简单的 PIN。 5.0 以前的 Android 版本不支持此设置。 Azure 门户中没有显示错误。
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -79,7 +79,7 @@ ms.lasthandoff: 08/08/2017
 
 在受限制的应用列表中，你可以配置以下适用于 Android 和 Samsung KNOX 标准版设备的列表之一：
 
-**禁止的应用**列表 - 列出用户不得安装和运行的应用（未由 Intune 托管）。
+**禁止的应用**列表 - 列出如果用户安装和运行，就会被报告的应用（未受 Intune 管理）。
 **批准的应用**列表 - 列出允许用户安装的应用。 为了保持兼容性，用户不得安装其他应用。 自动允许由 Intune 托管的应用。
 必须将包含受限制的应用设置的设备配置文件分配到用户组。
 
@@ -107,6 +107,21 @@ ms.lasthandoff: 08/08/2017
 - Javascript（仅限 Samsung KNOX）- 允许设备 Web 浏览器运行 Java 脚本。
 - 弹出窗口（仅限 Samsung KNOX）- 允许使用 Web 浏览器中的弹出窗口阻止程序。
 
+## <a name="allow-or-block-apps"></a>允许或禁止应用
+
+这些设置可用于指定能够在仅运行 Samsung KNOX Standard 的设备上安装或启动的应用。
+此外，还可以指定设备用户看不到的已安装应用。 用户无法运行这些应用。
+
+- **可以安装的应用（仅限 Samsung KNOX Standard）**
+- **禁止启动的应用（仅限 Samsung KNOX Standard）**
+- **用户看不到的应用（仅限 Samsung KNOX Standard）**
+
+对于每个设置，使用下列项之一配置应用列表：
+
+- **按包名称添加应用** - 主要用于业务线应用。 输入应用和应用包的名称。 
+- **按 URL 添加应用** - 输入应用的名称及其在 Google Play 商店中的 URL。
+- **添加受管理应用** - 从 Intune 管理的应用列表中，选择所需的应用。
+
 ## <a name="cloud-and-storage"></a>云和存储
 
 - Google 备份（仅限 Samsung KNOX）- 允许使用 Google 备份。
@@ -127,9 +142,9 @@ ms.lasthandoff: 08/08/2017
 
 ## <a name="kiosk"></a>Kiosk
 
-站台设置仅适用于 Samsung KNOX 标准版设备。
+展台设置仅适用于 Samsung KNOX Standard 设备和 Intune 管理的应用。
 
-- 选择托管应用 - 选择以下选项之一，添加一个或多个当设备处于展台模式时可以运行的应用。 不允许在设备上运行其他应用。
+- **选择受管理应用** - 选择以下选项之一，添加一个或多个可以在设备处于展台模式时运行的受管理应用。 不允许在设备上运行其他应用。
     - 按包名称添加应用
     - 按 URL 添加应用
     - 添加托管应用。

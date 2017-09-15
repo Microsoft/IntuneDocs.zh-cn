@@ -1,7 +1,7 @@
 ---
 title: "在 Azure 中我的 Intune 功能处于哪个位置？"
-titleSuffix: Intune on Azure
-description: "帮助你在 Azure 控制台中找到 Intune 功能。"
+titlesuffix: Azure portal
+description: "有助于在 Azure 门户中找到 Intune 功能。”"
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
-我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 因此，我们创作了此参考指南，以满足那些非常熟悉经典控制台中的 Intune 并且想知道如何在 Azure 上的 Intune 中完成工作的用户。 如果本文未涵盖你正在查找的功能，请在文章末尾处留下评论，以便我们更新。
+我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 因此，我们编撰了本参考指南，以供非常熟悉经典门户中 Intune 且想知道如何使用 Azure 门户中 Intune 完成工作的用户阅读。 如果本文未涵盖你正在查找的功能，请在文章末尾处留下评论，以便我们更新。
 ## <a name="quick-reference-guide"></a>快速参考指南
-|功能 |经典控制台中的路径|Azure 上的 Intune 中的路径|
+|功能 |经典门户中的路径|Azure 门户中 Intune 内的路径|
 |------------|---------------|---------------|
 |设备注册计划 (DEP) |管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划|[设备注册 > Apple 注册 > 注册计划令牌](#where-did-apple-dep-go) |
 |设备注册计划 (DEP)| 管理员 > 移动设备管理 > iOS 和 Mac OS X > 设备注册计划 |[设备注册 > Apple 注册 > 注册计划序列号](#where-did-apple-dep-go) |
@@ -39,10 +39,10 @@ ms.lasthandoff: 08/03/2017
 
 
 ## <a name="where-do-i-manage-groups"></a>在哪个位置管理组？
-Azure 上的 Intune 使用[Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) 管理组。
+Azure 门户中 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) 管理组。
 
 ## <a name="where-did-enrollment-rules-go"></a>注册规则在处于哪个位置？
-在经典控制台中，你可以设置规则以管理移动和现代 Windows 和 macOS 设备的 MDM 注册：
+在经典门户中，可以设置规则来管理新式移动 Windows 和 macOS 设备的 MDM 注册：
 
 ![经典移动设备注册规则的图像](./media/01-classic-rules.png)
 
@@ -50,11 +50,11 @@ Azure 上的 Intune 使用[Azure Active Directory (AD)](https://docs.microsoft.c
 
 ![Azure 移动设备注册限制的图像](./media/02-azure-enroll-restrictions.png)
 
-默认设备限制对应于经典控制台中的设备注册限制：
+默认的“设备限制”对应于经典门户中的“设备注册限制”：
 
 ![Azure 设备限制的图像](./media/03-azure-device-limit.png)
 
-默认设备类型限制对应于经典控制台中的平台限制：
+默认的“设备类型限制”对应于经典门户中的“平台限制”：
 
 ![Azure 设备类型限制的图像](./media/04-azure-platform-restrictions.png)
 
@@ -65,7 +65,7 @@ Azure 上的 Intune 使用[Azure Active Directory (AD)](https://docs.microsoft.c
 新的限制功能将仅添加到 Azure 门户。
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 处于哪个位置？
-在经典控制台中，你可以将 Intune 设置为与 Apple 设备注册计划进行集成，并手动请求与 Apple 的服务同步：
+在经典门户中，可以将 Intune 设置为与 Apple 设备注册计划进行集成，并手动请求与 Apple 服务同步：
 
 ![经典 DEP 令牌的图像](./media/06-classic-dep-token.png)
 
@@ -73,13 +73,13 @@ Azure 上的 Intune 使用[Azure Active Directory (AD)](https://docs.microsoft.c
 
 ![Azure DEP 令牌的图像](./media/07-azure-dep-token.png)
 
-但是，经典控制台中的“同步”选项已移至序列号管理工作流，因为手动同步的结果将显示于此处：
+不过，经典门户中的“同步”选项已移至序列号管理工作流，因为其中将显示手动同步结果：
 
 ![Azure DEP 同步的图像](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>企业预注册设备处于哪个位置？
 ### <a name="by-ios-serial-number"></a>按 iOS 序列号排列
-在经典控制台中，你可以通过 Apple 设备注册计划 (DEP) 和 Apple 配置器工具注册 iOS 设备。 这两种方法都按序列号提供设备预注册，并且设计分配特殊企业设备注册的配置文件。 注册之前，可以通过“按 iOS 序列号排列的企业预注册设备”设备组管理注册配置文件的分配：
+在经典门户中，可以通过 Apple 设备注册计划 (DEP) 和 Apple 配置器工具注册 iOS 设备。 这两种方法都按序列号提供设备预注册，并且设计分配特殊企业设备注册的配置文件。 注册之前，可以通过“按 iOS 序列号排列的企业预注册设备”设备组管理注册配置文件的分配：
 
 ![经典 Apple 序列号的图像](./media/09-classic-apple-serials.png)
 
@@ -93,18 +93,18 @@ Azure 上的 Intune 使用[Azure Active Directory (AD)](https://docs.microsoft.c
 
 ### <a name="by-imei-all-platforms"></a>按 IMEI 排列（所有平台）
 
-在经典控制台中，可以预先列出设备的 IMEI 号码，以便在注册到 Intune 时将其标记为企业：
+在经典门户中，可以预先列出设备的 IMEI 号码，以便在注册到 Intune 时将它们标记为公司设备：
 
 ![IMEI 号码经典列表的图像](./media/12-classic-corp-imei.png)
 
-在 Azure 控制台中，必须使用逗号分隔值 (csv) 文件将相同的 IMEI 上传到公司设备标识符列表。 新门户不支持手动输入 IMEI 号码：
+在 Azure 门户中，必须使用逗号分隔值 (csv) 文件，将相同的 IMEI 上传到公司设备标识符列表。 新门户不支持手动输入 IMEI 号码：
 
 ![IMEI 号码 Azure 列表的图像](./media/13-azure-corp-imei.png)
 
 除了 IMEI，Azure 门户中的 Intune 还会适应未来，支持其他类型的标识符，但目前只允许预先列出 IMEI号码。
 
 ## <a name="where-did-corporate-device-enrollment-profiles-go"></a>公司设备注册配置文件处于哪个位置？
-若要通过 Apple 设备注册计划或 Apple 配置器工具注册 iOS 设备，则必须提供要分配给设备的公司设备注册配置文件。 在经典控制台中，这些配置文件的创建和管理位于单个列表中：
+若要通过 Apple 设备注册计划或 Apple 配置器工具注册 iOS 设备，则必须提供要分配给设备的公司设备注册配置文件。 在经典门户中，这些配置文件是在一个列表中进行创建和管理：
 
 ![经典设备注册配置文件的图像](./media/14-classic-corp-profiles.png)
 

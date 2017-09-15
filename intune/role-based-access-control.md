@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 的 RBAC"
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Intune Azure 预览版：了解 RBAC 如何使你控制可执行操作和进行更改的人员。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>使用 Intune 的基于角色的管理控制 (RBAC)
 
@@ -32,7 +32,7 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 ![Intune RBAC 示例](./media/intune-rbac-1.PNG)
 
-从新的 Intune 门户开始，**Azure Active Directory (Azure AD)** 将提供两个可与 Intune 一起使用的目录角色。 这些角色被授予完全权限，可在 Intune 中执行所有活动：
+从新的 Azure 门户开始，Azure Active Directory (Azure AD) 提供两个可用于 Intune 的目录角色。 这些角色被授予完全权限，可在 Intune 中执行所有活动：
 
 - **全局管理员：**具有此角色的用户可访问 Azure AD 中的所有管理功能以及与 Azure AD 联合的服务（如 Exchange Online、SharePoint Online 和 Skype for Business Online）。 注册 Azure AD 租户的人员均将成为全局管理员。 只有全局管理员才能分配其他 Azure AD 管理员角色。 组织中可以有多个全局管理员。 全局管理员可以重置任意用户和所有其他管理员的密码。
 
@@ -46,12 +46,12 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
     > [!TIP]
     > Intune 还显示三个 Azure AD 扩展：用户、组和条件访问，均使用 Azure AD RBAC 控制。 此外，**用户帐户管理员**仅执行 AAD 用户/组活动，而不具备在 Intune 中执行所有活动的完全权限。 请参阅[使用 Azure AD 的 RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)获取详细信息。
 
-## <a name="roles-created-in-the-intune-classic-console"></a>在 Intune 经典控制台中创建的角色
+## <a name="roles-created-in-the-intune-classic-portal"></a>在 Intune 经典门户中创建的角色
 
-仅具有“完全”权限的 Intune **服务管理员**可从 Intune 经典控制台迁移到 Azure 上的 Intune。 你需要对 Azure 门户中的 Intune 角色重新分配具有“只读”或“支持人员”访问权限的 Intune **服务管理员**，并将其从经典门户中删除。
+只有拥有“完全”权限的 Intune 服务管理员，才能从 Intune 经典门户迁移到 Azure 门户中 Intune。 你需要对 Azure 门户中的 Intune 角色重新分配具有“只读”或“支持人员”访问权限的 Intune **服务管理员**，并将其从经典门户中删除。
 
 > [!IMPORTANT]
-> 如果管理员仍然需要使用 Intune 访问以管理 PC 的使用，你可能需要在经典控制台中保留 Intune 服务管理员访问权限。
+> 如果管理员仍需要有权使用 Intune 管理电脑，可能需要保留经典门户中的 Intune 服务管理员访问权限。
 
 ## <a name="built-in-roles"></a>内置角色
 

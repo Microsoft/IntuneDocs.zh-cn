@@ -1,6 +1,6 @@
 ---
-title: "Azure 上 Microsoft Intune 中的已知问题"
-titleSuffix: Intune on Azure
+title: "Azure 门户中 Microsoft Intune 的已知问题"
+titlesuffix: Azure portal
 description: "了解 Intune 中的已知问题"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
-ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
+ms.openlocfilehash: 7570e7b2f612d1d2a017f82967cdc5baf798a761
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 08/15/2017
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>在迁移过程中 Intune 所创建的组可能会影响其他 Microsoft 产品的功能
 
-从经典 Intune 迁移到 Azure 门户时，可能会看到一个名为“All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421”的新组。 此组包含 Azure Active Directory 中的所有用户，而不仅仅是 Intune 许可的用户。 如果你希望某些现有用户或新用户不属于任何组的成员，此用法会导致其他 Microsoft 产品出现问题。
+从 Intune 迁移到 Azure 门户时，可能会看到名为“All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421”的新组。 此组包含 Azure Active Directory 中的所有用户，而不仅仅是 Intune 许可的用户。 如果你希望某些现有用户或新用户不属于任何组的成员，此用法会导致其他 Microsoft 产品出现问题。
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>优选功能所需的辅助迁移
 
@@ -49,20 +49,20 @@ ms.lasthandoff: 08/15/2017
 - 设备注册管理员帐户
 - Apple Volume Purchase Program
 
-因为无法从经典 Intune (Silverlight) 控制台和 Azure 门户管理这些功能，因此迁移将会：
-- 在经典控制台中禁用它们
+由于无法同时在 Intune (Silverlight) 控制台和 Azure 门户中管理这些功能，因此迁移任务将会：
+- 在经典门户中禁用它们
 - 在 Azure 门户中启用它们  
 
-2017 年 9 月 11 日之后，这些功能的迁移将并入到 Azure 的主迁移。 如果帐户已迁移并使用 Azure 门户，则会在 2017 年 9 月 11 日至 22 日期间进行此辅助迁移。 帐户开始迁移后，将在同一天内完成迁移。 从在 Intune 经典控制台中禁用这些功能开始算起，迁移将在 6 小时内完成。
+2017 年 9 月 11 日之后，这些功能的迁移将并入到 Azure 的主迁移。 如果帐户已迁移并使用 Azure 门户，则会在 2017 年 9 月 11 日至 22 日期间进行此辅助迁移。 帐户开始迁移后，将在同一天内完成迁移。 自在 Intune 经典门户中禁用这些功能起，迁移需要 6 小时才能完成。
 
 如果目前在 Azure 门户中管理这些 Intune 功能，请注意以下几点：
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>删除 Apple DEP 中默认的企业设备注册配置文件
-Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备注册配置文件。 经典 Intune (Silverlight) 控制台中提供的此功能将停用，以防止无意中分配配置文件。 当在 Azure 门户中同步 DEP 序列号时，不会分配企业设备注册配置文件。 在使用该设备之前，必须分配注册配置文件。
+Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备注册配置文件。 此功能虽在 Intune (Silverlight) 控制台中可用，但 Azure 门户已停止提供支持，以防止无意间分配配置文件。 当在 Azure 门户中同步 DEP 序列号时，不会分配企业设备注册配置文件。 在使用该设备之前，必须分配注册配置文件。
 
 #### <a name="apple-dep-token-restored-with-migration"></a>通过迁移还原的 Apple DEP 令牌
 
-如果在经典 Intune (Silverlight) 门户中删除了 Apple 设备注册计划令牌，且没有向 Azure 门户上传新令牌，则迁移时将在 Azure 门户中还原原始令牌。 若要删除此令牌并禁止 DEP 注册，请从 Azure 门户中删除令牌。
+如果在 Intune (Silverlight) 门户中删除了 Apple 设备注册计划令牌，且没有向 Azure 门户上传新令牌，那么在迁移时原始令牌会在 Azure 门户中进行还原。 若要删除此令牌并禁止 DEP 注册，请从 Azure 门户中删除令牌。
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>迁移策略的状态边栏选项卡不起作用
 
@@ -101,8 +101,9 @@ macOS 的未来版本中可能会解决此问题。
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Intune 的符合性策略不会在新控制台中显示
 
-在经典门户中创建的任何符合性策略都将被迁移，但不会显示在 Azure 门户中，因为 Azure 门户中进行了设计更改。 仍将强制执行在经典 Intune 门户中创建的符合性策略，但是你必须在经典 Intune 门户中进行查看和编辑。
-此外，在 Intune 门户中创建的新符合性策略不会在经典门户中显示。
+在经典门户中创建的任何符合性策略都将被迁移，但不会显示在 Azure 门户中，因为 Azure 门户中进行了设计更改。 在 Intune 经典门户中创建的符合性策略仍会强制执行，但必须在经典门户中才能查看和编辑这些策略。
+
+此外，在 Azure 门户中新建的符合性策略也不会在经典门户中显示。
 
 有关详细信息，请参阅[什么是设备符合性](device-compliance.md)。
 

@@ -14,17 +14,17 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 90ce9ae6c1f48b6a42cf62f8873621499ba05256
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: a12d3aaf6a893291e4818c76c02c8a3708b6b6a0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
-# <a name="whats-new-in-the-intune-classic-console---previous-months"></a>Intune 经典控制台中的新增内容 - 前几个月
+# <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
 
 [!INCLUDE[classic-portal](./includes/classic-portal.md)]
 
-此页列出了之前在[新增功能页](whats-new.md)中列出的针对 Intune 经典控制台的新功能和说明。
+此页列出了之前在[“新增功能”页](whats-new.md)中列出的适用于 Intune 经典门户的新功能和通告。
 
 ## <a name="april-2017"></a>2017 年 4 月
 
@@ -67,7 +67,7 @@ Windows 10 公司门户应用中开始的应用安装包括如下改进：
 
 现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](/intune-classic/deploy-use/bulk-enroll-windows)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将程序包应用到设备后，设备将加入 Azure AD 并注册 Intune，以供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户并接收分配的策略和必需的应用。 目前不支持自助服务和公司门户方案。
 
-### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 上的 Intune 管理体验公开预览版的新增功能<!--736542-->
+### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure 门户中 Intune（公共预览版）的新增功能<!--736542-->
 
 在 2017 年初，我们会将完整管理体验迁移到 Azure 上，以便能够在可使用图形 API 进行扩展的新式服务平台上对核心 EMS 工作流进行强大且集成的管理。
 
@@ -81,13 +81,13 @@ Azure 门户中的管理体验将使用已公布的新分组和定向功能；�
 
 #### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接访问 Apple 注册方案<!--951869-->
 
-对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 预览门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，仅能通过经典 Intune 门户中的链接访问 Apple 注册预览版。 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的这些功能。 迁移的计划目前尚未公布，但详细信息将尽快发布。 强烈建议创建一个试用帐户，在现有帐户无法访问预览版时测试新体验。
+对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 预览门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，只能通过 Azure 门户中的链接访问 Apple 注册预览版。 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的这些功能。 迁移的计划目前尚未公布，但详细信息将尽快发布。 强烈建议创建一个试用帐户，在现有帐户无法访问预览版时测试新体验。
 
-#### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Azure 上 Intune 的 Appx 的新增功能 <!-- 1000270 -->
+#### <a name="whats-coming-for-appx-in-intune-in-the-azure-portal----1000270---"></a>Azure 门户中 Intune 的 Appx 新增功能 <!-- 1000270 -->
 
-在迁移到 Azure 上的 Intune 的过程中，我们做出了 3 个 appx 更改：
+在迁移到 Azure 门户中 Intune 期间，我们做出了三项 appx 更改：
 
-1. 在仅能部署到 MDM 注册的设备的经典 Intune 控制台中添加新的 appx 应用类型。
+1. 在 Intune 控制台中添加新 appx 应用类型，这些类型只能部署到已进行 MDM 注册的设备。
 2. 重用现有的 appx 应用类型，以仅面向通过 Intune PC 代理托管的 PC。
 3. 通过迁移将所有现有的 appxs 转换为 MDM appx。
 
@@ -97,7 +97,7 @@ Azure 门户中的管理体验将使用已公布的新分组和定向功能；�
 
 ##### <a name="what-action-do-i-need-to-take"></a>我需要执行什么操作
 
-迁移后，如果要进行新的 PC 部署，则需要将 appx 作为电脑 appx 再次上传。 若要了解详细信息，请参阅 [Intune 支持团队博客上的 ](https://aka.ms/appxchange)Azure 上 Intune 中的 Appx 更改。  
+迁移后，如果要进行新的 PC 部署，则需要将 appx 作为电脑 appx 再次上传。 若要了解详细信息，请参阅 Intune 支持团队博客上的 [Azure 门户中 Intune 的 Appx 更改](https://aka.ms/appxchange)。  
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>在 Azure 门户中被替换的管理角色
 
@@ -220,13 +220,13 @@ Microsoft 已宣布发布 Microsoft Teams 的通用版本。 适用于 iOS 和 A
 iOS 版公司门户应用内的链接（包括文档和应用链接）将通过 Safari 的应用内视图直接在公司门户应用中打开。 此更新将与 1 月的服务更新分开提供。
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows 设备的新 MDM 服务器地址<!--893007-->
-Windows 和 Windows Phone 用户如果输入 __manage.microsoft.com__ 作为 MDM 服务器地址（出现提示时），尝试注册设备时将失败。 MDM 服务器地址已从 __manage.microsoft.com__ 更改为 __enrollment.manage.microsoft.com__。 通知用户在注册 Windows 和/或 Windows Phone 时，如果出现提示，请使用 __enrollment.manage.microsoft.com__ 作为 MDM 服务器地址。 无需更改 CNAME 设置。 有关此更改的详细信息，请访问[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)。
+Windows 和 Windows Phone 用户如果输入 __manage.microsoft.com__ 作为 MDM 服务器地址（出现提示时），尝试注册设备时将失败。 MDM 服务器地址已从 __manage.microsoft.com__ 更改为 __enrollment.manage.microsoft.com__。通知用户在注册 Windows 和/或 Windows Phone 时，如果出现提示，请使用 __enrollment.manage.microsoft.com__ 作为 MDM 服务器地址。 无需更改 CNAME 设置。 有关此更改的详细信息，请访问[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)。
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 适用的公司门户应用的最新用户体验<!--621622-->
 从 3 月开始，Android 适用的公司门户应用将按照[材料设计指南](https://material.io/guidelines/material-design/introduction.html)来打造更具现代感的外观。 这将改善以下用户体验：
 
 * __颜色__：可以根据自定义调色板对选项卡标头着色。
-* __界面__：“应用”选项卡上已更新了“特色应用”和“所有应用”按钮。 “搜索”按钮现在是浮动的操作按钮。
+* __界面__：“应用”选项卡上已更新了“特色应用”和“所有应用”按钮。“搜索”按钮现在是浮动的操作按钮。
 * __导航__：“所有应用”以选项卡形式呈现出“特色”、“所有”和“分类”视图，便于导航。
 * __服务__：“我的设备”和“联系 IT”选项卡提高了可读性。
 
@@ -235,7 +235,7 @@ Windows 和 Windows Phone 用户如果输入 __manage.microsoft.com__ 作为 MDM
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>将多个管理工具与适用于企业的 Microsoft 应用商店关联<!--926135-->
 使用多个管理工具部署适用于企业的 Microsoft 应用商店时，以前只能将一个管理工具与适用于企业的 Microsoft 应用商店关联。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。 有关详细信息，请参阅[使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)。
 
-## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 上的 Intune 管理体验公开预览版的新增功能<!--736542-->
+## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Azure 门户中 Intune（公共预览版）的新增功能 <!--736542-->
 
 在 2017 年初，我们会将完整管理体验迁移到 Azure 上，以便能够在可使用图形 API 进行扩展的新式服务平台上对核心 EMS 工作流进行强大且集成的管理。
 
@@ -294,7 +294,7 @@ IOS 版公司门户在启动屏幕上引入了一个进度栏，为用户提供�
 
 ## <a name="december-2016"></a>2016 年 12 月
 
-### <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Azure 上新的 Intune 管理体验公开预览版<!--736542-->
+### <a name="public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure 门户中 Intune（公共预览版）<!--736542-->
 在 2017 年初，我们会将完整管理体验迁移到 Azure 上，以便能够在可使用图形 API 进行扩展的新式服务平台上对核心 EMS 工作流进行强大且集成的管理。 在正式发布此面向所有 Intune 租户的门户之前，我们高兴地宣布将在本月晚些时候向所选租户推出此新的管理体验的预览版。
 
 Azure 门户中的管理体验将使用已公布的新分组和定向功能；当现有租户迁移到新的分组体验时，也会将你迁移，以预览租户上的新管理体验。 同时，在[新文档](/intune/what-is-intune)中查找应用商店提供的用于 Azure 门户中的 Microsoft Intune 的应用的更多信息。

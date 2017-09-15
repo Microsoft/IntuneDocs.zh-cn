@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>通过 Intune 实现 BYOD
 
@@ -48,7 +48,7 @@ Intune 服务准备就绪后，需要满足要管理的不同设备类型的各�
 
 -   Android 设备 - 将 Intune 服务注册到 Android 设备无需任何准备工作。 用户可使用 Google Play 提供的公司门户应用[将 Android 设备注册](/intune-user-help/enroll-your-device-in-intune-android)到管理。
 
--   Windows Phone 和电脑 - 可使用其他配置注册 Windows 设备。 要简化最终用户体验，可为使用 Azure Active Directory (AD) Premium 的 Windows 10 电脑和 Windows 10 移动设备启用自动注册。 如果没有 Azure AD Premium 或者需要支持 Windows 8.1，则可以创建[注册服务器的 DNS 别名](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)来简化注册过程。
+-   Windows Phone 和电脑 - 可使用其他配置注册 Windows 设备。 要简化最终用户体验，可为使用 Azure Active Directory (AD) Premium 的 Windows 10 电脑和 Windows 10 移动设备启用自动注册。 如果没有 Azure AD Premium 或者需要支持 Windows 8.1，则可以创建[注册服务器的 DNS 别名](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium)来简化注册过程。
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>确保托管设备符合基本安全要求
@@ -82,7 +82,7 @@ Intune 服务准备就绪后，需要满足要管理的不同设备类型的各�
 
 -   [管理批量采购的适用于 iOS 设备的应用](vpp-apps-ios.md)。 通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)购买多个 iOS 应用许可证。 需要在 Apple 网站设置一个 Apple VPP 帐户，并将 Apple VPP 令牌上传到 Intune。 然后，可将批量购买信息与 Intune 同步，并追踪批量购买应用的使用情况。
 
--   [管理从适用于企业的 Microsoft 应用商店购买的应用](windows-store-for-business.md)。 可在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店连接到 Intune，可在 Intune 门户中管理批量购买的应用。
+-   [管理从适用于企业的 Microsoft 应用商店购买的应用](windows-store-for-business.md)。 可在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店与 Intune 相连，可以在 Azure 门户中管理批量购买的应用。
 
 ## <a name="protect-company-data"></a>保护公司数据
 

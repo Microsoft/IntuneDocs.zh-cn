@@ -1,6 +1,6 @@
 ---
 title: "将条件访问策略从 Intune 经典门户迁移到 Azure 门户"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "将条件访问策略从 Intune 经典门户迁移到 Azure 门户。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f1ea2b0ceb32d0aa05a28e0f01f65b80b1ddcf
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 08/03/2017
 
 - 按照本主题中的步骤，在 Azure 门户中重新创建这些策略。
 
-- 验证新策略在 Azure 门户中按预期工作后，请在 Intune 经典控制台中禁用条件策略。
+- 验证新策略可以按预期在 Azure 门户中运行后，在 Intune 经典门户中禁用条件策略。
 <br /><br />
     - 在 Intune 典门户中“禁用”条件访问策略之前，需先规划如何将用户转移到新策略。 有两种方法：
 <br /><br />
@@ -82,7 +82,7 @@ ms.lasthandoff: 08/03/2017
     ![Intune 和 Azure 门户之间的用户组用户界面比较](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > 针对 Azure 门户进行的选择应与针对 Intune 门户进行的选择相对应。 例如，如果在 Intune 经典门户中选择了所有用户，则应在 Azure 门户中选择“所有用户”。 此外，如果在 Intune 经典门户中选择了“免除组”选项，则也需要在 Azure 门户中排除所选的这些组。
+    > 对 Azure 门户做出的选择应与之前对 Azure 门户做出的选择相对应。 例如，如果在 Intune 经典门户中选择了所有用户，则应在 Azure 门户中选择“所有用户”。 此外，如果在 Intune 经典门户中选择了“免除组”选项，则也需要在 Azure 门户中排除所选的这些组。
 
 5. 选择组后，单击“选择”，然后单击“完成”。
 
@@ -150,7 +150,7 @@ ms.lasthandoff: 08/03/2017
     ![Intune 和 Azure 门户之间的用户组用户界面比较](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
-    > 针对 Azure 门户进行的选择应与针对 Intune 门户进行的选择相对应。 例如，如果在 Intune 经典门户中选择了所有用户，则应在 Azure 门户中选择“所有用户”。 此外，如果在 Intune 经典门户中选择了“免除组”选项，则也需要在 Azure 门户中排除所选的这些组。
+    > 对 Azure 门户做出的选择应与之前对 Azure 门户做出的选择相对应。 例如，如果在 Intune 经典门户中选择了所有用户，则应在 Azure 门户中选择“所有用户”。 此外，如果在 Intune 经典门户中选择了“免除组”选项，则也需要在 Azure 门户中排除所选的这些组。
 
 5. 选择组后，单击“选择”，然后单击“完成”。
 

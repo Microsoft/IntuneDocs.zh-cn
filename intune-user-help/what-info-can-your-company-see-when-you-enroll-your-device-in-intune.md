@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,36 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>在 Intune 中注册我的设备时，我的公司可以看到什么信息？
+# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>在我注册自己的设备时，我的公司可以看到哪些信息？
 
-将设备注册到管理中，即表示你授予公司 IT 部门访问设备上某些信息的权限以帮助保护设备上的公司数据。
+将设备注册到管理计划中，即授权允许公司查看设备上的特定信息，以帮助保护设备上的公司数据。
 
-**IT 管理员不能看到的内容**
+**公司永远无法看到的信息**
 
 - 调用和 Web 浏览历史记录
--   位置
-- 个人电子邮件
-- 文本消息
+- 电子邮件和短信
 - 联系人
--   个人帐户的密码
-- 日历事件
+- 日历
+-   密码
 - 图片，包括照片应用中的照片或本机照片
 
-**IT 管理员能够看到的内容**
+**公司始终可以看到的信息**
 
--   型号
--   序列号
--   操作系统版本
--   应用名称
--   Owner
--   设备名称
--   制造商（对于非 Apple 生产的设备）
--   电话号码（对于工作设备，则为整个号码。 对于个人设备，只取后四位数字。）
+- 设备型号（如 iPhone 7）
+- 制造商（如 Microsoft）
+- 操作系统（如 Android 7.1）
+- 应用名称（如 Microsoft Word）
+- 设备所有者
+- 设备名称
+- 序列号
+
+**公司可能会看到的信息**
+
+-  电话号码：对于公司拥有的设备，公司可以看到完整的电话号码。 对于个人拥有的设备，公司只能看到电话号码的最后四位数字。 可以打开相应设备的“设备详细信息”页，确定每个设备的“所有权类型”。 
+-  位置：公司永远无法看到设备的位置，除非 iOS 设备受监管且已丢失。 [如何判断？](https://go.microsoft.com/fwlink/?linkid=853816)

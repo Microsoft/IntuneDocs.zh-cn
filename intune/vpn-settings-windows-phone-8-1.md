@@ -1,6 +1,6 @@
 ---
 title: "适用于 Windows Phone 8.1 设备的 Intune VPN 设置"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "了解可用于在 Windows Phone 8.1 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a009a16c7c475864f665f6ad0ab8fe1853c801b4
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: debfe6cde108daf88db8d18db1e7da2186fc32ea
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows Phone 8.1 设备的 VPN 设置
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="base-vpn-settings"></a>基础 VPN 设置
 
-- **将所有设置仅应用于 Windows Phone 8.1** - 可在经典 Intune 门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
+- **将所有设置仅应用于 Windows Phone 8.1** - 可以在 Intune 经典门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置将只应用于 Windows Phone 8.1 设备。 如果将此项设置为“未配置”，则这些设置也将适用于 Windows 10 移动版设备。
 - **连接名称** - 输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接列表时将看到此名称。
 - **身份验证方法** - 从以下选项中选择设备向 VPN 服务器进行身份验证的方法：
     - **证书** - 在“身份验证证书”下，选择之前创建的 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 有关证书配置文件的更多详细信息，请参阅[如何配置证书](certificates-configure.md)。
@@ -48,7 +48,7 @@ ms.lasthandoff: 07/01/2017
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **Dell SonicWALL Mobile Connect**
-    - **F5 Edge Client**
+    - ** F5 Edge Client**
     - **Pulse Secure**
 
 - **登录组或域**（仅限 Dell SonicWALL Mobile Connect）- 指定要连接到的登录组或域的名称。
