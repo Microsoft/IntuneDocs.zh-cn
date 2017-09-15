@@ -1,7 +1,7 @@
 ---
-title: "Azure 门户中的 Intune 简介"
-titleSuffix: Intune on Azure
-description: "获取有关 Azure 门户中 Intune 的基础知识，以及它如何帮助你管理设备。"
+title: "Azure 门户中 Intune 的简介"
+titlesuffix: Azure portal
+description: "了解 Azure 门户中 Intune 的基础知识及其如何有助于管理设备。”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
-ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
+ms.openlocfilehash: 6150434620f055f17563da6269c85c89c70b8e2b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 
@@ -72,7 +72,7 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 
 ## <a name="whats-in-this-library"></a>这个库中有什么？
 
-该文档反映了 Intune 门户的布局，有助于你轻松查找所需信息。
+文档中反映了 Azure 门户的布局，可方便读者更轻松地找到所需信息。
 
 ![Azure 门户工作负荷](./media/azure-portal-workloads.png)
 

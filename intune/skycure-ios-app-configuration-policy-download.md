@@ -1,6 +1,6 @@
 ---
 title: "下载 Skycure iOS 应用配置策略以配合使用 Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "下载 Skycure iOS 应用配置策略以配合使用 Intune。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 1bdc2ecf-32d0-4b6a-80b4-dbcdb9909010
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffe1027e90203d4e300a2446f15e72cc5bf53973
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 296d5545530e8001c0648bafac3101b94f45529d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>下载 Skycure iOS 应用配置策略
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 
 3.  转到“设置”&gt;“设备管理集成”&gt;“EMM 集成选择”，选择“Microsoft Intune”，然后保存所做选择。
 
-4.  单击“集成设置文件”链接，然后保存生成的 \*.zip 文件。 该 .zip 文件包含 **skycure\_configuration.plist** 文件，该文件用于在 Intune 经典控制台中创建 iOS 应用配置策略。
+4.  单击“集成设置文件”链接，然后保存生成的 \*.zip 文件。 .zip 文件包含 skycure\_configuration.plist 文件，此文件用于在 Intune 经典门户中创建 iOS 应用配置策略。
 
 ![Skycure 集成设置文件](./media/skycure-ios-app-2.png)
 

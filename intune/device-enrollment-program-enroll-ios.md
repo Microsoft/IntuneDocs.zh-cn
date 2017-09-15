@@ -1,6 +1,6 @@
 ---
 title: "注册 iOS 设备 - 设备注册计划"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何使用“设备注册计划”注册公司拥有的 iOS 设备。"
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d88d191e3212e1999376fb2577a85c3dc957a787
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 08/03/2017
 可使用 Apple DEP 门户创建 DEP 令牌。 还可以使用 DEP 门户将设备分配到 Intune 进行管理。
 
 > [!NOTE]
-> 如果在迁移到 Azure 前从 Intune 经典控制台删除了此令牌，则 Intune 可能会将已删除的 Apple DEP 令牌还原。 可在 Azure 门户中再次删除 DEP 令牌。 可在 Azure 门户中再次删除 DEP 令牌。
+> 如果在迁移到 Azure 前从 Intune 经典门户删除了令牌，Intune 可能会还原已删除的 Apple DEP 令牌。 可在 Azure 门户中再次删除 DEP 令牌。 可在 Azure 门户中再次删除 DEP 令牌。
 
 **步骤 1.下载创建 Apple DEP 令牌所需的 Intune 公钥证书。**<br>
 
@@ -154,7 +154,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 2. 在“注册计划设备”下，选择“同步”。
 
   ![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/enrollment-program-device-sync.png)
-3. 在“同步”边栏选项卡上，选择“请求同步”。 进度栏显示再次请求同步之前必须等待的时长。
+3. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
 
   ![选中“请求同步”链接的“同步”边栏选项卡屏幕截图。](./media/enrollment-program-device-request-sync.png)
 

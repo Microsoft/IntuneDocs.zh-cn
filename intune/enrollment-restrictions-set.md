@@ -1,6 +1,6 @@
 ---
 title: "在 Intune 中设置注册限制"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "按平台限制注册，并在 Intune 中设置设备注册限制。 \""
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-作为 Intune 管理员，可决定哪些设备可注册 Intune 管理。 使用 Intune 门户设置以下设备注册限制：
+作为 Intune 管理员，可决定哪些设备可注册 Intune 管理。 使用 Azure 门户设置以下设备注册限制：
 
 - 最大设备注册数
 - 可注册的设备平台：
@@ -68,7 +68,7 @@ ms.lasthandoff: 08/05/2017
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 选择“设备注册” > “注册限制”。
-4. 在 Intune 门户中，选择“设备注册”，然后选择“注册限制”。
+4. 在 Azure 门户中，依次选择“设备注册”和“注册限制”。
 5. 选择“注册限制” > “设备限制”。
 6. 在“所有用户”下，选择“设备限制”。 指定每个用户的最大注册设备数。  
 ![含设备限制的设备限制边栏选项卡的屏幕截图。](./media/device-restrictions-limit.png)

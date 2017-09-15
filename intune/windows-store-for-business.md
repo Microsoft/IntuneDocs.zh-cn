@@ -1,6 +1,6 @@
 ---
 title: "管理来自适用于企业的 Microsoft 应用商店的应用"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何从适用于企业的 Microsoft 应用商店将应用同步到 Intune，并对其进行分配和跟踪。"
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f5f1b49d0785682f72d208287098466934ff0e1
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 649766b26a1061c4bce11235c04dcbe8570fcdc4
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-可在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店连接到 Microsoft Intune，你可以在 Intune 门户中管理批量购买的应用。 例如：
+可在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店与 Microsoft Intune 相连，可以在 Azure 门户中管理批量购买的应用。 例如：
 * 你可以将从应用商店中购买的应用列表与 Intune 同步。
 * Intune 管理控制台中将显示已同步的应用，可以像分配所有其他应用那样分配这些应用。
 * 你可以跟踪可用许可证的数量以及正在 Intune 管理控制台中使用的许可证数量。
@@ -64,7 +64,7 @@ ms.lasthandoff: 08/08/2017
 1. 在“移动应用”边栏选项卡上，选择“设置” > “适用于企业的 Microsoft 应用商店”。
 2. 单击“启用”。
 3. 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接，并按之前详述的步骤关联帐户。
-5. 在“语言”下拉列表中，选择适用于企业的 Microsoft 应用商店的应用在 Intune 门户中显示时使用的语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
+5. 在“语言”下拉列表中，选择适用于企业的 Microsoft 应用商店中的应用在 Azure 门户中的显示语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
 6. 单击“同步”，将从 Microsoft 应用商店购买的应用同步到 Intune。
 
 ## <a name="synchronize-apps"></a>同步应用

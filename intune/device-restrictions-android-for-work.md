@@ -1,6 +1,6 @@
 ---
 title: "适用于 Android for Work 的 Intune 设备限制设置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解可用来控制 Android for Work 设备上的设备设置和功能的 Intune 设置。"
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a8053e54dcad692380b6762b22411f271337f29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 7e7f74f516a4b60b6a727d6c51ec54dab96aa88e
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>工作配置文件设置
-- **工作和个人配置文件之间的数据共享** - 使用此设置控制工作配置文件中的应用是否可以将数据与个人配置文件中的应用共享。 此设置将控制应用程序中的共享操作（例如，Chrome 浏览器应用中的“共享...” 选项），并且不适用于复制/粘贴剪贴板行为。 与[应用保护策略设置](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)不同，设备限制设置通过 Intune 门户进行管理，并使用 Android for Work 工作配置文件分区来隔离托管的应用。 选择：
+- **工作和个人配置文件之间的数据共享** - 使用此设置控制工作配置文件中的应用是否可以将数据与个人配置文件中的应用共享。 此设置将控制应用程序中的共享操作（例如，Chrome 浏览器应用中的“共享...” 选项），并且不适用于复制/粘贴剪贴板行为。 与[应用保护策略设置](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)不同，设备限制设置是在 Azure 门户中进行管理，并使用 Android for Work 工作配置文件分区来隔离受管理应用。 选择：
     - 默认共享限制 - 此设置是设备的默认共享行为，因运行的 Android 版本而异。 默认情况下，允许从个人配置文件到工作配置文件的共享。 此外，默认情况下，已阻止从工作配置文件到个人配置文件的共享。 此设置可防止工作配置文件的数据共享到个人配置文件。 在运行 6.0 及更高版本的设备上，Google 不提供阻止数据从个人配置文件共享到工作配置文件的方法。   
     - **工作配置文件中的应用可以处理来自个人配置文件的共享请求** - 使用此选项启用内置 Android 功能，以允许从个人配置文件到工作配置文件的共享。 启用此功能后，从个人配置文件中的应用发起的共享请求将能与工作配置文件中的应用共享。 此设置是运行 6.0 之前的版本的 Android 设备的默认行为。
     - **允许跨边界共享** - 将双向启用跨工作配置文件边界共享。 选择此设置时，工作配置文件中的应用可以将数据与个人配置文件中未标记的应用共享。 请谨慎使用此设置，因为该设置允许工作配置文件中托管的应用与设备未托管一侧上的应用共享。

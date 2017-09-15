@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8707253139ee5a12a48d38a333ae49fbb4d3ead
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: b82c0832fc102e4ae30268a6cd08ed0e14e1c931
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -122,14 +122,14 @@ Android 要求所有应用都必须由有效证书进行签名才能安装在 An
 
 如果无法使用以前的签名证书，或之前未部署应用，则可以按照 [Android 开发人员指南](https://developer.android.com/studio/publish/app-signing.html#signing-manually)中的说明创建新的签名证书。
 
-如果以前使用不同的签名证书部署了应用，则升级后该应用无法上传到 Intune 控制台。 如果应用使用与生成应用所用的证书不同的证书签名，则将中断应用升级方案。 因此，应该维护任何新的签名证书以进行应用升级。 
+如果以前使用不同的签名证书部署过应用，那么升级后便无法将应用上传到 Intune。 如果应用使用与生成应用所用的证书不同的证书签名，则将中断应用升级方案。 因此，应该维护任何新的签名证书以进行应用升级。 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>运行应用包装工具的安全注意事项
 防止潜在的欺骗、信息泄露和特权提升攻击：
 
 -   确保输入业务线 (LOB) 应用程序、输出应用程序和 Java 密钥存储位于运行应用包装工具的同一台 Windows 计算机上。
 
--   将输出应用程序导入到运行该工具的同一台计算机上的 Intune 控制台。 有关 Java keytool 的详细信息，请参阅 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)。
+-   在运行此工具的同一台计算机上，将输出应用导入 Intune。 有关 Java keytool 的详细信息，请参阅 [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)。
 
 -   如果输出应用程序和工具位于通用命名约定 (UNC) 路径，并且未在同一台计算机上运行工具和输入文件，则使用 [Internet 协议安全性 (IPsec)](http://wikipedia.org/wiki/IPsec) 或 [服务器消息块 (SMB) 签名](https://support.microsoft.com/kb/887429)将环境设置为安全。
 

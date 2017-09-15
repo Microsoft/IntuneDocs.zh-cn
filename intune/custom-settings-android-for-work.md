@@ -1,6 +1,6 @@
 ---
 title: "适用于 Android for Work 的 Intune 自定义配置文件设置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何创建适用于 Android for Work 设备的 Intune 自定义配置文件设置。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>创建适用于 Android for Work 设备的 Intune 自定义配置文件设置
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 07/01/2017
 1. 按照[如何配置自定义设备设置](custom-settings-configure.md)中的说明进行操作。
 2. 在“自定义 OMA-URI 设置”边栏选项卡上，选择“添加”可添加新设置。
 3. 在“添加行”边栏选项卡上，配置以下内容：
-    - **名称** - 输入 Android for Work 自定义设置的唯一名称，以帮助你在 Intune 门户中识别它。
+    - **名称** - 输入 Android for Work 自定义设置的唯一名称，这有助于在 Azure 门户中识别它。
     - **说明** - 提供对 Android 自定义策略的概述以及可帮助你查找它的其他相关信息。
     - **OMA-URI** - 输入需为其提供设置的 OMA-URI。
     - **数据类型** - 选择将在其中指定此 OMA-URI 设置的数据类型。 从“字符串”、“字符串（XML 文件）”、“日期和时间”、“整数”、“浮点”**、**“布尔值”或“Base64（文件）”中进行选择。

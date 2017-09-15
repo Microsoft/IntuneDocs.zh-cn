@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune 中的设备配置文件疑难解答"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "如果遇到困扰，请使用此主题来帮助解决 Intune 设备配置文件相关的问题。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Microsoft Intune 中的设备配置文件疑难解答
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 07/01/2017
 
 -   如果针对不同合规性策略中的相同设置进行评估，则应用限制最严格的合规性策略设置。
 
--   如果配置策略设置与不同配置策略中的设置冲突，则将在 Intune 控制台中显示此冲突。 必须手动解决此类冲突。
+-   如果配置策略设置与其他配置策略设置冲突，此冲突将会显示在 Azure 门户中。 必须手动解决此类冲突。
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>应用保护策略互相冲突时会发生什么情况？ 哪一种策略将应用于应用？
 除数字输入字段（如重置之前尝试 PIN）外，冲突值是应用保护策略中限制最严格的设置。  数字输入字段将设定为与你使用建议的设置选项在控制台中创建 MAM 策略时一样的值。

@@ -5,7 +5,7 @@ keywords: "Mac OS X、macOS、OS X"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b177b05f065f66deb8c60be768c123fc7991937
-ms.sourcegitcommit: 091f7b34f1fbf73db2bed5b46d92a78ba0dad1e4
+ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/23/2017
   > [!NOTE]
   > 如果要注册 iPhone 或 iPad 等 iOS 设备，请[改为尝试以下说明](enroll-your-device-in-intune-ios.md)。
 
-1. 在“停靠”中，找到“Safari”，然后打开适用于 macOS 的公司门户应用的 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=55770)页面。
+1.  在 Dock 上，查找 Safari，并转到 [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal)。 
 
 2. 下载应用。 Mac 将进行检查，确认下载的 CompanyPortal.dmg 可以安全打开。 从“下载”文件夹将其打开后，将“CompanyPortal”应用拖动到“应用程序”文件夹。
 

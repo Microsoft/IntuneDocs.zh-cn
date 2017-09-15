@@ -1,6 +1,6 @@
 ---
 title: "使用 Intune 配置和管理 SCEP 证书"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解如何配置你的基础结构，然后创建和分配 Intune SCEP 证书配置文件。"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 406da09419e13319b8ebf4f59a05ca36eff1edad
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>使用 Intune 配置和管理 SCEP 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +36,7 @@ ms.lasthandoff: 07/01/2017
 -  **NDES 服务器**：在运行 Windows Server 2012 R2 或更高版本的服务器上，必须设置网络设备注册服务 (NDES)。 如果在服务器上运行了企业 CA，则同时在该服务器上运行的 Intune 将不支持使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管网络设备注册服务的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。
 NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同一服务器上。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅 [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx)（结合使用策略模块和网络设备注册服务）。
 
--  **Microsoft Intune 证书连接器**：使用 Intune 门户下载**证书连接器**安装程序 (**ndesconnectorssetup.exe**)。 随后可以在想要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe**。 
+-  **Microsoft Intune 证书连接器**：使用 Azure 门户下载“证书连接器”安装程序 (ndesconnectorssetup.exe)。 随后可以在想要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe**。 
 -  **Web 应用程序代理服务器**（可选）：使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器。 该配置：
     -  允许设备使用 Internet 连接接收证书。
     -  是设备通过 Internet 连接接收和续订证书时的安全建议。

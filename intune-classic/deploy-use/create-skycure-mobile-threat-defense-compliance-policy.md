@@ -1,6 +1,6 @@
 ---
 title: "创建 Skycure 移动威胁防御符合性策略"
-description: "在 Intune 经典控制台中创建 Skycure 移动威胁防御符合性策略。"
+description: "在 Intune 经典门户中，创建 Skycure Mobile Threat Defense 符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e8f7b6c5c1e8497ca698b83215525ba9b4056f59
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>创建 Skycure 移动威胁防御符合性策略
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-create-skycure-compliance-policy"></a>创建 Skycure 符合性策略
 
-1.  转到“[Intune 经典控制台](https://manage.microsoft.com/)”，然后输入你的凭据。
+1.  转到 [Intune 经典门户](https://manage.microsoft.com/)，再输入凭据。
 
 2.  选择“策略”&gt;“符合性策略”。 可使用现有合规性策略或创建新策略。
 

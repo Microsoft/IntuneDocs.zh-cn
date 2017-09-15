@@ -1,6 +1,6 @@
 ---
 title: "技术支持疑难解答门户"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "技术支持人员使用疑难解答门户来解决用户的技术问题"
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>使用疑难解答门户帮助用户
 
@@ -35,14 +35,14 @@ ms.lasthandoff: 08/28/2017
 -   应用安装失败
 
 ## <a name="add-help-desk-operators"></a>添加技术支持人员
-Intune 管理员可以将技术支持人员角色分配给一个用户组。 该组成员可以使用管理门户来解决用户的问题。 每个技术支持人员必须具有用于访问 Intune 门户的 Intune 许可证。 了解如何[分配 Intune 许可证](licenses-assign.md)。
+Intune 管理员可以将技术支持人员角色分配给一个用户组。 此组的成员可以使用 Azure 门户来排查用户遇到的问题。 每个支持人员必须有 Intune 许可证，才能访问 Azure 门户。 了解如何[分配 Intune 许可证](licenses-assign.md)。
 
 添加技术支持用户：
 1. [将用户添加到 Intune](users-add.md)（如有必要）。
 2. [创建技术支持组](groups-add.md)并将用户添加到该组。
 3. [分配 RBAC 技术支持人员角色](role-based-access-control.md#built-in-roles)。
 
-  ![Intune 门户的屏幕截图，其中突出显示了 Intune 角色，同时显示了一系列内置角色，包括技术支持人员](./media/help-desk-user-add.png) 还可[创建自定义角色](role-based-access-control.md#custom-roles)，可进一步对其进行修改，为技术支持人员提供访问权限。  技术支持人员需要具有以下权限才可帮助解决用户问题：
+  ![Azure 门户的屏幕截图，其中突出显示了 Intune 角色，并列出了包括支持人员在内的内置角色](./media/help-desk-user-add.png) 还可以[创建自定义角色](role-based-access-control.md#custom-roles)，以便进一步修改角色，向支持人员授予访问权限。  技术支持人员需要具有以下权限才可帮助解决用户问题：
     - MobileApps：读取
     - ManagedApps：读取
     - ManagedDevices：读取

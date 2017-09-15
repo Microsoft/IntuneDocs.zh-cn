@@ -1,7 +1,7 @@
 ---
 title: "使用 Intune 设置本地 EAS 的 Exchange 连接器"
-titleSuffix: Intune Azure
-description: "Intune Azure：Exchange ActiveSync MDM - 使用连接器工具启用 Intune 和本地 Exchange Server 之间的通信"
+titleSuffix: Azure portal
+description: "使用 Connector 工具实现 Intune 与本地 Exchange Server 的通信"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dd5143ce6c604f416af1c6b6b1df684346e2f6d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: f9dc93cf0a24032eba051f770af1b35f9932acc9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange Connector
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/14/2017
 
 若要设置允许 Microsoft Intune 与本地 Exchange Server 通信的连接，你需要遵循以下步骤：
 
-1.  从 Intune 门户下载 Intune 本地 Exchange Connector。
+1.  从 Azure 门户下载 Intune 本地 Exchange Connector。
 2.  安装和配置 Intune 本地 Exchange Connector。
 3.  验证 Exchange 连接。
 

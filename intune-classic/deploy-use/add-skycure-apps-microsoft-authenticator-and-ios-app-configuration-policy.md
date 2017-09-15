@@ -1,6 +1,6 @@
 ---
 title: "添加 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略"
-description: "将 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略添加到 Intune 经典控制台。"
+description: "将 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略添加到 Intune 经典门户。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 018d26f4-4a75-4e27-bb04-54f54106cb2f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 425b86e92281bb6e3657a6c806be269ccae94311
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d762e1aed998642db66908549b2d15d54601aed
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-skycure-apps-microsoft-authenticator-app-and-ios-configuration-policy"></a>添加 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="before-you-begin"></a>在开始之前
 
--   需要在 [Intune 经典控制台](https://manage.microsoft.com/)中完成以下步骤。
+-   需要在 [Intune 经典门户](https://manage.microsoft.com/)中完成以下步骤。
 
--   使用以前在 Skycure 管理控制台中配置的相同 Azure AD 帐户，它应该是用于登录到 Intune 经典控制台的同一帐户。
+-   使用以前在 Skycure 管理控制台中配置的相同 Azure AD 帐户，这也应该是用于登录 Intune 经典门户的相同帐户。
 
 -   你需要具有可供使用的 Skycure 集成文件。 这是此前从 Skycure 管理控制台下载的 .zip 文件，它包含文件 **skycure\_configuration.plist** 和 iOS 应用配置策略参数。
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-add-the-skycure-app-for-android"></a>添加适用于 Android 的 Skycure 应用
 
-1.  在 Intune 经典控制台中，选择“应用”&gt;“添加应用”来启动 Intune 软件发行者，然后单击“下一步”。
+1.  在 Intune 经典门户中，依次选择“应用”&gt;“添加应用”，以启动 Intune 软件发行者，再单击“下一步”。
 
 2.  在“软件安装程序”页上，选择“外部链接”，然后在“指定 URL”下粘贴“[适用于 Android 的 Skycure 应用 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)”。
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-add-the-skycure-app-for-ios"></a>添加适用于 iOS 的 Skycure 应用
 
-1.  在 Intune 经典控制台中，选择“应用”&gt;“添加应用”来启动 Intune 软件发行者，然后单击“下一步”。
+1.  在 Intune 经典门户中，依次选择“应用”&gt;“添加应用”，以启动 Intune 软件发行者，再单击“下一步”。
 
 2.  在“软件安装程序”页上，选择“来自应用商店的托管 iOS 应用”，然后在“指定 URL”下粘贴[“适用于 iOS 的 Skycure 应用 URL”](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-add-the-microsoft-authenticator-app-for-ios"></a>添加适用于 iOS 的 Microsoft Authenticator 应用
 
-1.  在 Intune 经典控制台中，选择“应用”&gt;“添加应用”来启动 Intune 软件发行者，然后单击“下一步”。
+1.  在 Intune 经典门户中，依次选择“应用”&gt;“添加应用”，以启动 Intune 软件发行者，再单击“下一步”。
 
 2.  在“软件安装程序”页上，选择“来自应用商店的托管 iOS 应用”，然后在“指定 URL”下粘贴[“适用于 iOS 的 Microsoft Authenticator 应用 URL”](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-add-the-skycure-ios-app-configuration-policy"></a>添加 Skycure iOS 应用配置策略
 
-1.  在 Intune 经典控制台中，选择“策略”&gt;“概述”**&gt;“添加策略”**。
+1.  在 Intune 经典门户中，依次选择“策略”&gt;“概述”&gt;“添加策略”。
 
 2.  在策略列表中，展开“iOS”，选择“移动应用配置策略(iOS 8.0 及更高版本)”，然后选择“创建策略”。
 

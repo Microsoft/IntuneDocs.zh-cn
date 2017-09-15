@@ -1,6 +1,6 @@
 ---
 title: "适用于 iOS 设备的 Intune 主屏幕布局设置"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "了解可在 iOS 设备上使用自定义主屏幕和停靠的设置。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune 主屏幕布局设置
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 07/05/2017
 
 
 1. 在“页面”边栏选项卡上，选择“添加”。
-2. 在“添加行”边栏选项卡上，输入“页面名称”。 此名称在 Intune 门户中用作参考，且*不显示*在 iOS 设备上。
+2. 在“添加行”边栏选项卡上，输入“页面名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 3. 选择“添加”，然后选择是否想要将“应用”或“文件夹”添加到页面。
 4. 使用本主题中的信息，配置要显示在页面上的应用和文件夹。
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 07/05/2017
 
 ## <a name="how-to-add-an-app-to-the-list"></a>如何将应用添加到列表
 
-1. 输入“应用名称”。 此名称在 Intune 门户中用作参考，且*不显示*在 iOS 设备上。
+1. 输入“应用名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 2. 输入想要显示的应用的“应用捆绑 ID”。 请参阅本主题稍后部分中介绍的**适用于内置 iOS 应用的捆绑 ID 引用**，了解帮助信息。
 3. 单击“确定”，然后继续添加项，对于设备停靠，最多能添加 **6** 个，对于设备页面，最多能添加 **60** 个。
 4. 完成后单击“确定” 。
@@ -87,8 +87,8 @@ ms.lasthandoff: 07/05/2017
 
 1. 输入**文件夹名称**。 该名称将显示在用户的设备上。
 2. 选择“添加”以在文件夹中创建一个页面。 可以添加最多 20 页。
-3. 在“添加行”边栏选项卡上，输入页面的名称。 此名称在 Intune 门户中用作参考，且*不显示*在 iOS 设备上。
-3. 输入“应用名称”。 此名称在 Intune 门户中用作参考，且*不显示*在 iOS 设备上。
+3. 在“添加行”边栏选项卡上，输入页面的名称。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
+3. 输入“应用名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 2. 输入想要显示的应用的“应用捆绑 ID”。 请参阅“如何将应用添加到列表”的相关帮助。
 3. 选择“添加”。 可以添加最多 60 项。
 4. 完成后单击“确定” 。

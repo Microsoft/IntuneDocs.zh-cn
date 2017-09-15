@@ -1,6 +1,6 @@
 ---
 title: "注册 Microsoft Intune 的 30 天免费试用版"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "如何注册 Intune 的 30 天免费试用版。"
 keywords: 
 author: lindavr
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 21ee75ab006c1770bc61039facc28d8a0118e706
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>注册 Microsoft Intune 免费试用版
 
@@ -47,11 +47,11 @@ ms.lasthandoff: 07/18/2017
 有三个门户用于 Intune Azure 门户：
 - Azure 中的 Intune 仪表板 ([portal.azure.com](https://portal.azure.com))，在此可以了解 [Azure 门户中的 Intune 功能](what-is-intune.md)。
 - Office 365 管理中心 ([portal.office.com](https://portal.office.com))，可以在此添加和管理用户（如果未使用 Azure Active Directory 来达到此目的）。 还可以管理帐户的帐单和支持等其他方面。
-- 经典 Intune 管理控制台 ([manage.microsoft.com](https://manage.microsoft.com))，可以在此了解尚未添加到 Azure 的功能。
+- Intune 管理控制台 ([manage.microsoft.com](https://manage.microsoft.com))，可以在其中探索尚未添加到 Azure 的功能。
 
 通常情况下，将在 Intune 仪表板中进行操作，如下所示。 在 Intune 管理控制台中，可设置及管理组、策略、设备和应用。
 
-可通过选择仪表板顶部的“经典门户”，从仪表板转到经典 Intune 管理控制台。
+可以选择仪表板顶部的“经典门户”，从仪表板转到 Intune 管理控制台。
 
 若要返回 Intune Azure 门户，请在浏览器地址栏中输入 https://portal.azure.com，然后再次从服务列表选择 Intune。
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 07/18/2017
 
 ## <a name="next-steps"></a>后续步骤
 
-### <a name="intune-on-azure"></a>Azure 上的 Intune
+### <a name="intune-in-the-azure-portal"></a>Azure 门户中的 Intune
 了解有关 [Azure 门户中的 Intune](what-is-intune.md) 的详细信息
 
 ### <a name="integration-with-other-products"></a>与其他产品的集成

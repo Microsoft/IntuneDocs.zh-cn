@@ -1,6 +1,6 @@
 ---
 title: "注册设备 - 设备注册管理员"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "使用设备注册管理器帐户在 Intune 中注册设备。 \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>使用设备注册管理器注册设备
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 08/25/2017
 
 一家餐厅想为服务员提供 50 台销售点平板电脑，为厨房员工提供订单监视器。 员工无需访问公司数据或以用户身份登录。 Intune 管理员将创建一个设备注册管理器帐户并向该 DEM 帐户添加餐厅主管，使主管拥有 DEM 功能。 现在主管便可使用 DEM 凭据注册这 50 台平板电脑。
 
-只有 Intune 控制台中的用户可以是设备注册管理员。 设备注册管理器用户不能充当 Intune 管理员。
+只有 Azure 门户中的用户才能是设备注册管理员。 设备注册管理器用户不能充当 Intune 管理员。
 
 DEM 用户可以：
 
@@ -95,5 +95,5 @@ DEM 用户可以：
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>查看设备注册管理器的属性
 
-1. 在 Intune 门户中，选择“设备注册”，然后选择“设备注册管理器”。
+1. 在 Azure 门户中，依次选择“设备注册”和“设备注册管理员”。
 2. 在“设备注册管理器”边栏选项卡上，右键单击 DEM 用户，然后选择“属性”。
