@@ -3,8 +3,8 @@ title: "什么是 Microsoft Intune 中的设备配置文件？"
 titlesuffix: Azure portal
 description: "了解 Intune 设备配置文件，以及它们如何帮助管理和保护公司的设备。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: get-started-article
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1053ddf4195e8481cf383c441664e07c02dacdec
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 101e19a9de67a3a47f488988957bc1e7ef7626a3
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
 

@@ -3,8 +3,8 @@ title: "使用 Intune 定位丢失的 iOS 设备"
 titlesuffix: Azure portal
 description: "了解如何使用 Intune 定位丢失或被盗的 iOS 设备。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1d38906ef14a97043dc97ff9149cd602cd4de120
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 9d03555e91a9e759e62b829576a0d39f957ab430
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 定位丢失或被盗的 iOS 设备
 

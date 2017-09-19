@@ -2,8 +2,8 @@
 title: "Windows 10 策略设置"
 description: "使用本主题中列出的策略设置可帮助你为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f19b7e9d57350f90baca96562a99b2fde66f91a
-ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
+ms.openlocfilehash: 3264bd25f3a30e12930cc6d89c18baea558ffccc
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的 Intune 策略设置
 

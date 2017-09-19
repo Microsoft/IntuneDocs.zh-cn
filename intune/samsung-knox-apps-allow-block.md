@@ -3,8 +3,8 @@ title: "Intune 策略允许/阻止使用 Samsung KNOX 的应用"
 titlesuffix: Azure portal
 description: "创建自定义配置文件，以允许和阻止适用于 Samsung KNOX 标准版设备的应用。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: acb7ae72c8b81e06a9974f2a1c6f084c565bee82
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7be589889cab1e04eeebdac7091c7ce573a3dcc9
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用自定义策略以允许和阻止适用于 Samsung KNOX 标准版设备的应用
 

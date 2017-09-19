@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 9/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a08296770ee3a326411d3267705ed6a912ab17bd
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 040ce88c47eb12bbe9b228189d90ca422e5185e7
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -35,13 +35,6 @@ ms.lasthandoff: 08/14/2017
 -   **允许的应用**：这些应用需要符合此策略。
 
 -   **豁免应用**：这些应用从此策略中豁免，可以无限制地访问公司数据。
-
-> [!IMPORTANT]  
-> Intune 建议将公司门户应用添加到豁免列表，从而支持应用程序正常工作。 为此，请将以下“应用商店应用”添加到“豁免应用”列表：  
->   - 名称：公司门户  
->   - 发布者：CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
->   - 产品名称：Microsoft.CompanyPortal  
-
 
 ### <a name="types-of-apps"></a>应用类型
 

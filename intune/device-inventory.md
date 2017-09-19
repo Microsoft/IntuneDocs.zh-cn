@@ -3,8 +3,8 @@ title: "查看 Intune 设备清单"
 titlesuffix: Azure portal
 description: "了解如何查看使用 Intune 管理的设备，并了解其硬件和已安装的应用。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45ef07d68248ab4c0c6f3a3e6e8da83cb210c5c7
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e3e74651acf11ff0ea88531460d030e03749520a
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>如果查看 Intune 设备清单
 

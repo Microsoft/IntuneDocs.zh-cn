@@ -2,8 +2,8 @@
 title: "使用 PSK 的 Wi-Fi"
 description: "使用自定义配置创建具有预共享密钥的 Wi-Fi 配置文件。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7f3432f914c2f4a76d7a9303924d106b270220a1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a60dd2c3d1c03a0365a6f783b012663c4bbfb652
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自定义策略创建具有预共享密钥的 Wi-Fi 配置文件
 

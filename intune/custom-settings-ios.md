@@ -3,8 +3,8 @@ title: "适用于 iOS 设备的 Intune 自定义设置"
 titleSuffix: Azure portal
 description: "了解可以在 iOS 自定义配置文件中使用的设置。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7dfb69b8e837229eac9a4cdd68316a7559441f4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6ef1d45946b22a2e41e1b6ea758a7cb1a472fefd
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="microsoft-intune-custom-settings-for-ios-devices"></a>适用于 iOS 设备的 Microsoft Intune 自定义设置
 

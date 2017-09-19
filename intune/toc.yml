@@ -115,7 +115,7 @@
     - name: 设置 Intune
       href: setup-steps.md
       items:
-        - name: 先决条件
+        - name: 支持的配置
           href: supported-devices-browsers.md
           items:
             - name: 网络带宽使用
@@ -595,5 +595,5 @@
       items:
         - name: 适用于 Intune 的图形 API 的相关参考
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: 词汇表
+- name: 术语表
   href: intune-glossary.md
