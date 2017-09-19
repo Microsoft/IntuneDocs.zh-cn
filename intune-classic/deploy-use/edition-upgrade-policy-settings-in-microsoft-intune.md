@@ -2,8 +2,8 @@
 title: "Windows 版本升级策略设置"
 description: "了解如何使用 Intune 将 Windows 10 设备自动升级至其他版本。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 04/14/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1505adb219c38d9a67f4fa276ca345f05a0df42a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6f13e20144c96406b2e117c95a972a286b771e52
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 版本升级策略设置
 

@@ -2,8 +2,8 @@
 title: "在 Intune 控制台中配置 MAM 策略"
 description: "Microsoft Intune 中的移动应用管理策略让你可以修改你所部署的应用的功能，以帮助它们符合你的公司合规性和安全策略。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 03/17/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9a766dcf105abcc854c7cdb8e72c8a050d691f7a
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>配置和部署 Microsoft Intune 控制台中的移动应用程序管理策略
 

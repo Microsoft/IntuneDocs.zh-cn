@@ -2,8 +2,8 @@
 title: "为注册设备添加应用"
 description: "部署应用之前，必须将其添加到 Intune。 然后就可以在 Intune 控制台中对其进行部署和管理。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 98d0376ff02ea89e019fba6022de800f3ca84555
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fbf9a25cf5b0c9e62d92b0ba9fa390de61ece468
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>为注册设备添加应用到 Intune
 

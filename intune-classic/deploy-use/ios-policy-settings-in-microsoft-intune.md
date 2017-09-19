@@ -2,8 +2,8 @@
 title: "iOS 策略设置"
 description: "创建策略，该策略控制通过 Intune 管理的 iOS 设备上的设置及功能。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 07/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8036dbbb6486d06fa46f7f96199055b9ca7a398c
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: a05b5221ac282bea7c409e96216390d86339bc8a
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 策略设置
 

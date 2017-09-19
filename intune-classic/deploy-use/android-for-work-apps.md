@@ -2,8 +2,8 @@
 title: "将应用部署到 Android for Work 设备"
 description: "使用本主题可从 Google Play for Work 商店同步应用，然后将应用部署到 Android for Work 设备。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/03/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: adc4a343e610a1a75f8a5bc51a1894f6fcf998bb
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 0a00c3dd1f6b6b8066a568c87f304a4da374f4d7
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 将应用部署到 Android for Work 设备
 
