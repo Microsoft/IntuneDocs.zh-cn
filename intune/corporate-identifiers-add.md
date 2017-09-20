@@ -15,24 +15,24 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85303c503e068ec23c8321b9359760775bbdb6f8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 58dac14dcc38329cfa0a98746e667bf6e5438170
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 管理员可以通过多种方式将设备标识为公司拥有。 Intune 可以从公司拥有的设备收集其他信息。 还可设置设备限制，防止对非公司拥有的设备进行注册。
+作为 Intune 管理员，可以将设备标识为“公司拥有”，细化管理和标识。 Intune 可以执行其他管理任务，从公司拥有的设备收集其他信息，例如完整的电话号码和应用清单。 还可设置设备限制，阻止对非公司拥有的设备进行注册。
 
 满足以下任意条件时，设备将被标识为公司拥有的设备：
 
 - 使用[设备注册管理员](device-enrollment-manager-enroll.md)帐户进行注册（所有平台）
 - 通过 Apple [设备注册计划](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md) 或 [Apple 配置器](apple-configurator-enroll-ios.md)进行注册（仅限 iOS）
 - 使用国际移动设备标识符 (IMEI) 号码（具有 IMEI 号码的所有平台）或序列号（iOS 和 Android）[在注册前标识为“公司自有”](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- 在 Azure Active Directory 或企业移动性 + 安全性中注册为 Windows 10 企业版设备（仅限 Windows 10）
+- 在 Azure Active Directory 或企业移动性 + 安全性中注册为 Windows 10 企业版设备
 - 设备的属性列出[设备所有权为公司](#change-device-ownership)
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>使用 IMEI 或序列号标识公司拥有的设备

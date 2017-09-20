@@ -3,10 +3,10 @@ title: "配置适用于 Windows 10 的 Intune 教育设置"
 titleSuffix: Azure portal
 description: "了解如何使用 Intune 配置所管设备上 Windows 10 的教育设置。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c18eaa0416a41e802f82bbe12b57a4d25118892c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Windows 10 教育设置
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/09/2017
 
 可以使用教育配置文件指定配置 Windows Take a Test 应用的详细信息，其中包括帐户详细信息和测试 URL。 对此进行配置时，Take a Test 应用随指定的测试打开，直到测试完成才可以在设备上运行其他应用程序。
 
-使用本主题中的信息了解有关配置设备限制配置文件的基础知识，然后深入阅读每个平台的主题以了解设备详情。
+有关 Take a Test 应用的详细信息，请参阅[在 Windows 10 中参加测验](https://docs.microsoft.com/education/windows/take-tests-in-windows-10)。
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>创建包含教育配置文件设置的设备配置文件
 
@@ -46,7 +46,10 @@ ms.lasthandoff: 09/09/2017
     - **文本建议** - 在用户执行测试时允许或阻止文本建议。
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-将创建配置文件并在“配置文件列表”边栏选项卡上显示。
+此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
+
+## <a name="next-steps"></a>后续步骤
+
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 

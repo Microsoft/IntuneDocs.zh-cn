@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/16/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: d553f62ed2ee1c9e5a6b9121b766e6e427d06bf7
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
@@ -370,7 +370,14 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 ### <a name="other-ios-enrollment-errors"></a>其他 iOS 注册错误
 有关 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune-user-help/using-your-iOS-or-macOS-device-with-intune)。
 
-## <a name="pc--issues"></a>PC 问题
+## <a name="pc-issues"></a>电脑问题
+
+
+|错误消息|问题|解决方法|
+|---|---|---|
+|**IT 管理员需要分配许可证才能进行访问**<br>IT 管理员未授予你使用此应用的权限。 请向 IT 管理员寻求帮助或稍后重试。|无法注册设备，因为该用户的帐户没有必要的许可证。|必须先为用户分配必要的许可证，用户才能注册其设备。 此消息表明用户持有的指定移动设备管理机构许可证类型不正确。 例如，如果已将 Intune 指定为移动设备管理机构，并且用户正在使用 System Center 2012 R2 Configuration Manager 许可证，则将收到此错误消息。<br>请参阅有关如何[将 Intune 许可证分配给用户帐户](https://docs.microsoft.com/intune/licenses-assign)的信息。|
+
+
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
 **问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。

@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>帮助最终用户理解公司门户应用消息
 
@@ -95,6 +95,17 @@ ms.lasthandoff: 08/03/2017
 ### <a name="how-to-explain-this-to-your-users"></a>如何就此向用户解释
 将用户转到[通过电子邮件向 IT 管理员发送日志](/intune-user-help/send-logs-to-your-it-admin-by-email-android)。 如果希望用户对比两种方法，还可将其转到[通过电缆向 IT 管理员发送日志](/intune-user-help/send-logs-to-your-it-admin-by-cable-android)。
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>公司支持人员需要授予你访问公司资源的权限
+
+### <a name="where-it-appears"></a>显示位置
+如果未将公司门户应用添加到“允许的应用”或“豁免应用”列表，用户尝试登录时，登录将失败。 此时会显示以下消息：
+
+> 公司支持人员需要授予你访问公司资源的权限  
+> 公司将使用 Windows 信息保护策略保护你的设备。 公司支持人员需要确保他们允许公司门户访问这些内容。
+
+### <a name="what-it-means"></a>其含义
+
+将公司门户添加到 Windows 信息保护 (WIP) 应用保护策略中的“允许的应用”或“豁免应用”列表。 有关详细信息，请参阅[通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)。
 
 ### <a name="see-also"></a>另请参阅
 [最终用户需了解的 Intune 使用情况](end-user-educate.md)
