@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 进行 iOS 设备注册
 
@@ -38,17 +38,8 @@ ms.lasthandoff: 09/09/2017
 - 用户关联需要 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 - 从 [Apple School Management](http://school.apple.com) 计划购买的设备
 
-**Apple School Manager 注册步骤**
-1. [获取 Apple School Manager 令牌并分配设备](#get-the-apple-token-and-assign-devices)
-2. [创建注册配置文件](#create-an-apple-enrollment-profile)
-3. [连接学校数据同步](#connect-school-data-sync)（可选）
-4. [同步 Apple School Manager 管理的设备](#sync-managed-devices)
-5. [为设备分配 Apple School Manager 配置文件](#assign-a-profile-to-devices)
-6. [将设备分配给用户](#distribute-devices-to-users)
-
 >[!NOTE]
 >在具有用户关联的 Apple School Manager 设备上注册期间，多重身份验证 (MFA) 不起作用。 注册之后，MFA 在这些设备上会正常运行。 注册后，MFA 将按预期在设备上运行。 设备无法提示用户在首次登录时需要更改密码。 此外，在注册过程中，密码已过期的用户不会获得重置密码的提示。 用户必须使用其他设备重置密码。
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>获取 Apple 令牌并分配设备
 
@@ -104,7 +95,8 @@ ms.lasthandoff: 09/09/2017
     - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。
 
      - **注册锁定** -（需要管理模式 = 受到监督）禁用可能允许删除管理配置文件的 iOS 设置。 如果将此复选框保留为空，它将允许从“设置”菜单中删除管理配置文件。
-   - **Shared iPad** -（要求“通过用户关联进行注册”和“受监督”模式。）允许多个用户使用托管 Apple ID 登录到已注册的 iPad。 在 Apple School Manager 门户中创建托管的 Apple ID。 了解有关[共享 iPad](education-settings-configure-ios-shared.md) 的详细信息。
+   - **Shared iPad** -（要求“通过用户关联进行注册”和“受监督”模式。）允许多个用户使用托管 Apple ID 登录到已注册的 iPad。 在 Apple School Manager 门户中创建托管的 Apple ID。 了解有关[共享 iPad](education-settings-configure-ios-shared.md) 的详细信息。 还应查看 [Apple 的共享 iPad 要求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
+
    >[!NOTE]
    >如果“用户关联”设置为“使用用户关联”或者“受监督”模式设置为“关闭”，则注册配置文件将禁用“Shared iPad”模式。
 

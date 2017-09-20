@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 中注册 Android 设备
 
@@ -54,14 +54,14 @@ ms.lasthandoff: 07/13/2017
 
 6.  在“公司访问设置”屏幕上，点击“开始”。
 
-    ![“公司访问设置”屏幕](./media/and-enroll-4a-comp-access-setup.png)
+    ![“公司访问设置”屏幕](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > 黄色三角形并不意味着发生了错误。 这些图标指示注册过程中仍存在需要完成的步骤。
 
-7. 在**为什么要注册设备？**屏幕上，阅读注册设备时你可以执行的操作，然后点击**继续**。
+7. 在“设备管理的优势”屏幕上，阅读注册设备时可以执行的操作，然后点击“继续”。
 
-    ![“为什么要注册设备？”屏幕](./media/and-enroll-4b-why-enroll.png)
+    ![“设备管理的优势”屏幕](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  查看 IT 管理员在你的设备上可以看到和不可以看到的内容的列表，然后点击“继续”。
 
@@ -114,13 +114,13 @@ ms.lasthandoff: 07/13/2017
 
 14. “公司访问设置”屏幕出现时，点击“继续”。 如果消息指示你的设备不兼容，请按照说明修复该问题，然后点击“继续”。
 
-    ![设备不兼容，但已注册](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![设备不兼容，但已注册](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![出现设备兼容性问题，需要解决方案](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![出现设备兼容性问题，需要解决方案](/intune/media/android_cp_enroll_03_post_1709.png)
 
     可以通过点击问题了解有关详细信息。
 
-    ![展开的设备兼容性问题](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![展开的设备兼容性问题](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![“公司访问设置”屏幕](./media/and-enroll-9d-comp-access-setup.png)  
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 09/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fba27041fb55cfbef1cbba39e3679ce6884cd5f0
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 7fcdd4e7679bc969a7fa000e515b59882973a3da
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-intune"></a>设置 Intune
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 08/21/2017
 
 | 步骤 | 状态  |
 | ------------- |-------------|
-| 1  | [先决条件](supported-devices-browsers.md) - 在开始之前需要了解的信息。 包括支持的配置和网络要求。|
+| 1  | [支持的配置](supported-devices-browsers.md) - 在准备阶段需要了解的信息。 包括支持的配置和网络要求。|
 | 2 |  [登录 Intune](account-sign-up.md) - 登录试用订阅或创建新的 Intune 订阅。 |  
 | 3 | [配置域名](custom-domain-name-configure.md) - 设置 DNS 注册，以将公司域名与 Intune 连接。 此操作可在连接 Intune 和使用资源时为用户提供熟悉的域。  |
 | 4 | [添加用户](users-add.md) - 手动添加用户或连接 Active Directory 以将用户与 Intune 同步。 除非设备是“无用户”网亭设备，否则必须执行此操作。 |

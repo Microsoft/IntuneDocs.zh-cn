@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 067009356171184fa34dd51c9a0b01b41f14cab7
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: cd858d617d9a9f2154a5682f5421a096d0c28224
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="enroll-windows-devices"></a>注册 Windows 设备
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 09/09/2017
 
 Intune 管理员可通过以下方式简化注册：
 - [启用自动注册](#enable-windows-10-automatic-enrollment)（需要 Azure AD Premium）
-- [CNAME 注册]()
-- 启用批量注册（需要 Azure AD Premium 和 Windows 配置设计器）
+- [CNAME 注册](#simplify-windows-enrollment-without-azure-ad-premium)
+- [启用批量注册](windows-bulk-enroll.md)（需要 Azure AD Premium 和 Windows 配置设计器）
 
 两个因素决定你简化 Windows 设备注册的方式：
 
