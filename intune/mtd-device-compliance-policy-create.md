@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 创建移动威胁防御 (MTD) 设备符合性策略
 
@@ -35,8 +35,6 @@ ms.lasthandoff: 09/09/2017
 MTD 设备符合性策略先决条件：
 
 -   使用 Intune 设置 MTD 集成
-
--   在 Intune 中启用 MTD 连接器。
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>创建 MTD 设备符合性策略
 
@@ -77,3 +75,7 @@ MTD 设备符合性策略先决条件：
 
     > [!NOTE] 
     > 你已将策略应用于用户。 将评估策略针对的用户所使用设备的合规性。
+
+## <a name="next-steps"></a>后续步骤
+
+- [通过 Intune 启用 MTD](mtd-connector-enable.md)

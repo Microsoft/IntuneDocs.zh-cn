@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77021ddc681f10d735ed0e680738122667608bdf
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>使用 Intune 设置 Lookout 移动威胁防御集成
 
@@ -130,5 +130,7 @@ Lookout 移动威胁防御将移动威胁分为多种类型。 [Lookout 威胁�
 
 ## <a name="watching-enrollment"></a>监视注册
 此步骤完成后，Lookout 移动威胁防御将开始轮询 Azure AD，查找与指定注册组相对应的设备。  可在“设备”模块查看有关已注册设备的信息。  设备的初始状态显示为“待定”。  在设备上安装、打开和激活 Lookout for Work 应用后，设备状态将发生改变。  有关如何将 Lookout for Work 应用推送到设备的详细信息，请参阅[使用 Intune 添加 Lookout for Work 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)主题。
+
 ## <a name="next-steps"></a>后续步骤
-[启用 Lookout MTD 连接 Intune](mtd-connector-enable.md)
+
+[设置 Lookout 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)

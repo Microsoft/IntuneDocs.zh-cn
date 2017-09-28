@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>通过 Microsoft Intune 警报获取通知
 
@@ -61,6 +61,8 @@ ms.lasthandoff: 09/05/2017
 
 ## <a name="working-with-alerts"></a>使用警报
 
+若要在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中查看警报，请选择“警报”，然后选择要查看的警报类型。
+
 使用下列选项可帮助你使用 Intune 管理控制台中的警报。
 
 |选项|说明|
@@ -70,11 +72,12 @@ ms.lasthandoff: 09/05/2017
 |**关闭警报**|在警报列表中，选择要关闭的警报，然后选择“关闭警报”。<br /><br />已关闭的警报会在 90 天后被永久删除。|
 |**重新激活已关闭的警报**|在警报列表中，将“筛选器”下拉列表设置为“关闭”。<br /><br />在已关闭的警报列表中，选择想要重新激活的警报，然后选择“重新激活警报”。|
 
-Intune 警报将保持活动状态，直到：
+在 30 天内或发生以下事件之前，Intune 警报将保持活动状态：
 
-- 导致警报的问题得到解决
-- 手动关闭了警报
-- 警报已生成 45 天
+- 导致警报的问题得到解决。
+- 手动关闭了警报。
+
+警报可在关闭 30 天后重新激活。 30 天后，将从 Intune 删除已关闭和非活动警报。
 
 > [!TIP]
 > 如果运行不同操作系统的设备生成了相同的警报，则你可能会在警报列表中看到相同警报的多个版本。

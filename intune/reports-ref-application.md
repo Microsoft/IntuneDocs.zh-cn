@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: cd684feec1df6b20f9349052496a21895527710b
+ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="reference-for-application-entities"></a>应用程序实体引用
 
@@ -98,3 +98,17 @@ VppProgramTypes 实体列出了应用的可能 VPP 计划类型。
 | 3DDA2474-470B-4503-9830-2665C21C1945 |Microsoft |Microsoft 的 VPP 计划 |
 | 00000000-0000-0000-0000-000000000000 |尚未提供 |默认值，无 VPP |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B |Apple |Apple 的 VPP 计划 |
+
+
+
+## <a name="applicationinventory"></a>ApplicationInventory
+
+ApplicationInventory 项列出了收集清单时在设备上找到的应用程序。
+
+| 属性  | 描述 |
+|---------|------------|
+| DeviceKey |这是对包含 Intune 设备 ID 的“设备”表的引用 |
+| DateKey |对表明清单日期的日期表格的引用 |
+| ApplicationName |应用程序名称。 |
+| ApplicationVersion |应用程序版本 |
+| BundleSize |应用的大小（字节） |
