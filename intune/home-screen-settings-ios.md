@@ -15,17 +15,17 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5acee0ad4ea3d593acec78336f4815304503092
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 1fceed3027e0d8bb746692c1eb39e17829aa3891
+ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune 主屏幕布局设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用这些设置配置停靠上的应用、文件夹和 Web 剪辑的布局和 iOS 设备的主屏幕。
+使用这些设置，配置 iOS 设备停靠栏和主屏幕停上应用和文件夹的布局。
 
 分配了配置文件的 iOS 设备必须处于监督模式下并运行 iOS 9.3 或更高版本。
 

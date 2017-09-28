@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: 方案实现指南
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: 保护 Exchange Online
           href: exchange-online-protect.md
         - name: 削减支持人员成本
           href: password-reset.md
+        - name: 防止未经授权的访问
+          href: data-outside-protect.md
+        - name: 防止非受管理设备上的数据泄露
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: 迁移指南
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: Check Point 和 Intune 集成
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: 添加 MTD 应用
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: 在 Intune 中启用 MTD
-              href: mtd-connector-enable.md
-            - name: 创建 MTD 设备符合性策略
-              href: mtd-device-compliance-policy-create.md
+            - name: 设置 Zimperium
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Zimperium 和 Intune 集成
+                  href: zimperium-mtd-connector-integration.md
+            - name: 设置 Intune for MTD
+              items:
+                - name: 添加 MTD 应用
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: 创建 MTD 设备符合性策略
+                  href: mtd-device-compliance-policy-create.md
+                - name: 在 Intune 中启用 MTD
+                  href: mtd-connector-enable.md
         - name: 网络访问控制
           href: network-access-control-integrate.md
         - name: 设置 Windows Hello
@@ -595,5 +606,5 @@
       items:
         - name: 适用于 Intune 的图形 API 的相关参考
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: 术语表
+- name: 词汇表
   href: intune-glossary.md

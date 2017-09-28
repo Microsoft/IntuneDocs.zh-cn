@@ -15,11 +15,11 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 92e1f8474625d2036c698da0473ec20926da68d2
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: a4560ab65ecd1d30492ae2a1a2f136511195c674
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>将 Check Point SandBlast Mobile 与 Intune 集成
 
@@ -81,4 +81,4 @@ Check Point SandBlast 应用授权流程包含下列内容：
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 Intune 中启用 Check Point SandBlast Mobile 连接器](mtd-connector-enable.md)
+- [设置 Check Point SandBlast Mobile 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)

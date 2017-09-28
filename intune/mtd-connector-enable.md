@@ -15,18 +15,18 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ed7ac5467fe3a37a133aac61a9ccffe2e6119e6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d818581ca74e64bf27c968b39969afd889b6fbda
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>在 Intune 中启用移动威胁防御
 
 > [!NOTE] 
 > 本主题适用于所有移动威胁防御合作伙伴。
 
-若要在 Intune 中启用移动威胁防御 (MTD) 连接，应已在 MTD 解决方案控制台中配置了 Intune 连接器。
+若要在 Intune 中启用移动威胁防御 (MTD) 连接，应已在 MTD 合作伙伴控制台中配置了 Intune 连接器。
 
 ## <a name="to-enable-the-mtd-connector"></a>启用 MTD 连接器
 
@@ -65,7 +65,3 @@ ms.lasthandoff: 09/09/2017
 
 > [!TIP]
 > 你可以从“移动威胁防御”边栏选项卡看到 Intune 和 MTD 合作伙伴之间的“连接状态”和“上次同步”时间。
-
-## <a name="next-steps"></a>后续步骤
-
-[使用 Intune 创建移动威胁防御设备符合性策略](mtd-device-compliance-policy-create.md)
