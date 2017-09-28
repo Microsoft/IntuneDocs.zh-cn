@@ -27,7 +27,7 @@
 ### [修复 Android 的常见问题](troubleshoot-your-device-android.md)
 #### [检查设备符合性](check-compliance-on-your-device-android.md)
 
-#### [使用日志修复问题]
+#### 使用日志修复问题
 ##### [启用详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [使用电子邮件发送日志](send-logs-to-your-it-admin-by-email-android.md)
 ##### [使用 USB 线缆发送日志](send-logs-to-your-it-admin-using-cable-android.md)
