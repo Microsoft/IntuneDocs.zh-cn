@@ -30,7 +30,7 @@ ms.lasthandoff: 08/25/2017
 > 本主题演练使用 Exchange Online 添加基于应用的条件性访问策略的步骤，当添加已批准应用列表中的 SharePoint Online、Microsoft Teams 等其他应用时，也可使用相同的步骤。
 
 ## <a name="to-create-an-app-based-conditional-access-policy"></a>创建基于应用的条件性访问策略
-1.  转到“Azure 门户[](https://portal.azure.com)”，然后使用你的凭据登录。
+1.  转到“[Azure 门户](https://portal.azure.com)”，然后使用你的凭据登录。
 
 2.  选择“更多服务”，然后键入 Intune。
 
