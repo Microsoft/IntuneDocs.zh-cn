@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 93a08f4c653fe320284821c1532cdbd84d090b2f
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>如何登录公司门户应用？ <!--User Story 1132123-->
 
@@ -79,4 +79,4 @@ ms.lasthandoff: 08/03/2017
 
   ![通过身份验证过程后，公司门户应用登录，并通过一个加载条提示进程。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

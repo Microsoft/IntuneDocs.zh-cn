@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 081798753f3e962e0ca500097fc55e021802c73d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 22cdbc1140c57cb7475689307df5a261774761d5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>你需要升级你的设备以安装 Outlook 应用
 
@@ -34,4 +34,4 @@ Outlook 应用帮助数以百万的用户轻松访问自己的电子邮件帐户
 ## <a name="if-you-have-an-ios-device"></a>如果你具有 iOS 设备
 点击“设置” > “常规” > “软件更新”。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
