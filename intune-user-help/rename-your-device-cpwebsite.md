@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b3a9ea6fb7134f2be6b05f883e5dab2d1aef1d59
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8023e3a75dbf9a3275654b7ed8f917546d401168
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>从公司门户网站重命名设备
 
-你可能决定重命名设备以使其更容易识别。 可从[公司门户网站](http://portal.manage.microsoft.com)执行此操作。 公司门户网站是一个网页，可用于管理已向 IT 部门管理注册的计算机和设备。
+你可能决定重命名设备以使其更容易识别。 可从[公司门户网站](https://portal.manage.microsoft.com)执行此操作。 公司门户网站是一个网页，可用于管理已向 IT 部门管理注册的计算机和设备。
 
 重命名设备：
 
-1.  在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
+1.  在[公司门户网站](https://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
 2. 在“我的设备”页上，选择想要重命名的设备名称。
 
@@ -40,4 +40,4 @@ ms.lasthandoff: 07/01/2017
 
 4.  在显示设备名称的文本框中，键入设备的新名称，然后点击“重命名”按钮。 你的设备现在将显示新的名称。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

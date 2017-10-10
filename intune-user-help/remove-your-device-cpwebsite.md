@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4293e05d3668c7f6d6d6b9986e006061df5afe80
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b490148a932339d4fb4366d28e020416782ceee
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>从公司门户中删除设备
 
-如果决定不再需要公司或组织托管你的设备，则可以使用[公司门户网站](http://portal.manage.microsoft.com)将其从公司门户中删除。 公司门户网站是一个网页，可用于管理已向 IT 部门管理注册的计算机和设备。 如果删除设备，则不会再将其列入公司门户，并且你可能也无法访问公司或学校数据、应用和电子邮件。
+如果决定不再需要公司或组织托管你的设备，则可以使用[公司门户网站](https://portal.manage.microsoft.com)将其从公司门户中删除。 公司门户网站是一个网页，可用于管理已向 IT 部门管理注册的计算机和设备。 如果删除设备，则不会再将其列入公司门户，并且你可能也无法访问公司或学校数据、应用和电子邮件。
 
 删除设备：
 
-1.  在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
+1.  在[公司门户网站](https://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
   ![公司门户网站的图像，屏幕左侧有展开的侧菜单，其中包括“主页”、“所有应用”、“我的设备”、“支持人员”和“注销”按钮。](/media/iwp-expanded-sidebar.png)
 
@@ -42,4 +42,4 @@ ms.lasthandoff: 07/01/2017
 
 4. 阅读警告消息，然后点击“删除”以从公司门户中删除设备。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
