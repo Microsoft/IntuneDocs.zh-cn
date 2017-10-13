@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 926e09173918488d6beb1f0e3f725a0cff2971b4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Windows 设备后会发生什么情况？
 
-安装公司门户应用，然后使用该应用注册 Windows 或 Windows Phone 设备，即表示你允许 IT 管理员管理你的设备以保护公司或学校数据的安全。 本主题介绍设备版本低于 Windows 10 时会发生的情况。 对于 Windows 10 设备，请参阅[相关主题](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)。
+安装公司门户应用，然后使用该应用注册 Windows 或 Windows Phone 设备，即表示你允许公司支持人员管理你的设备以保护公司或学校数据的安全。 本主题介绍设备版本低于 Windows 10 时会发生的情况。 对于 Windows 10 设备，请参阅[相关主题](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)。
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>注册后，所有 Windows 设备会发生什么情况
 在 Intune 中注册 Windows 或 Windows Phone 设备，可实现以下操作：
@@ -37,15 +37,15 @@ ms.lasthandoff: 07/01/2017
 
 -   在手机丢失或被盗时将它重置为出厂设置。
 
-注册设备时，会向 IT 管理员授予执行以下操作的权限：
+注册设备时，会向公司支持人员授予执行以下操作的权限：
 
 -   将设备重置回制造商的默认设置。 如果设备丢失或被盗，这非常有用。
 
 -   仅删除公司相关文件和业务应用。 *不会删除个人数据和设置。*
 
--   IT 管理员可看到设备上安装的软件，包括个人安装的软件。
+-   公司支持人员可看到设备上安装的软件，包括个人安装的软件。
 
--   对设备设置要求，例如要求使用设备密码或 PIN 以帮助保护公司数据。 IT 管理员还可以限制可输入错误密码的次数，并可在尝试次数过多时锁定设备。
+-   对设备设置要求，例如要求使用设备密码或 PIN 以帮助保护公司数据。 公司支持人员还可以限制可输入错误密码的次数，并可在尝试次数过多时锁定设备。
 
 -   要求用户加密其设备上的公司数据，以便在设备丢失或被盗时帮助保护公司数据。
 
@@ -55,22 +55,22 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>注册后，所有 Windows 电脑会发生什么情况
 
--  将在计算机上安装某个软件，使 IT 管理员能够管理计算机，并使你能够访问公司资源（如应用和支持信息）。 IT 管理员可能会自动更新此软件。
+-  将在计算机上安装某个软件，使公司支持人员能够管理计算机，并使你能够访问公司资源（如应用和支持信息）。 公司支持人员可能会自动更新此软件。
 
 -  可能会在计算机上安装 Intune Endpoint Protection。 此软件用于检查病毒和恶意软件。
 
--  IT 管理员可从计算机硬盘中收集或删除数据。
+-  公司支持人员可从计算机硬盘中收集或删除数据。
 
--  IT 管理员可在计算机上安装应用和更新。
+-  公司支持人员可在计算机上安装应用和更新。
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>设备注册之后每 8 小时会发生什么情况
 
 已注册的设备将以约 8 小时的间隔执行以下操作：
 
--   下载 IT 管理员已提供的任何策略或应用更新。
+-   下载公司支持人员已提供的任何策略或应用更新。
 
 -   发送任何硬件清单更新。
 
 -   发送任何公司应用清单更新。
 
-如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

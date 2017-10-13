@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何通过加密保护 Android 设备
 
 在加密设备时，将设备上的信息包装到一个保护代码层中以防止未经授权的人员访问这些信息。 为确保信息安全，组织会要求加密 Android 设备才能访问公司文件、电子邮件或数据。
 
 > [!Note]
-> 如果 IT 管理员要求使用 PIN 或密码，则加密前可能要求进行设置。
+> 如果公司支持人员要求使用 PIN 或密码，则加密前可能要求进行设置。
 
 如果取消注册手机，它将保持加密状态。
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/17/2017
 
 - 确保设备已充电并已插入。
 - 确保设备上已设置 PIN 或密码。
-- 如果已在设备上设置 PIN 或密码，则尝试以下步骤，IT 管理员可能要求你执行这些步骤来增强设备安全性。 你看到的菜单名称可能与这些步骤中的名称略有不同，具体取决于 Android 设备类型。
+- 如果已在设备上设置 PIN 或密码，则尝试以下步骤，公司支持人员可能要求你执行这些步骤来增强设备安全性。 你看到的菜单名称可能与这些步骤中的名称略有不同，具体取决于 Android 设备类型。
 
     1. 转到“设置” > “锁定屏幕和安全性” > “屏幕锁定”。 确认当前的 PIN 或密码。
 
@@ -66,4 +66,4 @@ ms.lasthandoff: 08/17/2017
 
     6. 打开公司门户应用，选择你的设备，然后点击“Check Compliance”（检查合规性）。
 
-仍需要帮助？ 请联系 IT 管理员（访问[公司门户网站](http://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
+仍需要帮助？ 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。

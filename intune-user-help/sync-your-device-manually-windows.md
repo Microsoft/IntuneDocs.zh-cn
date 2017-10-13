@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf43ed13b852cccbce44e2a31890e164e3519490
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="sync-your-windows-device-manually"></a>手动同步 Windows 设备
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 07/01/2017
 
     ![选择“访问工作单位或学校”](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. 选择工作或学校帐户。 根据 IT 管理员的设置方式，可能会看到与以下示例中类似的两个帐户。 一个帐户旁有一个公文包，另一个帐户旁有一个 Microsoft 徽标。
+2. 选择工作或学校帐户。 根据公司支持人员的设置方式，可能会看到与以下示例中类似的两个帐户。 一个帐户旁有一个公文包，另一个帐户旁有一个 Microsoft 徽标。
 
     - 如果看到带有公文包的帐户，请选择它，并找到下面的“信息”按钮。
     - 如果只看到带有 Microsoft 徽标的帐户，请选择该帐户，并找到下面的“信息”按钮。
@@ -129,4 +129,4 @@ ms.lasthandoff: 07/01/2017
 
    设备完成同步前，屏幕顶部将显示“我们正在同步你的帐户”消息。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>在电信费用管理中注册 Android 设备
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/01/2017
 
 选择适当的选项，随后将收到从 Google Play 商店安装 [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) 应用的通知。 组织可使用 Datalert 应用测量数据的使用情况。 如果贵组织已配置工作或学校注册选项，则要求使用工作或学校帐户进行登录。 如果尚未启用此选项，则需要提供电话号码等信息，并使用验证码来验证设备以便从应用注册 Datalert 服务。
 
-点击屏幕右上角的“下一步”箭头继续。 IT 管理员应该会告诉你是使用 __Microsoft 工作或学校帐户__登录，还是使用__电话号码__登录。
+点击屏幕右上角的“下一步”箭头继续。 公司支持人员应该会告诉你是使用 Microsoft 工作或学校帐户登录，还是使用电话号码登录。
 
   ![Datalert 应用欢迎屏幕的屏幕截图，屏幕上简要介绍如何使用 Datalert 充分利用数据计划，然后提示进入下一屏幕。](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 07/01/2017
 
 注册后，即可开始在 Datalert 应用中看到数据的使用情况。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

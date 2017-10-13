@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
+ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>从公司门户网站重置设备
 
-如果设备丢失或被盗，你可能想要将其重置为出厂默认设置，以防止对数据进行未经授权的访问。 可以通过使用[公司门户网站](http://portal.manage.microsoft.com)远程重置设备。 公司门户网站是一个网页，可用于管理已在 Intune 中注册的计算机和设备。 可以使用此网站完成与使用公司门户应用时能执行的大多数相同任务。
+如果设备丢失或被盗，你可能想要将其重置为出厂默认设置，以防止对数据进行未经授权的访问。 可以通过使用[公司门户网站](https://portal.manage.microsoft.com)远程重置设备。 公司门户网站是一个网页，可用于管理已在 Intune 中注册的计算机和设备。 可以使用此网站完成与使用公司门户应用时能执行的大多数相同任务。
 
 如果重置设备，则公司门户中将不再列出此设备，并会将其重置为出厂默认设置。
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/01/2017
 
 重置设备：
 
-1.  在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
+1.  在[公司门户网站](https://portal.manage.microsoft.com)上，点击“菜单”按钮，然后选择“我的设备”。
 
 2. 在“我的设备”页上，选择想要重命名的设备名称。
 
@@ -47,4 +47,4 @@ ms.lasthandoff: 07/01/2017
 
 你的设备现在已完成重置。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

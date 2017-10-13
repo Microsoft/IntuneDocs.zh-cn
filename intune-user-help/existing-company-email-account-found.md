@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 21d9e6678c9981b3c1d918f337322d50aa0fecb5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="an-existing-company-email-account-was-found"></a>找到现有公司电子邮件帐户
 
-你已有组织或公司的电子邮件帐户，现在你想在移动设备上访问该帐户。 IT 管理员需要你提供协助，从向你的设备发送电子邮件的用户开始，全程保护电子邮件访问的安全。 当前电子邮件可能已经处理，但执行以下步骤将使信息更安全。
+你已有组织或公司的电子邮件帐户，现在你想在移动设备上访问该帐户。 公司支持人员需要你提供协助，从向你的设备发送电子邮件的用户开始，全程保护电子邮件访问的安全。 当前电子邮件可能已经处理，但执行以下步骤将使信息更安全。
 
 1.  找到设备的“设置”，然后删除先前设置的与公司电子邮件的连接。
 
@@ -34,4 +34,4 @@ ms.lasthandoff: 07/01/2017
 
 3.  等待新的电子邮件设置自动应用到您的设备很短时间。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

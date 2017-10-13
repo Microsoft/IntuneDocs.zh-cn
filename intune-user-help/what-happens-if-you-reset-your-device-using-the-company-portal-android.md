@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>使用公司门户重置 Android 设备会发生什么情况？
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 07/01/2017
 
 通过从公司门户中选择“设备删除”选项，可在 Samsung KNOX 设备上执行“选择性擦除”。 选择性擦除只会删除：
 
-- IT 管理员提供的业务应用。
+- 公司支持人员向你提供的业务应用。
 - 电子邮件、VPN 和 Wi-Fi。
-- IT 管理员强制实施某些设置的功能。
+- 公司支持人员强制实施某些设置的能力。
 
-如有疑问，请与你的 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

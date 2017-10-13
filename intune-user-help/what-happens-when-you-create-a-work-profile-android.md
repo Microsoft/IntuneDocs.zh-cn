@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>创建工作配置文件时会发生的情况
 
@@ -28,9 +28,9 @@ ms.lasthandoff: 07/01/2017
 
 创建工作配置文件时：
 
-- IT 管理员只能管理设备上与工作相关的电子邮件、应用、设置和数据，而不能管理个人应用或数据。
+- 公司支持人员只能管理设备上与工作相关的电子邮件、应用、设置和数据，而不能管理个人应用或数据。
 
-- 可从 Play Store for Work 获取工作应用。 若要获取个人应用，可继续转到始终用于获取个人应用的 Google Play 商店。 IT 管理员无法查看或管理你的个人应用。
+- 可从 Play Store for Work 获取工作应用。 若要获取个人应用，可继续转到始终用于获取个人应用的 Google Play 商店。 公司支持人员无法查看或管理你的个人应用。
 
 - 工作应用与你的个人应用分开，但是它们可以同时出现在主屏幕上。 下面是你可能会看到的内容的示例。 你的屏幕可能看起来略有不同。
 
@@ -38,9 +38,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
-- 你的公司或学校拥有你的工作配置文件，因此 IT 管理员可以安装或删除工作应用或你的配置文件，但是无法安装或删除你的个人应用或数据。
-- IT 管理员无法重置或擦除你的设备。
+- 你的公司或学校拥有你的工作配置文件，因此公司支持人员可以安装或删除工作应用或你的配置文件，但是无法安装或删除你的个人应用或数据。
+- 公司支持人员无法重置或擦除你的设备。
 
 有关用于创建工作配置文件的步骤，请参阅[创建工作配置文件和注册设备](create-a-work-profile-and-enroll-your-device-in-intune-android.md)。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

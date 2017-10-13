@@ -15,21 +15,21 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>解决 Android 设备的常见问题
 
-有时 Android 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](http://portal.manage.microsoft.com)上的 IT 管理员联系信息与其联系。
+有时 Android 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://portal.manage.microsoft.com)上的公司支持人员联系信息与其联系。
 
 - [在 Android 设备上检查符合性](check-compliance-on-your-device-android.md)
-- [使用详细日志记录帮助 IT 管理员修复设备问题](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [使用电子邮件将日志发送给 IT 管理员](send-logs-to-your-it-admin-by-email-android.md)
-- [使用 USB 电缆将日志发送给 IT 管理员](send-logs-to-your-it-admin-using-cable-android.md)
-- [将注册错误发送给 IT 管理员](send-enrollment-errors-to-your-it-admin-android.md)
+- [使用详细日志记录帮助公司支持人员修复设备问题](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [通过电子邮件将日志发送给公司支持人员](send-logs-to-your-it-admin-by-email-android.md)
+- [使用 USB 电缆将日志发送给公司支持人员](send-logs-to-your-it-admin-using-cable-android.md)
+- [将注册错误发送给公司支持人员](send-enrollment-errors-to-your-it-admin-android.md)
 - [需更新 Android 设备](you-need-to-update-your-android-device.md)
 - [设备不符合最高操作系统版本](your-android-version-isnt-yet-supported.md)
 - [设备已取得 root 权限，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)

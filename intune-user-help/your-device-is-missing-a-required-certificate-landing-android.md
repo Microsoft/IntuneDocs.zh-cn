@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 910fe2bc4e616c3b60d351efaffe173f58c04bc6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 53bb84c3f2f9e8ee0c0bda419015ff35d1a51488
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>你的设备缺少必需的证书
 
@@ -30,12 +30,12 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="fixing-certificate-issues"></a>修复证书问题
 
-如果 Android 设备未在 Intune 中注册，并且缺少 IT 管理员所需的特定证书，则无法登录到公司门户应用。 在尝试登录时，你将看到以下消息：
+如果 Android 设备未在 Intune 中注册，并且缺少公司支持人员所需的特定证书，则无法登录到公司门户应用。 在尝试登录时，你将看到以下消息：
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
 首先应尝试确认设备是否[缺少通常随附预安装在其上的证书](your-device-is-missing-a-preinstalled-certificate-android.md)。
 
-如果无法确认，则 IT 管理员会[要求你再安装一个证书以获取额外的安全性](your-device-is-missing-an-IT-required-certificate-android.md)。
+如果无法确认，则公司支持人员会[要求再安装一个证书以获取额外的安全性](your-device-is-missing-an-IT-required-certificate-android.md)。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

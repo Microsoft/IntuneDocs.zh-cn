@@ -14,20 +14,20 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a92a64cdb94376991dfe8bea2e928316201b566
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>使用合适的密码确保设备更安全
 
 用户可能每天都需要从其 Windows 设备访问公司资源，例如电子邮件和文档。 组织希望确保设备安全地访问资源。 确保设备安全访问这些资源的一种方法是要求设备使用密码。 例如，这些密码用于从锁定屏幕访问你的设备。
 
-如果 Windows 设备与 IT 管理员设置的密码策略不相符，则会出现一条消息，其中简要描述了该问题并指出使密码符合要求所需的操作。
+如果 Windows 设备与公司支持人员设置的密码策略不相符，则会出现一条消息，其中简要描述了该问题并指出使密码符合要求所需的操作。
 
 > [!Note]
-> IT 管理员可以设置多个密码要求。 例如，密码可能必须要达到一定数量的字符，并且可能必须是数字和字母的组合。 由于 IT 管理员可能会设置多个要求，因此这些说明只介绍如何设置或更改密码。 而不对每种可能组合的要求进行解释。
+> 公司支持人员可以设置多个密码要求。 例如，密码可能必须要达到一定数量的字符，并且可能必须是数字和字母的组合。 由于 IT 管理员可能会设置多个要求，因此这些说明只介绍如何设置或更改密码。 而不对每种可能组合的要求进行解释。
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>在 Windows Phone 8.1 上更改密码
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 07/01/2017
 3. 在“新密码”框中输入新密码，随后在“确认密码”框中再次输入该密码。
 4. 选择“完成”。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

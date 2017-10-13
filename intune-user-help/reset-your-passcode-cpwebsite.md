@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0103eb02cd169a224624d46d93645861f7bbbd47
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何从公司门户网站重置设备密码
 
-如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](http://portal.manage.microsoft.com)进行重置。 可使用公司门户网站管理在 Intune 中注册的计算机和设备，还可以用于执行大多数使用公司门户应用时执行的相同任务。
+如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](https://portal.manage.microsoft.com)进行重置。 可使用公司门户网站管理在 Intune 中注册的计算机和设备，还可以用于执行大多数使用公司门户应用时执行的相同任务。
 
 > [!NOTE]
-> 如果使用企业注册设备，在公司门户网站上可能看不到“重置密码”按钮。 如果看不到，请联系 IT 管理员为你重置密码。
+> 如果使用企业注册设备，在公司门户网站上可能看不到“重置密码”按钮。 如果看不到，请联系公司支持人员为你重置密码。
 
 重置密码：
 
-1.  在[公司门户网站](http://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/intune/media/CP_hamburger_menu.png)，然后选择“我的设备”。
+1.  在[公司门户网站](https://portal.manage.microsoft.com)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/intune/media/CP_hamburger_menu.png)，然后选择“我的设备”。
 
 2. 在“我的设备”页上，选择想要重置密码的设备名称。
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 
 4.  系统会显示横幅，询问你是否确定要重置密码并在重置密码后从设备中注销。 然后，需要等待 5 分钟后才能重新登录。
 
-  ![重置密码横幅，显示关于重置设备密码的警告以及用户将如何注销。 用户输入的按钮为“注销”和“取消”。](./media/iwp-reset-passcode-popup.png)
+  ![重置密码横幅，显示关于重置设备密码的警告以及用户将如何注销。用户输入的按钮为“注销”和“取消”。](./media/iwp-reset-passcode-popup.png)
 
 5.  选择“注销”，将收到最后一条消息，告知你已删除设备中的密码。 如果设备未在身边，请勿删除密码，因为对设备具有物理访问权限的任何人将能够访问设备上的大部分信息（个人或公司信息）。 
 
@@ -68,4 +68,4 @@ ms.lasthandoff: 07/01/2017
 
 若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

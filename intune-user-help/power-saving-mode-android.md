@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d94e3a79af1951debc4dd04413efff8f4c716545
-ms.sourcegitcommit: d2a4f4477b3bf90aac6a9db77d41747e64ad7df4
+ms.openlocfilehash: e6d5bb79925588e78d2536e3c322ccbf5dd970c5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Android 的电池优化开启时，Outlook 不会同步托管的电子邮件
 
 > [!IMPORTANT]
-> 我们已经收到越来越多关于此问题的客户报告，这也是本文对此进行说明的原因所在。 如果在执行下列步骤后仍然遇到此问题，请联系 [IT 管理员](https://portal.manage.microsoft.com)，获取更多帮助。
+> 我们已经收到越来越多关于此问题的客户报告，这也是本文对此进行说明的原因所在。 如果在执行下列步骤后仍然遇到此问题，请联系[公司支持人员](https://portal.manage.microsoft.com)，获取更多帮助。
 
 在 Intune 中注册设备可以访问公司资源。 最常见的资源之一是电子邮件访问。 一个已知问题是由于开启了电池优化，无法通过 Android 设备上的 Outlook 访问电子邮件。 出于尽量延长设备开机时间的原因，电池优化可能会自动开启。 电池优化在某种程度上确实能帮助延长开机时间，因为它会尝试关闭自动电子邮件下载。
 
@@ -73,4 +73,4 @@ Android 设备种类繁多，其制造商也各有不同。 我们无法说明�
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-仍需要帮助？ 请与 IT 管理员联系。 有关他们的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

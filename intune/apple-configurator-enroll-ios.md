@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 支持注册 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)。 使用 Apple Configurator 进行注册时，需要通过 USB 将每个 iOS 设备连接到 Mac 计算机来设置公司注册过程。 你可采用两种方式使用 Apple Configurator 将设备注册到 Intune：
+Intune 支持注册 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)。 使用 Apple Configurator 进行注册时，需要通过 USB 将每个 iOS 设备连接到 Mac 计算机来设置公司注册过程。 你可采用两种方式使用 Apple Configurator 将设备注册到 Intune：
 - 设置助理注册 – 恢复设备的出厂设置，使其准备好在设置助理期间进行注册。
 - 直接注册 - 不恢复设备的出厂设置，并通过 iOS 设置注册设备。 此方法适仅支持“无用户关联”的设备。
 
@@ -38,7 +38,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - 设备序列号（仅设置助理注册）
 - USB 连接电缆
-- 运行 [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac PC
+- 运行 [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344) 的 macOS 计算机
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>为设备创建 Apple Configurator 配置文件
 
@@ -69,7 +69,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 
 **将 Apple Configurator 序列号添加到 Intune**
 
-1. 创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加序列号，在右列添加详细信息。 目前，该列表的最大长度为 500 行。 在文本编辑器中，该 .csv 列表如下所示：
+1. 创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加序列号，在右列添加详细信息。 目前，该列表的最大长度为 5,000 行。 在文本编辑器中，该 .csv 列表如下所示：
 
     F7TLWCLBX196,设备详细信息</br>
     DLXQPCWVGHMJ，设备详细信息
