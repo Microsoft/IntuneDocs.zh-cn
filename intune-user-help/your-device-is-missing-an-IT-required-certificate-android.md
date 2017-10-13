@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>你的 Android 设备缺少 IT 管理员所需的证书
+# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>你的 Android 设备缺少公司支持人员所需的证书
 
-如果设备未在 Intune 中注册，并且缺少 IT 管理员所需的特定证书，则无法登录到公司门户应用。 在尝试登录时，你将看到以下消息：
+如果设备未在 Intune 中注册，并且缺少公司支持人员所需的特定证书，则无法登录到公司门户应用。 在尝试登录时，你将看到以下消息：
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -35,15 +35,15 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>通过查看公司或学校的电脑来标识缺少的证书
 
-1. 在电脑上，打开 Internet Explorer。 如果没有用于此目的的电脑，请与 IT 管理员联系。 若要查找 IT 管理员的联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+1. 在电脑上，打开 Internet Explorer。 如果没有用于此目的的电脑，请与公司支持人员联系。 若要查找公司支持人员的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
 
-2. 转到[公司门户网站](http://portal.manage.microsoft.com)，并使用你的工作或学校凭据登录。
+2. 转到[公司门户网站](https://portal.manage.microsoft.com)，并使用你的工作或学校凭据登录。
 
 3. 在浏览器地址栏的最右侧，选择类似于挂锁的符号，如下面的屏幕截图所示。
 
     ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-    如果未看到挂锁符号，请停止操作并与 IT 管理员联系。 锁意味着你已安全登录，所以在没有看到该符号前请不要继续进行操作。
+    如果未看到挂锁符号，请停止操作并与公司支持人员联系。 锁意味着你已安全登录，所以在没有看到该符号前请不要继续进行操作。
 
 4. 选择“查看证书”。
 
@@ -67,6 +67,6 @@ ms.lasthandoff: 07/01/2017
 
 6. 关闭公司门户应用。
 
-7. 重新打开公司门户应用。 现在应能够登录到公司门户应用。 如果需要帮助，请与 IT 管理员联系。
+7. 重新打开公司门户应用。 现在应能够登录到公司门户应用。 如需帮助，请与公司支持人员联系。
 
-如果看到相同的“缺少证书”消息（如之前所示），且已经按照步骤执行了操作，说明可能存在另一个需要 IT 管理员帮助你安装的证书。 请使用[公司门户网站](http://portal.manage.microsoft.com)上可用的联系信息，联系 IT 管理员获取帮助。
+如果看到相同的“缺少证书”消息（如之前所示），且已经按照步骤执行了操作，说明可能存在另一个需要公司支持人员帮助你安装的证书。 请使用[公司门户网站](https://portal.manage.microsoft.com)上提供的联系信息，联系公司支持人员获取帮助。

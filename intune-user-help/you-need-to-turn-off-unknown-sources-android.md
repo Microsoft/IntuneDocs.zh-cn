@@ -14,18 +14,18 @@ ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4afd57da42d634dbead124d2f0dec4b4715c546e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 158bc0e18b427abcd73353cd41c3c57934eb45cb
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>需要关闭未知源
 
-你的 Android 设备能从多个位置安装应用。 对于大多数用户而言，Google Play 商店包含丰富的应用。 某些应用（如由你的公司开发以供内部使用的应用）可能会从其他市场安装。 从未经验证的位置安装应用会导致设备出现问题，并可能导致安全问题。 为了确保公司数据的安全，IT 管理员决定关闭对“未知源”的访问。
+你的 Android 设备能从多个位置安装应用。 对于大多数用户而言，Google Play 商店包含丰富的应用。 某些应用（如由你的公司开发以供内部使用的应用）可能会从其他市场安装。 从未经验证的位置安装应用会导致设备出现问题，并可能导致安全问题。 为了确保公司数据的安全，公司支持人员决定关闭对“未知源”的访问。
 
 如果看到“必须禁用来自未知源的安装”这一消息，则需要转到“**设置**” > “**安全**”（在一些设备上，可能是“**锁屏和安全**”），并关闭“**未知源**”。
 
 关闭“未知源”后，可能需要几分钟才能继续使用 Android 设备访问公司或学校数据。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

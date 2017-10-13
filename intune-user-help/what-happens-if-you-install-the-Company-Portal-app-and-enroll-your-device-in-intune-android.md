@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Android 设备后会发生什么情况？
 
@@ -34,13 +34,13 @@ ms.lasthandoff: 07/01/2017
 
 -   在手机丢失或被盗时将它重置为出厂设置。
 
-注册 Android 设备时，会向 IT 管理员授予访问设备的权限。 他们可执行诸如以下操作：
+注册 Android 设备时，会向公司支持人员授予访问设备的权限。 他们可执行诸如以下操作：
 
 -   将设备重置回制造商的默认设置。 如果设备丢失或被盗，这非常有用。
 
 -   删除公司相关的所有数据。 不会删除你的个人数据和设置。
 
--   对设备设置要求，例如要求使用设备密码或 PIN 以帮助保护公司数据。 IT 管理员还可以限制可输入错误密码的次数，并可在尝试次数过多时锁定设备。
+-   对设备设置要求，例如要求使用设备密码或 PIN 以帮助保护公司数据。 公司支持人员还可以限制可输入错误密码的次数，并可在尝试次数过多时锁定设备。
 
 -   要求你接受条款和条件。
 
@@ -50,10 +50,10 @@ ms.lasthandoff: 07/01/2017
 
 将设备添加到公司门户后，该设备大约每 8 小时将执行下列操作：
 
--   下载 IT 管理员已提供的任何策略或应用更新。
+-   下载公司支持人员已提供的任何策略或应用更新。
 
 -   发送任何硬件清单更新。 （这些更新不包含任何个人信息。）
 
 -   发送任何公司应用清单更新。 （这些更新不包含任何个人信息。）
 
-需要帮助吗? 请联系 IT 管理员（访问[公司门户网站](https://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
+需要帮助吗? 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。

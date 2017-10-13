@@ -14,11 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75d2a54f065e04b3f6c923dc4e83cfea498ead76
+ms.sourcegitcommit: c36f74323b57c9d9ef972322082923c449a1a74f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>使用设备注册计划注册企业所有的 iOS 设备
 
@@ -28,13 +28,13 @@ Microsoft Intune 可以部署注册配置文件，该配置文件以“无线”
 
 >[!NOTE]
 >DEP 注册不能与[设备注册管理器](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)方法共同使用。
->此外，如果用户注册 iOS 设备（即 使用公司门户应用），然后导入这些设备的序列号并为其分配 DEP 配置文件，设备将从 Intune 取消注册。
+>此外，如果用户注册 iOS 设备（如使用公司门户应用），然后导入这些设备的序列号并为这些序列号分配了 DEP 配置文件，设备将从 Intune 取消注册。
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>使用 Apple DEP 管理注册 iOS 设备的先决条件
 
 - [安装 APN 证书](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- 组织必须加入 Apple DEP 并让设备通过该计划。 该过程的详细信息，可以通过以下网站获得：  [https://deploy.apple.com](https://deploy.apple.com)。 该计划的优点包括免手动设置设备，无需通过 USB 电缆将每个设备连接到计算机。
+- 组织必须加入 Apple DEP 并让设备通过该计划。 该过程的详细信息，可以通过以下网站获得：  [https://deploy.apple.com](https://deploy.apple.com)。该计划的优点包括免手动设置设备，无需通过 USB 电缆将每个设备连接到计算机。
 
 - 可以通过 DEP 注册公司拥有的 iOS 设备之前，需要从 Apple 获得 DEP 令牌。 此令牌允许 Intune 同步有关公司所拥有的且加入了 DEP 的设备的信息。 它也允许 Intune 将注册配置文件上传至 Apple，并向设备分配这些配置文件。
 

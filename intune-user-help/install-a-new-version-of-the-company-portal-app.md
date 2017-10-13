@@ -14,11 +14,11 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1cccc69ab772499183a7f434303d78ecf4308a5f
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: d9a7ba4e3a4c10919ba933cc59c8093bec3588db
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-update-the-company-portal-app"></a>如何更新公司门户应用
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 08/08/2017
 2.  请按照安装步骤进行操作。
 
     > [!NOTE]
-    > 如果无法访问 Microsoft 应用商店，请与 IT 管理员联系。
+    > 如果无法访问 Microsoft 应用商店，请与公司支持人员联系。
 
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

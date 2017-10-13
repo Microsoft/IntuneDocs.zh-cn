@@ -1,5 +1,5 @@
 ---
-title: "使用 USB 电缆将日志发送给 IT 管理员 | Microsoft Docs"
+title: "使用 USB 电缆将日志发送给公司支持人员 | Microsoft Docs"
 description: "使用 USB 电缆发送数据日志"
 keywords: 
 author: barlanmsft
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>使用 USB 电缆将日志发送给 IT 管理员
+# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>使用 USB 电缆将日志发送给公司支持人员
 
-如果在 Android 设备上使用公司门户应用时遇到错误，可以通过电子邮件向 IT 管理员发送信息，以帮助他们解决问题。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
+如果在 Android 设备上使用公司门户应用时遇到错误，可以通过电子邮件向公司支持人员发送信息，以帮助他们解决问题。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
 
 > [!Note]
-> 开始之前，请确保拥有 IT 管理员的电子邮件地址。 可在[公司门户网站](http://portal.manage.microsoft.com)上或公司门户应用中进行查找。
+> 开始之前，请确保拥有公司支持人员的电子邮件地址。 可在[公司门户网站](https://portal.manage.microsoft.com)上或公司门户应用中进行查找。
 
 1.  在错误屏幕上，点击“**发送信息**”。 当看到一条消息询问要使用哪种方法来发送日志时，选择将文件保存到设备的选项。
 
@@ -35,6 +35,6 @@ ms.lasthandoff: 07/01/2017
 
 3.  在计算机上，查找具有你的设备名的目录。 在该目录中查找 **Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\**。
 
-4.  选择文件，然后将它们附加到电子邮件。 将此电子邮件发送给 IT 管理员。
+4.  选择文件，然后将它们附加到电子邮件。 将此电子邮件发送给公司支持人员。
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

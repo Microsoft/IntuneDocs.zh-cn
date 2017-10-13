@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Windows 10 设备后会发生什么情况？
 
@@ -34,22 +34,22 @@ ms.lasthandoff: 08/03/2017
 
 -   在手机丢失或被盗时将它重置为出厂设置。
 
-有关注册步骤，请参阅[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)。 若要了解 IT 管理员可以在你的设备上看到的内容，请参阅[当我在 Intune 中注册设备后，IT 管理员可以看到哪些内容？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+有关注册步骤，请参阅[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)。 若要了解公司支持人员可以在你的设备上看到的内容，请参阅[当我在 Intune 中注册设备后，公司支持人员可以看到哪些内容？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 在添加计算机时：
 
--   将在计算机上安装某个软件，使 IT 管理员能够管理计算机，并使你能够访问公司资源（如应用和支持信息）。 IT 管理员可能会自动更新此软件。
+-   将在计算机上安装某个软件，使公司支持人员能够管理计算机，并使你能够访问公司资源（如应用和支持信息）。 公司支持人员可能会自动更新此软件。
 
 -   可能会在计算机上安装 Intune Endpoint Protection。 此软件用于检查病毒和恶意软件。
 
--   IT 管理员可清点计算机上安装的所有软件，包括个人安装的软件。
+-   公司支持人员可清点计算机上安装的所有软件，包括个人安装的软件。
 
 -   可能要求你接受条款和条件。
 
--   IT 管理员可从计算机硬盘中收集或删除数据。 IT 管理员还可以删除整个硬盘。
+-   公司支持人员可从计算机硬盘中收集或删除数据。 公司支持人员还可以删除整个硬盘。
 
--   IT 管理员可在计算机上安装应用和更新。
+-   公司支持人员可在计算机上安装应用和更新。
 
--   IT 管理员可能会在计算机上强制实施策略。 例如，可能要求你在计算机上设置密码或 PIN。 IT 管理员还可限制可输入错误密码的次数，并可在尝试次数过多时锁定设备或删除计算机硬盘上的所有数据。
+-   公司支持人员可能会在计算机上强制实施策略。 例如，可能要求你在计算机上设置密码或 PIN。 公司支持人员还可限制可输入错误密码的次数，并可在尝试次数过多时锁定计算机或删除计算机硬盘上的所有数据。
 
-如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

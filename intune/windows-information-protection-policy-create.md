@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="pre-requisites"></a>先决条件
 
-需要先配置 MAM 提供程序，然后才可以创建 WIP 应用保护策略。 详细了解[如何通过 Intune 配置 MAM 提供程序](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)。
+必须先配置 MAM 提供程序，然后才可以创建 WIP 应用保护策略。 详细了解[如何通过 Intune 配置 MAM 提供程序](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)。
 
 此外，还需要具有以下各项：
 
@@ -155,16 +155,13 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
 ### <a name="use-wip-learning"></a>使用 WIP Learning
 
-1. 转到“Azure 仪表板”。 <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. 打开 Azure 门户。 选择“更多服务”。 在文本框筛选器中键入“Intune”。
 
-2. 从左侧菜单中选择“**更多服务**”，然后在文本框筛选器中键入 **Intune**。
+3. 选择“Intune” > “移动应用”。
 
-3. 选择“Intune”后即打开“Intune 仪表板”，选择“移动应用”。
-
-4. 在“监视”下选择“WIP Learning”。 将看到 WIP Learning 记录的未知应用。
-
-> [!IMPORTANT]
-> WIP Learning 日志报告中显示应用后，可以将这些应用添加到应用保护策略中。
+4. 选择“应用保护状态” > “报告” > “Windows 信息保护学习”。  
+ 
+    WIP 学习日志报告中显示应用后，可以将这些应用添加到应用保护策略中。
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>部署 WIP 应用保护策略
 

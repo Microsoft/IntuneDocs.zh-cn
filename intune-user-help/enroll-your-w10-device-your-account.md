@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>在 Intune 中注册 Windows 10 设备
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![登录](./media/W10-enroll-4-sign-in.png)
 
-仍无法访问工作或学校电子邮件、文件或其他数据？ 尝试通过[帐户疑难解答](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)修复访问问题。 如果仍然不起作用，请联系 IT 管理员寻求进一步帮助。
+仍无法访问工作或学校电子邮件、文件或其他数据？ 尝试通过[帐户疑难解答](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)修复访问问题。 如果仍然不起作用，则需要联系公司支持人员寻求进一步帮助。
 
-从 IT 管理员获取帮助的一种简单方法是通过公司门户应用中提供的联系人信息，还可在该应用中查找和下载用于日常工作的推荐应用和必备应用。 有可能你已经在设备上安装了公司门户应用。 可通过查找__公司门户__中的“所有应用”列表，来进行快速检查。
+从公司支持人员获取帮助的一种简单方法是通过公司门户应用获取联系人信息，还可在该应用中查找和下载用于日常工作的推荐应用和必备应用。 有可能你已经在设备上安装了公司门户应用。 可通过查找__公司门户__中的“所有应用”列表，来进行快速检查。
 
 如果未在应用列表中看到“公司门户”，请按照这些步骤安装它。
 

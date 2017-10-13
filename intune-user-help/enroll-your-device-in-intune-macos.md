@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>在 Intune 中注册 macOS 设备
 
-需要获取对你组织的应用、数据和资源的访问权限才能完成工作。 如果在工作中使用的是 macOS 设备，这意味着需要安装“管理配置文件”。 这只是一个由 IT 管理员设置的文件，用于将设置和访问信息加载到 Mac 上。 想要了解更多信息？ 了解[安装公司门户应用并在 Intune 中注册设备会发生什么情况](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+需要获取对你组织的应用、数据和资源的访问权限才能完成工作。 如果在工作中使用的是 macOS 设备，这意味着需要安装“管理配置文件”。 这只是一个由公司支持人员设置的文件，用于将设置和访问信息加载到 Mac 上。 想要了解更多信息？ 了解[安装公司门户应用并在 Intune 中注册设备会发生什么情况](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > 如果你确实想要注册 iOS 设备（如 iPhone 或 iPad），请[改为尝试使用这些说明](enroll-your-device-in-intune-ios.md)。
 
-1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](http://portal.manage.microsoft.com)。
+1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com)。
 2. 使用工作或学校帐户登录到公司门户网站。
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -65,4 +65,4 @@ ms.lasthandoff: 07/01/2017
 
  ![macOS 配置文件已安装](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-仍需要帮助？ 向你的 IT 管理员登记。 可以在[公司门户网站](http://portal.manage.microsoft.com)中查找他们的联系信息。
+仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com)中查找他们的联系信息。

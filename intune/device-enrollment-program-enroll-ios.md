@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 09/14/2017
 若要启用 DEP 注册，需同时使用 Intune 和 Apple DEP 门户。 需要序列号列表或购买订单编号，这样才能将设备分配到 Intune 进行管理。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
 另外，DEP 注册不能与[设备注册管理器](device-enrollment-manager-enroll.md)一起使用。
+
+## <a name="what-is-supervised-mode"></a>受监督模式简介
+Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设备可通过更多控件进行管理。 因此，此模式尤其适用于企业拥有的设备。 在 Apple 设备注册计划 (DEP) 中，Intune 支持将设备配置为受监督模式。 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -77,7 +80,6 @@ ms.lasthandoff: 09/14/2017
 
 5. “添加&lt;服务器名称&gt;”对话框随即打开，提示“上传公钥”。 选择“选择文件…” 以上传 .pem 文件，然后选择“下一步”。
 
-6.  “添加 &lt;ServerName&gt;”对话框显示“你的服务器令牌”链接。 将服务器令牌 (.p7m) 文件下载到计算机，然后选择“完成”。
 
 7. 转到“部署计划”&gt;“设备注册计划”&gt;“管理设备”。
 8. 在“选择设备方式”下，指定如何标识设备：
@@ -114,10 +116,13 @@ ms.lasthandoff: 09/14/2017
 
 4. 选择“设备管理设置”，配置以下配置文件设置：
 
-  ![选择管理模式的屏幕截图。 设备包含以下设置：受到监管、注册锁定、允许配对设置为全部拒绝。 新注册计划配置文件的 Apple Configurator 证书将变灰。](./media/enrollment-program-profile-mode.png)
-    - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。
+  ![选择管理模式的屏幕截图。 设备包含以下设置：受到监督、注册锁定、允许配对设置为全部拒绝。 新注册计划配置文件的 Apple Configurator 证书将变灰。](./media/enrollment-program-profile-mode.png)
+    - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS 设备的组织。
 
-    - **注册锁定** -（需要管理模式 = 受到监督）禁用可能允许删除管理配置文件的 iOS 设置。 如果将此复选框保留为空，它将允许从“设置”菜单中删除管理配置文件。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。
+ > [!NOTE]
+ > 注册设备后，无法使用 Intune 将设备配置为受监督模式。 注册后，需使用 USB 电缆将 iOS 设备连接到 Mac 并使用 Apple Configurator，这是此时启用受监督模式的唯一方式。 这将重置设备并将其配置为受监督模式。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。受监督设备将在锁屏界面上显示“此 iPhone 由 Contoso 托管。”， 还将显示“此 iPhone 受监督。 Contoso 可以监视你的 Internet 流量并找到此设备。” （在“设置” > “常规” > “关于”中）。
+
+    - 注册锁定 -（需要管理模式 = 受到监督）禁用可能允许删除管理配置文件的 iOS 设置。 如果将此复选框保留为空，它将允许从“设置”菜单中删除管理配置文件。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。
 
   - **启用共享 iPad** - Apple 的设备注册计划不支持共享 iPad。
 
@@ -146,6 +151,7 @@ ms.lasthandoff: 09/14/2017
         - **诊断数据**
 
     选择“保存”。
+
 9. 若要保存配置文件设置，请在“创建注册配置文件”边栏选项卡上选择“创建”。 注册配置文件显示在 Apple 注册计划注册配置文件列表中。
 
 ## <a name="sync-managed-devices"></a>同步托管设备

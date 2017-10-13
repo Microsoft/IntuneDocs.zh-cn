@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f2e11a7fbe226932206f6946ef0603307e76c69c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>Microsoft Intune 明日新闻 - 2017 年 9 月
 
@@ -184,6 +184,14 @@ Android 托管的应用和公司门户应用需要使用 Android 4.4 和更高�
 
 
 ## <a name="intune-apps"></a>Intune 应用
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>公司门户网站的搜索改进<!--1331697-->
+我们正在改进应用搜索功能，首先从[公司门户网站](https://portal.manage.microsoft.com)开始。 除“名称”和“说明”字段外，现在还可按应用类别执行搜索。 结果默认按相关性呈降序排列。 
+
+由于适用于 iOS 的公司门户应用中也包含公司门户网站，因此 iOS 用户也将收到此更改。 适用于 Android 和 Windows 的公司门户应用将在未来几个月中收到类似更新。 
+
+我们仍在努力优化跟踪相关性的方式，因此请使用公司门户网站底部的“反馈”链接向我们反馈当前的运行状况。
+
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>刷新操作被添加到 Windows 10 公司门户应用 <!--1132468-->
 Windows 10 公司门户应用将支持用户通过请求刷新或在桌面设备上按 F5，刷新应用中的数据。
 

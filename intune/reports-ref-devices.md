@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 7730a799176a74f1ddb8e4b5e49a110229255428
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
@@ -106,7 +106,7 @@ EnrollmentTypes 实体表明设备的注册方式。 注册类型会捕获注册
 
 | enrollmentTypeID  | Name | 描述 |
 |---------|------------|--------|
-| 0 |Unknown |未知注册类型 |
+| 0 |Unknown |未收集注册类型 |
 | 1 |UserEnrollment |用户发起的注册 |
 | 2 |DeviceEnrollment |使用无用户的配置文件进行的设备注册 |
 | 3 |DeviceEnrollmentWithUDA |含 UDA 配置文件的设备注册。 |

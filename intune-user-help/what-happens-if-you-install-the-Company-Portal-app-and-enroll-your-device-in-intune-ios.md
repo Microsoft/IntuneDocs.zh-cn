@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>如果安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS 设备会怎样？
 
@@ -34,9 +34,9 @@ ms.lasthandoff: 07/01/2017
 
 -   自动设置公司电子邮件帐户。
 
-在 Intune 中注册设备时，会向 IT 管理员授予管理设备的权限，以帮助保护设备上的公司信息。
+在 Intune 中注册设备时，会向公司支持人员授予管理设备的权限，以帮助保护设备上的公司信息。
 
-注册设备后，IT 管理员可以：
+注册设备后，公司支持人员可以：
 
 -   如果你的设备丢失或被盗，将设备重置回制造商的默认设置。
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 07/01/2017
 
 -   处于漫游模式下时，在设备上启用或禁用自动文件同步。 如果允许自动文件同步，则可能会产生漫游费用。
 
-如有疑问，请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

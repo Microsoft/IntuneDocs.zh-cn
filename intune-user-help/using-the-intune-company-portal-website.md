@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司门户网站
 [公司门户网站](https://portal.manage.microsoft.com)是一个网页，最终用户可将其用于管理已在 Intune 中注册的计算机和设备。
@@ -39,10 +39,10 @@ ms.lasthandoff: 07/01/2017
 
 -   [手动同步设备，以便更快地安装应用](sync-your-device-manually-cpwebsite.md)
 
--   找到 IT 管理员的联系信息（如果已配置）
+-   找到公司支持人员的联系信息（如果已配置）
 
 -   查看有关设备的详细信息，包括它是否符合公司或学校的策略
 
 -   远程管理电脑（仅适用于电脑）
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

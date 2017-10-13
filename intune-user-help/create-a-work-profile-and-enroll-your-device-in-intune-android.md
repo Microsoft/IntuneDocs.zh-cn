@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>创建工作配置文件并在 Intune 中注册设备
 
-注册 Android 设备可以访问公司电子邮件、应用和其他工作数据。 注册过程中将设置工作配置文件，用于分隔设备上的个人数据和工作数据。 IT 管理员只能管理包含工作数据的工作配置文件。 IT 管理员无法管理设备上的个人数据。 找到有关[创建工作配置文件时会发生的情况](what-happens-when-you-create-a-work-profile-android.md)的详细信息。
+注册 Android 设备可以访问公司电子邮件、应用和其他工作数据。 注册过程中将设置工作配置文件，用于分隔设备上的个人数据和工作数据。
+
+公司支持人员只能管理包含工作数据的工作配置文件。 公司支持人员无法管理设备上的个人数据。 找到有关[创建工作配置文件时会发生的情况](what-happens-when-you-create-a-work-profile-android.md)的详细信息。
 
 创建工作配置文件：
 
@@ -32,27 +34,27 @@ ms.lasthandoff: 07/01/2017
 
     ![Android 公司门户应用“欢迎”屏幕](./media/and-enroll-0-welcome-screen.png)
 
-2. 在“公司访问设置”屏幕上，点击“开始”。
+2. 在“公司访问设置”屏幕上，点击“继续”。
 
-    ![“公司访问设置”屏幕](./media/andr-afw-begin-company-access-setup.png)
+    ![“公司访问设置”屏幕](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  在“为何创建工作配置文件?”屏幕上，阅读可执行的操作，然后点击“继续”。
 
     ![为何创建工作配置文件](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  查看 IT 管理员在你的设备上可以看到和不可以看到的内容的列表，然后点击**继续**。
+4.  查看公司支持人员在你的设备上可以看到和不可以看到的内容的列表，然后点击“继续”。
 
-    ![IT 管理员在你的设备上可以看到和不可以看到的内容](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![公司支持人员在你的设备上可以看到和不可以看到的内容](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  在“接下来会发生的情况”屏幕上，阅读接下来会发生的情况，然后点击“继续”。
+5.  在“接下来会发生的情况”屏幕上，阅读注册期间会发生的情况，然后点击“注册”。
 
-    ![“接下来会发生的情况”屏幕](./media/andr-afw-what-comes-next.png)
+    ![“接下来会发生的情况”屏幕](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. 在“设置工作配置文件”屏幕上，点击“下一步”以允许公司门户应用访问工作配置文件。
 
     ![使公司门户应用可以访问工作配置文件](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. 查看描述 IT 管理员在你创建工作配置文件时可以执行的操作的 Google 屏幕，然后点击“确定”。
+7. 查看描述公司支持人员在你创建工作配置文件时可以执行的操作的 Google 屏幕，然后点击“确定”。
 
     ![查看有关工作配置文件的 Google 信息](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ ms.lasthandoff: 07/01/2017
 
     你会短暂地看到消息“正在注册你的设备”。
 
-11. 当“公司访问设置”屏幕显示所有内容都已正确设置时，点击“继续”。
+11. 当“设置完成!” 屏幕显示所有内容都已正确设置时，点击“完成”。
 
-    ![“公司访问设置”显示工作配置文件和注册已完成](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. 在“公司访问设置完成”屏幕上，点击“完成”。 如果 IT 管理员添加了其他要求，可能需要完成其他步骤。
-
-    ![公司访问设置已完成](./media/andr-afw-company-access-setup-complete.png)
+    ![“公司访问设置”显示工作配置文件和注册已完成](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     现在即可从 Play Store for Work 获取公司应用。
 
     ![Play Store for Work 应用页](./media/andr-afw-tap-work-play-store-icon.png)
 
-仍需要帮助？ 请与 IT 管理员联系。 有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
