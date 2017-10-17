@@ -2,8 +2,8 @@
 title: "保护未注册的设备上的 LOB 应用"
 description: "本主题介绍如何准备自定义的业务线应用，以便应用可帮助防止数据丢失的移动应用管理策略。"
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 447e019dde4781183323f29a35ed569926973351
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保护未在 Microsoft Intune 上注册的设备上的业务线应用和数据
 

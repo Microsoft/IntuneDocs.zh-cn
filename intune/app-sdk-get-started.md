@@ -2,9 +2,9 @@
 title: "Microsoft Intune App SDK 入门"
 description: "通过 Microsoft Intune 快速启用移动应用进行移动应用程序管理 (MAM)。"
 keywords: 
-author: mtillman
+author: mattbriggs
 manager: angrobe
-ms.author: oydang
+ms.author: mabriggs
 ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e55246f8f089a998fa4a04fe07e5e54408d8513
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -109,7 +109,7 @@ Microsoft Intune 收集应用的使用情况统计数据。
 ## <a name="next-steps-after-integration"></a>集成后的后续步骤
 
 ### <a name="test-your-app"></a>测试应用程序
-完成将 iOS 或 Android 应用与 Intune App SDK 集成的必需步骤后，需确保所有应用保护策略都已针对用户和 IT 管理员启用并正常工作。 若要测试已集成的应用，则需查看以下文档：
+完成将 iOS 或 Android 应用与 Intune App SDK 集成的必需步骤后，需确保所有应用保护策略都已针对用户和 IT 管理员启用并正常工作。若要测试已集成的应用，则需查看以下文档：
 
 * **Microsoft Intune 测试帐户**：若要就 Intune 应用保护功能对支持 Intune 的应用进行测试，则需要 Microsoft Intune 帐户。
 

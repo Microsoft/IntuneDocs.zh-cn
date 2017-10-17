@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebcbcbc36c925b3c3d9600eb9a5039b70d7e056d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 08a21197fd7c67aff037396e86a1555a8033daac
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector 疑难解答
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 07/01/2017
 - 请注意，与 Exchange CAS 的 Exchange Connector 同步间存在时间滞后。 完全同步一天进行一次，而增量（快速）同步每两个小时进行一次。 持有新注册的设备的用户可能遇到访问延迟。
 - 
 ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange 中未发现的 Exchange ActiveSync 设备
-请查看 Exchange Connector 是否正在与 Exchange 服务器同步。 若要进行此操作，请查找完全同步或增量同步的日志。 查看 Exchange Connector 日志。 如果自设备连接后完全同步或增量同步已成功完成，则你已将其作为问题的根源消除。 如果未进行任何同步，则收集相关的同步日志并将其添加到你的支持请求中。
+请查看 Exchange Connector 是否正在与 Exchange 服务器同步。 若要进行此操作，请查找完全同步或增量同步的日志。查看 Exchange Connector 日志。 如果自设备连接后完全同步或增量同步已成功完成，则你已将其作为问题的根源消除。 如果未进行任何同步，则收集相关的同步日志并将其添加到你的支持请求中。
 
 - 如果用户不具备 Intune 许可证，则 Exchange connector 将无法发现其设备。
 - 如果用户的主 SMTP 地址与其在 AAD 中的 UPN 不同，则 Exchange Connector 将无法发现该 Intune/AAD 用户的任何设备。 修复主 SMTP 地址。

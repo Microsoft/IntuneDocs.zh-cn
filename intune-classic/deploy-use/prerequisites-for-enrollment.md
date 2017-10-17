@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune 中移动设备管理的先决条件
 
@@ -93,7 +94,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 |字段名称|最大长度|更多信息|
     |----------|------------------------|----------------|
-    |支持网站 URL|150|如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 https://www.contoso.com 格式。 如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。|
+    |支持网站 URL|150|如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 https://www.contoso.com 格式。如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。|
     |网站名称|40|此名称是为支持网站的 URL 显示的友好名称。 如果指定支持网站 URL 而不指定友好名称，则公司门户中的“联系 IT”页上将显示“转到 IT 网站”。|
 
 

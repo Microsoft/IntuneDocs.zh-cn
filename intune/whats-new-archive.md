@@ -3,8 +3,8 @@ title: "Microsoft Intune 中前几个月的新增功能"
 titlesuffix: Azure portal
 description: "查看 Intune 新增功能页中早期的公告"
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: brenduns
+ms.author: brenduns
 manager: angrobe
 ms.date: 8/23/2017
 ms.topic: get-started-article
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 155b7e685cfd87865bf6d9786535eeb58e8cedc2
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: c742a084f1347870c6436088710fb13ccfe8de70
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
@@ -107,8 +107,8 @@ Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标
 ### <a name="new-remote-actions-for-ios-devices----854689---"></a>适用于 iOS 设备的新远程操作 <!-- 854689 -->
 在此版本中，我们增加了两个适用于托管 Apple 课堂应用的共享 iPad 设备的新远程设备操作：
 
--   [注销当前用户](device-logout-user.md) - 注销所选 iOS 设备上的当前用户。
--   [删除用户](device-remove-user.md) - 从 iOS 设备上的本地缓存中删除所选用户。
+-   注销当前用户[](device-logout-user.md) - 注销所选 iOS 设备上的当前用户。
+-   删除用户[](device-remove-user.md) - 从 iOS 设备上的本地缓存中删除所选用户。
 
 
 ### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>支持与 iOS Classroom 应用共享 iPad<!-- 1044681 -->
@@ -132,7 +132,7 @@ Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标
 对于适用于 Exchange 和 SharePoint Online 的基于应用的条件性访问策略，适用于 iOS 和 Android 的 Microsoft Teams 应用现属于已批准应用。 将能够利用基于应用的条件性访问通过 Azure 门户中的“Intune 应用保护”边栏选项卡为所有租户配置应用。
 
 ### <a name="managed-browser-and-app-proxy-integration----1287310---"></a>Managed Browser 和应用代理集成 <!-- 1287310 -->
-Intune Managed Browser 现在可与 Azure AD 应用程序代理服务集成，以使用户甚至可在远程工作的时候访问内部网站。 浏览器用户只需像平时一样简单输入网站 URL，Managed Browser 便会通过应用代理 Web 网关路由请求。 有关详细信息，请参阅[使用 Managed Browser 策略管理 Internet 访问](app-configuration-managed-browser.md)。
+Intune Managed Browser 现在可与 Azure AD 应用程序代理服务集成，以使用户甚至可在远程工作的时候访问内部网站。 浏览器的用户只需照常输入网站 URL，Managed Browser 会通过应用程序代理 Web 网关路由请求。 有关详细信息，请参阅[使用 Managed Browser 策略管理 Internet 访问](app-configuration-managed-browser.md)。
 
 ### <a name="new-app-configuration-settings-for-the-intune-managed-browser----682951---"></a>Intune 托管浏览器的新应用配置设置 <!-- 682951 -->
 在此版本中，我们为适用于 iOS 和 Android 的 Intune Managed Browser 应用添加了进一步配置。 现在你能够使用应用配置策略为浏览器配置默认主页和书签。
@@ -160,13 +160,13 @@ Intune Managed Browser 现在可与 Azure AD 应用程序代理服务集成，�
 根据客户反馈，已修改适用于 Android 的公司门户应用，以便显示“访问公司内容”按钮。 其目的在于，使最终用户在仅需要访问支持应用保护策略（Intune 移动应用程序管理的一项功能）的应用时，无需完成不必要的注册过程。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
 
 ### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>新增可轻松删除公司门户的菜单操作 <!--1164569-->
-根据用户反馈，适用于 Android 的公司门户应用新添加了一个菜单操作，可启动对设备中公司门户的删除。 此操作可将设备从 Intune 管理中删除，以便用户删除设备中的应用。 你可以在[应用 UI 中的新增功能](whats-new-app-ui.md)页和 [Android 最终用户文档](/intune-user-help/unenroll-your-device-from-intune-android)中查看这些更改。
+根据用户反馈，适用于 Android 的公司门户应用新添加了一个菜单操作，可启动对设备中公司门户的删除。 此操作可从 Intune 管理中删除设备，这样用户就可以从设备中删除应用。 你可以在[应用 UI 中的新增功能](whats-new-app-ui.md)页和 [Android 最终用户文档](/intune-user-help/unenroll-your-device-from-intune-android)中查看这些更改。
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>与 Windows 10 创意者更新的应用同步改进 <!--676505-->
-面向 Windows 10 的公司门户应用，现在将针对具有 Windows 10 创意者更新（版本 1703）的设备自动启动应用安装请求同步。 这将减少“正在挂起同步”状态下的应用安装停止问题。 此外，用户将可以从该应用内部手动启动同步。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
+面向 Windows 10 的公司门户应用，现在将针对具有 Windows 10 创意者更新（版本 1703）的设备自动启动应用安装请求同步。 这会减少“挂起同步”状态期间的应用安装停止问题。 此外，用户也能够从应用中手动启动同步。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Windows 10 公司门户新的引导式体验<!---1058938--->
-适用于 Windows 10 的公司门户应用将为尚未被标识或注册的设备提供引导式的 Intune 演练体验。 新体验提供了循序渐进的说明，引导用户完成 AAD 注册（条件性访问功能所需）和 MDM 注册（设备管理功能所需）。 引导式体验可从公司门户主页获取。 如果用户未完成注册和登记，可以继续使用应用，但能够体验的功能将很有限。
+适用于 Windows 10 的公司门户应用将为尚未被标识或注册的设备提供引导式的 Intune 演练体验。 新体验提供分步说明，指导用户完成注册到 Azure Active Directory（条件访问功能需要）和 MDM 注册（设备管理功能需要）的过程。 从公司门户主页可以进入引导式体验。 如果用户没有完成注册，仍可以继续使用应用，但可用功能受到限制。
 
 此更新仅在运行 Windows 10 周年更新（内部版本 1607）或更高版本的设备上可见。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
 
@@ -287,7 +287,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 ### <a name="new-android-policy-for-complex-pins----722069---"></a>复杂 PIN 的新 Android 策略 <!-- 722069 -->
 现在可以在运行 Android 5.0 及更高版本的设备的 Android 设备配置文件中设置数字复杂度的必需[密码](device-restrictions-android.md#password)类型。  使用此设置可防止设备用户创建包含重复或连续数字（如 1111 或 1234）的 PIN。
 
-### <a name="additional-support-for-android-for-work-devices"></a>对 Android for Work 设备的其他支持
+### <a name="additional-support-for-android-for-work-devices"></a>针对 Android for Work 设备提供的其他支持
 - **管理密码及工作配置文件设置** <!-- 612808 -->
 
   通过新的 Android for Work 设备限制策略，现在可让你在管理的 Android for Work 设备上管理密码和工作配置文件设置。
@@ -319,22 +319,22 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 在 Intune 设备限制配置文件中，现在可以为 iOS 设备配置以下[通知设置](app-notification-settings-ios.md)：
 
 - 完全打开或关闭指定应用的通知。
-- 在通知中心中打开或关闭指定应用的通知。
-- 指定警报类型：“无”、“横幅”或“提醒”。
-- 指定是否允许此应用的徽章。
-- 指定是否允许通知声音。
+- 在通知中心为指定应用启用或禁用通知。
+- 指定警报类型（“无”、“横幅”或“模式警报”）。
+- 指定是否允许对此应用使用锁屏提醒。
+- 指定是否允许使用通知声音。
 
 ### <a name="configure-ios-apps-to-run-in-single-app-mode-autonomously----737837---"></a>配置 iOS 应用以单一应用模式自主运行 <!-- 737837 -->
-可以使用 Intune 设备配置文件配置 iOS 设备，以[自主单一应用模式](device-restrictions-ios.md#autonomous-single-app-mode-supervised-only)运行指定应用。 配置此模式并运行应用时，将锁定设备，因此该设备只能运行该应用。 举个例子，当你配置一个允许用户在设备上进行测试的应用时就是如此。 应用的操作完成或删除此策略时，设备将恢复正常状态。
+可以使用 Intune 设备配置文件配置 iOS 设备，以[自主单一应用模式](device-restrictions-ios.md#autonomous-single-app-mode-supervised-only)运行指定应用。 配置此模式并运行应用时，将锁定设备，因此该设备只能运行该应用。 例如，将应用配置为允许用户在设备上参加测验。 当应用的操作完成或你删除此策略时，设备便会恢复常规状态。
 
 ### <a name="configure-trusted-domains-for-email-and-web-browsing-on-ios-devices----723765---"></a>为 iOS 设备上的电子邮件和 web 浏览配置受信任的域 <!-- 723765 -->
 现在可以从 iOS 设备限制配置文件配置以下[域设置](device-restrictions-ios.md#domains)：
 
 - **未标记的电子邮件域** - 用户发送或接收的电子邮件如果不匹配在此处指定的域，将标记为不受信任。
 
-- **托管的 Web 域** - 从此处指定的 URL 下载的文档将被视为托管(仅限 Safari)。  
+- **托管的 Web 域** - 从你在此处指定的 URL 下载的文档将被视为托管（仅限 Safari）。  
 
-- **Safari 密码自动填充域** - 用户只能在 Safari 中保存与你在此处指定的模式相匹配的 URL 的密码。 若要使用此设置，设备必须处于监督模式，不配置为用于多个用户。 （iOS 9.3 及更高版本）
+- **Safari 密码自动填充域** - 用户只能在 Safari 中与你在这里指定的模式匹配的 URL 处保存密码。 设备必须处于受监督模式，且未配置为供多个用户使用，才能使用此设置。 (iOS 9.3+)
 
 
 ### <a name="vpp-apps-available-in-ios-company-portal----748782---"></a>iOS 公司门户中可用的 VPP 应用 <!-- 748782 -->
@@ -353,7 +353,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 我们为运行 Windows 10 创意者更新的设备和加入 Azure Active Directory 域的设备添加了对[多用户管理](windows-enroll.md)的支持。 这意味着不同的标准用户使用其 Azure AD 凭据登录设备时，他们将收到分配给其用户名的所有应用和策略。 用户当前无法将公司门户用于自助服务方案，如安装应用。
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 电脑的 Fresh Start <!-- 1004830 -->
-现在提供 Windows 10 电脑的全新 [Fresh Start 设备操作](device-fresh-start.md)。  发出此操作时，电脑上安装的任何应用都将被删除，而且电脑会自动更新到最新版本的 Windows。 这可用于删除新电脑通常附带的预先安装的 OEM 应用。 发出此设备操作时可以配置是否保留用户数据。
+现在提供 Windows 10 电脑的全新 [Fresh Start 设备操作](device-fresh-start.md)。  发出此操作时，电脑上安装的任何应用都将被删除，而且电脑会自动更新到最新版本的 Windows。 这可用于删除新 PC 通常随附的预安装 OEM 应用。 可以配置是否在发出此设备操作时保留用户数据。
 
 ### <a name="additional-windows-10-upgrade-paths----903672---"></a>Windows 10 其他升级途径<!-- 903672 -->
 现可创建[版本升级策略](edition-upgrade-configure-windows-10.md)，将设备升级到以下的其他 Windows 10 版本：
@@ -364,14 +364,14 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 - Windows 10 专业教育版 N
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>批量注册 Windows 10 设备 <!-- 747607 -->
-现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](windows-bulk-enroll.md)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将程序包应用到设备后，设备将加入 Azure AD 并注册 Intune，以供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户并接收分配的策略和必需的应用。 目前不支持自助服务和公司门户方案。
+现在，可以使用 Windows 配置设计器 (WCD)，将运行 Windows 10 创意者更新的大量设备加入 Azure Active Directory 和 Intune。 若要为 Azure AD 租户启用[批量 MDM 注册](windows-bulk-enroll.md)，请创建一个预配包，以使用 Windows 配置设计器将设备加入 Azure AD 租户，然后将预配包应用到要批量注册并管理的企业拥有的设备。 将预配包应用到设备后，它们便会加入 Azure AD、注册使用 Intune，然后即可供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户并接收分配的策略和必需的应用。 目前不支持自助服务和公司门户方案。
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>PIN 和托管存储位置的新 MAM 设置 <!-- 581122, 736644 -->
 现在这两个新的应用设置可用于帮助你处理移动应用程序管理 (MAM) 方案：
 
-- **托管设备 PIN 时禁用应用 PIN** - 检测注册设备上是否存在设备 PIN，如果是，则忽略应用保护策略触发的应用 PIN。 此设置允许减少用户在注册设备上打开已启用 MAM 的应用程序时所看到的 PIN 提示次数。 此功能适用于 Android 和 iOS。
+- **托管设备 PIN 时禁用应用 PIN** - 检测注册设备上是否存在设备 PIN，如果是，则忽略应用保护策略触发的应用 PIN。 此设置有助于减少向在已注册设备上打开启用了 MAM 的应用的用户显示的 PIN 提示次数。 此功能适用于 Android 和 iOS。
 
-- **选择可将公司数据保存到其中的存储服务** - 允许你指定可将公司数据保存到哪些存储位置。 用户可以保存到所选存储位置服务，这意味着将阻止所有未列出的其他存储位置服务。
+- **选择可以在其中保存企业数据的存储服务** - 允许指定用于保存企业数据的存储位置。 用户可以将数据保存到选定存储位置服务。也就是说，未列出的其他所有存储位置服务将被屏蔽。
 
   支持的存储位置服务列表：
 
@@ -420,7 +420,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 - Windows 10 Professional Education N --->
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接访问 Apple 注册方案<!--951869-->
-对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，只能通过 Azure 门户中的链接访问 Apple 注册预览版。 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的这些功能。 迁移的计划目前尚未公布，但详细信息将尽快发布。 强烈建议创建一个试用帐户，在现有帐户无法访问预览版时测试新体验。
+对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，只能通过 Azure 门户中的链接访问 Apple 注册预览版。 在 2017 年 1 月之前创建的 Intune 帐户必须先进行一次性迁移，然后才能在 Azure 中使用这些功能。 虽然迁移时间表尚未宣布，但会尽快发布详细信息。 强烈建议创建一个试用帐户，在现有帐户无法访问预览版时测试新体验。
 
 
 ## <a name="february-2017"></a>2017 年 2 月

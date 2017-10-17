@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e1b18486f84bb5d4d47caceb871bf6884b9b8f89
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 502ee0f3107d197537f7f9ab3b2888246bbca1d3
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版策略设置
 
@@ -179,8 +180,8 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 ## <a name="custom-policy-settings"></a>自定义策略设置
 使用 Microsoft Intune 的 **Android 自定义配置策略**来部署可用于控制 Android 设备功能的 OMA URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
-此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。
-Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题的示例，查找可配置的策略。
+此功能旨在方便你部署无法通过 Intune 策略配置的 Android 设置。
+目前，Intune 支持的 Android 自定义策略数量有限。 请参阅本主题中的示例，了解可以配置哪些策略。
 
 ### <a name="general-settings"></a>常规设置
 
@@ -195,7 +196,7 @@ Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题
     |--------|--------------------|
     | **设置名称** |输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。|
     | **设置描述** |提供对设置进行概述的说明以及帮助你找到该设置的其他相关信息。|
-    | **数据类型** |选择将在其中指定此 OMA-URI 设置的日期类型。 从“字符串、字符串 (XML)、日期和时间、整数、浮点”，或者“布尔值”中进行选择。|
+    | **数据类型** |选择指定此 OMA-URI 设置时使用的数据类型。 从“字符串、字符串 (XML)、日期和时间、整数、浮点”，或者“布尔值”中进行选择。|
     | **OMA-URI（区分大小写）** |指定需为其提供设置的 OMA-URI。|
     | **值** |指定要与之前指定的 OMA-URI 关联的值。|
 
