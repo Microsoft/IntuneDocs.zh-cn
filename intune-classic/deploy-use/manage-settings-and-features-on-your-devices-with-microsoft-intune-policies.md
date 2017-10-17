@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7943e4023344aaeb531c4a9a7fa15f00cd8a7e81
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 362c7f4dc9acfe574eb6a98819339e2db44cb9ec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>使用 Microsoft Intune 策略管理设备上的设置和功能
 
@@ -172,7 +173,7 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
         - 擦除设备前允许的重复登录失败次数
         - 需要提供密码之前处于非活动状态的分钟数
         - 所需密码类型 - 最小字符集数
-        - 允许相机
+        - 允许照相机
         - 需要对移动设备加密
         - 允许可移动存储
         - 允许 Web 浏览器

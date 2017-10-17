@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>将应用与基于应用的 CA 结合使用时的预期行为
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 07/01/2017
   * 必须通过 OneDrive 或 Outlook 应用完成设备注册。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>从 Azure AD 注册删除设备。
-可通过 Azure AD 管理控制台删除设备注册，IT 管理员通常采用此种方式。  还可由最终用户在设备本身完成删除操作。
+可通过 Azure AD 管理控制台删除设备注册，IT 管理员通常采用此种方式。还可由最终用户在设备本身完成删除操作。
 
 * **Azure AD 管理员控制台**：在 Azure AD 管理控制台中**，删除想要删除的设备。
 * **iOS 设备**：打开 Azure Authenticator 应用，轻扫帐户左侧，然后选择注销。  

@@ -10,14 +10,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9066414bcef1ba312db64aef077db8f8bfbbdb44
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 44559572a048a0ad8e79d6fdac837f0c71a42646
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="set-up-windows-device-management"></a>设置 Windows 设备管理
 
@@ -57,7 +58,7 @@ CNAME 资源记录必须具有以下信息：
 
 如果你的公司对用户凭据使用多个域，则为每个域创建 CNAME 记录。
 
-例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 EnterpriseEnrollment-s.manage.microsoft.com 的 CNAME。 对 DNS 记录所做的更改可能最多需要 72 小时才能进行传播。 你无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
+例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 EnterpriseEnrollment-s.manage.microsoft.com 的 CNAME。对 DNS 记录所做的更改可能最多需要 72 小时才能进行传播。 你无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
 
 **步骤 2：验证 CNAME**（可选）<br>
 在 [Intune 管理员控制台](https://manage.microsoft.com)中，选择“管理员”&gt;“移动设备管理”&gt;“Windows”。 在“指定一个已验证的域名”框中输入公司网站经过验证的域的 URL，然后选择“测试自动检测”。

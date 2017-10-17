@@ -2,9 +2,9 @@
 title: "用于 Android 的 Microsoft Intune App SDK 开发人员指南"
 description: "用于 Android 的 Microsoft Intune App SDK 支持将 Intune 移动应用管理 (MAM) 集成到 Android 应用中。"
 keywords: SDK
-author: mtillman
+author: mattbriggs
 manager: angrobe
-ms.author: mtillman
+ms.author: mabriggs
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: b6fd8525da11fcc376c4850c53ed1b98f37798ae
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -457,7 +457,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
     | 颁发机构 | 已配置 AAD 帐户的所需环境 |
     | ClientID | 应用的 ClientID（注册应用时由 Azure AD 生成） |
     | NonBrokerRedirectURI | 应用的有效重定向 URI，或 `urn:ietf:wg:oauth:2.0:oob`。 
-    。 <br><br> 请确保将值配置为应用的 ClientID 可接受的重定向 URI。
+    . <br><br> 请确保将值配置为应用的 ClientID 可接受的重定向 URI。
    | SkipBroker | False |
 
 
@@ -1354,7 +1354,7 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 
 * 避免以不明确的方式使用任何 API。 例如，使用 `Activity.startActivityForResult` 而不检查 requestCode 会导致奇怪的行为。
 
-## <a name="telemetry"></a>遥测技术
+## <a name="telemetry"></a>遥测
 
 Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用会记录遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。
 

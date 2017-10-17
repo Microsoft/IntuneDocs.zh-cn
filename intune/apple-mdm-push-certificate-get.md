@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 804ea185cf48b6781174b888436211a6d70823ca
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 8d05199359f7e4ca2c41415c0db13e339c66c162
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>获取 Apple MDM Push Certificate
 
@@ -51,9 +51,6 @@ Intune 启用了 iPad、iPhone 和 Mac 计算机的移动设备管理 (MDM)，�
 Apple MDM Push Certificate 有效期为一年，且必须手动续订才能维持 iOS 和 macOS 设备管理。 如果证书到期，则无法联系到已注册的 Apple 设备。
 
 证书与用于创建它的 Apple ID 相关联。 使用创建证书所用的相同 Apple ID 续订 MDM Push Certificate。
-
-> [!NOTE]
-> 证书与用于创建它的 Apple ID 相关联。 将公司 Apple ID 用于管理工具，此为最佳做法。 切勿使用个人 Apple ID。
 
 1. 在 Azure 门户中，依次选择“设备注册” > “Apple 注册”>“Apple MDM Push Certificate”。
 2. 选择“下载 CSR”，将请求文件下载到本地并保存。 此文件用于从 Apple Push Certificate 门户请求信任关系证书。

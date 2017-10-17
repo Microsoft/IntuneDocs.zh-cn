@@ -15,18 +15,18 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc3160d40d4ddabcd0a7d8d5557b07b4086eea7c
-ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
+ms.openlocfilehash: 76764155e66ab69b5428712dae8a860233acaeb6
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-iOS 应用商店允许你为想要在公司运行的应用购买多个许可证。 购买应用的多个副本，有助于降低跟踪多个已购买应用副本的管理开销。
+在 iOS App Store 中，可以购买要在公司中运行的应用的多个许可证。 购买应用的多个副本，有助于降低跟踪多个已购买应用副本的管理开销。
 
 Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 
@@ -54,7 +54,7 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>支持适用于 iOS 设备的 Apple Volume Purchase Program 批量采购应用
 
-通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)或 [Apple Volume Purchase Program 教育版](http://volume.itunes.apple.com/us/store)购买多个 iOS 应用许可证。 这一过程将需要从 Apple 网站设置一个 Apple VPP 帐户并将 Apple VPP 令牌上传到 Intune。  然后你可以将你的批量购买信息与 Intune 同步并追踪你的批量购买的应用的使用情况。
+通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)或 [Apple Volume Purchase Program 教育版](http://volume.itunes.apple.com/us/store)购买多个 iOS 应用许可证。 这一过程将需要从 Apple 网站设置一个 Apple VPP 帐户并将 Apple VPP 令牌上传到 Intune。  然后，可以将批量购买信息与 Intune 同步，并跟踪批量购买应用的使用情况。
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>支持适用于 iOS 设备的企业到企业批量采购应用
 
@@ -64,29 +64,29 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 开始前，需要先从 Apple 获取 VPP 标记，并将其上传到 Intune 帐户。 此外，还应了解以下注意事项：
 
 * 可以将多个批量购买计划令牌与你的 Intune 帐户关联。
-* 如果你以前使用过不同产品的 VPP 令牌，必须生成一个新的令牌在 Intune 中使用。
+* 如果以前对其他产品使用过 VPP 标记，必须生成用于 Intune 的新标记。
 * 每个令牌的有效期为一年。
-* 默认情况下，Intune 与 Apple VPP 服务一天同步两次。 可以随时开始手动同步。
-* 在开始将 iOS VPP 与 Intune 配合使用之前，先删除使用其他移动设备管理 (MDM) 供应商创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步 Apple VPP 服务中由 Intune 创建的数据。
+* 默认情况下，Intune 每天与 Apple VPP 服务同步两次。 可以随时启动手动同步。
+* 开始将 iOS VPP 用于 Intune 前，请删除与其他移动设备管理 (MDM) 供应商一起创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步 Apple VPP 服务中由 Intune 创建的数据。
 * Intune 支持最多添加 256 个 VPP 令牌。
 * Apple 的设备注册配置文件 (DEP) 计划可将移动设备管理 (MDM) 注册自动化。 利用 DEP，可以在不触及企业设备的情况下对其进行配置。 可以使用用于 Apple VPP 的相同计划代理帐户在 DEP 计划中进行注册。 [Apple 部署计划](https://deploy.apple.com)网站下列出的计划具有唯一的 Apple 部署计划 ID，并且此 ID 可用于登录 Apple 服务，如 iTunes 商店。 
+* 使用用户授权模型向用户或设备（具有用户关联）分配 VPP 应用时，每个 Intune 用户在其设备上接受 Apple 条款与条件时都需与一个唯一的 Apple ID 或电子邮件地址相关联。 确保为新的 Intune 用户设置设备时，使用该用户的唯一 Apple ID 或电子邮件地址来配置设备。 Apple ID 或电子邮件地址与 Intune 用户配成唯一对，并且最多可用于 5 台设备。
 * 仅支持一次在一个 Intune 帐户上使用一个 VPP 令牌。 不要将同一个 VPP 令牌重复用于多个 Intune 账户。
-* 使用用户授权模型向用户或设备（具有用户关联）分配 VPP 应用时，每个 Intune 用户在其设备上接受 Apple 条款与条件时都需与一个唯一的 Apple ID 或电子邮件地址相关联。 不要使用用作 Apple 部署计划 ID 的 Apple ID。 确保为新的 Intune 用户设置设备时，使用该用户的唯一 Apple ID 或电子邮件地址来配置设备。 Apple ID 或电子邮件地址与 Intune 用户配成唯一对，并且最多可用于 5 台设备。
 
 >[!IMPORTANT]
->将 VPP 令牌导入 Intune 之后，不要将同一令牌导入任何其他设备管理解决方案。 这样做可能导致许可证分配和用户记录丢失。
+>将 VPP 标记导入 Intune 后，请勿将同一标记导入其他任何设备管理解决方案中。 这样做可能会丢失许可证分配和用户记录。
 
-## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
+## <a name="to-get-and-upload-an-apple-vpp-token"></a>如何获取并上载 Apple VPP 标记
 
 1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+2. 依次选择“更多服务” > “监视 + 管理” > “Intune”。
 2.  在 VPP 令牌列表边栏选项卡上，单击“创建”。
 4. 在“创建 VPP 令牌”边栏选项卡中，指定下列信息：
-    - **VPP 令牌文件** - 如果尚未注册，则请注册 Volume Purchase Program 企业版或 Volume Purchase Program 教育版。 注册后，为你的帐户下载 Apple VPP 令牌，并在此处选择它。
+    - **VPP 令牌文件** - 如果尚未注册，则请注册 Volume Purchase Program 企业版或 Volume Purchase Program 教育版。 注册后，下载适用于帐户的 Apple VPP 标记，并在此处选择它。
     - **自动应用更新** - 从“关”切换为“开”以启用自动更新。 启用后，当设备签入时，Intune 将更新通过 Intune 服务针对指定令牌购买的所有应用。 Intune 将在应用商店内检测 VPP 应用更新，并在设备签入时自动将这些更新推送到设备中。
-4. 完成后，请单击“上传”。
+4. 完成后，请单击“上载”。
 
-该令牌将显示在令牌列表边栏选项卡中。
+此时，标记会显示在标记列表边栏选项卡中。
 
 你可以随时通过选择“立即同步”将 Apple 保存的数据与 Intune 同步。
 

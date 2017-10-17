@@ -2,7 +2,8 @@
 title: "Intune 应用 SDK 的优点"
 description: "Intune 应用 SDK 适用于 iOS 和 Android 平台，并允许通过 Microsoft Intune 使用移动应用管理功能。"
 keywords: 
-author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 08/24/2017
 ms.topic: article
@@ -13,11 +14,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: e3ab0526dbd9de6ce38bd540ea218ef56a4e4876
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概述
 Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用保护策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 你会发现你可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用我们的 API 针对需要应用参与的功能来自定义应用行为。

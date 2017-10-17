@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 036899c5e438355cc10da8ab2bd47ec0830c9946
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 71a3b86c628a4fd3210bf00be353c96443897dd5
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>使用 Microsoft Intune 的完全擦除或选择性擦除保护数据
 
@@ -140,7 +141,7 @@ ms.lasthandoff: 08/03/2017
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>擦除启用了加密文件系统 (EFS) 的内容
 Windows 8.1 和 Windows RT 8.1 支持选择性擦除 EFS 加密内容。 以下几点适用于启用 EFS 的内容的选择性擦除：
 
--   仅选择性擦除使用同一 Internet 域作为 Intune 帐户通过 EFS 保护的应用和数据。 有关详细信息，请参阅[设备数据管理的 Windows 选择性擦除](http://technet.microsoft.com/library/dn486874.aspx)。
+-   仅选择性擦除使用同一 Internet 域作为 Intune 帐户通过 EFS 保护的应用和数据。 有关详细信息，请参阅 [设备数据管理的 Windows 选择性擦除](http://technet.microsoft.com/library/dn486874.aspx)。
 
 -   如果对与 EFS 关联的域进行了任何更改，则更改可能要花费长达 48 小时，之后才能对使用新域的应用和数据进行选择性擦除。
 

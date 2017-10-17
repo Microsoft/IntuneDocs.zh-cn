@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9b62e03d88055c19a04c3968a1f060e20ae4fc65
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 486c223181e831680c46495a3014701211fcd716
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>配置 SCEP 证书基础结构
 
@@ -247,7 +248,7 @@ I
     ![IIS 的最大 URL 长度和最大查询长度](..\media\SCEP_IIS_max_URL.png)
 
 5.  重新启动服务器。 在服务器上运行 iisreset 将不足以完成这些更改。
-6. 浏览到 Http://FQDN/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
+6. 浏览到 http://FQDN/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
 
     ![测试 NDES](..\media\SCEP_NDES_URL.png)
 

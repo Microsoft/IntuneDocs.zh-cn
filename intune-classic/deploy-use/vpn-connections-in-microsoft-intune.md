@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5b1140d990ac5d1c4364b1f48107a355c43c6cdb
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="vpn-connections-in-microsoft-intune"></a>Microsoft Intune 中的 VPN 连接
 
@@ -109,7 +110,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 **VPN 连接名称（向用户显示）**     |指定 VPN 配置文件的名称。 用户将在其设备上的可用 VPN 连接列表中看到该名称。         
 **连接类型**     |  选择以下连接类型之一以在 VPN 配置文件中使用：**Cisco AnyConnect**（不适用于 Windows 8.1 或 Windows Phone 8.1）、**Pulse Secure**、**Citrix**、**F5 Edge Client**、**Dell SonicWALL Mobile Connect**、**CheckPoint Mobile VPN**。
 **VPN 服务器说明**     | 指定设备将连接到的 VPN 服务器的说明。 示例：**Contoso VPN 服务器**。 当连接类型是“F5 Edge Client”时，使用“服务器列表”字段来指定服务器说明和 IP 地址的列表。
-**服务器 IP 地址或 FQDN**    |提供 IP 地址或设备将连接到的 VPN 服务器的完全限定的域名。 示例：**192.168.1.1**、**vpn.contoso.com**。  当连接类型是“F5 Edge Client”时，使用“服务器列表”字段来指定服务器说明和 IP 地址的列表。         |         
+**服务器 IP 地址或 FQDN**    |提供 IP 地址或设备将连接到的 VPN 服务器的完全限定的域名。 示例：**192.168.1.1**、**vpn.contoso.com**。当连接类型是“F5 Edge Client”时，使用“服务器列表”字段来指定服务器说明和 IP 地址的列表。         |         
 **服务器列表**     |选择**添加**以添加用于 VPN 连接的新 VPN 服务器。 你还可以指定哪个服务器将作为连接的默认服务器。 此选项仅在连接类型为“F5 Edge Client”时显示。         
 **通过 VPN 连接发送所有网络流量**     |如果选择此选项，所有网络流量都会通过 VPN 连接发送。 如果不选择此选项，则在连接到第三方 VPN 服务器时客户端将动态协商拆分隧道的路由。 仅将通过 VPN 隧道发送与公司网络的连接。 你连接到 Internet 上的资源时，不会使用 VPN 隧道。
 **身份验证方法**| 选择 VPN 连接使用的身份验证方法：“**证书**”或“**用户名和密码**”。 （连接类型为“Cisco AnyConnect”时，“**用户名和密码**”不可用。）“**身份验证方法**”选项不可用于 Windows 8.1。
@@ -165,11 +166,11 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 3. 可选：提供 URL 字符串探测，这是规则用作测试的 URL。 如果安装有此配置文件的设备能在不重定向的情况下访问此 URL，则将建立 VPN，且该设备将连接到目标 URL。 用户将看不到该 URL 字符串探测站点。 URL 字符串探测示例是审核 Web 服务器的地址，用于在连接 VPN 前检查设备的相容性。 另一种可能性是 URL 通过 VPN 将设备连接到目标 URL 前，测试 VPN 连接至站点的能力。
 4. 选择以下操作之一：
   - **连接**
-  - **评估连接**，具备三个设置 a。 **域操作** - 选择“需要时进行连接”或“从不连接” b。 **逗号分隔的域列表** - 仅当选择“需要时进行连接”的“域操作”，才会对其进行配置 c。 **所需的 URL 字符串探测** - HTTP 或 HTTPS（首选）URL，如 *https://vpntestprobe.contoso.com*。 该规则将进行检查以确认是否有来自此地址的响应。 如果没有，并且**域操作**为“**需要时进行连接**”，则会触发 VPN。
+  - **评估连接**，具备三个设置 a。 **域操作** - 选择“需要时进行连接”或“从不连接” b。 **逗号分隔的域列表** - 仅当选择“需要时进行连接”的“域操作”，才会对其进行配置 c。 **所需的 URL 字符串探测** - HTTP 或 HTTPS（首选）URL，如 *https://vpntestprobe.contoso.com*。该规则将进行检查以确认是否有来自此地址的响应。 如果没有，并且**域操作**为“**需要时进行连接**”，则会触发 VPN。
       
      > [!TIP]
      >
-     >举例说明，当公司网络上的某些站点需要直接或 VPN 公司网络连接时，你可能会使用此操作，但其他情况则不需要。 如果在**逗号分隔的 DNS 搜索域列表** *corp.contoso.com* 中列出，则可以选择“**需要时进行连接**”，然后列出可能需要 VPN 的网络中的特定站点，如 *sharepoint.corp.contoso.com*。 然后该规则将检查是否可以访问 *vpntestprobe.contoso.com*。 如果不能，VPN 将会触发 sharepoint 站点。
+     >举例说明，当公司网络上的某些站点需要直接或 VPN 公司网络连接时，你可能会使用此操作，但其他情况则不需要。 如果在**逗号分隔的 DNS 搜索域列表** *corp.contoso.com* 中列出，则可以选择“**需要时进行连接**”，然后列出可能需要 VPN 的网络中的特定站点，如 *sharepoint.corp.contoso.com*。然后该规则将检查是否可以访问 *vpntestprobe.contoso.com*。 如果不能，VPN 将会触发 sharepoint 站点。
   - **忽略** - 这会导致 VPN 连接不发生更改。 如果 VPN 已连接，则保留连接状态，如果未连接，则不要进行连接。 例如，你可能有一个为所有内部企业网站连接 VPN 的规则，但仅当设备实际连接到公司网络时，才可访问其中一个内部站点。 在这种情况下，你将为该站点创建忽略规则。
   - **断开连接** - 当条件匹配时，断开设备与 VPN 的连接。 例如，你可以在 **SSID** 字段中列出公司无线网络，并在设备连接到其中一个网络时，创建一个规则来断开设备与 VPN 的连接。
 

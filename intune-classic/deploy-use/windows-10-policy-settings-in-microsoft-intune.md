@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3264bd25f3a30e12930cc6d89c18baea558ffccc
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: fa802c1e84a4f40a8b67a6faa84edb8e5843025e
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的 Intune 策略设置
 
@@ -125,7 +126,7 @@ ms.lasthandoff: 09/14/2017
 |**允许使用 Cookie**||
 |**允许自动填充**|允许用户更改浏览器中的自动完成设置<br>（仅限 Windows 10 桌面版）|
 |**允许使用密码管理器**|启用或禁用 Microsoft Edge 密码管理器功能|
-|**企业模式网站列表位置**|指定在哪个位置可找到以企业模式打开的网站的列表。 用户无法编辑此列表。<br>（仅限 Windows 10 桌面版）|
+|**企业模式网站列表位置**|指定在哪里可以找到你想使用企业模式打开的网站的列表。 用户无法编辑此列表。<br>（仅限 Windows 10 桌面版）|
 
 ### <a name="apps"></a>应用
 
@@ -184,19 +185,19 @@ ms.lasthandoff: 09/14/2017
 |**允许脚本扫描**|允许 Defender 扫描在 Internet Explorer 中使用的脚本|
 |**监视文件和程序活动**|允许 Defender 监视设备上的文件和程序活动|
 |**跟踪已解决的恶意软件的天数**|允许 Defender 持续跟踪已解决的恶意软件，跟踪时间为你指定的天数，以便你可以手动检查之前受影响的设备。 如果你将天数设置为 **0**，则恶意软件将保留在隔离文件夹中，并且不会自动删除。 |
-|**允许客户端 UI 访问**|控制是否对用户隐藏 Windows Defender 用户界面。<br>此设置更改后，在用户的电脑下次重启时生效。|
+|**允许客户端 UI 访问**|控制 Windows Defender 用户界面是否对用户隐藏。<br>此设置更改后，在用户的电脑下次重启时生效。|
 |**计划每日一次快速扫描**|允许计划每日在你选择的时间里发生的快速扫描|
 |**计划系统扫描**|允许计划定期在选定日期和时间发生的完整或快速系统扫描|
-|**在扫描期间限制 CPU 使用率**|可让你限制允许扫描使用的 CPU 量（从 **1** 到 **100**）|
-|**扫描存档文件**|允许 Defender 扫描存档的文件（如 .zip 或 .cab 文件）。|
+|**在扫描期间限制 CPU 使用率**|可限制扫描允许使用的 CPU 量（从“1”到“100”）|
+|**扫描存档文件**|允许 Defender 扫描存档的文件，如 .zip 或 .cab 文件。|
 |**扫描电子邮件**|允许 Defender 在电子邮件到达设备时扫描它们|
 |**扫描可移动驱动器**|允许 Defender 扫描可移动驱动器（如 U 盘）|
-|**扫描映射的网络驱动器**|允许 Defender 扫描映射网络驱动器上的文件。<br>如果驱动器上的文件是只读的，则 Defender 将无法删除在它们中找到的任何恶意软件。|
+|**扫描映射的网络驱动器**|允许 Defender 扫描映射网络驱动器上的文件。<br>如果驱动器上的文件是只读的，Defender 将无法删除在其中找到的任何恶意软件。|
 |**扫描从网络共享文件夹中打开的文件**|允许 Defender 扫描共享网络驱动器上的文件（例如，从 UNC 路径访问的那些文件）。<br>如果驱动器上的文件是只读的，则 Defender 将无法删除在它们中找到的任何恶意软件。|
 |**签名更新间隔**|指定 Defender 检查新签名文件的时间间隔。|
-|**允许使用云保护**|允许或阻止 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息。 此信息用于在将来改进本服务。|
+|**允许云保护**|允许或阻止 Microsoft Active Protection Service 从你管理的设备接收有关恶意软件活动的信息。 此信息用于在将来改进服务。|
 |**提示用户提交示例**|控制是否自动向 Microsoft 发送可能需要 Microsoft 的进一步分析以确定其是否为恶意的文件|
-|**可能不需要的应用程序检测**|防止已注册的 Windows 桌面版设备运行被 Windows Defender 分类为可能不需要的软件。 你可以防止这些应用程序运行，或使用审核模式在安装了不需要的应用程序时进行报告。|
+|**可能不需要的应用程序检测**|阻止注册的 Windows 桌面设备运行 Windows Defender 分类为可能不需要的软件。 你可以防止这些应用程序运行，或使用审核模式在安装了不需要的应用程序时进行报告。|
 |**在运行扫描或使用实时保护时要排除的文件和文件夹**|向排除列表添加一个或多个文件和文件夹（如 **C:\Path** 或 **%ProgramFiles%\Path\filename.exe**）。 不会在任何实时或计划的扫描中包括这些文件和文件夹。|
 |**在运行扫描或使用实时保护时要排除的文件扩展名**|向排除列表添加一个或多个文件扩展名（如 **jpg** 或 **txt**）。 不会在任何实时或计划的扫描中包括具有这些扩展名的任何文件。|
 |**在运行扫描或使用实时保护时要排除的进程**|向排除列表添加类型为 **.exe**、**.com** 或 **.scr** 的一个或多个进程。 不会在任何实时或计划的扫描中包括这些进程。|

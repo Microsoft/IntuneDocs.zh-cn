@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 79be4993c9b23294d1f49743f863588f9d0cb9b5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ff936e49c6612d6a938b48497648a91ea0898f99
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android for Work 设备的合规性策略设置
 
@@ -80,4 +81,4 @@ ms.lasthandoff: 07/01/2017
 - **所需的最低操作系统版本**：设备不满足最低操作系统 (OS) 版本要求时，它将被报告为不符合要求。
   将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 
-- **允许的最高操作系统版本**：设备使用的操作系统 (OS) 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。 除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
+- **允许的最高操作系统版本**：设备使用的操作系统 (OS) 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
