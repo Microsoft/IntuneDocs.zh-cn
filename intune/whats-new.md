@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2817537cd9bc5ec6b8e9f5800f0c8f87cfde189
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 1bc322567505506f63e2eb002fd330fc151bc70d
+ms.sourcegitcommit: 6004fe51e3cee6fb34514ed0d56e20587ecafeb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -57,11 +57,11 @@ ms.lasthandoff: 10/06/2017
 
 使用 Android 设备的最终用户将能够点击公司门户应用中的不合规原因。 在可能的情况下，此操作会使用户直接转到“设置”应用中的适当位置，以修复问题。 
 
-#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-o---1475932---"></a>向最终用户额外发送有关适用于 Android O 的公司门户应用的推送通知<!---1475932--->
+#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-oreo---1475932--"></a>向最终用户额外发送有关 Android Oreo 公司门户应用的推送通知 <!--1475932-->
 
-最终用户将看到附加通知，指示他们适用于 Android O 的公司门户应用何时执行从 Intune 服务中检索策略等后台任务。 最终用户可以更加清楚地了解公司门户何时在设备上执行管理任务。 这属于对适用于 Android O 的公司门户应用的[公司门户 UI 的整体优化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)。 
+最终用户可以看到其他通知，其中指明了 Android Oreo 公司门户应用何时执行后台任务，如从 Intune 服务检索策略。 这进一步提高了透明度，可方便最终用户了解公司门户应用何时在其设备上执行管理任务。 这是 Android Oreo 公司门户应用的全部[公司门户 UI 优化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)中的一部分。 
 
-Android O 中启用的新 UI 元素进行了进一步优化。最终用户将看到其他通知，提示用户公司门户正在执行后台任务，如从 Intune 服务检索策略。  最终用户可以更加清楚地了解公司门户何时在设备上执行管理任务。
+Android Oreo 中启用的新 UI 元素有进一步的优化。  最终用户将看到附加通知，指示他们公司门户何时执行从 Intune 服务中检索策略等后台任务。  最终用户可以更加清楚地了解公司门户何时在设备上执行管理任务。
 
 #### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>Android 公司门户应用与工作配置文件配合使用时的新行为 <!---1485783--->
 
