@@ -62,6 +62,7 @@
 ### [注册 iOS 设备](enroll-your-device-in-intune-ios.md)
 ### [注册 macOS 设备](enroll-your-device-in-intune-macos.md)
 ### [通过公司门户注册 macOS 设备](enroll-your-device-in-intune-macos-cp.md)
+### [此设备略有不同](device-little-different-jamf.md)
 
 ### [在设备上使用托管应用](use-managed-apps-on-your-device-ios.md)
 ### [设置或更改密码](set-or-change-your-passcode-ios.md)

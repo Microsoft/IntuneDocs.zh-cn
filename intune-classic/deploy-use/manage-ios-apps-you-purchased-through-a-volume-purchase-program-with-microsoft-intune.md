@@ -5,20 +5,21 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bbb67c9225ef99f57f12c839b81b95a1956b70f3
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 5140d2fa04a229dda0896a74333801899f5946e2
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 应用
 
@@ -29,8 +30,7 @@ iOS 应用商店允许你为想要在公司运行的应用购买多个许可证�
 Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应用：从应用商店中导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。
 
 > [!Important]
-> 目前，Intune 将 iOS Volume Purchase Program 企业版 (VPP) 应用许可证分配给用户，而不是设备。 因此，用户必须输入其 Apple ID 密码才能安装应用。
-> 此版本不支持 Apple Volume Purchase Program for Education 和 B2B 应用。
+> 目前，Intune 将 iOS Volume Purchase Program 企业版 (VPP) 应用许可证分配给用户和设备。 因此，用户可能必须输入其 Apple ID 密码才能安装应用。
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理批量采购的适用于 iOS 设备的应用程序
 通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)购买多个 iOS 应用许可证。 这涉及到从 Apple 网站设置一个 Apple VPP 帐户并将 Apple VPP 令牌上载到 Intune。  然后你可以将你的批量购买信息与 Intune 同步并追踪你的批量购买的应用的使用情况。

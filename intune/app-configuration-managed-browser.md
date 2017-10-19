@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6bdb4e1288e91d78d95ba6e6640111d9af06ed7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -51,7 +51,7 @@ Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
 -   运行 iOS 8.0 及更高版本的设备
 
 >[!IMPORTANT]
->自 2017 年 10 月起，Android 版 Intune Managed Browser 应用将仅支持运行 Android 4.4 及更高版本的设备。 iOS 上的 Intune Managed Browser 应用将仅支持运行 iOS 9.0 及更高版本的设备。
+>自 2017 年 10 月起，Android 版 Intune Managed Browser 应用仅支持运行 Android 4.4 及更高版本的设备。 iOS 上的 Intune Managed Browser 应用将仅支持运行 iOS 9.0 及更高版本的设备。
 >早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
 
 
@@ -64,10 +64,10 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 3.  在管理列表中的“移动应用”边栏选项卡上，选择“应用配置策略”。
 4.  在“应用配置策略”边栏选项卡上，选择“添加”。
 5.  在“添加应用配置”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”。
-6.  对于“设备注册”类型，请选择“未注册 Intune”。
+6.  对于“设备注册”类型，请选择“受管理设备”或“受管理应用”。
 7.  选择“选择所需应用”，然后在“目标应用”边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”。
 8.  选择“确定”，返回“添加应用配置”边栏选项卡。
-9.  选择“配置设置”。 在“配置”边栏选项卡上，定义键值对来为 Managed Browser 提供配置。 请参阅本主题的后续部分，了解可以定义的不同键值对。
+9.  选择“配置设置”。 在“配置”边栏选项卡上，定义键值对来为 Managed Browser 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
 10. 完成后，选择“确定”。
 11. 在“添加应用配置”边栏选项卡上，选择“创建”。
 12. 创建新配置后，其显示在“应用配置”边栏选项卡上。
@@ -127,6 +127,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 - 用户无法删除或修改这些书签
 - 这些书签显示在列表顶部。 用户创建的任何书签显示在这些书签下方。
+- 如果已启用应用代理重定向，可以使用应用代理 Web 应用的内部或外部 URL 添加应用。
 
 使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
@@ -166,15 +167,15 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 -   使用下表了解指定 URL 时可以使用的允许模式：
 
 |URL|详细信息|匹配|不匹配|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|匹配单个页面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|匹配单个页面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|匹配以 www.contoso.com 开头的所有 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|匹配 contoso.com 下的所有子域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|匹配单个文件夹|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|匹配单个页面（使用端口号）|http://www.contoso.com:80|
-    |https://www.contoso.com|匹配单个安全页面|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|匹配单个文件夹和所有子文件夹|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|-------|---------------|-----------|------------------|
+|http://www.contoso.com|匹配单个页面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
+|http://contoso.com|匹配单个页面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
+|http://www.contoso.com/&#42;|匹配以 www.contoso.com 开头的所有 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://&#42;.contoso.com/&#42;|匹配 contoso.com 下的所有子域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+|http://www.contoso.com/images|匹配单个文件夹|www.contoso.com/images|www.contoso.com/images/dogs|
+|http://www.contoso.com:80|匹配单个页面（使用端口号）|http://www.contoso.com:80|
+|https://www.contoso.com|匹配单个安全页面|https://www.contoso.com|http://www.contoso.com|
+|http://www.contoso.com/images/&#42;|匹配单个文件夹和所有子文件夹|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   以下是一些你不能指定的输入的示例：
 
@@ -200,8 +201,6 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser 的安全和隐私
 
--   在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
-
 -   Managed Browser 不使用用户在设备上对内置浏览器进行的设置。 Managed Browser 无法访问这些设置。
 
 -   如果配置与 Managed Browser 关联的一个应用保护策略中的选项**访问需要简单 PIN** 或**访问需要公司凭据**，且用户选择了身份验证页面上的帮助链接，那么无论是否已将这些用户添加到策略中的阻止列表中，他们都可以浏览任何 Internet 站点。
@@ -214,3 +213,14 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。
 
 
+-   在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
+-   Managed Browser 不使用用户在设备上对内置浏览器进行的设置。 Managed Browser 无法访问这些设置。
+
+-   如果配置与 Managed Browser 关联的一个应用保护策略中的选项**访问需要简单 PIN** 或**访问需要公司凭据**，且用户选择了身份验证页面上的帮助链接，那么无论是否已将这些用户添加到策略中的阻止列表中，他们都可以浏览任何 Internet 站点。
+
+-   Managed Browser 仅能在直接访问站点时阻止访问。 使用中间服务（例如翻译服务）访问站点时，该策略则不会阻止访问。
+
+-   在判断是否允许通过身份验证和访问 Intune 文档时，**&#42;.microsoft.com** 不在允许或阻止列表设置的约束范围之内。 始终允许。
+
+### <a name="turn-off-usage-data"></a>关闭用法数据
+Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。

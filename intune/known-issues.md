@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/15/2017
 - 在经典门户中禁用它们
 - 在 Azure 门户中启用它们  
 
-2017 年 9 月 11 日之后，这些功能的迁移将并入到 Azure 的主迁移。 如果帐户已迁移并使用 Azure 门户，则会在 2017 年 9 月 11 日至 22 日期间进行此辅助迁移。 帐户开始迁移后，将在同一天内完成迁移。 自在 Intune 经典门户中禁用这些功能起，迁移需要 6 小时才能完成。
+2017 年 9 月 22 日之后，这些功能的迁移将并入到 Azure 的主迁移。 如果帐户已迁移并使用 Azure 门户，则现在可能已完成了辅助迁移。 若未完成，这些功能将在 11 月前迁移到 Azure。 帐户开始迁移后，将在同一天内完成迁移。 自在 Intune 经典门户中禁用这些功能起，迁移需要 6 小时才能完成。
 
 如果目前在 Azure 门户中管理这些 Intune 功能，请注意以下几点：
 
