@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddb9b939b695f8612c02a2a25f4670e28c556c44
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
+ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 监视应用信息和分配
 
@@ -44,4 +44,4 @@ Intune 提供了许多可以用于监视所托管应用的属性及其分配状�
 ## <a name="monitor"></a>监视
 
 - **设备安装状态** - 提供已将所选应用分配到的各个设备的详细信息，包括设备名称、操作系统、设备上次签入 Intune 的时间及应用安装状态。
-- **用户安装状态** - 提供已向其分配所选应用的用户的详细信息，包括用户所有设备上应用的安装数量及任意安装失败的相关信息。
+- **用户安装状态** - 提供已向其分配所选应用的用户的详细信息，包括用户在其所有设备上安装的应用数以及任意安装失败的相关信息。
