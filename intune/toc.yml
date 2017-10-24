@@ -73,7 +73,7 @@
           href: planning-guide-support-plan.md
         - name: 设计
           href: planning-guide-design.md
-        - name: 实现
+        - name: 实施
           href: planning-guide-onboarding.md
         - name: 测试和验证
           href: planning-guide-test-validation.md
@@ -142,7 +142,7 @@
         - name: 注册选项
           href: enrollment-options.md
           items:
-            - name: 条款和条件
+            - name: Terms and conditions
               href: terms-and-conditions-create.md
             - name: 限制
               href: enrollment-restrictions-set.md
@@ -381,6 +381,8 @@
           href: compliance-policy-create-mac-os.md
         - name: 创建 Windows 策略
           href: compliance-policy-create-windows.md
+        - name: 对不符合设备的操作
+          href: actions-for-noncompliance.md
         - name: 监视设备符合性
           href: compliance-policy-monitor.md
     - name: 设置条件访问
@@ -461,6 +463,8 @@
           href: windows-hello.md
     - name: 管理角色
       href: role-based-access-control.md
+    - name: 管理操作系统版本
+      href: manage-os-versions.md
     - name: 管理软件更新
       href: windows-update-for-business-configure.md
     - name: 使用软件代理管理电脑
@@ -610,5 +614,5 @@
       items:
         - name: 适用于 Intune 的图形 API 的相关参考
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: 词汇表
+- name: 术语表
   href: intune-glossary.md
