@@ -48,7 +48,7 @@ ms.lasthandoff: 09/09/2017
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **Dell SonicWALL Mobile Connect**
-    - ** F5 Edge Client**
+    -  **F5 Edge Client**
     - **Pulse Secure**
 
 - **登录组或域**（仅限 Dell SonicWALL Mobile Connect）- 指定要连接到的登录组或域的名称。

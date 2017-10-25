@@ -43,7 +43,7 @@ ms.lasthandoff: 09/09/2017
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
 - **Check Point Capsule VPN**
 - **Dell SonicWALL Mobile Connect**
-- ** F5 Edge Client**
+-  **F5 Edge Client**
 - **Pulse Secure**
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
