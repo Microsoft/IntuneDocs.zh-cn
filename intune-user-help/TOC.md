@@ -26,6 +26,7 @@
 
 ### [修复 Android 的常见问题](troubleshoot-your-device-android.md)
 #### [检查设备符合性](check-compliance-on-your-device-android.md)
+#### [使用省电模式同步 Outlook 电子邮件](power-saving-mode-android.md)
 
 #### 使用日志修复问题
 ##### [启用详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
