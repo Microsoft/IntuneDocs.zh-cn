@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -37,7 +37,11 @@ Managed Browser 是一款 Web 浏览应用，可以从公共应用商店中下�
 
 有关详细信息，请参阅[什么是应用保护策略？](/intune/app-protection-policy)
 
-可以将这些设置应用于已注册的 Intune 设备及已注册其他设备管理产品的设备，还可应用于未进行托管的设备。
+可将这些设置应用于：
+
+- 已向 Intune 注册的设备
+- 注册了其他 MDM 产品的设备
+- 非托管设备
 
 如果用户从应用商店中安装了 Managed Browser，并且 Intune 未托管它，则可将其用作基本的 Web 浏览器，其支持通过 Microsoft MyApps 网站进行单一登录。 用户将被直接转到 MyApps 网站，在其中用户可以看到其预配的所有 SaaS 应用程序。
 Intune 未托管 Managed Browser 期间，无法访问由 Intune 托管的其他应用程序中的数据。 

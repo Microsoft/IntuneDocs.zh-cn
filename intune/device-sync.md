@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab24b147b32c94ba51728c0c223de3e6c92dd215
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
+ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>将设备与 Intune 同步以获取最新的策略和操作
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 09/14/2017
 
 ## <a name="supported-platforms"></a>受支持的平台
 
-- Windows - 支持
-- Windows Phone - 支持
-- iOS - 支持
-- macOS - 支持
-- Android - 支持
+- Windows
+- Windows Phone
+- iOS
+- macOS
+- Android
 
 ## <a name="how-to-sync-a-device"></a>如何同步设备
 
@@ -43,6 +43,26 @@ ms.lasthandoff: 09/14/2017
 4. 在“设备和组”边栏选项卡上，选择“所有设备”。
 5. 从管理的设备列表中，选择一台设备，然后选择“同步”远程操作。
 7. 选择“是”确认操作。
+
+
+## <a name="retriable-error-codes"></a>可重试错误代码
+
+当管理员运行“同步”设备操作时，已失败但引发了可重试错误代码的 iOS 和 Android 应用仍对设备可用。 但是，引发不可重试错误代码的应用必须等待七日，才可用于设备。
+
+
+| 错误代码  | 建议的说明                                                                                                                  | 可重试 |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 2016330898 | 出现未知错误。                                                                                                             | 否        |
+| 2016330897 | 对 Intune 的连接已超时。重置连接                                                                             | 是       |
+| 2016330896 | 对 Internet 的连接已断开。 重置连接。                                                                            | 是       |
+| 2016330895 | 对 Internet 的连接已断开。 重置连接。                                                                            | 是       |
+| 2016330894 | 对 Internet 的连接已断开。 重置连接。                                                                            | 是       |
+| 2016330893 | 对 Internet 的连接已断开。 重置连接。                                                                            | 是       |
+| 2016330892 | 国际漫游已禁用。                                                                                                     | 否        |
+| 2016330891 | 进行电话呼叫时无法访问此设备的手机网络数据连接。 等待电话呼叫完成。 | 是       |
+| 2016330890 | 此设备的手机网络。 当前无法使用这些设备。                                                   | 否        |
+| 2016330889 | 安全连接失败。 重置连接。                                                                                   | 是       |
+| 2016330888 | 服务器信任评估失败。                                                                                                | 否        |
 
 ## <a name="next-steps"></a>后续步骤
 

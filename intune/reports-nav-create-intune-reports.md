@@ -5,7 +5,7 @@ keywords: "Intune 数据仓库"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb311429e0537709b3476154bdef24347cb99026
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: e399c36d4c6a855766ee956b3ca24c503a1f974b
+ms.sourcegitcommit: e57512698a479df0d25ece6ece4492ec0e4f0f3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>使用 Intune 数据仓库
 
@@ -41,4 +41,5 @@ ms.lasthandoff: 08/15/2017
 **后续步骤**
 
 - 获取链接并使用 Power BI 来获取见解。 有关说明，请参阅[使用 Power BI 连接到 Intune 数据仓库](reports-proc-get-a-link-powerbi.md)。
+- 通过链接，使用 Power BI 创建自定义报表。 有关说明，请参阅[使用 Power BI 从 OData 数据源创建报表](reports-proc-create-with-odata.md)。
 - 有关 Intune 数据仓库 API、数据模型及实体间关系的详细信息<!-- , and an example of creating a custom client to retrieve data,-->，请参阅 [Intune 数据仓库 API](reports-nav-intune-data-warehouse.md)。

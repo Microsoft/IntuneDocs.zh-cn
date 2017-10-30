@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>策略实体引用
 
@@ -33,16 +33,16 @@ ms.lasthandoff: 08/04/2017
 
 “策略”实体列出了设备配置文件、应用配置文件和符合性策略。 可使用移动设备管理 (MDM) 将策略分配给企业中的一个组。
 
-| 属性  | 描述 | 示例 |
+| 属性  | 说明 | 示例 |
 |---------|------------|--------|
-| PolicyKey |表示数据仓库中策略的唯一键 |123 |
-| PolicyId |数据仓库中策略的唯一标识符 |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |策略名称 |“Windows 10 基线” |
+| PolicyKey |表示数据仓库中策略的唯一键。 |123 |
+| PolicyId |数据仓库中策略的唯一标识符。 |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |策略名称。 |“Windows 10 基线” |
 | PolicyVersion |策略版本。 编辑或更改策略即会创建一个更新的策略版本。 |1, 2, 3 |
-| IsDeleted |表明是否已更新策略记录。  True - 策略拥有新纪录，其中含有更新的字段。 False - 策略的最新记录。 |True/False |
-| StartDateInclusiveUTC |在数据仓库中创建策略的 UTC 日期和时间 |2016/11/23 - 中午 12:00:00 |
-| DeletedDateUTC |IsDeleted 更改为 True 时的 UTC 日期和时间 |2016/11/23 - 中午 12:00:00 |
-| RowLastModifiedDateTimeUTC |上次在数据仓库中修改策略的 UTC 日期和时间 |2016/11/23 - 中午 12:00:00 |
+| IsDeleted |表明是否已更新策略记录。  <br>True - 策略拥有新纪录，其中含有更新的字段。 <br>False - 策略的最新记录。 |True/False |
+| StartDateInclusiveUTC |在数据仓库中创建策略时的 UTC 日期和时间。 |2016/11/23 - 凌晨 12:00:00 |
+| DeletedDateUTC |IsDeleted 更改为 True 时的 UTC 日期和时间。 |2016/11/23 - 凌晨 12:00:00 |
+| RowLastModifiedDateTimeUTC |上次在数据仓库中修改策略时的 UTC 日期和时间。 |2016/11/23 - 凌晨 12:00:00 |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,9 +50,9 @@ PolicyType 实体列出了设备配置文件、应用配置文件和符合性策
 
 | 属性  | 说明 | 示例 |
 |---------|------------|--------|
-| PolicyTypeId |源系统中的策略的唯一标识符 |123 |
-| PolicyTypeKey |数据仓库中策略的唯一标识符 |1 |
-| PolicyTypeName |策略类型名称。 |Windows 10 符合性策略 |
+| PolicyTypeId |源系统中的策略的唯一标识符。 |123 |
+| PolicyTypeKey |数据仓库中策略的唯一标识符。 |1 |
+| PolicyTypeName |策略类型名称。 |Windows 10 符合性策略。 |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,23 +60,23 @@ DeviceConfigurationProfileDeviceActivity 实体列出每天处于成功、挂起
 
 | 属性  | 说明 | 示例 |
 |---------|------------|--------|
-| DateKey |日期键，表明在数据仓库中记录设备配置文件签入的时间 |20160703 |
-| Pending |处于挂起状态的唯一设备数 |123 |
-| 成功 |处于成功状态的唯一设备数 |12 |
-| 错误 |处于错误状态的唯一设备数 |10 |
-| Failed |处于失败状态的唯一设备数 |2 |
+| DateKey |日期键，表明在数据仓库中记录设备配置文件签入的时间。 |20160703 |
+| Pending |处于挂起状态的唯一设备数。 |123 |
+| 成功 |处于成功状态的唯一设备数。 |12 |
+| 错误 |处于错误状态的唯一设备数。 |10 |
+| Failed |处于失败状态的唯一设备数。 |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
 UserConfigurationProfileDeviceActivity 实体列出每天处于成功、挂起、失败或错误状态的用户数。 该数字反映了分配给该实体的设备配置文件。 例如，如果对于分配给某用户的所有策略，该用户均为成功状态，则当天的成功计数增加一。 如果向用户分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则将用户计为错误状态。  UserConfigurationProfileDeviceActivity 实体列出了过去 30 天内给定某天中处于各状态的用户数。
 
-| 属性  | 描述 | 示例 |
+| 属性  | 说明 | 示例 |
 |---------|------------|--------|
-| DateKey |日期键，表明在数据仓库中记录设备配置文件签入的时间 |20160703 |
-| Pending |处于挂起状态的唯一用户数 |123 |
-| 成功 |处于成功状态的唯一用户数 |12 |
-| 错误 |处于错误状态的唯一用户数 |10 |
-| Failed |处于失败状态的唯一用户数 |2 |
+| DateKey |日期键，表明在数据仓库中记录设备配置文件签入的时间。 |20160703 |
+| Pending |处于挂起状态的唯一用户数。 |123 |
+| 成功 |处于成功状态的唯一用户数。 |12 |
+| 错误 |处于错误状态的唯一用户数。 |10 |
+| Failed |处于失败状态的唯一用户数。 |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ PolicyTypeActivity 列出了处于成功、挂起、失败或错误状态的总�
 
 | 属性  | 说明 | 示例 |
 |---------|------------|--------|
-| DateKey |日期键，表明在数据仓库中记录设备配置文件签入的时间 |20160703 |
-| PolicyKey |可将策略键与策略联接以获取策略名称 |Windows 10 基线 |
-| PolicyTypeKey |可将策略键类型与策略类型联接以获取策略类型名称 |Windows10Compliance 策略 |
-| Pending |处于挂起状态的唯一设备数 |123 |
-| 成功 |处于成功状态的唯一设备数 |12 |
-| 错误 |处于错误状态的唯一设备数 |10 |
-| Fail- |处于失败状态的唯一设备数 |2 |
+| DateKey |日期键，表明在数据仓库中记录设备配置文件签入的时间。 |20160703 |
+| PolicyKey |策略键，可将其与策略相联接以获取 policyName。 |Windows 10 基线 |
+| PolicyTypeKey |策略键类型，可将其与策略类型相联接以获取策略类型名称。 |Windows10 符合性策略 |
+| Pending |处于挂起状态的唯一设备数。 |123 |
+| 成功 |处于成功状态的唯一设备数。 |12 |
+| 错误 |处于错误状态的唯一设备数。 |10 |
+| Fail- |处于失败状态的唯一设备数。 |2 |

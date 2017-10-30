@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 957f05e87f777f62b74c8849c5b494fa638e92f4
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
@@ -122,9 +122,9 @@ OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
 
 | 属性  | 说明 | 示例 |
 |---------|------------|--------|
-| ownerTypeID |所有者类型的唯一标识符 | |
-| ownerTypeKey |数据仓库中所有者类型的唯一标识符 - 代理键 | |
-| ownerTypeName |表示设备的所有者类型：公司 - 设备为企业所有。 个人 - 设备为个人所有 (BYOD)。  未知 - 此设备上无此信息。 |公司 个人 未知 |
+| ownerTypeID |所有者类型的唯一标识符。 | |
+| ownerTypeKey |数据仓库中所有者类型的唯一标识符 - 代理键。 | |
+| ownerTypeName |表示设备的所有者类型：  <br>公司 - 设备为企业所有。 <br>个人 - 设备为个人所有 (BYOD)。  <br>未知 - 此设备上无此信息。 |公司 个人 未知 |
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 
@@ -132,7 +132,7 @@ MdmStatuses 实体表明设备的符合性状态。
 
 | 属性  | 说明 | 示例 |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus 标识符 |0 - 未知 1 - 符合 2 -不符合 |
+| MdmStatusName |MdmStatus 标识符 |0 - 未知 <br>1 - 符合 <br>2 - 不符合 |
 | MdmStatusKey |数据仓库中符合性状态的唯一标识符 - 代理键 | |
 
 ## <a name="managementstates"></a>ManagementStates
@@ -141,26 +141,26 @@ ManagementStates 实体提供有关设备状态的详细信息。 详细信息�
 
 | 属性  | 说明 |
 |---------|------------|
-| managementStateID |管理状态的唯一标识符 |
-| managementStateKey |数据仓库中管理状态的唯一标识符 - 代理键 |
-| managementStateName |表明应用于此设备的远程操作的状态。 |
+| managementStateID | 管理状态的唯一标识符。 |
+| managementStateKey | 数据仓库中管理状态的唯一标识符 - 代理键。 |
+| managementStateName | 表明应用于此设备的远程操作的状态。 |
 
 ## <a name="example"></a>示例
 
 | managementStateID  | Name | 描述 |
 |---------|------------|--------|
-| 0 |托管 |托管时不存在挂起的远程操作。 |
-| 1 |RetirePending |存在一个针对设备的挂起的停用命令。 |
-| 2 |RetireFailed |设备上的停用命令失败。 |
-| 3 |WipePending |存在一个针对设备的挂起的擦除命令。 |
-| 4 |WipeFailed |设备上的擦除命令失败。 |
-| 5 |Unhealthy |不正常状态 |
-| 6 |DeletePending |存在一个针对设备的挂起的删除命令。 |
-| 7 |RetireIssued |已向设备发布停用命令。 |
-| 8 |WipeIssued |已发布擦除命令。 |
-| 9 |WipeCanceled |已取消擦除命令。 |
-| 10 |RetireCanceled |已取消停用命令。 |
-| 11 |Discovered |该设备是 Intune 新发现的设备，首次签入后，即会变为“托管”状态 |
+| 0 |托管 | 托管时不存在挂起的远程操作。 |
+| 1 |RetirePending | 存在一个针对设备的挂起的停用命令。 |
+| 2 |RetireFailed | 设备上的停用命令失败。 |
+| 3 |WipePending | 存在一个针对设备的挂起的擦除命令。 |
+| 4 |WipeFailed | 设备上的擦除命令失败。 |
+| 5 |Unhealthy | 不正常状态。 |
+| 6 |DeletePending | 存在一个针对设备的挂起的删除命令。 |
+| 7 |RetireIssued | 已向设备发布停用命令。 |
+| 8 |WipeIssued | 已发布擦除命令。 |
+| 9 |WipeCanceled | 已取消擦除命令。 |
+| 10 |RetireCanceled | 已取消停用命令。 |
+| 11 |Discovered | 该设备是 Intune 新发现的设备，首次签入后，即会变为“托管”状态。 |
 
 ## <a name="workplacejoinstatetypes"></a>WorkPlaceJoinStateTypes
 
@@ -168,9 +168,9 @@ WorkPlaceJoinStateTypes 实体表示设备的 Azure Active Directory Workplace J
 
 | 属性  | 描述 |
 |---------|------------|
-| WorkPlaceJoinStateID |工作区加入状态的唯一标识符 |
-| WorkPlaceJoinStateKey |数据仓库中工作区加入状态的唯一标识符 - 代理键 |
-| WorkPlaceJoinStateName |工作区加入状态 |
+| WorkPlaceJoinStateID | 工作区加入状态的唯一标识符 |
+| WorkPlaceJoinStateKey | 数据仓库中工作区加入状态的唯一标识符 - 代理键 |
+| WorkPlaceJoinStateName | 工作区加入状态 |
 
 ## <a name="example"></a>示例
 
@@ -192,21 +192,21 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 
 | 属性  | 描述 |
 |---------|------------|
-| ManagementAgentTypeID |管理代理类型的唯一标识符 |
-| ManagementAgentTypeKey |数据仓库中管理代理类型的唯一标识符 - 代理键 |
+| ManagementAgentTypeID | 管理代理类型的唯一标识符。 |
+| ManagementAgentTypeKey | 数据仓库中管理代理类型的唯一标识符 - 代理键。 |
 | ManagementAgentTypeName |表明用于管理设备的代理类型。 |
 
 ## <a name="example"></a>示例
 
 | ManagementAgentTypeID  | Name | 描述 |
 |---------|------------|--------|
-| 1 |EAS |设备通过 Exchange Active Sync 管理 |
-| 2 |MDM |设备由 MDM 代理管理 |
-| 3 |EasMdm |设备由 Exchange Active Sync 和 MDM 代理共同管理 |
-| 4 |IntuneClient |设备由 Intune 电脑代理管理 |
-| 5 |EasIntuneClient |设备由 Exchange Active Sync 和 Intune 电脑代理共同管理 |
-| 8 |ConfigManagerClient |设备由 System Center Configuration Manager 代理管理 |
-| 16 |Unknown |未知的管理代理类型 |
+| 1 |EAS | 设备通过 Exchange Active Sync 管理 |
+| 2 |MDM | 设备由 MDM 代理管理 |
+| 3 |EasMdm | 设备由 Exchange Active Sync 和 MDM 代理共同管理 |
+| 4 |IntuneClient | 设备由 Intune 电脑代理管理 |
+| 5 |EasIntuneClient | 设备由 Exchange Active Sync 和 Intune 电脑代理共同管理 |
+| 8 |ConfigManagerClient | 设备由 System Center Configuration Manager 代理管理 |
+| 16 |Unknown | 未知的管理代理类型 |
 
 ## <a name="devices"></a>设备
 
@@ -214,44 +214,44 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 
 | 属性  | 描述 |
 |---------|------------|
-| DeviceKey |数据仓库中设备的唯一标识符 - 代理键 |
-| DeviceId |设备的唯一标识符 |
-| DeviceName |允许对设备命名的平台上设备的名称。 在其他平台上，Intune 从其他属性创建名称。 此属性不可同时用于所有设备。 |
-| DeviceTypeKey |此设备的设备类型属性的键 |
-| ClientRegisterationStateKey |此设备的客户端注册状态属性的键 |
-| OwnerTypeKey |此设备的所有者类型属性的键：企业、个人或未知。 |
-| objectSourceKey |忽略此列。 |
-| CreatedDate |设备注册日期 |
-| LastContact |使用 Intune 签入的上一已知设备 |
-| LastContactNotification |Intune 上次通知设备使用 Intune 签入的时间 |
-| LastContactWorkplaceJoin |时间戳，表明此设备的上一个已知工作区加入状态。 |
-| ManagementAgentKey |与此设备关联的管理代理键。 |
-| ManagementStateKey |与此设备关联的管理状态键，表明远程操作的最新状态或设备是否越狱／获取了 root 权限。 |
-| ReferenceId |Azure Active Directory 中设备的 ID |
-| WorkPlaceJoinStateKey |与此设备关联的工作区加入状态的键。 |
-| CategoryId |忽略此列。 |
-| EnrollmentTypeKey |与此设备关联的注册类型的键，表明注册方法。 |
-| CertExpirationDate |MDM 管理证书的到期日期。 |
-| MdmStatusKey |MdmStatus 的键 |
-| OSFamily |OS 系列（Windows、iOS、Android 等。） |
-| OSVersion |OS 版本 |
-| OSMajorVersion |OS 版本（主要.次要.内部.修订）的主要版本组成部分 |
-| OSMinorVersion |OS 版本（主要.次要.内部.修订）的次要版本组成部分 |
-| OSBuildNumber |OS 版本（主要.次要.内部.修订）的内部版本组成部分 |
-| OSRevisionNumber |OS 版本（主要.次要.内部.修订）的修订版本组成部分 |
-| EasID |此设备的 EAS ID（如果设备由 Exchange Active Sync 管理）。 |
-| GraphDeviceIsManaged |Intune 在 AAD 中设置的上一管理状态 |
-| GraphDeviceIsCompliant |Intune 在 AAD 中设置的上一符合性状态 |
-| SerialNumber |设备设备序列号（如果可用） |
-| EnrolledByUser |注册此设备的用户的 ID，它引用用户表格中的用户 ID 列。 |
-| RowLastModifiedDateTimeUTC |上次修改此记录的时间。 |
-| ProcessorArchitecture |处理器体系结构 |
-| DeviceAction |发布的上一设备操作，暂时忽略。 |
-| 制造商 |设备制造商 |
-| 型号 |设备型号 |
-| LastPolicyUpdateUtc |设备上策略最近一次更新的时间 |
-| LastExchangeStatusUtc |设备上次与 Exchange 同步的时间。 |
-| IsDeleted |如果设备不再由 Intune 管理，则设置为 True。 保留上一已知状态。 |
+| DeviceKey | 数据仓库中设备的唯一标识符 - 代理键。 |
+| DeviceId | 设备的唯一标识符。 |
+| DeviceName | 允许对设备命名的平台上设备的名称。 在其他平台上，Intune 从其他属性创建名称。 此属性不可同时用于所有设备。 |
+| DeviceTypeKey | 此设备的设备类型属性的键。 |
+| ClientRegisterationStateKey | 此设备的客户端注册状态属性的键。 |
+| OwnerTypeKey | 此设备的所有者类型属性的键：企业、个人或未知。 |
+| objectSourceKey | 忽略此列。 |
+| CreatedDate | 设备注册日期。 |
+| LastContact | 使用 Intune 签入的上一已知设备。 |
+| LastContactNotification | Intune 上次通知设备使用 Intune 签入的时间。 |
+| LastContactWorkplaceJoin | 时间戳，表明此设备的上一个已知工作区加入状态。 |
+| ManagementAgentKey | 与此设备关联的管理代理键。 |
+| ManagementStateKey | 与此设备关联的管理状态键，表明远程操作的最新状态或设备是否越狱／获取了 root 权限。 |
+| ReferenceId | Azure Active Directory 中设备的 ID。 |
+| WorkPlaceJoinStateKey | 与此设备关联的工作区加入状态的键。 |
+| CategoryId | 忽略此列。 |
+| EnrollmentTypeKey | 与此设备关联的注册类型的键，表明注册方法。 |
+| CertExpirationDate | MDM 管理证书的到期日期。 |
+| MdmStatusKey | MdmStatus 的键。 |
+| OSFamily | OS 系列（Windows、iOS、Android 等。） |
+| OSVersion | OS 版本 |
+| OSMajorVersion | 操作系统版本（主要.次要.内部.修订）的主要版本组成部分。 |
+| OSMinorVersion | 操作系统版本（主要.次要.内部.修订）的次要版本组成部分。 |
+| OSBuildNumber | 操作系统版本（主要.次要.内部.修订）的内部版本组成部分。 |
+| OSRevisionNumber | 操作系统版本（主要.次要.内部.修订）的修订版本组成部分。 |
+| EasID | 此设备的 EAS ID（如果设备由 Exchange Active Sync 管理）。 |
+| GraphDeviceIsManaged | Intune 在 Azure AD 中设置的上一管理状态。 |
+| GraphDeviceIsCompliant | Intune 在 Azure AD 中设置的上一符合性状态。 |
+| SerialNumber | 设备的序列号（如果可用）。 |
+| EnrolledByUser | 注册此设备的用户的 ID，它引用用户表格中的用户 ID 列。 |
+| RowLastModifiedDateTimeUTC | 上次修改此记录的时间。 |
+| ProcessorArchitecture | 处理器体系结构。 |
+| DeviceAction | 发布的上一设备操作，暂时忽略。 |
+| 制造商 | 设备制造商。 |
+| 型号 | 设备型号。 |
+| LastPolicyUpdateUtc | 设备上策略最近一次更新的时间。 |
+| LastExchangeStatusUtc | 设备上次与 Exchange 同步的时间。 |
+| IsDeleted | 如果设备不再由 Intune 管理，则设置为 True。 保留上一已知状态。 |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
@@ -259,102 +259,103 @@ DevicePropertyHistory 实体具有的属性与设备表格和过去 90 天每个
 
 | 属性  | 描述 |
 |---------|------------|
-| DateKey |引用日期表格，该表格表明当日日期 |
-| DeviceKey |数据仓库中设备的唯一标识符 - 代理键。 这是对包含 Intune 设备 ID 的设备表格的引用 |
+| DateKey |引用日期表格，该表格表明当日日期。 |
+| DeviceKey |数据仓库中设备的唯一标识符 - 代理键。 这是对包含 Intune 设备 ID 的设备表格的引用。 |
 | DeviceName |允许对设备命名的平台上设备的名称。 在其他平台上，Intune 从其他属性创建名称。 此属性不可同时用于所有设备。 |
-| DeviceTypeKey |此设备的设备类型属性的键 |
-| ClientRegisterationStateKey |此设备的客户端注册状态属性的键 |
+| DeviceTypeKey |此设备的设备类型属性的键。 |
+| ClientRegisterationStateKey |此设备的客户端注册状态属性的键。 |
 | OwnerTypeKey |此设备的所有者类型属性的键：企业、个人或未知。 |
 | objectSourceKey |忽略此列。 |
-| CreatedDate |设备注册日期 |
-| LastContact |使用 Intune 签入的上一已知设备 |
-| LastContactNotification |Intune 上次通知设备使用 Intune 签入的时间 |
+| CreatedDate |设备注册日期。 |
+| LastContact |使用 Intune 签入的上一已知设备。 |
+| LastContactNotification |Intune 上次通知设备使用 Intune 签入的时间。 |
 | LastContactWorkplaceJoin |时间戳，表明此设备的上一个已知工作区加入状态。 |
 | ManagementAgentKey |与此设备关联的管理代理键。 |
 | ManagementStateKey |与此设备关联的管理状态键，表明远程操作的最新状态或设备是否越狱／获取了 root 权限。 |
-| ReferenceId |Azure Active Directory 中设备的 ID |
+| ReferenceId |Azure Active Directory 中设备的 ID。 |
 | WorkPlaceJoinStateKey |与此设备关联的工作区加入状态的键。 |
 | CategoryId |忽略此列。 |
 | EnrollmentTypeKey |与此设备关联的注册类型的键，表明注册方法。 |
 | CertExpirationDate |MDM 管理证书的到期日期。 |
-| MdmStatusKey |MdmStatus 的键 |
+| MdmStatusKey |MdmStatus 的键。 |
 | OSFamily |OS 系列（Windows、iOS、Android 等。） |
-| OSVersion |OS 版本 |
-| OSMajorVersion |OS 版本（主要.次要.内部.修订）的主要版本组成部分 |
-| OSMinorVersion |OS 版本（主要.次要.内部.修订）的次要版本组成部分 |
-| OSBuildNumber |OS 版本（主要.次要.内部.修订）的内部版本组成部分 |
-| OSRevisionNumber |OS 版本（主要.次要.内部.修订）的修订版本组成部分 |
+| OSVersion |操作系统版本。 |
+| OSMajorVersion |操作系统版本（主要.次要.内部.修订）的主要版本组成部分。 |
+| OSMinorVersion |操作系统版本（主要.次要.内部.修订）的次要版本组成部分。 |
+| OSBuildNumber |操作系统版本（主要.次要.内部.修订）的内部版本组成部分。 |
+| OSRevisionNumber |操作系统版本（主要.次要.内部.修订）的修订版本组成部分。 |
 | EasID |此设备的 EAS ID（如果设备由 Exchange Active Sync 管理）。 |
-| GraphDeviceIsManaged |Intune 在 AAD 中设置的上一管理状态 |
-| GraphDeviceIsCompliant |Intune 在 AAD 中设置的上一符合性状态 |
-| SerialNumber |设备设备序列号（如果可用） |
+| GraphDeviceIsManaged |Intune 在 Azure AD 中设置的上一管理状态。 |
+| GraphDeviceIsCompliant |Intune 在 Azure AD 中设置的上一符合性状态。 |
+| SerialNumber |设备的序列号（如果可用）。 |
 | EnrolledByUser |注册此设备的用户的 ID，它引用用户表格中的用户 ID 列。 |
 | RowLastModifiedDateTimeUTC |上次修改此记录的时间。 |
-| ProcessorArchitecture |处理器体系结构 |
+| ProcessorArchitecture |处理器体系结构。 |
 | DeviceAction |发布的上一设备操作，暂时忽略。 |
-| 制造商 |设备制造商 |
-| 型号 |设备型号 |
-| LastPolicyUpdateUtc |设备上策略最近一次更新的时间 |
+| 制造商 |设备制造商。 |
+| 型号 |设备型号。 |
+| LastPolicyUpdateUtc |设备上策略最近一次更新的时间。 |
 | LastExchangeStatusUtc |设备上次与 Exchange 同步的时间。 |
+
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
 MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单数据的每日快照。 DateKey 表明行的日期。 某些属性可能不适用于所有设备或仅为一部分设备进行了填充，请查看此页面了解详细信息。 有关详细信息，请参阅[通过 Microsoft Intune 中的清单了解设备](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune)。
 
 | 属性  | 描述 |
 |---------|------------|
-| DateKey |引用日期表格，该表格表明当日日期 |
-| DeviceKey |数据仓库中设备的唯一标识符 - 代理键。 这是对包含 Intune 设备 ID 的设备表格的引用 |
-| DeviceModel |设备型号 |
-| 操作系统 |设备的 OS |
+| DateKey | 引用日期表格，该表格表明当日日期。 |
+| DeviceKey |数据仓库中设备的唯一标识符 - 代理键。 这是对包含 Intune 设备 ID 的设备表格的引用。 |
+| DeviceModel |设备型号。 |
+| 操作系统 |设备的操作系统。 |
 | DeviceName |允许对设备命名的平台上设备的名称。 在其他平台上，Intune 从其他属性创建名称。 此属性不可同时用于所有设备。 |
 | SoftwareVersion |在大多数情况下，这是 OS 版本（Apple 平台除外，其中这不同于 OS 版本）。 |
 | Imei |IMEI 编号 |
 | HardwareInventoryTimeUtc |首次为此设备报告清单的时间。 |
-| InventoryModifiedTimeUtc |上一次存储清单的时间（拍摄此快照时） |
+| InventoryModifiedTimeUtc |上一次存储清单的时间（拍摄此快照时）。 |
 | InventoryReportingTimeUtc |上次为此设备收集清单的时间。 |
-| ExchangeActiveSyncId |Exchange ActiveSync 设备 ID |
-| ComputerSystemDescription |系统描述 |
-| ComputerSystemName |系统名称 |
-| ComputerSystemManufacturer |系统制造商 |
-| ComputerSystemModel |系统型号 |
-| UserName |用户名 |
-| OSType |OS 类型 |
-| OSCaption |OS 描述文字 |
-| OSName |OS 名称 |
-| OSManufacturer |OS 制造商 |
-| OSProductSuite |OS 产品套件 |
-| OSProductType |OS 产品类型 |
-| 区域设置 |OS 区域设置 |
-| PhysicalMemoryCapacity |物理内存容量（以字节为单位） |
-| PhysicalMemoryRemovable |物理可移动存储内存（以字节为单位） |
-| SystemEnclosureChassisTypesInnerText |定义此设备的系统底盘类型。 数字表示以下值： 0 或空 = 未知   1 = 台式计算机   2 = 笔记本电脑 3 = 工作站  4 = 企业服务器  100 = 手机  101 = 平板电脑  102/103 = 另一未知类型的移动设备 |
-| SystemEnclosureModel |系统机箱模型 |
-| SystemEnclosureSerialNumber |系统机箱序列号 |
-| NetworkAdapterConfigurationText |网络适配器中的配置文本 |
-| MacAddress |MAC 地址 |
-| SmsID |Intune 设备 ID |
-| CertExpiry |MDM 管理证书的到期日期 |
-| DeviceClientAgentVersion |客户端代理版本 |
-| DeviceClientID |设备客户端 ID |
-| SerialNumber |序列号 |
-| DeviceManufacturer |设备制造商 |
-| DMVersion |DM 版本 |
-| FirmwareVersion |固件版本 |
-| HardwareVersion |硬件版本 |
-| PlatformType |平台类型 |
-| ProcessorLevel |处理器级别 |
-| ProcessorRevision |处理器修订版 |
-| 产品 |产品 |
-| ProductVersion |产品版本 |
-| OEM |原始设备制造商 |
-| DeviceBuildVersion |设备内部版本 |
+| ExchangeActiveSyncId |Exchange ActiveSync 设备 ID。 |
+| ComputerSystemDescription |系统描述。 |
+| ComputerSystemName |系统名称。 |
+| ComputerSystemManufacturer |系统制造商。 |
+| ComputerSystemModel |系统型号。 |
+| UserName |用户名。 |
+| OSType |操作系统类型。 |
+| OSCaption |操作系统描述文字。 |
+| OSName |操作系统名称。 |
+| OSManufacturer |操作系统制造商。 |
+| OSProductSuite |操作系统产品套件。 |
+| OSProductType |操作系统产品类型。 |
+| 区域设置 |操作系统区域设置。 |
+| PhysicalMemoryCapacity |物理内存容量（以字节为单位）。 |
+| PhysicalMemoryRemovable |物理可移动内存（以字节为单位）。 |
+| SystemEnclosureChassisTypesInnerText |定义此设备的系统底盘类型。 数字指示以下值：  <br>0 或空 = 未知   <br>1 = 这是台式电脑   <br>2 = 这是笔记本电脑  <br>3 = 这是工作站  <br>4 = 这是企业服务器  <br>100 = 这是手机  <br>101 = 这是平板电脑  <br>102/103 = 其他未知类型的移动设备 |
+| SystemEnclosureModel |系统封装型号。 |
+| SystemEnclosureSerialNumber |系统封装序列号。 |
+| NetworkAdapterConfigurationText |网络适配器中的配置文本。 |
+| MacAddress |MAC 地址。 |
+| SmsID |Intune 设备 ID。 |
+| CertExpiry |MDM 管理证书的到期日期。 |
+| DeviceClientAgentVersion |客户端代理版本。 |
+| DeviceClientID |设备客户端 ID。 |
+| SerialNumber |序列号。 |
+| DeviceManufacturer |设备制造商。 |
+| DMVersion |DM 版本。 |
+| FirmwareVersion |固件版本。 |
+| HardwareVersion |硬件版本。 |
+| PlatformType |平台类型。 |
+| ProcessorLevel |处理器级别。 |
+| ProcessorRevision |处理器修订版。 |
+| 产品 |产品。 |
+| ProductVersion |产品版本。 |
+| OEM |原始设备制造商。 |
+| DeviceBuildVersion |设备内部版本。 |
 | Meid |移动设备标识符。 |
-| PhoneNumber |电话号码 |
-| SubscriberCarrierNetwork |手机运营商网络名称 |
-| CellularTechnology |手机运营商网络类型 (CDMA/GSM) |
-| Imsi |IMSI 编号 |
+| PhoneNumber |电话号码。 |
+| SubscriberCarrierNetwork |手机运营商网络名称。 |
+| CellularTechnology |手机运营商网络类型 (CDMA/GSM)。 |
+| Imsi |IMSI 号码。 |
 | JailBroken |若设备已越狱或取得 root 权限，则为 True。 |
-| IsActivationLockEnabled |若已启用激活锁定，则为 True |
+| IsActivationLockEnabled |若已启用激活锁，则为 True |
 | DeviceType |设备类型 |
 | IsSupervised |受到监督 |
 | DeviceDisplayNumberOfColors |设备显示的颜色数 |
@@ -376,23 +377,23 @@ MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单�
 | PasswordMinLength |允许的最小密码长度 |
 | PasswordHistory |密码 - 不被接受的最小历史密码数 |
 | PasswordEnabled |密码 - 已启用？ |
-| PasswordExpiration |密码 - 到期日期 |
-| AllowRecoveryPassword |允许密码恢复 |
-| PasswordAutoLockTimeout |密码 - 自动锁定超时 |
-| PasswordType |密码类型 |
-| BacklightACTimeout |插入电源时的背光超时 |
-| BacklightBatTimeout |使用电池时的背光超时 |
-| PowerBackupPercent |电源备份百分比 |
+| PasswordExpiration |密码 - 到期日期。 |
+| AllowRecoveryPassword |允许密码恢复。 |
+| PasswordAutoLockTimeout |密码 - 自动锁定超时。 |
+| PasswordType |密码类型。 |
+| BacklightACTimeout |插入电源时的背光超时。 |
+| BacklightBatTimeout |使用电池时的背光超时。 |
+| PowerBackupPercent |电源备份百分比。 |
 | BatteryPercent |剩余电池百分比。 |
-| PlatformID |平台 ID |
-| ExchangeDeviceID |Exchange 设备 ID |
-| SmsProcessorDescription |处理器描述 |
-| OwnerEmailAddress |所有者的电子邮件地址 |
-| DeviceOSName |OS 名称 |
-| WifiMac |WIFI MAC 地址 |
-| EthernetMac |以太网 MAC 地址 |
+| PlatformID |平台 ID。 |
+| ExchangeDeviceID |Exchange 设备 ID。 |
+| SmsProcessorDescription |处理器描述。 |
+| OwnerEmailAddress |所有者的电子邮件地址。 |
+| DeviceOSName |操作系统名称。 |
+| WifiMac |WIFI MAC 地址。 |
+| EthernetMac |以太网 MAC 地址。 |
 | RequireEncryption |表明设备是否加密。 |
-| ActivationLockBypassCode |激活锁定旁路代码 |
+| ActivationLockBypassCode |激活锁旁路代码。 |
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 
@@ -400,8 +401,8 @@ ApplicationInventory 实体列出了收集清单时在设备上找到的应用�
 
 | 属性  | 描述 |
 |---------|------------|
-| DeviceKey |对设备表格的引用 |
-| ApplicationKey |? （从 ExchangeDeviceService\DeviceApplication 复制而来） |
-| ApplicationName |? （从 ExchangeDeviceService\DeviceApplication 复制而来） |
-| ApplicationVersion |? （从 ExchangeDeviceService\DeviceApplication 复制而来） |
-| BundleSize |? （从 ExchangeDeviceService\DeviceApplication 复制而来） |
+| DeviceKey |对设备表格的引用。 |
+| ApplicationKey |? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |
+| ApplicationName |? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |
+| ApplicationVersion |? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |
+| BundleSize |? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |

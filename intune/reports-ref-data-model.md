@@ -14,17 +14,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9257af29c65dbe27667738abc8ee06203177124f
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="data-warehouse-data-model"></a>数据库仓库数据模型
 
 Intune 数据仓库每天对数据进行采样，呈现不断变化的移动环境的历史视图。
 
-从租户提取的数据会被添加到数据仓库中。 仓库是一组实体和关系，可帮助用户了解想询问的问题的类型。 例如，可查看上周每天安装内部开发的 Android 应用程序的次数，从而评估安装趋势是否为增长趋势。 借助数据仓库的结构可获取有关移动环境的见解。 而 Microsoft Power BI 等分析工具可使用数据仓库数据模型来创建可视化和动态仪表板。
+从租户提取的数据会被添加到数据仓库中。 仓库是一组实体和关系，可帮助用户了解想询问的问题的类型。 例如，可查看上周每天安装内部开发的 Android 应用程序的次数，从而评估安装趋势是否为增长趋势。 借助数据仓库的结构可获取有关移动环境的见解。 而 Microsoft Power BI 等分析工具可使用数据仓库数据模型来创建可视化效果和动态仪表板。
 
 Intune 数据仓库结构使用星型架构模型。 星型架构按时间维度组织事实。 在模型上下文中，一个“事实”是一个定量度量，例如设备数量、应用数量或注册时间。 在模型的上下文中，一个“维度”是一组类别及其层次结构关系。 例如，天数归入月，月份则归入年。 星型架构在灵活性和数据分析方面进行了优化，方便用户创建所需报表来了解不断发展的移动环境。
 
@@ -44,6 +44,7 @@ Intune 数据仓库结构使用星型架构模型。 星型架构按时间维度
   -  [设备](reports-ref-devices.md)
   -  [应用程序](reports-ref-application.md)
   -  [策略](reports-ref-policy.md)
+  -  [用户设备关联](reports-ref-userdeviceassociations.md)
 
 <!-- ## Data Model relationships
 

@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 客户端从 Intune 数据仓库 API 获取数据
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 08/11/2017
 
 使用 Postman 进行 REST 调用时需要以下信息：
 
-| 属性        | 说明                                                                                                                                                                          | 示例                                                                                       |
+| 属性        | 描述                                                                                                                                                                          | 示例                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 回调 URL     | 在应用设置页中将其设置为回调 URL。                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | 令牌名称       | 用于将凭据传递给 Azure 应用的字符串。 该过程会生成令牌，用于调用数据仓库 API。                          | 持有者                                                                                        |
@@ -152,14 +152,14 @@ ms.lasthandoff: 08/11/2017
 1.  打开“Microsoft Visual Studio”。
 2.  选择“文件” > “新建项目”。 展开“Visual C#”，然后选择“控制台应用 (.Net Framework)”。 
 3.  将项目命名为 ` IntuneDataWarehouseSamples`，浏览到要保存该项目的位置，然后单击“确定”。
-3.  在解决方案资源管理器中右键单击该解决方案的名称，然后选择“管理用于解决方案的 NuGet 包...”。 单击“浏览”，然后在搜索框中键入 Microsoft.IdentityModel.Clients.ActiveDirectory。
-4. 选择该包，选择“管理用于解决方案的包”下的“IntuneDataWarehouseSamples”项目，然后单击“安装”。 
-5. 单击“我接受”以接受 NuGet 包的许可条款。
-6. 从解决方案资源管理器打开 `Program.cs`。
+4.  在解决方案资源管理器中右键单击该解决方案的名称，然后选择“管理用于解决方案的 NuGet 包...”。 单击“浏览”，然后在搜索框中键入 `Microsoft.IdentityModel.Clients.ActiveDirectory`。
+5. 选择该包，选择“管理用于解决方案的包”下的“IntuneDataWarehouseSamples”项目，然后单击“安装”。 
+6. 单击“我接受”以接受 NuGet 包的许可条款。
+7. 从解决方案资源管理器打开 `Program.cs`。
 
     ![Visual Studio 中的项目](media\reports-get_rest_data_in.png)
 
-7.  将 Program.cs 的代码替换为以下代码：  
+8.  将 Program.cs 的代码替换为以下代码：  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,15 +214,15 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  更新代码示例中的 `TODO`。
-9.  按“Ctrl + F5”生成 Intune.DataWarehouseAPIClient 客户端并在调试模式下执行该客户端。
+9.  更新代码示例中的 `TODO`。
+10.  按“Ctrl + F5”生成 Intune.DataWarehouseAPIClient 客户端并在调试模式下执行该客户端。
 
     ![检索到的 JSON 格式的数据实体。](media\reports-get_rest_data_output.png)
 
-10.  查看控制台输出。 该输出包含从 Intune 租户中的“日期”实体中拉取的 JSON 格式的数据。
+11.  查看控制台输出。 该输出包含从 Intune 租户中的“日期”实体中拉取的 JSON 格式的数据。
 
 ## <a name="next-steps"></a>后续步骤
 
 有关授权、API URL 结构和 OData 终结点的详细信息，请参阅[使用 Intune 数据仓库 API](reports-api-url.md)。 
 
-也可以参考 Intune 数据仓库数据模型，查找 API 中包含的数据实体。 有关详细信息，请参阅[Intune 数据仓库 API 数据模型](reports-ref-data-model.md)
+也可以参考 Intune 数据仓库数据模型，查找 API 中包含的数据实体。 有关详细信息，请参阅 [Intune 数据仓库 API 数据模型](reports-ref-data-model.md)
