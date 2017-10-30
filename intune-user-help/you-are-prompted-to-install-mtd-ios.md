@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f3c76f558987cd03a4e6434243b31908cd083807
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ba3a947060877fe704d4980cb1f25f34f110ff1f
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>在 iOS 设备上安装移动威胁防御应用
 
@@ -31,6 +31,17 @@ ms.lasthandoff: 09/28/2017
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**如果安装不成功**
+## <a name="additional-information-your-company-can-see"></a>公司可以查看的其他信息
+
+移动威胁防御帮助公司保证设备安全，避免有可能尝试窃取公司信息的应用。 要添加此保护，需要向公司使用的移动威胁防御报告设备中应用的额外信息。 公司无法查看个人应用中的数据。 在使用移动威胁防御服务时，设备中的所有应用都将被添加至[公司可以查看的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。 公司可以查看的部分应用内容如下所示：
+
+*   应用程序名称
+* 应用 ID：在应用商店中标识应用的唯一名称
+*   应用版本和短版本号：应用的特定版本号
+* 应用程序包和动态大小：应用在设备中使用的空间大小
+* 应用有效性：应用是否被批准使用
+*   应用管理状态：该应用由公司托管，还是属于个人应用
+
+## <a name="if-the-installation-doesnt-work"></a>安装不成功
 
 有时安装可能会因不可控的技术问题而失败。 如果发生此情况，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

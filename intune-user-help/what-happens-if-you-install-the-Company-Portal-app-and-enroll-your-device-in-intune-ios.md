@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 8d697a18ca812b9ccd39a5678dce7f7692aa97e5
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>如果安装公司门户应用并在 Intune 中注册 iOS 或 Mac OS 设备会怎样？
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/28/2017
 
 -   要求你接受条款和条件。
 
--   在设备上启用或禁用照相机，以允许或阻止用户拍摄敏感公司数据。
+-   禁用设备上的照相机，以避免用户拍摄敏感公司数据。
 
 -   在设备上启用或禁用 Web 浏览。
 

@@ -14,15 +14,15 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune 数据仓库 API
 
-通过 Intune 数据仓库 API 可访问机器可读格式的 Intune 数据，将其用于最喜欢的分析工具。 可使用该 API 生成报表，获取有关企业移动环境的见解。 API 使用 OData 协议，该协议遵循以下内容的标准模式：
+通过 Intune 数据仓库 API 可访问机器可读格式的 Intune 数据，以便在最喜欢的分析工具中使用它。 可使用该 API 生成报表，获取有关企业移动环境的见解。 API 使用 OData 协议，该协议遵循以下内容的标准模式：
 
   -   请求和响应标头
   -   状态代码
@@ -41,9 +41,12 @@ OData (Open Data Protocol) 是结构化信息标准促进组织 (OASIS) 的一�
 
 ## <a name="odata-custom-client"></a>OData 自定义客户端
 
-可以通过 RESTful 终结点访问 Intune 数据仓库数据模型。 客户端必须使用 OAuth 2.0 获得 Microsoft Azure Active Directory (Azure AD) 授权后才能访问数据。 首先在 Azure 中设置 Web 应用和客户端应用，向客户端授权。 本地客户端获得授权后便可与数据仓库终结点进行通信。
+可以通过 RESTful 终结点访问 Intune 数据仓库数据模型。 客户端必须使用 OAuth 2.0 获得 Azure Active Directory (Azure AD) 授权后才能访问数据。 首先在 Azure 中设置 Web 应用和客户端应用，向客户端授权。 本地客户端获得授权后便可与数据仓库终结点进行通信。
 
 有关详细信息，请参阅[使用 REST 客户端从数据仓库 API 获取数据](reports-proc-data-rest.md)
+
+> [!Note]  
+> 可访问 GitHub 上的 [Github Intune 数据仓库存储库](https://github.com/Microsoft/Intune-Data-Warehouse)以获取代码示例。
 
 ## <a name="interacting-with-the-api"></a>与 API 交互
 
@@ -58,6 +61,8 @@ OData 定义抽象的数据模型和协议，允许任何客户端访问任何�
 
 ## <a name="next-steps"></a>后续步骤
 
-[Azure AD 的身份验证方案](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData 4.0 版](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+有关使用 Azure AD 的详细信息，请参阅 [Azure AD 的身份验证方案](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)。
+
+在 [odata.org](http://www.odata.org) 上查找 OData 资源。
+  
+在 [OData 版本 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) 中查看 OData 版本 4.0 标准  

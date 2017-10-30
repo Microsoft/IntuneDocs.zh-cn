@@ -5,7 +5,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 502ee0f3107d197537f7f9ab3b2888246bbca1d3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 36ef93bb3894083e3db3732faddea6f926831ac6
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版策略设置
 
@@ -180,8 +180,8 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 ## <a name="custom-policy-settings"></a>自定义策略设置
 使用 Microsoft Intune 的 **Android 自定义配置策略**来部署可用于控制 Android 设备功能的 OMA URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
-此功能旨在方便你部署无法通过 Intune 策略配置的 Android 设置。
-目前，Intune 支持的 Android 自定义策略数量有限。 请参阅本主题中的示例，了解可以配置哪些策略。
+此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。
+Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题的示例，查找可配置的策略。
 
 ### <a name="general-settings"></a>常规设置
 
@@ -196,7 +196,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
     |--------|--------------------|
     | **设置名称** |输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。|
     | **设置描述** |提供对设置进行概述的说明以及帮助你找到该设置的其他相关信息。|
-    | **数据类型** |选择指定此 OMA-URI 设置时使用的数据类型。 从“字符串、字符串 (XML)、日期和时间、整数、浮点”，或者“布尔值”中进行选择。|
+    | **数据类型** |选择将在其中指定此 OMA-URI 设置的日期类型。 从“字符串、字符串 (XML)、日期和时间、整数、浮点”，或者“布尔值”中进行选择。|
     | **OMA-URI（区分大小写）** |指定需为其提供设置的 OMA-URI。|
     | **值** |指定要与之前指定的 OMA-URI 关联的值。|
 
@@ -210,61 +210,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 
 在 MDM 注册期间，仅当设备显示在[受支持的 KNOX 设备列表](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中时，公司门户应用才会尝试 Samsung KNOX 激活。 这有助于避免出现会阻止 MDM 注册的 KNOX 激活错误。 不支持 Samsung KNOX 激活的设备将作为标准 Android 设备进行注册。 Samsung 设备可能有一些支持 KNOX 的型号，其他设备则不具备。 购买并部署 Samsung 设备前，请与设备经销商确认 KNOX 兼容性。
 
-下面列出的 Samsung 设备型号不支持 KNOX，并且由适用于 Android 的公司门户应用作为本机 Android 设备进行注册：
-
-| **设备名** | **设备型号** |
-| --- | --- |
-| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
-| Galaxy A5 | SM-A500G |
-| Galaxy Alpha | SM-G850M |
-| Galaxy Avant | SM-G386T |
-| Galaxy C9/C9 Pro | SM-C900F |
-| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
-| Galaxy Core Lite | SM-G3588V |
-| Galaxy Core Prime | SM-G360H |
-| Galaxy Core LTE | SM-G386F<br>SM-G386W |
-| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
-| Galaxy Grand 3 | SM-G7200 |
-| Galaxy Grand Neo | GT-I9060I |
-| Galaxy Grand Prime | SM-G530M |
-| Galaxy Grand Prime 超值版 | SM-G531H |
-| Galaxy J Max | SM-T285YD |
-| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
-| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
-| Galaxy J1 Mini | SM-J105M |
-| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
-| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
-| Galaxy J5 | SM-J500G |
-| Galaxy J7 | SM-J710F |
-| Galaxy J7 Prime | SM-J727T1 |
-| Galaxy K Zoom | SM-C115 |
-| Galaxy Light | SGH-T399N |
-| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
-| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
-| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
-| Galaxy Note 10.1 3G | SM-P602 |
-| Galaxy NotePRO 12.2&quot; | SM-P902 |
-| Galaxy On5 | SM-G570MSM-G570Y |
-| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
-| Galaxy S2 Plus | GT-I9105P |
-| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
-| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
-| Galaxy S4 | SM-S975L |
-| Galaxy S4 Active | GT-I9295 |
-| Galaxy S4 Neo | SM-G318ML |
-| Galaxy S5 | SM-G9006W<br>SM-G900M |
-| Galaxy S5 Neo | SM-G903M |
-| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
-| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
-| Galaxy Tab A 9.7&quot; | SM-P555M |
-| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
-| Galaxy Tab 3 8.0&quot; | SM-T311 |
-| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
-| Galaxy Trend 2 Lite | SM-G318H |
-| Galaxy V Plus | SM-G318HZ |
-| Galaxy Young 2 Duos | SM-G130BU |
-
-
+可查找支持的 Samsung KNOX 设备列表，以及 [Intune 支持的设备](/intune/supported-devices-browsers.md#intune-supported-devices)列表。
 
 ### <a name="see-also"></a>另请参阅
 [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

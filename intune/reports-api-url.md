@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 
 可将 Intune 数据仓库 API 与具有基于特定角色的访问控制和 Azure AD 凭据的帐户配合使用。 然后，使用 OAuth 2.0 向 REST 客户端授予 Azure AD 权限。 最后会形成一个有意义的可调用数据仓库资源的 URL。
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Azure AD 和 Intune 凭据要求
-
-身份验证和授权基于 Azure AD 凭据和 Intune 基于角色的访问控制 (RBAC)。 默认情况下，租户的所有全局管理员和 Intune 服务管理员都可访问该 API。 使用 Intune 角色为更多用户分配访问“报告资源”的权限，让更多用户拥有访问权限。
-
-访问 API 的要求如下：
-
-  -  必须向用户分配 Intune 许可证
-  -  用户必须是以下任一身份：
-      -  Azure AD 全局管理员
-      -  Intune 服务管理员
-      -  对“报告”资源具有基于角色的访问权限的用户
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>授权
 
@@ -64,4 +54,4 @@ https://fef.{***location***}.manage.microsoft.com/ReportingService/DataWarehouse
 
 ## <a name="odata-query-options"></a>OData 查询选项
 
-当前版本支持以下 OData 查询参数：`$skip, $top, $filter, $orderby`。
+当前版本支持以下 OData 查询参数：`$filter, $orderby, $select, $skip,` 和 `$top`。

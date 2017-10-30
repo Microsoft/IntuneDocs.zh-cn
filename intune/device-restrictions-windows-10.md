@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/15/2017
     -   **防止重用以前的密码** - 指定设备记住的以前用过的密码数目。
     -   设备从空闲状态返回时需要输入密码（仅限移动版）- 指定用户必须输入密码才能解锁设备（仅限 Windows 10 移动版）。
     -   **简单密码** - 允许使用简单密码，如 1111 和 1234。 此设置还允许或阻止使用 Windows 图片密码。
--   **加密** - 启用对目标设备的加密（仅限 Windows 10 移动版）。
+-   **加密** - 启用对目标设备的加密。
 
 ## <a name="personalization"></a>个性化设置
 

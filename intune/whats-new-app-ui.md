@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户之间的通信以及用于支持部署的已创建的任何更新自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+
+## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日当周
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>公司门户网站的搜索改进<!--1331697-->
+我们正在改进应用搜索功能，首先从[公司门户网站](https://portal.manage.microsoft.com)开始。 除“名称”和“说明”字段外，现在还可按应用类别执行搜索。 结果默认按相关性呈降序排列。 
+
+由于适用于 iOS 的公司门户应用中也包含公司门户网站，因此 iOS 用户也将收到此更改。 适用于 Android 和 Windows 的公司门户应用将在未来几个月中收到类似更新。
+
+我们仍在努力优化跟踪相关性的方式，因此请使用公司门户网站底部的“反馈”链接向我们反馈当前的运行状况。
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS 公司门户显示大图标 <!-- 1454593 -->
+此版本修复了 iOS 公司门户在应用磁贴中显示图标的已知问题。 若上传的应用图标像素大于等于 120x120，该图标现在将显示在[公司门户网站](https://portal.manage.microsoft.com)中，且 iOS 公司门户应用页会占据整个应用磁贴。
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日那周
 
@@ -67,7 +85,7 @@ ms.lasthandoff: 10/06/2017
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>含 2017 年 8 月 28 日的那周
+## <a name="august-2017"></a>2017 年 8 月
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 邮件应用将支持 OAuth<!---1196951--->
 
@@ -87,7 +105,7 @@ ms.lasthandoff: 10/06/2017
 
 ![系统会提示用户从公司门户网站进行注册。](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>含 2017 年 8 月 21 日的那周
+
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>“Intune 移动应用管理”(MAM) 对话框将具有新式界面<!-- 1199015 -->
 
@@ -102,15 +120,13 @@ ms.lasthandoff: 10/06/2017
 ![新式界面](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>含 2017 年 8 月 14 日的那周
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>适用于 Windows 10 的公司门户应用上“设备详细信息”页的更新<!---1287448--->
 
 适用于 Windows 10 的公司门户应用将标题下的“类别”标签移动至“设备详细信息”页上的一个属性。
 
 ![适用于 Windows 的公司门户应用的“设备详细信息”屏幕，现在“类别”字段显示为一个属性，而不是直接显示在屏幕标题的下方。](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日的这一周
+## <a name="july-2017"></a>2017 年 7 月
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>应用详细信息页显示 Android 设备的新信息<!--1287476-->
 
@@ -164,7 +180,7 @@ __从其他设备登录时的新登录体验__
 
 ![在经过身份验证过程后，公司门户应用进行登录，并通过加载栏进行提示。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>2017 年 6 月 12 日的这一周
+## <a name="june-2017"></a>2017 年 6 月
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>适用于 Android 的公司门户应用现推出了全新的应用保护政策最终用户体验 <!--1305217-->
 根据客户反馈，已修改适用于 Android 的公司门户应用，以便显示“访问公司内容”按钮。 其目的在于，使最终用户在仅需要访问支持应用保护策略（Intune 移动应用程序管理的一项功能）的应用时，无需完成不必要的注册过程。
@@ -210,8 +226,6 @@ __从其他设备登录时的新登录体验__
 ![Android 公司门户应用的图像和操作菜单将在右上角打开。 新的“删除公司门户”选项是第三个选项，位于“我的配置文件“和“设置”的下方，以及“条款和条件”、“帮助和反馈”和“关于”的上方。](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![在操作菜单中选择新的“删除公司门户”选项后，将出现一个确认对话图像。 该对话将通知用户“删除公司门户，设备将不再由 IT 管理员管理，并且可能删除对公司数据、公司应用和公司电子邮件的访问权限。” 然后，它会要求用户通过选择“是”确认删除“公司门户”应用。](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>2017 年 6 月 5 日的这一周
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>对适用于 iOS 的公司门户应用中应用磁贴的改进<!--1230777-->
 我们更新了主页上的应用磁贴设计，以反映你为公司门户设置的品牌颜色。
