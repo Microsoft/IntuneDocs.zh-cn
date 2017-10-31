@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Microsoft Intune 的早期版本 - 2017 年 10 月
 
@@ -151,19 +151,6 @@ Intune 现在支持 Symantec 云 CA，可允许 Intune 证书连接器从 Symant
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>支持 Windows 10 版本升级策略 <!-- 903672(archived), 1119689 -->  
 可以创建 Windows 10 版本升级策略，将 Windows 10 设备升级到 Windows 10 教育版、Windows 10 教育版 N、Windows 10 专业版、Windows 10 专业版 N、Windows 10 专业教育版和 Windows 10 专业教育版 N。有关 Windows 10 版本升级的详细信息，请参阅[如何配置 Windows 10 版本升级](edition-upgrade-configure-windows-10.md)。
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Intune MAM 与 Outlook for Android 加载项  <!-- 1450688 -->
-Office 团队将在几周内发布 Android 版 Outlook 加载项。 此加载项功能集已包含在 Windows、iOS、Web 和 Mac 版 Outlook 中。 由于加载项是通过 Exchange 管理，因此用户能够跨 Outlook 和非管理加载项应用复制和共享数据和邮件，除非 Exchange 管理员禁止访问加载项。 
-
-若要管理用户对加载项的访问权限，请与 Exchange 管理员合作，共同确保 MAM 数据保护策略应用于加载项。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-如果 Exchange 策略已设置为禁止旁加载或安装加载项，后续不会进行读取。 MAM 策略将按预期应用。 不过，如果已设置 MAM 策略以限制在 Android 版 Outlook 中执行剪切、复制和粘贴操作，但未在 Exchange 中设置加载项策略，大家应知道，默认情况下，用户将可以在 Outlook 中安装加载项。 这些加载项可以访问邮件正文、主题和其他邮件属性。 可以让 Exchange 管理员删除“我的市场应用”和“我的自定义应用”角色，从而禁止用户安装加载项。
-
-Exchange 中的设置更改适用于 Windows、iOS、Web、Mac 和移动版 Outlook。 
-
-#### <a name="what-do-i-need-to-do"></a>我需要做什么？
-请立即查看 Exchange 策略。 通知 IT 和支持人员。 与我们的支持团队联系，告知需要解决的任何特定问题或疑虑。 
 
 
 
