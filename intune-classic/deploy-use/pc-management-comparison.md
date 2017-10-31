@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 66c528ce018b99a7263fb1e8395125f50d5670b3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b3050193c2f36f4092285686935a410fb6baf5b5
+ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>对比作为计算机或移动设备管理 Windows 电脑
 
@@ -42,6 +42,7 @@ ms.lasthandoff: 10/10/2017
 |**远程协助** |TeamViewer<br>[请求并提供 Windows 电脑的远程协助](https://docs.microsoft.com/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune)|不可用 |
 |**应用程序部署** | 不可用于适用于企业的 Microsoft 应用商店，<br>仅限 .exe、.appx 和多文件 .msi 格式<br>[为运行 Intune 软件客户端的 Windows 电脑添加应用](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|可用于 Microsoft 应用商店应用和业务线应用<br>[如何添加 Windows 应用商店应用](https://docs.microsoft.com/intune/store-apps-windows)<br>[如何添加 Windows 业务线 (LOB) 应用](https://docs.microsoft.com/intune/lob-apps-windows)|
 |**应用保护**|不可用|可用 <br>[什么是应用保护策略？](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)|
+|**运行状况证明**|不可用|可用|
 
 
 ### <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows 电脑管理的优点

@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: angrobe
-ms.date: 07/17/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: e3002d08506b68069d617c413a9c3801cf4326f8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: d83b3d6609e5fd6839e17e46520e4ef3d4551568
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 
@@ -43,15 +43,6 @@ Microsoft Intune 现在位于 Azure 门户中，这意味着你习惯使用的�
 - 可自动执行多种操作的 Microsoft Graph API 支持
 - Azure Active Directory (AD) 组提供跨所有 Azure 应用程序的兼容性
 - 支持大多数新式 Web 浏览器
-
-> [!IMPORTANT]
-> **还没有看到新门户？**<br>
-> 现有租户正在迁移到新的门户体验。 你的租户迁移之前，通知会显示在 Office 消息中心中。
->
-> 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的 Apple 注册工作流。 迁移计划尚未宣布。 如果现有帐户无法访问 Azure 门户，我们强烈建议创建一个试用帐户。
->
-> 查看潜在阻止程序的列表 https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
-
 
 ## <a name="before-you-start"></a>开始之前
 
