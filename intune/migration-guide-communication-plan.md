@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 59b978fa9c9084c5a70c912ca6a9b1e6c364722c
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="plan-communications"></a>计划通信
 
@@ -52,6 +52,8 @@ Intune 还有其他模板，可用于推动用户注册设备：
 -   [如何使最终用户了解 Microsoft Intune](end-user-educate.md) 说明了通过移动 OS 平台完成注册的步骤。
 
 -   [面向 IT 管理员的 Intune 最终用户注册模板](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)是可自定义的 Word 文档，其中说明了如何在 Intune 中注册 Android、iOS 和 Mac 设备。
+
+-   可将 [FastTrack for EMS 操作指南和电子邮件](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c)自定义为包含贵公司的徽标，在组织中推广使用 Intune 和 EMS。
 
 ## <a name="next-steps"></a>后续步骤
 
