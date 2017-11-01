@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -147,7 +147,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |||
 |-|-|
 |Key|值|
-|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>-**URL1&#124;URL2&#124;URL3**<br>-**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>URL1&#124;URL2&#124;URL3<br>http://.contoso.com/&#124;https://.bing.com/&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >不要同时指定这两个键。 如果两个键同时针对同一个用户，则使用允许键，因为它是限制性最强的选项。

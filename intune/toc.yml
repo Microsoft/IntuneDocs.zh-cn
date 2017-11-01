@@ -73,7 +73,7 @@
           href: planning-guide-support-plan.md
         - name: 设计
           href: planning-guide-design.md
-        - name: 实施
+        - name: 实现
           href: planning-guide-onboarding.md
         - name: 测试和验证
           href: planning-guide-test-validation.md
@@ -142,7 +142,7 @@
         - name: 注册选项
           href: enrollment-options.md
           items:
-            - name: Terms and conditions
+            - name: 条款和条件
               href: terms-and-conditions-create.md
             - name: 限制
               href: enrollment-restrictions-set.md
@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: 监视应用
           href: apps-monitor.md
-        - name: iOS 应用配置文件
-          href: app-configuration-policies-use-ios.md
-        - name: Android 应用配置文件
-          href: app-configuration-policies-use-android.md
+        - name: 应用配置策略
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS 托管设备
+              href: app-configuration-policies-use-ios.md
+            - name: Android 托管设备
+              href: app-configuration-policies-use-android.md
+            - name: 托管应用
+              href: app-configuration-policies-managed-app.md
         - name: 使用 iOS 应用预配配置文件
           href: app-provisioning-profile-ios.md
         - name: 选择性地擦除应用
@@ -614,5 +619,5 @@
       items:
         - name: 适用于 Intune 的图形 API 的相关参考
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: 术语表
+- name: 词汇表
   href: intune-glossary.md

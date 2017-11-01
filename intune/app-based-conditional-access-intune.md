@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
-ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
+ms.openlocfilehash: f3a3104c4381028cca69ba3e129f4a30287a8e32
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的条件性访问与 Intune 的协作
 
@@ -43,17 +43,7 @@ ms.lasthandoff: 08/07/2017
 
 ## <a name="supported-apps"></a>受支持的应用
 
-- **Exchange Online**：
-    - 适用于 Android 和 iOS 的 Microsoft Outlook
-<br></br>
-- **SharePoint Online**
-    - 适用于 iOS 和 Android 的 Microsoft Word
-    - 适用于 iOS 和 Android 的 Microsoft Excel
-    - 适用于 iOS 和 Android 的 Microsoft PowerPoint
-    - 适用于 iOS 和 Android 的 Microsoft OneDrive for Business
-    - 适用于 iOS 的 Microsoft OneNote
-<br></br>
-- **Microsoft Teams**
+可以在 [Azure Active Directory 条件访问技术参考文档](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)中找到支持基于应用的条件访问的应用列表。
 
 基于应用的条件访问[还支持业务线 (LOB) 应用](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)，但这些应用需要使用 [Office 365 现代身份验证](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)。
 

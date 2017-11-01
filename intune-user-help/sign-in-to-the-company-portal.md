@@ -1,11 +1,11 @@
 ---
 title: "如何登录公司门户应用 | Microsoft Docs"
-description: 
+description: "了解如何在多个平台上登录到公司门户应用。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>如何登录公司门户应用？ <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ ms.lasthandoff: 09/28/2017
 4. 公司门户接受登录请求之后，便成功登录，并可开始访问公司资源。   
 
   ![在经过身份验证过程后，公司门户应用进行登录，并通过加载栏进行提示。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>使用基于证书的身份验证登录
+
+1.  在设备上打开公司门户应用。
+
+2.  输入**工作或学校账户**。
+
+3.  点击“使用证书登录”链接。
+
+4.  点击“继续”以使用该证书。
 
 ## <a name="signing-in-from-another-device"></a>从另一台设备登录
 

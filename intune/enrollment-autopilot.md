@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 76b709f97b349966fbca7115959f64a56741380b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>使用 Windows AutoPilot Deployment 计划注册 Windows 设备
 Windows AutoPilot Deployment 计划简化了设备预配。 当前，生成和维护自定义操作系统映像耗时过久。 在将其提供给最终用户之前，可能需要花费大量时间将自定义操作系统映像应用到新设备上。 使用 Microsoft Intune 和 AutoPilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 当使用 Intune 来管理 AutoPilot 设备时，可在注册之后对策略、配置文件和应用等进行管理。 有关优势、方案和先决条件的概述，请参阅 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot)（Windows AutoPilot 概述）。
@@ -47,13 +47,16 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
    - **隐私设置**：选择是否向用户显示隐私设置。 
    - **最终用户许可协议 (EULA)**：选择是否向用户显示 EULA。
    - **用户帐户类型**：选择用户的帐户类型是“管理员”还是“标准”用户。
+
+     > [!Note]    
+     > 此设置不适用于全局管理员或公司管理员帐户。 这些帐户不能是标准用户，因为他们有权访问 Azure AD 中的所有管理功能。
 8. 单击“创建”以创建配置文件。 AutoPilot 部署配置文件现在即可分配给设备。
      
-   > [!Note]    
-   > 使用全部 AutoPilot 部署配置文件来配置以下设置：
-   > - 跳过 Cortana、OneDrive 和 OEM 注册设置页
-   > - 为工作或学校帐户自动设置
-   > - 公司或学校品牌的登录体验    
+> [!Note]    
+> 使用全部 AutoPilot 部署配置文件来配置以下设置：
+> - 跳过 Cortana、OneDrive 和 OEM 注册设置页
+> - 为工作或学校帐户自动设置
+> - 公司或学校品牌的登录体验    
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>分配 AutoPilot 部署配置文件
 在创建 AutoPilot 部署配置文件后，可将其分配给所选设备。

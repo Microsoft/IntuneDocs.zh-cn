@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
@@ -130,10 +130,23 @@ OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
 
 MdmStatuses 实体表明设备的符合性状态。
 
-| 属性  | 说明 | 示例 |
+| 属性  | 说明 |
+|---------|------------|
+| MdmStatusID |符合性状态的唯一标识符 |
+| MdmStatusKey |数据仓库中符合性状态的唯一标识符 - 代理键 | 
+| ComplianceStatus |设备的符合性状态，应具有下表中的值之一 | 
+
+
+## <a name="example"></a>示例
+
+| MdmStatusID  | ComplianceStatus | 说明 |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus 标识符 |0 - 未知 <br>1 - 符合 <br>2 - 不符合 |
-| MdmStatusKey |数据仓库中符合性状态的唯一标识符 - 代理键 | |
+| 0 |Unknown |设备符合性状态未知。 |
+| 1 |是否满足条件 |设备符合策略。 |
+| 2 |不相容 |设备不符合策略。 |
+| 3 |冲突 |设备符合性导致了冲突。 |
+| 4 |错误 |读取设备的符合性状态时出错。 |
+
 
 ## <a name="managementstates"></a>ManagementStates
 
@@ -355,7 +368,7 @@ MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单�
 | CellularTechnology |手机运营商网络类型 (CDMA/GSM)。 |
 | Imsi |IMSI 号码。 |
 | JailBroken |若设备已越狱或取得 root 权限，则为 True。 |
-| IsActivationLockEnabled |若已启用激活锁，则为 True |
+| IsActivationLockEnabled |若已启用激活锁定，则为 True |
 | DeviceType |设备类型 |
 | IsSupervised |受到监督 |
 | DeviceDisplayNumberOfColors |设备显示的颜色数 |

@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56d0d3e79e38b20cb00a528fc6b55ca9de6ba871
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -70,16 +70,16 @@ ms.lasthandoff: 10/11/2017
 
 **使用 [Word、Excel 和 PowerPoint](https://products.office.com/business/office) 应用有什么其他要求？**
 
-  1. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用和 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)可在 [Office 门户](http://portal.office.com)中分配 Office 365 许可证。
+  1. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用，可以包括 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)可在 [Office 门户](http://portal.office.com)中分配 Office 365 许可证。
 
-  2. 最终用户必须将 [OneDrive](https://onedrive.live.com/about/) 应用安装到其设备上并使用 AAD 帐户进行登录。
+  2. 最终用户必须具有使用粒度另存为功能进行配置的托管的位置（该功能位于“阻止另存为”应用程序保护策略设置下）。 例如，如果托管的位置为 OneDrive，则应在最终用户的 Word、Excel 或 PowerPoint 应用中对 [OneDrive](https://onedrive.live.com/about/) 应用进行配置。
 
-  3. 部署到最终用户的应用保护策略必须面向 OneDrive 应用。
+  3. 如果托管的位置为 OneDrive，则部署到最终用户的应用保护策略必须面向该应用。
 
   >[!NOTE]
   > Office 移动应用当前仅支持 SharePoint Online，不支持本地 SharePoint。
 
-**为什么 Office 需要 OneDrive？** Intune 会将应用中的所有数据标记为“公司”或“个人”。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。
+**为什么 Office 需要托管的位置（例如 OneDrive）？** Intune 会将应用中的所有数据标记为“公司”或“个人”。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。
 
 **使用 Skype for Business 有什么其他要求？** 请参阅 [Skype for Business](https://products.office.com/skype-for-business/it-pros) 许可证要求。
   >[!NOTE]
@@ -102,6 +102,18 @@ ms.lasthandoff: 10/11/2017
   2. **PIN 安全吗？** PIN 仅允许正确的用户在应用中访问其组织数据。 因此，最终用户必须使用其工作或学校帐户登录，然后才能设置或重置其 Intune 应用 PIN。 这种身份验证通过安全的令牌交换由 Azure Active Directory 执行，且不对 Intune App SDK 公开。 从安全性的角度来看，保护工作或学校数据的最佳方法便是对其进行加密。 加密与应用 PIN 无关，它本身是一项应用保护策略。
 
   3. **Intune 如何保护 PIN 免遭暴力破解攻击？** 作为应用 PIN 策略的一部分，IT 管理员可以设置在锁定应用之前用户可尝试验证其 PIN 的最大次数。 达到最大尝试次数后，Intune App SDK 可以擦除应用中的“公司”数据。
+  
+**Intune 应用 PIN 是如何在数字类型和密码类型之间工作的？**
+MAM 当前允许使用包含字母数字和特殊字符（称为“密码”）的应用程序级 PIN (iOS)，它需要应用程序的参与（即， WXP、Outlook、Managed Browser、Yammer）以集成 Intune APP SDK for iOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 由于应用循环执行此集成，因此，针对最终用户的密码和数字 PIN 之间的行为将暂时更改并需要进行重要说明。 对于 2017 年 10 月发布的 Intune 版本，行为如下所示...
+
+具有同一应用发行者的
+1. 应用
+2. 面向控制台 
+3. 且采用了包含此功能的 SDK (v 7.1.12+) 的密码 PIN 将能够在这些应用之间共享密码。 
+
+具有同一应用发行者的
+1. 应用
+2. 面向控制台的数字 PIN 将能够在这些应用之间共享数字 PIN。 
 
 **加密呢？** IT 管理员可以部署要求对应用数据进行加密的应用保护策略。 作为该策略的一部分，IT 管理员还可指定何时加密内容。
 
