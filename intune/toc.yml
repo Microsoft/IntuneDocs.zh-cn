@@ -545,6 +545,8 @@
     - name: 使用 Intune 数据仓库
       href: reports-nav-create-intune-reports.md
       items:
+        - name: 更改数据仓库的日志
+          href: reports-changelog.md
         - name: 使用 Power BI 连接到数据仓库
           href: reports-proc-get-a-link-powerbi.md
         - name: 使用 Power BI 从 OData 数据源创建报表
@@ -602,18 +604,20 @@
         - name: 数据库仓库数据模型
           href: reports-ref-data-model.md
           items:
-            - name: 日期实体引用
-              href: reports-ref-date.md
-            - name: 用户实体引用
-              href: reports-ref-user.md
-            - name: 移动应用管理 (MAM) 实体引用
-              href: reports-ref-mobile-app-management.md
-            - name: 设备实体引用
-              href: reports-ref-devices.md
             - name: 应用程序实体引用
               href: reports-ref-application.md
-            - name: 用户设备关联实体引用
-              href: reports-ref-userdeviceassociations.md
+            - name: 数据实体引用
+              href: reports-ref-date.md
+            - name: 设备实体引用
+              href: reports-ref-devices.md
+            - name: 移动应用管理 (MAM) 实体引用
+              href: reports-ref-mobile-app-management.md
+            - name: 策略实体引用
+              href: reports-ref-policy.md
+            - name: 用户设备关联的引用
+              href: reports-ref-user-device.md
+            - name: 用户实体引用
+              href: reports-ref-user.md
     - name: 旁加载 Windows 应用
       href: intune-graph-apis.md
       items:
