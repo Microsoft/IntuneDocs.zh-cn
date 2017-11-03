@@ -200,8 +200,8 @@ Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标
 ### <a name="new-remote-actions-for-ios-devices----854689---"></a>适用于 iOS 设备的新远程操作 <!-- 854689 -->
 在此版本中，我们增加了两个适用于托管 Apple 课堂应用的共享 iPad 设备的新远程设备操作：
 
--   注销当前用户[](device-logout-user.md) - 注销所选 iOS 设备上的当前用户。
--   删除用户[](device-remove-user.md) - 从 iOS 设备上的本地缓存中删除所选用户。
+-   [注销当前用户](device-logout-user.md) - 注销所选 iOS 设备上的当前用户。
+-   [删除用户](device-remove-user.md) - 从 iOS 设备上的本地缓存中删除所选用户。
 
 
 ### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>支持与 iOS Classroom 应用共享 iPad<!-- 1044681 -->
