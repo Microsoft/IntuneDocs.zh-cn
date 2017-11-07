@@ -3,10 +3,10 @@ title: "选择在 Intune 中注册 Windows 设备的方式"
 titlesuffix: Azure portal
 description: "了解如何在 Microsoft Intune 中设置 Windows 设备注册。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72b30ceed928ed2d3768441a5b5c2fbd8ffdeea4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 307f4b8d5ba27ce8136569e0c58711f9b1364d93
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
 

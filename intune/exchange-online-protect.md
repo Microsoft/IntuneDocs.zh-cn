@@ -3,9 +3,9 @@ title: "无需设备管理即可保护 Office 365 Exchange Online"
 description: "向员工提供对其工作电子邮件的访问权限。 无需设备管理。"
 keywords: "Office 365 Exchange 电子邮件访问权限"
 author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/27/2017
-ms.topic: article
+ms.date: 10/31/2017
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -13,11 +13,11 @@ ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e27f8ae8b42617f73d44fdf128772204f1963ed
-ms.sourcegitcommit: 86687a8272ee3269aa7330e85022661b20450059
+ms.openlocfilehash: 6a5db7cd4781e85a0baa971fc989d916ccc9e924
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>无需设备管理即可保护 Office 365 Exchange Online
 
