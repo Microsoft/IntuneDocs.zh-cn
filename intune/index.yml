@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 10/07/2017
+  ms.date: 10/31/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -64,16 +64,16 @@ sections:
             title: 查看 Intune 体系结构概况
             image:
               src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: reports-nav-create-intune-reports.md
-            title: 使用 Intune 数据仓库（预览版）创建报表
+          - href: enrollment-autopilot.md
+            title: Microsoft Intune 中的 Windows AutoPilot Deployment 计划支持
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
-            title: '[博客] 使用 Intune 证书连接器颁发的 PFX 证书'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/'
+            title: '[博客] Intune 服务中的安全性增强功能 '
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
-            title: '[博客] 在 MAM 和 MDM 各自管理的应用之间设置通信'
+          - href: 'https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/'
+            title: '[博客] 借助疑难解答门户更轻松地诊断和解决最终用户问题'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: 视频
