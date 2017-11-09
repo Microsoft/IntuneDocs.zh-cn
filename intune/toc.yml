@@ -610,6 +610,8 @@
               href: reports-ref-date.md
             - name: 设备实体引用
               href: reports-ref-devices.md
+            - name: Intune 管理扩展参考
+              href: reports-ref-intunemanagementextension.md
             - name: 移动应用管理 (MAM) 实体引用
               href: reports-ref-mobile-app-management.md
             - name: 策略实体引用
