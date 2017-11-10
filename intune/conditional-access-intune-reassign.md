@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 09/09/2017
     ![Intune 和 Azure 门户之间的用户组用户界面比较](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > 对 Azure 门户做出的选择应与之前对 Azure 门户做出的选择相对应。 例如，如果在 Intune 经典门户中选择了所有用户，则应在 Azure 门户中选择“所有用户”。 此外，如果在 Intune 经典门户中选择了“免除组”选项，则也需要在 Azure 门户中排除所选的这些组。
+    > 对 Azure 门户做出的选择应与之前对经典门户做出的选择相对应。 例如，如果在 Intune 经典门户中选择了所有用户，则应在 Azure 门户中选择“所有用户”。 此外，如果在 Intune 经典门户中选择了“免除组”选项，则也需要在 Azure 门户中排除所选的这些组。
 
 5. 选择组后，单击“选择”，然后单击“完成”。
 

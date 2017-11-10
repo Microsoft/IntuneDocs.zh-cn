@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="data-warehouse-data-model"></a>数据库仓库数据模型
 
@@ -38,14 +38,10 @@ Intune 数据仓库结构使用星型架构模型。 星型架构按时间维度
 
 实体集是数据模型中已命名的实体集合。 这些集中包含的实体用于定义模型中收集的数据。 每个实体集均提供一个针对数据仓库数据模型的访问点。 了解有关以下实体类别的详细信息：
 
-  -  [日期](reports-ref-date.md)
-  -  [User](reports-ref-user.md)
-  -  [移动应用管理 (MAM)](reports-ref-mobile-app-management.md)
-  -  [设备](reports-ref-devices.md)
   -  [应用程序](reports-ref-application.md)
+  -  [日期](reports-ref-date.md)
+  -  [设备](reports-ref-devices.md)
   -  [策略](reports-ref-policy.md)
-  -  [用户设备关联](reports-ref-userdeviceassociations.md)
-
-<!-- ## Data Model relationships
-
-For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
+  -  [移动应用管理 (MAM)](reports-ref-mobile-app-management.md)
+  -  [User](reports-ref-user.md)
+  -  [用户设备关联](reports-ref-user-device.md)

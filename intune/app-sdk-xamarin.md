@@ -5,20 +5,20 @@ keywords: "sdk、Xamarin、intune"
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 11/15/2016
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8ab9807d22aa1a5c232b595df2bd999c0c178b16
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: f50ecfbf5a0ac0b05de38e0ad29b27a729ab824b
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 组件
 
@@ -30,7 +30,10 @@ ms.lasthandoff: 10/11/2017
 ## <a name="overview"></a>概述
 [Intune App SDK Xamarin 组件](https://components.xamarin.com/view/microsoft.intune.mam)允许在使用 Xamarin 生成的 iOS 和 Android 应用中启用 [Intune 应用保护策略](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 该组件使开发人员可以轻松将 Intune 应用保护功能内置到基于 Xamarin 的应用中。
 
-通过 Microsoft Intune App SDK Xamarin 组件，可将 Intune 应用保护策略（也称为 APP 或 MAM 策略）合并到使用 Xamarin 开发的应用中。 启用了 MAM 的应用程序是指与 Intune App SDK 集成的应用程序。 Intune 主动管理移动应用时，IT 管理员可将应用保护策略部署到该应用。
+> [!NOTE]
+> 对用于 Xamarin 的 Intune SDK 的支持当前仅作为预览功能提供。 
+
+通过 Microsoft Intune App SDK Xamarin 组件，可将 Intune 应用保护策略（也称为 APP 或 MAM 策略）合并到使用 Xamarin 开发的应用中。 启用了 MAM 的应用程序是指与 Intune App SDK 集成的应用程序。 在 Intune 主动管理移动应用时，IT 管理员可将应用保护策略部署到该应用。
 
 ## <a name="whats-supported"></a>支持的功能
 
@@ -51,7 +54,7 @@ ms.lasthandoff: 10/11/2017
 
 使用 Intune App SDK Xamarin 组件生成的 Xamarin 应用现在可以在已注册和未注册 Intune 移动设备管理 (MDM) 的设备上接收 Intune 应用保护策略。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 * **[仅限 Android]** 必须在设备上安装最新的 Microsoft Intune 公司门户应用。
 
