@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d940bc937caf966dd2d8c2ce01570bfa09a65bfb
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何使最终用户了解 Microsoft Intune
 
@@ -59,7 +59,7 @@ __这将会对最终用户造成哪些不便？__ 需要时间安装应用、注
   * [Android 用户如何获取其应用](end-user-apps-android.md)
 
 * **iOS**
-  * [通过 Intune 使用 iOS 设备](/intune-user-help/using-your-ios-or-macos-device-with-intune)
+  * [通过 Intune 使用 iOS 设备](/intune-user-help/using-your-ios-device-with-intune)
   * [iOS 用户如何获取其应用](end-user-apps-ios.md)
 
 * **Windows**
