@@ -608,19 +608,23 @@
         - name: 数据库仓库数据模型
           href: reports-ref-data-model.md
           items:
+            - name: 使用 Intune 数据仓库中的生存期表示形式
+              href: reports-ref-user-timeline.md
             - name: 应用程序实体引用
               href: reports-ref-application.md
+            - name: 当前用户实体引用
+              href: reports-ref-current-user.md
             - name: 数据实体引用
               href: reports-ref-date.md
             - name: 设备实体引用
               href: reports-ref-devices.md
-            - name: Intune 管理扩展参考
+            - name: Intune 管理扩展实体引用
               href: reports-ref-intunemanagementextension.md
             - name: 移动应用管理 (MAM) 实体引用
               href: reports-ref-mobile-app-management.md
             - name: 策略实体引用
               href: reports-ref-policy.md
-            - name: 用户设备关联的引用
+            - name: 用户设备关联实体引用
               href: reports-ref-user-device.md
             - name: 用户实体引用
               href: reports-ref-user.md
