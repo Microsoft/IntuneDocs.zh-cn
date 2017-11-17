@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 监视应用信息和分配
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 Intune 提供了许多可以用于监视所托管应用的属性及其分配状态的方法。
 
-1. 在“移动应用”工作负荷中，选择“管理” > “应用”。
-2. 在“应用列表”边栏选项卡中，选择要查看其相关信息的应用。 然后你将看到 <*应用名称*> “设备安装状态”边栏选项卡：![应用安装状态边栏选项卡](./media/monitor-apps.png)。
+1. 登录到 Azure 门户。
+2. 选择“更多服务” > “监视 + 管理” + “Intune”。
+3. 在“移动应用”工作负荷中，在“管理”组中选择“应用”。
+     
+    ![“应用安装状态”边栏选项卡。](./media/monitor-apps.png)
+5. 在应用边栏选项卡列表中选择应用。 然后将看到<应用名称> “设备安装状态”边栏选项卡。
+
+设备安装状态报表包含以下列：
+
+1.  **设备名称** 设备类型的名称。
+2.  **用户名** 用户的名称。
+3.   **平台** 安装在设备上的操作系统。
+4.  **版本** 应用程序的版本号。
+5.   **状态** 应用的可能状态包括：“已安装”、“未安装”、“安装挂起”和“错误”。
+6. **状态详细信息** 设备上应用状态的可读说明。
+7. **上次签入时间** 设备上次签入到 Intune 的时间。
 
 然后，执行以下操作之一来详细了解应用及其分配。
 

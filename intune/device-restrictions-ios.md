@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>常规
-    
+
 -   **诊断数据提交** - 允许或阻止设备将诊断数据提交到 Apple。
 -   **屏幕捕获** - 允许用户以图像形式捕获屏幕内容。
     - 通过 Classroom 应用远程观察屏幕（仅限被监督的设备）- 允许或阻止 Classroom 应用查看 iOS 设备的屏幕。
@@ -44,6 +44,54 @@ ms.lasthandoff: 10/27/2017
 - **配置描述文件更改** - 允许用户安装配置描述文件。
 - 激活锁（仅限被监督的设备）- 在受监督的 iOS 设备上启用激活锁。
 
+## <a name="configurations-requiring-supervision"></a>配置需要监督
+
+仅在通过 Apple 设备注册计划或使用 Apple Configurator 初次设置设备时，才可启用 iOS 受监督模式。 启用受监督模式后，Intune 可使用以下功能配置设备：
+
+- 应用锁定（单应用模式） 
+- 全局 HTTP 代理 
+- 激活锁绕过 
+- 自治单应用模式 
+- Web 内容筛选器 
+- 设置背景和锁屏界面 
+- 无提示应用推送 
+- 始终可用 VPN 
+- 允许以独占方式安装托管应用 
+- iBookstore 
+- iMessage 
+- 游戏中心 
+- AirDrop 
+- AirPlay 
+- 主机配对 
+- 云同步 
+- Spotlight 搜索 
+- Handoff 
+- 擦除设备 
+- 限制 UI 
+- 通过 UI 安装配置文件 
+- 新闻 
+- 键盘快捷方式 
+- 密码修改 
+- 设备名更改 
+- 壁纸更改 
+- 自动应用下载 
+- 企业应用信任更改 
+- Apple Music 
+- Mail Drop 
+- 与 Apple Watch 配对 
+
+> [!NOTE]
+> Apple 已确认某些设置将于 2018 年迁移到“仅受监督”模式。 我们建议在使用这些设置时即考虑此更改，而不是等待 Apple 将它们迁移到“仅受监督”模式：
+> - 由最终用户安装的应用
+> - 应用删除
+> - FaceTime
+> - Safari
+> - iTunes
+> - 成人内容
+> - iCloud 文档和数据
+> - 多玩家游戏
+> - 添加游戏中心好友
+
 ## <a name="password"></a>Password
 -   **密码** - 需要最终用户输入密码才能访问设备。
     -   **简单密码** - 允许 0000 和 1234 等简单密码。
@@ -56,7 +104,7 @@ ms.lasthandoff: 10/27/2017
     -   **密码过期（天数）** - 指定必须更改设备密码前的天数。
     -   **防止重用以前的密码** - 指定设备记住的以前用过的密码数目。
     -   **指纹解锁** - 允许使用指纹解锁兼容的设备。
-- 密码修改（仅限被监督的设备）- 防止更改、添加或删除密码。 
+- 密码修改（仅限被监督的设备）- 防止更改、添加或删除密码。
     - 指纹修改（仅限被监督的设备）- 防止用户更改、添加或删除 TouchID 设置。
 
 <sup>1</sup>配置设置“屏幕锁定前的非活动状态最大分钟数”和“屏幕锁定后要求提供密码前的最大分钟数”时，它们会依次应用。 例如，如果你设置的两个设置的值均为“5”  分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
@@ -89,7 +137,7 @@ ms.lasthandoff: 10/27/2017
 
 ## <a name="built-in-apps"></a>内置应用
 
--   **相机** - 选择是否可以使用设备上的相机。 
+-   **相机** - 选择是否可以使用设备上的相机。
     -   **FaceTime** -允许在设备上使用 FaceTime 应用。
 -   **Siri** - 允许在设备上使用 Siri 语音助手。
     -   **在设备锁定时使用 Siri** - 允许在设备锁定时使用 Siri 语音助手。
@@ -124,9 +172,7 @@ ms.lasthandoff: 10/27/2017
 示例：搜索 Microsoft Word for iPad。 你将使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
 
 > [!Note]
-> 你还可以使用 iTunes 软件查找应用程序，然后使用“复制链接”  命令获取应用的 URL。
-
-
+> 还可使用 iTunes 查找应用，然后使用“复制链接”命令获取应用 URL。
 
 ### <a name="additional-options"></a>其他选项
 
@@ -247,7 +293,7 @@ ms.lasthandoff: 10/27/2017
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ ms.lasthandoff: 10/27/2017
 在“Web 域 URL”字段中，向列表添加一个或多个 URL。 从指定域下载的文档将被视为托管。 此设置仅适用于使用 Safari 浏览器下载的文档。
 
 
-### <a name="safari-password-auto-fill-domains"></a>Safari 密码自动填充域
+### <a name="safari-password-autofill-domains"></a>Safari 密码自动填充域
 
 在“域 URL”字段中，向列表添加一个或多个 URL。 用户仅能保存来自此列表中的 URL 的 Web 密码。 此设置仅适用于 Safari 浏览器以及监督模式下的 iOS 9.3 和更高版本的设备。 如未指定任何 URL，则可从所有网站保存密码。

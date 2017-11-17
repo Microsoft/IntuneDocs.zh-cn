@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b0891541de125220aa278a4f4ebc0dec0d9a27b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 651df0e6ba3f8b3b2727d3194c8bf5e1a40cffc3
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 设备注册疑难解答
 如果你按照“[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)”中的步骤操作，但是仍无法访问工作或学校电子邮件和文件，请尝试以下故障排除步骤。
@@ -57,6 +57,6 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>看到“设置工作或学校帐户”时执行的故障排除步骤
 
-如果看到消息“我们无法自动发现与所输入用户名匹配的管理终结点。请检查用户名并重试。如果知道管理终结点的 URL，请输入。”，则应尝试重新输入用户名和密码。 如果仍无效，则应咨询公司支持人员，获取需在“管理终结点”文本框中提供的网站。 网站可能类似于 www.yourcompany.onmicrosoft.com。 
+如果看到消息“我们无法自动发现与所输入用户名匹配的管理终结点。请检查用户名并重试。如果知道管理终结点的 URL，请输入。”，则应尝试重新输入用户名和密码__。 如果仍无效，则应咨询公司支持人员，获取需在“管理终结点”文本框中提供的网站。 网站可能类似于 www.yourcompany.onmicrosoft.com。
 
 仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

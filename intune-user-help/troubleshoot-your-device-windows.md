@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 483b2155c2f1935a5b0d79b84ab65db1f9fc182d
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: a9da0ecabadc856c54bc8c10ec71520d549ca50c
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>解决 Windows 设备的常见问题
 
@@ -34,3 +34,7 @@ ms.lasthandoff: 09/28/2017
 - [设备需要反恶意软件](your-device-needs-antimalware-software.md)
 - [需要启用安全启动](you-need-to-enable-secure-boot-windows.md)
 - [需要启用代码完整性](you-need-to-enable-code-integrity.md)
+- [我需要启用防火墙](you-need-to-enable-defender-firewall-windows.md)
+- [我需要启用 UAC](you-need-to-enable-uac-windows.md)
+- [我需要更新 Windows](you-need-to-update-os-build-version-windows.md)
+- [我需要打开 Windows Defender](turn-on-defender-windows.md)

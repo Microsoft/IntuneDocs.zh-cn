@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -113,8 +113,50 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
     * 如果选择不从应用将 SDK 遥测数据发送到 Microsoft Intune，则必须通过在 IntuneMAMSettings 字典中将属性 `MAMTelemetryDisabled` 设置为“YES”，来禁用遥测数据传输。
 
-
 * **Intune App SDK for Android**：不通过 SDK 记录遥测数据。
+
+ iOS 和 Android 业务线应用版本号是可见的 <!-- 1380712 -->
+
+## <a name="line-of-business-app-version-numbers"></a>业务线应用版本号
+
+现在，Intune 中的业务线应用会显示 iOS 和 Android 应用的版本号。 版本号会在 Azure 门户、应用列表和应用概述边栏选项卡中显示。 最终用户可在公司门户应用和 Web 门户中查看应用的版本号。
+
+### <a name="full-version-number"></a>完整版本号
+
+完整版本号标识应用的特定版本。 该号码显示为“版本号(内部版本号)”。 例如：2.2(2.2.17560800)
+
+完整版本号包含两个部分：
+
+ - **版本**  
+   版本号是应用的发行版号（可人工读取）。 最终用户使用版本号确定应用的不同发行版。
+
+ - **内部版本号**  
+    内部版本号是一个内部号码，可在应用检测中使用，并可用于以编程方式管理应用。 内部版本号是指应用的迭代，应用可引用代码中的更改。
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Android 和 iOS 中的版本号和内部版本号
+
+Android 和 iOS 都使用应用相关的版本号和内部版本号。 但是，这两个操作系统都具有特定于 OS 的含义。 下表说明了这些术语之间的关联。
+
+开发用于 Intune 的业务线应用程序时，请务必使用版本号和内部版本号。 Intune 应用管理功能依赖于有意义的 CFBundleVersion（适用于 iOS）和 PackageVersionCode（适用于 Android）。 这些号码都包括在应用清单中。 
+
+Intune|iOS|Android|描述|
+|---|---|---|---|
+版本号|CFBundleShortVersionString|PackageVersionName |此号码为最终用户指示应用的特定版本。|
+内部版本号|CFBundleVersion|PackageVersionCode |此号码用于指示应用代码中的迭代。|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    指定程序包的发行版本号。 此号码表示应用的发行版本。 最终用户使用此号码引用应用。
+ - **CFBundleVersion**  
+    程序包的内部版本，它标识程序包的迭代。 此号码可标识发行或未发行的程序包。 此号码用于应用检测。
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    向用户显示的版本号。 可将此属性设置为原始字符串或对字符串资源的引用。 字符串仅用于向用户显示。
+ - **PackageVersionCode**  
+    内部版本号。 此号码仅用于确定某个版本是否比另一个版本新，数字越大表示版本越新。 这不是向用户显示的版本号 
 
 ## <a name="next-steps-after-integration"></a>集成后的后续步骤
 

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 10/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -80,56 +80,12 @@ ms.lasthandoff: 10/04/2017
 设备注册管理员 (DEM) 是一个特殊的用户帐户，用于注册和管理多个企业拥有的设备。 管理员可安装公司门户并注册多个无用户设备。 了解有关 [DEM](./device-enrollment-manager-enroll.md) 的详细信息。
 
 ### <a name="dep"></a>DEP
-通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 设备。 用户第一次开启设备并运行 iOS 设置助理时，将注册设备。 此方法支持“iOS 受监督”模式，此模式可启用使用以下功能配置的设备：
-
-- 应用锁定（单应用模式） 
-- 全局 HTTP 代理 
-- 激活锁绕过 
-- 自治单应用模式 
-- Web 内容筛选器 
-- 设置背景和锁屏界面 
-- 无提示应用推送 
-- 始终可用 VPN 
-- 允许以独占方式安装托管应用 
-- iBookstore 
-- iMessage 
-- 游戏中心 
-- AirDrop 
-- AirPlay 
-- 主机配对 
-- 云同步 
-- Spotlight 搜索 
-- Handoff 
-- 擦除设备 
-- 限制 UI 
-- 通过 UI 安装配置文件 
-- 新闻 
-- 键盘快捷方式 
-- 密码修改 
-- 设备名更改 
-- 壁纸更改 
-- 自动应用下载 
-- 企业应用信任更改 
-- Apple Music 
-- Mail Drop 
-- 与 Apple Watch 配对 
-
-> [!NOTE]
-> Apple 已确认某些设置将于 2018 年迁移到“仅受监督”模式。 我们建议在使用这些设置时即考虑此更改，而不是等待 Apple 将它们迁移到“仅受监督”模式：
-> - 应用安装
-> - 应用删除
-> - FaceTime
-> - Safari
-> - iTunes
-> - 成人内容
-> - iCloud 文档和数据
-> - 多玩家游戏
-> - 添加游戏中心好友
+通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 设备。 用户第一次开启设备并运行 iOS 设置助理时，将注册设备。 此方法支持 iOS 受监督模式，该模式可启用使用特定功能配置的设备。
 
 了解有关 iOS DEP 注册的详细信息：
 
 - [选择 iOS 设备注册方式](ios-enroll.md)
-- [使用设备注册计划注册 iOS 设备](device-enrollment-program-enroll-ios.md)
+- [使用设备注册计划注册 iOS 设备](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
 
 ### <a name="usb-sa"></a>USB-SA
 IT 管理员可通过 USB 使用 Apple Configurator，手动准备每台公司拥有的设备，以便使用“设置助理”进行注册。 IT 管理员创建注册配置文件并将其导出到 Apple Configurator。 用户收到设备时，系统随后会提示其运行设备助理来注册设备。 此方法支持“iOS 受监督”模式，从而可以使用下列功能：
