@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/10/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
+ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -68,7 +68,7 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 3.  在管理列表中的“移动应用”边栏选项卡上，选择“应用配置策略”。
 4.  在“应用配置策略”边栏选项卡上，选择“添加”。
 5.  在“添加应用配置”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”。
-6.  对于“设备注册”类型，请选择“受管理设备”或“受管理应用”。
+6.  对于“设备注册”类型，选择“托管应用”。
 7.  选择“选择所需应用”，然后在“目标应用”边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”。
 8.  选择“确定”，返回“添加应用配置”边栏选项卡。
 9.  选择“配置设置”。 在“配置”边栏选项卡上，定义键值对来为 Managed Browser 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
@@ -202,6 +202,22 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
     -   http://www.contoso.com:&#42;
 
     -   http://www.contoso.com: /&#42;
+
+## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用 Managed Browser 访问托管应用日志
+
+在 iOS 设备上安装了 Managed Browser 的最终用户可查看所有 Microsoft 已发布应用的管理状态。 他们还可针对托管 iOS 应用的疑难问题发送日志。
+
+1. 打开 iOS“设置”。
+2. 选择托管的“Browser”应用程序设置。
+3. 切换“启用 Intune 诊断”，以便在疑难解答模式中设置浏览器。
+4. 打开托管的“Browser”。 单击“查看 Intune 应用状态”以查看各个应用程序策略设置。
+5. 按“开始”和“共享日志”或“向 Microsoft 发送日志”，向 IT 管理员或 Microsoft 发送疑难解答日志。
+
+还可以在应用中以疑难解答模式打开 Browser。
+
+1. 打开 Managed Browser。
+2. 在地址框中键入 `about:intunehelp`。
+Browser 将启动疑难解答模式。
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser 的安全和隐私
 

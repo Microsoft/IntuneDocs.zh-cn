@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange Connector
 
@@ -134,13 +134,18 @@ Exchange Connector 设置连接后，与在 Exchange Connector 中管理的用�
 > [!NOTE]
 > 如果已经安装了本地 Exchange Connector 并且在某一时刻删除 Exchange 连接，则必须从安装了本地 Exchange Connector 的计算机中卸载此软件。
 
-## <a name="validate-the-exchange-connection"></a>验证 Exchange 连接
+## <a name="monitor-the-exchange-connector-activity"></a>监视 Exchange 连接器活动
 
 在成功配置 Exchange Connector 之后，可以查看连接的状态和最后一次成功同步尝试的状态。 若要验证验证 Exchange Connector 连接：
 
-- 在“Intune 仪表板”中，选择“本地访问”。 在“管理”下，选择“Exchange 本地访问”以验证连接状态。
+1. 在“Intune 仪表板”中，选择“本地访问”。
+2. 在“管理”下，选择“Exchange 本地访问”以验证连接状态。
 
 你也可以检查最后一次成功同步尝试的时间和日期。
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) 管理包
+
+自 Intune 1710 发布起，[用于 Exchange 连接器和 Intune 的 SCOM 管理包](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)可供使用。 它在你需要进行问题故障排除时，可提供监视 Exchange 连接器的多种方式。
 
 ## <a name="next-steps"></a>后续步骤
 [为 Exchange 内部部署创建条件访问策略](conditional-access-exchange-create.md)

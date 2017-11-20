@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>管理软件更新
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，新的功能更新和质量更新包含了所有此前更新的内容。 这意味着，只要安装了最新更新，你的 Windows 10 设备将完全保持最新状态。 与以前版本的 Windows 不同的是，现在必须安装完整的更新，而不是部分更新。
+Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，新的功能更新和质量更新包含了所有此前更新的内容。 这意味着，只要安装了最新更新，你的 Windows 10 设备就会保持最新状态。 与以前版本的 Windows 不同的是，现在必须安装完整的更新，而不是部分更新。
 
 借助 Windows Update for Business 可以简化更新管理体验，不需要批准设备组的单个更新。 通过配置更新推出策略仍可以管理环境中的风险，并且 Windows 更新可确保在适当的时间安装更新。 Microsoft Intune 提供在设备上配置更新设置的功能，使你能够延迟更新安装。 Intune 不会存储更新，仅存储更新策略分配。 设备直接访问 Windows 更新以进行更新。 使用 Intune 配置和管理 Windows 10 更新通道。 更新通道包含一组设置，可配置何时以及如何安装 Windows 10 更新。 例如，可以配置以下内容：
 
-- **Windows 10 服务分支**：选择是否要让设备组接收来自 Current Branch 或 Current Branch for Business 的更新。  
+- **Windows 10 维护服务频道**：选择是希望设备组从半年频道（定向）还是从半年频道接收更新。  
 - **延期设置**：配置更新延期设置，以延迟设备组的更新安装。 通过此设置可获得一个阶段性的更新部署，以便随时查看进度。
 - **暂停**：如果在更新部署期间的任何时间点发现问题，则推迟安装更新。
 - **维护窗口**：配置可以安装更新的时间。
@@ -78,21 +78,21 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 5. 在显示更新通道列表的边栏选项卡上，选择“**创建**”。
 6. 在“**创建更新通道**边栏选项卡上，提供更新通道的名称和可选描述，然后选择“**设置**”。
 7. 在“**设置**”边栏选项卡上，配置以下信息：
-    - **服务分支**：设置设备所接收 Windows 更新的分支（Current Branch 或 Current Branch for Business）。
+    - **维护服务频道**：设置供设备接收 Windows 更新的频道（半年频道（定向）或半年频道）。
     - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
-    -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
+    - **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延迟期(天)** - 指定质量更新延迟的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 
     质量更新通常是对现有 Windows 功能的修复和改进，且通常在每月的第一个星期二发布，但也可由 Microsoft 随时发布。 你可以定义在质量更新发布后，是否延迟接收质量更新（以及延迟多长时间）。
     - **功能更新延迟期(天)** - 指定功能更新延迟的天数。 自功能更新发布起，你最晚应在 180 天内接收这些功能更新。
 
-    功能更新通常是 Windows 的新功能。 配置“**服务分支**”设置（**CB** 或 **CBB**）后，你可以在 Windows 更新上定义在 Microsoft 发布功能更新后，是否延迟接收功能更新（以及延迟多长时间）。
+    功能更新通常是 Windows 的新功能。 将维护服务频道设置为半年频道（定向）或半年频道后，可以在 Windows 更新上定义在 Microsoft 发布功能更新后，是否延迟接收功能更新（以及延迟多长时间）。
 
     例如：  
-    **如果服务分支设置为 CB 并且延期期限为 30 天**：假设功能更新 X 在一月份作为 CB 在 Windows 更新上首次公开提供。 设备将在 2 月（即 30 天后）才收到更新。
+    **如果将维护服务频道设置为半年频道（定向），将延迟期设置为 30 天**：假设功能更新 X 将于一月以半年频道（定向）形式在 Windows 更新上公开发布。 设备将在 2 月（即 30 天后）才收到更新。
 
-    **如果服务分支设置为 CBB 并且延期期限为 30 天**：假设功能更新 X 在一月份作为 CB 在 Windows 更新上首次公开提供。 功能更新 X 将在四个月后（即 4 月份）发布到 CBB。 设备将在此 CBB 发布后的 30 天后接收此功能更新，并将在 5 月更新。
+    **如果将维护服务频道设置为半年频道，将延迟期设置为 30 天**：假设功能更新 X 将于一月以半年频道形式在 Windows 更新上公开发布。 功能更新 X 将在四个月后（即 4 月份）发布到半年频道。 设备将在此半年频道发布后的 30 天后接收此功能更新，并将在 5 月进行更新。
 
     - **传递优化** - 选择设备下载 Windows 更新的方式。 有关详细信息，请参阅 [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode)。
 8. 完成后，单击“**确定**”，然后在“**创建更新通道**”边栏选项卡上单击“**创建**”。

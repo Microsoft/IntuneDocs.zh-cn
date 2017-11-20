@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3333a5addfd0c4ab757121e22e19ac66c0b3e1d
-ms.sourcegitcommit: ec8561b8c63515e0b5f21a858984108dc5dbd5d3
+ms.openlocfilehash: ae5210cb3da5503c4cf1b85be8b8522fa1cfd6ce
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/10/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 
@@ -58,9 +58,7 @@ Wi-Fi 配置文件支持以下设备平台：
     - **iOS**
     - **macOS**
     - **Windows 8.1 及更高版本（导入配置文件）**
-6. 从“配置文件类型”下拉列表中，选择“Wi-Fi 基本”或“Wi-Fi 企业”。
-    >[!TIP]
-    >使用“Wi-fi 基本”可提供基本功能，如网络名称和 SSID。 “Wi-Fi 企业”允许你提供更高级的信息，如可扩展身份验证协议 (EAP)（如果你的 Wi-Fi 网络使用此协议）。 “Wi-Fi 导入”（适用于 Windows 8.1 和 Windows 10）允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
+6. 从“配置文件类型”下拉列表中，选择“Wi-Fi 基本”或“Wi-Fi 企业”。 可使用“Wi-fi 基本”来提供基本功能，如网络名称和 SSID。 “Wi-Fi 企业”允许你提供更高级的信息，如可扩展身份验证协议 (EAP)（如果你的 Wi-Fi 网络使用此协议）。 “Wi-Fi 导入”（适用于 Windows 8.1 和 Windows 10）允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
 7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
     - [Android 和 Android for Work 设置](wi-fi-settings-android.md)
     - [iOS 设置](wi-fi-settings-ios.md)

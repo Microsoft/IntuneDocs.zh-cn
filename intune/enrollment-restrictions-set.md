@@ -3,10 +3,10 @@ title: "在 Intune 中设置注册限制"
 titlesuffix: Azure portal
 description: "按平台限制注册，并在 Intune 中设置设备注册限制。 \""
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0117d3249f7fd2568201762b7dd16af9cc26392c
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 463278e4dc9ad677f654754d4710b110b376cc2d
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/01/2017
   - iOS
   - macOS
   - Windows
-- 平台操作系统版本（仅 iOS 和 Android）
+- iOS、Android 和 Windows 的平台操作系统版本（仅 Windows 10 版本可供使用，如果要支持 Windows 8.1，请将此留空）
   - 最低版本
   - 最高版本
 - 限制私人拥有的设备（仅 iOS、Android、macOS）
@@ -55,7 +55,7 @@ ms.lasthandoff: 11/01/2017
 
   单击 **“保存”**。
 6. 在“所有用户”下，选择“平台配置”，然后选择以下配置。 对于每个允许的平台，可配置以下选项：
-  - “版本”- 为 Android 和 iOS 设备指定“最低”和“最高”平台操作系统版本。 操作系统版本不会应用到使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的设备。
+  - “版本”- 为 Android、iOS 或 Windows 设备指定“最低”和“最高”平台操作系统版本。 Android 支持 major.minor.rev.build。 iOS 支持 major.minor.rev。Windows 仅对 Windows 10 支持 major.minor.rev.build。 操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。 
   - “私人拥有”- 指定是“允许”还是“阻止” Android、iOS 和 macOS 设备。
   ![设备限制工作区的屏幕截图，含默认设备平台配置，其中显示已配置私人所有的设置。](media/device-restrictions-platform-configurations.png)
   单击 **“保存”**。

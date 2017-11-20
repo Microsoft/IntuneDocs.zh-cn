@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 连接到数据仓库
 
@@ -53,9 +53,9 @@ Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据
 
 1.  登录 Azure 门户，选择“监视 + 管理” > “Intune”。 还可搜索 Intune 资源。  
 2.  打开“Microsoft Intune 数据仓库 API (预览)”边栏选项卡。
-3.  单击“下载 PowerBI 文件”。 扩展名为 (Pbix) 的文件将下载到指定位置。
+3.  选择“下载 PowerBI 文件”。 扩展名为 (Pbix) 的文件将下载到指定位置。
 4.  使用 Power BI 打开文件。 此时会加载“Intune 数据仓库报表”，但可能需要一些时间才能获取租户数据。
-5.  单击“刷新”，加载租户数据并查看报表。
+5.  选择“刷新”，加载租户数据并查看报表。
 6.  如果 Power BI 尚未对 Azure Active Directory 凭据进行身份验证，则 Power BI 会提示用户提供凭据。 选择凭据时，请选择“组织帐户”作为身份验证方法。
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>使用 OData 链接加载 Power BI 中的数据
@@ -69,13 +69,13 @@ Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据
 5. 选择“开始” > “获取数据”。 选择“OData 源”。
 6. 选择“基本”。
 7. 在 URL 框中键入或粘贴 OData URL。
-8. 单击" **确定**"。
+8. 选择“确定”。
 9. 如果尚未从 Power BI 桌面客户端为租户进行 Azure AD 身份验证，请键入凭据。 必须使用 OAuth 2.0 获得 Azure Active Directory (Azure AD) 授权后才能访问数据。  
     1.  选择“组织帐户”。  
     2.  键入用户名和密码。  
-    3.  单击“登录”。  
-    4.  单击“连接” 。  
-10. 单击“加载”。
+    3.  选择“登录”。  
+    4.  选择“**连接**”。  
+10. 选择“加载”。
 
 ## <a name="next-steps"></a>后续步骤
 

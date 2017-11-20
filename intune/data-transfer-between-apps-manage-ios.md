@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>如何管理 iOS 应用之间的数据传输
 ## <a name="manage-ios-apps"></a>管理 iOS 应用
@@ -30,6 +30,7 @@ ms.lasthandoff: 09/09/2017
 -   你还可以通过“MDM 通道”部署和管理应用。  这需要设备注册 MDM 解决方案。 可以是“策略托管”应用，也可以是其他托管应用。
 
 适用于 iOS 设备的“打开方式管理”功能可以将文件传输限制为仅在使用“MDM 通道”部署的应用之间进行。 “打开方式管理”限制在配置设置中设置，并使用 MDM 解决方案进行部署。  当用户安装了部署的应用时，会应用你设置的限制。
+
 ##  <a name="using-app-protection-with-ios-apps"></a>对 iOS 应用使用应用保护
 应用保护策略可与 iOS 的“打开方式管理”功能结合使用来通过以下方式保护公司数据：
 
@@ -40,30 +41,25 @@ ms.lasthandoff: 09/09/2017
 -   **第三方 MDM 解决方案管理的设备：**你可以使用“打开方式管理”功能将数据传输限制为仅在托管应用之间进行。
 若要确保使用第三方 MDM 解决方案部署的应用也与在 Intune 中配置的应用保护策略相关联，必须按照[配置用户 UPN 设置](#configure-user-upn-setting-for-third-party-emm)演练中所述配置用户 UPN 设置。  如果应用是使用用户 UPN 设置部署的，则会在最终用户使用其工作帐户登录时将应用保护策略应用到该应用。
 
-> [!IMPORTANT]
-> 只有部署到由第三方 MDM 管理的设备的应用才需使用用户 UPN 设置。  Intune 托管设备不需要使用此设置。
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>为第三方 EMM 配置用户 UPN 设置
-对于由第三方 MDM 解决方案管理的设备，配置用户 UPN 设置是**必需**的。 下述过程是配置 UPN 设置的一般流程以及该过程所产生的最终用户体验：
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>为 Microsoft Intune 或第三方 EMM 配置用户 UPN 设置
+对于由 Intune 或第三方 EMM 解决方案管理的设备，配置用户 UPN 设置是必需的。 下述过程是配置 UPN 设置的一般流程以及该过程所产生的最终用户体验：
 
 1.  在 [Azure 门户](https://portal.azure.com)中，为 iOS [创建并分配应用保护策略](app-protection-policies.md)。 根据公司要求配置策略设置，并选择应使用此策略的 iOS 应用。
 
-2.  使用下面的常规步骤，部署想要**通过第三方 MDM 解决方案**管理的应用和电子邮件配置文件。 示例 1 中也涵盖了这一体验。
+2.  使用下面的常规步骤，部署想要通过 Intune 或第三方 MDM 解决方案管理的应用和电子邮件配置文件。 示例 1 中也涵盖了这一体验。
 
-  1.  使用以下应用配置设置来部署该应用：
+3.  使用以下应用配置设置来部署该应用：
 
       **键** = IntuneMAMUPN，**值** = <username@company.com>
 
       示例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  使用第三方 MDM 提供程序将“打开方式管理”策略部署到已注册设备。
+4.  使用 Intune 或第三方 MDM 提供程序将“打开方式管理”策略部署到已注册设备。
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>示例 1：第三方 MDM 控制台中的管理体验
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>示例 1：Intune 或第三方 MDM 控制台中的管理体验
 
-1. 请转到第三方 MDM 提供程序的管理控制台。 转到将应用程序配置设置部署到已注册的 iOS 设备的控制台部分。
+1. 转到 Intune 或第三方 MDM 提供程序的管理控制台。 转到将应用程序配置设置部署到已注册的 iOS 设备的控制台部分。
 
 2. 在“应用程序配置”部分中，输入以下设置：
 
@@ -73,6 +69,7 @@ ms.lasthandoff: 09/09/2017
 
 |第三方 MDM 提供程序| Configuration 注册表项 | 值类型 | 配置值|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | 字符串 | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | 字符串 | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | 字符串 | ${userUPN} **或** ${userEmailAddress} |
 
