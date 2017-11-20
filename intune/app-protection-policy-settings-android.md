@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 2383d41c52618710a1d42f0b2236d41d117b42be
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Android 应用保护策略设置
 可以在 Azure 门户的“设置”边栏选项卡上为应用保护策略[配置](app-protection-policies.md)本主题所述的策略设置。
@@ -90,3 +90,5 @@ ms.lasthandoff: 11/02/2017
 | **要求最低 Android 操作系统版本(仅警告)** | 选择“是”将要求要使用此应用需具备的最低 Android 操作系统版本。 如果设备上的 Android 版本不符合此要求，用户将看到一个通知。 可忽略此通知。 | 否 |
 | **要求最低应用版本** | 选择“是”将要求要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，将阻止用户访问。<br><br>选择要作为目标的应用时，请注意应用之间通常具有不同的版本方案。<br><br> | 否 | 
 | **要求最低应用版本(仅警告)** | 选择“是”将建议要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，用户将看到一个通知。 可忽略此通知。<br><br>选择要作为目标的应用时，请注意应用之间通常具有不同的版本方案。<br><br> | 否 | 
+| **要求最低 Android 修补版本** | 选择“是”，要求由 Google 发布的最低 Android 安全修补。 如果设备上的 Android 安全修补不符合此要求，将阻止用户访问。 | 否 |
+| **要求最低 Android 修补版本(仅警告)** | 选择“是”，要求由 Google 发布的最低 Android 安全修补。 如果设备上的 Android 安全修补不符合此要求，用户将看到一条通知。 可忽略此通知。 | 否 |

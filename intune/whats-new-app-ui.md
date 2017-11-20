@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户之间的通信以及用于支持部署的已创建的任何更新自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+
+
+## <a name="week-of-november-6-2017"></a>2017 年 11 月 6 日当周
+
+### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>公司门户应用和网站的搜索改进<!--1418189-->
+公司门户应用现在可使用跨应用类别、名称和说明的搜索。 结果按相关性呈降序排列。 这些更新在[公司门户网站](https://portal.manage.microsoft.com)中同样可用。
+
+我们仍在努力优化跟踪相关性的方式，因此请使用公司门户网站底部的“反馈”链接向我们反馈当前的运行状况。
+
+
 
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日当周
 

@@ -5,17 +5,17 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>使用 Windows AutoPilot Deployment 计划注册 Windows 设备
 Windows AutoPilot Deployment 计划简化了设备预配。 当前，生成和维护自定义操作系统映像耗时过久。 在将其提供给最终用户之前，可能需要花费大量时间将自定义操作系统映像应用到新设备上。 使用 Microsoft Intune 和 AutoPilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 当使用 Intune 来管理 AutoPilot 设备时，可在注册之后对策略、配置文件和应用等进行管理。 有关优势、方案和先决条件的概述，请参阅 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot)（Windows AutoPilot 概述）。
@@ -57,6 +57,13 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
 > - 跳过 Cortana、OneDrive 和 OEM 注册设置页
 > - 为工作或学校帐户自动设置
 > - 公司或学校品牌的登录体验    
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows AutoPilot 未分配设备警报<!-- 163236 -->
+可通过查看 Windows AutoPilot 未分配设备警报，了解在来自 AutoPilot 计划的众多设备中，有多少尚未分配 AutoPilot 部署配置文件。 使用警报中的信息可创建配置文件，并将其分配到未分配的设备。 单击警报时，会看到 Windows AutoPilot 设备的完整列表，以及与之相关的详细信息。 
+1. 登录到 [Azure](https://portal.azure.com/)。 
+2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+3. 在“Intune”边栏选项卡上，选择“设备注册”。
+4. 选择“概述”查看警报。 单击该警报以查看 AutoPilot 设备列表。  
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>分配 AutoPilot 部署配置文件
 在创建 AutoPilot 部署配置文件后，可将其分配给所选设备。

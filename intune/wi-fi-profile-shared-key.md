@@ -3,10 +3,10 @@ title: "创建具有预共享密钥的 Wi-Fi 配置文件"
 titleSuffix: Azure portal
 description: "使用 Intune 自定义配置文件创建具有预共享密钥的 Wi-Fi 配置文件。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用 Microsoft Intune 自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 下面介绍了如何使用 Intune 的“自定义设备配置文件”创建具有预共享密匙的 Wi-Fi 配置文件。 本主题还有一个如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
@@ -205,3 +205,12 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
     最好使用尚未连接到许多无线网络的计算机，因为必须搜索每个配置文件以找到正确的文件。
 3.     搜索 XML 文件以找到具有正确名称的那一个。
 4.     找到了正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的数据字段中。
+
+## <a name="best-practices"></a>最佳做法
+在部署具有 PSK 的 Wi-Fi 配置文件前，请验证该设备能否直接连接到终结点。
+
+在轮换密钥（密码或通行短语）时，预计故障时间并进行相应的部署规划。 考虑在非工作时间段推送新 Wi-Fi 配置文件。 此外，警告用户连接性可能会受到影响。
+ 
+若要确保流畅的转换体验并按时传递策略更新，设备必须向 Intune 开放至少一个信道。 要执行此操作，请使用手机网络连接，或提供仅将用户连接到 Intune 终结点的来宾 Wi-Fi 访问权限。
+
+

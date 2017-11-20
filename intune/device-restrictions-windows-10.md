@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **手动注销** - 允许用户手动从设备中删除工作区帐户。
 -   **手动安装根证书（仅限移动版）**- 阻止用户手动安装根证书和中间 CAP 证书。
 -   **诊断数据提交** - 可能的值有：
-    -       **无** - 不将数据发送给 Microsoft
-    -       **基本** - 将有限的信息发送给 Microsoft
-    -       **增强** - 将增强的诊断数据发送给 Microsoft
-    -       **完全** - 发送与“增强”相同的数据，外加有关设备状态的其他数据
+    - 否 - 不向 Microsoft 发送数据
+    - **基本** - 将有限的信息发送给 Microsoft
+    - 增强 - 将增强的诊断数据发送给 Microsoft
+    - **完全** - 发送与“增强”相同的数据，外加有关设备状态的其他数据
 -   **相机** - 允许或阻止使用设备上的相机。
 -   **OneDrive 文件同步** - 阻止设备将文件同步到 OneDrive。
 -   **可移动储备** - 指定外部存储设备（如 SD 卡）是否可以与该设备结合使用。
@@ -105,6 +105,7 @@ ms.lasthandoff: 10/19/2017
 
 
 ## <a name="edge-browser"></a>Microsoft Edge 浏览器
+
 -   **Microsoft Edge 浏览器（仅限移动版）** - 允许在设备上使用 Microsoft Edge Web 浏览器。
 -   **地址栏下拉列表（仅限桌面版）**– 使用此设置阻止 Microsoft Edge 在你键入时在下拉列表中显示建议列表。 这有助于最大程度减少 Microsoft Edge 和 Microsoft 服务之间的网络带宽使用。
 -   **同步 Microsoft 浏览器之间的收藏夹（仅限桌面版）**– 允许 Windows 同步 Internet Explorer 和 Microsoft Edge 之间的收藏夹。
@@ -180,6 +181,44 @@ ms.lasthandoff: 10/19/2017
     -   **轻松访问** - 阻止访问设置应用的轻松访问区域。
     -   **隐私** - 阻止访问设置应用的隐私区域。
     -   更新和安全性 - 阻止访问设置应用的更新和安全区域。
+
+## <a name="kiosk"></a>Kiosk
+
+-   展台模式 - 标识策略支持的[展台模式](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)的类型。  选项包括：
+
+      - 未配置（默认）- 策略不启用展台模式。 
+      - 单应用展台 - 配置文件将设备作为单应用展台启用。
+      - 多应用展台 - 配置文件将设备作为多应用展台启用。
+
+    单应用展台的设置要求如下：
+
+      - 用户帐户 - 指定与展台应用相关联的本地（对设备而言）用户帐户或 Azure AD 帐户登录名。  对于加入 Azure AD 域的帐户，以 `domain\\username@tenant.org` 的形式指定帐户。
+
+         对于公共环境中的设备，使用具有最小特权的帐户来阻止已授权活动。  
+
+      - 应用的应用程序用户模型 ID (AUMID) - 指定展台应用的 AUMID。  若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
+
+    多应用展台需要展台配置。  使用“添加”按钮创建展台配置，或选择现有展台配置。
+
+    多应用展台配置包括以下设置：
+
+    - 展台配置名称 - 用于标识给定配置的友好名称。
+
+    - 一个或多个展台应用的组成内容如下：
+
+        - 应用类型 - 指定展台应用的类型。  支持的值包括：   
+
+            - Win32 应用 - 传统的桌面应用。  （需要与设备相关的可执行文件的完全限定路径名。）
+
+            - UWP 应用 - 通用 Windows 应用。  需要[应用的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
+
+        - 应用标识符 - 指定可执行文件（Win32 应用）的完全限定路径名，或[应用的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（UWP 应用）。
+
+    - 任务栏 - 指示在展台中显示（已启用）还是隐藏（未配置）任务栏。
+
+    - “开始”菜单布局 - 指定一个 XML 文件，用于描述应用[在“开始”菜单上如何显示](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)。
+
+    - 分配的用户 - 指定一个或多个与展台配置相关联的用户帐户。  该帐户可以是设备的本地帐户，也可以是与展台应用相关联的 Azure AD 帐户登录名。  以 `domain\\username@tenant.org` 的形式指定已加入域的帐户。
 
 ## <a name="defender"></a>Defender
 

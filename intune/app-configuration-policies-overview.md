@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>Intune 的应用配置策略
 
 使用 Microsoft Intune 中的应用配置策略可提供用户在运行 iOS 或 Android 应用时的设置。 例如，应用可能要求用户指定：
 
-- 自定义端口号
-- 语言设置
-- 安全设置
-- 公司徽标之类的品牌设置
+- 自定义端口号。
+- 语言设置。
+- 安全设置。
+- 公司徽标之类的品牌设置。
 
 如果用户输入的这些设置不正确，可能会加重支持人员的负担并降低新应用的采用率。
 
@@ -38,13 +38,13 @@ ms.lasthandoff: 11/01/2017
 
 对于如何使用 Intune 的应用配置，你有两个选择：
  - **受管理设备**  
-   设备由 Intune 作为 MDM 提供程序进行管理。
+   设备由 Intune 作为移动设备管理 (MDM) 提供程序进行管理。
  - **受管理应用**  
    无需设备注册即可管理应用。
 
 ## <a name="apps-that-support-app-configuration"></a>支持应用配置的应用
 
-可对支持应用配置策略的应用使用该策略。 要在 Intune 应用中提供应用配置，应用必须编写为支持使用应用配置。 有关详细信息，请咨询应用供应商。
+可对支持应用配置策略的应用使用该策略。 要在 Intune 中提供应用配置，应用必须编写为支持使用应用配置。 有关详细信息，请咨询应用供应商。
 
 可通过如下方式准备业务线应用：将 Intune App SDK 合并到应用，或在开发应用后对其进行包装。 Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用保护策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 有关详细信息，请参阅 [Intune App SDK 概述](app-sdk.md)。
 

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>使用设备注册管理器注册设备
 
@@ -54,6 +54,7 @@ DEM 用户可以：
   - 公司门户应用或网站中仅显示本地设备。
   - 用户无法使用 Apple 批量购买计划 (VPP) 应用，因为每个用户都需具有 Apple ID 才可管理应用。
   - （仅限 iOS）如果使用 DEM 注册 iOS 设备，则无法使用 Apple Configurator、Apple 设备注册计划 (DEP) 或 Apple School Manager (ASM) 注册设备。
+  - （仅限 Android）使用单个 DEM 帐户注册 Android for Work 设备时，可注册的设备数量有限。 每个 DEM 帐户最多可注册十台 Android 工作配置文件设备。 旧版 Android 注册不受此限制。
   - 每个设备都需要设备许可证。 详细了解[用户和设备许可证](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 
 

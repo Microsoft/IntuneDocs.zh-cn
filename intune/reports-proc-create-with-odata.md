@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 从 OData 数据源创建报表
 
@@ -60,16 +60,16 @@ ms.lasthandoff: 10/20/2017
 
     ![OData 数据源](media/reports-create-01-odatafeed.png)
 
-9. 单击" **确定**"。
+9. 选择“确定”。
 10. 选择“组织帐户”，然后使用 Intune 凭据登录。 
 
     ![组织帐户凭据](media/reports-create-02-org-account.png)
 
-11. 单击“连接” 。 导航器将开启，并显示 Intune 数据仓库中表的列表。 
+11. 选择“**连接**”。 导航器将开启，并显示 Intune 数据仓库中表的列表。 
 
     ![导航器](media/reports-create-02-loadentities.png)
 
-12. 依次选择“设备”和“ownerTypes”表。  单击“加载”。 Power BI 会将数据加载至模型。
+12. 依次选择“设备”和“ownerTypes”表。  选择“加载”。 Power BI 会将数据加载至模型。
 
 ## <a name="create-a-relationship"></a>创建关系 
 
@@ -77,8 +77,8 @@ ms.lasthandoff: 10/20/2017
 
 ![管理关系](media/reports-create-03-managerelationships.png)
 
-1. 单击“管理关系”。
-2. 如果 PowerBI 未检测到关系，请单击“自动检测...”。  
+1. 选择“管理关系”。
+2. 如果 PowerBI 未检测到关系，请选择“自动检测...”。  
 关系将在 From 列至 To 列中显示。 在此示例中，“设备”表中的数据字段“ownerTypeKey”链接至“ownerTypes”表中的数据字段“ownerTypeKey”。 在“设备”表中使用关系查找设备类型代码的普通名词。
 
 ## <a name="create-a-treemap-visualization"></a>创建树状图可视化效果
@@ -100,7 +100,7 @@ ms.lasthandoff: 10/20/2017
 
 可以向树状图添加筛选器，以便使用应用解答其他问题。 
 
-1. 单击报表画布，然后单击位于“可视化效果”之下的“切片器图标”（![包含数据的树状图](media/reports-create-slicer.png)），以添加筛选器。
+1. 选择报表画布，然后选择位于“可视化效果”之下的“切片器图标”（![包含数据的树状图](media/reports-create-slicer.png)），以添加筛选器。
 2. 查找“ownerTypes”表，并将“ownerTypeName”数据字段拖动到“可视化效果”面板下的“筛选器”部分中。  
    在设备表中有一个名为“OwnerTypeKey”的数据字段，它包含表示设备是公司拥有还是个人所有的代码。 若要在此筛选器中显示友好名称，请查找“ownerTypes”表，并拖动“ownerTypeName”。 以下示例说明数据模型如何支持表之间的关系。
 
@@ -108,8 +108,8 @@ ms.lasthandoff: 10/20/2017
 
 现在，通过交互式筛选器可在公司拥有设备与个人拥有设备之间进行切换，以查看分布的更改情况。
 
-1. 单击“公司”查看公司拥有设备的分布。
-2. 单击“个人”查看个人拥有设备。
+1. 选择“公司”查看公司拥有设备的分布。
+2. 选择“个人”查看个人拥有设备。
 
 ## <a name="next-steps"></a>后续步骤
 

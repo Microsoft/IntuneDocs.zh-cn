@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用托管设备完成工作
 Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板电脑和电脑）、应用和电子邮件等其他公司资源的软件。 这样员工可以在几乎任何地方从几乎任意设备访问其工作信息，并且还能保护公司信息安全。
@@ -28,7 +28,7 @@ Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板
 将设备注册为使用 Intune 管理后，IT 部门可以管理这些工作或学校资源，让设备更安全，同时员工也能够自由地使用其偏爱的设备来完成工作。 实现此目的的主要方法之一是通过公司门户将设备注册到管理。
 
 ## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>在 Intune 中注册我的设备时，我的公司可以看到什么信息？
-公司的 IT 部门可以看到与工作相关的信息，但无法看到个人信息。 如果要注册个人设备以便在工作时使用，了解这一点尤为重要。 我们在用户帮助的下一篇文章中介绍了 IT 部门[可以看到和不能看到的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+公司的支持部门可以看到与工作相关的信息，但无法看到你的个人信息。 如果要注册个人设备以便在工作时使用，了解这一点尤为重要。 我们在用户帮助的下一篇文章中介绍了 IT 部门[可以看到和不能看到的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
 ## <a name="how-do-i-get-the-company-portal"></a>如何获取公司门户？
 你可通过两种不同方式获取公司门户：
@@ -49,7 +49,8 @@ Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板
 若要查看与在设备上使用公司门户应用可以执行的操作相比，使用公司门户网站可执行的操作，请选择以下链接之一：
 
 - [使用 Android 设备](using-your-android-device-with-intune.md)
-- [使用 iOS 或 macOS 设备](using-your-ios-or-macOS-device-with-intune.md)
+- [使用 iOS 设备](using-your-ios-device-with-intune.md)
+- [使用 macOS 设备](using-your-macos-device-with-intune.md)
 - [使用 Windows 设备](using-your-windows-device-with-intune.md)
 - [使用公司门户网站](using-the-intune-company-portal-website.md)
 
