@@ -425,6 +425,8 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS 设置
                   href: app-protection-policy-settings-ios.md
+                - name: 在 Managed Browser 中查看应用保护日志
+                  href: app-protection-policy-settings-log.md
             - name: 验证应用保护策略
               href: app-protection-policies-validate.md
             - name: 监视应用保护用户状态
