@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
 
@@ -192,8 +192,9 @@ ms.lasthandoff: 09/09/2017
 
 |参数 | 描述|
 | ------------- | ------------- |
-|InputWin10AppxBundle |定位到源 appxbundle 文件所在位置的路径 |
-|OutputWin10AppxBundle |已签名的 appxbundle 文件 Win81Appx 的输出路径。  定位到 Windows 8.1 或 Windows Phone 8.1 公司门户 (.APPX) 文件所在位置的路径。|
+|InputWin10AppxBundle |定位到源 appxbundle 文件所在位置的路径。 |
+|OutputWin10AppxBundle |已签名的 appxbundle 文件 Win81Appx 的输出路径。 |
+|Win81Appx | 定位到 Windows 8.1 或 Windows Phone 8.1 公司门户 (.APPX) 文件所在位置的路径。|
 |PfxFilePath |Symantec 企业移动代码签名证书 (.PFX) 文件的路径。 |
 |PfxPassword| Symantec 企业移动代码签名证书的密码。 |
 |PublisherId |企业的发布者 ID。 如果不存在，则使用 Symantec 企业移动代码签名证书的“使用者”字段。|

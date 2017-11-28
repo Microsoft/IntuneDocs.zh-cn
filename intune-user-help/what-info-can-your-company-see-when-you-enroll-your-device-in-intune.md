@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/03/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: c03985bd7ca92fe4b4e8ea163b7db421bfae09c2
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: 6595382606b9c53083e7beec9ca02a314abb5899
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>在我注册自己的设备时，我的公司可以看到哪些信息？
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/03/2017
 
 **公司始终可以看到的信息**
 
-- 设备型号（如 iPhone 7）
+- 设备型号（如 Google Pixel）
 - 制造商（如 Microsoft）
 - 操作系统（如 iOS）
 - 应用名称（如 Microsoft Word）
@@ -48,4 +48,5 @@ ms.lasthandoff: 11/03/2017
 
 -  电话号码：对于公司拥有的设备，公司可以看到完整的电话号码。 对于个人拥有的设备，公司只能看到电话号码的最后四位数字。 可以打开相应设备的“设备详细信息”页，确定每个设备的“所有权类型”。
 -  位置：公司永远无法看到设备的位置，除非 iOS 设备受监管且已丢失。 [如何判断？](https://go.microsoft.com/fwlink/?linkid=853816)
-- 应用清单：如果公司使用移动威胁防御，则可以查看设备中应用的更多相关详细信息。 了解[移动威胁防御](you-are-prompted-to-install-mtd-ios.md)的详细信息。
+- 应用清单：如果公司使用移动威胁防御，则可以查看 iOS 设备中应用的更多相关详细信息。 了解[移动威胁防御](you-are-prompted-to-install-mtd-ios.md)的详细信息。
+- 网络信息：可能向公司支持人员提供有关 Android 设备网络连接信息。 例如，如果公司要求设备在某个建筑物内使用，则设备将标识所连接的网络。 

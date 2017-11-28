@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何通过加密保护 Android 设备
 
 在加密设备时，将设备上的信息包装到一个保护代码层中以防止未经授权的人员访问这些信息。 为确保信息安全，组织会要求加密 Android 设备才能访问公司文件、电子邮件或数据。
 
 > [!Note]
-> 如果公司支持人员要求使用 PIN 或密码，则加密前可能要求进行设置。
+> 无法对某些 Android 设备（包括由华为、Vivo 和 OPPO 生产的某些设备）进行加密。 请单击[此处](your-device-appears-encrypted-but-cp-says-otherwise-android.md)，查看详细信息。
 
 如果取消注册手机，它将保持加密状态。
 
@@ -37,9 +37,6 @@ ms.lasthandoff: 09/28/2017
     （在某些手机上，需要选择“存储” > “存储加密”或“存储” > “锁定屏幕和安全性” > “其他安全设置”以找到“加密”选项）。
 
 3.  按照屏幕上的说明操作。 加密时，你的设备可能会多次重启。
-
-> [!Note]
-> 无法加密某些 Android 设备。 请单击[此处](your-device-appears-encrypted-but-cp-says-otherwise-android.md)，查看详细信息。
 
 ### <a name="what-to-do-if-you-have-issues"></a>如果遇到问题时该怎么办
 **问题**：你的设备已加密，然后你发现以下情形之一：

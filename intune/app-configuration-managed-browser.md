@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
-ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
+ms.openlocfilehash: bc11ad516b3256d39d4e859eca6c8aa248fb180b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -100,8 +100,9 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 
 - 通过 Azure AD 应用程序代理设置内部应用程序。
     - 要配置应用程序代理和发布应用程序，请参阅[设置文档]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
-    - 必须使用 Managed Browser 应用的最低版本 1.2.0。
-    - Managed Browser 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
+- 必须使用 Managed Browser 应用的最低版本 1.2.0。
+- Managed Browser 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
+注意：更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 中生效。
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>步骤 1：从 Outlook 启用指向 Managed Browser 的自动重定向
 Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中显示**这一设置的应用保护策略。
@@ -218,6 +219,8 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 1. 打开 Managed Browser。
 2. 在地址框中键入 `about:intunehelp`。
 Browser 将启动疑难解答模式。
+
+对于应用日志中存储的设置列表，请参阅[在 Managed Browser 中查看应用保护日志](app-protection-policy-settings-log.md)。
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser 的安全和隐私
 

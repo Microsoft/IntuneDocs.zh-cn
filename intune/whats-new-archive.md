@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3462c6c418ed48991f58e0ccf2e09f2df8b48410
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 5b935f4dc3def1c7b22298f3ec9105e0b2f306d8
+ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/16/2017
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
@@ -361,7 +361,7 @@ IT 支持人员用户现在可以在“疑难解答”边栏选项卡中查看�
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>证书配置更新 <!-- 918991 and 823198 -->
 创建 SCEP 证书配置文件时，对于“使用者名称格式”，可以使用适用于 iOS、 Android 和 Windows 设备的“自定义”选项。 在本次更新之前，“自定义”字段仅适用于 iOS 设备。 有关详细信息，请参阅[如何创建 SCEP 证书配置文件] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile)。
 
-创建 PKCS 证书配置文件时，对于“使用者可选名称”，可以选择“自定义 Azure AD 属性”。 当选择“自定义 Azure AD 属性”时，将出现“部门”选项。 有关详细信息，请参阅[如何创建 PKCS 证书配置文件] (certficates-pfx-configure.md#how-to-create-a-pkcs-certificate-profile)。
+创建 PKCS 证书配置文件时，对于“使用者可选名称”，可以选择“自定义 Azure AD 属性”。 当选择“自定义 Azure AD 属性”时，将出现“部门”选项。 有关详细信息，请参阅[如何创建 PKCS 证书配置文件](certficates-pfx-configure.md#create-a-device-configuration-profile)。
 
 #### <a name="configure-multiple-apps-that-can-run-when-an-android-device-is-in-kiosk-mode----662059---"></a>配置多个当 Android 设备处于展台模式时可以运行的应用 <!-- 662059 -->
 当 Android 设备处于展台模式时，你之前仅能配置一个允许运行的应用。 现在，你可以使用应用 ID、应用商店 URL，或通过选择一个已经管理的 Android 应用配置多个应用。 有关详细信息，请参阅[展台模式设置](device-restrictions-android.md#kiosk)。

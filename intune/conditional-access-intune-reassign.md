@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 18ee7adcdb396c1b7010100803c82dbf0daa767c
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
@@ -201,5 +201,5 @@ ms.lasthandoff: 11/01/2017
 ## <a name="see-also"></a>另请参阅
 
 - [通过 Intune 使用条件性访问的常见方式](conditional-access-intune-common-ways-use.md)
-- [使用 Intune 且基于应用的条件性访问](app-based-conditional-access-intune.md)
+- [基于应用的条件性访问与 Intune 的协作](app-based-conditional-access-intune.md)
 - [Azure Active Directory 中的条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

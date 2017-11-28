@@ -1,11 +1,11 @@
 ---
 title: "将 Windows 10 设备的日志发送给公司支持人员 | Microsoft Docs"
-description: "将 Windows 10 1511 设备注册到 Intune"
+description: "将 Windows 10 1511+ 设备注册到 Intune"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f2287700e96c798be7033eac35539e3490bc3f8a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4c114a8267fd38da173e8aafcd6089dcfb4472fd
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>通过 Windows 10 的公司门户应用将日志发送给公司支持人员
 
@@ -30,8 +30,8 @@ ms.lasthandoff: 09/28/2017
 2.  选择“设置”齿轮，然后“发送日志”。
 3.  “共享”将打开。 选择“邮件”。 这将创建一封附加公司门户日志的电子邮件，你可以将其发送给公司支持人员。
 
-  ![公司门户应用的“设置”页中“发送日志”的对话。 单击此链接将显示“发送日志 - 向你的公司支持人员发送诊断日志，帮助他们解决公司门户的问题。”](./media/w10-share-logs.png)
+  ![公司门户应用的“设置”页中“发送日志”的对话。 单击此链接将显示“发送日志 - 向你的公司支持人员发送诊断日志，帮助他们解决公司门户的问题。”](./media/w10-share-logs-after-1711.png)
 
-可能还需要[通过“设置”应用发送日志](send-logs-to-your-it-admin-settings-windows.md)，以便为公司支持人员提供更多帮助，协助他们尽力对所发现的问题进行故障排除。 
+可能还需要[通过“设置”应用发送日志](send-logs-to-your-it-admin-settings-windows.md)，以便为公司支持人员提供更多帮助，协助他们尽力对所发现的问题进行故障排除。
 
 仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。

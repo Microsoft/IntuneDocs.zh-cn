@@ -5,7 +5,7 @@ keywords: "Intune 数据仓库"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,26 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="data-warehouse-data-model"></a>数据库仓库数据模型
 
-Intune 数据仓库每天对数据进行采样，呈现不断变化的移动环境的历史视图。
+Intune 数据仓库每天对数据进行采样，呈现不断变化的移动设备环境的历史视图。 该视图由一段时间内相关的事物组成。
 
-从租户提取的数据会被添加到数据仓库中。 仓库是一组实体和关系，可帮助用户了解想询问的问题的类型。 例如，可查看上周每天安装内部开发的 Android 应用程序的次数，从而评估安装趋势是否为增长趋势。 借助数据仓库的结构可获取有关移动环境的见解。 而 Microsoft Power BI 等分析工具可使用数据仓库数据模型来创建可视化效果和动态仪表板。
+## <a name="things-entity-sets"></a>事物：实体集
 
-Intune 数据仓库结构使用星型架构模型。 星型架构按时间维度组织事实。 在模型上下文中，一个“事实”是一个定量度量，例如设备数量、应用数量或注册时间。 在模型的上下文中，一个“维度”是一组类别及其层次结构关系。 例如，天数归入月，月份则归入年。 星型架构在灵活性和数据分析方面进行了优化，方便用户创建所需报表来了解不断发展的移动环境。
+仓库公开以下高级区域中的数据：
 
-仓库公开以下高级类别中的数据：
   -  启用了应用保护的应用和使用情况
   -  已注册的设备、属性和清单
   -  应用和软件清单
   -  设备配置和符合性策略
 
-**数据模型实体集**
-
-实体集是数据模型中已命名的实体集合。 这些集中包含的实体用于定义模型中收集的数据。 每个实体集均提供一个针对数据仓库数据模型的访问点。 了解有关以下实体类别的详细信息：
+这些区域包含对你的 Intune 环境有意义的实体或事物。 你可在以下主题中找到关于实体集的详细信息：
 
   -  [应用程序](reports-ref-application.md)
   -  [日期](reports-ref-date.md)
@@ -45,4 +42,23 @@ Intune 数据仓库结构使用星型架构模型。 星型架构按时间维度
   -  [策略](reports-ref-policy.md)
   -  [移动应用管理 (MAM)](reports-ref-mobile-app-management.md)
   -  [User](reports-ref-user.md)
+  -  [当前用户](reports-ref-current-user.md)
   -  [用户设备关联](reports-ref-user-device.md)
+
+## <a name="relationships-star-schema-model"></a>关系：星型架构模型
+
+仓库对关系中的实体进行排列，这些实体对用户想提出的问题类型有实际意义。 例如，你可以查看内部开发的 Android 应用程序的安装次数。 借助数据仓库的结构可获取有关移动环境的见解。 而 Microsoft Power BI 等分析工具可使用数据仓库数据模型来创建可视化效果和动态仪表板。
+
+实体和关系使用星型架构模型。 星型架构将时间维度上的事实互相关联。 在模型上下文中，一个“事实”是一个定量度量，例如设备数量、应用数量或注册时间。 事实数据表存储大量数据。 它们可以变得很大，因此它们通常将信息保存期限制为 30 天。 维度提供事实数据的上下文。 如果事实是用来测量发生了什么情况，则维度会表明情况发生在谁身上。 维度表（例如“用户”表）更小并可以重新导流比事实数据表保存时间更长的数据。 
+
+星型架构在灵活性和数据分析方面进行了优化，方便用户创建所需报表来了解不断发展的移动环境。
+
+## <a name="time-daily-snapshots"></a>时间：每日快照
+
+仓库在 Intune 数据的下游。 Intune 在午夜 UTC 拍摄每日快照，并将快照存储在仓库中。 保存快照的持续时间因事实数据表而异。 有些事实数据表可能保存 7 天，有些 30 天，有些甚至更长。
+
+## <a name="next-steps"></a>后续步骤
+
+ - 若要了解有关数据仓库如何在 Intune 中跟踪用户生存期的详细信息，请参阅 [Intune 数据仓库中的用户生存期表示](reports-ref-user-timeline.md)。
+ - 在[创建第一个数据仓库](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)中了解有关使用数据仓库的详细信息。
+ - 在[通过导入数据集创建新的 Power BI 报表](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)了解有关使用 Power BI 和数据仓库的详细信息。 

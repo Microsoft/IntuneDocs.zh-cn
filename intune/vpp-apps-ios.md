@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,35 +15,37 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b2f2e174c459508dc30a63ab9de3bf1cc069173
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-iOS 应用商店允许你为想要在公司运行的应用购买多个许可证。 购买应用的多个副本，有助于降低跟踪多个已购买应用副本的管理开销。
+iOS 应用商店允许你为想要在公司运行的应用购买多个许可证。 购买多个副本可帮助你有效地管理公司的应用。
 
-Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
+Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，方法为：
 
-- 报告应用商店中的许可证信息
-- 跟踪已使用的许可证数量
-- 帮助防止安装的应用副本数超过所拥有的数目
+- 从应用商店中报告许可证信息。
+- 跟踪已使用的许可证数量。
+- 帮助防止安装的应用副本数超过所拥有的数目。
 
 可通过两种方法分配批量采购的应用：
 
 ### <a name="device-licensing"></a>设备许可
 
-将应用分配到设备时，需使用一个应用证书，此证书将与其分配到的设备保持关联。
+将应用分配到设备时，需使用一个应用证书，此证书将与其分配到的设备保持关联。 
+
 将批量采购的应用分配到设备时，设备的最终用户不必提供 Apple ID 即可访问应用商店。 
 
 ### <a name="user-licensing"></a>用户许可
 
 将应用分配给用户时，需使用一个应用证书，此证书将与用户关联。 可以在用户拥有的多个（数量限制由 Apple 控制）设备上运行该应用。
+
 将批量采购的应用分配给用户时，每个最终用户必须具有有效且唯一的 Apple ID 才能访问应用商店。
 
 此外，还可以使用 Intune 同步和管理从 Apple Volume Purchase Program (VPP) 商店购买的电子图书。 有关详细信息，请参阅[如何管理通过批量购买计划购买的 iOS 电子书](vpp-ebooks-ios.md)。
@@ -81,7 +83,7 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 1.  在“Intune”边栏选项卡上，选择“设置”下的“移动应用” > “iOS VPP 令牌”。
-2.  在 VPP 令牌列表边栏选项卡上，单击“创建”。
+2.  在 VPP 令牌边栏选项卡列表上，请选择“创建”。
 4. 在“创建 VPP 令牌”边栏选项卡中，指定下列信息：
     - **VPP 令牌文件** - 如果尚未注册，则请注册 Volume Purchase Program 企业版或 Volume Purchase Program 教育版。 注册后，为你的帐户下载 Apple VPP 令牌，并在此处选择它。
     - **Apple ID** - 输入与批量购买计划关联的帐户的 Apple ID。
@@ -91,14 +93,11 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 
     - **VPP 帐户类型** - 从“企业版”或“教育版”中进行选择。
     - **自动应用更新** - 从“关”切换为“开”以启用自动更新。 启用后，当设备签入时，Intune 将更新通过 Intune 服务针对指定令牌购买的所有应用。 Intune 将在应用商店内检测 VPP 应用更新，并在设备签入时自动将这些更新推送到设备中。
-4. 完成后，请单击“上传”。
+4. 完成后，选择“上传”。
 
 该令牌将显示在令牌列表边栏选项卡中。
 
 你可以随时通过选择“立即同步”将 Apple 保存的数据与 Intune 同步。
-
-> [!NOTE]
-> Microsoft Intune 将仅同步可通过 iTunes 应用商店公开获得的应用信息。 尚不支持“针对 iOS 的自定义 B2B 应用”。 如果方案针对此类应用，将不同步该应用信息。
 
 ## <a name="to-assign-a-volume-purchased-app"></a>如何分配批量购买应用
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户之间的通信以及用于支持部署的已创建的任何更新自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
 
+## <a name="week-of-november-13-2017"></a>2017 年 11 月 13 日当周
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>在适用于 iOS 的公司门户（版本 2.9.0）中对设备设置工作流的改进<!---1417174--->
+
+我们改进了适用于 iOS 的公司门户应用中的设备设置工作流。 语言对用户更加友好，在可能的情况下我们还对屏幕进行了合并。 我们还通过在整个设置文本中使用公司名称使语言特定于你的公司。
+
+> [!NOTE]
+> 我们使用你在 Azure 门户中设置的公司名称：“Microsoft Intune” > “移动应用” > “公司门户品牌” > “公司名称”。 如果你未设置此值，我们将使用你在“Azure Active Directory” > “属性” > “名称”中设置的租户名称。 如果你尚未在公司门户品牌中设置公司名称，并且不希望显示租户名称，我们建议你在“公司门户品牌”选项卡中设置公司名称。如果你不希望此字符串显示在公司门户的标题中，则可以取消选中该复选框以“在徽标旁显示公司名称”。
+
+|以前|完成|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*与上一步结合使用*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>2017 年 11 月 6 日当周
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>更新适用于 Windows 10 的公司门户应用<!--1299474-->
+适用于 Windows 10 的公司门户应用的“设置”页面已更新，以使设置和预期的用户操作在所有设置中更加一致。 其更新也旨在匹配其他 Windows 应用的布局。
+
+|以前|完成|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>公司门户应用和网站的搜索改进<!--1418189-->
 公司门户应用现在可使用跨应用类别、名称和说明的搜索。 结果按相关性呈降序排列。 这些更新在[公司门户网站](https://portal.manage.microsoft.com)中同样可用。
 
 我们仍在努力优化跟踪相关性的方式，因此请使用公司门户网站底部的“反馈”链接向我们反馈当前的运行状况。
-
-
 
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日当周
 
@@ -45,10 +70,6 @@ ms.lasthandoff: 11/08/2017
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS 公司门户显示大图标 <!-- 1454593 -->
 此版本修复了 iOS 公司门户在应用磁贴中显示图标的已知问题。 若上传的应用图标像素大于等于 120x120，该图标现在将显示在[公司门户网站](https://portal.manage.microsoft.com)中，且 iOS 公司门户应用页会占据整个应用磁贴。
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日那周

@@ -365,6 +365,8 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Symantec PKI Manager Web 服务
+              href: certificates-symantec-configure.md
         - name: 配置 Windows 信息保护设置
           href: windows-information-protection-configure.md
         - name: 管理 PowerShell 脚本
