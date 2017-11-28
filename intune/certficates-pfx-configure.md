@@ -1,208 +1,172 @@
 ---
 title: "使用 Intune 配置和管理 PKCS 证书"
-titlesuffix: Azure portal
-description: "了解如何配置基础结构，然后使用 Intune 创建并分配 PKCS 证书。"
+titleSuffix: Intune on Azure
+description: "使用 Intune 创建和分配 PKCS 证书。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: MicrosoftGuyJFlo
+ms.author: joflore
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
-ms.reviewer: vinaybha
+ms.assetid: 
+ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dff7d3e00b26b4f186beb71bacf13738ac857a3
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
+ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/16/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>使用 Intune 配置和管理 PKCS 证书
+
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-本主题介绍了如何配置基础结构，然后使用 Intune 创建并分配 PKCS 证书配置文件。
+## <a name="requirements"></a>要求
 
-必须有企业证书颁发机构，才能在组织中实施任何基于证书的身份验证。
+若要在 Intune 中使用 PKCS 证书，必须具有以下基础结构：
 
-若要使用 PKCS 证书配置文件，除了要有企业证书颁发机构外，还需要有：
+* 配置了现有 Active Directory 域服务 (AD DS) 域。
+ 
+  如果需要了解有关如何安装和配置 AD DS 的详细信息，请参阅文章 [AD DS 设计和规划](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning)。
 
--   可以与证书颁发机构进行通信的计算机，或可以使用证书颁发机构计算机本身。
+* 配置了现有企业证书颁发机构 (CA)。
 
--  Intune 证书连接器，它在可以与证书颁发机构进行通信的计算机上运行。
+  如果需要了解有关如何安装和配置 Active Directory 证书服务 (AD CS) 的详细信息，请参阅文章 [Active Directory 证书服务分步指南](https://technet.microsoft.com/library/cc772393)。
 
-## <a name="important-terms"></a>重要术语
+  > [!WARNING]
+  > Intune 要求在企业证书颁发机构 (CA) 而非独立 CA 中运行 AD CS。
 
+* 已连接到企业 CA 的客户端。
+* 从企业 CA 导出的根证书的副本。
+* 从 Intune 门户下载了 Microsoft Intune 证书连接器 (NDESConnectorSetup.exe)。
+* 可用于托管 Microsoft Intune 证书连接器 (NDESConnectorSetup.exe) 的 Windows Server。
 
--    **Active Directory 域**：此部分中列出的所有服务器（Web 应用程序代理服务器除外）都必须加入 Active Directory 域。
+## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>从企业 CA 中导出根证书
 
--  **证书颁发机构**：Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关如何设置证书颁发机构的说明，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
-    如果 CA 是在 Windows Server 2008 R2 上运行，必须[安装 KB2483564 中的修补程序](http://support.microsoft.com/kb/2483564/)。
+需要每个设备上有根证书或中间 CA 证书，以对 VPN、WiFi 和其他资源进行身份验证。 以下步骤介绍如何从企业 CA 中获取所需的证书。
 
--  **可以与证书颁发机构进行通信的计算机**：也可以使用证书颁发机构计算机本身。
--  **Microsoft Intune 证书连接器**：从 Azure 门户中下载“证书连接器”安装程序 (**ndesconnectorssetup.exe**)。 然后，可以在要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe**。 对于 PKCS 证书配置文件，请在与证书颁发机构进行通信的计算机上安装证书连接器。
--  **Web 应用程序代理服务器**（可选）：可以将运行 Windows Server 2012 R2 或更高版本的服务器用作 Web 应用程序代理 (WAP) 服务器。 该配置：
-    -  允许设备使用 Internet 连接接收证书。
-    -  是设备通过 Internet 连接接收和续订证书时的安全建议。
+1. 使用具有管理权限的帐户登录到企业 CA。
+2. 以管理员身份打开命令提示符。
+3. 将根 CA 证书导出到可以稍后对其进行访问的位置。
 
- > [!NOTE]           
-> -    托管 WAP 的服务器[必须安装更新程序](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)，以支持网络设备注册服务 (NDES) 使用的长 URL。 此更新程序包括在 [2014 年 12 月更新汇总](http://support.microsoft.com/kb/3013769)中，或单独包括在 [KB3011135](http://support.microsoft.com/kb/3011135) 中。
->-  此外，托管 WAP 的服务器还必须具有与将要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
-    若要了解 WAP 证书，请参阅[规划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的**规划证书**部分。 有关 WAP 服务器的常规信息，请参阅[使用 Web 应用程序代理](http://technet.microsoft.com/library/dn584113.aspx)。|
+   例如：
 
+   `certutil -ca.cert certnew.cer`
 
-## <a name="certificates-and-templates"></a>证书和模板
-
-|对象|详细信息|
-|----------|-----------|
-|**证书模板**|在发证 CA 上配置此模板。|
-|**受信任的根 CA 证书**|可以从发证 CA 或信任发证 CA 的任何设备中将此证书导出为 **.cer** 文件，并通过使用受信任的 CA 证书配置文件将其分配给设备。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
+   有关详细信息，请参阅[用于管理证书的 Certutil 任务](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign)。
 
 
-## <a name="configure-your-infrastructure"></a>配置你的基础结构
-必须先完成以下步骤，然后才能配置证书配置文件。 必须具备 Windows Server 2012 R2 和 Active Directory 证书服务 (ADCS) 方面的知识，才能执行下面这些步骤：
+## <a name="configure-certificate-templates-on-the-certification-authority"></a>配置证书颁发机构上的证书模板
 
-- **第 1 步** - 在证书颁发机构上配置证书模板。
-- **第 2 步** - 启用、安装和配置 Intune 证书连接器。
+1. 使用具有管理权限的帐户登录到企业 CA。
+2. 打开“证书颁发机构”控制台。
+3. 右键单击“证书模板”，然后选择“管理”。
+4. 找到“用户”证书模板，右键单击该模板，然后选择“复制模板”。 随即出现“新模板属性”窗口。
+5. 在“兼容性”选项卡上
+   * 将“证书颁发机构”设置为“Windows Server 2008 R2”
+   * 将“证书接收人”设置为“Windows 7 / Server 2008 R2”
+6. 在“常规”选项卡上  ：
+   * 将“模板显示名称”设置为对你有意义的名称。
 
-## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>第 1 步 - 在证书颁发机构上配置证书模板
+   > [!WARNING]
+   > 默认情况下，“模板名称”与“模板显示名称”相同，不包含空格。 请记下模板名称，供以后使用。
 
-### <a name="to-configure-the-certification-authority"></a>配置证书颁发机构
+7. 在“请求处理”选项卡上，选择“允许导出私钥”框。
+8. 在“加密”选项卡上，确认将“最小密钥大小”设置为 2048。
+9. 在“使用者名称”选项卡上，选中单选按钮“在请求中提供”。
+10. 在“扩展”选项卡上，确认在“应用程序策略”下看到加密文件系统、安全电子邮件和客户端身份验证。
+    
+      > [!IMPORTANT]
+      > 对于 iOS 和 macOS 证书模板，在“扩展”选项卡上，编辑“密钥用法”，并确保未选择“数字签名为原件的证明”。
 
-1.  在发证 CA 上，使用证书模板管理单元新建自定义模板，或复制并编辑现有模板（与用户模板相似）以与 PKCS 配合使用。
+11. 在“安全”选项卡上，为安装 Microsoft Intune 证书连接器所在的服务器添加计算机帐户。
+    * 允许该帐户具有读取和注册权限。
+12. 单击“应用”，然后单击“确认”以保存证书模板。
+13. 关闭“证书模板控制台” 。
+14. 在“证书颁发机构”控制台中，右键单击“证书模板”、“新建”、“要颁发的证书模板”。
+    * 选择在前面的步骤中创建的模板，然后单击“确定”。
+15. 为了让服务器代表已注册 Intune 的设备和用户管理证书，请执行以下步骤：
 
-    证书模板必须包含下列内容：
+    a. 右键单击“证书颁发机构”，选择“属性”。
 
-    -   为模板指定易记“模板显示名称”。
+    b。 在“安全”选项卡上，为运行 Microsoft Intune 证书连接器所在的服务器添加计算机帐户。
+      * 向计算机帐户授予“发布和管理证书”以及“请求证书”允许权限。
+16. 注销企业 CA。
 
-    -   在“使用者名称”选项卡上，选择“在请求中提供”。 （由适用于 NDES 的 Intune 策略模块强制实施安全措施）。
+## <a name="download-install-and-configure-the-microsoft-intune-certificate-connector"></a>下载、安装和配置 Microsoft Intune 证书连接器
 
-    -   在“扩展”选项卡上，确保“应用策略描述”中包括“客户端身份验证”。
+![ConnectorDownload][ConnectorDownload]
 
-        > [!IMPORTANT]
-        > 对于 iOS 和 macOS 证书模板，在“扩展”选项卡上，编辑“密钥用法”，并确保未选择“数字签名为原件的证明”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 导航到“Intune”、“设备配置”、“证书颁发机构”，然后单击“下载证书连接器”。
+   * 将下载的文件保存到可以在服务器上进行访问的位置，将在该服务器上安装该应用程序。
+3. 登录到将要安装 Microsoft Intune 证书连接器的服务器。
+4. 运行安装程序并接受默认位置。 它将连接器安装到 C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe。
 
-2.  在模板的“常规”选项卡上，查看“有效期”。 默认情况下，Intune 使用模板中配置的值。 不过，可以视需要将 CA 配置为允许申请者指定其他值，随后便能够在 Intune 管理员控制台中设置此值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
+      a. 在“安装程序选项”页上选择“PFX 分发”，然后单击“下一步”。
 
-    > [!IMPORTANT]
-    > iOS 和 macOS 始终使用模板中设置的值，无论你设置的其他配置如何。
+   b。 单击“安装”并等待安装完成。
 
-    若要将 CA 配置为允许申请者指定有效期，请在 CA 上运行下列命令：
+   c. 在完成页上，选中标记为“启动 Intune 连接器”的框，然后单击“完成”。
 
-    a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+5. 现在将出现 NDES 连接器窗口，显示“注册”选项卡。若要启用对 Intune 的连接，必须单击“登录”并提供具有管理权限的帐户。
+6. 在“高级”选项卡上，可以保持单选按钮“使用此计算机的系统帐户（默认）”的选中状态。
+7. 单击“应用”，然后单击“关闭”。
+8. 现在将返回到 Azure 门户。 在“Intune”、“设备配置”、“证书颁发机构”下，在几分钟后，应该能够在“连接状态”下看到绿色的复选标记和“活动”一词。 这一确认可以让你知道你的连接器服务器可以与 Intune 通信。
 
-    b.  **net stop certsvc**
+## <a name="create-a-device-configuration-profile"></a>创建设备配置配置文件
 
-    c.  **net start certsvc**
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 导航到“Intune”、“设备配置”、“配置文件”，然后单击“创建配置文件”。
 
-3.  在发证 CA 上，使用证书颁发机构管理单元发布证书模板。
+   ![NavigateIntune][NavigateIntune]
 
-    a.  选择“证书模板”节点，依次单击“操作”-&gt;“新建”&gt;“要颁发的证书模板”，然后选择在第 2 步中创建的模板。
+3. 请填充以下信息：
+   * 配置文件的名称
+   * （可选）设置描述
+   * 将配置文件部署到的平台
+   * 将配置文件类型设置为“受信任的证书”
+4. 导航到“设置”并提供以前导出的 .cer 文件根 CA 证书。
 
-    b.  通过查看“证书模板”文件夹下的已发布模板来进行验证。
+   > [!NOTE]
+   > 你可能有或没有为证书选择“目标存储区”的选项，具体取决于在步骤 3 中所选的平台。
 
-4.  在 CA 计算机上，确保托管 Intune 证书连接器的计算机拥有注册权限，以便它可以访问用于创建 PKCS 证书配置文件的模板。 在 CA 计算机属性的“安全性”选项卡上设置相应权限。
+   ![ProfileSettings][ProfileSettings]
 
-## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>第 2 步 - 启用、安装和配置 Intune 证书连接器
-在这一步中，你将：
+5. 单击“确认”，然后单击“创建”以保存你的配置文件。
+6. 若要将新的配置文件分配给一个或多个设备，请参阅[如何分配 Microsoft Intune 设备配置文件](device-profile-assign.md)。
 
-- 启用对证书连接器的支持
-- 下载、安装和配置证书连接器。
+## <a name="create-a-pkcs-certificate-profile"></a>创建 PKCS 证书配置文件
 
-### <a name="to-enable-support-for-the-certificate-connector"></a>如何启用对证书连接器的支持
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 导航到“Intune”、“设备配置”、“配置文件”，然后单击“创建配置文件”。
+3. 请填充以下信息：
+   * 配置文件的名称
+   * （可选）设置描述
+   * 将配置文件部署到的平台
+   * 将配置文件类型设置为“PKCS 证书”
+4. 导航到“设置”并提供以下信息：
+   * 续订阈值 (%) - 建议为 20%。
+   * 证书有效期 - 如未更改证书模板，则此选项应设置为一年。
+   * 证书颁发机构 - 此选项是企业 CA 的内部完全限定的域名 (FQDN)。
+   * 证书颁发机构名称 - 此选项是企业 CA 的名称，可能与以前的项目不同。
+   * 证书模板名称 - 此选项是前面创建的模板名称。 请记住，默认情况下，“模板名称”与“模板显示名称”相同，不包含空格。
+   * 使用者名称格式 - 将此选项设置为公用名（除非另有要求）。
+   * 使用者可选名称 - 将此选项设置为用户主体名称 (UPN)（除非另有要求）。
+   * 扩展密钥用法 - 只要在上一部分“配置证书颁发机构上的证书模板”中使用了步骤 10 中的默认设置，就可以从选择框中添加以下预定义的值：
+      * **任何用途**
+      * **客户端身份验证**
+      * **安全电子邮件**
+   * **根证书** - （针对 Android 配置文件）此选项是上一部分[从企业 CA 导出根证书](#export-the-root-certificate-from-the-enterprise-ca)下的步骤 3 中导出的 .cer 文件。
 
-1.  登录到 Azure 门户中。
-2.  选择“更多服务” > “监视 + 管理” > “Intune”。
-3.  在“Intune”边栏选项卡上，选择“配置设备”。
-2.  在“设备配置”边栏选项卡上，依次选择“设置” > “证书颁发机构”。
-2.  在“第 1 步”下，选择“启用”。
-
-### <a name="to-download-install-and-configure-the-certificate-connector"></a>如何下载、安装和配置证书连接器
-
-1.  在“配置设备”边栏选项卡上，依次选择“设置” > “证书颁发机构”。
-2.  选择“下载证书连接器”。
-2.  下载完毕后，运行下载的安装程序 (**ndesconnectorssetup.exe**)。
-  在能够连接证书颁发机构的计算机上运行安装程序。 依次选择“PKCS (PFX) 发行版本”选项和“安装”。 安装完成后，请按[如何配置证书配置文件](certificates-configure.md)中的说明操作，继续创建证书配置文件。
-
-3.  在系统提示输入证书连接器的客户端证书时，依次选择“选择”和安装的“客户端身份验证”证书。
-
-    选择客户端身份验证证书后，将返回“Microsoft Intune 证书连接器的客户端证书”区域。 选择“下一步”查看相应证书的属性，尽管选择的证书不会显示。 然后，依次选择“下一步”和“安装”。
-
-4.  在向导完成后，先单击“启动证书连接器 UI”，然后再关闭向导。
-
-    > [!TIP]
-    > 如果在启动证书连接器 UI 前关闭了向导，你可以通过运行以下命令重新打开它：
-    >
-    > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
-
-5.  在“证书连接器”UI 中：
-
-    a. 选择“登录”，然后输入 Intune 服务管理员凭据或拥有全局管理权限的租户管理员的凭据。
-
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
-    b. 选择“高级”选项卡，然后输入在证书颁发机构上拥有“颁发和管理证书”权限的帐户的凭据。
-
-    c. 选择“应用”。
-
-    你现在可以关闭证书连接器 UI。
-
-6.  打开命令提示符，然后键入“services.msc”。 然后，按 Enter 键，右键单击“Intune 连接器服务”，然后选择“重启”。
-
-若要验证服务是否在运行，请打开浏览器，然后输入以下 URL（应返回“403”错误）：
-
-**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
+5. 单击“确认”，然后单击“创建”以保存你的配置文件。
+6. 若要将新的配置文件分配给一个或多个设备，请参阅文章[如何分配 Microsoft Intune 设备配置文件](device-profile-assign.md)。
 
 
-### <a name="how-to-create-a-pkcs-certificate-profile"></a>如何创建 PKCS 证书配置文件
-
-在 Azure 门户中，选择“配置设备”工作负载。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在“配置文件”边栏选项卡上，单击“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入 PKCS 证书配置文件的“名称”和“说明”。
-5. 在“平台”下拉列表中，选择要向其应用此 PKCS 证书的设备平台：
-    - **Outlook Web Access (OWA)**
-    - **Android for Work**
-    - **Android**
-    - Windows 10 及更高版本
-6. 在“配置文件类型”下拉列表中，选择“PKCS 证书”。
-7. 在“PKCS 证书”边栏选项卡上，配置以下设置：
-    - **续订阈值 (%)** - 指定设备请求续订证书之前剩余的证书生存期的百分比。
-    - 证书有效期 - 如果在发证 CA 上运行允许自定义有效期的 **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** 命令，可以指定在剩余多长时间后证书到期。<br>你可以指定比指定证书模板中的有效期小的值，但不能指定较大的值。 例如，证书模板中的证书有效期为 2 年，则你可以指定值 1 年，但不能指定值 5 年。 该值还必须小于发证 CA 证书的剩余有效期。
-    - 密钥存储提供程序(KSP) (Windows 10) - 指定证书密钥的存储位置。 可以选择下列值之一：
-        - 注册到受信任的平台模块(TPM) KSP (若有); 否则，注册到软件 KSP
-        - 注册到受信任的平台模块(TPM) KSP，否则失败
-        - 注册到 Passport，否则失败(Windows 10 及更高版本)
-        - 注册到软件 KSP
-    - 证书颁发机构 - Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关如何设置证书颁发机构的说明，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。 如果 CA 是在 Windows Server 2008 R2 上运行，必须[安装 KB2483564 中的修补程序](http://support.microsoft.com/kb/2483564/)。
-    - 证书颁发机构名称 - 输入证书颁发机构的名称。
-    - 证书模板名称 - 输入配置使用网络设备注册服务且已添加到发证 CA 的证书模板的名称。
-    请确保此名称与运行网络设备注册服务的服务器的注册表中所列证书模板名称之一完全匹配。 确保指定证书模板名称，而不是证书模板显示名称。 
-    若要查找证书模板的名称，请浏览到以下项：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP。 你将看到作为 **EncryptionTemplate**、**GeneralPurposeTemplate**和 **SignatureTemplate** 的值而列出的证书模板。 默认情况下，所有三个证书模板的值均为“IPSECIntermediateOffline”，映射到模板显示名称“IPSec (脱机请求)”。 
-    - 使用者名称格式 - 在列表中，选择 Intune 如何在证书请求中自动创建使用者名称。 如果证书用于用户，还可包含使用者名称中的用户电子邮件地址。 选择：
-        - 未配置
-        - 公用名称
-        - 包含电子邮件地址的公用名称
-        - 作为电子邮件地址的公用名称
-    - 使用者可选名称 - 指定 Intune 如何在证书请求中自动创建使用者可选名称 (SAN) 的值。 例如，你选择了用户证书类型，则可以在使用者可选名称中包括用户主体名称 (UPN)。 如果使用客户端证书向“网络策略服务器”进行身份验证，则要将使用者可选名称设置为 UPN。 
-    另外，也可以选择“自定义 Azure AD 属性”。 选择此选项后，将会显示另一个下拉字段。 在“自定义 Azure AD 属性”下拉字段中，有一个选项：“部门”。 选择此选项后，如果 Azure AD 中未标识部门，则不会颁发证书。 若要解决此问题，请标识部门并保存更改。 在设备下次签入时，问题将得到解决并将颁发证书。 ASN.1 是此字段使用的表示法。 
-    - 扩展密钥用法 (Android) - 选择“添加”，添加证书的使用目的值。 大多数情况下，证书将需要“客户端身份验证”以便用户或设备能够向服务器进行验证。 但，你可以根据需要添加任何其他密钥用法。 
-    - 根证书 (Android) - 选择之前配置并分配给用户或设备的根 CA 证书配置文件。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。 这是之前创建的受信任的证书配置文件。
-8. 完成后，返回“创建配置文件”边栏选项卡，然后单击“创建”。
-
-系统将创建配置文件并在“配置文件列表”边栏选项卡上显示。
-
-## <a name="how-to-assign-the-certificate-profile"></a>如何分配证书配置文件
-
-将证书配置文件分配给组之前，请注意以下几点：
-
-- 将证书配置文件分配给组时，将在设备上安装受信任的 CA 证书配置文件的证书文件。 设备使用 PKCS 证书配置文件来创建设备需要的证书。
-- 仅在运行创建配置文件时使用的平台的设备上安装证书配置文件。
-- 可以向用户集合或设备集合分配证书配置文件。
-- 若要在注册设备后向设备快速发布证书，请将证书配置文件分配给用户组（而不是设备组）。 如果分配给设备组，那么必须进行完整的设备注册，然后设备才能接收策略。
-- 尽管是单独分配每个配置文件，但仍需分配受信任的根 CA 和 PKCS 配置文件。 否则，PKCS 证书策略将失败。
-
-若要了解如何分配配置文件，请参阅[如何分配设备配置文件](device-profile-assign.md)。
+[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "导航到 Azure 门户中的 Intune 并为受信任的证书创建新的配置文件"
+[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "创建配置文件并上载受信任的证书"
+[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "从 Azure 门户下载证书连接器"

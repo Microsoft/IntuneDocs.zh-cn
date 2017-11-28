@@ -1,11 +1,11 @@
 ---
-title: "你的 Android 设备似乎已加密"
+title: "你的 Android 设备似乎已加密 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
-ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
+ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>你的 Android 设备似乎已加密，但公司门户将该设备识别为未加密
 
@@ -69,5 +69,7 @@ ms.lasthandoff: 10/13/2017
 
 无法在下列设备上解决此问题。 可能需要使用其他设备来访问公司资源。 
 
-- [华为 Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [华为 Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [OPPO 设备](http://www.oppo.com/en/smartphones)
+- [Vivo 设备](https://www.vivo.co.in)
 - [小米 Mi 智能手机](https://xiaomi-mi.com/mi-smartphones/)

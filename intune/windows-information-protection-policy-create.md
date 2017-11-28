@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -125,13 +125,13 @@ ms.lasthandoff: 10/04/2017
 
 ### <a name="before-you-begin"></a>在开始之前
 
-WIP Learning 是一个报表，用于监视 WIP 未知的应用。 未知应用指不是由组织的 IT 部门部署的应用。 在“隐藏覆盖”模式下强制执行 WIP 前，可从报告中导出这些应用并将其添加到 WIP 策略，以避免生产力中断。
+WIP Learning 是一个报表，用于监视 WIP 未知的应用。 未知应用指不是由组织的 IT 部门部署的应用。 在“块”模式下强制执行 WIP 前，可从报告中导出这些应用并将其添加到 WIP 策略，以避免生产力中断。
 
-对在允许的应用列表上具有相应应用的小组进行验证时，建议从“无提示”或“允许覆盖”开始。 完成后，可以更改为最后的强制策略“隐藏覆盖”。
+对在允许的应用列表上具有相应应用的小组进行验证时，建议从“无提示”或“允许覆盖”开始。 完成后，可以更改为最终的强制策略“块”。
 
 ### <a name="what-are-the-protection-modes"></a>什么是保护模式？
 
-#### <a name="hide-overrides"></a>隐藏覆盖
+#### <a name="block"></a>阻止
 WIP 将查找不正确的数据共享做法并阻止用户完成操作。 这包括在不受公司保护的所有应用中共享信息，以及在组织外部的其他人员和设备之间共享公司数据。
 
 #### <a name="allow-overrides"></a>允许覆盖

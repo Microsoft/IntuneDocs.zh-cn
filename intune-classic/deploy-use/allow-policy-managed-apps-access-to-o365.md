@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ad33ba7020f418f4894a689d5d66a74e4b8c10e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>仅允许支持 Intune 应用保护策略的移动应用访问 Office 365 服务
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 10/10/2017
 
 例如，通过仅允许 **Microsoft Outlook 应用**访问 Exchange Online，可以**阻止 iOS 和 Android 上的内置邮件应用**，这些应用不具有 Intune MAM 策略提供的数据保护，从而无法从 **Exchange Online** 获取电子邮件。 或者可以阻止不受 Intune MAM 支持的移动应用访问 **SharePoint Online**。
 
-下图说明了基于应用的条件性访问策略采用何种流程来确定何时允许或阻止访问：![显示是否允许访问时的各种必备条件的图表](../media/mam-ca-decision-flow_simple.png)。
+下图说明了基于应用的条件性访问策略采用何种流程来确定何时允许或阻止访问：![显示决定是否允许访问时的各种必备条件的图表](../media/mam-ca-decision-flow_simple.png)。
 
 图表中使用的缩写的说明：
 * **CP**：公司门户应用
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/10/2017
 * **EAS**：Exchange Active Sync
 
 ## <a name="prerequisites"></a>先决条件
-创建基于应用的条件性访问策略**之前**，必须具有**“企业移动性 + 安全性”或 Azure Active Directory Premium 订阅**，且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)。
+创建基于应用的条件性访问策略之前，必须具有“企业移动性 + 安全性”或 Azure Active Directory Premium 订阅，且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 
 ## <a name="supported-apps"></a>受支持的应用
@@ -55,7 +55,7 @@ ms.lasthandoff: 10/10/2017
 >[!IMPORTANT]
 >对于 Android 设备，必须通过登录到 OneDrive 应用或 Outlook 应用完成初始设备注册。 在没有注册的情况下，适用于 Android 的 OneNote 应用尚不支持 MAM。
 
-若要了解应用具有基于应用的条件性访问策略时的用户使用体验如何，请参阅[将应用与 MAM CA 结合使用时预期会出现的情况](use-apps-with-mam-ca.md)。
+若要了解具有基于应用的条件性访问策略的应用的用户使用体验，请参阅[将应用与 MAM CA 结合使用时预期会出现的情况](use-apps-with-mam-ca.md)。
 
 
 ## <a name="next-steps"></a>后续步骤

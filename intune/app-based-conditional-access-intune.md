@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f3a3104c4381028cca69ba3e129f4a30287a8e32
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的条件性访问与 Intune 的协作
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 10/26/2017
 > [!NOTE]
 > 以下流程图结构可用于其他受管理的应用。
 
-![使用 Intune 的基于应用的条件访问流程图](./media/ca-intune-common-ways-3.png)
+![基于应用的条件性访问与 Intune 的协作流程图](./media/ca-intune-common-ways-3.png)
 
 1.  用户尝试从 Outlook 应用对 Azure AD 进行身份验证。
 

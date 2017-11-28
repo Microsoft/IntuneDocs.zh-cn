@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 68f9f6333cbe3e450027e64399e2c0375459f1ca
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="set-your-pin-or-password"></a>设置你的 PIN 或密码
 
@@ -28,9 +28,10 @@ ms.lasthandoff: 09/28/2017
 
 可以使用以下步骤设置 PIN 或密码。
 
-1.  点击**设置** &gt; **安全** &gt; **屏幕锁定** &gt; **密码**。
+1.  点击“设置” > “安全” > “屏幕锁定” > “密码”。
 
 2.  选择并确认新密码。
 
+对于某些设备，除了设置屏幕密码以外，还需设置启动 PIN。 你可以尝试通过在设置应用中查找位置启用此选项来解决此问题。 例如，在 Samsung Galaxy S7 上，通过转到“设置” > “锁定屏幕和安全性” > “安全启动”启用“安全启动”。 请单击[此处](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise)，查看详细信息。 
 
 仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
