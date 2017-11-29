@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/6/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f7cc595655950ef1bf2586e939b6f02e270e7afc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: f4fd810529732d2b24b948eb0ae741d37e0fb59e
+ms.sourcegitcommit: d64b03bff0566f08d88ecb488dd48f19af74cab3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="the-early-edition-for-microsoft-intune---november-2017"></a>Microsoft Intune 的早期版本 - 2017 年 11 月
+# <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Microsoft Intune 的早期版本 - 2017 年 12 月
 
 早期版本提供了一份即将发布的 Microsoft Intune 版本中将出现的功能列表。 此信息的提供具有条件限制，并且会不断变化。 请不要与公司外部共享此信息。 此处列出的某些功能有无法按期发布的风险并可能推迟到以后的版本。 正在以试验模式（外部测试）测试其他功能，以确保它们可立即供客户使用。 如果有任何问题或顾虑，请与 Microsoft 产品组联系人联系。
 
@@ -39,7 +39,102 @@ ms.lasthandoff: 11/08/2017
 
 ## <a name="intune-in-the-azure-portal"></a>Azure 门户中的 Intune
 
+### <a name="app-protection-policies-----679615---"></a>应用保护策略<!-- 679615 -->
+Intune 应用保护策略将提供创建默认全局策略的功能，以便快速对整个租户中所有用户启用保护。
 
+### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>撤销 iOS 批量采购计划应用<!-- 820863 -->
+对于具有一个或多个 iOS 批量采购计划 (VPP) 应用的给定设备，你将能够撤销相关的基于设备的应用许可证。 撤销应用许可证将不会从设备中卸载相关的 VPP 应用。 若要卸载 VPP 应用，必须将分配操作更改为“卸载”。 有关详细信息，请参阅[如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用](vpp-apps-ios.md)。
+
+### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>撤销 iOS 批量采购计划令牌的许可证<!-- 820870 -->
+你将能够撤销给定 VPP 令牌的所有 iOS 批量采购计划 (VPP) 应用的许可证。
+
+### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>删除 iOS 批量采购计划令牌<!-- 820879 -->
+你将能够使用控制台删除 iOS 批量采购计划 (VPP) 令牌。 当你有重复的 VPP 令牌实例时，可能需要执行此操作。
+
+### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>网络访问控制 (NAC) 设备签入报告<!-- 1232250 -->
+在此次更改之前，IT 管理员无法从 Intune 方面确定 NAC 管理的设备是否与其 NAC 解决方案进行通信。 当 NAC 管理的设备没有与其 NAC 解决方案进行通信时，该设备被 NAC 解决方案视为不合规，因此被 NAC 解决方案自身阻止，随后又被依赖于设备合规状态的条件访问策略阻止。
+
+通过此次更改，IT 管理员可以看到哪些 NAC 管理的设备已经成功地与它们的 NAC 解决方案进行通信。 这项新功能包括两个新的监控功能（位于 Intune 内的设备合规工作负载中），统计信息如下所示：
+- 过去一小时内的平均 NAC 调用
+- 上次 NAC 传入请求（日期/时间）
+
+### <a name="new-ios-device-action------1244701---"></a>新的 iOS 设备操作<!-- 1244701 -->
+你可以关闭 iOS 10.3 监督的设备。 此操作会立即关闭设备，而不会向最终用户发出警告。 当你在“设备”工作负载中选择设备时，可以在设备属性中找到“关闭（仅监督）”操作。
+
+### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>现已支持 Palo Alto VPN<!-- 1333680 eeready -->
+配置基础 VPN 时，“连接类型”列表将包括 Palo Alto VPN。
+
+### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>SCEP 和 PFX 证书处理的多个连接器支持<!-- 1361755 eeready -->
+使用本地 NDES 连接器为设备提供证书的客户将能够在单个租户中配置多个连接器。
+
+这项新功能支持以下方案：
+
+- 高可用性
+
+    每个 NDES 连接器从 Intune 中拉取证书请求。  如果一个 NDES 连接器脱机，另一个连接器可以继续处理请求。
+
+### <a name="new-automatic-redeployment-setting----1469168---"></a>新的自动重新部署设置<!-- 1469168 -->
+此设置允许具有管理权限的用户在设备锁定屏幕上使用“CTRL + Win + R”删除所有用户数据和设置。 将自动重新配置该设备并将其重新注册到管理体系中。
+
+该设置可以在“Windows 10”->“设备限制”->“常规”->“自动重新部署”中找到。
+
+### <a name="install-office-apps-on-macos-devices----1494311---"></a>在 macOS 设备上安装 Office 应用<!-- 1494311 -->
+你将能够在 macOS 设备上安装 Office 应用。 这个新的应用类型将允许你安装 Word、Excel、PowerPoint、Outlook 和 OneNote。 这些应用也随 Microsoft AutoUpdater (MAU) 一起提供，以帮助保持应用处于安全和最新状态。
+
+### <a name="surface-hub-resource-account-supported----1566442-eeready---"></a>支持的 Surface Hub 资源帐户<!-- 1566442 eeready -->
+将添加新的设备操作，以便管理员可以定义和更新与 Surface Hub 关联的资源帐户。
+
+资源帐户由 Surface Hub 用于通过 Skype/Exchange 进行身份验证，以便它可以加入会议。 可以创建一个唯一的资源帐户，以使 Surface Hub 作为会议室出现在会议中。 例如，资源帐户可能会显示为“会议室 B41/6233”。 通常需要针对会议室位置以及何时需要更改其他资源帐户参数来配置 Surface Hub 的资源帐户（称为设备帐户）。
+
+如果管理员需要更新设备上的资源帐户，他们必须提供与该设备关联的当前 Active Directory/Azure Active Directory 凭据。 如果为设备启用了密码轮换，则管理员必须转到 Azure Active Directory 以查找密码。
+
+> [!NOTE]
+> 所有字段都会向下发送到一个包中，覆盖之前配置的所有字段。 空字段也会覆盖现有字段。
+
+以下是管理员可以配置的设置：
+
+- 资源帐户  
+
+   -  Active Directory 用户  
+   域名\用户名或用户主体名称 (UPN)：user@domainname.com
+   - **密码**
+
+
+- 可选的资源帐户参数（必须使用指定的资源帐户设置）
+   -  密码轮换期间  
+     出于安全原因，确保帐户密码每周由 Surface Hub 自动更新。 在启用此功能之后，要配置任何参数，Azure Active Directory 中的帐户必须先进行密码重置。
+
+   - SIP（会话初始协议）地址    
+     仅在自动发现失败时使用。
+
+   - 电子邮件    
+     设备/资源帐户的电子邮件地址。
+
+   - Exchange Server    
+     仅在自动发现失败时需要。
+
+   - 日历同步    
+     指定是否启用日历同步和其他 Exchange Server 服务。 例如：会议同步。
+
+### <a name="intune-now-provides-the-account-move-operation-----1573558-1579830---"></a>Intune 现在提供帐户移动操作<!-- 1573558, 1579830 -->
+“帐户移动”将租户从一个 Azure 扩展单元 (ASU) 迁移到另一个。 “帐户移动”可用于两种由客户启动的情景，当你调用请求它的 Intune 支持团队时，也可以是 Microsoft 驱动的情景，其中 Microsoft 需要对后端服务进行调整。 在“帐户移动”期间，租户进入只读模式 (ROM)。 在 ROM 期间，注册、重命名设备、更新符合性状态等服务操作将失败。
+
+### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>新的 Windows Defender 安全中心 (WDSC) 设备配置文件设置<!-- 1335507 -->
+Intune 在名为“Windows Defender 安全中心”的端点保护下添加了一个新的设备配置文件设置部分。 IT 管理员可以配置最终用户能访问 Windows Defender 安全中心应用的哪些支柱。 如果 IT 管理员在 Windows Defender 安全中心应用中隐藏支柱，则与隐藏支柱相关的所有通知都不会显示在用户设备上。
+
+以下是管理员可以在 Windows Defender 安全中心设备配置文件设置中隐藏的支柱：
+- 病毒和威胁防护
+- 设备性能和运行状况
+- 防火墙和网络保护
+- 应用和浏览器控制
+- 产品系列选项
+
+IT 管理员还可以自定义用户接收的通知。 例如，你可以配置用户是接收由 WDSC 中的可见支柱生成的所有通知还是仅接收关键通知。 非关键通知包括 Windows Defender 防病毒活动的周期性摘要以及扫描完成时的通知。 所有其他通知被视为是关键通知。 另外，还可以自定义通知内容，例如，可以提供 IT 联系信息以嵌入用户设备上显示的通知。
+
+
+
+
+<!-- the following are present prior to 1712 -->
 ### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>使用内置应用类型将 Office 365 移动应用分配到 iOS 和 Android 设备<!-- 1332318 -->
 借助内置应用类型，可更轻松地创建 Office 365 应用并将其分配到管理的 iOS 和 Android 设备。 这些应用包括 Word、Excel、PowerPoint 和 OneDrive 等 Office 365 应用。 可将特定应用分配到应用类型并编辑应用信息配置。
 
