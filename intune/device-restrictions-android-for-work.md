@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 设备限制设置
 
@@ -78,6 +78,13 @@ ms.lasthandoff: 10/20/2017
 - **防止重用以前的密码** - 在重用旧密码前，必须输入已使用的新密码的数字（从 **1**-**24**）。
 - **指纹解锁** - 阻止最终用户使用设备指纹扫描程序以对其解锁。
 - **Smart Lock 和其他信任代理** - 允许在兼容的设备上控制 Smart Lock 功能。 如果设备处于可信位置（例如当它连接到特定蓝牙设备时，或者在 NFC 标记附近时），则使用此手机功能（有时称为信任代理）可以禁用或绕过设备锁屏界面密码。 可以使用此设置防止用户配置 Smart Lock。
+
+## <a name="system-security"></a>系统安全
+
+ - **对应用进行威胁扫描** - 强制为工作和个人配置文件启用“验证应用”设置。
+
+   > [!Note]  
+   > 此设置仅适用于 Android O 及更高版本的设备。 
 
 ## <a name="next-steps"></a>后续步骤
 

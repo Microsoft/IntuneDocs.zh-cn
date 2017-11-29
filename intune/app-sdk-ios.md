@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -95,6 +95,10 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
         > [!NOTE]
         > 要查找 `PATH_TO_LIB`，请选择文件 `libIntuneMAM.a`，并从“文件”菜单中选择“获取信息”。 复制并粘贴“信息”窗口中“常规”部分的“位置”信息（路径）。
 
+    将 `IntuneMAMResources.bundle` 资源包添加到项目中，方法是在“构建阶段”将此资源包拖放到“复制资源包”下面。
+
+    ![Intune App SDK iOS：复制资源包](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. 将以下 iOS 框架添加到项目：
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. 将 `IntuneMAMResources.bundle` 资源包添加到项目中，方法是在“构建阶段”将此资源包拖放到“复制资源包”下面。
-
-    ![Intune App SDK iOS：复制资源包](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. 如果移动应用在其 Info.plist 文件中定义了主要 Nib 或 Storyboard 文件，请剪切“Main Storyboard”或“Main Nib”字段。 在 Info.plist 中，使用以下键名称（若适用）在名为 **IntuneMAMSettings** 的新字典下方粘贴这些字段及其对应值：
+4. 如果移动应用在其 Info.plist 文件中定义了主要 Nib 或 Storyboard 文件，请剪切“Main Storyboard”或“Main Nib”字段。 在 Info.plist 中，使用以下键名称（若适用）在名为 **IntuneMAMSettings** 的新字典下方粘贴这些字段及其对应值：
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
     可以使用原始格式查看 Info.plist 文件（目的是查看键名称），方法是右键单击文档正文的任意位置，然后将查看类型更改为“显示原始键/值”。
 
-6. 选择每个项目目标的“功能”并启用“密钥链共享”开关，启用密钥链共享（如果尚未启用）。 需要启用 Keychain 共享才能继续执行下一步。
+5. 选择每个项目目标的“功能”并启用“密钥链共享”开关，启用密钥链共享（如果尚未启用）。 需要启用 Keychain 共享才能继续执行下一步。
 
   > [!NOTE]
     > 预配的配置文件需要支持新的 keychain 共享值。 keychain 访问组应支持通配符。 可通过以下方法进行验证：在文本编辑器中打开 .mobileprovision 文件，搜索 **keychain-access-groups**，确保其中包含通配符。 例如：
@@ -132,7 +131,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
     </array>
     ```
 
-7. 启用 keychain 共享后，请按照以下步骤创建单独的访问组，以便 Intune App SDK 可在其中存储数据。 可以使用 UI 或使用授权文件创建 keychain 访问组。 如果你使用 UI 创建密钥链访问组，请务必按照以下步骤操作：
+6. 启用 keychain 共享后，请按照以下步骤创建单独的访问组，以便 Intune App SDK 可在其中存储数据。 可以使用 UI 或使用授权文件创建 keychain 访问组。 如果你使用 UI 创建密钥链访问组，请务必按照以下步骤操作：
 
     1. 如果移动应用未定义任何 keychain 访问组，请将此应用的程序包 ID 添加为第一个组。
 
@@ -140,24 +139,23 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
     3. 将 `com.microsoft.adalcache` 添加到现有的访问组。
 
-        4. 将 `com.microsoft.workplacejoin` 添加到现有的访问组。
-            ![Intune App SDK iOS：密钥链共享](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK iOS：keychain 共享](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. 如果使用授权文件创建密钥链访问组，请在授权文件的密钥链访问组前面添加 `$(AppIdentifierPrefix)`。 例如：
+    4. 如果直接编辑权利文件，而不是使用上述 Xcode UI 创建密钥链访问组，则需要在密钥链访问组前加上 `$(AppIdentifierPrefix)`（Xcode 会自动处理此问题）。 例如：
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > 授权文件是一个 XML 文件，对于移动应用程序，XML 文件是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。
+    > 授权文件是一个 XML 文件，对于移动应用程序，XML 文件是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。 如果应用以前没有权利文件，则启用密钥链共享（步骤 6）后 Xcode 应已为应用程序生成了一个权利文件。
 
-8. 如果应用在其 Info.plist 文件中定义了 URL 方案，则为每个 URL 方案添加另一个具有 `-intunemam` 后缀的方案。
+7. 如果应用在其 Info.plist 文件中定义了 URL 方案，则为每个 URL 方案添加另一个具有 `-intunemam` 后缀的方案。
 
-9. 如果应用在其 Info.plist 文件中定义了文档类型，则使用 "com.microsoft.intune.mam." 前缀为每一项的“文档内容类型 UTI”数组添加每个字符串的重复项 。
+8. 如果应用在其 Info.plist 文件中定义了文档类型，则使用 "com.microsoft.intune.mam." 前缀为每一项的“文档内容类型 UTI”数组添加每个字符串的重复项 。
 
-10. 对于 iOS 9+ 上开发的移动应用，需要在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中包括应用传递到 `UIApplication canOpenURL` 的每个协议。 此外，对于每个列出的协议，添加新的协议，并对新协议追加 `-intunemam`。 你还必须在此数组中包括 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
+9. 对于 iOS 9+ 上开发的移动应用，需要在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中包括应用传递到 `UIApplication canOpenURL` 的每个协议。 此外，对于每个列出的协议，添加新的协议，并对新协议追加 `-intunemam`。 你还必须在此数组中包括 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
 
-11. 如果应用在其授权中定义了应用组，则将这些组作为字符串数组添加到 `AppGroupIdentifiers` 键下面的 **IntuneMAMSettings** 字典中。
+10. 如果应用在其授权中定义了应用组，则将这些组作为字符串数组添加到 `AppGroupIdentifiers` 键下面的 **IntuneMAMSettings** 字典中。
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>使用 Intune MAM 配置器工具
 
