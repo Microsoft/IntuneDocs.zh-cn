@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>设置对公司资源的访问
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/15/2017
 |![Azure AD 密码提示符。](./media/ios-0b-cp-enroll-1711.png)|输入你的密码，然后点击“登录”。|
 |![正在加载公司资源初始屏幕。](./media/ios-1-cp-enroll-1711.png)|等待加载完成。|
 |![条款和条件。](./media/ios-2-cp-enroll-1711.png)|阅读并接受所有条款和条件。|
-|![设置公司访问屏幕。 当前，管理和设置都需要解决方案。](./media/ios-3-cp-enroll-1711.png)|点击“管理你的设备”以开始执行使你的设备能够访问公司资源的过程。 如果现在无法执行这一过程，可以“推迟”此过程，但这也意味着将无法获取电子邮件、文档等资源。|
+|![设置公司访问屏幕。 当前，管理和设置都需要解决方案。](./media/ios-3-cp-enroll-1711.png)|点击“开始”以开始执行使你的设备能够访问公司资源的过程。 如果现在无法执行这一过程，可以“推迟”此过程，但这也意味着将无法获取电子邮件、文档等资源。|
 |![“我的公司可以看到什么信息”屏幕。](./media/ios-4-cp-enroll-1711.png)|通过点击底部的链接，可以详细了解你的公司可以看到的信息。 否则，点击“继续”。|
 |![“下一步是什么”屏幕。](./media/ios-5-cp-enroll-1711.png)|此屏幕介绍安装中的操作。 要完成此过程，将需要用到 Safari、设置应用和公司门户应用。 点击“下一步”。|
 |![在点击“下一步是什么”上的“下一步”后加载屏幕。](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/15/2017
 |![正在加载公司资源屏幕。](./media/ios-18-cp-enroll-1711.png)|等待加载完成。|
 |![选择公司门户应用中的设备类别。](./media/ios-19-cp-enroll-1711.png)|为你的设备选择最适合的类别。 这通常与拥有设备的用户以及该设备大部分时间所在的位置有关。|
 |![已选择类别。](./media/ios-20-cp-enroll-1711.png)||
-|![设备管理成功，现在需要更新设置。](./media/ios-21-cp-enroll-1711.png)|你已成功管理你的设备。 公司可能还需要你更新一些其他设置，例如，密码长度。 点击“更新设备设置”以继续。|
+|![设备管理成功，现在需要更新设置。](./media/ios-21-cp-enroll-1711.png)|你已成功管理你的设备。 公司可能还需要你更新一些其他设置，例如，密码长度。 点击“继续”以继续。|
 |![确认设备设置。](./media/ios-22-cp-enroll-1711.png)|公司门户将检查是否需要更新任何设置。|
 |![设置检查已完成，具有错误的 OS 版本](./media/ios-23-cp-enroll-1711.png)|公司门户将提供如何能够修复设置中存在的任何问题的说明。 修复完成后，点击“检查设置”。|
 |![确认设备设置加载屏幕](./media/ios-24-cp-enroll-1711.png)|你的设备将检查你的设置是否能够足够安全地访问公司资源。|
