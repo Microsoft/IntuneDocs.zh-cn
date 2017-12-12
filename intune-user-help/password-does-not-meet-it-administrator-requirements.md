@@ -14,11 +14,11 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 88d7ca7a73f32c90f589cd51b299350879914b69
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d6372efef833268dedf9e18e878fa66f1417a03d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>密码不符合公司支持人员的要求
 
@@ -46,4 +46,4 @@ PIN 或密码问题描述：
 
 - **密码不够复杂，无法满足要求**。 公司支持人员要求在密码中使用更复杂的字符。 尝试使用如数字、大写字母和类似 $、%和 # 等符号的字符。 这也适用于设备上的其他帐户，因此请务必检查任何其他工作帐户，以确保密码满足 IT 为设备设置的要求。
 
-如果在如何使密码符合要求的过程中遇到问题，请联系公司支持人员。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+如果在如何使密码符合要求的过程中遇到问题，请联系公司支持人员。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

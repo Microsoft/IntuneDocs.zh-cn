@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d96619693c879d7e3041b6554363bea58f6792a5
-ms.sourcegitcommit: 659fe1b08eb7f02bc7eaed6b9e21a95fa1ef45b0
+ms.openlocfilehash: fda300649da30dc7f41469804bc60eb5ca1703ae
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>如果拒绝“使用条款”，则取消注册设备
 
@@ -40,4 +40,4 @@ ms.lasthandoff: 10/03/2017
 
     现在即可卸载公司门户应用。
 
-仍需要帮助？ 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
+仍需要帮助？ 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。

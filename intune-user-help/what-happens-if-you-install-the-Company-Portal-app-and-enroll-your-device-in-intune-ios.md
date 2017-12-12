@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 653ccf642cdf2c157694cfbe7e27e225a9df2d6d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: acbf76d9d5c3981da00b9224f391222ae2f73988
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>如果安装公司门户应用并在 Intune 中注册 iOS 设备后会怎样？
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 11/08/2017
 
 -   处于漫游模式下时，在设备上启用或禁用自动文件同步。 如果允许自动文件同步，则可能会产生漫游费用。
 
-如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

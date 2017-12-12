@@ -14,11 +14,11 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a92a64cdb94376991dfe8bea2e928316201b566
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 852d960e39e35d9399a6a47d550cf97fc5581818
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>使用合适的密码确保设备更安全
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 09/28/2017
 3. 在“新密码”框中输入新密码，随后在“确认密码”框中再次输入该密码。
 4. 选择“完成”。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

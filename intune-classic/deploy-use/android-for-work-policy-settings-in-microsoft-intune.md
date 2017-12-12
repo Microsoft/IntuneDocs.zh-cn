@@ -2,8 +2,8 @@
 title: "Android for Work 策略设置"
 description: "创建控制通过 Intune 管理的 Android for Work 设备上的设置及功能的策略。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e2a02676a129f3861c84c606610a20929275be5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 0938e4b788ef11a773854531f570e63809389fad
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 策略设置
 

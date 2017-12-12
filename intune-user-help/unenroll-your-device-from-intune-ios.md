@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a52fdb4ae866722191dfbd176c8d2e6eb0747bb4
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: b22af8fca323e722f67e54b3c01493c8ab5f27a4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>从 Intune 取消注册 iOS 设备
 
@@ -52,4 +52,4 @@ ms.lasthandoff: 11/15/2017
 
 -   仅针对电子邮件配置的设备将不再出现在公司门户应用或网站中。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

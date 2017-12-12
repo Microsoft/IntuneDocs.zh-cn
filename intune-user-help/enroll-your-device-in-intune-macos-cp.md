@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/08/2017
 > [!NOTE]
 > 可在[此处](enroll-your-device-in-intune-macos-legacy.md)查找有关在 macOS 早期版本上注册 macOS 设备的说明。
 
-1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com)。
+1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 
 2. 使用工作或学校帐户登录到公司门户网站。
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 11/08/2017
 
 11. Mac 随即开始注册到管理系统。 在此期间，系统可能会提示提供计算机的登录信息。 注册需要几分钟时间。 在此期间，可在计算机上执行其他操作。 完成公司访问设置后，会显示一条消息，通知操作已完成。
 
-仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com)中查找他们的联系信息。
+仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。

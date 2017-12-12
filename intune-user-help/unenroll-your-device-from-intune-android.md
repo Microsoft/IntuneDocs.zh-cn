@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 778ba1445361a15c43edf0d09f154750beacd3ad
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 1f7b67510faaafe79d0f05cfd8a75c9f5db4737b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>如何从 Intune 取消注册 Android 设备
 
@@ -38,4 +38,4 @@ ms.lasthandoff: 09/28/2017
 
   ![在操作菜单中选择新的“删除公司门户”选项后，将出现一个确认对话图像。 该对话将通知用户“删除公司门户，设备将不再由公司支持人员管理，并且可能删除对公司数据、公司应用和公司电子邮件的访问权限。” 然后，它会要求用户通过选择“是”确认删除“公司门户”应用。](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

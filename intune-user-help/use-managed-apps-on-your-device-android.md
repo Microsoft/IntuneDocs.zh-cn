@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6421d7161f0c2056ec4a00865e090026e7591de5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 5099e7e476477258267b2ae6c94f48693a6f0253
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 
@@ -72,4 +72,4 @@ IT 部门可能管理的常见应用程序有：
 
 -   Microsoft Word、Excel 和 PowerPoint
 
-有关设备上的托管应用的详细信息，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+有关设备上的托管应用的详细信息，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

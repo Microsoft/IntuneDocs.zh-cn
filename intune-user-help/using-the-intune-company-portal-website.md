@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6448e9986bdb98e21f3b9547ecbbf9b8c3ed8871
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司门户网站
-[公司门户网站](https://portal.manage.microsoft.com)是一个网页，最终用户可将其用于管理已在 Intune 中注册的计算机和设备。
+[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)是一个网页，最终用户可将其用于管理已在 Intune 中注册的计算机和设备。
 
 用户可从公司门户网站执行以下任务：
 
@@ -45,4 +45,4 @@ ms.lasthandoff: 09/28/2017
 
 -   远程管理电脑（仅适用于电脑）
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

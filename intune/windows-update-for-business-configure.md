@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>管理软件更新
 
@@ -80,7 +80,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 7. 在“**设置**”边栏选项卡上，配置以下信息：
     - **维护服务频道**：设置供设备接收 Windows 更新的频道（半年频道（定向）或半年频道）。
     - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
-    - **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
+    -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延迟期(天)** - 指定质量更新延迟的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 
@@ -94,8 +94,8 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
     **如果将维护服务频道设置为半年频道，将延迟期设置为 30 天**：假设功能更新 X 将于一月以半年频道形式在 Windows 更新上公开发布。 功能更新 X 将在四个月后（即 4 月份）发布到半年频道。 设备将在此半年频道发布后的 30 天后接收此功能更新，并将在 5 月进行更新。
 
-    - **传递优化** - 选择设备下载 Windows 更新的方式。 有关详细信息，请参阅 [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode)。
-8. 完成后，单击“**确定**”，然后在“**创建更新通道**”边栏选项卡上单击“**创建**”。
+    - **传递优化** - 选择设备下载 Windows 更新的方式。 有关详细信息，请参阅 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
+1. 完成后，单击“**确定**”，然后在“**创建更新通道**”边栏选项卡上单击“**创建**”。
 
 新的更新通道显示在更新通道列表中。
 

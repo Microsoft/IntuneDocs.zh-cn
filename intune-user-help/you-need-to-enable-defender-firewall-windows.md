@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a54f618cd03b2aed5a25cd65a7418a7908f513f2
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 4b619f0d42a88fb0cdc2f71c57c6ffeea4191d6e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>开启 Windows Defender 防火墙
 
@@ -30,4 +30,4 @@ ms.lasthandoff: 11/09/2017
 2. 打开“系统和安全” > “Windows Defender 防火墙”。
 3. 为域、专用网络和公用网络选择“自定义设置” > “打开或关闭 Windows 防火墙”。
 
-仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

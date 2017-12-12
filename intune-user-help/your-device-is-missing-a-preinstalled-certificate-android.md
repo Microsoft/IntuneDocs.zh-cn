@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 52070573560b798044c929b0fa9476cf1f7bbf89
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d6bd59800b13539558fbf56afab9fe5293f3e5bd
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>你的 Android 设备缺少通常随附安装在电话上的证书
 
@@ -42,9 +42,9 @@ ms.lasthandoff: 09/28/2017
 
 5. 关闭浏览器和公司门户应用。
 
-6. 重新打开公司门户应用。 现在应能够登录到公司门户应用。 如果仍然无法使用公司门户应用，请使用[公司门户网站](https://portal.manage.microsoft.com)上提供的信息，联系公司支持人员并获取进一步指示。
+6. 重新打开公司门户应用。 现在应能够登录到公司门户应用。 如果仍然无法使用公司门户应用，请使用[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上提供的信息，联系公司支持人员并获取进一步指示。
 
 >[!NOTE]
 > 如果安装此证书未解决问题，并且看到另一条“缺少证书”消息，则需要采取额外步骤来[安装缺少的证书](your-device-is-missing-an-IT-required-certificate-android.md)。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
