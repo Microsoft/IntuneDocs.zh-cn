@@ -5,7 +5,7 @@ keywords: SDK
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27725d28ac621bae9500d0e6639a82d6f033e4dc
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: f6a7df413cb8107e8dabc6e1de6ddabd441eaeca
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -35,6 +35,7 @@ Intune App SDK 包括下列文件：
 * **Microsoft.Intune.MAM.SDK.aar**：SDK 组件（Support.V4 和 Support.V7 JAR 文件除外）。 如果生成系统支持 AAR 文件，则此文件可以用于替代各个组件。
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**：在使用 Android v4 支持库的应用中启用 MAM 所需的接口。 需要此支持的应用必须直接引用该 JAR 文件。
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar**：在使用 Android v7 支持库的应用中启用 MAM 所需的接口。 需要此支持的应用必须直接引用该 JAR 文件。
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**：此 jar 包含 Android 系统类的存根，它们仅存在于较新的设备上，由 MAMActivity 中的方法引用。 较新的设备将忽略这些存根类。 仅当应用对从 MAMActivity 派生的类执行反射时，此 jar 才是必需的，而大多数应用无需包含它。 如果使用此 jar，则必须小心将其所有类从 ProGuard 中排除。 它们都将位于“android”根包下
 * **proguard.txt**：包含通过 ProGuard 进行构建时必须应用的 ProGuard 规则。
 * **CHANGELOG.txt**：提供每个 SDK 版本中所做的更改记录。
 * **THIRDPARTYNOTICES.TXT**：一个归属声明，用于确认将在应用中编译的第三方和/或 OSS 代码。
@@ -47,8 +48,7 @@ Intune App SDK 包括下列文件：
 
 ## <a name="requirements"></a>要求
 
-Intune App SDK 是已编译的 Android 项目。 因此，这在很大程度上不受应用用于其最低或目标 API 版本的 Android 版本的影响。 此 SDK 支持 Android API 19 (Android 4.4+) 到 Android API 25 (Android 7.1)。
-
+Intune App SDK 是已编译的 Android 项目。 因此，这在很大程度上不受应用用于其最低或目标 API 版本的 Android 版本的影响。 此 SDK 支持 Android API 19 (Android 4.4+) 到 Android API 26 (Android 8.0)。
 
 
 ### <a name="company-portal-app"></a>公司门户应用
@@ -88,7 +88,7 @@ Intune App SDK 需要更改应用的源代码才能启用 Intune 应用保护策
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>将类、方法和活动替换为其 MAM 等效项
 
-Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下表中列出的类的所有实例，并将它们替换为 Intune App SDK 等效项。
+Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下表中列出的类的所有实例，并将它们替换为 Intune App SDK 等效项。 其中大部分是应用类将继承的类，但是某些（例如 MediaPlayer）是应用使用而不派生的类。
 
 | Android 基类 | Intune App SDK 替换项 |
 |--|--|
@@ -103,7 +103,7 @@ Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下
 | android.app.LauncherActivity | MAMLauncherActivity |
 | android.app.ListActivity | MAMListActivity |
 | android.app.NativeActivity | MAMNativeActivity |
-| android.app.PendingIntent | MAMPendingIntent（请参阅以下注释） |
+| android.app.PendingIntent | MAMPendingIntent（请参阅[挂起意向](#pendingintent)） |
 | android.app.Service | MAMService |
 | android.app.TabActivity | MAMTabActivity |
 | android.app.TaskStackBuilder | MAMTaskStackBuilder |
@@ -114,9 +114,13 @@ Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下
 | android.content.BroadcastReceiver | MAMBroadcastReceiver |
 | android.content.ContentProvider | MAMContentProvider |
 | android.os.Binder | MAMBinder（仅当 Binder 不是从 Android 接口定义语言 (AIDL) 接口生成时才需要） |
+| android.media.MediaPlayer | MAMMediaPlayer |
+| android.media.MediaMetadataRetriever | MAMMediaMetadataRetriever |
 | android.provider.DocumentsProvider | MAMDocumentsProvider |
 | android.preference.PreferenceActivity | MAMPreferenceActivity |
 
+> [!NOTE]
+> 即使应用程序无需派生自己的 `Application` 类，[请参阅以下 `MAMApplication`](#mamapplication)
 
 ### <a name="microsoftintunemamsdksupportv4jar"></a>Microsoft.Intune.MAM.SDK.Support.v4.jar：
 
@@ -125,6 +129,7 @@ Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下
 | android.support.v4.app.DialogFragment | MAMDialogFragment
 | android.support.v4.app.FragmentActivity | MAMFragmentActivity
 | android.support.v4.app.Fragment | MAMFragment
+| android.support.v4.app.JobIntentService | MAMJobIntentService
 | android.support.v4.app.TaskStackBuilder | MAMTaskStackBuilder
 | android.support.v4.content.FileProvider | MAMFileProvider
 
@@ -132,14 +137,15 @@ Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下
 
 |Android 类 | Intune App SDK 替换项 |
 |--|--|
-|android.support.v7.app.ActionBarActivity | MAMActionBarActivity |
-
+|android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 
 ### <a name="renamed-methods"></a>重命名的方法
 
 
 在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（通常使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `onCreate()` 并调用 `super.onCreate()`）时，`Activity` 必须替代 `onMAMCreate()` 并调用 `super.onMAMCreate()`。 Java 编译器应强制执行最终限制，以防止意外替代原始方法（而不是 MAM 等效项）。
 
+### <a name="mamapplication"></a>MAMApplication
+由于 MAM SDK 中的约束，必须创建 `com.microsoft.intune.mam.client.app.MAMApplication` 的子类并将其设置为清单中使用的 `Application` 类的名称。 `MAMApplication` 是抽象类且要求替代 `byte[] getADALSecretKey`，请参阅该函数的 Javadoc 以获取有关如何实现它的详细信息。
 ### <a name="pendingintent"></a>PendingIntent
 必须使用 `MAMPendingIntent.get*` 方法，而不是 `PendingIntent.get*`。 此后，可正常使用得到的 `PendingIntent`。
 
@@ -256,6 +262,15 @@ boolean getIsManagedBrowserRequired();
 boolean getIsContactSyncAllowed();
 
 /**
+ * This method is intended for diagnostic/telemetry purposes only. It can be used to discover whether
+ * file encryption is in use. File encryption is transparent to the app, and the app should not need
+ * to make any business logic decisions based on this.
+ * 
+ * @return True if file encryption is in use.
+ */
+boolean diagnosticIsFileEncryptionInUse();
+
+/**
  * Return the policy in string format to the app.
  *  
  * @return The string representing the policy.
@@ -274,7 +289,8 @@ String toString();
 如果应用有其自己的 PIN 用户体验，则当 IT 管理员将 SDK 配置为提示输入应用 PIN 时，你可能要将其禁用。 若要确定 IT 管理员是否已为当前最终用户对此应用部署应用 PIN 策略，请调用以下方法：
 
 ```java
-MAMComponents.get(AppPolicy.class).getIsPinRequired();
+
+MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
 ### <a name="example-determine-the-primary-intune-user"></a>示例：确定主要 Intune 用户
@@ -312,9 +328,9 @@ public interface MAMUserInfo {
 若要确定是否强制执行策略，可进行以下调用：
 
 ```java
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
-```
+``````
 
 ... 其中 `service` 是下列 SaveLocation 之一：
 
@@ -344,13 +360,13 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocat
 ```java
 @Override
 public void onCreate() {
-    super.onCreate();
-    MAMComponents.get(MAMNotificationReceiverRegistry.class)
-        .registerReceiver(
-            new ToastNotificationReceiver(),
-            MAMNotificationType.WIPE_USER_DATA);
-    }
-```
+  super.onCreate();
+  MAMComponents.get(MAMNotificationReceiverRegistry.class)
+    .registerReceiver(
+      new ToastNotificationReceiver(),
+      MAMNotificationType.WIPE_USER_DATA);
+  }
+``````
 
 ### <a name="mamnotificationreceiver"></a>MAMNotificationReceiver
 
@@ -456,9 +472,8 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
     |--|--|
     | 颁发机构 | 已配置 AAD 帐户的所需环境 |
     | ClientID | 应用的 ClientID（注册应用时由 Azure AD 生成） |
-    | NonBrokerRedirectURI | 应用的有效重定向 URI，或 `urn:ietf:wg:oauth:2.0:oob`。 
-    。 <br><br> 请确保将值配置为应用的 ClientID 可接受的重定向 URI。
-   | SkipBroker | False |
+    | NonBrokerRedirectURI | 应用的有效重定向 URI，或默认情况下为 `urn:ietf:wg:oauth:2.0:oob`。 <br><br> 请确保将值配置为应用的 ClientID 可接受的重定向 URI。
+    | SkipBroker | False |
 
 
 3. **应用集成了 ADAL，但不支持代理身份验证/设备级 SSO：**
@@ -797,16 +812,15 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
   public static String getCurrentThreadIdentity();
 
-  /**
-   * Get the currently applicable app policy. Same as
-   * MAMComponents.get(AppPolicy.class). This method does
-   * not take the context identity into account.
+/**
+   * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy();
 
   /**
-  * Get the current app policy. This does NOT take the UI (Context) identity into account.
-   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
+  * Get the current app policy. This DOES take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use this function.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -929,7 +943,33 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
   如果请求的标识受托管（使用 `MAMPolicyManager.getIsIdentityManaged` 进行检查），但此应用无法使用该帐户（例如，因为必须首先在应用中设置帐户，如电子邮件帐户），则应拒绝标识切换。
 
+### <a name="preserving-identity-in-async-operations"></a>保留异步操作中的标识
+UI 线程上的操作通常将后台任务分派给另一线程。 多标识应用需要确保这些后台任务以适当标识进行操作，这种标识通常与分派它们的活动使用的标识相同。 MAM SDK 提供 `MAMAsyncTask` 和 `MAMIdentityExecutors`以便于帮助保留标识。
+#### <a name="mamasynctask"></a>MAMAsyncTask
 
+要使用 `MAMAsyncTask`，仅需从它而不是 AsyncTask 中继承，并分别用 `doInBackgroundMAM` 和 `onPreExecuteMAM` 替代 `doInBackground` 和 `onPreExecute`。 `MAMAsyncTask` 构造函数采用了活动上下文。 例如：
+
+```java
+  AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
+
+    @Override
+    protected Object doInBackgroundMAM(final Object[] params) {
+        // Do operations.
+    }
+    
+    @Override
+    protected void onPreExecuteMAM() {
+        // Do setup.
+    };
+```
+
+### <a name="mamidentityexecutors"></a>MAMIdentityExecutors
+`MAMIdentityExecutors` 允许使用 `wrapExecutor` 和 `wrapExecutorService` 方法将现有 `Executor` 或 `ExecutorService` 实例包装为保留标识的 `Executor`/`ExecutorService`。 例如
+
+```java
+  Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
+  ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
+```
 
   ### <a name="file-protection"></a>文件保护
 
@@ -1122,7 +1162,7 @@ public final class MAMDataProtectionManager {
 
 ### <a name="content-providers"></a>内容提供程序
 
-如果应用通过 **ContentProvider** 提供的是企业数据而不是 **ParcelFileDescriptor**，应用必须调用 `MAMContentProvider` 中的 `isProvideContentAllowed(String)` 方法，针对内容传递所有者标识的 UPN（用户主体名称）。 如果此函数返回 false，则此内容*可能不会*返回到调用方。 通过内容提供程序返回的文件描述符将自动基于文件标识进行处理。
+如果应用通过 **ContentProvider** 提供的是企业数据而不是 **ParcelFileDescriptor**，应用必须调用 `MAMContentProvider` 中的 `isProvideContentAllowed(String)` 方法，针对内容传递所有者标识的 UPN（用户主体名称）。 如果此函数返回 false，则此内容不得返回到调用方。 通过内容提供程序返回的文件描述符将自动基于文件标识进行处理。
 
 ### <a name="selective-wipe"></a>选择性擦除
 
@@ -1342,6 +1382,8 @@ public interface MAMAppConfig {
 
  Intune App SDK 中包括的 AndroidManifest.xml 文件包含 **MAMNotificationReceiverService**，它必须是导出的服务才能允许公司门户将通知发送到已启用应用。 服务会检查调用方以确保仅允许公司门户发送通知。
 
+### <a name="reflection-limitations"></a>反射限制
+某些 MAM 基类（例如 MAMActivity、MAMDocumentsProvider）包含使用仅在特定 API 级别之上的参数或返回类型的方法（基于原始 Android 基类）。 出于此原因，使用反射来枚举应用组件的所有方法并非始终都是可能的。 此限制并不仅限于 MAM，如果应用本身从 Android 的基类中实现了这些方法，那么同一限制也适用。
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK 使用者的期望
 
 Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实施而更频繁地触发失败条件。 这些 Android 最佳做法可减少发生失败的可能性：

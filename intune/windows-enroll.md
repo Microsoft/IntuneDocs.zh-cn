@@ -5,7 +5,7 @@ description: "启用适用于 Windows 设备的 Intune 移动设备管理 (MDM)�
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 11/08/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02563b85a6bcac12c60537af4a998b09bca3b6ee
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 0c4c245829a7819c9427a8ebe8ad9e166b58da97
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enroll-windows-devices"></a>注册 Windows 设备
 
@@ -78,6 +78,15 @@ Intune 管理员可通过以下方式简化注册：
 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。 在 Intune 边栏选项卡上，选择“**注册设备**” > “**Windows 注册**”。 在“指定一个已验证的域名”框中键入公司网站 URL，然后选择“测试自动检测”。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>告知用户如何注册 Windows 设备
-告诉用户如何注册其 Windows 设备以及在纳入管理之后会出现的情况。 有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)。 还可让用户查看 [IT 管理员可以在我的设备上看的什么](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)。
+告诉用户如何注册其 Windows 设备以及在纳入管理之后会出现的情况。
+
+> [!NOTE]
+> 最终用户必须通过 Microsoft Edge 访问公司门户网站，才能查看为特定版本的 Windows 分配的 Windows 应用。 Google Chrome、Mozilla Firefox 和 Internet Explorer 等其他浏览器不支持该类型的筛选。
+
+有关最终用户注册说明，请参阅[在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)。 还可让用户查看 [IT 管理员可以在我的设备上看的什么](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)。
 
 有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](end-user-educate.md)。
+
+## <a name="next-steps"></a>后续步骤
+
+- [在 Azure 上使用 Intune 管理 Windows 设备时的注意事项](/intune-classic/deploy-use/intune-on-azure.md)。

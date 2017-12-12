@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf0fc665ef70950b292241751d56122ebc9b0912
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ecb5a310e8b869deb493bc5554029d641ba419c3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
@@ -31,6 +31,7 @@ ms.lasthandoff: 09/15/2017
 * Intune 管理控制台中将显示已同步的应用，可以像分配所有其他应用那样分配这些应用。
 * 你可以跟踪可用许可证的数量以及正在 Intune 管理控制台中使用的许可证数量。
 * 如果可用许可证数量不足，Intune 将阻止应用的分配和安装。
+* 用户离开企业或管理员删除用户和用户设备时，由适用于企业的 Windows 应用商店托管的应用会自动撤销许可证。
 
 ## <a name="before-you-start"></a>开始之前
 

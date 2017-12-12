@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f928b214642c5954561f2c56b30b71b36ecd57eb
-ms.sourcegitcommit: 012f262660fa9fb321ac3470f5dba165b8e5256a
+ms.openlocfilehash: 16402b30895e61d9a4ff8393fd4d4c6efa061e9e
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>使用 Intune 的移动威胁防御集成
 
@@ -37,6 +37,22 @@ ms.lasthandoff: 10/05/2017
 连接器会在 Intune 和所选的移动威胁防御供应商之间创建信道，进而保护公司资源。 Intune 移动威胁防御合作伙伴为移动设备提供了直观且易于部署的应用程序，可出于报告或强制目的主动扫描和分析威胁信息与 Intune 共享。 
 
 例如，如果连接的移动威胁防御应用向移动威胁防御供应商报告，称你网络上的某电话当前连接到易受中间人攻击的网络，则此信息将进行共享并分类为相应的风险级别（中/低/高），然后可将该级别与 Intune 中配置的允许风险级别限额进行比较，确定设备受到威胁时是否应取消你对某些所选资源的访问。
+
+## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune 收集哪些数据用于移动威胁防御？
+
+Intune 从个人和公司所有的设备收集应用清单信息，这些信息可供移动威胁防御 (MTD) 提取，例如 Lookout for Work。 可通过 iOS 11+ 设备的用户收集应用清单。
+
+**应用清单**  
+清单（来自公司所有的 iOS 11+ 和个人所有的设备）将发送给 MTD 服务提供程序。 应用清单中的数据包括：
+
+ - 应用 ID
+ - 应用版本
+ - 应用内部版本号
+ - 应用程序名称
+ - 应用程序包大小
+ - 应用动态大小
+ - 应用是否经过验证
+ - 应用是否受管理
 
 ## <a name="sample-scenarios"></a>示例方案
 

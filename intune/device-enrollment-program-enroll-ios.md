@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: a10d158816f17c7fbe07fd14172d1a9abb9ed9b9
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -157,11 +157,11 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 ## <a name="sync-managed-devices"></a>同步托管设备
 Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步，以在 Azure 门户的 Intune 中查看托管设备。
 
-1. 在 Azure 门户中的 Intune 中，选择“设备注册” >  “Apple 注册” > “注册计划设备”。
-2. 在“注册计划设备”下，选择“同步”。
+1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划设备” > “Sync”。进度栏显示再次请求同步之前必须等待的时长。
 
   ![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/enrollment-program-device-sync.png)
-3. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
+  
+2. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
 
   ![选中“请求同步”链接的“同步”边栏选项卡屏幕截图。](./media/enrollment-program-device-request-sync.png)
 
@@ -170,7 +170,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
      -  任何同步请求都在 15 分钟内完成。 在此期间或在请求成功之前，“同步”按钮处于禁用状态。
      - Intune 每 24 小时与 Apple 同步一次新设备及已删除设备。
 
-4. 在“注册计划设备”工作区中，选择“刷新”以查看设备。
+3. 在“注册计划设备”工作区中，选择“刷新”以查看设备。
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>将注册配置文件分配到设备
 必须先向设备分配注册计划配置文件才能注册他们。
