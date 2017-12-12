@@ -14,11 +14,11 @@ ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7842d55eb6f43cf7ada47324f5d5846212630501
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: b66871ce4fa968e61152ffc99741a78a454f6579
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>在 iOS 设备上安装 Symantec Endpoint Protection Mobile
 
@@ -44,5 +44,5 @@ ms.lasthandoff: 11/14/2017
 
 有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试[从 App Store 手动安装 SEP Mobile](https://itunes.apple.com/app/sep-mobile/id695620821)。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 

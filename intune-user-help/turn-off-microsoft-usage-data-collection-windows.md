@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fb082ad8830a5d8e9ab0514a981c9bb4b02592b0
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 989d6ee7a40a06c4df6a5837539a3fc4d9bb7f08
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>如何关闭 Microsoft 数据收集
 
@@ -28,4 +28,4 @@ Microsoft 会自动收集我们产品和服务的某些相关数据。 这样做
 
 如果要在 Windows 设备上关闭用法数据收集，可在公司门户应用中查找“用法数据”设置。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

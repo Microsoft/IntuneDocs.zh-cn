@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c75d7bee46f87bf171d105b6ebbf1ec0636e32df
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 1df8203b48e87dc58874bd25f736b878cc5c4ce5
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>从 Intune 取消注册 Android 设备会发生什么情况？
 
@@ -40,4 +40,4 @@ ms.lasthandoff: 10/06/2017
 
 有关如何取消注册的说明，请参阅[通过使用公司门户应用从 Intune 取消注册设备](unenroll-your-device-from-intune-android.md)。
 
-需要帮助吗? 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
+需要帮助吗? 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。

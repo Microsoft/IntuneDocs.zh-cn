@@ -3,8 +3,8 @@ title: "适用于 Windows 10 的 Intune 设备限制设置"
 titlesuffix: Azure portal
 description: "了解可用来控制 Windows 10 设备上的设备设置和功能的 Intune 设置。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 

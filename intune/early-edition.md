@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ea734e83cfab3fff22c775764ac9814012d52b6
-ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
+ms.openlocfilehash: 35bf193563deb34ac59df245c622bbc011d80b76
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Microsoft Intune 的早期版本 - 2017 年 12 月
 
@@ -60,9 +60,6 @@ Intune 应用保护策略将提供创建默认全局策略的功能，以便快�
 
 ### <a name="new-ios-device-action------1244701---"></a>新的 iOS 设备操作<!-- 1244701 -->
 你可以关闭 iOS 10.3 监督的设备。 此操作会立即关闭设备，而不会向最终用户发出警告。 当你在“设备”工作负载中选择设备时，可以在设备属性中找到“关闭（仅监督）”操作。
-
-### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>现已支持 Palo Alto VPN<!-- 1333680 eeready -->
-配置基础 VPN 时，“连接类型”列表将包括 Palo Alto VPN。
 
 ### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>SCEP 和 PFX 证书处理的多个连接器支持<!-- 1361755 eeready -->
 使用本地 NDES 连接器为设备提供证书的客户将能够在单个租户中配置多个连接器。

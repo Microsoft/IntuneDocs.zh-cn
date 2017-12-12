@@ -14,11 +14,11 @@ ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 399a910e9aa2ad9fdd4ceefe446c637aa5076c12
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 4cfbcc84e77632ca17387b083f519b8a297e9503
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>解决移动威胁防御应用发现的威胁
 
@@ -38,5 +38,5 @@ ms.lasthandoff: 09/28/2017
 
 卸载该应用后，你能立即重新访问电子邮件和其他公司或学校数据。 如果忽略卸载该应用的请求，将无法对公司电子邮件和数据进行访问，直到卸载该应用。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 

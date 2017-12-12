@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2fe506fc871dd331240823deff5045d2ed5e4dd1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 19f121e8dc1f8604f4eee77f1a6da7d3b4d5496c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>如何在设备上查找序列号？
 
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/28/2017
 2. 点击“设置”应用，然后点击“常规”。
 3. 点击“关于”，然后滚动到“序列号”。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

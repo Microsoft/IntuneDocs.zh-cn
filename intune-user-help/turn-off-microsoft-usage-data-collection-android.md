@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e7375e6670c15fe186f5e77876e7b46f9021ad9d
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: a1289a934f2c6d295f7b59512190afc99d4f381e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>关闭 Microsoft 使用情况数据收集
 
@@ -28,4 +28,4 @@ Microsoft 会自动收集我们产品和服务的某些相关数据。 这样做
 
 如果要在 Android 设备上关闭该数据的收集，可在公司门户应用中打开“用法数据”设置。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

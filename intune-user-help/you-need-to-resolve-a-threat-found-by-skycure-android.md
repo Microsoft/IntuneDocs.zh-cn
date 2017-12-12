@@ -14,11 +14,11 @@ ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 341226bcc5ba3ca0b7f12aedeb137580a49b9f18
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 1fa368ad494ae60a9db5cbe32ce678ce6fd56c0d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解决 Symantec Endpoint Protection Mobile 发现的威胁
 
@@ -34,7 +34,7 @@ Symantec Endpoint Protection Mobile 在设备上发现潜在威胁，必须解�
 
 ![Skycure 错误消息以及指向公司门户网站的链接](./media/skycure-list-of-potential-issues-android.png)
 
-点击“**设备管理门户**”链接转到[公司门户网站](https://portal.manage.microsoft.com)，在该网站上你将会看到有关如何修复此问题的说明。
+点击“**设备管理门户**”链接转到[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)，在该网站上你将会看到有关如何修复此问题的说明。
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile 视为威胁的应用示例
 
@@ -44,5 +44,5 @@ Symantec Endpoint Protection Mobile 在设备上发现潜在威胁，必须解�
 
 卸载该应用后，便可以立即重新访问公司电子邮件和数据。 如果忽略卸载该应用的请求，你将无法对电子邮件和数据进行访问，直到卸载该应用。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 53bb84c3f2f9e8ee0c0bda419015ff35d1a51488
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 256f643eedcf833ce77c29b389d5e500322802e8
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>你的设备缺少必需的证书
 
@@ -38,4 +38,4 @@ ms.lasthandoff: 09/28/2017
 
 如果无法确认，则公司支持人员会[要求再安装一个证书以获取额外的安全性](your-device-is-missing-an-IT-required-certificate-android.md)。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

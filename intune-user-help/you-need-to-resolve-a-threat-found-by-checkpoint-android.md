@@ -1,5 +1,5 @@
 ---
-title: "解决 SandBlast Mobile Protect 在 Android 上发现的威胁 |Microsoft Docs"
+title: "解除 SandBlast Mobile Protect 在 Android 上发现的威胁 |Microsoft Docs"
 description: "了解如何解决 Mobile Protect 在 Android 上发现的威胁。"
 keywords: 
 author: barlanmsft
@@ -14,11 +14,11 @@ ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bcf23192829b5613b9245699cea47ffb85492f3
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 8a8a2d6669e1360ee033744120af415d7310c346
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>解决 SandBlast Mobile Protect 发现的威胁
 
@@ -30,7 +30,7 @@ SandBlast Mobile Protect 在设备上发现潜在威胁，必须解决该问题�
 
 如果已注册设备上存在病毒或其他安全威胁，用户尝试访问公司电子邮件或文件时，SandBlast Mobile Protect 会发出警告消息。
 
-点击“设备管理门户”链接转到[公司门户网站](https://portal.manage.microsoft.com)，可按照其中有关修复此问题的说明进行操作。
+点击“设备管理门户”链接转到[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)，可按照其中有关修复此问题的说明进行操作。
 
 ## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>被 SandBlast Mobile Protect 视为威胁的应用示例
 
@@ -38,4 +38,4 @@ SandBlast Mobile Protect 在设备上发现潜在威胁，必须解决该问题�
 
 此时可卸载该应用，随后即可立即重新访问公司电子邮件和数据。 如果不卸载该应用，则无法访问电子邮件和数据，直到卸载该应用。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

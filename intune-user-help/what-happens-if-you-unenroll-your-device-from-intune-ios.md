@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dfcb60d16a4412c66c81db53ed5bbc9dd2b46bba
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: b7568a658a655b5c061ced64449d17ee6f6053ae
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>从 Intune 取消注册 iOS 或 macOS 设备会发生什么情况？
 
@@ -42,4 +42,4 @@ ms.lasthandoff: 09/28/2017
 
 有关如何取消注册的说明，请参阅[从 Intune 取消注册设备](unenroll-your-device-from-intune-ios.md)。
 
-如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
