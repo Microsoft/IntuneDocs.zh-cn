@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b37ffd23f8cf8764ba457b0803dfc308cf1c071
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -58,14 +58,14 @@ ms.lasthandoff: 11/15/2017
 2. 单击“+新应用程序注册”。
 3. 输入显示名称，如 Jamf 条件访问。
 4. 选择“Web 应用/API”。
-5. 指定 Jamf pro 的登录 URL。
+5. 使用 Jamf Pro 实例 URL 指定登录 URL。
 6. 单击“创建应用程序”。
-7. 保存新创建的应用程序 ID，然后打开“所有设置” > “密钥”来创建新的应用程序密钥。 保存应用程序密钥。
+7. 保存新创建的“应用程序 ID”，然后打开“设置”并导航到”API 访问” > “密钥”以创建新的应用程序密钥。 输入描述、过期之前的时间，然后保存该应用程序密钥。 
 
-  > [!NOTE]
+  > [!IMPORTANT]
   > 应用程序密钥在此过程中仅显示一次。 请务必将其保存在可以轻松检索到它的地方。
 
-8. 导航到“所有设置” > “API 访问” > “所需权限”，然后删除所有权限。
+8. 打开“设置”，然后导航到“API 访问” > “所需权限”，删除所有权限。
 
   > [!NOTE]
   > 添加新的必要权限。 应用程序必须具有单个必需权限才能正常工作。
@@ -79,16 +79,20 @@ ms.lasthandoff: 11/15/2017
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>启用 Intune 以与 Jamf Pro 集成
 
-1. 在 Microsoft Azure 门户中，打开“Microsoft Intune” > “设备符合性” > “Jamf 的符合性连接器”。
+1. 在 Microsoft Azure 门户中，打开“Microsoft Intune” > “设备符合性” > “合作伙伴设备管理器”。
 2. 通过将应用程序 ID 粘贴到 Jamf Azure Active Directory 应用程序 ID 字段来启用 Jamf 的符合性连接器。
 3. 单击 **“保存”**。
 
-## <a name="configure-conditional-access-in-jamf-pro"></a>在 Jamf Pro 中配置条件访问
+## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中配置 Microsoft Intune 集成
 
-1. 在 Jamf Pro 中，导航到“全局管理” > “条件访问”。 单击“Microsoft”选项卡上的“编辑”按钮。
-2. 选中“通过 Microsoft 启用条件访问”复选框。
+1. 在 Jamf Pro 中，导航到“全局管理” > “条件访问”。 单击“Microsoft Intune 集成”选项卡上的“编辑”按钮。
+2. 选中“启用 Microsoft Intune 集成”复选框。
 3. 提供之前步骤中保存的有关 Azure 租户的必要信息，包括“位置”、“域名”、“应用程序 ID”和“应用程序密钥”。
 4. 单击 **“保存”**。 Jamf Pro 将测试设置并验证是否成功。
+
+## <a name="set-up-compliance-policies-and-register-devices"></a>设置符合性策略并注册设备
+
+完成 Intune 和 Jamf 之间的集成配置后，需要[将符合性策略应用到 Jamf 托管的设备](conditional-access-assign-jamf.md)。
 
 ## <a name="information-shared-from-jamf-pro-to-intune"></a>从 Jamf Pro 共享到 Intune 的信息
 

@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版设备限制设置
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/15/2017
 - 捕获屏幕（仅限 Samsung KNOX）- 让用户以图像形式捕获屏幕内容。
 - 语音助手（仅限 Samsung KNOX）- 允许在设备上使用语音助手软件。
 - YouTube（仅限 Samsung KNOX）- 允许在设备上使用 YouTube 应用。
-- 共享设备（仅限 Samsung KNOX）- 将托管的 Samsung KNOX 标准设备配置为共享。 在此模式下，最终用户可以使用其 Azure AD 凭据登录和注销设备。 该设备仍然受管，无论是否正在使用。<br>当最终用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销时，会清除所有应用数据。
+- 共享设备（仅限 Samsung KNOX）- 将托管的 Samsung KNOX 标准设备配置为共享。 在此模式下，最终用户可以使用其 Azure AD 凭据登录和注销设备。 该设备仍然受管，无论是否正在使用。<br>与 SCEP 证书配置文件一起使用时，此功能允许最终用户与所有用户共享具有相同应用集的设备，但使用其自己的 SCEP 用户证书。用户注销时，会清除所有应用数据。  此功能仅限于 LOB 应用。
 
 ## <a name="password"></a>Password
 

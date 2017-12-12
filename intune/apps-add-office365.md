@@ -1,5 +1,5 @@
 ---
-title: "使用 Intune 将 Office 365 专业增强版应用安装到 Windows 10 设备"
+title: "使用 Intune 将 Office 365 应用安装到移动设备"
 titlesuffix: Azure portal
 description: "了解如何使用 Intune 更轻松地在 Windows 10 设备上安装 Office 365 应用。"
 keywords: 
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版 2016 应用分配到 Windows 10 设备
 
-此应用类型使用户可以轻松地将 Office 365 专业增强版 2016 应用分配到所管理的运行 Windows 10 的设备。 还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的一个应用。
+此应用类型使用户可以轻松地将 Office 365 专业增强版 2016 应用分配到所管理的运行 Windows 10 的设备。 还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的单一条目。
 
 
 ## <a name="before-you-start"></a>开始之前
@@ -137,7 +137,3 @@ ms.lasthandoff: 09/15/2017
 ## <a name="next-steps"></a>后续步骤
 
 现在，可将应用分配到所选组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
-
-             
-
-
