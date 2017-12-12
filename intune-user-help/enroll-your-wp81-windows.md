@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7ac377cd3bc958440d191bd45ea5062acdb7647
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 30980072cfb1c98ab7755206b24497a356ebfff3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 中注册 Windows Phone 8.1 设备
 
@@ -84,4 +84,4 @@ ms.lasthandoff: 09/28/2017
 
 如果你的公司支持人员已将公司门户设置为在注册过程中进行安装，则你的应用列表中将显示公司门户。
 
-仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

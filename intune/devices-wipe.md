@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
+ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>通过恢复出厂设置或删除公司数据删除设备
 
@@ -39,7 +39,21 @@ ms.lasthandoff: 09/09/2017
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“设备和组”边栏选项卡上，选择“所有设备”。
 4. 选择要恢复出厂设置的设备名称。
-5. 在显示设备名称的边栏选项卡上，选择“恢复出厂设置”，然后选择“是”进行确认。
+5. 在显示设备名称的边栏选项卡上，选择“恢复出厂设置”
+6. 对于 Windows 10 版本 1709 或更高版本，有其他选项可“保留注册状态和用户帐户”。 
+    
+    |通过恢复出厂设置保留|不保留|
+    | -------------|------------|
+    |与设备关联的用户帐户|用户文件|
+    |计算机状态\(域加入，已加入 Azure Active Directory）| 用户安装的应用\(存储和 Win32 应用）|
+    |MDM 注册|非默认设备设置|
+    |OEM 安装的应用 \(存储和 Win32 应用）||
+    |用户配置文件||
+    |用户配置文件以外的用户数据||
+    |用户自动登录|| 
+    
+         
+7. 选择“是”确认恢复出厂设置。
 
 如果设备已打开并连接，恢复出厂设置命令会在 15 分钟内跨所有设备类型进行传播。
 

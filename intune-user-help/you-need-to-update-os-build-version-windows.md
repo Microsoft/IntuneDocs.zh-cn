@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 15e978d1407d5e09f26ba39d1fc87b01a671d5d7
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: e36330927fa6ce8b4edfc1fce984250af44bb6dc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="update-your-windows-10-device"></a>更新 Windows 10 设备
 
@@ -32,4 +32,4 @@ ms.lasthandoff: 11/09/2017
 
 如果你的 Windows 版本高于公司所支持的版本，则需要[尝试不同步骤来解决问题](your-windows-version-isnt-yet-supported.md)
 
-仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

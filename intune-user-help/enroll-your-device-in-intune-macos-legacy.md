@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 115f32989cfbb991e097404c5297e7997f28f796
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: f46d9cc4fad54415aeea8deaf1b8daa0c274c1dc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-legacy-macos-device-in-intune"></a>在 Intune 中注册旧版 macOS 设备
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/08/2017
 
 需要获取对你组织的应用、数据和资源的访问权限才能完成工作。 如果在工作中使用的是 macOS 设备，这意味着需要安装“管理配置文件”。 这只是一个由公司支持人员设置的文件，用于将设置和访问信息加载到 Mac 上。 想要了解更多信息？ 了解[安装公司门户应用并在 Intune 中注册设备会发生什么情况](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com)。
+1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 2. 使用工作或学校帐户登录到公司门户网站。
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -66,4 +66,4 @@ ms.lasthandoff: 11/08/2017
 
 某些配置文件可能显示为“未验证”；如果这些配置文件属于你的公司，那么这是正常现象。
 
-仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com)中查找他们的联系信息。
+仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。

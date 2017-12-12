@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a0fc18f3a0e4fa31d5cd7736e83af289a7cb8e52
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: df408217e8c9264921a60cb46fa3af7ecd434a24
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS 设备没有必需的最低操作系统版本
 
@@ -28,4 +28,4 @@ ms.lasthandoff: 09/28/2017
 
 通过点击“设置” > “常规” > “软件更新”，更新 iOS 设备。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

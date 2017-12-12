@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2afa9ef5fdd755e7722939288f3c3b1ad4dd722f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 494222330e06a1efc5a9ac6cb303b5d2c63d421e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-enable-secure-boot"></a>需启用安全启动
 
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/28/2017
 
 如果使用的是电脑，可以与公司支持人员联系，也可以参阅[禁用安全启动](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)页面中的“重新启用安全启动”部分，尝试自己启用安全启动。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

@@ -14,11 +14,11 @@ ms.assetid: eaccd9c0-cd46-48e2-8675-4c022c74f672
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b435156b89bf0ba55e83158c2c5ac62c590cdf4
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 32bd0436c6d883bb351a4e00bda181ab820a94d4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>需要解决 Zimperium zIPS 发现的威胁
 
@@ -30,7 +30,7 @@ Zimperium zIPS 在设备上发现潜在威胁，必须解决该问题才能重�
 
 如果已注册设备上存在病毒或其他安全威胁，用户尝试访问公司电子邮件或文件时，Zimperium zIPS 会发出警告消息，提示用户采取措施。
 
-点击“设备管理门户”链接转到[公司门户网站](https://portal.manage.microsoft.com)，可按照其中有关修复此问题的说明进行操作。
+点击“设备管理门户”链接转到[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)，可按照其中有关修复此问题的说明进行操作。
 
 ## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Zimperium zIPS 视为威胁的应用示例
 
@@ -38,4 +38,4 @@ Zimperium zIPS 在设备上发现潜在威胁，必须解决该问题才能重�
 
 此时可卸载该应用，随后即可立即重新访问公司电子邮件和数据。 如果不卸载该应用，则无法访问电子邮件和数据，直到卸载该应用。
 
-仍需要帮助？ 请与 IT 管理员联系。有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与 IT 管理员联系。有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

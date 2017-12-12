@@ -14,11 +14,11 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f4f878f6cd46c4ded709d833c799bb2d310adeb9
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: b5e96a1d43334c3f3392c4073e2939fee7504e62
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>解决 Lookout for Work 发现的威胁
 
@@ -34,7 +34,7 @@ Lookout for Work 在设备上发现潜在威胁，必须解决该问题才能重
 
 ![Lookout for Work 错误消息以及指向公司门户网站的链接](./media/mtd-go-to-device-management-portal-android.png)
 
-点击“**设备管理门户**”链接转到[公司门户网站](https://portal.manage.microsoft.com)，在该网站上你将会看到有关如何修复此问题的说明。
+点击“**设备管理门户**”链接转到[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)，在该网站上你将会看到有关如何修复此问题的说明。
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Lookout for Work 将其视为威胁的应用示例
 
@@ -44,4 +44,4 @@ Lookout for Work 在设备上发现潜在威胁，必须解决该问题才能重
 
 卸载该应用后，便可以立即重新访问公司电子邮件和数据。 如果忽略卸载该应用的请求，你将无法对电子邮件和数据进行访问，直到卸载该应用。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

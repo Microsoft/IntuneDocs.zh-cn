@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60705ebbbfca6e4a4e616855b280922d6a6fc7d6
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f1182685df954ecdc039be1fb2025723b55e2ccc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-computer-is-already-enrolled"></a>你的计算机已注册
 
@@ -36,4 +36,4 @@ ms.lasthandoff: 09/28/2017
 
 如果希望取消注册设备，请使用你拥有的设备类型的说明：[Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md) 或 [Windows](unenroll-your-device-from-intune-windows.md)。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

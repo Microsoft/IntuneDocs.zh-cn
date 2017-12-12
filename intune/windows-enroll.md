@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c4c245829a7819c9427a8ebe8ad9e166b58da97
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bf9ae5f05e21fa2ca7be4af08dace5b96315cec3
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-windows-devices"></a>注册 Windows 设备
 
@@ -89,4 +89,4 @@ Intune 管理员可通过以下方式简化注册：
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 Azure 上使用 Intune 管理 Windows 设备时的注意事项](/intune-classic/deploy-use/intune-on-azure.md)。
+- [在 Azure 上使用 Intune 管理 Windows 设备时的注意事项](/intune-classic/deploy-use/intune-on-azure)。

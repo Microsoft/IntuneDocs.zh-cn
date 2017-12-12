@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 525e2024246946c9fd9fadefbe42d10dee5c2932
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 13f284c62e1232a560ec9e5186de4055d616ef3a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>在电信费用管理中注册 iOS 设备
 
@@ -63,4 +63,4 @@ ms.lasthandoff: 09/28/2017
 
 注册后，即可开始在 Datalert 应用中看到数据的使用情况。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
