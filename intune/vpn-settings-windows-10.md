@@ -3,8 +3,8 @@ title: "适用于 Windows 10 设备的 Intune VPN 设置"
 titlesuffix: Azure portal
 description: "了解可用于在 Windows 10 设备上配置 VPN 连接的 Intune 设置。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/20/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6de18a341f684730c74aa824c0ae8f7bdca1a4f8
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 54ff681c96dc01587cd9a2770dacc5bb9a54d134
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的 VPN 设置
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 11/02/2017
 - **Check Point Capsule VPN**
 - **Citrix VPN**
 - **Dell SonicWALL Mobile Connect**
-- **F5 Edge Client**
+-  **F5 Edge Client**
 - **IKEv2**
 - **L2TP**
 - **PPTP**

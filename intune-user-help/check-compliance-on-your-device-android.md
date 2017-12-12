@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2692bc1e6652d5290afd577247344762e5bcb91a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: b1836b0b910d597a78e936e6ac1ba7956fe3fe19
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="check-compliance-on-your-android-device"></a>在 Android 设备上检查合规性
 
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/28/2017
 
 2. 点击“检查合规性”。
 
-如果无法重置丢失或被盗的设备，请让公司支持人员为你重置。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+如果无法重置丢失或被盗的设备，请让公司支持人员为你重置。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

@@ -2,8 +2,8 @@
 title: "Windows 协同版配置策略设置"
 description: "使用 Microsoft Intune **Windows 10 协同版常规配置策略**可为已注册的 Windows 10 协同版设备（如 Microsoft Surface Hub）配置设置。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 470394c715ba33fd6cd3517ce2815279090a42f0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6cc7b187d6e3c54da588f6cc7579232c792821b0
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-team-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 协同版配置策略设置
 
