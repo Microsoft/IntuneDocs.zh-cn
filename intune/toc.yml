@@ -552,6 +552,8 @@
   items:
     - name: 帮助用户排查问题
       href: help-desk-operators.md
+    - name: Intune 活动的审核日志
+      href: monitor-audit-logs.md
     - name: 使用 Intune 数据仓库
       href: reports-nav-create-intune-reports.md
       items:
