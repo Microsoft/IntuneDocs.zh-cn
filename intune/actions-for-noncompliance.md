@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3adc3c01d4657accfdb5cd70970ff191d06a9aef
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 85eb19a07ce42dcaf61ce34637644761880cb0b9
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="automate-actions-for-noncompliance"></a>针对不符合设备的自动操作
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 10/23/2017
 
 有两种类型的操作：
 
--   **通过电子邮件通知最终用户**：可在向最终用户发送电子邮件通知之前，事先对其进行自定义。 Intune 提供对主题、邮件正文的自定义，包括公司徽标、联系人信息和其他收件人。
+-   **通过电子邮件通知最终用户**：可在向最终用户发送电子邮件通知之前，事先对其进行自定义。 Intune 提供对主题、邮件正文的自定义，包括公司徽标和联系人信息。
 
 -   **将设备标记为不符合**：可在设备被标记为不符合之后的几天内确定计划。 这可以即刻执行，但也可以给予用户宽限期，等待其设备满足设备符合性策略。
 

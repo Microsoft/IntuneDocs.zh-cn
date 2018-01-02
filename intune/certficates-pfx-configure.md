@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
-ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
+ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>使用 Intune 配置和管理 PKCS 证书
 
@@ -101,22 +101,20 @@ ms.lasthandoff: 11/16/2017
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 导航到“Intune”、“设备配置”、“证书颁发机构”，然后单击“下载证书连接器”。
-   * 将下载的文件保存到可以在服务器上进行访问的位置，将在该服务器上安装该应用程序。
-3. 登录到将要安装 Microsoft Intune 证书连接器的服务器。
-4. 运行安装程序并接受默认位置。 它将连接器安装到 C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe。
+1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
+2. 在“Intune”边栏选项卡上，选择“设备配置”。 
+3. 在“设备配置”边栏选项卡上，选择“证书颁发机构”。 
+4. 单击“添加”，并选择“下载连接器文件”。 将下载的文件保存到可以从服务器上进行访问的位置，将在该服务器上安装该应用程序。 
+5.  登录到将要安装 Microsoft Intune 证书连接器的服务器。
+6.  运行安装程序并接受默认位置。 它将连接器安装到 C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe。
+    1. 在“安装程序选项”页上选择“PFX 分发”，然后单击“下一步”。
+    2. 单击“安装”并等待安装完成。
+    3. 在完成页上，选中标记为“启动 Intune 连接器”的框，然后单击“完成”。
+7.  现在将出现 NDES 连接器窗口，显示“注册”选项卡。要启用对 Intune 的连接，请单击“登录”并提供具有管理权限的帐户。
+8.  在“高级”选项卡上，可以保持单选按钮“使用此计算机的系统帐户（默认）”的选中状态。
+9.  单击“应用”，然后单击“关闭”。
+10. 现在将返回到 Azure 门户。 几分钟后，在“Intune” > “设备配置” > “证书颁发机构”中，应该能够在“连接状态”下看到绿色的复选标记和“活动”一词。 这一确认可以让你知道你的连接器服务器可以与 Intune 通信。
 
-      a. 在“安装程序选项”页上选择“PFX 分发”，然后单击“下一步”。
-
-   b。 单击“安装”并等待安装完成。
-
-   c. 在完成页上，选中标记为“启动 Intune 连接器”的框，然后单击“完成”。
-
-5. 现在将出现 NDES 连接器窗口，显示“注册”选项卡。若要启用对 Intune 的连接，必须单击“登录”并提供具有管理权限的帐户。
-6. 在“高级”选项卡上，可以保持单选按钮“使用此计算机的系统帐户（默认）”的选中状态。
-7. 单击“应用”，然后单击“关闭”。
-8. 现在将返回到 Azure 门户。 在“Intune”、“设备配置”、“证书颁发机构”下，在几分钟后，应该能够在“连接状态”下看到绿色的复选标记和“活动”一词。 这一确认可以让你知道你的连接器服务器可以与 Intune 通信。
 
 ## <a name="create-a-device-configuration-profile"></a>创建设备配置配置文件
 
@@ -169,4 +167,4 @@ ms.lasthandoff: 11/16/2017
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "导航到 Azure 门户中的 Intune 并为受信任的证书创建新的配置文件"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "创建配置文件并上载受信任的证书"
-[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "从 Azure 门户下载证书连接器"
+[ConnectorDownload]: ./media/certificates-download-connector.png "从 Azure 门户下载证书连接器"  
