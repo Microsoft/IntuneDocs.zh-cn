@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用托管设备完成工作
 Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板电脑和电脑）、应用和电子邮件等其他公司资源的软件。 这样员工可以在几乎任何地方从几乎任意设备访问其工作信息，并且还能保护公司信息安全。
@@ -34,7 +34,7 @@ Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板
 你可通过两种不同方式获取公司门户：
 
 - 通过在设备上安装公司门户应用。 通常通过在设备上转到应用商店，可以获取公司门户应用，但公司支持人员也可为你安装公司门户应用。
-- 通过转到公司支持人员设置的[公司门户网站](https://portal.manage.microsoft.com)。
+- 通过转到公司支持人员设置的[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>应用和网站之间的有什么区别？
 公司门户应用和公司门户网站存在一些细微差别，但你可以在两者上执行大部分相同任务。 可以执行的任务有：
@@ -60,8 +60,9 @@ Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板
 若要了解公司支持人员在你的设备上可以看到和不可以看到的内容，请使用与你正在使用的设备类型匹配的链接：
 
 - [安装 Android 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [安装 iOS 和 macOS 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [安装 Windows 版公司门户应用](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [安装 iOS 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [安装 macOS 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [安装 Windows 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>可将何种计算机或设备添加到公司门户？
 -   使用 iOS（例如 iPhone 和 iPad）和 macOS（例如 MacBook 和 iMac）的 Apple 设备
@@ -78,7 +79,8 @@ Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板
 将计算机或设备从公司门户中删除时，将从 Intune 取消注册设备。 一旦取消注册，你将无法再从该设备访问公司门户，并且可能会从设备中删除某些公司数据。 如要查看如何从公司门户中删除设备，请选择以下链接之一：
 
 - [取消注册 Android 设备](unenroll-your-device-from-intune-android.md)
-- [取消注册 iOS 或 macOS 设备](unenroll-your-device-from-intune-ios.md)
+- [取消注册 iOS 设备](unenroll-your-device-from-intune-ios.md)
+- [取消注册 macOS 设备](unenroll-your-device-from-intune-macos.md)
 - [取消注册 Windows 设备](unenroll-your-device-from-intune-windows.md)
 
 *重置*计算机或设备后，公司门户会尝试将计算机或设备重置回制造商的默认设置。 重置设备将从设备删除所有公司和个人数据！ 如果设备丢失，还可在公司门户网站上远程重置。
@@ -95,6 +97,7 @@ Microsoft 建议首先尝试自己解决问题。 对于 Intune 支持的每个�
 
 - [解决 Android 设备的常见问题](troubleshoot-your-device-android.md)
 - [解决 iOS 设备的常见问题](troubleshoot-your-device-ios.md)
+- [解决 macOS 设备的常见问题](troubleshoot-your-device-macos.md)
 - [解决 Windows 设备的常见问题](troubleshoot-your-device-windows.md)
 
-你可以在底部发表评论请求帮助，但是由于每个组织的需求不同，所以我们可能无法回答你的每一个问题。 向公司支持人员寻求帮助可能是获得最快和最相关回复的好方法。 [公司门户网站](https://portal.manage.microsoft.com)应该会提供他们的联系信息。
+你可以在底部发表评论请求帮助，但是由于每个组织的需求不同，所以我们可能无法回答你的每一个问题。 向公司支持人员寻求帮助可能是获得最快和最相关回复的好方法。 [公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)应该会提供他们的联系信息。

@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 376236634ba9579e6496fa252c6a3638197fbcb9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bdb89d3426bd2dd040b184c8f7c23397bbed576b
+ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -28,7 +28,10 @@ ms.lasthandoff: 12/01/2017
 作为 Intune 管理员，可创建和管理注册限制，这些限制可以定义注册接受 Intune 的管理的设备数量和类型。 可创建多个限制并将其应用于不同用户组。 可为不同限制设置[优先级顺序](#change-enrollment-restriction-priority)。
 
 >[!NOTE]
->注册限制不是安全功能。 遭到入侵的设备可能会误报字符。 这些限制是针对非恶意用户的最合适的障碍。 
+>注册限制不是安全功能。 遭到入侵的设备可能会误报字符。 这些限制是针对非恶意用户的最合适的障碍。
+
+>[!NOTE]
+>下面所述的组分配注册限制和优先级功能即将在 Intune 客户群间推出。 此次推出完成之前，你可能无权访问组和优先级功能。 
 
 可创建的特定注册限制包括：
 

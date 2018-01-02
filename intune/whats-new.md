@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/06/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3e17a932eb77d5b5917c18e4383cbbfb2aeb539
-ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
+ms.openlocfilehash: a7edb2137051f4b0f70ebd59835ae1219f95ceba
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/02/2017
 了解 Microsoft Intune 每周新增功能。 另外，你还可以找到[即将发生的更改](#whats-coming)、有关服务的[重要说明](#notices)，以及有关[过去版本](whats-new-archive.md)的信息。
 
 > [!Note]
-> 许多功能最终将支持带 Configuration Manager 的混合客户部署。 有关新的混合功能的详细信息，请查看[混合新增功能页](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
+> 有关混合移动设备管理 (MDM) 中新功能的信息，请参阅[混合新增功能页面](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
 
 
 <!-- Common categories:  
@@ -41,6 +41,16 @@ ms.lasthandoff: 12/02/2017
   ### Monitor and troubleshoot
 
 -->   
+
+
+
+## <a name="week-of-december-4-2017"></a>2017 年 12 月 4 日当周
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="intune-supports-windows-information-protection-wip-denied-apps----1479103---"></a>Intune 支持 Windows 信息保护 (WIP) 拒绝的应用<!-- 1479103 -->
+可在 Intune 中指定已拒绝的应用。 如果某个应用被拒，它会被阻止访问公司信息，允许的应用列表则与此相反。 有关详细信息，请参阅 [Recommended deny list for Windows Information Protection](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp?f=255&MSPPError=-2147217396#recommended-deny-list-for-windows-information-protection)（Windows 信息保护的推荐拒绝列表）。
+
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日当周
 
@@ -117,12 +127,31 @@ Intune 从个人和公司所有的设备收集应用清单信息，这些信息�
 
 ### <a name="device-management"></a>设备管理
 
+#### <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone----1463747-wnready---"></a>将混合 MDM 用户及其设备迁移至 Intune 独立版<!-- 1463747 wnready -->
+现有新的流程和工具可用于将混合 MDM 的用户及其设备迁移至 Azure 门户中的 Intune，这可让你执行以下操作：
+- 将 Configuration Manager 控制台中的策略和配置文件复制到 Azure 门户中的 Intune
+- 将一部分用户移至 Azure 门户中的 Intune，同时将剩余用户保留在混合 MDM 中
+- 将设备迁移至 Azure 门户中的 Intune，而无需重新注册这些设备
+ 
+有关详细信息，请参阅[将混合 MDM 用户及其设备迁移至 Intune 独立版](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)。
+
+#### <a name="on-premises-exchange-connector-high-availability-support-----676614---"></a>本地 Exchange 连接器高可用性支持 <!-- 676614 -->
+现可拥有用于本地 Exchange 连接器的多个客户端访问服务器 (CAS) 角色。 例如，如果主 CAS 失败，Exchange 连接器会收到一个用于回退到另一个 CAS 的查询。 此功能可确保服务不中断。
+
 #### <a name="remotely-restart-ios-device-supervised-only----1424595---"></a>远程重启 iOS 设备（仅限被监督的设备）<!-- 1424595 -->
 
 可使用设备操作触发受监督的 iOS 10.3+ 设备重启。 要详细了解如何使用设备重启操作，请参阅[使用 Intune 远程重启设备](device-restart.md)。
 
 > [!Note]
 > 此命令需要受监督的设备和“设备锁定”访问权限。 设备会立即重启。 密码锁定的 iOS 设备重启后不会重新加入 Wi-Fi 网络；重启后，它们可能无法与服务器进行通信。
+
+#### <a name="single-sign-on-support-for-ios----1333645---"></a>iOS 的单一登录支持 <!-- 1333645 -->  
+
+可对 iOS 用户使用 SSO。 编码为在单一登录有效负载中查找用户凭据的 iOS 应用可使用此有效负载配置更新。 还可使用 UPN 和 Intune 设备 ID 配置主体名称和领域。 有关详细信息，请参阅[配置 Intune for iOS 设备 SSO](sso-ios.md)。
+
+#### <a name="add-find-my-iphone-for-personal-devices---1427287--"></a>为个人设备添加“查找我的 iPhone” <!--1427287-->
+现可查看 iOS 设备是否已开启“激活锁”。 经典门户中的 Intune 之前并不提供此功能。
+
 
 #### <a name="remotely-lock-managed-macos-device-with-intune----1437691---"></a>使用 Intune 远程锁定受管理的 macOS 设备 <!-- 1437691 -->
 
@@ -167,7 +196,9 @@ Windows Defender 高级威胁防护 (WDATP) 服务允许管理员对受管理设
 #### <a name="audit-updates----1412961---"></a>审核更新 <!-- 1412961 -->  
 Intune 审核提供与 Intune 相关的更改操作记录。  捕获所有创建、更新、删除和远程任务操作，并保留一年。  通过 Azure 门户，可查看每个工作负荷中过去 30 天的审核数据，还可对这些数据进行筛选。  利用相应的图形 API，可检索过去一年存储的审核数据。 
 
-“审核”位于“监视”组下。 每个工作负荷都有一个“审核日志”菜单项。   
+“审核”位于“监视”组下。 每个工作负荷都有一个“审核日志”菜单项。 
+
+
 
 
 ## <a name="week-of-november-20-2017"></a>2017 年 11 月 20 日当周
@@ -638,7 +669,10 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 
 ## <a name="whats-coming"></a>即将推出
 
-### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747---"></a>使用 Intune 的设备符合性引擎管理 Jamf 注册的 macOS 设备<!---1592747--->
+### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>适用于 Intune 的条件访问策略仅可从 Azure 门户访问<!-- 1737088 --> 
+我们正在简化配置和管理条件访问的位置。 目前，可从“Intune 应用保护 (MAM)”边栏选项卡管理条件访问，还可通过 [Microsoft Azure 门户](https://manage.windowsazure.com)中的经典 Azure AD 体验进行管理。 从 1 月开始，只能在 [Azure 门户](https://portal.azure.com)中通过“Azure Active Directory” > “条件访问”配置和管理策略。 为方便起见，还可在 Azure 门户中通过“Intune” > “条件访问”，从 Intune 访问此边栏选项卡。
+
+### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine---1592747--"></a>使用 Intune 的设备符合性引擎管理 Jamf 注册的 macOS 设备<!--1592747-->
 从 2018 年初开始，Jamf 将把 macOS 设备状态信息发送给 Intune，然后由 Intune 评估它是否符合 Intune 控制台中定义的策略。 基于设备符合性状态以及其他条件（如位置、用户风险等），条件访问将强制实现 macOS 设备访问云和与 Azure AD 连接的本地应用程序（包括 Office 365）的符合性。
 
 ### <a name="changes-in-support-for-the-intune-ios-company-portal-app-----1164474----"></a>Intune iOS 公司门户应用的支持更改 <!-- 1164474  -->

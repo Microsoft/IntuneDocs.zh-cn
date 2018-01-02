@@ -1,9 +1,9 @@
 ---
-title: "适用于 Windows 和 Windows Phone 的旁加载应用"
+title: "适用于 Intune 的旁加载 Windows 和 Windows Phone 应用"
 description: "了解如何对业务线应用进行签名，以便可以使用 Intune 部署它们。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 11/17/2017
 下列步骤将帮助你获取所需的证书并对应用进行签名。 需要注册为 Microsoft 开发人员，然后购买 Symantec 证书。
 
 
-1. **注册为 Microsoft 开发人员**<br>使用登录以购买公司帐户时所使用的公司帐户信息
-   [注册为 Microsoft 开发人员](http://go.microsoft.com/fwlink/?LinkId=268442)。 在你接收代码签名证书之前，此请求需获得公司主管授权。
+1. **注册为 Microsoft 开发人员**<br>
+   使用登录以购买公司帐户时所使用的公司帐户信息[注册为 Microsoft 开发人员](http://go.microsoft.com/fwlink/?LinkId=268442)。 在你接收代码签名证书之前，此请求需获得公司主管授权。
 
 2. **获取公司 Symantec 证书**<br>
   使用你的 Symantec ID 从 [Symantec 网站](http://go.microsoft.com/fwlink/?LinkId=268441) 购买证书。 购买证书后，你在注册为 Microsoft 开发人员时指定的公司审批人将收到一封请求审批证书请求的电子邮件。 有关 Symantec 证书要求的详细信息，请参阅[为什么 Windows Phone 需要 Symantec 证书？](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows 设备注册常见问题。

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>设置对公司资源的访问
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/01/2017
 |![配置文件会在设置中打开。](./media/ios-9-cp-enroll-1711.png)|点击“安装”。|
 |![安装屏幕底部的配置文件模式对话框。](./media/ios-10-cp-enroll-1711.png)|点击“安装”。|
 |![配置文件正在安装加载屏幕。](./media/ios-11-cp-enroll-1711.png)|等待加载完成。|
-|![配置文件管理警告屏幕。](./media/ios-12-cp-enroll-1711.png)|该警告由 Apple 编写，可让你详细了解可以对受管理的设备执行什么类型的操作。 详细了解[你的公司可以看到什么信息](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![配置文件管理警告屏幕。](./media/ios-12-cp-enroll-1711.png)|该警告由 Apple 编写，可让你详细了解可以对受管理的设备执行什么类型的操作。 详细了解[你的公司可以看到什么信息](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。|
 |![系统提示询问是否信任远程管理。](./media/ios-13-cp-enroll-1711.png)|点击“信任”允许公司管理你设备上的公司信息和设置。|
 |![配置文件完成安装加载屏幕。](./media/ios-14-cp-enroll-1711.png)|等待加载完成。|
 |![配置文件已安装屏幕。](./media/ios-15-cp-enroll-1711.png)|配置文件已安装，即将对你设备上的公司信息和设置进行管理。|
@@ -75,4 +75,4 @@ ms.lasthandoff: 12/01/2017
 > [!Note]
 > 在完全实现设备管理前，还需完成几个步骤。 了解关于[使用电信费用管理注册设备](enroll-your-device-with-telecom-expense-management-ios.md)的详细信息。 如果组织正在使用 Apple 的设备注册计划，请在[此处](enroll-your-device-dep-ios.md)了解详细信息。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com)。
+仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

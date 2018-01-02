@@ -1,11 +1,11 @@
 ---
-title: "此设备略有不同 | Microsoft Docs"
+title: "使用 Jamf 自助服务时可能出现的错误 | Microsoft Docs"
 description: "了解关于由 Jamf 托管、已启用 Intune 的 macOS 设备的详细信息。"
 keywords: "Mac OS X、macOS、OS X"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 14db11738b1ef34a9180515e5f909ff1960bfbb0
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 080bc7c287dcc068ac18a3aec60295e777840368
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>在由 Jamf 托管的 macOS 设备上执行操作
 
@@ -28,4 +28,8 @@ ms.lasthandoff: 11/08/2017
 
 如果正在使用 macOS 设备，且该设备存在由 Jamf 托管的符合性问题，请单击“解决”按钮启动“自助服务”。
 
-仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com)中查找他们的联系信息。
+__如果看到“AccountNotOnboarded”或“设备已注册”，该如何操作__
+
+如果已打开公司门户应用并出现一条显示“AccountNotOnboarded”的消息，则需退出公司门户应用，并转到“应用程序” > “自助服务”。 公司将拥有需要安装的设备注册策略。 单击该策略进行安装，然后再次打开公司门户。
+
+仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。
