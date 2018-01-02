@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 68d93fe98b89f27c947e07d79eca9a0e02dea582
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
@@ -69,6 +69,17 @@ ms.lasthandoff: 11/09/2017
    - 将所有设备作为 Android 管理。 所有 Android 设备（包括支持 Android for Work 的设备）均将注册为传统的 Android 设备。
    - 将受支持设备作为 Android for Work 管理。 将支持 Android for Work 的所有设备均注册为 Android for Work 设备。 不支持 Android for Work 的任何 Android 设备都注册为传统的 Android 设备。
    - 仅为这些用户组中的用户将受支持设备作为 Android for Work 管理。 可以将 Android for Work 管理目标定位到有限的一组用户。 只有所选组中注册支持 Android for Work 的设备的成员才会注册为 Android for Work 设备。 所有其他成员都会注册为 Android 设备。 这在 Android for Work 试验期间很有用。
+
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>在托管的 Google Play 商店中批准公司门户应用
+需要在托管的 Google Play 商店中批准适用于 Android 的公司门户应用，确保该应用收到自动应用更新。 如不批准，公司门户最终会过时，并无法在 Microsoft 发布重要的 bug 修补程序或新功能时收到它们。
+
+请按以下步骤批准 Intune 公司门户：
+
+1.  从[托管的 Google Play 商店](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)下载公司门户应用。
+2.  使用配置 Android for Work 绑定时所用的 Google 帐户登录托管的 Google Play 商店。
+3.  单击“批准”。  此时会打开一个新对话框。
+4.  在此对话框中查看各权限，然后单击“批准”。 需要批准这些权限，才能允许公司门户应用管理设备上的工作配置文件。
+5.  选择“应用请求新的权限时始终批准”，然后单击“保存”。
 
 <!--  ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can do the following:

@@ -3,10 +3,10 @@ title: "配置 Intune 设备功能设置"
 titleSuffix: Azure portal
 description: "了解如何使用 Intune 来配置所管设备上的功能。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2723bfc0adecd9b6265b4af43e6fe185882b5e
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ea280ac6858485aa4e3d64d11835f002c5bb35ca
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置设备功能设置
 
@@ -40,18 +40,19 @@ ms.lasthandoff: 09/15/2017
 5. 从“平台”下拉列表中，选择要应用设置的设备平台。 目前，可以为设备功能选择以下平台之一：
     - **iOS**
     - **macOS**
-6. 在“配置文件类型”类型下拉列表中，选择“设备功能”。 
+6. 在“配置文件类型”下拉列表中，选择“设备功能”。 
 7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
     - [适用于 iOS 和 MacOS 的 AirPrint 设置](air-print-settings-ios-macos.md)
     - [适用于 iOS 的 AirPlay 设置](airplay-settings-ios.md)
     - [适用于 iOS 的主屏幕布局设置](home-screen-settings-ios.md)
     - [适用于 iOS 的应用通知设置](app-notification-settings-ios.md)
     - [适用于 iOS 的共享设备配置设置](shared-device-settings-ios.md)
+    - [配置 Intune for iOS 设备 SSO](sso-ios.md)
     - [适用于 iOS 的 Web 内容筛选器设置](web-content-filter-settings-ios.md)
 
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+8. 完成后，返回“创建配置文件”边栏选项卡，然后单击“创建”。
 
-将创建配置文件并在“配置文件列表”边栏选项卡上显示。
+系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 

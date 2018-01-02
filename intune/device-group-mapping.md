@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e34b9cd030244db4bdde78eedbb0f874f49fa1e1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="map-device-groups"></a>映射设备组
-
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -54,7 +53,7 @@ ms.lasthandoff: 09/15/2017
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>步骤 2 - 创建 Active Directory 安全组
 在此步骤中，你将在 Azure 门户中基于设备类别和设备类别名称创建动态组。
 
-若要继续，请参阅 Azure Active Directory 文档中的主题[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)。 
+若要继续，请参阅 Azure Active Directory 文档中的主题[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)。
 
 按照本部分中的信息可使用 **deviceCategory** 属性创建具有高级规则的设备组。 例如 (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
@@ -84,7 +83,7 @@ ms.lasthandoff: 09/15/2017
 
 当 iOS 和 Android 设备的最终用户注册其设备时，他们必须从你配置的类别列表中选择一个类别。 选择某个类别并完成注册后，他们的设备将添加到与他们选择的类别相对应的 Intune 设备组或 Active Directory 安全组。
 
-若要向 Windows 设备分配一个类别，注册设备后最终用户必须使用“公司门户”网站 (portal.manage.microsoft.com)。 在 Windows 设备上，访问此网站并转到“菜单” > “我的设备”。 选择页面上列出的一个已注册设备，然后选择一个类别。 
+无论采用何种平台，最终用户在注册设备后始终可以转到 portal.manage.microsoft.com。 让用户访问公司门户网站，并转到“我的设备”。 他们可以选择页面上列出的一个已注册设备，然后选择一个类别。
 
 选择类别后，该设备将自动添加到你创建的对应组。 在配置类别前，如果设备已经注册，则最终用户将会在“公司门户”网站上看到一个关于此设备的通知，并在下次从 iOS 或 Android 访问“公司门户”应用时被要求选择一个类别。
 
@@ -92,5 +91,3 @@ ms.lasthandoff: 09/15/2017
 - 可以在 Azure 门户中编辑设备类别，但如果这样做，则必须手动更新引用此类别的所有 Azure Active Directory 安全组。
 
 - 删除某个类别后，分配到该类别的所有设备的类别名称随后都将显示“未分配”。
-
-

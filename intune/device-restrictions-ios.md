@@ -3,8 +3,8 @@ title: "适用于 iOS 的 Intune 设备限制设置"
 titleSuffix: Azure portal
 description: "了解可用来控制 iOS 设备上的设备设置和功能的 Intune 设置。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备限制设置
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/03/2017
 - **修改通知设置（仅限被监督的设备）** - 允许用户更改设备通知设置。
 - **修改墙纸（仅限被监督的设备）** - 允许用户更改设备墙纸。
 - **修改企业应用信任设置（仅限被监督的设备）** - 允许用户选择信任不是从应用商店下载的应用。
-- **配置描述文件更改** - 允许用户安装配置描述文件。
+- **配置文件更改（仅限被监督的设备）** - 允许用户安装配置文件。
 - 激活锁（仅限被监督的设备）- 在受监督的 iOS 设备上启用激活锁。
 
 ## <a name="configurations-requiring-supervision"></a>配置需要监督
