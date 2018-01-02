@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 6d63ddcd8f60ac3491087e3e76949f2a49cf7b9b
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>使用 Intune 设置 Lookout 移动威胁防御集成
 
@@ -72,7 +72,8 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 2.  首次登录到 Lookout 控制台时必须使用具有 Azure AD 全局管理员角色的用户帐户，以便注册 Azure AD 租户。 后续登录无需这一级别的 Azure AD 特权。 此时会显示同意页。 选择“接受”完成注册。 接受并同意后，系统将重定向到 Lookout 控制台。
 
     ![第一次登录到 Lookout 控制台时的登录页面屏幕截图](./media/lookout_mtp_initial_login.png)
-    > [注意] 请参阅 [Lookout 集成疑难解答](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration)获取有关登录问题的帮助。
+    > [!NOTE] 
+    > 请参阅 [Lookout 集成疑难解答](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration)获取有关登录问题的帮助。
 
 3.  在[“Lookout 控制台”](https://aad.lookout.com)中，从“系统”模块选择“连接器”选项卡，然后选择“Intune”。
 
@@ -85,7 +86,8 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 ## <a name="configure-enrollment-groups"></a>配置注册组
 1. 最佳做法是在 [Azure AD 管理门户](https://manage.windowsazure.com)中创建一个 Azure AD 安全组，并在其中包含少量用于测试 Lookout 集成的用户。
 
-    > [注意] Azure AD 注册组中标识并支持的所有受 Lookout 支持并注册了 Intune 的用户设备，都注册了 Lookout MTD 控制台并可在其中激活。
+    > [!NOTE] 
+    > Azure AD 注册组中标识并支持的所有受 Lookout 支持并注册了 Intune 的用户设备，都注册了 Lookout MTD 控制台并可在其中激活。
 
 2. 在[“Lookout 控制台”](https://aad.lookout.com)的“系统”模块中，选择“连接器”选项卡，然后选择“注册管理”定义一组其设备应注册 Lookout 的用户。 添加用于注册的 Azure AD 安全组“显示名称”。
 

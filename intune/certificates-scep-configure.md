@@ -3,10 +3,10 @@ title: "使用 Intune 配置和管理 SCEP 证书"
 titlesuffix: Azure portal
 description: "了解如何配置你的基础结构，然后创建和分配 Intune SCEP 证书配置文件。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>使用 Intune 配置和管理 SCEP 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -88,7 +88,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 创建用作 NDES 服务帐户的域用户帐户。 你可以在安装和配置 NDES 之前，在配置发证 CA 上的模板时指定该帐户。 确保用户具有默认权限，即“本地登录”、“作为服务登录”和“作为批处理作业登录”的权限。 某些组织已采用强化策略禁用这些权限。
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>步骤 2 - 配置证书颁发机构上的证书模板
-在此任务中，你将：
+在此任务中完成以下操作：
 
 -   配置 NDES 证书模板
 
@@ -153,7 +153,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步骤 3 - 在 NDES 服务器上配置必备组件
-在此任务中，你将：
+在此任务中完成以下操作：
 
 -   将 NDES 添加到 Windows Server 并配置 IIS 以支持 NDES
 
@@ -164,7 +164,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 
 
-   1.  在将要承载 NDES 的服务器上安装 NDES 时，必须以“企业管理员”的身份登录，并使用[添加角色和功能向导](https://technet.microsoft.com/library/hh831809.aspx)：
+   1.  在承载 NDES 的服务器上安装 NDES 时，以“企业管理员”的身份登录，然后使用[添加角色和功能向导](https://technet.microsoft.com/library/hh831809.aspx)：
 
     1.  在向导中，选择“Active Directory 证书服务”以获得对 AD CS 角色服务的访问权限。 选择“网络设备注册服务”，取消选择“证书颁发机构”，然后完成向导。
 
@@ -194,7 +194,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>步骤 4 - 配置 NDES 以与 Intune 一起使用
-在此任务中，你将：
+在此任务中完成以下操作：
 
 -   配置 NDES 以与发证 CA 一起使用
 
@@ -255,7 +255,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 1.  在你的 NDES 服务器上，请求并安装来自你的内部 CA 或公共 CA 的“服务器身份验证”证书。 随后绑定 IIS 中的 SSL 证书。
 
     > [!TIP]
-    > 绑定 IIS 中的 SSL 证书后，你也可以安装客户端身份验证证书。 该证书可以由 NDES 服务器信任的任何 CA 颁发。 尽管这不是最佳做法，但可以对服务器和客户端身份验证使用相同的证书，只要证书具备两个增强型密钥用法 (EKU) 即可。 查看以下步骤以获得有关这些身份验证证书的信息。
+    > 绑定 IIS 中的 SSL 证书后，安装客户端身份验证证书。 该证书可以由 NDES 服务器信任的任何 CA 颁发。 尽管这不是最佳做法，但可以对服务器和客户端身份验证使用相同的证书，只要证书具备两个增强型密钥用法 (EKU) 即可。 查看以下步骤以获得有关这些身份验证证书的信息。
 
     1.  获得服务器身份验证证书后，打开“IIS 管理器”，在“连接”窗格中选择“默认网站”，然后单击“操作”窗格中的“绑定”。
 
@@ -297,32 +297,19 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 4. 重新启动 NDES 服务器。 服务器现已支持证书连接器。
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>步骤 5 - 启用、安装和配置 Intune 证书连接器
-在此任务中，你将：
+在此任务中完成以下操作：
 
 - 在 Intune 中启用对 NDES 的支持。
+- 在环境中的某个服务器上下载、安装和配置证书连接器。 要支持高可用性，可在不同服务器上安装多个证书连接器。
 
-- 在 NDES 服务器上下载、安装和配置证书连接器。
-
-   > [!NOTE]
-   > 要支持高可用性，可安装多个证书连接器实例。
-
-<!--1528104 we need to flesh out the HA recommendation in the note above -->
-
-##### <a name="to-enable-support-for-the-certificate-connector"></a>启用对证书连接器的支持
-
-1. 登录到 Azure 门户中。
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>如何下载、安装和配置证书连接器
+![ConnectorDownload](./media/certificates-download-connector.png)   
+ 
+1. 登录到 Azure 门户中。 
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“配置设备”。
+3. 在“Intune”边栏选项卡上，选择“设备配置”。
 4. 在“设备配置”边栏选项卡上，选择“证书颁发机构”。
-5.  选择“启用证书连接器” 。
-
-##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下载、安装和配置证书连接器
-
-1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“配置设备”。
-4. 在“设备配置”边栏选项卡上，选择“证书颁发机构”。
-5. 选择“下载证书连接器”。
+5. 单击“添加”，并选择“下载连接器文件”。 将下载的文件保存到可以从服务器上进行访问的位置，将在该服务器上安装该应用程序。 
 6.  下载完成后，在 Windows Server 2012 R2 服务器上运行下载的安装程序 (**ndesconnectorssetup.exe**)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 （CRP Web 服务 CertificateRegistrationSvc 运行为 IIS 中的应用程序）
 
     > [!NOTE]
@@ -358,8 +345,8 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 ## <a name="how-to-create-a-scep-certificate-profile"></a>如何创建 SCEP 证书配置文件
 
 1. 在 Azure 门户中，选择“配置设备”工作负荷。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在配置文件边栏选项卡上，选择“创建配置文件”。
+2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
+3. 在“配置文件”边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入 SCEP 证书配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，为此 SCEP 证书选择设备平台。 目前，可以为设备限制设置选择以下平台之一：
     - **Android**
@@ -392,7 +379,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
     - **密钥大小（位数）** - 选择密钥中包含的位数。 
     - **哈希算法** (Android、Windows Phone 8.1、Windows 8.1、Windows 10) - 选择要与此证书一起使用的可用哈希算法类型之一。 选择连接设备支持的最高级别安全性。 
     - **根证书** - 选择之前配置并分配到用户或设备的根 CA 证书配置文件。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。 
-    - **扩展的密钥使用情况** - 选择“添加”为证书的预期目的添加值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证。 但，你可以根据需要添加任何其他密钥用法。 
+    - **扩展密钥用法** - 选择“添加”，为证书的预期目的添加值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证。 但，你可以根据需要添加任何其他密钥用法。 
     - **注册设置**
         - **续订阈值(%)** - 指定设备请求证书续订之前剩余的证书有效期限的百分比。
         - SCEP 服务器 URL - 为通过 SCEP 颁发证书的 NDES 服务器指定 1 个或多个 URL。 
