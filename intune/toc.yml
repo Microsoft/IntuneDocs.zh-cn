@@ -581,7 +581,7 @@
           items:
             - name: 每应用 VPN 配置文件
               href: android-pulse-secure-per-app-vpn.md
-            - name: 允许/禁止对 Samsung KNOX Standard 使用应用
+            - name: 允许/禁止对 Samsung Knox Standard 使用应用
               href: samsung-knox-apps-allow-block.md
         - name: iOS
           href: custom-settings-ios.md

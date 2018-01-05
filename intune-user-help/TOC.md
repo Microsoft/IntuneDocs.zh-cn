@@ -27,12 +27,14 @@
 ### [修复 Android 的常见问题](troubleshoot-your-device-android.md)
 #### [检查设备符合性](check-compliance-on-your-device-android.md)
 #### [使用省电模式同步 Outlook 电子邮件](power-saving-mode-android.md)
+#### [修复与 Samsung Knox 相关的常见问题](samsung-knox-errors-android.md)
 
 #### 使用日志修复问题
 ##### [启用详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [使用电子邮件发送日志](send-logs-to-your-it-admin-by-email-android.md)
 ##### [使用 USB 线缆发送日志](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [提交注册错误](send-enrollment-errors-to-your-it-admin-android.md)
+##### [将错误发送给 Microsoft](send-logs-to-microsoft-android.md)
 
 ### 操作系统问题
 #### [更新设备](you-need-to-update-your-android-device.md)
@@ -74,6 +76,7 @@
 #### [重新连接受威胁的 iOS 设备](how-to-reconnect-a-compromised-ios-device.md)
 #### [将错误发送给公司](send-errors-to-your-it-admin-ios.md)
 #### [将错误发送给 Microsoft](send-logs-to-microsoft-ios.md)
+#### [找到现有公司电子邮件帐户](existing-company-email-account-found.md)
 #### [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-ios.md)
 #### [出现错误](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [标识设备](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -109,13 +112,13 @@
 #### [标识设备](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [使用 Windows 设备](using-your-windows-device-with-intune.md)
-### [注册 Windows 10 设备](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [注册其他版本的 Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+### [注册 Windows 10 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+#### [注册其他版本的 Windows 时，会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [注册 Windows 设备](enroll-your-device-in-intune-windows.md)
-### [安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [注册 Windows 10 设备](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [注册 Windows 8.1 或 Windows RT 8.1 设备](enroll-your-w81-or-rt81-windows.md)
+#### [注册 Windows Phone 8.1 设备](enroll-your-wp81-windows.md)
 ### [重置设备](reset-erase-your-device-cpwebsite.md)
-
 ### [加密设备](encrypt-your-device-windows.md)
 ### [设置或更改密码](set-or-change-your-password-windows.md)
 ### [从 Intune 取消注册设备](unenroll-your-device-from-intune-windows.md)
