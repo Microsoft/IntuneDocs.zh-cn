@@ -3,8 +3,8 @@ title: "管理批量采购的 iOS 电子书"
 titlesuffix: Azure portal
 description: "了解如何可以将从 iOS 应用商店批量购买的书籍同步到 Intune 中，然后管理并跟踪其使用情况。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 08/17/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16f1e720e94ac8c6b35158477b41bfaeac9dc0a8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 78f4ce4b8b37e519e8cb377030a7b119b6a64d92
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 电子书
 
@@ -52,9 +52,9 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“移动应用”。
+3. 在 Intune 边栏选项卡上，选择“移动应用”。
 1.  在“移动应用”工作负载中，依次选择“设置” > “iOS VPP 标记”。
 2.  在 VPP 标记列表边栏选项卡上，单击“添加”。
 3.  在“新 VPP 令牌”边栏选项卡中，指定下列信息：

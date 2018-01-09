@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: a51d260718e0d0c3984966fab69e202b854c1847
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>使用 Intune 配置和管理 PKCS 证书
 
@@ -55,10 +55,11 @@ ms.lasthandoff: 12/11/2017
 
    例如：
 
+4.  向导完成后，关闭向导前，单击“启动证书连接器 UI” 。
+
    `certutil -ca.cert certnew.cer`
 
    有关详细信息，请参阅[用于管理证书的 Certutil 任务](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign)。
-
 
 ## <a name="configure-certificate-templates-on-the-certification-authority"></a>配置证书颁发机构上的证书模板
 
@@ -93,7 +94,7 @@ ms.lasthandoff: 12/11/2017
 
     a. 右键单击“证书颁发机构”，选择“属性”。
 
-    b。 在“安全”选项卡上，为运行 Microsoft Intune 证书连接器所在的服务器添加计算机帐户。
+    b. 在“安全”选项卡上，为运行 Microsoft Intune 证书连接器所在的服务器添加计算机帐户。
       * 向计算机帐户授予“发布和管理证书”以及“请求证书”允许权限。
 16. 注销企业 CA。
 

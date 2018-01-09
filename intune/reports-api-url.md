@@ -2,8 +2,8 @@
 title: "Intune 数据仓库 API 终结点 | Microsoft Docs"
 description: "参考主题介绍 API URL 结构。"
 keywords: "Intune 数据仓库"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6dd9098a7db7004f0b7273fc4628d5dd1b535d6d
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 

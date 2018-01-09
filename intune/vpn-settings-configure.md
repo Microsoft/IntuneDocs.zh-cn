@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1b4152cfe5442b01f0d81c724dfa5eccb02ae29
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5bb34d9f180240e2ea03d43f42dc9ea8aee7adcd
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 VPN 设置
 
@@ -56,14 +56,14 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>创建包含 VPN 设置的设备配置文件
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入 VPN 配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用 VPN 设置的设备平台。 目前，可以为 VPN 设备设置选择以下平台之一：
-    - **Android**
+    - **Outlook Web Access (OWA)**
     - **Android for Work**
     - **iOS**
     - **macOS**
@@ -80,7 +80,7 @@ ms.lasthandoff: 12/12/2017
     - [Windows 10 设置](vpn-settings-windows-10.md)
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-将创建配置文件并在“配置文件列表”边栏选项卡上显示。
+此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 

@@ -3,10 +3,10 @@ title: "Zimperium MTD 连接器与 Intune"
 titleSuffix: Intune on Azure
 description: "Zimperium 连接器与 Intune 集成"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/06/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78214293a66784d4bc05e441c2c1cdbf718b0a9a
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 22fbdb95a0fe0c064f07dea2dca50c516b995b8d
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium 移动威胁防御连接器与 Intune
 
@@ -51,7 +51,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 ![检测到恶意应用](./media/Maliciousapps_blocked_Zimperium.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![检测到恶意应用，授予访问权限](./media/maliciousapps_unblocked_Zimperium.png)
 
@@ -63,7 +63,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 ![阻止通过 Wi-Fi 访问网络](./media/network_wifi_blocked_Zimperium.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![威胁解除后授予访问权限](./media/network_wifi_unblocked_Zimperium.png)
 
@@ -75,7 +75,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 ![检测到网络威胁时阻止 SharePoint Online](./media/network_spo_blocked_Zimperium.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![Sharepoint 的威胁解除后授予访问权限示例](./media/network_spo_unblocked_Zimperium.png)
 
@@ -85,7 +85,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 -   **iOS 8 及更高版本**
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 -   Azure Active Directory Premium
 

@@ -2,8 +2,8 @@
 title: "日期 - Intune 数据仓库 | Microsoft Docs"
 description: "Intune 数据仓库 API 中实体集合的“日期”类别的参考主题。"
 keywords: "Intune 数据仓库"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93d0f08697c8ee17ff44d599cb7b1bb262daa7ee
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: a52badf996ebcfaa24b37f064a28f0d77cd9eae8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-date-entity"></a>日期实体引用
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/02/2017
 
 日期实体表示跨多个数据仓库实体引用的日期。
 
-| 属性  | 说明 | 示例 |
+| 属性  | 描述 | 示例 |
 |---------|------------|--------|
 | DateKey | 数据仓库中此日期的唯一标识符。 | 20160703 |
 | FullDate | 此日期以完整日期/时间格式表示。 | 2016/7/3 中午 12:00:00 |

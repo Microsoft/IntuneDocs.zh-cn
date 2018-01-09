@@ -3,10 +3,10 @@ title: "管理 iOS 批量购买的应用 | Microsoft Docs"
 titlesuffix: Azure portal
 description: "了解如何可以将从 iOS 应用商店批量购买的应用同步到 Intune 中，然后管理并跟踪其使用情况。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
@@ -38,9 +38,9 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 
 ### <a name="device-licensing"></a>设备许可
 
-将应用分配到设备时，需使用一个应用证书，此证书将与其分配到的设备保持关联。 
+将应用分配到设备时，需使用一个应用证书，此证书将与其分配到的设备保持关联。
 
-将批量采购的应用分配到设备时，设备的最终用户不必提供 Apple ID 即可访问应用商店。 
+将批量采购的应用分配到设备时，设备的最终用户不必提供 Apple ID 即可访问应用商店。
 
 ### <a name="user-licensing"></a>用户许可
 
@@ -80,7 +80,7 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 1.  在“Intune”边栏选项卡上，选择“设置”下的“移动应用” > “iOS VPP 令牌”。
 2.  在 VPP 令牌边栏选项卡列表上，请选择“创建”。
@@ -92,7 +92,8 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
         > 对于使用此标记创建的应用，更改国家/地区将更新应用元数据，并在下次与 Apple 服务同步时存储 URL。 如果应用未在新的国家/地区应用商店中提供，则不会更新该应用。
 
     - **VPP 帐户类型** - 从“企业版”或“教育版”中进行选择。
-    - **自动应用更新** - 从“关”切换为“开”以启用自动更新。 启用后，当设备签入时，Intune 将更新通过 Intune 服务针对指定令牌购买的所有应用。 Intune 将在应用商店内检测 VPP 应用更新，并在设备签入时自动将这些更新推送到设备中。
+    - **自动应用更新** - 从“关”切换为“开”以启用自动更新。 启用后，当设备签入时，Intune 将更新通过 Intune 服务针对指定令牌购买的所有应用。
+Intune 将在应用商店内检测 VPP 应用更新，并在设备签入时自动将这些更新推送到设备中。
 4. 完成后，选择“上传”。
 
 该令牌将显示在令牌列表边栏选项卡中。
@@ -119,8 +120,8 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 
 | # | 方案                                | 邀请到 Apple VPP 计划                              | 应用安装提示 | Apple ID 提示 |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD - 用户已获许可                             | Y                                                                                               | 是                                           | Y                                 |
-| 2 | Corp - 用户已获许可（不受监督的设备）     | Y                                                                                               | 是                                           | Y                                 |
+| 1 | BYOD - 用户已获许可                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Corp - 用户已获许可（不受监督的设备）     | Y                                                                                               | Y                                           | Y                                 |
 | 3 | Corp - 用户已获许可（受监督的设备）         | Y                                                                                               | N                                           | Y                                 |
 | 4 | BYOD - 设备已获许可                           | N                                                                                               | Y                                           | N                                 |
 | 5 | CORP - 设备已获许可（不受监督的设备）                           | N                                                                                               | Y                                           | N                                 |
@@ -134,6 +135,8 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 ## <a name="further-information"></a>更多信息
 
 若要回收许可证，必须将分配操作更改为“卸载”。 卸载应用后，将回收许可证。 如果删除了分配给用户的应用，Intune 会尝试回收与该用户关联的所有应用许可证。
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 符合条件设备的用户首次尝试在设备上安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 开始安装应用前，他们必须加入该计划。 加入 Apple Volume Purchase 计划的邀请需要用户可以使用 iOS 设备上的 iTunes 应用。 如果已设置禁用 iTunes 应用商店应用的策略，基于用户许可的 VPP 应用将无法工作。 解决方案是删除策略，或使用基于设备的许可来允许 iTunes 应用。
 

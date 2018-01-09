@@ -3,10 +3,10 @@ title: "使用 Intune 的 Skycure 连接器"
 titlesuffix: Azure portal
 description: "将 Skycure 连接器与 Intune 集成。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47df2c4a909c397ac5a6c0f736d11344de44736e
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 555c8fa7960a080e3c845053a4893d16a082088d
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure 移动威胁防御连接器
 
@@ -67,7 +67,7 @@ Intune 支持与 Skycure 集成的两种模式：
 
 ![检测到恶意应用](./media/skycure-arch-1.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![检测到恶意应用，授予访问权限](./media/skycure-arch-2.png)
 
@@ -79,7 +79,7 @@ Intune 支持与 Skycure 集成的两种模式：
 
 ![阻止通过 Wi-Fi 访问网络](./media/skycure-arch-3.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![威胁解除后授予访问权限](./media/skycure-arch-4.png)
 
@@ -91,7 +91,7 @@ Intune 支持与 Skycure 集成的两种模式：
 
 ![检测到网络威胁时阻止 SharePoint Online](./media/skycure-arch-5.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![Sharepoint 的威胁解除后授予访问权限示例](./media/skycure-arch-6.png)
 
