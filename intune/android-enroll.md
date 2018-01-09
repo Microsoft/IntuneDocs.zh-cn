@@ -3,8 +3,8 @@ title: "在 Intune 中注册 Android 设备 | Microsoft Docs"
 titlesuffix: Azure portal
 description: "了解如何在 Intune 中注册 Android 设备。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/07/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/07/2017
    a. 在“Intune”边栏选项卡上，选择“设备注册” > “Android for Work 注册”，然后选择“配置”打开 Google Play 的 Android for Work 网站。 网站将在浏览器的新选项卡中打开。
    ![显示用于配置 Android for Work 绑定的链接的屏幕快照](./media/android-work-bind.png)
 
-   b。 登录到 Google<br>
+   b. 登录到 Google<br>
    在 Google 的登录页上，输入将与此租户的所有 Android for Work 管理任务相关联的 Google 帐户。 这是在公司的 IT 管理员之间共享的 Google 帐户，用于在 Play for Work 控制台中管理和发布应用。
 
    c. **提供组织详细信息**<br>

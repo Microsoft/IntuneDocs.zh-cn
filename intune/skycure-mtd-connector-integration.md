@@ -3,10 +3,10 @@ title: "使用 Intune 设置 Skycure 集成"
 titlesuffix: Azure portal
 description: "使用 Microsoft Intune 设置 Skycure 集成。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d495046a990817e73fcee385b3a1482229aac721
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 5662d1add7d5b35f3c2c8cd7a8f9900d197a3548
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>使用 Intune 设置 Skycure 集成
 
@@ -99,7 +99,7 @@ Skycure 将运行其移动威胁防御服务的设备与 Azure AD 安全组同�
 
     a.  向 Intune 报告设备的运行状况和风险
 
-    b。  此外，向 Intune 报告安全事件
+    b.  此外，向 Intune 报告安全事件
 
 5.  单击“应用更改”。
 

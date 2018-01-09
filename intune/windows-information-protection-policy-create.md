@@ -3,10 +3,10 @@ title: "通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策
 titlesuffix: Azure portal
 description: "通过 Intune 创建和部署 WIP 应用保护策略"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/13/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: f56752dc77289333fae69a81e2eb04d8b2e278f7
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 11/14/2017
 
     a.  **名称：**键入新策略的名称（必填）。
 
-    b。  **说明：**键入说明（可选）。
+    b.  **说明：**键入说明（可选）。
 
     c.  **平台：**选择“Windows 10”作为应用保护策略的支持平台。
 

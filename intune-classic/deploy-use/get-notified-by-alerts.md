@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 8/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: microsoft intune
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 287e8f3736082e427481d7a8a363947d4c42cdd6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/09/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>通过 Microsoft Intune 警报获取通知
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 10/10/2017
 
 使用下列选项可帮助你使用 Intune 管理控制台中的警报。
 
-|选项|说明|
+|选项|描述|
 |-----|----|
 |**查看活动警报**|选择以下选项之一：<br /><br />**查看警报摘要** - 在“仪表板”工作区中，最常发生的错误将显示在“警报”窗格中。 选择此窗格以查看更多详细信息。<br /><br />此外，你还可以查看“警报”  工作区的“概述”  页上的警报摘要。<br /><br />**查看所有警报** - 在“警报”工作区中，选择“所有警报”。|
 |**查看通知**|选择以下选项之一：<br /><br />在**仪表板**工作区中，选择**通知**。<br /><br />在**警报**工作区中，选择**所有警报**&gt;**通知**。|

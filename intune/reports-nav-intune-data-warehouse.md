@@ -2,8 +2,8 @@
 title: "Intune 数据库仓库 API | Microsoft Docs"
 description: "可使用该 API 生成报表，获取有关企业移动环境的见解。"
 keywords: "Intune 数据仓库"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: b9328f372e3f3d90c47db2ee77d06a924f38b560
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune 数据仓库 API
 

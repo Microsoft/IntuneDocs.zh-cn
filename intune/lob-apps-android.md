@@ -3,8 +3,8 @@ title: "如何将 Android 业务线应用添加到 Intune"
 titlesuffix: Azure portal
 description: "了解如何将 Android 业务线应用添加到 Intune。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/12/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 141d0499f055441ff099a5bec1c4ea695f77326c
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: 3d421889f5c271770c2c97fe37ff82cedc531985
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 Android 业务线 (LOB) 应用添加到 Microsoft Intune
 

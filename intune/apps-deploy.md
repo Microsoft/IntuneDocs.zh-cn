@@ -3,8 +3,8 @@ title: "如何将应用分配到组"
 titlesuffix: Azure portal
 description: "将应用添加到 Intune 后，需要将其分配给用户组或设备组。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7121cffaf1deb206aa88373a3aa77ce23bdf030e
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 将应用分配到组
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="how-to-assign-an-app"></a>如何分配应用
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
 1. 在“移动应用”工作负荷中，选择“管理” > “应用”。
