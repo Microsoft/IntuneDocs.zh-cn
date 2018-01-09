@@ -2,8 +2,8 @@
 title: "基于应用的条件性访问与 Intune 的协作"
 description: "了解基于应用的条件性访问如何与 Intune 协作的概念。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 3d89bec626e5e53a15bf46ecb96b244566d96dcb
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的条件性访问与 Intune 的协作
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/15/2017
 
 仅允许 Microsoft Outlook 应用访问 Exchange Online 时，可阻止 iOS 和 Android 上的内置邮件应用。 此外，你还可以阻止未执行 Intune 应用保护策略的应用访问 SharePoint Online。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 在创建基于应用的条件访问策略之前，必须具有：
 
 - 企业移动性 + 安全性 (EMS) 或 Azure Active Directory (AD) 高级订阅

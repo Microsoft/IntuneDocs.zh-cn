@@ -2,8 +2,8 @@
 title: "使用 Intune 数据仓库 | Microsoft Docs"
 description: "使用 Intune 数据仓库生成报表，获取有关企业移动环境的见解。"
 keywords: "Intune 数据仓库"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d485f0d53ac57a2f159ebd56b6b3823a8a49d5ad
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 338536d975ca3810df3c909964ac13b396097db8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="use-the-intune-data-warehouse"></a>使用 Intune 数据仓库
 

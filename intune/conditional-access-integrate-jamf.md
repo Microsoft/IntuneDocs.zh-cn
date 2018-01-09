@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |正在查找有关经典门户中的 Intune 的文档？ [请转到此处](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
 | |
 
-|目前处于个人预览版|
-|--|
-|本主题中介绍的功能仅适用于当前使用个人预览版的客户。 对所有客户发布后，此消息将会被删除。|
-| |
-
 如果你的组织使用 [Jamf Pro](https://www.jamf.com) 管理最终用户的 Mac，则可以将 Microsoft Intune 符合性策略用于 Azure Active Directory 条件访问，从而确保组织中的设备满足合规要求。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 需要满足以下要求才能通过 Jamf Pro 配置条件访问：
 
-- 访问 Intune 个人预览版以进行 macOS 条件访问
 - Jamf Pro 10.1.0 或更高版本
 - [适用于 macOS 的公司门户应用](https://aka.ms/macoscompanyportal)
 - 带有 OS X 10.11 Yosemite 或更高版本的 macOS 设备
@@ -60,7 +54,7 @@ ms.lasthandoff: 12/01/2017
 4. 选择“Web 应用/API”。
 5. 使用 Jamf Pro 实例 URL 指定登录 URL。
 6. 单击“创建应用程序”。
-7. 保存新创建的“应用程序 ID”，然后打开“设置”并导航到”API 访问” > “密钥”以创建新的应用程序密钥。 输入描述、过期之前的时间，然后保存该应用程序密钥。 
+7. 保存新创建的“应用程序 ID”，然后打开“设置”并导航到”API 访问” > “密钥”以创建新的应用程序密钥。 输入描述、过期之前的时间，然后保存该应用程序密钥。
 
   > [!IMPORTANT]
   > 应用程序密钥在此过程中仅显示一次。 请务必将其保存在可以轻松检索到它的地方。

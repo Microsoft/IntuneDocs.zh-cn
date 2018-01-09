@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8093b1a915f50dbd14da9e4836640c3be1a6ea64
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ead7aeb02fdb3a2fb0972e12350cf4c5e73fec97
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 
@@ -46,14 +46,14 @@ Wi-Fi 配置文件支持以下设备平台：
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>创建包含 Wi-Fi 设置的设备配置文件
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入 Wi-Fi 配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用 Wi-Fi 设置的设备平台。 目前，可以为 Wi-Fi 设置选择以下平台之一：
-    - **Android**
+    - **Outlook Web Access (OWA)**
     - **Android for Work**
     - **iOS**
     - **macOS**
@@ -66,5 +66,5 @@ Wi-Fi 配置文件支持以下设备平台：
     - [Windows Phone 8.1 设置](wi-fi-settings-import-windows-8-1.md)
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-将创建配置文件并在“配置文件列表”边栏选项卡上显示。
+此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。

@@ -2,10 +2,10 @@
 title: "决定如何使用 Microsoft Intune 为移动应用程序管理准备应用"
 description: "本主题中的信息可帮助决定何时应该使用应用包装工具和应用 SDK 来启用自定义业务线应用，以使用移动应用管理策略。"
 keywords: 
-author: mattbriggs
-ms.author: mabriggs
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e6c464e16079df0c1188870b234615c811963f08
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 40d0ddf78ed181dfc712bbaeee9499e3c56753ca
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 10/11/2017
 |**应用包装工具** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |是|是|
-|**Android**| 否 |是|
+|**Outlook Web Access (OWA)**| 否 |是|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用并想使用 Intune 管理应用的客户。 但是，任何应用都可以利用集成 SDK 的优势，即使是业务线应用。
@@ -70,7 +70,7 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
 |**iOS**|支持 - 使用 [Intune 应用 SDK Xamarin 组件](app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](app-sdk-cordova.md)。|
-|**Android**| 支持 - 使用 [Intune 应用 SDK Xamarin 组件](app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](app-sdk-cordova.md)。|
+|**Outlook Web Access (OWA)**| 支持 - 使用 [Intune 应用 SDK Xamarin 组件](app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](app-sdk-cordova.md)。|
 
 ## <a name="feature-comparison"></a>功能比较
 此表列出了可用于 App SDK 和应用包装工具的设置。

@@ -2,8 +2,8 @@
 title: "使用 REST 客户端从数据仓库 API 获取数据"
 description: "使用 RESTful API 从 Intune 数据仓库检索数据。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fb75d895a2100172fab337dcd740c076ff5e85b7
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 4991a2b26b97428fc54234ff35871d446107b950
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 客户端从 Intune 数据仓库 API 获取数据
 

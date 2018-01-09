@@ -2,8 +2,8 @@
 title: "设备 - Intune 数据仓库 | Microsoft Docs"
 description: "Intune 数据仓库 API 中实体集合的“设备”类别的参考主题。"
 keywords: "Intune 数据仓库"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/02/2017
 
 DeviceTypes 实体表示由其他数据仓库实体引用的设备类型。 设备类型通常描述设备型号、制造商或同时包含这两项内容。
 
-| 属性  | 说明 |
+| 属性  | 描述 |
 |---------|------------|
 | DeviceTypeID |设备类型的唯一标识符 |
 | DeviceTypeKey |数据仓库中设备类型的唯一标识符 - 代理键 |
@@ -45,7 +45,7 @@ DeviceTypes 实体表示由其他数据仓库实体引用的设备类型。 设�
 
 ## <a name="example"></a>示例
 
-| deviceTypeID  | Name | 描述 |
+| deviceTypeID  | 名称 | 描述 |
 |---------|------------|--------|
 | 0 |“桌面” |Windows 桌面设备 |
 | 1 |WindowsRT |WindowsRT 设备 |
@@ -80,7 +80,7 @@ ClientRegistrationStateTypes 实体表示由其他数据仓库表引用的注册
 
 ## <a name="example"></a>示例
 
-| ClientRegisterationStateID  | Name | 描述 |
+| ClientRegisterationStateID  | 名称 | 描述 |
 |---------|------------|--------|
 | 0 |NotRegistered |未注册 |
 | 1 |SMSIDConflict |SMS ID 冲突 |
@@ -96,7 +96,7 @@ ClientRegistrationStateTypes 实体表示由其他数据仓库表引用的注册
 
 EnrollmentTypes 实体表明设备的注册方式。 注册类型会捕获注册方式。 示例列出了不同的注册类型及其含义。
 
-| 属性  | 说明 |
+| 属性  | 描述 |
 |---------|------------|
 | managementStateID |管理状态的唯一标识符。 |
 | managementStateKey |数据仓库中管理状态的唯一标识符 - 代理键。 |
@@ -104,7 +104,7 @@ EnrollmentTypes 实体表明设备的注册方式。 注册类型会捕获注册
 
 ## <a name="example"></a>示例
 
-| enrollmentTypeID  | Name | 描述 |
+| enrollmentTypeID  | 名称 | 描述 |
 |---------|------------|--------|
 | 0 |Unknown |未收集注册类型 |
 | 1 |UserEnrollment |用户发起的注册 |
@@ -120,7 +120,7 @@ EnrollmentTypes 实体表明设备的注册方式。 注册类型会捕获注册
 
 OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
 
-| 属性  | 说明 | 示例 |
+| 属性  | 描述 | 示例 |
 |---------|------------|--------|
 | ownerTypeID |所有者类型的唯一标识符。 | |
 | ownerTypeKey |数据仓库中所有者类型的唯一标识符 - 代理键。 | |
@@ -130,7 +130,7 @@ OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
 
 MdmStatuses 实体表明设备的符合性状态。
 
-| 属性  | 说明 |
+| 属性  | 描述 |
 |---------|------------|
 | MdmStatusID |符合性状态的唯一标识符 |
 | MdmStatusKey |数据仓库中符合性状态的唯一标识符 - 代理键 | 
@@ -139,7 +139,7 @@ MdmStatuses 实体表明设备的符合性状态。
 
 ## <a name="example"></a>示例
 
-| MdmStatusID  | ComplianceStatus | 说明 |
+| MdmStatusID  | ComplianceStatus | 描述 |
 |---------|------------|--------|
 | 0 |Unknown |设备符合性状态未知。 |
 | 1 |是否满足条件 |设备符合策略。 |
@@ -152,7 +152,7 @@ MdmStatuses 实体表明设备的符合性状态。
 
 ManagementStates 实体提供有关设备状态的详细信息。 详细信息适用于应用远程操作、设备越狱或进行 root 的情况。
 
-| 属性  | 说明 |
+| 属性  | 描述 |
 |---------|------------|
 | managementStateID | 管理状态的唯一标识符。 |
 | managementStateKey | 数据仓库中管理状态的唯一标识符 - 代理键。 |
@@ -160,7 +160,7 @@ ManagementStates 实体提供有关设备状态的详细信息。 详细信息�
 
 ## <a name="example"></a>示例
 
-| managementStateID  | Name | 描述 |
+| managementStateID  | 名称 | 描述 |
 |---------|------------|--------|
 | 0 |托管 | 托管时不存在挂起的远程操作。 |
 | 1 |RetirePending | 存在一个针对设备的挂起的停用命令。 |
@@ -187,7 +187,7 @@ WorkPlaceJoinStateTypes 实体表示设备的 Azure Active Directory Workplace J
 
 ## <a name="example"></a>示例
 
-| workPlaceJoinStateID  | Name | 描述 |
+| workPlaceJoinStateID  | 名称 | 描述 |
 |---------|------------|--------|
 | 0 |Unknown |如果某设备未加入工作区，则设备处于未知状态 |
 | 1 |成功 |成功加入工作区 |
@@ -211,7 +211,7 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 
 ## <a name="example"></a>示例
 
-| ManagementAgentTypeID  | Name | 描述 |
+| ManagementAgentTypeID  | 名称 | 描述 |
 |---------|------------|--------|
 | 1 |EAS | 设备通过 Exchange Active Sync 管理 |
 | 2 |MDM | 设备由 MDM 代理管理 |
