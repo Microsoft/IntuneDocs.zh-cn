@@ -1,7 +1,7 @@
 ---
-title: "Intune 策略允许/阻止使用 Samsung KNOX 的应用"
+title: "Intune 策略允许/阻止在 Samsung Knox 设备上运行应用"
 titlesuffix: Azure portal
-description: "创建自定义配置文件，以允许和阻止适用于 Samsung KNOX 标准版设备的应用。"
+description: "创建自定义配置文件，以允许和阻止在 Samsung Knox Standard 设备上运行应用。"
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -15,13 +15,13 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aaa85347dc647658faf981e93d7fb0ea60c9e296
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用自定义策略以允许和阻止适用于 Samsung KNOX 标准版设备的应用
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用自定义策略允许和阻止在 Samsung Knox Standard 设备上运行应用
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,14 +30,14 @@ ms.lasthandoff: 12/12/2017
 - 阻止在设备上运行的应用的列表。 阻止运行此列表中的应用，即使应用此策略时已安装这些应用也是如此。
 - 允许设备用户从 Google Play 商店中安装的应用的列表。 仅可安装你列出的应用。 其他应用不能从应用商店安装。
 
-仅运行 Samsung KNOX 标准版的设备可以使用这些设置。
+这些设置只可供运行 Samsung Knox Standard 的设备使用。
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>创建允许或阻止的应用列表
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
+2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 2. 在配置文件边栏选项卡列表中，选择“创建配置文件”。
 3. 在“创建配置文件”边栏选项卡上，输入设备配置文件的“名称”和可选“描述”。
 2. 选择“Android”“平台类型”，以及“自定义”“配置文件类型”。

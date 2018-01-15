@@ -14,26 +14,26 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ff0e98c710676c257822c14661e6908849ae053
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 031ae18fb88a04cd02ca3ced5c39a33e49610bef
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
 > [!NOTE]
-> 建议首先阅读 [ Intune App SDK 入门指南](app-sdk-get-started.md)一文，该文章介绍了如何在每个受支持的平台准备集成。
+> 建议首先阅读 [Intune App SDK 入门指南](app-sdk-get-started.md)一文，该文章介绍了如何在每个受支持的平台准备集成。
 
 通过 Microsoft Intune App SDK for iOS，可将 Intune 应用保护策略（也称为 **APP** 或 **MAM 策略**）合并到本机 iOS 应用中。 启用了 MAM 的应用程序是指与 Intune App SDK 集成的应用程序。 在 Intune 主动管理移动应用时，IT 管理员可将应用保护策略部署到该应用。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 * 需要运行 OS X 10.8.5 或更高版本的 Mac OS 计算机，且需安装 Xcode 8 或更高版本。
 
 * 应用必须适用于 iOS 9 或更高版本。
 
-* 查看 [Intune App SDK for iOS 许可条款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 打印并保留一份许可条款，以留作记录。 下载和使用用于 iOS 的 Intune App SDK 即表示你同意这些许可条款。  如果不接受这些条款，请不要使用此软件。
+* 查看 [Intune App SDK for iOS 许可条款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 打印并保留一份许可条款副本，留作记录。 下载和使用用于 iOS 的 Intune App SDK 即表示你同意这些许可条款。  如果不接受这些条款，请不要使用此软件。
 
 * 在 [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) 上下载用于 iOS 的 Intune App SDK 的文件。
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 12/08/2017
 
 * **libIntuneMAM.a**：Intune App SDK 静态库。 如果应用不使用扩展，请将此库链接到项目，为 Intune 移动应用程序管理启用应用。
 
-* **IntuneMAM.framework**：Intune App SDK 框架。 将此框架链接到项目，为 Intune 移动应用程序管理启用应用。 如果应用使用扩展，则使用框架而不是静态库，使项目不会创建静态库的多个副本。
+* **IntuneMAM.framework**：Intune App SDK 框架。 将此框架链接到项目，为 Intune 移动应用程序管理启用应用。 如果应用使用扩展，则使用框架而不是静态库，使项目不会创建多个静态库副本。
 
 * **IntuneMAMResources.bundle**：一个资源包，包含 SDK 所依赖的资源。
 
@@ -90,7 +90,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
     将 `-force_load {PATH_TO_LIB}/libIntuneMAM.a` 添加到以下任一项，并将 `{PATH_TO_LIB}` 替换为 Intune App SDK 的位置：
       * 项目的 `OTHER_LDFLAGS` 内部版本配置设置
-      * UI 的“其他链接器标志”
+      * Xcode UI 的“其他链接器标志”
 
         > [!NOTE]
         > 要查找 `PATH_TO_LIB`，请选择文件 `libIntuneMAM.a`，并从“文件”菜单中选择“获取信息”。 复制并粘贴“信息”窗口中“常规”部分的“位置”信息（路径）。
@@ -99,28 +99,9 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
     ![Intune App SDK iOS：复制资源包](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-3. 将以下 iOS 框架添加到项目：
-    * MessageUI.framework
-    * Security.framework
-    * MobileCoreServices.framework
-    * SystemConfiguration.framework
-    * libsqlite3.tbd
-    * libc++.tbd
-    * ImageIO.framework
-    * LocalAuthentication.framework
-    * AudioToolbox.framework
+    向项目添加下面这些 iOS 框架：          * MessageUI.framework          * Security.framework          * MobileCoreServices.framework          * SystemConfiguration.framework          * libsqlite3.tbd          * libc++.tbd          * ImageIO.framework          * LocalAuthentication.framework          * AudioToolbox.framework          * QuartzCore.framework          * WebKit.framework
 
-4. 如果移动应用在其 Info.plist 文件中定义了主要 Nib 或 Storyboard 文件，请剪切“Main Storyboard”或“Main Nib”字段。 在 Info.plist 中，使用以下键名称（若适用）在名为 **IntuneMAMSettings** 的新字典下方粘贴这些字段及其对应值：
-    * MainStoryboardFile
-    * MainStoryboardFile~ipad
-    * MainNibFile
-    * MainNibFile ~ ipad
-    > [!NOTE]
-  > 如果移动应用的 Info.plist 文件中未定义主要 Nib 或 Storyboard 文件，那么这些设置为非必需字段。
-
-    可以使用原始格式查看 Info.plist 文件（目的是查看键名称），方法是右键单击文档正文的任意位置，然后将查看类型更改为“显示原始键/值”。
-
-5. 选择每个项目目标的“功能”并启用“密钥链共享”开关，启用密钥链共享（如果尚未启用）。 需要启用 Keychain 共享才能继续执行下一步。
+3. 选择每个项目目标的“功能”并启用“密钥链共享”开关，启用密钥链共享（如果尚未启用）。 需要启用 Keychain 共享才能继续执行下一步。
 
   > [!NOTE]
     > 预配的配置文件需要支持新的 keychain 共享值。 keychain 访问组应支持通配符。 可通过以下方法进行验证：在文本编辑器中打开 .mobileprovision 文件，搜索 **keychain-access-groups**，确保其中包含通配符。 例如：
@@ -131,7 +112,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
     </array>
     ```
 
-6. 启用 keychain 共享后，请按照以下步骤创建单独的访问组，以便 Intune App SDK 可在其中存储数据。 可以使用 UI 或使用授权文件创建 keychain 访问组。 如果你使用 UI 创建密钥链访问组，请务必按照以下步骤操作：
+4. 启用 keychain 共享后，请按照以下步骤创建单独的访问组，以便 Intune App SDK 可在其中存储数据。 可使用 UI 或使用授权文件创建密钥链访问组。 如果你使用 UI 创建密钥链访问组，请务必按照以下步骤操作：
 
     1. 如果移动应用未定义任何 keychain 访问组，请将此应用的程序包 ID 添加为第一个组。
 
@@ -147,38 +128,22 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > 授权文件是一个 XML 文件，对于移动应用程序，XML 文件是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。 如果应用以前没有权利文件，则启用密钥链共享（步骤 6）后 Xcode 应已为应用程序生成了一个权利文件。
+    > 授权文件是一个 XML 文件，它对于移动应用程序是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。 如果应用以前没有权利文件，那么启用密钥链共享（第 3 步）应该已导致 Xcode 为应用生成一个权利文件。
 
-7. 如果应用在其 Info.plist 文件中定义了 URL 方案，则为每个 URL 方案添加另一个具有 `-intunemam` 后缀的方案。
+5. 在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中添加应用传递到 `UIApplication canOpenURL` 的各个协议。 请务必先保存所做的更改，再继续执行下一步。
 
-8. 如果应用在其 Info.plist 文件中定义了文档类型，则使用 "com.microsoft.intune.mam." 前缀为每一项的“文档内容类型 UTI”数组添加每个字符串的重复项 。
-
-9. 对于 iOS 9+ 上开发的移动应用，需要在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中包括应用传递到 `UIApplication canOpenURL` 的每个协议。 此外，对于每个列出的协议，添加新的协议，并对新协议追加 `-intunemam`。 你还必须在此数组中包括 `http-intunemam`、 `https-intunemam`和 `ms-outlook-intunemam` 。
-
-10. 如果应用在其授权中定义了应用组，则将这些组作为字符串数组添加到 `AppGroupIdentifiers` 键下面的 **IntuneMAMSettings** 字典中。
-
-## <a name="using-the-intune-mam-configurator-tool"></a>使用 Intune MAM 配置器工具
-
-Intune MAM 配置器工具现在可处理手动集成 SDK 所需的全部 info.plist 操作。 可在 Intune App SDK for iOS 的存储库中查找它。 此工具无法处理任何其它应用特定的设置，如 multi-ID 和 AAD 设置等。 该工具有 3 个参数：
- 
+6. 使用 [SDK 存储库](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)中的 IntuneMAMConfigurator 工具完成配置应用的 Info.plist。 该工具有 3 个参数：
 |属性|如何使用它|
 |---------------|--------------------------------|
 |- i |  `<Path to the input plist>` |
-|- e | 授权文件 |
-|- o |  （可选）`<Path for the changed input plist>` |
-    
-Intune MAM 配置器工具可用于更新以下内容：
-* 将应用的任意主要情节提要和/或主要 Nib 文件更新至 IntuneMAMSettings。
-* 任何在应用的 Info.plist 文件中定义的 URL 方案，每个方案都具有 intunemam 后缀。
-* 任何在应用的 Info.plist 文件中定义的文档类型，针对每个项的“文档内容类型 UTI”数组，为每个具有“com.microsoft.intune.mam”的字符串都添加重复项。 。
-* 任何在应用的授权中定义的应用组，都将这些组作为字符串数组添加到 AppGroupIdentifiers 键下面的 IntuneMAMSettings 字典中。
-    
-> [!Note]
-> 如果决定使用此工具而非手动执行 info.plist 操作，我们建议只要对应用的 info.plist 或授权进行了更改，就应重新运行该工具一次。
+|- e | `<Path to the entitlements file>` |
+|- o |  （可选）`<Path to the output plist>` |
+
+如果未指定“-o”参数，将就地修改输入文件。 因为此工具是幂等类型，所以只要更改了应用的 Info.plist 或权利文件，就应该重新运行此工具。 还应在更新 Intune SDK 时下载并运行此工具的最新版本，以防最新版本中更改了 Info.plist 配置要求。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>配置 Azure Active Directory Authentication Library (ADAL)
 
-Intune App SDK 使用 [Azure Active Directory Authentication Library](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 进行身份验证和条件启动。 它还依赖于 ADAL 以注册带有 MAM 服务的用户标识，用于不含设备注册方案的管理。
+Intune App SDK 使用 [Azure Active Directory Authentication Library](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 进行身份验证和条件启动。 它还依赖 ADAL 向 MAM 服务注册用户标识，用于不含设备注册方案的管理。
 
 通常，ADAL 会要求应用注册 Azure Active Directory (AAD) 并获得唯一的 ID（客户端 ID）和其他标识符，以保护授予该应用的令牌。 除非另有规定，否则连接 Azure AD 时，Intune App SDK 使用默认的注册值。  
 
@@ -186,17 +151,19 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 ### <a name="recommendations"></a>建议
 
-建议应用链接到其主分支上的[最新版本的 ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases)。 Intune App SDK 目前使用 ADAL 的代理分支，以支持需要条件访问的应用。 （因此，这些应用依赖于 Microsoft Authenticator 应用。）但是，SDK 仍与 ADAL 的主分支兼容。 使用适合于你的应用的分支。
+建议应用链接到其主分支上的[最新版本的 ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases)。 Intune App SDK 目前使用 ADAL 的代理分支，以支持需要条件访问的应用。 （因此，这些应用依赖于 Microsoft Authenticator 应用。）但是，SDK 仍与 ADAL 的主分支兼容。 使用适合应用的分支。
 
 ### <a name="link-to-adal-binaries"></a>链接到 ADAL 二进制文件
 
 按照以下步骤将你的应用链接到 ADAL 二进制文件：
 
-1. 从 GitHub 下载[适用于 Objective-C 的 Azure Active Directory Authentication Library (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-objc)，然后遵循有关如何使用 Git 子模块或 CocoaPods 下载 ADAL 的[说明](https://github.com/AzureAD/azure-activedirectory-library-for-objc/blob/master/README.md)执行操作。
+1. 从 GitHub 下载[适用于 Objective-C 的 Azure Active Directory Authentication Library (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-objc)，然后遵循有关如何使用 Git 子模块或 CocoaPods 下载 ADAL 的[说明](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download)执行操作。
 
-2. 在项目中包括 `ADALiOSBundle.bundle` 资源包，方法是在“构建阶段”将此资源包拖放到“复制资源包”下面。
-
-3. 将 `-force_load {PATH_TO_LIB}/libADALiOS.a` 添加到项目的 `OTHER_LDFLAGS` 内部版本配置设置中或 UI 的“其他链接器标志”中。 应将 `PATH_TO_LIB` 替换为 ADAL 二进制文件位置。
+2. 将 ADAL 框架（选项 1）或静态库（选项 2）添加到项目：
+    
+    **选项 1（推荐）**：将 `ADAL.framework` 拖到项目目标的“内嵌二进制文件”列表。
+    
+    **选项 2**：将 `libADALiOS.a` 库拖到项目目标的“链接的框架和库”列表中。 将 `-force_load {PATH_TO_LIB}/libADALiOS.a` 添加到项目的 `OTHER_LDFLAGS` 生成配置设置或 Xcode UI 的“其他链接器标志”中。 应将 `PATH_TO_LIB` 替换为 ADAL 二进制文件位置。
 
 
 
@@ -206,9 +173,9 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 1. 如果应用未定义任何 keychain 访问组，请将此应用的程序包 ID 添加为第一个组。
 
-2. 在 keychain 权利中添加 `com.microsoft.adalcache` 和 `com.microsoft.workplacejoin` 访问组，启用 ADAL 单一登录 (SSO)。
+2. 通过向密钥链访问组添加 `com.microsoft.adalcache`，启用 ADAL 单一登录 (SSO)。
 
-3. 如果要显式设置 ADAL 共享缓存 keychain 组，请确保将其设置为 `<app_id_prefix>.com.microsoft.adalcache`。 除非替代 ADAL，否则它将完成此设置。 如果希望指定一个自定义 keychain 组来替代 `com.microsoft.adalcache`，请在“IntuneMAMSettings”下的 Info.plist 文件中使用键 `ADALCacheKeychainGroupOverride` 进行指定。
+3. 如果希望指定一个自定义 keychain 组来替代 `com.microsoft.adalcache`，请在“IntuneMAMSettings”下的 Info.plist 文件中使用键 `ADALCacheKeychainGroupOverride` 进行指定。
 
 ### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>配置 Intune App SDK 的 ADAL 设置
 
@@ -226,37 +193,29 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 2. 另外，在键名称为 `ADALAuthority` 的 **IntuneMAMSettings** 字典下指定 Azure AD 颁发机构。
 
-3. 同时，在键名称为 `ADALRedirectUri` 的 **IntuneMAMSettings** 字典下指定要用于 ADAL 调用的重定向 URI。 可能还需要根据应用的重定向 URI 的格式指定 `ADALRedirectScheme` 。
+3. 同时，在键名称为 `ADALRedirectUri` 的 **IntuneMAMSettings** 字典下指定要用于 ADAL 调用的重定向 URI。 也可以改为指定 `ADALRedirectScheme`（如果应用的重定向 URI 采用格式 `scheme://bundle_id` 的话）。
 
 
-此外，你可以使用运行时特定于租户的 URL 替代 Azure AD 主管机构 URL。 若要执行此操作，只需在 `IntuneMAMPolicyManager` 实例上设置 `aadAuthorityUriOverride` 属性。
+此外，应用还可以在运行时替代这些 Azure AD 设置。 为此，只需在 `IntuneMAMPolicyManager` 实例上设置 `aadAuthorityUriOverride`、`aadClientIdOverride` 和 `aadRedirectUriOverride` 属性。
 
 > [!NOTE]
-> [没有设备注册情况下的 APP](#App-protection-policy-without-device-enrollment) 必须设置 AAD 主管机构 URL，用于允许 SDK 重用应用提取的 ADAL 刷新令牌。
-
-SDK 会继续使用此颁发机构 URL 进行策略刷新和任何后续注册请求，除非该值被清除或更改。  因此，请务必在托管用户注销此应用后清除该值，并在新的托管用户登录时重置该值。
+    > 对于不需要在运行时确定的所有静态设置，建议使用 Info.plist 方法。 分配给 `IntuneMAMPolicyManager` 属性的值优先于 Info.plist 中指定的任何相应值；即使在重启应用后，值也会暂留。 在用户遭取消注册或值被清除或更改前，SDK 会继续将它们用于策略签入。
 
 ### <a name="if-your-app-does-not-use-adal"></a>应用不使用 ADAL 的情况
 
-如果应用不使用 ADAL，Intune App SDK 将为 ADAL 参数提供默认值，并处理针对 Azure AD 的身份验证。 无需指定上面列出的 ADAL 设置的任何值。
+如果应用不使用 ADAL，Intune App SDK 会为 ADAL 参数提供默认值，并处理针对 Azure AD 的身份验证。 无需指定上面列出的 ADAL 设置的任何值。
 
-## <a name="app-protection-policy-without-device-enrollment"></a>无需设备注册的应用保护策略
+## <a name="receiving-app-protection-policy"></a>接收应用保护策略
 
 ### <a name="overview"></a>概述
-无需设备注册的 Intune 应用保护策略，也称为 **APP-WE** 或 MAM-WE，允许 Intune 管理应用而无需设备注册 Intune 移动设备管理 (MDM)。 若要支持该新功能，应用必须注册用户帐户进行管理。 若要使用新的 API，请执行以下步骤：
+若要接收 Intune 应用保护策略，应用必须启动向 Intune 服务注册的请求。 可以在 Intune 控制台中配置应用，这样无论是否有设备注册，都可以接收应用保护策略。 没有设备注册的应用保护策略亦称为“APP-WE”或“MAM-WE”，这样应用就可以由 Intune 管理，而无需在 Intune 移动设备管理 (MDM) 中注册设备。 在这两种情况下，都必须向 Intune 服务注册应用，才能接收策略。
 
-1. 使用 Intune App SDK 的最新版本，无论设备是否注册，该版本都支持应用管理。
+### <a name="apps-that-use-adal"></a>使用 ADAL 的应用
 
-2. 将 IntuneMAMEnrollment.h 添加到任何要调用 API 的文件。
-
-### <a name="register-user-accounts"></a>注册用户帐户
-
-如果应用代表指定的用户帐户注册 APP-WE 服务，则该应用可从 Intune 服务接收应用保护策略。 应用负责向 SDK 注册任何新登录的用户。 新用户帐户经身份验证后，应用应调用 Headers/IntuneMAMEnrollment.h 中的 `registerAndEnrollAccount` 方法：
+已使用 ADAL 的应用应在用户已成功通过身份验证后对 `IntuneMAMEnrollmentManager` 实例调用 `registerAndEnrollAccount` 方法：
 
 ```objc
-/**
-
-
+/*
  *  This method will add the account to the list of registered accounts.
  *  An enrollment request will immediately be started.
  *  @param identity The UPN of the account to be registered with the SDK
@@ -265,13 +224,44 @@ SDK 会继续使用此颁发机构 URL 进行策略刷新和任何后续注册�
 (void)registerAndEnrollAccount:(NSString *)identity;
 
 ```
-通过调用 `registerAndEnrollAccount` 方法，SDK 会注册用户帐户并尝试代表此帐户注册应用。 如果注册由于任何原因失败，SDK 会在 24 小时后自动重试注册。 出于调试目的，应用可通过委托接收有关任何注册请求的结果的通知。
+
+通过调用 `registerAndEnrollAccount` 方法，SDK 会注册用户帐户并尝试代表此帐户注册应用。 如果注册由于任何原因失败，SDK 会在 24 小时后自动重试注册。 出于调试目的，应用可通过委托接收有关任何注册请求的结果的[通知](#Status-result-and-debug-notifications)。
 
 在调用此 API 后，应用可继续正常工作。 如果注册成功，SDK 会通知用户需要重启应用。 此时，用户可立即重启应用。
 
+```objc
+[[IntuneMAMEnrollmentManager instance] registerAndEnrollAccount:@”user@foo.com”];
+```
+
+### <a name="apps-that-do-not-use-adal"></a>不使用 ADAL 的应用
+
+未使用 ADAL 登录用户的应用仍可从 Intune 服务接收应用保护策略，方法是调用 API 使 SDK 处理该身份验证。 应用尚未使用 Azure AD 对用户进行身份验证，但仍需要检索应用保护策略以帮助保护数据时，应使用此方法。 例如，正在使用另一个身份验证服务进行应用登录时，或应用完全不支持登录时。 为此，应用应对 `IntuneMAMEnrollmentManager` 实例调用 `loginAndEnrollAccount` 方法：
+
+```objc
+/**
+ *  Creates an enrollment request which is started immediately.
+ *  If no token can be retrieved for the identity, the user will be prompted
+ *  to enter their credentials, after which enrollment will be retried.
+ *  @param identity The UPN of the account to be logged in and enrolled.
+ */
+ (void)loginAndEnrollAccount: (NSString *)identity;
+
+```
+
+通过调用此方法，如果找不到任何现有令牌，SDK 会提示用户输入凭据。 随后，SDK 会尝试代表所提供的用户帐户向 Intune 服务注册应用。 可以使用作为标识的“nil”调用此方法。 在这种情况下，SDK 会使用设备上的现有托管用户进行注册（在 MDM 中），或在找不到任何现有用户时提示用户输入用户名。
+
+如果注册失败，应用应考虑在之后某一时间再次调用此 API，取决于失败的详细信息。 应用可通过委托接收有关任何注册请求的结果的[通知](#Status-result-and-debug-notifications)。
+
+在调用此 API 后，应用可继续正常工作。 如果注册成功，SDK 会通知用户需要重启应用。
+
+例如：
+```objc
+[[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
+```
+
 ### <a name="deregister-user-accounts"></a>取消注册用户帐户
 
-在用户注销应用之前，应用应从 SDK 取消注册用户。 这样做可确保：
+在用户注销应用之前，应用应从 SDK 取消注册用户。 这可确保：
 
 1. 不再对用户的帐户进行注册重试。
 
@@ -279,7 +269,7 @@ SDK 会继续使用此颁发机构 URL 进行策略刷新和任何后续注册�
 
 3. 如果应用启动选择性擦除（可选），则将删除所有相关数据。
 
-在用户注销之前，应用需调用 `Headers/IntuneMAMEnrollment.h` 中的以下 API：
+在用户注销前，应用应对 `IntuneMAMEnrollmentManager` 实例调用以下方法：
 
 ```objc
 /*
@@ -293,38 +283,18 @@ SDK 会继续使用此颁发机构 URL 进行策略刷新和任何后续注册�
  *  @param identity The UPN of the account to be removed.
  *  @param doWipe   If YES, a selective wipe if the account is un-enrolled
  */
-
 (void)deRegisterAndUnenrollAccount:(NSString *)identity withWipe:(BOOL)doWipe;
+
 ```
 
-在删除用户帐户的 Azure AD 令牌之前，必须调用此方法。 SDK 需要用户帐户的 AAD 令牌才能代表用户向 APP-WE 服务发出特定请求。
+在删除用户帐户的 Azure AD 令牌之前，必须调用此方法。 SDK 需要用户帐户的 AAD 令牌，才能代表用户向 Intune 服务发出特定请求。
 
-如果应用要自行删除用户的公司数据，则可将 `doWipe` 标志设置为 false。 否则，该应用可让 SDK 启动选择性擦除。 这会导致调用应用的选择性擦除委托。
+如果应用要自行删除用户的公司数据，则可将 `doWipe` 标志设置为 false。 否则，应用可让 SDK 启动选择性擦除。 这会导致调用应用的选择性擦除委托。
 
+例如：
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
-
-### <a name="apps-that-do-not-use-adal"></a>不使用 ADAL 的应用
-
-未使用 ADAL 登录用户的应用仍可从 Intune 服务接收应用保护策略，方法是调用 API 使 SDK 处理该身份验证。 当应用尚未使用 Azure AD 对用户进行身份验证，但仍需要检索应用保护策略以帮助保护数据时，应使用此方法。 例如，正在使用另一个身份验证服务进行应用登录时，或应用完全不支持登录时。 若要执行此操作，应用程序应调用 Headers/IntuneMAMEnrollment.h 中的 `loginAndEnrollAccount` 方法：
-
-```objc
-/**
- *  Creates an enrollment request which is started immediately.
- *  If no token can be retrieved for the identity, the user will be prompted
- *  to enter their credentials, after which enrollment will be retried.
- *  @param identity The UPN of the account to be logged in and enrolled.
- */
- (void)loginAndEnrollAccount: (NSString *)identity;
-
-```
-
-通过调用此方法，如果找不到任何现有令牌，SDK 会提示用户输入凭据。 随后，SDK 将尝试代表提供的用户帐户向 APP-WE 服务注册应用。 可以使用作为标识的“nil”调用此方法。 该情况下，SDK 会使用设备上现有的管理用户进行注册，或在找不到任何现有用户时提示用户输入用户名。
-
-如果注册失败，应用应考虑在之后某一时间再次调用此 API，取决于失败的详细信息。 应用可通过委托接收有关任何注册请求的结果的[通知](#Status-result-and-debug-notifications)。
-
-在调用此 API 后，应用可继续正常工作。 如果注册成功，SDK 会通知用户需要重启应用。
 
 ## <a name="status-result-and-debug-notifications"></a>状态、结果和调试通知
 
@@ -407,7 +377,7 @@ SDK 会继续使用此颁发机构 URL 进行策略刷新和任何后续注册�
 
  - 如果返回 true，则应用程序必须处理重启。   
 
- - 如果返回 false，则 SDK 会在此方法返回后重启该应用程序。 SDK 会立即显示一个对话框，告知用户重启应用程序。
+ - 如果返回 false，则 SDK 会在此方法返回后重启应用程序。 SDK 会立即显示一个对话框，告知用户重启应用程序。
 
 ## <a name="customize-your-apps-behavior"></a>自定义应用行为
 
@@ -459,9 +429,9 @@ Setting  | 类型  | 定义 | 是否必需？
 ADALClientId  | 字符串  | 应用的 Azure AD 客户端标识符。 | 如果应用使用 ADAL 则需要。 |
 ADALAuthority | 字符串 | 应用使用的 Azure AD 颁发机构。 应使用已配置 AAD 帐户的你自己的环境。 | 如果应用使用 ADAL 则需要。 如果此值不存在，则使用 Intune 默认值。|
 ADALRedirectUri  | 字符串  | 应用的 Azure AD 重定向 URI。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。  |
-ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。 |
+ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用程序的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。 |
 ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否会将所有 ADAL 日志（包括应用的 ADAL 调用（如果有））路由到它自己的日志文件。 默认值为 NO。 如果应用要设置其自己的 ADAL 日志回调，则设置为 YES。 | 可选。 |
-ADALCacheKeychainGroupOverride | 字符串  | 指定要用于 ADAL 缓存而不是“com.microsoft.adalcache”的 keychain 组。 注意，这并不包含应用 ID 前缀。 这将作为运行时提供的字符串的前缀。 | 可选。 |
+ADALCacheKeychainGroupOverride | 字符串  | 指定要用于 ADAL 缓存而不是“com.microsoft.adalcache”的 keychain 组。 注意，这并不包含应用 ID 前缀。 这将作为运行时所提供字符串的前缀。 | 可选。 |
 AppGroupIdentifiers | 字符串数组  | 应用的授权 com.apple.security.application 组部分的应用组数组。 | 如果应用使用应用组，则需要此设置。 |
 ContainingAppBundleId | 字符串 | 指定扩展的包含应用程序的程序包 ID。 | iOS 扩展需要此设置。 |
 DebugSettingsEnabled| 布尔值 | 如果设置为“是”，则可以应用设置包中的测试策略。 应用程序*不*会因启用此设置而提供。 | 可选。 |
@@ -471,7 +441,7 @@ AutoEnrollOnLaunch| 布尔值| 指定在检测到现有托管标识且应用尚�
 MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为 YES 时，无法将应用提交到应用商店。 MAMPolicyRequired 设置为 YES 时，AutoEnrollOnLaunch 也应设置为 YES。 | 可选。 |
 MAMPolicyWarnAbsent | 布尔值| 如果应用没有 Intune 应用保护策略，指定应用是否在启动期间警告用户。 <br><br> 注意：解除警报后，仍将允许用户在没有策略的情况下使用应用。 | 可选。 |
 MultiIdentity | 布尔值| 指定应用是否识别多身份标识。 | 可选。 |
-SplashIconFile~ipad <br>IntuneMAMSettings | 字符串  | 指定 Intune 初始屏幕（启动）图标文件。 | 可选。 |
+SplashIconFile <br>IntuneMAMSettings | 字符串  | 指定 Intune 初始屏幕（启动）图标文件。 | 可选。 |
 SplashDuration | 数字 | 应用程序启动时显示 Intune 启动屏幕的最小时间（以秒为单位）。 默认值为 1.5。 | 可选。 |
 BackgroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的背景色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。   | 可选。 默认为浅灰色。 |
 ForegroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的前景色，如文本颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。  | 可选。 默认为黑色。 |
@@ -483,7 +453,7 @@ WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 U
 > 如果应用程序将发布到应用商店，根据应用商店标准，必须将 `MAMPolicyRequired` 设置为“否”。
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>为 iOS 应用程序启用面向 MAM 的配置
-面向 MAM 的配置允许应用通过 Intune App SDK 接收配置数据。 应用程序所有者/开发人员须定义此数据的格式和变体并将其传达给 Intune 客户。 Intune 管理员可以通过 Intune Azure 门户定位并部署配置数据。 从适用于 iOS (v 7.0.1) 的 Intune App SDK 开始，参与面向 MAM 的配置的应用均可通过 MAM 服务获取面向 MAM 的配置数据。 通过 MAM 服务直接将应用程序配置数据推送到应用，而非通过 MDM 渠道。 Intune App SDK 提供一个类，可用于访问从这些控制台检索的数据。 请考虑以下先决条件： <br>
+面向 MAM 的配置允许应用通过 Intune App SDK 接收配置数据。 应用程序所有者/开发人员须定义此数据的格式和变体并将其传达给 Intune 客户。 Intune 管理员可以通过 Intune Azure 门户定位并部署配置数据。 自 Intune App SDK for iOS (v7.0.1) 起，参与 MAM 目标配置的应用均可通过 MAM 服务获取 MAM 目标配置数据。 通过 MAM 服务直接将应用程序配置数据推送到应用，而非通过 MDM 渠道。 Intune App SDK 提供一个类，可用于访问从这些控制台检索的数据。 请考虑以下先决条件： <br>
 * 访问面向 MAM 的配置 UI 之前，应用需注册 MAM-WE。 有关 MAM-WE 的详细信息，请参阅 [Intune App SDK 指南中的应用保护策略（不注册设备）](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment)。
 * 将 ```IntuneMAMAppConfigManager.h``` 包括在应用的源文件中。
 * 调用 ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` 以获取应用配置对象。
@@ -510,7 +480,7 @@ WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 U
 
 应用必须在其意图更改现用身份时通知应用 SDK。 SDK 也会在需要标识更改时通知应用。 目前，仅支持一个托管标识。 用户注册设备或应用后，SDK 会使用此标识并将其视为主要托管标识。 应用中的其他用户会被视为具有不受限策略设置的非托管标识。
 
-注意，标识被简单地定义为字符串。 标识不区分大小写。 向 SDK 请求标识可能不会返回在设置标识时最初使用的相同大小写情况。
+请注意，标识简单地定义为字符串。 标识不区分大小写。 向 SDK 请求标识可能不会返回在设置标识时最初使用的相同大小写情况。
 
 ### <a name="identity-overview"></a>标识概述
 
@@ -568,7 +538,7 @@ SDK 跟踪本地文件所有者的标识，并相应地应用策略。 文件所
 
     标识切换的结果会通过完成处理程序异步返回到应用。 应用应推迟打开文档、邮箱或标签页，直到返回成功结果代码。 如果标识切换失败，应用应取消任务。
 
-* **SDK 启动标识切换**：
+* SDK 启动标识切换：
 
     有时，SDK 需要要求应用切换到特定标识。 多身份标识应用必须实现 `IntuneMAMPolicyDelegate` 中的 `identitySwitchRequired` 方法来处理此请求。
 
@@ -582,46 +552,6 @@ SDK 跟踪本地文件所有者的标识，并相应地应用策略。 文件所
 
     注意，需从后台线程调用此方法。 除非已删除用户的所有数据，否则应用不会返回任何值（文件除外，应用会返回 FALSE）。
 
-## <a name="test-app-protection-policy-settings-in-xcode"></a>测试 Xcode 中的应用保护策略设置
-
-在手动测试生产中的启用 Intune 的应用之前，可以在 Xcode 中使用 Settings.bundle 文件。 这样，无需连接到 Intune 就可以设置应用保护策略以进行测试。
-
-### <a name="enable-policy-testing"></a>启用策略测试
-
-请按照以下步骤启用 Xcode 中的策略测试：
-
-1. 请务必在调试版本中执行。 右键单击项目中的顶层文件夹，以添加 Settings.bundle 文件。 从菜单中选择“添加” > “新建文件”。 在“资源”下选择“设置包”模板。
-
-2.  将以下块复制到用于调试版本的 Settings.bundle/**Root.plist** 文件中：
-    ```xml
-    <key>PreferenceSpecifiers</key>
-    <array>
-        <dict>
-            <key>Type</key>
-            <string>PSChildPaneSpecifier</string>
-            <key>Title</key>
-            <string>MDM Debug Settings</string>
-            <key>Key</key>
-            <string>MAMDebugSettings</string>
-            <key>File</key>
-            <string>MAMDebugSettings</string>
-        </dict>
-    </array>
-    ```
-
-3. 在应用的 Info.plist 的 **IntuneMAMSettings** 字典中，添加一个名为“DebugSettingsEnabled”的布尔值。 将 DebugSettingsEnabled 的值设置为“YES”。
-
-
-
-### <a name="app-protection-policy-settings"></a>应用保护策略设置
-
-下表介绍了使用 MAMDebugSettings.plist 进行测试的应用保护策略设置。 要打开设置，请将其添加到 MAMDebugSettings.plist 中。
-
-| 策略设置名称 | 描述 | 可能值 |
-| -- | -- | -- |
-| AccessRecheckOfflineTimeout | 启用身份验证后，在 Intune 阻止应用启动或恢复之前，应用处于脱机模式的时长（以分钟为单位）。 | 任何大于 0 的整数 |
-|   AccessRecheckOnlineTimeout | 启动或恢复时，在系统提示用户输入 PIN 或进行身份验证之前，应用可运行的时长（如果启用了身份验证或 PIN 用于访问）。 | 任何大于 0 的整数 |
-| AppSharingFromLevel | 指定此应用可以接收哪些应用的数据。 | 0 = |
 ## <a name="ios-best-practices"></a>iOS 最佳做法
 
 以下是针对 iOS 进行开发时建议采用的最佳做法：
@@ -633,20 +563,20 @@ SDK 跟踪本地文件所有者的标识，并相应地应用策略。 文件所
 ## <a name="faqs"></a>常见问题解答
 
 
-**是否所有 API 都可通过本机 Swift 或 Objective-C 和 Swift 互操作性进行寻址？**
+是否所有 API 都可通过本机 Swift 或 Objective-C 和 Swift 互操作性进行寻址？
 
 Intune App SDK API 仅可采用 Objective-C 且不支持**本机** Swift。 Objective-C 必须与 Swift 具有互操作性。
 
 
 **应用程序的所有用户是否都需要注册 APP-WE 服务？**
 
-否。 实际上，只有工作或学校帐户需要向 Intune App SDK 注册。 应用负责确定所使用的帐户是否为工作或学校账户。   
+不能。 实际上，只有工作或学校帐户需要向 Intune App SDK 注册。 应用负责确定所使用的帐户是否为工作或学校账户。   
 
 **已登录到应用程序的用户呢？他们是否需要注册？**
 
 应用程序负责在用户成功通过身份验证后注册用户。 此外，应用程序还负责注册任何现有帐户，这些帐户创建时可能应用程序中还没有 MDM 和 MAM 功能。   
 
-若要执行此操作，应用程序应使用 `registeredAccounts:` 方法。 此方法会返回 NSDictionary，其中包含所有已注册到 Intune MAM 服务的帐户。 如果应用程序中没有任何现有帐户存在于列表中，则应用程序应注册，并通过 `registerAndEnrollAccount:` 注册这些帐户。
+为此，应用程序应使用 `registeredAccounts:` 方法。 此方法会返回 NSDictionary，其中包含所有已注册到 Intune MAM 服务的帐户。 如果应用程序中没有任何现有帐户存在于列表中，则应用程序应注册，并通过 `registerAndEnrollAccount:` 注册这些帐户。
 
 **SDK 多长时间重试一次注册？**
 
@@ -661,9 +591,9 @@ SDK 将在后台定期执行以下操作：
  - 如果应用程序尚未注册，SDK 会每隔 24 小时尝试注册所有已注册的帐户。
  - 如果应用程序已注册，SDK 会每隔 8 小时检查应用保护策略更新。
 
-取消注册用户会通知 SDK 用户不再使用该应用程序，并且 SDK 可以停止该用户帐户的任何周期事件。 如有必要，这也会触发应用取消注册和选择性擦除。
+取消注册用户会通知 SDK - 用户不再使用该应用程序，并且 SDK 可以停止该用户帐户的任何周期事件。 如有必要，这也会触发应用取消注册和选择性擦除。
 
-**是否应在取消注册方法中将 doWipe 标志设置为 true？**
+是否应在取消注册方法中将 doWipe 标志设置为 true？
 
 应在用户注销应用程序之前调用此方法。  如果作为注销的一部分，已从应用程序中删除用户的数据，则可将 `doWipe` 设置为 false。 但是，如果应用程序未删除用户的数据，则 `doWipe` 应设置为 true，以便 SDK 可以删除数据。
 
@@ -675,7 +605,7 @@ SDK 将在后台定期执行以下操作：
 
 ## <a name="submit-your-app-to-the-app-store"></a>将应用提交到应用商店
 
-Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这意味着它们包含适用于所有设备和模拟器体系结构的代码。 如果应用含有模拟器代码，Apple 会拒绝将其提交到应用商店。 编译针对用于仅设备构建的静态库时，链接器会自动删除其中的模拟器代码。 按照下面的步骤确保将应用上载到应用商店之前删除所有模拟器代码。
+Intune App SDK 的静态库和框架版本都是通用的二进制文件。 这意味着它们包含适用于所有设备和模拟器体系结构的代码。 如果应用含有模拟器代码，Apple 会拒绝将其提交到应用商店。 针对仅设备生成的静态库编译时，链接器会自动删除模拟器代码。 按照下面的步骤确保将应用上载到应用商店之前删除所有模拟器代码。
 
 1. 请确保 `IntuneMAM.framework` 位于桌面上。
 

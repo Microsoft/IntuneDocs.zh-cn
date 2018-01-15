@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cf2d958e5775281cca7878c54b2c9d9f593f509
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 485517f589649bdb805f94503df716b82de17b06
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Intune 的常见使用方式
 
@@ -82,7 +82,7 @@ Intune 和 Microsoft 企业移动性 + 安全性提供了独一无二的集成�
 ## <a name="issue-corporate-owned-phones-to-your-employees"></a>向员工发放公司拥有的手机
 现在很多员工都是移动办公，这使得移动设备上的工作效率成为提高竞争力的必要途径。 这些员工需要随时随地无缝访问所有公司应用和数据。 需要确保公司数据是安全的并且管理成本较低。  
 
-Intune 提供了[批量预配和管理解决方案](device-enrollment.md)（[经典门户](/intune-classic/deploy-use/manage-corporate-owned-devices)），可与当今市场上的主流公司设备管理平台集成，包括 Apple 设备注册计划和 Samsung KNOX 移动安全平台。 通过使用 Intune 集中创作设备配置，可帮助实现公司设备预配的高度自动化。  
+Intune 提供了[批量预配和管理解决方案](device-enrollment.md)（[经典门户](/intune-classic/deploy-use/manage-corporate-owned-devices)），可与当今市场上的主流公司设备管理平台集成，包括 Apple 设备注册计划和 Samsung Knox 移动安全平台。 通过使用 Intune 集中创作设备配置，可帮助实现公司设备预配的高度自动化。  
 
 想象一下：将一个未开封的 iPhone 手机盒发放给员工。 员工打开手机后，完成公司自创的设置流程，在此过程中他必须进行身份验证。 此 iPhone 经[安全策略](device-profiles.md)（[经典门户](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)）无缝配置。
 

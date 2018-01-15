@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange Connector
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 11/08/2017
 |硬件|安装连接器的计算机需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间。|users-add.md
 |Active Directory 同步|必须[设置 Active Directory 同步](users-add.md)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用连接器将 Intune 连接到 Exchange Server。|
 |其他软件|Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完全安装必须安装在托管连接器的计算机上。|
-|网络|在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
+|Network (网络)|在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange cmdlet 要求
@@ -70,7 +70,7 @@ ms.lasthandoff: 11/08/2017
 
 1. 在本地 Exchange Connector 支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](http://portal.azure.com)。
 
-2. 从左侧菜单中选择“更多服务”，然后在文本框筛选器中键入 Intune。
+2. 从左侧菜单中选择“**更多服务**”，然后在文本框筛选器中键入 **Intune**。
 
 3. 选择 Intune 后，即打开“Intune 仪表板”，选择“本地访问”。
 
@@ -133,6 +133,13 @@ Exchange Connector 设置连接后，与在 Exchange Connector 中管理的用�
 
 > [!NOTE]
 > 如果已经安装了本地 Exchange Connector 并且在某一时刻删除 Exchange 连接，则必须从安装了本地 Exchange Connector 的计算机中卸载此软件。
+
+## <a name="on-premises-exchange-connector-high-availability-support"></a>本地 Exchange 连接器高可用性支持 
+使用指定的 CAS 建立与 Exchange 的连接后，Exchange 连接器就可以发现其他 CAS。 如果主 CAS 不可用，在主 CAS 的故障修复前，连接器会先故障转移到其他可用的 CAS。 此功能默认处于启用状态。 可以按照下面的过程操作，禁用此功能：
+1. 在安装 Exchange Connector 的服务器上，依次转到“%*ProgramData*%\Microsoft\Windows Intune Exchange Connector”。 
+2. 使用文本编辑器打开“OnPremisesExchangeConnectorServiceConfiguration.xml”。
+3. 将“&lt;IsCasFailoverEnabled&gt;true&lt;/IsCasFailoverEnabled&gt;”更改为“&lt;IsCasFailoverEnabled&gt;false&lt;/IsCasFailoverEnabled&gt;”，禁用此功能。    
+
 
 ## <a name="monitor-the-exchange-connector-activity"></a>监视 Exchange 连接器活动
 

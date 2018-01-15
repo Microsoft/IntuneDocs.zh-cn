@@ -3,8 +3,8 @@ title: "如何在 Intune 中使用设备类别"
 titleSuffix: Azure portal
 description: "了解如何使用用户在 Intune 中注册其设备时可以选择的设备类别。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c100193c7db2be1a5655a1b77e1eec452a189d64
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="map-device-groups"></a>映射设备组
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 12/12/2017
 使用 Microsoft Intune 设备类别可基于你定义的类别自动将设备添加到组，以便更轻松地管理这些设备。
 
 设备类别使用以下工作流：
-1. 创建用户在注册其设备时将进行选择的类别
-3. 当 iOS 和 Android 设备的最终用户注册其设备时，他们必须从你配置的类别列表中选择一个类别。 若要向 Windows 设备分配一个类别，最终用户必须使用“公司门户”网站（请参阅本主题中的“配置设备组之后”了解详细信息）。
-4. 你随后可以将策略和应用部署到这些组。
+1. 创建可供用户在注册设备时选择的类别
+2. 当 iOS 和 Android 设备的最终用户注册其设备时，他们必须从你配置的类别列表中选择一个类别。 若要向 Windows 设备分配类别，最终用户必须使用“公司门户”网站（有关详细信息，请参阅本文中的“配置设备组后”）。
+3. 你随后可以将策略和应用部署到这些组。
 
 可以创建任何所需的设备类别，例如：
 - 销售点设备
@@ -46,16 +46,16 @@ ms.lasthandoff: 12/12/2017
 3. 在“设备注册”边栏选项卡中，选择“设备类别”。
 4. 在“设备类别”页上，选择“创建”以添加新类别。
 5. 在下一个边栏选项卡中，输入新类别的“名称”和可选“说明”。
-6. 完成后，单击“创建”。 将在类别列表中看到刚才创建的类别。
+6. 完成后，单击“创建”。 可以在类别列表中看到新类别。
 
 在步骤 2 中创建 Azure Active Directory 安全组时将使用设备类别名称。
 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>步骤 2 - 创建 Active Directory 安全组
 在此步骤中，你将在 Azure 门户中基于设备类别和设备类别名称创建动态组。
 
-若要继续，请参阅 Azure Active Directory 文档中的主题[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)。
+若要继续操作，请参阅 Azure Active Directory 文档中的[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)一文。
 
-按照本部分中的信息可使用 **deviceCategory** 属性创建具有高级规则的设备组。 例如 (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
+按照本部分中的信息可使用 **deviceCategory** 属性创建具有高级规则的设备组。 例如，(device.deviceCategory -eq "<the device category name you got from the Azure portal>")
 
 在你配置设备组且用户注册其设备后，他们将看到你配置的类别的列表。 用户选择某个类别并完成注册后，其设备将添加到与其选择的类别相对应的 Active Directory 安全组。
 
@@ -88,6 +88,6 @@ ms.lasthandoff: 12/12/2017
 选择类别后，该设备将自动添加到你创建的对应组。 在配置类别前，如果设备已经注册，则最终用户将会在“公司门户”网站上看到一个关于此设备的通知，并在下次从 iOS 或 Android 访问“公司门户”应用时被要求选择一个类别。
 
 ## <a name="further-information"></a>更多信息
-- 可以在 Azure 门户中编辑设备类别，但如果这样做，则必须手动更新引用此类别的所有 Azure Active Directory 安全组。
+- 虽然可以在 Azure 门户中编辑设备类别，但必须手动更新引用此类别的任何 Azure Active Directory 安全组。
 
-- 删除某个类别后，分配到该类别的所有设备的类别名称随后都将显示“未分配”。
+- 如果删除设备分配到的类别，设备显示“未分配”类别名称。

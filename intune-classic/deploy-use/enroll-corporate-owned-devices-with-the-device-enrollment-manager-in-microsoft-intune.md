@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b37cf4c93d3eb7e56be3716de6b1b5ffb373673
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b55c5d588eb366487a9e1594a46f88551e0b6ee2
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的设备注册管理器注册企业自有设备
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/10/2017
 用户必须在 Azure 门户中存在才能添加为设备注册管理器。 为获得最佳安全性，DEM 用户也不应是 Intune 管理员。
 
 >[!NOTE]
->DEM 注册方法不能与 [Apple Configurator 设置助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)、[直接注册](ios-direct-enrollment-in-microsoft-intune.md)或 [DEP 注册方法](ios-device-enrollment-program-in-microsoft-intune.md)共同使用。
+>DEM 注册方法不能与 [Apple Configurator 设置助理](ios-setup-assistant-enrollment-in-microsoft-intune.md)、[直接许可登记表](ios-direct-enrollment-in-microsoft-intune.md)、macOS 或 [DEP 注册方法](ios-device-enrollment-program-in-microsoft-intune.md)结合使用。
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>设备注册管理器方案示例
 
@@ -61,7 +61,7 @@ DEM 用户可以：
   - （仅限 iOS）如果使用 DEM 注册 iOS 设备，则无法使用 Apple Configurator 或 Apple Device Enrollment Program (DEP) 注册设备。
 
 > [!NOTE]
-> 若要将公司应用部署到设备注册管理器托管的设备，请将公司门户应用作为“**必需的安装**”部署到此设备注册管理器用户帐户。
+> 若要将公司应用部署到设备注册管理器托管的设备，请将公司门户应用作为“必需的安装”部署到此设备注册管理器用户帐户。
 > 为提高性能，在 DEM 设备上查看公司门户应用将仅显示本地设备。 仅可通过 Intune 管理控制台执行其他 DEM 设备的远程管理。
 
 

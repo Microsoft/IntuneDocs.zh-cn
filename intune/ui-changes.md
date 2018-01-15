@@ -6,7 +6,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
+ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
-我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 因此，我们编撰了本参考指南，以供非常熟悉经典门户中 Intune 且想知道如何使用 Azure 门户中 Intune 完成工作的用户阅读。 如果本文未涵盖你正在查找的功能，请在文章末尾处留下评论，以便我们更新。
+我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 因此，我们编撰了本参考指南，以供非常熟悉经典门户中 Intune 且想知道如何使用 Azure 门户中 Intune 完成工作的用户阅读。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。
 ## <a name="quick-reference-guide"></a>快速参考指南
 |功能 |经典门户中的路径|Azure 门户中 Intune 内的路径|
 |------------|---------------|---------------|
@@ -36,6 +36,7 @@ ms.lasthandoff: 09/13/2017
 | 公司设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple 注册 > AC 配置文件](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | 管理员 > 移动设备管理 > Android for Work | 设备注册 > Android for Work 注册 |
 | 条款和条件 | 策略 > 条款和条件 | 设备注册 > 条款和条件 |
+“公司门户”设置|“管理”>“公司门户”|“管理”>“移动应用”<br> “设置”>“‘公司门户’品牌”
 
 
 ## <a name="where-do-i-manage-groups"></a>在哪个位置管理组？
@@ -62,7 +63,7 @@ Azure 门户中 Intune 使用 [Azure Active Directory (AD)](https://docs.microso
 
 ![Azure 个人设备阻止块设置的图像](./media/05-azure-personal-block.png)
 
-新的限制功能将仅添加到 Azure 门户。
+新限制功能仅添加到 Azure 门户。
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 处于哪个位置？
 在经典门户中，可以将 Intune 设置为与 Apple 设备注册计划进行集成，并手动请求与 Apple 服务同步：
@@ -73,7 +74,7 @@ Azure 门户中 Intune 使用 [Azure Active Directory (AD)](https://docs.microso
 
 ![Azure DEP 令牌的图像](./media/07-azure-dep-token.png)
 
-不过，经典门户中的“同步”选项已移至序列号管理工作流，因为其中将显示手动同步结果：
+不过，经典门户中的“同步”选项已迁移到序列号管理工作流，因为手动同步结果已列于其中：
 
 ![Azure DEP 同步的图像](./media/08-azure-dep-sync.png)
 

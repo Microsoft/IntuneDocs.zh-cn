@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: 用户实体引用
               href: reports-ref-user.md
-    - name: 旁加载 Windows 应用
+    - name: Intune Graph API
       href: intune-graph-apis.md
       items:
         - name: 适用于 Intune 的图形 API 的相关参考

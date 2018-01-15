@@ -6,6 +6,8 @@
 
 ## [重置我的设备](what-happens-if-you-reset-your-device-cpwebsite.md)
 
+## [更新我的密码](password-does-not-meet-it-administrator-requirements.md)
+
 ## [登录到公司门户](sign-in-to-the-company-portal.md)
 
 ## [使用 Android 设备](using-your-android-device-with-intune.md)
@@ -72,7 +74,7 @@
 #### [如果取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [手动同步设备](sync-your-device-manually-ios.md)
 
-#### [修复 iOS 的常见问题](troubleshoot-your-device-iOS.md)
+### [修复 iOS 的常见问题](troubleshoot-your-device-iOS.md)
 #### [重新连接受威胁的 iOS 设备](how-to-reconnect-a-compromised-ios-device.md)
 #### [将错误发送给公司](send-errors-to-your-it-admin-ios.md)
 #### [将错误发送给 Microsoft](send-logs-to-microsoft-ios.md)
@@ -116,6 +118,7 @@
 #### [注册其他版本的 Windows 时，会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [注册 Windows 设备](enroll-your-device-in-intune-windows.md)
 #### [注册 Windows 10 设备](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [通过“访问工作或学校帐户”注册 Windows 10 设备](enroll-your-w10-device-access-work-or-school.md)
 #### [注册 Windows 8.1 或 Windows RT 8.1 设备](enroll-your-w81-or-rt81-windows.md)
 #### [注册 Windows Phone 8.1 设备](enroll-your-wp81-windows.md)
 ### [重置设备](reset-erase-your-device-cpwebsite.md)

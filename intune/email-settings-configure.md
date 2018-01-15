@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dc9c67db2a93b6cd0f1db1894b079183ee9c945
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f697b575a5cdc1fa4009d08a14452508eacb8de1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置电子邮件设置
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/12/2017
 
 你可以使用电子邮件配置文件配置下列设备类型上的本机电子邮件客户端：
 
-- Android Samsung KNOX 标准版 4.0 和更高版本
+- Android Samsung Knox Standard 4.0 及更高版本
 - Android for Work
 - iOS 8.0 及更高版本
 - Windows Phone 8.1 及更高版本
@@ -41,27 +41,27 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>创建包含电子邮件设置的设备配置文件
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入电子邮件配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用电子邮件设置的设备平台。 目前，可以为电子邮件设备设置选择以下平台之一：
-    - **Android**（仅 Samsung Android KNOX 标准版）
+    - **Android**（仅 Samsung Android Knox Standard）
     - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 及更高版本**
 6. 在“配置文件”键入下拉列表中，选择“电子邮件”。
 7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
-    - [ 和 Samsung KNOX 标准版设置](email-settings-android.md)
+    - [Android for Work 和 Samsung Knox Standard 设置](email-settings-android.md)
     - [iOS 设置](email-settings-ios.md)
     - [Windows Phone 8.1 设置](email-settings-windows-phone-8-1.md)
     - [Windows 10 设置](email-settings-windows-10.md)
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-将创建配置文件并在“配置文件列表”边栏选项卡上显示。
+此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 ## <a name="further-information"></a>更多信息
@@ -86,7 +86,7 @@ ms.lasthandoff: 12/12/2017
 
 - **iOS**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 重复的电子邮件配置文件将阻止分配 Intune 配置文件。 在这种情况下，公司门户将通知用户其不符合规定并提示用户手动删除已配置的配置文件。 若要帮助防止此问题，请告知用户在安装电子邮件配置文件前进行注册，这可允许 Intune 设置配置文件。
 - **Windows**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 Intune 会覆盖由用户创建的现有电子邮件配置文件。
-- **Android Samsung KNOX 标准版**：基于电子邮件地址检测到现有的重复电子邮件帐户，并使用 Intune 配置文件将其覆盖。
+- **Android Samsung Knox Standard**：根据电子邮件地址检测到现有的重复电子邮件配置文件，并用 Intune 配置文件覆盖它。
 由于 Android 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。
 - **Android for Work** Intune 提供两个 Android for Work 电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，且安装在设备工作配置文件中，因此它们不会导致出现重复的配置文件。 这两个应用支持到 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的电子邮件配置文件。 Nine Work 等电子邮件应用可能需付费使用。 若有任何问题，请查看应用的许可详细信息或与应用公司联系。
 

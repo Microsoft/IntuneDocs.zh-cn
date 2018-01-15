@@ -6,54 +6,54 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 849c5c45429394e92b993a57c1e2345b20f78f0a
+ms.sourcegitcommit: 95a0553531133f8d926afbecd0aaf91f64a63162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>常规
--   **屏幕捕获（仅限移动版）**- 让用户以图像形式捕获设备屏幕。
--   **复制和粘贴（仅限移动设备）** - 允许设备上应用间的复制和粘贴操作。
--   **手动注销** - 允许用户手动从设备中删除工作区帐户。
--   **手动安装根证书（仅限移动版）**- 阻止用户手动安装根证书和中间 CAP 证书。
--   **诊断数据提交** - 可能的值有：
+- **屏幕捕获（仅限移动版）**- 让用户以图像形式捕获设备屏幕。
+- **复制和粘贴（仅限移动设备）** - 允许设备上应用间的复制和粘贴操作。
+- **手动注销** - 允许用户手动从设备中删除工作区帐户。
+- **手动安装根证书（仅限移动版）**- 阻止用户手动安装根证书和中间 CAP 证书。
+- **诊断数据提交** - 可能的值有：
     - 否 - 不向 Microsoft 发送数据
     - **基本** - 将有限的信息发送给 Microsoft
     - 增强 - 将增强的诊断数据发送给 Microsoft
     - **完全** - 发送与“增强”相同的数据，外加有关设备状态的其他数据
--   **相机** - 允许或阻止使用设备上的相机。
--   **OneDrive 文件同步** - 阻止设备将文件同步到 OneDrive。
--   **可移动储备** - 指定外部存储设备（如 SD 卡）是否可以与该设备结合使用。
--   **地理位置** - 指定设备是否可以使用位置服务信息。
--   **Internet 共享** - 允许在设备上使用 Internet 连接共享。
--   **手机重置** - 控制用户是否可以在设备上恢复出厂设置。
--   **USB 连接（仅限移动版）**- 控制设备是否可以通过 USB 连接访问外部存储设备。
--   **防盗模式（仅限移动版）**- 配置是否启用 Windows 防盗模式。
--   **Cortana** - 启用或禁用 Cortana 语音助手。
--   **语音录制（仅限移动版）**- 允许或阻止使用设备的语音录音机。
--   设备名称修改 - 阻止最终用户更改设备名称（仅限 Windows 10 移动版）
--   **添加配置包** - 阻止安装配置包的运行时配置代理。
--   **添加配置包** - 阻止删除配置包的运行时配置代理。
--   **设备发现** - 阻止设备被其他设备发现。
--   **任务切换器（仅限移动版）**- 阻止设备上的任务切换器。
--   **SIM 卡错误对话框（仅限移动版）**- 阻止在未检测到 SIM 卡时在设备上显示错误消息。
+- **相机** - 允许或阻止使用设备上的相机。
+- **OneDrive 文件同步** - 阻止设备将文件同步到 OneDrive。
+- **可移动储备** - 指定外部存储设备（如 SD 卡）是否可以与该设备结合使用。
+- **地理位置** - 指定设备是否可以使用位置服务信息。
+- **Internet 共享** - 允许在设备上使用 Internet 连接共享。
+- **手机重置** - 控制用户是否可以在设备上恢复出厂设置。
+- **USB 连接（仅限移动版）**- 控制设备是否可以通过 USB 连接访问外部存储设备。
+- **防盗模式（仅限移动版）**- 配置是否启用 Windows 防盗模式。
+- **Cortana** - 启用或禁用 Cortana 语音助手。
+- **语音录制（仅限移动版）**- 允许或阻止使用设备的语音录音机。
+- 设备名称修改 - 阻止最终用户更改设备名称（仅限 Windows 10 移动版）
+- **添加配置包** - 阻止安装配置包的运行时配置代理。
+- **添加配置包** - 阻止删除配置包的运行时配置代理。
+- **设备发现** - 阻止设备被其他设备发现。
+- **任务切换器（仅限移动版）**- 阻止设备上的任务切换器。
+- **SIM 卡错误对话框（仅限移动版）**- 阻止在未检测到 SIM 卡时在设备上显示错误消息。
+<!--- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. -->
 
 
-## <a name="password"></a>Password
+## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。
     -   **所需的密码类型** - 指定密码是否只能是数字或字母数字。
     -   **最短密码长度** - 仅适用于 Windows 10 移动版。
@@ -68,19 +68,68 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="personalization"></a>个性化设置
 
--   **桌面背景图片 URL（仅限桌面版）**- 指定希望用作 Windows 桌面墙纸的图片（格式为 PNG、JPG 或 JPEG）的 URL。 用户将无法更改此设置。
+- **桌面背景图片 URL（仅限桌面版）**- 指定希望用作 Windows 桌面墙纸的图片（格式为 PNG、JPG 或 JPEG）的 URL。 用户无法更改此设置。
 
 ## <a name="privacy"></a>隐私
 
 -   “输入个性化”- 不允许使用 Cortana、听写或 Microsoft 应用商店应用的基于云的语音服务。 如果允许这些服务，Microsoft 可能会收集语音数据以改进服务。
 -   **自动接受配对和隐私用户同意提示** – 允许 Windows 在运行应用时自动接受配对和隐私同意消息。
 
+可以定义设备上的所有应用可以访问的信息。 可以使用“每应用隐私异常”对每个应用定义异常。
+
+### <a name="exceptions"></a>例外
+
+- **帐户信息** - 定义此应用能否访问用户名、图片和其他联系人信息。
+- **后台应用** - 定义此应用能否在后台运行。
+- **日历** - 定义此应用能否访问日历。
+- **呼叫历史记录** - 定义此应用能否访问我的呼叫历史记录。
+- **照相机** - 定义此应用能否访问照相机。
+- **联系人** - 定义此应用能否访问联系人。
+- **电子邮件** - 定义此应用能否访问和发送电子邮件。
+- **位置** - 定义此应用能否访问位置信息。
+- **消息** - 定义此应用能否读取或发送短信/彩信。
+- **麦克风** - 定义此应用能否使用麦克风。
+- **运动** - 定义此应用能否访问设备运动信息。
+- **通知** - 定义此应用能否访问通知。
+- **电话** - 定义此应用能否访问电话。
+- **无线收发器** - 一些应用使用设备中的无线收发器（例如，蓝牙）发送和接收数据，需要打开或关闭这些无线收发器。 定义此应用能否控制这些无线收发器。
+- **任务** - 定义此应用能否访问任务。
+- **受信任的设备** - 定义此应用能否使用受信任的设备（此 PC、平板电脑或手机已连接或随附的设备）。 例如，电视、投影仪等。
+- **反馈和诊断** - 定义此应用能否访问诊断信息。
+- **与设备同步** - 定义此应用能否自动与这台 PC、平板电脑或手机未显式配对的无线设备共享和同步信息。
+
+## <a name="per-app-privacy-exceptions"></a>每应用隐私异常
+
+可以添加隐私行为不同于“默认隐私”中所定义设置的应用。
+
+- **包名称** - 应用包系列名称。
+- **应用名称** - 应用的名称。
+
+### <a name="exceptions"></a>例外
+
+- **帐户信息** - 定义此应用能否访问用户名、图片和其他联系人信息。
+- **后台应用** - 定义此应用能否在后台运行。
+- **日历** - 定义此应用能否访问日历。
+- **呼叫历史记录** - 定义此应用能否访问我的呼叫历史记录。
+- **照相机** - 定义此应用能否访问照相机。
+- **联系人** - 定义此应用能否访问联系人。
+- **电子邮件** - 定义此应用能否访问和发送电子邮件。
+- **位置** - 定义此应用能否访问位置信息。
+- **消息** - 定义此应用能否读取或发送短信/彩信。
+- **麦克风** - 定义此应用能否使用麦克风。
+- **运动** - 定义此应用能否访问设备运动信息。
+- **通知** - 定义此应用能否访问通知。
+- **电话** - 定义此应用能否访问电话。
+- **无线收发器** - 一些应用使用设备中的无线收发器（例如，蓝牙）发送和接收数据，需要打开或关闭这些无线收发器。 定义此应用能否控制这些无线收发器。
+- **任务** - 定义此应用能否访问任务。
+- **受信任的设备** - 定义此应用能否使用受信任的设备（此 PC、平板电脑或手机已连接或随附的设备）。 例如，电视、投影仪等。
+- **反馈和诊断** - 定义此应用能否访问诊断信息。
+- **与设备同步** - 定义此应用能否自动与这台 PC、平板电脑或手机未显式配对的无线设备共享和同步信息。
 
 ## <a name="locked-screen-experience"></a>锁定屏幕体验
 
-
--   **操作中心通知（仅限移动版）**- 允许设备锁定屏幕上显示操作中心通知（仅限 Windows 10 移动版）。
--   **锁定屏幕图片 URL（仅限桌面版）**- 指定将用作 Windows 锁定屏幕墙纸的图片（格式为 PNG、JPG 或 JPEG）的 URL。 用户将无法更改此设置。
+- **操作中心通知（仅限移动版）**- 允许设备锁定屏幕上显示操作中心通知（仅限 Windows 10 移动版）。
+- **锁定屏幕图片 URL（仅限桌面版）**- 指定将用作 Windows 锁定屏幕墙纸的图片（格式为 PNG、JPG 或 JPEG）的 URL。 用户无法更改此设置。
 -   **用户可配置屏幕超时（仅限移动版）**– 允许用户配置时间量 
 -   **锁定屏幕上的 Cortana（仅限桌面版）**– 当设备处于锁定屏幕时，不允许用户与 Cortana 交互（仅限 Windows 10 桌面版）。
 -   **锁定屏幕上的 Toast 通知** – 阻止设备锁定屏幕上显示警报消息。
@@ -125,17 +174,17 @@ ms.lasthandoff: 12/12/2017
     -   **首次运行 URL** – 指定用户首次运行 Microsoft Edge 时显示的页面的 URL（仅限 Windows 10 移动版）。
 -   **主页** - 添加希望用作 Microsoft Edge 浏览器中主页的网站列表（仅限桌面版）。
 -   **更改为起始页** - 允许用户更改打开 Microsoft Edge 时显示的起始页。 使用主页设置创建启动 Microsoft Edge 时打开的页面或页面列表。
--   **阻止访问关于标志** - 阻止最终用户访问 Edge 中包含开发人员和实验设置的 about:flags 页。
+-   **阻止访问“关于标志”**- 阻止最终用户在 Edge 中访问包含开发人员和实验性设置的 about:flags 页面。
 -   **WebRtc localhost IP 地址** - 在使用 Web RTC 协议拨打电话时，阻止显示用户 localhost IP 地址。
 -   **默认搜索引擎** - 指定要使用的默认搜索引擎。 最终用户可以随时更改此值。
 -   **退出时清除浏览数据** – 在用户退出 Microsoft Edge 时清除历史记录和浏览数据。
 -   **实时磁贴数据收集** – 当用户从 Microsoft Edge 将站点固定到开始菜单时，阻止 Windows 从实时磁贴收集信息。
 
-## <a name="edge-browser-smartscreen"></a>Microsoft Edge 浏览器 SmartScreen
+## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
--   **SmartScreen** - 启用或禁用阻止欺诈网站的 SmartScreen。
--   **智能屏幕提示替代** - 允许最终用户跳过有关潜在的恶意网站的 SmartScreen 筛选器警告。
--   **文件的智能屏幕提示替代** - 允许最终用户跳过有关下载潜在的恶意文件的 SmartScreen 筛选器警告。
+- **Microsoft Edge SmartScreen** - 启用 Edge SmartScreen，以便访问网站和下载文件。
+- **恶意网站访问** - 阻止用户忽略 Windows Defender SmartScreen 筛选器警告，并阻止用户转到网站。
+- **未验证的文件下载** - 阻止用户忽略 Windows Defender SmartScreen 筛选器警告，并阻止用户下载未验证的文件。
 
 ## <a name="search"></a>搜索
 - **安全搜索（仅限移动版）**- 控制 Cortana 在搜索结果中筛选成人内容的方式。 可以选择“严格”或“中等”或允许最终用户选择自己的设置。
@@ -182,9 +231,30 @@ ms.lasthandoff: 12/12/2017
     -   **隐私** - 阻止访问设置应用的隐私区域。
     -   更新和安全性 - 阻止访问设置应用的更新和安全区域。
 
-## <a name="kiosk"></a>Kiosk
+## <a name="start"></a>启动
 
--   展台模式 - 标识策略支持的[展台模式](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)的类型。  选项包括：
+- **从任务栏取消固定应用** - 阻止用户从开始菜单取消固定应用。
+- **“开始”上的文档** - 隐藏或显示 Windows 开始菜单中的文档文件夹。
+- **“开始”上的下载** - 隐藏或显示 Windows 开始菜单中的下载文件夹。
+- **“开始”上的文件资源管理器** - 隐藏或显示 Windows 开始菜单中的文件资源管理器应用。
+- **“开始”上的家庭组** - 隐藏或显示 Windows 开始菜单中的家庭组文件夹。
+- **“开始”上的音乐** - 隐藏或显示 Windows 开始菜单中的音乐文件夹。
+- **“开始”上的网络** - 隐藏或显示 Windows 开始菜单中的网络文件夹。
+- **“开始”上的个人文件夹** - 隐藏或显示 Windows 开始菜单中的个人文件夹。
+- **“开始”上的图片** - 隐藏或显示 Windows 开始菜单中的图片文件夹。
+- **“开始”上的设置** - 隐藏或显示 Windows 开始菜单中的设置应用。
+- **“开始”上的视频** - 隐藏或显示 Windows 开始菜单中的视频文件夹。
+
+## <a name="display"></a>显示
+
+- **对应用启用 GDI 缩放**
+- **对应用禁用 GDI 缩放**
+
+  借助 GDI DPI 缩放，应用可以从非 DPI 感知变成按监视器 DPI 感知。 指定已启用 GDI DPI 缩放的旧应用。 如果将 GDI DPI 缩放配置为在应用上先启用后禁用，则对应用禁用缩放。
+
+## <a name="kiosk-preview"></a>展台（预览版）
+
+-   展台模式 - 标识策略支持的[展台模式](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)的类型。 选项包括：
 
       - 未配置（默认）- 策略不启用展台模式。 
       - 单应用展台 - 配置文件将设备作为单应用展台启用。
@@ -192,13 +262,13 @@ ms.lasthandoff: 12/12/2017
 
     单应用展台的设置要求如下：
 
-      - 用户帐户 - 指定与展台应用相关联的本地（对设备而言）用户帐户或 Azure AD 帐户登录名。  对于加入 Azure AD 域的帐户，以 `domain\\username@tenant.org` 的形式指定帐户。
+      - 用户帐户 - 指定与展台应用相关联的本地（对设备而言）用户帐户或 Azure AD 帐户登录名。 对于加入 Azure AD 域的帐户，以 `domain\\username@tenant.org` 的形式指定帐户。
 
          对于公共环境中的设备，使用具有最小特权的帐户来阻止已授权活动。  
 
-      - 应用的应用程序用户模型 ID (AUMID) - 指定展台应用的 AUMID。  若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
+      - 应用的应用程序用户模型 ID (AUMID) - 指定展台应用的 AUMID。 若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
 
-    多应用展台需要展台配置。  使用“添加”按钮创建展台配置，或选择现有展台配置。
+    多应用展台需要展台配置。 使用“添加”按钮创建展台配置，或选择现有展台配置。
 
     多应用展台配置包括以下设置：
 
@@ -206,11 +276,11 @@ ms.lasthandoff: 12/12/2017
 
     - 一个或多个展台应用的组成内容如下：
 
-        - 应用类型 - 指定展台应用的类型。  支持的值包括：   
+        - **应用类型** - 指定展台应用的类型。  支持的值包括：   
 
-            - Win32 应用 - 传统的桌面应用。  （需要与设备相关的可执行文件的完全限定路径名。）
+            - Win32 应用 - 传统的桌面应用。 （就设备而言，需要可执行文件的完全限定的路径名。）
 
-            - UWP 应用 - 通用 Windows 应用。  需要[应用的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
+            - UWP 应用 - 通用 Windows 应用。 需要[应用的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
 
         - 应用标识符 - 指定可执行文件（Win32 应用）的完全限定路径名，或[应用的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（UWP 应用）。
 
@@ -218,9 +288,9 @@ ms.lasthandoff: 12/12/2017
 
     - “开始”菜单布局 - 指定一个 XML 文件，用于描述应用[在“开始”菜单上如何显示](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)。
 
-    - 分配的用户 - 指定一个或多个与展台配置相关联的用户帐户。  该帐户可以是设备的本地帐户，也可以是与展台应用相关联的 Azure AD 帐户登录名。  以 `domain\\username@tenant.org` 的形式指定已加入域的帐户。
+    - 分配的用户 - 指定一个或多个与展台配置相关联的用户帐户。 该帐户可以是设备的本地帐户，也可以是与展台应用相关联的 Azure AD 帐户登录名。 以 `domain\\username@tenant.org` 的形式指定已加入域的帐户。
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Windows Defender 防病毒
 
 -   **实时监控** - 启用对恶意软件、间谍软件和其他不需要的软件的实时扫描。
 -   **行为监控** - 允许 Defender 检查设备上是否存在某些已知模式的可疑活动。
@@ -256,7 +326,7 @@ ms.lasthandoff: 12/12/2017
 
 
 
-## <a name="defender-exclusions"></a>Defender 排除项
+### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 防病毒排除项
 
 -   **要从扫描和实时保护排除的文件和文件夹** - 向排除列表添加一个或多个文件和文件夹（如 **C:\Path** 或 **%ProgramFiles%\Path\filename.exe**）。 不会在任何实时或计划的扫描中包括这些文件和文件夹。
 -   **要从扫描和实时保护排除的文件扩展名** - 向排除列表添加一个或多个文件扩展名（如 **jpg** 或 **txt**）。 不会在任何实时或计划的扫描中包括具有这些扩展名的任何文件。
@@ -272,7 +342,7 @@ ms.lasthandoff: 12/12/2017
     -   **地址** - 输入代理服务器的名称或 IP 地址。
     -   **端口号** - 输入代理服务器的端口号。
     -   **代理例外** - 输入不得使用代理服务器的任何 URL。 请使用分号分隔每一项。
-    -   **对本地地址跳过代理服务器** - 如果不想在 Intranet 上对本地地址使用代理服务器，则启用此选项。
+    -   **对本地地址跳过代理服务器** - 如果不想在 Intranet 上对本地地址使用代理服务器，请启用此选项。
 
 
 ## <a name="windows-spotlight"></a>Windows 聚焦
@@ -294,16 +364,41 @@ ms.lasthandoff: 12/12/2017
 - **此电脑的投影** - 阻止其他设备发现用于投影的电脑。
 - **需要用于配对的 PIN** - 在连接到投影设备时需要 PIN。
 
-## <a name="start"></a>启动
+## <a name="cloud-printer"></a>云打印机
 
-- **从任务栏取消固定应用** - 阻止用户从开始菜单取消固定应用。
-- **“开始”上的文档** - 隐藏或显示 Windows 开始菜单中的文档文件夹。
-- **“开始”上的下载** - 隐藏或显示 Windows 开始菜单中的下载文件夹。
-- **“开始”上的文件资源管理器** - 隐藏或显示 Windows 开始菜单中的文件资源管理器应用。
-- **“开始”上的家庭组** - 隐藏或显示 Windows 开始菜单中的家庭组文件夹。
-- **“开始”上的音乐** - 隐藏或显示 Windows 开始菜单中的音乐文件夹。
-- **“开始”上的网络** - 隐藏或显示 Windows 开始菜单中的网络文件夹。
-- **“开始”上的个人文件夹** - 隐藏或显示 Windows 开始菜单中的个人文件夹。
-- **“开始”上的图片** - 隐藏或显示 Windows 开始菜单中的图片文件夹。
-- **“开始”上的设置** - 隐藏或显示 Windows 开始菜单中的设置应用。
-- **“开始”上的视频** - 隐藏或显示 Windows 开始菜单中的视频文件夹。
+- **打印机发现 URL** - 用于发现云打印机的终结点。
+- **打印机访问授权机构 URL** - 用于获取 OAuth 令牌的身份验证终结点。
+- **Azure 原生客户端应用 GUID** - 有权从 OAuthAuthority 检索 OAuth 令牌的客户端应用的 GUID。
+- **打印服务资源 URI** - Azure 门户中配置的打印服务 OAuth 资源 URI。
+- **要查询的打印机最大数(仅移动设备)** - 应从发现终结点查询的打印机数量上限。
+- **打印机发现服务资源 URI** - Azure 门户中配置的打印机发现服务 OAuth 资源 URI。
+
+## <a name="reporting-and-telemetry"></a>报告和遥测
+
+- **共享使用情况数据** - 选择诊断数据提交级别。
+- **遥测代理服务器**
+
+  指定代理服务器的完全限定的域名 (FQDN) 或 IP 地址，以使用安全套接字层 (SSL) 连接转发连接用户体验和遥测请求。 此设置的格式为“服务器:端口”。 如果已命名代理失败，或在启用此策略时没有指定代理，那么连接用户体验和遥测数据不会进行传输，而是仍保留在本地设备上。
+
+   示例格式：
+
+   IPv4：192.246.246.106:100<br>
+ IPv6：[2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN：www.contoso.com:345
+
+## <a name="messaging"></a>Messaging
+
+- **消息同步(仅移动设备)** - 禁用随时随地传送消息以及短信备份和还原。
+- **彩信(仅移动设备)** - 对设备禁用彩信发送/接收功能。
+- **富通信(仅移动设备)** - 对设备禁用富通信服务发送/接收功能。
+
+
+
+
+
+
+
+
+
+
+
+

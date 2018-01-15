@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>通过恢复出厂设置或删除公司数据删除设备
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 12/01/2017
 
 ### <a name="android"></a>Android
 
-|数据类型|Android|Android Samsung KNOX 标准版|
+|数据类型|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web 链接|删除。|删除。|
 |非托管的 Google Play 应用|保留已安装的应用和数据。|保留已安装的应用和数据。|
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/01/2017
 |证书配置文件设置|已吊销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
 |Email|n/a（Android 设备不支持电子邮件配置文件）|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
-|Outlook|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。|已删除适用于 Android 的 Microsoft Outlook 应用接收到的电子邮件。|
+|Outlook|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Microsoft Outlook 应用接收的电子邮件。 否则取消注册时不会擦除 Outlook。|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Microsoft Outlook 应用接收的电子邮件。 否则取消注册时不会擦除 Outlook。|
 |Azure Active Directory (AD) 脱离|删除 Azure AD 记录。|删除 Azure AD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|将删除从应用直接同步到本机通讯簿的联系人。  无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 12/01/2017
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|不支持。|删除。|
 |证书配置文件设置|已删除并吊销证书。|已删除并吊销证书。|不支持。|已删除并吊销证书。|
 |Email|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。|不支持。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。 删除由 Intune 预配的邮件帐户。|
-|Azure Active Directory (AD) 脱离|否。|否。|删除 Azure AD 记录。|不适用。 Windows 10 不支持删除已加入 Azure Active Directory 的设备的公司数据。|
+|Azure Active Directory (AD) 脱离|不能。|不能。|删除 Azure AD 记录。|不适用。 Windows 10 不支持删除已加入 Azure Active Directory 的设备的公司数据。|
 
 ### <a name="to-remove-company-data"></a>删除公司数据
 

@@ -5,22 +5,22 @@ keywords: "什么是 Intune"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 12/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
-ms.reviewer: lindavr
+ms.reviewer: travisj
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c094d59d7261b602c51196233286d10c27732236
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.custom: intune-azure
+ms.openlocfilehash: 78286293dc57bfded09eb29c5809c09e5acff49b
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="what-is-intune-for-education"></a>什么是 Intune for Education？
+# <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Intune for Education 与 Intune 中完整的设备管理体验有何不同？
 
 Intune for Education 旨在使学校数据受到保护的同时让教师和学生能够高效地工作和学习。 Intune 是基于云的企业移动性管理 (EMM) 服务，该服务是 Intune for Education 的基础。
 
@@ -33,12 +33,12 @@ Intune for Education 可以单独使用，也可以与 [Intune 提供的完整�
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 通过 Intune 和 Intune for Education 可以实现以下功能：
-* 管理员工用于访问数据的移动设备。
+* 管理教职工和学生用于访问数据的移动设备。
 * 管理用户每天访问的移动应用。
 * 通过帮助控制用户访问和共享组织信息的方式来保护组织信息。
 * 确保设备和应用符合安全要求。
 
 ### <a name="next-steps"></a>后续步骤
-* 通过 [Intune 的 30 天试用版](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)熟悉该产品。
+* 通过 [Intune 的 90 天免费试用版](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)熟悉此产品。 如果已有权访问，请前往 https://intuneeducation.portal.azure.com 开始访问。
 * 了解[开始使用 Intune for Education](/intune-education/what-is-express-configuration) 的最快速方式。
 * 深入了解 Intune 的[技术要求和功能](/intune/supported-devices-browsers)。

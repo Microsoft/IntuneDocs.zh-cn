@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2017
+ms.date: 01/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 84a430da9484bc32e6dd20799059d72efaef09d8
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 0b2b77328208038721286245847160c6dbe8d7e5
+ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>从 Intune 取消注册 macOS 设备
 
-从 Intune 取消注册 iOS 设备后，该设备将无法再访问公司资源并且无法再通过 Intune 进行托管。
+如果通过 Intune 取消注册 macOS 设备，设备将无法再访问公司资源。
 
 请按照以下步骤从管理中取消注册 macOS 设备：
 
@@ -34,11 +34,11 @@ ms.lasthandoff: 12/12/2017
 
 从 Intune 取消注册设备后，将发生以下情况：
 
--   设备将不再出现在公司门户中。
+-   设备不显示在“公司门户”中。
 
--   再也不能从公司门户安装应用。
+-   不能通过“公司门户”安装应用。
 
--   将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
+-   将不再应用在添加设备时设备上更改的任何设置（如密码长度）。
 
 -   你可能不再能够访问设备上的某些公司资源（例如文件共享或内部网站）。
 
@@ -46,8 +46,8 @@ ms.lasthandoff: 12/12/2017
 
 -   你可能不再能够使用 Wi-Fi 或虚拟专用网 (VPN) 连接到公司网络。
 
--   已从设备中删除公司电子邮件配置文件。
+-   设备可能无权访问公司电子邮件。
 
--   仅针对电子邮件配置的设备将不再出现在公司门户应用或网站中。
+-   仅针对电子邮件配置的设备不再显示在“公司门户”应用或网站中。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

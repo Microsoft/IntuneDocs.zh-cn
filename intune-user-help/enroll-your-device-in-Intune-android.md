@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 中注册 Android 设备
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/12/2017
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-这些注册说明适用于本机设备和 Samsung KNOX Android 设备。 Samsung KNOX 是一种安全性，某些 Samsung 设备通过其提供本机 Android 提供的保护之外的额外保护。 若要检查你拥有的设备是否是 Samsung KNOX 设备，请转到“设置” > “关于设备”。 如果未在此处看到列出了“KNOX 版本”，则你具有本机 Android 设备。
+这些注册说明适用于原生设备和 Samsung Knox Android 设备。 Samsung Knox 是一种安全解决方案，一些 Samsung 设备用它来提供原生 Android 无法提供的额外保护。 若要检查是否是 Samsung Knox 设备，请依次转到“设置” > “关于设备”。 如果其中没有列出“Knox 版本”，表明使用的是原生 Android 设备。
 
 注册前/后，系统可能会要求你选择最恰当地描述了你使用设备的方式的类别。 公司支持人员使用此类别来帮助检查你有权访问的应用。
 
@@ -98,9 +98,9 @@ ms.lasthandoff: 12/12/2017
 
     ![输入 PIN 或密码](./media/and-enroll-6-PIN-native.png)
 
-13.  如果使用的是 Samsung KNOX 设备，请点击“确认”，随后将看到一条指示正在注册设备的消息。 如果你使用的是本机 Android 设备，则只需注意下面的屏幕，其中显示正在注册设备。
+13.  如果你使用的是 Samsung Knox 设备，请点击“确认”，你将看到一条指示正在注册设备的消息。 如果你使用的是本机 Android 设备，则只需注意下面的屏幕，其中显示正在注册设备。
 
-    ![Samsung KNOX 隐私策略](./media/and-enroll-7-knox-privacy-policy.png)
+    ![Samsung Knox 隐私策略](./media/and-enroll-7-knox-privacy-policy.png)
 
     此屏幕显示正在注册设备。
 
@@ -129,4 +129,4 @@ ms.lasthandoff: 12/12/2017
 
 如果尝试在 Intune 中注册设备时遇到错误，则可以[将注册错误消息发送给公司支持人员](send-enrollment-errors-to-your-it-admin-android.md)。
 
-仍需要帮助？ 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
+仍需帮助？ 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
