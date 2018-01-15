@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 1bdd9002c70ea8d9e8b16b73d4d8416eeec3341b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理 PowerShell 脚本以供 Windows 10 设备使用
 Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows 10 设备上运行。 管理扩展对 Windows 10 移动设备管理 (MDM) 功能进行了补充，使你可更轻松地采用新式管理。
@@ -30,7 +30,7 @@ Microsoft Intune 等 MDM 服务可使用 MDM 协议来管理 Windows 10 设备�
 
 Intune 管理扩展对 Windows 10 MDM 内置功能进行了补充。 可创建 PowerShell 脚本以在提供所需功能的 Windows 10 设备上运行。 例如，可创建 PowerShell 脚本（在 Windows 10 设备上安装旧版 Win32 应用、将脚本上传到 Intune、将脚本分配给 Azure Active Directory (AD) 组），然后在 Windows 10 设备上运行这些脚本。 然后，可在 Windows 10 设备上全程监视脚本运行状态。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 Intune 管理扩展具有以下先决条件：
 - 设备必须加入 Azure AD
 - 设备必须运行 Windows 10 版本 1607 或更高版本
@@ -57,7 +57,7 @@ Intune 管理扩展具有以下先决条件：
   ![“添加 PowerShell 脚本”边栏选项卡](./media/mgmt-extension-assignments.png)
  
 6. 选择“选择组”，列出可用的 Azure AD 组。 
-7. 选择组，然后单击“选择”，将策略分配到所选组。
+7. 选择一个或多个组（其中用户的设备接收脚本），再单击“选择”，将策略分配到选定组。
 
 Intune 管理扩展每一小时与 Intune 同步一次。 将策略分配给 Azure AD 组后，PowerShell 脚本将运行，还将报告运行结果。 
  

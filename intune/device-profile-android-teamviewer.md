@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: 46e850cdda27444d18354b972d10b0cd02c036d9
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>为 Intune 托管设备提供远程协助
 
@@ -32,7 +32,7 @@ Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（另行购买�
 Intune 托管的 Android 和 Windows 设备支持远程管理。
 
 >[!NOTE]
->TeamViewer 软件不支持 Windows Holographic (HoloLens)、Windows 团队 (Surface Hub) 和 Windows 10 S。 
+>TeamViewer 软件不支持 Windows Holographic (HoloLens)、Windows 团队 (Surface Hub) 和 Windows 10 S。 仍需要在 Intune 经典门户中使用 [PC 客户端](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)管理设备。
 
 
 
@@ -50,9 +50,9 @@ Intune 托管的 Android 和 Windows 设备支持远程管理。
 必须先按照以下步骤配置 Intune TeamViewer 连接器，然后才可向设备提供远程协助：
 
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**设备**”。
+3. 在 Intune 边栏选项卡上，选择“设备”。
 4. 在“设备和组”边栏选项卡上，选择“设置” > “TeamViewer 连接器”。
 5. 在“TeamViewer 连接器”边栏选项卡上，单击“启用”，然后查看和接受 TeamViewer 服务许可证协议。
 6. 选择“登录到 TeamViewer 并授权”。
@@ -61,9 +61,9 @@ Intune 托管的 Android 和 Windows 设备支持远程管理。
 
 ## <a name="how-to-remotely-administer-a-device"></a>如何远程管理设备
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**设备**”。
+3. 在 Intune 边栏选项卡上，选择“设备”。
 4. 在“设备”边栏选项卡上，选择“管理” > “所有设备”。
 5. 选择你想要远程管理的设备，然后在“设备属性”边栏选项卡上，选择“更多” > “新建远程协助会话”。
 6. 将 Intune 连接到 TeamViewer 服务后，将看到设备的一些相关信息。 选择“连接”以开始远程会话。
@@ -77,4 +77,3 @@ Intune 托管的 Android 和 Windows 设备支持远程管理。
 ## <a name="next-steps"></a>后续步骤
 
 最终用户会在其设备上的公司门户应用图标上看到一个通知标志，在打开应用时也会看到一条通知。 然后，他们就可以接受远程协助请求了。
-

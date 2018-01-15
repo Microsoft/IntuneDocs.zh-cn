@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
+ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -43,31 +43,6 @@ ms.lasthandoff: 12/01/2017
 
 从 Intune 迁移到 Azure 门户时，可能会看到名为“All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421”的新组。 此组包含 Azure Active Directory 中的所有用户，而不仅仅是 Intune 许可的用户。 如果你希望某些现有用户或新用户不属于任何组的成员，此用法会导致其他 Microsoft 产品出现问题。
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>优选功能所需的辅助迁移
-
-必须先迁移在 2017 年 1 月之前创建的 Intune 帐户，然后才可以在 Azure 门户中使用以下功能：
-
-- 公司设备注册配置文件
-- Apple 设备注册计划
-- 按 iOS 序列号预声明公司设备
-- 设备注册管理员帐户
-- Apple Volume Purchase Program
-
-由于无法同时在 Intune (Silverlight) 控制台和 Azure 门户中管理这些功能，因此迁移任务将会：
-- 在经典门户中禁用它们
-- 在 Azure 门户中启用它们  
-
-2017 年 9 月 22 日之后，这些功能的迁移将并入到 Azure 的主迁移。 如果帐户已迁移并使用 Azure 门户，则现在可能已完成了辅助迁移。 若未完成，这些功能将在 11 月前迁移到 Azure。 帐户开始迁移后，将在同一天内完成迁移。 自在 Intune 经典门户中禁用这些功能起，迁移需要 6 小时才能完成。
-
-如果目前在 Azure 门户中管理这些 Intune 功能，请注意以下几点：
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>删除 Apple DEP 中默认的企业设备注册配置文件
-Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备注册配置文件。 此功能虽在 Intune (Silverlight) 控制台中可用，但 Azure 门户已停止提供支持，以防止无意间分配配置文件。 当在 Azure 门户中同步 DEP 序列号时，不会分配企业设备注册配置文件。 在使用该设备之前，必须分配注册配置文件。
-
-#### <a name="apple-dep-token-restored-with-migration"></a>通过迁移还原的 Apple DEP 令牌
-
-如果在 Intune (Silverlight) 门户中删除了 Apple 设备注册计划令牌，且没有向 Azure 门户上传新令牌，那么在迁移时原始令牌会在 Azure 门户中进行还原。 若要删除此令牌并禁止 DEP 注册，请从 Azure 门户中删除令牌。
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>迁移策略的状态边栏选项卡不起作用
 
 你无法查看从 Azure 门户中的经典门户中迁移的策略的状态信息。 但可以继续在经典门户中查看这些策略的报表。 若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
@@ -79,6 +54,9 @@ Azure 门户不支持 Apple 设备注册计划 (DEP) 设备的默认公司设备
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>会上传同一 iOS 批量采购计划的多个副本
 不要为相同的 VPP 令牌多次单击“上传”按钮。 这将导致上传重复的 VPP 令牌，并导致应用针对同一 VPP 令牌发生多次同步。
+
+### <a name="assigning-office-365-to-macos-devices"></a>将 Office 365 分配到 macOS 设备
+在我们的 UI 更新完成后，即可使用 Microsoft Intune 将 Office 365 分配到 macOS 设备。
 
 <!-- ## Groups -->
 

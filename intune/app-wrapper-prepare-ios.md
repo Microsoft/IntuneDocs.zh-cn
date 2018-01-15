@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -324,7 +324,7 @@ ms.lasthandoff: 12/08/2017
 
     a.  在 Xcode 中，转到应用的目标，并单击“功能”。
 
-    b。  打开相应的功能。 有关每项功能以及如何确定正确值的详细信息，请参阅 iOS 开发人员库中的[添加功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。
+    b.  打开相应的功能。 有关每项功能以及如何确定正确值的详细信息，请参阅 iOS 开发人员库中的[添加功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。
 
     c.  记下在此过程中创建的任何 ID。
 
@@ -334,7 +334,7 @@ ms.lasthandoff: 12/08/2017
 
     a.  登录到 Apple 开发人员会员中心。
 
-    b。  为应用创建预配配置文件。 有关说明，请参阅 [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)（如何获取 Intune App Wrapping Tool for iOS 的先决条件）。
+    b.  为应用创建预配配置文件。 有关说明，请参阅 [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)（如何获取 Intune App Wrapping Tool for iOS 的先决条件）。
 
     c.  在预配配置文件中，启用与应用中相同的权利。 你需要提供在应用开发过程中指定的相同 ID。
 
@@ -392,6 +392,18 @@ ms.lasthandoff: 12/08/2017
 -   包含文件上传对话框的 iOS 应用可以允许用户规避应用于应用的剪切、复制和粘贴限制。 例如，用户可能使用文件上载对话框来上载应用数据的屏幕截图。
 
 -   在你的设备上从包装的应用中监视文档文件夹时，可能会看到一个名为 .msftintuneapplauncher 的文件夹。 如果更改或删除了该文件，则可能影响受限制应用的正确运行。
+
+## <a name="getting-logs-for-your-wrapped-applications"></a>获取已包装应用的日志
+若要在疑难解答过程中获取已包装应用的日志，请按照以下步骤操作。
+
+1. 在设备上转到 iOS“设置”应用，并选择“LOB 应用”。
+2. 将“诊断控制台”切换为“开”。
+3. 启动 LOB 应用。
+4. 单击“开始使用”链接。
+5. 现在可以通过电子邮件方式共享日志，也可以将日志复制到 OneDrive 位置。
+
+>[!NOTE]
+使用 Intune App Wrapping Tool 版本 7.1.13 或更高版本包装的应用已启用日志记录功能。
 
 ### <a name="see-also"></a>另请参阅
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)</br>

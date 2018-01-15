@@ -3,8 +3,8 @@ title: "Windows 10 的批量注册"
 titlesuffix: Azure portal
 description: "为 Microsoft Intune 创建批量注册包"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -29,8 +29,6 @@ ms.lasthandoff: 11/09/2017
 Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略和必需的应用。 目前不支持自助服务和公司门户方案。
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows 设备批量注册的先决条件
-
-Windows 设备的批量注册需要以下条件：
 
 - 运行 Windows 10 创意者更新或更高版本的设备
 - [Windows 自动注册](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ Windows 设备的批量注册需要以下条件：
 2. 打开“Windows 配置设计器”应用，然后选择“配置桌面设备”。
 ![在 Windows 配置设计器应用中选择配置桌面设备的屏幕快照](media/bulk-enroll-select.png)
 
-3. 将打开一个“新项目”窗口，在此处指定以下信息：
+3. 此时，“新项目”窗口打开，在其中指定以下信息：
   - **名称** - 你的项目的名称
-  - **项目文件夹** - 新项目保存的位置
+  - **项目文件夹** - 项目的保存位置
   - **说明** - 项目的可选说明![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](media/bulk-enroll-name.png)
 
 4.  输入设备的唯一名称。 名称可以包含序列号 (%%SERIAL%%) 或一组随机的字符。 （可选）如果正在升级 Windows 版本，还可以输入产品密钥、将设备配置为共享以及删除预安装的软件。
 ![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](media/bulk-enroll-device.png)
 
-5.  （可选）可以配置 Wi-Fi 网络设备首次启动时所连接到的网络。  如未配置此项，则在设备首次启动时，需要有线网络连接。
+5.  （可选）可以配置 Wi-Fi 网络设备首次启动时所连接到的网络。  如果未配置网络设备，在设备首次启动时必须建立有线网络连接。
 ![在 Windows 配置设计器应用中启用包括网络 SSID 和网络类型选项的 Wi-Fi 的屏幕快照](media/bulk-enroll-network.png)
 
 6.  选择“在 Azure AD 中注册”，输入“批量令牌到期”日期，然后选择“获取批量令牌”。
@@ -77,7 +75,7 @@ Windows 设备的批量注册需要以下条件：
 
  有关应用配置包的分步说明，请参阅[应用配置包](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package)。
 
-3. 应用配置包后，设备将在 1 分钟后自动启动。
+3. 在包得到应用后，设备便会在一分钟内自动重启。
  ![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](media/bulk-enroll-add.png)
 
 4. 设备重新启动时，将连接到 Azure Active Directory 并在 Microsoft Intune 中注册。
@@ -88,14 +86,14 @@ Windows 设备的批量注册需要以下条件：
 配置旨在用于新的 Windows 设备上。 配置失败可能需要对设备进行恢复出厂设置或通过启动映像来恢复设备。 这些示例描述了配置失败的一些原因：
 
 - 如果因为缺少网络连接导致域加入过程失败，则尝试加入 Active Directory 域或不创建本地帐户的 Azure Active Directory 租户的配置包可能会使设备无法访问。
-- 通过配置包运行的脚本在系统上下文中运行，能够对设备文件系统和配置进行任意更改。 恶意或不正确的脚本可将设备置于仅能通过重置映像或恢复出厂设置才能将其恢复的状态。
+- 预配包运行的脚本在系统上下文中运行。 脚本能够对设备文件系统和配置进行任意更改。 恶意或不正确的脚本可将设备置于仅能通过重置映像或恢复出厂设置才能将其恢复的状态。
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>有关批量注册和公司门户的问题
 如果用户尝试使用公司门户注册之前曾批量注册的设备，会收到警告，指示其设备需要执行进一步操作，如设置或注册。 设备已注册，但公司门户应用或站点不识别此注册。
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>批量注册到 Wi-Fi 
 
-批量注册的设备无法使用面向用户的证书和 Wi-Fi 部署。 你需要使用[设备级别证书](certificates-configure.md)管理这些连接。 
+批量注册的设备无法使用面向用户的证书和 Wi-Fi 部署。 必须使用[设备级证书](certificates-configure.md)管理这些连接。 
 
 ### <a name="conditional-access"></a>条件性访问
 条件性访问不适用于使用批量注册登记的 Windows 设备。

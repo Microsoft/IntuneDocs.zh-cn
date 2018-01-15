@@ -1,12 +1,12 @@
 ---
-title: "将符合性策略应用到 Jamf 管理的设备。"
+title: "对 Jamf 托管设备强制执行符合性策略"
 titlesuffix: Azure portal
 description: "使用符合性帮助保护 Jamf 管理的设备。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,17 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
-ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
+ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上强制实现符合性
 
 |适用于：Azure 门户中的 Intune |
 |--|
 |正在查找有关经典门户中的 Intune 的文档？ [请转到此处](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
-| |
-
-|目前处于个人预览版|
-|--|
-|本主题中介绍的功能仅适用于当前使用个人预览版的客户。 对所有客户发布后，此消息将会被删除。|
 | |
 
 可以使用 Azure Active Directory 和 Microsoft Intune 的条件访问策略，以确保最终用户符合组织的要求。 可以将这些策略应用到[使用 Jamf Pro 管理](conditional-access-integrate-jamf.md)的 Mac。 这需要能够同时访问 Intune 和 Jamf Pro 控制台。
@@ -48,7 +43,7 @@ ms.lasthandoff: 12/06/2017
 2. 打开 Jamf Pro，然后导航到“计算机管理” > “程序包”。
 3. 在适用于 macOS 的公司门户应用中创建新的程序包，然后单击“保存”。
 4. 打开“计算机” > “策略”，然后选择“新建”。
-5. 使用常规有效负载为策略配置设置。 这些设置应为： 
+5. 使用常规有效负载为策略配置设置。 这些设置应为：
    - 触发器：选择“注册完成”和“定期签入”
    - 执行频率：选择“每台计算机一次”
 6. 选择“程序包”负载，然后单击“配置”。

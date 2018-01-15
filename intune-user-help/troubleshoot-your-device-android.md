@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: a83d938abbaefe35d028e50ed13c422b97bc3987
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>解决 Android 设备的常见问题
 
@@ -30,6 +30,7 @@ ms.lasthandoff: 12/12/2017
 - [通过电子邮件将日志发送给公司支持人员](send-logs-to-your-it-admin-by-email-android.md)
 - [使用 USB 电缆将日志发送给公司支持人员](send-logs-to-your-it-admin-using-cable-android.md)
 - [将注册错误发送给公司支持人员](send-enrollment-errors-to-your-it-admin-android.md)
+- [将错误发送给 Microsoft](send-logs-to-microsoft-android.md)
 - [需更新 Android 设备](you-need-to-update-your-android-device.md)
 - [设备不符合最高操作系统版本](your-android-version-isnt-yet-supported.md)
 - [设备已取得 root 权限，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)
@@ -41,3 +42,4 @@ ms.lasthandoff: 12/12/2017
 - [你的设备显示已加密，但公司门户应用另有说明](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [系统将提示你在 Android 设备上安装设备威胁防护应用](you-are-prompted-to-install-mtd-android.md)
 - [解除设备威胁防护应用在 Android 设备上发现的威胁](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+- [修复 Samsung Knox 设备的错误](samsung-knox-errors-android.md)

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/11/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
-了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户之间的通信以及用于支持部署的已创建的任何更新自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户进行通信，并更新为了支持部署而创建的自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+
+## <a name="week-of-december-11-2017"></a>2017 年 12 月 11 日当周
+
+### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>最终用户因帐户看到的消息 <!--1573558, 1712; changes to be made for other platforms for 1801-->
+
+“公司门户”网站的用户被禁止执行必须对租户拥有写权限的操作。 他们会看到相应错误消息，指明其帐户处于维护状态。 适用于 Android、iOS、macOS 和 Windows 的“公司门户”应用即将发生类似更改。
+
+![帐户移动期间显示的错误消息](./media/account-move-rom-iwp-user-1712.png)
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日当周
 
@@ -175,7 +183,7 @@ Android 版“公司门户”应用的应用详细信息页现在会显示 IT �
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
 
-我们宣布将在接下来的几个月内推出一项更新，该更新将提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。  
+我们宣布将在接下来的几个月内推出一项更新，该更新将提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在不使用凭据的情况下登录时，此功能就特别有用。  
 
 下面，将向你介绍使用凭据进行登录的以前的登录体验和新登录体验，以及从其他设备进行登录的新登录体验。
 
@@ -189,9 +197,9 @@ __以前的登录体验__
 
 __新的登录体验__
 
-![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_after_1704_001.png)
+![公司门户登录页，在网站图形化表示形式前方显示人员图标。 下面是“登录”按钮。 底部链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_after_1704_001.png)
 
-![提示用户只提供电子邮件地址，而不是在同一屏幕上同时提供电子邮件和密码。](./media/cp_ios_aad_signin_after_1704_002.png)
+![系统会提示用户只输入电子邮件地址，而无需在同一屏幕上同时输入电子邮件地址和密码。](./media/cp_ios_aad_signin_after_1704_002.png)
 
 ![在接受其电子邮件地址之后，提示用户输入密码。](./media/cp_ios_aad_signin_after_1704_003.png)
 
@@ -211,7 +219,7 @@ __从其他设备登录时的新登录体验__
 
 输入在公司门户应用中看到的验证码。 选择“继续”，你将能够使用受贵公司支持的任意方法进行身份验证，如智能卡。
 
-![用户已将唯一代码输入到字段中，“设备登录”站点要求确认 Intune 公司门户是接收授权以进行登录的正确应用。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+![用户已在字段中输入唯一代码，且“设备登录”网站已请求确认 Intune 公司门户是否是接收登录授权的正确应用。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
 ![确认页显示用户现在已登录其设备上的公司门户应用，可以关闭此页。](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
@@ -245,7 +253,7 @@ __从其他设备登录时的新登录体验__
 ![一个 Windows 10 公司门户应用的图像，其中显示新的自动同步状态，同时显示一个状态消息，指示设备正在同步并尝试下载该应用。](./media/w10_download_pending_syncing_after_1706.png)
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Windows 10 公司门户新的引导式体验<!---1058938--->
-适用于 Windows 10 的公司门户应用将为尚未被标识或注册的设备提供引导式的 Intune 演练体验。 新体验提供了循序渐进的说明，引导用户完成 AAD 注册（条件性访问功能所需）和 MDM 注册（设备管理功能所需）。 引导式体验可从公司门户主页获取。 如果用户未完成注册和登记，可以继续使用应用，但能够体验的功能将很有限。
+适用于 Windows 10 的公司门户应用将为尚未被标识或注册的设备提供引导式的 Intune 演练体验。 新体验提供了循序渐进的说明，引导用户完成 AAD 注册（条件性访问功能所需）和 MDM 注册（设备管理功能所需）。 引导式体验可从公司门户主页获取。 如果用户没有完成注册，仍可以继续使用应用，但可用功能受到限制。
 
 此更新仅在运行 Windows 10 周年更新（内部版本 1607）或更高版本的设备上可见。
 
@@ -286,7 +294,7 @@ __从其他设备登录时的新登录体验__
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser 和公司门户的新图标 <!--918433, 918431-->
 
-托管浏览器正在接收 Android 和 iOS 版本应用的更新图标。 新图标将包含更新的 Intune 徽章，使其与企业移动性 + 安全性 (EM+S) 中的其他应用更加一致。
+托管浏览器正在接收 Android 和 iOS 版本应用的更新图标。 新图标将包含更新的 Intune 徽章，使其与企业移动性 + 安全性 (EM+S) 中的其他应用更为一致。
 
 <html>
 <body>
@@ -336,8 +344,8 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 
 ## <a name="february-2017"></a>2017 年 2 月
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android 适用的公司门户应用的最新用户体验<!--621622, announced 1702-->
-从 3 月开始，Android 适用的公司门户应用将按照[材料设计指南](https://material.io/guidelines/material-design/introduction.html)来打造更具现代感的外观。 这将改善以下用户体验：
+### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android 公司门户应用的新用户体验 <!--621622, announced 1702-->
+从 3 月开始，Android 适用的公司门户应用将按照[材料设计指南](https://material.io/guidelines/material-design/introduction.html)来打造更具现代感的外观。 改进的用户体验包括：
 
 * __颜色__：可以根据自定义调色板对选项卡标头着色。
 
@@ -347,7 +355,7 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 
 ![左侧为更新之前的 Android 适用的公司门户应用的图像。 右侧为更新之后的 Android 适用的公司门户应用的图像。 两张图像中都选定了“应用”、“设备”和“联系 IT”三个可用选项卡中的“应用”选项卡。](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __导航__：“所有应用”以选项卡形式呈现出“特色”、“所有”和“分类”视图，便于导航。 “联系 IT”已经简化，改善了可读性。
+* __导航__：“所有应用”以选项卡形式呈现出“特色”、“所有”和“分类”视图，便于导航。 “联系 IT 部门”已经过精简，更加清晰易辨。
 
 <html>
 <body>
@@ -363,8 +371,8 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 
 ## <a name="january-2017"></a>2017 年 1 月
 
-### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>公司门户网站现代化<!--753980, announced 1701-->
-从 2 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![（汉堡菜单的小图，该图片现已添加到公司门户网站左上角，](./media/CP_hamburger_menu.png) 它包括了支持人员详细联系信息和现有托管设备的信息），这与 Microsoft 其他产品和服务保持一致。 将重新排列登录页，强调可供用户使用的应用，登录页上具有针对特色应用和最近更新应用的传送。
+### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>新式公司门户网站 <!--753980, announced 1701-->
+从 2 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 为了与其他 Microsoft 产品和服务保持一致，此网站将采用新的对比色配色方案、动态插图和“汉堡”菜单 ![现已添加到公司门户网站左上角的“汉堡”菜单的小图像](./media/CP_hamburger_menu.png) 它包括了支持人员详细联系信息和现有托管设备的信息），这与 Microsoft 其他产品和服务保持一致。 登录页将重新进行排列，以突出显示用户可使用的应用，同时包含特别推荐的应用和最近更新的应用的传送视图。
 
 ![左侧是当前版本的公司门户网站的图像，其中包含之前版本的应用、“我的设备”以及“特别推荐”视图和“类别”视图。 右侧是更新版本的公司门户网站的图像，其中包含刷新的应用轮播、“最近发布”的应用列表和更新的“类别”视图。](./media/CP_Website_BeforeAfter_Feb2016.png)
 

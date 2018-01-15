@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c4813649092dd12b6be2c07b900d6c1af957bcb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 13ad914f076f00d1a505510b726f84645ba22cc1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>如何设置 Android 设备锁定屏幕之前的时间量
 
 若要重新连接到你的工作，需按照适用于你所拥有设备的类型的步骤在你的设备上设置密码超时。
 
-## <a name="native-non-samsung-knox-device"></a>本机（非 Samsung KNOX）设备
+## <a name="native-non-samsung-knox-device"></a>原生（非 Samsung Knox）设备
 
 1.  在设备的“**设置**”中，点击“**安全**”&gt;“**自动锁定**”（在某些设备上显示为“**以下时间后锁定电话**”）。
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/12/2017
 
 2.  选择密码超时值。
 
-## <a name="samsung-knox-device"></a>Samsung KNOX 设备
+## <a name="samsung-knox-device"></a>Samsung Knox 设备
 
 1.  在设备的“**设置**中，点击“**锁定屏幕和安全**”&gt;“**自动锁定**”。
 
@@ -42,4 +42,4 @@ ms.lasthandoff: 12/12/2017
 
 2.  选择密码超时值。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d1c1d7e4121bfdabf121b62f0ac8e1af2bca20a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15f549970494174d4f0764472f313f93b11f32a2
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中注册企业所有的 iOS 设备
 
@@ -73,7 +73,7 @@ DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用�
 
   如果该设备还不是公司注册的设备，他们应选择“**新设备**”以使用标准注册流程继续操作。
 
-6. 在下一个屏幕上，用户必须确认新设备的序列号。 用户可以点击“**确认序列号**”链接以启动设置应用来验证序列号。 然后用户必须将序列号的最后 4 个字符输入到公司门户应用中。
+6. 在下一个屏幕上，用户必须确认新设备的序列号。 用户可以点击“确认序列号”链接，以启动有关如何使用“设置”应用验证序列号的说明。 然后用户必须将序列号的最后 4 个字符输入到公司门户应用中。
 
   此步骤验证该设备是否是在 Intune 中注册的企业设备。 如果设备上的序列号不匹配，则选择了错误的设备。 用户需返回到上一屏幕并选择其他设备。
 

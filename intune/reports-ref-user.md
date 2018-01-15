@@ -2,10 +2,10 @@
 title: "用户 - Intune 数据仓库 | Microsoft Docs"
 description: "Intune 数据仓库 API 中实体集合的“用户”类别的参考主题。"
 keywords: "Intune 数据仓库"
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,23 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2d81d17bc9489900f9d17101db1f1496ba8d55e9
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: 917c9585ffe17f9d090c519f716d284aa1b932b8
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="reference-for-user-entity"></a>用户实体引用
 
-“用户”类别包含用户实体，用于定义数据模型中的用户和代理属性。
+User 类别包含定义数据模型中用户属性的 User 实体。
 
 ## <a name="user"></a>用户
 
 用户实体列出了企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。
 
-用户实体集合包含自上个月的数据。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在上个月的数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
+User 实体集合包含用户数据。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在上个月的数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
 
-| 属性  | 说明 | 示例 |
+| 属性  | 描述 | 示例 |
 |---------|------------|--------|
 | UserKey |数据仓库中用户的唯一标识符 - 代理键。 |123 |
 | UserId |用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |
@@ -45,5 +45,5 @@ ms.lasthandoff: 11/15/2017
 | RowLastModifiedDateTimeUTC |上次在数据仓库中修改记录时的 UTC 日期和时间  |2016/11/23 - 中午 12:00:00 |
 
 ## <a name="next-steps"></a>后续步骤
- - 可以使用“当前用户”实体集合将用户数据限制为当前活动的用户。 有关详细信息，请参阅[引用当前用户实体](reports-ref-current-user.md)。 
+ - 可以使用“当前用户”实体集合将用户数据限制为当前活动的用户。 有关详细信息，请参阅[引用当前用户实体](reports-ref-current-user.md)。
  - 若要了解有关数据仓库如何在 Intune 中跟踪用户生存期的详细信息，请参阅 [Intune 数据仓库中的用户生存期表示](reports-ref-user-timeline.md)。

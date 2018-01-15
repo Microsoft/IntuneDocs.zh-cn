@@ -3,8 +3,8 @@ title: "将应用分配到 Android for Work 设备"
 titlesuffix: Azure portal
 description: "使用本主题可从 Google Play for Work 商店同步应用，然后将应用分配到 Android for Work 设备。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 将应用分配到 Android for Work 设备
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 09/09/2017
 1. 转到 [Google Play for Work 商店](https://play.google.com/work)。 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。
 2. 在商店中搜索要使用 Intune 分配的应用。
 3. 在所选应用的页面上，选择“批准”。 在此示例中，你选择了 Microsoft Excel 应用。<br>
-  ![批准应用示例](media/approve.png)
+  ![审核应用示例](media/approve.png)
 4. 一个用于该应用的窗口会打开，请你为该应用授予执行各种操作的权限。 选择“批准”才能继续。<br>
-  ![批准应用权限示例](media/approve-app-permissions.png)
+  ![审核应用权限示例](media/approve-app-permissions.png)
 5. 应用将获得批准并显示在 IT 管理员控制台中。
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>从 Google Play for Work 商店发布，然后同步业务线应用
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/09/2017
 2. 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。 如果是首次登录，则必须注册，然后支付费用以成为 Google 开发人员计划的成员。
 3. 在控制台中，选择**“添加新应用程序”**。
 4. 采用与将任何应用发布到 Google Play 商店相同的方式，上传应用并提供有关应用的信息。 但是，你必须选择设置“仅使此应用程序可供我的组织(<组织名称>)使用”**：<br>
-  ![用于仅使此应用可供你的组织使用的选项](media/restrict.png)<br>
+  ![用于仅向组织发布应用的选项](media/restrict.png)<br>
 此操作可确保应用只能供你的组织使用，而在公开的 Google Play 商店中不可用。
 有关如何上传和发布 Android 应用的详细信息，请参阅 [Google 开发人员控制台帮助](https://support.google.com/googleplay/android-developer/answer/113469)。
 5. 发布了应用之后，请转到 [Google Play for Work 商店](https://play.google.com/work)。 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。
@@ -62,8 +62,8 @@ ms.lasthandoff: 09/09/2017
 
 如果已从该商店批准了应用，但未在“移动应用”工作负荷的“获得许可的应用”节点中看到它，则按照如下所示的步骤强制立即同步：
 
-1. 登录到 Azure 门户中。
-2. 在“Intune”边栏选项卡上，选择“移动应用”。
+1. 登录 Azure 门户。
+2. 在 Intune 边栏选项卡上，选择“移动应用”。
 3. 在“移动应用”工作负荷中，选择“设置” > “Android for Work”。
 4. 在“Android for Work”边栏选项卡上，选择“立即同步”。
 5. 该页还会显示上次同步的时间和状态。
@@ -83,7 +83,7 @@ Android for Work 需要你先在 Google 的托管 Play Web 控制台中批准应
 
 1. 访问 http://play.google.com/work
 2. 使用发布和批准应用时所用的 Google 帐户登录。
-3. 访问“更新”选项卡，查看是否有应用需要更新。  列出的所有应用都需要新权限，且在应用新权限之前不会进行分配。  
+3. 访问**“更新”**选项卡，查看是否有应用需要更新。  列出的所有应用都需要新权限，且在应用新权限之前不会进行分配。  
 
 或者，可将 Google Play 配置为自动根据每个应用的情况重新审批应用权限。 
 

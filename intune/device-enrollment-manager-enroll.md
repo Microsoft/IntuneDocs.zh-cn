@@ -3,10 +3,10 @@ title: "注册设备 - 设备注册管理员"
 titlesuffix: Azure portal
 description: "使用设备注册管理器帐户在 Intune 中注册设备。 \""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 03facdde2ff5652799cc3d2113a48ea5ae772ea9
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>使用设备注册管理器注册设备
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/08/2017
 用户必须在 Azure 门户中存在才能添加为设备注册管理器。 为获得最佳安全性，DEM 用户也不应是 Intune 管理员。
 
 >[!NOTE]
->DEM 注册方法不能与以下其他注册方法一起使用：[Apple Configurator 与设置助手](apple-configurator-setup-assistant-enroll-ios.md)、[Apple Configurator 与直接注册](apple-configurator-direct-enroll-ios.md)、[Apple School Manager (ASM)](apple-school-manager-set-up-ios.md)，或[设备注册计划 (DEP)](device-enrollment-program-enroll-ios.md)。
+>DEM 注册方法不能与以下其他注册方法一起使用：[Apple Configurator 与设置助手](apple-configurator-setup-assistant-enroll-ios.md)、[Apple Configurator 与直接注册](apple-configurator-direct-enroll-ios.md)、[Apple School Manager (ASM)](apple-school-manager-set-up-ios.md)，或[设备注册计划 (DEP)](device-enrollment-program-enroll-ios.md)。 它也不能用于注册 macOS 设备。 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>设备注册管理器方案示例
 

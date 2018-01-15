@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 86f5b505923a709cd8f8ab4e2d91c6a891e2acc6
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3b1ccb3b0b7b2ce024ff6a09d7f9d8366896fb67
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的自定义设置
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/12/2017
 
 - [使用 Microsoft Intune 自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件](/intune/wi-fi-profile-shared-key)
 - [使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件](/intune/android-pulse-secure-per-app-vpn)
-- [在 Microsoft Intune 中使用自定义策略以允许和阻止适用于 Samsung KNOX 标准版设备的应用](/intune/samsung-knox-apps-allow-block)
+- [在 Microsoft Intune 中使用自定义策略允许和阻止在 Samsung Knox Standard 设备上运行应用](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
 >当前，仅上述设置可通过此配置文件类型配置。 Android 设备不公开可配置的 OMA-URI 设置的完整列表。 若要查看添加的更多设置，请在 [Intune Uservoice 网站](https://microsoftintune.uservoice.com/forums/291681-ideas)上请求这些设置。

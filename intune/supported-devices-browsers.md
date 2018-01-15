@@ -2,10 +2,10 @@
 title: "支持的设备 - Microsoft Intune"
 description: "列出用于 Intune 设备管理支持的设备平台和浏览器"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b168cbf5282b4e016133d071c56c8abd54c2e23b
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="supported-devices-and-browsers"></a>支持的设备和浏览器
 
@@ -39,11 +39,14 @@ ms.lasthandoff: 11/14/2017
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### <a name="supported-samsung-knox-standard-devices"></a>受支持的 Samsung KNOX Standard 标准版设备
+### <a name="supported-samsung-knox-standard-devices"></a>受支持的 Samsung Knox Standard 设备
 
-在 MDM 注册期间，仅当设备显示在[受支持的 KNOX 设备列表](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中时，公司门户应用才会尝试 Samsung KNOX 激活。 这有助于避免出现会阻止 MDM 注册的 KNOX 激活错误。 不支持 Samsung KNOX 激活的设备将作为标准 Android 设备进行注册。 Samsung 设备可能有一些支持 KNOX 的型号，其他设备则不具备。 购买并部署 Samsung 设备前，请与设备经销商确认 KNOX 兼容性。
+仅当[受支持的 Knox 设备列表](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中有相应设备时，“公司门户”应用才会在 MDM 注册期间尝试 Samsung Knox 激活。 这有助于避免出现阻止 MDM 注册的 Knox 激活错误。 不支持 Samsung Knox 激活的设备注册为标准 Android 设备。 Samsung 设备的一些型号支持 Knox，而另一些型号则不支持 Knox。 购买并部署 Samsung 设备前，请与设备经销商确认 Knox 兼容性。
 
-下面列出的 Samsung 设备型号不支持 KNOX，并且由适用于 Android 的公司门户应用作为本机 Android 设备进行注册：
+> [!NOTE]
+> 注册 Samsung Knox 设备可能需要[启用对 Samsung 服务器的访问权限](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)。 
+
+下面列出的 Samsung 设备型号不支持 Knox，适用于 Android 的“公司门户”应用将它们注册为原生 Android 设备：
 
 | **设备名** | **设备型号** |
 | --- | --- |

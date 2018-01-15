@@ -1,12 +1,12 @@
 ---
 title: "什么是 Microsoft Intune 设备注册"
 titlesuffix: Azure portal
-description: "了解如何为 iOS 设备、Android 设备和 Windows 设备注册。"
+description: "了解 iOS 设备、Android 设备和 Windows 设备注册。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,9 +27,9 @@ ms.lasthandoff: 11/03/2017
 
 在 Intune 中注册设备以便对其进行管理。 我们在 Intune 文档中将此功能称为移动设备管理 (MDM)。 在 Intune 中注册设备后，会向其颁发 MDM 证书，设备随后会使用这些证书与 Intune 服务进行通信。
 
-注册设备的方式取决于设备类型、所有权和所需的管理级别。 “自带设备办公”(BYOD) 注册允许用户注册其个人电话、平板电脑或电脑。 通过公司自有设备 (COD) 注册，可实现自动注册、共享设备或预授权注册要求等管理方案。
+注册设备方式取决于设备类型、所有权和所需的管理级别。 “自带设备办公”(BYOD) 注册允许用户注册其个人电话、平板电脑或电脑。 通过公司自有设备 (COD) 注册，可实现自动注册、共享设备或预授权注册要求等管理方案。
 
-若使用 Exchange ActiveSync（在本地或在云中托管），无需注册就可启用简单的 Intune 管理（详细信息稍后发布）。 建议将 Windows 电脑作为移动设备管理，方法如下所述。
+如果使用 Exchange ActiveSync（无论是在本地，还是托管在云中），无需注册即可启用简单的 Intune 管理。 建议将 Windows 电脑作为移动设备管理，方法如下所述。
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>设备注册方法概述
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/03/2017
 | **方法** |  **需要重置** |    **用户关联**   |   **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | 否|    是 |   否 | [详细信息](./android-enroll.md)|
-|**[DEM](#dem)**|   否 |否 |否  |[详细信息](./device-enrollment-program-enroll-ios.md)|
+|**[DEM](#dem)**|   否 |否 |否  |[详细信息](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| 否 | 是 | 否| [详细信息](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
@@ -110,4 +110,4 @@ IT 管理员可通过 USB 使用 Apple Configurator，手动准备每台公司�
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理
 
-当移动设备与 Intune 服务通信时，将自动续订 MDM 证书。 如果移动设备被擦除，或者它们在一段时间内无法与 Intune 服务通信，则 MDM 证书将不会续订。 MDM 证书过期 180 天后，设备将从 Azure 门户中删除。
+当移动设备与 Intune 服务通信时，将自动续订 MDM 证书。 如果移动设备被擦除，或者它们在一段时间内无法与 Intune 服务通信，则不会续订 MDM 证书。 MDM 证书过期 180 天后，设备将从 Azure 门户中删除。

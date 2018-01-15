@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: c96be109a6e73f8a56e0c985f127eeed182a5c4b
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -103,17 +103,11 @@ ms.lasthandoff: 10/31/2017
 
   3. **Intune 如何保护 PIN 免遭暴力破解攻击？** 作为应用 PIN 策略的一部分，IT 管理员可以设置在锁定应用之前用户可尝试验证其 PIN 的最大次数。 达到最大尝试次数后，Intune App SDK 可以擦除应用中的“公司”数据。
   
-**Intune 应用 PIN 是如何在数字类型和密码类型之间工作的？**
-MAM 当前允许使用包含字母数字和特殊字符（称为“密码”）的应用程序级 PIN (iOS)，它需要应用程序的参与（即， WXP、Outlook、Managed Browser、Yammer）以集成 Intune APP SDK for iOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 由于应用循环执行此集成，因此，针对最终用户的密码和数字 PIN 之间的行为将暂时更改并需要进行重要说明。 对于 2017 年 10 月发布的 Intune 版本，行为如下所示...
+  4. **为什么必须在同一发布者的应用上设置 PIN 两次？**
+目前，MAM（在 iOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用级 PIN，它需要有应用（即， WXP、Outlook、Managed Browser、Yammer）的参与，才能集成 Intune APP SDK for iOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS 版本 7.1.12 中发布的功能 。 <br> 为了支持此功能，并确保与旧版 Intune SDK for iOS 的向后兼容性，版本 7.1.12 及更高版本中的所有 PIN（数字或密码）都与旧版 SDK 中的数字 PIN 分开处理。 因此，如果设备中同一发布者的应用使用了版本低于和高于 7.1.12 的 Intune SDK for iOS，就需要设置两个 PIN。 <br><br> 也就是说，这两个 PIN（对于每个应用）不以任何方式相关，即必须遵守应用到应用的应用保护策略。 这样，只有当应用 A 和 B 都应用了相同的策略（对于 PIN），用户才需要设置相同的 PIN 两次。 <br><br> 此行为只针对于使用 Intune 移动应用管理 (MAM) 启用的 iOS 应用上的 PIN。 日后，随着应用采用更高版本的 Intune SDK for iOS，必须在同一发布者的应用上设置 PIN 两次就不再是个问题了。 有关示例，请参阅下面的注意事项。
 
-具有同一应用发行者的
-1. 应用
-2. 面向控制台 
-3. 且采用了包含此功能的 SDK (v 7.1.12+) 的密码 PIN 将能够在这些应用之间共享密码。 
-
-具有同一应用发行者的
-1. 应用
-2. 面向控制台的数字 PIN 将能够在这些应用之间共享数字 PIN。 
+>[!NOTE]
+> 例如，如果应用 A 使用版本低于 7.1.12 的 SDK 生成，同一发布者的应用 B 使用版本不低于 7.1.12 的 SDK 生成，且这两个应用都安装在 iOS 设备上，那么最终用户需要为应用 A 和 B 单独设置 PIN。 <br> 如果在此设备上安装了包含 SDK 版本 7.1.9 的应用 C，那么它与应用 A 共用同一 PIN。 <br> 使用 SDK 版本 7.1.14 生成的应用 D 与应用 B 共用同一 PIN。 <br> 如果仅在设备上安装了应用 A 和 C，需要设置一个 PIN。 如果仅在设备上安装了应用 B 和 D，情况也是如此，即需要设置一个 PIN。
 
 **加密呢？** IT 管理员可以部署要求对应用数据进行加密的应用保护策略。 作为该策略的一部分，IT 管理员还可指定何时加密内容。
 

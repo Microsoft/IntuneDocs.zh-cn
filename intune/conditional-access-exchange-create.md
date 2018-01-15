@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 840ef2ce59551a45cd753190b784e8ca0bba617a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6b598441d39d90a4ae81df7fffff99f9a5ccc451
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建和分配 Exchange 本地和旧版 Exchange Online Dedicated 的条件访问策略
 
@@ -105,7 +105,7 @@ Windows 8.1 和更高版本上的本机**邮件**应用程序（向 Intune 注�
 
 13. 对于不受条件性访问或其他规则影响的设备，可以选择允许或阻止该设备访问 Exchange。
   - 将此项设置为允许访问时，所有设备将能够立即访问 Exchange 内部部署。  如果属于“包含的组”中用户的设备之后被评估为不符合合规性策略或未在 Intune 中注册，将阻止此设备。
-  - 将此项设置为阻止访问时，一开始就会立即阻止所有设备阻止访问 Exchange 内部部署。  属于“包含的组”中用户的设备在 Intune 中注册并且被评估为符合要求后，即可获得访问权限。 将始终阻止无法运行 Samsung KNOX 标准版的 Android 设备，因为此设备不支持此设置。
+  - 将此项设置为阻止访问时，一开始就会立即阻止所有设备阻止访问 Exchange 内部部署。  属于“包含的组”中用户的设备在 Intune 中注册并且被评估为符合要求后，即可获得访问权限。 未运行 Samsung Knox Standard 的 Android 设备将始终受阻止，因为它们不支持此设置。
 <br></br>
 14. 在“设备平台例外”下，选择“添加”以指定平台。 如果将“非托管设备访问”设置为“已阻止”，即使平台例外进行了阻止，但也会允许已注册并符合要求的设备。 选择“确定”保存设置。
 
