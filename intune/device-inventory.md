@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 nmanager: angrobe
 ms.date: 11/10/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17916d513b338716a62f165545bdf44a3216bbe9
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 9cd8c3362fc8e2006b847a4cfc6fda09f2936a6a
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-view-intune-device-inventory"></a>如果查看 Intune 设备清单
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 11/13/2017
 
 要查看设备清单，请执行以下操作：
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**设备**”。
+3. 在 Intune 边栏选项卡上，选择“设备”。
 
 现在，选择下列选项之一：
 

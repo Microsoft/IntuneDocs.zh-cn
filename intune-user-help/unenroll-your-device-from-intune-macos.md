@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0b2b77328208038721286245847160c6dbe8d7e5
-ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
+ms.openlocfilehash: 504d732e00e296ad370d364e553989cacbd124d0
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>从 Intune 取消注册 macOS 设备
 
@@ -47,7 +47,5 @@ ms.lasthandoff: 01/03/2018
 -   你可能不再能够使用 Wi-Fi 或虚拟专用网 (VPN) 连接到公司网络。
 
 -   设备可能无权访问公司电子邮件。
-
--   仅针对电子邮件配置的设备不再显示在“公司门户”应用或网站中。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

@@ -14,11 +14,11 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
-ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
+ms.openlocfilehash: 5f13aa8bbe5173bda34cdeeecda26d96f8e3aa83
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户进行通信，并更新为了支持部署而创建的自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
@@ -301,10 +301,10 @@ __从其他设备登录时的新登录体验__
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width=200 height=366 align=center>
+            <img src="/intune/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width=200 height=366 align=center>
+             <img src="/intune/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -322,13 +322,13 @@ __从其他设备登录时的新登录体验__
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -362,7 +362,7 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width=200 height=366 align=center>
+            <img src="/intune/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width="200" height="366" align="center">
           </td>
       </tr>
    </table>

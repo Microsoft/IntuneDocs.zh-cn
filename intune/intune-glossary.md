@@ -7,17 +7,17 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 07/28/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 5d094e59b374ca306482cd1cb87f8a950df7fe14
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 08fc3be9e1e4f4b5692f871fc57108d431d5836d
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
 
@@ -129,7 +129,7 @@ ms.lasthandoff: 09/15/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|“选择性擦除”|[选择性擦除](/intune/device-company-data-remove)只删除应用保护策略保护的公司数据，包括设备中的设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。|
+|选择性擦除|[选择性擦除](/intune/device-company-data-remove)只删除应用保护策略保护的公司数据，包括设备中的设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。|
 |旁加载|无需从应用商店访问业务线应用即可进行安装的操作。|
 |订阅|输入的协议允许你访问 Intune 租户。|
 

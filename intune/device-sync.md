@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 8a8bb4729314819b23d69f0ccf6f6c093f29801f
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>将设备与 Intune 同步以获取最新的策略和操作
 
@@ -37,9 +37,9 @@ ms.lasthandoff: 10/23/2017
 
 ## <a name="how-to-sync-a-device"></a>如何同步设备
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**设备**”。
+3. 在 Intune 边栏选项卡上，选择“设备”。
 4. 在“设备和组”边栏选项卡上，选择“所有设备”。
 5. 从管理的设备列表中，选择一台设备，然后选择“同步”远程操作。
 7. 选择“是”确认操作。
