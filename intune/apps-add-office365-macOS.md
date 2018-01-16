@@ -15,16 +15,13 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5613997340867dda6def6a9a0a308b1ef0b618b5
-ms.sourcegitcommit: 138df6f793d2dc718041346b90c367c0181990da
+ms.openlocfilehash: 5e0ad0b99a2c8a602b5e542530a1d437065461b2
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 分配给 macOS 设备
-
->[!Note]
-> 有一项已知问题影响此功能。 有关详细信息，请参阅 [Microsoft Intune 中的已知问题](/intune/known-issues#apps)。
 
 借助此应用类型，可以轻松地将 Office 365 应用分配给 macOS 设备。 使用此新应用类型，可以安装 Word、Excel、PowerPoint、Outlook 和 OneNote。 这些应用还随附 Microsoft AutoUpdate (MAU)，有助于保护和不断更新应用。 所需的应用将显示为 Intune 控制台的应用列表中的一个应用。
 

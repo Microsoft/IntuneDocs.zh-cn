@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d03555e91a9e759e62b829576a0d39f957ab430
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 036ef508467e811b689393a157ada541fea70bcc
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 定位丢失或被盗的 iOS 设备
 
@@ -37,9 +37,9 @@ ms.lasthandoff: 09/15/2017
 
 ## <a name="how-to-locate-a-lost-or-stolen-device"></a>如何定位丢失或被盗的设备
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**设备**”。
+3. 在 Intune 边栏选项卡上，选择“设备”。
 4. 在“设备和组”边栏选项卡上，选择“所有设备”。
 5. 从管理的设备列表中，选择一台 iOS 设备，然后选择“定位设备”远程操作。
 6. 定位到设备后，“定位设备”边栏选项卡上会显示其位置。
