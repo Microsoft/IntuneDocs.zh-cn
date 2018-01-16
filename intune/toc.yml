@@ -1,4 +1,4 @@
-- name: 简介
+- name: 概述
   href: introduction-intune.md
   expanded: true
   items:
@@ -22,24 +22,13 @@
           href: whats-new-archive.md
         - name: 新增功能存档（经典门户）
           href: whats-new-archive-classic.md
-    - name: 体系结构概况
-      href: high-level-architecture.md
-    - name: 设备和应用生命周期
-      href: introduction-device-app-lifecycles.md
-      items:
-        - name: 设备生命周期
-          href: device-lifecycle.md
-        - name: 应用生命周期
-          href: app-lifecycle.md
-    - name: 常见方案
-      href: common-scenarios.md
     - name: 服务描述
       href: microsoft-intune-service-description.md
     - name: 已知问题
       href: known-issues.md
     - name: 获取支持
       href: get-support.md
-- name: Intune 入门
+- name: 快速入门
   href: get-started-evaluation.md
   items:
     - name: 导航 Azure 门户
@@ -54,6 +43,31 @@
       href: get-started-enroll.md
     - name: 分配应用
       href: get-started-apps.md
+- name: 方案实现指南
+  items:
+    - name: 保护 Exchange Online
+      href: exchange-online-protect.md
+    - name: 削减支持人员成本
+      href: password-reset.md
+    - name: 防止未经授权的访问
+      href: data-outside-protect.md
+    - name: 防止非受管理设备上的数据泄露
+      href: data-leak-prevention.md
+    - name: 比较 MDM 和 MAM
+      href: byod-technology-decisions.md
+- name: 概念
+  items:
+    - name: 体系结构概况
+      href: high-level-architecture.md
+    - name: 设备和应用生命周期
+      href: introduction-device-app-lifecycles.md
+      items:
+        - name: 设备生命周期
+          href: device-lifecycle.md
+        - name: 应用生命周期
+          href: app-lifecycle.md
+    - name: 常见方案
+      href: common-scenarios.md
 - name: 规划部署
   items:
     - name: 规划指南
@@ -79,18 +93,6 @@
           href: planning-guide-test-validation.md
         - name: 其他资源
           href: planning-guide-resources.md
-    - name: 方案实现指南
-      items:
-        - name: 保护 Exchange Online
-          href: exchange-online-protect.md
-        - name: 削减支持人员成本
-          href: password-reset.md
-        - name: 防止未经授权的访问
-          href: data-outside-protect.md
-        - name: 防止非受管理设备上的数据泄露
-          href: data-leak-prevention.md
-        - name: 比较 MDM 和 MAM
-          href: byod-technology-decisions.md
     - name: 迁移指南
       href: migration-guide.md
       items:
@@ -114,7 +116,7 @@
               href: migration-guide-drive-adoption.md
             - name: 典型迁移周期
               href: migration-guide-cycle.md
-- name: 如何
+- name: 操作方法指南
   items:
     - name: 设置 Intune
       href: setup-steps.md
@@ -214,35 +216,39 @@
         - name: 添加应用
           href: apps-add.md
           items:
-            - name: Android 应用商店应用
-              href: store-apps-android.md
-            - name: Android LOB 应用
-              href: lob-apps-android.md
-            - name: iOS App Store 应用
-              href: store-apps-ios.md
-            - name: iOS LOB 应用
-              href: lob-apps-ios.md
+            - name: 应用商店应用
+              items:
+                - name: Android 应用商店应用
+                  href: store-apps-android.md
+                - name: iOS App Store 应用
+                  href: store-apps-ios.md
+                - name: Windows Phone 8.1 应用商店应用
+                  href: store-apps-windows-phone-8-1.md
+                - name: Microsoft 应用商店应用
+                  href: store-apps-windows.md
+                - name: Android for Work 应用
+                  href: apps-add-android-for-work.md
+                - name: 适用于 Windows 10 的 Office 365 应用
+                  href: apps-add-office365.md
+                - name: 适用于 macOS 的 Office 365 应用
+                  href: apps-add-office365-macos.md
+            - name: 生成你的应用 (LOB)
+              items:
+                - name: Android LOB 应用
+                  href: lob-apps-android.md
+                - name: iOS LOB 应用
+                  href: lob-apps-ios.md
+                - name: Windows Phone LOB 应用
+                  href: lob-apps-windows-phone.md
+                - name: Windows LOB 应用
+                  href: lob-apps-windows.md
             - name: Web 应用
               href: web-app.md
-            - name: Windows Phone 8.1 应用商店应用
-              href: store-apps-windows-phone-8-1.md
-            - name: Windows Phone LOB 应用
-              href: lob-apps-windows-phone.md
-            - name: Microsoft 应用商店应用
-              href: store-apps-windows.md
-            - name: Windows LOB 应用
-              href: lob-apps-windows.md
-            - name: Android for Work 应用
-              href: apps-add-android-for-work.md
-            - name: 适用于 Windows 10 的 Office 365 应用
-              href: apps-add-office365.md
-            - name: 适用于 macOS 的 Office 365 应用
-              href: apps-add-office365-macos.md
-        - name: 分配应用
+        - name: 部署应用
           href: apps-deploy.md
         - name: 监视应用
           href: apps-monitor.md
-        - name: 应用配置策略
+        - name: 配置应用
           href: app-configuration-policies-overview.md
           items:
             - name: iOS 托管设备
@@ -251,23 +257,25 @@
               href: app-configuration-policies-use-android.md
             - name: 托管应用
               href: app-configuration-policies-managed-app.md
-        - name: 使用 iOS 应用预配配置文件
-          href: app-provisioning-profile-ios.md
-        - name: 选择性地擦除应用
-          href: apps-selective-wipe.md
-        - name: 使用批量购买的应用和书籍
-          href: vpp-apps.md
+            - name: 使用 iOS 应用预配配置文件
+              href: app-provisioning-profile-ios.md
+            - name: 使用批量购买的应用和书籍
+              href: vpp-apps.md
+              items:
+                - name: iOS VPP 应用
+                  href: vpp-apps-ios.md
+                - name: 适用于企业的 Microsoft 应用商店应用
+                  href: windows-store-for-business.md
+                - name: iOS 电子图书
+                  href: vpp-ebooks-ios.md
+            - name: 配置公司门户应用
+              href: company-portal-app.md
+            - name: 配置 Managed Browser
+              href: app-configuration-managed-browser.md
+        - name: 保护应用
           items:
-            - name: iOS VPP 应用
-              href: vpp-apps-ios.md
-            - name: 适用于企业的 Microsoft 应用商店应用
-              href: windows-store-for-business.md
-            - name: iOS 电子图书
-              href: vpp-ebooks-ios.md
-        - name: 配置公司门户应用
-          href: company-portal-app.md
-        - name: 配置 Managed Browser
-          href: app-configuration-managed-browser.md
+            - name: 选择性地擦除应用
+              href: apps-selective-wipe.md
     - name: 配置设备
       href: device-profiles.md
       items:
@@ -435,8 +443,6 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS 设置
                   href: app-protection-policy-settings-ios.md
-                - name: 在 Managed Browser 中查看应用保护日志
-                  href: app-protection-policy-settings-log.md
             - name: 验证应用保护策略
               href: app-protection-policies-validate.md
             - name: 监视应用保护用户状态
@@ -554,45 +560,42 @@
           href: end-user-apps-ios.md
         - name: 如何获取 Windows 应用
           href: end-user-apps-windows.md
-- name: 监视和故障排除
-  items:
-    - name: 帮助用户排查问题
-      href: help-desk-operators.md
-    - name: Intune 活动的审核日志
-      href: monitor-audit-logs.md
-    - name: 使用 Intune 数据仓库
-      href: reports-nav-create-intune-reports.md
+    - name: 监视和故障排除
       items:
-        - name: 更改数据仓库的日志
-          href: reports-changelog.md
-        - name: 使用 Power BI 连接到数据仓库
-          href: reports-proc-get-a-link-powerbi.md
-        - name: 使用 Power BI 从 OData 数据源创建报表
-          href: reports-proc-create-with-odata.md
-- name: 自动化和自定义
-  items:
-    - name: 配置自定义设备设置
-      href: custom-settings-configure.md
+        - name: 帮助用户排查问题
+          href: help-desk-operators.md
+        - name: Intune 活动的审核日志
+          href: monitor-audit-logs.md
+        - name: 查看应用保护日志
+          href: app-protection-policy-settings-log.md
+    - name: 自动化和自定义
       items:
-        - name: 具有预共享密钥的 Wi-Fi 配置文件
-          href: wi-fi-profile-shared-key.md
-        - name: Android
-          href: custom-settings-android.md
+        - name: 配置自定义设备设置
+          href: custom-settings-configure.md
           items:
-            - name: 每应用 VPN 配置文件
-              href: android-pulse-secure-per-app-vpn.md
-            - name: 允许/禁止对 Samsung Knox Standard 使用应用
-              href: samsung-knox-apps-allow-block.md
-        - name: iOS
-          href: custom-settings-ios.md
-        - name: macOS
-          href: custom-settings-macos.md
-        - name: Windows Phone 8.1
-          href: custom-settings-windows-phone-8-1.md
-        - name: Windows 10
-          href: custom-settings-windows-10.md
-        - name: Android for Work
-          href: custom-settings-android-for-work.md
+            - name: 具有预共享密钥的 Wi-Fi 配置文件
+              href: wi-fi-profile-shared-key.md
+            - name: Android
+              href: custom-settings-android.md
+              items:
+                - name: 每应用 VPN 配置文件
+                  href: android-pulse-secure-per-app-vpn.md
+                - name: 允许/禁止对 Samsung Knox Standard 使用应用
+                  href: samsung-knox-apps-allow-block.md
+            - name: iOS
+              href: custom-settings-ios.md
+            - name: macOS
+              href: custom-settings-macos.md
+            - name: Windows Phone 8.1
+              href: custom-settings-windows-phone-8-1.md
+            - name: Windows 10
+              href: custom-settings-windows-10.md
+            - name: Android for Work
+              href: custom-settings-android-for-work.md
+        - name: 旁加载 Windows 业务线应用
+          href: app-sideload-windows.md
+- name: 开发人员指南
+  items:
     - name: 使用 Intune App SDK 保护应用
       href: app-sdk.md
       items:
@@ -612,6 +615,15 @@
           href: app-sdk-cordova.md
         - name: Intune App SDK Xamarin 组件
           href: app-sdk-xamarin.md
+    - name: 使用 Intune 数据仓库
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: 更改数据仓库的日志
+          href: reports-changelog.md
+        - name: 使用 Power BI 连接到数据仓库
+          href: reports-proc-get-a-link-powerbi.md
+        - name: 使用 Power BI 从 OData 数据源创建报表
+          href: reports-proc-create-with-odata.md
     - name: 使用 Intune 数据仓库 API 的报表
       href: reports-nav-intune-data-warehouse.md
       items:
@@ -647,5 +659,7 @@
       items:
         - name: 适用于 Intune 的图形 API 的相关参考
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: 词汇表
-  href: intune-glossary.md
+- name: 资源
+  items:
+    - name: 词汇表
+      href: intune-glossary.md

@@ -79,6 +79,7 @@
 #### [将错误发送给公司](send-errors-to-your-it-admin-ios.md)
 #### [将错误发送给 Microsoft](send-logs-to-microsoft-ios.md)
 #### [找到现有公司电子邮件帐户](existing-company-email-account-found.md)
+#### [已达到设备限制](device-limit-wpj-ios.md)
 #### [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-ios.md)
 #### [出现错误](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [标识设备](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -112,6 +113,7 @@
 #### [此设备略有不同](device-little-different-jamf.md)
 #### [找到序列号](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [标识设备](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+#### [已达到设备限制](device-limit-wpj-macos.md)
 
 ## [使用 Windows 设备](using-your-windows-device-with-intune.md)
 ### [注册 Windows 10 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
