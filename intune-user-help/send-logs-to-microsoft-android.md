@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,21 +16,32 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 19ecd12eec320711886c1da29a7324f0360363ba
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: acde8ab4fc6132343d58277ddc01dafaa5e386e3
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>将日志发送给 Android 设备的“公司门户”开发人员
 
 有时，公司门户应用可能会意外关闭。 这是应用开发人员想要了解的有关问题，因为它可以帮助我们使其为你更好地工作，并阻止将来发生类似事件。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
 
-如果发生了这种情况，公司门户团队将需要一些信息来尝试诊断根本原因。 以下是需要你执行的操作：
+> [!Note]
+> 为了让公司支持人员能够更快找出问题，应打开“详细日志记录”。 详细日志记录包含报表中的所有相关详细信息。 了解如何[在此处打开详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。
 
-1.  尝试使问题再次出现。 如果无法执行也没有关系，但如果能够完成，这可能会使下一步更加容易。
-2.  转到“__设置__” > “__隐私__” > “__诊断和使用情况__” > “__诊断和使用情况数据__”。 这是已发生的应用活动的列表，涵盖从崩溃到常规使用模式的情况，并且不包含任何个人信息。 此列表以由近及远的时间顺序排序。 如果能够重现问题，这应是出现在此页应用活动列表上的第一项。 如果无法重现问题，请向下滚动，直到找到第一个以“公司门户”开头的项，然后点击打开。
-3.  按住，然后上下拖动蓝色小圆点，直到选中报告中的所有文本。 点击弹出菜单中的“__复制__”。
-4.  打开电子邮件应用，并将该内容粘贴到电子邮件的正文。 将该电子邮件发送到 <a href="mailto:wintunedroidfbk@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">wintunedroidfbk@microsoft.com</a>。
+如果发生这种情况，公司门户团队需要公司门户日志来尝试诊断根本原因。 将日志发送给 Microsoft：
+
+1.  打开公司门户应用。
+
+2.  点击“菜单” >  “帮助和反馈”。
+
+    > [!NOTE]
+    > “菜单”可以是软件按钮也可以是硬件按钮，具体取决于拥有的 Android 设备。
+
+3.  在“反馈”下，点击“提供反馈”。
+
+4.  简要描述你在电子邮件中遇到的问题，然后点击“发送”。
+
+也可通过 <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a> 直接向 Android 公司门户团队发送电子邮件。 
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

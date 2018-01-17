@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 12/21/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c96be109a6e73f8a56e0c985f127eeed182a5c4b
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -91,20 +91,27 @@ ms.lasthandoff: 12/22/2017
 
 **多身份支持的用途是什么？** 多身份支持使得能够公开发布具有“公司”和消费者受众的应用（如 Office 应用），同时让“公司”帐户具有 Intune 应用保护功能。
 
-**PIN 屏幕何时出现？** 仅当用户尝试访问应用中的“公司”数据时，Intune PIN 屏幕才会出现。 例如在 Word/Excel/PowerPoint 应用中，当最终用户尝试从 OneDrive for Business 打开文档（假定已成功部署强制执行 PIN 的应用保护策略）时，它才会出现。
-
 **Outlook 和多身份呢？** 由于 Outlook 具有个人和“公司”电子邮件的混合电子邮件视图，Outlook 应用会在启动时提示输入 Intune PIN。
 
 **Intune 应用 PIN 是什么？** 个人标识号 (PIN) 是一种密码，用于验证是否是正确的用户在应用程序中访问组织的数据。
 
   1. **何时提示用户输入其 PIN？** 仅当用户要访问“公司”数据时，Intune 才会提示输入用户的应用 PIN。 在诸如 Word/Excel/PowerPoint 等多身份应用中，当用户尝试打开“公司”文档或文件时，会向他们提示输入 PIN。 在单身份应用中，例如使用 Intune 应用包装工具启用的业务线应用，会在启动时提示输入 PIN，因为 Intune App SDK 知道用户在应用中的体验始终是针对“公司”的。
 
-  2. **PIN 安全吗？** PIN 仅允许正确的用户在应用中访问其组织数据。 因此，最终用户必须使用其工作或学校帐户登录，然后才能设置或重置其 Intune 应用 PIN。 这种身份验证通过安全的令牌交换由 Azure Active Directory 执行，且不对 Intune App SDK 公开。 从安全性的角度来看，保护工作或学校数据的最佳方法便是对其进行加密。 加密与应用 PIN 无关，它本身是一项应用保护策略。
+2. **系统多久提示一次用户输入 Intune PIN？**
+IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设置“以下时间过后重新检查访问要求(分钟)”。 此设置指定在设备上检测访问要求，并再次显示应用程序 PIN 屏幕之前的时长。 但是，请注意以下关于 PIN 的重要详细信息，它们会影响用户收到提示的频率： 
 
-  3. **Intune 如何保护 PIN 免遭暴力破解攻击？** 作为应用 PIN 策略的一部分，IT 管理员可以设置在锁定应用之前用户可尝试验证其 PIN 的最大次数。 达到最大尝试次数后，Intune App SDK 可以擦除应用中的“公司”数据。
+* **为了提高可用性，将在同一发布者的多个应用之间共享 PIN：**在 iOS 上，同一发布者的所有应用共享一个应用 PIN。 在 Android 上，所有应用共享一个应用 PIN。
+* **与 PIN 关联的计时器的滚动特性：**输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该 PIN 的 PIN 计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。 
+
+>[!NOTE] 
+> 为了更频繁地验证用户的访问要求（即 PIN 提示），尤其是针对常用应用的访问，建议缩小“以下时间过后重新检查访问要求(分钟)”值。 
+
+  3. **PIN 安全吗？** PIN 仅允许正确的用户在应用中访问其组织数据。 因此，最终用户必须使用其工作或学校帐户登录，然后才能设置或重置其 Intune 应用 PIN。 这种身份验证通过安全的令牌交换由 Azure Active Directory 执行，且不对 Intune App SDK 公开。 从安全性的角度来看，保护工作或学校数据的最佳方法便是对其进行加密。 加密与应用 PIN 无关，它本身是一项应用保护策略。
+
+  4. **Intune 如何保护 PIN 免遭暴力破解攻击？** 作为应用 PIN 策略的一部分，IT 管理员可以设置在锁定应用之前用户可尝试验证其 PIN 的最大次数。 达到最大尝试次数后，Intune App SDK 可以擦除应用中的“公司”数据。
   
-  4. **为什么必须在同一发布者的应用上设置 PIN 两次？**
-目前，MAM（在 iOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用级 PIN，它需要有应用（即， WXP、Outlook、Managed Browser、Yammer）的参与，才能集成 Intune APP SDK for iOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS 版本 7.1.12 中发布的功能 。 <br> 为了支持此功能，并确保与旧版 Intune SDK for iOS 的向后兼容性，版本 7.1.12 及更高版本中的所有 PIN（数字或密码）都与旧版 SDK 中的数字 PIN 分开处理。 因此，如果设备中同一发布者的应用使用了版本低于和高于 7.1.12 的 Intune SDK for iOS，就需要设置两个 PIN。 <br><br> 也就是说，这两个 PIN（对于每个应用）不以任何方式相关，即必须遵守应用到应用的应用保护策略。 这样，只有当应用 A 和 B 都应用了相同的策略（对于 PIN），用户才需要设置相同的 PIN 两次。 <br><br> 此行为只针对于使用 Intune 移动应用管理 (MAM) 启用的 iOS 应用上的 PIN。 日后，随着应用采用更高版本的 Intune SDK for iOS，必须在同一发布者的应用上设置 PIN 两次就不再是个问题了。 有关示例，请参阅下面的注意事项。
+  5. **为什么必须在同一发布者的应用上设置 PIN 两次？**
+目前，MAM（在 iOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用级 PIN，它需要有应用（即， WXP、Outlook、Managed Browser、Yammer）以集成 Intune APP SDK for iOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS 版本 7.1.12 中发布的功能 。 <br> 为了支持此功能，并确保与旧版 Intune SDK for iOS 的向后兼容性，版本 7.1.12 及更高版本中的所有 PIN（数字或密码）都与旧版 SDK 中的数字 PIN 分开处理。 因此，如果设备中同一发布者的应用使用了版本低于和高于 7.1.12 的 Intune SDK for iOS，就需要设置两个 PIN。 <br><br> 也就是说，这两个 PIN（对于每个应用）不以任何方式相关，即必须遵守应用到应用的应用保护策略。 这样，只有当应用 A 和 B 都应用了相同的策略（对于 PIN），用户才需要设置相同的 PIN 两次。 <br><br> 此行为只针对于使用 Intune 移动应用管理 (MAM) 启用的 iOS 应用上的 PIN。 日后，随着应用采用更高版本的 Intune SDK for iOS，必须在同一发布者的应用上设置 PIN 两次就不再是个问题了。 有关示例，请参阅下面的注意事项。
 
 >[!NOTE]
 > 例如，如果应用 A 使用版本低于 7.1.12 的 SDK 生成，同一发布者的应用 B 使用版本不低于 7.1.12 的 SDK 生成，且这两个应用都安装在 iOS 设备上，那么最终用户需要为应用 A 和 B 单独设置 PIN。 <br> 如果在此设备上安装了包含 SDK 版本 7.1.9 的应用 C，那么它与应用 A 共用同一 PIN。 <br> 使用 SDK 版本 7.1.14 生成的应用 D 与应用 B 共用同一 PIN。 <br> 如果仅在设备上安装了应用 A 和 C，需要设置一个 PIN。 如果仅在设备上安装了应用 B 和 D，情况也是如此，即需要设置一个 PIN。

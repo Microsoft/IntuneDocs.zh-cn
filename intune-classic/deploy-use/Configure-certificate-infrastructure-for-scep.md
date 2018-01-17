@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>配置 SCEP 证书基础结构
 
@@ -66,7 +66,7 @@ I
 
 ### <a name="BKMK_Accounts"></a>帐户
 
-|Name|详细信息|
+|名称|详细信息|
 |--------|-----------|
 |**NDES 服务帐户**|指定用作 NDES 服务帐户的域用户帐户。|
 
@@ -152,7 +152,7 @@ I
 
     1.  选择“证书模板”节点，单击“操作”-&gt;“新建”&gt;“要颁发的证书模板”，然后选择步骤 2 中创建的模板。
 
-    2.  通过查看 **“证书模板”** 文件夹下已发布的模板来对它进行验证。
+    2.  通过查看“证书模板”文件夹下已发布的模板来对它进行验证。
 
 
 ### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>任务 3 - 在 NDES 服务器上配置必备组件
@@ -326,7 +326,7 @@ I
 
 3.  提示输入证书连接器的客户端证书时，单击“选择” ，然后选择任务 3 中在你的 NDES 服务器上安装的 **客户端身份验证** 证书。
 
-    选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书”  处。 尽管你选择的证书不会显示，但可以单击“下一步”查看该证书的属性。 然后单击“下一步”，再单击“安装”。
+    选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书” 处。 尽管你选择的证书不会显示，但可以单击“下一步”查看该证书的属性。 然后单击“下一步”，再单击“安装”。
 
 4.  向导完成后，关闭向导前，单击“启动证书连接器 UI” 。
 
@@ -339,6 +339,9 @@ I
 
     单击“登录”并输入你的 Intune 服务管理员凭据或具有全局管理权限的租户管理员的凭据。
 
+    > [!NOTE]
+    > 如果在登录 NDESConnectorUI.exe 时收到错误“无法识别用户名”，通常表示你使用的帐户不具备有效的 Intune 许可证。 向该帐户分配 Intune 或 EMS 许可证，然后重试操作。
+
     如果你的组织使用代理服务器并且 NDES 服务器需要代理才能访问 Internet，请单击“使用代理服务器”，然后提供用于连接的代理服务器名称、端口和帐户凭据。
 
     选择“高级”选项卡，然后提供具有在证书颁发机构“颁发和管理证书”的权限的帐户凭据，然后单击“应用”。
@@ -347,7 +350,7 @@ I
 
 6.  打开命令提示符并键入 services.msc，然后按 Enter，右键单击“Intune 连接器服务”，再单击“重启”。
 
-若要验证服务是否正在运行，打开浏览器然后输入以下 URL 将返回 **“403”** 错误：
+若要验证服务是否正在运行，打开浏览器然后输入以下 URL 将返回“403”错误：
 
 **https:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 

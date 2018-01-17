@@ -15,19 +15,19 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b281a6b618e945750b5d5dec278e4ddc6166276
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 8eb231a225a642e4ccdd538f307442921633ddaf
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="review-app-protection-logs-in-the-managed-browser"></a>在 Managed Browser 中查看应用保护日志
+# <a name="review-client-app-protection-logs"></a>查看客户端应用保护日志
 
 你可以通过为移动客户端上的应用程序启用 Intune 诊断模式来访问这些日志。 下表显示了日志中记录的设置名称和说明。
 
 ## <a name="app-protection-policy-settings"></a>应用保护策略设置
 
-| Name                        | 可能值                                                                                                                                                                                                                                                                                           | Azure Intune 移动应用程序管理门户中的设置                                                                                                                            |
+| 名称                        | 可能值                                                                                                                                                                                                                                                                                           | Azure Intune 移动应用程序管理门户中的设置                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x 分钟                                                                                                                                                                                                                                                                                                   | [访问] 重新检查访问要求 - 脱机宽限期<br>注意：如果设备脱机，这是指重新检查应用访问要求前的时间段。             |
 | AccessRecheckOnlineTimeout  | _x_ 分钟                                                                                                                                                                                                                                                                                                   | [访问] 重新检查访问要求 - 超时。<br>注意：如果设备联机，这是指在应用启动后重新检查应用访问要求前的时间段。 |

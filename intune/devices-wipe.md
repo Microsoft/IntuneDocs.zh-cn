@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>通过恢复出厂设置或删除公司数据删除设备
 
@@ -96,6 +96,18 @@ ms.lasthandoff: 01/05/2018
 ### <a name="android-for-work"></a>Android for Work
 
 从 Android for Work 设备上删除公司数据将删除该设备上工作配置文件中的所有数据、应用和设置。 这将从 Intune 管理中停用设备。 Android for Work 不支持恢复出厂设置。
+
+
+### <a name="macos"></a>macOS
+
+|数据类型|macOS|
+|-------------|-------|
+|设置|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|
+|Wi-Fi 和 VPN 配置文件设置|删除。|
+|证书配置文件设置|删除并吊销通过 MDM 部署的证书。|
+|管理代理|删除管理配置文件。|
+|Outlook|如果启用条件访问，设备不会收到任何新邮件。|
+|Azure Active Directory (AD) 脱离|删除 Azure AD 记录。|
 
 ### <a name="windows"></a>Windows
 
