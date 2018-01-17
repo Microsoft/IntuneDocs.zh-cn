@@ -5,20 +5,20 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/10/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 031ae18fb88a04cd02ca3ced5c39a33e49610bef
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 942e7ceb8d42240c46387889677cb4620a9da103
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 01/04/2018
 
 ## <a name="prerequisites"></a>必备条件
 
-* 需要运行 OS X 10.8.5 或更高版本的 Mac OS 计算机，且需安装 Xcode 8 或更高版本。
+* 需要运行 OS X 10.8.5 或更高版本的 Mac OS 计算机，且需安装 Xcode 9 或更高版本。
 
-* 应用必须适用于 iOS 9 或更高版本。
+* 应用必须适用于 iOS 9.3.5 或更高版本。
 
 * 查看 [Intune App SDK for iOS 许可条款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 打印并保留一份许可条款副本，留作记录。 下载和使用用于 iOS 的 Intune App SDK 即表示你同意这些许可条款。  如果不接受这些条款，请不要使用此软件。
 
@@ -208,7 +208,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 ## <a name="receiving-app-protection-policy"></a>接收应用保护策略
 
 ### <a name="overview"></a>概述
-若要接收 Intune 应用保护策略，应用必须启动向 Intune 服务注册的请求。 可以在 Intune 控制台中配置应用，这样无论是否有设备注册，都可以接收应用保护策略。 没有设备注册的应用保护策略亦称为“APP-WE”或“MAM-WE”，这样应用就可以由 Intune 管理，而无需在 Intune 移动设备管理 (MDM) 中注册设备。 在这两种情况下，都必须向 Intune 服务注册应用，才能接收策略。
+要接收 Intune 应用保护策略，应用必须发起向 Intune MAM 服务注册的请求。 可以在 Intune 控制台中配置应用，这样无论是否有设备注册，都可以接收应用保护策略。 没有设备注册的应用保护策略亦称为“APP-WE”或“MAM-WE”，这样应用就可以由 Intune 管理，而无需在 Intune 移动设备管理 (MDM) 中注册设备。 在这两种情况下，都必须向 Intune MAM 服务注册应用，才能接收策略。
 
 ### <a name="apps-that-use-adal"></a>使用 ADAL 的应用
 
@@ -235,7 +235,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 ### <a name="apps-that-do-not-use-adal"></a>不使用 ADAL 的应用
 
-未使用 ADAL 登录用户的应用仍可从 Intune 服务接收应用保护策略，方法是调用 API 使 SDK 处理该身份验证。 应用尚未使用 Azure AD 对用户进行身份验证，但仍需要检索应用保护策略以帮助保护数据时，应使用此方法。 例如，正在使用另一个身份验证服务进行应用登录时，或应用完全不支持登录时。 为此，应用应对 `IntuneMAMEnrollmentManager` 实例调用 `loginAndEnrollAccount` 方法：
+未使用 ADAL 登录用户的应用仍可从 Intune MAM 服务接收应用保护策略，方法是调用 API 使 SDK 处理该身份验证。 当应用尚未使用 Azure AD 对用户进行身份验证，但仍需要检索应用保护策略以帮助保护数据时，应使用此方法。 例如，正在使用另一个身份验证服务进行应用登录时，或应用完全不支持登录时。 为此，应用应对 `IntuneMAMEnrollmentManager` 实例调用 `loginAndEnrollAccount` 方法：
 
 ```objc
 /**
@@ -248,7 +248,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 ```
 
-通过调用此方法，如果找不到任何现有令牌，SDK 会提示用户输入凭据。 随后，SDK 会尝试代表所提供的用户帐户向 Intune 服务注册应用。 可以使用作为标识的“nil”调用此方法。 在这种情况下，SDK 会使用设备上的现有托管用户进行注册（在 MDM 中），或在找不到任何现有用户时提示用户输入用户名。
+通过调用此方法，如果找不到任何现有令牌，SDK 会提示用户输入凭据。 随后，SDK 会尝试代表提供的用户帐户向 Intune MAM 服务注册应用。 可以使用作为标识的“nil”调用此方法。 在这种情况下，SDK 会使用设备上的现有托管用户进行注册（在 MDM 中），或在找不到任何现有用户时提示用户输入用户名。
 
 如果注册失败，应用应考虑在之后某一时间再次调用此 API，取决于失败的详细信息。 应用可通过委托接收有关任何注册请求的结果的[通知](#Status-result-and-debug-notifications)。
 
@@ -287,7 +287,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 ```
 
-在删除用户帐户的 Azure AD 令牌之前，必须调用此方法。 SDK 需要用户帐户的 AAD 令牌，才能代表用户向 Intune 服务发出特定请求。
+在删除用户帐户的 Azure AD 令牌之前，必须调用此方法。 SDK 需要用户帐户的 AAD 令牌，才能代表用户向 Intune MAM 服务发出特定请求。
 
 如果应用要自行删除用户的公司数据，则可将 `doWipe` 标志设置为 false。 否则，应用可让 SDK 启动选择性擦除。 这会导致调用应用的选择性擦除委托。
 
@@ -453,10 +453,10 @@ WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 U
 > 如果应用程序将发布到应用商店，根据应用商店标准，必须将 `MAMPolicyRequired` 设置为“否”。
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>为 iOS 应用程序启用面向 MAM 的配置
-面向 MAM 的配置允许应用通过 Intune App SDK 接收配置数据。 应用程序所有者/开发人员须定义此数据的格式和变体并将其传达给 Intune 客户。 Intune 管理员可以通过 Intune Azure 门户定位并部署配置数据。 自 Intune App SDK for iOS (v7.0.1) 起，参与 MAM 目标配置的应用均可通过 MAM 服务获取 MAM 目标配置数据。 通过 MAM 服务直接将应用程序配置数据推送到应用，而非通过 MDM 渠道。 Intune App SDK 提供一个类，可用于访问从这些控制台检索的数据。 请考虑以下先决条件： <br>
-* 访问面向 MAM 的配置 UI 之前，应用需注册 MAM-WE。 有关 MAM-WE 的详细信息，请参阅 [Intune App SDK 指南中的应用保护策略（不注册设备）](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment)。
+面向 MAM 的配置允许应用通过 Intune App SDK 接收配置数据。 应用程序所有者/开发人员须定义此数据的格式和变体并将其传达给 Intune 客户。 Intune 管理员可以通过 Intune Azure 门户定位并部署配置数据。 自 Intune App SDK for iOS 7.0.1 版起，参与 MAM 目标配置的应用均可通过 MAM 服务获取 MAM 目标配置数据。 通过 MAM 服务直接将应用程序配置数据推送到应用，而非通过 MDM 渠道。 Intune App SDK 提供一个类，可用于访问从这些控制台检索的数据。 请考虑以下先决条件： <br>
+* 访问面向 MAM 的配置 UI 之前，需要向 Intune MAM 服务注册应用。 有关详细信息，请参阅[接收应用保护策略](#receiving-app-protection-policy)。
 * 将 ```IntuneMAMAppConfigManager.h``` 包括在应用的源文件中。
-* 调用 ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` 以获取应用配置对象。
+* 调用 ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` 以获取应用配置对象。
 * 对 ```IntuneMAMAppConfig``` 对象调用适当的选择器。 例如，如果应用程序密钥是一个字符串，则需要使用 ```stringValueForKey``` 或 ```allStringsForKey```。 ```IntuneMAMAppConfig.h header``` 文件描述返回值/错误条件。
 
 有关与面向 MAM 的配置值相关的 Graph API 功能的详细信息，请参阅 [Graph API 参考面向 MAM 的配置](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。 <br>
