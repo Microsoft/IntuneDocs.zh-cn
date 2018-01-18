@@ -654,11 +654,11 @@
               href: reports-ref-user-device.md
             - name: 用户实体引用
               href: reports-ref-user.md
-    - name: Intune Graph API
+    - name: 使用 Azure AD 访问 Microsoft Graph Intune API
       href: intune-graph-apis.md
       items:
-        - name: 适用于 Intune 的图形 API 的相关参考
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Intune API 参考
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: 资源
   items:
     - name: 词汇表
