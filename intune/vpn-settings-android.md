@@ -15,11 +15,11 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17aa425a7daad35860eb4694e9bf798dc655992c
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 31d1e40c3cd352c00dd7a659f716b5690ea64ea1
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的 VPN 设置
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/30/2017
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**
-    -  **F5 Edge Client**
+    - **F5 Edge Client**
     - **Pulse Secure**
     - **Citrix**
 
@@ -60,7 +60,6 @@ ms.lasthandoff: 12/30/2017
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**
-    -  **F5 Edge Client**
+    - **F5 Edge Client**
     - **Pulse Secure**
 
-- **拆分隧道** - 启用该设置后，可在其他流量在 VPN 中使用 Internet 时，允许某些 Web 流量使用 VPN 连接。 如果你希望在活动时让所有流量均使用 VPN，请禁用此设置。
