@@ -12,14 +12,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 83ef0050380b8b5e3741dc7b8ea57574df6df658
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>如何管理 iOS 应用之间的数据传输
 ## <a name="manage-ios-apps"></a>管理 iOS 应用
