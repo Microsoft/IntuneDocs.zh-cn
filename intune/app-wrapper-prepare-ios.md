@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -53,7 +53,6 @@ ms.lasthandoff: 12/22/2017
   * 输入应用必须授权才能由 Intune 应用包装工具进行处理。 [授权](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)向应用提供除平常所授权限和功能以外的其他权限和功能。 有关说明，请参阅[设置应用权利](#setting-app-entitlements)。
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>应用包装工具的 Apple 者先决条件
-
 
 若要将包装的应用专门分发给组织用户，需要一个 [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) 帐户，以及链接到 Apple 开发者帐户用于应用签名的几个实体。
 
@@ -204,8 +203,8 @@ ms.lasthandoff: 12/22/2017
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|在应用包装工具可用的命令行属性上显示详细的使用情况信息。|
 |**-v**|（可选）将详细信息输出到控制台。 建议使用此标志来调试任何错误。|
-|**-e**| （可选）使用此标志可使应用包装工具在处理应用的过程中删除缺失的权利。 有关更多详细信息，请参阅“设置应用权利”。|
-|**-xe**| （可选）打印应用中的 iOS 扩展，以及使用这些扩展需要哪些权利的相关信息。 有关更多详细信息，请参阅“设置应用权利”。 |
+|**-e**| （可选）使用此标志可使应用包装工具在处理应用的过程中删除缺失的权利。 有关更多详细信息，请参阅[设置应用权利](#setting-app-entitlements)。|
+|**-xe**| （可选）打印应用中的 iOS 扩展，以及使用这些扩展需要哪些权利的相关信息。 有关更多详细信息，请参阅[设置应用权利](#setting-app-entitlements)。 |
 |**-x**| （可选）`<An array of paths to extension provisioning profiles>`。 如果应用需要扩展预配配置文件，使用此项。|
 |**-f**|（可选）`<Path to a plist file specifying arguments.>` 如果选择使用 plist 模板指定其余 IntuneMAMPackager 属性（-i、-o 和 -p），使用 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 前的此标志。 请参阅“使用 plist 输入参数”。 |
 |**-b**|（可选）如果希望已包装的输出应用与输入应用的绑定版本相同，使用不带参数的 -b（不推荐）。 <br/><br/> 如果希望已包装的应用具有自定义 CFBundleVersion，使用 `-b <custom bundle version>`。 如果选择指定自定义 CFBundleVersion，建议以最低有效组件递增本机应用的 CFBundleVersion，例如 1.0.0 -> 1.0.1。 |
@@ -244,6 +243,16 @@ ms.lasthandoff: 12/22/2017
 > 上传已包装应用时，若已向 Intune 部署了较旧版本（已包装或本机）的应用，则可尝试更新旧版本应用。 若出现错误，将该应用作为新应用上传并删除旧版本。
 
 现在便可以将应用部署到用户组，并将应用保护策略定向到该应用。 该应用可以在使用所指定的应用保护策略的设备上运行。
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>我应该多久使用一次 Intune 应用包装工具来重新包装 iOS 应用程序？
+需要重新包装应用程序的主要方案如下：
+* 应用程序本身已发布新的版本。 该应用的以前版本已包装且已上传到 Intune 控制台。
+* Intune App Wrapping Tool for iOS 已发布新的版本，该版本提供了重要的 bug 修补程序或新的特定 Intune 应用程序保护策略功能。 GitHub 存储库每 6-8 周会发布一次 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) 的新版本。
+
+对于 iOS，尽管可以使用不同于最初对应用进行签名所用的证书/预配配置文件进行包装，但如果新预配配置文件中不包括在应用中指定的权利，包装将会失败。 “-e”命令行选项可用于从应用中删除任何缺少的权利，若在此方案中使用此选项来强制保证包装不失败，则可能导致应用中出现功能中断。
+
+重新包装的一些最佳做法包括：
+* 确保另一个预配配置文件具有任何以前的预配配置文件所必需的所有权利。 
 
 ## <a name="error-messages-and-log-files"></a>错误消息和日志文件
 使用以下信息可排查应用包装工具出现的问题。

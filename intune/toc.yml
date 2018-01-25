@@ -124,7 +124,7 @@
         - name: 支持的配置
           href: supported-devices-browsers.md
           items:
-            - name: 网络带宽使用
+            - name: 网络配置
               href: network-bandwidth-use.md
         - name: 登录到 Intune
           href: account-sign-up.md
@@ -166,6 +166,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment 计划
               href: enrollment-autopilot.md
+            - name: 注册状态屏幕
+              href: windows-enrollment-status.md
         - name: 设置 Android 注册
           href: android-enroll.md
         - name: 设置 iOS 注册
@@ -661,5 +663,5 @@
           href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: 资源
   items:
-    - name: 词汇表
+    - name: 术语表
       href: intune-glossary.md

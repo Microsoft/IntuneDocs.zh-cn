@@ -15,13 +15,13 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44e96ba9fac5b95e6a508b7c2c314a49c04a6d30
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a85207effabfb1f986ba3901051bd51886c5e7be
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略托管时会出现的情况
+# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/08/2017
 
 使用应用时，仅在工作环境中启用应用保护策略，因此根据工作或个人环境，应用可能有不同的行为。  
 
-对于支持多身份的应用，仅当最终用户在工作环境中使用该应用时，Intune 才会启用应用保护策略。  例如，最终用户访问工作数据时将收到 PIN 提示。  对于 **Outlook 应用**，将在最终用户启动应用时提示其输入 PIN。 对于 **OneDrive 应用**，将在最终用户键入工作帐户时进行提示。  对于 Microsoft Word、*PowerPoint和 Excel，将在最终用户访问存储在公司 OneDrive for Business 位置的文档时进行提示。
+对于支持多身份的应用，仅当最终用户在工作环境中使用该应用时，Intune 才会启用应用保护策略。  例如，最终用户访问工作数据时将收到 PIN 提示。  对于 **Outlook 应用**，将在最终用户启动应用时提示其输入 PIN。 对于 **OneDrive 应用**，将在最终用户键入工作帐户时进行提示。  对于 Microsoft Word、PowerPoint 和 Excel，将在最终用户访问存储在公司 OneDrive for Business 位置的文档时进行提示。
 ##  <a name="managing-user-accounts-on-the-device"></a>在设备上管理用户帐户
 
 Intune 仅支持对于每个设备，将应用保护策略部署到一个用户帐户。

@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 1/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff950ce35c491ca576dc9cc77ab561e2cfef0381
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 0bc5ad6e0467fe8a8c98c1ad2d71b967c18b8233
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Microsoft Intune 中的设备配置文件疑难解答
 
@@ -45,12 +45,12 @@ ms.lasthandoff: 11/10/2017
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>策略或应用分配完成后，移动设备需要多长时间获取？
 策略或应用分配完成后，Intune 会立即开始尝试通知设备其应签入到 Intune 服务。 这通常可在五分钟内完成。
 
-如果首次发出通知后设备未签入以获取策略，则 Intune 还会尝试通知 3 次。  如果设备脱机（例如设备已关机或未连接至网络），则可能无法收到通知。 在这种情况下，设备将按照以下设置在下次计划的签入到 Intune 服务时获取策略：
+如果首次发出通知后设备未签入以获取策略，则 Intune 还会尝试通知 3 次。 如果设备脱机（例如设备已关机或未连接至网络），则可能无法收到通知。 在这种情况下，设备将按照以下设置在下次计划签入到 Intune 服务时获取策略：
 
 - iOS 和 macOS：每 6 小时。
 - Android：每 8 小时。
 - Windows Phone：每 8 小时。
-- 注册为设备的 Windows 8.1 和 Windows 10 电脑 - 每 8 小时。
+- 注册为设备的 Windows 8.1 和 Windows 10 电脑：每 8 小时。
 
 如果设备刚进行注册，则签入会更频繁，具体如下：
 
@@ -61,24 +61,26 @@ ms.lasthandoff: 11/10/2017
 
 用户还可以打开公司门户应用并同步设备以立即随时检查策略。
 
+对于没有用户关联的设备，注册后的即时同步频率不尽相同，可能为几小时到一天（或者更长）。 Intune 将以不同的时间间隔发送请求以将设备签入该服务。 但实际上仍需设备执行此操作。 初始注册后，无法预测设备完成该签入所需的时间，具体取决于设备注册的类型以及设备分配到的策略和配置文件。 但是，当已注册设备并应用所有初始策略后，设备应大约每 6 小时检查一次新策略。
+
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>哪些操作会导致 Intune 立即向设备发送通知？
-当设备收到告知它们签入的通知时或者在定期的计划签入期间，设备会签入到 Intune。  当你针对某个设备或用户执行特定操作时，例如擦除、锁定、密码重置、应用分配、配置文件分配（Wi-Fi、VPN、电子邮件等）或策略分配，Intune 会立即开始尝试通知设备其应签入到 Intune 服务以接收这些更新。
+当设备收到告知它们签入的通知时或者在定期的计划签入期间，设备会签入到 Intune。 当你针对某个设备或用户执行特定操作时，例如擦除、锁定、密码重置、应用分配、配置文件分配（Wi-Fi、VPN、电子邮件等）或策略分配，Intune 会立即开始尝试通知设备其应签入到 Intune 服务以接收这些更新。
 
 其他变更（如在公司门户中修订合同信息）不会导致立即向设备发送通知。
 
-## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>如果多个策略被分配到同一用户或设备，如何知道会应用哪些设置？
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>如果多个策略被分配到同一用户或设备，如何知道会应用哪些设置？
 当两个或多个策略被分配到同一用户或设备时，将在单个设置级别上评估具体应用哪个设置：
 
 -   合规性策略设置始终优先于配置策略设置。
 
 -   如果针对不同合规性策略中的相同设置进行评估，则应用限制最严格的合规性策略设置。
 
--   如果配置策略设置与其他配置策略设置冲突，此冲突将会显示在 Azure 门户中。 必须手动解决此类冲突。
+-   如果配置策略设置与其他配置策略设置冲突，此冲突会显示在 Azure 门户中。 必须手动解决此类冲突。
 
-## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>应用保护策略互相冲突时会发生什么情况？ 哪一种策略将应用于应用？
-除数字输入字段（如重置之前尝试 PIN）外，冲突值是应用保护策略中限制最严格的设置。  数字输入字段将设定为与你使用建议的设置选项在控制台中创建 MAM 策略时一样的值。
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>应用保护策略互相冲突时会发生什么情况？ 哪一种策略将应用于应用？
+除数字输入字段（如重置之前尝试 PIN）外，冲突值是应用保护策略中限制最严格的设置。 数字输入字段将设定为与你使用建议的设置选项在控制台中创建 MAM 策略时一样的值。
 
-两个配置文件设置相同时即会发生冲突。  例如，除复制/粘贴设置外，你配置了两个完全相同的 MAM 策略。  在此方案中，复制/粘贴设置将设定为限制最严格的值，但其余设置将应用配置的值。
+两个配置文件设置相同时即会发生冲突。 例如，除复制/粘贴设置外，你配置了两个完全相同的 MAM 策略。 在此方案中，复制/粘贴设置将设定为限制最严格的值，但其余设置将应用配置的值。
 
 如果一个配置文件已分配到应用且生效，然后分配了第二个配置文件，则第一个配置文件的优先级更高并且会继续应用该配置文件，而第二个配置文件将显示冲突。 如果两个配置文件同时应用，即没有优先的配置文件，则两个都会显示冲突。 任何冲突的设置都将设定为限制最严格的值。
 
@@ -131,8 +133,8 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
 Windows Phone 设备不允许通过 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”设置为 8，然后尝试将其减少到 4。 已向设备应用更严格的配置文件。
 
 如果要将配置文件更改为安全级别较低的值，可能需要重置安全策略，具体视设备平台而定。
-例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”栏并选择“设置”&gt;“控制面板”。  选择“用户帐户”小程序。
-在左侧导航菜单底部有一个“重置安全策略”  链接。 选中它，然后选择“重置策略”按钮。
+例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”栏并选择“设置”&gt;“控制面板”。 选择“用户帐户”小程序。
+左侧导航菜单底部有一个“重置安全策略”链接。 选中它，然后选择“重置策略”按钮。
 对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS），可能需要将其停用并重新注册回服务，这样才能应用限制较少的配置文件。
 
 

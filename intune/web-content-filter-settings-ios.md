@@ -6,20 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/03/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d0d8a6e198a58fc513645db68ae3a3ef84a3653
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>适用于 iOS 设备的 Web 内容筛选器设置
 
@@ -47,8 +46,11 @@ ms.lasthandoff: 12/30/2017
 ## <a name="configure-urls"></a>配置 URL
 
 1. 在“Web 内容筛选器”边栏选项卡上，根据需要选择以下设置之一：
-    - **允许的 URL** - 在“允许的 URL”边栏选项卡上，输入想要允许的 URL（跳过 Apple Web 筛选器），并在每个 URL 后选择输入。
-    - **阻止的 URL** - 在“阻止的 URL”边栏选项卡上，输入想要阻止的 URL（无需考虑 Apple Web 筛选器设置），并在每个 URL 后选择输入。
+   - **允许的 URL** - 在“允许的 URL”边栏选项卡上，输入想要允许的 URL（跳过 Apple Web 筛选器），并在每个 URL 后选择输入。
+     > [!NOTE]
+     > 此处指定的 URL 不受 Apple Web 筛选器的限制。 这些 URL 不表示仅获允许的网站列表。 如果希望表示仅获允许的网站列表，请使用“仅限特定网站”。
+
+   - **阻止的 URL** - 在“阻止的 URL”边栏选项卡上，输入想要阻止的 URL（无需考虑 Apple Web 筛选器设置），并在每个 URL 后选择输入。
 2. 完成后单击“确定” 。
 
 
