@@ -248,7 +248,7 @@ I
     ![IIS 的最大 URL 长度和最大查询长度](..\media\SCEP_IIS_max_URL.png)
 
 5.  重新启动服务器。 在服务器上运行 iisreset 将不足以完成这些更改。
-6. 浏览到 http://FQDN/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
+6. 浏览到 http://*FQDN*/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
 
     ![测试 NDES](..\media\SCEP_NDES_URL.png)
 
