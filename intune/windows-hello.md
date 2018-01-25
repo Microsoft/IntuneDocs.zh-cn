@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: 
+ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f14120bc6141853177559d4561ea2da866088fb2
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 64073cb53478b1bf2373426426e0a5d414ca40c4
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="use-windows-hello-for-business"></a>使用 Windows Hello 企业版
 
@@ -48,11 +48,11 @@ Intune 与 Hello for Business 集成的两种方式：
 
 
 
-## <a name="create-a-windows-hello-for-business-policy"></a>创建 Windows Hello 企业版策略
+## <a name="create-a-windows-hello-for-business-policy"></a>创建 Windows Hello for Business 策略
 
 1.  在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
-2.  在 Intune 边栏选项卡上，选择“注册设备”，然后选择“管理” > “Windows Hello 企业版”。
+2.  在 Intune 边栏选项卡上，选择“Endpoint Protection”，然后选择“管理” > “Windows Hello 企业版”。
 
 3.  在打开的边栏选项卡上，选择“默认”设置。
 
@@ -76,7 +76,7 @@ Intune 与 Hello for Business 集成的两种方式：
  - “要求 PIN 中含有小写字母”/要求 PIN 中含有大写字母”/要求 PIN 中含有特殊字符”。 你可以通过要求在 PIN 中使用大写字母、小写字母和特殊字符，从而强制实施更强的 PIN。 选择：
 
      - “允许”。 用户可以在其 PIN 中使用该字符类型，但不强制使用。
-    
+
      - “必需”。 用户在其 PIN 中必须至少包含其中一种字符类型。 例如，常见的做法是要求包含至少一个大写字母和一个特殊字符。
 
      - “不允许”（默认）。 用户必须在他们的 PIN 中使用这些字符类型。 （这也是不配置此设置时的行为。）<br>特殊字符包括：! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~

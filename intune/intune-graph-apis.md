@@ -1,6 +1,6 @@
 ---
-title: "如何使用 Azure AD 访问 Intune Graph API"
-description: "描述应用使用 Azure AD 访问 Intune Graph API 所需的步骤"
+title: "如何使用 Azure AD 访问 Microsoft Graph Intune API"
+description: "描述应用使用 Azure AD 访问 Microsoft Graph Intune API 所需的步骤。"
 keywords: "Intune graphapi c# powershell 权限角色"
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>如何使用 Azure AD 访问 Intune Graph API
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何使用 Azure AD 访问 Microsoft Graph Intune API
 
-[Microsoft Graph API](https://developer.microsoft.com/graph/) 现在支持具有特定 API 和权限角色的 Microsoft Intune。  Graph API 使用 Azure Active Directory (Azure AD) 进行身份验证和访问控制。  
-对 Intune Graph API 的访问要求：
+[Microsoft Graph API](https://developer.microsoft.com/graph/) 现在支持具有特定 API 和权限角色的 Microsoft Intune。  Microsoft Graph API 使用 Azure Active Directory (Azure AD) 进行身份验证和访问控制。  
+访问 Microsoft Graph Intune API 需要：
 
 - 应用程序 ID 需要具有：
 
-    - 调用 Azure AD 和 Graph ApI 的权限。
+    - 调用 Azure AD 和 Microsoft Graph API 的权限。
     - 与具体应用程序任务相关的权限范围。
 
 - 用户凭据需要具有：
@@ -38,11 +38,11 @@ ms.lasthandoff: 12/12/2017
 
 本文：
 
-- 说明如何注册一个可以访问 Graph API 和相关权限角色的应用程序。
+- 说明如何注册一个可以访问 Microsoft Graph API 和相关权限角色的应用程序。
 
-- 描述 Intune Graph API 权限角色。
+- 描述 Intune API 权限角色。
 
-- 提供 C# 和 PowerShell 的 Intune Graph API 身份验证示例。
+- 提供 C# 和 PowerShell 的 Intune API 身份验证示例。
 
 - 描述如何支持多个租户
 
@@ -53,9 +53,9 @@ ms.lasthandoff: 12/12/2017
 - [将应用程序与 Azure Active Directory 集成](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [了解 OAuth 2.0](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>注册应用以使用 Graph API
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>注册应用以使用 Microsoft Graph API
 
-若要注册应用以使用 Graph API，请执行以下操作：
+注册应用以使用 Microsoft Graph API：
 
 1.  使用管理凭据登录到 [Azure 门户](https://portal.azure.com)。
 
@@ -127,15 +127,15 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="intune-permission-scopes"></a>Intune 权限范围
 
-Azure AD 和 Graph API 使用权限范围来控制对公司资源的访问。  
+Azure AD 和 Microsoft Graph 使用权限范围来控制对公司资源的访问。  
 
-权限范围（也称为 _OAuth 范围_）控制对特定 Intune 实体及其属性的访问权限。 本节概要总结了 Intune Graph API 功能的权限范围。
+权限范围（也称为 _OAuth 范围_）控制对特定 Intune 实体及其属性的访问权限。 本节总结了 Intune API 功能的权限范围。
 
 若要了解更多信息，请参阅以下内容：
 - [Azure AD 身份验证](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [应用程序权限范围](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-当向 Graph API 授予权限时，你可以指定以下范围来控制对 Intune 功能的访问权限：下表总结了 Intune Graph API 权限范围。  第一列显示 Azure 门户中显示的功能名称，第二列显示权限范围名称。
+向 Microsoft Graph 授予权限时，你可以指定以下范围来控制对 Intune 功能的访问权限：下表总结了 Intune API 权限范围。  第一列显示 Azure 门户中显示的功能名称，第二列显示权限范围名称。
 
 _启用访问权限_设置 | 作用域名称
 :--|:--
@@ -153,7 +153,7 @@ __读取 Microsoft Intune 配置__ | [DeviceManagementServiceConfig.Read.All](#s
 
 该表罗列设置的顺序与 Azure 门户中设置的显示顺序一致。 以下部分按字母顺序描述范围。
 
-此时，所有 Intune 权限范围都需要管理员访问权限。  这意味着在运行访问 Intune Graph API 资源的应用或脚本时需要相应的凭据。
+此时，所有 Intune 权限范围都需要管理员访问权限。  这意味着，你需要相应的凭据才能运行访问 Intune API 资源的应用或脚本。
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ __读取 Microsoft Intune 配置__ | [DeviceManagementServiceConfig.Read.All](#s
 
 如果发生这种情况，请验证：
 
-- 你是否已将应用程序 ID 更新为经授权使用 Graph API 和 `DeviceManagementManagedDevices.Read.All` 权限范围的应用程序 ID。
+- 你是否已将应用程序 ID 更新为经授权使用 Microsoft Graph API 和 `DeviceManagementManagedDevices.Read.All` 权限范围的应用程序 ID。
 
 - 租户凭据是否支持管理功能。
 

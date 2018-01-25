@@ -5,7 +5,7 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/03/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 546c5d3f373b863e75afa05b7e9bd842f8a8eb46
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -34,7 +34,7 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>如果应用将被发布到公共应用商店（例如Apple App Store 或 Google Play）：
 
-则_**必须**_首先向 Microsoft Intune 注册应用并同意注册条款。 然后，IT 管理员可将应用保护策略应用到启用的应用，该应用将被列为 Intune 应用合作伙伴。
+则_**必须**_首先向 Microsoft Intune 注册应用并同意注册条款。 然后，IT 管理员可将应用保护策略应用到托管应用，该应用将被列为 Intune 应用合作伙伴。
 
 除非已完成注册并已由 Microsoft Intune 团队确认，否则 Intune 管理员不能向应用深层链接应用应用保护策略。 Microsoft 还会将你的应用添加到其 [Microsoft Intune 合作伙伴页](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 在该页面中，将显示应用的图标，表明它支持 Intune 应用保护策略。
 
@@ -60,8 +60,6 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 > [!NOTE]
 > 如果使用新版本的 Intune App SDK 更新应用，请告知我们。
 
-
-
 ## <a name="download-the-sdk-files"></a>下载 SDK 文件
 
 用于本机 iOS 和 Android 的 Intune App SDK 都托管于 Microsoft GitHub 帐户。 下面的公共存储库具有适用于本机 iOS 和 Android 的 SDK 文件，分别为：
@@ -75,10 +73,6 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 * [Intune App SDK Cordova 插件](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 注册可用于从存储库中分叉和拉取的 GitHub 帐户是一个好办法。 GitHub 可让开发人员与我们的产品团队进行沟通、开展问题并快速接收回复、查看发行说明并向 Microsoft 提供反馈。 有关 Intune App SDK GitHub 方面的疑问，请联系 msintuneappsdk@microsoft.com。
-
-
-
-
 
 ## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a>启用 iOS 或 Android 应用的应用保护策略
 
@@ -102,9 +96,6 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
  
  * iOS 和 Android 平台上的应用的 [AAD 客户端 ID](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) 必须是唯一的。
  
- 
- 
-
 ## <a name="configure-telemetry-for-your-app"></a>配置应用遥测
 
 Microsoft Intune 收集应用的使用情况统计数据。
@@ -113,7 +104,10 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
     * 如果选择不从应用将 SDK 遥测数据发送到 Microsoft Intune，则必须通过在 IntuneMAMSettings 字典中将属性 `MAMTelemetryDisabled` 设置为“YES”，来禁用遥测数据传输。
 
-* **Intune App SDK for Android**：不通过 SDK 记录遥测数据。
+* **Intune App SDK for Android**：Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用会记录遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。 
+
+    * 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
+
 
  iOS 和 Android 业务线应用版本号是可见的 <!-- 1380712 -->
 
@@ -123,7 +117,7 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
 ### <a name="full-version-number"></a>完整版本号
 
-完整版本号标识应用的特定版本。 该号码显示为“版本号(内部版本号)”。 例如：2.2(2.2.17560800)
+完整版本号标识应用的特定版本。 该号码显示为“版本号(内部版本号)”。 例如：2.2(2.2.17560800)。 
 
 完整版本号包含两个部分：
 
@@ -163,7 +157,7 @@ Intune|iOS|Android|描述|
 ### <a name="test-your-app"></a>测试应用程序
 完成将 iOS 或 Android 应用与 Intune App SDK 集成的必需步骤后，需确保所有应用保护策略都已针对用户和 IT 管理员启用并正常工作。若要测试已集成的应用，则需查看以下文档：
 
-* **Microsoft Intune 测试帐户**：若要就 Intune 应用保护功能对支持 Intune 的应用进行测试，则需要 Microsoft Intune 帐户。
+* **Microsoft Intune 测试帐户**：若要就 Intune 应用保护功能对 Intune 托管的应用进行测试，你将需要 Microsoft Intune 帐户。
 
     * 如果启用 Intune 应用保护策略 iOS 或 Android 应用商店应用的 ISV，则在使用 Microsoft Intune 完成注册（如注册步骤中所述）后，会收到促销代码。 促销代码允许你注册具有 1 年延期使用的 Microsoft Intune 试用。
 
@@ -171,7 +165,7 @@ Intune|iOS|Android|描述|
 
 * **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](/intune-classic/deploy-use/ios-mam-policy-settings)和 [Android 应用保护策略](/intune-classic/deploy-use/android-mam-policy-settings)的说明。
 
-* **疑难解答**：如果在手动测试应用的用户体验时遇到任何问题，请查看 [MAM 疑难解答](/intune-classic/troubleshoot/troubleshoot-mam)。 本文提供针对支持 Intune 的应用中可能遇到的常见问题、对话框和错误消息的相关帮助。 
+* **疑难解答**：如果在手动测试应用的用户体验时遇到任何问题，请查看 [MAM 疑难解答](/intune-classic/troubleshoot/troubleshoot-mam)。 本文提供针对 Intune 托管的应用中可能遇到的常见问题、对话框和错误消息的相关帮助。 
 
 ### <a name="badge-your-app-optional"></a>标记应用（可选）
 

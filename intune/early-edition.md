@@ -5,7 +5,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac9cb0ad7d1b5e2c29e80f16c172f41c08d3a15d
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: 12f4a09fe10ec792abe8183369a21f53c23f5d1a
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2018"></a>Microsoft Intune 早知道 - 2018 年 1 月
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/04/2018
 <!--
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
-## Notices 
+## Notices
 -->
 
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/04/2018
 
 ### <a name="easier-resolution-of-compliance-issues-for-the-company-portal-app-for-windows-10---676546---"></a>可以更轻松地解决适用于 Windows 10 的“公司门户”应用的符合性问题 <!--676546 -->
 
-使用 Windows 设备的最终用户将可以点击“公司门户”应用中的不符合原因。 在可能的情况下，此操作会使用户直接转到“设置”应用中的适当位置，以修复问题。 
+使用 Windows 设备的最终用户将可以点击“公司门户”应用中的不符合原因。 在可能的情况下，此操作会使用户直接转到“设置”应用中的适当位置，以修复问题。
 
 ### <a name="new-option-for-user-authentication-for-apple-bulk-enrollment----747625---"></a>新增了 Apple 批量注册所需的用户身份验证选项 <!-- 747625 -->
 对于以下注册方法，Intune 将支持使用“公司门户”应用验证设备：
@@ -59,16 +59,16 @@ Intune 将支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 
 迁移后，通过 Graph 管理 Apple DEP 或 ASM 的 beta 版本 Graph API 和已发布脚本将不再有效。 新的 beta 版本 Graph API 正在进行开发，将在迁移后发布。
 
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>使用“访问工作或学校帐户”设置选择设备类别 <!-- 1058963 eeready --> 
+### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>使用“访问工作或学校帐户”设置选择设备类别 <!-- 1058963 eeready -->
 如果已启用[设备组映射](https://docs.microsoft.com/en-us/intune/device-group-mapping)，Windows 10 用户将会在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后或在开箱即用体验期间，看到选择设备类别的提示。
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>将符合性策略定目标到设备组中的设备 <!--1307012 -->
 
-将可以把符合性策略定目标到用户组中的用户。 将可以把符合性策略定目标到设备组中的设备。 
+将可以把符合性策略定目标到用户组中的用户。 将可以把符合性策略定目标到设备组中的设备。
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>根据组添加和排除应用分配 <!-- 1406920 -->
 
-在应用分配期间以及在选择分配类型后，将可以选择要添加和排除的组。 将可以把预创建的组（“所有用户”、“所有设备”和“所有用户+设备”）用作添加的组。
+在应用分配期间以及在选择分配类型后，将可以选择要添加和排除的组。
 
 ### <a name="remote-erase-command-support----1438084---"></a>远程“清除”命令支持 <!-- 1438084 -->
 
@@ -93,7 +93,7 @@ Intune 将引入 Windows 信息保护 (WIP) 学习模式扩展。 除了查看�
 
 如果发送电子邮件来报告不符合设备，其中将包括不符合设备的详细信息。 下面的文章将进行更新以体现这一点：[自动执行解决不符合问题所需的操作](#actions-for-noncompliance)。
 
-### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>适用于 Intune 的条件访问策略只能通过 Azure 门户访问 <!-- 1737088 1634311 --> 
+### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>适用于 Intune 的条件访问策略只能通过 Azure 门户访问 <!-- 1737088 1634311 -->
 我们将简化条件访问的配置和管理位置。 将在 [Azure 门户](https://portal.azure.com)中依次通过“Azure Active Directory” > “条件访问”配置和管理条件访问策略。 为方便操作，还将能够在 Azure 门户中依次通过“Intune” > “条件访问”，从 Intune 访问此边栏选项卡。
 
 ###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>已到期令牌和即将到期令牌的警报 <!-- 1639263 -->
@@ -105,8 +105,11 @@ Intune 将引入 Windows 信息保护 (WIP) 学习模式扩展。 除了查看�
 ### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>审核适用于 Android for Work 的“公司门户”应用 <!--1797090 -->
 如果组织使用 Android for Work，将需要手动审核适用于 Android 的“公司门户”应用，以便它能够继续从托管的 Google Play 商店接收自动更新。
 
+### <a name="faceid-on-ios-devices----1807377---"></a>iOS 设备上的 FaceID<!-- 1807377 -->
+Intune 应用保护策略现在支持用于在 iOS 设备上控制 FaceID 的设置。 此设置适用于支持 FaceID 功能的设备（目前仅限 iPhone X）。 此设置与当前支持的 TouchID 控件相互独立。 组织可以选择是否信任 FaceID 作为有效的 PIN 提示，以将其作为 TouchID 控件的替代方式。
+
 ### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>适用于 Intune 的 Microsoft Graph API - 正式版本 <!-- 1833289 -->
-借助 Microsoft Graph 中的 Intune API，将可以编程方式访问数据和方法，从而自动执行 Intune 服务的管理操作。  通过这些 API 的正式版本，客户、合作伙伴和开发人员将能够利用这些 API 与内部或商业解决方案集成，这些解决方案需要或与 Intune 支持或其他通过 Microsoft Graph 提供的 Microsoft 服务支持相关。 
+借助 Microsoft Graph 中的 Intune API，将可以编程方式访问数据和方法，从而自动执行 Intune 服务的管理操作。  通过这些 API 的正式版本，客户、合作伙伴和开发人员将能够利用这些 API 与内部或商业解决方案集成，这些解决方案需要或与 Intune 支持或其他通过 Microsoft Graph 提供的 Microsoft 服务支持相关。
 
 <!-- the following are present prior to 1801 -->
 
@@ -118,13 +121,6 @@ Intune 应用保护策略将提供创建默认全局策略的功能，以便快�
 
 ### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>撤销 iOS 批量采购计划令牌的许可证<!-- 820870 -->
 你将能够撤销给定 VPP 令牌的所有 iOS 批量采购计划 (VPP) 应用的许可证。
-
-### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>网络访问控制 (NAC) 设备签入报告<!-- 1232250 -->
-在此次更改之前，IT 管理员无法从 Intune 方面确定 NAC 管理的设备是否与其 NAC 解决方案进行通信。 当 NAC 管理的设备没有与其 NAC 解决方案进行通信时，该设备被 NAC 解决方案视为不合规，因此被 NAC 解决方案自身阻止，随后又被依赖于设备合规状态的条件访问策略阻止。
-
-通过此次更改，IT 管理员可以看到哪些 NAC 管理的设备已经成功地与它们的 NAC 解决方案进行通信。 这项新功能包括两个新的监控功能（位于 Intune 内的设备合规工作负载中），统计信息如下所示：
-- 过去一小时内的平均 NAC 调用
-- 上次 NAC 传入请求（日期/时间）
 
 ### <a name="new-ios-device-action------1244701---"></a>新的 iOS 设备操作<!-- 1244701 -->
 你可以关闭 iOS 10.3 监督的设备。 此操作会立即关闭设备，而不会向最终用户发出警告。 当你在“设备”工作负载中选择设备时，可以在设备属性中找到“关闭（仅监督）”操作。
@@ -185,6 +181,14 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 ### <a name="configure-an-ios-app-pin----1586774---"></a>配置 iOS 应用 PIN <!-- 1586774 -->
 很快，便能要求目标 iOS 应用使用 PIN。 几天后，还可通过 Azure 门户配置 PIN 需求和到期日期。 需要时，用户必须设置并使用新的 PIN 才有权访问 iOS 应用。 只有使用 Intune App SDK 启用应用保护的 iOS 应用才支持此功能。
 
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS 版公司门户应用的用户体验更新<!--1412866-->
+
+我们将向 iOS 版公司门户应用发布用户体验主要更新。 此更新具有经过完全重新设计的视觉效果，包括现代化的外观和经提升的可用性和可访问性感受。 iOS 公司门户当前的所有功能都将保留。
+
+我们将通过 Apple TestFlight 计划推出更新版 iOS 公司门户应用的预发布版本，用户可以使用并提供反馈。 若想参与 TestFlight，请在 https://aka.ms/intune_ios_cp_testflight 注册。 
+
+![新 iOS 公司门户应用的预告图像](./media/ios-cp-app-redesign-1801-teaser.png)
+
 
 <!-- the following are present prior to 1711 -->
 
@@ -204,10 +208,6 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 
 <!-- the following are present prior to 1709 -->
 
-
-
-### <a name="android-for-work-support-for-lookout----1087312---"></a>Lookout 的 Android for Work 支持<!-- 1087312 -->   
-在使用 Lookout for Work 应用时，Lookout 的 Intune 连接器将支持 Android for Work 设备。 可以在容器内部或外部部署 Lookout 应用。
 
 ### <a name="intune-app-protection-and-citrix-mdx-development-tools----709185---"></a>Intune 应用保护和 Citrix MDX 开发工具 <!-- 709185 -->
 可以同时使用 Citrix XenMobile MDX 和 Microsoft Intune 来管理设备和应用。 通过使用此方法，可在使用 Citrix mVPN 技术的同时通过 Intune 应用保护策略管理应用。

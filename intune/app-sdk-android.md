@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
 > [!NOTE]
 > 建议先阅读 [Intune App SDK 概述](app-sdk.md)，该文档涵盖 SDK 的当前功能并介绍了如何在每个受支持的平台上准备集成。
 
-通过 Microsoft Intune App SDK for Android，可将 Intune 应用保护策略（也称为 **APP** 或 MAM 策略）合并到本机 Android 应用中。 启用了 Intune 的应用程序是指与 Intune App SDK 集成的应用程序。 在 Intune 主动管理启用了 Intune 的应用时，Intune 管理员可将应用保护策略轻松部署到该应用。
+通过 Microsoft Intune App SDK for Android，可将 Intune 应用保护策略（也称为 **APP** 或 MAM 策略）合并到本机 Android 应用中。 Intune 托管的应用程序是指与 Intune App SDK 集成的应用程序。 当 Intune 主动托管应用时，Intune 管理员可将应用保护策略轻松部署到该应用。
 
 
 ## <a name="whats-in-the-sdk"></a>SDK 包含的内容
@@ -55,7 +55,7 @@ Intune App SDK 是已编译的 Android 项目。 因此，这在很大程度上�
 对于应用保护策略的启用，用于 Android 的 Intune App SDK 依赖于设备上是否存在[公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)应用。 公司门户从 Intune 服务中检索应用保护策略。 应用初始化时，它会加载策略和代码以强制从公司门户实施该策略。
 
 > [!NOTE]
-> 如果公司门户应用未在设备上，则启用 Intune 的应用的行为与不支持 Intune 应用保护策略的普通应用相同。
+> 如果设备上未安装公司门户应用，则 Intune 托管的应用的行为与不支持 Intune 应用保护策略的普通应用相同。
 
 对于无需设备注册的应用保护，_**不会**_要求用户使用公司门户应用注册设备。
 
@@ -875,7 +875,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
 ### <a name="implicit-identity-changes"></a>隐式标识更改
 
-应用除可设置标识外，还可基于从另一具有应用保护策略且启用了 Intune 的应用进入的数据更改线程或上下文的标识。
+应用除可设置标识外，还可基于从另一 Intune 托管的应用（具有应用保护策略）进入的数据更改线程或上下文的标识。
 
 #### <a name="examples"></a>示例
 
@@ -1353,6 +1353,32 @@ public interface MAMAppConfig {
 | 着色 | 突出显示时的 PIN 边框 <br> 超链接 |accent_color | 颜色 |
 | 应用徽标 | Intune 应用 PIN 屏幕上显示的大图标 | logo_image | 可绘制 |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>需要用户登录提示以自动注册 APP-WE 服务，需要 Intune 应用保护策略以使用集成了 SDK 的 Android LOB 应用，以及启用 ADAL SSO（可选）
+
+以下指南面向：需要在应用启动时出现用户提示以自动注册 APP-WE 服务（本节中称为“默认注册”）；需要 Intune 应用保护策略以仅允许受 Intune 保护的用户使用你的集成了 SDK 的 Android LOB 应用。 指南中还说明如何为集成了 SDK 的 Android LOB 应用启用 SSO。 可由非 Intune 用户使用的应用商店应用不支持此操作。
+
+> [!NOTE] 
+> “默认注册”提供一个为设备上的应用从 APP-WE 服务获取策略的简便方法。
+
+### <a name="general-requirements"></a>一般要求
+* Intune SDK 团队需要应用的应用程序 ID。 可按此方式找到此内容：在 [Azure 门户](https://portal.azure.com/)中的“所有应用程序”下，找到“应用程序 ID”列。 建议通过电子邮件 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
+     
+### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
+以下说明专门面向最终用户设备上要求使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用。
+
+1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
+> [!NOTE] 
+> 与应用关联的“客户端 ID”一词与 Azure 门户中的“应用程序 ID”一词的含义相同。 
+* 启用 SSO 需要“通用 ADAL 配置”#2。
+
+2. 通过将以下值放入清单来启用默认注册：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则可能发生冲突。
+
+3. 通过将以下值放入清单来启用所需的 MAM 策略：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
+
 ## <a name="limitations"></a>限制
 
 ### <a name="file-size-limitations"></a>文件大小限制
@@ -1380,7 +1406,7 @@ public interface MAMAppConfig {
     
 ### <a name="exported-services"></a>导出的服务
 
- Intune App SDK 中包括的 AndroidManifest.xml 文件包含 **MAMNotificationReceiverService**，它必须是导出的服务才能允许公司门户将通知发送到已启用应用。 服务会检查调用方以确保仅允许公司门户发送通知。
+ Intune App SDK 中包括的 AndroidManifest.xml 文件包含 **MAMNotificationReceiverService**，它必须是导出的服务才能允许公司门户将通知发送到托管应用。 服务会检查调用方以确保仅允许公司门户发送通知。
 
 ### <a name="reflection-limitations"></a>反射限制
 某些 MAM 基类（例如 MAMActivity、MAMDocumentsProvider）包含使用仅在特定 API 级别之上的参数或返回类型的方法（基于原始 Android 基类）。 出于此原因，使用反射来枚举应用组件的所有方法并非始终都是可能的。 此限制并不仅限于 MAM，如果应用本身从 Android 的基类中实现了这些方法，那么同一限制也适用。

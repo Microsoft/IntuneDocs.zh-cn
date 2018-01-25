@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 01/16/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d68cbb05025e89e256a22dc88f5c4ee2afc3c536
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f2055a0949921b52937af18bf1cd73286bf046cf
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune 网络带宽使用
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 09/28/2017
 
 下面是针对缓存 Intune 客户端内容的代理服务器所使用的典型设置。
 
-|设置|建议的值|详细信息|
+|Setting|建议的值|详细信息|
 |-----------|---------------------|-----------|
 |缓存大小|5 GB 到 30 GB|该值因网络中客户端计算机的数量和你使用的配置而异。 为了防止文件被过早删除，请针对你的环境调整缓存的大小。|
 |单个缓存文件大小|950 MB|此设置可能不会在所有缓存代理服务器中可用。|
@@ -106,6 +106,7 @@ Intune 不使用本地基础结构，如运行 Intune 软件的服务器，但�
 
 |**域**|**IP 地址**|
 |---------------------|-----------|
+|login.microsoftonline.com | 详细信息 [Office 365 URL 和 IP 地址范围](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |40.86.181.86<br>13.82.59.78<br>13.74.184.100<br>40.68.188.2<br>13.75.42.6<br>52.230.25.184 |
 | sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
 |Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 104.40.82.191 <br>13.82.96.212 <br>52.169.9.87 <br>52.174.26.23 <br>40.83.123.72 <br>13.76.177.110 |

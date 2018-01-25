@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5645e337e34c6310c82a76d537fe6539e04e71e
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 73caf124e94994acf816c98f0788efdabe024cc4
+ms.sourcegitcommit: c3bd0d192d712fcfd52f64dd1377155796239fcb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 组件
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/12/2018
 
 
 ## <a name="overview"></a>概述
-[Intune App SDK Xamarin 组件](https://components.xamarin.com/view/microsoft.intune.mam)允许在使用 Xamarin 生成的 iOS 和 Android 应用中启用 [Intune 应用保护策略](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 该组件使开发人员可以轻松将 Intune 应用保护功能内置到基于 Xamarin 的应用中。
+[Intune App SDK Xamarin 组件](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)允许在使用 Xamarin 生成的 iOS 和 Android 应用中启用 [Intune 应用保护策略](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 该组件使开发人员可以轻松将 Intune 应用保护功能内置到基于 Xamarin 的应用中。
 
 > [!NOTE]
 > 对用于 Xamarin 的 Intune SDK 的支持当前仅作为预览功能提供。 
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/12/2018
 
 2. 阅读 Microsoft Intune MAM Xamarin 组件的[许可条款](https://components.xamarin.com/license/microsoft.intune.mam)。
 
-3.  从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) 下载 Intune App SDK Xamarin 组件文件夹并从中提取。 在 步骤 1 和 3 中下载的这两个文件应处于相同的目录级别。
+3.  从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) 下载 Intune App SDK Xamarin 组件文件夹并从中提取。 在 步骤 1 和 3 中下载的这两个文件应处于相同的目录级别。
 
 4.  在命令行中以管理员身份运行 `Xamarin.Component.exe install <.xam> file`。
 

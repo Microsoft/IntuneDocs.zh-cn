@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>使用 Intune 的基于角色的管理控制 (RBAC)
 
@@ -61,6 +61,18 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 - 策略和配置文件管理员：管理符合性策略、配置的配置文件、Apple 注册和企业设备标识符。
 - 只读操作员：查看用户、设备、注册、配置和应用程序信息。 不能对 Intune 进行更改。
 - **应用程序管理员**：管理移动和托管应用程序，并可以读取设备信息。
+- **学校管理员**：在 [Intune for Education](introduction-intune-education.md) 中管理 Windows 10 设备并且可以执行以下操作： 
+
+|权限|操作|
+|---|---|
+|审核数据|读取|
+|DeviceConfigurations|分配、创建、删除、读取、更新|
+|设备注册管理器|读取、更新|
+|托管设备|读取、更新<!--, Delete [To be added in 1803]-->|
+|移动应用|分配、创建、删除、读取、更新|
+|Reports|读取|
+|远程操作|清理电脑、重启、远程锁定、停用、同步设备、擦除|
+|组织|读取|
 
 ### <a name="to-assign-a-built-in-role"></a>若要分配一个内置角色
 

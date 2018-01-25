@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>使用 Intune 配置和管理 SCEP 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,7 +27,7 @@ ms.lasthandoff: 12/11/2017
 
 ## <a name="configure-on-premises-infrastructure"></a>配置本地基础结构
 
--    **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
+-    **Active Directory 域**：此部分中列出的所有服务器（Web 应用程序代理服务器除外）都必须加入 Active Directory 域。
 
 -  **证书颁发机构** (CA)：在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
     如 CA 运行的是 Windows Server 2008 R2，则必须[安装修补程序 KB2483564](http://support.microsoft.com/kb/2483564/)。
@@ -66,7 +65,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 ### <a name="accounts"></a>帐户
 
-|Name|详细信息|
+|名称|详细信息|
 |--------|-----------|
 |**NDES 服务帐户**|指定用作 NDES 服务帐户的域用户帐户。|
 
@@ -88,7 +87,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 创建用作 NDES 服务帐户的域用户帐户。 你可以在安装和配置 NDES 之前，在配置发证 CA 上的模板时指定该帐户。 确保用户具有默认权限，即“本地登录”、“作为服务登录”和“作为批处理作业登录”的权限。 某些组织已采用强化策略禁用这些权限。
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>步骤 2 - 配置证书颁发机构上的证书模板
-在此任务中完成以下操作：
+在此任务中，你将：
 
 -   配置 NDES 证书模板
 
@@ -194,7 +193,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>步骤 4 - 配置 NDES 以与 Intune 一起使用
-在此任务中完成以下操作：
+在此任务中，你将：
 
 -   配置 NDES 以与发证 CA 一起使用
 
@@ -297,7 +296,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 4. 重新启动 NDES 服务器。 服务器现已支持证书连接器。
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>步骤 5 - 启用、安装和配置 Intune 证书连接器
-在此任务中完成以下操作：
+在此任务中，你将：
 
 - 在 Intune 中启用对 NDES 的支持。
 - 在环境中的某个服务器上下载、安装和配置证书连接器。 要支持高可用性，可在不同服务器上安装多个证书连接器。
@@ -305,7 +304,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>如何下载、安装和配置证书连接器
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. 登录到 Azure 门户中。 
+1. 登录 Azure 门户。 
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 4. 在“设备配置”边栏选项卡上，选择“证书颁发机构”。
@@ -330,6 +329,9 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
     单击“登录”并输入你的 Intune 服务管理员凭据或具有全局管理权限的租户管理员的凭据。
 
+    > [!IMPORTANT]
+    > 必须为用户帐户分配有效的 Intune 许可证。 如果用户帐户没有有效的 Intune 许可证，NDESConnectorUI.exe 将失败。
+
     如果你的组织使用代理服务器并且 NDES 服务器需要代理才能访问 Internet，请单击“使用代理服务器”，然后提供用于连接的代理服务器名称、端口和帐户凭据。
 
     选择“高级”选项卡，然后提供具有在证书颁发机构“颁发和管理证书”的权限的帐户凭据，然后单击“应用”。
@@ -349,7 +351,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 3. 在“配置文件”边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入 SCEP 证书配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，为此 SCEP 证书选择设备平台。 目前，可以为设备限制设置选择以下平台之一：
-    - **Android**
+    - **Outlook Web Access (OWA)**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -392,7 +394,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 将证书配置文件分配给组之前，请注意以下几点：
 
 - 将证书配置文件分配给组时，将在设备上安装受信任的 CA 证书配置文件的证书文件。 设备使用 SCEP 证书配置文件来创建设备需要的证书。
-- 证书配置文件仅安装在运行你创建配置文件时使用的平台的设备上。
+- 仅在运行创建配置文件时使用的平台的设备上安装证书配置文件。
 - 可以向用户集合或设备集合分配证书配置文件。
 - 若要在注册设备后向设备快速发布证书，请将证书配置文件分配给用户组（而不是设备组）。 如果分配到设备组，则需要在设备接收策略前进行完整的设备注册。
 - 尽管单独分配每个配置文件，但仍需分配受信任的根 CA 和 SCEP 或 PKCS 配置文件。 否则，SCEP 或 PKCS 证书策略将失败。
