@@ -4,21 +4,22 @@ description: "了解如何在 iOS 设备上安装 SEP Mobile。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: b66871ce4fa968e61152ffc99741a78a454f6579
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 6552a9d8033320e4713b0faa50c51e2b95fbb9b7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>在 iOS 设备上安装 Symantec Endpoint Protection Mobile
 
@@ -44,5 +45,5 @@ ms.lasthandoff: 12/12/2017
 
 有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试[从 App Store 手动安装 SEP Mobile](https://itunes.apple.com/app/sep-mobile/id695620821)。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
 

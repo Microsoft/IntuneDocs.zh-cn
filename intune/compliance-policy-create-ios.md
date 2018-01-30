@@ -5,7 +5,7 @@ description: "了解如何创建 iOS 设备符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,18 +15,18 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b0fdb06b072c325d30b3e5ee72f1982c5f61849
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d4676a199f3d52ac5ed1c1661fdfe3e024eadf54
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中创建适用于 iOS 设备的设备符合性策略
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-为每个平台创建符合性策略。  可以在 Azure 门户中创建符合性策略。 若要详细了解什么是符合性策略，请参阅[什么是设备符合性](device-compliance.md)主题。 若要了解创建符合性策略之前需要解决的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)主题。
+为每个平台创建符合性策略。  可以在 Azure 门户中创建符合性策略。 若要详细了解什么是符合性策略，请参阅[什么是设备符合性](device-compliance.md)主题。 若要了解创建合规性策略之前需要解决的先决条件，请参阅[设备合规性入门](device-compliance-get-started.md)主题。
 
 下表说明了将合规性策略与条件访问策略一起使用时如何管理非合规性设置。
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/09/2017
 | **电子邮件配置文件** | 已隔离 |
 |**最低操作系统版本** | 已隔离 |
 | **最高操作系统版本** | 已隔离 |  
-| **Windows 运行状况证明** | 不适用 |  
+| **Windows 运行状况证明** | “不适用” |  
 ----------------------------
 
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="system-security-settings"></a>系统安全设置
 
-### <a name="password"></a>Password
+### <a name="password"></a>密码
 
 - **需要密码才可解锁移动设备**：将此选项设置为“是”，要求用户在访问其设备之前输入密码。 使用密码的 iOS 设备已加密。
 - **允许简单密码**：将此选项设置为“是”，允许用户创建简单密码，如 **1234** 或 **1111**。

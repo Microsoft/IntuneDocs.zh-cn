@@ -4,23 +4,24 @@ description: "介绍如何在 Intune 中通过 DEP 注册 iOS 设备"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f4e7d87e-56d1-43e4-8e88-2f62cf0999e2
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0d469a52c10a3c6080a3e900d55d18d7798bb534
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 542a7e382b6f140af3f4cf605e503efd0b7a4c6e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>通过设备注册计划在 Intune 中注册 iOS 设备
 
@@ -33,4 +34,4 @@ ms.lasthandoff: 12/12/2017
 5.  同意“条款和条件”，并决定是否将诊断信息发送给 Apple。
 6.  完成注册后，设备可能会提示你需要执行更多操作。 这些操作可能包括：输入访问电子邮件的密码、设置密码和同意安装应用程序等，所有操作都取决于公司 Intune 管理员的设置。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

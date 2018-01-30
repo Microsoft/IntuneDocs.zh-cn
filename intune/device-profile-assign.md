@@ -5,7 +5,7 @@ description: "创建 Intune 设备配置文件后，请使用此主题了解如�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ba1438fe9227e0c7933fda7e9a2b60c8d4a5dca4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-microsoft-intune-device-profiles"></a>如何分配 Microsoft Intune 设备配置文件
 
 ## <a name="assign-a-device-profile"></a>分配设备配置文件
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 1. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。

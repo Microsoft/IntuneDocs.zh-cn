@@ -4,23 +4,24 @@ description: "介绍如何在 Intune 中注册 Windows 10 移动版或 Windows 1
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 337b5407026c5415f8fbac1a0626181f9b042a06
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: f3debd0177df0aa0bdf5cb3cea8bf18054407b87
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>在 Intune 中注册 Windows 10 设备
 

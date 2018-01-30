@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 将所管 Windows 10 设备升级到其�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4e1fc203633a9624ce748ab1f36374c5322e3f7
-ms.sourcegitcommit: 061dab899e3fbc59b0128e2b4fbdf8ebf80afddd
+ms.openlocfilehash: 8581aea9db4c04efda5fe9f3281be95330bcd2e2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Windows 10 版本升级
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
