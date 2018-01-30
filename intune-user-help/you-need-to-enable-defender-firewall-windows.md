@@ -4,23 +4,24 @@ description: "了解如何开启防火墙，以便使 Windows 10 设备可以访
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b619f0d42a88fb0cdc2f71c57c6ffeea4191d6e
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4f8f7ac084e1a6f585cecf091fad5026b7c3c26c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>开启 Windows Defender 防火墙
 
@@ -30,4 +31,4 @@ ms.lasthandoff: 12/12/2017
 2. 打开“系统和安全” > “Windows Defender 防火墙”。
 3. 为域、专用网络和公用网络选择“自定义设置” > “打开或关闭 Windows 防火墙”。
 
-仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

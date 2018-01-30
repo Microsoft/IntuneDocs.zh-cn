@@ -5,7 +5,7 @@ description: "了解 Microsoft Intune 中使用的一些术语"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/28/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 08fc3be9e1e4f4b5692f871fc57108d431d5836d
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 6c066dde1c302c647514659b45e17cc5ac186a13
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 01/12/2018
 |-|-|
 |证书配置文件|使用 Wi-Fi、电子邮件或 VPN 配置文件时，可使用此策略类型，通过证书[安全访问公司资源](/intune/certificates-configure)。|
 |COD|可用多种方式注册[公司拥有的设备](/intune/device-enrollment)，具体可取决于组织的需求和待管理设备的类型。|
-|Company Portal|一种向用户提供[公司数据和应用程序访问](/intune/company-portal-customize)的应用或网站。|
+|公司门户|一种向用户提供[公司数据和应用程序访问](/intune/company-portal-customize)的应用或网站。|
 |合规性策略|确保设备[符合特定规则](/intune/device-compliance)，例如使用 PIN 访问设备，以及加密存储在设备上的数据。|
 |符合和不符合要求的应用程序|[设备限制配置文件](/intune/device-restrictions-configure)的一部分，这些设置可让你定义一个应用列表，规定用户可以或不可以运行的应用。 然后，Intune 通过报告通知你， 报告安装或运行了不合规应用。 对于一些平台，Intune 可阻止安装不合规应用。|
 |条件性访问|仅允许符合设定规则的设备[访问公司电子邮件、Office 365 和其他服务](/intune/conditional-access)。|

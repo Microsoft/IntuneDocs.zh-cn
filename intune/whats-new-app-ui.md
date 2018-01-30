@@ -4,7 +4,7 @@ description: "了解 Intune 中针对最终用户设备上可用的应用所做�
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1662245fdf9ba557fbc62fbb2e9c0e1aa29888b2
-ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
+ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户进行通信，并更新为了支持部署而创建的自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。

@@ -5,7 +5,7 @@ description: "了解如何在 Intune 中配置 Windows Update for Business 设�
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-software-updates"></a>管理软件更新
 
@@ -38,7 +38,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
 创建更新铃声后，将其分配到设备组。 通过使用更新通道，你可以创建反映业务需求的更新策略。 有关详细信息，请参阅[使用 Windows Update for Business 更新管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
 - 要更新 Windows 10 电脑，它们必须至少运行安装了 Windows 周年更新的 Windows 10 专业版。
 
@@ -80,7 +80,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 7. 在“**设置**”边栏选项卡上，配置以下信息：
     - **维护服务频道**：设置供设备接收 Windows 更新的频道（半年频道（定向）或半年频道）。
     - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
-    -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
+    - **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延迟期(天)** - 指定质量更新延迟的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 

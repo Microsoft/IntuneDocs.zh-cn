@@ -5,7 +5,7 @@ description: "Zimperium 连接器与 Intune 集成"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22fbdb95a0fe0c064f07dea2dca50c516b995b8d
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: b21b06dd255cdc875242afe1fd6228f5db3887dd
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium 移动威胁防御连接器与 Intune
 
@@ -85,9 +85,9 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 -   **iOS 8 及更高版本**
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 
--   Azure Active Directory Premium
+-   Azure Active Directory 高级版
 
 -   Microsoft Intune 订阅
 

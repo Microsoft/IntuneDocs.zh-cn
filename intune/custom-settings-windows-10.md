@@ -5,7 +5,7 @@ description: "了解可以在 Windows 10 自定义配置文件中使用的设置
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0758aed9672c4d1279c5deb24e23beea728df81d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7101c489c0418b98be3224888a8473a77192ce0f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的自定义设备设置
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/12/2017
     - **OMA-URI（区分大小写）** - 指定想要为其提供设置的 OMA-URI。
     - **值** - 指定要与输入的 OMA-URI 关联的值。
 5. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
-将创建配置文件并在“配置文件列表”边栏选项卡上显示。
+此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
 
 ## <a name="example"></a>示例
 在以下屏幕截图中，已启用设置 **Connectivity/AllowVPNOverCellular**。 这样一来，Windows 10 设备在处于移动电话网络中时会打开 VPN 连接。

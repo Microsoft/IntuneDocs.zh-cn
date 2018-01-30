@@ -5,7 +5,7 @@ description: "了解如何使用“设备注册计划”注册公司拥有的 iO
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 25e5922de658ca2137a32e43802072367587747c
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 2f472c144e9bcda965486f8e88d38aa9d27df165
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -42,7 +42,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 - 通过 [Apple 设备注册计划](http://deploy.apple.com)购买的设备
 - [MDM 机构](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -130,7 +130,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
     - Apple Configurator 证书 - 如果在“允许配对”下选择“通过证书允许 Apple Configurator”，请选择要导入的 Apple Configurator 证书。
 
-  选择“保存”。
+  选择**“保存”**。
 
 5. 选择“设置助理设置”，配置以下配置文件设置：
 
@@ -150,7 +150,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
         - **Siri**
         - **诊断数据**
 
-    选择“保存”。
+    选择**“保存”**。
 
 9. 若要保存配置文件设置，请在“创建注册配置文件”边栏选项卡上选择“创建”。 注册配置文件显示在 Apple 注册计划注册配置文件列表中。
 

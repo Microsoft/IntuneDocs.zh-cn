@@ -5,7 +5,7 @@ description: "创建自定义配置文件，以允许和阻止在 Samsung Knox S
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 606f3dbb4d68592f6920ee900d36be1befe56568
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用自定义策略允许和阻止在 Samsung Knox Standard 设备上运行应用
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/03/2018
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>创建允许或阻止的应用列表
 
-1. 登录 Azure 门户。
+1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。

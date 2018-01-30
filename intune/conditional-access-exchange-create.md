@@ -5,7 +5,7 @@ description: "在 Intune 中配置 Exchange 内部部署的条件访问和旧版
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b598441d39d90a4ae81df7fffff99f9a5ccc451
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 02b130ed13b3bb8869e35b035e787c97b76b5e85
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建和分配 Exchange 本地和旧版 Exchange Online Dedicated 的条件访问策略
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/03/2018
 
 如果你具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。 若要控制对 Exchange 内部部署或旧版 Exchange Online Dedicated 环境的电子邮件访问，请在 Intune 中配置 Exchange 内部部署的条件性访问。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 在可配置条件访问之前，请先验证以下内容：
 

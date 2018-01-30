@@ -5,7 +5,7 @@ description: "了解如何通过 Apple Configurator 使用“设置助理”来�
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c758519f523bf6b61adc7f779043aa4a944998ea
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
@@ -31,7 +31,7 @@ Intune 支持注册 iOS 设备，方法是使用在 Mac 计算机上运行的 [A
 
 Apple Configurator 注册方法不能与[设备注册管理器](device-enrollment-manager-enroll.md)同时使用。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 
 - 具有 iOS 设备的物理访问权限
 - [设置 MDM 机构](mdm-authority-set.md)

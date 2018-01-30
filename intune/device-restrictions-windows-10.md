@@ -5,7 +5,7 @@ description: "了解可用来控制 Windows 10 设备上的设备设置和功能
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/12/2018
 
 可以定义设备上的所有应用可以访问的信息。 可以使用“每应用隐私异常”对每个应用定义异常。
 
-### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>例外狀況
 
 - **帐户信息** - 定义此应用能否访问用户名、图片和其他联系人信息。
 - **后台应用** - 定义此应用能否在后台运行。
@@ -105,7 +105,7 @@ ms.lasthandoff: 01/12/2018
 - **包名称** - 应用包系列名称。
 - **应用名称** - 应用的名称。
 
-### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>例外狀況
 
 - **帐户信息** - 定义此应用能否访问用户名、图片和其他联系人信息。
 - **后台应用** - 定义此应用能否在后台运行。
@@ -385,7 +385,7 @@ ms.lasthandoff: 01/12/2018
    IPv4：192.246.246.106:100<br>
  IPv6：[2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN：www.contoso.com:345
 
-## <a name="messaging"></a>Messaging
+## <a name="messaging"></a>消息传送
 
 - **消息同步(仅移动设备)** - 禁用随时随地传送消息以及短信备份和还原。
 - **彩信(仅移动设备)** - 对设备禁用彩信发送/接收功能。

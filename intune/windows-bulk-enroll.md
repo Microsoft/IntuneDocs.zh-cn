@@ -5,7 +5,7 @@ description: "为 Microsoft Intune 创建批量注册包"
 keywords: 
 author: Erikje
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 8b4c9f5685c12bb6c15d15d85c73d573dfcd66e8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -62,7 +62,7 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
 
 9. （可选）可以“添加应用程序”和“添加证书”。 将在此设备上配置应用和证书。
 
-10. （可选）还可以使用密码保护你的配置包。  单击“创建”。
+10. （可选）还可以使用密码保护你的配置包。  单击“**创建**”。
 ![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>配置设备

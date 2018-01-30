@@ -5,7 +5,7 @@ description: "将 Saaswedo 电信支出管理服务配置为与 Intune 集成。
 keywords: Saaswedo
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9712dd7847195976682f87df556b4552df34900f
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: e9b0b22dc3831cbb14ab876b5f4e58f82cf53abc
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -39,7 +39,7 @@ Intune 与 Datalert 相集成，通过在限制超过定义的阈值时使用自
 - Samsung Knox
 - iOS 8.0 及更高版本
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 
 - 订阅 Microsoft Intune 和拥有 Azure 门户的访问权限。
 - Datalert 电信费用管理服务订阅

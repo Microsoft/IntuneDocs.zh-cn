@@ -5,7 +5,7 @@ description: "使用 Connector 工具实现 Intune 与本地 Exchange Server 的
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
-ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
+ms.openlocfilehash: 39fb4b4b91eb6769eb1d5d95736cbbde141c6812
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange Connector
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 12/15/2017
 |硬件|安装连接器的计算机需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间。|users-add.md
 |Active Directory 同步|必须[设置 Active Directory 同步](users-add.md)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用连接器将 Intune 连接到 Exchange Server。|
 |其他软件|Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完全安装必须安装在托管连接器的计算机上。|
-|Network (网络)|在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
+|网络|在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange cmdlet 要求

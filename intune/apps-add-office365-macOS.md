@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 更轻松地在 macOS 设备上安装 Of
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
@@ -15,18 +15,18 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e0ad0b99a2c8a602b5e542530a1d437065461b2
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 1573a6a2ca78489df46c9e08ebbfe9a16b0731c7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 分配给 macOS 设备
 
 借助此应用类型，可以轻松地将 Office 365 应用分配给 macOS 设备。 使用此新应用类型，可以安装 Word、Excel、PowerPoint、Outlook 和 OneNote。 这些应用还随附 Microsoft AutoUpdate (MAU)，有助于保护和不断更新应用。 所需的应用将显示为 Intune 控制台的应用列表中的一个应用。
 
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
 - 部署这些应用的设备必须运行 macOS 10.10 或更高版本。
 - Intune 仅支持添加 Office 2016 for Mac 套件随附的 Office 应用。
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/12/2018
 
 ## <a name="get-started"></a>入门
 使用“应用”边栏选项卡添加 Office 365。
-1.  登录 Azure 门户。
+1.  登录到 Azure 门户中。
 2.  选择“更多服务” > “监视 + 管理” > “Intune”。
 3.  在 Intune 边栏选项卡上，选择“移动应用”。
 4.  在“移动应用”工作负载中，选择“管理”组中的“应用”。 选择“添加”。

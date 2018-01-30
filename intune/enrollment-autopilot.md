@@ -4,23 +4,23 @@ description: "了解如何使用 Windows AutoPilot Deployment 计划注册新的
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: dae736aef57489880915c269cb30785371380a52
-ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
+ms.openlocfilehash: 1e6052c914406c9cd2fe9dc72597ee4dbe5b8902
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>使用 Windows AutoPilot Deployment 计划注册 Windows 设备
 Windows AutoPilot Deployment 计划简化了设备预配。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 AutoPilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 当使用 Intune 来管理 AutoPilot 设备时，可在注册之后对策略、配置文件和应用等进行管理。 有关优势、方案和先决条件的概述，请参阅 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot)（Windows AutoPilot 概述）。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 - [必须向组织注册设备](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [已启用的 Windows 自动注册](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->

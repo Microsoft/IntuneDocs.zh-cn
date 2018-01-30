@@ -4,7 +4,7 @@ description: "与最终用户共享信息，使 Intune 部署成功。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/10/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: d940bc937caf966dd2d8c2ce01570bfa09a65bfb
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 7fc524fe3f31d886427e5ebff56d3f2cb7b14693
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何使最终用户了解 Microsoft Intune
 
@@ -54,7 +54,7 @@ __这将会对最终用户造成哪些不便？__ 需要时间安装应用、注
 
 * __深入了解。__ 最终用户的体验将会影响你的工作效率，了解他们的体验将有利于你更轻松地解决他们的问题。 了解最终用户获取应用的方式有利于你更轻松地诊断他们遇到的问题并更快地解决问题。
 
-* **Android**
+* **Outlook Web Access (OWA)**
   * [通过 Intune 使用 Android 设备](/intune-user-help/using-your-android-device-with-intune)
   * [Android 用户如何获取其应用](end-user-apps-android.md)
 

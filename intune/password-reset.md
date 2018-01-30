@@ -3,7 +3,7 @@ title: "削减支持人员成本"
 description: "通过自助密码重置削减支持人员成本"
 keywords: "Azure Active Directory SSPR 密码重置"
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 08/27/2017
 ms.topic: article
 ms.prod: 
@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 87d294fd873c680e950552eae82747bd59c784ec
-ms.sourcegitcommit: 3242b627c83072beaf57878234a16f1a04ddc8b4
+ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>通过自助密码重置削减支持人员成本
 

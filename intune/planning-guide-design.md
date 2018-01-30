@@ -4,7 +4,7 @@ description: "本文可帮助为 Microsoft Intune 仅限云设计和实现创建
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -349,7 +349,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 -   [适用于企业的 iOS 批量采购计划 (VPP)](vpp-apps-ios.md)
 
--   [适用于企业的 Windows 应用商店应用](windows-store-for-business.md)
+-   [适用于企业的 Microsoft 应用商店应用](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>应用类型要求
 

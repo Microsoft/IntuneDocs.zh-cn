@@ -5,7 +5,7 @@ description: "将 Intune 与 Zimperium 集成"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515f99f694a9125d60bb9210becc6722bfb9e24f
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 4759bab0c302f758f3f0a4af5ca333a5f560f3b3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="integrate-zimperium-with-intune"></a>将 Zimperium 与 Intune 集成
 
 若要将 Zimperium 移动威胁防御解决方案与 Intune 集成，请完成以下步骤。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 > [!NOTE]
 > 以下步骤是在 [Zimperium MTD 控制台](https://staging2-console.zimperium.com)中完成。

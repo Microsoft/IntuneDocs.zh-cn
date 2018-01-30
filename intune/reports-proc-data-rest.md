@@ -4,7 +4,7 @@ description: "使用 RESTful API 从 Intune 数据仓库检索数据。"
 keywords: 
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 42c9d8a1071bbd95d0d277234259d02cebbf3a99
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: e96e1a728fbb054f412dc6c2a3610179aec18b75
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 客户端从 Intune 数据仓库 API 获取数据
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 01/16/2018
 
 使用 Postman 进行 REST 调用时需要以下信息：
 
-| 属性        | 描述                                                                                                                                                                          | 示例                                                                                       |
+| 属性        | 说明                                                                                                                                                                          | 示例                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 回调 URL     | 在应用设置页中将其设置为回调 URL。                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | 令牌名称       | 用于将凭据传递给 Azure 应用的字符串。 该过程会生成令牌，用于调用数据仓库 API。                          | 持有者                                                                                        |

@@ -5,7 +5,7 @@ description: "了解可用于控制 iOS 设备上 Classroom 应用设置的 Intu
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f31ad2226052b4a681bc79e366e7d1def01c3cc4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何配置 iOS Classroom 应用的 Intune 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="introduction"></a>简介
+## <a name="introduction"></a>簡介
 [Classroom](https://itunes.apple.com/app/id1085319084) 是一款可帮助教师在教室中指导学习及控制学生设备的应用。 例如，教师可以使用此应用执行以下操作：
 
 - 打开学生设备上的应用
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/15/2017
 
 使用 Intune iOS 教育设备配置文件和本主题中的信息可帮助你设置 Classroom 应用以及会使用此应用的设备。
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
 开始配置这些设置前请考虑以下内容：
 
@@ -75,7 +75,7 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3.  在“Intune”边栏选项卡上，选择“配置设备”。
-4.  在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
+4.  在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 5.  在配置文件边栏选项卡上，选择“创建配置文件”。
 6.  在“创建配置文件”边栏选项卡上，输入 iOS 教育配置文件的“名称”和“说明”。
 7.  在“平台”下拉列表中，选择“iOS”。

@@ -5,7 +5,7 @@ description: "通过 Intune 创建和部署 WIP 应用保护策略"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f56752dc77289333fae69a81e2eb04d8b2e278f7
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 97f9407c8ba93307059e44c8becf4f7a36c6861a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/30/2017
 
 从 Intune 1704 版本开始，可将应用保护策略用于 Windows 10，在未注册设备的情况下保护应用。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 我们来讨论一些添加 WIP 策略的概念。
 
@@ -123,7 +123,7 @@ ms.lasthandoff: 12/30/2017
 <!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 添加要使用 WIP 保护的应用后，必须使用“WIP Learning” 应用保护模式。
 
-### <a name="before-you-begin"></a>在开始之前
+### <a name="before-you-begin"></a>开始之前
 
 WIP Learning 是一个报表，用于监视 WIP 未知的应用。 未知应用指不是由组织的 IT 部门部署的应用。 在“块”模式下强制执行 WIP 前，可从报告中导出这些应用并将其添加到 WIP 策略，以避免生产力中断。
 
@@ -151,7 +151,7 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
     ![Learning 模式屏幕截图](./media/learning-mode-sc1.png)
 
-1.  选择“保存”。
+1.  选择**“保存”**。
 
 ### <a name="use-wip-learning"></a>使用 WIP Learning
 

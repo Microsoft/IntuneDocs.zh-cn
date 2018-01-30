@@ -5,7 +5,7 @@ description: "了解如何创建针对不符合 Intune 的设备的操作"
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9747835e01dd2cf033ff4df7cba33ffd24660d61
-ms.sourcegitcommit: bd4c4b53312407548600053ab99672cb2d08bb63
+ms.openlocfilehash: 4e45f5d3836fc33851c650703f713c03204df792
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="automate-actions-for-noncompliance"></a>针对不符合设备的自动操作
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/06/2018
 -   **通过电子邮件通知最终用户**：可在向最终用户发送电子邮件通知之前，事先对其进行自定义。 Intune 支持自定义收件人、主题和邮件正文，包括自定义公司徽标和联系人信息。
 -   **将设备标记为不符合**：可在设备被标记为不符合之后的几天内确定计划。 可以配置立即采取的措施，也可以给予用户宽限期，等待其设备满足设备符合性策略。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 - 你需要创建至少一个设备符合性策略，以设置针对不符合设备的操作。 了解如何为以下平台创建设备符合性策略：
 
@@ -53,8 +53,8 @@ ms.lasthandoff: 01/06/2018
 3. 选择“Intune”
 4. 选择“设备符合性”，然后选择“管理”部分下的“通知”。
 5. 选择“创建通知”，再输入以下信息：
-    - 名称
-    - 使用者
+    - 名稱
+    - Subject
     - Message
     - 电子邮件标头 – 包括公司徽标
     - 电子邮件页脚 – 包括公司名称

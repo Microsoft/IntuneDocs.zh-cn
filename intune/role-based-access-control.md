@@ -5,7 +5,7 @@ description: "Intune Azure 预览版：了解 RBAC 如何使你控制可执行�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
-ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
+ms.openlocfilehash: 2e89ba73869d7453b74edb1e7f87f6c8edb210bf
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>使用 Intune 的基于角色的管理控制 (RBAC)
 
@@ -70,7 +70,7 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 |设备注册管理器|读取、更新|
 |托管设备|读取、更新<!--, Delete [To be added in 1803]-->|
 |移动应用|分配、创建、删除、读取、更新|
-|Reports|读取|
+|报告|读取|
 |远程操作|清理电脑、重启、远程锁定、停用、同步设备、擦除|
 |组织|读取|
 

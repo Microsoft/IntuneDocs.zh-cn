@@ -5,7 +5,7 @@ description: "了解如何配置你的基础结构，然后创建和分配 Intun
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 5aea88aa8898380c54867090650bd16d8bf60f3c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>使用 Intune 配置和管理 SCEP 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -65,7 +65,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 ### <a name="accounts"></a>帐户
 
-|名称|详细信息|
+|名稱|详细信息|
 |--------|-----------|
 |**NDES 服务帐户**|指定用作 NDES 服务帐户的域用户帐户。|
 
@@ -232,7 +232,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 3. NDES 服务器收到了长的 URL（查询），要求添加两个注册表项：
 
-    |位置|值|类型|数据|
+    |位置|值|類型|数据|
     |-------|-----|----|----|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxFieldLength|DWORD|65534（十进制）|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534（十进制）|
@@ -243,7 +243,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
     ![IIS 的最大 URL 长度和最大查询长度](.\media\SCEP_IIS_max_URL.png)
 
 5.  重新启动服务器。 在服务器上运行 iisreset 不足以完成这些更改。
-6. 浏览到 http://FQDN/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
+6. 浏览到 http://*FQDN*/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
 
     ![测试 NDES](.\media\SCEP_NDES_URL.png)
 
@@ -304,7 +304,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>如何下载、安装和配置证书连接器
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. 登录 Azure 门户。 
+1. 登录到 Azure 门户中。 
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 4. 在“设备配置”边栏选项卡上，选择“证书颁发机构”。
