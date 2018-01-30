@@ -5,7 +5,7 @@ description: "了解可用来控制 iOS 设备上的应用通知的设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b87ffad8ee005fd8a164ec2891d81e19fb005a8b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 91e4b6197c7606a70862ad5fb12b10b5e0f3ed81
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-app-notifications-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune 应用通知设置
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 12/12/2017
 |消息|com.apple.MobileSMS|
 |音乐|com.apple.Music|
 |新闻|com.apple.news|
-|注意|com.apple.mobilenotes|
+|附註|com.apple.mobilenotes|
 |数字|com.apple.Numbers|
 |页面|com.apple.Pages|
 |Photo Booth|com.apple.Photo-Booth|

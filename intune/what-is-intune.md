@@ -5,7 +5,7 @@ description: "了解 Azure 门户中 Intune 的基础知识及其如何有助于
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: angrobe
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: d83b3d6609e5fd6839e17e46520e4ef3d4551568
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 19b5d98165be67b32afa86ba942c42fc4a3048b3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 
@@ -44,7 +44,7 @@ Microsoft Intune 现在位于 Azure 门户中，这意味着你习惯使用的�
 - Azure Active Directory (AD) 组提供跨所有 Azure 应用程序的兼容性
 - 支持大多数新式 Web 浏览器
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
 若要使用 Azure 门户中的 Intune，必须拥有 Intune 管理员和租户帐户。 如果尚没有帐户，请[注册帐户](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。
 
@@ -85,7 +85,7 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 [根据指定的条件限制对 Exchange 服务的访问](conditional-access.md)。
 ### <a name="on-premises-access"></a>本地访问
 [配置本地 Exchange ActiveSync 和 Exchange 访问权限](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
-### <a name="users"></a>Users
+### <a name="users"></a>用户
 [了解有关所管理的以及将资源分类到组的设备的用户](users-add.md)。
 ### <a name="groups"></a>组
 [了解如何通过 Intune 使用 Azure Active Directory 组](groups-get-started.md)

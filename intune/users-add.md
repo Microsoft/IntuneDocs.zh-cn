@@ -4,7 +4,7 @@ description: "将本地用户与 Azure AD 同步，并授予对 Intune 订阅的
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4efc8be824acc3db869529d39617f376327b3193
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 11/01/2017
 3. 在管理中心，选择“新用户”。
   ![Office 365 管理员屏幕截图](media/intune-add-user.png)
 4. 指定下列用户详细信息：
-  - **Name**
+  - **名称**
   - 用户名 - Azure Active Directory 门户中的新名称 ![Office 365 管理员屏幕截图](media/intune-add-user-info.png)选择“确定”以继续。
 5. 或者，也可以指定下列用户属性：
   - 个人资料 - 包括“职务”和“部门”在内的工作信息
@@ -82,7 +82,7 @@ ms.lasthandoff: 11/01/2017
   ![在 Office 365 中分配角色的屏幕截图](./media/office-assign-roles-open.png)
 5. 从可用角色列表中选择要授予的管理员权限。
 ![Office 365 门户分配角色的图像。](./media/office-assign-roles.png)
-6. 选择“保存”。
+6. 选择**“保存”**。
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>在 Azure 门户中授予管理员权限
 1. 使用全局管理员帐户登录 [Azure 门户](https://www.office.com/signin)。

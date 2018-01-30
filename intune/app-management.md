@@ -5,7 +5,7 @@ description: "通过本主题了解使用 Microsoft Intune 进行应用管理的
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ea0c9a406d6ddb78cd016a7b594d077d7181952
-ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
+ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -64,13 +64,13 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。
 
 可在“移动应用”工作负荷中找到大部分与应用相关的内容，并可通过以下步骤进行访问：
 
-1. 登录 Azure 门户。
+1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
 
     ![移动应用工作负荷](./media/apps-workload.png)
 
-### <a name="manage"></a>管理计算机上的
+### <a name="manage"></a>管理
 - **应用** - 可在此节点处添加、分配和监视大多数应用。
     - [添加应用](apps-add.md)
     - [分配应用](apps-deploy.md)
@@ -97,7 +97,7 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。
 
 如需了解更多详情，请参阅[监视应用](apps-monitor.md)。
 
-### <a name="setup"></a>Setup
+### <a name="setup"></a>设置
 - **iOS VPP 令牌** - 应用并查看 iOS Volume Purchase Program (VPP) 许可证。
     - [iOS 批量采购的应用](vpp-apps-ios.md)
 - **Windows 企业证书** - 应用或查看用于将业务线应用分发到托管 Windows 设备的代码签名证书的状态。 

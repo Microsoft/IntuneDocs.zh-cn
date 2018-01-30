@@ -5,7 +5,7 @@ description: "了解如何创建适用于 Windows 设备的符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,18 +15,18 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中创建适用于 Windows 设备的设备符合性策略
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-为每个平台创建合规性策略。  可以在 Azure 门户中创建合规性策略。 若要详细了解什么是合规性策略，请参阅[什么是设备合规性](device-compliance.md)主题。 若要了解创建合规性策略之前需要解决的先决条件，请参阅[设备合规性入门](device-compliance-get-started.md)主题。
+为每个平台创建符合性策略。  可以在 Azure 门户中创建合规性策略。 若要详细了解什么是合规性策略，请参阅[什么是设备合规性](device-compliance.md)主题。 若要了解创建合规性策略之前需要解决的先决条件，请参阅[设备合规性入门](device-compliance-get-started.md)主题。
 
 下表说明了将合规性策略与条件访问策略一起使用时如何管理非合规性设置。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="system-security-settings"></a>系统安全设置
 
-### <a name="password"></a>Password
+### <a name="password"></a>密码
 
 - **需要密码才可解锁移动设备：**将此选项设置为“是”，以要求用户在访问其设备之前输入密码。
 - **允许简单密码：**将此选项设置为“是”可允许用户创建简单密码，如“1234”或“1111”。
@@ -111,9 +111,9 @@ ms.lasthandoff: 09/09/2017
 ## <a name="device-health-settings"></a>设备运行状况设置
 
 - **要求设备被报告为正常：**你可以在新的或现有的合规性策略中设置规则，要求 **Windows 10 移动版**设备必须被报告为正常。 如果启用此设置，将通过运行状况证明服务 (HAS) 评估 Windows 10 设备的下列数据点：
-  - **启用 BitLocker：**Bitlocker 打开的情况下，当系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据，防止未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来保护 Windows 操作系统和用户数据，并确保即使计算机无人管理、丢失或被盗，计算机也不会被篡改。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥
+  - **启用 BitLocker：**Bitlocker 打开的情况下，当系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据，防止未经授权的访问。 Windows BitLocker 驱动器加密可以对存储在 Windows 操作系统卷上的所有数据进行加密。 BitLocker 使用 TPM 来帮助保护 Windows 操作系统和用户数据，它还有助于确保计算机不被篡改，即使计算机处于无人参与、丢失或被盗的状态。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥
   - **启用代码完整性：**代码完整性是一种功能，可用于在每次将驱动器或系统文件载入内存时，验证它们的完整性。 代码完整性还可用于检测是否有未签名的驱动器或系统文件被载入到内核，或者系统文件是否被恶意软件（由具有管理员权限的用户帐户运行）修改。
-  - **启用安全启动：**启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认这一点。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
+  - **启用安全启动：**启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件将在对此进行验证后才允许计算机启动。 如果有任何文件被篡改，破坏了其签名，则系统将不会启动。
 
 有关 HAS 服务工作方式的信息，请参阅[运行状况证明 CSP](https://msdn.microsoft.com/library/dn934876.aspx)。
 
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="system-security-settings"></a>系统安全设置
 
-### <a name="password"></a>Password
+### <a name="password"></a>密码
 
 - **最短密码长度：** - 在 Windows 8.1 上受支持。
 
@@ -165,10 +165,10 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="device-health-settings"></a>设备运行状况设置
 
-- **需要设备被报告为正常：** - 在 Windows 10 设备上受支持。 你可以在新的或现有的合规性策略中设置规则，要求 Windows 10 设备必需被报告为正常。 如果启用此设置，将通过运行状况证明服务 (HAS) 评估 Windows 10 设备的下列数据点：
-  - **启用 BitLocker：**Bitlocker 打开的情况下，当系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据，防止未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来保护 Windows 操作系统和用户数据，并确保即使计算机无人管理、丢失或被盗，计算机也不会被篡改。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥
+- **需要设备被报告为正常：** - 在 Windows 10 设备上受支持。 可以在新的或现有的合规性策略中设置规则，要求 Windows 10 设备必须被报告为正常。 如果启用此设置，将通过运行状况证明服务 (HAS) 评估 Windows 10 设备的下列数据点：
+  - **启用 BitLocker：**Bitlocker 打开的情况下，当系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据，防止未经授权的访问。 Windows BitLocker 驱动器加密可以对存储在 Windows 操作系统卷上的所有数据进行加密。 BitLocker 使用 TPM 来帮助保护 Windows 操作系统和用户数据，它还有助于确保计算机不被篡改，即使计算机处于无人参与、丢失或被盗的状态。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥
   - **启用代码完整性：**代码完整性是一种功能，可用于在每次将驱动器或系统文件载入内存时，验证它们的完整性。 代码完整性还可用于检测是否有未签名的驱动器或系统文件被载入到内核，或者系统文件是否被恶意软件（由具有管理员权限的用户帐户运行）修改。
-  - **启用安全启动：**启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认这一点。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
+  - **启用安全启动：**启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件将在对此进行验证后才允许计算机启动。 如果有任何文件被篡改，破坏了其签名，则系统将不会启动。
   - **启用开机初期启动的反恶意软件：**开机初期启动的反恶意软件 (ELAM) 在计算机启动时和第三方驱动器初始化之前，对你网络中的计算机提供保护。
 
 有关 HAS 服务工作方式的信息，请参阅[运行状况证明 CSP](https://msdn.microsoft.com/library/dn934876.aspx)。

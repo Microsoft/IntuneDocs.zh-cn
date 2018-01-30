@@ -4,7 +4,7 @@ description: "Intune 数据仓库 API 中实体集合的“移动应用管理”
 keywords: "Intune 数据仓库"
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b73ba946bdf5e95231b3387885e353a170dbd17
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: d07d6e012a9c74c0ba68d59f98c05e5169789cf0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>移动应用管理 (MAM) 实体引用
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/16/2018
 
 MamApplication 实体列出了未在企业中注册便通过移动应用程序管理 (MAM) 托管的业务线 (LOB) 应用。
 
-| 属性 | 描述 | 示例 |
+| 屬性 | 说明 | 示例 |
 |---------|------------|--------|
 | ApplicationKey |数据仓库中 MAM 应用的唯一标识符。 |123 |
 | ApplicationName |MAM 应用的名称。 |“Word” |
@@ -50,7 +50,7 @@ MamApplication 实体列出了未在企业中注册便通过移动应用程序�
 
 MamApplicationInstance 实体将托管移动应用程序管理 (MAM) 应用列为单个实例（按每设备每用户）。 实体中列出的所有用户和设备都受保护，因为向它们分配了至少一个 MAM 策略。
 
-| 属性 | 描述 | 示例 |
+| 屬性 | 说明 | 示例 |
 |---------|------------|--------|
 | ApplicationInstanceKey |数据仓库中 MAM 应用实例的唯一标识符 - 代理键。 |123 |
 | UserId |已安装此 MAM 应用的用户的用户 ID。 |b66bc706-ffff-7437-0340-032819502773 |
@@ -75,7 +75,7 @@ MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 
 > [!Note]  
 > 若某个应用实例在一天中签入多次，数据仓库会将其存储为签入一次。
 
-| 属性 | 描述 | 示例 |
+| 屬性 | 说明 | 示例 |
 |---------|------------|--------|
 | DateKey |日期键，表明在数据仓库中记录 MAM 应用签入的时间。 | 20160703 |
 | ApplicationInstanceKey |与此 MAM 应用签入关联的应用实例的键。 |1900/5/2 中午 12:00:00 |
@@ -90,7 +90,7 @@ MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 
 
 MamDeviceHealth 实体表示部署有移动应用管理 (MAM) 策略的设备（即使是越狱设备）。
 
-| 属性 | 描述 | 示例 |
+| 屬性 | 说明 | 示例 |
 |---------|------------|--------|
 | DeviceHealthKey |数据仓库中设备及其相关运行状况的唯一标识符 - 代理键。 |1900/1/1 中午 12:00:00 |
 | DeviceHealth |设备及其相关运行状况的的唯一标识符 - 类似于 DeviceHealthKey，但该标识符是自然键。 |1900/1/1 中午 12:00:00 |
@@ -101,7 +101,7 @@ MamDeviceHealth 实体表示部署有移动应用管理 (MAM) 策略的设备（
 
 MamEffectivePolicy 实体列出了组织中应用的所有移动应用管理 (MAM) 有效策略。 有效应用的策略通过合并与特定应用和用户相关的所有策略生成。
 
-| 属性 | 描述 | 示例 |
+| 屬性 | 说明 | 示例 |
 |---------|------------|--------|
 | EffectivePolicyKey |数据仓库中 MAM 有效策略的唯一标识符。 |2 |
 | RealPolicyKey |由 IT 专业人员创作的 MAM 策略的唯一标识符。 |1 |
@@ -111,7 +111,7 @@ MamEffectivePolicy 实体列出了组织中应用的所有移动应用管理 (MA
 
 MamGlobalApplication 实体列出了未在企业中注册便通过移动应用程序管理 (MAM) 托管的应用商店应用。
 
-| 属性 | 描述 | 示例 |
+| 屬性 | 说明 | 示例 |
 |---------|------------|--------|
 | ApplicationKey |数据仓库中应用商店应用的唯一标识符，称为代理键。 |123 |
 | ApplicationId |应用商店的唯一标识符。 该标识符与 ApplicationKey 类似，但是一个自然键。 |com.microsoft.skydrive.<ios> |
@@ -122,7 +122,7 @@ MamGlobalApplication 实体列出了未在企业中注册便通过移动应用�
 
 MamPlatform 实体列出了安装有移动应用程序管理 (MAM) 应用的平台的名称和类型。
 
-| 属性 | 描述 | 示例 |
+| 屬性 | 说明 | 示例 |
 |---------|------------|--------|
 | PlatformKey |数据仓库中平台的唯一标识符 - 代理键。 |123 |
 | 平台 |平台的唯一标识符 - 类似于 PlatformKey，但该标识符是自然键。 |123 |

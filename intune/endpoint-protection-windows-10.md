@@ -5,7 +5,7 @@ description: "了解可用来控制 Windows 10 设备上的 Endpoint Protection 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/16/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8393699a06def8f01c9f70561bb1894bb7cba04e
-ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
+ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 10 及更高版本的 Endpoint Protection 设置
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/18/2018
 
 ## <a name="create-an-endpoint-protection-profile"></a>创建 Endpoint Protection 配置文件
 
-1. 登录 Azure 门户。
+1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。

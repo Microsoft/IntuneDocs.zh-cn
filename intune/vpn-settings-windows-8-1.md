@@ -5,7 +5,7 @@ description: "了解可用于在 Windows 8.1 设备上配置 VPN 连接的 Intun
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 50818a75d1a0877ac77e5d0a5eefb696a168baf7
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 0126c483ec905d4c073e19b35498c27069ecd285
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 8.1 设备的 VPN 设置
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 12/30/2017
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
 - **Check Point Capsule VPN**
 - **Dell SonicWALL Mobile Connect**
--  **F5 Edge Client**
+- **F5 Edge Client**
 - **Pulse Secure**
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->

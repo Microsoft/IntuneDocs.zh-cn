@@ -5,7 +5,7 @@ description: "了解如何创建 macOS 设备符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,18 +15,18 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf085ff2ee4668ea4c14718719c466bcb982b10
-ms.sourcegitcommit: d4623cbfe296ae370c3d88c3213fffbda255e474
+ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 创建适用于 macOS 设备的设备符合性策略
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 在创建和分配设备符合性策略之前，请查看 Intune 设备符合性策略概念。
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 11/17/2017
 
 ### <a name="system-security-settings"></a>系统安全设置
 
-#### <a name="password"></a>Password
+#### <a name="password"></a>密码
 
 - **需要密码才可解锁移动设备**：将此选项设置为“必需”，因此用户需要在访问其设备之前输入密码。
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 11/17/2017
 
 2. 成功登录后，可以看到“Azure 仪表板”。
 
-3. 从左侧菜单中选择“更多服务”，然后在文本框筛选器中键入 Intune。
+3. 从左侧菜单中选择“**更多服务**”，然后在文本框筛选器中键入 **Intune**。
 
 4. 选择“Intune”，可以看到“Intune 仪表板”。
 

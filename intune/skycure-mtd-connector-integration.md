@@ -5,7 +5,7 @@ description: "使用 Microsoft Intune 设置 Skycure 集成。"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5662d1add7d5b35f3c2c8cd7a8f9900d197a3548
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 0db27bb8f83c7183b411705b16bbb9ad4d357e39
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>使用 Intune 设置 Skycure 集成
 
 你需要将 Skycure 应用添加到 Azure AD，以具备单一登录功能。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 ### <a name="azure-ad-account-used-to-integrate-intune-and-skycure"></a>用于集成 Intune 和 Skycure 的 Azure AD 帐户
 

@@ -4,7 +4,7 @@ description: "用于通过 Microsoft 企业移动性 + 安全性启用 BYOD 和�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
 ms.prod: 
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 
 ms.suite: ems
-ms.openlocfilehash: 9f8fa87c3100a3e0444f6f44a9976c3b399ab334
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 85fa202c3e80cdc830155299c16f121f96cc5742
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>用于通过 Microsoft 企业移动性 + 安全性 (EMS) 启用 BYOD 的技术决策
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 12/22/2017
 | | | |
 | 意外共享数据，或将数据保存到不安全的位置 | 限制设备数据备份 | 限制剪切/复制/粘贴|
 | 意外共享数据，或将数据保存到不安全的位置 | 限制另存为 | 限制另存为 |
-|意外共享数据，或将数据保存到不安全的位置 | 禁用打印 | n/a|
+|意外共享数据，或将数据保存到不安全的位置 | 禁用打印 | N/A|
 
 ## <a name="next-steps"></a>后续步骤
 现在是时候决定是否要在组织中启用 BYOD 了，可以选择是重点关注设备管理、应用管理还是上述两者的组合。 实现选择由你掌控，可以确信的是 Azure AD 提供的标识和安全功能在任何时候都可用。

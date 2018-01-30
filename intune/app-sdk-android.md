@@ -3,7 +3,7 @@ title: "用于 Android 的 Microsoft Intune App SDK 开发人员指南"
 description: "用于 Android 的 Microsoft Intune App SDK 支持将 Intune 移动应用管理 (MAM) 集成到 Android 应用中。"
 keywords: SDK
 author: erikre
-manager: angrobe
+manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
-ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
+ms.openlocfilehash: b99ca9b196aa15d146e7a379cdc7bdffe848be28
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -46,7 +46,7 @@ Intune App SDK 包括下列文件：
 * **AndroidManifest.xml**：入口点和库要求。
 
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>需求
 
 Intune App SDK 是已编译的 Android 项目。 因此，这在很大程度上不受应用用于其最低或目标 API 版本的 Android 版本的影响。 此 SDK 支持 Android API 19 (Android 4.4+) 到 Android API 26 (Android 8.0)。
 
@@ -877,7 +877,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
 应用除可设置标识外，还可基于从另一 Intune 托管的应用（具有应用保护策略）进入的数据更改线程或上下文的标识。
 
-#### <a name="examples"></a>示例
+#### <a name="examples"></a>範例
 
   1. 如果活动从由另一 MAM 应用发送的 `Intent` 启动，则活动的标识将在发送 `Intent` 时基于另一应用的有效标识进行设置。
 
@@ -1422,7 +1422,7 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 
 * 避免以不明确的方式使用任何 API。 例如，使用 `Activity.startActivityForResult` 而不检查 requestCode 会导致奇怪的行为。
 
-## <a name="telemetry"></a>遥测技术
+## <a name="telemetry"></a>遥测
 
 Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用会记录遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。
 

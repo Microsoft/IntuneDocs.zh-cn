@@ -5,7 +5,7 @@ description: "了解可用来控制 iOS 设备上的设备设置和功能的 Int
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备限制设置
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 12/12/2017
 - 限制 UI 
 - 通过 UI 安装配置文件 
 - 新闻 
-- 键盘快捷方式 
+- 键盘快捷键 
 - 密码修改 
 - 设备名更改 
 - 壁纸更改 
@@ -92,7 +92,7 @@ ms.lasthandoff: 12/12/2017
 > - 多玩家游戏
 > - 添加游戏中心好友
 
-## <a name="password"></a>Password
+## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。
     -   **简单密码** - 允许 0000 和 1234 等简单密码。
     -   **所需的密码类型** - 指定需要的密码类型，例如仅限数字或字母数字。
@@ -107,7 +107,7 @@ ms.lasthandoff: 12/12/2017
 - 密码修改（仅限被监督的设备）- 防止更改、添加或删除密码。
     - 指纹修改（仅限被监督的设备）- 防止用户更改、添加或删除 TouchID 设置。
 
-<sup>1</sup>配置设置“屏幕锁定前的非活动状态最大分钟数”和“屏幕锁定后要求提供密码前的最大分钟数”时，它们会依次应用。 例如，如果你设置的两个设置的值均为“5”  分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
+<sup>1</sup>配置设置“屏幕锁定前的非活动状态最大分钟数”和“屏幕锁定后要求提供密码前的最大分钟数”时，它们会依次应用。 例如，如果你设置的两个设置的值均为“5”分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
 
 ## <a name="locked-screen-experience"></a>锁定屏幕体验
 
@@ -339,7 +339,7 @@ ms.lasthandoff: 12/12/2017
 -   **弹出窗口** - 启用或禁用浏览器弹出窗口阻止程序。
 
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>域
 
 ### <a name="unmarked-email-domains"></a>未标记的电子邮件域
 

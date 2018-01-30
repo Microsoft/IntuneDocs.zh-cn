@@ -5,7 +5,7 @@ description: "了解 Intune 应用保护策略如何帮助保护你所管应用�
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c282a98ecf357f650fbfa14499a206c4d283f81a
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 4fbb9a1f6697a8339a2854e4352749ca04bb612e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 有关如何在 Intune 经典门户中创建策略的说明，请参阅[如何创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 12/08/2017
 6.  选择“确定”保存此配置。 现将返回“添加策略”  边栏选项卡。 选择“创建”以创建策略并保存设置。
 
 
-按上述流程创建策略后，它未部署到任何用户。 若要部署策略，请参阅下面的部分，即“将策略部署到用户”。
+按上述流程完成创建策略后，未将它部署到任何用户。 若要部署策略，请参阅下面的部分，即“将策略部署到用户”。
 
 ## <a name="deploy-a-policy-to-users"></a>将策略部署到用户
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 12/08/2017
 >[!IMPORTANT]
 > 如果你使用 Intune 与配置管理器来管理 iOS 和 Android 设备，则该策略将仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不会受影响。
 
-最终用户可以从 App Store 或 Google Play 下载应用。 有关详情，请参阅：
+最终用户可以从 App Store 或 Google Play 下载应用。 有关详细信息，请参阅：
 * [Android 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-android.md)
 * [iOS 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-ios.md)
 

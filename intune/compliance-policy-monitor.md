@@ -5,7 +5,7 @@ description: "了解如何监视设备符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4b293ff41af58d4ab41a8477219939b13ffe361c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
 符合性报告可帮助管理员分析其组织中设备的符合性状态，并快速解决组织内用户遇到的符合性相关的问题。 你可以查看有关设备的整体符合性状态、各设置的符合性状态、各策略的符合性状态，并向下钻取到各设备，以查看影响设备的特定设置和策略。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 按照以下步骤在 Azure 门户中查找 **Intune 设备符合性仪表板**：
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/09/2017
 
 2.  从左侧菜单中选择“**更多服务**”，然后在文本框筛选器中键入 **Intune**。
 
-3.  选择“** Intune **”&gt;“**设备符合性**”&gt;“**概述**”，“**设备符合性仪表板**”将打开。
+3.  选择“ **Intune** ”&gt;“**设备符合性**”&gt;“**概述**”，“**设备符合性仪表板**”将打开。
 
 > [!IMPORTANT] 
 > 设备必须注册到 Intune 才能接收设备符合性策略。
@@ -115,7 +115,7 @@ ms.lasthandoff: 09/09/2017
 
     -   处于宽限期
 
-    -   Unknown
+    -   未知
 
     -   错误
 

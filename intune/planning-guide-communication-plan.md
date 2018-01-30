@@ -4,7 +4,7 @@ description: "本文可帮助用户为 Intune 部署制定推出通信计划。"
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: angrobe
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d690dc82da56836e4bc338e77b9744f0ab690e87
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: b39e2a64dd4ebf525b1f2b6a9b260373686dcbd8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="develop-a-rollout-communication-plan"></a>制定推出通信计划
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 10/31/2017
 
   | **通信计划** | **7 月** | **8 月** | **9 月** | **10 月** |
 |:---:|:---:|:---:|:---:|:---:|
-| 第 1 波  | All |  |  |  |                                                         
+| 第 1 波  | 所有 |  |  |  |                                                         
 | “启动”会议 | 第 1 周 |  |  |  |                                                         
 | 第 2 波 | IT | 销售和营销 | 零售 | 人力资源、财务和高级管理人员 |
 | 预推出电子邮件 1 | 第 1 周 | 第 1 周 | 第 1 周 | 第 1 周 |

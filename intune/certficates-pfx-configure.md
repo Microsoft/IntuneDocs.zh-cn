@@ -5,7 +5,7 @@ description: "使用 Intune 创建和分配 PKCS 证书。"
 keywords: 
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a51d260718e0d0c3984966fab69e202b854c1847
-ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
+ms.openlocfilehash: d877a1de8e66372d36641dd863a517fecf176d69
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>使用 Intune 配置和管理 PKCS 证书
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>需求
 
 若要在 Intune 中使用 PKCS 证书，必须具有以下基础结构：
 

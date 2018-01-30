@@ -5,7 +5,7 @@ description: "了解可用来控制 macOS 设备上的设备设置和功能的 I
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31de04787515a5d205108f2c412c6e5e57e170d7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 69fc2959c7694a0120efff8653ce8d619f33a9d3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 macOS 设备限制设置
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/12/2017
 
 使用这些设置管理设备限制配置文件中的 macOS 设备。
 
-## <a name="password"></a>Password
+## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。
     -   **所需密码类型** - 指定密码是否可以仅由数值组成，还是必须为字母数字（包含字母和数字）。 仅在 Mac OS X 10.10.3 及更高版本上支持此设置。
     -   **密码中的非字母数字字符数** - 指定密码中必须包含的复杂字符数（**0** 至 **4**）。<br>复杂字符是一个符号，如 **?**

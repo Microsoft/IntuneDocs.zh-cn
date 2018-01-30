@@ -5,7 +5,7 @@ description: "设置 Lookout 移动威胁防御连接器与 Intune。"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c13aa920358526deddcdb912833217c88f27371
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout 移动威胁防御连接器与 Intune
 
@@ -42,7 +42,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 * **Android 4.1 及更高版本**
 * **iOS 8 及更高版本** 有关平台和语言支持的其他相关信息，请访问 [Lookout 网站](https://personal.support.lookout.com/hc/articles/114094140253)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先決條件
 * Microsoft Intune 订阅
 * Azure Active Directory
 * Lookout Mobile EndPoint Security 企业订阅  
@@ -63,7 +63,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 
 ![关系图：显示在设备因其上的恶意应用而被确定为不合规时阻止访问的条件访问策略](./media/malicious-apps-blocked.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![显示条件访问策略在解除威胁后将设备确定为合规时授予访问权限的图示](./media/malicious-apps-unblocked.png)
 
@@ -86,7 +86,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 ![条件访问基于检测到的威胁阻止设备访问 SharePoint Online 的图示](./media/network-spo-blocked.png)
 
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![条件访问在解除网络威胁后允许访问的图示](./media/network-spo-unblocked.png)
 

@@ -4,23 +4,24 @@ description: "介绍如何在 Intune 中注册 macOS 设备"
 keywords: "Mac OS X、macOS、OS X"
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f46d9cc4fad54415aeea8deaf1b8daa0c274c1dc
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 23d996132a6c896bb260b1bc4e46cbc6077583b3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-legacy-macos-device-in-intune"></a>在 Intune 中注册旧版 macOS 设备
 
@@ -66,4 +67,4 @@ ms.lasthandoff: 12/12/2017
 
 某些配置文件可能显示为“未验证”；如果这些配置文件属于你的公司，那么这是正常现象。
 
-仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。
+仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。

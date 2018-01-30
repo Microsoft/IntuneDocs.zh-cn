@@ -3,7 +3,7 @@ title: "防止非受管理设备上的数据泄露"
 description: "允许在设备上访问公司数据并防止数据泄漏。"
 keywords: "数据保护 防止泄漏 设备 O365 Office 365"
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ae8702c51df1c3c2b8e6dd2a79bf4599e6b7677
-ms.sourcegitcommit: 29ee35da2864b25f4432d2423b285014c77040af
+ms.openlocfilehash: 3b917b3718a7630c4a556a41c551aa5d76f4b4aa
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices"></a>防止非受管理设备上的数据泄露
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/23/2017
 
 Intune 应用保护策略独立于设备管理。 通过应用保护策略，可管理在托管设备和由 Intune 或非 Microsoft MDM 解决方案管理的设备上的 Office 移动应用。 
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 满足以下要求，可使用以下操作计划：
 * 你的公司已准备好安全转换到云。

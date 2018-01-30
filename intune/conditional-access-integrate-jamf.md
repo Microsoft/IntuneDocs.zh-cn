@@ -5,7 +5,7 @@ description: "使用符合性帮助保护 Jamf 管理的设备。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 82b26d351949e6705a0438bee8cc712a9e624990
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/05/2018
 
 如果你的组织使用 [Jamf Pro](https://www.jamf.com) 管理最终用户的 Mac，则可以将 Microsoft Intune 符合性策略用于 Azure Active Directory 条件访问，从而确保组织中的设备满足合规要求。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 
 需要满足以下要求才能通过 Jamf Pro 配置条件访问：
 
@@ -99,7 +99,7 @@ Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intun
 * 已加密（FileVault 2）
 * 网关守卫状态
 * 密码：最小字符集数
-* 密码过期(天)
+* 密码过期（天数）
 * 密码类型 - 简单、字母数字字符或未知
 * 防止自动登录
 * 所需的密码长度
@@ -116,12 +116,12 @@ Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intun
 * 域加入
 * Jamf ID
 * MAC 地址
-* 品牌
+* 制造商
 * 型号
 * 模型标识符
 * NIC 速度
 * 内核数量
-* 处理器数目
+* 处理器数
 * 操作系统
 * 平台
 * 处理器速度
@@ -129,7 +129,7 @@ Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intun
 * 辅助 MAC 地址
 * 序列号
 * SMC 版本
-* RAM 总量
+* 总 RAM
 * UDID
 * 用户电子邮件
 

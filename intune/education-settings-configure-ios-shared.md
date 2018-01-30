@@ -5,7 +5,7 @@ description: "了解可用于控制 iOS 设备上 Classroom 应用设置的 Intu
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b24ee84d339b728addd753cb309b4d8572e5582
-ms.sourcegitcommit: e5501cdf08d3e79bc51dc726697606be02110e57
+ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>如何为共享 iPad 设备配置 Intune 教育设置
 
@@ -29,7 +29,7 @@ Intune 支持 iOS Classroom 应用，可帮助教师在课堂上指导学习以�
 
 有关配置专用 (1:1) iPad 设备以使用 Classroom 应用的信息，请参阅[如何为 iOS Classroom 应用配置 Intune 设置](education-settings-configure-ios.md)。
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
 使用共享 iPad 功能的先决条件是：
 
@@ -65,7 +65,7 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 1. 登录到 Azure 门户中。
 2. 依次选择“更多服务” > “其他” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“配置设备”。
-4. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
+4. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 5. 在配置文件边栏选项卡上，选择“创建配置文件”。
 6. 在“创建配置文件”边栏选项卡上，输入 iOS 教育配置文件的“名称”和“说明”。
 7. 在“平台”下拉列表中，选择“iOS”。
@@ -95,7 +95,7 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 - **使用者名称格式** - 对于教师证书，Intune 将自动在证书公用名称上添加前缀“主持人”，对于学生证书则添加“成员”。
 - **证书颁发机构** - 在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。
-- 证书颁发机构名称 - 输入证书颁发机构的名称。
+- **证书颁发机构名称** - 输入你的证书颁发机构的名称。
 - 证书模板名称**** - 输入已添加到发证 CA 的证书模板的名称。
 - **续订阈值(%)** - 指定设备请求证书续订之前剩余的证书有效期限的百分比。
 - **证书有效期** - 指定距离证书过期的剩余时间量。 你可以指定比指定证书模板中的有效期小的值，但不能指定较大的值。 例如，证书模板中的证书有效期为 2 年，则你可以指定值 1 年，但不能指定值 5 年。 该值还必须小于发证 CA 证书的剩余有效期。
@@ -203,6 +203,6 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 分配完成，Intune 会基于教室分配将 Classroom 配置文件部署到目标设备。
 
-## <a name="next-steps"></a>后续步骤
+## <a name="next-steps"></a>後續步驟
 
 现在学生之间可以共享设备，并且可以在教室里拿起任何 iPad，使用 PIN 登录并根据自己的内容进行个性化设置。 有关共享 iPad 的详细信息，请参阅 [Apple 网站](https://www.apple.com/education/it/)。

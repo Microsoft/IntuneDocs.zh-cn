@@ -5,7 +5,7 @@ description: "将条件访问策略从 Intune 经典门户迁移到 Azure 门户
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18ee7adcdb396c1b7010100803c82dbf0daa767c
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: bdb64d4cc668bf382c39a235111547c2f4e21c9c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
 从新 Azure 门户开始，条件访问按应用程序提供多策略支持和更高的可自定义度。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 如果准备迁移到 Azure 门户，请按照本主题中的步骤重新分配先前在 Intune 经典门户中创建的条件访问策略：
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 11/15/2017
 
 8. 选择要应用新条件访问策略的应用，然后单击“选择”。
 
-9. 单击“完成”。
+9. 单击 **“完成”**。
 
     ![Intune 和 Azure 门户之间的云应用用户界面比较](./media/reassign-ca-3.png)
 

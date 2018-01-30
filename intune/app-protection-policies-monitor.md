@@ -5,7 +5,7 @@ description: "查看有多少用户拥有策略，并深入了解以获取详细
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d369b311339218edcb3204ce7c575986c7a08528
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/08/2017
 
 1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“移动应用”。
+3. 在 Intune 边栏选项卡上，选择“移动应用”。
 4. 在“移动应用”工作负荷中，选择“监视” > “应用保护用户状态”，以查看摘要视图：
 
 ![“Intune 移动应用程序管理”边栏选项卡上的“摘要”磁贴。](./media/app-protection-user-status-summary.png)

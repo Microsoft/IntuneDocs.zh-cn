@@ -4,7 +4,7 @@ description: "Intune 数据仓库 API 中实体集合的“用户”类别的参
 keywords: "Intune 数据仓库"
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 895855befe31e84b3dc472216afdf52d636bc27a
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: d25825910e878d428bde72414c4bbee2d5092a89
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-current-user-entity"></a>CurrentUser 实体参考
 
@@ -29,7 +29,7 @@ CurrentUser 类别包含数据模型中的用户属性。 “当前用户”实�
 
 CurrentUser 实体列出了企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。
 
-| 属性  | 描述 | 示例 |
+| 屬性  | 说明 | 示例 |
 |---------|------------|--------|
 | UserKey |数据仓库中用户的唯一标识符 - 代理键。 |123 |
 | UserId |用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |

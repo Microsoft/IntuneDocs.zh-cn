@@ -4,21 +4,22 @@ description: "了解如何在 Android 设备上安装 SandBlast Mobile Protect�
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 754f4ea5-cff4-414d-8cd1-900238f79e84
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 287917669523e257a42b47d0132de7cc0dcf18e0
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 277702604defe593fad9b3552d317c28b32710b9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>需要在 Android 设备上安装 SandBlast Mobile Protect
 
@@ -56,4 +57,4 @@ ms.lasthandoff: 12/12/2017
 
 有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试[从 Play Store 手动安装 SandBlast Mobile Protect](https://play.google.com/store/apps/details?id=com.lacoon.security.fox)。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

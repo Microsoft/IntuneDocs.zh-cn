@@ -4,7 +4,7 @@ description: "本文提供在 Intune 迁移过程中配置设备符合性和应�
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: b75368bb8a1172444036b5bd695a4ec36cd9727c
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="configure-device-compliance-and-app-management-policies"></a>配置设备符合性和应用管理策略
 

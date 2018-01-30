@@ -5,7 +5,7 @@ description: "了解如何将 Windows 应用商店应用添加到 Intune。"
 keywords: 
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
@@ -15,18 +15,18 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 19339bee8b362b1168e62da9716dbfd3144e85e7
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: cdc1696175f26dc4bb89fcdd005d88bc0948f86d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>如何将 Windows 应用商店应用添加到 Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-1. 登录 Azure 门户。
+1. 登录到 Azure 门户中。
 2. 依次选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“管理应用”。
 4. 在“移动应用”工作负荷中，选择“管理” > “应用”。
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/04/2018
 2. 如上所述，从适用于企业的 Microsoft 应用商店下载 Windows 10 公司门户应用。  
 3. 运行在脚本标头中详细说明了其输入参数的脚本，对 Windows 10 公司门户应用进行签名（以下进行了提取）。 不需要将依赖项传入该脚本。 只有在应用上载到 Intune 管理控制台时才需要依赖项。
 
-|参数 | 描述|
+|Parameter | 说明|
 | ------------- | ------------- |
 |InputWin10AppxBundle |定位到源 appxbundle 文件所在位置的路径 |
 |OutputWin10AppxBundle |已签名的 appxbundle 文件 Win81Appx 的输出路径。  定位到 Windows 8.1 或 Windows Phone 8.1 公司门户 (.APPX) 文件所在位置的路径。|

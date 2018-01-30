@@ -3,7 +3,7 @@ title: "防止对公司门户进行未经授权的访问"
 description: "在公司网络外部共享公司数据时，防止未经授权的访问。"
 keywords: "Office 365 O365 Azure 信息保护 数据保护 外部网络 公司数据"
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
@@ -13,17 +13,17 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85e4712a204032497cb7fd31dbee910d52ac08b7
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prevent-unauthorized-access-to-company-data"></a>防止对公司门户进行未经授权的访问 
 
 可对 Office 365 文档和电子邮件进行分类、应用标签和保护，仅允许经授权的用户访问数据。 当IT 管理员或用户设置规则或条件后，自动管理此设置。 也可由 IT 团队提供推荐的设置，让用户遵照。 管理员和用户也可在没有其他有权限的角色协助的情况下，撤消已与他人共享的数据的访问权限。 这样做的结果是，即使数据离开公司网络，也可控制能够打开或更新受保护数据的用户。 
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 满足以下要求，可使用以下操作计划：
 * 你的公司已准备好安全转换到云。
