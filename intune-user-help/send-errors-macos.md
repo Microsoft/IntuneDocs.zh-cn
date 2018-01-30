@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5c2b65f4-0e0d-4a3c-81c2-af634718023d
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5864454bbd4461ab50e95c102e0b572088980dec
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 9859e13d8d1b39975d53bab159b204ef27560365
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>将托管 macOS 设备的错误提交给适当人员
 
@@ -42,4 +43,4 @@ ms.lasthandoff: 12/12/2017
 
 如果需要将诊断报告发送给开发公司门户应用的 Microsoft 团队，则需提供一些有助于尝试诊断根本原因的信息。 请使用<a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">此电子邮件模板</a>将其发送给 Microsoft，而不是发送给公司支持团队。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

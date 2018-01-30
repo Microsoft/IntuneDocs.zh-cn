@@ -5,7 +5,7 @@ description: "通过一系列简短的实操练习了解 Intune。"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 04852dfd9a509413dd9e532c8a464f3d02e60fd4
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 0792bc51b956f2aad634d6777b2222a9439e9538
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 可以为公司带来什么好处？
 
@@ -40,7 +40,7 @@ Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮助员工提
 * [设备注册入门](get-started-enroll.md) - 通过完整体验 iOS 设备的注册过程了解整个注册过程。
 * [应用添加入门](get-started-apps.md) - 查找应用并将应用添加到设备，以便员工完成工作。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 在开始之前，必须激活 Intune 管理员和租户帐户。 可以在[此处](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)注册这些账户。 当前订阅者还可以在实时租户中完成这些活动。 这些入门文章假设你在测试设备上执行操作。
 

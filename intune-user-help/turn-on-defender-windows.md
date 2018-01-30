@@ -4,23 +4,24 @@ description: "了解如何打开 Windows Defender 以访问公司资源。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d16dd2de-3ed5-474f-a04b-36dcd350162c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d2a7cd5cc4c201a73570f73892563463cb0bdcc7
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 942f855937152e0791a662cc5d697f62384d83a2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>打开 Windows Defender 以访问公司资源
 
@@ -48,4 +49,4 @@ ms.lasthandoff: 12/12/2017
 
 要确保防病毒定义是最新的，请转到“开始”并搜索“Windows Defender 安全中心”以进行检查。 选择“保护更新”和“检查更新”，确保设备针对病毒具有最新保护。 如果未显示此选项，请按照[启用实时保护](turn-on-defender-windows.md#turn-on-real-time-protection)中的步骤进行操作
 
-仍需要帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

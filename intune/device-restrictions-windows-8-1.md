@@ -5,7 +5,7 @@ description: "了解可用来控制 Windows 8.1 设备上的设备设置和功�
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9b31f9d4e784358d5672b0b8de68d34532b72c8
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 8.1 及更高版本设备限制设置
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/12/2017
 -   **防火墙** - 需要 Windows 防火墙处于打开状态。
 -   **用户帐户控制** - 需要在设备上使用用户帐户控制 (UAC)。
 
-## <a name="password"></a>Password
+## <a name="password"></a>密码
 -   **所需密码类型** - 需要最终用户输入密码才能访问设备。
 -   **最短密码长度** - 配置密码所需的最小长度（以字符计算）。
 -   **擦除设备前的登录失败次数** - 如果登录尝试失败达到此次数，则擦除设备。

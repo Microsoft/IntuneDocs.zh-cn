@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 注销当前的 iOS 设备用户。"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f02e4fb0da11a251c33c6ee1e44ba07848f69f9b
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 5e59eee3660f56fdd967237563e69324b8307e3a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>注销 Intune 管理的 iOS 设备上的当前用户
 

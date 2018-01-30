@@ -4,21 +4,22 @@ description: "了解如何解决在 iOS 设备上发现的威胁。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: eaccd9c0-cd46-48e2-8675-4c022c74f672
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 32bd0436c6d883bb351a4e00bda181ab820a94d4
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 63d5ee7b71f5b2c5423cd2cdb2b88a43ad2c715e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>需要解决 Zimperium zIPS 发现的威胁
 
@@ -38,4 +39,4 @@ Zimperium zIPS 在设备上发现潜在威胁，必须解决该问题才能重�
 
 此时可卸载该应用，随后即可立即重新访问公司电子邮件和数据。 如果不卸载该应用，则无法访问电子邮件和数据，直到卸载该应用。
 
-仍需要帮助？ 请与 IT 管理员联系。有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与 IT 管理员联系。有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

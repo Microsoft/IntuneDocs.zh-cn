@@ -4,23 +4,24 @@ description: "介绍公司门户网站并提供指向最终用户可在网站上
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6448e9986bdb98e21f3b9547ecbbf9b8c3ed8871
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 824c8d97195459289bf5944c8490f1363ece3c93
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司门户网站
 [公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)是一个网页，最终用户可将其用于管理已在 Intune 中注册的计算机和设备。
@@ -45,4 +46,4 @@ ms.lasthandoff: 12/12/2017
 
 -   远程管理电脑（仅适用于电脑）
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

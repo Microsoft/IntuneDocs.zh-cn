@@ -4,23 +4,24 @@ description: "介绍如何通过公司门户应用在 Intune 中注册 macOS 设
 keywords: "Mac OS X、macOS、OS X"
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 0da2ba5d842a004f167a4bbeca62d4b00f756612
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 12/12/2017
 
 7. 完成安装后，打开“应用程序”文件夹或“Launchpad”，然后打开“公司门户”。
 
-8. Mac 会显示一条消息：“CompanyPortal”是从 Internet 下载的应用程序。是否确认要打开? 单击“打开”。
+8. Mac 会显示一条消息：“CompanyPortal”是从 Internet 下载的应用程序。是否确认要打开? 单击“打开” 。
 
   > [!NOTE]
   > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 如果计算机拒绝打开“公司门户”应用，请尝试[关闭 Gatekeeper](https://support.apple.com/HT202491)，然后打开该应用。
@@ -62,4 +63,4 @@ ms.lasthandoff: 12/12/2017
 
 11. Mac 随即开始注册到管理系统。 在此期间，系统可能会提示提供计算机的登录信息。 注册需要几分钟时间。 在此期间，可在计算机上执行其他操作。 完成公司访问设置后，会显示一条消息，通知操作已完成。
 
-仍需要帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。
+仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。

@@ -5,7 +5,7 @@ description: "了解如何创建 Intune 设备配置的配置文件。"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 05/16/2017
 ms.topic: article
 ms.prod: 
@@ -15,21 +15,21 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab7a2f905a7eec33204516e07f0a5d2cda4e1d95
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 5afc6896883e6be67780c2314107c15633fd237a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建设备配置文件
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“配置设备”。
-2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
+2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 2. 在显示配置文件列表的边栏选项卡上，选择“创建配置文件”。
 3. 在“创建配置文件”边栏选项卡上，指定以下项目：
     - **名称** - 输入新配置文件的描述性名称。

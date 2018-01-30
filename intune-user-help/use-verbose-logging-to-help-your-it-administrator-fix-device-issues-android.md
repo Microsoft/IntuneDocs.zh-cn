@@ -4,23 +4,24 @@ description: "通过使用详细日志记录帮助公司支持人员修复设备
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 055bfcf088d46c1010206bd1e77ffbad76611c7c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 37272f31597b907f19834368747743c1f70d7d07
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>利用详细日志记录帮助公司支持人员修复设备问题
 
@@ -28,4 +29,4 @@ ms.lasthandoff: 12/12/2017
 
 若要打开或关闭“详细日志记录”，请使用工作或学校凭据登录到公司门户应用，点击“设置”，然后点击“详细日志记录”旁边的开/关按钮。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

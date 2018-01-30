@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
-ms.date: 02/23/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 3926b64bacb1acde29146aed9d3030729e8b9b17
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>从公司门户网站远程锁定设备
 
@@ -33,14 +34,13 @@ ms.lasthandoff: 12/12/2017
 * Android
 * iOS
 * macOS
+* Windows 10
 * Windows 10 移动版（设备已设置密码）
 * Windows Phone 8.1（设备已设置密码）
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>使用“远程锁定”锁定你的设备
 
-1.  在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
-
-  ![公司门户网站的图像，屏幕左侧有展开的侧菜单，其中包括“主页”、“所有应用”、“我的设备”、“支持人员”和“注销”按钮。](/media/iwp-expanded-sidebar.png)
+1.  在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上，点击“菜单”按钮，然后选择“我的设备”。
 
 2. 在“我的设备”页上，选择想要锁定的设备名称。
 
@@ -65,4 +65,4 @@ ms.lasthandoff: 12/12/2017
 
 如果使用“远程锁定”后找到了设备并希望对其进行解锁，则只需输入你的密码。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

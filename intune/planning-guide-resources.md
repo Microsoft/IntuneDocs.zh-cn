@@ -4,7 +4,7 @@ description: "规划模板和其他 Intune 信息的链接，这些信息可能�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 38830370d3bac63e1c32b12f481db5be39de971d
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>规划 Intune 部署的其他资源
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/01/2017
 |部署规划  |设计与实现   |测试与验证 |
 |-----|----- |------|
 | 部署目标 |当前环境|功能验证测试|
-| 部署目的 |设备|IT 管理员场景验证测试|
+| 部署宗旨 |设备|IT 管理员场景验证测试|
 | 部署难题 |条款和条件|最终用户场景验证测试|
 | 用例场景 |配置策略| |
 | 用例场景要求 |证书配置文件| |

@@ -4,21 +4,22 @@ description: "了解如何解决 Mobile Protect 在 Android 上发现的威胁�
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 8a8a2d6669e1360ee033744120af415d7310c346
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: c75e65860f51f6923901f7578d3ca52ed04b6bf1
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>解决 SandBlast Mobile Protect 发现的威胁
 
@@ -38,4 +39,4 @@ SandBlast Mobile Protect 在设备上发现潜在威胁，必须解决该问题�
 
 此时可卸载该应用，随后即可立即重新访问公司电子邮件和数据。 如果不卸载该应用，则无法访问电子邮件和数据，直到卸载该应用。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

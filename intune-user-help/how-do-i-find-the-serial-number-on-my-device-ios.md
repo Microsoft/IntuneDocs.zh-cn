@@ -1,26 +1,27 @@
 ---
-title: "如何在 iOS 设备上查找序列号？ |Microsoft Docs"
+title: "如何在 iOS 设备上查找序列号？ | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6c4fedc-47b6-44b1-8c59-2fb81417f978
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 19f121e8dc1f8604f4eee77f1a6da7d3b4d5496c
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: f934a1b1f08e4860b317488281bea72728317a2a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>如何在设备上查找序列号？
 
@@ -30,4 +31,4 @@ ms.lasthandoff: 12/12/2017
 2. 点击“设置”应用，然后点击“常规”。
 3. 点击“关于”，然后滚动到“序列号”。
 
-仍需要帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
