@@ -5,9 +5,9 @@
 ## [常见方案](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
 
-# [开始使用](get-started/get-started.md)
+# [入门](get-started/get-started.md)
 ## [设置 Intune](/intune/setup-steps?toc=/intune-classic/toc.json)
-### 先决条件
+### 先決條件
 #### [支持的设备](/intune/supported-devices-browsers?toc=/intune-classic/toc.json)
 #### [网络使用情况](/intune/network-bandwidth-use?toc=/intune-classic/toc.json)
 ### [登录到 Intune](/intune/account-sign-up?toc=/intune-classic/toc.json)
@@ -142,7 +142,7 @@
 ## [部署应用](deploy-use/deploy-apps.md)
 ### [将应用部署到设备和电脑](deploy-use/deploy-apps-in-microsoft-intune.md)
 ### [将应用部署到 Android for Work 设备](deploy-use/android-for-work-apps.md)
-### [监视应用](deploy-use/monitor-apps-in-microsoft-intune.md)
+### [监视器应用](deploy-use/monitor-apps-in-microsoft-intune.md)
 ### [管理批量采购的应用](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [管理批量采购的 iOS 应用](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 #### [管理批量采购的 Windows 应用](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
@@ -157,7 +157,7 @@
 ## [保护应用和数据](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [设备合规性策略](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [创建设备合规性策略](deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Outlook Web Access (OWA)](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](deploy-use/afw-compliance-policy-settings-in-microsoft-intune.md)
 #### [iOS](deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows 和 Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -238,7 +238,7 @@
 ## [Intune App SDK Cordova 插件](/intune/app-sdk-cordova?toc=/intune-classic/toc.json)
 ## [Intune App SDK Xamarin 组件](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
-# [故障排除](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
+# [疑难解答](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [如何获取支持](/intune/get-support?toc=/intune-classic/toc.json)
 ## [使用报表监视 Intune](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection 疑难解答](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
