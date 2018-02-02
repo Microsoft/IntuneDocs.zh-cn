@@ -5,8 +5,8 @@ description: "了解如何使用 Intune 远程锁定你管理的设备。"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 11/21/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d27b709ba8d4ff1d8fb4417a217ad008c19c36
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: ecd7fa03b35e91b5a77906858fb251348796704d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>使用 Intune 远程锁定受管理设备
 
@@ -29,14 +29,19 @@ ms.lasthandoff: 01/12/2018
 
 ## <a name="supported-platforms"></a>受支持的平台
 
-- Windows - 不支持
-- Windows Phone - Windows Phone 8.1 及更高版本支持
-- iOS - 支持
-- macOS - 支持
+以下平台支持远程锁定：
 
-    > [!Note]  
-    > 设置 6 位数的恢复 PIN。 锁定时，“设备概述”边栏选项卡会显示 PIN，直到发送另一个设备操作。
-- Android - 支持
+|平台|支持状态|
+|---|---|
+|Android|是|
+|iOS|是|
+|macOS|是|
+|Windows 10|是|
+|Windows 10 移动版|是|
+|Windows Phone|是，适用于 Windows Phone 8.1 和更高版本|
+
+> [!NOTE]  
+> 对于 macOS 设备，请设置一个 6 位数的恢复 PIN。 锁定时，“设备概述”边栏选项卡会显示 PIN，直到发送另一个设备操作。
 
 ## <a name="how-to-remote-lock-a-device"></a>如何远程锁定设备
 

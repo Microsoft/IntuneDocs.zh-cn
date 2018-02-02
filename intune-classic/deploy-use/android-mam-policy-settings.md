@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9707858ba2b0462edade4847dba09404a895fb34
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 10/10/2017
 
   ## <a name="data-transfer-exemptions"></a>数据传输豁免
 
-  有一些豁免应用和平台服务，Intune 应用保护策略可能会允许向其或从其传输数据。 例如，Android 上所有支持 Intune 的应用都必须能够将数据传至 Google 文本到语音转换或从其接收数据，以便可以朗读移动设备屏幕上的文本。 此列表可能会更改以反映有利于安全工作效率的服务和应用。
+  有一些豁免应用和平台服务，Intune 应用保护策略可能会允许向其或从其传输数据。 例如，Android 上所有 Intune 托管的应用都必须能够将数据传输至 Google 文本到语音转换或从中接收数据，这样使移动设备屏幕上的文本可以被朗读出来。 此列表可能会更改以反映有利于安全工作效率的服务和应用。
 
   ### <a name="full-exemptions"></a>完全豁免
 

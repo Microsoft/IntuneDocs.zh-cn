@@ -4,7 +4,7 @@ description: "通过本主题中提供的信息了解不更改应用代码本身
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
+ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -125,7 +125,7 @@ ms.lasthandoff: 01/19/2018
 
   ![在 Keychain Access 应用中向证书颁发机构请求证书](./media/iOS-signing-cert-6.png)
 
-12. 返回到 Apple 开发者站点。 单击“继续”。 然后上传 CSR 文件。
+12. 返回到 Apple 开发者站点。 单击“继续” 。 然后上传 CSR 文件。
 
 13. Apple 将生成签名证书。 下载签名证书并将其保存到 macOS 计算机上容易记住的位置。
 
@@ -155,7 +155,7 @@ ms.lasthandoff: 01/19/2018
 
   ![选择内部预配配置文件](./media/iOS-provisioning-profile-1.png)
 
-5. 单击“继续”。 请确保将以前生成的签名证书链接到预配配置文件。
+5. 单击“继续” 。 请确保将以前生成的签名证书链接到预配配置文件。
 
 6. 请按照此步骤将配置文件（扩展名为 .mobileprovision）下载到 macOS 计算机。
 
@@ -172,6 +172,9 @@ ms.lasthandoff: 01/19/2018
 3. 选择“同意”接受 EULA，这会将包装载到计算机。
 
 4.  打开 **IntuneMAMPackager** 文件夹，并将其内容保存到你的 macOS 计算机。 你现已准备好运行应用包装工具。
+
+> [!NOTE]
+> Intune MAM 包生成工具可能单独装载到 macOS 计算机上并可能导致运行包装命令时出现“找不到文件”的错误。 因此，移动 IntuneMAMPackager 文件夹的内容将使包的路径能在打包过程中被找到。
 
 ## <a name="run-the-app-wrapping-tool"></a>运行应用包装工具
 
@@ -195,7 +198,7 @@ ms.lasthandoff: 01/19/2018
 ### <a name="command-line-parameters"></a>命令行参数
 可将以下命令行参数用于应用包装工具：
 
-|属性|如何使用它|
+|屬性|如何使用它|
 |---------------|--------------------------------|
 |**-i**|`<Path of the input native iOS application file>`。 文件名必须以 .app 或 .ipa 结尾。 |
 |**-o**|`<Path of the wrapped output application>` |
@@ -214,7 +217,7 @@ ms.lasthandoff: 01/19/2018
 
 在 IntuneMAMPackager/Contents/MacOS 文件夹中，使用文本编辑器或 Xcode 打开 `Parameters.plist`（一个空白 plist 模板）。 为以下项输入参数：
 
-| Plist 项 |  默认值| 注意 |
+| Plist 项 |  默认值| 附註 |
 |------------------|--------------|-----|
 | 输入应用程序包路径  |empty| 与 -i 相同|
 | 输出应用程序包路径 |empty| 与 -o 相同|
@@ -316,7 +319,7 @@ ms.lasthandoff: 01/19/2018
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>适用于 iOS 的应用包装工具支持的功能
 
-|功能|描述|推荐指南|
+|功能|说明|推荐指南|
 |--------------|---------------|------------------------|
 |应用组|使用应用组可让多个应用访问共享容器，并支持应用之间的其他进程间通信。<br /><br />若要启用应用组，请打开“功能”窗格，并单击“应用组”中的“开”。 你可以添加应用组，也可以选择现有应用组。|使用应用组时，请使用反向 DNS 表示法：<br /><br />*group.com.companyName.AppGroup*|
 |后台模式|启用后台模式后，iOS 应用可以在后台继续运行。||

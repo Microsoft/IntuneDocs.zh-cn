@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
 
 **什么是 MAM？** [Intune 移动应用程序管理](/intune/app-lifecycle)指的是 Intune 管理功能套件，通过它能够为用户发布、推送、配置、保护、监视和更新移动应用。
 
-**使用 MAM 应用保护有什么好处？** MAM 可保护应用程序内组织的数据。 通过 MAM-WE，可以在几乎任何设备上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。 许多生产型应用，例如 Microsoft Office 应用，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
+**使用 MAM 应用保护有什么好处？** MAM 可保护应用程序内组织的数据。 通过 MAM-WE，可以在几乎任何设备上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。 许多生产型应用，例如 Microsoft Office 应用，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Intune 托管应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
 
 **MAM 支持哪些设备配置？** Intune MAM 支持两种配置：
   1. **Intune MDM + MAM**：这是首次启动 MAM 时它所支持的第一个配置。 IT 管理员仅可在已进行 Intune 移动设备管理 (MDM) 注册的设备上使用 MAM 和应用保护策略管理应用。 若要使用 MDM + MAM 管理应用，客户应使用 https://manage.microsoft.com 上的 Intune 独立控制台。
@@ -48,9 +48,9 @@ ms.lasthandoff: 01/11/2018
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>可使用应用保护策略进行管理的应用
 
-**可通过应用保护策略管理哪些应用？** 已通过 [Intune App SDK](/intune/app-sdk) 启用的或通过 [Intune 应用包装工具](/intune/apps-prepare-mobile-application-management)包装的任何应用都可使用 Intune 应用保护策略进行管理。 请参阅可供公众使用的 [Intune 启用的应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
+**可通过应用保护策略管理哪些应用？** 已通过 [Intune App SDK](/intune/app-sdk) 启用的或通过 [Intune 应用包装工具](/intune/apps-prepare-mobile-application-management)包装的任何应用都可使用 Intune 应用保护策略进行管理。 请参阅可供公众使用的 [Intune 托管应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的官方列表。
 
-**在 Intune 启用的应用上使用应用保护策略的基本要求有哪些？**
+**在 Intune 托管应用上使用应用保护策略的基本要求有哪些？**
   1. 最终用户必须具有 Azure Active Directory (AAD) 帐户。 请参阅[添加用户并授予对 Intune 的管理权限](/intune/users-permissions-add)，了解如何在 Azure Active Directory 中创建 Intune 用户。
 
   2. 最终用户必须具有分配给其 Azure Active Directory 帐户的 Microsoft Intune 许可证。 请参阅[管理 Intune 许可证](/intune/licenses-assign)，了解如何将 Intune 许可证分配给最终用户。
@@ -136,7 +136,7 @@ IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设�
 
 **为什么本地服务不适用于 Intune 保护的应用？** Intune 应用保护要求用户的身份在应用程序与 Intune App SDK 之间保持一致。 保证此种一致的唯一方法是通过新式身份验证。 在某些情况下应用可能适用于本地配置，但它们既不一致也无法得到保证。
 
-**是否有一种安全的方法可以从管理的应用中打开 Web 链接？** 可以！ IT 管理员可以为 [Intune Managed Browser 应用](../deploy-use/manage-internet-access-using-managed-browser-policies.md)（一种由 Microsoft Intune 开发的可使用 Intune 轻松管理的 Web 浏览器）部署和设置应用保护策略。 IT 管理员可以要求 Intune 启用的应用中所有 Web 链接均使用 Managed Browser 应用打开。
+**是否有一种安全的方法可以从管理的应用中打开 Web 链接？** 可以！ IT 管理员可以为 [Intune Managed Browser 应用](../deploy-use/manage-internet-access-using-managed-browser-policies.md)（一种由 Microsoft Intune 开发的可使用 Intune 轻松管理的 Web 浏览器）部署和设置应用保护策略。 IT 管理员可以要求 Intune 托管应用中的所有 Web 链接均使用 Managed Browser 应用打开。
 
 
 ## <a name="app-experience-on-android"></a>Android 上的应用体验

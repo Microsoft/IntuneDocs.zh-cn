@@ -4,8 +4,8 @@ description: "开始使用 Intune 订阅的要求和先决条件"
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54f2bdd4a415cb8a4432a8bdcf93c56ba995c201
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-up-intune"></a>设置 Intune
 
@@ -47,3 +47,4 @@ ms.lasthandoff: 11/01/2017
 | 8 | [配置设备](device-profiles.md) - 设置用于管理设备设置的配置文件。 设备配置文件可预配置电子邮件、VPN、Wi-Fi 和设备功能的设置。 它们还可对设备进行限制，以帮助同时保护设备和数据。  |
 | 9 | [自定义公司门户](company-portal-app.md) - 自定义用户在注册设备和安装应用时使用的 Intune 公司门户。 公司门户应用中和 Intune 公司门户网站上均显示这些设置。 |
 | 10 | [启用设备注册](mdm-authority-set.md) - 通过设置 MDM 机构并启用特定平台实现对 iOS、Windows、Android 和 Mac 设备的 Intune 管理。 |
+| 11 | [配置应用策略](app-protection-policy.md) - 基于 Microsoft Intune 中的应用保护策略提供特定设置。 |

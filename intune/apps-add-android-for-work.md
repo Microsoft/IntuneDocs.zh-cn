@@ -5,7 +5,7 @@ description: "使用本主题可从 Google Play for Work 商店同步应用，�
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 06/13/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 将应用分配到 Android for Work 设备
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 1. 转到 Google Play 开发人员控制台 [play.google.com/apps/publish](https://play.google.com/apps/publish)。
 2. 通过用于在 Intune 与 Android for Work 之间配置连接的同一个帐户进行登录。 如果是首次登录，则必须注册，然后支付费用以成为 Google 开发人员计划的成员。
 3. 在控制台中，选择**“添加新应用程序”**。
-4. 采用与将任何应用发布到 Google Play 商店相同的方式，上传应用并提供有关应用的信息。 但是，你必须选择设置“仅使此应用程序可供我的组织(<组织名称>)使用”**：<br>
+4. 采用与将任何应用发布到 Google Play 商店相同的方式，上传应用并提供有关应用的信息。 但是，必须选择设置“仅使此应用程序可供我的组织使用(<组织名称>)”：<br>
   ![用于仅向组织发布应用的选项](media/restrict.png)<br>
 此操作可确保应用只能供你的组织使用，而在公开的 Google Play 商店中不可用。
 有关如何上传和发布 Android 应用的详细信息，请参阅 [Google 开发人员控制台帮助](https://support.google.com/googleplay/android-developer/answer/113469)。
