@@ -5,7 +5,7 @@ description: "了解如何为 Intune 托管的 Android 设备创建每应用 VPN
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5b8e85ded2ea515f361c91c61744956b8112757
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 46555f776ff93207f4672dc5d97abbaa2323b234
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件
 
@@ -37,10 +37,10 @@ ms.lasthandoff: 12/12/2017
 ## <a name="step-1-create-a-vpn-profile"></a>步骤 1：创建 VPN 配置文件
 
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
+2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 2. 在配置文件列表边栏选项卡中，选择“创建配置文件”。
 3. 在“创建配置文件”边栏选项卡上，输入 VPN 配置文件的“名称”和可选“说明”。
 4. 从“平台”下拉列表中，选择“Android”。
@@ -51,10 +51,10 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>步骤 2：创建自定义配置策略
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
+2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
 3. 在“配置文件”边栏选项卡上，单击“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入自定义配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择“Android”。
@@ -63,7 +63,7 @@ ms.lasthandoff: 12/12/2017
 3. 在“自定义 OMA-URI 设置”边栏选项卡上，选择“添加”。
     - 输入设置名称。
     - 为“数据类型”，指定“字符串”。
-    - 为 **OMA-URI** 指定以下字符串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中 *Name* 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
+    - 为“OMA-URI”指定以下字符串：./Vendor/MSFT/VPN/Profile/Name/PackageList，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
     - 对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
 
 ![Android per-app VPN 自定义策略示例](./media/android_per_app_vpn_oma_uri.png)
@@ -74,7 +74,7 @@ ms.lasthandoff: 12/12/2017
   1.    在“自定义 OMA-URI 设置”边栏选项卡上，选择“添加”。
   2.    输入设置名称。
   3.    为“数据类型”，指定“字符串”。
-  4.    对于 **OMA-URI**，使用以下字符串：**./Vendor/MSFT/VPN/Profile/*Name*/Mode**，其中 *Name* 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为**./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
+  4.    对于 OMA-URI，使用以下字符串：./Vendor/MSFT/VPN/Profile/Name/Mode，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为**./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
   5.    对于**值**，输入 **BLACKLIST** 或 **WHITELIST**。
 
 

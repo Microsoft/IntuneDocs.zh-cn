@@ -5,7 +5,7 @@ description: "部署 Managed Browser 应用程序，以限制 Web 浏览和到�
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7619efc305881f1ad56a7c14e5d92c05fb0c6d77
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -96,7 +96,7 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 - 用户下载并登录到 Microsoft Outlook 应用。 将自动应用 Intune 应用保护策略。 它们对保存的数据进行加密，并阻止用户将公司文件传输到设备上的非托管应用或位置。 当用户接下来点击 Outlook 中 intranet 站点的链接时，可以指定在 Managed Browser 应用中而不是在另一个浏览器中打开链接。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问该网站且 Outlook 中的链接也按预期工作。
 - 远程用户打开 Managed Browser 应用程序，并使用内部 URL 导航到 intranet 站点。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问。
 
-### <a name="before-you-start"></a>开始之前
+### <a name="before-you-start"></a>准备工作
 
 - 通过 Azure AD 应用程序代理设置内部应用程序。
     - 要配置应用程序代理和发布应用程序，请参阅[设置文档]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
@@ -148,7 +148,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |||
 |-|-|
 |Key|值|
-|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>URL1&#124;URL2&#124;URL3<br>http://.contoso.com/&#124;https://.bing.com/&#124;https://expenses.contoso.com**|
+|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>示例：<br><br>URL1&#124;URL2&#124;URL3<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >不要同时指定这两个键。 如果两个键同时针对同一个用户，则使用允许键，因为它是限制性最强的选项。
@@ -167,7 +167,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
     -   对于 https，使用端口 443
 
-    不支持对端口号使用通配符。 例如，**http&colon;//www&period;contoso&period;com:*;** 和 **http&colon;//www&period;contoso&period;com: /*;** 不受支持。
+    不支持对端口号使用通配符。 例如，不支持 http&colon;//www&period;contoso&period;com:*; 和 http&colon;//www&period;contoso&period;com: /*;。
 
 -   使用下表了解指定 URL 时可以使用的允许模式：
 

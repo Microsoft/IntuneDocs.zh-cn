@@ -4,7 +4,7 @@ description: "列出用于 Intune 设备管理支持的设备平台和浏览器"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -14,28 +14,28 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
+ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="supported-devices-and-browsers"></a>支持的设备和浏览器
+# <a name="supported-operating-systems-and-browsers"></a>支持的操作系统和浏览器
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-本文适用于负责企业中的设备管理的系统管理员。 有关在手机上安装 Intune 的帮助，请参阅[使用托管设备来完成工作](/intune-user-help/company-portal-frequently-asked-questions)。
+本文适用于负责企业中的设备管理的系统管理员。 有关在设备上安装 Intune 的帮助，请参阅[使用托管设备来完成工作](/intune-user-help/company-portal-frequently-asked-questions)。
 
 开始设置 Microsoft Intune 之前，请查看以下要求：
 
-- [支持的设备和计算机](#intune-supported-devices)
+- [支持的操作系统](#intune-supported-operating-systems)
 - [支持 Intune 的 Web 浏览器列表](#intune-supported-web-browsers)
 
 还应熟悉 [Intune 网络带宽使用情况](network-bandwidth-use.md)（[经典门户](/intune-classic/get-started/network-bandwidth-use)）。
 
-## <a name="intune-supported-devices"></a>支持 Intune 的设备
+## <a name="intune-supported-operating-systems"></a>支持 Intune 的操作系统
 
-使用 Intune 移动设备管理，可管理以下设备：
+可以管理运行以下操作系统的设备：
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
@@ -85,7 +85,6 @@ ms.lasthandoff: 01/04/2018
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune 不能用于管理 Windows Server 操作系统。
 
 ### <a name="windows-pc-software-client"></a>Windows 电脑软件客户端
 

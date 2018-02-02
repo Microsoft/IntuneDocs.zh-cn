@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 在与 Microsoft PIN 重置服务集成�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 144313b63c1a6349a59220c901072dbf9d4c6f43
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: b6149eeb3da2da3be3a137845eee5a0a515a4e39
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>使用 Intune 在与 Microsoft PIN 重置服务集成的 Windows 设备上重置密码
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/12/2018
 - Android - 不支持
 
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
 必须先将 PIN 重置服务载入 Intune 租户并配置所管理的设备，才能以远程方式在可管理的 Windows 设备上重置密码。 请按照这些说明设置：
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 01/12/2018
 若要在所管理的 Windows 设备上配置 PIN 重置，请使用 [Intune Windows 10 自定义设备策略](custom-settings-windows-10.md)来启用这项功能。 使用以下 Windows 策略配置服务提供程序 (CSP) 来配置策略：
 
 
-- 对于设备 - **./Device/Vendor/MSFT/PassportForWork/租户 ID**/Policies/EnablePinRecovery
+- **对于设备** - ./Device/Vendor/MSFT/PassportForWork/租户 ID/Policies/EnablePinRecovery
 
 “租户 ID” 是指 Azure Active Directory 的 Directory ID，可从 Azure Active Directory 的“属性”页获取。
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 01/12/2018
 
 ## <a name="steps-to-reset-the-passcode"></a>重置密码的步骤
 
-1. 登录 Azure 门户。
+1. 登录到 Azure 门户中。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在 Intune 边栏选项卡上，选择“设备”。
 4. 在“设备”边栏选项卡上，选择“管理” > “所有设备”。

@@ -5,7 +5,7 @@ description: "了解如何使用 Intune 更轻松地在 Windows 10 设备上安�
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版 2016 应用分配到 Windows 10 设备
 
@@ -35,14 +35,14 @@ ms.lasthandoff: 12/01/2017
 - Intune 仅支持从 Office 365 专业增强版 2016 套件添加 Office 应用。
 - 当 Intune 安装应用套件时，如果任何 Office 应用处于打开状态，最终用户可能会丢失未保存文件中的数据。
 - Windows 10S 设备不支持此安装方法。
-- 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Windows 应用商店中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。
+- 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Microsoft Store 中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。
 
 
 ## <a name="get-started"></a>入门
 
-1.  登录到 Azure 门户中。
+1.  登录 Azure 门户。
 2.  选择“更多服务” > “监视 + 管理” > “Intune”。
-3.  在“Intune”边栏选项卡上，选择“移动应用”。
+3.  在 Intune 边栏选项卡上，选择“移动应用”。
 4.  在“移动应用”工作负荷中，选择“管理” > “应用”。
 5.  在应用列表的上方，选择“添加”。
 6.  在“添加应用”边栏选项卡上，选择“Office 365 专业增强版套件(Windows 10)”。
@@ -63,7 +63,7 @@ ms.lasthandoff: 12/01/2017
 在此步骤中，提供有关该应用套件的信息。 此信息有助于在 Intune 中识别它，也有助于用户在公司门户应用中找到它。
 
 1.  在“添加应用”边栏选项卡上，选择“应用套件信息”。
-2.  在“应用套件信息”边栏选项卡上，指定以下信息： 
+2.  在“应用套件信息”边栏选项卡上，指定以下信息：
     - **套件名称** - 输入应用套件的名称，该名称将显示在公司门户中。 请确保使用的所有套件名称都是唯一的。 如果同一应用套件名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - **套件描述** - 为应用套件输入描述。 例如，可以列出已选择要包括的应用。
     - **发行者** — 输入应用的发行者名称。
@@ -82,9 +82,9 @@ ms.lasthandoff: 12/01/2017
 在此步骤中，配置应用套件的安装选项。 这些设置适用于添加到该套件的所有应用。
 
 1.  在“添加应用”边栏选项卡上，选择“应用套件设置”。
-2.  在“应用套件设置”边栏选项卡上，指定以下信息： 
+2.  在“应用套件设置”边栏选项卡上，指定以下信息：
     - **Office 版本** - 选择是否想要分配 32 位或 64 位版本的 Office。 可以在 32 位和 64 位设备上安装 32 位版本，但只能在 64 位设备上安装 64 位版本。
-    - **更新频道** - 选择在设备上更新 Office 的方式。 有关不同更新通道的信息，请参阅 Office 365 专业增强版的更新频道概述。 选择： 
+    - **更新频道** - 选择在设备上更新 Office 的方式。 有关不同更新通道的信息，请参阅 Office 365 专业增强版的更新频道概述。 选择：
         - **当前**
         - **延迟**
         - **首次发布当前**
@@ -104,19 +104,19 @@ ms.lasthandoff: 12/01/2017
 
 下表列出了用户可能会遇到的常见错误代码及其含义。
 
-### <a name="status-for-office-csp"></a>Office CSP 的状态： 
+### <a name="status-for-office-csp"></a>Office CSP 的状态：
 
 ||||
 |-|-|-|
 |状态|阶段|描述|
 |1460 (ERROR_TIMEOUT)|下载|下载 Office 部署工具失败|    
-|13 (ERROR_INVALID_DATA)|-|无法验证下载的 Office 部署工具的签名| 
+|13 (ERROR_INVALID_DATA)|-|无法验证下载的 Office 部署工具的签名|
 |来自 CertVerifyCertificateChainPolicy 的错误代码|-|下载的 Office 部署工具的证书检查失败|    
-|997|WIP|安装| 
+|997|WIP|安装|
 |0|安装后|安装成功|    
 |1603 (ERROR_INSTALL_FAILURE)|-|任何先决条件检查失败，如：<br>- SxS（尝试在安装 2016 MSI 时安装）<br>- 版本不匹配<br>- 等等。|     
 |0x8000ffff (E_UNEXPECTED)|-|尝试在计算机上没有即点即用 Office 时卸载。|    
-|17002|-|未能完成方案（安装）。 可能的原因：<br>- 用户取消了安装<br>- 另一个安装取消了安装<br>- 安装期间磁盘空间不足<br>- 未知语言 ID| 
+|17002|-|未能完成方案（安装）。 可能的原因：<br>- 用户取消了安装<br>- 另一个安装取消了安装<br>- 安装期间磁盘空间不足<br>- 未知语言 ID|
 |17004|-|未知 SKU|   
 
 
@@ -124,15 +124,15 @@ ms.lasthandoff: 12/01/2017
 
 |||||
 |-|-|-|-|
-|方案|返回代码|UI|备注| 
-|没有可用的即点即用安装时卸载工作量|-2147418113、0x8000ffff 或 2147549183|错误代码：30088-1008<br>错误代码：30125-1011 (404)|Office 部署工具| 
-|安装 MSI 版本时安装|1603|-|Office 部署工具| 
-|用户或另一个安装取消了安装|17002|-|即点即用| 
-|尝试在安装了 32 位的设备上安装 64 位。|1603|-|Office 部署工具返回代码| 
-|尝试安装未知的 SKU（不是 Office CSP 的合法用例，因为我们只应传入有效的 SKU）|17004|-|即点即用| 
-|空间不足|17002|-|即点即用| 
-|即点即用客户端无法启动（意外）|17000|-|即点即用| 
-|即点即用客户端无法将方案加入队列（意外）|17001|-|即点即用| 
+|方案|返回代码|UI|备注|
+|没有可用的即点即用安装时卸载工作量|-2147418113、0x8000ffff 或 2147549183|错误代码：30088-1008<br>错误代码：30125-1011 (404)|Office 部署工具|
+|安装 MSI 版本时安装|1603|-|Office 部署工具|
+|用户或另一个安装取消了安装|17002|-|即点即用|
+|尝试在安装了 32 位的设备上安装 64 位。|1603|-|Office 部署工具返回代码|
+|尝试安装未知的 SKU（不是 Office CSP 的合法用例，因为我们只应传入有效的 SKU）|17004|-|即点即用|
+|空间不足|17002|-|即点即用|
+|即点即用客户端无法启动（意外）|17000|-|即点即用|
+|即点即用客户端无法将方案加入队列（意外）|17001|-|即点即用|
 
 ## <a name="next-steps"></a>后续步骤
 

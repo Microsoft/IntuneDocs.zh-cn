@@ -5,8 +5,8 @@ description: "了解获取 Apple MDM Push Certificate 以使用 Intune 管理 iO
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
-ms.date: 10/04/2017
+manager: dougeby
+ms.date: 1/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67c2cb238d354ccd9801ec0b5c9f8ccb49c6715
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 8fca2a1f32cd15752758802ee6ae44b8ae33b696
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>获取 Apple MDM Push Certificate
 
@@ -56,7 +56,10 @@ Apple MDM Push Certificate 有效期为一年，且必须手动续订才能维�
 2. 选择“下载 CSR”，将请求文件下载到本地并保存。 此文件用于从 Apple Push Certificate 门户请求信任关系证书。
 3. 找到要续订的证书并选择“续订”。
 4. 在“续订 Push Certificate”屏幕上，提供备注以便在将来识别证书，选择“选择文件”浏览到下载的新请求文件，然后选择“上传”。
-5. 在“确认”屏幕上，选择“下载”并本地保存 .pem 文件。
-6. 在 Azure 门户中，依次选择“Apple MDM Push Certificate”浏览图标、已从 Apple 下载的 .pem 文件和“上传”。
+   > [!TIP]
+   > 可以按一个证书的 UID 识别它。 在证书详细信息中检查“使用者 ID”以找到 UID 的 GUID 部分。 或者，在已注册的 iOS 设备上，转至“设置” > “常规” > “设备管理” > “管理配置文件” > “更多详细信息” > “管理配置文件”。 第二行项“主题”中包含可以匹配 Apple Push Certificates 门户中的证书的唯一 GUID。
+ 
+6. 在“确认”屏幕上，选择“下载”并本地保存 .pem 文件。
+7. 在 Azure 门户中，依次选择“Apple MDM Push Certificate”浏览图标、已从 Apple 下载的 .pem 文件和“上传”。
 
 Apple MDM Push Certificate 显示“激活”，有效期为 365 天。

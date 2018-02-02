@@ -1,11 +1,11 @@
 ---
-title: "Intune 网络带宽使用"
-description: "Intune 网络带宽使用"
+title: "Intune 网络配置要求和带宽"
+description: 
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/16/2018
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f2055a0949921b52937af18bf1cd73286bf046cf
-ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
+ms.openlocfilehash: 29ea491ab176a9bf2237a4e7546131945ad2dab7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="intune-network-bandwidth-use"></a>Intune 网络带宽使用
+# <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 网络配置要求和带宽
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -41,11 +41,11 @@ ms.lasthandoff: 01/17/2018
 |策略代理|3 MB|**一次**<br /><br />如果此内容类型存在更新，还可能有额外的下载。|
 |Remote Assistance via Microsoft Easy Assist 代理|6 MB|**一次**<br /><br />如果此内容类型存在更新，还可能有额外的下载。|
 |每天的客户端操作|6 MB|**每天**<br /><br />Intune 客户端定期与 Intune 服务通信以检查更新和策略，并向服务报告客户端的状态。|
-|Endpoint Protection 恶意软件定义更新|变化不定<br /><br />通常 40 KB 至 2 MB|**每天**<br /><br />最多一天三次。|
+|Endpoint Protection 恶意软件定义更新|多种多样<br /><br />通常 40 KB 至 2 MB|**每天**<br /><br />最多一天三次。|
 |Endpoint Protection 引擎更新|5 MB|**每月**|
-|软件更新|变化不定<br /><br />大小取决于你部署的更新。|**每月**<br /><br />通常，软件更新在每月的第二个星期二发布。<br /><br />新注册或部署的计算机在下载一整套以前发布的更新时可能会使用更多网络带宽。|
+|软件更新|多种多样<br /><br />大小取决于你部署的更新。|**每月**<br /><br />通常，软件更新在每月的第二个星期二发布。<br /><br />新注册或部署的计算机在下载一整套以前发布的更新时可能会使用更多网络带宽。|
 |Service Pack|变化不定<br /><br />大小对于你部署的每个 Service Pack 各不相同。|**变化不定**<br /><br />取决于你何时部署 Service Pack。|
-|软件分发|变化不定<br /><br />大小取决于你部署的软件。|**变化不定**<br /><br />取决于你何时部署软件。|
+|软件分发|多种多样<br /><br />大小取决于你部署的软件。|**变化不定**<br /><br />取决于你何时部署软件。|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>减少网络带宽使用的方式
 可以使用下列一种或多种方法来减少 Intune 客户端的网络带宽使用。
@@ -72,7 +72,7 @@ Intune 支持在 Windows 计算机上使用后台智能传输服务 (BITS) 来�
 ### <a name="use-branchcache-on-computers"></a>在计算机上使用 BranchCache
 Intune 客户端可以使用 BranchCache 来减少广域网 (WAN) 流量。 以下操作系统支持 BranchCache：
 
-- Windows 7
+- Silverlight
 - Windows 8.0
 - Windows 8.1
 - Windows 10

@@ -5,7 +5,7 @@ description: "了解如何将 iOS 应用商店应用添加到 Intune。"
 keywords: Intune
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: e013b5c995274365978ee0c2ba2f45bfeef54baa
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>如何将 iOS 应用商店应用添加到 Microsoft Intune
 
@@ -31,14 +31,16 @@ ms.lasthandoff: 01/04/2018
 >[!NOTE]
 >尽管 iOS 设备用户可删除部分内置 iOS 应用（如 Stocks 和地图），但无法使用 Intune 重新部署这些应用。 如果最终用户删除这些应用，则必须前往 App Store，并手动重新安装它们。
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
 如果应用在应用商店中是免费的，则只能使用此方法分配应用。 如果要使用 Intune 分配付费应用，请考虑使用 [iOS 批量购买计划](vpp-apps-ios.md)。
 
+>[!NOTE]
+>使用 Microsoft Intune 时建议使用 Chrome 和 Microsoft Edge 浏览器。
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>步骤 1 - 在应用商店中搜索应用
 
-1. 登录 Azure 门户。
+1. 登录到 Azure 门户中。
 2. 依次选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“管理应用”。
 4. 在“移动应用”工作负荷中，选择“管理”>“应用”。

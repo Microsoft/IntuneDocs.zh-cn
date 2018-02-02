@@ -5,7 +5,7 @@ description: "使用本主题了解如何使用  iOS Open-in 功能和移动应�
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83ef0050380b8b5e3741dc7b8ea57574df6df658
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 2d110a099b4957626d4368c9e63817674d6cfaa2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>如何管理 iOS 应用之间的数据传输
 ## <a name="manage-ios-apps"></a>管理 iOS 应用
 保护公司数据包括确保文件传输仅限于在你所管理的应用中进行。  可以通过以下方式管理 iOS 应用：
 
--   通过为应用配置应用保护策略来防止公司数据丢失，这种应用我们称为“策略托管”应用。 请参阅 [all the Intune-enlightened apps you can manage with app protection policy](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)（所有可使用应用保护策略管理并启用了 Intune 的应用）
+-   通过为应用配置应用保护策略来防止公司数据丢失，这种应用我们称为“策略托管”应用。 请参阅 [all the Intune-managed apps you can manage with app protection policy](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)（所有可使用应用保护策略管理的 Intune 托管应用）
 
 -   你还可以通过“MDM 通道”部署和管理应用。  这需要设备注册 MDM 解决方案。 可以是“策略托管”应用，也可以是其他托管应用。
 
@@ -69,9 +69,9 @@ ms.lasthandoff: 01/16/2018
 
 |第三方 MDM 提供程序| Configuration 注册表项 | 值类型 | 配置值|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | 字符串 | {UserPrincipalName}|
-|VMware AirWatch| IntuneMAMUPN | 字符串 | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | 字符串 | ${userUPN} **或** ${userEmailAddress} |
+|Microsoft Intune| IntuneMAMUPN | String | {UserPrincipalName}|
+|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
+|MobileIron | IntuneMAMUPN | String | ${userUPN} **或** ${userEmailAddress} |
 
 
 ### <a name="example-2-end-user-experience"></a>示例 2：最终用户体验示例

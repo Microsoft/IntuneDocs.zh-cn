@@ -5,7 +5,7 @@ description: "使用 Intune 自定义配置文件创建具有预共享密钥的 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -206,11 +206,9 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 3.     搜索 XML 文件以找到具有正确名称的那一个。
 4.     找到了正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的数据字段中。
 
-## <a name="best-practices"></a>最佳做法
+## <a name="best-practices"></a>最佳实践
 在部署具有 PSK 的 Wi-Fi 配置文件前，请验证该设备能否直接连接到终结点。
 
 在轮换密钥（密码或通行短语）时，预计故障时间并进行相应的部署规划。 考虑在非工作时间段推送新 Wi-Fi 配置文件。 此外，警告用户连接性可能会受到影响。
- 
-若要确保流畅的转换体验并按时传递策略更新，设备必须向 Intune 开放至少一个信道。 要执行此操作，请使用手机网络连接，或提供仅将用户连接到 Intune 终结点的来宾 Wi-Fi 访问权限。
 
-
+若要确保能够进行流畅的转换，请确保最终用户的设备已有到 Internet 的备用连接。 例如，最终用户必须可以切换回来宾 WiFi（或其他一些 WiFi 网络）或者必须有手机网络连接来与 Intune 通信。 这使用户可以在公司 WiFi 配置文件在设备上更新时继续接收策略更新。

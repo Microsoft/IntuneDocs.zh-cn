@@ -5,21 +5,20 @@ description: "了解可用来控制 Android for Work 设备上的设备设置和
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
+manager: dougeby
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: beb8368aa2db33df84bb64985177b47beebc80ac
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 设备限制设置
 
@@ -44,11 +43,11 @@ ms.lasthandoff: 12/12/2017
 ### <a name="work-profile-password"></a>工作配置文件密码
 - **需要工作配置文件密码** -（启用了工作配置文件的 Android 7.0 和更高版本）定义只适用工作配置文件中应用的密码策略。 默认情况下，最终用户可以选择使用两个单独定义的 PIN，还可以选择将它们合并为二者中较强大的一方。
 - **最短密码长度** - 输入用户密码必须包含的最少字符数 (**4**-**16**)
-- 屏幕锁定前的最大非活动分钟数 - 选择工作配置文件锁定前的时间。 然后，用户必须输入凭据才能重获访问权限。
+- **工作配置文件锁定前的最大非活动分钟数** - 选择工作配置文件锁定前的时间。 然后，用户必须输入凭据才能重获访问权限。
 - **擦除设备前登录失败的次数** - 输入擦除设备上的工作配置文件之前允许输入错误密码的次数。
 - **密码过期（天数）**- 输入必须更改最终用户的密码前的天数（从 **1**-**255**）。
 - **所需的密码类型** - 选择在设备上必须设置的密码类型。 选择：
-    - **设备默认值**
+    - 设备默认值
     - **低安全性生物识别**
     - **必需**
     - **至少为数字**
@@ -65,9 +64,9 @@ ms.lasthandoff: 12/12/2017
 - **最短密码长度** - 输入用户密码必须包含的最少字符数（从 **4**-**14**）
 - **屏幕锁定前的最大非活动分钟数** - 选择非活动设备自动锁定前的时间。
 - **擦除设备前登录失败的次数** - 输入擦除设备上的所有数据前允许输入错误密码的次数。
-- **密码过期（天数）**- 输入必须更改最终用户的密码前的天数（从 **1**-**255**）。
+- 密码到期(天) - 输入多少天后最终用户必须更改密码（介于 **1**-**255** 之间）。
 - **所需的密码类型** - 选择在设备上必须设置的密码类型。 选择：
-    - **设备默认值**
+    - 设备默认值
     - **低安全性生物识别**
     - **必需**
     - **至少为数字**

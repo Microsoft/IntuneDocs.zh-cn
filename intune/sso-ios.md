@@ -5,7 +5,7 @@ description: "了解如何配置 Intune for iOS 设备 SSO。"
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>配置 Intune for iOS 设备单一登录
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 12/08/2017
 
 2. 使用以下摘要表格，帮助填写“SSO”边栏选项卡上的字段。 有关详细信息，请参阅表格后的各节。
    
-   |字段  |注意|
+   |欄位  |附註|
    |---------|---------|
    |**来自 AAD 的用户名属性**|Intune 为 AAD 中的每个用户查看的属性，并在生成安装于设备上的 XML 有效负载之前填充相应字段（如 UPN）。|
    |**领域**|URL 的域部分。|
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/08/2017
 
 指示最终用户设备上可使用 SSO 有效负载的应用。
 
-`AppIdentifierMatches` 数组必须包含与应用程序包 ID 匹配的字符串。 这些字符串可以是完全匹配项（例如：`com.contoso.myapp`），也可以通过使用 * 通配符指定程序包 ID 的前缀匹配项。 通配符必须位于句点字符 (.) 后，并可能只在字符串末尾出现一次（例如：`com.contoso.*`）。 如果包括通配符，则程序包 ID 以前缀开头的任何应用都将被授予对帐户的访问权限。
+`AppIdentifierMatches` 数组必须包含与应用程序包 ID 匹配的字符串。 这些字符串可以是完全匹配项（例如：`com.contoso.myapp`），也可以通过使用 *\ 通配符指定捆绑 ID 的前缀匹配项。 通配符必须位于句点字符 (.) 后，并可能只在字符串末尾出现一次（例如：`com.contoso.*`）。 如果包括通配符，则程序包 ID 以前缀开头的任何应用都将被授予对帐户的访问权限。
 
 “应用名称”字段用于添加一个用户友好名称，帮助识别程序包 ID。
 
