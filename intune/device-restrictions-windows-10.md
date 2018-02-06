@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/25/2018
 
 可以定义设备上的所有应用可以访问的信息。 可以使用“每应用隐私异常”对每个应用定义异常。
 
-### <a name="exceptions"></a>例外狀況
+### <a name="exceptions"></a>例外
 
 - **帐户信息** - 定义此应用能否访问用户名、图片和其他联系人信息。
 - **后台应用** - 定义此应用能否在后台运行。
@@ -105,7 +105,7 @@ ms.lasthandoff: 01/25/2018
 - **包名称** - 应用包系列名称。
 - **应用名称** - 应用的名称。
 
-### <a name="exceptions"></a>例外狀況
+### <a name="exceptions"></a>例外
 
 - **帐户信息** - 定义此应用能否访问用户名、图片和其他联系人信息。
 - **后台应用** - 定义此应用能否在后台运行。
@@ -254,7 +254,7 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="kiosk-preview"></a>展台（预览版）
 
--   展台模式 - 标识策略支持的[展台模式](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)的类型。 选项包括：
+-   展台模式 - 标识策略支持的[展台模式](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)的类型。 选项包括：
 
       - 未配置（默认）- 策略不启用展台模式。 
       - 单应用展台 - 配置文件将设备作为单应用展台启用。
@@ -266,7 +266,7 @@ ms.lasthandoff: 01/25/2018
 
          对于公共环境中的设备，使用具有最小特权的帐户来阻止已授权活动。  
 
-      - 应用的应用程序用户模型 ID (AUMID) - 指定展台应用的 AUMID。 若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
+      - 应用的应用程序用户模型 ID (AUMID) - 指定展台应用的 AUMID。 若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
 
     多应用展台需要展台配置。 使用“添加”按钮创建展台配置，或选择现有展台配置。
 
@@ -280,13 +280,13 @@ ms.lasthandoff: 01/25/2018
 
             - Win32 应用 - 传统的桌面应用。 （就设备而言，需要可执行文件的完全限定的路径名。）
 
-            - UWP 应用 - 通用 Windows 应用。 需要[应用的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
+            - UWP 应用 - 通用 Windows 应用。 需要[应用的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
 
-        - 应用标识符 - 指定可执行文件（Win32 应用）的完全限定路径名，或[应用的 AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（UWP 应用）。
+        - 应用标识符 - 指定可执行文件（Win32 应用）的完全限定路径名，或[应用的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（UWP 应用）。
 
     - 任务栏 - 指示在展台中显示（已启用）还是隐藏（未配置）任务栏。
 
-    - “开始”菜单布局 - 指定一个 XML 文件，用于描述应用[在“开始”菜单上如何显示](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)。
+    - “开始”菜单布局 - 指定一个 XML 文件，用于描述应用[在“开始”菜单上如何显示](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)。
 
     - 分配的用户 - 指定一个或多个与展台配置相关联的用户帐户。 该帐户可以是设备的本地帐户，也可以是与展台应用相关联的 Azure AD 帐户登录名。 以 `domain\\username@tenant.org` 的形式指定已加入域的帐户。
 
@@ -385,7 +385,7 @@ ms.lasthandoff: 01/25/2018
    IPv4：192.246.246.106:100<br>
  IPv6：[2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN：www.contoso.com:345
 
-## <a name="messaging"></a>消息传送
+## <a name="messaging"></a>Messaging
 
 - **消息同步(仅移动设备)** - 禁用随时随地传送消息以及短信备份和还原。
 - **彩信(仅移动设备)** - 对设备禁用彩信发送/接收功能。

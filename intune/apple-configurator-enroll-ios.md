@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
@@ -31,7 +31,7 @@ Intune 支持注册 iOS 设备，方法是使用在 Mac 计算机上运行的 [A
 
 Apple Configurator 注册方法不能与[设备注册管理器](device-enrollment-manager-enroll.md)同时使用。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必备条件
 
 - 具有 iOS 设备的物理访问权限
 - [设置 MDM 机构](mdm-authority-set.md)
@@ -71,8 +71,8 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 
 1. 创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加序列号，在右列添加详细信息。 目前，该列表的最大长度为 5,000 行。 在文本编辑器中，该 .csv 列表如下所示：
 
-    F7TLWCLBX196,设备详细信息</br>
-    DLXQPCWVGHMJ，设备详细信息
+  F7TLWCLBX196,设备详细信息</br>
+  DLXQPCWVGHMJ，设备详细信息
 
    [了解如何查找 iOS 设备序列号](https://support.apple.com/HT204073)。
 2. 在 Azure 门户的 Intune 中，选择“设备注册”，然后选择“Apple 注册”。
@@ -164,3 +164,5 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 7. 在 iOS 设备上，打开“设置”并转到“常规” > “设备管理”  > “管理配置文件”。 确认配置文件安装已列出，并检查 iOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
 
 8. 分配设备。 iOS 设备现已在 Intune 中注册并已托管。
+
+

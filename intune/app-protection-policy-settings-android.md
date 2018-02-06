@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f60f2a090871d8f6e0bda83055a9a8f29086541e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dddf5aae9ac7ec5804404a49fc0647e52d0c75de
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Android 应用保护策略设置
 可以在 Azure 门户的“设置”边栏选项卡上为应用保护策略[配置](app-protection-policies.md)本主题所述的策略设置。
@@ -51,7 +51,7 @@ ms.lasthandoff: 01/25/2018
 
   完全允许这些应用和服务向 Intune 托管应用传输数据或从其接收数据。
 
-  |应用/服务名称 | 说明 |
+  |应用/服务名称 | 描述 |
   | ------ | ---- |
   | com.android.phone | 本机电话应用
   | com.android.vending | Google Play Store |
@@ -66,7 +66,7 @@ ms.lasthandoff: 01/25/2018
   ### <a name="conditional-exemptions"></a>有条件的豁免
   只有在某些条件下，才允许这些应用和服务向 Intune 托管应用传输数据或从其接收数据。
 
-  |应用/服务名称 | 说明 | 豁免条件|
+  |应用/服务名称 | 描述 | 豁免条件|
   | ------ | ---- | --- |
   | com.android.chrome | Google Chrome 浏览器 | Chrome 用于 Android 7.0 及更高版本上的某些 WebView 组件，并且永远不会从视图中隐藏。 但是，该应用发出和收到的数据流始终受限。
   | com.skype.raider | Skype | Skype 应用仅允许执行引发电话呼叫的某些操作。 |
@@ -83,7 +83,7 @@ ms.lasthandoff: 01/25/2018
 | **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 如果将其设置为“是”，则此设置将替代 PIN 或 Touch ID 的要求。  | 否 |
 | **阻止在已越狱或取得 root 权限的设备上运行托管应用** |选择“是”，阻止在已越狱或取得 root 权限的设备上运行此应用。 用户仍能够将此应用用于个人任务，但必须使用其他设备访问此应用中的工作或学校数据。 | 是 |
 | **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，管理员在策略中启用 PIN，则用户打开 Intune 托管的应用就必须输入 PIN。 使用此设置时，用户在 30 分钟（默认值）内无需在任何 Intune 托管应用上再次输入 PIN。 <br><br> **注意：**在 Android 上，所有 Intune 托管应用均共享此 PIN。 应用离开设备主屏幕后，就会重置 PIN 计时器。 在此设置定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入该 PIN。 <br><br> 此策略设置格式支持正整数。<br></li><li>**脱机宽限期**：指 MAM 应用可脱机运行的分钟数，需在重新检查应用访问要求之前指定该时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。 此时间段到期后，应用将要求用户对 AAD 进行身份验证，以便应用可以继续运行。<br><br> 此策略设置格式支持正整数。</li></ul>| 超时：30 <br><br> 脱机：720 |
-| **擦除应用数据前的脱机时间间隔(天)** | 经过数天（由管理员定义）的脱机运行后，应用会要求用户连接到网络并重新进行身份验证。 如果用户身份验证成功，则可继续访问其数据，且将重置脱机时间间隔。  如果用户未能通过身份验证，则应用会对用户帐户和数据执行选择性擦除。  请参阅[如何仅擦除 Intune 托管应用中的企业数据](https://docs.microsoft.com/en-us/intune/apps-selective-wipe)，详细了解选择性擦除所删除的数据。<br><br> 此策略设置格式支持正整数。 | 90 天 |
+| **擦除应用数据前的脱机时间间隔(天)** | 经过数天（由管理员定义）的脱机运行后，应用会要求用户连接到网络并重新进行身份验证。 如果用户身份验证成功，则可继续访问其数据，且将重置脱机时间间隔。  如果用户未能通过身份验证，则应用会对用户帐户和数据执行选择性擦除。  请参阅[如何仅擦除 Intune 托管应用中的企业数据](https://docs.microsoft.com/intune/apps-selective-wipe)，详细了解选择性擦除所删除的数据。<br><br> 此策略设置格式支持正整数。 | 90 天 |
 | **阻止屏幕捕获和 Android 助手 (Android 6.0+)** | 选择“是”，则在使用此应用时，阻止设备的屏幕捕获和“Android 助手”功能。 选择“是”还会在通过工作或学校帐户使用此应用时，导致应用切换器预览图像模糊。 | 否 |
 | **托管设备 PIN 后禁用应用 PIN** | 在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 | 否 |
 | **要求最低 Android 操作系统版本** | 选择“是”将要求要使用此应用需具备的最低 Android 操作系统版本。 如果设备上的 Android 版本不符合此要求，将阻止用户访问。<br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。| 否 |
