@@ -14,11 +14,11 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 115a2ac3b4eb35591a2742143fdd29dde09c7de7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服务说明
 
@@ -55,7 +55,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 - [Microsoft Intune 新增功能](whats-new.md)。 在每月推出新的服务更新以及每周发布公司门户应用等应用时，本主题也将随之更新。
 
-- 同时会在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)信息中心公布重要的服务更新。 如果安装了配套 [Office 365 管理移动应用](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，就可以在你的移动设备上接收通知。 深入了解如何使用 [Office 365 消息中心](https://support.office.com/en-US/client/results?Shownav=true&lcid=1033&ns=O365ENTADMIN&version=15&omkt=en-US&ver=15&HelpID=O365E_MCManageUpdates)。
+- 同时会在 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)信息中心公布重要的服务更新。 如果安装了配套 [Office 365 管理移动应用](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，就可以在你的移动设备上接收通知。 深入了解如何使用 [Office 365 消息中心](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)。
 
     以下为某些有帮助的提示：
 

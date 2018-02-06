@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f472c144e9bcda965486f8e88d38aa9d27df165
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e0163cc90e644bbae8f12759b473d81c9770bee
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -42,7 +42,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必备条件
 - 通过 [Apple 设备注册计划](http://deploy.apple.com)购买的设备
 - [MDM 机构](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -79,7 +79,10 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
    ![为 DEP 添加 MDM 服务器名称并单击“下一步”的屏幕截图。](./media/enrollment-program-token-add-server.png)
 
 5. “添加&lt;服务器名称&gt;”对话框随即打开，提示“上传公钥”。 选择“选择文件…” 以上传 .pem 文件，然后选择“下一步”。  
+<<<<<<< HEAD
 
+=======
+>>>>>>> e19b417f8bc134dc5a5a9f60354f017ccc42fd88
 
 7. 转到“部署计划”&gt;“设备注册计划”&gt;“管理设备”。
 8. 在“选择设备方式”下，指定如何标识设备：
@@ -93,7 +96,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
    在 Apple 门户中，转到“部署计划”&gt;“设备注册计划”&gt;“查看分配历史记录”，以查看设备及其 MDM 服务器分配的列表。
 
-**步骤 3：输入用于创建注册计划令牌的 Apple ID。**<br>在 Azure 门户中的 Intune 中，提供 Apple ID 供未来参考。 使用此 ID 在未来续订注册计划令牌，避免重新注册所有设备。
+**步骤 3：输入用于创建注册计划令牌的 Apple ID。**<br>在 Azure 门户中的 Intune 中，提供 Apple ID 供未来参考。
 
 ![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/enrollment-program-token-apple-id.png)
 
@@ -117,27 +120,27 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 4. 选择“设备管理设置”，配置以下配置文件设置：
 
   ![选择管理模式的屏幕截图。 设备包含以下设置：受到监督、注册锁定、允许配对设置为全部拒绝。 新注册计划配置文件的 Apple Configurator 证书将变灰。](./media/enrollment-program-profile-mode.png)
-    - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS 设备的组织。
+  - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS 设备的组织。
 
  > [!NOTE]
  > 注册设备后，无法使用 Intune 将设备配置为受监督模式。 注册后，需使用 USB 电缆将 iOS 设备连接到 Mac 并使用 Apple Configurator，这是此时启用受监督模式的唯一方式。 这将重置设备并将其配置为受监督模式。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。受监督设备将在锁屏界面上显示“此 iPhone 由 Contoso 托管。”， 还将显示“此 iPhone 受监督。 Contoso 可以监视你的 Internet 流量并找到此设备。” （在“设置” > “常规” > “关于”中）。
 
-    - 注册锁定 -（需要管理模式 = 受到监督）禁用可能允许删除管理配置文件的 iOS 设置。 如果将此复选框保留为空，它将允许从“设置”菜单中删除管理配置文件。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。
+  - 注册锁定 -（需要管理模式 = 受到监督）禁用可能允许删除管理配置文件的 iOS 设置。 如果将此复选框保留为空，它将允许从“设置”菜单中删除管理配置文件。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。
 
   - **启用共享 iPad** - Apple 的设备注册计划不支持共享 iPad。
 
-    - **允许配对** - 指定 iOS 设备是否可以与计算机同步。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
+  - **允许配对** - 指定 iOS 设备是否可以与计算机同步。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
 
-    - Apple Configurator 证书 - 如果在“允许配对”下选择“通过证书允许 Apple Configurator”，请选择要导入的 Apple Configurator 证书。
+  - Apple Configurator 证书 - 如果在“允许配对”下选择“通过证书允许 Apple Configurator”，请选择要导入的 Apple Configurator 证书。
 
-  选择**“保存”**。
+  选择“保存”。
 
 5. 选择“设置助理设置”，配置以下配置文件设置：
 
   ![通过新注册计划配置文件的可用设置选择配置设置的屏幕截图。](./media/enrollment-program-profile-settings.png)
-    - **部门名称** - 用户在激活过程中点击“关于配置”时显示。
+  - **部门名称** - 用户在激活过程中点击“关于配置”时显示。
 
-    - **部门电话** - 用户在激活过程中单击“需要帮助”按钮时显示。
+  - **部门电话** - 用户在激活过程中单击“需要帮助”按钮时显示。
     - **设置助理选项** - 这些可选设置可以稍后在 iOS 的“设置”菜单中设置。
         - **密码**
         - **位置服务**
@@ -150,7 +153,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
         - **Siri**
         - **诊断数据**
 
-    选择**“保存”**。
+    选择“保存”。
 
 9. 若要保存配置文件设置，请在“创建注册配置文件”边栏选项卡上选择“创建”。 注册配置文件显示在 Apple 注册计划注册配置文件列表中。
 
@@ -163,9 +166,9 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
   
 2. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
 
-  ![选中“请求同步”链接的“同步”边栏选项卡屏幕截图。](./media/enrollment-program-device-request-sync.png)
+   ![选中“请求同步”链接的“同步”边栏选项卡屏幕截图。](./media/enrollment-program-device-request-sync.png)
 
-  为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
+   为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
      -  每七天只能运行一次完全同步。 在完全同步期间，Intune 将刷新分配给 Intune 的每一个 Apple 序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
      -  任何同步请求都在 15 分钟内完成。 在此期间或在请求成功之前，“同步”按钮处于禁用状态。
      - Intune 每 24 小时与 Apple 同步一次新设备及已删除设备。
@@ -195,3 +198,5 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有恢复出厂设置才能应用注册配置文件。
 
 请参阅[通过设备注册计划在 Intune 中注册 iOS 设备](/intune-user-help/enroll-your-device-dep-ios)。 
+
+

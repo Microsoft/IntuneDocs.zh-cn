@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 13a6174856ad18034fc3d3c912339c8f844b3db0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dc061a525a4b20cafbbb2ae31ee90c878d2a98fe
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -92,9 +92,9 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
  
  除了为应用启用应用保护策略外，还需要使应用具备以下条件，使其在基于 Azure ActiveDirectory (AAD) 应用的条件访问下正常运行：
  
- * 使用 [Azure ActiveDirectory 身份验证库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries)构建应用并对其启用 AAD 代理身份验证。
+ * 使用 [Azure ActiveDirectory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)构建应用并对其启用 AAD 代理身份验证。
  
- * iOS 和 Android 平台上的应用的 [AAD 客户端 ID](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) 必须是唯一的。
+ * iOS 和 Android 平台上的应用的 [AAD 客户端 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) 必须是唯一的。
  
 ## <a name="configure-telemetry-for-your-app"></a>配置应用遥测
 
@@ -106,7 +106,7 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
 * **Intune App SDK for Android**：Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用会记录遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。 
 
-    * 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
+    * 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
 
  iOS 和 Android 业务线应用版本号是可见的 <!-- 1380712 -->
@@ -133,7 +133,7 @@ Android 和 iOS 都使用应用相关的版本号和内部版本号。 但是，
 
 开发用于 Intune 的业务线应用程序时，请务必使用版本号和内部版本号。 Intune 应用管理功能依赖于有意义的 CFBundleVersion（适用于 iOS）和 PackageVersionCode（适用于 Android）。 这些号码都包括在应用清单中。 
 
-Intune|iOS|Android|说明|
+Intune|iOS|Android|描述|
 |---|---|---|---|
 版本号|CFBundleShortVersionString|PackageVersionName |此号码为最终用户指示应用的特定版本。|
 内部版本号|CFBundleVersion|PackageVersionCode |此号码用于指示应用代码中的迭代。|
