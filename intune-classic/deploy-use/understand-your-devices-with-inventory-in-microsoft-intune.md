@@ -51,7 +51,7 @@ Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报
 |**序列号**|iOS、Mac OS X、Android、Windows 8.1 和 Windows 10 桌面版设备|
 |**总存储空间**|iOS、Mac OS X、Windows 8.1 和 Windows 10 桌面版和移动版设备|
 |**可用存储空间**|iOS、Mac OS X、Windows 8.1 和 Windows 10 桌面版设备|
-|**电话号码**<br>归类为企业的电话将以其完整的电话号码进行标识（例如在运行移动设备清单报表时）。 将使用 &#42 屏蔽 BYOD 电话号码；仅显示最后 4 位数字。|iOS、Android 和 Windows Phone 设备|
+|**电话号码**<br>归类为企业的电话将以其完整的电话号码进行标识（例如在运行移动设备清单报表时）。 将使用 &#42; 屏蔽 BYOD 电话号码；仅显示最后 4 位数字。|iOS、Android 和 Windows Phone 设备|
 |**IMEI**|Exchange ActiveSync、iOS、Android 和 Windows Phone 设备|
 |**MEID**<br>移动设备标识符|仅限 iOS 设备|
 |**Wi-Fi MAC**|Exchange ActiveSync 以外的所有设备|
