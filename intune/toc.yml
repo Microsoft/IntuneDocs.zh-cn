@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: 常见方案
       href: common-scenarios.md
+    - name: MAM 常见问题
+      href: mam-faq.md
 - name: 规划部署
   items:
     - name: 规划指南
