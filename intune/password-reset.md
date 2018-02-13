@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>通过自助密码重置削减支持人员成本
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="next-steps"></a>后续步骤
 
 详细了解以下主题：
-* [密码最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 
+* [密码最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [许可自助密码重置](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
 需要有关启用此方案或者其他 EMS 或 Office 365 方案的帮助？ 对于 Microsoft 365、企业移动性 + 安全性或 Azure Active Directory Premium，如果你拥有至少 150 个许可证，请使用 [FastTrack 权益](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program)。
