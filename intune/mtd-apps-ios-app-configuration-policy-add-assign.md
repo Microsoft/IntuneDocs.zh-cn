@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d84ecc31d266deb196192c8e1b3eeade6eb5ea3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ba0bbe8d10b3161af19b45e3a37f51101730d567
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/25/2018
 > [!TIP]
 > Intune 公司门户在 Android 设备上以中转站的方式工作，以便用户能够让 Azure AD 检查自己的标识。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 -   需要在 [Azure 门户](https://portal.azure.com/)中完成以下步骤。
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 01/25/2018
 
 通过执行以下操作为 iOS 用户启用 Azure Active Directory 身份验证：
 
-1. 转到 [Azure 门户](https://portal.sazure.com)，使用自己的凭据登录，然后导航到应用程序页。
+1. 转到 [Azure 门户](https://portal.azure.com)，使用自己的凭据登录，然后导航到应用程序页。
   
 2. 添加 **Lookout for Work iOS 应用**作为**本机客户端应用程序**。
 

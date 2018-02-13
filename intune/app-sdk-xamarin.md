@@ -5,7 +5,7 @@ keywords: "sdk、Xamarin、intune"
 author: erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 11/01/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b52b83b84e36a89b5e578c9e14c5093715a559c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: df90f3e011442e4e383c18d0309416d6549c330c
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 组件
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 01/25/2018
 
 3.  从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) 下载 Intune App SDK Xamarin 组件文件夹并从中提取。 在 步骤 1 和 3 中下载的这两个文件应处于相同的目录级别。
 
-4.  在命令行中以管理员身份运行 `Xamarin.Component.exe install <.xam> file`。
+4.  在命令行中以管理员身份运行 `mono Xamarin.Component.exe install <.xam> file`。
 
 5.  在 Visual Studio 中，右键单击以前创建的 Xamarin 项目中的“组件”。
 
