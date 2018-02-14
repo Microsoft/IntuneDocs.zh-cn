@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a844255451f441f0b64cb020b863b4775fbb768
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
@@ -47,7 +47,7 @@ IT 管理员可以使用以下步骤从 Azure 门户提交支持票证：
     - 支持计划：技术支持 - 内含（对 Intune 技术问题的支持是免费的。）
 
     >[!IMPORTANT]
-    >Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免费。 若要查看有关顶级支持的详细信息，请参阅[服务说明](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx)文档第 5.3.3节“咨询服务”。
+    >Intune 支持，以及通过 Configuration Manager 进行的 Intune 支持都免费。 若要查看有关顶级支持的详细信息，请参阅[服务说明](https://www.microsoft.com/microsoftservices/services-list.aspx)文档第 5.3.3节“咨询服务”。
 
     选择“下一步”继续。
 4. 为确保请求得到相应专家的解决，请在“问题”边栏选项卡上选择以下选项：
