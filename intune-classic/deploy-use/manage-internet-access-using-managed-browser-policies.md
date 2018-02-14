@@ -99,7 +99,7 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>允许的 URL 和阻止的 URL 的格式
 使用以下信息来了解有关指定允许和阻止列表中的 URL 时允许使用的格式和通配符：
 
--   可以根据以下允许模式列表中的规则使用通配符 (*)。
+-   可以根据以下允许模式列表中的规则使用通配符 (**&#42;**)。
 
 -   在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
 
