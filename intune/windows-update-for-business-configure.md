@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>管理软件更新
 
@@ -38,15 +37,16 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
 创建更新铃声后，将其分配到设备组。 通过使用更新通道，你可以创建反映业务需求的更新策略。 有关详细信息，请参阅[使用 Windows Update for Business 更新管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
-## <a name="before-you-start"></a>准备工作
+## <a name="before-you-start"></a>开始之前
 
 - 要更新 Windows 10 电脑，它们必须至少运行安装了 Windows 周年更新的 Windows 10 专业版。
 
 - Windows 更新支持以下 Windows 10 版本：
     - Windows 10
     - Windows 10 协同版（适用于 Surface Hub 设备）
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- 不支持运行 Windows 10 移动版和 Windows 10 全息版的设备。
+ 不支持运行 Windows 10 移动版的设备。
 
 - 在 Windows 设备上，“**反馈和诊断**” > “**诊断和使用情况数据**”必须至少设置为“**基本**”。
 
@@ -71,7 +71,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
 ## <a name="how-to-create-and-assign-update-rings"></a>如何创建并分配更新通道
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“**Intune**”边栏选项卡上，选择“**软件更新**”。
 4. 在“**软件更新**”边栏选项卡上，选择“**管理**” > “**Windows 10 更新通道**”。
@@ -89,8 +89,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
     功能更新通常是 Windows 的新功能。 将维护服务频道设置为半年频道（定向）或半年频道后，可以在 Windows 更新上定义在 Microsoft 发布功能更新后，是否延迟接收功能更新（以及延迟多长时间）。
 
-    例如：  
-    **如果将维护服务频道设置为半年频道（定向），将延迟期设置为 30 天**：假设功能更新 X 将于一月以半年频道（定向）形式在 Windows 更新上公开发布。 设备将在 2 月（即 30 天后）才收到更新。
+    例如，如果将维护服务频道设置为半年频道（定向），将延迟期设置为 30 天：假设功能更新 X 将于一月以半年频道（定向）形式在 Windows 更新上公开发布。 设备将在 2 月（即 30 天后）才收到更新。
 
     **如果将维护服务频道设置为半年频道，将延迟期设置为 30 天**：假设功能更新 X 将于一月以半年频道形式在 Windows 更新上公开发布。 功能更新 X 将在四个月后（即 4 月份）发布到半年频道。 设备将在此半年频道发布后的 30 天后接收此功能更新，并将在 5 月进行更新。
 
@@ -109,7 +108,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 ### <a name="review-update-compliance-in-intune"></a>在 Intune 中查看更新符合性 
 <!-- 1352223 -->
 通过策略报告，查看已配置的 Windows 10 更新通道的部署状态。 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“**Intune**”边栏选项卡上，选择“**软件更新**”。
 4. 在“软件更新”边栏选项卡上，选择“概述”。 可在此处查看有关已分配的任意更新通道状态的一般信息。
@@ -145,7 +144,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
 ## <a name="how-to-pause-updates"></a>如何暂停更新
 从暂停更新的时间算起，设备暂停接收功能更新或质量更新的期限最长为 35 天。 超过最长期限后，暂停功能将自动过期，设备将扫描 Windows 更新以获取适用的更新。 执行此扫描后，你可以再次暂停更新。
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“**Intune**”边栏选项卡上，选择“**软件更新**”。
 4. 在“**软件更新**”边栏选项卡上，选择“**管理**” > “**Windows 10 更新通道**”。
@@ -154,3 +153,11 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 > [!IMPORTANT]
 > 发出暂停命令时，设备在下次检查服务时会收到此命令。 可能的情况是，在设备签入前，它们可能安装了计划更新。
 > 此外，如果在发出暂停命令时关闭目标设备，则当打开它时，可能会在它使用 Intune 签入前下载并安装计划的更新。
+
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支持
+
+Windows Holographic for Business 支持以下设置：
+
+- 自动更新行为
+- Microsoft 产品更新
+- 服务频道

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51f26d630537901ad39a215062f820a2c243e077
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure 移动威胁防御连接器
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 10/10/2017
 
 -   漏洞防御
 
-可以基于通过 Intune 设备符合性策略启动的 Skycure 风险评估配置条件访问策略，从而根据检测到的威胁允许或阻止不符合要求的设备访问公司资源。
+可以基于通过 Intune 设备符合性策略启动的 Skycure 风险评估配置条件访问策略，从而根据检测到的威胁允许或阻止不符合设备访问公司资源。
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Intune 和 Skycure 如何帮助你保护公司资源？
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/10/2017
 
 Intune 设备符合性策略包括基于 Skycure 风险评估的 Skycure 移动威胁防御规则。 启用此规则后，Intune 将评估设备是否符合已启用的策略。
 
-如果发现设备不符合策略，将阻止对 Exchange Online 和 SharePoint Online 等资源的访问。 被阻止的设备上的用户可从 Skycure 移动应用接收指导来解决此问题，并重新获得对公司资源的访问权限。
+如果发现设备不符合，将阻止对 Exchange Online 和 SharePoint Online 等资源的访问。 被阻止的设备上的用户可从 Skycure 移动应用接收指导来解决此问题，并重新获得对公司资源的访问权限。
 
 Intune 支持与 Skycure 集成的两种模式：
 
@@ -69,7 +69,7 @@ Intune 支持与 Skycure 集成的两种模式：
 
 ![检测到恶意应用](../media/mtp/skycure-arch-1.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![检测到恶意应用，授予访问权限](../media/mtp/skycure-arch-2.png)
 
@@ -81,7 +81,7 @@ Intune 支持与 Skycure 集成的两种模式：
 
 ![阻止通过 Wi-Fi 访问网络](../media/mtp/skycure-arch-3.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![威胁解除后授予访问权限](../media/mtp/skycure-arch-4.png)
 
@@ -93,7 +93,7 @@ Intune 支持与 Skycure 集成的两种模式：
 
 ![检测到网络威胁时阻止 SharePoint Online](../media/mtp/skycure-arch-5.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![Sharepoint 的威胁解除后授予访问权限示例](../media/mtp/skycure-arch-6.png)
 

@@ -17,18 +17,18 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 111cbc1aa2dd9c537a7f5581d0dd6f2e75d8c7f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1d9321838cdf7721410a1ba204dd02bd868dcd72
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何从公司门户网站重置设备密码
 
 如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)进行重置。 可使用公司门户网站管理在 Intune 中注册的计算机和设备，还可以用于执行大多数使用公司门户应用时执行的相同任务。
 
 > [!NOTE]
-> 如果使用企业注册设备，在公司门户网站上可能看不到“重置密码”按钮。 如果看不到，请联系公司支持人员为你重置密码。
+> 如果使用企业注册设备，在公司门户网站上可能看不到“重置密码”按钮。 如果看不到，请联系公司支持人员重置密码。
 
 重置密码：
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 01/25/2018
   > [!NOTE]
   > 不能为 Android 7.0 或更高版本的设备重置密码。 如果忘记密码，必须将设备重置为出厂设置。
 
-  **iOS**：删除现有密码且不创建临时密码。 如果你使用 Touch ID 指纹扫描仪打开设备或购买商品，你将需要再次设置。
+  **iOS**：删除现有密码且不创建临时密码。 如果使用 Touch ID 指纹扫描仪打开设备或购买商品，则需再次设置。
 
   **Windows 10 移动版**：删除现有密码，然后使用字母和数字创建临时密码。 使用 Windows Hello 面部识别进行登录时仍然受支持。
     

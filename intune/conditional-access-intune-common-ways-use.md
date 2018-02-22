@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff3c5c077c9d67c667c7f3a53326e555a1cce92
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件性访问的常见方式
 
@@ -52,7 +52,7 @@ Intune 提供了设备符合性策略功能，可评估设备的符合性状态�
 
 应用设备符合性和条件性访问策略时，检查用于访问 Exchange 内部部署的任何设备的符合性。
 
-当设备不满足设置的条件时，将指导最终用户完成设备注册流程，以修复导致设备不兼容的问题。
+设备不满足设置的条件时，指导最终用户完成设备注册流程，以修复导致设备不符合的问题。
 
 #### <a name="how-conditional-access-for-exchange-on-premises-works"></a>Exchange 内部部署工作的条件性访问方式
 

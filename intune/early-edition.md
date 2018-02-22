@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d4bcabc4d1af4554a3e3bea875be45f9376b4ef7
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Microsoft Intune 的早期版本 - 2018 年 2 月
 
@@ -41,6 +41,8 @@ ms.lasthandoff: 01/29/2018
 
 <!-- 1802 start -->
 
+### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>防止最终用户添加或删除工作配置文件中的帐户 <!-- 1728700 -->    
+将 Gmail 应用部署到 Android for Work 配置文件中后，能够防止最终用户通过使用 Android for Work 设备限制配置文件中的“添加和删除帐户”设置添加或删除工作配置文件中的帐户。
 
 ### <a name="app-protection-policies-----679615---"></a>应用保护策略<!-- 679615 -->
 Intune 应用保护策略将提供创建默认全局策略的功能，以便快速对整个租户中所有用户启用保护。
@@ -76,7 +78,7 @@ Intune 将支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 可以使用十六进制代码自定义公司门户应用中的主题颜色。 输入十六进制代码时，Intune 将按照 [WCAG 2.0 标准](http://www.w3.org/TR/WCAG20)确定在文本颜色和背景色之间提供最高级别对比度的文本颜色。 可以在“移动应用” > “公司门户”中预览文本颜色和公司徽标之间的颜色对比。 
 
 ### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>使用“访问工作或学校帐户”设置选择设备类别 <!-- 1058963 --> 
-如果已启用[设备组映射](https://docs.microsoft.com/en-us/intune/device-group-mapping)，Windows 10 用户将会在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后或在开箱即用体验期间，看到选择设备类别的提示。
+如果已启用[设备组映射](https://docs.microsoft.com/intune/device-group-mapping)，Windows 10 用户将会在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后或在开箱即用体验期间，看到选择设备类别的提示。
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>添加到终结点保护设置的新 Windows Defender Credential Guard 设置 <!--1102252 --> 
 
@@ -152,7 +154,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 
 #### <a name="attack-surface-reduction"></a>攻击面减少
 
-|设置名称  |设置选项  |说明  |
+|设置名  |设置选项  |描述  |
 |---------|---------|---------|
 |高级勒索软件防护|启用、审核、未配置|使用激进的勒索软件防护。|
 |标记从 Windows 本地安全机构子系统窃取的凭据|启用、审核、未配置|标记从 Windows 本地安全机构子系统 (lsass.exe) 窃取的凭据。|
@@ -162,7 +164,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 
 #### <a name="controlled-folder-access"></a>受控文件夹访问权限
 
-|设置名称  |设置选项  |说明  |
+|设置名  |设置选项  |描述  |
 |---------|---------|---------|
 |文件夹保护（已实现）|未配置、启用、仅审核（已实现）<br><br> **新建**<br>阻止磁盘修改、审核磁盘修改|
 阻止不友好应用对文件和文件夹进行未经授权的更改。<br><br>**启用**：阻止不受信任的应用修改或删除受保护文件夹中的文件，以及阻止写入到磁盘扇区。<br><br>
@@ -214,79 +216,34 @@ Intune 将支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 迁移后，通过 Graph 管理 Apple DEP 或 ASM 的 beta 版本 Graph API 和已发布脚本将不再有效。 新的 beta 版本 Graph API 正在进行开发，将在迁移后发布。
 
 ### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>使用“访问工作或学校帐户”设置选择设备类别 <!-- 1058963 -->
-如果已启用[设备组映射](https://docs.microsoft.com/en-us/intune/device-group-mapping)，Windows 10 用户将会在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后或在开箱即用体验期间，看到选择设备类别的提示。
+如果已启用[设备组映射](https://docs.microsoft.com/intune/device-group-mapping)，Windows 10 用户将会在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后或在开箱即用体验期间，看到选择设备类别的提示。
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>将符合性策略定目标到设备组中的设备 <!--1307012 -->
 
 将可以把符合性策略定目标到用户组中的用户。 将可以把符合性策略定目标到设备组中的设备。
 
-### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>根据组添加和排除应用分配 <!-- 1406920 -->
-
-在应用分配期间以及在选择分配类型后，将可以选择要添加和排除的组。
-
-### <a name="remote-erase-command-support----1438084---"></a>远程“清除”命令支持 <!-- 1438084 -->
-
-管理员将可以远程发出清除命令。
-
-> [!IMPORTANT]
-> 由于清除命令无法撤消，因此应谨慎使用。
-
-清除命令不仅会从设备中删除所有数据（包括操作系统）， 还会从 Intune 管理范围中删除设备。 不过，并不会向用户发出警告，而是在命令发出后立即执行清除操作。
-
-将可以配置 6 位恢复 PIN。 此 PIN 可用于解锁已清除的设备，此时将开始重新安装操作系统。 开始清除后，PIN 便会显示在 Intune 中设备概述边栏选项卡上的状态栏中。 只要清除正在进行中，PIN 就会一直显示。 清除完成后，设备便会从 Intune 管理范围中完全消失。 请务必记录恢复 PIN。这样一来，无论是谁恢复设备，都可以使用它。
-
 ### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Windows 搜索结果中的 Windows 信息保护 (WIP) 加密数据 <!-- 1469193 -->
 
 借助 Windows 信息保护 (WIP) 策略中的新设置，可以控制是否在 Windows 搜索结果中添加 WIP 加密数据。
 
-### <a name="website-learning-mode----1631908---"></a>网站学习模式 <!-- 1631908 -->
-
-Intune 将引入 Windows 信息保护 (WIP) 学习模式扩展。 除了查看已启用 WIP 的应用的相关信息外，还将可以查看与网站共享工作数据的设备的摘要。 通过此信息，可以确定应将哪些网站添加到组和用户 WIP 策略中。
-
-### <a name="updates-to-compliance-emails---1637547---"></a>更新了符合性电子邮件 <!--1637547 -->
-
-如果发送电子邮件来报告不符合设备，其中将包括不符合设备的详细信息。 下面的文章将进行更新以体现这一点：[自动执行解决不符合问题所需的操作](#actions-for-noncompliance)。
-
-###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>已到期令牌和即将到期令牌的警报 <!-- 1639263 -->
-概述页将显示已到期令牌和即将到期令牌的警报。 单击一个令牌的警报后，将转到令牌的详细信息页。  如果单击多个令牌的警报，将转到所有令牌及其状态的列表。 管理员应在到期日期之前续订令牌。
-
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>通过安全网络远程打印 <!-- 1709994  -->
 使用 PrinterOn 的无线移动打印解决方案，用户将可以随时随地通过安全网络进行远程打印。 PrinterOn 将集成适用于 iOS 和 Android 的 Intune APP SDK。 将可以通过管理控制台中的 Intune“应用保护策略”边栏选项卡，将应用保护策略定目标到此应用。 最终用户将能够通过 Play 商店或 iTunes 下载“PrinterOn for Microsoft”应用，以便在 Intune 生态系统内使用。
 
-### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>审核适用于 Android for Work 的“公司门户”应用 <!--1797090 -->
-如果组织使用 Android for Work，将需要手动审核适用于 Android 的“公司门户”应用，以便它能够继续从托管的 Google Play 商店接收自动更新。
 
-### <a name="faceid-on-ios-devices----1807377---"></a>iOS 设备上的 FaceID<!-- 1807377 -->
-Intune 应用保护策略现在支持用于在 iOS 设备上控制 FaceID 的设置。 此设置适用于支持 FaceID 功能的设备（目前仅限 iPhone X）。 此设置与当前支持的 TouchID 控件相互独立。 组织可以选择是否信任 FaceID 作为有效的 PIN 提示，以将其作为 TouchID 控件的替代方式。
 
 ### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>适用于 Intune 的 Microsoft Graph API - 正式版本 <!-- 1833289 -->
-借助 Microsoft Graph 中的 Intune API，将可以编程方式访问数据和方法，从而自动执行 Intune 服务的管理操作。  通过这些 API 的正式版本，客户、合作伙伴和开发人员将能够利用这些 API 与内部或商业解决方案集成，这些解决方案需要或与 Intune 支持或其他通过 Microsoft Graph 提供的 Microsoft 服务支持相关。
+借助 Microsoft Graph 中的 Intune API，将可以编程方式访问数据和方法，从而自动执行 Intune 服务的管理操作。  通过这些 API 的正式版本，客户、合作伙伴和开发人员将能够利用这些 API 与内部或商业解决方案集成，这些解决方案需要 Intune 支持或其他通过 Microsoft Graph 提供的 Microsoft 服务支持，或与之相关。
 
 <!-- the following are present prior to 1801 -->
 
 ### <a name="app-protection-policies-----679615---"></a>应用保护策略<!-- 679615 -->
 Intune 应用保护策略将提供创建默认全局策略的功能，以便快速对整个租户中所有用户启用保护。
 
-### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>撤销 iOS 批量采购计划应用<!-- 820863 -->
-对于具有一个或多个 iOS 批量采购计划 (VPP) 应用的给定设备，你将能够撤销相关的基于设备的应用许可证。 撤销应用许可证将不会从设备中卸载相关的 VPP 应用。 若要卸载 VPP 应用，必须将分配操作更改为“卸载”。 有关详细信息，请参阅[如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用](vpp-apps-ios.md)。
-
-### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>撤销 iOS 批量采购计划令牌的许可证<!-- 820870 -->
-你将能够撤销给定 VPP 令牌的所有 iOS 批量采购计划 (VPP) 应用的许可证。
-
 ### <a name="new-ios-device-action------1244701---"></a>新的 iOS 设备操作<!-- 1244701 -->
 你可以关闭 iOS 10.3 监督的设备。 此操作会立即关闭设备，而不会向最终用户发出警告。 当你在“设备”工作负载中选择设备时，可以在设备属性中找到“关闭（仅监督）”操作。
 
 ### <a name="intune-provides-the-account-move-operation-----1573558-1579830---"></a>Intune 提供“帐户移动”操作 <!-- 1573558, 1579830 -->
 “帐户移动”将租户从一个 Azure 扩展单元 (ASU) 迁移到另一个。 “帐户移动”可用于两种由客户启动的情景，当你调用请求它的 Intune 支持团队时，也可以是 Microsoft 驱动的情景，其中 Microsoft 需要对后端服务进行调整。 在“帐户移动”期间，租户进入只读模式 (ROM)。 在 ROM 期间，注册、重命名设备、更新符合性状态等服务操作将失败。
-
-
-
-<!-- the following are present prior to 1712 -->
-### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>使用内置应用类型将 Office 365 移动应用分配到 iOS 和 Android 设备<!-- 1332318 -->
-借助内置应用类型，可更轻松地创建 Office 365 应用并将其分配到管理的 iOS 和 Android 设备。 这些应用包括 Word、Excel、PowerPoint 和 OneDrive 等 Office 365 应用。 可将特定应用分配到应用类型并编辑应用信息配置。
-
-### <a name="assignment-conflict-resolution-has-changed-for-ios-store-apps----1480316---"></a>iOS 应用商店应用的分配冲突解决方法已发生更改 <!-- 1480316 -->
-最终用户可能发现 iOS 应用商店应用可用性已发生更改。 目前，如果某个应用被分配到两个组并且在“必需和可用”和“不适用”之间存在冲突，则该应用会被解析为“必需和可用”。 更改后，遇到此冲突的应用会被解析为“不适用”。
 
 对于某个应用被分配到多个组（具有不同应用意向）的情况，这项更改有助于避免混淆。
 
@@ -316,11 +273,16 @@ Intune 应用保护策略将提供创建默认全局策略的功能，以便快�
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>Azure Active Directory 网站可能需要 Intune Managed Browser 应用，并且支持 Managed Browser（公共预览版）的单一登录<!-- 710595 -->   
 利用 Azure Active Directory (Azure AD)，可在移动设备上将对网站的访问限于 Intune Managed Browser 应用。 在 Managed Browser 中，网站数据可保持安全并且独立于最终用户的个人数据。 此外，Managed Browser 支持受 Azure AD 保护的站点的单一登录功能。 通过登录 Managed Browser，或在设备上将 Managed Browser 与由 Intune 管理的其他应用配合使用，用户无需输入凭据，Managed Browser 即可访问受 Azure AD 保护的公司站点。 此功能适用于 Outlook Web Access (OWA) 和 SharePoint Online 等站点，以及通过 Azure 应用代理访问的 Intranet 资源等其他公司站点。
 
+<!-- the following are present prior to 1709 -->
+### <a name="intune-app-protection-and-citrix-mdx-development-tools----709185---"></a>Intune 应用保护和 Citrix MDX 开发工具 <!-- 709185 -->
+可以同时使用 Citrix XenMobile MDX 和 Microsoft Intune 来管理设备和应用。 通过使用此方法，可在使用 Citrix mVPN 技术的同时通过 Intune 应用保护策略管理应用。
+
+能够查找包含适用于iOS 和 Android 的 App Wrapping Tool 和 Intune App SDK 的代码存储库，同时还能集成 Citrix MDX mVPN 技术。
+
 <!-- the following are present prior to 1711 -->
 
-### <a name="redirecting-macos-users-to-our-new-company-portal-app---1380728--"></a>将 macOS 用户重定向到新公司门户应用<!--1380728-->   
+### <a name="redirecting-macos-users-to-the-new-company-portal-app---1380728--"></a>将 macOS 用户重定向到新公司门户应用 <!--1380728-->   
 当最终用户登录公司门户网站注册其 macOS 设备时，系统会将其定向到下载 macOS 版新公司门户应用的页面，以便完成此过程。 使用 OS X El Capitan 10.11 或更高版本的 macOS 设备会出现这种情况。 
-
 
 <!-- the following are present prior to 1709 -->
 

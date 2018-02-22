@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b24b7615c6070614bb19aac0f4edb7d12ddc65c5
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -137,11 +137,11 @@ Intune 提供两个部署选项：独立和混合。 “独立”是指在云中
 
 详细了解以下 Intune 标识要求：
 
-- [身份要求](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions)。
+- [身份要求](https://docs.microsoft.com/azure/active-directory/understand-azure-identity-solutions)。
 
-- [目录同步要求](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)。
+- [目录同步要求](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
 
-- [多重身份验证要求](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
+- [多重身份验证要求](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
 
 ### <a name="user-and-device-groups"></a>用户和设备组
 
@@ -381,9 +381,9 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定应用配置策略需求。
 #### <a name="compliance-policies"></a>相容性策略
 
-合规性策略确定设备是否满足某些要求。 Intune 使用合规性策略确定设备是否被为合规。 然后，可使用符合性状态限制或允许对公司资源的访问。 如果需要条件访问，建议设计[设备符合性策略](device-compliance.md)。
+合规性策略确定设备是否满足某些要求。 Intune 使用符合性策略确定设备是否被视为符合。 然后，可使用符合性状态限制或允许对公司资源的访问。 如果需要条件访问，建议设计[设备符合性策略](device-compliance.md)。
 
-请参阅要求和用例，确定需要多少设备符合性策略，以及哪些用户组是目标用户组。 此外，还需要确定设备在未签入的状态下处于脱机状态多长时间后，会被视为不符合要求。
+请参阅要求和用例，确定需要多少设备符合性策略，以及哪些用户组是目标用户组。 此外，还需要确定设备在未签入的状态下处于脱机状态多长时间后，会被视为不符合。
 
 下面是如何设计合规性策略的示例：
 
@@ -407,7 +407,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 | **服务** | **新式验证平台** | **基本身份验证** | **用例** |   
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS、Android | 在受 Intune 支持的平台上阻止不合规设备 | 公司、BYOD |
+| Exchange Online | iOS、Android | 在受 Intune 支持的平台上阻止不符合设备 | 公司、BYOD |
 | SharePoint Online | iOS、Android |  | 公司、BYOD |
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定条件访问策略需求。

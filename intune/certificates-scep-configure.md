@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aea88aa8898380c54867090650bd16d8bf60f3c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>使用 Intune 配置和管理 SCEP 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/25/2018
 -  **NDES 服务器**：在运行 Windows Server 2012 R2 或更高版本的服务器上，必须设置网络设备注册服务 (NDES)。 如果在服务器上运行了企业 CA，则同时在该服务器上运行的 Intune 将不支持使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管网络设备注册服务的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。
 NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同一服务器上。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅[结合使用策略模块和网络设备注册服务](https://technet.microsoft.com/library/dn473016.aspx)。
 
--  **Microsoft Intune 证书连接器**：使用 Azure 门户下载“证书连接器”安装程序 (ndesconnectorssetup.exe)。 随后可以在想要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe**。 
+-  **Microsoft Intune 证书连接器**：使用 Azure 门户下载“证书连接器”安装程序 (ndesconnectorssetup.exe)。 然后可以在你想在其上安装证书连接器的承载了网络设备注册服务 (NDES) 角色的服务器上运行 ndesconnectorssetup.exe。 
 -  **Web 应用程序代理服务器**（可选）：使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器。 该配置：
     -  允许设备使用 Internet 连接接收证书。
     -  是设备通过 Internet 连接接收和续订证书时的安全建议。
@@ -65,7 +65,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 ### <a name="accounts"></a>帐户
 
-|名稱|详细信息|
+|名称|详细信息|
 |--------|-----------|
 |**NDES 服务帐户**|指定用作 NDES 服务帐户的域用户帐户。|
 
@@ -232,7 +232,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 3. NDES 服务器收到了长的 URL（查询），要求添加两个注册表项：
 
-    |位置|值|類型|数据|
+    |位置|值|类型|数据|
     |-------|-----|----|----|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxFieldLength|DWORD|65534（十进制）|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534（十进制）|
@@ -299,17 +299,17 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 在此任务中，你将：
 
 - 在 Intune 中启用对 NDES 的支持。
-- 在环境中的某个服务器上下载、安装和配置证书连接器。 要支持高可用性，可在不同服务器上安装多个证书连接器。
+- 在承载环境中的网络设备注册服务 (NDES) 角色的服务器上下载、安装和配置证书连接器。 为提高组织中 NDES 实现的可伸缩性，可安装多个 NDES 服务器，并让每个 NDES 服务器都具有一个 Microsoft Intune 证书连接器。
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>如何下载、安装和配置证书连接器
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. 登录到 Azure 门户中。 
+1. 登录 Azure 门户。 
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 4. 在“设备配置”边栏选项卡上，选择“证书颁发机构”。
 5. 单击“添加”，并选择“下载连接器文件”。 将下载的文件保存到可以从服务器上进行访问的位置，将在该服务器上安装该应用程序。 
-6.  下载完成后，在 Windows Server 2012 R2 服务器上运行下载的安装程序 (**ndesconnectorssetup.exe**)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 （CRP Web 服务 CertificateRegistrationSvc 运行为 IIS 中的应用程序）
+6.  下载完成后，在承载网络设备注册服务 (NDES) 角色的服务器上运行下载的安装程序 (ndesconnectorssetup.exe)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 （CRP Web 服务 CertificateRegistrationSvc 运行为 IIS 中的应用程序）
 
     > [!NOTE]
     > 如果为独立 Intune 安装 NDES，则 CRP 服务会自动随证书连接器一起安装。 如果将 Intune 与 Configuration Manager 配合使用，请以单独的站点系统角色安装证书注册点。

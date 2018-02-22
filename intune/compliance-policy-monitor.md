@@ -15,17 +15,17 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
 符合性报告可帮助管理员分析其组织中设备的符合性状态，并快速解决组织内用户遇到的符合性相关的问题。 你可以查看有关设备的整体符合性状态、各设置的符合性状态、各策略的符合性状态，并向下钻取到各设备，以查看影响设备的特定设置和策略。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 按照以下步骤在 Azure 门户中查找 **Intune 设备符合性仪表板**：
 
@@ -115,7 +115,7 @@ ms.lasthandoff: 01/25/2018
 
     -   处于宽限期
 
-    -   未知
+    -   Unknown
 
     -   错误
 
@@ -133,7 +133,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="per-policy-device-compliance-report"></a>基于策略的设备符合性报告
 
-此报告提供每个符合性策略视图以及每个符合性状态下的设备总数。 **设备符合性仪表板**提供**策略符合性**磁贴，其中显示了管理员先前创建的所有策略、应用策略的平台、符合设备的数量以及不符合设备的数量。
+此报告提供每个符合性策略视图以及每个符合性状态下的设备总数。 设备符合性仪表板中提供策略符合性磁贴，其中显示了管理员先前创建的所有策略、应用策略的平台、符合设备的数量以及不符合设备的数量。
 
 ![基于策略的设备符合性报告](./media/idc-8.png)
 
@@ -143,7 +143,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="per-setting-device-compliance-report"></a>基于设置的设备符合性报告
 
-可通过此报告根据符合性设置查看每个符合性状态下的设备总数。 **设备符合性仪表板**提供**设置符合性**磁贴，其中显示管理员创建的所有设备符合性策略的所有设备符合性策略设置、应用策略设置的平台以及不符合设备的数量。
+可通过此报告根据符合性设置查看每个符合性状态下的设备总数。 设备符合性仪表板中提供设置符合性磁贴，其中显示管理员创建的所有设备符合性策略的所有设备符合性策略设置、应用策略设置的平台以及不符合设备的数量。
 
 ![基于设置的设备符合性报告](./media/idc-10.png)
 

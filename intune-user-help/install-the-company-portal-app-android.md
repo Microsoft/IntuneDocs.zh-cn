@@ -17,15 +17,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0072c3e11c679ea6c5d5cfe8e55d1894c4a5c0f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e63ce5f8f16fff7a758c7fa3ed935acc38b2337d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安装 Android 适用的公司门户应用
 
-公司门户应用使你可以访问公司或学校的应用、电子邮件和 Internet 连接。 此应用可通过保护你的设备安全来帮助保护组织信息的安全 - 例如保持公司应用处于最新版本，或确保设备在一段特定时间后自行锁定。 公司门户应用实现此目的的方式是帮助你[在 Microsoft Intune 中注册设备](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)。
+公司门户应用使你可以访问公司或学校的应用、电子邮件和 Internet 连接。 此应用可通过保护设备安全来帮助保护组织信息的安全 - 例如保持公司应用处于最新版本，或确保设备在一段特定时间后自行锁定。 公司门户应用实现此目的的方式是帮助你[在 Microsoft Intune 中注册设备](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)。
 
 1.  点击“主页” > “Play Store”。
 

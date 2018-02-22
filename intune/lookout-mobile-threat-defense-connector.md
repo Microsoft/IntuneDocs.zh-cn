@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2647875ed6753cf437d4487faf0137e28bd40f43
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout 移动威胁防御连接器与 Intune
 
@@ -28,21 +28,21 @@ ms.lasthandoff: 01/25/2018
 - 安装的恶意应用
 - 恶意网络配置文件
 
-可基于通过 Intune 符合性策略启用的 Lookout 风险评估配置条件性访问策略。 基于检测到的威胁，通过设置允许或阻止不符合要求的设备。
+可基于通过 Intune 符合性策略启用的 Lookout 风险评估配置条件性访问策略。 基于检测到的威胁，通过设置允许或阻止不合规设备。
 
 ## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Intune 和 Lookout 移动威胁防御如何帮助保护公司资源？
 在移动设备上安装并运行 Lookout 移动应用 **Lookout for work**。 此应用可捕获文件系统、网络堆栈以及设备和应用程序遥测（如果有），然后将其发送到 Lookout 云服务，评估设备的移动威胁风险。 可在 Lookout 控制台中更改威胁的风险等级分类以满足你的需求。  
 
 Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则，该规则以 Lookout 风险评估为基础。 启用此规则后，Intune 将评估设备是否符合已启用的策略。
 
-如果发现设备不符合，将阻止对 Exchange Online 和 SharePoint Online 等资源的访问。 被阻止的设备上的用户会收到相关步骤来解决此问题，重新获得访问权限。 从 Lookout for Work 应用启动指南。
+如果发现设备不合规，将阻止对 Exchange Online 和 SharePoint Online 等资源的访问。 被阻止的设备上的用户会收到相关步骤来解决此问题，重新获得访问权限。 从 Lookout for Work 应用启动指南。
 
 ## <a name="supported-platforms"></a>受支持的平台
 在 Intune 中注册时，Lookout 支持以下平台：
 * **Android 4.1 及更高版本**
 * **iOS 8 及更高版本** 有关平台和语言支持的其他相关信息，请访问 [Lookout 网站](https://personal.support.lookout.com/hc/articles/114094140253)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必备条件
 * Microsoft Intune 订阅
 * Azure Active Directory
 * Lookout Mobile EndPoint Security 企业订阅  
@@ -61,7 +61,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 
 **检测到恶意应用时对其进行阻止：**
 
-![关系图：显示在设备因其上的恶意应用而被确定为不合规时阻止访问的条件访问策略](./media/malicious-apps-blocked.png)
+![显示条件访问策略因在设备上检测到恶意软件，而将其确定为不符合时阻止访问的图示](./media/malicious-apps-blocked.png)
 
 **修正后授予访问权限：**
 

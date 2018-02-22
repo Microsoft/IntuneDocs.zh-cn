@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54fa53c8f31171c3719f8368ad07cd33da5f2235
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 0e8a6e52b5bdb9df03af88988f2e4ac49ecf2ab8
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>设置 Lookout 移动威胁防御订阅
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/10/2017
 Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout 和 Intune 集成。 若要启用 Lookout 移动威胁防御服务订阅，Lookout 支持人员 (enterprisesupport@lookout.com) 需要以下信息：  
 
 * **Azure AD 租户 ID**
-* 具有 Lookout 控制台**完全**访问权限的 **Azure AD 组对象 ID**
+* Lookout 控制台**完全**访问权限的**Azure AD 组对象 ID**
 * 具有 Lookout 控制台**受限**访问权限的 **Azure AD 组对象 ID**（可选）
 
 以下步骤介绍了如何收集提供给 Lookout 支持团队的信息。
@@ -59,7 +59,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
   * **完全访问：**Azure AD 管理员可创建具有完全访问权限的用户组，还可创建具有受限访问权限的用户组。  仅这两个组的用户可登录到 **Lookout 控制台**。
   * **受限访问：**该组中的用户无法访问 Lookout 控制台的某些配置和注册相关模块，可对 Lookout 控制台的“安全策略”模块进行只读访问。  
 
-  有关各种权限的详细信息，请参阅 Lookout 网站上的[这篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
+  有关权限的详细信息，请参阅 Lookout 网站上的[此文](https://personal.support.lookout.com/hc/articles/114094105653)。
 
   “组对象 ID”位于“Azure AD 管理控制台”的组“属性”页。
 
@@ -116,7 +116,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 ![Intune 连接器错误管理页面屏幕截图](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
 ## <a name="configure-enrollment-settings"></a>配置注册设置
-在“系统”模块中的“连接器”页上，指定在将设备视为已断开连接之前的天数。  会将断开连接的设备视为不合规，并基于 Intune 条件访问策略阻止它们访问公司应用程序。 可以指定介于 1 到 90 天之间的值。
+在“系统”模块中的“连接器”页上，指定在将设备视为已断开连接之前的天数。  断开连接的设备会被视为不符合，并根据 Intune 条件访问策略，不得访问公司应用程序。 可以指定介于 1 到 90 天之间的值。
 
 ![](../media/mtp/lookout-console-enrollment-settings.png)
 
@@ -131,9 +131,9 @@ Lookout 移动威胁防御将移动威胁分为多种类型。 [Lookout 威胁�
 ![显示威胁和分类的“策略”页面屏幕截图](../media/mtp/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> 风险等级在移动威胁防御中十分重要，因为 Intune 集成将在运行时根据这些风险等级计算设备符合性。 Intune 管理员在策略中设置规则，使其在设备中存在最低等级为**高级**、**中级**或**低级**的活跃威胁时将设备确定为不合规。 Lookout 移动威胁防御中的威胁分类策略直接引导 Intune 中的设备符合性计算。
+> 风险等级在移动威胁防御中十分重要，因为 Intune 集成将在运行时根据这些风险等级计算设备符合性。 Intune 管理员在策略中设置规则，在设备中存在最低等级为高级、中级或低级的活跃威胁时将设备标识为不符合。 Lookout 移动威胁防御中的威胁分类策略直接引导 Intune 中的设备符合性计算。
 
 ## <a name="watching-enrollment"></a>监视注册
-此步骤完成后，Lookout 移动威胁防御将开始轮询 Azure AD，查找与指定注册组相对应的设备。  可在“设备”模块查看有关已注册设备的信息。  设备的初始状态显示为“待定”。  在设备上安装、打开和激活 Lookout for Work 应用后，设备状态将发生改变。  有关如何将 Lookout for Work 应用推送到设备的详细信息，请参阅[配置并部署 Lookout for Work 应用](configure-deploy-lookout-for-work-app.md)主题。
+此步骤完成后，Lookout 移动威胁防御将开始轮询 Azure AD，查找与指定注册组相对应的设备。  可在“设备”模块查看有关已注册设备的信息。  设备的初始状态显示为“待定”。  安装、打开并激活 Lookout for Work 应用后，设备状态将发生更改。  有关如何将 Lookout for Work 应用推送到设备的详细信息，请参阅[配置并部署 Lookout for Work 应用](configure-deploy-lookout-for-work-app.md)主题。
 ## <a name="next-steps"></a>后续步骤
 [启用 Lookout MTP 连接 Intune](/intune-classic/deploy-use/enable-lookout-mtd-connection)

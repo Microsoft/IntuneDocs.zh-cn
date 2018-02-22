@@ -2,10 +2,10 @@
 title: "Microsoft Intune App SDK Cordova 插件"
 description: 
 keywords: "sdk、Cordova、intune"
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,23 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00c1c805dbbf661bdcd4ad6b153fee8b2bbba9ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova 插件
 
-> [!NOTE]
-> 你可能希望首先阅读 [ Intune App SDK 入门指南](app-sdk-get-started.md)一文，其中介绍了如何为每个受支持的平台上的集成做准备。
+> [!IMPORTANT]
+> Intune 对 Microsoft Intune App SDK Cordova 插件的支持于 2018 年 5 月 1 日结束。 建议改为使用 Intune App Wrapping Tool。 有关 App Wrapping Tool 的详细信息，请参阅 [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) 和 [App Wrapping Tool for Android](app-wrapper-prepare-android.md)。 有关此更改的详细信息，请参阅 [Microsoft Intune 新增功能](whats-new.md)中的[通知](whats-new.md#notices)部分。
 
 ## <a name="overview"></a>概述
 
 使用 Cordova 构建的 iOS 和 Android 应用中的 [Intune App SDK Cordova 插件](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 该插件允许开发人员将 Intune 应用和数据保护功能集成到基于 Cordova 的应用中。
+
+> [!NOTE]
+> 你可能希望首先阅读 [ Intune App SDK 入门指南](app-sdk-get-started.md)一文，其中介绍了如何为每个受支持的平台上的集成做准备。
 
 你会发现你可以在不改变应用行为的情况下启用 SDK 功能。 一旦将插件内置到 iOS 或 Android 应用中，Microsoft Intune 管理员就能够部署 Intune 应用保护策略，该策略由各种数据保护功能组成。 插件已生成，将自动执行 Cordova 生成过程中的大部分步骤。 因此，你能够快速启用应用以进行 Intune 应用保护。 若要开始，请根据目标平台按照以下步骤操作。
 
@@ -45,7 +48,7 @@ ms.lasthandoff: 01/25/2018
 
 使用 Intune App SDK Cordova 插件生成的 Cordova 应用现在可以在已注册和未注册 Intune 移动设备管理 (MDM) 的设备上接收 Intune 应用保护策略。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必备条件
 
 ### <a name="android"></a>Android
 
@@ -65,7 +68,7 @@ ms.lasthandoff: 01/25/2018
 
 
 
-## <a name="quick-start"></a>快速入门
+## <a name="quickstart"></a>quickStart
 
 1. 更新 ADAL 版本：
 

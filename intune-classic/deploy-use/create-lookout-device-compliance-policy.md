@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ee11809349999a795aca0a373724ce18eedbe65
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f649227c6ad49cd9c788e75097bc4a5eeb71f350
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>在 Intune 中创建 Lookout 设备符合性策略
 
@@ -39,14 +39,14 @@ ms.lasthandoff: 10/10/2017
   ![显示设备威胁保护规则设置的屏幕截图](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. 选择**允许的最大威胁级别**：
-  * **无(安全)**：这是最安全的选项。  设备不能存在任何威胁，且仍可访问公司资源。  如果发现了任何威胁，设备都将被视为不合规。  
+  * **无(安全)**：这是最安全的选项。  设备不能存在任何威胁，且仍可访问公司资源。  如果发现了任何威胁，设备都会被评估为不符合。  
   * **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
-  * **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果设备中检测到高级威胁，则视为不合格。
+  * **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不符合。
   * **高**：这是最不安全的选项。 此选项允许所有威胁级别，且仅将 Lookout 移动威胁防护用作报告目的。
 
 ![显示设备威胁保护规则设置威胁等级选项的屏幕截图](../media/mtp/mtp-compliance-policy-setting.png)
 
-如果为 Office 365 或其他服务创建条件性访问策略，将考虑上述合规性评估，阻止不合规的设备访问这些服务，直到解决威胁。
+如果为 Office 365 或其他服务创建条件性访问策略，将评估该符合性并阻止不符合设备访问这些服务，直到解决威胁。
 
 ## <a name="monitor-device-threats"></a>监视设备威胁
 若要查看设备的合规性状态，请转到 [Intune 管理员控制台](https://manage.microsoft.com)，然后查看“所有设备”。

@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23155cbb84c2d170f1b0216981621e35fd3ac0f1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 创建移动威胁防御 (MTD) 设备符合性策略
 
@@ -52,18 +52,18 @@ MTD 设备符合性策略先决条件：
 
 7.  在“设备运行状况”边栏选项卡上，从“要求设备不高于移动威胁防御级别”下的下拉列表中选择移动威胁级别。
 
-    a.  **安全**：这是最安全的选项。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都将被视为不合规。
+    a.  **安全**：这是最安全的选项。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
 
     b.  **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
 
-    c.  **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果设备中检测到高级威胁，则视为不合格。
+    c.  **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不符合。
 
     d.  **高**：这是最不安全的选项。 此选项将许可所有威胁级别，且仅将移动威胁防御用作报告目的。 设备必须使用此设置激活 MTD 应用。
 
 8.  单击“确定”两次，然后选择“创建”。
 
 > [!IMPORTANT]
-> 如果为 Office 365 或其他服务创建条件性访问策略，将考虑上述合设备符合性评估，阻止不合规的设备访问公司资源，直到解决威胁。
+> 如果为 Office 365 或其他服务创建条件性访问策略，将评估设备的符合性并阻止不符合设备访问公司资源，直到解决威胁。
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>分配 MTD 设备符合性策略
 

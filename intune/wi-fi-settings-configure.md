@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 161b0de7d697a4ed2d8f80dffdef71296eb6ced2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 
@@ -33,6 +31,8 @@ ms.lasthandoff: 01/25/2018
 2. 将该配置文件分配到包含所有 iOS 设备用户的组。
 3. 用户在其设备上的无线网络列表中找到新的 Contoso Wi-Fi 网络，然后即可轻松连接到它。
 
+## <a name="supported-device-platforms"></a>支持的设备平台
+
 Wi-Fi 配置文件支持以下设备平台：
 
 - Android 4 及更高版本
@@ -40,7 +40,7 @@ Wi-Fi 配置文件支持以下设备平台：
 - iOS 8.0 及更高版本
 - macOS（Mac OS X 10.9 及更高版本）
 
-对于运行 Windows 8.1、Windows 10 和 Windows 10 移动版的设备，你可以导入之前从另一台设备导出的 Wi-Fi 配置。
+对于运行 Windows 8.1、Windows 10、Windows 10 移动版和 Windows Holographic for Business 的设备，可以导入之前从另一台设备导出的 Wi-Fi 配置。
 
 使用本主题中的信息了解有关配置 Wi-Fi 配置文件的基础知识，然后深入阅读有关每个平台的主题以了解设备详情。
 
@@ -58,13 +58,22 @@ Wi-Fi 配置文件支持以下设备平台：
     - **iOS**
     - **macOS**
     - **Windows 8.1 及更高版本（导入配置文件）**
-6. 从“配置文件类型”下拉列表中，选择“Wi-Fi 基本”或“Wi-Fi 企业”。 可使用“Wi-fi 基本”来提供基本功能，如网络名称和 SSID。 “Wi-Fi 企业”允许你提供更高级的信息，如可扩展身份验证协议 (EAP)（如果你的 Wi-Fi 网络使用此协议）。 “Wi-Fi 导入”（适用于 Windows 8.1 和 Windows 10）允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
-7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
+
+   > [!IMPORTANT]
+   > 如果要为运行 Windows 10（包括 Windows Holographic for Business）的设备创建配置文件，必须选择“Windows 8.1 及更高版本”平台。 “Windows 10 及更高版本”平台不包含 Wi-Fi 配置文件类型。 
+
+6. 对于 Apple 或 Android 设备，请在“WiFi 类型”下拉列表中，选择“基本”或“企业”。 可使用“基本”来提供基本功能，如网络名称和 SSID。 “企业”允许提供更高级的信息，如可扩展身份验证协议 (EAP)（如果你的 Wi-Fi 网络使用此协议）。 
+
+   “Wi-Fi 导入”（适用于 Windows 8.1 及更高版本）允许以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
+1. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
     - [Android 和 Android for Work 设置](wi-fi-settings-android.md)
     - [iOS 设置](wi-fi-settings-ios.md)
     - [macOS 设置](wi-fi-settings-macos.md)
-    - [Windows Phone 8.1 设置](wi-fi-settings-import-windows-8-1.md)
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+    - [Windows 8.1 及更高版本设置](wi-fi-settings-import-windows-8-1.md)（包括 Windows Holographic for Business）
+1. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
+系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
+
+## <a name="next-steps"></a>后续步骤
+
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。

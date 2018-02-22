@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69fc2959c7694a0120efff8653ce8d619f33a9d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 macOS 设备限制设置
 
@@ -30,7 +28,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。
     -   **所需密码类型** - 指定密码是否可以仅由数值组成，还是必须为字母数字（包含字母和数字）。 仅在 Mac OS X 10.10.3 及更高版本上支持此设置。
-    -   **密码中的非字母数字字符数** - 指定密码中必须包含的复杂字符数（**0** 至 **4**）。<br>复杂字符是一个符号，如 **?**
+    -   **密码中的非字母数字字符数** - 指定密码中必须包含的复杂字符数（**0** 至 **4**）。<br>复杂字符是一个符号，例如“?”。
     -   **最短密码长度** - 输入用户必须配置的最短密码长度（介于 **4** 到 **16** 个字符之间）。
     -   **简单密码** - 允许使用简单密码，如 **0000** 或 **1234**。
     -   **要求提供密码前，屏幕锁定后的最大分钟数** - 指定在需要密码来进行解锁之前，计算机必须保持非活动状态的时间。
@@ -42,8 +40,8 @@ ms.lasthandoff: 01/25/2018
 
 在受限制的应用列表中，可以配置以下列表之一：
 
-**禁止的应用**列表 - 列出用户不得安装和运行的应用（未由 Intune 托管）。
-**批准的应用**列表 - 列出允许用户安装的应用。 为了保持相容状态，用户不得安装未列出的应用。 自动允许由 Intune 托管的应用。
+- **禁止的应用**列表 - 列出用户不得安装和运行的应用（未由 Intune 托管）。 不阻止用户安装已禁止的应用，但如果用户这样做，系统会向你报告。
+- **批准的应用**列表 - 列出允许用户安装的应用。 用户不得安装未列出的应用。 自动允许由 Intune 托管的应用。 不阻止用户安装不在已批准列表的应用，但如果用户这样做，系统会向你报告。
 
 若要配置列表，请单击“添加”，然后指定你选择的名称、应用发布者（可选）和该应用的捆绑 ID（例如 *com.apple.calculator*）。
 

@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97f9407c8ba93307059e44c8becf4f7a36c6861a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67d8a6eb4f284cf1922f9f79a8b767c124b66b06
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 
 从 Intune 1704 版本开始，可将应用保护策略用于 Windows 10，在未注册设备的情况下保护应用。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 我们来讨论一些添加 WIP 策略的概念。
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="pre-requisites"></a>先决条件
 
-必须先配置 MAM 提供程序，然后才可以创建 WIP 应用保护策略。 详细了解[如何通过 Intune 配置 MAM 提供程序](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)。
+必须先配置 MAM 提供程序，然后才可以创建 WIP 应用保护策略。 详细了解[如何通过 Intune 配置 MAM 提供程序](app-protection-policies-configure-windows-10.md)。
 
 此外，还需要具有以下各项：
 
@@ -123,11 +123,13 @@ ms.lasthandoff: 01/25/2018
 <!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 添加要使用 WIP 保护的应用后，必须使用“WIP Learning” 应用保护模式。
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>在开始之前
 
-WIP Learning 是一个报表，用于监视 WIP 未知的应用。 未知应用指不是由组织的 IT 部门部署的应用。 在“块”模式下强制执行 WIP 前，可从报告中导出这些应用并将其添加到 WIP 策略，以避免生产力中断。
+WIP Learning 是一个报表，用于监视已启用 WIP 和 WIP 未知的应用。 未知应用指不是由组织的 IT 部门部署的应用。 在“块”模式下强制执行 WIP 前，可从报告中导出这些应用并将其添加到 WIP 策略，以避免生产力中断。
 
-对在允许的应用列表上具有相应应用的小组进行验证时，建议从“无提示”或“允许覆盖”开始。 完成后，可以更改为最终的强制策略“块”。
+<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+
+使用已启用 WIP 和 WIP 未知的应用时，建议对在允许的应用列表上具有相应应用的小组进行验证时，从“无提示”或“允许覆盖”开始。 完成后，可以更改为最终的强制策略“块”。
 
 ### <a name="what-are-the-protection-modes"></a>什么是保护模式？
 
@@ -151,7 +153,7 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
     ![Learning 模式屏幕截图](./media/learning-mode-sc1.png)
 
-1.  选择**“保存”**。
+1.  选择“保存”。
 
 ### <a name="use-wip-learning"></a>使用 WIP Learning
 
