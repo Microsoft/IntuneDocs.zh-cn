@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>移动应用程序管理故障排除
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 10/10/2017
 
 这些是 IT 管理员使用 Intune 应用保护策略可能会遇到的常见问题。
 
-| 问题 | 说明 | 解决方法 |
+| 问题 | 描述 | 解决方法 |
 | -- | -- | -- |
 | 策略不适用于 Skype for Business | Azure 门户中制定的无需设备注册的应用保护策略不适用于 iOS 和 Android 设备上的 Skype for Business 应用。 | 必须将 Skype for Business 设置为进行新式验证。  请按照[为租户启用新式验证](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)中的指示为 Skype 设置新式验证。 |
 | Office 应用策略不适用 | 应用保护策略不适用于任何用户的任何[支持的 Office 应用](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。 | 确认用户已获得 Intune 许可，且 Office 应用是某个已部署的应用保护策略的目标对象。 可能需要最多 8 小时来使新部署的应用保护策略生效。 |
@@ -105,7 +105,7 @@ Android | **需要公司门户**：若要将工作或学校帐户用于此应用
 **未找到应用**：组织不允许使用此设备上的任何应用来打开此内容。 请联系你的 IT 管理员获取帮助。 | 用户尝试使用另一个应用打开工作或学校数据，但 Intune 找不到任何其他有权打开该数据的托管应用。 | 确保将 Android 应用保护策略部署到用户的安全组，并至少再以另一个启用了 MAM 且可打开相关数据的应用为目标。
 **登录失败**：重试登录。 如果此问题仍然存在，请与 IT 管理员联系以寻求帮助。 | 未能验证用户登录时尝试使用的帐户。 | 确保用户使用已注册 Intune MAM 服务的工作或学校帐户（第一个成功登录到此应用的工作或学校帐户）登录。 <br><br> 清除应用数据。 <br><br> 确保应用版本为最新。 <br><br> 确保公司门户版本为最新版。
 **需要 Internet 连接**：必须连接到 Internet 才可验证是否可使用此应用。 | 设备未连接到 Internet。 | 将设备连接到 WiFi 或数据网络。
-**设备不合规**：无法使用此应用，因为你正在使用已取得 root 权限的设备。 请联系你的 IT 管理员获取帮助。 | Intune 检测到用户正在使用已取得 root 权限的设备。 | 将设备重置为默认出厂设置。
+**设备不符合**：无法使用此应用，因为正在使用具有 root 权限的设备。 请联系你的 IT 管理员获取帮助。 | Intune 检测到用户正在使用已取得 root 权限的设备。 | 将设备重置为默认出厂设置。
 **帐户未设置**：此应用必须由 Microsoft Intune 托管，但帐户尚未设置。 请联系你的 IT 管理员获取帮助。 | 用户帐户没有 Intune A Direct 许可证。 | 确保用户的帐户在 [Office 门户](http://portal.office.com)中分配有 Intune 许可证。
 **无法注册应用**：此应用必须由 Microsoft Intune 托管，但目前无法注册此应用。 请联系你的 IT 管理员获取帮助。 | 需要应用保护策略时，未能自动向 MAM 服务注册该应用。 | 清除应用数据。 <br><br> 通过公司门户应用将日志发送给 Intune，或在[此处](how-to-get-support-for-microsoft-intune.md)提供支持票证。
 
