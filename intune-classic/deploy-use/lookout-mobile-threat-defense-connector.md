@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1e04113d2f8707be0d06cb0783e6113914b856a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout 移动威胁防御连接器与 Intune
 
@@ -30,14 +30,14 @@ ms.lasthandoff: 10/10/2017
 - 安装的恶意应用
 - 恶意网络配置文件
 
-可基于通过 Intune 符合性策略启用的 Lookout 风险评估配置条件性访问策略。 基于检测到的威胁，通过设置允许或阻止不符合要求的设备。
+可基于通过 Intune 合规性策略启用的 Lookout 风险评估配置条件性访问策略。 基于检测到的威胁，通过设置允许或阻止不合规设备。
 
 ## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Intune 和 Lookout 移动威胁防御如何帮助保护公司资源？
 在移动设备上安装并运行 Lookout 移动应用 **Lookout for work**。 此应用可捕获文件系统、网络堆栈以及设备和应用程序遥测（如果有），然后将其发送到 Lookout 云服务，评估设备的移动威胁风险。 可在 Lookout 控制台中更改威胁的风险等级分类以满足你的需求。  
 
 Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则，该规则以 Lookout 风险评估为基础。 启用此规则后，Intune 将评估设备是否符合已启用的策略。
 
-如果发现设备不符合，将阻止对 Exchange Online 和 SharePoint Online 等资源的访问。 被阻止的设备上的用户会收到相关步骤来解决此问题，重新获得访问权限。 从 Lookout for Work 应用启动指南。
+如果发现设备不合规，将阻止对 Exchange Online 和 SharePoint Online 等资源的访问。 被阻止的设备上的用户会收到相关步骤来解决此问题，重新获得访问权限。 从 Lookout for Work 应用启动指南。
 
 ## <a name="supported-platforms"></a>受支持的平台：
 在 Intune 中注册时，Lookout 支持以下平台：
@@ -61,9 +61,9 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 * 访问公司应用
 
 **检测到恶意应用时阻止：**
-![显示条件访问策略在设备上检测到恶意软件，而将其确定为不合规时阻止访问的图示](../media/mtp/malicious-apps-blocked.png)
+![显示条件访问策略在设备上检测到恶意软件，而将其确定为不符合时阻止访问的图示](../media/mtp/malicious-apps-blocked.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![显示条件访问策略在解除威胁后将设备确定为合规时授予访问权限的图示](../media/mtp/malicious-apps-unblocked.png)
 
@@ -73,7 +73,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 **阻止通过 WiFi 的网络访问：**
 ![基于网络威胁阻止 WiFi 访问的条件访问图示](../media/mtp/network-wifi-blocked.png)
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![条件访问在解除威胁后允许访问的图示](../media/mtp/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
@@ -85,7 +85,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 ![条件访问基于检测到的威胁阻止设备访问 SharePoint Online 的图示](../media/mtp/network-spo-blocked.png)
 
 
-**威胁解除后授予访问权限：**
+**修正后授予访问权限：**
 
 ![条件访问在解除网络威胁后允许访问的图示](../media/mtp/network-spo-unblocked.png)
 

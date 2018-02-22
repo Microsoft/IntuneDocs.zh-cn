@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7995b79422a142f3eb8d5e81d81dbc525fbbb696
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中创建适用于 Android 设备的设备符合性策略
 
@@ -103,9 +103,9 @@ ms.lasthandoff: 01/25/2018
 - **所需的最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 用户可以选择升级其设备，升级后他们可以访问公司资源。
 - **允许的最高操作系统版本**：设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>不符合性设置如何与条件访问策略一起使用？
+## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>如何配合使用不符合性设置与条件访问策略？
 
-下表说明了将符合性策略与条件访问策略一起使用时如何管理不符合性设置。
+下表说明了将合规性策略与条件访问策略一起使用时如何管理非合规性设置。
 
 --------------------
 

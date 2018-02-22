@@ -18,9 +18,9 @@
 - Windows 10 移动版
 - Windows 10 IoT 企业版（x86、x64）
 - Windows 10 IoT 移动企业版
-- Windows 全息版和 Windows 全息企业版
+- Windows Holographic for Business
 
-  有关管理 Microsoft HoloLens 设备的信息，请参阅[在 MDM 中注册 HoloLens](https://docs.microsoft.com/hololens/hololens-enroll-mdm)。
+  如需深入了解如何管理运行 Windows Holographic for Business 的设备，请参阅 [Window Holographic for Business 支持](../windows-holographic-for-business.md)。
 
 - Windows Phone 8.1、Windows 8.1 RT、运行 Windows 8.1（持续模式）的电脑
 

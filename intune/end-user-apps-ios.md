@@ -14,11 +14,11 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31bb6cf7d118e121a5a8d8a74f92c2b3cf5da7bc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 52d9c05d0bb2ed1c8592ac3b2c5cdeb07114367d
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 用户如何获取其应用
 
@@ -47,7 +47,7 @@ Apple 限制禁止公司门户应用列出业务线应用和托管应用商店�
 
 ![iOS 公司门户应用屏幕](./media/ios-cp-app-main-apps-screen.png)
 
-有关如何添加应用并将其放入这些磁贴的信息，请参阅[将已注册设备的应用添加到 Intune](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)。
+有关如何添加应用的相关信息，请参阅[如何将应用添加到 Microsoft Intune](apps-add.md)。
 
 ### <a name="see-also"></a>另请参阅
 [Android 用户如何获取其应用](end-user-apps-android.md)

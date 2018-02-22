@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/25/2018
 >注册限制不是安全功能。 遭到入侵的设备可能会误报字符。 这些限制是针对非恶意用户的最合适的障碍。
 
 >[!NOTE]
->下面所述的组分配注册限制和优先级功能即将在 Intune 客户群间推出。 此次推出完成之前，你可能无权访问组和优先级功能。 
+>下面所述的组分配注册限制和优先级功能即将在 Intune 客户群间推出。 此次推出完成之前，你可能无权访问组和优先级功能。
 
 可创建的特定注册限制包括：
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/25/2018
   - Android 和 Android for Work 支持 major.minor.rev.build。
   - iOS 支持 major.minor.rev。
   - Windows 仅对 Windows 10 支持 major.minor.rev.build。
-  操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。 
+  操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
 8. 指定是否对每个列出的平台允许或阻止个人拥有的设备。
 
     ![设备限制工作区的屏幕截图，含默认设备平台配置，其中显示已配置“个人拥有的”设置。](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ ms.lasthandoff: 01/25/2018
     ![含设备限制的设备限制边栏选项卡的屏幕截图。](./media/device-restrictions-limit.png)
 6. 单击 **“保存”**。
 
+最终用户将看到一条通知，告知他们何时达到了注册设备限制。 例如，iOS 上的通知如下所示：
+
+![iOS 设备限制通知的屏幕截图](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>更改注册限制优先级
 
-当用户在分配有限制的多个组中时，则使用优先级。 用户仅遵循其所在组分配到的最高优先级的限制。 例如，Joe 位于优先级为 5 的限制的 A 组和优先级为 2 的限制的 B 组。 Joe 仅遵循优先级为 2 的限制。 
+当用户在分配有限制的多个组中时，则使用优先级。 用户仅遵循其所在组分配到的最高优先级的限制。 例如，Joe 位于优先级为 5 的限制的 A 组和优先级为 2 的限制的 B 组。 Joe 仅遵循优先级为 2 的限制。
 
 创建限制时，将其添加到默认值正上方的列表中。
 
-设备注册同时包括设备类型和设备限制的默认限制。 这两个限制应用于所有用户，除非由更高优先级的限制替代。 
+设备注册同时包括设备类型和设备限制的默认限制。 这两个限制应用于所有用户，除非由更高优先级的限制替代。
 
-可更改任何非默认限制的优先级。 
+可更改任何非默认限制的优先级。
 
 **更改限制优先级**
 
@@ -120,8 +124,3 @@ ms.lasthandoff: 01/25/2018
 3. 选择“设备注册” > “注册限制”。
 4. 将鼠标悬停在优先级列表中的限制上。
 5. 使用三个垂直点，将优先级拖到列表中的所需位置。
-
-
-
-
-

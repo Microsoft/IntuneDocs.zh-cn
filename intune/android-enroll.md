@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a37497dcf015a611e8b770b5a28e519c0e397c87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
@@ -49,6 +49,9 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="add-android-for-work-binding-for-intune"></a>为 Intune 添加 Android for Work 绑定
 
+> [!NOTE]
+> 因为 Google 和 Microsoft 域之间的交互，此步骤可能需要调整浏览器设置才能成功完成。  请确保“portal.azure.com”和“play.google.com”在浏览器中位于同一安全区域。
+
 1. **设置 Intune MDM**<br>
 如果你尚未准备就绪，请将[移动设备管理机构设置](mdm-authority-set.md)为“Microsoft Intune”。
 2. **配置 Android for Work 绑定**<br>
@@ -64,11 +67,10 @@ ms.lasthandoff: 01/25/2018
    对于“组织名称”，提供你公司的名称。 对于企业移动性管理 (EMM) 提供程序，应显示 Microsoft Intune。 同意 Android for Work 协议，然后选择“确认”。 你的请求会进行处理。
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>指定 Android for Work 注册设置
-   Android for Work 仅在特定 Android 设备上受支持。 请参阅 Google 的 [Android for Work 要求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")。 支持 Android for Work 的任何设备也支持传统的 Android 管理。 Intune 允许你指定应如何管理支持 Android for Work 的设备：
+Android for Work 仅在特定 Android 设备上受支持。 请参阅 Google 的 [Android for Work 要求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22)。 支持 Android for Work 的任何设备也支持传统的 Android 管理。 通过 Intune 可以指定应如何在[注册限制](enrollment-restrictions-set.md)范围内管理支持 Android for Work 的设备。
 
-   - 将所有设备作为 Android 管理。 所有 Android 设备（包括支持 Android for Work 的设备）均将注册为传统的 Android 设备。
-   - 将受支持设备作为 Android for Work 管理。 将支持 Android for Work 的所有设备均注册为 Android for Work 设备。 不支持 Android for Work 的任何 Android 设备都注册为传统的 Android 设备。
-   - 仅为这些用户组中的用户将受支持设备作为 Android for Work 管理。 可以将 Android for Work 管理目标定位到有限的一组用户。 只有所选组中注册支持 Android for Work 的设备的成员才会注册为 Android for Work 设备。 所有其他成员都会注册为 Android 设备。 这在 Android for Work 试验期间很有用。
+- **阻止（默认设置）**：所有 Android 设备（包括支持 Android for Work 的设备）均将注册为传统的 Android 设备。
+- **允许**：将支持 Android for Work 的所有设备均注册为 Android for Work 设备。 不支持 Android for Work 的任何 Android 设备都注册为传统的 Android 设备。
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>在托管的 Google Play 商店中批准公司门户应用
 需要在托管的 Google Play 商店中批准适用于 Android 的公司门户应用，确保该应用收到自动应用更新。 如不批准，公司门户最终会过时，并无法在 Microsoft 发布重要的 bug 修补程序或新功能时收到它们。

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 362c7f4dc9acfe574eb6a98819339e2db44cb9ec
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>使用 Microsoft Intune 策略管理设备上的设置和功能
 
@@ -173,7 +173,7 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
         - 擦除设备前允许的重复登录失败次数
         - 需要提供密码之前处于非活动状态的分钟数
         - 所需密码类型 - 最小字符集数
-        - 允许照相机
+        - 允许相机
         - 需要对移动设备加密
         - 允许可移动存储
         - 允许 Web 浏览器

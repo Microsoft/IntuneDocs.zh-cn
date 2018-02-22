@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e3821f40cdf1c36f020bf807eed5c6fbd83a9aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置自定义设备设置
 
@@ -47,14 +45,15 @@ ms.lasthandoff: 01/25/2018
     - **Windows Phone 8.1**
     - **Windows 10 及更高版本**
 6. 从“配置文件”类型下拉列表中，选择“自定义”。
-7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
+7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
     - [Android 设置](custom-settings-android.md)
     - [iOS 设置](custom-settings-ios.md)
     - [macOS 设置](custom-settings-macos.md)
     - [Windows Phone 8.1 设置](custom-settings-windows-phone-8-1.md)
     - [Windows 10 设置](custom-settings-windows-10.md)
+    - [Windows Holographic for Business 设置](custom-settings-windows-holographic.md)
     - [Android for Work 设置](custom-settings-android-for-work.md)
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
+系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。

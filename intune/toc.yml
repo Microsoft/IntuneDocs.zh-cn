@@ -287,6 +287,26 @@
           items:
             - name: 选择性地擦除应用
               href: apps-selective-wipe.md
+            - name: 使用应用保护策略
+              href: app-protection-policy.md
+              items:
+                - name: 创建应用保护策略
+                  href: app-protection-policies.md
+                  items:
+                    - name: Android 设置
+                      href: app-protection-policy-settings-android.md
+                    - name: iOS 设置
+                      href: app-protection-policy-settings-ios.md
+                - name: 验证应用保护策略
+                  href: app-protection-policies-validate.md
+                - name: 监视应用保护用户状态
+                  href: app-protection-policies-monitor.md
+                - name: 准备使用 WIP 应用保护策略
+                  href: app-protection-policies-configure-windows-10.md
+                - name: 创建和分配 WIP 应用保护策略
+                  href: windows-information-protection-policy-create.md
+                - name: 管理 iOS 应用之间的数据传输
+                  href: data-transfer-between-apps-manage-ios.md
     - name: 配置设备
       href: device-profiles.md
       items:
@@ -444,28 +464,8 @@
           href: conditional-access-integrate-jamf.md
         - name: 在使用 Jamf Pro 管理的 Mac 上强制实现符合性
           href: conditional-access-assign-jamf.md
-    - name: 保护应用和设备数据
+    - name: 保护设备数据
       items:
-        - name: 使用应用保护策略
-          href: app-protection-policy.md
-          items:
-            - name: 创建应用保护策略
-              href: app-protection-policies.md
-              items:
-                - name: Android 设置
-                  href: app-protection-policy-settings-android.md
-                - name: iOS 设置
-                  href: app-protection-policy-settings-ios.md
-            - name: 验证应用保护策略
-              href: app-protection-policies-validate.md
-            - name: 监视应用保护用户状态
-              href: app-protection-policies-monitor.md
-            - name: 准备使用 WIP 应用保护策略
-              href: app-protection-policies-configure-windows-10.md
-            - name: 创建和分配 WIP 应用保护策略
-              href: windows-information-protection-policy-create.md
-            - name: 管理 iOS 应用之间的数据传输
-              href: data-transfer-between-apps-manage-ios.md
         - name: 移动威胁防御
           href: mobile-threat-defense.md
           items:
@@ -651,6 +651,8 @@
           href: reports-proc-data-rest.md
         - name: 数据仓库 API 终结点
           href: reports-api-url.md
+        - name: 数据仓库仅应用程序身份验证
+          href: data-warehouse-app-only-auth.md
         - name: 数据库仓库数据模型
           href: reports-ref-data-model.md
           items:

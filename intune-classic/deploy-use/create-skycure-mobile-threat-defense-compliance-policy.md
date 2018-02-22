@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f601253c6ea905e86a2a417cfd37bdb03b1df48b
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ea45ac89064756f4b8ebd8ca9d163a151b6e6cc2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>创建 Skycure 移动威胁防御符合性策略
 
@@ -47,16 +47,16 @@ ms.lasthandoff: 10/10/2017
 
 4.  选择**允许的最大威胁级别**：
 
-    a.  **无(安全)**：这是最安全的选项。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都将被视为不合规。
+    a.  **无(安全)**：这是最安全的选项。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
 
-    b。  **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
+    b.  **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
 
-    c.  **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果设备中检测到高级威胁，则视为不合格。
+    c.  **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不符合。
 
     d.  **高**：这是最不安全的选项。 此选项允许所有威胁级别，且仅将 Skycure 移动威胁防御用作报告目的。
 
 > [!IMPORTANT]
-> 如果为 Office 365 或其他服务创建条件性访问策略，将考虑上述合规性评估，阻止不合规的设备访问这些服务，直到解决威胁。
+> 如果为 Office 365 或其他服务创建条件性访问策略，将评估该符合性并阻止不符合设备访问这些服务，直到解决威胁。
 
 ## <a name="span-idmonitor-device-threats-classanchorspan-idnext-steps-classanchorspan-idtoc477360344-classanchorspanspanspannext-steps"></a><span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>后续步骤
 

@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9cd5b0cddedc70c001ed8c50ecfbbc3334462f9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 040076248629faa40745b16f90b694331c60a9b1
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Intune 的常见使用方式
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/25/2018
 >是否想了解 Microsoft IT 如何使用 Intune 来允许 Microsoft 访问其移动设备上的公司资源，同时保护公司数据？ 若要详细了解 Microsoft IT 如何使用 Intune 和其他服务来管理标识、设备、应用及数据，请[阅读本技术案例研究](https://www.microsoft.com/itshowcase/Article/Content/588)。  
 
 >[!IMPORTANT]
->我们希望确保移动设备紧随 iOS 设备上最新的“Trident”恶意软件攻击保持最新状态。 因此我们发布了一篇博客文章，名为[使用 Microsoft Intune 确保移动设备保持最新](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)。 它提供有关 Intune 以不同方式帮助保持设备处于安全和最新状态的信息。
+>我们希望确保移动设备紧随 iOS 设备上最新的“Trident”恶意软件攻击保持最新状态。 因此我们发布了一篇博客文章，名为[使用 Microsoft Intune 确保移动设备保持最新](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)。 其中介绍了通过 Intune 让设备处于安全和最新状态的几种方式。
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>保护本地电子邮件和数据以供移动设备安全访问
 大多数企业移动性战略的第一步是制定一项计划，让使用连接到 Internet 的移动设备的员工能够安全地访问电子邮件。 许多组织仍然在公司网络上托管了本地数据和应用程序服务器（如 Microsoft Exchange）。

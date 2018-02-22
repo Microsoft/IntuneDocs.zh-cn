@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d39d4deb00c7a79b856b82d57b042b0fdc585507
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e4940d0e02b670ec76906e75799bf9b0e8dedd8d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>使用 iOS 移动预配配置文件策略防止你的应用过期
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-部署到 iPhone 和 iPad 的 Apple iOS 业务线应用附带已包含的预配配置文件和证书签名的代码。 应用运行时，iOS 将确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。 发生以下验证：
+部署到 iPhone 和 iPad 的 Apple iOS 业务线应用使用附带的预配配置文件和证书签名的代码构建。 应用运行时，iOS 将确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。 发生以下验证：
 
 - **安装文件完整性** - iOS 将应用详细信息与企业签名证书的公钥进行比较。 如果它们不同，则应用内容可能已经更改，该应用不允许运行。
 - **功能强制实施** - iOS 尝试从应用安装 (.ipa) 文件中的企业预配配置文件（而非各开发人员预配配置文件）强制实施应用功能。

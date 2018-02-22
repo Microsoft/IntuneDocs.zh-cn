@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b99ca9b196aa15d146e7a379cdc7bdffe848be28
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3efc522b8b788a0cb6cd1bbc6d04ce7545890de3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -46,7 +46,7 @@ Intune App SDK 包括下列文件：
 * **AndroidManifest.xml**：入口点和库要求。
 
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>要求
 
 Intune App SDK 是已编译的 Android 项目。 因此，这在很大程度上不受应用用于其最低或目标 API 版本的 Android 版本的影响。 此 SDK 支持 Android API 19 (Android 4.4+) 到 Android API 26 (Android 8.0)。
 
@@ -877,7 +877,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
 应用除可设置标识外，还可基于从另一 Intune 托管的应用（具有应用保护策略）进入的数据更改线程或上下文的标识。
 
-#### <a name="examples"></a>範例
+#### <a name="examples"></a>示例
 
   1. 如果活动从由另一 MAM 应用发送的 `Intent` 启动，则活动的标识将在发送 `Intent` 时基于另一应用的有效标识进行设置。
 
@@ -1311,9 +1311,9 @@ public interface MAMAppConfig {
 应用配置会添加一个新的通知类型：
 * **REFRESH_APP_CONFIG**：此通知在 `MAMUserNotification` 中发送，并通知应用新的应用配置数据可用。
 
-有关与面向 MAM 的配置值相关的 Graph API 功能的详细信息，请参阅 [Graph API 参考面向 MAM 的配置](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。 <br>
+有关图形 API 在面向 MAM 的配置值方面的功能的详细信息，请参阅[图形 API 参考面向 MAM 的配置]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。 <br>
 
-关于如何在 Android 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 Android 的 Microsoft Intune 应用配置策略](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android)。
+关于如何在 Android 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 Android 的 Microsoft Intune 应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-use-android)。
 
 ## <a name="style-customization-optional"></a>样式自定义（可选）
 
@@ -1366,7 +1366,7 @@ public interface MAMAppConfig {
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
 以下说明专门面向最终用户设备上要求使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用。
 
-1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
+1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
 > [!NOTE] 
 > 与应用关联的“客户端 ID”一词与 Azure 门户中的“应用程序 ID”一词的含义相同。 
 * 启用 SSO 需要“通用 ADAL 配置”#2。
@@ -1422,12 +1422,12 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 
 * 避免以不明确的方式使用任何 API。 例如，使用 `Activity.startActivityForResult` 而不检查 requestCode 会导致奇怪的行为。
 
-## <a name="telemetry"></a>遥测
+## <a name="telemetry"></a>遥测技术
 
 Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用会记录遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。
 
 > [!NOTE]
-> 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
+> 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
 ## <a name="recommended-android-best-practices"></a>建议使用的 Android 最佳做法
 

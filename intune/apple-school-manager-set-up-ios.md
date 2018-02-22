@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/13/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 666ce43e3bd87db5a8245694d22401819c369951
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 87e4c16fbb87ee83a01fe44a46c55c6243c8fc8a
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 进行 iOS 设备注册
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>用户界面临时差异
+>
+>本页所述功能的用户界面正在进行更新。 这些更新将于四月末在所有用户帐户中推出。
+>
+>如果“设备注册”页如下图所示，则帐户尚未更新到新的用户界面，可以使用此帮助页面。
+>
+>![旧用户界面](./media/appleenroll-oldui.png)
+>
+>如果“设备注册”页如下图所示，则用户界面已更新。  请转到[此帮助页面](apple-school-manager-set-up-ios-newui.md)。
+>
+>![新用户界面](./media/appleenroll-newui.png)
 
 本主题旨在帮助你为通过 [Apple School Manager](https://school.apple.com/) 计划购买的设备启用 iOS 设备注册。 通过结合使用 Intune 与 Apple School Manager，可在不触碰设备的情况下注册大量 iOS 设备。 学生或教师打开设备时，“设置助理”使用预先配置的设置运行，并且会注册设备以便进行管理。
 
@@ -90,7 +103,7 @@ ms.lasthandoff: 01/25/2018
 
 6. 选择“设备管理设置”。 这些项会在激活时进行设置，并且需要执行恢复出厂设置才能更改。 配置以下配置文件设置，然后选择“保存”：
 
-  ![选择管理模式的屏幕截图。 设备包含以下设置：受到监督、注册锁定、允许配对设置为全部拒绝。 新注册计划配置文件的 Apple Configurator 证书将变灰。](./media/enrollment-program-profile-mode.png)
+  ![选择管理模式的屏幕截图。 设备包含以下设置：受监督、注册锁定、允许配对设置为全部拒绝。 新注册计划配置文件的 Apple Configurator 证书将变灰。](./media/enrollment-program-profile-mode.png)
 
     - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。
 

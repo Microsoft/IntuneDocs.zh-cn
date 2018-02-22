@@ -15,11 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b2aa6893e1d01fe83e92c711c7a487f49b92706
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b63ab13dcedaa4787e9bae12ce713899b9c3e334
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 Android 业务线 (LOB) 应用添加到 Microsoft Intune
 
@@ -69,7 +69,10 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="step-5---update-a-line-of-business-app"></a>步骤 5 - 更新业务线应用
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]注意：为了让 Intune 服务成功地将新的 APK 文件部署到设备上，你必须在 APK 包的 AndroidManifest.xml 文件中递增 android:versionCode 字符串
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+> [!Note] 
+> 为了让 Intune 服务成功地将新的 APK 文件部署到设备上，你必须在 APK 包的 AndroidManifest.xml 文件中递增 android:versionCode 字符串。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 08/14/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版 2016 应用分配到 Windows 10 设备
 
@@ -33,9 +33,10 @@ ms.lasthandoff: 01/25/2018
 
 - 部署这些应用的设备必须运行 Windows 10 创意者更新或更高版本。
 - Intune 仅支持从 Office 365 专业增强版 2016 套件添加 Office 应用。
-- 当 Intune 安装应用套件时，如果任何 Office 应用处于打开状态，最终用户可能会丢失未保存文件中的数据。
-- Windows 10S 设备不支持此安装方法。
+- 当 Intune 安装应用套件时，如果任何 Office 应用处于打开状态，安装可能会失败，并且最终用户可能会丢失未保存文件中的数据。
+- Windows 10S、Windows 家庭版、Windows 团队、Windows Holographic 和 Windows Holographic for Business 设备上不支持此安装方法。
 - 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Microsoft Store 中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。
+- 多个必需或可用的应用分配不会累加。 后面的应用分配会覆盖之前存在的已安装应用分配。 例如，如果第一组 Office 应用包含 Word，而后面的应用不包含，则 Word 会被卸载。 这不适用于任何 Visio 或 Project 应用程序。
 
 
 ## <a name="get-started"></a>入门

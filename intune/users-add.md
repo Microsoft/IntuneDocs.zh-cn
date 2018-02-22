@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 01/25/2018
   ![在 Office 365 中分配角色的屏幕截图](./media/office-assign-roles-open.png)
 5. 从可用角色列表中选择要授予的管理员权限。
 ![Office 365 门户分配角色的图像。](./media/office-assign-roles.png)
-6. 选择**“保存”**。
+6. 选择“保存”。
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>在 Azure 门户中授予管理员权限
 1. 使用全局管理员帐户登录 [Azure 门户](https://www.office.com/signin)。
@@ -102,7 +102,7 @@ ms.lasthandoff: 01/25/2018
 - 用户管理员 -（Office 365 和 Intune）重置密码、监视服务运行状况、添加和删除用户帐户以及管理服务请求。 用户管理管理员不能删除全局管理员、创建其他管理员角色，或为其他管理员重置密码。
 - Intune 服务管理员 - 除使用“目录角色”选项创建管理员以外的所有 Intune 全局管理员权限。
 
-创建 Microsoft Intune 订阅使用的是全局管理员帐户。 最佳做法是，不要将全局管理员用于日常管理任务。 管理员不需要 Intune 许可证，即可访问 Azure 门户。 
+创建 Microsoft Intune 订阅使用的是全局管理员帐户。 最佳做法是，不要将全局管理员用于日常管理任务。 虽然管理员不需要 Intune 许可证即可访问 Azure 门户上的 Intune，但在执行某些管理任务（例如设置 Exchange 服务连接器）时，则需要 Intune 许可证。 
 
 若要访问 Office 365 门户，必须将帐户设置为“允许登录”。 在 Azure 门户中，将“配置文件”下的“禁止登录”设置为“否”，以允许访问。 此状态与拥有订阅许可证不同。 默认情况下，所有用户帐户均为“已允许”。 无管理员权限的用户可使用 Office 365 门户重置 Intune 密码。
 

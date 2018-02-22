@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 17c066ee7208790a591272ae5e1edc99cf2141a4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d7939a20e9729487ce5824ba3f67cd84ec970032
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>使用 Intune 管理 Android for Work 设备
 
@@ -40,7 +40,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android for Work 设�
 
 ## <a name="app-publishing-and-distribution"></a>应用发布和分发
 
-Google Play for Work 服务是 Android for Work 应用分发和管理的必要组成部分。 部署到 Android for Work 设备的所有应用，在工作配置文件中都会显示为来自 Play for Work 服务。 若要在 Play Store 中管理和部署应用，请使用公司用于 Google 管理的管理员凭据登录到 Google Play 网站。 可以批准用于 Android for Work 部署的应用，使其显示在设备的工作配置文件中。 然后，这些应用将同步到 Intune 控制台中，可在控制台中使用 Intune 进行部署和管理。 组织开发的业务线 (LOB) 应用必须使用 Google Android 应用发布控制台发布到 Play for Work。 业务线应用必须在 Android 应用发布控制台中进行配置，限制对组织的访问。
+Google Play for Work 服务是 Android for Work 应用分发和管理的必要组成部分。 部署到 Android for Work 设备的所有应用，在工作配置文件中都会显示为来自 Play for Work 服务。 若要在 Play Store 中管理和部署应用，请使用公司用于 Google 管理的管理员凭据登录到 Google Play 网站。 可以批准用于 Android for Work 部署的应用，使其显示在设备的工作配置文件中。 然后，这些应用将同步到 Intune 控制台中，可在控制台中使用 Intune 进行部署和管理。 组织开发的业务线 (LOB) 应用必须使用 Google Android 应用发布控制台发布到 Play for Work。 必须在 Android 应用发布控制台中配置业务线应用，以限制对组织的访问权限。
 
 应用安装无需用户交互，且不要求用户允许**从未知源安装**。 若要浏览和安装可选或可用应用，用户可在其设备上浏览 Play for Work 应用商店。 详细了解[为 Android for Work 部署应用](/intune-classic/deploy-use/android-for-work-apps)。
 

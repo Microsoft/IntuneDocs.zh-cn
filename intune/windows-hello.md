@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ce18162391318374729b55aaeb302d850c17939
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-windows-hello-for-business"></a>使用 Windows Hello 企业版
 
@@ -43,7 +41,7 @@ Intune 与 Hello for Business 集成的两种方式：
 
 >在周年更新中，这两个 PIN 合并为一个设备 PIN。
 设置用于控制设备 PIN 的任何 Intune 配置策略，以及所配置的任何 Windows Hello 企业版策略，现在都会设置这一新的 PIN 值。
-如果已设置这两个策略类型以控制 PIN，则 Windows Hello 企业版策略将同时适用于 Windows 10 桌面和移动设备。
+如果已设置这两个策略类型以控制 PIN，则 Windows Hello 企业版策略同时适用于 Windows 10 桌面和移动设备。
 为确保解决策略冲突并正确应用 PIN 策略，请更新 Windows Hello 企业版策略以在配置策略中匹配该设置，并要求用户在公司门户应用中同步他们的设备。
 
 
@@ -62,16 +60,16 @@ Intune 与 Hello for Business 集成的两种方式：
 
     - “禁用”。 如果不想要使用 Windows Hello 企业版，请选择此设置。 屏幕上的所有其他设置将不可用。
     - “启用”。 如果想要配置 Windows Hello 企业版设置，请选择此设置。
-    - “不配置”。 如果不想使用 Intune 来控制 Windows Hello 企业版设置，请选择此设置。 不会更改 Windows 10 设备上的任何现有 Windows Hello 企业版设置。 边栏选项卡上的所有其他设置将不可用。
+    - “不配置”。 如果不想使用 Intune 来控制 Windows Hello 企业版设置，请选择此设置。 Windows 10 设备上的任何现有 Windows Hello 企业版设置不会更改。 边栏选项卡上的所有其他设置将不可用。
 
-6.  如果在上一步中选择了“启用”，请配置将应用于所有已注册 Windows 10 和 Windows 10 移动版设备的必需设置。
+6.  如果在上一步中选择了“启用”，请配置应用于所有已注册 Windows 10 和 Windows 10 移动版设备的必需设置。
 
  - “使用受信任的平台模块 (TPM)”。 TPM 芯片额外提供了一层数据安全。<br>选择下列值之一：
 
      - “必需”（默认）。 仅限可访问 TPM 的设备预配 Windows Hello 企业版。
      - “首选”。 首次尝试使用 TPM 的设备。 如果不可用，他们可以使用软件加密。
 
- - “要求最小 PIN 长度”/要求最大 PIN 长度”。 将设备配置为使用你指定的最小和最大 PIN 长度，以帮助确保安全登录。 默认 PIN 长度为 6 个字符，但是你可以强制最小长度为 4 个字符。 最大 PIN 长度为 127 个字符。
+ - “要求最小 PIN 长度”/要求最大 PIN 长度”。 将设备配置为使用你指定的最小和最大 PIN 长度，以帮助确保安全登录。 默认 PIN 长度为 6 个字符，但可以强制使用 4 个字符的最小长度。 最大 PIN 长度为 127 个字符。
 
  - “要求 PIN 中含有小写字母”/要求 PIN 中含有大写字母”/要求 PIN 中含有特殊字符”。 你可以通过要求在 PIN 中使用大写字母、小写字母和特殊字符，从而强制实施更强的 PIN。 选择：
 
@@ -94,6 +92,18 @@ Intune 与 Hello for Business 集成的两种方式：
 
  - **使用电话登录**。 如果将此选项设置为“是”，则用户可以使用远程 Passport 充当台式计算机身份验证的便携伴侣设备。 台式计算机必须加入 Azure Active Directory，并且伴侣设备必须配置 Windows Hello 企业版 PIN。
 
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支持
+
+Windows Holographic for Business 支持以下 Windows Hello for Business 设置：
+
+- 使用受信任的平台模块 (TPM)
+- 最小 PIN 长度
+- 最大 PIN 长度
+- 在 PIN 中使用小写字母
+- 在 PIN 中使用大写字母
+- 在 PIN 中使用特殊字符
+- PIN 有效期（天数）
+- 记住 PIN 历史记录
 
 ## <a name="further-information"></a>更多信息
 有关 Microsoft Passport 的详细信息，请参阅 Windows 10 文档中的[指南](https://technet.microsoft.com/library/mt589441.aspx)。

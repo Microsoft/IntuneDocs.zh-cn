@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0da2ba5d842a004f167a4bbeca62d4b00f756612
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/25/2018
 
 2. 使用工作或学校帐户登录到公司门户网站。
 
-[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 3. 登录后，单击页面左上角的“菜单”，选择“我的设备”。
 
@@ -52,14 +52,14 @@ ms.lasthandoff: 01/25/2018
 
 7. 完成安装后，打开“应用程序”文件夹或“Launchpad”，然后打开“公司门户”。
 
-8. Mac 会显示一条消息：“CompanyPortal”是从 Internet 下载的应用程序。是否确认要打开? 单击“打开” 。
+8. Mac 会显示一条消息：“CompanyPortal”是从 Internet 下载的应用程序。是否确认要打开? 单击“打开”。
 
   > [!NOTE]
   > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 如果计算机拒绝打开“公司门户”应用，请尝试[关闭 Gatekeeper](https://support.apple.com/HT202491)，然后打开该应用。
 
 9. “公司门户”应用中的第一个屏幕会提示你使用登录公司门户网站时所用的相同工作帐户或学校帐户登录。
 
-10. 公司门户确认帐户信息后会显示“设备注册”和“设备符合性”状态。 黄色三角形可让你知道，需要执行一些操作，确保可在工作时安全使用 Mac。 单击“开始”，开始[向管理系统注册设备](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+10. 公司门户确认帐户信息后会显示“设备注册”和“设备符合性”状态。 黄色三角形表示为了确保可在工作时安全使用 Mac，需要执行一些操作。 单击“开始”，开始[向管理系统注册设备](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
 11. Mac 随即开始注册到管理系统。 在此期间，系统可能会提示提供计算机的登录信息。 注册需要几分钟时间。 在此期间，可在计算机上执行其他操作。 完成公司访问设置后，会显示一条消息，通知操作已完成。
 

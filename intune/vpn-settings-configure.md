@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3637ad08e097e4edcd527b3603dd00e1eac47f71
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 VPN 设置
 
@@ -27,7 +25,7 @@ ms.lasthandoff: 01/25/2018
 
 虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 使用 Microsoft Intune 中的“VPN 配置文件”将 VPN 设置分配到你组织中的用户和设备，从而可以方便且安全地连接到网络。
 
-例如，假定你想要用连接到公司网络上的文件共享所需的设置预配所有 iOS 设备。 创建包含连接到公司网络所必需的设置的 VPN 配置文件，然后将此配置文件分配到所有使用 iOS 设备的用户。 用户将在可用网络的列表中看到 VPN 连接，并可以轻松连接。
+例如，假定你想要用连接到公司网络上的文件共享所需的设置预配所有 iOS 设备。 创建包含连接到公司网络所必需的设置的 VPN 配置文件，然后将此配置文件分配到所有使用 iOS 设备的用户。 用户能在可用网络的列表中看到 VPN 连接，并可以轻松连接。
 
 ## <a name="vpn-connection-types"></a>VPN 连接类型
 
@@ -56,7 +54,7 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>创建包含 VPN 设置的设备配置文件
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
@@ -71,16 +69,16 @@ ms.lasthandoff: 01/25/2018
     - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
 6. 在“配置文件”类型下拉列表中，选择“VPN”。
-7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
+7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
     - [Android 和 Android for Work 设置](vpn-settings-android.md)
     - [iOS 设置](vpn-settings-ios.md)
     - [macOS 设置](vpn-settings-macos.md)
     - [Windows Phone 8.1 设置](vpn-settings-windows-phone-8-1.md)
     - [Windows 8.1 设置](vpn-settings-windows-8-1.md)
-    - [Windows 10 设置](vpn-settings-windows-10.md)
+    - [Windows 10 设置](vpn-settings-windows-10.md)（包括 Windows Holographic for Business）
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
+系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 

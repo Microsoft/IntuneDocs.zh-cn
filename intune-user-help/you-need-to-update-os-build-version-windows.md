@@ -17,20 +17,20 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 36b5332737ce6fc1c7e0ca8f31a4b6936aec4ec1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 71cb70926f02023eae82885b8f525a18c8382e79
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="update-your-windows-10-device"></a>更新 Windows 10 设备
 
-你的单位或学校希望确保访问其资源的设备受到保护。 要确保设备设置为可访问这些资源，方法之一是确保你的设备始终处于最新状态。 在设备中，这被称为“操作系统内部版本”。 下面介绍了如何更新 Windows 10 设备：
+你的单位或学校希望确保访问其资源的设备受到保护。 为了确保你的设备设置为访问这些资源，他们选择的一种方法是确保你的设备处于最新状态。 在设备中，这被称为“操作系统内部版本”。 下面介绍了如何更新 Windows 10 设备：
 
 1. 在“开始”中打开“设置”。
 2. 转到“设置” > “系统” > “关于” > “操作系统内部版本”。
 3. 如果该操作系统内部版本低于公司要求，请选择“更新”将其更新至 Windows 的较高版本。
 
-如果你的 Windows 版本高于公司所支持的版本，则需要[尝试不同步骤来解决问题](your-windows-version-isnt-yet-supported.md)
+如果 Windows 版本高于公司所支持的版本，则需要[尝试不其他骤来解决问题](your-windows-version-isnt-yet-supported.md)
 
 仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>条件访问疑难解答
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 10/10/2017
 - 查看 Exchange Connector 的 sendemail 活动的日志并检查错误。 要搜索的命令示例为从通知帐户到用户邮箱的 SendEmail。
 - Exchange Connector 阻止设备前，将发送激活电子邮件。 如果设备未在线，则可能不会收到此激活电子邮件。 查看设备电子邮件客户端是否使用“推送”而非“轮询”进行电子邮件检索，因为这也可能导致用户错过该电子邮件。 切换至“轮询”，然后查看设备是否收到该电子邮件。
 
-## <a name="non-compliant-device-not-blocked"></a>未阻止不合规设备
+## <a name="noncompliant-device-not-blocked"></a>未阻止不符合设备
 
 如果发现不合规但继续拥有访问权限的设备，请按照以下步骤操作。
 

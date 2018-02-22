@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3254adc66c5fd5dc991364c3a33aabef8ac2030b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>准备好配置面向 Windows 10 的应用保护策略
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/25/2018
     MAM 服务的注册终结点的 URL。 注册终结点用于使用 MAM 服务注册设备以进行管理。
 
     **MAM 符合性 URL**  
-      MAM 服务的符合性终结点 URL。 当系统拒绝用户访问非符合性设备中的资源时，将向用户显示一个指向符合性 URL 的链接。 用户可导航至由 MAM 服务托管的此 URL，以便了解将其设备视为不符合策略的原因。 用户还可启动自助服务补救以使其设备变为具有符合性，从而可以继续访问资源。
+      MAM 服务的符合性终结点 URL。 当系统拒绝用户访问非符合设备中的资源时，将向用户显示一个指向符合性 URL 的链接。 用户可导航至由 MAM 服务托管的此 URL，以便了解将其设备视为不符合的原因。 用户还可启动自助服务补救以使其设备变为具有符合性，从而可以继续访问资源。
 
 5.  单击 **“保存”**。
 

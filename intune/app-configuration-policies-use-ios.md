@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,24 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97084d0155788fc6aa0604454b46e783a3eb271b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 使用 Microsoft Intune 中的应用配置策略可提供用户在运行 iOS 应用时的设置。 无需直接向用户和设备分配这些策略。 而是将策略与应用关联，然后分配应用。 只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
+
+可通过将包括和排除分配相结合来向一组用户和设备分配应用程序配置策略。 添加应用配置策略后，即可设置应用分配策略的配置。 设置策略分配时，可选择包括和排除将应用该策略的用户组。 选择包括一个或多个组时，可以选择要包括的特定组或选择内置组。 内置组包括“所有用户”、“所有设备”和“所有用户 + 所有设备”。 
+
+>[!NOTE]
+>为方便起见，Intune 在具有内置优化的控制台中提供了预先创建的“所有用户”和“所有设备”组。 强烈建议针对所有用户和所有设备使用这些组，而不要使用你自己创建的任何“所有用户”或“所有设备”组。
+
+为应用程序配置策略选择了包括的组之后，也可以选择要排除的特定组。
 
 > [!TIP]
 > 此策略类型目前仅适用于运行 iOS 8.0 及更高版本的设备。 它支持下列应用安装类型：
@@ -52,9 +59,24 @@ ms.lasthandoff: 01/25/2018
 7.  选择“关联应用”。 然后在“关联应用”边栏选项卡中，选择要对其应用配置的托管应用。
 8.  在“添加配置策略”边栏选项卡上，选择“配置设置”。
 9. 选择“配置设置格式”。 选择以下选项之一：
-    - **[使用配置设计器](#Use-the-configuration-designer)**
+    - **[使用配置设计器](#use-configuration-designer)**
     - **[输入 XML 数据](#enter-xml-data)**
-10. 选择“确定”，然后选择“添加”。
+10. 添加完 XML 信息后，选择“确定”，然后选择“添加”以添加配置策略。 随即显示配置策略的概述边栏选项卡。
+11. 选择“分配”，显示包括和排除选项。 
+
+    ![策略分配](./media/app-config-policy01.png)
+12. 在“包括”边栏选项卡上选择“所有用户”。
+
+    ![策略分配 - 所有用户](./media/app-config-policy02.png)
+13. 选择“排除”选项卡。 
+14. 单击“选择要排除的组”以显示相关的边栏选项卡。
+
+    ![策略分配 - 选择要排除的组](./media/app-config-policy03.png)
+15. 选择想要排除的组，然后单击“选择”。
+
+    >[!NOTE]
+    >添加组时，如果给定的分配类型中已包括任何其他组，则在其他包括分配类型中，该组会被预先选定且无法更改。 因此，已被使用的组无法用作排除组。
+16. 单击 **“保存”**。
 
 ## <a name="use-configuration-designer"></a>使用配置设计器
 

@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6645261e2a90ea3890dc22b42fe65d6af4af6e5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
@@ -72,6 +72,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 ![图像显示在未实施应用保护策略时，数据可在应用之间自由移动](./media/apps-without-protection-policies.png)
 
 在无限制的情况下使用应用时，公司和个人数据可能混合。  公司数据可能最终位于个人存储空间等位置或传输到你监控范围外的应用中，导致数据丢失。 图中的箭头显示了（公司和个人）应用之间和移动到存储位置的无限制数据移动。
+
 
 ### <a name="data-protection-with-app-protection-policies"></a>采用应用保护策略的数据保护
 
@@ -134,3 +135,6 @@ MDM 解决方案：
 ##  <a name="next-steps"></a>后续步骤
 
 [如何使用 Microsoft Intune 创建和部署应用保护策略](app-protection-policies.md)
+
+## <a name="see-also"></a>另请参阅
+第三方应用（例如 Salesforce 移动应用）与 Intune 一起以特定的方式来保护公司数据。 若要详细了解 Salesforce 应用专门与 Intune 合作的方式（包括 MDM 应用配置设置），请参阅 [Salesforce 应用和 Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf)。

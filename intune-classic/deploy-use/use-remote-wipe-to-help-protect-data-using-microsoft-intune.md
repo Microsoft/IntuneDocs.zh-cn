@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71a3b86c628a4fd3210bf00be353c96443897dd5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>使用 Microsoft Intune 的完全擦除或选择性擦除保护数据
 
@@ -87,7 +87,7 @@ ms.lasthandoff: 10/10/2017
 8.  根据需要删除设备，例如那些不再使用的设备或者定义不准确的设备。
 
 
-## <a name="selective-wipe"></a>“选择性擦除”
+## <a name="selective-wipe"></a>选择性擦除
 
 **选择性擦除**将删除公司数据，包括设备中的移动应用管理 (MAM) 数据(适用的)、设置和电子邮件配置文件。 选择性擦除会将用户的个人数据保留在设备上。 设备从 Intune 删除。 下表描述了将删除什么数据，以及在选择性擦除之后对设备上保留的数据的影响。 （这些表按平台进行组织。）
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 10/10/2017
 |Azure Active Directory (AAD) 脱离|已删除 AAD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
 
-**Android**
+**Outlook Web Access (OWA)**
 
 |数据类型|Android|Android Samsung KNOX 标准版|
 |-------------|-----------|------------------------|
@@ -136,12 +136,12 @@ ms.lasthandoff: 10/10/2017
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|不支持。|删除。|
 |证书配置文件设置|已删除并吊销证书。|已删除并吊销证书。|不支持。|已删除并吊销证书。|
 |Email|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。|不支持。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。 删除由 Intune 预配的邮件帐户。|
-|Azure Active Directory (AAD) 脱离|否。|否。|已删除 AAD 记录。|不适用。 Windows 10 不支持对已加入 Azure Active Directory 的设备使用选择性擦除。|
+|Azure Active Directory (AAD) 脱离|不能。|不能。|已删除 AAD 记录。|不适用。 Windows 10 不支持对已加入 Azure Active Directory 的设备使用选择性擦除。|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>擦除启用了加密文件系统 (EFS) 的内容
 Windows 8.1 和 Windows RT 8.1 支持选择性擦除 EFS 加密内容。 以下几点适用于启用 EFS 的内容的选择性擦除：
 
--   仅选择性擦除使用同一 Internet 域作为 Intune 帐户通过 EFS 保护的应用和数据。 有关详细信息，请参阅 [设备数据管理的 Windows 选择性擦除](http://technet.microsoft.com/library/dn486874.aspx)。
+-   仅选择性擦除使用同一 Internet 域作为 Intune 帐户通过 EFS 保护的应用和数据。 有关详细信息，请参阅[设备数据管理的 Windows 选择性擦除](http://technet.microsoft.com/library/dn486874.aspx)。
 
 -   如果对与 EFS 关联的域进行了任何更改，则更改可能要花费长达 48 小时，之后才能对使用新域的应用和数据进行选择性擦除。
 

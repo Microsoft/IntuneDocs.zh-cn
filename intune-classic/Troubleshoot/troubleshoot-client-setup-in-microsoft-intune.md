@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27f9d3172750d4db5b96d0477ecaeeafa1e59ed2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>排查 Microsoft Intune 中的客户端安装问题
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 10/10/2017
 
 原因可能是电脑上缺少关键软件更新。
 
-**解决方法：**确保你的软件更新策略启用了关键更新的安装，如[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述
+**解决方法：**确保软件更新策略启用了关键更新的安装，如[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述
 
 
 ## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log 中与 Microsoft Intune 策略相关的错误

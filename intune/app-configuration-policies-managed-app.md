@@ -3,10 +3,10 @@ title: "为受管理应用添加应用配置策略（无需设备注册）| Micr
 titlesuffix: Azure portal
 description: "了解如何为受管理应用添加应用配置策略（无需设备注册）。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2266e460d816dfdd908d6a68944c8c2cc5c0afc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>为受管理应用添加应用配置策略（无需设备注册）
 
@@ -41,8 +41,8 @@ ms.lasthandoff: 01/25/2018
 6. 选择“关联的应用”以选择要配置的应用。 从已同意并与 Intune 同步的应用列表中选择应用。
 7. 对于该应用支持的每个配置设置，请键入“名称”和“值”，然后选择省略号 (…)。  
     若要删除配置，请选择省略号 (…)，然后选择“删除”。  
-    启用了 Intune App SDK 的应用支持键值对形式的配置。 若要详细了解支持哪些键值配置，请参阅每个应用的相关文档。  
-    此外，可使用将由应用程序生成的数据动态填充的令牌。
+    
+启用了 Intune App SDK 的应用支持键值对形式的配置。 若要详细了解支持哪些键值配置，请参阅每个应用的相关文档。 请注意，可使用将由应用程序生成的数据动态填充的令牌。 有关 Outlook for iOS 应用配置策略设置的相关信息，请参阅[使用 Microsoft Intune 管理 Outlook for iOS 应用配置](https://technet.microsoft.com/en-us/library/mt813789(v=exchg.150).aspx)。
 
 ## <a name="configuration-values-for-using-tokens"></a>为使用令牌配置值
 
