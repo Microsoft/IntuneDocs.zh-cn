@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: 分配许可证
           href: licenses-assign.md
+        - name: Intune 许可证
+          href: licenses.md
         - name: 设置 MDM 机构
           href: mdm-authority-set.md
     - name: 注册设备
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: 启用 iOS 丢失模式
           href: device-lost-mode.md
+        - name: 开启 iOS 监督模式
+          href: device-supervised-mode.md
         - name: 锁定设备
           href: device-remote-lock.md
         - name: 重置密码
@@ -251,7 +255,7 @@
             - name: Web 应用
               href: web-app.md
             - name: 内置应用
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: 部署应用
           href: apps-deploy.md
           items:
