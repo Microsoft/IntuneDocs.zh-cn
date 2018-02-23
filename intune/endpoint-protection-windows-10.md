@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 10 及更高版本的 Endpoint Protection 设置
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-an-endpoint-protection-profile"></a>创建 Endpoint Protection 配置文件
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
 2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
@@ -226,6 +226,8 @@ ms.lasthandoff: 01/25/2018
 使用“应用程序控制代码完整性策略”选择需要 Windows Defender 应用程序控制来审核或其信任运行的其他应用。 自动信任 Windows 组件和来自 Windows 应用商店的所有应用运行。
 
 在“仅审核”模式下运行时，应用程序不受阻止。 “仅审核”模式在本地客户端日志中记录所有事件。
+
+启用“应用程序控制”后，只能通过将模式从“强制实施”更改为“仅审核”来禁用。 如果将模式从“强制实施”更改为“不配置”，则会继续在分配的设备上强制执行“应用程序控制”。
 
 ## <a name="windows-defender-security-center"></a>Windows Defender 安全中心
 

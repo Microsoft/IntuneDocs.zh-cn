@@ -1,6 +1,6 @@
 ---
 title: "适用于 Windows PC 的软件更新"
-description: "Intune 通过确保向你所管理的计算机快速安装最新修补程序和软件，使你的计算机保持最新。"
+description: "Intune 通过确保向托管计算机快速安装最新修补程序和软件，使该计算机保持最新版本。"
 keywords: 
 author: arob98
 ms.author: angrobe
@@ -14,17 +14,17 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85299c97c2b0c605adbb83a7c6e8017360511609
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c31d1e44b4b96995223f4294655d8e0730170f47
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
-# <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>在 Microsoft Intune 中利用软件更新使 Windows PC 保持最新版本
+# <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune 可通过多种方式帮助你保护托管计算机，其中包括管理软件更新，它通过确保快速安装最新修补程序和软件更新，使你的计算机保持最新版本。
+Microsoft Intune 可通过多种方式帮助保护托管计算机，其中包括管理软件更新，它通过确保快速安装最新修补程序和软件更新，使计算机保持最新版本。
 
 如果你尚未在计算机上安装 Intune 客户端，请参阅[使用 Microsoft Intune 安装 Windows 电脑客户端](install-the-windows-pc-client-with-microsoft-intune.md)。
 
@@ -35,7 +35,7 @@ Microsoft Intune 可通过多种方式帮助你保护托管计算机，其中包
 
 批准并安装更新后，可以在 Intune 工作台的“更新”工作区中查看安装是成功还是失败。
 
-下列部分将帮助你使被管理的计算机上的软件保持最新。
+下列部分将帮助你让托管计算机上的软件保持最新版本。
 
 ## <a name="before-you-start"></a>开始之前
 在开始创建和批准软件更新之前，请配置用于控制更新安装时间和方式的策略并将其部署到你的计算机。

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 05/05/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76f00caa3781d0efe85a17ccb8efc6bf27c77e97
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0a9d17f8066ddd16c06322cf9cc64457daff87f1
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
 
@@ -49,19 +49,15 @@ ms.lasthandoff: 01/25/2018
 
 ##  <a name="manage-user-accounts-on-the-device"></a>在设备上管理用户帐户
 
-Intune 仅支持将应用保护策略部署到每个设备的一个用户帐户。
+多标识应用程序允许用户添加多个帐户。  Intune 应用仅支持一个托管帐户。  Intune 应用不限制非托管帐户的数量。
 
-* 根据所使用的应用，第二个用户可能会在设备上受阻。 但是在所有情况下，只有获取应用保护策略的第一个用户才会受该策略影响。
-  * Microsoft Word、Excel 和 PowerPoint 不会阻止第二个用户帐户，但第二个用户帐户不受应用保护策略影响。  
-
-  * 对于 **OneDrive** 和 **Outlook** 应用，只能使用一个工作帐户。 无法为这些应用添加多个工作帐户。 但是，你可以在设备上删除用户并添加其他用户。
-
-* 如果设备在部署应用保护策略之前已有多个用户帐户，则最先部署应用保护策略的帐户由 Intune 应用保护策略进行管理。
-
+当应用程序中存在托管帐户时：
+*   如果用户尝试添加第二个托管帐户，则需要选择要使用的托管帐户。  另一个帐户则被删除。
+*   如果 IT 管理员将一个策略添加到第二个现有帐户，用户需要选择要使用的托管帐户。  另一个帐户则被删除。
 
 阅读以下示例场景以更深入地了解如何处理多个用户帐户。
 
-用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与 **X 公司**关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户。
+用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与 X 公司关联的帐户先获取应用保护策略。 如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户，并添加与 Y 公司关联的帐户。
 
 ### <a name="add-a-second-account"></a>添加第二个帐户
 

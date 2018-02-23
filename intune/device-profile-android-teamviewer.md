@@ -6,33 +6,32 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 2/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 476480ce3957ef2d411b37a0a078707c721fd2e6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0219993e0322be06dbf9b26707789332039001f1
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>为 Intune 托管设备提供远程协助
 
 Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（另行购买）向你所管理的设备的用户提供远程协助。 请使用本主题介绍的信息开始使用。
 
-## <a name="before-you-start"></a>准备工作
+## <a name="before-you-start"></a>开始之前
 
 ### <a name="supported-devices"></a>支持的设备
 
 Intune 托管的 Android 和 Windows 设备支持远程管理。
 
 >[!NOTE]
->TeamViewer 软件不支持 Windows Holographic (HoloLens)、Windows 团队 (Surface Hub) 和 Windows 10 S。 仍需要在 Intune 经典门户中使用 [PC 客户端](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)管理设备。
+>TeamViewer 软件不支持 Windows Holographic (HoloLens)、Windows 团队 (Surface Hub) 和 Windows 10 S。
 
 
 
@@ -50,7 +49,7 @@ Intune 托管的 Android 和 Windows 设备支持远程管理。
 必须先按照以下步骤配置 Intune TeamViewer 连接器，然后才可向设备提供远程协助：
 
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在 Intune 边栏选项卡上，选择“设备”。
 4. 在“设备和组”边栏选项卡上，选择“设置” > “TeamViewer 连接器”。
@@ -61,7 +60,7 @@ Intune 托管的 Android 和 Windows 设备支持远程管理。
 
 ## <a name="how-to-remotely-administer-a-device"></a>如何远程管理设备
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在 Intune 边栏选项卡上，选择“设备”。
 4. 在“设备”边栏选项卡上，选择“管理” > “所有设备”。

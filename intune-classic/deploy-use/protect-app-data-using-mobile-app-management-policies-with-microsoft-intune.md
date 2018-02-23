@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>通过 Microsoft Intune 使用应用保护策略保护应用数据
 
@@ -57,9 +57,7 @@ ms.lasthandoff: 10/10/2017
 - **应用保护策略确保应用层保护措施到位。** 例如，可设置一个策略，要求在工作环境中使用 PIN 打开应用，防止在应用之间共享数据，防止将公司应用数据保存到个人存储位置。
 
 ## <a name="devices-that-support-mam"></a>支持 MAM 的设备
-当前支持应用保护策略的设备有：
--   iOS 8.1 或更高版本
--   Android 4 或更高版本
+Intune 应用保护策略平台支持遵循 Office 应用程序平台支持。 有关详细信息，请参阅 [Office 系统要求](https://products.office.com/en-US/office-system-requirements)。
 
 >[!NOTE]
 >在无注册方案的情况下，MAM 中不支持 Windows 设备。 但是，使用 Intune 注册 Windows 10 设备时，可以使用 Windows 信息保护，它提供了类似功能。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。

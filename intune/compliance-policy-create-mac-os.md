@@ -1,59 +1,54 @@
 ---
 title: "如何创建 macOS 符合性策略"
 titleSuffix: Azure portal
-description: "了解如何创建 macOS 设备符合性策略。"
+description: "了解如何创建用于 macOS 设备的符合性策略。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 创建适用于 macOS 设备的设备符合性策略
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 在创建和分配设备符合性策略之前，请查看 Intune 设备符合性策略概念。
 
 - 若要了解有关设备符合性策略的详细信息，请参阅[设备符合性策略入门](device-compliance.md)。
 
 > [!IMPORTANT]
-> 需要为每个平台创建设备符合性策略。 Intune 设备符合性策略设置取决于通过 MDM 协议公开的设置的平台功能。
+> 需要为每个平台创建设备符合性策略。 Intune 设备符合性策略设置取决于平台功能，这些功能是通过 MDM 协议公开的设置。
 
-下表说明了将合规性策略与条件访问策略一起使用时如何管理非合规性设置。
-
--------------------------------
+下表说明了将符合性策略与条件访问策略一起使用时如何管理非符合性设置：
 
 
-| **策略设置** | **macOS 10.11 和更高版本** |
+| 策略设置 | macOS 10.11 和更高版本 |
 | --- | --- |
 | **PIN 或密码配置** | 已修正 |   
 | **设备加密** | 已修正（通过设置 PIN） |
 | **电子邮件配置文件** | 已隔离 |
 |**最低操作系统版本** | 已隔离 |
 | **最高操作系统版本** | 已隔离 |  
-| **Windows 运行状况证明** | 不适用 |  
-----------------------------
 
 
 **已修正** = 设备操作系统强制合规性。 （例如，强制用户设置 PIN。）
 
-**已隔离** = 设备操作系统不会强制合规性。 （例如，Android 设备不强制用户加密设备。）当设备不合规时，进行以下操作：
+**已隔离** = 设备操作系统不会强制合规性。 （例如，Android 设备不强制用户加密设备。）设备不符合时，系统将进行以下操作：
 
 - 如果条件访问策略应用到用户，则将阻止该设备。
 - 公司门户会通知用户任何合规性问题。
@@ -70,7 +65,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="device-health"></a>设备运行状况
 
-- **需要系统完整性保护**：将此选项设置为“必需”，以检查 macOS 设备是否启用了系统完整性保护。
+- **需要系统完整性保护**：设置为“必需”，以检查 macOS 设备是否启用了系统完整性保护。
 
 ### <a name="device-properties"></a>设备属性
 
@@ -82,9 +77,9 @@ ms.lasthandoff: 01/25/2018
 
 #### <a name="password"></a>密码
 
-- **需要密码才可解锁移动设备**：将此选项设置为“必需”，因此用户需要在访问其设备之前输入密码。
+- **需要密码才可解锁移动设备**：设置为“必需”，因此用户需要在访问其设备之前输入密码。
 
-- **简单密码**：将此选项设置为“阻止”，因此用户无法创建简单密码，如 1234 或 1111。
+- **简单密码**：设置为“阻止”，因此用户无法创建简单密码，如 1234 或 1111。
 
 - **最短密码长度**：指定密码必须包含的最小位数或最小字符数。
 

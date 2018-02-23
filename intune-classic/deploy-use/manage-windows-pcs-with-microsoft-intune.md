@@ -14,11 +14,11 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 626f52ecb7c3e90f05cc06a7235ca96499654ce5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 773e4d551a8ea278c60107a279e29b83f0a1596f
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
 
@@ -40,7 +40,7 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 
 |要求|更多信息|
 |---------------|--------------------|
-|网络|客户端要求 PC 具有 Internet 连接。|
+|Network (网络)|客户端要求 PC 具有 Internet 连接。|
 |处理器和内存|请参阅 PC 操作系统的处理器和 RAM 要求。|
 |硬盘空间|安装客户端软件之前必须有 200 MB 可用磁盘空间。|
 
@@ -59,7 +59,7 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>使用 Intune 客户端软件时具有的计算机管理功能
 在大多数情况下，你将向 Microsoft Intune 注册设备，这样可提供更多的功能。 但是，你也可以通过使用 Intune 软件客户端来管理电脑，该客户端提供以下功能：
 
--   **[软件更新管理](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - 可使电脑保持最新版本，并决定何时进行更新。
+-   [软件更新管理](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) - 可使电脑保持最新版本，并决定何时进行更新。
 
 -   **[Windows 防火墙策略](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** - 可帮助确保公司所用电脑的 Windows 防火墙均处于活动状态且均配置正确。
 

@@ -104,7 +104,6 @@
 ## [使用 macOS 设备](using-your-macos-device-with-intune.md)
 ### [注册 macOS 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [注册 macOS 设备](enroll-your-device-in-intune-macos-cp.md)
-### [注册旧式 macOS 设备](enroll-your-device-in-intune-macos-legacy.md)
 ### [取消注册 macOS 设备](unenroll-your-device-from-intune-macos.md)
 
 ### [修复 macOS 的常见问题](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [从公司门户应用发送日志](send-logs-to-your-it-admin-cp-windows.md)
 #### [从设置应用发送日志](send-logs-to-your-it-admin-settings-windows.md)
 #### [尚不支持我的 Windows 版本](your-windows-version-isnt-yet-supported.md)
+#### [在 Windows 10 设备上安装 Office 365](install-office-windows.md)
 #### [启用 Windows 加密](you-need-to-enable-windows-encryption.md)
 #### [设备需要反恶意软件](your-device-needs-antimalware-software.md)
 #### [启用安全启动](you-need-to-enable-secure-boot-windows.md)
