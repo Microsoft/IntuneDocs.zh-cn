@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上强制实现符合性
 
@@ -66,6 +66,12 @@ ms.lasthandoff: 01/25/2018
 2. 配置“Microsoft Intune 集成”有效负载，其中包括触发器和执行频率。
 3. 单击“作用域”选项卡，并将策略的作用域设置为所有目标设备。
 4. 单击“自助服务”选项卡以将策略应用到 Jamf 自助服务中。 将策略添加到“设备符合性”类别中。 单击 **“保存”**。
+
+## <a name="removing-a-jamf-managed-device-from-intune"></a>从 Intune 删除 Jamf 托管设备
+
+无法从 Intune 删除 Jamf 托管设备。 必须从 Jamf Pro 删除 Jamf 托管设备，这样设备才会从 Intune 删除。 
+
+参阅 Jamf Pro 文档，了解如何[删除 Jamf 托管设备](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)。还可通过 [Jamf 支持](https://www.jamf.com/support/)提交支持票证，获取更多帮助。 
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: dougeby
-ms.date: 10/30/2017
+ms.date: 02/14/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,25 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 19b5d98165be67b32afa86ba942c42fc4a3048b3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6e2528c243938e81a6f730a950ee3949ca44047c
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune 现在位于 Azure 门户中，这意味着你习惯使用的工作流和功能已经不同了。
-新门户提供了 Azure 门户中的新功能和更新功能，可在其中管理组织的移动设备、电脑和应用。
+与其他 Azure 服务一样，Microsoft Intune 也可在 Azure 门户中使用。 通过在 Azure 门户中选择 Intune，可管理组织的移动设备、电脑和应用。
 
-* [我的功能位于 Azure 的什么位置？](ui-changes.md)是一个参考，显示随着移动到 Azure 而更改的特定工作流程和 UI。
-* [Azure 门户中的 Intune 经典组](groups-get-started.md)解释了转移到 Azure Active Directory 安全组以进行组管理的含义。
+>[!NOTE] 
+> 如果已使用以前版本的 Microsoft Intune，可参考以下信息：
+    * [我的功能位于 Azure 的什么位置？](ui-changes.md)是一个参考，显示随着移动到 Azure 而更改的特定工作流程和 UI。
+    * [Azure 门户中的 Intune 经典组](groups-get-started.md)解释了转移到 Azure Active Directory 安全组以进行组管理的含义。
 
-
-
-
-你可以在此库中查找有关新门户的信息，并且信息会不断更新。 如果你有什么建议，请在主题评论中留下反馈。 我们很乐意倾听你的想法。
-
-新体验的亮点包括：
+Azure 门户中 Microsoft Intune 的重要功能包括：
 
 - 用于所有企业移动性 + 安全性 (EMS) 组件的集成控制台
 - 基于 Web 标准构建的基于 HTML 的控制台
@@ -44,7 +40,7 @@ Microsoft Intune 现在位于 Azure 门户中，这意味着你习惯使用的�
 - Azure Active Directory (AD) 组提供跨所有 Azure 应用程序的兼容性
 - 支持大多数新式 Web 浏览器
 
-## <a name="before-you-start"></a>准备工作
+## <a name="before-you-start"></a>开始之前
 
 若要使用 Azure 门户中的 Intune，必须拥有 Intune 管理员和租户帐户。 如果尚没有帐户，请[注册帐户](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。
 
@@ -61,41 +57,37 @@ Azure 门户在大多数新式电脑、Mac 和平板电脑上都可以运行。 
 
 请查看 [Azure 门户](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices)，了解支持的浏览器的最新相关信息。
 
-## <a name="whats-in-this-library"></a>这个库中有什么？
+## <a name="microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune
 
-文档中反映了 Azure 门户的布局，可方便读者更轻松地找到所需信息。
+可在 [Azure 门户](https://portal.azure.com)中找到 Microsoft Intune 服务。 Azure 提供多种服务，其中许多服务可能不会经常使用。 若要获取自定义门户体验的快速指南，请参阅[开始使用 Azure 门户中的 Intune](get-started-azure.md)。
+
+## <a name="the-microsoft-intune-documentation"></a>Microsoft Intune 文档
+
+本主题以及整个 Microsoft Intune 文档集将持续更新。 如果你有什么建议，请在主题评论中留下反馈。 我们很乐意倾听你的想法。
+
+文档反映了 Microsoft Intune 在 Azure 门户中的布局（如下所示），可方便读者更轻松地找到所需信息。
 
 ![Azure 门户工作负荷](./media/azure-portal-workloads.png)
 
-### <a name="introduction-and-get-started"></a>简介和入门
-本部分包含[介绍性信息](introduction-intune.md)，可帮助你开始使用 Intune。
-### <a name="plan-and-design"></a>规划和设计
-帮助你[规划和设计](/intune-classic/plan-design/introduction) Intune 环境的信息。
-### <a name="device-enrollment"></a>设备注册
-[如何通过 Intune 管理设备](device-enrollment.md)。
-### <a name="device-compliance"></a>设备符合性
-[为设备定义符合性级别，然后报告不符合要求的任何设备](device-compliance.md)。
-### <a name="device-configuration"></a>设备配置
-[了解可在管理的设备上用来配置设置和功能的配置文件](device-profiles.md)。
-### <a name="devices"></a>设备
-[了解使用清单和报表管理的设备](device-management.md)。
-### <a name="mobile-apps"></a>移动应用
-[如何发布、管理、配置和保护应用](app-management.md)。
-### <a name="conditional-access"></a>条件性访问
-[根据指定的条件限制对 Exchange 服务的访问](conditional-access.md)。
-### <a name="on-premises-access"></a>本地访问
-[配置本地 Exchange ActiveSync 和 Exchange 访问权限](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
-### <a name="users"></a>用户
-[了解有关所管理的以及将资源分类到组的设备的用户](users-add.md)。
-### <a name="groups"></a>组
-[了解如何通过 Intune 使用 Azure Active Directory 组](groups-get-started.md)
-### <a name="intune-roles"></a>Intune 角色
-[控制可以执行各种 Intune 操作的人员，以及这些操作适用的人员](role-based-access-control.md)。 可以使用涵盖一些常见 Intune 方案的内置角色，也可以创建自己的角色。
-### <a name="software-updates"></a>软件更新
-[了解如何配置 Windows 10 设备的软件更新](windows-update-for-business-configure.md)。
+### <a name="documentation-guide"></a>文档指南
 
+使用下表快速查找和了解 Microsoft Intune 的主要区域。
 
+| 部分                                                      | 描述                                                                                                                                                                                                                                                                                      |
+|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [简介和入门](introduction-intune.md)       | 了解 Intune 的基础知识，包括：<br /> - 常见解决方案<br /> - Microsoft Intune 工作原理<br /> - Intune 中的设备管理<br /> - Intune 中的应用管理<br /> - 企业移动性管理 (EMM)（需或无需设备注册）                                                         |
+| [规划和设计](planning-guide.md)                         | 用于帮助成功规划和设计 Microsoft Intune 环境的指南。                                                                                                                                                                                                             |
+| [设备注册](device-enrollment.md)                    | 了解如何使用 Microsoft Intune，通过将设备注册到 Intune 服务，帮助管理员工设备。 可通过几种方法来注册员工的设备。                                                                                                         |
+| [设备符合性](device-compliance.md)                    | Intune 设备符合性策略定义设备必须遵从的规则和设置，以便将设备视为符合 Microsoft Intune。 例如，要求访问设备时提供密码、为设备加密、要求最低操作系统版本，这些都是实施符合性的例子。 |
+| [设备配置](device-profiles.md)                   | 使用 Microsoft Intune，通过创建设备配置文件，配置所管理的所有设备上的设置和功能。 例如，可配置后列功能：通知、数据共享、电子邮件支持、wi-fi 连接、证书和终结点保护等。              |
+| [设备](device-management.md)                              | 确保所管理的设备提供最终用户工作时所需的资源，同时保护公司数据免遭风险。 通过查看员工设备清单和执行远程设备操作来管理设备。                                                      |
+| [移动应用](app-management.md)                             | 了解如何添加、部署、监视、配置和保护应用。                                                                                                                                                                                                                             |
+| [条件性访问](conditional-access.md)                  | 定义基于设备和基于应用的条件，用于控制公司数据访问权限。                                                                                                                                                                                                            |
+| [用户](users-add.md)                                        | 了解如何为所管理的设备和应用添加用户。                                                                                                                                                                                                                                           |
+| [组](groups-get-started.md)                              | 了解如何使用 Intune 创建和管理组。 使用组，可快速分配设备和应用的配置和保护策略。                                                                                                                                             |
+| [Intune 角色](role-based-access-control.md)                 | 了解如何控制可执行各种 Intune 操作的人员，以及这些操作的应用方式。 可以使用涵盖一些常见 Intune 方案的内置角色，也可以创建自己的角色。                                                                                 |
+| [软件更新](windows-update-for-business-configure.md) | 了解如何配置 Windows 10 设备的软件更新。                                                                                                                                                                                                                                  |
 
 ## <a name="whats-new"></a>新增功能
 
-[了解 Intune 中的新增功能](whats-new.md)。
+若要了解有关 Microsoft Intune 的最新功能，请参阅[新增功能](whats-new.md)。

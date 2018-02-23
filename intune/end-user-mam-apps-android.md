@@ -5,26 +5,27 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/06/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
-ms.reviewer: andcerat
+ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2889a0a32e58a677f825800bfa50dea64839d663
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 738f747c06f8ad7e6deb90908c2b4b653bad63e3
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-本主题描述具有应用保护策略的应用的用户体验。 仅在工作环境中使用应用时，应用保护策略才适用：例如，用户使用工作帐户访问应用，或访问公司 OneDrive 企业版位置存储的文件时。
+本文介绍启用了应用保护策略的应用的用户体验。 仅在工作环境中使用应用时，应用保护策略才适用：例如，用户使用工作帐户访问应用，或访问 OneDrive for Business 位置存储的文件时。
+
 ##  <a name="access-apps"></a>访问应用
 
 Android 设备上与应用保护策略关联的所有应用都需要公司门户应用。
@@ -42,21 +43,15 @@ Android 设备上与应用保护策略关联的所有应用都需要公司门户
 
 ##  <a name="manage-user-accounts-on-the-device"></a>在设备上管理用户帐户
 
-Intune 仅支持将应用保护策略部署到每个设备的一个用户帐户。
+多标识应用程序允许用户添加多个帐户。  Intune 应用仅支持一个托管帐户。  Intune 应用不限制非托管帐户的数量。
 
-* 根据所使用的应用，第二个用户可能会在设备上受阻。 但是在所有情况下，只有获取应用保护策略的第一个用户才会受该策略影响。
-
-  * Microsoft Word、Excel 和 PowerPoint 不会阻止第二个用户帐户，但第二个用户帐户不受应用保护策略影响。
-
-  * 对于 **OneDrive** 和 **Outlook** 应用，只能使用一个工作帐户。  无法为这些应用添加多个工作帐户。  但是，你可以在设备上删除用户并添加其他用户。
-
-
-* 如果设备在部署应用保护策略之前已有多个用户帐户，则最先部署应用保护策略的帐户由 Intune 应用保护策略进行管理。
-
+当应用程序中存在托管帐户时：
+*   如果用户尝试添加第二个托管帐户，则需要选择要使用的托管帐户。  另一个帐户则被删除。
+*   如果 IT 管理员将一个策略添加到第二个现有帐户，用户需要选择要使用的托管帐户。  另一个帐户则被删除。
 
 阅读以下示例场景以更深入地了解如何处理多个用户帐户。
 
-用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与 **X 公司**关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户。
+用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与 X 公司关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户，并添加与 Y 公司关联的帐户。
 ### <a name="add-a-second-account"></a>添加第二个帐户
 ####  <a name="android"></a>Android
 如果使用 Android 设备，则可能会看到具有删除现有帐户并添加新帐户指令的阻止消息。  若要删除现有帐户，请转到“设置”&gt;“常规”&gt;应用程序管理器”&gt;“公司门户”， 然后选择“清除数据”。

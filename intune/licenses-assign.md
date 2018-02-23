@@ -2,8 +2,8 @@
 title: "分配 Intune 许可证"
 description: "为你的 Intune 订阅用户分配许可证"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd407b8b933c7edce449cd25a9fbd53f4299fcc3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="assign-intune-licenses-to-your-user-accounts"></a>将 Intune 许可证分配给用户帐户
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-不管是手动添加用户还是从本地 Active Directory 同步，都必须首先为每个用户分配一个 Intune 许可证，然后用户才能在 Intune 中注册其设备。
+不管是手动添加用户还是从本地 Active Directory 同步，都必须首先为每个用户分配一个 Intune 许可证，然后用户才能在 Intune 中注册其设备。 如需查看许可证的列表，请参阅[包括 Intune 的许可证](licenses.md)。
 
 ## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>在 Office 365 管理中心分配 Intune 许可证
 
