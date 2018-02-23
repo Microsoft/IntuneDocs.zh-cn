@@ -16,10 +16,10 @@ ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 3de5f7524982c2a068bb8a62f90778722b037605
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>联系 Microsoft Intune 的辅助电话支持
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 01/25/2018
 |法国|全天候|星期一到星期五<br /><br />09:00 – 17:00 CET (UTC +1)|法语*、英语|0805540594|0157324297||
 |德国|全天候|星期一到星期五<br /><br />09:00 – 17:00 CET (UTC +1)|德语*、英语|0800 5892332|069380789508||
 |希腊|全天候|星期一到星期五<br /><br />09:00 – 17:00 EET (UTC +2)|希腊语*、英语|0080044142831||
-|危地马拉|全天候|星期一到星期五<br /><br />09:00 – 17:00 CST (UTC -6)|西班牙语*、英语|1-800-300-0069<br /><br />步骤 1。 选择选项 4（用于特殊访问权限）<br /><br />步骤 2. 输入代码：7007||
+|危地马拉|全天候|星期一到星期五<br /><br />09:00 – 17:00 CST (UTC -6)|西班牙语*、英语|1-800-300-0069<br /><br />步骤 1。 选择选项 4（用于特殊访问权限）<br /><br />步骤 2。 输入代码：7007||
 |中国香港特别行政区|全天候|星期一到星期五<br /><br />09:00 – 18:00 HKT (UTC +8)|粤语*、普通话*、英语||30713055|
 |匈牙利|全天候|星期一到星期五<br /><br />09:00 – 17:00 CET (UTC +1)|匈牙利语*、英语|36 80 983 899|36 1 778 9292|
 |冰岛|全天候|星期一到星期五<br /><br />09:00 – 17:00 GMT (UTC)|英语|8009609||

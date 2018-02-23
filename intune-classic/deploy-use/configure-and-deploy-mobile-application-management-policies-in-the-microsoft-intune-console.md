@@ -16,10 +16,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 881180fec0fe4fca8b49106bcae6ea1ecd52c2eb
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>配置和部署 Microsoft Intune 控制台中的移动应用程序管理策略
 
@@ -124,7 +124,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
 |设置名|详细信息|
     |---------|--------------------|
-    |**Name**|为此策略指定名称。|
+    |**名称**|为此策略指定名称。|
     |**描述**|（可选）为此策略指定描述。|
     |**限制显示在企业托管浏览器内的 Web 内容**|如果启用此设备，应用内的任何链接都将在托管浏览器中打开。 要使此选项起作用，你必须将此应用部署到设备。|
     |**“阻止 Android 备份”** 或 **“阻止 iTunes 和 iCloud 备份”**|此设置禁止从应用备份任何信息。|
