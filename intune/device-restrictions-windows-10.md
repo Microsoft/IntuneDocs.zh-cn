@@ -6,19 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/09/2018
 - **屏幕捕获（仅限移动版）**- 让用户以图像形式捕获设备屏幕。
 - **复制和粘贴（仅限移动设备）** - 允许设备上应用间的复制和粘贴操作。
 - **手动注销** - 允许用户手动从设备中删除工作区帐户。
+   - 如果计算机已加入 Azure Active Directory 并启用自动注册，此策略设置不适用。 
+   - 此策略设置不适用于运行 Windows 10 家庭版的计算机。
 - **手动安装根证书（仅限移动版）**- 阻止用户手动安装根证书和中间 CAP 证书。
 - **诊断数据提交** - 可能的值有：
     - 否 - 不向 Microsoft 发送数据
@@ -68,7 +69,7 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="personalization"></a>个性化设置
 
-- **桌面背景图片 URL（仅限桌面版）**- 指定希望用作 Windows 桌面墙纸的图片（格式为 PNG、JPG 或 JPEG）的 URL。 用户无法更改此设置。
+- **桌面背景图片 URL（仅限桌面版）** - 指定希望用作 Windows 桌面墙纸的图片（格式为 JPEG）的 URL。 用户无法更改此设置。
 
 ## <a name="privacy"></a>隐私
 
