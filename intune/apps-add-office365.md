@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版 2016 应用分配到 Windows 10 设备
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版应用分配到 Windows 10 设备
 
-此应用类型使用户可以轻松地将 Office 365 专业增强版 2016 应用分配到所管理的运行 Windows 10 的设备。 还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的单一条目。
+此应用类型使用户可以轻松地将 Office 365 专业增强版 应用分配到所管理的运行 Windows 10 的设备。 还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的单一条目。
 
 
 ## <a name="before-you-start"></a>开始之前
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/01/2018
 >仅当设备上未安装其他版本的 Microsoft Office 时，才支持此安装 Office 的方法。
 
 - 部署这些应用的设备必须运行 Windows 10 创意者更新或更高版本。
-- Intune 仅支持从 Office 365 专业增强版 2016 套件添加 Office 应用。
+- Intune 仅支持从 Office 365 专业增强版套件添加 Office 应用。
 - 当 Intune 安装应用套件时，如果任何 Office 应用处于打开状态，安装可能会失败，并且最终用户可能会丢失未保存文件中的数据。
 - Windows 10S、Windows 家庭版、Windows 团队、Windows Holographic 和 Windows Holographic for Business 设备上不支持此安装方法。
 - 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Microsoft Store 中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。

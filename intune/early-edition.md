@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Microsoft Intune 的早期版本 - 2018 年 2 月
 
@@ -40,6 +40,10 @@ ms.lasthandoff: 02/03/2018
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>新的注册失败趋势图表和失败原因表<!-- 1471783 -->
+
+在“注册概述”页，你将能够查看注册失败趋势和前五个失败原因。 单击图表或表可查看详细信息，以查找故障排除建议和修正建议。
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>防止最终用户添加或删除工作配置文件中的帐户 <!-- 1728700 -->    
 将 Gmail 应用部署到 Android for Work 配置文件中后，能够防止最终用户通过使用 Android for Work 设备限制配置文件中的“添加和删除帐户”设置添加或删除工作配置文件中的帐户。
@@ -76,9 +80,6 @@ Intune 将支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>使用十六进制代码自定义公司门户主题 <!--1049561 eeready-->
 
 可以使用十六进制代码自定义公司门户应用中的主题颜色。 输入十六进制代码时，Intune 将按照 [WCAG 2.0 标准](http://www.w3.org/TR/WCAG20)确定在文本颜色和背景色之间提供最高级别对比度的文本颜色。 可以在“移动应用” > “公司门户”中预览文本颜色和公司徽标之间的颜色对比。 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>使用“访问工作或学校帐户”设置选择设备类别 <!-- 1058963 --> 
-如果已启用[设备组映射](https://docs.microsoft.com/intune/device-group-mapping)，Windows 10 用户将会在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后或在开箱即用体验期间，看到选择设备类别的提示。
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>添加到终结点保护设置的新 Windows Defender Credential Guard 设置 <!--1102252 --> 
 

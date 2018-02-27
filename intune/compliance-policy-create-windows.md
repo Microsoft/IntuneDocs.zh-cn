@@ -6,18 +6,18 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 1/24/2018
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中创建适用于 Windows 设备的设备符合性策略
 
@@ -196,6 +196,10 @@ Windows Holographic for Business 支持以下设置：
 
   **加密设备上的数据存储**。
 
-<!--- ## Next steps
+若要对 Microsoft HoloLens 验证设备加密，请参阅[验证设备加密](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption)。
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## <a name="next-steps"></a>后续步骤
+
+请参阅以下主题，了解监视设备符合性的方法：
+
+- [如何监视设备合规性](device-compliance-monitor.md)

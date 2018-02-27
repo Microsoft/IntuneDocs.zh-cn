@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c2ebbe451f83dc14a9294c78a21ecfd30e5d155
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung Knox Standard 设备限制设置
 
@@ -94,7 +94,7 @@ ms.lasthandoff: 01/30/2018
 
 打开应用的安装页面，然后将 URL 复制到剪贴板。 你现在可以在符合或不符合要求的应用列表中使用这个 URL。
 
-示例：搜索适用于 Microsoft Office Mobile 的 Google Play。 使用 URL：**https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**。
+示例：在 [Google Play 的“应用”部分](https://play.google.com/store/apps)搜索“Microsoft Planner”。 使用 URL：https://play.google.com/store/apps/details?id=com.microsoft.planner。
 
 ### <a name="additional-options"></a>其他选项
 

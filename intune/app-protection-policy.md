@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 0ee95990afa08aa55e0f9101329b31bd8b3041f4
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
@@ -61,8 +61,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>应用保护策略的受支持平台
--   iOS 9 或更高版本
--   Android 4.4 或更高版本
+Intune 应用保护策略平台支持遵循 Office 应用程序平台支持。 有关详细信息，请参阅 [Office 系统要求](https://products.office.com/en-US/office-system-requirements)。
 
 目前不支持 Windows 设备。 但是，使用 Intune 注册 Windows 10 设备时，可以使用 Windows 信息保护，它提供了类似功能。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 ##  <a name="how-app-protection-policies-protect-app-data"></a>应用保护策略如何保护应用数据
