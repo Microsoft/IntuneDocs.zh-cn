@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-software-updates"></a>管理软件更新
 
@@ -80,7 +80,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 7. 在“**设置**”边栏选项卡上，配置以下信息：
     - **维护服务频道**：设置供设备接收 Windows 更新的频道（半年频道（定向）或半年频道）。
     - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
-    - **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
+    -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延迟期(天)** - 指定质量更新延迟的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 
@@ -130,14 +130,14 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
 在 Intune 控制台中，可以使用自定义策略的 OMA-URI 设置来配置商业 ID。 有关详细信息，请参阅 [Microsoft Intune 中适用于 Windows 10 设备的 Intune 策略设置](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)。   
 
-用于配置商业 ID 的 OMA-URI（区分大小写）路径为：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+用于配置商业 ID 的 OMA-URI（区分大小写）路径为：./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 
 例如，你可以在“**添加或编辑 OMA-URI 设置**”中使用以下值：
 
 - **设置名称**：Windows Analytics 商业ID
 - **设置说明**：为 Windows Analytics 解决方案配置商业 ID
 - **数据类型**：字符串
-- **OMA-URI**（区分大小写）：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+- **OMA-URI**（区分大小写）：./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 - **值**：<*使用 OMS 工作空间中的 Windows 遥测选项卡上显示的 GUID* >
 
 ![诊断和使用情况数据的 Windows 设置](./media/commID.png)

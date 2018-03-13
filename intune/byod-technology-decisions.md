@@ -2,9 +2,9 @@
 title: "通过 EMS 启用 BYOD 的技术决策"
 description: "用于通过 Microsoft 企业移动性 + 安全性启用 BYOD 和保护公司数据的关键技术决策。"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
+author: dougeby
+ms.author: pfetty
+manager: angrobe
 ms.date: 12/8/2017
 ms.topic: article
 ms.prod: 
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 
 ms.suite: ems
-ms.openlocfilehash: 85fa202c3e80cdc830155299c16f121f96cc5742
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3ee642f5c2e30023043cec4bf5286999d4397e2d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>用于通过 Microsoft 企业移动性 + 安全性 (EMS) 启用 BYOD 的技术决策
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 01/25/2018
 | | | |
 | 意外共享数据，或将数据保存到不安全的位置 | 限制设备数据备份 | 限制剪切/复制/粘贴|
 | 意外共享数据，或将数据保存到不安全的位置 | 限制另存为 | 限制另存为 |
-|意外共享数据，或将数据保存到不安全的位置 | 禁用打印 | N/A|
+|意外共享数据，或将数据保存到不安全的位置 | 禁用打印 | n/a|
 
 ## <a name="next-steps"></a>后续步骤
 现在是时候决定是否要在组织中启用 BYOD 了，可以选择是重点关注设备管理、应用管理还是上述两者的组合。 实现选择由你掌控，可以确信的是 Azure AD 提供的标识和安全功能在任何时候都可用。
