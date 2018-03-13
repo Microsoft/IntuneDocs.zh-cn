@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune 中前几个月的新增功能"
-titlesuffix: Azure portal
+titlesuffix: 
 description: "查看 Intune 新增功能页中早期的公告"
 keywords: 
 author: brenduns
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9022f1e9f30d4a64608d2d8588c794a07c41f24
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7ba6262c1126a421f2e2ca0e5085796c11df8d9a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 

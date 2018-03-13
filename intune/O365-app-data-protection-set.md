@@ -3,8 +3,8 @@ title: "在 Intune 的 Office 365 应用上设置基本数据管理"
 titlesuffix: Azure portal
 description: "管理 Office 365 应用向导的支持文档。"
 keywords: 
-author: lindavr
-ms.author: lindavr
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d1a4513b8ef6e1f42ad84558de8a57399bb8c1b
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e12f5becc1f3c03af0ee6d1fab9cd7ee16f2a547
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>你的用户将如何在托管 Office 365 应用上体验基本保护
 
