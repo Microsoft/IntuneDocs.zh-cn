@@ -1,12 +1,12 @@
 ---
 title: "iOS 应用保护策略设置"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "本主题介绍适用于 iOS 设备的应用保护策略设置。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5366062588d518a7072fb4d56e4eade0f492bebf
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 6225afab71d1f47793ea295553dfcaf169374a06
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-可以在 Azure 门户的“设置”边栏选项卡上为应用保护策略[配置](app-protection-policies.md)本主题所述的策略设置。
+可在 Azure 门户的“添加策略” > “设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)本主题所述的策略设置。
 
 有两种类别的策略设置：数据重定位设置和访问设置。 在本主题中，术语***策略托管应用***指使用应用保护策略配置的应用。
 
@@ -32,8 +32,8 @@ ms.lasthandoff: 02/19/2018
 
 | Setting | 如何使用 | 默认值 |
 |------|------|------|
-| **阻止 iTunes 和 iCloud 备份** | 选择“是”禁止将所有托管文件备份到 iTunes 和 iCloud。 选择“否”允许此应用将托管文件备份到 iTunes 和 iCloud。| 是 |
-| **允许应用向其他应用传送数据** | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> 此外，如果将此选项设置为“策略托管应用”或“无”，则将阻止允许 Spotlight Search 在应用内搜索数据的 iOS 9 功能。 <br><br> 有一些豁免应用和服务，Intune 可能会允许向其传输数据。 有关应用和服务的完整列表，请参阅[数据传输豁免](#data-transfer-exemptions)。 | 所有应用 |
+| **阻止 iTunes 和 iCloud 备份** | 选择“是”，阻止此应用将工作或学校的数据备份到 iTunes 和 iCloud。 选择“否”允许此应用程序将工作或学校的数据备份到 iTunes 和 iCloud。| 是 |
+| **允许应用向其他应用传送数据** | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> 此外，如果将此选项设置为“策略托管应用”或“无”，则将阻止允许 Spotlight Search 在应用内搜索数据的 iOS 9 功能。 <br><br> 默认情况下，Intune 允许向一些豁免应用和服务传输数据。 此外，如果需要允许将数据传输到不支持 Intune APP 的应用，则可以创建自己的豁免项目。 有关详细信息，请参阅[数据传输豁免](#data-transfer-exemptions)。 | 所有应用 |
 | **允许应用从其他应用接收数据** | 指定哪些应用可将数据传输到此应用： <ul><li>**策略托管应用**：仅允许从其他策略托管应用传输。</li><li>**所有应用**：允许从任何应用传输数据。</li><li>**无**：不允许从任何应用传输数据，包括其他策略托管应用。</li></ul> Intune 可能会允许从一些豁免应用和服务传输数据。 有关应用和服务的完整列表，请参阅[数据传输豁免](#data-transfer-exemptions)。 非注册 iOS 设备上已启用多标识 MAM 的 应用忽略此策略，并允许所有传入数据。 | 所有应用 |
 | **阻止“另存为”** | 选择“是”，在此应用中禁用“另存为”选项。 如果你希望允许使用“另存为”，请选择“否”。 | 否 |
 | **限制剪切、复制和粘贴到其他应用程序** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。 | 任何应用 |
@@ -53,13 +53,12 @@ ms.lasthandoff: 02/19/2018
 | 应用/服务名称 | 描述 |
 | ---- | --- |
 |<code>tel; telprompt</code> | 本机电话应用 |
-| <code>skype</code> | Skype |
-| <code>app-settings</code> | 设备设置 |
-| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
-| <code>calshow</code> | 本机日历 |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | 设备设置 |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
+|<code>calshow</code> | 本机日历 |
 
-
-
+有关详细信息，请参阅[应用的数据传输策略例外情况](app-protection-policies-exception.md)。 
 
 ## <a name="access-settings"></a>访问设置
 

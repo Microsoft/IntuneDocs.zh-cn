@@ -1,7 +1,7 @@
 ---
-title: "Intune 的应用配置策略 | Microsoft Docs"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune 的应用配置策略。"
+title: "Intune 的应用配置策略"
+titlesuffix: Microsoft Intune
+description: "了解如何在 Intune 中的 iOS 或 Android 设备上使用应用配置策略。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d7267de95d36ed0e27c8a720599cc78004cd71d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 52e0906b58680fa0b5628b2b5fc7445f8135658a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-configuration-policies-for-intune"></a>Intune 的应用配置策略
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>后续步骤
 
-### <a name="managed-devices"></a>被管理设备
+### <a name="managed-devices"></a>托管设备
 
  - 了解如何将应用配置用于 iOS 设备。  请参阅[为受管理的 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)。
  - 了解如何将应用配置用于 Android 设备。  请参阅[为受管理的 Android 设备添加应用配置策略](app-configuration-policies-use-android.md)。

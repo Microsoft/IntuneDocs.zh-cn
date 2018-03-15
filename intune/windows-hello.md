@@ -1,32 +1,32 @@
 ---
-title: "如何使用 Windows Hello 企业版"
-titleSuffix: Azure portal
+title: "如何将 Windows Hello 企业版与 Microsoft Intune 集成"
+titleSuffix: 
 description: "了解如何创建策略以控制 Windows Hello 企业版在托管设备上的使用。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-windows-hello-for-business"></a>使用 Windows Hello 企业版
+# <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>将 Windows Hello 企业版与 Microsoft Intune 集成
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune 与 Windows Hello 企业版（以前称为 Microsoft Passport for Work）集成，Windows Hello 企业版是使用 Active Directory 或 Azure Active Directory 帐户取代密码、智能卡或虚拟智能卡进行登录的一种替代方法。
+可以将 Windows Hello 企业版（以前称为 Microsoft Passport for Work）与 Microsoft Intune 集成。
 
-通过 Hello for Business，你可以使用*用户手势*取代密码进行登录。 用户手势可以是简单 PIN、Windows Hello 等生物识别身份验证或指纹读取器等外部设备。
+ Hello 企业版是使用 Active Directory 或 Azure Active Directory 帐户取代密码、智能卡或虚拟智能卡进行登录的一种替代方法。 通过它可以使用“用户手势”取代密码进行登录。 用户手势可以是简单 PIN、Windows Hello 等生物识别身份验证或指纹读取器等外部设备。
 
 Intune 与 Hello for Business 集成的两种方式：
 
@@ -50,17 +50,17 @@ Intune 与 Hello for Business 集成的两种方式：
 
 1.  在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
-2.  在“Intune”边栏选项卡上，选择“设备注册”，然后选择“Windows 注册” > “Windows Hello 企业版”。
+2.  在“Intune”页，选择“设备注册”，然后选择“Windows 注册” > “Windows Hello 企业版”。
 
-3.  在打开的边栏选项卡上，选择“默认”设置。
+3.  在打开的页面中，选择“默认”设置。
 
-4.  在“所有用户”边栏选项卡上，单击“属性”，然后输入 Windows Hello 企业版设置的“名称”和可选“说明”。
+4.  在“所有用户”页，单击“属性”，然后输入 Windows Hello 企业版设置的“名称”和可选“说明”。
 
-5. 在“所有用户”边栏选项卡上，单击“设置”，然后为“配置 Windows Hello 企业版”从下列选项中进行选择：
+5. 在“所有用户”页，单击“设置”，然后为“配置 Windows Hello 企业版”从下列选项中进行选择：
 
     - “禁用”。 如果不想要使用 Windows Hello 企业版，请选择此设置。 屏幕上的所有其他设置将不可用。
     - “启用”。 如果想要配置 Windows Hello 企业版设置，请选择此设置。
-    - “不配置”。 如果不想使用 Intune 来控制 Windows Hello 企业版设置，请选择此设置。 Windows 10 设备上的任何现有 Windows Hello 企业版设置不会更改。 边栏选项卡上的所有其他设置将不可用。
+    - “不配置”。 如果不想使用 Intune 来控制 Windows Hello 企业版设置，请选择此设置。 Windows 10 设备上的任何现有 Windows Hello 企业版设置不会更改。 页中的所有其他设置将不可用。
 
 6.  如果在上一步中选择了“启用”，请配置应用于所有已注册 Windows 10 和 Windows 10 移动版设备的必需设置。
 

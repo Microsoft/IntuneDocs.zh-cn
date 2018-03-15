@@ -1,30 +1,28 @@
 ---
-title: "MDM 生命周期概述"
-description: "了解 Intune 如何帮助你管理设备的整个生命周期（从注册到配置再到最终停用）。"
+title: "Microsoft Intune MDM 生命周期概述"
+description: "了解 Intune 如何帮助管理设备的整个生命周期（从注册到配置再到最终停用）。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46297080dcb332734b1e175a62e17c6c5666b469
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>移动设备管理 (MDM) 生命周期概述
+# <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune 移动设备管理 (MDM) 生命周期概述
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-你管理的所有设备都有一个*生命周期*。 Intune 可以帮助你管理此生命周期（从注册到配置和保护，再到不再需要时停用设备）：
+用户管理的所有设备都有一个生命周期。 Intune 可帮助管理此生命周期（从注册到配置和保护，再到不再需要时停用设备）。
 
 ![设备生命周期](./media/device-lifecycle.png "Intune 设备生命周期")
 
@@ -39,7 +37,7 @@ ms.lasthandoff: 01/25/2018
 - [**Windows 电脑管理策略（使用 Intune 客户端软件）**](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)。 向 Intune 注册 Windows 电脑会带给你最多的设备管理功能，Intune 将继续支持使用 Intune 客户端软件管理 Windows 电脑。 如果你需要有关可使用电脑执行的一些任务的信息，请从这里开始。
 
 ## <a name="protect"></a>保护
-在现代 IT 世界中，保护设备免受未经授权的访问是你要执行的最重要的任务之一。 除了设备生命周期的**配置**步骤中的项之外，Intune 还提供以下功能来帮助保护你管理的设备免受未经授权的访问或恶意攻击：
+在现代 IT 世界中，保护设备免受未经授权的访问是需要执行的最重要的任务之一。 除了设备生命周期的**配置**步骤中的项之外，Intune 还提供以下功能来帮助保护你管理的设备免受未经授权的访问或恶意攻击：
 - [**Multi-Factor Authentication**](/intune-classic/deploy-use/protect-your-devices-with-microsoft-intune)。 对用户登录添加一层额外的身份验证可以帮助增强设备安全性。 很多设备支持多重身份验证，这要求提供第二重身份验证（如电话呼叫或短信），用户才能获得访问权限。
 - [**Windows Hello 企业版设置**](windows-hello.md)（[经典门户](/intune-classic/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)）。 Windows Hello 企业版是一种备用登录方法，可让用户使用“手势”（如指纹或 Windows Hello）进行登录，而无需密码。
 - [**保护 Windows 电脑的策略（使用 Intune 客户端软件）**](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)。 当你使用 Intune 客户端软件管理 Windows 电脑时，可以使用允许你在所管理的电脑上控制 Endpoint Protection、软件更新和 Windows 防火墙的设置的策略。

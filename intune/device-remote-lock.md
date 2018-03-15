@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ecd7fa03b35e91b5a77906858fb251348796704d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0a8f3c93507cde4363570a9a39f8b3b1f69c07df
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>使用 Intune 远程锁定受管理设备
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/25/2018
 |Android|是|
 |iOS|是|
 |macOS|是|
-|Windows 10|是|
+|Windows 10 桌面版|否|
 |Windows 10 移动版|是|
 |Windows Phone|是，适用于 Windows Phone 8.1 和更高版本|
 
@@ -45,12 +45,12 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="how-to-remote-lock-a-device"></a>如何远程锁定设备
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在 Intune 边栏选项卡上，选择“设备”。
-4. 在“设备和组”边栏选项卡上，选择“所有设备”。
+4. 在“设备”边栏选项卡上，选择“所有设备”。
 5. 从你管理的设备列表中，选择设备，然后选择“远程锁定”设备远程操作。
 
 ## <a name="next-steps"></a>后续步骤
 
-若要查看刚执行的操作的状态，请在“设备和组”边栏选项卡上选择“设备操作”。
+要查看刚执行的操作的状态，请在“设备”边栏选项卡上选择“设备操作”。

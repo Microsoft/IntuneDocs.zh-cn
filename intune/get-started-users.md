@@ -1,10 +1,10 @@
 ---
-title: "用户入门"
-titlesuffix: Azure portal
-description: "向 Intune 添加用户，使用户可通过移动设备访问公司资源。"
+title: "用户管理入门"
+titlesuffix: Microsoft Intune
+description: "向 Intune 添加用户并为其分配许可证，以便他们可以在移动设备上访问公司资源。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 297a9244bac8e45e14e1d22cadee9088c87f34a3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-managing-users"></a>用户管理入门
+# <a name="get-started-managing-users"></a>用户管理入门
 
 应考虑组织中的所有人员。 对于使用公司数据的每一位人员，都需通过 Intune 用户形式管理对公司数据的访问。
 

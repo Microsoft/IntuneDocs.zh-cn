@@ -2,10 +2,10 @@
 title: "Intune 数据仓库更改日志 | Microsoft Docs"
 description: "Intune 数据仓库 API 中的更改列表。"
 keywords: "Intune 数据仓库"
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,40 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 306cceb704c1153b5691181d576561d9c93a36d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67eedf528763ae302e3850710b3fab026e15f813
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 随时了解 Intune 数据仓库的更新。
+
+## <a name="1801"></a>1801
+2018 年 1 月发布
+
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Intune 数据仓库仅应用程序身份验证 <!-- 1867540 -->
+
+你可以使用 Azure Active Directory (Azure AD) 设置应用程序并通过 Intune 数据仓库进行身份验证。 有关详细信息，请参阅 [Intune 数据仓库仅应用程序身份验证](data-warehouse-app-only-auth.md)。
+
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Azure AD 和 Intune 凭据要求 <!-- 2077525 -->
+
+- 在访问 Intune 数据仓库（包括 API）时，不再需要向用户分配 Intune 许可证。
+- Intune 角色名称已从“报表”更改为“Intune 数据仓库”。 
+
+    有关详细信息，请参阅 [Azure AD 和 Intune 凭据要求](reports-api-url.md#azure-ad-and-intune-credential-requirements)。
+
+### <a name="odata-query-options----2077711---"></a>OData 查询选项 <!-- 2077711 -->
+
+可以使用 <code>$select</code> 作为 OData 查询参数。 当前版本支持以下 OData 查询参数：<code>$filter</code>、<code>$orderby</code>、<code>$select</code>、<code>$skip</code> 和 <code>$top</code>。 有关详细信息，请参阅 [OData 查询选项](reports-api-url.md#odata-query-options)。
+
+### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>数据仓库数据模型中的新实体 <!-- 2077804 -->
+
+ - 已添加实体 [MobileAppDeviceuserInstallStatus](reports-ref-application.md#mobileappdeviceuserinstallstatus)。 MobileAppDeviceUserInstallStatus 表示给定设备和用户的移动应用安装状态。
+ - 已添加实体 [MobileAppInstallState](reports-ref-application.md#mobileappinstallstate)。 MobileAppInstallState 实体表示已分配到包含设备和/或用户的组的移动应用程序的安装状态。 
 
 ## <a name="1710"></a>1710
 发布于 2017 年 11 月

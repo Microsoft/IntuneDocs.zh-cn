@@ -1,12 +1,12 @@
 ---
-title: "利用 Intune 来管理设备"
-titleSuffix: Intune on Azure
-description: "了解如何查看使用 Intune 管理的设备，并在设备上执行各种操作。"
+title: "使用 Microsoft Intune 管理设备"
+titleSuffix: 
+description: "查看使用 Intune 管理的设备，并在设备上执行各种操作。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/31/2017
+ms.date: 02/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b034e144aa43d239874b484acb2a40be12aff7c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 01/25/2018
 
 **设备**工作负荷可以让你了解所管理的设备，并能在这些设备上执行远程任务。 若要访问工作负荷，请执行以下操作：
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在“Intune”中选择“设备”。
 4. 可查看设备相关信息并执行远程设备操作，如下所示：
     - 概述 - 可以管理的已注册设备的快照。
@@ -38,10 +38,12 @@ ms.lasthandoff: 01/25/2018
     - Azure AD 设备 - 注册或加入 Azure Active Directory 的设备列表。 了解有关 [Azure AD 设备管理](https://docs.microsoft.com/azure/active-directory/device-management-introduction)的详细信息。
     - 设备操作 - 在设备上执行的远程操作的历史记录，包括操作、操作状态、操作启动者和时间。
 
-    ![监视设备操作](./media/monitor-device-actions.png)
+        ![监视设备操作的屏幕截图](./media/monitor-device-actions.png)
 
-    - TeamViewer - TeamViewer 服务允许由 Intune 托管的 Android 设备的用户可以从他们的 IT 管理员处获取远程协助。 详细了解 [TeamViewer](device-profile-android-teamviewer.md)。
-
+    - **审核日志** - 审核日志记录了导致 Microsoft Intune 发生更改的活动。 了解更多有关[审核日志](monitor-audit-logs.md)的信息。
+    - **TeamViewer 连接器** - TeamViewer 服务允许由 Intune 托管的 Android 设备用户从 IT 管理员处获取远程协助。 详细了解 [TeamViewer](device-profile-android-teamviewer.md)。
+    - **帮助和支持** - 排查问题、请求获取支持或查看 Intune 状态。  
+    
 ## <a name="available-device-actions"></a>可用的设备操作
 可用的操作取决于设备平台和设备的配置。
 

@@ -1,7 +1,7 @@
 ---
-title: "注册 iOS 设备- Apple Configurator-设置助理"
-titlesuffix: Azure portal
-description: "了解如何通过 Apple Configurator 使用“设置助理”来注册公司拥有的 iOS 设备。"
+title: "使用 Apple Configurator 注册 iOS 设备"
+titlesuffix: Microsoft Intune
+description: "了解如何通过 Apple Configurator 使用设置助理来注册公司拥有的 iOS 设备。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c076bc52495d1b74a18e1d655376b6183dc5fe16
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 5f74c39fd1d335f644542d99c534b5aea21833df
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
@@ -32,17 +32,17 @@ ms.lasthandoff: 02/09/2018
 >
 >如果“设备注册”页如下图所示，则帐户尚未更新到新的用户界面，可以使用此帮助页面。
 >
->![旧用户界面](./media/appleenroll-oldui.png)
+>![旧的 Intune 用户界面](./media/appleenroll-oldui.png)
 >
 >如果“设备注册”页如下图所示，则用户界面已更新。  请转到[此帮助页面](apple-configurator-enroll-ios-newui.md)。
 >
->![新用户界面](./media/appleenroll-newui.png)
+>![新的 Intune 用户界面](./media/appleenroll-newui.png)
 
 Intune 支持注册 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)。 使用 Apple Configurator 进行注册时，需要通过 USB 将每个 iOS 设备连接到 Mac 计算机来设置公司注册过程。 你可采用两种方式使用 Apple Configurator 将设备注册到 Intune：
 - 设置助理注册 – 恢复设备的出厂设置，使其准备好在设置助理期间进行注册。
 - 直接注册 - 不恢复设备的出厂设置，并通过 iOS 设置注册设备。 此方法适仅支持“无用户关联”的设备。
 
-Apple Configurator 注册方法不能与[设备注册管理器](device-enrollment-manager-enroll.md)同时使用。
+Apple Configurator 注册方法不能与[设备注册管理员](device-enrollment-manager-enroll.md)同时使用。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -64,7 +64,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 5. 在“Apple Configurator 注册配置文件”下，选择“创建”。
 6. 键入配置文件的“名称”和“说明”进行管理。 用户看不到这些详细信息。 可使用此“名称”字段在 Azure Active Directory 中创建动态组。 使用配置文件名称定义 enrollmentProfileName 参数，以向设备分配此注册配置文件。 详细了解 Azure Active Directory 动态组。
 
-  ![创建配置文件屏幕的屏幕截图，选中了“通过用户关联注册”](./media/apple-configurator-profile-create.png)
+  ![选中“通过用户关联注册”的“创建配置文件”屏幕](./media/apple-configurator-profile-create.png)
 
 7. 指定“用户关联”：
    - “通过用户关联注册”- 必须通过设置助理将设备与某个用户关联，然后此设备可访问公司数据和电子邮件。 属于用户且需要使用公司门户获取服务（如安装应用）的托管设备需要用户关联。 仅设置助理注册支持。 用户关联需要 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
@@ -117,7 +117,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 1. 在 Azure 门户的 Intune 中，选择“设备注册” > “Apple 注册” > “AC 配置文件”，然后选择要导出的配置文件。
 2. 在配置文件上，选择“导出配置文件”。
 
-  ![采集设置助理注册的导出配置文件的屏幕快照，在其中突出显示配置文件 URL](./media/ios-apple-configurator-expor-sat.png)
+  ![设置助理注册的导出配置文件，其中突出显示配置文件 URL](./media/ios-apple-configurator-expor-sat.png)
 3. 复制配置文件 URL。 稍后可在 Apple Configurator 中添加它，以定义 iOS 设备使用的 Intune 配置文件。
 
   接下列按照以下过程将此配置文件导入 Apple Configurator，定义 iOS 设备使用的 Intune 配置文件。
@@ -155,7 +155,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在“导出配置文件”下，选择“下载配置文件”，下载注册配置文件。
 
-  ![采集设置助理注册的导出配置文件的屏幕快照，在其中突出显示配置文件 URL](./media/ios-apple-configurator-expor-de.png)
+  ![设置助理注册的导出配置文件，其中突出显示配置文件 URL](./media/ios-apple-configurator-expor-de.png)
 
 4. 将文件传输到运行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 计算机，作为管理配置文件直接推送到 iOS 设备。
 5. 通过以下步骤使用 Apple Configurator 准备设备。
@@ -163,7 +163,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
   2. 使用 USB 线将 iOS 设备连接到 Mac 计算机。 关闭“照片”、iTunes 和其他在检测设备时为设备打开的应用。
   3. 在 Apple Configurator 中，选择已连接的 iOS 设备，然后选择“添加”按钮。 可以添加到设备的选项将显示在下拉列表中。 选择“配置文件”。
 
-    ![采集设置助理注册的导出配置文件的屏幕快照，在其中突出显示配置文件 URL](./media/ios-apple-configurator-add-profile.png)
+    ![设置助理注册的导出配置文件，其中突出显示配置文件 URL](./media/ios-apple-configurator-add-profile.png)
 
   4. 使用文件选取器选择从 Intune 导出的 .mobileconfig 文件，然后选择“添加”。 配置文件将添加到设备。 如果设备是“非监督”状态，安装将需要在设备上验收。
 6. 使用以下步骤在 iOS 设备上安装配置文件。 设备必须已经完成设置助理且准备好使用。 如果注册需要应用部署，设备应设置一个 Apple ID，因为应用部署需要有一个 Apple ID 登录到应用商店。

@@ -1,27 +1,26 @@
 ---
-title: "适用于 iOS 的 Intune 设备限制设置"
-titleSuffix: Azure portal
-description: "了解可用来控制 iOS 设备上的设备设置和功能的 Intune 设置。"
+title: "适用于 iOS 的 Microsoft Intune 设备限制设置"
+titleSuffix: 
+description: "了解可用来控制运行 iOS 的设备上的设备设置和功能的 Intune 设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备限制设置
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 设备限制设置
+本文介绍可为运行 iOS 的设备配置的所有 Microsoft Intune 设备限制设置。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/25/2018
 - 限制 UI 
 - 通过 UI 安装配置文件 
 - 新闻 
-- 键盘快捷键 
+- 键盘快捷方式 
 - 密码修改 
 - 设备名更改 
 - 壁纸更改 
@@ -107,7 +106,7 @@ ms.lasthandoff: 01/25/2018
 - 密码修改（仅限被监督的设备）- 防止更改、添加或删除密码。
     - 指纹修改（仅限被监督的设备）- 防止用户更改、添加或删除 TouchID 设置。
 
-<sup>1</sup>配置设置“屏幕锁定前的非活动状态最大分钟数”和“屏幕锁定后要求提供密码前的最大分钟数”时，它们会依次应用。 例如，如果你设置的两个设置的值均为“5”分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
+<sup>1</sup>配置设置“屏幕锁定前的非活动状态最大分钟数”和“屏幕锁定后要求提供密码前的最大分钟数”时，它们会依次应用。 例如，如果设置的两个设置的值均为“5”分钟，屏幕在五分钟后将自动关闭，然后再过五分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在五分钟后锁定。
 
 ## <a name="locked-screen-experience"></a>锁定屏幕体验
 
@@ -133,7 +132,7 @@ ms.lasthandoff: 01/25/2018
 -   **Game Center（仅限被监督的设备）** - 阻止或启用 Game Center 应用。
 -   **多玩家游戏（仅限被监督的设备）** - 允许用户在设备上玩多玩家游戏。
 -   **分级区域** - 选择要为其配置允许的下载的分级区域，然后为**电影**和**电视节目**选择允许的分级。
--   **应用** - 选择用户可下载允许年龄分级的应用，或者可以选择“允许所有应用”。
+-   **应用** - 选择用户可下载的应用的允许年龄分级，或者可以选择“允许所有应用”。
 
 ## <a name="built-in-apps"></a>内置应用
 
@@ -156,8 +155,8 @@ ms.lasthandoff: 01/25/2018
 
 在受限制的应用列表中，可以配置以下列表之一：
 
-- **禁止的应用**列表 - 列出用户不得安装和运行的应用（未由 Intune 托管）。 不阻止用户安装已禁止的应用，但如果用户这样做，将向你报告此行为。
-- **批准的应用**列表 - 列出允许用户安装的应用。 用户不得安装未列出的应用。 自动允许由 Intune 托管的应用。 不阻止用户安装不在已批准列表的应用，但如果用户这样做，将向你报告此行为。
+- **禁止的应用**列表 - 列出用户不得安装和运行的应用（未由 Intune 托管）。 不阻止用户安装已禁止的应用，但如果用户这样做，系统会向你报告。
+- **批准的应用**列表 - 列出允许用户安装的应用。 用户不得安装未列出的应用。 自动允许由 Intune 托管的应用。 不阻止用户安装不在已批准列表的应用，但如果用户这样做，系统会向你报告。
 
 若要配置列表，请单击“添加”，然后指定所选应用的名称、应用发布者（可选）和该应用在应用商店中的 URL。
 
@@ -169,7 +168,7 @@ ms.lasthandoff: 01/25/2018
 复制页面的 URL，并使用此 URL 配置允许或禁止应用列表或你想要在展台模式下运行的应用。
 必须将包含受限制的应用设置的设备配置文件分配到用户组。
 
-示例：搜索 Microsoft Word for iPad。 你将使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
+示例：搜索 Microsoft Word for iPad。 使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
 
 > [!Note]
 > 还可使用 iTunes 查找应用，然后使用“复制链接”命令获取应用 URL。
@@ -182,8 +181,8 @@ ms.lasthandoff: 01/25/2018
 
 在“显示或隐藏应用”列表中，可以配置以下列表之一（需要运行 iOS 9.3 或更高版本的受监控设备）。
 
-**隐藏应用**列表 - 指定对用户隐藏的应用列表。 用户无法查看，或启动这些应用。
-**可见应用**列表 - 指定用户可以查看和启动的应用的列表。 无法查看或启动其他应用。
+“隐藏应用”列表 - 指定对用户隐藏的应用列表。 用户无法查看，或启动这些应用。
+“可见应用”列表 - 指定用户可以查看和启动的应用列表。 无法查看或启动其他应用。
 
 若要配置列表，请单击“添加”，然后指定所选应用的名称、应用发布者（可选）和该应用在应用商店中的 URL。
 
@@ -194,7 +193,7 @@ ms.lasthandoff: 01/25/2018
 使用搜索引擎，查找你想在 iTunes 应用商店中使用的应用并打开该应用的页面。
 复制页面的 URL，并使用此 URL 配置允许或禁止应用列表或你想要在展台模式下运行的应用。
 
-示例：搜索 Microsoft Word for iPad。 你将使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
+示例：搜索 Microsoft Word for iPad。 使用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
 
 > [!Note]
 > 你还可以使用 iTunes 软件查找应用程序，然后使用“复制链接”  命令获取应用的 URL。
@@ -228,7 +227,7 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="keyboard-and-dictionary"></a>键盘和字典
 
--   **单词定义查找（仅限被监督的设备）** - 允许可突出显示某个字词并查找其定义的 iOS 功能。
+-   **单词定义查找（仅限被监督的设备）**- 允许可突出显示某个字词并查找其定义的 iOS 功能。
 -   **预测键盘（仅限被监督的设备）** - 允许使用预测键盘，它会建议用户可能想要使用的字词。
 -   **自动更正（仅限被监督的设备）** - 让设备自动更正拼写错误的词。
 -   **键盘拼写检查（仅限被监督的设备）** - 允许设备拼写检查程序。
@@ -240,7 +239,7 @@ ms.lasthandoff: 01/25/2018
 -   **将文档同步到 iCloud（仅限被监督的设备）** - 允许将文档和键值同步到 iCloud 存储空间。
 -   **将照片流同步到 iCloud** - 允许用户在其设备上启用“我的照片流”，该操作可将照片同步到 iCloud 并在所有用户设备上可用。
 -   **加密的备份** - 需要将任何设备备份进行加密。
--   **iCloud 照片库** - 如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。    如果将其设置为“否”，则从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。
+-   **iCloud 照片库** - 如果设置为“否”，则会禁用可供用户在云中存储照片和视频的 iCloud 照片库。   如果将其设置为“否”，会从设备中删除尚未从 iCloud 照片库完全下载到设备的所有照片。
 -   **通过托管的应用同步到云** - 允许通过 Intune 管理的应用将数据同步到用户的 iCloud 帐户。
 -   **共享照片流** - 将其设置为“否”以在设备上禁用“iCloud 照片共享”。
 -   **活动延续** - 允许用户在其他 iOS 或 macOS 设备上继续进行在某台 iOS 设备上开始的工作（切换）。
@@ -251,7 +250,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="settings"></a>设置
 
-- **应用名称** - 输入应用的名称，因为它将出现在此边栏选项卡上的应用列表中。
+- **应用名称** - 输入应用的名称，从而让其出现在此边栏选项卡上的应用列表中。
 - **应用捆绑 ID** - 输入应用的捆绑 ID。 如需帮助，请参阅本主题中的**适用于内置 iOS 应用的捆绑 ID 引用**。
 
 指定每个应用名称和捆绑 ID 后，选择“添加”以将其追加到列表。
@@ -339,16 +338,16 @@ ms.lasthandoff: 01/25/2018
 -   **弹出窗口** - 启用或禁用浏览器弹出窗口阻止程序。
 
 
-## <a name="domains"></a>域
+## <a name="domains"></a>Domains
 
 ### <a name="unmarked-email-domains"></a>未标记的电子邮件域
 
-在“电子邮件域 URL”字段中，向列表添加一个或多个 URL。 当最终用户从你所配置的域以外的域接收电子邮件时，该电子邮件将在 iOS 邮件应用中被标记为不受信任。
+在“电子邮件域 URL”字段中，向列表添加一个或多个 URL。 当最终用户从所配置的域以外的域接收电子邮件时，该电子邮件在 iOS 邮件应用中被标记为不受信任。
 
 
 ### <a name="managed-web-domains"></a>托管的 Web 域
 
-在“Web 域 URL”字段中，向列表添加一个或多个 URL。 从指定域下载的文档将被视为托管。 此设置仅适用于使用 Safari 浏览器下载的文档。
+在“Web 域 URL”字段中，向列表添加一个或多个 URL。 从指定域下载的文档被视为托管。 此设置仅适用于使用 Safari 浏览器下载的文档。
 
 
 ### <a name="safari-password-autofill-domains"></a>Safari 密码自动填充域

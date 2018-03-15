@@ -1,12 +1,12 @@
 ---
-title: "如何将 iOS 应用商店应用添加到 Intune | Microsoft Docs"
-titlesuffix: Azure portal
-description: "了解如何将 iOS 应用商店应用添加到 Intune。"
+title: "如何将 iOS 应用商店应用添加到 Microsoft Intune"
+titlesuffix: 
+description: "了解如何将 iOS 应用商店应用添加到 Microsoft Intune。"
 keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,23 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e013b5c995274365978ee0c2ba2f45bfeef54baa
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: b5315d683abfc38a7f42d2f322cc77c625270e3c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>如何将 iOS 应用商店应用添加到 Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-本主题提供的信息有助于向 Intune 添加 iOS 应用商店应用。
+本文中提供的信息可帮助向 Microsoft Intune 添加 iOS 应用商店应用。 iOS 应用商店应用是 Intune 在用户设备上安装的应用。 用户是公司员工的一部分。 iOS 应用商店应用会自动更新。 
 
 >[!NOTE]
->尽管 iOS 设备用户可删除部分内置 iOS 应用（如 Stocks 和地图），但无法使用 Intune 重新部署这些应用。 如果最终用户删除这些应用，则必须前往 App Store，并手动重新安装它们。
+>尽管 iOS 设备用户可删除部分内置 iOS 应用（如“股市”和“地图”），但无法使用 Intune 重新部署这些应用。 如果最终用户删除这些应用，则必须前往 App Store，并手动重新安装它们。
 
-## <a name="before-you-start"></a>准备工作
+## <a name="before-you-start"></a>开始之前
 
 如果应用在应用商店中是免费的，则只能使用此方法分配应用。 如果要使用 Intune 分配付费应用，请考虑使用 [iOS 批量购买计划](vpp-apps-ios.md)。
 
@@ -40,25 +40,25 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>步骤 1 - 在应用商店中搜索应用
 
-1. 登录到 Azure 门户中。
-2. 依次选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“管理应用”。
-4. 在“移动应用”工作负荷中，选择“管理”>“应用”。
-5. 在应用列表的上方，选择“添加”。
-6. 在“添加应用”边栏选项卡中，选择“搜索应用商店”。
-7. 在“Apple App Store”边栏选项卡中，选择 App Store 国家/地区的区域。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在 Intune 边栏选项卡上，选择“移动应用”。
+4. 在“移动应用”工作负载中，选择“管理”部分下的“应用”。
+5. 选择“应用”窗格右侧的“添加”。
+6. 在“应用类型”列表中，选择可用“应用商店应用”类型下的“iOS”。
+6. 选择“搜索 App Store”。
+7. 在“搜索 App Store”边栏选项卡中，选择 App Store 国家/地区的区域设置。
 8. 在搜索框中键入名称（或名称的一部分）。 Intune 将搜索应用商店并返回相关结果的列表。
-9. 从列表中，选择所需应用，然后单击“确定”。
+9. 从列表中选择所需应用，然后单击“选择”。
 
 ## <a name="step-2---configure-app-information"></a>步骤 2 - 配置应用信息
 
-1. 在“添加应用”边栏选项卡中，选择“应用信息”。
-2. 在“编辑应用”边栏选项卡中，配置应用信息。 完成后，单击“添加”。 根据所选择的应用，此边栏选项卡中的某些值可能已自动填充：
+1. 在“添加应用”边栏选项卡中，选择“应用信息”以配置应用。
+2. 在“应用信息”边栏选项卡中，添加应用信息。 根据所选择的应用，此边栏选项卡中的某些值可能已自动填充：
 - **名称** - 键入要在公司门户中显示的应用名称。 请确保使用的所有应用名称都是唯一的。 如果同一应用名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
 - **描述** - 键入要在公司门户中向用户显示的应用描述。
 - **发布者** - 键入应用发布者名称。
 - **应用商店 URL** - 键入要创建的应用的 App Store URL。
-- **应用商店国家/地区** - 选择 App Store 国家/地区的区域。
 - **最低操作系统** - 从列表中选择可安装应用的最低操作系统版本。 应用将不会安装在具有更早操作系统的设备上。
 - **适用的设备类型** - 从列表中选择应用所使用的设备。
 - **类别**（可选）。 选择一个或多个内置应用类别或你创建的类别。 “类别”可让用户在浏览公司门户时更轻松地查找应用。
@@ -69,6 +69,11 @@ ms.lasthandoff: 01/29/2018
 - **所有者** -（可选）键入此应用的所有者的名称，例如，HR 部门。  此字段仅对管理员可见，对最终用户不可见。
 - **备注** - 键入要与此应用关联的任何备注。 此字段仅对管理员可见，对最终用户不可见。
 - **徽标** - 上传与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
-3. 完成后，在“添加应用”边栏选项卡上，选择“确定”。
+3. 完成后，单击“添加信息”边栏选项卡上的“确定”。
+4. 在“添加应用”边栏选项卡中，单击“添加”。 
 
-创建的应用显示在应用列表中，可在该列表中将其分配到选择的组。 如需帮助，请参阅[如何将应用分配到组](apps-deploy.md)。
+创建的应用显示在应用列表中，可在该列表中将其分配到选择的组。 
+
+## <a name="next-steps"></a>后续步骤
+
+- [如何将应用分配到组](apps-deploy.md)

@@ -2,10 +2,10 @@
 title: "什么是 Microsoft Intune"
 description: "了解 Intune 作为企业移动性 + 安全性解决方案的移动设备管理 (MDM) 和移动应用管理 (MAM) 组件的工作原理，以及它帮助保护公司数据的方式。"
 keywords: "什么是 Intune"
-author: Lindavr
-ms.author: lindavr
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: b528ff06eb163beeb14465cfb10e66b7d2623424
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: aa28f11a32a35e53c8e135a9f5f738513f416c37
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-intune"></a>什么是 Intune？
 

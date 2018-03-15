@@ -1,6 +1,6 @@
 ---
-title: "使用 Intune 恢复设备的出厂设置或删除设备上的公司数据"
-titlesuffix: Azure portal
+title: "使用 Microsoft Intune 恢复设备的出厂设置或删除设备上的公司数据"
+titlesuffix: 
 description: "了解如何删除设备上的公司数据或将设备恢复出厂设置。"
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>通过恢复出厂设置或删除公司数据删除设备
 
@@ -36,10 +36,10 @@ ms.lasthandoff: 01/30/2018
 ### <a name="to-factory-reset-a-device"></a>恢复设备的出厂设置
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“设备和组”边栏选项卡上，选择“所有设备”。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“设备”边栏选项卡上，选择“所有设备”。
 4. 选择要恢复出厂设置的设备名称。
-5. 在显示设备名称的边栏选项卡上，选择“恢复出厂设置”
+5. 在显示设备名称的边栏选项卡上，选择“恢复出厂设置”。
 6. 对于 Windows 10 版本 1709 或更高版本，有其他选项可“保留注册状态和用户帐户”。 
     
     |通过恢复出厂设置保留|不保留|
@@ -123,8 +123,8 @@ ms.lasthandoff: 01/30/2018
 ### <a name="to-remove-company-data"></a>删除公司数据
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“设备和组”边栏选项卡上，选择“所有设备”。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“设备”边栏选项卡上，选择“所有设备”。
 4. 选择想要从中删除公司数据的设备名称。
 5. 在显示设备名称的边栏选项卡上，选择“删除公司数据”，然后选择“是”确认删除。
 
@@ -134,9 +134,9 @@ ms.lasthandoff: 01/30/2018
 
 由于通信问题或设备丢失，可能需要从 Azure Active Directory (AD) 删除设备。 虽然删除命令不会从管理计划中删除设备，但可使用 Delete 从 Azure 门户中删除已知无法访问且不太可能再与 Azure 通信的设备记录。
 
-1.  使用管理员凭据登录 [Azure 门户中的 Azure Active Directory](http://aka.ms/accessaad)。 还可使用页面左侧的链接登录 [Office 365 门户](https://portal.office.com)，然后选择“管理员”&gt;“Azure AD”。
+1.  使用管理员凭据登录 [Azure 门户中的 Azure Active Directory](http://aka.ms/accessaad)。 还可使用页面左侧的链接登录 [Office 365 门户](https://portal.office.com)，然后选择“管理中心”&gt;“Azure AD”。
 3.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不会要求提供信用卡或付款（请选择**注册免费的 Azure Active Directory**订阅链接）。
-4.  选择“Active Directory”，然后选择你的组织。
+4.  选择“Azure Active Directory”，然后选择组织。
 5.  选择“用户”  选项卡。
 6.  选择要删除其设备的用户。
 7.  选择**设备**。

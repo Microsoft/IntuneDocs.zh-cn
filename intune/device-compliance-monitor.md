@@ -1,10 +1,10 @@
 ---
-title: "如何监视设备符合性"
-titlesuffix: Azure portal
+title: "监视设备符合性"
+titlesuffix: Microsoft Intune
 description: "了解如何监视设备符合性。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,32 +15,32 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9cd8bb0486164dd9dfe020261da9079ea5a68633
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-monitor-device-compliance-in-intune"></a>如何在 Intune 中监视设备符合性
+# <a name="monitor-device-compliance-in-intune"></a>在 Intune 中监视设备符合性
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 可以在“概述”边栏选项卡中查看“合规性配置文件”的状态摘要。
-可以以交互方式单击各图表以深入查看详细信息。 如果配置了多个合规性配置文件，则还可以通过转到“策略”边栏选项卡并选择“管理”部分中的“报表”来查看每个策略的状态。  下面列出了可用报表的详细信息。
+可以以交互方式单击各图表以深入查看详细信息。 如果配置了多个符合性配置文件，则可以在“管理” > “报告”下的策略边栏选项卡上查看策略状态。
 
 ##  <a name="device-compliance"></a>设备符合性
 
-设备合规性报表的摘要视图首先向你显示有关设备数的聚合信息，其报告为以下之一：
+设备符合性报告的摘要视图列出了有关设备数的聚合信息，其报告为以下状态之一：
 
-- **合规**：设备最近已进行了合规性评估，并已被确定为符合你指定的合规性配置文件设置。
+- **符合**：设备最近进行了评估，并符合指定的符合性配置文件设置。
 - **不合规**：设备已进行评估并被确定为不合规。  如果在配置文件中指定了宽限期，则表明宽限期已到期，使得设备处于不合规状态。
-- **宽限期**：设备已进行评估并被确定为不合规。 但是，在设备实际标记为不合规之前，宽限期仍然适用。
+- **宽限期**：设备已进行评估并被确定为不合规。 但是，在设备标记为不合规之前，宽限期仍然适用。
 
 你可以向下钻取每个部分，以查看有关各个设备和用户的更多详细信息。
 
 ## <a name="setting-compliance"></a>设置合规性
 
-设置合规性报表提供每个合规性设置的详细信息，例如：
+设置符合性报告提供每个符合性设置的详细信息，例如：
 
 - 不符合设置的设备数。
 - 设置所应用到的平台。

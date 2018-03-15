@@ -3,8 +3,8 @@ title: "使用 Intune 的移动威胁防御"
 titleSuffix: Azure portal
 description: "根据设备风险，保护对公司资源的访问"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1d5957acde86b3621009e5c38df42bc894a413c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>使用 Intune 的移动威胁防御集成
 
@@ -30,13 +30,13 @@ ms.lasthandoff: 01/25/2018
 
 公司需要针对出现的威胁保护敏感数据，包括物理的、基于应用的和基于网络的威胁以及操作系统漏洞。
 
-过去，公司在保护电脑免受攻击方面一直比较主动，但并未监视和保护移动设备。 尽管移动平台内置有保护（如应用隔离和审查使用者应用商店），但这些平台仍易受到复杂攻击。 如今，更多员工使用设备完成工作，并需要访问敏感信息。 因此，需要保护设备免受日益复杂的攻击。
+过去，公司在保护电脑免受攻击方面一直比较主动，但并未监视和保护移动设备。 尽管移动平台内置有保护（如应用隔离和审查使用者应用商店），但这些平台仍易受到复杂攻击。 如今，更多员工使用设备完成工作，并需要访问敏感信息。 因此，必须保护设备免受日益复杂的攻击。
 
 ## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Intune 移动威胁防御连接器如何工作？
 
 连接器会在 Intune 和所选的移动威胁防御供应商之间创建信道，进而保护公司资源。 Intune 移动威胁防御合作伙伴为移动设备提供了直观且易于部署的应用程序，可出于报告或强制目的主动扫描和分析威胁信息与 Intune 共享。 
 
-例如，如果连接的移动威胁防御应用向移动威胁防御供应商报告，称你网络上的某电话当前连接到易受中间人攻击的网络，则此信息将进行共享并分类为相应的风险级别（中/低/高），然后可将该级别与 Intune 中配置的允许风险级别限额进行比较，确定设备受到威胁时是否应取消你对某些所选资源的访问。
+例如，如果连接的移动威胁防御应用向移动威胁防御供应商报告，称网络上的某电话当前连接到易受中间人攻击的网络，则此信息将进行共享并分类为相应的风险级别（中/低/高），然后可将该级别与 Intune 中配置的允许风险级别限额进行比较，确定设备受到威胁时是否应取消对某些所选资源的访问。
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune 收集哪些数据用于移动威胁防御？
 

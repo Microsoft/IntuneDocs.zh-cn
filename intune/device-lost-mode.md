@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7884682b765fe0df0ecb8b55b18f7a85ac4b2ec9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcdd5e6fa844d4c475462cd0b2a4883f8ff9ba90
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>激活 iOS 设备上的丢失模式
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="how-to-activate-lost-mode"></a>如何激活丢失模式
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在 Intune 边栏选项卡上，选择“设备”。
-4. 在“设备和组”边栏选项卡上，选择“所有设备”。
-5. 从管理设备列表中，选择一台 iOS 设备，然后选择“丢失模式”远程操作。
+4. 在“设备”边栏选项卡上，选择“所有设备”。
+5. 从所管理设备的列表中，选择一台 iOS 设备，选择“...更多”，然后选择“丢失模式”远程操作。
 6. 在“丢失模式”边栏选项卡，启用丢失模式。 然后，输入要显示的消息，并输入联系人电话号码（可选）。
 7. 单击" **确定**"。
 
@@ -57,5 +57,5 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>后续步骤
 
-若要查看刚执行的操作的状态，请在“设备和组”边栏选项卡上选择“设备操作”。
+要查看刚执行的操作的状态，请在“设备”边栏选项卡上选择“设备操作”。
 

@@ -1,12 +1,12 @@
 ---
 title: "将应用分配到 Android for Work 设备"
-titlesuffix: Azure portal
-description: "使用本主题可从 Google Play for Work 商店同步应用，然后将应用分配到 Android for Work 设备。"
+titlesuffix: Microsoft Intune
+description: "了解如何从 Google Play for Work 商店同步应用，以及将应用分配到 Android for Work 设备。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 将应用分配到 Android for Work 设备
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android for Work 设备。 为 Android for Work 安装的所有应用都来自 Google Play for Work 商店。 登录到该商店，浏览查找所需应用，然后批准它们。
-应用随后会出现在 Azure 门户的“获得许可的应用”节点中。 在这里，可以采用与分配任何其他应用相同的方式管理应用的分配。
+Android for Work 是 Android 设备的程序。 在 Android for Work 设备上安装的所有应用都来自 Google Play for Work 商店。 可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android for Work 设备。 登录到该商店，浏览查找所需应用，然后批准它们。 应用随后会出现在 Azure 门户的“获得许可的应用”节点中。 在这里，可以采用与分配任何其他应用相同的方式管理应用的分配。
 
 此外，如果你创建了自己的业务线 (LOB) 应用，则可以按照如下所示分配它们：
 - 注册 Google 开发人员帐户，然后通过该帐户将应用发布到 Google Play 商店的专用区域。

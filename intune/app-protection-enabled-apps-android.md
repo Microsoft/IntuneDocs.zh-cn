@@ -1,7 +1,7 @@
 ---
 title: "具有应用保护策略的 Android 应用"
-titlesuffix: Azure portal
-description: "本主题描述 Android 应用通过应用保护策略管理时会出现的情况。"
+titlesuffix: Microsoft Intune
+description: "了解 Android 应用具有保护策略时会出现的情况。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,50 +15,50 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee7977d8608327560b4df0c1bfbcc60ff150da9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-本主题描述具有应用保护策略的应用的用户体验。 仅当在工作环境中使用应用（例如使用工作帐户访问应用，或访问存储在公司 OneDrive for Business 位置的文件）时，才启用应用保护策略。
+了解 Android 应用具有应用保护策略时会出现的情况。 仅当在工作环境中使用应用时，应用保护策略才适用。 例如，使用工作帐户访问应用，或访问公司 OneDrive 位置中存储的文件时。
 ##  <a name="accessing-apps"></a>访问应用
 
-Android 设备上与应用保护策略关联的所有应用都需要公司门户应用。
+Android 设备上具有应用保护策略的所有应用都需要公司门户应用。
 
-对于未在 Intune 中注册的设备，必须在设备上安装公司门户应用。 但是，用户不必启动或登录到公司门户应用，即可使用由应用保护策略托管的应用。
-Intune 可通过公司门户应用在安全位置共享数据，因此，即使该设备未在 Intune 中注册，也需要使用该应用。
+在所有未在 Intune 中注册的设备上安装公司门户。 用户无需登录公司门户应用即可使用具有应用保护策略的应用。
+通过公司门户应用，可在安全位置共享数据。 因此，即使是未注册的设备，也需要公司门户应用。
 
 
 ##  <a name="using-apps-with-multi-identity-support"></a>使用具有多身份支持的应用
 
-使用应用时，仅在工作环境中启用应用保护策略，因此根据工作或个人环境，应用可能有不同的行为。
+应用保护策略仅在用户尝试访问工作相关数据时生效。  如果用户访问供个人使用的应用，可能会看到不同的行为。
 
-对于支持多身份的应用，仅当最终用户在工作环境中使用该应用时，Intune 才会启用应用保护策略。  例如，最终用户访问工作数据时将收到 PIN 提示。  对于 **Outlook 应用**，将在最终用户启动应用时提示其输入 PIN。 对于 **OneDrive 应用**，将在最终用户键入工作帐户时进行提示。  对于 Microsoft Word、*PowerPoint和 Excel，将在最终用户访问存储在公司 OneDrive for Business 位置的文档时进行提示。
+某些应用支持多身份。 在这种情况下，Intune 仅在用户访问工作数据时才应用应用保护策略。  例如，用户可能会收到 PIN 提示。  在 Outlook 应用中，用户启动应用时会出现提示。 在 OneDrive 应用中，用户键入工作帐户时会出现提示。  在 Microsoft Word、PowerPoint 和 Excel 中，用户访问公司 OneDrive 文档时会出现提示。
 ##  <a name="managing-user-accounts-on-the-device"></a>在设备上管理用户帐户
 
-Intune 仅支持对于每个设备，将应用保护策略部署到一个用户帐户。
+Intune 支持将应用保护策略部署到每个设备的一个用户帐户。
 
 * 根据所使用的应用，第二个用户可能会也可能不会在设备上受阻。 但是在所有情况下，只有获取应用保护策略的第一个用户才会受该策略影响。
 
-  * Microsoft Word、Excel 和 PowerPoint 不会阻止第二个用户帐户，但第二个用户帐户不受应用保护策略影响。
+  * Microsoft Word、Excel 和 PowerPoint 不会阻止其他用户帐户的访问。 但是，该用户帐户不会受应用保护策略影响。
 
-  * 对于“OneDrive 和 Outlook 应用”，只能使用一个工作帐户。  将阻止在这些应用中添加多个工作帐户。  但是，你可以在设备上删除用户并添加其他用户。
-
-
-* 如果设备在部署应用保护策略之前已有多个用户帐户，则最先部署应用保护策略的帐户由应用保护策略管理。
+  * 对于“OneDrive 和 Outlook 应用”，只能使用一个工作帐户。  将阻止在这些应用中添加多个工作帐户。  但是，可以删除设备中的一个用户，然后向该设备添加其他用户。
 
 
-阅读以下示例方案以更深入地了解如何处理多个用户帐户。
+* 在部署应用保护策略之前，一个设备可以有多个现有用户帐户。 在这种情况下，应用保护策略部署到的第一个帐户由 Intune 应用保护策略托管。
 
-用户 A 为两家公司（“X 公司”和“Y 公司”）工资。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与“X 公司”关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果你希望与 Y 公司关联的用户帐户通过应用保护策略管理，则必须删除与 X 公司关联的用户帐户。
+
+阅读以下示例场景，了解 Intune 如何处理多用户帐户。
+
+用户 A 为两家公司（X 公司和 Y 公司）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司****之前**部署应用保护策略。与“X 公司”关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望应用保护策略托管 Y 公司用户帐户，用户 A 必须删除 X 公司用户帐户。
 ### <a name="adding-a-second-account"></a>添加第二个帐户
 ####  <a name="android"></a>Android
-如果使用 Android 设备，则可能会看到具有删除现有帐户并添加新帐户指令的阻止消息。  若要删除现有帐户，请转到“设置”&gt;“常规”&gt;应用程序管理器”&gt;“公司门户”，然后选择“清除数据”。
+系统可能会提示删除现有帐户并添加新帐户。  要删除现有帐户，请转到“设置”&gt;“常规”&gt;“应用程序管理器”&gt;“公司门户”。然后选择“清除数据”。
 
 ![错误消息以及删除操作的指令的屏幕截图](./media/android-switch-user.png)
 
@@ -77,7 +77,7 @@ Intune 仅支持对于每个设备，将应用保护策略部署到一个用户�
 ------------
 |**pfile**|**文本**|
 |----|----|
-|Pfile 是一种用于受保护文件的通用“包装”格式，它可封装加密内容和 Azure 信息保护许可证，还可用于保护任何文件类型。|即使是在受保护的情况下，也可在应用中打开文本文件（包括 XML 和 CSV 等）进行查看。 文件类型：txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+|Pfile 是一种用于受保护文件的通用“包装器”格式。 它可封装加密内容和 Azure 信息保护许可证。 它可以用于保护任何文件类型。|即使是在受保护的情况下，也可在应用中打开文本文件（包括 XML 和 CSV 等）进行查看。 文件类型：txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
 ---------------
 ## <a name="next-steps"></a>后续步骤
 [iOS 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-ios.md)

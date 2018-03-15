@@ -1,31 +1,29 @@
 ---
-title: "用于 Android 和 Android for Work 设备的电子邮件设置"
-titleSuffix: Azure portal
-description: "了解可用于在 Android 设备上配置电子邮件连接的 Intune 设置。"
+title: "适用于运行 Android 和 Android for Work 的设备的 Microsoft Intune 电子邮件设置"
+titleSuffix: 
+description: "了解可用于在运行 Android 和 Android for Work 的设备上配置电子邮件设置的 Microsoft Intune 设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f726d330e1cd8e4a0f7bfcfac8fe931c66d23b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a68607be7cbd84d5a9e9080d0a8608bce85edd22
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的电子邮件配置文件设置
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Microsoft Intune 中适用于运行 Android 和 Android for Work 的设备的电子邮件配置文件设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-身为 Intune 管理员，你可以创建并为以下 Android 设备分配电子邮件设置：
+Intune 管理员可以为以下 Android 设备创建并分配电子邮件设置：
 - [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/25/2018
 
 - **电子邮件应用** - 选择 **Gmail** 或 **Nine Work**
 - **电子邮件服务器** - Exchange 服务器的主机名。
-- **AAD 中的用户名属性** - 该名称是 Active Directory (AD) 或 Azure AD 中的属性，将用于生成此电子邮件配置文件的用户名。 选择“主 SMTP 地址”（如 user1@contoso.com）或“用户主体名称”（如 user1 或 user1@contoso.com）。
+- **AAD 中的用户名属性** - 该名称是 Active Directory (AD) 或 Azure AD 中的属性，用于生成此电子邮件配置文件的用户名。 选择“主 SMTP 地址”（如 user1@contoso.com）或“用户主体名称”（如 user1 或 user1@contoso.com）。
 - **AAD 中的电子邮件地址属性** - 每个设备上用户的电子邮件地址的生成方式。 选择“用户主体名称”，使用完整的用户主体名称作为电子邮件地址，或者选择“用户名”。
 - **身份验证方法** - 选择“用户名和密码”或“证书”作为电子邮件配置文件所用的身份验证方法。
     - 如果已选择“证书”，请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。

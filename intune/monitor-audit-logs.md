@@ -10,14 +10,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: b2f6f6f4829e53d60cc259be220de89cf3f8d97d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune 活动的审核日志
-审核日志记录了导致 Microsoft Intune 有所变化的活动。 可以创建、更新（编辑）、删除和分配操作或远程任务，并能生成可查看的审核事件。 可以查看大多数 Intune 工作负载的审核日志。 
+审核日志记录了导致 Microsoft Intune 有所变化的活动。 可以创建、更新（编辑）、删除和分配操作或远程任务，并能生成可查看的审核事件。 可以查看大多数 Intune 工作负载的审核日志。 默认针对所有客户启用审核且无法禁用。 审核事件从功能发布日期 2017 年 12 月开始记录；以前的事件不可用。
 
 ## <a name="who-can-access-the-data"></a>谁可以访问数据？
 拥有以下权限的用户可以查看审核日志：
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/25/2018
 - 发起人(参与者)
 - 活动
 - 目标
-- 类别
+- Category
 - 状态
 
 单击列表视图中的项可以查看它的所有详细信息。

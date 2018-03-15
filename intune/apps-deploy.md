@@ -1,12 +1,12 @@
 ---
-title: "如何将应用分配到组"
-titlesuffix: Azure portal
-description: "将应用添加到 Intune 后，需要将其分配给用户组或设备组。"
+title: "如何在 Microsoft Intune 中将应用分配到组"
+titlesuffix: 
+description: "将应用添加到 Microsoft Intune 后，需要将其分配给用户组或设备组。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 将应用分配到组
 
@@ -38,29 +38,30 @@ ms.lasthandoff: 01/25/2018
 |将应用分配为“可用”|是|是|
 |将应用分配为“必需”|是|否|
 |卸载应用|是|否|
+|从 Intune 接收应用更新|是|否|
 |最终用户从公司门户应用安装可用的应用|是|否|
 |最终用户从基于 Web 的公司门户安装可用的应用|是|是|
 
 > [!NOTE]
-> 目前，可将（业务线和应用商店购买的）iOS 和 Android 应用分配到未注册到 Intune 的设备。
+> 目前，可将（业务线和应用商店购买的）iOS 和 Android 应用分配到未注册到 Intune 的设备。<br></br><br></br>
+> 若要在未注册 Intune 的设备上接收应用更新，设备用户必须导航到其公司门户并手动安装应用更新。
 
 ## <a name="how-to-assign-an-app"></a>如何分配应用
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
 1. 在“移动应用”工作负荷中，选择“管理” > “应用”。
 2. 在“应用列表”边栏选项卡中，单击要分配的应用。
-3. 在“<应用名称> - 概述”边栏选项卡上，选择“管理” > “分配”。
-4. 选择“选择组”，然后在“选择组”边栏选项卡上，选择要将应用分配到的 Azure AD 组。
+3. 在“概述”边栏选项卡上，选择“管理” > “分配”。
+4. 选择“添加组”，然后在“添加组”边栏选项卡上选择要在应用分配中包括或排除的 Azure AD 组。
 5. 对于选择的每个应用，从以下各项选择应用的“分配类型”：
-    - **可用** - 用户从公司门户应用或网站安装应用。
-    - **不适用** - 未在公司门户安装或显示该应用。
+    - **可用于已注册设备** - 用户从公司门户应用或网站安装应用。
+    - **注册与否都可用** - 可将此应用分配到未将其设备注册到 Intune 的用户组。
     - **必需** - 应用安装在所选组中的设备上。
     - **卸载** - 已从所选组中设备上卸载应用。
-    - **注册与否都可用** - 可将此应用分配到未将其设备注册到 Intune 的用户组。
 6. 仅适用于 iOS 应用 - 如果已创建包含每个应用的 VPN 设置的 iOS VPN 配置文件，可在“VPN”下将其选中。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅 [iOS 设备的 VPN 设置](vpn-settings-ios.md)。
-6. 完成后，选择“保存”。
+6. 完成后，选择“确定”，然后选择“保存”。
 
 应用现已分配给所选组。
 

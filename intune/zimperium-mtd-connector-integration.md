@@ -3,8 +3,8 @@ title: "将 Zimperium 与 Intune 集成"
 titleSuffix: Intune on Azure
 description: "将 Intune 与 Zimperium 集成"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,22 +15,22 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4759bab0c302f758f3f0a4af5ca333a5f560f3b3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 062a2f0d573bd711dff75c7ab0eb3bef8ac23161
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="integrate-zimperium-with-intune"></a>将 Zimperium 与 Intune 集成
 
 若要将 Zimperium 移动威胁防御解决方案与 Intune 集成，请完成以下步骤。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 > [!NOTE]
 > 以下步骤是在 [Zimperium MTD 控制台](https://staging2-console.zimperium.com)中完成。
 
-开始将 Zimperium 与 Intune 集成之前，请确保你具有以下各项：
+开始将 Zimperium 与 Intune 集成之前，请确保具有以下订阅和凭据：
 
 -   Microsoft Intune 订阅
 
@@ -52,7 +52,7 @@ Zimperium 应用授权流程如下：
 
 -   允许 Zimperium 服务将与设备运行状况状态相关的信息反馈给 Intune。
 
--   同步 Zimperium 与 Azure AD 注册组成员身份，以填充其设备的数据库。
+-   同步 Zimperium 与 Azure Active Directory (AD) 注册组成员身份，以填充其设备的数据库。
 
 -   允许 Zimperium 管理控制台使用 Azure AD 单一登录 (SSO)。
 
@@ -75,7 +75,7 @@ Zimperium 应用授权流程如下：
 
 6.  选择“接受”，授权 Zimperium 应用与 Intune 和 Azure Active Directory 通信。
 
-7.  将 Zimperium zConsole、zIPS iOS 和 Android 应用添加到 Azure AD 后，添加 Azure AD 安全组，以便 Zimperium 可以将 Azure AD 安全组与其服务同步。
+7.  将 Zimperium zConsole 以及 zIPS iOS 和 Android 应用添加到 Azure AD 后，添加 Azure AD 安全组。 此添加允许 Zimperium 将 Azure AD 安全组与其服务同步。
 
 8.  选择“完成”，保存配置并启动首次 Azure AD 安全组同步。
 

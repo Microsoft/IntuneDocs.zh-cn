@@ -1,7 +1,7 @@
 ---
-title: "为受管理的 Android 设备添加应用配置策略 | Microsoft Docs"
-titlesuffix: Azure portal
-description: "了解如何使用应用配置策略，为运行中的 Android for Work 应用提供配置数据。"
+title: "为受管理的 Android 设备添加应用配置策略"
+titlesuffix: Microsoft Intune
+description: "使用 Microsoft Intune 中的应用配置策略可提供用户在运行 Android for Work 应用时的设置。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbf1466b02da66e5c7d115d60aa43912322ebeb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 206e229e95633ce553637bcedef708ee5630864c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>为受管理的 Android 设备添加应用配置策略
 
@@ -30,8 +30,8 @@ ms.lasthandoff: 01/25/2018
 > [!Note]  
 > 并非所有应用都支持应用配置。 请咨询应用开发人员，确定他们构建的应用是否支持应用配置策略。
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” + “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 选择“移动应用”工作负荷。
 4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”。
 5. 设置以下详细信息：
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/25/2018
       在 Azure 门户中显示的配置文件说明。
     - **设备注册类型**  
       选择“受管理设备”。
-6. 对“平台”选择“Android”。
+6. 对于“平台”，选择“Android for Work”。
 7. 选择“关联应用”，以选择要为其定义应用配置策略的应用。 从你已同意并与 Intune 同步的 Android for Work 应用列表中选择。
 8. 选择“配置设置”。 可使用以下工具设置配置：
     - [配置设计器](#Use-the-configuration-designer)
@@ -77,14 +77,15 @@ ms.lasthandoff: 01/25/2018
 
 你还可以为应用预配置权限以访问 Android 设备功能。 默认情况下，对于需要设备权限（如访问位置或设备相机等）的 Android 应用，系统会提示用户接受或拒绝权限。 例如，如果应用使用设备的麦克风，会提示用户授予应用权限以使用麦克风。
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” + “Intune”。
-3. 选择“移动应用”。 在“管理”下，选择“应用配置策略”，然后选择“添加”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 选择“移动应用”。
+3. 在“管理”下，选择“应用配置策略”，然后选择“添加”。
 4. 设置以下详细信息：
     - **名称**。 在 Azure 门户中显示的配置文件名称。
     - **说明**。 在 Azure 门户中显示的配置文件说明。
-    - “平台”。 选择“Android”。
-    - “设备注册类型”。 已为你预先选择“托管设备”。
+    - “设备注册类型”。 选择“受管理设备”。
+    - “平台”。 选择“Android for Work”。
 5. 选择“关联应用”，以选择要定义配置策略的应用。 从你已同意并与 Intune 同步的 Android for Work 应用列表中选择。
 6. 选择“权限”，然后选择“添加”。
 7. 从可用应用权限列表中选择，然后选择“确定”。

@@ -1,25 +1,25 @@
 ---
-title: "配置 Intune for iOS 设备单一登录"
-titlesuffix: Azure portal
-description: "了解如何配置 Intune for iOS 设备 SSO。"
+title: "配置 Microsoft Intune for iOS 设备 SSO"
+titlesuffix: 
+description: "了解如何配置 Microsoft Intune for iOS 设备 SSO。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>配置 Intune for iOS 设备单一登录
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>配置 Microsoft Intune for iOS 设备 SSO
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,18 +35,18 @@ ms.lasthandoff: 01/29/2018
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，选择“配置文件”。
-3. 在配置文件边栏选项卡上，选择“创建配置文件”，提供名称和描述，并配置下列设置：
+3. 在“Intune”页，选择“设备配置”。
+2. 在“设备配置”页，选择“配置文件”。
+3. 在“配置文件”页，选择“创建配置文件”，提供名称和描述，并配置下列设置：
    - **平台**：选择“iOS”。 
    - **配置文件类型**：选择“设备功能”。
-4. 在“设备功能”边栏选项卡上，选择“SSO”。
+4. 在“设备功能”页，选择“SSO”。
 
-   ![“SSO”边栏选项卡](./media/sso-blade.png)
+   ![“SSO”页](./media/sso-blade.png)
 
-2. 使用以下摘要表格，帮助填写“SSO”边栏选项卡上的字段。 有关详细信息，请参阅表格后的各节。
+2. 使用以下摘要表格，帮助填写“SSO”页的字段。 有关详细信息，请参阅表格后的各节。
    
-   |欄位  |附註|
+   |字段  |注意|
    |---------|---------|
    |**来自 AAD 的用户名属性**|Intune 为 AAD 中的每个用户查看的属性，并在生成安装于设备上的 XML 有效负载之前填充相应字段（如 UPN）。|
    |**领域**|URL 的域部分。|
@@ -82,7 +82,7 @@ ms.lasthandoff: 01/29/2018
 > [!NOTE]
 > 这些 URL 必须采用正确格式化的 FQDN。 Apple 要求这些 URL 采用 `http://<yourURL.domain>` 格式
 
-匹配模式的 URL 必须以 `http://` 或 `https://` 开头。 系统将执行简单的字符串匹配，因此 URL 前缀 `http://www.contoso.com/` 与 `http://www.contoso.com:80/` 不匹配。 但是，在 iOS 9.0 或更高版本中，单个通配符 * 可用于指定所有匹配的值。 例如，`http://*.contoso.com/` 同时匹配 `http://store.contoso.com/` 和 `http://www.contoso.com`。
+匹配模式的 URL 必须以 `http://` 或 `https://` 开头。 系统将执行简单的字符串匹配，因此 URL 前缀 `http://www.contoso.com/` 与 `http://www.contoso.com:80/` 不匹配。 但是，在 iOS 9.0 或更高版本中，单个通配符 \* 可用于指定所有匹配的值。 例如，`http://*.contoso.com/` 同时匹配 `http://store.contoso.com/` 和 `http://www.contoso.com`。
 模式 `http://.com` 和 `https://.com` 分别匹配所有的 HTTP 和 HTTPS URL。
 
 ### <a name="apps-that-will-use-single-sign-on"></a>使用 SSO 的应用

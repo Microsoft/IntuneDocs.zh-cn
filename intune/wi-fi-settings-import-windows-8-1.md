@@ -1,25 +1,25 @@
 ---
 title: "导入适用于 Windows 8.1 和更高版本的 Wi-Fi 设置"
-titleSuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: "如何将 Wi-Fi 设置从 Windows 导入 Intune Wi-Fi 配置文件。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b4b77f9c9c1c957e3332c20e010a5e8e8ec2b56
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 0113703cbdc58172edc9552146c7634aa1058e3b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>如何在 Microsoft Intune 中导入适用于 Windows 8.1 及更高版本设备的 Wi-Fi 设置
+# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>在 Microsoft Intune 中导入适用于 Windows 8.1 及更高版本设备的 Wi-Fi 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,20 +37,20 @@ ms.lasthandoff: 02/01/2018
 
 1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在“配置文件”边栏选项卡上，单击“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入设备限制配置文件的“名称”和“说明”。
+3. 在“Intune”页，选择“设备配置”。
+2. 在“设备配置”页，选择“管理” > “配置文件”。
+3. 在“配置文件”页上，单击“创建配置文件”。
+4. 在“创建配置文件”页上，输入设备限制配置文件的“名称”和“说明”。
 
    > [!WARNING]
    > 该名称必须与 Wi-fi 配置文件 xml 中的名称属性相同，否则操作会失败。
 
 5. 从“平台”下拉列表中，选择“Windows 8.1 及更高版本”。
 6. 在“配置文件”类型下拉列表中，选择“Wi-Fi 导入”。
-7. 在“Wi-Fi 基本选项”边栏选项卡上，配置以下设置：
+7. 在“Wi-Fi 基本选项”页上，配置以下设置：
     - **连接名称** 输入 Wi-Fi 连接的名称。 最终用户浏览可用 Wi-Fi 网络时，会显示此名称。
     - **配置文件 XML** 单击浏览器按钮以选择包含想要导入 Intune 的 Wi-Fi 配置文件设置的 XML 文件。
     - **文件内容** 显示你选择的配置描述文件的 XML 代码。
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+8. 完成后，返回“创建配置文件”页，然后点击“创建”。
 
-系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
+配置文件随即创建并显示在“配置文件列表”页中。

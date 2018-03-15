@@ -1,7 +1,7 @@
 ---
-title: "在 Intune 中设置注册限制"
-titlesuffix: Azure portal
-description: "按平台限制注册，并在 Intune 中设置设备注册限制。 \""
+title: "在 Microsoft Intune 中设置注册限制"
+titlesuffix: 
+description: "按平台限制注册，并在 Intune 中设置设备注册限制。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-作为 Intune 管理员，可创建和管理注册限制，这些限制可以定义注册接受 Intune 的管理的设备数量和类型。 可创建多个限制并将其应用于不同用户组。 可为不同限制设置[优先级顺序](#change-enrollment-restriction-priority)。
+Intune 管理员可以创建和管理注册限制。 这些限制定义可注册为 Intune 管理的设备数量和类型。 可创建多个限制并将其应用于不同用户组。 可为不同限制设置[优先级顺序](#change-enrollment-restriction-priority)。
 
 >[!NOTE]
 >注册限制不是安全功能。 遭到入侵的设备可能会误报字符。 这些限制是针对非恶意用户的最合适的障碍。
@@ -83,7 +83,7 @@ ms.lasthandoff: 02/01/2018
   操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
 8. 指定是否对每个列出的平台允许或阻止个人拥有的设备。
 
-    ![设备限制工作区的屏幕截图，含默认设备平台配置，其中显示已配置“个人拥有的”设置。](media/device-restrictions-platform-configurations.png)
+    ![设备限制工作区的屏幕截图，其中已为个人拥有的设备配置默认设备平台](media/device-restrictions-platform-configurations.png)
 9. 单击 **“保存”**。
 
 >[!NOTE]
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/01/2018
 3. 选择“设备注册” > “注册限制”。
 4. 在“设备限制”下，选择想要设置的限制。
 5. 选择“设备限制”，然后在下拉列表中选择用户可注册的最大设备数。
-    ![含设备限制的设备限制边栏选项卡的屏幕截图。](./media/device-restrictions-limit.png)
+    ![“设备限制”限制边栏选项卡的屏幕截图](./media/device-restrictions-limit.png)
 6. 单击 **“保存”**。
 
 最终用户将看到一条通知，告知他们何时达到了注册设备限制。 例如，iOS 上的通知如下所示：

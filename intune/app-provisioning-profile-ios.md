@@ -1,12 +1,12 @@
 ---
-title: "应用预配配置文件"
-titlesuffix: Azure portal
+title: "Microsoft Intune 中的 iOS 应用预配配置文件"
+titlesuffix: 
 description: "Intune 提供了一些工具，用于将新的预配配置文件主动分配到安装了即将到期应用的设备。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa1fe56726f320d971f35cc971253707f968442
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 7637dcb3aba4f46a3e97c8de47d974b46af27b47
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 移动预配配置文件防止应用过期
+# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>使用 Intune 中的 iOS 移动预配配置文件来防止应用过期
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/30/2018
 
 分配到 iPhone 和 iPad 的 Apple iOS 业务线应用使用附带的预配配置文件和证书签名的代码构建。 应用运行时，iOS 将确认 iOS 应用的完整性，并强制实施由预配配置文件定义的策略。 发生以下验证：
 
-- **安装文件完整性** - iOS 将应用详细信息与企业签名证书的公钥进行比较。 如果它们不同，则应用内容可能已经更改，该应用不允许运行。
+- **安装文件完整性** - iOS 将应用详细信息与企业签名证书的公钥进行比较。 如果它们不同，则应用内容可能已发生更改，并且不允许运行该应用。
 - **功能强制实施** - iOS 尝试从应用安装 (.ipa) 文件中的企业预配配置文件（而非各开发人员预配配置文件）强制实施应用功能。
 
 
@@ -39,12 +39,12 @@ ms.lasthandoff: 01/30/2018
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>如何创建 iOS 移动应用预配配置文件
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在 Intune 边栏选项卡上，选择“移动应用”。
-1.  在“移动应用”工作负荷中，选择“管理” > “iOS 预配配置文件”。
-2.  在配置文件边栏选项卡列表中，选择“创建配置文件”。
-3. 在“创建配置文件”边栏选项卡中，配置下列值：
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在 Intune 窗格中，选择“移动应用”。
+1.  在“移动应用”工作负荷中，选择“管理” > “iOS 应用预配配置文件”。
+2.  在配置文件列表窗格中，选择“创建配置文件”。
+3. 在“创建配置文件”窗格中，配置下列值：
     - **命名** - 为此移动预配配置文件提供一个名称。
     - **说明** -（可选）提供策略的说明。
     - **上载配置文件文件** - 选择“导入”，然后选择从 Apple 开发人员网站下载的 Apple 移动配置文件（扩展名为 **.mobileprovision**）。

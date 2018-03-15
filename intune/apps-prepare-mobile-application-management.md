@@ -1,10 +1,11 @@
 ---
-title: "决定如何使用 Microsoft Intune 为移动应用程序管理准备应用"
-description: "本主题中的信息可帮助决定何时应该使用应用包装工具和应用 SDK 来启用自定义业务线应用，以使用移动应用管理策略。"
+title: "准备业务线应用以使用应用保护策略"
+titlesuffix: Microsoft Intune
+description: "借助应用包装工具和应用 SDK，自定义业务线应用可使用 Microsoft Intune 中的应用保护策略。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -102,6 +103,7 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |目标应用程序配置 |X||
 |支持多身份标识|X||
 |可自定义样式 |X|||
+
 ## <a name="next-steps"></a>后续步骤
 
 要详细了解应用保护策略和 Intune，请参阅以下主题：

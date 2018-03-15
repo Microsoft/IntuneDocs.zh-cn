@@ -1,25 +1,23 @@
 ---
-title: "配置 Intune 设备限制设置"
-titleSuffix: Azure portal
-description: "了解如何使用 Intune 配置你管理的设备上的设置和功能。"
+title: "配置 Microsoft Intune 设备限制设置"
+titleSuffix: 
+description: "了解如何使用 Microsoft Intune 配置所管理的设备上的设置和功能。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 62c12cde5ca128a26b10e0e4516e0bbf7e0f0bbb
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置设备限制设置
 
@@ -33,16 +31,16 @@ ms.lasthandoff: 02/01/2018
 
 例如，可以创建一个设备限制配置文件，用于阻止 iOS 设备用户访问设备相机。
 
-使用本主题中的信息了解有关配置设备限制配置文件的基础知识，然后深入阅读每个平台的主题以了解设备详情。
+了解设备限制配置文件基础知识，然后阅读针对每个平台的深入文章以了解设备规范。
 
-创建包含设备限制设置的设备配置文件：
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>创建包含设备限制设置的设备配置文件
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“配置设备”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在配置文件边栏选项卡上，选择“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入设备限制配置文件的“名称”和“说明”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“Intune”页，选择“设备配置”。
+2. 在“管理”部分下的“设备配置”页上，选择“配置文件”。
+3. 在“配置文件”页，选择“创建配置文件”。
+4. 在“创建配置文件”页，输入设备限制配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用自定义设置的设备平台。 目前，可以为设备限制设置选择以下平台之一：
     - **Outlook Web Access (OWA)**
     - **iOS**
@@ -61,9 +59,9 @@ ms.lasthandoff: 02/01/2018
     - [Windows 10 协同版设置](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business 设置](device-restrictions-windows-holographic.md)
     - [Android for Work 设置](device-restrictions-android-for-work.md)
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+8. 完成后，返回“创建配置文件”页，然后单击“创建”。
 
-系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
+配置文件随即创建并显示在“配置文件列表”页中。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.

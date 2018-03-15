@@ -1,31 +1,30 @@
 ---
-title: "适用于 Android 的 Intune 设备限制设置"
-titlesuffix: Azure portal
-description: "了解可用来控制 Android 设备上的设备设置和功能的 Intune 设置。"
+title: "适用于 Android 的 Microsoft Intune 设备限制设置"
+titlesuffix: 
+description: "了解可用来控制运行 Android 的设备上的设备设置和功能的 Intune 设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
-ms.reviewer: heenamac
+ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung Knox Standard 设备限制设置
+# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 和 Samsung Knox Standard 设备限制设置 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用这些具有 Android 设备限制策略的设置配置组织中的设备。
+本文介绍可为运行 Android 的设备配置的所有 Microsoft Intune 设备限制设置。
 
 >[!TIP]
 >如果所需设置不可用，可能能够使用[自定义配置文件](custom-settings-android.md)来配置设备。
@@ -80,7 +79,7 @@ ms.lasthandoff: 02/09/2018
 
 在受限制的应用列表中，可以为 Android 和 Samsung Knox Standard 设备配置下面的列表之一：
 
-**禁止的应用**列表 - 列出如果用户安装和运行，就会被报告的应用（未受 Intune 管理）。
+**禁止的应用**列表 - 列出如果用户安装和运行就会被报告的应用（未受 Intune 托管）。
 **批准的应用**列表 - 列出允许用户安装的应用。 为了保持兼容性，用户不得安装其他应用。 自动允许由 Intune 托管的应用。
 必须将包含受限制的应用设置的设备配置文件分配到用户组。
 
@@ -111,7 +110,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="allow-or-block-apps"></a>允许或禁止应用
 
 这些设置可用于指定能够在仅运行 Samsung Knox Standard 的设备上安装或启动的应用。
-此外，还可以指定设备用户看不到的已安装应用。 用户无法运行这些应用。
+此外，还可以指定对设备用户隐藏的已安装应用。 用户无法运行这些应用。
 
 - **允许安装的应用(仅限 Samsung Knox Standard)**
 - **禁止启动的应用(仅限 Samsung Knox Standard)**

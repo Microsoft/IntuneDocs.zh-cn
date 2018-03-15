@@ -1,6 +1,6 @@
 ---
-title: "注册 iOS 设备 - 设备注册计划"
-titlesuffix: Azure portal
+title: "使用设备注册计划注册 iOS 设备"
+titlesuffix: Microsoft Intune
 description: "了解如何使用“设备注册计划”注册公司拥有的 iOS 设备。"
 keywords: 
 author: ErikjeMS
@@ -15,13 +15,13 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b56907217b45ddb2bfe869f23abc34c0508bdbd7
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 8e770c39a22b620bb642b7b15a456369bb4acec2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
+# <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>通过使用 Apple 设备注册计划自动注册 iOS 设备
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,17 +32,17 @@ ms.lasthandoff: 02/09/2018
 >
 >如果“设备注册”页如下图所示，则帐户尚未更新到新的用户界面，可以使用此帮助页面。
 >
->![旧用户界面](./media/appleenroll-oldui.png)
+>![旧的 Intune 用户界面](./media/appleenroll-oldui.png)
 >
 >如果“设备注册”页如下图所示，则用户界面已更新。  请转到[此帮助页面](device-enrollment-program-enroll-ios-newui.md)。
 >
->![新用户界面](./media/appleenroll-newui.png)
+>![新的 Intune 用户界面](./media/appleenroll-newui.png)
 
 本主题旨在帮助你为通过 Apple [设备注册计划 (DEP)](https://deploy.apple.com) 购买的设备启用 iOS 设备注册。 可在不触碰设备的情况下为大量设备启用 DEP 注册。 可将 iPhone 和 iPad 等设备直接运送到用户手中。 用户打开设备时，“设置助理”将运行预先配置的设置，设备将注册以便进行管理。
 
 若要启用 DEP 注册，需同时使用 Intune 和 Apple DEP 门户。 需要序列号列表或购买订单编号，这样才能将设备分配到 Intune 进行管理。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
-另外，DEP 注册不能与[设备注册管理器](device-enrollment-manager-enroll.md)一起使用。
+另外，DEP 注册不能与[设备注册管理员](device-enrollment-manager-enroll.md)一起使用。
 
 ## <a name="what-is-supervised-mode"></a>受监督模式简介
 Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设备可通过更多控件进行管理。 因此，此模式尤其适用于企业拥有的设备。 在 Apple 设备注册计划 (DEP) 中，Intune 支持将设备配置为受监督模式。 
@@ -76,11 +76,11 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。
 
-  ![Apple 证书工作区中的“注册计划令牌”窗格的屏幕截图。](./media/enrollment-program-token-add.png)
+  ![Apple 证书工作区中的“注册计划令牌”窗格](./media/enrollment-program-token-add.png)
 
 2. 选择“下载公钥”，将加密密钥 (.pem) 文件下载到本地并保存。 .pem 文件用于从 Apple 设备注册计划门户请求信任关系证书。
 
-  ![Apple 证书工作区中用于下载公钥的“注册计划令牌”窗格的屏幕截图。](./media/enrollment-program-token-download.png)
+  ![Apple 证书工作区中用于下载公钥的“注册计划令牌”窗格](./media/enrollment-program-token-download.png)
 
 **步骤 2：创建和下载 Apple DEP 令牌。**<br>
 1. 选择“通过 Apple 设备注册计划创建令牌”，打开 Apple 部署计划门户，并使用公司 Apple ID 登录。 可使用此 Apple ID 续订 DEP 令牌。
@@ -89,29 +89,25 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 3. 在“管理服务器”页上，选择“添加 MDM 服务器”。
 4. 输入“MDM 服务器名称”，然后选择“下一步”。 服务器名称供参考，用于识别移动设备管理 (MDM) 服务器。 它不是 Microsoft Intune 服务器的名称或 URL。
 
-   ![为 DEP 添加 MDM 服务器名称并单击“下一步”的屏幕截图。](./media/enrollment-program-token-add-server.png)
+   ![为 DEP 添加 MDM 服务器名称并单击“下一步”](./media/enrollment-program-token-add-server.png)
 
 5. “添加&lt;服务器名称&gt;”对话框随即打开，提示“上传公钥”。 选择“选择文件…” 以上传 .pem 文件，然后选择“下一步”。  
-<<<<<<< HEAD
 
-=======
->>>>>>> e19b417f8bc134dc5a5a9f60354f017ccc42fd88
-
-7. 转到“部署计划”&gt;“设备注册计划”&gt;“管理设备”。
-8. 在“选择设备方式”下，指定如何标识设备：
+6. 转到“部署计划”&gt;“设备注册计划”&gt;“管理设备”。
+7. 在“选择设备方式”下，指定如何标识设备：
     - **序列号**
     - **订单号**
     - **上传 CSV 文件**。
 
-   ![指定按序列号选择设备、将“选择操作”设置为“分配到服务器”并选择服务器名称的屏幕截图。](./media/enrollment-program-token-specify-serial.png)
+   ![指定按序列号选择设备、将“选择操作”设置为“分配到服务器”并选择服务器名称](./media/enrollment-program-token-specify-serial.png)
 
-9. 对于“选择操作”，选择“分配到服务器”，选择为 Microsoft Intune 指定的 &lt;服务器名称&gt;，然后选择“确定”。 Apple 门户将指定的设备分配到 Intune 服务器以进行管理，然后显示“分配完成”。
+8. 对于“选择操作”，选择“分配到服务器”，选择为 Microsoft Intune 指定的 &lt;服务器名称&gt;，然后选择“确定”。 Apple 门户将指定的设备分配到 Intune 服务器以进行管理，然后显示“分配完成”。
 
    在 Apple 门户中，转到“部署计划”&gt;“设备注册计划”&gt;“查看分配历史记录”，以查看设备及其 MDM 服务器分配的列表。
 
 **步骤 3：输入用于创建注册计划令牌的 Apple ID。**<br>在 Azure 门户中的 Intune 中，提供 Apple ID 供未来参考。
 
-![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/enrollment-program-token-apple-id.png)
+![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌](./media/enrollment-program-token-apple-id.png)
 
 **步骤 4：浏览到要上传的注册计划令牌。**<br>
 转到证书 (.pem) 文件，选择“打开”，然后选择“上传”。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。 Intune 会自动与 Apple 同步以查看你的注册计划帐户。
@@ -132,7 +128,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 4. 选择“设备管理设置”，配置以下配置文件设置：
 
-  ![选择管理模式的屏幕截图。 设备包含以下设置：受到监督、注册锁定、允许配对设置为全部拒绝。 新注册计划配置文件的 Apple Configurator 证书将变灰。](./media/enrollment-program-profile-mode.png)
+  ![选择管理模式](./media/enrollment-program-profile-mode.png)
   - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS 设备的组织。
 
  > [!NOTE]
@@ -150,7 +146,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 5. 选择“设置助理设置”，配置以下配置文件设置：
 
-  ![通过新注册计划配置文件的可用设置选择配置设置的屏幕截图。](./media/enrollment-program-profile-settings.png)
+  ![通过新注册计划配置文件的可用设置选择配置设置](./media/enrollment-program-profile-settings.png)
   - **部门名称** - 用户在激活过程中点击“关于配置”时显示。
 
   - **部门电话** - 用户在激活过程中单击“需要帮助”按钮时显示。
@@ -175,11 +171,11 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划设备” > “Sync”。进度栏显示再次请求同步之前必须等待的时长。
 
-  ![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/enrollment-program-device-sync.png)
+  ![选中“注册计划设备”节点和选中“同步”链接](./media/enrollment-program-device-sync.png)
   
 2. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
 
-   ![选中“请求同步”链接的“同步”边栏选项卡屏幕截图。](./media/enrollment-program-device-request-sync.png)
+   ![选中“请求同步”链接的“同步”边栏选项卡](./media/enrollment-program-device-request-sync.png)
 
    为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
      -  每七天只能运行一次完全同步。 在完全同步期间，Intune 将刷新分配给 Intune 的每一个 Apple 序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
@@ -197,7 +193,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册”，然后选择“注册计划配置文件”。
 2. 在“注册计划配置文件”列表中，选择要分配给设备的配置文件，然后选择“分配设备”。
 
- ![“设备分配”的屏幕截图，其中选中了“分配”。](./media/enrollment-program-device-assign.png)
+ ![选中“分配”的“设备分配”](./media/enrollment-program-device-assign.png)
 
 3. 选择“分配”，然后选择要向其分配此配置文件的设备。 可以进行筛选来查看可用设备：
   - **未分配**
@@ -205,7 +201,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
   - &lt;配置文件名称&gt;
 4. 选择要分配的设备。 列上方的复选框将选中最多 1000 个已列出设备，然后单击“分配”。 若要注册 1000 个以上的设备，请重复分配步骤，直至已向所有设备分配了注册配置文件。
 
-  ![用于在 Intune 中分配注册计划配置文件的“分配”按钮的屏幕截图](media/dep-profile-assignment.png)
+  ![用于在 Intune 中分配注册计划配置文件的“分配”按钮](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices"></a>分配设备
 已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有恢复出厂设置才能应用注册配置文件。

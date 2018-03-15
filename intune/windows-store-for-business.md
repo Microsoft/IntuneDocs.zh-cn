@@ -3,10 +3,10 @@ title: "管理来自适用于企业的 Microsoft 应用商店的应用"
 titlesuffix: Azure portal
 description: "了解如何从适用于企业的 Microsoft 应用商店将应用同步到 Intune，并对其进行分配和跟踪。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85141fc6f4d71994f575233c255a97e336c92108
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4460924b3e53a9540ff21aa009a0c028de92f26f
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
@@ -39,12 +39,15 @@ ms.lasthandoff: 01/25/2018
 
 - 将 Intune 配置为组织的移动设备管理机构。
 - 必须已在适用于企业的 Microsoft 应用商店中注册帐户。
-- 一旦将适用于企业的 Windows 应用商店帐户与 Intune 关联，将来你将无法更改为其他帐户。
+- 将适用于企业的 Microsoft Store 帐户与 Intune 关联后，该帐户将来无法更改为其他帐户。
 - 无法在 Intune 中手动添加或删除从应用商店购买的应用。 这些应用只能与适用于企业的 Microsoft 应用商店同步。
-- Intune 会同时同步从适用于企业的 Microsoft 应用商店中购买的联机和脱机授权应用。
-- 仅免费的脱机应用可同步到 Intune。
+- 从适用于企业的 Microsoft Store 中购买的联机和脱机授权应用都会同步到 Intune 门户。 然后，可以将这些应用部署到设备组或用户组。 
+- 在线应用安装由应用商店管理。
+- 免费的脱机应用也可同步到 Intune。 这些应用由 Intune 安装，而不是由应用商店安装。
 - 设备必须已加入 Active Directory 域服务或工作区才可使用此功能。
 - 已注册的设备必须使用 Windows 10 的 1511 版本或更高版本。
+
+此外，从适用于企业的 Microsoft Store 同步的相关集和脱机授权应用现在会合并到 UI 的单个应用条目中。 各个包中的所有部署详细信息都会迁移到单个条目。 要在 Azure 门户中查看相关集，请从“移动应用”边栏选项卡中选择“应用许可证”。
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>将适用于企业的 Microsoft 应用商店帐户与 Intune 关联
 在 Intune 控制台中启用同步之前，必须将你的应用商店帐户配置为将 Intune 作为一种管理工具使用：
@@ -62,11 +65,12 @@ ms.lasthandoff: 01/25/2018
 1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
-1. 在“移动应用”边栏选项卡上，选择“设置” > “适用于企业的 Microsoft 应用商店”。
-2. 单击“启用”。
-3. 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接，并按之前详述的步骤关联帐户。
-5. 在“语言”下拉列表中，选择适用于企业的 Microsoft 应用商店中的应用在 Azure 门户中的显示语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
-6. 单击“同步”，将从 Microsoft 应用商店购买的应用同步到 Intune。
+4. 在“移动应用”边栏选项卡上，选择“设置” > “适用于企业的 Microsoft 应用商店”。
+5. 单击“启用”。
+6. 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接，并按之前详述的步骤关联帐户。
+7. 在“语言”下拉列表中，选择适用于企业的 Microsoft 应用商店中的应用在 Azure 门户中的显示语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
+8. 单击“同步”，将从 Microsoft 应用商店购买的应用同步到 Intune。
+9. 单击 **“保存”**。
 
 ## <a name="synchronize-apps"></a>同步应用
 

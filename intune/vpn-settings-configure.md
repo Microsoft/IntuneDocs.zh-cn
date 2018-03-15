@@ -1,7 +1,7 @@
 ---
-title: "如何配置 Intune VPN 设置"
-titleSuffix: Azure portal
-description: "了解如何使用 Intune 配置所管设备上的 VPN 连接。"
+title: "如何在 Microsoft Intune 中配置 VPN 设置"
+titleSuffix: 
+description: "了解如何使用 Microsoft Intune 来配置所管理设备上的虚拟专用网络 (VPN) 连接。"
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 VPN 设置
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 02/01/2018
 
 
 > [!IMPORTANT]
-> 在你能够使用已分配到设备的 VPN 配置文件之前，必须安装适用于该配置文件的 VPN 应用。 [什么是 Microsoft Intune 中的应用管理？](app-management.md)主题中的信息可帮助你使用 Intune 分配应用。  
+> 在你能够使用已分配到设备的 VPN 配置文件之前，必须安装适用于该配置文件的 VPN 应用。 [什么是 Microsoft Intune 中的应用管理？](app-management.md)一文中的信息可帮助使用 Intune 分配应用。  
 
 了解如何使用[创建自定义 VPN 配置文件](custom-vpn-profiles-create.md)中的 URI 设置创建自定义 VPN 配置文件。     
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/01/2018
     - [Windows 10 设置](vpn-settings-windows-10.md)（包括 Windows Holographic for Business）
 8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
+配置文件随即创建并显示在“配置文件列表”边栏选项卡上。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 

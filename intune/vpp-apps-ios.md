@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc5ebd90483b0fa0e25461574085bd4160f012ea
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
+ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
@@ -134,17 +134,20 @@ Intune 将在应用商店内检测 VPP 应用更新，并在设备签入时自�
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>撤消应用许可证和删除令牌 
 
-<!-- 820863 -->For a given device that has one or more iOS volume-purchase program (VPP) apps, you revoke all associated device-based app licenses for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment type of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstallS the app from the device.
+<!-- 820863 -->  
+对于具有一个或多个 iOS 批量采购计划 (VPP) 应用的给定设备，撤销所有相关的基于设备的应用许可证。 撤销应用许可证将不会从设备中卸载相关的 VPP 应用。 若要卸载 VPP 应用并回收许可证，必须将 VPP 应用的分配类型更改为“卸载”。 如果删除已分配给用户的应用，Intune 将回收用户或设备许可证，并从设备中卸载该应用。
 
 >[!NOTE]
 >当员工离开公司，并且不再属于 AAD 组时，Intune 将检索用户已获许可的所有 iOS VPP 应用许可证。
 
-<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses or uninstall apps. 
+<!-- 820879 -->  
+可以使用控制台删除 iOS 批量采购计划 (VPP) 令牌。 当你有重复的 VPP 令牌实例时，可能需要执行此操作。 删除令牌也将删除任何关联的应用和分配。 但是，删除令牌不会撤销应用许可证或卸载应用。 
 
 >[!NOTE]
 >删除令牌后，Intune 不能撤销应用许可证。 
 
-<!-- 820870 -->To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
+<!-- 820870 -->  
+若要撤销适用于给定 VPP 令牌的所有 VPP 应用的许可证，必须首先撤销所有与令牌相关联的应用许可证，然后删除令牌。
 
 ## <a name="further-information"></a>更多信息
 

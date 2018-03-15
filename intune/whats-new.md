@@ -5,9 +5,9 @@ description: "了解 Intune Azure 门户新增功能"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: dougeby
-ms.date: 02/01/2018
-ms.topic: article
+manager: angrobe
+ms.date: 01/02/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5058428dca9212d8b20364f58ac463939a699221
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 7490302c7bd928417cdf946cbbf74f8b8b7531ed
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -41,6 +41,107 @@ ms.lasthandoff: 02/19/2018
   ### Monitor and troubleshoot
 
 -->   
+
+
+## <a name="week-of-february-19-2018"></a>2018 年 2 月 19 日开始的这一周
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685---"></a>Intune 支持多个 Apple DEP/Apple School Manager 帐户 <!-- 747685 -->
+ 
+Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或 Apple School Manager 帐户注册设备。 可以单独管理注册配置文件和设备的每个已上传令牌。 可以根据已上传的 DEP/ School Manager 令牌自动分配不同的注册配置文件。 如果上传了多个 School Manager 令牌，一次只能与 Microsoft 学校数据同步共享一个令牌。
+
+迁移后，通过 Graph 管理 Apple DEP 或 ASM 的 beta 版本 Graph API 和已发布脚本将不再有效。 新的 beta 版本 Graph API 正在进行开发，将在迁移后发布。
+
+#### <a name="see-enrollment-restrictions-per-user----1634444-eeready-wnready---"></a>请参阅每个用户的注册限制 <!-- 1634444 eeready wnready -->
+在“故障排除”边栏选项卡上，现在可以通过选择“分配”列表中的“注册限制”，查看对每个用户有效的注册限制。
+
+### <a name="device-management"></a>设备管理
+#### <a name="windows-defender-health-status-and-threat-status-reports---854704---"></a>Windows Defender 运行状况状态和威胁状态报告 <!--854704 -->
+
+了解 Windows Defender 的运行状况和状态是管理 Windows 电脑的关键。  通过此更新，Intune 向 Windows Defender 代理的状态和健康状况添加新的报告和操作。 通过使用设备符合性工作负载中的状态汇总报告，可以看到需要以下任一项的设备：
+- 签名更新
+- “重新启动”
+- 手动干预
+- 完全扫描
+- 需要干预的其他代理状态
+
+每个状态类别的深入报告列出需要注意的各个电脑，或者报告为“清理”的电脑。
+
+#### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>设备限制的新隐私设置 <!--1308926 -->
+现在将为设备提供两个新的隐私设置：
+- **发布用户活动**：将此设置为“阻止”以阻止任务切换程序中最近使用资源的共享体验和发现。
+- **仅限本地活动**：将此设置为“阻止”以仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。
+
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Microsoft Edge 浏览器的新设置 <!--1469166 -->
+现在将为具有 Microsoft Edge 浏览器的设备提供两个新设置：“到收藏夹文件的路径”和“对收藏夹的更改”。 
+
+### <a name="app-management"></a>应用管理
+#### <a name="protocol-exceptions-for-applications---1035509---"></a>应用程序的协议异常 <!--1035509 -->
+
+现在可以为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况以打开特定的非托管应用程序。 此类应用程序必须受到 IT 的信任。 除创建的例外情况外，当数据传输策略设置为“仅限托管应用”时，数据传输仍仅限于由 Intune 托管的应用程序。 可以使用协议 (iOS) 或包 (Android) 创建限制。
+ 
+例如，可以将 Webex 包作为异常添加到 MAM 数据传输策略。 这样使托管 Outlook 电子邮件消息中的 Webex 链接可以直接在 Webex 应用程序中打开。 其他非托管的应用程序中将继续限制数据传输。 有关详细信息，请参阅[应用的数据传输策略例外情况](app-protection-policies-exception.md)。
+
+#### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Windows 搜索结果中的 Windows 信息保护 (WIP) 加密数据 <!-- 1469193 -->
+借助 Windows 信息保护 (WIP) 策略中的设置，现在可以控制是否在 Windows 搜索结果中包含 WIP 加密数据。 通过在 Windows 信息保护策略的“高级设置”中选择“允许 Windows Search 索引器搜索加密项”设置此应用保护策略选项。 应用保护策略必须设置为 Windows 10 平台，应用策略“注册状态”必须设置为“已注册”。 有关详细信息，请参阅[允许 Windows Search 索引器搜索加密项](windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items)。
+
+#### <a name="configuring-a-self-updating-mobile-msi-app----1740840---"></a>配置自我更新的移动 MSI 应用 <!-- 1740840 -->
+可以配置已知的自我更新移动 MSI 应用以忽略版本检查过程。 此功能有助于避免出现争用条件。 例如，在应用是由应用开发者自动更新并且也由 Intune 更新时，可能会出现此类争用条件。 两者都可能在 Windows 客户端上尝试强制执行一个应用版本，这可能会产生冲突。 对于这些自动更新的 MSI 应用，可以在“应用信息”边栏选项卡中配置“忽略应用版本”设置。 当此设置切换为“是”时，Microsoft Intune 将会忽略在 Windows 客户端上安装的应用版本。 
+
+#### <a name="related-sets-of-app-licenses-supported-in-intune----1864117---"></a>Intune 中支持的应用许可证的相关集 <!-- 1864117 -->
+Azure 门户中的 Intune 现在支持应用许可证的相关集，以作为 UI 中的单个应用项。 此外，任何从适用于企业的 Microsoft Store 同步的脱机许可的应用都将合并到单个应用条目中，并且各个包中的任何部署详细信息都将迁移到单个条目中。 若要在 Azure 门户中查看应用许可证的相关集，请从“移动应用”边栏选项卡中选择“应用许可证”。
+
+### <a name="device-configuration"></a>设备配置
+#### <a name="windows-information-protection-wip-file-extensions-for-automatic-encryption----1463582---"></a>自动加密的 Windows 信息保护 (WIP) 文件扩展名 <!-- 1463582 -->
+Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的定义，在从公司边界内的服务器消息块 (SMB) 共享进行复制时，指定自动加密哪些文件扩展名。
+
+#### <a name="configure-resource-account-settings-for-surface-hubs"></a>为 Surface Hub 配置资源帐户设置
+
+现在可以为 Surface Hub 远程配置资源帐户设置。
+
+资源帐户由 Surface Hub 用于对 Skype/Exchange 进行身份验证，以便它可以加入会议。 需要创建一个唯一的资源帐户，以使 Surface Hub 可以作为会议室出现在会议中。 例如“会议室 B41/6233”等资源帐户。
+
+> [!NOTE]
+> - 如果将字段留空，则将替代之前在设备上配置的特性。
+>
+> - 资源帐户属性可以在 Surface Hub 上动态变化。 例如，在启用密码轮转的情况下。 所以，Azure 控制台中的值可能需要一些时间才能反映设备上的实际情况。 
+>
+>   若要了解 Surface Hub 上当前配置的内容，可以将资源帐户信息包括在硬件清单中（已有 7 天的间隔时间）或者作为只读属性包括。 若要在远程操作发生后增强准确性，可以在运行操作以更新 Surface Hub 上的帐户/参数后立即获取参数的状态。
+
+
+##### <a name="attack-surface-reduction"></a>攻击面减少
+
+
+|设置名  |设置选项  |描述  |
+|---------|---------|---------|
+|从电子邮件中执行受密码保护的可执行内容|阻止、审核、未配置|防止运行通过电子邮件下载的受密码保护的可执行文件。|
+|高级勒索软件防护|启用、审核、未配置|使用激进的勒索软件防护。|
+|标记从 Windows 本地安全机构子系统窃取的凭据|启用、审核、未配置|标记从 Windows 本地安全机构子系统 (lsass.exe) 窃取的凭据。|
+|来自 PSExec 和 WMI 命令的进程创建|阻止、审核、未配置|阻止来自 PSExec 和 WMI 命令的进程创建。|
+|从 USB 运行的不受信任和未签名的进程|阻止、审核、未配置|阻止从 USB 运行的不受信任和未签名的进程。|
+|不符合普及程度、年龄或信任列表条件的可执行文件|阻止、审核、未配置|阻止可执行文件的运行，除非这些文件符合普及程度、年龄或信任列表条件。|
+
+##### <a name="controlled-folder-access"></a>受控文件夹访问权限
+
+|设置名  |设置选项  |描述  |
+|---------|---------|---------|
+|文件夹保护（已实现）|未配置、启用、仅审核（已实现）<br><br> **新建**<br>阻止磁盘修改、审核磁盘修改|
+阻止不友好应用对文件和文件夹进行未经授权的更改。<br><br>**启用**：阻止不受信任的应用修改或删除受保护文件夹中的文件，以及阻止写入到磁盘扇区。<br><br>
+**仅阻止磁盘修改**：<br>阻止不受信任的应用写入到磁盘扇区。 不受信任的应用仍可以修改或删除受保护文件夹中的文件。|
+
+#### <a name="additions-to-system-security-settings-for-windows-10-and-later-compliance-policies---1704133--"></a>对适用于 Windows 10 及更高版本符合性策略的系统安全设置的添加<!--1704133-->
+
+现在提供对 Windows 10 符合性设置的添加，包括需要防火墙和 Windows Defender 防病毒。 
+
+
+### <a name="role-based-access-control"></a>基于角色的访问控制
+### <a name="intune-apps"></a>Intune 应用
+#### <a name="support-for-offline-apps-from-the-microsoft-store-for-business---1222672--"></a>支持适用于企业的 Microsoft 应用商店中的脱机应用<!--1222672-->
+从适用于企业的 Microsoft Store 购买的脱机应用现在已同步到 Azure 门户。 可以将这些应用部署到设备组或用户组。 这些脱机应用由 Intune 安装，而不是由应用商店安装。
+
+#### <a name="prevent-end-users-from-manually-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>防止最终用户手动添加或删除工作配置文件中的帐户 <!-- 1728700 -->
+
+将 Gmail 应用部署到 Android for Work 配置文件中后，现在可防止最终用户通过使用 Android for Work 设备限制配置文件中的“添加和删除帐户”设置手动添加或删除工作配置文件中的帐户。
 
 ## <a name="week-of-february-5-2018"></a>2018 年 2 月 5 日开始的这一周
 
@@ -69,6 +170,10 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>通过安全网络远程打印 <!-- 1709994  -->
 使用 PrinterOn 的无线移动打印解决方案，用户将可以随时随地通过安全网络进行远程打印。 PrinterOn 将集成适用于 iOS 和 Android 的 Intune APP SDK。 将可以通过管理控制台中的 Intune“应用保护策略”边栏选项卡，将应用保护策略定目标到此应用。 最终用户将能够通过 Play 商店或 iTunes 下载“PrinterOn for Microsoft”应用，以便在 Intune 生态系统内使用。
+
+### <a name="macos-company-portal-support-for-enrollments-that-use-the-device-enrollment-manager----1352411---"></a>对使用设备注册管理员的注册的 macOS 公司门户支持 <!-- 1352411 -->
+
+用户现在能够在注册 macOS 公司门户时使用设备注册管理员。
 
 ## <a name="week-of-january-29-2018"></a>2018 年 1 月 29 日当周
 
@@ -104,16 +209,6 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 #### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>根据组添加和排除应用分配 <!-- 1406920 -->
 
 在应用分配期间以及在选择分配类型后，可以选择要包括和排除的组。
-
-#### <a name="website-learning-mode----1631908---"></a>网站学习模式 <!-- 1631908 -->
-
-Intune 现在具有 Windows 信息保护 (WIP) 学习模式扩展。 除了查看已启用 WIP 的应用的相关信息外，还可以查看与网站共享工作数据的设备的摘要。 通过此信息，可以确定应将哪些网站添加到组和用户 WIP 策略中。
-
-#### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>审核适用于 Android for Work 的“公司门户”应用 <!--1797090 -->
-如果组织使用 Android for Work，将需要手动审核适用于 Android 的“公司门户”应用，以便它能够继续从托管的 Google Play 商店接收自动更新。
-
-#### <a name="faceid-on-ios-devices----1807377---"></a>iOS 设备上的 FaceID<!-- 1807377 -->
-Intune 应用保护策略现在支持用于在 iOS 设备上控制 FaceID 的设置。 此设置适用于支持 FaceID 功能的设备（目前仅限 iPhone X）。 此设置与当前支持的 TouchID 控件相互独立。 组织可以选择是否信任 FaceID 作为有效的 PIN 提示，以将其作为 TouchID 控件的替代方式。
 
 ### <a name="device-configuration"></a>设备配置
 
@@ -159,7 +254,7 @@ Intune 应用保护策略现在支持用于在 iOS 设备上控制 FaceID 的设
 
 #### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>新的 Windows Defender 安全中心 (WDSC) 设备配置文件设置<!-- 1335507 -->
 
-Intune 在名为“Windows Defender 安全中心”的端点保护下添加了一个新的设备配置文件设置部分。 IT 管理员可以配置最终用户能访问 Windows Defender 安全中心应用的支柱类型。 如果 IT 管理员在 Windows Defender 安全中心应用中隐藏支柱，则与隐藏支柱相关的所有通知都不会显示在用户设备上。
+Intune 在名为“Windows Defender 安全中心”的端点保护下添加了一个新的设备配置文件设置部分。 IT 管理员可以配置最终用户能访问 Windows Defender 安全中心应用的哪些支柱。 如果 IT 管理员在 Windows Defender 安全中心应用中隐藏支柱，则与隐藏支柱相关的所有通知都不会显示在用户设备上。
 
 以下是管理员可以在 Windows Defender 安全中心设备配置文件设置中隐藏的支柱：
 - 病毒和威胁防护
@@ -196,7 +291,7 @@ IT 管理员还可以自定义用户接收的通知。 例如，你可以配置�
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>禁止对 Samsung Knox 设备更改日期/时间 <!-- 1468103 -->
 
-现在可在 Samsung Knox 设备上阻止日期和时间更改。 此功能位于“设备配置文件” > “设备限制(Android)” > “常规”中。
+我们新增了一项功能，以便用户能够禁止对 Samsung Knox 设备更改日期和时间。 此功能位于“设备配置文件” > “设备限制(Android)” > “常规”中。
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>支持的 Surface Hub 资源帐户<!-- 1566442  -->
 
@@ -241,7 +336,7 @@ IT 管理员还可以自定义用户接收的通知。 例如，你可以配置�
      指定是否启用日历同步和其他 Exchange Server 服务。 例如：会议同步。
 
 #### <a name="install-office-apps-on-macos-devices----1494311---"></a>在 macOS 设备上安装 Office 应用<!-- 1494311 -->
-现在可以在 macOS 设备上安装 Office 应用。 使用此新应用类型，可以安装 Word、Excel、PowerPoint、Outlook 和 OneNote。 这些应用还随附 Microsoft AutoUpdate (MAU)，有助于保护和不断更新应用。
+现在可以在 macOS 设备上安装 Office 应用。 这个新的应用类型将允许你安装 Word、Excel、PowerPoint、Outlook 和 OneNote。 这些应用还随附 Microsoft AutoUpdate (MAU)，有助于保护和不断更新应用。
 
 ### <a name="app-management"></a>应用管理
 
@@ -267,8 +362,7 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 
 ### <a name="updated-graph-apis----1736360---"></a>更新了 Graph API <!-- 1736360 -->
 
-我们更新了一些适用于 Intune 且处于 beta 阶段的图形 API。 有关详细信息，请查看每月的[图形 API 更改日志](https://developer.microsoft.com/graph/docs/concepts/changelog)。
-
+在此版本中，我们更新了一些适用于 Intune 且处于 beta 阶段的 Graph API。 有关详细信息，请查看每月的 [Graph API 更改日志](https://developer.microsoft.com/graph/docs/concepts/changelog)。
 
 ## <a name="week-of-december-4-2017"></a>2017 年 12 月 4 日当周
 
@@ -599,6 +693,28 @@ Intune 数据库仓库数据模型的第一个版本只包含 Intune 的最近�
 
 
 ## <a name="notices"></a>通知
+
+
+### <a name="coming-soon-workflow-updates-to-intune-administration-ui"></a>即将推出：对 Intune 管理 UI 的工作流更新
+
+Intune 正在更新 3 月服务版本中的管理员体验。 你不必采取任何操作，但作为 Microsoft 透明度承诺的一部分，我们希望你对此加以关注。 启用 Android 或 Apple 设备管理后，Intune 将发送设备和用户信息来与这些第三方服务集成，以便管理其各自的设备。 我们在 3 月服务版本中引入的增强管理员 UI 体验将为共享数据提供更高的透明度。 这些 UI 更改对最终用户没有影响。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+
+将添加共享数据窗口同意的方案包括：
+- 启用 Android for Work 时 
+- 启用并上传 Apple MDM Push Certificate 时 
+- 启用任何诸如设备注册计划、School Manager 和批量采购计划等 Apple 服务时
+
+在每种情况下，同意都与运行移动设备管理服务严格相关，例如确认 IT 管理员已授权 Google 或 Apple 设备注册。 此处提供当新的工作流上线时用于查阅共享了哪些信息的文档：
+- [Intune 向 Google 发送的数据](data-intune-sends-to-google.md)
+- [Intune 向 Apple 发送的数据](data-intune-sends-to-apple.md)
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+
+无需对此更改进行任何准备，因为这些是次要的工作流 UI 更新。 有关 Microsoft 的 GDPR 符合性的详细信息，请参阅可从其他信息链接访问的信任中心。
+
+
 
 ### <a name="plan-for-change-update-where-you-configure-your-app-protection-policies"></a>更改计划：更新配置应用保护策略的位置
 

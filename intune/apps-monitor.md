@@ -1,12 +1,12 @@
 ---
 title: "如何监视应用信息和分配"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "将应用分配给用户或设备后，请使用此信息来帮助你监视其状态。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6bd915093ae45ff0fc3d51a2d7279493bc783d43
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>如何使用 Microsoft Intune 监视应用信息和分配
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 01/25/2018
 
 Intune 提供了许多可以用于监视所托管应用的属性及其分配状态的方法。
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” + “Intune”。
-3. 在“移动应用”工作负荷中，在“管理”组中选择“应用”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“管理”组中选择“移动应用”，然后选择“应用”。
 5. 在应用边栏选项卡列表中选择应用。 然后将看到<应用名称> “设备安装状态”边栏选项卡。
 
 ## <a name="app-overview-blade"></a>应用概述边栏选项卡

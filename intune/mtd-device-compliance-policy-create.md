@@ -3,8 +3,8 @@ title: "使用 Intune 创建移动威胁防御设备符合性策略"
 titlesuffix: Azure portal
 description: "在 Intune 中创建移动威胁防御设备符合性策略"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,22 +15,22 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 创建移动威胁防御 (MTD) 设备符合性策略
 
 > [!NOTE] 
-> 本主题适用于所有移动威胁防御合作伙伴。
+> 此信息适用于所有移动威胁防御合作伙伴。
 
 搭载 MTD 的 Intune 可帮助检测移动设备上存在的威胁和评估相关风险。 可创建评估风险的 Intune 设备符合性策略规则，确定设备是否合规。 然后可使用条件性访问策略，根据设备合规性阻止对服务的访问。
 
 ## <a name="before-you-begin"></a>在开始之前
 
-作为 MTD 设置过程的一部分，需在 MTD 合作伙伴控制台中创建一个将各种威胁分类为高、中和低的策略。 现在需要在 Intune 设备符合性策略中设置移动威胁防御级别。
+在 MTD 设置过程中，需在 MTD 合作伙伴控制台中创建一个将各种威胁分类为高、中和低的策略。 现在需要在 Intune 设备符合性策略中设置移动威胁防御级别。
 
 MTD 设备符合性策略先决条件：
 
@@ -52,13 +52,13 @@ MTD 设备符合性策略先决条件：
 
 7.  在“设备运行状况”边栏选项卡上，从“要求设备不高于移动威胁防御级别”下的下拉列表中选择移动威胁级别。
 
-    a.  **安全**：这是最安全的选项。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
+    a.  **安全**：此级别是最安全的威胁级别。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
 
-    b.  **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
+    b.  **低**：如果设备上仅存在低级威胁，则该设备合规。 低级以上的任意威胁都将使设备不合规。
 
-    c.  **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不符合。
+    c.  **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不合规。
 
-    d.  **高**：这是最不安全的选项。 此选项将许可所有威胁级别，且仅将移动威胁防御用作报告目的。 设备必须使用此设置激活 MTD 应用。
+    d.  **高**：此级别是最不安全的威胁级别。 此选项将许可所有威胁级别，且仅将移动威胁防御用作报告目的。 设备必须使用此设置激活 MTD 应用。
 
 8.  单击“确定”两次，然后选择“创建”。
 
@@ -69,12 +69,12 @@ MTD 设备符合性策略先决条件：
 
 若要为用户分配设备合规性策略，请选择之前已配置的策略。 可在“设备符合性策略”边栏选项卡中找到现有策略。
 
-1. 选择要分配给用户的策略，然后选择“分配”。 此操作将打开边栏选项卡，可以在其中选择“Azure Active Directory 安全组”并将其分配给策略。
+1. 选择要分配给用户的策略，然后选择“分配”。 此操作将打开边栏选项卡，可在其中选择“Azure Active Directory 安全组”并将其分配给策略。
 
 2. 选择“选择组”以打开显示 Azure AD 安全组的边栏选项卡。  选择“选择”会将策略部署到用户。
 
     > [!NOTE] 
-    > 你已将策略应用于用户。 将评估策略针对的用户所使用设备的合规性。
+    > 你已将策略应用于用户。 将评估策略针对的用户所使用设备的符合性。
 
 ## <a name="next-steps"></a>后续步骤
 

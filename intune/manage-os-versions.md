@@ -1,8 +1,9 @@
 ---
-title: "使用 Intune 管理操作系统版本"
+title: "使用 Microsoft Intune 管理操作系统版本"
 description: "了解如何使用 Microsoft Intune 跨平台管理操作系统版本。"
 keywords: 
-author: dougeby
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
@@ -10,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: 78abef01e968b59b81a74dcd6b67df31dbf29def
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 1e5b902053290c314aa53b8f17f11ff92247d37e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理操作系统版本
 在新式移动和桌面平台上，主要更新、修补程序和新版本的发布速度很快。 你在 Windows 上具有完全管理更新和修补程序的控制权限，但在 iOS 和 Android 等平台上，最终用户也需参与此过程。  Microsoft Intune 可帮助构建跨不同平台的操作系统版本管理。

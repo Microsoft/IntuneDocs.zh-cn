@@ -1,7 +1,7 @@
 ---
 title: "在 Microsoft Intune 中为 iOS 设备设置每应用 VPN"
-titleSuffix: Intune on Azure
-description: "指定哪些托管应用可在 Intune 托管的 iOS 设备上使用 VPN。"
+titleSuffix: 
+description: "指定哪些托管应用可在 Intune 托管的 iOS 设备上使用虚拟专用网络 (VPN)。"
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7e53f9a440d945d834c17b9db85ed5f6e42229
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>在 Microsoft Intune 中为 iOS 设备设置每应用 VPN
+# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
-可指定哪些托管应用可在 Intune 托管的 iOS 设备上使用虚拟专用网络 (VPN)。 在 Intune 中指定每应用 VPN 时，最终用户访问公司文档时会自动通过 VPN 进行连接。
+可指定哪些托管应用可在 Intune 托管的 iOS 设备上使用虚拟专用网络 (VPN)。 在 Intune 中创建每应用 VPN 时，最终用户访问公司文档时会自动通过 VPN 进行连接。
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>每应用 VPN 先决条件
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/25/2018
     3. 对“平台”选择“iOS”。
     4. 对“配置文件类型”选择“受信任的证书”。
 4. 单击文件夹图标，浏览到从 VPN 管理控制台导出的 VPN 证书（.cer 文件）。 单击“确定”
-5. 单击“**创建**”。
+5. 单击“创建”。
 
     ![创建受信任的证书配置文件](media\vpn-per-app-create-trusted-cert.png)
 
@@ -83,13 +83,13 @@ ms.lasthandoff: 01/25/2018
 6. 对“使用者可选名称”选择“用户主体名称(UPN)”。
 7. 对“密钥用法”选择“数字签名”和“密钥加密”。
 8. 对“密钥大小(位)”选择“2048”。
-9. 单击根证书并选择一个 SCEP 证书。 单击“确定” 。
+9. 单击根证书并选择一个 SCEP 证书。 单击" **确定**"。
 10. 在“扩展密钥用法”的“名称”中键入 `Client Authentication`。
 11. 在“对象标识符”中键入 `1.3.6.1.5.5.7.3.2`。
-12. 单击 **“添加”**。
+12. 单击“添加” 。
 13. 键入“服务器 URL”并单击“添加”。
-14. 单击“确定” 。
-15. 单击“**创建**”。
+14. 单击" **确定**"。
+15. 单击“创建”。
 
     ![创建 SCEP 证书配置文件](media\vpn-per-app-create-scep-cert.png)
 
@@ -115,9 +115,9 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 5. 单击“自动 VPN”。 在“自动 VPN”中：
     1. 对“自动 VPN 类型”选择“每应用 VPN”。
     2. 键入 VPN 的 URL 并单击“添加”。
-    3. 单击“确定” 。
-6. 单击“确定” 。
-7. 单击“**创建**”。
+    3. 单击" **确定**"。
+6. 单击" **确定**"。
+7. 单击“创建”。
 
     ![创建每应用 VPN 配置文件](media\vpn-per-app-create-vpn-profile.png)
 

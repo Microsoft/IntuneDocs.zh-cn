@@ -1,7 +1,7 @@
 ---
-title: "为受管理应用添加应用配置策略（无需设备注册）| Microsoft Docs"
-titlesuffix: Azure portal
-description: "了解如何为受管理应用添加应用配置策略（无需设备注册）。"
+title: "适用于托管应用的配置策略（无需设备注册）"
+titlesuffix: Microsoft Intune
+description: "了解如何为托管应用配置策略（无需设备注册）。"
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 384804029ecbf403f526144136dc187212e6cf4a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>为受管理应用添加应用配置策略（无需设备注册）
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 02/09/2018
 
 可将应用配置策略用于托管应用，这些应用甚至在未注册设备上也支持 Intune App SDK。 
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” + “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 选择“移动应用”工作负荷。
 4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”。
 5. 设置以下详细信息：
