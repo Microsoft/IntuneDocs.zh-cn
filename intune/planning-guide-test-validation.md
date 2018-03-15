@@ -1,9 +1,10 @@
 ---
 title: "Intune 测试和验证"
-description: "在环境中测试和验证仅限云的 Intune 解决方案时需考虑的细节。"
+titlesuffix: Microsoft Intune
+description: "如何在环境中测试和验证 Intune 仅限云解决方案。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Intune 测试和验证
 
-测试阶段在实现阶段和实现之后都会发生。 为了测试以前标识的所有必需的 IT（管理员）和最终用户（用例）方案，需要测试帐户、组和设备。
+在测试 Microsoft Intune 的实现时，请考虑功能验证和用例验证。 功能验证包括测试每个组件和配置，以确定其是否正常工作。 用例验证需要测试来验证涉及一系列任务的方案是否按预期工作。 
 
 建议将 IT 支持和支持人员纳入测试阶段，以便创建支持文档，且 IT 支持和支持人员能够轻松提供对该产品的支持。 如果组件或场景在该用例的基础上不起作用，请确保记录必需的更改并附上进行更改的原因。
 

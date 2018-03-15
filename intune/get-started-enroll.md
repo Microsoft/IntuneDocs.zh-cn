@@ -1,10 +1,10 @@
 ---
-title: "注册设备入门"
-titlesuffix: Azure portal
+title: "了解 iOS 设备注册体验"
+titlesuffix: Microsoft Intune
 description: "通过完整体验 iOS 设备的注册过程了解整个注册过程。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18a3225ef81d7f13b8656326540e30cf5ee07f1e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-enrolling-devices"></a>设备注册入门
+# <a name="understand-the-users-experience-enrolling-an-ios-device"></a>了解注册 iOS 设备的用户体验
 
 通过 Microsoft Intune，可让员工将移动设备用于工作，同时保护公司数据。 由于最终用户将在自己的设备而非管理员控制台上与 Intune 交互，因此需确保注册体验是流畅的。 这样一来，便可以将精心设计的符合性策略与你的经验相结合，亲身感受用户的使用体验。 这一点尤其重要，因为用户将可以准确地知道你作为管理员可以看见什么信息：
 

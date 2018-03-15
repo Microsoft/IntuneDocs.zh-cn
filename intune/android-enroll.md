@@ -1,6 +1,6 @@
 ---
-title: "在 Intune 中注册 Android 设备 | Microsoft Docs"
-titlesuffix: Azure portal
+title: "在 Intune 中注册 Android 设备"
+titlesuffix: Microsoft Intune
 description: "了解如何在 Intune 中注册 Android 设备。"
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
@@ -43,9 +43,9 @@ ms.lasthandoff: 02/03/2018
 
 ## <a name="enable-enrollment-of-android-for-work-devices"></a>启用 Android for Work 设备的注册
 
-若要启用对[支持 Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) 的设备上的工作配置文件的管理，必须将 Android for Work 绑定添加到 Intune。 若要注册支持 Android for Work、但以前已作为常规 Android 设备注册的设备，这些设备必须取消注册，然后重新注册。
+若要启用对[支持 Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) 的设备上的工作配置文件的管理，必须将 Android for Work 绑定添加到 Intune。 若要在 Android for Work 中注册已作为常规 Android 设备注册的设备，这些设备必须取消注册，然后重新注册。
 
-如果使用[设备注册管理器](device-enrollment-manager-enroll.md)帐户注册 Android for Work 设备，则每个帐户最多可注册 10 台设备。
+如果使用[设备注册管理员](device-enrollment-manager-enroll.md)帐户注册 Android for Work 设备，则每个帐户最多可注册 10 台设备。
 
 ## <a name="add-android-for-work-binding-for-intune"></a>为 Intune 添加 Android for Work 绑定
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 02/03/2018
     作为 Intune 管理员，在“Azure 门户”中，选择“更多服务” > “监视 + 管理” > “Intune”。
 
    a. 在“Intune”边栏选项卡上，选择“设备注册” > “Android for Work 注册”，然后选择“配置”打开 Google Play 的 Android for Work 网站。 网站将在浏览器的新选项卡中打开。
-   ![显示用于配置 Android for Work 绑定的链接的屏幕快照](./media/android-work-bind.png)
+   ![Android for Work 注册屏幕](./media/android-work-bind.png)
 
    b. 登录到 Google<br>
    在 Google 的登录页上，输入将与此租户的所有 Android for Work 管理任务相关联的 Google 帐户。 这是在公司的 IT 管理员之间共享的 Google 帐户，用于在 Play for Work 控制台中管理和发布应用。 可以使用现有 Google 帐户或创建新帐户。  所选帐户不能与 G-Suite 域相关联。
@@ -73,13 +73,13 @@ Android for Work 仅在特定 Android 设备上受支持。 请参阅 Google 的
 - **允许**：将支持 Android for Work 的所有设备均注册为 Android for Work 设备。 不支持 Android for Work 的任何 Android 设备都注册为传统的 Android 设备。
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>在托管的 Google Play 商店中批准公司门户应用
-需要在托管的 Google Play 商店中批准适用于 Android 的公司门户应用，确保该应用收到自动应用更新。 如不批准，公司门户最终会过时，并无法在 Microsoft 发布重要的 bug 修补程序或新功能时收到它们。
+必须在托管的 Google Play 商店中批准适用于 Android 的公司门户应用，确保该应用收到自动应用更新。 如不批准，公司门户最终会过时，并无法在 Microsoft 发布重要的 bug 修补程序或新功能时收到它们。
 
 请按以下步骤批准 Intune 公司门户：
 
 1.  在[托管的 Google Play 商店](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)中浏览到公司门户应用。
 2.  使用配置 Android for Work 绑定时所用的 Google 帐户登录托管的 Google Play 商店。
-3.  单击“批准”。  此时会打开一个新对话框。
+3.  单击“批准”，将打开一个新的对话框。
 4.  在此对话框中查看各权限，然后单击“批准”。 需要批准这些权限，才能允许公司门户应用管理设备上的工作配置文件。
 5.  选择“应用请求新的权限时始终批准”，然后单击“保存”。
 

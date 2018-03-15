@@ -1,7 +1,7 @@
 ---
 title: "如何监视应用保护策略"
-titleSuffix: Azure portal
-description: "查看有多少用户拥有策略，并深入了解以获取详细信息。”"
+titleSuffix: Microsoft Intune
+description: "在 Intune 中监视移动应用管理策略的符合性状态。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 如果还没有迁移到 Azure 门户，请参阅本主题，其中介绍了[如何在 Intune 经典门户中创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
 
-将移动应用管理 (MAM) 策略应用到用户后，可在 [Azure 门户](https://portal.azure.com)的 Intune 应用保护边栏选项卡中监视策略的合规性状态。 可找到的信息包括受 MAM 策略影响的用户、它的合规性状态和用户可能遭遇的任何问题。
+将移动应用管理 (MAM) 策略应用到用户后，可在 [Azure 门户](https://portal.azure.com)的 Intune 应用保护窗格中监视策略的符合性状态。 查找有关受 MAM 策略影响的用户、其符合性状态和用户可能遭遇的任何问题的信息。
 
 可在 3 个不同的位置监视合规性状态：
 
@@ -39,12 +39,12 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="summary-view"></a>摘要视图
 
-1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在 Intune 边栏选项卡上，选择“移动应用”。
-4. 在“移动应用”工作负荷中，选择“监视” > “应用保护用户状态”，以查看摘要视图：
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在 Intune 窗格中，选择“移动应用”。
+4. 在“移动应用”工作负荷中，选择“监视” > “应用保护状态”，以查看摘要视图：
 
-![“Intune 移动应用程序管理”边栏选项卡上的“摘要”磁贴。](./media/app-protection-user-status-summary.png)
+![“Intune 移动应用程序管理”窗格上的“摘要”磁贴](./media/app-protection-user-status-summary.png)
 
 -   **用户**：公司中正在工作环境中使用与该策略相关联的应用的用户总数。
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 01/25/2018
 
 -   **无策略**：正在工作环境中使用任何策略均不以其为目标的应用的用户数。 可以考虑将这些用户添加到策略。
     > [!NOTE]
-    > 如果每个平台有多个策略且已至少为用户分配了一个策略，则会考虑通过策略对用户进行管理。
+    > 如果每个平台有多个策略且已至少为某个用户分配了一个策略，则该用户被视为由策略管理。
 
 - **已标记用户**：遇到问题的用户数量。 目前仅将具有已越狱设备的用户报告在“已标记用户”下。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 01/25/2018
 可以通过选择“用户状态”磁贴（基于设备操作系统平台）和“已标记用户”磁贴转到摘要的详细视图。
 
 ### <a name="user-status"></a>用户状态
-可搜索单个用户并查看该用户的合规性状态。 “应用报告”边栏选项卡显示已选择用户的以下信息：
+可搜索单个用户并查看该用户的合规性状态。 “应用报告”窗格显示已选择用户的以下信息：
 - 与用户帐户关联的设备
 
 - 设备上具有 MAM 策略的应用
@@ -79,13 +79,13 @@ ms.lasthandoff: 01/25/2018
 
 1.  若要选择用户，请选择“摘要”磁贴。
 
-    ![屏幕快照 3](./media/MAM-reporting-6.png)
+    ![突出显示 Intune 移动应用程序管理“设置”边栏选项卡上的“摘要”磁贴的屏幕截图](./media/MAM-reporting-6.png)
 
-2. 在打开的“应用报表”边栏选项卡上，选择“选择用户”以搜索 Azure Active Directory 用户。
+2. 在打开的“应用报表”窗格中，选择“选择用户”以搜索 Azure Active Directory 用户。
 
-    ![“应用报告”边栏选项卡上的“选择用户”选项](./media/MAM-reporting-2.png)
+    ![突出显示“应用报告”窗格上的“选择用户”选项的屏幕截图](./media/MAM-reporting-2.png)
 
-3. 从列表中选择一个用户。 可以看到该用户合规性状态的详细信息。
+3. 从列表中选择一个用户。 可以看到该用户符合性状态的详细信息。
 
 ### <a name="flagged-users"></a>已标记用户
 详细视图显示错误消息、错误发生时访问的应用、受影响的设备操作系统平台和时间戳。
@@ -94,7 +94,7 @@ ms.lasthandoff: 01/25/2018
 
 可从详细视图中找到相同报表，还可通过其他报表了解 MAM 策略的合规性状态：
 
-![屏幕快照 - 4](./media/MAM-reporting-7.png)
+![突出显示“设置”窗格中 2 个可用报表的屏幕截图](./media/MAM-reporting-7.png)
 
 -   **应用保护用户报表：**概述了可在以上详细视图部分下的“用户状态”中找到的相同信息。
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 01/25/2018
 
         -   已签入所有应用，但应用还未获取任何 MAM 策略。
 
-![屏幕快照 - 2](./media/MAM-reporting-4.png)
+![显示用户“应用报告”边栏选项卡的屏幕截图，其中包含 3 个已注册应用的详细信息表格](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>表格分组
 
@@ -125,13 +125,13 @@ ms.lasthandoff: 01/25/2018
 
 按照下列步骤进行操作可生成应用保护报表：
 
-1. 在“Intune 移动应用程序管理”边栏选项卡中，选择“应用保护报表”。
+1. 在“Intune 移动应用程序管理”窗格中，选择“应用保护报表”。
 
-    ![屏幕快照 - 6](./media/app-protection-report-csv-2.png)
+    ![突出显示“Intune 移动应用程序管理”窗格中应用保护下载链接的屏幕截图](./media/app-protection-report-csv-2.png)
 
 2. 选择“是”以保存报表，然后选择“另存为”，并选择要在其中保存报表的文件夹。
 
-    ![屏幕快照 - 7](./media/app-protection-report-csv-1.png)
+    ![“保存报表”确认框的屏幕截图](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>另请参阅
 [管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)

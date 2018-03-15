@@ -1,9 +1,9 @@
 ---
-title: "设置 Intune"
+title: "设置 Microsoft Intune"
 description: "开始使用 Intune 订阅的要求和先决条件"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d2abd140dc83cffa11777ab75f7fb40e76fc1b83
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-intune"></a>设置 Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-以下设置步骤可帮助实现移动设备管理 (MDM)。 必须先执行设备管理，然后才能授予用户对公司资源的访问权限或管理设备上的设置。
+以下设置步骤有助于使用 Intune 实现移动设备管理 (MDM)。 必须先执行设备管理，然后才能授予用户对公司资源的访问权限或管理设备上的设置。
 
 某些步骤（例如设置 Intune 订阅和设置 MDM 机构）是在多数情况下都需要执行的。 其他步骤（例如配置自定义域或添加应用）是可选步骤，具体取决于公司需要。
 

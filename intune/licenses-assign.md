@@ -1,6 +1,6 @@
 ---
-title: "分配 Intune 许可证"
-description: "为你的 Intune 订阅用户分配许可证"
+title: "分配 Microsoft Intune 许可证"
+description: "向用户分配许可证，以便他们能够在 Intune 中进行注册"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="assign-intune-licenses-to-your-user-accounts"></a>将 Intune 许可证分配给用户帐户
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>向用户分配许可证，以便他们能够在 Intune 中注册设备
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/15/2018
 
 3.  将 **Intune** 或**企业移动性 + 安全性**切换为“打开”，然后选择”保存”。
 
-  ![Office 365 门户分配产品许可证的图像。](./media/office-assign-license.png)
+  ![Office 365 门户产品许可证部分的屏幕截图。](./media/office-assign-license.png)
 
 4. 现在，该用户帐户拥有所需的权限，可以使用该服务并在管理组件中注册设备。
 
@@ -46,11 +46,11 @@ ms.lasthandoff: 02/15/2018
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>使用“学校数据同步”向 Intune for Education 中的用户分配许可证
 如果你是教育组织，可以使用“学校数据同步 (SDS)”向同步用户分配 Intune for Education 许可证。 只需在设置 SDS 配置文件时，选中“Intune for Education”复选框。  
 
-![SDS 配置文件设置图像](./media/i4e-sds-profile-setup-setting.png)
+![SDS 配置文件设置的屏幕截图](./media/i4e-sds-profile-setup-setting.png)
 
 分配 Intune for Education 许可证时，请确保同时分配 Intune A Direct 许可证。
 
-![产品许可证设置图像](./media/i4e-set-licenses.png)
+![产品许可证设置的屏幕截图](./media/i4e-set-licenses.png)
 
 请参阅此[学校数据同步概述](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)，了解有关 SDS 的详细信息。
 

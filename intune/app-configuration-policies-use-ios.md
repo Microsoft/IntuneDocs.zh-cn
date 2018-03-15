@@ -1,6 +1,6 @@
 ---
-title: "为受管理 iOS 设备添加应用配置策略 | Microsoft Docs"
-titlesuffix: Azure portal
+title: "为受管理 iOS 设备添加应用配置策略"
+titlesuffix: Microsoft Intune
 description: "了解如何使用应用配置策略，为运行中的 iOS 应用提供配置数据。"
 keywords: 
 author: erikre
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: bdaec3150062dce5da5566fa9534425e11f3cdec
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/03/2018
 
 使用 Microsoft Intune 中的应用配置策略可提供用户在运行 iOS 应用时的设置。 无需直接向用户和设备分配这些策略。 而是将策略与应用关联，然后分配应用。 只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
 
-可通过将包括和排除分配相结合来向一组用户和设备分配应用程序配置策略。 添加应用配置策略后，即可设置应用分配策略的配置。 设置策略分配时，可选择包括和排除将应用该策略的用户组。 选择包括一个或多个组时，可以选择要包括的特定组或选择内置组。 内置组包括“所有用户”、“所有设备”和“所有用户 + 所有设备”。 
+可通过将包括和排除分配相结合来向一组用户和设备分配应用程序配置策略。 添加应用配置策略后，即可设置应用分配策略的配置。 设置策略分配时，可选择包括和排除应用该策略的用户组。 选择包括一个或多个组时，可以选择要包括的特定组或选择内置组。 内置组包括“所有用户”、“所有设备”和“所有用户 + 所有设备”。 
 
 >[!NOTE]
 >为方便起见，Intune 在具有内置优化的控制台中提供了预先创建的“所有用户”和“所有设备”组。 强烈建议针对所有用户和所有设备使用这些组，而不要使用你自己创建的任何“所有用户”或“所有设备”组。
@@ -44,38 +44,38 @@ ms.lasthandoff: 02/03/2018
 
 ## <a name="create-an-app-configuration-policy"></a>创建应用配置策略
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” + “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 选择“移动应用”工作负荷。
 4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”。
 5. 设置以下详细信息：
     - **名称**<br>
-      在 Azure 门户中显示的配置文件名称。
+      在 Azure 门户中显示的配置文件名。
     - **描述**<br>
-      将在 Azure 门户中显示的配置文件说明。
+      在 Azure 门户中显示的配置文件说明。
     - **设备注册类型**<br>
       选择“受管理设备”。
 6. 对“平台”选择“iOS”。
-7.  选择“关联应用”。 然后在“关联应用”边栏选项卡中，选择要对其应用配置的托管应用。
-8.  在“添加配置策略”边栏选项卡上，选择“配置设置”。
+7.  选择“关联应用”。 然后在“关联应用”窗格中，选择要对其应用配置的托管应用，并选择“确定”。
+8.  在“添加配置策略”窗格中，选择“配置设置”。
 9. 选择“配置设置格式”。 选择以下选项之一：
     - **[使用配置设计器](#use-configuration-designer)**
     - **[输入 XML 数据](#enter-xml-data)**
-10. 添加完 XML 信息后，选择“确定”，然后选择“添加”以添加配置策略。 随即显示配置策略的概述边栏选项卡。
+10. 添加完 XML 信息后，选择“确定”，然后选择“添加”以添加配置策略。 随即显示配置策略的概述窗格。
 11. 选择“分配”，显示包括和排除选项。 
 
-    ![策略分配](./media/app-config-policy01.png)
+    ![策略分配“包括”选项卡的屏幕截屏](./media/app-config-policy01.png)
 12. 在“包括”边栏选项卡上选择“所有用户”。
 
-    ![策略分配 - 所有用户](./media/app-config-policy02.png)
+    ![策略分配“所有用户”下拉列表选项的屏幕截图](./media/app-config-policy02.png)
 13. 选择“排除”选项卡。 
-14. 单击“选择要排除的组”以显示相关的边栏选项卡。
+14. 单击“选择要排除的组”以显示相关窗格。
 
-    ![策略分配 - 选择要排除的组](./media/app-config-policy03.png)
+    ![策略分配“选择要排除的组”边栏选项卡的屏幕截图](./media/app-config-policy03.png)
 15. 选择想要排除的组，然后单击“选择”。
 
     >[!NOTE]
-    >添加组时，如果给定的分配类型中已包括任何其他组，则在其他包括分配类型中，该组会被预先选定且无法更改。 因此，已被使用的组无法用作排除组。
+    >添加组时，如果给定的分配类型中已包括任何其他组，则在其他包括分配类型中，会预先选定该组且无法更改。 因此，已被使用的组无法用作排除组。
 16. 单击 **“保存”**。
 
 ## <a name="use-configuration-designer"></a>使用配置设计器
@@ -104,7 +104,7 @@ ms.lasthandoff: 02/03/2018
 
 可键入或粘贴 XML 属性列表，此列表包含将设备注册到 Intune 所需的应用配置设置。 根据你所配置的应用，XML 属性列表的格式可能有所不同。 若需了解要使用的确切格式的详细信息，请联系应用供应商。
 
-Intune 会验证 XML 格式。 但是，Intune 不会检查 XML 属性列表 (PList) 是否可用于目标应用。
+Intune 会验证 XML 格式。 但是，Intune 不会检查 XML 属性列表 (PList) 是否适用于目标应用。
 
 了解有关 XML 属性列表的详细信息：
 

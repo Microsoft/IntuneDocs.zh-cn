@@ -1,25 +1,23 @@
 ---
-title: "如何配置 Intune 电子邮件设置"
-titleSuffix: Azure portal
-description: "了解如何配置 Intune，以在所管设备上创建与公司电子邮件的连接。"
+title: "如何配置 Microsoft Intune 电子邮件设置"
+titleSuffix: 
+description: "了解如何配置 Microsoft Intune，以在所管理的设备上创建与公司电子邮件的连接。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8558da2460b6443cbd4d42f7dec420d3e7abc7d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置电子邮件设置
 
@@ -37,16 +35,16 @@ ms.lasthandoff: 01/25/2018
 - Windows Phone 8.1 及更高版本
 - Windows 10（桌面版）和 Windows 10 移动版
 
-使用本主题中的信息了解有关配置电子邮件配置文件的基础知识，然后阅读有关每个平台的深入主题以了解设备规范。
+使用本文章中的信息了解有关配置电子邮件配置文件的基础知识，然后阅读针对每个平台的深入主题以了解设备规范。
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>创建包含电子邮件设置的设备配置文件
 
-1. 登录到 Azure 门户中。
+1. 登录 Azure 门户。
 2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在配置文件边栏选项卡上，选择“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入电子邮件配置文件的“名称”和“说明”。
+3. 在“Intune”页，选择“设备配置”。
+2. 在“设备配置”页，选择“管理” > “配置文件”。
+3. 在“配置文件”页，选择“创建配置文件”。
+4. 在“创建配置文件”页，输入电子邮件配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用电子邮件设置的设备平台。 目前，可以为电子邮件设备设置选择以下平台之一：
     - **Android**（仅 Samsung Android Knox Standard）
     - **Android for Work**
@@ -54,21 +52,21 @@ ms.lasthandoff: 01/25/2018
     - **Windows Phone 8.1**
     - **Windows 10 及更高版本**
 6. 在“配置文件”键入下拉列表中，选择“电子邮件”。
-7. 根据所选择的平台，可配置的设置将有所不同。 有关每个平台的详细设置，请转到以下主题之一：
+7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
     - [Android for Work 和 Samsung Knox Standard 设置](email-settings-android.md)
     - [iOS 设置](email-settings-ios.md)
     - [Windows Phone 8.1 设置](email-settings-windows-phone-8-1.md)
     - [Windows 10 设置](email-settings-windows-10.md)
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+8. 完成后，返回“创建配置文件”页，然后点击“创建”。
 
-此时，配置文件会进行创建，并显示在配置文件列表边栏选项卡上。
+配置文件随即创建并显示在“配置文件列表”页中。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 ## <a name="further-information"></a>更多信息
 
 ### <a name="remove-an-email-profile"></a>删除电子邮件配置文件
 
-如果想要从设备中删除电子邮件配置文件，请编辑分配并删除包含该设备的任何组。 请注意，如果电子邮件配置文件是设备上唯一的电子邮件配置文件，则无法通过此方法将其删除。
+如果想要从设备中删除电子邮件配置文件，请编辑分配并删除包含该设备的任何组。 如果电子邮件配置文件是设备上唯一的电子邮件配置文件，则无法通过此方法将其删除。
 
 ### <a name="securing-email-access"></a>保护电子邮件访问权限
 
@@ -84,7 +82,7 @@ ms.lasthandoff: 01/25/2018
 
 如果用户已配置电子邮件帐户，Intune 电子邮件配置文件分配结果将取决于设备平台：
 
-- **iOS**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 重复的电子邮件配置文件将阻止分配 Intune 配置文件。 在这种情况下，公司门户将通知用户其不符合规定并提示用户手动删除已配置的配置文件。 若要帮助防止此问题，请告知用户在安装电子邮件配置文件前进行注册，这可允许 Intune 设置配置文件。
+- **iOS**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 重复的电子邮件配置文件会阻止分配 Intune 配置文件。 在这种情况下，公司门户将通知用户其不符合规定并提示用户手动删除已配置的配置文件。 若要帮助防止此问题，请告知用户在安装电子邮件配置文件前进行注册，这可允许 Intune 设置配置文件。
 - **Windows**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 Intune 会覆盖由用户创建的现有电子邮件配置文件。
 - **Android Samsung Knox Standard**：根据电子邮件地址检测到现有的重复电子邮件配置文件，并用 Intune 配置文件覆盖它。
 由于 Android 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。

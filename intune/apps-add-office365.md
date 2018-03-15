@@ -1,12 +1,12 @@
 ---
-title: "使用 Intune 将 Office 365 应用安装到移动设备"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune 更轻松地在 Windows 10 设备上安装 Office 365 应用。"
+title: "使用 Microsoft Intune 将 Office 365 应用安装到设备"
+titlesuffix: 
+description: "了解如何使用 Microsoft Intune 更轻松地在 Windows 10 设备上安装 Office 365 应用。"
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版应用分配到 Windows 10 设备
 
@@ -85,11 +85,11 @@ ms.lasthandoff: 02/19/2018
 1.  在“添加应用”边栏选项卡上，选择“应用套件设置”。
 2.  在“应用套件设置”边栏选项卡上，指定以下信息：
     - **Office 版本** - 选择是否想要分配 32 位或 64 位版本的 Office。 可以在 32 位和 64 位设备上安装 32 位版本，但只能在 64 位设备上安装 64 位版本。
-    - **更新频道** - 选择在设备上更新 Office 的方式。 有关不同更新通道的信息，请参阅 Office 365 专业增强版的更新频道概述。 选择：
-        - **当前**
-        - **延迟**
-        - **首次发布当前**
-        - **首次发布延迟**
+    - **更新频道** - 选择在设备上更新 Office 的方式。 有关不同更新通道的信息，请参阅 [Office 365 专业增强版的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。 选择：
+        - **每月**
+        - **每月（定向）**
+        - **半年**
+        - **半年（定向）**
     - **自动接受应用最终用户许可协议** - 如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
     - **使用共享计算机激活** - 当多个用户共享一台计算机时，使用共享计算机激活。 有关详细信息，请参阅 Office 365 专业增强版的共享计算机激活概述。
     - **语言** - Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。

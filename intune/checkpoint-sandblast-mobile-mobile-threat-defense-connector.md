@@ -3,8 +3,8 @@ title: "Check Point SandBlast Mobile 连接器与 Intune"
 titlesuffix: Azure portal
 description: "Check Point SandBlast 与 Intune 集成"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,91 +15,92 @@ ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d528ee9b72b5b7476845c0051f67f8a6ed887d1c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 10bc23b5b5e0d0d278677ed4bf332787fc16b367
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast 移动威胁防御连接器与 Intune
 
 可根据 Check Point SandBlast Mobile 给出的风险评估，使用条件访问控制移动设备对公司资源的访问，Check Point SandBlast Mobile 是与 Microsoft Intune 集成的移动威胁防御解决方案。 基于从运行 Check Point SandBlast Mobile 应用的设备收集的遥测评估风险。
 
-可以基于通过 Intune 设备符合性策略启用的 Check Point SandBlast Mobile 风险评估配置条件访问策略，从而根据检测到的威胁允许或阻止不符合要求的设备访问公司资源。
+可以基于通过 Intune 设备符合性策略启用的 Check Point SandBlast Mobile 风险评估配置条件访问策略，从而根据检测到的威胁允许或阻止不符合设备访问公司资源。
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Intune 和 Check Point SandBlast Mobile 如何帮助你保护公司资源？
 
 适用于 Android 或 iOS 的 Check Point Sandblast Mobile 应用可捕获文件系统、网络堆栈，以及设备和应用程序遥测（如果有），然后将遥测数据发送到 Check Point Sandblast 云服务，评估设备的移动威胁风险。
 
-Intune 设备符合性策略包括基于 Check Point SandBlast 风险评估的 Check Point SandBlast Mobile 威胁防御规则。 启用此规则后，Intune 将评估设备是否符合已启用的策略。 如果发现设备不符合策略，将阻止对 Exchange Online 和 SharePoint Online 等公司资源的访问。 用户还可通过安装在设备上的 Check Point Sandblast Mobile 应用获取指导，以便解决问题并重新访问公司资源。
+Intune 设备符合性策略包括基于 Check Point SandBlast 风险评估的 Check Point SandBlast Mobile 威胁防御规则。 启用此规则后，Intune 将评估设备是否符合已启用的策略。 如果发现设备不符合，将阻止用户访问 Exchange Online 和 SharePoint Online 等公司资源。 用户还可通过安装在设备上的 Check Point Sandblast Mobile 应用获取指导，以便解决问题并重新访问公司资源。
 
-<!-- ## Sample scenarios
+<!-- ## Sample scenarios 
+closing syntax for comment above is missing. Please insert closing syntax at intended location. -->
 
-Here are some common scenarios:
+以下是一些常见方案：
 
-### Control access based on threats from malicious apps
+### <a name="control-access-based-on-threats-from-malicious-apps"></a>基于来自恶意应用的威胁来控制访问
 
-When malicious apps such as malware are detected on devices, you can block devices until the threat is resolved:
+在设备上检测到恶意应用（如恶意软件）时，可阻止设备，直到解除威胁：
 
--   Connecting to corporate e-mail
+-   连接到公司电子邮件
 
--   Syncing corporate files with the OneDrive for Work app
+-   使用 OneDrive for Work 应用同步企业文件
 
--   Accessing company apps
+-   访问公司应用
 
-**Block when malicious apps are detected:**
+**检测到恶意应用时对其进行阻止：**
 
-![Check Point MTD block when malicious apps are detected](./media/checkpoint-MTD-2.PNG)
+![Check Point MTD 阻止检测到的恶意应用](./media/checkpoint-MTD-2.PNG)
 
-**Access granted on remediation:**
+**修正后授予访问权限：**
 
-![Check Point MTD access granted](./media/checkpoint-MTD-3.PNG)
+![Check Point MTD 授予访问权限](./media/checkpoint-MTD-3.PNG)
 
-### Control access based on threat to network
+### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
 
-Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
+检测**中间人**等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
 
-**Block network access through Wi-Fi:**
+**阻止通过 Wi-Fi 访问网络：**
 
-![Check Point MTD block network access through Wi-Fi](./media/checkpoint-MTD-4.PNG)
+![Check Point MTD 阻止通过 Wi-Fi 访问网络](./media/checkpoint-MTD-4.PNG)
 
-**Access granted on remediation:**
+**修正后授予访问权限：**
 
-![Check Point MTD Wi-Fi access granted](./media/checkpoint-MTD-5.PNG)
+![Check Point MTD 授予 Wi-Fi 访问权限](./media/checkpoint-MTD-5.PNG)
 
-### Control access to SharePoint Online based on threat to network
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
 
-Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
+检测**中间人**等网络威胁，根据设备风险阻止公司文件的同步。
 
-**Block SharePoint Online when network threats are detected:**
+**检测到网络威胁时阻止 SharePoint Online：**
 
-![Check Point MTD block SharePoint Online access](./media/checkpoint-MTD-6.PNG)
+![Check Point MTD 阻止访问 SharePoint Online](./media/checkpoint-MTD-6.PNG)
 
-**Access granted on remediation:**
+**修正后授予访问权限：**
 
-![Check Point MTD SharePoint Online access granted](./media/checkpoint-MTD-7.PNG)
+![Check Point MTD 授予 SharePoint Online 访问权限](./media/checkpoint-MTD-7.PNG)
 
-## Supported platforms
+## <a name="supported-platforms"></a>受支持的平台
 
--   **Android 4.1 and later**
+-   **Android 4.1 及更高版本**
 
--   **iOS 8 and later**
+-   **iOS 8 及更高版本**
 
-## Pre-requisites
+## <a name="pre-requisites"></a>先决条件
 
 -   Azure Active Directory Premium
 
--   Microsoft Intune subscription
+-   Microsoft Intune 订阅
 
--   Check Point SandBlast Mobile Threat Defense subscription
-    -   See [CheckPoint SandBlast website](https://www.checkpoint.com/) for more information.
+-   Check Point SandBlast Mobile 威胁防御订阅
+    -   有关详细信息，请参阅 [CheckPoint SandBlast 网站 ](https://www.checkpoint.com/)。
 
-## Next steps
+## <a name="next-steps"></a>后续步骤
 
-- [Integrate CheckPoint SandBlast with Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+- [将 CheckPoint SandBlast 与 Intune 集成](checkpoint-sandblast-mobile-mtd-connector-integration.md)
 
-- [Set up CheckPoint SandBlast Mobile app](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [设置 CheckPoint SandBlast Mobile 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Create CheckPoint SandBlast Mobile device compliance policy](mtd-device-compliance-policy-create.md)
+- [创建 CheckPoint SandBlast Mobile 设备符合性策略](mtd-device-compliance-policy-create.md)
 
-- [Enable CheckPoint SandBlast Mobile MTD connector](mtd-connector-enable.md)
+- [启用 CheckPoint SandBlast Mobile MTD 连接器](mtd-connector-enable.md)

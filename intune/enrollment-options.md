@@ -1,6 +1,7 @@
 ---
-title: "Intune 的注册选项"
-description: 
+title: "由 Microsoft Intune 托管的设备的注册选项"
+titleSuffix: 
+description: "管理员可以为 Microsoft Intune 托管的设备设置的注册选项列表。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 2672ebec94387ad876443c975f083472c2613a11
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enrollment-options-for-intune"></a>Intune 的注册选项
+# <a name="enrollment-options-for-devices-managed-by-intune"></a>由 Intune 托管的设备的注册选项
 
 作为 Intune 管理员，可以配置设备注册来帮助用户并启用 Intune 功能。  Intune 包括以下注册选项：
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 01/25/2018
 
 可要求用户在注册设备时使用其他验证方法，例如电话、PIN 或生物特征数据。 了解[多重身份验证](multi-factor-authentication.md)的详细信息。
 
-## <a name="device-enrollment-manager"></a>设备注册管理器
+## <a name="device-enrollment-manager"></a>设备注册管理员
 可让用户成为设备注册管理员。  DEM 用户可使用单个用户帐户注册大量移动设备。 设备注册管理员 (DEM) 帐户最多可注册 1,000 台设备。 详细了解[设备注册管理员](device-enrollment-manager-enroll.md)。
 
 ## <a name="device-categories"></a>设备类别

@@ -1,31 +1,30 @@
 ---
-title: "Intune 设备符合性策略"
-titleSuffix: Azure portal
-description: "通过本主题了解 Microsoft Intune 中的设备符合性"
+title: "Microsoft Intune 设备符合性策略"
+titleSuffix: 
+description: "了解 Microsoft Intune 中的设备符合性"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Intune 设备符合性策略入门
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Microsoft Intune 设备符合性策略入门
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a>什么是 Intune 中的设备符合性？
-
-Intune 设备符合性策略定义设备必须遵从的规则和设置，以便将设备视为符合 Intune。
+Intune 设备符合性策略定义设备必须遵从的规则和设置，以便该设备被视为符合 Intune。
 
 这些规则包括以下内容：
 
@@ -43,7 +42,7 @@ Intune 设备符合性策略定义设备必须遵从的规则和设置，以便�
 
 也可使用设备符合性策略来监视设备的符合性状态。
 
-### <a name="device-compliance-requirements"></a>设备合规性要求
+## <a name="device-compliance-requirements"></a>设备合规性要求
 
 合规性要求本质上是规则，如针对某个合规性策略，根据实际所需来要求是否指定设备 PIN 或加密。
 

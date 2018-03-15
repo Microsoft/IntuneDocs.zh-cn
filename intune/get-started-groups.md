@@ -1,10 +1,10 @@
 ---
-title: "组入门"
-titleSuffix: Azure portal
+title: "在 Microsoft Intune 中创建组"
+titleSuffix: 
 description: "将用户归组，以便更轻松地管理其可访问的策略和应用。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63a35c04a14ebd79ac55f1dab2680d70008ee0ed
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-groups"></a>组入门
+# <a name="create-a-group-to-manage-your-users-and-data-access"></a>创建组来管理用户和数据访问
 
-使用组来管理用户，并控制员工对公司资源的访问。 这些资源可能为目录的一部分或 SaaS 应用或 SharePoint 站点等外部资源。
+使用组来管理用户并控制员工对公司资源的访问。 这些资源可能为目录的一部分或 SaaS 应用或 SharePoint 站点等外部资源。
 
 Microsoft Intune 使用 Azure Active Directory (Azure AD) 管理公司资源的访问权限。 此访问权限通过目录中的角色进行控制。 然后，Intune 为移动设备管理此访问权限，以允许该组成员访问资源。
 

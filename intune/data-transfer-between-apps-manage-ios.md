@@ -1,12 +1,12 @@
 ---
 title: "管理 iOS 应用之间的数据传输"
-titlesuffix: Azure portal
-description: "使用本主题了解如何使用  iOS Open-in 功能和移动应用管理策略来管理应用之间的数据传输。"
+titlesuffix: Microsoft Intune
+description: "了解如何在 Microsoft Intune 中使用移动应用管理策略来管理应用之间的数据传输。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d110a099b4957626d4368c9e63817674d6cfaa2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-manage-data-transfer-between-ios-apps"></a>如何管理 iOS 应用之间的数据传输
+# <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输
 ## <a name="manage-ios-apps"></a>管理 iOS 应用
 保护公司数据包括确保文件传输仅限于在你所管理的应用中进行。  可以通过以下方式管理 iOS 应用：
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/25/2018
 
 3.  使用以下应用配置设置来部署该应用：
 
-      **键** = IntuneMAMUPN，**值** = <username@company.com>
+      键 = IntuneMAMUPN，值 = <username@company.com>
 
       示例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -63,15 +63,15 @@ ms.lasthandoff: 01/25/2018
 
 2. 在“应用程序配置”部分中，输入以下设置：
 
-  **键** = IntuneMAMUPN，**值** = <username@company.com>
+  键 = IntuneMAMUPN，值 = <username@company.com>
 
   键/值对的确切语法可能会因第三方 MDM 提供程序而异。 下表显示了第三方 MDM 提供程序和应为键/值对输入的确切值的示例。
 
 |第三方 MDM 提供程序| Configuration 注册表项 | 值类型 | 配置值|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | String | {UserPrincipalName}|
-|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | String | ${userUPN} **或** ${userEmailAddress} |
+|Microsoft Intune| IntuneMAMUPN | 字符串 | {UserPrincipalName}|
+|VMware AirWatch| IntuneMAMUPN | 字符串 | {UserPrincipalName}|
+|MobileIron | IntuneMAMUPN | 字符串 | ${userUPN} **或** ${userEmailAddress} |
 
 
 ### <a name="example-2-end-user-experience"></a>示例 2：最终用户体验示例

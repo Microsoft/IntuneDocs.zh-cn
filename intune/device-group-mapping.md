@@ -1,7 +1,7 @@
 ---
-title: "如何在 Intune 中使用设备类别"
-titleSuffix: Azure portal
-description: "了解如何使用用户在 Intune 中注册其设备时可以选择的设备类别。"
+title: "如何在 Intune 中将设备分类为组"
+titleSuffix: Microsoft Intune
+description: "了解如何将设备分类为组以便更轻松地管理。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1200ce4ab5d24f8c9212c064961a167e0ec6c42
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="map-device-groups"></a>映射设备组
+# <a name="categorize-devices-into-groups-for-easier-management"></a>将设备分类为组以便更轻松地管理
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,11 +41,11 @@ ms.lasthandoff: 01/25/2018
 ## <a name="how-to-configure-device-categories"></a>如何配置设备类别
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>步骤 1 - 在 Azure 门户的“Intune”边栏选项卡中创建设备类别
-1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在“Intune”边栏选项卡上，选择“设备注册”。
 3. 在“设备注册”边栏选项卡中，选择“设备类别”。
 4. 在“设备类别”页上，选择“创建”以添加新类别。
-5. 在下一个边栏选项卡中，输入新类别的“名称”和可选“说明”。
+5. 在“创建设备类别”边栏选项卡中，输入新类别的“名称”和可选“说明”。
 6. 完成后，单击“创建”。 可以在类别列表中看到新类别。
 
 在步骤 2 中创建 Azure Active Directory 安全组时将使用设备类别名称。
@@ -61,27 +61,29 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>如何查看所管理设备的类别
 
-1.  在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
+1.  在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 
-2. 在 Azure 门户的“Intune”边栏选项卡中，选择“设备和组”。
+2. 在 Azure 门户的“Intune”边栏选项卡中，选择“设备”。
 
 3.  在“管理”下，单击“所有设备”。
 
-4.  在设备列表中，查看“类别”列。
+4.  在设备列表中，查看“设备类别”列。
 
-如果未显示“类别”列，则单击“列”，从列表中选择“类别”，然后单击“应用”。
+如果未显示“设备类别”列，则单击“列”，从列表中选择“设备类别”，然后单击“应用”。
 
 ### <a name="to-change-the-category-of-a-device"></a>更改设备的类别
 
-1. 在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备和组”。
-4. 在“设备和组”边栏选项卡上，选择“管理” > “所有设备”。
-5. 在设备列表中，选择所需设备，然后在“设备属性”边栏选项卡上选择“管理” > “属性”。
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在 Intune 边栏选项卡上，选择“设备”。
+4. 在“管理”部分下的“设备”边栏选项卡上，选择“所有设备”。
+5. 在设备列表中，选择所需设备，然后在“管理”部分下的“设备属性”边栏选项卡上，选择“属性”。
 6. 在下一个边栏选项卡上，可以将所选设备的“设备类别”更改为之前配置的任一类别名称。
 
 ## <a name="after-you-configure-device-groups"></a>配置设备组之后
 
 当 iOS 和 Android 设备的最终用户注册其设备时，他们必须从你配置的类别列表中选择一个类别。 选择某个类别并完成注册后，他们的设备将添加到与他们选择的类别相对应的 Intune 设备组或 Active Directory 安全组。
+
+Windows 上的最终用户应使用公司门户网站选择类别。
 
 无论采用何种平台，最终用户在注册设备后始终可以转到 portal.manage.microsoft.com。 让用户访问公司门户网站，并转到“我的设备”。 他们可以选择页面上列出的一个已注册设备，然后选择一个类别。
 

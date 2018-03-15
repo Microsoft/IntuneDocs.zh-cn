@@ -3,10 +3,10 @@ title: "通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策
 titlesuffix: Azure portal
 description: "通过 Intune 创建和部署 WIP 应用保护策略"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67d8a6eb4f284cf1922f9f79a8b767c124b66b06
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 02/09/2018
 
 必须先配置 MAM 提供程序，然后才可以创建 WIP 应用保护策略。 详细了解[如何通过 Intune 配置 MAM 提供程序](app-protection-policies-configure-windows-10.md)。
 
-此外，还需要具有以下各项：
+此外，还需要具有以下许可证和更新：
 
 -   [Azure AD 高级版](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)许可证。
 -   [Windows 创意者更新](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="to-add-a-wip-policy"></a>添加 WIP 策略
 
-设置组织中的 Intune 后，可以通过 [Azure 门户](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)创建特定于 WIP 的策略。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+设置组织中的 Intune 后，可以通过 [Azure 门户](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)创建特定于 WIP 的策略。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  转到“Intune 移动应用程序管理仪表板”，选择“所有设置”>“应用策略”。
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 02/09/2018
 
 1.  在“应用策略”边栏选项卡中，选择策略的名称，然后从“添加一个策略”边栏选项卡中选择“允许的应用”。 随即打开“允许的应用”边栏选项卡，并显示此应用保护策略的列表中已包含的全部应用。
 
-2.  在“允许的应用”边栏选项卡中，选择“添加应用”。 随即打开“添加应用”边栏选项卡，并显示属于该列表的所有应用。
+2.  在“允许的应用”边栏选项卡中，选择“添加应用”。 “添加应用”信息显示属于此列表的所有应用。
 
 3.  选择要让其访问公司数据的各个应用，然后选择“确定”。 “允许的应用”边栏选项卡会进行更新，并显示已选中的所有应用。
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 02/09/2018
 
 2.  在“允许的应用”边栏选项卡中，选择“添加应用”。
 
-3.  在“添加应用”边栏选项卡上的下拉列表中选择“应用商店应用”。 边栏选项卡改为显示用于添加“发布程序”和应用“名称”的框。
+3.  在“添加应用”边栏选项卡上的下拉列表中选择“应用商店应用”。 此信息改为显示用于添加“发布程序”和应用“名称”的框。
 
 4.  键入应用的名称及其发布程序的名称，然后选择“确定”。
 
@@ -137,7 +137,7 @@ WIP Learning 是一个报表，用于监视已启用 WIP 和 WIP 未知的应用
 WIP 将查找不正确的数据共享做法并阻止用户完成操作。 这包括在不受公司保护的所有应用中共享信息，以及在组织外部的其他人员和设备之间共享公司数据。
 
 #### <a name="allow-overrides"></a>允许覆盖
-WIP 查找不正确的数据共享操作，如果用户执行的操作被认为存在潜在危险，将对用户发出警告。 但是，用户可以通过此模式覆盖该策略并共享数据，并将操作记录到审核日志中。
+WIP 查找不正确的数据共享操作，在用户执行的操作被认为存在潜在危险时，对用户发出警告。 但是，用户可以通过此模式覆盖该策略并共享数据，并将操作记录到审核日志中。
 
 #### <a name="silent"></a>无提示
 WIP 以无提示的方式运行，并记录不正确的数据共享操作，但不阻止在“允许覆盖”模式下收到提示进行员工互动的任何操作。 仍然阻止不允许的操作，例如应用以不正确的方式尝试访问网络资源或受 WIP 保护的数据。
@@ -153,7 +153,7 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
     ![Learning 模式屏幕截图](./media/learning-mode-sc1.png)
 
-1.  选择“保存”。
+2.  选择“保存”。
 
 ### <a name="use-wip-learning"></a>使用 WIP Learning
 
@@ -165,10 +165,23 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
  
     WIP 学习日志报告中显示应用后，可以将这些应用添加到应用保护策略中。
 
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>允许 Windows Search 索引器搜索加密项
+允许或不允许项的索引。 此开关适用于 Windows Search 索引器，用于控制是否索引加密项，如受 Windows 信息保护 (WIP) 保护的文件。
+
+此应用保护策略选项位于 Windows 信息保护策略的“高级设置”中。 应用保护策略必须设置为 Windows 10 平台，应用策略“注册状态”必须设置为“已注册”。 
+
+启用策略后，即会索引受 WIP 保护的项，且相关元数据存储在未加密位置。 元数据包括文件路径和修改日期等。
+
+禁用策略后，不会索引受 WIP 保护的项，也不会在 Cortana 或文件资源管理器的结果中显示这些项。 如果设备上存在许多受 WIP 保护的媒体文件，可能还会对照片和 Groove 应用产生性能影响。
+
+## <a name="add-encrypted-file-extensions"></a>添加加密文件扩展名
+
+除了设置“允许 Windows Search 索引器搜索加密项”选项外，还可以指定文件扩展名列表。 当从网络位置列表中定义的企业边界内的服务器消息块 (SMB) 共享进行复制时，会对具有这些扩展名的文件进行加密。 如果未指定此策略，则应用现有自动加密行为。 如果已配置此策略，则仅对具有列表中的扩展名的文件进行加密。
+
 ## <a name="deploy-your-wip-app-protection-policy"></a>部署 WIP 应用保护策略
 
 > [!IMPORTANT]
-> 这适用于未注册设备的 WIP。
+> 此信息适用于未注册设备的 WIP。
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -178,4 +191,8 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
     由 Azure Active Directory 中的所有安全组组成的用户组列表在“添加用户组”边栏选项卡中打开。
 
-1.  选择要向其应用策略的组，然后单击“选择”部署此策略。
+2.  选择要向其应用策略的组，然后单击“选择”部署此策略。
+
+## <a name="next-steps"></a>后续步骤
+
+- 有关 Windows 信息保护的详细信息，请参阅 [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)（使用 Windows 信息保护 (WIP) 保护企业数据）。 

@@ -1,12 +1,11 @@
 ---
-title: "创建 Intune 设备配置的配置文件"
-titlesuffix: Azure portal
-description: "了解如何创建 Intune 设备配置的配置文件。"
+title: "在 Microsoft Intune 中创建设备配置文件 - Azure | Microsoft Docs"
+description: "在 Microsoft Intune 中添加或配置设备配置文件，包括选择平台类型以及在 Azure 门户内配置设置"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +14,38 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5afc6896883e6be67780c2314107c15633fd237a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建设备配置文件
+# <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+## <a name="create-the-profile"></a>创建配置文件
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，然后搜索“Microsoft Intune”。
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“配置设备”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-2. 在显示配置文件列表的边栏选项卡上，选择“创建配置文件”。
-3. 在“创建配置文件”边栏选项卡上，指定以下项目：
-    - **名称** - 输入新配置文件的描述性名称。
-    - **说明** - 输入配置文件的可选说明。
-    - **平台** - 选择要创建的配置文件的平台类型。
-    - **配置文件类型** - 选择要创建的配置文件的类型。 可用类型的列表会根据所选平台而有所不同。
-    - **设置** - 有关每种配置文件类型的设置的信息，请参阅以下主题：
+2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”和“创建配置文件”。
+
+3. 输入以下属性： 
+
+    - **名称**：输入新配置文件的描述性名称
+    - **说明**：可选，但建议输入。 输入配置文件的说明。
+    - **平台**：选择平台类型：  
+
+        - **Outlook Web Access (OWA)**
+        - **Android for Work**
+        - **iOS**
+        - **macOS**
+        - **Windows Phone 8.1**
+        - **Windows 8.1 及更高版本**
+        - **Windows 10 及更高版本**
+
+    - **配置文件类型**：选择要创建的类型。 列表取决于所选择的平台。
+    - **设置**：以下主题介绍了每种配置文件类型的设置：
+
         -  [设备功能设置](device-features-configure.md)
         -  [设备限制设置](device-restrictions-configure.md)
         -  [电子邮件设置](email-settings-configure.md)
@@ -48,12 +57,12 @@ ms.lasthandoff: 01/25/2018
         -  [教育设置](education-settings-configure.md)
         -  [自定义设置](custom-settings-configure.md)
 
-    ![创建设备配置文件](./media/create-device-profile.png)
-4. 完成配置设置后，在“创建配置文件”边栏选项卡上，选择“创建”。
+    ![输入设置以创建设备配置文件](./media/create-device-profile.png)
 
-系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
-如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
+4. 完成后，选择“创建”。 
+
+系统随即创建配置文件，并在列表中显示。 要向组分配此配置文件，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 
-### <a name="next-steps"></a>后续步骤
-有关如何分配设备配置文件的信息，请参阅[如何使用 Microsoft Intune 分配设备配置文件](device-profile-assign.md)。
+## <a name="next-steps"></a>后续步骤
+要分配设备配置文件，请参阅[如何使用 Microsoft Intune 分配设备配置文件](device-profile-assign.md)。

@@ -1,45 +1,43 @@
 ---
-title: "适用于 iOS 设备的 Intune 主屏幕布局设置"
+title: "适用于运行 iOS 的设备的 Microsoft Intune 主屏幕布局设置"
 titlesuffix: Azure portal
-description: "了解可在 iOS 设备上使用自定义主屏幕和停靠的设置。"
+description: "了解可用于在运行 iOS 的设备上自定义主屏幕和停靠的设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e4de4f4b1235136d7391c8d9efdc1405043e4da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="intune-home-screen-layout-settings-for-ios-devices"></a>适用于 iOS 设备的 Intune 主屏幕布局设置
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>适用于运行 iOS 的设备的 Microsoft Intune 主屏幕布局设置 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用这些设置，配置 iOS 设备停靠栏和主屏幕停上应用和文件夹的布局。
+使用这些设置，可配置运行 iOS 的设备的停靠和主屏幕上应用和文件夹的布局。
 
-分配了配置文件的 iOS 设备必须处于监督模式下并运行 iOS 9.3 或更高版本。
+如果向运行 iOS 的设备分配了配置文件，则该设备必须处于监督模式下，并运行 iOS 9.3 或更高版本。
 
-1. 在“设备功能”边栏选项卡上，选择“主屏幕布局（仅限监督的设备）”。
-2. 在“主屏幕布局（仅限监督的设备）”边栏选项卡上，选择是否想要配置“停靠”或“页面”布局。
+1. 在“设备配置”、“创建配置文件”、“设备功能”页上，选择“主屏幕布局(仅限监督的设备)”。
+2. 在“主屏幕布局(仅限监督的设备)”页上，选择是想要配置“停靠”还是“页面”布局。
 
 ## <a name="add-items-to-the-dock"></a>向停靠添加项目
 
-在“停靠”边栏选项卡上，可以向 iOS 屏幕的停靠添加最多 6 个项目或文件夹。 但是，许多设备支持的项目更少，例如，iPhone 设备最多支持 4 个项目。 在这种情况下，在设备上仅显示配置的前四个项目。
+在“停靠”页，可以向 iOS 屏幕的停靠添加最多 6 个项或文件夹。 但是，许多设备支持的项目更少，例如，iPhone 设备最多支持 4 个项目。 在这种情况下，在设备上仅显示配置的前四个项目。
 
 1. 选择“添加”向停靠添加项目。
-2. 在“添加行”边栏选项卡上，选择想要添加“应用”还是“文件夹”。
+2. 在“添加行”页，选择想要添加“应用”还是“文件夹”。
 3. 使用本主题中的信息，配置要显示在停靠面板上的应用和文件夹。
-4. 继续添加项目。 完成后，单击每个边栏选项卡上的“确认”，直到返回到“创建配置文件”边栏选项卡。 选择“创建”。
+4. 继续添加项目。 完成后，单击每页上的“确定”，直到返回到“创建配置文件”页。 选择“创建”。
 
 >[!TIP]
 > 可以拖放任何主屏幕和页面列表中的项，以对其重新排序。 
@@ -48,19 +46,19 @@ ms.lasthandoff: 01/25/2018
 
 在此示例中，你将停靠屏幕配置为仅显示 Safari、邮件和股票应用。 在下图中，选中了邮件应用，以说明其属性：
 
-![示例 iOS 停靠设置](http://i.imgur.com/FfFiUcP.png)
+![示例 iOS 停靠设置](./media/FfFiUcP.png)
 
 向 iPhone 分配策略时，结果是类似于此屏幕截图的停靠：
 
-![iPhone 上的示例 iOS 停靠布局](http://i.imgur.com/bAgCe8F.png)
+![iPhone 上的示例 iOS 停靠布局](./media/bAgCe8F.png)
 
 ## <a name="add-home-screen-pages"></a>添加主屏幕页面
 
 添加想要在主屏幕上显示的页面，以及想要在每个页面上显示的应用。 添加到页面的应用按从左到右的方式，以列表中指定的顺序排列。 如果添加了超过页面能够容纳的应用，则该应用将被移动到后续页面。
 
 
-1. 在“页面”边栏选项卡上，选择“添加”。
-2. 在“添加行”边栏选项卡上，输入“页面名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
+1. 在“页面”页，选择“添加”。
+2. 在“添加行”页，输入“页面名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 3. 选择“添加”，然后选择是否想要将“应用”或“文件夹”添加到页面。
 4. 使用本主题中的信息，配置要显示在页面上的应用和文件夹。
 
@@ -68,11 +66,11 @@ ms.lasthandoff: 01/25/2018
 
 在此示例中，配置了名为“Contoso”的新页面。 该页面仅显示查找朋友和设置应用。 在下图中，选中了设置应用，以说明其属性：
 
-![iOS 主屏幕设置示例](http://i.imgur.com/Jc2OxyX.png)
+![iOS 主屏幕设置示例](./media/Jc2OxyX.png)
 
 向 iPhone 分配策略时，结果是类似于此屏幕截图的页面：
 
-![使用修改后的主屏幕的 iOS 设备](http://i.imgur.com/Bd37PHa.png)
+![使用修改后的主屏幕的 iOS 设备](./media/Bd37PHa.png)
 
 ## <a name="how-to-add-an-app-to-the-list"></a>如何将应用添加到列表
 
@@ -87,7 +85,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 输入**文件夹名称**。 该名称将显示在用户的设备上。
 2. 选择“添加”以在文件夹中创建一个页面。 可以添加最多 20 页。
-3. 在“添加行”边栏选项卡上，输入页面的名称。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
+3. 在“添加行”页，输入页面名称。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 3. 输入“应用名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 2. 输入想要显示的应用的“应用捆绑 ID”。 请参阅“如何将应用添加到列表”的相关帮助。
 3. 选择“添加”。 可以添加最多 60 项。
@@ -123,7 +121,7 @@ ms.lasthandoff: 01/25/2018
 |消息|com.apple.MobileSMS|
 |音乐|com.apple.Music|
 |新闻|com.apple.news|
-|附註|com.apple.mobilenotes|
+|注意|com.apple.mobilenotes|
 |数字|com.apple.Numbers|
 |页面|com.apple.Pages|
 |Photo Booth|com.apple.Photo-Booth|

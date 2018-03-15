@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Intune App SDK Xamarin 组件"
-description: 
+description: "使用 Intune App SDK Xamarin 组件，可在使用 Xamarin 生成的 iOS 和 Android 应用中启用 Intune 应用保护策略。"
 keywords: "sdk、Xamarin、intune"
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 02/08/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,16 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df90f3e011442e4e383c18d0309416d6549c330c
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9fa0d471f91eeeebd0058417aa437e5469f48e09
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 组件
 
 > [!NOTE]
 > 你可能希望首先阅读 [ Intune App SDK 入门指南](app-sdk-get-started.md)一文，其中介绍了如何为每个受支持的平台上的集成做准备。
-
-
 
 ## <a name="overview"></a>概述
 [Intune App SDK Xamarin 组件](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)允许在使用 Xamarin 生成的 iOS 和 Android 应用中启用 [Intune 应用保护策略](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 该组件使开发人员可以轻松将 Intune 应用保护功能内置到基于 Xamarin 的应用中。

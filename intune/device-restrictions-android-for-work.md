@@ -1,30 +1,34 @@
 ---
-title: "适用于 Android for Work 的 Intune 设备限制设置"
-titlesuffix: Azure portal
-description: "了解可用来控制 Android for Work 设备上的设备设置和功能的 Intune 设置。"
+title: "适用于 Android for Work 的 Microsoft Intune 设备限制设置"
+titlesuffix: 
+description: "了解可用于在运行 Android for Work 的设备上控制设备设置和功能的 Intune 设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android for Work 设备限制设置
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Microsoft Intune Android for Work 设备限制设置
+
+本文介绍了可为运行 Android for Work 的设备配置的所有 Microsoft Intune 设备限制设置。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>工作配置文件设置
+
+### <a name="general-settings"></a>常规设置
+
 -   **在工作和个人配置文件之间进行复制和粘贴** - 控制工作和个人应用之间的复制和粘贴。 选择“阻止”以启用阻止。 选择“未配置”以禁用阻止。
 - **工作和个人配置文件之间的数据共享** - 使用此设置控制工作配置文件中的应用是否可以将数据与个人配置文件中的应用共享。 此设置将控制应用程序中的共享操作（例如，Chrome 浏览器应用中的“共享...” 选项），并且不适用于复制/粘贴剪贴板行为。 与[应用保护策略设置](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)不同，设备限制设置通过 Intune 门户进行管理，并使用 Android for Work 工作配置文件分区来隔离托管的应用。 选择：
     - 默认共享限制 - 此设置是设备的默认共享行为，因运行的 Android 版本而异。 默认情况下，允许从个人配置文件到工作配置文件的共享。 此外，默认情况下，已阻止从工作配置文件到个人配置文件的共享。 此设置可防止工作配置文件的数据共享到个人配置文件。 在运行 6.0 及更高版本的设备上，Google 不提供阻止数据从个人配置文件共享到工作配置文件的方法。   
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **自动拒绝**
 
     通过为单个应用定义应用配置策略，可以进一步为具体应用定义权限授予状态（在“移动应用” > “应用配置策略”下）。
+
+- **添加和删除帐户**
+
+   防止最终用户手动添加或删除工作配置文件中的帐户。
+
+   例如，将 Gmail 应用部署到 Android for Work 配置文件时，可以防止最终用户添加或删除此工作配置文件中的帐户。
 
 ### <a name="work-profile-password"></a>工作配置文件密码
 - **需要工作配置文件密码** -（启用了工作配置文件的 Android 7.0 和更高版本）定义只适用工作配置文件中应用的密码策略。 默认情况下，最终用户可以选择使用两个单独定义的 PIN，还可以选择将它们合并为二者中较强大的一方。
@@ -87,4 +97,4 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>后续步骤
 
-使用[如何配置设备限制设置](device-restrictions-configure.md)主题中的信息保存配置文件，并将其分配给用户和设备。
+使用[如何配置设备限制设置](device-restrictions-configure.md)中的信息保存配置文件，并将其分配给用户和设备。

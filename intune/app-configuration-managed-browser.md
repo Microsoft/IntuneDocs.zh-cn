@@ -1,7 +1,7 @@
 ---
 title: "使用 Managed Browser 应用管理 Web 访问"
-titlesuffix: Azure portal
-description: "部署 Managed Browser 应用程序，以限制 Web 浏览和到其他应用的 Web 数据传输。"
+titlesuffix: Microsoft Intune
+description: "部署 Managed Browser 应用程序，以限制 Web 浏览和将 Web 数据传输到其他应用。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3d902ada21c2cf864c3e21ef02b886d16162853c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -63,17 +63,17 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 
 ## <a name="create-a-managed-browser-app-configuration"></a>创建 Managed Browser 应用配置
 
-1.  登录到 Azure 门户中。
-2.  选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3.  在管理列表中的“移动应用”边栏选项卡上，选择“应用配置策略”。
 4.  在“应用配置策略”边栏选项卡上，选择“添加”。
-5.  在“添加应用配置”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”。
+5.  在“添加配置策略”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”。
 6.  对于“设备注册”类型，选择“托管应用”。
 7.  选择“选择所需应用”，然后在“目标应用”边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”。
-8.  选择“确定”，返回“添加应用配置”边栏选项卡。
+8.  选择“确定”，返回“添加配置策略”边栏选项卡。
 9.  选择“配置设置”。 在“配置”边栏选项卡上，定义键值对来为 Managed Browser 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
 10. 完成后，选择“确定”。
-11. 在“添加应用配置”边栏选项卡上，选择“创建”。
+11. 在“添加配置策略”边栏选项卡上，选择“添加”。
 12. 创建新配置后，其显示在“应用配置”边栏选项卡上。
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 
 将这些设置分配到 Azure AD 用户组。 如果用户安装了 Managed Browser 应用，则应用将按指定的设置进行管理。
 
-1. 在 Intune 移动应用程序管理仪表板的“设置”边栏选项卡上，选择“应用配置”。
+1. 在 Intune 移动应用程序管理仪表板的“移动应用”边栏选项卡上，选择“应用配置策略”。
 2. 在应用配置列表中，选择一个想要分配的配置。
-3. 在下一个边栏选项卡上，选择“用户组”。
-4. 在“用户组”边栏选项卡上，选择想要将应用配置分配到的 Azure AD 组，然后选择“确定”。
+3. 在下一个边栏选项卡上，选择“分配”。
+4. 在“分配”边栏选项卡上，选择想要将应用配置分配到的 Azure AD 组，然后选择“确定”。
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>如何为 Managed Browser 配置应用程序代理设置
@@ -96,7 +96,7 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 - 用户下载并登录到 Microsoft Outlook 应用。 将自动应用 Intune 应用保护策略。 它们对保存的数据进行加密，并阻止用户将公司文件传输到设备上的非托管应用或位置。 当用户接下来点击 Outlook 中 intranet 站点的链接时，可以指定在 Managed Browser 应用中而不是在另一个浏览器中打开链接。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问该网站且 Outlook 中的链接也按预期工作。
 - 远程用户打开 Managed Browser 应用程序，并使用内部 URL 导航到 intranet 站点。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问。
 
-### <a name="before-you-start"></a>准备工作
+### <a name="before-you-start"></a>开始之前
 
 - 通过 Azure AD 应用程序代理设置内部应用程序。
     - 要配置应用程序代理和发布应用程序，请参阅[设置文档]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
@@ -148,7 +148,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |||
 |-|-|
 |Key|值|
-|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>示例：<br><br>URL1&#124;URL2&#124;URL3<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>URL1&#124;URL2&#124;URL3<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >不要同时指定这两个键。 如果两个键同时针对同一个用户，则使用允许键，因为它是限制性最强的选项。

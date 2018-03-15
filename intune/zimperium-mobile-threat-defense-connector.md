@@ -3,8 +3,8 @@ title: "Zimperium MTD 连接器与 Intune"
 titleSuffix: Intune on Azure
 description: "Zimperium 连接器与 Intune 集成"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f26cf20b4e1168fbced1df88886343f41824158
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: ec93d2821150a67faa3c8b3c34e040e62ee43a3e
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium 移动威胁防御连接器与 Intune
 
@@ -93,7 +93,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 -   Zimperium 移动威胁防御订阅
 
-    -   请访问 [Zimperium 网站](https://www.zimperium.com/zips-mobile-ips)以了解详细信息。
+    -   有关详细信息，请参阅 [Zimperium 网站](https://www.zimperium.com/zips-mobile-ips)。
 
 ## <a name="next-steps"></a>后续步骤
 

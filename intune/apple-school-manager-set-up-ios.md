@@ -1,7 +1,7 @@
 ---
 title: "为 iOS 设备设置 Apple School Manager 计划注册"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune 为公司拥有的 iOS 设备设置 Apple School Manager 计划注册"
+titlesuffix: Microsoft Intune
+description: "了解如何使用 Intune 为公司拥有的 iOS 设备设置 Apple School Manager 计划注册。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,13 +15,13 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87e4c16fbb87ee83a01fe44a46c55c6243c8fc8a
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 进行 iOS 设备注册
+# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 设置 iOS 设备注册
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,17 +32,17 @@ ms.lasthandoff: 02/09/2018
 >
 >如果“设备注册”页如下图所示，则帐户尚未更新到新的用户界面，可以使用此帮助页面。
 >
->![旧用户界面](./media/appleenroll-oldui.png)
+>![旧的 Intune 用户界面](./media/appleenroll-oldui.png)
 >
 >如果“设备注册”页如下图所示，则用户界面已更新。  请转到[此帮助页面](apple-school-manager-set-up-ios-newui.md)。
 >
->![新用户界面](./media/appleenroll-newui.png)
+>![新的 Intune 用户界面](./media/appleenroll-newui.png)
 
-本主题旨在帮助你为通过 [Apple School Manager](https://school.apple.com/) 计划购买的设备启用 iOS 设备注册。 通过结合使用 Intune 与 Apple School Manager，可在不触碰设备的情况下注册大量 iOS 设备。 学生或教师打开设备时，“设置助理”使用预先配置的设置运行，并且会注册设备以便进行管理。
+本主题有助于为通过 [Apple School Manager](https://school.apple.com/) 计划购买的设备设置 iOS 设备注册。 通过结合使用 Intune 与 Apple School Manager，可在不触碰设备的情况下注册大量 iOS 设备。 学生或教师打开设备时，“设置助理”使用预先配置的设置运行，并且会注册设备以便进行管理。
 
 若要启用 Apple School Manager 注册，请使用 Intune 和 Apple School Manager 门户。 需要序列号列表或购买订单编号，这样才能将设备分配到 Intune 进行管理。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
-另外，Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enrollment-program-enroll-ios.md)或[设备注册管理器](device-enrollment-manager-enroll.md)一起使用。
+另外，Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enrollment-program-enroll-ios.md)或[设备注册管理员](device-enrollment-manager-enroll.md)一起使用。
 
 **必备条件**
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -61,7 +61,7 @@ ms.lasthandoff: 02/09/2018
 **步骤 1.下载创建 Apple 令牌所需的 Intune 公钥证书。**<br>
 1. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”，然后选择“注册计划令牌”。
 
-  ![Apple 证书工作区中用于下载公钥的“注册计划令牌”窗格的屏幕截图。](./media/enrollment-program-token-download.png)
+  ![Apple 证书工作区中用于下载公钥的“注册计划令牌”窗格](./media/enrollment-program-token-download.png)
 
 2. 在“注册计划令牌”边栏选项卡中，选择“下载公钥”，下载加密密钥 (.pem) 文件，并将其保存在本地。 .pem 文件用于从 Apple School Manager 门户请求信任关系证书。
 
@@ -69,19 +69,19 @@ ms.lasthandoff: 02/09/2018
 1. 选择“通过 Apple School Manager 创建令牌”，然后使用公司 Apple ID 登录。 可使用此 Apple ID 续订 Apple School Manager 令牌。
 2.  在 [Apple School Manager 门户](https://school.apple.com)中，转到“MDM 服务器”，然后选择“添加 MDM 服务器”（右上方）。
 3.  输入“MDM 服务器名称”。 服务器名称供参考，用于识别移动设备管理 (MDM) 服务器。 它不是 Microsoft Intune 服务器的名称或 URL。
-   ![Apple School Manager 门户的屏幕截图，选中了“序列号”选项](./media/asm-server-assignment.png)
+   ![选中“序列号”选项的 Apple School Manager 门户](./media/asm-server-assignment.png)
 
 4.  在 Apple 门户中选择“上传文件...”，浏览到 .pem 文件，然后选择“保存 MDM 服务器”（右下方）。
 5.  选择“获取令牌”，然后将服务器令牌 (.p7m) 文件下载到计算机。
 6. 转到“设备分配”，并通过手动输入“序列号”、“订单编号”来“选择设备”，或“上传 CSV 文件”。
-     ![Apple School Manager 门户的屏幕截图，选中了“序列号”选项](./media/asm-device-assignment.png)
+     ![选中“序列号”选项的 Apple School Manager 门户](./media/asm-device-assignment.png)
 7.  选择“分配到服务器”操作，然后选择自己创建的“MDM 服务器”。
 8. 指定“选择设备”的方式，然后提供设备信息和详细信息。
 9. 选择“分配到服务器”，然后选择为 Microsoft Intune 指定的 &lt;ServerName&gt;，然后选择“确定”。
 
 **步骤 3：输入用于创建 Apple School Manager 令牌的 Apple ID。**<br>该 ID 应用于续订 Apple School Manager 令牌，应保存以供未来参考。
 
-![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/enrollment-program-token-apple-id.png)
+![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌](./media/enrollment-program-token-apple-id.png)
 
 **步骤 4：查找并上传你的令牌。**<br>
 转到证书 (.p7m) 文件，选择“打开”，然后选择“上传”。 Intune 会自动从 Apple 同步 Apple School Manager 设备。
@@ -103,7 +103,7 @@ ms.lasthandoff: 02/09/2018
 
 6. 选择“设备管理设置”。 这些项会在激活时进行设置，并且需要执行恢复出厂设置才能更改。 配置以下配置文件设置，然后选择“保存”：
 
-  ![选择管理模式的屏幕截图。 设备包含以下设置：受监督、注册锁定、允许配对设置为全部拒绝。 新注册计划配置文件的 Apple Configurator 证书将变灰。](./media/enrollment-program-profile-mode.png)
+  ![选择管理模式](./media/enrollment-program-profile-mode.png)
 
     - **受到监管** - 默认启用更多的管理选项并已禁用激活锁的管理模式。 如果将此复选框保留为空，则管理功能将受限。
 
@@ -151,10 +151,10 @@ ms.lasthandoff: 02/09/2018
 
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划设备” > “Sync”。进度栏显示再次请求同步之前必须等待的时长。
 
-  ![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/enrollment-program-device-sync.png)
+  ![选中“注册计划设备”节点和选中“同步”链接](./media/enrollment-program-device-sync.png)
 2. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
 
-  ![选中“请求同步”链接的“同步”边栏选项卡屏幕截图。](./media/enrollment-program-device-request-sync.png)
+  ![选中“请求同步”链接的“同步”边栏选项卡](./media/enrollment-program-device-request-sync.png)
 
   为了遵从 Apple 有关可接受流量的条款，Intune 规定了以下限制：
    -    每七天只能运行一次完全同步。 无论之前是否同步了序列号，在完全同步时，Intune 都将刷新 Apple 分配给 Intune 的每个序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
@@ -169,7 +169,7 @@ ms.lasthandoff: 02/09/2018
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册”，然后选择“注册计划配置文件”。
 2. 在“注册计划配置文件”列表中，选择要分配给设备的配置文件，然后选择“设备分配”
 
- ![“设备分配”的屏幕截图，其中选中了“分配”。](./media/enrollment-program-device-assign.png)
+ ![选中“分配”的“设备分配”。](./media/enrollment-program-device-assign.png)
 
 3. 选择“分配”，然后选择要向其分配此配置文件的 Apple School Manager 设备。 可以进行筛选来查看可用设备：
   - **未分配**
@@ -177,7 +177,7 @@ ms.lasthandoff: 02/09/2018
   - &lt;配置文件名称&gt;
 4. 选择要分配的设备。 列上方的复选框最多可选择 1000 个已列出的设备。 单击“分配”。 若要注册 1000 个以上的设备，请重复分配步骤，直至已向所有设备分配了注册配置文件。
 
-  ![用于在 Intune 中分配注册计划配置文件的“分配”按钮的屏幕截图](media/dep-profile-assignment.png)
+  ![用于在 Intune 中分配注册计划配置文件的“分配”按钮](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices-to-users"></a>将设备分配给用户
 

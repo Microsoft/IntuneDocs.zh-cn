@@ -1,9 +1,9 @@
 ---
 title: "基于应用的条件性访问与 Intune 的协作"
-description: "了解基于应用的条件性访问如何与 Intune 协作的概念。"
+description: "了解基于应用的条件性访问如何与 Intune 协作。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的条件性访问与 Intune 的协作
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 01/25/2018
 > [!NOTE]
 > 以下流程图结构可用于其他受管理的应用。
 
-![基于应用的条件性访问与 Intune 的协作流程图](./media/ca-intune-common-ways-3.png)
+![流程图中所示的基于应用的条件性访问过程](./media/ca-intune-common-ways-3.png)
 
 1.  用户尝试从 Outlook 应用对 Azure AD 进行身份验证。
 

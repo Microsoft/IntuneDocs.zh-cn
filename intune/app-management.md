@@ -1,12 +1,12 @@
 ---
-title: "什么是应用管理"
-titlesuffix: Azure portal
-description: "通过本主题了解使用 Microsoft Intune 进行应用管理的基础知识"
+title: "什么是 Microsoft Intune 中的应用管理"
+titlesuffix: 
+description: "了解使用 Microsoft Intune 进行应用管理的基础知识。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-作为 IT 管理员，需要负责确保最终用户有权访问完成其工作所需的应用。 这个任务很有挑战性，因为：
+Microsoft Intune 允许 IT 管理员管理公司员工使用的移动应用。 除了此功能外，还可管理设备和保护数据。 作为此功能的一部分，优先任务之一是确保最终用户有权访问其工作所需的应用。 这个任务很有挑战性，因为：
 - 有众多的设备平台和应用类型。
 - 可能需要管理公司设备和用户自有设备上的应用。
 - 必须确保网络和数据一直安全。
 
 此外，还建议分配和管理未向 Intune 注册的设备上的应用。
 
-Intune 提供各种功能，用于在所需的设备上获取需要的应用。
+Intune 提供各种功能，用于在所需的设备上获取需要的应用。 下表提供了应用管理功能的摘要。 可以通过下面的表格开始了解 Azure 门户中的 Microsoft Intune。 
 
 ## <a name="app-management-capabilities-by-platform"></a>按平台分类的应用管理功能
 
@@ -64,8 +64,8 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。
 
 可在“移动应用”工作负荷中找到大部分与应用相关的内容，并可通过以下步骤进行访问：
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
 
     ![移动应用工作负荷](./media/apps-workload.png)
@@ -115,3 +115,7 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。
 ### <a name="help-and-support"></a>帮助和支持
 - **帮助和支持** - 排查问题、请求获取支持或查看 Intune 状态。
     - [排查问题](help-desk-operators.md)
+    
+## <a name="next-steps"></a>后续步骤
+
+- [如何向 Microsoft Intune 添加应用](apps-add.md)

@@ -1,12 +1,12 @@
 ---
 title: "Android 应用保护策略设置"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "本主题介绍适用于 Android 设备的应用保护策略设置。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10c09b4669371fbb61ad4d30f44fcaf5e2db3482
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Android 应用保护策略设置
-可以在 Azure 门户的“设置”边栏选项卡上为应用保护策略[配置](app-protection-policies.md)本主题所述的策略设置。
+本主题介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
 有两种类别的策略设置：数据重定位设置和访问设置。 在本主题中，术语*策略托管应用*指使用应用保护策略配置的应用。
 
 ##  <a name="data-relocation-settings"></a>数据重定位设置
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/19/2018
 | Setting | 如何使用 | 默认值 |
 |------|------|------|
 | **阻止 Android 备份** | 选择“是”，阻止此应用将工作或学校数据备份到 [Android 备份服务](https://developer.android.com/google/backup/index.html)。选择“否”，允许此应用备份工作或学校数据。| 是 |
-| **允许应用向其他应用传送数据** | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> <p>有一些豁免应用和服务，Intune 可能会允许向其传输数据。 有关应用和服务的完整列表，请参阅[数据传输豁免](#Data-transfer-exemptions)。<p>**注意：**Intune 目前不支持 Android Instant Apps 功能。 Intune 将阻止进/出该应用的任何数据连接。  有关 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) 的详细信息，请参阅 Android 开发人员文档。</p>| 所有应用 |
+| **允许应用向其他应用传送数据** | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> <p>默认情况下，Intune 允许向一些豁免应用和服务传输数据。 此外，如果需要允许将数据传输到不支持 Intune APP 的应用，则可以创建自己的豁免项目。 有关详细信息，请参阅[数据传输豁免](#Data-transfer-exemptions)。<p>**注意：**Intune 目前不支持 Android Instant Apps 功能。 Intune 将阻止进/出该应用的任何数据连接。  有关 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) 的详细信息，请参阅 Android 开发人员文档。</p>| 所有应用 |
 | **允许应用从其他应用接收数据** | 指定哪些应用可将数据传输到此应用： <ul><li>**策略托管应用**：仅允许从其他策略托管应用传输。</li><li>**所有应用**：允许从任何应用传输数据。</li><li>**无**：不允许从任何应用传输数据，包括其他策略托管应用。 </li></ul> <p>有一些豁免应用和服务，Intune 可能会允许从其传输数据。 有关应用和服务的完整列表，请参阅[数据传输豁免](#Data-transfer-exemptions)。 | 所有应用 |
 | **阻止“另存为”** | 选择“是”，在此应用中禁用“另存为”选项。 如果你希望允许使用“另存为”，请选择“否”。 <p><br>**选择可保存公司数据的存储服务** <br>用户可以保存到所选的服务（OneDrive for Busines、SharePoint 和本地存储）中。 将阻止所有其他服务。</p> | 否 <br><br> 未选择任何项 |
 | **限制剪切、复制和粘贴到其他应用程序** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。 | 任何应用 |
@@ -73,7 +73,7 @@ ms.lasthandoff: 02/19/2018
   | com.android.providers.media | Android 媒体内容提供程序 | 媒体内容提供程序仅允许铃声选择操作。 |
   | com.google.android.gms;com.google.android.gsf | Google Play Services 包 | 这些包允许 Google Cloud Messaging 操作，例如推送通知。 |
 
-
+有关详细信息，请参阅[应用的数据传输策略例外情况](app-protection-policies-exception.md)。 
 
 ##  <a name="access-settings"></a>访问设置
 

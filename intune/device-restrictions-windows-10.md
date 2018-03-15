@@ -1,25 +1,26 @@
 ---
-title: "适用于 Windows 10 的 Intune 设备限制设置"
-titlesuffix: Azure portal
-description: "了解可用来控制 Windows 10 设备上的设备设置和功能的 Intune 设置。"
+title: "适用于 Windows 10 的 Microsoft Intune 设备限制设置"
+titlesuffix: 
+description: "了解可用来控制运行 Windows 10 的设备上的设备设置和功能的 Microsoft Intune 设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 及更高版本设备限制设置
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune Windows 10 及更高版本设备限制设置
+本文介绍可为运行 Windows 10 的设备配置的所有 Microsoft Intune 设备限制设置。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - 如果计算机已加入 Azure Active Directory 并启用自动注册，此策略设置不适用。 
    - 此策略设置不适用于运行 Windows 10 家庭版的计算机。
 - **手动安装根证书（仅限移动版）**- 阻止用户手动安装根证书和中间 CAP 证书。
-- **诊断数据提交** - 可能的值有：
-    - 否 - 不向 Microsoft 发送数据
-    - **基本** - 将有限的信息发送给 Microsoft
-    - 增强 - 将增强的诊断数据发送给 Microsoft
-    - **完全** - 发送与“增强”相同的数据，外加有关设备状态的其他数据
+
 - **相机** - 允许或阻止使用设备上的相机。
 - **OneDrive 文件同步** - 阻止设备将文件同步到 OneDrive。
 - **可移动储备** - 指定外部存储设备（如 SD 卡）是否可以与该设备结合使用。
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **设备发现** - 阻止设备被其他设备发现。
 - **任务切换器（仅限移动版）**- 阻止设备上的任务切换器。
 - **SIM 卡错误对话框（仅限移动版）**- 阻止在未检测到 SIM 卡时在设备上显示错误消息。
+- **墨迹工作区** - 阻止用户访问墨迹工作区。 如果未配置此设置，则启用墨迹工作区（功能处于开启状态），并且允许用户在锁定屏幕上使用它。
 - **自动重新部署** - 允许具有管理权限的用户在设备锁定屏幕上使用 CTRL+Win+R 删除所有用户数据和设置。 设备会自动进行重新配置并重新注册到管理。
 
 
@@ -75,6 +73,9 @@ ms.lasthandoff: 02/19/2018
 
 -   “输入个性化”- 不允许使用 Cortana、听写或 Microsoft 应用商店应用的基于云的语音服务。 如果允许这些服务，Microsoft 可能会收集语音数据以改进服务。
 -   **自动接受配对和隐私用户同意提示** – 允许 Windows 在运行应用时自动接受配对和隐私同意消息。
+- **发布用户活动**：将此设置为“阻止”以阻止任务切换程序中最近使用资源的共享体验和发现。
+- **仅限本地活动**：将此设置为“阻止”以仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。
+
 
 可以定义设备上的所有应用可以访问的信息。 可以使用“每应用隐私异常”对每个应用定义异常。
 
@@ -130,7 +131,7 @@ ms.lasthandoff: 02/19/2018
 ## <a name="locked-screen-experience"></a>锁定屏幕体验
 
 - **操作中心通知（仅限移动版）**- 允许设备锁定屏幕上显示操作中心通知（仅限 Windows 10 移动版）。
-- **锁定屏幕图片 URL（仅限桌面版）**- 指定将用作 Windows 锁定屏幕墙纸的图片（格式为 PNG、JPG 或 JPEG）的 URL。 用户无法更改此设置。
+- **锁定屏幕图片 URL（仅限桌面版）**- 指定将用作 Windows 锁定屏幕墙纸的 JPEG 格式图片的 URL。 用户无法更改此设置。
 -   **用户可配置屏幕超时（仅限移动版）**– 允许用户配置时间量 
 -   **锁定屏幕上的 Cortana（仅限桌面版）**– 当设备处于锁定屏幕时，不允许用户与 Cortana 交互（仅限 Windows 10 桌面版）。
 -   **锁定屏幕上的 Toast 通知** – 阻止设备锁定屏幕上显示警报消息。
@@ -180,6 +181,8 @@ ms.lasthandoff: 02/19/2018
 -   **默认搜索引擎** - 指定要使用的默认搜索引擎。 最终用户可以随时更改此值。
 -   **退出时清除浏览数据** – 在用户退出 Microsoft Edge 时清除历史记录和浏览数据。
 -   **实时磁贴数据收集** – 当用户从 Microsoft Edge 将站点固定到开始菜单时，阻止 Windows 从实时磁贴收集信息。
+-  **收藏夹列表** - 定义收藏夹文件的路径。 例如，http://contoso.com/favorites.html。
+-  **限制对收藏夹的更改** - 将此设置为“阻止”以防止用户添加、导入、排序或编辑收藏夹列表。 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 

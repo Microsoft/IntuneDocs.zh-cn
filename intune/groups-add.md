@@ -1,10 +1,10 @@
 ---
-title: "在 Intune 中设置注册限制"
-titlesuffix: Azure portal
-description: "按平台限制注册，并在 Intune 中设置设备注册限制。 \""
+title: "添加用于组织用户和设备的组"
+titlesuffix: Microsoft Intune
+description: "添加组，以便按地理位置、部门或硬件详情来组织用户和设备。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e55a96ee1bee5b1f25a4ddf3366f3e7dc94122a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 42e7e2c8d239b8150f67a699ba6fef156b3e1a7d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="add-groups-in-intune"></a>在 Intune 中添加组
+# <a name="add-groups-to-organize-users-and-devices"></a>添加用于组织用户和设备的组
 Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 Intune 管理员，可以设置适合组织需要的组。 创建组，以便按地理位置、部门或硬件特性来组织用户或设备。 使用组来管理大规模的任务。 例如，可设置用于大量用户的策略，或向一组设备部署应用。
 
 本主题说明如何添加要在 Intune 中使用的组。
@@ -34,7 +34,7 @@ Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 
 
 使用以下步骤来创建新组。
 1. 在 Azure 门户中，转到“组”，再选择“所有组”边栏选项卡中的“新建组”。
-  ![显示“新建组”已选择的 Azure 门户的屏幕截图](./media/groups-add-new.png)
+  ![选择了“新建组”的“用户和组”屏幕的屏幕截图](./media/groups-add-new.png)
 2. 指定此新组的“名称”和“说明”。 这些属性仅出现在管理门户中，并且不会向用户显示。
 
 3. 选择成员身份类型：
@@ -42,7 +42,7 @@ Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 
   - **动态用户**：创建使用动态查询定义的用户组。
   - **动态设备**：创建使用**动态查询**定义的设备组。
 
-  ![Intune 组属性的屏幕截图，其中包含“名称”、“描述”、“成员身份类型”、“启用 Office 功能”和“成员”](./media/groups-add-properties.png)
+  ![Intune 组属性的屏幕截图](./media/groups-add-properties.png)
 
   Azure AD 允许基于定义成员身份的规则创建动态组。 了解如何[创建基于属性的动态组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
 

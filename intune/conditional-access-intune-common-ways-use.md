@@ -3,10 +3,10 @@ title: "使用 Intune 的条件访问"
 titlesuffix: Azure portal
 description: "通过 Intune 使用条件性访问的常见方式"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件性访问的常见方式
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-你需要在组织中配置 Intune 移动设备符合性策略和 Intune 移动应用程序管理 (MAM) 功能，以驱动条件性访问符合性。 让我们讨论一下通过 Intune 使用条件性访问的常见方式。
+使用 Intune 的条件访问有两种主要类型。 第一种类型是基于设备的条件访问。 第二种类型是基于应用的条件访问。 需要配置相关的符合性策略，以驱动组织中的条件访问符合性。
+
+下面的信息有助于了解如何使用 Intune 移动设备符合性功能和 Intune 移动应用程序管理 (MAM) 功能。 
 
 ## <a name="device-based-conditional-access"></a>基于设备的条件性访问
 
@@ -32,11 +34,11 @@ ms.lasthandoff: 01/30/2018
 
 Intune 提供了设备符合性策略功能，可评估设备的符合性状态。 在用户尝试访问公司资源时，符合性状态会报告给 Azure Active Directory，用于强制执行在 Azure Active Directory 中创建的条件性访问策略。
 
-从[新的 Azure 门户](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)开始，通过 Azure 门户为 Exchange online 和其他 Office 365 产品配置基于设备的条件性访问策略。
+通过 [Azure 门户](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)为 Exchange online 和其他 Office 365 产品配置基于设备的条件访问策略。
 
 -   了解有关 [Azure Active Directory 中条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)的详细信息。
 
--   了解有关[什么是 Intune 设备符合性](device-compliance.md)的详细信息。
+-   了解有关 [Intune 设备符合性](device-compliance.md)的详细信息。
 
 -   了解有关[通过 Intune 使用条件性访问保护电子邮件、Office 365 和其他服务](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)的详细信息。
 

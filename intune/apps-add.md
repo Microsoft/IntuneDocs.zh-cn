@@ -1,12 +1,12 @@
 ---
 title: "如何将应用添加到 Microsoft Intune"
-titlesuffix: Azure portal
-description: "这些过程可助你将应用添加到 Intune，做好分配到用户和设备的准备。 \""
+titlesuffix: 
+description: "了解如何将应用添加到 Microsoft Intune，以便可将应用分配给用户和设备。 Intune 支持多种不同的应用类型。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 91762eafbba5f96ce04f3ffd4d83f63434a3ac74
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>如何向 Microsoft Intune 添加应用
 
@@ -121,8 +121,8 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 应用类别可用于对应用进行排序，让用户在公司门户中更容易查找应用。 可以向应用分配一个或多个类别（例如，“开发者应用”或“通信应用”）。
 向 Intune 添加应用时，可以视需要选择所需的类别。 请参阅平台专属主题，了解如何添加应用并分配类别。 若要创建和编辑你自己的类别，请按以下过程操作：
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
 4. 在“移动应用”工作负荷中，选择“设置” > “应用类别”。
 5. “应用类别”边栏选项卡上显示当前类别列表。 选择执行下列操作之一：
