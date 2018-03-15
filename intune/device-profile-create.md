@@ -14,11 +14,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4e1febb5f12de038d2ddd543be883f71ef79005
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/05/2018
 
 2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”和“创建配置文件”。
 
-3. 输入以下属性： 
+3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称
     - **说明**：可选，但建议输入。 输入配置文件的说明。
@@ -59,7 +59,7 @@ ms.lasthandoff: 03/05/2018
 
     ![输入设置以创建设备配置文件](./media/create-device-profile.png)
 
-4. 完成后，选择“创建”。 
+4. 完成后，选择“创建”。
 
 系统随即创建配置文件，并在列表中显示。 要向组分配此配置文件，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 

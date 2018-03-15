@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd92e787fd3c1abaa8b20ce1d75141b46ab17934
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -37,14 +37,14 @@ ms.lasthandoff: 03/05/2018
 如果你要查找 MAM 支持应用的列表，请参阅 [MAM 应用列表](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 
 ##  <a name="create-an-app-protection-policy"></a>创建应用保护策略
-1.  在“移动应用”工作负荷中，从“管理”部分选择“应用保护政策”。 此选项会打开“应用保护策略”详细信息，可在此创建新策略和编辑现有策略。 
-2. 选择**添加策略**。 
+1.  在“移动应用”工作负荷中，从“管理”部分选择“应用保护政策”。 此选项会打开“应用保护策略”详细信息，可在此创建新策略和编辑现有策略。
+2. 选择**添加策略**。
 
   ![“添加策略”边栏选项卡的屏幕截图](./media/app-protection-add-policy.png)
 
 3.  为策略键入名称、添加简要说明并为策略选择平台类型。 如有需要，可以为每个平台创建多个策略。
 
-4.  选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表。 从该列表中选择希望与正创建的策略关联的一个或多个应用。 
+4.  选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表。 从该列表中选择希望与正创建的策略关联的一个或多个应用。
 5. 选中应用后，选择“选择”以保存选择。
 
     > [!IMPORTANT]
@@ -59,7 +59,7 @@ ms.lasthandoff: 03/05/2018
     > 仅在工作环境中使用应用时，才强制执行这些策略设置。 最终用户使用应用执行个人任务时，不受这些策略的影响。
 
 7.  选择“确定”保存此配置。 现将返回“添加策略”窗格。 选择“创建”以创建策略并保存设置。
-8. 选择“确定”保存此配置。 现将返回“添加策略”边栏选项卡。 
+8. 选择“确定”保存此配置。 现将返回“添加策略”边栏选项卡。
 9. 选择“创建”以创建策略并保存设置。
 
 按上述流程创建策略后，它未部署到任何用户。 若要部署策略，请参阅[将策略部署到用户](app-protection-policies.md#deploy-a-policy-to-users)。
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/05/2018
    ![“分配”窗格的屏幕截图，其中突出显示“选择要包括的组”菜单选项](./media/app-protection-policy-add-users.png)
 
 2.  用户组列表会显示在“添加用户组”窗格中。 此列表显示“Azure Active Directory”中的所有安全组。 可选择希望将此策略应用于的用户组，然后选择“选择”。 选择“选择”会将策略部署到用户。
-  
+
     ![显示 Azure Active Directory 用户列表的“添加用户组”窗格的屏幕截图](./media/azure-ad-user-group-list.png)
 
 现已创建策略并将其部署到用户。
