@@ -14,20 +14,20 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 512b9a0506241f87b5e0c19cf19cd6fe629fb291
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: b09650bc99b1bdf892b60828f0b524467d7b60ac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件 
+# <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
 创建配置文件后，可将配置文件分配给 Azure Active Directory 组。
 
 ## <a name="assign-a-device-profile"></a>分配设备配置文件
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，然后搜索“Microsoft Intune”。
-2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”。 
+2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”。
 3. 在配置文件列表中，选择要分配的配置文件，然后选择“分配”。
 4. 选择“包括”组或“排除”组，然后选择“选择组”：  
 
@@ -44,14 +44,14 @@ ms.lasthandoff: 03/05/2018
 
 例如，需要向组织中除网亭设备外的所有设备分配设备配置文件。 于是含入“所有用户”组，而排除“所有设备”组。
 
-在这种情况下，所有用户及其设备均会获得策略，即使用户设备属于“所有设备”组也是如此。 
+在这种情况下，所有用户及其设备均会获得策略，即使用户设备属于“所有设备”组也是如此。
 
-排除操作仅查看组的直接成员，而不包括与用户关联的设备。 但是，没有用户的设备不会获得策略。 出现这种情况是因为这些设备与“所有用户”组没有任何关系。 
+排除操作仅查看组的直接成员，而不包括与用户关联的设备。 但是，没有用户的设备不会获得策略。 出现这种情况是因为这些设备与“所有用户”组没有任何关系。
 
-如果包括“所有设备”，而排除“所有用户”，则所有设备均接收策略。 在这种情况下，其目的是将与用户关联的设备从策略中排除。 但是，这样并不会排除设备，因为排除功能只比较直接组成员。 
+如果包括“所有设备”，而排除“所有用户”，则所有设备均接收策略。 在这种情况下，其目的是将与用户关联的设备从策略中排除。 但是，这样并不会排除设备，因为排除功能只比较直接组成员。
 
 >[!TIP]
 >排除操作不适用于符合性策略或应用分配。 若要从分配中排除成员，可使用“可用”和“不适用”分配。 例如，通过“可用”意图向“所有企业用户”分配应用，通过“不适用”意图向“高级管理人员”分配应用。 将向所有用户分配应用，“高级管理人员”组中的用户除外。 如果通过“必需”意图向“所有企业用户”分配应用，则不排除“高级管理人员”组中的用户。
-    
+
 ## <a name="next-steps"></a>后续步骤
 有关监视设备配置文件分配的指南，请参阅[如何监视设备配置文件](device-profile-monitor.md)。
