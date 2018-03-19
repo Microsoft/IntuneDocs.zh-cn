@@ -1,36 +1,34 @@
 ---
-title: "适用于 iOS 设备的 Intune Wi-Fi 设置"
-titleSuffix: Azure portal
-description: "了解可用于配置 iOS 设备上 Wi-Fi 连接的 Intune 设置。"
+title: "针对运行 iOS 的设备配置 Microsoft Intune Wi-Fi 设置"
+titleSuffix: 
+description: "了解运行 iOS 的设备上的 Intune Wi-Fi 配置设置"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4a5b9b76995be6a82cc3dcaa9f782c158ba174
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: fcb21657d8abe1c966aa924993f733b039302268
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 iOS 设备的 Wi-Fi 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
+本文介绍可在 Microsoft Intune 中为运行 iOS 的设备配置哪些 Wi-Fi 设置。
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>适用于基本配置文件和企业配置文件的 Wi-Fi 设置
 
-- **网络名称** - 输入此 Wi-Fi 连接的名称。 用户浏览设备上的可用连接列表时，将看到该名称。
-- **SSID** - 服务设置标识符的英文缩写。 这是设备将连接到的无线网络的真实名称。 但是，用户在选择连接时只会看到上面创建的网络名称。
+- **网络名称** - 输入此 Wi-Fi 连接的名称。 用户浏览设备上的可用连接列表时，会看到该名称。
+- **SSID** - 服务设置标识符的英文缩写。 这是设备连接到的无线网络的真实名称。 但是，用户在选择连接时只会看到你之前配置的网络名称。
 - **自动连接** - 只要设备处于此网络的范围内，即进行连接。
 - **隐藏网络** - 阻止此网络显示在设备上的可用网络列表中。
 - **预共享密钥** - 
@@ -59,16 +57,16 @@ ms.lasthandoff: 01/29/2018
 ### <a name="further-options-when-you-choose-an-eap-type"></a>选择 EAP 类型时的其他选项
 
 
-|设置名称|更多信息|使用时间|
+|设置名|更多信息|使用时间|
 |--------------|-------------|----------|
 |**受保护的访问凭据 (PAC) 设置**|选择以使用受保护的访问凭证来建立客户端和身份验证服务器之间经过身份验证的隧道。 选择下列选项之一：<br>- **使用 PAC** - 如果存在现有的 PAC 文件，则使用它。<br>- **使用和配置 PAC** - 向设备配置 PAC 文件。<br>- **以匿名方式使用和配置 PAC** - 向设备配置 PAC 文件，并确保在不进行服务器身份验证的情况下配置 PAC 文件。|EAP 类型为 **EAP-FAST**|
 
 #### <a name="server-trust"></a>服务器信任
 
 
-|设置名称|更多信息|使用时间|
+|设置名|更多信息|使用时间|
 |--------------|-------------|----------|
-|**证书服务器名称**|指定由受信任的证书颁发机构 (CA) 颁发的证书中使用的一个或多个常用名称。 如果提供此信息，则可以在最终用户设备连接到此 Wi-Fi 网络时，绕过显示在设备上的动态信任对话框。|EAP 类型为 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**。|
+|**证书服务器名称**|指定由受信任的证书颁发机构 (CA) 颁发的证书中使用的一个或多个常用名称。 如果提供此信息，则可在用户设备连接到此 Wi-Fi 网络时，绕过设备上显示的动态信任对话框。|EAP 类型为 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**。|
 |**用于服务器验证的根证书**|选择用于对连接进行身份验证的受信任的根证书配置文件。 |EAP 类型为 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**|
 |**标识隐私（外部标识）**|请指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|EAP 类型为 **PEAP**|
 
@@ -76,7 +74,7 @@ ms.lasthandoff: 01/29/2018
 #### <a name="client-authentication"></a>客户端身份验证
 
 
-|设置名称|更多信息|使用时间|
+|设置名|更多信息|使用时间|
 |--------------|-------------|----------|
 |**用于客户端身份验证的客户端证书（身份证书）**|选择用于对连接进行身份验证的 SCEP 或 PKCS 证书配置文件。|EAP 类型为 **EAP-TLS**|
-|**身份验证方法**|选择连接的身份验证方法：<br>- **证书** 选择要作为标识证书提交给服务器的 SCEP 或 PKCS 客户端证书。<br><br>- **用户名和密码** 可指定进行身份验证的其他方法。 <br><br>如果选择了“用户名和密码”，请配置：<br><br>-  **非 EAP 方法（内部标识）**，然后从以下项选择对连接进行身份验证的方式：<br>- **无**<br>- **未加密的密码 (PAP)**<br>- **质询握手身份验证协议 (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 版本 2 (MS-CHAP v2)**<br>可用的选项取决于你选择的 EAP 类型。<br><br>**和**<br><br>- **标识隐私（外部标识）** - 指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|EAP 类型为 **EAP-TTLS** 或 *
+|**身份验证方法**|选择连接的身份验证方法：<br>- **证书** 选择要作为标识证书提交给服务器的 SCEP 或 PKCS 客户端证书。<br><br>- **用户名和密码** 可指定进行身份验证的其他方法。 <br><br>如果选择了“用户名和密码”，请配置：<br><br>-  **非 EAP 方法（内部标识）**，然后从以下项中选择要验证连接的方式：<br>- **无**<br>- **未加密的密码 (PAP)**<br>- **质询握手身份验证协议 (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 版本 2 (MS-CHAP v2)**<br>可用的选项取决于你选择的 EAP 类型。<br><br>**和**<br><br>- **标识隐私（外部标识）** - 指定为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|EAP 类型为 **EAP-TTLS** 或 *

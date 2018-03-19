@@ -1,51 +1,53 @@
 ---
-title: "如何配置 Intune 自定义设备设置"
-titleSuffix: Azure portal
-description: "了解如何使用 Intune 配置你所管理设备上的自定义设置。"
+title: "在 Microsoft Intune 中使用自定义设备设置 - Azure | Microsoft Docs"
+description: "添加或创建配置文件，以便使用 Microsoft Intune 为 Windows、Android 和 iOS 设备使用自定义设置"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置自定义设备设置
+# <a name="create-a-profile-with-custom-settings-in-intune"></a>使用 Intune 中的自定义设置创建配置文件
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="when-to-use-custom-settings"></a>何时使用自定义设置
+Intune 可能不含所需的所有内置设置。 或者你可能想要使用其他设备配置文件中的可用设置。 要添加这些设置，请创建设备配置文件，然后使用自定义设备设置来配置配置文件。
 
-当 Intune 没有你想要配置的内置设置时，自定义设备设置会非常有用，并且可从其他设备配置文件获得这些设置。
-每个平台的自定义设置配置都不相同。 例如，对于 Android 和 Windows 设备，可以指定开放移动联盟统一资源标识符 (OMA-URI) 值来控制设备功能。 对于 Apple 设备，则可以导入使用 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 创建的文件。
+本文列出了使用自定义设置创建配置文件的基本步骤。 它还包括一些链接，可以深入了解如何创建不同平台上的自定义设置。
 
-使用本主题中的信息了解有关配置自定义设置配置文件的基础知识，然后深入阅读每个平台的主题以了解设备详情。
+## <a name="custom-settings-on-different-platforms"></a>不同平台上的自定义设置
+每个平台的自定义设置配置都不相同。 例如，要控制 Android 和 Windows 设备上的功能，可输入开放移动联盟统一资源标识符 (OMA-URI) 值。 对于 Apple 设备，则可以导入使用 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 创建的文件。
 
-## <a name="create-a-device-profile-containing-custom-settings"></a>创建包含自定义设置的设备配置文件
+## <a name="create-the-profile"></a>创建配置文件
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在配置文件边栏选项卡上，选择“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入自定义配置文件的“名称”和“说明”。
-5. 从“平台”下拉列表中，选择要应用自定义设置的设备平台。 目前，可以为自定义设备设置选择以下平台之一：
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+3. 依次选择“设备配置”、“配置文件”和“创建配置文件”。
+4. 输入自定义配置文件的“名称”和“描述”。
+5. 从“平台”下拉列表中，选择要应用自定义设置的设备平台。 可选择以下任何平台：
+
     - **Outlook Web Access (OWA)**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
+
 6. 从“配置文件”类型下拉列表中，选择“自定义”。
-7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
+7. 根据所选择的平台，可配置的设置有所不同。 以下链接提供了有关每个平台的自定义设置的更多详细信息：
+
     - [Android 设置](custom-settings-android.md)
     - [iOS 设置](custom-settings-ios.md)
     - [macOS 设置](custom-settings-macos.md)
@@ -53,7 +55,7 @@ ms.lasthandoff: 02/01/2018
     - [Windows 10 设置](custom-settings-windows-10.md)
     - [Windows Holographic for Business 设置](custom-settings-windows-holographic.md)
     - [Android for Work 设置](custom-settings-android-for-work.md)
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
 
-系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
-如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
+8. 完成后，选择“创建”。
+
+配置文件随即创建并显示在配置文件列表中。 要向组分配此配置文件，请参阅[如何分配设备配置文件](device-profile-assign.md)。

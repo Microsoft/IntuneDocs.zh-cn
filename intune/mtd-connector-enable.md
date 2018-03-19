@@ -1,12 +1,12 @@
 ---
-title: "通过 Intune 启用移动威胁防御连接器"
+title: "在 Microsoft Intune 中启用移动威胁防御连接器"
 titlesuffix: Azure portal
-description: "在 Intune 中启用移动威胁防御连接器。"
+description: "在移动威胁防御 (MTD) 合作伙伴和 Microsoft Intune 之间启用连接器。"
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,30 +15,30 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b73cb0885c4d93cf91ea219ca98a8a81d67b39
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 28233965fb68ef1b83b07d14d39568b5bd997c89
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="enable-mobile-threat-defense-in-intune"></a>在 Intune 中启用移动威胁防御
+# <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中启用移动威胁防御连接器
 
 > [!NOTE] 
 > 本主题适用于所有移动威胁防御合作伙伴。
 
-若要在 Intune 中启用移动威胁防御 (MTD) 连接，应已在 MTD 合作伙伴控制台中配置了 Intune 连接器。
+在移动威胁防御 (MTD) 安装过程中，已配置了用于在 MTD 合作伙伴控制台中对威胁进行分类的策略，并且已在 Intune 中创建了设备符合性策略。 如果已在 MTD 合作伙伴控制台中配置了 Intune 连接器，则现在可在 Intune 中启用 MTD 连接。
 
 ## <a name="to-enable-the-mtd-connector"></a>启用 MTD 连接器
 
 1. 转到 [Azure 门户](https://portal.azure.com)，然后使用 Intune 凭据登录。 成功登录后，会看到“Azure 仪表板”。
 
-2. 在“Azure 仪表板”中，从左侧菜单中选择“更多服务”，然后在文本框筛选器中键入 Intune。
+2. 在“Azure 仪表板”中，从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
-3. 选择“Intune”，随即显示“Intune 仪表板”。
+3. 选择“Intune”，“Intune 仪表板”会随即打开。
 
 4. 在“Intune 仪表板”中，选择“设备符合性”，然后选择“设置”部分下的“移动威胁防御”。
 
-5. 在“移动威胁防御”边栏选项卡上选择“添加”。
+5. 在“移动威胁防御”窗格上，选择“添加”。
 
 6. 从下拉列表中选择 MTD 解决方案作为“要设置的移动威胁防御连接器”。
 
@@ -64,4 +64,4 @@ ms.lasthandoff: 02/23/2018
 > 在创建设备符合性和条件性访问策略规则之前，必须先添加和分配 MTD 应用。 这样可以确保最终用户能够安装 MTD 应用，以便访问电子邮件或其他公司资源。
 
 > [!TIP]
-> 你可以从“移动威胁防御”边栏选项卡看到 Intune 和 MTD 合作伙伴之间的“连接状态”和“上次同步”时间。
+> 可以从“移动威胁防御”窗格中查看 Intune 和 MTD 合作伙伴之间的“连接状态”和“上次同步”时间。

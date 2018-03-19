@@ -1,10 +1,10 @@
 ---
-title: "配置 Windows 信息保护 - Intune"
-titleSuffix: Azure portal
-description: "了解可用于管理 Windows 信息保护的 Intune 设置。"
+title: "Microsoft Intune 中的 Windows 信息保护设置"
+titleSuffix: 
+description: "了解可用于管理 Windows 信息保护的 Microsoft Intune 设置。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e33fa9b22687f7f8c4d301c6cd82ecd787c23246
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f2e5090eada373b83c3f8c390b7df6b31f6d1723
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Windows 信息保护
 

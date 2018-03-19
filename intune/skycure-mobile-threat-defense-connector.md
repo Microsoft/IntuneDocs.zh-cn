@@ -1,7 +1,7 @@
 ---
-title: "使用 Intune 的 Skycure 连接器"
-titlesuffix: Azure portal
-description: "将 Skycure 连接器与 Intune 集成。"
+title: "Skycure 连接器与 Microsoft Intune"
+titlesuffix: 
+description: "了解如何将 Intune 与 Skycure 移动威胁防御相集成以控制移动设备对公司资源的访问。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 333322022882566b55e869e5d6a1a1e2b203b830
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure 移动威胁防御连接器
 
@@ -69,7 +69,7 @@ Intune 支持与 Skycure 集成的两种模式：
 
 **修正后授予访问权限：**
 
-![检测到恶意应用，授予访问权限](./media/skycure-arch-2.png)
+![检测到恶意应用后，则会在修正后授予访问权限](./media/skycure-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
 

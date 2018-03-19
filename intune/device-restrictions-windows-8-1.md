@@ -1,29 +1,30 @@
 ---
-title: "适用于 Windows 8.1 的 Intune 设备限制设置"
-titleSuffix: Azure portal
-description: "了解可用来控制 Windows 8.1 设备上的设备设置和功能的 Intune 设置。"
+title: "运行 Windows 8.1 的设备的 Microsoft Intune 设备限制设置"
+titleSuffix: 
+description: "了解可用于控制运行 Windows 8.1 的设备中设备设置和功能的 Intune 设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 8.1 及更高版本设备限制设置
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 及更高版本设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文介绍可为运行 Windows 8.1 及更高版本的设备配置的 Microsoft Intune 设备限制设置。
+
 
 ## <a name="general"></a>常规
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 01/25/2018
 -   **SmartScreen** - 启用或禁用对潜在欺诈网站的警告。
 -   **JavaScript** - 允许浏览器运行脚本，如 Java 脚本。
 -   **弹出窗口** - 启用或禁用浏览器弹出窗口阻止程序。
--   **发送 do-not-track 标头** - 将“不跟踪”标头发送到 Internet Explorer 中访问过的网站。
+-   **发送 do-not-track 标头** - 将“do-not-track”标头发送到 Internet Explorer 中访问过的网站。
 -   **插件** - 允许用户向 Internet Explorer 添加插件。
 -   **在 Intranet 站点上使用单字条目** - 允许使用单字将 Internet Explorer 转到网站，如 Bing。
 -   **自动检测 Intranet 站点** - 帮助在 Internet Explorer 中配置 Intranet 站点的安全性。
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/25/2018
 -   **对受限站点实施高安全性** - 配置受限站点区域的安全级别。
 -   **企业模式菜单访问** - 允许用户从 Internet Explorer 访问企业模式菜单选项。
 如果选择此设置，你还可以指定**日志记录报告位置**，其中包含指向一个报表的 URL，该报表显示了用户为其启用了企业模式访问的网站。
--   **企业模式站点列表位置** – 指定活动状态下将使用企业模式的网站列表的位置。
+-   **企业模式站点列表位置** – 指定活动状态下使用企业模式的网站列表的位置。
 
 ## <a name="cellular"></a>移动电话
 -   **数据漫游** - 当设备处于手机网络中时允许数据漫游。

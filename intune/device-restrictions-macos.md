@@ -1,29 +1,29 @@
 ---
-title: "适用于 macOS 的 Intune 设备限制设置"
-titlesuffix: Azure portal
-description: "了解可用来控制 macOS 设备上的设备设置和功能的 Intune 设置。"
+title: "适用于 macOS 的 Microsoft Intune 设备限制设置"
+titlesuffix: 
+description: "了解可用于控制运行 macOS 的设备中设备设置和功能的 Intune 设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 macOS 设备限制设置
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS 设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用这些设置管理设备限制配置文件中的 macOS 设备。
+本文介绍可为运行 macOS 的设备配置的 Microsoft Intune 设备限制设置。
 
 ## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。
@@ -49,5 +49,5 @@ ms.lasthandoff: 02/01/2018
 
 ### <a name="unmarked-email-domains"></a>未标记的电子邮件域
 
-在“电子邮件域 URL”字段中，向列表添加一个或多个 URL。 当最终用户从所配置的域以外的域接收电子邮件时，该电子邮件在 iOS 邮件应用中被标记为不受信任。
+在“电子邮件域 URL”字段中，向列表添加一个或多个 URL。 当用户从所配置的域以外的域接收电子邮件时，该电子邮件在 iOS 邮件应用中被标记为不受信任。
 

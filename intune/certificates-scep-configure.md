@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>使用 Intune 配置和管理 SCEP 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -304,11 +304,11 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>如何下载、安装和配置证书连接器
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. 登录 Azure 门户。 
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-4. 在“设备配置”边栏选项卡上，选择“证书颁发机构”。
-5. 单击“添加”，并选择“下载连接器文件”。 将下载的文件保存到可以从服务器上进行访问的位置，将在该服务器上安装该应用程序。 
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格上，选择“设备配置”。
+4. 在“设备配置”窗格上，选择“证书颁发机构”。
+5. 单击“添加”并选择“下载连接器文件”。 将下载的文件保存到可以从服务器上进行访问的位置，将在该服务器上安装该应用程序。 
 6.  下载完成后，在承载网络设备注册服务 (NDES) 角色的服务器上运行下载的安装程序 (ndesconnectorssetup.exe)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 （CRP Web 服务 CertificateRegistrationSvc 运行为 IIS 中的应用程序）
 
     > [!NOTE]
@@ -346,10 +346,10 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 ## <a name="how-to-create-a-scep-certificate-profile"></a>如何创建 SCEP 证书配置文件
 
-1. 在 Azure 门户中，选择“配置设备”工作负荷。
-2. 在“设备配置”边栏选项卡上，选择“管理” > “配置文件”。
-3. 在“配置文件”边栏选项卡上，选择“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入 SCEP 证书配置文件的“名称”和“说明”。
+1. 在 Azure 门户中，选择“设备配置”工作负荷。
+2. 在“设备配置”窗格上，选择“管理” > “配置文件”。
+3. 在“配置文件”窗格上，选择“创建配置文件”。
+4. 在“创建配置文件”窗格上，输入 SCEP 证书配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，为此 SCEP 证书选择设备平台。 目前，可以为设备限制设置选择以下平台之一：
     - **Outlook Web Access (OWA)**
     - **iOS**
@@ -358,7 +358,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
     - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
 6. 从“配置文件”类型下拉列表中，选择“SCEP 证书”。
-7. 在“SCEP 证书”边栏选项卡上，配置下列设置：
+7. 在“SCEP 证书”窗格上，配置下列设置：
     - **证书有效期** - 如果对发证 CA 运行允许自定义有效期的 **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** 命令，则可以指定证书过期之前剩余的时间量。<br>你可以指定比指定证书模板中的有效期小的值，但不能指定较大的值。 例如，证书模板中的证书有效期为 2 年，则你可以指定值 1 年，但不能指定值 5 年。 该值还必须小于发证 CA 证书的剩余有效期。 
     - **密钥存储提供程序 (KSP)** (Windows Phone 8.1、Windows 8.1、Windows 10) - 指定存储证书密钥的位置。 可以选择下列值之一：
         - 注册到受信任的平台模块(TPM) KSP (若有); 否则，注册到软件 KSP
@@ -385,9 +385,9 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
     - **注册设置**
         - **续订阈值(%)** - 指定设备请求证书续订之前剩余的证书有效期限的百分比。
         - SCEP 服务器 URL - 为通过 SCEP 颁发证书的 NDES 服务器指定 1 个或多个 URL。 
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+8. 选择“确定”，然后返回到“创建配置文件”窗格中，选择“创建”。
 
-系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
+随即创建配置文件并在“配置文件列表”窗格上显示。
 
 ## <a name="how-to-assign-the-certificate-profile"></a>如何分配证书配置文件
 

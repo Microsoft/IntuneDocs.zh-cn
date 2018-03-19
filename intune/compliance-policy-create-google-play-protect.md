@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13aa627515b74d3c9fe6d091c44dd5147bd786bd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>如何创建用于启用 Google Play 保护的设备符合性策略
 
@@ -29,14 +29,15 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-a-compliance-policy"></a>创建合规性策略
 
-1. 登录到 Azure 门户。 选择“更多服务” > “监视 + 管理” + “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 2. 选择“管理”组中的“设备符合性”。 
 3. 选择“策略”，然后选择“创建策略”。
 4. 键入策略“名称”和“说明”。
 5. 对于“平台”，选择“Android”。
 6. 选择“设置” > “设备运行状况”。
 7. 配置“Google Play 保护”设置。
-8. 设置 Google Play 保护设置后，指定“安全性”和“设备属性”设置。 完成后，选择“确定”。
+8. 设置 Google Play 保护设置后，指定“系统安全性”和“设备属性”设置。 完成后，选择“确定”。
 
 ## <a name="configure-the-google-play-protect-settings"></a>配置“Google Play 保护”设置
 

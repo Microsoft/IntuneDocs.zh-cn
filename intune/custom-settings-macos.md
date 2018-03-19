@@ -1,27 +1,25 @@
 ---
-title: "适用于 macOS 设备的 Intune 自定义设置"
-titleSuffix: Azure portal
+title: "适用于运行 macOS 的设备的 Microsoft Intune 自定义设置"
+titleSuffix: 
 description: "了解可在 macOS 自定义配置文件中使用的设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88224849de0727418197fcfdb96cac3b4c2ca0e7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ccc9d48eb16ce155bbed2bbdf38793b8f3bdfda
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 macOS 设备的自定义设置
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>适用于运行 macOS 的设备的 Microsoft Intune 自定义设备设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ ms.lasthandoff: 01/25/2018
 
 
 1. 按照[如何在 Microsoft Intune 中配置自定义设备设置](custom-settings-configure.md)中的说明进行操作。
-2. 在“创建配置文件”边栏选项卡上，指定下列信息：
+2. 在“自定义配置文件”窗格上，配置以下每个设置：
 
-- **自定义配置描述文件名称** - 提供策略的名称，该名称将显示在设备上以及 Intune 状态中。
+- **自定义配置文件名称** - 提供策略的名称，该名称在设备上以及 Intune 状态中显示。
 - **配置描述文件** - 浏览到使用 Apple Configurator 创建的配置文件。
 确保在要分配 macOS 自定义策略的设备上从 Apple Configurator 工具导出的设置与 macOS 版本兼容。 有关如何解析不兼容的设置的信息，可搜索 [Apple 开发人员](https://developer.apple.com/)网站上的“配置描述文件参考”和“移动设备管理协议参考”。
 
-你已导入的文件将在边栏选项卡的“文件内容”区域显示。
+已导入的文件在窗格的“文件内容”区域中显示。

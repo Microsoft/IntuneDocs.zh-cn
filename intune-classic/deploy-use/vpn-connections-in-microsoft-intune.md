@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08e1126e05d101669c5796e4bd7fcaf08339fa43
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7c63c817ccddd0abc6c5c6b0ae2f2a7d1cb2d9bf
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="vpn-connections-in-microsoft-intune"></a>Microsoft Intune 中的 VPN 连接
 
@@ -53,7 +53,7 @@ Cisco (IPsec)|是 |是   |否  |否  |否 | 否|
 Citrix|是 |是（仅 Android）   |否  |否  |否 | 否|
 脉冲安全|是  |是 |是   |是  |是| 是|        
 F5 Edge Client|是 |是 |是 |是  |   是 |  是|   
-Dell SonicWALL Mobile Connect|是 |是 |是 |是 |是 |是|         
+SonicWall Mobile Connect|是 |是 |是 |是 |是 |是|         
 CheckPoint Mobile VPN|是 |是 |是 |是|是|是|
 Microsoft SSL (SSTP)|否 |否 |否 |否|否|VPNv1 OMA-URI*|
 Microsoft Automatic|否 |否 |否 |否|是 (OMA-URI)|是|
@@ -105,10 +105,10 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 
 设置名  |更多信息  
 ---------|---------
-**Name**     |输入 VPN 配置文件的唯一名称，以帮助你在 Intune 控制台中识别它。         
+**名称**     |输入 VPN 配置文件的唯一名称，以帮助你在 Intune 控制台中识别它。         
 **描述**     |提供相关描述，对 VPN 配置文件以及其他相关的信息的进行概述，这可帮助你找到 VPN 配置文件。         
 **VPN 连接名称（向用户显示）**     |指定 VPN 配置文件的名称。 用户将在其设备上的可用 VPN 连接列表中看到该名称。         
-**连接类型**     |  选择以下连接类型之一以在 VPN 配置文件中使用：**Cisco AnyConnect**（不适用于 Windows 8.1 或 Windows Phone 8.1）、**Pulse Secure**、**Citrix**、**F5 Edge Client**、**Dell SonicWALL Mobile Connect**、**CheckPoint Mobile VPN**。
+**连接类型**     |  选择以下连接类型之一以在 VPN 配置文件中使用：**Cisco AnyConnect**（不适用于 Windows 8.1 或 Windows Phone 8.1）、**Pulse Secure**、**Citrix**、**F5 Edge Client**、**SonicWall Mobile Connect**、**CheckPoint Mobile VPN**。
 **VPN 服务器说明**     | 指定设备将连接到的 VPN 服务器的说明。 示例：**Contoso VPN 服务器**。 当连接类型是“F5 Edge Client”时，使用“服务器列表”字段来指定服务器说明和 IP 地址的列表。
 **服务器 IP 地址或 FQDN**    |提供 IP 地址或设备将连接到的 VPN 服务器的完全限定的域名。 示例：**192.168.1.1**、**vpn.contoso.com**。当连接类型是“F5 Edge Client”时，使用“服务器列表”字段来指定服务器说明和 IP 地址的列表。         |         
 **服务器列表**     |选择**添加**以添加用于 VPN 连接的新 VPN 服务器。 你还可以指定哪个服务器将作为连接的默认服务器。 此选项仅在连接类型为“F5 Edge Client”时显示。         
@@ -118,7 +118,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 **选择客户端证书用于客户端身份验证（身份证书）**|选择之前创建的客户端 SCEP 证书，它将用于对 VPN 连接进行身份验证。 有关如何在 Intune 中使用配置文件的详细信息，请参阅[使用证书配置文件的安全资源访问](secure-resource-access-with-certificate-profiles.md)。 仅当身份验证方法为“证书”时才会显示此选项。
 **角色**| 指定有权访问此连接的用户角色的名称。 用户角色用于定义个人设置和选项，并启用或禁用某些访问功能。 此选项仅在连接类型为 **Pulse Secure** 或 **Citrix** 时显示。
 **领域**|指定你想要使用的身份验证领域的名称。 身份验证领域是“Pulse Secure”或“Citrix”连接类型使用的身份验证资源的分组。 此选项仅在连接类型为 **Pulse Secure** 或 **Citrix** 时显示。
-**登录组或域**|指定你想要连接到的登录组或域的名称。 此选项仅在连接类型为“Dell SonicWALL Mobile Connect”时显示。
+**登录组或域**|指定你想要连接到的登录组或域的名称。 此选项仅在连接类型为“SonicWall Mobile Connect”时显示。
 **指纹**|指定一个将用于验证 VPN 服务器是否可以信任的字符串（例如“Contoso Fingerprint Code”）。 指纹可以：发送到客户端，因此在连接时它知道信任任何提供相同指纹的服务器。 如果设备还没有指纹，则会提示用户信任正在连接的 VPN 服务器，并显示指纹。 （用户手动验证指纹，并选择“**信任**”进行连接）。此选项仅在连接类型为“**CheckPoint Mobile VPN**”时显示。
 **Per App VPN**|如果你想要将此 VPN 连接与 iOS 或 Mac OS X 应用相关联，以便在运行该应用时打开连接，请选择此选项。 可在部署软件时将 VPN 配置文件与应用关联。 有关详细信息，请参阅[在 Microsoft Intune 中部署应用](deploy-apps-in-microsoft-intune.md)。
 **按需 VPN**|可以为 iOS 8.0 及更高版本的设备设置按需 VPN。 [iOS 设备的按需 VPN](#on-demand-vpn-for-ios-devices)中提供了进行此设置的说明。
@@ -126,7 +126,7 @@ VPN 配置文件可以使用来自不同制造商的多种不同的连接类型�
 **使用自动配置脚本**（仅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1）|如果你的 VPN 服务器要求使用代理服务器进行连接，请指定是否想要使用自动配置脚本来定义设置，然后指定包含该设置的文件的 URL。 有关详细信息，请参阅 Windows Server 文档。
 **使用代理服务器**（仅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1）|如果你的 VPN 服务器要求使用代理服务器进行连接，请选择此选项，然后指定代理服务器的地址和端口号。 有关详细信息，请参阅 Windows Server 文档。
 **绕过本地地址的代理设置**（仅限 iOS、Mac OS X、Windows 8.1 和 Windows Phone 8.1）|如果你的 VPN 服务器要求使用代理服务器口进行连接，在你不想对指定的本地地址使用代理服务器时选择此选项。 有关详细信息，请参阅 Windows Server 文档。
-“自定义 XML”（Windows 8.1 及更高版本和 Windows Phone 8.1 及更高版本）|指定配置 VPN 连接的自定义 XML 命令。 **Pulse Secure** 示例：&lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;。 “**CheckPoint Mobile VPN**”示例：&lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;。 **Dell SonicWALL Mobile Connect** 示例：&lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;。 **F5 Edge Client** 示例：&lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;。 有关如何编写自定义 XML 命令的详细信息，请参阅每个制造商 VPN 文档。
+“自定义 XML”（Windows 8.1 及更高版本和 Windows Phone 8.1 及更高版本）|指定配置 VPN 连接的自定义 XML 命令。 **Pulse Secure** 示例：&lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;。 “**CheckPoint Mobile VPN**”示例：&lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;。 **SonicWall Mobile Connect** 的示例：&lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;。 **F5 Edge Client** 示例：&lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;。 有关如何编写自定义 XML 命令的详细信息，请参阅每个制造商 VPN 文档。
 “DNS 后缀搜索列表”（仅限 Windows Phone 8.1）|在每个行上指定一个 DNS 后缀。 通过使用短名称连接到网站时，将搜索你指定的每个 DNS 后缀。 例如，指定 DNS 后缀 **domain1.contoso.com** 和 **domain2.contoso.com**，访问 URL **http://mywebsite**，并且将搜索 URL **http://mywebsite.domain1.contoso.com** 和 **http://mywebsite.domain2.contoso.com**。
 “连接到公司 Wi-Fi 网络时绕过 VPN”（仅限 Windows Phone 8.1）|选择此选项指定当设备连接到公司 Wi-Fi 网络时将不使用 VPN 连接。
 “连接到家庭 Wi-Fi 网络时绕过 VPN”（仅限 Windows Phone 8.1）|选择此选项指定当设备连接到家庭 Wi-Fi 网络时将不使用 VPN 连接。

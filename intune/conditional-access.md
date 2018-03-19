@@ -1,12 +1,12 @@
 ---
-title: "使用 Intune 的条件访问"
-titlesuffix: Azure portal
-description: "了解如何定义用户和设备在 Microsoft Intune 中访问公司资源必须满足的条件。"
+title: "使用 Microsoft Intune 进行条件访问"
+titlesuffix: 
+description: "了解如何在 Microsoft Intune 中定义用户、设备和应用访问公司资源必须满足的条件。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>什么是条件性访问？
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-本主题将介绍条件性访问，因为它适用于企业移动性 + 安全性 (EMS)，然后介绍使用 Intune 时的条件性访问常见场景。
+条件访问是指控制允许连接到电子邮件和公司资源的设备和应用的方式。 在本主题中，了解基于设备和基于应用的条件访问，并查找通过 Intune 使用条件访问的常见方案。
 
 企业移动性 + 安全性 (EMS) 条件性访问不是一款独立的产品，它是作为 EMS 一部分的涉及全部服务和产品的解决方案。 它提供了精细的访问控制用以保护公司数据安全的同时，又考虑到了用户的体验，允许他们从任何设备、任何位置以最方便的方式完成工作。
 

@@ -1,7 +1,7 @@
 ---
-title: "设置 Check Point SandBlast 与 Intune 的集成"
-titlesuffix: Azure portal
-description: "设置 Check Point SandBlast 与 Intune 的集成"
+title: "Check Point SandBlast MTD 与 Microsoft Intune"
+titlesuffix: 
+description: "如何使用 Intune 设置 CheckPoint SandBlast 移动威胁防御 (MTD) 以控制移动设备对公司资源的访问。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b1ea4804005abb1e2fcbc5dc3b5ef1382edd4db
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b864d78fd7bfd7fb4e177b568b3587bc1e28b209
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>将 Check Point SandBlast Mobile 与 Intune 集成
 
@@ -68,7 +68,7 @@ Check Point SandBlast 应用授权流程包含下列内容：
 
 5.  将 Microsoft Intune 设置为 MDM 服务后，系统会弹出“Microsoft Intune 配置”窗口，请为每个设备平台（ iOS、Android 和 Windows）选择“添加到我的组织”，授权 Check Point SandBlast Mobile 与 Intune 和 Azure AD 进行通信。
 
-    ![Check Point MTD Intune 配置](./media/checkpoint-MTD-1.PNG)
+    ![显示 Check Point MTD Intune 配置的图像](./media/checkpoint-MTD-1.PNG)
 
     > [!IMPORTANT]
     > 必须添加所有设备平台，才能继续执行下一步。
