@@ -1,5 +1,6 @@
 ---
-title: "支持的设备 - Microsoft Intune"
+title: "Microsoft Intune 支持的操作系统和浏览器"
+titleSuffix: 
 description: "列出用于 Intune 设备管理支持的设备平台和浏览器"
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>支持的操作系统和浏览器
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-本文适用于负责企业中的设备管理的系统管理员。 有关在设备上安装 Intune 的帮助，请参阅[使用托管设备来完成工作](/intune-user-help/company-portal-frequently-asked-questions)。
+设置 Microsoft Intune 之前，请查看所支持的操作系统和浏览器。
 
-开始设置 Microsoft Intune 之前，请查看以下要求：
-
-- [支持的操作系统](#intune-supported-operating-systems)
-- [支持 Intune 的 Web 浏览器列表](#intune-supported-web-browsers)
-
-还应熟悉 [Intune 网络带宽使用情况](network-bandwidth-use.md)（[经典门户](/intune-classic/get-started/network-bandwidth-use)）。
+有关在设备上安装 Intune 的帮助，请参阅[使用托管设备来完成工作](/intune-user-help/company-portal-frequently-asked-questions)。 还需熟悉 [Intune 网络带宽使用情况](network-bandwidth-use.md)（[经典门户](/intune-classic/get-started/network-bandwidth-use)）。
 
 ## <a name="intune-supported-operating-systems"></a>支持 Intune 的操作系统
 

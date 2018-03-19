@@ -5,7 +5,7 @@ keywords: "Intune graphapi c# powershell 权限角色"
 author: vhorne
 manager: dougeby
 ms.author: victorh
-ms.date: 06/20/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 7b59d4bc689daf462ac01a106457c3835a78b98b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何使用 Azure AD 访问 Microsoft Graph Intune API
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/09/2018
 
 - 提供 C# 和 PowerShell 的 Intune API 身份验证示例。
 
-- 描述如何支持多个租户
+- 描述如何支持多个租户。
 
 若要了解更多信息，请参阅以下文章：
 
@@ -97,7 +97,7 @@ ms.lasthandoff: 02/09/2018
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    通过在相关名称的左侧打一个复选标记来选择应用所需的角色。  要了解具体的 Intune 权限范围，请参阅 [Intune 权限范围](#user-content-intune-permission-scopes)。  要了解其他 Graph API 权限范围，请参阅 [Microsoft Graph 权限引用](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
+    通过在相关名称的左侧打一个复选标记来选择应用所需的角色。  要了解具体的 Intune 权限范围，请参阅 [Intune 权限范围](#intune-permission-scopes)。  要了解其他 Graph API 权限范围，请参阅 [Microsoft Graph 权限引用](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
 
     为获得最佳效果，请选择实现应用程序所需的最少角色。
 
@@ -139,7 +139,7 @@ Azure AD 和 Microsoft Graph 使用权限范围来控制对公司资源的访问
 
 _启用访问权限_设置 | 作用域名称
 :--|:--
-__在 Microsoft Intune 设备上执行影响用户的远程操作__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__在 Microsoft Intune 设备上执行影响用户的远程操作__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __读取和写入 Microsoft Intune 设备__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __读取 Microsoft Intune 设备__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __读取和写入 Microsoft Intune RBAC 设置__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -585,7 +585,7 @@ catch {
 
 此外：
 
-- 使用 http://portal.office.com 为用户帐户分配 Intune 许可证。
+- 使用 https://portal.office.com 为用户帐户分配 Intune 许可证。
 
 - 更新应用程序代码，以验证客户端的 Azure AD 租户域，而不是你自己的域。
 

@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>为 Symantec PKI Manager Web 服务设置 Intune 证书连接器
 
@@ -166,8 +166,11 @@ Symantec PKI Manager Web 服务在本文中称为 Symantec CA。 如果你已配
 
 如果你已对现有 Microsoft CA 使用最新的 Intune 证书连接器，并想要添加 Symantec CA 支持，则跳过此步骤。 否则，从 Intune 管理门户下载最新的 Intune 证书连接器，然后按照以下说明操作。
 
-1. 使用 Intune 租户管理员凭据登录到 https://portal.azure.com，然后搜索 Intune 资源。
-2. 从“Microsoft Intune” > “设备配置” > “证书颁发机构” > “下载证书连接器链接”下载 NDESConnectorSetup.exe
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格上，选择“设备配置”。
+4. 在“设备配置”窗格上，选择“证书颁发机构”。
+5. 单击“添加”并选择“下载连接器文件”。 将下载的文件保存到可以从服务器上进行访问的位置，将在该服务器上安装该应用程序。 
 3. 使用提升的权限运行 NDESConnectorSetup.exe。
 
     a. 在“安装选项”屏幕上，选择“PFX 分发”如以下屏幕截图所示。  使用默认选择完成剩余设置。
@@ -233,7 +236,7 @@ Symantec PKI Manager Web 服务在本文中称为 Symantec CA。 如果你已配
 
     a. 使用 Intune 租户管理员凭据登录到 [Azure 门户](https://portal.azure.com)，然后搜索 Intune 资源。
 
-    b. 从“Microsoft Intune” > “设备配置” - “配置文件” > “创建配置文件”创建受信任的证书配置文件
+    b. 通过访问“Microsoft Intune” > “设备配置” > “配置文件” > “创建配置文件”，创建受信任的证书配置文件。
 
     c. 在“名称”和“说明”字段提供所需的信息，然后选择目标平台。 
 
@@ -264,7 +267,7 @@ Symantec PKI Manager Web 服务在本文中称为 Symantec CA。 如果你已配
 ## <a name="create-a-pkcs-certificate-profile"></a>创建 PKCS 证书配置文件
 
 1. 使用 Intune 租户管理员凭据登录到 [Azure 门户](https://portal.azure.com)，然后搜索 Intune 资源。
-2. 从“Microsoft Intune” > “设备配置 - 配置文件” > “创建配置文件” > “PKCS 证书”创建 PKCS 证书配置文件。
+2. 通过访问“Microsoft Intune” > “设备配置”>“配置文件” > “创建配置文件”，创建 PKCS 证书配置文件。
 
     a. 在“名称”和“说明”字段提供所需的信息，然后选择目标平台。
 

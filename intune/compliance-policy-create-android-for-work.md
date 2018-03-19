@@ -1,12 +1,12 @@
 ---
 title: "创建 Android for Work 符合性策略"
-titleSuffix: Azure portal
-description: "了解如何创建 Android for Work 设备符合性策略。"
+titleSuffix: Microsoft Intune
+description: "为 Android for Work 设备创建 Intune 设备符合性策略，让用户能够指定设备必须满足的符合性要求。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b5ff76137da7b42fddc5c1238ef9e102adfa1307
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>如何在 Intune 中创建适用于 Android for Work 设备的设备符合性策略
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-为每个平台创建符合性策略。  可以在 Azure 门户中创建符合性策略。 若要详细了解什么是符合性策略，请参阅[什么是设备符合性](device-compliance.md)。 若要了解创建符合性策略之前需要解决的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)。
+适用于 Android for Work 的 Intune 设备符合性策略可指定 Android for Work 设备须满足才能被视为符合的规则和设置。 可将这些策略与条件访问相结合，进而允许/阻止访问公司资源，还可获取设备报告并采取措施应对不符合的情形。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。 若要深入了解符合性策略以及创建符合性策略之前需满足的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 下表说明了将符合性策略与条件访问策略一起使用时如何管理非符合性设置。
 
@@ -51,12 +51,14 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>在 Azure 门户中创建合规性策略
 
-1. 在“Intune”边栏选项卡中，选择“设置设备合规性”。 在“管理”下，选择“所有设备合规性策略”，然后选择“创建”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+1. 从“Intune”窗格中，选择“设备符合性”。 在“管理”下，选择“策略”，然后选择“创建策略”。
 2. 键入名称、说明，并选择要应用此策略的平台。
-3. 选择“合规性要求”以指定“安全性”、“设备运行状况”和“设备属性”设置。 完成后，请单击“确定”。
+3. 选择“设置配置”，在此处指定“系统安全性”、“设备运行状况”和“设备属性”设置。 完成后，选择“确定”。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="assign-user-groups"></a>分配用户组
 
-若要为用户分配合规性策略，请选择已配置的策略。 可在“合规性 - 策略”边栏选项卡中找到现有策略。
+若要为用户分配合规性策略，请选择已配置的策略。 可在“设备符合性 – 策略”窗格中找到现有策略。
 
-1. 选择要分配给用户的策略，然后选择“分配”。 此操作将打开边栏选项卡，可以在其中选择“Azure Active Directory 安全组”并将其分配给策略。
-2. 选择“选择组”以打开显示 Azure AD 安全组的边栏选项卡。  选择“选择”会将策略部署到用户。
+1. 选择要分配给用户的策略，然后选择“分配”。 随即打开一个窗格，可在此处选择“Azure Active Directory 安全组”并对其分配策略。
+2. 选择“所选组”以打开显示 Azure AD 安全组的窗格。  选择“保存”后，即会向用户部署策略。
 
 你已将策略应用于用户。  将评估策略针对的用户所使用设备的合规性。
 

@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何配置 iOS Classroom 应用的 Intune 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="introduction"></a>簡介
+## <a name="introduction"></a>简介
 [Classroom](https://itunes.apple.com/app/id1085319084) 是一款可帮助教师在教室中指导学习及控制学生设备的应用。 例如，教师可以使用此应用执行以下操作：
 
 - 打开学生设备上的应用
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/25/2018
 
 使用 Intune iOS 教育设备配置文件和本主题中的信息可帮助你设置 Classroom 应用以及会使用此应用的设备。
 
-## <a name="before-you-start"></a>准备工作
+## <a name="before-you-start"></a>开始之前
 
 开始配置这些设置前请考虑以下内容：
 
@@ -72,12 +72,12 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 
 ### <a name="configure-general-settings"></a>配置常规设置
 
-1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3.  在“Intune”边栏选项卡上，选择“配置设备”。
-4.  在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-5.  在配置文件边栏选项卡上，选择“创建配置文件”。
-6.  在“创建配置文件”边栏选项卡上，输入 iOS 教育配置文件的“名称”和“说明”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格上，选择“设备配置”。
+2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
+5.  在“配置文件”窗格上，选择“创建配置文件”。
+6.  在“创建配置文件”窗格上，输入 iOS 教育配置文件的“名称”和“说明”。
 7.  在“平台”下拉列表中，选择“iOS”。
 8.  在“配置文件类型”下拉列表中，选择“教育”。
 9.  选择“设置” > “配置”。
@@ -94,7 +94,7 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 ### <a name="configure-teacher-certificates"></a>配置教师证书
 
-在“教育”边栏选项卡上，选择“教师证书”。
+在“教育”窗格上，选择“教师证书”。
 
 #### <a name="configure-teacher-root-certificate"></a>配置教师根证书
 
@@ -116,8 +116,8 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 ### <a name="configure-student-certificates"></a>配置学生证书
 
-1.  在“教育”边栏选项卡上，选择“学生证书”。
-2.  在“学生证书”边栏选项卡的“学生设备证书”类型列表中，选择“1:1”。
+1.  在“教育”窗格上，选择“学生证书”。
+2.  在“学生证书”窗格的“学生设备证书”类型列表中，选择“1:1”。
 
 #### <a name="configure-student-root-certificate"></a>配置学生根证书
 
@@ -139,10 +139,10 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 ## <a name="finish-up"></a>完成
 
-1.  在“教育”边栏选项卡上，选择“确定”。
-2.  在“创建配置文件”边栏选项卡上，选择“创建”。
+1.  在“教育”窗格上，选择“确定”。
+2.  在“创建配置文件”窗格上，选择“创建”。
     
-系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
+随即创建配置文件并在“配置文件列表”窗格上显示。
 
 将该配置文件分配给与 Azure AD 同步学校数据时创建的教室组中的学生设备（请参阅[如何分配设备配置文件](device-profile-assign.md)）。
 

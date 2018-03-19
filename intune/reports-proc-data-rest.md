@@ -1,11 +1,12 @@
 ---
 title: "使用 REST 客户端从数据仓库 API 获取数据"
+titlesuffix: Microsoft Intune
 description: "使用 RESTful API 从 Intune 数据仓库检索数据。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e96e1a728fbb054f412dc6c2a3610179aec18b75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 客户端从 Intune 数据仓库 API 获取数据
 
@@ -34,9 +35,9 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-a-client-app-as-a-native-app-in-azure"></a>在 Azure 中创建一个客户端应用作为本机应用
 
-在 Azure 中创建本机应用。 此本机应用即客户端应用。 本地客户端请求凭据时，在本地计算机上运行的客户端将引用 Intune 数据仓库 API。 
+在 Azure 中创建本机应用。 此本机应用即客户端应用。 本地客户端请求凭据时，在本地计算机上运行的客户端将引用 Intune 数据仓库 API。
 
-1. 登录到租户的 Azure 门户。 选择“Azure Active Directory” > “应用注册”以打开“应用注册”边栏选项卡。
+1. 登录到租户的 Azure 门户。 选择“Azure Active Directory” > “应用注册”，打开“应用注册”窗格。
 2. 选择“新建应用注册”。
 3. 键入应用详细信息。
     1.  在“名称”中键入易于理解的名称，例如 Intune 数据仓库客户端。
@@ -53,19 +54,19 @@ ms.lasthandoff: 01/25/2018
 现在便有了一个在 Azure 中定义的应用。 授予从本机应用访问 Microsoft Intune API 的权限。
 
 1.  选择本机应用。 使用类似于 Intune 数据仓库客户端的名称命名该应用。
-2.  在“设置”边栏选项卡中，选择“必需的权限”
-3.  在“必需的权限”边栏选项卡中，选择“添加”。
+2.  从“设置”窗格中选择“所需权限”
+3.  在“所需权限”窗格中选择“添加”。
 4.  选择“选择 API”。
 5.  搜索 Web 应用名称。 其名称为“Microsoft Intune API”。
 6.  在列表中选择该应用。
 7.  选择“选择”。
 8.  勾选“委派的权限”框，以添加“从 Microsoft Intune 获取数据仓库信息”。
 
-    ![启用访问](media\reports-get_rest_data_client_access.png)
+    ![启用访问 - Microsot Intune API](media\reports-get_rest_data_client_access.png)
 
 9.  选择“选择”。
 10.  选择“完成”。
-11.  在“必需的权限”边栏选项卡中，选择“授予权限”（可选）。 此操作将授予对当前目录中的所有帐户的访问权限。 将不再为租户中的每位用户显示同意对话框。 有关详细信息，请参阅[将应用程序与 Azure Active Directory 集成](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。
+11.  在“所需权限”窗格中，根据情况选择“授予权限”。 此操作将授予对当前目录中的所有帐户的访问权限。 将不再为租户中的每位用户显示同意对话框。 有关详细信息，请参阅[将应用程序与 Azure Active Directory 集成](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。
 12.  选择“是”。
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>使用 Postman 从 Microsoft Intune API 获取数据
@@ -76,7 +77,7 @@ ms.lasthandoff: 01/25/2018
 
 使用 Postman 进行 REST 调用时需要以下信息：
 
-| 属性        | 说明                                                                                                                                                                          | 示例                                                                                       |
+| 属性        | 描述                                                                                                                                                                          | 示例                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 回调 URL     | 在应用设置页中将其设置为回调 URL。                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | 令牌名称       | 用于将凭据传递给 Azure 应用的字符串。 该过程会生成令牌，用于调用数据仓库 API。                          | 持有者                                                                                        |
@@ -88,14 +89,14 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="odata-endpoint"></a>OData 终结点
 
-你还需要终结点。 要获取数据仓库终结点，将需要自定义源 URL。 可以从“数据仓库”边栏选项卡中获取 OData 终结点。
+你还需要终结点。 要获取数据仓库终结点，将需要自定义源 URL。 可从“数据仓库”窗格中获取 OData 终结点。
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” + “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“其他任务”下，选择“设置 Intune 数据仓库”。
 4. 从“使用第三方报表服务”中复制自定义源 URL。 它看上去应类似于：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-终结点的格式如下所示：`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`。 
+终结点的格式如下所示：`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`。
 
 例如，日期实体看上去应类似于：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -151,10 +152,10 @@ ms.lasthandoff: 01/25/2018
 > 可在 [GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs) 上访问以下代码示例。 请访问 GitHub 存储库，了解有关该示例的最新更改和更新。
 
 1.  打开“Microsoft Visual Studio”。
-2.  选择“文件” > “新建项目”。 展开“Visual C#”，然后选择“控制台应用 (.Net Framework)”。 
+2.  选择“文件” > “新建项目”。 展开“Visual C#”，然后选择“控制台应用 (.Net Framework)”。
 3.  将项目命名为 ` IntuneDataWarehouseSamples`，浏览到要保存该项目的位置，然后选择“确定”。
 4.  在解决方案资源管理器中右键单击该解决方案的名称，然后选择“管理用于解决方案的 NuGet 包...”。 选择“浏览”，然后在搜索框中键入 `Microsoft.IdentityModel.Clients.ActiveDirectory`。
-5. 选择该包，选择“管理用于解决方案的包”下的“IntuneDataWarehouseSamples”项目，然后选择“安装”。 
+5. 选择该包，选择“管理用于解决方案的包”下的“IntuneDataWarehouseSamples”项目，然后选择“安装”。
 6. 选择“我接受”以接受 NuGet 包的许可。
 7. 从解决方案资源管理器打开 `Program.cs`。
 
@@ -178,15 +179,15 @@ namespace IntuneDataWarehouseSamples
     * emailAddress - The email address of the user that you will authenticate as.
     *
     * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not 
+    *    This is inline only for simplicity in this sample. We do not
     *    recommend storing passwords in plaintext.
     *
     * applicationId - The application ID of the native app that was created in AAD.
     *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in 
+    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
     *      the Azure portal.
-    * 
-    * collectionName - The name of the warehouse entity collection you would like to 
+    *
+    * collectionName - The name of the warehouse entity collection you would like to
     *      access.
     */
    var emailAddress = "intuneadmin@yourcompany.com";
@@ -224,6 +225,6 @@ namespace IntuneDataWarehouseSamples
 
 ## <a name="next-steps"></a>后续步骤
 
-有关授权、API URL 结构和 OData 终结点的详细信息，请参阅[使用 Intune 数据仓库 API](reports-api-url.md)。 
+有关授权、API URL 结构和 OData 终结点的详细信息，请参阅[使用 Intune 数据仓库 API](reports-api-url.md)。
 
 也可以参考 Intune 数据仓库数据模型，查找 API 中包含的数据实体。 有关详细信息，请参阅[Intune 数据仓库 API 数据模型](reports-ref-data-model.md)

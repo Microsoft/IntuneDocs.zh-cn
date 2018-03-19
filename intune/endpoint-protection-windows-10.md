@@ -1,12 +1,12 @@
 ---
-title: "适用于 Windows 10 的 Intune Endpoint Protection 设置"
-titlesuffix: Azure portal
-description: "了解可用来控制 Windows 10 设备上的 Endpoint Protection 设置（如 BitLocker）的 Intune 设置。"
+title: "适用于 Windows 10 的 Microsoft Intune Endpoint Protection 设置"
+titlesuffix: 
+description: "了解哪些 Intune 设置可用于控制 Windows 10 设备上的 Endpoint Protection 设置（例如 BitLocker）。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 10 及更高版本的 Endpoint Protection 设置
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>在 Microsoft Intune 中创建 适用于 Windows 10 及更高版本的 Endpoint Protection 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-通过 Endpoint Protection 配置文件可以控制 Windows 10 设备上的安全功能（如 BitLocker 和 Windows Defender）。
+可通过 Endpoint Protection 配置文件控制 Windows 10 设备上的安全功能（如 BitLocker 和 Windows Defender）。
 
-使用本主题中的信息，了解如何创建 Endpoint Protection 配置文件。
+查看本文信息，了解如何创建 Endpoint Protection 配置文件。
 
 > [!Note]
 > Windows 10 家庭版和专业版不支持这些设置。
 
 ## <a name="create-an-endpoint-protection-profile"></a>创建 Endpoint Protection 配置文件
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
+2. 在“管理”部分下的“设备配置”边栏选项卡上，选择“配置文件”。
 3. 在配置文件边栏选项卡上，选择“创建配置文件”。
 4. 在“创建配置文件”边栏选项卡上，输入设备功能配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择“Windows 10 及更高版本”。
 6. 在“配置文件类型”下拉列表中，选择“Endpoint Protection”。
-7. 配置所需设置。 使用本主题中的详细信息可帮助了解每个设置的作用。 完成后，请选择“确定”。
+7. 配置所需设置。 查看本文中的信息，了解每项设置的作用。 完成后，请选择“确定”。
 8. 返回到“创建配置文件”边栏选项卡，然后选择“创建”。
 
 系统将创建配置文件并在“配置文件列表”边栏选项卡上显示出来。
@@ -57,6 +57,7 @@ ms.lasthandoff: 02/19/2018
 - **从虚拟浏览器打印** - 允许 PDF、XPS、本地和/或网络打印机打印虚拟浏览器中的内容。
 - **收集日志** - 收集应用程序防护浏览会话内发生的事件的日志。
 - **保留用户生成的浏览器数据** - 允许保存应用程序防护虚拟浏览会话期间创建的用户数据（如密码、收藏和 cookie）。
+- **图形加速** - 在应用程序防护虚拟浏览会话中工作时，可通过启用对虚拟图形处理器访问，提升图形密集型网站的加载速度。
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender 防火墙
@@ -66,7 +67,7 @@ ms.lasthandoff: 02/19/2018
 以下设置适用于所有网络类型。
 
 - **文件传输协议** - 阻止有状态 FTP。
-- **删除前的安全关联空闲时间** - 如果在 n 秒内没有检测到任何网络流量，安全关联则会被删除。
+- **删除前的安全关联空闲时间** - 如果在 n 秒内未检测到任何网络流量，则删除安全关联。
 - **预共享密钥编码** - 使用 UTF-8 对预共享密钥进行编码。
 - **IPsec 免除** - 配置要从 IPsec 中免除的特定流量，包括邻居发现 IPv6 ICMP 类型代码、ICMP、路由器发现 IPv6 ICMP 类型代码以及 IPv4 和 IPv6 DHCP 网络流量。
 - **证书吊销列表验证** - 设置一个值以指示如何强制执行证书吊销列表验证，包括“禁用 CRL 验证”、“仅在遇到已吊销的证书时，CRL 验证才失败”和“如果遇到任何错误，则 CRL 验证失败”。

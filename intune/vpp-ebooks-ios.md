@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/17/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01c90818cf789bdb79b3b4efe5a1db8a2cf1cdfe
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6053eba7bcda74eaf3b2d7de8eecd81487ea3a8d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 电子书
 
@@ -35,7 +35,7 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>管理批量采购的适用于 iOS 设备的书籍
 通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)或 [Apple Volume Purchase Program 教育版](http://volume.itunes.apple.com/us/store)购买多个 iOS 书籍许可证。 这一过程将需要从 Apple 网站设置一个 Apple VPP 帐户并将 Apple VPP 令牌上传到 Intune。  然后，你可以将批量购买信息与 Intune 同步并跟踪你批量购买书籍的使用情况。
 
-## <a name="before-you-start"></a>准备工作
+## <a name="before-you-start"></a>开始之前
 在开始之前，从 Apple 中获取 VPP 令牌并将其上传到 Intune 帐户。 此外：
 
 * 最多可以将 256 个 VPP 令牌与你的 Intune 帐户关联。
@@ -52,28 +52,29 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
-1. 登录到 Azure 门户中。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在 Intune 边栏选项卡上，选择“移动应用”。
-1.  在“移动应用”工作负载中，依次选择“设置” > “iOS VPP 标记”。
-2.  在 VPP 标记列表边栏选项卡上，单击“添加”。
-3.  在“新 VPP 令牌”边栏选项卡中，指定下列信息：
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格中，选择“移动应用”。
+1.  在“移动应用”工作负荷中，依次选择“设置” > “iOS VPP 令牌”。
+2.  在 VPP 令牌列表窗格上单击“创建”。
+3.  在“新 VPP 令牌”窗格中，指定下列信息：
     - **VPP 令牌文件** - 确保你已注册 Volume Purchase Program 企业版或 Volume Purchase Program 教育版。 然后，为你的帐户下载 Apple VPP 令牌，并在此处选择它。
     - **Apple ID** - 输入与批量购买计划关联的帐户的 Apple ID。
     - **VPP 帐户类型** - 从“企业版”或“教育版”中进行选择。
-4. 完成后，请单击“上传”。
+4. 完成后，单击“创建”。
 
-该令牌将显示在令牌列表边栏选项卡中。
+该令牌显示在“令牌列表”窗格中。
 
 
 你可以随时通过选择“立即同步”将 Apple 保存的数据与 Intune 同步。
 
 ## <a name="to-assign-a-volume-purchased-app"></a>如何分配批量购买应用
 
+3. 在“Intune”窗格上，选择“电子书”。
 1. 在“电子书”工作负荷中选择“管理” > “所有电子书”。
-2. 在书籍列表边栏选项卡上，选择要分配的书籍，然后依次选择“...”>“分配组”。
-3. 在<书籍名称> -“已分配的组”边栏选项卡中，选择“管理” > “已分配的组”。
-4. 选择“分配组”，然后在“选择组”边栏选项卡上，选择要将书籍分配到的 Azure AD 组。 目前不支持设备组。
+2. 在书籍列表窗格中，选择要分配的书籍，然后依次选择“...”和“分配组”。
+3. 在“<书籍名称> - 已分配的组”窗格中，选择“管理” > “已分配的组”。
+4. 选择“分配组”，然后在“选择组”窗格中，选择要将书籍分配到的 Azure AD 用户组。 目前不支持设备组。
 选择一个“可用”或“必需”的分配操作。 
 5. 完成后，选择“保存”。
 

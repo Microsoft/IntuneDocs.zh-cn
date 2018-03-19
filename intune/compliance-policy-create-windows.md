@@ -1,30 +1,30 @@
 ---
-title: "如何创建 Windows 符合性策略"
-titleSuffix: Azure portal
-description: "了解如何创建适用于 Windows 设备的符合性策略。"
+title: "在 Microsoft Intune 中创建 Windows 设备符合性策略"
+titleSuffix: 
+description: "为 Windows 设备创建 Microsoft Intune 设备符合性策略，让用户能够指定设备必须满足的符合性要求。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中创建适用于 Windows 设备的设备符合性策略
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-为每个平台创建符合性策略。 可以在 Azure 门户中创建合规性策略。 若要详细了解什么是合规性策略，请参阅[什么是设备合规性](device-compliance.md)主题。 若要了解创建合规性策略之前需要解决的先决条件，请参阅[设备合规性入门](device-compliance-get-started.md)主题。
+适用于 Windows 的 Intune 设备符合性策略可指定 Windows 设备须满足才能被视为符合的规则和设置。 可将这些策略与条件访问相结合，进而允许/阻止访问公司资源，还可获取设备报告并采取措施应对不符合的情形。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。 若要深入了解符合性策略以及创建符合性策略之前需满足的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 下表说明了将符合性策略与条件访问策略一起使用时如何管理非符合性设置。
 
@@ -51,12 +51,14 @@ ms.lasthandoff: 02/14/2018
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>在 Azure 门户中创建合规性策略
 
-1. 在“Intune”边栏选项卡中，选择“设置设备合规性”。 在“管理”下，选择“所有设备合规性策略”，然后选择“创建”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+1. 从“Intune”窗格中，选择“设备符合性”。 在“管理”下，选择“策略”，然后选择“创建策略”。
 2. 键入名称、说明，并选择要应用此策略的平台。
-3. 选择“合规性要求”以打开合规性要求边栏选项卡。  可以在此处指定“安全性”、“设备运行状况”和“设备属性”设置，完成后，选择“确定”。
+3. 选择“设置配置”，在此处指定“系统安全性”、“设备运行状况”和“设备属性”设置。 完成后，选择“确定”。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ ms.lasthandoff: 02/14/2018
 
 ## <a name="assign-user-groups"></a>分配用户组
 
-若要为用户分配合规性策略，请选择已配置的策略。 可在“合规性 - 策略”边栏选项卡中找到现有策略。
+若要为用户分配合规性策略，请选择已配置的策略。 可在“设备符合性 – 策略”窗格中找到现有策略。
 
-1. 选择要分配给用户的策略，然后选择“分配”。 此操作将打开边栏选项卡，可以在其中选择“Azure Active Directory 安全组”并将其分配给策略。
-2. 选择“选择组”以打开显示 Azure AD 安全组的边栏选项卡。  选择“选择”会将策略部署到用户。
+1. 选择要分配给用户的策略，然后选择“分配”。 随即打开一个窗格，可在此处选择“Azure Active Directory 安全组”并对其分配策略。
+2. 选择“所选组”以打开显示 Azure AD 安全组的窗格。  选择“保存”后，即会向用户部署策略。
 
 你已将策略应用于用户。 将评估策略针对的用户所使用设备的合规性。
 
@@ -78,7 +80,7 @@ ms.lasthandoff: 02/14/2018
 ### <a name="password"></a>密码
 
 - **需要密码才可解锁移动设备：**将此选项设置为“是”，以要求用户在访问其设备之前输入密码。
-- **允许简单密码：**将此选项设置为“是”可允许用户创建简单密码，如“1234”或“1111”。
+- **允许简单密码：**将此选项设置为“是”后，用户即可创建简单密码，如“1234”或“1111”。
 - **最短密码长度：**指定用户密码必须包含的最小位数或最小字符数。
 - **所需的密码类型：**指定用户是要创建“字母数字”还是“数字”密码。
 
@@ -93,7 +95,7 @@ ms.lasthandoff: 02/14/2018
 为此设置设置较大的数字将要求用户创建更复杂的密码。 对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过 8 个字符或者最小字符集数大于 2，则无法正确评估符合性策略。
 
 - **需要提供密码之前须经历的无活动分钟数：**指定用户必须重新输入其密码前的空闲时间。
-- **密码过期(天)：**选择用户密码过期之前的天数，然后必须创建一个新密码。
+- **密码过期（天）**：选择用户密码过期之前的天数，过期后用户必须新建一个密码。
 - **记住密码历史记录：**将此设置与“防止重用旧密码”结合使用，以限制用户使用以前创建的密码。
 - **防止重用以前的密码：**如果选择了“记住密码历史记录”，请指定不能重用的以前用过的密码数量。
 - **当设备从空闲状态返回时需要密码：**此设置应该与**“需要提供密码之前处于非活动状态的分钟数”**设置一起使用。 设备在**“需要提供密码之前处于非活动状态的分钟数”**设置指定的时间内处于非活动状态时，将提示最终用户输入密码才能访问设备。
@@ -132,7 +134,7 @@ ms.lasthandoff: 02/14/2018
 
 对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过 8 个字符或者“最小字符集数”大于 2 个字符，则无法正确评估符合性策略。
 
-- **所需密码类型：**在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持
+- **所需密码类型：**在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。
 
 指定用户是否必须创建**字母数字**或**数字**密码。
 
@@ -150,7 +152,7 @@ ms.lasthandoff: 02/14/2018
 
 - **密码过期 (天数)：**在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。
 
-选择用户的密码过期之前的天数，而且他们必须创建一个新的密码。
+选择用户的密码过期之前的天数，过期后用户必须新建创建一个密码。
 
 - **记住密码历史记录：** - 在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持
 
@@ -183,10 +185,10 @@ ms.lasthandoff: 02/14/2018
 
 当设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
-若要查找要用于**所需的最低操作系统**和**允许的最高操作系统版本**设置的操作系统版本，请从命令提示符处运行 **winver** 命令。 Winver 命令返回报告的操作系统版本。+
+若要查找要用于**所需的最低操作系统**和**允许的最高操作系统版本**设置的操作系统版本，请从命令提示符处运行 **winver** 命令。 Winver 命令返回报告的操作系统版本。
 
 - Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本规则设置为 Windows 8.1，则该设备将报告为不符合要求，即使该设备具有 Windows 8.1 也是如此。
-- 运行 Windows 10 的 PC 的版本应设置为 &quot;10.0&quot;+ winver 命令返回的 OS 内部版本号。
+- 运行 Windows 10 的 PC 的版本应设置为 "10.0"+ winver 命令返回的 OS 内部版本号。
 
 ## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支持
 

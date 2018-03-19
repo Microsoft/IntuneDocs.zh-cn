@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>管理软件更新
 
@@ -71,20 +71,21 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
 ## <a name="how-to-create-and-assign-update-rings"></a>如何创建并分配更新通道
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**软件更新**”。
-4. 在“**软件更新**”边栏选项卡上，选择“**管理**” > “**Windows 10 更新通道**”。
-5. 在显示更新通道列表的边栏选项卡上，选择“**创建**”。
-6. 在“**创建更新通道**边栏选项卡上，提供更新通道的名称和可选描述，然后选择“**设置**”。
-7. 在“**设置**”边栏选项卡上，配置以下信息：
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格上，选择“软件更新”。
+4. 在“软件更新”窗格上，选择“管理” > “Windows 10 更新圈”。
+5. 在显示更新圈列表的窗格上，选择“创建”。
+6. 在“创建更新圈”窗格上，提供更新圈的名称和可选描述，然后选择“设置 - 配置”。
+7. 在“设置”窗格上，配置以下信息：
     - **维护服务频道**：设置供设备接收 Windows 更新的频道（半年频道（定向）或半年频道）。
-    - **Microsoft 更新**：选择是否从 Microsoft更新扫描应用更新。
+    - **Microsoft 产品更新**：选择是否从 Microsoft 更新扫描应用更新。
     -  **Windows 驱动程序**：选择是否在更新期间排除 Windows 更新驱动程序。
     - **自动更新行为**：选择如何管理自动更新行为以扫描、下载和安装更新。 有关详细信息，请参阅[更新/允许自动更新](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)。
     - **质量更新延迟期(天)** - 指定质量更新延迟的天数。 自质量更新发布起，你最晚应在 30 天内接收这些质量更新。  
 
     质量更新通常是对现有 Windows 功能的修复和改进，且通常在每月的第一个星期二发布，但也可由 Microsoft 随时发布。 你可以定义在质量更新发布后，是否延迟接收质量更新（以及延迟多长时间）。
+
     - **功能更新延迟期(天)** - 指定功能更新延迟的天数。 自功能更新发布起，你最晚应在 180 天内接收这些功能更新。
 
     功能更新通常是 Windows 的新功能。 将维护服务频道设置为半年频道（定向）或半年频道后，可以在 Windows 更新上定义在 Microsoft 发布功能更新后，是否延迟接收功能更新（以及延迟多长时间）。
@@ -93,13 +94,13 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
     **如果将维护服务频道设置为半年频道，将延迟期设置为 30 天**：假设功能更新 X 将于一月以半年频道形式在 Windows 更新上公开发布。 功能更新 X 将在四个月后（即 4 月份）发布到半年频道。 设备将在此半年频道发布后的 30 天后接收此功能更新，并将在 5 月进行更新。
 
-    - **传递优化** - 选择设备下载 Windows 更新的方式。 有关详细信息，请参阅 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
-1. 完成后，单击“**确定**”，然后在“**创建更新通道**”边栏选项卡上单击“**创建**”。
+    - **传递优化下载模式** - 选择设备下载 Windows 更新的方式。 有关详细信息，请参阅 [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)。
+1. 完成后，单击“确定”，然后在“创建更新圈”窗格上单击“创建”。
 
 新的更新通道显示在更新通道列表中。
 
 1. 要分配通道，请在更新通道列表中选择一个通道，然后在“<*通道名称*>”选项卡上选择“**分配**”。
-2. 在下一个选项卡上，选取“**选择组**”，然后选择要向其分配此通道的组。
+2. 在下一个选项卡上，选择“选择要包含的组”，然后选择要向其分配此通道的组。
 3. 完成后，选取“**选择**”以完成分配。
 
 ## <a name="update-compliance-reporting"></a>更新一致性报告
@@ -108,22 +109,21 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 ### <a name="review-update-compliance-in-intune"></a>在 Intune 中查看更新符合性 
 <!-- 1352223 -->
 通过策略报告，查看已配置的 Windows 10 更新通道的部署状态。 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**软件更新**”。
-4. 在“软件更新”边栏选项卡上，选择“概述”。 可在此处查看有关已分配的任意更新通道状态的一般信息。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格上，选择“软件更新”。
+4. 在“软件更新”窗格上，选择“概述”。 可在此处查看有关已分配的任意更新通道状态的一般信息。
 5. 打开以下报告之一： 
      
    **对于所有部署通道：**
-   1. 在“软件更新” > “Windows 10 更新通道”边栏选项卡上。 
+   1. 在“软件更新” > “Windows 10 更新圈”窗格上。 
    2. 在“监视”部分，选择“每个更新通道的部署状态”。
                    
    **对于特定部署通道：** 
-   1. 在“软件更新” > “Windows 10 更新通道”边栏选项卡中，选择要查看的部署通道。
+   1. 在“软件更新” > “Windows 10 更新圈”窗格中，选择要查看的部署圈。
    2. 在“监视”部分，从下列报表中进行选择以查看有关更新通道的更详细信息：
-      - 针对设备的更新通道部署
-      - 针对用户的更新通道部署
-      - 每设置部署状态
+      - **设备状态**
+      - **用户状态**
 
 ### <a name="review-update-compliance-using-oms"></a>使用 OMS 查看更新符合性
 你可以通过在 Operations Management Suite (OMS) 中使用名为“更新一致性”的免费解决方案来监视 Windows 10 更新推出。 有关详细信息，请参阅[使用更新一致性监视 Windows 更新](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)。 使用此解决方案时，可以将商业 ID 部署到要报告更新一致性的任何 Intune 托管的 Windows 10 设备上。
@@ -136,19 +136,19 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
 - **设置名称**：Windows Analytics 商业ID
 - **设置说明**：为 Windows Analytics 解决方案配置商业 ID
-- **数据类型**：字符串
 - **OMA-URI**（区分大小写）：./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **数据类型**：字符串
 - **值**：<*使用 OMS 工作空间中的 Windows 遥测选项卡上显示的 GUID* >
 
 ![诊断和使用情况数据的 Windows 设置](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>如何暂停更新
 从暂停更新的时间算起，设备暂停接收功能更新或质量更新的期限最长为 35 天。 超过最长期限后，暂停功能将自动过期，设备将扫描 Windows 更新以获取适用的更新。 执行此扫描后，你可以再次暂停更新。
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“**Intune**”边栏选项卡上，选择“**软件更新**”。
-4. 在“**软件更新**”边栏选项卡上，选择“**管理**” > “**Windows 10 更新通道**”。
-5. 在显示更新通道列表的边栏选项卡上，选择要暂停的通道，然后选择“**...**” > “**暂停质量**”> 或“**暂停功能**”，具体取决于要暂停的更新类型。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格上，选择“软件更新”。
+4. 在“软件更新”窗格上，选择“管理” > “Windows 10 更新圈”。
+5. 在显示更新圈列表的窗格上，选择要暂停的圈，然后选择“...” > “暂停质量”> 或“暂停功能”，具体取决于要暂停的更新类型。
 
 > [!IMPORTANT]
 > 发出暂停命令时，设备在下次检查服务时会收到此命令。 可能的情况是，在设备签入前，它们可能安装了计划更新。

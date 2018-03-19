@@ -1,29 +1,29 @@
 ---
-title: "适用于 iOS 设备的 Intune VPN 设置"
-titlesuffix: Azure portal
-description: "了解可用于在 iOS 设备上配置 VPN 连接的 Intune 设置。"
+title: "适用于运行 iOS 的设备的 Microsoft Intune VPN 设置"
+titlesuffix: 
+description: "了解哪些 Intune 设置 可用于在运行 iOS 的设备上配置 VPN 连接。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 iOS 设备的 VPN 设置
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>在 Microsoft Intune 中为运行 iOS 的设备配置 VPN 设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文介绍可用于在运行 iOS 的设备上配置 VPN 连接的 Intune 设置。
 
 下表中并非所有值都可配置，具体取决于所选择的设置。
 
@@ -38,8 +38,8 @@ ms.lasthandoff: 01/25/2018
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
-    - **F5 Edge Client**
+    - **SonicWall Mobile Connect**
+    -  **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPSec)**
     - **Citrix**
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/25/2018
 - **按需规则** - 此设置让你可以配置条件规则，用于控制何时启动 VPN 连接。 例如，可以创建一个条件，仅在设备未连接到任何公司 Wi-Fi 网络时才使用 VPN 连接。 或者可以创建一个条件，如果设备无法访问指定的 DNS 搜索域，则不启动 VPN 连接。
 
     - SSID 或 DNS 搜索域 - 选择此条件将使用无线网络 SSID 还是 DNS 搜索域。 选择“添加”以配置一个或多个 SSID 或搜索域。
-    - **URL 字符串探测** -（可选）提供规则用作测试的 URL。 如果安装有此配置文件的设备能在不重定向的情况下访问此 URL，则启动 VPN，且将该设备连接到目标 URL。 用户将看不到该 URL 字符串探测站点。 URL 字符串探测示例是审核 Web 服务器的地址，用于在连接 VPN 前检查设备的相容性。 另一种可能性是 URL 通过 VPN 将设备连接到目标 URL 前，测试 VPN 连接至站点的能力。
+    - **URL 字符串探测** -（可选）提供规则用作测试的 URL。 如果安装有此配置文件的设备能在不重定向的情况下访问此 URL，则启动 VPN，且将该设备连接到目标 URL。 用户看不到该 URL 字符串探测站点。 URL 字符串探测示例是审核 Web 服务器的地址，用于在连接 VPN 前检查设备的相容性。 另一种可能性是 URL 通过 VPN 将设备连接到目标 URL 前，测试 VPN 连接至站点的能力。
     - 域操作 - 选择以下项之一：
         - 需要时连接 - 
         - 从不连接 - 
@@ -75,6 +75,6 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="proxy-settings"></a>代理设置
 
-- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的**代理服务器 URL**（例如 **http://proxy.contoso.com**）。
+- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL（例如 http://proxy.contoso.com）。
 - **地址** - 输入代理服务器地址（作为 IP 地址）。
 - **端口号** - 输入与代理服务器关联的端口号。

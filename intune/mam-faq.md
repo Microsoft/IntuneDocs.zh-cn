@@ -1,25 +1,19 @@
----
-title: "有关 MAM 和应用保护的常见问题"
-description: "本文提供了针对 Intune 移动应用程序管理 (MAM) 和 Intune 应用保护的一些常见问题解答。"
-keywords: 
-author: Erikre
-ms.author: erikre
-manager: angrobe
-ms.date: 02/06/2018
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-ms.reviewer: erikre
-ms.suite: ems
+--
+# <a name="required-metadata"></a>必需元数据
+
+title: 有关 MAM 和应用保护的常见问题 description: 本文解答了针对 Intune 移动应用程序管理 (MAM) 和 Intune 应用保护的一些常见问题。
+keywords: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+
+# <a name="optional-metadata"></a>可选元数据
+
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: erikre ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-azure
-ms.openlocfilehash: 23ab21e21ff2ffd471523f8132acffd7545358f0
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+
 ---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
 本文提供了针对 Intune 移动应用程序管理 (MAM) 和 Intune 应用保护的一些常见问题解答。
@@ -135,14 +129,21 @@ ms.lasthandoff: 02/09/2018
 
 **是否有一种安全的方法可以从管理的应用中打开 Web 链接？** 可以！ IT 管理员可以为 [Intune Managed Browser 应用](app-configuration-managed-browser.md)（一种由 Microsoft Intune 开发的可使用 Intune 轻松管理的 Web 浏览器）部署和设置应用保护策略。 IT 管理员可以要求 Intune 托管应用中的所有 Web 链接均使用 Managed Browser 应用打开。
 
-
 ## <a name="app-experience-on-android"></a>Android 上的应用体验
 
 **为什么在 Android 设备上使用 Intune 应用保护需要公司门户应用？** 应用保护的许多功能都内置于公司门户应用中。 虽然始终需要公司门户应用，但设备注册是不必要的。 对于 MAM-WE，最终用户只需在设备上安装公司门户应用即可。
 
+**配置给同一组应用和用户的多个 Intune 应用保护访问设置如何在 Android 上运行？** 当用户尝试从公司帐户访问目标应用时，系统将在最终用户设备上按特定顺序应用 Intune 应用访问保护策略。 通常是先访问块，再访问可取消的警告。 例如，如果适用于特定用户/应用，则先应用阻止用户访问的 Android 修补程序最低版本设置，再应用警告用户进行修补程序升级的 Android 修补程序最低版本设置。 因此，如果 IT 管理员将 Android 修补程序最低版本配置为 2018-03-01，并将 Android 修补程序最低版本（仅限警告）配置为 2018-02-01，则当尝试访问该应用的设备具有 2018-01-01 版修补程序时，系统将基于更严格的 Android 修补程序最低版本设置阻止最终用户的访问。 
+
+处理不同类型的设置时，先处理应用版本要求，其次是 Android 操作系统版本要求，再是 Android 修补程序版本要求。 然后，按相同顺序检查各类型设置的所有警告。
+
 ## <a name="app-experience-on-ios"></a>iOS 上的应用体验
 
-**即使将数据传输策略设置为“仅管理的应用”或“无应用”，我也可以使用 iOS 共享扩展在非管理应用中打开工作或学校数据。这样不会泄漏数据吗？** 在不管理设备的情况下，Intune 应用保护策略不能控制 iOS 共享扩展。 因此，Intune _**会在对“公司”数据进行应用外共享之前对其进行加密**_。 可通过尝试在管理的应用外打开“公司”文件对此进行验证。 该文件应该已加密，且无法在托管应用外打开。
+**即使将数据传输策略设置为“仅管理的应用”或“无应用”，我也可以使用 iOS 共享扩展在非管理应用中打开工作或学校数据。这样不会泄漏数据吗？** 在不管理设备的情况下，Intune 应用保护策略不能控制 iOS 共享扩展。 因此，Intune _**会在对“公司”数据进行应用外共享之前对其进行加密**_。 可通过尝试在管理的应用外打开“公司”文件对此进行验证。 该文件应进行加密，且无法在托管应用外打开。
+
+**配置给同一组应用和用户的多个 Intune 应用保护访问设置如何在 iOS 上运行？** 当用户尝试从公司帐户访问目标应用时，系统将在最终用户设备上按特定顺序应用 Intune 应用访问保护策略。 通常先访问擦除，然后是块，再是可取消的警告。 例如，如果适用于特定用户/应用，则先应用阻止用户访问的最低 iOS 操作系统设置，再应用警告用户更新其 iOS 版本的最低 iOS 操作系统设置。 因此，如果 IT 管理员将最低 iOS 操作系统配置为 11.0.0.0 并将最低 iOS 操作系统（仅限警告）配置为 11.1.0.0，则当尝试访问该应用的设备具有 iOS 10 时，系统将基于更严格的最低 iOS 操作系统版本设置阻止最终用户的访问。
+
+处理不同类型的设置时，先处理 Intune App SDK 版本要求，其次是应用版本要求，再是 iOS 操作系统版本要求。 然后，按相同顺序检查各类型设置的所有警告。 建议仅根据 Intune 产品团队针对关键阻止方案提供的指导配置 Intune App SDK 版本要求。
 
 ## <a name="see-also"></a>另请参阅
 - [实现 Intune 计划](planning-guide-onboarding.md)

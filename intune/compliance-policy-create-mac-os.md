@@ -1,12 +1,12 @@
 ---
-title: "如何创建 macOS 符合性策略"
-titleSuffix: Azure portal
-description: "了解如何创建用于 macOS 设备的符合性策略。"
+title: "在 Microsoft Intune 中创建 macOS 设备符合性策略"
+titleSuffix: 
+description: "为 macOS 设备创建 Microsoft Intune 设备符合性策略，以便可指定设备必须满足的符合性要求。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 创建适用于 macOS 设备的设备符合性策略
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+适用于 macOS 的 Intune 设备符合性策略指定 macOS 设备为实现符合性而必须满足的规则和设置。 可将这些策略与条件访问相结合，进而允许/阻止访问公司资源，还可获取设备报告并采取措施应对不符合的情形。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -108,7 +110,7 @@ ms.lasthandoff: 02/14/2018
 
 2. 成功登录后，可以看到“Azure 仪表板”。
 
-3. 从左侧菜单中选择“**更多服务**”，然后在文本框筛选器中键入 **Intune**。
+3. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
 4. 选择“Intune”，可以看到“Intune 仪表板”。
 
@@ -118,7 +120,7 @@ ms.lasthandoff: 02/14/2018
 
 7. 键入名称、说明，并选择要应用此策略的平台。
 
-8. “macOS 符合性策略”边栏选项卡将打开，选择设备符合性设置类别“安全”、“设备运行状况”和“设备属性”以指定设置。
+8. “macOS 符合性策略”窗格将打开，选择设备符合性设置类别“系统安全性”、“设备运行状况”和“设备属性”以指定设置。
 
 10. 选择设置后，在每个设备符合性设置类别下选择“确定”。
 
@@ -126,15 +128,15 @@ ms.lasthandoff: 02/14/2018
 
 ## <a name="assign-user-groups"></a>分配用户组
 
-若要为用户分配合规性策略，请选择已配置的策略。 可在“符合性策略”边栏选项卡中找到现有策略。
+若要为用户分配合规性策略，请选择已配置的策略。 可在“设备符合性 – 策略”窗格中找到现有策略。
 
-1. 选择要分配给用户的设备符合性策略，然后选择“分配”。 此操作将打开边栏选项卡，可以在其中选择“Azure Active Directory 安全组”并将其分配给策略。
+1. 选择要分配给用户的设备符合性策略，然后选择“分配”。 随即打开一个窗格，可在此处选择“Azure Active Directory 安全组”并对其分配策略。
 
-2. 选择“选择组”以打开显示 Azure AD 安全组的边栏选项卡。
+2. 选择“所选组”以打开显示 Azure AD 安全组的窗格。
 
-3. 选择“选择”，然后选择“保存”，以将设备符合性策略分配给 Azure AD 安全组。
+3. 选择“保存”，以将设备符合性策略分配给 Azure AD 安全组。
 
-4. 将设备符合性策略分配给组后，可以关闭“分配”边栏选项卡。
+4. 将设备符合性策略分配给组后，可以关闭“分配”窗格。
 
     > [!TIP]
     > 默认情况下，设备每 8 小时检查一次符合性，但用户可以通过 Intune 公司门户应用强制执行此过程。

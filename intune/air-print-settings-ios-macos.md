@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f55d05dd39fca02e72535cbbff9afb8d575ed9f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7a8ef24a9e6946145bf69d279566f3b736e6efa1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>适用于 iOS 和 macOS 设备的 AirPrint 设置
 
@@ -40,8 +40,9 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="configure-an-airprint-profile"></a>配置 AirPrint 配置文件
 
-1. 在“设备功能”边栏选项卡上，选择“AirPrint”。
-2. 在“AirPrint”边栏选项卡上，若要添加 AirPrint 目标，输入其“IP 地址” 和“资源路径”，然后单击“添加”。
+1. 从 [Azure 门户中的 Intune](https://portal.azure.com)，导航到[设备配置区域中的“设备功能”](device-features-configure.md)。 
+1. 在“设备功能”窗格上，选择“AirPrint”。
+2. 在“AirPrint”窗格上，若要添加 AirPrint 目标，输入其“IP 地址”和“资源路径”，然后单击“添加”。
 3. 继续添加所需的目标。 完成后，请选择“确定”。
 
 此外，还可以从逗号分隔值 (.csv) 文件导入打印机列表或导出该列表。

@@ -1,29 +1,30 @@
 ---
-title: "适用于 Windows Phone 8.1 的 Intune 设备限制设置"
-titleSuffix: Azure portal
-description: "了解可用来控制 Windows Phone 8.1 设备上的设备设置和功能的 Intune 设置。"
+title: "适用于 Windows Phone 8.1 的 Microsoft Intune 设备限制设置"
+titleSuffix: 
+description: "了解可用于控制运行 Windows Phone 8.1 的设备中设备设置和功能的 Intune 设置。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows Phone 8.1 设备限制设置
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文介绍可为运行 Windows Phone 8.1 的设备配置的 Microsoft Intune 设备限制设置。
+
 
 ## <a name="general"></a>常规
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="password"></a>密码
 
 -   **密码** - 需要最终用户输入密码才能访问设备。
-    -   **需要的密码类型** - 指定需要的密码类型，例如仅限字母数字或数字。
+    -   **所需的密码类型** - 指定需要的密码类型，例如仅限字母数字或数字。
     -   **最短密码长度** - 指定密码中所需的最少字符数。
     -   **简单密码** - 指定可使用如“0000”和“1234”之类的简单密码。
     -   **擦除设备前登录失败的次数** - 指定在擦除设备前允许输入错误密码的次数。
@@ -69,13 +70,13 @@ ms.lasthandoff: 01/25/2018
 
 打开应用页面，并将该 URL 复制到剪贴板。 你现在可以在允许的或阻止的应用列表中将它用作 URL。
 
-例如：在应用商店中搜索 Skype 应用。 你将使用的 URL 是 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**。
+例如：在应用商店中搜索 Skype 应用。 你使用的 URL 是 http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51。
 
 
 
 ### <a name="additional-options"></a>其他选项
 
-还可以单击“导入”，填充 csv 文件中的列表（格式为 <*应用 URL*>,<*应用名称*>,<*应用发布者*>），或单击“导出”，创建包含受限制应用列表内容且格式相同的 csv 文件。
+还可以单击“导入”，以填充 csv 文件中的列表（格式为<应用 URL>、<应用名>、<app publisher>），或单击“导出”，以创建包含受限制应用列表内容且格式相同的 csv 文件。
 
 
 ## <a name="browser"></a>浏览器

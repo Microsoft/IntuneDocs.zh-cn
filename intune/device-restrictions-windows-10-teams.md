@@ -1,29 +1,29 @@
 ---
-title: "适用于 Windows 10 协同版的 Intune 设备限制"
-titlesuffix: Azure portal
-description: "了解 Windows 10 协同版设备的设备限制。"
+title: "适用于 Windows 10 协同版的 Windows Intune 设备限制"
+titlesuffix: 
+description: "了解可用于运行 Windows 10 协同版的设备的设备限制。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3648f8b273f666d1898226f3da8580e55a6bc6f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10 协同版设备限制设置
+# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 协同版设备限制设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文介绍可为运行 Windows 10 协同版的设备配置的 Microsoft Intune 设备限制设置。
 
 
 ## <a name="apps-and-experience"></a>应用和体验
@@ -47,7 +47,7 @@ ms.lasthandoff: 01/25/2018
 
 - **用于无线投影的 PIN** - 指定是否必须先输入 PIN，然后才能使用设备的无线投影功能。
 - Miracast 无线投影 - 如果想让 Windows 10 协同版设备使用 Miracast 启用的设备进行投影，则选择此选项。
-- Miracast 无线投影频道 - 选择将用于建立连接的 Miracast 频道。
+- **Miracast 无线投影频道** - 选择用于建立连接的 Miracast 频道。
 
 
 ## <a name="next-steps"></a>后续步骤

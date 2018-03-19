@@ -1,11 +1,12 @@
 ---
-title: "数据库仓库数据模型 | Microsoft Docs"
-description: "Intune 数据仓库每天对数据进行采样，呈现不断变化的移动环境的历史视图。"
+title: "数据库仓库数据模型"
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune 数据仓库每天都会采样数据，显示不断变化的移动环境的历史视图。"
 keywords: "Intune 数据仓库"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>数据库仓库数据模型
 
-Intune 数据仓库每天对数据进行采样，呈现不断变化的移动设备环境的历史视图。 该视图由一段时间内相关的事物组成。
+Intune 数据仓库每天对数据进行采样，呈现不断变化的移动设备环境的历史视图。 该视图由一段时间内相关的实体组成。
 
-## <a name="things-entity-sets"></a>事物：实体集
+## <a name="entities-entity-sets"></a>实体：实体集
 
 仓库公开以下高级区域中的数据：
 
@@ -33,7 +34,7 @@ Intune 数据仓库每天对数据进行采样，呈现不断变化的移动设�
   -  应用和软件清单
   -  设备配置和符合性策略
 
-这些区域包含对你的 Intune 环境有意义的实体或事物。 你可在以下主题中找到关于实体集的详细信息：
+这些区域包含对 Intune 环境有意义的实体。 你可在以下主题中找到关于实体集的详细信息：
 
   -  [应用程序](reports-ref-application.md)
   -  [日期](reports-ref-date.md)

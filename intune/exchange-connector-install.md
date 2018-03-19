@@ -1,12 +1,12 @@
 ---
-title: "使用 Intune 设置本地 EAS 的 Exchange 连接器"
-titleSuffix: Azure portal
-description: "使用 Connector 工具实现 Intune 与本地 Exchange Server 的通信"
+title: "设置 Microsoft Intune 本地 Exchange 连接器"
+titleSuffix: 
+description: "基于 Intune 注册和 Exchange Active Sync (EAS)，使用本地 Exchange 连接器来管理设备对 Exchange 邮箱的访问。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange Connector
 
-基于设备是否在 Intune 中注册且符合 Intune 设备符合性策略，本地 Exchange Server 环境可以使用 Intune 本地 Exchange Connector 来管理设备对本地 Exchange 邮箱的访问。 本地 Exchange Connector 还负责通过使用 Intune 与现有的 Exchange Active Sync (EAS) 记录同步，发现连接到本地 Exchange Server 的移动设备。
+基于设备是否已在 Intune 中注册且是否符合 Intune 设备符合性策略，本地 Exchange Server 环境可以使用 Intune 本地 Exchange 连接器来管理设备对本地 Exchange 邮箱的访问。 本地 Exchange Connector 还负责通过使用 Intune 与现有的 Exchange Active Sync (EAS) 记录同步，发现连接到本地 Exchange Server 的移动设备。
 
 > [!IMPORTANT]
 > Intune 仅支持每个订阅中存在一个本地 Exchange Connector 连接（任意类型）。
@@ -70,11 +70,11 @@ ms.lasthandoff: 02/03/2018
 
 1. 在本地 Exchange Connector 支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](http://portal.azure.com)。
 
-2. 从左侧菜单中选择“**更多服务**”，然后在文本框筛选器中键入 **Intune**。
+2. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
 3. 选择 Intune 后，即打开“Intune 仪表板”，选择“本地访问”。
 
-4. 在“本地访问 - Exchange ActiveSync 连接器”边栏选项卡的“设置”部分，选择“下载本地连接器”。
+4. 选择“Exchange ActiveSync 连接器”，然后选择“下载本地连接器”。
 
 5.  本地 Exchange Connector 包含在可以打开或保存的压缩 (.zip) 文件夹中。 在“文件下载”对话框中，选择“保存”以将压缩的文件夹存储到安全位置。
 
@@ -93,7 +93,7 @@ ms.lasthandoff: 02/03/2018
 
 3.  在“Microsoft Intune Exchange Connector”对话框中，选择“本地 Microsoft Exchange Server” 或“托管 Microsoft Exchange Server”。
 
-  ![选择 Exchange 服务器类型](./media/intune-sa-exchange-connector-config.png)
+  ![显示选择 Exchange Server 类型的位置的图像](./media/intune-sa-exchange-connector-config.png)
 
   对于本地 Exchange 服务器，请提供托管**客户端访问服务器**角色的 Exchange 服务器的服务器名称或完全限定的域名。
 
@@ -116,7 +116,7 @@ ms.lasthandoff: 02/03/2018
 
     5. 在“用户(域\用户)”和“密码”字段中，输入连接到 Exchange 服务器所需的凭据。
 
-    6.  提供必要的管理凭据将通知发送到用户的 Exchange Server 邮箱。 可使用 Intune 中的条件访问策略配置这些通知。
+    6.  提供必要的凭据，将通知发送到用户的 Exchange Server 邮箱。 此用户可专用于通知。 通知用户需要 Exchange 邮箱才能通过电子邮件发送通知。 可使用 Intune 中的条件访问策略配置这些通知。  
 
         确保在 Exchange 客户端访问服务器上配置 Autodiscover 服务和 Exchange Web 服务。 有关详细信息，请参阅[客户端访问服务器](https://technet.microsoft.com/library/dd298114.aspx)。
 

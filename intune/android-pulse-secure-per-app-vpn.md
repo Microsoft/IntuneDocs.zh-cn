@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46555f776ff93207f4672dc5d97abbaa2323b234
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2a207f15e7c5b678368eeb54e8452638ff5a01ef
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件
 
@@ -37,12 +37,12 @@ ms.lasthandoff: 01/25/2018
 ## <a name="step-1-create-a-vpn-profile"></a>步骤 1：创建 VPN 配置文件
 
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-2. 在配置文件列表边栏选项卡中，选择“创建配置文件”。
-3. 在“创建配置文件”边栏选项卡上，输入 VPN 配置文件的“名称”和可选“说明”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格上，选择“设备配置”。
+2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
+2. 在配置文件窗格列表上，选择“创建配置文件”。
+3. 在“创建配置文件”窗格上，输入 VPN 配置文件的“名称”和可选“说明”。
 4. 从“平台”下拉列表中，选择“Android”。
 5. 在“配置文件类型”下拉列表中，选择“VPN”。
 3. 选择“设置”  > “配置”，然后按照[如何配置 VPN 设置](vpn-settings-configure.md)和[适用于 Android 设备的 Intune VPN 设置](vpn-settings-android.md)中的设置配置 VPN 配置文件。
@@ -51,19 +51,19 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>步骤 2：创建自定义配置策略
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在“配置文件”边栏选项卡上，单击“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入自定义配置文件的“名称”和“说明”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格上，选择“设备配置”。
+2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
+3. 在“配置文件”窗格上，单击“创建配置文件”。
+4. 在“创建配置文件”窗格上，输入自定义配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择“Android”。
 6. 从“配置文件类型”下拉列表中，选择“自定义”。
 7. 选择“设置” > “配置”。
-3. 在“自定义 OMA-URI 设置”边栏选项卡上，选择“添加”。
+3. 在“自定义 OMA-URI 设置”窗格上，选择“添加”。
     - 输入设置名称。
-    - 为“数据类型”，指定“字符串”。
     - 为“OMA-URI”指定以下字符串：./Vendor/MSFT/VPN/Profile/Name/PackageList，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
+    - 为“数据类型”，指定“字符串”。
     - 对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
 
 ![Android per-app VPN 自定义策略示例](./media/android_per_app_vpn_oma_uri.png)
@@ -71,10 +71,10 @@ ms.lasthandoff: 01/25/2018
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>将应用列表设置为方块列表或允许列表（可选）
   通过使用**方块列表**值，可指定列表中的应用将*不能*使用 VPN 连接。 所有其他应用将通过 VPN 连接。
 或者，你可使用 **WHITELIST** 值来指定*可以*使用 VPN 连接的应用列表。 不在列表中的应用不会通过 VPN 连接。
-  1.    在“自定义 OMA-URI 设置”边栏选项卡上，选择“添加”。
+  1.    在“自定义 OMA-URI 设置”窗格上，选择“添加”。
   2.    输入设置名称。
-  3.    为“数据类型”，指定“字符串”。
-  4.    对于 OMA-URI，使用以下字符串：./Vendor/MSFT/VPN/Profile/Name/Mode，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为**./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
+  3.    对于 OMA-URI，使用以下字符串：./Vendor/MSFT/VPN/Profile/Name/Mode，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为**./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
+  4.    为“数据类型”，指定“字符串”。
   5.    对于**值**，输入 **BLACKLIST** 或 **WHITELIST**。
 
 

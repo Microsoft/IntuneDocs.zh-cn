@@ -1,12 +1,12 @@
 ---
-title: "监视本地 Exchange 和 Exchange Online 的条件访问符合性"
-titlesuffix: Azure portal
-description: "通过 Intune Azure 门户监视本地 Exchange 和 Exchange Online 的条件访问符合性"
+title: "监视 Microsoft Intune 中的 Exchange 条件访问"
+titlesuffix: 
+description: "通过 Intune Azure 门户监视本地 Exchange 和 Exchange Online 的条件访问符合性。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>在 Intune 中监视本地 Exchange 和 Exchange Online 的条件性访问符合性
 
@@ -36,23 +36,23 @@ ms.lasthandoff: 01/25/2018
 
 2.  成功登录后，会看到“Azure 仪表板”。
 
-3.  从左侧菜单中选择“**更多服务**”，然后在文本框筛选器中键入 **Intune**。
+3.  从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
 4.  选择“Intune”，将看到“Intune 仪表板”。
 
 5.  选择“条件访问”，然后选择“概述”。
 
-6.  选择图表上的三个区域（“阻止”、“隔离”或“允许”）之一，查看条件访问符合性报告。
+6.  选择图表上的三个区域（“允许”、“阻止”或“隔离”）之一，查看条件访问相容性报告。
 
-    ![条件访问仪表板](./media/CA-reporting-intune-1.png)
+    ![条件访问仪表板的图像](./media/CA-reporting-intune-1.png)
 
 选择三个区域之一后，可以看到有关已允许、阻止或隔离的设备的详细信息。
 
-还可以进一步查看特定设备来了解更多详细信息。 例如，下图中所选定的设备被阻止。 可以通过 Intune 从条件访问符合性报告边栏选项卡删除公司数据。
+还可以进一步查看特定设备来了解更多详细信息。 例如，下图中所选定的设备被阻止。 可以通过 Intune 从条件访问相容性报告窗格删除公司数据。
 
-![条件访问设备详细信息报告](./media/CA-reporting-intune-3.png)
+![条件访问设备详细信息报表的图像](./media/CA-reporting-intune-3.png)
 
-在设备详细信息边栏选项卡上，可以看到更多信息：
+在设备细节窗格上，可以看到更多信息：
 
 -   **概述：**可以看到设备属性，例如：操作系统版本、设备型号、所有权、序列号、设备制造商、电话号码和上次审查设备的时间。
 
