@@ -1,5 +1,6 @@
 ---
-title: "策略 | Microsoft Docs"
+title: "策略"
+titlesuffix: Microsoft Intune
 description: "Intune 数据仓库 API 中实体集合的“策略”类别的参考主题。"
 keywords: "Intune 数据仓库"
 author: Erikre
@@ -13,11 +14,11 @@ ms.technology:
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>策略实体引用
 
@@ -104,7 +105,7 @@ PolicyTypeActivity 列出了处于成功、挂起、失败或错误状态的总�
 |---------|---------|---------|
 |DateKey  |为符合性策略创建了摘要时的日期键。|20161204 |
 |Unknown  |由于其他原因脱机或无法与 Intune 或 Azure AD 通信的设备数量。 |5|
-|NotApplicable      |对于管理员指定的设备符合性策略不适用的设备数。|201 |
+|不适用      |对于管理员指定的设备符合性策略不适用的设备数。|201 |
 |是否满足条件      |已成功应用管理员指定的一个或多个设备符合性策略的设备数。 |4083 |
 |InGracePeriod      |不符合要求但处于管理员定义的宽限期内的设备数。 |57|
 |不符合      |为后列情况的设备数：未能应用由管理员指定的一个或多个设备符合性策略，或其用户未遵守管理员指定的策略。|43 |
@@ -122,7 +123,7 @@ PolicyTypeActivity 列出了处于成功、挂起、失败或错误状态的总�
 |PolicyKey     |创建了摘要的符合性策略的键。 |10178 |
 |PolicyPlatformKey      |创建了相应摘要的符合性策略的键。|5|
 |Unknown     |由于其他原因脱机或无法与 Intune 或 Azure AD 通信的设备数量。|13|
-|NotApplicable     |对于管理员指定的设备符合性策略不适用的设备数。|3|
+|不适用     |对于管理员指定的设备符合性策略不适用的设备数。|3|
 |是否满足条件      |已成功应用管理员指定的一个或多个设备符合性策略的设备数。 |45|
 |InGracePeriod      |不符合要求但处于管理员定义的宽限期内的设备数。 |3|
 |不符合      |为后列情况的设备数：未能应用由管理员指定的一个或多个设备符合性策略，或其用户未遵守管理员指定的策略。|7|

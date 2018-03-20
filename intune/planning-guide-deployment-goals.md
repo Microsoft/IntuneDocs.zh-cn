@@ -1,11 +1,12 @@
 ---
 title: "确定部署目标、宗旨和难题"
+titlesuffix: Microsoft Intune
 description: "本文可帮助确定 Microsoft Intune 仅云实现的部署目标、宗旨和难题。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fe680fcb617c29678f193aac2d74c12398a2a7f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>确定部署目标、宗旨和难题
 
