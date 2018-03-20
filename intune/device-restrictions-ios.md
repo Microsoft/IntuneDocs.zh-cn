@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 设备限制设置
-本文介绍可为运行 iOS 的设备配置的所有 Microsoft Intune 设备限制设置。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+本文介绍可为运行 iOS 的设备配置的 Microsoft Intune 设备限制设置。
+
 ## <a name="general"></a>常规
 
+-   **共享使用情况数据** - 允许或阻止设备将诊断和使用情况遥测数据发送给 Apple。
 -   **诊断数据提交** - 允许或阻止设备将诊断数据提交到 Apple。
 -   **屏幕捕获** - 允许用户以图像形式捕获屏幕内容。
     - 通过 Classroom 应用远程观察屏幕（仅限被监督的设备）- 允许或阻止 Classroom 应用查看 iOS 设备的屏幕。
@@ -213,8 +215,8 @@ ms.lasthandoff: 03/02/2018
 -   仅加入使用配置文件配置的 Wi-Fi 网络（仅限被监督的设备）- 仅允许设备加入已使用 Intune Wi-Fi 配置文件进行配置的 Wi-Fi 网络。
 
 - 移动网络的使用规则（仅限托管应用）- 允许定义托管应用可在移动网络中使用的数据类型。 选择：
-    - 阻止使用移动数据
-    - 在漫游时阻止使用移动数据
+    - **阻止使用移动电话数据** - 可以对“所有托管应用”或“选择特定应用”阻止使用移动电话数据。
+    - **阻止漫游时使用移动电话数据** - 可以对“所有托管应用”或“选择特定应用”阻止漫游时使用移动电话数据。
 
 ## <a name="connected-devices"></a>连接的设备
 

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>创建组来管理用户和数据访问
 
@@ -30,11 +30,13 @@ Microsoft Intune 使用 Azure Active Directory (Azure AD) 管理公司资源的�
 ## <a name="how-do-i-create-a-group"></a>如何创建组？
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 使用“搜索资源”，搜索 Intune。
-3. 打开“Microsoft Intune”边栏选项卡后，选择“组”。
-4. 在“用户和组 – 所有组”边栏选项卡上，选择“新建组”命令。
-5. 在“组”边栏选项卡上，为组添加名称和说明。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 打开“Microsoft Intune”窗格后，选择“组”。
+4. 在“用户和组 – 所有组”窗格上，选择“新建组”命令。
+5. 在“组”窗格上，选择“组类型”。
+5. 为组选择名称和描述。
 6. 将“成员身份类型”设置为“已分配”。 请不要为测试组**启用 Office 功能**。
+7. 为组选择成员。
 7. 单击“创建”。
 
 如果已成功创建一个组，该组应显示在“所有组”列表中。 如果未在其中显示，请尝试创建另一个组。

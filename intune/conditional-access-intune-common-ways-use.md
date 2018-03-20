@@ -1,10 +1,10 @@
 ---
-title: "使用 Intune 的条件访问"
-titlesuffix: Azure portal
-description: "通过 Intune 使用条件性访问的常见方式"
+title: "使用 Microsoft Intune 进行条件访问"
+titlesuffix: 
+description: "了解 Intune 条件访问通常如何用于基于设备和基于应用的条件访问。"
 keywords: 
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件性访问的常见方式
+# <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-使用 Intune 的条件访问有两种主要类型。 第一种类型是基于设备的条件访问。 第二种类型是基于应用的条件访问。 需要配置相关的符合性策略，以驱动组织中的条件访问符合性。
+使用 Intune 的条件访问有两种：基于设备的条件访问和基于应用的条件访问。 需要配置相关的符合性策略，以驱动组织中的条件访问符合性。 条件访问通常用于执行以下操作：允许或阻止对本地 Exchange 的访问、控制网络访问权限、与 Mobile Threat Defense 解决方案集成等。
 
 下面的信息有助于了解如何使用 Intune 移动设备符合性功能和 Intune 移动应用程序管理 (MAM) 功能。 
 

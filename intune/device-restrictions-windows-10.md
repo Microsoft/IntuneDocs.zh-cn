@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 #<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune Windows 10 及更高版本设备限制设置
 本文介绍可为运行 Windows 10 的设备配置的所有 Microsoft Intune 设备限制设置。
@@ -268,7 +268,7 @@ ms.lasthandoff: 03/02/2018
 
       - 用户帐户 - 指定与展台应用相关联的本地（对设备而言）用户帐户或 Azure AD 帐户登录名。 对于加入 Azure AD 域的帐户，以 `domain\\username@tenant.org` 的形式指定帐户。
 
-         对于公共环境中的设备，使用具有最小特权的帐户来阻止已授权活动。  
+         对于公共环境中的设备，使用具有最小特权的帐户来阻止未授权活动。  
 
       - 应用的应用程序用户模型 ID (AUMID) - 指定展台应用的 AUMID。 若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
 

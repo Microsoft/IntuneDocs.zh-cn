@@ -1,12 +1,12 @@
 ---
-title: "使用 Intune 创建移动威胁防御设备符合性策略"
-titlesuffix: Azure portal
-description: "在 Intune 中创建移动威胁防御设备符合性策略"
+title: "使用 Microsoft Intune 创建 MTD 设备符合性策略"
+titlesuffix: 
+description: "创建使用 MTD 合作伙伴威胁级别的 Intune 设备符合性策略，以确定移动应用是否可以访问公司资源。"
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 创建移动威胁防御 (MTD) 设备符合性策略
 
@@ -40,7 +40,7 @@ MTD 设备符合性策略先决条件：
 
 1.  转到 [Azure 门户](https://portal.azure.com/)，然后使用 Intune 凭据登录。
 
-2.  在“Azure 仪表板”中，从左侧菜单中选择“更多服务”，然后在文本框筛选器中键入 Intune。
+2.  在“Azure 仪表板”中，从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入“Intune”。
 
 3.  选择“Intune”，随即显示“Intune 仪表板”。
 
@@ -48,9 +48,9 @@ MTD 设备符合性策略先决条件：
 
 5.  选择“创建策略”，输入设备符合性“名称”、“说明”，选择“平台”，然后选择“设置”部分下的“配置”。
 
-6.  在“符合性策略”边栏选项卡上选择“设备运行状况”。
+6.  在“符合性策略”窗格中，选择“设备运行状况”。
 
-7.  在“设备运行状况”边栏选项卡上，从“要求设备不高于移动威胁防御级别”下的下拉列表中选择移动威胁级别。
+7.  在“设备运行状况”窗格中，从“要求设备不高于设备威胁级别”下的下拉列表中选择移动威胁级别。
 
     a.  **安全**：此级别是最安全的威胁级别。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
 
@@ -67,11 +67,11 @@ MTD 设备符合性策略先决条件：
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>分配 MTD 设备符合性策略
 
-若要为用户分配设备合规性策略，请选择之前已配置的策略。 可在“设备符合性策略”边栏选项卡中找到现有策略。
+若要为用户分配设备合规性策略，请选择之前已配置的策略。 可在“设备符合性 - 策略”窗格中找到现有策略。
 
-1. 选择要分配给用户的策略，然后选择“分配”。 此操作将打开边栏选项卡，可在其中选择“Azure Active Directory 安全组”并将其分配给策略。
+1. 选择要分配给用户的策略，然后选择“分配”。 此操作将打开窗格，可在其中选择“Azure Active Directory 安全组”并将其分配给策略。
 
-2. 选择“选择组”以打开显示 Azure AD 安全组的边栏选项卡。  选择“选择”会将策略部署到用户。
+2. 选择“选择要添加的组”以打开显示 Azure AD 安全组的窗格。  选择“选择”会将策略部署到用户。
 
     > [!NOTE] 
     > 你已将策略应用于用户。 将评估策略针对的用户所使用设备的符合性。

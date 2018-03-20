@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-managing-users"></a>用户管理入门
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 03/05/2018
 ## <a name="how-do-i-create-a-user"></a>如何创建用户？
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 使用“搜索资源”，搜索 Intune。
-3. 打开“Microsoft Intune”边栏选项卡后，选择“用户”。 在“所有用户”页上，选择“添加新用户”。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 打开“Microsoft Intune”窗格后，选择“用户”。 在“所有用户”页上，选择“添加新用户”。
 4. 输入用户详细信息，如名称和用户名。 用户名称的域名部分必须为初始默认域名“contoso.onmicrosoft.com”或一个已验证的非联合域名，例如“contoso.com”。
 5. 在“组”下，选择要添加用户的测试组。
 6. 保存自动生成的用户密码，以便用于登录测试设备。 必须向用户提供此密码，以便他们可将其更改为自己能够记住的常规密码。
-7. 在“用户”边栏选项卡中，选择“创建”。
+7. 在“用户”窗格中，选择“创建”。
 
 ## <a name="assigning-licenses-to-users"></a>向用户分配许可证
 

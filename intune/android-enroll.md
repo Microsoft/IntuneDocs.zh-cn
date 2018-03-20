@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 03/02/2018
 
 若要启用对[支持 Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) 的设备上的工作配置文件的管理，必须将 Android for Work 绑定添加到 Intune。 若要在 Android for Work 中注册已作为常规 Android 设备注册的设备，这些设备必须取消注册，然后重新注册。
 
-如果使用[设备注册管理员](device-enrollment-manager-enroll.md)帐户注册 Android for Work 设备，则每个帐户最多可注册 10 台设备。
+如果使用[设备注册管理器](device-enrollment-manager-enroll.md)帐户注册 Android for Work 设备，则每个帐户最多可注册 10 台设备。
 
 ## <a name="add-android-for-work-binding-for-intune"></a>为 Intune 添加 Android for Work 绑定
 
@@ -55,9 +55,9 @@ ms.lasthandoff: 03/02/2018
 1. **设置 Intune MDM**<br>
 如果你尚未准备就绪，请将[移动设备管理机构设置](mdm-authority-set.md)为“Microsoft Intune”。
 2. **配置 Android for Work 绑定**<br>
-    作为 Intune 管理员，在“Azure 门户”中，选择“更多服务” > “监视 + 管理” > “Intune”。
+    作为 Intune 管理员，在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “监视 + 管理” > “Intune”。
 
-   a. 在“Intune”边栏选项卡上，选择“设备注册” > “Android for Work 注册”，然后选择“配置”打开 Google Play 的 Android for Work 网站。 网站将在浏览器的新选项卡中打开。
+   a. 在“Intune”窗格上，选择“设备注册” > “Android for Work 注册”，然后选择“管理 Google Play - 配置”打开 Google Play 的 Android for Work 网站。 网站将在浏览器的新选项卡中打开。
    ![Android for Work 注册屏幕](./media/android-work-bind.png)
 
    b. 登录到 Google<br>
@@ -106,7 +106,7 @@ After configuring the Android for Work binding and settings, you can do the foll
 ### <a name="to-unbind-an-android-for-work-account"></a>取消绑定 Android for Work 帐户
 
 1. **取消绑定 Android for Work 绑定**<br>
-    作为 Intune 管理员，在“Azure 门户”中，选择“更多服务” > “监视 + 管理” > “Intune”。  在“Intune”边栏选项卡上，选择“设备注册”>“Android for Work 注册”，然后选择“取消绑定”。
+    作为 Intune 管理员，在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “监视 + 管理” > “Intune”。  在“Intune”窗格上，选择“设备注册”>“Android for Work 注册”，然后选择“取消绑定”。
 
 2. **同意删除 Android for Work 绑定**<br>
   选择“是”以删除绑定并从 Intune 取消注册所有 Android for Work 设备。

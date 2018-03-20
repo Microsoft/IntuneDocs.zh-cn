@@ -1,10 +1,10 @@
 ---
-title: "监视 Intune 设备符合性策略"
-titlesuffix: Azure portal
-description: "了解如何监视设备符合性策略"
+title: "监视 Microsoft Intune 设备符合性策略"
+titlesuffix: 
+description: "使用设备符合性仪表板监视整体设备符合性，查看报表，并查看基于策略和基于设置的设备符合性。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
-ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
+ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -25,15 +25,15 @@ ms.lasthandoff: 02/28/2018
 
 ## <a name="before-you-begin"></a>在开始之前
 
-使用以下步骤在 Azure 门户中查找“Intune 设备符合性仪表板”：
+按照以下步骤在 Azure 门户中找到“Intune 设备符合性仪表板”：
 
 1.  转到 [Azure 门户](https://portal.azure.com)，然后使用 Intune 凭据登录。
 
-2.  从左侧菜单中选择“**更多服务**”，然后在文本框筛选器中键入 **Intune**。
+2.  从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
 3.  选择“ **Intune** ”&gt;“**设备符合性**”&gt;“**概述**”，“**设备符合性仪表板**”将打开。
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 设备必须注册到 Intune 才能接收设备符合性策略。
 
 ## <a name="device-compliance-dashboard"></a>设备符合性仪表板
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/28/2018
 
 -   基于设置的设备符合性
 
-![设备符合性仪表板](./media/idc-1.png)
+![显示设备符合性仪表板的图像](./media/idc-1.png)
 
 你还可以查看适用于单个设备的特定符合性策略和设置，以及设备上每个设置的最终符合性状态。
 
@@ -62,28 +62,28 @@ ms.lasthandoff: 02/28/2018
 
     -   详细了解针对不符合设备的操作。
 
--   **设备未同步：**设备未能报告其设备符合性策略状态，原因为以下几项之一：
+-   **设备未同步：**设备未能报告其设备符合性策略状态，原因为下面其中一项：
 
     -   **未知**：由于其他原因，设备脱机或无法与 Intune 或 Azure AD 通信。
 
     -   **错误**：设备无法与 Intune 和 Azure AD 通信，并收到一条注明原因的错误消息。
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 已注册到 Intune 但未由任何设备符合性策略指定的设备包含在位于“符合性”存储桶下的此报告中。
 
 #### <a name="drill-down-option"></a>向下钻取选项
 
 在“设备符合性仪表板”中，如果单击“设备符合性”磁贴，则可以向下钻取到每个设备（由设备符合性策略指定）的符合性状态、用户的电子邮件别名、设备模型和位置。
 
-![设备符合性仪表板向下钻取](./media/idc-2.png)
+![显示设备符合性仪表板向下钻取的图像](./media/idc-2.png)
 
 如果需要有关特定用户的详细信息，可以通过键入用户电子邮件别名来筛选“设备符合性”图表报告。
 
-![设备符合性仪表板特定用户](./media/idc-3.png)
+![显示设备符合性仪表板-特定用户的图像](./media/idc-3.png)
 
 还可以在设备符合性图表上单击不同的符合性状态，查看有关用户设备符合性策略状态的详细信息。
 
-![设备符合性仪表板不同的状态](./media/idc-4.png)
+![显示设备符合性仪表板不同状态的图像](./media/idc-4.png)
 
 #### <a name="filter"></a>Filter
 
@@ -99,7 +99,7 @@ ms.lasthandoff: 02/28/2018
 
     -   iOS
 
-    -   Mac OS
+    -   macOS
 
     -   Windows
 
@@ -121,41 +121,22 @@ ms.lasthandoff: 02/28/2018
 
 ##### <a name="device-details"></a>设备详细信息
 
-单击设备，打开选定设备的“**设备**”边栏选项卡。 这将提供有关应用于该设备的设备符合性策略设置的详细信息。
-
-![设备符合性仪表板](./media/idc-6.png)
+单击某个设备，打开“设备”窗格（其中已选定该设备），可查看关于该设备应用的设备符合性策略设置的更多详细信息。
 
 在设备策略设置上单击时，可以看到来源于管理员指定的设备符合性设置的设备符合性策略名称。
 
-![设备符合性设置名称](./media/idc-7.png)
-
-## <a name="policy-compliance-report"></a>策略符合性报告
+### <a name="per-policy-device-compliance-report"></a>基于策略的设备符合性报告
 
 此报告提供每个符合性策略视图以及每个符合性状态下的设备总数。 设备符合性仪表板中提供策略符合性磁贴，其中显示了管理员先前创建的所有策略、应用策略的平台、符合设备的数量以及不符合设备的数量。
 
-![基于策略的设备符合性报告](./media/idc-8.png)
+![显示基于策略的设备符合性报告的图像](./media/idc-8.png)
 
 单击“策略符合性”磁贴后，接着单击其中一个设备符合性策略，可以看到每个设备（由该设备符合性策略指定）的符合性状态、用户的电子邮件别名、设备模型和位置。
 
-![策略符合性磁贴](./media/idc-9.png)
-
 ## <a name="setting-compliance-report"></a>设置符合性报告
 
-可通过此报告根据符合性设置查看每个符合性状态下的设备总数。 设备符合性仪表板中提供设置符合性磁贴，其中显示管理员创建的所有设备符合性策略的所有设备符合性策略设置、应用策略设置的平台以及不符合设备的数量。
+可通过此报告根据符合性设置查看每个符合性状态下的设备总数。 “设备符合性仪表板”中提供“设置符合性”磁贴，其中显示管理员创建的所有设备符合性策略的所有设备符合性策略设置、应用策略设置的平台以及不符合设备的数量。
 
-![基于设置的设备符合性报告](./media/idc-10.png)
+![显示基于设置的设备符合性报告的图像](./media/idc-10.png)
 
 单击设置符合性磁贴后，接着单击其中一个设备符合性策略设置，可以看到每个设备（由设备符合性策略设置指定）的符合性状态、用户的电子邮件别名、设备模型和位置。
-
-![设置符合性磁贴](./media/idc-11.png)
-
-## <a name="threat-agent-status-report"></a>威胁代理状态报告
-
-此报告允许查看 Windows Defender 代理的状态和健康状况。 通过使用“设备符合性”中的状态汇总报告，可以看到需要以下任一项操作的设备：
-- 签名更新
-- “重新启动”
-- 手动干预
-- 完全扫描
-- 需要干预的其他代理状态
-
-每个状态类别的深入报告列出需要注意的各个电脑，以及报告为“清理”的电脑。

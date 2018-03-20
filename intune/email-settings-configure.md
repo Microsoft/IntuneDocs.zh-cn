@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置电子邮件设置
 
@@ -39,17 +39,19 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>创建包含电子邮件设置的设备配置文件
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”页，选择“设备配置”。
-2. 在“设备配置”页，选择“管理” > “配置文件”。
-3. 在“配置文件”页，选择“创建配置文件”。
-4. 在“创建配置文件”页，输入电子邮件配置文件的“名称”和“说明”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“Intune”窗格上，选择“设备配置”。
+2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
+3. 在“配置文件”窗格上，选择“创建配置文件”。
+4. 在“创建配置文件”窗格上，输入电子邮件配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用电子邮件设置的设备平台。 目前，可以为电子邮件设备设置选择以下平台之一：
     - **Android**（仅 Samsung Android Knox Standard）
     - **Android for Work**
     - **iOS**
+    - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
 6. 在“配置文件”键入下拉列表中，选择“电子邮件”。
 7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
@@ -57,9 +59,9 @@ ms.lasthandoff: 03/02/2018
     - [iOS 设置](email-settings-ios.md)
     - [Windows Phone 8.1 设置](email-settings-windows-phone-8-1.md)
     - [Windows 10 设置](email-settings-windows-10.md)
-8. 完成后，返回“创建配置文件”页，然后点击“创建”。
+8. 完成后，返回“创建配置文件”窗格，然后点击“创建”。
 
-配置文件随即创建并显示在“配置文件列表”页中。
+随即会创建配置文件，并显示在“配置文件列表”窗格上。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 ## <a name="further-information"></a>更多信息

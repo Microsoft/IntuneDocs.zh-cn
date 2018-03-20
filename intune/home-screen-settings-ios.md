@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>适用于运行 iOS 的设备的 Microsoft Intune 主屏幕布局设置 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>适用于运行 iOS 的设备的 Microsoft Intune 主屏幕布局设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ ms.lasthandoff: 03/05/2018
 
 如果向运行 iOS 的设备分配了配置文件，则该设备必须处于监督模式下，并运行 iOS 9.3 或更高版本。
 
-1. 在“设备配置”、“创建配置文件”、“设备功能”页上，选择“主屏幕布局(仅限监督的设备)”。
-2. 在“主屏幕布局(仅限监督的设备)”页上，选择是想要配置“停靠”还是“页面”布局。
+1. 从 [Azure 门户中的 Intune](https://portal.azure.com)，导航到[设备配置区域中的“设备功能”](device-features-configure.md)。
+2. 在“设备功能”窗格中，选择“主屏幕布局(仅限监督的设备)”。
+3. 在“主屏幕布局(仅限监督的设备)”窗格中，选择是想要配置“停靠”还是“页面”布局。
 
 ## <a name="add-items-to-the-dock"></a>向停靠添加项目
 
-在“停靠”页，可以向 iOS 屏幕的停靠添加最多 6 个项或文件夹。 但是，许多设备支持的项目更少，例如，iPhone 设备最多支持 4 个项目。 在这种情况下，在设备上仅显示配置的前四个项目。
+在“停靠”窗格中，可以向 iOS 屏幕的停靠添加最多 6 个项目或文件夹。 但是，许多设备支持的项目更少，例如，iPhone 设备最多支持 4 个项目。 在这种情况下，在设备上仅显示配置的前四个项目。
 
 1. 选择“添加”向停靠添加项目。
-2. 在“添加行”页，选择想要添加“应用”还是“文件夹”。
+2. 在“添加行”窗格中，选择是要添加“应用”还是“文件夹”。
 3. 使用本主题中的信息，配置要显示在停靠面板上的应用和文件夹。
-4. 继续添加项目。 完成后，单击每页上的“确定”，直到返回到“创建配置文件”页。 选择“创建”。
+4. 继续添加项目。 完成后，单击每个窗格中的“确定”，直到返回到“创建配置文件”窗格。 选择“创建”。
 
 >[!TIP]
-> 可以拖放任何主屏幕和页面列表中的项，以对其重新排序。 
+> 可以拖放任何主屏幕和页面列表中的项，以对其重新排序。
 
 ### <a name="example"></a>示例
 
@@ -56,9 +57,8 @@ ms.lasthandoff: 03/05/2018
 
 添加想要在主屏幕上显示的页面，以及想要在每个页面上显示的应用。 添加到页面的应用按从左到右的方式，以列表中指定的顺序排列。 如果添加了超过页面能够容纳的应用，则该应用将被移动到后续页面。
 
-
-1. 在“页面”页，选择“添加”。
-2. 在“添加行”页，输入“页面名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
+1. 在“页面”窗格中，选择“添加”。
+2. 在“添加行”窗格中，输入“页面名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 3. 选择“添加”，然后选择是否想要将“应用”或“文件夹”添加到页面。
 4. 使用本主题中的信息，配置要显示在页面上的应用和文件夹。
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 03/05/2018
 
 1. 输入**文件夹名称**。 该名称将显示在用户的设备上。
 2. 选择“添加”以在文件夹中创建一个页面。 可以添加最多 20 页。
-3. 在“添加行”页，输入页面名称。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
+3. 在“添加行”窗格中，输入页面名称。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 3. 输入“应用名称”。 此名称在 Azure 门户中显示，以供参考，但不在 iOS 设备上显示。
 2. 输入想要显示的应用的“应用捆绑 ID”。 请参阅“如何将应用添加到列表”的相关帮助。
 3. 选择“添加”。 可以添加最多 60 项。
@@ -94,7 +94,7 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>内置 iOS 应用的捆绑 ID 引用
 
-此列表显示了一些常见的内置 iOS 应用的捆绑 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。 
+此列表显示了一些常见的内置 iOS 应用的捆绑 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。
 
 |||
 |-|-|

@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 34334186fbf74507b54d1bf4df347de2c16c39c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Android 应用保护策略设置
 本主题介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -73,7 +73,7 @@ ms.lasthandoff: 03/05/2018
   | com.android.providers.media | Android 媒体内容提供程序 | 媒体内容提供程序仅允许铃声选择操作。 |
   | com.google.android.gms;com.google.android.gsf | Google Play Services 包 | 这些包允许 Google Cloud Messaging 操作，例如推送通知。 |
 
-有关详细信息，请参阅[应用的数据传输策略例外情况](app-protection-policies-exception.md)。 
+有关详细信息，请参阅[应用的数据传输策略例外情况](app-protection-policies-exception.md)。
 
 ##  <a name="access-settings"></a>访问设置
 
@@ -88,7 +88,10 @@ ms.lasthandoff: 03/05/2018
 | **托管设备 PIN 后禁用应用 PIN** | 在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 | 否 |
 | **要求最低 Android 操作系统版本** | 选择“是”将要求要使用此应用需具备的最低 Android 操作系统版本。 如果设备上的 Android 版本不符合此要求，将阻止用户访问。<br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。| 否 |
 | **要求最低 Android 操作系统版本(仅警告)** | 选择“是”将要求要使用此应用需具备的最低 Android 操作系统版本。 如果设备上的 Android 版本不符合此要求，用户将看到一个通知。 可忽略此通知。<br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。 | 否 |
-| **要求最低应用版本** | 选择“是”将要求要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，将阻止用户访问。<br><br>由于应用的版本方案之间通常不同，因此，要创建一个针对一个应用的最低应用版本策略（例如“Outlook 版本策略”。 <br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。| 否 | 
-| **要求最低应用版本(仅警告)** | 选择“是”将建议要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，用户将看到一个通知。 可忽略此通知。<br><br>由于应用的版本方案之间通常不同，因此，要创建一个针对一个应用的最低应用版本策略（例如“Outlook 版本策略”。 <br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。| 否 | 
+| **要求最低应用版本** | 选择“是”将要求要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，将阻止用户访问。<br><br>由于应用的版本方案之间通常不同，因此，要创建一个针对一个应用的最低应用版本策略（例如“Outlook 版本策略”。 <br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。| 否 |
+| **要求最低应用版本(仅警告)** | 选择“是”将建议要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，用户将看到一个通知。 可忽略此通知。<br><br>由于应用的版本方案之间通常不同，因此，要创建一个针对一个应用的最低应用版本策略（例如“Outlook 版本策略”。 <br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。| 否 |
 | **要求最低 Android 修补版本** | 选择“是”，要求由 Google 发布的最低 Android 安全修补。 如果设备上的 Android 安全修补不符合此要求，将阻止用户访问。<br><br> 此策略设置格式支持日期格式 YYYY-MM-DD。 | 否 |
 | **要求最低 Android 修补版本(仅警告)** | 选择“是”，要求由 Google 发布的最低 Android 安全修补。 如果设备上的 Android 安全修补不符合此要求，用户将看到一条通知。 可忽略此通知。<br><br> 此策略设置格式支持日期格式 YYYY-MM-DD。 | 否 |
+
+> [!NOTE]
+> 若要深入了解在“访问权限”部分配置给同一组应用和用户的多个 Intune 应用保护设置如何在 Android 上运行，请参阅 [Intune MAM 常见问题](mam-faq.md)。

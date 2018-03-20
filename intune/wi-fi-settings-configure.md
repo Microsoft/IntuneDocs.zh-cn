@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 
@@ -47,17 +47,19 @@ Wi-Fi 配置文件支持以下设备平台：
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>创建包含 Wi-Fi 设置的设备配置文件
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在配置文件边栏选项卡上，选择“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入 Wi-Fi 配置文件的“名称”和“说明”。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“Intune”窗格上，选择“设备配置”。
+2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
+3. 在“配置文件”窗格上，选择“创建配置文件”。
+4. 在“创建配置文件”窗格上，输入 Wi-Fi 配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用 Wi-Fi 设置的设备平台。 目前，可以为 Wi-Fi 设置选择以下平台之一：
     - **Outlook Web Access (OWA)**
     - **Android for Work**
     - **iOS**
     - **macOS**
-    - **Windows 8.1 及更高版本（导入配置文件）**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 及更高版本**
+    - **Windows 10 及更高版本**
 
    > [!IMPORTANT]
    > 如果要为运行 Windows 10（包括 Windows Holographic for Business）的设备创建配置文件，必须选择“Windows 8.1 及更高版本”平台。 “Windows 10 及更高版本”平台不包含 Wi-Fi 配置文件类型。 
@@ -70,9 +72,9 @@ Wi-Fi 配置文件支持以下设备平台：
     - [iOS 设置](wi-fi-settings-ios.md)
     - [macOS 设置](wi-fi-settings-macos.md)
     - [Windows 8.1 及更高版本设置](wi-fi-settings-import-windows-8-1.md)（包括 Windows Holographic for Business）
-1. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+1. 完成后，返回“创建配置文件”窗格，然后点击“创建”。
 
-配置文件随即创建并显示在“配置文件列表”边栏选项卡上。
+配置文件随即创建并显示在“配置文件列表”窗格中。
 
 ## <a name="next-steps"></a>后续步骤
 

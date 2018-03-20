@@ -14,19 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑难解答门户帮助公司的用户
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-通过故障排除门户，技术支持人员和 Intune 管理员可查看用户信息，处理用户求助请求。 设有支持人员的组织可以为一组用户分配技术支持人员。 技术支持人员可使用“疑难解答”边栏选项卡。
+通过故障排除门户，技术支持人员和 Intune 管理员可查看用户信息，处理用户求助请求。 设有支持人员的组织可以为一组用户分配技术支持人员。 技术支持人员可使用“疑难解答”窗格。
 
-“疑难解答”边栏选项卡也显示用户注册问题。 问题的相关详细信息和建议的修正步骤可帮助管理员和支持人员排查问题。 某些注册问题可能无法捕获，还有某些错误可能没有修正建议。 
+“疑难解答”窗格中也显示用户注册问题。 问题的相关详细信息和建议的修正步骤可帮助管理员和支持人员排查问题。 某些注册问题可能无法捕获，还有某些错误可能没有修正建议。
 
 有关添加技术支持人员角色的相关步骤，请参阅 [Intune 的基于角色的管理控制 (RBAC)](/intune/role-based-access-control)
 
@@ -41,20 +41,20 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="to-review-troubleshooting-details"></a>查看疑难解答详细信息
 
-在“疑难解答”边栏选项卡中，选择“选择用户”以查看用户信息。 用户信息可以帮助你了解用户及其设备的当前状态。  
+在“疑难解答”窗格中，选择“选择用户”以查看用户信息。 用户信息可以帮助你了解用户及其设备的当前状态。  
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune” 边栏选项卡上，选择“疑难解答”。
-4. 单击“选择用户”。
-5. 通过键入名称或电子邮件地址选择用户。 单击“选择”。 有关用户的疑难解答信息将显示在“疑难解答”边栏选项卡中。 下表介绍了相关信息。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“Intune”窗格中，选择“疑难解答”。
+4. 单击“选择”，选择要进行故障排除的用户。
+5. 通过键入名称或电子邮件地址选择用户。 单击“选择”。 有关用户的疑难解答信息将显示在“疑难解答”窗格中。 下表介绍了相关信息。
 
 > [!Note]  
-> 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”边栏选项卡。
+> 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格。
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>疑难解答仪表板区域
 
-可使用“疑难解答”边栏选项卡来查看用户信息。 
+可使用“疑难解答”窗格来查看用户信息。
 
 ![](/intune/media/troubleshooting-dash.png)
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 03/05/2018
 | 1.   | 帐户状态  | 显示当前 Intune 租户状态为“活动”或“非活动”。       |
 | 2.   | 用户选择  | 当前所选用户的名称。 单击“更改用户”可选择新用户。       |
 | 3.   | 用户状态  | 显示用户的 Intune 许可证状态、设备数目、每个设备的符合性、应用数目以及应用的符合性。       |
-| 4.   | 用户信息  | 使用该列表在边栏选项卡中选择要查看的详细信息。 <br>可选内容如下： <ul><li>移动应用<li>应用保护策略<li>相容性策略<li> 配置策略<li> 注册限制</ul>      |
+| 4.   | 用户信息  | 使用该列表在窗格中选择要查看的详细信息。 <br>可选内容如下： <ul><li>移动应用<li>应用保护策略<li>相容性策略<li> 配置策略</ul>      |
 | 5.   | 组成员身份  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>移动应用引用

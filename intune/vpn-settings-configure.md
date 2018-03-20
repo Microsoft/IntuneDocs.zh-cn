@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 VPN 设置
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/02/2018
 |Cisco (IPSec)|否|是|否|否|否|否|
 |Citrix|是|是|否|否|否|是|
 |F5 Edge Client|是|是|是|是|是|是|
-|Dell SonicWALL Mobile Connect|是|是|是|是|是|是|
+|SonicWall Mobile Connect|是|是|是|是|是|是|
 |Check Point Capsule VPN|是|是|是|是|是|是|
 |Cisco AnyConnect|是|是|是|否|否|否|
 |自动|否|否|否|否|否|是|
@@ -54,12 +54,12 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>创建包含 VPN 设置的设备配置文件
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”边栏选项卡上，选择“设备配置”。
-2. 在“设备配置”边栏选项卡上，依次选择“管理” > “配置文件”。
-3. 在配置文件边栏选项卡上，选择“创建配置文件”。
-4. 在“创建配置文件”边栏选项卡上，输入 VPN 配置文件的“名称”和“说明”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“Intune”窗格上，选择“设备配置”。
+2. 在“设备配置”窗格上，选择“管理” > “配置文件”。
+3. 在“配置文件”窗格上，选择“创建配置文件”。
+4. 在“创建配置文件”窗格上，输入 VPN 配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用 VPN 设置的设备平台。 目前，可以为 VPN 设备设置选择以下平台之一：
     - **Outlook Web Access (OWA)**
     - **Android for Work**
@@ -76,9 +76,9 @@ ms.lasthandoff: 03/02/2018
     - [Windows Phone 8.1 设置](vpn-settings-windows-phone-8-1.md)
     - [Windows 8.1 设置](vpn-settings-windows-8-1.md)
     - [Windows 10 设置](vpn-settings-windows-10.md)（包括 Windows Holographic for Business）
-8. 完成后，返回“创建配置文件”边栏选项卡，然后点击“创建”。
+8. 完成后，返回“创建配置文件”窗格，然后选择“创建”。
 
-配置文件随即创建并显示在“配置文件列表”边栏选项卡上。
+配置文件随即创建并显示在“配置文件列表”窗格中。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 专业增强版应用分配到 Windows 10 设备
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>如何使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
-此应用类型使用户可以轻松地将 Office 365 专业增强版 应用分配到所管理的运行 Windows 10 的设备。 还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的单一条目。
+此应用类型使用户可以轻松地将 Office 365 应用分配到所管理的运行 Windows 10 的设备。 还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的单一条目。
 
 
 ## <a name="before-you-start"></a>开始之前
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/02/2018
 >仅当设备上未安装其他版本的 Microsoft Office 时，才支持此安装 Office 的方法。
 
 - 部署这些应用的设备必须运行 Windows 10 创意者更新或更高版本。
-- Intune 仅支持从 Office 365 专业增强版套件添加 Office 应用。
+- Intune 仅支持从 Office 365 套件添加 Office 应用。
 - 当 Intune 安装应用套件时，如果任何 Office 应用处于打开状态，安装可能会失败，并且最终用户可能会丢失未保存文件中的数据。
 - Windows 10S、Windows 家庭版、Windows 团队、Windows Holographic 和 Windows Holographic for Business 设备上不支持此安装方法。
 - 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Microsoft Store 中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。
@@ -41,12 +41,13 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="get-started"></a>入门
 
-1.  登录 Azure 门户。
-2.  选择“更多服务” > “监视 + 管理” > “Intune”。
+1.  登录到 [Azure 门户](https://portal.azure.com)。
+2.  选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3.  在 Intune 边栏选项卡上，选择“移动应用”。
-4.  在“移动应用”工作负荷中，选择“管理” > “应用”。
+4.  在“移动应用”工作负载中，选择“管理”部分中的“应用”。
 5.  在应用列表的上方，选择“添加”。
-6.  在“添加应用”边栏选项卡上，选择“Office 365 专业增强版套件(Windows 10)”。
+6.  在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。
+    现在，你便可以配置应用套件。
 
 ## <a name="configure-the-app-suite"></a>配置应用套件
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="configure-app-information"></a>配置应用信息
 
-在此步骤中，提供有关该应用套件的信息。 此信息有助于在 Intune 中识别它，也有助于用户在公司门户应用中找到它。
+在此步骤中，须提供有关该应用套件的信息。 此信息有助于在 Intune 中识别应用套件，也有助于用户在公司门户应用中找到它。
 
 1.  在“添加应用”边栏选项卡上，选择“应用套件信息”。
 2.  在“应用套件信息”边栏选项卡上，指定以下信息：
@@ -75,7 +76,7 @@ ms.lasthandoff: 03/02/2018
     - **开发者** -（可选）输入应用开发者的名称。
     - **所有者** -（可选）输入此应用的所有者的名称，例如，**HR 部门**。
     - **说明** - 输入要与此应用关联的任何备注。
-    - **上传图标** - 用户浏览公司门户时，上传与应用一同显示的图标。
+    -  - 上传用户浏览公司门户时，与应用一同显示的图标。
 3.  完成后，请单击“确定”。
 
 ## <a name="configure-app-settings"></a>配置应用设置
@@ -91,7 +92,7 @@ ms.lasthandoff: 03/02/2018
         - **半年**
         - **半年（定向）**
     - **自动接受应用最终用户许可协议** - 如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
-    - **使用共享计算机激活** - 当多个用户共享一台计算机时，使用共享计算机激活。 有关详细信息，请参阅 Office 365 专业增强版的共享计算机激活概述。
+    - **使用共享计算机激活** - 当多个用户共享一台计算机时，使用共享计算机激活。 有关详细信息，请参阅 Office 365 的共享计算机激活概述。
     - **语言** - Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="finish-up"></a>完成
 
-完成后，在“添加应用”边栏选项卡上，选择“保存”。 创建的应用将显示在应用列表中。
+完成后，在“添加应用”边栏选项卡上，选择“添加”。 创建的应用将显示在应用列表中。
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>安装应用套件时的错误代码
 
@@ -137,4 +138,4 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="next-steps"></a>后续步骤
 
-现在，可将应用分配到所选组。 如需帮助，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。
+- 现在可以分配所选的应用组，请参阅[如何将应用分配到组](/intune-azure/manage-apps/deploy-apps)。

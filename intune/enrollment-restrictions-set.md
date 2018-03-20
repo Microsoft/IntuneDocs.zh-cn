@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a6466d62cf8af4e6b8a14980db5e9a244deb45c4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -53,8 +53,8 @@ Intune 管理员可以创建和管理注册限制。 这些限制定义可注册
 
 ## <a name="create-a-restriction"></a>创建限制
 
-1. 登录 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 选择“设备注册” > “注册限制”。
 4. 选择“创建限制”。
 5. 为该限制提供名称和描述。
@@ -70,8 +70,8 @@ Intune 管理员可以创建和管理注册限制。 这些限制定义可注册
 
 通过执行以下步骤可更改设备类型限制的设置：
 
-1. 登录 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 选择“设备注册” > “注册限制”。
 4. 在“设备类型限制”下，选择想要设置的限制。
 5. 在限制名称（默认限制为“所有用户”）下，选择“平台”。 为列出的每个平台选择“允许”或“阻止”。
@@ -81,10 +81,10 @@ Intune 管理员可以创建和管理注册限制。 这些限制定义可注册
   - iOS 支持 major.minor.rev。
   - Windows 仅对 Windows 10 支持 major.minor.rev.build。
   操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
-8. 指定是否对每个列出的平台允许或阻止个人拥有的设备。
+6. 指定是否对每个列出的平台允许或阻止个人拥有的设备。
 
     ![设备限制工作区的屏幕截图，其中已为个人拥有的设备配置默认设备平台](media/device-restrictions-platform-configurations.png)
-9. 单击 **“保存”**。
+7. 单击 **“保存”**。
 
 >[!NOTE]
 >- 如果阻止私人拥有的 Android 设备进行注册，私人拥有的 Android for Work 设备仍可注册。
@@ -95,13 +95,13 @@ Intune 管理员可以创建和管理注册限制。 这些限制定义可注册
 
 通过执行以下步骤可更改设备限制的设置：
 
-1. 登录 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 选择“设备注册” > “注册限制”。
 4. 在“设备限制”下，选择想要设置的限制。
 5. 选择“设备限制”，然后在下拉列表中选择用户可注册的最大设备数。
     ![“设备限制”限制边栏选项卡的屏幕截图](./media/device-restrictions-limit.png)
-6. 单击 **“保存”**。
+4. 单击 **“保存”**。
 
 最终用户将看到一条通知，告知他们何时达到了注册设备限制。 例如，iOS 上的通知如下所示：
 
@@ -119,8 +119,8 @@ Intune 管理员可以创建和管理注册限制。 这些限制定义可注册
 
 **更改限制优先级**
 
-1. 登录 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 选择“设备注册” > “注册限制”。
 4. 将鼠标悬停在优先级列表中的限制上。
-5. 使用三个垂直点，将优先级拖到列表中的所需位置。
+5. 使用左侧的三个垂直点，将优先级拖到列表中的所需位置。

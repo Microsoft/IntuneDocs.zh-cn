@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/08/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f74c39fd1d335f644542d99c534b5aea21833df
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 35c254d91a104b08a1bdda3f3496369607af30f2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
@@ -42,7 +42,7 @@ Intune 支持注册 iOS 设备，方法是使用在 Mac 计算机上运行的 [A
 - 设置助理注册 – 恢复设备的出厂设置，使其准备好在设置助理期间进行注册。
 - 直接注册 - 不恢复设备的出厂设置，并通过 iOS 设置注册设备。 此方法适仅支持“无用户关联”的设备。
 
-Apple Configurator 注册方法不能与[设备注册管理员](device-enrollment-manager-enroll.md)同时使用。
+Apple Configurator 注册方法不能与[设备注册管理器](device-enrollment-manager-enroll.md)同时使用。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -57,16 +57,17 @@ Apple Configurator 注册方法不能与[设备注册管理员](device-enrollmen
 
 设备注册配置文件定义在注册期间应用的设置。 这些设置只应用一次。 按照以下步骤创建注册配置文件，使用 Apple Configurator 注册 iOS 设备。
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 选择“设备注册” > “Apple 注册”。
 4. 在“管理 Apple Configurator 注册设置”中，选择“AC 配置文件”。
 5. 在“Apple Configurator 注册配置文件”下，选择“创建”。
 6. 键入配置文件的“名称”和“说明”进行管理。 用户看不到这些详细信息。 可使用此“名称”字段在 Azure Active Directory 中创建动态组。 使用配置文件名称定义 enrollmentProfileName 参数，以向设备分配此注册配置文件。 详细了解 Azure Active Directory 动态组。
 
+
   ![选中“通过用户关联注册”的“创建配置文件”屏幕](./media/apple-configurator-profile-create.png)
 
-7. 指定“用户关联”：
+5. 指定“用户关联”：
    - “通过用户关联注册”- 必须通过设置助理将设备与某个用户关联，然后此设备可访问公司数据和电子邮件。 属于用户且需要使用公司门户获取服务（如安装应用）的托管设备需要用户关联。 仅设置助理注册支持。 用户关联需要 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
    > [!NOTE]
@@ -88,7 +89,7 @@ Apple Configurator 注册方法不能与[设备注册管理员](device-enrollmen
   DLXQPCWVGHMJ，设备详细信息
 
    [了解如何查找 iOS 设备序列号](https://support.apple.com/HT204073)。
-2. 在 Azure 门户的 Intune 中，选择“设备注册”，然后选择“Apple 注册”。
+2. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册”，然后选择“Apple 注册”。
 3. 在“管理 Apple Configurator 注册设置”下，选择“Apple Configurator 设备”。
 4. 选择“添加”。
 5. 选择一个注册配置文件，将其应用于导入的序列号。 如果导入的文件中包含将覆盖现有详细信息的新详细信息，请选择“覆盖现有标识符的详细信息”。
@@ -101,12 +102,13 @@ Apple Configurator 注册方法不能与[设备注册管理员](device-enrollmen
 - AC 配置文件
 
 #### <a name="assign-from-apple-configurator-devices"></a>从 Apple Configurator 设备分配
-1. 在 Azure 门户的 Intune 中，选择“设备注册”，然后选择“Apple 注册”。
-3. 在“Apple Configurator 设备”下，选择要向其分配配置文件的序列号，然后选择“分配配置文件”。
-4. 在“分配配置文件”下，选择要分配的新配置文件，然后选择“分配”。
+
+1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册”，然后选择“Apple 注册”。
+2. 在“Apple Configurator 设备”下，选择要向其分配配置文件的序列号，然后选择“分配配置文件”。
+3. 在“分配配置文件”下，选择要分配的新配置文件，然后选择“分配”。
 
 #### <a name="assign-from-profiles"></a>从配置文件分配
-1. 在 Azure 门户的 Intune 中，选择“设备注册”，然后选择“Apple 注册”。
+1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册”，然后选择“Apple 注册”。
 2. 选择“AC 配置文件”，然后选择要向其分配序列号的配置文件。
 3. 在配置文件中，选择“已分配设备”，然后选择“分配”。
 4. 通过筛选找到要分配给配置文件的设备序列号，选择设备，然后选择“分配”。
@@ -114,7 +116,7 @@ Apple Configurator 注册方法不能与[设备注册管理员](device-enrollmen
 ### <a name="export-the-profile"></a>导出配置文件
 创建配置文件并分配序列号后，必须从 Intune 中以 URL 的形式导出配置文件。 然后将其导入 Mac 上的 Apple Configurator 用于部署到设备。
 
-1. 在 Azure 门户的 Intune 中，选择“设备注册” > “Apple 注册” > “AC 配置文件”，然后选择要导出的配置文件。
+1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册” > “Apple 注册” > “AC 配置文件”，然后选择要导出的配置文件。
 2. 在配置文件上，选择“导出配置文件”。
 
   ![设置助理注册的导出配置文件，其中突出显示配置文件 URL](./media/ios-apple-configurator-expor-sat.png)
@@ -151,14 +153,15 @@ Apple Configurator 注册方法不能与[设备注册管理员](device-enrollmen
 无法安装需要用户隶属关系的应用（包括用于安装业务线应用的公司门户应用）。
 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>将配置文件作为 .mobileconfig 导出到 iOS 设备
-1. 登录到 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在“导出配置文件”下，选择“下载配置文件”，下载注册配置文件。
+
 
   ![设置助理注册的导出配置文件，其中突出显示配置文件 URL](./media/ios-apple-configurator-expor-de.png)
 
-4. 将文件传输到运行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 计算机，作为管理配置文件直接推送到 iOS 设备。
-5. 通过以下步骤使用 Apple Configurator 准备设备。
+2. 将文件传输到运行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 计算机，作为管理配置文件直接推送到 iOS 设备。
+3. 通过以下步骤使用 Apple Configurator 准备设备。
   1. 在 Mac 计算机上，打开 Apple Configurator 2.0。
   2. 使用 USB 线将 iOS 设备连接到 Mac 计算机。 关闭“照片”、iTunes 和其他在检测设备时为设备打开的应用。
   3. 在 Apple Configurator 中，选择已连接的 iOS 设备，然后选择“添加”按钮。 可以添加到设备的选项将显示在下拉列表中。 选择“配置文件”。
@@ -166,7 +169,7 @@ Apple Configurator 注册方法不能与[设备注册管理员](device-enrollmen
     ![设置助理注册的导出配置文件，其中突出显示配置文件 URL](./media/ios-apple-configurator-add-profile.png)
 
   4. 使用文件选取器选择从 Intune 导出的 .mobileconfig 文件，然后选择“添加”。 配置文件将添加到设备。 如果设备是“非监督”状态，安装将需要在设备上验收。
-6. 使用以下步骤在 iOS 设备上安装配置文件。 设备必须已经完成设置助理且准备好使用。 如果注册需要应用部署，设备应设置一个 Apple ID，因为应用部署需要有一个 Apple ID 登录到应用商店。
+4. 使用以下步骤在 iOS 设备上安装配置文件。 设备必须已经完成设置助理且准备好使用。 如果注册需要应用部署，设备应设置一个 Apple ID，因为应用部署需要有一个 Apple ID 登录到应用商店。
    1. 解锁 iOS 设备。
    2. 在“管理配置文件”的“安装配置文件”对话框中，选择“安装”。
    3. 如有必要，提供“设备密码”或“Apple ID”。
@@ -174,8 +177,8 @@ Apple Configurator 注册方法不能与[设备注册管理员](device-enrollmen
    5. 接受“远程警告”，并选择“信任”。
    6. “已安装配置文件”框确认配置文件“已安装”后，选择“完成”。
 
-7. 在 iOS 设备上，打开“设置”并转到“常规” > “设备管理”  > “管理配置文件”。 确认配置文件安装已列出，并检查 iOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
+5. 在 iOS 设备上，打开“设置”并转到“常规” > “设备管理”  > “管理配置文件”。 确认配置文件安装已列出，并检查 iOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
 
-8. 分配设备。 iOS 设备现已在 Intune 中注册并已托管。
+6. 分配设备。 iOS 设备现已在 Intune 中注册并已托管。
 
 

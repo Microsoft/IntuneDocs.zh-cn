@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 将应用分配到组
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-将应用添加到 Intune 后，可将其分配给用户和设备。
+将应用添加到 Microsoft Intune 后，可将其分配给用户和设备。
 
 可以将应用分配到 Intune 托管或非 Intune 托管设备。 使用下表帮助了解用于将应用分配到用户和设备的各种选项：
 
@@ -51,19 +51,28 @@ ms.lasthandoff: 03/02/2018
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
-1. 在“移动应用”工作负荷中，选择“管理” > “应用”。
+1. 在“移动应用”工作负荷中，选择“管理”部分中的“应用”。
 2. 在“应用列表”边栏选项卡中，单击要分配的应用。
-3. 在“概述”边栏选项卡上，选择“管理” > “分配”。
-4. 选择“添加组”，然后在“添加组”边栏选项卡上选择要在应用分配中包括或排除的 Azure AD 组。
-5. 对于选择的每个应用，从以下各项选择应用的“分配类型”：
+3. 在特定于应用的“概述”边栏选项卡上，选择“管理”部分中的“分配”。
+4. 选择“添加组”，显示与应用相关的“添加组”边栏选项卡。
+5. 对于特定应用，从以下各项选择应用的“分配类型”：
     - **可用于已注册设备** - 用户从公司门户应用或网站安装应用。
-    - **注册与否都可用** - 可将此应用分配到未将其设备注册到 Intune 的用户组。
+    - **注册与否都可用** - 可将此应用分配到未将其设备注册到 Intune 的用户组。 请注意，Android for Work 类型不支持此选项。 
     - **必需** - 应用安装在所选组中的设备上。
     - **卸载** - 已从所选组中设备上卸载应用。
-6. 仅适用于 iOS 应用 - 如果已创建包含每个应用的 VPN 设置的 iOS VPN 配置文件，可在“VPN”下将其选中。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅 [iOS 设备的 VPN 设置](vpn-settings-ios.md)。
-6. 完成后，选择“确定”，然后选择“保存”。
 
-应用现已分配给所选组。
+    > [!NOTE]
+    > 仅适用于 iOS 应用 - 如果已创建包含每个应用的 VPN 设置的 iOS VPN 配置文件，可在“VPN”下将其选中。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅 [iOS 设备的 VPN 设置](vpn-settings-ios.md)。
+
+6. 选择“包括的组”，选择将受此应用分配影响的用户组。
+7. 选择要包括的一个或多个组后，单击“选择”。
+8. 在“分配”边栏选项卡上单击“确定”，完成包括的组选择。
+9. 如果选择从受此应用分配影响的用户组中排除任何用户组，请选择“排除组”。
+10. 如果已选择排除任何组，单击“选择组”边栏选项卡上的“选择”。
+11. 单击“添加组”边栏选项卡上的“确定”。
+12. 单击“应用”边栏选项卡上的“保存”，保存分配。
+
+应用现已分配给所选组。 若要深入了解如何包括和排除应用分配，请参阅[包括和排除应用分配](apps-inc-exl-assignments.md)。
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>如何解决不同应用意图之间的冲突
 
@@ -78,8 +87,8 @@ ms.lasthandoff: 03/02/2018
 |可用用户|不可用的用户|不可用|
 |可用用户|用户卸载|卸载|
 |不可用的用户|用户卸载|卸载
-|必需用户|必需设备|同时存在，必需的网关操作 
-|必需用户|设备卸载|同时存在，必需的网关解析 
+|必需用户|必需设备|同时存在，必需的网关操作
+|必需用户|设备卸载|同时存在，必需的网关解析
 |可用用户|必需设备|同时存在，必需的网关解析（必需和可用）
 |可用用户|设备卸载|同时存在，可用的网关解析。<br>应用将显示在公司门户中。<br>如果应用已安装（作为前一意图的必需应用），将卸载应用。<br>但如果用户从公司门户单击安装，则将安装应用，忽略卸载意图。|
 |不可用的用户|必需设备|必需|
@@ -105,7 +114,7 @@ ms.lasthandoff: 03/02/2018
 |可用用户（未注册）|设备卸载|卸载和必需（未注册）。<br>如果用户并非从公司门户安装应用，则会执行卸载。<br>如果用户从公司门户安装应用，则安装将优先于卸载。|
 
 >[!NOTE]
->仅针对托管 iOS 应用商店应用：将这些应用添加到 Intune 并将其分配为“必需”时，将自动使用“必需”和“可用”意图进行创建。
+>仅针对托管 iOS 应用商店应用：将这些应用添加到 Microsoft Intune 并将其分配为“必需”时，将自动根据“必需”和“可用”意向进行创建。
 
 ## <a name="next-steps"></a>后续步骤
 

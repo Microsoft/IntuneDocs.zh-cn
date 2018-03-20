@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d07b025881ea78299d617205ce5ba39bb92a1231
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>将设备分类为组以便更轻松地管理
 
@@ -41,12 +41,11 @@ ms.lasthandoff: 03/02/2018
 ## <a name="how-to-configure-device-categories"></a>如何配置设备类别
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>步骤 1 - 在 Azure 门户的“Intune”边栏选项卡中创建设备类别
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
-3. 在“Intune”边栏选项卡上，选择“设备注册”。
-3. 在“设备注册”边栏选项卡中，选择“设备类别”。
-4. 在“设备类别”页上，选择“创建”以添加新类别。
-5. 在“创建设备类别”边栏选项卡中，输入新类别的“名称”和可选“说明”。
-6. 完成后，单击“创建”。 可以在类别列表中看到新类别。
+1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”。
+2. 在“设备注册”边栏选项卡中，选择“设备类别”。
+3. 在“设备类别”页上，选择“创建”以添加新类别。
+4. 在“创建设备类别”边栏选项卡中，输入新类别的“名称”和可选“说明”。
+5. 完成后，单击“创建”。 可以在类别列表中看到新类别。
 
 在步骤 2 中创建 Azure Active Directory 安全组时将使用设备类别名称。
 
@@ -61,23 +60,20 @@ ms.lasthandoff: 03/02/2018
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>如何查看所管理设备的类别
 
-1.  在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+1.  在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备”。
 
-2. 在 Azure 门户的“Intune”边栏选项卡中，选择“设备”。
+2.  在“管理”下，单击“所有设备”。
 
-3.  在“管理”下，单击“所有设备”。
-
-4.  在设备列表中，查看“设备类别”列。
+3.  在设备列表中，查看“设备类别”列。
 
 如果未显示“设备类别”列，则单击“列”，从列表中选择“设备类别”，然后单击“应用”。
 
 ### <a name="to-change-the-category-of-a-device"></a>更改设备的类别
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
-3. 在 Intune 边栏选项卡上，选择“设备”。
-4. 在“管理”部分下的“设备”边栏选项卡上，选择“所有设备”。
-5. 在设备列表中，选择所需设备，然后在“管理”部分下的“设备属性”边栏选项卡上，选择“属性”。
-6. 在下一个边栏选项卡上，可以将所选设备的“设备类别”更改为之前配置的任一类别名称。
+1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备”。
+2. 在“管理”部分下的“设备”边栏选项卡上，选择“所有设备”。
+3. 在设备列表中，选择所需设备，然后在“管理”部分下的“设备属性”边栏选项卡上，选择“属性”。
+4. 在下一个边栏选项卡上，可以将所选设备的“设备类别”更改为之前配置的任一类别名称。
 
 ## <a name="after-you-configure-device-groups"></a>配置设备组之后
 

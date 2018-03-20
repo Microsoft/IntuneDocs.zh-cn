@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>配置 Microsoft Intune for iOS 设备 SSO
 
@@ -34,18 +34,19 @@ ms.lasthandoff: 03/05/2018
 
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”页，选择“设备配置”。
-2. 在“设备配置”页，选择“配置文件”。
-3. 在“配置文件”页，选择“创建配置文件”，提供名称和描述，并配置下列设置：
-   - **平台**：选择“iOS”。 
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“Intune”窗格上，选择“设备配置”。
+4. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
+5. 在“配置文件”窗格上，选择“创建配置文件”。
+6. 提供名称和描述，并配置下列设置：
+   - **平台**：选择“iOS”。
    - **配置文件类型**：选择“设备功能”。
-4. 在“设备功能”页，选择“SSO”。
+7. 在“设备功能”窗格上，选择“单一登录”。
 
-   ![“SSO”页](./media/sso-blade.png)
+   ![“单一登录”页](./media/sso-blade.png)
 
-2. 使用以下摘要表格，帮助填写“SSO”页的字段。 有关详细信息，请参阅表格后的各节。
-   
+8. 使用以下摘要表格，帮助填写“单一登录”窗格上的字段。 有关详细信息，请参阅表格后的各节。
+
    |字段  |注意|
    |---------|---------|
    |**来自 AAD 的用户名属性**|Intune 为 AAD 中的每个用户查看的属性，并在生成安装于设备上的 XML 有效负载之前填充相应字段（如 UPN）。|
@@ -95,7 +96,7 @@ ms.lasthandoff: 03/05/2018
 
 ### <a name="credential-renewal-certificate"></a>凭据续订证书
 
-如果使用证书（而非密码）对最终用户进行身份验证，则使用此字段选择作为身份验证证书部署给用户的 SCEP 或 PFX 证书。 通常，这是针对其他配置文件（例如 VPN、WiFi 或电子邮件）部署给用户的相同证书。
+如果使用证书（而非密码）对最终用户进行身份验证，则使用此字段选择作为身份验证证书部署给用户的 SCEP 或 PFX 证书。 通常，这是针对其他配置文件（例如 VPN、Wi-Fi 或电子邮件）部署给用户的相同证书。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfd1b37c1b944a545234b93b44d651ead8f0f486
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 913ff1c0ae7ab968ae1195425c7cbe4044591c6b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何仅擦除 Intune 托管应用中的企业数据
 
@@ -39,23 +39,21 @@ ms.lasthandoff: 03/05/2018
 
 1.  登录到 [Azure 门户](https://portal.azure.com)。
 
-2.  选择“更多服务”，在筛选器文本框中键入“Intune”，然后选择“Intune”。 “Intune”边栏选项卡随即打开。 选择“移动应用”。
+2.  选择“所有服务”，在筛选器文本框中键入“Intune”，然后选择“Intune”。 Intune 窗格随即打开，选择“移动应用”窗格。
 
-    ![Microsoft Intune 边栏选项卡的屏幕截图](./media/apps-selective-wipe01.png)
+    ![Microsoft Intune 窗格的屏幕截图](./media/apps-selective-wipe01.png)
 
-3.  在“移动应用”边栏选项卡上，选择“应用选择性擦除”。
+3.  在“移动应用”窗格中，选择“应用选择性擦除”。
 
 4.  选择“新建擦除请求”。 “新建擦除请求”窗格打开。
 
     ![“新建擦除请求”窗格的屏幕截图](./media/AzurePortal_MAM_NewWipeRequest.png)
 
-5.  选择“用户”以打开“用户”边栏选项卡，然后选择要擦除其应用数据的用户。
+5.  选择用户，然后选择“选择”，以选择你要擦除其应用数据的用户。
 
-6.  然后，从“新建擦除请求”边栏选项卡选择“设备”。 此操作打开“选择设备”边栏选项卡。 这将列出与所选用户相关联的所有设备。 此外，此窗格会提供设备名称（由用户定义的友好名称）和指定设备平台的设备类型。 
+6.  然后，从“新建擦除请求”窗格中选择“设备”。 此操作会打开“选择设备”窗格，其中列出了与所选用户关联的所有设备，还提供了两个列：“设备名称”（用户定义的友好名称）和“设备类型”（其设备平台）。 选择要擦除的设备。
 
-7. 从列表中选择要擦除的设备。
-
-8.  你现在已返回“新建擦除请求”边栏选项卡。 选择“确定”以进行擦除请求。
+7.  你现在已返回“新建擦除请求”窗格。 选择“确定”以提出擦除请求。
 
 服务会为设备上的每个受保护应用以及与擦除请求相关联的用户创建并跟踪单独的擦除请求。
 
@@ -63,7 +61,7 @@ ms.lasthandoff: 03/05/2018
 
 你将获得一个汇总报表，其中介绍了擦除请求的总体状态，并包括挂起请求数和失败次数。 若要获取更多详细信息，请按以下步骤操作：
 
-1.  在“移动应用 - 应用选择性擦除”边栏选项卡中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起”、“失败”还是“成功”。
+1.  在“移动应用 - 应用选择性擦除”窗格中，可以查看按用户分组的请求列表。 由于系统会为设备上运行的每个受保护应用都创建一个擦除请求，因此对于某个用户，你可能会看到多个请求。 状态指示擦除请求是“挂起”、“失败”还是“成功”。
 
     ![“应用选择性擦除”窗格中擦除请求状态的屏幕截图](./media/wipe-request-status-1.png)
 
@@ -76,7 +74,7 @@ ms.lasthandoff: 03/05/2018
 
 手动删除之前将显示具有挂起状态的擦除。 手动删除擦除请求：
 
-1.  打开“移动应用 - 应用选择性擦除”边栏选项卡。
+1.  在“移动应用 - 应用选择性擦除”窗格中。
 
 2.  从列表中，右键单击要删除的擦除请求，然后选择“删除擦除请求”。
 
