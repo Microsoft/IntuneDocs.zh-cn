@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
 
@@ -281,7 +281,7 @@ iOS 版公司门户应用内的链接（包括文档和应用链接）将通过 
 
 * [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)
 * [使用 Intune 应用包装工具为移动应用程序管理准备 iOS 应用](app-wrapper-prepare-ios.md)
-* [Microsoft Intune App SDK 入门](/app-sdk-get-started.md)
+* [Microsoft Intune App SDK 入门](app-sdk-get-started.md)
 * [Intune App SDK for iOS 开发人员指南](app-sdk-ios.md)
 
 以下文章是对文档库新增的内容：

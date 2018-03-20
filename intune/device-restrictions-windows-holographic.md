@@ -1,6 +1,6 @@
 ---
 title: "适用于 Windows Holographic for Business 的 Microsoft Intune 设备限制设置"
-titlesuffix: Azure portal
+titleSuffix: 
 description: "了解哪些 Intune 设置可用于控制运行 Windows Holographic for Business 的设备上的设备设置和功能。"
 keywords: 
 author: vhorne
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10bb5a2eac9e72ba5b09a9a6f02932e872328c75
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9acce571330a754de85b65caf8ec71912fd36a69
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>适用于 Windows Holographic for Business 的 Microsoft Intune 设备限制设置
 
