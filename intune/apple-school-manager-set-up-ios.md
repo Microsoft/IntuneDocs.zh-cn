@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 设置 iOS 设备注册
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/02/2018
 
 若要启用 Apple School Manager 注册，请使用 Intune 和 Apple School Manager 门户。 需要序列号列表或购买订单编号，这样才能将设备分配到 Intune 进行管理。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
-另外，Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enrollment-program-enroll-ios.md)或[设备注册管理员](device-enrollment-manager-enroll.md)一起使用。
+另外，Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enrollment-program-enroll-ios.md)或[设备注册管理器](device-enrollment-manager-enroll.md)一起使用。
 
 **必备条件**
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -89,7 +89,7 @@ ms.lasthandoff: 03/02/2018
 ## <a name="create-an-apple-enrollment-profile"></a>创建 Apple 注册配置文件
 设备注册配置文件定义注册时应用于设备组的设置。
 
-1. 在 Azure 门户的 Intune 中，选择“设备注册”，然后选择“Apple 注册”。
+1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”，然后选择“Apple 注册”。
 2. 在“注册计划”下，选择“注册计划配置文件”。
 3. 在“注册计划配置文件”边栏选项卡上，选择“创建”。
 4. 在“创建注册配置文件”边栏选项卡上，输入要在 Intune 中显示的配置文件“名称”和“说明”。
@@ -149,7 +149,7 @@ ms.lasthandoff: 03/02/2018
 ## <a name="sync-managed-devices"></a>同步托管设备
 至此，已将管理 Apple School Manager 设备的权限分配给 Intune，接下来可以通过 Apple 服务同步 Intune，以便在 Intune 中查看托管设备。
 
-1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划设备” > “Sync”。进度栏显示再次请求同步之前必须等待的时长。
+1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划设备” > “同步”。进度栏显示再次请求同步之前必须等待的时长。
 
   ![选中“注册计划设备”节点和选中“同步”链接](./media/enrollment-program-device-sync.png)
 2. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
@@ -166,7 +166,7 @@ ms.lasthandoff: 03/02/2018
 ## <a name="assign-a-profile-to-devices"></a>为设备分配配置文件
 必须先向 Intune 管理的 Apple School Manager 设备分配注册配置文件，然后才能注册设备。
 
-1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册”，然后选择“注册计划配置文件”。
+1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册”，然后选择“注册计划配置文件”。
 2. 在“注册计划配置文件”列表中，选择要分配给设备的配置文件，然后选择“设备分配”
 
  ![选中“分配”的“设备分配”。](./media/enrollment-program-device-assign.png)

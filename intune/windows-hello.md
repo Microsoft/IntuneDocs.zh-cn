@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>将 Windows Hello 企业版与 Microsoft Intune 集成
 
@@ -48,19 +48,19 @@ Intune 与 Hello for Business 集成的两种方式：
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>创建 Windows Hello for Business 策略
 
-1.  在 Azure 门户中，选择“更多服务” > “监视 + 管理” > “Intune”。
+1.  在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “监视 + 管理” > “Intune”。
 
-2.  在“Intune”页，选择“设备注册”，然后选择“Windows 注册” > “Windows Hello 企业版”。
+2.  在“Intune”窗格中，选择“设备注册”，然后选择“Windows 注册” > “Windows Hello 企业版”。
 
 3.  在打开的页面中，选择“默认”设置。
 
-4.  在“所有用户”页，单击“属性”，然后输入 Windows Hello 企业版设置的“名称”和可选“说明”。
+4.  在“所有用户”窗格中，单击“属性”，然后输入 Windows Hello 企业版设置的“名称”和可选“说明”。
 
-5. 在“所有用户”页，单击“设置”，然后为“配置 Windows Hello 企业版”从下列选项中进行选择：
+5. 在“所有用户”窗格中，单击“设置”，然后为“配置 Windows Hello 企业版”从下列选项中进行选择：
 
     - “禁用”。 如果不想要使用 Windows Hello 企业版，请选择此设置。 屏幕上的所有其他设置将不可用。
     - “启用”。 如果想要配置 Windows Hello 企业版设置，请选择此设置。
-    - “不配置”。 如果不想使用 Intune 来控制 Windows Hello 企业版设置，请选择此设置。 Windows 10 设备上的任何现有 Windows Hello 企业版设置不会更改。 页中的所有其他设置将不可用。
+    - “不配置”。 如果不想使用 Intune 来控制 Windows Hello 企业版设置，请选择此设置。 Windows 10 设备上的任何现有 Windows Hello 企业版设置不会更改。 窗格中的所有其他设置将不可用。
 
 6.  如果在上一步中选择了“启用”，请配置应用于所有已注册 Windows 10 和 Windows 10 移动版设备的必需设置。
 
@@ -69,9 +69,9 @@ Intune 与 Hello for Business 集成的两种方式：
      - “必需”（默认）。 仅限可访问 TPM 的设备预配 Windows Hello 企业版。
      - “首选”。 首次尝试使用 TPM 的设备。 如果不可用，他们可以使用软件加密。
 
- - “要求最小 PIN 长度”/要求最大 PIN 长度”。 将设备配置为使用你指定的最小和最大 PIN 长度，以帮助确保安全登录。 默认 PIN 长度为 6 个字符，但可以强制使用 4 个字符的最小长度。 最大 PIN 长度为 127 个字符。
+ - 最小 PIN 长度/最大 PIN 长度。 将设备配置为使用你指定的最小和最大 PIN 长度，以帮助确保安全登录。 默认 PIN 长度为 6 个字符，但可以强制使用 4 个字符的最小长度。 最大 PIN 长度为 127 个字符。
 
- - “要求 PIN 中含有小写字母”/要求 PIN 中含有大写字母”/要求 PIN 中含有特殊字符”。 你可以通过要求在 PIN 中使用大写字母、小写字母和特殊字符，从而强制实施更强的 PIN。 选择：
+ - 在 PIN 中使用小写字母/在 PIN 中使用大写字母/在 PIN 中使用特殊字符。 你可以通过要求在 PIN 中使用大写字母、小写字母和特殊字符，从而强制实施更强的 PIN。 选择：
 
      - “允许”。 用户可以在其 PIN 中使用该字符类型，但不强制使用。
 

@@ -13,15 +13,18 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fe05b5fdd87e92f5acc35c0a750287f8fd01b92
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 909c014e1d68c26c1440c2b924e05dbaabbde5e5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>在 Microsoft Intune 中为运行 Android 的设备配置 VPN 设置 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+本文介绍可用于在运行 Android 的设备上配置 VPN 连接的 Intune 设置。
+
 
 可以配置以下平台的 VPN 设置：
 
@@ -39,7 +42,7 @@ ms.lasthandoff: 03/05/2018
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     -  **F5 Edge Client**
     - **Pulse Secure**
     - **Citrix**
@@ -57,7 +60,7 @@ ms.lasthandoff: 03/05/2018
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     -  **F5 Edge Client**
     - **Pulse Secure**
 

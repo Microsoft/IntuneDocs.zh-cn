@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/09/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -34,7 +34,7 @@ Microsoft Intune 允许 IT 管理员管理公司员工使用的移动应用。 �
 
 此外，还建议分配和管理未向 Intune 注册的设备上的应用。
 
-Intune 提供各种功能，用于在所需的设备上获取需要的应用。 下表提供了应用管理功能的摘要。 可以通过下面的表格开始了解 Azure 门户中的 Microsoft Intune。 
+Intune 提供各种功能，用于在所需的设备上获取需要的应用。 下表提供了有关应用管理功能的摘要。 可以通过下面的表格开始了解 Azure 门户中的 Microsoft Intune。
 
 ## <a name="app-management-capabilities-by-platform"></a>按平台分类的应用管理功能
 
@@ -51,7 +51,7 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。 
 |分配和跟踪从应用商店批量购买的应用|否|否|否|是|
 |强制在设备上安装的应用（必需）<sup>2</sup>|是|是|是|是|
 |从公司门户的设备上进行可选安装（安装可用）|是|是|是|是|
-|向 Web 版应用安装快捷方式（Web 剪辑）|是|是|是|是|
+|安装 Web 版应用快捷方式（Web 链接）|是|是|是|是|
 |内部（业务线）应用|是|是|否|是|
 |来自应用商店的应用|是|是|是|是|
 |更新应用|是|是|是|是|
@@ -70,25 +70,29 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。 
 
     ![移动应用工作负荷](./media/apps-workload.png)
 
+以下信息对应于“移动应用”边栏选项卡中提供的选项。
+
 ### <a name="manage"></a>管理计算机上的
-- **应用** - 可在此节点处添加、分配和监视大多数应用。
+- **应用** - 选择此选项可添加、查看、分配和监视员工使用的应用。 有关详细信息，请参阅以下文章：
     - [添加应用](apps-add.md)
     - [分配应用](apps-deploy.md)
     - [监视器应用](apps-monitor.md)
-- **应用配置策略** - 应用配置策略可提供用户在运行应用时可能需要的设置。
-    - [iOS 应用配置策略](app-configuration-policies-use-ios.md)
-    - [Android 应用配置策略](app-configuration-policies-use-android.md)
-- **应用保护策略** - 可将设置与应用关联，从而帮助保护其使用的公司数据。 例如，可以限制某应用与其他应用进行通信的功能，或要求用户输入 PIN 才能访问公司应用。
+- **应用配置策略** - 应用配置策略可提供用户在运行应用时可能需要的设置。 有关详细信息，请参阅以下文章：
+    - [Intune 的应用配置策略](app-configuration-policies-overview.md)
+        - [iOS 应用配置策略](app-configuration-policies-use-ios.md)
+        - [Android 应用配置策略](app-configuration-policies-use-android.md)
+- **应用保护策略** - 应用保护策略可将设置与应用关联，从而帮助保护其使用的公司数据。 例如，可以限制某应用与其他应用进行通信的功能，或要求用户输入 PIN 才能访问公司应用。 有关详细信息，请参阅以下文章：
     - [应用保护策略](app-protection-policies.md)
-- **应用选择性擦除** - 仅从所选用户设备中删除公司数据。
+- **应用选择性擦除** - 仅从所选用户设备中删除公司数据。 有关详细信息，请参阅以下文章：
     - [应用选择性擦除](apps-selective-wipe.md)
-- **iOS 预配配置文件** - iOS 应用包含一个预配配置文件和一个证书签名的代码。 证书过期后，应用无法再运行。 Intune 提供了一些工具，用于将新的预配配置文件策略主动分配到安装了即将到期应用的设备。
+- **iOS 应用预配配置文件** - iOS 应用包含一个预配配置文件和一个证书签名的代码。 证书过期后，应用无法再运行。 Intune 提供了一些工具，用于将新的预配配置文件策略主动分配到安装了即将到期应用的设备。 有关详细信息，请参阅以下文章：
     - [iOS 应用预配配置文件](app-provisioning-profile-ios.md)
 
 如需了解更多详情，请参阅[管理应用](app-management.md)。
 
 ### <a name="monitor"></a>监视
-- **应用许可证** - 查看、分配和监视从应用商店批量购买的应用。
+- **应用许可证** - 查看、分配和监视从应用商店批量购买的应用。 有关详细信息，请参阅以下文章：
+    - [iOS 批量采购计划 (VPP) 应用](vpp-apps-ios.md)
     - [从适用于企业的 Microsoft 应用商店批量购买的应用](windows-store-for-business.md)
 - **发现的应用** - 显示由 Intune 分配并在设备上安装的所有应用。
 - **应用安装状态** - 显示你创建的应用分配的状态。
@@ -100,22 +104,22 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。 
 ### <a name="setup"></a>Setup
 - **iOS VPP 令牌** - 应用并查看 iOS Volume Purchase Program (VPP) 许可证。
     - [iOS 批量采购的应用](vpp-apps-ios.md)
-- **Windows 企业证书** - 应用或查看用于将业务线应用分发到托管 Windows 设备的代码签名证书的状态。 
-- **Windows Symantec 证书** - 应用或查看将 XAP 和 WP8.x appx 文件分配到 Windows 10 移动设备所需的 Symantec 代码签名证书的状态。 
-- **适用于企业的 Microsoft 应用商店** - 设置与适用于企业的 Microsoft 应用商店的集成。 然后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。
+- **Windows 企业证书** - 应用或查看用于将业务线应用分发到托管 Windows 设备的代码签名证书的状态。
+- **Windows Symantec 证书** - 应用或查看将 XAP 和 WP8.x appx 文件分配到 Windows 10 移动设备所需的 Symantec 代码签名证书的状态。
+- **适用于企业的 Microsoft 应用商店** - 设置与适用于企业的 Microsoft 应用商店的集成。 然后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。 有关详细信息，请参阅以下文章：
     - [从适用于企业的 Microsoft 应用商店批量购买的应用](windows-store-for-business.md)
-- **Windows 旁加载密钥** - 可以添加 Windows 旁加载密钥，用于将应用直接安装到设备，而无需从 Windows 应用商店发布和下载应用。
-    - [旁加载 Windows 应用](app-sideload-windows.md) 
-- **公司门户品牌** - 自定义公司门户，向其提供公司品牌。
+- **Windows 旁加载密钥** - 可以添加 Windows 旁加载密钥，用于将应用直接安装到设备，而无需从 Windows 应用商店发布和下载应用。 有关详细信息，请参阅以下文章：
+    - [旁加载 Windows 应用](app-sideload-windows.md)
+- **公司门户品牌** - 自定义公司门户，向其提供公司品牌。 有关详细信息，请参阅以下文章：
     - [公司门户配置](company-portal-app.md)
 - **应用类别** - 添加、固定和删除应用类别名称。
-- **Android for Work** - 审核并同步已为企业批准的应用。
-    - [Android for Work 应用](apps-add-android-for-work.md) 
+- **Android for Work** - 审核并同步已为企业批准的应用。 有关详细信息，请参阅以下文章：
+    - [Android for Work 应用](apps-add-android-for-work.md)
 
 ### <a name="help-and-support"></a>帮助和支持
-- **帮助和支持** - 排查问题、请求获取支持或查看 Intune 状态。
+- **帮助和支持** - 排查问题、请求获取支持或查看 Intune 状态。 有关详细信息，请参阅以下文章：
     - [排查问题](help-desk-operators.md)
-    
+
 ## <a name="next-steps"></a>后续步骤
 
 - [如何向 Microsoft Intune 添加应用](apps-add.md)

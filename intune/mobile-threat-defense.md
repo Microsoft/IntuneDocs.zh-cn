@@ -1,7 +1,7 @@
 ---
-title: "使用 Intune 的移动威胁防御"
-titleSuffix: Azure portal
-description: "根据设备风险，保护对公司资源的访问"
+title: "Mobile Threat Defense 与 Microsoft Intune"
+titleSuffix: 
+description: "结合使用 Intune Mobile Threat Defense (MTD) 和 Mobile Threat Defense 合作伙伴，保护对基于设备风险的公司资源的访问权限。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,13 +15,13 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 2eaba4f04d6a1daedf40b7b37d2b44ed5aff4533
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="mobile-threat-defense-integration-with-intune"></a>使用 Intune 的移动威胁防御集成
+# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>什么是 Mobile Threat Defense 与 Intune 的集成？
 
 
 通过Intune 移动威胁防御连接器，可利用所选的移动威胁防御供应商作为符合性策略和条件性访问规则的信息源。 由此，IT 管理员可增强公司资源（如 Exchange 和 Sharepoint）的安全性，特别是易受攻击的移动设备的安全性。
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/23/2018
 
 过去，公司在保护电脑免受攻击方面一直比较主动，但并未监视和保护移动设备。 尽管移动平台内置有保护（如应用隔离和审查使用者应用商店），但这些平台仍易受到复杂攻击。 如今，更多员工使用设备完成工作，并需要访问敏感信息。 因此，必须保护设备免受日益复杂的攻击。
 
-## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Intune 移动威胁防御连接器如何工作？
+## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense 连接器的工作原理是什么？
 
 连接器会在 Intune 和所选的移动威胁防御供应商之间创建信道，进而保护公司资源。 Intune 移动威胁防御合作伙伴为移动设备提供了直观且易于部署的应用程序，可出于报告或强制目的主动扫描和分析威胁信息与 Intune 共享。 
 
@@ -58,11 +58,11 @@ Intune 从个人和公司所有的设备收集应用清单信息，这些信息�
 
 移动威胁防御解决方案判定设备受到感染时：
 
-![移动威胁防御感染的设备](./media/MTD-image-1.png)
+![显示 Mobile Threat Defense 受感染设备的图像](./media/MTD-image-1.png)
 
 修正设备时授予访问权限：
 
-![授予移动威胁防御访问权限](./media/MTD-image-2.png)
+![显示授予 Mobile Threat Defense 访问权限的图像](./media/MTD-image-2.png)
 
 > [!NOTE] 
 > 不支持对 Intune 使用多个移动威胁防御供应商。 启用多个 MTD 工具将强制安装所有 MTD 应用并使其在多台设备中扫描威胁。

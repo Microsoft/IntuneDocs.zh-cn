@@ -14,17 +14,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9d181c4a6e490018c88214a2ed91c90327f2526
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为设备配置证书配置文件
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-通过 VPN、Wi-Fi 或电子邮件配置文件给予用户对公司资源的访问权限时，可以使用证书对这些连接进行身份验证。 使用证书时，无需输入用户名和密码即可对连接进行身份验证 
+通过 VPN、Wi-Fi 或电子邮件配置文件给予用户对公司资源的访问权限时，可以使用证书对这些连接进行身份验证。 使用证书时，无需输入用户名和密码即可对连接进行身份验证
 
 可以使用 Intune 将这些证书分配到你管理的设备。 Intune 支持分配和管理以下证书类型：
 
@@ -85,10 +85,13 @@ ms.lasthandoff: 03/05/2018
 ## <a name="step-3-create-trusted-certificate-profiles"></a>步骤 3 - 创建受信任的证书配置文件
 必须先创建受信任的证书配置文件，才可创建 SCEP 或 PKCS 证书配置文件。 对于每个设备平台，需要一个受信任的证书配置文件和一个 SCEP 或 PKCS 配置文件。 为每个设备平台创建受信任的证书的步骤是相似的。
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，然后搜索“Microsoft Intune”。
-2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”。 然后选择“创建配置文件”。
-3. 为受信任的证书配置文件输入“名称”和“说明”。
-4. 对于“平台”，为此受信任证书选择设备平台： 
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在“Intune”窗格上，选择“设备配置”。
+2. 在“设备配置”窗格上，选择“管理” > “配置文件”。
+3. 在“配置文件”窗格上，选择“创建配置文件”。
+4. 在“创建配置文件”窗格上，输入受信任的证书配置文件的“名称”和“说明”。
+5. 从“平台”下拉列表中，为此受信任证书选择设备平台。 目前，可以为证书设置选择以下平台之一：
 
     - **Outlook Web Access (OWA)**
     - **Android for Work**
@@ -98,15 +101,13 @@ ms.lasthandoff: 03/05/2018
     - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
 
-5. 对于“配置文件类型”，选择“受信任的证书”。 浏览到先前（步骤 2）保存的证书（CertificateName.cer）。
-
-    从以下位置选择受信任证书的**目标存储区**（仅适用于 Windows 8.1 和 Windows 10 设备）：  
-
+6. 从“配置文件类型”下拉列表中，选择“受信任的证书”。
+7. 浏览到任务 1 中保存的证书，然后单击“确定”。
+8. 从以下位置选择受信任证书的**目标存储区**（仅适用于 Windows 8.1 和 Windows 10 设备）：
     - **计算机证书存储区 - 根**
     - **计算机证书存储区 - 中间**
     - **用户证书存储区 - 中间**
-
-6. 选择“确定”保存更改，然后选择“创建”保存新的配置文件。
+8. 完成后，选择“确定”，返回“创建配置文件”窗格，然后选择“创建”。
 
 系统随即创建配置文件，并在列表中显示。 要向组分配此配置文件，请参阅[分配设备配置文件](device-profile-assign.md)。
 

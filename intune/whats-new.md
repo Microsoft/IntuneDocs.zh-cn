@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune 新增功能"
-titlesuffix: Azure portal
+titlesuffix: 
 description: "了解 Intune Azure 门户新增功能"
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7490302c7bd928417cdf946cbbf74f8b8b7531ed
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 513164a1f734fddb6ac66fcaffdc2fb885a4659a
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -171,7 +171,7 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>通过安全网络远程打印 <!-- 1709994  -->
 使用 PrinterOn 的无线移动打印解决方案，用户将可以随时随地通过安全网络进行远程打印。 PrinterOn 将集成适用于 iOS 和 Android 的 Intune APP SDK。 将可以通过管理控制台中的 Intune“应用保护策略”边栏选项卡，将应用保护策略定目标到此应用。 最终用户将能够通过 Play 商店或 iTunes 下载“PrinterOn for Microsoft”应用，以便在 Intune 生态系统内使用。
 
-### <a name="macos-company-portal-support-for-enrollments-that-use-the-device-enrollment-manager----1352411---"></a>对使用设备注册管理员的注册的 macOS 公司门户支持 <!-- 1352411 -->
+### <a name="macos-company-portal-support-for-enrollments-that-use-the-device-enrollment-manager----1352411---"></a>对使用设备注册管理器的注册的 macOS 公司门户支持 <!-- 1352411 -->
 
 用户现在能够在注册 macOS 公司门户时使用设备注册管理员。
 
@@ -762,11 +762,8 @@ Intune 对 [Microsoft Intune App SDK Cordova](app-sdk-cordova.md) 插件的支�
 有关 App Wrapping Tool 的详细信息，请参阅 [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) 和 [App Wrapping Tool for Android](app-wrapper-prepare-android.md)。 如有任何问题或疑问，请联系 [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com)。 
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>更改计划：立刻使用 Azure 上的 Intune 进行 MDM 管理<!-- 1227338 -->
-一年前，我们推出了 [Azure 上 Intune 的公共预览版](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)，六个月前，我们推出了 Intune [新管理员体验的正式版](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)。 自 2018 年 4 月 2 日起，我们将面向使用 Intune 独立版的客户关闭经典 Silverlight 控制台中的移动设备管理 (MDM)。 但客户可以使用 [Azure 上的 Intune](https://aka.ms/Intune_on_Azure) 满足 MDM 需求。 如果仍在使用经典控制台进行 MDM，请停止此做法并开始熟悉 Azure 上的 Intune。 我们不希望任何最终用户受到此次更改的影响。 Silverlight 中将保留经典电脑管理。 可在[此处](https://aka.ms/Intune_on_Azure_mdm)详细了解此次更改及其带来的影响。
+一年前，我们推出了 [Azure 上 Intune 的公共预览版](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)，六个月前，我们推出了 Intune [新管理员体验的正式版](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)。 自 2018 年 8 月 31 日起，我们将面向使用 Intune 独立版的客户关闭经典 Silverlight 控制台中的移动设备管理 (MDM)。 但客户可以使用 [Azure 上的 Intune](https://aka.ms/Intune_on_Azure) 满足 MDM 需求。 如果仍在使用经典控制台进行 MDM，请停止此做法并开始熟悉 Azure 上的 Intune。 我们不希望任何最终用户受到此次更改的影响。 Silverlight 中将保留经典电脑管理。 可在[此处](https://aka.ms/Intune_on_Azure_mdm)详细了解此次更改及其带来的影响。
 
-
-### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>计划更改：Easy Assist 服务终止 <!-- 1556480 -->
-Intune 使用 Microsoft Easy Assist 提供 PC 管理远程协助。 可能不知道的一件事是，Microsoft Easy Assist 所属的 Office Live Meeting 即将于 2017 年 12 月 31 日遭弃用。 因此，Intune 使用的 Easy Assist 产品/服务同样也将于 2017 年 12 月 31日服务终止。
 
 ### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>独立于 Android 设备管理 Android for Work 设备 <!-- 1490731 EEready-->    
 注意：以下更改随 11 月更新一起推出，但可能需要一些时间才能在你的帐户上执行。 当帐户可使用这些更改时，你会在 Office 365 门户中收到确认通知。 推出后，你将拥有其他可管理性选项。 在推出期间，最终用户体验未作任何更改。
@@ -795,25 +792,8 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 
 所有情况下都将保留预期规则。 对你来说，无需任何操作即可维护环境中的 Android for Work 全局或按组允许。
 
-### <a name="deprecating-support-for-os-x-mavericks-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>正在弃用对 OS X Mavericks 10.10 及 macOS 早期版本的支持<!--1489263, plan for change for 1802-->
-自 2018 年 2 月起，将开始停止对运行 OS X Yosemite 10.10 及 macOS 早期版本的设备的注册。 Intune 完全支持 OS X Capitan 10.11 和更高版本。
-
-### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>在图形 API 中访问受管理设备的新路径<!-- 1586728 -->
-用于在 beta 版本图形 API 中访问托管设备的路径正在发生更改。 
-
-| | |
-|--|--|
-| 当前路径 |  https://graph.microsoft.com/beta/managedDevices |
-| 新路径 | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
-
-这两个路径在 10 月均可使用。 10 月服务发布后，仅可使用新路径。  如果目前使用图形 API 受管理设备，请使用新路径更新和验证脚本和应用程序。 有关其他更改，请查看每月[图形 API 更改日志](https://developer.microsoft.com/graph/docs/concepts/changelog)。
-
-
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接访问 Apple 注册方案<!--951869-->
 对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，只能通过 Intune 经典门户中的链接访问 Apple 注册预览版。 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的这些功能。 迁移的计划目前尚未公布，但详细信息将尽快发布。 如果现有帐户无法访问 Azure 门户，强烈建议创建一个试用帐户测试新体验。
-
-### <a name="administration-roles-being-replaced-in-azure-portal"></a>在 Azure 门户中被替换的管理角色
-在 Intune 经典门户 (Silverlight) 中使用的现有移动应用程序管理 (MAM) 管理角色（参与者、所有者和只读）被替换为 Intune Azure 门户中一套完整的基于角色的新的管理控制方法 (RBAC)。 在迁移到 Azure 门户后，需要将管理员重新分配到这些新的管理角色。 有关 RBAC 和新角色的详细信息，请参阅 [Microsoft Intune 基于角色的访问控制](/intune/role-based-access-control)。
 
 ## <a name="whats-coming"></a>即将推出
 
@@ -822,24 +802,6 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 我们将向 iOS 版公司门户应用发布用户体验主要更新。 此更新具有经过完全重新设计的视觉效果，包括现代化的外观和经提升的可用性和可访问性感受。 iOS 公司门户当前的所有功能都将保留。
 
 我们将通过 Apple TestFlight 计划推出更新版 iOS 公司门户应用的预发布版本，用户可以使用并提供反馈。 若想参与 TestFlight，请在 https://aka.ms/intune_ios_cp_testflight 注册。
-
-### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>适用于 Intune 的条件访问策略仅可从 Azure 门户访问<!-- 1737088 -->
-我们正在简化配置和管理条件访问的位置。 目前，可从“Intune 应用保护(MAM)”边栏选项卡管理条件访问，还可通过 [Microsoft Azure 门户](https://manage.windowsazure.com)中的经典版 Azure AD 进行管理。 从 1 月开始，只能在 [Azure 门户](https://portal.azure.com)中通过“Azure Active Directory” > “条件访问”配置和管理策略。 为方便起见，还可在 Azure 门户中通过“Intune” > “条件访问”，从 Intune 访问此边栏选项卡。
-
-### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine---1592747--"></a>使用 Intune 的设备符合性引擎管理 Jamf 注册的 macOS 设备<!--1592747-->
-从 2018 年初开始，Jamf 将把 macOS 设备状态信息发送给 Intune，然后由 Intune 评估它是否符合 Intune 控制台中定义的策略。 基于设备符合性状态以及其他条件（如位置、用户风险等），条件访问将强制实现 macOS 设备访问云和与 Azure AD 连接的本地应用程序（包括 Office 365）的符合性。
-
-### <a name="changes-in-support-for-the-intune-ios-company-portal-app-----1164474----"></a>Intune iOS 公司门户应用的支持更改 <!-- 1164474  -->
-Microsoft Intune 公司门户应用 iOS 版即将会有新的版本，该版本仅支持运行 iOS 9.0 或更高版本的设备。 支持 iOS 8 的公司门户版本在未来较短时间内仍将可用。 但是，如果还使用启用了 MAM 的 iOS 应用（支持 iOS 9.0 和更高版本），需确保最终用户更新到最新 OS。 
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-虽然我们无法提供具体日期，但我们仍将此提前告知于你，以便你有时间做出计划。 请确保你的用户更新到 iOS 9+，且当公司门户应用发布后，请求最终用户更新其公司门户应用。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-鼓励用户更新到 iOS 9.0 或更高版本以充分利用 Intune 的新功能。  鼓励用户安装公司门户的新版本，从而利用它将提供的新功能。
-
-转到 Azure 门户中 Intune，依次查看“设备”>“所有设备”，并按 iOS 版本进行筛选，以确定当前是否有任何设备的操作系统低于 iOS 9。
-
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 将要求更新应用传输安全<!--748318-->
 Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求。 使用 ATS 对所有通过 HTTPS 的应用通信实施更严格的安全措施。 此更改会影响使用 iOS 公司门户应用的 Intune 客户。

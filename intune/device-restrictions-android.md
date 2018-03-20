@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 和 Samsung Knox Standard 设备限制设置 
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 03/05/2018
 
 展台设置仅适用于 Samsung Knox Standard 设备和使用 Intune 管理的应用。
 
-- **选择受管理应用** - 选择以下选项之一，添加一个或多个可以在设备处于展台模式时运行的受管理应用。 不允许在设备上运行其他应用。
+- **选择受管理应用** - 选择以下选项之一，添加一个或多个可以在设备处于展台模式时运行的受管理应用。 不允许在设备上运行其他应用。 预安装的浏览器不能定义为在设备处于展台模式下也允许运行的应用。 如果需要浏览器，请考虑使用 [Managed Browser](app-configuration-managed-browser.md)。
     - 按包名称添加应用
     - 按 URL 添加应用
     - 添加托管应用。

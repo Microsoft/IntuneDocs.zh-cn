@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/5/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -41,13 +41,14 @@ ms.lasthandoff: 03/02/2018
 
 在 Azure Active Directory (Azure AD) 中创建组或选择现有组，以包含有权访问每应用 VPN 的成员。
 
-1. 打开 Azure 门户。 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 2. 选择“组”，再单击“新建组”。
-3. 键入组的“名称”。 
-4. 键入组的“说明”。 
+3. 为该组选择“组类型”。 
+3. 键入组的“组名称”。 
+4. 键入组的“组说明”。 
 5. 对“成员身份类型”选择“已分配”。
-6. 对“启用 Office 功能”选择“否”。
-7. 在“成员”边栏选项卡中按名称或电子邮件地址搜索 VPN 用户。
+7. 在“成员”窗格中按名称或电子邮件地址搜索 VPN 用户。
 8. 选择每个用户，然后单击“选择”。
 9. 单击“创建”
 
@@ -55,14 +56,15 @@ ms.lasthandoff: 03/02/2018
 
 将 CA 颁发的 VPN 服务器根证书导入到 Intune 中创建的配置文件中。 受信任的证书配置文件指示 iOS 设备自动信任 VPN 服务器提供的 CA。
 
-1. 打开 Azure 门户。 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 2. 选择“设备配置”，然后单击“配置文件”。
-3. 单击“+ 创建配置文件”。 在“创建配置文件”中：
+3. 单击“创建配置文件”。 在“创建配置文件”中：
     1. 键入“名称”。
     2. 键入“说明”。
     3. 对“平台”选择“iOS”。
     4. 对“配置文件类型”选择“受信任的证书”。
-4. 单击文件夹图标，浏览到从 VPN 管理控制台导出的 VPN 证书（.cer 文件）。 单击“确定”
+4. 单击文件夹图标，浏览到从 VPN 管理控制台导出的 VPN 证书（.cer 文件）。 单击" **确定**"。
 5. 单击“创建”。
 
     ![创建受信任的证书配置文件](media\vpn-per-app-create-trusted-cert.png)
@@ -71,9 +73,10 @@ ms.lasthandoff: 03/02/2018
 
 受信任的根证书配置文件允许 iOS 自动信任 VPN 服务器。 SCEP 证书提供 iOS VPN 客户端到 VPN 服务器的凭据。 该证书允许设备以不提示 iOS 设备用户输入用户名和密码的方式进行身份验证。 
 
-1. 打开 Azure 门户。 选择“更多服务” > “监视 + 管理” > “Intune”。 
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 2. 选择“设备配置”，然后单击“配置文件”。
-3. 单击“+ 创建配置文件”。 在“创建配置文件”中：
+3. 单击“创建配置文件”。 在“创建配置文件”中：
     1. 键入“名称”。
     2. 键入“说明”。
     3. 对“平台”选择“iOS”。
@@ -97,9 +100,10 @@ ms.lasthandoff: 03/02/2018
 
 VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息以及每应用 VPN 标志，用于启用供 iOS 应用程序使用的每应用 VPN 功能。
 
-1. 打开 Azure 门户。 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 2. 选择“设备配置”，然后单击“配置文件”。
-3. 单击“+ 创建配置文件”。 在“创建配置文件”中：
+3. 单击“创建配置文件”。 在“创建配置文件”中：
     1. 键入“名称”。
     2. 键入“说明”。
     3. 对“平台”选择“iOS”。
@@ -126,19 +130,21 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 
 添加 VPN 配置文件后，将应用和 Azure AD 组与配置文件关联。
 
-1. 打开 Azure 门户。 选择“更多服务” > “监视 + 管理” > “Intune”。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
 2. 选择“移动应用”。
 3. 单击“应用”。
 4. 从应用列表中选择应用。
 5. 单击“分配”。
-6. 单击“选择组”，选择之前定义的组。 单击“选择”。
-7. 在“分配”边栏选项卡中对“类型”选择“必需”。
+6. 单击“添加组”。
+7. 在“添加组”窗格中对“分配类型”选择“必需”。
+6. 选择前面定义的组，然后进行选择，使此应用为必需。
 8. 对“VPN”选择你的 VPN 定义。
  
     > [!NOTE]  
     > 有时 VPN 定义会占用长达一分钟的时间来检索值。 单击“保存”之前等待 3-5 分钟。
 
-9. 单击 **“保存”**。
+9. 单击“确定”，然后单击“保存”。
 
     ![将应用与 VPN 相关联](media\vpn-per-app-app-to-vpn.png)
 

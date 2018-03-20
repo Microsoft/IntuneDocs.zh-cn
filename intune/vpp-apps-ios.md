@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
-ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
+ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
@@ -80,11 +80,11 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-1.  在“Intune”边栏选项卡上，选择“设置”下的“移动应用” > “iOS VPP 令牌”。
-2.  在 VPP 令牌边栏选项卡列表上，请选择“创建”。
-4. 在“创建 VPP 令牌”边栏选项卡中，指定下列信息：
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+1.  在“Intune”窗格中，选择“设置”下的“移动应用” > “iOS VPP 令牌”。
+2.  在 VPP 令牌列表窗格中，选择“创建”。
+4. 在“创建 VPP 令牌”窗格中，指定下列信息：
     - **VPP 令牌文件** - 如果尚未注册，则请注册 Volume Purchase Program 企业版或 Volume Purchase Program 教育版。 注册后，为你的帐户下载 Apple VPP 令牌，并在此处选择它。
     - **Apple ID** - 输入与批量购买计划关联的帐户的 Apple ID。
     - **国家/地区** - 选择 VPP 国家/地区应用商店。  Intune 将同步指定 VPP 国家/地区应用商店中所有区域设置对应的 VPP 应用。
@@ -94,17 +94,17 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
     - **VPP 帐户类型** - 从“企业版”或“教育版”中进行选择。
     - **自动应用更新** - 从“关”切换为“开”以启用自动更新。 启用后，当设备签入时，Intune 将更新通过 Intune 服务针对指定令牌购买的所有应用。
 Intune 将在应用商店内检测 VPP 应用更新，并在设备签入时自动将这些更新推送到设备中。
-4. 完成后，选择“上传”。
+4. 完成后，选择“创建”。
 
-该令牌将显示在令牌列表边栏选项卡中。
+该令牌显示在“令牌列表”窗格中。
 
 你可以随时通过选择“立即同步”将 Apple 保存的数据与 Intune 同步。
 
 ## <a name="to-assign-a-volume-purchased-app"></a>如何分配批量购买应用
 
-1.  在“Intune”边栏选项卡上，选择“管理”下的“移动应用” > “应用”。
-2.  在应用列表边栏选项卡上，选择要分配的应用，然后选择“分配”。
-3.  在“应用名称 - 分配”边栏选项卡上，选择“选择组”，然后在“选择组”边栏选项卡上，选择要将应用分配到的 Azure AD 用户或设备组。
+1.  在“Intune”窗格中，选择“管理”下的“移动应用” > “应用”。
+2.  在应用列表窗格中，选择要分配的应用，然后选择“分配”。
+3.  在“应用名称 - 分配”窗格中，选择“添加组”，然后在“添加组”窗格中，选择“分配类型”以及要将应用分配到的 Azure AD 用户或设备组。
 5.  请为选择的每个组选择以下设置：
     - **类型** - 选择应用将为“可用”（最终用户可以从公司门户安装应用）还是“必需”（最终用户设备将自动安装应用）。
     - 许可证类型 - 选择“用户许可”或“设备许可”。

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e7e2c8d239b8150f67a699ba6fef156b3e1a7d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: b7d2b551832d8d0e467d079df673954318623e4c
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>添加用于组织用户和设备的组
 Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 Intune 管理员，可以设置适合组织需要的组。 创建组，以便按地理位置、部门或硬件特性来组织用户或设备。 使用组来管理大规模的任务。 例如，可设置用于大量用户的策略，或向一组设备部署应用。
@@ -33,9 +33,11 @@ Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 
 ## <a name="add-a-new-group"></a>添加新组
 
 使用以下步骤来创建新组。
-1. 在 Azure 门户中，转到“组”，再选择“所有组”边栏选项卡中的“新建组”。
-  ![选择了“新建组”的“用户和组”屏幕的屏幕截图](./media/groups-add-new.png)
-2. 指定此新组的“名称”和“说明”。 这些属性仅出现在管理门户中，并且不会向用户显示。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在 Intune 窗格中，选择“组”，然后在“所有组”窗格中选择“新建组”。
+  ![显示“新建组”已选择的 Azure 门户的屏幕截图](./media/groups-add-new.png)
+2. 指定此新组的“组类型”、“名称”和“说明”。 这些属性仅出现在管理门户中，并且不会向用户显示。
 
 3. 选择成员身份类型：
   - **已分配**：创建一个手动分配的成员的组。 深入了解 [Azure AD 已分配的组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)。

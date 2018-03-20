@@ -13,13 +13,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 156d37874529b4ae5a8176d7e9a8873cf440c32c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>适用于运行 Windows 10 的设备的 Microsoft Intune 自定义设备设置 
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>适用于运行 Windows 10 的设备的 Microsoft Intune 自定义设备设置
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 03/05/2018
 ## <a name="configure-custom-settings"></a>配置自定义设置
 
 1. 按照[如何在 Microsoft Intune 中配置自定义设备设置](custom-settings-configure.md)中的说明进行操作。
-2. 在“创建配置文件”页，选择“设置”添加一个或多个 OMA-URI 设置。
-3. 在“自定义 OMA-URI 设置”页，单击“添加”可添加新值。 还可以单击“导出”创建逗号分隔值 (.csv) 文件中配置的所有值的列表。
-4. 对于想要添加的每个 OMA URI 设置，请输入以下信息。 使用本文中的列表了解可以使用的设置：
-    - **设置名称** - 输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。
-    - **设置描述** -（可选）输入设置的描述。
+1. 在“自定义 OMA-URI 设置”窗格上，单击“添加”可添加新值。 还可以单击“导出”创建逗号分隔值 (.csv) 文件中配置的所有值的列表。
+1. 对于想要添加的每个 OMA URI 设置，请输入以下信息。 使用本文中的列表了解可以使用的设置：
+    - **名称** - 输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。
+    - **描述** -（可选）输入设置的描述。
+    - **OMA-URI（区分大小写）** - 指定想要为其提供设置的 OMA-URI。
     - **数据类型** -从以下各项选择：
         - **字符串**
         - **字符串 (XML)**
@@ -41,10 +41,10 @@ ms.lasthandoff: 03/05/2018
         - **整数**
         - **浮点**
         - **布尔值**
-    - **OMA-URI（区分大小写）** - 指定想要为其提供设置的 OMA-URI。
-    - **值** - 指定要与输入的 OMA-URI 关联的值。
-5. 完成后，返回“创建配置文件”页，然后点击“创建”。
-配置文件随即创建并显示在“配置文件列表”页中。
+        - **Base64**
+    - **值** - 指定要与输入的 OMA-URI 关联的值或文件。
+1. 完成后，选择“确定”，返回“创建配置文件”窗格，然后选择“创建”。
+配置文件随即创建并显示在“配置文件列表”窗格中。
 
 ## <a name="example"></a>示例
 在以下屏幕截图中，已启用设置 **Connectivity/AllowVPNOverCellular**。 这样一来，Windows 10 设备在处于移动电话网络中时会打开 VPN 连接。
@@ -59,5 +59,3 @@ ms.lasthandoff: 03/05/2018
 并非所有设置均兼容所有 Windows 10 版本。 Windows 文章中的表将说明各个 CSP 支持的版本。
 
 此外，Intune 并不支持本文中列出的所有设置。 若要查明 Intune 是否支持所需的设置，请打开针对该设置的文章。 每个设置页面将显示其支持的操作。 若要使用 Intune，设置必须支持“添加”或“替换”操作。
-
-

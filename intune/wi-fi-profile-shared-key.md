@@ -1,12 +1,11 @@
 ---
-title: "创建具有预共享密钥的 Wi-Fi 配置文件"
-titleSuffix: Microsoft Intune
-description: "使用 Intune 自定义配置文件创建具有预共享密钥的 Wi-Fi 配置文件。"
+title: "创建具有预共享密钥的 WiFi 配置文件 - Microsoft Intune - Azure | Micrososft Docs"
+description: "在 Microsoft Intune 中使用自定义配置文件，创建具有预共享密钥的 Wi-Fi 配置文件并获取适用于 Android、Windows 的 XML 示例代码和基于 EAP 的 Wi-Fi 配置文件"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: mandia
+ms.author: MandiOhlinger
 manager: dougeby
-ms.date: 11/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,63 +14,64 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8229ac82e6854d75f569b7bbf04dd2f5e14856c7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>使用自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件
+# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件 - Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-下面介绍了如何使用 Intune 的“自定义设备配置文件”创建具有预共享密匙的 Wi-Fi 配置文件。 本主题还有一个如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
+预共享密钥 (PSK) 通常用于对 WiFi 网络或无线 Lan 的用户进行身份验证。 通过 Intune，可以创建使用预共享密钥的 WiFi 配置文件。 若要创建配置文件，请使用 Intune 中的“自定义设备配置文件”功能。 本文还包含一些有关如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
 
-> [!NOTE]
--   如下所述，你可能会发现从连接到网络的计算机复制代码更加轻松。
-- 对于 Android，还可以选择使用此由 Johnathon Biersack 提供的 [Android PSK 生成器](http://intunepskgenerator.johnathonb.com/)。
--   可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
--  对于 iOS，在 Mac 工作站上使用 Apple Configurator 来设置配置文件。 或者，使用此由 Johnathon Biersack 提供的 [iOS PSK 移动配置生成器](http://intunepskgenerator.johnathonb.com/)。
+## <a name="before-you-begin"></a>在开始之前
 
+- 如下所述，从连接到网络的计算机复制代码可能更加轻松。
+- 对于 Android，还可以使用 [Android PSK 生成器](http://intunepskgenerator.johnathonb.com/)。
+- 可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
+- 对于 iOS，在 Mac 工作站上使用 Apple Configurator 来设置配置文件。 或者，使用 [iOS PSK 移动配置生成器](http://intunepskgenerator.johnathonb.com/)。
 
-1.  若要为 Android 或 Windows 创建具有预共享密钥的 Wi-Fi 配置文件或基于 EAP 的配置文件，则在创建设备配置文件时，为该设备平台选择“自定义”，而不是 Wi-Fi 配置文件。
+## <a name="create-a-custom-profile"></a>创建自定义配置文件
+可以创建适用于 Android、Windows 或基于 EAP 的 Wi-Fi 配置文件的具有预共享密钥的自定义配置文件。 若要使用 Azure 门户创建配置文件，请参阅[创建自定义设备设置](custom-settings-configure.md)。 创建设备配置文件时，对于设备平台请选择“自定义”。 请勿选择 Wi-Fi 配置文件。 如果选择自定义，请确保： 
 
-2.  提供名称和说明。
-3.  添加新的 OMA-URI 设置：
+1. 输入配置文件的名称和说明。
+2. 添加具有以下属性的新 OMA URI 设置： 
 
-   a.   输入此 Wi-Fi 网络设置的名称。
+   a. 输入此 Wi-Fi 网络设置的名称
 
-   b.   输入 OMA-URI 设置的说明或留空。
+   b. （可选）输入 OMA-URI 设置的说明或留空
 
-   c.   **数据类型**：设置为“字符串”。
+   c. 将“数据类型”设置为 String
 
-   d.   **OMA-URI**：
+   d. **OMA-URI**：
 
     - **对于 Android**：./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **对于 Windows**：./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
     > [!NOTE]
-请务必在开头包括点字符。
+    > 请务必在开头包括点字符。
 
-    SSID 是你为其创建策略的 SSID。 例如，`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID 是你为其创建策略的 SSID。 例如，输入 `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`。
 
-  e. **值字段**：这是粘贴 XML 代码的位置。 此处为一个示例。 每个值都应适于你的网络设置。 参阅代码的注释部分以获取一些指针。
-4. 选择“确定”，保存并分配策略。
+  e. **值字段**：这是粘贴 XML 代码的位置。 请参阅本文中的示例。 更新每个值以匹配你的网络设置。 请参阅代码的注释部分获取一些提示。
+3. 选择“确定”，保存并分配策略。
 
     > [!NOTE]
     > 只能将此策略分配到用户组。
 
-每个设备在下次签入时，将应用该策略，且将在设备上创建 Wi-Fi 配置文件。 设备将能够自动连接到网络。
+每个设备在下次签入时，将应用该策略，且将在设备上创建 Wi-Fi 配置文件。 然后设备便能够自动连接到网络。
 
-## <a name="android-or-windows-wi-fi-profile"></a>Android 或 Windows Wi-Fi 配置文件
+## <a name="android-or-windows-wi-fi-profile-example"></a>Android 或 Windows Wi-Fi 配置文件示例
 
-下面是一个针对 Android 或 Windows Wi-Fi 配置文件的 XML 代码示例：
+下面的示例包含针对 Android 或 Windows Wi-Fi 配置文件的 XML 代码。 
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>` 必须设置为 **false**，因为 **ture** 可能导致设备需要加密密码并尝试进行解密，这可能导致连接失败。
+> `<protected>false</protected>` 必须设为 false。 如果为 true，可能导致设备需要加密密码并尝试进行解密，这可能导致连接失败。
 >
 >  `<hex>53534944</hex>` 应设置为 `<name><SSID of wifi profile></name>` 的十六进制值。
->  Windows 10 设备可能会返回误报的“0x87D1FDE8 修正失败”错误，但仍可以使用该配置文件进行预配。
+>  Windows 10 设备可能会返回误报的“0x87D1FDE8 修正失败”错误，但设备仍包含该配置文件。
 
 ```
 <!--
@@ -115,8 +115,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## <a name="eap-based-wi-fi-profile"></a>基于 EAP 的 Wi-Fi 配置文件
-下面是一个针对基于 EAP 的 Wi-Fi 配置文件的 XML 代码示例：
+## <a name="eap-based-wi-fi-profile-example"></a>基于 EAP 的 Wi-Fi 配置文件示例
+下面的示例包含针对基于 EAP 的 Wi-Fi 配置文件的 XML 代码：
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -199,16 +199,18 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>从现有的 Wi-Fi 连接创建 XML 文件
-还可以从现有的 Wi-Fi 连接创建 XML 文件：
-1. 在连接到或最近连接到无线网络的计算机上，打开下列文件夹：C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid}。
+还可以通过以下步骤从现有的 Wi-Fi 连接创建 XML 文件： 
 
-    最好使用尚未连接到许多无线网络的计算机，因为必须搜索每个配置文件以找到正确的文件。
-3.     搜索 XML 文件以找到具有正确名称的那一个。
-4.     找到了正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的数据字段中。
+1. 在连接到，或最近连接到无线网络的计算机上，打开 `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` 文件夹。
+
+  最好使用未连接到多个无线网络的计算机。 否则，你可能需要搜索每个配置文件，才能找到正确的配置文件。
+
+2. 搜索 XML 文件以找到具有正确配置文件的 XML 文件。
+3. 找到正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的“数据”字段中。
 
 ## <a name="best-practices"></a>最佳做法
-在部署具有 PSK 的 Wi-Fi 配置文件前，请验证该设备能否直接连接到终结点。
+- 在部署具有 PSK 的 Wi-Fi 配置文件前，请确认该设备能否直接连接到终结点。
 
-在轮换密钥（密码或通行短语）时，预计故障时间并进行相应的部署规划。 考虑在非工作时间段推送新 Wi-Fi 配置文件。 此外，警告用户连接性可能会受到影响。
+- 在轮换密钥（密码或通行短语）时，预计故障时间并进行相应的部署规划。 考虑在非工作时间段推送新 Wi-Fi 配置文件。 此外，警告用户连接性可能会受到影响。
 
-若要确保能够进行流畅的转换，请确保最终用户的设备已有到 Internet 的备用连接。 例如，最终用户必须可以切换回来宾 WiFi（或其他一些 WiFi 网络）或者必须有手机网络连接来与 Intune 通信。 这使用户可以在公司 WiFi 配置文件在设备上更新时继续接收策略更新。
+- 若要确保能够进行流畅的转换，请确保最终用户的设备已有到 Internet 的备用连接。 例如，最终用户必须可以切换回来宾 WiFi（或其他一些 WiFi 网络）或者必须有手机网络连接来与 Intune 通信。 这个额外连接使用户可以在公司 WiFi 配置文件在设备上更新时接收策略更新。

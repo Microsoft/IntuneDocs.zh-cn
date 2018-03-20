@@ -1,12 +1,12 @@
 ---
 title: "管理来自适用于企业的 Microsoft 应用商店的应用"
-titlesuffix: Azure portal
-description: "了解如何从适用于企业的 Microsoft 应用商店将应用同步到 Intune，并对其进行分配和跟踪。"
+titlesuffix: Microsoft Intune
+description: "了解如何从适用于企业的 Microsoft Store 将应用同步到 Intune，并对其进行分配和跟踪。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4460924b3e53a9540ff21aa009a0c028de92f26f
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: aa5e3b5559c5c17ea726b26f1c1f56ef37cfe0ae
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
@@ -62,15 +62,14 @@ ms.lasthandoff: 02/24/2018
 
 ## <a name="configure-synchronization"></a>配置同步
 
-1. 登录 Azure 门户。
-2. 选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在 Intune 边栏选项卡上，选择“移动应用”。
-4. 在“移动应用”边栏选项卡上，选择“设置” > “适用于企业的 Microsoft 应用商店”。
-5. 单击“启用”。
-6. 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接，并按之前详述的步骤关联帐户。
-7. 在“语言”下拉列表中，选择适用于企业的 Microsoft 应用商店中的应用在 Azure 门户中的显示语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
-8. 单击“同步”，将从 Microsoft 应用商店购买的应用同步到 Intune。
-9. 单击 **“保存”**。
+1. 登录到 [Azure 门户](https://portal.azure.com)。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+3. 在 Intune 窗格中，选择“移动应用”。
+1. 在“移动应用”窗格上，选择“设置” > “适用于企业的 Microsoft Store”。
+2. 单击“启用”。
+3. 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接，并按之前详述的步骤关联帐户。
+5. 在“语言”下拉列表中，选择适用于企业的 Microsoft Store 中的应用在 Azure 门户中的显示语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
+6. 单击“同步”，将从 Microsoft 应用商店购买的应用同步到 Intune。
 
 ## <a name="synchronize-apps"></a>同步应用
 
