@@ -1,25 +1,25 @@
 ---
-title: "管理 iOS 批量购买的应用 | Microsoft Docs"
-titlesuffix: Azure portal
-description: "了解如何可以将从 iOS 应用商店批量购买的应用同步到 Intune 中，然后管理并跟踪其使用情况。"
-keywords: 
-author: erikre
+title: 在 Microsoft Intune 中管理 iOS 批量购买的应用
+titlesuffix: ''
+description: 了解如何才能将从 iOS 应用商店批量购买的应用同步到 Microsoft Intune 中，然后管理并跟踪其使用情况。
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
@@ -81,7 +81,7 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 1.  在“Intune”窗格中，选择“设置”下的“移动应用” > “iOS VPP 令牌”。
 2.  在 VPP 令牌列表窗格中，选择“创建”。
 4. 在“创建 VPP 令牌”窗格中，指定下列信息：

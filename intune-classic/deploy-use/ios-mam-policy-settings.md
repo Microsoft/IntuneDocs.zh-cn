@@ -1,27 +1,30 @@
 ---
-title: "iOS MAM 策略设置"
-description: "本主题介绍适用于 iOS 设备的移动应用管理策略设置。"
-keywords: 
+title: iOS MAM 策略设置
+description: 本主题介绍适用于 iOS 设备的移动应用管理策略设置。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae861de505964e830aadc1cd913561462762f282
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c4a87223a25ba26492e8db1731594f844136e003
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/20/2018
 ---
 #  <a name="ios-mobile-app-protection-policy-settings"></a>iOS 移动应用保护策略设置
+
+> [!IMPORTANT]
+> 由于 Intune 应用保护策略已完全迁移到 Azure 门户，因此此页上的内容很大程度上已过期。 详细了解 [Azure 门户中适用于 iOS 的 Intune 应用保护策略](https://docs.microsoft.com/intune/app-protection-policy-settings-ios)。
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 

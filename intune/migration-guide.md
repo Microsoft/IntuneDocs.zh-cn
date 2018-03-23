@@ -1,29 +1,30 @@
 ---
-title: "Intune 移动设备管理迁移指南"
-description: "本指南全面介绍从第三方 MDM 提供程序迁移到 Microsoft Intune 所涉及的各种详细信息。"
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Intune 移动设备管理迁移指南
+titlesuffix: Microsoft Intune
+description: 本指南全面介绍从第三方 MDM 提供程序迁移到 Microsoft Intune 所涉及的各种详细信息。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 888624530fe77f22ea9391b688fa9f9b92f0ac75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9bfefff2ef5960b6e52a8a37c2fd31466d16cbff
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-migration-guide"></a>Intune 迁移指南
 
-![Intune MDM 迁移指南图解](./media/MDM-migration-guide-art.PNG)
+![Microsoft Intune MDM 迁移指南图解](./media/MDM-migration-guide-art.PNG)
 
-要成功迁移到 Intune，要从制定一个坚实可行的计划开始，充分考虑当前移动设备管理 (MDM) 环境、业务目标和技术需求等因素。 此外，还需要具有关键的利益相关者，他们将支持并协同完成迁移计划。
+要成功迁移到 Microsoft Intune，首先需要制定一个坚实可行的计划，充分考虑当前移动设备管理 (MDM) 环境、业务目标和技术需求等因素。 此外，还需要包括关键的利益干系人，他们将支持并协同完成迁移计划。
 
 本指南全面介绍从第三方 MDM 提供程序迁移到 Intune 所涉及的各种详细信息。
 

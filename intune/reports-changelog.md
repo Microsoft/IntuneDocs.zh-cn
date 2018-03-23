@@ -1,24 +1,25 @@
 ---
-title: "Intune 数据仓库更改日志 | Microsoft Docs"
-description: "Intune 数据仓库 API 中的更改列表。"
-keywords: "Intune 数据仓库"
+title: Intune 数据仓库更改日志
+titlesuffix: Microsoft Intune
+description: Intune 数据仓库 API 中的更改列表。
+keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67eedf528763ae302e3850710b3fab026e15f813
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: 178112a077ce86204a3a829283552e9597db719c
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 

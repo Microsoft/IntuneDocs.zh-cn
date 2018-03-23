@@ -1,26 +1,26 @@
 ---
-title: "Intune 的常见使用方式"
-description: "列出了 Intune 可提供帮助的六个最常见任务"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Microsoft Intune 的常见使用方式
+description: 了解 Microsoft Intune 可帮助管理的六个最常见任务。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 040076248629faa40745b16f90b694331c60a9b1
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b3010695c6562bab845d271775693f23daf99184
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="common-ways-to-use-intune"></a>Intune 的常见使用方式
+# <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune 的常见使用方式
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 

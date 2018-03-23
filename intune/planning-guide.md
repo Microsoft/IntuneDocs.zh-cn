@@ -1,30 +1,31 @@
 ---
-title: "Intune 规划和设计简介"
-description: "本文将简要介绍所有 Intune 规划、设计和实施部分。 通过各类工具，可帮助你确定目标、用例场景和要求，创建推出和通信计划、支持、测试和验证计划。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune 规划和设计简介
+titlesuffix: Microsoft Intune
+description: 本文将简要介绍所有 Microsoft Intune 规划、设计和实施部分。 通过各类工具，可帮助你确定目标、用例场景和要求，创建推出和通信计划、支持、测试和验证计划。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 962ec376b7f2e30ad857ce69e24124c5d482cda0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 074490428b52effbc4a555a63d997a47da55546e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 部署规划、设计和实施指南
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-成功的 Intune 部署始于良好的规划和设计。 本指南旨在引导用户逐步完成制定开发计划、进行设计、载入 Intune 并执行生产推广等一系列流程。
+成功的 Microsoft Intune 部署始于良好的规划和设计。 本指南旨在引导用户逐步完成制定开发计划、进行设计、载入 Intune 并执行生产推广等一系列流程。
 
 ## <a name="whats-included-in-this-guide"></a>该指南包括什么？
 

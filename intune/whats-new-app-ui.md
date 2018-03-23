@@ -1,35 +1,30 @@
 ---
-title: "Intune 最终用户应用的 UI 更新"
-description: "了解 Intune 中针对最终用户设备上可用的应用所做的 UI 更改。"
-keywords: 
+title: Intune 最终用户应用的 UI 更新
+titlesuffix: Microsoft Intune
+description: 了解 Microsoft Intune 中针对最终用户设备上可用的应用所做的 UI 更改。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
-了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 这有助于与用户进行通信，并更新为了支持部署而创建的自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 了解这些更新有助于与用户进行通信，并更新为了支持部署而创建的任何自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
 
-## <a name="week-of-december-11-2017"></a>2017 年 12 月 11 日当周
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>最终用户因帐户看到的消息 <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-“公司门户”网站的用户被禁止执行必须对租户拥有写权限的操作。 他们会看到相应错误消息，指明其帐户处于维护状态。 适用于 Android、iOS、macOS 和 Windows 的“公司门户”应用即将发生类似更改。
-
-![帐户移动期间显示的错误消息](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日当周
 
@@ -121,7 +116,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司门户应用的表述更容易理解 <!---1396349--->  
 
-为了让最终用户能够更轻松地注册，Android 公司门户应用的注册流程已使用新文本进行了简化。 如果有自定义注册文档，则需要更新该文档，反映新的屏幕。 可找到如下所示示例图片：
+Android 公司门户应用的注册流程进行了简化，新增了文本，更易于最终用户进行注册。 如果有自定义注册文档，则需要更新该文档，反映新的屏幕。 可找到如下所示示例图片：
 
 |以前|完成|
 |---|---|
@@ -144,7 +139,7 @@ ms.lasthandoff: 01/25/2018
 
 ![提供电子邮件地址和帐户名。](./media/ios-11-ca-email-after-1708-03.png)
 
-![已发送到外部 Microsoft 登录页。](./media/ios-11-ca-email-after-1708-04.png)
+![发送到外部 Microsoft 登录页。](./media/ios-11-ca-email-after-1708-04.png)
 
 ![在 Microsoft 页提供密码。](./media/ios-11-ca-email-after-1708-05.png)
 
@@ -183,13 +178,13 @@ Android 版“公司门户”应用的应用详细信息页现在会显示 IT �
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
 
-我们宣布将在接下来的几个月内推出一项更新，该更新将提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在不使用凭据的情况下登录时，此功能就特别有用。  
+我们宣布将在接下来的几个月内推出一项更新，用以提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。  
 
 下面，将向你介绍使用凭据进行登录的以前的登录体验和新登录体验，以及从其他设备进行登录的新登录体验。
 
 __以前的登录体验__
 
-![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_before_1704_001.png)
+![公司门户登录页，在网站的图形表示形式前方显示人形图标。 “登录”按钮位于下方。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_before_1704_001.png)
 
 ![点击“登录”后，用户在此页上输入其凭据，系统要求输入用户的电子邮件和密码，还提供其他方法以解决密码出错的情况。](./media/cp_ios_aad_signin_before_1704_002.png)
 
@@ -207,13 +202,13 @@ __新的登录体验__
 
 __从其他设备登录时的新登录体验__
 
-![公司门户登录页，网站的图形表示形式前面显示一个人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+![公司门户登录页，在网站的图形表示形式前方显示人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
 点击“从其他设备登录”链接。
 
 ![通过使用工作计算机的唯一密码访问 aka.ms/devicelogin 页面，然后使用验证码进行登录可获得说明。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-启动浏览器，然后转到 [https://aka.ms/devicelogin](https://aka.ms/devicelogin)。
+启动浏览器并转到 [https://aka.ms/devicelogin](https://aka.ms/devicelogin)。
 
 ![用户工作计算机上用户浏览器的图像，而不是公司门户应用的图像。 显示的“设备登录”页将提示用户输入他们在公司门户应用中收到的验证码。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -229,7 +224,7 @@ __从其他设备登录时的新登录体验__
 
 ## <a name="june-2017"></a>2017 年 6 月
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>适用于 Android 的公司门户应用现推出了全新的应用保护政策最终用户体验 <!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>适用于 Android 的公司门户应用现推出了全新的应用保护政策最终用户体验
 根据客户反馈，已修改适用于 Android 的公司门户应用，以便显示“访问公司内容”按钮。 其目的在于，使最终用户在仅需要访问支持应用保护策略（Intune 移动应用程序管理的一项功能）的应用时，无需完成不必要的注册过程。
 
 用户只需点击“访问公司内容”按钮，而不是开始注册设备。
@@ -238,7 +233,7 @@ __从其他设备登录时的新登录体验__
 
 然后，用户转到公司门户网站，以获得在其设备上使用应用的权限，此时公司门户网站将验证其凭据。
 
-![一个公司门户网站的图像，其中显示确认登录的画面。](./media/and_iwp_sign_in_auth_page_after_1706.png)
+![公司门户网站图像，其中显示确认登录的画面。](./media/and_iwp_sign_in_auth_page_after_1706.png)
 
 仍可通过点击“操作”菜单，让设备注册为完全管理。
 
@@ -259,7 +254,7 @@ __从其他设备登录时的新登录体验__
 
 ![一个 Windows 10 公司门户应用“登录”页面的图像，其中在“设备”列表中间显示了一个状态消息，告知用户其所用设备尚未针对公司用途进行设置，应选中该消息以开始设置。](./media/win10_guided_enroll_select_setup_after_1706.png)
 
-![一个 Windows 10 公司门户应用“设置”页面的图像，该页面向用户发出警告，指示其需要向设备添加公司账号，然后才能注册应用管理。](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+![Windows 10 公司门户应用“设置”页面的图像，该页面向用户发出警告，指示其需要向设备添加公司帐号，然后才能注册应用管理。](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
 ![Windows 10 公司门户应用“向此设备添加公司帐户”页面的图像，其中指示用户需转至“设置应用”并选择“连接”以完成注册。 执行此操作后，屏幕将指示用户需返回公司门户应用，以完成注册。](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
@@ -322,13 +317,13 @@ __从其他设备登录时的新登录体验__
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 > [!Note]
 > 请注意，以下图像可能是预览版，发布的产品可能与当前版本有所不同。
 
+### <a name="ui-iwp"></a>公司门户网站的新用户体验更新 <!--2000968-->
+
+我们将于 4 月引入新的公司门户网站体验，带来 UI 更新、简化的工作流和辅助功能改进。 这将包括应用共享等客户驱动的增强功能和改进的整体性能，以便带来更为用户友好的体验。
+
+我们根据客户反馈添加了一些新功能，这些功能将显著提高现有功能和可用性：
+
+-   整个网站的 UI 改进
+-   共享指向应用的直接链接的功能
+- 改善了大型应用目录的性能
+
+不需要执行任何操作，即可准备好迎接此更改。 更新后的公司门户网站可访问后，我们会通知你。 但是，最终可能需要使用更新后的屏幕截图更新最终用户文档。 请注意，可能还需要更新 iOS 公司门户应用的文档，因为网站驱动 iOS 应用的“应用”部分。
+
+|已更新|上一个|
+|---|---|
+|![更新后的设备页面显示设备与上述设备信息完全符合，不再弹出以上完整列表。](./media/iwp-device-after-1803.png)|![设备页面的以前版本。](./media/iwp-device-before-1803.png)|
+|![更新后的应用安装页面会完全地显示应用的说明和各种安装信息，包括发布日期、版本和应用类型。](./media/iwp-app-install-after-1803.png)|![应用安装页面的以前版本。](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS 版公司门户应用的用户体验更新<!--1412866-->
 
 我们将向 iOS 版公司门户应用发布用户体验主要更新。 此更新具有经过完全重新设计的视觉效果，包括现代化的外观和经提升的可用性和可访问性感受。 iOS 公司门户当前的所有功能都将保留。
 
-我们将通过 Apple TestFlight 计划推出更新版 iOS 公司门户应用的预发布版本，用户可以使用并提供反馈。 若想参与 TestFlight，请在 https://aka.ms/intune_ios_cp_testflight 注册。
+我们将通过 Apple TestFlight 计划推出更新版 iOS 公司门户应用的预发布版本，用户可以使用并提供反馈。 前往 https://aka.ms/intune_ios_cp_testflight 注册以便访问 TestFlight。 有关此更新的最新信息，请参阅 https://aka.ms/iOS_companyportal_update。
 
 ![新 iOS 公司门户应用的预告图像](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __对精选应用的更新__ 我们在网站中添加了一个专用页面，用
 
 ### <a name="see-also"></a>另请参阅
 * [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [云平台路线图](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [云平台路线图](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune 中的新增功能](https://docs.microsoft.com/intune/whats-new)

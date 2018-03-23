@@ -1,24 +1,24 @@
 ---
-title: "分配 Microsoft Intune 许可证"
-description: "向用户分配许可证，以便他们能够在 Intune 中进行注册"
-keywords: 
+title: 分配 Microsoft Intune 许可证
+description: 向用户分配许可证，以便他们能够在 Intune 中进行注册
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>向用户分配许可证，以便他们能够在 Intune 中注册设备
 
@@ -58,6 +58,17 @@ ms.lasthandoff: 03/05/2018
 * 每个你向其分配用户软件许可证的**用户**，均可访问和使用联机服务和相关软件（包括 System Center 软件）来管理应用程序和多达 15 台的设备。
 * 每台你向其分配设备软件许可证的**设备**，均可访问和使用供任意数量的用户使用的联机服务和相关软件（包括 System Center 软件）。
 * 如果设备由多个用户使用，则每位用户均需要设备软件许可证，或所有用户都需要用户软件许可证。
+
+## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>了解已购买许可证的类型
+
+已购买的 Intune 如何决定订阅信息：
+
+- 如果通过企业协议购买 Intune，则可在批量许可证门户的“订阅”下找到订阅信息。
+- 如果通过云解决方案提供商购买 Intune，请与分销商联系。
+- 如果通过 CC# 或转账的方式购买 Intune，则许可证将是基于用户的。
+
+
+
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>使用 PowerShell 来选择性地管理 EMS 用户许可证
 使用 Microsoft 企业移动性 + 安全性（以前称为“企业移动性套件”）的组织中可能会有只需要 Azure Active Directory Premium 或 EMS 包中的 Intune 服务的用户。 你可以使用 [Azure Active Directory PowerShell cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 分配一个或一部分服务。

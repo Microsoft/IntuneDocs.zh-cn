@@ -1,25 +1,25 @@
 ---
-title: "配置适用于 Windows 10 的 Intune 教育设置"
-titleSuffix: Azure portal
-description: "了解如何使用 Intune 配置所管设备上 Windows 10 的教育设置。"
-keywords: 
+title: 配置适用于 Windows 10 的 Intune 教育设置
+titleSuffix: Microsoft Intune
+description: 了解如何使用 Intune 配置所管理的设备上的 Windows 10 教育版设置。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18987c65c7ad0443c8bf3dc268284306cf64080d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fa631cfb799fe02aee935f524a4012f381973d8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Windows 10 教育设置
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/08/2018
     - **文本建议** - 在用户执行测试时允许或阻止文本建议。
 8. 完成后，返回“创建配置文件”窗格，然后点击“创建”。
 
-此时，配置文件会进行创建，并显示在配置文件列表窗格上。
+随即会创建配置文件，并显示在“配置文件列表”窗格上。
 
 ## <a name="next-steps"></a>后续步骤
 

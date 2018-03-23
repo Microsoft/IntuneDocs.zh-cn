@@ -1,20 +1,21 @@
 ---
-title: "Intune 活动的审核日志"
-description: "了解如何查看记录 Intune 活动的审核日志"
-keywords: 
+title: Microsoft Intune 活动的审核日志
+description: 了解如何查看记录 Microsoft Intune 活动的审核日志。
+keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune 活动的审核日志
 审核日志记录了导致 Microsoft Intune 有所变化的活动。 可以创建、更新（编辑）、删除和分配操作或远程任务，并能生成可查看的审核事件。 可以查看大多数 Intune 工作负载的审核日志。 默认针对所有客户启用审核且无法禁用。 审核事件从功能发布日期 2017 年 12 月开始记录；以前的事件不可用。
@@ -28,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="audit-logs-for-intune-workloads"></a>Intune 工作负载的审核日志
 可以查看每个 Intune 工作负载的监视组中的审核日志。  
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格上，选择要查看其审核日志的工作负荷，例如“设备”。
 4. 在工作负载的“监视”组中，选择“审核日志”。
 

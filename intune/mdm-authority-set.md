@@ -1,25 +1,25 @@
 ---
-title: "设置移动设备管理机构"
+title: 设置移动设备管理机构
 titlesuffix: Microsoft Intune
-description: "在 Intune 中设置移动设备管理机构。"
-keywords: 
+description: 在 Intune 中设置移动设备管理机构。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d48a2cea096c1639cd3661521cd636454f3e0ba
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>设置移动设备管理机构
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="set-mdm-authority-to-intune"></a>将 MDM 机构设置为 Intune
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 2. 选择橙色横幅，打开“移动设备管理机构”设置。
 3. 在“移动设备管理机构”下，从以下选项中选择你的 MDM 机构：
   - Intune MDM 机构
@@ -60,7 +60,7 @@ ms.lasthandoff: 03/08/2018
 - iOS - （必需）[获取 Apple MDM push certificate](apple-mdm-push-certificate-get.md)，然后[启用公司拥有的 iOS 设备注册](ios-enroll.md)（可选）。
 - Android -（可选）[启用 Android 工作配置文件](android-enroll.md)
 - Windows -（可选）启用[自动注册](windows-enroll.md)或[批量注册](windows-bulk-enroll.md)
-- macOS - 无要求
+- macOS - （必需）获取 [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)。
 
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理

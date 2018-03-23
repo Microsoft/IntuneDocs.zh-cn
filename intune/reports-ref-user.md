@@ -1,36 +1,37 @@
 ---
-title: "用户 - Intune 数据仓库 | Microsoft Docs"
-description: "Intune 数据仓库 API 中实体集合的“用户”类别的参考主题。"
-keywords: "Intune 数据仓库"
-author: erikre
+title: 用户 - Intune 数据仓库
+titlesuffix: Microsoft Intune
+description: Intune 数据仓库 API 中实体集合的“用户”类别的参考主题。
+keywords: Intune 数据仓库
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3b4046f0906856bce4aafafdace1ffab0b214c17
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a52454bb7065628485bdd5c828206c9a8313900d
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-user-entity"></a>用户实体引用
 
 User 类别包含定义数据模型中用户属性的 User 实体。
 
-## <a name="user"></a>User
+## <a name="user"></a>用户
 
 用户实体列出了企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。
 
 User 实体集合包含用户数据。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在上个月的数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
 
-| 屬性  | 说明 | 示例 |
+| 属性  | 描述 | 示例 |
 |---------|------------|--------|
 | UserKey |数据仓库中用户的唯一标识符 - 代理键。 |123 |
 | UserId |用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |

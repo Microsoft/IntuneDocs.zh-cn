@@ -1,24 +1,25 @@
 ---
-title: "制定推出通信计划"
-description: "本文可帮助用户为 Intune 部署制定推出通信计划。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 制定推出通信计划
+titlesuffix: Microsoft Intune
+description: 本文可帮助用户为 Microsoft Intune 部署制定推出通信计划。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7a358d3cbdd1fadcb6162a9b1eb0c5266c11a0bb
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: b985b92b4ea68fedba3c0d04e53c1e6116a64015
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="develop-a-rollout-communication-plan"></a>制定推出通信计划
 

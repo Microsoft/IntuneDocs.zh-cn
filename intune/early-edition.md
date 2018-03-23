@@ -1,25 +1,25 @@
 ---
-title: "早期版本"
-description: 
-keywords: 
+title: 早期版本
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Microsoft Intune 的早期版本 - 2018 年 3 月
 
@@ -147,6 +147,33 @@ ms.lasthandoff: 03/09/2018
 
 我们将更新适用于 Android 的公司门户应用以遵循 Android 的 [Material Design](https://material.io/)（材料设计）准则。 应用发布时，我们会将新图标的图像发布到[应用 UI 中的新增内容](whats-new-app-ui.md)一文。 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune 应用保护策略的 Microsoft Edge 移动设备支持 <!-- 1817882 -->
+
+移动设备的 Microsoft Edge 浏览器支持在 Intune 中定义的应用保护策略。
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>将完全可分辨名称用作 SCEP 证书的使用者 <!--2221763 eeready-->
+创建 SCEP 证书配置文件时，输入使用者名称。 即可将完全可分辨名称用作使用者。 对于“使用者名称”，选择“自定义”，然后输入 `CN={{OnPrem_Distinguished_Name}}`。 要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure Active Directory (AD) 连接](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>系统会每 15 分钟提示一次 iOS 设备，要求设置 PIN <!--1550837 eeready-->
+符合性或配置策略应用到 iOS 设备后，系统会每 15 分钟提示用户一次，要求设置 PIN。 设置 PIN 之前，系统会持续提示用户。
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>启用蓝牙联系人共享 - Android for Work <!--1098983 eeready-->
+Android 默认禁止通过蓝牙设备同步工作配置文件中的联系人。 因此，工作配置文件联系人不会显示在蓝牙设备的主叫方 ID 中。
+
+“Android for Work” > “设备限制” > “工作配置文件设置”中将出现新设置：
+- 通过蓝牙共享联系人
+
+Intune 管理员可以配置这些设置，启用共享。 将设备与显示免提的主叫方 ID 的车载蓝牙设备配对时，这非常有用。 启用时，显示工作配置文件联系人。 未启用时，不会显示工作配置文件联系人。
+
+适用范围：Android OS v6.0 和更高版本的 Android 工作配置文件设备。
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>安排自动更新 <!--1805514 -->
+
+Intune 使你能够使用 [Windows 更新通道设置](windows-update-for-business-configure.md)控制自动更新的安装。 可以安排定期更新，包括每周更新、每日更新，甚至具体到某个时间更新。 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>禁用设备重启检查 <!--1805490 -->
+
+Intune 使你可以控制[对软件更新的管理](windows-update-for-business-configure.md)。 默认将添加并启用“重启检查”属性。 要跳过重启设备时出现的典型检查（如活动用户、电池水平等），请选择“跳过”。 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ ms.lasthandoff: 03/09/2018
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>添加到终结点保护设置的新 Windows Defender Credential Guard 设置 <!--1102252 --> 
 
-新 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] 设置将添加到“设备配置” > “配置文件” > “终结点保护”。 将添加以下设置： 
+新 [Windows Defender Credential Guard] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) 设置将添加到“设备配置” > “配置文件” > “Endpoint protection”。 将添加以下设置： 
 
 - 平台安全级别：指定平台安全级别是否在下次重启时启用。 基于虚拟化的安全性需要安全启动。 可以选择使用直接内存访问 (DMA) 保护启用基于虚拟化的安全性。 DMA 保护需要硬盘支持并且将仅在正确配置的设备上启用。
 - 基于虚拟化的安全性：指定基于虚拟化的安全性是否在下次重启时启用。 
@@ -185,29 +212,6 @@ ms.lasthandoff: 03/09/2018
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>iOS 应用预配配置 <!-- 1581650 -->
 可以分配 iOS 应用预配配置文件以通过包括或排除安全组来防止应用过期。
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>新 Windows Defender 攻击防护设置 <!-- 631893 -->
-
-将提供六个新的“攻击面减少”设置和扩展的“受控文件夹访问权限: 文件夹保护”功能。 这些设置可以在 Device configuration\Profiles\
-Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
-
-#### <a name="attack-surface-reduction"></a>攻击面减少
-
-|设置名  |设置选项  |描述  |
-|---------|---------|---------|
-|高级勒索软件防护|启用、审核、未配置|使用激进的勒索软件防护。|
-|标记从 Windows 本地安全机构子系统窃取的凭据|启用、审核、未配置|标记从 Windows 本地安全机构子系统 (lsass.exe) 窃取的凭据。|
-|来自 PSExec 和 WMI 命令的进程创建|阻止、审核、未配置|阻止来自 PSExec 和 WMI 命令的进程创建。|
-|从 USB 运行的不受信任和未签名的进程|阻止、审核、未配置|阻止从 USB 运行的不受信任和未签名的进程。|
-|不符合普及程度、年龄或信任列表条件的可执行文件|阻止、审核、未配置|阻止可执行文件的运行，除非这些文件符合普及程度、年龄或信任列表条件。|
-
-#### <a name="controlled-folder-access"></a>受控文件夹访问权限
-
-|设置名  |设置选项  |描述  |
-|---------|---------|---------|
-|文件夹保护（已实现）|未配置、启用、仅审核（已实现）<br><br> **新建**<br>阻止磁盘修改、审核磁盘修改|
-阻止不友好应用对文件和文件夹进行未经授权的更改。<br><br>**启用**：阻止不受信任的应用修改或删除受保护文件夹中的文件，以及阻止写入到磁盘扇区。<br><br>
-**仅阻止磁盘修改**：<br>阻止不受信任的应用写入到磁盘扇区。 不受信任的应用仍可以修改或删除受保护文件夹中的文件。|
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>新 Windows Defender 应用程序防护设置 <!-- 1631890 -->
 

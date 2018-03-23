@@ -1,25 +1,25 @@
 ---
-title: "Intune 数据仓库仅应用程序身份验证"
-titlesuffix: Azure portal
-description: "本主题介绍了数据仓库仅应用程序身份验证"
-keywords: 
+title: Intune 数据仓库仅应用程序身份验证
+titleSuffix: Microsoft Intune
+description: 本主题介绍了数据仓库仅应用程序身份验证。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a4964293b062f42becc34b14fe44cb827c44360
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: e926d3d9e9dfbf6025fb36fd54e64f28b662fc89
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune 数据仓库仅应用程序身份验证
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 ## <a name="authorization"></a>授权
 
-Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的 Azure  AD 租户中授予对 Web 应用程序和 Web  API 的访问权限。 本指南介绍了如何使用 C# 对应用程序进行身份验证。 OAuth 2.0 规范的第 4.1 节介绍了 OAuth 2.0 授权代码流。 有关详细信息，请参阅[授权使用 OAuth 2.0 和 Azure Active Directory 访问 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)。
+Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure  AD  租户中授予对  Web  应用程序和  Web  API  的访问权限。 本指南介绍了如何使用 C# 对应用程序进行身份验证。 OAuth 2.0 规范的第 4.1 节介绍了 OAuth 2.0 授权代码流。 有关详细信息，请参阅[授权使用 OAuth 2.0 和 Azure Active Directory 访问 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)。
 
 
 ## <a name="azure-keyvault"></a>Azure Key Vault

@@ -1,24 +1,25 @@
 ---
-title: "Intune 数据库仓库 API | Microsoft Docs"
-description: "可使用该 API 生成报表，获取有关企业移动环境的见解。"
-keywords: "Intune 数据仓库"
+title: Intune 数据库仓库 API
+titlesuffix: Microsoft Intune
+description: 可使用 Intune 数据仓库 API 生成报表，获取有关企业移动环境的见解。
+keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5c12ea4212bf7276b2cb0a4b09ecff648d67583
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7291e6f0d6094801383ba7fd606c0238e85ba01f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune 数据仓库 API
 
@@ -65,4 +66,4 @@ OData 定义抽象的数据模型和协议，允许任何客户端访问任何�
 
 在 [odata.org](http://www.odata.org) 上查找 OData 资源。
   
-在 [OData 版本 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) 中查看 OData 版本 4.0 标准  
+在 [OData 版本 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)) 处查看 OData 4.0 标准版  

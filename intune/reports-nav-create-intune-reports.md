@@ -1,25 +1,25 @@
 ---
-title: "使用 Intune 数据仓库"
+title: 使用 Intune 数据仓库
 titlesuffix: Microsoft Intune
-description: "使用 Intune 数据仓库生成报表，获取有关企业移动环境的见解。"
-keywords: "Intune 数据仓库"
+description: 使用 Intune 数据仓库生成报表，获取有关企业移动环境的见解。
+keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd90c9d51fe212b0675da4d6039a535be0ff3c89
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 328d8b3787bcef20a1d4949eba427cd8737edafe
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-the-intune-data-warehouse"></a>使用 Intune 数据仓库
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/02/2018
   -  一个使用 OData 标准的数据模型
 
 > [!Note]
-> 如果将混合移动设备管理 (MDM) 与 System Center Configuration Manager 和 Microsoft Intune 配合使用，建议通过 SCCM 检索数据。 Intune 数据仓库仅包含 Intune 数据。 可将 SCCM Power BI 仪表板用于自定义报表。 有关详细信息，请参阅 [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)（宣布推出适用于 System Center Configuration Manager 的 Power BI 解决方案模板） 和 [Create a Power BI report and dashboard](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard)（创建 Power BI 报表和仪表板）。
+> 如果将混合移动设备管理 (MDM) 与 System Center Configuration Manager 和 Microsoft Intune 配合使用，建议通过 SCCM 检索数据。 Intune 数据仓库仅包含 Intune 数据。 可将 SCCM Power BI 仪表板用于自定义报表。 有关详细信息，请参阅 [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)（宣布推出适用于 System Center Configuration Manager 的 Power BI 解决方案模板）和[适用于 Dynamics 365 的 Power BI 内容](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)。
 
 
 > [!Important]  

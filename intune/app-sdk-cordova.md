@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK Cordova 插件"
-description: 
-keywords: "sdk、Cordova、intune"
+title: Microsoft Intune App SDK Cordova 插件
+description: Intune App SDK Cordova 插件允许开发人员将 Intune 应用和数据保护功能集成到基于 Cordova 的应用中。
+keywords: sdk、Cordova、intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova 插件
 
@@ -118,19 +118,19 @@ $ cordova run --nobuild
 
 有关预期格式的详细信息，请参阅 [ Cordova Gradle 签名信息](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle)。
 
-目前不支持在 `build.json` 中或任意位置（通过参数向 Cordova 版本提供）提供签名信息的功能。
+Intune 目前不支持在 `build.json` 中或通过参数提供的任意位置为 Cordova 生成签名信息的能力。
 
 ## <a name="debugging-from-visual-studio"></a>通过 Visual Studio 进行调试
 
-第一次启动应用后，会看到一个对话框，告知你该应用是通过 Intune 管理的。 点击“不再显示”，然后再次从 VS 中单击“调试/运行”按钮以点击断点。
+第一次启动应用后，应会看到一个对话框，告知你该应用由 Intune 管理。 点击“不再显示”，然后再次从 VS 中单击“调试/运行”按钮以点击断点。
 
 ## <a name="known-limitations"></a>已知限制
 
 ### <a name="android"></a>Android
 
 * MultiDex 支持不完整。
-* 应用必须具有 `minSdkVersion` 14 和 `targetSdkVersion` 24 或更低版本。 目前不支持面向 API 25 的应用
-* 不能对已使用 V2 签名方案签名的应用重新签名。 当该插件包装 V2 签名的应用时，包装的输出 .apk 是未签名的。
+* 应用必须具有 `minSdkVersion` 14 和 `targetSdkVersion` 24 或更低版本。 Intune 目前不支持面向 API 25 的应用
+* Intune 不能对已使用 V2 签名方案签名的应用重新签名。 当该插件包装 V2 签名的应用时，包装的输出 .apk 是未签名的。
 *
   * 你可以通过将以下内容添加到 `build-extras.gradle` 文件，禁用 Cordova 的默认 V2 签名：
 
@@ -157,6 +157,6 @@ $ cordova run --nobuild
 
 ### <a name="ios"></a>iOS
 
-* 每当修改 **Info.plist** 文件的 **CFBundleDocumentTypes** 节点下的 UTI 列表时，必须在相同 plist 文件的所导入 UTI 部分中清除 Intune UTI（**UTImportedTypeDeclarations** 节点），然后才能再次生成。 所有 Intune UTI 将以前缀 `com.microsoft.intune.mam` 开头。
+* 每当修改 Info.plist 文件的 CFBundleDocumentTypes 节点下的 UTI 列表时，必须在相同 plist 文件的所导入 UTI 部分中清除 Intune UTI（UTImportedTypeDeclarations 节点），然后才能再次生成。 所有 Intune UTI 都将以前缀 `com.microsoft.intune.mam` 开头。
 
 * 如果要从 Cordova 项目中删除 Cordova 插件的 Intune App SDK，还必须删除 iOS 平台并重新添加它，以便撤消 .xcodeproj 和 .plist 文件中的一些 Intune 配置。

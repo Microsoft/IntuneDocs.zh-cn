@@ -1,30 +1,31 @@
 ---
-title: "配置自定义域名"
-description: "向你的 Intune 订阅添加自定义域名"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 配置自定义域名
+titlesuffix: Microsoft Intune
+description: 向你的 Microsoft Intune 订阅添加自定义域名
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>配置自定义域名
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-本主题指导管理员如何创建 DNS CNAME 以简化和自定义其登录体验。
+本主题指导管理员如何使用 Microsoft Intune 创建 DNS CNAME 以简化和自定义其登录体验。
 
 组织注册 Microsoft 基于云的服务（如 Intune）时，你将获得一个 Azure Active Directory (AD) 中托管的初始域名，其形式如下所示：your-domain.onmicrosoft.com。在此示例中，your-domain 是你在注册时选择的域名。 onmicrosoft.com 是分配给订阅中所添加帐户的后缀。 可通过为组织配置自定义域来访问 Intune，而不是使用订阅提供的域名。
 
