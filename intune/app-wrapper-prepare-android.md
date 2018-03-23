@@ -1,24 +1,24 @@
 ---
-title: "使用 Intune 应用包装工具包装 Android 应用"
-description: "了解不更改应用本身代码即可包装 Android 应用的方法。 准备应用以便应用移动应用管理策略。"
-keywords: 
+title: 使用 Intune 应用包装工具包装 Android 应用
+description: 了解不更改应用本身代码即可包装 Android 应用的方法。 准备应用以便应用移动应用管理策略。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -30,8 +30,6 @@ ms.lasthandoff: 03/05/2018
 
 
 在运行工具前查看[运行应用包装工具的安全注意事项](#security-considerations-for-running-the-app-wrapping-tool)。 若要下载该工具，请转到 GitHub 上的[适用于 Android 的 Microsoft Intune 应用包装工具](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)。
-
-
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>满足使用应用包装工具的先决条件
 
@@ -51,6 +49,8 @@ ms.lasthandoff: 03/05/2018
     > 在某些情况下，32 位版本的 Java 可能会导致内存问题。 最好安装 64 位版本。
 
 - Android 要求对所有应用包 (.apk) 进行签名。 有关重复使用现有证书和证书签名的综合指南，请参阅[重复使用签名证书和包装应用](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)。 Java 可执行文件 keytool.exe 可用于生成对已包装的输出应用进行签名所需的新凭据。 必须保证设置的所有密码的安全性，但需要记住密码，因为运行应用包装工具时需要使用。
+
+- （可选）在输入应用中启用 Multidex。 有时由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 在此方案中，最佳做法是在该应用自身中启用 Multidex。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作。 
 
 ## <a name="install-the-app-wrapping-tool"></a>安装应用包装工具
 
@@ -159,6 +159,7 @@ Android 要求所有应用都必须由有效证书进行签名才能安装在 An
 以下说明专门面向最终用户设备上要求使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用。
 
 1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
+
 > [!NOTE] 
 > 与应用关联的“客户端 ID”一词与 Azure 门户中与应用关联的“应用程序 ID”一词的含义相同。 
 * 启用 SSO 需要“通用 ADAL 配置”#2。

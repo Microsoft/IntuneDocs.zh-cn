@@ -1,25 +1,26 @@
 ---
-title: "推动最终用户采用条件性访问"
-description: "本文提供有关如何利用条件访问推动 Intune 注册的见解。"
-keywords: 
-author: andredm7
-ms.author: andredm
+title: 推动最终用户采用条件性访问
+titlesuffix: Microsoft Intune
+description: 了解如何在 Microsoft Intune 中使用条件访问，从而推动注册。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 180cecde31627192363bb00f58fb13f7ec123744
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 31e2a79e5506666cc5ebe655536600b57a429802
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="drive-end-user-adoption-with-conditional-access"></a>推动最终用户采用条件性访问
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>在 Microsoft Intune 中推动最终用户采用条件访问
 
 通过 Intune 启用条件访问功能（例如，阻止未注册设备的电子邮件）有助于推动注册和符合性，但成功迁移不需要这些功能。 迁移采用目标和安全要求应指示成功。
 

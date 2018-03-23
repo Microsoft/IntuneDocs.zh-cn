@@ -1,25 +1,25 @@
 ---
-title: "在 Azure 中我的 Intune 功能处于哪个位置？"
-titlesuffix: Azure portal
-description: "有助于在 Azure 门户中找到 Intune 功能。”"
-keywords: 
-author: dagerrit
-ms.author: dagerrit
+title: 在 Azure 中我的 Intune 功能处于哪个位置？
+titleSuffix: Microsoft Intune
+description: 有助于在 Azure 门户中找到 Microsoft Intune 功能。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d15659e78c3b47753e9ef87a99d16ef1687ecf22
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00f45d9a126e76c45712c6483b458f935e6d0021
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
 我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 因此，我们编撰了本参考指南，以供非常熟悉经典门户中 Intune 且想知道如何使用 Azure 门户中 Intune 完成工作的用户阅读。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。

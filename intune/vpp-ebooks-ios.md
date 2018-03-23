@@ -1,25 +1,25 @@
 ---
-title: "管理批量采购的 iOS 电子书"
-titlesuffix: Azure portal
-description: "了解如何可以将从 iOS 应用商店批量购买的书籍同步到 Intune 中，然后管理并跟踪其使用情况。"
-keywords: 
-author: erikre
+title: 管理批量采购的 iOS 电子书
+titlesuffix: Microsoft Intune
+description: 了解如何才能将从 iOS 应用商店批量购买的书籍同步到 Intune 中，然后管理并跟踪其使用情况。
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6053eba7bcda74eaf3b2d7de8eecd81487ea3a8d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0ef786346bb80b517bba4436358d43fe0eef2b4d
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 电子书
 

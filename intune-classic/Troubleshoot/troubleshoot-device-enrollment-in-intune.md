@@ -1,25 +1,25 @@
 ---
-title: "设备注册疑难解答"
-description: "有关设备注册问题故障排除的建议。"
-keywords: 
+title: 设备注册疑难解答
+description: 有关设备注册问题故障排除的建议。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/05/2018
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>在 Azure Active Directory 门户中删除设备
 
-1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或从 [https://portal.office.com](https://portal.office.com) 选择**管理**&gt; **Azure AD**。
+1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad)，或从 [https://portal.office.com](https://portal.office.com) 选择“管理员”&gt;“Azure AD”。
 
 2.  单击页面左侧的链接，使用组织 ID 登录。
 
@@ -165,8 +165,8 @@ ms.lasthandoff: 01/05/2018
 
 |错误消息|问题|解决方法|
 |---|---|---|
-|**IT 管理员需要分配许可证才能进行访问**<br>IT 管理员未授予你使用此应用的权限。 请向 IT 管理员寻求帮助或稍后重试。|无法注册设备，因为该用户的帐户没有必要的许可证。|必须先为用户分配必要的许可证，用户才能注册其设备。 此消息表明用户持有的指定移动设备管理机构许可证类型不正确。 例如，如果已将 Intune 指定为移动设备管理机构，并且用户正在使用 System Center 2012 R2 Configuration Manager 许可证，则将收到此错误消息。<br><br>请参阅有关如何[将 Intune 许可证分配给用户帐户](/intune/licenses-assign.md)的信息。
-|**IT 管理员需要设置 MDM 机构**<br>看起来 IT 管理员并未设置 MDM 机构。 请向 IT 管理员寻求帮助或稍后重试。|尚未定义移动设备管理机构。|尚未在 Intune 中指定移动设备管理机构。 请参阅有关如何[设置移动设备管理机构](/intune/mdm-authority-set.md)的信息。|
+|**IT 管理员需要分配许可证才能进行访问**<br>IT 管理员未授予你使用此应用的权限。 请向 IT 管理员寻求帮助或稍后重试。|无法注册设备，因为该用户的帐户没有必要的许可证。|必须先为用户分配必要的许可证，用户才能注册其设备。 此消息表明用户持有的指定移动设备管理机构许可证类型不正确。 例如，如果已将 Intune 指定为移动设备管理机构，并且用户正在使用 System Center 2012 R2 Configuration Manager 许可证，则将收到此错误消息。<br><br>请参阅有关如何[将 Intune 许可证分配给用户帐户](/intune/licenses-assign)的信息。
+|**IT 管理员需要设置 MDM 机构**<br>看起来 IT 管理员并未设置 MDM 机构。 请向 IT 管理员寻求帮助或稍后重试。|尚未定义移动设备管理机构。|尚未在 Intune 中指定移动设备管理机构。 请参阅有关如何[设置移动设备管理机构](/intune/mdm-authority-set)的信息。|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>设备无法签入 Intune 服务，并在 Intune 管理控制台中显示为“不正常”
@@ -332,7 +332,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 2.  确认尚未向另一个 MDM 提供程序注册该设备，或者该设备尚未安装管理配置文件。
 
-3.  导航到 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，并根据提示尝试安装配置文件。
+3.  出现提示时，导航到 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，并尝试安装配置文件。
 
 4.  确认默认浏览器为适用于 iOS 的 Safari，并且已启用 Cookie。
 
@@ -377,7 +377,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 ### <a name="other-ios-enrollment-errors"></a>其他 iOS 注册错误
-有关 iOS 注册错误的列表，请查看我们的设备用户文档中的[尝试在 Intune 中注册设备时遇到错误](/intune-user-help/using-your-iOS-or-macOS-device-with-intune)。
+文档 [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune)（Microsoft Intune 中的 iOS 设备注册问题疑难解答）中提供了 iOS 注册错误列表。
 
 ## <a name="pc-issues"></a>电脑问题
 

@@ -1,28 +1,28 @@
 ---
-title: "在 Intune 的 Office 365 应用上设置基本数据管理"
-titlesuffix: Azure portal
-description: "管理 Office 365 应用向导的支持文档。"
-keywords: 
+title: Microsoft Intune 中 Office 365 应用的数据管理
+titlesuffix: ''
+description: 了解 Microsoft Intune 中 Office 365 应用的数据管理。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12f5becc1f3c03af0ee6d1fab9cd7ee16f2a547
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>你的用户将如何在托管 Office 365 应用上体验基本保护
+# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>你的用户将如何在 Microsoft Intune 中的托管 Office 365 应用上体验基本保护
 
 “管理 Office 365 应用”向导为每个设备平台创建应用保护策略。
 
@@ -46,30 +46,30 @@ ms.lasthandoff: 02/27/2018
 
 ## <a name="user-experience-on-an-ios-device"></a>iOS 设备上的用户体验
 
-1. 启动 OneDrive for Business 应用以打开登录页。  <br/> ![iOS 的 OneDrive 登录屏幕的图像](./media/onedrive-ios-sign-in.png)
-2. 键入你的工作帐户用户名。 你将会重定向到“Office 365 身份验证”页，以便输入工作凭据。 <br/> ![Office 365 登录页的图像](./media/o365-sign-in-ios.png)
-3. 凭据成功通过 Azure Active Directory 的身份验证后，将应用应用保护策略，并要求重启 OneDrive for Business 应用。  <br/>![iOS 的重启提示的图像](./media/ios-restart-prompt.png)    
+1. 启动 OneDrive for Business 应用以打开登录页。  
+2. 键入你的工作帐户用户名。 你将会重定向到“Office 365 身份验证”页，以便输入工作凭据。 
+3. 凭据成功通过 Azure Active Directory 的身份验证后，将应用应用保护策略，并要求重启 OneDrive for Business 应用。 
+
   > [!NOTE]
   > “需要重启”消息仅在未注册 Intune 的设备上显示。
 
+4. 重启 OneDrive for Business 应用。 该应用启动时将启用应用保护策略，并提示设置设备的 PIN（如果尚未为设备配置 PIN）。  
 
-4. 重启 OneDrive for Business 应用。 该应用启动时将启用应用保护策略，并提示设置设备的 PIN（如果尚未为设备配置 PIN）。 <br/> ![创建 PIN 的提示的图像](./media/pin-prompt-ios.png)    
   > [!NOTE]
   > 大多数用户不会看到此提示。 只有尚未在其 iOS 设备上启用 PIN 的用户才会看到此提示。
 
-
-5. 设置 PIN 并进行确认后，返回到 OneDrive for Business 应用。 将看到一个一次性通知，表明你的 IT 管理员正在保护 OneDrive 中的工作数据。 <br/> ![来自 IT 管理员的一次性通知的图像](./media/one-time-notice.png)
-6. 单击关闭此通知以访问 OneDrive for Business 上的文件。 <br/> ![iOS 设备上的 OneDrive 文件的图像](./media/onedrive-files-ios.png) <br/>
+5. 设置 PIN 并进行确认后，返回到 OneDrive for Business 应用。 将看到一个一次性通知，表明你的 IT 管理员正在保护 OneDrive 中的工作数据。 
+6. 单击关闭此通知以访问 OneDrive for Business 上的文件。 
 
 >[!NOTE]
 >更改已部署策略时，将在下次打开该应用时应用更改。
-
 
 ## <a name="user-experience-on-an-android-device"></a>Android 设备上的用户体验
 
 1. 启动 OneDrive for Business 应用以打开登录页。  <br/> ![OneDrive 应用欢迎屏幕的图像](./media/onedrive-android-welcome.png)
 2. 键入你的工作帐户用户名。 你将会重定向到“Office 365 身份验证”页，以便输入工作凭据。 <br/> ![Android 上的 O365 登录的图像](./media/o365-sign-in-android.png)
-3. 凭据成功通过 Azure Active Directory 的身份验证后，如果尚未在设备上安装公司门户应用，则会看到一条消息指示你进行安装。 点击“转至应用商店”以继续。 <br/> ![获取公司门户应用的消息的图像](./media/get-company-portal-android.png) <br/>如果已经在手机上安装了公司门户应用，则 OneDrive for Business 应用将自动启动，并且你可以跳到尾注。    
+3. 凭据成功通过 Azure Active Directory 的身份验证后，如果尚未在设备上安装公司门户应用，则会看到一条消息指示你进行安装。 点击“转至应用商店”以继续。 <br/> ![获取公司门户应用的消息的图像](./media/get-company-portal-android.png) <br/>如果已经在手机上安装了公司门户应用，则 OneDrive for Business 应用将自动启动，并且你可以跳到尾注。   
+
   > [!IMPORTANT]
   > 在 Android 上将 Office 应用设置为由应用保护策略管理后，设备用户必须安装公司门户应用才能访问工作电子邮件和文档，即使最终用户不需要打开或登录到应用来实际阅读电子邮件或文档也是如此。
 
@@ -128,4 +128,4 @@ ms.lasthandoff: 02/27/2018
 ![用于查看策略的用户界面路径的图像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>后续步骤
-详细了解[应用保护策略](app-protection-policy.md)。
+- 详细了解[应用保护策略](app-protection-policy.md)。

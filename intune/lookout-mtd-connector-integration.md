@@ -1,25 +1,25 @@
 ---
-title: "设置 Lookout 与 Microsoft Intune 的集成"
-titlesuffix: 
-description: "了解如何将 Intune 与 Lookout Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。"
-keywords: 
+title: 设置 Lookout 与 Microsoft Intune 的集成
+titlesuffix: ''
+description: 了解如何将 Intune 与 Lookout Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>使用 Intune 设置 Lookout 移动威胁防御集成
 
@@ -67,13 +67,11 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 
 ## <a name="configure-your-subscription"></a>配置订阅
 
-1. Lookout 支持人员创建 Lookout 企业账户后，将向公司的主要联系人发送电子邮件，附带登录 URL 的链接：https://aad.lookout.com/les?action=consent。
+1. Lookout 支持人员创建 Lookout 企业帐户后，将向公司的主要联系人发送电子邮件，附带登录 URL 的链接：https://aad.lookout.com/les?action=consent。
 
 2.  首次登录到 Lookout 控制台时必须使用具有 Azure AD 全局管理员角色的用户帐户，以便注册 Azure AD 租户。 后续登录无需这一级别的 Azure AD 特权。 此时会显示同意页。 选择“接受”完成注册。 接受并同意后，系统将重定向到 Lookout 控制台。
 
     ![第一次登录到 Lookout 控制台时的登录页面屏幕截图](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > 请参阅 [Lookout 集成疑难解答](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration)获取有关登录问题的帮助。
 
 3.  在[“Lookout 控制台”](https://aad.lookout.com)中，从“系统”模块选择“连接器”选项卡，然后选择“Intune”。
 

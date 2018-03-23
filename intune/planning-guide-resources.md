@@ -1,23 +1,24 @@
 ---
-title: "规划和设计 Intune 部署的模板和资源"
-description: "规划模板和其他 Intune 信息的链接，这些信息可能在 Intune 部署规划和实现过程中有所帮助。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 规划和设计 Intune 部署的模板和资源
+titlesuffix: Microsoft Intune
+description: 规划模板和其他 Intune 信息的链接，这些信息可能在 Microsoft Intune 部署规划和实现过程中有所帮助。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>规划 Intune 部署的其他资源
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 01/25/2018
 
 -   [Intune 博客](https://blogs.technet.microsoft.com/enterprisemobility/) - 可帮助你了解 Intune 如何适应更大的 Enterprise Mobility 构想的文章。
 
--   [Microsoft 信任中心](http://www.microsoft.com/TrustCenter/default.aspx) - 了解 Microsoft 关于所有 Microsoft 云产品和服务的安全性、隐私、符合性以及透明度方法。
+-   [Microsoft 信任中心](http://www.microsoft.com/TrustCenter) - 了解 Microsoft 关于所有 Microsoft 云产品和服务的安全性、隐私、符合性以及透明度方法。
 
 -   [Intune 用户之声](http://microsoftintune.uservoice.com/) - 想要请求某项功能，或与其他客户进行功能投票？ 通过“用户之声”提供关于 Intune 的反馈。 我们始终在倾听用户的声音。
 

@@ -1,25 +1,25 @@
 ---
-title: "iOS Classroom 应用的 Intune 共享设备设置"
-titlesuffix: Azure portal
-description: "了解可用于控制 iOS 设备上 Classroom 应用设置的 Intune 设置。"
-keywords: 
+title: iOS Classroom 应用的 Intune 共享设备设置
+titleSuffix: Microsoft Intune
+description: 了解可用于控制 iOS 设备上 Classroom 应用设置的 Intune 设置。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6dc373f831b574abf7d63e97935a379e731422
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4924d01c6f5d423b7c553d11eea065534179fe5f
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>如何为共享 iPad 设备配置 Intune 教育设置
 
@@ -48,7 +48,6 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 
 - [CSV 文件](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - 手动导出并编译逗号分隔值 (.csv) 文件
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - 一个 SIS 提供程序，可以简化与 Azure AD 的同步操作
-- [Clever API](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae) - 一个身份管理解决方案，可直接与 Azure AD 同步
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab) - 一种 CSV 格式，可以导出和转换以用于与 Azure AD 同步
 
 ### <a name="find-out-more"></a>查看详细信息
@@ -129,7 +128,7 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 1. 在“教育”窗格上，选择“确定”。
 2. 在“创建配置文件”窗格上，选择“创建”。
 
-随即创建配置文件并在“配置文件列表”窗格上显示。
+配置文件随即创建并显示在“配置文件列表”窗格中。
 
 ## <a name="step-3---create-a-device-category"></a>步骤 3 - 创建设备类别
 
@@ -188,7 +187,7 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 10. 选择要包括到 Cart 配置文件的组，然后选择“选择”。
 11. 在“创建关联”窗格上，选择“保存”以保存 Cart 配置文件。
 
-随即创建配置文件并在“配置文件列表”窗格上显示。
+配置文件随即创建并显示在“配置文件列表”窗格中。
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>步骤 7 - 将 Cart 配置文件分配到类
 

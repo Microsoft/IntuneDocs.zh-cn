@@ -1,25 +1,25 @@
 ---
-title: "使用 Managed Browser 应用管理 Web 访问"
+title: 使用 Managed Browser 应用管理 Web 访问
 titlesuffix: Microsoft Intune
-description: "部署 Managed Browser 应用程序，以限制 Web 浏览和将 Web 数据传输到其他应用。"
-keywords: 
-author: erikre
+description: 部署 Managed Browser 应用程序，以限制 Web 浏览和将 Web 数据传输到其他应用。
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -35,7 +35,7 @@ Managed Browser 是一款 Web 浏览应用，可以从公共应用商店中下�
 - 防止发生屏幕捕获
 - 确保指向用户所选内容的链接仅在其他托管应用中打开。
 
-有关详细信息，请参阅[什么是应用保护策略？](/intune/app-protection-policy)
+有关详细信息，请参阅[什么是应用保护策略？](/intune/app-protection-policy.md)
 
 可将这些设置应用于：
 
@@ -59,12 +59,52 @@ Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
 >早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
 
 
-Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)打开 Web 内容。
+Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)打开 Web 内容。
+
+## <a name="conditional-access-for-the-intune-managed-browser"></a>Intune Managed Browser 的条件访问
+
+Managed Browser 现为条件访问的核准客户端应用。 这意味着可以限制移动浏览器访问 Azure AD 连接的 Web 应用（在此只能使用 Managed Browser），防止从其他任何未受保护的浏览器（例如 Safari 或 Chrome）进行访问。 这种保护可应用于 Azure 资源（如 Exchange Online 和 SharePoint Online）、Office 门户，甚至本地站点，这些站点已通过 [Azure AD 应用程序代理](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)向外部用户公开。 
+
+要限制 Azure AD 连接的 Web 应用在移动平台上使用 Intune Managed Browser，可以创建一个需要核准的客户端应用程序的 Azure AD 条件访问策略。 
+
+1. 在 Azure 门户中，选择“Azure Active Directory” > “企业应用程序” > “条件访问” > “新建策略”。 
+2. 接下来，从选项卡的“访问控制”部分选择“授予”。 
+3. 单击“需要核准的客户端应用”。 
+4. 在“授予”边栏选项卡上单击“选择”。 必须将此策略分配给希望只由 Intune Managed Browser 应用访问的云应用。
+
+    ![Azure AD - Managed Browser 条件访问策略](./media/managed-browser-conditional-access-01.png)
+
+5. 在“分配”部分，选择“条件” > “客户端应用”。 随即显示“客户端应用”边栏选项卡。
+6. 单击“配置”下的“是”，将策略应用到特定客户端应用。
+7. 确认“浏览器”选为客户端应用。
+
+    ![Azure AD - Managed Browser - 选择客户端应用](./media/managed-browser-conditional-access-02.png)
+
+    > [!NOTE]
+    > 若要限制可访问这些云应用程序的本机应用（非浏览器应用），还可以选择“移动应用和桌面客户端”。
+
+8. 在“分配”部分，选择“用户和组”，然后选择要向其分配此策略的用户或组。 
+
+    > [!NOTE]
+    > 用户还必须以 Intune 应用保护策略为目标。 有关创建 Intune 应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)。
+
+9. 在“分配”部分，选择“云应用”，选择要使用此策略保护的应用。
+
+配置以上策略后，会强制要求用户使用 Intune Managed Browser 访问已通过此策略保护的 Azure AD 连接的 Web 应用。 如果用户尝试在此方案中使用非管理的浏览器，用户会看到一则通知，指示必须改用 Intune Managed Browser。
+
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>在 Intune Managed Browser 中单一登录到 Azure AD 连接的 Web 应用
+
+iOS 和 Android 上的 Intune Managed Browser 应用程序现可利用到 Azure AD 连接的所有 Web 应用（SaaS 和本地）的 SSO。 Microsoft Authenticator 应用出现在 iOS 上，或出现在 Android 上的 Intune 公司门户应用时，Intune Managed Browser 的用户将能够访问 Azure AD 连接的 Web 应用，而不必重新输入凭据。
+
+Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Intune 公司门户进行注册。 如果 Authenticator 应用或 Intune 公司门户的用户的设备尚未在其他应用程序上注册，则用户在 Intune Managed Browser 中导航到 Azure AD 连接的 Web 应用时，系统会提示用户注册其设备。 使用 Intune 管理的帐户注册设备后，该帐户将为 Azure AD 连接的 Web 应用启用 SSO。 
+
+> [!NOTE]
+> 设备注册是 Azure AD 服务的简单签入。 不需要完整的设备注册，并且不会向 IT 提供设备上的任何其他权限。
 
 ## <a name="create-a-managed-browser-app-configuration"></a>创建 Managed Browser 应用配置
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3.  在管理列表中的“移动应用”边栏选项卡上，选择“应用配置策略”。
 4.  在“应用配置策略”边栏选项卡上，选择“添加”。
 5.  在“添加配置策略”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”。
@@ -102,7 +142,10 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
     - 要配置应用程序代理和发布应用程序，请参阅[设置文档]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
 - 必须使用 Managed Browser 应用的最低版本 1.2.0。
 - Managed Browser 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
-注意：更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 中生效。
+
+    > [!NOTE]
+    > 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 中生效。
+
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>步骤 1：从 Outlook 启用指向 Managed Browser 的自动重定向
 Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中显示**这一设置的应用保护策略。
@@ -115,6 +158,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |Key|值|
 |**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
+若要深入了解 Managed Browser 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅“企业移动性 + 安全性”博客文章[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)（更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问）。
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>如何配置 Managed Browser 的主页
 
@@ -123,7 +167,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |||
 |-|-|
 |Key|值|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例：**https://www.bing.com**|
+|**com.microsoft.intune.mam.managedbrowser.homepage**|指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例：https://www.bing.com|
 
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>如何配置 Managed Browser 的书签
@@ -139,7 +183,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |||
 |-|-|
 |Key|值|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 **&#124;** 分隔标题和 URL。<br><br>示例：**Microsoft Bing&#124;https://www.bing.com**<br><br>若要配置多个书签，可使用双字符 **&#124;&#124;** 分隔每对书签<br><br>示例：**Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+|**com.microsoft.intune.mam.managedbrowser.bookmarks**|此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 **&#124;** 分隔标题和 URL。<br><br>示例：Microsoft 必应&#124;https://www.bing.com<br><br>若要配置多个书签，可使用双字符 **&#124;&#124;** 分隔每对书签<br><br>示例：必应&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com|
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>如何为 Managed Browser 指定允许和阻止的 URL
 
@@ -148,7 +192,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |||
 |-|-|
 |Key|值|
-|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>URL1&#124;URL2&#124;URL3<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>URL1&#124;URL2&#124;URL3<br>http://.contoso.com/&#124;https://.bing.com/&#124;https://expenses.contoso.com|
 
 >[!IMPORTANT]
 >不要同时指定这两个键。 如果两个键同时针对同一个用户，则使用允许键，因为它是限制性最强的选项。
@@ -175,12 +219,12 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |-------|---------------|-----------|------------------|
 |http://www.contoso.com|匹配单个页面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
 |http://contoso.com|匹配单个页面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42;|匹配以 www.contoso.com 开头的所有 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://www.contoso.com/&#42；|匹配以 www.contoso.com 开头的所有 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
 |http://&#42;.contoso.com/&#42;|匹配 contoso.com 下的所有子域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
 |http://www.contoso.com/images|匹配单个文件夹|www.contoso.com/images|www.contoso.com/images/dogs|
 |http://www.contoso.com:80|匹配单个页面（使用端口号）|http://www.contoso.com:80|
 |https://www.contoso.com|匹配单个安全页面|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42;|匹配单个文件夹和所有子文件夹|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|http://www.contoso.com/images/&#42；|匹配单个文件夹和所有子文件夹|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   以下是一些你不能指定的输入的示例：
 
@@ -200,7 +244,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
     -   http://&#42;
 
-    -   http://www.contoso.com:&#42;
+    -   http://www.contoso.com:&#42；
 
     -   http://www.contoso.com: /&#42;
 
@@ -247,3 +291,7 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 
 ### <a name="turn-off-usage-data"></a>关闭用法数据
 Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。
+
+## <a name="next-steps"></a>后续步骤
+
+- [什么是应用保护策略？](app-protection-policy.md)

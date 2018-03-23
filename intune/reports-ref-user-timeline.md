@@ -1,34 +1,35 @@
 ---
-title: "数据仓库用户实体时间线 | Microsoft Docs"
-description: "Intune 数据仓库表示时间线中的用户。"
-keywords: "Intune 数据仓库"
+title: 数据仓库用户实体时间线
+titlesuffix: Microsoft Intune
+description: 了解 Intune 数据仓库如何表示时间线中的用户。
+keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>使用 Intune 数据仓库中的生存期表示形式
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 数据仓库中的生存期表示形式
 
 可以使用存储在 Intune 数据仓库中的数据快照月份来回答有关时间-趋势的问题。 例如，可以查看近一个月所添加的用户数。 你还可能会提出有关已从系统中删除的用户数的问题。
 
-为了提供此信息，数据仓库存储了历史信息。 这意味着它可以跟踪实体的生存期。 数据仓库记录实体的创建时间、实体状态的更改时间以及实体的删除时间。 有了通过定量度量的每日快照捕获的历史记录，可以将今天与昨天相比较，依次类推。
+为了提供此类型信息，数据仓库存储了历史信息。 数据仓库可跟踪实体的生存期。 数据仓库记录实体的创建时间、实体状态的更改时间以及实体的删除时间。 有了通过定量度量的每日快照捕获的历史记录，可以将今天与昨天相比较，依次类推。
 
 由于实体状态不断更改，使用实体生存期可能会引起混淆。 这意味着如果你在第 30 天查看快照，在数据中用户记录可能已不是有效状态。 在第 29-28 天，实体记录可能处于有效状态。 然后在第 28 天之前，用户根本不存在。
 
-如果我们浏览实体的整个生存期，这点可能就更为明显。
+如果浏览实体的整个生存期，这种情况可能就更为明显。
 
 假定用户 John Smith 在 2017 年 6 月 1 日分配了许可证，那么“用户”表将具有以下条目： 
  
@@ -75,5 +76,5 @@ John Smith 在 2017 年 7 月 25 日放弃其许可证。 “用户”表具有�
 
 ## <a name="next-steps"></a>后续步骤
 
- - 要了解有关“当前用户”实体的详细信息，请参阅[引用当前用户实体](reports-ref-current-user.md)。
- - 要了解有关“用户”实体的详细信息，请参阅[引用用户实体](reports-ref-user.md)。
+ - 要了解有关 Current User 实体的详细信息，请参阅 [current user 实体参考](reports-ref-current-user.md)。
+ - 要了解有关 User 实体的详细信息，请参阅 [User 实体参考](reports-ref-user.md)。

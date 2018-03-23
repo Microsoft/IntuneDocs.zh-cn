@@ -1,26 +1,27 @@
 ---
-title: "Intune 载入过程"
-description: "本文提供将 Intune 仅限云解决方案载入到环境中时需考虑的所有详细信息。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune 载入过程
+titlesuffix: Microsoft Intune
+description: 本文提供将 Microsoft Intune 仅限云解决方案载入到环境中时需考虑的所有详细信息。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29560058c386c9e8f6d8734e241ea74a8b780eb1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0c88ddf84e7dfd3eed83f846ccfc3ff9c4da2d5
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="implement-your-intune-plan"></a>实现 Intune 计划
+# <a name="implement-your-microsoft-intune-plan"></a>实现 Microsoft Intune 计划
 
 在载入阶段，将 Intune 部署到生产环境中。 根据[用例要求](planning-guide-requirements.md)，实现过程包括设置和配置 Intune 及外部依赖关系（如果需要）。
 

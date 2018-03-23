@@ -1,26 +1,25 @@
 ---
-title: "使用 Intune 配置和管理 SCEP 证书"
-titlesuffix: Azure portal
-description: "了解如何配置你的基础结构，然后创建和分配 Intune SCEP 证书配置文件。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: 使用 Microsoft Intune 配置和管理 SCEP 证书
+description: 了解如何配置基础结构，然后在 Microsoft Intune 中创建和分配 Intune 简单证书注册协议 (SCEP) 证书配置文件。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="configure-and-manage-scep-certificates-with-intune"></a>使用 Intune 配置和管理 SCEP 证书
+# <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>使用 Microsoft Intune 配置和管理 SCEP 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 本主题说明如何配置基础结构，然后使用 Intune 创建和分配简单的证书注册协议 (SCEP) 证书配置文件。
@@ -387,7 +386,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
         - SCEP 服务器 URL - 为通过 SCEP 颁发证书的 NDES 服务器指定 1 个或多个 URL。 
 8. 选择“确定”，然后返回到“创建配置文件”窗格中，选择“创建”。
 
-随即创建配置文件并在“配置文件列表”窗格上显示。
+配置文件随即创建并显示在“配置文件列表”窗格中。
 
 ## <a name="how-to-assign-the-certificate-profile"></a>如何分配证书配置文件
 

@@ -1,25 +1,25 @@
 ---
-title: "注册 iOS 设备 - 设备注册计划"
-titlesuffix: Azure portal
-description: "了解如何使用“设备注册计划（新 UI）”注册公司拥有的 iOS 设备。"
-keywords: 
+title: 注册 iOS 设备 - 设备注册计划
+titleSuffix: Microsoft Intune
+description: 了解如何使用设备注册计划（新 UI）注册公司拥有的 iOS 设备。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48b74b81c9f3f8b9c936ae22a343ccfb565b4ec1
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 833f37808d7315de9d7e3782bae26bab67a2cde7
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 

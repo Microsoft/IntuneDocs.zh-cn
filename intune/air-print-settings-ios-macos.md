@@ -1,25 +1,25 @@
 ---
-title: "适用于 iOS 和 macOS 设备的 Intune AirPrint 设置"
-titlesuffix: Azure portal
-description: "了解如何使用 Intune 来帮助自动将 iOS 和 macOS 设备连接到与 AirPrint 兼容的打印机。"
-keywords: 
+title: 适用于 iOS 和 macOS 设备的 Intune AirPrint 设置
+titlesuffix: Microsoft Intune
+description: 了解如何使用 Microsoft Intune 来帮助 iOS 和 macOS 设备自动连接到与 AirPrint 兼容的打印机。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a8ef24a9e6946145bf69d279566f3b736e6efa1
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8402ff3631e18ec6169bc96ef1bb7669bdcfbdd8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>适用于 iOS 和 macOS 设备的 AirPrint 设置
 

@@ -1,25 +1,26 @@
 ---
-title: "在 Intune 迁移过程中配置设备符合性和应用管理策略"
-description: "本文提供在 Intune 迁移过程中配置设备符合性和应用管理策略的必要步骤。"
-keywords: 
-author: andredm7
-ms.author: andredm
+title: 在 Intune 迁移过程中配置设备符合性和应用管理策略
+titlesuffix: Microsoft Intune
+description: 本文提供在 Microsoft Intune 迁移过程中配置设备符合性和应用管理策略的必要步骤。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="configure-device-compliance-and-app-management-policies"></a>配置设备符合性和应用管理策略
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>在迁移到 Microsoft Intune 时，配置设备符合性和应用管理策略
 
 迁移到 Intune 时的主要目标是在 Intune 中注册所有设备，并使设备符合其策略。 设备策略不仅可以帮助你管理公司拥有的单用户设备，而且还可以帮助管理个人 (BYOD) 和共享设备，例如，展台、销售终端系统机器、教室内由多名学生共享的平板电脑，或者无用户设备（仅限 iOS）。
 

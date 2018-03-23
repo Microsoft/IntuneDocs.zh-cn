@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune 服务说明"
-description: "Intune 是一项基于云的服务，有助于管理 Windows、iOS、Mac OS X、Android 和 Windows Mobile 设备。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Microsoft Intune 服务说明
+description: Microsoft Intune 是一项基于云的服务，有助于管理 Windows、iOS、Mac OS X、Android 和 Windows Mobile 设备。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 7b9c3965d99e0058ae0236e1efc3daa840aebc6c
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服务说明
 
@@ -33,7 +33,7 @@ Intune 与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访�
 若要了解有关如何使用 Intune 管理设备、应用和保护公司数据的详细信息，请参阅 [Intune 文档](https://docs.microsoft.com/intune/)。
 
 ## <a name="30-day-free-trial"></a>30 天免费试用
-可以通过包含 100 个用户许可证的 30 天免费试用版开始使用 Intune。 若要开始免费试用，[请转到 Intune 注册页面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)。 如果组织有企业协议或等效的批量许可协议，请与 Microsoft 代表联系以设置免费试用版。
+可以通过包含 100 个用户许可证的 30 天免费试用版开始使用 Intune。 若要开始免费试用，[请转到 Intune 注册页面](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。 如果组织有企业协议或等效的批量许可协议，请与 Microsoft 代表联系以设置免费试用版。
 
 > [!NOTE]
 > 如果你的组织已有 Microsoft Online Services 工作或学校帐户，并且你有可能会在试用期结束后继续在生产中使用此 Intune 订阅，请选择该页上的“登录”选项，并使用组织的全局管理员帐户进行身份验证。 此操作可确保你的 Intune 试用版链接到你现有工作或学校帐户。

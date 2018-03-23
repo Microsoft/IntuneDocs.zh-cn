@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK Xamarin 组件"
-description: "使用 Intune App SDK Xamarin 组件，可在使用 Xamarin 生成的 iOS 和 Android 应用中启用 Intune 应用保护策略。"
-keywords: "sdk、Xamarin、intune"
+title: Microsoft Intune App SDK Xamarin 组件
+description: 使用 Intune App SDK Xamarin 组件，可在使用 Xamarin 生成的 iOS 和 Android 应用中启用 Intune 应用保护策略。
+keywords: sdk、Xamarin、intune
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 03/02/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa0d471f91eeeebd0058417aa437e5469f48e09
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: b69cccca8c8be859de94ca8bdb50d6030439233a
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin 组件
 
@@ -58,29 +58,20 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="get-started"></a>入门
 
-1.  从[此处](https://components.xamarin.com/submit/xpkg)下载 **Xamarin component.exe** 并将其解压缩。
+1. 阅读 Microsoft Intune MAM Xamarin 组件的[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。
 
-2. 阅读 Microsoft Intune MAM Xamarin 组件的[许可条款](https://components.xamarin.com/license/microsoft.intune.mam)。
-
-3.  从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) 下载 Intune App SDK Xamarin 组件文件夹并从中提取。 在 步骤 1 和 3 中下载的这两个文件应处于相同的目录级别。
-
-4.  在命令行中以管理员身份运行 `mono Xamarin.Component.exe install <.xam> file`。
-
-5.  在 Visual Studio 中，右键单击以前创建的 Xamarin 项目中的“组件”。
-
-6.  选择“编辑组件”并添加以本地方式下载到计算机上的 Intune App SDK 组件。
-
-
+2.  从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 下载 Intune App SDK Xamarin 组件 NuGet 包。 这些包即将在 Nuget.org 上提供。  
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>在 iOS 移动应用中启用 Intune 应用保护策略
-1.  按照将 Intune App SDK 集成到 iOS 移动应用的常规必需步骤操作。 可以从 [Intune App SDK for iOS 开发人员指南](app-sdk-ios.md#build-the-sdk-into-your-mobile-app)中集成说明的第 3 步开始操作。
+1. 将 `Microsoft.Intune.MAM.Xamarin.iOS` NuGet 包添加到 Xamarin.iOS 项目。
+2.  按照将 Intune App SDK 集成到 iOS 移动应用的常规必需步骤操作。 可以从 [Intune App SDK for iOS 开发人员指南](app-sdk-ios.md#build-the-sdk-into-your-mobile-app)中集成说明的第 3 步开始操作。 可跳过运行 IntuneMAMConfigurator 一节中的最后一步，因为此工具包含在 Microsoft.Intune.MAM.Xamarin.iOS 包中，并将在生成时自动运行。
     **重要说明**：在 Visual Studio 中为应用启用密钥链共享与在 Xcode 中略有不同。 打开应用的“权利”plist 文件，并确保已启用“启用密钥链”选项，且已在相应部分中添加了相应的密钥链共享组。 然后，对于所有相应的配置/平台组合，请确保已在项目的“iOS 捆绑包签名”选项的“自定义权利”字段中指定了“权利”plist 文件。
-2.  添加组件且正确配置应用后，应用即可开始使用 Intune SDK 的 API。 为此，必须添加以下命名空间：
+3.  添加组件且正确配置应用后，应用即可开始使用 Intune SDK 的 API。 为此，必须添加以下命名空间：
 
       ```csharp
       using Microsoft.Intune.MAM;
       ```
-3.    若要开始接收应用保护策略，必须在 Intune MAM 服务中注册应用。 如果应用已使用 Azure Active Directory Authentication Library (ADAL) 验证用户，应用应在成功验证用户后，向 IntuneMAMEnrollmentManager 的 registerAndEnrollAccount 方法提供用户的 UPN：
+4. 若要开始接收应用保护策略，必须在 Intune MAM 服务中注册应用。 如果应用已使用 Azure Active Directory Authentication Library (ADAL) 验证用户，应用应在成功验证用户后，向 IntuneMAMEnrollmentManager 的 registerAndEnrollAccount 方法提供用户的 UPN：
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
@@ -92,16 +83,17 @@ ms.lasthandoff: 03/05/2018
       ```
 
 ## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>在 Android 移动应用中启用应用保护策略
+将 `Microsoft.Intune.MAM.Xamarin.Android` NuGet 包添加到 Xamarin.Android 项目。
+
 对于不使用 UI 框架的基于 Xamarin 的 Android 应用，需要阅读并遵循 [Intune App SDK for Android 开发人员指南](app-sdk-android.md)。 对于基于 Xamarin 的 Android 应用，需要根据本指南所包含的[表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)将类、方法和活动替换为其 MAM 等效项。 如果应用没有定义 `android.app.Application` 类，则需要创建一个，并确保继承自 `MAMApplication`。
 
 对于 Xamarin 窗体和其他 UI 框架，我们提供了名为 `MAM.Remapper` 的工具。 该工具将为你完成类替换。 但是，你需要执行以下步骤：
 
-1.  将引用添加到 `Microsoft.Intune.MAM.Remapper.Tasks` NuGet 包版本 0.1.0.0 或更高版本。
+1.  添加 `Microsoft.Intune.MAM.Remapper.Tasks` NuGet 包。
 
-2.  将以下行添加到 Android csproj：
+2.  将以下行添加到 Android csproj（使用实际的包版本替换“x.x.x.x”）：
   ```xml
-  <Import
-  Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
+ <Import Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.x.x.x.x\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
 3.  将所添加 `remapping-config.json` 文件的生成操作设置为 **RemappingConfigFile**。 所包含的 `remapping-config.json` 仅适用于 Xamarin.Forms。 对于其他 UI 框架，请参阅 Remapper NuGet 包中所包含的自述文件。

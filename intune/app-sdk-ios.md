@@ -1,24 +1,24 @@
 ---
-title: "用于 iOS 的 Microsoft Intune App SDK 开发人员指南"
-description: "通过 Microsoft Intune App SDK for iOS，可将 Intune 应用保护策略（也称为 APP 或 MAM 策略）合并到本机 iOS 应用中。"
-keywords: 
+title: 用于 iOS 的 Microsoft Intune App SDK 开发人员指南
+description: 通过 Microsoft Intune App SDK for iOS，可将 Intune 应用保护策略（也称为 APP 或 MAM 策略）合并到本机 iOS 应用中。
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 49ffac609ec24917b8490c535ebd74c6d2729ccd
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 498b9ec1ab98358f73c0ca2139f156164a253a75
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -470,7 +470,7 @@ WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 U
 * 调用 ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` 以获取应用配置对象。
 * 对 ```IntuneMAMAppConfig``` 对象调用适当的选择器。 例如，如果应用程序密钥是一个字符串，则需要使用 ```stringValueForKey``` 或 ```allStringsForKey```。 ```IntuneMAMAppConfig.h header``` 文件描述返回值/错误条件。
 
-有关与面向 MAM 的配置值相关的 Graph API 功能的详细信息，请参阅 [Graph API 参考面向 MAM 的配置](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。 <br>
+有关图形 API 功能的详细信息，请参阅[图形 API 参考](https://developer.microsoft.com/graph/docs/concepts/overview)。 <br>
 
 关于如何在 iOS 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 iOS 的 Microsoft Intune 应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-use-ios)。
 
