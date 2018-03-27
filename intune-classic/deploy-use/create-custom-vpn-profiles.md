@@ -1,57 +1,57 @@
 ---
-title: "Microsoft Intune VPN 配置文件的自定义配置"
-description: "使用自定义配置在 Intune 中创建 VPN 配置文件。"
-keywords: 
+title: Microsoft Intune VPN 配置文件的自定义配置
+description: 使用自定义配置在 Intune 中创建 VPN 配置文件。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab235f10c8c91e707c623eca5168ff75de234f32
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Microsoft Intune VPN 配置文件的自定义配置
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="create-a-custom-configuration"></a>创建自定义配置
-可使用 Intune 自定义配置策略为以下设备创建 VPN 配置文件：
+可以使用 Intune 自定义配置策略创建适用于以下设备的 VPN 配置文件：
 
 * 运行 Android 4 和更高版本的设备
 * Android for Work 设备
-* 运行 Windows 8.1 和更高版本的已注册设备
+* 运行 Windows 8.1 及更高版本的已注册设备
 * 运行 Windows Phone 8.1 和更高版本的设备
 * 运行 Windows 10 桌面版的已注册设备
 * 运行 Windows 10 移动版的设备
 
-此类型的策略在标准 Intune VPN 策略不包含要使用的设置时很有用。
+当标准 Intune VPN 策略中没有要使用的设置时，此类策略非常有用。
 
-## <a name="to-create-a-custom-configuration-policy"></a>创建自定义配置策略：
+## <a name="to-create-a-custom-configuration-policy"></a>若要创建自定义配置策略，请执行以下操作：
 
-   1. 在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “添加策略” > “展开平台” > “自定义配置” > “创建策略”。
-   2. 输入策略的名称。
-   3. 对于要指定的每个 URI 设置，选择“添加”并提供要求的信息。 下面是一个示例：
+   1. 在[“Intune 管理员控制台”](https://manage.microsoft.com)中，依次选择“策略” > “添加策略” > “扩展平台” > “自定义配置” > “创建策略”。
+   2. 输入策略名称。
+   3. 对于要指定的每个 URI 设置，选择“添加”，然后输入相应信息。 下面是一个示例：
 
    ![VPN 配置文件自定义配置对话框](./media/Intune_Add_VPN_URI.png)
 
-   4.  输入所有 URI 设置后，选择“保存策略”，然后部署策略。
+   4.  输入所有 URI 设置后，选择“保存策略”，然后部署此策略。
 
 然后，照常[部署策略](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)。
 
 ## <a name="example-uri-settings"></a>示例 URI 设置
 
-这些设置可用于在名为 Contoso 的虚构公司为 VPN 创建自定义配置。
+这些设置可用于在 Contoso 虚构公司中创建 VPN 自定义配置。
 有关可使用的所有设置的完整详细信息，请参阅 [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx)。
 
 **本机 Contoso VPN (IKEv2)：**<br />
@@ -141,12 +141,12 @@ Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
 有关应如何使用这些设置的任何问题或有关其作用的详细信息，客户应参阅[配置服务提供程序 (CSP) 文档](https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx)。
 
-## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>PulseSecure 上的 Android 每应用 VPN 的 URI 设置
+## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>PulseSecure 上 Android 每应用 VPN 的 URI 设置
 ### <a name="custom-uri-for-package-list"></a>包列表的自定义 URI
 -  数据类型 = 字符串
 -  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  值 = 分隔符分隔的包列表。
-   - 分隔符：分号 (;)、冒号 (:)、逗号 (,)、竖线 (|)
+   - 分隔符：分号 (;)、冒号 (:)、逗号 (,)、竖线(|)
 
 例如：
 - com.android.chrome
@@ -157,10 +157,10 @@ Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > 注意
-> - 请使用分配给自定义配置文件的同一个*名称*
-> - 可能的值：“全局”、“允许列表”、“阻止列表”
-> - 如果未提供 PackageList，则默认为“全局”（与整个系统的配置文件向后兼容）
-> - 如果提供了 PackageList，则默认为“允许列表”
+> - 使用与分配给自定义配置文件相同的*名称*
+> - 可取值：*GLOBAL*、*WHITELIST*、*BLACKLIST*
+> - 如果未提供 PackageList，默认值为 *GLOBAL*（与全系统配置文件的向后兼容性）
+> - 如果提供了 PackageList，默认值为 *WHITELIST*
 
 
 ### <a name="see-also"></a>另请参阅
