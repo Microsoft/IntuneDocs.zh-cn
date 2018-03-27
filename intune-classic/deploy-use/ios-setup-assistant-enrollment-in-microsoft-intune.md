@@ -1,25 +1,25 @@
 ---
-title: "使用设置助理注册 iOS 设备"
-description: "使用 Apple Configurator 工具注册企业自有的 iOS 设备以将设备恢复出厂设置，并准备对其运行设置助理。"
-keywords: 
+title: 使用设置助理注册 iOS 设备
+description: 使用 Apple Configurator 工具注册企业自有的 iOS 设备以将设备恢复出厂设置，并准备对其运行设置助理。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a97ccdb8f557c4c2bfd542fb1c96d84d768eae5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>使用设置助理通过 Apple Configurator 注册 iOS 设备
 
@@ -114,7 +114,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
   > [!NOTE]
   > 若要稍后从 Intune 管理中删除公司拥有的设备，则可能需要转到“企业预注册设备”下的“按 iOS 序列号”设备组，并从 Intune 删除设备序列号，以禁用设备注册。 如果 Intune 在删除序列号时或大约在这一时间执行灾难恢复过程，则需要验证该组是否仅包含活动设备的序列号。
 
-2. 选择**下一步**。
+2. 选择“下一步”。
 
 3. 选择要注册的设备。 无法导入已注册或通过其他方式注册的序列号。 选择“下一步”继续。
 
@@ -142,9 +142,9 @@ iOS 设备连接到 Mac 计算机，并注册移动设备管理。
    > [!WARNING]
    > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 连接设备时，设备应处于 **Hello** 屏幕界面。
 
-2. 在首选项窗格中，选择“服务器”，然后选择加号 (+) 启动 MDM 服务器向导。 选择**下一步**。
+2. 在首选项窗格中，选择“服务器”，然后选择加号 (+) 启动 MDM 服务器向导。 选择“下一步”。
 
-3. 在使用 Microsoft Intune 对 iOS 设备注册设置助理的情况下，为 MDM 服务器输入主机名称或 URL 以及注册 URL。 对于注册 URL，请输入从 Intune 中导出的注册配置文件 URL。 选择**下一步**。  
+3. 在使用 Microsoft Intune 对 iOS 设备注册设置助理的情况下，为 MDM 服务器输入主机名称或 URL 以及注册 URL。 对于注册 URL，请输入从 Intune 中导出的注册配置文件 URL。 选择“下一步”。  
 
    可安全忽略警告“未验证服务器 URL”。 若要继续，请选择“下一步”，直到完成该向导。
 

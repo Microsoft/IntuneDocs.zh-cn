@@ -1,25 +1,25 @@
 ---
-title: "部署 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略"
-description: "将 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略部署到 Intune 经典门户。"
-keywords: 
+title: 部署 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略
+description: 将 Skycure 应用、Microsoft Authenticator 应用和 iOS 配置策略部署到 Intune 经典门户。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 45826fbc-6df5-41b2-8e80-d1353f904b43
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 47b5010c2e4262f61ca8e67727697493ace54928
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d28cf8f4dca89b99deb32ce054db6b04e02edae6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy"></a>部署 Skycure 应用、Microsoft Authenticator 应用和 iOS 应用配置策略
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 10/10/2017
 
     a.  Microsoft Authenticator
 
-    b。  适用于 Android 的 Skycure 应用
+    b.  适用于 Android 的 Skycure 应用
 
     c.  适用于 iOS 的 Skycure 应用
 

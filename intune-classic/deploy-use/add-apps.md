@@ -1,25 +1,25 @@
 ---
-title: "添加应用"
-description: "在开始使用 Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。"
-keywords: 
+title: 添加应用
+description: 在开始使用 Intune 部署应用之前，请花些时间来熟悉本主题中介绍的概念。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 788e8a7f15566c4b15fec09f3e861d9380278e3f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 69c3f671fdf1ac0d281e484f9090356a3ce246a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-with-microsoft-intune"></a>使用 Microsoft Intune 添加应用
 
@@ -62,9 +62,9 @@ ms.lasthandoff: 10/10/2017
 开始使用软件发行者之前，必须安装 [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) 的完整版本。 安装之后，可能必须重启计算机，然后软件发行者才会正确打开。
 
 ## <a name="cloud-storage-space"></a>云存储空间
-使用软件安装程序安装类型创建的所有应用都会上传到 Microsoft Intune 云存储。 Intune 的试用订阅包括 2 千兆字节 (GB) 基于云的存储，用于存储托管应用和更新。 完全订阅包括 20 GB 的存储空间。
+使用软件安装程序安装类型创建的所有应用都会上传到 Microsoft Intune 云存储。 Intune 的试用订阅包括 2 GB 的云存储空间，用于存储托管应用和更新。 完全订阅包括 20 GB 的存储空间。
 
-可以在“**管理员**”工作区的“**存储空间使用量**”节点中查看所使用的空间量。 可以使用原始购买方法购买额外的 Intune 存储空间。  如果是通过发票或信用卡付款，请访问[订阅管理门户](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否则，请联系合作伙伴或销售内勤。
+可以在“**管理员**”工作区的“**存储空间使用量**”节点中查看所使用的空间量。 可以使用原始购买方式购买额外的 Intune 存储空间。  如果是通过发票或信用卡付款，请访问[订阅管理门户](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)。  否则，请联系合作伙伴或销售内勤。
 
 云存储空间的要求如下：
 

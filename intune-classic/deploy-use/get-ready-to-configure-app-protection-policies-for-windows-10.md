@@ -1,25 +1,25 @@
 ---
-title: "准备好配置面向 Windows 10 的应用保护策略"
-description: "在 Azure AD 中设置移动应用程序管理 (MAM) 提供程序"
-keywords: 
+title: 准备好配置面向 Windows 10 的应用保护策略
+description: 在 Azure AD 中设置移动应用程序管理 (MAM) 提供程序
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6fc748f060d131364be39899fcb5ac35f1228801
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a18136a6b7aa26391a38aa071699dc60dc024c21
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>准备好配置面向 Windows 10 的应用保护策略
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 10/10/2017
 
     a.  MAM 用户作用域：可以使用 MAM 保护使用 Windows 10 设备的特定用户组或所有用户的公司数据。
 
-    b。  MAM 使用条款 URL：MAM 服务的使用条款终结点的 URL。 它用于向最终用户显示 MAM 服务条款。
+    b.  MAM 使用条款 URL：MAM 服务的使用条款终结点的 URL。 它用于向最终用户显示 MAM 服务条款。
 
     c.  MAM 发现 URL：这是设备在需要应用应用保护策略时查找的 URL。
 

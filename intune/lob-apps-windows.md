@@ -1,25 +1,25 @@
 ---
-title: "如何将 Windows 业务线应用添加到 Microsoft Intune"
-titlesuffix: 
-description: "了解如何将 Windows 业务线 (LOB) 应用添加到 Microsoft Intune。"
-keywords: 
+title: 如何将 Windows 业务线应用添加到 Microsoft Intune
+titlesuffix: ''
+description: 了解如何将 Windows 业务线 (LOB) 应用添加到 Microsoft Intune。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23ddb70bb2c12e1278f4167ec074972eeba3003
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f975f2018d2ce1d7affded3c3386c479e6877388
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 Windows 业务线 (LOB) 应用添加到 Microsoft Intune
 
@@ -30,8 +30,8 @@ ms.lasthandoff: 03/12/2018
 ## <a name="step-1---specify-the-software-setup-file"></a>步骤 1 - 指定软件安装程序文件
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
-3. 在 Intune 窗格中，选择“移动应用”。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格中，选择“移动应用”。
 4. 在“移动应用”工作负荷中，选择“管理” > “应用”。
 5. 在应用列表的上方，选择“添加”。
 6. 在“添加应用”窗格中，选择“业务线应用”。

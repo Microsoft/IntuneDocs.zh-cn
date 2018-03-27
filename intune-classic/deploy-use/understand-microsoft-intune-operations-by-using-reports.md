@@ -1,25 +1,25 @@
 ---
-title: "通过使用报表了解各项操作"
-description: "创建和管理有关组织中的软件、硬件和软件许可证的报表。"
-keywords: 
-author: arob98
+title: 通过使用报表了解各项操作
+description: 创建和管理有关组织中的软件、硬件和软件许可证的报表。
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 04/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 919178b20094cb210b3d0b05c42b9b7d97759637
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>通过使用报表了解 Microsoft Intune 操作
 
@@ -32,7 +32,7 @@ Intune 报表提供有关组织的软件、硬件和软件许可证的信息。 
 
 ## <a name="report-types"></a>报表类型
 
-|报表类型|描述|
+|报表类型|说明|
 |---------------|---------------|
 |**更新报表**|显示组织中的计算机上成功的软件更新。 还显示失败、挂起或需要的更新。 有关软件更新的详细信息，请参阅[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)。|
 |**检测到的软件报表**|显示在组织中的计算机上已安装的软件。 包括软件版本。 你可以基于软件发布者和软件类别来筛选显示的信息。 通过选择列表项旁边的方向箭头，可以展开列表中的更新以显示更多详细信息（例如安装了更新的计算机）。<br /><br />停用计算机或在 Intune 中更改其组成员之后，所做的更改可能要过几分钟才会在检测到的软件报表中反映出来。 为了获得更加准确的软件清单数据，请在注销计算机或更改计算机组成员之后等待几分钟，然后再运行包括那些计算机的检测到的软件报表。|

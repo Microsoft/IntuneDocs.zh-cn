@@ -1,25 +1,25 @@
 ---
-title: "使用策略管理设备设置"
-description: "使用 Intune 创建和部署策略，该策略控制你所管理的注册设备上的设置和功能。"
-keywords: 
-author: arob98
+title: 使用策略管理设备设置
+description: 使用 Intune 创建和部署策略，该策略控制你所管理的注册设备上的设置和功能。
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 12bb3e91b842ffb03e3ad7b181841374c92b3dc4
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>使用 Microsoft Intune 策略管理设备上的设置和功能
 
@@ -173,7 +173,7 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
         - 擦除设备前允许的重复登录失败次数
         - 需要提供密码之前处于非活动状态的分钟数
         - 所需密码类型 - 最小字符集数
-        - 允许相机
+        - 允许照相机
         - 需要对移动设备加密
         - 允许可移动存储
         - 允许 Web 浏览器

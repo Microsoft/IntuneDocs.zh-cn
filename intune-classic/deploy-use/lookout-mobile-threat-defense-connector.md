@@ -1,25 +1,25 @@
 ---
-title: "查询移动威胁防御连接器"
-description: "根据设备、网络和应用程序风险，通过 Lookout 移动威胁防御连接器和 Intune 保护对公司资源的访问。"
-keywords: 
+title: 查询移动威胁防御连接器
+description: 根据设备、网络和应用程序风险，通过 Lookout 移动威胁防御连接器和 Intune 保护对公司资源的访问。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 201c431f2c30538139f0dc9c436781aae2bd9735
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout 移动威胁防御连接器与 Intune
 
@@ -39,7 +39,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 
 如果发现设备不合规，将阻止对 Exchange Online 和 SharePoint Online 等资源的访问。 被阻止的设备上的用户会收到相关步骤来解决此问题，重新获得访问权限。 从 Lookout for Work 应用启动指南。
 
-## <a name="supported-platforms"></a>受支持的平台：
+## <a name="supported-platforms"></a>支持的平台：
 在 Intune 中注册时，Lookout 支持以下平台：
 * **Android 4.1 及更高版本**
 * **iOS 8 及更高版本** 有关平台和语言支持的其他相关信息，请访问 [Lookout 网站](https://personal.support.lookout.com/hc/articles/114094140253)。
@@ -78,7 +78,7 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 ![条件访问在解除威胁后允许访问的图示](../media/mtp/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
 
-基于设备风险检测对网络的威胁，如中间人攻击和阻止同步企业文件。
+检测到中间人攻击等网络威胁时，根据设备风险阻止对公司文件进行同步。
 
 **检测到网络威胁时阻止 SharePoint Online：**
 
@@ -87,10 +87,10 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 
 **修正后授予访问权限：**
 
-![条件访问在解除网络威胁后允许访问的图示](../media/mtp/network-spo-unblocked.png)
+![关系图：显示修正网络威胁后允许访问的条件访问策略](../media/mtp/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>后续步骤
-要实施此解决方案，必须执行以下几个主要步骤：
+以下是实现此解决方案必须执行的主要步骤：
 1.  [设置 Lookout 订阅](setup-your-lookout-mtd-subscription.md)
 2.  [在 Intune 中启用 Lookout 移动威胁防御](enable-lookout-mtd-connection.md)
 3.  [配置和部署 Lookout 移动威胁防御应用](configure-deploy-lookout-for-work-app.md)

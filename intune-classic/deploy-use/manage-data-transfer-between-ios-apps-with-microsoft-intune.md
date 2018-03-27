@@ -1,25 +1,25 @@
 ---
-title: "管理 iOS 应用之间的数据传输"
-description: "使用本主题以了解如何使用功能和移动应用管理策略中的 iOS Open 来管理应用之间的数据传输。"
-keywords: 
+title: 管理 iOS 应用之间的数据传输
+description: 使用本主题以了解如何使用功能和移动应用管理策略中的 iOS Open 来管理应用之间的数据传输。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c460e48360bb31076e2054297b037d08545ea1ae
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>使用 Microsoft Intune 管理 iOS 应用之间的数据传输
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 10/10/2017
 
   1.  使用以下应用配置设置来部署该应用：
 
-      **键** = IntuneMAMUPN，**值** = <username@company.com>
+      键 = IntuneMAMUPN，值 = <username@company.com>
 
       示例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -70,14 +70,14 @@ ms.lasthandoff: 10/10/2017
 
 2. 在“应用程序配置”部分中，输入以下设置：
 
-  **键** = IntuneMAMUPN，**值** = <username@company.com>
+  键 = IntuneMAMUPN，值 = <username@company.com>
 
   键/值对的确切语法可能会因第三方 MDM 提供程序而异。 下表显示了第三方 MDM 提供程序和应为键/值对输入的确切值的示例。
 
 |第三方 MDM 提供程序| Configuration 注册表项 | 值类型 | 配置值|
 | ------- | ---- | ---- | ---- |
 | VMware AirWatch | IntuneMAMUPN | 字符串 | {UserPrincipalName}|
-| MobileIron Core | IntuneMAMUPN | 字符串 | $EMAIL$ **或** $USER_UPN$ |
+| MobileIron Core | IntuneMAMUPN | 字符串 | $EMAIL$**或**$USER_UPN$ |
 | MobileIron 云 | IntuneMAMUPN | 字符串 | ${userUPN} **或** ${userEmailAddress} |
 | ManageEngine 移动设备管理器 | IntuneMAMUPN | 字符串 | %upn% |
 

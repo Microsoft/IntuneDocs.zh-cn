@@ -1,25 +1,25 @@
 ---
-title: "适用于 Android 的合规性策略设置"
-description: "本主题介绍适用于 Android 设备的设备合规性策略设置。"
-keywords: 
+title: 适用于 Android 的合规性策略设置
+description: 本主题介绍适用于 Android 设备的设备合规性策略设置。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f781c5498a569a067f0f2aa6f780a6cc37c9985c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 63618f9af5f2bdb863a19c229c862e446dd4ea7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的合规性策略设置
 
@@ -41,11 +41,11 @@ ms.lasthandoff: 10/10/2017
 
 - **密码质量**：此设置检测是否在设备上设置了指定的密码要求。 启用此设置可要求用户满足 Android 设备的特定密码要求。 选择：
 
-  -   **低安全性生物识别**
+  -   低安全性生物识别
   -   **必需**
-  -   **至少为数字**
-  -   **至少为字母**
-  -   **至少包含字母数字**
+  -   至少为数字
+  -   至少为字母
+  -   至少为字母数字
   -   **包含符号的字母数字**
 
 - **需要提供密码之前处于非活动状态的分钟数：**指定用户必须重新输入其密码前的空闲时间。
@@ -74,7 +74,7 @@ ms.lasthandoff: 10/10/2017
 - **最低 Android 安全修补程序级别 (Android 6.0 或更高版本)**：指定最小 Android 修补程序级别。  不满足此修补程序级别的设备将会不相容。 必须以 YYYY-MM-DD 格式来指定日期。
 - **需要启用设备威胁保护**：使用此设置将 Lookout MTP 解决方案的风险评估视为合规性的条件。 从下面选择一个允许的最高威胁等级：
 
-  - **无（安全）**这是最安全的选项。 这意味着该设备不能具有任何威胁。 若检测到设备具有任何威胁，则将其评为不合规。
+  - **无（安全）**这是最安全的选项。 这意味着设备不能有任何威胁。 若检测到设备具有任何威胁，则将其评为不合规。
   - **低：**若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
   - **中：**若设备上存在的威胁为低级或中级，则将其评为合规。 若检测到设备存在高级威胁，则将其确定为不合规。
   - **高：**这是最不安全的选项。 本质上而言，此选项允许所有威胁等级，可能仅在将此解决方案用于报告时有用。

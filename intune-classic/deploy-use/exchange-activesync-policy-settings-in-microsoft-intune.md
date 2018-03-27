@@ -1,25 +1,25 @@
 ---
-title: "Exchange ActiveSync 策略设置"
-description: "使用 Intune Exchange ActiveSync 策略来配置设置，这些设置可让你控制 Exchange ActiveSync 托管设备上的特性和功能。"
-keywords: 
+title: Exchange ActiveSync 策略设置
+description: 使用 Intune Exchange ActiveSync 策略来配置设置，这些设置可让你控制 Exchange ActiveSync 托管设备上的特性和功能。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08e8fde89fc7b0b4114e9c084f8e00692bcc92b0
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Exchange ActiveSync 策略设置
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/12/2017
 |**允许简单密码**|指定是否可以使用简单密码（包括 "0000" 和 "1234"）。|
 |**擦除设备前允许的重复登录失败次数**|指定在擦除设备之前用户可以输入不正确密码的次数。|
 |**密码过期（天数）**|指定必须更改设备密码前的天数。
-|**记住密码历史记录**|指定是否允许用户使用以前用过的密码。|
+|**记住密码历史**|指定是否允许用户使用以前用过的密码。|
 |**“记住密码历史记录”** – **“防止重用以前的密码”**|指定不能重复使用的以前所用密码的数量。|
 |**需要提供密码之前处于非活动状态的分钟数**|指定锁定屏幕之前，设备必须保持空闲的时间量。
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 12/12/2017
 
 |设置名|详细信息
 |----------------|---|
-|**允许 Web 浏览器**|指定是否可以使用设备上的 Web 浏览器。<br>（不可用于 Windows RT 或 Windows Phone）。
+|**允许使用 Web 浏览器**|指定是否可以使用设备上的 Web 浏览器。<br>（不可用于 Windows RT 或 Windows Phone）。
 
 ## <a name="hardware-settings"></a>硬件设置
 

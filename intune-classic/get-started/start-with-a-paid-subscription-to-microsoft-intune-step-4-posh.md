@@ -1,25 +1,25 @@
 ---
-title: "使用 PowerShell 管理 Intune 许可证"
-description: "使用 PowerShell 管理 Intune 许可证"
-keywords: 
+title: 使用 PowerShell 管理 Intune 许可证
+description: 使用 PowerShell 管理 Intune 许可证
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d0bd31c07bb1b09893a065c4041d4fcc5015d72b
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: f6cd6f71b3f78a7b77435d1c7474c1bd672b8b95
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-intune-licenses-using-powershell"></a>使用 PowerShell 管理 Intune 许可证
 

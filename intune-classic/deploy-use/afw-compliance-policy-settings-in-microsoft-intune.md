@@ -1,25 +1,25 @@
 ---
-title: "Android for Work 的合规性设置"
-description: "本主题介绍适用于与 Android for Work 兼容的 Android 设备的设备合规性策略设置。"
-keywords: 
+title: Android for Work 的合规性设置
+description: 本主题介绍适用于与 Android for Work 兼容的 Android 设备的设备合规性策略设置。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fb5663e291af9de1e8ff83f4ec0c584a15614d55
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: ab1e43d1cb66bdc6e0fc02324ffd1d8923e61174
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android for Work 设备的合规性策略设置
 
@@ -34,20 +34,20 @@ ms.lasthandoff: 01/30/2018
 - [适用于 Windows 设备的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>系统安全设置
-### <a name="password"></a>密码
+### <a name="password"></a>Password
 - **需要密码才可解锁移动设备：**将此选项设置为“是”，以要求用户在访问其设备之前输入密码。
 
 -  **最短密码长度：**指定用户密码必须包含的最小位数或最小字符数。
 
 - **密码质量：**此设置检测是否在设备上配置了指定的密码要求。 启用此设置可要求用户为 Android 设备配置特定密码要求。 选择：
-  -   **低安全性生物识别**
+  -   低安全性生物识别
   - **必需**
-  -   **至少为数字**
-  -   **至少为字母**
-  -   **至少包含字母数字**
+  -   至少为数字
+  -   至少为字母
+  -   至少为字母数字
   -   **包含符号的字母数字**
 
-- **需要提供密码之前须经历的无活动分钟数：**指定用户必须重新输入其密码前的空闲时间。
+- **需要提供密码之前处于非活动状态的分钟数：**指定用户必须重新输入其密码前的空闲时间。
 
 - **密码过期(天)：**选择用户的密码过期之前的天数，而且他们必须创建一个新的密码。
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/30/2018
 - **最低 Android 安全修补程序级别**：使用此设置指定最小 Android 修补程序级别。  不满足此修补程序级别的设备将会不相容。 必须将日期的格式指定为：YYYY-MM-DD。
 - **需要启用设备威胁防护**：使用此设置将设备威胁防护解决方案的风险评估视为合规性的条件。 从下面选择一个允许的最高威胁等级：
 
-  - **无（安全）**这是最安全的选项。 这意味着该设备不能具有任何威胁。 若检测到设备具有任一等级的威胁，则将其评为不合规。
+  - **无（安全）**这是最安全的选项。 这意味着设备不能有任何威胁。 若检测到设备具有任一等级的威胁，则将其评为不合规。
   - **低：**若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
   - **中：**若设备设备上存在的威胁为低级或中级，则将其评为合规。 如果检测到高级威胁，则将其确定为不符合。
   - **高：**这是最不安全的选项。 本质上而言，此选项允许所有威胁等级，可能仅在将此解决方案用于报告时有用。

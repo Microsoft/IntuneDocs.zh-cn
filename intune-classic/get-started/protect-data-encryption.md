@@ -1,25 +1,25 @@
 ---
-title: "使用数据加密保护公司数据"
-description: "本指南演示了如何通过在移动设备上使用策略强制进行密码和数据加密，以帮助防止公司的数据丢失。"
-keywords: "加密，PIN，数据"
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: 使用数据加密保护公司数据
+description: 本指南演示了如何通过在移动设备上使用策略强制进行密码和数据加密，以帮助防止公司的数据丢失。
+keywords: 加密，PIN，数据
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 11/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 96c5d33ef88f263f3e51d061c646112a8d557f74
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 29e1ad3f41c5b8dc7dd58e04f6ecbda067bd4a1f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>快速入门指南：使用数据加密保护公司数据
 
@@ -47,7 +47,7 @@ Microsoft Intune 可通过多种方法助防止数据从 Office 移动应用中�
 2.  [准备好配置移动应用管理策略](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
 3.  [创建和部署移动应用管理策略](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
-## <a name="additional-information"></a>其他信息:
+## <a name="additional-information"></a>其他信息：
 - [了解使用 Microsoft Intune 的启用 MAM 的应用的最终用户体验的相关信息。](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用。](/intune/apps-prepare-mobile-application-management)
 - [查看 Microsoft Intune 应用程序合作伙伴列表](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)

@@ -1,25 +1,25 @@
 ---
-title: "使用组来管理用户和设备"
-description: "使用“组”工作区创建和管理组。"
-keywords: 
-author: arob98
+title: 使用组来管理用户和设备
+description: 使用“组”工作区创建和管理组。
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ca73c6d84c6f4b63c4d7b0cb544dc7998224821
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 5f84469f0514d2e644db2ec9b0700644af143d81
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用组来管理用户和设备
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/11/2017
 
 1.  在 Intune 管理员控制台中，依次选择“组”&gt;“概述”&gt;“创建组”。
 
-2.  输入组名称和描述（可选），然后选择一个设备组作为父组。 选择**下一步**。
+2.  输入组名称和描述（可选），然后选择一个设备组作为父组。 选择“下一步”。
 
 3.  在“定义成员资格条件”页上，选择组内要包含的设备类型。 根据要包含的设备类型，可选择其他组配置：
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 10/11/2017
 
 1.  在 Intune 管理员控制台中，依次选择“组”&gt;“概述”&gt;“创建组”。
 
-2.  输入组名称和描述（可选），然后选择一个用户组作为父组。 选择**下一步**。
+2.  输入组名称和描述（可选），然后选择一个用户组作为父组。 选择“下一步”。
 
 3.  在“定义成员资格条件”页上，选择是包括父组的所有成员还是从一个空组开始。 然后，可以根据你在 [Office 365 管理中心](http://go.microsoft.com/fwlink/?LinkId=698854)手动配置的或从 Active Directory 同步的用户安全组包括或排除成员。 如果安全组的成员资格更改，则基于该安全组的用户组的成员资格也可能更改。
 

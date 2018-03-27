@@ -1,23 +1,23 @@
 ---
-title: "适用于 Windows Holographic for Business 的 Microsoft Intune 设备限制设置"
-titleSuffix: 
-description: "了解哪些 Intune 设置可用于控制运行 Windows Holographic for Business 的设备上的设备设置和功能。"
-keywords: 
+title: 适用于 Windows Holographic for Business 的 Microsoft Intune 设备限制设置
+titleSuffix: ''
+description: 了解哪些 Intune 设置可用于控制运行 Windows Holographic for Business 的设备上的设备设置和功能。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9acce571330a754de85b65caf8ec71912fd36a69
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 694b81434a95f48abc98f5012460523420df58cc
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>适用于 Windows Holographic for Business 的 Microsoft Intune 设备限制设置
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/17/2018
 
 
 
-## <a name="password"></a>密码
+## <a name="password"></a>Password
 -   **密码** - 需要最终用户输入密码才能访问设备。
     -   **设备从空闲状态返回时需要输入密码** - 指定用户必须输入密码以解锁设备。
 

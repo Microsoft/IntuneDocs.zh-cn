@@ -1,25 +1,25 @@
 ---
-title: "在 Intune 中启用 Skycure 移动威胁防御"
-description: "在 Intune 经典门户中启用 Skycure Mobile Threat Defense。"
-keywords: 
+title: 在 Intune 中启用 Skycure 移动威胁防御
+description: 在 Intune 经典门户中启用 Skycure Mobile Threat Defense。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce0e61a27f44f0c6cb00d79442d346db679a55ea
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 971600d59a6afe019f5f3bd51459964c168afa82
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>在 Intune 中启用 Skycure 移动威胁防御
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/10/2017
     ![在 Intune 经典门户中启用 Skycure 切换](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
-> 创建符合性策略规则和配置条件访问前，必须配置 Skycure 应用。 这样可以确保最终用户能够安装应用，以便访问电子邮件或其他公司资源。
+> 创建符合性策略规则和配置条件访问前，必须配置 Skycure 应用。 这确保了最终用户有权访问电子邮件和其他公司资源之前，应用已准备就绪并且可用。
 
 按此步骤可在 Intune 管理控制台中完成 Skycure 与 Intune 的集成设置。 接下来执行此解决方案的几个步骤将涉及部署 Skycure for Work 应用和设置符合性策略。
 

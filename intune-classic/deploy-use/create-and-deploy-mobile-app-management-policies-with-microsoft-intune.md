@@ -1,25 +1,25 @@
 ---
-title: "创建和部署 MAM 策略"
-description: "使用本主题中的分步说明来创建和部署移动应用管理策略。"
-keywords: 
+title: 创建和部署 MAM 策略
+description: 使用本主题中的分步说明来创建和部署移动应用管理策略。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ec41c756c802986b85a45f53329ef6daba6c08
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 创建和部署应用保护策略
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 10/10/2017
 
     a.  **推荐的应用：**一份预先填写好的应用列表（主要为 Office 应用），便于管理员轻松导入策略。
 
-    b。  **应用商店应用：**管理员可以将 Windows 应用商店中的任何应用程序添加到策略。
+    b.  **应用商店应用：**管理员可以将 Windows 应用商店中的任何应用程序添加到策略。
 
     c.  **Windows 桌面应用：**管理员可以将任何传统 Windows 桌面应用添加到策略（例如，exe、dll 等）
 

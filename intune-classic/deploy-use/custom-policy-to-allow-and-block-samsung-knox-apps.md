@@ -1,25 +1,25 @@
 ---
-title: "允许的和阻止的 KNOX 应用"
-description: "自定义配置文件以创建 KNOX 允许和阻止的应用的列表。"
-keywords: 
+title: 允许的和阻止的 KNOX 应用
+description: 自定义配置文件以创建 KNOX 允许和阻止的应用的列表。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ee5279c91eeaa2d75044a156ebe9c4b100bd8047
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>使用自定义策略允许和阻止适用于 Samsung KNOX 标准版设备的应用
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/12/2017
 使用此主题中的过程创建 Microsoft Intune 自定义策略，该策略创建以下内容之一：
 
 - 阻止在设备上运行的应用的列表。 阻止运行此列表中的应用，即使应用此策略时已安装这些应用也是如此。
-- 允许设备用户从 Google Play 商店中安装的应用的列表。 仅可安装你列出的应用。 其他应用不能从应用商店安装。
+- 允许设备用户从 Google Play 商店安装的应用列表。 仅可安装你列出的应用。 不能从该应用商店安装任何其他应用。
 
 仅运行 Samsung KNOX 标准版的设备可以使用这些设置。
 

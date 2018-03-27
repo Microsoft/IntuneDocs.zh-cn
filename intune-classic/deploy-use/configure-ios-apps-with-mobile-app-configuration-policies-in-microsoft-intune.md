@@ -1,25 +1,25 @@
 ---
-title: "使用 iOS 移动应用配置策略"
-description: "Intune 中的移动应用配置策略可提供用户在运行 iOS 应用时可能需要的设置。"
-keywords: 
+title: 使用 iOS 移动应用配置策略
+description: Intune 中的移动应用配置策略可提供用户在运行 iOS 应用时可能需要的设置。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31acadce1af55b2ce751b4c6b5bfead27fce3c8c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用
 
@@ -76,7 +76,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 ## <a name="information-about-the-xml-file-format"></a>有关 XML 文件格式的信息
 
-Intune 在属性列表中支持以下数据类型：
+Intune 支持属性列表中的以下数据类型：
     
 - &lt;整数&gt;
 - &lt;实数&gt;
@@ -85,9 +85,9 @@ Intune 在属性列表中支持以下数据类型：
 - &lt;dict&gt;
 - &lt;true /&gt; 或 &lt;false /&gt;
      
-有关数据类型的详细信息，请参阅 iOS 开发人员库中的 [关于属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) 。
+有关数据类型的详细信息，请参阅 iOS 开发人员库中的[关于属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html)。
 
-此外，Intune 还支持属性列表中的以下令牌类型：
+此外，Intune 支持属性列表中的以下令牌类型：
 - \{\{userprincipalname\}\} -（示例：**John@contoso.com**）
 - \{\{mail\}\} -（示例：**John@contoso.com**）
 - \{\{partialupn\}\} -（示例：**John**）

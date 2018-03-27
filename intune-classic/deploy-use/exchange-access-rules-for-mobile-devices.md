@@ -1,25 +1,25 @@
 ---
-title: "移动设备的 Exchange 访问规则"
-description: "Exchange ActiveSync 访问规则以允许或阻止设备与 EAS 的连接"
-keywords: 
+title: 移动设备的 Exchange 访问规则
+description: Exchange ActiveSync 访问规则以允许或阻止设备与 EAS 的连接
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 097d6ee8a7ad6752d48f554ee0bc9b3729311fe2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>移动设备的 Exchange 访问规则
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 10/10/2017
 
 下表包含 Exchange ActiveSync 管理的访问级别：
 
-|访问级别|描述|
+|访问级别|说明|
 |----------------|---------------|
 |**允许设备访问 Exchange**|在“*允许访问*”状态下，移动设备可以通过 Exchange ActiveSync 进行同步，并连接到 Exchange 服务器以检索电子邮件和管理日历、联系人、任务和批注。 只要设备符合你在 Exchange 中配置的 Exchange ActiveSync 邮箱策略，就可继续执行此操作，除非 Exchange 管理员阻止了用户或特定移动设备。|
 |**阻止设备访问 Exchange**|在“*阻止访问*”状态下，移动设备会受阻，不允许连接到 Exchange 服务器。 设备会收到 HTTP 403 禁止错误。 用户会收到来自 Exchange 服务器的电子邮件，告知他们已阻止移动设备访问其邮箱。 此邮件不能处于阻止的移动设备上。 可以使用“**设置用户通知**”任务为此邮件添加自定义的文本，来为其设备被阻止的用户提供说明。 |

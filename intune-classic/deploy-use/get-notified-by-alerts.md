@@ -1,25 +1,25 @@
 ---
-title: "通过警报获取通知 | Microsoft Docs"
-description: "了解警报让你始终了解 Microsoft Intune 中发生的情况。"
-keywords: 
+title: 通过警报获取通知 | Microsoft Docs
+description: 了解警报让你始终了解 Microsoft Intune 中发生的情况。
+keywords: ''
 author: nathbarn
-ms.author: angrobe
-manager: angrobe
+ms.author: dougeby
+manager: dougeby
 ms.date: 8/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
-ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
+ms.openlocfilehash: daa936b43c53d14d57f2c48f80dff7e908354054
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>通过 Microsoft Intune 警报获取通知
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 01/09/2018
 
 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理”&gt;“警报和通知”，然后选择以下任务之一：
 
-|任务|描述|
+|任务|说明|
 |---|------|
 |**警报类型**|选择想要配置的警报类型，然后执行以下操作之一：<br /><br />选择**配置**。 在“配置警报类型”对话框中，配置想要的设置，然后选择“确定”。<br /><br />“启用”或“禁用”警告。<br /><br />展开“警报类型”节点，然后选择某个类别，以只查看该类别中的警报类型。|
 |**收件人**|选择“添加”来添加新电子邮件地址，该地址将接收所设置的电子邮件通知。<br /><br />还可以“编辑”或“删除”现有收件人。<br /><br />若要接收通知，你还必须在“通知规则”下将此电子邮件地址添加为收件人。|
@@ -66,7 +66,7 @@ ms.lasthandoff: 01/09/2018
 
 使用下列选项可帮助你使用 Intune 管理控制台中的警报。
 
-|选项|描述|
+|选项|说明|
 |-----|----|
 |**查看活动警报**|选择以下选项之一：<br /><br />**查看警报摘要** - 在“仪表板”工作区中，最常发生的错误将显示在“警报”窗格中。 选择此窗格以查看更多详细信息。<br /><br />此外，你还可以查看“警报”  工作区的“概述”  页上的警报摘要。<br /><br />**查看所有警报** - 在“警报”工作区中，选择“所有警报”。|
 |**查看通知**|选择以下选项之一：<br /><br />在**仪表板**工作区中，选择**通知**。<br /><br />在**警报**工作区中，选择**所有警报**&gt;**通知**。|

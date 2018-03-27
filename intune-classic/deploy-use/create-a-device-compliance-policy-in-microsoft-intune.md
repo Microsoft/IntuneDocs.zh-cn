@@ -1,25 +1,25 @@
 ---
-title: "创建设备合规性策略"
-description: "创建合规性策略来帮助保护用于访问你的公司数据的移动设备和电脑。"
-keywords: 
+title: 创建设备合规性策略
+description: 创建合规性策略来帮助保护用于访问你的公司数据的移动设备和电脑。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/12/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e37e5f490254efedf56a383e612f934925be75e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备合规性策略
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 10/10/2017
 下表列出了合规性策略设置和支持这些设置的平台。
 
 -------------
-|Setting|iOS|Android|Windows|
+|设置|iOS|Android|Windows|
 |-----|----|-----|-----|
 |需要密码才可解锁移动设备|iOS 6 及更高版本|Android 4.0 及更高版本 <br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本|
 |允许简单密码|iOS 6 及更高版本|不支持|Windows Phone 8.1 及更高版本|
@@ -65,7 +65,7 @@ ms.lasthandoff: 10/10/2017
 |最小字符集数|iOS 6 及更高版本|不可用|Windows Phone 8.1 及更高版本 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |密码质量|不可用|Android 4.0 及更高版本 <br>Samsung KNOX 标准版 4.0 和更高版本|不可用|
 |需要提供密码之前处于非活动状态的分钟数|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
-|密码过期(天)|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
+|密码过期（天数）|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
 |记住密码历史记录|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
 |防止重用以前的密码|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
 |当设备从空闲状态返回时需要密码| 不可用| 不可用|Windows 10 移动版|
