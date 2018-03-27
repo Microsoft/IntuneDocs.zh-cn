@@ -1,31 +1,31 @@
 ---
-title: "使用设备注册管理器进行注册"
-description: "设备注册管理器 (DEM) 帐户可以管理大量带有单一用户帐户的企业自有的共享移动设备。"
-keywords: 
+title: 使用设备注册管理器进行注册
+description: 设备注册管理器 (DEM) 帐户可以管理大量带有单一用户帐户的企业自有的共享移动设备。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b55c5d588eb366487a9e1594a46f88551e0b6ee2
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的设备注册管理器注册企业自有设备
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 设备注册管理器 (DEM) 帐户是可注册最多 1,000 台设备的特殊用户帐户。 将现有用户添加到 DEM 帐户以向他们提供特殊 DEM 功能。 每台已注册设备均使用单一许可证。 建议将通过此帐户注册的设备用作共享设备（即没有用户关联），而不是个人 ("BYOD") 设备。  
+组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 *设备注册管理器* (DEM) 帐户是专用的用户帐户，可注册最多 1,000 台设备。 将现有用户添加到要为其提供专用 DEM 功能的 DEM 帐户。 每台已注册设备均使用单一许可证。 建议将通过此帐户注册的设备用作共享设备（即没有用户关联），而不是个人 ("BYOD") 设备。  
 
 用户必须在 Azure 门户中存在才能添加为设备注册管理器。 为获得最佳安全性，DEM 用户也不应是 Intune 管理员。
 

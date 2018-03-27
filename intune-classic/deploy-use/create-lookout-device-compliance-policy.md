@@ -1,25 +1,25 @@
 ---
-title: "启用设备保护规则"
-description: "在设备合规性策略中启用移动威胁保护规则。"
-keywords: 
+title: 启用设备保护规则
+description: 启用设备合规性策略中的移动威胁防护规则。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f649227c6ad49cd9c788e75097bc4a5eeb71f350
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 8f19318256dc4480207097d2f4ab393b799e207a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>在 Intune 中创建 Lookout 设备符合性策略
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 01/30/2018
   * **无(安全)**：这是最安全的选项。  设备不能存在任何威胁，且仍可访问公司资源。  如果发现了任何威胁，设备都会被评估为不符合。  
   * **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
   * **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不符合。
-  * **高**：这是最不安全的选项。 此选项允许所有威胁级别，且仅将 Lookout 移动威胁防护用作报告目的。
+  * “高”：这是最不安全的选项。 此选项允许所有威胁级别，且仅将 Lookout 移动威胁防护用作报告目的。
 
 ![显示设备威胁保护规则设置威胁等级选项的屏幕截图](../media/mtp/mtp-compliance-policy-setting.png)
 

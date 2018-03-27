@@ -1,24 +1,24 @@
 ---
-title: "适用于 Windows 电脑的 Endpoint Protection"
-description: "使用提供对恶意软件威胁的实时防护的 Endpoint Protection 保障托管计算机的安全。"
-keywords: 
+title: 适用于 Windows 电脑的 Endpoint Protection
+description: 使用提供对恶意软件威胁的实时防护的 Endpoint Protection 保障托管计算机的安全。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: arob98
+manager: dougeby
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8b903d5b1ae66b7ce022480864fb08e7107ff4b0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fd201cbe7b91791f7db014e0176b0873a1e270c0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
 
@@ -101,7 +101,7 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 |**计划每日一次快速扫描**|计划对计算机上的常用文件和重要系统文件每天进行一次快速扫描。 此快速扫描对性能的影响最小。<br /><br />建议的值：**是**|
 |**如果错过两次连续的扫描，则运行快速扫描**|配置 Endpoint Protection 以在计算机错过两次连续快速扫描的情况下自动运行快速扫描。<br /><br />建议的值：**是**|
 |**计划完全扫描**|配置对本地计算机硬盘上的所有文件和资源进行完全扫描。 此扫描可能需要一些时间，并可能会影响计算机性能（具体时间取决于扫描的文件和资源的数目）。<br /><br />建议的值：**否**|
-|**如果错过两次连续的完全扫描，则运行完全扫描**|配置 Endpoint Protection 以在计算机错过两次连续扫描的情况下自动运行完全扫描。<br /><br />建议的值：未配置|
+|**如果错过两次连续的完全扫描，则运行完全扫描**|配置 Endpoint Protection 以在计算机错过两次连续扫描的情况下自动运行完全扫描。<br /><br />建议值：未配置|
 
 ### <a name="specify-scan-options-settings"></a>指定扫描选项设置
 
@@ -116,7 +116,7 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 |**扫描从网络共享文件夹中打开的文件**|设置为“是”以将 Endpoint Protection 配置为对从网络上的共享文件夹中打开的文件进行扫描。 这些通常是使用通用命名约定 (UNC) 路径访问的文件。 启用此功能可能会导致具有只读访问权限的用户遇到问题，因为他们无法删除恶意软件。<br /><br />建议的值：**否**|
 |**扫描映射的网络驱动器**|设置为“是”以将 Endpoint Protection 配置对映射的网络驱动器上的文件进行扫描。 启用此功能可能会导致具有只读访问权限的用户遇到问题，因为他们无法删除恶意软件。<br /><br />建议的值：**否**|
 |**扫描可移动驱动器**|设置为“是”以将 Endpoint Protection 配置为当你在计算机上运行完全扫描时在可移动驱动器（如 USB 闪存驱动器）上扫描恶意软件和不需要的软件。<br /><br />建议的值：**是**|
-|**在扫描期间限制 CPU 使用率**|设置在计算机上进行计划扫描期间可使用的最大 CPU 使用率百分比。 可以将此值设置为 1% 到 100%。<br /><br />建议的值：**50%**|
+|**限制扫描期间 CPU 使用率**|设置在计算机上进行计划扫描期间可使用的最大 CPU 使用率百分比。 可以将此值设置为 1% 到 100%。<br /><br />建议的值：**50%**|
 
 ### <a name="choose-default-actions-settings"></a>选择默认操作设置
 
@@ -187,8 +187,8 @@ Intune 可以在安装有 Intune 客户端的远程托管电脑上使用 Endpoin
 
 2. 选择“远程任务”下拉列表，然后选择要在远程计算机上运行的任务。
 
-## <a name="need-more-help"></a>需要更多帮助？
+## <a name="need-more-help"></a>需要更多帮助吗?
 有关更多帮助和支持，请参阅 [Microsoft Intune 中的 Endpoint Protection 疑难解答](/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)。
 
-### <a name="see-also"></a>另请参阅
+### <a name="see-also"></a>另請參閱
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)

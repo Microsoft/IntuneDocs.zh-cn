@@ -1,25 +1,25 @@
 ---
-title: "添加用户并授予权限"
+title: 添加用户并授予权限
 titlesuffix: Microsoft Intune
-description: "将本地用户与 Azure AD 同步，并授予对 Intune 订阅的管理员权限。"
-keywords: 
+description: 将本地用户与 Azure AD 同步，并授予对 Intune 订阅的管理员权限。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f8fe6d668885345f4bd710e4b96b8d7855f12632
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/08/2018
 3. 在管理中心，选择“新用户”。
   ![添加“新用户”的屏幕截图](media/intune-add-user.png)
 4. 指定下列用户详细信息：
-  - **名称**
+  - **Name**
   - **用户名** - Azure Active Directory 门户中的新名称![添加名称和用户名的屏幕截图](media/intune-add-user-info.png)选择“确定”以继续。
 5. 或者，也可以指定下列用户属性：
   - 个人资料 - 包括“职务”和“部门”在内的工作信息

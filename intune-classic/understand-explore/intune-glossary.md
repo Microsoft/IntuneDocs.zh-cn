@@ -1,23 +1,23 @@
 ---
-title: "Intune 术语表"
-description: "了解 Microsoft Intune 中的一些术语"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Intune 术语表
+description: 了解 Microsoft Intune 中的一些术语
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 843d11abb3e8b759b7e35db3ce59e7f611e26bc4
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b4415b7b4b1cd48accae3f0d0d39caedd9cf6b3c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/30/2018
 |证书配置文件|使用 Wi-Fi、电子邮件或 VPN 配置文件时，可使用此策略类型，通过证书[安全访问公司资源](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)。|
 |云存储空间|此处用于[存储](/intune-classic/deploy-use/add-apps#cloud-storage-space)你创建应用或应用的有关数据。|
 |COD|可以多种方式注册[公司拥有的设备](/intune-classic/get-started/choose-how-to-enroll-devices1)，具体取决于组织的需求和管理的设备的类型。|
-|Company Portal|一种向用户提供[公司数据和应用程序访问](/intune-classic/get-started/microsoft-intune-company-portal)的应用或网站。|
+|公司门户|一种向用户提供[公司数据和应用程序访问](/intune-classic/get-started/microsoft-intune-company-portal)的应用或网站。|
 |合规性策略|请确保用于访问公司应用和数据的设备[符合特定规则](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)（如使用 PIN 访问设备，以及对设备上存储的数据进行加密）。|
 |符合和不符合要求的应用程序|这些设置为[常规配置策略](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)的一部分，借助这些设置可定义用户可以运行或不可运行的应用列表。 Intune 会发出通知 报告安装或运行了不合规应用。 对于一些平台，Intune 可阻止安装不合规应用。|
 |条件性访问|仅允许符合设定规则的设备[访问公司电子邮件、Office 365 和其他服务](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。|
@@ -126,7 +126,7 @@ ms.lasthandoff: 01/30/2018
 |||
 |-|-|
 |远程锁定|一项 Intune 功能，即使设备不属于你，也可以使用此功能[锁定受支持的设备](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune)。|
-|Reports|Intune 提供一系列[内置报表](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)，可提供所管理设备的有关信息。|
+|报表|Intune 提供一系列[内置报表](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)，可提供所管理设备的有关信息。|
 |必需安装|使用此操作部署应用时，[无需用户介入](/intune-classic/deploy-use/deploy-apps)就可将其安装在设备上（尽管对于某些平台，最终用户可能必须接受该安装）。|
 |要求|一项[应用部署操作](/intune-classic/deploy-use/add-apps)，安装应用前，可借助此操作选择必须满足的设备要求。 例如，可以在安装应用前指定必须安装的 iOS 操作系统的版本。|
 
@@ -141,7 +141,7 @@ ms.lasthandoff: 01/30/2018
 |-|-|
 |TeamViewer|一个第三方应用程序，与 Intune 一起为 Intune 软件客户端管理的 Windows 电脑提供[远程协助功能](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs)。|
 |租户|可使用订阅进行访问的 Intune 服务的单个实例。|
-|条款和条件|一种部署到用户的策略类型，包含用户必须[阅读并同意](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune)的信息，此后用户才能使用公司门户注册和访问工作。|
+|Terms and conditions|一种部署到用户的策略类型，包含用户必须[阅读并同意](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune)的信息，此后用户才能使用公司门户注册和访问工作。|
 
 ## <a name="v"></a>V
 |||

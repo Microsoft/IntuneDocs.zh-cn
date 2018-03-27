@@ -1,25 +1,25 @@
 ---
-title: "向用户发布移动应用"
-description: 
-keywords: 
+title: 向用户发布移动应用
+description: ''
+keywords: ''
 author: jeffgilb
 ms.author: jeffgilb
-manager: angrobe
+manager: dougeby
 ms.date: 11/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8bcb94b087a310eb15a24945e82fc6ddbff3cbc9
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: ef4eac0e0841ba20a966f2ee30ed51659f25afa3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>快速入门指南：向用户发布移动应用
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/12/2018
 2.  [将应用添加到 Intune](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)，该应用是你想要部署到注册的设备的应用。
 3.  [使用 Intune 部署应用](/intune-classic/deploy-use/deploy-apps)到注册的设备。
 
-### <a name="additional-information"></a>其他信息:
+### <a name="additional-information"></a>其他信息：
 如果因要使用 Intune 的 MAM 功能来管理这些应用的数据丢失防护而成功发布 Office 移动应用，则为每个最终用户所分配的 MAM 策略需要是[适用于 Office 365 的已分配的用户许可证](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)。
 
 ## <a name="what-should-i-do-next"></a>接下来我该怎么办？

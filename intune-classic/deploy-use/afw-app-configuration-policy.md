@@ -1,25 +1,25 @@
 ---
-title: "Android for Work 应用配置策略"
-description: "Intune 中的移动应用配置策略可提供用户在运行 Android for Work 应用时可能需要的设置。"
-keywords: 
+title: Android for Work 应用配置策略
+description: Intune 中的移动应用配置策略可提供用户在运行 Android for Work 应用时可能需要的设置。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3fd5e2891eb628fe84fae8842791b4ac4e883d21
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 02934e40346be88cb823bcfa80ff9618e86e757b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用移动应用配置策略配置 Android for Work 应用
 
@@ -41,7 +41,7 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>配置移动应用配置策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)，选择“策略”&gt;“概述”&gt;“添加策略”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)上，选择“策略”&gt;“概述”&gt;“添加策略”。
 
 2.  在策略列表中，展开“Android for Work”，选择“移动应用配置策略(Android for Work)”，然后选择“创建策略”。
 

@@ -1,25 +1,25 @@
 ---
-title: "保护通过 Cisco ISE 对网络的访问"
-description: "将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 Cisco ISE 控制的 Wi-Fi 和 VPN 前已注册 Intune 并且符合策略。"
-keywords: 
-author: arob98
+title: 保护通过 Cisco ISE 对网络的访问
+description: 将 Cisco ISE 与 Intune 配合使用，以便设备在访问由 Cisco ISE 控制的 Wi-Fi 和 VPN 前已注册 Intune 并且符合策略。
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51b3763faa95adcbfe76580e32f5a42bb615c9d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>将 Cisco ISE 与 Microsoft Intune 配合使用
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 10/10/2017
 
    a. 以管理员身份运行 Internet Explorer 并登录到 Azure AD 控制台。
 
-   b。 在地址栏中选择锁定图标，然后选择“查看证书”。
+   b. 在地址栏中选择锁定图标，然后选择“查看证书”。
 
    c. 在证书属性的“详细信息”选项卡上，选择“复制到文件”。
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 10/10/2017
 
  a. 登录 Azure AD 控制台。
 
-b。 选择锁定图标&gt;“详细信息”。
+b. 选择锁定图标&gt;“详细信息”。
 
    c. 选择“查看证书”&gt;“详细信息”。
 
@@ -94,7 +94,7 @@ b。 选择锁定图标&gt;“详细信息”。
         - 随时访问用户的数据
         - 让用户登录
 
- b。 对于 Microsoft Intune API，在“应用程序权限”中，选择“从 Intune 获取设备状态和合规性”。
+ b. 对于 Microsoft Intune API，在“应用程序权限”中，选择“从 Intune 获取设备状态和合规性”。
 
 7. 选择“查看终结点”，并复制以下值以便在配置 ISE 设置时使用：
 
@@ -155,7 +155,7 @@ b。 选择锁定图标&gt;“详细信息”。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune 租户和 Cisco ISE 服务器之间共享的信息
 此表列出了你的 Intune 租户和用于由 Intune 托管的设备的 Cisco ISE 服务器之间共享的信息。
 
-|属性|  描述|
+|属性|  说明|
 |---------------|------------------------------------------------------------|
 |complianceState|指示设备是否合规的 true 或 false 字符串。|
 |isManaged|指示客户端是否由 Intune 托管的 true 或 false 字符串。|

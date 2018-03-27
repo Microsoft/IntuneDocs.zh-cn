@@ -1,25 +1,25 @@
 ---
-title: "配置 PFX 证书基础结构"
-description: "创建和部署 .PFX 证书配置文件。"
-keywords: 
+title: 配置 PFX 证书基础结构
+description: 创建和部署 .PFX 证书配置文件。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b415e84f488d3bcdd14d6c3bca1aad76831fc499
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a19dbd6ad2b65e7d2d090b543f3e2200180c660a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-certificate-infrastructure"></a>配置证书基础结构
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/12/2017
 
 本主题介绍创建和部署 .PFX 证书配置文件所需具备的条件。
 
-若要在组织中执行任何基于证书的身份验证，你需要企业证书颁发机构。
+必须有企业证书颁发机构，才能在组织中实施任何基于证书的身份验证。
 
 若要使用 .PFX 证书配置文件，除了企业证书颁发机构，你还需要：
 
@@ -38,13 +38,13 @@ ms.lasthandoff: 12/12/2017
 ## <a name="on-premises-infrastructure-description"></a>本地基础结构说明
 
 
--    **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
+-    **Active Directory 域**：此部分中列出的所有服务器（Web 应用程序代理服务器除外）都必须加入 Active Directory 域。
 
 -  **证书颁发机构**：Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关如何设置证书颁发机构的说明，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
     如果 CA 是在 Windows Server 2008 R2 上运行，必须[安装 KB2483564 中的修补程序](http://support.microsoft.com/kb/2483564/)。
 
 -  **可以与证书颁发机构进行通信的计算机**：或者，使用证书颁发机构计算机本身。
--  **Microsoft Intune 证书连接器**：使用 Intune 管理控制台下载**证书连接器**安装程序 (**ndesconnectorssetup.exe**)。 随后可以在想要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe** 。 对于 .PFX 证书配置文件，请在与证书颁发机构进行通信的计算机上安装证书连接器。
+-  **Microsoft Intune 证书连接器**：使用 Intune 管理控制台下载**证书连接器**安装程序 (**ndesconnectorssetup.exe**)。 然后，可以在要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe**。 对于 .PFX 证书配置文件，请在与证书颁发机构进行通信的计算机上安装证书连接器。
 -  **Web 应用程序代理服务器**（可选）：你可以使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器。 该配置：
     -  允许设备使用 Internet 连接接收证书。
     -  是设备通过 Internet 连接接收和续订证书时的安全建议。
@@ -87,7 +87,7 @@ ms.lasthandoff: 12/12/2017
         > [!IMPORTANT]
         > 对于 iOS 和 Mac OS X 证书模板，在“**扩展**”选项卡上编辑“**密钥用法**”并确保未选择“**数字签名为原件的证明**”。
 
-2.  在模板的 **“常规”** 选项卡上查看 **“有效期”** 。 默认情况下，Intune 使用模板中配置的值。 不过，可以视需要将 CA 配置为允许申请者指定其他值，随后便能够在 Intune 管理员控制台中设置此值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
+2.  在模板的“常规”选项卡上，查看“有效期”。 默认情况下，Intune 使用模板中配置的值。 不过，可以视需要将 CA 配置为允许申请者指定其他值，随后便能够在 Intune 管理员控制台中设置此值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
 
     > [!IMPORTANT]
     > 无论你所做出的其他配置是什么，iOS 和 Mac OS X 平台都始终使用模板中设置的值。
@@ -106,7 +106,7 @@ ms.lasthandoff: 12/12/2017
 
     b.  通过查看 **“证书模板”** 文件夹下已发布的模板来对它进行验证。
 
-4.  在 CA 计算机上，确保托管 Intune 证书连接器的计算机具有注册权限，以便它可以访问在创建 .PFX 配置文件时使用的模板。 在 CA 计算机属性的“安全性”  选项卡上设置该权限。
+4.  在 CA 计算机上，确保托管 Intune 证书连接器的计算机具有注册权限，以便它可以访问在创建 .PFX 配置文件时使用的模板。 在 CA 计算机属性的“安全性”选项卡上设置相应权限。
 
 ### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>任务 2 - 启用、安装和配置 Intune 证书连接器
 在此任务中，你将：
@@ -133,7 +133,7 @@ ms.lasthandoff: 12/12/2017
 
 3.  提示输入证书连接器的客户端证书时，选取“**选择**”，然后选择任务 3 中安装的**客户端身份验证**证书。
 
-    选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书”  处。 选择“下一步”查看相应证书的属性，尽管选择的证书不会显示。 然后，依次选择“下一步”和“安装”。
+    选择客户端身份验证证书后，将返回“Microsoft Intune 证书连接器的客户端证书”区域。 选择“下一步”查看相应证书的属性，尽管选择的证书不会显示。 然后，依次选择“下一步”和“安装”。
 
 4.  在向导完成后，先单击“启动证书连接器 UI”，然后再关闭向导。
 

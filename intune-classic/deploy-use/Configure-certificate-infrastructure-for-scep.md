@@ -1,25 +1,25 @@
 ---
-title: "配置 SCEP 证书基础结构"
-description: "用于创建和部署 SCEP 证书配置文件的基础结构。"
-keywords: 
+title: 配置 SCEP 证书基础结构
+description: 用于创建和部署 SCEP 证书配置文件的基础结构。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 37dcc2e7a11e33ff0543a3f2020331d52f5052ad
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>配置 SCEP 证书基础结构
 
@@ -152,7 +152,7 @@ I
 
     1.  选择“证书模板”节点，单击“操作”-&gt;“新建”&gt;“要颁发的证书模板”，然后选择步骤 2 中创建的模板。
 
-    2.  通过查看“证书模板”文件夹下已发布的模板来对它进行验证。
+    2.  通过查看“证书模板”文件夹下的已发布模板来进行验证。
 
 
 ### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>任务 3 - 在 NDES 服务器上配置必备组件
@@ -237,7 +237,7 @@ I
 
 3. NDES 服务器将会收到很长的 URL（查询），要求你添加两个注册表项：
 
-    |位置|值|类型|数据|
+    |位置|值|键入|数据|
     |-------|-----|----|----|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxFieldLength|DWORD|65534（十进制）|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534（十进制）|
@@ -248,7 +248,7 @@ I
     ![IIS 的最大 URL 长度和最大查询长度](..\media\SCEP_IIS_max_URL.png)
 
 5.  重新启动服务器。 在服务器上运行 iisreset 将不足以完成这些更改。
-6. 浏览到 http://*FQDN*/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
+6. 浏览到 http://FQDN/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
 
     ![测试 NDES](..\media\SCEP_NDES_URL.png)
 
@@ -326,7 +326,7 @@ I
 
 3.  提示输入证书连接器的客户端证书时，单击“选择” ，然后选择任务 3 中在你的 NDES 服务器上安装的 **客户端身份验证** 证书。
 
-    选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书” 处。 尽管你选择的证书不会显示，但可以单击“下一步”查看该证书的属性。 然后单击“下一步”，再单击“安装”。
+    选择客户端身份验证证书后，将返回“Microsoft Intune 证书连接器的客户端证书”区域。 尽管你选择的证书不会显示，但可以单击“下一步”查看该证书的属性。 然后单击“下一步”，再单击“安装”。
 
 4.  向导完成后，关闭向导前，单击“启动证书连接器 UI” 。
 
@@ -350,7 +350,7 @@ I
 
 6.  打开命令提示符并键入 services.msc，然后按 Enter，右键单击“Intune 连接器服务”，再单击“重启”。
 
-若要验证服务是否正在运行，打开浏览器然后输入以下 URL 将返回“403”错误：
+若要验证服务是否在运行，请打开浏览器，然后输入以下 URL（应返回“403”错误）：
 
 **https:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 

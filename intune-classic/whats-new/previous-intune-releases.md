@@ -1,24 +1,24 @@
 ---
-title: "早期版本"
-description: 
-keywords: 
+title: 早期版本
+description: ''
+keywords: ''
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fb963fd9fc921b546f635b7eb5d8be32d5d1df55
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 76e53cabba9b684170d659ae5b8ef884bfe9abaa
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="previous-intune-releases"></a>早期 Intune 发行版本
 
@@ -35,7 +35,7 @@ __改善应用预配配置文件更新体验__ Apple iOS 业务线移动应用�
 用于签署应用的企业签名证书通常持续 3 年。 但是，预配配置文件将在 1 年后过期。 利用此更新，Intune 会为你提供一些工具，用于主动地将新预配配置文件策略部署到安装了即将到期的应用而证书仍有效的设备。 有关详细信息，请参阅[使用 iOS 移动预配配置文件策略使业务线应用保持最新](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)。
 <!--- TFS 1280247--->
 
-__用于 Intune 应用的 SDK Xamarin 已推出__ Intune App SDK Xamarin 组件允许在使用 Xamarin 生成的移动 iOS 和 Android 应用中启用 Intune 移动应用管理功能。 你可以在 [Xamarin 应用商店](https://components.xamarin.com/view/Microsoft.Intune.MAM)中或在 [Microsoft Intune Github 页面](https://github.com/msintuneappsdk)上找到该组件。
+__用于 Intune 应用的 SDK Xamarin 已推出__ Intune App SDK Xamarin 组件允许在使用 Xamarin 生成的移动 iOS 和 Android 应用中启用 Intune 移动应用管理功能。 可在 [Xamarin 应用商店](https://components.xamarin.com/view/Microsoft.Intune.MAM)或 [Microsoft Intune Github 页面](https://github.com/msintuneappsdk)中找到该组件。
 <!--- TFS 1061478 --->
 
 ### <a name="device-management"></a>设备管理
@@ -50,7 +50,7 @@ __提高了设备注册限制__ Intune 将每个用户的最大可配置设备�
 
 __公司门户网站__
 - **改善了注册 Windows 设备时的最终用户体验**<br/>
-使用条件访问时，Windows 8.1、Windows 10 桌面版和 Windows 10 移动版的注册步骤已在公司门户网站中阐明。 用户现在将看到单独的“设备注册”和“工作区加入”步骤，从而在他们遇到工作区加入 (WPJ) 失败时更易于看到设备的状态以及完成此过程。 执行单独的步骤还可以简化 IT 管理员排除故障的过程。 以前，当最终用户尝试注册并且 WPJ 除外的所有注册步骤都成功时，已注册的设备将不出现在用户要标识的设备列表中，因而使用户感到困惑。
+使用条件性访问时，Windows 8.1、Windows 10 桌面版和 Windows 10 移动版的注册步骤已在公司门户网站中阐明。 用户现在将看到单独的“设备注册”和“工作区加入”步骤，从而在他们遇到工作区加入 (WPJ) 失败时更易于看到设备的状态以及完成此过程。 执行单独的步骤还可以简化 IT 管理员排除故障的过程。 以前，当最终用户尝试注册并成功完成 WPJ 以外的所有步骤时，已注册的设备将不会出现在设备列表中供用户识别，导致用户困惑。
 
 __Outlook Web Access (OWA)__
 - **Android 公司门户应用**<br/>
@@ -62,11 +62,11 @@ Android 设备不能再通过公司门户网站安装应用程序，除非使用
 
 __iOS__
 - **对 iOS 公司门户应用中设备注册管理器帐户的更改**<br/>
-若要提高性能和可扩展性，Intune 不再在 iOS 公司门户应用的“**我的设备**”窗格中显示所有设备注册管理器 (DEM) 设备。 仅显示运行该应用的本地设备，且仅限该设备通过公司门户应用注册的情况下。
+若要提高性能和可扩展性，Intune 不再在 iOS 公司门户应用的“**我的设备**”窗格中显示所有设备注册管理器 (DEM) 设备。 只会显示运行该应用的本地设备，并且要求设备已通过公司门户应用注册。
 
-DEM 用户可能会在本地设备上执行操作，但只能从 Intune 管理员控制台远程管理其他已注册设备。 此外，Intune 将不支持通过 Apple 设备注册计划或 Apple 配置器工具使用 DEM 帐户。 这两种注册方法均支持共享 iOS 设备的无用户注册。
+DEM 用户可以在本地设备上执行操作，但只能从 Intune 管理控制台对其他注册设备执行远程管理。 此外，Intune 即将弃用 DEM 帐户，而改用 Apple 设备注册计划或 Apple Configurator 工具。 这两种注册方法均支持共享 iOS 设备的无用户注册。
 
-当共享设备的无用户注册不可用时，仅使用 DEM 帐户。 有关详细信息，请参阅[使用 Microsoft Intune 中的“设备注册管理器”注册企业自有设备](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
+仅在共享设备无法使用无用户注册时才使用 DEM 帐户。 有关详细信息，请参阅[使用 Microsoft Intune 中的“设备注册管理器”注册企业自有设备](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
 <!---TFS 1233681--->
 
 ### <a name="change-of-names-for-windows-features"></a>对 Windows 功能名称的更改
@@ -94,7 +94,7 @@ Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一�
     * 必须由 Intune 进行管理
     * 必须符合任何已部署的 Intune 合规性策略
 
- 非合规设备的最终用户将被提示注册和修正任何合规性问题以获取访问权限。
+ 系统将提示不合规设备的最终用户先进行注册并修正任何合规性问题，才能获得访问权限。
 - **浏览器的条件性访问。** 可以为 [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) 设置条件访问策略，以便仅允许通过托管且合规的 iOS 和 Android 设备上受支持的 Web 浏览器对其进行访问。 系统将提示尝试使用 iOS 和 Android 设备登录 Outlook Web Access (OWA) 和 SharePoint 站点的最终用户先在 Intune 注册设备并修正任何不符合性问题，然后才能完成登录。
 <!---TFS 1175844--->
 
@@ -115,9 +115,9 @@ __Android 公司门户应用__
 
 __iOS 公司门户应用__
 
-- 当最终用户安装业务线应用时，现在它们将看到改进的应用安装体验。 如果应用安装要花很长时间，用户可以手动同步设备以强制继续同步过程。 若要查看最终用户说明，请参阅[手动同步 iOS 设备](/intune-user-help/sync-your-device-manually-ios)。
+- 当最终用户安装业务线应用时，现在它们将看到改进的应用安装体验。 如果应用安装费时较长，用户可以手动同步设备以强制同步过程继续进行。 若要查看最终用户说明，请参阅[手动同步 iOS 设备](/intune-user-help/sync-your-device-manually-ios)。
 
-- 适用于 iOS 的 Microsoft Intune 公司门户应用已更新，可支持 iOS 8.0 和更高版本。 此更新意味着，仅当设备正在运行 iOS 8.0 或更高版本时，最终用户才可在 Intune 中安装公司门户应用并注册新设备。 如果用户已注册运行不受支持的 iOS 版本的设备，则这些用户可以继续使用其设备上的公司门户应用。
+- 适用于 iOS 的 Microsoft Intune 公司门户应用已更新，可支持 iOS 8.0 和更高版本。 此更新意味着仅当设备正在运行 iOS 8.0 或更高版本时，最终用户才可安装公司门户应用并在 Intune 中注册新设备。 如果用户已注册运行不受支持的 iOS 版本的设备，则这些用户可以继续使用其设备上的公司门户应用。
 
 ## <a name="may-2016"></a>2016 年 5 月
 所有这些功能也受混合部署 (Configuration Manager with Intune) 支持。 有关新的混合功能的详细信息，请查看[混合新增功能](https://technet.microsoft.com/library/mt718155.aspx)页。
@@ -134,7 +134,7 @@ Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一�
 ### <a name="app-management"></a>应用管理
 - **MAM SDK：支持 PIN 长度配置。** 你将能够指定类似于设备 PIN 的 MAM 应用的 PIN 的长度。 这将要求最终用户符合你设置的新限制。 他们将看到一个稍经修改的 PIN 屏幕来解释较长输入。 有关详细信息，请参阅[适用于 Android 的 MAM 策略设置](/intune-classic/deploy-use/ios-mam-policy-settings)。
 
-- **Skype for Business iOS 版和 Android 版。** 你现在可以通过 [MAM 以 Skype for Business 为目标，而不需要注册策略](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。 用户登录后，将应用 MAM 策略。
+- **Skype for Business iOS 版和 Android 版。** 你现在可以通过 [MAM 以 Skype for Business 为目标，而不需要注册策略](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。 在用户登录后，系统将应用 MAM 策略。
 
 - **可通过 MAM 策略管理的新应用。** 适用于 Android 的 Microsoft Word、Excel 和 PowerPoint 应用现在可与未向 Intune 注册的设备上的 MAM 策略相关联。 有关支持的应用的完整列表，请转到 [Microsoft Intune application partners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)（Microsoft Intune 应用程序合作伙伴）页上的 Microsoft Intune mobile application gallery（Microsoft Intune 移动应用程序库）。
 
@@ -144,7 +144,7 @@ Intune 服务运行状态信息已随同其他 Microsoft 服务一起移到一�
 #### <a name="android-company-portal-app"></a>Android 公司门户应用
 - **最终用户 toast 通知**：当最终用户从公司门户注册设备或删除设备时，现在他们将会看到来自 Andoid 公司门户应用的 toast 通知。
 
-- **对 Android 公司门户应用中设备注册管理器帐户的更改。** 若要提高性能和可扩展性，Intune 不再在 Android 公司门户应用的“我的设备”窗格中显示所有设备注册管理器 (DEM) 设备。 仅显示运行该应用的本地设备，且仅限该设备通过公司门户应用注册的情况下。 DEM 用户可能会在本地设备上执行操作，但只能从 Intune 管理员控制台远程管理其他已注册设备。
+- **对 Android 公司门户应用中设备注册管理器帐户的更改。** 若要提高性能和可扩展性，Intune 不再在 Android 公司门户应用的“我的设备”窗格中显示所有设备注册管理器 (DEM) 设备。 仅显示运行该应用的本地设备，且仅限该设备通过公司门户应用注册的情况下。 DEM 用户可以在本地设备上执行操作，但只能从 Intune 管理控制台对其他注册设备执行远程管理。
 
 #### <a name="company-portal-website"></a>公司门户网站
 - **公司门户网站：设备标识横幅将向最终用户提供详细信息。** 最终用户现在能够更轻松地标识他们在使用公司门户网站时所选的设备。 如果选择了错误的设备，他们将能够通过点击主页标题栏中的**点击此处**链接选择正确的设备。
@@ -192,14 +192,14 @@ Intune 通知规则定义将从 Intune 向其发送电子邮件警报的人员�
 
 
 - **防止 Outlook 联系人同步的 MAM 控件 (Android)。**
-新设置可用于[移动应用程序管理](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune)，已保存至本机通讯簿的联系人将被删除。 最初，Android 设备上的 Outlook 应用程序支持此新设置。
+新设置可用于[移动应用程序管理](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune)，已保存至本机通讯簿的联系人将被删除。 此新设置最初由 Android 设备上的 Outlook 应用程序支持。
 
 ### <a name="device-management"></a>设备管理
 - **公司拥有的设备的电话号码标识。** 例如，当运行移动设备清单报表时，现在使用其完整的电话号码标识归类为“企业”的手机。 BYOD 电话号码将继续使用 **** 屏蔽，仅显示最后 4 位数字。
 
 
 ### <a name="company-portal-updates"></a>公司门户更新
-**Android 公司门户应用**未在 Intune 注册其设备和未安装正确证书的用户将不能登录到 Android 公司门户应用，并且会看到以下消息：“无法登录，因为设备缺少必需的证书”。 该消息包含“如何解决此问题”的链接，用户可以点击以查看关于安装证书的说明。 若要查看最终用户解决此问题的步骤，请参阅[设备缺少必需的证书](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_cert_missing)。
+**Android 公司门户应用**未在 Intune 注册其设备和未安装正确证书的用户将不能登录到 Android 公司门户应用，并且会看到以下消息：“无法登录，因为设备缺少必需的证书”。 该消息包含“如何解决此问题”的链接，用户可点击此链接查看安装证书的相关说明。 若要查看最终用户解决此问题的步骤，请参阅[设备缺少必需的证书](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_cert_missing)。
 
 **iOS 公司门户应用**已添加“下拉刷新”操作支持以刷新主页上的内容，其中包括列出的应用、设备以及 IT 联络信息。 “下列刷新”操作不会检查合规性或策略信息，这可以通过选择当前设备的磁贴，然后点击“同步”按钮来实现。
 

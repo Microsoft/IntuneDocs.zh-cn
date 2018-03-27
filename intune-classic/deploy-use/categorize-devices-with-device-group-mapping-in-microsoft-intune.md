@@ -1,25 +1,25 @@
 ---
-title: "使用设备组映射对设备进行分类"
-description: "使用 Microsoft Intune 设备组映射将设备分组为你定义的类别，以便更轻松地管理这些设备。"
-keywords: 
+title: 使用设备组映射对设备进行分类
+description: 使用 Microsoft Intune 设备组映射将设备分组为你定义的类别，以便更轻松地管理这些设备。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6783f0dbf21d8bb1e652522df7ae1f37cbf4ffd
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>使用 Microsoft Intune 中的设备组映射对设备进行分类
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 10/10/2017
 
 ## <a name="how-to-configure-device-group-mapping-for-intune-groups"></a>如何为 Intune 组配置设备组映射
 1. 针对要使用的每个设备类别，创建一个 Intune 设备组，或标识一个现有组。 有关如何创建组的信息，请参阅[通过 Microsoft Intune 使用组来管理用户和设备](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)。
-2. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**管理员**。
+2. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”。
 3. 在“管理”工作区中，展开“移动设备管理”，然后选择“设备组映射”。
 4. 在“设备组映射”页上，启用设备组映射。
 5. 选择“添加”以创建新的映射规则。

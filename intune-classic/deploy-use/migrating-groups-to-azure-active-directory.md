@@ -1,23 +1,23 @@
 ---
-title: "迁移到 Azure Active Directory 组"
-description: "如何将组从 Intune 迁移到 Azure AD"
-keywords: 
-author: arob98
+title: 迁移到 Azure Active Directory 组
+description: 如何将组从 Intune 迁移到 Azure AD
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angerobe
 ms.date: 12/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 5eb6a72abd28b566b7588e56647787dc669706bc
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: aac152f26ac3d91536c294dd1f62480fcc8f7db6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="a-new-way-of-using-groups-in-intune"></a>Intune 中一种使用组的新方法
 

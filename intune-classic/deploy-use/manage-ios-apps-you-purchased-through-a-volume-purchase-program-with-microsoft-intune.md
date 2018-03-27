@@ -1,25 +1,25 @@
 ---
-title: "管理批量采购的 iOS 应用"
-description: "使用 Intune 通过以下操作管理从 Apple 批量购买的应用：从应用商店导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。"
-keywords: 
+title: 管理批量采购的 iOS 应用
+description: 使用 Intune 通过以下操作管理从 Apple 批量购买的应用：从应用商店导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 10/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5140d2fa04a229dda0896a74333801899f5946e2
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 2b05007a7c2d6fa1719b0f298f0e7981e735042e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 应用
 
@@ -27,23 +27,23 @@ ms.lasthandoff: 10/11/2017
 
 iOS 应用商店允许你为想要在公司运行的应用购买多个许可证。 这有助于降低跟踪多个已购买应用副本的管理成本。
 
-Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应用：从应用商店中导入许可证信息、跟踪已使用的许可证的数量，以及阻止安装超出你所拥有的应用的更多副本。
+使用 Microsoft Intune，可以从 App Store 导入许可证信息、跟踪已使用的许可证数量，并能阻止安装不拥有的应用副本，从而有助于你管理通过此计划购买的应用。
 
 > [!Important]
 > 目前，Intune 将 iOS Volume Purchase Program 企业版 (VPP) 应用许可证分配给用户和设备。 因此，用户可能必须输入其 Apple ID 密码才能安装应用。
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理批量采购的适用于 iOS 设备的应用程序
-通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)购买多个 iOS 应用许可证。 这涉及到从 Apple 网站设置一个 Apple VPP 帐户并将 Apple VPP 令牌上载到 Intune。  然后你可以将你的批量购买信息与 Intune 同步并追踪你的批量购买的应用的使用情况。
+通过 [Apple Volume Purchase Program 企业版](http://www.apple.com/business/vpp/)购买多个 iOS 应用许可证。 为此，需要在 Apple 网站中创建 Apple VPP 帐户，然后将 Apple VPP 标记上载到 Intune 中。  然后，可以将批量购买信息与 Intune 同步，并跟踪批量购买应用的使用情况。
 
 ## <a name="before-you-start"></a>开始之前
-在开始之前，你需要从 Apple 中获取 VPP 令牌并将其上载到 Intune 帐户。 此外，你应了解以下内容：
+开始前，需要先从 Apple 获取 VPP 标记，并将其上载到 Intune 帐户中。 此外，还应了解以下注意事项：
 
 * Intune 支持最多添加 256 个 VPP 令牌。
-* 如果你以前使用过不同产品的 VPP 令牌，必须生成一个新的令牌在 Intune 中使用。
+* 如果以前对其他产品使用过 VPP 标记，必须生成用于 Intune 的新标记。
 * 每个令牌的有效期为一年。
-* 默认情况下，Intune 与 Apple VPP 服务一天同步两次。 可以随时开始手动同步。
-* 将 VPP 令牌导入 Intune 之后，不要将同一令牌导入任何其他设备管理解决方案。 这样做可能导致许可证分配和用户记录丢失。
-* 在开始将 iOS VPP 与 Intune 配合使用之前，先删除使用其他移动设备管理 (MDM) 供应商创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步 Apple VPP 服务中由 Intune 创建的数据。
+* 默认情况下，Intune 每天与 Apple VPP 服务同步两次。 可以随时启动手动同步。
+* 将 VPP 标记导入 Intune 后，请勿将同一标记导入其他任何设备管理解决方案中。 这样做可能会丢失许可证分配和用户记录。
+* 开始将 iOS VPP 用于 Intune 前，请删除与其他移动设备管理 (MDM) 供应商一起创建的任何现有 VPP 用户帐户。 为保障安全，Intune 不会将这些用户帐户同步到 Intune。 Intune 只会同步 Intune 创建的 Apple VPP 服务数据。
 * 如果配置了设备的用户关联，则只能将 iOS VPP 应用部署到使用设备注册协议 (DEP) 注册的用户设备。
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
@@ -75,7 +75,7 @@ Microsoft Intune 可帮助你通过以下操作管理通过此计划购买的应
 
 若要回收许可证，必须将部署操作更改为“卸载”。 卸载应用后，将回收许可证。
 
-具有符合条件的设备的用户首次尝试安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 继续安装应用前，他们必须执行此操作。
+当具有符合条件的设备的用户首次安装 VPP 应用时，系统会要求其加入 Apple Volume Purchase Program。 用户必须先执行此操作，然后才能继续安装应用。
 
 如果没有更多的许可证可用，则部署将失败。
 

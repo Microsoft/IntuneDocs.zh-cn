@@ -1,25 +1,25 @@
 ---
-title: "对 O365 进行基于应用的条件性访问"
-description: "了解 MAM CA 如何帮助控制有权访问 O365 服务的应用的概念。"
-keywords: 
+title: 对 O365 进行基于应用的条件性访问
+description: 了解 MAM CA 如何帮助控制有权访问 O365 服务的应用的概念。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/05/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: b0b0fbfce086729551b211dd4bc4b83348aa4787
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>仅允许支持 Intune 应用保护策略的移动应用访问 Office 365 服务
 

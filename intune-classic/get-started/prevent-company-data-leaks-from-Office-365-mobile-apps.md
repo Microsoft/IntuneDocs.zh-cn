@@ -1,25 +1,25 @@
 ---
-title: "阻止公司数据从 Office 365 移动应用中泄露"
-description: "可通过 Intune，使用移动应用管理 (MAM) 策略保护组织的数据，此策略可防止公司数据从 Office 365 移动应用或其他业务线 (LOB) 应用中泄露。"
-keywords: 
+title: 阻止公司数据从 Office 365 移动应用中泄露
+description: 可通过 Intune，使用移动应用管理 (MAM) 策略保护组织的数据，此策略可防止公司数据从 Office 365 移动应用或其他业务线 (LOB) 应用中泄露。
+keywords: ''
 author: jeffgilb
 ms.author: jeffgilb
-manager: angrobe
+manager: dougeby
 ms.date: 11/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3556c130402292450efc26f13f624861322e5ae7
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>快速入门指南：阻止公司数据从 Office 365 移动应用中泄露
 
@@ -37,7 +37,7 @@ Microsoft Intune 可以使用移动应用管理 (MAM) 策略帮助你保护组�
 2.  了解在 Azure 门户中[创建 MAM 策略之前需要执行的操作](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
 3.  使用 Intune [创建和部署 MAM 策略](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
 
-### <a name="additional-information"></a>其他信息:
+### <a name="additional-information"></a>其他信息：
 - 使用启用 MAM 的应用的[最终用户体验](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)。
 - [使用 Intune 准备适用于 MAM 的 LOB 应用](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">Microsoft Intune 应用程序合作伙伴列表 &rarr;</a> 提供启用了 MAM 的应用。

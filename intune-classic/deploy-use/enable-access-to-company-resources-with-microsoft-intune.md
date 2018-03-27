@@ -1,25 +1,25 @@
 ---
-title: "启用对公司资源的访问"
-description: "Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对所需文件和资源的访问权限。"
-keywords: 
+title: 启用对公司资源的访问
+description: Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对所需文件和资源的访问权限。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3d1b8cff396f6a78d635d96b936a1bb155ca198
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 170163a6edd372a92e04762d1ba7a1a9a420160c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>使用 Microsoft Intune 启用对公司资源的访问
 

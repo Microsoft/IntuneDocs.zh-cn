@@ -4,7 +4,7 @@ description: 本主题介绍适用于 Android 设备的移动应用管理策略�
 keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 04/18/2016
 ms.topic: article
 ms.prod: ''
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dc65dd5ef170bff4cb1d1c126fa1549b7a357276
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: ca72391720023720cec43234d599e23888e1cc59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/20/2018
 
 ##  <a name="data-relocation-settings"></a>数据重定位设置
 
-| Setting | 如何使用 | 默认值 |
+| 设置 | 如何使用 | 默认值 |
 |------|------|------|
 | **阻止 Android 备份** | 选择“是”，阻止此应用将工作或学校数据备份到 [Android 备份服务](https://developer.android.com/google/backup/index.html)。选择“否”，允许此应用备份工作或学校数据。| 是 |
 | **允许应用向其他应用传送数据** | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> <p>有一些豁免应用和服务，Intune 可能会允许向其传输数据。 有关应用和服务的完整列表，请参阅[数据传输豁免](#Data-transfer-exemptions)。| 所有应用 |
@@ -41,7 +41,7 @@ ms.lasthandoff: 03/20/2018
 | **阻止“另存为”** | 选择“是”，在此应用中禁用“另存为”选项。 如果你希望允许使用“另存为”，请选择“否”。 <p><br>**选择可保存公司数据的存储服务** <br>用户可以保存到所选的服务（OneDrive for Busines、SharePoint 和本地存储）中。 将阻止所有其他服务。</p> | 否 <br><br> 未选择任何项 |
 | **限制剪切、复制和粘贴到其他应用程序** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。 | 任何应用 |
 |**限制显示在 Managed Browser 内的 Web 内容** | 选择“是”，强制在 Managed Browser 应用中打开应用中的 Web 链接。 <br><br> 对于未在 Intune 中注册的设备，策略托管应用中的 Web 链接将仅可在 Managed Browser 应用中打开。 <br><br> 如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](manage-internet-access-using-managed-browser-policies.md)。 | 否 |
-| **加密应用数据** | 选择“是”，在此应用中启用工作或学校数据加密。 Intune 使用 OpenSSL 128 位 AES 加密方案和 Android Keystore 系统安全加密应用数据。 数据在文件 I/O 任务期间同步加密。 始终加密设备存储中的内容。 <br><br> 加密方法**没有**获得 FIPS 140-2 认证。  | 是 |
+| **加密应用数据** | 选择“是”，在此应用中启用工作或学校数据加密。 Intune 使用 OpenSSL 128 位 AES 加密方案和 Android Keystore 系统安全加密应用数据。 数据在文件 I/O 任务期间同步加密。 设备存储中的内容始终处于加密状态。 <br><br> 加密方法**没有**获得 FIPS 140-2 认证。  | 是 |
 | **禁用联系人同步** | 选择“是”，阻止应用将数据保存到设备上的本机“联系人”应用。 如果选择“否”，应用可将数据保存到设备上的本机“联系人”应用。 <br><br>执行选择性擦除从应用删除工作或学校数据时，将删除从应用直接同步到本机“联系人”应用的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 目前仅适用于 Microsoft Outlook 应用。 | 否 |
 | **禁用打印** | 选择“是”，阻止应用打印工作或学校数据。 | 否 |
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/20/2018
 
   完全允许这些应用和服务向 Intune 托管应用传输数据或从其接收数据。
 
-  |应用/服务名称 | 描述 |
+  |应用/服务名称 | 说明 |
   | ------ | ---- |
   | com.android.phone | 本机电话应用
   | com.android.vending | Google Play Store |
@@ -72,7 +72,7 @@ ms.lasthandoff: 03/20/2018
   ### <a name="conditional-exemptions"></a>有条件的豁免
   只有在某些条件下，才允许这些应用和服务向 Intune 托管应用传输数据或从其接收数据。
 
-  |应用/服务名称 | 描述 | 豁免条件|
+  |应用/服务名称 | 说明 | 豁免条件|
   | ------ | ---- | --- |
   | com.android.chrome | Google Chrome 浏览器 | Chrome 用于 Android 7.0 及更高版本上的某些 WebView 组件，并且永远不会从视图中隐藏。 但是，该应用发出和收到的数据流始终受限。
   | com.skype.raider | Skype | Skype 应用仅允许执行引发电话呼叫的某些操作。 |
@@ -83,7 +83,7 @@ ms.lasthandoff: 03/20/2018
 
 ##  <a name="access-settings"></a>访问设置
 
-| Setting | 如何使用 | 默认值 |
+| 设置 | 如何使用 | 默认值 |
 |------|------|------|
 | **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 默认值 = **5**。</li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234 或 1111。 选择“否”，阻止用户使用简单的序列。 默认值 = **是**。 </li><li> **PIN 长度**：指定 PIN 序列必须包含的最小位数。 默认值 = **4**。 </li><li> **允许指纹而非 PIN (Android 6.0+)：**选择“是”，允许用户使用[指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 进行应用访问。 默认值 = **是**。</li></ul> 在 Android 设备上，可允许用户通过 [Android 指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 证明其身份。 用户尝试通过其工作或学校帐户使用此应用时，会提示他们提供其指纹标识而不是输入 PIN。 </li></ul>| 需要 PIN：是 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 |
 | **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 如果将其设置为“是”，则此设置将替代 PIN 或 Touch ID 的要求。  | 否 |

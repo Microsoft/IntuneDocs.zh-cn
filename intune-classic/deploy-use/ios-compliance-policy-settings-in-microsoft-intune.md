@@ -1,25 +1,25 @@
 ---
-title: "适用于 iOS 设备的符合性策略设置"
-description: "本主题介绍可在 iOS 设备的合规性策略中设置的规则和设置。"
-keywords: 
+title: 适用于 iOS 设备的符合性策略设置
+description: 本主题介绍可在 iOS 设备的合规性策略中设置的规则和设置。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cd64a833aa9dbddd2e85dbc427f5c5d5d2bca64
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 7973dd757c69bc0a63f1ff5d24973acb6086d8a4
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 iOS 设备的合规性策略设置
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/10/2017
   -   小写字母
   -   大写字母
   -   符号
-  -   数字
+  -   号码
 
   设置的数字越大，要求用户创建的密码越复杂。
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/10/2017
 - **设备从空闲状态返回时需要密码**：与“要求提供密码之前的非活动分钟数”设置一起使用此设置。 设备在“要求提供密码之前的非活动分钟数”设置指定的时间内处于非活动状态时，将提示用户输入密码才能访问设备。
 
 ### <a name="email-profile"></a>电子邮件配置文件
-- **必须由 Intune 管理电子邮件帐户：**如果该选项设置为“是”，则设备必须使用部署到设备的电子邮件配置文件。 在以下情况中设备被视为不符合要求：
+- **必须由 Intune 管理电子邮件帐户：**如果该选项设置为“是”，则设备必须使用部署到设备的电子邮件配置文件。 在下列情况下，设备被视为不合规：
   - 电子邮件配置文件部署到合规性策略目标外的用户组。
   - 用户已在设备上设置了电子邮件帐户，且该帐户与部署到该设备的 Intune 电子邮件配置文件相匹配。 Intune 不能覆盖用户设置的配置文件，因此无法管理它。 若要确保合规性，用户必须删除现有电子邮件设置。 然后，Intune 可以安装托管的电子邮件配置文件。
 
@@ -78,6 +78,6 @@ ms.lasthandoff: 10/10/2017
 
 ##  <a name="device-properties"></a>设备属性
 - **所需的最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。
-将显示一个链接，链接中包含有关如何升级的信息。 用户可以选择升级其设备。 然后可访问公司资源。
+将显示一个链接，其中包含有关如何升级的信息。 用户可以选择升级其设备。 然后可访问公司资源。
 
 - **允许的最高 OS 版本**：设备使用的 OS 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。

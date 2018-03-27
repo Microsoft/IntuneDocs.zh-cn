@@ -1,23 +1,23 @@
 ---
-title: "Microsoft Intune 术语表"
+title: Microsoft Intune 术语表
 titleSuffix: Microsoft Intune
-description: "了解 Microsoft Intune 中使用的术语的含义。"
-keywords: 
+description: 了解 Microsoft Intune 中使用的术语的含义。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 07/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: d1b92613b127ccb21146f9d5f973eb1a25213792
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
 了解 Microsoft Intune 中使用的常用术语的定义。
@@ -48,7 +48,7 @@ ms.lasthandoff: 03/05/2018
 |-|-|
 |证书配置文件|使用 Wi-Fi、电子邮件或 VPN 配置文件时，可使用此策略类型，通过证书[安全访问公司资源](/intune/certificates-configure)。|
 |COD|可用多种方式注册[公司拥有的设备](/intune/device-enrollment)，具体可取决于组织的需求和待管理设备的类型。|
-|Company Portal|一种向用户提供[公司数据和应用程序访问](/intune/company-portal-customize)的应用或网站。|
+|公司门户|一种向用户提供[公司数据和应用程序访问](/intune/company-portal-customize)的应用或网站。|
 |合规性策略|确保设备[符合特定规则](/intune/device-compliance)，例如使用 PIN 访问设备，以及加密存储在设备上的数据。|
 |符合和不符合要求的应用程序|[设备限制配置文件](/intune/device-restrictions-configure)的一部分，这些设置可让你定义一个应用列表，规定用户可以或不可以运行的应用。 然后，Intune 通过报告通知你， 报告安装或运行了不合规应用。 对于一些平台，Intune 可阻止安装不合规应用。|
 |条件性访问|仅允许符合设定规则的设备[访问公司电子邮件、Office 365 和其他服务](/intune/conditional-access)。|
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/05/2018
 |||
 |-|-|
 |部署|向管理的设备或用户发送应用或策略的操作。 此操作现在称为*分配*。|
-|设备注册管理员|组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 [设备注册管理员 (DEM) 帐户](/intune/device-enrollment-program-enroll-ios)是一个特殊的 Intune 帐户，可以注册多达 1,000 台设备。|
+|设备注册管理器|组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 [设备注册管理员 (DEM) 帐户](/intune/device-enrollment-program-enroll-ios)是一个特殊的 Intune 帐户，可以注册多达 1,000 台设备。|
 |设备配置文件|[这些配置文件](/intune/device-profile-create)可让你在所管理的设备上配置一系列安全性、功能和访问设置。|
 
 ## <a name="e"></a>E
@@ -139,7 +139,7 @@ ms.lasthandoff: 03/05/2018
 |-|-|
 |TeamViewer|一个第三方应用程序，可与 Intune 配合使用，为通过 Intune 进行管理的 Android 设备提供[远程协助功能](/intune/device-profile-android-teamviewer)。|
 |租户|可使用订阅进行访问的 Intune 服务的单个实例。|
-|条款和条件|一种分配给用户的策略类型，包含用户必须[阅读并同意](/intune/terms-and-conditions-create)的信息，之后，用户才能使用公司门户注册和访问工作。|
+|Terms and conditions|一种分配给用户的策略类型，包含用户必须[阅读并同意](/intune/terms-and-conditions-create)的信息，之后，用户才能使用公司门户注册和访问工作。|
 
 ## <a name="v"></a>V
 |||

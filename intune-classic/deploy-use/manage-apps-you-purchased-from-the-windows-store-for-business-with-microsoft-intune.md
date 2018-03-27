@@ -1,25 +1,25 @@
 ---
-title: "管理适用于企业的 Microsoft 应用商店应用"
-description: "如果要从 Intune 控制台对批量购买的应用进行管理和部署，请将 Microsoft Intune 连接到适用于企业的 Microsoft 应用商店"
-keywords: 
+title: 管理适用于企业的 Microsoft 应用商店应用
+description: 如果要从 Intune 控制台对批量购买的应用进行管理和部署，请将 Microsoft Intune 连接到适用于企业的 Microsoft 应用商店
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2de00bab670cd414d10750bb6f7f05283ea8bff3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
@@ -48,13 +48,13 @@ ms.lasthandoff: 10/10/2017
 3. 在“管理工具”页上选择“添加管理工具”，然后选择“Microsoft Intune”。
 
 > [!NOTE]
-> 使用多个管理工具部署适用于企业的 Microsoft 应用商店时，以前只能将一个管理工具与适用于企业的 Microsoft 应用商店关联。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
+> 使用多个管理工具部署适用于企业的 Microsoft 应用商店时，以前只能将一个管理工具与适用于企业的 Microsoft 应用商店关联。 现在可将多种管理工具与该应用商店关联，例如 Intune 和 Configuration Manager。
 
 现在可以继续，并在 Intune 控制台中设置同步。
 
 ## <a name="configure-synchronization"></a>配置同步
 
-1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**管理员**。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”。
 2. 在“管理”工作区中，展开“移动设备管理” > “Windows”，然后选择“适用于企业的应用商店”。
 3. 在“适用于企业的 Microsoft 应用商店”页上，执行以下操作：
  * 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接。
@@ -79,7 +79,7 @@ ms.lasthandoff: 10/10/2017
 * 从适用于企业的 Microsoft 应用商店中购买应用的更多副本。
 
 > [!Important]
-> 已部署的应用程序仅可用于最初注册了该设备的用户。 其他用户不能访问该应用。
+> 已部署的应用程序仅可用于最初注册了该设备的用户。 其他任何用户都无法访问该应用。
 
 
 ### <a name="see-also"></a>另请参阅

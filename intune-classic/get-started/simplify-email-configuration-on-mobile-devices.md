@@ -1,25 +1,25 @@
 ---
-title: "简化移动设备上的电子邮件配置"
-description: 
-keywords: 
+title: 简化移动设备上的电子邮件配置
+description: ''
+keywords: ''
 author: jeffgilb
 ms.author: jeffgilb
-manager: angrobe
+manager: dougeby
 ms.date: 12/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ffa50aaf60af5b4f7253b397fbb8e3c18cce61
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 8e11ae063bc2cc302af238ab9062da82c6b6c30c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>快速入门指南：简化移动设备上的电子邮件配置
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 01/12/2018
 2.  使用条件访问策略[控制对公司电子邮件的访问](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
 
-### <a name="additional-information"></a>其他信息:
+### <a name="additional-information"></a>其他信息：
 [Intune 设备设置和安全性](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
 
 ## <a name="what-should-i-do-next"></a>接下来我该怎么办？
