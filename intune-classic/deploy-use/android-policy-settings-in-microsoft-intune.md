@@ -1,25 +1,25 @@
 ---
-title: "Android 和 Samsung KNOX 策略设置"
-description: "创建控制通过 Intune 管理的 Android 设备上的设置及功能的策略。"
-keywords: 
+title: Android 和 Samsung KNOX 策略设置
+description: 创建控制通过 Intune 管理的 Android 设备上的设置及功能的策略。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 和 Samsung KNOX 标准版策略设置
 
@@ -33,7 +33,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 
 -   **移动设备安全设置** – 从让你能够控制设备上的一系列功能的预定义设置列表中选择。
 
--   **展台模式**（仅适用于 Samsung KNOX 标准版设备）– 锁定设备以只允许某些功能工作。 例如，你可以让设备只运行一个指定的托管应用，也可以禁用设备上的音量按钮。 这些设置可用于设备的演示模型，也可用于专门执行一个功能的设备（如销售点设备）。
+-   **展台模式**（仅适用于 Samsung KNOX 标准版设备）– 锁定设备以只允许某些功能工作。 例如，可以让设备只运行一个指定的托管应用，也可以禁用设备上的音量按钮。 这些设置可用于设备的演示模型，也可用于专门执行一个功能的设备（如销售点设备）。
 
 -   **相容和不相容应用** - 指定在你的公司中相容或不相容的应用列表。 在 Android 和 iOS 设备上，“**不相容应用报告**”可用于查看你在列表中指定的应用对于用户已经安装的应用的相容性。 该报表不能实际阻止应用的安装。
 
@@ -51,7 +51,7 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 |**擦除设备前允许的重复登录失败次数**|指定在擦除设备前允许的登录失败次数。|是|是|
 |**屏幕关闭前处于不活动状态的分钟数**|指定设备自动锁定之前处于非活动状态的分钟数。|是|是|
 |**密码过期（天数）**|指定必须更改密码前的天数。|是|是|
-|**记住密码历史记录**|指定要记住的以前所用密码的数量。|是|是|
+|**记住密码历史**|指定要记住的以前所用密码的数量。|是|是|
 |**“记住密码历史记录”** - **“防止重用以前的密码”**|防止重用以前的密码。|是|是|
 |**密码质量**|指定所需的密码复杂性级别以及是否可以使用生物识别设备。|是|是|
 |**允许指纹解锁**|允许使用指纹对设备解锁。|否|是|
@@ -88,10 +88,10 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|-----|-----------|----------------|
-|**允许 Web 浏览器**|指定是否可以使用设备的默认 Web 浏览器。|否|是|
+|**允许使用 Web 浏览器**|指定是否可以使用设备的默认 Web 浏览器。|否|是|
 |**允许自动填充**|允许使用 Web 浏览器的自动填充功能。|否|是|
-|**允许使用弹出窗口阻止程序**|允许使用 Web 浏览器中的弹出窗口阻止程序。|否|是|
-|**允许使用 Cookie**|允许设备 Web 浏览器使用 Cookie。|否|是|
+|**允许使用弹出窗口阻止程序**|允许在 Web 浏览器中使用弹出窗口阻止程序。|否|是|
+|**允许使用 Cookie**|允许设备 Web 浏览器使用 cookie。|否|是|
 |**允许使用活动脚本**|允许设备 Web 浏览器使用活动脚本。|否|是|
 
 ### <a name="application-settings---apps"></a>应用设置 - 应用程序
@@ -105,10 +105,10 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|-----|-----------|----------------|
 |**允许照相机**|允许使用设备相机。|是|是|
-|**允许可移动存储**|允许设备使用可移动存储，如 SD 卡。|否|是|
+|**允许使用可移动存储**|允许设备使用可移动存储，如 SD 卡。|否|是|
 |**允许 Wi-Fi**|允许使用设备的 Wi-Fi 功能。|否|是|
-|**允许 Wi-Fi tethering**|允许在设备上使用 Wi-Fi Tethering。|否|是|
-|**允许地理位置**|允许设备利用位置信息。|否|是|
+|**允许使用 Wi-Fi tethering**|允许在设备上使用 Wi-Fi Tethering。|否|是|
+|**允许使用地理位置**|允许设备利用位置信息。|否|是|
 |**允许 NFC**|允许使用近场通信（如果设备支持）的操作。|否|是|
 |**允许蓝牙**|允许在设备上使用蓝牙。|否|是|
 |**允许关闭电源**|允许用户关闭设备电源。<br /><br />如果禁用了此设置，则 Samsung KNOX 标准版设备的“擦除设备前允许重复登录失败的次数”设置不起作用。|否|是|
@@ -117,9 +117,9 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 
 |设置名|详细信息|Android 4.0+|Samsung KNOX 标准版|
 |----------------|---|-------------|----------------|
-|**允许语音漫游**|当设备处于移动电话网络中时允许语音漫游。|否|是|
+|**允许语音漫游**|设备位于移动电话网络时，允许语音漫游。|否|是|
 |**允许数据漫游**|当设备处于移动电话网络中时允许数据漫游。|否|是|
-|**允许 SMS/MMS 消息传送**|允许在设备上使用短信和彩信消息传送。|否|是|
+|**允许 SMS/MMS 消息传送**|允许在设备上使用 SMS 和 MMS 消息。|否|是|
 
 ### <a name="device-capabilities-settings---features"></a>设备性能设置 - 功能
 
@@ -175,13 +175,13 @@ Intune 提供了一系列内置常规设置，你可以在 Android 设备上进�
 
 打开应用的安装页面，然后将 URL 复制到剪贴板。 你现在可以在符合或不符合要求的应用列表中使用这个 URL。
 
-示例：搜索适用于 Microsoft Office Mobile 的 Google Play。 你使用的 URL 将为 **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**。
+示例：搜索适用于 Microsoft Office Mobile 的 Google Play。 将要使用的 URL 为 https://play.google.com/store/apps/details?id=com.microsoft.office.officehub。
 
 ## <a name="custom-policy-settings"></a>自定义策略设置
 使用 Microsoft Intune 的 **Android 自定义配置策略**来部署可用于控制 Android 设备功能的 OMA URI 设置。 这些设置是许多移动设备制造商用来控制设备功能的标准设置。
 
-此功能旨在使你能够部署不能使用 Intune 策略配置的 Android 设置。
-Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题的示例，查找可配置的策略。
+此功能旨在方便你部署无法通过 Intune 策略配置的 Android 设置。
+目前，Intune 支持的 Android 自定义策略数量有限。 请参阅本主题中的示例，了解可以配置哪些策略。
 
 ### <a name="general-settings"></a>常规设置
 
@@ -196,7 +196,7 @@ Intune 目前支持有限数量的 Android 自定义策略。 请参阅本主题
     |--------|--------------------|
     | **设置名称** |输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。|
     | **设置描述** |提供对设置进行概述的说明以及帮助你找到该设置的其他相关信息。|
-    | **数据类型** |选择将在其中指定此 OMA-URI 设置的日期类型。 从“字符串、字符串 (XML)、日期和时间、整数、浮点”，或者“布尔值”中进行选择。|
+    | **数据类型** |选择指定此 OMA-URI 设置时使用的数据类型。 从“字符串、字符串 (XML)、日期和时间、整数、浮点”，或者“布尔值”中进行选择。|
     | **OMA-URI（区分大小写）** |指定需为其提供设置的 OMA-URI。|
     | **值** |指定要与之前指定的 OMA-URI 关联的值。|
 

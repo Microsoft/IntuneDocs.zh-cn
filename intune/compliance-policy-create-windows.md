@@ -1,23 +1,22 @@
 ---
-title: "在 Microsoft Intune 中创建 Windows 设备符合性策略"
-titleSuffix: 
-description: "为 Windows 设备创建 Microsoft Intune 设备符合性策略，让用户能够指定设备必须满足的符合性要求。"
-keywords: 
+title: 在 Microsoft Intune 中创建 Windows 设备符合性策略 - Azure | Microsoft Docs
+description: 为 Windows 设备创建 Microsoft Intune 设备符合性策略，让用户能够指定设备必须满足的符合性要求。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中创建适用于 Windows 设备的设备符合性策略
 
@@ -134,7 +133,7 @@ ms.lasthandoff: 03/08/2018
 
 对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过 8 个字符或者“最小字符集数”大于 2 个字符，则无法正确评估符合性策略。
 
-- **所需密码类型：**在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。
+- **所需密码类型：**在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持
 
 指定用户是否必须创建**字母数字**或**数字**密码。
 
@@ -177,7 +176,7 @@ ms.lasthandoff: 03/08/2018
 
 - **所需的最低操作系统：** - 在 Windows 8.1 和 Windows 10 上受支持。
 
-在此处指定 major.minor.build 编号。 版本号必须与 ```winver``` 命令返回的版本一致。
+在此处指定 major.minor.build.CU 编号。 版本号必须与 ```winver``` 命令返回的版本一致。
 
 如果设备的操作系统版本比指定的版本低，它将被报告为不符合。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 

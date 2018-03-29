@@ -1,25 +1,25 @@
 ---
-title: "如何配置公司门户应用"
+title: 如何配置公司门户应用
 titleSuffix: Microsoft Intune
-description: "了解如何将特定于公司的品牌应用到 Intune 公司门户应用。"
-keywords: 
+description: 了解如何将特定于公司的品牌应用到 Intune 公司门户应用。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd876739fb0f3ad6d2e0fea705825a26ebc9fe03
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 03/02/2018
 |**公司名称**|40|此名称显示为公司门户的标题。|        
 |**IT 部门联系人姓名**|40|此名称显示在“联系 IT”页上。|      
 |**IT 部门的电话号码**|20|此联系人号码显示在“联系 IT”页上。|        
-|IT 部门的电子邮件地址|40|此联系人地址显示在“联系 IT”页上。 必须以 **alias@domainname.com** 格式输入有效的电子邮件地址。|     
+|**IT 部门的电子邮件地址**|40|此联系人地址显示在“联系 IT”页上。 必须以 **alias@domainname.com** 格式输入有效的电子邮件地址。|     
 |**其他信息**|120|显示在“联系 IT”页上。|      
-|**公司隐私声明 URL**|79|你可以指定自己的公司隐私声明，当用户从公司门户中单击隐私链接时，该隐私声明将出现。 必须以 **https://www.contoso.com** 格式输入有效的 URL。|        
+|**公司隐私声明 URL**|79|你可以指定自己的公司隐私声明，当用户从公司门户中单击隐私链接时，该隐私声明将出现。 你必须以 https://www.contoso.com 格式输入有效的 URL。|        
 
 ## <a name="support-contacts"></a>支持联系人     
 在公司门户向用户显示支持网站，以使他们能够访问在线支持。        
@@ -52,7 +52,7 @@ ms.lasthandoff: 03/02/2018
 
 |字段名称|最大长度|更多信息|        
 |-|-|-|     
-|**支持网站 URL**|150|如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 **https://www.contoso.com** 格式。如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。|        
+|**支持网站 URL**|150|如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 https://www.contoso.com格式。如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。|        
 |**支持网站名称**|40|此名称是为支持网站的 URL 显示的友好名称。 如果指定支持网站 URL 而不指定友好名称，则公司门户中的“联系 IT 部门”页上将显示“转到 IT 网站”。       
 
 ## <a name="company-branding-customization"></a>公司品牌自定义       

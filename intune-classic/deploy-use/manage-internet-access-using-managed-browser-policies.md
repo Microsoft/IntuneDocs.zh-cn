@@ -1,25 +1,25 @@
 ---
-title: "使用 Managed Browser 应用管理 Web 访问"
-description: "部署托管浏览器应用程序以限制 Web 浏览和传输到其他应用的 Web 数据传输。"
-keywords: 
+title: 使用 Managed Browser 应用管理 Web 访问
+description: 部署托管浏览器应用程序以限制 Web 浏览和传输到其他应用的 Web 数据传输。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a8b928de0bc9dddc35da188ad619b35541027364
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -99,7 +99,7 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>允许的 URL 和阻止的 URL 的格式
 使用以下信息来了解有关指定允许和阻止列表中的 URL 时允许使用的格式和通配符：
 
--   可以根据以下允许模式列表中的规则使用通配符 (**&#42;**)。
+-   可以根据以下允许模式列表中的规则使用通配符 (*)。
 
 -   在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
 
@@ -109,7 +109,7 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 
     -   对于 https，使用端口 443
 
-    不支持对端口号使用通配符。 例如，**http&colon;//www&period;contoso&period;com:*;** 和 **http&colon;//www&period;contoso&period;com: /*;** 不受支持。
+    不支持对端口号使用通配符。 例如，不支持 http&colon;//www&period;contoso&period;com:*; 和 http&colon;//www&period;contoso&period;com: /*;。
 
 -   使用下表了解指定 URL 时可以使用的允许模式：
 
@@ -117,12 +117,12 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
     |-------|---------------|-----------|------------------|
     |http://www.contoso.com|匹配单个页面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
     |http://contoso.com|匹配单个页面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|匹配以 www.contoso.com 开头的所有 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+    |http://www.contoso.com/&#42；|匹配以 www.contoso.com 开头的所有 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
     |http://&#42;.contoso.com/&#42;|匹配 contoso.com 下的所有子域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
     |http://www.contoso.com/images|匹配单个文件夹|www.contoso.com/images|www.contoso.com/images/dogs|
     |http://www.contoso.com:80|匹配单个页面（使用端口号）|http://www.contoso.com:80||
     |https://www.contoso.com|匹配单个安全页面|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|匹配单个文件夹和所有子文件夹|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+    |http://www.contoso.com/images/&#42；|匹配单个文件夹和所有子文件夹|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   以下是一些你不能指定的输入的示例：
 
@@ -142,7 +142,7 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 
     -   http://&#42;
 
-    -   http://www.contoso.com:&#42;
+    -   http://www.contoso.com:&#42；
 
     -   http://www.contoso.com: /&#42;
 

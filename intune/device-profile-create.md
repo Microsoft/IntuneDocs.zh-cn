@@ -1,24 +1,24 @@
 ---
-title: "在 Microsoft Intune 中创建设备配置文件 - Azure | Microsoft Docs"
-description: "在 Microsoft Intune 中添加或配置设备配置文件，包括选择平台类型以及在 Azure 门户内配置设置"
-keywords: 
+title: 在 Microsoft Intune 中创建设备配置文件 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中添加或配置设备配置文件，包括选择平台类型以及在 Azure 门户内配置设置。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4e1febb5f12de038d2ddd543be883f71ef79005
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
@@ -27,12 +27,12 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-the-profile"></a>创建配置文件
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，然后搜索“Microsoft Intune”。
 
-2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”和“创建配置文件”。
+2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”。 然后选择“创建配置文件”。
 
 3. 输入以下属性：
 
-    - **名称**：输入新配置文件的描述性名称
-    - **说明**：可选，但建议输入。 输入配置文件的说明。
+    - **名称**：输入新配置文件的描述性名称。
+    - **说明**：输入配置文件的说明。 （这是可选的，但建议使用它。）
     - **平台**：选择平台类型：  
 
         - **Outlook Web Access (OWA)**
@@ -41,7 +41,7 @@ ms.lasthandoff: 03/08/2018
         - **macOS**
         - **Windows Phone 8.1**
         - **Windows 8.1 及更高版本**
-        - **Windows 10 及更高版本**
+        - Windows 10 及更高版本
 
     - **配置文件类型**：选择要创建的类型。 列表取决于所选择的平台。
     - **设置**：以下主题介绍了每种配置文件类型的设置：
@@ -57,11 +57,11 @@ ms.lasthandoff: 03/08/2018
         -  [教育设置](education-settings-configure.md)
         -  [自定义设置](custom-settings-configure.md)
 
-    ![输入设置以创建设备配置文件](./media/create-device-profile.png)
+    ![“创建配置文件”的屏幕截图](./media/create-device-profile.png)
 
 4. 完成后，选择“创建”。
 
-系统随即创建配置文件，并在列表中显示。 要向组分配此配置文件，请参阅[如何分配设备配置文件](device-profile-assign.md)。
+配置文件随即创建并显示在列表中。
 
 
 ## <a name="next-steps"></a>后续步骤

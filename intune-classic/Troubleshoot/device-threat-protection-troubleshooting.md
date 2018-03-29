@@ -1,45 +1,45 @@
 ---
-title: "Lookout 集成故障排除"
-description: "本主题介绍了 Lookout 集成中常见的故障排除问题"
-keywords: 
+title: Lookout 集成故障排除
+description: 本主题介绍了如何排查执行 Lookout 集成时遇到的常见问题
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6adb0bc2562a16c0111242cc7dd923afa073d84e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ec20d87da48fb52207d839da0753eb05524569af
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="troubleshoot-lookout-integration-with-intune"></a>使用 Intune 集成 Lookout 的故障排除
+# <a name="troubleshoot-lookout-integration-with-intune"></a>使用 Intune 对 Lookout 集成进行故障排除
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-本主题介绍设置 Lookout 移动威胁保护 (MTP) 时可能遇到的一些常见问题。
+本主题介绍了设置 Lookout Mobile Threat Protection (MTP) 时可能遇到的一些常见问题。
 
 **登录错误**
 
 ## <a name="403-errors"></a>403 错误
-登录 [Lookout MTP 控制台](https://aad.lookout.com)时可能出现 403 错误：**你无权访问此服务** 当指定用户名不属于配置以访问 Lookout MTP 的 Azure Active Directory (AD) 组时，可能出现此错误。
+登录 [Lookout MTP 控制台](https://aad.lookout.com)时可能会看到 403 错误：**你无权访问此服务**。当指定的用户名不属于配置为访问 Lookout MTP 的 Azure Active Directory (AD) 组时，这时就会出现这种情况。
 
-Lookout MTP 只允许已配置 Azure AD 组中的用户访问服务。 要确定配置了 Lookout MTP 访问权限的组，请联系 Lookout 支持：
+Lookout MTP 只允许属于已配置 Azure AD 组的用户访问服务。 若要确定哪个组已配置为访问 Lookout MTP，请联系 Lookout 支持人员：
 
 * 电子邮件：enterprisesupport@lookout.com
-* 登录到 [MTP 控制台](http://aad.lookout.com)，并导航到“支持”模块。
-* 转到：https://enterprise.support.lookout.com/hc/requests，并请求支持。
+* 登录 [MTP 控制台](http://aad.lookout.com)，导航到“支持”模块。
+* 转到：https://enterprise.support.lookout.com/hc/requests 并提出支持请求。
 
-## <a name="unable-to-sign-in"></a>无法登陆
-Azure AD 全局管理员用户未接受初始 Lookout 设置时，会出现以下错误。
+## <a name="unable-to-sign-in"></a>无法登录
+如果 Azure AD 全局管理员用户尚未接受初始 Lookout 设置时，你就会看到以下错误。
 
 ![Lookout 登录屏幕的屏幕截图显示登录出错](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
@@ -49,42 +49,42 @@ Azure AD 全局管理员用户未接受初始 Lookout 设置时，会出现以�
 
 ## <a name="device-missing-from-lookout-device-list"></a>Lookout 设备列表中缺少设备
 
-以下任一情况都可能导致此问题：
-* 设备用户不属于“Lookout MTP 控制台”中指定的“注册组”。  在 [Lookout 控制台](http://aad.lookout.com)中，转到“系统” > “Intune 连接器” > “注册管理”。  查看为注册配置的 Azure AD 组，并验证设备用户是否属于 Azure AD 组。  将某用户添加到注册组后，最多需要在配置的轮训间隔后（默认为 5 分钟），设备才会显示在 Lookout MTP 控制台的“设备”模块中。
-* 如果 Lookout MTP 不支持此设备。  不受支持的设备将显示在 Lookout MTP 控制台上连接器设置的“托管设备”部分。
+在以下其中一个情况中可能出现此问题：
+* 设备用户不属于“Lookout MTP 控制台”中指定的“注册组”。  在[“Lookout 控制台”](http://aad.lookout.com)中，依次转到“系统” > “Intune 连接器” > “注册管理”。  查看已配置的 Azure AD 注册组，并确认设备用户是否属于 Azure AD 组之一。  将用户添加到注册组后，最多需要等待所配置的轮询间隔（默认为 5 分钟），相应设备才会显示在 Lookout MTP 控制台的“设备”模块中。
+* 如果设备不受 Lookout MTP 支持。  不受支持的设备将显示在 Lookout MTP 控制台上连接器设置的“托管设备”部分。
 
-### <a name="device-reported-as-pending"></a>报告为“挂起”的设备
+### <a name="device-reported-as-pending"></a>设备被报告为“挂起”
 
-如果最终用户未打开 Lookout for Work 应用并点击“激活”按钮，设备显示为“挂起”。 有关通过 Lookout for Work 应用激活设备的更多详细信息，请参阅[系统提示在 Android 设备上安装 Lookout for Work](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android) 或[系统提示在 iOS 设备上安装 Lookout for Work](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-ios)
+如果最终用户尚未打开 Lookout for Work 应用，也未点击“激活”按钮，那么设备显示为“挂起”。 若要详细了解如何使用 Lookout for Work 应用激活设备，请参阅[系统提示在 Android 设备上安装 Lookout for Work](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android) 或[系统提示在 iOS 设备上安装 Lookout for Work](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-ios)。
 
-## <a name="device-whos-active-but-has-no-device-id"></a>设备处于活动状态，但没有设备 ID
-在 Lookout MTP 控制台中，如果活动设备没有设备 ID，则该设备用户不属于注册组。 如果设备用户已从注册组删除，或其所在注册组已被删除，设备会处于此状态。
+## <a name="device-whos-active-but-has-no-device-id"></a>设备已激活但无设备 ID
+在 Lookout MTP 控制台中，如果已激活设备没有设备 ID，表明设备用户不属于注册组。 如果设备用户已从注册组中删除，或所在注册组已被删除，那么设备就会处于这种状态。
 
-在 [Lookout 控制台](http://aad.lookout.com)中，转到“系统” > “Intune 连接器” > “注册”查看设置。  查看 Azure AD 组，并验证设备用户是否属于 Azure AD 组。
+在[“Lookout 控制台”](http://aad.lookout.com)中，依次转到“系统” > “Intune 连接器” > “注册”，然后查看设置。  查看 Azure AD 组，并确认设备用户是否属于 Azure AD 组之一。
 
-设备处于此状态时，Lookout 会继续通知用户检测到的威胁，但不会向 Intune 发送任何威胁信息。
+在设备处于此状态时，Lookout 将继续通知用户任何检测到的威胁，但不会向 Intune 发送任何威胁信息。
 
-## <a name="device-reported-as-disconnected"></a>报告为“已断开连接”的设备
+## <a name="device-reported-as-disconnected"></a>设备被报告为“已断开连接”
 
-“已断开连接”意味着该设备未在配置的时间间隔内（默认为 30 天，最少 7 天）与 Lookout MTP 同步。 设备缺少公司门户应用或 Lookout for Work 应用。 重新安装该应用可以解决此问题。 用户打开 Lookout for Work 并激活该应用时，设备将重新同步到 Lookout MTP 和 Intune。
+“已断开连接”表示设备未在配置的时间间隔（默认为 30 天，最少 7 天）内与 Lookout MTP 同步。 设备中缺少公司门户应用或 Lookout for Work 应用。 重新安装该应用应当能够解决此问题。 用户打开 Lookout for Work 并激活该应用时，设备便与 Lookout MTP 和 Intune 重新同步。
 
-### <a name="forcing-a-device-sync"></a>强制设备同步
+### <a name="forcing-a-device-sync"></a>强制执行设备同步
 管理员从 Lookout MTP 控制台的“设备”模块选择和删除设备。   设备所有者再次打开 Lookout for Work 应用并点击“激活”时，设备状态将彻底重新同步。
 
 ## <a name="device-has-a-new-user"></a>设备有新用户
-应擦除设备并要求新用户注册。  从 [Intune 管理员控制台](https://manage.microsoft.com)选择设备，右键单击并选择“停用/擦除”，以删除对该设备的管理。 停用设备后可删除该设备。
+应擦除设备并要求新用户进行注册。  在[“Intune 管理员控制台”](https://manage.microsoft.com)中，选择设备，然后右键单击并选择“停用/擦除”，以撤消管理设备。 可删除已停用的设备。
 
-![Intune 管理员控制台“设备”模块的屏幕截图，其中显示了“停用/擦除”选项](../media/mtp/mtp-retire-device-intune-console.png)
+![Intune 管理员控制台中“设备”模块的屏幕截图，其中显示了“停用/擦除”选项](../media/mtp/mtp-retire-device-intune-console.png)
 
-还可转到 [Lookout 控制台](http://aad.lookout.com)的“设备”模块，选择“删除”。
+也可以转到[“Lookout 控制台”](http://aad.lookout.com)的“设备”模块，然后选择“删除”。
 
-如果新用户属于 Lookout MTP 注册组，Azure AD 将设备与该新用户关联后即显示该设备。
+如果新用户属于 Lookout MTP 注册组，那么设备便会在 Azure AD 将其与新用户关联后立即显示。
 
 ## <a name="compliance-remediation-workflows"></a>合规性修正工作流
 - [系统提示在 Android 设备上安装 Lookout for Work]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 - [解除 Lookout for Work 在 Android 设备上发现的威胁](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [解除 Lookout for Work 在 iOS 设备上发现的威胁](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [需要解决 Lookout for Work 在 iOS 设备上发现的威胁](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>另请参阅
-[Set up you subscription with Lookout MTP](/intune-classic/deploy-use/set-up-your-subscription-with-lookout-mtp)（为订阅设置 Lookout MTP）
+[设置 Lookout MTP 订阅](/intune-classic/deploy-use/set-up-your-subscription-with-lookout-mtp)

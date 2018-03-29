@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: df77b63cbf953df030e5d0e597c0940f083ffb79
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>使用 Microsoft Intune 配置和管理 SCEP 证书
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -153,7 +153,13 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步骤 3 - 在 NDES 服务器上配置必备组件
 在此任务中完成以下操作：
 
+<<<<<<< HEAD
+
+- 将 NDES 添加到 Windows Server 并配置 IIS 以支持 NDES
+- 将 NDES 服务帐户添加到 IIS_IUSR 组
+- 为 NDES 服务帐户设置 SPN =======
 -   将 NDES 添加到 Windows Server 并配置 IIS 以支持 NDES
+>>>>>>> 3365d47d4 的父级...将分支“release-intune-1803”合并入 master
 
 -   将 NDES 服务帐户添加到 IIS_IUSR 组
 

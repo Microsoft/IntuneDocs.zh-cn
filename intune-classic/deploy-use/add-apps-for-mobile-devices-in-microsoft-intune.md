@@ -1,25 +1,25 @@
 ---
-title: "为注册设备添加应用"
-description: "部署应用之前，必须将其添加到 Intune。 然后就可以在 Intune 控制台中对其进行部署和管理。"
-keywords: 
+title: 为注册设备添加应用
+description: 部署应用之前，必须将其添加到 Intune。 然后就可以在 Intune 控制台中对其进行部署和管理。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>为注册设备添加应用到 Intune
 
@@ -48,21 +48,21 @@ ms.lasthandoff: 10/10/2017
   -   **外部链接**，适用于要通过指定应用商店链接来创建的应用：
 
         - **指定 URL**。 将 URL 指定为下列任一格式：
-            - 要部署的应用的应用商店 URL。 例如，如果你想要部署 Android 版 Microsoft 远程桌面应用，则请指定 **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**。<br>若要查找应用的 URL，请使用搜索引擎查找包含该应用的应用商店页面。 例如，若要查找远程桌面应用，你可以搜索 **Microsoft 远程桌面 Android 版**。
+            - 要部署的应用的应用商店 URL。 例如，如果想要部署面向 Android 的 Microsoft 远程桌面应用，请指定 https://play.google.com/store/apps/details?id=com.microsoft.rdc.android。<br>若要查找应用的 URL，请使用搜索引擎查找包含该应用的应用商店页面。 例如，若要查找远程桌面应用，你可以搜索 **Microsoft 远程桌面 Android 版**。
             - 网站。 Intune 将为设备部署该站点的快捷方式图标（称为 Web Clip）。
             - Web 上的应用。 Intune 将在设备上部署该应用的快捷方式图标。
         - **打开此链接需使用托管浏览器（仅限 Android 和 iOS）**。 为用户部署网站或 Web 应用的链接时，用户将只能在 Intune 托管浏览器中打开此链接。 必须在用户的设备上安装此浏览器。<br>有关托管浏览器的更多详细信息，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](manage-internet-access-using-managed-browser-policies.md)。<br>此安装类型不使用任何云存储空间。
 
   -   **来自应用商店的托管 iOS 应用**，适用于来自 iTunes 商店且要使用移动应用管理 (MAM) 策略进行管理的免费应用：
 
-        - **指定 URL**。 输入要部署的应用的应用商店 URL。 例如，如果你想要部署 iOS 版 Microsoft 工作文件夹应用，请指定 **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**。<br>此安装类型不使用任何云存储空间。
+        - **指定 URL**。 输入要部署的应用的应用商店 URL。 例如，如果想要部署面向 iOS 的 Microsoft 工作文件夹应用，请指定 https://itunes.apple.com/us/app/work-folders/id950878067?mt=8。<br>此安装类型不使用任何云存储空间。
 
         例如，如果你想要将来自 iTunes 商店的 Microsoft Word 应用部署到设备，页面将如下所示：
 
         ![Intune 软件发行者](./media/publisher-for-mobile.png)
 
 > [!NOTE]
-> 如果要从商店添加和部署应用，最终用户必须具有该商店的帐户才能安装应用。
+> 如果从应用商店添加并部署应用，最终用户必须拥有相应应用商店的帐户，才能安装应用。
 
 3.  在“软件描述”页上，配置下列设置：
 

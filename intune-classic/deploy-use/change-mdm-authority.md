@@ -1,24 +1,24 @@
 ---
-title: "将 MDM 机构更改为 Configuration Manager（混合 MDM）"
-description: "了解如何将 MDM 机构从 Intune 独立版更改为 Configuration Manager（混合 MDM）。"
-keywords: 
+title: 将 MDM 机构更改为 Configuration Manager（混合 MDM）
+description: 了解如何将 MDM 机构从 Intune 独立版更改为 Configuration Manager（混合 MDM）。
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>更改 MDM 机构
 从 Configuration Manager 1610 版本开始，无需联系 Microsoft 支持部门，也无需取消注册并重新注册现有的受管理设备即可更改 MDM 机构。 本主题逐步讲解在不取消注册并重新注册现有托管设备的情况下，如何将从 Intune 配置的且 MDM 机构设置为 Microsoft Intune（独立版）的现有 Microsoft Intune 租户更改为 Configuration Manager（混合 MDM）。
@@ -65,7 +65,7 @@ ms.lasthandoff: 10/10/2017
 2. 登录到你在 Intune 中设置 MDM 机构时最初使用的 Intune 租户，然后单击“下一步”。
 3. 选择“将我的 MDM 机构更改为 Configuration Manager”，然后单击“下一步”。
 4. 选择将包含所有用户的用户集合，这些用户将继续由新的混合 MDM 机构托管。
-5. 单击“下一步”  并完成向导。 MDM 现已机构更改为 Configuration Manager。
+5. 单击“下一步”并完成向导。 MDM 现已机构更改为 Configuration Manager。
 6. 使用同一 Intune 租户登录 [Microsoft Intune 管理控制台](http://manage.microsoft.com)，并确认 MDM 机构已更改为“设置为 Configuration Manager”。
 
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 10/10/2017
 
     ![Apple Push Certificates 门户登录页](../media/mdm-change-renew-apns-upload.png)
  
-5. 选择同一 APN，然后单击“下载”。 下载 APNs (.pem) 证书并本地保存文件。  
+5. 选择同一 APN，然后单击“下载”。 下载 APN (.pem) 证书并在本地保存文件。  
 
     ![Apple Push Certificates 门户登录页](../media/mdm-change-renew-apns-download.png)
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 10/10/2017
 
 ## <a name="next-steps"></a>后续步骤
 更改 MDM 机构完成后，请复查以下步骤：
-- 当 Intune 服务检测到租户的 MDM 机构已更改时，它将向所有已注册的设备发送通知消息，以便签入并与服务同步（这并非计划的定期签入）。 因此，租户的 MDM 机构从 Intune standalone 更改为混合环境后，开机且联机的所有设备将与服务连接，接收新的 MDM 机构，并且由混合环境托管。 这些设备的管理和保护不会中断。
+- 当 Intune 服务检测到租户的 MDM 机构已更改时，它将向所有已注册的设备发送通知消息，以便签入并与服务同步（这并非计划的定期签入）。 因此，租户的 MDM 机构从 Intune standalone 更改为混合环境后，开机且联机的所有设备将与服务连接，接收新的 MDM 机构，并且由混合环境托管。 对这些设备的管理和保护不会中断。
 - 更改 MDM 机构过程中（或在不久之后），即使设备开机且联机，但设备在新的 MDM 机构中注册到该服务之前，将会有最长八小时的延迟（取决于计划的下次定期签入的执行时间）。    
 
   > [!IMPORTANT]    
@@ -130,7 +130,7 @@ ms.lasthandoff: 10/10/2017
 
 - 用户可以通过手动启动从设备到服务的签入来快速更改为新的 MDM 机构。 用户可以通过使用公司门户应用轻松执行此操作，并启动设备符合性检查。
 - 更改 MDM 机构后，要验证设备签入并与服务同步后一切工作正常运行，可在 Configuration Manager 控制台中查找设备。 之前由 Intune 托管的设备现在将显示为 Configuration Manager 平台中的托管设备。    
-- 在更改 MDM 机构期间设备处于脱机状态时，以及设备签入服务，会存在一个过渡期。 为帮助确保设备在此过渡期间仍然受到保护并可正常运行，以下配置文件将在设备上最多保留七天（或直到设备与新的 MDM 机构连接并接收将覆盖现有设置的新设置为止）：
+- 在更改 MDM 机构期间设备处于脱机状态时，以及设备签入服务，会存在一个过渡期。 为帮助确保设备在此过渡期间仍然受到保护并可正常运行，以下配置文件将在设备上保留长达七天（或直到设备与新的 MDM 机构连接并接收将覆盖现有设置的新设置为止）：
     - 电子邮件配置文件
     - VPN 配置文件
     - 证书配置文件

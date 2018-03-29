@@ -1,23 +1,23 @@
 ---
-title: "配置 Microsoft Intune for iOS 设备 SSO"
-titlesuffix: 
-description: "了解如何配置 Microsoft Intune for iOS 设备 SSO。"
-keywords: 
+title: 配置 Microsoft Intune for iOS 设备 SSO
+titlesuffix: ''
+description: 了解如何配置 Microsoft Intune for iOS 设备 SSO。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>配置 Microsoft Intune for iOS 设备 SSO
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/08/2018
 
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格上，选择“设备配置”。
 4. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
 5. 在“配置文件”窗格上，选择“创建配置文件”。
@@ -90,7 +90,7 @@ ms.lasthandoff: 03/08/2018
 
 指示最终用户设备上可使用 SSO 有效负载的应用。
 
-`AppIdentifierMatches` 数组必须包含与应用程序包 ID 匹配的字符串。 这些字符串可以是完全匹配项（例如：`com.contoso.myapp`），也可以通过使用 *\ 通配符指定捆绑 ID 的前缀匹配项。 通配符必须位于句点字符 (.) 后，并可能只在字符串末尾出现一次（例如：`com.contoso.*`）。 如果包括通配符，则程序包 ID 以前缀开头的任何应用都将被授予对帐户的访问权限。
+`AppIdentifierMatches` 数组必须包含与应用程序包 ID 匹配的字符串。 这些字符串可以是完全匹配项（例如：`com.contoso.myapp`），也可以通过使用 \* 通配符指定捆绑 ID 的前缀匹配项。 通配符必须位于句点字符 (.) 后，并可能只在字符串末尾出现一次（例如：`com.contoso.*`）。 如果包括通配符，则程序包 ID 以前缀开头的任何应用都将被授予对帐户的访问权限。
 
 “应用名称”字段用于添加一个用户友好名称，帮助识别程序包 ID。
 

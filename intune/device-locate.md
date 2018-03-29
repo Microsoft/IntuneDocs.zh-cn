@@ -1,23 +1,23 @@
 ---
-title: "使用 Microsoft Intune 查找丢失的 iOS 设备 - Azure | Microsoft Docs"
-description: "使用 Microsoft Intune 的“定位设备”功能查找或定位丢失或被盗的 iOS 设备，并获取有关使用定位设备操作时的安全与隐私信息。"
-keywords: 
+title: 使用 Microsoft Intune 查找丢失的 iOS 设备 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune 中的定位设备功能查找丢失或被盗的 iOS 设备。 获取使用“定位设备”操作时的安全与隐私相关详细信息。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bc51ef7f9af9cc97fd4c11408a1857679aee665
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 473a0b265a9483cbd6f6ffb15074fad85e03e264
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 定位丢失或被盗的 iOS 设备
 
@@ -40,16 +40,16 @@ ms.lasthandoff: 03/08/2018
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 3. 依次选择“设备”和“所有设备”。
-4. 从所管理设备的列表中，选择一台 iOS 设备，选择“...更多”，然后选择“定位设备”远程操作。
+4. 从所管理设备的列表中，选择一个 iOS 设备，然后选择“...更多”。 然后选择“定位设备”远程操作。
 5. 定位设备后，其位置会在“定位设备”中显示。
-    ![在 Azure 中使用 Intune 定位设备](./media/locate-device.png)
+    ![在 Azure 中使用 Intune 定位设备的屏幕截图](./media/locate-device.png)
 
 >[!NOTE]
->出于隐私目的，地图可放大的尺寸受到限制。
+>出于隐私原因，地图可放大的尺寸受到限制。
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>丢失模式和定位设备操作的安全与隐私信息
 - 启用此操作之前，不会向 Intune 发送任何设备的位置信息。
-- 使用查找设备操作时，设备的纬度和经度坐标会发送到 Intune，并在 Azure 门户中显示。
+- 使用“定位设备”操作时，设备的纬度和经度坐标会发送到 Intune，并在 Azure 门户中显示。
 - 该数据存储 24 小时，然后删除。 不能手动删除位置数据。
 - 位置数据在存储和传输时均进行加密处理。
 - 配置丢失模式时，可以自定义锁屏界面上显示的消息。 在此消息中，为帮助查找该设备的用户，请务必添加特定的详细信息，以返回丢失的设备。
