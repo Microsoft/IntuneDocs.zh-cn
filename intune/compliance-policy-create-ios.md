@@ -1,49 +1,42 @@
 ---
-title: "在 Microsoft Intune 中创建 iOS 设备符合性策略"
-titleSuffix: 
-description: "为 iOS 设备创建 Microsoft Intune 设备符合性策略，以便可指定设备必须满足的符合性要求。"
-keywords: 
-author: msmimart
-ms.author: mimart
+title: 在 Microsoft Intune 中创建 iOS 设备符合性策略 - Azure | Microsoft Docs
+description: 创建 Microsoft Intune 设备符合性策略以便 iOS 设备输入电子邮件帐户、检查已越狱设备、检查最低和最高操作系统版本及设置密码限制，包括密码长度和设备非活动状态。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b024c846f9fc79fe214e3e90b094384455f2b086
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>如何在 Intune 中创建适用于 iOS 设备的设备符合性策略
-
+# <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>在 Intune 中添加适用于 iOS 设备的设备符合性策略
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-适用于 iOS 的 Intune 设备符合性策略指定 iOS 设备为实现符合性而必须满足的规则和设置。 将设备符合性策略与条件访问一起使用时，可允许或阻止访问公司资源。 还可获取设备报表并针对非符合性采取措施。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。 若要了解符合性策略和创建符合性策略之前需要解决的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)主题。
+Intune iOS 设备符合性策略确定 iOS 设备为实现符合性而必须满足的规则和设置。 将设备符合性策略与条件访问一起使用时，可允许或阻止访问公司资源。 还可获取设备报表并针对非符合性采取措施。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。 若要了解符合性策略和创建符合性策略之前需要的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 下表说明了将符合性策略与条件访问策略一起使用时如何管理非符合性设置。
 
--------------------------------
-
-
 | **策略设置** | **iOS 8.0 及更高版本** |
 | --- | --- |
-| **PIN 或密码配置** | 已修正 |   
+| **PIN 或密码配置** | 已修正 |
 | **设备加密** | 已修正（通过设置 PIN） |
 | **已越狱或取得 root 权限的设备** | 已隔离（非设置）
 | **电子邮件配置文件** | 已隔离 |
 |**最低操作系统版本** | 已隔离 |
-| **最高操作系统版本** | 已隔离 |  
-| **Windows 运行状况证明** | “不适用” |  
-----------------------------
-
+| **最高操作系统版本** | 已隔离 |
+| **Windows 运行状况证明** | “不适用” |
 
 **已修正** = 设备操作系统强制合规性。 （例如，强制用户设置 PIN。）
 
@@ -55,10 +48,10 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>在 Azure 门户中创建合规性策略
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-1. 从“Intune”窗格中，选择“设备符合性”。 在“管理”下，选择“策略”，然后选择“创建策略”。
-2. 键入名称、说明，并选择要应用此策略的平台。
-3. 选择“符合性要求”以在该处指定“系统安全性”、“设备运行状况”和“设备属性”设置，完成后，选择“确定”。
+2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+3. 选择“设备符合性” > “策略” > “创建策略”。
+4. 输入名称、说明，并选择要应用此策略的平台。
+5. 选择“设置”，输入“电子邮件”、“设备运行状况”、“设备属性”和“系统安全”设置。 完成后，选择“确定”。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -78,31 +71,7 @@ ms.lasthandoff: 03/08/2018
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>系统安全设置
-
-### <a name="password"></a>密码
-
-- **需要密码才可解锁移动设备**：将此选项设置为“是”，要求用户在访问其设备之前输入密码。 使用密码的 iOS 设备已加密。
-- **允许简单密码**：将此选项设置为“是”，允许用户创建密码，如 1234 或 1111。
-- **最短密码长度**：指定密码必须包含的最小位数或最小字符数。
-- **所需的密码类型**：指定用户必须创建“字母数字”密码还是“数字”密码。
-- **最小字符集数**：如果将“所需的密码类型”设置为“字母数字”，请使用此设置指定密码必须具有的最小字符集数。 四个字符集为：
-  - 小写字母
-  - 大写字母
-  - 符号
-  - 数字
-
-设置的数字越大，要求用户创建的密码越复杂。
-
-对于 iOS 设备，此设置是指必须包括在密码中的特殊字符数（例如 **!** 、**#**、**&amp;**）。
-
-- **要求提供密码之前的非活动分钟数**：指定用户必须重新输入其密码前的空闲时间。
-- **密码过期(天)**：选择密码过期之前的天数，然后必须创建一个新密码。
-- **记住密码历史记录：**将此设置与“防止重用旧密码”结合使用，限制用户使用以前创建的密码。
-- **防止重用以前的密码**：如果选择了“记住密码历史记录”，请指定不能重用的以前用过的密码数。
-- **设备从空闲状态返回时需要密码**：与“要求提供密码之前的非活动分钟数”设置一起使用此设置。 设备在“要求提供密码之前的非活动分钟数”设置指定的时间内处于非活动状态时，将提示用户输入密码才能访问设备。
-
-### <a name="email-profile"></a>电子邮件配置文件
+## <a name="email"></a>Email
 
 - **必须由 Intune 管理电子邮件帐户：**如果该选项设置为“是”，则设备必须使用部署到设备的电子邮件配置文件。 在以下情况中设备被视为不符合要求：
   - 电子邮件配置文件部署到合规性策略目标外的用户组。
@@ -111,14 +80,34 @@ ms.lasthandoff: 03/08/2018
 
 有关电子邮件配置文件的详细信息，请参阅[通过 Microsoft Intune 使用电子邮件配置文件配置对公司电子邮件的访问](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)。
 
-## <a name="device-health-settings"></a>设备运行状况设置
+## <a name="device-health"></a>Device health
 
-- **设备不得越狱或取得 root 权限**：如果启用此设置，已越狱的设备将不符合要求。
+- **已越狱设备**：如果启用此设置，已越狱设备则不符合策略。
+- **要求设备处于或低于设备威胁级别**：选择将设备标记为不符合策略的最大威胁级别。 例如，如果将威胁级别设置为“中”，则中、低和受保护级别的设备均符合策略。 具有高威胁级别的设备不符合策略。
 
 ## <a name="device-properties"></a>设备属性
 
 - **所需的最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 用户可以选择升级其设备。 然后可访问公司资源。
-- **允许的最高 OS 版本**：设备使用的 OS 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
+- **允许的最高操作系统版本**：设备使用的操作系统版本高于规则中指定的版本时，则会阻止访问公司资源。 然后会要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备不能访问公司资源。
+
+## <a name="system-security"></a>系统安全
+
+### <a name="password"></a>密码
+
+> [!NOTE]
+> 符合性或配置策略应用到 iOS 设备后，系统会每 15 分钟提示用户一次，要求设置密码。 系统会持续提示用户，直到用户设置密码。
+
+- **需要密码才可解锁移动设备**：将此选项设置为“是”，要求用户在访问其设备之前输入密码。 使用密码的 iOS 设备已加密。
+- **简单密码**：将此选项设置为“是”，允许用户创建密码，如 1234 或 1111。
+- **最短密码长度**：输入密码必须包含的最小位数或最小字符数。
+- **所需的密码类型**：输入用户必须创建字母数字密码还是数字密码。
+- **密码中的非字母数字字符数**：输入密码中必须包含的最小特殊字符（&、#、%、! 等）数。
+
+    设置的数字越大，要求用户创建的密码越复杂。
+
+- **要求提供密码之前的非活动最大分钟数**：输入用户必须重新输入其密码前的空闲时间。
+- **密码过期(天)**：选择密码过期之前的天数，然后必须创建一个新密码。
+- **要防止重用的以前的密码数**：输入以前用过的不能使用的密码数。
 
 <!--- ## Next steps
 

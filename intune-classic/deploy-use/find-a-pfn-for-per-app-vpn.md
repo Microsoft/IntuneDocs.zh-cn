@@ -1,25 +1,25 @@
 ---
-title: "查找每应用 VPN 的包系列名称 (PFN)"
-description: "查找 PFN，以便你可以配置每应用 VPN。"
-keywords: 
+title: 查找每应用 VPN 的包系列名称 (PFN)
+description: 查找 PFN，以便你可以配置每应用 VPN。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4b5d71e46fbc78ebadf52e96bb75eedecc291ee
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>查找 per-app VPN 配置的包系列名称 (PFN)
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/12/2017
 
 有两种方法来查找 PFN，以便你可以设置每应用 VPN。
 
-## <a name="find-a-pfn-for-an-app-thats-installed-on-a-windows-10-computer"></a>查找安装在 Windows 10 计算机上的应用的 PFN
+## <a name="find-a-pfn-for-an-app-thats-installed-on-a-windows-10-computer"></a>为安装在 Windows 10 计算机上的应用查找 PFN
 
 如果正在使用的应用已安装在 Windows 10 计算机上，则可以使用 [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell cmdlet 来获取 PFN。
 
@@ -70,10 +70,10 @@ Get-AppxPackage 的语法是：
 
 
 
-## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>计算机上未安装该应用时查找 PFN
+## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>如果计算机上未安装此应用，查找 PFN
 
-1.  转到 https://www.microsoft.com/store/apps。
-2.  在搜索栏中输入应用的名称。 在本示例中，我们搜索 OneNote。
+1.  转到https://www.microsoft.com/store/apps。
+2.  在搜索栏中输入应用的名称。 在本示例中，搜索 OneNote。
 3.  选择应用的链接。 请注意，URL 末尾有一系列字母。 在我们的示例中，URL 如下所示：`https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`。
 4.  在另一个选项卡上，粘贴下面的 URL：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`。 将 `<app id>` 替换为从 https://www.microsoft.com/store/apps 获取的应用 ID，即步骤 3 中 URL 末尾的一系列字母。 以 OneNote 为例，粘贴：`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`。
 

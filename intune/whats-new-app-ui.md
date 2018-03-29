@@ -6,7 +6,7 @@ keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 7e553391bb2a98c5e57edf0a4388359703b9d550
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 了解这些更新有助于与用户进行通信，并更新为了支持部署而创建的任何自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-march-12-2018"></a>2018 年 3 月 12 日当周
+
+#### <a name="company-portal-for-android-visual-updates---976944---"></a>适用于 Android 的公司门户的视觉更新 <!--976944 -->
+
+我们已更新适用于 Android 的公司门户应用以遵循 Android 的 [Material Design](https://material.io/)（材料设计）准则。
+
+|以前|完成|
+|---|---|
+|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
+|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
+|![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
+|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日当周
 

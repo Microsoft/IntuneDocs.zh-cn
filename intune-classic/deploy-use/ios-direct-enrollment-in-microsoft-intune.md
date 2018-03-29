@@ -1,25 +1,25 @@
 ---
-title: "直接注册 IOS 设备"
-description: "使用 Apple 配置器工具直接注册公司自有的 iOS 设备（使用通过 USB 将其连接至 Mac 计算机的预定义策略）。"
-keywords: 
+title: 直接注册 IOS 设备
+description: 使用 Apple 配置器工具直接注册公司自有的 iOS 设备（使用通过 USB 将其连接至 Mac 计算机的预定义策略）。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: db07c6c6aa98d880bcc9f32204dffddebe6f45b4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 79f720af293b6062e140fac9341f97a55bf598fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>使用 Apple Configurator 直接注册 iOS 设备
 
@@ -62,7 +62,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 6.  通过将已下载的 .mobileconfig 文件复制到 Mac 计算机来传输文件。
     > [!NOTE]
-    > 注册配置文件 URL 从导出时开始两周内有效。 两周过后，必须导出新的注册配置文件 URL 以使用设置助理注册 iOS 设备。
+    > 注册配置文件 URL 自其导出之日起两周内有效。 两周过后，必须导出新的注册配置文件 URL 以使用设置助理注册 iOS 设备。
 
 7.  用 Apple Configurator 准备设备。 iOS 设备连接到 Mac 计算机，并注册移动设备管理。
 
@@ -88,6 +88,6 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
     6.  当“已安装配置文件”框确认配置文件“已安装”时，请选择“完成”。
 
-9.  在 iOS 设备上，打开“设置”并转到“常规”&gt;“设备管理” &gt;“管理配置文件”。 确认配置文件安装已列出，并检查 iOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
+9.  在 iOS 设备上，打开“设置”并转到“常规”&gt;“设备管理”&gt;“管理配置文件”。 确认配置文件安装已列出，并检查 iOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
 
 10.  分配设备。 iOS 设备现已向 Intune 注册并已托管。

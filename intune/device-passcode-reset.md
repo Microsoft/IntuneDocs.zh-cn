@@ -1,23 +1,23 @@
 ---
-title: "使用 Microsoft Intune 重置设备密码 - Azure | Microsoft Docs"
-description: "在使用 Intune 进行管理或监视的设备上，使用“删除密码代码”操作删除或重置密码。"
-keywords: 
+title: 使用 Microsoft Intune 重置设备密码 - Azure | Microsoft Docs
+description: 在使用 Intune 进行管理或监视的设备上，使用“删除密码”操作删除或重置密码。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f23a79bbe72d12750ef642226aefd1e11dcac24
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4cca5922f036711093469e71489e267af53f05a9
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -27,7 +27,8 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="supported-platforms"></a>受支持的平台
 
-- Windows Phone 8.1 到 Windows 10 创意者更新（未加入 Azure AD），Windows 10 创意者更新及更高版本
+- Windows Phone 8.1（未加入到 Azure Active Directory），其中包括 Windows 10 创意者更新以下的版本
+- Windows 10 创意者更新及更高版本
 - iOS
 - 早于 Android 7 的 Android 版本
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/08/2018
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 3. 依次选择“设备”和“所有设备”。
-4. 从所管理设备的列表中，选择一台设备，选择“...更多”，然后选择“删除密码”设备远程操作。
+4. 从你管理的设备列表中，选择一个设备，然后选择“...更多”。 然后选择“删除密码”设备远程操作。
 
 ## <a name="next-steps"></a>后续步骤
 

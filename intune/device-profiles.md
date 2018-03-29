@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune 中的设备配置文件 - Azure | Microsoft Docs"
-description: "Azure 门户中的不同 Microsoft Intune 设备配置文件概述，包括功能、限制、电子邮件、WiFi、VPN、教育、证书、升级 Windows 10、BitLocker 和 Windows Defender、Windows 信息保护，以及自定义设备配置设置。 使用这些配置文件管理和保护公司内的数据和设备。"
-keywords: 
+title: Microsoft Intune 中的设备配置文件 - Azure | Microsoft Docs
+description: Azure 门户中的不同 Microsoft Intune 设备配置文件概述，包括功能、限制、电子邮件、WiFi、VPN、教育、证书、升级 Windows 10、BitLocker 和 Windows Defender、Windows 信息保护，以及自定义设备配置设置。 使用这些配置文件管理和保护公司内的数据和设备。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
 
@@ -120,6 +120,8 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 ## <a name="endpoint-protection-profile"></a>Endpoint Protection 配置文件
 [适用于 Windows 10 的 Endpoint Protection 设置](endpoint-protection-windows-10.md)配置适用于 Windows 10 设备的 BitLocker 和 Windows Defender 设置。
 
+若要使用 Microsoft Intune 载入 Windows Defender 高级威胁防护 (WDATP)，请参阅 [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection)（使用移动设备管理 (MDM) 工具配置终结点）。
+
 此功能支持：仅限 Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Windows 信息保护配置文件
@@ -130,7 +132,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 ## <a name="custom-profile"></a>自定义配置文件
 [自定义设置](custom-settings-configure.md)能够分配未在 Intune 中内置的设备设置。 例如，对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。 
 
-此功能支持： 
+此功能支持：
 
 - Android
 - iOS

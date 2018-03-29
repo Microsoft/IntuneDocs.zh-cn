@@ -1,25 +1,25 @@
 ---
-title: "使用 Microsoft Intune 同步设备 - Azure | Microsoft Docs"
-description: "同步使用 Microsoft Intune 注册或管理的设备，以获取最新的策略和操作。 包括使用 Azure 门户进行同步的步骤，并且列出了可以重试的错误代码。"
-keywords: 
+title: 使用 Microsoft Intune 同步设备 - Azure | Microsoft Docs
+description: 同步使用 Microsoft Intune 注册或管理的设备，以获取最新的策略和操作。 包括使用 Azure 门户进行同步的步骤，并且列出了可以重试的错误代码。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>同步设备以获取最新的策略和操作 - Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>将设备与 Intune 同步以获取最新的策略和操作
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -38,9 +38,9 @@ ms.lasthandoff: 03/08/2018
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。 
-3. 在 Intune 中，依次选择“设备”和“所有设备”。
-4. 从管理的设备列表中，选择一台设备，选择“...更多”，然后选择“同步”操作。
-5. 单击“是”以确认。
+3. 在 Intune 中，选择“设备” > “所有设备”。
+4. 在所管理的设备列表中，选择一个设备，选择“更多”，然后选择“同步”。
+5. 选择“是”以确认。
 
 
 ## <a name="retryable-error-codes"></a>可重试错误代码
@@ -62,6 +62,6 @@ ms.lasthandoff: 03/08/2018
 | 2016330889 | 安全连接失败。 重置连接。 | 是|
 | 2016330888 | 服务器信任评估失败。 | 否|
 
-## <a name="next-step"></a>下一步
+## <a name="next-steps"></a>后续步骤
 
-选择“设备操作”，查看同步操作的状态。 
+- 若要查看同步操作的状态，请选择“设备操作”。 

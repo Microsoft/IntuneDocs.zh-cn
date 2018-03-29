@@ -1,40 +1,40 @@
 ---
-title: "在 Microsoft Intune 中分配设备配置文件 - Azure | Microsoft Docs"
-description: "如何使用 Azure 门户为用户和设备分配设备配置文件和策略，以及如何从 Microsoft Intune 的配置文件分配中排除组"
-keywords: 
+title: 在 Microsoft Intune 中分配设备配置文件 - Azure | Microsoft Docs
+description: 使用 Azure 门户将设备配置文件和策略分配给用户和设备。 了解如何在 Microsoft InTune 中从配置文件分配中排除组。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09650bc99b1bdf892b60828f0b524467d7b60ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9840298df981bee6c33d3cb36ec5e4ada46d11bd
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
-创建配置文件后，可将配置文件分配给 Azure Active Directory 组。
+创建配置文件后，可将配置文件分配给 Azure Active Directory (Azure AD) 组。
 
 ## <a name="assign-a-device-profile"></a>分配设备配置文件
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，然后搜索“Microsoft Intune”。
 2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”。
 3. 在配置文件列表中，选择要分配的配置文件，然后选择“分配”。
-4. 选择“包括”组或“排除”组，然后选择“选择组”：  
+4. 选择“包括”组或“排除”组，然后选择组  
 
-    ![在配置文件分配中包括或排除组](./media/group-include-exclude.png)
+    ![在配置文件分配中包括或排除组选项的屏幕截图](./media/group-include-exclude.png)
 
-5. 选择组时，会选中 Azure Activity Directory 组。 按住 Ctrl 可选择多个组。
-6. 完成后，“保存”更改。
+5. 选择组时，会选择 Azure AD 组。 按住 Ctrl 可选择多个组。
+6. 完成后，选择“保存”。
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>从配置文件分配中排除组
 
@@ -42,9 +42,7 @@ ms.lasthandoff: 03/08/2018
 
 从分配中排除组时，仅排除用户或仅排除设备组（不是混合组），Intune 不会考虑任何用户到设备的关系。 如果在排除设备组的同时包括用户组，可能不会产生所需结果。 如果使用混合组或存在其他冲突，则包含优先于排除。
 
-例如，需要向组织中除网亭设备外的所有设备分配设备配置文件。 于是含入“所有用户”组，而排除“所有设备”组。
-
-在这种情况下，所有用户及其设备均会获得策略，即使用户设备属于“所有设备”组也是如此。
+例如，需要向组织中除网亭设备外的所有设备分配设备配置文件。 于是含入“所有用户”组，而排除“所有设备”组。 在这种情况下，所有用户及其设备均会获得策略，即使用户设备属于“所有设备”组也是如此。
 
 排除操作仅查看组的直接成员，而不包括与用户关联的设备。 但是，没有用户的设备不会获得策略。 出现这种情况是因为这些设备与“所有用户”组没有任何关系。
 

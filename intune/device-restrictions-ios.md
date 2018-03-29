@@ -1,23 +1,23 @@
 ---
-title: "适用于 iOS 的 Microsoft Intune 设备限制设置"
-titleSuffix: 
-description: "了解可用来控制运行 iOS 的设备上的设备设置和功能的 Intune 设置。"
-keywords: 
+title: 适用于 iOS 的 Microsoft Intune 设备限制设置
+titleSuffix: ''
+description: 了解可用来控制运行 iOS 的设备上的设备设置和功能的 Intune 设置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 设备限制设置
 
@@ -40,7 +40,6 @@ ms.lasthandoff: 03/12/2018
 - **使用设备上的擦除所有内容和设置选项（仅限被监督的设备）** - 允许用户使用设备上的擦除所有内容和设置的选项。
 - **设备名称修改（仅限被监督的设备）** - 允许用户更改设备的名称。
 - **修改通知设置（仅限被监督的设备）** - 允许用户更改设备通知设置。
-- **修改墙纸（仅限被监督的设备）** - 允许用户更改设备墙纸。
 - **修改企业应用信任设置（仅限被监督的设备）** - 允许用户选择信任不是从应用商店下载的应用。
 - **配置文件更改（仅限被监督的设备）** - 允许用户安装配置文件。
 - 激活锁（仅限被监督的设备）- 在受监督的 iOS 设备上启用激活锁。
@@ -74,7 +73,6 @@ ms.lasthandoff: 03/12/2018
 - 键盘快捷方式 
 - 密码修改 
 - 设备名更改 
-- 壁纸更改 
 - 自动应用下载 
 - 企业应用信任更改 
 - Apple Music 

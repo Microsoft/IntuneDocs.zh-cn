@@ -1,25 +1,25 @@
 ---
-title: "本地 EAS 的 Exchange 连接器"
-description: "使用连接器工具启用 Intune 管理控制台和本地 Exchange ActiveSync MDM 的 Exchange Server 之间的通信。"
-keywords: 
+title: 本地 EAS 的 Exchange 连接器
+description: 使用连接器工具启用 Intune 管理控制台和本地 Exchange ActiveSync MDM 的 Exchange Server 之间的通信。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb627843879a784eb4f597839058f54f9744542f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>安装 Intune On-Premises Exchange Connector
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/10/2017
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange Connector 软件安装包
 
-1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中的管理员且有权使用 Exchange Server）打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com) (https://manage.microsoft.com) 。
+1. 在支持本地 Exchange Connector 的 Windows Server 操作系统上，使用用户帐户（该帐户是 Exchange 租户中的管理员且有权使用 Exchange Server）打开 [Microsoft Intune 管理控制台](https://manage.microsoft.com) (https://manage.microsoft.com)。
 ![打开“设置 Exchange 连接”](../media/ExchangeConnector.gif)
 
 2.  在工作区快捷方式窗格中，选择“管理”>“移动设备管理” > “Microsoft Exchange”>“设置 Exchange 连接”。

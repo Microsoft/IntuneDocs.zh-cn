@@ -1,25 +1,25 @@
 ---
-title: "Mac OS X 策略设置"
-description: "Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设置。 此外，还可使用 Apple Configurator 工具创建 Intune 未提供的自定义设置。"
-keywords: 
+title: Mac OS X 策略设置
+description: Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设置。 此外，还可使用 Apple Configurator 工具创建 Intune 未提供的自定义设置。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Mac OS X 配置策略设置
 
@@ -63,7 +63,7 @@ Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设
 |----------------|---------------|
 |**用户安装列出的应用时报告不相容情况**|显示不允许用户安装的 Mac OS X 应用。 如果用户安装任何这些应用，“不相容应用报告”中将报告安装的应用。|
 |**用户安装未列出的应用时报告不合规性**|显示允许用户安装的 Mac OS X 应用。 如果用户安装任何其他应用，“不相容应用报告”中将报告安装的应用。|
-|**添加**|将应用添加到选定的列表。 指定你选择的名称（可为应用发布者）和应用的捆绑 ID。 **提示：**若要查找应用的捆绑 ID，请在已安装此应用的 Mac 计算机上执行以下步骤：<ol><li>打开安装应用的文件夹（例如，**/Applications**）。</li><li>选择 &lt;App Name&gt;.app 捆绑包，然后选择“显示包内容”。</li><li>打开“Info.plist”文件。</li><li>检查与“CFBundleIdentifier”键相关联的值。</li></ol>捆绑 ID 的格式是“com.contoso.appname”。|
+|**添加**|将应用添加到选定的列表。 指定你选择的名称（可为应用发布者）和应用的捆绑 ID。 **提示：**若要查找应用的捆绑 ID，请在已安装此应用的 Mac 计算机上执行以下步骤：<ol><li>打开安装应用的文件夹（例如，**/Applications**）。</li><li>选择 &lt;应用名称&gt;.app 捆绑，然后选择“显示包内容”。</li><li>打开“Info.plist”文件。</li><li>检查与“CFBundleIdentifier”键相关联的值。</li></ol>捆绑 ID 的格式是“com.contoso.appname”。|
 |**导入应用**|导入你已在逗号分隔值文件中指定的应用列表。 在文件中使用此格式：应用名称、发布者和应用捆绑 ID。|
 |**编辑**|编辑所选应用的名称、发布者和捆绑 ID。|
 |**删除**|从列表中删除选定的应用。|
@@ -98,7 +98,7 @@ Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设
 |设置名|详细信息|
     |----------------|--------------------|
     |**Name**|输入 Mac OS X 自定义策略的唯一名称，以帮助你在 Intune 控制台中识别它。|
-    |**描述**|提供对 Mac OS X 自定义策略的概述以及可帮助你查找它的其他相关信息。|
+    |**描述**|提供一份简要说明 Mac OS X 自定义策略的描述，以及可帮助你查找它的其他相关信息。|
 
 
 ### <a name="custom-settings"></a>自定义设置
@@ -112,7 +112,7 @@ Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设
 
 
 ### <a name="how-to-create-a-configuration-profile-file"></a>如何创建配置文件
-可以通过以下两种方法创建自定义策略使用的配置文件：
+可以通过以下两种方法创建用于自定义策略的配置文件：
 
 -   从 Apple Configurator 工具中导出文件（扩展名为 **.mobileconfig**）。
 

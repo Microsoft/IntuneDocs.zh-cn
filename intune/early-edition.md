@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 99b1436fdf718b54f54f7e90835668d4a632b7ce
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Microsoft Intune 的早期版本 - 2018 年 3 月
 
@@ -51,11 +51,11 @@ ms.lasthandoff: 03/20/2018
 为适用于 iOS 的 Cisco AnyConnect 创建的新 VPN 配置文件将适用于 Cisco AnyConnect 4.0.7x 和更高版本。 现有 iOS Cisco AnyConnect VPN 配置文件将被标记为“Cisco Legacy AnyConnect”，并将继续适用于 Cisco AnyConnect 4.0.5x，如现在一样。
 
 > [!NOTE]
-> 此更改仅适用于 iOS；将继续只提供一个适用于 Android、Android for Work 和 macOS 的 Cisco AnyConnect 选项。 
+> 此更改仅适用于 iOS；将继续只提供一个适用于 Android、Android for Work 和 macOS 的 Cisco AnyConnect 选项。
 
 #### <a name="more-information"></a>更多信息
 
-需要创建新的 iOS Cisco AnyConnect VPN 配置文件以支持新应用，因为新的 Cisco AnyConnect 应用和 Cisco Legacy AnyConnect 应用是单独的应用。 如果是在环境中管理 AnyConnect 客户端的，还需要部署新的 Cisco AnyConnect 应用。 若要完成升级，还需要删除 Cisco Legacy AnyConnect 配置文件，并删除 Cisco Legacy AnyConnect 应用。 
+需要创建新的 iOS Cisco AnyConnect VPN 配置文件以支持新应用，因为新的 Cisco AnyConnect 应用和 Cisco Legacy AnyConnect 应用是单独的应用。 如果是在环境中管理 AnyConnect 客户端的，还需要部署新的 Cisco AnyConnect 应用。 若要完成升级，还需要删除 Cisco Legacy AnyConnect 配置文件，并删除 Cisco Legacy AnyConnect 应用。
 
 在初始版本中，网络访问控制 (NAC) 集成将不适用于新的 AnyConnect 客户端。 我们正在与 Cisco 合作，以在未来的 Intune 版本中提供 NAC 集成。
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 03/20/2018
 增强的越狱检测是一个新的符合性设置，将改善 Intune 评估已越狱设备的方式。 此设置将导致设备更频繁地与 Intune 进行确认，这将使用设备的位置服务并将影响电池使用情况。
 
 ### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>可以将所需的业务线 (LOB) 应用部署到 Windows 10 桌面版设备上的所有用户 <!-- 1627835 RS4 -->
-客户将能够部署所需的业务线 Windows 10 应用以安装在设备上下文中。 这将使这些应用可供此设备上的所有用户可用。 这仅适用于 Windows 10 桌面版设备。 
+客户将能够部署所需的业务线 Windows 10 应用以安装在设备上下文中。 这将使这些应用可供此设备上的所有用户可用。 这仅适用于 Windows 10 桌面版设备。
 
 ### <a name="expiring-line-of-business-lob-apps-for-microsoft-intune----748789---"></a>即将过期的适用于 Microsoft Intune 的业务线 (LOB) 应用 <!-- 748789 -->
 在 Azure 门户中，Intune 将向你发出警报，通知你即将过期的业务线应用。 上传新版本的业务线应用后，Intune 将从应用列表删除过期通知。
@@ -73,10 +73,10 @@ ms.lasthandoff: 03/20/2018
 通过在 Windows 10 内部版本 1703 和更高版本上使用公司门户注册设备的用户将能够在不退出应用的情况下完成注册的第一步。
 
 ### <a name="new-management-name-column----1333586---"></a>新的管理名称列 <!-- 1333586 -->
-一个名为“管理名称”的新列将添加到设备边栏选项卡上。 这是基于以下公式按每设备分配的自动生成、不可编辑的名称： 
+一个名为“管理名称”的新列将添加到设备边栏选项卡上。 这是基于以下公式按每设备分配的自动生成、不可编辑的名称：
 - 所有设备的默认名称：<username>_<devicetype>_<enrollmenttimestamp>
-- 对于批量添加的设备：<PackageId/ProfileId>_<DeviceType>_<EnrollmentTime> 
- 
+- 对于批量添加的设备：<PackageId/ProfileId>_<DeviceType>_<EnrollmentTime>
+
 在设备边栏选项卡中，这是可选列。 默认情况下将不提供此列，只能通过列选择器进行访问。 设备名称不受此新列的影响。
 
 ### <a name="new-settings-for-windows-defender-security-center-notifications-device-configuration-profile----1631906---"></a>适用于 Windows Defender 安全中心通知设备配置文件的新设置 <!-- 1631906 -->
@@ -107,19 +107,19 @@ ms.lasthandoff: 03/20/2018
 ### <a name="configure-the-mac-application-firewall----1690461---"></a>配置 Mac 应用程序防火墙 <!-- 1690461 -->
 
 你将能够配置 Mac 应用程序防火墙。 可以使用此操作以基于每个应用程序来控制连接，而不是基于每个端口来进行控制。 这样一来，可以更轻松地获得防火墙保护的优势，还有助于防止不良应用控制为合法应用打开的网络端口。
- 
+
 可以在“设备配置” -> “创建配置文件” -> “macOS” -> “终结点保护”下找到此功能。
 
 启用防火墙设置后，即可使用两种策略来配置防火墙：
 
 - 阻止所有传入连接
 
-   可以阻止目标设备的所有传入连接。 如果选择进行此操作，将阻止所有应用的传入连接。 
+   可以阻止目标设备的所有传入连接。 如果选择进行此操作，将阻止所有应用的传入连接。
 
 - 允许或阻止特定应用
 
    可以允许或阻止特定应用接收传入连接。 还可以启用隐藏模式，阻止对探测请求做出响应。
- 
+
 #### <a name="more-information"></a>更多信息
 
 - 阻止所有传入连接
@@ -134,7 +134,7 @@ ms.lasthandoff: 03/20/2018
 - 隐藏模式
 
    启用此选项可防止计算机对探测请求做出响应。 计算机仍然会响应授权应用的传入请求。 意外的请求将被忽略，如 ICMP (ping)。
- 
+
 
 ### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>更新适用于 Android 的公司门户应用上的“帮助和反馈”体验 <!--1631531 -->
 
@@ -143,16 +143,16 @@ ms.lasthandoff: 03/20/2018
 ### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>批量采购计划 (VPP) 电子书的自定义书籍类别 <!-- 1488911 -->
 你将能够创建自定义电子书类别，然后将 VPP 电子书分配到自定义电子书类别。 最终用户即可以看到新建的电子书类别以及分配给该类别的书籍。
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>适用于 Android 的公司门户的视觉更新 <!--976944 -->
+### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868--"></a>HoloLens 和 Surface Hub 现在会出现在设备列表 <!--1725868--> 中
 
-我们将更新适用于 Android 的公司门户应用以遵循 Android 的 [Material Design](https://material.io/)（材料设计）准则。 应用发布时，我们会将新图标的图像发布到[应用 UI 中的新增内容](whats-new-app-ui.md)一文。 
+我们将向适用于 Android 的公司门户应用添加对显示已注册 Intune 的 HoloLens 和 Surface Hub 设备的支持。
 
 ### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune 应用保护策略的 Microsoft Edge 移动设备支持 <!-- 1817882 -->
 
 移动设备的 Microsoft Edge 浏览器支持在 Intune 中定义的应用保护策略。
 
 ### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>将完全可分辨名称用作 SCEP 证书的使用者 <!--2221763 eeready-->
-创建 SCEP 证书配置文件时，输入使用者名称。 即可将完全可分辨名称用作使用者。 对于“使用者名称”，选择“自定义”，然后输入 `CN={{OnPrem_Distinguished_Name}}`。 要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure Active Directory (AD) 连接](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。 
+创建 SCEP 证书配置文件时，输入使用者名称。 即可将完全可分辨名称用作使用者。 对于“使用者名称”，选择“自定义”，然后输入 `CN={{OnPrem_Distinguished_Name}}`。 要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure Active Directory (AD) 连接](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。
 
 ### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>系统会每 15 分钟提示一次 iOS 设备，要求设置 PIN <!--1550837 eeready-->
 符合性或配置策略应用到 iOS 设备后，系统会每 15 分钟提示用户一次，要求设置 PIN。 设置 PIN 之前，系统会持续提示用户。
@@ -169,11 +169,11 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
 
 ### <a name="schedule-your-automatic-updates---1805514---"></a>安排自动更新 <!--1805514 -->
 
-Intune 使你能够使用 [Windows 更新通道设置](windows-update-for-business-configure.md)控制自动更新的安装。 可以安排定期更新，包括每周更新、每日更新，甚至具体到某个时间更新。 
+Intune 使你能够使用 [Windows 更新通道设置](windows-update-for-business-configure.md)控制自动更新的安装。 可以安排定期更新，包括每周更新、每日更新，甚至具体到某个时间更新。
 
 ### <a name="disable-checks-on-device-restart---1805490---"></a>禁用设备重启检查 <!--1805490 -->
 
-Intune 使你可以控制[对软件更新的管理](windows-update-for-business-configure.md)。 默认将添加并启用“重启检查”属性。 要跳过重启设备时出现的典型检查（如活动用户、电池水平等），请选择“跳过”。 
+Intune 使你可以控制[对软件更新的管理](windows-update-for-business-configure.md)。 默认将添加并启用“重启检查”属性。 要跳过重启设备时出现的典型检查（如活动用户、电池水平等），请选择“跳过”。
 
 <!-- 1802 start -->
 
@@ -183,15 +183,15 @@ Intune 使你可以控制[对软件更新的管理](windows-update-for-business-
 
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>使用十六进制代码自定义公司门户主题 <!--1049561 -->
 
-可以使用十六进制代码自定义公司门户应用中的主题颜色。 输入十六进制代码时，Intune 将按照 [WCAG 2.0 标准](http://www.w3.org/TR/WCAG20)确定在文本颜色和背景色之间提供最高级别对比度的文本颜色。 可以在“移动应用” > “公司门户”中预览文本颜色和公司徽标之间的颜色对比。 
+可以使用十六进制代码自定义公司门户应用中的主题颜色。 输入十六进制代码时，Intune 将按照 [WCAG 2.0 标准](http://www.w3.org/TR/WCAG20)确定在文本颜色和背景色之间提供最高级别对比度的文本颜色。 可以在“移动应用” > “公司门户”中预览文本颜色和公司徽标之间的颜色对比。
 
-### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>添加到终结点保护设置的新 Windows Defender Credential Guard 设置 <!--1102252 --> 
+### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>添加到终结点保护设置的新 Windows Defender Credential Guard 设置 <!--1102252 -->
 
-新 [Windows Defender Credential Guard] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) 设置将添加到“设备配置” > “配置文件” > “Endpoint protection”。 将添加以下设置： 
+新 [Windows Defender Credential Guard] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) 设置将添加到“设备配置” > “配置文件” > “Endpoint protection”。 将添加以下设置：
 
 - 平台安全级别：指定平台安全级别是否在下次重启时启用。 基于虚拟化的安全性需要安全启动。 可以选择使用直接内存访问 (DMA) 保护启用基于虚拟化的安全性。 DMA 保护需要硬盘支持并且将仅在正确配置的设备上启用。
-- 基于虚拟化的安全性：指定基于虚拟化的安全性是否在下次重启时启用。 
-- Windows Defender Credential Guard：当具有安全启动的平台安全级别和基于虚拟化的安全性同时启用时，在下次重启时通过基于虚拟化的安全性打开 Credential Guard 以帮助保护凭据。 可用选项包括“禁用”、“使用 UEFI 锁启用”、“无锁启用”和“未配置”。 
+- 基于虚拟化的安全性：指定基于虚拟化的安全性是否在下次重启时启用。
+- Windows Defender Credential Guard：当具有安全启动的平台安全级别和基于虚拟化的安全性同时启用时，在下次重启时通过基于虚拟化的安全性打开 Credential Guard 以帮助保护凭据。 可用选项包括“禁用”、“使用 UEFI 锁启用”、“无锁启用”和“未配置”。
   - “禁用”选项将远程关闭 Credential Guard（如果之前已使用“无锁启用”选项启用）。
 
   - “使用 UEFI 锁启用”选项可确保 Credential Guard 不能通过注册表项或通过使用组策略禁用。 若要在使用此设置后禁用 Credential Guard，必须将组策略设置为“禁用”，并通过真实存在的用户从每台计算机中删除安全功能，以清除 UEFI 中保留的配置。 只要 UEFI 配置仍然存在，Credential Guard 则会保持启用状态。
@@ -208,7 +208,7 @@ Intune 使你可以控制[对软件更新的管理](windows-update-for-business-
 
 ### <a name="new-printer-settings-for-education-profiles----1308900---"></a>教育配置文件的新打印机设置 <!-- 1308900 -->
 
-对于教育配置文件，新的设置将提供在“打印机”类别下：“打印机”、“默认打印机”、“添加新的打印机”。 
+对于教育配置文件，新的设置将提供在“打印机”类别下：“打印机”、“默认打印机”、“添加新的打印机”。
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>iOS 应用预配配置 <!-- 1581650 -->
 可以分配 iOS 应用预配配置文件以通过包括或排除安全组来防止应用过期。
@@ -265,5 +265,3 @@ Intune 应用保护策略将提供创建默认全局策略的功能，以便快�
 
 ### <a name="see-also"></a>另请参阅
 有关最近开发的详细信息，请参阅 [Microsoft Intune 中的新增功能](whats-new.md)。
-
-

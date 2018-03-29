@@ -1,25 +1,25 @@
 ---
-title: "使用设备注册计划注册 iOS 设备"
+title: 使用设备注册计划注册 iOS 设备
 titlesuffix: Microsoft Intune
-description: "了解如何使用“设备注册计划”注册公司拥有的 iOS 设备。"
-keywords: 
+description: 了解如何使用“设备注册计划”注册公司拥有的 iOS 设备。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>通过使用 Apple 设备注册计划自动注册 iOS 设备
 
@@ -42,10 +42,10 @@ ms.lasthandoff: 03/08/2018
 
 若要启用 DEP 注册，需同时使用 Intune 和 Apple DEP 门户。 需要序列号列表或购买订单编号，这样才能将设备分配到 Intune 进行管理。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
-另外，DEP 注册不能与[设备注册管理器](device-enrollment-manager-enroll.md)一起使用。
+DEP 注册不能与[设备注册管理器](device-enrollment-manager-enroll.md)一起使用。 此外，macOS 当前不支持 DEP。
 
 ## <a name="what-is-supervised-mode"></a>受监督模式简介
-Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设备可通过更多控件进行管理。 因此，此模式尤其适用于企业拥有的设备。 在 Apple 设备注册计划 (DEP) 中，Intune 支持将设备配置为受监督模式。 
+Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设备可通过更多控件进行管理。 因此，此模式尤其适用于企业拥有的设备。 在 Apple 设备注册计划 (DEP) 中，Intune 支持将设备配置为受监督模式。
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -172,7 +172,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划设备” > “同步”。进度栏显示再次请求同步之前必须等待的时长。
 
   ![选中“注册计划设备”节点和选中“同步”链接](./media/enrollment-program-device-sync.png)
-  
+
 2. 在“同步”边栏选项卡上，选择“请求同步”。进度栏显示再次请求同步之前必须等待的时长。
 
    ![选中“请求同步”链接的“同步”边栏选项卡](./media/enrollment-program-device-request-sync.png)
@@ -206,6 +206,4 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 ## <a name="distribute-devices"></a>分配设备
 已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有恢复出厂设置才能应用注册配置文件。
 
-请参阅[通过设备注册计划在 Intune 中注册 iOS 设备](/intune-user-help/enroll-your-device-dep-ios)。 
-
-
+请参阅[通过设备注册计划在 Intune 中注册 iOS 设备](/intune-user-help/enroll-your-device-dep-ios)。

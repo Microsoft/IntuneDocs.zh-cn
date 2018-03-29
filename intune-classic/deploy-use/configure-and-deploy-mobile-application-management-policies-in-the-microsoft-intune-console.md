@@ -1,25 +1,25 @@
 ---
-title: "在 Intune 控制台中配置 MAM 策略"
-description: "Microsoft Intune 中的移动应用管理策略让你可以修改你所部署的应用的功能，以帮助它们符合你的公司合规性和安全策略。"
-keywords: 
+title: 在 Intune 控制台中配置 MAM 策略
+description: Microsoft Intune 中的移动应用管理策略让你可以修改你所部署的应用的功能，以帮助它们符合你的公司合规性和安全策略。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 881180fec0fe4fca8b49106bcae6ea1ecd52c2eb
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>配置和部署 Microsoft Intune 控制台中的移动应用程序管理策略
 
@@ -76,7 +76,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
 ## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>步骤 1：获取指向策略托管应用的链接、创建已包装的应用，或使用 Intune App SDK 编写已启用 MAM 的应用
 
-从应用商店查找并记录你想要部署的策略托管应用的 URL。 例如，Microsoft Word for iPad 应用 的 URL 是 **https://itunes.apple.com/cn/app/microsoft-word-for-ipad/id586447913?mt=8**。
+从应用商店查找并记录你想要部署的策略托管应用的 URL。 例如，Microsoft Word for iPad 应用的 URL 是 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8。
 
 
 ## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>步骤 2：将应用发布到你的云存储空间
@@ -124,7 +124,7 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
 |设置名|详细信息|
     |---------|--------------------|
-    |**名称**|为此策略指定名称。|
+    |**Name**|为此策略指定名称。|
     |**描述**|（可选）为此策略指定描述。|
     |**限制显示在企业托管浏览器内的 Web 内容**|如果启用此设备，应用内的任何链接都将在托管浏览器中打开。 要使此选项起作用，你必须将此应用部署到设备。|
     |**“阻止 Android 备份”** 或 **“阻止 iTunes 和 iCloud 备份”**|此设置禁止从应用备份任何信息。|

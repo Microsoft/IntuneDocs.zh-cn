@@ -1,23 +1,23 @@
 ---
-title: "使用 Microsoft Intune 激活 iOS 丢失模式 - Azure | Microsoft Docs"
-description: "使用 Microsoft Intune，启用或启动“丢失模式”，以自定义丢失或被盗 iOS 设备的锁屏界面上显示的消息。 并获取有关使用丢失模式时的安全与隐私信息。"
-keywords: 
+title: 使用 Microsoft Intune 激活 iOS 丢失模式 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune，启用或启动“丢失模式”，以自定义丢失或被盗 iOS 设备的锁屏界面上显示的消息。 并获取有关使用丢失模式时的安全与隐私信息。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47d6314dfaed546e5b4cff7f93a5540ba512bde9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2da88a6146080014b79fbdc1b8c553eae5705195
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>使用 Intune 启用 iOS 设备上的丢失模式
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/08/2018
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 3. 依次选择“设备”和“所有设备”。
-4. 从所管理设备的列表中，选择一台 iOS 设备，选择“...更多”，然后选择“丢失模式”远程操作。
+4. 从所管理设备的列表中，选择一个 iOS 设备，然后选择“...更多”。 然后选择“丢失模式”远程操作。
 5. 在“丢失模式”下，启用此功能。 然后，输入要显示的消息和联系人电话号码。
 6. 选择“确定”，保存所做更改。
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>丢失模式的安全与隐私信息和查找设备操作
 - 启用此操作之前，不会向 Intune 发送任何设备的位置信息。
-- 使用查找设备操作时，设备的纬度和经度坐标会发送到 Intune，并在 Azure 门户中显示。
+- 使用“定位设备”操作时，设备的纬度和经度坐标会发送到 Intune，并在 Azure 门户中显示。
 - 该数据存储 24 小时，然后删除。 不能手动删除位置数据。
 - 位置数据在存储和传输时均进行加密处理。
 - 在输入的要在锁屏界面上显示的消息中，请务必添加特定的详细信息，以返回丢失的设备。
