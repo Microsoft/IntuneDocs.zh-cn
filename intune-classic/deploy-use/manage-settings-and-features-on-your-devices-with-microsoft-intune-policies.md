@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 12bb3e91b842ffb03e3ad7b181841374c92b3dc4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 6e639dda2509ab51bfcf6d0976be517e220800e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>使用 Microsoft Intune 策略管理设备上的设置和功能
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune *策略*是控制移动设备和计算机上的功能的设置的组合。 使用包含建议设置或自定义设置的模板创建策略，然后将其部署到设备或用户组。
 
@@ -173,7 +173,7 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
         - 擦除设备前允许的重复登录失败次数
         - 需要提供密码之前处于非活动状态的分钟数
         - 所需密码类型 - 最小字符集数
-        - 允许照相机
+        - 允许相机
         - 需要对移动设备加密
         - 允许可移动存储
         - 允许 Web 浏览器

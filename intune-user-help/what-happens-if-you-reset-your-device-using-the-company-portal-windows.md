@@ -1,27 +1,27 @@
 ---
-title: "重置 Windows 设备会造成什么结果？ | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 重置 Windows 设备会造成什么结果？ | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 237771577c63f652a8de1f783fc0406dc7f70bf1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>使用公司门户重置你的 Windows 设备会发生什么情况？
 

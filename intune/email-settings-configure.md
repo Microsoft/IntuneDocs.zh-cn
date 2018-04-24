@@ -1,27 +1,27 @@
 ---
-title: "如何配置 Microsoft Intune 电子邮件设置"
-titleSuffix: 
-description: "了解如何配置 Microsoft Intune，以在所管理的设备上创建与公司电子邮件的连接。"
-keywords: 
+title: 如何配置 Microsoft Intune 电子邮件设置
+titleSuffix: ''
+description: 了解如何配置 Microsoft Intune，以在所管理的设备上创建与公司电子邮件的连接。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置电子邮件设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 如果设备通过连接到公司电子邮件和与其同步时所需的设置进行管理，则其可使用电子邮件配置文件进行配置。 这有助于确保设置在所有设备中是标准的，还有助于减少对不了解正确电子邮件设置的最终用户的支持呼叫。
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-a-device-profile-containing-email-settings"></a>创建包含电子邮件设置的设备配置文件
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格上，选择“设备配置”。
 2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
 3. 在“配置文件”窗格上，选择“创建配置文件”。

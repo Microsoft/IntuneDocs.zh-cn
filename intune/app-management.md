@@ -1,31 +1,30 @@
 ---
-title: "什么是 Microsoft Intune 中的应用管理"
-titlesuffix: 
-description: "了解使用 Microsoft Intune 进行应用管理的基础知识。"
-keywords: 
+title: 什么是 Microsoft Intune 中的应用管理
+titlesuffix: ''
+description: 了解使用 Microsoft Intune 进行应用管理的基础知识。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/09/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 允许 IT 管理员管理公司员工使用的移动应用。 除了此功能外，还可管理设备和保护数据。 作为此功能的一部分，优先任务之一是确保最终用户有权访问其工作所需的应用。 这个任务很有挑战性，因为：
 - 有众多的设备平台和应用类型。
@@ -65,19 +64,19 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。 
 可在“移动应用”工作负荷中找到大部分与应用相关的内容，并可通过以下步骤进行访问：
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
 
     ![移动应用工作负荷](./media/apps-workload.png)
 
 以下信息对应于“移动应用”边栏选项卡中提供的选项。
 
-### <a name="manage"></a>管理计算机上的
-- **应用** - 选择此选项可添加、查看、分配和监视员工使用的应用。 有关详细信息，请参阅以下文章：
+### <a name="manage"></a>管理
+- **应用** - 选择此选项可添加、查看、分配和监视员工使用的应用。 有关详细信息，请参阅下列文章：
     - [添加应用](apps-add.md)
     - [分配应用](apps-deploy.md)
     - [监视器应用](apps-monitor.md)
-- **应用配置策略** - 应用配置策略可提供用户在运行应用时可能需要的设置。 有关详细信息，请参阅以下文章：
+- **应用配置策略** - 应用配置策略可提供用户在运行应用时可能需要的设置。 有关详细信息，请参阅下列文章：
     - [Intune 的应用配置策略](app-configuration-policies-overview.md)
         - [iOS 应用配置策略](app-configuration-policies-use-ios.md)
         - [Android 应用配置策略](app-configuration-policies-use-android.md)
@@ -91,7 +90,7 @@ Intune 提供各种功能，用于在所需的设备上获取需要的应用。 
 如需了解更多详情，请参阅[管理应用](app-management.md)。
 
 ### <a name="monitor"></a>监视
-- **应用许可证** - 查看、分配和监视从应用商店批量购买的应用。 有关详细信息，请参阅以下文章：
+- **应用许可证** - 查看、分配和监视从应用商店批量购买的应用。 有关详细信息，请参阅下列文章：
     - [iOS 批量采购计划 (VPP) 应用](vpp-apps-ios.md)
     - [从适用于企业的 Microsoft 应用商店批量购买的应用](windows-store-for-business.md)
 - **发现的应用** - 显示由 Intune 分配并在设备上安装的所有应用。

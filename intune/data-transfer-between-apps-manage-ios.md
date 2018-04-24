@@ -1,25 +1,25 @@
 ---
-title: "管理 iOS 应用之间的数据传输"
+title: 管理 iOS 应用之间的数据传输
 titlesuffix: Microsoft Intune
-description: "了解如何在 Microsoft Intune 中使用移动应用管理策略来管理应用之间的数据传输。"
-keywords: 
+description: 了解如何在 Microsoft Intune 中使用移动应用管理策略来管理应用之间的数据传输。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4c2872e70697b15326f89abd5721048643c5421a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输
 ## <a name="manage-ios-apps"></a>管理 iOS 应用
@@ -63,9 +63,9 @@ ms.lasthandoff: 03/05/2018
 
 2. 在“应用程序配置”部分中，输入以下设置：
 
-  键 = IntuneMAMUPN，值 = <username@company.com>
+   键 = IntuneMAMUPN，值 = <username@company.com>
 
-  键/值对的确切语法可能会因第三方 MDM 提供程序而异。 下表显示了第三方 MDM 提供程序和应为键/值对输入的确切值的示例。
+   键/值对的确切语法可能会因第三方 MDM 提供程序而异。 下表显示了第三方 MDM 提供程序和应为键/值对输入的确切值的示例。
 
 |第三方 MDM 提供程序| Configuration 注册表项 | 值类型 | 配置值|
 | ------- | ---- | ---- | ---- |

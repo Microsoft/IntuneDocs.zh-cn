@@ -1,29 +1,29 @@
 ---
-title: "使用远程擦除来帮助保护数据"
-description: "Intune 提供选择性擦除和完全擦除功能，以删除敏感公司数据和删除对许多公司资源的访问权限。"
-keywords: 
+title: 使用远程擦除来帮助保护数据
+description: Intune 提供选择性擦除和完全擦除功能，以删除敏感公司数据和删除对许多公司资源的访问权限。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>使用 Microsoft Intune 的完全擦除或选择性擦除保护数据
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可以从不再需要的、已重新调整用途的或已丢失的 Intune 托管设备中擦除应用和数据。 若要执行此操作，Intune 将提供选择性擦除和完全擦除功能。 对于在 Intune 中注册的私人所有设备，用户还可从 Intune 公司门户应用中发出远程设备擦除命令。
 
@@ -40,37 +40,37 @@ ms.lasthandoff: 01/30/2018
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>从 Intune 管理员控制台远程擦除设备
 
-1.  选择要擦除的设备。 你可以按用户或设备进行查找。
+1. 选择要擦除的设备。 你可以按用户或设备进行查找。
 
-    -   **按用户：**
+   - **按用户：**
 
-        1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组**&gt;**所有用户**。
+     1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组**&gt;**所有用户**。
 
-        2.  选择要擦除其移动设备的用户的名称。 选择**查看属性**。
+     2.  选择要擦除其移动设备的用户的名称。 选择**查看属性**。
 
-        3.  在用户的“属性”页，选择“设备”，然后选择要擦除的移动设备的名称。 若要选择多个设备，请按住 Ctrl 并单击相应设备。
+     3.  在用户的“属性”页，选择“设备”，然后选择要擦除的移动设备的名称。 若要选择多个设备，请按住 Ctrl 并单击相应设备。
 
-    -   **按设备：**
+   - **按设备：**
 
-        1.  在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组**&gt;**所有移动设备**。
+     1. 在 [Intune 管理员控制台](https://manage.microsoft.com/)中，依次选择**组**&gt;**所有移动设备**。
 
-         ![启动停用或擦除操作](../media/dev-sa-wipe.png)
+        ![启动停用或擦除操作](../media/dev-sa-wipe.png)
 
-        2.  选择“设备”，然后选择要擦除的移动设备的名称。 若要选择多个设备，请按住 Ctrl 并单击相应设备。
+     2. 选择“设备”，然后选择要擦除的移动设备的名称。 若要选择多个设备，请按住 Ctrl 并单击相应设备。
 
-2.  选择**停用/擦除**。
+2. 选择**停用/擦除**。
 
-3.  此时将出现一条确认消息，询问你是否要停用该设备。
+3. 此时将出现一条确认消息，询问你是否要停用该设备。
 
-    -   若要执行仅删除公司应用和数据的“选择性擦除”，请选择“是”。
+   -   若要执行仅删除公司应用和数据的“选择性擦除”，请选择“是”。
 
-    -   若要执行将擦除所有应用和数据并将设备返回到出厂默认设置的“完全擦除”，请选择“在停用之前擦除设备”。 此操作适用于除 Windows 8.1 外的所有平台。 “无法恢复通过完全擦除删除的数据”。
+   -   若要执行将擦除所有应用和数据并将设备返回到出厂默认设置的“完全擦除”，请选择“在停用之前擦除设备”。 此操作适用于除 Windows 8.1 外的所有平台。 “无法恢复通过完全擦除删除的数据”。
 
 如果设备已打开并连接，擦除命令会在 15 分钟内跨所有设备类型进行传播。
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>在 Azure Active Directory 门户中删除设备
 
-1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad) 或从 [https://portal.office.com](https://portal.office.com) 选择**管理**&gt; **Azure AD**。
+1.  浏览到 [http://aka.ms/accessaad](http://aka.ms/accessaad)，或从 [https://portal.office.com](https://portal.office.com) 选择“管理员”&gt;“Azure AD”。
 
 2.  单击页面左侧的链接，使用组织 ID 登录。
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 01/30/2018
 |Wi-Fi 和 VPN 配置文件设置|删除。|
 |证书配置文件设置|已删除并吊销证书。|
 |管理代理|删除管理配置文件。|
-|Email|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
+|电子邮件|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
 |Outlook|已删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。|
 |Azure Active Directory (AAD) 脱离|已删除 AAD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
@@ -118,7 +118,7 @@ ms.lasthandoff: 01/30/2018
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|
 |证书配置文件设置|已吊销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
-|Email|N/A。 查看 Outlook 项。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
+|电子邮件|N/A。 查看 Outlook 项。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|
 |Outlook|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Microsoft Outlook 应用接收的电子邮件。 否则取消注册时不会擦除 Outlook。|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Microsoft Outlook 应用接收的电子邮件。 否则取消注册时不会擦除 Outlook。|
 |Azure Active Directory (AAD) 脱离|已删除 AAD 记录。|已删除 AAD 记录。|
 |联系人 | 将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|将删除从应用直接同步到本机通讯簿的联系人。  无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
@@ -129,13 +129,13 @@ ms.lasthandoff: 01/30/2018
 
 **Windows**
 
-|数据类型|Windows 8.1 (MDM) 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|Windows 10|
+|数据类型|Windows 8.1 (MDM) 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune 安装的公司应用和关联数据|通过 EFS 保护的文件的密钥将被吊销，用户将无法打开文件。|不会删除公司应用。|卸载最初通过公司门户安装的应用。 删除公司应用数据。|将卸载应用并删除旁加载密钥。|
 |设置|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置，用户可以更改设置。|
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|不支持。|删除。|
 |证书配置文件设置|已删除并吊销证书。|已删除并吊销证书。|不支持。|已删除并吊销证书。|
-|Email|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。|不支持。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。 删除由 Intune 预配的邮件帐户。|
+|电子邮件|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。|不支持。|已删除通过 Intune 设置的电子邮件配置文件并删除设备上缓存的电子邮件。|删除启用了 EFS 的电子邮件，包括 Windows 电子邮件的邮件应用以及附件。 删除由 Intune 预配的邮件帐户。|
 |Azure Active Directory (AAD) 脱离|不能。|不能。|已删除 AAD 记录。|不适用。 Windows 10 不支持对已加入 Azure Active Directory 的设备使用选择性擦除。|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>擦除启用了加密文件系统 (EFS) 的内容

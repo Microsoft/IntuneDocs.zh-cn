@@ -1,36 +1,36 @@
 ---
-title: "Azure 门户中 Intune 的简介"
-titlesuffix: 
-description: "Azure 门户中的 Microsoft Intune 可用。 了解有关 Azure 门户中的 Intune 的基础知识。"
-keywords: 
+title: Azure 门户中 Intune 的简介
+titlesuffix: ''
+description: Azure 门户中的 Microsoft Intune 可用。 了解有关 Azure 门户中的 Intune 的基础知识。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 与其他 Azure 服务一样，Microsoft Intune 也可在 Azure 门户中使用。 通过在 Azure 门户中选择 Intune，可管理组织的移动设备、电脑和应用。
 
->[!NOTE] 
+> [!NOTE]
 > 如果已使用以前版本的 Microsoft Intune，可参考以下信息：
-    * [我的功能位于 Azure 的什么位置？](ui-changes.md)是一个参考，显示随着移动到 Azure 而更改的特定工作流程和 UI。
-    * [Azure 门户中的 Intune 经典组](groups-get-started.md)解释了转移到 Azure Active Directory 安全组以进行组管理的含义。
+>     * [我的功能位于 Azure 的什么位置？](ui-changes.md)是一个参考，显示随着移动到 Azure 而更改的特定工作流程和 UI。
+>     * [Azure 门户中的 Intune 经典组](groups-get-started.md)解释了转移到 Azure Active Directory 安全组以进行组管理的含义。
 
 Azure 门户中 Microsoft Intune 的重要功能包括：
 

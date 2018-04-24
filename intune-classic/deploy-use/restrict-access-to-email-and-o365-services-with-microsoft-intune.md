@@ -1,29 +1,29 @@
 ---
-title: "保护电子邮件和 Office 365"
-description: "本主题介绍如何使用条件性访问只允许合规设备在 SharePoint Online 和其他服务上访问公司电子邮件和公司数据。"
-keywords: 
+title: 保护电子邮件和 Office 365
+description: 本主题介绍如何使用条件性访问只允许合规设备在 SharePoint Online 和其他服务上访问公司电子邮件和公司数据。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab45292734c39d3eaf4a5f0403cbff6e77d9d7e6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e121a3aaf4988bd92c36eb79131b2205263fb309
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>使用 Microsoft Intune 保护对电子邮件、Office 365 和其他服务的访问
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 通过使用企业移动性 + 安全性 (EMS) 条件访问，可保护对公司电子邮件、Office 365 服务（如 **Exchange 内部部署**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online**、**Skype for Business Online**）以及其他服务的访问。 该功能可确保只有符合在 Intune 管理控制台或 Azure 经典门户中设置的条件性访问规则的设备，才能访问公司电子邮件和 Office 365 服务。
 ## <a name="how-does-conditional-access-work"></a>条件性访问如何工作？
@@ -72,12 +72,12 @@ Microsoft Intune 与 Azure Active Directory (Azure AD) Premium 无缝地配合�
 
 2. [创建设备合规性策略](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
-2.  为以下任一项 Microsoft 云服务/产品创建条件性访问策略：
+3. 为以下任一项 Microsoft 云服务/产品创建条件性访问策略：
 
-  - [为 Exchange Online 创建条件性访问策略](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [为 Exchange 内部部署创建条件性访问策略](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [为新版 Exchange Online Dedicated 创建条件性访问策略](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [为旧版 Exchange Online Dedicated 创建条件性访问策略](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [为 SharePoint Online 创建条件性访问策略](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [为 Skype for Business Online 创建条件性访问策略](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [为 Dynamics CRM Online 创建条件性访问策略](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [为 Exchange Online 创建条件性访问策略](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [为 Exchange 内部部署创建条件性访问策略](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [为新版 Exchange Online Dedicated 创建条件性访问策略](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [为旧版 Exchange Online Dedicated 创建条件性访问策略](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [为 SharePoint Online 创建条件性访问策略](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [为 Skype for Business Online 创建条件性访问策略](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [为 Dynamics CRM Online 创建条件性访问策略](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

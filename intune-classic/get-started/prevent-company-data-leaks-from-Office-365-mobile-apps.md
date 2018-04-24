@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>快速入门指南：阻止公司数据从 Office 365 移动应用中泄露
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可以使用移动应用管理 (MAM) 策略帮助你保护组织的数据，此策略可防止从 Office 365 移动应用或其他业务线 (LOB) 应用泄露公司数据。 可以使用 Intune MAM 策略，而无需最终用户在 Intune 移动设备管理 (MDM) 中注册其设备。 因此，如果某些用户不希望将其 BYOD iOS 或 Android 移动设备注册到 Microsoft MDM 解决方案（Intune、Configuration Manager 或 EAS），你想要无需管理最终用户设备即可保护公司数据，或者你已在使用非 Microsoft MDM 解决方案，则 Intune 可以帮助你提高公司数据的安全性。   
 
@@ -37,7 +37,7 @@ Microsoft Intune 可以使用移动应用管理 (MAM) 策略帮助你保护组�
 2.  了解在 Azure 门户中[创建 MAM 策略之前需要执行的操作](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
 3.  使用 Intune [创建和部署 MAM 策略](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。
 
-### <a name="additional-information"></a>其他信息：
+### <a name="additional-information"></a>其他信息:
 - 使用启用 MAM 的应用的[最终用户体验](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)。
 - [使用 Intune 准备适用于 MAM 的 LOB 应用](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">Microsoft Intune 应用程序合作伙伴列表 &rarr;</a> 提供启用了 MAM 的应用。

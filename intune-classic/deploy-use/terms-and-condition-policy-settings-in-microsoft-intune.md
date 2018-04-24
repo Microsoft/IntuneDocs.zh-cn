@@ -1,29 +1,29 @@
 ---
-title: "条款和条件策略设置"
-description: "你可以将 Intune 条款和条件部署到用户组，以解释注册、访问工作资源和使用公司门户应用将如何影响设备和用户。"
-keywords: 
+title: 条款和条件策略设置
+description: 你可以将 Intune 条款和条件部署到用户组，以解释注册、访问工作资源和使用公司门户应用将如何影响设备和用户。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75e68a49fb8437bb7742cfa1e458edab5c0b1836
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e639b603e52df621cddaaf9490773336229fc6a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的条款和条件策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可以将 Intune 条款和条件部署到用户组，以解释注册、访问工作资源和使用公司门户对设备和用户有何影响。 用户必须接受这些条款和条件，然后才能使用公司门户进行注册或访问工作。
 

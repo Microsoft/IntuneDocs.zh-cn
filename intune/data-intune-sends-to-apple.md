@@ -1,29 +1,29 @@
 ---
-title: "Intune 向 Apple 发送的数据"
+title: Intune 向 Apple 发送的数据
 titleSuffix: Microsoft Intune
-description: "Intune 向 Apple 发送的数据列表。"
-keywords: 
+description: Intune 向 Apple 发送的数据列表。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c247cfbd715368f65dfb1ba2ce8b5e88a491d302
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: e2829ffe4c8dfffd4d23f4c86b2985d41e983799
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune 向 Apple 发送的数据
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 当在设备上启用了任何以下 Apple 服务时，Microsoft Intune 将与 Apple 建立连接并与 Apple 共享用户和设备信息： 
 

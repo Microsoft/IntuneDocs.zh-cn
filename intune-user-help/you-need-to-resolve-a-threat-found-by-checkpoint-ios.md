@@ -1,25 +1,25 @@
 ---
-title: "解决 SandBlast Mobile Protect 在 iOS 上发现的威胁 | Microsoft Docs"
-description: "了解如何解决 Mobile Protect 在 iOS 上发现的威胁。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 解决 SandBlast Mobile Protect 在 iOS 上发现的威胁 | Microsoft Docs
+description: 了解如何解决 Mobile Protect 在 iOS 上发现的威胁。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 08/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b2a69e7-cc86-4f1b-81d9-35b8b23b937b
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 778feb3efedf0cfe4e0c6e3f1618b0fd53e21129
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a34e73d3209453f07523d1c841e8ba578c85aa3d
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>用户需解除 SandBlast Mobile Protect 发现的威胁
 

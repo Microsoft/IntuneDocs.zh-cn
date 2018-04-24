@@ -11,21 +11,21 @@
 
 1. 登录 [Azure 门户](https://portal.azure.com)，然后选择“Azure Active Directory”。
 
-  ![Azure 门户的屏幕截图](../media/auto-enroll-azure-main.png)
+   ![Azure 门户的屏幕截图](../media/auto-enroll-azure-main.png)
 
 2. 选择“移动性(MDM 和 MAM)”。
 
-  ![Azure 门户的屏幕截图](../media/auto-enroll-mdm.png)
+   ![Azure 门户的屏幕截图](../media/auto-enroll-mdm.png)
 
 3. 选择“Microsoft Intune”。
 
-  ![Azure 门户的屏幕截图](../media/auto-enroll-intune.png)
+   ![Azure 门户的屏幕截图](../media/auto-enroll-intune.png)
 
 4. 配置“MDM 用户作用域”。 指定应由 Microsoft Intune 管理的用户的设备。 这些 Windows 10 设备可自动注册，以使用 Microsoft Intune 进行管理。
 
-  - **无** - MDM 自动注册已禁用
-  - **部分** - 选择可以自动注册 Windows 10 设备的组
-  - **全部** - 所有用户都可以自动注册 Windows 10 设备
+   - **无** - MDM 自动注册已禁用
+   - **部分** - 选择可以自动注册 Windows 10 设备的组
+   - **全部** - 所有用户都可以自动注册 Windows 10 设备
 
       > [!IMPORTANT]
       > 如果为某个组同时启用 MAM 用户作用域和自动 MDM 注册（MDM 用户作用域），只会启用 MAM。 如果用户的工作区加入个人设备，只会为该组的用户添加 MAM。 设备不会自动注册 MDM。

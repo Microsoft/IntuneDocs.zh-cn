@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a19dbd6ad2b65e7d2d090b543f3e2200180c660a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 819c314b2fe69077fb545afa670587c85d4fa7ef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-certificate-infrastructure"></a>配置证书基础结构
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题介绍创建和部署 .PFX 证书配置文件所需具备的条件。
 
@@ -38,21 +38,21 @@ ms.lasthandoff: 03/22/2018
 ## <a name="on-premises-infrastructure-description"></a>本地基础结构说明
 
 
--    **Active Directory 域**：此部分中列出的所有服务器（Web 应用程序代理服务器除外）都必须加入 Active Directory 域。
+- **Active Directory 域**：此部分中列出的所有服务器（Web 应用程序代理服务器除外）都必须加入 Active Directory 域。
 
--  **证书颁发机构**：Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关如何设置证书颁发机构的说明，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
-    如果 CA 是在 Windows Server 2008 R2 上运行，必须[安装 KB2483564 中的修补程序](http://support.microsoft.com/kb/2483564/)。
+- **证书颁发机构**：Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关如何设置证书颁发机构的说明，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
+   如果 CA 是在 Windows Server 2008 R2 上运行，必须[安装 KB2483564 中的修补程序](http://support.microsoft.com/kb/2483564/)。
 
--  **可以与证书颁发机构进行通信的计算机**：或者，使用证书颁发机构计算机本身。
--  **Microsoft Intune 证书连接器**：使用 Intune 管理控制台下载**证书连接器**安装程序 (**ndesconnectorssetup.exe**)。 然后，可以在要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe**。 对于 .PFX 证书配置文件，请在与证书颁发机构进行通信的计算机上安装证书连接器。
--  **Web 应用程序代理服务器**（可选）：你可以使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器。 该配置：
-    -  允许设备使用 Internet 连接接收证书。
-    -  是设备通过 Internet 连接接收和续订证书时的安全建议。
+- **可以与证书颁发机构进行通信的计算机**：或者，使用证书颁发机构计算机本身。
+- **Microsoft Intune 证书连接器**：使用 Intune 管理控制台下载**证书连接器**安装程序 (**ndesconnectorssetup.exe**)。 随后可以在想要安装证书连接器的计算机上运行 **ndesconnectorssetup.exe**。 对于 .PFX 证书配置文件，请在与证书颁发机构进行通信的计算机上安装证书连接器。
+- **Web 应用程序代理服务器**（可选）：你可以使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器。 该配置：
+   -  允许设备使用 Internet 连接接收证书。
+   -  是设备通过 Internet 连接接收和续订证书时的安全建议。
 
- > [!NOTE]           
-> -    托管 WAP 的服务器[必须安装更新程序](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)，以支持网络设备注册服务 (NDES) 使用的长 URL。 此更新程序包括在 [2014 年 12 月更新汇总](http://support.microsoft.com/kb/3013769)中，或单独包括在 [KB3011135](http://support.microsoft.com/kb/3011135) 中。
->-  此外，托管 WAP 的服务器还必须具有与将要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
-    若要了解 WAP 证书，请参阅[规划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的**规划证书**部分。 有关 WAP 服务器的一般信息，请参阅 [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx)（使用 Web 应用程序代理）。|
+  > [!NOTE]           
+  > -    托管 WAP 的服务器[必须安装更新程序](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)，以支持网络设备注册服务 (NDES) 使用的长 URL。 此更新程序包括在 [2014 年 12 月更新汇总](http://support.microsoft.com/kb/3013769)中，或单独包括在 [KB3011135](http://support.microsoft.com/kb/3011135) 中。
+  >-  此外，托管 WAP 的服务器还必须具有与将要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
+   若要了解 WAP 证书，请参阅[规划使用 Web 应用程序代理发布应用程序](https://technet.microsoft.com/library/dn383650.aspx)的**规划证书**部分。 有关 WAP 服务器的一般信息，请参阅 [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx)（使用 Web 应用程序代理）。|
 
 
 ### <a name="certificates-and-templates"></a>证书和模板
@@ -87,7 +87,7 @@ ms.lasthandoff: 03/22/2018
         > [!IMPORTANT]
         > 对于 iOS 和 Mac OS X 证书模板，在“**扩展**”选项卡上编辑“**密钥用法**”并确保未选择“**数字签名为原件的证明**”。
 
-2.  在模板的“常规”选项卡上，查看“有效期”。 默认情况下，Intune 使用模板中配置的值。 不过，可以视需要将 CA 配置为允许申请者指定其他值，随后便能够在 Intune 管理员控制台中设置此值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
+2.  在模板的“常规”选项卡上查看“有效期”。 默认情况下，Intune 使用模板中配置的值。 不过，可以视需要将 CA 配置为允许申请者指定其他值，随后便能够在 Intune 管理员控制台中设置此值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
 
     > [!IMPORTANT]
     > 无论你所做出的其他配置是什么，iOS 和 Mac OS X 平台都始终使用模板中设置的值。
@@ -123,36 +123,36 @@ ms.lasthandoff: 03/22/2018
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>下载、安装和配置证书连接器
 
-1.  打开“[Intune 管理控制台](https://manage.microsoft.com)”，然后选择“**管理**&gt;“**移动设备管理**”&gt;“**证书连接器**”&gt;“**下载证书连接器**”。
+1. 打开“[Intune 管理控制台](https://manage.microsoft.com)”，然后选择“**管理**&gt;“**移动设备管理**”&gt;“**证书连接器**”&gt;“**下载证书连接器**”。
 
-2.  下载完成之后，运行下载的安装程序 (**ndesconnectorssetup.exe**)。
+2. 下载完成之后，运行下载的安装程序 (**ndesconnectorssetup.exe**)。
 
-  在能够与证书颁发机构连接的计算机上运行安装程序。 选择“.PFX 分发”选项，然后选择“**安装**”。 安装完成后，如[配置证书配置文件](configure-intune-certificate-profiles.md)中所述，继续创建证书配置文件。
+   在能够与证书颁发机构连接的计算机上运行安装程序。 选择“.PFX 分发”选项，然后选择“**安装**”。 安装完成后，如[配置证书配置文件](configure-intune-certificate-profiles.md)中所述，继续创建证书配置文件。
 
    <!-- Not sure about step 3 below -->
 
-3.  提示输入证书连接器的客户端证书时，选取“**选择**”，然后选择任务 3 中安装的**客户端身份验证**证书。
+3. 提示输入证书连接器的客户端证书时，选取“**选择**”，然后选择任务 3 中安装的**客户端身份验证**证书。
 
-    选择客户端身份验证证书后，将返回“Microsoft Intune 证书连接器的客户端证书”区域。 选择“下一步”查看相应证书的属性，尽管选择的证书不会显示。 然后，依次选择“下一步”和“安装”。
+   选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书” 处。 选择“下一步”查看相应证书的属性，尽管选择的证书不会显示。 然后，依次选择“下一步”和“安装”。
 
-4.  在向导完成后，先单击“启动证书连接器 UI”，然后再关闭向导。
+4. 在向导完成后，先单击“启动证书连接器 UI”，然后再关闭向导。
 
-    > [!TIP]
-    > 如果在启动证书连接器 UI 前关闭了向导，你可以通过运行以下命令重新打开它：
-    >
-    > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
+   > [!TIP]
+   > 如果在启动证书连接器 UI 前关闭了向导，你可以通过运行以下命令重新打开它：
+   >
+   > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
-5.  在“证书连接器”UI 中：
+5. 在“证书连接器”UI 中：
 
-    a. 选择“登录”，然后输入 Intune 服务管理员凭据或拥有全局管理权限的租户管理员的凭据。
+   a. 选择“登录”，然后输入 Intune 服务管理员凭据或拥有全局管理权限的租户管理员的凭据。
 
-    b. 选择“高级”选项卡，然后输入在证书颁发机构上拥有“颁发和管理证书”权限的帐户的凭据。
+   b. 选择“高级”选项卡，然后输入在证书颁发机构上拥有“颁发和管理证书”权限的帐户的凭据。
 
-    c. 选择“应用”。
+   c. 选择“应用”。
 
-    你现在可以关闭证书连接器 UI。
+   你现在可以关闭证书连接器 UI。
 
-6.  打开命令提示符，然后键入“services.msc”。 然后按 **Enter** 键，右键单击“**Intune 连接器服务**”后选择“**重新启动**”。
+6. 打开命令提示符，然后键入“services.msc”。 然后按 **Enter** 键，右键单击“**Intune 连接器服务**”后选择“**重新启动**”。
 
 
 ### <a name="next-steps"></a>后续步骤

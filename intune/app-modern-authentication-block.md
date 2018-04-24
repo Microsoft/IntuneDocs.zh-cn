@@ -1,29 +1,29 @@
 ---
-title: "屏蔽在 Intune 上不使用现代验证的应用"
+title: 屏蔽在 Intune 上不使用现代验证的应用
 titleSuffix: Microsoft Intune
-description: "了解如何屏蔽不使用新式身份验证 (ADAL) 的应用。"
-keywords: 
+description: 了解如何屏蔽不使用新式身份验证 (ADAL) 的应用。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 798a1552e27d21c699e1ac8f22fedbad4b7c624e
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 796e64d40ce111edccf6cd6a6e97f1cadf2443e5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>屏蔽不使用现代验证 (ADAL) 的应用
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用应用保护策略且基于应用的条件访问依赖使用[现代验证](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)（即实现 OAuth2）的应用。 虽然目前大部分 Office 移动和桌面应用都使用新式身份验证，但也有第三方应用和旧版 Office 应用使用其他身份验证方法（如基本身份验证和基于窗体的身份验证）。
 
@@ -34,7 +34,6 @@ ms.lasthandoff: 03/05/2018
 
 ```
  Set-SPOTenant -LegacyAuthProtocolsEnabled $false
-
 ```
 
 

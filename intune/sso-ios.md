@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: b9afd14fd3ba4e464f0bf09c228290ef2f19eac3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>配置 Microsoft Intune for iOS 设备 SSO
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 大多数业务线 (LOB) 应用需要某种级别的用户身份验证，才能支持安全性。 在许多情况下，这需要用户多次输入同一凭据，这可能会让用户感到失望。 为改善用户体验，开发人员可以创建使用 SSO 的应用，从而减少用户必须提供凭据的次数。
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/20/2018
 
 8. 使用以下摘要表格，帮助填写“单一登录”窗格上的字段。 有关详细信息，请参阅表格后的各节。
 
-   |字段  |注意|
+   |字段  |注释|
    |---------|---------|
    |**来自 AAD 的用户名属性**|Intune 为 AAD 中的每个用户查看的属性，并在生成安装于设备上的 XML 有效负载之前填充相应字段（如 UPN）。|
    |**领域**|URL 的域部分。|

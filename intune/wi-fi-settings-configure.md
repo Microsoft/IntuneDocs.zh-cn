@@ -1,27 +1,27 @@
 ---
-title: "如何配置 Intune Wi-Fi 设置"
+title: 如何配置 Intune Wi-Fi 设置
 titleSuffix: Microsoft Intune
-description: "了解如何使用 Microsoft Intune 来配置所管理设备上的 Wi-Fi 连接。"
-keywords: 
+description: 了解如何使用 Microsoft Intune 来配置所管理设备上的 Wi-Fi 连接。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用 Microsoft Intune Wi-Fi 配置文件将无线网络设置分配到组织中的用户和设备。 分配 Wi-Fi 配置文件后，你的用户将有权访问你公司的 Wi-Fi 网络，而无需自行配置。
 
@@ -47,7 +47,7 @@ Wi-Fi 配置文件支持以下设备平台：
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>创建包含 Wi-Fi 设置的设备配置文件
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格上，选择“设备配置”。
 2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
 3. 在“配置文件”窗格上，选择“创建配置文件”。

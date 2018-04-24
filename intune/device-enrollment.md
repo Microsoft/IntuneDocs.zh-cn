@@ -1,27 +1,27 @@
 ---
-title: "什么是 Microsoft Intune 设备注册"
+title: 什么是 Microsoft Intune 设备注册
 titlesuffix: Microsoft Intune
-description: "了解 iOS 设备、Android 设备和 Windows 设备注册。"
-keywords: 
+description: 了解 iOS 设备、Android 设备和 Windows 设备注册。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 可让你管理员工的设备和应用，以及他们访问公司数据的方式。 要使用此移动设备管理 (MDM)，必须先在 Intune 服务中注册设备。 设备注册后，系统会向其颁发 MDM 证书。 此证书可用于与 Intune 服务进行通信。
 
@@ -68,9 +68,9 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 自带设备办公 (BYOD) 指代的设备包括个人电话、平板电脑和电脑。 用户安装并运行公司门户应用，以注册 BYOD。 此程序可让用户访问电子邮件等公司资源。
 
 ## <a name="corporate-owned-device"></a>公司拥有的设备
-公司拥有的设备 (COD) 包括组织拥有并分发给员工的电话、平板电脑和电脑。 COD 注册支持多种方案，例如自动注册、共享设备或预授权注册需求。 管理员或经理注册 COD 的常用方法是使用设备注册管理员 (DEM)。 可直接通过 Apple 提供的设备注册计划 (DEP) 工具注册 iOS 设备。 也可将具有 IMEI 号码的设备标识并标记为“公司拥有”。
+公司拥有的设备 (COD) 包括组织拥有并分发给员工的电话、平板电脑和电脑。 COD 注册支持多种方案，例如自动注册、共享设备或预授权注册需求。 管理员或经理注册 COD 的常用方法是使用设备注册管理器 (DEM)。 可直接通过 Apple 提供的设备注册计划 (DEP) 工具注册 iOS 设备。 也可将具有 IMEI 号码的设备标识并标记为“公司拥有”。
 
-### <a name="device-enrollment-manager"></a>设备注册管理员
+### <a name="device-enrollment-manager"></a>设备注册管理器
 设备注册管理员 (DEM) 是一个特殊的用户帐户，用于注册和管理多个企业拥有的设备。 管理员可安装公司门户并注册多个无用户设备。 了解有关 [DEM](./device-enrollment-manager-enroll.md) 的详细信息。
 
 ### <a name="apple-device-enrollment-program"></a>Apple 设备注册计划

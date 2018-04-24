@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>配置 Itune 证书配置文件
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 按照[为 SCEP 配置证书基础结构](configure-certificate-infrastructure-for-scep.md)或[为 PFX 配置基础结构](configure-certificate-infrastructure-for-pfx.md)中所述配置基础结构和证书后，可以创建证书配置文件。 过程如下：
 
@@ -92,39 +92,39 @@ ms.lasthandoff: 03/22/2018
 
 -  Windows Phone 8.1 及更高版本
 
-2.  添加 **SCEP 证书配置文件**策略
+2. 添加 **SCEP 证书配置文件**策略
 
-    了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
+   了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
 
-3.  按照配置文件配置页上的说明配置 SCEP 证书配置文件设置。
-    > [!NOTE]
-    >
-    > 在“使用者名称格式”中选择“自定义”，输入自定义使用者名称格式（仅限 iOS 配置文件）。
-    >
-    > 自定义格式当前支持的两个变量为 `Common Name (CN)` 和 `Email (E)`。 通过使用这些变量和静态字符串的组合，你可以创建自定义使用者名称格式，如下所示：
+3. 按照配置文件配置页上的说明配置 SCEP 证书配置文件设置。
+   > [!NOTE]
+   > 
+   > 在“使用者名称格式”中选择“自定义”，输入自定义使用者名称格式（仅限 iOS 配置文件）。
+   > 
+   > 自定义格式当前支持的两个变量为 `Common Name (CN)` 和 `Email (E)`。 通过使用这些变量和静态字符串的组合，你可以创建自定义使用者名称格式，如下所示：
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > 在本示例中，管理员创建了使用者名称格式，其中除了使用 `CN` 和 `E` 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)列出了受支持的字符串。
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > 在本示例中，管理员创建了使用者名称格式，其中除了使用 `CN` 和 `E` 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)列出了受支持的字符串。
-
-4.  选择“**保存策略**”。
+4. 选择“**保存策略**”。
 
 新的策略将显示在“**策略**”工作区中。 现在你可以进行部署。
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>创建 .PFX 证书配置文件
 
-1.  在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”，然后选择设备平台。 对于以下各项支持 .PFX 证书：
-  - Android 4 及更高版本
-  - Android for Work
-  - Windows 10 及更高版本
-  - Windows Phone 10 及更高版本
-  - iOS 8.0 及更高版本）    
+1. 在 [Intune 管理控制台](https://manage.microsoft.com)中，选择“策略”&gt;“添加策略”，然后选择设备平台。 对于以下各项支持 .PFX 证书：
+   - Android 4 及更高版本
+   - Android for Work
+   - Windows 10 及更高版本
+   - Windows Phone 10 及更高版本
+   - iOS 8.0 及更高版本）    
 
 
-2.  添加 **.PFX 证书配置文件**策略。
-      了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
-3.  在策略窗体上输入请求的信息。
-4.  选择“**保存策略**”。
+2. 添加 **.PFX 证书配置文件**策略。
+     了解详细信息：[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)。
+3. 在策略窗体上输入请求的信息。
+4. 选择“**保存策略**”。
 
 新的策略将显示在“**策略**”工作区中。 现在你可以进行部署。
 

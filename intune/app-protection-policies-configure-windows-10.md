@@ -15,15 +15,15 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a394b3b218613459d993b84fcb0ea7a37d4ac4dd
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 16c579bb4eb475bc92260e55f2e47335efc73e03
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>准备好配置面向 Windows 10 的应用保护策略 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 通过在 Azure AD 中设置 MAM 提供程序为 Windows 10 启用移动应用程序管理 (MAM)。 通过在 Azure AD 中设置 MAM 提供程序，可以在使用 Intune 创建新的 Windows 信息保护 (WIP) 策略时定义注册状态。 注册状态可以是 MAM 或移动设备管理 (MDM)。
 

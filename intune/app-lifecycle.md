@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune 的应用生命周期概述"
-description: "了解 Microsoft Intune 中托管的应用生命周期。 应用生命周期涉及到添加、部署、配置、保护和停用应用。"
-keywords: 
+title: Microsoft Intune 的应用生命周期概述
+description: 了解 Microsoft Intune 中托管的应用生命周期。 应用生命周期涉及到添加、部署、配置、保护和停用应用。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps
-ms.openlocfilehash: 732323d1d882a256128ae731cab68656126583b2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 853873480beb5e95a195e04e251cea9975ce03b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune 中的应用生命周期概述
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 当添加 Microsoft Intune 应用并进一步完成其他阶段时，该应用的生命周期便已开始，直到删除它。 通过了解这些阶段，可掌握在 Intune 中开始进行应用管理所需的详细信息。
 

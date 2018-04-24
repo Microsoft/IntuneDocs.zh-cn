@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0b0fbfce086729551b211dd4bc4b83348aa4787
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1f9446da0f553dca29bbfd96b99711c895cd8533
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>仅允许支持 Intune 应用保护策略的移动应用访问 Office 365 服务
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 [Intune 应用保护策略](protect-apps-and-data-with-microsoft-intune.md)可帮助保护在 Intune 中注册进行管理的设备上的公司数据。 还可在 **Intune 中注册进行管理的员工自有设备**上使用应用保护策略。  在这种情况下，即使不管理该设备，仍需要确保公司数据和资源受保护。 使用基于应用的 MAM 条件性访问，可创建相应策略，仅允许支持 Intune 应用保护策略的移动应用访问 O365 服务（如 Exchange Online）。
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/22/2018
 * **AAD**：Azure Active Directory
 * **EAS**：Exchange Active Sync
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 创建基于应用的条件性访问策略之前，必须具有“企业移动性 + 安全性”或 Azure Active Directory Premium 订阅，且用户必须获得 EMS 或 Azure AD 许可。 有关详细信息，请参阅[企业移动性定价页](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)或 [Azure Active Directory 定价页](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 

@@ -14,11 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: d32c024d6cd526062c373b56dd18bca9480c32fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova 插件
 
@@ -72,16 +72,16 @@ ms.lasthandoff: 03/16/2018
 
 1. 更新 ADAL 版本：
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. 添加 Intune App SDK for Cordova 插件：
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## <a name="build-the-plugin-into-your-ios-app"></a>将插件内置到 iOS 应用
 
@@ -131,7 +131,7 @@ Intune 目前不支持在 `build.json` 中或通过参数提供的任意位置�
 * MultiDex 支持不完整。
 * 应用必须具有 `minSdkVersion` 14 和 `targetSdkVersion` 24 或更低版本。 Intune 目前不支持面向 API 25 的应用
 * Intune 不能对已使用 V2 签名方案签名的应用重新签名。 当该插件包装 V2 签名的应用时，包装的输出 .apk 是未签名的。
-*
+  *
   * 你可以通过将以下内容添加到 `build-extras.gradle` 文件，禁用 Cordova 的默认 V2 签名：
 
   ```gradle

@@ -1,28 +1,28 @@
 ---
-title: "在 Microsoft Intune 中创建证书配置文件 - Azure | Microsoft Docs"
-description: "针对所用设备，通过配置 SCEP 或 PKCS 证书环境来添加或创建证书配置文件、导出公共证书、在 Azure 门户中创建配置文件，然后在 Azure 门户中向 Microsoft Intune 证书配置文件 分配 SCEP 或 PKCS"
-keywords: 
+title: 在 Microsoft Intune 中创建证书配置文件 - Azure | Microsoft Docs
+description: 针对所用设备，通过配置 SCEP 或 PKCS 证书环境来添加或创建证书配置文件、导出公共证书、在 Azure 门户中创建配置文件，然后在 Azure 门户中向 Microsoft Intune 证书配置文件 分配 SCEP 或 PKCS
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为设备配置证书配置文件
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 通过 VPN、Wi-Fi 或电子邮件配置文件给予用户对公司资源的访问权限时，可以使用证书对这些连接进行身份验证。 使用证书时，无需输入用户名和密码即可对连接进行身份验证
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 03/08/2018
 必须先创建受信任的证书配置文件，才可创建 SCEP 或 PKCS 证书配置文件。 对于每个设备平台，需要一个受信任的证书配置文件和一个 SCEP 或 PKCS 配置文件。 为每个设备平台创建受信任的证书的步骤是相似的。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格上，选择“设备配置”。
 2. 在“设备配置”窗格上，选择“管理” > “配置文件”。
 3. 在“配置文件”窗格上，选择“创建配置文件”。

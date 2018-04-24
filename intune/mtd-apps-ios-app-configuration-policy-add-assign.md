@@ -1,25 +1,25 @@
 ---
-title: "向 Microsoft Intune 添加并分配 MTD 应用"
-titleSuffix: 
-description: "在 Azure 门户中使用 Intune 添加移动威胁防御 (MTD) 应用、Microsoft Authenticator 应用和 iOS 配置策略。"
-keywords: 
+title: 向 Microsoft Intune 添加并分配 MTD 应用
+titleSuffix: ''
+description: 在 Azure 门户中使用 Intune 添加移动威胁防御 (MTD) 应用、Microsoft Authenticator 应用和 iOS 配置策略。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/08/2018
 > [!TIP]
 > Intune 公司门户在 Android 设备上以中转站的方式工作，以便用户能够让 Azure AD 检查自己的标识。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 -   需要在 [Azure 门户](https://portal.azure.com/)中完成以下步骤。
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 03/08/2018
 通过执行以下操作为 iOS 用户启用 Azure Active Directory 身份验证：
 
 1. 转到 [Azure 门户](https://portal.azure.com)，使用自己的凭据登录，然后导航到应用程序页。
-  
+
 2. 添加 **Lookout for Work iOS 应用**作为**本机客户端应用程序**。
 
 3. 将 **com.lookout.enterprise.yourcompanyname** 替换为对 IPA 签名时选择的客户捆绑 ID。
@@ -133,13 +133,13 @@ ms.lasthandoff: 03/08/2018
 
 -   需要**下载** iOS 应用配置策略文件： 
     -   转到 [Skycure 管理控制台](https://aad.skycure.com)并使用管理员凭据登录。
-    
+
     -   转到“设置”&gt;“设备管理集成”&gt;“EMM 集成选择”，选择“Microsoft Intune”，然后保存所做选择。
-    
+
     -   单击“集成设置文件”链接，然后保存生成的 \*.zip 文件。 该 .zip 文件包含 **skycure\_configuration.plist** 文件，该文件用于在 Intune 中创建 iOS 应用配置策略。
-    
+
     -   请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，添加 Skycure iOS 应用配置策略。
-    
+
     - 在“步骤 8”中，使用选项“输入 XML 数据”，复制 **skycure_configuration.plist** 文件中的内容并将粘贴到配置策略正文。
 
 还可从此处复制 skycure_configuration.plist 内容：
@@ -151,7 +151,6 @@ ms.lasthandoff: 03/08/2018
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>有关 Check Point SandBlast Mobile 的信息
 
@@ -160,7 +159,6 @@ ms.lasthandoff: 03/08/2018
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>对于 Zimperium
@@ -179,7 +177,6 @@ ms.lasthandoff: 03/08/2018
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>分配应用（所有 MTD 合作伙伴）

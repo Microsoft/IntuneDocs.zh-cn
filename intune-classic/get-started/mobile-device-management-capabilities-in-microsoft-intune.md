@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c6f49bf8ef934dc4b697e5d4392bde44aeb8baee
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 48b9650a8f0d6a79b3abab542148acf0a57c0e41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 已注册设备管理功能
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 通过在 Microsoft Intune 服务中*注册*设备，你可以使用 Microsoft Intune 管理各种设备。 你可自己注册一些设备类型，或者用户可使用公司门户应用注册。 这还可让他们执行浏览和安装应用、确保其设备符合公司策略以及联系其 IT 支持人员等操作。
 
@@ -66,6 +66,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="inventory-and-reporting"></a>清单和报告
 
-|功能|详细信息|更多信息|
-|--------------|-----------|--------------------|
-|清单和报告|查找有关你管理的设备以及设备正在使用的软件的信息。|[在 Microsoft Intune 中通过清单了解设备](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|       功能        |                                             详细信息                                              |                                                                  更多信息                                                                   |
+|-------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 清单和报告 | 查找有关你管理的设备以及设备正在使用的软件的信息。 | [在 Microsoft Intune 中通过清单了解设备](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) |
+

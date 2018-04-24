@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1fbb0ccd21ff15cf86656d7badf08002f1e42bb3
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ff642c7d8d836979fadebc799e2e7373cd299f4e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>为 Symantec PKI Manager Web 服务设置 Intune 证书连接器
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍如何安装和配置 Intune 证书连接器，以便从 Symantec PKI Manager Web 服务向 Intune 管理的设备颁发 PKCS 证书。
 
@@ -112,7 +112,7 @@ Symantec PKI Manager Web 服务在本文中称为 Symantec CA。 如果你已配
 
    b. 在指定文本框中提供证书友好名称。
 
-   c. 单击“继续”。
+   c. 单击“继续” 。
 
       将显示 RA 证书的可下载链接。
 
@@ -136,7 +136,7 @@ Symantec PKI Manager Web 服务在本文中称为 Symantec CA。 如果你已配
 
     h. 选择“个人证书存储”，然后单击“下一步”。
 
-    i. 单击 **“完成”**。 这会将 RA 证书及其私钥导入本地计算机个人存储。  
+    i. 单击“完成” 。 这会将 RA 证书及其私钥导入本地计算机个人存储。  
 
 6. 导出和导入私钥证书：
 
@@ -306,7 +306,7 @@ Intune 证书连接器服务日志位于 NDES 连接器计算机上的 `%Program
 
 | 问题/错误消息 | 解决步骤 |
 | --- | --- |
-| 无法使用 NDES 连接器 UI 上的 Intune 租户管理员帐户登录 | Intune 管理门户中未启用本地证书连接器时，可能会发生这种情况。 要解决此问题，请执行以下步骤： <br><br> 从 Silver Light UI： <br> 1.登录到 [Intune 管理门户](https://admin.manage.microsoft.com) <br> 2.单击“管理” <br> 3.选择“移动设备管理”>“证书连接器” <br> 4.单击“配置本地证书连接器”。 <br> 5.选择“启用证书连接器”复选框。 <br> 6.单击" **确定**"。 <br><br>或者 <br><br> 从 Azure 门户 UI： <br> 1.登录到 [Azure 门户](https://portal.azure.com) <br> 2.转到 Microsoft Intune <br> 3.选择“设备配置” > “证书颁发机构” <br> 4.单击“启用”。 <br><br> 在从 Silver Light UI 或 Azure 门户完成前述步骤之后，尝试使用相同的 Intune 租户管理员帐户登录 NDES 连接器 UI。 |
+| 无法使用 NDES 连接器 UI 上的 Intune 租户管理员帐户登录 | Intune 管理门户中未启用本地证书连接器时，可能会发生这种情况。 要解决此问题，请执行以下步骤： <br><br> 从 Silver Light UI： <br> 1.登录到 [Intune 管理门户](https://admin.manage.microsoft.com) <br> 2.单击“管理” <br> 3.选择“移动设备管理”>“证书连接器” <br> 4.单击“配置本地证书连接器”。 <br> 5.选择“启用证书连接器”复选框。 <br> 6.单击“确定” 。 <br><br>或 <br><br> 从 Azure 门户 UI： <br> 1.登录到 [Azure 门户](https://portal.azure.com) <br> 2.转到 Microsoft Intune <br> 3.选择“设备配置” > “证书颁发机构” <br> 4.单击“启用”。 <br><br> 在从 Silver Light UI 或 Azure 门户完成前述步骤之后，尝试使用相同的 Intune 租户管理员帐户登录 NDES 连接器 UI。 |
 | 找不到 NDES 连接器证书。 <br><br> System.ArgumentNullException: 值不能为 null。 | 如果 Intune 租户管理员帐户从未登录到 NDES 连接器 UI，则 Intune 证书连接器会显示此错误。 <br><br> 如果此错误仍然存在，请重新启动 Intune 服务连接器。 <br><br> 1.打开 services.msc <br> 2.选择“Intune 连接器服务”。 <br> 3.单击右键并选择“重新启动”。|
 | NDES 连接器 - IssuePfx - 常规异常： <br> System.NullReferenceException: 对象引用未设置为某个对象的实例。 | 此错误是暂时的。 重新启动 Intune 服务连接器。 <br><br> 1.打开 services.msc <br> 2.选择“Intune 连接器服务”。 <br> 3.单击右键并选择“重新启动”。 |
 | Symantec 提供程序 - 无法获取 Symantec 策略，“操作已超时” | Intune 证书连接器在与 Symantec CA 通信时收到“操作已超时”错误。 如果此错误继续出现，请增加连接超时值并重试。 <br><br> 要增加连接超时值： <br> 1.转到 NDES 连接器计算机。 <br>2.在记事本中打开 `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` 文件。 <br> 3.增加以下参数的超时值： <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4.重新启动 Intune 连接器服务。 <br><br> 如果问题仍然存在，请联系 Symantec 客户支持部门。 |

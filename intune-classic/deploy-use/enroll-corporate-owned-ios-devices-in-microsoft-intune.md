@@ -1,5 +1,5 @@
 ---
-title: 注册企业所有的 iOS 设备
+title: 注册企业拥有的 iOS 设备
 description: 使用 Apple 设备注册程序 (DEP) 或 Apple 配置器注册企业自有的 iOS 设备
 keywords: ''
 author: nathbarn
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e07bc0eb78145d508085120e9ef764cc4b02ae4d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93ff84d263c2fe8825d2cf5a86249bbf19cb9173
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中注册企业所有的 iOS 设备
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 支持注册公司所有的 iOS 设备，方法是使用 Apple 的设备注册程序 (DEP)，或在 Mac 计算机上运行的 [Apple 配置器](https://go.microsoft.com/fwlink/?LinkId=518017)工具。
 
@@ -71,11 +71,11 @@ DEP 将注册配置文件“无线”部署到通过 DEP 购买的设备。 用�
 
 5. 登录后，系统会提示用户注册其设备。 第一步是识别其设备。 应用会提供一份已为公司注册并已被分配到用户的 Intune 帐户的 iOS 设备列表。 他们应选择匹配的设备。
 
-  如果该设备还不是公司注册的设备，他们应选择“**新设备**”以使用标准注册流程继续操作。
+   如果该设备还不是公司注册的设备，他们应选择“**新设备**”以使用标准注册流程继续操作。
 
 6. 在下一个屏幕上，用户必须确认新设备的序列号。 用户可以点击“确认序列号”链接，以启动有关如何使用“设置”应用验证序列号的说明。 然后用户必须将序列号的最后 4 个字符输入到公司门户应用中。
 
-  此步骤验证该设备是否是在 Intune 中注册的企业设备。 如果设备上的序列号不匹配，则选择了错误的设备。 用户需返回到上一屏幕并选择其他设备。
+   此步骤验证该设备是否是在 Intune 中注册的企业设备。 如果设备上的序列号不匹配，则选择了错误的设备。 用户需返回到上一屏幕并选择其他设备。
 
 7. 验证序列号后，公司门户应用将重定向到公司门户网站以完成注册。 然后该网站会提示用户返回到应用。
 

@@ -1,36 +1,36 @@
 ---
-title: "保护发送到 Exchange Online 的电子邮件"
-description: "使用条件访问保护和控制对 Exchange Online 的公司电子邮件的访问。"
-keywords: 
+title: 保护发送到 Exchange Online 的电子邮件
+description: 使用条件访问保护和控制对 Exchange Online 的公司电子邮件的访问。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5b0bb2b518705c92089e1e9ed1d1cfece7f2572f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5ea0e0c31dc3b24c0093d6e3b73d38f2bee50bd7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>使用 Intune 保护对 Exchange Online 和新版 Exchange Online Dedicated 的电子邮件访问
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可通过 Microsoft Intune 配置对 Exchange Online 或 Exchange Online Dedicated 的条件性访问。 若要深入了解条件访问的工作原理，请阅读[保护对电子邮件、O365 服务和其他服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)一文。
 
 > [!NOTE]
 >如果具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 若要配置条件性访问，必须：
 
@@ -48,13 +48,13 @@ ms.lasthandoff: 10/10/2017
 
 配置条件性访问策略并将它们面向用户时，在用户可以连接到其电子邮件前，他们使用的**设备**必须：
 
--   是已加入域的电脑或已向 Intune **注册**。
+- 是已加入域的电脑或已向 Intune **注册**。
 
--  **已在 Azure Active Directory 中注册**。 向 Intune 注册设备时，会自动发生此情况。 此外，还必须向 Azure Active Directory 注册客户端 Exchange ActiveSync ID。
+- **已在 Azure Active Directory 中注册**。 向 Intune 注册设备时，会自动发生此情况。 此外，还必须向 Azure Active Directory 注册客户端 Exchange ActiveSync ID。
 
   Azure Active Directory 设备注册服务自动对 Intune 和 Office 365 客户激活。 已经部署了 ADFS 设备注册服务的用户不会在本地 Active Directory 上看到已注册的设备。
 
--   **符合**任何已部署到该设备或已加入到本地域的域的 Intune 符合性策略。
+- **符合**任何已部署到该设备或已加入到本地域的域的 Intune 符合性策略。
 
 ### <a name="when-the-device-is-not-compliant"></a>设备不合规时
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 10/10/2017
 
 可设置电脑的条件性访问，该电脑运行 Office 桌面应用程序以访问满足以下要求的电脑上的 **Exchange Online** 和 **SharePoint Online**：
 
--   电脑必须运行 Windows 7.0、Windows 8.1 或 Windows 10。
+- 电脑必须运行 Windows 7.0、Windows 8.1 或 Windows 10。
 
   >[!NOTE]
   > 若要使用 Windows 10 电脑的条件访问，必须使用 Windows 10 周年更新更新电脑。
@@ -117,13 +117,13 @@ ms.lasthandoff: 10/10/2017
   对于加入域的电脑，必须设置条件性访问以便[自动向 Azure Active Directory.注册设备](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)。
 
   >[!NOTE]
-    >运行 Intune 计算机客户端的电脑不支持条件访问。
+  >运行 Intune 计算机客户端的电脑不支持条件访问。
 
--   [Office 365 新式验证必须已启用](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，并且具有所有最新的 Office 更新。
+- [Office 365 新式验证必须已启用](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，并且具有所有最新的 Office 更新。
 
-    新式验证将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Office 2013/Windows 客户端中。 此方法实现了诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。
+  新式验证将基于 Active Directory 身份验证库 (ADAL) 的登录引入到 Office 2013/Windows 客户端中。 此方法实现了诸如“多重身份验证”和“基于证书的身份验证”等更佳的安全性。
 
--   设置 ADFS 声明规则以阻止“非新式验证”协议。 方案 3 中提供了详细的说明 - [阻止除了基于浏览器的应用程序之外的其他所有应用程序访问 O365](https://technet.microsoft.com/library/dn592182.aspx)。
+- 设置 ADFS 声明规则以阻止“非新式验证”协议。 方案 3 中提供了详细的说明 - [阻止除了基于浏览器的应用程序之外的其他所有应用程序访问 O365](https://technet.microsoft.com/library/dn592182.aspx)。
 
 ## <a name="configure-conditional-access"></a>配置条件性访问
 ### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>步骤 1：配置和部署合规性策略
@@ -161,10 +161,12 @@ ms.lasthandoff: 10/10/2017
 阻止属于目标组的设备访问 Exchange，除非列值与下表中列出的值匹配：
 
 --------------------------
-|管理通道|已向 ADD 注册|是否满足条件|Exchange ActiveSync ID|产生的操作|
-|----------------------|------------------|-------------|--------------------------|--------------------|
-|**由 Microsoft Intune 和 Exchange ActiveSync 管理**|是|是|显示一个值|允许电子邮件访问|
-|任何其他值|否|否|不显示任何值|阻止电子邮件访问|
+
+|                          管理通道                          | 已向 ADD 注册 | 是否满足条件 | Exchange ActiveSync ID |    产生的操作     |
+|----------------------------------------------------------------------|----------------|-----------|------------------------|-------------------------|
+| <strong>由 Microsoft Intune 和 Exchange ActiveSync 管理</strong> |      是       |    是    |  显示一个值  | 允许电子邮件访问 |
+|                           任何其他值                            |       否       |    否     | 不显示任何值  | 阻止电子邮件访问 |
+
 ----------------------
 你可以导出报告的内容，并使用“电子邮件地址”列来通知用户他们将会被阻止。
 
@@ -185,71 +187,71 @@ ms.lasthandoff: 10/10/2017
 
 ### <a name="step-4-configure-the-conditional-access-policy"></a>步骤 4：配置条件访问策略
 
->[!NOTE]
+> [!NOTE]
 > 此外，还可在 Azure AD 管理控制台中创建条件访问策略。 Azure AD 管理控制台允许创建除其他条件访问策略（如多重身份验证）之外的 Intune 设备条件访问策略（在 Azure AD 中称为 **基于设备的条件访问策略**）。
+> 
+> 还可为 Azure AD 支持的第三方企业应用（如 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将访问控制的基于 Azure Active Directory 设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
 
->还可为 Azure AD 支持的第三方企业应用（如 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将访问控制的基于 Azure Active Directory 设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
 
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件性访问” > “Exchange Online 策略”。
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件性访问” > “Exchange Online 策略”。
+2. 在“Exchange Online 策略”页面上，选择“启用 Exchange Online 的条件访问策略”。
 
-2.  在“Exchange Online 策略”页面上，选择“启用 Exchange Online 的条件访问策略”。
+   > [!NOTE]
+   > 如果尚未部署合规性策略，那么设备将被视为合规。
+   >
+   > 无论符合性状态如何，策略针对的所有用户都需要向 Intune 注册其设备。
 
-    > [!NOTE]
-    > 如果尚未部署合规性策略，那么设备将被视为合规。
-    >
-    > 无论符合性状态如何，策略针对的所有用户都需要向 Intune 注册其设备。
+3. 在“应用程序访问”下，对于使用新式验证的应用，有两种方式可选择策略应该应用到的平台。 受支持的平台包括 Android、iOS、Windows 和 Windows Phone。
 
-3.  在“应用程序访问”下，对于使用新式验证的应用，有两种方式可选择策略应该应用到的平台。 受支持的平台包括 Android、iOS、Windows 和 Windows Phone。
+   -   **所有平台**
 
-    -   **所有平台**
+       这要求用于访问 **Exchange Online** 的任何设备已在 Intune 中注册且符合策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果目前 Intune 不支持该平台，则会阻止对 **Exchange Online** 的访问。
 
-        这要求用于访问 **Exchange Online** 的任何设备已在 Intune 中注册且符合策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果目前 Intune 不支持该平台，则会阻止对 **Exchange Online** 的访问。
+       选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需已注册并合规，以下各项除外：
+       *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
+       * 不受支持的平台，如 Mac OS。 但是，仍将阻止使用来自这些平台的新式验证的应用。
 
-        选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需已注册并合规，以下各项除外：
-        *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
-        * 不受支持的平台，如 Mac OS。 但是，仍将阻止使用来自这些平台的新式验证的应用。
+   -   **特定平台**
 
-    -   **特定平台**
-
-         条件性访问策略会应用到在指定的设备平台上使用**新式验证**的任何客户端应用。
+        条件性访问策略会应用到在指定的设备平台上使用**新式验证**的任何客户端应用。
 
 4. 在 **Outlook Web Access (OWA)** 下，可选择仅允许通过受支持的浏览器（Safari (iOS) 和 Chrome (Android)）来访问 Exchange Online。 将阻止来自其他浏览器的访问。 为 Outlook 的应用程序访问选择的相同平台限制在此处同样适用。
 
-  在 **Android** 设备上，用户必须启用浏览器访问。 若要执行此操作，用户必须在已注册的设备上启用“启用浏览器访问”选项，如下所示：
-  1.    打开“公司门户”应用。
-  2.    通过省略号 (…) 或硬件菜单按钮，转到“设置”页面。
-  3.    按“启用浏览器访问”按钮。
-  4.    在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
+   在 **Android** 设备上，用户必须启用浏览器访问。 若要执行此操作，用户必须在已注册的设备上启用“启用浏览器访问”选项，如下所示：
+   1.    打开“公司门户”应用。
+   2.    通过省略号 (…) 或硬件菜单按钮，转到“设置”页面。
+   3.    按“启用浏览器访问”按钮。
+   4.    在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
 
-  在 **iOS** 和 **Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。 设备会显示证书，并提示用户选择证书，如下面的屏幕截图所示。 用户必须选择此证书后，才能继续使用该浏览器。
+   在 **iOS** 和 **Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。 设备会显示证书，并提示用户选择证书，如下面的屏幕截图所示。 用户必须选择此证书后，才能继续使用该浏览器。
 
-  **iOS**
+   **iOS**
 
-  ![iPad 上证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![iPad 上证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+   **Outlook Web Access (OWA)**
 
-  ![Android 设备上的证书提示的屏幕截图](../media/mdm-browser-ca-android-cert-prompt.png)
+   ![Android 设备上的证书提示的屏幕截图](../media/mdm-browser-ca-android-cert-prompt.png)
 
-5.  在“Exchange ActiveSync 应用”下，你可以选择阻止非合规的设备访问 Exchange Online。 当设备运行不受支持的平台时，还可以选择是允许还是阻止访问电子邮件。 受支持的平台包括 Android、iOS、Windows 和 Windows Phone。
+5. 在“Exchange ActiveSync 应用”下，你可以选择阻止非合规的设备访问 Exchange Online。 当设备运行不受支持的平台时，还可以选择是允许还是阻止访问电子邮件。 受支持的平台包括 Android、iOS、Windows 和 Windows Phone。
 
- **Android for Work** 设备上的 Exchange Active Sync 应用：
- -  Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可在 Android for Work 设备上正常运行，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将其部署为**必备**安装。
+   **Android for Work** 设备上的 Exchange Active Sync 应用：
+   -  Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可在 Android for Work 设备上正常运行，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将其部署为**必备**安装。
 
-6.  在“目标组”下，选择策略将应用到的 Active Directory 安全用户组。 你可以选择面向所有用户或面向选定的用户组列表。
-![Exchange Online 条件性访问策略页面的屏幕截图显示了“目标组”和“免除组”选项](../media/IntuneSA5eTargetedExemptedGroups.PNG)
-    > [!NOTE]
-    > 对于“目标组”中的用户，Intune 策略会替换 Exchange 规则和策略。
-    >
-    > 出现以下情况时，Exchange 将仅强制执行 Exchange 允许、阻止和隔离规则及 Exchange 策略：
-    >
-    > -   用户未获 Intune 授权。
-    > -   用户已获 Intune 授权，但不属于条件访问策略所针对的任何安全组。
+6. 在“目标组”下，选择策略将应用到的 Active Directory 安全用户组。 你可以选择面向所有用户或面向选定的用户组列表。
+   ![Exchange Online 条件性访问策略页面的屏幕截图显示了“目标组”和“免除组”选项](../media/IntuneSA5eTargetedExemptedGroups.PNG)
+   > [!NOTE]
+   > 对于“目标组”中的用户，Intune 策略会替换 Exchange 规则和策略。
+   >
+   > 出现以下情况时，Exchange 将仅强制执行 Exchange 允许、阻止和隔离规则及 Exchange 策略：
+   >
+   > -   用户未获 Intune 授权。
+   > -   用户已获 Intune 授权，但不属于条件访问策略所针对的任何安全组。
 
-6.  在 **“免除组”**下，选择将会从此策略中免除的 Active Directory 安全用户组。 如果用户同时处于目标组和免除组中，则会将其从策略中免除。
+7. 在 **“免除组”**下，选择将会从此策略中免除的 Active Directory 安全用户组。 如果用户同时处于目标组和免除组中，则会将其从策略中免除。
 
-7.  完成后，选择“保存”。
+8. 完成后，选择“保存”。
 
 -   不需要部署条件访问策略—它会立即生效。
 

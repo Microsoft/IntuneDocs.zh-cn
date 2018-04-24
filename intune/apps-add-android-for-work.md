@@ -1,29 +1,29 @@
 ---
-title: "将应用分配到 Android for Work 设备"
+title: 将应用分配到 Android for Work 设备
 titlesuffix: Microsoft Intune
-description: "了解如何从 Google Play for Work 商店同步应用，以及将应用分配到 Android for Work 设备。"
-keywords: 
+description: 了解如何从 Google Play for Work 商店同步应用，以及将应用分配到 Android for Work 设备。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>如何使用 Intune 将应用分配到 Android for Work 设备
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work 是 Android 设备的程序。 在 Android for Work 设备上安装的所有应用都来自 Google Play for Work 商店。 可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android for Work 设备。 登录到该商店，浏览查找所需应用，然后批准它们。 应用随后会出现在 Azure 门户的“获得许可的应用”节点中。 在这里，可以采用与分配任何其他应用相同的方式管理应用的分配。
 
@@ -43,7 +43,7 @@ Android for Work 是 Android 设备的程序。 在 Android for Work 设备上�
 
     ![示例 - 在 Google Play for Work 商店中批准应用](media/approve.png)</br>
     
-  一个用于该应用的窗口会打开，请你为该应用授予执行各种操作的权限。 
+   一个用于该应用的窗口会打开，请你为该应用授予执行各种操作的权限。 
 
 4. 选择“批准”，接受应用权限并继续。</br>
 
@@ -60,8 +60,8 @@ Android for Work 是 Android 设备的程序。 在 Android for Work 设备上�
 如果已从该商店批准了应用，但未在“移动应用”工作负荷的“获得许可的应用”节点中看到它，则按照如下所示的步骤强制立即同步：
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
-3. 在 Intune 窗格中，选择“移动应用”。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格中，选择“移动应用”。
 4. 在“移动应用”工作负荷中，选择“设置”部分中的“Android for Work”。
 5. 在“Android for Work”窗格中，选择“同步”。该页会更新上次同步的时间和状态。
 6. 在“移动应用”工作负荷中，选择“应用”，显示最新可用的 Android for Work 应用。
@@ -79,7 +79,7 @@ Android for Work 需要你先在 Google 的托管 Play Web 控制台中批准应
 
 定期访问托管的 Google Play 控制台，查看是否有新权限。 可以将 Google Play 配置为当已批准的应用需要新权限时向你和其他人发送电子邮件。 如果分配了应用，但发现设备上未安装此应用，请按照以下步骤检查是否有新权限：
 
-1. 访问 http://play.google.com/work
+1. 请访问 http://play.google.com/work
 2. 使用发布和批准应用时所用的 Google 帐户登录。
 3. 访问**“更新”**选项卡，查看是否有应用需要更新。  列出的所有应用都需要新权限，且在应用新权限之前不会进行分配。  
 

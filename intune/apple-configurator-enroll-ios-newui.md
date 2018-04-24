@@ -15,15 +15,15 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 96889cfeb3b66fa988a14143cb560eb714d749c9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 605bfb94d720336da94e62a2629576cf178eea2f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>用户界面临时差异
@@ -115,7 +115,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 2. 在配置文件上，选择“导出配置文件”。
 3. 复制“配置文件 URL”。 然后可在 Apple Configurator 中添加它，以定义 iOS 设备使用的 Intune 配置文件。
 
-  接下列按照以下过程将此配置文件导入 Apple Configurator，定义 iOS 设备使用的 Intune 配置文件。
+   接下列按照以下过程将此配置文件导入 Apple Configurator，定义 iOS 设备使用的 Intune 配置文件。
 
 ### <a name="enroll-devices-with-setup-assistant"></a>使用设置助理注册设备
 

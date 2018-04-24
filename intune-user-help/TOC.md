@@ -128,7 +128,7 @@
 ### [重置设备](reset-erase-your-device-cpwebsite.md)
 ### [加密设备](encrypt-your-device-windows.md)
 ### [设置或更改密码](set-or-change-your-password-windows.md)
-### [从 Intune 取消注册设备](unenroll-your-device-from-intune-windows.md)
+### [从 Intune 删除设备](unenroll-your-device-from-intune-windows.md)
 ### [如果取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [如果重置设备会发生什么情况？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-windows.md)

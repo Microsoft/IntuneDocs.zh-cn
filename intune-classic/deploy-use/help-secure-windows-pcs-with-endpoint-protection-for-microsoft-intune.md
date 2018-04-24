@@ -14,15 +14,15 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd201cbe7b91791f7db014e0176b0873a1e270c0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 72a4e977f88a7f397d4f37f723ca1f13c4bc689c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 通提供对恶意软件威胁的实时防护、使恶意软件定义保持最新以及自动扫描计算机的 Endpoint Protection，Microsoft Intune 可帮助保障托管计算机的安全。 Endpoint Protection 还提供可帮助你管理和监视恶意软件攻击的工具。
 
@@ -33,11 +33,13 @@ ms.lasthandoff: 03/22/2018
 ## <a name="choose-when-to-use-endpoint-protection"></a>选择何时使用 Endpoint Protection
 IT 管理员的主要工作之一是保持所管理的计算机中没有恶意软件和病毒。 在将 Intune 部署到组织中的 Windows PC 之前，你应通过选择下列选项之一并配置其关联的策略设置来决定如何保护计算机：
 
-|你希望：|Endpoint Protection 策略设置|更多信息|
-|--------------|---------------------------------------|--------------------|
-|仅当未安装第三方 Endpoint Protection 应用程序时，才使用 Microsoft Intune Endpoint Protection。<br /><br />在未安装第三方 Endpoint Protection 应用程序的所有计算机上，可以使用 Microsoft Intune Endpoint Protection。|安装 Endpoint Protection =“是”<br /><br />启用 Endpoint Protection =“是”<br /><br />安装 Endpoint Protection，即使安装了第三方 Endpoint Protection 应用程序也不例外 =“否”|如果检测到第三方 Endpoint Protection 应用程序，则表明未安装 Microsoft Intune Endpoint Protection，或者此前安装过，但已被卸载。|
-|即使安装了第三方 Endpoint Protection 应用程序，仍使用 Microsoft Intune Endpoint Protection。<br /><br />采用此将同时运行 Microsoft Intune Endpoint Protection 和第三方 Endpoint Protection 应用程序。 由于存在潜在的性能问题，不建议采用此配置。 |安装 Endpoint Protection =“是”<br /><br />启用 Endpoint Protection =“是”<br /><br />安装 Endpoint Protection，即使安装了第三方 Endpoint Protection 应用程序也不例外 =“是”|何时使用：<br /><br />- 要切换为使用 Microsoft Intune Endpoint Protection。<br />-   将部署使用 Microsoft Intune Endpoint Protection 的新客户端。<br />- 升级任何将使用 Microsoft Intune Endpoint Protection 的客户端。|
-|在没有 Microsoft Intune Endpoint Protection 的情况下使用 Intune 作为替代，你将依赖于第三方 Endpoint Protection 应用程序。|安装 Endpoint Protection =“否”|如果未使用第三方 Endpoint Protection 应用程序，则不建议使用此配置，因为它可能会使组织的计算机面临恶意软件或其他攻击的威胁。<br /><br />未安装 Microsoft Intune Endpoint Protection，如果之前已安装，则已卸载。|
+
+|                                                                                                                                                                       你希望：                                                                                                                                                                        |                                                                                                       Endpoint Protection 策略设置                                                                                                        |                                                                                                                                                  详细信息                                                                                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                             仅当未安装第三方 Endpoint Protection 应用程序时，才使用 Microsoft Intune Endpoint Protection。<br /><br />在未安装第三方 Endpoint Protection 应用程序的所有计算机上，可以使用 Microsoft Intune Endpoint Protection。                                              | 安装 Endpoint Protection =“是”<br /><br />启用 Endpoint Protection =“是”<br /><br />安装 Endpoint Protection，即使安装了第三方 Endpoint Protection 应用程序也不例外 =“否”  |                                                                      如果检测到第三方 Endpoint Protection 应用程序，则表明未安装 Microsoft Intune Endpoint Protection，或者此前安装过，但已被卸载。                                                                       |
+| 即使安装了第三方 Endpoint Protection 应用程序，仍使用 Microsoft Intune Endpoint Protection。<br /><br />采用此将同时运行 Microsoft Intune Endpoint Protection 和第三方 Endpoint Protection 应用程序。 由于存在潜在的性能问题，不建议采用此配置。 | 安装 Endpoint Protection =“是”<br /><br />启用 Endpoint Protection =“是”<br /><br />安装 Endpoint Protection，即使安装了第三方 Endpoint Protection 应用程序也不例外 =“是” |                        何时使用：<br /><br />- 要切换为使用 Microsoft Intune Endpoint Protection。<br />-   将部署使用 Microsoft Intune Endpoint Protection 的新客户端。<br />- 升级任何将使用 Microsoft Intune Endpoint Protection 的客户端。                         |
+|                                                                                                             在没有 Microsoft Intune Endpoint Protection 的情况下使用 Intune 作为替代，你将依赖于第三方 Endpoint Protection 应用程序。                                                                                                             |                                                                                                安装 Endpoint Protection =“否”                                                                                                 | 如果未使用第三方 Endpoint Protection 应用程序，则不建议使用此配置，因为它可能会使组织的计算机面临恶意软件或其他攻击的威胁。<br /><br />未安装 Microsoft Intune Endpoint Protection，如果之前已安装，则已卸载。 |
+
 若要从当前 Endpoint Protection 应用程序切换到 Microsoft Intune Endpoint Protection，请执行以下操作：
 
 1.  向那些计算机部署 Intune 客户端软件时，让当前 Endpoint Protection 应用程序一直运行。
@@ -68,15 +70,16 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 
 ## <a name="specify-endpoint-protection-service-settings"></a>指定 Endpoint Protection 服务设置
 
-|策略设置|详细信息|
-|------------------|--------------------|
-|**安装 Endpoint Protection**|设置为“是”即可在被管理的计算机上安装 Endpoint Protection。 如果在安装期间检测到第三方 Endpoint Protection 应用程序，则将不安装 Endpoint Protection，除非将**即使安装了第三方 Endpoint Protection 应用程序，也安装 Endpoint Protection** 设置为“是”。 **注意：**Intune Endpoint Protection 已默认安装在托管计算机上。 如果不希望在收管理的计算机上安装 Endpoint Protection，则必须将此策略显式设置为“否”。 如果之前安装了 Endpoint Protection，且该策略已更新为“否”，则 Endpoint Protection 客户端将卸载。<br />建议的值：**是**|
-|**即使安装了第三方 Endpoint Protection 应用程序，仍要安装 Endpoint Protection**|设置为“是”后，即使检测到第三方 Endpoint Protection 应用程序也能安装 Microsoft Intune Endpoint Protection。<br /><br />建议的值：**是**|
-|**启用 Endpoint Protection**|设置为“是”可在具有 Endpoint Protection 客户端的计算机上启用 Microsoft Intune Endpoint Protection。<br /><br />如果设置为“否”，并且安装了 Microsoft Intune Endpoint Protection，则不向用户显示 Endpoint Protection 客户端用户界面，并且所有保护功能处于非活动状态。<br /><br />建议的值：**是**|
-|**禁用客户端 UI**|设置为“是”即可向用户隐藏 Microsoft Intune Endpoint Protection 客户端用户界面（重启客户端计算机后才能生效）。<br /><br />建议的值：**否**|
-|**即使安装了第三方 Endpoint Protection 应用程序，仍要安装 Endpoint Protection**|设置为“是”后，即使检测到第三方 Endpoint Protection 应用程序也能强制安装 Microsoft Intune Endpoint Protection。<br /><br />建议的值：**否**|
-|**在修正恶意软件之前创建系统还原点**|设置为“是”以在任何恶意软件修正开始之前创建 Windows 系统还原点。<br /><br />建议的值：**是**|
-|**跟踪已解决的恶意软件(天)**|让 Endpoint Protection 跟踪解决的恶意软件一段指定的时间，以便你能够手动检查以前感染的计算机。<br /><br />可以指定从 0 到 30 天的值。<br /><br />建议的值：**7 天**|
+|                                                 策略设置                                                  |                                                                                                                                                                                                                                                                                                                                                                                                             详细信息                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                  <strong>安装 Endpoint Protection</strong>                                   | 设置为“是”即可在被管理的计算机上安装 Endpoint Protection。 如果在安装期间检测到第三方 Endpoint Protection 应用程序，则将不安装 Endpoint Protection，除非将<strong>即使安装了第三方 Endpoint Protection 应用程序，也安装 Endpoint Protection</strong> 设置为“是”。 <strong>注意：</strong>Intune Endpoint Protection 已默认安装在托管计算机上。 如果不希望在收管理的计算机上安装 Endpoint Protection，则必须将此策略显式设置为“否”。 如果之前安装了 Endpoint Protection，且该策略已更新为“否”，则 Endpoint Protection 客户端将卸载。<br />建议的值：<strong>是</strong> |
+| <strong>即使安装了第三方 Endpoint Protection 应用程序，仍要安装 Endpoint Protection</strong> |                                                                                                                                                                                                                                                                                                                设置为“是”后，即使检测到第三方 Endpoint Protection 应用程序也能安装 Microsoft Intune Endpoint Protection。<br /><br />建议的值：<strong>是</strong>                                                                                                                                                                                                                                                                                                                |
+|                                   <strong>启用 Endpoint Protection</strong>                                   |                                                                                                                                                                                                            设置为“是”可在具有 Endpoint Protection 客户端的计算机上启用 Microsoft Intune Endpoint Protection。<br /><br />如果设置为“否”，并且安装了 Microsoft Intune Endpoint Protection，则不向用户显示 Endpoint Protection 客户端用户界面，并且所有保护功能处于非活动状态。<br /><br />建议的值：<strong>是</strong>                                                                                                                                                                                                             |
+|                                       <strong>禁用客户端 UI</strong>                                        |                                                                                                                                                                                                                                                                                                      设置为“是”即可向用户隐藏 Microsoft Intune Endpoint Protection 客户端用户界面（重启客户端计算机后才能生效）。<br /><br />建议的值：<strong>否</strong>                                                                                                                                                                                                                                                                                                       |
+| <strong>即使安装了第三方 Endpoint Protection 应用程序，仍要安装 Endpoint Protection</strong> |                                                                                                                                                                                                                                                                                                       设置为“是”后，即使检测到第三方 Endpoint Protection 应用程序也能强制安装 Microsoft Intune Endpoint Protection。<br /><br />建议的值：<strong>否</strong>                                                                                                                                                                                                                                                                                                       |
+|                    <strong>在修正恶意软件之前创建系统还原点</strong>                    |                                                                                                                                                                                                                                                                                                                                 设置为“是”以在任何恶意软件修正开始之前创建 Windows 系统还原点。<br /><br />建议的值：<strong>是</strong>                                                                                                                                                                                                                                                                                                                                  |
+|                                 <strong>跟踪已解决的恶意软件(天)</strong>                                  |                                                                                                                                                                                                                                                                                      让 Endpoint Protection 跟踪解决的恶意软件一段指定的时间，以便你能够手动检查以前感染的计算机。<br /><br />可以指定从 0 到 30 天的值。<br /><br />建议的值：<strong>7 天</strong>                                                                                                                                                                                                                                                                                       |
+
 如果将“安装 Endpoint Protection”和“启用 Endpoint Protection”设置的策略值设置为“是”，并将“即使安装了第三方 Endpoint Protection 应用程序，仍安装 Endpoint Protection”的策略值设置为“否”，则 Microsoft Intune Endpoint Protection 将会检测是否安装了其他 Endpoint Protection 应用程序。 这意味着不会安装 Endpoint Protection（若已安装则将其卸载）。 但是，Microsoft Intune Endpoint Protection 会报告 Intune 中其他 Endpoint Protection 应用程序的运行状况。
 
   当潜在威胁（如病毒和间谍软件）试图在电脑上进行安装或运行时，Microsoft Security Essentials 可通过实时保护发出提醒。 出现这种情况时，你会在任务栏右侧的通知区域中看到一条消息。
@@ -96,12 +99,12 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 
 ### <a name="specify-scan-schedule-settings"></a>指定扫描计划设置
 
-|策略设置|更多信息|
+|策略设置|详细信息|
 |------------------|--------------------|
 |**计划每日一次快速扫描**|计划对计算机上的常用文件和重要系统文件每天进行一次快速扫描。 此快速扫描对性能的影响最小。<br /><br />建议的值：**是**|
 |**如果错过两次连续的扫描，则运行快速扫描**|配置 Endpoint Protection 以在计算机错过两次连续快速扫描的情况下自动运行快速扫描。<br /><br />建议的值：**是**|
 |**计划完全扫描**|配置对本地计算机硬盘上的所有文件和资源进行完全扫描。 此扫描可能需要一些时间，并可能会影响计算机性能（具体时间取决于扫描的文件和资源的数目）。<br /><br />建议的值：**否**|
-|**如果错过两次连续的完全扫描，则运行完全扫描**|配置 Endpoint Protection 以在计算机错过两次连续扫描的情况下自动运行完全扫描。<br /><br />建议值：未配置|
+|**如果错过两次连续的完全扫描，则运行完全扫描**|配置 Endpoint Protection 以在计算机错过两次连续扫描的情况下自动运行完全扫描。<br /><br />建议的值：未配置|
 
 ### <a name="specify-scan-options-settings"></a>指定扫描选项设置
 
@@ -116,7 +119,7 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 |**扫描从网络共享文件夹中打开的文件**|设置为“是”以将 Endpoint Protection 配置为对从网络上的共享文件夹中打开的文件进行扫描。 这些通常是使用通用命名约定 (UNC) 路径访问的文件。 启用此功能可能会导致具有只读访问权限的用户遇到问题，因为他们无法删除恶意软件。<br /><br />建议的值：**否**|
 |**扫描映射的网络驱动器**|设置为“是”以将 Endpoint Protection 配置对映射的网络驱动器上的文件进行扫描。 启用此功能可能会导致具有只读访问权限的用户遇到问题，因为他们无法删除恶意软件。<br /><br />建议的值：**否**|
 |**扫描可移动驱动器**|设置为“是”以将 Endpoint Protection 配置为当你在计算机上运行完全扫描时在可移动驱动器（如 USB 闪存驱动器）上扫描恶意软件和不需要的软件。<br /><br />建议的值：**是**|
-|**限制扫描期间 CPU 使用率**|设置在计算机上进行计划扫描期间可使用的最大 CPU 使用率百分比。 可以将此值设置为 1% 到 100%。<br /><br />建议的值：**50%**|
+|**在扫描期间限制 CPU 使用率**|设置在计算机上进行计划扫描期间可使用的最大 CPU 使用率百分比。 可以将此值设置为 1% 到 100%。<br /><br />建议的值：**50%**|
 
 ### <a name="choose-default-actions-settings"></a>选择默认操作设置
 
@@ -145,10 +148,10 @@ Microsoft Active Protection Service 是一个可帮助你决定如何应对潜�
 
 ## <a name="choose-management-tasks-for-endpoint-protection"></a>选择 Endpoint Protection 的管理任务
 下列任务可帮助你在运行 Endpoint Protection 的被管理的计算机上执行各种管理任务：
- - 更新恶意软件定义
+- 更新恶意软件定义
   - Intune 控制台 - 从“组”工作区中，选择要更新的计算机。 选择“远程任务”&gt;更新恶意软件定义”。
   - 被管理的计算机 - 从 Windows 通知区域中启动 Endpoint Protection 客户端软件。 选择“更新”选项卡，然后选择“更新”。
- - 运行恶意软件扫描：
+- 运行恶意软件扫描：
   - Intune 控制台 - 从“组”工作区中，选择要扫描的计算机。 选择“运行完全恶意软件扫描”或“运行快速恶意软件扫描”。
   - 被管理的计算机 - 从 Windows 通知区域中启动 Endpoint Protection 客户端软件。 选择“快速”、“完全”或“自定义”，然后选择“立即扫描”。
 
@@ -156,12 +159,12 @@ Microsoft Active Protection Service 是一个可帮助你决定如何应对潜�
 
 ## <a name="monitor-endpoint-protection"></a>监视 Endpoint Protection
 通过监视计算机上的恶意软件状态 **保护** 工作区 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)。 此工作区包含两页：
- - “Protection 概要”以链接的形式显示重要问题，你可以选择这些链接来了解详细信息。 可能显示的问题包括：
+- “Protection 概要”以链接的形式显示重要问题，你可以选择这些链接来了解详细信息。 可能显示的问题包括：
   - “需要跟进的恶意软件实例” – 单击链接以查看恶意软件问题的列表，包括为解决问题所需采取的跟进操作。 你可以进一步探索此列表，查看哪些计算机受到影响。
   - “具有需要跟进的恶意软件的计算机” – 单击链接以查看具有未解决的恶意软件问题的所有计算机，以及为解决问题所需采取的跟进操作。
   - “不受保护的设备”– 单击链接以查看由于未安装软件或存在错误而未受任何 Endpoint Protection 软件保护的计算机。 选择一台计算机以查看更多详细信息。
   - “正在运行另一个 Endpoint Protection 应用程序的设备”– 单击链接以查看正在运行第三方 Endpoint Protection 应用程序的计算机。
- - “所有恶意软件” - 显示在计算机上找到的所有活动恶意软件的列表。 可以探索此列表，查看受某个特定恶意软件影响的所有计算机，或者你可以选择下列任务之一：
+- “所有恶意软件” - 显示在计算机上找到的所有活动恶意软件的列表。 可以探索此列表，查看受某个特定恶意软件影响的所有计算机，或者你可以选择下列任务之一：
   - “查看属性”– 打开包含所选恶意软件详细信息的页面。
   - “了解此恶意软件”– 打开 Microsoft 恶意软件防护中心中包含恶意软件详细信息的主题。
 
@@ -187,8 +190,8 @@ Intune 可以在安装有 Intune 客户端的远程托管电脑上使用 Endpoin
 
 2. 选择“远程任务”下拉列表，然后选择要在远程计算机上运行的任务。
 
-## <a name="need-more-help"></a>需要更多帮助吗?
+## <a name="need-more-help"></a>需要更多帮助？
 有关更多帮助和支持，请参阅 [Microsoft Intune 中的 Endpoint Protection 疑难解答](/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>另请参阅
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)

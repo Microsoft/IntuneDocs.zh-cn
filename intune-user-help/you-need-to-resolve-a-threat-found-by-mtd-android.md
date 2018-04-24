@@ -1,25 +1,25 @@
 ---
-title: "解除 Android 上由移动威胁防御应用发现的威胁 |Microsoft Docs"
-description: "了解如何使用适用于 Android 的移动威胁防御应用来解决威胁。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 解除 Android 上由移动威胁防御应用发现的威胁 |Microsoft Docs
+description: 了解如何使用适用于 Android 的移动威胁防御应用来解决威胁。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: d9e8cf854856c6d1f296b9bdb79a23d4993f213e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9636ff126618db62e682607afdb9e45b03a5cf91
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>解决移动威胁防御应用发现的威胁
 

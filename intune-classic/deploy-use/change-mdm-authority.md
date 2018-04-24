@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc73befb46f1f159d9a8c023bb5604517b9f73f4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="change-the-mdm-authority"></a>更改 MDM 机构
 从 Configuration Manager 1610 版本开始，无需联系 Microsoft 支持部门，也无需取消注册并重新注册现有的受管理设备即可更改 MDM 机构。 本主题逐步讲解在不取消注册并重新注册现有托管设备的情况下，如何将从 Intune 配置的且 MDM 机构设置为 Microsoft Intune（独立版）的现有 Microsoft Intune 租户更改为 Configuration Manager（混合 MDM）。
@@ -76,16 +76,16 @@ ms.lasthandoff: 03/22/2018
 
 1. **下载证书签名请求**
 
-    1. 在 Configuration Manager 控制台中，转到“管理”&gt;“云服务”&gt;“Microsoft Intune 订阅”，然后选择“创建 APN 证书请求”，以打开“请求 Apple 推送通知服务证书签名请求”对话框。  
-    2. 浏览到要保存新的证书签名请求 (.csr) 文件的路径。 本地保存证书签名请求 (.csr) 文件。  
-    3. 单击“下载”。 下载新 Microsoft Intune .csr 文件，并由 Configuration Manager 保存。   
+   1. 在 Configuration Manager 控制台中，转到“管理”&gt;“云服务”&gt;“Microsoft Intune 订阅”，然后选择“创建 APN 证书请求”，以打开“请求 Apple 推送通知服务证书签名请求”对话框。  
+   2. 浏览到要保存新的证书签名请求 (.csr) 文件的路径。 本地保存证书签名请求 (.csr) 文件。  
+   3. 单击“下载”。 下载新 Microsoft Intune .csr 文件，并由 Configuration Manager 保存。   
 
-    > [!IMPORTANT]
-    > 你必须下载新的证书签名请求。 请勿使用现有文件，否则它将失败。  
+      > [!IMPORTANT]
+      > 你必须下载新的证书签名请求。 请勿使用现有文件，否则它将失败。  
 
-2.  转到 [Apple Push Certificates 门户](http://go.microsoft.com/fwlink/?LinkId=269844)，并使用同一 Apple ID 登录，该 Apple ID 之前用于创建和续订在 Intune standalone 中使用的 APN 证书。
+2. 转到 [Apple Push Certificates 门户](http://go.microsoft.com/fwlink/?LinkId=269844)，并使用同一 Apple ID 登录，该 Apple ID 之前用于创建和续订在 Intune standalone 中使用的 APN 证书。
 
-    ![Apple Push Certificates 门户登录页](../media/mdm-change-apns-portal.png)
+   ![Apple Push Certificates 门户登录页](../media/mdm-change-apns-portal.png)
 
 3. 选择在 Intune standalone 中使用的 APN 证书，然后单击“续订”。
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 03/22/2018
 
     ![Apple Push Certificates 门户登录页](../media/mdm-change-renew-apns-upload.png)
  
-5. 选择同一 APN，然后单击“下载”。 下载 APN (.pem) 证书并在本地保存文件。  
+5. 选择同一 APN，然后单击“下载”。 下载 APNs (.pem) 证书并本地保存文件。  
 
     ![Apple Push Certificates 门户登录页](../media/mdm-change-renew-apns-download.png)
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="next-steps"></a>后续步骤
 更改 MDM 机构完成后，请复查以下步骤：
-- 当 Intune 服务检测到租户的 MDM 机构已更改时，它将向所有已注册的设备发送通知消息，以便签入并与服务同步（这并非计划的定期签入）。 因此，租户的 MDM 机构从 Intune standalone 更改为混合环境后，开机且联机的所有设备将与服务连接，接收新的 MDM 机构，并且由混合环境托管。 对这些设备的管理和保护不会中断。
+- 当 Intune 服务检测到租户的 MDM 机构已更改时，它将向所有已注册的设备发送通知消息，以便签入并与服务同步（这并非计划的定期签入）。 因此，租户的 MDM 机构从 Intune standalone 更改为混合环境后，开机且联机的所有设备将与服务连接，接收新的 MDM 机构，并且由混合环境托管。 这些设备的管理和保护不会中断。
 - 更改 MDM 机构过程中（或在不久之后），即使设备开机且联机，但设备在新的 MDM 机构中注册到该服务之前，将会有最长八小时的延迟（取决于计划的下次定期签入的执行时间）。    
 
   > [!IMPORTANT]    
@@ -130,7 +130,7 @@ ms.lasthandoff: 03/22/2018
 
 - 用户可以通过手动启动从设备到服务的签入来快速更改为新的 MDM 机构。 用户可以通过使用公司门户应用轻松执行此操作，并启动设备符合性检查。
 - 更改 MDM 机构后，要验证设备签入并与服务同步后一切工作正常运行，可在 Configuration Manager 控制台中查找设备。 之前由 Intune 托管的设备现在将显示为 Configuration Manager 平台中的托管设备。    
-- 在更改 MDM 机构期间设备处于脱机状态时，以及设备签入服务，会存在一个过渡期。 为帮助确保设备在此过渡期间仍然受到保护并可正常运行，以下配置文件将在设备上保留长达七天（或直到设备与新的 MDM 机构连接并接收将覆盖现有设置的新设置为止）：
+- 在更改 MDM 机构期间设备处于脱机状态时，以及设备签入服务，会存在一个过渡期。 为帮助确保设备在此过渡期间仍然受到保护并可正常运行，以下配置文件将在设备上最多保留七天（或直到设备与新的 MDM 机构连接并接收将覆盖现有设置的新设置为止）：
     - 电子邮件配置文件
     - VPN 配置文件
     - 证书配置文件

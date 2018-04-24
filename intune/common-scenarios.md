@@ -14,15 +14,15 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a9a6b9d5790708532d0c1bda03b5d2f6fd8e186
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e9cf1b9c7d950707c268fd509c184be7709f53e3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune 的常见使用方式
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 在深入探讨实现任务之前，务必使公司的企业移动性利益干系人在业务目标上保持一致。  不管你是全新购买企业移动性产品还是迁移自另一个产品，这一点都很重要。  
 

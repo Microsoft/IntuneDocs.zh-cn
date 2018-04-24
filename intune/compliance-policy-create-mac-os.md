@@ -1,33 +1,33 @@
 ---
-title: "在 Microsoft Intune 中创建 macOS 设备符合性策略"
-titleSuffix: 
-description: "为 macOS 设备创建 Microsoft Intune 设备符合性策略，以便可指定设备必须满足的符合性要求。"
-keywords: 
+title: 在 Microsoft Intune 中创建 macOS 设备符合性策略
+titleSuffix: ''
+description: 为 macOS 设备创建 Microsoft Intune 设备符合性策略，以便可指定设备必须满足的符合性要求。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 创建适用于 macOS 设备的设备符合性策略
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 适用于 macOS 的 Intune 设备符合性策略指定 macOS 设备为实现符合性而必须满足的规则和设置。 可将这些策略与条件访问相结合，进而允许/阻止访问公司资源，还可获取设备报告并采取措施应对不符合的情形。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 在创建和分配设备符合性策略之前，请查看 Intune 设备符合性策略概念。
 

@@ -1,25 +1,25 @@
 ---
-title: "设置 Microsoft Intune 本地 Exchange 连接器"
-titleSuffix: 
-description: "基于 Intune 注册和 Exchange Active Sync (EAS)，使用本地 Exchange 连接器来管理设备对 Exchange 邮箱的访问。"
-keywords: 
+title: 设置 Microsoft Intune 本地 Exchange 连接器
+titleSuffix: ''
+description: 基于 Intune 注册和 Exchange Active Sync (EAS)，使用本地 Exchange 连接器来管理设备对 Exchange 邮箱的访问。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 6319f6d805746e152c1f1b08231600099542ed4f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange Connector
 
@@ -37,16 +37,16 @@ ms.lasthandoff: 03/12/2018
 ## <a name="on-premises-exchange-connector-requirements"></a>本地 Exchange Connector 的要求
 下表列出了你在其中安装本地 Exchange Connector 的计算机的要求。
 
-|要求|更多信息|
-|---------------|--------------------|
-|操作系统|Intune 支持在运行任何版本的 Windows Server 2008 SP2 64 位、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 或 Windows Server 2016 的计算机上安装本地 Exchange Connector。<br /><br />该连接器在任何 Server Core 安装上都不受支持。|
-|Microsoft Exchange|本地连接器需要 Microsoft Exchange 2010 SP1 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是**新**配置还是**旧**配置，请与帐户管理员联系。|
-|移动设备管理机构| [将移动设备管理机构设置为 Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set)。|
-|硬件|安装连接器的计算机需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间。|users-add.md
-|Active Directory 同步|必须[设置 Active Directory 同步](users-add.md)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用连接器将 Intune 连接到 Exchange Server。|
-|其他软件|Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完全安装必须安装在托管连接器的计算机上。|
-|Network (网络)|在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。|
 
+|            要求             |                                                                                                                                                                                                        详细信息                                                                                                                                                                                                        |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         操作系统          |                                                               Intune 支持在运行任何版本的 Windows Server 2008 SP2 64 位、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 或 Windows Server 2016 的计算机上安装本地 Exchange Connector。<br /><br />该连接器在任何 Server Core 安装上都不受支持。                                                                |
+|         Microsoft Exchange         |                                                                           本地连接器需要 Microsoft Exchange 2010 SP1 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是<strong>新</strong>配置还是<strong>旧</strong>配置，请与帐户管理员联系。                                                                           |
+| 移动设备管理机构 |                                                                                                                              [将移动设备管理机构设置为 Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set)。                                                                                                                               |
+|              硬件              |                                                                                                                                                     安装连接器的计算机需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间。                                                                                                                                                      |
+|  Active Directory 同步  |                                                                                      必须[设置 Active Directory 同步](users-add.md)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用连接器将 Intune 连接到 Exchange Server。                                                                                      |
+|        其他软件         |                                                                                                                                           Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完全安装必须安装在托管连接器的计算机上。                                                                                                                                           |
+|              Network (网络)               | 在其中安装连接器的计算机必须位于与托管 Exchange Server 的域具有信任关系的域中。<br /><br />计算机需要配置才能使其通过防火墙和代理服务器在端口 80 和 443 上访问 Intune 服务。 Intune 使用的域包括 manage.microsoft.com、&#42;manage.microsoft.com 和 &#42;.manage.microsoft.com。 |
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange cmdlet 要求
 
@@ -84,48 +84,48 @@ ms.lasthandoff: 03/12/2018
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>安装和配置 Intune On-Premises Exchange Connector
 执行下列步骤以安装 Intune On-Premises Exchange Connector。 每个 Intune 订阅只能安装一次本地 Exchange Connector，并且只能安装在一台计算机上。 如果尝试配置其他本地 Exchange Connector，新连接将替换原始连接。
 
-1.  在支持本地连接器的操作系统上，将 **Exchange_Connector_Setup.zip** 中的文件提取到安全位置。
+1. 在支持本地连接器的操作系统上，将 **Exchange_Connector_Setup.zip** 中的文件提取到安全位置。
 
-2.  提取文件后，打开提取的文件夹并双击 **Exchange_Connector_Setup.exe** 安装本地 Exchange Connector。
+2. 提取文件后，打开提取的文件夹并双击 **Exchange_Connector_Setup.exe** 安装本地 Exchange Connector。
 
-    > [!IMPORTANT]
-    > 如果目标文件夹不是安全位置，则应该在安装本地连接器之后删除证书文件 **WindowsIntune.accountcert**。
+   > [!IMPORTANT]
+   > 如果目标文件夹不是安全位置，则应该在安装本地连接器之后删除证书文件 **WindowsIntune.accountcert**。
 
-3.  在“Microsoft Intune Exchange Connector”对话框中，选择“本地 Microsoft Exchange Server” 或“托管 Microsoft Exchange Server”。
+3. 在“Microsoft Intune Exchange Connector”对话框中，选择“本地 Microsoft Exchange Server” 或“托管 Microsoft Exchange Server”。
 
-  ![显示选择 Exchange Server 类型的位置的图像](./media/intune-sa-exchange-connector-config.png)
+   ![显示选择 Exchange Server 类型的位置的图像](./media/intune-sa-exchange-connector-config.png)
 
-  对于本地 Exchange 服务器，请提供托管**客户端访问服务器**角色的 Exchange 服务器的服务器名称或完全限定的域名。
+   对于本地 Exchange 服务器，请提供托管**客户端访问服务器**角色的 Exchange 服务器的服务器名称或完全限定的域名。
 
-  对于托管 Exchange 服务器，请提供 Exchange 服务器地址。 查找托管 Exchange 服务器 URL：
+   对于托管 Exchange 服务器，请提供 Exchange 服务器地址。 查找托管 Exchange 服务器 URL：
 
-    1. 打开 Outlook Web App for Office 365。
+   1. 打开 Outlook Web App for Office 365。
 
-    2. 选择左上角的 **?** 图标 然后选择“关于”。
+   2. 选择左上角的 **?** 图标 然后选择“关于”。
 
-    3. 找到“POP 外部服务器”  值。
+   3. 找到“POP 外部服务器”  值。
 
-    4. 选择“代理服务器”以指定托管 Exchange 服务器的代理服务器设置。
-        1. 选择“同步移动设备信息时使用代理服务器” 。
+   4. 选择“代理服务器”以指定托管 Exchange 服务器的代理服务器设置。
+       1. 选择“同步移动设备信息时使用代理服务器” 。
 
-        2. 输入要用于访问服务器的 **代理服务器名称** 和 **端口号** 。
+       2. 输入要用于访问服务器的 **代理服务器名称** 和 **端口号** 。
 
-        3. 如果必须提供用户凭据来访问代理服务器，请选择“使用凭据连接到代理服务器”。 然后输入“域\用户”和“密码”。
+       3. 如果必须提供用户凭据来访问代理服务器，请选择“使用凭据连接到代理服务器”。 然后输入“域\用户”和“密码”。
 
-        4. 选择“确定”。
+       4. 选择“确定”。
 
-    5. 在“用户(域\用户)”和“密码”字段中，输入连接到 Exchange 服务器所需的凭据。
+   5. 在“用户(域\用户)”和“密码”字段中，输入连接到 Exchange 服务器所需的凭据。
 
-    6.  提供必要的凭据，将通知发送到用户的 Exchange Server 邮箱。 此用户可专用于通知。 通知用户需要 Exchange 邮箱才能通过电子邮件发送通知。 可使用 Intune 中的条件访问策略配置这些通知。  
+   6.  提供必要的凭据，将通知发送到用户的 Exchange Server 邮箱。 此用户可专用于通知。 通知用户需要 Exchange 邮箱才能通过电子邮件发送通知。 可使用 Intune 中的条件访问策略配置这些通知。  
 
-        确保在 Exchange 客户端访问服务器上配置 Autodiscover 服务和 Exchange Web 服务。 有关详细信息，请参阅[客户端访问服务器](https://technet.microsoft.com/library/dd298114.aspx)。
+       确保在 Exchange 客户端访问服务器上配置 Autodiscover 服务和 Exchange Web 服务。 有关详细信息，请参阅[客户端访问服务器](https://technet.microsoft.com/library/dd298114.aspx)。
 
-    7.  在“密码”字段中提供此帐户的密码，使 Intune 能够访问 Exchange 服务器。
+   7.  在“密码”字段中提供此帐户的密码，使 Intune 能够访问 Exchange 服务器。
 
-    8. 选择“连接”。
+   8. 选择“连接”。
 
-    > [!NOTE]
-    > 可能需要几分钟时间才能完成配置该连接。
+   > [!NOTE]
+   > 可能需要几分钟时间才能完成配置该连接。
 
 在配置期间，Exchange Connector 会存储你的代理设置以便能够访问 Internet。 如果代理设置发生更改，则必须重新配置 Exchange Connector 才能将更新的代理设置应用于 Exchange Connector。
 

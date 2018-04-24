@@ -1,43 +1,43 @@
 ---
-title: "适用于 Windows 设备的合规性策略设置"
-description: "本主题描述了可为 Windows 设备的合规性策略配置的规则和设置。"
-keywords: 
+title: 适用于 Windows 设备的合规性策略设置
+description: 本主题描述了可为 Windows 设备的合规性策略配置的规则和设置。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune 中的适用于 Windows 设备的合规性策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题中描述的策略设置适用于运行 Windows 操作系统的设备。 以下各部分描述了支持的 Windows 版本。
 
 如果要查找有关其他平台的信息，请选择其中之一：
 > [!div class="op_single_selector"]
-- [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Android for Work 的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Android for Work 的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>适用于 Windows Phone 设备的合规性策略设置
 本节中列出的设置支持 Windows Phone 8.1 及更高版本。
 
 ### <a name="system-security-settings"></a>系统安全设置
-#### <a name="password"></a>Password
+#### <a name="password"></a>密码
 - **需要密码才可解锁移动设备**：将此选项设置为“是”，要求用户在访问其设备之前输入密码。
 
 - **允许简单密码**：将此选项设置为“是”，允许用户创建简单密码，如 **1234** 或 **1111**。
@@ -80,7 +80,7 @@ ms.lasthandoff: 10/10/2017
   > Windows 设备不支持作为设备运行状况证明的一部分安装的第三方**开机初期启动的反恶意软件** (ELAM)。
 
   有关 HAS 服务工作方式的信息，请参阅[运行状况证明 CSP](https://msdn.microsoft.com/library/dn934876.aspx)。
-###  <a name="device-property-settings"></a>设备属性设置
+  ###  <a name="device-property-settings"></a>设备属性设置
 - **所需的最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。
     将显示一个链接，链接中包含有关如何升级的信息。 用户可以选择升级其设备，然后他们可以访问公司资源。
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 10/10/2017
 ## <a name="compliance-policy-settings-for-windows-pcs"></a>适用于 Windows PC 的合规性策略设置
 此节中列出的设置在 Windows PC 上受支持。
 ### <a name="system-security-settings"></a>系统安全设置
-#### <a name="password"></a>Password
+#### <a name="password"></a>密码
 - **最短密码长度**：在 Windows 8.1 上受支持。
 
   指定用户密码必须包含的最小位数或最小字符数。
@@ -153,4 +153,4 @@ ms.lasthandoff: 10/10/2017
 - Windows 8.1 PC 返回版本 **6.3**。 对于 Windows，如果操作系统版本规则设置为 Windows 8.1，则该设备将报告为不符合要求，即使该设备具有 Windows 8.1 也是如此。
 
 - 对运行 Windows 10 的电脑，版本应设置为 **10.0** + **winver** 命令返回的 OS 内部版本号。 例如，它可能类似于 10.0.10586。
-> ![“关于Windows”对话框中突出显示的操作系统内部版本号](./media/ca_win10-os-version.png)
+  > ![“关于Windows”对话框中突出显示的操作系统内部版本号](./media/ca_win10-os-version.png)

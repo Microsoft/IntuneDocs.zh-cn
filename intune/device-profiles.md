@@ -14,15 +14,15 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 0b942f794136ce1a1d7851b0b04d6df70ea7174c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能通过配置文件进行管理。 一些配置文件示例如下： 
 
@@ -31,7 +31,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 本主题提供可为设备创建的不同配置文件的概述。 使用这些配置文件来允许和/或阻止设备上的某些功能。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 若要查看可用功能，请打开 [Azure 门户](https://portal.azure.com)，然后打开 Intune 资源。 
 
 设备配置包括以下选项：

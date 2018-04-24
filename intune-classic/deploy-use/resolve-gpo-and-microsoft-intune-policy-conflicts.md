@@ -1,28 +1,28 @@
 ---
-title: "解决 GPO 与 Intune 之间的策略冲突"
-description: "了解如何解决组策略和 Intune 配置策略之间的冲突。"
-keywords: 
+title: 解决 GPO 与 Intune 之间的策略冲突
+description: 了解如何解决组策略和 Intune 配置策略之间的冲突。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9764a1fec44ff5aae7ebcf63b3ebde252bb687f9
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f6d12dd886fe475161e767e63177313a729e170d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解决组策略对象 (GPO) 与 Microsoft Intune 之间的策略冲突
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 使用策略来帮助你管理 Windows 电脑上的设置。 例如，你可以使用策略来控制电脑上 Windows 防火墙的设置。 Intune 的许多设置都类似于你可使用 Windows 组策略配置的设置。 但是，有时可能会有两种方法互相冲突。
 

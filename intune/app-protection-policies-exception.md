@@ -1,29 +1,29 @@
 ---
-title: "应用的数据传输策略例外情况"
+title: 应用的数据传输策略例外情况
 titleSuffix: Microsoft Intune
-description: "为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况。"
-keywords: 
+description: 为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1e37e78f7272b0f53f974eccb20c7e02574a9a9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 管理员可以为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况。 例外情况允许专门选择哪些非托管应用可与托管应用来回传输数据。 例外情况列表中包含的非托管应用必须受 IT 信任。 
 
@@ -39,6 +39,10 @@ ms.lasthandoff: 03/17/2018
 
 ## <a name="android-data-transfer-exceptions"></a>Android 数据传输例外情况
 对于针对 Android 的策略，可以通过应用包名称配置数据传输例外情况。 可以查看要为其添加例外情况的应用的 Google Play 商店页，以查找应用包名称。 有关 Android 数据传输例外情况的其他信息，请参阅 [Android 应用保护策略设置 - 数据传输豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。
+
+
+>[!TIP]
+> 可通过浏览 Google Play 商店上的应用找到应用的包 ID。 包 ID 包含在应用页面的 URL 中。 例如，Microsoft Word 应用的包 ID 是 **com.microsoft.office.word**。
 
 ### <a name="example"></a>示例
 通过在 MAM 数据传输策略中添加 Webex 包作为例外情况，可允许直接在 Webex 应用程序中打开托管 Outlook 电子邮件内的 Webex 链接。 其他非托管应用中将继续限制数据传输。

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: afc5e32cd2db5755ad6fb570aabae27c4d23e827
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Mac OS X 配置策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设置。 此外，还可使用 Apple Configurator 工具创建 Intune 未提供的自定义设置。
 
@@ -39,7 +39,7 @@ Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设
 
 ### <a name="password-settings"></a>密码设置
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|---------------|
 |**需要密码才能解锁设备**|指定用户是否必须使用密码才可访问其 Mac 计算机。 **重要提示：**与 iOS 设备不同，在 Mac OS X 设备上，不会立即通知用户更新其密码来符合此设置。|
 |**所需的密码类型**|指定密码是否可以仅由**数值**组成，还是必须为**字母数字**（包含字母和数字）。 **重要提示：**仅在 Mac OS X 10.10.3 及更高版本上支持此设置。|
@@ -59,14 +59,15 @@ Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设
 >
 > Intune 允许你报告安装了不相容应用的设备。 它不会阻止安装，也不会删除不相容应用。
 
-|设置名|详细信息|
-|----------------|---------------|
-|**用户安装列出的应用时报告不相容情况**|显示不允许用户安装的 Mac OS X 应用。 如果用户安装任何这些应用，“不相容应用报告”中将报告安装的应用。|
-|**用户安装未列出的应用时报告不合规性**|显示允许用户安装的 Mac OS X 应用。 如果用户安装任何其他应用，“不相容应用报告”中将报告安装的应用。|
-|**添加**|将应用添加到选定的列表。 指定你选择的名称（可为应用发布者）和应用的捆绑 ID。 **提示：**若要查找应用的捆绑 ID，请在已安装此应用的 Mac 计算机上执行以下步骤：<ol><li>打开安装应用的文件夹（例如，**/Applications**）。</li><li>选择 &lt;应用名称&gt;.app 捆绑，然后选择“显示包内容”。</li><li>打开“Info.plist”文件。</li><li>检查与“CFBundleIdentifier”键相关联的值。</li></ol>捆绑 ID 的格式是“com.contoso.appname”。|
-|**导入应用**|导入你已在逗号分隔值文件中指定的应用列表。 在文件中使用此格式：应用名称、发布者和应用捆绑 ID。|
-|**编辑**|编辑所选应用的名称、发布者和捆绑 ID。|
-|**删除**|从列表中删除选定的应用。|
+|                                    设置名称                                    |                                                                                                                                                                                                                                                                                                                                                     详细信息                                                                                                                                                                                                                                                                                                                                                      |
+|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      <strong>用户安装列出的应用时报告不相容情况</strong>      |                                                                                                                                                                                                                                                                    显示不允许用户安装的 Mac OS X 应用。 如果用户安装任何这些应用，“不相容应用报告”中将报告安装的应用。                                                                                                                                                                                                                                                                    |
+| <strong>用户安装未列出的应用时报告不合规性</strong> |                                                                                                                                                                                                                                                                       显示允许用户安装的 Mac OS X 应用。 如果用户安装任何其他应用，“不相容应用报告”中将报告安装的应用。                                                                                                                                                                                                                                                                        |
+|                                <strong>添加</strong>                                | 将应用添加到选定的列表。 指定你选择的名称（可为应用发布者）和应用的捆绑 ID。 <strong>提示：</strong>若要查找应用的捆绑 ID，请在已安装此应用的 Mac 计算机上执行以下步骤：<ol><li>打开安装应用的文件夹（例如，<strong>/Applications</strong>）。</li><li>选择 &lt;App Name&gt;.app 捆绑包，然后选择“显示包内容”。</li><li>打开“Info.plist”文件。</li><li>检查与“CFBundleIdentifier”键相关联的值。</li></ol>捆绑 ID 的格式是“com.contoso.appname”。 |
+|                            <strong>导入应用</strong>                            |                                                                                                                                                                                                                                                                                导入你已在逗号分隔值文件中指定的应用列表。 在文件中使用此格式：应用名称、发布者和应用捆绑 ID。                                                                                                                                                                                                                                                                                 |
+|                               <strong>编辑</strong>                                |                                                                                                                                                                                                                                                                                                                         编辑所选应用的名称、发布者和捆绑 ID。                                                                                                                                                                                                                                                                                                                         |
+|                              <strong>删除</strong>                               |                                                                                                                                                                                                                                                                                                                                      从列表中删除选定的应用。                                                                                                                                                                                                                                                                                                                                      |
+
 > [!TIP]
 > 有关 Intune 报告的详细信息，请参阅[通过使用报表了解 Microsoft Intune 操作](understand-microsoft-intune-operations-by-using-reports.md)。
 
@@ -83,11 +84,11 @@ Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设
 2.  选择你想要检查的设备组，选择要检查相容应用还是不相容应用，或是同时检查两者，然后选择“查看报告”。
 
 ## <a name="mac-os-x-custom-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Mac OS X 自定义策略设置
-使用 Microsoft Intune 的“Mac OS X 自定义配置策略”，将用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)创建的设置部署到 Mac OS X 设备。 使用此工具可以创建控制这些设备的操作的许多设置，并将其导出到配置的配置文件中。 然后可将此配置文件导入到 Intune Mac OS X 自定义策略，并向组织中的用户和设备部署这些设置。
+使用 Microsoft Intune 的“Mac OS X 自定义配置策略”，将用 [Apple Configurator 工具](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)创建的设置部署到 Mac OS X 设备。 使用此工具可以创建控制这些设备的操作的许多设置，并将其导出到配置描述文件中。 然后可将此配置文件导入到 Intune Mac OS X 自定义策略，并向组织中的用户和设备部署这些设置。
 
 此功能允许你部署不能与 Intune Mac OS X 常规配置策略一起配置的 Mac OS X 设置。
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 在开始之前，必须已安装了 Apple Configurator 并创建了包含需部署到用户或设备的设置的配置文件。 可从 [Mac 应用商店](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)下载和了解 Apple Configurator。
 
 > [!NOTE]
@@ -95,15 +96,15 @@ Intune 提供了一系列可在 Mac OS X 设备上进行配置的内置常规设
 
 ### <a name="general-settings"></a>常规设置
 
-|设置名|详细信息|
+|设置名称|详细信息|
     |----------------|--------------------|
-    |**Name**|输入 Mac OS X 自定义策略的唯一名称，以帮助你在 Intune 控制台中识别它。|
-    |**描述**|提供一份简要说明 Mac OS X 自定义策略的描述，以及可帮助你查找它的其他相关信息。|
+    |**名称**|输入 Mac OS X 自定义策略的唯一名称，以帮助你在 Intune 控制台中识别它。|
+    |**描述**|提供对 Mac OS X 自定义策略的概述以及可帮助你查找它的其他相关信息。|
 
 
 ### <a name="custom-settings"></a>自定义设置
 
-|设置名|详细信息|
+|设置名称|详细信息|
     |----------------|--------------------|
     |**自定义配置的配置文件名称（对用户显示）**|提供策略的名称，该名称将显示在设备上以及 Intune 策略报告中。|
     |**配置的配置文件**|选择“导入”，然后浏览到使用 Apple Configurator 创建的配置文件。 **提示：**请参阅本主题中的“如何创建配置文件”来帮助创建配置文件。|

@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune 中的应用入门"
-titlesuffix: 
-description: "查找应用并将其添加到设备，以便员工完成工作。"
-keywords: 
+title: Microsoft Intune 中的应用入门
+titlesuffix: ''
+description: 查找应用并将其添加到设备，以便员工完成工作。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 3/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cf7b2cca28e16825c368cb3e5dc793d25daaa4d0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>在 Microsoft Intune 中添加应用入门
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="how-do-i-assign-a-public-store-app"></a>如何分配公共应用商店应用？
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 选择“移动应用”，然后选择“应用”。
 4. 选择“添加”，然后选择“iOS”作为“应用类型”。
 5. 选择“选择应用”，显示“搜索 App Store”窗格。

@@ -1,24 +1,24 @@
 ---
-title: "策略"
+title: 策略
 titlesuffix: Microsoft Intune
-description: "Intune 数据仓库 API 中实体集合的“策略”类别的参考主题。"
-keywords: "Intune 数据仓库"
+description: Intune 数据仓库 API 中实体集合的“策略”类别的参考主题。
+keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>策略实体引用
 
@@ -157,10 +157,12 @@ PolicyKey|策略键，可将其与策略相联接以获取 policyName。|Windows
 
 下表列出了每天处于成功、挂起、失败或错误状态的用户数。 此数字反映每个策略类型配置文件的数据。 例如，如果对于分配给某用户的所有策略，该用户均为成功状态，则当天的成功计数增加一。 如果向用户分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则将用户计为错误状态。 PolicyDeviceActivity 实体列出了过去 30 天中给定某天中处于各状态的用户数。
 
-|属性  |描述  |示例  |
-|---------|---------|---------|
-|DateKey|日期键，表明在数据仓库中记录设备配置文件签入的时间。|20160703|
-|Pending|处于挂起状态的唯一设备数。|123|
-|成功|处于成功状态的唯一设备数。|12|
-PolicyKey|策略键，可将其与策略相联接以获取 policyName。|Windows 10 基线|
-|错误|处于错误状态的唯一设备数。|10|
+
+| 属性  |                                         描述                                         |       示例       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | 日期键，表明在数据仓库中记录设备配置文件签入的时间。 |      20160703       |
+|  Pending  |                         处于挂起状态的唯一设备数。                          |         123         |
+| 成功 |                         处于成功状态的唯一设备数。                          |         12          |
+| PolicyKey |                策略键，可将其与策略相联接以获取 policyName。                 | Windows 10 基线 |
+|   错误   |                          处于错误状态的唯一设备数。                           |         10          |
+

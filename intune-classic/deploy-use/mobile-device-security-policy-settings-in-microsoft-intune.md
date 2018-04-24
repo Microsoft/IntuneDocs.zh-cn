@@ -1,29 +1,29 @@
 ---
-title: "移动设备安全策略设置"
-description: "使用 Intune 配置各种可部署到组织中的托管设备的设置。"
-keywords: 
+title: 移动设备安全策略设置
+description: 使用 Intune 配置各种可部署到组织中的托管设备的设置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的移动设备安全策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > 现在，Microsoft Intune 针对每个设备平台都具有单独的配置策略。 这些策略包含可使用的最新设置。 你可以继续使用移动设备安全策略，并且任何现有的部署仍将起作用。 但是，你应计划尽快迁移到新的配置策略，因为以后会删除移动设备安全策略。
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/12/2017
 
 -   Windows RT 8.1 和注册的 Windows 8.1 设备
 
--   Windows RT
+-   RT Windows
 
 -   Windows Phone 8 和 Windows Phone 8.1
 
@@ -48,32 +48,34 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="security-settings"></a>安全设置
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**需要密码才可解锁移动设备**|否|否|是|是|是|
-|**所需的密码类型**<br /><br />此设置指定需要的密码类型，例如仅限数字或字母数字。|是|是|是|是|否|
-|**必填密码类型 – 字符集最小数量**<br /><br />有以下四个字符集：小写字母、大写字母、数字和符号。 此设置指定密码中必须包括多少个不同的字符集。 但是，对于 iOS 设备，此设置指定密码中必须包括的符号字符的数量。|是|是|是|是|否|
-|**最短密码长度**|是|是|是|是|是|
-|**允许简单密码**<br /><br />简单密码包括“0000”和“1234”。|否|否|是|是|否|
-|**擦除设备前允许的重复登录失败次数**|是|是|是|是|是|
-|**屏幕关闭前处于非活动状态的分钟数**<sup>1</sup>|是|是|是|是|是|
-|**密码过期（天数）**|是|是|是|是|是|
-|**记住密码历史记录**|是|是|是|是|是|
-|**“记住密码历史记录”** – **“防止重用以前的密码”**|是|是|是|是|是|
-|**密码质量**|否|否|否|否|是|
-|**允许图片密码和 PIN**|是|是|否|否|否|
-|**需要提供密码之前处于非活动状态的分钟数**|否|否|否|是|否|
-|**允许指纹解锁**|否|否|否|iOS 7 及更高版本|否|
-<sup>1</sup>对于 iOS 设备，配置“屏幕关闭前处于非活动状态的分钟数”和“需要提供密码之前处于非活动状态的分钟数”设置时，它们会按顺序应用。 例如，如果你设置的两个设置的值均为“5”  分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
+|                                                                                                                                                                                        设置名称                                                                                                                                                                                         | Windows 8.1 和 Windows RT 8.1 | RT Windows | Windows Phone 8 和 Windows Phone 8.1 |       iOS       | Android 和 Samsung KNOX 标准版 |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>需要密码才可解锁移动设备</strong>                                                                                                                                                                 |               否               |     否     |                  是                  |       是       |                是                |
+|                                                                                                                 <strong>所需的密码类型</strong><br /><br />此设置指定需要的密码类型，例如仅限数字或字母数字。                                                                                                                 |              是               |    是     |                  是                  |       是       |                否                 |
+| <strong>必填密码类型 – 字符集最小数量</strong><br /><br />有以下四个字符集：小写字母、大写字母、数字和符号。 此设置指定密码中必须包括多少个不同的字符集。 但是，对于 iOS 设备，此设置指定密码中必须包括的符号字符的数量。 |              是               |    是     |                  是                  |       是       |                否                 |
+|                                                                                                                                                                          <strong>最短密码长度</strong>                                                                                                                                                                           |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                               <strong>允许简单密码</strong><br /><br />简单密码包括“0000”和“1234”。                                                                                                                                                |               否               |     否     |                  是                  |       是       |                否                 |
+|                                                                                                                                                  <strong>擦除设备前允许的重复登录失败次数</strong>                                                                                                                                                   |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                                         <strong>屏幕关闭前处于非活动状态的分钟数</strong><sup>1</sup>                                                                                                                                                          |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                                                         <strong>密码过期（天数）</strong>                                                                                                                                                                         |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                                                         <strong>记住密码历史记录</strong>                                                                                                                                                                          |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                              <strong>“记住密码历史记录”</strong> – <strong>“防止重用以前的密码”</strong>                                                                                                                                              |              是               |    是     |                  是                  |       是       |                是                |
+|                                                                                                                                                                              <strong>密码质量</strong>                                                                                                                                                                              |               否               |     否     |                  否                   |       否        |                是                |
+|                                                                                                                                                                       <strong>允许图片密码和 PIN</strong>                                                                                                                                                                       |              是               |    是     |                  否                   |       否        |                否                 |
+|                                                                                                                                                             <strong>需要提供密码之前处于非活动状态的分钟数</strong>                                                                                                                                                              |               否               |     否     |                  否                   |       是       |                否                 |
+|                                                                                                                                                                          <strong>允许指纹解锁</strong>                                                                                                                                                                          |               否               |     否     |                  否                   | iOS 7 及更高版本 |                否                 |
+
+<sup>1</sup>对于 iOS 设备，配置“屏幕关闭前处于非活动状态的分钟数”和“需要提供密码之前处于非活动状态的分钟数”设置时，它们会按顺序应用。 例如，如果你设置的两个设置的值均为“5”分钟，屏幕在 5 分钟后将自动关闭，然后再过 5 分钟后该设备将锁定。 但是，如果用户手动关闭屏幕，第二个设置将立即应用。 在相同的示例中，用户关闭屏幕后，该设备将在 5 分钟后锁定。
 
 当你将密码长度策略部署到运行 Windows RT 的设备时，用户会被强制重置密码，即使他们当前的密码是符合策略要求的。
 
 ## <a name="encryption-settings"></a>加密设置
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**需要对移动设备加密**<sup>1</sup><br /><br />对于 Windows Phone 8 设备，必须将其设置为 **“是”**。<br /><br />若要在 iOS 设备上启用加密，请启用设置 **“需要密码以解锁移动设备”**。|是|否|是|否|是|
-|**需要对存储卡进行加密**<br /><br />此设置也适用于由 Exchange ActiveSync 托管的设备。|n/a|n/a|n/a <br />会对应用和关联的数据进行自动加密。|n/a|是|
+|                                                                                                                                     设置名称                                                                                                                                     | Windows 8.1 和 Windows RT 8.1 | RT Windows |              Windows Phone 8 和 Windows Phone 8.1              | iOS | Android 和 Samsung KNOX 标准版 |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>需要对移动设备加密</strong><sup>1</sup><br /><br />对于 Windows Phone 8 设备，必须将其设置为 <strong>“是”</strong>。<br /><br />若要在 iOS 设备上启用加密，请启用设置 <strong>“需要密码以解锁移动设备”</strong>。 |              是               |     否     |                               是                               | 否  |                是                |
+|                                                                    <strong>需要对存储卡进行加密</strong><br /><br />此设置也适用于由 Exchange ActiveSync 托管的设备。                                                                     |              n/a               |    n/a     | n/a <br />会对应用和关联的数据进行自动加密。 | n/a |                是                |
+
 <sup>1</sup>以下是运行 Windows 8.1 的设备的其他信息：
 
 -   若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](http://support.microsoft.com/kb/3013816) 。
@@ -86,14 +88,14 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="malware-settings"></a>恶意软件设置
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**需要网络防火墙**|是|否|否|否|否|
 |**启用 SmartScreen**|是|否|否|否|否|
 
 ## <a name="system-settings"></a>系统设置
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**需要自动更新**|是|否|否|否|否|
 |**需要自动更新 - 要自动安装的最小更新分类**<br /><br />选择将自动安装的更新分类：<br /><br />- **重要说明**。 安装归类为重要的所有更新。<br /><br />- **推荐**。 安装归类为重要或推荐的所有更新。|是|否|否|否|否|
@@ -110,7 +112,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="cloud-settings--documents-and-data"></a>云设置 – 文档和数据
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允许备份到 iCloud**|否|否|否|是|否|
 |**允许将文档与 iCloud 同步**|否|否|否|是|否|
@@ -121,14 +123,14 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="cloud-settings--accounts-and-synchronization"></a>云设置 – 帐户和同步
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**支持 Microsoft 帐户**|否|否|仅 Windows Phone 8.1|否|否|
 |**允许 Google 帐户自动同步**|否|否|否|否|是（仅 Samsung KNOX 标准版）|
 
 ## <a name="email-settings"></a>电子邮件设置
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允许用户下载电子邮件附件**<sup>1</sup>|n/a|n/a|n/a|n/a|n/a|
 |**电子邮件同步时间段** <br /><br />此设置也适用于由 Exchange ActiveSync 托管的设备。|n/a|n/a|n/a|n/a|n/a|
@@ -138,7 +140,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="application-settings---browser"></a>应用设置 - 浏览器
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允许 Web 浏览器**|否|否|仅 Windows Phone 8.1|是|是（仅 Samsung KNOX 标准版）|
 |**允许自动填充**|是|否|否|是|是（仅 Samsung KNOX 标准版）|
@@ -159,7 +161,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="application-settings---apps"></a>应用设置 - 应用程序
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允许应用程序商店**|否|否|仅 Windows Phone 8.1|是|是（仅 Samsung KNOX 标准版）|
 |**需要提供密码来访问应用程序商店**|否|否|否|是|否|
@@ -168,18 +170,18 @@ ms.lasthandoff: 12/12/2017
 |**允许在其他托管应用中使用非托管文档**|否|否|否|iOS 7 及更高版本|否|
 |**允许视频会议**|否|否|否|是|否|
 |**允许媒体存储中有成人内容**|否|否|否|是|否|
-|**允许应用安装**|否|否|否|iOS 6 和更高版本|否|
+|**允许应用安装**|否|否|否|iOS 6 及更高版本|否|
 
 ## <a name="application-settings---gaming"></a>应用设置 - 游戏
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允许游戏中心好友**|否|否|否|是|否|
 |**允许多玩家游戏**|否|否|否|是|否|
 
 ## <a name="device-capabilities-settings---hardware"></a>设备性能设置 - 硬件
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允许照相机**|否|否|仅 Windows Phone 8.1|是|是|
 |**允许可移动存储**|否|否|是|否|是（仅 Samsung KNOX 标准版）|
@@ -194,7 +196,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="device-capabilities-settings---cellular"></a>设备性能设置 - 蜂窝网络
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允许语音漫游**|否|否|否|是|是（仅 Samsung KNOX 标准版）|
 |**允许数据漫游**|是|否|否|是|是（仅 Samsung KNOX 标准版）|
@@ -203,7 +205,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="device-capabilities-settings---features"></a>设备性能设置 - 功能
 
-|设置名|Windows 8.1 和 Windows RT 8.1|Windows RT|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
+|设置名称|Windows 8.1 和 Windows RT 8.1|RT Windows|Windows Phone 8 和 Windows Phone 8.1|iOS|Android 和 Samsung KNOX 标准版|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**允许使用语音助手**|否|否|否|是|是（仅 Samsung KNOX 标准版）|
 |**锁定设备时允许使用语音助手**|否|否|否|是|否|

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>使用 Microsoft Intune 管理 iOS 应用之间的数据传输
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>管理 iOS 应用
 保护公司数据包括确保文件传输仅限于在你所管理的应用中进行。  可以通过以下方式管理 iOS 应用：
@@ -51,17 +51,17 @@ ms.lasthandoff: 03/22/2018
 对于由第三方 MDM 解决方案管理的设备，配置用户 UPN 设置是**必需**的。 下述过程是配置 UPN 设置的一般流程以及该过程所产生的最终用户体验：
 
 
-1.  在 Azure 门户中，为 iOS 平台[配置应用保护策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 根据公司要求配置策略设置，并选择应使用此策略的应用。
+1. 在 Azure 门户中，为 iOS 平台[配置应用保护策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 根据公司要求配置策略设置，并选择应使用此策略的应用。
 
-2.  使用下面的常规步骤，部署想要**通过第三方 MDM 解决方案**管理的应用和电子邮件配置文件。 示例 1 中也涵盖了这一体验。
+2. 使用下面的常规步骤，部署想要**通过第三方 MDM 解决方案**管理的应用和电子邮件配置文件。 示例 1 中也涵盖了这一体验。
 
-  1.  使用以下应用配置设置来部署该应用：
+   1. 使用以下应用配置设置来部署该应用：
 
       键 = IntuneMAMUPN，值 = <username@company.com>
 
       示例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  使用第三方 MDM 提供程序将“打开方式管理”策略部署到已注册设备。
+   2. 使用第三方 MDM 提供程序将“打开方式管理”策略部署到已注册设备。
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>示例 1：第三方 MDM 控制台中的管理体验
@@ -70,9 +70,9 @@ ms.lasthandoff: 03/22/2018
 
 2. 在“应用程序配置”部分中，输入以下设置：
 
-  键 = IntuneMAMUPN，值 = <username@company.com>
+   键 = IntuneMAMUPN，值 = <username@company.com>
 
-  键/值对的确切语法可能会因第三方 MDM 提供程序而异。 下表显示了第三方 MDM 提供程序和应为键/值对输入的确切值的示例。
+   键/值对的确切语法可能会因第三方 MDM 提供程序而异。 下表显示了第三方 MDM 提供程序和应为键/值对输入的确切值的示例。
 
 |第三方 MDM 提供程序| Configuration 注册表项 | 值类型 | 配置值|
 | ------- | ---- | ---- | ---- |

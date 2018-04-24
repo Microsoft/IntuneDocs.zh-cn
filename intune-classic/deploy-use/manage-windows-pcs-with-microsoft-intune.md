@@ -1,28 +1,28 @@
 ---
-title: "使用客户端软件管理 PC"
-description: "安装 Intune 客户端软件来管理 Windows 电脑。"
-keywords: 
+title: 使用客户端软件管理 PC
+description: 安装 Intune 客户端软件来管理 Windows 电脑。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 773e4d551a8ea278c60107a279e29b83f0a1596f
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 8790863f4cfb3b0b8fdcf4f7aedbfc338ae64667
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 提供了可供组织管理移动设备的全面的解决方案。 Intune 可以使用 Windows 10 操作系统的内置新式设备管理功能将 Windows 电脑作为移动设备进行管理。 Intune 也可通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理，从而满足组织的管理需求。 此管理方法使用旧版 Windows 操作系统中的传统计算机管理功能。
 
@@ -38,15 +38,15 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 
 **硬件**：安装 Intune 客户端软件的最低硬件要求如下：
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |Network (网络)|客户端要求 PC 具有 Internet 连接。|
 |处理器和内存|请参阅 PC 操作系统的处理器和 RAM 要求。|
-|硬盘空间|安装客户端软件之前必须有 200 MB 可用磁盘空间。|
+|磁盘空间|安装客户端软件之前必须有 200 MB 可用磁盘空间。|
 
 **软件**：安装该客户端软件的软件要求如下：
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |操作系统 | 运行 Windows Vista 或更高版本的 Windows 设备。 </br></br>**不支持家庭版各版本。**|
 |管理权限|安装客户端软件的帐户必须具有该设备的本地管理员权限。|

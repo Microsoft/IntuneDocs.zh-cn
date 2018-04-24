@@ -1,29 +1,29 @@
 ---
-title: "保护应用和数据"
-description: "本主题介绍供你使用的各种 Intune 特性和功能，以帮助保护你的公司应用和数据。"
-keywords: 
+title: 保护应用和数据
+description: 本主题介绍供你使用的各种 Intune 特性和功能，以帮助保护你的公司应用和数据。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>使用 Microsoft Intune 保护应用和数据
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 通过多个技术层保护公司数据。 在标识层上，条件性访问通过仅允许从托管及合规设备进行访问来保护对服务的访问。 在客户端应用程序层上，移动应用管理 (MAM) 通过防止将数据移动到不受保护的应用或存储位置以及在设备丢失或被盗时擦除数据来防止数据丢失。 应结合使用这两个保护层，在保持移动办公人员高效工作的同时保护数据。
 

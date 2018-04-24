@@ -1,35 +1,35 @@
 ---
-title: "如何将 Android 应用商店应用添加到 Microsoft Intune"
-titleSuffix: 
-description: "了解如何将 Android 应用商店应用添加到 Microsoft Intune。"
-keywords: 
+title: 如何将 Android 应用商店应用添加到 Microsoft Intune
+titleSuffix: ''
+description: 了解如何将 Android 应用商店应用添加到 Microsoft Intune。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>如何将 Android 应用商店应用添加到 Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 将应用分配给一个设备或一组用户之前，必须先将应用添加到 Microsoft Intune。 可按以下步骤，从 Azure 门户将 Android 应用商店应用添加到 Intune。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
-3. 在 Intune 窗格中，选择“移动应用”。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格中，选择“移动应用”。
 4. 在“移动应用”工作负载中，选择“管理”部分下的“应用”。
 5. 在应用列表的上方，选择“添加”。
 6. 在“添加应用”窗格上，在可用的“应用商店应用”类型下选择“Android”。
@@ -52,6 +52,6 @@ ms.lasthandoff: 03/08/2018
 
 此时，已创建的应用显示在应用列表中，可供分配到选定组。 
 
-##<a name="next-steps"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 
 - [如何将应用分配到组](apps-deploy.md)

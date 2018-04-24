@@ -1,25 +1,25 @@
 ---
-title: "用户管理入门"
+title: 用户管理入门
 titlesuffix: Microsoft Intune
-description: "向 Intune 添加用户并为其分配许可证，以便他们可以在移动设备上访问公司资源。"
-keywords: 
+description: 向 Intune 添加用户并为其分配许可证，以便他们可以在移动设备上访问公司资源。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-managing-users"></a>用户管理入门
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="how-do-i-create-a-user"></a>如何创建用户？
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 打开“Microsoft Intune”窗格后，选择“用户”。 在“所有用户”页上，选择“添加新用户”。
 4. 输入用户详细信息，如名称和用户名。 用户名称的域名部分必须为初始默认域名“contoso.onmicrosoft.com”或一个已验证的非联合域名，例如“contoso.com”。
 5. 在“组”下，选择要添加用户的测试组。
@@ -44,8 +44,8 @@ ms.lasthandoff: 03/08/2018
 3. 可能需要等待一段时间，系统才能加载完所有用户信息。 加载完之后，针对用户的“产品许可证”选择“编辑”。
 4. 向用户分配一个位置，然后将 Intune 切换为“开”。
 
- > [!NOTE]
- > 此操作会为此用户使用一个许可证。 如果使用的是实时环境，可在之后停用此许可证，以将其重新分配给一个真正的用户。
+   > [!NOTE]
+   > 此操作会为此用户使用一个许可证。 如果使用的是实时环境，可在之后停用此许可证，以将其重新分配给一个真正的用户。
 
 5. 选择“保存”。
 

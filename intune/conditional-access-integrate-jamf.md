@@ -1,25 +1,25 @@
 ---
-title: "将 Jamf Pro 与 Microsoft Intune 集成来满足符合性要求"
-titlesuffix: 
-description: "通过将 Microsoft Intune 符合性策略与 Azure Active Directory 条件访问相结合，可确保由 Jamf 管理的设备的安全。"
-keywords: 
+title: 将 Jamf Pro 与 Microsoft Intune 集成来满足符合性要求
+titlesuffix: ''
+description: 通过将 Microsoft Intune 符合性策略与 Azure Active Directory 条件访问相结合，可确保由 Jamf 管理的设备的安全。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b040c6aa7001e8ebdd7c05571276428c7ef9bd
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cdeb3a21af2b4cf020d3e5029eeb5b0bc31db062
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -56,20 +56,20 @@ ms.lasthandoff: 03/08/2018
 6. 单击“创建应用程序”。
 7. 保存新创建的“应用程序 ID”，然后打开“设置”并导航到”API 访问” > “密钥”以创建新的应用程序密钥。 输入描述、过期之前的时间，然后保存该应用程序密钥。
 
-  > [!IMPORTANT]
-  > 应用程序密钥在此过程中仅显示一次。 请务必将其保存在可以轻松检索到它的地方。
+   > [!IMPORTANT]
+   > 应用程序密钥在此过程中仅显示一次。 请务必将其保存在可以轻松检索到它的地方。
 
 8. 打开“设置”，然后导航到“API 访问” > “所需权限”，删除所有权限。
 
-  > [!NOTE]
-  > 添加新的必要权限。 应用程序必须具有单个必需权限才能正常工作。
+   > [!NOTE]
+   > 添加新的必要权限。 应用程序必须具有单个必需权限才能正常工作。
 
-9.  选择“Microsoft Intune API”，然后单击“选择”。
+9. 选择“Microsoft Intune API”，然后单击“选择”。
 10. 选择“将设备属性发送到 Microsoft Intune”，然后单击“选择”。
 11. 保存应用程序的必需权限后，单击“授予权限”按钮。
 
-  > [!NOTE]
-  > 如果应用程序密钥过期，则必须在 Microsoft Azure 中创建一个新的应用程序密钥，然后更新 Jamf Pro 中的条件访问数据。 Azure 允许同时具有旧密钥和新密钥，以防止服务中断。
+    > [!NOTE]
+    > 如果应用程序密钥过期，则必须在 Microsoft Azure 中创建一个新的应用程序密钥，然后更新 Jamf Pro 中的条件访问数据。 Azure 允许同时具有旧密钥和新密钥，以防止服务中断。
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>启用 Intune 以与 Jamf Pro 集成
 
@@ -94,7 +94,7 @@ Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intun
 
 * 设备 Azure AD ID
 * JAMF 清单状态（Jamf Pro 在过去 24 小时内签入的计算机的清单状态）
-* 操作系统版本
+* OS 版本
 * 用户 Azure AD ID
 * 已加密（FileVault 2）
 * 网关守卫状态

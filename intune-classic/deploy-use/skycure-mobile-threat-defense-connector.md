@@ -1,29 +1,29 @@
 ---
-title: "Skycure 移动威胁防御连接器"
-description: "通过 Skycure 移动威胁防御连接器和 Intune，根据设备、网络和应用程序风险，为公司资源提供访问保护。"
-keywords: 
+title: Skycure 移动威胁防御连接器
+description: 通过 Skycure 移动威胁防御连接器和 Intune，根据设备、网络和应用程序风险，为公司资源提供访问保护。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7a004e6c-604a-448c-bfb8-cfda63749f5b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: f79e793ec6931d6497c6b66eee98aea39786e962
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure 移动威胁防御连接器
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可根据 Skycure 给出的风险评估，使用条件访问控制移动设备对公司资源的访问，Skycure 是与 Microsoft Intune 集成的移动威胁防御解决方案。 风险评估基于从运行 Skycure 的设备收集的遥测，包括：
 

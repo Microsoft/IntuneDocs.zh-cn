@@ -1,28 +1,28 @@
 ---
-title: "使用 Intune 设置基于应用的条件性访问策略"
-description: "了解如何使用 Intune 创建基于应用的条件性访问策略。"
-keywords: 
+title: 使用 Intune 设置基于应用的条件性访问策略
+description: 了解如何使用 Intune 创建基于应用的条件性访问策略。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ab442f49e0eabc4162bd2f56865ed42d96ae5db
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b7e3654021935495189b62da5257793383586137
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>使用 Intune 设置基于应用的条件性访问策略
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍如何为已批准应用列表中的一部分应用设置基于应用的条件性访问策略。 已批准应用列表包含经由 Microsoft 测试过的应用。
 

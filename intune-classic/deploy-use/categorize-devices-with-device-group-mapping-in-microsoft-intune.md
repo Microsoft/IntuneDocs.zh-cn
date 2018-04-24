@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5a346c321147656d748d3abde78575268b20e9ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>使用 Microsoft Intune 中的设备组映射对设备进行分类
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune 设备组映射可基于你定义的类别自动将设备添加到组，以便更轻松地管理这些设备。 
 
@@ -67,10 +67,10 @@ ms.lasthandoff: 03/22/2018
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>步骤 1 - 在 Intune 管理控制台中创建设备类别
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”。
-3. 在“管理”工作区中，展开“移动设备管理”，然后选择“设备类别”。
-4. 在“设备类别”页上，你会看到一个列表，可以在其中配置设备类别： 
-- 可以输入名称，然后单击“添加”以将它添加为新的设备类别。
-- 此外，可以选择类别，然后“删除”它。
+2. 在“管理”工作区中，展开“移动设备管理”，然后选择“设备类别”。
+3. 在“设备类别”页上，你会看到一个列表，可以在其中配置设备类别： 
+4. 可以输入名称，然后单击“添加”以将它添加为新的设备类别。
+5. 此外，可以选择类别，然后“删除”它。
 
 在步骤 2 中创建 Azure Active Directory 安全组时将使用设备类别名称。
 

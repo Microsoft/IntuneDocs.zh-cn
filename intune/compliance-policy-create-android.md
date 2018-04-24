@@ -1,30 +1,30 @@
 ---
-title: "在 Microsoft Intune 中创建 Android 设备符合性策略"
-titleSuffix: 
-description: "为 Android 设备创建 Microsoft Intune 设备符合性策略，以便可指定设备必须符合的要求。"
-keywords: 
+title: 在 Microsoft Intune 中创建 Android 设备符合性策略
+titleSuffix: ''
+description: 为 Android 设备创建 Microsoft Intune 设备符合性策略，以便可指定设备必须符合的要求。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 586672bf84be6e7bcd8d3b8618aab09088620eb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>如何在 Intune 中创建适用于 Android 设备的设备符合性策略
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 适用于 Android 的 Intune 设备符合性策略指定 Android 设备必须遵循的规则和设置，确保符合性。 可将这些策略与条件访问相结合，进而允许/阻止访问公司资源，还可获取设备报告并采取措施应对不符合的情形。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。 若要了解符合性策略和创建符合性策略之前需要解决的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
@@ -110,10 +110,10 @@ ms.lasthandoff: 03/20/2018
 | **PIN 或密码配置** |  已隔离 |
 | **设备加密** | 已隔离 |
 | **已越狱或取得 root 权限的设备** | 已隔离（非设置） |
-| **电子邮件配置文件** | “不适用” |
+| **电子邮件配置文件** | 不适用 |
 | **最低操作系统版本** | 已隔离 |
 | **最高操作系统版本** |   已隔离 |
-| **Windows 运行状况证明** | “不适用” |
+| **Windows 运行状况证明** | 不适用 |
 
 --------------------------
 

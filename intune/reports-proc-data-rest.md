@@ -1,25 +1,25 @@
 ---
-title: "使用 REST 客户端从数据仓库 API 获取数据"
+title: 使用 REST 客户端从数据仓库 API 获取数据
 titlesuffix: Microsoft Intune
-description: "使用 RESTful API 从 Intune 数据仓库检索数据。"
-keywords: 
+description: 使用 RESTful API 从 Intune 数据仓库检索数据。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ba065b53560a4e1d3f1fffbe6cea56e85da0f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 客户端从 Intune 数据仓库 API 获取数据
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 03/08/2018
     3.  在“登录 URL”中键入一个 URL。 登录 URL 因具体方案不同而有所不同，但是如果计划使用 Postman，请键入 `https://www.getpostman.com/oauth2/callback`。 向 Azure AD 进行身份验证时，将针对客户端身份验证步骤使用回调。
 4.  选择“创建”。
 
-     ![Intune 数据仓库 API](media\reports-get_rest_data_client_overview.png)
+     ![Intune 数据仓库 API](./media/reports-get_rest_data_client_overview.png)
 
 5. 将此应用的“应用程序 ID”记下来。 下一部分中将用到此 ID。
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 03/08/2018
 7.  选择“选择”。
 8.  勾选“委派的权限”框，以添加“从 Microsoft Intune 获取数据仓库信息”。
 
-    ![启用访问 - Microsot Intune API](media\reports-get_rest_data_client_access.png)
+    ![启用访问 - Microsot Intune API](./media/reports-get_rest_data_client_access.png)
 
 9.  选择“选择”。
 10.  选择“完成”。
@@ -132,7 +132,7 @@ ms.lasthandoff: 03/08/2018
 
 12. 选择“请求令牌”。
 
-    ![令牌信息](media\reports-postman_getnewtoken.png)
+    ![令牌信息](./media/reports-postman_getnewtoken.png)
 
 13. 在 Active AD 授权页面中键入凭据。 Postman 中的令牌列表现包含名为 `Bearer` 的令牌。
 14. 选择“使用令牌”。 标头列表包含授权的新密钥值和值 `Bearer <your-authorization-token>`。
@@ -142,7 +142,7 @@ ms.lasthandoff: 03/08/2018
 1.  选择“发送”。
 2.  返回的数据显示在 Postman 响应正文中。
 
-    ![Postman 200OK](media\reports-postman_200OK.png)
+    ![Postman 200OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>创建 REST 客户端 (C#) 以从 Intune 数据仓库获取数据
 
@@ -151,45 +151,45 @@ ms.lasthandoff: 03/08/2018
 > [!Note]  
 > 可在 [GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs) 上访问以下代码示例。 请访问 GitHub 存储库，了解有关该示例的最新更改和更新。
 
-1.  打开“Microsoft Visual Studio”。
-2.  选择“文件” > “新建项目”。 展开“Visual C#”，然后选择“控制台应用 (.Net Framework)”。
-3.  将项目命名为 ` IntuneDataWarehouseSamples`，浏览到要保存该项目的位置，然后选择“确定”。
-4.  在解决方案资源管理器中右键单击该解决方案的名称，然后选择“管理用于解决方案的 NuGet 包...”。 选择“浏览”，然后在搜索框中键入 `Microsoft.IdentityModel.Clients.ActiveDirectory`。
+1. 打开“Microsoft Visual Studio”。
+2. 选择“文件” > “新建项目”。 展开“Visual C#”，然后选择“控制台应用 (.Net Framework)”。
+3. 将项目命名为 ` IntuneDataWarehouseSamples`，浏览到要保存该项目的位置，然后选择“确定”。
+4. 在解决方案资源管理器中右键单击该解决方案的名称，然后选择“管理用于解决方案的 NuGet 包...”。 选择“浏览”，然后在搜索框中键入 `Microsoft.IdentityModel.Clients.ActiveDirectory`。
 5. 选择该包，选择“管理用于解决方案的包”下的“IntuneDataWarehouseSamples”项目，然后选择“安装”。
 6. 选择“我接受”以接受 NuGet 包的许可。
 7. 从解决方案资源管理器打开 `Program.cs`。
 
-    ![Visual Studio 中的项目](media\reports-get_rest_data_in.png)
+    ![Visual Studio 中的项目](./media/reports-get_rest_data_in.png)
 
-8.  将 Program.cs 的代码替换为以下代码：  
-    ```csharp
-namespace IntuneDataWarehouseSamples
-{
-    using System;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+8. 将 Program.cs 的代码替换为以下代码：  
+   ```csharp
+   namespace IntuneDataWarehouseSamples
+   {
+   using System;
+   using System.Net.Http;
+   using System.Net.Http.Headers;
+   using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-    class Program
-    {
-     static void Main(string[] args)
-  {
+   class Program
+   {
+    static void Main(string[] args)
+   {
    /**
-    * TODO: Replace the below values with your own.
-    * emailAddress - The email address of the user that you will authenticate as.
-    *
-    * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not
-    *    recommend storing passwords in plaintext.
-    *
-    * applicationId - The application ID of the native app that was created in AAD.
-    *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
-    *      the Azure portal.
-    *
-    * collectionName - The name of the warehouse entity collection you would like to
-    *      access.
-    */
+   * TODO: Replace the below values with your own.
+   * emailAddress - The email address of the user that you will authenticate as.
+   *
+   * password  - The password for the above email address.
+   *    This is inline only for simplicity in this sample. We do not
+   *    recommend storing passwords in plaintext.
+   *
+   * applicationId - The application ID of the native app that was created in AAD.
+   *
+   * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
+   *      the Azure portal.
+   *
+   * collectionName - The name of the warehouse entity collection you would like to
+   *      access.
+   */
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
@@ -198,9 +198,9 @@ namespace IntuneDataWarehouseSamples
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");
    AuthenticationResult authResult = adalContext.AcquireTokenAsync(
-    resource: "https://api.manage.microsoft.com/",
-    clientId: applicationId,
-    userCredential: new UserPasswordCredential(emailAddress, password)).Result;
+   resource: "https://api.manage.microsoft.com/",
+   clientId: applicationId,
+   userCredential: new UserPasswordCredential(emailAddress, password)).Result;
 
    var httpClient = new HttpClient();
    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
@@ -212,16 +212,16 @@ namespace IntuneDataWarehouseSamples
 
    Console.Write(response.Content.ReadAsStringAsync().Result);
    Console.ReadKey();
-  }
-    }
-    ```
+   }
+   }
+   ```
 
-9.  更新代码示例中的 `TODO`。
-10.  按“Ctrl + F5”生成 Intune.DataWarehouseAPIClient 客户端并在调试模式下执行该客户端。
+9. 更新代码示例中的 `TODO`。
+10. 按“Ctrl + F5”生成 Intune.DataWarehouseAPIClient 客户端并在调试模式下执行该客户端。
 
-    ![检索到的 JSON 格式的数据实体。](media\reports-get_rest_data_output.png)
+    ![检索到的 JSON 格式的数据实体。](./media/reports-get_rest_data_output.png)
 
-11.  查看控制台输出。 该输出包含从 Intune 租户中的“日期”实体中拉取的 JSON 格式的数据。
+11. 查看控制台输出。 该输出包含从 Intune 租户中的“日期”实体中拉取的 JSON 格式的数据。
 
 ## <a name="next-steps"></a>后续步骤
 

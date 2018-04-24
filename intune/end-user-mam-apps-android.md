@@ -1,28 +1,28 @@
 ---
-title: "具有应用保护策略的 Android 应用"
-description: "本主题描述应用由应用保护策略托管时会出现的情况。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 具有应用保护策略的 Android 应用
+description: 本主题描述应用由应用保护策略托管时会出现的情况。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 738f747c06f8ad7e6deb90908c2b4b653bad63e3
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 本文介绍启用了应用保护策略的应用的用户体验。 仅在工作环境中使用应用时，应用保护策略才适用：例如，用户使用工作帐户访问应用，或访问 OneDrive for Business 位置存储的文件时。
 

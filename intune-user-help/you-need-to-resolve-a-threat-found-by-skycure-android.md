@@ -1,25 +1,25 @@
 ---
-title: "解决适用于 Android 的 Symantec Endpoint Protection Mobile 发现的威胁 | Microsoft Docs"
-description: "了解如何解决在 Android 设备上发现的威胁。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 解决适用于 Android 的 Symantec Endpoint Protection Mobile 发现的威胁 | Microsoft Docs
+description: 了解如何解决在 Android 设备上发现的威胁。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f67834a858d5991c0528400c15d96b5e8f90ab96
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: caac4b62c141145ac976d1515e6fdc92da90e962
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解决 Symantec Endpoint Protection Mobile 发现的威胁
 

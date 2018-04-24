@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c8f4218b5da66769d22bdbc3859af433f8e6e399
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: a2c194e7741c8ce79d87ad68eb408508b2929167
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>创建 Skycure 移动威胁防御符合性策略
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 具备 Skycure 移动威胁防御的 Intune 使你能够检测移动设备上的威胁并评估存在威胁的设备的风险。 可创建评估风险的 Intune 符合性策略规则，确定设备是否符合。 然后可使用条件性访问策略，根据设备合规性阻止对服务的访问。
 

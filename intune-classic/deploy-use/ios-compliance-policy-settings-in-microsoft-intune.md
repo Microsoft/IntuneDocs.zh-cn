@@ -15,26 +15,26 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7973dd757c69bc0a63f1ff5d24973acb6086d8a4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58af24f4c3ed7a650323dab0072d4e5a85f5554c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 iOS 设备的合规性策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题中描述的策略设置适用于运行 iOS 8.0 及更高版本的设备。
 
 如果你要查找有关其他平台的信息，请选择以下选项之一：
 > [!div class="op_single_selector"]
-- [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Android for Work 的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Windows 设备的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Android for Work 的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Windows 设备的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>系统安全设置
-### <a name="password"></a>Password
+### <a name="password"></a>密码
 - **需要密码才可解锁移动设备**：将此选项设置为“是”，要求用户在访问其设备之前输入密码。 使用密码的 iOS 设备已加密。
 
 - **允许简单密码**：将此选项设置为“是”，允许用户创建简单密码，如“1234”或“1111”。
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/22/2018
   -   小写字母
   -   大写字母
   -   符号
-  -   号码
+  -   数字
 
   设置的数字越大，要求用户创建的密码越复杂。
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 03/22/2018
 - **设备从空闲状态返回时需要密码**：与“要求提供密码之前的非活动分钟数”设置一起使用此设置。 设备在“要求提供密码之前的非活动分钟数”设置指定的时间内处于非活动状态时，将提示用户输入密码才能访问设备。
 
 ### <a name="email-profile"></a>电子邮件配置文件
-- **必须由 Intune 管理电子邮件帐户：**如果该选项设置为“是”，则设备必须使用部署到设备的电子邮件配置文件。 在下列情况下，设备被视为不合规：
+- **必须由 Intune 管理电子邮件帐户：**如果该选项设置为“是”，则设备必须使用部署到设备的电子邮件配置文件。 在以下情况中设备被视为不符合要求：
   - 电子邮件配置文件部署到合规性策略目标外的用户组。
   - 用户已在设备上设置了电子邮件帐户，且该帐户与部署到该设备的 Intune 电子邮件配置文件相匹配。 Intune 不能覆盖用户设置的配置文件，因此无法管理它。 若要确保合规性，用户必须删除现有电子邮件设置。 然后，Intune 可以安装托管的电子邮件配置文件。
 
@@ -78,6 +78,6 @@ ms.lasthandoff: 03/22/2018
 
 ##  <a name="device-properties"></a>设备属性
 - **所需的最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。
-将显示一个链接，其中包含有关如何升级的信息。 用户可以选择升级其设备。 然后可访问公司资源。
+将显示一个链接，链接中包含有关如何升级的信息。 用户可以选择升级其设备。 然后可访问公司资源。
 
 - **允许的最高 OS 版本**：设备使用的 OS 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。

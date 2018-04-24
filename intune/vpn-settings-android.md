@@ -1,27 +1,27 @@
 ---
-title: "适用于运行 Android 的设备的 Microsoft Intune VPN 设置"
-titlesuffix: 
-description: "了解可用于在运行 Android 的设备上配置 VPN 连接的 Intune 设置"
-keywords: 
+title: 适用于运行 Android 的设备的 Microsoft Intune VPN 设置
+titlesuffix: ''
+description: 了解可用于在运行 Android 的设备上配置 VPN 连接的 Intune 设置
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 909c014e1d68c26c1440c2b924e05dbaabbde5e5
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 7c3b4964baec0ae957cfb392843ce527bf13934e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>在 Microsoft Intune 中为运行 Android 的设备配置 VPN 设置 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍可用于在运行 Android 的设备上配置 VPN 连接的 Intune 设置。
 

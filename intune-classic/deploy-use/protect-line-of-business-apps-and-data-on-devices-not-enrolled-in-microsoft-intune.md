@@ -1,29 +1,29 @@
 ---
-title: "保护未注册的设备上的 LOB 应用"
-description: "本主题介绍如何准备自定义的业务线应用，以便应用可帮助防止数据丢失的移动应用管理策略。"
-keywords: 
+title: 保护未注册的设备上的 LOB 应用
+description: 本主题介绍如何准备自定义的业务线应用，以便应用可帮助防止数据丢失的移动应用管理策略。
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 447e019dde4781183323f29a35ed569926973351
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 0fbc7ae1937aff60e8e494df06ee2c30e2fe8855
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>保护未在 Microsoft Intune 上注册的设备上的业务线应用和数据
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 移动应用管理 (MAM) 策略通过限制可能会泄漏公司数据的操作以及实施数据访问要求（如应用 PIN）来保护公司数据。 若要将 MAM 策略应用于 iOS 和/或 Android 业务线应用，首先必须使用 Microsoft Intune 应用包装工具包装此应用。 应用包装是一个将管理层应用于移动应用的过程，不要求对其进行任何更改并将其分发给用户。  
 
@@ -42,16 +42,16 @@ ms.lasthandoff: 10/11/2017
 
 1. 在 [Azure 门户](https://portal.azure.com/)中，转到“Intune 移动应用管理” > “设置”，然后选择“业务线应用”。
 
-  ![包括业务线选项的“设置”边栏选项卡的屏幕截图](../media/mam-azure-portal-lob-on-settings.png)
+   ![包括业务线选项的“设置”边栏选项卡的屏幕截图](../media/mam-azure-portal-lob-on-settings.png)
 
 2. 在“业务线应用”边栏选项卡中，选择“添加自定义应用”。
 
-  ![“添加自定义应用”按钮位于顶部的“业务线应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-add-lob-app-action.png)
-3.  提供应用名称、应用标识符字段的捆绑标识符以及平台（iOS 或 Android）。
+   ![“添加自定义应用”按钮位于顶部的“业务线应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-add-lob-app-action.png)
+3. 提供应用名称、应用标识符字段的捆绑标识符以及平台（iOS 或 Android）。
 
-  ![“添加自定义应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-add-app-details.png)
+   ![“添加自定义应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-add-app-details.png)
 
-  此步骤可帮助创建唯一的应用列表。 租户 MAM 策略的目标应用列表中也会显示该应用，如下一步中所述。
+   此步骤可帮助创建唯一的应用列表。 租户 MAM 策略的目标应用列表中也会显示该应用，如下一步中所述。
 
 ## <a name="step-3-apply-mam-policies"></a>步骤 3：应用 MAM 策略
 将应用元数据上传到服务后，应用列表中将显示该应用。 现可[创建新策略或使用现有策略](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)，并将其应用于步骤 2 中添加的业务线应用。
@@ -72,12 +72,12 @@ ms.lasthandoff: 10/11/2017
 ##  <a name="remove-apps"></a>删除应用
 可从应用列表中删除业务线应用。 这会从列表中删除该应用及与 MAM 策略的关联，但不会从用户设备中删除或卸载该应用。  
 
-1.  在 [Azure 门户](https://portal.azure.com/)中，转到“Intune 移动应用管理” > “设置”。 在**设置**边栏选项卡上，选择**业务线**打开现有应用的列表。  
-2.  选择要删除的应用，并选择“...”上下文菜单。
+1. 在 [Azure 门户](https://portal.azure.com/)中，转到“Intune 移动应用管理” > “设置”。 在**设置**边栏选项卡上，选择**业务线**打开现有应用的列表。  
+2. 选择要删除的应用，并选择“...”上下文菜单。
 
-  ![含省略号的“业务线应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-lob-context-menu.png)
-3.  选择**删除应用程序**以删除该应用。
+   ![含省略号的“业务线应用”边栏选项卡的屏幕截图](../media/mam-azure-portal-lob-context-menu.png)
+3. 选择**删除应用程序**以删除该应用。
 
-  ![含“删除应用程序”选项的“业务线”边栏选项卡的屏幕截图](../media/mam-azure-portal-delete-app.png)
+   ![含“删除应用程序”选项的“业务线”边栏选项卡的屏幕截图](../media/mam-azure-portal-delete-app.png)
 
-  这会从业务线应用列表及 MAM 策略中的目标应用列表中删除该应用。
+   这会从业务线应用列表及 MAM 策略中的目标应用列表中删除该应用。

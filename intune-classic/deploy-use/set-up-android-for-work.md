@@ -1,27 +1,27 @@
 ---
-title: "设置 Android for Work"
-description: "使用 Microsoft Intune 为 Android for Work 设备启用移动设备管理 (MDM)。"
-keywords: 
+title: 设置 Android for Work
+description: 使用 Microsoft Intune 为 Android for Work 设备启用移动设备管理 (MDM)。
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b3a961bdf754100f1a48258290a635add8e03053
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 366e2b281c05e1233c61f7f35a50700677ad4b79
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-enrollment-of-android-for-work-devices"></a>启用 Android for Work 设备的注册
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 若要启用 Android for Work 设备的管理，必须将 Android for Work 绑定添加到 Intune。 若要注册支持 Android for Work、但以前已作为常规 Android 设备注册的设备，这些设备必须取消注册，然后重新注册。
 

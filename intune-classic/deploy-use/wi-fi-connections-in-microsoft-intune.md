@@ -1,35 +1,35 @@
 ---
-title: "Wi-Fi 连接"
-description: "使用 Wi-Fi 配置文件来帮助用户连接到 Wi-Fi 网络。"
-keywords: 
+title: Wi-Fi 连接
+description: 使用 Wi-Fi 配置文件来帮助用户连接到 Wi-Fi 网络。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>配置设备以连接到公司 Wi-Fi 网络
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune Wi-Fi 配置文件将无线网络设置部署到组织中的用户和设备。 部署 Wi-Fi 配置文件时，你的用户有权访问你公司的 Wi-Fi，而无需自行配置。
 
 例如，安装名为 **Contoso Wi-Fi** 的新 Wi-Fi 网络，并且想要将所有 iOS 设备设置为连接到此网络。 过程如下：
 
-![Wi-Fi 配置文件过程摘要](..\media\wi-fi-process-diagram.png)
+![Wi-Fi 配置文件过程摘要](../media/wi-fi-process-diagram.png)
 
 1.   创建包含连接到 **Contoso Wi-Fi** 无线网络所必需的设置的 Wi-Fi 配置文件。
 
@@ -67,23 +67,25 @@ ms.lasthandoff: 12/12/2017
 
 没有针对此策略类型的建议设置。 必须创建自定义策略。
 
-3.  提供配置文件的名称和描述。
+3. 提供配置文件的名称和描述。
 
 4. 指定“**网络连接**”值。
- - **SSID (服务设置标识符)**：如果希望用户看到网络名称而看不到 SSID，请选择此选项。
- - **在网络未广播其名称 (SSID) 时连接**：选择此选项以使设备可以在网络列表中未显示某网络时连接到该网络（因其处于隐藏状态且未广播其名称）。
+   - **SSID (服务设置标识符)**：如果希望用户看到网络名称而看不到 SSID，请选择此选项。
+   - **在网络未广播其名称 (SSID) 时连接**：选择此选项以使设备可以在网络列表中未显示某网络时连接到该网络（因其处于隐藏状态且未广播其名称）。
 
 5. 为选定的平台配置 **“安全设置”** 。 可用的设置取决于你选择的安全类型。 在[安全设置](#security-settings)中对其进行了说明。
 
 6. 配置**代理设置**（仅 iOS 和 MAC OS X）。
 
-    |设置名|更多信息|何时使用|
-    |----------------|-------------------|-------------|
-    |**此 Wi-Fi 连接的代理设置**|选择代理设置类型：<br /><br />-   **无**（默认值）<br />-   **手动** - 手动指定代理服务器的 URL 和端口号。<br />-   **自动** - 使用配置文件配置代理服务器。|始终|
-    |“代理服务器地址”和“端口号”|指定代理服务器的 URL 和端口号。|如果将“此 Wi-Fi 连接的代理设置”设置为“手动”|
-    |**代理服务器 URL**|指定包含代理服务器设置的文件的 URL。|如果将“此 Wi-Fi 连接的代理设置”设置为“自动”|
 
-7.  保存 Wi-Fi 配置文件
+   |                              设置名称                              |                                                                                                                                详细信息                                                                                                                                 |                                            何时使用                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>此 Wi-Fi 连接的代理设置</strong>        | 选择代理设置类型：<br /><br />-   <strong>无</strong>（默认值）<br />-   <strong>手动</strong> - 手动指定代理服务器的 URL 和端口号。<br />-   <strong>自动</strong> - 使用配置文件配置代理服务器。 |                                              始终                                               |
+   | “代理服务器地址”和“端口号” |                                                                                                              指定代理服务器的 URL 和端口号。                                                                                                               |  如果将“此 Wi-Fi 连接的代理设置”设置为“手动”   |
+   |                   <strong>代理服务器 URL</strong>                    |                                                                                                      指定包含代理服务器设置的文件的 URL。                                                                                                       | 如果将“此 Wi-Fi 连接的代理设置”设置为“自动” |
+
+
+7. 保存 Wi-Fi 配置文件
 
 新的策略将在“策略”工作区的“配置策略”节点处显示。 有关部署配置文件的信息，请参阅**接下来的步骤**。
 
@@ -116,14 +118,14 @@ ms.lasthandoff: 12/12/2017
 
 3.  为 Windows Wi-Fi 导入策略指定以下常规值：
 
-    |设置名|更多信息|
+    |设置名称|详细信息|
     |----------------|--------------------|
-    |**Name**|输入 Wi-Fi 配置文件的唯一名称，以在 Intune 控制台中识别。|
+    |**名称**|输入 Wi-Fi 配置文件的唯一名称，以在 Intune 控制台中识别。|
     |**描述**|提供对 Wi-Fi 配置文件的描述和其他可帮助你找到它的相关信息。|
 
 4.  在“自定义 Wi-Fi 配置文件”的标题下指定以下值：
 
-    |设置名|更多信息|
+    |设置名称|详细信息|
     |----------------|--------------------|
     |**配置的配置文件**|选择“导入”以选择包含想要导入 Intune 的 Wi-Fi 配置文件设置的 XML 文件。|
     |**自定义配置的配置文件名称（对用户显示）**|选择 Wi-Fi 配置的配置文件名称的显示方式，因为它会显示在用户的设备上。|
@@ -153,7 +155,7 @@ ms.lasthandoff: 12/12/2017
 
 ### <a name="security-settings-for-android-devices"></a>适用于 Android 设备的安全设置
 
-  |设置名|更多信息|何时使用|
+  |设置名称|详细信息|何时使用|
 |----------------|--------------------|-------------|
 |**安全类型**|选择无线网络的安全协议：<br /><br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   如果网络不安全，则为 **无身份验证（开放式）**。|始终|
 |**EAP 类型**|请选择用于验证安全无线连接的可扩展身份验证协议 (EAP) 类型：<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|如果选择“WPA-Enterprise/WPA2-Enterprise”安全类型。|
@@ -165,7 +167,7 @@ ms.lasthandoff: 12/12/2017
 
 ### <a name="security-settings-for-ios-and-mac-os-x-devices"></a>适用于 iOS 和 Mac OS X 设备的安全设置
 
-  |设置名|更多信息|何时使用|
+  |设置名称|详细信息|何时使用|
 |----------------|--------------------|-------------|
 |**安全类型**|选择无线网络安全协议：<br /><br />-   **WPA-Personal/WPA2-Personal**<br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **WEP**<br />-   如果网络不安全，则为 **无身份验证（开放式）**。|始终|
 |**EAP 类型**|请选择用于验证安全无线连接的可扩展身份验证协议 (EAP) 类型：<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|如果选择的安全类型为“WPA-Enterprise/WPA2-Enterprise”。|

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>准备好在 Azure 门户中配置应用保护策略
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题介绍可以在 Azure 门户中创建应用保护策略**之前**必须完成的先决条件和步骤。
 
@@ -72,20 +72,20 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 
   * 对于非托管的设备（如员工自有设备），或者由其他移动设备管理解决方案托管的设备，请参阅[保护未在 Intune 中注册的设备上的业务线应用和数据](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
--   **Microsoft Intune 订阅**。 用户需要 Intune 许可证才能获取具有应用保护策略的应用。
-如果当前使用 Intune 来管理设备，那么你已经具有 Intune 订阅。 如果你已购买企业移动性套件 (EMS) 许可证，那么你还具有 Intune 订阅。 如果要试用 Intune 来检查 MAM 功能，可在 [Microsoft Intune 页面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)上获取试用帐户。
+- **Microsoft Intune 订阅**。 用户需要 Intune 许可证才能获取具有应用保护策略的应用。
+  如果当前使用 Intune 来管理设备，那么你已经具有 Intune 订阅。 如果你已购买企业移动性套件 (EMS) 许可证，那么你还具有 Intune 订阅。 如果要试用 Intune 来检查 MAM 功能，可在 [Microsoft Intune 页面](https://www.microsoft.com/server-cloud/products/microsoft-intune/)上获取试用帐户。
 
-    若要验证是否具有 Intune 订阅，请在 Office 门户中转到“帐单”页面。  如果拥有订阅，应可以看到在订阅中 Intune 显示为“活动”状态。
+  若要验证是否具有 Intune 订阅，请在 Office 门户中转到“帐单”页面。  如果拥有订阅，应可以看到在订阅中 Intune 显示为“活动”状态。
 
--   以下事项需要 **Office 365 订阅**：
+- 以下事项需要 **Office 365 订阅**：
 
   - 将应用保护策略应用于具有多个标识支持的应用。
 
   - 创建 SharePoint Online 和 Exchange Online 工作帐户。 不支持 Exchange 内部部署和 SharePoint 内部部署。
 
--   **用于新式验证的 Skype for Business Online 设置**。 有关详细信息，请参阅[启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
+- **用于新式验证的 Skype for Business Online 设置**。 有关详细信息，请参阅[启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
 
 
 - Azure Active Directory (Azure AD) 用于创建用户。 当用户打开应用并输入其凭据时，Azure AD 对用户进行身份验证。

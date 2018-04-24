@@ -15,15 +15,15 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4054eb3804c159e6256b07bf89b8ccd93f7b2e8e
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 7d9a51cb4e76f5aa0f89f9160af6f5fe62f0bbbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 进行 iOS 设备注册
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>用户界面临时差异
@@ -55,16 +55,16 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
 必须先从 Apple 获取令牌 (.p7m) 文件，然后才能使用 Apple School Manager 注册公司拥有的 iOS 设备。 使用此令牌，Intune 可以同步有关已加入 Apple School Manager 的设备的信息。 它也允许 Intune 将注册配置文件上传至 Apple，并向设备分配这些配置文件。 在 Apple 门户中时，还可分配设备序列号以进行管理。
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>步骤 1。 下载创建 Apple 令牌所需的 Intune 公钥证书
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>步骤 1： 下载创建 Apple 令牌所需的 Intune 公钥证书
 
 1. 在 [Intune](https://aka.ms/intuneportal) 下选择“设备注册” > “Apple 注册” > “注册计划令牌” > “添加”。
 
-  ![获取注册计划令牌。](./media/device-enrollment-program-enroll-ios/image01.png)
+   ![获取注册计划令牌。](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. 在“注册计划令牌”边栏选项卡中，选择“下载公钥”，下载加密密钥 (.pem) 文件，并将其保存在本地。 .pem 文件用于从 Apple School Manager 门户请求信任关系证书。
      ![注册计划令牌”边栏选项卡](./media/device-enrollment-program-enroll-ios/image02.png)。
 
-### <a name="step-2-download-a-token-and-assign-devices"></a>步骤 2。 下载令牌并分配设备
+### <a name="step-2-download-a-token-and-assign-devices"></a>步骤 2： 下载令牌并分配设备
 1. 选择“通过 Apple School Manager 创建令牌”，使用公司 Apple ID 登录到 Apple School。 可使用此 Apple ID 续订 Apple School Manager 令牌。
 2.  在 [Apple School Manager 门户](https://school.apple.com)中，转到“MDM 服务器”，然后选择“添加 MDM 服务器”（右上方）。
 3.  输入“MDM 服务器名称”。 服务器名称供参考，用于识别移动设备管理 (MDM) 服务器。 它不是 Microsoft Intune 服务器的名称或 URL。
@@ -78,13 +78,13 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 8. 指定“选择设备”的方式，然后提供设备信息和详细信息。
 9. 选择“分配到服务器”，然后选择为 Microsoft Intune 指定的 &lt;ServerName&gt;，然后选择“确定”。
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步骤 3. 保存用于创建此令牌的 Apple ID
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步骤 3： 保存用于创建此令牌的 Apple ID
 
 在 Azure 门户中的 Intune 中，提供 Apple ID 供未来参考。
 
 ![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>步骤 4. 上传令牌
+### <a name="step-4-upload-your-token"></a>步骤 4： 上传令牌
 在“Apple 令牌”框中，浏览到证书 (.pem) 文件，选择“打开”，然后选择“创建”。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。 Intune 会自动从 Apple 同步 Apple School Manager 设备。
 
 ## <a name="create-an-apple-enrollment-profile"></a>创建 Apple 注册配置文件
@@ -94,7 +94,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 2. 选择令牌，选择“配置文件”，然后选择“创建配置文件”。
 3. 在“创建配置文件”下，输入配置文件的“名称”和“描述”以便于管理。 用户看不到这些详细信息。 可以使用此“名称”字段在 Azure Active Directory 中创建动态组。 使用配置文件名称定义 enrollmentProfileName 参数，以向设备分配此注册配置文件。 详细了解 [Azure Active Directory 动态组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
     ![配置文件名称和描述。](./media/device-enrollment-program-enroll-ios/image05.png)
-    
+
 4. 对于“用户关联”，选择具有此配置文件的设备是否必须通过已分配的用户进行注册。
     - 通过用户关联进行注册 - 为属于用户且想要使用公司门户获取服务（如安装应用）的设备选择此选项。 使用此选项时，用户还可使用公司门户对其设备进行身份验证。 用户关联需要 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。   Apple School Manager 的“Shared iPad”模式要求用户不通过用户关联进行注册。
 
@@ -112,8 +112,8 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
     将通过两种方式通知用户他们的设备受到监督：
 
-    - 锁屏界面显示“此 iPhone 由 Contoso 托管”。
-    - “设置” > “常规” > “关于”屏幕上显示“此 iPhone 受监督”。 Contoso 可以监视你的 Internet 流量并找到此设备。”
+   - 锁屏界面显示“此 iPhone 由 Contoso 托管”。
+   - “设置” > “常规” > “关于”屏幕上显示“此 iPhone 受监督”。 Contoso 可以监视你的 Internet 流量并找到此设备。”
 
      > [!NOTE]
      > 不受监督的注册设备只能使用 Apple Configurator 重置为受监督。 以此方式重置设备需要使用 USB 线将 iOS 设备连接到 Mac。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。
@@ -124,31 +124,33 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
 9. 选择是否要让使用此配置文件的设备能够“与计算机同步”。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
 
-9. 如果在上一步中选择了“通过证书允许 Apple Configurator”，则选择要导入的“Apple Configurator 证书”。
+10. 如果在上一步中选择了“通过证书允许 Apple Configurator”，则选择要导入的“Apple Configurator 证书”。
 
-10. 选择“确定”。
+11. 选择“确定”。
 
-11. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+12. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
 
-    | Setting | 描述 |
-    | --- | --- |
-    | **部门名称** | 用户在激活过程中轻点“关于配置”时显示。 |
-    | **部门电话** | 用户在激活过程中单击“需要帮助”按钮时显示。 |
-    | **设置助理选项** | 这些可选设置可以稍后在 iOS 的“设置”菜单中设置。 |
-    | **密码** | 在激活过程中提示输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
-    | **位置服务** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **还原** | 如果启用，在激活过程中设置助理会提示进行 iCloud 备份。 |
-    | **iCloud 和 Apple ID** | 如果启用，设置助理会提示用户登录 Apple ID，“应用和数据”屏幕将允许从 iCloud 备份还原设备。 |
-    | **条款和条件** | 如果启用，在激活过程中设置助理会提示用户接受 Apple 的条款和条件。 |
-    | **Touch ID** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **Apple Pay** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **缩放** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **Siri** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **诊断数据** | 如果启用，在激活过程中设置助理会提示此服务。 |
 
-12. 选择“确定”。
+    |                 设置                  |                                                                                               描述                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>部门名称</strong>     |                                                             用户在激活过程中轻点“关于配置”时显示。                                                              |
+    |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。                                                          |
+    | <strong>设置助理选项</strong> |                                                     这些可选设置可以稍后在 iOS 的“设置”菜单中设置。                                                      |
+    |        <strong>密码</strong>         | 在激活过程中提示输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
+    |    <strong>位置服务</strong>    |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                  |
+    |         <strong>还原</strong>         |                                                                如果启用，在激活过程中设置助理会提示进行 iCloud 备份。                                                                 |
+    |   <strong>iCloud 和 Apple ID</strong>   |                         如果启用，设置助理会提示用户登录 Apple ID，“应用和数据”屏幕将允许从 iCloud 备份还原设备。                         |
+    |  <strong>条款和条件</strong>   |                                                   如果启用，在激活过程中设置助理会提示用户接受 Apple 的条款和条件。                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |          <strong>缩放</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |          <strong>Siri</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |     <strong>诊断数据</strong>     |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
 
-13. 若要保存配置文件，则选择“创建”。
+
+13. 选择“确定”。
+
+14. 若要保存配置文件，则选择“创建”。
 
 ## <a name="connect-school-data-sync"></a>连接学校数据同步
 （可选）Apple School Manager 支持使用 Microsoft 学校数据同步 (SDS) 将学籍数据同步到 Azure Active Directory (AD)。 你只能同步一个包含 SDS 的令牌。 如果设置了其他包含学校数据同步的令牌，则会从之前包含 SDS 的令牌中将其删除。 新连接将替换当前的令牌。 请完成以下步骤以使用 SDS 来同步学校数据。
@@ -164,7 +166,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 至此，已将管理 Apple School Manager 设备的权限分配给 Intune，接下来可以通过 Apple 服务同步 Intune，以便在 Intune 中查看托管设备。
 
 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”> 在列表中选择令牌 >“设备” > “同步”。![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/device-enrollment-program-enroll-ios/image06.png)
-  
+
   为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
   - 每七天只能运行一次完全同步。 在完全同步期间，Intune 将刷新分配给 Intune 的每一个 Apple 序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
   - 任何同步请求都在 15 分钟内完成。 在此期间或在请求成功之前，“同步”按钮处于禁用状态。

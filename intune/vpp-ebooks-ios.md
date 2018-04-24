@@ -15,16 +15,16 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ef786346bb80b517bba4436358d43fe0eef2b4d
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 35f5618037a30a9157551c5b0985915eca33d3ad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 电子书
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 通过 Apple Volume Purchase Program (VPP)，可让你为想要分发给公司中多个用户的书籍购买多个许可证。 你可以从企业版应用商店或教育版应用商店中分发书籍。
 
@@ -61,7 +61,7 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
     - **VPP 令牌文件** - 确保你已注册 Volume Purchase Program 企业版或 Volume Purchase Program 教育版。 然后，为你的帐户下载 Apple VPP 令牌，并在此处选择它。
     - **Apple ID** - 输入与批量购买计划关联的帐户的 Apple ID。
     - **VPP 帐户类型** - 从“企业版”或“教育版”中进行选择。
-4. 完成后，单击“创建”。
+4. 完成后单击“**创建**”。
 
 该令牌显示在“令牌列表”窗格中。
 

@@ -1,37 +1,37 @@
 ---
-title: "在 Intune 中注册 Windows 10 设备 | Microsoft Docs"
-description: "将 Windows 10 1511 设备注册到 Intune"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 在 Intune 中注册 Windows 10 设备 | Microsoft Docs
+description: 将 Windows 10 1511 设备注册到 Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: bc9a351b24e35359f628a9af9ac906ed0c41a6ff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>在 Intune 中注册 Windows 10 设备
 
   > [!NOTE]
   > Windows 10 适用于所有类型的设备。 无论使用台式电脑、手机还是平板电脑，所遵循的步骤都相同，但是这些步骤可能与此页面上的图像略有差异。
 
-1.  转到“开始”。
+1. 转到“开始”。
 
-  - 如果使用 Windows 10 桌面版设备，请转到“开始”菜单。
-  - 如果使用 Windows 10 移动版设备，请转到“开始”屏幕，然后轻扫至“所有应用”列表。
+   - 如果使用 Windows 10 桌面版设备，请转到“开始”菜单。
+   - 如果使用 Windows 10 移动版设备，请转到“开始”屏幕，然后轻扫至“所有应用”列表。
 
 2. 通过在搜索栏中搜索“设置”，打开 Windows“设置”应用。
 

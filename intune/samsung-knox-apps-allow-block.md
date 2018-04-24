@@ -1,27 +1,27 @@
 ---
-title: "用于允许/阻止在 Samsung Knox 设备上运行应用的 Microsoft Intune 策略"
-titlesuffix: 
-description: "创建自定义配置文件，以允许和阻止在 Samsung Knox 标准设备上运行应用。"
-keywords: 
+title: 用于允许/阻止在 Samsung Knox 设备上运行应用的 Microsoft Intune 策略
+titlesuffix: ''
+description: 创建自定义配置文件，以允许和阻止在 Samsung Knox 标准设备上运行应用。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 95f35cfd869975a43fd54a1e6a9ff6ae35ffa6af
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 61a4d059eb771e22075796def5e1a273b02d932e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>在 Microsoft Intune 中使用自定义策略以允许和阻止在 Samsung Knox 标准设备上运行应用 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用此本文中的过程创建 Microsoft Intune 自定义策略，该策略创建以下内容之一：
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 03/08/2018
 2. 在配置文件窗格列表中，选择“创建配置文件”。
 3. 在“创建配置文件”窗格上，输入设备配置文件的“名称”和可选“描述”。
 2. 对于“平台”选择“Android”，对于“配置文件类型”选择“自定义”。
-3. 单击“设置”。
+3. 单击“设置” 。
 3. 在“自定义 OMA-URI 设置”窗格上，选择“添加”。
 4. 在“添加或编辑 OMA-URI 设置”对话框中，指定以下设置：
 

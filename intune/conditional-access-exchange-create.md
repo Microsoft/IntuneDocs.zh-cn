@@ -1,34 +1,34 @@
 ---
-title: "创建 Exchange 条件访问策略"
+title: 创建 Exchange 条件访问策略
 titlesuffix: Microsoft Intune
-description: "在 Intune 中配置 Exchange 内部部署的条件访问和旧版 Exchange Online Dedicated。"
-keywords: 
+description: 在 Intune 中配置 Exchange 内部部署的条件访问和旧版 Exchange Online Dedicated。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cfe5916668de6d8bb3c42f2fd6afb6221bbc07e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>为本地 Exchange 和旧版 Exchange Online Dedicated 配置条件访问策略
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍如何基于设备符合性配置本地 Exchange 的条件访问。
 
 如果你具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。 若要控制对 Exchange 内部部署或旧版 Exchange Online Dedicated 环境的电子邮件访问，请在 Intune 中配置 Exchange 内部部署的条件性访问。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 在可配置条件访问之前，请先验证以下内容：
 

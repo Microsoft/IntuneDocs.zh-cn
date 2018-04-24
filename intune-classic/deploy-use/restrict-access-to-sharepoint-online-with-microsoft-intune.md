@@ -1,29 +1,29 @@
 ---
-title: "保护 SharePoint Online"
-description: "使用条件访问保护和控制对 SharePoint Online 上公司数据的访问。"
-keywords: 
+title: 保护 SharePoint Online
+description: 使用条件访问保护和控制对 SharePoint Online 上公司数据的访问。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f86508d9b187e0026a74c4e82e94cdd5a4d29c3a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2b7285c272efac8eab406393b0b896795fa5d8ed
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>使用 Microsoft Intune 保护对 SharePoint Online 的访问
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune 条件访问控制对 SharePoint Online 上文件的访问。
 条件性访问有两个组件：
@@ -81,16 +81,16 @@ ms.lasthandoff: 10/10/2017
 支持以下设备：
 - Windows 8.1 及更高版本（若电脑已注册到 Intune）
 - Windows 7.0、Windows 8.1 或 Windows 10（若电脑已加入域），
-> [!NOTE]
->若要使用 Windows 10 电脑的条件访问，必须使用 Windows 10 周年更新更新电脑。
+  > [!NOTE]
+  >若要使用 Windows 10 电脑的条件访问，必须使用 Windows 10 周年更新更新电脑。
 
   - 必须将已加入域的电脑设置为[自动注册](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)到 Azure Active Directory。 Azure AD 设备注册服务将对 Intune 和 Office 365 客户自动激活。 已经部署了 ADFS 设备注册服务的用户不会在本地 Active Directory 上看到已注册的设备。
 
   - 如果策略设置为要求加入域，而电脑未加入域，则会显示一条消息，要求与 IT 管理员联系。
 
   - 如果策略设置要求加入域或合规，而电脑不符合任一要求，则会显示一条消息，其中包含有关如何安装公司门户应用和进行注册的说明。
-  >[!NOTE]
-  >运行 Intune 计算机客户端的电脑不支持条件访问。
+    >[!NOTE]
+    >运行 Intune 计算机客户端的电脑不支持条件访问。
 
 [Office 365 新式验证必须已启用](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)，并且具有所有最新的 Office 更新。
 
@@ -132,24 +132,24 @@ ms.lasthandoff: 10/10/2017
 > 还可在 Azure AD 管理控制台中为 Intune 设备创建条件访问策略，该策略在 Azure AD 中称为“基于设备的条件访问策略”。 此外，可创建其他条件访问策略，如多重身份验证。 还可为 Azure AD 支持的第三方企业应用（如 Salesforce 和 Box）设置条件访问策略。 有关详细信息，请参阅[如何将 Azure Active Directory 针对访问控制的基于设备的条件访问策略设置为 Azure Active Directory 连接的应用程序](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
 
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件访问” > “SharePoint Online 策略”。
-![SharePoint Online 策略页面的屏幕截图](../media/mdm-ca-spo-policy-configuration.png)
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件访问” > “SharePoint Online 策略”。
+   ![SharePoint Online 策略页面的屏幕截图](../media/mdm-ca-spo-policy-configuration.png)
 
-2.  选择“启用 SharePoint Online 的条件性访问策略”。
+2. 选择“启用 SharePoint Online 的条件性访问策略”。
 
-3.  在“应用程序访问”下，可以选择将条件性访问策略应用到：
+3. 在“应用程序访问”下，可以选择将条件性访问策略应用到：
 
-    -   **所有平台**
+   - **所有平台**
 
-        这要求用于访问 **SharePoint Online** 的设备已在 Intune 中注册且符合相应的策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果 Intune 当前不支持该平台，则会阻止对 **SharePoint Online** 的访问。
+     这要求用于访问 **SharePoint Online** 的设备已在 Intune 中注册且符合相应的策略。 任何使用**新式验证**的客户端应用程序需遵守条件性访问策略。 如果 Intune 当前不支持该平台，则会阻止对 **SharePoint Online** 的访问。
 
-        选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需为已注册并合规，以下各项除外：
-        *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
-        * 不受支持的平台，如 Mac。 但是，仍将阻止使用来自这些平台的新式验证的应用。
+     选择“所有平台”选项意味着无论客户端应用程序报告的是什么平台，Azure Active Directory 都会将此策略应用于所有身份验证请求。 所有平台都需为已注册并合规，以下各项除外：
+     *   Windows 设备需要注册并合规，并且/或者域已加入本地 Active Directory 域。
+     * 不受支持的平台，如 Mac。 但是，仍将阻止使用来自这些平台的新式验证的应用。
 
-    -   **特定平台**
+   - **特定平台**
 
-         条件性访问策略会应用到在你指定的平台上使用新式验证的任何客户端应用。
+      条件性访问策略会应用到在你指定的平台上使用新式验证的任何客户端应用。
 
      Windows 电脑必须加入域，或是向 Intune 注册并符合策略。 可以设置以下要求：
 
@@ -157,28 +157,28 @@ ms.lasthandoff: 10/10/2017
 
      -   **设备必须是合规的。** 选择此选项要求电脑必须在 Intune 中注册并且必须符合策略。 如果电脑未注册，则会显示一条消息，其中包含有关如何注册的说明。
 
-4.   在**浏览器访问** SharePoint Online 和 OneDrive for Business 下，可选择仅允许通过受支持的浏览器（Safari (iOS) 和 Chrome (Android)）访问 Exchange Online。 将阻止来自其他浏览器的访问。 为 OneDrive 的应用程序访问选择的相同平台限制在此处同样适用。
+4. 在**浏览器访问** SharePoint Online 和 OneDrive for Business 下，可选择仅允许通过受支持的浏览器（Safari (iOS) 和 Chrome (Android)）访问 Exchange Online。 将阻止来自其他浏览器的访问。 为 OneDrive 的应用程序访问选择的相同平台限制在此处同样适用。
 
-  在 **Android** 设备上，用户必须启用浏览器访问。 若要执行此操作，用户必须在已注册的设备上选择“启用浏览器访问”选项，如下所示：
-  1.    打开“公司门户”应用。
-  2.    通过省略号 (…) 或硬件菜单按钮，转到“设置”页面。
-  3.    按“启用浏览器访问”按钮。
-  4.    在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
+   在 **Android** 设备上，用户必须启用浏览器访问。 若要执行此操作，用户必须在已注册的设备上选择“启用浏览器访问”选项，如下所示：
+   1.    打开“公司门户”应用。
+   2.    通过省略号 (…) 或硬件菜单按钮，转到“设置”页面。
+   3.    按“启用浏览器访问”按钮。
+   4.    在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
 
-  在 **iOS** 和 **Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。 设备会显示证书，并提示用户选择证书，如下面的屏幕截图所示。 用户必须选择此证书，然后才能使用浏览器。
+   在 **iOS** 和 **Android** 平台上，为了识别用于访问服务的设备，Azure Active Directory 将向设备颁发一个传输层安全性 (TLS) 证书。 设备会显示证书，并提示用户选择证书，如下面的屏幕截图所示。 用户必须选择此证书，然后才能使用浏览器。
 
-  **iOS**
+   **iOS**
 
-  ![iPad 上证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![iPad 上证书提示的屏幕截图](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+   **Outlook Web Access (OWA)**
 
-  ![Android 设备上证书提示的屏幕截图](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  在“目标组”下，选择“修改”选择将应用策略的 Azure Active Directory 安全组。 你可以选择将此应用于所有用户或仅针对选择的用户组。
+   ![Android 设备上证书提示的屏幕截图](../media/mdm-browser-ca-android-cert-prompt.png)
+5. 在“目标组”下，选择“修改”选择将应用策略的 Azure Active Directory 安全组。 你可以选择将此应用于所有用户或仅针对选择的用户组。
 
-6.  或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
+6. 或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
 
-7.  完成后，选择“保存”。
+7. 完成后，选择“保存”。
 
 不需要部署条件访问策略—它会立即生效。
 

@@ -1,37 +1,37 @@
 ---
-title: "将 Windows 10 设备的日志发送给公司支持人员 | Microsoft Docs"
-description: "将 Windows 10 1511 设备注册到 Intune"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 将 Windows 10 设备的日志发送给公司支持人员 | Microsoft Docs
+description: 将 Windows 10 1511 设备注册到 Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 038747fb-5b52-47c4-a2b6-f9218da4cfe1
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6a0f0b566b33d09ba09aee0d479b21f58dedf489
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 57c1dcfb591ceea1b85292a416d037c0b4073645
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>通过 Windows 10 的“设置”应用将日志发送给公司支持人员
 
 如果在使用公司管理的 Windows 10 设备时遇到错误，可以通过电子邮件向公司支持人员发送信息，以帮助他们解决问题。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
 
-1.  通过转到“开始菜单”并选择“设置”按钮，打开 Windows“设置”应用。 还可以在搜索栏中搜索“设置”。
-2.  转至“帐户” > “访问工作或学校”。
-3.  选择“导出管理日志文件”。
+1. 通过转到“开始菜单”并选择“设置”按钮，打开 Windows“设置”应用。 还可以在搜索栏中搜索“设置”。
+2. 转至“帐户” > “访问工作或学校”。
+3. 选择“导出管理日志文件”。
 
-  ![“访问工作或学校屏幕”显示了“相关设置”标题下的“导出”选项。](./media/w10-export-logs.png)
+   ![“访问工作或学校屏幕”显示了“相关设置”标题下的“导出”选项。](./media/w10-export-logs.png)
 
 4. 日志将保存在 **C:\Users\Public\Public Documents\MDMDiagnostics** 中。 将创建两个文件：一个是日志本身；另一个是一个特殊文档，允许管理员使用其他程序（如 Microsoft Excel）查看日志。 将这两个文件附加到电子邮件中发送给管理员。如果多次执行此操作，请仅从创建日志的那天选择文件。 
 

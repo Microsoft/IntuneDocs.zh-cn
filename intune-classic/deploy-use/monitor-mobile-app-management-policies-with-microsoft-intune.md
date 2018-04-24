@@ -1,25 +1,25 @@
 ---
-title: "使用 Microsoft Intune 监视 MAM 策略"
-description: "查看有多少用户拥有策略，并深入了解获取详细信息。"
-keywords: 
+title: 使用 Microsoft Intune 监视 MAM 策略
+description: 查看有多少用户拥有策略，并深入了解获取详细信息。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4b25c2ebe6fa8edf7ce954f68c22d4086fcaf7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: de26b7614578b275802ca048ed17bfa5969f0387
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 监视应用保护策略
 可以监视已应用于用户的应用保护策略的符合性状态。 可找到的信息包括受应用保护策略影响的用户、它的符合性状态和用户可能遭遇的任何问题。

@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 273919a7f5a62ab6b7b625756da29d3b58339578
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: f6e5955b690eedf06872171fcc22eb86a0f7764e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何使用 Azure AD 访问 Microsoft Graph Intune API
 
@@ -116,15 +116,15 @@ ms.lasthandoff: 03/17/2018
 
 - 使应用可供租户之外的用户使用。  （这通常仅适用于支持多个租户/组织的合作伙伴。）  
 
-    为此，请执行以下操作：
+    执行此操作的步骤：
 
-    1. 从应用程序边栏选项卡中选择“清单”，将打开“编辑清单”边栏选项卡。
+  1. 从应用程序边栏选项卡中选择“清单”，将打开“编辑清单”边栏选项卡。
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. 将 `availableToOtherTenants` 设置的值更改为 `true`。
+  2. 将 `availableToOtherTenants` 设置的值更改为 `true`。
 
-    3. 保存你的更改。
+  3. 保存你的更改。
 
 ## <a name="intune-permission-scopes"></a>Intune 权限范围
 
