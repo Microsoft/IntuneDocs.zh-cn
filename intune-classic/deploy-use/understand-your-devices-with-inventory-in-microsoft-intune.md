@@ -1,29 +1,29 @@
 ---
-title: "了解你的设备清单"
-description: "使用 Intune 查看你管理的设备的硬件的相关信息。"
-keywords: 
+title: 了解你的设备清单
+description: 使用 Intune 查看你管理的设备的硬件的相关信息。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/05/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c72e216201ac019f2cdffaf6e185bd6ff4436737
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e50a7329512e6b57eb5486792669b7cd102eebdb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>在 Microsoft Intune 中了解你的设备清单
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 通过 Microsoft Intune，你可查看运行 Intune 客户端软件的已注册设备和 Windows 电脑的清单。
 Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报表显示最近对设备进行的任何更改（例如，对设备名称的更改，或对免费存储空间的更改）的结果前可能会有一定的延迟。
@@ -33,7 +33,7 @@ Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报
 
 |属性|收集方|
 |------------|-----------------------|
-|**Name**|“所有设备”|
+|**名称**|“所有设备”|
 |**操作系统**|“所有设备”|
 |**制造商**|“所有设备”|
 |**型号**|“所有设备”|
@@ -51,7 +51,7 @@ Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报
 |**序列号**|iOS、Mac OS X、Android、Windows 8.1 和 Windows 10 桌面版设备|
 |**总存储空间**|iOS、Mac OS X、Windows 8.1 和 Windows 10 桌面版和移动版设备|
 |**可用存储空间**|iOS、Mac OS X、Windows 8.1 和 Windows 10 桌面版设备|
-|**电话号码**<br>归类为企业的电话将以其完整的电话号码进行标识（例如在运行移动设备清单报表时）。 将使用 &#42; 屏蔽 BYOD 电话号码；仅显示最后 4 位数字。|iOS、Android 和 Windows Phone 设备|
+|**电话号码**<br>归类为企业的电话将以其完整的电话号码进行标识（例如在运行移动设备清单报表时）。 将使用 &#42 屏蔽 BYOD 电话号码；仅显示最后 4 位数字。|iOS、Android 和 Windows Phone 设备|
 |**IMEI**|Exchange ActiveSync、iOS、Android 和 Windows Phone 设备|
 |**MEID**<br>移动设备标识符|仅限 iOS 设备|
 |**Wi-Fi MAC**|Exchange ActiveSync 以外的所有设备|
@@ -74,7 +74,7 @@ Intune 通常每隔 7 天从受管理设备收集一次清单。 因此，在报
 
 若要查看 Windows 电脑收集的清单，请运行[计算机清单报表](understand-microsoft-intune-operations-by-using-reports.md)。 Intune 将从 Windows 电脑收集以下清单：
 
--   **Name**
+-   **名称**
 
 -   **底盘类型**
 

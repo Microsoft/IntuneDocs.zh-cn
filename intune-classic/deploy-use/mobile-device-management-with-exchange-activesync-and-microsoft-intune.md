@@ -1,29 +1,29 @@
 ---
-title: "Exchange ActiveSync 设备管理"
-description: "通过 Exchange Connector 使用 Exchange ActiveSync (EAS) 管理来管理移动设备"
-keywords: 
+title: Exchange ActiveSync 设备管理
+description: 通过 Exchange Connector 使用 Exchange ActiveSync (EAS) 管理来管理移动设备
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 02d6220a4c780eafb7afb01208e18e7df7684b68
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f5e9bd3dd2026096c323858fc7faa915895ed55d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>使用 Microsoft Intune 管理 Exchange ActiveSync 移动设备
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 若要使用 Microsoft Intune 直接管理移动设备，则必须[在 Intune 中注册](prerequisites-for-enrollment.md)设备。 或者，管理员可以启用限制更多的管理解决方案，该解决方案通过 Exchange 连接器使用 Exchange ActiveSync (EAS) 管理。 使用 Office 365，可以通过本地 Exchange 服务器或 Exchange Online 管理设备。 Intune 仅支持每个订阅中存在一个任意类型的 Exchange 连接器连接。
 

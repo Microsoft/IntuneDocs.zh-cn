@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本文提供了针对 Intune 移动应用程序管理 (MAM) 和 Intune 应用保护的一些常见问题解答。
 
@@ -61,23 +61,23 @@ ms.lasthandoff: 03/22/2018
 
 **使用 [Outlook 移动应用](https://www.microsoft.com/outlook-com/mobile/)有什么其他要求？**
 
-  1. 最终用户必须将 Outlook 移动应用安装到其设备上。
+1. 最终用户必须将 Outlook 移动应用安装到其设备上。
 
-  2. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) 邮箱和许可证。
+2. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) 邮箱和许可证。
 
-  >[!NOTE]
-  > Outlook 移动应用当前仅支持 Microsoft Exchange Online，不支持 Exchange 内部部署或 Office 365 Dedicated 中的 Exchange。
+   >[!NOTE]
+   > Outlook 移动应用当前仅支持 Microsoft Exchange Online，不支持 Exchange 内部部署或 Office 365 Dedicated 中的 Exchange。
 
 **使用 [Word、Excel 和 PowerPoint](https://products.office.com/business/office) 应用有什么其他要求？**
 
-  1. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用，可以包括 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)可在 [Office 门户](http://portal.office.com)中分配 Office 365 许可证。
+1. 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用，可以包括 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)可在 [Office 门户](http://portal.office.com)中分配 Office 365 许可证。
 
-  2. 最终用户必须具有使用粒度另存为功能进行配置的托管的位置（该功能位于“阻止另存为”应用程序保护策略设置下）。 例如，如果托管的位置为 OneDrive，则应在最终用户的 Word、Excel 或 PowerPoint 应用中对 [OneDrive](https://onedrive.live.com/about/) 应用进行配置。
+2. 最终用户必须具有使用粒度另存为功能进行配置的托管的位置（该功能位于“阻止另存为”应用程序保护策略设置下）。 例如，如果托管的位置为 OneDrive，则应在最终用户的 Word、Excel 或 PowerPoint 应用中对 [OneDrive](https://onedrive.live.com/about/) 应用进行配置。
 
-  3. 如果托管的位置为 OneDrive，则部署到最终用户的应用保护策略必须面向该应用。
+3. 如果托管的位置为 OneDrive，则部署到最终用户的应用保护策略必须面向该应用。
 
-  >[!NOTE]
-  > Office 移动应用当前仅支持 SharePoint Online，不支持本地 SharePoint。
+   >[!NOTE]
+   > Office 移动应用当前仅支持 SharePoint Online，不支持本地 SharePoint。
 
 **为什么 Office 需要托管的位置（例如 OneDrive）？** Intune 会将应用中的所有数据标记为“公司”或“个人”。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。
 
@@ -124,15 +124,15 @@ IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设�
 
 **Intune 如何远程擦除数据？** Intune 能够使用 3 种不同方式擦除应用数据：完全设备擦除、MDM 选择性擦除和 MAM 选择性擦除。 有关 MDM 远程擦除的详细信息，请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)。 有关使用 MAM 的选择性擦除的详细信息，请参阅[使用 Microsoft Intune 擦除托管公司应用数据](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **什么是完全擦除？** [完全擦除](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)会通过将设备还原到其出厂默认设置，从**设备**中删除所有用户数据和设置。 设备从 Intune 删除。
-  >[!NOTE]
-  > 完全擦除只有在注册了 Intune 移动设备管理 (MDM) 的设备上才能实现。
+1. **什么是完全擦除？** [完全擦除](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)会通过将设备还原到其出厂默认设置，从**设备**中删除所有用户数据和设置。 设备从 Intune 删除。
+   >[!NOTE]
+   > 完全擦除只有在注册了 Intune 移动设备管理 (MDM) 的设备上才能实现。
 
-  2. **什么是 MDM 选择性擦除？** 请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)，以了解选择性擦除。
+2. **什么是 MDM 选择性擦除？** 请参阅[使用 Microsoft Intune 的完全擦除或选择性擦除帮助保护数据](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)，以了解选择性擦除。
 
-  3. **什么是 MAM 选择性擦除？** MAM 选择性擦除仅删除应用中的公司应用数据。 使用 Intune Azure 门户启动该请求。 若要了解如何启动擦除请求，请参阅[使用 Microsoft Intune 擦除托管公司应用数据](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
+3. **什么是 MAM 选择性擦除？** MAM 选择性擦除仅删除应用中的公司应用数据。 使用 Intune Azure 门户启动该请求。 若要了解如何启动擦除请求，请参阅[使用 Microsoft Intune 擦除托管公司应用数据](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  4. **MAM 选择性擦除多久发生一次？** 如果用户在启用了选择性擦除的情况下使用应用，那么 Intune App SDK 会每 30 分钟检查一次来自 Intune MAM 服务的选择性擦除请求。 它还会在用户第一次启动应用并使用其工作或学校帐户登录时检查选择性擦除。
+4. **MAM 选择性擦除多久发生一次？** 如果用户在启用了选择性擦除的情况下使用应用，那么 Intune App SDK 会每 30 分钟检查一次来自 Intune MAM 服务的选择性擦除请求。 它还会在用户第一次启动应用并使用其工作或学校帐户登录时检查选择性擦除。
 
 **为什么本地服务不适用于 Intune 保护的应用？** Intune 应用保护要求用户的身份在应用程序与 Intune App SDK 之间保持一致。 保证此种一致的唯一方法是通过新式身份验证。 在某些情况下应用可能适用于本地配置，但它们既不一致也无法得到保证。
 

@@ -1,6 +1,6 @@
 ---
 title: 管理设备上的 iOS 激活锁定
-description: Microsoft Intune 可以帮助管理 iOS 激活锁定，这是适用于 iOS 7.1 及更高版本设备的“查找我的 iPhone”应用的功能。
+description: Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 7.1 和更高版本设备上的“查找我的 iPhone”应用的功能。
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 12363a677bc7d1ffefe224ff0bb10067903132ae
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 37593e8c554cad73182873b01f6388bdb9cb0035
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>通过 Microsoft Intune 的绕过激活锁定帮助保护 iOS 设备
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 可以帮助你管理 iOS 激活锁定，它具有 iOS 8.0 和更高版本设备上的“查找我的 iPhone”应用的功能。 当用户在设备上打开了“查找我的 iPhone”应用时，激活锁定将自动启用。 启用后，任何人都必须先输入用户的 Apple ID 和密码，然后才能执行以下操作： 
 
@@ -68,7 +68,7 @@ Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定�
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>如何从 Intune 管理员控制台使用绕过激活锁定
 > [!IMPORTANT]
-> 绕过设备上的激活锁定后，如果“查找我的 iPhone”应用处于打开状态，将自动应用新的激活锁定。 因此，“你应实际拥有该设备，才能执行此过程” 。
+> 绕过设备上的激活锁定后，如果“查找我的 iPhone”应用处于打开状态，将自动应用新的激活锁定。 因此，**你应实际拥有该设备，才能执行此过程**。
 
 1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**组** &gt; **所有设备** &gt; **公司拥有的所有设备**。
 

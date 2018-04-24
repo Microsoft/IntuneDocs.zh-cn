@@ -1,25 +1,25 @@
 ---
-title: "应用程序"
+title: 应用程序
 titlesuffix: Microsoft Intune
-description: "Intune 数据仓库 API 中实体集合的“应用程序”类别的参考主题。"
-keywords: "Intune 数据仓库"
+description: Intune 数据仓库 API 中实体集合的“应用程序”类别的参考主题。
+keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e7de3ab89ff75b381d0438f49fb6015b0eb28d28
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 5fd8f9744e68a19cc9411fe366aff4050cc3caa6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-application-entities"></a>应用程序实体引用
 
@@ -128,11 +128,13 @@ MobileAppInstallState 实体表示已分配到包含设备和/或用户的组的
 
 MobileAppDeviceUserInstallStatus 表示给定设备和用户的移动应用安装状态。
 
-| 属性 | 描述 |
-|---|---|
-| DateKey | 记录应用安装状态的当天日期的键。 |
-| AppKey | 用于标识 AppRevision 实例的移动应用键。 |
-| DeviceKey | 用于标识 Device 实例的目标设备键。 |
-| UserKey | 用于标识 User 实例的目标用户键。 |
-|AppInstallStateKey | 用于标识 MobileAppInstallState 实例的应用安装状态键。 |
-| 错误代码 | 应用安装程序、移动平台或与应用安装相关的服务返回的错误代码。 |
+
+|      属性      |                                                         描述                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  记录应用安装状态的当天日期的键。                                  |
+|       AppKey       |                             用于标识 AppRevision 实例的移动应用键。                              |
+|     DeviceKey      |                              用于标识 Device 实例的目标设备键。                               |
+|      UserKey       |                                用于标识 User 实例的目标用户键。                                 |
+| AppInstallStateKey |                     用于标识 MobileAppInstallState 实例的应用安装状态键。                     |
+|     错误代码      | 应用安装程序、移动平台或与应用安装相关的服务返回的错误代码。 |
+

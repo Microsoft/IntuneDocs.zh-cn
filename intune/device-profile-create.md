@@ -14,15 +14,15 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>创建配置文件
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，然后搜索“Microsoft Intune”。
@@ -31,33 +31,33 @@ ms.lasthandoff: 03/20/2018
 
 3. 输入以下属性：
 
-    - **名称**：输入新配置文件的描述性名称。
-    - **说明**：输入配置文件的说明。 （这是可选的，但建议使用它。）
-    - **平台**：选择平台类型：  
+   - **名称**：输入新配置文件的描述性名称。
+   - **说明**：输入配置文件的说明。 （这是可选的，但建议使用它。）
+   - **平台**：选择平台类型：  
 
-        - **Outlook Web Access (OWA)**
-        - **Android for Work**
-        - **iOS**
-        - **macOS**
-        - **Windows Phone 8.1**
-        - **Windows 8.1 及更高版本**
-        - Windows 10 及更高版本
+       - **Outlook Web Access (OWA)**
+       - **Android for Work**
+       - **iOS**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 及更高版本**
+       - **Windows 10 及更高版本**
 
-    - **配置文件类型**：选择要创建的类型。 列表取决于所选择的平台。
-    - **设置**：以下主题介绍了每种配置文件类型的设置：
+   - **配置文件类型**：选择要创建的类型。 列表取决于所选择的平台。
+   - **设置**：以下主题介绍了每种配置文件类型的设置：
 
-        -  [设备功能设置](device-features-configure.md)
-        -  [设备限制设置](device-restrictions-configure.md)
-        -  [电子邮件设置](email-settings-configure.md)
-        -  [VPN 设置](vpn-settings-configure.md)
-        -  [Wi-Fi 设置](wi-fi-settings-configure.md)
-        -  [Windows 10 版本升级设置](edition-upgrade-configure-windows-10.md)
-        -  [证书设置](certificates-configure.md)
-        -  [Windows 信息保护设置](windows-information-protection-configure.md)
-        -  [教育设置](education-settings-configure.md)
-        -  [自定义设置](custom-settings-configure.md)
+       -  [设备功能设置](device-features-configure.md)
+       -  [设备限制设置](device-restrictions-configure.md)
+       -  [电子邮件设置](email-settings-configure.md)
+       -  [VPN 设置](vpn-settings-configure.md)
+       -  [Wi-Fi 设置](wi-fi-settings-configure.md)
+       -  [Windows 10 版本升级设置](edition-upgrade-configure-windows-10.md)
+       -  [证书设置](certificates-configure.md)
+       -  [Windows 信息保护设置](windows-information-protection-configure.md)
+       -  [教育设置](education-settings-configure.md)
+       -  [自定义设置](custom-settings-configure.md)
 
-    ![“创建配置文件”的屏幕截图](./media/create-device-profile.png)
+     ![“创建配置文件”的屏幕截图](./media/create-device-profile.png)
 
 4. 完成后，选择“创建”。
 

@@ -1,50 +1,50 @@
 ---
-title: "资源访问的证书配置文件"
-description: "使用每个用户设备上安装的证书保护 VPN、Wi-fi 和电子邮件访问。"
-keywords: 
+title: 资源访问的证书配置文件
+description: 使用每个用户设备上安装的证书保护 VPN、Wi-fi 和电子邮件访问。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76083268d3c7ed43cea0bc0d9751ae9c37c7227b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccfd69579832c553dc1416c21ca93b85cd93cd78
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>使用 Microsoft Intune 中的证书配置文件确保资源访问的安全性
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 当你通过 VPN、Wi-Fi 或电子邮件配置文件给予用户对公司资源的访问权限时，你可以使用每个用户设备上安装的证书保护该访问权限。 以下是它的工作原理：
 
 1. 请确保你拥有正确的证书基础结构，如 [配置 SCEP 证书基础结构](configure-certificate-infrastructure-for-scep.md)和[配置 PFX 证书基础结构](configure-certificate-infrastructure-for-pfx.md)中所述。
 
 2. 在每台设备上安装根证书或中间证书颁发机构 (CA) 证书，以便该设备识别 CA 的合法性。 为此，创建并部署**受信任的证书配置文件**。 在部署此配置文件时，使用 Intune 托管的设备将请求并接收根证书。 必须为每个平台创建单独的配置文件。 **受信任的证书配置文件**可用于以下这些平台：
- -  iOS 8.0 及更高版本
- -  Mac OS X 10.9 及更高版本
- -  Android 4.0 及更高版本
- -  Android for Work
- -  Windows 8.1 及更高版本
- -  Windows Phone 8.1 及更高版本
+   -  iOS 8.0 及更高版本
+   -  Mac OS X 10.9 及更高版本
+   -  Android 4.0 及更高版本
+   -  Android for Work
+   -  Windows 8.1 及更高版本
+   -  Windows Phone 8.1 及更高版本
 
 3. 创建证书配置文件以便设备请求一个将用于对 VPN、Wi-Fi 和电子邮件访问进行身份验证的证书，如[配置 Intune 证书配置文件](configure-intune-certificate-profiles.md)中所述。 可以为运行以下平台的设备创建并部署 **PKCS #12 (.PFX) 证书配置文件***或* **SCEP 证书配置文件**：
 
-  -  iOS 8.0 及更高版本
-  -  Android 4.0 及更高版本
-  -  Android for Work
-  -  Windows 10（桌面版和移动版）及更高版本
+   -  iOS 8.0 及更高版本
+   -  Android 4.0 及更高版本
+   -  Android for Work
+   -  Windows 10（桌面版和移动版）及更高版本
 
-  将 **SCEP 证书配置文件**用于运行以下平台的设备：
+   将 **SCEP 证书配置文件**用于运行以下平台的设备：
     -   Mac OS X 10.9 及更高版本
     -   Windows Phone 8.1
 

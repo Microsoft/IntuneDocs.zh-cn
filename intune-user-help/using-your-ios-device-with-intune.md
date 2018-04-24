@@ -1,27 +1,27 @@
 ---
-title: "通过 Intune 使用 iOS 设备 | Microsoft Docs"
-description: "指向任务的链接列表，具体为在 Intune 中注册 iOS 设备后可在设备上执行的任务。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 通过 Intune 使用 iOS 设备 | Microsoft Docs
+description: 指向任务的链接列表，具体为在 Intune 中注册 iOS 设备后可在设备上执行的任务。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8e6eb579968fe8499b176e58ff50b9d7635aa3c0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-your-ios-device-with-intune"></a>通过 Intune 使用 iOS 设备
 
@@ -41,7 +41,7 @@ Intune 当前支持 iOS 9.0 及更高版本。
 
 - [在设备上使用托管应用](use-managed-apps-on-your-device-ios.md)
 - [设置或更改密码](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [重置（清除）丢失或被盗设备](reset-erase-your-device-cpwebsite.md)
 - [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-ios.md)
 - [从 Intune 取消注册设备](unenroll-your-device-from-intune-ios.md)

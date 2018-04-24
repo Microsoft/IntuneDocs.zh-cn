@@ -1,28 +1,28 @@
 ---
-title: "验证 MAM 设置"
-description: "本主题介绍如何测试和验证是否已正确设置 MAM 策略并按预期方式工作。"
-keywords: 
+title: 验证 MAM 设置
+description: 本主题介绍如何测试和验证是否已正确设置 MAM 策略并按预期方式工作。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angerobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.openlocfilehash: e0cb44177f830236865dce0ab68bb1084fcebc2d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6f11c2f2af53813040417a8f40e983b5c88d5189
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-your-mobile-application-management-setup"></a>验证移动应用管理设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题提供有关设置移动应用管理 (MAM) 后检查问题的相关信息。 本指南适用于 Azure 门户中的 MAM 策略。
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/10/2017
 
 2. 从列表中选择用户或搜索并选择一个用户，然后选择“**选择用户**”。 在“**应用报告**”列顶部，将看到用户是否已获得 MAM 授权。 你可以从下面看到该用户是否已获得 O365 授权，以及所有用户设备的应用状态。
 
-![MAM 的应用状态](..\media\ts-mam-user-apps.png)
+![MAM 的应用状态](../media/ts-mam-user-apps.png)
 
 ### <a name="what-to-do"></a>要执行的操作
 下面是要根据用户状态采取的操作：
@@ -54,6 +54,6 @@ ms.lasthandoff: 10/10/2017
 - 确保这些条件适用于要应用 MAM 策略的所有用户。
 
 ### <a name="see-also"></a>另请参阅
-[准备好使用 Microsoft Intune 配置移动应用管理策略](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[准备好使用 Microsoft Intune 配置移动应用管理策略](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[通过 Microsoft Intune 使用移动应用管理策略保护应用数据](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[通过 Microsoft Intune 使用移动应用管理策略保护应用数据](../deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

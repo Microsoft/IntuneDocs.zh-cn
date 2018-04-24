@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>使用 Microsoft Intune 部署应用
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题说明一些在开始使用 Microsoft Intune 部署应用之前需要了解的概念。
 
@@ -46,18 +46,19 @@ ms.lasthandoff: 03/22/2018
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>了解可用于每种安装程序类型的部署操作
 
-|安装程序类型|必需安装|可用安装|卸载|“不适用”|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Windows 应用包（已部署到用户组）|是|是|是|是|
-|Windows 应用包（部署到设备组）|是|否|是|是|
-|移动设备的应用包（已部署到用户组）|是|是|是|是|
-|移动设备的应用包（已部署到设备组）|是|否|是|是|
-|Windows 安装程序（已部署到用户组）|否|是|否|是|
-|Windows 安装程序（已部署到设备组）|是|否|是|是|
-|外部链接（已部署到用户组）|否|是|否|是|
-|外部链接（已部署到设备组）|否|否|否|否|
-|来自应用商店的托管 iOS 应用程序（已部署到用户组）|是|是|是|是|
-|来自应用商店的托管 iOS 应用程序（已部署到设备组）|是|否|是|是|
+|                         安装程序类型                          | 必需安装 | “可用安装” | 卸载 | “不适用” |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Windows 应用包（已部署到用户组）          |       是        |        是        |    是    |      是       |
+|        Windows 应用包（部署到设备组）         |       是        |        否         |    是    |      是       |
+|    移动设备的应用包（已部署到用户组）    |       是        |        是        |    是    |      是       |
+|   移动设备的应用包（已部署到设备组）   |       是        |        否         |    是    |      是       |
+|          Windows 安装程序（已部署到用户组）           |        否        |        是        |    否     |      是       |
+|         Windows 安装程序（已部署到设备组）          |       是        |        否         |    是    |      是       |
+|            外部链接（已部署到用户组）             |        否        |        是        |    否     |      是       |
+|           外部链接（已部署到设备组）            |        否        |        否         |    否     |       否       |
+|  来自应用商店的托管 iOS 应用程序（已部署到用户组）  |       是        |        是        |    是    |      是       |
+| 来自应用商店的托管 iOS 应用程序（已部署到设备组） |       是        |        否         |    是    |      是       |
+
 > [!TIP]
 > 部署应用时，如果你同时选择用户和设备组，你只能将应用作为**可用安装**进行部署。
 

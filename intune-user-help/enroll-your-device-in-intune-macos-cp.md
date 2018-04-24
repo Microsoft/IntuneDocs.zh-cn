@@ -1,27 +1,27 @@
 ---
-title: "通过公司门户在 Intune 中注册 macOS 设备 | Microsoft Docs"
-description: "介绍如何通过公司门户应用在 Intune 中注册 macOS 设备"
-keywords: "Mac OS X、macOS、OS X"
-author: barlanmsft
-ms.author: barlan
+title: 通过公司门户在 Intune 中注册 macOS 设备 | Microsoft Docs
+description: 介绍如何通过公司门户应用在 Intune 中注册 macOS 设备
+keywords: Mac OS X、macOS、OS X
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -30,11 +30,12 @@ ms.lasthandoff: 01/30/2018
 > [!NOTE]
 > 可在[此处](enroll-your-device-in-intune-macos-legacy.md)查找有关在 macOS 早期版本上注册 macOS 设备的说明。
 
-1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com)。
 
 2. 使用工作或学校帐户登录到公司门户网站。
 
-  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+
 
 3. 登录后，单击页面左上角的“菜单”，选择“我的设备”。
 
@@ -54,8 +55,8 @@ ms.lasthandoff: 01/30/2018
 
 8. Mac 会显示一条消息：“CompanyPortal”是从 Internet 下载的应用程序。是否确认要打开? 单击“打开”。
 
-  > [!NOTE]
-  > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 如果计算机拒绝打开“公司门户”应用，请尝试[关闭 Gatekeeper](https://support.apple.com/HT202491)，然后打开该应用。
+   > [!NOTE]
+   > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 如果计算机拒绝打开“公司门户”应用，请尝试[关闭 Gatekeeper](https://support.apple.com/HT202491)，然后打开该应用。
 
 9. “公司门户”应用中的第一个屏幕会提示你使用登录公司门户网站时所用的相同工作帐户或学校帐户登录。
 

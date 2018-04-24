@@ -1,28 +1,28 @@
 ---
-title: "在 Microsoft Intune 中添加适用于 Android 设备的自定义设置 - Azure | Microsoft Docs"
-description: "添加或创建适用于 Android 设备的自定义配置文件，进而创建具有预共享密钥的 WiFi 配置文件、按每个应用创建 VPN 配置文件，或在 Microsoft Intune 中允许/阻止适用于 Samsung Knox 标准设备的应用"
-keywords: 
+title: 在 Microsoft Intune 中添加适用于 Android 设备的自定义设置 - Azure | Microsoft Docs
+description: 添加或创建适用于 Android 设备的自定义配置文件，进而创建具有预共享密钥的 WiFi 配置文件、按每个应用创建 VPN 配置文件，或在 Microsoft Intune 中允许/阻止适用于 Samsung Knox 标准设备的应用
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa105cc96cd0fa7d8c6beb32cdb80b7782d9828c
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 0195e138b59fae019fa2bc02aadf211257a65cac
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-settings-for-android-devices---intune"></a>适用于 Android 设备的自定义设置 - Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 自定义配置文件使用开放移动联盟统一资源标识符 (OMA-URI) 设置配置 Android 设备上的不同功能。 移动设备制造商通常使用这些设置来控制设备上的功能。
 
@@ -43,13 +43,13 @@ ms.lasthandoff: 03/09/2018
 4. 在“自定义 OMA-URI 设置”中选择“添加”，然后选择“添加行”。
 5. 输入以下属性：
 
-  - **名称** - 输入 OMA-URI 设置的唯一名称，便于轻松查找。
-  - **说明** - 输入设置的简要说明以及其他重要详细信息。
-  - **数据类型** - 输入用于此 OMA-URI 设置的数据类型。 从“字符串”、“字符串 (XML)”、“日期和时间”、“整数”、“浮点”或者“布尔值”中进行选择。
-  - **OMA-URI** - 输入所需的 OMA-URI。
-  - **值** - 输入要与已输入的 OMA-URI 关联的值。
+   - **名称** - 输入 OMA-URI 设置的唯一名称，便于轻松查找。
+   - **说明** - 输入设置的简要说明以及其他重要详细信息。
+   - **数据类型** - 输入用于此 OMA-URI 设置的数据类型。 从“字符串”、“字符串 (XML)”、“日期和时间”、“整数”、“浮点”或者“布尔值”中进行选择。
+   - **OMA-URI** - 输入所需的 OMA-URI。
+   - **值** - 输入要与已输入的 OMA-URI 关联的值。
 
-6. 选择“确定”以保存所做更改。 根据需要继续添加更多设置。
+6. 选择“确定”，保存所做更改。 根据需要继续添加更多设置。
 
 ## <a name="next-steps"></a>后续步骤
 

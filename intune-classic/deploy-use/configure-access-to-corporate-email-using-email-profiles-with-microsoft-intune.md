@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: caa6e57fbaeefbdcdbdf118f2f97985e26fc7724
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 许多移动平台包含一个作为操作系统一部分附带的本机电子邮件客户端。 可使用本主题中所述的电子邮件配置文件对这些客户端中的某一些进行设置。
 
@@ -89,9 +89,9 @@ IT 管理员或用户还可以选择安装备用电子邮件客户端（例如�
 
 3.  使用下表来帮助设置电子邮件配置文件设置：
 
-|设置名 | 更多信息|
+|设置名称 | 详细信息|
 | ----------- | --------------- |
-    |**Name**|电子邮件配置文件的唯一名称。|
+    |**名称**|电子邮件配置文件的唯一名称。|
     |**描述**|可帮助你识别此配置文件的说明。|
     |**主机**|托管本机电子邮件服务的公司服务器的主机名。|
     |**帐户名**|电子邮件帐户的显示名称，因为它将在用户的设备上显示。|

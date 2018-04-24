@@ -1,27 +1,27 @@
 ---
-title: "利用 Intune 在电信费用管理中注册 iOS 设备"
-description: "了解如何在电信费用管理中注册 iOS 设备。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 利用 Intune 在电信费用管理中注册 iOS 设备
+description: 了解如何在电信费用管理中注册 iOS 设备。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90b07e1f18ab3cb9c74337e2a3538f186f4ea52a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ff51405ee48851b5a48c4d6142c33bc16ed6218e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>在电信费用管理中注册 iOS 设备
 
@@ -40,11 +40,11 @@ ms.lasthandoff: 01/25/2018
 
 1. 选择“使用 Microsoft 帐户注册”。
 
-  ![Datalert 应用的设置屏幕的图像，在屏幕的上半部分显示提供注册设备的电话号码字段，在底部显示“使用 Microsoft 帐户注册”，只要你拥有 Microsoft Office 365 帐户和 Intune 订阅。](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
+   ![Datalert 应用的设置屏幕的图像，在屏幕的上半部分显示提供注册设备的电话号码字段，在底部显示“使用 Microsoft 帐户注册”，只要你拥有 Microsoft Office 365 帐户和 Intune 订阅。](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
 2. 将收到 __"Datalert" 想要打开 "Authenticator"__ 的通知。 选择“打开”。
 
-  ![提示用户应 Datalert 应用的要求打开 Authenticator 应用的弹出窗口的图像。](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
+   ![提示用户应 Datalert 应用的要求打开 Authenticator 应用的弹出窗口的图像。](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 
 3. 使用你的 __Microsoft 学校或工作帐户__登录。 Datalert 安装程序将工作一段时间，然后就应该会完成。 完成后，请点击“完成”。
 
@@ -52,15 +52,15 @@ ms.lasthandoff: 01/25/2018
 
 1. 提供设备的电话号码。
 
-  ![显示 Datalert 应用请求电话号码的屏幕截图。](./media/ios-enroll-12-tem-datalert-phone-number.png)
+   ![显示 Datalert 应用请求电话号码的屏幕截图。](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
 2. 随后会收到一条内含验证码的短信。 提供代码并点击“确定”。
 
-  ![显示 Datalert 应用请求短信验证码的屏幕截图。](./media/ios-enroll-13-tem-datalert-sms.png)
+   ![显示 Datalert 应用请求短信验证码的屏幕截图。](./media/ios-enroll-13-tem-datalert-sms.png)
 
 3. 提供验证码后，Datalert 安装将随即完成。 点击“完成”，随后便能从 Datalert 应用中监视数据。
 
-  ![显示 Datalert 应用监视今日数据使用情况的屏幕截图。](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
+   ![显示 Datalert 应用监视今日数据使用情况的屏幕截图。](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 
 注册后，即可开始在 Datalert 应用中看到数据的使用情况。
 

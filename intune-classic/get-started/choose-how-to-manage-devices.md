@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d29cd4ae545bfa684eea6c679c2f69957651402a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: bac3bc13f302dc9c89c9f84b7e65610e92f5ccf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-manage-devices"></a>选择如何管理设备
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 若要利用 Intune 提供的各种功能（如应用部署和设备设置控制），设备必须处于*受管理*状态。 如何管理设备取决于你想要使用的 Intune 功能。 本主题可帮助选择满足需求的方法。
 

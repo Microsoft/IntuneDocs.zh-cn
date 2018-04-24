@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ab5ee886cbc324b0fe3383e7e585e8d0b6482326
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>适用于运行 iOS 的设备的 Microsoft Intune 主屏幕布局设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用这些设置，可配置运行 iOS 的设备的停靠和主屏幕上应用和文件夹的布局。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/17/2018
 1. 选择“添加”向停靠添加项目。
 2. 在“添加行”窗格中，选择是要添加“应用”还是“文件夹”。
 3. 使用本主题中的信息，配置要显示在停靠面板上的应用和文件夹。
-4. 继续添加项目。 完成后，单击每个窗格中的“确定”，直到返回到“创建配置文件”窗格。 选择“创建”。
+4. 继续添加项目。 完成后，单击每个窗格中的“确定”，直到返回到“创建配置文件”窗格。 选择**“创建”**。
 
 >[!TIP]
 > 可以拖放任何主屏幕和页面列表中的项，以对其重新排序。
@@ -121,7 +121,7 @@ ms.lasthandoff: 03/17/2018
 |消息|com.apple.MobileSMS|
 |音乐|com.apple.Music|
 |新闻|com.apple.news|
-|注意|com.apple.mobilenotes|
+|注释|com.apple.mobilenotes|
 |数字|com.apple.Numbers|
 |页面|com.apple.Pages|
 |Photo Booth|com.apple.Photo-Booth|

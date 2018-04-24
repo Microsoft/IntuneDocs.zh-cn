@@ -1,29 +1,29 @@
 ---
-title: "具有应用保护策略的 iOS 应用"
+title: 具有应用保护策略的 iOS 应用
 titlesuffix: Microsoft Intune
-description: "了解 iOS 应用具有保护策略时会出现的情况。"
-keywords: 
+description: 了解 iOS 应用具有保护策略时会出现的情况。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 2804003a0f1acac56ecaae5e24dcf34b4eb0c256
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 了解具有应用保护策略的 iOS 应用的用户体验。 仅当在工作环境中使用应用时，应用保护策略才适用。 例如，使用工作帐户访问应用，或访问公司 OneDrive 位置中存储的文件时。
 ##  <a name="accessing-apps"></a>访问应用

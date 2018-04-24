@@ -1,27 +1,27 @@
 ---
-title: "安装 PC 客户端软件"
-description: "使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。"
-keywords: 
+title: 安装 PC 客户端软件
+description: 使用本指南可帮助你使 Windows PC 由 Microsoft Intune 客户端软件进行管理。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 通过安装 Intune 客户端软件来注册 Windows 电脑。 Intune 客户端软件可通过以下方法安装：
 
@@ -39,13 +39,13 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
 
 所有方法都要求 IT 管理员先下载软件才可将其后续部署给最终用户，但用户自行安装 Intune 客户端软件的方法除外。
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“管理员”&gt;“客户端软件下载”。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“管理员”&gt;“客户端软件下载”。
 
-  ![下载 Intune PC 客户端](../media/pc-sa-client-download.png)
+   ![下载 Intune PC 客户端](../media/pc-sa-client-download.png)
 
 2. 在“客户端软件下载”页上，单击“下载客户端软件”。 然后将包含该软件的 **Microsoft_Intune_Setup.zip** 包保存到网络上的安全位置。
 
-  Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（可在内嵌证书中使用）。 如果未经授权的用户获得了此安装包的访问权限，则他们可以用该包的嵌入式证书所代表的帐户注册电脑，并可能获得访问公司资源的权限。
+   Intune 客户端软件安装包内附有关你的帐户的唯一特定信息（可在内嵌证书中使用）。 如果未经授权的用户获得了此安装包的访问权限，则他们可以用该包的嵌入式证书所代表的帐户注册电脑，并可能获得访问公司资源的权限。
 
 3. 将安装程序包的内容提取到网络上的安全位置。
 
@@ -244,7 +244,7 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
 
 - AgentInstaller
 - 日志
-- Updates
+- 更新
 - 公用
 
 ### <a name="remove-the-onlinemanagement-folder"></a>删除 OnlineManagement 文件夹

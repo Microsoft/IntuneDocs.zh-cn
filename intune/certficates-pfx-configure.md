@@ -1,28 +1,28 @@
 ---
-title: "在 Microsoft Intune 中使用 PKCS 证书 - Azure | Micrososft Docs"
-description: "向 Microsoft Intune 添加或创建公钥加密标准证书，所需步骤如下：导出根证书、配置证书模板、下载和安装 Microsoft Intune 证书连接器、创建设备配置文件，以及在 Azure 和证书颁发机构中创建 PKCS 证书配置文件"
-keywords: 
+title: 在 Microsoft Intune 中使用 PKCS 证书 - Azure | Micrososft Docs
+description: 向 Microsoft Intune 添加或创建公钥加密标准证书，所需步骤如下：导出根证书、配置证书模板、下载和安装 Microsoft Intune 证书连接器、创建设备配置文件，以及在 Azure 和证书颁发机构中创建 PKCS 证书配置文件
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 证书用于进行身份验证并保证用户安全访问公司资源（例如 VPN 或 WiFi 网络）。 本文介绍如何导出 PKCS 证书，然后将证书添加到 Intune 配置文件中。 
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 03/08/2018
 
    例如：
 
-4.  向导完成后，关闭向导前，单击“启动证书连接器 UI” 。
+4. 向导完成后，关闭向导前，单击“启动证书连接器 UI” 。
 
    `certutil -ca.cert certnew.cer`
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 03/08/2018
 4. 在“兼容性”选项卡上： 
    * 将“证书颁发机构”设置为“Windows Server 2008 R2”
    * 将“证书接收人”设置为“Windows 7 / Server 2008 R2”
-5. 在“常规”选项卡上：
+5. 在“常规”选项卡上  ：
    * 将“模板显示名称”设置为对你有意义的名称。
 
    > [!WARNING]
@@ -85,7 +85,7 @@ ms.lasthandoff: 03/08/2018
       > 对于 iOS 和 macOS 证书模板，转到“扩展”选项卡，更新“密钥用法”，并确保未选择“数字签名为原件的证明”。
 
 10. 在“安全”选项中，为安装 Microsoft Intune 证书连接器的服务器添加计算机帐户。
-    * 让该帐户分配读取和注册权限。
+    * 允许该帐户具有读取和注册权限。
 11. 选择“应用”，然后选择“确认”以保存证书模板。
 12. 关闭“证书模板控制台” 。
 13. 在“证书颁发机构”控制台中，右键单击“证书模板”、“新建”、“要颁发的证书模板”。

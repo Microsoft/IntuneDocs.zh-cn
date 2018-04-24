@@ -1,29 +1,29 @@
 ---
-title: "具有应用保护策略的 Android 应用"
+title: 具有应用保护策略的 Android 应用
 titlesuffix: Microsoft Intune
-description: "了解 Android 应用具有保护策略时会出现的情况。"
-keywords: 
+description: 了解 Android 应用具有保护策略时会出现的情况。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 450bcd9c807bdfae16e9c2fa1eb813b00444df65
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 了解 Android 应用具有应用保护策略时会出现的情况。 仅当在工作环境中使用应用时，应用保护策略才适用。 例如，使用工作帐户访问应用，或访问公司 OneDrive 位置中存储的文件时。
 ##  <a name="accessing-apps"></a>访问应用
@@ -75,9 +75,11 @@ Intune 支持将应用保护策略部署到每个设备的一个用户帐户。
 * **文档：**PDF、PPDF
 
 ------------
-|**pfile**|**文本**|
-|----|----|
-|Pfile 是一种用于受保护文件的通用“包装器”格式。 它可封装加密内容和 Azure 信息保护许可证。 它可以用于保护任何文件类型。|即使是在受保护的情况下，也可在应用中打开文本文件（包括 XML 和 CSV 等）进行查看。 文件类型：txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+
+|                                                                                 <strong>pfile</strong>                                                                                 |                                                                      <strong>文本</strong>                                                                      |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pfile 是一种用于受保护文件的通用“包装器”格式。 它可封装加密内容和 Azure 信息保护许可证。 它可以用于保护任何文件类型。 | 即使是在受保护的情况下，也可在应用中打开文本文件（包括 XML 和 CSV 等）进行查看。 文件类型：txt、ptxt、csv、pcsv、log、plog、xml、pxml。 |
+
 ---------------
 ## <a name="next-steps"></a>后续步骤
 [iOS 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-ios.md)

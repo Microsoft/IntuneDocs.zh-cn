@@ -1,27 +1,27 @@
 ---
-title: "在 Intune 中注册 Windows 设备 | Microsoft Docs"
-description: "介绍如何在 Intune 中注册 Windows 设备"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 在 Intune 中注册 Windows 设备 | Microsoft Docs
+description: 介绍如何在 Intune 中注册 Windows 设备
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e03ab5f74bfbd6d61bccf58d6a71fce3b40c5b6d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8912810d10468bd0b37e5cfcec04ee7a62427720
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-device-in-intune"></a>在 Intune 中注册 Windows 设备
 

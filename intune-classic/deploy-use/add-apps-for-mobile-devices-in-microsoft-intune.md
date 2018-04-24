@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4e53acad9fb2cf1e6c18b71900c6b671dd031e98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>为注册设备添加应用到 Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可部署或管理应用前，需将其添加到 Microsoft Intune。 本主题介绍如何为注册设备添加应用。
 
@@ -34,35 +34,35 @@ ms.lasthandoff: 03/22/2018
 ## <a name="add-the-app"></a>添加应用
 你可以使用 Intune 软件发行者来配置应用的属性，并将该应用上载到云存储空间（如果适用）。 请使用以下过程：
 
-1.  在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，选择“**应用** &gt; **添加应用**”，启动 Intune 软件发行者。
+1. 在 [Microsoft Intune 管理员控制台](https://manage.microsoft.com)中，选择“**应用** &gt; **添加应用**”，启动 Intune 软件发行者。
 
-    > [!TIP]
-    > 在该发行者启动前，你可能需要先输入 Intune 用户名和密码。
+   > [!TIP]
+   > 在该发行者启动前，你可能需要先输入 Intune 用户名和密码。
 
-2.  在发行者的“**软件安装程序**”页上，针对“**选择如何将此软件提供给设备**”选择下列选项之一：
-    - **软件安装程序**，适用于扩展名为 **.msi** 的应用：
-        - **选择软件安装程序文件类型**。 此设置指示要部署的软件的类型。 例如，如果你想要安装 iOS 应用，请选择“iOS 应用包(&#42;.ipa 文件)”。
-        - **指定软件安装程序文件的位置**。 输入安装文件的位置，或选择“**浏览**”选择列表中某个位置。
-        - **包括同一文件夹中的其他文件和子文件夹**。 此选项仅适用于 **Windows Installer** 文件类型。<br>某些使用 Windows Installer 的软件需要支持文件，这些支持文件通常与安装文件位于同一文件夹中。 如果还想要部署这些文件，请选择此选项。<br>此安装类型会使用一些云存储空间。
+2. 在发行者的“**软件安装程序**”页上，针对“**选择如何将此软件提供给设备**”选择下列选项之一：
+   - **软件安装程序**，适用于扩展名为 **.msi** 的应用：
+       - **选择软件安装程序文件类型**。 此设置指示要部署的软件的类型。 例如，如果你想要安装 iOS 应用，请选择“iOS 应用包(&#42;.ipa 文件)”。
+       - **指定软件安装程序文件的位置**。 输入安装文件的位置，或选择“**浏览**”选择列表中某个位置。
+       - **包括同一文件夹中的其他文件和子文件夹**。 此选项仅适用于 **Windows Installer** 文件类型。<br>某些使用 Windows Installer 的软件需要支持文件，这些支持文件通常与安装文件位于同一文件夹中。 如果还想要部署这些文件，请选择此选项。<br>此安装类型会使用一些云存储空间。
 
-  -   **外部链接**，适用于要通过指定应用商店链接来创建的应用：
+   -   **外部链接**，适用于要通过指定应用商店链接来创建的应用：
 
-        - **指定 URL**。 将 URL 指定为下列任一格式：
-            - 要部署的应用的应用商店 URL。 例如，如果想要部署面向 Android 的 Microsoft 远程桌面应用，请指定 https://play.google.com/store/apps/details?id=com.microsoft.rdc.android。<br>若要查找应用的 URL，请使用搜索引擎查找包含该应用的应用商店页面。 例如，若要查找远程桌面应用，你可以搜索 **Microsoft 远程桌面 Android 版**。
-            - 网站。 Intune 将为设备部署该站点的快捷方式图标（称为 Web Clip）。
-            - Web 上的应用。 Intune 将在设备上部署该应用的快捷方式图标。
-        - **打开此链接需使用托管浏览器（仅限 Android 和 iOS）**。 为用户部署网站或 Web 应用的链接时，用户将只能在 Intune 托管浏览器中打开此链接。 必须在用户的设备上安装此浏览器。<br>有关托管浏览器的更多详细信息，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](manage-internet-access-using-managed-browser-policies.md)。<br>此安装类型不使用任何云存储空间。
+       - **指定 URL**。 将 URL 指定为下列任一格式：
+           - 要部署的应用的应用商店 URL。 例如，如果想要部署面向 Android 的 Microsoft 远程桌面应用，请指定 https://play.google.com/store/apps/details?id=com.microsoft.rdc.android。<br>若要查找应用的 URL，请使用搜索引擎查找包含该应用的应用商店页面。 例如，若要查找远程桌面应用，你可以搜索 **Microsoft 远程桌面 Android 版**。
+           - 网站。 Intune 将为设备部署该站点的快捷方式图标（称为 Web Clip）。
+           - Web 上的应用。 Intune 将在设备上部署该应用的快捷方式图标。
+       - **打开此链接需使用托管浏览器（仅限 Android 和 iOS）**。 为用户部署网站或 Web 应用的链接时，用户将只能在 Intune 托管浏览器中打开此链接。 必须在用户的设备上安装此浏览器。<br>有关托管浏览器的更多详细信息，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](manage-internet-access-using-managed-browser-policies.md)。<br>此安装类型不使用任何云存储空间。
 
-  -   **来自应用商店的托管 iOS 应用**，适用于来自 iTunes 商店且要使用移动应用管理 (MAM) 策略进行管理的免费应用：
+   -   **来自应用商店的托管 iOS 应用**，适用于来自 iTunes 商店且要使用移动应用管理 (MAM) 策略进行管理的免费应用：
 
-        - **指定 URL**。 输入要部署的应用的应用商店 URL。 例如，如果想要部署面向 iOS 的 Microsoft 工作文件夹应用，请指定 https://itunes.apple.com/us/app/work-folders/id950878067?mt=8。<br>此安装类型不使用任何云存储空间。
+       - **指定 URL**。 输入要部署的应用的应用商店 URL。 例如，如果想要部署面向 iOS 的 Microsoft 工作文件夹应用，请指定 https://itunes.apple.com/us/app/work-folders/id950878067?mt=8。<br>此安装类型不使用任何云存储空间。
 
-        例如，如果你想要将来自 iTunes 商店的 Microsoft Word 应用部署到设备，页面将如下所示：
+       例如，如果你想要将来自 iTunes 商店的 Microsoft Word 应用部署到设备，页面将如下所示：
 
-        ![Intune 软件发行者](./media/publisher-for-mobile.png)
+       ![Intune 软件发行者](./media/publisher-for-mobile.png)
 
 > [!NOTE]
-> 如果从应用商店添加并部署应用，最终用户必须拥有相应应用商店的帐户，才能安装应用。
+> 如果要从商店添加和部署应用，最终用户必须具有该商店的帐户才能安装应用。
 
 3.  在“软件描述”页上，配置下列设置：
 

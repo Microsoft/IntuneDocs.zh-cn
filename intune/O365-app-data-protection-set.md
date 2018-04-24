@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 242ee454ec42c54bb9437fbdf0a7efeca926d193
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>你的用户将如何在 Microsoft Intune 中的托管 Office 365 应用上体验基本保护
 
@@ -50,13 +50,13 @@ ms.lasthandoff: 03/16/2018
 2. 键入你的工作帐户用户名。 你将会重定向到“Office 365 身份验证”页，以便输入工作凭据。 
 3. 凭据成功通过 Azure Active Directory 的身份验证后，将应用应用保护策略，并要求重启 OneDrive for Business 应用。 
 
-  > [!NOTE]
-  > “需要重启”消息仅在未注册 Intune 的设备上显示。
+   > [!NOTE]
+   > “需要重启”消息仅在未注册 Intune 的设备上显示。
 
 4. 重启 OneDrive for Business 应用。 该应用启动时将启用应用保护策略，并提示设置设备的 PIN（如果尚未为设备配置 PIN）。  
 
-  > [!NOTE]
-  > 大多数用户不会看到此提示。 只有尚未在其 iOS 设备上启用 PIN 的用户才会看到此提示。
+   > [!NOTE]
+   > 大多数用户不会看到此提示。 只有尚未在其 iOS 设备上启用 PIN 的用户才会看到此提示。
 
 5. 设置 PIN 并进行确认后，返回到 OneDrive for Business 应用。 将看到一个一次性通知，表明你的 IT 管理员正在保护 OneDrive 中的工作数据。 
 6. 单击关闭此通知以访问 OneDrive for Business 上的文件。 
@@ -70,8 +70,8 @@ ms.lasthandoff: 03/16/2018
 2. 键入你的工作帐户用户名。 你将会重定向到“Office 365 身份验证”页，以便输入工作凭据。 <br/> ![Android 上的 O365 登录的图像](./media/o365-sign-in-android.png)
 3. 凭据成功通过 Azure Active Directory 的身份验证后，如果尚未在设备上安装公司门户应用，则会看到一条消息指示你进行安装。 点击“转至应用商店”以继续。 <br/> ![获取公司门户应用的消息的图像](./media/get-company-portal-android.png) <br/>如果已经在手机上安装了公司门户应用，则 OneDrive for Business 应用将自动启动，并且你可以跳到尾注。   
 
-  > [!IMPORTANT]
-  > 在 Android 上将 Office 应用设置为由应用保护策略管理后，设备用户必须安装公司门户应用才能访问工作电子邮件和文档，即使最终用户不需要打开或登录到应用来实际阅读电子邮件或文档也是如此。
+   > [!IMPORTANT]
+   > 在 Android 上将 Office 应用设置为由应用保护策略管理后，设备用户必须安装公司门户应用才能访问工作电子邮件和文档，即使最终用户不需要打开或登录到应用来实际阅读电子邮件或文档也是如此。
 
 4. 你现在位于 Google Play 应用商店，可在其中下载和安装公司门户应用。 该应用有助于保护数据安全。 <br/> ![Google Play 应用商店中应用的图像](./media/google-play-get-app-android.png)
 5. 完成应用安装后，选择“接受”以接受条款。 OneDrive for Business 应用将自动启动。
@@ -86,14 +86,15 @@ ms.lasthandoff: 03/16/2018
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
 
 ## <a name="what-policies-does-this-wizard-set"></a>此向导设置哪些策略？
+
 |     |       | |
 |----|--------|-|
 |**名称**|管理 Office 365 应用| |
 | **描述**|由“管理 Office 365 应用”向导创建| |
 | |  | |
 | **设置名称** |**iOS 策略值** | **Android 策略值** |
-|阻止 iTunes 和 iCloud 备份| 否 | 不适用 |
-|阻止 Android 备份 |不适用 | 否|
+|阻止 iTunes 和 iCloud 备份| 否 | N/A |
+|阻止 Android 备份 |N/A | 否|
 |允许应用向其他应用传送数据 | 所有应用 | 所有应用|
 |允许应用从其他应用接收数据| 所有应用 | 所有应用|
 |防止“另存为” | 否 | 否|
@@ -103,16 +104,16 @@ ms.lasthandoff: 03/16/2018
 |禁用联系人同步 | 否| 否|
 |禁用打印 | 否 | 否|
 |访问需要 PIN | 否 | 是|
-|重置 PIN 前的尝试次数 | 不适用 |5|
-|允许使用简单 PIN | 不适用 |是|
-|PIN 长度 | 不适用 | 4|
-|允许使用指纹而不是 PIN | 不适用 | 是 |
+|重置 PIN 前的尝试次数 | N/A |5|
+|允许使用简单 PIN | N/A |是|
+|PIN 长度 | N/A | 4|
+|允许使用指纹而不是 PIN | N/A | 是 |
 |访问需要公司凭据 | 否 | 否|
 |阻止在已越狱或取得 root 权限的设备上运行托管应用 | 否 | 否|
 |在一定时间后重新检查访问要求（分钟）- 超时 | 30 | 30|
 |在一定时间后重新检查访问要求（分钟）- 脱机宽限期 | 720 |720|
 |擦除应用数据之前的脱机间隔时间（天） | 90 | 90|
-|阻止屏幕捕获（仅限于 Android 设备） | 不适用 | 否 |
+|阻止屏幕捕获（仅限于 Android 设备） | N/A | 否 |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>为什么只为 Android 设备配置了应用 PIN 策略？
 加密在 iOS 和 Android 上的工作方式不同。

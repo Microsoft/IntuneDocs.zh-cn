@@ -1,29 +1,29 @@
 ---
-title: "管理批量采购的应用"
-description: "了解如何使用 Intune 来管理从应用商店批量购买的应用。"
-keywords: 
+title: 管理批量采购的应用
+description: 了解如何使用 Intune 来管理从应用商店批量购买的应用。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f82ba373d45c0238f7de62953b4527680daa79f8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9b23100e1b609574733cbba3d9c8b25d61ad15ec
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>使用 Microsoft Intune 管理批量购买的应用
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 一些应用商店允许你为想要在公司运行的应用购买多个许可证。 这有助于降低跟踪多个已购买应用副本的管理成本。
 

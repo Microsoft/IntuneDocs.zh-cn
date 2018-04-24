@@ -1,29 +1,29 @@
 ---
-title: "如何在 Microsoft Intune 中将应用分配到组"
-titlesuffix: 
-description: "将应用添加到 Microsoft Intune 后，需要将其分配给用户组或设备组。"
-keywords: 
+title: 如何在 Microsoft Intune 中将应用分配到组
+titlesuffix: ''
+description: 将应用添加到 Microsoft Intune 后，需要将其分配给用户组或设备组。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>如何使用 Microsoft Intune 将应用分配到组
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 将应用添加到 Microsoft Intune 后，可将其分配给用户和设备。
 
@@ -49,28 +49,28 @@ ms.lasthandoff: 03/12/2018
 ## <a name="how-to-assign-an-app"></a>如何分配应用
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在 Intune 边栏选项卡上，选择“移动应用”。
-1. 在“移动应用”工作负荷中，选择“管理”部分中的“应用”。
-2. 在“应用列表”边栏选项卡中，单击要分配的应用。
-3. 在特定于应用的“概述”边栏选项卡上，选择“管理”部分中的“分配”。
-4. 选择“添加组”，显示与应用相关的“添加组”边栏选项卡。
-5. 对于特定应用，从以下各项选择应用的“分配类型”：
-    - **可用于已注册设备** - 用户从公司门户应用或网站安装应用。
-    - **注册与否都可用** - 可将此应用分配到未将其设备注册到 Intune 的用户组。 请注意，Android for Work 类型不支持此选项。 
-    - **必需** - 应用安装在所选组中的设备上。
-    - **卸载** - 已从所选组中设备上卸载应用。
+4. 在“移动应用”工作负荷中，选择“管理”部分中的“应用”。
+5. 在“应用列表”边栏选项卡中，单击要分配的应用。
+6. 在特定于应用的“概述”边栏选项卡上，选择“管理”部分中的“分配”。
+7. 选择“添加组”，显示与应用相关的“添加组”边栏选项卡。
+8. 对于特定应用，从以下各项选择应用的“分配类型”：
+   - **可用于已注册设备** - 用户从公司门户应用或网站安装应用。
+   - **注册与否都可用** - 可将此应用分配到未将其设备注册到 Intune 的用户组。 请注意，Android for Work 类型不支持此选项。 
+   - **必需** - 应用安装在所选组中的设备上。
+   - **卸载** - 已从所选组中设备上卸载应用。
 
-    > [!NOTE]
-    > 仅适用于 iOS 应用 - 如果已创建包含每个应用的 VPN 设置的 iOS VPN 配置文件，可在“VPN”下将其选中。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅 [iOS 设备的 VPN 设置](vpn-settings-ios.md)。
+     > [!NOTE]
+     > 仅适用于 iOS 应用 - 如果已创建包含每个应用的 VPN 设置的 iOS VPN 配置文件，可在“VPN”下将其选中。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅 [iOS 设备的 VPN 设置](vpn-settings-ios.md)。
 
-6. 选择“包括的组”，选择将受此应用分配影响的用户组。
-7. 选择要包括的一个或多个组后，单击“选择”。
-8. 在“分配”边栏选项卡上单击“确定”，完成包括的组选择。
-9. 如果选择从受此应用分配影响的用户组中排除任何用户组，请选择“排除组”。
-10. 如果已选择排除任何组，单击“选择组”边栏选项卡上的“选择”。
-11. 单击“添加组”边栏选项卡上的“确定”。
-12. 单击“应用”边栏选项卡上的“保存”，保存分配。
+9. 选择“包括的组”，选择将受此应用分配影响的用户组。
+10. 选择要包括的一个或多个组后，单击“选择”。
+11. 在“分配”边栏选项卡上单击“确定”，完成包括的组选择。
+12. 如果选择从受此应用分配影响的用户组中排除任何用户组，请选择“排除组”。
+13. 如果已选择排除任何组，单击“选择组”边栏选项卡上的“选择”。
+14. 单击“添加组”边栏选项卡上的“确定”。
+15. 单击“应用”边栏选项卡上的“保存”，保存分配。
 
 应用现已分配给所选组。 若要深入了解如何包括和排除应用分配，请参阅[包括和排除应用分配](apps-inc-exl-assignments.md)。
 

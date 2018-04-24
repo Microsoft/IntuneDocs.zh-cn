@@ -14,15 +14,15 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: 593907c4e57abce1a05d22d9ad8a07a044579285
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 通过限制应用的功能，而不更改应用自身的代码，使用适用于 Android 的 Microsoft Intune 应用包装工具，更改内部 Android 应用的行为。
 
@@ -62,21 +62,21 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="run-the-app-wrapping-tool"></a>运行应用包装工具
 
-1.  在安装了应用包装工具的 Windows 计算机上，打开 PowerShell 窗口。
+1. 在安装了应用包装工具的 Windows 计算机上，打开 PowerShell 窗口。
 
-2.  从安装该工具的文件夹导入应用包装工具 PowerShell 模块：
+2. 从安装该工具的文件夹导入应用包装工具 PowerShell 模块：
 
-    ```
-    Import-Module .\IntuneAppWrappingTool.psm1
-    ```
+   ```
+   Import-Module .\IntuneAppWrappingTool.psm1
+   ```
 
-3.  通过使用 **invoke-AppWrappingTool** 命令运行该工具，它使用以下语法：
-    ```
-    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
-    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
-    ```
+3. 通过使用 **invoke-AppWrappingTool** 命令运行该工具，它使用以下语法：
+   ```
+   Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
+   -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
+   ```
 
- 下表详细说明了 **Invoke-appwrappingtool** 命令的属性：
+   下表详细说明了 **Invoke-appwrappingtool** 命令的属性：
 
 |属性|信息|示例|
 |-------------|--------------------|---------|
@@ -160,17 +160,17 @@ Android 要求所有应用都必须由有效证书进行签名才能安装在 An
 
 1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
 
-> [!NOTE] 
+> [!NOTE]
 > 与应用关联的“客户端 ID”一词与 Azure 门户中与应用关联的“应用程序 ID”一词的含义相同。 
-* 启用 SSO 需要“通用 ADAL 配置”#2。
+> * 启用 SSO 需要“通用 ADAL 配置”#2。
 
 2. 通过将以下值放入清单来启用默认注册：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则可能发生冲突。
+   > [!NOTE] 
+   > 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则可能发生冲突。
 
 3. 通过将以下值放入清单来启用所需的 MAM 策略：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
+   > [!NOTE] 
+   > 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
 
 ### <a name="see-also"></a>另请参阅
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)

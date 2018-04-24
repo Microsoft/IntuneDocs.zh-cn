@@ -1,29 +1,29 @@
 ---
-title: "停用应用"
-description: "了解如何使用 Intune 停用或卸载应用。"
-keywords: 
+title: 停用应用
+description: 了解如何使用 Intune 停用或卸载应用。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 15e90a2fea2ec3b4f020a0e14c40da2cb65aecab
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a3fadf497e5db147d12ecf1e32343e94222c65e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-apps-using-microsoft-intune"></a>使用 Microsoft Intune 停用应用
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 若要停用应用，只需卸载它。 使用 Intune 部署和管理应用时，在移动设备和 Windows PC 上卸载应用的过程是相同的。 该应用必须支持卸载过程，才能确保此过程成功。
 

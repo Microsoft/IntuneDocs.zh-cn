@@ -14,15 +14,15 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: be8a04b28494e5806a1e5127d4d0bbdf4cd98f36
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f818c35a008c24a529967b09a37917343433ff7d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-intune"></a>设置 Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 以下设置步骤有助于使用 Intune 实现移动设备管理 (MDM)。 必须先执行设备管理，然后才能授予用户对公司资源的访问权限或管理设备上的设置。
 
@@ -35,16 +35,17 @@ ms.lasthandoff: 03/22/2018
 
 
 
-| 步骤 | 状态  |
-| ------------- |-------------|
-| 1  | [支持的配置](supported-devices-browsers.md) - 在准备阶段需要了解的信息。 包括支持的配置和网络要求。|
-| 2 |  [登录 Intune](account-sign-up.md) - 登录试用订阅或创建新的 Intune 订阅。 |  
-| 3 | [配置域名](custom-domain-name-configure.md) - 设置 DNS 注册，以将公司域名与 Intune 连接。 此操作可在连接 Intune 和使用资源时为用户提供熟悉的域。  |
-| 4 | [添加用户](users-add.md) - 手动添加用户或连接 Active Directory 以将用户与 Intune 同步。 除非设备是“无用户”网亭设备，否则必须执行此操作。 |
-| 5 | [分配许可证](licenses-assign.md) - 向用户授予使用 Intune 的权限。 所有用户设备和无用户设备都需要 Intune 许可证才能访问服务。|
-| 6 |  [添加组](groups-add.md) - 使用用户和设备组以简化管理任务。 使用组来分配应用、设置和其他资源。 |
-| 7 | [添加应用](apps-add.md) - 可以将应用分配给组，并可自动或选择性地安装应用。 |
-| 8 | [配置设备](device-profiles.md) - 设置用于管理设备设置的配置文件。 设备配置文件可预配置电子邮件、VPN、Wi-Fi 和设备功能的设置。 它们还可对设备进行限制，以帮助同时保护设备和数据。  |
-| 9 | [自定义公司门户](company-portal-app.md) - 自定义用户在注册设备和安装应用时使用的 Intune 公司门户。 公司门户应用中和 Intune 公司门户网站上均显示这些设置。 |
-| 10 | [启用设备注册](mdm-authority-set.md) - 通过设置 MDM 机构并启用特定平台实现对 iOS、Windows、Android 和 Mac 设备的 Intune 管理。 |
-| 11 | [配置应用策略](app-protection-policy.md) - 基于 Microsoft Intune 中的应用保护策略提供特定设置。 |
+| 步骤 |                                                                                                                       状态                                                                                                                       |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   1   |                                        [支持的配置](supported-devices-browsers.md) - 在准备阶段需要了解的信息。 包括支持的配置和网络要求。                                         |
+|   2   |                                                                 [登录 Intune](account-sign-up.md) - 登录试用订阅或创建新的 Intune 订阅。                                                                  |
+|   3   |                [配置域名](custom-domain-name-configure.md) - 设置 DNS 注册，以将公司域名与 Intune 连接。 此操作可在连接 Intune 和使用资源时为用户提供熟悉的域。                |
+|   4   |                                   [添加用户](users-add.md) - 手动添加用户或连接 Active Directory 以将用户与 Intune 同步。 除非设备是“无用户”网亭设备，否则必须执行此操作。                                    |
+|   5   |                                            [分配许可证](licenses-assign.md) - 向用户授予使用 Intune 的权限。 所有用户设备和无用户设备都需要 Intune 许可证才能访问服务。                                             |
+|   6   |                                               [添加组](groups-add.md) - 使用用户和设备组以简化管理任务。 使用组来分配应用、设置和其他资源。                                                |
+|   7   |                                                                        [添加应用](apps-add.md) - 可以将应用分配给组，并可自动或选择性地安装应用。                                                                         |
+|   8   | [配置设备](device-profiles.md) - 设置用于管理设备设置的配置文件。 设备配置文件可预配置电子邮件、VPN、Wi-Fi 和设备功能的设置。 它们还可对设备进行限制，以帮助同时保护设备和数据。 |
+|   9   |       [自定义公司门户](company-portal-app.md) - 自定义用户在注册设备和安装应用时使用的 Intune 公司门户。 公司门户应用中和 Intune 公司门户网站上均显示这些设置。       |
+|  10   |                                [启用设备注册](mdm-authority-set.md) - 通过设置 MDM 机构并启用特定平台实现对 iOS、Windows、Android 和 Mac 设备的 Intune 管理。                                 |
+|  11   |                                                        [配置应用策略](app-protection-policy.md) - 基于 Microsoft Intune 中的应用保护策略提供特定设置。                                                         |
+

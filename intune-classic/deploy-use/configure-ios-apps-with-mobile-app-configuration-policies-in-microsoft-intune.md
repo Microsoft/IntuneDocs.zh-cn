@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 02e821f24c378c15a474adda901699664a9af68a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时可能需要的设置。 例如，应用可能要求用户指定：
 
@@ -76,18 +76,18 @@ Microsoft Intune 中的移动应用配置策略可提供用户在运行应用时
 
 ## <a name="information-about-the-xml-file-format"></a>有关 XML 文件格式的信息
 
-Intune 支持属性列表中的以下数据类型：
-    
+Intune 在属性列表中支持以下数据类型：
+
 - &lt;整数&gt;
 - &lt;实数&gt;
 - &lt;字符串&gt;
 - &lt;数组&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; 或 &lt;false /&gt;
-     
-有关数据类型的详细信息，请参阅 iOS 开发人员库中的[关于属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html)。
 
-此外，Intune 支持属性列表中的以下令牌类型：
+有关数据类型的详细信息，请参阅 iOS 开发人员库中的 [关于属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) 。
+
+此外，Intune 还支持属性列表中的以下令牌类型：
 - \{\{userprincipalname\}\} -（示例：**John@contoso.com**）
 - \{\{mail\}\} -（示例：**John@contoso.com**）
 - \{\{partialupn\}\} -（示例：**John**）
@@ -97,7 +97,7 @@ Intune 支持属性列表中的以下数据类型：
 - \{\{username\}\} -（示例：**John Doe**）
 - iOS 设备的 \{\{serialnumber\}\} -（示例：**F4KN99ZUG5V2**
 - iOS 设备的 \{\{serialnumberlast4digits\}\} -（示例：**G5V2**）
-    
+
 \{\{ 和 \}\} 字符仅供令牌类型使用，不得用于其他目的。
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>将移动应用配置策略与应用关联
@@ -139,5 +139,4 @@ Intune 支持属性列表中的以下数据类型：
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

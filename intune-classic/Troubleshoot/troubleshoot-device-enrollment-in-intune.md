@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题提供有关设备注册问题故障排除的建议。 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)，了解更多获得帮助的方法。
 
@@ -87,9 +87,9 @@ ms.lasthandoff: 03/22/2018
 8.  根据需要删除设备，例如那些不再使用的设备或者定义不准确的设备。
 
 > [!NOTE]
-
+> 
 > 可通过使用设备注册管理器帐户避免达到设备注册上限，如[使用 Microsoft Intune 中的设备注册管理器注册企业自有设备](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)中所述。
->
+> 
 > 如果对添加到设备注册管理器帐户的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
@@ -142,7 +142,7 @@ ms.lasthandoff: 03/22/2018
 
         -   若要查看特定用户，请使用下面的查询，其中 %testuser1% 表示要查找的用户的 username@domain.com：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        编写查询后，选择**!执行**。
+        编写查询后，选择 **!执行**。
         返回结果后，即可查找云用户 ID。  如果找不到任何 ID，则表示未授权该用户使用 Intune。
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名称包含特殊字符，则无法创建策略或注册设备
@@ -154,7 +154,7 @@ ms.lasthandoff: 03/22/2018
 **问题：**向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
 
 
-**解决方法：**对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。 现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与**SupportMultipleDomain** 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+<strong>解决方法：</strong>对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。 现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与<strong>SupportMultipleDomain</strong> 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的问题
@@ -195,27 +195,27 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 1. 在设备上启动 Smart Manager 应用。
 
-  ![选择设备上的“Smart Manager”图标](./media/smart-manager-app-icon.png)
+   ![选择设备上的“Smart Manager”图标](./media/smart-manager-app-icon.png)
 
 2. 选择“电池”磁贴。
 
-  ![选择“电池”磁贴](./media/smart-manager-battery-tile.png)
+   ![选择“电池”磁贴](./media/smart-manager-battery-tile.png)
 
 3. 在“应用省电”或“应用优化”下，选择“详细信息”。
 
-  ![在“应用省电”或“应用优化”下选择“详细信息”](./media/smart-manager-app-power-saving-detail.png)
+   ![在“应用省电”或“应用优化”下选择“详细信息”](./media/smart-manager-app-power-saving-detail.png)
 
 4. 从应用列表中选择“公司门户”。
 
-  ![从应用列表中选择“公司门户”](./media/smart-manager-company-portal.png)
+   ![从应用列表中选择“公司门户”](./media/smart-manager-company-portal.png)
 
 5. 选择“关闭”。
 
-  ![从“应用优化”对话框中选择“关闭”](./media/smart-manager-app-optimization-turned-off.png)
+   ![从“应用优化”对话框中选择“关闭”](./media/smart-manager-app-optimization-turned-off.png)
 
 6. 在“应用省电”或“应用优化”下，确认公司门户已关闭。
 
-  ![验证公司门户已关闭](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![验证公司门户已关闭](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败

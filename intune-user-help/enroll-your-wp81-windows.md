@@ -1,27 +1,27 @@
 ---
-title: "在 Intune 中注册 Windows Phone 8.1 设备 | Microsoft Docs"
-description: "介绍如何在 Intune 中注册 Windows Phone 8.1 设备"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 在 Intune 中注册 Windows Phone 8.1 设备 | Microsoft Docs
+description: 介绍如何在 Intune 中注册 Windows Phone 8.1 设备
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1f9139ba7b938e09efd25062d4ea81b639050d8a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6004be5fd38efcc3ec6d325a562fc2a23267ee30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 中注册 Windows Phone 8.1 设备
 

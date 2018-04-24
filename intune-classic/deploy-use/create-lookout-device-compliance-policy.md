@@ -1,6 +1,6 @@
 ---
 title: 启用设备保护规则
-description: 启用设备合规性策略中的移动威胁防护规则。
+description: 在设备合规性策略中启用移动威胁保护规则。
 keywords: ''
 author: andredm7
 ms.author: andredm
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f19318256dc4480207097d2f4ab393b799e207a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b39f7cac8c09813eb9db94e761ec6fa6ab53c7a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>在 Intune 中创建 Lookout 设备符合性策略
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 具备 Lookout 移动威胁防御的 Intune 使你能够检测移动设备上的威胁并评估存在威胁的设备的风险。 可创建评估风险的合规性策略规则，确定设备是否合规。 然后可使用条件性访问策略，根据设备合规性阻止对服务的访问。
 
@@ -36,13 +36,13 @@ ms.lasthandoff: 03/22/2018
 作为 Lookout 移动威胁防御设置过程的一部分，需在 [Lookout 控制台](https://aad.lookout.com)中创建一个将各种威胁分类为高、中和低的策略。 在 Intune 合规性策略中，设置允许的最大威胁级别。
 
 1. 在 [Intune 管理员控制台](https://manage.microsoft.com)中，转到“合规性策略”页。 可使用现有合规性策略或创建新策略。 转到“设备运行状况”并启用“设备威胁防护”。
-  ![显示设备威胁保护规则设置的屏幕截图](../media/mtp/mtp-compliance-policy-rule.png)
+   ![显示设备威胁保护规则设置的屏幕截图](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. 选择**允许的最大威胁级别**：
-  * **无(安全)**：这是最安全的选项。  设备不能存在任何威胁，且仍可访问公司资源。  如果发现了任何威胁，设备都会被评估为不符合。  
-  * **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
-  * **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不符合。
-  * “高”：这是最不安全的选项。 此选项允许所有威胁级别，且仅将 Lookout 移动威胁防护用作报告目的。
+   * **无(安全)**：这是最安全的选项。  设备不能存在任何威胁，且仍可访问公司资源。  如果发现了任何威胁，设备都会被评估为不符合。  
+   * **低**：如果设备上仅存在低级威胁，则该设备为合规。 低级以上的任意威胁都将使设备不合规。
+   * **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不符合。
+   * **高**：这是最不安全的选项。 此选项允许所有威胁级别，且仅将 Lookout 移动威胁防护用作报告目的。
 
 ![显示设备威胁保护规则设置威胁等级选项的屏幕截图](../media/mtp/mtp-compliance-policy-setting.png)
 

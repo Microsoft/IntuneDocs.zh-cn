@@ -1,25 +1,25 @@
 ---
-title: "选择如何在 Intune 中注册 iOS 设备"
+title: 选择如何在 Intune 中注册 iOS 设备
 titlesuffix: Microsoft Intune
-description: "了解如何在 Microsoft Intune 中设置 iOS 设备注册。"
-keywords: 
+description: 了解如何在 Microsoft Intune 中设置 iOS 设备注册。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e79122c1bea970525faaf443f9bf4271d050abe2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
 
@@ -79,11 +79,11 @@ Apple School Manager 是适用于学校的设备购买和注册计划。 与 DEP
 
 5. 登录后，系统会提示用户注册其设备。 第一步是识别其设备。 应用会提供一份已为公司注册并已被分配到用户的 Intune 帐户的 iOS 设备列表。 他们应选择匹配的设备。
 
-  如果该设备还不是公司注册的设备，他们应选择“**新设备**”以使用标准注册流程继续操作。
+   如果该设备还不是公司注册的设备，他们应选择“**新设备**”以使用标准注册流程继续操作。
 
 6. 在下一个屏幕上，用户必须确认新设备的序列号。 用户可以点击“确认序列号”链接，以启动有关如何使用“设置”应用验证序列号的说明。 然后用户必须将序列号的最后 4 个字符输入到公司门户应用中。
 
-  此步骤验证该设备是否是在 Intune 中注册的企业设备。 如果设备上的序列号不匹配，则选择了错误的设备。 用户需返回到上一屏幕并选择其他设备。
+   此步骤验证该设备是否是在 Intune 中注册的企业设备。 如果设备上的序列号不匹配，则选择了错误的设备。 用户需返回到上一屏幕并选择其他设备。
 
 7. 验证序列号后，公司门户应用将重定向到公司门户网站以完成注册。 然后该网站会提示用户返回到应用。
 

@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>阶段 1：为移动设备管理 (MDM) 准备 Microsoft Intune
 
@@ -55,23 +55,23 @@ ms.lasthandoff: 03/16/2018
 
 ### <a name="what-is-your-device-security-policy"></a>什么是设备安全策略？
 
--   是否需要设备级别的加密？
+- 是否需要设备级别的加密？
 
--   当前使用的设备密码/PIN 码长度是？
+- 当前使用的设备密码/PIN 码长度是？
 
--   是否需要禁用设备功能，或限制某些设备行为？ 可通过设备配置配置文件控制各种特定于平台的设置，例如：
-      - 禁用摄像头
-      - 锁定到单应用模式<br/>
+- 是否需要禁用设备功能，或限制某些设备行为？ 可通过设备配置配置文件控制各种特定于平台的设置，例如：
+    - 禁用摄像头
+    - 锁定到单应用模式<br/>
 
--   必须支持哪些类型的身份验证？ 如果需要基于证书的身份验证，必须预配哪些类型的证书？
+- 必须支持哪些类型的身份验证？ 如果需要基于证书的身份验证，必须预配哪些类型的证书？
   - Intune 可以为注册设备预配具备资源访问配置文件的证书。
-    -   你需要支持哪种类型的公钥基础结构 (PKI)？
-<br></br>
--   是否需要支持设备或应用级别的虚拟专用网 (VPN)？
+  -   你需要支持哪种类型的公钥基础结构 (PKI)？
+  <br></br>
+- 是否需要支持设备或应用级别的虚拟专用网 (VPN)？
 
-    -   Intune 可以预配第三方 VPN 提供程序的 VPN 配置。
-<br/><br/>
--   是否可以针对某些要求允许临时异常来避免故障时间？ 或者，具有访问权限的设备是否必须始终符合所有安全要求？
+  -   Intune 可以预配第三方 VPN 提供程序的 VPN 配置。
+  <br/><br/>
+- 是否可以针对某些要求允许临时异常来避免故障时间？ 或者，具有访问权限的设备是否必须始终符合所有安全要求？
 
 ## <a name="next-steps"></a>后续步骤
 请阅读来自各行业领域的[案例研究](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)，了解组织如何评估其移动设备管理要求。

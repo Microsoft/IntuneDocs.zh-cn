@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>使用 Microsoft Intune 中的设备注册管理器注册企业自有设备
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 *设备注册管理器* (DEM) 帐户是专用的用户帐户，可注册最多 1,000 台设备。 将现有用户添加到要为其提供专用 DEM 功能的 DEM 帐户。 每台已注册设备均使用单一许可证。 建议将通过此帐户注册的设备用作共享设备（即没有用户关联），而不是个人 ("BYOD") 设备。  
+组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 设备注册管理器 (DEM) 帐户是可注册最多 1,000 台设备的特殊用户帐户。 将现有用户添加到 DEM 帐户以向他们提供特殊 DEM 功能。 每台已注册设备均使用单一许可证。 建议将通过此帐户注册的设备用作共享设备（即没有用户关联），而不是个人 ("BYOD") 设备。  
 
 用户必须在 Azure 门户中存在才能添加为设备注册管理器。 为获得最佳安全性，DEM 用户也不应是 Intune 管理员。
 
@@ -67,22 +67,22 @@ DEM 用户可以：
 
 ## <a name="add-a-device-enrollment-manager"></a>添加一个设备注册管理器
 
-1.  确保想要向 DEM 帐户添加的用户已存在。 如果需要添加用户，请登录到 [Office 365 门户](https://go.microsoft.com/fwlink/p/?LinkId=698854)，然后按照[向 Office 365 门户逐一或批量添加用户](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)中的步骤进行操作。
+1. 确保想要向 DEM 帐户添加的用户已存在。 如果需要添加用户，请登录到 [Office 365 门户](https://go.microsoft.com/fwlink/p/?LinkId=698854)，然后按照[向 Office 365 门户逐一或批量添加用户](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)中的步骤进行操作。
 
-2.  使用管理员凭据登录到 [Microsoft Intune 管理控制台](https://manage.microsoft.com)。
+2. 使用管理员凭据登录到 [Microsoft Intune 管理控制台](https://manage.microsoft.com)。
 
-3.  在导航窗格中，选择“**管理员**”，转到“**管理员管理**”，然后选择“**设备注册管理器**”。 此时将打开**设备注册管理器**页。
+3. 在导航窗格中，选择“**管理员**”，转到“**管理员管理**”，然后选择“**设备注册管理器**”。 此时将打开**设备注册管理器**页。
 
-4.  选择“添加…”。 打开“添加设备注册管理员”对话框。
+4. 选择“添加…”。 打开“添加设备注册管理员”对话框。
 
-5.  输入 Intune 帐户的“用户 ID”，然后选择“确定”。
+5. 输入 Intune 帐户的“用户 ID”，然后选择“确定”。
 
-    DEM 用户现在可以使用相同的过程注册移动设备，与最终用户在公司门户中针对 BYOD 方案采用的过程相同。 管理器最终用户可以使用 DEM 凭据在多达 1000 台设备上安装公司门户应用并注册设备。 若要深入了解用于每个平台的最终用户注册步骤，请参阅：
+   DEM 用户现在可以使用相同的过程注册移动设备，与最终用户在公司门户中针对 BYOD 方案采用的过程相同。 管理器最终用户可以使用 DEM 凭据在多达 1000 台设备上安装公司门户应用并注册设备。 若要深入了解用于每个平台的最终用户注册步骤，请参阅：
 
-  - [在 Intune 中注册 iOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [在 Intune 中注册 Android 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [在 Intune 中注册 iOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [在 Intune 中注册 Android 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [在 Intune 中注册 Windows 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>从 Intune 删除设备注册管理员
 

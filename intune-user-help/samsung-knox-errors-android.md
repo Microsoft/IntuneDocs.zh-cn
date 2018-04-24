@@ -1,26 +1,26 @@
 ---
-title: "解决托管 Samsung Knox 设备的常见问题 | Microsoft Docs"
-description: "了解如何解决 Samsung Knox 设备的常见问题。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 解决托管 Samsung Knox 设备的常见问题 | Microsoft Docs
+description: 了解如何解决 Samsung Knox 设备的常见问题。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 78c08b30-dc5f-46d9-9ee8-6cc8dee1e404
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 93ad99507ab1473102d1286fcc2342ab013be24d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>解决 Samsung Knox 设备的常见问题
 

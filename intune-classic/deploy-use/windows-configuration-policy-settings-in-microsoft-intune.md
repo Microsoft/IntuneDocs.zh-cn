@@ -1,41 +1,41 @@
 ---
-title: "Windows 策略设置"
-description: "使用 Intune Windows 常规配置策略（Windows 8.1 及更高版本）为已注册的 Windows 8 和 Windows 8.1 设备配置设置。"
-keywords: 
+title: Windows 策略设置
+description: 使用 Intune Windows 常规配置策略（Windows 8.1 及更高版本）为已注册的 Windows 8 和 Windows 8.1 设备配置设置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune **Windows 常规配置策略（Windows 8.1 及更高版本）**为已注册的 Windows 8、Windows 8.1 和 Windows RT 8.1 设备配置以下设置：
 
 ## <a name="applicability-settings"></a>适用性设置
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|----------------------------------|
 |**将所有配置应用到 Windows 10**|使此策略中的设置除了可以应用到 Windows 8 和 Windows 8.1 设备外，还可以应用到 Windows 10 设备。|
 
 ## <a name="security-settings"></a>安全设置
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|------|
 |**所需的密码类型**|指定需要的密码类型，例如仅限字母数字或数字。|
 |**必填密码类型 – 字符集最小数量**|指定密码中必须包括多少个不同的字符集。 有以下四个字符集：小写字母、大写字母、数字和符号。 但是，对于 iOS 设备，此设置指定密码中必须包括的符号的数量。|
@@ -49,9 +49,10 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="encryption-settings"></a>加密设置
 
-|设置名|详细信息|
-|----------------|-----|
-|**需要对移动设备加密**<sup>1</sup>|要求对设备上的文件进行加密。|
+|                           设置名称                           |                     详细信息                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>需要对移动设备加密</strong><sup>1</sup> | 要求对设备上的文件进行加密。 |
+
 <sup>1</sup>运行 Windows 8.1 的设备的其他信息
 
 -   若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](http://support.microsoft.com/kb/3013816) 。
@@ -64,14 +65,14 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="malware-settings"></a>恶意软件设置
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|-----|
 |**需要网络防火墙**|需要 Windows 防火墙处于打开状态。|
 |**启用 SmartScreen**|需要使用 Windows SmartScreen。|
 
 ## <a name="system-settings"></a>系统设置
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|-------|
 |**需要自动更新**|打开设备上的自动更新设置。|
 |**需要自动更新 - 要自动安装的最小更新分类**|选择将自动安装的更新分类：<br /><br />-   **重要** - 安装归类为重要的所有更新。<br />-   **推荐** - 安装归类为重要或推荐的所有更新。|
@@ -81,19 +82,19 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="cloud-settings--documents-and-data"></a>云设置 – 文档和数据
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|------|
 |**工作文件夹 URL**|设置工作文件夹的 URL，以允许文档跨设备同步。|
 
 ## <a name="email-settings"></a>电子邮件设置
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|-----|
 |**在 Windows 邮件应用程序中将 Microsoft 帐户设为可选**|允许在没有 Microsoft 帐户的情况下访问 Windows Mail 应用程序。|
 
 ## <a name="application-settings---browser"></a>应用设置 - 浏览器
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|-----|
 |**允许自动填充**|允许用户更改浏览器中的自动完成设置。|
 |**允许使用弹出窗口阻止程序**|启用或禁用浏览器弹出窗口阻止程序。|
@@ -112,7 +113,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="device-capabilities-settings---cellular"></a>设备性能设置 - 蜂窝网络
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |----------------|----|
 |**允许数据漫游**|当设备处于移动电话网络中时允许数据漫游。|
 

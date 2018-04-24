@@ -1,29 +1,29 @@
 ---
-title: "保护 Skype for Business Online"
-description: "使用条件访问保护和控制对 Skype for Business Online 的访问。"
-keywords: 
+title: 保护 Skype for Business Online
+description: 使用条件访问保护和控制对 Skype for Business Online 的访问。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>使用 Microsoft Intune 保护对 Skype for Business Online 的访问
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可使用 **Skype for Business Online** 的条件性访问策略控制对 Skype for Business Online 的访问。
 条件性访问有两个组件：
@@ -87,23 +87,23 @@ ms.lasthandoff: 10/10/2017
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>步骤 3：配置 Skype for Business Online 策略
 接下来，配置策略以要求只有托管及合规的设备才能访问 Skype for Business Online。 此策略将存储在 Azure Active Directory 中。
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件性访问” > “Skype for Business Online 策略”。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“策略” > “条件性访问” > “Skype for Business Online 策略”。
 
-  ![Skype for Business Online 条件性访问策略页面的屏幕截图](./media/conditional_access_SFBPolicy.png)
+   ![Skype for Business Online 条件性访问策略页面的屏幕截图](./media/conditional_access_SFBPolicy.png)
 
-2.  选择“启用条件访问策略”。
+2. 选择“启用条件访问策略”。
 
-3.  在“应用程序访问”下，可以选择将条件性访问策略应用到：
+3. 在“应用程序访问”下，可以选择将条件性访问策略应用到：
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android**
+   -   **Outlook Web Access (OWA)**
 
-4.  在“目标组”下，选择“修改”以选择将应用策略的 Azure Active Directory 安全组。 你可以选择将此应用于所有用户或仅针对选择的用户组。
+4. 在“目标组”下，选择“修改”以选择将应用策略的 Azure Active Directory 安全组。 你可以选择将此应用于所有用户或仅针对选择的用户组。
 
-5.  或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
+5. 或者，在“免除组”下，选择“修改”以选择从此策略中免除的 Azure Active Directory 安全组。
 
-6.  完成后，选择“保存”。
+6. 完成后，选择“保存”。
 
 现在你已配置了 Skype for Business Online 的条件性访问。 不需要部署条件访问策略—它会立即生效。
 

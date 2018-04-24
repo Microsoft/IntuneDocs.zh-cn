@@ -1,28 +1,28 @@
 ---
-title: "使用 Intune 应用包装工具包装 iOS 应用"
-description: "了解不更改应用本身代码即可包装 iOS 应用的方法。 准备应用以便应用移动应用管理策略。"
-keywords: 
+title: 使用 Intune 应用包装工具包装 iOS 应用
+description: 了解不更改应用本身代码即可包装 iOS 应用的方法。 准备应用以便应用移动应用管理策略。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 使用适用于 iOS 的 Microsoft Intune 应用包装工具启用内部 iOS 应用的 Intune 应用保护策略，无需更改应用自身的代码。
 
@@ -98,48 +98,48 @@ ms.lasthandoff: 03/02/2018
 
 4. 单击“证书、ID 和配置文件”。
 
-  ![Apple 开发者门户](./media/iOS-signing-cert-1.png)
+   ![Apple 开发者门户](./media/iOS-signing-cert-1.png)
 
 5. 安装完成后，单击 ![“Apple 开发者门户”](./media/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 证书。
 
 6. 在“生产”下选择创建“内部和临时”证书。
 
-  ![选择内部和临时证书](./media/iOS-signing-cert-3.png)
+   ![选择内部和临时证书](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >如果不打算分发应用，只希望进行内部测试，可以使用 iOS 应用开发证书来代替生产证书。 如果使用开发证书，请确保移动设置配置文件引用将安装应用的设备。
+   >[!NOTE]
+   >如果不打算分发应用，只希望进行内部测试，可以使用 iOS 应用开发证书来代替生产证书。 如果使用开发证书，请确保移动设置配置文件引用将安装应用的设备。
 
 7. 单击页面底部的“下一步”。
 
 8. 阅读关于使用 macOS 计算机上的 Keychain Access 应用程序来创建**证书签名请求 (CSR)** 的说明。
 
-  ![阅读有关创建 CSR 的说明](./media/iOS-signing-cert-4.png)
+   ![阅读有关创建 CSR 的说明](./media/iOS-signing-cert-4.png)
 
 9. 按照上面的说明来创建证书签名请求。 在 macOS 计算机上启动 **Keychain Access** 应用程序。
 
 10. 在屏幕顶部的 macOS 菜单中，转到“Keychain Access”>“证书助手”>“向证书颁发机构请求证书” 。  
 
-  ![在 Keychain Access 应用中向证书颁发机构请求证书](./media/iOS-signing-cert-5.png)
+    ![在 Keychain Access 应用中向证书颁发机构请求证书](./media/iOS-signing-cert-5.png)
 
 11. 请按照 Apple 开发者站点上有关如何创建 CSR 文件的说明进行操作。 将 CSR 文件保存到 macOS 的计算机。
 
-  ![在 Keychain Access 应用中向证书颁发机构请求证书](./media/iOS-signing-cert-6.png)
+    ![在 Keychain Access 应用中向证书颁发机构请求证书](./media/iOS-signing-cert-6.png)
 
-12. 返回到 Apple 开发者站点。 单击“继续”。 然后上传 CSR 文件。
+12. 返回到 Apple 开发者站点。 单击“继续” 。 然后上传 CSR 文件。
 
 13. Apple 将生成签名证书。 下载签名证书并将其保存到 macOS 计算机上容易记住的位置。
 
-  ![下载签名证书](./media/iOS-signing-cert-7.png)
+    ![下载签名证书](./media/iOS-signing-cert-7.png)
 
 14. 双击刚下载的证书，将证书添加密钥链。
 
 15. 再次打开 **Keychain Access**。 在右上角的搜索栏中搜索证书名称，查找证书。 右键单击项目以打开菜单，然后单击“获取信息”。 在示例屏幕中，使用的是开发证书而非生产证书。
 
-  ![将证书添加到密钥链](./media/iOS-signing-cert-8.png)
+    ![将证书添加到密钥链](./media/iOS-signing-cert-8.png)
 
 16. 将显示消息窗口。 滚动到底部并在“指纹”标签下查看。 复制 **SHA1** 字符串（模糊显示），将其用作应用包装工具的“-c”参数。
 
-  ![将证书添加到密钥链](./media/iOS-signing-cert-9.png)
+    ![将证书添加到密钥链](./media/iOS-signing-cert-9.png)
 
 
 
@@ -153,9 +153,9 @@ ms.lasthandoff: 03/02/2018
 
 4. 在“分发”下选择创建“内部”预配配置文件。
 
-  ![选择内部预配配置文件](./media/iOS-provisioning-profile-1.png)
+   ![选择内部预配配置文件](./media/iOS-provisioning-profile-1.png)
 
-5. 单击“继续”。 请确保将以前生成的签名证书链接到预配配置文件。
+5. 单击“继续” 。 请确保将以前生成的签名证书链接到预配配置文件。
 
 6. 请按照此步骤将配置文件（扩展名为 .mobileprovision）下载到 macOS 计算机。
 
@@ -217,7 +217,7 @@ ms.lasthandoff: 03/02/2018
 
 在 IntuneMAMPackager/Contents/MacOS 文件夹中，使用文本编辑器或 Xcode 打开 `Parameters.plist`（一个空白 plist 模板）。 为以下项输入参数：
 
-| Plist 项 |  默认值| 注意 |
+| Plist 项 |  默认值| 注释 |
 |------------------|--------------|-----|
 | 输入应用程序包路径  |empty| 与 -i 相同|
 | 输出应用程序包路径 |empty| 与 -o 相同|
@@ -263,7 +263,7 @@ ms.lasthandoff: 03/02/2018
 ### <a name="error-messages"></a>错误消息
 如果应用包装工具失败，将在控制台显示以下错误消息之一：
 
-|错误消息|更多信息|
+|错误消息|详细信息|
 |-----------------|--------------------|
 |你必须指定有效的 iOS 配置文件。|配置文件可能无效。 检查以确保具有正确的设备权限，以及针对开发或分发的正确配置文件。 配置文件可能已过期。|
 |指定有效的输入应用程序名称。|确保你指定的输入应用程序名称正确。|
@@ -414,8 +414,8 @@ ms.lasthandoff: 03/02/2018
 4. 单击“开始使用”链接。
 5. 现在可以通过电子邮件方式共享日志，也可以将日志复制到 OneDrive 位置。
 
->[!NOTE]
-使用 Intune App Wrapping Tool 版本 7.1.13 或更高版本包装的应用已启用日志记录功能。
+> [!NOTE]
+> 使用 Intune App Wrapping Tool 版本 7.1.13 或更高版本包装的应用已启用日志记录功能。
 
 ### <a name="see-also"></a>另请参阅
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)</br>

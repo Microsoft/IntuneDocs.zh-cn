@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 170163a6edd372a92e04762d1ba7a1a9a420160c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5bfc02f5f10ce88b992d0ea250d7b36fdf3f66dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>使用 Microsoft Intune 启用对公司资源的访问
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮助你的用户获得对完成其工作所需的文件和资源的访问权限，无论他们身在何处。 证书配置文件可帮助保护该访问。
 
@@ -46,15 +46,19 @@ Microsoft Intune Wi-Fi、VPN 和电子邮件配置文件协同工作，以便帮
 ## <a name="email-profilesconfigure-access-to-corporate-email-using-email-profiles-with-microsoft-intunemd-and-supported-platforms"></a>[电子邮件配置文件](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)和受支持的平台
 创建、部署和监视你的组织中的设备上的本机电子邮件设置。
 
-|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX 标准版|
-|---------------------|---------------------------|---|-------|------------|
-|否|是|是|否|是|
+
+| Windows 8.1 及更高版本 | Windows Phone 8.1 及更高版本 | iOS | Android | Samsung KNOX 标准版 |
+|-----------------------|-----------------------------|-----|---------|-----------------------|
+|          否           |             是             | 是 |   否    |          是          |
+
 > [!NOTE]
 > [这篇 Intune 团队博客文章](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/)提供有关如何使用 OMA-URI 配置 Windows Phone 8.1 Wi-Fi 配置文件的信息。
 
 ## <a name="certificate-profilessecure-resource-access-with-certificate-profilesmd-and-supported-platforms"></a>[证书配置文件](secure-resource-access-with-certificate-profiles.md)和受支持的平台
 有助于安全访问公司资源（包括无线网络和 VPN 连接）。
 
-|Windows 8.1 及更高版本|Windows Phone 8.1 及更高版本|iOS|Android|Samsung KNOX 标准版|
-|---------------------|---------------------------|---|-------|------------|
-|是|是|是|是|是|
+
+| Windows 8.1 及更高版本 | Windows Phone 8.1 及更高版本 | iOS | Android | Samsung KNOX 标准版 |
+|-----------------------|-----------------------------|-----|---------|-----------------------|
+|          是          |             是             | 是 |   是   |          是          |
+

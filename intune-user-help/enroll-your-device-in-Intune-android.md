@@ -1,27 +1,27 @@
 ---
-title: "在 Intune 中注册 Android 设备 | Microsoft Docs"
-description: "介绍如何在 Intune 中注册 Android 设备"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 在 Intune 中注册 Android 设备 | Microsoft Docs
+description: 介绍如何在 Intune 中注册 Android 设备
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89262f4fecba6aa8d76efd7fd5bbe415d9048204
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7230f14ae9481555f457a8a8700d588c4170b39b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 中注册 Android 设备
 
@@ -35,57 +35,57 @@ ms.lasthandoff: 01/25/2018
 
 **注册 Android 设备：**
 
-1.  从 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安装免费的 Intune 公司门户应用。
+1. 从 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安装免费的 Intune 公司门户应用。
 
-2.  打开公司门户应用。
+2. 打开公司门户应用。
 
-3.  在公司门户的“欢迎”屏幕上，点击“登录”，然后使用你的工作或学校帐户登录。
+3. 在公司门户的“欢迎”屏幕上，点击“登录”，然后使用你的工作或学校帐户登录。
 
-    ![Android“欢迎”屏幕的公司门户应用要求用户使用其所需的工作或学校帐户登录。 请注意，不接受 Microsoft 帐户和其他个人帐户。](./media/and-enroll-0-welcome-screen.png)   
+   ![Android“欢迎”屏幕的公司门户应用要求用户使用其所需的工作或学校帐户登录。 请注意，不接受 Microsoft 帐户和其他个人帐户。](./media/and-enroll-0-welcome-screen.png)   
 
-4.  如果公司支持人员设置了公司条款和条件，请点击“接受”接受这些条款。 根据你当前正在使用的 Android 版本，此屏幕可能与下图所示的屏幕略有不同。
+4. 如果公司支持人员设置了公司条款和条件，请点击“接受”接受这些条款。 根据你当前正在使用的 Android 版本，此屏幕可能与下图所示的屏幕略有不同。
 
-    ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
+   ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  使用你的工作或学校帐户和密码登录公司门户应用，然后点击“登录”。
+5. 使用你的工作或学校帐户和密码登录公司门户应用，然后点击“登录”。
 
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+   ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-6.  在“公司访问设置”屏幕上，点击“继续”。
+6. 在“公司访问设置”屏幕上，点击“继续”。
 
-    ![“公司访问设置”屏幕](/intune/media/android_cp_enroll_01_1709_new.png)
+   ![“公司访问设置”屏幕](/intune/media/android_cp_enroll_01_1709_new.png)
 
-    > [!NOTE]
-    > 黄色三角形并不意味着发生了错误。 这些图标指示注册过程中仍存在需要完成的步骤。
+   > [!NOTE]
+   > 黄色三角形并不意味着发生了错误。 这些图标指示注册过程中仍存在需要完成的步骤。
 
-7.  查看公司支持人员在你的设备上可以看到和不可以看到的内容的列表，然后点击“继续”。
+7. 查看公司支持人员在你的设备上可以看到和不可以看到的内容的列表，然后点击“继续”。
 
-    ![隐私设置](/intune/media/android_cp_enroll_02_after_1710.png)
+   ![隐私设置](/intune/media/android_cp_enroll_02_after_1710.png)
 
-9.  在“接下来会发生的情况”屏幕上，阅读注册期间会发生的情况，然后点击“注册”。
+8. 在“接下来会发生的情况”屏幕上，阅读注册期间会发生的情况，然后点击“注册”。
 
-    ![“接下来会发生的情况”屏幕](/intune/media/android_cp_enroll_03_after_1710.png)
+   ![“接下来会发生的情况”屏幕](/intune/media/android_cp_enroll_03_after_1710.png)
 
-10.  如果在使用 Android 6.0 或更高版本，则执行此步骤。 否则，请转至下一步骤。
+9. 如果在使用 Android 6.0 或更高版本，则执行此步骤。 否则，请转到下一步。
 
-    如果公司支持人员设置了特定策略，则你可能会看到以下消息：
-    -   **是否允许公司门户发起和管理电话呼叫?**
+   如果公司支持人员设置了特定策略，则你可能会看到以下消息：
+   - **是否允许公司门户发起和管理电话呼叫?**
 
-        ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
+     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为 **Microsoft 绝不会发起或管理电话呼叫**！ 消息文本由 Google 管控，Microsoft 无法更改。 允许访问时，只需让设备将设备的国际移动台设备标识 (IMEI) 编号发送给 Intune。 IMEI 编号类似于序列号，可唯一地标识移动设备。
+   如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为 **Microsoft 绝不会发起或管理电话呼叫**！ 消息文本由 Google 管控，Microsoft 无法更改。 允许访问时，只需让设备将设备的国际移动台设备标识 (IMEI) 编号发送给 Intune。 IMEI 编号类似于序列号，可唯一地标识移动设备。
 
-    如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
+   如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
 
-    -   **是否允许公司门户访问你的联系人？**
+   - **是否允许公司门户访问你的联系人？**
 
-        ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-        如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为 **Microsoft 绝不会访问你的联系人！** 消息文本由 Google 管控，Microsoft 无法更改。 当你允许访问时，它只允许公司门户应用创建、使用和管理你的工作账户。
+     如果看到此消息，请点击“允许”。 点击“允许”是安全的，因为 **Microsoft 绝不会访问你的联系人！** 消息文本由 Google 管控，Microsoft 无法更改。 当你允许访问时，它只允许公司门户应用创建、使用和管理你的工作账户。
 
-        如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
+     如果拒绝访问，下次登录到公司门户时将再次出现此消息，但是你可以点击“不再询问”框关闭以后接收此消息。 如果你稍后决定允许访问，请转到**设置** &gt; **应用** &gt; **公司门户** &gt; **权限** &gt; **手机**，然后开启权限。
 
-11.  在“激活设备管理员”屏幕上，点击“激活”。
+10. 在“激活设备管理员”屏幕上，点击“激活”。
 
     ![“激活设备管理员”屏幕](./media/and-enroll-5-activate.png)
 
@@ -95,11 +95,11 @@ ms.lasthandoff: 01/25/2018
 
     Microsoft 不会控制此消息，而且我们知道其措辞可能看起来有点极端。 公司门户无法仅显示与你的组织相关的限制和访问权限。 所有权限会同时在屏幕上授予。 如果你对某个组织的使用存在疑问，请使用[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中的联系信息与公司支持人员联系以获取更多信息。
 
-12.  按照提示输入 PIN 或密码。 如果已经在此设备上设置 PIN 或密码，将不会显示此屏幕或要求你输入新的 PIN 或密码。
+11. 按照提示输入 PIN 或密码。 如果已经在此设备上设置 PIN 或密码，将不会显示此屏幕或要求你输入新的 PIN 或密码。
 
     ![输入 PIN 或密码](./media/and-enroll-6-PIN-native.png)
 
-13.  如果你使用的是 Samsung Knox 设备，请点击“确认”，你将看到一条指示正在注册设备的消息。 如果你使用的是本机 Android 设备，则只需注意下面的屏幕，其中显示正在注册设备。
+12. 如果你使用的是 Samsung Knox 设备，请点击“确认”，你将看到一条指示正在注册设备的消息。 如果你使用的是本机 Android 设备，则只需注意下面的屏幕，其中显示正在注册设备。
 
     ![Samsung Knox 隐私策略](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -107,7 +107,7 @@ ms.lasthandoff: 01/25/2018
 
     ![注册设备屏幕](./media/and-enroll-8-device-enrolling.png)
 
-14. “公司访问设置”屏幕出现时，点击“继续”。 如果消息指示你的设备不兼容，请按照说明修复该问题，然后点击“继续”。
+13. “公司访问设置”屏幕出现时，点击“继续”。 如果消息指示你的设备不兼容，请按照说明修复该问题，然后点击“继续”。
 
     ![设备不兼容，但已注册](/intune/media/android_cp_enroll_05_post_1709.png)
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 01/25/2018
 
     ![“公司访问设置”屏幕](./media/and-enroll-9d-comp-access-setup.png)  
 
-15. 在“公司访问设置完成”屏幕上，点击“完成”。 你的设备现已注册。
+14. 在“公司访问设置完成”屏幕上，点击“完成”。 你的设备现已注册。
 
     ![“公司访问设置完成”屏幕](./media/and-enroll-10-comp-access-setup-complete.png)
 

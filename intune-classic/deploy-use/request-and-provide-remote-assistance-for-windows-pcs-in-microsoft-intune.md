@@ -1,29 +1,28 @@
 ---
-title: "请求并提供 Windows 电脑的远程协助"
-description: "向最终用户和 IT 管理员介绍为作为电脑管理的 Windows 桌面提供远程协助，以及远程启动电脑的步骤。"
-keywords: 
+title: 请求并提供 Windows 电脑的远程协助
+description: 向最终用户和 IT 管理员介绍为作为电脑管理的 Windows 桌面提供远程协助，以及远程启动电脑的步骤。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bfa7f1dedecd47aeb30a12c5627a137b775d12a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>请求并提供 Windows 电脑的远程协助
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。
 
@@ -40,7 +39,7 @@ Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买�
 
 ## <a name="configure-the-teamviewer-connector"></a>配置 TeamViewer 连接器
 
-1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**管理员**。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”。
 2. 在**管理员**工作区中，选择 **TeamViewer**。
 3. 在 **TeamViewer** 页面中 **TeamViewer 连接器**下，选择**启用**。
 4. 在**启用 TeamViewer** 对话框中，查看然后**接受**许可条款。 如果你尚未拥有 TeamViewer 许可证，选择**购买 TeamViewer 许可证**。
@@ -60,7 +59,7 @@ Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买�
 ## <a name="respond-to-a-remote-assistance-request"></a>响应远程协助请求
 
 1. 当用户提交远程协助请求时，你可在**监视** > **远程协助**下的**警报**工作区中查看。 例如：
-> ![远程协助请求屏幕截图](./media/team-viewer.png)
+   > ![远程协助请求屏幕截图](./media/team-viewer.png)
 
 <br>如果请求超过 4 小时未获得应答，则会被删除。
 2. 若要接受请求，请选择**批准请求并启动远程协助**。

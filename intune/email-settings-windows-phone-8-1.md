@@ -1,27 +1,27 @@
 ---
-title: "适用于 Windows Phone 8.1 的 Microsoft Intune 电子邮件设置"
-titleSuffix: 
-description: "了解可用于在运行 Windows Phone 8.1 的设备上配置电子邮件连接的 Intune 设置。"
-keywords: 
+title: 适用于 Windows Phone 8.1 的 Microsoft Intune 电子邮件设置
+titleSuffix: ''
+description: 了解可用于在运行 Windows Phone 8.1 的设备上配置电子邮件连接的 Intune 设置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06815ac6ed6e24bc1efb4ea612b867fc78e7fb5e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: a8d0ce028fbfa214240ce7973a2a0699a8c88a6a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Microsoft Intune 中适用于运行 Windows Phone 8.1 的设备的电子邮件配置文件设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍可为运行 Windows Phone 8.1 的设备配置的电子邮件配置文件设置。
 

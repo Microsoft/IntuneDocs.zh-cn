@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11ae063bc2cc302af238ab9062da82c6b6c30c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 058a44d6ef97cbc35786312461c6077bc2feaf3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>快速入门指南：简化移动设备上的电子邮件配置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 通过允许你将电子邮件（以及 VPN 和 WiFi）配置文件部署到 Intune 服务管理的 Windows、iOS 和 Android 移动设备，Microsoft Intune 可节省你的公司时间和资源。 自动配置电子邮件配置文件可以极大地改善最终用户体验及提高满意程度，同时减少支持人员成本。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 03/22/2018
 2.  使用条件访问策略[控制对公司电子邮件的访问](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)。
 
 
-### <a name="additional-information"></a>其他信息：
+### <a name="additional-information"></a>其他信息:
 [Intune 设备设置和安全性](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
 
 ## <a name="what-should-i-do-next"></a>接下来我该怎么办？

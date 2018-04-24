@@ -1,30 +1,30 @@
 ---
-title: "什么是应用保护策略"
+title: 什么是应用保护策略
 titleSuffix: Microsoft Intune
-description: "了解 Microsoft Intune 应用保护策略如何帮助保护公司数据，防止数据丢失。"
-keywords: 
+description: 了解 Microsoft Intune 应用保护策略如何帮助保护公司数据，防止数据丢失。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 691c7317cda07be292cc2d778b853727124dba8a
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4483baa68267b7a7218a4e78fe5275d1ea8d330
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢失。
 
@@ -37,12 +37,12 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 
 - **在 Microsoft Intune 中注册：**此类别中的设备通常是公司自有设备。
 
--   **在第三方移动设备管理 (MDM) 解决方案中注册：**该类别中的设备通常为公司自有设备。
+- **在第三方移动设备管理 (MDM) 解决方案中注册：**该类别中的设备通常为公司自有设备。
 
   > [!NOTE]
   > 移动应用管理策略不应与第三方移动应用管理或安全容器解决方案一起使用。
 
--   **未在任何移动设备管理解决方案中注册：**该类别中的设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中托管或注册。
+- **未在任何移动设备管理解决方案中注册：**该类别中的设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中托管或注册。
 
 > [!IMPORTANT]
 > 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 连接到本地 Exchange 或 SharePoint 服务的应用不支持应用保护策略。

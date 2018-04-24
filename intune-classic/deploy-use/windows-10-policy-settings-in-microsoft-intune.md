@@ -1,29 +1,29 @@
 ---
-title: "Windows 10 策略设置"
-description: "使用本主题中列出的策略设置可帮助你为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。"
-keywords: 
+title: Windows 10 策略设置
+description: 使用本主题中列出的策略设置可帮助你为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置和自定义设置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Windows 10 设备的 Intune 策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题包含的信息可帮助你了解可用于管理 Windows 10 设备的 Intune 策略设置。 有关本主题及过程，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)。
 
@@ -73,9 +73,9 @@ ms.lasthandoff: 12/12/2017
 
 使用适用于 Windows 10 的 Microsoft Intune **常规配置策略**为已注册的 Windows 10 桌面版和 Windows 10 移动版设备配置内置设置。
 
-### <a name="password"></a>Password
+### <a name="password"></a>密码
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|
 |**需要密码才能解锁设备**|-|
 |**所需的密码类型**|指定密码是否只能是字母数字或数字|
@@ -90,23 +90,23 @@ ms.lasthandoff: 12/12/2017
 
 ### <a name="encryption"></a>加密
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|
 |**需要对移动设备加密**|启用对目标设备的加密<br>（仅限 Windows 10 移动版）|
 
 ### <a name="system"></a>System (系统)
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|
 |**允许屏幕捕获**|让用户以图像形式捕获设备屏幕（仅限 Windows 10 移动版）|
 |**允许手动取消注册**|允许用户手动从设备中删除工作区帐户|
 |**允许手动安装根证书**|适用于 Windows 10 移动版|
-|**允许将诊断和使用数据发送给 Microsoft**|可能的值有：<br><br>**否** - 不将数据发送给 Microsoft<br>**基本** - 将有限的信息发送给 Microsoft<br>**增强** - 将增强的诊断数据发送给 Microsoft<br>**完全（建议）** - 发送与**增强**相同的数据，外加有关设备状态的其他数据|
+|**允许将诊断和使用数据发送给 Microsoft**|可能的值为：<br><br>**否** - 不将数据发送给 Microsoft<br>**基本** - 将有限的信息发送给 Microsoft<br>**增强** - 将增强的诊断数据发送给 Microsoft<br>**完全（建议）** - 发送与**增强**相同的数据，外加有关设备状态的其他数据|
 
 
 ### <a name="account-and-synchronization"></a>帐户和同步
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|---------------------|
 |**支持 Microsoft 帐户**|使用户可以将 Microsoft 帐户与设备关联|
 |**允许手动添加非 Microsoft 帐户**|使用户可以将电子邮件帐户添加到不与 Microsoft 帐户相关联的设备|
@@ -114,7 +114,7 @@ ms.lasthandoff: 12/12/2017
 
 ### <a name="microsoft-edge"></a>Microsoft Edge
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|
 |**允许 Web 浏览器**|允许在设备上使用 Microsoft Edge Web 浏览器<br>（仅限 Windows 10 移动版）|
 |**允许在地址栏中显示搜索建议**|允许搜索引擎在你键入搜索短语时建议站点|
@@ -130,7 +130,7 @@ ms.lasthandoff: 12/12/2017
 
 ### <a name="apps"></a>应用
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|---------------------|
 |**允许应用程序商店**|仅适用于 Windows 10 移动版|
 
@@ -138,7 +138,7 @@ ms.lasthandoff: 12/12/2017
 
 ### <a name="cellular"></a>移动电话
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|---------------------|
 |**允许数据漫游**|允许在访问数据时进行网络之间的漫游|
 |**允许通过移动电话网络使用 VPN**|控制设备在连接到移动电话网络时是否能够访问 VPN 连接|
@@ -146,7 +146,7 @@ ms.lasthandoff: 12/12/2017
 
 ### <a name="hardware"></a>硬件
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|
 |**允许照相机**|-|
 |**允许可移动存储**|指定外部存储设备（如 SD 卡）是否可以与该设备结合使用|
@@ -165,7 +165,7 @@ ms.lasthandoff: 12/12/2017
 
 ### <a name="features"></a>功能
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|---------------------|
 |**允许复制和粘贴**|仅适用于 Windows 10 移动版|
 |**允许语音录制**|仅适用于 Windows 10 移动版|
@@ -176,7 +176,7 @@ ms.lasthandoff: 12/12/2017
 
 所有设置都仅适用于 Windows 10 桌面版。
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|----------------------|---------------------|
 |**允许实时监视**|启用对恶意软件、间谍软件和其他不需要的软件的实时扫描|
 |**允许行为监视**|允许 Defender 检查设备上是否存在某些已知模式的可疑活动|
@@ -192,7 +192,7 @@ ms.lasthandoff: 12/12/2017
 |**扫描存档文件**|允许 Defender 扫描存档的文件（如 .zip 或 .cab 文件）。|
 |**扫描电子邮件**|允许 Defender 在电子邮件到达设备时扫描它们|
 |**扫描可移动驱动器**|允许 Defender 扫描可移动驱动器（如 U 盘）|
-|**扫描映射的网络驱动器**|允许 Defender 扫描映射网络驱动器上的文件。<br>如果驱动器上的文件是只读的，则 Defender 将无法删除在它们中找到的任何恶意软件。|
+|**扫描映射的网络驱动器**|允许 Defender 扫描映射网络驱动器上的文件。<br>如果驱动器上的文件是只读的，Defender 将无法删除在其中找到的任何恶意软件。|
 |**扫描从网络共享文件夹中打开的文件**|允许 Defender 扫描共享网络驱动器上的文件（例如，从 UNC 路径访问的那些文件）。<br>如果驱动器上的文件是只读的，则 Defender 将无法删除在它们中找到的任何恶意软件。|
 |**签名更新间隔**|指定 Defender 检查新签名文件的时间间隔。|
 |**允许使用云保护**|允许或阻止 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息。 此信息用于在将来改进本服务。|
@@ -203,9 +203,9 @@ ms.lasthandoff: 12/12/2017
 |**在运行扫描或使用实时保护时要排除的进程**|向排除列表添加类型为 **.exe**、**.com** 或 **.scr** 的一个或多个进程。 不会在任何实时或计划的扫描中包括这些进程。|
 
 
-### <a name="updates"></a>Updates
+### <a name="updates"></a>更新
 
-|设置名|其他信息（如有需要）|
+|设置名称|其他信息（如有需要）|
 |----------------|---------------|
 |**允许自动更新**|允许自动更新。 配置以下设置之一以控制更新行为：<br />**通知下载**<br />**在维护时间自动安装**<br />**在维护时间自动安装并重启**<br />**在计划时间自动安装和重新启动**：请注意，选择此选项时，还可以配置以下设置：**禁止向最终用户发送通知**和**定义计划更新的安装日期**。<br>（仅限 Windows 10 桌面版）|
 |**允许预发布功能**|允许 Microsoft 将预发行设置和功能部署到 Windows 10 设备。 你可以选择仅允许安装设置，或允许安装所有预发行设置和功能。|

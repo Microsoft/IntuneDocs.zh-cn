@@ -1,26 +1,26 @@
 ---
-title: "注册你的设备时，你的公司可以看到哪些信息？ | Microsoft Docs"
-description: "IT 管理员在托管设备上能看到和不能看到的信息列表。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 注册你的设备时，你的公司可以看到哪些信息？ | Microsoft Docs
+description: IT 管理员在托管设备上能看到和不能看到的信息列表。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 58fd9c985700e65ad5f97376382d348f009e2c29
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fefc9c5a74afca1dad662e6d5ccde6afce6e2113
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>在我注册自己的设备时，我的公司可以看到哪些信息？
 

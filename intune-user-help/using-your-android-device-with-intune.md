@@ -1,27 +1,27 @@
 ---
-title: "通过 Intune 使用 Android 设备 | Microsoft Docs"
-description: "在 Intune 中注册设备时，用户可在其 Android 移动设备上执行的任务链接列表"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 通过 Intune 使用 Android 设备 | Microsoft Docs
+description: 在 Intune 中注册设备时，用户可在其 Android 移动设备上执行的任务链接列表
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 09992912c439e639f7410ea93a95f0c52ed9a22d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-your-android-device-with-intune"></a>通过 Intune 使用 Android 设备
 
@@ -44,11 +44,11 @@ Intune 当前支持 Android 4.4 及更高版本。 这包括 Samsung Knox 4.4 �
 - [设置 PIN 或密码](set-your-pin-or-password-android.md)
 - [安装公司的虚拟专用网络 (VPN)](install-your-companys-virtual-private-network-VPN-android.md)
 - [设置锁定设备之前的时间量](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [重置（清除）丢失或被盗设备](reset-erase-your-device-cpwebsite.md)
 - [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-android.md)
 - [从 Intune 取消注册设备](unenroll-your-device-from-intune-android.md)
 - [如果拒绝“使用条款”，则取消注册设备](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [使用公司门户应用重置 Android 设备会发生什么情况？](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
+  <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

@@ -1,23 +1,23 @@
 ---
-title: "如何使用 Microsoft Intune 创建自定义 VPN 配置文件"
-titleSuffix: 
-description: "使用自定义配置在 Intune 中创建 VPN 配置文件。"
-keywords: 
+title: 如何使用 Microsoft Intune 创建自定义 VPN 配置文件
+titleSuffix: ''
+description: 使用自定义配置在 Intune 中创建 VPN 配置文件。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: ec9b959d086051985287a62f7d10fe8d4cbad7e9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.sourcegitcommit: 28ed8902a11500b195fff839d59b90c16af6e743
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>如何在 Microsoft Intune 中创建自定义 VPN 配置文件
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 03/08/2018
 
 4.  输入所需的所有 URI 设置后，选择“确定”，然后在“创建配置文件”窗格上，选择“创建”。
 
-随即创建配置文件并在“配置文件列表”窗格上显示。
+配置文件随即创建并显示在“配置文件列表”窗格中。
 如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
 
 

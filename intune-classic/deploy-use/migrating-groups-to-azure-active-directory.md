@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: aac152f26ac3d91536c294dd1f62480fcc8f7db6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ef0b540b6b70ca67a0da8b00997bb761722eb76a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="a-new-way-of-using-groups-in-intune"></a>Intune 中一种使用组的新方法
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 我们已得到了你的反馈，将对在 Microsoft Intune 中处理组的工作方式进行某些更改。
 我们正在将我们所有的客户 Intune 组迁移到 Azure Active Directory 安全组。

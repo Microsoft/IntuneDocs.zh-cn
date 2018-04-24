@@ -1,26 +1,26 @@
 ---
-title: "在 Microsoft Intune 中使用自定义设备设置 - Azure | Microsoft Docs"
-description: "添加或创建配置文件，以便使用 Microsoft Intune 为 Windows、Android 和 iOS 设备使用自定义设置"
-keywords: 
+title: 在 Microsoft Intune 中使用自定义设备设置 - Azure | Microsoft Docs
+description: 添加或创建配置文件，以便使用 Microsoft Intune 为 Windows、Android 和 iOS 设备使用自定义设置
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>使用 Intune 中的自定义设置创建配置文件
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 可能不含所需的所有内置设置。 或者你可能想要使用其他设备配置文件中的可用设置。 要添加这些设置，请创建设备配置文件，然后使用自定义设备设置来配置配置文件。
 

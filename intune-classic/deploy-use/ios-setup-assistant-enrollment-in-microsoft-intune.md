@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c68f196ea268e61a175f643244efb855f46eaece
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>使用设置助理通过 Apple Configurator 注册 iOS 设备
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017)。 此过程可恢复设备的出厂设置，并将其准备好以运行设置助理，从而为设备的新用户安装公司策略。
 
@@ -59,7 +59,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，转到“策略”&gt;“企业设备注册”，然后选择“添加”。
 
-  ![创建设备注册配置文件](../media/pol-sa-corp-enroll.png)
+   ![创建设备注册配置文件](../media/pol-sa-corp-enroll.png)
 
 2. 输入设备配置文件的详细信息：
 
@@ -80,7 +80,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
    -  **设备注册计划** - Apple 设备注册计划 (DEP) 不能与设置助理注册一起使用。 确保将切换设置为“关闭”。
 
-3.  单击“保存配置文件”以添加配置文件。
+3. 单击“保存配置文件”以添加配置文件。
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>通过设置助理添加 iOS 设备以进行注册
 
@@ -90,29 +90,29 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
    ![添加设备对话框](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **上传包含序列号的 CSV 文件** - 创建不带标头的两列的逗号分隔值 (.csv) 列表，每个 .csv 文件限 5,000 台设备或 5 MB。
+   - **上传包含序列号的 CSV 文件** - 创建不带标头的两列的逗号分隔值 (.csv) 列表，每个 .csv 文件限 5,000 台设备或 5 MB。
 
-    |||
-    |-|-|
-    |&lt;Serial #1&gt;|&lt;Device #1 Details&gt;|
-    |&lt;Serial#2&gt;|&lt;Device #2 Details&gt;|
+     |||
+     |-|-|
+     |&lt;Serial #1&gt;|&lt;Device #1 Details&gt;|
+     |&lt;Serial#2&gt;|&lt;Device #2 Details&gt;|
 
-  在文本编辑器中查看该 .csv 文件时，该文件显示为：
+   在文本编辑器中查看该 .csv 文件时，该文件显示为：
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **手动添加设备详细信息**  - 输入最多 15 台设备的序列号和任何注释或详细信息。
+   -  **手动添加设备详细信息**  - 输入最多 15 台设备的序列号和任何注释或详细信息。
 
-  可在“查看设备”窗格中确认序列号。 还可以决定是否覆盖正在重新导入的序列号的“详细信息”，或者取消选中“覆盖”框以保留当前的详细信息。
+   可在“查看设备”窗格中确认序列号。 还可以决定是否覆盖正在重新导入的序列号的“详细信息”，或者取消选中“覆盖”框以保留当前的详细信息。
 
-  > [!NOTE]
-  > 在现有的 Intune 管理员控制台中，管理员可以从上传的 CSV 中获取相关详细信息，并覆盖各个序列号的现有详细信息。 在新的 Azure 门户中，只能覆盖所有序列号的详细信息，或者忽略所有序列号的新详细信息。
+   > [!NOTE]
+   > 在现有的 Intune 管理员控制台中，管理员可以从上传的 CSV 中获取相关详细信息，并覆盖各个序列号的现有详细信息。 在新的 Azure 门户中，只能覆盖所有序列号的详细信息，或者忽略所有序列号的新详细信息。
 
-  > [!NOTE]
-  > 若要稍后从 Intune 管理中删除公司拥有的设备，则可能需要转到“企业预注册设备”下的“按 iOS 序列号”设备组，并从 Intune 删除设备序列号，以禁用设备注册。 如果 Intune 在删除序列号时或大约在这一时间执行灾难恢复过程，则需要验证该组是否仅包含活动设备的序列号。
+   > [!NOTE]
+   > 若要稍后从 Intune 管理中删除公司拥有的设备，则可能需要转到“企业预注册设备”下的“按 iOS 序列号”设备组，并从 Intune 删除设备序列号，以禁用设备注册。 如果 Intune 在删除序列号时或大约在这一时间执行灾难恢复过程，则需要验证该组是否仅包含活动设备的序列号。
 
 2. 选择“下一步”。
 
@@ -137,7 +137,7 @@ Intune 支持注册企业所有的 iOS 设备，方法是使用在 Mac 计算机
 
 iOS 设备连接到 Mac 计算机，并注册移动设备管理。
 
-1.  在 Mac 计算机上，打开“Apple Configurator 2”。 在菜单栏中，选择“Apple Configurator 2”，然后选择“首选项”。
+1. 在 Mac 计算机上，打开“Apple Configurator 2”。 在菜单栏中，选择“Apple Configurator 2”，然后选择“首选项”。
 
    > [!WARNING]
    > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 连接设备时，设备应处于 **Hello** 屏幕界面。
@@ -148,12 +148,12 @@ iOS 设备连接到 Mac 计算机，并注册移动设备管理。
 
    可安全忽略警告“未验证服务器 URL”。 若要继续，请选择“下一步”，直到完成该向导。
 
-4.  用 USB 适配器将 iOS 移动设备连接到 Mac 计算机。
+4. 用 USB 适配器将 iOS 移动设备连接到 Mac 计算机。
 
-    > [!WARNING]
-    > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 启动设置助理时，设备应处于 **Hello** 屏幕界面。
+   > [!WARNING]
+   > 注册过程中，设备将重置为工厂配置。 最佳做法是重置设备，然后再启动。 启动设置助理时，设备应处于 **Hello** 屏幕界面。
 
-5.  选择“准备”。 在“准备 iOS 设备”窗格上，选择“手动”，然后选择“下一步”。
+5. 选择“准备”。 在“准备 iOS 设备”窗格上，选择“手动”，然后选择“下一步”。
 
 6. 在“在 MDM 服务器中注册”窗格上，选择你创建的服务器的名称，然后选择“下一步”。
 

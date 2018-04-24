@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店连接到 Microsoft Intune，你可以在 Intune 控制台管理批量购买的应用。 例如：
 * 你可以将从应用商店中购买的应用列表与 Intune 同步。
@@ -48,7 +48,7 @@ ms.lasthandoff: 03/22/2018
 3. 在“管理工具”页上选择“添加管理工具”，然后选择“Microsoft Intune”。
 
 > [!NOTE]
-> 使用多个管理工具部署适用于企业的 Microsoft 应用商店时，以前只能将一个管理工具与适用于企业的 Microsoft 应用商店关联。 现在可将多种管理工具与该应用商店关联，例如 Intune 和 Configuration Manager。
+> 使用多个管理工具部署适用于企业的 Microsoft 应用商店时，以前只能将一个管理工具与适用于企业的 Microsoft 应用商店关联。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
 
 现在可以继续，并在 Intune 控制台中设置同步。
 
@@ -57,8 +57,8 @@ ms.lasthandoff: 03/22/2018
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”。
 2. 在“管理”工作区中，展开“移动设备管理” > “Windows”，然后选择“适用于企业的应用商店”。
 3. 在“适用于企业的 Microsoft 应用商店”页上，执行以下操作：
- * 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接。
- * 注册后，请选择“配置同步”。
+   * 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接。
+   * 注册后，请选择“配置同步”。
 4. 在“配置适用于企业的 Microsoft 应用商店的应用同步”对话框中，选择“启用适用于企业的 Microsoft 应用商店同步”。
 5. 在“语言”下拉列表中，选择适用于企业的 Microsoft 应用商店的应用在 Intune 控制台中显示时使用的语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
 6. 单击“确定”。
@@ -79,7 +79,7 @@ ms.lasthandoff: 03/22/2018
 * 从适用于企业的 Microsoft 应用商店中购买应用的更多副本。
 
 > [!Important]
-> 已部署的应用程序仅可用于最初注册了该设备的用户。 其他任何用户都无法访问该应用。
+> 已部署的应用程序仅可用于最初注册了该设备的用户。 其他用户不能访问该应用。
 
 
 ### <a name="see-also"></a>另请参阅

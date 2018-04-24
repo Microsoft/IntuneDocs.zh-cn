@@ -1,31 +1,31 @@
 ---
-title: "将条件访问迁移到 Azure 门户"
+title: 将条件访问迁移到 Azure 门户
 titlesuffix: Microsoft Intune
-description: "将先前在 Intune 经典门户中创建的条件访问策略重新分配给 Azure 门户。"
-keywords: 
+description: 将先前在 Intune 经典门户中创建的条件访问策略重新分配给 Azure 门户。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
 从新 Azure 门户开始，条件访问按应用程序提供多策略支持和更高的可自定义度。 如果先前在 Intune 经典门户中创建了条件访问策略，则可将其迁移到 Azure 门户。 
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 如果准备迁移到 Azure 门户，请按照本主题中的步骤重新分配先前在 Intune 经典门户中创建的条件访问策略：
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 03/08/2018
 
 8. 选择要应用新条件访问策略的应用，然后单击“选择”。
 
-9. 单击“完成”。
+9. 单击 **“完成”**。
 
     ![显示 Intune 和 Azure 门户之间的云应用用户界面比较的图像](./media/reassign-ca-3.png)
 
@@ -183,8 +183,8 @@ ms.lasthandoff: 03/08/2018
 
 在 Azure 门户中重新分配条件访问策略后，请务必逐渐禁用之前在 Intune 经典门户中创建的条件访问策略。 此外，可能需要使用同一安全组来应用在 Azure 门户中创建的条件访问策略。
 
-> [!NOTE] 
-    > 在 Intune 经典门户中禁用条件访问策略之前，请先阅读本主题开头部分的[开始前的准备工作](#before-you-begin)。
+> [!NOTE]
+> 在 Intune 经典门户中禁用条件访问策略之前，请先阅读本主题开头部分的[开始前的准备工作](#before-you-begin)。
 
 ### <a name="to-disable-the-conditional-access-policies"></a>禁用条件性访问策略
 

@@ -15,37 +15,37 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 63618f9af5f2bdb863a19c229c862e446dd4ea7a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4bf478225c22597b1645fc7d18e4329560bb1f03
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune 中适用于 Android 设备的合规性策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题中描述的策略设置适用于运行 Android 4.0 及更高版本或 Samsung KNOX 4.0 及更高版本的设备。
 
 如果要查找关于其他平台的信息，请选择以下选项之一：
 > [!div class="op_single_selector"]
-- [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Windows 设备的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Android for Work 设备的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Windows 设备的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Android for Work 设备的合规性策略设置](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>系统安全设置
-### <a name="password"></a>Password
+### <a name="password"></a>密码
 - **需要密码才可解锁移动设备**：将此选项设置为“是”，以要求用户在访问其设备之前输入密码。
 
 -  **最短密码长度**：指定用户密码必须包含的最小位数或最小字符数。
 
 - **密码质量**：此设置检测是否在设备上设置了指定的密码要求。 启用此设置可要求用户满足 Android 设备的特定密码要求。 选择：
 
-  -   低安全性生物识别
+  -   **低安全性生物识别**
   -   **必需**
-  -   至少为数字
-  -   至少为字母
-  -   至少为字母数字
+  -   **至少为数字**
+  -   **至少为字母**
+  -   **至少包含字母数字**
   -   **包含符号的字母数字**
 
 - **需要提供密码之前处于非活动状态的分钟数：**指定用户必须重新输入其密码前的空闲时间。
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/22/2018
 - **最低 Android 安全修补程序级别 (Android 6.0 或更高版本)**：指定最小 Android 修补程序级别。  不满足此修补程序级别的设备将会不相容。 必须以 YYYY-MM-DD 格式来指定日期。
 - **需要启用设备威胁保护**：使用此设置将 Lookout MTP 解决方案的风险评估视为合规性的条件。 从下面选择一个允许的最高威胁等级：
 
-  - **无（安全）**这是最安全的选项。 这意味着设备不能有任何威胁。 若检测到设备具有任何威胁，则将其评为不合规。
+  - **无（安全）**这是最安全的选项。 这意味着该设备不能具有任何威胁。 若检测到设备具有任何威胁，则将其评为不合规。
   - **低：**若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
   - **中：**若设备上存在的威胁为低级或中级，则将其评为合规。 若检测到设备存在高级威胁，则将其确定为不合规。
   - **高：**这是最不安全的选项。 本质上而言，此选项允许所有威胁等级，可能仅在将此解决方案用于报告时有用。

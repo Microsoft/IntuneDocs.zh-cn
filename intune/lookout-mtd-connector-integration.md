@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>使用 Intune 设置 Lookout 移动威胁防御集成
 
@@ -54,32 +54,32 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 2. 选择订阅名称时，所生成的 URL 包括订阅 ID。  如果查找订阅 ID 时遇到任何问题，请参阅 [Microsoft 支持文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)获取有关查找订阅 ID 的提示。
 
 3. 查找 Azure AD 组 ID。 Lookout 控制台支持 2 个级别的访问：  
-  * **完全访问：**Azure AD 管理员可创建具有完全访问权限的用户组，也可选择创建具有受限访问权限的用户组。  仅这两个组的用户可登录到 **Lookout 控制台**。
-  * **受限访问：**该组中的用户无法访问 Lookout 控制台的某些配置和注册相关模块，可对 Lookout 控制台的“安全策略”模块进行只读访问。  
+   * **完全访问：**Azure AD 管理员可创建具有完全访问权限的用户组，也可选择创建具有受限访问权限的用户组。  仅这两个组的用户可登录到 **Lookout 控制台**。
+   * **受限访问：**该组中的用户无法访问 Lookout 控制台的某些配置和注册相关模块，可对 Lookout 控制台的“安全策略”模块进行只读访问。  
 
-    > [!TIP] 
-    > 有关各种权限的详细信息，请参阅 Lookout 网站上的[这篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
+     > [!TIP] 
+     > 有关各种权限的详细信息，请参阅 Lookout 网站上的[这篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
 
-    > [!NOTE] 
-    > “组对象 ID”位于“Azure AD 管理门户”中组的“属性”页。
+     > [!NOTE] 
+     > “组对象 ID”位于“Azure AD 管理门户”中组的“属性”页。
 
 4. 收集此信息后，请联系 Lookout 支持人员（电子邮件：enterprisesupport@lookout.com）。 Lookout 支持将使用你收集的信息，与主要联系人合作提供订阅并创建 Lookout 企业帐户。
 
 ## <a name="configure-your-subscription"></a>配置订阅
 
-1. Lookout 支持人员创建 Lookout 企业帐户后，将向公司的主要联系人发送电子邮件，附带登录 URL 的链接：https://aad.lookout.com/les?action=consent。
+1. Lookout 支持人员创建 Lookout 企业帐户后，将向公司的主要联系人发送电子邮件，附带登录 URL 的链接：<https://aad.lookout.com/les?action=consent>。
 
-2.  首次登录到 Lookout 控制台时必须使用具有 Azure AD 全局管理员角色的用户帐户，以便注册 Azure AD 租户。 后续登录无需这一级别的 Azure AD 特权。 此时会显示同意页。 选择“接受”完成注册。 接受并同意后，系统将重定向到 Lookout 控制台。
+2. 首次登录到 Lookout 控制台时必须使用具有 Azure AD 全局管理员角色的用户帐户，以便注册 Azure AD 租户。 后续登录无需这一级别的 Azure AD 特权。 此时会显示同意页。 选择“接受”完成注册。 接受并同意后，系统将重定向到 Lookout 控制台。
 
-    ![第一次登录到 Lookout 控制台时的登录页面屏幕截图](./media/lookout_mtp_initial_login.png)
+   ![第一次登录到 Lookout 控制台时的登录页面屏幕截图](./media/lookout_mtp_initial_login.png)
 
-3.  在[“Lookout 控制台”](https://aad.lookout.com)中，从“系统”模块选择“连接器”选项卡，然后选择“Intune”。
+3. 在[“Lookout 控制台”](https://aad.lookout.com)中，从“系统”模块选择“连接器”选项卡，然后选择“Intune”。
 
-    ![Lookout 控制台的屏幕截图，其中打开了“连接器”选项卡并突出显示了“Intune”选项](./media/lookout_mtp_setup-intune-connector.png)
+   ![Lookout 控制台的屏幕截图，其中打开了“连接器”选项卡并突出显示了“Intune”选项](./media/lookout_mtp_setup-intune-connector.png)
 
-4.  转到“连接器” > “连接设置”，以分钟为单位指定“检测信号频率”。
+4. 转到“连接器” > “连接设置”，以分钟为单位指定“检测信号频率”。
 
-    ![连接设置选项卡的屏幕截图，其中显示了已配置信号检测频率](./media/lookout-mtp-connection-settings.png)
+   ![连接设置选项卡的屏幕截图，其中显示了已配置信号检测频率](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>配置注册组
 1. 最佳做法是在 [Azure AD 管理门户](https://manage.windowsazure.com)中创建一个 Azure AD 安全组，并在其中包含少量用于测试 Lookout 集成的用户。

@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune 的网络要求和带宽详情"
-titlesuffix: 
-description: "查看 Intune 的网络配置要求和带宽详情。"
-keywords: 
+title: Microsoft Intune 的网络要求和带宽详情
+titlesuffix: ''
+description: 查看 Intune 的网络配置要求和带宽详情。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 网络配置要求和带宽
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 本指南可帮助 Intune 管理员了解 Intune 服务的网络要求。 可以使用此信息了解代理设置所需的带宽要求和 IP 地址及端口设置。
 
@@ -58,11 +58,13 @@ ms.lasthandoff: 03/05/2018
 
 下面是针对缓存 Intune 客户端内容的代理服务器所使用的典型设置。
 
-|Setting|建议的值|详细信息|
-|-----------|---------------------|-----------|
-|缓存大小|5 GB 到 30 GB|该值因网络中客户端计算机的数量和你使用的配置而异。 为了防止文件被过早删除，请针对你的环境调整缓存的大小。|
-|单个缓存文件大小|950 MB|此设置可能不会在所有缓存代理服务器中可用。|
-|要缓存的对象类型|HTTP<br /><br />HTTPS<br /><br />BITS|Intune 包是通过 HTTP 执行的后台智能传输服务 (BITS) 下载检索的 CAB 文件。|
+
+|          设置           |           建议的值           |                                                                                                  详细信息                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         缓存大小         |             5 GB 到 30 GB             | 该值因网络中客户端计算机的数量和你使用的配置而异。 为了防止文件被过早删除，请针对你的环境调整缓存的大小。 |
+| 单个缓存文件大小 |                950 MB                 |                                                                     此设置可能不会在所有缓存代理服务器中可用。                                                                     |
+|   要缓存的对象类型    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune 包是通过 HTTP 执行的后台智能传输服务 (BITS) 下载检索的 CAB 文件。                                               |
+
 有关使用代理服务器来缓存内容的信息，请参阅代理服务器解决方案的文档。
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>在计算机上使用后台智能传输服务
@@ -159,14 +161,16 @@ Intune 不使用本地基础结构，如运行 Intune 软件的服务器，但�
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Apple 设备网络信息
-| 主机名  | URL（IP 地址/子网） | 协议 | Port | 设备 |
-| --- | --- | --- | --- | --- |
-|  管理控制台  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS 和 macOS |
-| 管理控制台  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS 和 macOS |
-| 管理控制台  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS 和 macOS  |
-| PI 服务器  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195、2196 | 针对 Apple iOS 和 macOS 云消息传送。 |
-| 设备服务  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| 设备服务  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| 设备服务  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| 设备 (Internet/Wi-fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 和 443 | 仅限 Apple。 “#”是从 0 到 200 的随机数字。 |
-| 设备 (Internet/Wi-fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 或 443 | 仅限 Apple |
+
+|         主机名         |                                        URL（IP 地址/子网）                                        |  协议  |     端口     |                          设备                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      管理控制台       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS 和 macOS                    |
+|      管理控制台       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS 和 macOS                    |
+|      管理控制台       | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS 和 macOS                    |
+|        PI 服务器         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195、2196  |         针对 Apple iOS 和 macOS 云消息传送。          |
+|     设备服务      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     设备服务      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     设备服务      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| 设备 (Internet/Wi-fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 和 443 | 仅限 Apple。 “#”是从 0 到 200 的随机数字。 |
+| 设备 (Internet/Wi-fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 或 443   |                        仅限 Apple                         |
+

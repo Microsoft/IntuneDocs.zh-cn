@@ -15,11 +15,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: eb9f63199063db34361c7d463b8cef37bb8bfa1f
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 317e884cd54b57f4892c4e101e206089ef335f0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>移动应用管理 (MAM) 实体引用
 
@@ -51,23 +51,24 @@ MamApplication 实体列出了未在企业中注册便通过移动应用程序�
 
 MamApplicationInstance 实体将托管移动应用程序管理 (MAM) 应用列为单个实例（按每设备每用户）。 实体中列出的所有用户和设备都受保护，因为向它们分配了至少一个 MAM 策略。
 
-| 属性 | 描述 | 示例 |
-|---------|------------|--------|
-| ApplicationInstanceKey |数据仓库中 MAM 应用实例的唯一标识符 - 代理键。 |123 |
-| UserId |已安装此 MAM 应用的用户的用户 ID。 |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationInstanceId |MAM 应用实例的唯一标识符 - 类似于 ApplicationInstanceKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationId |此 MAM 应用的应用程序 ID |com.microsoft.groupies-daily.<IOS> |
-| ApplicationVersion |此 MAM 应用的应用程序版本。 |2 |
-| CreatedDate |创建此 MAM 应用实例记录的日期。 该值可以为 null。 |2016/11/23 - 中午 12:00:00 |
-| 平台 |安装此 MAM 应用的设备平台。 |2 |
-| PlatformVersion |安装此 MAM 应用的设备的平台版本。 |2.2 |
-| SdkVersion |包装此 MAM 应用时所使用的 MAM SDK 版本。 |3.2 |
-| DeviceId |安装此 MAM 应用的设备的设备 ID。 |b66bc706-ffff-7437-0340-032819502773 |
-| DeviceName |安装此 MAM 应用的设备的设备名称。 |“MyDevice” |
-| IsDeleted |表明是否已更新此 MAM 应用实例记录。 <br>True - 此 MAM 应用实例拥有新纪录，其中含有此表中的更新的字段。 <br>False - 此 MAM 应用实例的最新记录。 |True/False |
-| StartDateInclusiveUtc |在数据仓库中创建此 MAM 应用实例时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
-| DeletedDateUtc |IsDeleted 更改为 True 时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
-| RowLastModifiedDateTimeUtc |上次在数据仓库中修改此 MAM 应用实例时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+
+|          属性          |                                                                                                  描述                                                                                                  |               示例                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               数据仓库中 MAM 应用实例的唯一标识符 - 代理键。                                                                |                 123                  |
+|           UserId           |                                                                              已安装此 MAM 应用的用户的用户 ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              MAM 应用实例的唯一标识符 - 类似于 ApplicationInstanceKey，但该标识符是自然键。                                              | b66bc706-ffff-7437-0340-032819502773 |
+|       ApplicationId        |                                                                                        此 MAM 应用的应用程序 ID                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|     ApplicationVersion     |                                                                                     此 MAM 应用的应用程序版本。                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 创建此 MAM 应用实例记录的日期。 该值可以为 null。                                                                 |        2016/11/23 - 中午 12:00:00        |
+|          平台          |                                                                          安装此 MAM 应用的设备平台。                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      安装此 MAM 应用的设备的平台版本。                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            包装此 MAM 应用时所使用的 MAM SDK 版本。                                                                            |                 3.2                  |
+|          DeviceId          |                                                                          安装此 MAM 应用的设备的设备 ID。                                                                          | b66bc706-ffff-7437-0340-032819502773 |
+|         DeviceName         |                                                                         安装此 MAM 应用的设备的设备名称。                                                                         |              “MyDevice”              |
+|         IsDeleted          | 表明是否已更新此 MAM 应用实例记录。 <br>True - 此 MAM 应用实例拥有新纪录，其中含有此表中的更新的字段。 <br>False - 此 MAM 应用实例的最新记录。 |              True/False              |
+|   StartDateInclusiveUtc    |                                                              在数据仓库中创建此 MAM 应用实例时的 UTC 日期和时间。                                                               |        2016/11/23 - 中午 12:00:00        |
+|       DeletedDateUtc       |                                                                             IsDeleted 更改为 True 时的 UTC 日期和时间。                                                                              |        2016/11/23 - 中午 12:00:00        |
+| RowLastModifiedDateTimeUtc |                                                           上次在数据仓库中修改此 MAM 应用实例时的 UTC 日期和时间。                                                            |        2016/11/23 - 中午 12:00:00        |
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -112,20 +113,23 @@ MamEffectivePolicy 实体列出了组织中应用的所有移动应用管理 (MA
 
 MamGlobalApplication 实体列出了未在企业中注册便通过移动应用程序管理 (MAM) 托管的应用商店应用。
 
-| 属性 | 描述 | 示例 |
-|---------|------------|--------|
-| ApplicationKey |数据仓库中应用商店应用的唯一标识符，称为代理键。 |123 |
-| ApplicationId |应用商店的唯一标识符。 该标识符与 ApplicationKey 类似，但是一个自然键。 |com.microsoft.skydrive.<ios> |
-| ApplicationName |MAM 全局应用程序名称。 |Skydrive |
-| RowLastModifiedDateTimeUtc |上次在数据仓库中修改此特定 MAM 全局应用程序的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+
+|          属性          |                                               描述                                               |           示例            |
+|----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
+|       ApplicationKey       |          数据仓库中应用商店应用的唯一标识符，称为代理键。          |             123              |
+|       ApplicationId        | 应用商店的唯一标识符。 该标识符与 ApplicationKey 类似，但是一个自然键。  | com.microsoft.skydrive.<ios> |
+|      ApplicationName       |                                      MAM 全局应用程序名称。                                       |           Skydrive           |
+| RowLastModifiedDateTimeUtc | 上次在数据仓库中修改此特定 MAM 全局应用程序的 UTC 日期和时间。 |    2016/11/23 - 中午 12:00:00    |
 
 ## <a name="mamplatform"></a>MamPlatform
 
 MamPlatform 实体列出了安装有移动应用程序管理 (MAM) 应用的平台的名称和类型。
 
-| 属性 | 描述 | 示例 |
-|---------|------------|--------|
-| PlatformKey |数据仓库中平台的唯一标识符 - 代理键。 |123 |
-| 平台 |平台的唯一标识符 - 类似于 PlatformKey，但该标识符是自然键。 |123 |
-| PlatformName |平台名称 |不可用 <br>无 <br>Windows <br>IOS <br>Android。 |
-| RowLastModifiedDateTimeUtc |上次在数据仓库中修改此平台时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+
+|          属性          |                                    描述                                    |                         示例                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     数据仓库中平台的唯一标识符 - 代理键。      |                           123                           |
+|          平台          | 平台的唯一标识符 - 类似于 PlatformKey，但该标识符是自然键。 |                           123                           |
+|        PlatformName        |                                   平台名称                                   | 不可用 <br>无 <br>Windows <br>IOS <br>Android。 |
+| RowLastModifiedDateTimeUtc | 上次在数据仓库中修改此平台时的 UTC 日期和时间。  |                 2016/11/23 - 中午 12:00:00                  |
+

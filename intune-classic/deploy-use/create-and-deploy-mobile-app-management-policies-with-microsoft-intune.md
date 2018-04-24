@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 创建和部署应用保护策略
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题介绍在 **Azure 门户**中创建应用保护策略的过程。 Azure 门户是一款新的管理控制台，用于创建应用保护策略；建议使用此门户来创建应用保护策略。 Azure 门户支持以下 MAM 方案：
 
@@ -31,23 +31,23 @@ ms.lasthandoff: 03/22/2018
 - 由第三方 MDM 解决方案管理的设备。
 - 不受任何 MDM 解决方案管理的设备 (BYOD)。
 
->[!IMPORTANT]
-如果正在使用 **Intune 管理控制台**管理设备，请注意以下事项：
-
+> [!IMPORTANT]
+> 如果正在使用 **Intune 管理控制台**管理设备，请注意以下事项：
+> 
 > * 可使用 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)创建支持在 Intune 中注册的设备应用的应用保护策略。
 > * 在 Intune 管理控制台中创建的应用保护策略不能导入到 Azure 门户中。  在 Azure 门户中，必须重新创建应用保护策略。
-
+> 
 > * 可能无法在 Intune 管理控制台中看到全部应用保护策略设置。 Azure 门户是用于创建应用保护策略的新管理控制台。
-
+> 
 > * 若要部署托管应用，必须在 Intune 管理控制台中创建应用保护策略。 在此情况下，可能需要在 Intune 管理控制台和 Azure 门户中创建应用保护策略：Intune 管理控制台可确保你能部署托管应用，而选择 Azure 门户是因为它是具有所有应用保护策略设置的新管理控制台。
-
+> 
 > * 如果同时在 Intune 管理控制台和 Azure 门户中创建了应用保护策略，则在 Azure 门户中创建的策略将应用到应用。
 
 若要查看 Android 和 iOS 平台支持的策略设置的列表，请选择以下值之一：
 
 > [!div class="op_single_selector"]
-- [iOS 策略](ios-mam-policy-settings.md)
-- [Android 策略](android-mam-policy-settings.md)
+> - [iOS 策略](ios-mam-policy-settings.md)
+> - [Android 策略](android-mam-policy-settings.md)
 
 - 若要详细了解应用保护策略的工作原理以及 Intune 应用保护策略支持的方案，请参阅[使用应用保护策略保护应用数据](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)。
 
@@ -129,13 +129,13 @@ ms.lasthandoff: 03/22/2018
 > [!IMPORTANT]
 > 创建新的应用保护策略时，需要从平台下拉列表中选择 Windows 10。
 
-1.  在“添加一个策略”边栏选项卡上，选择“允许的应用”或“豁免应用”以打开“允许或豁免应用”边栏选项卡。
+1. 在“添加一个策略”边栏选项卡上，选择“允许的应用”或“豁免应用”以打开“允许或豁免应用”边栏选项卡。
 
-    > [!NOTE]
-    >
-    - **允许的应用**：这些应用需要符合此策略。
-    - **豁免应用**：这些应用从此策略中豁免，可以无限制地访问公司数据。
-<br></br>
+   > [!NOTE]
+   > 
+   > - **允许的应用**：这些应用需要符合此策略。
+   > - **豁免应用**：这些应用从此策略中豁免，可以无限制地访问公司数据。
+   > <br></br>
 2. 在“允许或豁免应用”边栏选项卡上，单击“添加应用”。 你可以添加推荐的 Microsoft 应用、应用商店或桌面应用。
 
     a.  **推荐的应用：**一份预先填写好的应用列表（主要为 Office 应用），便于管理员轻松导入策略。
@@ -161,7 +161,7 @@ ms.lasthandoff: 03/22/2018
 >[!IMPORTANT]
 > 如果你使用 Intune 与配置管理器来管理 iOS 和 Android 设备，则该策略将仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不会受影响。
 
-最终用户可以从 App Store 或 Google Play 下载应用。 有关详情，请参阅：
+最终用户可以从 App Store 或 Google Play 下载应用。 有关更多信息，请参阅：
 * [Android 应用由应用保护策略托管时会出现的情况](/intune/end-user-mam-apps-android)
 * [iOS 应用由应用保护策略托管时会出现的情况](/intune/end-user-mam-apps-ios)
 
@@ -210,8 +210,8 @@ ms.lasthandoff: 03/22/2018
 若要查看 iOS 和 Android 的策略设置的完整列表，请选择以下值之一：
 
 > [!div class="op_single_selector"]
-- [iOS 策略](ios-mam-policy-settings.md)
-- [Android 策略](android-mam-policy-settings.md)
+> - [iOS 策略](ios-mam-policy-settings.md)
+> - [Android 策略](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>后续步骤
 [监视合规性和用户状态](monitor-mobile-app-management-policies-with-microsoft-intune.md)

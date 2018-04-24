@@ -15,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 22018a241664a02aa99b9a3b1a53aa559ab42db5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>使用自定义策略允许和阻止适用于 Samsung KNOX 标准版设备的应用
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用此主题中的过程创建 Microsoft Intune 自定义策略，该策略创建以下内容之一：
 
 - 阻止在设备上运行的应用的列表。 阻止运行此列表中的应用，即使应用此策略时已安装这些应用也是如此。
-- 允许设备用户从 Google Play 商店安装的应用列表。 仅可安装你列出的应用。 不能从该应用商店安装任何其他应用。
+- 允许设备用户从 Google Play 商店中安装的应用的列表。 仅可安装你列出的应用。 其他应用不能从应用商店安装。
 
 仅运行 Samsung KNOX 标准版的设备可以使用这些设置。
 
@@ -39,21 +39,21 @@ ms.lasthandoff: 03/22/2018
 3. 提供策略的名称和可选描述，然后在“OMA-URI 设置”部分，选择“添加”。
 4. 在“添加或编辑 OMA-URI 设置”对话框中，指定以下内容：有关阻止在设备上运行的应用列表：
     
-    - **设置名称。** 输入 **PreventStartPackages**。
-    - **设置描述。** 输入可选描述，如“阻止运行的应用列表”。
-    -   **数据类型。** 在下拉列表中，选择“字符串”。
-    -   **OMA-URI。** 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **值。** 输入你要阻止的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
+   - **设置名称。** 输入 **PreventStartPackages**。
+   - **设置描述。** 输入可选描述，如“阻止运行的应用列表”。
+   - **数据类型。** 在下拉列表中，选择“字符串”。
+   - **OMA-URI。** 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - **值。** 输入你要阻止的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
 
-    有关允许用户从 Google Play 商店中安装的应用（同时排除所有其他应用）的列表：
+     有关允许用户从 Google Play 商店中安装的应用（同时排除所有其他应用）的列表：
 
-    - **设置名称。** 输入 **AllowInstallPackages**。
-    - **设置描述。** 输入可选描述，如“用户可从 Google Play 安装的应用的列表”。
-    - **数据类型。** 在下拉列表中，选择“字符串”。
-    - **OMA-URI。** 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-    - **值。** 输入你要允许的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
+   - **设置名称。** 输入 **AllowInstallPackages**。
+   - **设置描述。** 输入可选描述，如“用户可从 Google Play 安装的应用的列表”。
+   - **数据类型。** 在下拉列表中，选择“字符串”。
+   - **OMA-URI。** 输入 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **值。** 输入你要允许的应用包名称的列表。 你可使用 **; : ,** 或 **|** 作为分隔符。 （示例：package1;package2;）
 
-4. 单击“确定”，然后单击“保存策略”。 
+5. 单击“确定”，然后单击“保存策略”。 
 
 >[!TIP]
 > 可通过浏览 Google Play 商店上的应用找到应用的包 ID。 包 ID 包含在应用页面的 URL 中。 例如，Microsoft Word 应用的包 ID 是 **com.microsoft.office.word**。

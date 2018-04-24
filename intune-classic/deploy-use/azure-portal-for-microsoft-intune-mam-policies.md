@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>提供 Intune 应用保护策略的 Azure 门户
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Azure 门户可用于创建和管理以下项的应用保护策略：
 
@@ -32,9 +32,9 @@ Azure 门户可用于创建和管理以下项的应用保护策略：
 - 未在任何 MDM 解决方案中**注册**的设备上运行的应用
 - **已在第三方 MDM 解决方案中注册**的设备上运行的应用。
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Azure 门户是创建应用保护策略的新管理控制台，但也可以创建一个应用保护策略，用于支持在 Intune 中使用 MDM 方案的 [Intune 管理控制台](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)注册的设备的应用。
-
+> 
 > 可能无法在 Intune 管理控制台上看到所有可用的应用保护策略设置。 此外，如果同时在 Intune 管理控制台和 Azure 门户中创建了应用保护策略，则在 Azure 门户中创建的策略将替代在 Intune 管理控制台中创建的策略。 在这种情况下，Azure 门户应用保护策略将应用于应用并部署到用户。
 
 

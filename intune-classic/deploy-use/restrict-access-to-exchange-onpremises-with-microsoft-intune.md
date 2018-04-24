@@ -1,29 +1,29 @@
 ---
-title: "保护发送到 Exchange 内部部署的电子邮件"
-description: "使用条件访问保护和控制对本地 Exchange 的公司电子邮件的访问。"
-keywords: 
+title: 保护发送到 Exchange 内部部署的电子邮件
+description: 使用条件访问保护和控制对本地 Exchange 的公司电子邮件的访问。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bdb5fbf7bb382c9ad503f584b499f5275885ef1
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73535e35605bbc9ca7123935e1816e90b5e60e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>使用 Intune 保护对 Exchange 内部部署和旧版 Exchange Online Dedicated 的电子邮件访问
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可通过 Microsoft Intune 配置对 Exchange 内部部署或旧版 Exchange Online Dedicated 的条件性访问，以控制电子邮件的访问。
 若要了解有关条件性访问如何工作的详细信息，请阅读文章[保护对电子邮件和 O365 服务的访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/10/2017
 > [!NOTE]
 > 如果具有 Exchange Online Dedicated 环境并需要确定其采用的是新配置还是旧配置，请与帐户管理员联系。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 请务必验证以下各项：
 
@@ -53,13 +53,13 @@ ms.lasthandoff: 10/10/2017
 
 配置条件性访问策略并将它们面向用户时，在用户可以连接到其电子邮件前，他们使用的**设备**必须：
 
--  是已加入域的电脑或已向 Intune **注册**。
+- 是已加入域的电脑或已向 Intune **注册**。
 
--  **已在 Azure Active Directory 中注册**。 此外，还必须向 Azure Active Directory 注册客户端 Exchange ActiveSync ID。
+- **已在 Azure Active Directory 中注册**。 此外，还必须向 Azure Active Directory 注册客户端 Exchange ActiveSync ID。
 
   Azure Active Directory 设备注册服务自动对 Intune 和 Office 365 客户激活。 已经部署了 ADFS 设备注册服务的用户不会在本地 Active Directory 上看到已注册的设备。 **这不适用于 Windows 电脑和 Windows Phone 设备**。
 
--   **符合**任何部署到该设备的 Intune 符合性策略。
+- **符合**任何部署到该设备的 Intune 符合性策略。
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>条件性访问对 Exchange 内部部署的作用方式
 
@@ -91,35 +91,35 @@ ms.lasthandoff: 10/10/2017
 
 ##  <a name="configure-a-conditional-access-policy"></a>配置条件性访问策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**策略**  >  **条件性访问**  >  **Exchange 本地策略**。
-![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择**策略**  >  **条件性访问**  >  **Exchange 本地策略**。
+   ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  使用所需的设置来配置策略：![Exchange 内部部署策略页面的屏幕截图](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2. 使用所需的设置来配置策略：![Exchange 内部部署策略页面的屏幕截图](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **如果设备不符合策略或未向 Microsoft Intune 注册，则阻止电子邮件应用访问本地 Exchange**：选择此选项时，会阻止未受 Intune 管理的设备或不符合策略的设备访问 Exchange 服务。
+   - **如果设备不符合策略或未向 Microsoft Intune 注册，则阻止电子邮件应用访问本地 Exchange**：选择此选项时，会阻止未受 Intune 管理的设备或不符合策略的设备访问 Exchange 服务。
 
-  - **替代默认规则 - 始终允许已注册并符合要求的设备访问 Exchange**：选择此选项时，允许已在 Intune 中注册并符合合规性策略的设备访问 Exchange。
-  此规则将替代“默认规则”，这意味着，即使将“默认规则”设置为隔离或阻止访问，已注册并符合要求的设备也仍然能够访问 Exchange。
+   - **替代默认规则 - 始终允许已注册并符合要求的设备访问 Exchange**：选择此选项时，允许已在 Intune 中注册并符合合规性策略的设备访问 Exchange。
+     此规则将替代“默认规则”，这意味着，即使将“默认规则”设置为隔离或阻止访问，已注册并符合要求的设备也仍然能够访问 Exchange。
 
-  - **目标组**：选择 Intune 用户组，这些用户组必须先向 Intune 注册其设备，然后才能访问 Exchange。
+   - **目标组**：选择 Intune 用户组，这些用户组必须先向 Intune 注册其设备，然后才能访问 Exchange。
 
-  - **免除组**：选择将从条件性访问策略中免除的 Intune 用户组。 此列表中的用户将会被免除，即使它们也位于“目标组”列表中。
+   - **免除组**：选择将从条件性访问策略中免除的 Intune 用户组。 此列表中的用户将会被免除，即使它们也位于“目标组”列表中。
 
-  - **平台例外**：选择“添加规则”配置一个规则，为指定的移动设备系列和模型定义访问级别。 因为这些设备可为任何类型，所以还可配置不受 Intune 支持的设备类型。
+   - **平台例外**：选择“添加规则”配置一个规则，为指定的移动设备系列和模型定义访问级别。 因为这些设备可为任何类型，所以还可配置不受 Intune 支持的设备类型。
 
-  - **默认规则**：对于不受其他任何规则约束的设备，可选择允许或阻止其访问 Exchange，也可以隔离它。 对于已注册并合规的设备，如果将该规则设置为允许访问，将会自动向 iOS、Windows 和 Samsung KNOX 设备授予电子邮件访问权限。 用户不必执行任何过程即可获取其电子邮件。
-      - 在不运行 Samsung KNOX 的 Android 设备上，用户会收到一封包含指导性演练的隔离电子邮件，用于验证注册和合规性，验证后他们才能访问电子邮件。 如果将该规则设置为阻止访问或隔离设备，将阻止所有设备访问 Exchange，无论设备是否已在 Intune 中注册。 若要防止已注册并符合要求的设备受此规则影响，请选中“替代默认规则”框。
->[!TIP]
->如果想在授予电子邮件访问权限之前先阻止所有设备，请选择“阻止访问”规则或“隔离”规则。 默认规则适用于所有设备类型，因此作为平台例外配置且不受 Intune 支持的设备类型也会受到影响。
+   - **默认规则**：对于不受其他任何规则约束的设备，可选择允许或阻止其访问 Exchange，也可以隔离它。 对于已注册并合规的设备，如果将该规则设置为允许访问，将会自动向 iOS、Windows 和 Samsung KNOX 设备授予电子邮件访问权限。 用户不必执行任何过程即可获取其电子邮件。
+     - 在不运行 Samsung KNOX 的 Android 设备上，用户会收到一封包含指导性演练的隔离电子邮件，用于验证注册和合规性，验证后他们才能访问电子邮件。 如果将该规则设置为阻止访问或隔离设备，将阻止所有设备访问 Exchange，无论设备是否已在 Intune 中注册。 若要防止已注册并符合要求的设备受此规则影响，请选中“替代默认规则”框。
+       >[!TIP]
+       >如果想在授予电子邮件访问权限之前先阻止所有设备，请选择“阻止访问”规则或“隔离”规则。 默认规则适用于所有设备类型，因此作为平台例外配置且不受 Intune 支持的设备类型也会受到影响。
 
-  - **用户通知**：除了 Exchange 发送的通知电子邮件之外，Intune 还将发送一封包含取消阻止设备的步骤的电子邮件。 你可以根据需求来自定义编辑默认消息。 如果用户的设备在接收包含修正说明的 Intune 通知电子邮件之前已被阻止（此电子邮件发送到用户的 Exchange 邮箱），则用户可使用取消阻止的设备或其他方法来访问 Exchange 并查看该邮件。
-      - 当“默认规则”设置为阻止或隔离时尤其如此。 在这种情况下，用户必须转到其应用商店，下载 Microsoft 公司门户应用并注册其设备。 这适用于 iOS、Windows 和 Samsung KNOX 设备。 对于不运行 Samsung KNOX 的设备，需要将隔离电子邮件发送到备用电子邮件帐户。 用户必须将电子邮件复制到其被阻止的设备，以完成注册和符合性过程。
-  > [!NOTE]
-  > 若要让 Exchange 能够发送通知电子邮件，必须指定用于发送通知电子邮件的帐户。
-  >
-  > 有关详细信息，请参阅[为本地或托管 Exchange 配置 Exchange 内部部署连接器](intune-on-premises-exchange-connector.md)。
+   - **用户通知**：除了 Exchange 发送的通知电子邮件之外，Intune 还将发送一封包含取消阻止设备的步骤的电子邮件。 你可以根据需求来自定义编辑默认消息。 如果用户的设备在接收包含修正说明的 Intune 通知电子邮件之前已被阻止（此电子邮件发送到用户的 Exchange 邮箱），则用户可使用取消阻止的设备或其他方法来访问 Exchange 并查看该邮件。
+     - 当“默认规则”设置为阻止或隔离时尤其如此。 在这种情况下，用户必须转到其应用商店，下载 Microsoft 公司门户应用并注册其设备。 这适用于 iOS、Windows 和 Samsung KNOX 设备。 对于不运行 Samsung KNOX 的设备，需要将隔离电子邮件发送到备用电子邮件帐户。 用户必须将电子邮件复制到其被阻止的设备，以完成注册和符合性过程。
+       > [!NOTE]
+       > 若要让 Exchange 能够发送通知电子邮件，必须指定用于发送通知电子邮件的帐户。
+       >
+       > 有关详细信息，请参阅[为本地或托管 Exchange 配置 Exchange 内部部署连接器](intune-on-premises-exchange-connector.md)。
 
-3.  完成后，选择“保存”。
+3. 完成后，选择“保存”。
 
 -   不需要部署条件访问策略—它会立即生效。
 

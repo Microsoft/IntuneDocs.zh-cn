@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1893410f4993d6feaa218d251dd7e2561286f5a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>将 Cisco ISE 与 Microsoft Intune 配合使用
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 将 Intune 与 Cisco 身份服务引擎 (ISE) 集成使你能够使用 Intune 设备注册和合规性状态在 ISE 环境中编写网络策略。 你可使用这些策略确保对公司网络的访问权限仅限于由 Intune 托管并符合 Intune 策略的设备。
 
@@ -70,13 +70,13 @@ b. 选择锁定图标&gt;“详细信息”。
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>从 ISE 中获取自签名证书 
 
-1.  在 ISE 控制台中，转到“管理” > “证书” > “系统证书” > “生成自签名证书”。  
-2.       导出自签名证书。
+1. 在 ISE 控制台中，转到“管理” > “证书” > “系统证书” > “生成自签名证书”。  
+2. 导出自签名证书。
 3. 在文本编辑器中，编辑导出的证书：
 
- - 删除 -----BEGIN CERTIFICATE-----
- - 删除 -----END CERTIFICATE-----
- 
+   - 删除 -----BEGIN CERTIFICATE-----
+   - 删除 -----END CERTIFICATE-----
+
 确保所有文本都只占一行
 
 
@@ -88,13 +88,13 @@ b. 选择锁定图标&gt;“详细信息”。
 5. 保存该文件，但不更改其名称。
 6. 为你的应用提供针对 Microsoft Graph 和 Microsoft Intune API 的权限。
 
- a. 对于 Microsoft Graph，选择以下各项：
+   a. 对于 Microsoft Graph，选择以下各项：
     - **应用程序权限**：读取目录数据
     - **委托的权限**：
         - 随时访问用户的数据
         - 让用户登录
 
- b. 对于 Microsoft Intune API，在“应用程序权限”中，选择“从 Intune 获取设备状态和合规性”。
+   b. 对于 Microsoft Intune API，在“应用程序权限”中，选择“从 Intune 获取设备状态和合规性”。
 
 7. 选择“查看终结点”，并复制以下值以便在配置 ISE 设置时使用：
 
@@ -105,23 +105,40 @@ b. 选择锁定图标&gt;“详细信息”。
 |使用你的客户端 ID 更新你的代码|客户端 ID|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>步骤 4：将自签名证书从 ISE 上传到在 Azure AD 中创建的 ISE 应用
-1.     获取 .cer X509 公用证书文件中的 base64 编码证书值和指纹。 此示例使用 PowerShell：
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    存储 $base64Thumbprint、$base64Value 和 $keyid 值，在下一步中使用。
-2.       通过清单文件上传证书。 登录到 [Azure 管理门户](https://manage.windowsazure.com)
-2.      在 Azure AD 管理单元中，找出想要配置 X.509 证书的应用程序。
-3.      下载应用程序清单文件。 
-5.      使用以下 JSON 替换空的“KeyCredentials”: [] 属性。  [实体和复杂类型参考](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)中描述了 KeyCredentials 的复杂类型。
+1. 获取 .cer X509 公用证书文件中的 base64 编码证书值和指纹。 此示例使用 PowerShell：
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ]， 
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. 通过清单文件上传证书。 登录到 [Azure 管理门户](https://manage.windowsazure.com)
+3. 在 Azure AD 管理单元中，找出想要配置 X.509 证书的应用程序。
+4. 下载应用程序清单文件。 
+5. 使用以下 JSON 替换空的“KeyCredentials”: [] 属性。  [实体和复杂类型参考](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)中描述了 KeyCredentials 的复杂类型。
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
 例如：
- 
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ b. 选择锁定图标&gt;“详细信息”。
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      保存更改到应用程序清单文件。
-7.      通过 Azure 管理门户上传已编辑应用程序清单文件。
-8.      可选：再次下载清单文件，检查应用程序上是否存在 X.509 证书。
+
+6. 保存更改到应用程序清单文件。
+7. 通过 Azure 管理门户上传已编辑应用程序清单文件。
+8. 可选：再次下载清单文件，检查应用程序上是否存在 X.509 证书。
 
 >[!NOTE]
 >
@@ -155,7 +172,7 @@ b. 选择锁定图标&gt;“详细信息”。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune 租户和 Cisco ISE 服务器之间共享的信息
 此表列出了你的 Intune 租户和用于由 Intune 托管的设备的 Cisco ISE 服务器之间共享的信息。
 
-|属性|  说明|
+|属性|  描述|
 |---------------|------------------------------------------------------------|
 |complianceState|指示设备是否合规的 true 或 false 字符串。|
 |isManaged|指示客户端是否由 Intune 托管的 true 或 false 字符串。|

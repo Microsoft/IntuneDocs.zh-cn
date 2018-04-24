@@ -1,28 +1,28 @@
 ---
-title: "使用 Microsoft Intune 进行条件访问"
-titlesuffix: 
-description: "了解如何在 Microsoft Intune 中定义用户、设备和应用访问公司资源必须满足的条件。"
-keywords: 
+title: 使用 Microsoft Intune 进行条件访问
+titlesuffix: ''
+description: 了解如何在 Microsoft Intune 中定义用户、设备和应用访问公司资源必须满足的条件。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-conditional-access"></a>什么是条件性访问？
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 条件访问是指控制允许连接到电子邮件和公司资源的设备和应用的方式。 在本主题中，了解基于设备和基于应用的条件访问，并查找通过 Intune 使用条件访问的常见方案。
 

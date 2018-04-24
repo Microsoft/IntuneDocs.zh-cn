@@ -1,29 +1,29 @@
 ---
-title: "将企业标识符添加到 Intune"
+title: 将企业标识符添加到 Intune
 titlesuffix: Microsoft Intune
-description: "了解如何将企业标识符（注册方法、IMEI 和序列号）添加到 Microsoft Intune。"
-keywords: 
+description: 了解如何将企业标识符（注册方法、IMEI 和序列号）添加到 Microsoft Intune。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 作为 Intune 管理员，可以将设备标识为“公司拥有”，细化管理和标识。 Intune 可以执行其他管理任务，从公司拥有的设备收集其他信息，例如完整的电话号码和应用清单。 还可设置设备限制，阻止对非公司拥有的设备进行注册。
 
@@ -72,7 +72,7 @@ Intune 管理员可以创建和导入列有 IMEI 编号或序列号的逗号分�
 
 1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册” > “公司设备标识符”，然后单击“添加”。
 
- ![突出显示了“添加”按钮的企业设备标识符工作区](./media/add-corp-id.png)
+   ![突出显示了“添加”按钮的企业设备标识符工作区](./media/add-corp-id.png)
 
 2. 在“添加标识符”边栏选项卡中，指定标识符类型：IMEI 或“序列号”。 你可以指定先前导入的号码是否应“覆盖现有标识符的详细信息”。
 
@@ -97,7 +97,7 @@ Intune 管理员可以创建和导入列有 IMEI 编号或序列号的逗号分�
 
 **更改设备所有权：**
 1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，转到“设备”，然后选择该设备。
-3. 选择“属性”。
-4. 将“设备所有权”指定为“个人”或“公司”。
+2. 选择“属性”。
+3. 将“设备所有权”指定为“个人”或“公司”。
 
-  ![显示设备类别和设备所有权选项的设备属性](./media/device-properties.png)
+   ![显示设备类别和设备所有权选项的设备属性](./media/device-properties.png)

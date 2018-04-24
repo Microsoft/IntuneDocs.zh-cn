@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 36715859c4c4685aa8d0fc74b360efd2372ee6c2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5fdae47509fa2c0606008bf399339a14403ad2fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>排查 Microsoft Intune 中的软件更新问题
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本节中的信息有助于解决 Microsoft Intune 中的软件更新问题。
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/22/2018
 
 下表列出了 Intune **更新代理**错误代码。 如果无法在此表中找到特定错误代码，请参阅 [Windows Update Agent Result Codes（Windows 更新代理结果代码）](http://go.microsoft.com/fwlink/?LinkID=221542)。
 
-|错误代码|符号名称|更多信息|
+|错误代码|符号名称|详细信息|
 |--------------|-----------------|--------------------|
 |**0x00cf0001**|OM_S_SERVICE_STOP|已成功停止代理。|
 |**0x00cf0003**|OM_S_UPDATE_ERROR|操作已成功完成，但是更新应用程序期间发生错误。|

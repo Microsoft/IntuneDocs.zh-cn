@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e1b4903eedaec53015a01a7711f87401dc02d24e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>配置和部署 Microsoft Intune 控制台中的移动应用程序管理策略
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所部署的应用的功能，以帮助它们符合你的公司合规性和安全策略。 例如，你可以限制在托管的应用内进行剪切、复制和粘贴操作，或配置应用以在托管的浏览器内打开所有 Web 链接。
 
@@ -122,9 +122,9 @@ Microsoft Intune 中的移动应用管理 (MAM) 策略让你可以修改你所�
 
 3.  根据需要配置下列设置。 该选项可能有所差异，这取决于你配置策略的设备类型。
 
-|设置名|详细信息|
+|设置名称|详细信息|
     |---------|--------------------|
-    |**Name**|为此策略指定名称。|
+    |**名称**|为此策略指定名称。|
     |**描述**|（可选）为此策略指定描述。|
     |**限制显示在企业托管浏览器内的 Web 内容**|如果启用此设备，应用内的任何链接都将在托管浏览器中打开。 要使此选项起作用，你必须将此应用部署到设备。|
     |**“阻止 Android 备份”** 或 **“阻止 iTunes 和 iCloud 备份”**|此设置禁止从应用备份任何信息。|

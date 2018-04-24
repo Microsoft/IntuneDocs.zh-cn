@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Exchange ActiveSync 策略设置
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune“Exchange ActiveSync”策略配置设置，这些设置可控制 Exchange ActiveSync 托管设备上的一系列特性和功能。
 
@@ -38,16 +38,17 @@ ms.lasthandoff: 03/22/2018
 |**允许简单密码**|指定是否可以使用简单密码（包括 "0000" 和 "1234"）。|
 |**擦除设备前允许的重复登录失败次数**|指定在擦除设备之前用户可以输入不正确密码的次数。|
 |**密码过期（天数）**|指定必须更改设备密码前的天数。
-|**记住密码历史**|指定是否允许用户使用以前用过的密码。|
+|**记住密码历史记录**|指定是否允许用户使用以前用过的密码。|
 |**“记住密码历史记录”** – **“防止重用以前的密码”**|指定不能重复使用的以前所用密码的数量。|
 |**需要提供密码之前处于非活动状态的分钟数**|指定锁定屏幕之前，设备必须保持空闲的时间量。
 
 ## <a name="encryption-settings"></a>加密设置
 
-|设置名|详细信息|
-|----------------|---|
-|**需要对移动设备加密**<sup>1</sup>|需要对设备上的数据进行加密（受支持时）。<br><br>对于 Windows Phone 8 设备，必须将其设置为 **“是”**。<br /><br />若要在 iOS 设备上启用加密，请启用设置“需要密码以解锁移动设备”。|
-|**需要对存储卡进行加密**|需要对存储在外部存储（如 SD 卡）上的数据进行加密（在支持的设备上）。
+|                           设置名                           |                                                                                                                                    详细信息                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>需要对移动设备加密</strong><sup>1</sup> | 需要对设备上的数据进行加密（受支持时）。<br><br>对于 Windows Phone 8 设备，必须将其设置为 <strong>“是”</strong>。<br /><br />若要在 iOS 设备上启用加密，请启用设置“需要密码以解锁移动设备”。 |
+|       <strong>需要对存储卡进行加密</strong>       |                                                                                  需要对存储在外部存储（如 SD 卡）上的数据进行加密（在支持的设备上）。                                                                                  |
+
 <sup>1</sup>运行 Windows 8.1 的设备的其他信息
 
 -   若要在运行 Windows 8.1 的设备上强制加密，必须在每台设备上安装 [用于 Windows 的 December 2014 MDM 客户端更新](https://support.microsoft.com/kb/3013816)。
@@ -70,7 +71,7 @@ ms.lasthandoff: 03/22/2018
 
 |设置名|详细信息
 |----------------|---|
-|**允许使用 Web 浏览器**|指定是否可以使用设备上的 Web 浏览器。<br>（不可用于 Windows RT 或 Windows Phone）。
+|**允许 Web 浏览器**|指定是否可以使用设备上的 Web 浏览器。<br>（不可用于 Windows RT 或 Windows Phone）。
 
 ## <a name="hardware-settings"></a>硬件设置
 

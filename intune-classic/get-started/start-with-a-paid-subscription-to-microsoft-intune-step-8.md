@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9572181fb15ec97e7ae4c11a8ab2e4fe4cc9b30
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1b09545e99f18815e690ad224e11e772e8911c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-enrollment-for-mobile-devices"></a>启用移动设备注册
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题指导 Intune 管理员如何启用移动设备注册。 有关在手机上使用 Intune 的帮助，请参阅[使用托管设备来完成工作](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions)。
 
@@ -66,4 +66,4 @@ Intune 可以根据你公司的需求以多种方式管理设备。 几种可用
 祝贺你！ 你刚刚完成了 *Intune 快速入门指南*的最后一步。 由于已完成初始配置，你可考虑启用附加的 MDM 功能。
 
 >[!div class="step-by-step"]
->[&larr;**注册设备**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)[**配置后任务**&rarr;](.\post-configuration-tasks.md)  
+>[&larr;**注册设备**](./start-with-a-paid-subscription-to-microsoft-intune-step-8.md)[**配置后任务**&rarr;](./post-configuration-tasks.md)  

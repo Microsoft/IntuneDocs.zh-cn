@@ -1,29 +1,29 @@
 ---
-title: "使用 SDK 启用针对 MAM 的应用"
-description: "本主题简要概述了应使用 Intune App SDK 的原因。"
-keywords: 
+title: 使用 SDK 启用针对 MAM 的应用
+description: 本主题简要概述了应使用 Intune App SDK 的原因。
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e435b57a85364f56f2a307ce7113102e8b6df254
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: ed6bdddf063d64ec907755e64be047a231c47f44
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>使用 SDK 启用针对移动应用程序管理的应用
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 使用 Microsoft Intune App SDK 来允许 Intune管理 iOS 或 Android 应用的某些功能。 启用应用后，即可向应用部署策略。 这些策略使用这些功能来帮助保护公司数据。 可使用 SDK 实现的保护功能类型的示例包括：
 

@@ -1,28 +1,28 @@
 ---
-title: "什么是 Microsoft Intune"
-description: "了解 Intune 作为企业移动性 + 安全性解决方案的移动设备管理 (MDM) 和移动应用管理 (MAM) 组件的工作原理，以及它帮助保护公司数据的方式。"
-keywords: "什么是 Intune"
+title: 什么是 Microsoft Intune
+description: 了解 Intune 作为企业移动性 + 安全性解决方案的移动设备管理 (MDM) 和移动应用管理 (MAM) 组件的工作原理，以及它帮助保护公司数据的方式。
+keywords: 什么是 Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: aa28f11a32a35e53c8e135a9f5f738513f416c37
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 25bb5ec1610eb3d3cac02244a43ead6e63d441e5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-intune"></a>什么是 Intune？
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune 是企业移动管理 (EMM) 领域中基于云的服务，可帮助员工提高工作效率，同时保护企业数据。 通过 Intune，还可以：
 * 管理员工用于访问公司数据的移动设备。

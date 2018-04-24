@@ -1,29 +1,29 @@
 ---
-title: "使用 Pulse Secure 的 Per-app VPN（针对 Android）"
-description: "可为 Intune 托管的 Android 设备创建 per-app VPN 配置文件。"
-keywords: 
+title: 使用 Pulse Secure 的 Per-app VPN（针对 Android）
+description: 可为 Intune 托管的 Android 设备创建 per-app VPN 配置文件。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65bd7e15a49d5b563b6a095593ca5d8d5316a1fa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: fb4b6ad21b83d6ed2844238091f2e24e0d15cea5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用自定义策略创建适用于 Android 设备的 per-app VPN 配置文件
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 可为由 Intune 管理的 Android 5.0 及更高版本设备创建每应用 VPN 配置文件。 首先，创建使用 Pulse Secure 或 Citrix 连接类型的 VPN 配置文件。 然后，创建将 VPN 配置文件与特定应用关联的自定义配置策略。 
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 12/12/2017
    3. 在“OMA-URI 设置”下，选择“添加”。
    4. 输入设置名称。
    5. 为“数据类型”，指定“字符串”。
-   6. 为 **OMA-URI** 指定以下字符串：**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中 *Name* 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
+   6. 为“OMA-URI”指定以下字符串：./Vendor/MSFT/VPN/Profile/Name/PackageList，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
    7.   对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
 
 ![Android per-app VPN 自定义策略示例](./media/android_per_app_vpn_oma_uri.png)
@@ -63,7 +63,7 @@ ms.lasthandoff: 12/12/2017
   1.    在“OMA-URI 设置”下，选择“添加”。
   2.    输入设置名称。
   3.    为“数据类型”，指定“字符串”。
-  4.    对于 **OMA-URI**，使用以下字符串：**./Vendor/MSFT/VPN/Profile/*Name*/Mode**，其中 *Name* 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为**./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
+  4.    对于 OMA-URI，使用以下字符串：./Vendor/MSFT/VPN/Profile/Name/Mode，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
   5.    对于**值**，输入 **BLACKLIST** 或 **WHITELIST**。
 
 

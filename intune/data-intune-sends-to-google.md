@@ -1,29 +1,29 @@
 ---
-title: "Intune 向 Google 发送的数据"
+title: Intune 向 Google 发送的数据
 titleSuffix: Microsoft Intune
-description: "Intune 向 Google 发送的数据列表。"
-keywords: 
+description: Intune 向 Google 发送的数据列表。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a5c3bec4-18ed-11e8-accf-0ed5f89f718b
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63f1b07d13daad7512dff8e53f9acbafa7bffdd3
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 78fef57849b8742bb10ece1717234af5cce3f4ba
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-intune-sends-to-google"></a>Intune 向 Google 发送的数据
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 当在设备上启用了 Android 设备管理时，Microsoft Intune 可与 Google 建立连接并与 Google 共享用户和设备信息。 必须先创建一个 Google 帐户，Microsoft Intune 才可建立连接。
 

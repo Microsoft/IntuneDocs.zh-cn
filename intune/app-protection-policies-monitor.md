@@ -1,28 +1,28 @@
 ---
-title: "如何监视应用保护策略"
+title: 如何监视应用保护策略
 titleSuffix: Microsoft Intune
-description: "在 Intune 中监视移动应用管理策略的符合性状态。"
-keywords: 
+description: 在 Intune 中监视移动应用管理策略的符合性状态。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100114552b05e131ff1d0d3e9e61ef08bcc2eea4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7db5a9dfe7a7da21a9b59dafb4f95cdb54a59735
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 如果还没有迁移到 Azure 门户，请参阅本主题，其中介绍了[如何在 Intune 经典门户中创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="summary-view"></a>摘要视图
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在 Intune 窗格中，选择“移动应用”。
 4. 在“移动应用”工作负荷中，选择“监视” > “应用保护状态”，以查看摘要视图：
 

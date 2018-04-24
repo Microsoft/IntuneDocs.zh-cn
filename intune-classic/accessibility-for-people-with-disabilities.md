@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 584ed73ee8be23d72ffc17fe8456dbb296d92a8c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ffacb5eeda5ed42fb2c5666b9f59b8cee14b71be
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>针对残疾人士的辅助功能
-Microsoft 致力于使其产品和服务可让每个人都能更轻松地使用。 以下主题提供有关使残障人士更易于访问 Microsoft Intune 的功能、产品和服务的信息。
+Microsoft 致力于让所有用户更轻松地使用其产品和服务。 以下主题提供有关使残障人士更易于访问 Microsoft Intune 的功能、产品和服务的信息。
 
 ## <a name="in-this-section"></a>本节内容
 [Microsoft Intune 的辅助功能](accessibility-features-of-microsoft-intune.md)介绍 Microsoft Intune 的辅助功能。

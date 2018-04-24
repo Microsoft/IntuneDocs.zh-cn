@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ed6f66747364debd89661d78bcf3b002b1c8a9b6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备合规性策略
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题概述了创建合规性策略时可使用的步骤，设备必须遵循该策略才能被视为相容。
 
@@ -56,7 +56,8 @@ ms.lasthandoff: 03/22/2018
 下表列出了合规性策略设置和支持这些设置的平台。
 
 -------------
-|设置|iOS|Android|Windows|
+
+|Setting|iOS|Android|Windows|
 |-----|----|-----|-----|
 |需要密码才可解锁移动设备|iOS 6 及更高版本|Android 4.0 及更高版本 <br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本|
 |允许简单密码|iOS 6 及更高版本|不支持|Windows Phone 8.1 及更高版本|
@@ -65,11 +66,11 @@ ms.lasthandoff: 03/22/2018
 |最小字符集数|iOS 6 及更高版本|不可用|Windows Phone 8.1 及更高版本 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |密码质量|不可用|Android 4.0 及更高版本 <br>Samsung KNOX 标准版 4.0 和更高版本|不可用|
 |需要提供密码之前处于非活动状态的分钟数|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
-|密码过期（天数）|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
+|密码过期(天)|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
 |记住密码历史记录|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
 |防止重用以前的密码|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br>Windows RT 和 Windows RT 8.1<br>Windows 8.1|
 |当设备从空闲状态返回时需要密码| 不可用| 不可用|Windows 10 移动版|
-|需要对移动设备加密|不适用|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br> Windows 8.1|
+|需要对移动设备加密|“不适用”|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|Windows Phone 8.1 及更高版本<br> Windows 8.1|
 |要求设备被报告为正常| 不可用| 不可用|Windows <br>Windows 10 移动版|
 |设备不能已越狱或取得 root 权限|iOS 6 及更高版本|Android 4.0 及更高版本<br>Samsung KNOX 标准版 4.0 和更高版本|不可用|
 |必须由 Intune 管理电子邮件帐户|iOS 6 及更高版本|不可用| 不可用|
@@ -79,9 +80,9 @@ ms.lasthandoff: 03/22/2018
 
 选择以下值之一，了解有关每个平台上支持的合规性设置的详细信息：
 > [!div class="op_single_selector"]
-- [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
-- [适用于 Windows 和 Windows Phone 的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 iOS 设备的合规性策略设置](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Android 设备的合规性策略设置](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [适用于 Windows 和 Windows Phone 的合规性策略设置](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
 ## <a name="next-steps"></a>后续步骤

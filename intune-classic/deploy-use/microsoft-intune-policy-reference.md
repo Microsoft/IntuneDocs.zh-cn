@@ -1,29 +1,29 @@
 ---
-title: "配置策略参考"
-description: "通过本主题中的信息可帮助你确定管理设备所需要使用的 Microsoft Intune 策略。"
-keywords: 
+title: 配置策略参考
+description: 通过本主题中的信息可帮助你确定管理设备所需要使用的 Microsoft Intune 策略。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Microsoft Intune 配置策略参考
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 通过本主题中的信息可帮助你确定管理设备所需要使用的 Microsoft Intune 配置策略。
 
@@ -102,12 +102,13 @@ ms.lasthandoff: 01/30/2018
 
 ## <a name="common-mobile-device-settings"></a>常用的移动设备设置
 
-|策略名称|在你想要完成以下事项时使用:|
-|---------------|------------------------|
-|**Exchange ActiveSync 策略**|为 Exchange ActiveSync 托管设备配置移动设备安全设置和功能设置。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 Exchange ActiveSync 策略设置](exchange-activesync-policy-settings-in-microsoft-intune.md)。|
-|**移动设备安全策略**|<ul><li>为移动设备(所有平台)配置设置，包括:<br /><br /><ul><li>安全</li><li>加密</li><li>系统</li><li>Email</li><li>应用程序</li></ul></li></ul>
+|                  策略名称                   |                                                                                                                       在你想要完成以下事项时使用:                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Exchange ActiveSync 策略</strong>   | 为 Exchange ActiveSync 托管设备配置移动设备安全设置和功能设置。<br /><br />有关详细信息，请参阅 [Microsoft Intune 中的 Exchange ActiveSync 策略设置](exchange-activesync-policy-settings-in-microsoft-intune.md)。 |
+| <strong>移动设备安全策略</strong> |                                  <ul><li>为移动设备(所有平台)配置设置，包括:<br /><br /><ul><li>安全</li><li>加密</li><li>系统</li><li>Email</li><li>应用程序</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune 现在拥有针对每个设备平台的单独**配置策略**，这些策略包含你可以使用的最新设置。 你可以继续使用移动设备安全策略，任何现有部署仍将起作用，但你应计划尽快迁移到新配置策略。<br />有关详细信息，请参阅 [Microsoft Intune 中的移动设备安全策略设置](mobile-device-security-policy-settings-in-microsoft-intune.md)。
+> Microsoft Intune 现在拥有针对每个设备平台的单独**配置策略**，这些策略包含你可以使用的最新设置。 你可以继续使用移动设备安全策略，任何现有部署仍将起作用，但你应计划尽快迁移到新配置策略。<br />有关详细信息，请参阅 [Microsoft Intune 中的移动设备安全策略设置](mobile-device-security-policy-settings-in-microsoft-intune.md)。
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>由 Intune 软件客户端管理的 Windows 电脑策略
 
