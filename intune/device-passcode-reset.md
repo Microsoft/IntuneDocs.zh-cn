@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,30 +13,30 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cca5922f036711093469e71489e267af53f05a9
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 19b30315fa26dd53b5e383bc9e4bef5c65b89962
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 若要为设备创建新的密码，请使用“删除密码”操作。
 
 ## <a name="supported-platforms"></a>受支持的平台
 
-- Windows Phone 8.1（未加入到 Azure Active Directory），其中包括 Windows 10 创意者更新以下的版本
-- Windows 10 创意者更新及更高版本
-- iOS
-- 早于 Android 7 的 Android 版本
+- 使用 Work 配置文件注册且版本在 7.0 及以上的 Android 设备
+- 版本在 6.0 及以下的 Android 设备
+- iOS 
+     
+## <a name="unsupported-platforms"></a>不受支持的平台
 
-以下系统不支持此功能：
-
-- Windows
+- 使用 Work 配置文件注册且版本在 6.0 及以下的 Android 设备
+- 版本在 7.0 及以上的 Android 设备
 - macOS
-- Android for Work
+- Windows
 
 ## <a name="reset-a-passcode"></a>重置密码
 
@@ -44,6 +44,14 @@ ms.lasthandoff: 03/20/2018
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 3. 依次选择“设备”和“所有设备”。
 4. 从你管理的设备列表中，选择一个设备，然后选择“...更多”。 然后选择“删除密码”设备远程操作。
+
+## <a name="resetting-android-for-work-passcodes"></a>重置 Android for Work 密码
+
+受支持的 Android for Work 设备的用户会收到新的设备解锁密码或托管配置文件质询。 对于具有 Work 配置文件且版本在 Android 7.0 及以上的设备，最终用户完成注册后会立即收到激活其重置密码令牌的通知。 需提供和设置 Work 配置文件密码时会显示该通知。 输入其密码后，该通知将消除。
+
+## <a name="resetting-ios-passcodes"></a>重置 iOS 密码
+
+系统会从 iOS 设备中删除密码。 如果设置了密码符合性策略，则设备会提示用户在“设置”中设置新密码。 
 
 ## <a name="next-steps"></a>后续步骤
 

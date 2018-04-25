@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0eafbe9c57051b62f6ed53a3930705eabf5aebd0
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: e3f8dd2e63702a7eff3b1808628a25df9618da1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -57,7 +57,7 @@ Intune App SDK 是已编译的 Android 项目。 因此，这在很大程度上�
 > [!NOTE]
 > 如果设备上未安装公司门户应用，则 Intune 托管的应用的行为与不支持 Intune 应用保护策略的普通应用相同。
 
-对于无需设备注册的应用保护，_**不会**_要求用户使用公司门户应用注册设备。
+对于无需设备注册的应用保护，_**不会**_ 要求用户使用公司门户应用注册设备。
 
 ## <a name="sdk-integration"></a>SDK 集成
 
@@ -278,7 +278,6 @@ boolean diagnosticIsFileEncryptionInUse();
 String toString();
 
 }
-
 ```
 
 > [!NOTE]
@@ -399,7 +398,6 @@ public interface MAMNotificationReceiver {
      */
     boolean onReceive(MAMNotification notification);
 }
-
 ```
 
 ### <a name="types-of-notifications"></a>通知类型
@@ -526,7 +524,6 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
 
 // make use of mgr
-
 ```
 
 返回的 `MAMEnrollmentManager` 实例保证不能为空。 API 方法分为两类：**身份验证**和**帐户注册**。
@@ -654,7 +651,6 @@ Result getRegisteredAccountStatus(String upn);
 public interface MAMEnrollmentNotification extends MAMUserNotification {
     MAMEnrollmentManager.Result getEnrollmentResult();
 }
-
 ```
 
 `getEnrollmentResult()` 方法将返回注册请求的结果。  由于 `MAMEnrollmentNotification` 扩展了 `MAMUserNotification`，因此还会提供尝试进行注册的用户的标识。 应用必须实现 `MAMNotificationReceiver` 接口来接收这些通知，详见[注册来自 SDK 的通知](#Register-for-notifications-from-the-SDK)部分。
@@ -677,15 +673,15 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
 1. 如果应用**不**使用它自己的自定义 BackupAgent，则使用默认的 MAMBackupAgent 以允许执行符合 Intune 策略的自动完整备份。 这样做可以忽略 `android:fullBackupOnly` 清单属性，因为它不适用于我们的备份代理。 将以下项放入应用清单：
 
     ```xml
-android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
+   android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
 
 
-2. **[可选]**如果实现可选的自定义 BackupAgent，则需要确保使用 MAMBackupAgent 或 MAMBackupAgentHelper。 请参阅以下部分。 考虑切换为使用 Intune 的 **MAMDefaultFullBackupAgent**（如步骤 1 中所述），它在 Android M 及更高版本上提供轻松备份。
+2. **[可选]** 如果实现可选的自定义 BackupAgent，则需要确保使用 MAMBackupAgent 或 MAMBackupAgentHelper。 请参阅以下部分。 考虑切换为使用 Intune 的 **MAMDefaultFullBackupAgent**（如步骤 1 中所述），它在 Android M 及更高版本上提供轻松备份。
 
 3. 确定应用应接收的完整备份类型（未筛选、已筛选或无）时，需要将属性 `android:fullBackupContent` 设置为 true、false 或应用中的 XML 资源。
 
-4. 然后， _**必须**_将所有置于 `android:fullBackupContent` 的内容复制到清单中名为 `com.microsoft.intune.mam.FullBackupContent` 的元数据标记。
+4. 然后， _**必须**_ 将所有置于 `android:fullBackupContent` 的内容复制到清单中名为 `com.microsoft.intune.mam.FullBackupContent` 的元数据标记。
 
     **示例 1**：如果你希望应用在无需排除的情况下进行完整备份，请同时将 `android:fullBackupContent` 属性和 `com.microsoft.intune.mam.FullBackupContent` 元数据标记设置为 **true**：
 
@@ -828,7 +824,6 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
   public static AppPolicy getPolicyForIdentity(final String identity);
 
   public static boolean getIsIdentityManaged(final String identity);
-
   ```
 
 >[!NOTE]
@@ -924,9 +919,9 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
 对于所有隐式标识更改（通过由 `MAMService.onMAMBind` 返回的 Binder 完成的更改除外），都会调用 `onMAMIdentitySwitchRequired` 方法。 `onMAMIdentitySwitchRequired` 的默认实现将立即调用：
 
-*  当原因是 RESUME_CANCELLED，则为 `reportIdentitySwitchResult(FAILURE)`。
+* 当原因是 RESUME_CANCELLED，则为 `reportIdentitySwitchResult(FAILURE)`。
 
-*  所有其他情况均为 `reportIdentitySwitchResult(SUCCESS)`。
+* 所有其他情况均为 `reportIdentitySwitchResult(SUCCESS)`。
 
   大多数应用都无需使用其他方法来阻止或延迟标识切换，但是如果应用需要执行此操作，则必须考虑以下几点：
 
@@ -956,7 +951,7 @@ UI 线程上的操作通常将后台任务分派给另一线程。 多标识应�
     protected Object doInBackgroundMAM(final Object[] params) {
         // Do operations.
     }
-    
+
     @Override
     protected void onPreExecuteMAM() {
         // Do setup.
@@ -990,7 +985,7 @@ UI 线程上的操作通常将后台任务分派给另一线程。 多标识应�
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
-        
+
         /**
         * Protect a file obtained from a content provider. This is intended to be used for
         * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
@@ -1032,7 +1027,6 @@ UI 线程上的操作通常将后台任务分派给另一线程。 多标识应�
     public interface MAMFileProtectionInfo {
         String getIdentity();
     }
-
   ```
 #### <a name="app-responsibility"></a>应用责任
 MAM 无法自动推断出要在 `Activity` 中读取的文件和在其中显示的数据之间的关系。 应用必须在显示公司数据之前适当地设置 UI 标识。 这包括从文件中读取的数据。 如果一个文件来自应用外部（来自 `ContentProvider` 或从公开可写的位置读取），则应用必须在显示从文件中读取的信息之前尝试确定文件标识（使用 `MAMFileProtectionManager.getProtectionInfo`）。 如果 `getProtectionInfo` 报告非 NULL、非空的标识，则必须将 UI 标识设置为匹配此标识（使用 `MAMActivity.switchMAMIdentity` 或 `MAMPolicyManager.setUIPolicyIdentity`）。 如果标识切换失败，则不得显示来自该文件的数据。
@@ -1157,7 +1151,6 @@ public final class MAMDataProtectionManager {
      */
     public static MAMDataProtectionInfo getProtectionInfo(final byte[] input) throws IOException;
 }
-
 ```
 
 ### <a name="content-providers"></a>内容提供程序
@@ -1168,7 +1161,7 @@ public final class MAMDataProtectionManager {
 
 如果应用注册 `WIPE_USER_DATA` 通知，则它无法享有 SDK 默认的选择性擦除行为的好处。 对于多身份标识感知应用，这种丢失可能更为重要，因为 MAM 默认的选择性擦除将仅擦除其标识被擦除锁定的文件。
 
-如果多身份标识感知应用希望完成 MAM 默认选择性擦除_**并**_希望针对擦除执行其自己的操作，则应注册 `WIPE_USER_AUXILIARY_DATA` 通知。 此通知将在执行 MAM 默认选择性擦除前一秒由 SDK 发出。 应用绝不会同时注册 WIPE_USER_DATA 和 WIPE_USER_AUXILIARY_DATA。
+如果多身份标识感知应用希望完成 MAM 默认选择性擦除_**并**_ 希望针对擦除执行其自己的操作，则应注册 `WIPE_USER_AUXILIARY_DATA` 通知。 此通知将在执行 MAM 默认选择性擦除前一秒由 SDK 发出。 应用绝不会同时注册 WIPE_USER_DATA 和 WIPE_USER_AUXILIARY_DATA。
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>为 Android 应用程序启用面向 MAM 的配置（可选）
 应用程序特定的键值对可以在 Intune 控制台中进行配置。 这些键值对根本不会被 Intune 解释，只是被传递给应用。 想要接收这种配置的应用程序可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 类进行这些操作。 如果多个策略针对同一个应用，则可能会有多个冲突的值可用于同一个键。
@@ -1339,7 +1332,6 @@ public interface MAMAppConfig {
         name="logo_image"
         resource="@drawable/app_logo"/>
 </styleOverrides>
-
 ```
 
 你必须重用应用中已存在的资源。 例如，必须在 colors.xml 文件中定义绿色并在此处引用它。 不能使用十六进制颜色代码“#0000ff”。 应用徽标的最大大小为 110 dip (dp)。 可以使用较小的徽标图像，但遵循最大大小会产生最佳外观。 如果超过 110 dip 限制，图像将缩小并可能会模糊。
@@ -1353,7 +1345,8 @@ public interface MAMAppConfig {
 | 着色 | 突出显示时的 PIN 边框 <br> 超链接 |accent_color | 颜色 |
 | 应用徽标 | Intune 应用 PIN 屏幕上显示的大图标 | logo_image | 可绘制 |
 
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>需要用户登录提示以自动注册 APP-WE 服务，需要 Intune 应用保护策略以使用集成了 SDK 的 Android LOB 应用，以及启用 ADAL SSO（可选）
+## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>使用 APP-WE 服务注册、集成 SDK 的 Android LOB 应用和 ADAL SSO（可选）
+<!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 以下指南面向：需要在应用启动时出现用户提示以自动注册 APP-WE 服务（本节中称为“默认注册”）；需要 Intune 应用保护策略以仅允许受 Intune 保护的用户使用你的集成了 SDK 的 Android LOB 应用。 指南中还说明如何为集成了 SDK 的 Android LOB 应用启用 SSO。 可由非 Intune 用户使用的应用商店应用不支持此操作。
 
@@ -1362,22 +1355,22 @@ public interface MAMAppConfig {
 
 ### <a name="general-requirements"></a>一般要求
 * Intune SDK 团队需要应用的应用程序 ID。 可按此方式找到此内容：在 [Azure 门户](https://portal.azure.com/)中的“所有应用程序”下，找到“应用程序 ID”列。 建议通过电子邮件 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
-     
+
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
 以下说明专门面向最终用户设备上要求使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用。
 
 1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
-> [!NOTE] 
-> 与应用关联的“客户端 ID”一词与 Azure 门户中的“应用程序 ID”一词的含义相同。 
-* 启用 SSO 需要“通用 ADAL 配置”#2。
+   > [!NOTE] 
+   > 与应用关联的“客户端 ID”一词与 Azure 门户中的“应用程序 ID”一词的含义相同。 
+2. 启用 SSO 需要“通用 ADAL 配置”#2。
 
-2. 通过将以下值放入清单来启用默认注册：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则可能发生冲突。
+3. 通过将以下值放入清单来启用默认注册：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+   > [!NOTE] 
+   > 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则可能发生冲突。
 
-3. 通过将以下值放入清单来启用所需的 MAM 策略：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
+4. 通过将以下值放入清单来启用所需的 MAM 策略：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+   > [!NOTE] 
+   > 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
 
 ## <a name="limitations"></a>限制
 
@@ -1403,7 +1396,7 @@ public interface MAMAppConfig {
     ```
 
     在第二种情况下，多标识应用必须注意适当地设置线程标识（或将显式标识传递给 `getPolicy` 调用）。
-    
+
 ### <a name="exported-services"></a>导出的服务
 
  Intune App SDK 中包括的 AndroidManifest.xml 文件包含 **MAMNotificationReceiverService**，它必须是导出的服务才能允许公司门户将通知发送到托管应用。 服务会检查调用方以确保仅允许公司门户发送通知。
@@ -1422,7 +1415,7 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 
 * 避免以不明确的方式使用任何 API。 例如，使用 `Activity.startActivityForResult` 而不检查 requestCode 会导致奇怪的行为。
 
-## <a name="telemetry"></a>遥测技术
+## <a name="telemetry"></a>遥测
 
 Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用会记录遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。
 

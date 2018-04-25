@@ -1,24 +1,24 @@
 ---
-title: "什么是 Intune for Education？"
-description: "了解 Intune for Education 与完整的 Intune 管理体验有何不同。"
-keywords: "什么是 Intune"
-author: barlanmsft
-ms.author: barlan
+title: 什么是 Intune for Education？
+description: 了解 Intune for Education 与完整的 Intune 管理体验有何不同。
+keywords: 什么是 Intune
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f98e9cd82508f4b41d62a61baf06c9add2c3626e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 30195ee56e99754f5ed385291823adef08d6ce01
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Intune for Education 与 Intune 中完整的设备管理体验有何不同？
 
@@ -39,6 +39,6 @@ Intune for Education 可以单独使用，也可以与 [Intune 提供的完整�
 * 确保设备和应用符合安全要求。
 
 ### <a name="next-steps"></a>后续步骤
-* 通过 [Intune 的 90 天免费试用版](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)熟悉此产品。 如果已有权访问，请前往 https://intuneeducation.portal.azure.com 开始访问。
+* 通过 [Intune 的 90 天免费试用版](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)熟悉此产品。 如果已有访问权限，请转到 https://intuneeducation.portal.azure.com) 并开始操作。
 * 了解[开始使用 Intune for Education](/intune-education/what-is-express-configuration) 的最快速方式。
 * 深入了解 Intune 的[技术要求和功能](/intune/supported-devices-browsers)。

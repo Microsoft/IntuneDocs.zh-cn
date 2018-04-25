@@ -15,17 +15,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b09622db88288ccc5b4866cb71ba902d969c0487
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 2b25140cb5c3c8c70ff42186352362c57dcf6ee7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 
 可将 Intune 数据仓库 API 与具有基于特定角色的访问控制和 Azure AD 凭据的帐户配合使用。 然后，使用 OAuth 2.0 向 REST 客户端授予 Azure AD 权限。 最后会形成一个有意义的可调用数据仓库资源的 URL。
 
-[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+[!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>授权
 
@@ -38,7 +38,7 @@ Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure 
 数据仓库 API 终结点读取每个集的实体。 API 支持 **GET** HTTP 谓词和查询选项的子集。
 
 Intune 的 URL 使用以下格式：  
-https://fef.{***location***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{***entity-collection***}?api-version={***api-version***}
+https://fef.{<strong><em>location</em></strong>}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{<strong><em>entity-collection</em></strong>}?api-version={<strong><em>api-version</em></strong>}
 
 该 URL 包含以下元素：
 

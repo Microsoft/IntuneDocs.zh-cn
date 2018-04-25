@@ -1,27 +1,26 @@
 ---
-title: 适用于 Windows Holographic for Business 的 Microsoft Intune 设备限制设置
-titleSuffix: ''
-description: 了解哪些 Intune 设置可用于控制运行 Windows Holographic for Business 的设备上的设备设置和功能。
+title: Microsoft Intune 中适用于 Windows Holographic for Business 的设备限制 - Azure | Microsoft Docs
+description: 阅读在 Microsoft Intune 中配置适用于 Windows Holographic for Business 的设备限制的相关信息并进行配置，包括注销、地理位置、密码、从应用商店安装应用、Edge 中的 Cookie 和弹出窗口、Windows Defender、搜索、云和存储、蓝牙连接、系统时间，以及 Azure 中的使用情况数据。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 694b81434a95f48abc98f5012460523420df58cc
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>适用于 Windows Holographic for Business 的 Microsoft Intune 设备限制设置
+# <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune 中适用于 Windows Holographic for Business 的设备限制设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 运行 Windows Holographic for Business 的设备（如 Microsoft Hololens）支持以下设备限制设置。
 
@@ -31,13 +30,9 @@ ms.lasthandoff: 03/22/2018
 - **Cortana** - 启用或禁用 Cortana 语音助手。
 - **地理位置** - 指定设备是否可以使用位置服务信息。
 
-
-
-## <a name="password"></a>Password
+## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。
     -   **设备从空闲状态返回时需要输入密码** - 指定用户必须输入密码以解锁设备。
-
-
 
 ## <a name="app-store"></a>App Store
 
@@ -47,7 +42,6 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="edge-browser"></a>Microsoft Edge 浏览器
 
--   **Microsoft Edge 浏览器** - 允许在设备上使用 Microsoft Edge Web 浏览器。
 -   **Cookie** - 允许浏览器将 Internet Cookie 保存到设备。
 -   **弹出窗口** - 阻止浏览器中的弹出窗口（仅适用于 Windows 10 桌面版）。
 -   **搜索建议** - 允许搜索引擎在你键入搜索短语时建议站点。
@@ -61,7 +55,6 @@ ms.lasthandoff: 03/22/2018
 ## <a name="search"></a>搜索
 - **搜索位置** - 指定搜索是否可使用位置。 信息
 
-
 ## <a name="cloud-and-storage"></a>云和存储
 -   **Microsoft 帐户** - 使用户可以将 Microsoft 帐户与设备关联。
 
@@ -74,6 +67,24 @@ ms.lasthandoff: 03/22/2018
 ## <a name="control-panel-and-settings"></a>控制面板和设置
 
 - **系统时间修改** - 阻止最终用户更改设备日期和时间。
+
+## <a name="kiosk-preview"></a>展台（预览版）
+
+展台设备通常运行特定应用。 用户不得在该设备上访问除展台应用以外的任何功能。
+
+- **展台模式** - 标识策略支持的展台模式的类型。 选项包括：
+
+  - 未配置（默认）- 策略不启用展台模式。 
+  - **单应用展台** - 配置文件使设备仅运行一个应用。 用户登录时，将启动一个特定应用。 此模式还会限制用户打开新应用或更改正在运行的应用。
+
+#### <a name="single-app-kiosks"></a>单应用展台
+输入以下设置：
+
+- **用户帐户** - 输入与展台应用相关联的本地（对设备而言）用户帐户或 Azure AD 帐户登录名。 对于加入 Azure AD 域的帐户，请使用 `domain\username@tenant.org` 格式输入帐户。 
+
+    对于面向公众且启用自动登录的环境中的展台，应使用具有最低权限的用户类型（如本地标准用户帐户）。 若要针对展台模式配置 Azure Active Directory (AD) 帐户，请使用 `AzureAD\user@contoso.com` 格式。
+
+- **应用的应用程序用户模型 ID (AUMID)** - 输入展台应用的 AUMID。 若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
 
 ## <a name="reporting-and-telemetry"></a>报告和遥测
 

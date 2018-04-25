@@ -1,29 +1,29 @@
 ---
-title: "将应用与 MAM CA 结合使用"
-description: "了解 MAM CA 如何帮助控制有权访问 O365 服务的应用的概念。"
-keywords: 
+title: 将应用与 MAM CA 结合使用
+description: 了解 MAM CA 如何帮助控制有权访问 O365 服务的应用的概念。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2f313fcbfa26c8f82708f8f830404da97a3eca25
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>将应用与基于应用的 CA 结合使用时的预期行为
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 基于应用的 CA 会借助必须在设备上存在的代理应用来验证已批准的应用程序的标识：
 *  在 **iOS** 上，**Azure Authenticator 应用**是代理应用。
@@ -40,8 +40,8 @@ ms.lasthandoff: 10/10/2017
 
 > [!NOTE]
 > 在 Android 设备上：
-  * 必须在设备上安装公司门户应用，但最终用户不必登录到应用。
-  * 必须通过 OneDrive 或 Outlook 应用完成设备注册。
+>   * 必须在设备上安装公司门户应用，但最终用户不必登录到应用。
+>   * 必须通过 OneDrive 或 Outlook 应用完成设备注册。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>从 Azure AD 注册删除设备。
 可通过 Azure AD 管理控制台删除设备注册，IT 管理员通常采用此种方式。还可由最终用户在设备本身完成删除操作。
@@ -52,7 +52,7 @@ ms.lasthandoff: 10/10/2017
 
 ## <a name="app-based-ca-with-device-based-ca"></a>基于应用的 CA 和基于设备的 CA  
 
-可以在 [Intune 管理员控制台](https://manage.microsoft.com)或 [Azure AD Premium 管理控制台] (https://manage.windowsazure.com) 上配置[基于设备合规性的条件访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)（**设备 CA**）。 设备 CA 要求用户只能通过符合 Intune 设备合规性策略的 Intune 托管设备或已加入域的电脑连接到 Exchange Online。  如果用户属于针对基于应用的 CA 和设备 CA 策略的一个或多个安全组，则用户必须满足以下两个要求之一：
+可以在 [Intune 管理员控制台](https://manage.microsoft.com)或 [Azure AD Premium 管理控制台](https://manage.windowsazure.com)上配置[基于设备合规性的条件访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)（<strong>设备 CA</strong>）。 设备 CA 要求用户只能通过符合 Intune 设备合规性策略的 Intune 托管设备或已加入域的电脑连接到 Exchange Online。  如果用户属于针对基于应用的 CA 和设备 CA 策略的一个或多个安全组，则用户必须满足以下两个要求之一：
 * 用于访问服务的应用是支持的移动应用 
 * ，并且运行该应用的设备安装了 **iOS 身份验证器（适用于 iOS 设备）**或**公司门户应用（适用于 Android 设备）**。
 * 用于访问服务的设备是 **Intune 托管并符合** Intune 设备合规性策略，或者是**已加入域的电脑**。  下面是一些示例，可帮助说明这一点：

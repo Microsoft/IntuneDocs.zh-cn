@@ -1,32 +1,29 @@
 ---
-title: Microsoft Intune 设备符合性策略
-titleSuffix: ''
-description: 了解 Microsoft Intune 中的设备符合性
+title: Microsoft Intune 中的设备符合性策略 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中：使用设备符合性策略的要求，状态和严重性级别概述，使用 InGracePeriod 状态，使用条件访问，处理不具有分配策略的设备，以及 Azure 门户和经典门户中的符合性的差别
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Microsoft Intune 设备符合性策略入门
+# <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Intune 设备符合性策略定义设备必须遵从的规则和设置，以便该设备被视为符合 Intune。
-
-这些规则包括以下内容：
+符合性要求实质上是一系列规则，例如要求设备 PIN 或要求加密。 设备符合性策略定义设备必须遵从的以下规则和设置，以便设备被视为符合。 这些规则包括：
 
 - 使用密码来访问设备
 
@@ -38,13 +35,9 @@ Intune 设备符合性策略定义设备必须遵从的规则和设置，以便�
 
 - 允许的最高操作系统版本
 
-- 要求设备不高于移动威胁防御级别
+- 要求设备不高于 Mobile Threat Defense 级别
 
 也可使用设备符合性策略来监视设备的符合性状态。
-
-## <a name="device-compliance-requirements"></a>设备合规性要求
-
-合规性要求本质上是规则，如针对某个合规性策略，根据实际所需来要求是否指定设备 PIN 或加密。
 
 <!---### Actions for noncompliance
 
@@ -69,41 +62,34 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="pre-requisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
+使用设备符合性策略需要满足以下条件：
 
-需要具有以下订阅才能使用 Intune 设备符合性策略：
+- 使用以下订阅：
 
-- Intune
+  - Intune
+  - Azure Active Directory (AD) Premium
 
-- Azure AD 高级版
+- 使用支持的平台：
 
-###  <a name="supported-platforms"></a>受支持的平台：
+  - Android
+  - iOS
+  - macOS（预览）
+  - Windows 8.1
+  - Windows Phone 8.1
+  - Windows 10
 
--   Android
-
--   iOS
-
--   macOS（预览）
-
--   Windows 8.1
-
--   Windows Phone 8.1
-
--   Windows 10
-
-> [!IMPORTANT]
-> 设备必须注册到 Intune 才能报告其符合性状态。
+- 设备必须注册到 Intune 才能报告其符合性状态
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Intune 设备符合性策略如何与 Azure AD 配合使用
 
-当设备注册到 Intune 时，会发生 Azure AD 注册过程，这可将具有更多信息的设备属性更新到 Azure AD。 一个关键设备信息就是设备符合性状态，条件访问策略使用该状态阻止或允许访问电子邮件和其他公司资源。
+当设备注册到 Intune 时，Azure AD 注册过程会启动，这可将设备属性更新到 Azure AD。 设备符合性状态是一项关键信息。 条件访问策略使用该符合性状态阻止或允许访问电子邮件和其他公司资源。
 
-- 详细了解 [Azure AD 注册流程](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)。
+请参阅 [Azure AD 注册过程](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)了解详细信息。
 
-### <a name="assigning-a-resulting-device-configuration-profile-status"></a>分配生成的设备配置文件状态
+### <a name="assign-a-resulting-device-configuration-profile-status"></a>分配生成的设备配置文件状态
 
-如果向设备分配多个配置文件，且该设备分配到的两个或多个配置文件的符合性状态各不相同，则必须指定单个生成的符合性状态。 此分配基于向每个符合性状态指定的概念严重性级别。 每个符合性状态均包含以下严重性级别：
-
+如果设备具有多个配置文件，且该设备分配到的两个或多个配置文件的符合性状态各不相同，则系统会分配单个生成的符合性状态。 此分配基于向每个符合性状态指定的概念严重性级别。 每个符合性状态均包含以下严重性级别：
 
 |状态  |严重性  |
 |---------|---------|
@@ -112,22 +98,21 @@ Remember that you need to implement conditional access policies in addition to c
 |Failed     |3|
 |错误     |4|
 
-然后从分配给设备的所有配置文件中选择严重性级别最高的文件，以指定两个或多个配置文件的生成状态。
+设备具有多个配置文件时，系统会为该设备分配所有配置文件中的最高严重性级别。
 
-例如，假设设备分配到三个配置文件：一个处于“挂起”状态（严重性 = 1），一个处于“成功”状态（严重性 = 2），还有一个处于“错误”状态（严重性 = 4）。 “错误”状态具有最高严重性级别，因此其被指定为所有三个配置文件的生成符合性状态。
+例如，假设设备分配到三个配置文件：一个处于“挂起”状态（严重性 = 1），一个处于“成功”状态（严重性 = 2），还有一个处于“错误”状态（严重性 = 4）。 “错误”状态具有最高严重性级别，因此所有三个配置文件将具有“错误”符合性状态。
 
-### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>指定已分配符合性策略的 InGracePeriod 状态
+### <a name="assign-an-ingraceperiod-status"></a>分配 InGracePeriod 状态
 
-符合性策略的 InGracePeriod 状态值是通过组合已分配符合性策略的设备宽限期和设备实际状态来确定的。 
+符合性策略的 InGracePeriod 状态是一个值。 该值由设备的宽限期和设备针对该符合性策略的实际状态共同确定。
 
 具体而言，如果设备的已分配符合性策略为“不符合”状态，且：
 
-- 设备未分配到宽限期，则符合性策略的指定值为“不符合”。
-- 设备具有已到期的宽限期，则符合性策略的指定值为“不符合”。
-- 设备具有将来的宽限期，则符合性策略的指定值为“InGracePeriod”。
+- 设备未分配到宽限期，则符合性策略的指定值为“不符合”
+- 设备具有已到期的宽限期，则符合性策略的指定值为“不符合”
+- 设备具有将来的宽限期，则符合性策略的指定值为“InGracePeriod”
 
-下表概述了上述几点：
-
+下表概述了这些情况：
 
 |实际符合性状态|指定的宽限期的值|有效符合性状态|
 |---------|---------|---------|
@@ -137,9 +122,9 @@ Remember that you need to implement conditional access policies in addition to c
 
 有关监视设备符合性策略的详细信息，请参阅[监视 Intune 设备符合性策略](compliance-policy-monitor.md)。
 
-### <a name="assigning-a-resulting-compliance-policy-status"></a>指定生成符合性策略状态
+### <a name="assign-a-resulting-compliance-policy-status"></a>分配生成的符合性策略状态
 
-如果向设备分配多个符合性策略，且该设备分配到的两个或多个符合性策略的符合性状态各不相同，则必须指定单个生成的符合性状态。 此分配基于向每个符合性状态指定的概念严重性级别。 每个符合性状态均包含以下严重性级别： 
+如果设备具有多个符合性策略，且该设备分配到的两个或多个符合性策略的符合性状态各不相同，则系统会分配单个生成的符合性状态。 此分配基于向每个符合性状态指定的概念严重性级别。 每个符合性状态均包含以下严重性级别：
 
 |状态  |严重性  |
 |---------|---------|
@@ -150,49 +135,73 @@ Remember that you need to implement conditional access policies in addition to c
 |不符合|5|
 |错误|6|
 
-然后从分配给设备的所有策略中选择严重性级别最高的策略，以指定两个或多个符合性策略的生成状态。
- 
-例如，假设设备分配到三个符合性策略：一个处于“未知”状态（严重性 = 1），一个处于“符合”状态（严重性 = 3），还有一个处于 InGracePeriod 状态（严重性 = 4）。 InGracePeriod 状态具有最高严重性级别，因此将被指定为所有三个配置文件的生成符合性状态。  
+设备具有多个符合性策略时，系统会为该设备分配所有策略中的最高严重性级别。
 
-##  <a name="ways-to-use-device-compliance-policies"></a>使用设备符合性策略的方式
+例如，假设设备分配到三个符合性策略：一个处于“未知”状态（严重性 = 1），一个处于“符合”状态（严重性 = 3），还有一个处于 InGracePeriod 状态（严重性 = 4）。 InGracePeriod 状态具有最高严重性级别，因此所有三个策略将具有 InGracePeriod 符合性状态。
 
-### <a name="with-conditional-access"></a>使用条件访问
-可以将符合性策略与条件访问结合使用，以便只允许符合一个或多个设备符合性策略规则的设备访问电子邮件和其他公司资源。
+## <a name="ways-to-use-device-compliance-policies"></a>使用设备符合性策略的方式
 
-### <a name="without-conditional-access"></a>不使用条件访问
-还可以使用独立于条件访问的设备符合性策略。 独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，你可以获取有关未加密的设备数，或哪些设备已越狱或取得 root 权限的报告。 但是独立使用合规性策略时，不会实施对公司资源的访问限制。
+#### <a name="with-conditional-access"></a>使用条件访问
+对于符合策略规则的设备，可为这些设备提供访问电子邮件和其他公司资源的权限。 如果设备不符合策略规则，则无法获得访问公司资源的权限。 这就是条件访问。
 
-将合规性策略部署到用户。 将合规性策略部署到用户后，会对用户设备检查合规性。 若要了解策略部署完成后，移动设备需要多长时间获取策略，请参阅 [Microsoft Intune 中的设备配置文件疑难解答](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
+#### <a name="without-conditional-access"></a>不使用条件访问
+还可在不使用任何条件访问的情况下使用设备符合性策略。 独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，你可以获取有关未加密的设备数，或哪些设备已越狱或取得 root 权限的报告。 在不使用条件访问的情况下使用符合性策略时，公司资源将不具有访问限制。
 
-#### <a name="actions-for-non-compliance"></a>针对非符合性的操作
+## <a name="ways-to-deploy-device-compliance-policies"></a>部署设备符合性策略的方法
+可向用户组中的用户或设备组中的设备部署符合性策略。 将合规性策略部署到用户后，会对用户设备检查合规性。
 
-通过针对不符合设备的操作，可配置按时间顺序排列的操作序列，并将其应用到不满足符合性策略条件的设备。 有关详细信息，请参阅[针对不符合设备的自动操作](actions-for-noncompliance.md)。
+对于设备组中的设备，“符合性策略设置”（“Azure 门户”>“设备符合性”）包括
 
-##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>在 Intune 经典门户与 Azure 门户中使用设备符合性策略
+- **将未分配到符合性策略的设备标记为**：此属性具有两个值：
 
-请注意主要区别，以帮助用户在 Azure 门户中实现过渡到新的设备符合性策略的工作流。
+  - **符合**：安全功能关闭
+  - **不符合**（默认值）：安全功能开启
 
-- 在 Azure 门户中，合规性策略是针对每个受支持的平台单独创建的。
-- 在 Intune 经典门户中，一个设备符合性策略普遍适用于所有受支持的平台。
+  如果设备未分配到符合性策略，则此设备被视为不符合。 默认情况下，设备将被标记为“不符合”。 如果使用条件访问，建议保留默认设置“不符合”。 如果最终用户因未分配到策略而不符合，公司门户将显示`No compliance policies have been assigned`。
+
+- **增强型越狱检测**：启用后，此设置会导致 iOS 设备签入 Intune 的频率增加。 启用此属性将使用设备的位置服务，而且会影响电池的使用。 Intune 不会存储用户位置数据。
+
+  启用此设置要求设备：
+  - 在 OS 级别启用位置服务
+  - 允许公司门户使用位置服务
+  - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。
+
+- **符合性状态有效期(天)**：输入设备报告收到的所有符合性策略的状态的期限。 未在此时间段内返回状态的设备将被视为“不符合”。 默认值为 30 天。
+
+所有设备都具有“默认设备符合性策略”（“Azure 门户”>“设备符合性”>“策略符合性”）。 使用此默认策略监视这些设置。
+
+若要了解策略部署完成后，移动设备获取策略所用的时间，请参阅[设备配置文件疑难解答](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
+
+使用符合性报告是检查设备状态的有效方法。 对于相关指导，请参阅[监视符合性策略](compliance-policy-monitor.md)。
+
+### <a name="actions-for-noncompliance"></a>对不符合设备的操作
+可配置按时间顺序排列的操作序列，并将其应用到不满足符合性策略条件的设备。 这些不符合性操作可以自动完成，请参阅[自动执行不符合性操作](actions-for-noncompliance.md)中的说明。
+
+## <a name="azure-classic-portal-vs-azure-portal"></a>Azure 经典门户与 Azure 门户
+
+在 Azure 门户中使用设备符合性策略的主要区别：
+
+- 在 Azure 门户中，符合性策略针对每个受支持的平台单独创建
+- 在 Azure 经典门户中，一个设备符合性策略普遍适用于所有受支持的平台
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>将设备符合性策略从 Intune 经典门户迁移到 Azure 门户
+## <a name="device-compliance-policies-in-the-classic-portal-and-azure-portal"></a>经典门户和 Azure 门户中的设备符合性策略
 
-在 [Intune 经典门户](https://manage.microsoft.com)中创建的设备符合性策略不会出现在新的 [Intune Azure 门户](https://portal.azure.com)中。 但是，它们仍面向用户并且可以通过 Intune 经典门户进行管理。
+在[经典门户](https://manage.microsoft.com)中创建的设备符合性策略不会出现在 [Azure 门户](https://portal.azure.com)中。 但它们仍面向用户并且可以通过经典门户进行管理。
 
-如果想要利用 Azure 门户中新设备符合性相关的功能，需要在 Azure 门户中创建新的设备符合性策略。 如果在 Azure 门户中向某个用户分配新的设备符合性策略，但该用户同时还分配有 Intune 经典门户的设备符合性策略，则 Intune Azure 门户中的设备符合性策略优先于在 Intune 经典门户中创建的策略。
+要在 Azure 门户中使用设备符合性的相关功能，则必须在 Azure 门户中创建新的设备符合性策略。 如果在 Azure 门户中向某个用户分配设备符合性策略，但该用户同时还分配有经典门户的设备符合性策略，则 Azure 门户中的设备符合性策略优先于在经典门户中创建的策略。
 
-##  <a name="next-steps"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 
 - 为以下平台创建设备符合性策略：
 
-   - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
-   - [Android for Work](compliance-policy-create-android-for-work.md)
-   - [iOS](compliance-policy-create-ios.md)
-   - [macOS](compliance-policy-create-mac-os.md)
-   - [Windows](compliance-policy-create-windows.md)
+  - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
+  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [iOS](compliance-policy-create-ios.md)
+  - [macOS](compliance-policy-create-mac-os.md)
+  - [Windows](compliance-policy-create-windows.md)
 
 - 有关 Intune 数据仓库策略实体的信息，请参阅[策略实体引用](reports-ref-policy.md)。

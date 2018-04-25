@@ -1,25 +1,25 @@
 ---
-title: "需要在 iOS 设备上安装 Lookout for Work | Microsoft Docs"
-description: "了解如何安装适用于 iOS 的 Lookout for Work。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 需要在 iOS 设备上安装 Lookout for Work | Microsoft Docs
+description: 了解如何安装适用于 iOS 的 Lookout for Work。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae05df1478baa8b965cdcd11a47ffc0d694734ab
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fda95e461fe8412b26289bc601d8282588cd211c
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>在 iOS 设备上安装 Lookout for Work
 
@@ -31,15 +31,15 @@ ms.lasthandoff: 01/25/2018
 
 1.  如果看到以下提示，请点击“安装”允许在设备上安装 Lookout for Work。
 
-  ![点击“安装”以安装 Lookout for Work](./media/ios-mtd-install-app-request.png)
+      ![应用安装提示的屏幕截图，其中显示了“取消”和“安装”按钮。](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
 2. 看到以下消息时，请点击“设置”，打开“定位服务”，然后点击“继续”。
 
-  ![依次点击“设置”、“定位服务”](./media/ios-lfw-allow-location-services.png)
+      ![依次点击“设置”、“定位服务”](./media/ios-lfw-allow-location-services.png)
 
 3. 查看 Lookout for Work 所需的权限，然后点击“继续”。
 
-  ![现已连接到 Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
+      ![现已连接到 Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. 提示要求允许 Lookout for Work 发送通知时，请点击“允许”。
 

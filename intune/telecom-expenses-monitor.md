@@ -1,28 +1,28 @@
 ---
-title: "设置电信费用管理服务"
+title: 设置电信费用管理服务
 titleSuffix: Microsoft Intune
-description: "将 Intune 与 Saaswedo 电信费用管理服务相集成。"
+description: 将 Intune 与 Saaswedo 电信费用管理服务相集成。
 keywords: Saaswedo
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef755a1fd5f94342f551ac168136217dbc82b244
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: af81b4cca369cae69cff6ea52bb5df9ce369cd7f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 借助 Intune，可管理企业拥有的移动设备上数据使用产生的电信费用。 为启用此功能，Intune 已集成第三方软件开发商 Saaswedo 的 Datalert 电信费用管理解决方案。 Datalert 是实时电信费用管理软件，使你能够管理电信数据使用情况。 它可帮助避免你的 Intune 托管设备产生成本高昂的超额意外数据和漫游量。
 
@@ -72,7 +72,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
     以下屏幕截图显示连接成功后可以看到的绿色复选标记。
 
-  ![显示连接成功的 Datalert 页面](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![显示连接成功的 Datalert 页面](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>步骤 2：检查电信费用管理功能在 Intune 中是否处于活动状态
 
@@ -88,7 +88,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
    在页面顶部查找“活动”连接状态。
 
-  ![显示 Datalert 连接状态为“活动”的 Intune 页面](./media/tem-azure-portal-enable-service.png)
+   ![显示 Datalert 连接状态为“活动”的 Intune 页面](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>步骤 3：将 Datalert 应用部署到企业注册的设备
 
@@ -136,13 +136,13 @@ Intune 目前与下列电信费用管理提供商集成：
 
 4. 选择对于该组要将应用安装设置为必需还是可选。 以下示例屏幕截图显示该安装为“必需”，这意味着用户注册其设备后必须安装 Datalert 应用。
 
-  ![“添加策略”窗格的屏幕截图](./media/tem-assign-datalert-app-to-device-group.png)
+   ![“添加策略”窗格的屏幕截图](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>步骤 4：将公司付费电话线路添加到 Datalert 控制台
 
 现已配置 Intune 和 Datalert 服务以彼此进行通信。 现需将公司付费电话线路添加到 Datalert 控制台，并为任何手机网络或漫游使用冲突定义阈值和操作。 可以将公司付费的电话线路手动添加到 Datalert 控制台，或者在 Intune 中注册设备后可以自动添加这些线路。
 
-若要设置这些项，请转到[适用于 Microsoft Intune 的 Datalert 设置页面](http://www.datalert.fr/microsoft-intune/intune-setup)(http://www.datalert.fr/microsoft-intune/intune-setup)，然后按照“设置”选项卡下的设置向导中的步骤操作。
+若要设置这些项，请转到[适用于 Microsoft Intune 的 Datalert 设置页面](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup))，然后按照“设置”选项卡下的设置向导中的步骤操作。
 
   ![“添加策略”窗格的屏幕截图](./media/tem-add-phone-lines-to-datalert-console.png)
 

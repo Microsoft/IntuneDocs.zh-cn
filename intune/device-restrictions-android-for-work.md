@@ -2,8 +2,8 @@
 title: Microsoft Intune 中 Android for Work 的设备限制 - Azure | Microsoft Docs
 description: 在运行 Android for Work 的设备上，可以限制设备上的某些设置，包括复制并粘贴、显示通知、应用权限、数据共享、密码长度、登录失败、使用指纹解锁、重复使用密码以及启用工作联系人蓝牙共享。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c155817e0bc9df00087908a86fcfcb675fa0ad97
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 中的工作设备限制设置
 
 本文列出了可为运行 Android for Work 的设备配置的所有 Microsoft Intune 设备限制设置。
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>工作配置文件设置
 
@@ -48,6 +48,8 @@ ms.lasthandoff: 03/23/2018
    防止最终用户手动添加或删除工作配置文件中的帐户。
 
    例如，将 Gmail 应用部署到 Android for Work 配置文件时，可以防止最终用户添加或删除此工作配置文件中的帐户。
+
+- **通过蓝牙共享联系人**：能从汽车等使用蓝牙配对的其他设备访问工作联系人。 默认情况下未配置此设置，并且不会显示 Work 配置文件联系人。 如需允许共享并显示 Work 配置文件联系人，请选择“启用”。 Android OS v6.0 和更高版本的 Android for Work 配置文件设备上提供此设置。
 
 ### <a name="work-profile-password"></a>工作配置文件密码
 

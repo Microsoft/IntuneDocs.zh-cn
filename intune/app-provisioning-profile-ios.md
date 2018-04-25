@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune 中的 iOS 应用预配配置文件"
-titlesuffix: 
-description: "Intune 提供了一些工具，用于将新的预配配置文件主动分配到安装了即将到期应用的设备。"
-keywords: 
+title: Microsoft Intune 中的 iOS 应用预配配置文件
+titlesuffix: ''
+description: Intune 提供了一些工具，用于将新的预配配置文件主动分配到安装了即将到期应用的设备。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87d97ddd4c70236193d4e6bb12ac6d68e4085903
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6394af9affd5087aaf26489be4b49e84568d6e1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>使用 Intune 中的 iOS 移动预配配置文件来防止应用过期
+# <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 应用预配配置文件防止应用过期
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>简介
 
@@ -36,11 +36,12 @@ ms.lasthandoff: 03/08/2018
 用于签署应用的企业签名证书通常持续三年。 但是，预配配置文件在 1 年后过期。 使用 Intune 对拥有即将过期（但证书仍然有效）应用的设备主动分配新的预配配置文件。
 证书过期后，必须使用新证书再次对应用进行签名，并使用新证书的密钥嵌入新的预配配置。
 
+管理员可以将某些安全组包含在分配 iOS 应用预配配置的范围内，或将其排除在外。 例如，可以将 iOS 应用预配配置分配给“所有用户”，但将高级管理人员组排除在外。
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>如何创建 iOS 移动应用预配配置文件
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在 Intune 窗格中，选择“移动应用”。
 1.  在“移动应用”工作负荷中，选择“管理” > “iOS 应用预配配置文件”。
 2.  在配置文件列表窗格中，选择“创建配置文件”。

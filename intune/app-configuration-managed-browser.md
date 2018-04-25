@@ -15,15 +15,15 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Managed Browser 是一款 Web 浏览应用，可以从公共应用商店中下载它以供组织使用。 通过 Intune 配置时，Managed Browser 可以：
 - 用于通过 MyApps 服务进行单一登录来访问公司网站和 SaaS 应用，并保护 Web 数据。
@@ -91,6 +91,8 @@ Managed Browser 现为条件访问的核准客户端应用。 这意味着可以
 9. 在“分配”部分，选择“云应用”，选择要使用此策略保护的应用。
 
 配置以上策略后，会强制要求用户使用 Intune Managed Browser 访问已通过此策略保护的 Azure AD 连接的 Web 应用。 如果用户尝试在此方案中使用非管理的浏览器，用户会看到一则通知，指示必须改用 Intune Managed Browser。
+
+Managed Browser 不支持经典条件访问策略。 有关详细信息，请参阅[在 Azure 门户中迁移经典策略](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。
 
 ##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>在 Intune Managed Browser 中单一登录到 Azure AD 连接的 Web 应用
 
@@ -164,11 +166,11 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 使用此设置可配置用户启动 Managed Browser 或创建新选项卡时看到的主页。使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
-|||
-|-|-|
-|Key|值|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例：https://www.bing.com|
 
+|                                                                   |                                                                                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+|                                Key                                |                                                           值                                                            |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例：<https://www.bing.com> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>如何配置 Managed Browser 的书签
 
@@ -180,19 +182,21 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
-|||
-|-|-|
-|Key|值|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 **&#124;** 分隔标题和 URL。<br><br>示例：Microsoft 必应&#124;https://www.bing.com<br><br>若要配置多个书签，可使用双字符 **&#124;&#124;** 分隔每对书签<br><br>示例：必应&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com|
+
+|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                Key                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 <strong>&#124;</strong> 分隔标题和 URL。<br><br>示例：Microsoft 必应&#124;<https://www.bing.com><br><br>若要配置多个书签，可使用双字符 <strong>&#124;&#124;</strong> 分隔每对书签<br><br>示例：必应&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>如何为 Managed Browser 指定允许和阻止的 URL
 
 使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
-|||
-|-|-|
-|Key|值|
-|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>URL1&#124;URL2&#124;URL3<br>http://.contoso.com/&#124;https://.bing.com/&#124;https://expenses.contoso.com|
+
+|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                               Key                                                                                                                                                                |                                                                                                                                                                                    值                                                                                                                                                                                    |
+| 选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：<strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | 键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 <strong>&#124;</strong> 分隔。<br><br>示例：<br><br>URL1&#124;URL2&#124;URL3<br>http://.contoso.com/&#124;https://.bing.com/&#124;<https://expenses.contoso.com> |
 
 >[!IMPORTANT]
 >不要同时指定这两个键。 如果两个键同时针对同一个用户，则使用允许键，因为它是限制性最强的选项。
@@ -201,52 +205,52 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>允许的 URL 和阻止的 URL 的格式
 使用以下信息来了解有关指定允许和阻止列表中的 URL 时允许使用的格式和通配符：
 
--   可以根据以下允许模式列表中的规则使用通配符 (**&#42;**)：
+- 可以根据以下允许模式列表中的规则使用通配符 (**&#42;**)：
 
--   在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
+- 在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
 
--   可以在地址中指定端口号。 如果未指定端口号，则使用以下值：
+- 可以在地址中指定端口号。 如果未指定端口号，则使用以下值：
 
-    -   对于 http，使用端口 80
+  -   对于 http，使用端口 80
 
-    -   对于 https，使用端口 443
+  -   对于 https，使用端口 443
 
-    不支持对端口号使用通配符。 例如，不支持 http&colon;//www&period;contoso&period;com:*; 和 http&colon;//www&period;contoso&period;com: /*;。
+  不支持对端口号使用通配符。 例如，不支持 <strong>http&colon;//www&period;contoso&period;com:*;</strong> 和 <strong>http&colon;//www&period;contoso&period;com: /*;</strong>。
 
--   使用下表了解指定 URL 时可以使用的允许模式：
+- 使用下表了解指定 URL 时可以使用的允许模式：
 
-|URL|详细信息|匹配|不匹配|
-|-------|---------------|-----------|------------------|
-|http://www.contoso.com|匹配单个页面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-|http://contoso.com|匹配单个页面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42；|匹配以 www.contoso.com 开头的所有 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-|http://&#42;.contoso.com/&#42;|匹配 contoso.com 下的所有子域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-|http://www.contoso.com/images|匹配单个文件夹|www.contoso.com/images|www.contoso.com/images/dogs|
-|http://www.contoso.com:80|匹配单个页面（使用端口号）|http://www.contoso.com:80|
-|https://www.contoso.com|匹配单个安全页面|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42；|匹配单个文件夹和所有子文件夹|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     详细信息                      |                                                匹配                                                |                                不匹配                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              匹配单个页面               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              匹配单个页面               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>；     | 匹配以 www.contoso.com 开头的所有 URL |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     匹配 contoso.com 下的所有子域     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             匹配单个文件夹              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  匹配单个页面（使用端口号）   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          匹配单个安全页面           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>； |    匹配单个文件夹和所有子文件夹    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   以下是一些你不能指定的输入的示例：
+- 以下是一些你不能指定的输入的示例：
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP 地址
+  - IP 地址
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42；
+  - http://www.contoso.com:&#42；
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用 Managed Browser 访问托管应用日志
 

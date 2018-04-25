@@ -1,27 +1,27 @@
 ---
-title: "适用于 Windows Phone 8.1 设备的 Microsoft Intune VPN 设置"
-titleSuffix: 
-description: "了解可用于在运行 Windows Phone 8.1 的设备上配置 VPN 连接的 Intune 设置。"
-keywords: 
+title: 适用于 Windows Phone 8.1 设备的 Microsoft Intune VPN 设置
+titleSuffix: ''
+description: 了解可用于在运行 Windows Phone 8.1 的设备上配置 VPN 连接的 Intune 设置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 786a817fbbd821d74f4f1a03fdec5a6893ed890b
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 458586a2d507e913eb702c0ee2e3c0531350f1b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>在 Microsoft Intune 中为运行 Windows Phone 8.1 的设备配置 VPN 设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍可用于在运行 Windows Phone 8.1 的设备上配置 VPN 连接的 Intune 设置。
 
@@ -49,14 +49,14 @@ ms.lasthandoff: 03/12/2018
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **SonicWall Mobile Connect**
-    -  **F5 Edge Client**
+    - **F5 Edge Client**
     - **Pulse Secure**
 
 - **登录组或域**（仅限 SonicWall Mobile Connect）- 指定要连接到的登录组或域的名称。
 - **角色**（仅限 Pulse Secure）- 指定有权访问此连接的用户角色的名称。 用户角色用于定义个人设置和选项，并启用或禁用某些访问功能。
 - **领域**（仅限 Pulse Secure）- 指定想要使用的身份验证领域的名称。 身份验证领域是“Pulse Secure”连接类型使用的身份验证资源的分组。
 
-- “DNS 后缀搜索列表” - “添加”一个或多个 DNS 后缀。 通过使用短名称连接到网站时，会搜索你指定的每个 DNS 后缀。 例如，指定 DNS 后缀 **domain1.contoso.com** 和 **domain2.contoso.com**，访问 URL **http://mywebsite**，并且将搜索 URL **http://mywebsite.domain1.contoso.com** 和 **http://mywebsite.domain2.contoso.com**。
+- “DNS 后缀搜索列表” - “添加”一个或多个 DNS 后缀。 通过使用短名称连接到网站时，会搜索你指定的每个 DNS 后缀。 例如，指定 DNS 后缀“domain1.contoso.com”和“domain2.contoso.com”后，访问 URL http://mywebsite 时，会搜索 URL http://mywebsite.domain1.contoso.com 和 http://mywebsite.domain2.contoso.com。
 
 - **自定义 XML** - 指定配置 VPN 连接的任何自定义 XML 命令。
 
@@ -64,7 +64,6 @@ ms.lasthandoff: 03/12/2018
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **CheckPoint Mobile VPN 的示例：**
@@ -76,13 +75,11 @@ ms.lasthandoff: 03/12/2018
 **SonicWall Mobile Connect 的示例：**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **F5 Edge Client 的示例：**
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 有关如何编写自定义 XML 命令的详细信息，请参阅每个制造商 VPN 文档。
@@ -95,7 +92,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="proxy-settings"></a>代理设置
 
 - **自动检测代理设置** - 如果 VPN 服务器要求使用代理服务器进行连接，请指定是否希望设备自动检测连接设置。 有关详细信息，请参阅 Windows Server 文档。
-- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的**代理服务器 URL**（例如 **http://proxy.contoso.com**）。
+- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL（例如 http://proxy.contoso.com）。
 - **使用代理服务器** - 如果想要手动输入代理服务器设置则启用此选项。
     - **地址** - 输入代理服务器地址（作为 IP 地址）。
     - **端口号** - 输入与代理服务器关联的端口号。

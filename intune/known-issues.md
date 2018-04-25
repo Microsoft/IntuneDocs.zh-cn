@@ -1,37 +1,35 @@
 ---
-title: "Microsoft Intune 中的已知问题"
-titlesuffix: Microsoft Intune
-description: "阅读 Microsoft Intune 中的已知问题。"
-keywords: 
+title: Microsoft Intune 中的已知问题 - Azure | Microsoft Docs
+description: 阅读 Microsoft Intune 中的已知问题。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 03/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02efc7e2369c590e2d21ac8c27db54ffbaae38c1
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-
-使用本主题了解 Microsoft Intune 中的任何已知问题。
+通过本文了解 Microsoft Intune 中的任何已知问题。
 
 如果要报告此处未列出的 bug，请[打开支持请求](get-support.md)。
 
-如果要为 Intune 请求新功能，可以考虑在我们的 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 网站上提交报告。
+如果要为 Intune 请求新功能，可以考虑在 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 网站上提交报告。
 
 ## <a name="migration"></a>迁移
 
@@ -45,12 +43,12 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>迁移策略的状态边栏选项卡不起作用
 
-你无法查看从 Azure 门户中的经典门户中迁移的策略的状态信息。 但可以继续在经典门户中查看这些策略的报表。 若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
+你无法查看从 Azure 门户中的 Azure 经典门户中迁移的策略的状态信息。 但可以继续在经典门户中查看这些策略的报表。 若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
 
 ## <a name="apps"></a>应用
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>仅适用于默认 Intune 租户语言的 iOS 批量采购应用
-会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户账户国家/区域代码相同的的应用。 例如，如果要购买仅可通过美国商店获得的应用，但 Intune 帐户所在地区为德国，则 Intune 不会显示该应用。
+会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户帐户国家/区域代码相同的应用。 例如，如果要购买的应用只在美国商店提供，但 Intune 帐户所在地区为德国，则 Intune 不会显示该应用。
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>会上传同一 iOS 批量采购计划的多个副本
 不要为相同的 VPP 令牌多次单击“上传”按钮。 这将导致上传重复的 VPP 令牌，并导致应用针对同一 VPP 令牌发生多次同步。
@@ -66,9 +64,8 @@ ms.lasthandoff: 03/12/2018
 如果你添加了其他域（使用“高级设置” > “网络外围” > “添加受保护的域”），则你无法保存策略。 你看到的错误消息将会更改为更准确的消息。
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN 客户端支持
+最新版本的 Cisco AnyConnect VPN 客户端 (4.0.07072) 目前与 Intune 不兼容。 将来的 Intune 更新将提供与此 VPN 客户端版本的兼容性。 在此之前，建议不更新 Cisco AnyConnect VPN 客户端，并继续使用现有版本。
 
-最新版本的 Cisco AnyConnect VPN 客户端 (4.0.07072) 目前与 Intune 不兼容。
-将来的 Intune 更新将提供与此 VPN 客户端版本的兼容性。 在此之前，建议不更新 Cisco AnyConnect VPN 客户端，并继续使用现有版本。
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>对 macOS Sierra 设备使用数字密码类型
 

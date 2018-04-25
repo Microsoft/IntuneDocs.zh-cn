@@ -1,28 +1,28 @@
 ---
-title: "适用于 iOS 设备的 Microsoft Intune Web 内容筛选器设置"
-titlesuffix: 
-description: "了解哪些 Microsoft Intune 设置可用于允许和阻止运行 iOS 的设备访问网站。"
-keywords: 
+title: 适用于 iOS 设备的 Microsoft Intune Web 内容筛选器设置
+titlesuffix: ''
+description: 了解哪些 Microsoft Intune 设置可用于允许和阻止运行 iOS 的设备访问网站。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>适用于 iOS 设备的 Web 内容筛选器设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍一些 Microsoft Intune 设置，它们可用于控制运行 iOS 的设备对浏览器 URL 的访问。
 
@@ -57,13 +57,13 @@ ms.lasthandoff: 03/08/2018
 ## <a name="specific-websites-only"></a>仅限特定的网站
 
 1. 在“Web 内容筛选器”窗格上，针对要允许的每个网站配置以下设置：
-    - **URL** - 输入想要允许的网站的 URL，例如 **http://www.contoso.com**。
+    - **URL** - 输入想要允许的网站的 URL，例如 http://www.contoso.com。
     - **书签路径** - 输入想要存储书签的路径，例如 **/Contoso/Business Apps**。 如不添加路径，则书签将被添加到设备上的默认书签文件夹中。
     - **标题** - 为书签输入描述性的标题。
 2. 为每个网站输入完信息后，单击“添加”。
 3. 完成后单击“确定” 。
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Intune 自动允许以下 URL。
 > - www.microsoft.com
 > - www.microsoft.net

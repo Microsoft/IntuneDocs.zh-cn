@@ -1,28 +1,28 @@
 ---
-title: "适用于 Android 的 Microsoft Intune 设备限制设置"
-titlesuffix: 
-description: "了解可用来控制运行 Android 的设备上的设备设置和功能的 Intune 设置。"
-keywords: 
+title: 适用于 Android 的 Microsoft Intune 设备限制设置
+titlesuffix: ''
+description: 了解可用来控制运行 Android 的设备上的设备设置和功能的 Intune 设置。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 77942ef6a5f25708ce43910cde94133e174b4731
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 和 Samsung Knox Standard 设备限制设置 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍可为运行 Android 的设备配置的所有 Microsoft Intune 设备限制设置。
 
@@ -93,7 +93,7 @@ ms.lasthandoff: 03/08/2018
 
 打开应用的安装页面，然后将 URL 复制到剪贴板。 你现在可以在符合或不符合要求的应用列表中使用这个 URL。
 
-示例：在 [Google Play 的“应用”部分](https://play.google.com/store/apps)搜索“Microsoft Planner”。 使用 URL：https://play.google.com/store/apps/details?id=com.microsoft.planner。
+示例：在 [Google Play 的“应用”部分](https://play.google.com/store/apps)搜索“Microsoft Planner”。 使用以下 URL：https://play.google.com/store/apps/details?id=com.microsoft.planner。
 
 ### <a name="additional-options"></a>其他选项
 
