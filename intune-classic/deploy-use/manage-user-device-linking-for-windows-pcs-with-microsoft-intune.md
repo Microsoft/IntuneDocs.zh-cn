@@ -1,28 +1,28 @@
 ---
-title: "管理 Windows 电脑的用户设备链接"
-description: "如何将用户链接到 Intune 管理的 Windows 电脑。"
-keywords: 
+title: 管理 Windows 电脑的用户设备链接
+description: 如何将用户链接到 Intune 管理的 Windows 电脑。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 53c99d63-c312-442a-8a71-de1b10fcd39b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de995840eb33c165824d2fccd135377ea6c7ad56
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 751355c34fc18cd9a1ededd498724d4652fc1368
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>管理 Windows 电脑的用户设备链接
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 
 
@@ -30,19 +30,19 @@ ms.lasthandoff: 10/10/2017
 
 若要将用户链接到计算机：
 
-1.  在[Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含需链接到用户的计算机的另一个组）。
+1. 在[Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含需链接到用户的计算机的另一个组）。
 
-2.  选择要链接用户的计算机，然后选择“链接用户”。
+2. 选择要链接用户的计算机，然后选择“链接用户”。
 
-    “链接用户”对话框显示可用用户的列表、其显示名称、用户 ID 和每个用户当前链接到的计算机的数量。 如果用户已链接到所选计算机，则该用户的名称和用户 ID 会显示在“当前用户”下面。 如果计算机未链接到任何用户，则“当前用户”下面将显示“无用户”。
+   “链接用户”对话框显示可用用户的列表、其显示名称、用户 ID 和每个用户当前链接到的计算机的数量。 如果用户已链接到所选计算机，则该用户的名称和用户 ID 会显示在“当前用户”下面。 如果计算机未链接到任何用户，则“当前用户”下面将显示“无用户”。
 
-3.  执行以下操作之一：
+3. 执行以下操作之一：
 
-    -   若要使计算机与其当前用户（如果存在当前用户）链接，请选择“取消”。
+   - 若要使计算机与其当前用户（如果存在当前用户）链接，请选择“取消”。
 
-    -   若要删除指向当前用户的链接（如果有），请选择“删除链接”&gt;“确定”。
+   - 若要删除指向当前用户的链接（如果有），请选择“删除链接”&gt;“确定”。
 
-    -   若要将计算机链接到新用户，请在“所有用户”列表中，选择用户。 确认用户数据正确，然后选择**确定**。
+   - 若要将计算机链接到新用户，请在“所有用户”列表中，选择用户。 确认用户数据正确，然后选择**确定**。
 
 > [!TIP]
 > 如果想要限制最终用户将自己链接到计算机的能力，则启用“Microsoft Intune 代理设置”策略中的“限制用户将自己链接到计算机的能力”选项。

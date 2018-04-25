@@ -15,15 +15,15 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 833f37808d7315de9d7e3782bae26bab67a2cde7
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 5532e00f90702b820ec5bed6bf2fdb3d5e9d37df
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>用户界面临时差异
@@ -68,16 +68,20 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 > [!NOTE]
 > 如果在迁移到 Azure 前从 Intune 经典门户删除了令牌，Intune 可能会还原已删除的 Apple DEP 令牌。 可在 Azure 门户中再次删除 DEP 令牌。 可在 Azure 门户中再次删除 DEP 令牌。
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>步骤 1。 下载创建令牌所需的 Intune 公钥证书。
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>步骤 1： 下载创建令牌所需的 Intune 公钥证书。
 
 1. 在 Azure 门户的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划令牌” > “添加”。
 
     ![获取注册计划令牌。](./media/device-enrollment-program-enroll-ios/image01.png)
 
-2. 选择“下载公钥”，将加密密钥 (.pem) 文件下载到本地并保存。 .pem 文件用于从 Apple 设备注册计划门户请求信任关系证书。
-  ![Apple 证书工作区中用于下载公钥的“注册计划令牌”窗格的屏幕截图。](./media/device-enrollment-program-enroll-ios/image02.png)
+2. 选择“我同意”，为 Microsoft 授予向 Apple 发送用户和设备信息的权限。
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>步骤 2。 使用密钥从 Apple 下载令牌。
+   ![Apple 证书工作区中用于下载公钥的“注册计划令牌”窗格的屏幕截图。](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
+
+3. 选择“下载公钥”，将加密密钥 (.pem) 文件下载到本地并保存。 .pem 文件用于从 Apple 设备注册计划门户请求信任关系证书。
+
+
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>步骤 2： 使用密钥从 Apple 下载令牌。
 
 1. 选择“创建 Apple 设备注册计划令牌”，以打开 Apple 部署计划门户，并使用公司 Apple ID 登录。 可使用此 Apple ID 续订 DEP 令牌。
 2.  在 Apple [部署计划门户](https://deploy.apple.com)中，对“设备注册计划”选择“开始”。
@@ -99,13 +103,13 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
    在 Apple 门户中，转到“部署计划”&gt;“设备注册计划”&gt;“查看分配历史记录”，以查看设备及其 MDM 服务器分配的列表。
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步骤 3. 保存用于创建此令牌的 Apple ID。
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步骤 3： 保存用于创建此令牌的 Apple ID。
 
 在 Azure 门户中的 Intune 中，提供 Apple ID 供未来参考。
 
 ![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>步骤 4. 上传令牌。
+### <a name="step-4-upload-your-token"></a>步骤 4： 上传令牌。
 在“Apple 令牌”框中，浏览到证书 (.pem) 文件，选择“打开”，然后选择“创建”。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。 Intune 会自动与 Apple 同步以查看你的注册计划帐户。
 
 ## <a name="create-an-apple-enrollment-profile"></a>创建 Apple 注册配置文件
@@ -135,12 +139,12 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
     将通过两种方式通知用户他们的设备受到监督：
 
-    - 锁屏界面显示“此 iPhone 由 Contoso 托管”。
-    - “设置” > “常规” > “关于”屏幕上显示“此 iPhone 受监督”。 Contoso 可以监视你的 Internet 流量并找到此设备。”
+   - 锁屏界面显示“此 iPhone 由 Contoso 托管”。
+   - “设置” > “常规” > “关于”屏幕上显示“此 iPhone 受监督”。 Contoso 可以监视你的 Internet 流量并找到此设备。”
 
      > [!NOTE]
      > 不受监督的注册设备只能使用 Apple Configurator 重置为受监督。 以此方式重置设备需要使用 USB 线将 iOS 设备连接到 Mac。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。
-     
+
 7. 选择是否要为使用此配置文件的设备锁定注册。 “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。 
 
 8. 选择是否要让使用此配置文件的设备能够“与计算机同步”。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
@@ -151,21 +155,23 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 11. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
 
-    | Setting | 描述 |
-    | --- | --- |
-    | **部门名称** | 用户在激活过程中轻点“关于配置”时显示。 |
-    | **部门电话** | 用户在激活过程中单击“需要帮助”按钮时显示。 |
-    | **设置助理选项** | 这些可选设置可以稍后在 iOS 的“设置”菜单中设置。 |
-    | **密码** | 在激活过程中提示输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
-    | **位置服务** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **还原** | 如果启用，在激活过程中设置助理会提示进行 iCloud 备份。 |
-    | **iCloud 和 Apple ID** | 如果启用，设置助理会提示用户登录 Apple ID，“应用和数据”屏幕将允许从 iCloud 备份还原设备。 |
-    | **条款和条件** | 如果启用，在激活过程中设置助理会提示用户接受 Apple 的条款和条件。 |
-    | **Touch ID** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **Apple Pay** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **缩放** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **Siri** | 如果启用，在激活过程中设置助理会提示此服务。 |
-    | **诊断数据** | 如果启用，在激活过程中设置助理会提示此服务。 |
+
+    |                 设置                  |                                                                                               描述                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>部门名称</strong>     |                                                             用户在激活过程中轻点“关于配置”时显示。                                                              |
+    |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。                                                          |
+    | <strong>设置助理选项</strong> |                                                     这些可选设置可以稍后在 iOS 的“设置”菜单中设置。                                                      |
+    |        <strong>密码</strong>         | 在激活过程中提示输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
+    |    <strong>位置服务</strong>    |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                  |
+    |         <strong>还原</strong>         |                                                                如果启用，在激活过程中设置助理会提示进行 iCloud 备份。                                                                 |
+    |   <strong>iCloud 和 Apple ID</strong>   |                         如果启用，设置助理会提示用户登录 Apple ID，“应用和数据”屏幕将允许从 iCloud 备份还原设备。                         |
+    |  <strong>条款和条件</strong>   |                                                   如果启用，在激活过程中设置助理会提示用户接受 Apple 的条款和条件。                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |          <strong>缩放</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |          <strong>Siri</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |     <strong>诊断数据</strong>     |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+
 
 12. 选择“确定”。
 
@@ -175,11 +181,11 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步，以在 Azure 门户的 Intune 中查看托管设备。
 
 1. 在 Azure 门户的 Intune 中，选择“设备注册”>“Apple 注册”>“注册计划令牌”> 在列表中选择令牌 >“设备”>“同步”。![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/device-enrollment-program-enroll-ios/image06.png)
-  
-  为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
-  - 每七天只能运行一次完全同步。 在完全同步期间，Intune 将刷新分配给 Intune 的每一个 Apple 序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
-  - 任何同步请求都在 15 分钟内完成。 在此期间或在请求成功之前，“同步”按钮处于禁用状态。
-  - Intune 每 24 小时与 Apple 同步一次新设备及已删除设备。
+
+   为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
+   - 每七天只能运行一次完全同步。 在完全同步期间，Intune 将刷新分配给 Intune 的每一个 Apple 序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
+   - 任何同步请求都在 15 分钟内完成。 在此期间或在请求成功之前，“同步”按钮处于禁用状态。
+   - Intune 每 24 小时与 Apple 同步一次新设备及已删除设备。
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>将注册配置文件分配到设备
 必须先向设备分配注册计划配置文件才能注册他们。

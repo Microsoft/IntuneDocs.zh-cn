@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: aed2bec6e6fea40fdbd78bc487896d167d036f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 在 Microsoft Intune 公司门户中，用户可以访问公司数据和执行常见任务，比如注册设备、安装应用，以及查找信息以从 IT 部门获得帮助。        
 
@@ -36,14 +36,14 @@ ms.lasthandoff: 03/23/2018
 公司名称显示为公司门户的标题。 联系人信息和详细信息将在公司门户的“联系 IT 部门”屏幕中向用户显示。 当用户单击隐私链接时，将显示隐私声明。        
 
 
-|字段名称|最大长度|更多信息|        
-|-|-|-|     
-|**公司名称**|40|此名称显示为公司门户的标题。|        
-|**IT 部门联系人姓名**|40|此名称显示在“联系 IT”页上。|      
-|**IT 部门的电话号码**|20|此联系人号码显示在“联系 IT”页上。|        
-|**IT 部门的电子邮件地址**|40|此联系人地址显示在“联系 IT”页上。 必须以 **alias@domainname.com** 格式输入有效的电子邮件地址。|     
-|**其他信息**|120|显示在“联系 IT”页上。|      
-|**公司隐私声明 URL**|79|你可以指定自己的公司隐私声明，当用户从公司门户中单击隐私链接时，该隐私声明将出现。 你必须以 https://www.contoso.com 格式输入有效的 URL。|        
+|                   字段名称                   | 最大长度 |                                                                                                 更多信息                                                                                                 |
+|------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         <strong>公司名称</strong>          |     40     |                                                                            此名称显示为公司门户的标题。                                                                            |
+|  <strong>IT 部门联系人姓名</strong>   |     40     |                                                                         此名称显示在“联系 IT”页上。                                                                          |
+|  <strong>IT 部门的电话号码</strong>   |     20     |                                                                    此联系人号码显示在“联系 IT”页上。                                                                     |
+|  <strong>IT 部门的电子邮件地址</strong>  |     40     |                       此联系人地址显示在“联系 IT”页上。 必须以 <strong>alias@domainname.com</strong> 格式输入有效的电子邮件地址。                       |
+|    <strong>其他信息</strong>     |    120     |                                                                                显示在“联系 IT”页上。                                                                                |
+| <strong>公司隐私声明 URL</strong> |     79     | 你可以指定自己的公司隐私声明，当用户从公司门户中单击隐私链接时，该隐私声明将出现。 你必须以 <https://www.contoso.com> 格式输入有效的 URL。 |
 
 ## <a name="support-contacts"></a>支持联系人     
 在公司门户向用户显示支持网站，以使他们能够访问在线支持。        
@@ -62,7 +62,7 @@ ms.lasthandoff: 03/23/2018
 
 |字段名称|更多信息|       
 |-|-|       
-|**主题颜色**|选择要应用于公司门户的主题颜色。|      
+|**主题颜色**|选择要应用于公司门户的主题颜色。 可以从颜色选取器中选择，也可以输入特定的十六进制代码。|      
 |**显示公司徽标**|如果启用此选项，你可以上传公司徽标以显示在公司门户中。 你可以上传两个徽标：一个在公司门户背景为白色时显示的徽标，以及一个在公司门户背景使用所选主题颜色时使用的徽标。 每个徽标必须是 .png 或 .jpg 文件类型，最大分辨率为 400 x 100 像素，大小等于或小于 750 KB。<br>还可以显示在已上传徽标旁边输入的公司名称。|      
 
 保存所做的更改后，可以选择“预览 Intune Web 门户中的设置”，查看配置的外观。

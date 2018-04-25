@@ -1,29 +1,29 @@
 ---
-title: "准备业务线应用以使用应用保护策略"
+title: 准备业务线应用以使用应用保护策略
 titlesuffix: Microsoft Intune
-description: "借助应用包装工具和应用 SDK，自定义业务线应用可使用 Microsoft Intune 中的应用保护策略。"
-keywords: 
+description: 借助应用包装工具和应用 SDK，自定义业务线应用可使用 Microsoft Intune 中的应用保护策略。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 可以使用 Intune 应用包装工具或 Intune App SDK 来支持应用使用应用保护策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
@@ -70,8 +70,8 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|支持 - 使用 [Intune 应用 SDK Xamarin 组件](app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](app-sdk-cordova.md)。|
-|**Outlook Web Access (OWA)**| 支持 - 使用 [Intune 应用 SDK Xamarin 组件](app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](app-sdk-cordova.md)。|
+|**iOS**|支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](app-sdk-cordova.md)。|
+|**Outlook Web Access (OWA)**| 支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|支持 - 使用 [Intune 应用 SDK Cordova 插件](app-sdk-cordova.md)。|
 
 ## <a name="feature-comparison"></a>功能比较
 此表列出了可用于 App SDK 和应用包装工具的设置。
@@ -79,30 +79,30 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 > [!NOTE]
 > 应用包装工具可以与独立 Intune 或带 Configuration Manager 的 Intune 结合使用。
 
-|功能|App SDK|应用包装工具|
-|-----------|---------------------|-----------|
-|限制显示在企业托管浏览器内的 Web 内容|X|X|
-|阻止 Android、iTunes 或 iCloud 备份|X|X|
-|允许应用向其他应用传送数据|X|X|
-|允许应用从其他应用接收数据|X|X|
-|限制使用其他应用剪切、复制和粘贴|X|X|
-|访问需要简单 PIN|X|X|
-|使用 Intune PIN 替换内置应用 PIN|X||
-|指定重置 PIN 前的尝试次数|X|X|
-|允许使用指纹而不是 PIN |X|X|
-|访问需要公司凭据|X|X|
-|阻止在已越狱或取得 root 权限的设备上运行托管应用|X|X|
-|加密应用数据|X|X|
-|在指定分钟数后重新检查访问要求|X|X|
-|指定离线宽限期|X|X|
-|阻止屏幕捕捉（仅限于 Android 设备）|X|X|
-|支持未进行设备注册的 MAM|X|X|
-|完全擦除|X|X|
-|选择性擦除 <br></br>**注意：**对于 iOS 设备，删除管理配置文件时，也会删除该应用。|X||
-|防止“另存为” |X||
-|目标应用程序配置 |X||
-|支持多身份标识|X||
-|可自定义样式 |X|||
+|                                                         功能                                                          | App SDK | 应用包装工具 |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              限制显示在企业托管浏览器内的 Web 内容                              |    X    |         X         |
+|                                        阻止 Android、iTunes 或 iCloud 备份                                        |    X    |         X         |
+|                                         允许应用向其他应用传送数据                                         |    X    |         X         |
+|                                        允许应用从其他应用接收数据                                         |    X    |         X         |
+|                                      限制使用其他应用剪切、复制和粘贴                                       |    X    |         X         |
+|                                              访问需要简单 PIN                                               |    X    |         X         |
+|                                         使用 Intune PIN 替换内置应用 PIN                                         |    X    |                   |
+|                                     指定重置 PIN 前的尝试次数                                      |    X    |         X         |
+|                                             允许使用指纹而不是 PIN                                             |    X    |         X         |
+|                                         访问需要公司凭据                                         |    X    |         X         |
+|                             阻止在已越狱或取得 root 权限的设备上运行托管应用                              |    X    |         X         |
+|                                                     加密应用数据                                                     |    X    |         X         |
+|                           在指定分钟数后重新检查访问要求                            |    X    |         X         |
+|                                             指定离线宽限期                                             |    X    |         X         |
+|                                           阻止屏幕捕捉（仅限于 Android 设备）                                            |    X    |         X         |
+|                                        支持未进行设备注册的 MAM                                         |    X    |         X         |
+|                                                        完全擦除                                                         |    X    |         X         |
+| 选择性擦除 <br></br><strong>注意：</strong>对于 iOS 设备，删除管理配置文件时，也会删除该应用。 |    X    |                   |
+|                                                    防止“另存为”                                                     |    X    |                   |
+|                                            目标应用程序配置                                            |    X    |                   |
+|                                                支持多身份标识                                                |    X    |                   |
+|                                                    可自定义样式                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>后续步骤
 

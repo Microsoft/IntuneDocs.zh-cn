@@ -1,37 +1,37 @@
 ---
-title: "为受管理的 Android 设备添加应用配置策略"
+title: 为受管理的 Android 设备添加应用配置策略
 titlesuffix: Microsoft Intune
-description: "使用 Microsoft Intune 中的应用配置策略可提供用户在运行 Android for Work 应用时的设置。"
-keywords: 
+description: 使用 Microsoft Intune 中的应用配置策略可提供用户在运行 Android for Work 应用时的设置。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a448c33e8324492c68d509a12d5901f41ed4873a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>为受管理的 Android 设备添加应用配置策略
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用 Microsoft Intune 中的应用配置策略可提供用户在运行 Android for Work 应用时的设置。 无需直接向用户和设备分配这些策略。 而是将策略与应用关联，然后分配应用。 只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
+使用 Microsoft Intune 中的应用配置策略提供 Android for Work 应用所需的设置。 应用开发人员必须公开 Android 托管应用配置设置，以便指定该应用的配置设置。 将应用配置策略分配给想要应用设置的用户组。  只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
 
 > [!Note]  
 > 并非所有应用都支持应用配置。 请咨询应用开发人员，确定他们构建的应用是否支持应用配置策略。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 选择“移动应用”工作负荷。
 4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”。
 5. 设置以下详细信息：
@@ -50,16 +50,27 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="use-the-configuration-designer"></a>使用配置设计器
 
-可对已注册或未注册 Intune 的设备上的应用使用配置设计器。 使用设计器可配置特定配置键和值。 还须指定每个值的数据类型。
+可以对支持配置的 Android 应用使用配置设计器。 配置将应用于已在 Intune 中注册的设备。 相较于应用公开，通过设计器可以为设置配置特定的配置值。
 
+选择“添加”，以选择想为应用指定的配置设置的列表。  
 对于配置中的每个项和值，请设置以下内容：
 
-  - **配置项**  
-     对特定设置配置进行唯一标识的键。
   - **值类型**  
-    配置值的数据类型。 类型包括整数、实数、字符串或布尔值。
+    配置值的数据类型。 至于字符串值类型，可以根据需要选择变量或证书配置文件作为值类型。
   - **配置值**  
-    配置的值。 
+    配置的值。 如果选择变量或证书作为值类型，则可以从配置值下拉列表中的一系列变量或证书配置文件中进行选择。  如果选择证书，则运行时将填充部署到设备的证书的证书别名。
+    
+### <a name="supported-variables-for-configuration-values"></a>可用作配置值的变量
+
+如果选择变量作为值类型，有以下选项可供选择：
+- 用户主体名称 - 例如 John@contoso.com
+- 邮件 - 例如 John@contoso.com
+- &IAM;Partian UPN - 例如 John
+- 帐户 ID - 例如 fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- 设备 ID - 例如 b9841cd9-9843-405f-be28-b2265c59ef97
+- 用户 ID -例如 3ec2c00f-b125-4519-acf0-302ac3761822
+- 用户名称 - 例如 John Doe
+
 
 ## <a name="enter-the-json-editor"></a>输入 JSON 编辑器
 
@@ -78,7 +89,7 @@ ms.lasthandoff: 03/08/2018
 你还可以为应用预配置权限以访问 Android 设备功能。 默认情况下，对于需要设备权限（如访问位置或设备相机等）的 Android 应用，系统会提示用户接受或拒绝权限。 例如，如果应用使用设备的麦克风，会提示用户授予应用权限以使用麦克风。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 选择“移动应用”。
 3. 在“管理”下，选择“应用配置策略”，然后选择“添加”。
 4. 设置以下详细信息：

@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>在 Microsoft Intune 中配置 iOS 更新策略
 
@@ -55,3 +55,4 @@ ms.lasthandoff: 03/22/2018
 ## <a name="monitor-ios-device-installation-failures"></a>监视 iOS 设备安装失败
 <!-- 1352223 -->
 可在“软件更新”窗格中获取“iOS 设备安装失败”报告。 在报告中，可以查看已作为 iOS 更新策略目标、已尝试更新但无法更新的受监督 iOS 设备的列表。 可以查看每个设备的状态，了解该设备未自动更新的原因。 运行正常的最新版本设备将不会显示在列表中。 我们将“最新版本”定义为设备本身可支持的最新更新。
+

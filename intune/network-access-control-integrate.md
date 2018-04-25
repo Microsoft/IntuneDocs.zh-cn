@@ -1,25 +1,24 @@
 ---
-title: "网络访问控制与 Microsoft Intune 集成"
-titlesuffix: 
-description: "网络访问控制 (NAC) 与 Intune 集成"
-keywords: 
+title: 网络访问控制与 Microsoft Intune 集成 - Azure | Microsoft Docs
+description: 网络访问控制 (NAC) 解决方案使用 Intune 检查设备的注册情况和符合性。 NAC 内含某些行为，并且能与条件访问配合使用。 请参阅相关步骤载入，并获取合作伙伴解决方案的列表。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 
@@ -27,7 +26,7 @@ Intune 与网络访问控制合作伙伴集成，帮助组织在设备尝试访�
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune 和 NAC 解决方案如何帮助保护组织的资源？
 
-NAC 解决方案负责通过 Intune 检查设备注册和符合性状态，以便作出访问控制决策。 如果设备未注册，或已注册但不符合 Intune 设备符合性策略，则设备应重定向到 Intune 进行注册和/或进行设备符合性检查。
+NAC 解决方案可通过 Intune 检查设备注册和符合性状态，以便作出访问控制决策。 如果设备未注册，或已注册但不符合 Intune 设备符合性策略，则设备应重定向到 Intune 进行注册和/或进行设备符合性检查。
 
 ### <a name="example"></a>示例
 
@@ -45,7 +44,7 @@ NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情
 
 ## <a name="how-the-nac-integration-works"></a>NAC 集成的工作原理
 
-下面概述了与 Intune 集成时的 NAC 集成的工作原理。 前三步 (1-3) 介绍了上手流程。 NAC 解决方案与 Intune 集成后，步骤 4-9 描述正在进行的操作。
+以下列表概述了与 Intune 集成时的 NAC 集成的工作原理。 前三步 (1-3) 介绍了上手流程。 NAC 解决方案与 Intune 集成后，步骤 4-9 描述正在进行的操作。
 
 ![NAC 如何与 Intune 协作](./media/ca-intune-common-ways-2.png)
 
@@ -64,3 +63,4 @@ NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情
 - [将 Cisco ISE 与 Intune 集成](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [将 Citrix NetScaler 与 Intune 集成](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 - [将 HP Aruba Clear Pass 与 Intune 集成](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [将 Squadra 安全性可移动媒体管理器 (secRMM) 与 Intune 集成](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

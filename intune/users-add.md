@@ -15,15 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 作为管理员，可直接添加用户或从本地 Active Directory 同步用户。 添加后，用户可注册设备并访问公司资源。 还可为用户提供更多权限，包括“全局管理员”和“服务管理员”权限。
 
@@ -35,16 +35,16 @@ ms.lasthandoff: 03/22/2018
 2. 在 Office 365 菜单中，选择“管理员”。
 3. 在管理中心，选择“添加用户”。
 
-  ![“添加用户”部分的屏幕截图](media/office-add-user.png)
+   ![“添加用户”部分的屏幕截图](media/office-add-user.png)
 
 4. 指定下列用户详细信息：
-  - 名
-  - 姓
-  - 显示名称
-  - 用户名 - 存储在 Azure Active Directory 中用于访问服务的通用主体名称 (UPN)
-  - **位置**
-  - 联系人信息（可选）
-  - 密码 - 自动生成或指定
+   - 名
+   - 姓
+   - 显示名称
+   - 用户名 - 存储在 Azure Active Directory 中用于访问服务的通用主体名称 (UPN)
+   - **位置**
+   - 联系人信息（可选）
+   - 密码 - 自动生成或指定
 
      ![“新用户”部分的屏幕截图](media/office-add-user-details.png)
 
@@ -55,16 +55,16 @@ ms.lasthandoff: 03/22/2018
 1. 登录 [Azure 门户](https://portal.azure.com)，选择“所有服务” > “监视 + 管理” > “Intune”。 还可为 Intune 搜索资源。
 2. 选择“用户” > “所有用户”。
 3. 在管理中心，选择“新用户”。
-  ![添加“新用户”的屏幕截图](media/intune-add-user.png)
+   ![添加“新用户”的屏幕截图](media/intune-add-user.png)
 4. 指定下列用户详细信息：
-  - **Name**
-  - **用户名** - Azure Active Directory 门户中的新名称![添加名称和用户名的屏幕截图](media/intune-add-user-info.png)选择“确定”以继续。
+   - **名称**
+   - **用户名** - Azure Active Directory 门户中的新名称![添加名称和用户名的屏幕截图](media/intune-add-user-info.png)选择“确定”以继续。
 5. 或者，也可以指定下列用户属性：
-  - 个人资料 - 包括“职务”和“部门”在内的工作信息
-  -  组 - 选择要为用户添加的组
-  - 目录角色 - 向用户授予管理权限，包括 Intune 服务管理员角色。
+   - 个人资料 - 包括“职务”和“部门”在内的工作信息
+   -  组 - 选择要为用户添加的组
+   - 目录角色 - 向用户授予管理权限，包括 Intune 服务管理员角色。
 
-  选择“创建”，将新用户添加到 Intune。
+   选择“创建”，将新用户添加到 Intune。
 6. 选择“个人资料”，然后为新用户选择“使用位置”。 只有指定使用位置后，才能为新用户分配 Intune 许可证。 选择“保存”以继续。
     ![使用位置的屏幕截图](media/intune-add-user-loc.png)
 7. 依次选择“许可证”和“分配”，为此用户分配 Intune 许可证。 只有获得 Intune 许可证后，才能注册设备或访问公司资源。 依次选择“产品”、“许可证类型”、“选择”和“分配”。
@@ -84,14 +84,14 @@ ms.lasthandoff: 03/22/2018
 
 5. 从可用角色列表中选择要授予的管理员权限。
 ![分配角色的屏幕截图](./media/office-assign-roles.png)
-6. 选择“保存”。
+6. 选择**“保存”**。
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>在 Azure 门户中授予管理员权限
 1. 使用全局管理员帐户登录 [Azure 门户](https://www.office.com/signin)。
 2. 在 Azure 门户中，依次选择“用户”和要向其授予管理员权限的用户。
 3. 选择“目录角色”，然后选择权限。
   ![目录角色的屏幕截图](./media/add-intune-directory-role.png)
-4. 选择“保存”。
+4. 选择**“保存”**。
 
 ### <a name="types-of-administrators"></a>管理员类型
 
@@ -112,7 +112,7 @@ ms.lasthandoff: 03/22/2018
 可配置目录同步，将用户帐户从本地 Active Directory 导入到包含 Intune 用户的 Microsoft Azure Active Directory (Azure AD)。 让本地 Active Directory 服务与你所有基于 Azure Active Directory 的服务相连接，使管理用户标识变得更简单。 还可以配置单一登录功能，使用户的身份验证体验熟悉且简单。 通过将同一 [Azure AD 租户](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)与多个服务相链接，先前同步的用户帐户便可用于所有基于云的服务。
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>如何使用 Azure AD 同步本地用户
-使用 Azure AD 同步本地用户所需的唯一工具是 [Azure AD Connect 向导](https://www.microsoft.com/download/details.aspx?id=47594)。 Azure AD Connect 向导为将你的本地身份基础结构连接到云提供简化的指导式体验。  选择拓扑和需求（单个目录或多个目录、密码同步或联合身份验证）。 向导将部署和配置所有必需组件，以使连接正常运行。 其中包括：同步服务、Active Directory 联合身份验证服务 (AD FS) 和 Azure AD PowerShell 模块。
+使用 Azure AD 同步本地用户所需的唯一工具是 [Azure AD Connect 向导](https://www.microsoft.com/download/details.aspx?id=47594)。 Azure AD Connect 向导为将你的本地身份基础结构连接到云提供简化的指导式体验。 选择拓扑和需求（单个目录或多个目录、密码哈希同步、传递身份验证或联合身份验证）。 向导将部署和配置所有必需组件，以使连接正常运行。 其中包括：同步服务、Active Directory 联合身份验证服务 (AD FS) 和 Azure AD PowerShell 模块。
 
 > [!TIP]
 > Azure AD 连接包含之前作为目录同步和 Azure AD Sync 发布的功能。了解有关[目录集成](http://technet.microsoft.com/library/jj573653.aspx)的详细信息。 若要了解如何将用户帐户从本地目录同步到 Azure AD，请参阅 [Active Directory 与 Azure AD 之间的相似之处](http://technet.microsoft.com/library/dn518177.aspx)。

@@ -1,12 +1,11 @@
 ---
-title: 使用 Microsoft Intune 管理设备
-titleSuffix: ''
-description: 查看使用 Intune 管理的设备，并在设备上执行各种操作。
+title: 使用 Microsoft Intune 管理设备 - Azure | Microsoft Docs
+description: 通过 Microsoft Intune 查看管理的设备（包括将设备列表导出为 csv 格式）、查看已加入 Azure Active Directory 的设备、查看对设备进行的操作的更改日志、使用 TeamViewer 连接器允许 IT 管理员远程对 Android 进行故障排除，以及查看可以在设备上运行的所有操作。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 04/02/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,41 +13,47 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 436eeb306bf4ba343ae4d88a824aeed2077a3426
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9a003b9ec4208bc3449dfb1b3b2ee889a29b742b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+作为 IT 管理员，必须确保受管理设备提供用户工作时所需的资源，同时保护数据免遭风险。
 
-作为 IT 管理员，必须确保受管理设备提供最终用户工作时所需的资源，同时保护数据免遭风险。
+**设备**工作负荷可以让你了解所管理的设备，并能在这些设备上执行远程任务。
 
-**设备**工作负荷可以让你了解所管理的设备，并能在这些设备上执行远程任务。 若要访问工作负荷，请执行以下操作：
+## <a name="get-to-your-devices"></a>找到你的设备
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”中选择“设备”。
-4. 可查看设备相关信息并执行远程设备操作，如下所示：
-    - 概述 - 可以管理的已注册设备的快照。
-    - 所有设备 - 所管理的已注册设备的列表。 选择“筛选器”或“列”，优化显示的信息。 选择一个设备，[查看设备清单](device-inventory.md)。
-    - Azure AD 设备 - 注册或加入 Azure Active Directory 的设备列表。 了解有关 [Azure AD 设备管理](https://docs.microsoft.com/azure/active-directory/device-management-introduction)的详细信息。
-    - 设备操作 - 在设备上执行的远程操作的历史记录，包括操作、操作状态、操作启动者和时间。
+2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+3. 选择“设备”。 此视图显示有关各设备的详细信息，以及可以使用该设备进行的操作，包括：
 
-        ![监视设备操作的屏幕截图](./media/monitor-device-actions.png)
+   - “概述”显示已注册设备的可视化快照，并显示正在使用不同平台（Android、iOS 等）的设备数量。
+   - “所有设备”显示你管理的已注册设备的列表。
 
-    - **审核日志** - 审核日志记录了导致 Microsoft Intune 发生更改的活动。 了解更多有关[审核日志](monitor-audit-logs.md)的信息。
-    - **TeamViewer 连接器** - TeamViewer 服务允许由 Intune 托管的 Android 设备用户从 IT 管理员处获取远程协助。 详细了解 [TeamViewer](device-profile-android-teamviewer.md)。
-    - **帮助和支持** - 排查问题、请求获取支持或查看 Intune 状态。  
-    
+     使用“导出”功能，以 10,000 (Internet Explorer) 或 30,000（Edge、Chrome）为增量创建一个包含所有设备的 .csv 列表。
+
+     选择任意设备以[查看有关该设备的详细信息](device-inventory.md)，包括硬件详细信息、已安装应用以及其符合性策略的状态等。
+
+   - “Azure AD 设备”显示注册或加入 Azure Active Directory (Azure AD) 的设备列表。 了解有关 [Azure AD 设备管理](https://docs.microsoft.com/azure/active-directory/device-management-introduction)的详细信息。
+   - “设备操作”含有在不同设备上执行的远程操作的历史记录，包括操作、操作状态、操作启动者和时间。
+
+     ![监视设备操作的屏幕截图](./media/monitor-device-actions.png)
+
+   - “审核日志”记录了导致 Intune 出现变化的活动。 [审核日志](monitor-audit-logs.md)可以提供更多信息。
+   - “TeamViewer 连接器”服务允许由 Intune 托管的 Android 设备用户从 IT 管理员处获取远程协助。 详细了解 [TeamViewer](device-profile-android-teamviewer.md)。
+   - “帮助和支持”提供有关疑难解答提示、请求支持或检查 Intune 状态的快捷方式。
+
 ## <a name="available-device-actions"></a>可用的设备操作
 可用的操作取决于设备平台和设备的配置。
 
 - [查看设备清单](device-inventory.md)
-- 执行远程设备操作：
+- 运行远程设备操作：
     - [删除公司数据](devices-wipe.md#remove-company-data)
     - [恢复出厂设置](devices-wipe.md#factory-reset)
     - [远程锁定](device-remote-lock.md)
@@ -62,7 +67,7 @@ ms.lasthandoff: 03/22/2018
     - [适用于 Android 的远程控制](device-profile-android-teamviewer.md)
     - [同步设备](device-sync.md)
 
-
 ## <a name="next-steps"></a>后续步骤
 
+- 在“所有设备”中选择某个设备，以查看有关该设备的详细信息。
 - 选择“设备操作”以查看对所管理设备执行的操作的状态。

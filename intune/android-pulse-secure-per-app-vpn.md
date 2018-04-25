@@ -1,12 +1,12 @@
 ---
-title: 适用于 Android - Pulse Secure 的每应用 VPN 配置文件
+title: 自定义 Android 适用的每应用 VPN 配置文件
 titlesuffix: Microsoft Intune
 description: 了解如何为 Microsoft Intune 托管的 Android 设备创建每应用 VPN 配置文件。
 keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,23 +15,23 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc87363169cd2d967b2fea9683926970c18c5e97
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 96d164c0f4274a6d1fc81a0c7f9d86cccfec1fb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-可为由 Intune 管理的 Android 5.0 及更高版本设备创建每应用 VPN 配置文件。 首先，创建使用 Pulse Secure 连接类型的 VPN 配置文件。 然后，创建将 VPN 配置文件与特定应用关联的自定义配置策略。
+可为由 Intune 管理的 Android 5.0 及更高版本设备创建每应用 VPN 配置文件。 首先，创建使用 Pulse Secure 或 Citrix 连接类型的 VPN 配置文件。 然后，创建将 VPN 配置文件与特定应用关联的自定义配置策略。
 
-将策略分配到 Android 设备或用户组后，用户应启动 PulseSecure VPN。 然后，PulseSecure 将仅允许来自指定应用的通信使用打开的 VPN 连接。
+将策略分配给 Android 设备或用户组后，用户应启动 Pulse Secure 或 Citrix VPN 客户端。 然后，VPN 客户端将仅允许来自指定应用的通信使用打开的 VPN 连接。
 
 > [!NOTE]
 >
-> 此配置文件仅支持 Pulse Secure 连接类型。
+> 此配置文件仅支持 Pulse Secure 和 Citrix 连接类型。
 
 
 ## <a name="step-1-create-a-vpn-profile"></a>步骤 1：创建 VPN 配置文件
@@ -73,7 +73,7 @@ ms.lasthandoff: 03/17/2018
 或者，你可使用 **WHITELIST** 值来指定*可以*使用 VPN 连接的应用列表。 不在列表中的应用不会通过 VPN 连接。
   1.    在“自定义 OMA-URI 设置”窗格上，选择“添加”。
   2.    输入设置名称。
-  3.    对于 OMA-URI，使用以下字符串：./Vendor/MSFT/VPN/Profile/Name/Mode，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为**./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
+  3.    对于 OMA-URI，使用以下字符串：./Vendor/MSFT/VPN/Profile/Name/Mode，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
   4.    为“数据类型”，指定“字符串”。
   5.    对于**值**，输入 **BLACKLIST** 或 **WHITELIST**。
 

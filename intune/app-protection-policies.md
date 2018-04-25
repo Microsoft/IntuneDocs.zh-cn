@@ -1,34 +1,33 @@
 ---
-title: "创建和部署应用保护策略"
+title: 创建和部署应用保护策略
 titleSuffix: Microsoft Intune
-description: "了解如何创建和分配 Microsoft Intune 应用保护策略。"
-keywords: 
+description: 了解如何创建和分配 Microsoft Intune 应用保护策略。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 了解如何创建并向用户分配 Microsoft Intune 应用保护策略。 本主题还介绍如何对现有策略进行更改。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 有关如何在 Intune 经典门户中创建策略的说明，请参阅[如何创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
@@ -37,28 +36,28 @@ ms.lasthandoff: 03/08/2018
 如果你要查找 MAM 支持应用的列表，请参阅 [MAM 应用列表](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 
 ##  <a name="create-an-app-protection-policy"></a>创建应用保护策略
-1.  在“移动应用”工作负荷中，从“管理”部分选择“应用保护政策”。 此选项会打开“应用保护策略”详细信息，可在此创建新策略和编辑现有策略。
+1. 在“移动应用”工作负荷中，从“管理”部分选择“应用保护政策”。 此选项会打开“应用保护策略”详细信息，可在此创建新策略和编辑现有策略。
 2. 选择**添加策略**。
 
-  ![“添加策略”边栏选项卡的屏幕截图](./media/app-protection-add-policy.png)
+   ![“添加策略”边栏选项卡的屏幕截图](./media/app-protection-add-policy.png)
 
-3.  为策略键入名称、添加简要说明并为策略选择平台类型。 如有需要，可以为每个平台创建多个策略。
+3. 为策略键入名称、添加简要说明并为策略选择平台类型。 如有需要，可以为每个平台创建多个策略。
 
-4.  选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表。 从该列表中选择希望与正创建的策略关联的一个或多个应用。
+4. 选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表。 从该列表中选择希望与正创建的策略关联的一个或多个应用。
 5. 选中应用后，选择“选择”以保存选择。
 
     > [!IMPORTANT]
     > 必须至少选择一个应用才能创建策略。
 
-6.  在“添加策略”边栏选项卡中，选择“配置所需设置”以打开“设置”。
+6. 在“添加策略”边栏选项卡中，选择“配置所需设置”以打开“设置”。
 
-    有两种类别的策略设置：“数据重定位”和“访问”。  数据重定位策略适用于应用内外的数据移动。 访问策略决定最终用户如何在工作环境中访问应用。
-    为了帮助你入门，策略设置具有默认值。 如果默认值满足需求，则无须进行任何更改。
+   有两种类别的策略设置：“数据重定位”和“访问”。  数据重定位策略适用于应用内外的数据移动。 访问策略决定最终用户如何在工作环境中访问应用。
+   为了帮助你入门，策略设置具有默认值。 如果默认值满足需求，则无须进行任何更改。
 
-    > [!TIP]
-    > 仅在工作环境中使用应用时，才强制执行这些策略设置。 最终用户使用应用执行个人任务时，不受这些策略的影响。
+   > [!TIP]
+   > 仅在工作环境中使用应用时，才强制执行这些策略设置。 最终用户使用应用执行个人任务时，不受这些策略的影响。
 
-7.  选择“确定”保存此配置。 现将返回“添加策略”窗格。 选择“创建”以创建策略并保存设置。
+7. 选择“确定”保存此配置。 现将返回“添加策略”窗格。 选择“创建”以创建策略并保存设置。
 8. 选择“确定”保存此配置。 现将返回“添加策略”边栏选项卡。
 9. 选择“创建”以创建策略并保存设置。
 
@@ -84,7 +83,7 @@ ms.lasthandoff: 03/08/2018
 >[!IMPORTANT]
 > 如果配合使用 Intune 和 Configuration Manager 来管理设备，则该策略仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不受影响。
 
-最终用户可以从 App Store 或 Google Play 下载应用。 有关详情，请参阅：
+最终用户可以从 App Store 或 Google Play 下载应用。 有关更多信息，请参阅：
 * [Android 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-android.md)
 * [iOS 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-ios.md)
 
@@ -119,6 +118,16 @@ ms.lasthandoff: 03/08/2018
 2.  选择“策略设置”以打开“策略设置”窗格。
 
 3.  更改设置，然后选择“保存”图标以保存所做的更改。
+
+## <a name="target-app-protection-policies-based-on-device-management-state"></a>根据设备管理状态设置应用保护策略的适用对象
+在许多组织中，允许最终用户使用 Intune 移动设备管理 (MDM) 托管的设备（如公司拥有的设备）和使用仅由 Intune 应用保护策略提供保护的非托管设备（例如 BYO 设备）的情况都很常见。
+
+Intune 应用保护策略是一种针对用户身份的策略，因此用户的保护设置历来适用于已注册（MDM 托管）和未注册（非 MDM）设备。 因此可以将 Intune 应用保护策略应用于已注册或未注册 Intune 的 iOS 和 Android 设备。 你可以对非托管设备应用具备严格数据丢失防护 (DLP) 措施的保护策略，并对 MDM 托管设备应用 DLP 措施较为宽松的单独保护策略。 
+
+若要创建这些策略，请在 Intune 控制台中浏览找到“移动应用” > “应用保护”策略，然后单击“添加策略”。 还可以编辑现有的应用保护策略。 如果想将应用保护策略同时应用到托管和非托管设备，请确保将“面向所有应用类型”设置为“是”（这是默认设置）。 如果想根据管理状态逐渐分配，请将“面向所有应用类型”设置为“否”。 
+
+> [!NOTE]
+> 有关根据设备管理状态分配应用保护策略的 iOS 具体支持信息，请参阅[根据管理状态应用 MAM 保护策略](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---)。
 
 ## <a name="policy-settings"></a>策略设置
 若要查看 iOS 和 Android 的策略设置的完整列表，请选择以下链接之一：

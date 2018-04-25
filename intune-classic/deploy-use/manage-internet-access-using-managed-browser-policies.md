@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 托管浏览器是一个 Web 浏览应用程序，可以使用 Microsoft Intune 在组织中进行部署。 托管浏览器策略可配置允许列表或阻止列表，限制托管浏览器的用户可以访问的网站。
 
@@ -59,7 +59,7 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 
     - **名称**。 输入托管浏览器策略的唯一名称，以帮助你在 Intune 控制台中识别它。
     - **说明**。 提供对托管浏览器策略的概述以及可帮助你查找策略的其他相关信息。
-    - “启用允许列表或阻止列表，以限制托管浏览器可以打开的 URL”。 选择下列选项之一：
+    - “启用允许列表或阻止列表，以限制托管浏览器可以打开的 URL”。 选择以下选项之一：
         - “允许托管的浏览器仅打开下面列出的 URL”。 指定托管浏览器可以打开的 URL 列表。
         - “阻止托管浏览器打开下面列出的 URL”。 指定将阻止托管浏览器打开的 URL 列表。
 **注意：**不能在相同的托管浏览器策略中同时包括允许的 URL 和阻止的 URL。
@@ -99,52 +99,52 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>允许的 URL 和阻止的 URL 的格式
 使用以下信息来了解有关指定允许和阻止列表中的 URL 时允许使用的格式和通配符：
 
--   可以根据以下允许模式列表中的规则使用通配符 (*)。
+- 可以根据以下允许模式列表中的规则使用通配符 (*)。
 
--   在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
+- 在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
 
--   可以在地址中指定端口号。 如果未指定端口号，将使用以下值：
+- 可以在地址中指定端口号。 如果未指定端口号，将使用以下值：
 
-    -   对于 http，使用端口 80
+  -   对于 http，使用端口 80
 
-    -   对于 https，使用端口 443
+  -   对于 https，使用端口 443
 
-    不支持对端口号使用通配符。 例如，不支持 http&colon;//www&period;contoso&period;com:*; 和 http&colon;//www&period;contoso&period;com: /*;。
+  不支持对端口号使用通配符。 例如，不支持 <strong>http&colon;//www&period;contoso&period;com:*;</strong> 和 <strong>http&colon;//www&period;contoso&period;com: /*;</strong>。
 
--   使用下表了解指定 URL 时可以使用的允许模式：
+- 使用下表了解指定 URL 时可以使用的允许模式：
 
-|URL|详细信息|匹配|不匹配|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|匹配单个页面|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|匹配单个页面|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42；|匹配以 www.contoso.com 开头的所有 URL|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|匹配 contoso.com 下的所有子域|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|匹配单个文件夹|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|匹配单个页面（使用端口号）|http://www.contoso.com:80||
-    |https://www.contoso.com|匹配单个安全页面|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42；|匹配单个文件夹和所有子文件夹|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     详细信息                      |                                                匹配                                                |                                不匹配                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              匹配单个页面               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              匹配单个页面               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>；     | 匹配以 www.contoso.com 开头的所有 URL |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     匹配 contoso.com 下的所有子域     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             匹配单个文件夹              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  匹配单个页面（使用端口号）   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          匹配单个安全页面           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>； |    匹配单个文件夹和所有子文件夹    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   以下是一些你不能指定的输入的示例：
+- 以下是一些你不能指定的输入的示例：
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP 地址
+  - IP 地址
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42；
+  - http://www.contoso.com:&#42；
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>允许和阻止列表之间的冲突的解决方式
 如果向一个设备部署多个托管浏览器策略，并且出现设置冲突，则将评估模式（允许或阻止）以及 URL 列表中的冲突。 发生冲突时，以下行为适用：

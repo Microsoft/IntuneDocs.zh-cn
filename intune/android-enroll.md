@@ -1,29 +1,29 @@
 ---
-title: "在 Intune 中注册 Android 设备"
+title: 在 Intune 中注册 Android 设备
 titlesuffix: Microsoft Intune
-description: "了解如何在 Intune 中注册 Android 设备。"
-keywords: 
+description: 了解如何在 Intune 中注册 Android 设备。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 作为 Intune 管理员，你可以管理 Android 设备，包括 Samsung Knox 标准版设备。 也可以管理 [Android for Work 设备](#enable-enrollment-of-android-for-work-devices)工作配置文件。
 
@@ -47,6 +47,8 @@ ms.lasthandoff: 03/08/2018
 
 如果使用[设备注册管理器](device-enrollment-manager-enroll.md)帐户注册 Android for Work 设备，则每个帐户最多可注册 10 台设备。
 
+有关详细信息，请参阅 [Intune 发送给 Google 的数据](data-intune-sends-to-google.md)。
+
 ## <a name="add-android-for-work-binding-for-intune"></a>为 Intune 添加 Android for Work 绑定
 
 > [!NOTE]
@@ -55,15 +57,18 @@ ms.lasthandoff: 03/08/2018
 1. **设置 Intune MDM**<br>
 如果你尚未准备就绪，请将[移动设备管理机构设置](mdm-authority-set.md)为“Microsoft Intune”。
 2. **配置 Android for Work 绑定**<br>
-    作为 Intune 管理员，在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “监视 + 管理” > “Intune”。
-
-   a. 在“Intune”窗格上，选择“设备注册” > “Android for Work 注册”，然后选择“管理 Google Play - 配置”打开 Google Play 的 Android for Work 网站。 网站将在浏览器的新选项卡中打开。
+    
+   a. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)，选择“设备注册” > “Android 注册” > “托管 Google Play”。
    ![Android for Work 注册屏幕](./media/android-work-bind.png)
 
-   b. 登录到 Google<br>
+   b. 选择“我同意”授权 Microsoft [向 Google 发送用户和设备信息](data-intune-sends-to-google.md)。 
+   
+   c. 选择“立即启动 Google 进行连接”，以打开 Google Play 的 Android for Work 网站。 网站将在浏览器的新选项卡中打开。
+  
+   d. 登录到 Google<br>
    在 Google 的登录页上，输入将与此租户的所有 Android for Work 管理任务相关联的 Google 帐户。 这是在公司的 IT 管理员之间共享的 Google 帐户，用于在 Play for Work 控制台中管理和发布应用。 可以使用现有 Google 帐户或创建新帐户。  所选帐户不能与 G-Suite 域相关联。
 
-   c. **提供组织详细信息**<br>
+   e. **提供组织详细信息**<br>
    对于“组织名称”，提供你公司的名称。 对于企业移动性管理 (EMM) 提供程序，应显示 Microsoft Intune。 同意 Android for Work 协议，然后选择“确认”。 你的请求会进行处理。
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>指定 Android for Work 注册设置
@@ -110,3 +115,14 @@ After configuring the Android for Work binding and settings, you can do the foll
 
 2. **同意删除 Android for Work 绑定**<br>
   选择“是”以删除绑定并从 Intune 取消注册所有 Android for Work 设备。
+
+## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>注册 Samsung Knox 设备时的最终用户体验
+注册 Samsung Knox 设备时，应注意以下方面：
+-   即使没有任何策略要求使用 PIN，设备也必须具有一个至少四位数的 PIN 才能注册。 如果设备没有 PIN，系统将提示用户创建 PIN。
+-   用户无需与 Workplace Join Certificates (WPJ) 进行交互。
+-   系统会提示用户有关 Service Enrollment 及其功能的信息。
+-   系统会提示用户有关 Knox Enrollment 及其功能的信息。
+-   如果强制执行了加密策略，则用户需要设置六个字符的复杂密码作为设备密码。
+-   服务不会推送任何其他要求安装证书才能访问公司资源的用户提示。
+- 某些旧版 Knox 设备会提示用户提供其他证书才能访问公司资源。
+- 如果 Samsung Mini 设备未能安装 WPJ 并出现“找不到证书”或“未能注册设备”错误，请安装最新的 Samsung Firmware 更新。

@@ -1,29 +1,29 @@
 ---
-title: "移动设备注册先决条件"
-description: "设置移动设备管理 (MDM) 先决条件并准备好注册不同的操作系统。"
-keywords: 
+title: 移动设备注册先决条件
+description: 设置移动设备管理 (MDM) 先决条件并准备好注册不同的操作系统。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune 中移动设备管理的先决条件
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 要使员工能在 Intune 中注册移动设备，需要执行以下步骤。 管理公司拥有的设备需要同样的步骤。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 10/10/2017
 
 想要使用 Configuration Manager 查找 Intune？
 > [!div class="button"]
-[查看 SCCM 文档 >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [查看 SCCM 文档 >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>步骤 1：启用连接
 
@@ -80,19 +80,20 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 公司名称显示为公司门户的标题。 联系人信息和详细信息将在公司门户的“联系 IT 部门”屏幕中向用户显示。 当用户单击隐私链接时，将显示隐私声明。
 
-|字段名称|最大长度|更多信息|
-    |----------|------------------------|----------------|
-    |公司名称|40|此名称显示为公司门户的标题。 **注意**：仅支持字母数字字符。 此字段不支持特殊字符。|
-    |IT 部门联系人姓名|40|此名称显示在“联系 IT”页上。|
-    |IT 部门的电话号码|20|此联系人号码显示在“联系 IT”页上。|
-    |IT 部门的电子邮件地址|40|此联系人地址显示在“联系 IT”页上。 必须以 **alias@domainname.com** 格式输入有效的电子邮件地址。|
-    |其他信息|120|此信息显示在“**联系 IT**”页上。|
-    |公司隐私声明 URL|79|你可以指定自己的公司隐私声明，当用户从公司门户中单击隐私链接时，该隐私声明将出现。 必须以 https://www.contoso.com 格式输入有效的 URL。|
+
+|          字段名称           | 最大长度 |                                                                                       详细信息                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         公司名称          |     40     |                此名称显示为公司门户的标题。 <strong>注意</strong>：仅支持字母数字字符。 此字段不支持特殊字符。                |
+|  IT 部门联系人姓名   |     40     |                                                                此名称显示在“联系 IT”页上。                                                                |
+|  IT 部门的电话号码   |     20     |                                                           此联系人号码显示在“联系 IT”页上。                                                           |
+|  IT 部门的电子邮件地址  |     40     |             此联系人地址显示在“联系 IT”页上。 必须以 <strong>alias@domainname.com</strong> 格式输入有效的电子邮件地址。              |
+|    附加信息     |    120     |                                                            此信息显示在“<strong>联系 IT</strong>”页上。                                                             |
+| 公司隐私声明 URL |     79     | 你可以指定自己的公司隐私声明，当用户从公司门户中单击隐私链接时，该隐私声明将出现。 必须以 https://www.contoso.com 格式输入有效的 URL。 |
 
 ### <a name="support-contacts"></a>支持联系人
 在公司门户向用户显示支持网站，以使他们能够访问在线支持。
 
-|字段名称|最大长度|更多信息|
+|字段名称|最大长度|详细信息|
     |----------|------------------------|----------------|
     |支持网站 URL|150|如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 https://www.contoso.com 格式。如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。|
     |网站名称|40|此名称是为支持网站的 URL 显示的友好名称。 如果指定支持网站 URL 而不指定友好名称，则公司门户中的“联系 IT”页上将显示“转到 IT 网站”。|
@@ -102,7 +103,7 @@ MDM 机构定义有权管理一组设备的管理服务。 适用于 MDM 机构�
 
 你可以使用公司徽标、公司名称、主题颜色和背景来自定义公司门户。
 
-|字段名称|更多信息|
+|字段名称|详细信息|
     |----------|----------------|
     |主题颜色|选择要应用于公司门户的主题颜色。|
     |包括公司徽标|如果启用此选项，你可以上传公司徽标以显示在公司门户中。 你可以上传两个徽标：一个在公司门户背景为白色时显示的徽标，以及一个在公司门户背景使用所选主题颜色时使用的徽标。 每个徽标必须是 .png 或 .jpg 文件，最大分辨率为 400 x 100 像素，大小等于或小于 750 KB。|
@@ -199,7 +200,7 @@ Microsoft 支持部门将让你确认下列信息：
 
 #### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>将 MDM 机构从 Office 365 重置为 Configuration Manager
 
-1. 导航到 [https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://protection.office.com](https://protection.office.com)。
 2. 选择“安全策略”选项卡，然后选择“设备管理”。
 3. 通过选择“选择性擦除”停用所有设备。 请勿尝试从设备停用设备。 如果已禁用“选择性擦除”，则不需要进一步操作。
 4. 选择“安全策略”选项卡，然后选择“安全策略”。

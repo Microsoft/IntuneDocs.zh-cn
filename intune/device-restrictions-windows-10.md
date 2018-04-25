@@ -1,28 +1,27 @@
 ---
-title: "适用于 Windows 10 的 Microsoft Intune 设备限制设置"
-titlesuffix: 
-description: "了解可用来控制运行 Windows 10 的设备上的设备设置和功能的 Microsoft Intune 设置。"
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Microsoft Intune 中适用于 Windows 10 的设备限制设置 - Azure | Microsoft Docs
+description: 了解可用来控制运行 Windows 10 的设备上的设备设置和功能的 Microsoft Intune 设置。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune Windows 10 及更高版本设备限制设置
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中针对 Windows 10 及更高版本的设备限制设置
 本文介绍可为运行 Windows 10 的设备配置的所有 Microsoft Intune 设备限制设置。
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>常规
 - **屏幕捕获（仅限移动版）**- 让用户以图像形式捕获设备屏幕。
@@ -51,7 +50,6 @@ ms.lasthandoff: 03/12/2018
 - **墨迹工作区** - 阻止用户访问墨迹工作区。 如果未配置此设置，则启用墨迹工作区（功能处于开启状态），并且允许用户在锁定屏幕上使用它。
 - **自动重新部署** - 允许具有管理权限的用户在设备锁定屏幕上使用 CTRL+Win+R 删除所有用户数据和设置。 设备会自动进行重新配置并重新注册到管理。
 
-
 ## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。
     -   **所需的密码类型** - 指定密码是否只能是数字或字母数字。
@@ -75,7 +73,6 @@ ms.lasthandoff: 03/12/2018
 -   **自动接受配对和隐私用户同意提示** – 允许 Windows 在运行应用时自动接受配对和隐私同意消息。
 - **发布用户活动**：将此设置为“阻止”以阻止任务切换程序中最近使用资源的共享体验和发现。
 - **仅限本地活动**：将此设置为“阻止”以仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。
-
 
 可以定义设备上的所有应用可以访问的信息。 可以使用“每应用隐私异常”对每个应用定义异常。
 
@@ -137,8 +134,6 @@ ms.lasthandoff: 03/12/2018
 -   **锁定屏幕上的 Toast 通知** – 阻止设备锁定屏幕上显示警报消息。
 -   **屏幕超时（仅限移动版）**- 指定在屏幕锁定后多长时间黑屏（秒）。
 
-
-
 ## <a name="app-store"></a>App Store
 
 -   **应用商店（仅限移动版）** - 在 Windows 10 移动设备上启用或阻止使用应用商店。
@@ -152,8 +147,6 @@ ms.lasthandoff: 03/12/2018
 -   **在系统驱动器上安装应用** - 阻止应用在设备的系统驱动器上存储数据。
 -   **游戏 DVR（仅限桌面版）**- 配置是否允许游戏的录制和广播。
 -   **仅限来自应用商店的应用** - 配置用户是否可以安装应用商店以外位置的应用。
-
-
 
 ## <a name="edge-browser"></a>Microsoft Edge 浏览器
 
@@ -192,6 +185,7 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="search"></a>搜索
 - **安全搜索（仅限移动版）**- 控制 Cortana 在搜索结果中筛选成人内容的方式。 可以选择“严格”或“中等”或允许最终用户选择自己的设置。
+- **在搜索中显示 Web 结果** - 阻止或允许在设备搜索中显示 Web 结果。
 
 ## <a name="cloud-and-storage"></a>云和存储
 -   **Microsoft 帐户** - 使用户可以将 Microsoft 帐户与设备关联。
@@ -216,7 +210,6 @@ ms.lasthandoff: 03/12/2018
 -   **Wi-Fi 扫描间隔** - 指定设备扫描 Wi-Fi 网络的频率。 指定介于 1（频次最高）至 500（频次最低）之间的值。
 -   **蓝牙允许的服务** – 以十六进制字符串指定受允许的蓝牙服务和配置文件列表。
 
-
 ## <a name="control-panel-and-settings"></a>控制面板和设置
 
 -   **设置应用** - 阻止访问 Windows 设置应用。
@@ -235,7 +228,7 @@ ms.lasthandoff: 03/12/2018
     -   **隐私** - 阻止访问设置应用的隐私区域。
     -   更新和安全性 - 阻止访问设置应用的更新和安全区域。
 
-## <a name="start"></a>启动
+## <a name="start"></a>以管理员身份启动
 
 - **从任务栏取消固定应用** - 阻止用户从开始菜单取消固定应用。
 - **“开始”上的文档** - 隐藏或显示 Windows 开始菜单中的文档文件夹。
@@ -258,41 +251,48 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="kiosk-preview"></a>展台（预览版）
 
--   展台模式 - 标识策略支持的[展台模式](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)的类型。 选项包括：
+展台设备通常运行一个应用或一组特定应用。 用户不得访问任何展台应用以外设备上的任何功能。
 
-      - 未配置（默认）- 策略不启用展台模式。 
-      - 单应用展台 - 配置文件将设备作为单应用展台启用。
-      - 多应用展台 - 配置文件将设备作为多应用展台启用。
+- **展台模式** - 标识策略支持的展台模式的类型。 选项包括：
 
-    单应用展台的设置要求如下：
+  - 未配置（默认）- 策略不启用展台模式。 
+  - **单应用展台** - 配置文件使设备仅运行一个应用。 用户登录时，将启动一个特定应用。 此模式还会限制用户打开新应用或更改正在运行的应用。
+  - **多应用展台** - 配置文件将使设备运行多个应用。 用户仅可使用你添加的应用。 多应用展台或固定目标设备的优势为，通过让用户仅访问其所需应用和阻止其查看不需要的应用，为用户提供易于理解的体验。
 
-      - 用户帐户 - 指定与展台应用相关联的本地（对设备而言）用户帐户或 Azure AD 帐户登录名。 对于加入 Azure AD 域的帐户，以 `domain\\username@tenant.org` 的形式指定帐户。
+#### <a name="single-app-kiosks"></a>单应用展台
+输入以下设置：
 
-         对于公共环境中的设备，使用具有最小特权的帐户来阻止未授权活动。  
+- **用户帐户** - 输入与展台应用相关联的本地（对设备而言）用户帐户或 Azure AD 帐户登录名。 对于加入 Azure AD 域的帐户，请使用 `domain\username@tenant.org` 格式输入帐户。 
 
-      - 应用的应用程序用户模型 ID (AUMID) - 指定展台应用的 AUMID。 若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
+    对于面向公众且启用自动登录的环境中的展台，应使用具有最低权限的用户类型（如本地标准用户帐户）。 若要针对展台模式配置 Azure Active Directory (AD) 帐户，请使用 `AzureAD\user@contoso.com` 格式。
 
-    [多应用展台](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune)需要展台配置。 使用“添加”按钮创建展台配置，或选择现有展台配置。
+- **应用的应用程序用户模型 ID (AUMID)** - 输入展台应用的 AUMID。 若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
 
-    多应用展台配置包括以下设置：
+#### <a name="multi-app-kiosks"></a>多应用展台
+[多应用展台](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune)使用可列出允许的应用和其他设置的展台配置。 
 
-    - 展台配置名称 - 用于标识给定配置的友好名称。
+使用“添加”按钮创建展台配置（或选择现有配置）。 然后输入以下设置：
 
-    - 一个或多个展台应用的组成内容如下：
+- **展台配置名称** - 输入用于标识配置的友好名称。
 
-        - **应用类型** - 指定展台应用的类型。  支持的值包括：   
+- **展台应用** - 输入在“开始”菜单上可用的应用。 你添加的应用仅是用户可以打开的应用。
 
-            - Win32 应用 - 传统的桌面应用。 （就设备而言，需要可执行文件的完全限定的路径名。）
+  - **应用类型** - 选择展台应用的类型：
+    - Win32 应用 - 传统的桌面应用。 就设备而言，需要可执行文件的完全限定的路径名。
+    - UWP 应用 - 通用 Windows 应用。 需要[应用的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
 
-            - UWP 应用 - 通用 Windows 应用。 需要[应用的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
+  - **标识符** - 输入可执行文件（Win32 应用）的完全限定的路径名，或[应用的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（UWP 应用）。
 
-        - 应用标识符 - 指定可执行文件（Win32 应用）的完全限定路径名，或[应用的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（UWP 应用）。
+- **任务栏**：在展台上选择“启用”（显示）任务栏，或将其保持为“未配置”（隐藏）。
 
-    - 任务栏 - 指示在展台中显示（已启用）还是隐藏（未配置）任务栏。
+- **“开始”菜单布局** - 输入一个 XML 文件，用于描述应用在“开始”菜单上的显示方式。 相关指导和示例 XML，请参阅[自定义和导出“开始”布局](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)。
 
-    - “开始”菜单布局 - 指定一个 XML 文件，用于描述应用[在“开始”菜单上如何显示](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)。
 
-    - 分配的用户 - 指定一个或多个与展台配置相关联的用户帐户。 该帐户可以是设备的本地帐户，也可以是与展台应用相关联的 Azure AD 帐户登录名。 以 `domain\\username@tenant.org` 的形式指定已加入域的帐户。
+  有关使用和创建 XML 文件的更多详细信息，请参阅[创建运行多个应用的 Windows 10 展台](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)。
+
+- **分配用户** - 添加一个或多个可以使用你添加的应用的用户帐户。 帐户登录后，仅可使用在配置中定义的应用。 该帐户可以是设备的本地帐户，也可以是与展台应用相关联的 Azure AD 帐户登录名。
+
+    对于面向公众且启用自动登录的环境中的展台，应使用具有最低权限的用户类型（如本地标准用户帐户）。 若要针对展台模式配置 Azure Active Directory (AD) 帐户，请使用 `domain\user@tenant.com` 格式。
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender 防病毒
 
@@ -328,14 +328,11 @@ ms.lasthandoff: 03/12/2018
     -   **用户定义**
     -   **阻止**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 防病毒排除项
 
 -   **要从扫描和实时保护排除的文件和文件夹** - 向排除列表添加一个或多个文件和文件夹（如 **C:\Path** 或 **%ProgramFiles%\Path\filename.exe**）。 不会在任何实时或计划的扫描中包括这些文件和文件夹。
 -   **要从扫描和实时保护排除的文件扩展名** - 向排除列表添加一个或多个文件扩展名（如 **jpg** 或 **txt**）。 不会在任何实时或计划的扫描中包括具有这些扩展名的任何文件。
 -   **要从扫描和实时保护排除的进程** - 向排除列表添加一个或多个类型为 **.exe**、**.com** 或 **.scr** 的进程。 这些进程不会包括在任何实时或计划的扫描中。
-
 
 ## <a name="network-proxy"></a>网络代理
 
@@ -348,9 +345,7 @@ ms.lasthandoff: 03/12/2018
     -   **代理例外** - 输入不得使用代理服务器的任何 URL。 请使用分号分隔每一项。
     -   **对本地地址跳过代理服务器** - 如果不想在 Intranet 上对本地地址使用代理服务器，请启用此选项。
 
-
 ## <a name="windows-spotlight"></a>Windows 聚焦
-
 
 - Windows 聚焦 - 使用此设置在 Windows 10 设备上阻止所有 Windows 聚焦功能。 如果阻止此设置，以下设置也将不可用。
     - **锁定屏幕上的 Windows 聚焦** – 阻止 Windows 聚焦在设备锁定屏幕上显示信息。
@@ -360,7 +355,6 @@ ms.lasthandoff: 03/12/2018
     - **操作中心中的 Windows 聚焦** – 阻止 Windows 聚焦建议（如新应用或安全内容）在 Windows 操作中心显示。
     - **Windows 聚焦个性化** – 阻止 Windows 聚焦基于设备使用情况对结果进行个性化设置。
     - **Windows 欢迎体验** – 阻止 Windows 欢迎体验向用户显示有关新功能或更新功能的信息。
-
 
 ## <a name="projection"></a>投影
 
@@ -394,15 +388,3 @@ ms.lasthandoff: 03/12/2018
 - **消息同步(仅移动设备)** - 禁用随时随地传送消息以及短信备份和还原。
 - **彩信(仅移动设备)** - 对设备禁用彩信发送/接收功能。
 - **富通信(仅移动设备)** - 对设备禁用富通信服务发送/接收功能。
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,27 +1,26 @@
 ---
-title: "配置 Microsoft Intune 设备限制设置"
-titleSuffix: 
-description: "了解如何使用 Microsoft Intune 配置所管理的设备上的设置和功能。"
-keywords: 
-author: vhorne
-ms.author: victorh
+title: 在 Microsoft Intune 中配置设备限制设置 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中向 Android、macOS、iOS、Windows Phone 和 Windows 10 上的限制功能添加设备配置文件
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置设备限制设置
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中配置设备限制设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 通过设备限制可以跨众多类别控制所管理的各种设置和功能，例如：
 - 安全
@@ -36,11 +35,9 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>创建包含设备限制设置的设备配置文件
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
-3. 在“Intune”页，选择“设备配置”。
-2. 在“管理”部分下的“设备配置”页上，选择“配置文件”。
-3. 在“配置文件”页，选择“创建配置文件”。
-4. 在“创建配置文件”页，输入设备限制配置文件的“名称”和“说明”。
+2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+3. 选择“设备配置” > “配置文件” > “创建配置文件”。
+4. 输入设备限制配置文件的“名称”和“描述”。
 5. 从“平台”下拉列表中，选择要应用自定义设置的设备平台。 目前，可以为设备限制设置选择以下平台之一：
     - **Outlook Web Access (OWA)**
     - **iOS**

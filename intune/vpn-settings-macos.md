@@ -1,27 +1,27 @@
 ---
-title: "适用于 macOS 设备的 Microsoft Intune VPN 设置"
-titlesuffix: 
-description: "了解哪些 Intune 设置可用于在 macOS 设备上配置 VPN 连接。"
-keywords: 
+title: 适用于 macOS 设备的 Microsoft Intune VPN 设置
+titlesuffix: ''
+description: 了解哪些 Intune 设置可用于在 macOS 设备上配置 VPN 连接。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7df56b0f15b9fd346dc786ab265d772135795a8
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: a59d17c9497d5f7d0fbc3bcdf5f1e232115f643a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>在 Microsoft Intune 中为运行 macOS 的设备配置 VPN 设置
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文介绍可用于在运行 macOS 的设备上配置 VPN 连接的 Intune 设置。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/12/2018
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **SonicWall Mobile Connect**
-    -  **F5 Edge Client**
+    - **F5 Edge Client**
     - **Pulse Secure**
     - **自定义 VPN**
 - **拆分隧道** - “启用”或“禁用”此选项，让设备根据流量确定使用哪个连接。 例如，旅馆中的用户使用 VPN 连接来访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。
@@ -55,6 +55,6 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="proxy-settings"></a>代理设置
 
-- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的**代理服务器 URL**（例如 **http://proxy.contoso.com**）。
+- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL（例如 http://proxy.contoso.com）。
 - **地址** - 输入代理服务器地址（作为 IP 地址）。
 - **端口号** - 输入与代理服务器关联的端口号。

@@ -1,35 +1,35 @@
 ---
-title: "如何将 Windows 应用商店应用添加到 Microsoft Intune"
-titleSuffix: 
-description: "了解如何将 Windows 应用商店应用添加到 Microsoft Intune。"
-keywords: 
+title: 如何将 Microsoft Store 应用添加到 Microsoft Intune
+titleSuffix: ''
+description: 了解如何将 Microsoft Store (Windows Store) 应用添加到 Microsoft Intune。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e2280ad72bbd353d80af316cde436e8ffc79d1f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 511cf2e01a2f5db93f0e0db9dbe2a32326c17723
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>如何将 Windows 应用商店应用添加到 Microsoft Intune
+# <a name="add-microsoft-store-apps-to-microsoft-intune"></a>将 Microsoft Store 应用添加到 Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-必须首先将应用添加到 Intune 中，才可以分配、监视、配置或保护它们。 通过以下步骤，可以将 Windows 商店应用添加到 Microsoft Intune。
+必须首先将应用添加到 Intune 中，才可以分配、监视、配置或保护它们。 通过以下步骤，可以将 Microsoft Store 应用添加到 Microsoft Intune。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
-3. 在 Intune 窗格中，选择“移动应用”。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 在“Intune”窗格中，选择“移动应用”。
 4. 在“移动应用”工作负荷中，选择“管理” > “应用”。
 5. 在应用列表的上方，选择“添加”。
 6. 在“添加应用”窗格中，选择“Windows”作为“应用类型”，并选择“应用信息”。
@@ -51,5 +51,4 @@ ms.lasthandoff: 03/12/2018
 创建的应用将显示在应用列表中，可在该列表中将其分配到所选择的组。 
 
 ## <a name="next-steps"></a>后续步骤
-
 - [如何将应用分配到组](apps-deploy.md)

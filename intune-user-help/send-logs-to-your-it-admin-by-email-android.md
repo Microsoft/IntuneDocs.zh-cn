@@ -1,44 +1,47 @@
 ---
-title: "通过电子邮件将日志发送给公司支持人员 | Microsoft Docs"
-description: "在 Android 设备上使用电子邮件发送数据日志"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 通过电子邮件将日志发送给公司支持人员 | Microsoft Docs
+description: 在 Android 设备上使用电子邮件发送数据日志
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ddd0c1113b7cce6f461b627a3d346806df3bbc8c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="send-logs-to-your-company-support-using-email"></a>通过电子邮件将日志发送给公司支持人员
+# <a name="email-logs-to-your-company-support"></a>通过电子邮件将日志发送给公司支持人员
 
-如果在 Android 设备上使用公司门户应用时遇到错误，可以通过电子邮件向公司支持人员发送信息，以帮助他们解决问题。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
+在 Android 设备上使用公司门户应用有时会出现错误。 发生这种情况时，可以通过电子邮件将有关该错误的详细信息发送给公司的支持人员。 这些详细信息将提供为你解决该问题所需的上下文。  
+
+错误详细信息保留在设备上一个名为“诊断日志”的专用文档中。 将日志上传到公司门户应用时，系统会首先将日志发送给负责该应用的 Microsoft 开发人员。 开发人员会使用该日志来改善应用的功能，并防止将来出现错误。 然后我们会向你提供具体错误的事件 ID，方便你将其共享给你所在公司的支持人员。  
 
 > [!Note]
-> 为了让公司支持人员能够更快找出问题，应打开“详细日志记录”。 详细日志记录包含报表中的所有相关详细信息。 了解如何[在此处打开详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。
+> 为了让公司支持人员能够更快找出问题的原因，应打开“详细日志记录”。 详细日志记录中记录了有关某个错误的所有详细信息，并将其包含在报告中。 了解如何[在此处打开详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。  
 
-通过电子邮件将日志发送给公司支持人员：
+若要通过电子邮件将日志发送给公司支持人员，请执行以下操作：
 
 1.  打开公司门户应用。
 
-2.  点击“菜单” >  “帮助和反馈”。
+2.  点击“菜单” > “帮助” > “电子邮件支持”。
 
     > [!NOTE]
     > “菜单”可以是软件按钮也可以是硬件按钮，具体取决于拥有的 Android 设备。
 
-3.  在“**帮助**”下，点击“**获取帮助**”。
+3.  点击“发送电子邮件并上传日志”。
+4.  上传完成后，点击电子邮件应用。 随后会打开一封电子邮件，其中的主题字段已经预填充了事件 ID。 请在电子邮件正文中描述你遇到的问题。  
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

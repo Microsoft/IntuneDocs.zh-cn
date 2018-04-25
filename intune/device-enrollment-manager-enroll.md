@@ -1,29 +1,29 @@
 ---
-title: "使用设备注册管理员帐户注册设备"
+title: 使用设备注册管理员帐户注册设备
 titlesuffix: Microsoft Intune
-description: "使用设备注册管理器帐户在 Intune 中注册设备。 \""
-keywords: 
+description: 使用设备注册管理器帐户在 Intune 中注册设备。 "
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>通过使用设备注册管理员帐户注册设备
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 设备注册管理器 (DEM) 帐户是可注册最多 1,000 台设备的特殊用户帐户。 将现有用户添加到 DEM 帐户以向他们提供特殊 DEM 功能。 每台已注册设备均使用单一许可证。 我们建议将通过此帐户注册的设备用作共享设备，而不是个人 ("BYOD") 设备。  
 
@@ -49,12 +49,12 @@ DEM 用户可以：
 使用设备注册管理器帐户注册的设备具有以下限制：
 
   - 不是每一个用户都可以访问。 因为设备没有分配的用户，所以设备没有电子邮件或公司数据访问权限。 例如，VPN 配置等仍可用于向设备应用提供数据访问权限。
-  - 无条件性访问，原因是这些设备按每个用户进行注册。
   - DEM 用户无法在设备本身上使用公司门户注销 DEM 注册的设备。 Intune 管理员可以取消注册。
   - 公司门户应用或网站中仅显示本地设备。
-  - 用户无法使用 Apple 批量购买计划 (VPP) 应用，因为每个用户都需具有 Apple ID 才可管理应用。
+  - 用户无法通过用户许可证使用 Apple Volume Purchase Program (VPP) 应用，因为每个用户都需具有 Apple ID 才可管理应用。
   - （仅限 iOS）如果使用 DEM 注册 iOS 设备，则无法使用 Apple Configurator、Apple 设备注册计划 (DEP) 或 Apple School Manager (ASM) 注册设备。
   - （仅限 Android）使用单个 DEM 帐户注册 Android for Work 设备时，可注册的设备数量有限。 每个 DEM 帐户最多可注册十台 Android 工作配置文件设备。 旧版 Android 注册不受此限制。
+  - 如果设备具有设备许可证，则可以安装 VPP 应用。
   - 每个设备都需要设备许可证。 详细了解[用户和设备许可证](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 
 

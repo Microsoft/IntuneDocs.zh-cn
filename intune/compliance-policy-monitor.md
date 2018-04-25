@@ -1,27 +1,30 @@
 ---
-title: "监视 Microsoft Intune 设备符合性策略"
-titlesuffix: 
-description: "使用设备符合性仪表板监视整体设备符合性，查看报表，并查看基于策略和基于设置的设备符合性。"
-keywords: 
+title: 监视 Microsoft Intune 设备符合性策略
+titlesuffix: ''
+description: 使用设备符合性仪表板监视整体设备符合性，查看报表，并查看基于策略和基于设置的设备符合性。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
 符合性报告可帮助管理员分析其组织中设备的符合性状态，并快速解决组织内用户遇到的符合性相关的问题。 你可以查看有关设备的整体符合性状态、各设置的符合性状态、各策略的符合性状态，并向下钻取到各设备，以查看影响设备的特定设置和策略。
+
+> [!NOTE]
+> 根据反馈，我们在三月对 Intune 服务的安全性采取了一些增强措施。 你可能需要进行一些操作，以免最终用户失去对电子邮件的访问权限，具体措施取决于符合性策略的配置方式。 有关详细信息，请参阅[即将推出的安全增强功能](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/)。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -31,7 +34,7 @@ ms.lasthandoff: 03/08/2018
 
 2.  从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
-3.  选择“ **Intune** ”&gt;“**设备符合性**”&gt;“**概述**”，“**设备符合性仪表板**”将打开。
+3.  选择“**Intune**”&gt;“**设备符合性**”&gt;“**概述**”，“**设备符合性仪表板**”将打开。
 
 > [!IMPORTANT]
 > 设备必须注册到 Intune 才能接收设备符合性策略。
@@ -124,6 +127,19 @@ ms.lasthandoff: 03/08/2018
 单击某个设备，打开“设备”窗格（其中已选定该设备），可查看关于该设备应用的设备符合性策略设置的更多详细信息。
 
 在设备策略设置上单击时，可以看到来源于管理员指定的设备符合性设置的设备符合性策略名称。
+
+### <a name="devices-without-compliance-policy"></a>没有符合性策略的设备
+此报表标识出了未分配有任何符合性策略的设备。 引入将没有任何符合性策略的所有设备都标记为“不符合”的安全性设置后，能识别出这些设备成为至关重要的一步。 然后才能为这些设备分配至少一个符合性策略。
+
+> [!NOTE]
+> 可以在 Intune 门户中配置该新安全性设置。 选择“设备符合性”，然后在“设置”下选择“符合性策略设置”。 然后使用切换按钮把“将未分配有任何符合性策略的设备标记为”设置为“符合”或“不符合”。 有关详细信息，请参阅 [Intune 服务中的安全性增强功能](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/)。
+
+![显示“没有符合性策略的设备”报表的图片](./media/idc-12.png)
+
+“没有符合性策略的设备”磁贴位于设备符合性仪表板中，该磁贴中显示了没有符合性策略的所有设备、该设备的用户、符合性状态以及设备型号。
+
+> [!NOTE]
+> 该报表中不会显示分配有任何类型的符合性策略的用户，无论是何设备平台。 例如，如果你无意中向使用 Android 设备的某位用户分配了一个 Windows 符合性策略，则该设备不会出现在此报表中。 但 Intune 会将该 Android 设备视为不符合。 为避免出现问题，我们建议你为每个设备平台创建对应的策略，并将这些策略部署给所有用户。
 
 ### <a name="per-policy-device-compliance-report"></a>基于策略的设备符合性报告
 

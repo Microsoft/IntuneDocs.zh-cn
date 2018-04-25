@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 iOS 应用商店允许你为想要在公司运行的应用购买多个许可证。 购买多个副本可帮助你有效地管理公司的应用。
 
@@ -152,6 +152,17 @@ Intune 将在应用商店内检测 VPP 应用更新，并在设备签入时自�
 ## <a name="further-information"></a>更多信息
 
 符合条件设备的用户首次尝试在设备上安装 VPP 应用时，系统将要求其加入 Apple Volume Purchase Program。 开始安装应用前，他们必须加入该计划。 加入 Apple Volume Purchase 计划的邀请需要用户可以使用 iOS 设备上的 iTunes 应用。 如果已设置禁用 iTunes 应用商店应用的策略，基于用户许可的 VPP 应用将无法工作。 解决方案是删除策略，或使用基于设备的许可来允许 iTunes 应用。
+
+## <a name="frequently-asked-questions"></a>常见问题
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>从设备中安装和删除应用后，门户需要多长时间来更新许可证计数？
+安装或卸载应用后，许可证会在几小时内更新。 请注意，如果最终用户从设备中删除应用，许可证仍将继续分配给该用户或设备。
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>是否可以超额订阅应用，如可以，请指明情况。
+是的。 Intune 管理员可以超额订阅应用。 例如，如果管理员针对应用 XYZ 购买 100 个许可证，然后将应用分配给包含 500 个成员的组。 则前 100 个成员（用户或设备）将分配到许可证，而其余成员不会获得许可证分配。
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>据我了解，Intune 每天与 Apple 自动同步应用许可证，是这样吗？
+Intune 每 15 小时与 Apple 同步一次应用许可证。
 
 ## <a name="next-steps"></a>后续步骤
 
