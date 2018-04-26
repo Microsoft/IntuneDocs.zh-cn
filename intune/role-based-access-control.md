@@ -2,8 +2,8 @@
 title: 基于角色的访问控制 (RBAC) 与 Microsoft Intune
 description: 了解基于角色的访问控制 (RBAC) 如何使你能够控制可在 Microsoft Intune 中执行各种操作并进行更改的人员。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>基于角色的管理控制 (RBAC) 与 Microsoft Intune
 
@@ -69,7 +69,7 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 |设备注册管理器|读取、更新|
 |托管设备|读取、更新<!--, Delete [To be added in 1803]-->|
 |移动应用|分配、创建、删除、读取、更新|
-|报告|读取|
+|Reports|读取|
 |远程操作|清理电脑、重启、远程锁定、停用、同步设备、擦除|
 |组织|读取|
 

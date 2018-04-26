@@ -3,8 +3,8 @@ title: 技术支持疑难解答门户
 titlesuffix: Microsoft Intune
 description: 支持人员使用疑难解答门户来解决用户的技术问题。
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 9ff0d6f662fca4cb223496d342de5d6378c05ceb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5d924e216dd6d0fe13bc4c7718b5368db1d35f8c
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑难解答门户帮助公司的用户
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 
 在设备或用户所拥有设备上运行的应用，这些用户由 Intune 和 Azure Active Directory (AD) 托管。
 
-### <a name="properties"></a>“属性”
+### <a name="properties"></a>属性
 
 移动应用的属性。
 
@@ -114,7 +114,7 @@ ms.lasthandoff: 04/16/2018
 
 应用保护策略适用于集成了 EMS 技术的移动应用。 当下载到移动应用（包括 Office 移动应用）时，可为你的公司数据提供一种基线保护。 
 
-### <a name="properties"></a>“属性”
+### <a name="properties"></a>属性
 
 此表概述了由 Intune 托管的设备的应用保护策略状态。
 
@@ -147,7 +147,7 @@ ms.lasthandoff: 04/16/2018
 
 请确保用于访问公司应用和数据的设备符合特定规则（如使用 PIN 访问设备，以及对设备上存储的数据进行加密）。
 
-### <a name="properties"></a>“属性”
+### <a name="properties"></a>属性
 
 符合性策略的属性。
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 04/16/2018
 
 适用于具有特定于供应商配置的移动应用的应用配置策略。 
 
-### <a name="properties"></a>“属性”
+### <a name="properties"></a>属性
 
 配置策略的属性。
 

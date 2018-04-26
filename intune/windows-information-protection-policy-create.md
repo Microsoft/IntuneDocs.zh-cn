@@ -3,8 +3,8 @@ title: 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 titlesuffix: Microsoft Intune
 description: 通过 Microsoft Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: doubeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 821ce2c9992d32195b95e766f96bea7322ec2e7e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7273a29eea9cd9b55e998302de2bc57d26d34e04
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/16/2018
 
 可将应用保护策略用于 Windows 10 应用，在未注册设备的情况下保护应用。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 添加 WIP 策略时，须了解一些相关概念：
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 04/16/2018
     - **说明：**（可选）键入说明。
     - **平台：**选择“Windows 10”作为应用保护策略的支持平台。
     - **注册状态：**选择“不注册”作为策略的注册状态。
-7.  选择**“创建”**。 创建策略并在“应用保护策略”边栏选项卡的表中显示该策略。
+7.  选择“创建”。 创建策略并在“应用保护策略”边栏选项卡的表中显示该策略。
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>将推荐的应用添加到允许的应用列表中
 
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/16/2018
 4. 从“Intune 应用保护”边栏选项卡中选择“受保护的应用”。 随即打开“受保护的应用”边栏选项卡，并显示此应用保护策略列表中已包含的全部应用。
 5. 选择“添加应用”。 “添加应用”信息显示筛选后的应用列表。 可使用边栏选项卡顶部的列表更改列表筛选器。
 6. 选择要允许其访问公司数据的各个应用。
-7. 单击“确定” 。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用。
+7. 单击" **确定**"。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用。
 8. 单击 **“保存”**。
 
 ## <a name="add-a-store-app-to-your-allowed-apps-list"></a>将“应用商店”应用添加到“允许的应用”列表中
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
 5. 选择“添加应用”。 “添加应用”信息显示筛选后的应用列表。 可使用边栏选项卡顶部的列表更改列表筛选器。
 6. 从列表中，选择“应用商店应用”。
 7. 输入“名称”、“发行商”、“产品名称”和“操作”的值。 请确保将“操作”值设为“允许”，使应用可访问公司数据。
-9. 单击“确定” 。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用。
+9. 单击" **确定**"。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用。
 10. 单击 **“保存”**。
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>将桌面应用添加到“允许的应用”列表中
@@ -105,13 +105,13 @@ ms.lasthandoff: 04/16/2018
 5. 选择“添加应用”。 “添加应用”信息显示筛选后的应用列表。 可使用边栏选项卡顶部的列表更改列表筛选器。
 6. 从列表中，选择“桌面应用”。
 7. 输入“名称”、“发行商”、“产品名称”、“文件”、“最低版本”、“最高版本”和“操作”的值。 请确保将“操作”值设为“允许”，使应用可访问公司数据。
-9. 单击“确定” 。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用。
+9. 单击" **确定**"。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用。
 10. 单击 **“保存”**。
 
 ## <a name="wip-learning"></a>WIP Learning
 添加要使用 WIP 保护的应用后，必须使用“WIP Learning” 应用保护模式。
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>在开始之前
 
 WIP Learning 是一个报表，用于监视已启用 WIP 和 WIP 未知的应用。 未知应用指不是由组织的 IT 部门部署的应用。 在“块”模式下强制执行 WIP 前，可从报告中导出这些应用并将其添加到 WIP 策略，以避免生产力中断。
 

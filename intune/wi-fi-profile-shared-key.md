@@ -2,8 +2,8 @@
 title: 创建具有预共享密钥的 WiFi 配置文件 - Microsoft Intune - Azure | Micrososft Docs
 description: 在 Microsoft Intune 中使用自定义配置文件，创建具有预共享密钥的 Wi-Fi 配置文件并获取适用于 Android、Windows 的 XML 示例代码和基于 EAP 的 Wi-Fi 配置文件
 keywords: ''
-author: mandia
-ms.author: MandiOhlinger
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 >- 在 Windows 10 中使用预共享的密钥会导致 Intune 中出现修正错误。 出现这种情况时，Wi-Fi 配置文件已正确分配给设备，并且该配置文件可以正常工作。
 >- 如果导出的 Wi-Fi 配置文件含有预共享密钥，请务必保管好该文件。 密钥为纯文本格式，你需负责保管好该密钥。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 - 如下所述，从连接到网络的计算机复制代码可能更加轻松。
 - 对于 Android，还可以使用 [Android PSK 生成器](http://intunepskgenerator.johnathonb.com/)。
@@ -212,7 +212,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 2. 搜索 XML 文件以找到具有正确配置文件的 XML 文件。
 3. 找到正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的“数据”字段中。
 
-## <a name="best-practices"></a>最佳实践
+## <a name="best-practices"></a>最佳做法
 - 在部署具有 PSK 的 Wi-Fi 配置文件前，请确认该设备能否直接连接到终结点。
 
 - 在轮换密钥（密码或通行短语）时，预计故障时间并进行相应的部署规划。 考虑在非工作时间段推送新 Wi-Fi 配置文件。 此外，警告用户连接性可能会受到影响。

@@ -3,8 +3,8 @@ title: 适用于运行 iOS 的设备的 Microsoft Intune 主屏幕布局设置
 titleSuffix: ''
 description: 了解可用于在运行 iOS 的设备上自定义主屏幕和停靠的 Microsoft Intune 设置。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab5ee886cbc324b0fe3383e7e585e8d0b6482326
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3361ce41dfa95de0cb1a7a3bdbdbd74e7d6d5edf
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>适用于运行 iOS 的设备的 Microsoft Intune 主屏幕布局设置
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 1. 选择“添加”向停靠添加项目。
 2. 在“添加行”窗格中，选择是要添加“应用”还是“文件夹”。
 3. 使用本主题中的信息，配置要显示在停靠面板上的应用和文件夹。
-4. 继续添加项目。 完成后，单击每个窗格中的“确定”，直到返回到“创建配置文件”窗格。 选择**“创建”**。
+4. 继续添加项目。 完成后，单击每个窗格中的“确定”，直到返回到“创建配置文件”窗格。 选择“创建”。
 
 >[!TIP]
 > 可以拖放任何主屏幕和页面列表中的项，以对其重新排序。
@@ -121,7 +121,7 @@ ms.lasthandoff: 04/16/2018
 |消息|com.apple.MobileSMS|
 |音乐|com.apple.Music|
 |新闻|com.apple.news|
-|注释|com.apple.mobilenotes|
+|注意|com.apple.mobilenotes|
 |数字|com.apple.Numbers|
 |页面|com.apple.Pages|
 |Photo Booth|com.apple.Photo-Booth|

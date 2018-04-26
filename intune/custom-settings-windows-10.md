@@ -3,8 +3,8 @@ title: 适用于运行 Windows 10 的设备的 Microsoft Intune 自定义设置
 titlesuffix: ''
 description: 了解可以在 Windows 10 自定义配置文件中配置的自定义设置。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8e0d56c91b710a86949844d2fd455e4183488f5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 36705c49a55c88c41470feaad14520e900dcb3dd
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>适用于运行 Windows 10 的设备的 Microsoft Intune 自定义设备设置
 

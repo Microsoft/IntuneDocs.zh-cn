@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -155,10 +155,9 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>步骤 2：为 Managed Browser 分配一个应用配置策略。
 此过程将 Managed Browser 应用配置为使用应用代理重定向。 使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
-|||
-|-|-|
-|Key|值|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| Key                                                             | 值    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 若要深入了解 Managed Browser 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅“企业移动性 + 安全性”博客文章[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)（更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问）。
 
@@ -166,10 +165,8 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 使用此设置可配置用户启动 Managed Browser 或创建新选项卡时看到的主页。使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                Key                                |                                                           值                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例：<https://www.bing.com> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>如何配置 Managed Browser 的书签
@@ -182,21 +179,17 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                Key                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 <strong>&#124;</strong> 分隔标题和 URL。<br><br>示例：Microsoft 必应&#124;<https://www.bing.com><br><br>若要配置多个书签，可使用双字符 <strong>&#124;&#124;</strong> 分隔每对书签<br><br>示例：必应&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>如何为 Managed Browser 指定允许和阻止的 URL
 
 使用创建 Managed Browser 应用配置的过程提供以下键值对：
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Key                                                                                                                                                                |                                                                                                                                                                                    值                                                                                                                                                                                    |
-| 选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：<strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | 键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 <strong>&#124;</strong> 分隔。<br><br>示例：<br><br>URL1&#124;URL2&#124;URL3<br>http://.contoso.com/&#124;https://.bing.com/&#124;<https://expenses.contoso.com> |
+|Key|值|
+|-|-|
+|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >不要同时指定这两个键。 如果两个键同时针对同一个用户，则使用允许键，因为它是限制性最强的选项。

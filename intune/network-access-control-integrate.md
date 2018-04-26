@@ -2,8 +2,8 @@
 title: 网络访问控制与 Microsoft Intune 集成 - Azure | Microsoft Docs
 description: 网络访问控制 (NAC) 解决方案使用 Intune 检查设备的注册情况和符合性。 NAC 内含某些行为，并且能与条件访问配合使用。 请参阅相关步骤载入，并获取合作伙伴解决方案的列表。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf796afcfc42f2cdf778713f4dceadb2597a12e2
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 

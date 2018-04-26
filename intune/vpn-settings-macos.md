@@ -3,8 +3,8 @@ title: 适用于 macOS 设备的 Microsoft Intune VPN 设置
 titlesuffix: ''
 description: 了解哪些 Intune 设置可用于在 macOS 设备上配置 VPN 连接。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a59d17c9497d5f7d0fbc3bcdf5f1e232115f643a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d1224c00a1f7e8cf303304b3a0f038ade79b9633
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>在 Microsoft Intune 中为运行 macOS 的设备配置 VPN 设置
 

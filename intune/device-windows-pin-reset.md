@@ -1,23 +1,23 @@
 ---
-title: "使用 Microsoft Intune 在 Windows 设备上重置密码 - Azure | Microsoft Docs"
-description: "要在 Windows 设备上重置密码，请安装 Microsoft Pin 重置服务和 Microsoft Pin 重置客户端，使用 Azure Active Directory Directory ID 创建设备策略，然后在 Azure 门户中使用 Microsoft Intune 重置密码。"
-keywords: 
-author: MandiOhlinger
-ms.author: mandia
+title: 使用 Microsoft Intune 在 Windows 设备上重置密码 - Azure | Microsoft Docs
+description: 要在 Windows 设备上重置密码，请安装 Microsoft Pin 重置服务和 Microsoft Pin 重置客户端，使用 Azure Active Directory Directory ID 创建设备策略，然后在 Azure 门户中使用 Microsoft Intune 重置密码。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14a5654e72352b9dc8ebd51e6c926ea963e7432d
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: d3ceaaa1cce79483c446342b12d9918bb6beac42
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>使用 Intune 在 Windows 设备上重置密码
 

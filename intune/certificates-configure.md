@@ -14,11 +14,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
+ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为设备配置证书配置文件
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 2. 在每台设备上安装根证书或中间证书颁发机构 (CA) 证书，以便该设备识别 CA 的合法性。 为此，创建并分配**受信任的证书配置文件**。 分配此配置文件时，使用 Intune 托管的设备请求并接收根证书。 必须为每个平台创建单独的配置文件。 受信任的证书配置文件可用于以下平台：
 
     - iOS 8.0 及更高版本
-    - macOS 10.9 和更高版本
+    - macOS 10.11 和更高版本
     - Android 4.0 及更高版本
     - Android for Work
     - Windows 8.1 及更高版本

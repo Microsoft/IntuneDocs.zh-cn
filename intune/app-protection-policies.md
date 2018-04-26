@@ -3,8 +3,8 @@ title: 创建和部署应用保护策略
 titleSuffix: Microsoft Intune
 description: 了解如何创建和分配 Microsoft Intune 应用保护策略。
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/16/2018
 
 了解如何创建并向用户分配 Microsoft Intune 应用保护策略。 本主题还介绍如何对现有策略进行更改。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 有关如何在 Intune 经典门户中创建策略的说明，请参阅[如何创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
 >[!IMPORTANT]
 > 如果配合使用 Intune 和 Configuration Manager 来管理设备，则该策略仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不受影响。
 
-最终用户可以从 App Store 或 Google Play 下载应用。 有关更多信息，请参阅：
+最终用户可以从 App Store 或 Google Play 下载应用。 有关详情，请参阅：
 * [Android 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-android.md)
 * [iOS 应用由应用保护策略托管时会出现的情况](app-protection-enabled-apps-ios.md)
 

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>了解 Intune 中的 VPN 设置
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/16/2018
 - **Check Point Capsule VPN**
 - **Citrix VPN**
 - **SonicWALL Mobile Connect**
--  **F5 Edge Client**
+- **F5 Edge Client**
 - **IKEv2**
 - **L2TP**
 - **PPTP**
@@ -93,6 +93,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="apps-and-traffic-rules"></a>应用和通信规则
 
 **对这些应用限制 VPN 连接**：如果只希望某些应用使用 VPN 连接，则启用此设置。
+
 **关联应用**：输入自动使用 VPN 连接的应用列表。 应用的类型决定应用的标识符。 对于通用应用，输入包系列名称。 对于桌面应用，输入应用的文件路径。
 
 >[!IMPORTANT]

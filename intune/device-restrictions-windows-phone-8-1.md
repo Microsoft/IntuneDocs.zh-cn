@@ -3,8 +3,8 @@ title: 适用于 Windows Phone 8.1 的 Microsoft Intune 设备限制设置
 titleSuffix: ''
 description: 了解可用于控制运行 Windows Phone 8.1 的设备中设备设置和功能的 Intune 设置。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1bebb5915a7adeb13fd95b73587bca0171bebd83
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: eee162425d80a443976d00f9594673a35ce08be1
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 设备限制设置
 

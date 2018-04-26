@@ -3,8 +3,8 @@ title: 如何将 Windows Hello 企业版与 Microsoft Intune 集成
 titleSuffix: ''
 description: 了解如何创建策略以控制 Windows Hello 企业版在托管设备上的使用。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e701f1b9cddf5b5b2d7a864da1f5d286a6872c3f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>将 Windows Hello 企业版与 Microsoft Intune 集成
 
@@ -58,7 +58,7 @@ Intune 与 Hello for Business 集成的两种方式：
 
 5. 在“所有用户”窗格中，单击“设置”，然后为“配置 Windows Hello 企业版”从下列选项中进行选择：
 
-    - **“Disabled”**。 如果不想要使用 Windows Hello 企业版，请选择此设置。 屏幕上的所有其他设置将不可用。
+    - “禁用”。 如果不想要使用 Windows Hello 企业版，请选择此设置。 屏幕上的所有其他设置将不可用。
     - “启用”。 如果想要配置 Windows Hello 企业版设置，请选择此设置。
     - “不配置”。 如果不想使用 Intune 来控制 Windows Hello 企业版设置，请选择此设置。 Windows 10 设备上的任何现有 Windows Hello 企业版设置不会更改。 窗格中的所有其他设置将不可用。
 

@@ -17,18 +17,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
 获取对组织的应用、数据和资源的访问权限可使工作更加轻松。 你的组织使用 Intune [管理对这些资源的访问权限](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)，你需要下载适用于 macOS 的公司门户应用。 这些说明适用于使用 OS X El Capitan 10.11+ 的 macOS 设备。
 
-> [!NOTE]
-> 可在[此处](enroll-your-device-in-intune-macos-legacy.md)查找有关在 macOS 早期版本上注册 macOS 设备的说明。
 
 1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com)。
 

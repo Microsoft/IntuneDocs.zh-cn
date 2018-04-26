@@ -1,23 +1,23 @@
 ---
-title: "将 Windows Holographic 升级为 Windows Holographic for Business"
+title: 将 Windows Holographic 升级为 Windows Holographic for Business
 titleSuffix: Microsoft Intune
-description: "了解如何将运行 Windows Holographic 的设备升级到 Windows Holographic for Business"
-keywords: 
-author: vhorne
-ms.author: victorh
+description: 了解如何将运行 Windows Holographic 的设备升级到 Windows Holographic for Business
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7c750b372c297637abcdb9e941dae17714d081b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>将运行 Windows Holographic 的设备升级到 Windows Holographic for Business
 

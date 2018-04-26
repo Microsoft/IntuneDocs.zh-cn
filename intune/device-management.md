@@ -2,8 +2,8 @@
 title: 使用 Microsoft Intune 管理设备 - Azure | Microsoft Docs
 description: 通过 Microsoft Intune 查看管理的设备（包括将设备列表导出为 csv 格式）、查看已加入 Azure Active Directory 的设备、查看对设备进行的操作的更改日志、使用 TeamViewer 连接器允许 IT 管理员远程对 Android 进行故障排除，以及查看可以在设备上运行的所有操作。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: get-started-article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a003b9ec4208bc3449dfb1b3b2ee889a29b742b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 

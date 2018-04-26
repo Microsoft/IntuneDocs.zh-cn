@@ -3,8 +3,8 @@ title: 配置 Microsoft Intune for iOS 设备 SSO
 titlesuffix: ''
 description: 了解如何配置 Microsoft Intune for iOS 设备 SSO。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9afd14fd3ba4e464f0bf09c228290ef2f19eac3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>配置 Microsoft Intune for iOS 设备 SSO
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 04/16/2018
 
 8. 使用以下摘要表格，帮助填写“单一登录”窗格上的字段。 有关详细信息，请参阅表格后的各节。
 
-   |字段  |注释|
+   |字段  |注意|
    |---------|---------|
    |**来自 AAD 的用户名属性**|Intune 为 AAD 中的每个用户查看的属性，并在生成安装于设备上的 XML 有效负载之前填充相应字段（如 UPN）。|
    |**领域**|URL 的域部分。|
