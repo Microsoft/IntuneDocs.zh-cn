@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 23d669bfd535fb08bb52d194a1852aa774b5a186
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6f92cb350a69aeb600f1d48e9bdb0b22a623cb52
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="what-is-intune"></a>什么是 Intune？
 
@@ -81,7 +81,7 @@ Intune 设备管理通过使用移动操作系统中的可用协议或 API 来�
 当在 EMS 中结合其他服务使用 Intune 时，可以通过应用配置提供高于移动操作系统和移动应用本身提供的组织移动应用安全。 使用 EMS 管理的应用可以访问更多的移动应用和数据保护，包括：
 
 * [单一登录](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [多重身份验证](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+*   [多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [应用条件访问 - 如果移动应用中包含公司数据，则允许访问](app-based-conditional-access-intune.md)
 * [在同一个应用内将个人数据与公司数据隔离](app-protection-policy.md)
 * [应用保护策略（PIN、加密、另存为、剪贴板等等）](app-protection-policies.md)
