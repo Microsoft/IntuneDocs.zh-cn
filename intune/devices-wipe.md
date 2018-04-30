@@ -2,8 +2,8 @@
 title: 使用 Microsoft Intune 删除设备上的公司数据 - Azure | Microsoft Docs
 description: 使用 Microsoft Intune 删除设备上的公司数据，或者在 Android、Android for work、iOS、macOS 或 Windows 设备上恢复出厂设置。 并从 Azure Active Directory 中删除设备。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>通过恢复出厂设置或删除公司数据删除设备
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 04/16/2018
 |Wi-Fi 和 VPN 配置文件设置|删除。|
 |证书配置文件设置|已删除并吊销证书。|
 |管理代理|删除管理配置文件。|
-|电子邮件|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
+|Email|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
 |Outlook|删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。 进行此操作之前，需先将 Outlook 移动应用部署为 iOS 用户的必需应用。|
 |Azure AD 脱离|删除 Azure AD 记录。|
 |联系人 |删除从应用直接同步到本机通讯簿的联系人。 无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
@@ -89,7 +89,7 @@ ms.lasthandoff: 04/16/2018
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|
 |证书配置文件设置|已撤销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
-|电子邮件|N/A（Android 设备不支持电子邮件配置文件）|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
+|Email|N/A（Android 设备不支持电子邮件配置文件）|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
 |Outlook|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Outlook 应用接收的电子邮件。 否则，取消注册设备时不会擦除 Outlook。|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Outlook 应用接收的电子邮件。 否则，取消注册设备时不会擦除 Outlook。|
 |Azure AD 脱离|删除 Azure AD 记录。|删除 Azure AD 记录。|
 |联系人 |删除从应用直接同步到本机通讯簿的联系人。 无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|删除从应用直接同步到本机通讯簿的联系人。 无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
@@ -112,13 +112,13 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="windows"></a>Windows
 
-|数据类型|Windows 8.1 (MDM) 和 Windows RT 8.1|RT Windows|Windows Phone 8.1 和 Windows Phone 8|Windows 10|
+|数据类型|Windows 8.1 (MDM) 和 Windows RT 8.1|Windows RT|Windows Phone 8.1 和 Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune 安装的公司应用和关联数据|对于受 EFS 保护的文件，会撤销密钥。 用户无法打开文件。|未删除公司应用。|卸载最初通过公司门户安装的应用。 删除公司应用数据。|卸载应用。 删除旁加载密钥。<br>对于 Windows 10 版本 1703（创意者更新）及更高版本，不会删除 Office 365 专业增强版应用。|
 |设置|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|不支持。|删除。|
 |证书配置文件设置|已删除并吊销证书。|已删除并吊销证书。|不支持。|已删除并吊销证书。|
-|电子邮件|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。|不支持。|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。 删除由 Intune 预配的邮件帐户。|
+|Email|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。|不支持。|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。 删除由 Intune 预配的邮件帐户。|
 |Azure AD 脱离|不能。|不能。|删除 Azure AD 记录。|不适用。 在 Windows 10 中，无法删除已加入 Azure AD 设备的公司数据。|
 
 ### <a name="remove-company-data"></a>删除公司数据
