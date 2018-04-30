@@ -407,8 +407,6 @@
           href: edition-upgrade-configure-windows-10.md
         - name: 配置 Windows 10 教育版设置
           href: education-settings-configure.md
-        - name: 配置 iOS 教育设置
-          href: education-settings-configure-ios.md
         - name: 配置 iOS 教育共享设备
           href: education-settings-configure-ios-shared.md
         - name: 配置 iOS 更新策略
@@ -511,6 +509,8 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: 在 Intune 中启用 MTD
                   href: mtd-connector-enable.md
+        - name: 高级威胁防护
+          href: advanced-threat-protection.md
         - name: 网络访问控制
           href: network-access-control-integrate.md
         - name: 设置 Windows Hello
@@ -596,6 +596,10 @@
           href: data-intune-sends-to-apple.md
         - name: Intune 向 Google 发送的数据
           href: data-intune-sends-to-google.md
+        - name: Apple 发送到 Intune 的数据
+          href: data-apple-sends-to-intune.md
+        - name: Google 发送到 Intune 的数据
+          href: data-google-sends-to-intune.md
     - name: 监视和故障排除
       items:
         - name: 帮助用户排查问题
@@ -694,6 +698,8 @@
               href: reports-ref-user-device.md
             - name: 用户实体引用
               href: reports-ref-user.md
+        - name: 移动 Intune 数据仓库帐户数据
+          href: data-warehouse-account-move.md
     - name: 使用 Azure AD 访问 Microsoft Graph Intune API
       href: intune-graph-apis.md
       items:
