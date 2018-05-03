@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 4/26/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b349a61d61288f700294e04d029d825afba13445
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d1825d99243654c9fecac7729153a95234d435ff
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Intune 中运行 Windows Holographic for Business 的设备的自定义设备设置
 
@@ -54,21 +54,21 @@ ms.lasthandoff: 04/16/2018
 ---
 |OMA-URI|数据类型  |
 |---------|---------|
-|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|整数<br>0 - 不允许<br>1 - 允许（默认值）|
+|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br>0 - 不允许<br>1 - 允许（默认值）|
 
 ### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
 ---
 |OMA-URI|数据类型  |
 |---------|---------|
-|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|整数<br>0 - 不允许<br>1 - 允许（默认值）|
+|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br>0 - 不允许<br>1 - 允许（默认值）|
 
 ### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
 ---
 |OMA-URI|数据类型  |
 |---------|---------|
-|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|整数<br>0 – 不允许更新服务 <br>1 – 允许更新服务（默认值）。|
+|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br>0 – 不允许更新服务 <br>1 – 允许更新服务（默认值）。|
 
 ### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
@@ -82,14 +82,14 @@ ms.lasthandoff: 04/16/2018
 ---
 |OMA-URI|数据类型  |
 |---------|---------|
-|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|整数<br>0 – 未配置。 设备安装所有适用的更新。<br>1 – 设备仅安装既适用又在已批准更新列表中的更新。 如果 IT 想控制设备上的更新部署（例如部署前需要测试），请将此策略设置为 1。|
+|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br>0 – 未配置。 设备安装所有适用的更新。<br>1 – 设备仅安装既适用又在已批准更新列表中的更新。 如果 IT 想控制设备上的更新部署（例如部署前需要测试），请将此策略设置为 1。|
 
 ### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
 ---
 |OMA-URI|数据类型  |
 |---------|---------|
-|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**重要说明**<br>必须代表最终用户阅读和接受更新 EULA。 如果不这样做，将被视为违反法律或合同义务。|更新批准的节点和代表最终用户的 EULA 接受。|
+|./Vendor/MSFT/Update/ApprovedUpdates/GUID<br><br>**重要说明**<br>必须代表最终用户阅读和接受更新 EULA。 如果不这样做，将被视为违反法律或合同义务。|更新批准的节点和代表最终用户的 EULA 接受。<br/><br/>有关详细信息，请参阅[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。|
 
 ### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 

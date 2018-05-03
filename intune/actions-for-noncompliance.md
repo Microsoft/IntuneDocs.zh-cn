@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>为不符合的设备自动发送电子邮件和添加操作 - Intune
 
@@ -77,7 +77,10 @@ ms.lasthandoff: 04/16/2018
 1. 在 [Azure 门户](https://portal.azure.com)中，打开 Microsoft Intune，然后选择“设备符合性”。
 2. 选择“策略”，选择一个策略，然后选择“属性”。 
 
-   尚没有策略？ 创建 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台策略。
+  尚没有策略？ 创建 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台策略。
+  
+  > [!NOTE]
+  > 此时，JAMF 设备和面向设备组的设备无法接收符合性操作。
 
 3. 选择“针对非符合性的操作”，然后选择“添加”，输入操作参数。 可选择先前创建的消息模板，添加其他收件人，并更新宽限期计划。 可在计划中输入天数（0 到 365），然后可强制执行条件访问策略。 如果输入 0 天，则条件访问会立即阻止对公司资源的访问。
 

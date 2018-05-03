@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -80,6 +80,8 @@ Remember that you need to implement conditional access policies in addition to c
   - Windows 10
 
 - 设备必须注册到 Intune 才能报告其符合性状态
+
+- 支持注册了一个用户的设备或没有主要用户的设备。 不支持多个用户上下文。
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Intune 设备符合性策略如何与 Azure AD 配合使用
 
@@ -148,9 +150,9 @@ Remember that you need to implement conditional access policies in addition to c
 还可在不使用任何条件访问的情况下使用设备符合性策略。 独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，你可以获取有关未加密的设备数，或哪些设备已越狱或取得 root 权限的报告。 在不使用条件访问的情况下使用符合性策略时，公司资源将不具有访问限制。
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>部署设备符合性策略的方法
-可向用户组中的用户或设备组中的设备部署符合性策略。 将合规性策略部署到用户后，会对用户设备检查合规性。
+可向用户组中的用户或设备组中的设备部署符合性策略。 将符合性策略部署到用户后，会对所有用户设备检查符合性。
 
-对于设备组中的设备，“符合性策略设置”（“Azure 门户”>“设备符合性”）包括
+“符合性策略设置”（“Azure 门户”>“设备符合性”）包括：
 
 - **将未分配到符合性策略的设备标记为**：此属性具有两个值：
 
