@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 中的工作设备限制设置
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/16/2018
 
    例如，将 Gmail 应用部署到 Android for Work 配置文件时，可以防止最终用户添加或删除此工作配置文件中的帐户。
 
-- **通过蓝牙共享联系人**：能从汽车等使用蓝牙配对的其他设备访问工作联系人。 默认情况下未配置此设置，并且不会显示 Work 配置文件联系人。 如需允许共享并显示 Work 配置文件联系人，请选择“启用”。 Android OS v6.0 和更高版本的 Android for Work 配置文件设备上提供此设置。
+- **通过蓝牙共享联系人**：能从汽车等使用蓝牙配对的其他设备访问工作联系人。 默认情况下未配置此设置，并且不会显示 Work 配置文件联系人。 如需允许共享并显示 Work 配置文件联系人，请选择“启用”。 Android OS v6.0 和更高版本的 Android for Work 配置文件设备上提供此设置。 启用此选项可允许某些蓝牙设备在首次连接后即缓存工作联系人。 在初始配对/同步后禁用此策略不会从蓝牙设备中删除工作联系人。
 
 ### <a name="work-profile-password"></a>工作配置文件密码
 

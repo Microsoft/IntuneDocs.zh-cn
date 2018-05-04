@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bbed41e819af0cb5cc194553f2a5a3413a68425a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ebb79bc3405e9ea0dd38c24b86a4c9020760c895
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 
@@ -65,11 +65,7 @@ IT 部门可能管理的常见应用程序有：
 
 -   Intune 托管浏览器
 
--   Intune 图像查看器
-
--   Intune PDF 查看器
-
--   Intune AV 播放器
+-   Microsoft Azure 信息保护查看器
 
 -   Microsoft Word、Excel 和 PowerPoint
 

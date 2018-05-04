@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6ca8108924c6c062da0d0ef56ab5b68635dd9ca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b003fde011fd3a727c7c7a163fedb1dae6779425
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---april-2018"></a>Microsoft Intune 的早期版本 - 2018 年 4 月
 
@@ -39,6 +39,16 @@ ms.lasthandoff: 04/16/2018
 ## <a name="intune-in-the-azure-portal"></a>Azure 门户中的 Intune
 
 <!-- 1804 start -->
+
+### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>在个人资料中显示呼叫方 ID - Android for Work <!--1098984 -->
+在设备上使用个人资料时，最终用户可能不会看到工作联系人的呼叫方 ID 详细信息。 
+
+进行此更新后，“Android for Work” > “设备限制” > “Work 配置文件设置”中将出现新设置：
+- 在个人资料中显示工作联系人呼叫方 ID
+
+启用（不配置）后，工作联系人的呼叫方详细信息将显示在个人资料中。 阻止后，工作联系人的呼叫方号码不会显示在个人资料中。 
+
+适用范围：Android OS v6.0 和更高版本的 Android 工作配置文件设备
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802--"></a>添加到 Endpoint Protection 设置的新 Windows Defender Credential Guard 设置<!--1102252 --><!--from 1802-->
 
@@ -113,6 +123,9 @@ Intune 管理员将能够删除 AutoPilot 设备。
 ### <a name="play-sounds-on-ios-when-in-lost-mode----1629303---"></a>“丢失”模式下在 iOS 上播放声音<!-- 1629303 -->
 当受监督 iOS 设备处于移动设备管理 (MDM)[“丢失”模式](device-lost-mode.md)时，你可以播放声音（“设备” > “所有设备”> 选择一个 iOS 设备 >“概述” > “更多”）。 声音将持续播放，直到将该设备移除“丢失”模式或用户在该设备上禁用声音。 适用于 iOS 9.3 和更高版本的设备。
 
+### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Intune 将重新安装用户卸载的所需应用 <!-- 1947010 -->
+如果最终用户卸载所需应用，Intune 将在 24 小时内自动重新安装该应用，而不是等待 7 天的重新评估周期。
+
 ### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>对 SCEP 证书使用自定义使用者名称<!-- 2064190 -->
 你将能够使用“OnPremisesSamAccountName”作为 SCEP 证书配置文件中自定义使用者的公用名称。 例如，你可以使用 `CN={OnPremisesSamAccountName})`。
 
@@ -158,7 +171,7 @@ Intune 管理员将能够删除 AutoPilot 设备。
 > [!NOTE]
 > 此更改仅适用于 iOS；将继续只提供一个适用于 Android、Android for Work 和 macOS 的 Cisco AnyConnect 选项。
 
-#### <a name="more-information"></a>详细信息
+#### <a name="more-information"></a>更多信息
 
 需要创建新的 iOS Cisco AnyConnect VPN 配置文件以支持新应用，因为新的 Cisco AnyConnect 应用和 Cisco Legacy AnyConnect 应用是单独的应用。 如果是在环境中管理 AnyConnect 客户端的，还需要部署新的 Cisco AnyConnect 应用。 若要完成升级，还需要删除 Cisco Legacy AnyConnect 配置文件，并删除 Cisco Legacy AnyConnect 应用。
 

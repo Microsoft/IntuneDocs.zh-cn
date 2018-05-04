@@ -3,8 +3,8 @@ title: iOS 应用保护策略设置
 titlesuffix: Microsoft Intune
 description: 本主题介绍适用于 iOS 设备的应用保护策略设置。
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a4339a4e0491ada9e03731a5636df37209e16e0
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 20e253262f9c22d6ff65a1558ea114ecca0bd8c0
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/16/2018
 
 ##  <a name="data-relocation-settings"></a>数据重定位设置
 
-| 设置 | 如何使用 | 默认值 |
+| Setting | 如何使用 | 默认值 |
 |------|------|------|
 | **阻止 iTunes 和 iCloud 备份** | 选择“是”，阻止此应用将工作或学校的数据备份到 iTunes 和 iCloud。 选择“否”允许此应用程序将工作或学校的数据备份到 iTunes 和 iCloud。| 是 |
 | **允许应用向其他应用传送数据** | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> 此外，如果将此选项设置为“策略托管应用”或“无”，则将阻止允许 Spotlight Search 在应用内搜索数据的 iOS 9 功能。 <br><br> 默认情况下，Intune 允许向一些豁免应用和服务传输数据。 此外，如果需要允许将数据传输到不支持 Intune APP 的应用，则可以创建自己的豁免项目。 有关详细信息，请参阅[数据传输豁免](#data-transfer-exemptions)。 | 所有应用 |
@@ -61,9 +61,9 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="access-settings"></a>访问设置
 
-| 设置 | 如何使用 | 默认值 |
+| Setting | 如何使用 | 默认值 |
 |------|------|------|
-| **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 无论在联机或脱机情况下工作，PIN 始终有效。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> **注意：**配置密码类型要求应用具有 Intune SDK 版本 7.1.12 或更高版本。 数值类型没有任何 Intune SDK 版本限制。 允许的特殊字符包括 iOS 英语键盘上的特殊字符和符号。 默认值 = 数值。</li><br><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 此策略设置格式支持正整数。 默认值 = **5**。</li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>**注意**：在 iOS 上，如果配置了密码类型 PIN，且允许简单 PIN 设置为“是”，则需要至少 1 个字母或至少 1 个特殊字符。 如果配置了密码类型 PIN，且允许简单 PIN 设置为“否”，则需要至少 1 个数字，1 个字母和至少 1 个特殊字符。  默认值 = **是**。 </li><br><li> **PIN 长度**：指定 PIN 序列必须包含的最小位数。 默认值 = **4**。 </li><li> **允许指纹而非 PIN (iOS 8.0+)**：选择“是”，允许用户使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 进行应用访问。 默认值 = **是**。</li><li> **允许使用面部识别替代 PIN (iOS 11+)**：选择“是”，允许用户使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 使用应用。 默认值 = **是**。 用户使用其工作帐户访问应用时，系统会提示提供面部标识。</li><li> **管理设备 PIN 时禁用应用 PIN**：在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 默认值 = 否</li></ul> 在 iOS 设备上，可让用户使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109) 而非 PIN 来证明其身份。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 对使用 Touch ID 和 Face ID 的用户进行身份验证。 若要了解有关 Touch ID 和 Face ID 的详细信息，请参阅 [iOS 安全指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识或面部标识，而不是输入 PIN。 启用此设置时，如果使用工作或学校帐户，应用切换器的预览图像将模糊显示。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 需要 PIN 才能进行访问：是 <br><br> 选择类型：数值 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 <br><br> 允许面部识别：是 <br><br> 禁用应用 Pin：否 |
+| **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 无论在联机或脱机情况下工作，PIN 始终有效。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> **注意：**配置密码类型要求应用具有 Intune SDK 版本 7.1.12 或更高版本。 数值类型没有任何 Intune SDK 版本限制。 允许的特殊字符包括 iOS 英语键盘上的特殊字符和符号。 默认值 = 数值。</li><br><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 此策略设置格式支持正整数。 默认值 = **5**。</li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>注意：如果配置了密码类型 PIN，且允许简单 PIN 设置为“是”，则用户在其 PIN 中需要至少 1 个字母或至少 1 个特殊字符。 如果配置了密码类型 PIN，且允许简单 PIN 设置为“否”，则用户在其 PIN 中需要至少 1 个数字和 1 个字母以及至少 1 个特殊字符。 默认值 = **是**。 </li><li> **PIN 长度**：指定 PIN 序列必须包含的最小位数。 默认值 = **4**。 </li><li> **允许指纹而非 PIN (iOS 8.0+)**：选择“是”，允许用户使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 进行应用访问。 默认值 = **是**。</li><li> **允许使用面部识别替代 PIN (iOS 11+)**：选择“是”，允许用户使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 使用应用。 默认值 = **是**。 用户使用其工作帐户访问应用时，系统会提示提供面部标识。</li><li> **管理设备 PIN 时禁用应用 PIN**：在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 默认值 = **否**。</li></ul> 在 iOS 设备上，可让用户使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109) 而非 PIN 来证明其身份。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 对使用 Touch ID 和 Face ID 的用户进行身份验证。 若要了解有关 Touch ID 和 Face ID 的详细信息，请参阅 [iOS 安全指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识或面部标识，而不是输入 PIN。 启用此设置时，如果使用工作或学校帐户，应用切换器的预览图像将模糊显示。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 需要 PIN 才能进行访问：是 <br><br> 选择类型：数值 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 <br><br> 允许面部识别：是 <br><br> 禁用应用 Pin：否 |
 | **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 如果将其设置为“是”，则此设置将替代 PIN 或 Touch ID 的要求。  | 否 |
 | **阻止在已越狱或取得 root 权限的设备上运行托管应用** |  选择“是”，阻止在已越狱或取得 root 权限的设备上运行此应用。 用户仍能够将此应用用于个人任务，但必须使用其他设备访问此应用中的工作或学校数据。 | 是 |
 | **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，如果管理员在策略中启用 PIN，并阻止取得 root 权限的设备，则用户打开 Intune 托管的应用时，必须输入 PIN，且必须在未取得 root 权限的设备上使用应用。 使用此设置时，用户在 30 分钟（默认值）内无需在任何 Intune 托管应用上再次输入 PIN 或执行 root 检测检查。  <br><br>**注意：**在 iOS 上，同一发布者的所有 Intune 托管应用均共享此 PIN。 应用离开设备主屏幕后，就会重置特定 PIN 的 PIN 计时器。 在此设置定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入该 PIN。 此策略设置格式支持正整数。<br></li><br><li>**脱机宽限期**：指 MAM 应用可脱机运行的分钟数，需在重新检查应用访问要求之前指定该时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。 此时间段到期后，应用将要求用户对 AAD 进行身份验证，以便应用可以继续运行。 此策略设置格式支持正整数。<br></li></ul>| 超时：30 <br><br> 脱机：720 |

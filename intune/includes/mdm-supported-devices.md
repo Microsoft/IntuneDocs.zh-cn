@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 9.0 及更高版本
-- Mac OS X 10.9 及更高版本
+- Mac OS X 10.11 及更高版本
 
 ### <a name="google"></a>Google
 - Android 4.4 及更高版本（包括 Samsung Knox Standard 4.4 及更高版本）
@@ -14,6 +14,7 @@
 
 ### <a name="microsoft"></a>Microsoft
 
+- Surface Hub
 - Windows 10（家庭版、S、专业版、教育版和企业版）
 - Windows 10 移动版
 - Windows 10 IoT 企业版（x86、x64）

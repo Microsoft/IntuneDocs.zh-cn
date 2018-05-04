@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 4/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce970f942d8ea20eb9ea593c23160757122926e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>在 Microsoft Intune 中为运行 iOS 的设备配置 VPN 设置
 
@@ -36,6 +36,7 @@ ms.lasthandoff: 04/16/2018
 - **连接类型**：从以下供应商列表中选择 VPN 连接类型：
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
+  - **Cisco 旧式 AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
   - **Pulse Secure**
@@ -43,7 +44,11 @@ ms.lasthandoff: 04/16/2018
   - **Citrix**
   - **自定义 VPN**
 
-- **拆分隧道**：启用或禁用此设置，让设备根据流量确定使用哪个连接。 例如，旅馆中的用户使用 VPN 连接来访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。
+    > [!NOTE]
+    > - “Cisco 旧式 AnyConnect VPN”配置文件适用于 [Cisco 旧式 AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) 应用版本 4.0.5x 以及较旧版本
+    > - “Cisco AnyConnect VPN”配置文件适用于 [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) 应用版本 4.0.7x 以及较新版本
+
+- **拆分隧道**：启用或禁用此设置，让设备根据流量确定使用哪个连接。 例如，旅馆中的用户使用 VPN 连接访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。
 
 ## <a name="custom-vpn-settings"></a>自定义 VPN 设置
 
@@ -75,3 +80,6 @@ ms.lasthandoff: 04/16/2018
 - **自动配置脚本**：使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL（例如 http://proxy.contoso.com）。
 - **地址**：输入代理服务器的完全限定的主机名的 IP 地址。
 - **端口号**：输入与代理服务器关联的端口号。
+
+## <a name="next-step"></a>下一步
+[在 Intune 中创建 VPN 配置文件](vpn-settings-configure.md)

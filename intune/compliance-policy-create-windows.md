@@ -1,29 +1,28 @@
 ---
 title: 在 Microsoft Intune 中创建 Windows 设备符合性策略 - Azure | Microsoft Docs
-description: 为 Windows 设备创建 Microsoft Intune 设备符合性策略，让用户能够指定设备必须满足的符合性要求。
+description: 为 Windows Phone 8.1、Windows 8.1 和更高版本以及 Windows 10 和更高版本的设备创建或配置 Microsoft Intune 设备符合性策略。 检查最低和最高操作系统的符合性，设置密码限制和长度，要求启用 BitLocker，设置可接受的威胁级别以及启用对数据存储的加密，包括 Surface Hub 和 Windows Holographic for Business。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21ff7b173bb466ee25dd82c82d3668de110b823d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>如何在 Intune 中创建适用于 Windows 设备的设备符合性策略
-
+# <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中添加适用于 Windows 设备的设备符合性策略
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-适用于 Windows 的 Intune 设备符合性策略可指定 Windows 设备须满足才能被视为符合的规则和设置。 可将这些策略与条件访问相结合，进而允许/阻止访问公司资源，还可获取设备报告并采取措施应对不符合的情形。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。 若要深入了解符合性策略以及创建符合性策略之前需满足的先决条件，请参阅[设备符合性入门](device-compliance-get-started.md)。
+适用于 Windows 的 Intune 设备符合性策略可指定 Windows 设备须满足才能被视为符合的规则和设置。 可以将这些策略与条件访问结合使用，从而允许或阻止访问公司资源。 还可获取设备报表并针对非符合性采取措施。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。 若要了解有关符合性策略以及所有系统必备组件的详细信息，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 下表说明了将符合性策略与条件访问策略一起使用时如何管理非符合性设置。
 
@@ -33,8 +32,8 @@ ms.lasthandoff: 04/16/2018
 |----| ----| --- |
 | **PIN 或密码配置** | 已修正 | 已修正 |   
 | **设备加密** | 不适用 | 已修正 |   
-| **已越狱或取得 root 权限的设备** | 不适用 | 不适用 |  
-| **电子邮件配置文件** | 不适用 | 不适用 |   
+| **已越狱或取得 root 权限的设备** | “不适用” | “不适用” |  
+| **电子邮件配置文件** | “不适用” | “不适用” |   
 | **最低操作系统版本** | 已隔离 | 已隔离 |   
 | **最高操作系统版本** | 已隔离 | 已隔离 |   
 | **Windows 运行状况证明** | 已隔离：Windows 10 和 Windows 10 移动版|不适用：Windows 8.1 |
@@ -48,13 +47,11 @@ ms.lasthandoff: 04/16/2018
 - 如果条件访问策略应用到用户，则将阻止该设备。
 - 公司门户会通知用户任何合规性问题。
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>在 Azure 门户中创建合规性策略
+## <a name="create-a-device-compliance-policy"></a>创建设备合规性策略
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-1. 从“Intune”窗格中，选择“设备符合性”。 在“管理”下，选择“策略”，然后选择“创建策略”。
-2. 键入名称、说明，并选择要应用此策略的平台。
-3. 选择“设置配置”，在此处指定“系统安全性”、“设备运行状况”和“设备属性”设置。 完成后，选择“确定”。
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. 对于“平台”，请选择“Windows Phone 8.1”、“Windows 8.1 及更高版本”或“Windows 10 及更高版本”。
+6. 选择“设置配置”，然后依次输入“设备运行状况”、“设备属性”和“系统安全”设置。 完成后，请选择“确定”，然后选择“创建”。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -63,151 +60,132 @@ ms.lasthandoff: 04/16/2018
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>分配用户组
+## <a name="windows-81-devices-policy-settings"></a>Windows 8.1 设备策略设置
 
-若要为用户分配合规性策略，请选择已配置的策略。 可在“设备符合性 – 策略”窗格中找到现有策略。
+这些策略设置适用于运行以下平台的设备：
 
-1. 选择要分配给用户的策略，然后选择“分配”。 随即打开一个窗格，可在此处选择“Azure Active Directory 安全组”并对其分配策略。
-2. 选择“所选组”以打开显示 Azure AD 安全组的窗格。  选择“保存”后，即会向用户部署策略。
+- Windows Phone 8.1
+- Windows 8.1 及更高版本
 
-你已将策略应用于用户。 将评估策略针对的用户所使用设备的合规性。
+### <a name="device-properties"></a>设备属性
 
-<!---## Compliance policy settings--->
+- 所需的最低操作系统版本：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，然后访问公司资源。
+- 允许的最高操作系统版本：设备使用的操作系统版本高于规则中指定的版本时，会阻止访问公司资源。 会要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则设备不能访问公司资源。
 
-## <a name="compliance-policy-settings-for-windows-phone-devices"></a>适用于 Windows Phone 设备的合规性策略设置
+Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本规则设置为 Windows 8.1，则该设备将报告为不符合要求，即使该设备具有 Windows 8.1 也是如此。
 
-本节中列出的设置支持 Windows Phone 8.1 及更高版本。
-### <a name="system-security-settings"></a>系统安全设置
+### <a name="system-security"></a>系统安全
 
 #### <a name="password"></a>密码
 
-- **需要密码才可解锁移动设备：**将此选项设置为“是”，以要求用户在访问其设备之前输入密码。
-- **允许简单密码：**将此选项设置为“是”后，用户即可创建简单密码，如“1234”或“1111”。
-- **最短密码长度：**指定用户密码必须包含的最小位数或最小字符数。
+- 需要密码才可解锁移动设备：要求用户在访问其设备之前输入密码。
+- 简单密码：设置为“阻止”后，用户无法创建简单密码，如 1234 或 1111。 设置为“未配置”以允许用户创建密码，例如 1234 或 1111。
+- **最短密码长度**：输入密码必须包含的最小位数或最小字符数。
 
-  对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过 8 个字符或者最小字符集数大于 2，则无法正确评估符合性策略。
-- **所需的密码类型：**指定用户是要创建“字母数字”还是“数字”密码。
+  对于运行 Windows 且通过 Microsoft 帐户访问的设备，无法正确评估符合性策略：
+  - 如果最短密码长度大于 8 个字符
+  - 或者，如果最小字符集数超过两个
+
+- 密码类型：选择密码是应仅包含数值字符，还是应混合使用数字和其他字符（字母数字）。
   
-- **最小字符集数：**如果“所需的密码类型”设置为“字母数字”，此设置将指定密码必须包含的最小字符集数。 四个字符集为：
-  - 小写字母
-  - 大写字母
-  - 符号
-  - 数字
+  - 密码中的非字母数字字符数：如果“所需的密码类型”设置为“字母数字”，此设置将指定密码必须包含的最小字符集数。 四个字符集为：
+    - 小写字母
+    - 大写字母
+    - 符号
+    - 数字
 
-  为此设置设置较大的数字将要求用户创建更复杂的密码。 对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过 8 个字符或者最小字符集数大于 2，则无法正确评估符合性策略。
+    设置的数字越大，要求用户创建的密码越复杂。 对于运行 Windows 且通过 Microsoft 帐户访问的设备，如果最短密码长度超过 8 个字符或者最小字符集数大于 2，则无法正确评估符合性策略。
 
-- **需要提供密码之前须经历的无活动分钟数：**指定用户必须重新输入其密码前的空闲时间。
-- **密码过期（天）**：选择用户密码过期之前的天数，过期后用户必须新建一个密码。
-- **记住密码历史记录：**将此设置与“防止重用旧密码”结合使用，以限制用户使用以前创建的密码。
-- **防止重用以前的密码：**如果选择了“记住密码历史记录”，请指定不能重用的以前用过的密码数量。
-- **当设备从空闲状态返回时需要密码：**此设置应该与**“需要提供密码之前处于非活动状态的分钟数”**设置一起使用。 设备在**“需要提供密码之前处于非活动状态的分钟数”**设置指定的时间内处于非活动状态时，将提示最终用户输入密码才能访问设备。
-
-> [!NOTE]
-> 此设置仅适用于 Windows 10 移动设备。
+- **要求提供密码之前的非活动最大分钟数**：输入用户必须重新输入其密码前的空闲时间。
+- 密码过期(天)：选择密码过期之前的天数，然后必须创建一个新密码。
+- 要防止重用的以前的密码数：输入以前用过的不能使用的密码数。
 
 #### <a name="encryption"></a>加密
 
-- **需要对移动设备进行加密：**将此选项设置为“是”，要求对移动设备进行加密以连接到资源。
+- 需要对移动设备进行加密：要求对设备进行加密以连接到数据存储资源。
 
+## <a name="windows-10-and-later-policy-settings"></a>Windows 10 和更高版本的策略设置
 
+### <a name="device-health"></a>Device health
 
-### <a name="device-health-settings"></a>设备运行状况设置
+- 需要启用 BitLocker：如果启用了 BitLocker，在系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据免受未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来帮助保护 Windows 操作系统和用户数据。 它还有助于确保计算机不被篡改，即使它处于无人参与、丢失或被盗状态也是如此。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥。
+- 需要在设备上启用安全启动：启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认签名。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
+- 要求启用代码完整性 - 代码完整性是这样一项功能，它在每次将驱动程序或系统文件加载到内存时验证其完整性。 代码完整性检测是否正在将未签名的驱动程序或系统文件加载到内核中。 系统文件是否已被具有管理员特权的用户帐户运行的恶意软件进行了修改。
+- 要求设备不高于设备威胁级别：使用此设置将防御威胁服务的风险评估视为符合性的条件。 选择允许的最大威胁级别：
+  - 安全：此选项是最安全的，设备不能具有任何威胁。 如果设备被检测到具有任一等级的威胁，则会被评估为不符合要求。
+  - **低**：若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
+  - 中：如果设备上存在的威胁为低级或中级，设备也将被评估为符合策略。 若检测到设备存在高级威胁，则将其确定为不合规。
+  - 高：此选项是最不安全的，允许所有威胁级别。 如果将此解决方案仅用作报告目的，则可能有用。
 
-- **要求设备被报告为正常：**你可以在新的或现有的合规性策略中设置规则，要求 **Windows 10 移动版**设备必须被报告为正常。 如果启用此设置，将通过运行状况证明服务 (HAS) 评估 Windows 10 设备的下列数据点：
-  - **启用 BitLocker：**Bitlocker 打开的情况下，当系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据，防止未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来保护 Windows 操作系统和用户数据，并确保即使计算机无人管理、丢失或被盗，计算机也不会被篡改。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥
-  - **启用代码完整性：**代码完整性是一种功能，可用于在每次将驱动器或系统文件载入内存时，验证它们的完整性。 代码完整性还可用于检测是否有未签名的驱动器或系统文件被载入到内核，或者系统文件是否被恶意软件（由具有管理员权限的用户帐户运行）修改。
-  - **启用安全启动：**启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认这一点。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
+有关 HAS 服务工作方式的详细信息，请参阅[运行状况证明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)。
 
-有关 HAS 服务工作方式的信息，请参阅[运行状况证明 CSP](https://msdn.microsoft.com/library/dn934876.aspx)。
+### <a name="device-properties"></a>设备属性
 
-### <a name="device-property-settings"></a>设备属性设置
+- 所需的最低操作系统：输入 major.minor.build.CU 编号。 build.CU 号必须与 `ver` 或 `winver` 命令返回的版本一致。
 
-- **所需的最低 OS 版本：**当设备不满足最低 OS 版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
-- **允许的最高 OS 版本：**当设备使用的 OS 版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
+  如果设备的操作系统版本比指定的版本低，它将被报告为不符合。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 
-<!---## Compliance policy settings for Windows PCs--->
+- 允许的最高操作系统版本：输入 major.minor.build.CU 编号。 build.CU 号必须与 `ver` 或 `winver` 命令返回的版本一致。
 
-## <a name="compliance-policy-settings-for-windows-pcs"></a>适用于 Windows PC 的合规性策略设置
+  当设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
-此节中列出的设置在 Windows PC 上受支持。
+- 移动设备所需的最低操作系统：输入 major.minor.build 编号。
+
+  如果设备的操作系统版本比指定的版本低，它将被报告为不符合。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
+
+- 移动设备所需的最高操作系统：输入 major.minor.build 编号。
+
+  当设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
+
+- 有效的操作系统版本：输入可接受的操作系统版本的范围，包括最小值和最大值。
+
 ### <a name="system-security-settings"></a>系统安全设置
 
 #### <a name="password"></a>密码
 
-- **最短密码长度：** - 在 Windows 8.1 上受支持。
+- 需要密码才可解锁移动设备：要求用户在访问其设备之前输入密码。
+- 简单密码：设置为“阻止”后，用户无法创建简单密码，如 1234 或 1111。 设置为“未配置”以允许用户创建密码，例如 1234 或 1111。
+- 密码类型：选择密码是应仅包含数值字符，还是应混合使用数字和其他字符（字母数字）。
 
-  指定用户密码必须包含的最小位数或最小字符数。
+  - 密码中的非字母数字字符数：如果“所需的密码类型”设置为“字母数字”，此设置将指定密码必须包含的最小字符集数。 四个字符集为：
+    - 小写字母
+    - 大写字母
+    - 符号
+    - 数字
 
-  对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过 8 个字符或者“最小字符集数”大于 2 个字符，则无法正确评估符合性策略。
+    设置的数字越大，要求用户创建的密码越复杂。
 
-- **所需密码类型：**在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持
+- **最短密码长度**：输入密码必须包含的最小位数或最小字符数。
+- **要求提供密码之前的非活动最大分钟数**：输入用户必须重新输入其密码前的空闲时间。
+- 密码过期(天)：选择密码过期之前的天数，然后必须创建一个新密码。
+- 要防止重用的以前的密码数：输入以前用过的不能使用的密码数。
+- 设备从空闲状态返回时需要输入密码（仅限移动版和全息版）：每次设备从空闲状态返回时强制用户输入密码。
 
-  指定用户是否必须创建**字母数字**或**数字**密码。
+### <a name="encryption"></a>加密
 
-- **最小字符集数：**在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。 如果**所需的密码类型**设置为**字母数字**，此设置指定密码必须包含的字符集的最小数字。 四个字符集为：
-  - 小写字母
-  - 大写字母
-  - 符号
-  - 数字 
+- 设备上的数据存储加密：选择“需要”加密设备上的数据存储。
 
-    为此设置设置较大的数字要求用户创建更复杂的密码。 对于通过 Microsoft 帐户访问的设备，如果“最短密码长度”超过 8 个字符或者“最小字符集数”大于 2 个字符，则无法正确评估符合性策略。
+## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
-- **需要提供密码之前处于非活动状态的分钟数：** - 在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持
+Windows Holographic for Business 使用 Windows 10 及更高版本的平台。 Windows Holographic for Business 支持以下设置：
 
-  指定用户必须重新输入密码前的空闲时间。
-
-- **密码过期 (天数)：**在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持。
-
-  选择用户的密码过期之前的天数，过期后用户必须新建创建一个密码。
-
-- **记住密码历史记录：** - 在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持
-
-  将此设置与“防止重用旧密码”结合使用，以限制用户使用以前创建的密码。
-
-- **防止重用以前的密码：** - 在 Windows RT、Windows RT 8.1 和 Windows 8.1 上受支持
-
-  如果选择了“记住密码历史记录:”，请指定不能重用的以前用过的密码数量。
-
-
-### <a name="device-health-settings"></a>设备运行状况设置
-
-- **需要设备被报告为正常：** - 在 Windows 10 设备上受支持。 你可以在新的或现有的合规性策略中设置规则，要求 Windows 10 设备必需被报告为正常。 如果启用此设置，将通过运行状况证明服务 (HAS) 评估 Windows 10 设备的下列数据点：
-  - **启用 BitLocker：**Bitlocker 打开的情况下，当系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据，防止未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来保护 Windows 操作系统和用户数据，并确保即使计算机无人管理、丢失或被盗，计算机也不会被篡改。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥
-  - **启用代码完整性：**代码完整性是一种功能，可用于在每次将驱动器或系统文件载入内存时，验证它们的完整性。 代码完整性还可用于检测是否有未签名的驱动器或系统文件被载入到内核，或者系统文件是否被恶意软件（由具有管理员权限的用户帐户运行）修改。
-  - **启用安全启动：**启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认这一点。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
-  - **启用开机初期启动的反恶意软件：**开机初期启动的反恶意软件 (ELAM) 在计算机启动时和第三方驱动器初始化之前，对网络中的计算机提供保护。
-
-有关 HAS 服务工作方式的信息，请参阅[运行状况证明 CSP](https://msdn.microsoft.com/library/dn934876.aspx)。
-
-### <a name="device-property-settings"></a>设备属性设置
-
-- **所需的最低操作系统：** - 在 Windows 8.1 和 Windows 10 上受支持。
-
-  在此处指定 major.minor.build.CU 编号。 build.CU 号必须与 ```winver``` 命令返回的版本一致。
-
-  如果设备的操作系统版本比指定的版本低，它将被报告为不符合。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
-
-- **允许的最高操作系统版本：** - 在 Windows 8.1 和 Windows 10 上受支持。
-
-  当设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
-
-若要查找要用于**所需的最低操作系统**和**允许的最高操作系统版本**设置的操作系统版本，请从命令提示符处运行 **winver** 命令。 Winver 命令返回报告的操作系统版本。
-
-- Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本规则设置为 Windows 8.1，则该设备将报告为不符合要求，即使该设备具有 Windows 8.1 也是如此。
-- 运行 Windows 10 的 PC 的版本应设置为 "10.0"+ winver 命令返回的 OS 内部版本号。
-
-## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business 支持
-
-Windows Holographic for Business 支持以下设置：
-
-- 系统安全性/加密
-
-  **加密设备上的数据存储**。
+- “系统安全” > ”加密” > ”设备上的数据存储加密”。
 
 若要对 Microsoft HoloLens 验证设备加密，请参阅[验证设备加密](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption)。
 
+## <a name="surface-hub"></a>Surface Hub
+Surface Hub 使用 Windows 10 及更高版本的平台。 支持将 Surface Hub 用于符合性和条件访问。 要在 Surface Hub 上启用这些功能，建议在 Intune 中[启用 Windows 10 自动注册](windows-enroll.md)（还需要 Azure Active Directory (AAD)）并将 Surface Hub 设备作为目标设备组。 要使符合性和条件访问正常工作，Surface Hub 需要加入 Azure Active Directory。
+
+请参阅[设置 Windows 设备的注册](windows-enroll.md)获取指导。
+
+## <a name="assign-user-or-device-groups"></a>分配用户或设备组
+
+1. 选择已配置的策略。 现有策略位于“设备符合性” > “策略”中。
+2. 选择策略，然后选择“分配”。 可以包括或排除 Azure AD 安全组。
+3. 选择“所选组”查看 Azure AD 安全组。 选择要应用此策略的用户或设备组，然后选择“保存”部署策略。
+
+你已应用此策略。 将评估策略针对的用户所使用设备的符合性。
+
 ## <a name="next-steps"></a>后续步骤
-
-请参阅以下主题，了解监视设备符合性的方法：
-
-- [如何监视设备合规性](device-compliance-monitor.md)
+[为不符合的设备自动发送电子邮件和添加操作](actions-for-noncompliance.md)  
+[监视 Intune 设备符合性策略](compliance-policy-monitor.md)

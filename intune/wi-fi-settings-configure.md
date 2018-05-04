@@ -3,8 +3,8 @@ title: 如何配置 Intune Wi-Fi 设置
 titleSuffix: Microsoft Intune
 description: 了解如何使用 Microsoft Intune 来配置所管理设备上的 Wi-Fi 连接。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 
@@ -38,7 +38,7 @@ Wi-Fi 配置文件支持以下设备平台：
 - Android 4 及更高版本
 - Android for Work
 - iOS 8.0 及更高版本
-- macOS（Mac OS X 10.9 及更高版本）
+- macOS（Mac OS X 10.11 及更高版本）
 
 对于运行 Windows 8.1、Windows 10、Windows 10 移动版和 Windows Holographic for Business 的设备，可以导入之前从另一台设备导出的 Wi-Fi 配置。
 

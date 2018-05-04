@@ -1,25 +1,25 @@
 ---
-title: "Android 应用保护策略设置"
+title: Android 应用保护策略设置
 titlesuffix: Microsoft Intune
-description: "本主题介绍适用于 Android 设备的应用保护策略设置。"
-keywords: 
-author: Erikre
-ms.author: erikre
+description: 本主题介绍适用于 Android 设备的应用保护策略设置。
+keywords: ''
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 04/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 26f81d8e6ba0fb433d714a5deeaadce9dd619c3f
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: c9c14363d9d00a9beecb5eac41966734687f8a93
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本主题介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -79,7 +79,7 @@ ms.lasthandoff: 03/16/2018
 
 | Setting | 如何使用 | 默认值 |
 |------|------|------|
-| **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 默认值 = **5**。</li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234 或 1111。 选择“否”，阻止用户使用简单的序列。 默认值 = **是**。 </li><li> **PIN 长度**：指定 PIN 序列必须包含的最小位数。 默认值 = **4**。 <br><br> 此策略设置格式支持正整数。</li><li> **允许指纹而非 PIN (Android 6.0+)：**选择“是”，允许用户使用[指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 进行应用访问。 默认值 = **是**。</li></ul> 在 Android 设备上，可允许用户通过 [Android 指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 证明其身份。 用户尝试通过其工作或学校帐户使用此应用时，会提示他们提供其指纹标识而不是输入 PIN。 </li></ul>| 需要 PIN：是 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 |
+| **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> 注意：允许的特殊字符包括 Android 英语键盘上的特殊字符和符号。 默认值 = 数值。</li><br><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 默认值 = **5**。</li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>注意：如果配置了密码类型 PIN，且允许简单 PIN 设置为“是”，则用户在其 PIN 中需要至少 1 个字母或至少 1 个特殊字符。 如果配置了密码类型 PIN，且允许简单 PIN 设置为“否”，则用户在其 PIN 中需要至少 1 个数字和 1 个字母以及至少 1 个特殊字符。 默认值 = **是**。 </li><br><li> **PIN 长度**：指定 PIN 序列必须包含的最小位数。 默认值 = **4**。</li><li> **允许指纹而非 PIN (Android 6.0+)：**选择“是”，允许用户使用[指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 进行应用访问。 默认值 = **是**。 <br><br>注意：Android For Work 要求为强制执行的“允许使用指纹替代 PIN”策略注册单独的指纹。 此策略仅对在 Android For Work 配置文件中安装了策略托管的应用有效。 在公司门户注册以创建 Android For Work 托管配置文件后，必须在设备中注册单独的指纹。 有关使用 Android for Work 的工作配置文件指纹的详细信息，请参阅[锁定工作配置文件](https://support.google.com/work/android/answer/7029958)。</li></ul> 在 Android 设备上，可允许用户通过 [Android 指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 证明其身份。 用户尝试通过其工作或学校帐户使用此应用时，会提示他们提供其指纹标识而不是输入 PIN。 </li></ul>| 需要 PIN：是 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 |
 | **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 如果将其设置为“是”，则此设置将替代 PIN 或 Touch ID 的要求。  | 否 |
 | **阻止在已越狱或取得 root 权限的设备上运行托管应用** |选择“是”，阻止在已越狱或取得 root 权限的设备上运行此应用。 用户仍能够将此应用用于个人任务，但必须使用其他设备访问此应用中的工作或学校数据。 | 是 |
 | **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，如果管理员在策略中启用 PIN，并阻止取得 root 权限的设备，则用户打开 Intune 托管的应用时，必须输入 PIN，且必须在未取得 root 权限的设备上使用应用。 使用此设置时，用户在 30 分钟（默认值）内无需在任何 Intune 托管应用上再次输入 PIN 或执行 root 检测检查。 <br><br> **注意：**在 Android 上，所有 Intune 托管应用均共享此 PIN。 应用离开设备主屏幕后，就会重置 PIN 计时器。 在此设置定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入该 PIN。 <br><br> 此策略设置格式支持正整数。<br></li><li>**脱机宽限期**：指 MAM 应用可脱机运行的分钟数，需在重新检查应用访问要求之前指定该时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。 此时间段到期后，应用将要求用户对 AAD 进行身份验证，以便应用可以继续运行。<br><br> 此策略设置格式支持正整数。</li></ul>| 超时：30 <br><br> 脱机：720 |

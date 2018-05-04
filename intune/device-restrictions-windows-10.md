@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中针对 Windows 10 及更高版本的设备限制设置
 本文介绍可为运行 Windows 10 的设备配置的所有 Microsoft Intune 设备限制设置。
@@ -228,7 +228,7 @@ ms.lasthandoff: 04/16/2018
     -   **隐私** - 阻止访问设置应用的隐私区域。
     -   更新和安全性 - 阻止访问设置应用的更新和安全区域。
 
-## <a name="start"></a>以管理员身份启动
+## <a name="start"></a>启动
 
 - **从任务栏取消固定应用** - 阻止用户从开始菜单取消固定应用。
 - **“开始”上的文档** - 隐藏或显示 Windows 开始菜单中的文档文件夹。
@@ -370,6 +370,11 @@ ms.lasthandoff: 04/16/2018
 - **打印服务资源 URI** - Azure 门户中配置的打印服务 OAuth 资源 URI。
 - **要查询的打印机最大数(仅移动设备)** - 应从发现终结点查询的打印机数量上限。
 - **打印机发现服务资源 URI** - Azure 门户中配置的打印机发现服务 OAuth 资源 URI。
+
+## <a name="local-printer"></a>本地打印机
+- 打印机 - 已添加的本地打印机的列表。
+- 默认打印机 - 设置默认打印机。
+- 用户添加新打印机的权限 - 允许或阻止使用本地打印机。
 
 ## <a name="reporting-and-telemetry"></a>报告和遥测
 

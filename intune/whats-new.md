@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune 新增功能
+title: Microsoft Intune 中的新增功能 - Azure | Microsoft Docs
 titlesuffix: ''
 description: 了解 Intune Azure 门户新增功能
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/12/2018
+ms.date: 04/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: a2692163977a352e7a26dfc656d601d70ef401b4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9be6e0a3364f6ee0a077c1435d66498aba898430
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,30 @@ ms.lasthandoff: 04/16/2018
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日当周
+
+#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>高级威胁防护 (ATP) 和 Intune 完全集成 <!-- EEready 1629303 -->
+
+在 Windows Defender 安全中心（ATP 门户）中，可以创建到 Microsoft Intune 的连接。 创建后，将使用 Intune 符合性策略确定可接受的威胁级别。 如果超出威胁级别，则 Azure Active Directory (AD) 条件访问策略可以阻止访问组织内的不同应用。
+
+此功能使 ATP 能够扫描文件、检测威胁并报告 Windows 10 设备上的任何风险。
+
+请参阅[在 Intune 中启用具有条件访问的 ATP](advanced-threat-protection.md)。
+
+## <a name="week-of-april-16-2018"></a>2018 年 4 月 16 日当周
+
+#### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>对 iOS 使用 Cisco AnyConnect 客户端 <!-- EEready 1333708 -->
+
+为 iOS 创建新的 VPN 配置文件时，现在提供两个选项：Cisco AnyConnect 和 Cisco Legacy AnyConnect。 Cisco AnyConnect 配置文件支持 4.0.7x 和更新版本。 现有 iOS Cisco AnyConnect VPN 配置文件将被标记为“Cisco Legacy AnyConnect”，并将继续适用于 Cisco AnyConnect 4.0.5x 和较旧版本，如现在一样。
+
+> [!NOTE]
+> 此更改仅适用于 iOS。 将继续只提供一个适用于 Android、Android for Work 和 macOS 平台的 Cisco AnyConnect 选项。
+
+#### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>Jamf 注册的 macOS 设备现在可以向 Intune 注册<!-- 2370684 -->
+
+macOS 公司门户版本 1.3 和 1.4 未成功向 Intune 注册 Jamf 设备。 macOS 门户版本 1.4.2 可修复此问题。
+
 
 ## <a name="week-of-april-9-2018"></a>2018 年 4 月 9 日当周
 
@@ -72,12 +96,12 @@ ms.lasthandoff: 04/16/2018
 ### <a name="intune-apps"></a>Intune 应用
 
 #### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866---"></a>iOS 版公司门户应用的用户体验更新<!--1412866 -->
-我们向 iOS 版公司门户应用发布了用户体验主要更新。 此次更新对外观进行了全面重新设计，采用了更具现代感的外观。 我们保留了该应用的功能，但增强了其可用性和可访问性。  
+我们向 iOS 版公司门户应用发布了用户体验主要更新。 此更新具有经过完全重新设计的视觉效果，包括现代化的外观。 我们保留了应用的功能，但提高了其可用性和可访问性。  
 
-其他方面：
+你还会看到：
 - 对 iPhone X 的支持。
 - 应用启动速度和响应加载速度更快，可节省用户时间。
-- 新增了进度条，可向用户提供最新的状态信息。
+- 可为用户提供最新状态信息的附加进度条。
 - 改进了用户上传日志的方式，因此可在出现问题时更轻松地报告该问题。  
 
 若要查看更新后的外观，请转到[应用 UI 中的新增功能](whats-new-app-ui.md)。
@@ -140,8 +164,6 @@ Android Enterprise（以前称为 Android for Work）支持包含和排除组，
 #### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837---"></a>系统会每 15 分钟提示一次 iOS 设备，要求设置 PIN <!--1550837 -->
 符合性或配置策略应用到 iOS 设备后，系统会每 15 分钟提示用户一次，要求设置 PIN。 设置 PIN 之前，系统会持续提示用户。
 
-
-
 #### <a name="schedule-your-automatic-updates---1805514---"></a>安排自动更新 <!--1805514 -->
 Intune 使你能够使用 [Windows 更新通道设置](windows-update-for-business-configure.md)控制自动更新的安装。 进行此更新后，可以安排定期更新，包括每周更新、每日更新，甚至具体到某个时间更新。
 
@@ -180,7 +202,11 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
 
    可以允许或阻止特定应用接收传入连接。 还可以启用隐藏模式，阻止对探测请求做出响应。
 
-##### <a name="more-information"></a>详细信息
+####  <a name="detailed-error-codes-and-messages----1376342---"></a>详细的错误代码和消息 <!-- 1376342 -->
+
+在设备配置中，可以查看更详细的错误代码和错误消息。 这一改进的报告显示了相关设置、这些设置的状态以及详细的故障排查信息。
+
+##### <a name="more-information"></a>更多信息
 
 - 阻止所有传入连接
 
@@ -271,7 +297,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 
 #### <a name="attack-surface-reduction"></a>攻击面减少
 
-|设置名称  |设置选项  |描述  |
+|设置名  |设置选项  |描述  |
 |---------|---------|---------|
 |高级勒索软件防护|启用、审核、未配置|使用激进的勒索软件防护。|
 |标记从 Windows 本地安全机构子系统窃取的凭据|启用、审核、未配置|标记从 Windows 本地安全机构子系统 (lsass.exe) 窃取的凭据。|
@@ -281,7 +307,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 
 #### <a name="controlled-folder-access"></a>受控文件夹访问权限
 
-|              设置名称               |                                                              设置选项                                                              | 描述 |
+|              设置名               |                                                              设置选项                                                              | 描述 |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | 文件夹保护（已实现） | 未配置、启用、仅审核（已实现）<br><br> <strong>新建</strong><br>阻止磁盘修改、审核磁盘修改 |             |
 
@@ -360,7 +386,7 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 ##### <a name="attack-surface-reduction"></a>攻击面减少
 
 
-|设置名称  |设置选项  |描述  |
+|设置名  |设置选项  |描述  |
 |---------|---------|---------|
 |从电子邮件中执行受密码保护的可执行内容|阻止、审核、未配置|防止运行通过电子邮件下载的受密码保护的可执行文件。|
 |高级勒索软件防护|启用、审核、未配置|使用激进的勒索软件防护。|
@@ -371,7 +397,7 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 
 ##### <a name="controlled-folder-access"></a>受控文件夹访问权限
 
-|              设置名称               |                                                              设置选项                                                              | 描述 |
+|              设置名               |                                                              设置选项                                                              | 描述 |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | 文件夹保护（已实现） | 未配置、启用、仅审核（已实现）<br><br> <strong>新建</strong><br>阻止磁盘修改、审核磁盘修改 |             |
 
@@ -657,10 +683,10 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 
 如果之前已载入，那么情况取决于所选设置：
 
-| 设置 | 默认设备类型限制中的 Android for Work 状态 | 注释 |
+| Setting | 默认设备类型限制中的 Android for Work 状态 | 注意 |
 | --- | --- | --- |
 | **将所有设备作为 Android 管理** | 已阻止 | 所有 Android 设备均不注册 Android for Work。 |
-| 将受支持设备作为 Android for Work 管理 | 允许 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |
+| 将受支持设备作为 Android for Work 管理 | ，然后用户才能访问 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |
 | **仅为这些组中的用户将受支持设备作为 Android for Work 管理** | 已阻止 | 创建单独的设备类型限制策略替代默认值。 此策略将之前选择的组定义为允许 Android for Work 注册。 允许所选组中的用户继续注册 Android for Work 设备。 所有其他用户则不能注册 Android for Work。 |
 
 所有情况下都将保留预期规则。 对你来说，无需任何操作即可维护环境中的 Android for Work 全局或按组允许。
@@ -935,12 +961,6 @@ Intune 数据库仓库数据模型的第一个版本只包含 Intune 的最近�
 
 
 ## <a name="notices"></a>通知
-
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-
-无需对此更改进行任何准备，因为这些是次要的工作流 UI 更新。
-有关 Microsoft 的 GDPR 符合性的详细信息，请参阅可从其他信息链接访问的信任中心。
 
 ### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>更改计划：Intune 中新增用于 Kiosk 配置的 Windows 10 设置<!-- 1560072 -->
 我们会在 Intune Azure 门户中对配置 Windows 10 1709 及更高版本（RS3 及更高版本）的方式和位置进行调整。

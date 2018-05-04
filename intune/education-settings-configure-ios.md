@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何配置 iOS Classroom 应用的 Intune 设置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>简介
-[Classroom](https://itunes.apple.com/app/id1085319084) 是一款可帮助教师在教室中指导学习及控制学生设备的应用。 例如，教师可以使用此应用执行以下操作：
+[Classroom](https://itunes.apple.com/app/id1085319084) 是一款可帮助教师在教室中指导学习及控制学生设备的应用。 例如，应用允许教师：
 
 - 打开学生设备上的应用
 - 锁定和解锁 iPad 屏幕
@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
 - 将学生 iPad 导航到某个书签，或书本的某个章节
 - 在 Apple TV 上显示某个学生 iPad 中的屏幕
 
-使用 Intune iOS 教育设备配置文件和本主题中的信息可帮助你设置 Classroom 应用以及会使用此应用的设备。
+若要在你的设备上设置 Classroom，需要创建和配置一个 Intune iOS 教育版设备配置文件。
 
 ## <a name="before-you-start"></a>开始之前
 
 开始配置这些设置前请考虑以下内容：
 
-- 教师和学生 iPad 必须均已在 Intune 中注册
+- 教师和学生 iPad 必须均已在 Intune 中注册。
 - 确保已在教师设备上安装 [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) 应用。 也可以手动安装此应用，或使用 [Intune 应用管理](app-management.md)。
-- 必须配置证书以对教师和学生设备之间的连接进行身份验证（请参阅步骤 2）
-- 教师和学生 iPad 必须处于同一 Wi-Fi 网络覆盖区域内，并且必须均已启用蓝牙
-- Classroom 应用在运行 iOS 9.3 或更高版本的受监督 iPad 上运行
-- 在此版本中，Intune 支持管理每位学生都拥有自己专用 iPad 的 1:1 情形
+- 必须配置证书以对教师和学生设备之间的连接进行身份验证（请参阅步骤 2，在 Intune 中创建和分配 iOS 教育版配置文件）。
+- 教师和学生 iPad 必须处于同一 Wi-Fi 网络覆盖区域内，并且必须均已启用蓝牙。
+- Classroom 应用将在运行 iOS 9.3 或更高版本的受监督的 iPad 上运行。
+- 在此版本中，Intune 支持管理每位学生都拥有自己专用 iPad 的 1:1 情形。
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>步骤 1 - 将学校数据导入 Azure Active Directory
@@ -82,14 +82,14 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 9.  选择“设置” > “配置”。
 
 
-接下来，需要使用证书在教师和学生 iPad 之间建立信任关系。 证书用于在无提示情况下对设备间的连接进行无缝式身份验证，而无需输入用户名和密码。
+下一部分，你将创建证书，以便在教师和学生 iPad 之间建立信任关系。 证书用于在无提示情况下对设备间的连接进行无缝式身份验证，而无需输入用户名和密码。
 
 >[!IMPORTANT]
 >所使用的教师和学生证书必须由不同的证书颁发机构 (CA) 颁发。 必须创建两个新的连接到你的现有证书基础结构的从属 CA；一个用于教师，一个用于学生。
 
 iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
-除用户身份验证以外，所创建的证书还必须支持服务器身份验证。
+创建的证书必须支持服务器身份验证和用户身份验证。
 
 ### <a name="configure-teacher-certificates"></a>配置教师证书
 
@@ -97,14 +97,16 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 #### <a name="configure-teacher-root-certificate"></a>配置教师根证书
 
-在“教师根证书”下，选择浏览按钮以选择扩展名为 .cer（DER 或 Base64 编码）或 .P7B（不一定包含完整链路）的教师根证书。
+在“教师根证书”下，选择浏览按钮。 选择包含以下任一扩展名的根证书：
+- 扩展名 .cer（DER 或 Base64 编码） 
+- 扩展名 .P7B（包含或不包含完整的链路）
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>配置教师 PKCS#12 证书
 
 在“教师 PKCS#12 证书”下，配置下列值：
 
-- **使用者名称格式** - 对于教师证书，Intune 将自动在证书公用名称上添加前缀“主持人”，对于学生证书则添加“成员”。
-- **证书颁发机构** - 在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 
+- 使用者名称格式 - Intune 自动为教师证书添加前缀为 leader 的公用名。 为学生证书添加前缀为 member 的公用名。
+- 证书颁发机构 - Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 
 - **证书颁发机构名称** - 输入你的证书颁发机构的名称。
 - **证书模板名称** - 输入已添加到发证 CA 的证书模板的名称。 
 - **续订阈值(%)** - 指定设备请求证书续订之前剩余的证书有效期限的百分比。
@@ -120,14 +122,16 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 #### <a name="configure-student-root-certificate"></a>配置学生根证书
 
-在“学生根证书”下，选择浏览按钮以选择扩展名为 .cer（DER 或 Base64 编码）或 .P7B（不一定包含完整链路）的学生根证书。
+在“学生根证书”下，选择浏览按钮。 选择包含以下任一扩展名的根证书：
+- 扩展名 .cer（DER 或 Base64 编码） 
+- 扩展名 .P7B（包含或不包含完整的链路）
 
 #### <a name="configure-student-pkcs12-certificate"></a>配置学生 PKCS#12 证书
 
 在“学生 PKCS#12 证书”下，配置下列值：
 
-- **使用者名称格式** - 对于教师证书，Intune 将自动在证书公用名称上添加前缀“主持人”，对于学生证书则添加“成员”。
-- **证书颁发机构** - 在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 
+- 使用者名称格式 - Intune 自动为教师证书添加前缀为 leader 的公用名。 为学生证书添加前缀为 member 的公用名。
+- 证书颁发机构 - Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 
 - **证书颁发机构名称** - 输入你的证书颁发机构的名称。
 - **证书模板名称** - 输入已添加到发证 CA 的证书模板的名称。 
 - **续订阈值(%)** - 指定设备请求证书续订之前剩余的证书有效期限的百分比。
@@ -147,7 +151,7 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 ## <a name="next-steps"></a>后续步骤
 
-现在，当教师使用 Classroom 应用时，将具有对学生设备的完全控制权限。
+现在，当教师使用 Classroom 应用时，他们将具有对学生设备的完全控制权限。
 
 有关 Classroom 应用的详细信息，请参阅 Apple 网站上的 [Classroom 帮助](https://help.apple.com/classroom/ipad/2.0/)。
 

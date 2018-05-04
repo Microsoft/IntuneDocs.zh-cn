@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>使用 Intune 对运行 Windows Holographic 的设备进行自定义设置
 
@@ -38,7 +38,7 @@ Intune 中包含了公司门户，用户可在此访问公司数据、注册设�
 
 另请参阅[设备符合性策略入门](device-compliance-get-started.md)。
 
-## <a name="deploy-apps"></a>部署应用
+## <a name="deploy-and-manage-apps"></a>部署和管理应用
 **[向 Intune 添加应用](apps-add.md)**
 
 使用 Intune 可以向运行 Windows Holographic for Business 的设备添加应用。 有多种部署应用的方法，包括：
@@ -46,6 +46,16 @@ Intune 中包含了公司门户，用户可在此访问公司数据、注册设�
 - [添加 Microsoft Store 应用](store-apps-windows.md)
 - [添加自己创建的应用](lob-apps-windows.md)
 - [将应用分配给组](apps-deploy.md)
+
+Microsoft Intune 可以向运行 Windows Holographic for Business 的 Microsoft HoloLens 设备部署通用 Windows 应用。 可以直接在 Intune Azure 门户中上传应用包，或者从适用于企业的 Microsoft Store 对其进行部署。 有关相关区域的详细信息，请参阅下列内容：
+- 要使用 Intune Azure 门户来部署业务线 (LOB) 应用，请参阅[如何向 Microsoft Intune 添加 Windows 业务线应用](lob-apps-windows.md)。
+- 要使用适用于企业的 Microsoft Store 部署应用，请参阅[如何使用 Microsoft Intune 管理从适用于企业的 Microsoft Store 中购买的应用](windows-store-for-business.md)。 
+- 要了解 Microsoft Intune 的应用管理，请参阅 [Microsoft Intune 中的应用管理](app-management.md)。
+- 要详细了解如何开发 Microsoft HoloLens 应用，请参阅 [Microsoft HoloLens 混合现实应用](https://www.microsoft.com/hololens/apps)。 
+
+> [!NOTE]
+> 运行 Windows 10 Holographic for Business 1607 的 HoloLens 设备不支持来自适用于企业的 Microsoft Store 的在线许可应用。 若要了解详细信息，请参阅[在 HoloLens 上安装应用](https://docs.microsoft.com/en-us/hololens/hololens-install-apps)。
+
 
 ## <a name="device-categories-and-groups"></a>设备类别和组
 **[将设备分类为组](device-group-mapping.md)**
