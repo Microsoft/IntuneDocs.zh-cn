@@ -255,6 +255,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Windows LOB 应用
                   href: lob-apps-windows.md
+                - name: macOS LOB 应用
+                  href: lob-apps-macos.md
             - name: Web 应用
               href: web-app.md
             - name: 内置应用
@@ -486,10 +488,10 @@
               items:
                 - name: Lookout 和 Intune 集成
                   href: lookout-mtd-connector-integration.md
-            - name: 设置 Skycure
+            - name: 设置 Symantec
               href: skycure-mobile-threat-defense-connector.md
               items:
-                - name: Skycure 和 Intune 集成
+                - name: Symantec 和 Intune 集成
                   href: skycure-mtd-connector-integration.md
             - name: 设置 Check Point
               href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
@@ -509,7 +511,7 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: 在 Intune 中启用 MTD
                   href: mtd-connector-enable.md
-        - name: 高级威胁防护
+        - name: Windows Defender ATP
           href: advanced-threat-protection.md
         - name: 网络访问控制
           href: network-access-control-integrate.md
