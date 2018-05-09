@@ -149,6 +149,6 @@
 #### [我需要启用 UAC](you-need-to-enable-uac-windows.md)
 #### [我需要更新 Windows](you-need-to-update-os-build-version-windows.md)
 #### [我需要打开 Windows Defender](turn-on-defender-windows.md)
-
+## [从适用于 Windows 的公司门户应远程锁定设备](remote-lock-your-device-cp-app.md) 
 ## [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 ### [远程锁定设备](remote-lock-your-device-cpwebsite.md)
