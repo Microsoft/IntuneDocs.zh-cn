@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 46857dcf24befb0cf552769d48b99020c36e3e5b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -27,13 +27,13 @@ ms.lasthandoff: 04/26/2018
 
 每个应用 VPN 当前对以下提供程序可用： 
 
- - 脉冲连接安全
  - 检查点远程访问 VPN
  - F5
+ - 脉冲连接安全
  - SonicWall
 
 
-## <a name="prerequisites-for-the-per-app-vpn"></a>每应用 VPN 先决条件
+## <a name="prerequisites-for-per-app-vpn"></a>每个应用 VPN 的先决条件
 
 为了证明其身份，VPN 服务器提供了设备必须在提示的情况下必须接受的证书。 若要确保自动批准证书，请创建包含由证书颁发机构 (CA) 颁发的 VPN 服务器根证书的受信任证书配置文件。 
 

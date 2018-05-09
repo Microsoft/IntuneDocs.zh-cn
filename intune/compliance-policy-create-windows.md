@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中添加适用于 Windows 设备的设备符合性策略
 
@@ -121,23 +121,23 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 
 ### <a name="device-properties"></a>设备属性
 
-- 所需的最低操作系统：输入 major.minor.build.CU 编号。 build.CU 号必须与 `ver` 或 `winver` 命令返回的版本一致。
+- 最低操作系统版本：以 major.minor.build.CU 数字格式输入所允许的最低版本。 build.CU 号必须与 `ver` 或 `winver` 命令返回的版本一致。
 
   如果设备的操作系统版本比指定的版本低，它将被报告为不符合。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 
-- 允许的最高操作系统版本：输入 major.minor.build.CU 编号。 build.CU 号必须与 `ver` 或 `winver` 命令返回的版本一致。
+- 最高操作系统版本：以 major.minor.build.CU 数字格式输入所允许的最高版本。 build.CU 号必须与 `ver` 或 `winver` 命令返回的版本一致。
 
   当设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
-- 移动设备所需的最低操作系统：输入 major.minor.build 编号。
+- 移动设备所需的最低操作系统版本：以 major.minor.build 数字格式输入所允许的最低版本。
 
   如果设备的操作系统版本比指定的版本低，它将被报告为不符合。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 
-- 移动设备所需的最高操作系统：输入 major.minor.build 编号。
+- 移动设备所需的最高操作系统版本：以 major.minor.build 数字格式输入所允许的最高版本。
 
   当设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
-- 有效的操作系统版本：输入可接受的操作系统版本的范围，包括最小值和最大值。
+- 有效的操作系统版本：输入可接受的操作系统版本的范围，包括最小值和最大值。 还可以导出这些可接受的 OS 生成号的逗号分隔值 (CSV) 文件列表。
 
 ### <a name="system-security-settings"></a>系统安全设置
 

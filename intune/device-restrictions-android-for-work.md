@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/19/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 中的工作设备限制设置
 
@@ -50,6 +50,12 @@ ms.lasthandoff: 04/26/2018
    例如，将 Gmail 应用部署到 Android for Work 配置文件时，可以防止最终用户添加或删除此工作配置文件中的帐户。
 
 - **通过蓝牙共享联系人**：能从汽车等使用蓝牙配对的其他设备访问工作联系人。 默认情况下未配置此设置，并且不会显示 Work 配置文件联系人。 如需允许共享并显示 Work 配置文件联系人，请选择“启用”。 Android OS v6.0 和更高版本的 Android for Work 配置文件设备上提供此设置。 启用此选项可允许某些蓝牙设备在首次连接后即缓存工作联系人。 在初始配对/同步后禁用此策略不会从蓝牙设备中删除工作联系人。
+
+- 屏幕捕获：在工作配置文件中阻止启用设备上的屏幕捕获功能。 还会阻止在不具有安全视频输出的显示设备上显示内容。
+
+- 在个人资料中显示工作联系人呼叫方 ID：启用（不配置）后，工作联系人的呼叫方详细信息将显示在个人资料中。 阻止后，工作联系人的呼叫方号码不会显示在个人资料中。 适用于 Android OS 6.0 版和更高版本。
+
+- 照相机：在工作配置文件中阻止启用设备上的照相机功能。 该设置不会影响供个人使用的照相机。
 
 ### <a name="work-profile-password"></a>工作配置文件密码
 
