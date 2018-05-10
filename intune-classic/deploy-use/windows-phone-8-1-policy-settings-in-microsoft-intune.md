@@ -29,7 +29,7 @@ Intune 提供了一系列可在 Windows Phone 8.1 设备上进行配置的内置
 
 ## <a name="general-configuration-settings"></a>常规配置设置
 
-使用 Microsoft Intune **Windows Phone 常规配置策略（Windows Phone 8.1 及更高版本）**为 Windows Phone 8.1 设备配置以下设置：
+使用 Microsoft Intune **Windows Phone 常规配置策略（Windows Phone 8.1 及更高版本**为 Windows Phone 8.1 设备配置以下设置：
 
 -   **“移动设备安全设置”** – 从让你能够控制设备上的一系列功能的预定义设置列表中选择。
 
