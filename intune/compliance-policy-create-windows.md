@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中添加适用于 Windows 设备的设备符合性策略
 
@@ -121,11 +121,11 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 
 ### <a name="device-properties"></a>设备属性
 
-- 最低操作系统版本：以 major.minor.build.CU 数字格式输入所允许的最低版本。 build.CU 号必须与 `ver` 或 `winver` 命令返回的版本一致。
+- 最低操作系统版本：以 major.minor.build.revision 数字格式输入所允许的最低版本。 build.revision 号必须与 `ver` 或 `winver` 命令返回的版本一致。
 
   如果设备的操作系统版本比指定的版本低，它将被报告为不符合。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 
-- 最高操作系统版本：以 major.minor.build.CU 数字格式输入所允许的最高版本。 build.CU 号必须与 `ver` 或 `winver` 命令返回的版本一致。
+- 最高操作系统版本：以 major.minor.build.revision 数字格式输入所允许的最高版本。 build.revision 号必须与 `ver` 或 `winver` 命令返回的版本一致。
 
   当设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
