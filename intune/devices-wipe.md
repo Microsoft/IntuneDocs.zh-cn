@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>通过恢复出厂设置或删除公司数据删除设备
 
@@ -58,7 +58,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="remove-company-data"></a>删除公司数据
 
-“删除公司数据”操作将删除使用 Intune 分配的托管应用数据（如果适用）、设置和电子邮件配置文件。 “删除公司数据”会将用户的个人数据保留在设备上。 设备从 Intune 管理中删除。 
+“删除公司数据”操作将删除使用 Intune 分配的托管应用数据（如果适用）、设置和电子邮件配置文件。 设备从 Intune 管理中删除。 这种情况发生在设备下次检入并收到远程“删除公司数据”操作时发生。
+
+“删除公司数据”会将用户的个人数据保留在设备上。  
 
 下表描述了将删除什么数据，以及在删除公司数据后“删除公司数据”操作对设备上保留的数据的影响。
 
@@ -123,13 +125,19 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="remove-company-data"></a>删除公司数据
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“设备”窗格中，选择“所有设备”。
-4. 选择想要从中删除公司数据的设备名称。
-5. 在显示设备名称的窗格中，选择“删除公司数据”。 选择“是”以确认。
+1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
+2. 在“设备”窗格中，选择“所有设备”。
+3. 选择想要从中删除公司数据的设备名称。
+4. 在显示设备名称的窗格中，选择“删除公司数据”。 选择“是”以确认。
 
 如果设备已打开并连接，“删除公司数据”操作会在 15 分钟内跨所有设备类型进行传播。
+
+## <a name="delete-devices-from-the-intune-portal"></a>从 Intune 门户中删除设备
+
+如果要从 Intune 门户中删除设备，可以从特定设备窗格中删除它们。 下次设备检入时，其上的任何公司数据都将被删除。
+
+1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
+2. 选择“设备” > “所有设备”>“选择要删除的设备”>“删除”。
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>从 Azure Active Directory 门户删除设备
 
