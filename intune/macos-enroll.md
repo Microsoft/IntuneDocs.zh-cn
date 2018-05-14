@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e522708879818f644780904c42fe9e6fb19a402
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中设置 macOS 设备注册
 
@@ -70,3 +70,11 @@ ms.lasthandoff: 04/16/2018
 对于 Parallels Desktop，需要设置虚拟机的硬件类型和序列号，使 Intune 能够识别它们。 按照 Parallels 的[设置硬件类型](http://kb.parallels.com/123594)和[序列号](http://kb.parallels.com/123455)说明进行操作，设置测试所必需的设置。 建议运行虚拟机的设备的硬件类型与要创建的虚拟机的硬件类型相匹配。 可通过“Apple 菜单” > “关于此 Mac” > “系统报告” > “模型标识符”找到此硬件类型。 
 
 对于 VMware Fusion，需要[编辑 .vmx 文件](https://kb.vmware.com/s/article/1014782)，设置虚拟机的硬件模型和序列号。 建议运行虚拟机的设备的硬件类型与要创建的虚拟机的硬件类型相匹配。 可通过“Apple 菜单” > “关于此 Mac” > “系统报告” > “模型标识符”找到此硬件类型。 
+
+## <a name="user-approved-enrollment"></a>用户已批准注册
+
+用户批准的 MDM 注册是一种可用于管理某些安全敏感设置的 macOS 注册类型。 有关详细信息，请参阅 [Apple 的支持文档](https://support.apple.com/HT208019)。
+
+要使用户获得批准，最终用户必须在使用 macOS 公司门户注册后，使用系统首选项手动提供批准。 macOS 公司门户为 macOS 10.13.2 和更高版本的用户提供了执行此操作的说明。
+
+要确定设备是否为用户批准的，请转至 Intune 门户，然后选择“设备” > “所有设备”>“选择设备”>“硬件”。 检查“用户已批准”字段。

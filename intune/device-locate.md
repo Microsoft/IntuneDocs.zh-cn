@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da8bb19db8c2da2d5854c3f991ccce4d124d594c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 定位丢失或被盗的 iOS 设备
 
@@ -46,6 +46,15 @@ ms.lasthandoff: 04/26/2018
 
 >[!NOTE]
 >出于隐私原因，地图可放大的尺寸受到限制。
+
+## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>在 iOS 设备上激活丢失模式声音警报
+
+如果有人丢失了 iOS 9.3 或更高版本的设备，则可以远程触发设备发出警报声，以便用户找到它。 该设备必须处于[丢失模式](device-lost-mode.md)。
+
+在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备” > “所有设备”>“选择 iOS 设备”>“概述” > “更多” > “播放丢失模式声音(仅监督)”。
+
+声音将继续播放，直到用户禁用设备上的声音或将设备从丢失模式中移除。
+
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>丢失模式和定位设备操作的安全与隐私信息
 - 启用此操作之前，不会向 Intune 发送任何设备的位置信息。

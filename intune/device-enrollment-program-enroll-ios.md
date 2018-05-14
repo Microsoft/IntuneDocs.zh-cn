@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32e61f95a1e6c197b8d732019a19222d437292bc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1dd9fff04ff479844910328d274d6cc4cbe2c14a
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>通过使用 Apple 设备注册计划自动注册 iOS 设备
 
@@ -74,7 +74,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 **步骤 1.下载创建 Apple DEP 令牌所需的 Intune 公钥证书。**<br>
 
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。
+1. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。
 
    ![Apple 证书工作区中的“注册计划令牌”窗格](./media/enrollment-program-token-add.png)
 
@@ -142,7 +142,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
    - Apple Configurator 证书 - 如果在“允许配对”下选择“通过证书允许 Apple Configurator”，请选择要导入的 Apple Configurator 证书。
 
-   选择**“保存”**。
+   选择“保存”。
 
 5. 选择“设置助理设置”，配置以下配置文件设置：
 
@@ -162,7 +162,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
         - **Siri**
         - **诊断数据**
 
-     选择**“保存”**。
+     选择“保存”。
 
 >[!NOTE]
 >从 iOS 11 开始，如果想要启用从 iCloud 备份还原功能，则“设置助理”选项下必须同时显示“还原”和“Apple ID”。

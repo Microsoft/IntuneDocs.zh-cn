@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 10502f82d94246f7a70af6b88c0704a4daa0372b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
 > [!TIP]
 > Intune 公司门户在 Android 设备上以中转站的方式工作，以便用户能够让 Azure AD 检查自己的标识。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 -   需要在 [Azure 门户](https://portal.azure.com/)中完成以下步骤。
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="microsoft-authenticator-app-for-ios"></a>适用于 iOS 的 Microsoft Authenticator 应用
 
-- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分步骤 5 中的 [Microsoft Authenticator 应用商店 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
+- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下步骤 12 中的此 [Microsoft Authenticator 应用商店 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
 
 ### <a name="lookout"></a>Lookout
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="ios"></a>iOS
 
-- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分步骤 5 中的 [Lookout for Work iOS 应用商店 URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8)。
+- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下的步骤 12 中的此 [Lookout for Work iOS 应用商店 URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8)。
 
 #### <a name="lookout-for-work-app-outside-the-apple-store"></a>Apple 应用商店之外的 Lookout for Work 应用
 
@@ -91,15 +91,15 @@ ms.lasthandoff: 04/16/2018
 
 - 按照[使用 Intune 添加 iOS LOB 应用](lob-apps-ios.md)主题中所述，上传重新签名的 .ipa 文件。 还需将最低操作系统版本设为 iOS 8.0 或更高版本。
 
-### <a name="skycure"></a>Skycure
+### <a name="symantec-endpoint-protection-mobile-sep-mobile"></a>Symantec Endpoint Protection Mobile (SEP Mobile)
 
 #### <a name="android"></a>Android
 
-- 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在**步骤 7** 中使用此 [Skycure 应用商店 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。
+- 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中，使用此 [SEP Mobile 应用商店 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。  对于“最低操作系统”，请选择“Android 4.0 (Ice Cream Sandwich)”。
 
 #### <a name="ios"></a>iOS
 
-- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在“配置应用信息”部分的步骤 5 中使用此 [Skycure 应用商店 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
+- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在步骤 12 中使用“配置应用信息”部分下的此 [SEP Mobile 应用商店 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
 
 ### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
@@ -109,7 +109,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="ios"></a>iOS
 
-- 联系 [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) 以获取 iOS 应用。 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md) 的说明，然后在“配置应用信息”部分下的“步骤 5”中使用 Apple 应用商店 URL。
+- 联系 [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) 以获取 iOS 应用。 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md) 的说明，然后使用“配置应用信息”部分下的“步骤 12”中的 Apple 应用商店 URL。
 
 ### <a name="zimperium"></a>Zimperium
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="ios"></a>iOS
 
-- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在“配置应用信息”部分的步骤 5 中使用此 [Zimperium 应用商店 URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
+- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下的步骤 12 中的此 [Zimperium 应用商店 URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
 
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>将 MTD 应用与 iOS 应用配置策略关联
 
@@ -127,31 +127,24 @@ ms.lasthandoff: 04/16/2018
 
 - 按照[使用 iOS 应用配置策略](app-configuration-policies-use-ios.md)主题中所述的步骤，创建 iOS 应用配置策略。
 
-### <a name="for-skycure"></a>对于 Skycure
+### <a name="for-sep-mobile"></a>适用于 SEP Mobile
 
--   使用以前在 [Skycure 管理控制台](https://aad.skycure.com)中配置的相同 Azure AD 帐户，这也应该是用于登录 Intune 经典门户的相同帐户。
+-   使用以前在 [Symantec Endpoint Protection 管理控制台](https://aad.skycure.com)中配置的相同 Azure AD 帐户，这也应该是用于登录 Intune 经典门户的相同帐户。
 
 -   需要**下载** iOS 应用配置策略文件： 
-    -   转到 [Skycure 管理控制台](https://aad.skycure.com)并使用管理员凭据登录。
+    -   转到 [Symantec Endpoint Protection 管理控制台](https://aad.skycure.com)并使用管理员凭据登录。
 
-    -   转到“设置”&gt;“设备管理集成”&gt;“EMM 集成选择”，选择“Microsoft Intune”，然后保存所做选择。
+    -   转到“设置”，然后在“集成”下选择 Intune。 选择“EMM 集成选择”。 选择 Microsoft，然后保存你的选择。
 
-    -   单击“集成设置文件”链接，然后保存生成的 \*.zip 文件。 该 .zip 文件包含 **skycure\_configuration.plist** 文件，该文件用于在 Intune 中创建 iOS 应用配置策略。
+    -   单击“集成设置文件”链接，然后保存生成的 \*.zip 文件。 该 .zip 文件包含 *.plist 文件，该文件用于在 Intune 中创建 iOS 应用配置策略。
 
-    -   请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，添加 Skycure iOS 应用配置策略。
+    -   请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，添加 SEP Mobile iOS 应用配置策略。
 
-    - 在“步骤 8”中，使用选项“输入 XML 数据”，复制 **skycure_configuration.plist** 文件中的内容并将粘贴到配置策略正文。
+    - 在“步骤 8”中，使用选项“输入 XML 数据”，复制 *.plist 文件中的内容并粘贴到配置策略正文。
 
-还可从此处复制 skycure_configuration.plist 内容：
+> [!NOTE]
+> 如果无法检索文件，请联系 [Symantec Endpoint Protection Mobile 企业支持部门](https://support.symantec.com/en_US/contact-support.html)。
 
-```
-<dict>
-    <key>MdmType</key>
-    <string>Intune</string>
-    <key>UserEmail</key>
-    <string>{{userprincipalname}}</string>
-</dict>
-```
 ### <a name="for-check-point-sandblast-mobile"></a>有关 Check Point SandBlast Mobile 的信息
 
 - 请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，以添加 Check Point SandBlast Mobile iOS 应用配置策略。

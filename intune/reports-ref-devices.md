@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 185cf1061ff4d577fd14af59bbe5fbc38365c3d1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c73b745915f1dcb32269059907b1cec1078d4b39
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
@@ -48,7 +48,7 @@ DeviceTypes 实体表示由其他数据仓库实体引用的设备类型。 设�
 
 | deviceTypeID  | 名称 | 描述 |
 |---------|------------|--------|
-| 0 |台式机 |Windows 桌面设备 |
+| 0 |“桌面” |Windows 桌面设备 |
 | 1 |WindowsRT |WindowsRT 设备 |
 | 2 |WinMO6 |Windows Mobile 6.0 设备 |
 | 3 |Nokia |Nokia 设备 |
@@ -266,6 +266,7 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 | LastPolicyUpdateUtc | 设备上策略最近一次更新的时间。 |
 | LastExchangeStatusUtc | 设备上次与 Exchange 同步的时间。 |
 | IsDeleted | 如果设备不再由 Intune 管理，则设置为 True。 保留上一已知状态。 |
+| AndroidSecurityPatchLevel |设备的最新安全修补程序的日期。 |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
@@ -339,7 +340,7 @@ MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单�
 | OSManufacturer |操作系统制造商。 |
 | OSProductSuite |操作系统产品套件。 |
 | OSProductType |操作系统产品类型。 |
-| Locale |操作系统区域设置。 |
+| 区域设置 |操作系统区域设置。 |
 | PhysicalMemoryCapacity |物理内存容量（以字节为单位）。 |
 | PhysicalMemoryRemovable |物理可移动内存（以字节为单位）。 |
 | SystemEnclosureChassisTypesInnerText |定义此设备的系统底盘类型。 数字指示以下值：  <br>0 或空 = 未知   <br>1 = 这是台式电脑   <br>2 = 这是笔记本电脑  <br>3 = 这是工作站  <br>4 = 这是企业服务器  <br>100 = 这是手机  <br>101 = 这是平板电脑  <br>102/103 = 其他未知类型的移动设备 |
@@ -383,7 +384,7 @@ MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单�
 | RemovableStorageTotal |总可移动存储（以字节为单位） |
 | DeviceMemoryDeviceCapacity |设备内存容量 |
 | DeviceMemoryAvailableDeviceCapacity |设备内存可用容量 |
-| DeviceOSVersion |OS 版本 |
+| DeviceOSVersion |操作系统版本 |
 | DeviceOSPlatform |OS 平台 |
 | DeviceOSLanguage |OS 语言 |
 | PasswordMaxAttemptsBeforeWipe |设备擦除前允许的密码尝试次数上限 |

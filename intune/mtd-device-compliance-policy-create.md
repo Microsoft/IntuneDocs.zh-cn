@@ -1,25 +1,25 @@
 ---
-title: "使用 Microsoft Intune 创建 MTD 设备符合性策略"
-titlesuffix: 
-description: "创建使用 MTD 合作伙伴威胁级别的 Intune 设备符合性策略，以确定移动应用是否可以访问公司资源。"
-keywords: 
+title: 使用 Microsoft Intune 创建 MTD 设备符合性策略
+titlesuffix: ''
+description: 创建使用 MTD 合作伙伴威胁级别的 Intune 设备符合性策略，以确定移动应用是否可以访问公司资源。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 创建移动威胁防御 (MTD) 设备符合性策略
 
@@ -36,11 +36,11 @@ MTD 设备符合性策略先决条件：
 
 -   使用 Intune 设置 MTD 集成
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>创建 MTD 设备符合性策略
+## <a name="to-create-an-mtd-device-compliance-policy"></a>创建 MTD 设备符合性策略
 
 1.  转到 [Azure 门户](https://portal.azure.com/)，然后使用 Intune 凭据登录。
 
-2.  在“Azure 仪表板”中，从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入“Intune”。
+2.  在“Azure 仪表板”中，从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
 3.  选择“Intune”，随即显示“Intune 仪表板”。
 
@@ -65,7 +65,7 @@ MTD 设备符合性策略先决条件：
 > [!IMPORTANT]
 > 如果为 Office 365 或其他服务创建条件性访问策略，将评估设备的符合性并阻止不符合设备访问公司资源，直到解决威胁。
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>分配 MTD 设备符合性策略
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>分配 MTD 设备符合性策略
 
 若要为用户分配设备合规性策略，请选择之前已配置的策略。 可在“设备符合性 - 策略”窗格中找到现有策略。
 

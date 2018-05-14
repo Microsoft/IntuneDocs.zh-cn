@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dabf8d67b4d0bd7252f306d6b21949cf501eca8d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -40,13 +40,11 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
   -  允许设备使用 Internet 连接接收证书。
   -  是设备通过 Internet 连接接收和续订证书时的安全建议。
 
-> [!NOTE]
-> - 承载 WAP 的服务器[必须安装此更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](http://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](http://support.microsoft.com/kb/3011135)。
-> - WAP 服务器必须具有与将要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
-> 
->   有关 WAP 证书的信息，请参阅[规划证书](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates)。
-> 
->   有关 WAP 服务器的一般信息，请参阅[使用 Web 应用程序代理](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11))。
+#### <a name="additional"></a>Additional
+- 承载 WAP 的服务器[必须安装此更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](http://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](http://support.microsoft.com/kb/3011135)。
+- WAP 服务器必须具有与将要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
+
+有关详细信息，请参阅[规划 WAP 证书](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates)和[有关 WAP 服务器的常规信息](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11))。
 
 ### <a name="network-requirements"></a>网络要求
 
@@ -369,13 +367,13 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
        - **CN={{IMEINumber}}**：用于标识移动电话的国际移动设备标识 (IMEI)
        - **CN={{OnPrem_Distinguished_Name}}**：用逗号分隔的一系列相对可分辨名称，如 `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
-       > [!TIP]
-       > 要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure Active Directory (AD) 连接](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。
+          要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。
+
+       - **CN={{onPremisesSamAccountName}}**：管理员可以使用 Azure AD 连接到名为 `onPremisesSamAccountName` 的属性，将 Active Directory 中的 samAccountName 属性同步到 Azure AD。 Intune 可以将该变量替换为 SCEP 证书主题中的证书颁发请求的一部分。  samAccountName 属性是用于从早期版本的 Windows（Windows 2000 之前）支持客户端和服务器的用户登录名。 用户登录名称格式为：`DomainName\testUser` 或仅 `testUser`。
+
+          要使用 `{{onPremisesSamAccountName}}` 变量，请务必使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 将 `onPremisesSamAccountName` 用户属性同步到 Azure AD。
 
        通过将一个或多个以上变量与静态字符串组合使用，可以创建自定义使用者名称格式，例如：CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US。 <br/> 本示例创建了使用者名称格式，其中除了使用 CN 和 E 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)介绍此函数及其支持的字符串。
-
-
-
 
 - **使用者可选名称**：输入 Intune 在证书请求中自动创建使用者可选名称 (SAN) 的值的方法。 例如，如果选择用户证书类型，则可以在使用者可选名称中包括用户主体名称 (UPN)。 如果客户端证书用于向网络策略服务器进行验证，则必须将使用者可选名称设置为 UPN。
 - **密钥用法**：输入证书的密钥用法选项。 选项包括：

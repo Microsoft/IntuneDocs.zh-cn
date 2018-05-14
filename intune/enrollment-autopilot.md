@@ -1,36 +1,49 @@
 ---
-title: "使用 Windows AutoPilot Deployment 计划注册设备"
+title: 使用 Windows AutoPilot Deployment 计划注册设备
 titleSuffix: Microsoft Intune
-description: "了解如何使用 Windows AutoPilot Deployment 计划注册 Windows 10 设备。"
-keywords: 
+description: 了解如何使用 Windows AutoPilot Deployment 计划注册 Windows 10 设备。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4522be0b636a72844fa6177fbb35d3350cfbd00e
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 934b80d1c174c25d37e30695f46afc88c8d8bfc3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>使用 Windows AutoPilot Deployment 计划注册 Windows 设备
 Windows AutoPilot Deployment 计划简化了设备预配。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 AutoPilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 当使用 Intune 来管理 AutoPilot 设备时，可在注册之后对策略、配置文件和应用等进行管理。 有关优势、方案和先决条件的概述，请参阅 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)（Windows AutoPilot 概述）。
 
 ## <a name="prerequisites"></a>必备条件
-- [必须向组织注册设备](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [已启用的 Windows 自动注册](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="add-devices"></a>添加设备
+
+可以通过导入具有 Windows AutoPilot 设备信息的 CSV 文件来添加 Windows AutoPilot 设备。
+
+1. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “设备” > “导入”。
+
+    ![Windows AutoPilot 设备的屏幕快照](media/enrollment-autopilot/autopilot-import-device.png)
+
+2. 在“添加 Windows Autopilot 设备”下，浏览至 CSV 文件，其中包含需要添加的设备的序列号、Windows 产品 ID 和硬件哈希。
+
+    ![“添加 Windows AutoPilot 设备”的屏幕快照](media/enrollment-autopilot/autopilot-import-device2.png)
+
+3. 选择“导入”以开始导入设备信息。 这可能需要几分钟。
 
 ## <a name="synchronize-devices"></a>同步设备
 将已注册设备同步到 Intune，以便对其进行配置。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”下，选择“设备注册”。
 4. 选择“Windows 注册”，然后选择“Windows AutoPilot 部署计划”部分中的“设备”。
 5. 单击“同步”以导入注册的设备。 将显示一条指示同步正在进行中的消息。
@@ -39,7 +52,7 @@ Windows AutoPilot Deployment 计划简化了设备预配。 生成和维护自�
 ## <a name="create-an-autopilot-deployment-profile"></a>创建 AutoPilot 部署配置文件
 AutoPilot 部署配置文件用于配置 AutoPilot设备。
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”下，选择“设备注册”。
 4. 选择“Windows 注册”，然后选择“Windows AutoPilot 部署计划”部分中的“部署配置文件”。
 5. 选择“创建配置文件”，然后选择名称和可选说明。
@@ -66,7 +79,7 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
 在创建 AutoPilot 部署配置文件后，可将其分配给所选设备。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”下，选择“设备注册”。
 4. 选择“Windows 注册”，然后选择“Windows AutoPilot 部署计划”部分中的“设备”。
 5. 选择要向其分配部署配置文件的设备。 可以在“配置文件状态”列中进行筛选以轻松查找设备，而无需分配的配置文件。
@@ -83,7 +96,7 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
 在成功创建 AutoPilot 部署配置文件后，可对该部署配置文件的某些部分进行编辑。   
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”下，选择“设备注册”。
 4. 在“Windows 注册”下，选择“Windows AutoPilot 部署计划”部分中的“部署配置文件”。
 5. 选择要编辑的配置文件。
@@ -105,9 +118,19 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
 可通过查看 Windows AutoPilot 未分配设备警报，了解在来自 AutoPilot 计划的众多设备中，有多少尚未分配 AutoPilot 部署配置文件。 使用警报中的信息可创建配置文件，并将其分配到未分配的设备。 单击警报时，会看到 Windows AutoPilot 设备的完整列表，以及与之相关的详细信息。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”下，选择“设备注册”。
 4. 若要查看警报，请选择“概述”。 单击该警报以查看 AutoPilot 设备列表。  
+
+## <a name="delete-autopilot-devices"></a>删除 AutoPilot 设备
+
+可以删除未注册的 Windows AutoPilot 设备。 可以取消注册设备，然后删除它们。
+
+1. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “设备”。
+
+2. 在“Windows AutoPilot 设备”下，选择要删除的设备，然后选择“删除”。
+
+3. 通过选择“是”确认删除。 删除可能需要几分钟。
 
 
 ## <a name="next-steps"></a>后续步骤
