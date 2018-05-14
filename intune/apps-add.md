@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
 
@@ -155,6 +155,16 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune 自动添加的应用
 
 之前，Intune 包含了一些可供快速分配的内置应用。 根据 Intune 客户反馈，我们删除了此列表，并且不再显示内置应用。 但是，如果你已分配任何内置应用，则在应用列表中仍会看到这些应用。 可以根据需要继续分配这些应用。
+
+## <a name="installing-updating-or-removing-required-apps"></a>安装、更新或删除所需应用
+
+Intune 将在 24 小时内自动重新安装、更新或删除所需应用，而不必等待 7 天的重新评估周期。
+
+Intune 会根据以下条件自动重新安装、更新或删除所需应用：
+- 如果最终用户卸载你要求安装在其设备上的应用，则在该时间计划过去时 Intune 将自动重新安装该应用。
+- 如果必需的应用安装失败或设备上不存在该应用，Intune 将评估符合性并在此时间计划过后重新安装该应用。  
+- 管理员将应用定位为可供用户组使用且最终用户可从设备上的公司门户安装的应用。 之后，管理员会将应用从 v1 更新到 v2。 Intune 会在此时间计划过去时更新应用，前提是应用的任何早期版本仍然在设备上。
+- 如果管理员部署卸载意向并且该设备上存在此应用且卸载失败，Intune 会评估符合性，并在该时间计划过去时卸载该应用。   
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f9cc117925f59c9fb7c55d0ff10aedf09d26f93
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 5c9f81761e7e24393471f44da4cf619f017e9bbd
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -74,35 +74,35 @@ ms.lasthandoff: 04/06/2018
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
 
-## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>在 Android 移动应用中启用应用保护策略
-向 Xamarin.Android 项目添加 [Microsoft.Intune.MAM.Xamarin.Android NuGet 包](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)。
+## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 移动应用中启用 Intune 应用保护策略
 
-若是 Xamarin.Android 应用，需仔细阅读[用于 Android 的 Intune App SDK 开发人员指南](app-sdk-android.md)并按文章内容进行操作，包括根据该指南中的[表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)将类、方法和活动替换为其 MAM 等效项。 
+### <a name="xamarinandroid-integration"></a>Xamarin.Android 集成
+
+1. 向 Xamarin.Android 项目添加 [Microsoft.Intune.MAM.Xamarin.Android NuGet 包](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)的最新版本。 这将向你提供使用 Intune 启用应用程序的必要参考。
+
+2. 请完整阅读并遵循[用于 Android 的 Intune App SDK 开发人员指南](app-sdk-android.md)，并特别注意：
+    1. [整个类和方法替换部分](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)。 
+    2. [MAMApplication 部分](app-sdk-android.md#mamapplication)。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
+    3. 如果你的应用针对 AAD 执行身份验证，请注意 [ADAL 集成部分](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)。
+    4. 如果计划从应用程序中的 MAM 服务获取策略，请注意 [MAM-WE 注册部分](app-sdk-android.md#app-protection-policy-without-device-enrollment)。
 
 > [!NOTE]
-> 如果应用没有定义 `android.app.Application` 类，则需要创建一个，并确保继承自 `MAMApplication`。
-
-> [!NOTE]
-> 尝试在[用于 Android 的 Intune App SDK 开发人员指南](app-sdk-android.md)中查找 `Microsoft.Intune.MAM.Xamarin.Android` Bindings 的等效 API 或根据该指南转换代码片段时，请注意 Xamarin 的绑定生成器会对 Android API 进行以下重要修改：
-> * 会将所有标识符转换为 Pascale 事例 (com.microsoft.foo -> Com.Microsoft.Foo)
-> * 会将所有的 get/set 操作转换为属性操作（例如 Foo.getBar() -> Foo.Bar，Foo.setBar("zap") -> Foo.Bar = "zap"）
+> 尝试在[用于 Android 的 Intune App SDK 开发人员指南](app-sdk-android.md)中查找 `Microsoft.Intune.MAM.Xamarin.Android` Bindings 的等效 API 时或根据该指南转换代码片段时，请注意 Xamarin 的绑定生成器会对 Android API 进行以下重要修改：
+> * 会将所有标识符都转换为帕斯卡拼写法 (com.foo.bar -> Com.Foo.Bar)
+> * 会将所有 get/set 操作转换为属性操作（例如 Foo.getBar() -> Foo.Bar、Foo.setBar("zap") -> Foo.Bar = "zap"）
 > * 所有接口的名称都加上了字符“I”(FooInterface -> IFooInterface)
 
-对于使用 Xamarin.Forms 或其他 UI 框架的应用，我们提供了名为 `Microsoft.Intune.MAM.Remapper` 的工具。 该工具将为你完成类替换。 若要使用该工具，请执行下列操作：
+### <a name="xamarinforms-integration"></a>Xamarin.Forms 集成
 
-1.  向项目添加 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 包。
+除执行上述所有步骤外，对于 `Xamarin.Forms` 应用，我们还提供了 `Microsoft.Intune.MAM.Remapper` 包。 此包通过将 `MAM` 类注入到 `FormsAppCompatActivity` 和 `FormsApplicationActivity` 等常用 `Xamarin.Forms` 类的类层次结构中来为你完成类替换，因此可通过为 `OnMAMCreate` 和 `OnMAMResume` 等 MAM 等效函数提供替代以继续使用这些类。 若要使用该工具，请执行下列操作：
 
-2.  将 Nuget 包随附的 `remapping-config.json` 文件的生成操作设置为 RemappingConfigFile。 所包含的 `remapping-config.json` 仅适用于 Xamarin.Forms。 对于其他 UI 框架，请参阅 Remapper NuGet 包中所包含的自述文件。
+1.  向项目添加 [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet 包。 如果尚未包含它们，它将自动添加 Intune APP SDK Xamarin 绑定。
 
-3.  在 MAMApplication 的 OnMAMCreate 函数中添加对 Xamarin.Forms.Forms.Init(Context, Bundle) 的调用，这样借助 Intune 管理，该应用程序即可在后台启动。
-
-4.  执行[用于 Android 的 Intune App SDK 开发人员指南](app-sdk-android.md)中适用于应用的其他步骤。
+2.  在上述步骤 2.2 中创建的 `MAMApplication` 类的 `OnMAMCreate` 函数中添加对 `Xamarin.Forms.Forms.Init(Context, Bundle)` 的调用。 此操作很有必要，因为通过 Intune 管理，你的应用程序可在后台时启动。
 
 > [!NOTE]
-> 更新 Microsoft.Intune.MAM.Remapper.Tasks 包时，remapping-config.json 的生成操作有时可能会重置，从而导致生成操作失败。
+> 由于此操作会重新编写 Visual Studio 用于 Intellisense 自动完成的依赖项，因此建议在重映射器首次运行后重启 Visual Studio 以使 Intellisense 正确识别这些更改。 
 
-## <a name="next-steps"></a>后续步骤
-
-你已完成将应用设置为使用 Intune 管理的基本步骤。 现在可以按照上述针对每个平台的集成指南中的步骤进行操作。
+## <a name="support"></a>Support
 
 如果你的组织已经是 Intune 的客户，请与 Microsoft 支持代表合作打开支持票证并在 [Github 问题页](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上创建一个问题，我们会尽快为你提供帮助。 

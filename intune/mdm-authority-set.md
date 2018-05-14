@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15e1678fa93269eb650f8a5684091b430ebf1cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f903e9dfe5fb30f45806aac5694171814492f2e
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>设置移动设备管理机构
 
@@ -62,6 +62,19 @@ ms.lasthandoff: 04/16/2018
 - Windows -（可选）启用[自动注册](windows-enroll.md)或[批量注册](windows-bulk-enroll.md)
 - macOS - （必需）获取 [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)。
 
+### <a name="workflow-of-intune-administration-ui"></a>Intune 管理 UI 的工作流
+启用 Android 或 Apple 设备管理后，Intune 将发送设备和用户信息来与这些第三方服务集成，以便管理其各自的设备。
+
+可以同意共享数据的场景包括：
+- 启用 Android for Work 时。
+- 启用并上传 Apple MDM Push Certificate 时。
+- 启用任何诸如设备注册计划、School Manager 或批量采购计划等 Apple 服务时。
+
+在每种情况下，同意都与运行移动设备管理服务严格相关，例如确认 IT 管理员已授权 Google 或 Apple 设备注册。 以下位置提供当新的工作流上线时用于查阅共享了哪些信息的文档：
+- [Intune 向 Google 发送的数据](https://aka.ms/Data-intune-sends-to-google)
+- [Intune 向 Apple 发送的数据](https://aka.ms/data-intune-sends-to-apple)
+
+有关 Microsoft GDPR 符合性的详细信息，请参阅[信任中心 - 评估 GDPR 符合性](https://aka.ms/trust_center_info)。
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理
 

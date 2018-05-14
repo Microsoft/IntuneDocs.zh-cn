@@ -15,11 +15,11 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 889fb53fc215763b061f5165425df7b0b9960702
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e453cf1af0d065a367d636c3e6cc8e8ddd79cfda
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>需要在 Android 设备上安装 SandBlast Mobile Protect
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/04/2018
 
 **需要执行的操作：**
 
-1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 – 从 Play Store 安装 Skycure”。 此外，还可以在__符合性详细信息__下的公司门户应用内找到此项。
+1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 – 从 Play Store 安装 SandBlast 移动保护”。 此外，还可以在__符合性详细信息__下的公司门户应用内找到此项。
 
 2. 将转到 Play Store 中的 SandBlast Mobile Protect 安装页。 安装 SandBlast Mobile Protect，然后点击“接受”以允许 SandBlast Mobile Protect 访问你的设备。
 

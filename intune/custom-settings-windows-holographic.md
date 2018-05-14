@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d15e464ed77499c28bbcaf94289607ced48c140f
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 7272e8e088ae2c2ecad1756233281c42a80a279b
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Intune 中运行 Windows Holographic for Business 的设备的自定义设备设置
 
@@ -27,6 +27,7 @@ ms.lasthandoff: 04/28/2018
 如果正在寻找特定设置，请牢记 [Windows Holographic for Business 设备限制配置文件](device-restrictions-windows-holographic.md)包含许多内置设置，无需指定自定义值。
 
 ## <a name="create-the-custom-oma-uri-profile"></a>创建自定义 OMA-URI 配置文件
+
 1. 按照[在 Microsoft Intune 中配置自定义设备设置](custom-settings-configure.md)中的说明进行操作。
 2. 在“创建配置文件”上，选择“设置”添加一个或多个 OMA-URI 设置。
 3. 在“自定义 OMA-URI 设置”上，单击“添加”可添加新值。 还可以单击“导出”创建逗号分隔值 (.csv) 文件中配置的所有值的列表。
@@ -50,52 +51,95 @@ ms.lasthandoff: 04/28/2018
 
 ### <a name="allowfastreconnecthttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-authenticationauthentication-allowfastreconnect"></a>[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
----
-|OMA-URI|数据类型|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br/>0 - 不允许<br/>1 - 允许（默认值）|
-
-### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
-
----
-|OMA-URI|数据类型|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - 不允许<br/>1 - 允许（默认值）|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br/>0 - 不允许<br/>1 - 允许（默认值）|
 
 ### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
----
-|OMA-URI|数据类型|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br/>0 – 不允许更新服务 <br/>1 – 允许更新服务（默认值）。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br/>0 – 不允许更新服务 <br/>1 – 允许更新服务（默认值）。|
 
-### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
----
-|OMA-URI|数据类型|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|字符串<br/>URL - 设备从指定的 URL 上的 WSUS 服务器检查更新。<br/>未配置 - 设备从 Microsoft 更新检查更新。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - 不允许<br/>1 - 允许（默认值）|
 
 ### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
----
-|OMA-URI|数据类型|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – 未配置。 设备安装所有适用的更新。<br/>1 – 设备仅安装既适用又在已批准更新列表中的更新。 如果 IT 想控制设备上的更新部署（例如部署前需要测试），请将此策略设置为 1。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – 未配置。 设备安装所有适用的更新。<br/>1 – 设备仅安装既适用又在已批准更新列表中的更新。 如果 IT 想控制设备上的更新部署（例如部署前需要测试），请将此策略设置为 1。|
+
+### <a name="scheduledinstalltimehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-scheduledinstalltime"></a>[ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime|整数 0-23，其中 0 表示中午 12 点，23 表示晚上 11 点<br/>默认值为 3。|
+
+### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|字符串<br/>URL - 设备从指定的 URL 上的 WSUS 服务器检查更新。<br/>未配置 - 设备从 Microsoft 更新检查更新。|
 
 ### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
----
-|OMA-URI|数据类型|
-|---|---|
-|./Vendor/MSFT/Update/ApprovedUpdates/GUID<br/><br/>**重要说明**<br/>必须代表最终用户阅读和接受更新 EULA。 如果不这样做，将被视为违反法律或合同义务。|更新批准的节点和代表最终用户的 EULA 接受。<br/><br/>有关详细信息，请参阅[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |---|---|
+> |./Vendor/MSFT/Update/ApprovedUpdates/GUID<br/><br/>**重要说明**<br/>必须代表最终用户阅读和接受更新 EULA。 如果不这样做，将被视为违反法律或合同义务。|更新批准的节点和代表最终用户的 EULA 接受。<br/><br/>有关详细信息，请参阅[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。|
 
 ### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 
----
-|OMA-URI|数据类型|
-|----|---|
-|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**重要说明**<br/>AppLocker CSP 一文使用转义 XML 示例。 若要使用 Intune 自定义配置文件配置设置，必须使用纯 XML。|字符串<br/>有关详细信息，请参阅 [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |----|---|
+> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**重要说明**<br/>AppLocker CSP 一文使用转义 XML 示例。 若要使用 Intune 自定义配置文件配置设置，必须使用纯 XML。|字符串<br/>有关详细信息，请参阅 [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)。|
+
+### <a name="deletionpolicyhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[DeletionPolicy](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - 设备返回到当前没有活动用户的状态时立即删除<br/>1 - 按存储容量阈值删除（默认）<br/>2 - 按存储容量阈值和配置文件非活动阈值删除|
+
+### <a name="enableprofilemanagerhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[EnableProfileManager](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|布尔值<br/>True - 启用<br/>False - 禁用（默认值）|
+
+### <a name="profileinactivitythresholdhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[ProfileInactivityThreshold](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|Integer<br/>默认值为 30。|
+
+
+### <a name="storagecapacitystartdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStartDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|Integer<br/>默认值为 25。|
+
+### <a name="storagecapacitystopdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStopDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|数据类型|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|Integer<br/>默认值为 50。|
 
 ## <a name="find-the-policies-you-can-configure"></a>查找可以配置的策略
 

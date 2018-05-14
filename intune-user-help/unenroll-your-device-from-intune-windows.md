@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remove-your-windows-device-from-intune"></a>从 Intune 删除 Windows 设备
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/04/2018
 
 公司门户在 Windows 设备上存储的数据分为两种：
 
--   **诊断日志**：Microsoft 收集的标准应用活动数据，例如应用开启时长或应用是否崩溃。从公司门户删除设备时，系统会自动清除此数据。
+-   **诊断日志**：Microsoft 收集的标准应用活动数据，例如应用开启时长或应用是否崩溃。卸载公司门户应用时，系统会自动清除此数据。
 -   **应用程序缓存**：存储应用正常工作所需的某些支持文件，例如图标和设置。
 
 完全删除此信息需执行以下步骤：

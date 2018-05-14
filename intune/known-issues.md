@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
-ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
+ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -46,6 +46,14 @@ ms.lasthandoff: 04/19/2018
 你无法查看从 Azure 门户中的 Azure 经典门户中迁移的策略的状态信息。 但可以继续在经典门户中查看这些策略的报表。 若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
 
 ## <a name="apps"></a>应用
+
+
+### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>针对某些 VPP 应用的多个应用安装提示
+对于已安装在最终用户设备上的某些 VPP 应用，你可能会看到多个应用安装提示。 如果你将已上传到 Intune Azure 门户的 VPP 令牌的“自动进行应用更新”选项设置为“开”，则会出现此问题。    
+
+若要解决此问题，可禁用 VPP 令牌的“自动进行应用更新”选项。 若要执行此操作，请在 Azure 门户中打开 Microsoft Intune。 从 Intune 中选择“移动应用” > “iOS VPP 令牌”。 接下来，选择已部署受影响应用的 VPP 令牌并选择“编辑” > “自动进行应用更新” > “关” > “保存”。 或者，可停止将受影响的应用部署为 VPP 应用，此操作可停止提示。    
+
+这是当前版本中的一个已知问题。 我们即将推出解决此问题的修补程序。 实现此修补程序得之后，你的用户将不再看到多个应用安装提示。
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>仅适用于默认 Intune 租户语言的 iOS 批量采购应用
 会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户帐户国家/区域代码相同的应用。 例如，如果要购买的应用只在美国商店提供，但 Intune 帐户所在地区为德国，则 Intune 不会显示该应用。

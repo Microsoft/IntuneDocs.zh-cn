@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="email-logs-to-your-company-support"></a>通过电子邮件将日志发送给公司支持人员
 
 在 Android 设备上使用公司门户应用有时会出现错误。 发生这种情况时，可以通过电子邮件将有关该错误的详细信息发送给公司的支持人员。 这些详细信息将提供为你解决该问题所需的上下文。  
 
-错误详细信息保留在设备上一个名为“诊断日志”的专用文档中。 将日志上传到公司门户应用时，系统会首先将日志发送给负责该应用的 Microsoft 开发人员。 开发人员会使用该日志来改善应用的功能，并防止将来出现错误。 然后我们会向你提供具体错误的事件 ID，方便你将其共享给你所在公司的支持人员。  
+错误详细信息保留在设备上一个名为“诊断日志”的专用文档中。 将日志上传到公司门户应用时，系统会首先将日志发送给负责该应用的 Microsoft 开发人员。 开发人员会使用该日志来改善应用的功能，并防止将来出现错误。 然后我们会向你提供具体错误的事件 ID，方便你将其共享给你所在公司的支持人员，适用于 Microsoft 支持部门事例。
 
 > [!Note]
 > 为了让公司支持人员能够更快找出问题的原因，应打开“详细日志记录”。 详细日志记录中记录了有关某个错误的所有详细信息，并将其包含在报告中。 了解如何[在此处打开详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)。  

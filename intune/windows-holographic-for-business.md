@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/5/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 18f86580fc4c80fade7aeaa9678e9d8edac9a53e
+ms.sourcegitcommit: b57be56524ddb5026fab94f7638dc516ed118325
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>使用 Intune 对运行 Windows Holographic 的设备进行自定义设置
 
@@ -25,6 +25,16 @@ Microsoft Intune 支持运行 Windows Holographic for Business 的设备，例�
 若要使用 Microsoft Intune 管理运行 Windows Holographic 的设备，必须创建一个 Edition Upgrade 配置文件。 此升级配置文件能将设备从 Windows Holographic 升级至 Windows Holographic for Business。 对于 Microsoft HoloLens，则可以通过购买商业套件来获得升级所需的许可证。 有关详细信息，请参阅[将运行 Windows Holographic 的设备升级到 Windows Holographic for Business](holographic-upgrade.md)。
 
 本文中的任务可帮助你管理和自定义运行 Windows Holographic for Business 的设备。 例如，你可以管理软件更新、配置 VPN 设置以及进行其他操作。
+
+## <a name="azure-active-directory"></a>Azure Active Directory
+
+Azure Active Directory (AD) 是帮助管理和控制运行 Windows Holographic for Business 的设备的绝佳资源。 使用 Intune 和 Azure AD 可以： 
+
+- **[设置已加入 Azure Active Directory 的设备](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**：在 Azure Active Directory (AD) 中，可添加工作所有的 Windows 10 设备，包括运行 Windows Holographic for Business 的设备。 Azure AD 可使用此功能来控制设备。 此功能有助于确保你的用户从满足安全性和符合性标准的设备访问公司资源。
+
+  请参阅 [Azure AD 中的设备管理简介](https://docs.microsoft.com/azure/active-directory/device-management-introduction)了解更多详细信息。
+
+- **[Windows 设备的批量注册](windows-bulk-enroll.md)**：可将大量新的 Windows 设备加入到 Azure Active Directory (AD) 和 Intune。 此功能称为批量注册，并使用预配包。 这些包将运行 Windows Holographic for Business 的设备加入到 Azure AD 租户，并在 Intune 中注册它们。
 
 ## <a name="company-portal"></a>Company Portal
 **[配置公司门户应用](company-portal-app.md)**
@@ -56,6 +66,18 @@ Microsoft Intune 可以向运行 Windows Holographic for Business 的 Microsoft 
 > [!NOTE]
 > 运行 Windows 10 Holographic for Business 1607 的 HoloLens 设备不支持来自适用于企业的 Microsoft Store 的在线许可应用。 若要了解详细信息，请参阅[在 HoloLens 上安装应用](https://docs.microsoft.com/en-us/hololens/hololens-install-apps)。
 
+## <a name="device-actions"></a>设备操作
+Intune 具有一些内置操作，允许 IT 管理员在本地设备上执行不同的任务，或者在 Azure 门户中使用 Intune 远程执行不同的任务。 用户还可从 Intune 公司门户中向在 Intune 中注册的个人所有设备发出远程命令。
+
+使用运行 Windows Holographic for Business 的设备时，可使用以下操作： 
+
+- **[恢复出厂设置](devices-wipe.md#factory-reset)**：执行“恢复出厂设置”操作可从 Intune 中删除设备，并将设备还原到其出厂默认设置。 请在将设备交给新用户之前或设备丢失或被盗时使用此操作。
+
+- **[删除公司数据](devices-wipe.md#remove-company-data)**：执行“删除公司数据”操作可从 Intune 中删除设备，并删除由 Intune 分配的托管应用数据、设置和电子邮件配置文件。 用户的个人数据保留在设备上。
+
+- **[同步设备以获取最新策略和操作](device-sync.md)**：执行“同步”操作会强制设备使用 Intune 立即签入。 当设备签入时，该设备会立即收到分配给自己的任何挂起的操作或策略。 此功能有助于验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
+
+**[什么是 Microsoft Intune 设备管理？](device-management.md)** 是了解使用 Azure 门户管理设备的最佳资源。 
 
 ## <a name="device-categories-and-groups"></a>设备类别和组
 **[将设备分类为组](device-group-mapping.md)**
