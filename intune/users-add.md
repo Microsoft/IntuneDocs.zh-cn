@@ -84,14 +84,14 @@ ms.lasthandoff: 04/16/2018
 
 5. 从可用角色列表中选择要授予的管理员权限。
 ![分配角色的屏幕截图](./media/office-assign-roles.png)
-6. 选择**“保存”**。
+6. 选择 **“保存”**。
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>在 Azure 门户中授予管理员权限
 1. 使用全局管理员帐户登录 [Azure 门户](https://www.office.com/signin)。
 2. 在 Azure 门户中，依次选择“用户”和要向其授予管理员权限的用户。
 3. 选择“目录角色”，然后选择权限。
   ![目录角色的屏幕截图](./media/add-intune-directory-role.png)
-4. 选择**“保存”**。
+4. 选择 **“保存”**。
 
 ### <a name="types-of-administrators"></a>管理员类型
 
