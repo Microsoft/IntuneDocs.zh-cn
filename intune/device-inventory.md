@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a40b855d1dbaeece1dc91648866285c0a01fb338
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -46,6 +46,16 @@ ms.lasthandoff: 04/26/2018
    - “设备配置”显示分配给该设备的所有设备配置策略，以及该策略成功还是失败。
 
 Intune 仅收集公司拥有的设备上的应用列表。 不检查个人设备上的应用。 对于 Windows 10 电脑，仅列出公司拥有的设备上的新型应用。 Intune 不会收集设备上的 Win32 应用的相关信息。 根据设备使用的运营商，可能并不会收集所有应用。
+
+|平台|个人拥有设备|公司拥有设备|  
+|--------------|---------------------------------|--------------------------------|  
+|Windows 10（不带 Configuration Manager 客户端）|仅托管应用|仅托管应用|
+|Windows 8.1（不带 Configuration Manager 客户端）|仅托管应用|仅托管应用|  
+|Windows Phone 8|仅托管应用|仅托管应用|  
+|Windows RT|仅托管应用|仅托管应用|  
+|iOS|仅托管应用|设备上安装的所有应用|
+|macOS|设备上安装的所有应用|设备上安装的所有应用|  
+|Android|仅托管应用|设备上安装的所有应用|  
 
 ## <a name="next-steps"></a>后续步骤
 了解使用 Intune [管理设备](device-management.md)还可以执行哪些操作。

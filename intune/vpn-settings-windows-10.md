@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune 中的 Windows 10 VPN 设置
 
@@ -99,17 +99,10 @@ ms.lasthandoff: 04/28/2018
 
 ## <a name="apps-and-traffic-rules"></a>应用和通信规则
 
-<<<<<<< HEAD
 - 将 WIP 或应用与此 VPN 相关联：如果只希望某些应用使用 VPN 连接，则启用此设置。 选项包括：
 
   - 将 WIP 与此连接相关联：为此连接输入 WIP 域。
   - 将应用与此连接相关联：可以将 VPN 连接限制到这些应用，然后添加“关联应用”。 输入的应用会自动使用 VPN 连接。 应用的类型决定应用的标识符。 对于通用应用，输入包系列名称。 对于桌面应用，输入应用的文件路径。
-=======
-**** 对这些应用限制 VPN 连接：如果只希望某些应用使用 VPN 连接，则启用此设置。
-
-**关联应用**：输入自动使用 VPN 连接的应用列表。 应用的类型决定应用的标识符。 对于通用应用，输入包系列名称。 对于桌面应用，输入应用的文件路径。
->>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
-
   >[!IMPORTANT]
   >建议保护为每应用 VPN 创建的所有应用列表。 如果未经授权的用户更改了此列表，而你将其导入每应用 VPN 的应用列表中，则可能会向不应具有访问权限的应用授予 VPN 访问权限。 一种保护应用列表的方法是使用访问控制列表 (ACL)。
 

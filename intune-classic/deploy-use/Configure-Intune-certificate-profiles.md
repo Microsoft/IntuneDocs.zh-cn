@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c2b17e1acff965a08245094c57df81c58f44fda
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>配置 Itune 证书配置文件
 
@@ -103,7 +103,7 @@ ms.lasthandoff: 04/16/2018
    > 
    > 自定义格式当前支持的两个变量为 `Common Name (CN)` 和 `Email (E)`。 通过使用这些变量和静态字符串的组合，你可以创建自定义使用者名称格式，如下所示：
    > 
-   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
    > 
    > 在本示例中，管理员创建了使用者名称格式，其中除了使用 `CN` 和 `E` 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)列出了受支持的字符串。
 
