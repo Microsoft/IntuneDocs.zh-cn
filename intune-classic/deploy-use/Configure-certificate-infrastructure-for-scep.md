@@ -105,7 +105,7 @@ ms.lasthandoff: 04/16/2018
 
     模板必须进行以下配置：
 
-    -   为模板指定一个友好的**“模板显示名称”**。
+    -   为模板指定一个友好的 **“模板显示名称”**。
 
     -   在“使用者名称”选项卡上，选择“在请求中提供”。 （由适用于 NDES 的 Intune 策略模块强制实施安全措施）。
 
@@ -250,7 +250,7 @@ ms.lasthandoff: 04/16/2018
     ![IIS 的最大 URL 长度和最大查询长度](../media/SCEP_IIS_max_URL.png)
 
 5. 重新启动服务器。 在服务器上运行 iisreset 将不足以完成这些更改。
-6. 浏览到 http://FQDN/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
+6. 浏览到 http://<em>FQDN</em>/certsrv/mscep/mscep.dll。 你应看到类似于下面的 NDES 页面：
 
     ![测试 NDES](../media/SCEP_NDES_URL.png)
 

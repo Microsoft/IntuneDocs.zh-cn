@@ -125,6 +125,7 @@
 #### [通过“访问工作或学校帐户”注册 Windows 10 设备](enroll-your-w10-device-access-work-or-school.md)
 #### [注册 Windows 8.1 或 Windows RT 8.1 设备](enroll-your-w81-or-rt81-windows.md)
 #### [注册 Windows Phone 8.1 设备](enroll-your-wp81-windows.md)
+### [从适用于 Windows 的公司门户应用安装应用](install-apps-cpapp-windows.md)
 ### [重置设备](reset-erase-your-device-cpwebsite.md)
 ### [加密设备](encrypt-your-device-windows.md)
 ### [设置或更改密码](set-or-change-your-password-windows.md)
