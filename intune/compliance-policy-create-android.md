@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>在 Intune 中添加适用于 Android 设备的设备符合性策略
 
@@ -100,12 +100,12 @@ ms.lasthandoff: 04/18/2018
   - 设备默认值
   - **低安全性生物识别**
   - **至少为数字**
-  - 复杂数字
+  - 数字复杂度：不允许使用重复或连续数字（例如，“1111”或“1234”）。
   - **至少为字母**
   - **至少包含字母数字**
   - **至少为字母数字与符号**
 - **要求提供密码之前的非活动最大分钟数**：输入用户必须重新输入其密码前的空闲时间。
-- 密码过期(天)：选择密码过期之前的天数，然后必须创建一个新密码。
+- 密码过期（天）：选择用户密码过期之前的天数，过期后用户必须新建一个密码。
 - 要防止重用的以前的密码数：输入最近用过的不能重用的密码数。 使用此设置限制用户创建以前用过的密码。
 
 ### <a name="encryption"></a>加密

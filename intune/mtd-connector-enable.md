@@ -15,11 +15,11 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fec1477cf5f5f7fd6db113c8b87b6eb4068101d
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 5f0dd0d968cde26ed4fcd4a628db5ff98316bee7
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中启用移动威胁防御连接器
 
@@ -51,11 +51,13 @@ ms.lasthandoff: 04/28/2018
 根据组织要求，可以决定需要启用哪些 MTD 切换选项。 下面是更多详细信息：
 
 - **将 Android 4.1+ 设备连接到 [MTD 合作伙伴名称] for Work MTD**：如果启用此选项，可以让 Android 4.1 + 设备将安全风险报回 Intune。
-    - **如果未收到任何数据则标记为不符合：**如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
+    - **如果未收到任何数据则标记为不符合：** 如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
 <br></br>
 - **将 iOS 8.0+ 设备连接到 [MTD 合作伙伴名称] for Work MTD**：如果启用此选项，可以让 Android 4.1 + 设备将安全风险报回 Intune。
-    - **如果未收到任何数据则标记为不符合：**如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
+    - **如果未收到任何数据则标记为不符合：** 如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
 <br></br>
+- 启用 iOS 设备的应用同步：允许此 Mobile Threat Defense 合作伙伴请求 Intune 中的 iOS 应用程序的元数据，以用于威胁分析。
+
 - **阻止不受支持的操作系统版本**：如果设备运行的操作系统版本低于支持的最低版本，则阻止该版本。
 
 - 合作伙伴无响应之前的天数：在 Intune 由于连接断开将合作伙伴视为无响应之前的天数。 Intune 将忽略无响应 MTD 合作伙伴的符合性状态。

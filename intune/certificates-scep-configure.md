@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -304,6 +304,9 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 6. 提示输入证书连接器的客户端证书时，选取“选择”，然后选择任务 3 中在你的 NDES 服务器上安装的“客户端身份验证”证书。
 
     选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书” 处。 尽管所选证书不会显示，但可以单击“下一步”查看该证书的属性。 然后依次选择“下一步”和“安装”。
+    
+    > [!IMPORTANT]
+    > 无法在启用了 Internet Explorer 增强型安全配置的设备上注册 Intune 证书连接器。 若要使用 Intune 证书连接器，请[禁用 IE 增强型安全配置](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
 
 7. 在向导完成后，先单击“启动证书连接器 UI，然后再关闭向导”。
 

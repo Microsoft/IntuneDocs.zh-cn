@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f2622a173b33fd28c55a9a63321a9f2faa16a5d7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4a1ce01cf5d65b0bb0d6230972e5358dbe41854
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>需更新 Android 设备的操作系统
 
-如果看到消息告知“未配置最低 Android 安全修补程序级别”，则需要安装更新以确保设备保持安全。 修补程序发布用于维护软件以使其顺畅运行且处于最新版本。 公司支持人员要求安装此修补程序来确保公司数据在你的设备上尽可能地受到保护。 所需的安全修补程序的位置不定，具体取决于所使用的 Android 设备类型。
+如果看到消息告知“Android 安全修补程序级别过低”，则需要安装更新以确保设备保持安全。 修补程序发布用于维护软件以使其顺畅运行且处于最新版本。 公司支持人员要求安装此修补程序来确保公司数据在你的设备上尽可能地受到保护。 所需的安全修补程序的位置不定，具体取决于所使用的 Android 设备类型。
 
 如果你拥有 Samsung 设备，请转到“设置” > “关于手机”，然后查看屏幕上是否有“Knox”一词。 如果有，则请遵循下面的 Samsung Knox 说明。
 

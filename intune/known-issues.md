@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -61,6 +61,8 @@ ms.lasthandoff: 05/03/2018
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>会上传同一 iOS 批量采购计划的多个副本
 不要为相同的 VPP 令牌多次单击“上传”按钮。 这将导致上传重复的 VPP 令牌，并导致应用针对同一 VPP 令牌发生多次同步。
 
+### <a name="some-managed-browser-traffic-not-routed-through-azure-app-proxy----2463492---"></a>某些 Managed Browser 通信不通过 Azure 应用代理路由 <!-- 2463492 -->
+这是 Managed Browser 和应用代理集成中的已知问题，其中某些第三级通信（例如，javascript 或 AJAX 调用）不是通过 Azure 应用代理路由的。 这是当前版本中的一个已知问题。  
 
 <!-- ## Groups -->
 

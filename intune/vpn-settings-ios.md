@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: eb87d75512d9f04abac9db256d0d968bb85116ef
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>在 Microsoft Intune 中为运行 iOS 的设备配置 VPN 设置
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 04/18/2018
 - **连接名称**：输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接列表时将看到此名称。
 - **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com。
 - **身份验证方法**：从以下选项中选择设备向 VPN 服务器进行身份验证的方法：
-  - **证书**：在“身份验证证书”下，选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 有关证书配置文件的一些指导，请参阅[配置证书](certificates-configure.md)。
+  - “证书”：在“身份验证证书”下，选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 [配置证书](certificates-configure.md)提供了有关证书配置文件的一些指导。
   - **用户名和密码**：最终用户必须输入用户名和密码才能登录 VPN 服务器。
+
+    > [!NOTE]
+    > 如果用户名和密码被用作 Cisco IPsec VPN 的身份验证方法，则它们必须通过自定义 Apple 配置器配置文件来提供 SharedSecret。
+  
 - **连接类型**：从以下供应商列表中选择 VPN 连接类型：
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**

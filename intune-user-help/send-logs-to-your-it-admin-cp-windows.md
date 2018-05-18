@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>通过 Windows 10 的公司门户应用将日志发送给公司支持人员
 
 如果在 Windows 10 设备上使用公司门户应用时遇到错误，可以通过电子邮件向公司支持人员发送信息，以帮助他们解决问题。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
+
+> [!Note]       
+> 当用户启动获取问题的帮助的工作流时，Windows 10 公司门户将直接向 Microsoft 发送应用日志。 这样一来，可以更为轻松地排除和解决向 Microsoft 提出的问题。
 
 1. 打开“公司门户”应用。
 2. 选择“设置”齿轮，然后“发送日志”。

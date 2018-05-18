@@ -1,6 +1,6 @@
 ---
-title: 需要打开安全威胁扫描| Microsoft Docs
-description: ''
+title: 需要打开安全威胁扫描
+description: 了解如何在你的设备上启用安全威胁扫描
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -15,16 +15,20 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 403b3b50cd8fba7d8d0c8ee6fd6f20d0d5561b76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
-# <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>需要确保设备能扫描安全威胁
+# <a name="enable-security-threat-scans-on-your-device"></a>在你的设备上启用安全威胁扫描 
+如果你在不知情的情况下安装了不安全的应用，你的设备数据可能存在风险。 为了保护你设备上的数据，我们建议你： 
 
-你的 Android 设备能下载和安装可实现各种各样任务的应用。 不过，并非所有应用都可胜任各种任务，某些应用可能会导致问题。 通常建议仅从已验证的来源下载应用，如 Google Play 商店。 公司支持人员决定采用一种方法对设备数据添加额外保护，即通过 Google 对要安装的应用进行扫描，确保应用是安全的。
+* 仅从已验证的来源下载应用，如 Google Play 商店。  
+* 在你的设备上启用安全威胁扫描。 这些扫描由 Google 执行，以验证是否可以安全地安装这些应用。  
 
-通过转到“设置” > “Google” > “安全”，然后打开“扫描设备的安全威胁”，可打开此扫描。
+若要在你的设备上启用扫描，请转到“设置” > “Google” > “安全”。 打开“扫描设备的安全威胁”。  
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+在某些 Samsung 设备上，该设置位于“设置” > “Google” > “安全” > “Google Play 保护”中。
+
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。 

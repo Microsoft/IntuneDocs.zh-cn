@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a7213608a8147178633ccd8129ab40eef5d4a15
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f5d7a825f70694e9888cf80d96eff12b9169e9ae
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -30,7 +30,10 @@ ms.lasthandoff: 04/26/2018
 > [!Tip]        
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。       
 
-自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“移动应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。      
+自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“移动应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。  
+
+> [!Note]       
+> 当用户启动获取问题的帮助的工作流时，Windows 10 公司门户现在将直接向 Microsoft 发送应用日志。 这样一来，可以更为轻松地排除和解决向 Microsoft 提出的问题。  
 
 ## <a name="company-contact-information-and-privacy-statement"></a>公司联系人信息和隐私声明        
 公司名称显示为公司门户的标题。 联系人信息和详细信息将在公司门户的“联系 IT 部门”屏幕中向用户显示。 当用户单击隐私链接时，将显示隐私声明。

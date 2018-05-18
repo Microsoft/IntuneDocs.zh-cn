@@ -14,11 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: decb2dee8d2029c70f7f08df507f42211e0f21bb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f37c45945df460dabac60e5b06286c940728ba3
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>向用户分配许可证，以便他们能够在 Intune 中注册设备
 
@@ -42,6 +42,10 @@ ms.lasthandoff: 04/16/2018
 
 > [!NOTE]
 > 用户仅在注册设备后才会显示在管理控制台中。 此外，你还可以选择要立即编辑的一组用户，为所选的用户选择添加或替换许可证。
+
+## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>使用 Azure Active Directory 分配 Intune 许可证
+
+也可以使用 Azure Active Directory 向用户分配 Intune 许可证。 有关详细信息，请参阅 [Azure Active Directory 中的许可证用户一文](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)。 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>使用“学校数据同步”向 Intune for Education 中的用户分配许可证
 如果你是教育组织，可以使用“学校数据同步 (SDS)”向同步用户分配 Intune for Education 许可证。 只需在设置 SDS 配置文件时，选中“Intune for Education”复选框。  
