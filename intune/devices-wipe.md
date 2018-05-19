@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>通过恢复出厂设置或删除公司数据删除设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-可从 Intune 中删除不再需要的、已重新调整用途的或丢失的设备。 为此，可使用“删除公司数据”或“恢复出厂设置”操作。 用户还可从 Intune 公司门户中向在 Intune 中注册的个人所有设备发出远程命令。
+使用“删除公司数据”或“恢复出厂设置”操作，可从 Intune 中删除不再需要的、已重新调整用途的或丢失的设备。 用户还可从 Intune 公司门户中向在 Intune 中注册的个人所有设备发出远程命令。
 
 > [!NOTE]
 > 从 Azure Active Directory (Azure AD) 中删除用户前，对与该用户关联的所有设备使用“恢复出厂设置”或“删除公司数据”操作。 如果从 Azure AD 删除具有托管设备的用户，Intune 不再能够向这些设备发出恢复出厂设置或删除公司数据命令。
 
 ## <a name="factory-reset"></a>恢复出厂设置
 
-“恢复出厂设置”操作将设备还原为其出厂默认设置。 恢复出厂设置会还原所有公司及用户数据和设置。 设备从 Intune 管理中删除。 恢复出厂设置可用于在将设备提供给新用户前或在设备丢失或被盗时，对设备进行重置。 请谨慎选择“恢复出厂设置”。 无法恢复设备上的数据。
+“恢复出厂设置”操作将设备还原为其出厂默认设置。 是否保留或擦除用户数据取决于是否选择“保留注册状态和用户帐户”复选框。
+
+|恢复出厂设置操作|保留注册状态和用户帐户|从 Intune 管理中删除|描述|
+|:-------------:|:------------:|:------------:|------------|
+|恢复出厂设置| 未选中 | 是 | 擦除所有用户帐户、数据、MDM 策略和设置。 将操作系统重置为其默认状态和设置。|
+|恢复出厂设置| 已选中 | 否 | 擦除所有 MDM 策略。 保留用户帐户和数据。 将用户设置重置回默认设置。 将操作系统重置为其默认状态和设置。|
+
+“保留注册状态和用户帐户”选项仅适用于 Windows 10 版本 1709 或更高版本。
+
+将在设备下次连接到 Intune 时重新应用 MDM 策略。
+
+恢复出厂设置可用于在将设备提供给新用户前或在设备丢失或被盗时，对设备进行重置。 请谨慎选择“恢复出厂设置”。 无法恢复设备上的数据。
 
 ### <a name="factory-reset-a-device"></a>恢复设备的出厂设置
 
