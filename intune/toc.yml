@@ -168,6 +168,8 @@
               href: windows-enroll.md
             - name: 批量注册
               href: windows-bulk-enroll.md
+            - name: 注册状态页
+              href: windows-enrollment-status.md
             - name: Windows AutoPilot Deployment 计划
               href: enrollment-autopilot.md
         - name: 设置 Android 注册

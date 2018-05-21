@@ -15,11 +15,11 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b03de8b2c5fca0f41a792e5004d74fe82e4a861d
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -106,8 +106,11 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。
 2. 选择令牌，选择“配置文件”，然后选择“创建配置文件”。
+
     ![创建配置文件屏幕截图。](./media/device-enrollment-program-enroll-ios/image04.png)
+
 3. 在“创建配置文件”下，输入配置文件的“名称”和“描述”以便于管理。 用户看不到这些详细信息。 可以使用此“名称”字段在 Azure Active Directory 中创建动态组。 使用配置文件名称定义 enrollmentProfileName 参数，以向设备分配此注册配置文件。 详细了解 [Azure Active Directory 动态组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
+
     ![配置文件名称和描述。](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. 对于“用户关联”，选择具有此配置文件的设备是否必须通过已分配的用户进行注册。
@@ -123,6 +126,9 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
     > 如果已将配置文件属性设置为“注册用户关联”，则在进行 DEP 注册时，多重身份验证 (MFA) 不起作用。 注册后，MFA 将按预期在设备上运行。 设备无法提示用户在首次登录时需要更改密码。 此外，在注册过程中，密码已过期的用户不会获得重置密码的提示。 用户必须使用其他设备重置密码。
 
 6. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
+
+    ![“设备管理设置”屏幕截图。](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
+
     “受监督”的设备会提供更多的管理选项，并且会默认禁用“激活锁”。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS 设备的组织。
 
     将通过两种方式通知用户他们的设备受到监督：
@@ -171,9 +177,9 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 1. 在 Azure 门户的 Intune 中，选择“设备注册”>“Apple 注册”>“注册计划令牌”> 在列表中选择令牌 >“设备”>“同步”。![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/device-enrollment-program-enroll-ios/image06.png)
 
    为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
-   - 每七天只能运行一次完全同步。 在完全同步期间，Intune 将刷新分配给 Intune 的每一个 Apple 序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
-   - 任何同步请求都在 15 分钟内完成。 在此期间或在请求成功之前，“同步”按钮处于禁用状态。
-   - Intune 每 24 小时与 Apple 同步一次新设备及已删除设备。
+   - 每七天只能运行一次完全同步。 完全同步时，Intune 会提取分配给连接到 Intune 的 Apple MDM 服务器的完整更新序列号列表。 从 Intune 门户中删除注册计划设备后，不能重新导入该设备，直至运行完全同步。   
+   - 每 24 小时自动运行一次同步。 用户也可以单击“同步”按钮（不能超过 15 分钟一次）运行同步。 所有同步请求都在 15 分钟内完成。 在同步完成前，“同步”按钮处于禁用状态。 此同步将刷新现有设备状态并导入分配到 Apple MDM 服务器的新设备。   
+
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>将注册配置文件分配到设备
 必须先向设备分配注册计划配置文件才能注册他们。
@@ -196,5 +202,17 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有恢复出厂设置才能应用注册配置文件。
 
 请参阅[通过设备注册计划在 Intune 中注册 iOS 设备](/intune-user-help/enroll-your-device-dep-ios)。
+
+## <a name="renew-a-dep-token"></a>续订 DEP 令牌  
+1. 转到 deploy.apple.com。  
+2. 在“管理服务器”下，选择与想要续订的令牌文件相关的 MDM 服务器。
+3. 选择“生成新令牌”。  
+4. 选择“服务器令牌”。  
+5. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。  
+6. 选择该令牌，然后选择“续订令牌”。  
+7. 输入用于创建原始令牌的 Apple ID。  
+8. 上传新下载的令牌。  
+9. 选择“续订令牌”。 你将看到令牌已续订的确认消息。   
+
 
 
