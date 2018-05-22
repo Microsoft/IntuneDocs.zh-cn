@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -125,7 +125,7 @@ ms.lasthandoff: 04/16/2018
 
     ![在 Keychain Access 应用中向证书颁发机构请求证书](./media/iOS-signing-cert-6.png)
 
-12. 返回到 Apple 开发者站点。 单击“继续” 。 然后上传 CSR 文件。
+12. 返回到 Apple 开发者站点。 单击“继续”。 然后上传 CSR 文件。
 
 13. Apple 将生成签名证书。 下载签名证书并将其保存到 macOS 计算机上容易记住的位置。
 
@@ -155,7 +155,7 @@ ms.lasthandoff: 04/16/2018
 
    ![选择内部预配配置文件](./media/iOS-provisioning-profile-1.png)
 
-5. 单击“继续” 。 请确保将以前生成的签名证书链接到预配配置文件。
+5. 单击“继续”。 请确保将以前生成的签名证书链接到预配配置文件。
 
 6. 请按照此步骤将配置文件（扩展名为 .mobileprovision）下载到 macOS 计算机。
 
@@ -189,7 +189,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 > 如下表所示，某些参数是可选的。
 
-**示例：**以下示例命令在名为 MyApp.ipa 的应用上运行应用包装工具。 指定签名证书的预配配置文件和 SHA-1 哈希，并用于对已包装的应用签名。 创建输出应用 (MyApp_Wrapped.ipa)，且将其存储在桌面文件夹中。
+**示例：** 以下示例命令在名为 MyApp.ipa 的应用上运行应用包装工具。 指定签名证书的预配配置文件和 SHA-1 哈希，并用于对已包装的应用签名。 创建输出应用 (MyApp_Wrapped.ipa)，且将其存储在桌面文件夹中。
 
 ```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -217,7 +217,7 @@ ms.lasthandoff: 04/16/2018
 
 在 IntuneMAMPackager/Contents/MacOS 文件夹中，使用文本编辑器或 Xcode 打开 `Parameters.plist`（一个空白 plist 模板）。 为以下项输入参数：
 
-| Plist 项 |  默认值| 注释 |
+| Plist 项 |  默认值| 注意 |
 |------------------|--------------|-----|
 | 输入应用程序包路径  |empty| 与 -i 相同|
 | 输出应用程序包路径 |empty| 与 -o 相同|
@@ -263,7 +263,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="error-messages"></a>错误消息
 如果应用包装工具失败，将在控制台显示以下错误消息之一：
 
-|错误消息|详细信息|
+|错误消息|更多信息|
 |-----------------|--------------------|
 |你必须指定有效的 iOS 配置文件。|配置文件可能无效。 检查以确保具有正确的设备权限，以及针对开发或分发的正确配置文件。 配置文件可能已过期。|
 |指定有效的输入应用程序名称。|确保你指定的输入应用程序名称正确。|

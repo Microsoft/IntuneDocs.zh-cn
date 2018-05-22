@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54eb50a47b28d04fc32662098c4ee521ae63589e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>将内置应用添加到 Microsoft Intune
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/26/2018
     - 在公司门户中将此应用显示为特色应用：当用户浏览应用时，在公司门户的主页上突出显示此应用。
     - 信息 URL：（可选）输入包含此应用相关信息的网站 URL。 在公司门户中向用户显示该 URL。
     - 隐私 URL：（可选）输入包含此应用相关隐私信息的网站 URL。 在公司门户中向用户显示该 URL。
-    - 开发者：（可选）输入应用开发者的名称。
+    - 开发人员：（可选）输入应用开发人员的名称。
     - 所有者：（可选）输入此应用的所有者的名称（例如，HR 部门）。
     - 备注：输入与此应用有关的任何备注。
     - 上传图标：用户浏览公司门户时，上传与应用一同显示的图标。

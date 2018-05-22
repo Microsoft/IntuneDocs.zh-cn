@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 122f0b70392df65076622354722b6d546f4fe7b7
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
@@ -159,7 +159,7 @@ Intune 将在应用商店内检测 VPP 应用更新，并在设备签入时自�
 安装或卸载应用后，许可证会在几小时内更新。 请注意，如果最终用户从设备中删除应用，许可证仍将继续分配给该用户或设备。
 
 #### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>是否可以超额订阅应用，如可以，请指明情况。
-是的。 Intune 管理员可以超额订阅应用。 例如，如果管理员针对应用 XYZ 购买 100 个许可证，然后将应用分配给包含 500 个成员的组。 则前 100 个成员（用户或设备）将分配到许可证，而其余成员不会获得许可证分配。
+是。 Intune 管理员可以超额订阅应用。 例如，如果管理员针对应用 XYZ 购买 100 个许可证，然后将应用分配给包含 500 个成员的组。 则前 100 个成员（用户或设备）将分配到许可证，而其余成员不会获得许可证分配。
 
 #### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>据我了解，Intune 每天与 Apple 自动同步应用许可证，是这样吗？
 Intune 每 15 小时与 Apple 同步一次应用许可证。

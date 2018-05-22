@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9fd647add814d9cb188c90ef2d2b85ce89a0459b
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 分配给 macOS 设备
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/27/2018
 7. 要获取有关应用套件的信息，请选择“应用套件信息”。  
     此信息有助于在 Intune 中识别应用套件，也有助于用户在公司门户中找到应用套件。
 8. 输入以下信息：
-    - 套件名称：输入应用套件的名称，该名称将显示在公司门户中。 请确保使用的所有套件名称都是唯一的。 如果同一应用套件名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
+    - **套件名称**：输入应用套件的名称，该名称将显示在公司门户中。 请确保使用的所有套件名称都是唯一的。 如果同一应用套件名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - 套件描述：为应用套件输入描述。
     - 发布者：Microsoft 显示为发布者。
     - 类别：选择一个或多个内置应用类别或你创建的类别。 该设置可让用户在浏览公司门户时更轻松地查找应用套件。

@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -127,7 +127,7 @@ Intune 应用保护策略是一种针对用户身份的策略，因此用户的�
 若要创建这些策略，请在 Intune 控制台中浏览找到“移动应用” > “应用保护”策略，然后单击“添加策略”。 还可以编辑现有的应用保护策略。 如果想将应用保护策略同时应用到托管和非托管设备，请确保将“面向所有应用类型”设置为“是”（这是默认设置）。 如果想根据管理状态逐渐分配，请将“面向所有应用类型”设置为“否”。 
 
 > [!NOTE]
-> 有关根据设备管理状态分配应用保护策略的 iOS 具体支持信息，请参阅[根据管理状态应用 MAM 保护策略](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---)。
+> 有关根据设备管理状态分配应用保护策略的 iOS 具体支持信息，请参阅[根据管理状态应用 MAM 保护策略](whats-new.md#mam-protection-policies-targeted-based-on-management-state-)。
 
 ## <a name="policy-settings"></a>策略设置
 若要查看 iOS 和 Android 的策略设置的完整列表，请选择以下链接之一：
