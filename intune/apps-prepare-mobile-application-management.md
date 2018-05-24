@@ -1,12 +1,11 @@
 ---
-title: 准备业务线应用以使用应用保护策略
-titlesuffix: Microsoft Intune
-description: 借助应用包装工具和应用 SDK，自定义业务线应用可使用 Microsoft Intune 中的应用保护策略。
+title: 决定如何使用 Microsoft Intune 为移动应用程序管理准备应用
+description: 本主题中的信息可帮助决定何时应该使用应用包装工具和应用 SDK 来启用自定义业务线应用，以使用移动应用管理策略。
 keywords: ''
-author: Erikre
+author: erikre
 ms.author: erikre
-manager: dougeby
-ms.date: 05/07/2018
+manager: angrobe
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 可以使用 Intune 应用包装工具或 Intune App SDK 来支持应用使用应用保护策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
@@ -34,7 +33,6 @@ ms.lasthandoff: 05/07/2018
 
 应用包装工具**不**支持 Apple App Store 或 Google Play 商店中的应用。 也不支持某些需要开发人员集成的功能（请参阅以下功能对照表）。
 
-
 有关未在 Intune 中注册的设备上的应用保护策略应用包装工具的详细信息，请参阅[保护未在 Microsoft Intune 中注册的设备上的业务线应用及数据](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)。
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用应用包装工具的原因
@@ -44,7 +42,6 @@ ms.lasthandoff: 05/07/2018
 * 无权访问应用的源代码。
 * 未开发应用
 * 应用包含最少的用户身份验证体验
-
 
 ### <a name="supported-app-development-platforms"></a>受支持的应用开发平台
 
@@ -79,35 +76,43 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 > [!NOTE]
 > 应用包装工具可以与独立 Intune 或带 Configuration Manager 的 Intune 结合使用。
 
-|                                                         功能                                                          | App SDK | 应用包装工具 |
-|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
-|                              限制显示在企业托管浏览器内的 Web 内容                              |    X    |         X         |
-|                                        阻止 Android、iTunes 或 iCloud 备份                                        |    X    |         X         |
-|                                         允许应用向其他应用传送数据                                         |    X    |         X         |
-|                                        允许应用从其他应用接收数据                                         |    X    |         X         |
-|                                      限制使用其他应用剪切、复制和粘贴                                       |    X    |         X         |
-|                                              访问需要简单 PIN                                               |    X    |         X         |
-|                                         使用 Intune PIN 替换内置应用 PIN                                         |    X    |                   |
-|                                     指定重置 PIN 前的尝试次数                                      |    X    |         X         |
-|                                             允许使用指纹而不是 PIN                                             |    X    |         X         |
-|                                         访问需要公司凭据                                         |    X    |         X         |
-|                             阻止在已越狱或取得 root 权限的设备上运行托管应用                              |    X    |         X         |
-|                                                     加密应用数据                                                     |    X    |         X         |
-|                           在指定分钟数后重新检查访问要求                            |    X    |         X         |
-|                                             指定离线宽限期                                             |    X    |         X         |
-|                                           阻止屏幕捕捉（仅限于 Android 设备）                                            |    X    |         X         |
-|                                        支持未进行设备注册的 MAM                                         |    X    |         X         |
-|                                                        完全擦除                                                         |    X    |         X         |
-| 选择性擦除 <br></br><strong>注意：</strong>对于 iOS 设备，删除管理配置文件时，也会删除该应用。 |    X    |                   |
-|                                                    防止“另存为”                                                     |    X    |                   |
-|                                            目标应用程序配置                                            |    X    |                   |
-|                                                支持多身份标识                                                |    X    |                   |
-|                                                    可自定义样式                                                    |    X    |                   |
+|功能|App SDK|应用包装工具|
+|-----------|---------------------|-----------|
+|限制显示在企业托管浏览器内的 Web 内容|X|X|
+|阻止 Android、iTunes 或 iCloud 备份|X|X|
+|允许应用向其他应用传送数据|X|X|
+|允许应用从其他应用接收数据|X|X|
+|限制使用其他应用剪切、复制和粘贴|X|X|
+|访问需要简单 PIN|X|X|
+|使用 Intune PIN 替换内置应用 PIN|X||
+|指定重置 PIN 前的尝试次数|X|X|
+|允许使用指纹而不是 PIN|X|X|
+|允许面部识别而非 PIN（仅限 iOS）|X|X|
+|访问需要公司凭据|X|X|
+|阻止在已越狱或取得 root 权限的设备上运行托管应用|X|X|
+|加密应用数据|X|X|
+|在指定分钟数后重新检查访问要求|X|X|
+|指定离线宽限期|X|X|
+|阻止屏幕捕捉（仅限于 Android 设备）|X|X|
+|支持未进行设备注册的 MAM|X|X|
+|完全擦除|X|X|
+|选择性擦除 <br></br>**注意：** 对于 iOS 设备，删除管理配置文件时，也会删除该应用。|X||
+|防止“另存为”|X||
+|目标应用程序配置|X||
+|支持多身份标识|X||
+|可自定义样式 |X|||
+|按需应用与 Citrix mVPN 的 VPN 连接|X|X| 
+|禁用联系人同步|X|X|
+|禁用打印|X|X|
+|要求最低应用版本|X|X|
+|要求最低操作系统（iOS 和 Android）|X|X|
+|要求最低 Android 安全修补程序版本（仅限 Android）|X|X|
+|要求最低 Intune SDK for iOS（仅限 iOS）|X|X|
 
 ## <a name="next-steps"></a>后续步骤
 
 要详细了解应用保护策略和 Intune，请参阅以下主题：
 
-  -  [Android 应用包装工具](app-wrapper-prepare-android.md)</br>
+  - [Android 应用包装工具](app-wrapper-prepare-android.md)</br>
   - [iOS 应用包装工具](app-wrapper-prepare-ios.md)</br>
   - [使用 SDK 启用针对移动应用程序管理的应用](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

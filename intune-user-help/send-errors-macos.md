@@ -1,5 +1,5 @@
 ---
-title: 提交托管 macOS 设备的错误 | Microsoft Docs
+title: 将错误从 Mac 设备发送给公司支持人员 | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 52431d900ee9abe71458b8b22d8a0946f22ce583
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 9805dfdba67299a5a1cd9433bbc061f8bd96bc9e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>将托管 macOS 设备的错误提交给适当人员
 

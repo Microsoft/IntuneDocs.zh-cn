@@ -6,18 +6,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 5/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0912ec4fdc77b51903b4febd54f9d16972b867a8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: fe791dce88878fdbde7c62e59452a53ac08ef06b
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>Microsoft Intune 中适用于运行 iOS 的设备的电子邮件配置文件设置 
 
@@ -35,8 +35,7 @@ ms.lasthandoff: 04/26/2018
     - 如果已选择“证书”，请选择之前创建的、用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。
 - **SSL** - 发送电子邮件、接收电子邮件以及与 Exchange 服务器通信时，使用安全套接字层 (SSL) 通信。
 - **S/MIME** - 使用 S/MIME 签名发送传出的电子邮件。
-    - 如果已选择“证书”，请选择之前创建的、用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。
-    - 如果选择 SCEP 证书，请确保在设备上安装了有效的个人信息交换 (PFX) 证书。
+    - 如果已选择“证书”，请选择之前创建的 PKCS 证书配置文件来对 Exchange 连接进行身份验证。
 - **要同步的电子邮件数** - 选择要同步的电子邮件的天数，或选择“无限制”以同步所有可用的电子邮件。
 - **允许将消息移动到其他电子邮件帐户** - 此选项允许用户在其设备上已配置的不同帐户间移动电子邮件。
 - **允许从第三方应用程序发送电子邮件** - 允许用户选择此配置文件作为用于发送电子邮件的默认帐户，并允许第三方应用程序在本机电子邮件应用中打开电子邮件，例如，将文件附加到电子邮件。

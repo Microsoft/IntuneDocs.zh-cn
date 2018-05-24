@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
 > [!NOTE]
-> 建议首先阅读 [Intune App SDK 入门指南](app-sdk-get-started.md)一文，该文章介绍了如何在每个受支持的平台准备集成。
+> 建议阅读 [Intune App SDK 入门指南](app-sdk-get-started.md)一文，该文章介绍了如何在每个受支持的平台准备集成。
 
 通过 Microsoft Intune App SDK for iOS，可将 Intune 应用保护策略（也称为 **APP** 或 **MAM 策略**）合并到本机 iOS 应用中。 启用了 MAM 的应用程序是指与 Intune App SDK 集成的应用程序。 在 Intune 主动管理移动应用时，IT 管理员可将应用保护策略部署到该应用。
 
@@ -81,8 +81,8 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 1. **选项 1（推荐）**：将 `IntuneMAM.framework` 链接到你的项目。 将 `IntuneMAM.framework` 拖到项目目标的“嵌入二进制文件”列表。
 
-    > [!NOTE]
-    > 如果使用框架，必须在将应用提交到应用商店之前，从通用框架中手动删除模拟器体系结构。 有关详细信息，请参阅[向 App Store 提交应用](#Submit-your-app-to-the-App-Store)。
+   > [!NOTE]
+   > 如果使用框架，必须在将应用提交到应用商店之前，从通用框架中手动删除模拟器体系结构。 有关详细信息，请参阅[向 App Store 提交应用](#Submit-your-app-to-the-App-Store)。
 
 2. **选项 2**：链接到 `libIntuneMAM.a` 库。 将 `libIntuneMAM.a` 库拖动到项目目标的“链接的框架和库”列表中。
 
@@ -179,7 +179,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>与其他签名有相同配置文件的应用共享 ADAL 令牌缓存？**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>与其他签名有相同配置文件的应用共享 ADAL 令牌缓存？
 
 如果要在签名有相同配置文件的应用之间共享 ADAL 令牌，请按照以下说明执行操作：
 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] 可以使用 IntuneMAMConfigurator 工具将 Intune 类型添加到激活规则。 如果现有的激活规则使用预定义的字符串常量（例如 NSExtensionActivationSupportsFileWithMaxCount、NSExtensionActivationSupportsText 等），谓词语法可能会变得相当复杂。 添加 Intune 类型时，IntuneMAMConfigurator 工具也可用于将激活规则从字符串常量转换为谓词字符串。 可以在我们的 GitHub 存储库中找到 IntuneMAMConfigurator。 
+> [!NOTE]
+> 可以使用 IntuneMAMConfigurator 工具将 Intune 类型添加到激活规则。 如果现有的激活规则使用预定义的字符串常量（例如 NSExtensionActivationSupportsFileWithMaxCount、NSExtensionActivationSupportsText 等），谓词语法可能会变得相当复杂。 添加 Intune 类型时，IntuneMAMConfigurator 工具也可用于将激活规则从字符串常量转换为谓词字符串。 可以在我们的 GitHub 存储库中找到 IntuneMAMConfigurator。 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>为 iOS 应用程序启用面向 MAM 的配置

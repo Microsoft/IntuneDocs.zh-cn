@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="resetting-android-for-work-passcodes"></a>重置 Android for Work 密码
 
-受支持的 Android for Work 设备的用户会收到新的设备解锁密码或托管配置文件质询。 对于具有 Work 配置文件且版本在 Android 7.0 及以上的设备，最终用户完成注册后会立即收到激活其重置密码令牌的通知。 需提供和设置 Work 配置文件密码时会显示该通知。 输入其密码后，该通知将消除。
+受支持的 Android for Work 设备为最终用户接收新的托管配置文件解锁密码或托管配置文件质询。 对于具有 Work 配置文件且版本在 Android 7.0 及以上的设备，最终用户完成注册后会立即收到激活其重置密码令牌的通知。 需提供和设置 Work 配置文件密码时会显示该通知。 输入其密码后，该通知将消除。
 
 ## <a name="resetting-ios-passcodes"></a>重置 iOS 密码
 

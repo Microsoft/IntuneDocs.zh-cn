@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>删除 Intune 对 Windows 设备的管理
 
@@ -72,13 +72,13 @@ ms.lasthandoff: 05/09/2018
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>删除公司门户后删除个人信息
 公司门户在 Windows 设备上存储的数据分为两种：
 
--   诊断日志：Microsoft 收集的标准应用活动数据。从公司门户删除设备时，系统会自动清除此数据。 例如，应用活动数据是有关应用打开了多长时间或应用是否已损坏的数据。
+-   **诊断日志**：Microsoft 收集的标准应用活动数据。 卸载公司门户应用时，它会自动清除。 例如，应用活动数据是有关应用打开了多长时间或应用是否已损坏的数据。
 -   应用程序缓存：应用正常工作所需的支持文件，例如图标和设置。
 
-完全删除此信息需执行以下步骤：
+要删除存储的日志和缓存，请完成以下任一步骤：
 
-1. 卸载公司门户。 [卸载公司门户应用](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs)将删除存储在设备上的部分应用数据。  
+* [卸载公司门户应用](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. 重置公司门户以重置存储的应用数据。 打开“设置”应用并选择 >“应用” > “公司门户” > “高级选项” > “重置”。 
+* 重置公司门户应用。 打开“设置”应用并选择 >“应用” > “公司门户” > “高级选项” > “重置”。 
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。

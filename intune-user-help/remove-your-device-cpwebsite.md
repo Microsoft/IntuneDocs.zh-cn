@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>从公司门户中删除设备
 
-如果决定不再需要公司或组织托管你的设备，则可以使用[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)将其从公司门户中删除。 公司门户网站是一个网页，可用于管理已向 IT 部门管理注册的计算机和设备。 如果删除设备，则不会再将其列入公司门户，并且你可能也无法访问公司或学校数据、应用和电子邮件。
+如果决定不再需要公司或组织托管你的设备，则可以使用[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)将其从公司门户中删除。 如果删除设备，它将不再列入公司门户中。 还可能无法访问组织的数据、应用和电子邮件。
 
 删除设备：
 

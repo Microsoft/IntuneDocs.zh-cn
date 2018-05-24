@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -159,7 +159,7 @@ Remember that you need to implement conditional access policies in addition to c
   - **符合**：安全功能关闭
   - **不符合**（默认值）：安全功能开启
 
-  如果设备未分配到符合性策略，则此设备被视为不符合。 默认情况下，设备将被标记为“不符合”。 如果使用条件访问，建议保留默认设置“不符合”。 如果最终用户因未分配到策略而不符合，公司门户将显示`No compliance policies have been assigned`。
+  如果设备未分配到符合性策略，则此设备被视为不符合。 默认情况下，设备将被标记为“符合”。 如果使用条件访问，建议将设置更改为“不符合”。 如果最终用户因未分配到策略而不符合，公司门户将显示`No compliance policies have been assigned`。
 
 - **增强型越狱检测**：启用后，此设置会导致 iOS 设备签入 Intune 的频率增加。 启用此属性将使用设备的位置服务，而且会影响电池的使用。 Intune 不会存储用户位置数据。
 

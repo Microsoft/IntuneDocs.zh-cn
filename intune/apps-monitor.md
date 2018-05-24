@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0408ce3a4c2d4224780b4b23b0fb1b7d690471fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0cd9db9399eb08c3ed04ff1d8920082aa0c04f06
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>使用 Microsoft Intune 监视应用信息和分配
 
@@ -32,6 +32,9 @@ Intune 提供了多种方式来监视你管理的应用的属性以及管理应�
 3. 在“Intune”菜单中，选择“移动应用”。
 4. 在菜单的“管理”部分中选择“应用”。
 5. 在应用列表中，选择要监视的应用。 随后将看到“应用”窗格，其中概述了设备状态和用户状态。
+
+> [!NOTE]
+> 部署为“可用的”的 Android 应用商店应用不会报告其安装状态。
 
 ## <a name="app-overview-pane"></a>应用概述窗格
 

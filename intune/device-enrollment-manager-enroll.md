@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>通过使用设备注册管理员帐户注册设备
 
@@ -73,7 +73,7 @@ DEM 用户可以：
 
 ## <a name="permissions-for-dem"></a>DEM 的权限
 
-需要全局或 Intune 服务管理员 Azure AD 角色执行 DEM 注册任务。 尽管在自定义用户角色下列出了可用的 RBAC 权限，但这些角色还是需要查看全部 DEM 用户。 未分配到全局管理员或 Intune 服务管理员角色，但具有设备注册管理器角色读取权限的用户，仅可查看他们创建的 DEM 用户。 将在以后公布对这些功能的 RBAC 角色支持。
+需要全局或 Intune 服务管理员 Azure AD 角色才能在管理门户中执行与 DEM 注册相关的任务。 尽管在自定义用户角色下列出了可用的 RBAC 权限，但这些角色还是需要查看全部 DEM 用户。 未分配到全局管理员或 Intune 服务管理员角色，但具有设备注册管理器角色读取权限的用户，仅可查看他们创建的 DEM 用户。 将在以后公布对这些功能的 RBAC 角色支持。
 
 如果用户未分配到全局管理员或 Intune 服务管理员角色，但分配给他们的设备注册管理器角色启用了读取权限，则这些用户将只能查看自己创建的 DEM 用户。
 

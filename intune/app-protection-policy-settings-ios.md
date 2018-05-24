@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 20e253262f9c22d6ff65a1558ea114ecca0bd8c0
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 26c2b00c1ac720ae3032b5b896489b9fe2972510
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -63,10 +63,10 @@ ms.lasthandoff: 04/26/2018
 
 | Setting | 如何使用 | 默认值 |
 |------|------|------|
-| **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 无论在联机或脱机情况下工作，PIN 始终有效。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> **注意：**配置密码类型要求应用具有 Intune SDK 版本 7.1.12 或更高版本。 数值类型没有任何 Intune SDK 版本限制。 允许的特殊字符包括 iOS 英语键盘上的特殊字符和符号。 默认值 = 数值。</li><br><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 此策略设置格式支持正整数。 默认值 = **5**。</li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>注意：如果配置了密码类型 PIN，且允许简单 PIN 设置为“是”，则用户在其 PIN 中需要至少 1 个字母或至少 1 个特殊字符。 如果配置了密码类型 PIN，且允许简单 PIN 设置为“否”，则用户在其 PIN 中需要至少 1 个数字和 1 个字母以及至少 1 个特殊字符。 默认值 = **是**。 </li><li> **PIN 长度**：指定 PIN 序列必须包含的最小位数。 默认值 = **4**。 </li><li> **允许指纹而非 PIN (iOS 8.0+)**：选择“是”，允许用户使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 进行应用访问。 默认值 = **是**。</li><li> **允许使用面部识别替代 PIN (iOS 11+)**：选择“是”，允许用户使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 使用应用。 默认值 = **是**。 用户使用其工作帐户访问应用时，系统会提示提供面部标识。</li><li> **管理设备 PIN 时禁用应用 PIN**：在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 默认值 = **否**。</li></ul> 在 iOS 设备上，可让用户使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109) 而非 PIN 来证明其身份。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 对使用 Touch ID 和 Face ID 的用户进行身份验证。 若要了解有关 Touch ID 和 Face ID 的详细信息，请参阅 [iOS 安全指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识或面部标识，而不是输入 PIN。 启用此设置时，如果使用工作或学校帐户，应用切换器的预览图像将模糊显示。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 需要 PIN 才能进行访问：是 <br><br> 选择类型：数值 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 <br><br> 允许面部识别：是 <br><br> 禁用应用 Pin：否 |
-| **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 如果将其设置为“是”，则此设置将替代 PIN 或 Touch ID 的要求。  | 否 |
+| **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 无论在联机或脱机情况下工作，PIN 始终有效。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> **注意：** 配置密码类型要求应用具有 Intune SDK 版本 7.1.12 或更高版本。 数值类型没有任何 Intune SDK 版本限制。 允许的特殊字符包括 iOS 英语键盘上的特殊字符和符号。 默认值 = 数值。</li><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 此策略设置格式支持正整数。 默认值 = **5**。</li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>注意：如果配置了密码类型 PIN，且允许简单 PIN 设置为“是”，则用户在其 PIN 中需要至少 1 个字母或至少 1 个特殊字符。 如果配置了密码类型 PIN，且允许简单 PIN 设置为“否”，则用户在其 PIN 中需要至少 1 个数字和 1 个字母以及至少 1 个特殊字符。 默认值 = **是**。 </li><li>**PIN 长度**：指定 PIN 序列必须包含的最小位数。<br><br>注意：在某些 iOS 设备上，当配置了长度大于 6 的 PIN 时，用户将在 UI 上看到文本输入字段，但仍需输入“选择类型”设置确定的 PIN 类型。 默认值 = **4**。 </li><li> **允许指纹而非 PIN (iOS 8.0+)**：选择“是”，允许用户使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 进行应用访问。 默认值 = **是**。</li><li> **允许使用面部识别替代 PIN (iOS 11+)**：选择“是”，允许用户使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 使用应用。 默认值 = **是**。 用户使用其工作帐户访问应用时，系统会提示提供面部标识。</li><li> **管理设备 PIN 时禁用应用 PIN**：在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 默认值 = **否**。</li></ul> 在 iOS 设备上，可让用户使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109) 而非 PIN 来证明其身份。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 对使用 Touch ID 和 Face ID 的用户进行身份验证。 若要了解有关 Touch ID 和 Face ID 的详细信息，请参阅 [iOS 安全指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识或面部标识，而不是输入 PIN。 启用此设置时，如果使用工作或学校帐户，应用切换器的预览图像将模糊显示。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 需要 PIN 才能进行访问：是 <br><br> 选择类型：数值 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 <br><br> 允许面部识别：是 <br><br> 禁用应用 Pin：否 |
+| **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 如果将此设置为“是”，并且 PIN 或生物识别提示已打开，则会显示公司凭据以及 PIN 或生物识别提示。 | 否 |
 | **阻止在已越狱或取得 root 权限的设备上运行托管应用** |  选择“是”，阻止在已越狱或取得 root 权限的设备上运行此应用。 用户仍能够将此应用用于个人任务，但必须使用其他设备访问此应用中的工作或学校数据。 | 是 |
-| **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，如果管理员在策略中启用 PIN，并阻止取得 root 权限的设备，则用户打开 Intune 托管的应用时，必须输入 PIN，且必须在未取得 root 权限的设备上使用应用。 使用此设置时，用户在 30 分钟（默认值）内无需在任何 Intune 托管应用上再次输入 PIN 或执行 root 检测检查。  <br><br>**注意：**在 iOS 上，同一发布者的所有 Intune 托管应用均共享此 PIN。 应用离开设备主屏幕后，就会重置特定 PIN 的 PIN 计时器。 在此设置定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入该 PIN。 此策略设置格式支持正整数。<br></li><br><li>**脱机宽限期**：指 MAM 应用可脱机运行的分钟数，需在重新检查应用访问要求之前指定该时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。 此时间段到期后，应用将要求用户对 AAD 进行身份验证，以便应用可以继续运行。 此策略设置格式支持正整数。<br></li></ul>| 超时：30 <br><br> 脱机：720 |
+| **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，如果管理员在策略中启用 PIN，并阻止取得 root 权限的设备，则用户打开 Intune 托管的应用时，必须输入 PIN，且必须在未取得 root 权限的设备上使用应用。 使用此设置时，用户在 30 分钟（默认值）内无需在任何 Intune 托管应用上再次输入 PIN 或执行 root 检测检查。  <br><br>**注意：** 在 iOS 上，同一发布者的所有 Intune 托管应用均共享此 PIN。 应用离开设备主屏幕后，就会重置特定 PIN 的 PIN 计时器。 在此设置定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入该 PIN。 此策略设置格式支持正整数。<br></li><li>**脱机宽限期**：指 MAM 应用可脱机运行的分钟数，需在重新检查应用访问要求之前指定该时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。 此时间段到期后，应用将要求用户对 AAD 进行身份验证，以便应用可以继续运行。 此策略设置格式支持正整数。</li></ul>| 超时：30 <br><br> 脱机：720 |
 | **擦除应用数据前的脱机时间间隔(天)** | 经过数天（由管理员定义）的脱机运行后，应用会要求用户连接到网络并重新进行身份验证。 如果用户身份验证成功，则可继续访问其数据，且将重置脱机时间间隔。  如果用户未能通过身份验证，则应用会对用户帐户和数据执行选择性擦除。  请参阅[如何仅擦除 Intune 托管应用中的企业数据](https://docs.microsoft.com/intune/apps-selective-wipe)，详细了解选择性擦除所删除的数据。 此策略设置格式支持正整数。 <br> | 90 天 |
 | **要求最低 iOS 操作系统版本** | 选择“是”将要求要使用此应用需具备的最低 iOS 操作系统版本。 如果设备上的 iOS 版本不符合此要求，将阻止用户访问。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 | 否 |
 | **要求最低 iOS 操作系统版本(仅警告)** | 选择“是”将要求要使用此应用需具备的最低 iOS 操作系统版本。 如果设备上的 iOS 版本不符合此要求，用户将看到一个通知。 可忽略此通知。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 | 否 |
@@ -91,3 +91,39 @@ Outlook 最近为 Outlook for iOS 引入了加载项，让你可将热门应用�
 
 - 详细了解 [Outlook 的加载项](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx)。
 - 详细了解[如何指定可安装和管理 Outlook 应用的加载项的管理员和用户](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx)。
+
+##  <a name="linkedin-account-connections-for-microsoft-apps"></a>Microsoft 应用的 LinkedIn 帐户连接
+
+LinkedIn 帐户连接允许用户在某些 Microsoft 应用中查看公开的 LinkedIn 档案信息。 默认情况下，用户可选择连接其 LinkedIn 和 Microsoft 工作或学校帐户，以查看其他 LinkedIn 档案信息。 
+
+> [!NOTE]
+> 美国政府客户以及在澳大利亚、加拿大、中国、法国、德国、印度、韩国、英国、日本和南非托管 Exchange Online 邮箱的组织目前无法使用 LinkedIn 集成功能。
+
+可为整个组织禁用 LinkedIn 帐户连接，也可为组织中的所选用户组启用 LinkedIn 帐户连接。 这些设置会影响所有平台（Web、移动和桌面）上 Office 365 应用之间的 LinkedIn 连接。 你可以：
+
+- 在 Azure 门户中启用或禁用租户的 LinkedIn 帐户连接。 
+- 使用组策略为组织的 Office 2016 应用启用或禁用 LinkedIn 帐户连接。
+
+如果为租户启用了 LinkedIn 集成，则当组织中的用户连接其 LinkedIn 和 Microsoft 工作或学校帐户时，他们有两种选项： 
+
+- 他们可授权在两个帐户之间共享数据。 这意味着，他们允许其 LinkedIn 帐户与其 Microsoft 工作或学校帐户彼此共享数据。 与 LinkedIn 共享的数据退出联机服务。 
+- 他们仅允许从 LinkedIn 帐户向 Microsoft 工作和学校帐户共享数据
+
+如果用户同意在帐户之间共享数据，与 Office 加载项一样，LinkedIn 集成使用现有的 Microsoft Graph API。 LinkedIn 集成仅使用 Office 加载项可用的 API 子集，并支持各种排除项。
+
+
+|Microsoft Graph 权限  |描述  |
+|---------|---------|
+|[人员](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#people-permissions)的读取权限     |允许该应用读取与已登录用户相关的评分列表。 该列表可包括本地联系人、社交网络或组织目录中的联系人以及最近通信（如电子邮件和 Skype）中的联系人。         |
+|[日历](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23calendars-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378331622%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=fABkrlIxqggnB%2Bc%2BR%2BbFpuenhSg7OHfBhWcbv3ahmAU%3D&reserved=0)的读取权限     |允许该应用读取用户日历中的事件。 包括已登录用户日历中的会议、其时间、地点和与会者。         |
+|[用户配置文件](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23user-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378341626%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=RcnVIpntjyR4TXafOYTV0SffZuZWpshQQWY0e2VkkXg%3D&reserved=0)的读取权限     |允许用户登录到应用，并允许应用读取已登录用户的个人资料。 它还允许应用读取已登录用户的基本公司信息。         |
+|Subscriptions     |此作用域不可用且尚未使用。 它包括用户组织向 Microsoft 应用和服务（如 Office 365）提供的订阅。         |
+|见解     |此作用域不可用且尚未使用。 它包括基于 Microsoft 服务的使用与已登录用户帐户相关的权益。         |
+
+### <a name="learn-more"></a>了解详细信息
+
+- 了解 [Microsoft 应用中的 LinkedIn 信息和功能](https://go.microsoft.com/fwlink/?linkid=850740)。
+- 在 [Office 365 产品指南页](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc)了解 LinkedIn 帐户连接版本。 
+- 了解[配置 LinkedIn 帐户连接](https://docs.microsoft.com/en-us/azure/active-directory/linkedin-integration)。
+- 有关用户的 LinkedIn 和 Microsoft 工作或学校帐户之间共享的数据的详细信息，请参阅[工作或学校的 Microsoft 应用程序中的 LinkedIn](https://www.linkedin.com/help/linkedin/answer/84077)。
+

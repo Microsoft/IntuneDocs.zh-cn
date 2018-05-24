@@ -6,7 +6,7 @@ keywords: ''
 author: Erikje
 ms.author: erikje
 manager: dougeby
-ms.date: 10/23/2017
+ms.date: 5/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 4f7d9cbf4f67a1205189deb836d738a70e940125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
+ms.sourcegitcommit: d9211837ec4580dd33cc92502423e54f1f369eb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -30,7 +30,7 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows 设备批量注册的先决条件
 
-- 运行 Windows 10 创意者更新或更高版本的设备
+- 运行 Windows 10 创意者更新（内部版本 1703）或更高版本的设备
 - [Windows 自动注册](windows-enroll.md#enable-windows-10-automatic-enrollment)
 
 ## <a name="create-a-provisioning-package"></a>创建预配包
@@ -63,7 +63,7 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
 
 9. （可选）可以“添加应用程序”和“添加证书”。 将在此设备上配置应用和证书。
 
-10. （可选）还可以使用密码保护你的配置包。  单击“**创建**”。
+10. （可选）还可以使用密码保护你的配置包。  单击“创建”。
     ![Windows 配置设计器应用中的包保护屏幕截图](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>配置设备

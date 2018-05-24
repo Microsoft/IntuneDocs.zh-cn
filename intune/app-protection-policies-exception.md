@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
-ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
+ms.openlocfilehash: b860b68bbf8940a89533159885f471f5337ca0e8
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况
 
@@ -31,6 +31,9 @@ ms.lasthandoff: 05/15/2018
 > 由你负责更改数据传输例外情况策略。 添加到此策略可允许非托管应用（未由 Intune 托管的应用）访问受托管应用保护的数据。 这种对受保护数据的访问可能会导致数据安全泄漏。 只为组织必须使用的应用添加数据传输例外情况，但不支持 Intune APP（应用程序保护策略）。 此外，仅为你认为不存在数据泄漏风险的应用添加例外情况。
 
 在 Intune 应用程序保护策略中，将“允许应用向其他应用传输数据”设置为“策略托管应用”意味着应用只能向 Intune 托管的应用传输数据。 如果需要允许向不支持 Intune 应用的特定应用传输数据，可使用“选择要免除的应用”来创建此策略的例外情况。 免除操作允许由 Intune 管理的应用程序基于 URL 协议 (iOS) 或包名称 (Android) 来调用非托管应用程序。 默认情况下，Intune 将重要的本机应用程序添加到例外情况列表中。 
+
+> [!NOTE]
+> 修改或添加数据传输策略例外不会影响其他应用保护策略，例如剪切、复制和粘贴限制。 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS 数据传输例外情况
 对于针对 iOS 的策略，可以通过 URL 协议配置数据传输例外情况。 若要添加例外情况，请查看应用开发人员提供的文档，以查找有关支持的 URL 协议的信息。 有关 iOS 数据传输例外情况的其他信息，请参阅 [iOS 应用保护策略设置 - 数据传输豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。
