@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1722defcb29c9cd5a15c68e01114f4ffb80e3859
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34456361"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -59,10 +60,10 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 
     - **名称**。 输入托管浏览器策略的唯一名称，以帮助你在 Intune 控制台中识别它。
     - **说明**。 提供对托管浏览器策略的概述以及可帮助你查找策略的其他相关信息。
-    - “启用允许列表或阻止列表，以限制托管浏览器可以打开的 URL”。 选择以下选项之一：
-        - “允许托管的浏览器仅打开下面列出的 URL”。 指定托管浏览器可以打开的 URL 列表。
-        - “阻止托管浏览器打开下面列出的 URL”。 指定将阻止托管浏览器打开的 URL 列表。
-**注意：** 不能在相同的托管浏览器策略中同时包括允许的 URL 和阻止的 URL。
+    - **启用允许列表或阻止列表，以限制托管浏览器可以打开的 URL**。 选择下列选项之一：
+        - **允许托管的浏览器仅打开下面列出的 URL**。 指定托管浏览器可以打开的 URL 列表。
+        - **阻止托管浏览器打开下面列出的 URL**。 指定将阻止托管浏览器打开的 URL 列表。
+**注意**：不能在相同的托管浏览器策略中同时包括允许的 URL 和阻止的 URL。
 有关可以指定的 URL 格式的详细信息，请参阅本主题中的**允许的和阻止的 URL 的 URL 格式**。
 
 4.  完成后，请选择 **“保存策略”**。
@@ -92,14 +93,14 @@ Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](htt
 -   若要允许身份验证并确保可以访问 Intune 文档，请从允许或阻止列表设置中移除 **&#42;.microsoft.com**。 始终允许。
 
 ### <a name="turn-off-usage-data"></a>关闭用法数据
-Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。
+Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**使用情况数据**设置关闭数据收集。 不具有对此数据的收集的控制。
 
 ## <a name="reference-information"></a>参考信息
 
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>允许的 URL 和阻止的 URL 的格式
 使用以下信息来了解有关指定允许和阻止列表中的 URL 时允许使用的格式和通配符：
 
-- 可以根据以下允许模式列表中的规则使用通配符 (*)。
+- 可以根据以下允许模式列表中的规则使用通配符 (**&#42;**)：
 
 - 在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
 
@@ -115,14 +116,14 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 
 |                  URL                  |                     详细信息                      |                                                匹配                                                |                                不匹配                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              匹配单个页面               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              匹配单个页面               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>；     | 匹配以 www.contoso.com 开头的所有 URL |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|        http://www.contoso.com         |              匹配单个页面               |                                            <www.contoso.com>                                           |  host.contoso.com<br /><br /><www.contoso.com/images><br /><br />contoso.com/   |
+|          http://contoso.com           |              匹配单个页面               |                                             contoso.com/                                              | host.contoso.com<br /><br /><www.contoso.com/images><br /><br /><www.contoso.com>  |
+|    <http://www.contoso.com/&#42>;     | 匹配以 www.contoso.com 开头的所有 URL  |      <www.contoso.com> <br /><br /><www.contoso.com/images><br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
 |    http://&#42;.contoso.com/&#42;     |     匹配 contoso.com 下的所有子域     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             匹配单个文件夹              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|     http://www.contoso.com/images     |             匹配单个文件夹              |                                        <www.contoso.com/images>                                         |                          <www.contoso.com/images/dogs>                          |
 |       http://www.contoso.com:80       |  匹配单个页面（使用端口号）   |                                       http://www.contoso.com:80                                       |                                                                               |
 |        https://www.contoso.com        |          匹配单个安全页面           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>； |    匹配单个文件夹和所有子文件夹    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+| <http://www.contoso.com/images/&#42>; |    匹配单个文件夹和所有子文件夹    |                 <www.contoso.com/images/dogs><br /><br /><www.contoso.com/images/cats>                   |                            <www.contoso.com/videos>                             |
 
 - 以下是一些你不能指定的输入的示例：
 
@@ -130,11 +131,11 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 
   - &#42;.contoso/&#42;
 
-  - www.contoso.com/&#42;images
+  - <www.contoso.com/>&#42;images
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - <www.contoso.com/>&#42;images&#42;pigs
 
-  - www.contoso.com/page&#42;
+  - <www.contoso.com/page>&#42;
 
   - IP 地址
 
