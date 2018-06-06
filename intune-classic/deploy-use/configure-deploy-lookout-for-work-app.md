@@ -14,11 +14,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d997e9db7aa2af4e598d47ab3c9a678e889632e8
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569385"
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>配置和部署 Lookout for Work 应用
 
@@ -34,10 +35,10 @@ ms.lasthandoff: 04/16/2018
    >请勿单击要求使用托管浏览器的框。
 
 3. 在“软件描述”页填入以下信息：
-   * **发布者：**Lookout Mobile Security
-   * **名称：**Lookout for Work
-   * **说明：**Lookout 能为设备提供针对移动威胁的最佳保护。 在设备上安装 Lookout 应用后，该应用可让设备免受威胁，并将在发现任何威胁时向用户、公司和管理员发出警报。
-   * **类型：**计算机管理
+   * **发布者：** Lookout Mobile Security
+   * **名称：** Lookout for Work
+   * **说明：** Lookout 能为设备提供针对移动威胁的最佳保护。 在设备上安装 Lookout 应用后，该应用可让设备免受威胁，并将在发现任何威胁时向用户、公司和管理员发出警报。
+   * **类型：** 计算机管理
 
 4. 成功完成时将显示消息“数据已成功上传至 Microsoft Intune”。
 
@@ -85,11 +86,11 @@ ms.lasthandoff: 04/16/2018
 
    选择“必需安装”选项，该选项要求在用户设备上安装 Lookout 应用。
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在设备上打开部署的应用时发生的情况
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md 当用户在设备上打开 Lookout for Work 应用时，系统将提示他们激活应用，并选择使用 Azure Active Directory 选项进行登录。 以下主题中提供了最终用户操作流程的详细指导：
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>在设备上打开已部署的应用时，会发生什么情况 
+当用户在设备上打开 Lookout for Work 应用时，系统将提示他们激活应用，并选择使用 Azure Active Directory 选项进行登录。 可在以下主题中找到具有最终用户流的详细演练：
 
 * [系统提示在 Android 设备上安装 Lookout for Work](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-
+    
 * [需要解决 Lookout for Work 在 Android 设备上发现的威胁](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>后续步骤

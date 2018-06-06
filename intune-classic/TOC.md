@@ -7,7 +7,7 @@
 
 # [入门](get-started/get-started.md)
 ## [设置 Intune](/intune/setup-steps?toc=/intune-classic/toc.json)
-### 先決條件
+### 必备条件
 #### [支持的设备](/intune/supported-devices-browsers?toc=/intune-classic/toc.json)
 #### [网络使用情况](/intune/network-bandwidth-use?toc=/intune-classic/toc.json)
 ### [登录到 Intune](/intune/account-sign-up?toc=/intune-classic/toc.json)
@@ -17,7 +17,6 @@
 ### [组织用户和设备](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [部署策略和应用](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [自定义公司门户](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [注册设备](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [配置后任务](get-started/post-configuration-tasks.md)
 ## 后续步骤
 ### [阻止公司数据从 Office 365 移动应用中泄露](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [还原托管的 iOS 设备](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android 和 Samsung KNOX 设置](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [使用自定义策略创建具有预共享密钥的 Wi-Fi 配置文件](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [使用自定义策略创建适用于 Android 设备的 per-app VPN 配置文件](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [使用自定义策略允许和阻止适用于 Samsung KNOX 设备的应用](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work 设置](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 和 Windows 8.1设置](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [停用设备](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [添加应用](deploy-use/add-apps.md)
-### [为已注册设备添加应用](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [旁加载 Windows 应用](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [部署应用](deploy-use/deploy-apps.md)
-### [将应用部署到设备和电脑](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [将应用部署到 Android for Work 设备](deploy-use/android-for-work-apps.md)
-### [监视器应用](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [管理批量采购的应用](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [管理批量采购的 iOS 应用](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [管理批量采购的 Windows 应用](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## 配置应用
 ### [更新应用](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [将应用与基于应用的 CA 结合使用](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [阻止没有 ADAL 的应用](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [保护对网络的访问 (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [根据设备、网络和应用程序风险保护访问](deploy-use/mobile-threat-defense.md)
 #### [查询移动威胁防御连接器](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [验证应用保护策略](deploy-use/validate-mobile-application-management.md)
 #### [监视应用保护策略符合性](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [管理 iOS 应用之间的数据传输](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [MAM 策略的 Intune 管理控制台](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [准备适用于 MAM 的业务线应用](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## 停用应用和数据
 ### [使用完全擦除或选择性擦除](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [停用应用](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [擦除托管公司应用数据](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [更改 MDM 机构](deploy-use/change-mdm-authority.md)
@@ -238,7 +225,7 @@
 ## [Intune App SDK Cordova 插件](/intune/app-sdk-cordova?toc=/intune-classic/toc.json)
 ## [Intune App SDK Xamarin 组件](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
-# [疑难解答](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
+# [故障排除](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [如何获取支持](/intune/get-support?toc=/intune-classic/toc.json)
 ## [使用报表监视 Intune](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection 疑难解答](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
