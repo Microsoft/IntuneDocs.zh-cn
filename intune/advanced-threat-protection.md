@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744663"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中启用具有条件访问的 Windows Defender ATP
 
@@ -51,19 +52,19 @@ Windows Defender ATP 可以解决类似这种情况的安全事件。 Windows De
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-3. 选择“设备符合性” > “Windows Defender ATP” > “打开 Windows Defender 高级威胁防护管理控制台”。
+3. 选择“设备符合性” > “Windows Defender ATP” > “打开 Windows Defender 安全中心”。
 
-    ![替换文字](./media/atp-device-compliance-open-windows-defender.png)
+    ![选择打开 Windows Defender 安全中心](./media/atp-device-compliance-open-windows-defender.png)
 
 4. 在“Windows Defender 安全中心”中：
     1. 选择“设置” > “高级功能”。
     2. 对于“Microsoft Intune 连接”，选择“启用”：
 
-        ![替换文字](./media/atp-security-center-intune-toggle.png)
+        ![启用到 Intune 的连接](./media/atp-security-center-intune-toggle.png)
 
     3. 选择“保存首选项”。
 
-5. 返回到 Intune，“设备符合性” > “Windows Defender ATP”。 将“将 Windows 10.0.15063+ 设备连接到 Windows Defender 高级威胁防护”设置为“启用”。
+5. 返回到 Intune，“设备符合性” > “Windows Defender ATP”。 将“将 Windows 设备版本 10.0.15063 及更高版本连接到 Windows Defender ATP”设置为“启用”。
 6. 选择“保存”。
 
 通常执行此任务一次。 因此，如果已在 Intune 资源中启用 ATP，则不需要再次执行本操作。
@@ -115,9 +116,9 @@ Windows Defender 包括设备上安装的载入配置包。 安装时，包与 [
 2. 选择“设备符合性” > “策略” > “创建策略”。
 3. 输入“名称”和“描述”。
 4. 在“平台”中，选择“Windows 10 及更高版本”。
-5. 在“设备运行状况”设置中，将“要求设备不高于设备威胁级别”设置为首选级别：
+5. 在“Windows Defender ATP”设置中，将“要求设备不超过计算机风险评分”设置为首选级别：
 
-  - **安全**：此级别是最安全的威胁级别。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
+  - 清除：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
   - 低：如果设备上仅存在低级别威胁，则该设备符合策略。 具有中等级别或高级别威胁的设备不符合策略。
   - 中：如果设备上发现的威胁为低级别或中等级别，则该设备符合策略。 如果检测到高级别威胁，则设备会被确定为不合规。
   - 高：该级别最不安全，允许所有威胁级别。 因此，存在高、中等、低级别威胁的设备被视为符合策略。

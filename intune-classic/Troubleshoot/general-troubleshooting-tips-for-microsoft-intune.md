@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bbcfa2de4b2d6ef7bff481817a289f56e746ee7f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718023"
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>有关 Microsoft Intune 的常规疑难解答提示
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 部署 Microsoft Intune 后，可能会遇到有关配置或客户端设备的问题。 使用以下资源可帮助你发现问题的原因，以便解决问题。
 
 > [!NOTE]
-> 若要创建支持请求或查看现有请求，请[访问 Office 365 管理中心](https://portal.office.com/admin/default.aspx)。 有关支持选项的详细信息，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)。
+> 若要创建支持请求或查看现有请求，请[访问 Azure 帮助 + 支持](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)页。 有关支持选项的详细信息，请参阅[如何获取对 Microsoft Intune 的支持](how-to-get-support-for-microsoft-intune.md)。
 
 ## <a name="define-the-problem"></a>定义问题
 

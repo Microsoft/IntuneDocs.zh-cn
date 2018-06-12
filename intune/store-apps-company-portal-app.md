@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703309"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手动添加 Windows 10 公司门户应用
 
@@ -73,7 +74,7 @@ ms.lasthandoff: 05/17/2018
 
 如果需要旁加载应用且在未通过 Symantec 证书进行签名的情况下分配了 Windows 8.1 公司门户，请通过完成本文前面各节中的步骤来完成升级。
 
-如果需要旁加载应用，并且使用 Symantec 代码签名证书签名并分配了 Windows 8.1 公司门户，请按照下一节内容中的步骤进行操作。  
+如果需要旁加载应用，并且使用 Symantec 代码签名证书签名并分配了 Windows 8.1 公司门户应用，请按照下一节内容中的步骤进行操作。
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将已签名和旁加载的 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
 我们推荐的迁移路径是通过将分配操作设置为“卸载”，以删除 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用的现有分配。 选择此设置后，可正常分配 Windows 10 公司门户应用。  

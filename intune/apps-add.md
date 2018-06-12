@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744986"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
 
@@ -153,6 +154,9 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune 自动添加的应用
 
 之前，Intune 包含了一些可供快速分配的内置应用。 根据 Intune 客户反馈，我们删除了此列表，并且不再显示内置应用。 但是，如果你已分配任何内置应用，则在应用列表中仍会看到这些应用。 可以根据需要继续分配这些应用。
+
+> [!NOTE]
+> 对于安装所需的非业务线应用，假定未检测到应用且应用的安装状态不是“安装挂起”，则 Intune 将尝试通过在每次设备签入时发送安装命令来安装该应用。
 
 ## <a name="installing-updating-or-removing-required-apps"></a>安装、更新或删除所需应用
 

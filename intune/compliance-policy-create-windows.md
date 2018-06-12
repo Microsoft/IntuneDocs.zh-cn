@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/26/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744901"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中添加适用于 Windows 设备的设备符合性策略
 
@@ -111,21 +112,20 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 - 需要启用 BitLocker：如果启用了 BitLocker，在系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据免受未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来帮助保护 Windows 操作系统和用户数据。 它还有助于确保计算机不被篡改，即使它处于无人参与、丢失或被盗状态也是如此。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥。
 - 需要在设备上启用安全启动：启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认签名。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
 - 要求启用代码完整性 - 代码完整性是这样一项功能，它在每次将驱动程序或系统文件加载到内存时验证其完整性。 代码完整性检测是否正在将未签名的驱动程序或系统文件加载到内核中。 系统文件是否已被具有管理员特权的用户帐户运行的恶意软件进行了修改。
-- 要求设备不高于设备威胁级别：使用此设置将防御威胁服务的风险评估视为符合性的条件。 选择允许的最大威胁级别：
-  - 安全：此选项是最安全的，设备不能具有任何威胁。 如果设备被检测到具有任一等级的威胁，则会被评估为不符合要求。
-  - **低**：若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
-  - 中：如果设备上存在的威胁为低级或中级，设备也将被评估为符合策略。 若检测到设备存在高级威胁，则将其确定为不合规。
-  - 高：此选项是最不安全的，允许所有威胁级别。 如果将此解决方案仅用作报告目的，则可能有用。
 
 有关 HAS 服务工作方式的详细信息，请参阅[运行状况证明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)。
 
 ### <a name="device-properties"></a>设备属性
 
-- 最低操作系统版本：以 major.minor.build.revision 数字格式输入所允许的最低版本。 build.revision 号必须与 `ver` 或 `winver` 命令返回的版本一致。
+- 最低操作系统版本：以 major.minor.build.CU 数字格式输入所允许的最低版本。 要获取正确的值，请打开命令提示符，然后键入 `ver`。 `ver` 命令返回以下格式的版本：
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   如果设备的操作系统版本比指定的版本低，它将被报告为不符合。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，升级后他们可以访问公司资源。
 
-- 最高操作系统版本：以 major.minor.build.revision 数字格式输入所允许的最高版本。 build.revision 号必须与 `ver` 或 `winver` 命令返回的版本一致。
+- 最高操作系统版本：以 major.minor.build.revision 数字格式输入所允许的最高版本。 要获取正确的值，请打开命令提示符，然后键入 `ver`。 `ver` 命令返回以下格式的版本：
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   当设备使用的操作系统版本高于规则中指定的版本时，将阻止访问公司资源，并要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备将不能用于访问公司资源。
 
@@ -161,9 +161,17 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 - 要防止重用的以前的密码数：输入以前用过的不能使用的密码数。
 - 设备从空闲状态返回时需要输入密码（仅限移动版和全息版）：每次设备从空闲状态返回时强制用户输入密码。
 
-### <a name="encryption"></a>加密
+#### <a name="encryption"></a>加密
 
 - 设备上的数据存储加密：选择“需要”加密设备上的数据存储。
+
+### <a name="windows-defender-atp"></a>Windows Defender ATP
+
+- 要求设备不超过计算机风险评分：使用此设置将防御威胁服务的风险评估视为符合性的条件。 选择允许的最大威胁级别：
+  - 清除：此选项是最安全的，因为设备不能具有任何威胁。 如果设备被检测到具有任一等级的威胁，则会被评估为不符合要求。
+  - **低**：若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
+  - 中：如果设备上存在的威胁为低级或中级，设备也将被评估为符合策略。 若检测到设备存在高级威胁，则将其确定为不合规。
+  - 高：此选项是最不安全的，允许所有威胁级别。 如果将此解决方案仅用作报告目的，则可能有用。
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

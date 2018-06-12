@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744595"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>在 Intune 中创建 VPN 配置文件
 
@@ -41,18 +42,19 @@ ms.lasthandoff: 04/16/2018
 
 |连接类型|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|脉冲安全|是|是|是|是|是|是|
-|Cisco (IPSec)|否|是|否|否|否|否|
-|Citrix|是|是|否|否|否|是|
-|F5 Edge Client|是|是|是|是|是|是|
-|SonicWall Mobile Connect|是|是|是|是|是|是|
+|自动|否|否|否|否|否|是|
 |Check Point Capsule VPN|是|是|是|是|是|是|
 |Cisco AnyConnect|是|是|是|否|否|否|
-|自动|否|否|否|否|否|是|
+|SonicWall Mobile Connect|是|是|是|是|是|是|
+|F5 Edge Client|是|是|是|是|是|是|
+|帕洛阿尔托网络全局保护|否|是|否|否|否|是|
+|脉冲安全|是|是|是|是|是|是|
+|Cisco (IPSec)|否|是|否|否|否|否|
+|Citrix|是（仅 Android）|是|否|否|否|是|
 |IKEv2|否|否|否|否|否|是|
 |L2TP|否|否|否|否|否|是|
 |PPTP|否|否|否|否|否|是|
-|自定义|否|是|是|否|否|否|
+|自定义 VPN|否|是|是|否|否|否|
 
 > [!IMPORTANT]
 > 在你能够使用已分配到设备的 VPN 配置文件之前，必须安装适用于该配置文件的 VPN 应用。 [什么是 Microsoft Intune 中的应用管理？](app-management.md)一文中的信息可帮助使用 Intune 分配应用。  

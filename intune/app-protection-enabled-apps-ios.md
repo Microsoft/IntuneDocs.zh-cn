@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703275"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 ##  <a name="using-apps-with-multi-identity-support"></a>使用具有多身份支持的应用
 
-应用保护策略仅在用户尝试访问工作相关数据时生效。  如果用户访问供个人使用的应用，可能会看到不同的行为。 
+应用保护策略仅在用户尝试访问工作相关数据时生效。 如果用户尝试访问供个人使用的应用，可能会看到不同的行为。 此策略也不适用于尚未保存的新内容。 只有将新内容保存到公司位置（如 SharePoint 或 OneDrive for Business）后，才会将其视为公司信息。
 
 对于支持多身份的应用，Intune 仅在用户访问工作数据时才应用应用保护策略。  例如，用户可能会收到 PIN 提示。  在 Outlook 应用中，用户启动应用时会出现提示。 在 OneDrive 应用中，用户键入工作帐户时会出现提示。  在 Microsoft Word、PowerPoint 和 Excel 中，用户访问公司 OneDrive 文档时会出现提示。
 ##  <a name="managing-user-accounts-on-the-device"></a>在设备上管理用户帐户

@@ -1,23 +1,24 @@
 ---
-title: "在 Microsoft Intune 中远程管理设备 - Azure | Microsoft Docs"
-description: "查看使用 TeamViewer 所需的角色、如何安装 TeamViewer 连接器，以及在 Azure 门户中使用 Microsoft Intune 远程管理设备的分步指南"
-keywords: 
+title: 在 Microsoft Intune 中远程管理设备 - Azure | Microsoft Docs
+description: 查看使用 TeamViewer 所需的角色、如何安装 TeamViewer 连接器，以及在 Azure 门户中使用 Microsoft Intune 远程管理设备的分步指南
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64f6dd6bf787a6f590655f03ac8f04312836e0b5
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744629"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 远程管理 Intune 设备
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="prerequisites"></a>必备条件
 
-- 使用支持的设备。 Intune 托管的 Android 和 Windows 设备支持远程管理。 TeamViewer 可能不支持 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。有关可支持性的信息，请参阅 [TeamViewer](https://www.teamviewer.com)，了解所有更新。
+- 使用支持的设备。 Intune 托管的 Android、Windows、iOS 和 macOS 设备支持远程管理。 TeamViewer 可能不支持 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。有关可支持性的信息，请参阅 [TeamViewer](https://www.teamviewer.com)，了解所有更新。
 
 - Azure 门户中的 Intune 管理员必须具有以下 [Intune 角色](role-based-access-control.md)：  
 

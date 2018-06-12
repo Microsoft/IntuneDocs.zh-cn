@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744697"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>在 Intune 中添加适用于 Android 设备的设备符合性策略
 
@@ -122,6 +123,17 @@ ms.lasthandoff: 05/10/2018
 - 公司门户应用运行时完整性：检查公司门户应用是否安装了默认运行时环境、是否已正确签名、是否不处于调试模式以及是否从已知源安装。
 - 在设备上阻止 USB 调试（Android 4.2 或更高版本）：选择以阻止设备使用 USB 调试功能。
 - 最低安全修补程序级别（Android 6.0 或更高版本）：选择设备可具有的最旧的安全修补程序级别。 不满足此修补程序级别的设备将不符合要求。 输入的日期格式必须为 `YYYY-MM-DD`。
+
+## <a name="locations"></a>位置
+
+在你的策略中，从现有位置进行选择。 尚无位置？ [使用 Intune 中的位置（网络围墙）](use-network-locations.md)提供一些指导。
+
+1. 选择“选择位置”。
+2. 从列表中，勾选你的位置，并选择“选择”。
+3. 选择“保存”以保存策略。
+4. 选择“针对非符合性的操作”。 默认操作会立即将设备标记为不符合。 此操作适用于至少选择一个位置并且设备未连接到所选位置的情况。
+
+  可以将此操作更改为在设备被标记为不符合时（例如，一天后）更新计划。 还可以配置第二项操作，即在设备不再符合你的位置时，向用户发送电子邮件。
 
 ## <a name="assign-user-groups"></a>分配用户组
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c2eb08db58940ed575b3dea011395edd6711fc
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744782"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中监视设备配置文件
 
@@ -41,19 +42,27 @@ Intune 包含 Azure 门户中的一些功能，可帮助监视和管理设备配
 1. 选择现有的配置文件。 例如，选择一个 macOS 配置文件。
 2. 单击“概述”选项卡。
 
-    图形图表显示分配给特定设备配置文件的设备数量。 例如，如果配置设备配置文件应用于 macOS 设备，则图表列出 macOS 设备的计数。
+    顶部的图形图表显示分配给特定设备配置文件的设备数量。 例如，如果配置设备配置文件应用于 macOS 设备，则图表列出 macOS 设备的计数。
 
     它还显示分配了相同设备配置文件的其他平台的设备数量。 例如，它显示非 macOS 设备的计数。
 
     ![查看分配给设备配置文件的设备数量](./media/device-configuration-profile-graphical-chart.png)
 
-3. 选择图形图表中的圆圈。 “设备状态”随即打开。
+    底部的图形图表显示分配给特定设备配置文件的用户数量。 例如，如果配置设备配置文件应用于 macOS 用户，则图表列出 macOS 用户的计数。
+
+3. 选择顶部图形图表中的圆圈。 “设备状态”随即打开。
 
     列出分配给配置文件的设备，并显示配置文件是否成功部署。 另请注意，它只列出了具有特定平台的设备（例如 macOS）。
 
-    关闭设备状态详细信息。
+    关闭“设备状态”详细信息。
 
-4. 在配置文件的属性（“配置文件”>“选择特定配置文件”）中，还可以更改现有属性：
+4. 选择底部图形图表中的圆圈。 “用户状态”随即打开。 
+
+    列出分配给配置文件的用户，并显示配置文件是否成功部署。 另请注意，它只列出了具有特定平台的用户（例如 macOS）。
+
+    关闭“用户状态”详细信息。
+
+5. 返回“配置文件”列表，选择特定的配置文件。 也可以更改现有属性：
   - 属性：更改名称或更新任何现有设置。
   - 分配：包括或排除策略应该应用的设备。 选择“所选组”以选择特定的组。
   - 设备状态：列出分配给配置文件的设备，并显示配置文件是否成功部署。 可以选择特定设备以获取更多详细信息，包括已安装的应用。

@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: 配置展台设置
+          href: kiosk-settings.md
         - name: 配置电子邮件设置
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 和 Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: 教育
+          items:
+            - name: iOS 共享设备
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: 配置 Windows 10 版本升级设置
           href: edition-upgrade-configure-windows-10.md
-        - name: 配置 Windows 10 教育版设置
-          href: education-settings-configure.md
-        - name: 配置 iOS 教育共享设备
-          href: education-settings-configure-ios-shared.md
         - name: 配置 iOS 更新策略
           href: software-updates-ios.md
         - name: 配置证书
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: 创建 Windows 策略
           href: compliance-policy-create-windows.md
+        - name: 基于位置的策略
+          href: use-network-locations.md
         - name: 评估策略
           href: policy-evaluate.md
         - name: 对不符合设备的操作

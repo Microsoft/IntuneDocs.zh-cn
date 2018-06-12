@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,31 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
+ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753886"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
 可指定哪些托管应用可在 Intune 托管的 iOS 设备上使用虚拟专用网络 (VPN)。 在 Intune 中创建每应用 VPN 时，最终用户访问公司文档时会自动通过 VPN 进行连接。
 
-每个应用 VPN 当前对以下提供程序可用： 
+每个应用 VPN 当前对以下提供程序可用：
 
  - 检查点远程访问 VPN
  - Cisco AnyConnect
+ - Citrix
  - F5
  - 脉冲连接安全
  - SonicWall
-
+ - 帕洛阿尔托网络全局保护
 
 ## <a name="prerequisites-for-per-app-vpn"></a>每个应用 VPN 的先决条件
+
+> [!IMPORTANT]
+> 你的 VPN 供应商可能对每个应用 VPN 有其他特定要求，例如特定硬件或许可。 在 Intune 中设置每个应用 VPN 之前，请务必检查其文档并满足这些先决条件。
 
 为了证明其身份，VPN 服务器提供了设备必须在提示的情况下必须接受的证书。 若要确保自动批准证书，请创建包含由证书颁发机构 (CA) 颁发的 VPN 服务器根证书的受信任证书配置文件。 
 
@@ -72,7 +77,7 @@ ms.lasthandoff: 05/03/2018
     2. 键入“说明”。
     3. 对“平台”选择“iOS”。
     4. 对“配置文件类型”选择“受信任的证书”。
-4. 单击文件夹图标，浏览到从 VPN 管理控制台导出的 VPN 证书（.cer 文件）。 单击“确定”。
+4. 单击文件夹图标，浏览到从 VPN 管理控制台导出的 VPN 证书（.cer 文件）。 单击" **确定**"。
 5. 单击“创建”。
 
     ![创建受信任的证书配置文件](./media/vpn-per-app-create-trusted-cert.png)
@@ -94,12 +99,12 @@ ms.lasthandoff: 05/03/2018
 6. 对“使用者可选名称”选择“用户主体名称(UPN)”。
 7. 对“密钥用法”选择“数字签名”和“密钥加密”。
 8. 对“密钥大小(位)”选择“2048”。
-9. 单击根证书并选择一个 SCEP 证书。 单击“确定”。
+9. 单击根证书并选择一个 SCEP 证书。 单击" **确定**"。
 10. 在“扩展密钥用法”的“名称”中键入 `Client Authentication`。
 11. 在“对象标识符”中键入 `1.3.6.1.5.5.7.3.2`。
-12. 单击“添加”。
+12. 单击“添加” 。
 13. 键入“服务器 URL”并单击“添加”。
-14. 单击“确定”。
+14. 单击" **确定**"。
 15. 单击“创建”。
 
     ![创建 SCEP 证书配置文件](./media/vpn-per-app-create-scep-cert.png)
@@ -127,8 +132,8 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 5. 单击“自动 VPN”。 在“自动 VPN”中：
     1. 对“自动 VPN 类型”选择“每应用 VPN”。
     2. 键入 VPN 的 URL 并单击“添加”。
-    3. 单击“确定”。
-6. 单击“确定”。
+    3. 单击" **确定**"。
+6. 单击" **确定**"。
 7. 单击“创建”。
 
     ![创建每应用 VPN 配置文件](./media/vpn-per-app-create-vpn-profile.png)
@@ -162,14 +167,15 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 
 ### <a name="before-you-attempt-to-connect"></a>尝试连接之前请确保满足以下各项
 
- - 确保运行的是 iOS 7 或更高版本。
+ - 确保运行的是 iOS 9 或更高版本。
  - 确保部署将上述所有策略部署到同一用户组。 如果未能执行此操作，这极有可能会中断每应用 VPN 体验。  
  - 确保安装有支持的第三方 VPN 应用。 支持以下 VPN 应用：
-    - 脉冲安全
-    - Checkpoint
+    - Check Point Capsule 连接
     - Cisco AnyConnect
-    - F5
-    - SonicWall
+    - Citrix VPN
+    - F5 Access
+    - 脉冲安全
+    - SonicWall Mobile Connect
 
 ### <a name="connect-using-the-per-app-vpn"></a>使用每应用 VPN 进行连接
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744935"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune 中适用于 Windows 10 及更高版本的 Endpoint Protection 设置
 
@@ -300,15 +301,21 @@ Windows Defender 安全中心应用作为独立应用或每个单项功能中的
 
 - 激活屏幕保护程序前，锁定屏幕保持不活动状态的分钟数：定义在屏幕保护程序运行之前，交互式桌面的登录屏幕保持不活动状态的最长分钟数。
 - 需要使用 CTRL+ALT+DEL 登录：在用户登录之前需要同时按 CTRL+ALT+DEL。
-- 智能卡移除行为：确定从智能卡读卡器中移除登录用户的智能卡时发生的情况。
-[LocalPoliciesSecurity 选项](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior)提供更多详细信息。
+- 智能卡移除行为：确定从智能卡读卡器中移除登录用户的智能卡时发生的情况。 选项包括：
+
+  - 锁定工作站：取下智能卡时锁定工作站。 使用此选项，用户可以携带智能卡离开该区域，并维持受保护的会话。
+  - 强制注销：取下智能卡时自动注销用户。
+  - 如果是远程桌面服务会话，则断开连接：取下智能卡会断开会话，但不会注销用户。 使用此选项，用户可以稍后插入智能卡并恢复会话，或者在另一台配备智能卡读卡器的计算机上恢复会话，而无需再次登录。 如果是本地会话，则此策略与“锁定工作站”的功能相同。
+
+    [LocalPoliciesSecurity 选项](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior)提供更多详细信息。
 
 #### <a name="display"></a>显示
 
 - 锁定屏幕上的用户信息：配置会话锁定时显示的用户信息。 如果未配置，则显示用户显示名称、域和用户名。
+  - 未配置：用户显示名称、域和用户名
+  - 用户显示名称、域和用户名
   - **仅限用户显示名称**
   - **不显示用户信息**
-  - 未配置：用户显示名称、域和用户名
 - 隐藏上次登录的用户：不显示最后一个登录此设备的用户的用户名。
 - 在登录时隐藏用户名：输入凭据后，在显示设备桌面之前，不显示登录该设备的用户的用户名。
 - 登录消息标题：设置试图登录的用户的消息标题。
@@ -316,13 +323,13 @@ Windows Defender 安全中心应用作为独立应用或每个单项功能中的
 
 ### <a name="network-access-and-security"></a>网络访问和安全性
 
-- 匿名访问命名管道和共享：限制对共享和命名管道设置的匿名访问。 适用于可以匿名访问的设置。
+- 匿名访问命名管道和共享：未配置（默认设置）限制匿名访问共享和命名管道设置。 适用于可以匿名访问的设置。
 - SAM 帐户匿名枚举：允许匿名用户枚举 SAM 帐户。 Windows 允许匿名用户枚举域帐户和网络共享名称。
-- SAM 帐户和共享匿名枚举：可以阻止 SAM 帐户和共享的匿名枚举。 Windows 允许匿名用户枚举域帐户和网络共享的名称。
-- 密码更改时存储的 LAN Manager 哈希值：在下次密码更改时，选择是否存储新密码的 LAN Manager (LM) 哈希值。 默认不存储该值。
-- PKU2U 身份验证请求：阻止该设备的 PKU2U 身份验证请求以使用在线身份。
-- 将远程 RPC 连接限制为 SAM：编辑默认的安全描述符定义语言字符串以允许或拒绝用户和组对 SAM 进行远程调用。
-- **安全描述符**
+- 匿名枚举 SAM 帐户和共享：未配置（默认设置）表示匿名用户可以枚举域帐户和网络共享的名称。 若要防止匿名枚举 SAM 帐户和共享，请设置为“阻止”。
+- 密码更改时存储 LAN 管理器哈希值：在下次密码更改时，选择“允许”LAN 管理器 (LM) 存储新密码的哈希值。 设置为“未配置”（默认设置）时，不会存储哈希值。
+- PKU2U 身份验证请求：阻止该设备的 PKU2U 身份验证请求以使用在线身份。 “未配置”（默认设置）允许这些请求。
+- 将远程 RPC 连接限制为 SAM：允许默认的安全描述符定义语言字符串，以拒绝用户和组对 SAM 进行远程调用。 “未配置”（默认设置）默认安全描述符定义语言字符串，以允许用户和组对 SAM 进行远程调用。
+  - **安全描述符**
 
 ### <a name="recovery-console-and-shutdown"></a>恢复控制台和关闭
 
@@ -359,13 +366,13 @@ Windows Defender 安全中心应用作为独立应用或每个单项功能中的
 
 ### <a name="microsoft-network-client"></a>Microsoft 网络客户端
 
-- 对通信进行数字签名(如果服务器允许)：确定 SMB 客户端是否尝试协商 SMB 数据包签名。 启用（默认设置）时，Microsoft 网络客户端请求服务器在设置会话时执行 SMB 数据包签名。 如果在服务器上启用了数据包签名，则会协商数据包签名。 如果禁用此策略，则 SMB 客户端绝不会协商 SMB 数据包签名。
+- 对通信进行数字签名(如果服务器允许)：确定 SMB 客户端是否尝试协商 SMB 数据包签名。 启用（未配置）时，Microsoft 网络客户端请求服务器在设置会话时执行 SMB 数据包签名。 如果在服务器上启用了数据包签名，则会协商数据包签名。 如果禁用此策略，则 SMB 客户端绝不会协商 SMB 数据包签名。
 - 将未加密的密码发送到第三方 SMB 服务器：启用后，允许服务器消息块 (SMB) 重定向程序将明文密码发送给在身份验证期间不支持密码加密的非 Microsoft SMB 服务器。
 
 ### <a name="microsoft-network-server"></a>Microsoft 网络服务器
 
-- 对通信进行数字签名(如果客户端允许)：确定 SMB 服务器是否与请求它的客户端协商 SMB 数据包签名。 启用后，Microsoft 网络服务器会根据客户端的请求协商 SMB 数据包签名。 也就是说，如果在客户端上启用了数据包签名，则会协商数据包签名。 禁用（默认设置）后，SMB 客户端绝不会协商 SMB 数据包签名。
-- 对通信进行数字签名(始终)：确定 SMB 服务器组件是否需要数据包签名。 启用后，Microsoft 网络服务器不会与 Microsoft 网络客户端通信，除非该客户端允许执行 SMB 数据包签名。 禁用（默认设置）后，客户端和服务器之间会协商 SMB 数据包签名。
+- 对通信进行数字签名(如果客户端允许)：确定 SMB 服务器是否与请求它的客户端协商 SMB 数据包签名。 启用后，Microsoft 网络服务器会根据客户端的请求协商 SMB 数据包签名。 也就是说，如果在客户端上启用了数据包签名，则会协商数据包签名。 未配置或禁用（默认设置）后，SMB 客户端绝不会协商 SMB 数据包签名。
+- 对通信进行数字签名(始终)：确定 SMB 服务器组件是否需要数据包签名。 启用后，Microsoft 网络服务器不会与 Microsoft 网络客户端通信，除非该客户端允许执行 SMB 数据包签名。 未配置或禁用（默认设置）后，客户端和服务器之间会协商 SMB 数据包签名。
 
 ## <a name="next-steps"></a>后续步骤
 

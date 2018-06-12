@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/17/2018
+ms.date: 5/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb87d75512d9f04abac9db256d0d968bb85116ef
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744561"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>在 Microsoft Intune 中为运行 iOS 的设备配置 VPN 设置
 
@@ -43,6 +44,7 @@ ms.lasthandoff: 05/10/2018
   - **Cisco 旧式 AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
+  - **帕洛阿尔托网络全局保护**
   - **Pulse Secure**
   - **Cisco (IPSec)**
   - **Citrix**

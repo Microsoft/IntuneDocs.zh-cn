@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744646"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
@@ -46,16 +47,19 @@ ms.lasthandoff: 04/16/2018
    - **配置文件类型**：选择要创建的类型。 列表取决于所选择的平台。
    - **设置**：以下主题介绍了每种配置文件类型的设置：
 
-       -  [设备功能设置](device-features-configure.md)
-       -  [设备限制设置](device-restrictions-configure.md)
-       -  [电子邮件设置](email-settings-configure.md)
-       -  [VPN 设置](vpn-settings-configure.md)
-       -  [Wi-Fi 设置](wi-fi-settings-configure.md)
-       -  [Windows 10 版本升级设置](edition-upgrade-configure-windows-10.md)
-       -  [证书设置](certificates-configure.md)
-       -  [Windows 信息保护设置](windows-information-protection-configure.md)
-       -  [教育设置](education-settings-configure.md)
-       -  [自定义设置](custom-settings-configure.md)
+       -  [设备功能](device-features-configure.md)
+       -  [设备限制](device-restrictions-configure.md)
+       -  [Endpoint protection](endpoint-protection-configure.md)
+       -  [展台](kiosk-settings.md)
+       -  [Email](email-settings-configure.md)
+       -  [VPN](vpn-settings-configure.md)
+       -  [Wi-Fi](wi-fi-settings-configure.md)
+       -  针对 [Windows 10](education-settings-configure.md) 和 [iOS](wi-fi-settings-ios.md) 的教育
+       -  [Windows 10 版本升级](edition-upgrade-configure-windows-10.md)
+       -  [iOS 更新策略](software-updates-ios.md)
+       -  [证书](certificates-configure.md)
+       -  [Windows 信息保护](windows-information-protection-configure.md)
+       -  [自定义](custom-settings-configure.md)
 
      ![“创建配置文件”的屏幕截图](./media/create-device-profile.png)
 
@@ -63,6 +67,5 @@ ms.lasthandoff: 04/16/2018
 
 配置文件随即创建并显示在列表中。
 
-
 ## <a name="next-steps"></a>后续步骤
-要分配设备配置文件，请参阅[如何使用 Microsoft Intune 分配设备配置文件](device-profile-assign.md)。
+[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
