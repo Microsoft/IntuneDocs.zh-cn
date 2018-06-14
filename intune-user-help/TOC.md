@@ -137,6 +137,7 @@
 ### [手动同步设备](sync-your-device-manually-windows.md)
 
 ### [修复 Windows 的常见问题](troubleshoot-your-device-windows.md)
+### [解决访问点限制](resolve-access-point-restrictions.md)
 #### [Windows 10 设备无法注册](troubleshoot-your-windows-10-device-windows.md)
 #### [更新 Windows 设备](you-need-to-update-your-windows-device.md)
 #### [从公司门户应用发送日志](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [移除设备](remove-your-device-cpwebsite.md)
 ### [重置设备密码](reset-your-passcode-cpwebsite.md)
 ### [重置和擦除设备](reset-erase-your-device-cpwebsite.md)
-### [手动同步设备](sync-your-device-manually-cpwebsite.md)

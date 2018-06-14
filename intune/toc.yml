@@ -270,6 +270,8 @@
           items:
             - name: 包括和排除应用
               href: apps-inc-exl-assignments.md
+            - name: 部署 Windows 10 应用
+              href: apps-windows-10-app-deploy.md
         - name: 监视应用
           href: apps-monitor.md
         - name: 配置应用
@@ -644,6 +646,8 @@
       items:
         - name: 帮助用户排查问题
           href: help-desk-operators.md
+        - name: 公司资源访问权限问题疑难解答
+          href: troubleshoot-company-resource-access-problems.md
         - name: Intune 活动的审核日志
           href: monitor-audit-logs.md
         - name: 查看应用保护日志
@@ -693,7 +697,9 @@
           href: app-wrapper-prepare-android.md
         - name: Intune App SDK for Android
           href: app-sdk-android.md
-        - name: Intune App SDK Xamarin 组件
+        - name: Intune App SDK Cordova 插件
+          href: app-sdk-cordova.md
+        - name: Intune App SDK Xamarin Bindings
           href: app-sdk-xamarin.md
     - name: 使用 Intune 数据仓库
       href: reports-nav-create-intune-reports.md
