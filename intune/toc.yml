@@ -189,6 +189,10 @@
               href: apple-configurator-enroll-ios.md
         - name: 设置 macOS 注册
           href: macos-enroll.md
+        - name: 在 Windows 电脑上安装 Intune 软件客户端
+          href: install-the-windows-pc-client-with-microsoft-intune.md
+        - name: 设备注册疑难解答
+          href: troubleshoot-device-enrollment-in-intune.md
     - name: 管理设备
       href: device-management.md
       items:
