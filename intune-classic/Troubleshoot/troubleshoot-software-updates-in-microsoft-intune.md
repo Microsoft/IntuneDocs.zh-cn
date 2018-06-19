@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030486"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>排查 Microsoft Intune 中的软件更新问题
 
@@ -255,7 +256,7 @@ ms.lasthandoff: 04/16/2018
 
 如果被取代的更新（已由其他更新所取代的更新）已较长时间未遭到拒绝。 在某些进程期间（例如安装应用程序），Windows 将按顺序检查所有被取代的更新，以便可正确映射更新及其后续任务。 如果被取代的更新的列表增长过大，此检查任务可能导致 CPU 使用率过高，因为需要处理负载和时间。 此问题主要影响运行 Windows 7 的客户端，因为大量被取代的更新对 Windows 7 可用。 Windows 8 及更高版本的操作系统不具备如此多可用的被取代更新，因此不易发生此问题。
 
-**解决方法：**若要解决此问题，请执行下列步骤：
+**解决方法：** 若要解决此问题，请执行下列步骤：
 1. 登录到 [Intune 管理控制台](https://manage.microsoft.com)。
 2. 依次选择**更新**  > **所有更新**。
 3. 使用上面的工具栏上的筛选器选项以筛选被取代的更新。

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025906"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
@@ -121,11 +122,11 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 
 #### <a name="corporate-owned"></a>公司拥有的设备
 
--   **加入本地 AD 域：**这是组织最常见的条件性访问部署选项，这种方式合理且易于接受，他们已经通过 AD 组策略和/或配合 System Center Configuration Manager 一起管理其电脑。
+-   **加入本地 AD 域：** 这是组织最常见的条件性访问部署选项，这种方式合理且易于接受，他们已经通过 AD 组策略和/或配合 System Center Configuration Manager 一起管理其电脑。
 
--   **加入 Azure AD 域和 Intune 管理：**这种方案通常适用于选择自有设备 (CYOD)，以及漫游笔记本电脑的情况，这些设备几乎不连接企业网络。 设备加入 Azure AD 并注册 Intune，这会删除本地 AD 和域控制器上的任何依赖项。 这可在访问公司资源时用作条件性访问标准。
+-   **加入 Azure AD 域和 Intune 管理：** 这种方案通常适用于选择自有设备 (CYOD)，以及漫游笔记本电脑的情况，这些设备几乎不连接企业网络。 设备加入 Azure AD 并注册 Intune，这会删除本地 AD 和域控制器上的任何依赖项。 这可在访问公司资源时用作条件性访问标准。
 
--   **加入 AD 域和 System Center Configuration Manager：**截止到当前的分支，System Center Configuration Manager 提供了可以评估特定符合性标准的条件性访问功能（除了已加入域的电脑）：
+-   **加入 AD 域和 System Center Configuration Manager：** 截止到当前的分支，System Center Configuration Manager 提供了可以评估特定符合性标准的条件性访问功能（除了已加入域的电脑）：
 
     -   电脑是否已加密？
 
@@ -135,7 +136,7 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 
 #### <a name="bring-your-own-device-byod"></a>自带设备办公 (BYOD)
 
--   **工作区加入和 Intune 管理：**用户可加入其个人设备以访问公司资源和服务。 你可以使用“工作区加入”并将设备注册到 Intune 以接收设备级别的策略，这是评估条件性访问标准的另一个选项。
+-   **工作区加入和 Intune 管理：** 用户可加入其个人设备以访问公司资源和服务。 你可以使用“工作区加入”并将设备注册到 Intune 以接收设备级别的策略，这是评估条件性访问标准的另一个选项。
 
 ## <a name="app-based-conditional-access"></a>基于应用的条件性访问
 

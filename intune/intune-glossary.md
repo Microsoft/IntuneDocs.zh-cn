@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31026646"
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune 术语表
 了解 Microsoft Intune 中使用的常用术语的定义。

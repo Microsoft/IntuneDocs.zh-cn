@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028055"
 ---
 # <a name="change-the-mdm-authority"></a>更改 MDM 机构
 从 Configuration Manager 1610 版本开始，无需联系 Microsoft 支持部门，也无需取消注册并重新注册现有的受管理设备即可更改 MDM 机构。 本主题逐步讲解在不取消注册并重新注册现有托管设备的情况下，如何将从 Intune 配置的且 MDM 机构设置为 Microsoft Intune（独立版）的现有 Microsoft Intune 租户更改为 Configuration Manager（混合 MDM）。

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926348"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>在迁移到 Microsoft Intune 时，配置设备符合性和应用管理策略
 
@@ -57,9 +58,9 @@ ms.lasthandoff: 03/16/2018
 
 ####  <a name="directly-import-ios-configuration-profiles-optional"></a>直接导入 iOS 配置的配置文件（可选）
 
--   **Apple Configurator iOS 配置文件（iOS 7.1 及更高版本）：**如果现有的 MDM 解决方案使用 Apple Configurator 配置文件（.mobileconfig 文件），Intune 可以直接导入它们作为自定义配置策略。
+-   **Apple Configurator iOS 配置文件（iOS 7.1 及更高版本）：** 如果现有的 MDM 解决方案使用 Apple Configurator 配置文件（.mobileconfig 文件），Intune 可以直接导入它们作为自定义配置策略。
 
--   **iOS 移动应用程序配置策略：**如果你现有的 MDM 解决方案使用 iOS 移动应用程序配置策略，Intune 可以直接将其导入，前提是它们符合 Apple 针对属性列表指定的 XML 格式。
+-   **iOS 移动应用程序配置策略：** 如果你现有的 MDM 解决方案使用 iOS 移动应用程序配置策略，Intune 可以直接将其导入，前提是它们符合 Apple 针对属性列表指定的 XML 格式。
 
 - 了解如何添加适用于 [iOS](custom-settings-ios.md) 的自定义策略。
 

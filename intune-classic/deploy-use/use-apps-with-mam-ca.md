@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018472"
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>将应用与基于应用的 CA 结合使用时的预期行为
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
 
 可以在 [Intune 管理员控制台](https://manage.microsoft.com)或 [Azure AD Premium 管理控制台](https://manage.windowsazure.com)上配置[基于设备合规性的条件访问](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)（<strong>设备 CA</strong>）。 设备 CA 要求用户只能通过符合 Intune 设备合规性策略的 Intune 托管设备或已加入域的电脑连接到 Exchange Online。  如果用户属于针对基于应用的 CA 和设备 CA 策略的一个或多个安全组，则用户必须满足以下两个要求之一：
 * 用于访问服务的应用是支持的移动应用 
-* ，并且运行该应用的设备安装了 **iOS 身份验证器（适用于 iOS 设备）**或**公司门户应用（适用于 Android 设备）**。
+* ，并且运行该应用的设备安装了 **iOS 身份验证器（适用于 iOS 设备）** 或**公司门户应用（适用于 Android 设备）**。
 * 用于访问服务的设备是 **Intune 托管并符合** Intune 设备合规性策略，或者是**已加入域的电脑**。  下面是一些示例，可帮助说明这一点：
   * 如果用户尝试从**本机 iOS 电子邮件应用**进行连接，则需要位于**托管且符合的设备**上，因为基于应用的 CA 不支持本机邮件应用。
   * 如果用户尝试从 **Windows 家庭电脑**进行连接，则**设备 CA 策略**会进行应用，从而要求用户必须使用已加入域的电脑。

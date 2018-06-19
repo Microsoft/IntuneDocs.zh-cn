@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34223656"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>移动 Intune 数据仓库帐户数据 
 

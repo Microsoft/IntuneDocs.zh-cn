@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926416"
 ---
 # <a name="configure-app-protection-policies-optional"></a>配置应用保护策略（可选）
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31022809"
 ---
 # <a name="plan-communications"></a>计划通信
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
     -   [下载电子邮件 \#1 模板](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
--   **电子邮件 \#2：**宣布服务现已准备好通过 Intune 进行访问。 告知用户立即注册。 提醒用户有关迁移的好处和战略原因。<br/><br/>
+-   **电子邮件 \#2：** 宣布服务现已准备好通过 Intune 进行访问。 告知用户立即注册。 提醒用户有关迁移的好处和战略原因。<br/><br/>
 
 
     -   [下载电子邮件 \#2 模板](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)

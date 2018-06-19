@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016078"
 ---
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>Exchange 管理的移动设备的擦除
 

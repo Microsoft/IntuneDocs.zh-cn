@@ -20,6 +20,7 @@ ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34216320"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>通过使用设备注册管理员帐户注册设备
 

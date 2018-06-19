@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31832555"
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>适用于运行 iOS 的设备的 Microsoft Intune 主屏幕布局设置
 

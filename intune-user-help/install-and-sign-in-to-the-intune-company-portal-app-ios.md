@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015143"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>安装公司门户应用并登录
 

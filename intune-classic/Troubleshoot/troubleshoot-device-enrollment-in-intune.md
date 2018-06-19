@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030554"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
 所有设备平台上都可能发生这些问题。
 
 ### <a name="device-cap-reached"></a>已达到设备上限
-**问题：**注册期间，用户在设备上收到一个错误，例如 iOS 设备上的“公司门户暂时不可用”错误，并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
+**问题：** 注册期间，用户在设备上收到一个错误，例如 iOS 设备上的“公司门户暂时不可用”错误，并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
 
 **解决方法：**
 
@@ -93,7 +94,7 @@ ms.lasthandoff: 04/16/2018
 > 如果对添加到设备注册管理器帐户的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
-**问题：**用户的设备上收到“公司门户暂时不可用”错误。
+**问题：** 用户的设备上收到“公司门户暂时不可用”错误。
 
 **解决方法：**
 
@@ -108,7 +109,7 @@ ms.lasthandoff: 04/16/2018
 5.  如果用户成功登录，iOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，需要手动安装 Intune 公司门户应用，之后才能重试注册。
 
 ### <a name="mdm-authority-not-defined"></a>未定义 MDM 机构
-**问题：**用户收到“未定义 MDM 机构”错误。
+**问题：** 用户收到“未定义 MDM 机构”错误。
 
 **解决方法：**
 
@@ -146,12 +147,12 @@ ms.lasthandoff: 04/16/2018
         返回结果后，即可查找云用户 ID。  如果找不到任何 ID，则表示未授权该用户使用 Intune。
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名称包含特殊字符，则无法创建策略或注册设备
-**问题：**无法创建策略或注册设备。
+**问题：** 无法创建策略或注册设备。
 
-**解决方法：**在 [Office 365 管理中心](https://portal.office.com/)，删除公司名称中的特殊字符并保存公司信息。
+**解决方法：** 在 [Office 365 管理中心](https://portal.office.com/)，删除公司名称中的特殊字符并保存公司信息。
 
 ### <a name="unable-to-log-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>如果有多个已验证的域，则无法登录或注册设备
-**问题：**向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
+**问题：** 向 ADFS 添加第二个已验证的域时，具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
 
 
 <strong>解决方法：</strong>对于通过 AD FS 2.0 使用单一登录 (SSO) 且其组织中拥有用户 UPN 后缀的多个顶级域（如 @contoso.com 或 @fabrikam.com）的 Microsoft Office 365 客户，他们需要为每个后缀部署 AD FS 2.0 联合身份验证服务的一个单独实例。 现在有了 [AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)，其与<strong>SupportMultipleDomain</strong> 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
@@ -170,7 +171,7 @@ ms.lasthandoff: 04/16/2018
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>设备无法签入 Intune 服务，并在 Intune 管理控制台中显示为“不正常”
-**问题：**运行 Android 版本 4.4.x 和 5.x 的某些 Samsung 设备可能会停止签入 Intune 服务。 如果设备不签入：
+**问题：** 运行 Android 版本 4.4.x 和 5.x 的某些 Samsung 设备可能会停止签入 Intune 服务。 如果设备不签入：
 
 - 它们将无法从 Intune 服务接收策略、应用和远程命令。
 - 它们在管理控制台中显示的管理状态为“不正常”。
@@ -219,7 +220,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败
-**问题：**用户在 Android 设备上收到**配置文件安装失败**错误。
+**问题：** 用户在 Android 设备上收到**配置文件安装失败**错误。
 
 **解决方法：**
 
@@ -285,13 +286,13 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 |MdmAuthorityNotDefined|尚未定义移动设备管理机构。<br /><br />|尚未在 Intune 中指定移动设备管理机构。<br /><br />查看[开始使用 Microsoft Intune 的 30 天试用版](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)中的“步骤 6：注册移动设备并安装应用”部分的第 1 项。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>设备处于非活动状态，或管理控制台不能与其通信
-**问题：**iOS 设备未使用 Intune 服务签入。 设备必须定期使用该服务签入，以保持对受保护的公司资源的访问权限。 如果设备不签入：
+**问题：** iOS 设备未使用 Intune 服务签入。 设备必须定期使用该服务签入，以保持对受保护的公司资源的访问权限。 如果设备不签入：
 
 - 它们将无法从 Intune 服务接收策略、应用和远程命令。
 - 它们在管理控制台中显示的管理状态为“不正常”。
 - 受条件访问策略保护的用户可能失去对公司资源的访问权限。
 
-**解决方法：**与最终用户共享以下解决方法，帮助他们重新获得公司资源的访问权限。
+**解决方法：** 与最终用户共享以下解决方法，帮助他们重新获得公司资源的访问权限。
 
 如果用户启动了 iOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...” 内联通知。
 
@@ -324,7 +325,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败
-**问题：**用户的 iOS 设备上收到**配置文件安装失败**错误。
+**问题：** 用户的 iOS 设备上收到**配置文件安装失败**错误。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>失败配置文件安装的故障排除步骤
 
@@ -337,14 +338,14 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 4.  确认默认浏览器为适用于 iOS 的 Safari，并且已启用 Cookie。
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
-**问题：**用户注册了 iOS 设备，但它未出现在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
+**问题：** 用户注册了 iOS 设备，但它未出现在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
 
 - Configuration Manager 站点中的 Microsoft Intune 连接器当前未与 Intune 服务进行通信。
 - 数据发现管理器 (ddm) 组件或状态管理器 (statmgr) 组件当前未处理来自 Intune 服务的消息。
 - 你可能已从某个帐户下载了 MDM 证书，而在其他帐户上使用了它。
 
 
-**解决方法：**查看以下日志文件是否存在错误：
+**解决方法：** 查看以下日志文件是否存在错误：
 
 - dmpdownloader.log
 - ddm.log
@@ -357,7 +358,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 ### <a name="mobile-devices-disappear"></a>移动设备消失
 **问题：** 在向 Configuration Manager 成功注册移动设备后，它从移动设备集合中消失，但该设备仍然具有管理配置文件，并且列示在 CSS 网关中。
 
-**解决方法：**这可能是因为你有一个自定义进程用于删除未加入域的设备，或者是因为该用户已从订阅停用该设备。 若要验证并检查从 Configuration Manager 控制台中删除了该设备的是哪个进程或用户帐户，请执行以下步骤。
+**解决方法：** 这可能是因为你有一个自定义进程用于删除未加入域的设备，或者是因为该用户已从订阅停用该设备。 若要验证并检查从 Configuration Manager 控制台中删除了该设备的是哪个进程或用户帐户，请执行以下步骤。
 
 #### <a name="check-how-device-was-removed"></a>检查设备的删除途径
 
@@ -389,7 +390,7 @@ Samsung 已经确认 Samsung Smart Manager 软件（预装在某些 Samsung 设�
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
-**问题：**注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
+**问题：** 注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
 
 可能的原因是计算机先前已注册，或具有某台已注册的计算机的克隆映像。 先前帐户的帐户证书仍在此计算机上。
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32046258"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>什么是 Mobile Threat Defense 与 Intune 的集成？
 

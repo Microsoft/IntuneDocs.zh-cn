@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018101"
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>排查 Microsoft Intune 中的策略问题
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="general-issues"></a>一般问题
 
 ### <a name="was-a-deployed-policy-applied-to-the-device"></a>部署的策略是否已应用于该设备？
-**问题：**不确定策略是否已得到正确应用。
+**问题：** 不确定策略是否已得到正确应用。
 
 在 Intune 管理控制台中，每个设备的“设备属性”下都有一个策略选项卡 。 每个策略都有 **“预期值”** 和 **“状态”**。 预期值是指在分配策略时想要获得的值。 状态是指综合考虑应用于设备的所有策略，以及硬件和操作系统的限制及要求时，实际应用的内容。 可能的状态为：
 

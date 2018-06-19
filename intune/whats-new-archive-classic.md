@@ -19,6 +19,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31834432"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
 
@@ -351,9 +352,9 @@ __适用于 Windows 10 设备的新 Microsoft Intune 公司门户__ Microsoft �
 > [!IMPORTANT]
 > __Intune 和 Android for Work 上的更新__虽然可通过“必需”操作部署 Android for Work 应用，但如果已将 Intune 组迁移至新的 Azure AD 组体验，则只可以将应用部署为“可用”。
 
-__Intune App SDK for Cordova 插件现在支持 MAM（无需注册设备）__应用开发人员现在可以使用 Intune App SDK for Cordova 插件启用 MAM 功能，且无需在适用于 Android 和 iOS 的基于 Cordova 的应用中注册设备。 可在[此处](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)找到 Intune App SDK for Cordova 插件。
+__Intune App SDK for Cordova 插件现在支持 MAM（无需注册设备）__ 应用开发人员现在可以使用 Intune App SDK for Cordova 插件启用 MAM 功能，且无需在适用于 Android 和 iOS 的基于 Cordova 的应用中注册设备。 可在[此处](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)找到 Intune App SDK for Cordova 插件。
 
-__Intune App SDK Xamarin 组件现在支持 MAM（无需注册设备）__应用开发人员现在可以使用 Intune App SDK Xamarin 组件启用 MAM 功能，且无需在适用于 Android 和 iOS 的基于 Xamarin 的应用中注册设备。 可在[此处](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)找到 Intune App SDK Xamarin 组件。
+__Intune App SDK Xamarin 组件现在支持 MAM（无需注册设备）__ 应用开发人员现在可以使用 Intune App SDK Xamarin 组件启用 MAM 功能，且无需在适用于 Android 和 iOS 的基于 Xamarin 的应用中注册设备。 可在[此处](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)找到 Intune App SDK Xamarin 组件。
 
 ### <a name="notices"></a>通知
 

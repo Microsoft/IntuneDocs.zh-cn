@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030270"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
 
@@ -174,7 +175,7 @@ Microsoft Active Protection Service 是一个可帮助你决定如何应对潜�
   ![监视 Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>如何在计算机上查看恶意软件的最近检测路径
-Intune 可以在设备上显示多达 10 个最近检测到的恶意软件实例的路径。 **“最近检测路径”**默认处于禁用状态。 启用此视图：
+Intune 可以在设备上显示多达 10 个最近检测到的恶意软件实例的路径。 **“最近检测路径”** 默认处于禁用状态。 启用此视图：
 
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组” > “所有设备” > “所有计算机”。
 2. 右键单击要查看其最近检测路径的计算机，然后选择“属性”。

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013052"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune 的可访问性功能
 除了 Microsoft Windows 中的辅助功能和工具之外，以下功能使 Microsoft Intune 更易于残障人士访问：使用键盘快捷方式

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015602"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>使用 USB 电缆将日志发送给公司支持人员
 

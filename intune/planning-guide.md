@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023863"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 部署规划、设计和实施指南
 

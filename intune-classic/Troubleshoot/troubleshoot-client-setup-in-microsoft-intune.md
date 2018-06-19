@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028072"
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>排查 Microsoft Intune 中的客户端安装问题
 
@@ -54,11 +55,11 @@ ms.lasthandoff: 04/16/2018
     -    “严重程度”– 表示警报的严重程度
 
 ## <a name="computer-enrollment-package-doesnt-download"></a>计算机注册包未下载
-**问题：**尝试注册计算机时遇到以下问题：
+**问题：** 尝试注册计算机时遇到以下问题：
 -  注册包下载失败
 -  出现下载对话框但超时
 
-**解决方法：**在下载使用的浏览器上，确保已在下载进行期间启用了下载，且加密文件可以保存到本地磁盘。
+**解决方法：** 在下载使用的浏览器上，确保已在下载进行期间启用了下载，且加密文件可以保存到本地磁盘。
 
 ## <a name="client-installation-hangs-with-error-code-0x80040154"></a>客户端安装挂起，错误代码 0x80040154
 **问题：**
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
 
 原因可能是电脑上缺少关键软件更新。
 
-**解决方法：**确保软件更新策略启用了关键更新的安装，如[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述
+**解决方法：** 确保软件更新策略启用了关键更新的安装，如[在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)中所述
 
 
 ## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log 中与 Microsoft Intune 策略相关的错误

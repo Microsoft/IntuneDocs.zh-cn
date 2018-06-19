@@ -22,6 +22,7 @@ ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33927315"
 ---
 # <a name="install-apps-on-your-device"></a>在设备上安装应用
 在设备上从适用于 Windows 的公司门户应用安装应用

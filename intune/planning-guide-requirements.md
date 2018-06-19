@@ -1,16 +1,16 @@
 ---
-title: "确定用例场景要求"
+title: 确定用例场景要求
 titlesuffix: Microsoft Intune
-description: "本文旨在帮助你确定 Microsoft Intune 仅云实现的 Intune 用例以及子用例场景要求。"
-keywords: 
+description: 本文旨在帮助你确定 Microsoft Intune 仅云实现的 Intune 用例以及子用例场景要求。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29961191"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>确定用例场景要求
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31019341"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>注册或登录到 Microsoft Intune
 

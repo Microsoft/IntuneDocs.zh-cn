@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31024067"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>准备好在 Azure 门户中配置应用保护策略
 
@@ -63,10 +64,10 @@ Azure 门户是用于创建应用保护策略的新管理控制台。 它支持�
 >从版本 1703 开始，无需注册方案便可在 MAM 中为 Windows 10 设备定义应用保护策略。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 
 ##  <a name="supported-apps"></a>受支持的应用
-* **Microsoft 应用：**这些应用内置有 Intune 应用 SDK，且无需进一步处理就可应用应用保护策略。
+* **Microsoft 应用：** 这些应用内置有 Intune 应用 SDK，且无需进一步处理就可应用应用保护策略。
 若要查看受支持的 Microsoft 应用的完整列表，请转到 Microsoft Intune 应用程序合作伙伴页上的 [Microsoft Intune 移动应用程序库](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 单击应用可查看支持的方案和平台以及查看应用是否支持多个标识。
 
-* **组织的业务线应用：**必须准备这些应用以包含 Intune App SDK，才可应用应用保护策略。
+* **组织的业务线应用：** 必须准备这些应用以包含 Intune App SDK，才可应用应用保护策略。
 
   * 有关 Intune 管理的设备，请参阅[决定如何为 MAM 准备应用](/intune/apps-prepare-mobile-application-management)。
 

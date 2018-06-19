@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023030"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况
 
@@ -65,10 +66,10 @@ Android 设备上与应用保护策略关联的所有应用都需要公司门户
 
 支持以下文件类型：
 
-* **音频：**AAC LC、HE-AACv1 (AAC+)、HE-AACv2（增强型 AAC+）、AAC ELD（增强型低延迟 AAC）、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Ogg Vorbis、PCM/WAVE。
-* **视频：**H.263、H.264 AVC、MPEG-4 SP、VP8。
+* **音频：** AAC LC、HE-AACv1 (AAC+)、HE-AACv2（增强型 AAC+）、AAC ELD（增强型低延迟 AAC）、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Ogg Vorbis、PCM/WAVE。
+* **视频：** H.263、H.264 AVC、MPEG-4 SP、VP8。
 * **图像：**.jpg、.pjpg、.png、.ppng、.bmp、.pbmp、.gif、.pgif，.jpeg、.pjpeg。
-* **文档：**PDF、PPDF
+* **文档：** PDF、PPDF
 
 
 |**pfile**|**文本**|

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34224477"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>将 Android 业务线应用添加到 Microsoft Intune
 

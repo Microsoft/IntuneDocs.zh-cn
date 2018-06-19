@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073812"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>在你的设备上启用安全威胁扫描 
 如果你在不知情的情况下安装了不安全的应用，你的设备数据可能存在风险。 为了保护你设备上的数据，我们建议你： 

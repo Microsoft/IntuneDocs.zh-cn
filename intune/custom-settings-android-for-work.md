@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31832943"
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>创建适用于 Android for Work 设备的 Intune 自定义配置文件设置
 

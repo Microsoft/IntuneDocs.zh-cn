@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30753917"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>创建工作配置文件并在 Intune 中注册设备
 

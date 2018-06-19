@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023387"
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>在 Microsoft Intune 中了解你的设备清单
 

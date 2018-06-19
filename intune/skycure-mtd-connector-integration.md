@@ -20,6 +20,7 @@ ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32046408"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>设置 Symantec Endpoint Protection Mobile 与 Intune 的集成
 
@@ -47,9 +48,9 @@ SEP Mobile 支持与 Intune 集成的两种模式：
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile 应用如何与 Azure AD 和 Intune 一起使用？
 
--   **iOS 应用：**允许最终用户使用 iOS 应用登录到 Azure AD。
+-   **iOS 应用：** 允许最终用户使用 iOS 应用登录到 Azure AD。
 
--   **Android 应用：**允许最终用户使用 Android 应用登录到 Azure AD。
+-   **Android 应用：** 允许最终用户使用 Android 应用登录到 Azure AD。
 
 -   管理应用：这是 SEP Mobile Azure AD 多租户应用，可实现与 Intune 之间的服务到服务通信。
 
