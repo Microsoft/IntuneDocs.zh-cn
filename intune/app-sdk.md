@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34223571"
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概述
 Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用保护策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 你会发现可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用 API 针对需要应用参与的功能来自定义应用行为。

@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31836921"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 

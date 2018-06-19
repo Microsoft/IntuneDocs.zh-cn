@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31835361"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>如何创建用于启用 Google Play 保护的设备符合性策略
 

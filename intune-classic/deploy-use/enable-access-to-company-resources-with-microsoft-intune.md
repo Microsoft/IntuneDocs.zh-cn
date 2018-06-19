@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017302"
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>使用 Microsoft Intune 启用对公司资源的访问
 

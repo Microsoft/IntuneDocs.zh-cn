@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017608"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>拒绝“使用条款”后删除对设备的管理
 

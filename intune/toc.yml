@@ -11,6 +11,8 @@
       items:
         - name: 组更改
           href: groups-get-started.md
+        - name: 旧版 Intune PC 客户端
+          href: intune-legacy-pc-client.md
     - name: 注册进行免费试用
       href: free-trial-sign-up.md
     - name: 新增功能
@@ -70,6 +72,8 @@
       href: common-scenarios.md
     - name: MAM 常见问题
       href: mam-faq.md
+    - name: 策略和配置文件常见问题
+      href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 规划部署
   items:
     - name: 规划指南
@@ -176,6 +180,8 @@
           items:
             - name: 设置 Android 注册
               href: android-enroll.md
+            - name: 管理 Android for Work 设备
+              href: android-enterprise-overview.md
             - name: Samsung Knox 移动注册
               href: android-samsung-knox-mobile-enroll.md
         - name: 设置 iOS 注册
@@ -196,6 +202,8 @@
     - name: 管理设备
       href: device-management.md
       items:
+        - name: 设备管理功能
+          href: device-management-capabilities.md
         - name: 绕过激活锁定
           href: device-activation-lock-bypass.md
         - name: 管理 Windows Fresh Start
@@ -658,6 +666,14 @@
           href: monitor-audit-logs.md
         - name: 查看应用保护日志
           href: app-protection-policy-settings-log.md
+        - name: 电子邮件配置文件疑难解答
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: 软件更新疑难解答
+          href: troubleshoot-software-updates-in-microsoft-intune.md
+        - name: Endpoint Protection 疑难解答
+          href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: 故障排除策略
+          href: troubleshoot-policies-in-microsoft-intune.md
     - name: 自动化和自定义
       items:
         - name: 配置自定义设备设置

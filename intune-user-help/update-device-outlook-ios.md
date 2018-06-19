@@ -23,6 +23,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014497"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>需要更新 iOS 设备以安装 Outlook 应用
 

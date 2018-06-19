@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327698"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>将与 iOS 设备问题相关的错误发送给公司支持人员
 在 iOS 设备上使用公司门户应用有时会出现错误。 发生这种情况时，可以通过电子邮件将有关该错误的详细信息发送给公司的支持人员。 这些详细信息将提供为你解决该问题所需的上下文。

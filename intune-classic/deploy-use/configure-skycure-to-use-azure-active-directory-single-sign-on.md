@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015211"
 ---
 # <a name="configure-skycure-to-use-azure-active-directory-single-sign-on-sso"></a>配置 Skycure 以使用 Azure Active Directory 单一登录 (SSO)
 

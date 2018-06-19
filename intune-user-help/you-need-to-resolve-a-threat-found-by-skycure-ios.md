@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755056"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解决 Symantec Endpoint Protection Mobile 发现的威胁
 

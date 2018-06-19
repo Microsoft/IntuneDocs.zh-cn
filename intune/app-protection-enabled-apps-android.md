@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833011"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况 
 
@@ -69,10 +70,10 @@ Intune 支持将应用保护策略部署到每个设备的一个用户帐户。
 
 支持以下文件类型：
 
-* **音频：**AAC LC、HE-AACv1 (AAC+)、HE-AACv2（增强型 AAC+）、AAC ELD（增强型低延迟 AAC）、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Ogg Vorbis、PCM/WAVE。
-* **视频：**H.263、H.264 AVC、MPEG-4 SP、VP8。
-* **图像：**jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif，jpeg、pjpeg。
-* **文档：**PDF、PPDF
+* **音频：** AAC LC、HE-AACv1 (AAC+)、HE-AACv2（增强型 AAC+）、AAC ELD（增强型低延迟 AAC）、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Ogg Vorbis、PCM/WAVE。
+* **视频：** H.263、H.264 AVC、MPEG-4 SP、VP8。
+* **图像：** jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif，jpeg、pjpeg。
+* **文档：** PDF、PPDF
 
 ------------
 

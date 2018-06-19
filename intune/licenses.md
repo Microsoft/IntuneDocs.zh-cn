@@ -19,6 +19,7 @@ ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34216269"
 ---
 # <a name="licenses-that-include-intune"></a>包括 Intune 的许可证
 

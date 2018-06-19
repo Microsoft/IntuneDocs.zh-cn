@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021432"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>为运行 Intune 软件客户端的 Windows 电脑添加应用
 

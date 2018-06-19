@@ -19,6 +19,7 @@ ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/22/2018
+ms.locfileid: "30015253"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure 控制台上的 Intune 和旧 Intune PC 客户端
 

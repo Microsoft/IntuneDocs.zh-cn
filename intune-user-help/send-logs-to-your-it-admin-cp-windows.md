@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915488"
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>通过 Windows 10 的公司门户应用将日志发送给公司支持人员
 

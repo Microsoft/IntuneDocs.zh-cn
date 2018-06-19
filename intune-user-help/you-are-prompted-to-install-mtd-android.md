@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017880"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>在 Android 设备上安装移动威胁防御
 

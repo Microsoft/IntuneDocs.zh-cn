@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754988"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何通过加密保护 Android 设备
 

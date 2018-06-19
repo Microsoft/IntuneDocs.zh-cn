@@ -1,16 +1,16 @@
 ---
-title: "Check Point SandBlast MTD 与 Microsoft Intune"
-titlesuffix: 
-description: "了解如何将 Intune 与 Check Point SandBlast Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。"
-keywords: 
+title: Check Point SandBlast MTD 与 Microsoft Intune
+titlesuffix: ''
+description: 了解如何将 Intune 与 Check Point SandBlast Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29775999"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast 移动威胁防御连接器与 Intune
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926314"
 ---
 # <a name="phase-2-migration-campaign"></a>阶段 2：迁移活动
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018169"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 设备注册疑难解答
 如果你按照“[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)”中的步骤操作，但是仍无法访问工作或学校电子邮件和文件，请尝试以下故障排除步骤。

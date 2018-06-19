@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016061"
 ---
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中部署和监视设备法规遵从性策略
 

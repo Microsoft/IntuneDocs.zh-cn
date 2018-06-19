@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31032636"
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 简介
 

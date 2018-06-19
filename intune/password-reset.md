@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833211"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>通过自助密码重置削减支持人员成本
 

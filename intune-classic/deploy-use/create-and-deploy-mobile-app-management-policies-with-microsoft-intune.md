@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31026408"
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>使用 Microsoft Intune 创建和部署应用保护策略
 
@@ -138,11 +139,11 @@ ms.lasthandoff: 04/16/2018
    > <br></br>
 2. 在“允许或豁免应用”边栏选项卡上，单击“添加应用”。 你可以添加推荐的 Microsoft 应用、应用商店或桌面应用。
 
-    a.  **推荐的应用：**一份预先填写好的应用列表（主要为 Office 应用），便于管理员轻松导入策略。
+    a.  **推荐的应用：** 一份预先填写好的应用列表（主要为 Office 应用），便于管理员轻松导入策略。
 
-    b.  **应用商店应用：**管理员可以将 Windows 应用商店中的任何应用程序添加到策略。
+    b.  **应用商店应用：** 管理员可以将 Windows 应用商店中的任何应用程序添加到策略。
 
-    c.  **Windows 桌面应用：**管理员可以将任何传统 Windows 桌面应用添加到策略（例如，exe、dll 等）
+    c.  **Windows 桌面应用：** 管理员可以将任何传统 Windows 桌面应用添加到策略（例如，exe、dll 等）
 
 ## <a name="deploy-a-policy-to-users"></a>将策略部署到用户
 

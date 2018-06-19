@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31834272"
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
@@ -35,14 +36,14 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 
 可对运行在设备上的应用进行配置的应用保护策略包括：
 
-- **在 Microsoft Intune 中注册：**此类别中的设备通常是公司自有设备。
+- **在 Microsoft Intune 中注册：** 此类别中的设备通常是公司自有设备。
 
-- **在第三方移动设备管理 (MDM) 解决方案中注册：**该类别中的设备通常为公司自有设备。
+- **在第三方移动设备管理 (MDM) 解决方案中注册：** 该类别中的设备通常为公司自有设备。
 
   > [!NOTE]
   > 移动应用管理策略不应与第三方移动应用管理或安全容器解决方案一起使用。
 
-- **未在任何移动设备管理解决方案中注册：**该类别中的设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中托管或注册。
+- **未在任何移动设备管理解决方案中注册：** 该类别中的设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中托管或注册。
 
 > [!IMPORTANT]
 > 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 连接到本地 Exchange 或 SharePoint 服务的应用不支持应用保护策略。

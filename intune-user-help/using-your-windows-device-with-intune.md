@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017251"
 ---
 # <a name="using-your-windows-device-with-intune"></a>通过 Intune 使用 Windows 设备
 

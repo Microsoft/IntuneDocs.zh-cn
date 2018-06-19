@@ -21,6 +21,7 @@ ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33676624"
 ---
 # <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>从适用于 Windows 10 的公司门户应用锁定设备
 

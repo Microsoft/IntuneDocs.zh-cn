@@ -1,22 +1,23 @@
 ---
-title: "由 Microsoft Intune 托管的设备的注册选项"
-titleSuffix: 
-description: "管理员可以为 Microsoft Intune 托管的设备设置的注册选项列表。"
-keywords: 
+title: 由 Microsoft Intune 托管的设备的注册选项
+titleSuffix: ''
+description: 管理员可以为 Microsoft Intune 托管的设备设置的注册选项列表。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
 ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29748712"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>由 Intune 托管的设备的注册选项
 

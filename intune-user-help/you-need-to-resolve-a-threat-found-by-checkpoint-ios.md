@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755961"
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>用户需解除 SandBlast Mobile Protect 发现的威胁
 

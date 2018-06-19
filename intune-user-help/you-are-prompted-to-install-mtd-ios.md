@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755328"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>在 iOS 设备上安装移动威胁防御应用
 
