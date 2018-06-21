@@ -135,6 +135,7 @@
 ### [如果重置设备会发生什么情况？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-windows.md)
 ### [手动同步设备](sync-your-device-manually-windows.md)
+### [从 Windows 10 设备远程锁定设备](remote-lock-your-device-cp-app.md) 
 
 ### [修复 Windows 的常见问题](troubleshoot-your-device-windows.md)
 ### [解决访问点限制](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [我需要启用 UAC](you-need-to-enable-uac-windows.md)
 #### [我需要更新 Windows](you-need-to-update-os-build-version-windows.md)
 #### [我需要打开 Windows Defender](turn-on-defender-windows.md)
-## [从适用于 Windows 的公司门户应远程锁定设备](remote-lock-your-device-cp-app.md) 
+
 ## [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
 ### [远程锁定设备](remote-lock-your-device-cpwebsite.md)
 ### [重命名设备](rename-your-device-cpwebsite.md)
