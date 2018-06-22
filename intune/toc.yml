@@ -578,56 +578,40 @@
     - name: 管理软件更新
       href: windows-update-for-business-configure.md
     - name: 使用软件代理管理电脑
-      href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
-      maintainContext: true
+      href: manage-windows-pcs-with-microsoft-intune.md
       items:
         - name: 比较电脑管理
-          href: /intune-classic/deploy-use/pc-management-comparison
-          maintainContext: true
+          href: pc-management-comparison.md
         - name: 安装电脑客户端
-          href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune
-          maintainContext: true
+          href: install-the-windows-pc-client-with-microsoft-intune.md
         - name: 常见电脑管理任务
-          href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client
-          maintainContext: true
+          href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
           items:
             - name: 电脑策略
-              href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management
-              maintainContext: true
+              href: use-policies-to-simplify-windows-pc-management.md
             - name: 查看库存
-              href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune
-              maintainContext: true
+              href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
             - name: 停用电脑
-              href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune
-              maintainContext: true
+              href: retire-a-windows-pc-with-microsoft-intune.md
             - name: 关联电脑与用户
-              href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune
-              maintainContext: true
+              href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
             - name: 远程协助
-              href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
-              maintainContext: true
+              href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
         - name: 保护 Windows 电脑的策略
-          href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
-          maintainContext: true
+          href: policies-to-protect-windows-pcs-in-microsoft-intune.md
           items:
             - name: 软件更新
-              href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
-              maintainContext: true
+              href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
             - name: Windows 防火墙
-              href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
-              maintainContext: true
+              href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
             - name: Endpoint Protection
-              href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
-              maintainContext: true
+              href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
         - name: 为 Intune 客户端电脑添加应用
-          href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune
-          maintainContext: true
+          href: add-apps-for-windows-pcs-in-microsoft-intune.md
         - name: 管理许可协议
-          href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune
-          maintainContext: true
+          href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
         - name: 解决策略冲突
-          href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
-          maintainContext: true
+          href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
     - name: 管理 Windows Holographic
       href: windows-holographic-for-business.md
       items:
