@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca19c189a48e8173232cfe6fde9e33eb6fb1090
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762223"
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司门户网站
 [公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)是一个网页，最终用户可将其用于管理已在 Intune 中注册的计算机和设备。
@@ -37,8 +38,6 @@ ms.lasthandoff: 04/16/2018
 -   [重置设备密码](reset-your-passcode-cpwebsite.md)
 
 -   [远程锁定设备](remote-lock-your-device-cpwebsite.md)
-
--   [手动同步设备，以便更快地安装应用](sync-your-device-manually-cpwebsite.md)
 
 -   找到公司支持人员的联系信息（如果已配置）
 

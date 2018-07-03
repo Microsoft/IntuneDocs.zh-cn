@@ -14,12 +14,12 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e479ae9e3cd2caf6b893cb75f9af8fde2340f0c
+ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023030"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37133980"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况
 
@@ -72,9 +72,9 @@ Android 设备上与应用保护策略关联的所有应用都需要公司门户
 * **文档：** PDF、PPDF
 
 
-|**pfile**|**文本**|
-|----|----|
-|Pfile 是一种用于受保护文件的通用“包装”格式，它可封装加密内容和 Azure 信息保护许可证。 它可以用于保护任何文件类型。|即使是在受保护的情况下，也可在应用中打开文本文件（包括 XML 和 CSV 等）进行查看。 文件类型：.txt、.ptxt、.csv、.pcsv、.log、.plog、.xml、.pxml。|
+|**pfile**|
+|----|
+|Pfile 是一种用于受保护文件的通用“包装”格式，它可封装加密内容和 Azure 信息保护许可证。 它可以用于保护任何文件类型。|
 
 ## <a name="next-steps"></a>后续步骤
 [iOS 应用由应用保护策略托管时会出现的情况](end-user-mam-apps-ios.md)

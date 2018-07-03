@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09b94ad2109c41ad02e8da7267690c31ba296bae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 183acfc36e77aab85fa086452e00561c521dd830
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34475602"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>开启 iOS 监督模式
 
@@ -33,7 +34,7 @@ Apple iOS 监督模式为管理员提供更多用于管理 Apple 设备的选择
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>在注册过程中启用监督模式
 
-在 Intune 中，如果已[在 DEP 中创建 Apple 注册配置文件](https://docs.microsoft.com/en-us/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile)，则可为设备启用监督模式。 在“设备管理设置”下，勾选“监督”框。
+在 Intune 中，如果已[在 DEP 中创建 Apple 注册配置文件](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile)，则可为设备启用监督模式。 在“设备管理设置”下，勾选“监督”框。
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>在注册后启用监督模式
 
@@ -43,7 +44,7 @@ Apple iOS 监督模式为管理员提供更多用于管理 Apple 设备的选择
 
 若要确定设备是否受监督，可检查锁定屏幕或“关于”页：
 - 在设备锁定屏幕上，会显示“此 iPhone 由“公司名称”管理”。
-- 在设备的“关于”页上，会显示“此 iPhone 受监督。公司名可监视你的 Internet 流量并找到此设备”。
+- 在设备的“关于”页上，会显示“此 iPhone 受监督。公司名可监视你的 Internet 流量并找到此设备”。**
 
 ## <a name="next-steps"></a>后续步骤
 

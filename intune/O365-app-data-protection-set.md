@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 05/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,11 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 242ee454ec42c54bb9437fbdf0a7efeca926d193
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e6a89f7eb8520d43e38cba34c9ac7a01fd653a85
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34562120"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>你的用户将如何在 Microsoft Intune 中的托管 Office 365 应用上体验基本保护
 
@@ -93,8 +94,8 @@ ms.lasthandoff: 04/16/2018
 | **描述**|由“管理 Office 365 应用”向导创建| |
 | |  | |
 | **设置名称** |**iOS 策略值** | **Android 策略值** |
-|阻止 iTunes 和 iCloud 备份| 否 | N/A |
-|阻止 Android 备份 |N/A | 否|
+|阻止 iTunes 和 iCloud 备份| 否 | 不适用 |
+|阻止 Android 备份 |不适用 | 否|
 |允许应用向其他应用传送数据 | 所有应用 | 所有应用|
 |允许应用从其他应用接收数据| 所有应用 | 所有应用|
 |防止“另存为” | 否 | 否|
@@ -104,16 +105,16 @@ ms.lasthandoff: 04/16/2018
 |禁用联系人同步 | 否| 否|
 |禁用打印 | 否 | 否|
 |访问需要 PIN | 否 | 是|
-|重置 PIN 前的尝试次数 | N/A |5|
-|允许使用简单 PIN | N/A |是|
-|PIN 长度 | N/A | 4|
-|允许使用指纹而不是 PIN | N/A | 是 |
+|重置 PIN 前的尝试次数 | 不适用 |5|
+|允许使用简单 PIN | 不适用 |是|
+|PIN 长度 | 不适用 | 4|
+|允许使用指纹而不是 PIN | 不适用 | 是 |
 |访问需要公司凭据 | 否 | 否|
 |阻止在已越狱或取得 root 权限的设备上运行托管应用 | 否 | 否|
 |在一定时间后重新检查访问要求（分钟）- 超时 | 30 | 30|
 |在一定时间后重新检查访问要求（分钟）- 脱机宽限期 | 720 |720|
 |擦除应用数据之前的脱机间隔时间（天） | 90 | 90|
-|阻止屏幕捕获（仅限于 Android 设备） | N/A | 否 |
+|阻止屏幕捕获（仅限于 Android 设备） | 不适用 | 否 |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>为什么只为 Android 设备配置了应用 PIN 策略？
 加密在 iOS 和 Android 上的工作方式不同。

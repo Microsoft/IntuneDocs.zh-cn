@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f08dde25de5962eaaa11487a367b2895c6c047d4
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 61df998dae611eb7350fa144260780b5589afc61
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762240"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -65,10 +66,10 @@ ms.lasthandoff: 05/07/2018
 4. 在“移动应用”边栏选项卡上，选择“应用保护策略”。
 5. 选择“添加策略”以显示“添加一个策略”边栏选项卡。
 6. 添加下列值：
-    - **名称：**键入新策略的名称（必填）。
+    - **名称：** 键入新策略的名称（必填）。
     - **说明：**（可选）键入说明。
-    - **平台：**选择“Windows 10”作为应用保护策略的支持平台。
-    - **注册状态：**选择“不注册”作为策略的注册状态。
+    - **平台：** 选择“Windows 10”作为应用保护策略的支持平台。
+    - **注册状态：** 选择“不注册”作为策略的注册状态。
 7.  选择“创建”。 创建策略并在“应用保护策略”边栏选项卡的表中显示该策略。
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>将推荐的应用添加到受保护的应用列表中

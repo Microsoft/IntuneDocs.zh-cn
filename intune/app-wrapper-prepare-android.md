@@ -14,11 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d27648d4d5033f2c2e849b31d19403600692b4f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "35679438"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -124,9 +125,7 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>重复使用签名证书和包装应用
 Android 要求所有应用都必须由有效证书进行签名才能安装在 Android 设备上。
 
-包装的应用可以作为包装过程的一部分进行签名，也可以使用现有的签名工具包装后进行签名（包装前应用中的任何签名信息都会被丢弃）。
- 
-如果可能，应在包装期间使用已在生成过程中使用的签名信息。 在某些组织中，这需要与拥有密钥存储信息的相关人员（即应用生成团队）合作。 
+包装的应用可以作为包装过程的一部分进行签名，也可以使用现有的签名工具包装后进行签名（包装前应用中的任何签名信息都会被丢弃）。 如果可能，应在包装期间使用已在生成过程中使用的签名信息。 在某些组织中，这需要与拥有密钥存储信息的相关人员（即应用生成团队）合作。 
 
 如果无法使用以前的签名证书，或之前未部署应用，则可以按照 [Android 开发人员指南](https://developer.android.com/studio/publish/app-signing.html#signing-manually)中的说明创建新的签名证书。
 
