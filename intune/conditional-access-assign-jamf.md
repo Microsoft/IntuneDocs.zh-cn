@@ -1,25 +1,26 @@
 ---
-title: "Jamf 设备的设备符合性策略"
+title: Jamf 设备的设备符合性策略
 titlesuffix: Microsoft Intune
-description: "通过将 Microsoft Intune 符合性策略与 Azure Active Directory 条件访问相结合，可确保由 Jamf 管理的设备的安全。"
-keywords: 
+description: 通过将 Microsoft Intune 符合性策略与 Azure Active Directory 条件访问相结合，可确保由 Jamf 管理的设备的安全。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482329"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上强制实现符合性
 
@@ -34,6 +35,9 @@ ms.lasthandoff: 03/08/2018
 
 1. 打开 Microsoft Azure，然后导航到“Intune” > “设备符合性” > “策略”。 可以为 macOS 创建策略，其中包括对不符合要求的用户和组选择一系列的操作（例如，发送警告电子邮件）。
 2. 搜索所需的组，然后向其应用策略。
+
+> [!Note]
+> Intune 要求全磁盘加密，以符合要求。
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>在 Jamf Pro 中部署适用于 macOS 的公司门户应用
 
@@ -50,7 +54,7 @@ ms.lasthandoff: 03/08/2018
 7. 单击“添加”以选择公司门户应用中的程序包。
 8. 选择“操作”弹出菜单中的“安装”。
 9. 配置程序包的设置。
-10. 单击“作用域”选项卡以指定应在哪些计算机上安装公司门户应用。 单击 **“保存”**。 下次，当计算机上出现所选的触发器并符合“常规”负载中的条件时，策略将运行作用域内的设备。
+10. 单击“作用域”选项卡以指定应在哪些计算机上安装公司门户应用。 单击“保存” 。 下次，当计算机上出现所选的触发器并符合“常规”负载中的条件时，策略将运行作用域内的设备。
 
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>在 Jamf Pro 中创建策略，让用户在 Azure Active Directory 中注册其设备
 
@@ -65,7 +69,7 @@ ms.lasthandoff: 03/08/2018
 1. 在 Jamf Pro 中，导航到“计算机” > “策略”，然后为设备注册创建新策略。
 2. 配置“Microsoft Intune 集成”有效负载，其中包括触发器和执行频率。
 3. 单击“作用域”选项卡，并将策略的作用域设置为所有目标设备。
-4. 单击“自助服务”选项卡以将策略应用到 Jamf 自助服务中。 将策略添加到“设备符合性”类别中。 单击 **“保存”**。
+4. 单击“自助服务”选项卡以将策略应用到 Jamf 自助服务中。 将策略添加到“设备符合性”类别中。 单击“保存” 。
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>从 Intune 删除 Jamf 托管设备
 
