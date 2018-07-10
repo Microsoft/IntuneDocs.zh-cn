@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744578"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844974"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -56,7 +56,7 @@ ms.locfileid: "34744578"
 |**电话号码** | 20 | 此联系人号码会显示在“联系 IT”页上，以便员工与你联系以获得支持。 |
 |**电子邮件地址**| 40 | 此联系人地址显示在“联系 IT”页上。 必须以 `alias@domainname.com` 格式输入有效的电子邮件地址。 |
 |**网站名称**| 40 | 此名称是为支持网站的 URL 显示的友好名称。 如果指定支持网站 URL 而不指定友好名称，则公司门户中的“联系 IT 部门”页上将显示“转到 IT 网站”。 |
-|**网站 URL**| 150 | 如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 https://www.contoso.com格式。 如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。 |
+|**网站 URL**| 150 | 如果你拥有希望用户可以使用的支持网站，请在此处指定 URL。 该 URL 必须采用 `https://www.contoso.com` 格式。 如果不指定 URL，则公司门户中的“联系 IT”页上将不会显示支持网站的任何内容。 |
 | **其他信息**| 120 | 显示在“联系 IT”页上。 |
 
 

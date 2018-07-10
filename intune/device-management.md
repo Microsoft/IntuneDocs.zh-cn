@@ -37,7 +37,7 @@ ms.locfileid: "31836921"
    - “概述”显示已注册设备的可视化快照，并显示正在使用不同平台（Android、iOS 等）的设备数量。
    - “所有设备”显示你管理的已注册设备的列表。
 
-     使用“导出”功能，以 10,000 (Internet Explorer) 或 30,000（Edge、Chrome）为增量创建一个包含所有设备的 .csv 列表。
+     使用“导出”功能，以 10,000 (Internet Explorer) 或 30,000（Microsoft Edge、Chrome）为增量创建一个包含所有设备的 .csv 列表。
 
      选择任意设备以[查看有关该设备的详细信息](device-inventory.md)，包括硬件详细信息、已安装应用以及其符合性策略的状态等。
 
