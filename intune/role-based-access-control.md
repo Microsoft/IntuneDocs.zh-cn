@@ -2,10 +2,10 @@
 title: 基于角色的访问控制 (RBAC) 与 Microsoft Intune
 description: 了解基于角色的访问控制 (RBAC) 如何使你能够控制可在 Microsoft Intune 中执行各种操作并进行更改的人员。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474558"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>基于角色的管理控制 (RBAC) 与 Microsoft Intune
 
@@ -26,7 +27,7 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 - **角色定义**：角色名称、其管理的资源和授予每个资源的权限。
 - **成员**：获得授权的用户组。
-- **作用域**：其成员能作为应用或策略的部署目标或执行远程任务的用户或设备组。
+- **范围**：成员可以管理的用户组或设备组。
 - **作用域**：配置定义、成员和作用域后，将分配角色。
 
 ![Intune RBAC 示例](./media/intune-rbac-1.PNG)
@@ -59,7 +60,8 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 - 技术支持人员：对用户和设备执行远程任务，并可以将应用程序或策略分配给用户或设备。
 - 策略和配置文件管理员：管理符合性策略、配置的配置文件、Apple 注册和企业设备标识符。
 - 只读操作员：查看用户、设备、注册、配置和应用程序信息。 不能对 Intune 进行更改。
-- **应用程序管理员**：管理移动和托管应用程序，并可以读取设备信息。
+- **应用程序管理员**：管理移动和托管应用程序，可读取设备信息和查看设备配置文件。
+- **Intune 角色管理员**：管理自定义 Intune 角色和添加内置 Intune 角色分配。 这是唯一可向管理员分配权限的 Intune 角色。
 - **学校管理员**：在 [Intune for Education](introduction-intune-education.md) 中管理 Windows 10 设备并且可以执行以下操作： 
 
 |权限|操作|
@@ -78,18 +80,20 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格上，选择“Intune 角色”，然后选择“所有角色”。
-4. 在“Intune 角色 - 所有角色”窗格上，选择要分配的内置角色。
+1. 在“Intune 角色 - 所有角色”窗格上，选择要分配的内置角色。
 
-5. 在<角色名称> -“概述”窗格上，选择“作业” > “分配”。
+2. 在<角色名称> -“概述”窗格上，依次选择“管理”、“分配”。
 
     > [!NOTE]
     > 无法删除或编辑内置角色
 
-6. 在“角色分配”窗格上，输入“分配名称”和可选“分配说明”，然后选择以下各项：
+3. 在“自定义角色”窗格上，选择“分配”。
+
+4. 在“角色分配”窗格上，输入分配的“名称”和可选“说明”，然后选择以下各项：
     - **成员** - 选择包含想要对其授予权限的用户的组。
-    - **作用域** - 选择包含上述成员将有权管理的用户的组。 也可选择将作用域设置为“所有用户”、“所有设备”或“所有用户和设备”。
+    - **作用域** - 选择包含上述成员将有权管理的用户的组。
 <br></br>
-7. 完成后，请单击“确定”。 新分配将显示在分配列表中。
+5. 完成后，请单击“确定”。 新分配将显示在分配列表中。
 
 ### <a name="intune-rbac-table"></a>Intune RBAC 表
 
@@ -126,13 +130,13 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 1. 在“Intune 角色 - 所有角色”窗格上，选择要分配的自定义角色。
 
-2. 在<角色名称> -“概述”窗格上，选择“分配”。 在此窗格上，还可以编辑或删除现有角色。
+2. 在<角色名称> -“概述”窗格上，依次选择“管理”、“分配”。 在此窗格上，还可以编辑或删除现有角色。
 
 3. 在“自定义角色”窗格上，选择“分配”。
 
 4. 在“角色分配”窗格上，输入分配的“名称”和可选“说明”，然后选择以下各项：
     - **成员** - 选择包含想要对其授予权限的用户的组。
-    - **作用域** - 选择包含上述成员将有权管理的用户的组。 也可选择将作用域设置为“所有用户”、“所有设备”或“所有用户和设备”。
+    - **作用域** - 选择包含上述成员将有权管理的用户的组。
 <br></br>
 5. 完成后，请单击“确定”。 新分配将显示在分配列表中。
 
@@ -143,5 +147,3 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 ## <a name="see-also"></a>另请参阅
 
 [使用 Azure AD 的分配角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
-
-

@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291438"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>在 Microsoft Intune 中为运行 Windows Phone 8.1 的设备配置 VPN 设置
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/26/2018
 - **角色**（仅限 Pulse Secure）- 指定有权访问此连接的用户角色的名称。 用户角色用于定义个人设置和选项，并启用或禁用某些访问功能。
 - **领域**（仅限 Pulse Secure）- 指定想要使用的身份验证领域的名称。 身份验证领域是“Pulse Secure”连接类型使用的身份验证资源的分组。
 
-- “DNS 后缀搜索列表” - “添加”一个或多个 DNS 后缀。 通过使用短名称连接到网站时，会搜索你指定的每个 DNS 后缀。 例如，指定 DNS 后缀“domain1.contoso.com”和“domain2.contoso.com”后，访问 URL http://mywebsite 时，会搜索 URL http://mywebsite.domain1.contoso.com 和 http://mywebsite.domain2.contoso.com。
+- “DNS 后缀搜索列表” - “添加”一个或多个 DNS 后缀。 通过使用短名称连接到网站时，会搜索你指定的每个 DNS 后缀。 例如，指定 DNS 后缀“domain1.contoso.com”和“domain2.contoso.com”并访问 URL `http://mywebsite` 后，将会搜索 URL `http://mywebsite.domain1.contoso.com` 和 `http://mywebsite.domain2.contoso.com`。
 
 - **自定义 XML** - 指定配置 VPN 连接的任何自定义 XML 命令。
 

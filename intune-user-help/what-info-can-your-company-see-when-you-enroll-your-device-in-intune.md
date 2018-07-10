@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 7e722195ce1b1b34a65cd8e936ad8a702f145691
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308868"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232800"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>在我注册自己的设备时，我的公司可以看到哪些信息？
 
-将设备注册到管理计划中，即授权允许公司查看设备上的特定信息，以帮助保护设备上的公司数据。
+向 Microsoft Intune 注册设备时，公司看不到你的个人信息。 注册设备时，将为公司授予查看设备上特定信息的权限，如设备型号和序列号。 公司可使用此信息来帮助保护设备上的公司数据。
 
-**公司永远无法看到的信息**
+**公司永远无法看到的信息：**
 
 - 调用和 Web 浏览历史记录
 - 电子邮件和短信
@@ -36,7 +36,7 @@ ms.locfileid: "34308868"
 -   密码
 - 图片，包括照片应用中的照片或本机照片
 
-**公司始终可以看到的信息**
+**公司始终可以看到的信息：**
 
 - 设备型号（如 Google Pixel）
 - 制造商（如 Microsoft）
@@ -46,7 +46,7 @@ ms.locfileid: "34308868"
 - 设备名称
 - 序列号
 
-**公司可能会看到的信息**
+**公司可能会看到的信息：**
 
 -  电话号码：对于公司拥有的设备，公司可以看到完整的电话号码。 对于个人拥有的设备，公司只能看到电话号码的最后四位数字。 可以打开相应设备的“设备详细信息”页，确定每个设备的“所有权类型”。
 -  位置：公司永远无法看到设备的位置，除非 iOS 设备受监管且已丢失。 [如何判断？](https://go.microsoft.com/fwlink/?linkid=853816)

@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d840bf62682621e4ec3848538a96066c0fd228fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
+ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046258"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123395"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>什么是 Mobile Threat Defense 与 Intune 的集成？
 
@@ -41,10 +41,12 @@ ms.locfileid: "32046258"
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune 收集哪些数据用于移动威胁防御？
 
-Intune 从个人和公司所有的设备收集应用清单信息，这些信息可供移动威胁防御 (MTD) 提取，例如 Lookout for Work。 可通过 iOS 11+ 设备的用户收集应用清单。
+启用后，Intune 将从个人和公司拥有的设备收集应用清单信息，这些信息可供移动威胁防御 (MTD) 提供程序提取，例如 Lookout for Work。 可通过 iOS 设备的用户收集应用清单。
+
+此服务为选择性加入；默认情况下不会共享任何应用清单信息。 Intune 管理员必须在服务设置中为 iOS 设备启用“应用同步”，然后才能共享应用清单信息。
 
 **应用清单**  
-清单（来自公司所有的 iOS 11+ 和个人所有的设备）将发送给 MTD 服务提供程序。 应用清单中的数据包括：
+如果为 iOS 设备启用“应用同步”，来自公司和个人拥有的 iOS 设备的清单将发送给 MTD 服务提供程序。 应用清单中的数据包括：
 
  - 应用 ID
  - 应用版本
@@ -76,3 +78,4 @@ Intune 从个人和公司所有的设备收集应用清单信息，这些信息�
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)

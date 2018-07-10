@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 05/29/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f00cc8c2deb2134e9bedb6870cbe053050d4f290
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
+ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744918"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36882522"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "34744918"
 
 | Setting | 如何使用 | 默认值 |
 |------|------|------|
-| **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 无论在联机或脱机情况下工作，PIN 始终有效。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> **注意：** 配置密码类型要求应用具有 Intune SDK 版本 7.1.12 或更高版本。 数值类型没有任何 Intune SDK 版本限制。 允许的特殊字符包括 iOS 英语键盘上的特殊字符和符号。 默认值 = 数值。</li><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 此策略设置格式支持正整数。 默认值 = **5**。</li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>注意：如果配置了密码类型 PIN，且允许简单 PIN 设置为“是”，则用户在其 PIN 中需要至少 1 个字母或至少 1 个特殊字符。 如果配置了密码类型 PIN，且允许简单 PIN 设置为“否”，则用户在其 PIN 中需要至少 1 个数字和 1 个字母以及至少 1 个特殊字符。 默认值 = **是**。 </li><li>**PIN 长度**：指定 PIN 序列必须包含的最小位数。<br><br>注意：在某些 iOS 设备上，当配置了长度大于 6 的 PIN 时，用户将在 UI 上看到文本输入字段，但仍需输入“选择类型”设置确定的 PIN 类型。 默认值 = **4**。 </li><li> **允许指纹而非 PIN (iOS 8.0+)**：选择“是”，允许用户使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 进行应用访问。 默认值 = **是**。</li><li> **允许使用面部识别替代 PIN (iOS 11+)**：选择“是”，允许用户使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 使用应用。 默认值 = **是**。 用户使用其工作帐户访问应用时，系统会提示提供面部标识。</li><li> **管理设备 PIN 时禁用应用 PIN**：在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 默认值 = **否**。</li></ul> 在 iOS 设备上，可让用户使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109) 而非 PIN 来证明其身份。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 对使用 Touch ID 和 Face ID 的用户进行身份验证。 若要了解有关 Touch ID 和 Face ID 的详细信息，请参阅 [iOS 安全指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识或面部标识，而不是输入 PIN。 启用此设置时，如果使用工作或学校帐户，应用切换器的预览图像将模糊显示。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 需要 PIN 才能进行访问：是 <br><br> 选择类型：数值 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 <br><br> 允许面部识别：是 <br><br> 禁用应用 Pin：否 |
+| **需要 PIN 才能进行访问** | 选择“是”，需要 PIN 才可使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 无论在联机或脱机情况下工作，PIN 始终有效。 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> **注意：** 配置密码类型要求应用具有 Intune SDK 版本 7.1.12 或更高版本。 数值类型没有任何 Intune SDK 版本限制。 允许的特殊字符包括 iOS 英语键盘上的特殊字符和符号。 默认值 = 数值。<br><br></li><li>**PIN 重置前的尝试次数**：指定用户重置其 PIN 码前必须成功完成输入的尝试次数。 此策略设置格式支持正整数。 默认值 = **5**。<br><br></li><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>注意：如果配置了密码类型 PIN，且允许简单 PIN 设置为“是”，则用户在其 PIN 中需要至少 1 个字母或至少 1 个特殊字符。 如果配置了密码类型 PIN，且允许简单 PIN 设置为“否”，则用户在其 PIN 中需要至少 1 个数字和 1 个字母以及至少 1 个特殊字符。 默认值 = **是**。 <br><br></li><li>**PIN 长度**：指定 PIN 序列必须包含的最小位数。<br><br>注意：在某些 iOS 设备上，当配置了长度大于 6 的 PIN 时，用户将在 UI 上看到文本输入字段，但仍需输入“选择类型”设置确定的 PIN 类型。 默认值 = **4**。 <br><br></li><li> **允许指纹而非 PIN (iOS 8.0+)**：选择“是”，允许用户使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 进行应用访问。 默认值 = **是**。<br><br></li><li> **允许使用面部识别替代 PIN (iOS 11+)**：选择“是”，允许用户使用 [Face ID](https://support.apple.com/HT208109) 而非 PIN 使用应用。 <br><br>**注意：** 配置面部识别要求应用具有 Intune SDK 版本 7.1.19 或更高版本。 默认值 = **是**。 用户使用其工作帐户访问应用时，系统会提示提供面部标识。<br><br></li><li> **管理设备 PIN 时禁用应用 PIN**：在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 默认值 = **否**。</li></ul> 在 iOS 设备上，可让用户使用 [Touch ID](https://support.apple.com/HT201371) 或 [Face ID](https://support.apple.com/HT208109) 而非 PIN 来证明其身份。 Intune 使用 [LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API 对使用 Touch ID 和 Face ID 的用户进行身份验证。 若要了解有关 Touch ID 和 Face ID 的详细信息，请参阅 [iOS 安全指南](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)。 用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识或面部标识，而不是输入 PIN。 启用此设置时，如果使用工作或学校帐户，应用切换器的预览图像将模糊显示。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| 需要 PIN 才能进行访问：是 <br><br> 选择类型：数值 <br><br> PIN 重置尝试次数：5 <br><br> 允许使用简单 PIN：是 <br><br> PIN 长度：4 <br><br> 允许使用指纹：是 <br><br> 允许面部识别：是 <br><br> 禁用应用 PIN：否 |
 | **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 如果将此设置为“是”，并且 PIN 或生物识别提示已打开，则会显示公司凭据以及 PIN 或生物识别提示。 | 否 |
 | **阻止在已越狱或取得 root 权限的设备上运行托管应用** |  选择“是”，阻止在已越狱或取得 root 权限的设备上运行此应用。 用户仍能够将此应用用于个人任务，但必须使用其他设备访问此应用中的工作或学校数据。 | 是 |
 | **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，如果管理员在策略中启用 PIN，并阻止取得 root 权限的设备，则用户打开 Intune 托管的应用时，必须输入 PIN，且必须在未取得 root 权限的设备上使用应用。 使用此设置时，用户在 30 分钟（默认值）内无需在任何 Intune 托管应用上再次输入 PIN 或执行 root 检测检查。  <br><br>**注意：** 在 iOS 上，同一发布者的所有 Intune 托管应用均共享此 PIN。 应用离开设备主屏幕后，就会重置特定 PIN 的 PIN 计时器。 在此设置定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入该 PIN。 此策略设置格式支持正整数。<br><br></li><li>脱机宽限期：指 MAM 应用可以脱机运行的分钟数。 指定重新检查应用访问要求之前的时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。 此期限到期后，该应用需要对 Azure Active Directory (Azure AD) 进行用户身份验证，以便该应用可以继续运行，但仅当“需要公司凭据”设置为“是”时才可以继续运行。 此策略设置格式支持正整数。</li></ul>| 超时：30 <br><br> 脱机：720 |
@@ -83,9 +83,9 @@ Outlook 最近为 Outlook for iOS 引入了加载项，让你可将热门应用�
 
 如果要阻止最终用户访问和安装 Outlook 加载项（这会影响所有 Outlook 客户端），请确保在 Exchange 管理中心中对角色进行以下更改：
 
-- 若要防止用户安装 Office 应用商店加载项，请从中删除“我的应用商店”角色。
+- 若要防止用户安装 Office 应用商店加载项，请从中删除“我的市场”角色。
 - 若要防止用户侧向加载加载项，请从中删除“我的自定义应用”角色。
-- 若要防止用户安装所有加载项，请从中删除“我的自定义应用”和“我的应用商店”角色。
+- 若要防止用户安装所有加载项，请从中删除“我的自定义应用”和“我的市场”角色。
 
 这些说明适用于跨 Web、Windows、Mac 和移动版 Outlook 的 Office 365、Exchange 2016、Exchange 2013。
 

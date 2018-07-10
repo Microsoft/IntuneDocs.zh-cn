@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
+ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745020"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36297899"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -36,12 +36,16 @@ ms.locfileid: "34745020"
 - **NDES 服务器**：在运行 Windows Server 2012 R2 或更高版本的服务器上，必须设置网络设备注册服务 (NDES)。 如果在服务器上运行了企业 CA，则同时在该服务器上运行的 Intune 将不支持使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管网络设备注册服务的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。
 NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同一服务器上。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅[结合使用策略模块和网络设备注册服务](https://technet.microsoft.com/library/dn473016.aspx)。
 
-- **Microsoft Intune 证书连接器**：使用 Azure 门户下载“证书连接器”安装程序 (ndesconnectorssetup.exe)。 然后可以在你想在其上安装证书连接器的承载了网络设备注册服务 (NDES) 角色的服务器上运行 ndesconnectorssetup.exe。 
+- **Microsoft Intune 证书连接器**：使用 Azure 门户下载“证书连接器”安装程序 (NDESConnectorSetup.exe)。 然后可以在你想在其上安装证书连接器的托管了网络设备注册服务 (NDES) 角色的服务器上运行 NDESConnectorSetup.exe。
+
+  - NDES 证书连接器还支持美国联邦信息处理标准 (FIPS) 模式。 FIPS 不是必需的，但启用 FIPS 时可颁发和吊销证书。
+
 - **Web 应用程序代理服务器**（可选）：使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器。 该配置：
-  -  允许设备使用 Internet 连接接收证书。
-  -  是设备通过 Internet 连接接收和续订证书时的安全建议。
+  - 允许设备使用 Internet 连接接收证书。
+  - 是设备通过 Internet 连接接收和续订证书时的安全建议。
 
 #### <a name="additional"></a>Additional
+
 - 承载 WAP 的服务器[必须安装此更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](http://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](http://support.microsoft.com/kb/3011135)。
 - WAP 服务器必须具有与将要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
 
@@ -71,17 +75,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 |**NDES 服务帐户**|输入用作 NDES 服务帐户的域用户帐户。|
 
 ## <a name="configure-your-infrastructure"></a>配置你的基础结构
-配置证书配置文件前，请完成以下任务。 完成这些任务需要 Windows Server 2012 R2 和 Active Directory 证书服务 (ADCS) 方面的知识：
-
-**步骤 1**：创建 NDES 服务帐户
-
-**步骤 2**：配置证书颁发机构上的证书模板
-
-**步骤 3**：在 NDES 服务器上配置必备组件
-
-**步骤 4**：配置 NDES 以与 Intune 一起使用
-
-**步骤 5**：启用、安装和配置 Intune 证书连接器
+配置证书配置文件前，请完成以下步骤。 必须具备 Windows Server 2012 R2 及以上版本和 Active Directory 证书服务 (ADCS) 方面的知识，才能执行下面这些步骤：
 
 #### <a name="step-1---create-an-ndes-service-account"></a>步骤 1 - 创建 NDES 服务帐户
 
@@ -226,7 +220,6 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534（十进制） |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534（十进制） |
 
-
 4. 在 IIS 管理器中，选择“默认网站” > “请求筛选” > “编辑功能设置”。 将“URL 最大长度”和“最大查询字符串”更改为“65534”，如下所示：
 
     ![IIS 的最大 URL 长度和最大查询长度](./media/SCEP_IIS_max_URL.png)
@@ -291,13 +284,17 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 - 在承载环境中的网络设备注册服务 (NDES) 角色的服务器上下载、安装和配置证书连接器。 为提高组织中 NDES 实现的缩放性，可安装多个 NDES 服务器，并让每个 NDES 服务器都具有一个 Microsoft Intune 证书连接器。
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>下载、安装和配置证书连接器
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 3. 选择“设备配置”，然后选择“证书颁发机构”。
 4. 选择“添加”和“下载连接器文件”。 将下载的文件保存到可以从服务器上进行访问的位置，将在该服务器上安装该应用程序。
-5. 下载完成后，在承载网络设备注册服务 (NDES) 角色的服务器上运行下载的安装程序 (ndesconnectorssetup.exe)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 （CRP Web 服务 CertificateRegistrationSvc 运行为 IIS 中的应用程序）
+5. 下载完成后，请转到托管网络设备注册服务 (NDES) 角色的服务器。 然后：
+
+    1. 确保已安装 .NET 4.5 Framework，因为它是 NDES 证书连接器的必需项。 Windows Server 2012 R2 和更高版本中自动包含 .NET 4.5 Framework。
+    2. 运行安装程序 (NDESConnectorSetup.exe)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 CRP Web 服务 CertificateRegistrationSvc 作为 IIS 中的应用程序运行。
 
     > [!NOTE]
     > 如果为独立 Intune 安装 NDES，则 CRP 服务会自动随证书连接器一起安装。 如果将 Intune 与 Configuration Manager 配合使用，请以单独的站点系统角色安装证书注册点。
@@ -305,7 +302,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 6. 提示输入证书连接器的客户端证书时，选取“选择”，然后选择任务 3 中在你的 NDES 服务器上安装的“客户端身份验证”证书。
 
     选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书” 处。 尽管所选证书不会显示，但可以单击“下一步”查看该证书的属性。 然后依次选择“下一步”和“安装”。
-    
+
     > [!IMPORTANT]
     > 无法在启用了 Internet Explorer 增强型安全配置的设备上注册 Intune 证书连接器。 若要使用 Intune 证书连接器，请[禁用 IE 增强型安全配置](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
 
@@ -335,10 +332,13 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> NDES 证书连接器中包含 TLS 1.2 支持。 因此，如果已安装 NDES 证书连接器的服务器支持 TLS 1.2，则使用 TLS 1.2。 如果服务器不支持 TLS 1.2，则使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。
+
 ## <a name="create-a-scep-certificate-profile"></a>创建 SCEP 证书配置文件
 
 1. 在 Azure 门户中，打开 Microsoft Intune。
-2. 依次选择“设备配置”、“配置文件”和“创建配置文件”。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”。
 3. 为 SCEP 证书配置文件输入“名称”和“说明”。
 4. 从“平台”下拉列表中，为此 SCEP 证书选择设备平台。 目前，可以为设备限制设置选择以下平台之一：
    - **Outlook Web Access (OWA)**
@@ -406,12 +406,16 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
     > [!NOTE]
     > 对于 iOS，如果部署了使用相同证书配置文件的多个资源配置文件，则管理配置文件中应会显示该证书的多个副本。
-    
-有关如何分配配置文件的信息，请参阅[如何分配设备配置文件](device-profile-assign.md)。
+
+有关如何分配配置文件的信息，请参阅[分配设备配置文件](device-profile-assign.md)。
+
+## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Intune 连接器设置验证和故障排除
+
+若要解决问题并验证 Intune 连接器设置，请参阅[证书颁发机构脚本示例](https://aka.ms/intuneconnectorverificationscript)
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune 连接器事件和诊断代码
 
-从版本 6.1803.x.x 开始，Intune 连接器服务会在“事件查看器”（“应用程序和服务日志” > “Microsoft Intune 连接器”）中记录事件。 使用这些事件可帮助解决 Intune 连接器配置中的潜在问题。 这些事件记录操作的成功和失败，并且还包含带有消息的诊断代码，以帮助 IT 管理员进行故障排除。
+从版本 6.1806.x.x 开始，Intune 连接器服务会在“事件查看器”（“应用程序和服务日志” > “Microsoft Intune 连接器”）中记录事件。 使用这些事件可帮助解决 Intune 连接器配置中的潜在问题。 这些事件记录操作的成功和失败，并且还包含带有消息的诊断代码，以帮助 IT 管理员进行故障排除。
 
 ### <a name="event-ids-and-descriptions"></a>事件 ID 和说明
 
@@ -430,10 +434,10 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 | 20102 | PkcsCertIssue_Failure  | 未能颁发 PKCS 证书。 查看事件详细信息，获取与此事件相关的设备 ID、用户 ID、CA 名称、证书模板名称和证书指纹。 | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | 已成功撤销证书。 查看事件详细信息，获取与此事件相关的设备 ID、用户 ID、CA 名称和证书序列号。 | 0x00000000, 0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | 未能撤销证书。 查看事件详细信息，获取与此事件相关的设备 ID、用户 ID、CA 名称和证书序列号。 有关其他信息，请参阅 NDES SVC 日志。   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Download_Success | 已成功下载签署证书、下载客户端证书或撤销证书的请求。 查看事件详细信息，获取下载详细信息。  | 0x00000000, 0x0FFFFFFF |
-| 20302 | Download_Failure | 未能下载签署证书、下载客户端证书或撤销证书的请求。 查看事件详细信息，获取下载详细信息。 | 0x00000000, 0x0FFFFFFF |
-| 20400 | Upload_Success | 已成功下载证书的请求或撤销数据。 查看事件详细信息，获取上传详细信息。 | 0x00000000, 0x0FFFFFFF |
-| 20402 | Upload_Failure | 未能下载证书的请求或撤销数据。 查看“事件详细信息”>“上传状态”以确定故障点。| 0x00000000, 0x0FFFFFFF |
+| 20300 | Upload_Success | 已成功下载证书的请求或撤销数据。 查看事件详细信息，获取上传详细信息。 | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | 未能下载证书的请求或撤销数据。 查看“事件详细信息”>“上传状态”以确定故障点。| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | 已成功下载签署证书、下载客户端证书或撤销证书的请求。 查看事件详细信息，获取下载详细信息。  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | 未能下载签署证书、下载客户端证书或撤销证书的请求。 查看事件详细信息，获取下载详细信息。 | 0x00000000, 0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | 证书注册点已成功验证客户端质询 | 0x00000000, 0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | 证书注册点已完成并拒绝了请求。 有关详细信息，请参阅诊断代码和消息。 | 0x00000000, 0x00000411, 0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | 证书注册点未能验证客户端质询。 有关详细信息，请参阅诊断代码和消息。 有关与该质询相对应的设备 ID，请查看事件消息详细信息。 | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |

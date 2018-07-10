@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97ddb881e497c5b9e5bb5b36d19c13ab2722b538
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 75d3f9312a6f3a88706070ab29e674cb6d53bf4f
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744816"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305410"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -69,8 +69,7 @@ ms.locfileid: "34744816"
 
   |应用/服务名称 | 描述 | 豁免条件|
   | ------ | ---- | --- |
-  | com.android.chrome | Google Chrome 浏览器 | Chrome 用于 Android 7.0 及更高版本上的某些 WebView 组件，并且永远不会从视图中隐藏。 但是，该应用发出和收到的数据流始终受限。
-  | com.skype.raider | Skype | Skype 应用仅允许执行引发电话呼叫的某些操作。 |
+  | com.android.chrome | Google Chrome 浏览器 | Chrome 用于 Android 7.0 及更高版本上的某些 WebView 组件，并且永远不会从视图中隐藏。 但是，该应用发出和收到的数据流始终受限。  | com.skype.raider | Skype | Skype 应用仅允许执行引发电话呼叫的某些操作。 |
   | com.android.providers.media | Android 媒体内容提供程序 | 媒体内容提供程序仅允许铃声选择操作。 |
   | com.google.android.gms;com.google.android.gsf | Google Play Services 包 | 这些包允许 Google Cloud Messaging 操作，例如推送通知。 |
 
@@ -86,7 +85,7 @@ ms.locfileid: "34744816"
 | **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，如果管理员在策略中启用 PIN，并阻止取得 root 权限的设备，则用户打开 Intune 托管的应用时，必须输入 PIN，且必须在未取得 root 权限的设备上使用应用。 使用此设置时，用户在 30 分钟（默认值）内无需在任何 Intune 托管应用上再次输入 PIN 或执行 root 检测检查。 <br><br> **注意：** 在 Android 上，所有 Intune 托管应用均共享此 PIN。 应用离开设备主屏幕后，就会重置 PIN 计时器。 在此设置定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入该 PIN。 <br><br> 此策略设置格式支持正整数。<br></li><li>**脱机宽限期**：指 MAM 应用可脱机运行的分钟数，需在重新检查应用访问要求之前指定该时间（以分钟为单位）。 默认值 = **720** 分钟（12 小时）。 此期限到期后，该应用需要对 Azure Active Directory (Azure AD) 进行用户身份验证，以便该应用可以继续运行。<br><br> 此策略设置格式支持正整数。</li></ul>| 超时：30 <br><br> 脱机：720 |
 | **擦除应用数据前的脱机时间间隔(天)** | 经过数天（由管理员定义）的脱机运行后，应用会要求用户连接到网络并重新进行身份验证。 如果用户身份验证成功，则可继续访问其数据，且将重置脱机时间间隔。  如果用户未能通过身份验证，则应用会对用户帐户和数据执行选择性擦除。  请参阅[如何仅擦除 Intune 托管应用中的企业数据](https://docs.microsoft.com/intune/apps-selective-wipe)，详细了解选择性擦除所删除的数据。<br><br> 此策略设置格式支持正整数。 | 90 天 |
 | **阻止屏幕捕获和 Android 助手 (Android 6.0+)** | 选择“是”，则在使用此应用时，阻止设备的屏幕捕获和“Android 助手”功能。 选择“是”还会在通过工作或学校帐户使用此应用时，导致应用切换器预览图像模糊。 | 否 |
-| **托管设备 PIN 后禁用应用 PIN** | 在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。 | 否 |
+| **托管设备 PIN 后禁用应用 PIN** | 在已注册设备上检测到设备锁后选择“是”禁用应用 PIN。<br><br>**注意** Intune 无法在 iOS 上检测使用第三方 EMM 解决方案的设备注册。  | 否 |
 | **要求最低 Android 操作系统版本** | 选择“是”将要求要使用此应用需具备的最低 Android 操作系统版本。 如果设备上的 Android 版本不符合此要求，将阻止用户访问。<br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。| 否 |
 | **要求最低 Android 操作系统版本(仅警告)** | 选择“是”将要求要使用此应用需具备的最低 Android 操作系统版本。 如果设备上的 Android 版本不符合此要求，用户将看到一个通知。 可忽略此通知。<br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。 | 否 |
 | **要求最低应用版本** | 选择“是”将要求要使用此应用需具备的最低应用版本。 如果设备上的应用版本不符合此要求，将阻止用户访问。<br><br>由于应用的版本方案之间通常不同，因此，要创建一个针对一个应用的最低应用版本策略（例如“Outlook 版本策略”。 <br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。| 否 |

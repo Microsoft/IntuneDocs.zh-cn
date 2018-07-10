@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803833"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中针对 Windows 10 及更高版本的设备限制设置
 本文介绍可为运行 Windows 10 的设备配置的所有 Microsoft Intune 设备限制设置。
@@ -249,7 +250,9 @@ ms.lasthandoff: 04/26/2018
 
   借助 GDI DPI 缩放，应用可以从非 DPI 感知变成按监视器 DPI 感知。 指定已启用 GDI DPI 缩放的旧应用。 如果将 GDI DPI 缩放配置为在应用上先启用后禁用，则对应用禁用缩放。
 
-## <a name="kiosk-preview"></a>展台（预览版）
+## <a name="kiosk-preview---obsolete"></a>展台（预览版）- 已过时
+
+这些设置即将迁移，并会在即将发布的版本中删除。 若要使用新设置，请参阅 [Windows 10 及更高版本中的展台设置](kiosk-settings.md)。
 
 展台设备通常运行一个应用或一组特定应用。 用户不得访问任何展台应用以外设备上的任何功能。
 
@@ -262,9 +265,12 @@ ms.lasthandoff: 04/26/2018
 #### <a name="single-app-kiosks"></a>单应用展台
 输入以下设置：
 
-- **用户帐户** - 输入与展台应用相关联的本地（对设备而言）用户帐户或 Azure AD 帐户登录名。 对于加入 Azure AD 域的帐户，请使用 `domain\username@tenant.org` 格式输入帐户。 
+- **用户帐户** - 输入与展台应用相关联的本地（对设备而言）用户帐户、AD 域帐户或 Azure AD 帐户登录名。
+  - 本地帐户：输入格式为 `devicename\accountname`、`.\accountname` 或 `accountname`
+  - 域帐户：输入格式为 `domain\accountname`
+  - Azure AD 帐户：输入格式为 `AzureAD\emailaddress`。 请确保输入“AzureAD”，因为这是固定域名。 然后，在后面添加 Azure AD 电子邮件地址。 例如，输入 `AzureAD\user@contoso.onmicrosoft.com`。
 
-    对于面向公众且启用自动登录的环境中的展台，应使用具有最低权限的用户类型（如本地标准用户帐户）。 若要针对展台模式配置 Azure Active Directory (AD) 帐户，请使用 `AzureAD\user@contoso.com` 格式。
+    对于面向公众且启用自动登录的环境中的展台，应使用具有最低权限的用户类型（如本地标准用户帐户）。 如果将 Azure AD 帐户用于展台模式，请确保输入 `AzureAD\user@yourorganization.com`。
 
 - **应用的应用程序用户模型 ID (AUMID)** - 输入展台应用的 AUMID。 若要了解详细信息，请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
 

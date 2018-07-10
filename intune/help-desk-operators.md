@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 5d924e216dd6d0fe13bc4c7718b5368db1d35f8c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833342"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36329869"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑难解答门户帮助公司的用户
 
@@ -234,6 +234,15 @@ ms.locfileid: "31833342"
 | 设备类型 | 设备类型的名称。                                                       |
 | 策略    | 设备所有权类型。 这可以是“公司”、“个人”和“未知”。 |
 | 上次同步   | 设备与 Intune 上次同步时的时间戳。                   |
+
+## <a name="collect-available-data-from-mobile-device"></a>从移动设备收集可用数据
+
+对用户设备问题进行故障排除时，请使用以下资源帮助收集设备数据：
+  - [将 iOS 注册错误发送给 IT 管理员](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [利用详细日志记录帮助公司支持人员修复设备问题](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [使用 USB 电缆将 Android 日志发送给公司支持人员](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [将 Android 注册错误发送给 IT 管理员](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>后续步骤
 

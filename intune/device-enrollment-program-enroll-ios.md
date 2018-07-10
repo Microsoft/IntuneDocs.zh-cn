@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474440"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -206,13 +207,17 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 ## <a name="renew-a-dep-token"></a>续订 DEP 令牌  
 1. 转到 deploy.apple.com。  
 2. 在“管理服务器”下，选择与想要续订的令牌文件相关的 MDM 服务器。
-3. 选择“生成新令牌”。  
+3. 选择“生成新令牌”。
+
+    ![生成新令牌的屏幕截图。](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. 选择“服务器令牌”。  
-5. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。  
-6. 选择该令牌，然后选择“续订令牌”。  
-7. 输入用于创建原始令牌的 Apple ID。  
+5. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”> 选择令牌。
+    ![注册计划令牌的屏幕截图。](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. 选择“续订令牌”，然后输入用于创建原始令牌的 Apple ID。  
+    ![生成新令牌的屏幕截图。](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. 上传新下载的令牌。  
 9. 选择“续订令牌”。 你将看到令牌已续订的确认消息。   
-
-
-
+    ![确认消息屏幕截图。](./media/device-enrollment-program-enroll-ios/confirmation.png)

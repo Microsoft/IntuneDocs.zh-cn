@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34444908"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 定位丢失或被盗的 iOS 设备
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/28/2018
     ![在 Azure 中使用 Intune 定位设备的屏幕截图](./media/locate-device.png)
 
 >[!NOTE]
->出于隐私原因，地图可放大的尺寸受到限制。
+>出于隐私原因，地图可放大的距离限制为半径 300 米。
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>在 iOS 设备上激活丢失模式声音警报
 
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/28/2018
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>丢失模式和定位设备操作的安全与隐私信息
 - 启用此操作之前，不会向 Intune 发送任何设备的位置信息。
-- 使用“定位设备”操作时，设备的纬度和经度坐标会发送到 Intune，并在 Azure 门户中显示。
+- 使用“定位设备”操作时，可使用图形 API 检索设备的纬度和经度坐标。
 - 该数据存储 24 小时，然后删除。 不能手动删除位置数据。
 - 位置数据在存储和传输时均进行加密处理。
 - 配置丢失模式时，可以自定义锁屏界面上显示的消息。 在此消息中，为帮助查找该设备的用户，请务必添加特定的详细信息，以返回丢失的设备。

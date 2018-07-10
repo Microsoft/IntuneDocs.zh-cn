@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34178156"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305427"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -126,6 +126,8 @@ ms.locfileid: "34178156"
 Intune 应用保护策略是一种针对用户身份的策略，因此用户的保护设置历来适用于已注册（MDM 托管）和未注册（非 MDM）设备。 因此可以将 Intune 应用保护策略应用于已注册或未注册 Intune 的 iOS 和 Android 设备。 你可以对非托管设备应用具备严格数据丢失防护 (DLP) 措施的保护策略，并对 MDM 托管设备应用 DLP 措施较为宽松的单独保护策略。 
 
 若要创建这些策略，请在 Intune 控制台中浏览找到“移动应用” > “应用保护”策略，然后单击“添加策略”。 还可以编辑现有的应用保护策略。 如果想将应用保护策略同时应用到托管和非托管设备，请确保将“面向所有应用类型”设置为“是”（这是默认设置）。 如果想根据管理状态逐渐分配，请将“面向所有应用类型”设置为“否”。 
+
+对于视为“已托管”的 iOS 应用，需要为每个应用部署 IntuneMAMUPN 配置策略设置。 有关详细信息，请参阅[如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
 
 > [!NOTE]
 > 有关根据设备管理状态分配应用保护策略的 iOS 具体支持信息，请参阅[根据管理状态应用 MAM 保护策略](whats-new.md#mam-protection-policies-targeted-based-on-management-state-)。

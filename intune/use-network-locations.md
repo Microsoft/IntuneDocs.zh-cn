@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745110"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843117"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>使用 Intune 中的位置（网络围墙）
 
@@ -35,7 +35,7 @@ ms.locfileid: "34745110"
 2. 创建要求这些设备连接到公司网络的合符合性策略，并分配此策略。
 3. 如果设备超出制造工厂的范围，则该设备被认为不符合要求，并且无法访问公司资源。
 
-使用 Intune 策略可以发送不符合通知，并锁定设备。 当设备回到本地并位于网络位置中时，可获得解锁并重新获得公司资源的访问权限。
+此外，还可添加[针对非符合性的操作](#configure-the-actions-for-noncompliance)。 当设备回到本地并位于网络位置中时，它将重新重新获得公司资源的访问权限。
 
 ## <a name="prerequisites"></a>必备条件
 

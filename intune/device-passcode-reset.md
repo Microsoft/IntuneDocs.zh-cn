@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
+ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216303"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964719"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -28,13 +28,13 @@ ms.locfileid: "34216303"
 
 ## <a name="supported-platforms"></a>受支持的平台
 
-- 使用 Work 配置文件注册且版本在 7.0 及以上的 Android 设备
+- 使用 Work 配置文件注册且版本在 8.0 及以上的 Android 设备
 - 版本在 6.0 及以下的 Android 设备
 - iOS 
      
 ## <a name="unsupported-platforms"></a>不受支持的平台
 
-- 使用 Work 配置文件注册且版本在 6.0 及以下的 Android 设备
+- 使用 Work 配置文件注册且版本在 7.0 及以下的 Android 设备
 - 版本在 7.0 及以上的 Android 设备
 - macOS
 - Windows
@@ -48,7 +48,7 @@ ms.locfileid: "34216303"
 
 ## <a name="resetting-android-for-work-passcodes"></a>重置 Android for Work 密码
 
-受支持的 Android for Work 设备为最终用户接收新的托管配置文件解锁密码或托管配置文件质询。 对于具有 Work 配置文件且版本在 Android 7.0 及以上的设备，最终用户完成注册后会立即收到激活其重置密码令牌的通知。 需提供和设置 Work 配置文件密码时会显示该通知。 输入其密码后，该通知将消除。
+受支持的 Android for Work 设备为最终用户接收新的托管配置文件解锁密码或托管配置文件质询。 对于具有 Work 配置文件且版本在 Android 8.0 及以上的设备，最终用户完成注册后会立即收到激活其重置密码令牌的通知。 需提供和设置 Work 配置文件密码时会显示该通知。 输入其密码后，该通知将消除。
 
 ## <a name="resetting-ios-passcodes"></a>重置 iOS 密码
 

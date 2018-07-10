@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032585"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232930"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
-我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 因此，我们编撰了本参考指南，以供非常熟悉经典门户中 Intune 且想知道如何使用 Azure 门户中 Intune 完成工作的用户阅读。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。
+我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 本参考指南面向非常熟悉经典门户中的 Intune 且想知道如何使用 Azure 门户中的 Intune 完成工作的用户。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。
 ## <a name="quick-reference-guide"></a>快速参考指南
 
 |功能 |经典门户中的路径|Azure 门户中 Intune 内的路径|
@@ -45,27 +45,37 @@ ms.locfileid: "31032585"
 Azure 门户中 Intune 使用 [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) 管理组。
 
 ## <a name="where-did-enrollment-rules-go"></a>注册规则在处于哪个位置？
-在经典门户中，可以设置规则来管理新式移动 Windows 和 macOS 设备的 MDM 注册：
+在经典门户中，可以设置规则来管理新式移动 Windows 和 macOS 设备的 MDM 注册。
 
 ![经典移动设备注册规则的图像](./media/01-classic-rules.png)
 
-这些规则适用于你的 Intune 帐户中没有异常的所有用户。 在 Azure 门户中，这些规则现在表现为两种不同的策略类型：设备类型限制和设备限制：
+这些规则适用于你的 Intune 帐户中没有异常的所有用户。 在 Azure 门户中，这些规则现在表现为两种不同的策略类型：设备类型限制和设备限制。
 
 ![Azure 移动设备注册限制的图像](./media/02-azure-enroll-restrictions.png)
 
-默认的“设备限制”对应于经典门户中的“设备注册限制”：
+默认的“设备限制”对应于经典门户中的“设备注册限制”。
 
 ![Azure 设备限制的图像](./media/03-azure-device-limit.png)
 
-默认的“设备类型限制”对应于经典门户中的“平台限制”：
+默认的“设备类型限制”对应于经典门户中的“平台限制”。
 
 ![Azure 设备类型限制的图像](./media/04-azure-platform-restrictions.png)
 
-现在在设备类型限制的平台配置下管理允许或阻止个人拥有的设备的功能：
+现在在设备类型限制的平台配置下管理允许或阻止个人拥有的设备的功能。
 
 ![Azure 个人设备阻止块设置的图像](./media/05-azure-personal-block.png)
 
 新限制功能仅添加到 Azure 门户。
+
+## <a name="where-did-my-conditional-access-policies-go"></a>条件访问策略在何处？
+租户迁移到 Azure 门户后，将继续强制使用租户的条件访问策略。 但是，你无法在 Azure 门户中的 Intune 中查看或修改这些策略。
+
+如果希望在 Azure 门户中查看和修改条件访问策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关迁移条件访问策略的详细信息，请参阅[在 Azure 门户中迁移经典策略](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration)。 
+
+## <a name="where-did-my-compliance-policies-go"></a>符合性策略去哪了？
+你的租户迁移到 Azure 门户后，租户的符合性策略将继续强制使用。 但是，你无法在 Azure 门户中的 Intune 中查看或修改这些策略。
+
+如果希望在 Azure 门户中查看和修改符合性策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关设备符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](https://docs.microsoft.com/en-us/intune/known-issues#compliance)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 处于哪个位置？
 在经典门户中，可以将 Intune 设置为与 Apple 设备注册计划进行集成，并手动请求与 Apple 服务同步：

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,120 +15,127 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10502f82d94246f7a70af6b88c0704a4daa0372b
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 6c7f3229c2cb4c5f3f57d84d348053f25eeeb9c9
+ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046377"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37066209"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用
 
 > [!NOTE] 
 > 本主题适用于所有移动威胁防御合作伙伴。
 
-可以使用 Intune 来添加和部署 MTD 应用，以便最终用户可以在其移动设备中确定某个威胁时接收通知，并接收指导来解除威胁。
+可以使用 Intune 添加和部署 MTD 应用，以便最终用户可以在其移动设备中确定某个威胁时接收通知，并接收指导来解除威胁。
 
-对于 iOS 设备，需要 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)，这样用户便可让 Azure AD 检查自己的标识。 此外，需要 iOS 应用配置策略，该策略指示要与 Intune 配合使用的 MTD iOS 应用。
+
+## <a name="before-you-begin"></a>在开始之前
+
+需要在 [Azure 门户](https://portal.azure.com/)中完成以下步骤。 请务必熟悉以下过程：
+
+  -   [将应用添加到 Intune](apps-add.md)。
+  -   [将 iOS 应用配置策略添加到 Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
+  -   [使用 Intune 分配应用](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
+  -   [添加 iOS 应用配置策略](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
 
 > [!TIP]
 > Intune 公司门户在 Android 设备上以中转站的方式工作，以便用户能够让 Azure AD 检查自己的标识。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="configure-microsoft-authenticator-for-ios"></a>配置适用于 iOS 的 Microsoft Authenticator
+对于 iOS 设备，需要 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)，这样用户便可让 Azure AD 检查自己的标识。 此外，需要 iOS 应用配置策略，该策略指示要与 Intune 配合使用的 MTD iOS 应用。
 
--   需要在 [Azure 门户](https://portal.azure.com/)中完成以下步骤。
+请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下步骤 12 中的此 [Microsoft Authenticator 应用商店 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
 
--   请务必熟悉以下过程：
+## <a name="configure-mtd-applications"></a>配置 MTD 应用程序
 
-    -   [将应用添加到 Intune](apps-add.md)。
+请选择与你的 MTD 提供程序对应的部分：
 
-    -   [将 iOS 应用配置策略添加到 Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
+  - [Lookout for Work](#configure-lookout-for-work-apps)
+  - [Symantec Endpoint Protection Mobile (SEP Mobile)](#configure-symantec-endpoint-protection-mobile-apps)
+  - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
+  - [Zimperium](#configure-zimperium-apps)
+  - [Pradeo](#configure-pradeo-apps)
 
-    -   [使用 Intune 分配应用](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
+### <a name="configure-lookout-for-work-apps"></a>配置 Lookout for Work 应用
 
-    -   [添加 iOS 应用配置策略](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
+- **Outlook Web Access (OWA)**
+  - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中使用此 [Lookout for Work Google 应用商店 URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise)。
 
-## <a name="to-add-apps"></a>若要添加应用
+- **iOS**
 
-### <a name="all-mtd-partners"></a>所有 MTD 合作伙伴
+  - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下的步骤 12 中的此 [Lookout for Work iOS 应用商店 URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8)。
 
-#### <a name="microsoft-authenticator-app-for-ios"></a>适用于 iOS 的 Microsoft Authenticator 应用
+-   **Apple 应用商店之外的 Lookout for Work 应用**
+    - 需要对 Lookout for Work iOS 应用进行重新签名。 Lookout 会在 iOS 应用商店之外分发其 Lookout for Work iOS 应用。 分发应用之前，必须使用 iOS 企业开发者证书对应用重新签名。
+    - 有关对 Lookout for Work iOS 应用重新签名的详细说明，请参阅 Lookout 网站上的 [Lookout for Work iOS 应用重新签名过程](https://personal.support.lookout.com/hc/articles/114094038714)。
 
-- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下步骤 12 中的此 [Microsoft Authenticator 应用商店 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
+    - **为 Lookout for Work iOS 应用用户启用 Azure AD 身份验证。**
 
-### <a name="lookout"></a>Lookout
+        1. 转到 [Azure 门户](https://portal.azure.com)，使用自己的凭据登录，然后导航到应用程序页。
 
-#### <a name="android"></a>Android
-- 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中使用此 [Lookout for Work Google 应用商店 URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise)。
+        2. 添加 **Lookout for Work iOS 应用**作为**本机客户端应用程序**。
 
-#### <a name="ios"></a>iOS
+        3. 将 **com.lookout.enterprise.yourcompanyname** 替换为对 IPA 签名时选择的客户捆绑 ID。
 
-- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下的步骤 12 中的此 [Lookout for Work iOS 应用商店 URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8)。
+        4.  添加其他重定向 URI：**&lt;companyportal://code/>**，后跟原始重定向 URI 的 URL 编码形式版本。
 
-#### <a name="lookout-for-work-app-outside-the-apple-store"></a>Apple 应用商店之外的 Lookout for Work 应用
+        5.  将**委托的权限**添加到应用。
 
-需要对 Lookout for Work iOS 应用进行重新签名。 Lookout 会在 iOS 应用商店之外分发其 Lookout for Work iOS 应用。 分发应用之前，必须使用 iOS 企业开发者证书对应用重新签名。
+        > [!NOTE] 
+        > 有关详细信息，请参阅[使用 Azure AD 配置本机客户端应用程序](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)。
 
-有关对 Lookout for Work iOS 应用重新签名的详细说明，请参阅 Lookout 网站上的 [Lookout for Work iOS 应用重新签名过程](https://personal.support.lookout.com/hc/articles/114094038714)。
+     - **添加 Lookout for Work ipa 文件。**
 
-##### <a name="enable-azure-ad-authentication-for-lookout-for-work-ios-app"></a>为 Lookout for Work iOS 应用启用 Azure AD 身份验证
+        - 按照[使用 Intune 添加 iOS LOB 应用](lob-apps-ios.md)主题中所述，上传重新签名的 .ipa 文件。 还需将最低操作系统版本设为 iOS 8.0 或更高版本。
 
-通过执行以下操作为 iOS 用户启用 Azure Active Directory 身份验证：
+### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>配置 Symantec Endpoint Protection Mobile 应用
 
-1. 转到 [Azure 门户](https://portal.azure.com)，使用自己的凭据登录，然后导航到应用程序页。
+ - **Outlook Web Access (OWA)**
 
-2. 添加 **Lookout for Work iOS 应用**作为**本机客户端应用程序**。
+    - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中，使用此 [SEP Mobile 应用商店 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。  对于“最低操作系统”，请选择“Android 4.0 (Ice Cream Sandwich)”。
 
-3. 将 **com.lookout.enterprise.yourcompanyname** 替换为对 IPA 签名时选择的客户捆绑 ID。
+ - **iOS**
 
-4.  添加其他重定向 URI：**&lt;companyportal://code/>**，后跟原始重定向 URI 的 URL 编码形式版本。
+    - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在步骤 12 中使用“配置应用信息”部分下的此 [SEP Mobile 应用商店 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
 
-5.  将**委托的权限**添加到应用。
+### <a name="configure-check-point-sandblast-mobile-apps"></a>配置 Check Point SandBlast Mobile 应用
 
-    > [!NOTE] 
-    > 有关详细信息，请参阅[使用 Azure AD 配置本机客户端应用程序](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)。
+ - **Outlook Web Access (OWA)**
 
-##### <a name="add-the-lookout-for-work-ipa-file"></a>添加 Lookout for Work ipa 文件
+    - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在“步骤 7”中使用此 [Check Point SandBlast Mobile 应用商店 URL](https://play.google.com/store/apps/details?id=com.lacoon.security.fox)。
 
-- 按照[使用 Intune 添加 iOS LOB 应用](lob-apps-ios.md)主题中所述，上传重新签名的 .ipa 文件。 还需将最低操作系统版本设为 iOS 8.0 或更高版本。
+ - **iOS**
 
-### <a name="symantec-endpoint-protection-mobile-sep-mobile"></a>Symantec Endpoint Protection Mobile (SEP Mobile)
+    - 联系 [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) 以获取 iOS 应用。 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md) 的说明，然后使用“配置应用信息”部分下的“步骤 12”中的 Apple 应用商店 URL。
 
-#### <a name="android"></a>Android
+### <a name="configure-zimperium-apps"></a>配置 Zimperium 应用
 
-- 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中，使用此 [SEP Mobile 应用商店 URL](https://play.google.com/store/apps/details?id=com.skycure.skycure)。  对于“最低操作系统”，请选择“Android 4.0 (Ice Cream Sandwich)”。
+ - **Outlook Web Access (OWA)**
 
-#### <a name="ios"></a>iOS
+    - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中使用此 [Zimperium 应用商店 URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en)。
 
-- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在步骤 12 中使用“配置应用信息”部分下的此 [SEP Mobile 应用商店 URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8)。
+ - **iOS**
 
-### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
+    - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下的步骤 12 中的此 [Zimperium 应用商店 URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
 
-#### <a name="android"></a>Android
+### <a name="configure-pradeo-apps"></a>配置 Pradeo 应用
 
-- 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在“步骤 7”中使用此 [Check Point SandBlast Mobile 应用商店 URL](https://play.google.com/store/apps/details?id=com.lacoon.security.fox)。
+ - **Outlook Web Access (OWA)**
 
-#### <a name="ios"></a>iOS
+    - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中使用此 [Pradeo 应用商店 URL](https://play.google.com/store/apps/details?id=net.pradeo.service&hl=en_US)。
 
-- 联系 [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) 以获取 iOS 应用。 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md) 的说明，然后使用“配置应用信息”部分下的“步骤 12”中的 Apple 应用商店 URL。
+ - **iOS**
 
-### <a name="zimperium"></a>Zimperium
+    - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在“配置应用信息”部分下的步骤 12 中使用此 [Pradeo 应用商店 URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8)。
 
-#### <a name="android"></a>Android
+## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>使用 iOS 应用配置策略配置 MTD 应用
 
-- 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中使用此 [Zimperium 应用商店 URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en)。
-
-#### <a name="ios"></a>iOS
-
-- 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下的步骤 12 中的此 [Zimperium 应用商店 URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
-
-## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>将 MTD 应用与 iOS 应用配置策略关联
-
-### <a name="for-lookout"></a>对于 Lookout
+### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 应用配置策略
 
 - 按照[使用 iOS 应用配置策略](app-configuration-policies-use-ios.md)主题中所述的步骤，创建 iOS 应用配置策略。
 
-### <a name="for-sep-mobile"></a>适用于 SEP Mobile
+### <a name="sep-mobile-app-configuration-policy"></a>SEP 移动应用配置策略
 
 -   使用以前在 [Symantec Endpoint Protection 管理控制台](https://aad.skycure.com)中配置的相同 Azure AD 帐户，这也应该是用于登录 Intune 经典门户的相同帐户。
 
@@ -146,7 +153,7 @@ ms.locfileid: "32046377"
 > [!NOTE]
 > 如果无法检索文件，请联系 [Symantec Endpoint Protection Mobile 企业支持部门](https://support.symantec.com/en_US/contact-support.html)。
 
-### <a name="for-check-point-sandblast-mobile"></a>有关 Check Point SandBlast Mobile 的信息
+### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Check Point SandBlast Mobile 应用配置策略
 
 - 请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，以添加 Check Point SandBlast Mobile iOS 应用配置策略。
     - 在“步骤 8”中，使用选项“输入 XML 数据”，复制下列内容并粘贴到配置策略正文。
@@ -155,7 +162,7 @@ ms.locfileid: "32046377"
 <dict><key>MDM</key><string>INTUNE</string></dict>
 ```
 
-### <a name="for-zimperium"></a>对于 Zimperium
+### <a name="zimperium-app-configuration-policy"></a>Zimperium 应用配置策略
 
 - 请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，添加 Zimperium iOS 应用配置策略。
     - 在“步骤 8”中，使用选项“输入 XML 数据”，复制下列内容并粘贴到配置策略正文。
@@ -173,10 +180,10 @@ ms.locfileid: "32046377"
 </dict>
 ```
 
-## <a name="to-assign-apps-all-mtd-partners"></a>分配应用（所有 MTD 合作伙伴）
+## <a name="assign-apps-to-groups"></a>将应用分配给组
 
-- 请参阅[使用 Intune 向组分配应用](apps-deploy.md)，查看相关操作说明。
+- 此步骤适用于所有 MTD 合作伙伴。 请参阅[使用 Intune 向组分配应用](apps-deploy.md)，查看相关操作说明。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [添加设备符合性策略规则已实现 MTD](mtd-device-compliance-policy-create.md)
+- [为 MTD 配置设备符合性策略](mtd-device-compliance-policy-create.md)

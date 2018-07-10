@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803816"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 设备限制设置
 
@@ -97,7 +98,7 @@ ms.lasthandoff: 04/26/2018
     -   **所需的密码类型** - 指定需要的密码类型，例如仅限数字或字母数字。
     -   **密码中的非字母数字字符数** - 指定密码中必须包含的符号字符（如 **#** 或 **@**）数。
     -   **最短密码长度** - 指定密码中所需的最少字符数。
-    -   **擦除设备前的登录失败次数** - 指定此设置擦除设备前的失败登录尝试次数。
+    -   **擦除设备前的登录失败次数** - 指定此设置擦除设备前的唯一错误密码尝试次数。
     -   **屏幕锁定后要求提供密码前的最大分钟数**<sup>1</sup> - 指定用户必须重新输入密码前设备可以保持空闲状态的时间。
     -   **屏幕锁定前的非活动状态最大分钟数**<sup>1</sup> - 指定设备显示屏关闭之前的分钟数。
     -   **密码过期（天数）** - 指定必须更改设备密码前的天数。
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 -   **应用内购买** - 允许在运行的应用中产生应用商店购买行为。
 -   **成人 iTunes 音乐、播客或新闻内容（仅限被监督的设备）** - 允许设备访问商店中的成人内容。
 -   **从 iBook 商店下载标记为“成人作品”的内容** - 允许用户下载类别为“成人作品”的书籍。
--   **在非托管应用中查看公司文档** - 允许在任何应用中查看公司文档。<br>**示例：**你想要防止用户将文件从 OneDrive 应用保存到 Dropbox。 将此设置配置为“否”。 设备收到策略后（例如在重启后），将不再允许保存。
+-   **在非托管应用中查看公司文档** - 允许在任何应用中查看公司文档。<br>**示例：** 你想要防止用户将文件从 OneDrive 应用保存到 Dropbox。 将此设置配置为“否”。 设备收到策略后（例如在重启后），将不再允许保存。
 -   **在公司应用中查看非公司文档** - 允许在公司托管的应用中查看任何文档。
 -   **将 AirDrop 视为非托管目标** - 阻止托管应用通过 Airdrop 发送数据。 。
 -   **添加 Game Center 好友（仅限被监督的设备）** - 允许用户在 Game Center 中添加好友。

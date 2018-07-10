@@ -14,11 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34449864"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -462,7 +463,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 如有必要，可以指定颁发机构和 NonBrokerRedirectURI。
 
-Intune SDK 团队需要应用的应用程序 ID（客户端 ID）。 可通过 [Azure 门户](https://portal.azure.com/)在“所有应用程序”下的“应用程序 ID”列中找到。 有关使用 AAD 注册应用程序的信息，请参阅[此处](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)。 可通过 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
+Intune SDK 团队需要应用的应用程序 ID（客户端 ID）。 可在 [Azure 门户](https://portal.azure.com/)中“所有应用程序”下的“应用程序 ID”列找到此内容。 有关使用 Azure AD 注册应用程序的信息，请参阅[此处](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)。 可通过 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
 
 另请参阅以下[条件访问](#conditional-access)的要求。
 
@@ -472,22 +473,30 @@ Intune SDK 团队需要应用的应用程序 ID（客户端 ID）。 可通过 [
     |--|--|
     | ClientID | 应用的 ClientID（注册应用时由 Azure AD 生成） |
     | SkipBroker | **True** |
+    
+    如有必要，可以指定颁发机构和 NonBrokerRedirectURI。
 
-如有必要，可以指定颁发机构和 NonBrokerRedirectURI。
 
 ### <a name="conditional-access"></a>条件性访问
-条件访问 (CA) 是 Azure Active Directory [功能](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)，可用于控制对 AAD 资源的访问。  [Intune 管理员可定义仅允许从由 Intune 托管的设备或应用中访问资源的 CA 规则](https://docs.microsoft.com/en-us/intune/conditional-access)。 为确保应用能在适当的时候访问资源，必须按照以下步骤操作。 如果应用未获取任何 AAD 访问令牌，或仅访问不受 CA 保护的资源，则可跳过这些步骤。
+
+条件访问 (CA) 是 Azure Active Directory [功能](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)，可用于控制对 AAD 资源的访问。 [Intune 管理员可定义仅允许从由 Intune 托管的设备或应用中访问资源的 CA 规则](https://docs.microsoft.com/intune/conditional-access)。 为确保应用能在适当的时候访问资源，必须按照以下步骤操作。 如果应用未获取任何 AAD 访问令牌，或仅访问不受 CA 保护的资源，则可跳过这些步骤。
 
 1. 按照 [ADAL 集成指南](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)进行操作。 
-   有关代理的使用情况，请特别参阅步骤 11
-2. [使用 Azure Active Directory 注册应用程序] (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration))。 
-   可在上面的 ADAL 集成指南中找到重定向 URI。
+   有关代理的使用情况，请特别参阅步骤 11。
+
+2. [使用 Azure Active Directory 注册应用程序](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)。 可在上面的 ADAL 集成指南中找到重定向 URI。
+
 3. 根据上述第 2 项中的[常用 ADAL 配置](#common-adal-configurations)设置清单元数据参数。
-4. 通过从 [Azure 门户](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)启用[基于设备的 CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use) 测试所有内容已正确配置并确认以下内容
-    - 登录到应用会提示安装和注册 Intune 公司门户
-    - 注册后，成功登录到应用。
-5. 应用发布 Intune APP SDK 集成后，请联系 msintuneappsdk@microsoft.com 以添加到[基于应用的条件访问](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)的已批准应用列表中
-6. 将应用添加到已批准列表后，通过[配置基于应用的 CA](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) 进行验证，并确保成功登录到应用。
+
+4. 通过从 [Azure 门户](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)启用[基于设备的 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) 测试所有内容已正确配置并确认以下内容
+* 登录到应用会提示安装和注册 Intune 公司门户
+* 注册后，成功登录到应用。
+
+5. 应用发布 Intune APP SDK 集成后，请联系 msintuneappsdk@microsoft.com 以添加到[基于应用的条件访问](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)的已批准应用列表中。
+
+6. 将应用添加到已批准列表后，通过[配置基于应用的 CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) 进行验证，并确保成功登录到应用。
+
+
 ## <a name="app-protection-policy-without-device-enrollment"></a>无需设备注册的应用保护策略
 
 ### <a name="overview"></a>概述
@@ -1371,7 +1380,6 @@ public interface MAMAppConfig {
 
 ### <a name="how-to-customize"></a>如何自定义
 若要将样式更改应用到 Intune MAM 视图，必须首先创建一个样式来替代 XML 文件。 此文件应位于应用的“/ res/xml”目录，你可以按照自己的喜好对它进行命名。 下面是此文件应遵循的格式示例。
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1401,7 +1409,7 @@ public interface MAMAppConfig {
 | 着色 | 突出显示时的 PIN 边框 <br> 超链接 |accent_color | 颜色 |
 | 应用徽标 | Intune 应用 PIN 屏幕上显示的大图标 | logo_image | 可绘制 |
 
-## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>使用 APP-WE 服务注册、集成 SDK 的 Android LOB 应用和 ADAL SSO（可选）
+## <a name="default-enrollment-optional"></a>默认注册（可选）
 <!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 以下指南面向：需要在应用启动时出现用户提示以自动注册 APP-WE 服务（本节中称为“默认注册”）；需要 Intune 应用保护策略以仅允许受 Intune 保护的用户使用你的集成了 SDK 的 Android LOB 应用。 指南中还说明如何为集成了 SDK 的 Android LOB 应用启用 SSO。 可由非 Intune 用户使用的应用商店应用不支持此操作。
@@ -1413,7 +1421,7 @@ public interface MAMAppConfig {
 * Intune SDK 团队需要应用的应用程序 ID。 可按此方式找到此内容：在 [Azure 门户](https://portal.azure.com/)中的“所有应用程序”下，找到“应用程序 ID”列。 建议通过电子邮件 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
 
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
-以下说明专门面向最终用户设备上要求使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用。
+以下说明专门面向希望要求应用在最终用户设备上使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用开发人员。
 
 1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
    > [!NOTE] 

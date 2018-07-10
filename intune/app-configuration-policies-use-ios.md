@@ -3,10 +3,10 @@ title: 为受管理 iOS 设备添加应用配置策略
 titlesuffix: Microsoft Intune
 description: 了解如何使用应用配置策略，为运行中的 iOS 应用提供配置数据。
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232227"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用 Microsoft Intune 中的应用配置策略可提供用户在运行 iOS 应用时的设置。 无需直接向用户和设备分配这些策略。 而是将策略与应用关联，然后分配应用。 只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
+使用 Microsoft Intune 中的应用配置策略可提供适用于 iOS 应用的自定义配置设置。 基于供应商的说明，可利用这些配置设置对应用进行自定义。 必须从应用供应商处获得这些设置配置（键和值）。 要配置应用，需以键和值的形式指定设置，或以包含键和值的 XML 进行指定。 此外，无需直接向用户和设备分配这些配置策略。 而是应将配置策略与一个应用相互关联，然后分配该应用。 只要应用检测到配置策略设置（通常在其首次运行时），即会使用它们。
 
-可通过将包括和排除分配相结合来向一组用户和设备分配应用程序配置策略。 添加应用配置策略后，即可设置应用分配策略的配置。 设置策略分配时，可选择包括和排除应用该策略的用户组。 选择包括一个或多个组时，可以选择要包括的特定组或选择内置组。 内置组包括“所有用户”、“所有设备”和“所有用户 + 所有设备”。 
+添加应用配置策略后，即可设置应用分配策略的配置。 设置策略分配时，可选择包括和排除应用该策略的用户组。 选择包括一个或多个组时，可以选择要包括的特定组或选择内置组。 内置组包括“所有用户”、“所有设备”和“所有用户 + 所有设备”。 
 
 >[!NOTE]
 >为方便起见，Intune 在具有内置优化的控制台中提供了预先创建的“所有用户”和“所有设备”组。 强烈建议针对所有用户和所有设备使用这些组，而不要使用你自己创建的任何“所有用户”或“所有设备”组。
 
-为应用程序配置策略选择了包括的组之后，也可以选择要排除的特定组。
+为应用程序配置策略选择了包括的组之后，也可以选择要排除的特定组。 有关详细信息，请参阅[在 Microsoft Intune 中包括和排除应用分配](apps-inc-exl-assignments.md)。
 
 > [!TIP]
 > 此策略类型目前仅适用于运行 iOS 8.0 及更高版本的设备。 它支持下列应用安装类型：
@@ -49,18 +50,16 @@ ms.lasthandoff: 04/16/2018
 3. 选择“移动应用”工作负荷。
 4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”。
 5. 设置以下详细信息：
-    - **名称**<br>
-      在 Azure 门户中显示的配置文件名。
-    - **描述**<br>
-      在 Azure 门户中显示的配置文件说明。
-    - **设备注册类型**<br>
-      选择“受管理设备”。
+    - **名称** - 在 Azure 门户中显示的配置文件名。
+    - **说明** - 在 Azure 门户中显示的配置文件说明。
+    - **设备注册类型** - 选择“托管应用”。
 6. 对“平台”选择“iOS”。
 7.  选择“关联应用”。 然后在“关联应用”窗格中，选择要对其应用配置的托管应用，并选择“确定”。
 8.  在“添加配置策略”窗格中，选择“配置设置”。
-9. 选择“配置设置格式”。 选择以下选项之一：
-    - **[使用配置设计器](#use-configuration-designer)**
-    - **[输入 XML 数据](#enter-xml-data)**
+9. 选择“配置设置格式”。 选择以下一种方法来添加 XML 信息：
+    - **使用配置设计器**
+    - **输入 XML 数据**<br></br>
+    有关使用配置设计器的详细信息，请参阅[使用配置设计器](#use-configuration-designer)。 有关输入 XML 数据的详细信息，请参阅[输入 XML 数据](#enter-xml-data)。 
 10. 添加完 XML 信息后，选择“确定”，然后选择“添加”以添加配置策略。 随即显示配置策略的概述窗格。
 11. 选择“分配”，显示包括和排除选项。 
 
@@ -80,17 +79,14 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="use-configuration-designer"></a>使用配置设计器
 
-可对已注册或未注册 Intune 的设备上的应用使用配置设计器。 使用设计器可配置特定配置键和值。 还须指定每个值的数据类型。 在安装应用时，将自动向应用提供设置。
+Microsoft Intune 提供对应用而言唯一的配置设置。 可对已注册或未注册 Microsoft Intune 的设备上的应用使用配置设计器。 使用设计器可配置特定配置键和值，有助于创建基础 XML。 还须指定每个值的数据类型。 安装应用时，这些设置会自动提供给应用。
 
 ### <a name="add-a-setting"></a>添加设置
 
 1. 对于配置中的每个项和值，请设置以下内容：
-   - **配置项**<br>
-     对特定设置配置进行唯一标识的键。
-   - **值类型**<br>
-     配置值的数据类型。 类型包括整数、实数、字符串或布尔值。
-   - **配置值**<br>
-     配置的值。
+   - **配置键** - 对特定设置配置进行唯一标识的键。
+   - **值类型** - 配置值的数据类型。 类型包括整数、实数、字符串或布尔值。
+   - **配置值** - 该配置的值。
 2. 选择“确定”以设置配置设置。
 
 ### <a name="delete-a-setting"></a>删除设置
@@ -165,4 +161,4 @@ Intune 在属性列表中支持以下数据类型：
 
 ## <a name="next-steps"></a>后续步骤
 
-照常继续[分配](apps-deploy.md)和[监视](apps-monitor.md)应用。
+继续[分配](apps-deploy.md)和[监视](apps-monitor.md)应用。

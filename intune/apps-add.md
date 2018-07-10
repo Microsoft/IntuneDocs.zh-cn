@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744986"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263398"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
 
@@ -56,8 +56,8 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 | 适用于 macOS 的 Office 365 应用 | 应用商店应用 (Office 365) | 在“Office 365 套件”下选择“macOS”作为“应用类型”，然后选择 Office 365 应用套件。 |
 | Android 业务线 (LOB) 应用 | LOB 应用 | 选择“业务线应用”作为“应用类型”，选择“应用包文件”，然后输入扩展名为 .apk 的 Android 安装文件。  |
 | iOS LOB 应用 | LOB 应用 | 选择“业务线应用”作为“应用类型”，选择“应用包文件”，然后输入扩展名为 .ipa 的 iOS 安装文件。  |
-| Windows Phone LOB 应用 | LOB 应用 | 选择“业务线应用”作为“应用类型”，选择“应用包文件”，然后输入扩展名为 .xap 的 iOS 安装文件。  |
-| Windows LOB 应用 | LOB 应用 | 选择“业务线应用”作为应用类型，选择“应用包文件”，然后输入扩展名为 .msi、.appx 或 .appxbundle 的 iOS 安装文件。 |
+| Windows Phone LOB 应用 | LOB 应用 | 选择“业务线应用”作为“应用类型”，选择“应用包文件”，然后输入扩展名为 .xap 的 Windows Phone 安装文件。  |
+| Windows LOB 应用 | LOB 应用 | 选择“业务线应用”作为应用类型，选择“应用包文件”，然后输入扩展名为 .msi、.appx 或 .appxbundle 的 Windows 安装文件。 |
 | 内置的 iOS 应用  | 内置应用 | 选择“内置应用”作为“应用类型”，然后从提供的应用列表中选择内置应用。  |
 | 内置的 Android 应用  | 内置应用 | 选择“内置应用”作为“应用类型”，然后从提供的应用列表中选择内置应用。  |
 | Web 应用  | Web 应用  | 选择“Web 链接”作为应用类型，然后输入指向该 Web 应用的有效 URL。  |
