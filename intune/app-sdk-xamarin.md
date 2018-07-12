@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f8f5e397c314088c7b26edba486f9cbaf9718096
-ms.sourcegitcommit: 1eddded65ae9e442dd3bebd16b9428af76a67f34
+ms.openlocfilehash: 421dede4b0da71fe04649e21bfcf7c15d2270507
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250938"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869349"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -34,14 +34,12 @@ ms.locfileid: "35250938"
 ## <a name="whats-supported"></a>支持的功能
 
 ### <a name="developer-machines"></a>开发人员计算机
-* Windows
+* Windows（Visual Studio 版本 15.7+）
 * macOS
-
 
 ### <a name="mobile-app-platforms"></a>移动应用平台
 * Android
 * iOS
-
 
 ### <a name="intune-mobile-application-management-scenarios"></a>Intune 移动应用程序管理方案
 
@@ -52,6 +50,20 @@ ms.locfileid: "35250938"
 使用 Intune App SDK Xamarin Bindings 生成的 Xamarin 应用现在可以在已注册和未注册 Intune 移动设备管理 (MDM) 的设备上接收 Intune 应用保护策略。
 
 ## <a name="prerequisites"></a>必备条件
+
+* **[仅限 Android]** 必须在设备上安装最新的 Microsoft Intune 公司门户应用。
+
+## <a name="get-started"></a>入门
+
+1. 阅读 Microsoft Intune MAM Xamarin 组件的[许可条款](https://components.xamarin.com/license/microsoft.intune.mam)。
+
+2.  从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) 下载 Intune App SDK Xamarin 组件文件夹并从中提取。 在 步骤 1 和 3 中下载的这两个文件应处于相同的目录级别。
+
+3.  在命令行中以管理员身份运行 `Xamarin.Component.exe install <.xam> file`。
+
+4.  在 Visual Studio 中，右键单击以前创建的 Xamarin 项目中的“组件”。
+
+5.  选择“编辑组件”并添加以本地方式下载到计算机上的 Intune App SDK 组件。
 
 查看[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 打印并保留一份许可条款，以留作记录。 下载和使用 Intune App SDK Xamarin Bindings 即表示你同意这些许可条款。 如果不接受这些条款，请不要使用此软件。
 
@@ -79,6 +91,8 @@ ms.locfileid: "35250938"
 > 没有适用于 iOS 的重映射器。 集成到 Xamarin.Forms 应用应与集成到常规 Xamarin.iOS 项目的操作相同。 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 移动应用中启用 Intune 应用保护策略
+
+对于不使用 UI 框架的基于 Xamarin 的 Android 应用，需要阅读并遵循 [Intune App SDK for Android 开发人员指南](app-sdk-android.md)。 对于基于 Xamarin 的 Android 应用，需要根据本指南所包含的[表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)将类、方法和活动替换为其 MAM 等效项。 如果应用没有定义 `android.app.Application` 类，则需要创建一个，并确保继承自 `MAMApplication`。
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android 集成
 
@@ -110,4 +124,37 @@ ms.locfileid: "35250938"
 
 ## <a name="support"></a>Support
 
+你已完成将组件内置到应用中的基本步骤。 现在可以按照 Xamarin Android 示例应用中的所述步骤进行操作。 我们提供了两个示例，一个用于 Xamarin.Forms，另一个用于 Android。
+
+## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>需要 Intune 应用保护策略才能使用基于 Xamarin 的 Android LOB 应用（可选） 
+
+按照以下指南，可确保基于 Xamarin 的 Android LOB 应用只能由受 Intune 保护的用户在其设备上使用。 
+
+### <a name="general-requirements"></a>一般要求
+* Intune SDK 团队需要应用的应用程序 ID。 可在 [Azure 门户](https://portal.azure.com/)中“所有应用程序”下的“应用程序 ID”列找到此内容。 建议通过电子邮件 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
+     
+### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
+以下说明专门面向最终用户设备上要求使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用。
+
+1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
+> [!NOTE] 
+> “客户端 ID”一词与 Azure 门户中与应用关联的“应用程序 ID”一词的含义相同。 
+* 启用 SSO 需要“通用 ADAL 配置”#2。
+
+2. 通过将以下值放入清单来启用默认注册：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则可能发生冲突。
+
+3. 通过将以下值放入清单来启用所需的 MAM 策略：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> 这将强制应用在设备上下载公司门户，并且需要完成默认注册流程才能使用。
+
+### <a name="working-with-adal"></a>使用 ADAL
+以下说明是要求在最终用户设备上使用 Intune 应用保护策略的 .NET/Xamarin 应用的要求。
+
+1. 请按照 ADAL 文档中 [Android 代理身份验证](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android)下定义的所有步骤操作。
+> [!NOTE] 
+> .NET ADAL 下一次将发布的版本 (3.17.4) 预计将包含实现此工作所需的修补程序。
+
 如果你的组织已经是 Intune 的客户，请与 Microsoft 支持代表合作打开支持票证并在 [Github 问题页](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上创建一个问题，我们会尽快为你提供帮助。 
+

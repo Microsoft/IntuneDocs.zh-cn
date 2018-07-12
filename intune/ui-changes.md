@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232930"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905370"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
 我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 本参考指南面向非常熟悉经典门户中的 Intune 且想知道如何使用 Azure 门户中的 Intune 完成工作的用户。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。
@@ -36,7 +36,7 @@ ms.locfileid: "36232930"
 |按 IMEI 分组（所有平台）| 组 > 所有设备 > 企业预注册设备 > 按 IMEI（所有平台） | [设备注册 > 公司设备标识符](#by-imei-all-platforms)|
 | 公司设备注册配置文件| 策略 > 企业设备注册 | [设备注册 > Apple 注册 > 注册计划配置文件](#where-did-corporate-pre-enrolled-devices-go) |
 | 公司设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple 注册 > AC 配置文件](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | 管理员 > 移动设备管理 > Android for Work | 设备注册 > Android for Work 注册 |
+| Android for Work | 管理员 > 移动设备管理 > Android for Work | 设备注册 > Android 注册 |
 | 条款和条件 | 策略 > 条款和条件 | 设备注册 > 条款和条件 |
 “公司门户”设置|“管理”>“公司门户”|“管理”>“移动应用”<br> “设置”>“‘公司门户’品牌”
 

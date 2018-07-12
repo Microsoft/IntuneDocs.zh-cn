@@ -10,7 +10,7 @@
   有关已验证 Samsung Knox Standard 设备的完整列表，请参阅 [Android 和 Samsung Knox Standard 策略设置](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)。
 
 
-- Android for Work [要求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)。
+- Android 企业[要求](https://support.google.com/work/android/answer/6174145?hl=en)。
 
 ### <a name="microsoft"></a>Microsoft
 

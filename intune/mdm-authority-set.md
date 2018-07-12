@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232912"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906033"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>设置移动设备管理机构
 
@@ -41,9 +41,11 @@ ms.locfileid: "36232912"
 
 ## <a name="set-mdm-authority-to-intune"></a>将 MDM 机构设置为 Intune
 
+如果尚未设置 MDM 权限，请执行以下步骤。 若要从一个 MDM 机构更改为另一个，请参阅以下[更改 MDM 机构](#prepare-to-change-the-mdm-authority-to-configuration-manager)部分。
+
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 选择橙色横幅，打开“移动设备管理机构”设置。
+3. 选择橙色横幅，打开“移动设备管理机构”设置。 如果尚未设置 MDM 机构，则仅显示橙色横幅。
 4. 在“移动设备管理机构”下，从以下选项中选择你的 MDM 机构：
    - Intune MDM 机构
    - Configuration Manager MDM 机构
@@ -57,7 +59,7 @@ ms.locfileid: "36232912"
 启用 Android 或 Apple 设备管理后，Intune 将发送设备和用户信息来与这些第三方服务集成，以便管理其各自的设备。
 
 可以同意共享数据的场景包括：
-- 启用 Android for Work 时。
+- 启用 Android 工作配置文件。
 - 启用并上传 Apple MDM Push Certificate 时。
 - 启用任何诸如设备注册计划、School Manager 或批量采购计划等 Apple 服务时。
 

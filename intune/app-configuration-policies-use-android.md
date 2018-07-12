@@ -1,7 +1,7 @@
 ---
 title: 为受管理的 Android 设备添加应用配置策略
 titlesuffix: Microsoft Intune
-description: 使用 Microsoft Intune 中的应用配置策略可提供用户在运行 Android for Work 应用时的设置。
+description: 使用 Microsoft Intune 中的应用配置策略，可提供用户在运行 Android 工作配置文件应用时的设置。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,18 +15,18 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34470859"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905744"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>为受管理的 Android 设备添加应用配置策略
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用 Microsoft Intune 中的应用配置策略提供 Android for Work 应用所需的设置。 应用开发人员必须公开 Android 托管应用配置设置，以便指定该应用的配置设置。 将应用配置策略分配给想要应用设置的用户组。  只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
+使用 Microsoft Intune 中的应用配置策略，可为 Android 工作配置文件应用提供设置。 应用开发人员必须公开 Android 托管应用配置设置，以便指定该应用的配置设置。 将应用配置策略分配给想要应用设置的用户组。  只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
 
 > [!Note]  
 > 并非所有应用都支持应用配置。 请咨询应用开发人员，确定他们构建的应用是否支持应用配置策略。
@@ -39,8 +39,8 @@ ms.locfileid: "34470859"
     - **名称** - 将在 Azure 门户中显示的配置文件名称。
     - **说明** - 将在 Azure 门户中显示的配置文件说明。
     - **设备注册类型** - 选择“托管应用”。
-6. 对于“平台”，选择“Android for Work”。
-7. 选择“关联应用”，以选择要为其定义应用配置策略的应用。 从你已同意并与 Intune 同步的 Android for Work 应用列表中选择。
+6. 对“平台”选择“Android”。
+7. 选择“关联应用”，可选择要为其定义应用配置策略的应用。 从已批准并与 Intune 同步的 Android 工作配置文件应用列表中选择。
 8. 选择“权限”。 可使用以下工具设置配置：
     - [配置设计器](#Use-the-configuration-designer)
     - [JSON 编辑器](#Enter-the-JSON-editor)
@@ -94,8 +94,8 @@ ms.locfileid: "34470859"
     - **名称**。 在 Azure 门户中显示的配置文件名称。
     - **说明**。 在 Azure 门户中显示的配置文件说明。
     - “设备注册类型”。 选择“受管理设备”。
-    - “平台”。 选择“Android for Work”。
-5. 选择“关联应用”，以选择要定义配置策略的应用。 从你已同意并与 Intune 同步的 Android for Work 应用列表中选择。
+    - “平台”。 选择“Android”。
+5. 选择“关联应用”，以选择要定义配置策略的应用。 从已批准并与 Intune 同步的 Android 工作配置文件应用列表中选择。
 6. 选择“权限”，然后选择“添加”。
 7. 从可用应用权限列表中选择，然后选择“确定”。
 8. 为各权限选择选项以授予此策略：

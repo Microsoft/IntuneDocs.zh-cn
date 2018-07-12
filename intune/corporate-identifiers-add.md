@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8517e9a9dd698e875214fe363d8e1246129b96a
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042705"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905863"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
@@ -47,7 +47,7 @@ Intune 管理员可以创建和导入列有 IMEI 编号或序列号的逗号分�
 [了解如何查找 Apple 设备序列号](https://support.apple.com/HT204308)。<br>
 [了解如何查找 Android 设备序列号](https://support.google.com/store/answer/3333000)。
 
-## <a name="add-corporate-identifiers"></a>添加企业标识符
+## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>使用 .csv 文件添加企业标识符
 若要创建列表，请创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加 IMEI 或序列号，在右列添加详细信息。 仅可在单个 .csv 文件中导入一种类型的 ID、IMEI 或序列号。 详细信息限制为 128 个字符，且仅用于管理。 在设备上不显示详细信息。 当前限制为每个 .csv 文件 5,000 行。
 
 **上传含序列号的 .csv 文件** - 创建两列不带标头的逗号分隔值 (.csv) 列表，并将列表限制为每个 .csv 文件 5,000 台设备或 5 MB。
@@ -70,19 +70,33 @@ Intune 管理员可以创建和导入列有 IMEI 编号或序列号的逗号分�
 >设备向 Intune 报告的序列号可能与设备的“Android 设置/关于”菜单中显示的 ID 不一致。 请验证设备制造商报告的序列号的类型。
 >尝试上传其序列号中包含点 (.) 的文件将导致上传失败。 不支持包含点的序列号。
 
-### <a name="add-a-csv-list-of-corporate-identifiers"></a>添加企业标识符 .csv 列表
+### <a name="upload-a-csv-list-of-corporate-identifiers"></a>上传企业标识符 .csv 列表
 
-1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册” > “公司设备标识符”，然后单击“添加”。
+1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册” > “公司设备标识符” > “添加” > “上传 CSV 文件”。
 
    ![突出显示了“添加”按钮的企业设备标识符工作区](./media/add-corp-id.png)
 
-2. 在“添加标识符”边栏选项卡中，指定标识符类型：IMEI 或“序列号”。 你可以指定先前导入的号码是否应“覆盖现有标识符的详细信息”。
+2. 在“添加标识符”边栏选项卡中，指定标识符类型：IMEI 或“序列号”。
 
-3. 单击文件夹图标并指定要导入的列表的路径。 导航到 .csv 文件，然后选择“添加”。 可单击“刷新”，查看新的设备标识符。
+3. 单击文件夹图标并指定要导入的列表的路径。 导航到 .csv 文件，然后选择“添加”。 
+
+4. 如果 .csv 文件包含已位于 Intune 中但具有不同细节的企业标识符，将出现“查看重复标识符”弹出窗口。 选择要覆盖到 Intune 中的标识符，然后选择“确定”以添加标识符。 对于每个标识符，仅比较第一个副本。
+
+## <a name="manually-enter-corporate-identifiers"></a>手动输入企业标识符
+
+1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册” > “公司设备标识符” > “添加” > “手动输入”。
+
+2. 在“添加标识符”边栏选项卡中，指定标识符类型：IMEI 或“序列号”。
+
+3. 输入要添加的每个标识符的“标识符”和“详细信息”。 完成输入标识符后，选择“添加”。
+
+5. 如果输入已位于 Intune 中但具有不同细节的企业标识符，将出现“查看重复标识符”弹出窗口。 选择要覆盖到 Intune 中的标识符，然后选择“确定”以添加标识符。 对于每个标识符，仅比较第一个副本。
+
+可单击“刷新”，查看新的设备标识符。
 
 导入设备不一定必须进行注册。 设备状态可以是“已注册”或“未连接”。 “未连接”表示该设备没有与 Intune 服务通信。
 
-### <a name="delete-corporate-identifiers"></a>删除企业标识符
+## <a name="delete-corporate-identifiers"></a>删除企业标识符
 
 1. 在 [Azure 门户中的 Intune](https://portal.azure.com) 中，选择“设备注册” > “公司设备标识符”。
 2. 选择要删除的设备标识符，然后选择“删除”。
@@ -90,7 +104,7 @@ Intune 管理员可以创建和导入列有 IMEI 编号或序列号的逗号分�
 
 删除已注册设备的企业标识符不会更改设备的所有权。 若要更改设备的所有权，请转到“设备”，选择该设备，选择“属性”，然后更改“设备所有权”。
 
-### <a name="imei-specifications"></a>IMEI 规格
+## <a name="imei-specifications"></a>IMEI 规格
 有关国际移动设备识别号的详细规范，请参阅 [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)。
 
 ## <a name="change-device-ownership"></a>更改设备所有权

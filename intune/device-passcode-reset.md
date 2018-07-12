@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964719"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905149"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -30,6 +30,7 @@ ms.locfileid: "36964719"
 
 - 使用 Work 配置文件注册且版本在 8.0 及以上的 Android 设备
 - 版本在 6.0 及以下的 Android 设备
+- Android 企业展台设备
 - iOS 
      
 ## <a name="unsupported-platforms"></a>不受支持的平台
@@ -46,9 +47,9 @@ ms.locfileid: "36964719"
 3. 依次选择“设备”和“所有设备”。
 4. 从你管理的设备列表中，选择一个设备，然后选择“...更多”。 然后选择“删除密码”设备远程操作。
 
-## <a name="resetting-android-for-work-passcodes"></a>重置 Android for Work 密码
+## <a name="resetting-android-work-profile-passcodes"></a>重置 Android 工作配置文件密码
 
-受支持的 Android for Work 设备为最终用户接收新的托管配置文件解锁密码或托管配置文件质询。 对于具有 Work 配置文件且版本在 Android 8.0 及以上的设备，最终用户完成注册后会立即收到激活其重置密码令牌的通知。 需提供和设置 Work 配置文件密码时会显示该通知。 输入其密码后，该通知将消除。
+受支持的 Android 工作配置文件设备为最终用户接收新的托管配置文件解锁密码或托管配置文件质询。 对于 Android 8.0 工作配置文件设备，最终用户会在注册完成后立即收到激活其重置密码的通知。 需提供和设置 Work 配置文件密码时会显示该通知。 输入其密码后，该通知将消除。
 
 ## <a name="resetting-ios-passcodes"></a>重置 iOS 密码
 

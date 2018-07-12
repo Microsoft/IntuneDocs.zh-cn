@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263398"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905982"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
 
@@ -51,7 +51,7 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 | iOS App Store 应用  | 应用商店应用  | 选择“iOS”作为“应用类型”，搜索应用，然后在 Intune 内选择该应用。 |
 | Windows Phone 8.1 应用商店应用  | 应用商店应用  | 选择“Windows Phone 8.1”作为“应用类型”，然后输入应用的 Microsoft 应用商店 URL。 |
 | Microsoft 应用商店应用  | 应用商店应用  | 选择“Windows”作为“应用类型”，然后输入应用的 Microsoft 应用商店 URL。 |
-| Android for Work 应用 | 应用商店应用  | 在 Google Play for Work 商店中查找和批准 Android for Work 应用。  |
+| Android 工作应用 | 应用商店应用  | 从托管 Google Play 商店中找到并批准 Android 工作配置文件应用。  |
 | 适用于 Windows 10 的 Office 365 应用  | 应用商店应用 (Office 365) | 在“Office 365 套件”下选择“Windows 10”作为“应用类型”，然后选择要安装的 Office 365 应用。  |
 | 适用于 macOS 的 Office 365 应用 | 应用商店应用 (Office 365) | 在“Office 365 套件”下选择“macOS”作为“应用类型”，然后选择 Office 365 应用套件。 |
 | Android 业务线 (LOB) 应用 | LOB 应用 | 选择“业务线应用”作为“应用类型”，选择“应用包文件”，然后输入扩展名为 .apk 的 Android 安装文件。  |
@@ -117,7 +117,7 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 ### <a name="understanding-licensed-apps"></a>了解获得许可的应用
 除了了解 Web 应用、应用商店应用和 LOB 应用，还应注意批量采购计划的应用和获得许可的应用的目标，例如： 
 - 适用于企业的 Apple 批量采购计划（iOS 和 MacOS）：在 iOS 应用商店中，可以购买要在公司中运行的应用的多个许可证。 购买多个副本可帮助你有效地管理公司的应用。 有关详细信息，请参阅[管理批量购买的 iOS 应用](vpp-apps-ios.md)。
-- Android for Work (Android)：可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android for Work 设备。 为 Android for Work 安装的所有应用都来自 Google Play for Work 商店。 登录到该商店，浏览查找所需应用，然后批准它们。 然后，该应用会显示在 Azure 门户的“许可的应用”节点中，可以像管理任何其他应用一样管理应用的分配。
+- Android 工作配置文件：可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android 工作配置文件设备。 为 Android 工作配置文件安装的所有应用都来自托管 Google Play 商店。 登录到该商店，浏览查找所需应用，然后批准它们。 然后，该应用会显示在 Azure 门户的“许可的应用”节点中，可以像管理任何其他应用一样管理应用的分配。
 - 适用于企业的 Microsoft Store (Windows 10)：可在适用于企业的 Microsoft Store 中为组织查找和购买应用（单个或批量）。 通过将此应用商店与 Microsoft Intune 相连，可以在 Azure 门户中管理批量购买的应用。 有关详细信息，请参阅[管理来自适用于企业的 Microsoft Store 的应用](windows-store-for-business.md)。
 
 ## <a name="before-you-add-apps"></a>添加应用之前
