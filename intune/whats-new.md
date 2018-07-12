@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/29/2018
+ms.date: 07/05/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 229c97723c5774b6823699c7d0b0bc9f9b194690
-ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
+ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
+ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37134014"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37927023"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,95 @@ ms.locfileid: "37134014"
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-2-2018"></a>2018 年 7 月 2 日的这一周
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Windows Installer 的其他安全设置 <!-- 2282430 -->
+可允许用户控制应用安装。 如果启用，则允许因安全冲突而停止的安装继续进行。 当 Windows Installer 在系统上安装任何程序时，可指示它使用提升的权限。 此外，还可以对 Windows 信息保护 (WIP) 项目编制索引，并将有关这些项目的元数据存储在未加密的位置。 禁用策略后，不会索引受 WIP 保护的项，也不会在 Cortana 或文件资源管理器的结果中显示这些项。 默认情况下禁用这些选项的功能。 
+
+#### <a name="monitor-ios--app-configuration-status-per-device----880037---"></a>监控每个设备的 iOS 应用配置状态 <!-- 880037 -->
+作为 Microsoft Intune 管理员，可监控每个受管理设备的 iOS 应用配置状态。 从 Azure 门户的“Microsoft Intune”中，选择“设备” > “所有设备”。 从受管理设备列表中选择特定设备，以显示该设备的边栏选项卡。 在该设备的边栏选项卡上，选择“应用配置”。
+
+#### <a name="access-actions-for-app-protection-policies----1483510---"></a>应用保护策略操作的访问权限 <!-- 1483510 -->
+可配置应用保护策略，显式擦除、阻止或警告不符合要求的设备。 “擦除”操作将从设备中删除贵公司的企业数据。 当出现擦除操作时，系统将会通知设备的用户擦除原因和修正步骤。 对于某些设置（例如，最低操作版本），你将能够应用多个操作，例如阻止和擦除。 注意，启动应用时会触发这些操作。
+
+#### <a name="selective-wipe-of-organizations-app-data----1507030---"></a>选择性擦除组织的应用数据 <!-- 1507030 -->
+当不满足应用程序保护策略 (APP) 访问设置的条件时，管理员现可配置一项新操作，即选择性擦除组织数据配置。  此功能可帮助管理员根据预先配置的标准自动保护和删除应用程序中的敏感组织数据。
+
+#### <a name="revoking-an-ios-app-purchased-through-vpp----1777384---"></a>撤销通过 VPP 购买的 iOS 应用 <!-- 1777384 -->
+作为 Microsoft Intune 管理员，可撤销通过批量采购计划 (VPP) 购买的选定 iOS 应用的所有许可证。 可在取消向用户分配用户许可的应用时向其发出通知。 撤销应用许可证将不会从设备中卸载相关的 VPP 应用。 若要卸载 VPP 应用，必须将分配操作更改为“卸载”。 回收的许可证计数将反映在 Intune“应用”工作负荷的“许可应用”节点中。 有关 iOS VPP 应用的详细信息，请参阅[如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用](vpp-apps-ios.md)。
+
+#### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>公司门户应用中不合规消息的更新<!-- 1832222 -->
+我们修改了设备用户在设备不合规时看到的消息。 消息保留其原始含义，但已使用更友好的语言和更少的技术术语进行了更新。 我们还刷新了文档和修正步骤的链接，以保持最新状态。
+以下修改前后的内容是将看到的消息改进的一个示例：
+- 修改前：此设备未在 IT 管理员要求的指定时间内联系 Intune 服务。要解决此问题，请打开设备上的公司门户应用，单击“检查符合性”按钮。
+- 修改后：设备在一段时间内未签入组织。要重新建立连接，请打开设备上的公司门户应用并点击设备的“检查设置”。
+
+#### <a name="revoke-ios-vpp-app-license----1863797---"></a>撤消 iOS VPP 应用许可证 <!-- 1863797 -->
+作为管理员，可回收分配给用户或设备的 iOS VPP 应用许可证。 也可通过卸载 iOS VPP 应用回收应用许可证。 卸载应用前，需要将用户或设备从应用的目标组中删除。 从该组中删除用户或设备可避免重新安装该应用。 完成这些步骤后，可选择将该应用许可证分配给其他用户或设备。 有关 iOS VPP 应用许可证的详细信息，请参阅[在 Microsoft Intune 中管理 iOS 批量购买的应用](vpp-apps-ios.md)。
+
+#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>对 macOS 的业务线 (LOB) 应用支持 <!-- 1895847 -->
+Microsoft Intune 允许将 macOS LOB 应用部署为“必需”或“注册时可用”。 最终用户可通过 macOS 公司门户或[公司门户网站](https://portal.manage.microsoft.com)获得部署为“可用”的应用。
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>使用“访问工作或学校帐户”设置选择设备类别 <!-- 1058963 eenotready --> 
+如果已启用[设备组映射](https://docs.microsoft.com/en-us/intune/device-group-mapping)，Windows 10 用户现将在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后，看到选择设备类别的提示。 
+
+#### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>使用 sAMAccountName 作为电子邮件配置文件的帐户用户名 <!-- 1500307 -->
+可使用本地“sAMAccountName”作为 Android、iOS 和 Windows 10 的电子邮件配置文件的帐户用户名。 还可从 Azure Active Directory (Azure AD) 中的 `domain` 或 `ntdomain` 属性获取域。 或者，输入自定义静态域。
+
+若要使用此功能，必须将本地 Active Directory 环境中的 `sAMAccountName` 属性同步到 Azure AD。
+
+适用于 [Android](email-settings-android.md)、[iOS](email-settings-ios.md)、[Windows 10 及更高版本](email-settings-windows-10.md)
+
+#### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a>查看冲突的设备配置文件<!-- 1556983 -->
+“设备配置”中将显示现有配置文件列表。 此更新中添加了新列，用于提供有冲突的配置文件的详细信息。 可选中冲突的行以查看存在冲突的设置和配置文件。 
+
+可在[管理配置文件](device-profile-monitor.md#view-conflicts)中查看详细信息。
+
+#### <a name="new-status-for-devices-in-device-compliance----2308882---"></a>设备符合性中的设备新状态 <!-- 2308882 -->
+在“设备符合性” > “策略”>“选择策略”>“概述”中，添加以下新状态：
+- 成功
+- 错误
+- 冲突
+- 挂起
+- 不适用 还显示了图像，展示其他平台的设备计数。 例如，如果正在查看 iOS 配置文件，则新磁贴会显示同时分配给到配置文件的非 iOS 设备数。 请参阅[设备符合性策略](compliance-policy-monitor.md#view-status-of-device-policies)。
+
+#### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>设备符合性支持第三方防病毒解决方案 <!-- 2325484 -->
+当创建设备符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: Windows 10 及更高版本” > “设置” > “系统安全”）时，会出现新的[设备安全性](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)选项： 
+- 防病毒：当设置为“需要”时，可使用在 Windows 安全中心注册的防病毒解决方案（如 Symantec 和 Windows Defender）来检查符合性。 
+- 反间谍软件：当设置为“需要”时，可以使用在 Windows 安全中心注册的反间谍软件解决方案（如 Symantec 和 Windows Defender）来检查符合性。 
+
+适用于：Windows 10 及更高版本 
+
+### <a name="device-enrollment"></a>设备注册
+
+####  <a name="devices-without-profiles-column-in-the-list-of-enrollment-program-tokens----1853904---"></a>注册计划令牌列表中没有配置文件列的设备 <!-- 1853904 -->
+注册计划令牌列表中存在一个新列，显示未分配配置文件的设备数量。 这有助于管理员在将配置文件分发给用户之前，先为这些设备分配配置文件。 若要查看新列，请转到“设备注册” > “Apple 注册” > “注册计划令牌”。
+
+### <a name="device-management"></a>设备管理
+
+#### <a name="google-name-changes-for-android-for-work-and-play-for-work---842873---"></a>停用 Android for Work 和 Play for Work 以反映 Google 名称更改 <!--842873 -->
+Intune 已更新“Android for Work”术语，以反映 Google 品牌的更改。 不再使用术语“Android for Work”和“Play for Work”。 根据上下文使用不同的术语：
+- “Android 企业”指整个现代 Android 管理堆栈。
+- “工作配置文件”或“配置文件所有者”指使用工作配置文件管理的 BYOD 设备。
+- “托管的 Google Play”指 Google 应用商店。
+
+#### <a name="rules-for-removing-devices----1609459---"></a>删除设备的规则<!-- 1609459 -->
+提供新规则，用于自动删除未在设置天数内进行签入的设备。 要查看新规则，请转到“Intune”窗格，依次选择“设备”和“设备清理规则”。
+
+#### <a name="corporate-owned-single-cosu-use-support-for-android-devices----1630973---"></a>支持公司拥有的单一 (COSU) 用途 Android 设备 <!-- 1630973 -->
+
+Intune 现支持受到高度管控的锁定展台式 Android 设备。 这使管理员可以将设备的使用进一步锁定到单个应用或一小组应用，并阻止用户在设备上启用其他应用或执行其他操作。 若要设置 Android 展台，请转到 Intune >“设备注册” > “Android 注册” > “展台和任务设备注册”。 有关详细信息，请参阅[设置 Android 企业展台设备的注册](android-kiosk-enroll.md)。
+
+#### <a name="per-row-review-of-duplicate-corporate-device-identifiers-uploaded----2203794--"></a>逐行查看上传的重复公司设备标识符 <!-- 2203794-->
+上传企业 ID 时，Intune 现提供重复项列表，你可以选择替换或保留现有信息。 选择“设备注册” > “公司设备标识符” > “添加标识符”后，如果有重复项，将显示报告。 
+
+#### <a name="manually-add-corporate-device-identifiers----2203803---"></a>手动添加公司设备标识符 <!-- 2203803 -->
+现在可以手动添加公司设备 ID。 选择“设备注册” > “公司设备标识符” > “添加”。 
+
 ## <a name="week-of-june-25-2018"></a>2018 年 6 月 25 日的这一周
 
 ### <a name="pradeo---new-mobile-threat-defense-partner----1169249---"></a>Pradeo - 新移动威胁防御合作伙伴<!-- 1169249 -->
@@ -340,8 +429,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 macOS 公司门户版本 1.3 和 1.4 未成功向 Intune 注册 Jamf 设备。 macOS 门户版本 1.4.2 可修复此问题。
 
 
-## <a name="week-of-april-9-2018"></a>2018 年 4 月 9 日当周
-
+## <a name="week-of-april-9-2018"></a>2018 年 4 月 9 日当周  
 #### <a name="updated-help-experience-in-company-portal-app-for-android----1631531---"></a>更新了 Android 适用的公司门户应用的帮助体验<!-- 1631531 -->
 
 我们更新了 Android 适用的公司门户应用中的帮助体验，使其符合 Android 平台的最佳做法。 现在如果在使用应用时遇到问题，用户可以点击“菜单” > “帮助”，然后进行以下操作：
@@ -929,6 +1017,25 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 
 ## <a name="notices"></a>通知
 
+### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>更改计划：Intune 将于 9 月支持 iOS 10 及更高版本 <!-- 2454656 -->
+Apple 预计于 9 月发布 iOS 12。 此发布后不久，我们将迁移 Intune 注册、公司门户和托管浏览器，以支持 iOS 10 及更高版本。  
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？  
+iOS 10 及更高版本支持 Office 365 移动应用，因此你可能已经升级了 OS 或设备。 如果是这样，此迁移不会对你造成任何影响。  
+
+但如果拥有下面列出的任何设备，或者想要注册下面列出的任何设备，请注意，它们仅支持 iOS 9 及更早版本。  若要继续访问 Intune 公司门户，必须在 9 月之前将这些设备升级到支持 iOS 10 或更高版本的设备：  
+
+* iPhone 4S  
+* iPod Touch  
+* iPad 2  
+* iPad（第 3 代）  
+* iPad Mini（第 1 代）  
+
+从 7 月开始，使用 iOS 9 和公司门户的 MDM 注册设备将收到升级其 OS 或设备的提示。 如果使用应用保护策略，还可以设置“要求最低 iOS 操作系统版本(仅警告)”访问设置。  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？   
+检查组织中受影响的设备或用户。 在 Azure 门户的 Intune 中，转到“设备”>“所有设备”，然后按 OS 进行筛选。  单击列以显示 OS 版本等详细信息。 要求用户在 9 月前将其设备升级到支持的 OS 版本。  
+
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>更改计划：Intune 将移动到 TLS 1.2
 从 2018 年 10 月 31 日 开始，Intune 将支持可提供同类最佳加密的传输层安全性 (TLS) 协议版本 1.2，以确保我们的服务在默认情况下更加安全，并与 Microsoft Office 365 等其他 Microsoft 服务保持一致。 Office 已在 MC128929 中传达了此更改。
 
@@ -982,9 +1089,9 @@ Intune 对 [Microsoft Intune App SDK Cordova](app-sdk-cordova.md) 插件的支�
 我们将于 4 月引入新的公司门户网站体验，带来 UI 更新、简化的工作流和辅助功能改进。 这将包括应用共享等客户驱动的增强功能和改进的整体性能，以便带来更为用户友好的体验。
 我们根据客户反馈添加了一些新功能，这些功能将显著提高现有功能和可用性：
 
--   整个网站的 UI 改进
--   共享指向应用的直接链接的功能
-- 改善了大型应用目录的性能
+* 整个网站的 UI 改进
+* 共享指向应用的直接链接的功能
+* 改善了大型应用目录的性能
 
 不需要执行任何操作，即可准备好迎接此更改。 更新后的公司门户网站可访问后，我们会通知你。 但是，最终可能需要使用更新后的屏幕截图更新最终用户文档。 请注意，可能还需要更新 iOS 公司门户应用的文档，因为网站驱动 iOS 应用的“应用”部分。 可在[应用 UI 中的新增功能](whats-new-app-ui.md)页上查看此更新的示例图像。
 

@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 删除设备上的公司数据 - Azure | Microsoft Docs
-description: 使用 Microsoft Intune 删除设备上的公司数据，或者在 Android、Android for work、iOS、macOS 或 Windows 设备上恢复出厂设置。 并从 Azure Active Directory 中删除设备。
+description: 使用 Microsoft Intune 删除设备上的公司数据，或者在 Android、Android 工作配置文件、iOS、macOS 或 Windows 设备上恢复出厂设置。 并从 Azure Active Directory 中删除设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091721"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906050"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>通过恢复出厂设置、删除公司数据或手动取消注册设备来删除设备
 
@@ -31,7 +31,7 @@ ms.locfileid: "37091721"
 
 ## <a name="factory-reset"></a>恢复出厂设置
 
-“恢复出厂设置”操作将设备还原为其出厂默认设置。 是否保留或擦除用户数据取决于是否选择“保留注册状态和用户帐户”复选框。
+“恢复出厂设置”操作将设备还原为其出厂默认设置。 如果选择“保留注册状态和用户帐户”复选框，则保留用户数据。 否则，驱动器将被安全擦除。
 
 |恢复出厂设置操作|保留注册状态和用户帐户|从 Intune 管理中删除|描述|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ ms.locfileid: "37091721"
 |Azure AD 脱离|删除 Azure AD 记录。|删除 Azure AD 记录。|
 |联系人 |删除从应用直接同步到本机通讯簿的联系人。 无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|删除从应用直接同步到本机通讯簿的联系人。 无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Android 工作配置文件
 
-从 Android for Work 设备上删除公司数据将删除该设备上工作配置文件中的所有数据、应用和设置。 设备将从 Intune 管理中停用。 Android for Work 不支持恢复出厂设置。
+从 Android 工作配置文件设备上删除公司数据将删除该设备上工作配置文件中的所有数据、应用和设置。 设备将从 Intune 管理中停用。 Android 工作配置文件不支持恢复出厂设置。
+
+### <a name="android-enterprise-kiosk-devices"></a>Android 企业展台设备
+
+只能将 Android 展台设备恢复出厂设置。 不能从 Android 展台设备删除公司数据。
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ ms.locfileid: "37091721"
 
 1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
 2. 选择“设备” > “所有设备”>“选择要删除的设备”>“删除”。
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>使用清理规则自动删除设备
+可配置 Intune 以自动删除看似非活动、过时或无响应的设备。 这些清理规则会持续监控设备清单，以便设备记录保持最新。 以这种方式删除的设备将从 Intune 管理中删除。
+1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
+2. 选择“设备” > “设备清理规则” > “是”。
+3. 在“删除指定天数未签入的设备”框中，输入介于 90 和 270 的数字。
+4. 选择 **“保存”**。
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>从 Azure Active Directory 门户删除设备
 
