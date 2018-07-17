@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905064"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225436"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -88,7 +88,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 当设备注册到 Intune 时，Azure AD 注册过程会启动，这可将设备属性更新到 Azure AD。 设备符合性状态是一项关键信息。 条件访问策略使用该符合性状态阻止或允许访问电子邮件和其他公司资源。
 
-请参阅 [Azure AD 注册过程](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)了解详细信息。
+请参阅 [Azure AD 注册过程](https://docs.microsoft.com/azure/active-directory/device-management-introduction)了解详细信息。
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>分配生成的设备配置文件状态
 
