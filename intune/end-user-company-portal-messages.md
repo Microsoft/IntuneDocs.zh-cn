@@ -15,11 +15,11 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 ms.openlocfilehash: 3ed729e437fcdbc4352bf5fa8ceada4ddf336708
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025801"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224912"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>帮助最终用户理解公司门户应用消息
 
@@ -38,7 +38,7 @@ ms.locfileid: "31025801"
 ### <a name="where-it-appears"></a>显示位置
 在用户注册设备时点击公司门户应用中的“注册”后，将显示“是否允许公司门户发起和管理电话呼叫?”消息。
 
-### <a name="what-it-means"></a>含义
+### <a name="what-it-means"></a>其含义
 若接受此提示，则表示用户允许将设备的电话号码和 IMEI 编号发送到 Intune 服务。 这些号码将在管理员控制台的“硬件”页上显示。
 
 > [!NOTE]
@@ -61,7 +61,7 @@ ms.locfileid: "31025801"
 ### <a name="where-it-appears"></a>显示位置
 在用户注册设备时点击公司门户应用中的“注册”后，将显示“是否允许公司门户访问你的联系人?”消息。
 
-### <a name="what-it-means"></a>含义
+### <a name="what-it-means"></a>其含义
 若接受此提示，则表示用户允许 Intune 创建工作帐户并管理在设备上为用户注册的 Azure Active Directory 标识。
 
 > [!NOTE]
@@ -82,7 +82,7 @@ ms.locfileid: "31025801"
 ### <a name="where-it-appears"></a>显示位置
 在用户点击“发送数据”将日志发送给其 IT 管理员后，将显示“是否允许公司门户访问设备上的照片、媒体和文件?”消息。
 
-### <a name="what-it-means"></a>含义
+### <a name="what-it-means"></a>其含义
 若接受此提示，则表示用户允许其设备将数据日志写入设备的 SD 卡。 这还将允许使用 USB 电缆移动这些日志。   
 
 > [!NOTE]
@@ -105,7 +105,7 @@ ms.locfileid: "31025801"
 > 公司支持人员需要授予你访问公司资源的权限  
 > 公司将使用 Windows 信息保护策略保护你的设备。 公司支持人员需要确保他们允许公司门户访问这些资源。
 
-### <a name="what-it-means"></a>含义
+### <a name="what-it-means"></a>其含义
 
 将公司门户添加到 Windows 信息保护 (WIP) 应用保护策略中的“允许的应用”或“豁免应用”列表。 有关详细信息，请参阅[通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)。
 

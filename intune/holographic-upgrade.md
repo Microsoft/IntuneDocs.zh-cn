@@ -13,17 +13,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e6a71d48e81914808b9af037692a44e4f651bf55
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830427"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224752"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>将运行 Windows Holographic 的设备升级到 Windows Holographic for Business
 
 
-若要使用 Microsoft Intune 管理运行 Windows Holographic 的设备，必须将设备从 Windows Holographic 升级为 Windows Holographic for Business。 可创建版本升级配置文件来执行升级。 对于 Microsoft HoloLens，则可以通过购买商业套件来获得升级所需的许可证。 有关详细信息，请参阅[解锁 Windows Holographic for Business 功能](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise)。
+若要使用 Microsoft Intune 管理运行 Windows Holographic 的设备，必须将设备从 Windows Holographic 升级为 Windows Holographic for Business。 可创建版本升级配置文件来执行升级。 对于 Microsoft HoloLens，则可以通过购买商业套件来获得升级所需的许可证。 有关详细信息，请参阅[解锁 Windows Holographic for Business 功能](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)。
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>设置“版本升级”设备配置文件
 
