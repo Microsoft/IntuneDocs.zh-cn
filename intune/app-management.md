@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d11de1e20f46fb6e13d6d3ef5c9f4a9ee0f98c1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223775"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906101"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -114,8 +114,8 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
 - 公司门户品牌：自定义公司门户，向其提供公司品牌。 有关详情，请参阅：
     - [公司门户配置](company-portal-app.md)。
 - 应用类别：添加、固定和删除应用类别名称。
-- Android for Work：审核并同步已为企业批准的应用。 有关详情，请参阅：
-    - [Android for Work 应用](apps-add-android-for-work.md)。
+- **Android 工作配置文件**：审核并同步已为企业批准的应用。 有关详情，请参阅：
+    - [Android 工作配置文件应用](apps-add-android-for-work.md)。
 
 ### <a name="help-and-support"></a>帮助和支持
 - 帮助和支持：排查问题、请求获取支持或查看 Intune 状态。 有关详情，请参阅：

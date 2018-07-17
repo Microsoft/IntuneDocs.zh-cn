@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905982"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028722"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
 
@@ -51,7 +51,7 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 | iOS App Store 应用  | 应用商店应用  | 选择“iOS”作为“应用类型”，搜索应用，然后在 Intune 内选择该应用。 |
 | Windows Phone 8.1 应用商店应用  | 应用商店应用  | 选择“Windows Phone 8.1”作为“应用类型”，然后输入应用的 Microsoft 应用商店 URL。 |
 | Microsoft 应用商店应用  | 应用商店应用  | 选择“Windows”作为“应用类型”，然后输入应用的 Microsoft 应用商店 URL。 |
-| Android 工作应用 | 应用商店应用  | 从托管 Google Play 商店中找到并批准 Android 工作配置文件应用。  |
+| Android 工作配置文件应用 | 应用商店应用  | 从托管 Google Play 商店中找到并批准 Android 工作配置文件应用。  |
 | 适用于 Windows 10 的 Office 365 应用  | 应用商店应用 (Office 365) | 在“Office 365 套件”下选择“Windows 10”作为“应用类型”，然后选择要安装的 Office 365 应用。  |
 | 适用于 macOS 的 Office 365 应用 | 应用商店应用 (Office 365) | 在“Office 365 套件”下选择“macOS”作为“应用类型”，然后选择 Office 365 应用套件。 |
 | Android 业务线 (LOB) 应用 | LOB 应用 | 选择“业务线应用”作为“应用类型”，选择“应用包文件”，然后输入扩展名为 .apk 的 Android 安装文件。  |

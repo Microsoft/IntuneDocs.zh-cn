@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft Intune 中创建 Android for Work 符合性策略 - Azure | Microsoft Docs
-description: 创建或配置适用于 Android for Work 设备的 Microsoft Intune 设备符合性策略。 选择允许使用已越狱设备、设置可接受的威胁级别、查看 Google Play、输入最低和最高操作系统版本、选择密码要求并允许旁加载应用程序。
+title: 在 Microsoft Intune 中创建 Android 工作配置文件符合性策略 - Azure | Microsoft Docs
+description: 创建或配置适用于 Android 工作配置文件设备的 Microsoft Intune 设备符合性策略。 选择允许使用已越狱设备、设置可接受的威胁级别、查看 Google Play、输入最低和最高操作系统版本、选择密码要求并允许旁加载应用程序。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047979"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905081"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>在 Intune 中添加适用于 Android for Work 设备的设备符合性策略
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>在 Intune 中添加适用于 Android 工作配置文件设备的设备符合性策略
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-适用于 Android for Work 的 Intune 设备符合性策略可指定这些设备须满足才能被视为符合的规则和设置。 可以将这些策略与条件访问结合使用，从而允许或阻止访问公司资源。 还可获取设备报表并针对非符合性采取措施。 可在 Intune Azure 门户中创建不同平台的设备符合性策略。 若要了解有关符合性策略以及所有系统必备组件的详细信息，请参阅[设备符合性入门](device-compliance-get-started.md)。
+适用于 Android 工作配置文件设备的 Intune 设备符合性策略可指定这些设备须满足才能被视为符合的规则和设置。 可以将这些策略与条件访问结合使用，从而允许或阻止访问公司资源。 还可获取设备报表并针对非符合性采取措施。 可在 Intune Azure 门户中创建不同平台的设备符合性策略。 若要了解有关符合性策略以及所有系统必备组件的详细信息，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 下表说明了将符合性策略与条件访问策略一起使用时如何管理非符合性设置。
 
 --------------------------
 
-|**策略设置**| **Android for Work** |
+|**策略设置**| **Android 工作配置文件** |
 | --- | --- |
 | **PIN 或密码配置** |  已隔离 |
 | **设备加密** |  已隔离 |
@@ -51,7 +51,7 @@ ms.locfileid: "34047979"
 ## <a name="create-a-device-compliance-policy"></a>创建设备合规性策略
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. 对于“平台”，选择“Android for Work”。 选择“设置配置”，然后依次输入“设备运行状况”、“设备属性”和“系统安全”设置。 完成后，请选择“确定”，然后选择“创建”。
+5. 对于“平台”，选择“Android 企业”。 选择“设置配置”，然后依次输入“设备运行状况”、“设备属性”和“系统安全”设置。 完成后，请选择“确定”，然后选择“创建”。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ ms.locfileid: "34047979"
 
 #### <a name="threat-scan-on-apps"></a>对应用进行威胁扫描
 
-在具有工作配置文件（Android for Work）的设备上，**对应用进行威胁扫描**设置可作为配置策略设置找到。 管理员可为设备启用此设置。
+在具有 Android 工作配置文件的设备上，“对应用进行威胁扫描”设置可作为配置策略设置找到。 管理员可为设备启用此设置。
 
-如果企业使用 Android 工作配置文件，则可以为已注册的设备启用“对应用进行威胁扫描”。 建立设备配置文件，并且需要进行系统安全设置。 有关详细信息，请参阅 [Intune 中的 Android for Work 设备限制设置](device-restrictions-android-for-work.md)。
+如果企业使用 Android 工作配置文件，则可以为已注册的设备启用“对应用进行威胁扫描”。 建立设备配置文件，并且需要进行系统安全设置。 有关详细信息，请参阅 [Intune 中的工作设备限制设置](device-restrictions-android-for-work.md)。
 
 ## <a name="device-property-settings"></a>设备属性设置
 
@@ -106,13 +106,13 @@ ms.locfileid: "34047979"
 
 ### <a name="encryption"></a>加密
 
-- **需要对移动设备进行加密**：不必配置此设置，因为 Android for Work 设备会强制进行加密。
+- **需要对移动设备进行加密**：不必配置此设置，因为 Android 工作配置文件设备会强制进行加密。
 
 ### <a name="device-security"></a>设备安全
 
-- 阻止来自未知源的应用：无需配置此设置，因为 Android for Work 设备始终限制来自未知源的安装。
+- **阻止来自未知源的应用**：无需配置此设置，因为 Android 工作配置文件设备始终限制来自未知源的安装。
 - 公司门户应用运行时完整性：检查公司门户应用是否安装了默认运行时环境、是否已正确签名、是否不处于调试模式以及是否从已知源安装。
-- 在设备上阻止 USB 调试：无需配置此设置，因为已在 Android for Work 设备上禁用 USB 调试。
+- **在设备上阻止进行 USB 调试**：无需配置此设置，因为已在 Android 工作配置文件设备上禁用 USB 调试。
 - 最低安全修补程序级别：选择设备可具有的最旧的安全修补程序级别。 不满足此修补程序级别的设备将不符合要求。 输入的日期格式必须为 `YYYY-MM-DD`。
 
 ## <a name="assign-user-groups"></a>分配用户组

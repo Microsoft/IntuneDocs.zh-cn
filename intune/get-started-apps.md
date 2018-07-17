@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d99812c57596e10d0cdfa2c0f4504f8a6ac583c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223792"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869332"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>在 Microsoft Intune 中添加应用入门
 
@@ -31,6 +31,9 @@ ms.locfileid: "34223792"
 - **内部编写的应用（业务线）**- 用于上传下载到用户设备的文件。
 - **内置应用** - 用于向 iOS 和 Android 设备分配特选托管应用（例如 Office 365 应用）。
 - **Web 上的应用** - 可供 Intune 用于在设备主屏幕上创建一个到 Web 应用的快捷方式。
+
+> [!NOTE]
+> 应用到动态设备组的新策略可能需要 8 小时才可传播到组中的所有设备。
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>如何分配公共应用商店应用？
 

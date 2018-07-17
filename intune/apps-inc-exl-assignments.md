@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2afba3eafb32a06ff19e2cbbf3b87d27edccf0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224657"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905404"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>在 Microsoft Intune 中包括和排除应用分配
 
@@ -37,7 +37,7 @@ Intune 排除组时不会考虑用户与设备的关联。 在排除设备组的
 >
 > Intune 在控制台中提供了预先创建的“所有用户”和“所有设备”组。 为了方便起见，这些组已内置优化。 强烈建议针对所有用户和所有设备使用这些组，而不要使用可能是你自己创建的任何“所有用户”或“所有设备”组。  
 >
-> Android Enterprise（以前称为 Android for Work）支持包括和排除组。 你可以利用面向 Android Enterprise 应用分配的内置“所有用户”和“所有设备”。 
+> Android 企业支持包括和排除组。 可利用内置的“所有用户”和“所有设备”组进行 Android 企业应用分配。 
 
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>分配应用时包括和排除组 

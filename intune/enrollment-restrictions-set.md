@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026323"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905812"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -39,14 +39,14 @@ ms.locfileid: "31026323"
 - 最大设备注册数。
 - 可注册的设备平台：
   - Android。
-  - Android for Work。
+  - Android 工作配置文件。
   - iOS。
   - macOS。
   - 的支持。
-- 适用于 IOS、Android、Android for Work 和 Windows 的平台操作系统版本。 （仅可使用 Windows 10 版本。 如果允许 Windows 8.1，请将此处留空。）
+- 适用于 iOS、Android、Android 工作配置文件和 Windows 的平台操作系统版本。 （仅可使用 Windows 10 版本。 如果允许 Windows 8.1，请将此处留空。）
   - 最低版本。
   - 最高版本。
-- 限制个人拥有的设备（仅 iOS、Android、Android for Work、macOS）。
+- 限制个人拥有的设备（仅 iOS、Android、Android 工作配置文件、macOS）。
 
 ## <a name="default-restrictions"></a>默认限制
 
@@ -78,7 +78,7 @@ ms.locfileid: "31026323"
 5. 在限制名称（默认限制为“所有用户”）下，选择“平台”。 为列出的每个平台选择“允许”或“阻止”。
 6. 选择“保存”。
 7. 在限制名称（默认限制为“所有用户”）下，选择“平台配置”。 然后选择所列平台的最低和最高版本。 支持的版本包括：
-    - Android 和 Android for Work 支持 major.minor.rev.build。
+    - Android 工作配置文件支持 major.minor.rev.build。
     - iOS 支持 major.minor.rev。
     - Windows 仅对 Windows 10 支持 major.minor.rev.build。
   操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
@@ -88,9 +88,9 @@ ms.locfileid: "31026323"
 
 
 >[!NOTE]
->- 如果阻止私人拥有的 Android 设备进行注册，私人拥有的 Android for Work 设备仍可注册。
->- 默认情况下，Android for Work 设备的设置与 Android 设备的设置相同。 更改 Android for Work 设置后，则不再相同。
->- 如果阻止个人 Android for Work 注册，那么仅公司 Android 设备可注册为 Android for Work。
+>- 如果阻止私人拥有的 Android 设备进行注册，私人拥有的 Android 工作配置文件设备仍可注册。
+>- 默认情况下，Android 工作配置文件设备的设置与 Android 设备的设置相同。 更改 Android 工作配置文件设置后，则不再相同。
+>- 如果阻止个人 Android 工作配置文件注册，那么仅公司 Android 设备可注册为 Android 工作配置文件。
 
 ## <a name="set-device-limit-restrictions"></a>设置设备限制
 

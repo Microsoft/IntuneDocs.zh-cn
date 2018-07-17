@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22470356c921eea17e4d2b3d57f796fe51568ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224477"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905030"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>将 Android 业务线应用添加到 Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.locfileid: "34224477"
 业务线 (LOB) 应用是从应用安装文件添加到 Intune 的应用。 此类应用通常在内部编写。 Intune 在用户设备上安装 LOB 应用。 
 
 > [!Note]
-> 若要深入了解来自 Google Play for Work 商店的 LOB 应用，请参阅[处理来自 Google Play for Work 商店的业务线应用](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store)。 
+> 若要深入了解来自托管的 Google Play 应用商店的 LOB 应用，请参阅[处理来自托管的 Google Play 应用商店的业务线应用](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store)。 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步骤 1：指定软件安装程序文件
 

@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744697"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906186"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>在 Intune 中添加适用于 Android 设备的设备符合性策略
 
@@ -77,9 +77,9 @@ ms.locfileid: "34744697"
 - 对应用进行威胁扫描：要求启用 Android“验证应用”功能。
 
   > [!NOTE]
-  > 在旧版 Android 平台上，此功能是符合性设置。 Intune 只能检查在设备级别是否启用了此设置。 在具有工作配置文件 (Android for Work) 的设备上，此设置可以作为配置策略设置找到。 这允许管理员为设备启用此设置。
+  > 在旧版 Android 平台上，此功能是符合性设置。 Intune 只能检查在设备级别是否启用了此设置。 在具有 Android 工作配置文件的设备上，此设置可以作为配置策略设置找到。 这允许管理员为设备启用此设置。
 
-  如果企业使用 Android 工作配置文件，则可以为已注册的设备启用“对应用进行威胁扫描”。 建立设备配置文件，并且需要进行系统安全设置。 有关详细信息，请参阅 [Intune 中的 Android for Work 设备限制设置](device-restrictions-android-for-work.md)。
+  如果企业使用 Android 工作配置文件，则可以为已注册的设备启用“对应用进行威胁扫描”。 建立设备配置文件，并且需要进行系统安全设置。 有关详细信息，请参阅 [Intune 中的 Android 工作配置文件设备限制设置](device-restrictions-android-for-work.md)。
 
 - SafetyNet 设备证明：输入必须满足的 [SafetyNet 证明](https://developer.android.com/training/safetynet/attestation.html)级别。 选项包括：
   - 未配置

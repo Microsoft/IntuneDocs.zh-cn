@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190752"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905064"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -202,7 +202,7 @@ Remember that you need to implement conditional access policies in addition to c
 - 为以下平台创建设备符合性策略：
 
   - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Android 工作配置文件](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

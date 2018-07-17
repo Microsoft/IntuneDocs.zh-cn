@@ -1,23 +1,23 @@
 ---
 title: 在 Microsoft Intune 中创建 Windows 设备符合性策略 - Azure | Microsoft Docs
-description: 为 Windows Phone 8.1、Windows 8.1 和更高版本以及 Windows 10 和更高版本的设备创建或配置 Microsoft Intune 设备符合性策略。 检查最低和最高操作系统的符合性，设置密码限制和长度，要求启用 BitLocker，设置可接受的威胁级别以及启用对数据存储的加密，包括 Surface Hub 和 Windows Holographic for Business。
+description: 为 Windows Phone 8.1、Windows 8.1 和更高版本以及 Windows 10 和更高版本的设备创建或配置 Microsoft Intune 设备符合性策略。 检查最低和最高操作系统的符合性，设置密码限制和长度，要求启用 BitLocker，检查第三方 AV 解决方案，设置可接受的威胁级别以及启用对数据存储的加密，包括 Surface Hub 和 Windows Holographic for Business。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744901"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909331"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中添加适用于 Windows 设备的设备符合性策略
 
@@ -115,6 +115,8 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 
 有关 HAS 服务工作方式的详细信息，请参阅[运行状况证明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)。
 
+要将 Windows Defender ATP（高级威胁防护）设置为防御威胁服务，请参阅[启用使用条件访问权限的 Windows Defender ATP](advanced-threat-protection.md)。
+
 ### <a name="device-properties"></a>设备属性
 
 - 最低操作系统版本：以 major.minor.build.CU 数字格式输入所允许的最低版本。 要获取正确的值，请打开命令提示符，然后键入 `ver`。 `ver` 命令返回以下格式的版本：
@@ -164,6 +166,11 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 #### <a name="encryption"></a>加密
 
 - 设备上的数据存储加密：选择“需要”加密设备上的数据存储。
+
+#### <a name="device-security"></a>设备安全
+
+- **防病毒**：当设置为“需要”时，可以使用在 Windows 安全中心注册的防病毒解决方案（如 Symantec 和 Windows Defender）来检查符合性。 当“未配置”时，Intune 不会检查设备上安装的任何 AV 解决方案。
+- **反间谍软件**：当设置为“需要”时，可以使用在 Windows 安全中心注册的反间谍软件解决方案（如 Symantec 和 Windows Defender）来检查符合性。 当“未配置”时，Intune 不会检查设备上安装的任何反间谍软件解决方案。
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

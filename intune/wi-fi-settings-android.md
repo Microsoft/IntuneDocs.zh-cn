@@ -1,42 +1,47 @@
 ---
 title: 配置适用于运行 Android 的设备的 Microsoft Intune Wi-Fi 设置
 titleSuffix: ''
-description: 了解运行 Android 和 Android for Work 的设备上的 Intune Wi-Fi 配置设置。
+description: 了解运行 Android 的设备上的 Intune Wi-Fi 配置设置。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831055"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905659"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>在 Microsoft Intune 中为运行 Android 和 Android for Work 的设备配置 Wi-Fi 设置  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>在 Microsoft Intune 中为运行 Android、Android 工作配置文件和 Android 展台设备的设备配置 Wi-Fi 设置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文介绍可在 Microsoft Intune 中为运行 Android 和 Android for Work 的设备配置的 Wi-Fi 设置。
+本文介绍可在 Microsoft Intune 中为运行 Android 和 Android 工作配置文件的设备配置的 Wi-Fi 设置。
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>适用于基本配置文件和企业配置文件的 Wi-Fi 设置
 
-以下 Wi-Fi 设置可用于 Android 和 Andorid for Work 设备：
+以下 Wi-Fi 设置可用于 Android 和 Andorid 工作配置文件设备：
 
 - **网络名称** - 输入此 Wi-Fi 连接的名称。 用户浏览设备上的可用连接列表时，会看到该名称。
 - **SSID** - 服务设置标识符的英文缩写。 这是设备连接到的无线网络的真实名称。 但是，用户在选择连接时只会看到你之前配置的网络名称。
 - **自动连接** - 只要设备处于此网络的范围内，即进行连接。
 - **隐藏网络** - 阻止此网络显示在设备上的可用网络列表中。
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>可用于企业展台配置文件的 Wi-Fi 设置
+- **Wi-Fi 类型**：这些 Wi-Fi 类型设置仅在选择“配置文件类型” > “仅限设备所有者” > “Wi-Fi”时可用。
+    - **开放式（无身份验证）**
+    - **WEP 预共享密钥**：必须在“预共享密钥”框中提供密码。
+    - **WPA 预共享密钥**：必须在“预共享密钥”框中提供密码
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>仅适用于企业配置文件的 Wi-Fi 设置
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>仅适用于 Android 旧版和 Android 工作配置文件的 Wi-Fi 设置
 
 - **EAP 类型** - 从以下项中选择用于对安全无线连接进行身份验证的可扩展身份验证协议 (EAP) 类型：
     - **EAP-TLS**

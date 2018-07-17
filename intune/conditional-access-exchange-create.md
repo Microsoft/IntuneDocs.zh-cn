@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744765"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905523"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>为本地 Exchange 和旧版 Exchange Online Dedicated 配置条件访问策略
 
@@ -44,7 +44,7 @@ ms.locfileid: "34744765"
 
 - 此连接器支持 **Exchange CAS 环境**。 如果愿意，可在 Exchange CAS 服务器上直接安装该连接器，但不建议这样做，因为这增加了服务器上的负荷。 在配置连接器时，必须对其进行设置，以便与其中一个 Exchange CAS 服务器通信。
 
-- 必须使用基于证书的身份验证或用户凭据条目来配置 **Exchange ActiveSync**。
+- 必须使用基于证书的身份验证或用户凭据条目来配置 Exchange ActiveSync。
 
 - 当配置条件性访问策略并将其面向用户时，在用户可以连接到其电子邮件前，他们使用的**设备**必须：
     - **已注册**到 Intune 或是已加入域的 PC。
@@ -63,7 +63,7 @@ ms.locfileid: "34744765"
 - Windows Phone 8.1 及更高版本
 - iOS 上的本机电子邮件应用。
 - EAS 邮件客户端（如 Android 4 或更高版本上的 Gmail）。
-- EAS 邮件客户端 **Android for Work 设备：** Android for Work 设备上仅支持**工作配置文件**中的 **Gmail** 和 **Nine Work** 应用。 若要使条件访问可适用于 Android for Work，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将这些应用部署为必需安装。
+- EAS 邮件客户端 **Android 工作配置文件设备：** Android 工作配置文件设备上仅支持工作配置文件中的 Gmail 和 Nine Work 应用。 若要使条件访问可适用于 Android 工作配置文件，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将这些应用部署为必需安装。
 
 > [!NOTE]
 > 不支持 Android 和 iOS 上的 Microsoft Outlook 应用。 

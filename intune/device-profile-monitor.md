@@ -1,11 +1,11 @@
 ---
 title: 使用 Microsoft Intune 查看设备配置文件 - Azure | Microsoft Docs
-description: 查看和管理 Microsoft Intune 中设备配置的配置文件详细信息，查看分配给配置文件的设备数量的图形图表，并查看哪些设备已分配或部署配置文件。
+description: 查看和管理 Microsoft Intune 中设备配置的配置文件详细信息，查看分配给配置文件的设备数量的图形图表，并查看哪些设备已分配或部署配置文件。 也可对具有冲突设置的配置文件进行故障排除。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744782"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905914"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中监视设备配置文件
 
@@ -33,7 +33,7 @@ Intune 包含 Azure 门户中的一些功能，可帮助监视和管理设备配
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 3. 选择“设备配置” > “配置文件”。
 
-列出现有的全部配置文件，并包含诸如平台之类的详细信息，以及配置文件是否分配给任何设备。
+列出了现有的全部配置文件，包含诸如平台之类的详细信息，并显示配置文件是否分配给任何设备。
 
 ## <a name="view-details-on-a-profile"></a>查看配置文件中的详细信息
 
@@ -68,6 +68,16 @@ Intune 包含 Azure 门户中的一些功能，可帮助监视和管理设备配
   - 设备状态：列出分配给配置文件的设备，并显示配置文件是否成功部署。 可以选择特定设备以获取更多详细信息，包括已安装的应用。
   - 用户状态：列出受此配置文件影响的设备的用户名，以及配置文件是否成功部署。 可以选择特定用户以获取更多详细信息。
   - 每个设置状态：通过显示配置文件中的各个设置来筛选输出，并显示设置是否成功应用。
+
+## <a name="view-conflicts"></a>查看冲突
+
+在“设备” > “所有设备”中，可看到导致冲突的任何设置。 出现冲突时，还会显示包含此设置的所有配置文件。 管理员可使用此功能来帮助排除故障，并修复配置文件中的任何差异。
+
+1. 在 Intune 中，选择“设备” > “所有设备”> 选择列表中的现有设备。 最终用户可从公司门户应用获取设备名。
+2. 选择“设备配置”。 列出了适用于该设备的所有配置策略。
+3. 选择策略。 它会显示该策略中适用于该设备的所有设置。 如果设备具有“冲突”状态，请选择该行。 在新窗口中，将看到所有配置文件，以及具有导致冲突的设置的配置文件名称。
+
+既然知道了冲突的设置以及包含该设置的策略，应该较容易解决冲突。 
 
 ## <a name="next-steps"></a>后续步骤
 [分配用户和设备配置文件](device-profile-assign.md)  

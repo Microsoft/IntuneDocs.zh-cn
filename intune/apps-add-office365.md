@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223401"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869366"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
@@ -47,7 +47,7 @@ ms.locfileid: "34223401"
 3. 在“Intune”窗格中，选择“移动应用”。
 4. 在“移动应用”工作负载窗格的“管理”下，选择“应用”。
 5. 选择“添加”。
-6. 在“添加应用”窗格中，请在“应用类型”列表中的“Office 365 Office”下选择“Windows 10”。
+6. 在“添加应用”窗格中，请在“应用类型”列表中的“Office 365 套件”下选择“Windows 10”。
 
 现在，你便可以配置应用套件。
 
@@ -71,15 +71,15 @@ ms.locfileid: "34223401"
 2. 在“应用套件信息”窗格中，请执行以下操作：
     - **套件名称**：输入应用套件的名称，该名称将显示在公司门户中。 请确保使用的所有套件名称都是唯一的。 如果同一应用套件名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - 套件描述：为应用套件输入描述。 例如，可以列出已选择要包括的应用。
-    - 发布者：输入应用的发布者名称。
+    - 发布者：Microsoft 显示为发布者。
     - 类别：（可选）选择一个或多个内置应用类别或所创建的类别。 该设置可让用户在浏览公司门户时更轻松地查找应用套件。
     - 在“公司门户”中将此显示为特别推荐的应用：选择此选项可在用户浏览应用时，在“公司门户”的主页上突出显示应用套件。
     - 信息 URL：（可选）输入包含此应用相关信息的网站 URL。 在公司门户中向用户显示该 URL。
     - 隐私 URL：（可选）输入包含此应用相关隐私信息的网站 URL。 在公司门户中向用户显示该 URL。
-    - 开发人员：（可选）输入应用开发人员的名称。
-    - 所有者：（可选）输入此应用的所有者的名称（例如，HR 部门）。
+    - 开发人员：Microsoft 显示为开发人员。
+    - 所有者：Microsoft 显示为所有者。
     - 备注：输入与此应用有关的任何备注。
-    - 徽标：上传用户浏览公司门户时，与应用一同显示的图标。
+    - 徽标：用户浏览公司门户时，Office 365 徽标与应用一同显示。
 3. 选择“确定”。
 
 ## <a name="configure-app-settings"></a>配置应用设置

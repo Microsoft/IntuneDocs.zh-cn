@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216320"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905217"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>通过使用设备注册管理员帐户注册设备
 
@@ -35,7 +35,7 @@ ms.locfileid: "34216320"
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>设备注册管理器方案示例
 
-一家餐厅想为服务员提供 50 台销售点平板电脑，为厨房员工提供订单监视器。 员工无需访问公司数据或以用户身份登录。 Intune 管理员将创建一个设备注册管理员帐户并向该 DEM 帐户添加餐厅主管。 主管现在拥有 DEM 功能。 现在主管便可使用 DEM 凭据注册这 50 台平板电脑。
+一家餐厅想为服务员提供 50 台销售点平板电脑，为厨房员工提供订单监视器。 员工无需访问公司数据或以用户身份登录。 Intune 管理员将为餐厅主管创建新的设备注册管理员帐户。  此帐户独立于主管的主帐户，仅用于使用 Intune 注册共享设备。 现在主管便可使用 DEM 凭据注册这 50 台平板电脑。
 
 只有 [Azure 门户](https://portal.azure.com)中的用户可以成为设备注册管理员。 设备注册管理器用户不能充当 Intune 管理员。
 
@@ -54,7 +54,7 @@ DEM 用户可以：
   - 公司门户应用或网站中仅显示本地设备。
   - 用户无法通过用户许可证使用 Apple Volume Purchase Program (VPP) 应用，因为每个用户都需具有 Apple ID 才可管理应用。
   - （仅限 iOS）如果使用 DEM 注册 iOS 设备，则无法使用 Apple Configurator、Apple 设备注册计划 (DEP) 或 Apple School Manager (ASM) 注册设备。
-  - （仅限 Android）使用单个 DEM 帐户注册 Android for Work 设备时，可注册的设备数量有限。 每个 DEM 帐户最多可注册十台 Android 工作配置文件设备。 旧版 Android 注册不受此限制。
+  - （仅限 Android）使用单个 DEM 帐户注册 Android 工作配置文件设备时，可注册的设备数量有限。 每个 DEM 帐户最多可注册十台 Android 工作配置文件设备。 旧版 Android 注册不受此限制。
   - 如果设备具有设备许可证，则可以安装 VPP 应用。
   - 每个设备都需要设备许可证。 详细了解[用户和设备许可证](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 

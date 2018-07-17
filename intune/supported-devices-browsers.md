@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033362"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434260"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>支持的操作系统和浏览器
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033362"
 
 设置 Microsoft Intune 之前，请查看所支持的操作系统和浏览器。
 
-有关在设备上安装 Intune 的帮助，请参阅[使用托管设备来完成工作](/intune-user-help/company-portal-frequently-asked-questions)。 还需熟悉 [Intune 网络带宽使用情况](network-bandwidth-use.md)（[经典门户](/intune-classic/get-started/network-bandwidth-use)）。
+有关在设备上安装 Intune 的帮助，请参阅[使用托管设备来完成工作](/intune-user-help/company-portal-frequently-asked-questions)和 [Intune 网络带宽使用情况](network-bandwidth-use.md)（[经典门户](/intune-classic/get-started/network-bandwidth-use)）。
 
 ## <a name="intune-supported-operating-systems"></a>支持 Intune 的操作系统
 
@@ -38,12 +38,12 @@ ms.locfileid: "31033362"
 
 ### <a name="supported-samsung-knox-standard-devices"></a>受支持的 Samsung Knox Standard 设备
 
-仅当[受支持的 Knox 设备列表](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中有相应设备时，“公司门户”应用才会在 MDM 注册期间尝试 Samsung Knox 激活。 这有助于避免出现阻止 MDM 注册的 Knox 激活错误。 不支持 Samsung Knox 激活的设备注册为标准 Android 设备。 Samsung 设备的一些型号支持 Knox，而另一些型号则不支持 Knox。 购买并部署 Samsung 设备前，请与设备经销商确认 Knox 兼容性。
+要避免阻止 MDM 注册的 Knox 激活错误，则仅当[受支持的 Knox 设备列表](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中有相应设备时，“公司门户”应用才会在 MDM 注册期间尝试 Samsung Knox 激活。 不支持 Samsung Knox 激活的设备注册为标准 Android 设备。 Samsung 设备的一些型号支持 Knox，而另一些型号则不支持 Knox。 购买并部署 Samsung 设备前，请与设备经销商确认 Knox 兼容性。
 
 > [!NOTE]
 > 注册 Samsung Knox 设备可能需要[启用对 Samsung 服务器的访问权限](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)。 
 
-下面列出的 Samsung 设备型号不支持 Knox，适用于 Android 的“公司门户”应用将它们注册为原生 Android 设备：
+以下列出的 Samsung 设备型号不支持 Knox。 它们由适用于 Android 的公司门户应用注册为 Android 本机设备：
 
 | **设备名** | **设备型号** |
 | --- | --- |
@@ -103,7 +103,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 - Microsoft Internet Explorer 11
 - Safari（最新版本，仅限 Mac）
 - Chrome（最新版本）
-- 启用了 Silverlight 的 Mozilla Firefox [了解详细信息（52 版之前的版本）](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox（最新版本）
 
 
 

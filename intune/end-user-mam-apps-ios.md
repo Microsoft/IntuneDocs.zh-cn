@@ -15,11 +15,11 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 955120228289da3bac7cf013955effeee0cd7579
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023421"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225300"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
 

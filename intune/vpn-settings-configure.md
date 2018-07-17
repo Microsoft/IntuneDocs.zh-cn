@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744595"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905098"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>在 Intune 中创建 VPN 配置文件
 
@@ -40,7 +40,7 @@ ms.locfileid: "34744595"
 
 可以使用以下连接类型创建 VPN 配置文件：
 
-|连接类型|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|连接类型|Android<br>Android 工作配置文件|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |自动|否|否|否|否|否|是|
 |Check Point Capsule VPN|是|是|是|是|是|是|
@@ -68,21 +68,21 @@ ms.locfileid: "34744595"
 3. 选择“设备配置” > “配置文件” > “创建配置文件”。
 4. 输入 VPN 配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用 VPN 设置的设备平台。 目前，可以为 VPN 设备设置选择以下平台之一：
-  - **Outlook Web Access (OWA)**
-  - **Android for Work**
-  - **iOS**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 及更高版本**
-  - **Windows 10 及更高版本**
+   - **Outlook Web Access (OWA)**
+   - **Android enterprise**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 及更高版本**
+   - **Windows 10 及更高版本**
 6. 在“配置文件”类型下拉列表中，选择“VPN”。
 7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
-  - [Android 和 Android for Work 设置](vpn-settings-android.md)
-  - [iOS 设置](vpn-settings-ios.md)
-  - [macOS 设置](vpn-settings-macos.md)
-  - [Windows Phone 8.1 设置](vpn-settings-windows-phone-8-1.md)
-  - [Windows 8.1 设置](vpn-settings-windows-8-1.md)
-  - [Windows 10 设置](vpn-settings-windows-10.md)（包括 Windows Holographic for Business）
+   - [Android 和 Android 工作配置文件设置](vpn-settings-android.md)
+   - [iOS 设置](vpn-settings-ios.md)
+   - [macOS 设置](vpn-settings-macos.md)
+   - [Windows Phone 8.1 设置](vpn-settings-windows-phone-8-1.md)
+   - [Windows 8.1 设置](vpn-settings-windows-8-1.md)
+   - [Windows 10 设置](vpn-settings-windows-10.md)（包括 Windows Holographic for Business）
 8. 完成后，单击“创建”来创建配置文件
 
 配置文件随即创建并显示在配置文件列表中。 要向组分配此配置文件，请参阅[分配设备配置文件](device-profile-assign.md)。

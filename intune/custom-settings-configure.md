@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d917d2449e75b89db00d453b72940a93efb03321
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021874"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904996"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>使用 Intune 中的自定义设置创建配置文件
 
@@ -39,7 +39,7 @@ Intune 可能不含所需的所有内置设置。 或者你可能想要使用其
 5. 从“平台”下拉列表中，选择要应用自定义设置的设备平台。 可选择以下任何平台：
 
     - **Outlook Web Access (OWA)**
-    - **Android for Work**
+    - **Android enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -55,7 +55,7 @@ Intune 可能不含所需的所有内置设置。 或者你可能想要使用其
     - [Windows Phone 8.1 设置](custom-settings-windows-phone-8-1.md)
     - [Windows 10 设置](custom-settings-windows-10.md)
     - [Windows Holographic for Business 设置](custom-settings-windows-holographic.md)
-    - [Android for Work 设置](custom-settings-android-for-work.md)
+    - [Android 工作配置文件设置](custom-settings-android-for-work.md)
 
 8. 完成后，选择“创建”。
 

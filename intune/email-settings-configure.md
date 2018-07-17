@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b71c004a165bd6d38cd1907eadc05ac20f27bd1a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834204"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905302"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置电子邮件设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "31834204"
 你可以使用电子邮件配置文件配置下列设备类型上的本机电子邮件客户端：
 
 - Android Samsung Knox Standard 4.0 及更高版本
-- Android for Work
+- Android 工作配置文件设备
 - iOS 8.0 及更高版本
 - Windows Phone 8.1 及更高版本
 - Windows 10（桌面版）和 Windows 10 移动版
@@ -48,7 +48,7 @@ ms.locfileid: "31834204"
 4. 在“创建配置文件”窗格上，输入电子邮件配置文件的“名称”和“说明”。
 5. 从“平台”下拉列表中，选择要应用电子邮件设置的设备平台。 目前，可以为电子邮件设备设置选择以下平台之一：
     - **Android**（仅 Samsung Android Knox Standard）
-    - **Android for Work**
+    - **Android 企业**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -56,7 +56,7 @@ ms.locfileid: "31834204"
     - **Windows 10 及更高版本**
 6. 在“配置文件”键入下拉列表中，选择“电子邮件”。
 7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
-    - [Android for Work 和 Samsung Knox Standard 设置](email-settings-android.md)
+    - [Android 工作配置文件和 Samsung Knox Standard 设置](email-settings-android.md)
     - [iOS 设置](email-settings-ios.md)
     - [Windows Phone 8.1 设置](email-settings-windows-phone-8-1.md)
     - [Windows 10 设置](email-settings-windows-10.md)
@@ -89,7 +89,7 @@ ms.locfileid: "31834204"
 - **Windows**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 Intune 会覆盖由用户创建的现有电子邮件配置文件。
 - **Android Samsung Knox Standard**：根据电子邮件地址检测到现有的重复电子邮件配置文件，并用 Intune 配置文件覆盖它。
 由于 Android 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。
-- **Android for Work** Intune 提供两个 Android for Work 电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，且安装在设备工作配置文件中，因此它们不会导致出现重复的配置文件。 这两个应用支持到 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的电子邮件配置文件。 Nine Work 等电子邮件应用可能需付费使用。 若有任何问题，请查看应用的许可详细信息或与应用公司联系。
+- **Android 工作配置文件** Intune 提供两个 Android 工作配置文件电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，且安装在设备工作配置文件中，因此它们不会导致出现重复的配置文件。 这两个应用支持到 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的电子邮件配置文件。 Nine Work 等电子邮件应用可能需付费使用。 若有任何问题，请查看应用的许可详细信息或与应用公司联系。
 
 ### <a name="update-an-email-profile"></a>更新电子邮件配置文件
 

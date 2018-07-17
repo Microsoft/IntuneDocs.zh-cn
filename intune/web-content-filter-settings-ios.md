@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456344"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921342"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>适用于 iOS 设备的 Web 内容筛选器设置
 
@@ -58,7 +58,7 @@ ms.locfileid: "34456344"
 ## <a name="specific-websites-only"></a>仅限特定的网站
 
 1. 在“Web 内容筛选器”窗格上，针对要允许的每个网站配置以下设置：
-    - **URL** - 输入想要允许的网站的 URL，例如 http://www.contoso.com。
+    - **URL** - 输入想要允许的网站的 URL，例如 `https://www.contoso.com`。
     - **书签路径** - 输入想要存储书签的路径，例如 **/Contoso/Business Apps**。 如不添加路径，则书签将被添加到设备上的默认书签文件夹中。
     - **标题** - 为书签输入描述性的标题。
 2. 为每个网站输入完信息后，单击“添加”。

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223605"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869486"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 分配给 macOS 设备
 
-借助此“应用商店应用”类型，可以轻松地将 Office 365 应用分配给 macOS 设备。 使用此应用类型，可以安装 Word、Excel、PowerPoint、Outlook 和 OneNote。 为帮助保护和不断更新应用，这些应用随附 Microsoft AutoUpdate (MAU)。 所需的应用将显示为 Intune 控制台的应用列表中的一个应用。
+借助此应用类型，可以轻松地将 Office 365 2016 应用分配给 macOS 设备。 使用此应用类型，可以安装 Word、Excel、PowerPoint、Outlook 和 OneNote。 为帮助保护和不断更新应用，这些应用随附 Microsoft AutoUpdate (MAU)。 所需的应用将显示为 Intune 控制台的应用列表中的一个应用。
 
 
 ## <a name="before-you-start"></a>开始之前
@@ -70,7 +70,7 @@ ms.locfileid: "34223605"
 2. 在“Office 365”窗格中，选择“分配”。
 3. 若要添加将使用应用套件的组，请选择“添加组”。  
     随即将显示“添加组”窗格。
-4. 将“分配类型”设置为“必需”。
+4. 将“分配类型”设置为“必需”或“可用”。
 5. 将应用套件分配给选定组。 有关详细信息，请参阅[使用 Microsoft Intune 将应用分配到组](apps-deploy.md)。
 
     >[!Note]

@@ -14,12 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: a9fb84fd15eb68f007e820e473dd9edf55b37777
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744646"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905013"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
@@ -37,7 +37,7 @@ ms.locfileid: "34744646"
    - **平台**：选择平台类型：  
 
        - **Outlook Web Access (OWA)**
-       - **Android for Work**
+       - **Android 工作配置文件**
        - **iOS**
        - **macOS**
        - **Windows Phone 8.1**

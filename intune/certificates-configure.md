@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771799"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905200"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为设备配置证书配置文件
 
@@ -43,7 +43,7 @@ ms.locfileid: "31771799"
     - iOS 8.0 及更高版本
     - macOS 10.11 和更高版本
     - Android 4.0 及更高版本
-    - Android for Work
+    - Android 工作配置文件
     - Windows 8.1 及更高版本
     - Windows Phone 8.1 及更高版本
     - Windows 10 及更高版本
@@ -52,7 +52,7 @@ ms.locfileid: "31771799"
 
    - iOS 8.0 及更高版本
    - Android 4.0 及更高版本
-   - Android for Work
+   - Android 工作配置文件
    - Windows 10（桌面版和移动版）及更高版本
 
    对于运行以下平台的设备，只能使用 SCEP 证书配置文件：
@@ -95,7 +95,7 @@ ms.locfileid: "31771799"
 5. 从“平台”下拉列表中，为此受信任证书选择设备平台。 目前，可以为证书设置选择以下平台之一：
 
     - **Outlook Web Access (OWA)**
-    - **Android for Work**
+    - **Android 企业**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**

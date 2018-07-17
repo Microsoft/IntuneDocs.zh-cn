@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829304"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904942"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 远程重启设备
 
@@ -31,12 +31,13 @@ ms.locfileid: "31829304"
 
 - Windows - Windows 8.1 及更高版本支持
 - Windows Phone - Windows Phone 8.1 及更高版本支持
+- Android 展台设备 - 支持
 - iOS - 支持
 
     > [!Note]  
     > 此命令需要受监督的设备和“设备锁定”访问权限。 设备会立即重启。 密码锁定的 iOS 设备重启后不会重新加入 Wi-Fi 网络。 重启后，设备可能无法与服务器进行通信。
 - macOS - 不支持
-- Android - 不支持
+- Android 和 Android 工作配置文件设备 - 不支持
 
 ## <a name="restart-a-device"></a>重启设备
 

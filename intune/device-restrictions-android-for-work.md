@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 中 Android for Work 的设备限制 - Azure | Microsoft Docs
-description: 在运行 Android for Work 的设备上，可以限制设备上的某些设置，包括复制并粘贴、显示通知、应用权限、数据共享、密码长度、登录失败、使用指纹解锁、重复使用密码以及启用工作联系人蓝牙共享。
+title: Microsoft Intune 中 Android 工作配置文件的设备限制 - Azure | Microsoft Docs
+description: 在 Android 工作配置文件设备上，可以限制设备上的某些设置，包括复制并粘贴、显示通知、应用权限、数据共享、密码长度、登录失败、使用指纹解锁、重复使用密码以及启用工作联系人蓝牙共享。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046309"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905931"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune 中的工作设备限制设置
 
-本文列出了可为运行 Android for Work 的设备配置的所有 Microsoft Intune 设备限制设置。
+本文列出了可为 Android 工作配置文件设备配置的所有 Microsoft Intune 设备限制设置。
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "32046309"
 ### <a name="general-settings"></a>常规设置
 
 - **在工作和个人配置文件之间进行复制和粘贴**：控制工作和个人应用之间的复制和粘贴。 选择“阻止”以启用阻止。 选择“未配置”以禁用阻止。
-- **工作和个人配置文件之间的数据共享**：控制工作配置文件中的应用是否可以将数据与个人配置文件中的应用共享。 此设置将控制应用程序中的共享操作（例如，Chrome 浏览器应用中的“共享...” 选项），并且不适用于复制/粘贴剪贴板行为。 与[应用保护策略设置](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)不同，设备限制设置通过 Intune 门户进行管理，并使用 Android for Work 工作配置文件分区来隔离托管的应用。 选择：
+- **工作和个人配置文件之间的数据共享**：控制工作配置文件中的应用是否可以将数据与个人配置文件中的应用共享。 此设置将控制应用程序中的共享操作（例如，Chrome 浏览器应用中的“共享...” 选项），并且不适用于复制/粘贴剪贴板行为。 与[应用保护策略设置](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)不同，设备限制设置通过 Intune 门户进行管理，并使用 Android 工作配置文件分区来隔离托管的应用。 选择：
   - **默认共享限制**：设备的默认共享行为，根据 Android 版本而有所差异。 默认情况下，允许从个人配置文件到工作配置文件的共享。 此外，默认情况下，已阻止从工作配置文件到个人配置文件的共享。 此设置可防止工作配置文件的数据共享到个人配置文件。 在运行 6.0 及更高版本的设备上，Google 不提供阻止数据从个人配置文件共享到工作配置文件的方法。
   - **工作配置文件中的应用可以处理来自个人配置文件的共享请求**：启用内置 Android 功能，以允许从个人配置文件到工作配置文件的共享。 启用此功能后，从个人配置文件中的应用发起的共享请求将能与工作配置文件中的应用共享。 此设置是运行 6.0 之前的版本的 Android 设备的默认行为。
   - **允许跨边界共享**：将双向启用跨工作配置文件边界共享。 选择此设置时，工作配置文件中的应用可以将数据与个人配置文件中未标记的应用共享。 请谨慎使用此设置，因为该设置允许工作配置文件中托管的应用与设备未托管一侧上的应用共享。
@@ -48,7 +48,7 @@ ms.locfileid: "32046309"
 
    防止最终用户手动添加或删除工作配置文件中的帐户。
 
-   例如，将 Gmail 应用部署到 Android for Work 配置文件时，可以防止最终用户添加或删除此工作配置文件中的帐户。
+   例如，将 Gmail 应用部署到 Android 工作配置文件时，可以防止最终用户添加或删除此工作配置文件中的帐户。
 
 - **通过蓝牙共享联系人**：能从汽车等使用蓝牙配对的其他设备访问工作联系人。 默认情况下未配置此设置，并且不会显示 Work 配置文件联系人。 如需允许共享并显示 Work 配置文件联系人，请选择“启用”。 Android OS v6.0 和更高版本的 Android for Work 配置文件设备上提供此设置。 启用此选项可允许某些蓝牙设备在首次连接后即缓存工作联系人。 在初始配对/同步后禁用此策略不会从蓝牙设备中删除工作联系人。
 

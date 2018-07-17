@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d62341e35bf851bb429b15a582183bec62a9d4a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223384"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905234"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>将 Web 应用添加到 Microsoft Intune
 
@@ -31,7 +31,7 @@ Intune 支持包括 Web 应用在内的各种应用类型。 Web 应用是客户
 必须先向 Intune 添加应用，然后才能为用户管理和分配此应用。 Intune 在用户的设备主屏幕上创建一个转至 Web 应用的快捷方式。
 
 > [!Note]
-> Android for Work 设备和 macOS 上不支持 Web 应用。
+> Android 工作配置文件设备和 macOS 上不支持 Web 应用。
 
 ## <a name="add-a-web-app-to-intune"></a>将 Web 应用添加到 Intune
 若要在 Intune 中将应用添加为 Web 应用的快捷方式，请执行以下步骤：

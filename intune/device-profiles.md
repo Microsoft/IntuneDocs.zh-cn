@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f52c0dfc955406fa237d43632cd10c09ca0b798f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744748"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905183"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
 
@@ -157,3 +157,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - iOS
 - macOS
 - Windows Phone 8.1
+
+## <a name="manage-and-troubleshoot"></a>管理和故障排除
+
+[管理配置文件](device-profile-monitor.md)以检查设备的状态和分配的配置文件。 还可以通过查看导致冲突的设置以及包含这些设置的配置文件来帮助解决冲突。 [常见问题和解决方法](device-profile-troubleshoot.md)提供了一个问答列表，以帮助使用配置文件，包括删除配置文件时发生的情况以及导致通知发送到设备的原因等。

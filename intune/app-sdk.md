@@ -1,27 +1,20 @@
----
-title: Intune 应用 SDK 的优点
-titlesuffix: Microsoft Intune
-description: Intune 应用 SDK 同时适用于 iOS 和 Android 平台，并允许通过 Microsoft Intune 使用移动应用管理功能。
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-ms.reviewer: aanavath
-ms.suite: ems
+--
+# <a name="required-metadata"></a>必需元数据
+
+标题：Intune App SDK 的优势 titlesuffix: Microsoft Intune 描述：Intune App SDK 适用于 iOS 和 Android 平台，并通过 Microsoft Intune 实现移动应用管理功能。
+keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+
+# <a name="optional-metadata"></a>可选元数据
+
+#<a name="robots"></a>ROBOTS:
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: aanavath ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-classic
-ms.openlocfilehash: 33e1cb6953891fa6d62841d10bc8011768938ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223571"
+
 ---
+
 # <a name="intune-app-sdk-overview"></a>Intune App SDK 概述
 Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用保护策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 你会发现可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用 API 针对需要应用参与的功能来自定义应用行为。
 
@@ -70,3 +63,8 @@ IT 管理员可以要求用户使用其工作或学校帐户登录以访问该�
 许多用户使用个人设备，他们希望在不为其个人设备注册移动设备管理 (MDM) 提供程序的情况下访问公司数据。 由于 MDM 注册要求对设备的全局控制权，而用户对于将其个人设备的控制权交给公司有所顾虑。
 
 无需设备注册的应用保护允许 Microsoft Intune 服务将应用保护策略直接部署到应用，而不依赖设备管理通道来部署策略。
+
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>按需应用与 Citrix mVPN 的 VPN 连接 
+可以同时使用 Citrix XenMobile MDX 和 Microsoft Intune 来管理设备和应用。 这种组合意味着可在使用 Citrix mVPN 技术的同时通过 Intune 应用保护策略管理应用。 与 Citrix 的集成可用于 Intune App SDK for iOS 和 Intune App SDK for Android，以及适用于 iOS 和 Android 的 Intune 应用包装工具（带 -citrix 标志）。
+ 
+要了解有关 Citrix MDX 的详细信息，请参阅[有关 MDX 工具包](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html)、[适用于 iOS 的 Citrix MDX 应用包装器](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)和[适用于 Android 的 Citrix MDX 应用包装器](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)。
