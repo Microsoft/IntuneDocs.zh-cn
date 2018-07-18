@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
-ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
+ms.openlocfilehash: 65827fe280535aa48d1d44eda9fd8482002c2c3b
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36882522"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028756"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "36882522"
 | **要求最低 Intune 应用保护策略 SDK 版本** | 选择“是”将要求要使用的应用上的最低 Intune 应用保护策略 SDK 版本。 如果应用的 Intune 应用保护策略 SDK 版本不符合此要求，将阻止用户访问。 <br> <br> 若要详细了解 Intune 应用保护策略 SDK，请参阅 [Intune App SDK 概述](app-sdk.md) <br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。 <br><br> **注意**：要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 | 否 |
 
 > [!NOTE]
-> 若要深入了解在“访问权限”部分配置给同一组应用和用户的多个 Intune 应用保护设置如何在 iOS 上运行，请参阅 [Intune MAM 常见问题](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios)。
+> 要详细了解在“访问权限”部分配置给同一组应用和用户的多个 Intune 应用保护设置如何在 iOS 上运行，请参阅 [Intune MAM 常见问题](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios)和[在 Intune 中使用应用保护策略访问操作选择性地擦除数据](app-protection-policies-access-actions.md)。
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 应用的加载项
 

@@ -15,12 +15,12 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b860b68bbf8940a89533159885f471f5337ca0e8
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 34174568570700e0b15d5bce1bb0bf239251b577
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216133"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039148"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况
 
@@ -38,6 +38,9 @@ ms.locfileid: "34216133"
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS 数据传输例外情况
 对于针对 iOS 的策略，可以通过 URL 协议配置数据传输例外情况。 若要添加例外情况，请查看应用开发人员提供的文档，以查找有关支持的 URL 协议的信息。 有关 iOS 数据传输例外情况的其他信息，请参阅 [iOS 应用保护策略设置 - 数据传输豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。
+
+> [!NOTE]
+> Microsoft 不提供手动查找 URL 协议来创建第三方应用程序例外情况的方法。 
 
 ## <a name="android-data-transfer-exceptions"></a>Android 数据传输例外情况
 对于针对 Android 的策略，可以通过应用包名称配置数据传输例外情况。 可以查看要为其添加例外情况的应用的 Google Play 商店页，以查找应用包名称。 有关 Android 数据传输例外情况的其他信息，请参阅 [Android 应用保护策略设置 - 数据传输豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。

@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021540"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949469"
 ---
 # <a name="get-started-managing-users"></a>用户管理入门
 
@@ -31,8 +31,10 @@ ms.locfileid: "31021540"
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 打开“Microsoft Intune”窗格后，选择“用户”。 在“所有用户”页上，选择“添加新用户”。
-4. 输入用户详细信息，如名称和用户名。 用户名称的域名部分必须为初始默认域名“contoso.onmicrosoft.com”或一个已验证的非联合域名，例如“contoso.com”。
-5. 在“组”下，选择要添加用户的测试组。
+4. 输入用户详细信息，如名称和用户名。 用户名的域名部分必须为以下域之一：
+    - 初始默认域名“contoso.onmicrosoft.com”，或
+    - 有效的非联合域名，例如“contoso.com”。
+5. 在“组”下，选择要添加用户的[组](get-started-groups.md)。
 6. 保存自动生成的用户密码，以便用于登录测试设备。 必须向用户提供此密码，以便他们可将其更改为自己能够记住的常规密码。
 7. 在“用户”窗格中，选择“创建”。
 
