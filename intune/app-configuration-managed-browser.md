@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8b647e7b2a4d252041e60792b6fc49df8b961066
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37967226"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
 
@@ -35,7 +36,7 @@ Managed Browser 是一款 Web 浏览应用，可以从公共应用商店中下�
 - 防止发生屏幕捕获
 - 确保指向用户所选内容的链接仅在其他托管应用中打开。
 
-有关详细信息，请参阅[什么是应用保护策略？](/intune/app-protection-policy.md)
+有关详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
 
 可将这些设置应用于：
 
@@ -86,7 +87,7 @@ Managed Browser 现为条件访问的核准客户端应用。 这意味着可以
 8. 在“分配”部分，选择“用户和组”，然后选择要向其分配此策略的用户或组。 
 
     > [!NOTE]
-    > 用户还必须以 Intune 应用保护策略为目标。 有关创建 Intune 应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)。
+    > 用户还必须以 Intune 应用保护策略为目标。 有关创建 Intune 应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
 
 9. 在“分配”部分，选择“云应用”，选择要使用此策略保护的应用。
 
@@ -141,7 +142,7 @@ Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authentic
 ### <a name="before-you-start"></a>开始之前
 
 - 通过 Azure AD 应用程序代理设置内部应用程序。
-    - 要配置应用程序代理和发布应用程序，请参阅[设置文档]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
+    - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
 - 必须使用 Managed Browser 应用的最低版本 1.2.0。
 - Managed Browser 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
 
@@ -167,7 +168,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 |                                Key                                |                                                           值                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例：<https://www.bing.com> |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例： `<https://www.bing.com>` |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>如何配置 Managed Browser 的书签
 
@@ -181,7 +182,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 |                                Key                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 <strong>&#124;</strong> 分隔标题和 URL。<br><br>示例：Microsoft 必应&#124;<https://www.bing.com><br><br>若要配置多个书签，可使用双字符 <strong>&#124;&#124;</strong> 分隔每对书签<br><br>示例：必应&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com> |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 <strong>&#124;</strong> 分隔标题和 URL。<br><br>例如：<br> Microsoft 必应|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `必应|https://www.bing.com||Contoso|https://www.contoso.com` |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>如何为 Managed Browser 指定允许和阻止的 URL
 
@@ -189,7 +190,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 |Key|值|
 |-|-|
-|选择：<br><br>- 指定允许的 URL（只允许这些 URL；不可访问其他网站）：**com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- 指定阻止的 URL（可访问其他所有站点）： <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
+|选择：<br><ul><li>指定允许的 URL（仅允许这些 URL；无法访问其他站点）：<br> com.microsoft.intune.mam.managedbrowser.AllowListURLs<br><br></li><li>指定阻止的 URL（可访问其他所有站点）：<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|键的对应值是 URL 列表。 将所有要允许或阻止的 URL 输入为单个值，以管道字符 **&#124;** 分隔。<br><br>例如：<br><br>URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >不要同时指定这两个键。 如果两个键同时针对同一个用户，则使用允许键，因为它是限制性最强的选项。
@@ -208,42 +209,42 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
   -   对于 https，使用端口 443
 
-  不支持对端口号使用通配符。 例如，不支持 <strong>http&colon;//www&period;contoso&period;com:*;</strong> 和 <strong>http&colon;//www&period;contoso&period;com: /*;</strong>。
+  不支持对端口号使用通配符。 例如，不支持 `http://www.contoso.com:;` 和 `http://www.contoso.com: /;`。
 
 - 使用下表了解指定 URL 时可以使用的允许模式：
 
 |                  URL                  |                     详细信息                      |                                                匹配                                                |                                不匹配                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              匹配单个页面               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              匹配单个页面               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>；     | 匹配以 www.contoso.com 开头的所有 URL |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
-|    http://&#42;.contoso.com/&#42;     |     匹配 contoso.com 下的所有子域     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             匹配单个文件夹              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
-|       http://www.contoso.com:80       |  匹配单个页面（使用端口号）   |                                       http://www.contoso.com:80                                       |                                                                               |
-|        https://www.contoso.com        |          匹配单个安全页面           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>； |    匹配单个文件夹和所有子文件夹    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+|        `http://www.contoso.com`         |              匹配单个页面               |                                            `www.contoso.com`                                            |  `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`contoso.com`/   |
+|          `http://contoso.com`           |              匹配单个页面               |                                             `contoso.com/`                                              | `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com` |
+|    `http://www.contoso.com/&#42;`     | 匹配以 `www.contoso.com` 开头的所有 URL |      `www.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com/videos/tvshows`      |              `host.contoso.com`<br /><br />`host.contoso.com/images`              |
+|    `http://*.contoso.com/*`     |     匹配 contoso.com 下的所有子域     | `developer.contoso.com/resources`<br /><br />`news.contoso.com/images`<br /><br />`news.contoso.com/videos` |                               `contoso.host.com`                                |
+|     `http://www.contoso.com/images`     |             匹配单个文件夹              |                                        `www.contoso.com/images`                                         |                          `www.contoso.com/images/dogs`                          |
+|       `http://www.contoso.com:80`       |  匹配单个页面（使用端口号）   |                                       `http://www.contoso.com:80`                                       |                                                                               |
+|        `https://www.contoso.com`        |          匹配单个安全页面           |                                        `https://www.contoso.com`                                        |                            `http://www.contoso.com`                             |
+| `http://www.contoso.com/images/&#42;` |    匹配单个文件夹和所有子文件夹    |                  `www.contoso.com/images/dogs`<br /><br />`www.contoso.com/images/cats`                   |                            `www.contoso.com/videos`                             |
 
 - 以下是一些你不能指定的输入的示例：
 
-  - &#42;.com
+  - `*.com`
 
-  - &#42;.contoso/&#42;
+  - `*.contoso/*`
 
-  - www.contoso.com/&#42;images
+  - `www.contoso.com/*images`
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - `www.contoso.com/*images*pigs`
 
-  - www.contoso.com/page&#42;
+  - `www.contoso.com/page*`
 
   - IP 地址
 
-  - https://&#42;
+  - `https://*`
 
-  - http://&#42;
+  - `http://*`
 
-  - http://www.contoso.com:&#42；
+  - `http://www.contoso.com:*`
 
-  - http://www.contoso.com: /&#42;
+  - `http://www.contoso.com: /*`
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用 Managed Browser 访问托管应用日志
 
@@ -274,7 +275,7 @@ Browser 将启动疑难解答模式。
 -   在判断是否允许通过身份验证和访问 Intune 文档时，**&#42;.microsoft.com** 不在允许或阻止列表设置的约束范围之内。 始终允许。
 
 ### <a name="turn-off-usage-data"></a>关闭用法数据
-Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。
+Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**使用情况数据**设置关闭数据收集。 不具有对此数据的收集的控制。
 
 
 -   在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
@@ -287,8 +288,8 @@ Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名�
 -   在判断是否允许通过身份验证和访问 Intune 文档时，**&#42;.microsoft.com** 不在允许或阻止列表设置的约束范围之内。 始终允许。
 
 ### <a name="turn-off-usage-data"></a>关闭用法数据
-Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的“使用情况数据”设置关闭数据收集。 不具有对此数据的收集的控制。
+Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**使用情况数据**设置关闭数据收集。 不具有对此数据的收集的控制。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [什么是应用保护策略？](app-protection-policy.md)
+- [什么是应用保护策略？](app-protection-policy.md) 
