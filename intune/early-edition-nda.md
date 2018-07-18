@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906016"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949486"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Microsoft Intune 的早期版本 - 2018 年 7 月
 
@@ -40,6 +40,9 @@ ms.locfileid: "37906016"
 ## <a name="intune-in-the-azure-portal"></a>Azure 门户中的 Intune
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>适用于 Windows 的公司门户应用中的更多同步机会 <!-- 2683177 -->
+适用于 Windows 的公司门户应用即将向 Windows 任务栏和“开始”菜单跳转列表添加设备同步操作。 单击两个位置之一，即可快速同步设备，并获取对公司资源的访问权限。  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>从适用于 Windows 10 的公司门户重置设备密码 <!-- 2101282 --> 
 员工很快就可以直接从 Windows 10 的公司门户应用重置其设备的 PIN 或密码。 此功能将在支持重置密码的远程和本地 Intune 管理的设备上提供。 根据设备类型，对远程设备的请求将删除设备的当前密码或创建临时密码。 请求重置本地设备的用户将重定向到设备的“设置”应用。  

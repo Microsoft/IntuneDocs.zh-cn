@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2cfd426a0ae7165a7aae60a90d104852fd834db6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909110"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993728"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用应用保护策略访问操作选择性地擦除数据
 
@@ -36,7 +36,7 @@ ms.locfileid: "37909110"
 3. 在“Intune”窗格中，选择“移动应用” > “应用保护策略”。
 4. 单击“添加策略”（也可编辑现有策略）。 
 5. 单击“配置所需设置”，查看可为策略配置的设置列表。 
-6. 通过在“设置”窗格中向下滚动，将看到标题为“访问操作”的部分，其中包含可编辑的表。
+6. 在“设置”窗格中向下滚动，将会看到标题为“访问操作”的部分，内含可编辑的表。
 
     ![Intune 应用保护访问操作的屏幕截图](./media/apps-selective-wipe-access-actions01.png)
 
@@ -50,6 +50,7 @@ ms.locfileid: "37909110"
 
 应用保护策略设置表包含“设置”、“值”和“操作”列。
 
+### <a name="ios-policy-settings"></a>iOS 策略设置
 对于 iOS，可使用“设置”下拉列表为以下设置配置操作：
 -  最大 PIN 尝试次数
 -  离线宽限期
@@ -58,6 +59,19 @@ ms.locfileid: "37909110"
 -  最低应用版本
 -  最低 SDK 版本
 -  设备型号
+
+若要使用“设备型号”设置，请输入 iOS 型号标识符的分号分隔列表。 [HockeyApp 支持文档](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)中的“设备类型”列下列出了 iOS 型号标识符。<br>
+示例输入：iPhone5,2; iPhone5,3
+
+在最终用户设备上，Intune 客户端执行操作的依据为，Intune 中指定的设备型号字符串与应用程序保护策略的简单匹配情况。 匹配完全取决于设备报告的内容。 建议你（即 IT 管理员）务必要根据各种设备制造商和型号对小型用户组测试此设置，以确保行为按预期发生。 默认值为“未配置”。<br>
+请设置下列操作之一： 
+- 允许指定项（阻止非指定项）
+- 允许指定项（擦除非指定项）
+
+**如果 IT 管理员对定目标到同一 Intune 用户的相同应用的策略输入不同的 iOS 型号标识符列表，会发生什么？**<br>
+如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”和“策略 B”中列出的 iOS 型号标识符的交集。 例如，如果“策略 A”指定“iPhone5,2; iPhone5,3”，而“策略 B”则指定“iPhone5,3”，那么针对“策略 A”和“策略 B”都定目标到的 Intune 用户生成的策略是“iPhone5,3”。 
+
+### <a name="android-policy-settings"></a>Android 策略设置
 
 对于 Android，可使用“设置”下拉列表为以下设置配置操作：
 -  最大 PIN 尝试次数
@@ -68,6 +82,19 @@ ms.locfileid: "37909110"
 -  最低修补程序版本
 -  设备制造商
 
+若要使用“设备制造商”设置，请输入 Android 制造商的分号分隔列表。 可以在设备设置下找到设备的 Android 制造商。<br>
+示例输入：制造商 A; 制造商 B; Google 
+
+在最终用户设备上，Intune 客户端执行操作的依据为，Intune 中指定的设备型号字符串与应用程序保护策略的简单匹配情况。 匹配完全取决于设备报告的内容。 建议你（即 IT 管理员）务必要根据各种设备制造商和型号对小型用户组测试此设置，以确保行为按预期发生。 默认值为“未配置”。<br>
+请设置下列操作之一： 
+- 允许指定项（阻止非指定项）
+- 允许指定项（擦除非指定项）
+
+**如果 IT 管理员对定目标到同一 Intune 用户的相同应用的策略输入不同的 Android 制造商列表，会发生什么？**<br>
+如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”和“策略 B”中列出的 Android 制造商的交集。 例如，如果“策略 A”指定“Google, Samsung”，而“策略 B”则指定“Google”，那么针对“策略 A”和“策略 B”都定目标到的 Intune 用户生成的策略是“Google”。 
+
+### <a name="additional-settings-and-actions"></a>其他设置和操作 
+
 默认情况下，如果将“需要 PIN 才能进行访问”设置设置为“是”，则该表将填充行配置为“脱机宽限期”和“最大 PIN 尝试次数”的设置。
  
 要配置设置，请从“设置”列下方的下拉列表中选择一项设置。 选择设置后，如果需要设置值，则可在同一行的“值”列下启用可编辑的文本框。 此外，将在“操作”列下启用下拉列表，其中条件启动操作适用于该设置。 
@@ -76,8 +103,6 @@ ms.locfileid: "37909110"
 -  **阻止访问** - 阻止最终用户访问公司应用。
 -  **擦除数据** - 擦除最终用户设备上的公司数据。
 -  **警告** - 向最终用户提供对话框作为警告消息。
-
-### <a name="additional-settings-and-actions"></a>其他设置和操作 
 
 在某些情况下，例如“最低 OS 版本”设置，根据不同的版本号，可将该设置配置为执行所有适用的操作。 
 
