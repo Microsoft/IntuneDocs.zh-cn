@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906050"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028739"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>通过恢复出厂设置、删除公司数据或手动取消注册设备来删除设备
 
@@ -56,9 +56,9 @@ ms.locfileid: "37906050"
     |在恢复出厂设置过程中保留|不保留|
     | -------------|------------|
     |与设备关联的用户帐户|用户文件|
-    |计算机状态（域加入、已加入 Azure AD）| 用户安装的应用（存储和 Win32 应用）|
+    |计算机状态\(域加入、已加入 Azure AD）| 用户安装的应用\(存储和 Win32 应用）|
     |移动设备管理 (MDM) 注册|非默认设备设置|
-    |OEM 安装的应用（存储和 Win32 应用）||
+    |OEM 安装的应用\(存储和 Win32 应用）||
     |用户配置文件||
     |用户配置文件以外的用户数据||
     |用户自动登录|| 
@@ -175,3 +175,24 @@ ms.locfileid: "37906050"
 5. 选择与想要删除的设备相关联的用户。
 6.  选择“设备”。
 7.  根据需要删除设备。 例如，可删除那些不再使用的设备或者定义不准确的设备。
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>从 Intune 停用 Apple DEP 设备
+
+如果想要通过 Intune 从管理完全删除 Apple DEP 设备，请按以下步骤进行操作：
+
+1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
+2. 选择“设备” > “所有设备”，再依次选择相关设备和“删除公司数据”。
+![显示删除公司数据的屏幕截图](./media/devices-wipe/remove-company-data.png)
+3. 选择“设备注册” > “Apple 注册” > “注册计划令牌”，再选择相关令牌和“设备”，然后选择相关设备的复选框，最后选择“删除” > “是”。
+![显示删除设备的屏幕截图](./media/devices-wipe/delete-device.png)
+4. 访问 [deploy.apple.com](http://deploy.apple.com)，并按序列号搜索设备。
+5. 在“分配到”菜单中，选择“未分配”。
+
+6. 选择“重新分配”。
+
+    ![显示 Apple 重新分配的屏幕截图](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>后续步骤
+
+如果要重新注册已删除的设备，请参阅[注册选项](enrollment-options.md)。
+
