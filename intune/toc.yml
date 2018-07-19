@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: 公司资源访问权限问题疑难解答
           href: troubleshoot-company-resource-access-problems.md
+        - name: 应用安装问题疑难解答
+          href: troubleshoot-app-install.md
         - name: Intune 活动的审核日志
           href: monitor-audit-logs.md
         - name: 查看应用保护日志
