@@ -521,6 +521,7 @@
         - name: 在使用 Jamf Pro 管理的 Mac 上强制实现符合性
           href: conditional-access-assign-jamf.md
     - name: 保护设备数据
+      href: device-protect.md
       items:
         - name: 隐私和个人数据
           href: privacy-personal-data.md
