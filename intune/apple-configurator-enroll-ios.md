@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 180988f296894c285b078f6906c4e77b832006f9
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840268"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212114"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
@@ -135,7 +135,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>将配置文件作为 .mobileconfig 导出到 iOS 设备
 
 1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “Apple Configurator” > “配置文件”> 选择要导出的配置文件 >“导出配置文件”。
-2. 在“直接许可登记表”下，选择“下载配置文件”并保存此文件。
+2. 在“直接许可登记表”下，选择“下载配置文件”并保存此文件。 注册配置文件的有效期仅为两周，必须在此时间重新创建。
 3. 将文件传输到运行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 计算机，作为管理配置文件直接推送到 iOS 设备。
 4. 通过以下步骤使用 Apple Configurator 准备设备：
     1. 在 Mac 计算机上，打开 Apple Configurator 2.0。

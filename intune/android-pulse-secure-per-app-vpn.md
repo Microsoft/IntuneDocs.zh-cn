@@ -15,12 +15,12 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75a4d6f91323992cf7aa2c8bae6db419b14d1942
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5d8357a63f80552ff4b6ebd6d1da2998e675dd00
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831220"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146673"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件
 
@@ -63,7 +63,7 @@ ms.locfileid: "31831220"
 7. 选择“设置” > “配置”。
 3. 在“自定义 OMA-URI 设置”窗格上，选择“添加”。
     - 输入设置名称。
-    - 为“OMA-URI”指定以下字符串：./Vendor/MSFT/VPN/Profile/Name/PackageList，其中 Name 是步骤 1 中记下的 VPN 配置文件名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
+    - 对于 OMA-URI，请指定此字符串：/Vendor/MSFT/VPN/Profile/Name/PackageList，其中 Name 是在步骤 1 中记录的连接名称。 本示例中，字符串为 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
     - 为“数据类型”，指定“字符串”。
     - 对于**值**与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 **com.microsoft.office.excel;com.android.chrome**。
 

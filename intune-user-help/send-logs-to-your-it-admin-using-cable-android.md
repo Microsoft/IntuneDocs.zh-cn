@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015602"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117848"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>使用 USB 电缆将日志发送给公司支持人员
 
@@ -35,7 +35,7 @@ ms.locfileid: "31015602"
 
 2. 使用 USB 电缆将设备连接到计算机。 这通常是用于在壁式插座上对设备进行充电的同一电缆。
 
-3. 在计算机上，查找具有你的设备名的目录。 在该目录中查找 <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>。
+3. 在计算机上，查找具有你的设备名的目录。 在该目录中查找 <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>。
 
 4. 选择文件，然后将它们附加到电子邮件。 将此电子邮件发送给公司支持人员。
 

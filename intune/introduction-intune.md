@@ -36,8 +36,7 @@ Intune 是企业移动管理 (EMM) 领域中基于云的服务，可帮助员工
 * [保护本地电子邮件和数据以供移动设备访问](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [保护 Office 365 电子邮件和数据以供移动设备安全访问](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [向员工发放公司拥有的手机](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
-* 
-  [为所有员工提供一个“自带设备办公”(BYOD) 或个人设备计划](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
+* [为所有员工提供一个“自带设备办公”(BYOD) 或个人设备计划](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [允许员工从不受管理的公用网亭安全访问 Office 365](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [向任务工作者发放使用受限的共享平板电脑](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833359"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117865"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>将设备与 Intune 同步以获取最新的策略和操作
 
@@ -43,6 +43,7 @@ ms.locfileid: "31833359"
 4. 在所管理的设备列表中，选择一个设备，选择“更多”，然后选择“同步”。
 5. 选择“是”以确认。
 
+选择“设备” > “设备操作”，查看同步操作的状态。
 
 ## <a name="retryable-error-codes"></a>可重试错误代码
 
@@ -65,4 +66,5 @@ ms.locfileid: "31833359"
 
 ## <a name="next-steps"></a>后续步骤
 
-- 若要查看同步操作的状态，请选择“设备操作”。 
+可[查看设备的详细信息](device-inventory.md)。
+ 

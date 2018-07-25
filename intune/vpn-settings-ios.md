@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d35c9e32b7a0720d5d84a93a7edde6f2bd51911f
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744561"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146622"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>在 Microsoft Intune 中为运行 iOS 的设备配置 VPN 设置
 
@@ -63,10 +63,10 @@ ms.locfileid: "34744561"
 - **VPN 标识符**：所用 VPN 应用的标识符，由 VPN 提供商提供。
 - **输入自定义 VPN 属性的键值对**：添加或导入用于自定义 VPN 连接的“键”和“值”。 同样，这些值通常由 VPN 提供商提供。
 
-## <a name="apps-per-app-vpn-settings"></a>应用（每应用 VPN）设置
+## <a name="automatic-vpn-settings"></a>自动 VPN 设置
 
-- **每应用 VPN**：从 Safari 浏览器访问 URL 时，启用此选项可使用这些 URL 来启用 VPN 连接。 要配置“每应用 VPN”，必须在基础 VPN 设置中选择“证书”作为身份验证方法。
-  - **将触发此 VPN 的 Safari URL**：选择此选项可添加一个或多个网站 URL。 访问这些 URL 时将启用 VPN 连接。
+- **每应用 VPN**：选择此选项可启用每应用 VPN，以便在打开某些应用时，自动触发 VPN 连接。 除选择此选项外，还需要将这些应用与此 VPN 配置文件相关联。 有关详细信息，请参阅[设置 iOS 每应用 VPN 的说明](vpn-setting-configure-per-app.md)。 
+  - **将触发此 VPN 的 Safari URL**：选择此选项可添加一个或多个网站 URL。 使用设备上的 Safari 浏览器访问这些 URL 时，将自动建立 VPN 连接。
 
 - **按需 VPN**：配置用于控制何时启动 VPN 连接的条件规则。 例如，创建一个条件，仅在设备未连接到公司 Wi-fi 网络时才使用 VPN 连接。 或者创建一个条件，如果设备无法访问指定的 DNS 搜索域，则不启动 VPN 连接。
 
