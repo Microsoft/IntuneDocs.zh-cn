@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905217"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203214"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>通过使用设备注册管理员帐户注册设备
 
@@ -56,7 +56,7 @@ DEM 用户可以：
   - （仅限 iOS）如果使用 DEM 注册 iOS 设备，则无法使用 Apple Configurator、Apple 设备注册计划 (DEP) 或 Apple School Manager (ASM) 注册设备。
   - （仅限 Android）使用单个 DEM 帐户注册 Android 工作配置文件设备时，可注册的设备数量有限。 每个 DEM 帐户最多可注册十台 Android 工作配置文件设备。 旧版 Android 注册不受此限制。
   - 如果设备具有设备许可证，则可以安装 VPP 应用。
-  - 每个设备都需要设备许可证。 详细了解[用户和设备许可证](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
+  - 无需 Intune 设备许可证，即可使用 DEM。 详细了解[用户和设备许可证](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 
 
 > [!NOTE]
