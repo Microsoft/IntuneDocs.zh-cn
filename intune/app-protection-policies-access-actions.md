@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
+ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993728"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138690"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用应用保护策略访问操作选择性地擦除数据
 
@@ -91,7 +91,7 @@ ms.locfileid: "38993728"
 - 允许指定项（擦除非指定项）
 
 **如果 IT 管理员对定目标到同一 Intune 用户的相同应用的策略输入不同的 Android 制造商列表，会发生什么？**<br>
-如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”和“策略 B”中列出的 Android 制造商的交集。 例如，如果“策略 A”指定“Google, Samsung”，而“策略 B”则指定“Google”，那么针对“策略 A”和“策略 B”都定目标到的 Intune 用户生成的策略是“Google”。 
+如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”和“策略 B”中列出的 Android 制造商的交集。 例如，如果“策略 A”指定“Google; Samsung”，而“策略 B”则指定“Google”，那么针对“策略 A”和“策略 B”都定目标到的 Intune 用户生成的策略是“Google”。 
 
 ### <a name="additional-settings-and-actions"></a>其他设置和操作 
 

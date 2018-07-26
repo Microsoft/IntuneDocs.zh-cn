@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
+ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905353"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39132453"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -167,11 +167,11 @@ ms.locfileid: "37905353"
 1. 选择“设备符合性” > “策略”。 随即会显示一个策略列表，包括平台（如果分配了策略）以及更多详细信息。
 2. 选择一个策略 >“概述”。 在此视图中，策略分配包括以下状态：
 
-  - 成功
-  - 错误
-  - 冲突
-  - Pending
-  - “不适用”
+  - 已成功：策略已应用
+  - 错误：无法应用策略。 这通常与链接到错误说明的错误代码一起显示。 
+  - 冲突：两个设置都应用于同一设备，Intune 无法解决冲突。 管理员应进行审核。
+  - 挂起：设备尚未签入 Intune，无法接收策略。 
+  - 不适用：设备无法接收策略。 例如，策略更新了 iOS 11.1 的特定设置，但设备使用的是 iOS 10。 
 
 3. 若要查看使用此策略的设备的详细信息，请选择其中一种状态。 例如，选择“已成功”。 在下一个窗口中，将列出特定设备的详细信息，包括设备名称和部署状态。
 
@@ -181,4 +181,3 @@ ms.locfileid: "37905353"
 - 如果冲突的设置来自 Intune 配置策略和合规性策略，那么合规性策略中的设置优先于配置策略中的设置。 即使配置策略中的设置更安全，也会发生这种情况。
 
 - 如果部署了多个符合性策略，Intune 将使用其中最安全的策略。
-
