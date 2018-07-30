@@ -396,12 +396,12 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
-        - name: 配置展台设置
-          href: kiosk-settings.md
-        - name: 配置 Android kiosk 设置
+        - name: Android 展台设置
           href: android-kiosk-settings.md
         - name: Android 企业 kiosk 设置
           href: android-enterprise-settings.md
+        - name: Windows 10 展台设置
+          href: kiosk-settings.md
         - name: 配置电子邮件设置
           href: email-settings-configure.md
           items:
@@ -439,7 +439,9 @@
               href: wi-fi-settings-ios.md
             - name: macOS
               href: wi-fi-settings-macos.md
-            - name: Windows 8.1 和 Windows 10
+            - name: Windows 10
+              href: wi-fi-settings-windows.md
+            - name: Windows 8.1
               href: wi-fi-settings-import-windows-8-1.md
         - name: 教育
           items:
@@ -458,6 +460,10 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: 使用 S/MIME 加密电子邮件
+              href: certificates-s-mime-encryption-sign.md
+            - name: 结合使用第三方证书颁发机构和 SCEP
+              href: certificate-authority-add-scep-overview.md
             - name: Symantec PKI Manager Web 服务
               href: certificates-symantec-configure.md
         - name: 配置 Windows 信息保护设置
@@ -710,6 +716,8 @@
               href: custom-settings-android-for-work.md
 - name: 开发人员指南
   items:
+    - name: 用于添加第三方证书颁发机构的 API
+      href: scep-libraries-apis.md
     - name: 使用 Intune App SDK 保护应用
       href: app-sdk.md
       items:
