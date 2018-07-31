@@ -15,12 +15,12 @@ ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c3184ff01252d2f53b5bfcce286df3424da23c2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ecbc15c4888ae42c34c5ff9f488d639fc321853e
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909161"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279400"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作配置文件设备
 
@@ -66,7 +66,7 @@ Android 企业不提供默认电子邮件应用或如 iOS 提供的本机电子�
 
 VPN 支持类似于 Android VPN 配置文件。 可使用相同的 VPN 提供商和基本配置选项管理 Android 企业，只有两点差别：
 
--  **限于工作配置文件的 VPN** - VPN 连接仅限于部署到工作配置文件的应用。 仅 Android 企业托管应用可使用 VPN 连接。 设备上的个人应用无法使用托管 VPN 连接。 有关详细信息，请参阅 [Android 企业 VPN 设置](vpn-settings-android.md#android-work-profile-device-vpn-settings)。
+-  **限于工作配置文件的 VPN** - VPN 连接仅限于部署到工作配置文件的应用。 仅 Android 企业托管应用可使用 VPN 连接。 设备上的个人应用无法使用托管 VPN 连接。 有关详细信息，请参阅 [Android 企业 VPN 设置](vpn-settings-android.md#android-for-work-vpn-settings)。
 
 -  **特定于应用的 VPN** - 如果 VPN 提供程序支持以下项，可在 Intune 中配置特定于应用的 VPN：
     - 特定于应用的 VPN 配置
