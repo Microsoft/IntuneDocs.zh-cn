@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f907272f74886612eba9b5b28118f298caa2f36d
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223899"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321112"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>将 Windows 业务线应用添加到 Microsoft Intune
 
@@ -40,7 +40,11 @@ ms.locfileid: "34223899"
 ## <a name="step-2-configure-the-app-package-file"></a>步骤 2：配置应用包文件
 
 1. 在“添加应用”窗格中，选择“应用包文件”。
-2. 在“应用包文件”窗格中，选择“浏览”按钮。 然后选择带扩展名“.msi”、“.appx”，或“.appxbundle”的 Windows 安装文件。
+2. 在“应用包文件”窗格中，选择“浏览”按钮。 然后选择扩展名为 .msi、.appx、.appxbundle、.msix 或 .msixbundle 的 Windows 安装文件。
+
+    > [!NOTE]
+    > Windows 应用的文件扩展名包括 .msi、.appx、.appxbundle、.msix 和 .msixbundle。  
+
 3. 完成后，选择“确定”。
 
 

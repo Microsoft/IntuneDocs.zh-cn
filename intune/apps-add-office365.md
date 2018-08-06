@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869366"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321469"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
@@ -60,9 +60,6 @@ ms.locfileid: "37869366"
     此外，还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。
 3. 选择“确定”。
 
->[!IMPORTANT]
-> 创建应用套件后，无法编辑其属性。 若要配置不同的属性，请删除该应用套件并创建一个新的应用套件。
-
 ## <a name="configure-app-information"></a>配置应用信息
 
 在此步骤中，提供有关该应用套件的信息。 此信息有助于在 Intune 中识别应用套件，也有助于用户在公司门户中找到应用套件。
@@ -95,11 +92,8 @@ ms.locfileid: "37869366"
         - **半年**
         - **半年（定向）**
     - 自动接受应用最终用户许可协议：如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
-    - 使用共享计算机激活：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 Office 365 的共享计算机激活概述。
+    - 使用共享计算机激活：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 [Office 365 的共享计算机激活概述](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - 语言：Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。
-
->[!IMPORTANT]
-> 创建应用套件后，无法编辑其属性。 若要配置不同的属性，请删除该应用套件并创建一个新的应用套件。
 
 ## <a name="finish-up"></a>完成
 

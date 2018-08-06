@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
-ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
+ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36297899"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321231"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -462,4 +462,6 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 | 0x0FFFFFFFF | Unknown_Error  | 我们无法完成你的请求，因为发生了服务器端错误。 请重试。 |
 
 ## <a name="next-steps"></a>后续步骤
-[使用 PKCS 证书](certficates-pfx-configure.md)，或[从 Symantec PKI 管理器 Web 服务颁发 PKCS 证书](certificates-symantec-configure.md)。
+
+- [使用 PKCS 证书](certficates-pfx-configure.md)，或[从 Symantec PKI 管理器 Web 服务颁发 PKCS 证书](certificates-symantec-configure.md)
+- [添加第三方 CA 以通过 Intune 使用 SCEP](certificate-authority-add-scep-overview.md)

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69ea07e8d0a5d4a54abe7d1e592b3930d4e82354
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 26d5af15086e422685c7c58c5b8a7d351f9eb854
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830210"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321384"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS 设备限制设置
 
@@ -50,5 +50,5 @@ ms.locfileid: "31830210"
 
 ### <a name="unmarked-email-domains"></a>未标记的电子邮件域
 
-在“电子邮件域 URL”字段中，向列表添加一个或多个 URL。 当用户从所配置的域以外的域接收电子邮件时，该电子邮件在 iOS 邮件应用中被标记为不受信任。
+在“电子邮件域 URL”字段中，向列表添加一个或多个 URL。 当用户从所配置的域以外的域接收电子邮件时，该电子邮件在 MacOS 邮件应用中被标记为不受信任。
 

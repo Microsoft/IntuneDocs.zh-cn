@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442570"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321435"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 添加适用于 macOS 设备的设备符合性策略
 
@@ -83,6 +83,13 @@ Intune macOS 设备符合性策略确定 macOS 设备为实现符合性而必须
 ### <a name="encryption"></a>加密
 
 - 设备上的数据存储加密：选择“需要”加密设备上的数据存储。
+
+### <a name="device-security"></a>设备安全
+防火墙保护设备免受未经授权的网络访问。 可以使用防火墙控制基于每个应用程序的连接。 
+
+- **防火墙**：“启用”防火墙可帮助保护设备免受未经授权的访问。 启用此功能，可以处理传入的 Internet 连接，并使用隐藏模式。 “未配置”（默认）使防火墙保持关闭状态，允许网络流量（未阻止）。
+- **传入连接**：阻止所有传入网络连接，DHCP、Bonjour 和 IPSec 等基本 Internet 服务需要的连接除外。 此设置还会阻止所有共享服务，包括屏幕共享、远程访问、iTunes 音乐共享等。 “未配置”（默认）允许传入连接和共享服务。 
+- **隐藏模式**：启用隐藏模式以防止设备响应可能由恶意用户发出的探测请求。 启用后，设备会继续响应授权应用的传入请求。 “未配置”（默认）使隐藏模式保持关闭状态。
 
 ## <a name="assign-user-groups"></a>分配用户组
 

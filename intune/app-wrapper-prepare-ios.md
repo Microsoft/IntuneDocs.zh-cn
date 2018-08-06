@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224929"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254529"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -339,7 +339,7 @@ ms.locfileid: "38224929"
 
     b.  打开相应的功能。 有关每项功能以及如何确定正确值的详细信息，请参阅 iOS 开发人员库中的[添加功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。
 
-    c.  记下在此过程中创建的任何 ID。
+    c.  记下在此过程中创建的任何 ID。 这些可能也被称为 `AppIdentifierPrefix` 值。
 
     d.  生成要包装的应用并对其签名。
 
@@ -349,7 +349,7 @@ ms.locfileid: "38224929"
 
     b.  为应用创建预配配置文件。 有关说明，请参阅 [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)（如何获取 Intune App Wrapping Tool for iOS 的先决条件）。
 
-    c.  在预配配置文件中，启用与应用中相同的权利。 你需要提供在应用开发过程中指定的相同 ID。
+    c.  在预配配置文件中，启用与应用中相同的权利。 需提供在应用开发过程中指定的相同 ID（`AppIdentifierPrefix` 值）。 
 
     d.  完成预配配置文件向导并下载你的文件。
 

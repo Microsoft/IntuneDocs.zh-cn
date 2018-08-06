@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/13/2018
+ms.date: 07/23/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 1d56312fdf0e81406587caf352feafd745bd4353
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212063"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321554"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -33,20 +33,117 @@ ms.locfileid: "39212063"
 
 <!-- Common categories:  
 ### App management
+### Device configuration
 ### Device enrollment
 ### Device management
-### Device configuration
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
 
 -->   
+
+## <a name="week-of-july-23-2018"></a>2018 年 7 月 23 日的这一周
+
+### <a name="app-management"></a>应用管理
+
+####  <a name="windows-apps-file-extensions----1884873---"></a>Windows 应用文件扩展名 <!-- 1884873 -->
+Windows 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.msix 和 .msixbundle。 可以在 Microsoft Intune 中添加应用，方法是通过选择“移动应用” > “应用” > “添加”。 将显示“添加应用”窗格，可选择“应用类型”。 选择允许上传应用包文件的应用类型，选择“应用包文件”，然后输入带有相应扩展名的安装文件。
+
+#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>对 macOS 的业务线 (LOB) 应用支持 <!-- 1895847 -->
+Microsoft Intune 允许将 macOS LOB 应用部署为“必需”或“注册时可用”。 最终用户可通过适用于 macOS 公司门户或[公司门户网站](https://portal.manage.microsoft.com)获得部署为“可用”的应用。
+
+#### <a name="ios-built-in-app-support-for-kiosk-mode----2051098---"></a>iOS 内置应用支持展台模式 <!-- 2051098 -->
+除了应用商店应用和托管应用，现在可以选择在 iOS 设备上以展台模式运行的内置应用（例如 Safari）。
+
+#### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>编辑 Office 365 Pro Plus 应用部署 <!-- 2150145 -->
+作为 Microsoft Intune 管理员，现在可以对 Office 365 专业增强版应用部署进行更多编辑。 此外，不再需要删除部署以更改任何套件属性。 在 Azure 门户中，选择“Microsoft Intune” > “移动应用” > “应用”。 从应用列表中选择你的 Office 365 Pro Plus 套件。  
+
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>使用 S/MIME 对用户的多个设备进行加密和签名 <!-- 1333642 -->
+此更新包括使用新导入的证书配置文件进行 S/MIME 电子邮件加密（“设备配置” > “配置文件” > “创建配置文件”>“选择平台”>“PKCS 导入的证书”配置文件类型）。 在 Intune 中，可以 PFX 格式导入证书。 然后 Intune 可以将这些相同的证书传递给单个用户注册的多个设备。 还包括：
+
+- 本机 iOS 电子邮件配置文件支持使用 PFX 格式的导入证书启用 S/MIME 加密。
+- Windows Phone 10 设备上的本机电子邮件应用自动使用 S/MIME 证书。
+- 可以跨多个平台传递私有证书。 但并非所有电子邮件应用都支持 S/MIME。
+- 在其他平台上，可能需要手动配置电子邮件应用以启用 S/MIME。  
+- 支持 S/MIME 加密的电子邮件应用可能以 MDM 不支持的方式（例如从发布者的证书存储读取）处理对 S/MIME 电子邮件加密的证书检索。
+
+支持的设备：Windows、Windows Phone 10、macOS、iOS、Android
+
+#### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>在 macOS 设备上使用防火墙设置创建设备符合性策略 <!-- 1497640 -->
+创建新的 macOS 符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: macOS” > “系统安全性”）时，有一些新的可用“防火墙”设置： 
+
+- 防火墙：配置环境对传入连接的处理方式。
+- 传入连接：阻止所有传入连接，DHCP、Bonjour 和 IPSec 等基本 Internet 服务需要的连接除外。 此设置还会阻止所有共享服务。
+- 隐藏模式：启用隐藏模式以防止设备响应探测请求。 设备会继续回应已授权应用的传入请求。
+
+适用于：macOS 10.12 及更高版本
+
+#### <a name="new-wi-fi-device-configuration-profile-for-windows-10-and-later----1879077---"></a>Windows 10 及更高版本的新 Wi-Fi 设备配置文件 <!-- 1879077 -->
+目前，可以使用 XML 文件导入和导出 Wi-Fi 配置文件。 通过此次更新，能够直接在 Intune 中创建 Wi-Fi 设备配置文件，与在某些其他平台上的操作一样。
+
+若要创建配置文件，打开“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “Wi-Fi”。 
+
+适用于 Windows 10 和更高版本。
+
+#### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998-eeready---"></a>Kiosk - 已过时显示为灰色，无法更改 <!-- 2149998 eeready -->
+[展台功能](device-restrictions-windows-10.md#kiosk-preview---obsolete)（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “设备限制”）已过时，并替换为[适用于 Windows 10 和更高版本的展台设置](kiosk-settings.md)。 更新后，“展台 - 已过时”功能显示为灰色，并且无法更改或更新用户界面。 
+
+若要启用展台模式，请参阅 [Windows 10 及更高版本的 Kiosk 设置](kiosk-settings.md)。
+
+应用于 Windows 10 及更高版本、Windows Holographic for Business
+
+#### <a name="apis-to-use-3rd-party-certification-authorities----2184013---"></a>使用第 3 方证书颁发机构的 API <!-- 2184013 -->
+此更新中有一个 Java API，能实现第三方证书颁发机构与 Intune 和 SCEP 的集成。 然后用户可以将 SCEP 证书添加到配置文件，并使用 MDM 将其应用于设备。
+
+目前 Intune 支持[使用 Active Directory 证书服务的 SCEP 请求](certificates-scep-configure.md)。
+
+#### <a name="toggle-to-show-or-not-show-the-end-session-button-on-a-kiosk-browser----2455253---"></a>切换以显示或不显示 Kiosk 浏览器上的“结束会话”按钮 <!-- 2455253 -->
+现可配置展台浏览器是否显示“结束会话”按钮。 可以在“设备配置” > “Kiosk（预览）” > “Kiosk Web 浏览器”中看到控件。 若关闭，用户单击按钮时，应用会提示是否结束会话。 确定结束时，浏览器清除所有浏览数据并导航回到默认 URL。
+
+#### <a name="create-an-esim-cellular-configuration-profile----2564077---"></a>创建 eSIM 卡移动电话配置文件 <!-- 2564077 -->
+在“设备配置”中，可创建 eSIM 手机网络配置文件。 可以导入包含移动运营商提供的移动电话激活码的文件。 然后，可以将这些配置文件部署到支持 eSIM LTE 的 Windows 10 设备，例如 Surface Pro LTE 和其他支持 eSIM 卡的设备。
+
+检查[设备是否支持 eSIM 卡配置文件](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data)。
+
+适用于 Windows 10 和更高版本。 
+
+
+
+
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="automatically-mark-android-devices-enrolled-by-using-samsung-knox-mobile-enrollment-as-corporate----2404851---"></a>自动标记使用 Samsung Knox 移动注册为“公司”注册的 Android 设备。 <!-- 2404851 -->
+默认情况下，使用 Samsung Knox 移动注册的 Android 设备现在标记为“设备所有权”下的“公司”。 使用 Knox 移动注册之前，不需要使用 IMEI 或序列号手动识别公司设备。
+
+### <a name="device-management"></a>设备管理
+
+#### <a name="bulk-delete-devices-on-devices-blade----1793693---"></a>在设备边栏选项卡上批量删除设备 <!-- 1793693 -->
+
+现在可在“设备”边栏选项卡上一次删除多个设备。 选择“设备” > “所有设备”>“选择要删除的设备”>“删除”。 对于无法删除的设备，会出现警告。
+
+## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日所在的一周  
+
+### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的更多同步机会  
+适用于 Windows 的公司门户应用现在允许直接从 Windows 任务栏和“开始”菜单启动同步。 如果唯一任务是同步设备并访问公司资源，那么此功能特别有用。 要访问新功能，请右键单击固定到任务栏或“开始”菜单的公司门户图标。 在菜单选项（也称为跳转列表）中，选择“同步此设备”。 公司门户将打开“设置”页面并启动同步。若要了解新功能，请参阅 [UI 中的新增功能](whats-new-app-ui.md)。   
+
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的新浏览体验  
+
+现在，在适用于 Windows 的公司门户应用中浏览或搜索应用时，用户能在现有的“磁贴”视图和新添加的“详细信息”视图之间切换。 新视图列出应用程序详细信息，如名称、发布服务器、发布日期和安装状态。  
+
+通过“应用”页的“已安装”视图可查看已完成和正在进行的应用安装的详细信息。 若要查看新视图的外观，请参阅 [UI 中的新增功能](whats-new-app-ui.md)。  
+### <a name="improved-company-portal-app-experience-for-device-enrollment-managers"></a>针对设备注册管理员，改进了公司门户应用体验  
+现在，当设备注册管理员 (DEM) 登录到适用于 Windows 的公司门户应用时，该应用将仅列出 DEM 当前正在运行的设备。 以前应用尝试显示所有 DEM 注册设备，会出现较长的超时，此改进则将减少超时时间。  
+
+
 ## <a name="week-of-july-9-2018"></a>2018 年 7 月 9 日所在的一周
 
 ### <a name="app-management"></a>应用管理
 
 ### <a name="block-app-access-based-on-unapproved-device-vendors-and-models-----1425689----"></a>基于未批准的设备供应商和型号阻止应用的访问 <!-- 1425689 ! -->
-Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Android 制造商和/或 iOS 型号列表。 IT 管理员可以提供适用于 Android 策略的供应商列表和适用于 iOS 策略的设备型号列表，列表以分号分隔。 Intune App 保护策略仅适用于 Android 和 iOS。 可针对所指定的此列表执行两个单独的操作：
+Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Android 制造商和/或 iOS 型号列表。 IT 管理员可以提供适用于 Android 策略的供应商列表和适用于 iOS 策略的设备型号列表，列表以分号分隔。 Intune App 保护策略仅适用于 Android 和 iOS。 可针对此指定列表执行两个单独的操作：
 - 阻止应用访问未指定的设备。
 - 或者，选择性地擦除未指定的设备上的企业数据。 
 
@@ -61,9 +158,6 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 
 ### <a name="app-management"></a>应用管理
 
-#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Windows Installer 的其他安全设置 <!-- 2282430 -->
-可允许用户控制应用安装。 如果启用，则允许因安全冲突而停止的安装继续进行。 当 Windows Installer 在系统上安装任何程序时，可指示它使用提升的权限。 此外，还可以对 Windows 信息保护 (WIP) 项目编制索引，并将有关这些项目的元数据存储在未加密的位置。 禁用策略后，不会索引受 WIP 保护的项，也不会在 Cortana 或文件资源管理器的结果中显示这些项。 默认情况下禁用这些选项的功能。 
-
 #### <a name="monitor-ios--app-configuration-status-per-device----880037---"></a>监控每个设备的 iOS 应用配置状态 <!-- 880037 -->
 作为 Microsoft Intune 管理员，可监控每个受管理设备的 iOS 应用配置状态。 从 Azure 门户的“Microsoft Intune”中，选择“设备” > “所有设备”。 从受管理设备列表中选择特定设备，以显示该设备的边栏选项卡。 在该设备的边栏选项卡上，选择“应用配置”。
 
@@ -77,7 +171,7 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 作为 Microsoft Intune 管理员，可撤销通过批量采购计划 (VPP) 购买的选定 iOS 应用的所有许可证。 可在取消向用户分配用户许可的应用时向其发出通知。 撤销应用许可证将不会从设备中卸载相关的 VPP 应用。 若要卸载 VPP 应用，必须将分配操作更改为“卸载”。 回收的许可证计数将反映在 Intune“应用”工作负荷的“许可应用”节点中。 有关 iOS VPP 应用的详细信息，请参阅[如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用](vpp-apps-ios.md)。
 
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>公司门户应用中不合规消息的更新<!-- 1832222 -->
-我们修改了设备用户在设备不合规时看到的消息。 消息保留其原始含义，但已使用更友好的语言和更少的技术术语进行了更新。 我们还刷新了文档和修正步骤的链接，以保持最新状态。
+我们修改了设备用户在设备不合规时看到的消息。 消息保留其原始含义，但已使用更友好的语言和更少的技术术语进行了更新。 我们还刷新了文档和修正步骤的链接，使其保持最新状态。
 以下修改前后的内容是将看到的消息改进的一个示例：
 - 修改前：此设备未在 IT 管理员要求的指定时间内联系 Intune 服务。要解决此问题，请打开设备上的公司门户应用，单击“检查符合性”按钮。
 - 修改后：设备在一段时间内未签入组织。要重新建立连接，请打开设备上的公司门户应用并点击设备的“检查设置”。
@@ -580,7 +674,7 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
 
 ####  <a name="detailed-error-codes-and-messages----1376342---"></a>详细的错误代码和消息 <!-- 1376342 -->
 
-在设备配置中，可以查看更详细的错误代码和错误消息。 这一改进的报告显示了相关设置、这些设置的状态以及详细的故障排查信息。
+在“设备配置”中，可以查看更详细的错误代码和错误消息。 这一改进的报告显示了相关设置、这些设置的状态以及详细的故障排查信息。
 
 ##### <a name="more-information"></a>更多信息
 
@@ -616,7 +710,7 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens 和 Surface Hub 现在会出现在设备列表 <!--1725868 --> 中
 我们向适用于 Android 的公司门户应用添加了对显示已注册 Intune 的 HoloLens 和 Surface Hub 设备的支持。
 
-#### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>批量采购计划 (VPP) 电子书的自定义书籍类别<!-- 1488911 -->
+#### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>批量采购计划 (VPP) 电子书的自定义书籍类别 <!-- 1488911 -->
 能够创建自定义电子书类别，然后将 VPP 电子书分配到自定义电子书类别。 最终用户即可以看到新建的电子书类别以及分配给该类别的书籍。 有关系详细信息，请参阅[使用 Microsoft Intune 管理批量购买的应用和书籍](vpp-apps.md)。  
 
 #### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>支持对 Windows 公司门户应用中的“发送反馈”选项进行更改 <!-- 2070166 -->
@@ -914,7 +1008,7 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 
 #### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>新的 Windows Defender 安全中心 (WDSC) 设备配置文件设置<!-- 1335507 -->
 
-Intune 在名为“Windows Defender 安全中心”的端点保护下添加了一个新的设备配置文件设置部分。 IT 管理员可以配置最终用户能访问 Windows Defender 安全中心应用的哪些支柱。 如果 IT 管理员在 Windows Defender 安全中心应用中隐藏支柱，则与隐藏支柱相关的所有通知都不会显示在用户设备上。
+Intune 在名为“Windows Defender 安全中心”的端点保护下添加了一个新的设备配置文件设置部分。 IT 管理员可以配置最终用户能访问 Windows Defender 安全中心应用的支柱类型。 如果 IT 管理员在 Windows Defender 安全中心应用中隐藏支柱，则与隐藏支柱相关的所有通知都不会显示在用户设备上。
 
 以下是管理员可以在 Windows Defender 安全中心设备配置文件设置中隐藏的支柱：
 - 病毒和威胁防护

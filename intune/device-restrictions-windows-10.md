@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803833"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321214"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中针对 Windows 10 及更高版本的设备限制设置
 本文介绍可为运行 Windows 10 的设备配置的所有 Microsoft Intune 设备限制设置。
@@ -252,7 +252,7 @@ ms.locfileid: "34803833"
 
 ## <a name="kiosk-preview---obsolete"></a>展台（预览版）- 已过时
 
-这些设置即将迁移，并会在即将发布的版本中删除。 若要使用新设置，请参阅 [Windows 10 及更高版本中的展台设置](kiosk-settings.md)。
+这些设置为只读，无法更改。 若要配置展台模式，请参阅 [Windows 10 及更高版本中的展台设置](kiosk-settings.md)。
 
 展台设备通常运行一个应用或一组特定应用。 用户不得访问任何展台应用以外设备上的任何功能。
 

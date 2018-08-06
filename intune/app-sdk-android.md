@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449864"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254393"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -463,7 +463,20 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 如有必要，可以指定颁发机构和 NonBrokerRedirectURI。
 
-Intune SDK 团队需要应用的应用程序 ID（客户端 ID）。 可在 [Azure 门户](https://portal.azure.com/)中“所有应用程序”下的“应用程序 ID”列找到此内容。 有关使用 Azure AD 注册应用程序的信息，请参阅[此处](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)。 可通过 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
+使用以下步骤向 Azure AD 注册应用。
+
+在 Azure 门户中：
+1.  转到“Azure Active Directory”边栏选项卡。
+2.  选择“应用注册”，设置应用程序。
+3.  在“API 访问”标题下的“设置”中，选择“所需权限”。 
+4.  单击“+ 添加”。
+5.  单击“选择 API”。 
+6.  在搜索框中输入“Microsoft 移动应用程序管理”。
+7.  单击选择 API 列表中的“Microsoft 移动应用程序管理”。
+8.  选择“读取和写入用户的应用管理数据”。
+9.  单击“完成”。
+
+有关使用 Azure AD 注册应用程序的信息，请参阅[此处](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)。 
 
 另请参阅以下[条件访问](#conditional-access)的要求。
 
@@ -1418,7 +1431,7 @@ public interface MAMAppConfig {
 > “默认注册”提供一个为设备上的应用从 APP-WE 服务获取策略的简便方法。
 
 ### <a name="general-requirements"></a>一般要求
-* Intune SDK 团队需要应用的应用程序 ID。 可按此方式找到此内容：在 [Azure 门户](https://portal.azure.com/)中的“所有应用程序”下，找到“应用程序 ID”列。 建议通过电子邮件 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
+* 请确保已按照[常用 ADAL 配置 #2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations) 中的步骤，在 Intune 移动应用程序管理服务中注册应用。
 
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
 以下说明专门面向希望要求应用在最终用户设备上使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用开发人员。

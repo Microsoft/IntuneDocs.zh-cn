@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803816"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321486"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 设备限制设置
 
@@ -182,8 +182,8 @@ ms.locfileid: "34803816"
 
 在“显示或隐藏应用”列表中，可以配置以下列表之一（需要运行 iOS 9.3 或更高版本的受监控设备）。
 
-“隐藏应用”列表 - 指定对用户隐藏的应用列表。 用户无法查看，或启动这些应用。
-“可见应用”列表 - 指定用户可以查看和启动的应用列表。 无法查看或启动其他应用。
+- “隐藏应用”列表 - 指定对用户隐藏的应用列表。 用户无法查看，或启动这些应用。
+- “可见应用”列表 - 指定用户可以查看和启动的应用列表。 无法查看或启动其他应用。
 
 若要配置列表，请单击“添加”，然后指定所选应用的名称、应用发布者（可选）和该应用在应用商店中的 URL。
 
@@ -259,54 +259,8 @@ ms.locfileid: "34803816"
 - **导入** - 导入以逗号分隔的值 (.csv) 文件，其中包含应用名称的列表及其相关联的捆绑 ID。
 - **导出** - 导出应用名称以及向逗号分隔的值 (.csv) 文件配置的相关联的捆绑 ID。
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>内置 iOS 应用的捆绑 ID 引用
-
-此列表显示了一些常见的内置 iOS 应用的捆绑 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>展台（仅限被监督的设备）
--   **在展台模式下运行的应用** - 选择“托管应用”以选择已添加到 Intune 的应用，或选择“应用商店应用”以指定应用商店中应用的 URL。 不允许在设备上运行其他应用。 若要获取更多帮助，请参阅本主题后面的“如何指定应用商店的 URL”。
+-   在展台模式下运行的应用 - 选择“托管应用”可选择已添加到 Intune 的应用，选择“应用商店应用”可指定应用商店中应用的 URL，或选择“内置应用”可指定内置应用的捆绑 ID。 有关详细信息，请参阅[内置 iOS 应用的捆绑 ID 引用](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps)和[如何指定应用商店中应用的 URL](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1)。
     -   **辅助触摸** - 启用或禁用“辅助触摸”辅助功能设置，它可帮助用户执行可能难以执行的屏幕手势。
     -   **反转颜色** - 启用或禁用“反转颜色”辅助功能设置，它可调整显示效果以帮助有视觉障碍的用户。
     -   **单声道音频** - 启用或禁用“单声道音频”辅助功能设置。
@@ -327,6 +281,51 @@ ms.locfileid: "34803816"
 >[!NOTE]
 > 必须使用 Apple Configurator 工具或 Apple 设备注册程序将设备置于监督模式后才能为 iOS 设备配置展台模式。 有关 Apple Configurator 工具的详细信息，请参阅 Apple 文档。
 >如果在分配配置文件之后安装指定的 iOS 应用，则设备将在重启后才会进入展台模式。
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>内置 iOS 应用的捆绑 ID 引用
+
+此列表显示了一些常见的内置 iOS 应用的捆绑 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。
+
+| 捆绑 ID                   | 应用程序名称     | 发布者 |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | 计算器   | Apple     |
+| com.apple.mobilecal         | 日历     | Apple     |
+| com.apple.camera            | 照相机       | Apple     |
+| com.apple.mobiletimer       | 时钟        | Apple     |
+| com.apple.compass           | 指南针      | Apple     |
+| com.apple.MobileAddressBook | 联系人     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | 查找好友 | Apple     |
+| com.apple.mobileme.fmip1    | 查找 iPhone  | Apple     |
+| com.apple.gamecenter        | 游戏中心  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | 运行状况       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes 商店 | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | 消息     | Apple     |
+| com.apple.Music             | 音乐        | Apple     |
+| com.apple.news              | 新闻         | Apple     |
+| com.apple.mobilenotes       | 注意        | Apple     |
+| com.apple.Numbers           | 数字      | Apple     |
+| com.apple.Pages             | 页面        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | 照片       | Apple     |
+| com.apple.podcasts          | 播客     | Apple     |
+| com.apple.reminders         | 提醒    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | 设置     | Apple     |
+| com.apple.stocks            | 股票       | Apple     |
+| com.apple.tips              | 提示         | Apple     |
+| com.apple.videos            | 视频       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | 电子钱包       | Apple     |
+| com.apple.Bridge            | 观看        | Apple     |
+| com.apple.weather           | 天气      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Safari（仅限被监督的设备）** - 指定是否可以在设备上使用 Safari 浏览器。

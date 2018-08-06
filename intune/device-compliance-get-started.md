@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225436"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268900"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -167,7 +167,7 @@ Remember that you need to implement conditional access policies in addition to c
   启用此设置要求设备：
   - 在 OS 级别启用位置服务
   - 允许公司门户使用位置服务
-  - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。
+  - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。 通过打开公司门户应用或将设备移动 500 米或更远距离来触发评估。
 
 - **符合性状态有效期(天)**：输入设备报告收到的所有符合性策略的状态的期限。 未在此时间段内返回状态的设备将被视为“不符合”。 默认值为 30 天。
 

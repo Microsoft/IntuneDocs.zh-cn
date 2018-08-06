@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138690"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254478"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用应用保护策略访问操作选择性地擦除数据
 
@@ -44,7 +44,7 @@ ms.locfileid: "39138690"
 8. 如果用户不符合要求，请选择要采取的操作。 在某些情况下，可为单个设置配置多项操作。 有关详细信息，请参阅[如何创建和分配应用保护策略](app-protection-policies.md)。
 
 >[!NOTE]
-> 要使用“设备型号”设置，请输入以分号分隔的型号标识符列表。 
+> 要使用“设备型号或设备制造商”设置，请输入以分号分隔的型号标识符列表。 切勿在多值列表中使用空格。 这些值不区分大小写。 
 
 ## <a name="policy-settings"></a>策略设置 
 
@@ -83,7 +83,10 @@ ms.locfileid: "39138690"
 -  设备制造商
 
 若要使用“设备制造商”设置，请输入 Android 制造商的分号分隔列表。 可以在设备设置下找到设备的 Android 制造商。<br>
-示例输入：制造商 A; 制造商 B; Google 
+示例输入：制造商 A; 制造商 B 
+
+>[!NOTE]
+> 以下是使用 Intune 的设备报告的一些常见制造商，可以用作输入：Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 在最终用户设备上，Intune 客户端执行操作的依据为，Intune 中指定的设备型号字符串与应用程序保护策略的简单匹配情况。 匹配完全取决于设备报告的内容。 建议你（即 IT 管理员）务必要根据各种设备制造商和型号对小型用户组测试此设置，以确保行为按预期发生。 默认值为“未配置”。<br>
 请设置下列操作之一： 

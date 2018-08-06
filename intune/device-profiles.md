@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 07/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
+ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905183"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335820"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
 
@@ -113,6 +113,13 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - iOS
 - macOS
 - Windows 8.1 （仅限导入）
+
+## <a name="esim-cellular---public-preview"></a>eSIM 手机网络 - 公共预览版
+
+[eSIM 手机网络配置文件](esim-device-configuration.md)提供了在受管理设备上配置手机网络流量套餐以进行 Internet 和数据访问的功能。  从移动运营商处获取激活码后，可以使用 Intune 导入这些激活码，然后分配给支持 eSIM 的设备。
+
+此功能支持：
+- Windows 10 Fall Creators Update 及更高版本
 
 ## <a name="education"></a>教育
 [教育设置 - Windows 10](education-settings-configure.md) 配置针对 [Windows 参加测验应用](https://education.microsoft.com/gettrained/win10takeatest)的选项。 在配置这些选项时，直到测试完成才可以在设备上运行其他应用。

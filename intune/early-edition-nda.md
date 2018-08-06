@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3aed8fcefd640e5b7df46fe1ef8cd1c973a68044
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: ad49b983bd5dc72a3355cba5645192456a555e38
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212131"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321248"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Microsoft Intune 的早期版本 - 2018 年 7 月
 
@@ -55,19 +55,9 @@ ms.locfileid: "39212131"
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>针对设备注册管理员用户，改进了公司门户应用体验 <!-- 675800 -->
 当设备注册管理员 (DEM) 登录到适用于 Windows 的公司门户应用时，该应用将仅列出 DEM 的当前正在运行的设备。 此改进将减少以前应用尝试加载所有 DEM 注册设备时出现的超时。  
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>使用 S/MIME 对用户的多个设备进行加密和签名 <!-- 1333642 -->
-未来的更新将包括使用新导入的证书配置文件进行 S/MIME 电子邮件加密（“设备配置” > “配置文件” > “创建配置文件”>“选择平台”>“PKCS 导入的证书”配置文件类型）。 在 Intune 中，可以 PFX 格式导入证书。 然后 Intune 可以将这些相同的证书传递给单个用户注册的多个设备。 还包括：
-
-- 本机 iOS 电子邮件配置文件支持使用 PFX 格式的导入证书启用 S/MIME 加密。
-- Windows Phone 10 设备上的本机电子邮件应用自动使用 S/MIME 证书。
-- 可以跨多个平台传递私有证书。 但并非所有电子邮件应用都支持 S/MIME。
-- 在其他平台上，可能需要手动配置电子邮件应用以启用 S/MIME。  
-- 支持 S/MIME 加密的电子邮件应用可能以 MDM 不支持的方式（例如从发布者的证书存储读取）处理对 S/MIME 电子邮件加密的证书检索。
-
-支持的设备：Windows、Windows Phone 10、macOS、iOS、Android
-
 ### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 注册期间，使用 VPP 设备许可证预先设置公司门户 <!-- 1608345 -->
 在设备注册计划 (DEP) 注册期间，可以使用批量采购计划 (VPP) 设备许可证预先设置公司门户。 若要完成此操作，在创建或编辑注册配置文件时，指定要用于安装公司门户的 VPP 令牌。 请确保令牌没有过期，并且具有足够的公司门户应用许可证。 如果令牌过期或许可证用完，Intune 将改为推送 App Store 公司门户（这将提示输入 Apple ID）。
+
 
 ### <a name="bulk-delete-devices-on-devices-blade----1793693---"></a>在设备边栏选项卡上批量删除设备 <!-- 1793693 -->
 可在设备边栏选项卡一次删除多个设备。 选择“设备” > “所有设备”>“选择要删除的设备”>“删除”。 对于无法删除的设备，会出现警告。
@@ -87,17 +77,6 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 
 适用于 Windows 10 和更高版本。
 
-### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998---"></a>Kiosk - 已过时显示为灰色，无法更改 <!-- 2149998 -->
-[Kiosk 功能](device-restrictions-windows-10.md#kiosk-preview---obsolete)“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “设备限制”将过时，并替换为 [Windows 10 和更高版本的 Kiosk 设置](kiosk-settings.md)。 “Kiosk - 已过时”功能将显示为灰色，并且无法更改或更新用户界面。 
-
-若要启用展台模式，请参阅 [Windows 10 及更高版本的 Kiosk 设置](kiosk-settings.md)。
-
-应用于 Windows 10 及更高版本、Windows Holographic for Business
-
-### <a name="apis-to-use-3rd-party-certification-authorities----2184013---"></a>使用第 3 方证书颁发机构的 API <!-- 2184013 -->
-将有一个 Java API，使第三方证书颁发机构能与 Intune 和 SCEP 集成。 然后用户可以将 SCEP 证书添加到配置文件，并使用 MDM 将其应用于设备。
-
-目前 Intune 支持[使用 Active Directory 证书服务的 SCEP 请求](certificates-scep-configure.md)。
 
 ### <a name="check-for-sccm-compliance----2192052---"></a>检查 SCCM 符合性 <!-- 2192052 -->
 未来的更新将包括新的 System Center Configuration Manager (SCCM) 符合性设置（“设备符合性” > “策略” > “创建策略” > “Windows 10”。 SCCM 向 Intune 符合性发送信号。 使用 Intune 设置，可以要求所有 SCCM 信号都返回“符合”。
@@ -112,20 +91,9 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 ### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>需要确认才能删除正用于公司门户预先设置的 VPP 令牌 <!-- 2237634 -->
 如果在 DEP 注册期间正在使用批量购买计划 (VPP) 预先设置公司门户，则需要确认是否删除此令牌。
 
-### <a name="automatically-mark-android-devices-enrolled-by-using-samsung-knox-mobile-enrollment-as-corporate----2404851---"></a>自动标记使用 Samsung Knox 移动注册为“公司”注册的 Android 设备 <!-- 2404851 -->
-默认情况下，使用 Samsung Knox 移动注册的 Android 设备将标记为“设备所有权”下的“公司”。 使用 Knox 移动注册之前，将不需要使用 IMEI 或序列号手动识别公司设备。
 
-### <a name="toggle-to-show-or-not-show-the-end-session-button-on-a-kiosk-browser----2455253---"></a>切换以显示或不显示 Kiosk 浏览器上的“结束会话”按钮 <!-- 2455253 -->
-将可以配置以决定 Kiosk 浏览器是否显示“结束会话”按钮。 可以在“设备配置” > “Kiosk（预览）” > “Kiosk Web 浏览器”中看到控件。 若关闭，用户单击按钮时，应用会提示是否结束会话。 确定结束时，浏览器清除所有浏览数据并导航回到默认 URL。
-
-### <a name="create-an-esim-cellular-configuration-profile----2564077---"></a>创建 eSIM 卡移动电话配置文件 <!-- 2564077 -->
-在“设备配置”中，将能够创建 eSIM 卡移动电话配置文件。 可以导入包含移动运营商提供的移动电话激活码的文件。 然后，可以将这些配置文件部署到支持 eSIM LTE 的 Windows 10 设备，例如 Surface Pro LTE 和其他支持 eSIM 卡的设备。
-
-检查[设备是否支持 eSIM 卡配置文件](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data)。
-
-适用于 Windows 10 和更高版本。 
-
-
+#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Windows Installer 的其他安全设置 <!-- 2282430 -->
+可允许用户控制应用安装。 如果启用，则允许因安全冲突而停止的安装继续进行。 当 Windows Installer 在系统上安装任何程序时，可指示它使用提升的权限。 此外，将能够对 Windows 信息保护 (WIP) 项目编制索引，并将有关这些项目的元数据存储在未加密的位置。 禁用策略后，将不会对受 WIP 保护的项编制索引，也不会在 Cortana 或文件资源管理器的结果中显示这些项。 默认情况下将禁用这些选项的功能。 
 
 
 <!-- 1806 start -->
@@ -133,14 +101,6 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 
 ### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>可通过 iOS 上的 APP 设置阻止第三方键盘 <!-- 1248481 -->
 在 iOS 设备上，Intune 管理员可以阻止使用第三方键盘在受策略保护的应用中访问组织数据。 当应用程序保护策略 (APP) 设置为阻止第三方键盘时，设备用户将在首次使用第三方键盘与公司数据交互时收到一条消息。 将阻止本地键盘以外的所有选项都，设备用户不会看到它们。 设备用户只会看到一次对话消息。 
-
-### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>在 macOS 设备上使用防火墙设置创建设备符合性策略 <!-- 1497640 -->
-创建新的 macOS 符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: macOS” > “系统安全”）时，会有一些新的可用“防火墙”设置： 
-- 防火墙：配置环境对传入连接的处理方式。
-- 传入连接：阻止所有传入连接，DHCP、Bonjour 和 IPSec 等基本 Internet 服务需要的连接除外。 此设置还会阻止所有共享服务。
-- 隐藏模式：启用隐藏模式以防止设备响应探测请求。 设备会继续回应已授权应用的传入请求。
-
-适用于：macOS 10.12 及更高版本
 
 ### <a name="require-non-biometric-passcode-on-app-launch-and-timeout----1506985---"></a>在应用启动和超时时要求输入非生物识别密码 <!-- 1506985 -->
 
@@ -163,23 +123,11 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 更新当前处于预览状态。 可以在 http://aka.ms/webcpflighting 注册以加入预览
 
 
-### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>编辑 Office 365 Pro Plus 应用部署 <!-- 2150145 -->
-作为 Microsoft Intune 管理员，你现在可以对 Office 365 Pro Plus 应用部署进行更多编辑。 在 Azure 门户中，选择“Microsoft Intune” > “移动应用” > “应用”。 从应用列表中选择你的 Office 365 Pro Plus 套件。  
-
 <!-- 1805 start -->
 
 ### <a name="require-non-biometric-passcode-on-cold-app-launch-and-timeout----1506985---"></a>在冷应用启动和超时时要求非生物识别密码 <!-- 1506985 --> 
 
 在冷应用启动时和管理员指定的超时时长后要求输入非生物识别密码，Intune 会限制使用生物识别来访问公司数据，从而为启用了移动应用程序管理 (MAM) 的应用提升安全性。 这些设置将影响依靠 Touch ID (iOS)、Face ID (iOS)、Android Biometric 或其他未来生物识别身份验证方法访问启用了 APP/MAM 的应用程序的用户。 这些设置将使 Intune 管理员能够更精细地控制用户访问，让带有多个指纹或其他生物识别访问方法的设备只能向正确的用户显示公司数据。 在 Azure 门户中，打开“Microsoft Intune”。 选择“移动应用” > “应用保护策略” > “添加策略” > “设置”。 找到特定设置的“访问”部分。
-
-### <a name="block-app-access-based-on-unapproved-device-vendors-and-models-----1425689----"></a>基于未批准的设备供应商和型号阻止应用的访问 <!-- 1425689 ! -->
-Intune IT 管理员将能够通过 Intune 应用保护策略来强制实施指定的 Android 制造商和/或 iOS 型号列表。 IT 管理员可以提供适用于 Android 策略的供应商列表和适用于 iOS 策略的设备型号列表，列表以分号分隔。 Intune App 保护策略仅适用于 Android 和 iOS。 针对这一指定的列表，可以执行两个单独的操作：
-- 阻止应用访问未指定的设备。
-- 或者，选择性地擦除未指定的设备上的企业数据。 
-
-如果未满足策略要求，则用户将无法访问目标应用程序。 根据设置，用户可能会被阻止或选择性地删除应用中的用户企业数据。 在 iOS 设备上，此功能需要应用程序的参与（例如， WXP、Outlook、Managed Browser、Yammer）以便为最低版本设置集成 Intune APP SDK，以针对目标应用程序强制执行。 此集成陆续进行，取决于特定应用程序团队。 在 Android 上，此功能需要使用最新的公司门户。 
-
-在最终用户设备上，Intune 客户端将根据 Intune 边栏选项卡中针对应用程序保护策略所指定的字符串的简单匹配来执行操作。 这完全取决于设备报告的值。 为此，建议 IT 管理员确保预期行为的准确性。 这可以通过根据面向较小规模用户组的各种设备制造商和型号对此设置进行测试来实现。 在 Microsoft Intune 中，选择“移动应用” > “应用保护策略”以查看和添加应用保护策略。 有关应用保护策略的详细信息，请参阅[什么是应用保护策略](app-protection-policy.md)。
 
 
 <!-- 1803 start -->

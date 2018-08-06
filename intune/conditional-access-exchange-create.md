@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905523"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323236"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>为本地 Exchange 和旧版 Exchange Online Dedicated 配置条件访问策略
 
@@ -63,7 +63,7 @@ ms.locfileid: "37905523"
 - Windows Phone 8.1 及更高版本
 - iOS 上的本机电子邮件应用。
 - EAS 邮件客户端（如 Android 4 或更高版本上的 Gmail）。
-- EAS 邮件客户端 **Android 工作配置文件设备：** Android 工作配置文件设备上仅支持工作配置文件中的 Gmail 和 Nine Work 应用。 若要使条件访问可适用于 Android 工作配置文件，必须为 Gmail 或 Nine Work 应用部署电子邮件配置文件，还要将这些应用部署为必需安装。
+- EAS 邮件客户端 Android 工作配置文件设备：Android 工作配置文件设备上仅支持工作配置文件中的 Gmail 和 Nine Work for Android Enterprise。 为了使条件访问适用于 Android 工作配置文件，必须为 Gmail 或 Nine Work for Android Enterprise 部署电子邮件配置文件，还要将这些应用部署为必需的安装。
 
 > [!NOTE]
 > 不支持 Android 和 iOS 上的 Microsoft Outlook 应用。 

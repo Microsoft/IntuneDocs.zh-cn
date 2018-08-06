@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 2effa1d63be57c938a4e5763090bce8f20f48192
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
+ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042791"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39249720"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "37042791"
 
 ## <a name="whats-in-the-sdk"></a>SDK 包含什么
 
-用于 iOS 的 Intune App SDK 包括一个静态库、资源文件、API 标头、一个调试设置 .plist 文件和一个配置器工具。 移动应用可能只包含资源文件，并且以静态方式链接到库，以便实施大多数策略。 高级的 Intune MAM 功能是通过 API 来实现的。
+用于 iOS 的 Intune App SDK 包括一个静态库、资源文件、API 标头、一个调试设置 .plist 文件和一个配置器工具。 移动应用可能只包含资源文件，并且以静态方式链接到库，以便实施大多数策略。 通过 API 实现高级的 Intune APP 功能。
 
 本指南介绍了以下用于 iOS 的 Intune App SDK 组件的用法：
 
@@ -165,8 +165,6 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 如果应用已使用 ADAL 对用户进行身份验证，则该应用必须使用其现有的注册值，并替代 Intune App SDK 默认值。 这可确保不会提示两次让用户进行身份验证（一次由 Intune App SDK，一次由应用）。
 
-### <a name="recommendations"></a>建议
-
 建议应用链接到其主分支上的[最新版本的 ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases)。 Intune App SDK 目前使用 ADAL 的代理分支，以支持需要条件访问的应用。 （因此，这些应用依赖于 Microsoft Authenticator 应用。）但是，SDK 仍与 ADAL 的主分支兼容。 使用适合应用的分支。
 
 ### <a name="link-to-adal-binaries"></a>链接到 ADAL 二进制文件
@@ -175,23 +173,13 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 1. 从 GitHub 下载[适用于 Objective-C 的 Azure Active Directory Authentication Library (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-objc)，然后遵循有关如何使用 Git 子模块或 CocoaPods 下载 ADAL 的[说明](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download)执行操作。
 
-2. 将 ADAL 框架（选项 1）或静态库（选项 2）添加到项目：
+2. 将 ADAL 框架（选项 1）或静态库（选项 2）添加到项目。
 
-    **选项 1（推荐）**：将 `ADAL.framework` 拖到项目目标的“内嵌二进制文件”列表。
+3. 如果应用未定义任何 keychain 访问组，请将此应用的程序包 ID 添加为第一个组。
 
-    **选项 2**：将 `libADALiOS.a` 库拖到项目目标的“链接的框架和库”列表中。 将 `-force_load {PATH_TO_LIB}/libADALiOS.a` 添加到项目的 `OTHER_LDFLAGS` 生成配置设置或 Xcode UI 的“其他链接器标志”中。 应将 `PATH_TO_LIB` 替换为 ADAL 二进制文件位置。
+4. 通过向密钥链访问组添加 `com.microsoft.adalcache` 和 `com.microsoft.workplacejoin`，启用 ADAL 单一登录 (SSO)。
 
-
-
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>与其他签名有相同配置文件的应用共享 ADAL 令牌缓存？
-
-如果要在签名有相同配置文件的应用之间共享 ADAL 令牌，请按照以下说明执行操作：
-
-1. 如果应用未定义任何 keychain 访问组，请将此应用的程序包 ID 添加为第一个组。
-
-2. 通过向密钥链访问组添加 `com.microsoft.adalcache`，启用 ADAL 单一登录 (SSO)。
-
-3. 如果希望指定一个自定义 keychain 组来替代 `com.microsoft.adalcache`，请在“IntuneMAMSettings”下的 Info.plist 文件中使用键 `ADALCacheKeychainGroupOverride` 进行指定。
+5. 如果正在显式设置 ADAL 共享缓存密钥链组，请确保将其设置为 `<appidprefix>.com.microsoft.adalcache`。 除非替代 ADAL，否则它将完成此设置。 如果希望指定一个自定义密钥链组来替代 `com.microsoft.adalcache`，请在“IntuneMAMSettings”下的 Info.plist 文件中使用键 `ADALCacheKeychainGroupOverride` 进行指定。
 
 ### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>配置 Intune App SDK 的 ADAL 设置
 
@@ -221,9 +209,45 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 如果应用不使用 ADAL，Intune App SDK 会为 ADAL 参数提供默认值，并处理针对 Azure AD 的身份验证。 无需指定上面列出的 ADAL 设置的任何值。
 
-## <a name="receiving-app-protection-policy"></a>接收应用保护策略
+## <a name="configure-settings-for-the-intune-app-sdk"></a>配置 Intune App SDK 设置
+
+可以使用应用程序的 Info.plist 文件中的 **IntuneMAMSettings** 字典设置和配置 Intune App SDK。 如果 Info.plist 文件中未显示 IntuneMAMSettings 字典，应进行创建。
+
+在 IntuneMAMSettings 字典下，可以使用以下受支持设置来配置 Intune App SDK。
+
+其中的一些设置可能已在前面各节中提及，一些设置则不适用于所有应用。
+
+Setting  | 类型  | 定义 | 是否必需？
+--       |  --   |   --       |  --
+ADALClientId  | 字符串  | 应用的 Azure AD 客户端标识符。 | 如果应用使用 ADAL 则需要。 |
+ADALAuthority | 字符串 | 应用使用的 Azure AD 颁发机构。 应使用已配置 AAD 帐户的你自己的环境。 | 如果应用使用 ADAL 则需要。 如果此值不存在，则使用 Intune 默认值。|
+ADALRedirectUri  | 字符串  | 应用的 Azure AD 重定向 URI。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。  |
+ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用程序的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。 |
+ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否会将所有 ADAL 日志（包括应用的 ADAL 调用（如果有））路由到它自己的日志文件。 默认值为 NO。 如果应用要设置其自己的 ADAL 日志回调，则设置为 YES。 | 可选。 |
+ADALCacheKeychainGroupOverride | 字符串  | 指定要用于 ADAL 缓存而不是“com.microsoft.adalcache”的 keychain 组。 注意，这并不包含应用 ID 前缀。 这将作为运行时所提供字符串的前缀。 | 可选。 |
+AppGroupIdentifiers | 字符串数组  | 应用的授权 com.apple.security.application 组部分的应用组数组。 | 如果应用使用应用组，则需要此设置。 |
+ContainingAppBundleId | 字符串 | 指定扩展的包含应用程序的程序包 ID。 | iOS 扩展需要此设置。 |
+DebugSettingsEnabled| 布尔值 | 如果设置为“是”，则可以应用设置包中的测试策略。 应用程序*不*会因启用此设置而提供。 | 可选。 默认值为“否”。|
+MainNibFile <br> MainNibFile ~ ipad  | 字符串  | 此设置应包含应用程序的主要 nib 文件名。  | 如果应用程序在 Info.plist 中定义了 MainNibFile，则需要此设置。 |
+MainStoryboardFile <br> MainStoryboardFile~ipad  | 字符串  | 此设置应包含应用程序的主要 Storyboard 文件名。 | 如果应用程序在 Info.plist 中定义了 UIMainStoryboardFile，则需要此设置。 |
+MAMPolicyRequired| 布尔值| 如果应用没有 Intune APP 策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为“是”时，无法将应用提交到应用商店。 | 可选。 默认值为“否”。|
+MAMPolicyWarnAbsent | 布尔值| 如果应用没有 Intune APP 策略，指定应用是否在启动期间警告用户。 <br><br> 注意：解除警报后，仍将允许用户在没有策略的情况下使用应用。 | 可选。 默认值为“否”。 |
+MultiIdentity | 布尔值| 指定应用是否识别多身份标识。 | 可选。 默认值为“否”。 |
+SplashIconFile~ipad <br> IntuneMAMSettings | 字符串  | 指定 Intune 初始屏幕（启动）图标文件。 | 可选。 |
+SplashDuration | 数字 | 应用程序启动时显示 Intune 启动屏幕的最小时间（以秒为单位）。 默认值为 1.5。 | 可选。 |
+BackgroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的背景色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。   | 可选。 默认为浅灰色。 |
+ForegroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的前景色，如文本颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。  | 可选。 默认为黑色。 |
+AccentColor | 字符串| 指定 PIN 屏幕的主题色，例如按钮文本颜色和框高亮颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。| 可选。 默认为系统蓝色。 |
+MAMTelemetryDisabled| 布尔值| 指定 SDK 是否会将任何遥测数据发送到其后端。| 可选。 默认值为“否”。 |
+MAMTelemetryUsePPE | 布尔值 | 指定 MAM SDK 是否将数据发送到 PPE 遥测后端。 使用 Intune 策略测试应用时使用该布尔值，以便测试遥测数据不会与客户数据相混淆。 | 可选。 默认值为“否”。 |
+MaxFileProtectionLevel | 字符串 | 可选。 允许应用指定其可以支持的 `NSFileProtectionType` 最大值。 如果该级别高于应用程序可以支持的级别，则此值将替代服务发送的策略。 可能的值：`NSFileProtectionComplete`、`NSFileProtectionCompleteUnlessOpen`、`NSFileProtectionCompleteUntilFirstUserAuthentication`、`NSFileProtectionNone`。|
+OpenInActionExtension | 布尔值 | 对于 Open-In Action 扩展，设置为“是”。 有关详细信息，请参阅通过 UIActivityViewController 共享数据部分。 |
+WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 URL 方案。 | 应用使用的 WebView 通过链接和/或 javascript 处理 URL 时需要。 |
+
+## <a name="receive-app-protection-policy"></a>接收应用保护策略
 
 ### <a name="overview"></a>概述
+
 要接收 Intune 应用保护策略，应用必须发起向 Intune MAM 服务注册的请求。 可以在 Intune 控制台中配置应用，这样无论是否有设备注册，都可以接收应用保护策略。 没有设备注册的应用保护策略亦称为“APP-WE”或“MAM-WE”，这样应用就可以由 Intune 管理，而无需在 Intune 移动设备管理 (MDM) 中注册设备。 在这两种情况下，都必须向 Intune MAM 服务注册应用，才能接收策略。
 
 ### <a name="apps-that-use-adal"></a>使用 ADAL 的应用
@@ -250,7 +274,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 ### <a name="apps-that-do-not-use-adal"></a>不使用 ADAL 的应用
 
-未使用 ADAL 登录用户的应用仍可从 Intune MAM 服务接收应用保护策略，方法是调用 API 使 SDK 处理该身份验证。 当应用尚未使用 Azure AD 对用户进行身份验证，但仍需要检索应用保护策略以帮助保护数据时，应使用此方法。 例如，正在使用另一个身份验证服务进行应用登录时，或应用完全不支持登录时。 为此，应用应对 `IntuneMAMEnrollmentManager` 实例调用 `loginAndEnrollAccount` 方法：
+未使用 ADAL 登录用户的应用仍可从 Intune MAM 服务接收应用保护策略，方法是调用 API 使 SDK 处理该身份验证。 当应用尚未使用 Azure AD 对用户进行身份验证，但仍需要检索应用保护策略以帮助保护数据时，应使用此方法。 例如，正在使用另一个身份验证服务进行应用登录时，或应用完全不支持登录时。 为此，应用可以对 `IntuneMAMEnrollmentManager` 实例调用 `loginAndEnrollAccount` 方法：
 
 ```objc
 /**
@@ -273,6 +297,17 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 [[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
 ```
 
+### <a name="let-intune-handle-authentication-and-enrollment-at-launch"></a>启动时由 Intune 处理身份验证和注册
+
+如果希望 Intune SDK 在应用完成启动之前使用 ADAL 处理所有身份验证和注册，并且应用始终需要 APP 策略，则不必使用 `loginAndEnrollAccount` API。 只需在应用的 Info.plist 的 IntuneMAMSettings 字典中将以下两个设置设置为“是”即可。
+
+Setting  | 类型  | 定义 |
+--       |  --   |   --       |  
+AutoEnrollOnLaunch| 布尔值| 指定在检测到现有托管标识且应用尚未注册时，应用是否应尝试在启动时自动注册。 默认值为 NO。 <br><br> 注意：如果未找到任何托管标识或者 ADAL 缓存中无任何有效的标识令牌可用，则注册尝试将失败，不会提示凭据，除非应用也将 MAMPolicyRequired 设置为“是”。 |
+MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为“是”时，无法将应用提交到应用商店。 MAMPolicyRequired 设置为 YES 时，AutoEnrollOnLaunch 也应设置为 YES。 |
+
+如果为应用选择此选项，则无需在注册后重启应用。
+
 ### <a name="deregister-user-accounts"></a>取消注册用户帐户
 
 在用户注销应用之前，应用应从 SDK 取消注册用户。 这可确保：
@@ -291,7 +326,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
  *  registered accounts.  Once removed, if the account has enrolled
  *  the application, the account will be un-enrolled.
  *  @note In the case where an un-enroll is required, this method will block
- *  until the Intune MAM AAD token is acquired, then return.  This method must be called before  
+ *  until the Intune APP AAD token is acquired, then return.  This method must be called before  
  *  the user is removed from the application (so that required AAD tokens are not purged
  *  before this method is called).
  *  @param identity The UPN of the account to be removed.
@@ -313,11 +348,11 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 应用可接收有关以下向 Intune MAM 服务发出的请求的状态、结果和调试通知：
 
- - 注册请求
- - 策略更新请求
- - 取消注册请求
+* 注册请求
+* 策略更新请求
+* 取消注册请求
 
-将通过 `Headers/IntuneMAMEnrollmentDelegate.h` 中的委托方法显示通知：
+将通过 `IntuneMAMEnrollmentDelegate.h` 中的委托方法显示通知：
 
 ```objc
 /**
@@ -344,211 +379,202 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 这些委托方法都会返回一个 `IntuneMAMEnrollmentStatus` 对象，其中包含以下信息：
 
-- 与请求关联的帐户的标识
-- 指示请求结果的状态代码
-- 带有状态代码说明的错误字符串
-- 一个 `NSError` 对象
+* 与请求关联的帐户的标识
+* 指示请求结果的状态代码
+* 带有状态代码说明的错误字符串
+* 一个 `NSError` 对象。 此对象连同可返回的特定状态代码在 `IntuneMAMEnrollmentStatus.h` 中进行定义。
 
-此对象连同可返回的特定状态代码在 `IntuneMAMEnrollmentStatus.h` 中进行定义。
-
+> [!NOTE]
+> 此信息仅用于调试目的。 应用中的任何业务逻辑都不应基于这些通知。 此信息可发送给遥测服务用于调试或监视目的。
 
 ### <a name="sample-code"></a>代码示例
 
 以下是委托方法的示例实现：
 
 ```objc
-- (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"enrollment result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 
-
-- (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"policy check-in result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 
-- (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 ```
 
-## <a name="app-restart"></a>应用重启
+## <a name="application-restart"></a>应用程序重启
 
-应用首次接收应用保护策略时必须重启才能应用所需的挂钩。 为了通知应用需要重启，SDK 在 Headers/IntuneMAMPolicyDelegate.h 中提供了委托方法。
+应用首次接收 MAM 策略时必须重启才能应用所需挂钩。 为了通知应用需要重启，SDK 在 `IntuneMAMPolicyDelegate.h` 中提供了委托方法。
 
 ```objc
  - (BOOL) restartApplication
 ```
-此方法的返回值会告诉 SDK 应用程序是否必须处理所需的重启：   
 
- - 如果返回 true，则应用程序必须处理重启。   
+此方法的返回值会告诉 SDK 应用程序是否必须处理所需的重启：
 
- - 如果返回 false，则 SDK 会在此方法返回后重启应用程序。 SDK 会立即显示一个对话框，告知用户重启应用程序。
+* 如果返回 true，则应用程序必须处理重启。
 
-## <a name="customize-your-apps-behavior"></a>自定义应用行为
+* 如果返回 false，则 SDK 会在此方法返回后重启应用程序。 SDK 会立即显示一个对话框，告知用户重启应用程序。
 
-可以调用 Intune App SDK 的几个 API 以获取有关部署到应用的 Intune 应用保护策略的信息。 可以使用此数据自定义应用行为。 大多数应用程序保护策略设置由 SDK（而不是应用程序）自动强制执行。 应用应实现的唯一设置是“另存为”控件。
+## <a name="customize-your-apps-behavior-with-apis"></a>使用 API 自定义应用行为
 
-### <a name="get-app-protection-policy"></a>获取应用保护策略
+可调用 Intune App SDK 的几个 API 来获取有关部署到应用的 Intune APP 策略信息。 可以使用此数据自定义应用行为。 下表介绍了将使用的一些基本 Intune 类。
 
-#### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
-IntuneMAMPolicyManager 类公开部署到应用程序的 Intune 应用保护策略。 值得注意的是，它公开对[启用多身份标识](#-enable-multi-identity-optional)有用的 API。
+类 | 描述
+----- | -----------
+IntuneMAMPolicyManager.h | IntuneMAMPolicyManager 类公开部署到应用程序的 Intune APP 策略。 值得注意的是，它公开对[启用多身份标识](#-enable-multi-identity-optional)有用的 API。 |
+IntuneMAMPolicy.h | IntuneMAMPolicy 类公开一些适用于该应用的 MAM 策略设置。 公开这些策略以便应用自定义其 UI。 大多数策略设置由 SDK 而不是应用实现。 “另存为”控件是应由应用实现的唯一设置。 此类公开了实现“另存为”所需的一些 API。 |
+IntuneMAMFileProtectionManager.h | IntuneMAMFileProtectionManager 类公开 API，应用可使用这些 API 根据提供的标识显式保护文件和目录。 标识可由 Intune 托管或非托管，SDK 将应用相应的 MAM 策略。 可选择是否使用此类。 |
+IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 类公开 API，应用可以使用这些 API 来保护给定提供标识的数据缓冲区。 标识可由 Intune 托管或非托管，SDK 将相应地应用加密。 |
 
-#### <a name="intunemampolicyh"></a>IntuneMAMPolicy.h
-IntuneMAMPolicy 类公开部署到应用程序的 Intune 应用保护策略。 此类中公开的大多数策略设置都由 SDK 强制执行，但可根据策略设置的强制执行方式自定义应用行为。
+## <a name="implement-save-as-controls"></a>实现“另存为”控件
 
-此类公开实现“另存为”控件所需的一些 API（将在下一节中详细描述）。
+通过 Intune，IT 管理员可选择托管应用保存数据的存储位置。 应用可使用 `IntuneMAMPolicy.h` 中定义的 `isSaveToAllowedForLocation` API 在 Intune App SDK 中查询允许的存储位置。
 
-### <a name="implement-save-as-controls"></a>实现“另存为”控件
+应用将托管数据保存到云存储或本地位置前，必须使用 `isSaveToAllowedForLocation` API 进行检查，了解 IT 管理员是否允许将数据保存在此处。
 
-通过 Intune，IT 管理员可选择托管应用保存数据的存储位置。 应用可使用在 **IntuneMAMPolicy.h** 中定义的 **isSaveToAllowedForLocation** API，针对允许的存储位置查询 Intune App SDK。
+使用 `isSaveToAllowedForLocation` API 时，应用必须传入用于存储位置的 UPN（如可用）。
 
-将托管数据保存到云存储或本地位置前，应用必须使用 **isSaveToAllowedForLocation** API 进行检查，以了解 IT 管理员是否允许数据保存在此处。
+### <a name="supported-save-locations"></a>支持的存储位置
 
-使用 **isSaveToAllowedForLocation** API 时，应用必须传入用于存储位置的 UPN（如可用）。
-
-#### <a name="supported-save-locations"></a>支持的存储位置
-
-**isSaveToAllowedForLocation** API 提供常量来检查 IT 管理员是否允许将数据保存到在 IntuneMAMPolicy.h 中定义的以下位置：
+`isSaveToAllowedForLocation` API 提供常量来检查 IT 管理员是否允许将数据保存到在 `IntuneMAMPolicy.h` 中定义的以下位置：
 
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
 * IntuneMAMSaveLocationLocalDrive
 
-应用应使用 **isSaveToAllowedForLocation** API 中的常量来检查是否可将数据保存到“托管”位置（如 OneDrive for Business）或“个人”。 此外，应用无法确定是“托管”还是“个人”位置时，应使用 API。
+应用应使用 `isSaveToAllowedForLocation` 中的常量来检查是否可将数据保存到“托管”位置（如 OneDrive for Business）或“个人”。 此外，应用无法确定是“托管”还是“个人”位置时，应使用 API。
 
 `IntuneMAMSaveLocationOther` 常数代表已知为“个人”的位置。
 
 如果应用将数据保存到本地设备上的任何位置，应使用 `IntuneMAMSaveLocationLocalDrive` 常数。
 
-## <a name="configure-settings-for-the-intune-app-sdk"></a>配置 Intune App SDK 设置
+## <a name="share-data-via-uiactivityviewcontroller"></a>通过 UIActivityViewController 共享数据
 
-可以使用应用程序的 Info.plist 文件中的 **IntuneMAMSettings** 字典设置和配置 Intune App SDK。 如果 Info.plist 文件中未显示 IntuneMAMSettings 字典，需在应用的 Info.plist 中创建字段名称为“IntuneMAMSettings”的字典。
+从版本 8.0.2 开始，Intune App SDK 可以筛选 `UIActivityViewController` 操作，以便只有 Intune 托管的共享位置可供选择。 此行为将由应用程序数据传输策略控制。
 
-在 IntuneMAMSettings 字典下，可添加配置设置的键/值行以配置 SDK。 下表列出了所有支持的设置。
+### <a name="copy-to-actions"></a>“复制到”操作
 
-其中的一些设置可能已在前面各节中提及，一些设置则不适用于所有应用。
+通过 `UIActivityViewController` 和 `UIDocumentInteractionController` 共享文档时，iOS 会为每个支持打开该共享文档的应用程序显示“复制到”操作。 应用程序通过其 Info.plist 中的 `CFBundleDocumentTypes` 设置声明它们支持的文档类型。 如果策略禁止共享给非托管应用程序，则此类共享将不再可用。 作为替代，应用程序必须将非 UI Action 扩展添加到其应用程序并将其链接到 Intune APP SDK。 Action 扩展只是存根。 SDK 将实现文件共享行为。 请遵循以下步骤进行配置：
 
-Setting  | 类型  | 定义 | 是否必需？
---       |  --   |   --       |  --
-ADALClientId  | 字符串  | 应用的 Azure AD 客户端标识符。 | 如果应用使用 ADAL 则需要。 |
-ADALAuthority | 字符串 | 应用使用的 Azure AD 颁发机构。 应使用已配置 AAD 帐户的你自己的环境。 | 如果应用使用 ADAL 则需要。 如果此值不存在，则使用 Intune 默认值。|
-ADALRedirectUri  | 字符串  | 应用的 Azure AD 重定向 URI。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。  |
-ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用程序的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 如果应用使用 ADAL，则需要 ADALRedirectUri 或 ADALRedirectScheme。 |
-ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否会将所有 ADAL 日志（包括应用的 ADAL 调用（如果有））路由到它自己的日志文件。 默认值为 NO。 如果应用要设置其自己的 ADAL 日志回调，则设置为 YES。 | 可选。 |
-ADALCacheKeychainGroupOverride | 字符串  | 指定要用于 ADAL 缓存而不是“com.microsoft.adalcache”的 keychain 组。 注意，这并不包含应用 ID 前缀。 这将作为运行时所提供字符串的前缀。 | 可选。 |
-AppGroupIdentifiers | 字符串数组  | 应用的授权 com.apple.security.application 组部分的应用组数组。 | 如果应用使用应用组，则需要此设置。 |
-ContainingAppBundleId | 字符串 | 指定扩展的包含应用程序的程序包 ID。 | iOS 扩展需要此设置。 |
-DebugSettingsEnabled| 布尔值 | 如果设置为“是”，则可以应用设置包中的测试策略。 应用程序*不*会因启用此设置而提供。 | 可选。 |
-MainNibFile<br>MainNibFile ~ ipad  | 字符串  | 此设置应包含应用程序的主要 nib 文件名。  | 如果应用程序在 Info.plist 中定义了 MainNibFile，则需要此设置。 |
-MainStoryboardFile<br>MainStoryboardFile~ipad  | 字符串  | 此设置应包含应用程序的主要 Storyboard 文件名。 | 如果应用程序在 Info.plist 中定义了 UIMainStoryboardFile，则需要此设置。 |
-AutoEnrollOnLaunch| 布尔值| 指定在检测到现有托管标识且应用尚未注册时，应用是否应尝试在启动时自动注册。 默认值为 NO。 <br><br> 注意：如果未找到任何托管标识或者 ADAL 缓存中无任何有效的标识令牌可用，则注册尝试将失败，不会提示凭据，除非应用也将 MAMPolicyRequired 设置为 YES。 | 可选。 |
-MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为 YES 时，无法将应用提交到应用商店。 MAMPolicyRequired 设置为 YES 时，AutoEnrollOnLaunch 也应设置为 YES。 | 可选。 |
-MAMPolicyWarnAbsent | 布尔值| 如果应用没有 Intune 应用保护策略，指定应用是否在启动期间警告用户。 <br><br> 注意：解除警报后，仍将允许用户在没有策略的情况下使用应用。 | 可选。 |
-MultiIdentity | 布尔值| 指定应用是否识别多身份标识。 | 可选。 |
-SplashIconFile <br>IntuneMAMSettings | 字符串  | 指定 Intune 初始屏幕（启动）图标文件。 | 可选。 |
-SplashDuration | 数字 | 应用程序启动时显示 Intune 启动屏幕的最小时间（以秒为单位）。 默认值为 1.5。 | 可选。 |
-BackgroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的背景色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。   | 可选。 默认为浅灰色。 |
-ForegroundColor| 字符串| 指定启动屏幕和 PIN 屏幕的前景色，如文本颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。  | 可选。 默认为黑色。 |
-AccentColor | 字符串| 指定 PIN 屏幕的主题色，例如按钮文本颜色和框高亮颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。| 可选。 默认为系统蓝色。 |
-MAMTelemetryDisabled| 布尔值| 指定 SDK 是否会将任何遥测数据发送到其后端。| 可选。 |
-WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 URL 方案。 | 应用使用的 WebView 通过链接和/或 javascript 处理 URL 时需要。 |  
+1. 应用程序必须在其 Info.plist `CFBundleURLTypes` 下至少定义一个 schemeURL。
 
-> [!NOTE]
-> 如果应用程序将发布到应用商店，根据应用商店标准，必须将 `MAMPolicyRequired` 设置为“否”。
+2. 应用程序和操作扩展必须共享至少一个应用组，并且该应用组必须列在应用和扩展 IntuneMAMSettings 字典下的 `AppGroupIdentifiers` 数组下。
 
-## <a name="sharing-data-via-uiactivityviewcontroller"></a>通过 UIActivityViewController 共享数据 
-从 v. 8.0.2+ 开始， Intune APP SDK 将能够筛选 UIActivityViewController 操作，这样就不会选择到非 Intune 共享位置。 此行为将由应用程序数据传输策略和即将推出的 APP 功能控制。 即将推出的功能将在大多数 Microsoft 第一方应用程序（即 Word、Excel、Powerpoint） 进行必要的更改以通过 UIActivityViewController 支持共享数据后启用。 
- 
-### <a name="copy-to-actions"></a>“复制到”操作 
-通过 UIActivityViewController 和 UIDocumentInteractionController 共享文档时，iOS 会为每个支持打开共享文档的应用程序显示“复制到”操作。 应用程序通过其 Info.plist 中的 CFBundleDocumentTypes 设置声明它们支持的文档类型。 如果策略不允许共享给非托管应用程序，则此类共享将不再可用。 作为替代，应用程序必须将非 UI Action 扩展添加到其应用程序并将其链接到适用于 iOS 的 Intune APP SDK。 Action 扩展类似于存根。 SDK 将实现所有的文件共享行为。 按照上面的 SDK 集成步骤以及下列说明执行操作： 
- 
-1. 应用程序必须至少有一个在其 Info.plist CFBundleURLTypes 下定义的 schemeURL。 
-2. 应用程序和操作扩展必须共享至少一个应用组，并且应用组必须列在应用和扩展 IntuneMAMSettings 字典下的 AppGroupIdentifiers 数组下。 
-3. 将操作扩展命名为“Open in”，后跟应用程序名称。 根据需要本地化 Info.plist。 
-4. 如 [Apple 开发者文档](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/)中所述设计扩展的模板图标。 或者，可以使用 IntuneMAMConfigurator 工具从应用程序 .app 目录生成这些图像。 运行“IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory” 
-5. 在扩展 Info.plist 中的 IntuneMAMSettings 下，添加一个名为 OpenInActionExtension 且值为 YES 的布尔设置。 
-6. 配置 NSExtensionActivationRule 以支持应用程序的 CFBundleDocumentTypes（前缀为“com.microsoft.intune.mam”）中的单个文件和所有类型。 例如，如果应用程序支持 public.text 和 public.image，则激活规则为： 
+3. 将操作扩展命名为“Open in”，后跟应用程序名称。 根据需要本地化 Info.plist。
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
-).@count == 1 
-```
+4. 如 [Apple 开发者文档](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/)中所述提供扩展的模板图标。 或者，可以使用 IntuneMAMConfigurator 工具从应用程序 .app 目录生成这些图像。 若要执行此操作，请运行：
 
-### <a name="update-existing-share-and-action-extensions"></a>更新现有的 Share 和 Action 扩展 
-如果应用程序已包含 Share 或 Action 扩展，则必须修改它们的 NSExtensionActivationRule 以允许 Intune 类型。 对于扩展支持的每种类型，都需要一个以“com.microsoft.intune.mam”为前缀的附加类型。 例如，如果现有的激活规则是：  
+    ```bash
+    IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory
+    ```
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
-    ).@count > 0 
-).@count > 0 
- ```
+5. 在扩展 Info.plist 中的 IntuneMAMSettings 下，添加一个名为 `OpenInActionExtension` 且值为“是”的布尔设置。
 
-它应更改为： 
+6. 配置 `NSExtensionActivationRule` 以支持单个文件以及应用程序的 `CFBundleDocumentTypes` 中以“`com.microsoft.intune.mam`”为前缀的所有类型。 例如，如果应用程序支持 public.text 和 public.image，则激活规则为：
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
-    ).@count > 0 
-).@count > 0 
- ```
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1
+    ).@count == 1
+    ```
+
+### <a name="update-existing-share-and-action-extensions"></a>更新现有的 Share 和 Action 扩展
+
+如果应用已包含 Share 或 Action 扩展，则必须修改它们的 `NSExtensionActivationRule` 以允许 Intune 类型。 对于扩展支持的每种类型，需添加以“`com.microsoft.intune.mam`”为前缀的附加类型。 例如，如果现有的激活规则是：  
+
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
+        ).@count > 0
+    ).@count > 0
+    ```
+
+它应更改为：
+
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
+        ).@count > 0
+    ).@count > 0
+    ```
 
 > [!NOTE]
-> 可以使用 IntuneMAMConfigurator 工具将 Intune 类型添加到激活规则。 如果现有的激活规则使用预定义的字符串常量（例如 NSExtensionActivationSupportsFileWithMaxCount、NSExtensionActivationSupportsText 等），谓词语法可能会变得相当复杂。 添加 Intune 类型时，IntuneMAMConfigurator 工具也可用于将激活规则从字符串常量转换为谓词字符串。 可以在我们的 GitHub 存储库中找到 IntuneMAMConfigurator。 
+> 可以使用 IntuneMAMConfigurator 工具将 Intune 类型添加到激活规则。 如果现有的激活规则使用预定义的字符串常量（例如 NSExtensionActivationSupportsFileWithMaxCount、NSExtensionActivationSupportsText 等），谓词语法可能会变得相当复杂。 添加 Intune 类型时，IntuneMAMConfigurator 工具也可用于将激活规则从字符串常量转换为谓词字符串。
 
+### <a name="what-the-ui-should-look-like"></a>UI 的外观
 
-## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>为 iOS 应用程序启用面向 MAM 的配置
-面向 MAM 的配置允许应用通过 Intune App SDK 接收配置数据。 应用程序所有者/开发人员须定义此数据的格式和变体并将其传达给 Intune 客户。 Intune 管理员可以通过 Intune Azure 门户定位并部署配置数据。 自 Intune App SDK for iOS 7.0.1 版起，参与 MAM 目标配置的应用均可通过 MAM 服务获取 MAM 目标配置数据。 通过 MAM 服务直接将应用程序配置数据推送到应用，而非通过 MDM 渠道。 Intune App SDK 提供一个类，可用于访问从这些控制台检索的数据。 请考虑以下先决条件： <br>
-* 访问面向 MAM 的配置 UI 之前，需要向 Intune MAM 服务注册应用。 有关详细信息，请参阅[接收应用保护策略](#receiving-app-protection-policy)。
-* 将 ```IntuneMAMAppConfigManager.h``` 包括在应用的源文件中。
-* 调用 ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` 以获取应用配置对象。
-* 对 ```IntuneMAMAppConfig``` 对象调用适当的选择器。 例如，如果应用程序密钥是一个字符串，则需要使用 ```stringValueForKey``` 或 ```allStringsForKey```。 ```IntuneMAMAppConfig.h header``` 文件描述返回值/错误条件。
+旧版 UI：
 
-有关图形 API 功能的详细信息，请参阅[图形 API 参考](https://developer.microsoft.com/graph/docs/concepts/overview)。 <br>
+![旧版共享 UI](./media/sharing-UI-old.png)
+
+新版 UI：
+
+![新版共享 UI](./media/sharing-UI-new.png)
+
+## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>为 iOS 应用程序启用目标配置（APP/MAM 应用配置）
+
+面向 MAM 的配置（也称为 MAM 应用配置）允许应用通过 Intune SDK 接收配置数据。 应用所有者/开发人员须定义此数据的格式和变体并将其传达给 Intune 客户。
+
+Intune 管理员可以通过 Intune Azure 门户和 Intune 图形 API 定位并部署配置数据。 自 Intune App SDK for iOS 7.0.1 版起，参与 MAM 目标配置的应用均可通过 MAM 服务获取 MAM 目标配置数据。 通过 MAM 服务直接将应用程序配置数据推送到应用，而非通过 MDM 渠道。 Intune App SDK 提供一个类，可用于访问从这些控制台检索的数据。 下列各项为必备项：
+
+* 访问面向 MAM 的配置 UI 之前，需要向 Intune MAM 服务注册应用。 有关详细信息，请参阅[接收应用保护策略](#receive-app-protection-policy)。
+
+* 将 `IntuneMAMAppConfigManager.h` 包括在应用的源文件中。
+
+* 调用 `[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]` 以获取应用配置对象。
+
+* 对 `IntuneMAMAppConfig` 对象调用适当的选择器。 例如，如果应用程序密钥是一个字符串，则需要使用 `stringValueForKey` 或 `allStringsForKey`。 请参阅 `IntuneMAMAppConfig.h` 了解有关返回值和错误条件的详细说明。
+
+有关图形 API 功能的详细信息，请参阅[图形 API 参考](https://developer.microsoft.com/graph/docs/concepts/overview)。
 
 关于如何在 iOS 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 iOS 的 Microsoft Intune 应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-use-ios)。
 
 ## <a name="telemetry"></a>遥测技术
 
-默认情况下，用于 iOS 的 Intune App SDK 会记录以下使用情况事件的遥测数据。 会将此数据发送到 Microsoft Intune。
+默认情况下，用于 iOS 的 Intune App SDK 会收集以下事件类型的遥测：
 
 * **应用启动事件**：用于帮助 Microsoft Intune 按照管理类型（含 MDM 的 MAM、不含 MDM 注册的 MAM 等）了解已启用 MAM 的应用的使用情况。
 
 * **注册调用**：用于帮助 Microsoft Intune 了解客户端启动的注册调用的成功率和其他各种性能指标。
+
+* **Intune 操作**：为了帮助诊断问题并确保 Intune 功能，我们会收集有关 Intune SDK 操作的信息。
 
 > [!NOTE]
 > 如果选择不将 Intune App SDK 遥测数据从移动应用程序发送到 Microsoft Intune，则必须禁用 Intune App SDK 遥测数据捕获功能。 在 IntuneMAMSettings 字典中将属性 `MAMTelemetryDisabled` 设置为“是”。
@@ -600,14 +626,14 @@ SDK 跟踪本地文件所有者的标识，并相应地应用策略。 文件所
 
 如果应用包含共享扩展，则可以使用 `IntuneMAMDataProtectionManager` 中的 `protectionInfoForItemProvider` 方法检索要共享项的所有者。 如果共享项为文件，则 SDK 会处理设置文件所有者。 如果共享项为数据，则应用负责设置文件所有者（如果此数据永久保存到一个文件中），并负责在 UI 中显示此数据之前调用 `setUIPolicyIdentity` API。
 
-### <a name="turning-on-multi-identity"></a>开启多身份标识
+### <a name="turn-on-multi-identity"></a>打开多身份标识
 
 默认情况下，应用被视为单一标识。 SDK 将进程标识设置为已注册的用户。 若要启用多身份标识支持，需要将名为 `MultiIdentity` 且值为“YES”的布尔设置添加到应用的 Info.plist 文件中的 IntuneMAMSettings 字典。
 
 > [!NOTE]
 > 启用多身份标识后，进程标识、UI 标识和线程标识将被设置为 nil。 应用负责适当地设置它们。
 
-### <a name="switching-identities"></a>切换标识
+### <a name="switch-identities"></a>切换标识
 
 * **应用启动标识切换**：
 
@@ -641,46 +667,46 @@ SDK 跟踪本地文件所有者的标识，并相应地应用策略。 文件所
 
 ## <a name="faqs"></a>常见问题解答
 
-
-是否所有 API 都可通过本机 Swift 或 Objective-C 和 Swift 互操作性进行寻址？
+### <a name="are-all-of-the-apis-addressable-through-native-swift-or-the-objective-c-and-swift-interoperability"></a>是否所有 API 都可通过本机 Swift 或 Objective-C 和 Swift 互操作性进行寻址？
 
 Intune App SDK API 仅可采用 Objective-C 且不支持**本机** Swift。 Objective-C 必须与 Swift 具有互操作性。
 
+### <a name="do-all-users-of-my-application-need-to-be-registered-with-the-app-we-service"></a>应用程序的所有用户是否都需要注册 APP-WE 服务？
 
-**应用程序的所有用户是否都需要注册 APP-WE 服务？**
+不能。 实际上，只有工作或学校帐户需要向 Intune App SDK 注册。 应用负责确定所使用的帐户是否为工作或学校账户。
 
-不能。 实际上，只有工作或学校帐户需要向 Intune App SDK 注册。 应用负责确定所使用的帐户是否为工作或学校账户。   
+### <a name="what-about-users-that-have-already-signed-in-to-the-application-do-they-need-to-be-enrolled"></a>已登录到应用程序的用户呢？ 他们是否需要注册？
 
-**已登录到应用程序的用户呢？他们是否需要注册？**
-
-应用程序负责在用户成功通过身份验证后注册用户。 此外，应用程序还负责注册任何现有帐户，这些帐户创建时可能应用程序中还没有 MDM 和 MAM 功能。   
+应用程序负责在用户成功通过身份验证后注册用户。 此外，应用程序还负责注册任何现有帐户，这些帐户创建时可能应用程序中还没有 MDM 和 MAM 功能。
 
 为此，应用程序应使用 `registeredAccounts:` 方法。 此方法会返回 NSDictionary，其中包含所有已注册到 Intune MAM 服务的帐户。 如果应用程序中没有任何现有帐户存在于列表中，则应用程序应注册，并通过 `registerAndEnrollAccount:` 注册这些帐户。
 
-**SDK 多长时间重试一次注册？**
+### <a name="how-often-does-the-sdk-retry-enrollments"></a>SDK 多长时间会重试注册？
 
 SDK 会在上一次注册失败后每隔 24 小时自动重试。 SDK 这样做是为了确保：即使用户的组织在用户登录到应用程序后启用了 MAM，用户也能成功注册并接收策略。
 
 SDK 会在检测到用户已成功注册该应用程序后停止重试。 这是因为只有 1 位用户可以在特定时间注册应用程序。 如果用户未注册，则将在同样 24 小时间隔后再次开始重试。
 
-**为何用户需要取消注册？**
+### <a name="why-does-the-user-need-to-be-deregistered"></a>为何用户需要取消注册？
 
 SDK 将在后台定期执行以下操作：
 
- - 如果应用程序尚未注册，SDK 会每隔 24 小时尝试注册所有已注册的帐户。
- - 如果应用程序已注册，SDK 会每隔 8 小时检查应用保护策略更新。
+* 如果应用程序尚未注册，SDK 会每隔 24 小时尝试注册所有已注册的帐户。
+* 如果应用程序已注册，SDK 会每隔 8 小时检查 MAM 策略更新。
 
-取消注册用户会通知 SDK - 用户不再使用该应用程序，并且 SDK 可以停止该用户帐户的任何周期事件。 如有必要，这也会触发应用取消注册和选择性擦除。
+取消注册用户会通知 SDK 用户不再使用该应用程序，并且 SDK 可以停止该用户帐户的任何周期事件。 如有必要，这也会触发应用取消注册和选择性擦除。
 
-是否应在取消注册方法中将 doWipe 标志设置为 true？
+### <a name="should-i-set-the-dowipe-flag-to-true-in-the-deregister-method"></a>是否应在取消注册方法中将 doWipe 标志设置为 true？
 
 应在用户注销应用程序之前调用此方法。  如果作为注销的一部分，已从应用程序中删除用户的数据，则可将 `doWipe` 设置为 false。 但是，如果应用程序未删除用户的数据，则 `doWipe` 应设置为 true，以便 SDK 可以删除数据。
 
-**是否有其他可以取消注册应用程序的方法？**
+### <a name="are-there-any-other-ways-that-an-application-can-be-un-enrolled"></a>是否有其他可以取消注册应用程序的方法？
 
 是，IT 管理员可以向应用程序发送选择性擦除命令。 这将取消注册并注销用户，并且将擦除用户的数据。 SDK 自动处理此方案，并将通过取消注册委托方法发送通知。
 
+### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>是否提供演示如何集成 SDK 的示例应用？
 
+可以！ 我们最近刚刚改进了开源示例应用[适用于 iOS 的 Wagr](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App)。 现在，Wagr 已使用 Intune App SDK 启用应用保护策略。
 
 ## <a name="submit-your-app-to-the-app-store"></a>将应用提交到应用商店
 

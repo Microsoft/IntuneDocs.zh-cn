@@ -1,23 +1,23 @@
 ---
 title: Microsoft Intune 中适用于 Windows Holographic for Business 的设备限制 - Azure | Microsoft Docs
-description: 阅读在 Microsoft Intune 中配置适用于 Windows Holographic for Business 的设备限制的相关信息并进行配置，包括注销、地理位置、密码、从应用商店安装应用、Microsoft Edge 中的 Cookie 和弹出窗口、Windows Defender、搜索、云和存储、蓝牙连接、系统时间，以及 Azure 中的使用情况数据。
+description: 阅读在 Microsoft Intune 中配置适用于 Windows Holographic for Business 的设备限制的相关信息并进行配置，包括注销、地理位置、密码、从应用商店安装应用、Edge 中的 Cookie 和弹出窗口、Windows Defender、搜索、云和存储、蓝牙连接、系统时间，以及 Azure 中的使用情况数据。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327868"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321607"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune 中适用于 Windows Holographic for Business 的设备限制设置
 
@@ -69,7 +69,9 @@ ms.locfileid: "32327868"
 
 - **系统时间修改** - 阻止最终用户更改设备日期和时间。
 
-## <a name="kiosk"></a>Kiosk
+## <a name="kiosk---obsolete"></a>展台 - 已过时
+
+这些设置为只读，无法更改。 若要配置展台模式，请参阅[展台设置](kiosk-settings.md#windows-holographic-for-business)。
 
 展台设备通常运行特定应用。 用户不得在该设备上访问除展台应用以外的任何功能。
 

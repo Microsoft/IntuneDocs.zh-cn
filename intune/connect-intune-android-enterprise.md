@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909076"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279417"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>将 Intune 帐户连接到 Android 企业帐户
 
@@ -51,7 +51,7 @@ ms.locfileid: "37909076"
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>断开 Android 企业管理帐户的连接
 
-可以关闭 Android 企业注册和管理。 在 Intune 管理控制台中选择“断开连接”将从注册中删除所有已注册的 Android 工作配置文件设备和展台设备。 还将删除 Android 企业帐户与 Intune 之间的关系。
+可以关闭 Android 企业注册和管理。 若要执行此操作，必须首先停用任何已注册的 Android 工作配置文件设备。 然后，在 Intune 管理控制台中选择“断开连接”，将从注册中删除所有已注册的 Android 工作配置文件设备和展台设备。 此操作还会删除 Android 企业帐户与 Intune 之间的关系。
 
 1. 作为 Intune 管理员，在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “监视 + 管理” > “Intune”。
 2. 选择“设备注册” > “Android 注册” > “托管的 Google Play” > “断开连接”。

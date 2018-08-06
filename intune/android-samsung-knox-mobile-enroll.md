@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964702"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321180"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -32,9 +32,8 @@ ms.locfileid: "36964702"
     1. [创建 MDM 配置文件](#create-mdm-profile)
     2. [添加设备](#add-devices)
     3. [向设备分配 MDM 配置文件](#assign-an-mdm-profile-to-devices)
-2. 在 Azure 门户中，[将设备标识为“公司自有”](#identify-devices-as-corporate-owned)。
-3. 在 Knox 门户中，[配置最终用户登录](#configure-how-end-users-sign-in)。
-4. [分配设备](#distribute-devices)。
+2. 在 Knox 门户中，[配置最终用户登录](#configure-how-end-users-sign-in)。
+3. [分配设备](#distribute-devices)。
 
 
 当从加入 Knox 部署计划的授权经销商购买设备时，设备标识符（序列号和 IMEI）的列表将被自动添加到 Knox 门户。
@@ -79,22 +78,6 @@ ms.locfileid: "36964702"
 ## <a name="assign-an-mdm-profile-to-devices"></a>将 MDM 配置文件分配给设备
 在注册设备前，必须在 Knox 门户中将 MDM 配置文件分配给添加的设备。 [访问 Samsung Knox 注册用户指南以了解设备配置](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm)。
 
-## <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
-可将使用 KME 注册的设备标识为“公司自有”。 必须在注册设备前执行此操作。 这将允许你执行其他管理任务并收集其他信息，例如完整的电话号码和应用清单。
-
-执行以下步骤以将设备标识为“公司自有”：
-
-1. 将 Knox 门户中的设备列表导出为 CSV 文件。
-
-2. 使用 IMEI 或序列号将 CSV 文件格式化，如[此处](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number)所示。
-
-3. 在 Azure 门户中，将 CSV 文件上载到“设备注册” > “公司设备标识符” > “添加”。
-
-现在，标识的注册设备将被标记为“公司自有”。
-
-> [!NOTE]
->Intune 将“公司自有”状态自动分配给使用[设备注册管理器](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll)帐户注册的设备。
-
 ## <a name="configure-how-end-users-sign-in"></a>配置最终用户的登录方式
 
 对于使用 KME 在 Intune 中注册的设备，可以将最终用户的登录方式配置为如下所示：
@@ -121,7 +104,7 @@ ms.locfileid: "36964702"
 
 - “密码”字段被忽略：如果“密码”字段使用 Knox 门户中的“设备详细信息”进行填充，则该字段将被 Intune 公司门户应用忽略。 最终用户必须在设备上输入密码才能完成设备注册。
 
-- **Android 企业注册** KME 不支持 Android 企业注册。
+- Android Enterprise 注册：KME 不支持 Android Enterprise 注册。
 
 ## <a name="getting-support"></a>获取支持
 详细了解[如何获取 Samsung KME 的支持](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm)。

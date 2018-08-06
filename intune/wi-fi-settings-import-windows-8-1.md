@@ -1,41 +1,46 @@
 ---
-title: 导入适用于 Windows 8.1 和更高版本的 Wi-Fi 设置
-titleSuffix: Microsoft Intune
-description: 如何将 Wi-Fi 设置从 Windows 导入 Intune Wi-Fi 配置文件。
+title: 在 Microsoft Intune 中导入适用于 Windows 设备的 Wi-Fi 设置 - Azure | Microsoft Docs
+description: 使用 netsh wlan 将 Windows 设备中的 Wi-Fi 设置导出为 XML 文件。 然后，在 Intune 中导入此文件，为运行 Windows 8.1、Windows 10 和 Windows Holographic for Business 的设备创建 Wi-Fi 配置文件。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 157416738e4607d5022f1c3c7ed8251a8e32fe3e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6ce5cdd9509ed3407491714ccfa853613eb43973
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834010"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321129"
 ---
-# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>在 Microsoft Intune 中导入适用于 Windows 8.1 及更高版本设备的 Wi-Fi 设置
+# <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>在 Intune 中导入适用于 Windows 设备的 Wi-Fi 设置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-对于运行 Windows 8.1、Windows 10 桌面版或移动版或 Windows Holographic for Business 的设备，可以导入之前导出到文件的 Wi-Fi 配置文件。
+对于运行 Windows 的设备，可以导入之前导出到文件的 Wi-Fi 配置文件。 对于 Windows 10 及更高版本的设备，可以直接在 Intune 中[创建 Wi-Fi 配置文件](wi-fi-settings-windows.md)。
+
+适用于：  
+- Windows 8.1 及更高版本
+- Windows 10 及更高版本
+- Windows 10 桌面版或移动版
+- Windows Holographic for Business
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>从 Windows 设备导出 Wi-Fi 设置
 
-在 Windows 中，使用 **netsh wlan** 实用程序将现有的 Wi-Fi 配置文件导出为 Intune 可读取的 XML 文件。 必须将密钥导出为纯文本才能成功使用配置文件。
+在 Windows 中，使用 netsh wlan 将现有的 Wi-Fi 配置文件导出为 Intune 可读取的 XML 文件。 必须将密钥导出为纯文本才能成功使用配置文件。
 
 如果 Windows 计算机上已安装了所需的 WiFi 配置文件，请按照以下步骤进行操作：
 
 1. 为导出的 W-Fi-配置文件创建本地文件夹，如 **c:\WiFi**。
 2. 以管理员身份打开命令提示符。
 3. 运行 `netsh wlan show profiles` 命令，并记下想导出的配置文件的名称。 在此示例中，配置文件的名称是 **WiFiName**。
-4. 运行 `netsh wlan export profile name="ProfileName" folder=c:\Wifi` 命令。此操作会在目标文件夹中创建一个名为“Wi-Fi-WiFiName.xml”的 Wi-Fi 配置文件。
+4. 运行 `netsh wlan export profile name="ProfileName" folder=c:\Wifi` 命令。 此操作会在目标文件夹中创建一个名为“Wi-Fi-WiFiName.xml”的 Wi-Fi 配置文件。
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>将 Wi-Fi 设置导入 Intune
 
