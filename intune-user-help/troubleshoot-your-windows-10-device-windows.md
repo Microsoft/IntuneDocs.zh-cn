@@ -59,6 +59,6 @@ ms.locfileid: "31018169"
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>看到“设置工作或学校帐户”时执行的故障排除步骤
 
-如果看到消息“我们无法自动发现与所输入用户名匹配的管理终结点。请检查用户名并重试。如果知道管理终结点的 URL，请输入。”，则应尝试重新输入用户名和密码</strong>。 如果仍无效，则应咨询公司支持人员，获取需在“管理终结点”文本框中提供的网站。 网站可能类似于 www.yourcompany.onmicrosoft.com。
+如果看到消息“我们无法自动发现与所输入用户名匹配的管理终结点。请检查用户名并重试。如果知道管理终结点的 URL，请输入。”，则应尝试重新输入用户名和密码</strong>。 如果仍无效，则应咨询公司支持人员，获取需在“管理终结点”文本框中提供的网站。 网站可能类似于www.yourcompany.onmicrosoft.com。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
