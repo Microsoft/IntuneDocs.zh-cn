@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 421dede4b0da71fe04649e21bfcf7c15d2270507
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 1cfbaa0cbdcc2263f6e8d1d3fc8562678e410537
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869349"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400311"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -50,20 +50,6 @@ ms.locfileid: "37869349"
 使用 Intune App SDK Xamarin Bindings 生成的 Xamarin 应用现在可以在已注册和未注册 Intune 移动设备管理 (MDM) 的设备上接收 Intune 应用保护策略。
 
 ## <a name="prerequisites"></a>必备条件
-
-* **[仅限 Android]** 必须在设备上安装最新的 Microsoft Intune 公司门户应用。
-
-## <a name="get-started"></a>入门
-
-1. 阅读 Microsoft Intune MAM Xamarin 组件的[许可条款](https://components.xamarin.com/license/microsoft.intune.mam)。
-
-2.  从 [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) 或 [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) 下载 Intune App SDK Xamarin 组件文件夹并从中提取。 在 步骤 1 和 3 中下载的这两个文件应处于相同的目录级别。
-
-3.  在命令行中以管理员身份运行 `Xamarin.Component.exe install <.xam> file`。
-
-4.  在 Visual Studio 中，右键单击以前创建的 Xamarin 项目中的“组件”。
-
-5.  选择“编辑组件”并添加以本地方式下载到计算机上的 Intune App SDK 组件。
 
 查看[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 打印并保留一份许可条款，以留作记录。 下载和使用 Intune App SDK Xamarin Bindings 即表示你同意这些许可条款。 如果不接受这些条款，请不要使用此软件。
 
