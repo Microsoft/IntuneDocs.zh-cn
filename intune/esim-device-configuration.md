@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336016"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400277"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336016"
 
 ## <a name="introduction"></a>简介
 
-eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro)）上的手机网络数据连接连接到 Internet。 使用 eSIM，你无需从移动运营商处获取 SIM 卡，并且可以在移动运营商和流量套餐之间快速切换。
+eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro)）上的手机网络数据连接连接到 Internet。 如果使用 eSIM 卡，则无需从移动运营商处获取 SIM 卡。 如需跨国旅行，还可在不同移动运营商和数据套餐之间进行切换，并始终保持连接状态。
 
 例如，你有一个用于工作的手机网络流量套餐，还有另外一个私人使用的流量套餐，但由另一个移动运营商提供。 当你在旅行时，可以通过查找在该区域提供流量套餐的移动运营商来获取 Internet 访问权限。
 

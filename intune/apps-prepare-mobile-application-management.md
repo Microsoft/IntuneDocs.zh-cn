@@ -4,8 +4,8 @@ description: 本主题中的信息可帮助决定何时应该使用应用包装�
 keywords: ''
 author: erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 05/17/2018
+manager: dougeby
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
+ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225182"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39450784"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -48,8 +48,8 @@ ms.locfileid: "38225182"
 
 |**应用包装工具** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |是|是|
-|**Outlook Web Access (OWA)**| 提供预览 |是|
+|**iOS** |不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
+|**Outlook Web Access (OWA)**|不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用并想使用 Intune 管理应用的客户。 但是，任何应用都可以利用集成 SDK 的优势，即使是业务线应用。

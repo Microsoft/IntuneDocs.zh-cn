@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236049"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362018"
 ---
 # <a name="sync-your-windows-device-manually"></a>手动同步 Windows 设备
 
 当应用程序安装速度不理想时，启动手动设备同步。手动同步强制你的设备与 Intune 连接，以获取最新的更新和通信。 设备同步完成后，安装速度可能会提升。
 
-Intune 支持从公司门户应用和从设备设置应用进行手动同步。 
+Intune 支持从公司门户应用、桌面任务栏或“开始”菜单以及从设备设置应用进行手动同步。 
 
 在运行 Creator 的 Update (1703) 或更高版本的 Windows 10 设备上支持公司门户应用功能。 
 * [从公司门户应用同步](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Intune 支持从公司门户应用和从设备设置应用进行手动同步。
     
     ![公司门户应用设置页的屏幕截图，突出显示“同步”按钮](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>从设备任务栏或“开始”菜单进行同步   
+
+还可从设备桌面，也即从应用外部访问同步控件。 如果已将应用直接固定到任务栏或开始菜单中，并且想要快速进行同步，可使用这种方式。  
+
+1. 在任务栏或开始菜单中找到公司门户应用图标。  
+2. 右键单击应用图标，以显示其菜单（也称为跳转列表）。  
+
+    ![设备桌面上 Windows 任务栏的屏幕截图。 已单击公司门户应用图标，以显示带有“固定到任务栏”、“关闭窗口”和“同步此设备”操作选项的菜单。](./media/sync-device-from-start-menu-1807.png)  
+
+3. 选择“同步此设备”。 公司门户应用随即打开“设置”页面并启动同步。  
+
 ## <a name="sync-from-settings-app"></a>从设置应用同步 
-完成这些步骤，以手动从设置应用同步 Microsoft HoloLens、Windows 10 桌面版、Windows 10 移动版或 Windows Phone 8.1 设备。
+完成这些步骤，以手动从设置应用同步 Microsoft HoloLens、Windows 10 桌面版、Windows 10 移动版或 Windows Phone 8.1 设备。  
 
 ### <a name="windows-10-desktop"></a>Windows 10 桌面版
 1. 在设备上，选择“启动” > “设置”。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321605"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575043"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 将 SCEP 的第三方 CA 添加到 Intune
 
@@ -41,11 +41,18 @@ ms.locfileid: "39321605"
 - 证书颁发机构的受信任的根证书
 - 证书属性等
 
-使用 Intune 签入的设备分配有 SCEP 配置文件，并配置了这些参数。 Intune 创建动态生成的 SCEP 密码，然后将其分配给设备。
+使用 Intune 签入的设备分配有 SCEP 配置文件，并配置了这些参数。 Intune 创建动态生成的 SCEP 质询密码，然后将其分配给设备。
 
-此密码包含有关设备向 SCEP 服务器发出的证书签名请求 (CSR) 中预期参数的详细信息。 密码还包括质询到期时间。 Intune 会加密信息，对加密的 blob 进行签名，然后将这些详细信息打包到 SCEP 密码中。
+此质询包含：
 
-设备联系 SCEP 服务器以请求证书，然后提供此 SCEP 密码。 此密码必须通过 SCEP 服务器的验证才能向设备颁发证书。 验证 SCEP 密码后，将进行以下检查：
+- 动态生成的质询密码
+- 有关设备向 SCEP 服务器发出的证书签名请求 (CSR) 中预期参数的详细信息
+- 质询到期时间
+
+Intune 会加密此信息，对加密的 blob 进行签名，然后将这些详细信息打包到 SCEP 质询密码中。
+
+设备联系 SCEP 服务器以请求证书，然后提供此 SCEP 质询密码。 SCEP 服务器将 CSR 和加密的 SCEP 质询密码发送到 Intune 以进行验证。  只有在质询密码和 CSR 通过验证后，SCEP 服务器才能向设备颁发证书。 进行 SCEP 质询验证时，会进行以下检查：
+
 
 - 验证加密 blob 的签名
 - 验证质询是否未过期

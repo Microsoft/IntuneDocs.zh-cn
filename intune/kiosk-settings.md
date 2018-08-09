@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321613"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481115"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune 中适用于 Windows 10 （及更高版本）的展台设置
 
@@ -25,9 +25,18 @@ ms.locfileid: "39321613"
 
 ## <a name="kiosk-settings"></a>展台设置
 
-1. 选择“添加”以创建展台环境。
-2. 为展台输入“展台配置名称”。 此名称标识一组应用程序、这些应用在开始菜单上的布局以及分配给此展台配置的用户。
-3. 选择“展台模式”。 “展台模式”标识策略支持的展台模式类型。 选项包括：
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+3. 输入以下属性：
+
+   - **名称**：输入新配置文件的描述性名称。
+   - **说明**：输入配置文件的说明。 这是可选的，但建议使用它。
+   - 平台：选择“Windows 10 及更高版本”
+   - 配置文件类型：选择“展台(预览)”
+   
+4. 选择“展台” > “添加”。
+5. 为展台输入“展台配置名称”。 此名称标识一组应用程序、这些应用在开始菜单上的布局以及分配给此展台配置的用户。
+6. 选择“展台模式”。 “展台模式”标识策略支持的展台模式类型。 选项包括：
 
     - **未配置**（默认设置）：策略不启用展台模式。
     - 单个全屏应用展台：该配置文件允许设备作为单个用户帐户运行，并将其锁定到单个通用 Windows 平台 (UWP) 应用。 所以，用户登录时，将启动一个特定应用。 此模式还会限制用户打开新应用或更改正在运行的应用。

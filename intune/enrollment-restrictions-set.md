@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905812"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501143"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -77,7 +77,7 @@ ms.locfileid: "37905812"
 4. 在“设备类型限制”下，选择想要设置的限制。
 5. 在限制名称（默认限制为“所有用户”）下，选择“平台”。 为列出的每个平台选择“允许”或“阻止”。
 6. 选择“保存”。
-7. 在限制名称（默认限制为“所有用户”）下，选择“平台配置”。 然后选择所列平台的最低和最高版本。 支持的版本包括：
+7. 在限制名称（默认限制为“所有用户”）下，选择“平台配置”。 然后选择所列平台的最低和最高版本。 支持的版本格式包括：
     - Android 工作配置文件支持 major.minor.rev.build。
     - iOS 支持 major.minor.rev。
     - Windows 仅对 Windows 10 支持 major.minor.rev.build。
