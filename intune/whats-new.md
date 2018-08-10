@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321554"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362052"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1123,6 +1123,16 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>更改计划：向 Intune 中添加“在下一次身份验证时更改密码”<!-- 1873216 -->
+在 9 月服务版本中，Intune 计划纳入 Apple 新发布的“在下一次身份验证时更改密码”设置，该设置适用于运行 macOS 10.13 版和更高版本的设备。 在纳入此设置之前，MDM 提供商无法验证设备密码是否已更改为符合规定的密码。 Intune 的配置和符合性策略只验证在下一次更改设备密码后是否将其标记为符合规定。 添加此新的 Apple 功能后，macOS 用户会收到更新密码的请求，即使其密码已符合规定。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+这会影响使用 macOS 设备策略并使用 Intune 或混合 MDM 的环境。 现在 Apple 增添了此项“在下一次身份验证时更改密码”设置，Intune 可在推送密码策略时强制用户更新其密码。 如果设置为阻止访问公司资源直到访问设备被标记为符合规定为止，那么最终用户可能需要在重置密码以后才能访问公司资源，如电子邮件或 SharePoint 站点。 在将来，每当更新配置和符合性密码策略时，都会强制目标用户更新其密码。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+让支持人员知晓。 如果不想强制实施此 macOS 设备策略，建议取消分配或删除现有 macOS 策略。 客户研究表明，大多数客户不受此更改影响。 大多数最终用户在收到“使用密码进行注册或重置其密码以保持符合性”的请求后都会更新其密码。
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>更改计划：Intune 将于 9 月支持 iOS 10 及更高版本 <!-- 2454656 -->
 Apple 预计于 9 月发布 iOS 12。 此发布后不久，我们将迁移 Intune 注册、公司门户和托管浏览器，以支持 iOS 10 及更高版本。  
