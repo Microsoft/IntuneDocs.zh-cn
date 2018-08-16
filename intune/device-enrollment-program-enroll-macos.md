@@ -1,41 +1,36 @@
 ---
-title: 注册 iOS 设备 - 设备注册计划
+title: 注册 macOS 设备 - 设备注册计划
 titleSuffix: Microsoft Intune
-description: 了解如何使用“设备注册计划”注册公司拥有的 iOS 设备。
+description: 了解如何使用“设备注册计划”注册公司拥有的 macOS 设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
+ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3b835f9fb2c1f7695919fa7d7f237c3989bd470
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: d6f9035b5a31d04e7d6ec6c5ec5b8f69a7c0943f
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001921"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40090100"
 ---
-# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
+# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 macOS 设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文旨在帮助你为通过 Apple [设备注册计划 (DEP)](https://deploy.apple.com) 购买的设备启用 iOS 设备注册。 可在不触碰设备的情况下为大量设备启用 DEP 注册。 可将 iPhone 和 iPad 等设备直接运送到用户手中。 用户打开设备时，“设置助理”将运行预先配置的设置，设备将注册以便进行管理。
+本文旨在帮助你为通过 Apple [设备注册计划 (DEP)](https://deploy.apple.com) 购买的设备设置 macOS 设备注册。 可在不触碰设备的情况下为大量设备设置 DEP 注册。 可以将 macOS 设备直接交付给用户。 用户打开设备时，“设置助理”将运行预先配置的设置，且设备将注册到 Intune 管理。
 
-若要启用 DEP 注册，需同时使用 Intune 和 Apple DEP 门户。 需要序列号列表或购买订单编号，这样才能将设备分配到 Intune 进行管理。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
+若要设置 DEP 注册，需同时使用 Intune 和 Apple DEP 门户。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
 另外，DEP 注册不能与[设备注册管理器](device-enrollment-manager-enroll.md)一起使用。
-
-## <a name="what-is-supervised-mode"></a>受监督模式简介
-Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设备可通过更多控件进行管理。 因此，此模式尤其适用于企业拥有的设备。 在 Apple 设备注册计划 (DEP) 中，Intune 支持将设备配置为受监督模式。 
-
-在 iOS 11 中已弃用对未受监督的 DEP 设备的支持。 在 iOS 11 和更高版本中，应始终对 DEP 配置的设备进行监督。 在未来发布的 iOS 版本中将忽略“DEP 受监督”标记。
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -47,12 +42,13 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 -->
 ## <a name="prerequisites"></a>必备条件
 - 通过 [Apple 设备注册计划](http://deploy.apple.com)购买的设备
+- 序列号列表或采购订单编号。 
 - [MDM 机构](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>获取 Apple DEP 令牌
 
-必须先从 Apple 获得 DEP 令牌 (.p7m) 文件，然后才能通过 DEP 注册 iOS 设备。 此令牌允许 Intune 同步有关公司所拥有的 DEP 设备的信息。 还允许 Intune 将注册配置文件上传至 Apple，并向设备分配这些配置文件。
+必须先从 Apple 获得 DEP 令牌 (.p7m) 文件，然后才能通过 DEP 注册 macOS 设备。 此令牌允许 Intune 同步有关公司所拥有的 DEP 设备的信息。 它还允许 Intune 将注册配置文件上传到 Apple 并将这些配置文件上传到设备。
 
 可使用 Apple DEP 门户创建 DEP 令牌。 还可以使用 DEP 门户将设备分配到 Intune 进行管理。
 
@@ -101,7 +97,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 ![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/device-enrollment-program-enroll-ios/image03.png)
 
 ### <a name="step-4-upload-your-token"></a>步骤 4. 上传令牌。
-在“Apple 令牌”框中，浏览到证书 (.pem) 文件，选择“打开”，然后选择“创建”。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。 Intune 会自动与 Apple 同步以查看你的注册计划帐户。
+在“Apple 令牌”框中，浏览到证书 (.pem) 文件，选择“打开”，然后选择“创建”。 使用 Push Certificate，Intune 可通过将策略推送到已注册的设备来注册和管理 macOS 设备。 Intune 会自动与 Apple 同步以查看你的注册计划帐户。
 
 ## <a name="create-an-apple-enrollment-profile"></a>创建 Apple 注册配置文件
 
@@ -114,53 +110,29 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 3. 在“创建配置文件”下，输入配置文件的“名称”和“描述”以便于管理。 用户看不到这些详细信息。 可以使用此“名称”字段在 Azure Active Directory 中创建动态组。 使用配置文件名称定义 enrollmentProfileName 参数，以向设备分配此注册配置文件。 详细了解 [Azure Active Directory 动态组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
 
-    ![配置文件名称和描述。](./media/device-enrollment-program-enroll-ios/image05.png)
+    ![配置文件名称和描述。](./media/device-enrollment-program-enroll-macos/createprofile.png)
 
-4. 对于“用户关联”，选择具有此配置文件的设备是否必须通过已分配的用户进行注册。
-    - 通过用户关联进行注册 - 为属于用户且想要使用公司门户获取服务（如安装应用）的设备选择此选项。 如果使用 ADFS 且注册配置文件的“不使用设置助理而使用公司门户进行身份验证”设置为“否”，则需使用 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints) [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+4. 对于“平台”，选择“macOS”。
+
+5. 对于“用户关联”，选择具有此配置文件的设备是否必须通过已分配的用户进行注册。
+    - 通过用户关联进行注册 - 为属于用户且想要使用公司门户应用获取服务（如安装应用）的设备选择此选项。 如果使用的是 ADFS，用户关联需要 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)多重身份验证不支持使用用户关联的 macOS DEP 设备。
 
     - 不通过用户关联进行注册 - 为不属于单个用户的设备选择此选项。 为无需访问本地用户数据即可执行任务的设备使用此选项。 公司门户等应用将无法运行。
 
-5. 如果选择“通过用户关联进行注册”，则可选择让用户不使用 Apple 设置助理而使用公司门户进行身份验证。
+6. 选择“设备管理设置”，然后选择是否锁定使用此配置文件的设备的注册。 “锁定注册”将禁用 macOS 设置，该设置允许从“系统偏好设置”菜单或通过“终端”删除管理配置文件。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。
 
-    ![使用公司门户进行身份验证。](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
+    ![“设备管理设置”屏幕截图。](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
+ 
+7. 选择“确定”。
 
-    > [!NOTE]
-    > 如果想要执行以下任一操作，请将“不使用 Apple 设置助理而使用公司门户进行身份验证”设置为“是”。
-    >    - 使用多重身份验证
-    >    - 提示用户在首次登录时需要更改密码
-    >    - 提示用户在注册过程中重置其已过期的密码。以上功能在使用 Apple 设置助理进行身份验证时不受支持。
-
-6. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
-
-    ![“设备管理设置”屏幕截图。](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
-
-    “受监督”的设备会提供更多的管理选项，并且会默认禁用“激活锁”。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS 设备的组织。
-
-    将通过两种方式通知用户他们的设备受到监督：
-
-   - 锁屏界面显示“此 iPhone 由 Contoso 托管”。
-   - “设置” > “常规” > “关于”屏幕上显示“此 iPhone 受监督”。 Contoso 可以监视你的 Internet 流量并找到此设备。”
-
-     > [!NOTE]
-     > 不受监督的注册设备只能使用 Apple Configurator 重置为受监督。 以此方式重置设备需要使用 USB 线将 iOS 设备连接到 Mac。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。
-
-7. 选择是否要为使用此配置文件的设备锁定注册。 “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。 
-
-8. 选择是否要让使用此配置文件的设备能够“与计算机同步”。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
-
-9. 如果在上一步中选择了“通过证书允许 Apple Configurator”，则选择要导入的“Apple Configurator 证书”。
-
-10. 选择“确定”。
-
-11. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+8. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义。](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
 
     |                 Setting                  |                                                                                               描述                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>部门名称</strong>     |                                                             用户在激活过程中轻点“关于配置”时显示。                                                              |
     |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。                                                          |
-    | <strong>设置助理选项</strong> |                                                     这些可选设置可以稍后在 iOS 的“设置”菜单中设置。                                                      |
+    | <strong>设置助理选项</strong> |                                                     这些可选设置可以稍后在 macOS 的“设置”菜单中设置。                                                      |
     |        <strong>密码</strong>         | 在激活过程中提示输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
     |    <strong>位置服务</strong>    |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                  |
     |         <strong>还原</strong>         |                                                                如果启用，在激活过程中设置助理会提示进行 iCloud 备份。                                                                 |
@@ -171,11 +143,14 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
     |          <strong>缩放</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
     |          <strong>Siri</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
     |     <strong>诊断数据</strong>     |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    |     <strong>FileVault</strong>           |  |
+    |     <strong>iCloud 诊断</strong>  |  |
+    |     <strong>注册</strong>        |  |
 
 
-12. 选择“确定”。
+10. 选择“确定”。
 
-13. 若要保存配置文件，则选择“创建”。
+11. 若要保存配置文件，则选择“创建”。
 
 ## <a name="sync-managed-devices"></a>同步托管设备
 Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步，以在 Azure 门户的 Intune 中查看托管设备。
@@ -190,24 +165,19 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 ## <a name="assign-an-enrollment-profile-to-devices"></a>将注册配置文件分配到设备
 必须先向设备分配注册计划配置文件才能注册他们。
 
->[!NOTE]
->还可以从“Apple 序列号”边栏选项卡将序列号分配给配置文件。
-
 1. 在 Azure 门户的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”> 在列表中选择令牌。
 2. 选择“设备”> 在列表中选择设备 >“分配配置文件”。
 3. 在“分配配置文件”下，为设备选择配置文件，然后选择“分配”。
 
 ### <a name="assign-a-default-profile"></a>分配默认配置文件
 
-可以选择一个默认配置文件，以将其应用于所有使用特定令牌注册的设备。
+可以选择一个默认 macOS 和 iOS 配置文件，以将其应用于所有使用特定令牌注册的设备。 
 
 1. 在 Azure 门户的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”> 在列表中选择令牌。
 2. 选择“设置默认配置文件”，在下拉列表中选择配置文件，然后选择“保存”。 此配置文件将应用于所有使用此令牌注册的设备。
 
 ## <a name="distribute-devices"></a>分配设备
 已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有恢复出厂设置才能应用注册配置文件。
-
-请参阅[通过设备注册计划在 Intune 中注册 iOS 设备](/intune-user-help/enroll-your-device-dep-ios)。
 
 ## <a name="renew-a-dep-token"></a>续订 DEP 令牌  
 1. 转到 deploy.apple.com。  
@@ -226,3 +196,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 8. 上传新下载的令牌。  
 9. 选择“续订令牌”。 你将看到令牌已续订的确认消息。   
     ![确认消息屏幕截图。](./media/device-enrollment-program-enroll-ios/confirmation.png)
+
+## <a name="next-steps"></a>后续步骤
+
+注册 macOS 设备后，可以开始[对其进行管理](device-management.md)。

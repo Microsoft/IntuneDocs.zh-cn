@@ -1,12 +1,11 @@
 ---
-title: 适用于 Android 的 Microsoft Intune 设备限制设置
-titlesuffix: ''
-description: 了解可用来控制运行 Android 的设备上的设备设置和功能的 Intune 设置。
+title: Microsoft Intune 中适用于 Android 的设备限制设置 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中查看可以控制和限制的所有 Android 设备设置的列表。 使用这些设置来控制密码、访问 Google Play、允许或禁止应用、控制浏览器设置、阻止应用、备份到 Google Cloud，以及控制邮件、声音、数据漫游、Wi-Fi 和蓝牙连接选项。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190650"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587017"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android 和 Samsung Knox Standard 设备限制设置 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 和 Samsung Knox Standard 设备限制设置 - Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ ms.locfileid: "34190650"
     > 在 MDM 注册期间，Samsung Knox 设备自动要求使用 4 位数的 PIN。 本机 Android 设备可能会自动要求 PIN 符合条件访问。
 
 - **最短密码长度** - 输入用户必须配置的最短密码长度（介于 4 到 16 个字符之间）。
-- **屏幕锁定前的最大非活动分钟数** - 指定设备自动锁定之前，必须处于空闲状态的分钟数。
+- 屏幕锁定前的最大不活动分钟数 - 输入在屏幕锁定前在设备上允许的最大不活动分钟数。 在设备上，最终用户设置的时间值不能大于在配置文件所配置的时间。 最终用户不能设置更低的时间值。 例如，如果配置文件设置为 15 分钟，则最终用户可将值设置为 5 分钟。 最终用户不得将值设置为 30 分钟。 
 - **擦除设备前登录失败的次数** - 指定在擦除设备前允许的登录失败次数。
 - **密码过期(天)** - 指定必须更改设备密码前的天数。
 -  所需的密码类型 - 指定所需的密码复杂性级别以及是否可以使用生物识别设备。 选择：
@@ -105,7 +104,7 @@ ms.locfileid: "34190650"
 
 ### <a name="additional-options"></a>其他选项
 
-你也可以单击**导入**，从 csv 文件中获取列表。 使用格式 <*应用 URL* *应用名称*>, <*应用发布者*>，或单击“导出”，导出包含受限制应用列表内容且格式相同的 csv 文件。      
+你也可以单击**导入**，从 csv 文件中获取列表。 使用格式 <*应用 URL**应用名称*>, <*应用发布者*>，或单击“导出”，导出包含受限制应用列表内容且格式相同的 csv 文件。      
 
 ## <a name="browser"></a>浏览器
 

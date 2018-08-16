@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575077"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001904"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Microsoft Intune 的早期版本 - 2018 年 8 月
 
@@ -75,7 +75,7 @@ ms.locfileid: "39575077"
 要向角色分配添加作用域标记，选择“Intune 角色” > “所有角色” > “策略和配置文件管理器” > “分配” > “作用域(标记)”。
 要向配置文件添加作用域标记，选择“设备配置” > “配置文件”>“选择配置文件”>“属性” > “作用域(标记)”。
 
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>为 AutoPilot 设备分配一个用户和友好名称 <!--1346521 -->
+### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>为 Autopilot 设备分配一个用户和友好名称 <!--1346521 -->
 未来的一个公共预览版将允许管理员将用户分配到单个 Autopilot 设备。  在使用 Autopilot 为用户设置设备时，管理员还可提供友好名称来问候用户。
 
 适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
@@ -99,30 +99,29 @@ Intune 会检测是否 Intune 和另一个 MDM 同时在使用同一个 Apple �
 启用此限制不会影响已注册的设备。
 启用限制后，Intune 将进行检查以确保每个新 Windows 注册请求已授权为企业注册。 如果符合以下条件，则视为已授权为企业注册：
 - 注册用户使用的是[设备注册管理员帐户]( device-enrollment-manager-enroll.md)。
-
-- 设备通过 [Windows AutoPilot](enrollment-autopilot.md) 进行注册。
+- 设备通过 [Windows Autopilot](enrollment-autopilot.md) 进行注册。
 - 设备的 IMEI 号在“设备注册” > “[公司设备标识符]( corporate-identifiers-add.md)”中列出）。
 - 设备通过[批量预配包](windows-bulk-enroll.md)进行注册。
 - 设备通过[从 SCCM 自动注册以进行共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management)进行注册。
-将阻止未经授权的注册。
-以下注册被 Intune 标记为企业注册，但由于其不提供 Intune 管理员每设备控制而将被阻止：
+
+将阻止未经授权的注册。 以下注册被 Intune 标记为企业注册，但由于其不提供 Intune 管理员每设备控制而将被阻止：
 - 通过 [Windows 设置过程中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
 - 通过 [Windows 设置中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
+
 以下个人注册方法也将被阻止：
 - 通过[从 Windows 设置中添加工作帐户](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
-
 - 通过 Windows 设置中的[仅 MDM 注册]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)选项。
 
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>在 AutoPIlot 配置文件中指定计算机名称模式 <!--1849855-->
-可指定一个计算机名称模板，用于在 AutoPilot 注册过程中生成和设置[计算机名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 需要在 AutoPilot 配置文件中指定此模板，该文件位于“设备注册” > “Windows 注册” > “Windows Autopilot 部署服务” > “配置文件”。 仅可使用字母数字字符和连字符。
+### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>在 Autopilot 配置文件中指定计算机名称模式 <!--1849855-->
+可指定一个计算机名称模板，用于在 Autopilot 注册过程中生成和设置[计算机名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 需要在 Autopilot 配置文件中指定此模板，该文件位于“设备注册” > “Windows 注册” > “Windows Autopilot 部署服务” > “配置文件”。 仅可使用字母数字字符和连字符。
 适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>显示 iOS 版本号和生成号 <!-- 1892471 -->
 在“设备符合性” > “设备符合性”中，会显示 iOS 操作系统版本。 在未来的某个更新中，会显示生成号。
 Apple 每次发布安全更新时，会保留版本号，更新生成号。 通过所显示的生成号，可轻松确认是否已安装漏洞更新。
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>对于 Windows AutoPilot 配置文件，隐藏公司登录页和域错误页上的“更改帐户”选项 <!--1901669 -->
-公共预览版包含新的 Windows AutoPilot 配置文件选项，允许管理员隐藏公司登录页和域错误页上的“更改帐户”选项。 要隐藏这些选项，需在 Azure Active Directory 中配置公司品牌。 适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>对于 Windows Autopilot 配置文件，隐藏公司登录页和域错误页上的“更改帐户”选项 <!--1901669 -->
+公共预览版包含新的 Windows Autopilot 配置文件选项，允许管理员隐藏公司登录页和域错误页上的“更改帐户”选项。 要隐藏这些选项，需在 Azure Active Directory 中配置公司品牌。 适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>延迟 iOS 软件更新在设备上的显示时间 <!-- 1949583 -->
 在 Intune >“软件更新” > “适用于 iOS 的更新策略”中，可配置不希望设备安装任何更新的日期和时间段。 在未来的某个更新中，可延迟软件更新在设备上的显示时间（1-90 天）。 
@@ -167,6 +166,13 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 将弃用 Azure 经典门户中创建的符合性策略。  在此情况下，可查看和删除任何现有策略，但无法更新它们。 可将策略导出为逗号分隔的文件（.csv 文件）。 然后使用文件中的详细信息在 Intune Azure 门户中重新创建这些策略。
 > [!IMPORTANT]
 > Azure 经典门户停用后，无法访问策略，也无法看到策略。 因此，务必导出策略，并在 Azure 经典门户停用之前，在 Azure 门户中重新创建这些策略。
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>将术语更改为“停用”和“擦除”<!-- 2175759 -->
+为了与 Graph API 保持一致，Intune 用户界面和文档将更改以下术语：
+- “删除公司数据”将更改为“停用”
+- “恢复出厂设置”将更改为“擦除”
+
+
 
 <!-- 1807 start -->
 
