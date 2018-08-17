@@ -98,7 +98,7 @@ ms.locfileid: "36945472"
 
 ## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen 设置
 
-在已安装 Edge 的以下 Windows 10 版本中受支持：
+在已安装 Microsoft Edge 的以下 Windows 10 版本中受支持：
 - 住宅
 - 专业
 - 商用版

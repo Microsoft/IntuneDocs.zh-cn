@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 中适用于 Windows Holographic for Business 的设备限制 - Azure | Microsoft Docs
-description: 阅读在 Microsoft Intune 中配置适用于 Windows Holographic for Business 的设备限制的相关信息并进行配置，包括注销、地理位置、密码、从应用商店安装应用、Edge 中的 Cookie 和弹出窗口、Windows Defender、搜索、云和存储、蓝牙连接、系统时间，以及 Azure 中的使用情况数据。
+description: 阅读在 Microsoft Intune 中配置适用于 Windows Holographic for Business 的设备限制的相关信息并进行配置，包括注销、地理位置、密码、从应用商店安装应用、Microsoft Edge 中的 Cookie 和弹出窗口、Windows Defender、搜索、云和存储、蓝牙连接、系统时间，以及 Azure 中的使用情况数据。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
