@@ -69,7 +69,7 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 | Setting | 默认设备类型限制中的 Android for Work 状态 | 注意 |
 | --- | --- | --- |
 | **将所有设备作为 Android 管理** | 已阻止 | 所有 Android 设备均不注册 Android for Work。 |
-| 将受支持设备作为 Android for Work 管理 | ，然后用户才能访问 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |
+| 将受支持设备作为 Android for Work 管理 | 然后用户才能访问 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |
 | **仅为这些组中的用户将受支持设备作为 Android for Work 管理** | 已阻止 | 创建单独的设备类型限制策略替代默认值。 此策略将之前选择的组定义为允许 Android for Work 注册。 允许所选组中的用户继续注册 Android for Work 设备。 所有其他用户则不能注册 Android for Work。 |
 
 所有情况下都将保留预期规则。 对你来说，无需任何操作即可维护环境中的 Android for Work 全局或按组允许。
@@ -696,8 +696,8 @@ Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标
 ### <a name="new-remote-actions-for-ios-devices----854689---"></a>适用于 iOS 设备的新远程操作 <!-- 854689 -->
 在此版本中，我们增加了两个适用于托管 Apple 课堂应用的共享 iPad 设备的新远程设备操作：
 
--   注销当前用户[](device-logout-user.md) - 注销所选 iOS 设备上的当前用户。
--   删除用户[](device-remove-user.md) - 从 iOS 设备上的本地缓存中删除所选用户。
+-   [注销当前用户](device-logout-user.md) - 注销所选 iOS 设备上的当前用户。
+-   [删除用户](device-remove-user.md) - 从 iOS 设备上的本地缓存中删除所选用户。
 
 
 ### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>支持与 iOS Classroom 应用共享 iPad<!-- 1044681 -->
