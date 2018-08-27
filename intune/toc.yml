@@ -1,791 +1,806 @@
+items:
 - name: 概述
   href: introduction-intune.md
-  expanded: true
   items:
-    - name: 什么是 Azure 门户？
-      href: what-is-intune.md
-    - name: 什么是 Intune for Education？
-      href: introduction-intune-education.md
-    - name: Azure 中的 Intune 功能
-      href: ui-changes.md
-      items:
-        - name: 组更改
-          href: groups-get-started.md
-        - name: 旧版 Intune PC 客户端
-          href: intune-legacy-pc-client.md
-    - name: 注册进行免费试用
-      href: free-trial-sign-up.md
-    - name: 新增功能
-      href: whats-new.md
-      items:
-        - name: 应用 UI 中的新增功能
-          href: whats-new-app-ui.md
-        - name: 新增功能存档（Azure 门户）
-          href: whats-new-archive.md
-        - name: 新增功能存档（经典门户）
-          href: whats-new-archive-classic.md
-    - name: 服务描述
-      href: microsoft-intune-service-description.md
-    - name: 已知问题
-      href: known-issues.md
-    - name: 获取支持
-      href: get-support.md
+  - name: 什么是 Azure 门户？
+    href: what-is-intune.md
+  - name: 什么是 Intune for Education？
+    href: introduction-intune-education.md
+  - name: Azure 中的 Intune 功能
+    href: ui-changes.md
+    items:
+    - name: 组更改
+      href: groups-get-started.md
+    - name: 旧版 Intune PC 客户端
+      href: intune-legacy-pc-client.md
+  - name: 注册进行免费试用
+    href: free-trial-sign-up.md
+  - name: 新增功能
+    href: whats-new.md
+    items:
+    - name: 应用 UI 中的新增功能
+      href: whats-new-app-ui.md
+    - name: 新增功能存档（Azure 门户）
+      href: whats-new-archive.md
+    - name: 新增功能存档（经典门户）
+      href: whats-new-archive-classic.md
+  - name: 服务描述
+    href: microsoft-intune-service-description.md
+  - name: 已知问题
+    href: known-issues.md
+  - name: 获取支持
+    href: get-support.md
+  expanded: true
 - name: 快速入门
   href: get-started-evaluation.md
   items:
-    - name: 导航 Azure 门户
-      href: get-started-azure.md
-    - name: 创建用户
-      href: get-started-users.md
-    - name: 创建组
-      href: get-started-groups.md
-    - name: 分配策略
-      href: get-started-policies.md
-    - name: 注册设备
-      href: get-started-enroll.md
-    - name: 分配应用
-      href: get-started-apps.md
+  - name: 导航 Azure 门户
+    href: get-started-azure.md
+  - name: 创建用户
+    href: get-started-users.md
+  - name: 创建组
+    href: get-started-groups.md
+  - name: 分配策略
+    href: get-started-policies.md
+  - name: 注册设备
+    href: get-started-enroll.md
+  - name: 分配应用
+    href: get-started-apps.md
 - name: 方案实现指南
   items:
-    - name: 保护 Exchange Online
-      href: exchange-online-protect.md
-    - name: 削减支持人员成本
-      href: password-reset.md
-    - name: 防止未经授权的访问
-      href: data-outside-protect.md
-    - name: 防止非受管理设备上的数据泄露
-      href: data-leak-prevention.md
-    - name: 比较 MDM 和 MAM
-      href: byod-technology-decisions.md
+  - name: 保护 Exchange Online
+    href: exchange-online-protect.md
+  - name: 削减支持人员成本
+    href: password-reset.md
+  - name: 防止未经授权的访问
+    href: data-outside-protect.md
+  - name: 防止非受管理设备上的数据泄露
+    href: data-leak-prevention.md
+  - name: 比较 MDM 和 MAM
+    href: byod-technology-decisions.md
 - name: 概念
   items:
-    - name: 体系结构概况
-      href: high-level-architecture.md
-    - name: 设备和应用生命周期
-      href: introduction-device-app-lifecycles.md
-      items:
-        - name: 设备生命周期
-          href: device-lifecycle.md
-        - name: 应用生命周期
-          href: app-lifecycle.md
-    - name: 常见方案
-      href: common-scenarios.md
-    - name: MAM 常见问题
-      href: mam-faq.md
-    - name: 策略和配置文件常见问题
-      href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
+  - name: 体系结构概况
+    href: high-level-architecture.md
+  - name: 设备和应用生命周期
+    href: introduction-device-app-lifecycles.md
+    items:
+    - name: 设备生命周期
+      href: device-lifecycle.md
+    - name: 应用生命周期
+      href: app-lifecycle.md
+  - name: 常见方案
+    href: common-scenarios.md
+  - name: MAM 常见问题
+    href: mam-faq.md
+  - name: 策略和配置文件常见问题
+    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 规划部署
   items:
-    - name: 规划指南
-      href: planning-guide.md
+  - name: 规划指南
+    href: planning-guide.md
+    items:
+    - name: 确定目标
+      href: planning-guide-deployment-goals.md
+    - name: 确定方案
+      href: planning-guide-scenarios.md
+    - name: 确定要求
+      href: planning-guide-requirements.md
+    - name: 制定推出计划
+      href: planning-guide-rollout-plan.md
+    - name: 制定通信计划
+      href: planning-guide-communication-plan.md
+    - name: 制定支持计划
+      href: planning-guide-support-plan.md
+    - name: 设计
+      href: planning-guide-design.md
+    - name: 实现
+      href: planning-guide-onboarding.md
+    - name: 测试和验证
+      href: planning-guide-test-validation.md
+    - name: 其他资源
+      href: planning-guide-resources.md
+  - name: 迁移指南
+    href: migration-guide.md
+    items:
+    - name: 准备 Intune
+      href: migration-guide-prepare.md
       items:
-        - name: 确定目标
-          href: planning-guide-deployment-goals.md
-        - name: 确定方案
-          href: planning-guide-scenarios.md
-        - name: 确定要求
-          href: planning-guide-requirements.md
-        - name: 制定推出计划
-          href: planning-guide-rollout-plan.md
-        - name: 制定通信计划
-          href: planning-guide-communication-plan.md
-        - name: 制定支持计划
-          href: planning-guide-support-plan.md
-        - name: 设计
-          href: planning-guide-design.md
-        - name: 实现
-          href: planning-guide-onboarding.md
-        - name: 测试和验证
-          href: planning-guide-test-validation.md
-        - name: 其他资源
-          href: planning-guide-resources.md
-    - name: 迁移指南
-      href: migration-guide.md
+      - name: 基本设置
+        href: migration-guide-setup.md
+      - name: 配置设备和应用管理策略
+        href: migration-guide-configure-policies.md
+      - name: 配置应用保护策略
+        href: migration-guide-app-protection-policies.md
+      - name: 迁移注意事项
+        href: migration-guide-considerations.md
+    - name: 迁移活动
+      href: migration-guide-campaign.md
       items:
-        - name: 准备 Intune
-          href: migration-guide-prepare.md
-          items:
-            - name: 基本设置
-              href: migration-guide-setup.md
-            - name: 配置设备和应用管理策略
-              href: migration-guide-configure-policies.md
-            - name: 配置应用保护策略
-              href: migration-guide-app-protection-policies.md
-            - name: 迁移注意事项
-              href: migration-guide-considerations.md
-        - name: 迁移活动
-          href: migration-guide-campaign.md
-          items:
-            - name: 计划通信
-              href: migration-guide-communication-plan.md
-            - name: 推进采用
-              href: migration-guide-drive-adoption.md
-            - name: 典型迁移周期
-              href: migration-guide-cycle.md
+      - name: 计划通信
+        href: migration-guide-communication-plan.md
+      - name: 推进采用
+        href: migration-guide-drive-adoption.md
+      - name: 典型迁移周期
+        href: migration-guide-cycle.md
 - name: 操作方法指南
   items:
-    - name: 设置 Intune
-      href: setup-steps.md
+  - name: 设置 Intune
+    href: setup-steps.md
+    items:
+    - name: 支持的配置
+      href: supported-devices-browsers.md
       items:
-        - name: 支持的配置
-          href: supported-devices-browsers.md
-          items:
-            - name: 网络配置
-              href: network-bandwidth-use.md
-        - name: 登录到 Intune
-          href: account-sign-up.md
-        - name: 配置域
-          href: custom-domain-name-configure.md
-        - name: 添加用户
-          href: users-add.md
-        - name: 添加组
-          href: groups-add.md
-        - name: 分配许可证
-          href: licenses-assign.md
-        - name: Intune 许可证
-          href: licenses.md
-        - name: 设置 MDM 机构
-          href: mdm-authority-set.md
-    - name: 注册设备
-      href: device-enrollment.md
+      - name: 网络配置
+        href: network-bandwidth-use.md
+    - name: 登录到 Intune
+      href: account-sign-up.md
+    - name: 配置域
+      href: custom-domain-name-configure.md
+    - name: 添加用户
+      href: users-add.md
+    - name: 添加组
+      href: groups-add.md
+    - name: 分配许可证
+      href: licenses-assign.md
+    - name: Intune 许可证
+      href: licenses.md
+    - name: 设置 MDM 机构
+      href: mdm-authority-set.md
+  - name: 注册设备
+    href: device-enrollment.md
+    items:
+    - name: 注册选项
+      href: enrollment-options.md
       items:
-        - name: 注册选项
-          href: enrollment-options.md
-          items:
-            - name: 条款和条件
-              href: terms-and-conditions-create.md
-            - name: 限制
-              href: enrollment-restrictions-set.md
-            - name: Apple MDM Push Certificate
-              href: apple-mdm-push-certificate-get.md
-            - name: 企业标识符
-              href: corporate-identifiers-add.md
-            - name: 多重身份验证
-              href: multi-factor-authentication.md
-            - name: 设备注册管理器
-              href: device-enrollment-manager-enroll.md
-            - name: 将设备映射到组
-              href: device-group-mapping.md
-        - name: 设置 Windows 注册
-          items:
-            - name: Windows 注册
-              href: windows-enroll.md
-            - name: 批量注册
-              href: windows-bulk-enroll.md
-            - name: 注册状态页
-              href: windows-enrollment-status.md
-            - name: Windows AutoPilot Deployment 计划
-              href: enrollment-autopilot.md
-        - name: 设置 Android 注册
-          items:
-            - name: 设置 Android 注册
-              href: android-enroll.md
-            - name: 将 Intune 连接到 Android 企业
-              href: connect-intune-android-enterprise.md
-            - name: 设置 Android 工作配置文件注册
-              href: android-work-profile-enroll.md
-            - name: 设置 Android kiosk 注册
-              href: android-kiosk-enroll.md
-            - name: 管理 Android 工作配置文件设备
-              href: android-enterprise-overview.md
-            - name: Samsung Knox 移动注册
-              href: android-samsung-knox-mobile-enroll.md
-        - name: 设置 iOS 注册
-          href: ios-enroll.md
-          items:
-            - name: 设备注册程序
-              href: device-enrollment-program-enroll-ios.md
-            - name: Apple School Manager
-              href: apple-school-manager-set-up-ios.md
-            - name: Apple Configurator
-              href: apple-configurator-enroll-ios.md
-        - name: 设置 macOS 注册
-          href: macos-enroll.md
-        - name: 在 Windows 电脑上安装 Intune 软件客户端
-          href: install-the-windows-pc-client-with-microsoft-intune.md
-        - name: 设备注册疑难解答
-          href: troubleshoot-device-enrollment-in-intune.md
-    - name: 管理设备
-      href: device-management.md
+      - name: 条款和条件
+        href: terms-and-conditions-create.md
+      - name: 限制
+        href: enrollment-restrictions-set.md
+      - name: Apple MDM Push Certificate
+        href: apple-mdm-push-certificate-get.md
+      - name: 企业标识符
+        href: corporate-identifiers-add.md
+      - name: 多重身份验证
+        href: multi-factor-authentication.md
+      - name: 设备注册管理器
+        href: device-enrollment-manager-enroll.md
+      - name: 将设备映射到组
+        href: device-group-mapping.md
+    - name: 设置 Windows 注册
       items:
-        - name: 设备管理功能
-          href: device-management-capabilities.md
-        - name: 绕过激活锁定
-          href: device-activation-lock-bypass.md
-        - name: 管理 Windows Fresh Start
-          href: device-fresh-start.md
-        - name: 找到丢失的 iOS 设备
-          href: device-locate.md
-        - name: 启用 iOS 丢失模式
-          href: device-lost-mode.md
-        - name: 开启 iOS 监督模式
-          href: device-supervised-mode.md
-        - name: 锁定设备
-          href: device-remote-lock.md
-        - name: 重置密码
-          href: device-passcode-reset.md
-        - name: 重启设备
-          href: device-restart.md
-        - name: 注销当前用户
-          href: device-logout-user.md
-        - name: 删除用户
-          href: device-remove-user.md
-        - name: 擦除设备
-          href: device-erase.md
-        - name: 远程控制移动设备
-          href: device-profile-android-teamviewer.md
-        - name: Windows 10 PIN 重置
-          href: device-windows-pin-reset.md
-        - name: 同步设备
-          href: device-sync.md
-        - name: 检查设备清单
-          href: device-inventory.md
-        - name: 删除设备
-          href: devices-wipe.md
-    - name: 管理应用
-      href: app-management.md
+      - name: Windows 注册
+        href: windows-enroll.md
+      - name: 批量注册
+        href: windows-bulk-enroll.md
+      - name: 注册状态页
+        href: windows-enrollment-status.md
+      - name: Windows AutoPilot Deployment 计划
+        href: enrollment-autopilot.md
+    - name: 设置 Android 注册
       items:
-        - name: 添加应用
-          href: apps-add.md
-          items:
-            - name: 应用商店应用
-              items:
-                - name: Android 应用商店应用
-                  href: store-apps-android.md
-                - name: iOS App Store 应用
-                  href: store-apps-ios.md
-                - name: Windows Phone 8.1 应用商店应用
-                  href: store-apps-windows-phone-8-1.md
-                - name: Microsoft 应用商店应用
-                  href: store-apps-windows.md
-                  items:
-                    - name: 手动添加公司门户应用
-                      href: store-apps-company-portal-app.md
-                - name: Android 工作配置文件应用
-                  href: apps-add-android-for-work.md
-                - name: 适用于 Windows 10 的 Office 365 应用
-                  href: apps-add-office365.md
-                - name: 适用于 macOS 的 Office 365 应用
-                  href: apps-add-office365-macos.md
-            - name: 生成你的应用 (LOB)
-              items:
-                - name: Android LOB 应用
-                  href: lob-apps-android.md
-                - name: iOS LOB 应用
-                  href: lob-apps-ios.md
-                - name: Windows Phone LOB 应用
-                  href: lob-apps-windows-phone.md
-                - name: Windows LOB 应用
-                  href: lob-apps-windows.md
-                - name: 旁加载 Windows LOB 应用
-                  href: app-sideload-windows.md
-                - name: macOS LOB 应用
-                  href: lob-apps-macos.md
-            - name: Web 应用
-              href: web-app.md
-            - name: 内置应用
-              href: apps-add-built-in.md
-        - name: 部署应用
-          href: apps-deploy.md
-          items:
-            - name: 包括和排除应用
-              href: apps-inc-exl-assignments.md
-            - name: 部署 Windows 10 应用
-              href: apps-windows-10-app-deploy.md
-        - name: 监视应用
-          href: apps-monitor.md
-        - name: 配置应用
-          href: app-configuration-policies-overview.md
-          items:
-            - name: iOS 托管设备
-              href: app-configuration-policies-use-ios.md
-            - name: Android 托管设备
-              href: app-configuration-policies-use-android.md
-            - name: 托管应用
-              href: app-configuration-policies-managed-app.md
-            - name: 使用 iOS 应用预配配置文件
-              href: app-provisioning-profile-ios.md
-            - name: 使用批量购买的应用和书籍
-              href: vpp-apps.md
-              items:
-                - name: iOS VPP 应用
-                  href: vpp-apps-ios.md
-                - name: 适用于企业的 Microsoft 应用商店应用
-                  href: windows-store-for-business.md
-                - name: iOS 电子图书
-                  href: vpp-ebooks-ios.md
-            - name: 配置公司门户应用
-              href: company-portal-app.md
-            - name: 配置 Managed Browser
-              href: app-configuration-managed-browser.md
-        - name: 保护应用
-          items:
-            - name: 选择性地擦除应用
-              href: apps-selective-wipe.md
-            - name: 使用应用保护策略
-              href: app-protection-policy.md
-              items:
-                - name: 创建应用保护策略
-                  href: app-protection-policies.md
-                  items:
-                    - name: Android 设置
-                      href: app-protection-policy-settings-android.md
-                    - name: iOS 设置
-                      href: app-protection-policy-settings-ios.md
-                    - name: 访问操作
-                      href: app-protection-policies-access-actions.md
-                    - name: 数据传输例外情况
-                      href: app-protection-policies-exception.md
-                - name: 验证应用保护策略
-                  href: app-protection-policies-validate.md
-                - name: 监视应用保护用户状态
-                  href: app-protection-policies-monitor.md
-                - name: 准备使用 WIP 应用保护策略
-                  href: app-protection-policies-configure-windows-10.md
-                - name: 创建和分配 WIP 应用保护策略
-                  href: windows-information-protection-policy-create.md
-                - name: 管理 iOS 应用之间的数据传输
-                  href: data-transfer-between-apps-manage-ios.md
-    - name: 配置设备
-      href: device-profiles.md
+      - name: 设置 Android 注册
+        href: android-enroll.md
+      - name: 将 Intune 连接到 Android 企业
+        href: connect-intune-android-enterprise.md
+      - name: 设置 Android 工作配置文件注册
+        href: android-work-profile-enroll.md
+      - name: 设置 Android kiosk 注册
+        href: android-kiosk-enroll.md
+      - name: 管理 Android 工作配置文件设备
+        href: android-enterprise-overview.md
+      - name: Samsung Knox 移动注册
+        href: android-samsung-knox-mobile-enroll.md
+    - name: 设置 iOS 注册
+      href: ios-enroll.md
       items:
-        - name: 配置设备配置文件
-          href: device-profile-create.md
-        - name: 配置设备功能
-          href: device-features-configure.md
-          items:
-            - name: 适用于 iOS 和 MacOS 的 AirPrint
-              href: air-print-settings-ios-macos.md
-            - name: 适用于 iOS 的 AirPlay
-              href: airplay-settings-ios.md
-            - name: 适用于 iOS 的主屏幕布局
-              href: home-screen-settings-ios.md
-            - name: 适用于 iOS 的应用通知
-              href: app-notification-settings-ios.md
-            - name: 适用于 iOS 的共享设备
-              href: shared-device-settings-ios.md
-            - name: 配置 Intune for iOS 设备单一登录
-              href: sso-ios.md
-            - name: 适用于 iOS 的 Web 筛选器设置
-              href: web-content-filter-settings-ios.md
-        - name: 配置设备限制
-          href: device-restrictions-configure.md
-          items:
-            - name: Android
-              href: device-restrictions-android.md
-            - name: iOS
-              href: device-restrictions-ios.md
-            - name: macOS
-              href: device-restrictions-macos.md
-            - name: Windows 8.1
-              href: device-restrictions-windows-8-1.md
-            - name: Windows Phone 8.1
-              href: device-restrictions-windows-phone-8-1.md
-            - name: Windows 10
-              href: device-restrictions-windows-10.md
-            - name: Windows 10 协同版
-              href: device-restrictions-windows-10-teams.md
-            - name: Windows Holographic for Business
-              href: device-restrictions-windows-holographic.md
-            - name: Android 工作配置文件
-              href: device-restrictions-android-for-work.md
-        - name: 配置终结点保护
-          href: endpoint-protection-configure.md
-          items:
-            - name: macOS
-              href: endpoint-protection-macos.md
-            - name: Windows 10
-              href: endpoint-protection-windows-10.md
-        - name: Android 展台设置
-          href: android-kiosk-settings.md
-        - name: Android 企业 kiosk 设置
-          href: android-enterprise-settings.md
-        - name: Windows 10 展台设置
-          href: kiosk-settings.md
-        - name: 配置电子邮件设置
-          href: email-settings-configure.md
-          items:
-            - name: Android
-              href: email-settings-android.md
-            - name: iOS
-              href: email-settings-ios.md
-            - name: Windows Phone 8.1
-              href: email-settings-windows-phone-8-1.md
-            - name: Windows 10
-              href: email-settings-windows-10.md
-        - name: 配置 VPN 设置
-          href: vpn-settings-configure.md
-          items:
-            - name: Android
-              href: vpn-settings-android.md
-            - name: iOS
-              href: vpn-settings-ios.md
-            - name: 为 iOS 设备配置每应用 VPN
-              href: vpn-setting-configure-per-app.md
-            - name: macOS
-              href: vpn-settings-macos.md
-            - name: Windows 8.1
-              href: vpn-settings-windows-8-1.md
-            - name: Windows Phone 8.1
-              href: vpn-settings-windows-phone-8-1.md
-            - name: Windows 10
-              href: vpn-settings-windows-10.md
-        - name: 配置 Wi-Fi 设置
-          href: wi-fi-settings-configure.md
-          items:
-            - name: Android
-              href: wi-fi-settings-android.md
-            - name: iOS
-              href: wi-fi-settings-ios.md
-            - name: macOS
-              href: wi-fi-settings-macos.md
-            - name: Windows 10
-              href: wi-fi-settings-windows.md
-            - name: Windows 8.1
-              href: wi-fi-settings-import-windows-8-1.md
-        - name: 配置 eSIM 移动电话配置文件
-          href: esim-device-configuration.md
-        - name: 教育
-          items:
-            - name: iOS 共享设备
-              href: education-settings-configure-ios-shared.md
-            - name: Windows 10
-              href: education-settings-configure.md
-        - name: 配置 Windows 10 版本升级设置
-          href: edition-upgrade-configure-windows-10.md
-        - name: 配置 iOS 更新策略
-          href: software-updates-ios.md
-        - name: 配置证书
-          href: certificates-configure.md
-          items:
-            - name: SCEP
-              href: certificates-scep-configure.md
-            - name: PKCS
-              href: certficates-pfx-configure.md
-            - name: 使用 S/MIME 加密电子邮件
-              href: certificates-s-mime-encryption-sign.md
-            - name: 结合使用第三方证书颁发机构和 SCEP
-              href: certificate-authority-add-scep-overview.md
-            - name: Symantec PKI Manager Web 服务
-              href: certificates-symantec-configure.md
-        - name: 配置 Windows 信息保护设置
-          href: windows-information-protection-configure.md
-        - name: 管理 PowerShell 脚本
-          href: intune-management-extension.md
-        - name: 监视电信费用
-          href: telecom-expenses-monitor.md
-        - name: 分配配置文件
-          href: device-profile-assign.md
-        - name: 监视配置文件
-          href: device-profile-monitor.md
-        - name: 配置文件疑难解答
-          href: device-profile-troubleshoot.md
-    - name: 设置设备合规性
-      href: device-compliance-get-started.md
+      - name: 设备注册程序
+        href: device-enrollment-program-enroll-ios.md
+      - name: Apple School Manager
+        href: apple-school-manager-set-up-ios.md
+      - name: Apple Configurator
+        href: apple-configurator-enroll-ios.md
+    - name: 设置 macOS 注册
+      href: macos-enroll.md
       items:
-        - name: 创建 Android 策略
-          href: compliance-policy-create-android.md
-        - name: 创建 Android 工作配置文件策略
-          href: compliance-policy-create-android-for-work.md
-        - name: 创建策略以启用 Google Play Protect
-          href: compliance-policy-create-google-play-protect.md
-        - name: 创建 iOS 策略
-          href: compliance-policy-create-ios.md
-        - name: 创建 macOS 策略
-          href: compliance-policy-create-mac-os.md
-        - name: 创建 Windows 策略
-          href: compliance-policy-create-windows.md
-        - name: 基于位置的策略
-          href: use-network-locations.md
-        - name: 评估策略
-          href: policy-evaluate.md
-        - name: 对不符合设备的操作
-          href: actions-for-noncompliance.md
-        - name: 监视设备符合性
-          href: compliance-policy-monitor.md
-    - name: 设置条件访问
-      href: conditional-access.md
+      - name: 设备注册程序
+        href: device-enrollment-program-enroll-macos.md
+    - name: 在 Windows 电脑上安装 Intune 软件客户端
+      href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: 设备注册疑难解答
+      href: troubleshoot-device-enrollment-in-intune.md
+  - name: 管理设备
+    href: device-management.md
+    items:
+    - name: 设备管理功能
+      href: device-management-capabilities.md
+    - name: 绕过激活锁定
+      href: device-activation-lock-bypass.md
+    - name: 管理 Windows Fresh Start
+      href: device-fresh-start.md
+    - name: 找到丢失的 iOS 设备
+      href: device-locate.md
+    - name: 启用 iOS 丢失模式
+      href: device-lost-mode.md
+    - name: 开启 iOS 监督模式
+      href: device-supervised-mode.md
+    - name: 锁定设备
+      href: device-remote-lock.md
+    - name: 重置密码
+      href: device-passcode-reset.md
+    - name: 重启设备
+      href: device-restart.md
+    - name: 注销当前用户
+      href: device-logout-user.md
+    - name: 删除用户
+      href: device-remove-user.md
+    - name: 擦除设备
+      href: device-erase.md
+    - name: 远程控制移动设备
+      href: device-profile-android-teamviewer.md
+    - name: Windows 10 PIN 重置
+      href: device-windows-pin-reset.md
+    - name: 同步设备
+      href: device-sync.md
+    - name: 检查设备清单
+      href: device-inventory.md
+    - name: 删除设备
+      href: devices-wipe.md
+  - name: 管理应用
+    href: app-management.md
+    items:
+    - name: 添加应用
+      href: apps-add.md
       items:
-        - name: 条件访问的常见使用方式
-          href: conditional-access-intune-common-ways-use.md
-        - name: 安装 Exchange 本地连接器
-          href: exchange-connector-install.md
-        - name: 安装 Exchange 服务连接器
-          href: exchange-service-connector-configure.md
-        - name: 创建并分配条件访问策略
-          href: conditional-access-exchange-create.md
-        - name: 从 Intune 经典门户重新分配条件访问策略
-          href: conditional-access-intune-reassign.md
-        - name: 基于应用的条件性访问
-          href: app-based-conditional-access-intune.md
-        - name: 设置基于应用的条件访问
-          href: app-based-conditional-access-intune-create.md
-        - name: ADAL 和 Intune
-          href: app-modern-authentication-block.md
-        - name: 监视条件访问符合性
-          href: conditional-access-exchange-monitor.md
-        - name: 将 Jamf Pro 与 Intune 集成以实现合规
-          href: conditional-access-integrate-jamf.md
-        - name: 在使用 Jamf Pro 管理的 Mac 上强制实现符合性
-          href: conditional-access-assign-jamf.md
-    - name: 保护设备数据
-      href: device-protect.md
-      items:
-        - name: 隐私和个人数据
-          href: privacy-personal-data.md
+      - name: 应用商店应用
+        items:
+        - name: Android 应用商店应用
+          href: store-apps-android.md
+        - name: iOS App Store 应用
+          href: store-apps-ios.md
+        - name: Windows Phone 8.1 应用商店应用
+          href: store-apps-windows-phone-8-1.md
+        - name: Microsoft 应用商店应用
+          href: store-apps-windows.md
           items:
-            - name: 数据收集
-              href: privacy-data-collect.md
-            - name: 数据存储和处理
-              href: privacy-data-store-process.md
-            - name: 数据安全和共享
-              href: privacy-data-secure-share.md
-              items:
-                - name: Apple 发送到 Intune 的数据
-                  href: data-apple-sends-to-intune.md
-                - name: Google 发送到 Intune 的数据
-                  href: data-google-sends-to-intune.md
-                - name: Intune 向 Apple 发送的数据
-                  href: data-intune-sends-to-apple.md
-                - name: Intune 向 Google 发送的数据
-                  href: data-intune-sends-to-google.md
-                - name: 从 Jamf Pro 共享到 Intune 的信息
-                  href: conditional-access-integrate-jamf.md
-            - name: 视图和正确的个人数据
-              href: privacy-data-view-correct.md
-            - name: 审核、导出、删除
-              href: privacy-data-audit-export-delete.md
-        - name: 移动威胁防御
-          href: mobile-threat-defense.md
-          items:
-            - name: 设置 Lookout
-              href: lookout-mobile-threat-defense-connector.md
-              items:
-                - name: Lookout 和 Intune 集成
-                  href: lookout-mtd-connector-integration.md
-            - name: 设置 Symantec
-              href: skycure-mobile-threat-defense-connector.md
-              items:
-                - name: Symantec 和 Intune 集成
-                  href: skycure-mtd-connector-integration.md
-            - name: 设置 Check Point
-              href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-              items:
-                - name: Check Point 和 Intune 集成
-                  href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: 设置 Zimperium
-              href: zimperium-mobile-threat-defense-connector.md
-              items:
-                - name: Zimperium 和 Intune 集成
-                  href: zimperium-mtd-connector-integration.md
-            - name: 设置 Pradeo
-              href: pradeo-mobile-threat-defense-connector.md
-              items:
-                - name: Pradeo 和 Intune 集成
-                  href: pradeo-mtd-connector-integration.md
-            - name: 设置 Intune for MTD
-              items:
-                - name: 添加 MTD 应用
-                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
-                - name: 创建 MTD 设备符合性策略
-                  href: mtd-device-compliance-policy-create.md
-                - name: 在 Intune 中启用 MTD
-                  href: mtd-connector-enable.md
-        - name: Windows Defender ATP
-          href: advanced-threat-protection.md
-        - name: 网络访问控制
-          href: network-access-control-integrate.md
-        - name: 设置 Windows Hello
-          href: windows-hello.md
-    - name: 管理角色
-      href: role-based-access-control.md
-    - name: 管理操作系统版本
-      href: manage-os-versions.md
-    - name: 管理软件更新
-      href: windows-update-for-business-configure.md
-    - name: 使用软件代理管理电脑
-      href: manage-windows-pcs-with-microsoft-intune.md
+          - name: 手动添加公司门户应用
+            href: store-apps-company-portal-app.md
+        - name: Android 工作配置文件应用
+          href: apps-add-android-for-work.md
+        - name: 适用于 Windows 10 的 Office 365 应用
+          href: apps-add-office365.md
+        - name: 适用于 macOS 的 Office 365 应用
+          href: apps-add-office365-macos.md
+      - name: 生成你的应用 (LOB)
+        items:
+        - name: Android LOB 应用
+          href: lob-apps-android.md
+        - name: iOS LOB 应用
+          href: lob-apps-ios.md
+        - name: Windows Phone LOB 应用
+          href: lob-apps-windows-phone.md
+        - name: Windows LOB 应用
+          href: lob-apps-windows.md
+        - name: 旁加载 Windows LOB 应用
+          href: app-sideload-windows.md
+        - name: macOS LOB 应用
+          href: lob-apps-macos.md
+      - name: Web 应用
+        href: web-app.md
+      - name: 内置应用
+        href: apps-add-built-in.md
+    - name: 部署应用
+      href: apps-deploy.md
       items:
-        - name: 比较电脑管理
-          href: pc-management-comparison.md
-        - name: 安装电脑客户端
-          href: install-the-windows-pc-client-with-microsoft-intune.md
-        - name: 常见电脑管理任务
-          href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-          items:
-            - name: 电脑策略
-              href: use-policies-to-simplify-windows-pc-management.md
-            - name: 查看库存
-              href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-            - name: 停用电脑
-              href: retire-a-windows-pc-with-microsoft-intune.md
-            - name: 关联电脑与用户
-              href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-            - name: 远程协助
-              href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-        - name: 保护 Windows 电脑的策略
-          href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-          items:
-            - name: 软件更新
-              href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-            - name: Windows 防火墙
-              href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-            - name: Endpoint Protection
-              href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-        - name: 为 Intune 客户端电脑添加应用
-          href: add-apps-for-windows-pcs-in-microsoft-intune.md
-        - name: 管理许可协议
-          href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-        - name: 解决策略冲突
-          href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-    - name: 管理 Windows Holographic
-      href: windows-holographic-for-business.md
+      - name: 包括和排除应用
+        href: apps-inc-exl-assignments.md
+      - name: 部署 Windows 10 应用
+        href: apps-windows-10-app-deploy.md
+    - name: 监视应用
+      href: apps-monitor.md
+    - name: 配置应用
+      href: app-configuration-policies-overview.md
       items:
-        - name: 升级 Windows Holographic
-          href: holographic-upgrade.md
-    - name: 向用户提供培训
-      href: end-user-educate.md
+      - name: iOS 托管设备
+        href: app-configuration-policies-use-ios.md
+      - name: Android 托管设备
+        href: app-configuration-policies-use-android.md
+      - name: 托管应用
+        href: app-configuration-policies-managed-app.md
+      - name: 使用 iOS 应用预配配置文件
+        href: app-provisioning-profile-ios.md
+      - name: 使用批量购买的应用和书籍
+        href: vpp-apps.md
+        items:
+        - name: iOS VPP 应用
+          href: vpp-apps-ios.md
+        - name: 适用于企业的 Microsoft 应用商店应用
+          href: windows-store-for-business.md
+        - name: iOS 电子图书
+          href: vpp-ebooks-ios.md
+      - name: 配置公司门户应用
+        href: company-portal-app.md
+      - name: 配置 Managed Browser
+        href: app-configuration-managed-browser.md
+    - name: 保护应用
       items:
-        - name: 公司门户消息
-          href: end-user-company-portal-messages.md
-        - name: Android 上的应用保护
-          href: end-user-mam-apps-android.md
-        - name: iOS 上的应用保护
-          href: end-user-mam-apps-ios.md
-        - name: 如何获取 Android 应用
-          href: end-user-apps-android.md
-        - name: 如何获取 iOS 应用
-          href: end-user-apps-ios.md
-        - name: 如何获取 Windows 应用
-          href: end-user-apps-windows.md
-        - name: Intune 向 Apple 发送的数据
-          href: data-intune-sends-to-apple.md
-        - name: Intune 向 Google 发送的数据
-          href: data-intune-sends-to-google.md
+      - name: 选择性地擦除应用
+        href: apps-selective-wipe.md
+      - name: 使用应用保护策略
+        href: app-protection-policy.md
+        items:
+        - name: 创建应用保护策略
+          href: app-protection-policies.md
+          items:
+          - name: Android 设置
+            href: app-protection-policy-settings-android.md
+          - name: iOS 设置
+            href: app-protection-policy-settings-ios.md
+          - name: 访问操作
+            href: app-protection-policies-access-actions.md
+          - name: 数据传输例外情况
+            href: app-protection-policies-exception.md
+        - name: 验证应用保护策略
+          href: app-protection-policies-validate.md
+        - name: 监视应用保护用户状态
+          href: app-protection-policies-monitor.md
+        - name: 准备使用 WIP 应用保护策略
+          href: app-protection-policies-configure-windows-10.md
+        - name: 创建和分配 WIP 应用保护策略
+          href: windows-information-protection-policy-create.md
+        - name: 管理 iOS 应用之间的数据传输
+          href: data-transfer-between-apps-manage-ios.md
+  - name: 配置设备
+    href: device-profiles.md
+    items:
+    - name: 配置设备配置文件
+      href: device-profile-create.md
+    - name: 配置设备功能
+      href: device-features-configure.md
+      items:
+      - name: 适用于 iOS 和 MacOS 的 AirPrint
+        href: air-print-settings-ios-macos.md
+      - name: 适用于 iOS 的 AirPlay
+        href: airplay-settings-ios.md
+      - name: 适用于 iOS 的主屏幕布局
+        href: home-screen-settings-ios.md
+      - name: 适用于 iOS 的应用通知
+        href: app-notification-settings-ios.md
+      - name: 适用于 iOS 的共享设备
+        href: shared-device-settings-ios.md
+      - name: 配置 Intune for iOS 设备单一登录
+        href: sso-ios.md
+      - name: 适用于 iOS 的 Web 筛选器设置
+        href: web-content-filter-settings-ios.md
+    - name: 配置设备限制
+      href: device-restrictions-configure.md
+      items:
+      - name: Android
+        href: device-restrictions-android.md
+      - name: iOS
+        href: device-restrictions-ios.md
+      - name: macOS
+        href: device-restrictions-macos.md
+      - name: Windows 8.1
+        href: device-restrictions-windows-8-1.md
+      - name: Windows Phone 8.1
+        href: device-restrictions-windows-phone-8-1.md
+      - name: Windows 10
+        href: device-restrictions-windows-10.md
+      - name: Windows 10 协同版
+        href: device-restrictions-windows-10-teams.md
+      - name: Windows Holographic for Business
+        href: device-restrictions-windows-holographic.md
+      - name: Android 工作配置文件
+        href: device-restrictions-android-for-work.md
+    - name: 配置终结点保护
+      href: endpoint-protection-configure.md
+      items:
+      - name: macOS
+        href: endpoint-protection-macos.md
+      - name: Windows 10
+        href: endpoint-protection-windows-10.md
+    - name: Android 展台设置
+      href: android-kiosk-settings.md
+    - name: Android 企业 kiosk 设置
+      href: android-enterprise-settings.md
+    - name: Windows 10 展台设置
+      href: kiosk-settings.md
+    - name: 配置电子邮件设置
+      href: email-settings-configure.md
+      items:
+      - name: Android
+        href: email-settings-android.md
+      - name: iOS
+        href: email-settings-ios.md
+      - name: Windows Phone 8.1
+        href: email-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: email-settings-windows-10.md
+    - name: 配置 VPN 设置
+      href: vpn-settings-configure.md
+      items:
+      - name: Android
+        href: vpn-settings-android.md
+      - name: iOS
+        href: vpn-settings-ios.md
+      - name: 为 iOS 设备配置每应用 VPN
+        href: vpn-setting-configure-per-app.md
+      - name: macOS
+        href: vpn-settings-macos.md
+      - name: Windows 8.1
+        href: vpn-settings-windows-8-1.md
+      - name: Windows Phone 8.1
+        href: vpn-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: vpn-settings-windows-10.md
+    - name: 配置 Wi-Fi 设置
+      href: wi-fi-settings-configure.md
+      items:
+      - name: Android
+        href: wi-fi-settings-android.md
+      - name: iOS
+        href: wi-fi-settings-ios.md
+      - name: macOS
+        href: wi-fi-settings-macos.md
+      - name: Windows 10
+        href: wi-fi-settings-windows.md
+      - name: Windows 8.1
+        href: wi-fi-settings-import-windows-8-1.md
+    - name: 配置 eSIM 移动电话配置文件
+      href: esim-device-configuration.md
+    - name: 教育
+      items:
+      - name: iOS 共享设备
+        href: education-settings-configure-ios-shared.md
+      - name: Windows 10
+        href: education-settings-configure.md
+    - name: 配置 Windows 10 版本升级设置
+      href: edition-upgrade-configure-windows-10.md
+    - name: 配置 iOS 更新策略
+      href: software-updates-ios.md
+    - name: 配置证书
+      href: certificates-configure.md
+      items:
+      - name: SCEP
+        href: certificates-scep-configure.md
+      - name: PKCS
+        href: certficates-pfx-configure.md
+      - name: 使用 S/MIME 加密电子邮件
+        href: certificates-s-mime-encryption-sign.md
+      - name: 结合使用第三方证书颁发机构和 SCEP
+        href: certificate-authority-add-scep-overview.md
+      - name: Symantec PKI Manager Web 服务
+        href: certificates-symantec-configure.md
+    - name: 配置 Windows 信息保护设置
+      href: windows-information-protection-configure.md
+    - name: 管理 PowerShell 脚本
+      href: intune-management-extension.md
+    - name: 监视电信费用
+      href: telecom-expenses-monitor.md
+    - name: 分配配置文件
+      href: device-profile-assign.md
+    - name: 监视配置文件
+      href: device-profile-monitor.md
+    - name: 配置文件疑难解答
+      href: device-profile-troubleshoot.md
+  - name: 设置设备合规性
+    href: device-compliance-get-started.md
+    items:
+    - name: 创建 Android 策略
+      href: compliance-policy-create-android.md
+    - name: 创建 Android 工作配置文件策略
+      href: compliance-policy-create-android-for-work.md
+    - name: 创建策略以启用 Google Play Protect
+      href: compliance-policy-create-google-play-protect.md
+    - name: 创建 iOS 策略
+      href: compliance-policy-create-ios.md
+    - name: 创建 macOS 策略
+      href: compliance-policy-create-mac-os.md
+    - name: 创建 Windows 策略
+      href: compliance-policy-create-windows.md
+    - name: 基于位置的策略
+      href: use-network-locations.md
+    - name: 评估策略
+      href: policy-evaluate.md
+    - name: 对不符合设备的操作
+      href: actions-for-noncompliance.md
+    - name: 监视设备符合性
+      href: compliance-policy-monitor.md
+  - name: 设置条件访问
+    href: conditional-access.md
+    items:
+    - name: 条件访问的常见使用方式
+      href: conditional-access-intune-common-ways-use.md
+    - name: 安装 Exchange 本地连接器
+      href: exchange-connector-install.md
+    - name: 安装 Exchange 服务连接器
+      href: exchange-service-connector-configure.md
+    - name: 创建并分配条件访问策略
+      href: conditional-access-exchange-create.md
+    - name: 从 Intune 经典门户重新分配条件访问策略
+      href: conditional-access-intune-reassign.md
+    - name: 基于应用的条件性访问
+      href: app-based-conditional-access-intune.md
+    - name: 设置基于应用的条件访问
+      href: app-based-conditional-access-intune-create.md
+    - name: ADAL 和 Intune
+      href: app-modern-authentication-block.md
+    - name: 监视条件访问符合性
+      href: conditional-access-exchange-monitor.md
+    - name: 将 Jamf Pro 与 Intune 集成以实现合规
+      href: conditional-access-integrate-jamf.md
+    - name: 在使用 Jamf Pro 管理的 Mac 上强制实现符合性
+      href: conditional-access-assign-jamf.md
+  - name: 保护设备数据
+    href: device-protect.md
+    items:
+    - name: 隐私和个人数据
+      href: privacy-personal-data.md
+      items:
+      - name: 数据收集
+        href: privacy-data-collect.md
+      - name: 数据存储和处理
+        href: privacy-data-store-process.md
+      - name: 数据安全和共享
+        href: privacy-data-secure-share.md
+        items:
         - name: Apple 发送到 Intune 的数据
           href: data-apple-sends-to-intune.md
         - name: Google 发送到 Intune 的数据
           href: data-google-sends-to-intune.md
-    - name: 监视和故障排除
+        - name: Intune 向 Apple 发送的数据
+          href: data-intune-sends-to-apple.md
+        - name: Intune 向 Google 发送的数据
+          href: data-intune-sends-to-google.md
+        - name: 从 Jamf Pro 共享到 Intune 的信息
+          href: conditional-access-integrate-jamf.md
+      - name: 视图和正确的个人数据
+        href: privacy-data-view-correct.md
+      - name: 审核、导出、删除
+        href: privacy-data-audit-export-delete.md
+    - name: 移动威胁防御
+      href: mobile-threat-defense.md
       items:
-        - name: 帮助用户排查问题
-          href: help-desk-operators.md
-        - name: 公司资源访问权限问题疑难解答
-          href: troubleshoot-company-resource-access-problems.md
-        - name: 应用安装问题疑难解答
-          href: troubleshoot-app-install.md
-        - name: Intune 活动的审核日志
-          href: monitor-audit-logs.md
-        - name: 查看应用保护日志
-          href: app-protection-policy-settings-log.md
-        - name: 电子邮件配置文件疑难解答
-          href: troubleshoot-email-profiles-in-microsoft-intune.md
-        - name: 软件更新疑难解答
-          href: troubleshoot-software-updates-in-microsoft-intune.md
-        - name: Endpoint Protection 疑难解答
-          href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: 策略疑难解答
-          href: troubleshoot-policies-in-microsoft-intune.md
-        - name: 条件访问疑难解答
-          href: troubleshoot-conditional-access.md
-        - name: Exchange Connector 疑难解答
-          href: troubleshoot-exchange-connector.md
-    - name: 自动化和自定义
+      - name: 设置 Lookout
+        href: lookout-mobile-threat-defense-connector.md
+        items:
+        - name: Lookout 和 Intune 集成
+          href: lookout-mtd-connector-integration.md
+      - name: 设置 Symantec
+        href: skycure-mobile-threat-defense-connector.md
+        items:
+        - name: Symantec 和 Intune 集成
+          href: skycure-mtd-connector-integration.md
+      - name: 设置 Check Point
+        href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+        items:
+        - name: Check Point 和 Intune 集成
+          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+      - name: 设置 Zimperium
+        href: zimperium-mobile-threat-defense-connector.md
+        items:
+        - name: Zimperium 和 Intune 集成
+          href: zimperium-mtd-connector-integration.md
+      - name: 设置 Pradeo
+        href: pradeo-mobile-threat-defense-connector.md
+        items:
+        - name: Pradeo 和 Intune 集成
+          href: pradeo-mtd-connector-integration.md
+      - name: 设置更佳的移动
+        href: better-mobile-threat-defense-connector.md
+        items:
+        - name: 更佳的移动和 Intune 集成
+          href: better-mobile-mtd-connector-integration.md
+      - name: 设置 Intune for MTD
+        items:
+        - name: 添加 MTD 应用
+          href: mtd-apps-ios-app-configuration-policy-add-assign.md
+        - name: 创建 MTD 设备符合性策略
+          href: mtd-device-compliance-policy-create.md
+        - name: 在 Intune 中启用 MTD
+          href: mtd-connector-enable.md
+    - name: Windows Defender ATP
+      href: advanced-threat-protection.md
+    - name: 网络访问控制
+      href: network-access-control-integrate.md
+    - name: 设置 Windows Hello
+      href: windows-hello.md
+  - name: 管理角色
+    href: role-based-access-control.md
+  - name: 管理操作系统版本
+    href: manage-os-versions.md
+  - name: 管理软件更新
+    href: windows-update-for-business-configure.md
+  - name: 使用软件代理管理电脑
+    href: manage-windows-pcs-with-microsoft-intune.md
+    items:
+    - name: 比较电脑管理
+      href: pc-management-comparison.md
+    - name: 安装电脑客户端
+      href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: 常见电脑管理任务
+      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
       items:
-        - name: 配置自定义设备设置
-          href: custom-settings-configure.md
-          items:
-            - name: 具有预共享密钥的 Wi-Fi 配置文件
-              href: wi-fi-profile-shared-key.md
-            - name: Android
-              href: custom-settings-android.md
-              items:
-                - name: 每应用 VPN 配置文件
-                  href: android-pulse-secure-per-app-vpn.md
-                - name: 允许/禁止对 Samsung Knox Standard 使用应用
-                  href: samsung-knox-apps-allow-block.md
-            - name: iOS
-              href: custom-settings-ios.md
-            - name: macOS
-              href: custom-settings-macos.md
-            - name: Windows Phone 8.1
-              href: custom-settings-windows-phone-8-1.md
-            - name: Windows 10
-              href: custom-settings-windows-10.md
-            - name: Windows Holographic for Business
-              href: custom-settings-windows-holographic.md
-            - name: Android 工作配置文件
-              href: custom-settings-android-for-work.md
+      - name: 电脑策略
+        href: use-policies-to-simplify-windows-pc-management.md
+      - name: 查看库存
+        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+      - name: 停用电脑
+        href: retire-a-windows-pc-with-microsoft-intune.md
+      - name: 关联电脑与用户
+        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+      - name: 远程协助
+        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+    - name: 保护 Windows 电脑的策略
+      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+      items:
+      - name: 软件更新
+        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+      - name: Windows 防火墙
+        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+      - name: Endpoint Protection
+        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+    - name: 为 Intune 客户端电脑添加应用
+      href: add-apps-for-windows-pcs-in-microsoft-intune.md
+    - name: 管理许可协议
+      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+    - name: 解决策略冲突
+      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+  - name: 管理 Windows Holographic
+    href: windows-holographic-for-business.md
+    items:
+    - name: 升级 Windows Holographic
+      href: holographic-upgrade.md
+  - name: 向用户提供培训
+    href: end-user-educate.md
+    items:
+    - name: 公司门户消息
+      href: end-user-company-portal-messages.md
+    - name: Android 上的应用保护
+      href: end-user-mam-apps-android.md
+    - name: iOS 上的应用保护
+      href: end-user-mam-apps-ios.md
+    - name: 如何获取 Android 应用
+      href: end-user-apps-android.md
+    - name: 如何获取 iOS 应用
+      href: end-user-apps-ios.md
+    - name: 如何获取 Windows 应用
+      href: end-user-apps-windows.md
+    - name: Intune 向 Apple 发送的数据
+      href: data-intune-sends-to-apple.md
+    - name: Intune 向 Google 发送的数据
+      href: data-intune-sends-to-google.md
+    - name: Apple 发送到 Intune 的数据
+      href: data-apple-sends-to-intune.md
+    - name: Google 发送到 Intune 的数据
+      href: data-google-sends-to-intune.md
+  - name: 监视和故障排除
+    items:
+    - name: 帮助用户排查问题
+      href: help-desk-operators.md
+    - name: 公司资源访问权限问题疑难解答
+      href: troubleshoot-company-resource-access-problems.md
+    - name: 应用安装问题疑难解答
+      href: troubleshoot-app-install.md
+    - name: Intune 活动的审核日志
+      href: monitor-audit-logs.md
+    - name: 查看应用保护日志
+      href: app-protection-policy-settings-log.md
+    - name: 电子邮件配置文件疑难解答
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: 软件更新疑难解答
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Endpoint Protection 疑难解答
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: 策略疑难解答
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: 条件访问疑难解答
+      href: troubleshoot-conditional-access.md
+    - name: Exchange Connector 疑难解答
+      href: troubleshoot-exchange-connector.md
+  - name: 自动化和自定义
+    items:
+    - name: 配置自定义设备设置
+      href: custom-settings-configure.md
+      items:
+      - name: 具有预共享密钥的 Wi-Fi 配置文件
+        href: wi-fi-profile-shared-key.md
+      - name: Android
+        href: custom-settings-android.md
+        items:
+        - name: 每应用 VPN 配置文件
+          href: android-pulse-secure-per-app-vpn.md
+        - name: 允许/禁止对 Samsung Knox Standard 使用应用
+          href: samsung-knox-apps-allow-block.md
+      - name: iOS
+        href: custom-settings-ios.md
+      - name: macOS
+        href: custom-settings-macos.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: custom-settings-windows-10.md
+      - name: Windows Holographic for Business
+        href: custom-settings-windows-holographic.md
+      - name: Android 工作配置文件
+        href: custom-settings-android-for-work.md
 - name: 开发人员指南
   items:
-    - name: 用于添加第三方证书颁发机构的 API
-      href: scep-libraries-apis.md
-    - name: 使用 Intune App SDK 保护应用
-      href: app-sdk.md
+  - name: 用于添加第三方证书颁发机构的 API
+    href: scep-libraries-apis.md
+  - name: 使用 Intune App SDK 保护应用
+    href: app-sdk.md
+    items:
+    - name: Intune App SDK 入门
+      href: app-sdk-get-started.md
+    - name: 准备 LOB 应用以实现应用保护
+      href: apps-prepare-mobile-application-management.md
+    - name: iOS 应用包装工具
+      href: app-wrapper-prepare-ios.md
+    - name: Intune App SDK for iOS
+      href: app-sdk-ios.md
+    - name: Android 应用包装工具
+      href: app-wrapper-prepare-android.md
+    - name: Intune App SDK for Android
+      href: app-sdk-android.md
+    - name: Intune App SDK Xamarin Bindings
+      href: app-sdk-xamarin.md
+  - name: 使用 Intune 数据仓库
+    href: reports-nav-create-intune-reports.md
+    items:
+    - name: 更改数据仓库的日志
+      href: reports-changelog.md
+    - name: 使用 Power BI 连接到数据仓库
+      href: reports-proc-get-a-link-powerbi.md
+    - name: 使用 Power BI 从 OData 数据源创建报表
+      href: reports-proc-create-with-odata.md
+  - name: 使用 Intune 数据仓库 API 的报表
+    href: reports-nav-intune-data-warehouse.md
+    items:
+    - name: 使用 REST 客户端从数据仓库 API 获取数据
+      href: reports-proc-data-rest.md
+    - name: 数据仓库 API 终结点
+      href: reports-api-url.md
+    - name: 数据仓库仅应用程序身份验证
+      href: data-warehouse-app-only-auth.md
+    - name: 数据库仓库数据模型
+      href: reports-ref-data-model.md
       items:
-        - name: Intune App SDK 入门
-          href: app-sdk-get-started.md
-        - name: 准备 LOB 应用以实现应用保护
-          href: apps-prepare-mobile-application-management.md
-        - name: iOS 应用包装工具
-          href: app-wrapper-prepare-ios.md
-        - name: Intune App SDK for iOS
-          href: app-sdk-ios.md
-        - name: Android 应用包装工具
-          href: app-wrapper-prepare-android.md
-        - name: Intune App SDK for Android
-          href: app-sdk-android.md
-        - name: Intune App SDK Xamarin Bindings
-          href: app-sdk-xamarin.md
-    - name: 使用 Intune 数据仓库
-      href: reports-nav-create-intune-reports.md
-      items:
-        - name: 更改数据仓库的日志
-          href: reports-changelog.md
-        - name: 使用 Power BI 连接到数据仓库
-          href: reports-proc-get-a-link-powerbi.md
-        - name: 使用 Power BI 从 OData 数据源创建报表
-          href: reports-proc-create-with-odata.md
-    - name: 使用 Intune 数据仓库 API 的报表
-      href: reports-nav-intune-data-warehouse.md
-      items:
-        - name: 使用 REST 客户端从数据仓库 API 获取数据
-          href: reports-proc-data-rest.md
-        - name: 数据仓库 API 终结点
-          href: reports-api-url.md
-        - name: 数据仓库仅应用程序身份验证
-          href: data-warehouse-app-only-auth.md
-        - name: 数据库仓库数据模型
-          href: reports-ref-data-model.md
-          items:
-            - name: 使用 Intune 数据仓库中的生存期表示形式
-              href: reports-ref-user-timeline.md
-            - name: 应用程序实体引用
-              href: reports-ref-application.md
-            - name: 当前用户实体引用
-              href: reports-ref-current-user.md
-            - name: 数据实体引用
-              href: reports-ref-date.md
-            - name: 设备实体引用
-              href: reports-ref-devices.md
-            - name: Intune 管理扩展实体引用
-              href: reports-ref-intunemanagementextension.md
-            - name: 移动应用管理 (MAM) 实体引用
-              href: reports-ref-mobile-app-management.md
-            - name: 策略实体引用
-              href: reports-ref-policy.md
-            - name: 用户设备关联实体引用
-              href: reports-ref-user-device.md
-            - name: 用户实体引用
-              href: reports-ref-user.md
-        - name: 移动 Intune 数据仓库帐户数据
-          href: data-warehouse-account-move.md
-    - name: 使用 Azure AD 访问 Microsoft Graph Intune API
-      href: intune-graph-apis.md
-      items:
-        - name: Intune API 参考
-          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
+      - name: 使用 Intune 数据仓库中的生存期表示形式
+        href: reports-ref-user-timeline.md
+      - name: 应用程序实体引用
+        href: reports-ref-application.md
+      - name: 当前用户实体引用
+        href: reports-ref-current-user.md
+      - name: 数据实体引用
+        href: reports-ref-date.md
+      - name: 设备实体引用
+        href: reports-ref-devices.md
+      - name: Intune 管理扩展实体引用
+        href: reports-ref-intunemanagementextension.md
+      - name: 移动应用管理 (MAM) 实体引用
+        href: reports-ref-mobile-app-management.md
+      - name: 策略实体引用
+        href: reports-ref-policy.md
+      - name: 用户设备关联实体引用
+        href: reports-ref-user-device.md
+      - name: 用户实体引用
+        href: reports-ref-user.md
+    - name: 移动 Intune 数据仓库帐户数据
+      href: data-warehouse-account-move.md
+  - name: 使用 Azure AD 访问 Microsoft Graph Intune API
+    href: intune-graph-apis.md
+    items:
+    - name: Intune API 参考
+      href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: 资源
   items:
-    - name: 词汇表
-      href: intune-glossary.md
+  - name: 词汇表
+    href: intune-glossary.md
+ms.openlocfilehash: ab5b79b56ff430575cf3c9021ce33b573b4d0f22
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42822944"
