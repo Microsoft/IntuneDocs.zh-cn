@@ -175,7 +175,7 @@ ms.locfileid: "39321214"
 -   **默认搜索引擎** - 指定要使用的默认搜索引擎。 最终用户可以随时更改此值。
 -   **退出时清除浏览数据** – 在用户退出 Microsoft Edge 时清除历史记录和浏览数据。
 -   **实时磁贴数据收集** – 当用户从 Microsoft Edge 将站点固定到开始菜单时，阻止 Windows 从实时磁贴收集信息。
--  **收藏夹列表** - 定义收藏夹文件的路径。 例如，http://contoso.com/favorites.html。
+-  **收藏夹列表** - 定义收藏夹文件的路径。 例如， http://contoso.com/favorites.html 。
 -  **限制对收藏夹的更改** - 将此设置为“阻止”以防止用户添加、导入、排序或编辑收藏夹列表。 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
