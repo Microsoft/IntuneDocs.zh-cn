@@ -64,7 +64,7 @@
 ### [注册 iOS 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [安装和登录到公司门户](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [注册 iOS 设备](enroll-your-device-in-intune-ios.md)
-### [注册设备注册计划 iOS 设备](enroll-your-device-dep-ios.md)
+### [注册组织提供的 iOS 设备](enroll-your-device-dep-ios.md)
 
 ### [在设备上使用托管应用](use-managed-apps-on-your-device-ios.md)
 ### [设置或更改密码](set-or-change-your-passcode-ios.md)
@@ -103,7 +103,7 @@
 ## [使用 macOS 设备](using-your-macos-device-with-intune.md)
 ### [注册 macOS 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [注册 macOS 设备](enroll-your-device-in-intune-macos-cp.md)
-### [注册公司提供的 macOS 设备](enroll-company-device-macos.md)  
+### [注册组织提供的 macOS 设备](enroll-company-device-macos.md)  
 ### [取消注册 macOS 设备](unenroll-your-device-from-intune-macos.md)  
 ### [修复 macOS 的常见问题](troubleshoot-your-device-macos.md)
 #### [尚不支持我的 macOS 版本](your-macos-version-isnt-yet-supported.md)

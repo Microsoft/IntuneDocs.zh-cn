@@ -57,7 +57,7 @@ ms.locfileid: "34073829"
 这是当前版本中的一个已知问题。 我们即将推出解决此问题的修补程序。 实现此修补程序得之后，你的用户将不再看到多个应用安装提示。
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>仅适用于默认 Intune 租户语言的 iOS 批量采购应用
-会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户帐户国家/区域代码相同的应用。 例如，如果要购买的应用只在美国商店提供，但 Intune 帐户所在地区为德国，则 Intune 不会显示该应用。
+会显示 iOS 批量采购应用，且仅可为与你的 Intune 帐户相同的国家/地区代码分配这些应用。 Intune 仅同步 iTunes 区域设置与 Intune 租户帐户国家/地区代码相同的应用。 例如，如果要购买的应用只在美国商店提供，但 Intune 帐户所在地区为德国，则 Intune 不会显示该应用。
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>会上传同一 iOS 批量采购计划的多个副本
 不要为相同的 VPP 令牌多次单击“上传”按钮。 这将导致上传重复的 VPP 令牌，并导致应用针对同一 VPP 令牌发生多次同步。

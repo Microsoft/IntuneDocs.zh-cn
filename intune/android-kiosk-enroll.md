@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212029"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903137"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>设置 Android 企业展台设备的注册
 
@@ -56,7 +56,7 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 1. 转到 [Intune 门户](https://portal.azure.com)，然后选择“设备注册” > “Android 注册” > “展台和任务设备注册”。
 2. 选择“创建”并填写必填字段。
     - **名称**：键入将配置文件分配给动态设备组时将使用的名称。
-    - **令牌到期日期**：令牌到期的日期。 Google 规定最长为 30 天。
+    - **令牌到期日期**：令牌到期的日期。 Google 规定最长为 90 天。
 3. 选择“创建”保存该配置文件。
 
 ### <a name="create-a-device-group"></a>创建设备组
@@ -110,7 +110,7 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 
 ### <a name="enroll-by-using-a-token"></a>使用令牌注册
 
-对于 Android 6 及更高版本的设备，可使用令牌注册设备。
+对于 Android 6 及更高版本的设备，可使用令牌注册设备。 **aft#setup** 注册方法时，Android 6.1 和更高版本还可利用 QR 码扫描。
 
 1. 打开恢复出厂设置的设备。
 2. 在“欢迎使用”屏幕上，选择语言。
@@ -125,6 +125,9 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 ### <a name="enroll-by-using-a-qr-code"></a>使用 QR 码注册
 
 在 Android 7 及更高版本的设备上，可从注册配置文件中扫描 QR 码以注册设备。
+
+> [!Note]
+> 浏览器缩放可能使设备无法扫描 QR 码。 增加浏览器缩放比例可解决问题。
 
 1. 要在 Android 设备上启动 QR 读取，请在恢复出厂设置后看到的第一个屏幕上点击多次。
 2. 对于 Android 7 和 Android 8 设备，系统会提示安装 QR 读取器。 Android 9 及更高版本的设备已安装了 QR 读取器。
