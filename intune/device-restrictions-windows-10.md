@@ -392,7 +392,7 @@ ms.locfileid: "39321214"
    示例格式：
 
    IPv4：192.246.246.106:100<br>
- IPv6：[2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN：www.contoso.com:345
+ IPv6：[2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN： www.contoso.com:345
 
 ## <a name="messaging"></a>Messaging
 
