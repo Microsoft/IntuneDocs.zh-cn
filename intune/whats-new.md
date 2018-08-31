@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
-ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
+ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39614507"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092169"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,21 @@ ms.locfileid: "39614507"
 
 -->   
 
+
+## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日当周
+
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 注册期间，使用 VPP 设备许可证预先设置公司门户 <!-- 1608345 -->
+现可在设备注册计划 (DEP) 注册期间，使用批量采购计划 (VPP) 设备许可证预先设置公司门户。 若要完成此操作，在[创建或编辑注册配置文件](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)时，指定要用于安装公司门户的 VPP 令牌。 请确保令牌没有过期，并且具有足够的公司门户应用许可证。 如果令牌过期或许可证用完，Intune 将改为推送 App Store 公司门户（这将提示输入 Apple ID）。
+
+
+## <a name="week-of-august-14-2018"></a>2018 年 8 月 14 日当周
+
+### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>Apple 设备注册计划支持注册 macOS 设备 <!-- 747651 -->
+Intune 现支持将 macOS 设备注册到 Apple 设备注册计划 (DEP) 中。 有关详细信息，请参阅[通过 Apple 设备注册计划自动注册 macOS 设备](device-enrollment-program-enroll-macos.md)。
+
 ## <a name="week-of-july-23-2018"></a>2018 年 7 月 23 日的这一周
 
 ### <a name="app-management"></a>应用管理
-
-####  <a name="windows-apps-file-extensions----1884873---"></a>Windows 应用文件扩展名 <!-- 1884873 -->
-Windows 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.msix 和 .msixbundle。 可以在 Microsoft Intune 中添加应用，方法是通过选择“移动应用” > “应用” > “添加”。 将显示“添加应用”窗格，可选择“应用类型”。 选择允许上传应用包文件的应用类型，选择“应用包文件”，然后输入带有相应扩展名的安装文件。
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>对 macOS 的业务线 (LOB) 应用支持 <!-- 1895847 -->
 Microsoft Intune 允许将 macOS LOB 应用部署为“必需”或“注册时可用”。 最终用户可通过适用于 macOS 公司门户或[公司门户网站](https://portal.manage.microsoft.com)获得部署为“可用”的应用。
@@ -465,7 +474,7 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 ### <a name="device-enrollment"></a>设备注册
 
 #### <a name="new-enrollment-steps-for-users-on-devices-with-macos-high-sierra-10132---1734567---"></a>用户在使用 macOS High Sierra 10.13.2+ 的设备上的新注册步骤<!--1734567 -->
-macOS High Sierra 10.13.2 引入了“用户批准的”MDM 注册的概念。 批准的注册将允许 Intune 管理某些安全敏感设置。 有关详细信息，请参阅此处的 Apple 支持文档：https://support.apple.com/HT208019。
+macOS High Sierra 10.13.2 引入了“用户批准的”MDM 注册的概念。 批准的注册将允许 Intune 管理某些安全敏感设置。 有关详细信息，请参阅此处的 Apple 支持文档： https://support.apple.com/HT208019。
 
 如果最终用户未打开“系统首选项”并手动批准，使用 macOS 公司门户注册的设备将被视为“未经用户批准”。 为此，macOS 公司门户现直接在注册过程末尾指示使用 macOS 10.13.2 及以上版本的用户手动批准注册。 Intune 管理员控制台将就注册设备的用户批准情况进行报告。
 
@@ -1129,6 +1138,16 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 
 ## <a name="notices"></a>通知
 
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>执行操作：请在 Intune 中更新 Android 设备限制或符合性策略密码设置
+Intune 将删除 Android 4.4 及更高版本设备的可用密码类型“设备默认值”。 由于 Android 平台和设备默认值的差异，该策略通常被设备视为可选策略。 为了消除在 Android 上强制执行此设置时造成的混淆，我们会在即将发布的版本中将此设置从 UI 中删除。 
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+- 如果要求必须在设备上输入密码，我们建议编辑 Android 平台配置文件来清楚表达所需的密码类型，而不是使用“设备默认值”。
+- 如果打算让最终用户决定是否创建密码，请选择“未配置”按钮。 我们从 UI 删除此设置时，如果仍设置了该设置，系统会在下次编辑配置文件时提示选择“设备默认值”以外的值。
+我需要针对此更改做什么准备？
+查看 Android 和 Android 企业设备限制和符合性策略中的密码设置。 这些设置列于“符合性策略的系统安全性”下以及“设备密码”或“设备限制的工作配置文件设置”下。 其他信息包含一个链接，指向配置这些设置的位置的详细信息和屏幕截图。
+####<a name="additional-information"></a>其他信息
+https://aka.ms/PasswordSettings 
+
 ### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>更改计划：向 Intune 中添加“在下一次身份验证时更改密码”<!-- 1873216 -->
 在 9 月服务版本中，Intune 计划纳入 Apple 新发布的“在下一次身份验证时更改密码”设置，该设置适用于运行 macOS 10.13 版和更高版本的设备。 在纳入此设置之前，MDM 提供商无法验证设备密码是否已更改为符合规定的密码。 Intune 的配置和符合性策略只验证在下一次更改设备密码后是否将其标记为符合规定。 添加此新的 Apple 功能后，macOS 用户会收到更新密码的请求，即使其密码已符合规定。
 
@@ -1171,22 +1190,6 @@ iOS 10 及更高版本支持 Office 365 移动应用，因此你可能已经升�
 
 **其他信息**：[Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)（将 Intune 移动到 TLS 1.2 以进行加密）
 
-### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>更改计划：Intune 中新增用于 Kiosk 配置的 Windows 10 设置<!-- 1560072 -->
-我们会在 Intune Azure 门户中对配置 Windows 10 1709 及更高版本（RS3 及更高版本）的方式和位置进行调整。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？ 
-我们的记录表明你正在使用“Windows 10”>“设备限制”>“Kiosk(预览版)”设置。 我们会在五月将 UI 中的这一设置重命名为“Windows 10”>“设备限制”>“Kiosk(已过时)”，以表示不推荐使用此设置。 但是，在 Intune 的六月更新前此设置仍然可用。 六月之后，它会在后端中被设为已过时，无法再使用。 我们将在五月发布一个新的设备配置文件：“Windows 10”>“Kiosk”，其中包含了在 Windows 10 RS4 及更高版本上配置 Kiosks 所需的设置。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？  
-Intune 将在五月底前后发布五月服务更新，届时，我们会为你提供说明，你可以根据该说明测试和验证你是否能将 Kiosk 配置从 Windows 10 RS3 迁移到 Windows 10 RS4。 使用这些说明将设备配置为 Kiosks 并让其使用 Kiosks 适用的新设备配置文件。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-此更改将同时影响 Intune 独立版客户和混合版（带 Configuration Manager 的 Intune）客户。 此集成将有助于简化云管理。 当前在 Azure 中，只可转到一个边栏选项卡（Intune 边栏选项卡）来管理组、策略、应用以及任何移动设备管理。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-请将 Intune 标记为收藏（而不是“Intune 应用保护服务”边栏选项卡），并确保熟悉 Intune 的“移动应用”边栏选项卡中的应用保护策略工作流。 我们将重定向一小段时间，然后删除“应用保护”边栏选项卡。 请记住，所有应用保护策略都已转到 Intune，可按照此处的文档操作，修改任何条件访问策略：[https://aka.ms/azuread_ca](https://aka.ms/azuread_ca)。
-
-其他信息：[https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>计划更改：更改对 Microsoft Intune App SDK for Cordova 插件的支持
 Intune 对 [Microsoft Intune App SDK Cordova](app-sdk-cordova.md) 插件的支持于 2018 年 5 月 1 日结束。 建议改为使用 Intune App Wrapping Tool 准备基于 Cordova 的应用，以实现 Intune 中的可管理性和可用性。 此更改生效时，将不再维护 Microsoft Intune APP SDK for Cordova 插件，也不接收更新。 应用开发者将不能使用此插件。 Intune 计划继续支持使用 Cordova 构建的应用。 但使用 Microsoft Intune APP SDK for Cordova 插件构建的任何应用在 Intune 中都会减少功能。 使用 Intune App Wrapping Tool 包装后，应用可以照常部署给最终用户。 针对基于 Cordova 且发布到 Google Play 商店的 Android 应用：

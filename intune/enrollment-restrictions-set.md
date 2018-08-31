@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
-ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
+ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501143"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251922"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -30,9 +30,6 @@ ms.locfileid: "39501143"
 
 >[!NOTE]
 >注册限制不是安全功能。 遭到入侵的设备可能会误报字符。 这些限制是针对非恶意用户的最合适的障碍。
-
->[!NOTE]
->本文所述的组分配注册限制和优先级功能即将在 Intune 客户群间推出。 此次推出完成之前，你可能无权访问组和优先级功能。
 
 可创建的特定注册限制包括：
 

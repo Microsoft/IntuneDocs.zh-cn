@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909059"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255087"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>设置 Android 工作配置文件设备的注册
 
@@ -34,7 +34,7 @@ Intune 可帮助用户将应用和设置部署到 Android 工作配置文件设�
 2. 指定 Android 工作配置文件注册设置。 Android 工作配置文件[仅在特定 Android 设备上受支持](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22)。 支持 Android 工作配置文件的任何设备也支持传统的 Android 管理。 通过 Intune 可以指定应如何在[注册限制](enrollment-restrictions-set.md)范围内管理支持 Android 工作配置文件的设备。
     - **阻止（默认设置）**：所有 Android 设备（包括支持 Android 工作配置文件的设备）均将注册为传统的 Android 设备。
     - **允许**：将支持 Android 工作配置文件的所有设备均注册为 Android 工作配置文件设备。 不支持 Android 工作配置文件的任何 Android 设备都注册为传统的 Android 设备。
-3. [告知用户如何注册其设备](/intune-user-help/enroll-your-device-in-intune-android.md)。
+3. [告知用户如何注册其设备](/intune-user-help/enroll-your-device-in-intune-android)。
 
 
 若要在 Android 工作配置文件中注册已作为常规 Android 设备注册的设备，必须先取消注册这些设备，然后重新注册。

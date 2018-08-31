@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3b835f9fb2c1f7695919fa7d7f237c3989bd470
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: cf1b47b578c5abe0051b94c9f4c2127cd48f0e76
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001921"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092271"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -110,7 +110,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。
 2. 选择令牌，选择“配置文件”，然后选择“创建配置文件”。
 
-    ![创建配置文件屏幕截图。](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![“创建配置文件”的屏幕截图。](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. 在“创建配置文件”下，输入配置文件的“名称”和“描述”以便于管理。 用户看不到这些详细信息。 可以使用此“名称”字段在 Azure Active Directory 中创建动态组。 使用配置文件名称定义 enrollmentProfileName 参数，以向设备分配此注册配置文件。 详细了解 [Azure Active Directory 动态组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
 
@@ -119,7 +119,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 4. 对于“用户关联”，选择具有此配置文件的设备是否必须通过已分配的用户进行注册。
     - 通过用户关联进行注册 - 为属于用户且想要使用公司门户获取服务（如安装应用）的设备选择此选项。 如果使用 ADFS 且注册配置文件的“不使用设置助理而使用公司门户进行身份验证”设置为“否”，则需使用 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints) [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
-    - 不通过用户关联进行注册 - 为不属于单个用户的设备选择此选项。 为无需访问本地用户数据即可执行任务的设备使用此选项。 公司门户等应用将无法运行。
+    - 不通过用户关联进行注册 - 为不属于单个用户的设备选择此选项。 对无需访问本地用户数据即可执行任务的设备使用此选项。 公司门户等应用将无法运行。
 
 5. 如果选择“通过用户关联进行注册”，则可选择让用户不使用 Apple 设置助理而使用公司门户进行身份验证。
 
@@ -129,9 +129,17 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
     > 如果想要执行以下任一操作，请将“不使用 Apple 设置助理而使用公司门户进行身份验证”设置为“是”。
     >    - 使用多重身份验证
     >    - 提示用户在首次登录时需要更改密码
-    >    - 提示用户在注册过程中重置其已过期的密码。以上功能在使用 Apple 设置助理进行身份验证时不受支持。
+    >    - 提示用户在注册期间重置过期的密码
+    >
+    > 使用 Apple 设置助理进行身份验证时不支持这些功能。
 
-6. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
+
+6. 如果对“不使用 Apple 设置助理而使用公司门户进行身份验证”选择了“是”，则可以选择使用批量采购计划 (VPP) 令牌在设备上自动安装公司门户，而无需用户提供 Apple ID。 要使用 VPP 令牌安装公司门户，请在“使用 VPP 安装公司门户”下选择一个令牌。 请确保令牌没有过期，并且具有足够公司门户应用使用的设备许可证。 如果令牌过期或许可证用完，Intune 将改为安装 App Store 公司门户并提示输入 Apple ID。
+
+    ![使用 VPP 安装公司门户的屏幕截图。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
+
+
+7. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
 
     ![“设备管理设置”屏幕截图。](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -145,37 +153,42 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
      > [!NOTE]
      > 不受监督的注册设备只能使用 Apple Configurator 重置为受监督。 以此方式重置设备需要使用 USB 线将 iOS 设备连接到 Mac。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。
 
-7. 选择是否要为使用此配置文件的设备锁定注册。 “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。 
+8. 选择是否要为使用此配置文件的设备锁定注册。 “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。 
 
-8. 选择是否要让使用此配置文件的设备能够“与计算机同步”。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
+9. 选择是否要让使用此配置文件的设备能够“与计算机同步”。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
 
-9. 如果在上一步中选择了“通过证书允许 Apple Configurator”，则选择要导入的“Apple Configurator 证书”。
+10. 如果在上一步中选择了“通过证书允许 Apple Configurator”，则选择要导入的“Apple Configurator 证书”。
 
-10. 选择“确定”。
+11. 选择“确定”。
 
-11. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+12. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
 
-
-    |                 Setting                  |                                                                                               描述                                                                                               |
+    | 部门设置 | 描述 |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |     <strong>部门名称</strong>     |                                                             用户在激活过程中轻点“关于配置”时显示。                                                              |
-    |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。                                                          |
-    | <strong>设置助理选项</strong> |                                                     这些可选设置可以稍后在 iOS 的“设置”菜单中设置。                                                      |
-    |        <strong>密码</strong>         | 在激活过程中提示输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
-    |    <strong>位置服务</strong>    |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                  |
-    |         <strong>还原</strong>         |                                                                如果启用，在激活过程中设置助理会提示进行 iCloud 备份。                                                                 |
-    |   <strong>iCloud 和 Apple ID</strong>   |                         如果启用，设置助理会提示用户登录 Apple ID，“应用和数据”屏幕将允许从 iCloud 备份还原设备。                         |
-    |  <strong>条款和条件</strong>   |                                                   如果启用，在激活过程中设置助理会提示用户接受 Apple 的条款和条件。                                                   |
-    |        <strong>Touch ID</strong>         |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |          <strong>缩放</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |          <strong>Siri</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |     <strong>诊断数据</strong>     |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
+    | <strong>部门名称</strong> | 用户在激活过程中轻点“关于配置”时显示。 |
+    |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。 |
+
+  用户设置设备时，可以选择在设备上显示或隐藏各种设置助理屏幕。
+  - 如果选择“隐藏”，设置期间将不会显示该屏幕。 设置设备之后，用户仍可以进入“设置”菜单来设置此功能。
+  - 如果选择“显示”，设置期间将显示该屏幕。 用户有时可以跳过该屏幕，无需采取任何操作。 但是，他们可以稍后进入设备的“设置”菜单来设置此功能。 
+
+| 设置助理屏幕设置 | 如果选择“显示”，设置期间设备将... |
+    |------------------------------------------|------------------------------------------|
+    | <strong>密码</strong> | 提示用户输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
+    | <strong>位置服务</strong> | 提示用户输入位置。 |
+    | <strong>还原</strong> | 显示“应用和数据”屏幕。 设置设备时，此屏幕为用户提供从 iCloud 备份还原或传输数据的选项。 |
+    | <strong>iCloud 和 Apple ID</strong> | 为用户提供使用 Apple ID 登录并使用 iCloud 的选项。                         |
+    | <strong>条款和条件</strong> | 要求用户接受 Apple 的条款和条件。 |
+    | <strong>Touch ID</strong> | 为用户提供设置设备的指纹识别的选项。 |
+    | <strong>Apple Pay</strong> | 为用户提供在设备上设置 Apple Pay 的选项。 |
+    | <strong>缩放</strong> | 设置设备时，为用户提供缩放显示内容的选项。 |
+    | <strong>Siri</strong> | 为用户提供设置 Siri 的选项。 |
+    | <strong>诊断数据</strong> | 向用户展示“诊断”屏幕。 此屏幕为用户提供将诊断数据发送到 Apple 的选项。 |
 
 
-12. 选择“确定”。
+13. 选择“确定”。
 
-13. 若要保存配置文件，则选择“创建”。
+14. 若要保存配置文件，则选择“创建”。
 
 ## <a name="sync-managed-devices"></a>同步托管设备
 Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步，以在 Azure 门户的 Intune 中查看托管设备。
@@ -183,7 +196,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 1. 在 Azure 门户的 Intune 中，选择“设备注册”>“Apple 注册”>“注册计划令牌”> 在列表中选择令牌 >“设备”>“同步”。![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/device-enrollment-program-enroll-ios/image06.png)
 
    为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
-   - 每七天只能运行一次完全同步。 完全同步时，Intune 会提取分配给连接到 Intune 的 Apple MDM 服务器的完整更新序列号列表。 如果已从 Intune 门户删除注册计划设备但未从 DEP 门户的 Apple MDM 服务器取消分配，则该设备不会重新导入到 Intune，除非运行完全同步。   
+   - 每七天只能运行一次完全同步。 完全同步时，Intune 会提取分配给连接到 Intune 的 Apple MDM 服务器的完整更新序列号列表。 如果已从 Intune 门户删除注册计划设备，但未从 DEP 门户的 Apple MDM 服务器取消分配，则该设备不会重新导入到 Intune，除非运行完全同步。   
    - 每 24 小时自动运行一次同步。 用户也可以单击“同步”按钮（不能超过 15 分钟一次）运行同步。 所有同步请求都在 15 分钟内完成。 在同步完成前，“同步”按钮处于禁用状态。 此同步将刷新现有设备状态并导入分配到 Apple MDM 服务器的新设备。   
 
 
