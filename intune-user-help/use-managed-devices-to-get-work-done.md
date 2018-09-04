@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755226"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150660"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>使用托管设备完成工作
 Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板电脑和电脑）、应用和电子邮件等其他公司资源的软件。 这样员工可以在几乎任何地方从几乎任意设备访问其工作信息，并且还能保护公司信息安全。
@@ -36,7 +36,7 @@ Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板
 你可通过两种不同方式获取公司门户：
 
 - 通过在设备上安装公司门户应用。 通常通过在设备上转到应用商店，可以获取公司门户应用，但公司支持人员也可为你安装公司门户应用。
-- 通过转到公司支持人员设置的[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+- 通过转到公司支持人员设置的[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>应用和网站之间的有什么区别？
 公司门户应用和公司门户网站存在一些细微差别，但你可以在两者上执行大部分相同任务。 可以执行的任务有：
@@ -102,4 +102,4 @@ Microsoft 建议首先尝试自己解决问题。 对于 Intune 支持的每个�
 - [解决 macOS 设备的常见问题](troubleshoot-your-device-macos.md)
 - [解决 Windows 设备的常见问题](troubleshoot-your-device-windows.md)
 
-你可以在底部发表评论请求帮助，但是由于每个组织的需求不同，所以我们可能无法回答你的每一个问题。 向公司支持人员寻求帮助可能是获得最快和最相关回复的好方法。 [公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)应该会提供他们的联系信息。
+你可以在底部发表评论请求帮助，但是由于每个组织的需求不同，所以我们可能无法回答你的每一个问题。 向公司支持人员寻求帮助可能是获得最快和最相关回复的好方法。 [公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)应该会提供他们的联系信息。

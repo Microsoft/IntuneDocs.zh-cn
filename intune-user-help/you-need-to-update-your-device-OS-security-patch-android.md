@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: c4a1ce01cf5d65b0bb0d6230972e5358dbe41854
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 7d67d5cc34dfb701f68763bd6265de009055f815
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073780"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147532"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>需更新 Android 设备的操作系统
 
@@ -40,4 +40,4 @@ ms.locfileid: "34073780"
 
 
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

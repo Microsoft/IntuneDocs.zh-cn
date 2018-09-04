@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7190049dbc204d3cdcc4b9dcfbe23e866980ce37
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 31d5a0879f3e3c3933e6b0a8f4e9ebf7e6056419
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016571"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147850"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>适用于 Windows 的公司门户应用已过时
 
 需要更新公司门户应用，以继续访问公司电子邮件、联系人和文档等内容。 若要解决此问题，请打开“Microsoft 应用商店”，安装最新版本的“公司门户”应用。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

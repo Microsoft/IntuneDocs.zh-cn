@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6011e46a3176d55f35310292b55f4786d131f269
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219823"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150915"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>密码不符合公司支持人员的要求
 
@@ -33,7 +33,7 @@ ms.locfileid: "38219823"
 - [设置或更改 Windows 设备的密码](set-or-change-your-password-windows.md)
 
 > [!NOTE]
-> 如果在确定如何使密码符合公司支持人员的要求方面遇到问题，请联系公司支持人员。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+> 如果在确定如何使密码符合公司支持人员的要求方面遇到问题，请联系公司支持人员。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
 ## <a name="pin-or-password-issue-descriptions"></a>PIN 或密码问题描述
 

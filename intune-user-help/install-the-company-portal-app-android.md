@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 05d7f1956e4537a3a51871ac3670bfaea5a9696f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 066b412fe1f52e5e7497512d744a35cd5c77f08a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017914"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147583"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安装 Android 适用的公司门户应用
 
@@ -46,4 +46,4 @@ ms.locfileid: "31017914"
 
 下载公司门户应用后，建议[在 Intune 中注册设备](enroll-your-device-in-Intune-android.md)以便获取工作信息的完全访问权限。 还可以[使用另一台设备登录](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

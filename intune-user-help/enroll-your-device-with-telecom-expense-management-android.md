@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56682656ce9b935bbde595663e4feb0cdc725cb3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017370"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147878"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>在电信费用管理中注册 Android 设备
 
@@ -40,7 +40,7 @@ ms.locfileid: "31017370"
 
 1. 选择“使用 Microsoft 帐户注册”。
 
-   ![Datalert 应用的设置屏幕的图像，在屏幕的上半部分提供注册设备的电话号码字段，在底部显示“使用 Microsoft 帐户注册”，只要你拥有 Microsoft Office 365 帐户和 Intune 订阅。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![Datalert 应用的设置屏幕的图像，在屏幕的上半部分显示提供注册设备的电话号码字段，在底部显示“使用 Microsoft 帐户注册”，只要你拥有 Microsoft Office 365 帐户和 Intune 订阅。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. 从可用的帐户中选择你的工作或学校帐户。 如果未列出你的帐户，则可以使用“添加帐户”按钮来进行登录。
 
@@ -64,4 +64,4 @@ ms.locfileid: "31017370"
 
 注册后，即可开始在 Datalert 应用中看到数据的使用情况。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

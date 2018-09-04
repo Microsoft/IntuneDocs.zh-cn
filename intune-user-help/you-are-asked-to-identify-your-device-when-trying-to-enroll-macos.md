@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec853bce004c70b1a833218f2ef9f4c14d6bb2b7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1cf4b5eb051775a289e727ec6bc03c5af8734b6f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032074"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147242"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>尝试注册时需要对设备进行标识
 
@@ -32,4 +32,4 @@ ms.locfileid: "31032074"
 2. 单击“继续”。
 3. 请输入设备序列号的后四位字符，帮助 Intune 确认是否已注册该设备。 若要查找序列号，请参阅[如何在设备上查找序列号？](how-do-i-find-the-serial-number-on-my-device-macos.md)。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
