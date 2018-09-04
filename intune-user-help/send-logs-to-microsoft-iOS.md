@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a861a491d100fa7f7766d6f638c86f866b336369
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 334f2d14a2cf4fb79310b1a2b4e1026d42754e35
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754614"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148601"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>将日志发送给 iOS 设备的公司门户开发人员
 
@@ -35,4 +35,4 @@ ms.locfileid: "30754614"
 3.  按住，然后上下拖动蓝色小圆点，直到选中报告中的所有文本。 点击弹出菜单中的“__复制__”。
 4.  打开电子邮件应用，并将该内容粘贴到电子邮件的正文。 将该电子邮件发送到 <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

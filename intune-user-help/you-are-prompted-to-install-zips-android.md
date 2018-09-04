@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: bf6b674750eeaf857fdb7595963d399662893c4d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: be4b91eaaa2187678fb4325a93dc561df08225b7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753951"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150389"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>在 Android 设备上安装 Zimperium zIPS
 
@@ -58,4 +58,4 @@ ms.locfileid: "30753951"
 
 有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试[从 Play Store 手动安装 Zimperium zIPS](https://play.google.com/store/apps/details?id=com.zimperium.zips)。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

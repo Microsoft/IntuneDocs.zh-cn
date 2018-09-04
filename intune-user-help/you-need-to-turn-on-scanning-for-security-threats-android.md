@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: c98980cca305bef01dd91e69d00a471b10e741a8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073812"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147479"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>在你的设备上启用安全威胁扫描 
 如果你在不知情的情况下安装了不安全的应用，你的设备数据可能存在风险。 为了保护你设备上的数据，我们建议你： 
@@ -32,4 +32,4 @@ ms.locfileid: "34073812"
 
 在某些 Samsung 设备上，该设置位于“设置” > “Google” > “安全” > “Google Play 保护”中。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。 
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。 

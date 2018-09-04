@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: eb20e5c4099d51fd5afb0fbb6700fc33da53557a
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de0afc8babe692663af9528da313cb31a9d3ff57
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752149"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148443"
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>解决 Android 设备的常见问题
 
-有时 Android 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上的公司支持人员联系信息与其联系。
+有时 Android 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上的公司支持人员联系信息与其联系。
 
 - [在 Android 设备上检查符合性](check-compliance-on-your-device-android.md)
 - [使用详细日志记录帮助公司支持人员修复设备问题](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

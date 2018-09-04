@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a268602833d9164d33a8d86c1b4c6d4485e2abe8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d649a05527f8c273c71b9e2b791d5959a937e43b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021347"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148889"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Windows 10 设备后会发生什么情况？
 
@@ -54,4 +54,4 @@ ms.locfileid: "31021347"
 
 -   公司支持人员可能会在计算机上强制实施策略。 例如，可能要求你在计算机上设置密码或 PIN。 公司支持人员还可限制可输入错误密码的次数，并可在尝试次数过多时锁定计算机或删除计算机硬盘上的所有数据。
 
-如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

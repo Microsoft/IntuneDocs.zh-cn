@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c8d6ba4f6f8a9885b0000e0d7c60ba0594504b5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ffdf1d524dafa280a698ff25b5118394116cd72a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30750857"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148825"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>已达到可注册的设备数上限
 
@@ -33,4 +33,4 @@ ms.locfileid: "30750857"
 2. 从 [MyApps 门户](https://myapps.microsoft.com)删除其中一个设备，并在页面右上角选择“配置文件”。 
 3. 与公司支持人员联系，询问他们是否可以增加允许你注册的设备数。 
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

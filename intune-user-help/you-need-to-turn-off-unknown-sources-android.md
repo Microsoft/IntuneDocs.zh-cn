@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 5f2d1359d82b00357a037ef5f96f95ae55cf8ab6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fccc0e34f0aa4466359fef5ef0ef91326c5829
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016129"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150355"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>需要关闭未知源
 
@@ -30,4 +30,4 @@ ms.locfileid: "31016129"
 
 关闭“未知源”后，可能需要几分钟才能继续使用 Android 设备访问公司或学校数据。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

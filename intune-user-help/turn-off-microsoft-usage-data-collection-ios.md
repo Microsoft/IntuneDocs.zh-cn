@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2c806edbf3855bd23a470eefb6c7be1af65d3211
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4682269cf419fb3be19921e78e2aa7e762f0303d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015789"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146571"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>如何关闭 Microsoft 数据收集
 
@@ -30,4 +30,4 @@ Microsoft 会自动收集我们产品和服务的某些相关数据。 这样做
 
 若要关闭 iOS 设备上的使用情况数据收集，请打开“设置”，点击“公司门户”，然后关闭“用法数据”。 对于 macOS 设备，打开“公司门户”菜单 >“首选项”，然后取消选中“允许 Microsoft 收集使用情况数据”。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

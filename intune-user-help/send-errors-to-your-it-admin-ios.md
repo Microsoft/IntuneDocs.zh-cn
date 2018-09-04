@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ddf075828ca9b9a7d8030a88a2d7f58efbc0e980
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327698"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150116"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>将与 iOS 设备问题相关的错误发送给公司支持人员
 在 iOS 设备上使用公司门户应用有时会出现错误。 发生这种情况时，可以通过电子邮件将有关该错误的详细信息发送给公司的支持人员。 这些详细信息将提供为你解决该问题所需的上下文。
@@ -37,4 +37,4 @@ ms.locfileid: "32327698"
 
 -   在公司门户应用中，摇动设备，然后在诊断警报出现时点击“发送诊断报告”。 如果摇动设备时未出现该警报，请打开“设置” > “公司门户”，确保“摇一摇”选项已打开。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

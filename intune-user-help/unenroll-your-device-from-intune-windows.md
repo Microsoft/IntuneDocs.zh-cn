@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481183"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148772"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>删除 Intune 对 Windows 设备的管理
 
@@ -82,4 +82,4 @@ ms.locfileid: "39481183"
 
 * 重置公司门户应用。 打开“设置”应用并选择 >“应用” > “公司门户” > “高级选项” > “重置”。 
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

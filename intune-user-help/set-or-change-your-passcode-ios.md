@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6f81cab429f531f6839dc952d6ea6fb2977130ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a7f961036eab3b1bf72cc68a44e62f07bdbff6e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019175"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147895"
 ---
 # <a name="set-or-change-your-passcode"></a>设置或更改密码
 
@@ -43,4 +43,4 @@ ms.locfileid: "31019175"
 2. 点击“更改密码”，然后输入旧密码。
 3. 输入符合公司支持人员要求的新密码，然后再次输入以确认密码。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

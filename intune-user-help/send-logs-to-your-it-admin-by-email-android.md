@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327681"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149594"
 ---
 # <a name="email-logs-to-your-company-support"></a>通过电子邮件将日志发送给公司支持人员
 
@@ -45,4 +45,4 @@ ms.locfileid: "32327681"
 3.  点击“发送电子邮件并上传日志”。
 4.  上传完成后，点击电子邮件应用。 随后会打开一封电子邮件，其中的主题字段已经预填充了事件 ID。 请在电子邮件正文中描述你遇到的问题。  
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

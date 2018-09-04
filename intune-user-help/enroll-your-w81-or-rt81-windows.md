@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1f2c81803af12d99bae44c21118c4d94221f78fa
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 425c3a829975e8a4a42b7f9e0302701666124aee
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017982"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146550"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>如何在 Intune 中注册 Windows 8.1 或 Windows RT 8.1 设备
 
@@ -65,4 +65,4 @@ ms.locfileid: "31017982"
 
 4.  点击“安装”或“释放”。 显示的选项取决于公司设置该应用的方式。
 
-仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

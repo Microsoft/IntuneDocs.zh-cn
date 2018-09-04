@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a896e4a86cbeaacc07bdb4a32606a67b0049e3e1
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e31eacb0d106fa7200275fcc369a2ea22cf36219
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30756005"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147261"
 ---
 # <a name="sync-your-ios-device-manually"></a>手动同步 iOS 设备
 
@@ -40,5 +40,5 @@ ms.locfileid: "30756005"
 
    ![用户单击“检查设置”后出现的设备详细信息的屏幕截图，其中显示了进度条。](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 

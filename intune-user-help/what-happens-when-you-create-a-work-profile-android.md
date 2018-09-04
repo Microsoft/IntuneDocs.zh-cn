@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e3c5149ca9dd9b2e4f2df6b1512e488cb5d7bb9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5f063a9648c85c3d2734badf2994997803d12830
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016673"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148719"
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>创建工作配置文件时会发生的情况
 
@@ -45,4 +45,4 @@ ms.locfileid: "31016673"
 
 有关用于创建工作配置文件的步骤，请参阅[创建工作配置文件和注册设备](create-a-work-profile-and-enroll-your-device-in-intune-android.md)。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

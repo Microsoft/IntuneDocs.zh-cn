@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755481"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149117"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>使用公司门户重置你的 Windows 设备会发生什么情况？
 
@@ -34,4 +34,4 @@ ms.locfileid: "30755481"
 |你的设备只可以访问公司电子邮件|**Windows Phone 8.1**<br />设备将不再显示在公司门户中，并且将删除公司电子邮件帐户和未保存的电子邮件。<br /><br />**Windows 7 或 Windows Vista**<br />无法重置运行 Windows 7 或更早版本、仅用于电子邮件的计算机。<br /><br />**Windows 8.1 和 Windows 8**<br />设备将不再显示在公司门户中，并且将删除公司电子邮件帐户和未保存的电子邮件。|
 |PC 和便携式计算机|**Windows 8.1 和 Windows 8**<br />无法重置运行 Windows 8 或 Windows 8.1 的计算机，除非它仅用于电子邮件。<br /><br />**Windows 7 或 Windows Vista**<br />无法重置运行 Windows 7 或更早版本的计算机。|
 
-如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

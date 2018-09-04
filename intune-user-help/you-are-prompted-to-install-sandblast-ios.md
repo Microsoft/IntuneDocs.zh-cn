@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 94440987583651925e2aa3c1cceb7ba1206ed8bc
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: a52c72c82e54643f5a348a17d3f7b1e0cc8b9d71
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753986"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146318"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>需要在 iOS 设备上安装 SandBlast Mobile Protect
 
@@ -46,4 +46,4 @@ ms.locfileid: "30753986"
 
 有时安装可能会因不可控的技术问题而失败。 如果发生这种情况，请尝试[从 App Store 手动安装 SandBlast Mobile Protect](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797)。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

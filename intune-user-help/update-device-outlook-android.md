@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ff8a2650b0264662084a4bf3a8186808f5980faf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 40cc6ec2daab92a226051e2d9bc11d7ac0fb105b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013970"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150457"
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>需要更新 Android 设备以安装 Outlook 应用
 
@@ -36,4 +36,4 @@ Outlook 应用帮助数百万用户在 [Android](https://play.google.com/store/a
 
 转到“设置”，然后使用“更新”或“系统更新”选项。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751741"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147071"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>在由 Jamf 托管的 macOS 设备上执行操作
 
@@ -34,4 +34,4 @@ __如果看到“AccountNotOnboarded”或“设备已注册”，该如何操�
 
 如果已打开公司门户应用并出现一条显示“AccountNotOnboarded”的消息，则需退出公司门户应用，并转到“应用程序” > “自助服务”。 公司将拥有需要安装的设备注册策略。 单击该策略进行安装，然后再次打开公司门户。
 
-仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。
+仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。

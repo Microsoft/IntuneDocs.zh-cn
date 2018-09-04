@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6a106220a2a51eeed7850ac967594818981afca4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7e63a8578779d6930c2691066cd784a18126b4a2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014939"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150178"
 ---
 # <a name="you-need-to-enable-code-integrity"></a>需启用代码完整性
 
@@ -35,4 +35,4 @@ ms.locfileid: "31014939"
 
 如果你认为可以继续操作，请参阅[禁用安全启动](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)页中的“重新启用安全启动”部分，尝试自己启用安全启动。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f257064aec862c1a7fd7f085769c95c13499cdb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ab2642127b635e4830b6cf7f5e8cd820c61904ba
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016877"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149007"
 ---
 # <a name="you-need-to-enable-encryption"></a>需对设备启用加密
 
@@ -30,4 +30,4 @@ ms.locfileid: "31016877"
 
 BitLocker 是一款可加密驱动器并帮助保护数据的软件。 请参阅[以下说明](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d)，了解如何在 Windows 10 设备上启用 BitLocker。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

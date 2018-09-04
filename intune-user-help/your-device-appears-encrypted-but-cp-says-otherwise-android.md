@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c26a3bbb168904fe39c6c0ff7dd0698eece56596
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de8fb99a201590c9ea68e5a2ec6714de9ae0d0f4
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754920"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146871"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>你的 Android 设备似乎已加密，但公司门户将该设备识别为未加密
 
@@ -49,7 +49,7 @@ ms.locfileid: "30754920"
 
 ### <a name="downgrade-your-version-of-android"></a>降级 Android 版本
 
-如果设备提供降级到 Android 6.0+ 的选项，请进行降级。 如果尝试进行设备降级，将存在数据丢失的风险。 若要避免此风险，建议联系公司支持人员解决此问题。 可在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)获取公司支持人员的联系信息。
+如果设备提供降级到 Android 6.0+ 的选项，请进行降级。 如果尝试进行设备降级，将存在数据丢失的风险。 若要避免此风险，建议联系公司支持人员解决此问题。 可在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)获取公司支持人员的联系信息。
 
 ## <a name="specific-manufacturer-issues"></a>特定制造商问题
 

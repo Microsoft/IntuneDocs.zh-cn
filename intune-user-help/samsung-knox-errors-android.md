@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751435"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150879"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>解决 Samsung Knox 设备的常见问题
 
@@ -51,4 +51,4 @@ ms.locfileid: "30751435"
 |---|---|
 |**Samsung Knox 激活错误** - 无法激活 Samsung KNOX 许可证。 这可能是因为开启了省电模式。 请在设备设置中关闭省电模式，并再试一次。 |设备的电源设置可能不正确，无法使用公司资源。 详细了解如何[设置省电模式](power-saving-mode-android.md)。|
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

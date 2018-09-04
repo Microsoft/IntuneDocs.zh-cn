@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50e78b3e7986526bc9da4e965133d62cfc73273f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6167dbfd497ad2cfddecae2a25516b3d1bdd2c74
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016928"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146890"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>安装公司门户应用并在 Intune 中注册 Android 设备后会发生什么情况？
 
@@ -58,4 +58,4 @@ ms.locfileid: "31016928"
 
 -   发送任何公司应用清单更新。 （这些更新不包含任何个人信息。）
 
-需要帮助吗? 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
+需要帮助吗? 请联系公司支持人员（访问[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。

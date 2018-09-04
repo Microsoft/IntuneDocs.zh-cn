@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 071ed6ca2889788c607625478f4f9d3d20e19662
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015143"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146369"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>安装公司门户应用并登录
 
@@ -38,4 +38,4 @@ ms.locfileid: "31015143"
 
     如果首次登录到公司门户应用，并且你的公司或学校正在使用 Intune，则系统将提示你在 Intune 中注册你的设备。 若要注册，请遵循[在 Intune 中注册 iOS 设备](enroll-your-device-in-intune-ios.md)中的步骤。 还可以[使用另一台设备登录](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

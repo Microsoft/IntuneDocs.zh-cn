@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9190282edb8d356d7d43a634d10991a4b4c19c16
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e305848ca77aef49050df382151db75c5b03e2a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018492"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147975"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>打开 Windows Defender 以访问公司资源
 
@@ -50,4 +50,4 @@ ms.locfileid: "31018492"
 
 要确保防病毒定义是最新的，请转到“开始”并搜索“Windows Defender 安全中心”以进行检查。 选择“保护更新”和“检查更新”，确保设备针对病毒具有最新保护。 如果未显示此选项，请按照[启用实时保护](turn-on-defender-windows.md#turn-on-real-time-protection)中的步骤进行操作
 
-仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

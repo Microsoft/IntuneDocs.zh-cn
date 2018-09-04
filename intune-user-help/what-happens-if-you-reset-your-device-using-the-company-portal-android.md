@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f4a8ddb904d1007680777b9358feec08ae2cd0eb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f340df3463bc94afbe83efb8873f3f5a31326c8e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015398"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147329"
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>使用公司门户重置 Android 设备会发生什么情况？
 
@@ -34,4 +34,4 @@ ms.locfileid: "31015398"
 - 电子邮件、VPN 和 Wi-Fi。
 - 公司支持人员强制实施某些设置的能力。
 
-如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

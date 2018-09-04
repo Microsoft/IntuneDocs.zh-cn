@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fc6f9cd4da8dc15b1d582aa647e60c9737c7a619
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 92cd7969dafb133cf044e2bf5fd2c6d0f829f6ff
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021109"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150372"
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>从 Intune 取消注册 Windows 设备会发生什么情况？
 
@@ -87,4 +87,4 @@ ms.locfileid: "31021109"
 
 -   将不再应用当添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
 
-如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

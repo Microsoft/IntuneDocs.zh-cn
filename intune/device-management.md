@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836921"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313252"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 
@@ -37,7 +37,7 @@ ms.locfileid: "31836921"
    - “概述”显示已注册设备的可视化快照，并显示正在使用不同平台（Android、iOS 等）的设备数量。
    - “所有设备”显示你管理的已注册设备的列表。
 
-     使用“导出”功能，以 10,000 (Internet Explorer) 或 30,000（Microsoft Edge、Chrome）为增量创建一个包含所有设备的 .csv 列表。
+     使用“导出”功能，以 10,000 (Internet Explorer) 或 30,000（Edge、Chrome）为增量创建一个包含所有设备的 .csv 列表。
 
      选择任意设备以[查看有关该设备的详细信息](device-inventory.md)，包括硬件详细信息、已安装应用以及其符合性策略的状态等。
 
@@ -55,8 +55,8 @@ ms.locfileid: "31836921"
 
 - [查看设备清单](device-inventory.md)
 - 运行远程设备操作：
-    - [删除公司数据](devices-wipe.md#remove-company-data)
-    - [恢复出厂设置](devices-wipe.md#factory-reset)
+    - [停用](devices-wipe.md#retire)
+    - [擦除](devices-wipe.md#wipe)
     - [远程锁定](device-remote-lock.md)
     - [重置密码](device-passcode-reset.md)
     - [绕过激活锁](device-activation-lock-bypass.md)（仅限 iOS）

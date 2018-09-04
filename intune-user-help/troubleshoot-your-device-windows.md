@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751673"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149640"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>解决 Windows 设备的常见问题
 
-有时 Windows 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上的公司支持人员联系信息与其联系。
+有时 Windows 设备可能出现一些可通过故障排除解决的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上的公司支持人员联系信息与其联系。
 
 - [Windows 10 设备无法注册](troubleshoot-your-windows-10-device-windows.md)
 - [需要更新我的 Windows 设备](you-need-to-update-your-windows-device.md)

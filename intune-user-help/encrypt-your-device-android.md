@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cea43f2bf3b13bf0463e1dedd6c20a1587336d5b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: dfb70327737bcfe9e6bd2ded964a07a00f9d7610
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754988"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148943"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>如何通过加密保护 Android 设备
 
@@ -65,4 +65,4 @@ ms.locfileid: "30754988"
 
     6. 打开公司门户应用，选择你的设备，然后点击“Check Compliance”（检查合规性）。
 
-仍需帮助？ 请联系公司支持人员（访问[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。
+仍需帮助？ 请联系公司支持人员（访问[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。

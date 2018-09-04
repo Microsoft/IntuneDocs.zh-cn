@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 390a236cf8eebae209c81b53d629cbd3f83899f8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8c1806d8d35dd2a6e16f1041e2c9f844f637a046
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016758"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149865"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>利用详细日志记录帮助公司支持人员修复设备问题
 
@@ -30,4 +30,4 @@ ms.locfileid: "31016758"
 
 若要打开或关闭“详细日志记录”，请使用工作或学校凭据登录到公司门户应用，点击“设置”，然后点击“详细日志记录”旁边的开/关按钮。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

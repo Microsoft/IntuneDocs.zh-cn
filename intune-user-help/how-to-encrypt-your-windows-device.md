@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a93c53a061e41d288846f8b5a16ea4a9b4679607
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bf6610b3f72913bc496c1e24a136543314d42937
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013885"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149163"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>如何加密你的 Windows 设备
 
@@ -34,4 +34,4 @@ ms.locfileid: "31013885"
 
 2.  单击“打开 BitLocker”，然后按照所示说明加密你的各个驱动器。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

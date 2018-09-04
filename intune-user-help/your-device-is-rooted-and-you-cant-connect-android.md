@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 522a300760fe4446fc6e1ff211763279ba4fc7bf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4cce70abac079ab1761994ba91040c16375e013
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021177"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149749"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>你的 Android 设备已被 root，因此无法连接
 
@@ -34,6 +34,6 @@ ms.locfileid: "31021177"
 
 - 你可能已经在设备上安装了根检测软件认为会带来安全风险的应用。 如果安装应用后立即显示此消息，那么请尝试卸载此应用。
 
-- 你的设备制造商在设备上安装了根检测软件认为会带来安全风险的软件。 在此情况下，需要联系公司支持人员获取帮助。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+- 你的设备制造商在设备上安装了根检测软件认为会带来安全风险的软件。 在此情况下，需要联系公司支持人员获取帮助。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
 如果你已自行 root 设备，那么需要逆转此过程，并将设备还原到其非 root 状态。

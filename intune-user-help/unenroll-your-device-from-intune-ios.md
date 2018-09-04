@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547482"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148791"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>从 Intune 删除 iOS 设备
 
@@ -74,4 +74,4 @@ ms.locfileid: "34547482"
 -   **Keychain**：设备将用于登录的密码和其他信息存储在 Keychain 中。 设备上安装的任何 Microsoft 开发的应用都可以共享登录信息，包括 Microsoft Outlook 和 Microsoft Authenticator。 与 Apple 分析一样，仅当将设备重置为出厂设置时系统才会删除此信息。 此操作会清除设备上的所有个人信息。 若要执行此操作，请打开“设置” > “常规” > “重置” > “清除所有内容和设置”。
 
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

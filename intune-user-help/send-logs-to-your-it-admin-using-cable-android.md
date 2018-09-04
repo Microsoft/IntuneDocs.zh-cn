@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117848"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150301"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>使用 USB 电缆将日志发送给公司支持人员
 
 如果在 Android 设备上使用公司门户应用时遇到错误，可以通过电子邮件向公司支持人员发送信息，以帮助他们解决问题。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
 
 > [!Note]
-> 开始之前，请确保拥有公司支持人员的电子邮件地址。 可在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上或公司门户应用中进行查找。
+> 开始之前，请确保拥有公司支持人员的电子邮件地址。 可在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上或公司门户应用中进行查找。
 
 1. 在错误屏幕上，点击“**发送信息**”。 当看到一条消息询问要使用哪种方法来发送日志时，选择将文件保存到设备的选项。
 
@@ -39,4 +39,4 @@ ms.locfileid: "39117848"
 
 4. 选择文件，然后将它们附加到电子邮件。 将此电子邮件发送给公司支持人员。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

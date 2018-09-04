@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a3e0ffd583d1709a9127dc346d0271578820a10e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 874007e161f4271fc4faed9d939046c17e52ac7b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014854"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147295"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>使用公司门户应用时遇到错误
 
@@ -34,4 +34,4 @@ ms.locfileid: "31014854"
 
 -   在公司门户应用中时摇动设备，然后在诊断警报出现时点击“电子邮件”。 如果摇动设备时未出现该警报，请打开“设置” > “公司门户”，确保“摇一摇”选项已打开。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

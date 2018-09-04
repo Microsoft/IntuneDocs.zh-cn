@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ab5e424469f0fd83e063db5361fa843b2c6f1e76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1f9bb0fc434b1cba2d9b48f6f8cef4cf6b06e932
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016197"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147312"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>需更新 Windows 设备
 
@@ -37,4 +37,4 @@ ms.locfileid: "31016197"
 
 对于 Windows 10 和 Windows 8.1，在“搜索栏”中键入 __Windows 版本__。 在“需要帮助？”下选择“Windows 版本”。 将显示版本号。 此数字类似于 __10.0.14393.447__。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

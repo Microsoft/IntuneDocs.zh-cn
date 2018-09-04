@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b12dcafa4ff7d45dd1d41c0311a2658b08acf12e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 19128e9de06239fb82266654fe038b4be9ce7d41
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019851"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149775"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>你的 Android 设备缺少公司支持人员所需的证书
 
@@ -37,9 +37,9 @@ ms.locfileid: "31019851"
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>通过查看公司或学校的电脑来标识缺少的证书
 
-1. 在电脑上，打开 Internet Explorer。 如果没有用于此目的的电脑，请与公司支持人员联系。 若要查找公司支持人员的联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+1. 在电脑上，打开 Internet Explorer。 如果没有用于此目的的电脑，请与公司支持人员联系。 若要查找公司支持人员的联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
-2. 转到[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)，并使用你的工作或学校凭据登录。
+2. 转到[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)，并使用你的工作或学校凭据登录。
 
 3. 在浏览器地址栏的最右侧，选择类似于挂锁的符号，如下面的屏幕截图所示。
 
@@ -71,4 +71,4 @@ ms.locfileid: "31019851"
 
 7. 重新打开公司门户应用。 现在应能够登录到公司门户应用。 如需帮助，请与公司支持人员联系。
 
-如果看到相同的“缺少证书”消息（如之前所示），且已经按照步骤执行了操作，说明可能存在另一个需要公司支持人员帮助你安装的证书。 请使用[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上提供的联系信息，联系公司支持人员获取帮助。
+如果看到相同的“缺少证书”消息（如之前所示），且已经按照步骤执行了操作，说明可能存在另一个需要公司支持人员帮助你安装的证书。 请使用[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上提供的联系信息，联系公司支持人员获取帮助。

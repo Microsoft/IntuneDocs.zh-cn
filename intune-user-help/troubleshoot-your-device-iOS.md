@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0edd35aa1b202b9494c31d91a0ca5584f1cc251
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db65c33fe90497ccb511f18c8668a876c0d352fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755260"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146393"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>修复 iOS 设备的常见问题
 
-有时 iOS 设备可能出现一些可通过故障排除修复的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上的公司支持人员联系信息与其联系。
+有时 iOS 设备可能出现一些可通过故障排除修复的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上的公司支持人员联系信息与其联系。
 
 - [需要重新连接受威胁的 iOS 设备](how-to-reconnect-a-compromised-ios-device.md)
 - [需要将错误发送给公司支持人员](send-errors-to-your-it-admin-ios.md)
