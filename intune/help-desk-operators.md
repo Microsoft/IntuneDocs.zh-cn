@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329869"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251632"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑难解答门户帮助公司的用户
 
@@ -65,7 +65,7 @@ ms.locfileid: "36329869"
 | 2.   | 用户选择  | 当前所选用户的名称。 单击“更改用户”可选择新用户。       |
 | 3.   | 用户状态  | 显示用户的 Intune 许可证状态、设备数目、每个设备的符合性、应用数目以及应用的符合性。       |
 | 4.   | 用户信息  | 使用该列表在窗格中选择要查看的详细信息。 <br>可选内容如下： <ul><li>移动应用<li>应用保护策略<li>相容性策略<li> 配置策略</ul>      |
-| 5.   | 组成员身份  | Yadda       |
+| 5.   | 组成员身份  | 显示所选用户所属的当前组。       |
 
 ## <a name="mobile-apps-reference"></a>移动应用引用
 

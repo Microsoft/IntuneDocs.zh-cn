@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 01/19/2018
+ms.date: 08/16/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f59bd4e0f795b73d830e41d47262c10c24d9398b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
+ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834272"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251958"
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
@@ -46,7 +46,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 - **未在任何移动设备管理解决方案中注册：** 该类别中的设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中托管或注册。
 
 > [!IMPORTANT]
-> 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 连接到本地 Exchange 或 SharePoint 服务的应用不支持应用保护策略。
+> 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 此外，还可以通过为启用了混合现代身份验证的 Outlook for iOS 和 Outlook for Android 创建 Intune 应用保护策略来保护对 Exchange 本地邮箱的访问。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。 连接到本地 Exchange 或 SharePoint 服务的其他应用不支持应用保护策略。
 
 **使用应用保护策略的主要优点有**
 

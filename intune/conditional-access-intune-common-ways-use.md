@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025906"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251746"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025906"
 使用 Intune 的条件访问有两种：基于设备的条件访问和基于应用的条件访问。 需要配置相关的符合性策略，以驱动组织中的条件访问符合性。 条件访问通常用于执行以下操作：允许或阻止对本地 Exchange 的访问、控制网络访问权限、与 Mobile Threat Defense 解决方案集成等。
 
 下面的信息有助于了解如何使用 Intune 移动设备符合性功能和 Intune 移动应用程序管理 (MAM) 功能。 
+
+> [!NOTE]
+> 条件访问是 Azure Active Directory Premium 许可证附带的 Azure Active Directory 功能。 Intune 通过向解决方案添加移动设备符合性和移动应用管理来增强此功能。
 
 ## <a name="device-based-conditional-access"></a>基于设备的条件性访问
 
@@ -118,13 +121,13 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 
 ### <a name="conditional-access-for-windows-pcs"></a>Windows 电脑的条件访问
 
-适用于电脑的条件性访问为移动设备提供了类似的功能。 让我们介绍一下使用 Intune 管理电脑时，你可以使用条件性访问的方式。
+适用于电脑的条件访问提供与移动设备可用的类似功能。 让我们介绍一下使用 Intune 管理电脑时，你可以使用条件性访问的方式。
 
 #### <a name="corporate-owned"></a>公司拥有的设备
 
--   **加入本地 AD 域：** 这是组织最常见的条件性访问部署选项，这种方式合理且易于接受，他们已经通过 AD 组策略和/或配合 System Center Configuration Manager 一起管理其电脑。
+-   加入本地 AD 域：此选项通常适用于那些已经非常习惯通过 AD 组策略和/或 System Center Configuration Manager 管理其电脑的组织。
 
--   **加入 Azure AD 域和 Intune 管理：** 这种方案通常适用于选择自有设备 (CYOD)，以及漫游笔记本电脑的情况，这些设备几乎不连接企业网络。 设备加入 Azure AD 并注册 Intune，这会删除本地 AD 和域控制器上的任何依赖项。 这可在访问公司资源时用作条件性访问标准。
+-   加入 Azure AD 域和 Intune 管理：这种方案通常适用于选择自有设备 (CYOD)，以及漫游笔记本电脑的情况，这些设备几乎不连接企业网络。 设备加入 Azure AD 并注册 Intune，这会删除本地 AD 和域控制器上的任何依赖项。 这可在访问公司资源时用作条件性访问标准。
 
 -   **加入 AD 域和 System Center Configuration Manager：** 截止到当前的分支，System Center Configuration Manager 提供了可以评估特定符合性标准的条件性访问功能（除了已加入域的电脑）：
 

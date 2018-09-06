@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6f9035b5a31d04e7d6ec6c5ec5b8f69a7c0943f
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40090100"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751728"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 macOS 设备
 
@@ -127,25 +127,30 @@ ms.locfileid: "40090100"
 
 8. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义。](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
-
-    |                 Setting                  |                                                                                               描述                                                                                               |
+    | 部门设置 | 描述 |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |     <strong>部门名称</strong>     |                                                             用户在激活过程中轻点“关于配置”时显示。                                                              |
-    |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。                                                          |
-    | <strong>设置助理选项</strong> |                                                     这些可选设置可以稍后在 macOS 的“设置”菜单中设置。                                                      |
-    |        <strong>密码</strong>         | 在激活过程中提示输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
-    |    <strong>位置服务</strong>    |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                  |
-    |         <strong>还原</strong>         |                                                                如果启用，在激活过程中设置助理会提示进行 iCloud 备份。                                                                 |
-    |   <strong>iCloud 和 Apple ID</strong>   |                         如果启用，设置助理会提示用户登录 Apple ID，“应用和数据”屏幕将允许从 iCloud 备份还原设备。                         |
-    |  <strong>条款和条件</strong>   |                                                   如果启用，在激活过程中设置助理会提示用户接受 Apple 的条款和条件。                                                   |
-    |        <strong>Touch ID</strong>         |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |          <strong>缩放</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |          <strong>Siri</strong>           |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |     <strong>诊断数据</strong>     |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                 |
-    |     <strong>FileVault</strong>           |  |
-    |     <strong>iCloud 诊断</strong>  |  |
-    |     <strong>注册</strong>        |  |
+    | <strong>部门名称</strong> | 用户在激活过程中轻点“关于配置”时显示。 |
+    |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。 |
+
+    用户设置设备时，可以选择在设备上显示或隐藏各种设置助理屏幕。
+    - 如果选择“隐藏”，设置期间将不会显示该屏幕。 设置设备之后，用户仍可以进入“设置”菜单来设置此功能。
+    - 如果选择“显示”，设置期间将显示该屏幕。 用户有时可以跳过该屏幕，无需采取任何操作。 但是，他们可以稍后进入设备的“设置”菜单来设置此功能。 
+
+    | 设置助理屏幕设置 | 如果选择“显示”，设置期间设备将... |
+    |------------------------------------------|------------------------------------------|
+    | <strong>密码</strong> | 提示用户输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
+    | <strong>位置服务</strong> | 提示用户输入位置。 |
+    | <strong>还原</strong> | 显示“应用和数据”屏幕。 设置设备时，此屏幕为用户提供从 iCloud 备份还原或传输数据的选项。 |
+    | <strong>iCloud 和 Apple ID</strong> | 为用户提供使用 Apple ID 登录并使用 iCloud 的选项。                         |
+    | <strong>条款和条件</strong> | 要求用户接受 Apple 的条款和条件。 |
+    | <strong>Touch ID</strong> | 为用户提供设置设备的指纹识别的选项。 |
+    | <strong>Apple Pay</strong> | 为用户提供在设备上设置 Apple Pay 的选项。 |
+    | <strong>缩放</strong> | 设置设备时，为用户提供缩放显示内容的选项。 |
+    | <strong>Siri</strong> | 为用户提供设置 Siri 的选项。 |
+    | <strong>诊断数据</strong> | 向用户展示“诊断”屏幕。 此屏幕为用户提供将诊断数据发送到 Apple 的选项。 |
+    | <strong>FileVault</strong> | 为用户提供设置 FileVault 加密的选项。 |
+    | <strong>iCloud 诊断</strong> | 为用户提供将 iCloud 诊断数据发送到 Apple 的选项。 |
+    | <strong>注册</strong>| 要求用户注册设备。 |
 
 
 10. 选择“确定”。

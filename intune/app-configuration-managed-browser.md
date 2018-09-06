@@ -15,23 +15,23 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b647e7b2a4d252041e60792b6fc49df8b961066
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37967226"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40252737"
 ---
-# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问
+# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的受保护的浏览器策略管理 Internet 访问
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Managed Browser 是一款 Web 浏览应用，可以从公共应用商店中下载它以供组织使用。 通过 Intune 配置时，Managed Browser 可以：
+受保护的浏览器包括 Microsoft Edge 和 Intune Managed Browser。 Edge 和 Managed Browser 是 Web 浏览应用，可以从公共应用商店中下载它以供组织使用。 通过 Intune 配置时，受保护的浏览器可以：
 - 用于通过 MyApps 服务进行单一登录来访问公司网站和 SaaS 应用，并保护 Web 数据。
 - 使用一系列 URL 和域进行预配置，以限制用户可在公司中导航到的网站。
 - 使用主页和指定的书签进行预配置。
 
-由于此应用已与 Intune SDK 集成，因此也可以向其应用应用保护策略，包括：
+由于 Edge 和 Managed Browser 已与 Intune SDK 集成，因此也可以向其应用应用保护策略，包括：
 - 控制剪切、复制和粘贴操作的使用
 - 防止发生屏幕捕获
 - 确保指向用户所选内容的链接仅在其他托管应用中打开。
@@ -45,11 +45,11 @@ Managed Browser 是一款 Web 浏览应用，可以从公共应用商店中下�
 - 非托管设备
 
 如果用户从应用商店中安装了 Managed Browser，并且 Intune 未托管它，则可将其用作基本的 Web 浏览器，其支持通过 Microsoft MyApps 网站进行单一登录。 用户将被直接转到 MyApps 网站，在其中用户可以看到其预配的所有 SaaS 应用程序。
-Intune 未托管 Managed Browser 期间，无法访问由 Intune 托管的其他应用程序中的数据。 
+Intune 未托管 Managed Browser 或 Edge 期间，无法访问由 Intune 托管的其他应用程序中的数据。 
 
 Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
 
-可以针对以下设备类型创建 Managed Browser 策略：
+可以针对以下设备类型创建受保护的浏览器策略：
 
 -   运行 Android 4 和更高版本的设备
 
@@ -60,9 +60,9 @@ Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
 >早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
 
 
-Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)打开 Web 内容。
+Microsoft Edge 和 Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)打开 Web 内容。
 
-## <a name="conditional-access-for-the-intune-managed-browser"></a>Intune Managed Browser 的条件访问
+## <a name="conditional-access-for-protected-browsers"></a>受保护浏览器的条件性访问
 
 Managed Browser 现为条件访问的核准客户端应用。 这意味着可以限制移动浏览器访问 Azure AD 连接的 Web 应用（在此只能使用 Managed Browser），防止从其他任何未受保护的浏览器（例如 Safari 或 Chrome）进行访问。 这种保护可应用于 Azure 资源（如 Exchange Online 和 SharePoint Online）、Office 门户，甚至本地站点，这些站点已通过 [Azure AD 应用程序代理](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)向外部用户公开。 
 
@@ -104,7 +104,7 @@ Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authentic
 > [!NOTE]
 > 设备注册是 Azure AD 服务的简单签入。 不需要完整的设备注册，并且不会向 IT 提供设备上的任何其他权限。
 
-## <a name="create-a-managed-browser-app-configuration"></a>创建 Managed Browser 应用配置
+## <a name="create-a-protected-browser-app-configuration"></a>创建受保护的浏览器应用配置
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
@@ -112,7 +112,7 @@ Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authentic
 4.  在“应用配置策略”边栏选项卡上，选择“添加”。
 5.  在“添加配置策略”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”。
 6.  对于“设备注册”类型，选择“托管应用”。
-7.  选择“选择所需应用”，然后在“目标应用”边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”。
+7.  选择“选择所需应用”，然后在“目标应用”边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”和/或“Edge”。
 8.  选择“确定”，返回“添加配置策略”边栏选项卡。
 9.  选择“配置设置”。 在“配置”边栏选项卡上，定义键值对来为 Managed Browser 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
 10. 完成后，选择“确定”。
@@ -124,7 +124,7 @@ Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authentic
 
 ## <a name="assign-the-configuration-settings-you-created"></a>分配已创建的配置设置
 
-将这些设置分配到 Azure AD 用户组。 如果用户安装了 Managed Browser 应用，则应用将按指定的设置进行管理。
+将这些设置分配到 Azure AD 用户组。 如果用户安装了受保护的目标浏览器应用，则应用将按指定的设置进行管理。
 
 1. 在 Intune 移动应用程序管理仪表板的“移动应用”边栏选项卡上，选择“应用配置策略”。
 2. 在应用配置列表中，选择一个想要分配的配置。
@@ -132,61 +132,64 @@ Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authentic
 4. 在“分配”边栏选项卡上，选择想要将应用配置分配到的 Azure AD 组，然后选择“确定”。
 
 
-## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>如何为 Managed Browser 配置应用程序代理设置
+## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>如何为受保护的浏览器配置应用程序代理设置
 
-可将 Intune Managed Browser 和 [Azure AD 应用程序代理]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)配合使用，以支持 iOS 和 Android 设备用户实现以下方案：
+可将 Microsoft Edge、Intune Managed Browser 和 [Azure AD 应用程序代理]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)配合使用，以支持 iOS 和 Android 设备用户实现以下方案：
 
-- 用户下载并登录到 Microsoft Outlook 应用。 将自动应用 Intune 应用保护策略。 它们对保存的数据进行加密，并阻止用户将公司文件传输到设备上的非托管应用或位置。 当用户接下来点击 Outlook 中 intranet 站点的链接时，可以指定在 Managed Browser 应用中而不是在另一个浏览器中打开链接。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问该网站且 Outlook 中的链接也按预期工作。
-- 远程用户打开 Managed Browser 应用程序，并使用内部 URL 导航到 intranet 站点。 Managed Browser 识别出这个 intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问。
+- 用户下载并登录到 Microsoft Outlook 应用。 将自动应用 Intune 应用保护策略。 它们对保存的数据进行加密，并阻止用户将公司文件传输到设备上的非托管应用或位置。 当用户接下来单击 Outlook 中 Intranet 站点的链接时，可以指定在受保护的浏览器应用程序中而不是在另一个浏览器中打开链接。 受保护的浏览器识别出这个 Intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问该网站且 Outlook 中的链接也按预期工作。
+- 远程用户打开受保护的浏览器应用程序，并使用内部 URL 导航到 Intranet 站点。 受保护的浏览器识别出这个 Intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问。
 
 ### <a name="before-you-start"></a>开始之前
 
 - 通过 Azure AD 应用程序代理设置内部应用程序。
     - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
 - 必须使用 Managed Browser 应用的最低版本 1.2.0。
-- Managed Browser 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
+- Managed Browser 或 Edge 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
 
     > [!NOTE]
-    > 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 中生效。
+    > 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 和 Edge 中生效。
 
 
-#### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>步骤 1：从 Outlook 启用指向 Managed Browser 的自动重定向
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>步骤 1：从 Outlook 启用指向受保护的浏览器的自动重定向
 Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中显示**这一设置的应用保护策略。
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>步骤 2：为 Managed Browser 分配一个应用配置策略。
-此过程将 Managed Browser 应用配置为使用应用代理重定向。 使用创建 Managed Browser 应用配置的过程提供以下键值对：
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>步骤 2：为受保护的浏览器分配一个应用配置策略。
+此过程将 Managed Browser 或 Edge 应用配置为使用应用代理重定向。 使用创建 Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 | Key                                                             | 值    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-若要深入了解 Managed Browser 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅“企业移动性 + 安全性”博客文章[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)（更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问）。
+若要深入了解 Managed Browser、Edge 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅“企业移动性 + 安全性”博客文章[更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)。
 
-## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>如何配置 Managed Browser 的主页
+> [!NOTE]
+> Edge 使用与 Managed Browser 相同的键值对。 
 
-使用此设置可配置用户启动 Managed Browser 或创建新选项卡时看到的主页。使用创建 Managed Browser 应用配置的过程提供以下键值对：
+## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>如何配置受保护浏览器的主页
+
+使用此设置可配置用户启动受保护的浏览器或创建新选项卡时看到的主页。使用创建 Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 |                                Key                                |                                                           值                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例： `<https://www.bing.com>` |
 
-## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>如何配置 Managed Browser 的书签
+## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>如何配置受保护的浏览器的书签
 
-使用此设置可配置一组可供 Managed Browser 用户使用的书签。
+使用此设置可配置一组可供 Edge 或 Managed Browser 用户使用的书签。
 
 - 用户无法删除或修改这些书签
 - 这些书签显示在列表顶部。 用户创建的任何书签显示在这些书签下方。
 - 如果已启用应用代理重定向，可以使用应用代理 Web 应用的内部或外部 URL 添加应用。
 
-使用创建 Managed Browser 应用配置的过程提供以下键值对：
+使用创建 Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 |                                Key                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 <strong>&#124;</strong> 分隔标题和 URL。<br><br>例如：<br> Microsoft 必应|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `必应|https://www.bing.com||Contoso|https://www.contoso.com` |
 
-## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>如何为 Managed Browser 指定允许和阻止的 URL
+## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>如何为受保护的浏览器指定允许和阻止的 URL
 
-使用创建 Managed Browser 应用配置的过程提供以下键值对：
+使用创建 Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 |Key|值|
 |-|-|

@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212114"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751711"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
@@ -57,12 +57,18 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 
     - 通过用户关联进行注册 - 为属于用户且想要使用公司门户获取服务（如安装应用）的设备选择此选项。 设备必须通过设置助理与某个用户关联，然后才可访问公司数据和电子邮件。 仅设置助理注册支持。 用户关联需要 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
-   > [!NOTE]
-   > 在用户关联的注册设置期间，多重身份验证 (MFA) 不起作用。 注册后，MFA 将按预期在设备上运行。 设备无法提示用户在首次登录时需要更改密码。 此外，在注册过程中，密码已过期的用户不会获得重置密码的提示。 用户必须使用其他设备重置密码。
-
     - 不通过用户关联进行注册 - 为不属于单个用户的设备选择此选项。 为无需访问本地用户数据即可执行任务的设备使用此选项。 需要用户隶属关系的应用（包括用于安装业务线应用的公司门户应用）无法运行。 直接注册需要此设置此选项。
 
 4. 如果选择“通过用户关联进行注册”，则可选择让用户不使用 Apple 设置助理而使用公司门户进行身份验证。
+
+    > [!NOTE]
+    > 如果想要执行以下任一操作，请将“不使用 Apple 设置助理而使用公司门户进行身份验证”设置为“是”。
+    >    - 使用多重身份验证
+    >    - 提示用户在首次登录时需要更改密码
+    >    - 提示用户在注册期间重置过期的密码
+    >
+    > 使用 Apple 设置助理进行身份验证时不支持这些功能。
+
 
 6. 选择“创建”保存该配置文件。
 

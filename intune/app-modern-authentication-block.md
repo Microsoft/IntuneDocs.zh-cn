@@ -15,12 +15,12 @@ ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcdc7628f75221228d788c2cb1995189ea8f81f0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 354109cc4d84e34eebd5df6df86919f386e143f6
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223095"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251659"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>屏蔽不使用现代验证 (ADAL) 的应用
 
@@ -31,11 +31,7 @@ ms.locfileid: "34223095"
 要阻止向这些应用授予访问权限，建议执行以下操作：
 
 * 将 ADFS 声明规则设置为阻止非新式验证协议。 情形 3 [阻止所有对 O365 的访问（基于浏览器的应用除外）](https://technet.microsoft.com/library/dn592182.aspx)中提供了详细说明。
-* 对于 **SharePoint Online**，在 SharePoint Online 服务中使用 PowerShell commandlet [Set-SPOTenant](https://technet.microsoft.com/library/fp161390.aspx) 禁用非新式验证，从而将旧身份验证协议属性设置为 false：
-
-```
- Set-SPOTenant -LegacyAuthProtocolsEnabled $false
-```
+* 对于 Exchange 和 SharePoint Online，请使用 Azure Active Directory 条件访问并使用 PowerShell commandlet Set-SPOTenant for SharePoint Online。 有关详细说明，请参阅[为 Azure Active Directory 条件访问设置 SharePoint Online 和 Exchange Online](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols)。
 
 
 >[!IMPORTANT]

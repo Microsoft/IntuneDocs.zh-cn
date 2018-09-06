@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7faba9a0bfb6f07a80c4c0af947efbca9b33ae03
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022333"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251705"
 ---
 # <a name="whats-conditional-access"></a>什么是条件性访问？
 
@@ -38,7 +38,7 @@ ms.locfileid: "31022333"
 
 ## <a name="conditional-access-with-intune"></a>使用 Intune 的条件访问
 
-Intune 添加了移动设备符合性和应用管理策略，以支持 EMS 条件访问解决方案。
+条件访问是 Azure Active Directory Premium 许可证附带的 Azure Active Directory 功能。 Intune 通过向解决方案添加移动设备符合性和移动应用管理来增强此功能。 
 
 ![使用 EMS 时的 Intune 和条件性访问](./media/intune-with-ca-1.png)
 

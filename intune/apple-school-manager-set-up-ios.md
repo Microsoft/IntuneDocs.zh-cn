@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164546"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751796"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 进行 iOS 设备注册
 
@@ -94,8 +94,13 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
     ![使用公司门户进行身份验证。](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
-    >[!NOTE]
-    >如果已将配置文件属性设置为“与用户关联结合使用”且未在使用公司门户，则在注册 Apple School Manager 设备时，多重身份验证 (MFA) 不起作用。 注册之后，MFA 在这些设备上会正常运行。 设备无法提示用户在首次登录时需要更改密码。 此外，在注册过程中，密码已过期的用户不会获得重置密码的提示。 用户必须使用其他设备重置密码。
+    > [!NOTE]
+    > 如果想要执行以下任一操作，请将“不使用 Apple 设置助理而使用公司门户进行身份验证”设置为“是”。
+    >    - 使用多重身份验证
+    >    - 提示用户在首次登录时需要更改密码
+    >    - 提示用户在注册期间重置过期的密码
+    >
+    > 使用 Apple 设置助理进行身份验证时不支持这些功能。
 
 6. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
     “受监督”的设备会提供更多的管理选项，并且会默认禁用“激活锁”。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS 设备的组织。

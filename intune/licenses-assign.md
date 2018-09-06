@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225402"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751644"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>向用户分配许可证，以便他们能够在 Intune 中注册设备
 
@@ -61,7 +61,7 @@ ms.locfileid: "38225402"
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>用户和设备许可证如何影响对服务的访问
 * 每个你向其分配用户软件许可证的**用户**，均可访问和使用联机服务和相关软件（包括 System Center 软件）来管理应用程序和多达 15 台的设备。
-* 每台你向其分配设备软件许可证的**设备**，均可访问和使用供任意数量的用户使用的联机服务和相关软件（包括 System Center 软件）。
+* 可以从用户许可证中单独为任何设备购买许可证。 不需要将设备许可证分配给设备。 访问和使用在线服务及相关软件（包括 System Center 软件）的每台设备都必须拥有设备许可证。
 * 如果设备由多个用户使用，则每位用户均需要设备软件许可证，或所有用户都需要用户软件许可证。
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>了解已购买许可证的类型

@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
-ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
+ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305427"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251862"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -30,11 +30,11 @@ ms.locfileid: "36305427"
 
 ## <a name="before-you-begin"></a>在开始之前
 
-有关如何在 Intune 经典门户中创建策略的说明，请参阅[如何创建应用保护策略](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)。
-
 无论设备是否由 Intune 托管，都可以将应用保护策略应用到该设备上运行的应用中。 若要详细了解应用保护策略的工作原理以及 Intune 应用保护策略支持的方案，请参阅[什么是 Microsoft Intune 应用保护策略](app-protection-policy.md)。
 
 如果你要查找 MAM 支持应用的列表，请参阅 [MAM 应用列表](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
+
+有关将组织的业务线 (LOB) 应用添加到 Microsoft Intune 以准备应用保护策略的信息，请参阅[将应用添加到 Microsoft Intune](apps-add.md)。
 
 ##  <a name="create-an-app-protection-policy"></a>创建应用保护策略
 1. 在“移动应用”工作负荷中，从“管理”部分选择“应用保护政策”。 此选项会打开“应用保护策略”详细信息，可在此创建新策略和编辑现有策略。

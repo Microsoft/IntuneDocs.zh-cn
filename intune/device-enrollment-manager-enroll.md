@@ -15,18 +15,18 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
-ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
+ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203214"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255534"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>通过使用设备注册管理员帐户注册设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 设备注册管理器 (DEM) 帐户是可注册最多 1,000 台设备的特殊用户帐户。 将现有用户添加到 DEM 帐户以向他们提供特殊 DEM 功能。 每台已注册设备均使用单一许可证。 我们建议将通过此帐户注册的设备用作共享设备，而不是个人 ("BYOD") 设备。  
+组织可以使用 Intune 来管理大量带有单一用户帐户的移动设备。 设备注册管理器 (DEM) 帐户是可注册最多 1,000 台设备的特殊用户帐户。 将现有用户添加到要为其提供专用 DEM 选项的 DEM 帐户。 每台已注册设备均使用单一许可证。 我们建议将通过此帐户注册的设备用作共享设备，而不是个人 ("BYOD") 设备。  
 
 用户必须在 [Azure 门户](https://portal.azure.com)中存在才能添加为设备注册管理员。 为获得最佳安全性，DEM 用户也不应是 Intune 管理员。
 
@@ -54,7 +54,7 @@ DEM 用户可以：
   - 公司门户应用或网站中仅显示本地设备。
   - 用户无法通过用户许可证使用 Apple Volume Purchase Program (VPP) 应用，因为每个用户都需具有 Apple ID 才可管理应用。
   - （仅限 iOS）如果使用 DEM 注册 iOS 设备，则无法使用 Apple Configurator、Apple 设备注册计划 (DEP) 或 Apple School Manager (ASM) 注册设备。
-  - （仅限 Android）使用单个 DEM 帐户注册 Android 工作配置文件设备时，可注册的设备数量有限。 每个 DEM 帐户最多可注册十台 Android 工作配置文件设备。 旧版 Android 注册不受此限制。
+  - （仅限 Android）使用单个 DEM 帐户注册 Android 工作配置文件设备时，可注册的设备数量有限。 每个 DEM 帐户最多可注册 10 台 Android 工作配置文件设备。 旧版 Android 注册不受此限制。
   - 如果设备具有设备许可证，则可以安装 VPP 应用。
   - 无需 Intune 设备许可证，即可使用 DEM。 详细了解[用户和设备许可证](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)。
 
@@ -74,25 +74,24 @@ DEM 用户可以：
 
 ## <a name="permissions-for-dem"></a>DEM 的权限
 
-需要全局或 Intune 服务管理员 Azure AD 角色才能在管理门户中执行与 DEM 注册相关的任务。 尽管在自定义用户角色下列出了可用的 RBAC 权限，但这些角色还是需要查看全部 DEM 用户。 未分配到全局管理员或 Intune 服务管理员角色，但具有设备注册管理器角色读取权限的用户，仅可查看他们创建的 DEM 用户。 将在以后公布对这些功能的 RBAC 角色支持。
+需要全局或 Intune 服务管理员 Azure AD 角色
+- 完成管理门户中与 DEM 注册相关的任务
+- 尽管在自定义用户角色下列出了可用的 RBAC 权限，但还需要查看全部 DEM 用户。
 
-如果用户未分配到全局管理员或 Intune 服务管理员角色，但分配给他们的设备注册管理器角色启用了读取权限，则这些用户将只能查看自己创建的 DEM 用户。
+未分配到全局管理员或 Intune 服务管理员角色，但具有设备注册管理器角色读取权限的用户，仅可查看他们创建的 DEM 用户。 将在以后公布对这些功能的 RBAC 角色支持。
+
 
 ## <a name="remove-a-device-enrollment-manager"></a>删除设备注册管理器
 
-删除设备注册管理器不会影响已注册的设备。 删除设备注册管理器后：
+删除设备注册管理器后：
 
 -   已注册的设备不受影响，仍能继续对其进行完全管理。
--   已删除的设备注册管理器帐户凭据仍然有效。
--   已删除的设备注册管理器仍无法擦除或停用设备。
--   已删除的设备注册管理器仅可注册不超过 Intune 管理员配置的每用户限制数量的设备。
+-   已删除的 DEM 帐户凭据仍然有效。
+-   已删除的 DEM 仍无法擦除或停用设备。
+-   已删除的 DEM 仅可注册不超过 Intune 管理员配置的每用户限制数量的设备。
 
 **删除设备注册管理器**
 
 1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”，然后选择“设备注册管理器”。
 2. 在“设备注册管理员”边栏选项卡上，选择 DEM 用户，然后选择“删除”。
 
-## <a name="view-the-properties-of-a-device-enrollment-manager"></a>查看设备注册管理器的属性
-
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“设备注册”，然后选择“设备注册管理员”。
-2. 在“设备注册管理员”边栏选项卡上，右键单击 DEM 用户，然后选择“属性”。

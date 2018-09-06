@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0d58cb3199405a8a32d169e74e4f0009841f5d09
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046241"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40252570"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中设置 macOS 设备注册
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-可借助 Intune 管理 macOS 设备。 若要启用设备管理，用户必须转到[公司门户网站](http://portal.manage.microsoft.com)，并按照提示注册其设备。 macOS 设备处于托管状态后，可[为 macOS 设备创建自定义设置](custom-settings-macos.md)。 即将推出更多功能。
+Intune 可以管理 macOS 设备以允许用户访问公司电子邮件和应用。
+
+作为 Intune 管理员，可以为公司拥有的 macOS 设备和个人拥有的 macOS 设备（“自带设备办公”或 BYOD）设置注册。 
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -39,27 +41,25 @@ ms.locfileid: "32046241"
 - 在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中分配用户许可证
 - [获取 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 
-## <a name="user-owned-ios-devices-byod"></a>用户拥有的 iOS 设备 (BYOD)
+## <a name="user-owned-macos-devices-byod"></a>用户拥有的 macOS 设备 (BYOD)
 
-可以让用户注册其个人设备用于 Intune 管理，这称为“自带设备办公”或 BYOD。 完成先决条件并分配用户许可证后，用户便可从 App Store 下载 macOS 公司门户应用，然后按照应用中的注册说明进行操作。
-
-## <a name="company-owned-ios-devices"></a>公司拥有的 iOS 设备
-对于为用户购买设备的组织，Intune 支持使用[设备注册管理员](device-enrollment-manager-enroll.md)帐户注册公司拥有的 macOS 设备。
-
-## <a name="set-up-macos-enrollment"></a>设置 macOS 注册
-
-默认情况下，Intune 允许注册 macOS 设备。
-
-若要阻止 macOS 注册设备，请参阅[设置设备类型限制](enrollment-restrictions-set.md)。
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>告诉用户如何注册其设备以访问公司资源
-
-告知最终用户转到[“公司门户”网站](https://portal.manage.microsoft.com)，并按照提示注册自己的设备。 还可以向他们发送指向在线注册步骤的链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
+可以让用户注册其个人设备用于 Intune 管理，这称为“自带设备办公”或 BYOD。 完成先决条件和分配的用户许可证后，用户可以通过以下方式注册其设备：
+- 转到[公司门户网站](https://portal.manage.microsoft.com)或
+- 下载公司门户应用。
+还可以向他们发送指向在线注册步骤的链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
 
 有关其他最终用户任务的信息，请参阅以下文章：
 
 - [有关 Microsoft Intune 最终用户体验的资源](end-user-educate.md)
 - [通过 Intune 使用 macOS 设备](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="company-owned-macos-devices"></a>公司拥有的 macOS 设备
+对于为用户购买设备的组织，Intune 还支持以下公司自有的 macOS 设备注册方法：
+- [Apple 的设备注册计划 (DEP)](device-enrollment-program-enroll-macos.md)：组织可以通过 Apple 的设备注册计划 (DEP) 购买 macOS 设备。 DEP 允许用户通过“无线方式”部署注册配置文件以对设备进行管理。
+- [设备注册管理员 (DEM)](device-enrollment-manager-enroll.md)：可以使用 DEM 帐户最多注册 1,000 台设备。
+
+## <a name="block-macos-enrollment"></a>阻止 macOS 注册
+默认情况下，Intune 允许注册 macOS 设备。 若要阻止 macOS 注册设备，请参阅[设置设备类型限制](enrollment-restrictions-set.md)。
 
 ## <a name="enroll-virtual-macos-machines-for-testing"></a>注册用于测试的虚拟 macOS 计算机
 
@@ -79,3 +79,7 @@ ms.locfileid: "32046241"
 要使用户获得批准，最终用户必须在使用 macOS 公司门户注册后，使用系统首选项手动提供批准。 macOS 公司门户为 macOS 10.13.2 和更高版本的用户提供了执行此操作的说明。
 
 要确定设备是否为用户批准的，请转至 Intune 门户，然后选择“设备” > “所有设备”>“选择设备”>“硬件”。 检查“用户已批准”字段。
+
+## <a name="next-steps"></a>后续步骤
+
+注册 macOS 设备后，可[为 macOS 设备创建自定义设置](custom-settings-macos.md)。

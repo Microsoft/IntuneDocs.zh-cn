@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
+ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744663"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40251703"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中启用具有条件访问的 Windows Defender ATP
 
@@ -44,7 +44,7 @@ Windows Defender ATP 可以解决类似这种情况的安全事件。 Windows De
 
 若要将 ATP 与 Intune 结合使用，请确保已配置以下各项，并可供使用：
 
-- 企业移动性 + 安全性 E5 和 Windows E5（或 Microsoft 365 企业版 E5）的许可租户
+- 企业移动性 + 安全性 E3 和 Windows E5（或 Microsoft 365 企业版 E5）的许可租户
 - Microsoft Intune 环境，包含同样加入了 Azure AD 的 [Intune 托管的](windows-enroll.md) Windows 10 设备
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 和对 Windows Defender 安全中心（ATP 门户）的访问权限
 

@@ -14,18 +14,18 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753886"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40252735"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
 可指定哪些托管应用可在 Intune 托管的 iOS 设备上使用虚拟专用网络 (VPN)。 在 Intune 中创建每应用 VPN 时，最终用户访问公司文档时会自动通过 VPN 进行连接。
 
-每个应用 VPN 当前对以下提供程序可用：
+每应用 VPN 当前对以下提供程序可用：
 
  - 检查点远程访问 VPN
  - Cisco AnyConnect
@@ -109,7 +109,7 @@ ms.locfileid: "34753886"
 
     ![创建 SCEP 证书配置文件](./media/vpn-per-app-create-scep-cert.png)
 
-## <a name="create-a-per-app-vpn-profile"></a>创建每应用 VPN 配置文件
+## <a name="create-a-per-app-vpn-profile"></a>创建每个应用 VPN 配置文件
 
 VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息以及每应用 VPN 标志，用于启用供 iOS 应用程序使用的每应用 VPN 功能。
 
@@ -136,7 +136,7 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 6. 单击" **确定**"。
 7. 单击“创建”。
 
-    ![创建每应用 VPN 配置文件](./media/vpn-per-app-create-vpn-profile.png)
+    ![创建每个应用 VPN 配置文件](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>将应用与 VPN 配置文件相关联
@@ -145,21 +145,32 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-2. 选择“移动应用”。
-3. 单击“应用”。
-4. 从应用列表中选择应用。
-5. 单击“分配”。
-6. 单击“添加组”。
-7. 在“添加组”窗格中对“分配类型”选择“必需”。
-6. 选择前面定义的组，然后进行选择，使此应用为必需。
-8. 对“VPN”选择你的 VPN 定义。
+3. 选择“移动应用”。
+4. 单击“应用”。
+5. 从应用列表中选择应用。
+6. 单击“分配”。
+7. 单击“添加组”。
+8. 在“添加组”窗格中对“分配类型”选择“必需”。
+9. 选择前面定义的组，然后进行选择，使此应用为必需。
+10. 对“VPN”选择你的 VPN 定义。
  
     > [!NOTE]  
     > 有时 VPN 定义会占用长达一分钟的时间来检索值。 单击“保存”之前等待 3-5 分钟。
 
-9. 单击“确定”，然后单击“保存”。
+11. 单击“确定”，然后单击“保存”。
 
     ![将应用与 VPN 相关联](./media/vpn-per-app-app-to-vpn.png)
+
+当存在以下条件时，在下一个设备签入期间，将删除应用和配置文件之间的关联：
+- 通过所需的安装意向来定向应用。
+- 配置文件和应用都定向到同一组。
+- 从应用分配中删除每个应用 VPN 配置。
+
+当存在以下条件时，应用和配置文件之间的关联仍将存在，直到最终用户从公司门户请求重新安装：
+- 通过可用的安装意向来定向应用。
+- 配置文件和应用都定向到同一组。
+- 最终用户从公司门户请求安装应用，导致在设备上安装应用和配置文件。
+- 从应用分配中删除每个应用 VPN 配置。
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>验证 iOS 设备上的连接
 
@@ -191,7 +202,7 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 2. 点击“连接”。  
 VPN 成功连接，而没有任何额外提示。
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

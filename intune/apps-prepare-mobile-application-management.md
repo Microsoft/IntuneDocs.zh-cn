@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
-ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
+ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39450784"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251863"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -28,7 +28,7 @@ ms.locfileid: "39450784"
 可以使用 Intune 应用包装工具或 Intune App SDK 来支持应用使用应用保护策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune 应用包装工具
-应用包装工具主要用于内部业务线 (LOB) 应用。 此工具是一个命令行应用程序。它可以在应用周围创建包装器，之后包装器将允许 Intune 应用保护策略管理该应用。
+App Wrapping Tool 主要用于内部业务线 (LOB) 应用。 此工具是一个命令行应用程序。它可以在应用周围创建包装器，之后包装器将允许 Intune 应用保护策略管理该应用。 在保护独立软件供应商 (ISV) 提供的应用时，请务必说明 ISV 是否仍然支持包装的应用。
 
 使用此工具不需要源代码，但需要签名凭据。 有关签名凭据的详细信息，请参阅 [Intune 博客](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。 有关应用包装工具文档的信息，请参阅 [Android 应用包装工具](app-wrapper-prepare-android.md) 和 [iOS 应用包装工具](app-wrapper-prepare-ios.md)。
 
@@ -48,7 +48,7 @@ ms.locfileid: "39450784"
 
 |**应用包装工具** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
+|**iOS** |是|是|
 |**Outlook Web Access (OWA)**|不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK

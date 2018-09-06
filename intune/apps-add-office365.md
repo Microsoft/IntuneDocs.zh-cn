@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321469"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251891"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
@@ -29,8 +29,8 @@ ms.locfileid: "39321469"
 
 ## <a name="before-you-start"></a>开始之前
 
->[!IMPORTANT]
->仅当设备上未安装其他版本的 Microsoft Office 时，才支持这种安装 Office 的方法。
+> [!IMPORTANT]
+> 如果最终用户设备上有 .msi Office 应用，则必须使用“删除 MSI”功能来安全地卸载这些应用。 否则，Intune 提供的 Office 365 应用将无法安装。
 
 - 部署这些应用的设备必须运行 Windows 10 创意者更新或更高版本。
 - Intune 仅支持添加来自 Office 365 套件的 Office 应用。
@@ -91,6 +91,7 @@ ms.locfileid: "39321469"
         - **每月（定向）**
         - **半年**
         - **半年（定向）**
+    - 删除最终用户设备中其他版本的 Office (MSI)：此功能允许用户从最终用户计算机中删除所有预先存在的 Office (MSI)。 这不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用。
     - 自动接受应用最终用户许可协议：如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
     - 使用共享计算机激活：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 [Office 365 的共享计算机激活概述](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - 语言：Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。

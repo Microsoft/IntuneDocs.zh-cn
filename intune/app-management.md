@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906101"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255365"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -38,23 +38,22 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
 
 ## <a name="app-management-capabilities-by-platform"></a>按平台分类的应用管理功能
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|向设备和用户添加和分配应用|是|是|是|是|
-|将应用分配到未注册 Intune 的设备|是|是|否|否|
-|使用应用配置策略来控制应用的启动行为|否|是|否|否|
-|使用移动应用预配策略续订过期应用|否|是|否|否|
-|使用应用保护策略来保护应用中的公司数据|是|是|否|否<sup>1</sup>|
-|仅从已安装应用中删除公司数据（应用选择性擦除）|是|是|是|是|
-|监视应用分配|是|是|是|是|
-|分配和跟踪从应用商店批量购买的应用|否|否|否|是|
-|强制在设备上安装的应用（必需）<sup>2</sup>|是|是|是|是|
-|从公司门户的设备上进行可选安装（可用安装）|是|是|是|是|
-|安装 Web 版应用快捷方式（Web 链接）|是|是|是|是|
-|内部（业务线）应用|是|是|否|是|
-|来自应用商店的应用|是|是|是|是|
-|更新应用|是|是|是|是|
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| 向设备和用户添加和分配应用 | 是 | 是 | 是 | 是 | 是 |
+| 将应用分配到未注册 Intune 的设备 | 是 | 是 | 否 | 否 | 否 |
+| 使用应用配置策略来控制应用的启动行为 | 否 | 是 | 否 | 否 | 否 |
+| 使用移动应用预配策略续订过期应用 | 否 | 是 | 否 | 否 | 否 |
+| 使用应用保护策略来保护应用中的公司数据 | 是 | 是 | 否 | 否1 | 否 |
+| 仅从已安装应用中删除公司数据（应用选择性擦除） | 是 | 是 | 否 | 是 | 是 |
+| 监视应用分配 | 是 | 是 | 是 | 是 | 是 |
+| 分配和跟踪从应用商店批量购买的应用 | 否 | 否 | 否 | 是 | 否 |
+| 强制在设备上安装的应用（必需）2 | 是 | 是 | 是 | 是 | 是 |
+| 从公司门户的设备上进行可选安装（可用安装） | 是 | 是 | 是 | 是 | 是 |
+| 安装 Web 版应用快捷方式（Web 链接） | 是 | 是 | 是 | 是 | 是 |
+| 内部（业务线）应用 | 是 | 是 | 是 | 是 | 否 |
+| 来自应用商店的应用 | 是 | 是 | 否 | 是 | 是 |
+| 更新应用 | 是 | 是 | 否 | 是 | 是 |
 
 <sup>1</sup>请考虑使用 [Windows 信息保护](windows-information-protection-configure.md)来保护运行 Windows 10 的设备上的应用。
 
@@ -95,8 +94,8 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
 - 应用许可证：查看、分配和监视从应用商店批量购买的应用。 有关详情，请参阅：
     - [iOS 批量采购计划 (VPP) 应用](vpp-apps-ios.md)。
     - [适用于企业的 Microsoft Store 批量采购的应用](windows-store-for-business.md)。
-- 发现的应用：查看由 Intune 分配，并安装在设备上的所有应用。
-- 应用安装状态：查看你创建的应用分配的状态。
+- 发现的应用：查看由 Intune 分配，并安装在设备上的所有应用。 有关详细信息，请参阅[使用 Microsoft Intune 监视应用信息和分配](apps-monitor.md#device-and-user-status-graphs)。
+- 应用安装状态：查看你创建的应用分配的状态。 有关详细信息，请参阅[使用 Microsoft Intune 监视应用信息和分配](apps-monitor.md#device-and-user-status-graphs)。
 - 应用保护状态：查看所选用户的应用保护策略的状态。
 - 审核日志：查看所有 IT 管理员的 Intune 应用相关活动。
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,17 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c795acb5ca6590b165b89c3a974038069b1c56ef
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a86b53e34cc4fa24ec683657a646f8545396166e
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321503"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910830"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+> [!IMPORTANT]
+> 我们即将对本文介绍的 S/MIME 功能进行一些改进。 因此，Intune 暂不提供 S/MIME 功能。 我们将在这项功能发布后删除此说明。
 
 证书用于进行身份验证并保证用户安全访问公司资源（例如 VPN 或 WiFi 网络）。 本文介绍如何导出 PKCS 证书，然后将证书添加到 Intune 配置文件中。
 

@@ -15,12 +15,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a22aafdca8c049367d4c88d27a07a7c1825a01e3
-ms.sourcegitcommit: e6e93419f46e8647d4661eeca09eb1e2e460ad2b
+ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966912"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910635"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
 
@@ -53,10 +53,10 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 
 |要求|更多信息|
 |---------------|--------------------|
-|操作系统 | 运行 Windows 7 SP1 或更高版本的 Windows 设备。 </br></br>**不支持家庭版各版本。**|
+|操作系统 | 运行 Windows 7 SP1 和 Windows 8.1 或更高版本的 Windows 设备。 </br></br>**不支持家庭版各版本。**|
 |管理权限|安装客户端软件的帐户必须具有该设备的本地管理员权限。|
 |Windows Installer 3.1|PC 至少必须安装 Windows Installer 3.1。<br /><br />查看 PC 上 Windows Installer 的版本：<br /><br />  在电脑上，右键单击 **%windir%\System32\msiexec.exe**，然后单击“属性”。<br /><br />你可以从 Microsoft Developer Network 网站上的 [Windows Installer Redistributables（Windows Installer 可再分发文件）](http://go.microsoft.com/fwlink/?LinkID=234258) 中下载最新版本的 Windows Installer。|
-|删除不兼容的客户端软件|安装 Intune 客户端软件之前，需从该电脑卸载任何 Configuration Manager、Operations Manager、Operations Management Suite 和 Service Manager 客户端软件。|
+|删除不兼容的客户端软件|安装 Intune 客户端软件之前，需从该电脑卸载任何 Configuration Manager、Operations Manager 和 Service Manager 客户端软件。|
 
 ## <a name="deploying-the-intune-software-client"></a>部署 Intune 软件客户端
 可以以 Intune 管理员身份通过各种方式向用户提供 Intune 软件客户端。 请参阅[在 Windows 电脑上安装 Intune 软件客户端](install-the-windows-pc-client-with-microsoft-intune.md)，获取相关指南。

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254529"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251663"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -172,19 +172,14 @@ ms.locfileid: "39254529"
 
 3. 选择“同意”接受 EULA，这会将包装载到计算机。
 
-4.  打开 **IntuneMAMPackager** 文件夹，并将其内容保存到你的 macOS 计算机。 你现已准备好运行应用包装工具。
-
-> [!NOTE]
-> Intune MAM 包生成工具可能单独装载到 macOS 计算机上并可能导致运行包装命令时出现“找不到文件”的错误。 因此，移动 IntuneMAMPackager 文件夹的内容将使包的路径能在打包过程中被找到。
-
 ## <a name="run-the-app-wrapping-tool"></a>运行应用包装工具
 
 ### <a name="use-terminal"></a>使用终端
 
-打开 macOS 终端程序并导航到保存应用包装工具文件的文件夹。 可执行工具名为 IntuneMAMPackager，位于 IntuneMAMPackager/Contents/MacOS。 按如下所示运行命令：
+打开 macOS 终端并运行以下命令：
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -405,6 +400,29 @@ ms.locfileid: "39254529"
 -   包含文件上传对话框的 iOS 应用可以允许用户规避应用于应用的剪切、复制和粘贴限制。 例如，用户可能使用文件上载对话框来上载应用数据的屏幕截图。
 
 -   在你的设备上从包装的应用中监视文档文件夹时，可能会看到一个名为 .msftintuneapplauncher 的文件夹。 如果更改或删除了该文件，则可能影响受限制应用的正确运行。
+
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>具有 Citrix MDX mVPN 的 Intune App Wrapping Tool for iOS
+此功能是与适用于 iOS 的 Citrix MDX 应用包装器的集成。 对于常规的 Intune App Wrapping Tools，该集成只是一个附加的可选命令行标记 `-citrix`。
+
+### <a name="requirements"></a>要求
+
+要使用 `-citrix` 标记，还需要在同一台 macOS 计算机上安装[适用于 iOS 的 Citrix MDX 应用包装器](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)。 下载位于 [Citrix XenMobile 下载](https://www.citrix.com/downloads/xenmobile/)，并且仅供 Citrix 客户在登录后使用。 确保将其安装在默认位置：`/Applications/Citrix/MDXToolkit`。 
+
+> [!NOTE] 
+> 仅对 iOS 10+ 设备支持 Intune 与 Citrix 集成。
+
+### <a name="use-the--citrix-flag"></a>使用 `-citrix` 标记
+只需运行常规的应用包装命令并附加 `-citrix` 标记。 `-citrix` 标记当前不带任何参数。
+
+**使用格式**：
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**示例命令**：
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>获取已包装应用的日志
 若要在疑难解答过程中获取已包装应用的日志，请按照以下步骤操作。

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822715"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255231"
 ---
 # <a name="manage-software-updates-in-intune"></a>在 Intune 中管理软件更新
 
@@ -115,11 +115,10 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 3. 完成后，选取“**选择**”以完成分配。
 
 ## <a name="update-compliance-reporting"></a>更新一致性报告
-可以在 Intune 中查看更新符合性，或在 Operations Management Suite (OMS) 中使用名为“更新符合性”的免费解决方案。
+可以在 Intune 中查看更新符合性，或使用名为“更新符合性”的免费解决方案。
 
 ### <a name="review-update-compliance-in-intune"></a>在 Intune 中查看更新符合性 
-<!-- 1352223 -->
-通过策略报告，查看已配置的 Windows 10 更新通道的部署状态。
+<!-- 1352223 --> 通过策略报告，查看已配置的 Windows 10 更新通道的部署状态。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
@@ -137,7 +136,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
       - **用户状态**
 
 ### <a name="review-update-compliance-using-oms"></a>使用 OMS 查看更新符合性
-你可以通过在 Operations Management Suite (OMS) 中使用名为“更新一致性”的免费解决方案来监视 Windows 10 更新推出。 有关详细信息，请参阅[使用更新一致性监视 Windows 更新](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)。 使用此解决方案时，可以将商业 ID 部署到要报告更新一致性的任何 Intune 托管的 Windows 10 设备上。
+可以使用名为“更新符合性”的免费解决方案来监视 Windows 10 更新推出。 有关详细信息，请参阅[使用更新一致性监视 Windows 更新](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)。 使用此解决方案时，可以将商业 ID 部署到要报告更新一致性的任何 Intune 托管的 Windows 10 设备上。
 
 在 Intune 控制台中，可以使用自定义策略的 OMA-URI 设置来配置商业 ID。 有关详细信息，请参阅 [Microsoft Intune 中适用于 Windows 10 设备的 Intune 策略设置](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)。   
 

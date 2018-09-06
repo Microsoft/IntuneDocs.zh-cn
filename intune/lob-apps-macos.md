@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993711"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255490"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 macOS 业务线 (LOB) 应用添加到 Microsoft Intune
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993711"
 
 本文中提供的信息可帮助你将 macOS 业务线应用添加到 Microsoft Intune。 必须先下载一个外部工具来预处理 .pkg 文件，然后才能将业务线文件上载到 Microsoft Intune。 .pkg 文件的预处理必须在 macOS 设备上进行。
 
->[!NOTE]
->尽管 macOS 设备用户可删除部分内置 macOS 应用（如“股市”和“地图”），但无法使用 Intune 重新部署这些应用。 如果最终用户删除这些应用，则必须前往 App Store，并手动重新安装它们。
->
->仅 .pkg 文件可用于将 macOS LOB 应用上传到 Microsoft Intune。 不支持转换其他格式（例如从 .dmg 转换到 .pkg）。
+> [!NOTE]
+> 尽管 macOS 设备用户可删除部分内置 macOS 应用（如“股市”和“地图”），但无法使用 Intune 重新部署这些应用。 如果最终用户删除这些应用，则必须前往 App Store，并手动重新安装它们。
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>第 1 步 - 预处理软件安装程序文件
+## <a name="before-your-start"></a>准备工作
 
-使用 Intune App Wrapping Tool for Mac，可以让 Microsoft Intune 管理 Mac 应用。
+必须先下载一个外部工具来预处理 .pkg 文件，然后才能将业务线文件上载到 Microsoft Intune。 .pkg 文件的预处理必须在 macOS 设备上进行。 使用 Intune App Wrapping Tool for Mac，可以让 Microsoft Intune 管理 Mac 应用。
+
+> [!IMPORTANT]
+> 仅 .pkg 文件可用于将 macOS LOB 应用上传到 Microsoft Intune。 不支持转换其他格式（例如从 .dmg 转换到 .pkg）。
 
 1. 下载并运行 [Intune App Wrapping Tool for Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac)。
 
@@ -55,7 +56,7 @@ ms.locfileid: "38993711"
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     该命令将为创建的 .intunemac 文件提取检测到的参数和版本。
 
-## <a name="step-2---specify-the-software-setup-file"></a>第 2 步 - 指定软件安装程序文件
+## <a name="step-1---specify-the-software-setup-file"></a>步骤 1 - 指定软件安装程序文件
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
@@ -64,14 +65,14 @@ ms.locfileid: "38993711"
 5. 在应用列表的上方，选择“添加”。
 6. 在“添加应用”窗格中，选择“业务线应用”。
 
-## <a name="step-3---configure-the-app-package-file"></a>第 3 步 - 配置应用包文件
+## <a name="step-2---configure-the-app-package-file"></a>步骤 2 - 配置应用包文件
 
 1. 在“添加应用”窗格中，选择“应用包文件”。
 2. 在“应用包文件”窗格中，选择“浏览”按钮，然后选择扩展名为 .intunemac 的 macOS 安装文件。
 3. 完成后，请选择“确定”。
 
 
-## <a name="step-4---configure-app-information"></a>第 4 步 - 配置应用信息
+## <a name="step-3---configure-app-information"></a>步骤 3 - 配置应用信息
 
 1. 在“添加应用”窗格中，选择“应用信息”。
 2. 在“应用信息”窗格中，添加应用的详细信息。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：
@@ -89,7 +90,7 @@ ms.locfileid: "38993711"
     - 徽标 - 上传与应用关联的图标。 用户浏览公司门户时，此图标与应用一同显示。
 3. 完成后，请选择“确定”。
 
-## <a name="step-5---finish-up"></a>第 5 步 - 完成
+## <a name="step-4---finish-up"></a>步骤 4 - 完成
 
 1. 在“添加应用”窗格上，确认应用的详细信息是正确的。
 2. 选择“添加”将应用上传到 Intune。
@@ -99,7 +100,7 @@ ms.locfileid: "38993711"
 > [!NOTE]
 > 如果 .pkg 文件包含多个应用或应用安装程序，则 Microsoft Intune 将仅在设备上检测到所有安装的应用后报告应用已成功安装。
 
-## <a name="step-6---update-a-line-of-business-app"></a>第 6 步 - 更新业务线应用
+## <a name="step-5---update-a-line-of-business-app"></a>步骤 5 - 更新业务线应用
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

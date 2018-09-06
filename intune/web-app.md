@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905234"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251593"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>将 Web 应用添加到 Microsoft Intune
 
@@ -45,7 +45,11 @@ Intune 支持包括 Web 应用在内的各种应用类型。 Web 应用是客户
 6. 在“添加应用”窗格的“应用类型”下拉列表中选择“Web 链接”类型。
 7. 选择“配置”。
 8. 在“应用信息”窗格中，添加以下信息：
-    - **名称**：输入要在公司门户中显示的应用名称。
+    - 名称 - 输入要在公司门户中显示的应用名称。 
+    
+        > [!NOTE]
+        > 如果在部署并安装应用后通过 Intune Azure 门户更改应用的名称，则将无法再使用命令来定位应用。
+    
     - 描述：为应用输入描述。 在公司门户中向用户显示该描述。
     - **发布者**：输入应用的发布者名称。
     - **应用 URL**：输入托管要分配的应用的网站 URL。

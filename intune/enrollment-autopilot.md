@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: b3c374e4ce6baeab8cc6fde3f6c45c63c48e34dd
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 4c268f9061ae624c1f85e386e5633b14334860b7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903069"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313132"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows AutoPilot 注册 Windows 设备
 Windows AutoPilot 简化了设备预配。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 AutoPilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 AutoPilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)（Windows AutoPilot 概述）。
@@ -72,11 +72,13 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
     - “自部署(预览)”：（Windows 10 Insider Preview 内部版本 17672 或更高版本）包含此配置文件的设备不与设备注册用户相关联。 无需用户凭据，即可预配设备。
 4. 在“加入 Azure AD 时的身份”框中，选择“Azure AD 已加入”。
 5. 选择“全新体验(OOBE)”，配置下列选项，再选择“保存”：
-    - **语言(区域)**\*：选择要对设备使用的语言。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
-    - **自动配置键盘**\*：如果选择了“语言(区域)”，请跳过键盘选择页。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
+    - “语言(区域)”*****：选择要对设备使用的语言。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
+    - **自动配置键盘**：如果选择了“语言(区域)”，请选择“是”以跳过键盘选择页。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
     - “最终用户许可协议(EULA)”：（Windows 10 版本 1709 或更高版本）选择是否向用户显示 EULA。
     - “隐私设置”：选择是否向用户显示隐私设置。
-    - “用户帐户类型”：选择用户帐户类型是“管理员”，还是“标准”用户。 
+    - **隐藏更改帐户选项（仅限 Windows 预览体验成员）**：选择“隐藏”以防止更改帐户选项显示在公司登录和域错误页上。 要执行此操作，需[在 Azure Active Directory 中配置公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
+    - “用户帐户类型”：选择用户帐户类型是“管理员”，还是“标准”用户。
+    - **应用计算机名称模板（仅限 Windows 预览体验成员）**：选择“是”以创建模板，在预配期间命名设备时使用。 名称长度必须在 15 个字符或以下，可以包含字母、数字和连字符。 名称不能全为数字。 使用 [%SERIAL% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)添加特定于硬件的序列号。 或者使用 [ 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)，添加随机数字串，其中 x 等于要添加的位数。 
 
 6. 选择“创建”，创建配置文件。 AutoPilot 部署配置文件现在即可分配给设备。
 
@@ -105,6 +107,22 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
 可查看警报，了解 AutoPilot 计划中有多少设备尚未分配有 AutoPilot 部署配置文件。 使用警报中的信息可创建配置文件，并将其分配到未分配的设备。 单击警报时，会看到 Windows AutoPilot 设备的完整列表，以及与之相关的详细信息。
 
 若要查看未分配设备的警报，请在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册” > “概述” > “未分配设备”。  
+
+
+## <a name="assign-a-user-to-a-specific-autopilot-device"></a>将用户分配到特定 Autopilot 设备
+
+可以将用户分配到特定 Autopilot 设备 进行此分配，进行 Windows 设置时将在[公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)登录页预填充来自 Azure Active Directory 的用户。 它还允许设置自定义问候语名称。 这不会预填充或修改 Windows 登录名。 只能以这种方式分配拥有许可证的 Intune 用户。
+
+先决条件：配置了 Azure Active Directory 公司门户。
+
+1. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “设备”>“选择设备”>“分配用户”。
+    ![分配用户的屏幕截图](media/enrollment-autopilot/assign-user.png)
+2. 选择已获得使用 Intune 的许可证的 Azure 用户，并选择“选择”。
+    ![选择用户的屏幕截图](media/enrollment-autopilot/select-user.png)
+3. 在“用户友好名称”框中，键入友好名称或接受默认值。 用户在 Windows 设置期间登录时将显示此友好名称。
+    ![友好名称的屏幕截图](media/enrollment-autopilot/friendly-name.png)
+4. 选择“确定”。
+
 
 ## <a name="delete-autopilot-devices"></a>删除 AutoPilot 设备
 

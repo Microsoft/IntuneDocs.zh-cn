@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c7f3229c2cb4c5f3f57d84d348053f25eeeb9c9
-ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
+ms.openlocfilehash: c64c267623db93128177d56ced29586d3a877b19
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37066209"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823046"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用
 
@@ -56,6 +56,7 @@ ms.locfileid: "37066209"
   - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
+  - [Better Mobile](#configure-better-mobile-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>配置 Lookout for Work 应用
 
@@ -129,6 +130,16 @@ ms.locfileid: "37066209"
 
     - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在“配置应用信息”部分下的步骤 12 中使用此 [Pradeo 应用商店 URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8)。
 
+### <a name="configure-better-mobile-apps"></a>配置 Better Mobile 应用
+
+ - **Outlook Web Access (OWA)**
+
+    - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在第 7 步中使用此 [Active Shield 应用商店 URL](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise)。
+
+ - **iOS**
+
+    - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在“配置应用信息”部分下的步骤 12 中使用此[应用商店 URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4)。
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>使用 iOS 应用配置策略配置 MTD 应用
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 应用配置策略
@@ -177,6 +188,22 @@ ms.locfileid: "37066209"
 <string>{{serialnumber}}</string>
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
+</dict>
+```
+
+### <a name="better-mobile-app-configuration-policy"></a>Better Mobile 应用配置策略
+
+- 请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，添加 Better Mobile iOS 应用配置策略。
+    - 在“步骤 8”中，使用选项“输入 XML 数据”，复制下列内容并粘贴到配置策略正文。 使用相应的控制台 URL 替换 `https://client.bmobi.net` URL。
+
+```
+<dict>
+<key>better_server_url</key>
+<string>https://client.bmobi.net</string>
+<key>better_udid</key>
+<string>{{aaddeviceid}}</string>
+<key>better_user</key>
+<string>{{userprincipalname}}</string>
 </dict>
 ```
 
