@@ -747,26 +747,30 @@ items:
     - name: 数据库仓库数据模型
       href: reports-ref-data-model.md
       items:
-      - name: 使用 Intune 数据仓库中的生存期表示形式
-        href: reports-ref-user-timeline.md
-      - name: 应用程序实体引用
-        href: reports-ref-application.md
-      - name: 当前用户实体引用
-        href: reports-ref-current-user.md
-      - name: 数据实体引用
-        href: reports-ref-date.md
-      - name: 设备实体引用
-        href: reports-ref-devices.md
-      - name: Intune 管理扩展实体引用
-        href: reports-ref-intunemanagementextension.md
-      - name: 移动应用管理 (MAM) 实体引用
-        href: reports-ref-mobile-app-management.md
-      - name: 策略实体引用
-        href: reports-ref-policy.md
-      - name: 用户设备关联实体引用
-        href: reports-ref-user-device.md
-      - name: 用户实体引用
-        href: reports-ref-user.md
+      - name: 数据仓库集合
+        href: intune-data-warehouse-collections.md
+      - name: 数据仓库集合（Beta 版本）
+        items:
+        - name: 使用 Intune 数据仓库中的生存期表示形式
+          href: reports-ref-user-timeline.md
+        - name: 应用程序实体引用
+          href: reports-ref-application.md
+        - name: 当前用户实体引用
+          href: reports-ref-current-user.md
+        - name: 数据实体引用
+          href: reports-ref-date.md
+        - name: 设备实体引用
+          href: reports-ref-devices.md
+        - name: Intune 管理扩展实体引用
+          href: reports-ref-intunemanagementextension.md
+        - name: 移动应用管理 (MAM) 实体引用
+          href: reports-ref-mobile-app-management.md
+        - name: 策略实体引用
+          href: reports-ref-policy.md
+        - name: 用户设备关联实体引用
+          href: reports-ref-user-device.md
+        - name: 用户实体引用
+          href: reports-ref-user.md
     - name: 移动 Intune 数据仓库帐户数据
       href: data-warehouse-account-move.md
   - name: 使用 Azure AD 访问 Microsoft Graph Intune API
@@ -802,9 +806,9 @@ items:
       href: troubleshoot-exchange-connector.md
   - name: 词汇表
     href: intune-glossary.md
-ms.openlocfilehash: a3e314760dbbfec82ce27b3bec12b21ab7ca5952
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313575"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43821110"
