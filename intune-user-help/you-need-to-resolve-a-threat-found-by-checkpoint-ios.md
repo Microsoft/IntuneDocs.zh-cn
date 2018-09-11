@@ -1,11 +1,11 @@
 ---
 title: 解决 SandBlast Mobile Protect 在 iOS 上发现的威胁 | Microsoft Docs
-description: 了解如何解决 Mobile Protect 在 iOS 上发现的威胁。
+description: 了解如何解决 SandBlast Mobile Protect 在 iOS 上发现的威胁。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/03/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a34e73d3209453f07523d1c841e8ba578c85aa3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755961"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148025"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>用户需解除 SandBlast Mobile Protect 发现的威胁
+# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>解决 SandBlast Mobile Protect 发现的威胁
 
-SandBlast Mobile Protect 在设备上发现潜在威胁，必须解决该问题才能重新获取对公司或学校电子邮件、应用和文件的访问权限。 显示的消息取决于 SandBlast Mobile Protect 在设备上发现的问题。
+SandBlast Mobile Protect 是一项移动威胁防御服务，可识别和评估 iOS 设备上的潜在威胁。 然后，它将报告威胁，以便你可在公司门户应用中查看。 威胁在应用中显示为未解决的非符合性问题。 只要存在这些威胁，就可能无法：   
 
-若要解决该问题，请打开 SandBlast Mobile Protect 应用，然后按照应用中所示的说明进行操作。
+* 连接公司电子邮件
+* 连接公司 Wi-Fi
+* 连接 SharePoint Online
+* 使用 OneDrive 同步公司文件
+* 访问公司应用
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>如果已注册设备在访问电子邮件或文件时受阻，你可能会收到什么提示
+本文介绍如何识别 Sandblast Mobile Protect 威胁警报以及如何解决这些警报。  
 
-如果已注册设备上存在病毒或其他安全威胁，用户尝试访问公司电子邮件或文件时，SandBlast Mobile Protect 会发出警告消息。
+## <a name="troubleshoot-virus-or-security-threat"></a>排查病毒或安全威胁  
+如果检测到病毒或安全威胁，SandBlast Mobile Protect 应用将根据组织的访问策略实施操作。 访问策略可能阻止你访问工作网络、应用和电子邮件。  
 
-点击“设备管理门户”链接转到[公司门户网站](http://portal.manage.microsoft.com)，可按照其中有关修复此问题的说明进行操作。
+SandBlast Mobile Protect 将提示你采取操作以重新获得失去的访问权限。 选择威胁，并按照应用中的说明解决威胁。  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>被 SandBlast Mobile Protect 视为威胁的应用示例
+## <a name="troubleshoot-an-app-threat"></a>排查应用威胁  
 
-如果安装了被 SandBlast Mobile Protect 视为威胁的应用，则 SandBlast Mobile Protect 会提醒用户设备上安装了不可信的应用。
+如果安装的应用对设备构成威胁，你将在 SandBlast Mobile Protect 应用内收到通知。 如果设备上仍存在此受影响的应用，将无法访问公司资源。  
 
-此时可卸载该应用，随后即可立即重新访问公司电子邮件和数据。 如果不卸载该应用，则无法访问电子邮件和数据，直到卸载该应用。
+要解决此问题，请从 SandBlast Mobile Protect 中的威胁列表中选择此应用。 然后按照说明删除并卸载该应用。  
 
-仍需帮助？ 请与 IT 管理员联系。有关联系信息，请查看[公司门户网站](http://portal.manage.microsoft.com)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)

@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bea51227798e239bb74154e4d97e3efd6d55f807
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232261"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313592"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>在 Intune 中审核、导出或删除个人数据
 
@@ -64,8 +64,8 @@ Intune 管理员可使用审核日志跟踪与个人数据有关的活动。 管
 ### <a name="user-self-removal-from-intune-management"></a>用户从 Intune 管理中自行删除
 用户可从 Intune 管理中删除其 [Android、Apple 或 Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) 个人设备，无需管理员的协助。   
 
-### <a name="remove-company-data"></a>删除公司数据
-删除公司数据将删除 Intune 预配的数据，例如公司应用程序、Intune 当前管理的应用的相关数据、策略设置和通过 Intune 预配的电子邮件配置文件。 此操作会将用户个人数据保留在设备上。
+### <a name="retire"></a>停用
+“停用”操作将删除 Intune 预配的数据，例如公司应用程序、Intune 当前管理的应用的相关数据、策略设置和通过 Intune 预配的电子邮件配置文件。 此操作会将用户个人数据保留在设备上。
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>从 Microsoft Intune 中删除租户
 

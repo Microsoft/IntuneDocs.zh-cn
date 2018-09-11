@@ -1,11 +1,11 @@
 ---
 title: 解决 Lookout for Work 在 Android 上发现的威胁 | Microsoft Docs
-description: 了解如何解决 Lookout for Work 在 Android 上发现的威胁。
+description: 了解如何解决 Lookout for Work 应用在 Android 设备上发现的威胁。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,35 +15,43 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: df7055f031fb7661cc0fa3bf2d00b16fc0a082dc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015466"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148515"
 ---
-# <a name="resolve-a-threat-found-by-lookout-for-work"></a>解决 Lookout for Work 发现的威胁
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>解决 Lookout for Work 发现的威胁  
 
-Lookout for Work 在设备上发现潜在威胁，必须解决该问题才能重新获取对公司或学校电子邮件、应用和文件的访问权限。 你看到的消息可能如下所示：
+Lookout for Work 应用是一项移动威胁防御服务，可识别 Android 设备上的潜在威胁。 这些威胁将被报告到公司门户应用，并在其中显示为未解决的非符合性问题。 只要存在这些威胁，就可能无法：
 
-![Lookout for Work 在设备上找到一个威胁](./media/lookout-threat-found-android.png)
+* 连接公司电子邮件
+* 连接公司 Wi-Fi
+* 连接 SharePoint Online
+* 使用 OneDrive 同步公司文件
+* 访问公司应用
 
-若要解决该问题，请打开 Lookout for Work 应用，然后按照应用中所示的说明进行操作。
+本主题介绍如何识别 Lookout for Work 威胁警报以及如何解决这些警报。 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>如果已注册设备在访问电子邮件或文件时受阻，你可能会收到什么提示
+## <a name="troubleshoot-virus-or-security-threat"></a>排查病毒或安全威胁  
+当 Lookout for Work 应用检测到安全或病毒威胁时，重新获取对公司资源的访问权限。  
 
-如果已注册设备上存在病毒或其他安全威胁，则尝试访问公司电子邮件或文件时可能看到如下消息：
+1. 如果检测到病毒或安全威胁，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)。  
 
-![Lookout for Work 错误消息以及指向公司门户网站的链接](./media/mtd-go-to-device-management-portal-android.png)
+    ![Lookout for Work 错误消息的示例屏幕截图，其中包含指向公司门户网站的链接和蓝色“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)
 
-点击“**设备管理门户**”链接转到[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)，在该网站上你将会看到有关如何修复此问题的说明。
+2. 选择设备。  
+3. 阅读设备下方显示的警告。 它将指示打开 Lookout for Work 以解决病毒或安全威胁。 
 
-## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Lookout for Work 将其视为威胁的应用示例
+    ![公司门户设备页的示例屏幕截图，其中显示 Lookout for Work 警告。](./media/CP-lookout-virus-banner-1808.png)  
 
-若安装了 Lookout for Work 视为威胁的应用，则将看到类似如下的屏幕：
+## <a name="troubleshoot-an-app-threat"></a>排查应用威胁  
 
-![Lookout for Work 病毒警报消息示例](./media/lookout-virus-alert-android.png)
+如果安装 Lookout for Work 识别为威胁的应用，将收到一条消息，如以下屏幕截图所示。  
 
-卸载该应用后，便可以立即重新访问公司电子邮件和数据。 如果忽略卸载该应用的请求，你将无法对电子邮件和数据进行访问，直到卸载该应用。
+![通过 Lookout for Work 应用界面显示 Lookout Virus Alert 消息的示例屏幕截图。 显示三个按钮：“关闭”、“更多信息”和“卸载”。](./media/lookout-virus-alert-android.png)  
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+若要重新获取失去的针对公司电子邮件和数据的访问权限，请卸载存在问题的应用。 只要设备上存在该应用，就无法访问公司资源。    
+
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

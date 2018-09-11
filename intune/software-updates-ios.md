@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268832"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313490"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>在 Intune 中配置 iOS 更新策略
 
@@ -32,7 +32,7 @@ ms.locfileid: "39268832"
 4. 输入策略的名称和描述。
 5. 选择“设置”。 
 
-    输入 iOS 设备不强制安装最新更新时的详细信息。 这些设置会创建受限制的时间范围。 可以配置星期、时区、开始时间和结束时间。
+    输入 iOS 设备不强制安装最新更新时的详细信息。 这些设置会创建受限制的时间范围。 可以配置一周里的一天、时区、开始时间、结束时间，以及是否延迟软件更新的可见性(天)，以便输入用户。 可以选择软件更新的延迟范围（1 到 90 天）。 若要选择退出设置软件更新延迟，请输入 0。 这些更新设置将仅应用于受监管的 iOS 设备。
 
 6. 选择“确定”，保存所做更改。 选择“创建”以创建策略。
 

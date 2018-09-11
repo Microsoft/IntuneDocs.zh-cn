@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,36 +15,41 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: caac4b62c141145ac976d1515e6fdc92da90e962
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753084"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149801"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解决 Symantec Endpoint Protection Mobile 发现的威胁
 
-Symantec Endpoint Protection Mobile 在设备上发现潜在威胁，必须解决该问题才能重新获取对公司或学校电子邮件、应用和文件的访问权限。 你看到的消息可能如下所示：
+Symantec Endpoint Protection (SEP) Mobile 是一项移动威胁防御服务，可识别 Android 设备上的潜在威胁。 这些威胁将被报告到公司门户应用，并显示为未解决的非符合性问题。 如果设备被识别为非符合性设备，则可能无法：
 
-![Skycure 在设备上找到一个威胁](./media/lookout-threat-found-android.png)
+* 连接公司电子邮件
+* 连接公司 Wi-Fi
+* 连接 SharePoint Online
+* 使用 OneDrive 同步公司文件
+* 访问公司应用
 
-若要解决该问题，请打开 Symantec Endpoint Protection Mobile 应用，然后按照应用中所示的说明进行操作。
+本文介绍如何识别 SEP Mobile 威胁警报以及如何解决这些问题。 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>如果已注册设备在访问电子邮件或文件时受阻，你可能会收到什么提示
+## <a name="resolve-virus-or-security-threat"></a>解决病毒或安全威胁  
 
-如果已注册设备上存在病毒或其他安全威胁，则尝试访问公司电子邮件或文件时可能看到如下消息：
+1. 尝试访问公司电子邮件或网站时，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)。
 
-![Skycure 错误消息以及指向公司门户网站的链接](./media/skycure-list-of-potential-issues-android.png)
+    ![Lookout for Work 错误消息示例屏幕截图，其中包含指向公司门户网站的链接和蓝色的“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)  
 
-点击“**设备管理门户**”链接转到[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)，在该网站上你将会看到有关如何修复此问题的说明。
+2. 选择你的设备。  
+3. 读取设备下方显示的警告。 它将指示打开 SEP Mobile 以解决病毒或安全威胁。     
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile 视为威胁的应用示例
+    ![公司门户设备页的示例屏幕截图，其中显示 SEP Mobile 警告。](./media/CP-lookout-virus-banner-1808.png)
 
-如果安装了 Symantec Endpoint Protection Mobile 视为威胁的应用，则会看到类似如下的屏幕：
+## <a name="resolve-an-app-threat"></a>解决应用威胁  
 
-![Skycure 病毒警报消息的示例](./media/skycure-virus-alert-android.png)
+如果安装的应用对设备构成威胁，你将在 SEP Mobile 应用内收到通知。 如果设备上仍存在此受影响的应用，将无法访问公司资源。  
 
-卸载该应用后，便可以立即重新访问公司电子邮件和数据。 如果忽略卸载该应用的请求，你将无法对电子邮件和数据进行访问，直到卸载该应用。
+要解决此问题，请从 SEP Mobile 的威胁列表中选择此应用。 然后按照屏幕上的指示删除并卸载该应用。  
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
 

@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 3596d539319a5a91a1647555a89004683874aa06
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268866"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329455"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>为受管理的 Android 设备添加应用配置策略
 
@@ -33,7 +33,7 @@ ms.locfileid: "39268866"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 选择“移动应用”工作负荷。
+3. 选择“客户端应用”工作负载。
 4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”。
 5. 设置以下详细信息：
     - **名称** - 将在 Azure 门户中显示的配置文件名称。
@@ -88,7 +88,7 @@ ms.locfileid: "39268866"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 选择“移动应用”。
+3. 选择“客户端应用”。
 3. 在“管理”下，选择“应用配置策略”，然后选择“添加”。
 4. 设置以下详细信息：
     - **名称**。 在 Azure 门户中显示的配置文件名称。

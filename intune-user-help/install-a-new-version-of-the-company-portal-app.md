@@ -15,30 +15,32 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3176f09a7565a17230aeb7a9f44b14490264b2bd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016435"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147037"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>如何更新公司门户应用
 
-如果不再支持你的公司门户应用版本，或者可以使用较新版本的公司门户应用，则需要将它更新到较高版本。 使用与你拥有的设备类型相匹配的步骤。
+本文介绍如何在以下情况更新公司门户应用的版本：  
+* 存在可用的更新版本公司门户应用。
+* 不再支持当前的公司门户应用版本。
+
+以下步骤介绍如何在 Android、iOS 和 Windows 设备上更新应用。    
 
 ## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>在 Android 设备上更新 Intune 公司门户应用
 
-当新版本的公司门户可用时，Play Store 将通知你。 公司门户应用本身中不会出现提示。 请按照警报中的指示更新你的设备。
+当新版本的公司门户可用时，Play Store 将通知你。 公司门户应用本身中不会出现提示。 选择警报并按照说明更新设备。  
 
 ## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>在 iOS 设备上更新 Intune 公司门户应用
 
 当有新版本可用时，你会在已安装的应用列表中看到应用的“更新”选项。  
 
-更新公司门户应用：
-
 1. 打开“应用商店”并搜索 **intune**。
 
-2. 找到该应用时，点击应用名称右侧的“**更新**”按钮。
+2. 找到应用后，点击“更新”。
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>在 Windows 设备上更新 Intune 公司门户应用
 
@@ -50,4 +52,4 @@ ms.locfileid: "31016435"
     > 如果无法访问 Microsoft 应用商店，请与公司支持人员联系。
 
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,53 +17,51 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: feba62cac464af75a0f0d249022edb6bd5d031f3
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 2f8a65d05ecffcf87d7a84ab23ad215256286dd0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225368"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150064"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>从公司门户网站远程锁定设备
 
-意外时有发生，有时设备可能会丢失。 如果设备丢失或被盗，你首先担忧的可能是有人访问设备上的信息，不管设备身处何处。
+从公司门户网站远程锁定丢失或被盗设备。 如果设备支持，无论设备在何处，此设置都可锁定设备屏幕。 用户必须输入正确的密码才能解锁设备和再次使用设备。   
 
-[!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
-
-为安全起见，可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中使用“远程锁定”选项将其锁定。 “远程锁定”适用于：
+远程锁定设置适用于：
 
 * Android
 * iOS
 * macOS
 * Windows 10
 * Windows 10 移动版（设备已设置密码）
-* Windows Phone 8.1（设备已设置密码）
+* Windows Phone 8.1（设备已设置密码）  
 
-## <a name="to-use-remote-lock-to-lock-your-device"></a>使用“远程锁定”锁定你的设备
+1. 在[公司门户网站](https://portal.manage.microsoft.com)，选择“菜单”按钮 >“设备”。  
 
-1. 在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上，点击“菜单”按钮，然后选择“我的设备”。
+2. 选择要锁定的设备。  
 
-2. 在“我的设备”页上，选择想要锁定的设备名称。
+    ![“设备”页面的屏幕截图，其中 2 个磁贴用于显示无法识别的、以一般方式命名的设备。 灰色横幅位于设备的正下方，提示用户识别他们正在使用的设备或添加新的设备。](./media/rename-reset-device-step2-1808.png) 
 
-   ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
+3. 选择“远程锁定”。 如果页面顶部未显示锁定选项，请选择“更多(…)” > “远程锁定”。  
 
-3. 设备将在弹出窗口中打开。 点击“远程锁定”按钮。
+   ![公司门户网站上已选设备的设备详细信息页，其顶部具有显示“重命名”、“删除”、“重置设备”、“重置密码”和“远程锁定”的链接列表。 ](./media/rename-reset-device-1808.png) 
 
-   ![公司门户网站上已选设备的所有选项，包括重命名、删除、重置设备、重置密码和远程锁定。 ](./media/iwp-screen-with-all-options.png)
+    ![“更多”图标的放大视图，用红色箭头突出显示。](./media/rename-reset-device-step3-more-1808.png)    
 
-4. 将显示一条通知，告知你将要锁定你的设备。 点击“远程锁定”，公司门户网站将尝试锁定你的设备。
+4. 显示一条消息，警告即将锁定设备。 点击“远程锁定”进行确认。
 
-   选择“远程锁定”后，将出现“远程锁定挂起”消息。  “远程锁定”成功后，状态将更改为“远程锁定成功”。
+确认后，公司门户将尝试锁定设备。 在此期间将显示“远程锁定挂起”消息。 设备锁定后，状态将显示为“远程锁定成功”。  
 
-   该“远程锁定”状态将在以下三个位置中显示：
+该“远程锁定”状态将在以下三个位置中显示：
 
    * 网站的通知区域。
    * 设备的“详细信息”页。
-   * 该页上“我的设备”部分显示设备名称的磁贴。
+   * 该页“设备”部分上显示设备名称的磁贴。  
 
 > [!Note]
-> 如果看到“远程锁定失败”的通知，请等待几分钟，然后再次尝试锁定设备。 开始重试后，状态将变回“远程锁定挂起”。 如果重试不起作用，则需要联系公司支持人员。
+> 如果看到远程锁定失败通知，请等待几分钟。 然后再次尝试锁定设备。 状态将变回“远程锁定挂起”。 如果重试不起作用，请联系公司支持人员获取帮助。
 
-如果使用“远程锁定”后找到了设备并希望对其进行解锁，则只需输入你的密码。
+如果使用“远程锁定”后找到了设备并希望对其进行解锁，则只需输入你的密码。  
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

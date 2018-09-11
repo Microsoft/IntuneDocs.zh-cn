@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ccc1f25d137675ba8e5f984a16324f4b0771dc9c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: a7d7554cad04dcca0d7f56986aef4c4b30193c18
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224981"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347601"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>将 Windows Phone 业务线应用添加到 Microsoft Intune
 
@@ -32,8 +32,8 @@ ms.locfileid: "34224981"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用”。
-4. 在“移动应用”工作负载中，选择“管理” > “应用”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+4. 在“客户端应用”工作负荷中，选择“管理” > “应用”。
 5. 在应用列表上方，选择“添加”。
 6. 在“添加应用”窗格中，选择“业务线应用”。
 

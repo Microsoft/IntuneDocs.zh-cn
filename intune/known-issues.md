@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073829"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347791"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -33,6 +33,13 @@ ms.locfileid: "34073829"
 如果要为 Intune 请求新功能，可以考虑在 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 网站上提交报告。
 
 ## <a name="migration"></a>迁移
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>导出 Azure 经典门户的符合性策略，以在 Intune Azure 门户中重新创建这些策略
+
+将弃用 Azure 经典门户中创建的符合性策略。 可查看和删除任何现有符合性策略，但无法更新它们。 如果需要将任何符合性策略迁移到最新的 Intune Azure 门户，可将策略导出为逗号分隔文件（.csv 文件）。 然后使用文件中的详细信息在 Intune Azure 门户中重新创建这些策略。
+
+> [!IMPORTANT]
+> Azure 经典门户停用时，将无法访问或查看符合性策略。 因此，在 Azure 经典门户停用之前，务必导出策略并在 Azure 门户中重新创建这些策略。
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 旧 PC 客户端功能仅适用于 Silverlight 控制台
 
@@ -52,7 +59,7 @@ ms.locfileid: "34073829"
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>针对某些 VPP 应用的多个应用安装提示
 对于已安装在最终用户设备上的某些 VPP 应用，你可能会看到多个应用安装提示。 如果你将已上传到 Intune Azure 门户的 VPP 令牌的“自动进行应用更新”选项设置为“开”，则会出现此问题。    
 
-若要解决此问题，可禁用 VPP 令牌的“自动进行应用更新”选项。 若要执行此操作，请在 Azure 门户中打开 Microsoft Intune。 从 Intune 中选择“移动应用” > “iOS VPP 令牌”。 接下来，选择已部署受影响应用的 VPP 令牌并选择“编辑” > “自动进行应用更新” > “关” > “保存”。 或者，可停止将受影响的应用部署为 VPP 应用，此操作可停止提示。    
+若要解决此问题，可禁用 VPP 令牌的“自动进行应用更新”选项。 若要执行此操作，请在 Azure 门户中打开 Microsoft Intune。 从 Intune 中选择“客户端应用” > “iOS VPP 令牌”。 接下来，选择已部署受影响应用的 VPP 令牌并选择“编辑” > “自动进行应用更新” > “关” > “保存”。 或者，可停止将受影响的应用部署为 VPP 应用，此操作可停止提示。    
 
 这是当前版本中的一个已知问题。 我们即将推出解决此问题的修补程序。 实现此修补程序得之后，你的用户将不再看到多个应用安装提示。
 

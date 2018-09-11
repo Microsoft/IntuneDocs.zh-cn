@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442638"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313079"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>在 Intune 中添加适用于 iOS 设备的设备符合性策略
 
@@ -106,6 +106,11 @@ Intune iOS 设备符合性策略确定 iOS 设备为实现符合性而必须满�
 - **要求提供密码之前的非活动最大分钟数**：输入用户必须重新输入其密码前的空闲时间。
 - 密码过期(天)：选择密码过期之前的天数，然后必须创建一个新密码。
 - 要防止重用的以前的密码数：输入以前用过的不能使用的密码数。
+
+### <a name="restricted-applications"></a>受限的应用程序 
+可以通过将应用的程序包 ID 添加到策略中来限制应用。 如果某一设备已安装该应用，此设备将被标记为非符合性设备。 
+- **应用名称**：输入一个用户友好名称，帮助识别捆绑 ID。 
+- **应用程序包 ID**：输入应用提供程序分配的唯一捆绑标识符。 若要查找捆绑 ID，请参阅 [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)（如何查找 iOS 应用的捆绑 ID）。  
 
 ## <a name="assign-user-groups"></a>分配用户组
 

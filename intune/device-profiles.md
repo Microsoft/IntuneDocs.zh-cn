@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335820"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313966"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
 
@@ -54,6 +54,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>设备限制
 [设备限制](device-restrictions-configure.md)控制设备上的安全性、硬件、数据共享，以及更多设置。 例如，创建一个可阻止 iOS 设备用户使用设备相机的设备限制配置文件。 
 
@@ -72,6 +73,13 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 此功能支持：
 - Windows 10 及更高版本
+
+## <a name="identity-protection"></a>标识保护
+[标识保护](identity-protection-configure.md)控制 Windows 10 和 Windows 10 移动版设备上的 Windows Hello 企业版体验。 配置这些设置，使 Windows Hello 企业版可供用户和设备使用，以及指定设备 PIN 和手势的要求。  
+
+此功能支持：  
+- Windows 10 及更高版本
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>Kiosk
 

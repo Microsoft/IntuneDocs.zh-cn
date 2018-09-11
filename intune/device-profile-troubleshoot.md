@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026867"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312943"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune 中设备配置文件的常见问题和解决方法
 
@@ -117,7 +117,7 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
         - 允许 Wi-Fi tethering
         - 允许自动连接到免费 Wi-Fi 热点
         - 允许 Wi-Fi 热点报告
-        - 允许恢复出厂设置
+        - 允许擦除
         - 允许蓝牙
         - 允许 NFC
         - 允许 Wi-Fi

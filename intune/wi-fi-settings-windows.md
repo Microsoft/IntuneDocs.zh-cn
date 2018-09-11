@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321604"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329641"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune 中适用于 Windows 10 及更高版本设备的 Wi-Fi 设置
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune 中适用于 Windows 10 及更高版本设备的 Wi-Fi 设置
 
 Wi-Fi 设置在适用于运行 Windows 10 及更高版本的设备的配置文件中使用。 您的选择包括：
 
@@ -54,10 +55,10 @@ Wi-Fi 设置在适用于运行 Windows 10 及更高版本的设备的配置文�
 
 ## <a name="settings-for-enterprise-profiles-only"></a>仅适用于企业配置文件的设置
 
-- 单一登录 (SSO)：允许配置单一登录 (SSO)，其中凭据共享，以用于计算机和 Wi-Fi 网络登录。 你的选项为：
+- **单一登录(SSO)**：允许配置单一登录 (SSO)，其中凭据共享，以用于计算机和 Wi-Fi 网络登录。 你的选项为：
   - 禁用：禁用 SSO 行为。 用户需要单独向网络进行身份验证。
-  - 在用户登录到设备之前启用：在用户登录过程之前使用 SSO 对网络进行身份验证。
-  - 在用户登录到设备后启用：在用户登录过程完成后立即使用 SSO 对网络进行身份验证。
+  - **在用户登录到设备之前启用**：在用户登录过程之前使用 SSO 对网络进行身份验证。
+  - **在用户登录到设备后启用**：在用户登录过程完成后立即使用 SSO 对网络进行身份验证。
   - 身份验证超时前等待的最长时间：输入在对网络进行身份验证之前，可以等待的最长秒数，范围为 1-120 秒。
   - 允许 Windows 提示用户提供其他身份验证凭据：选择“是”，则允许 Windows 系统提示用户在身份验证方法需要时提供其他凭据。 选择“否”，则隐藏这些提示。
 
@@ -77,25 +78,36 @@ Wi-Fi 设置在适用于运行 Windows 10 及更高版本的设备的配置文�
   - **EAP-TTLS**
   - **受保护的 EAP** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>选择 EAP 类型时的更多选项
+    EAP-TLS、EAP-TTLS 和 PEAP 其他设置：
+    
+    > [!NOTE]
+    > 目前，使用 EAP 类型时仅支持 SCEP 证书配置文件。 不支持 PKCS 证书配置文件。 每当用户需要输入证书时，请务必选择 SCEP 证书。
 
-> [!NOTE]
-> 目前，使用 EAP 类型时仅支持 SCEP 证书配置文件。 不支持 PKCS 证书配置文件。 每当用户需要输入证书时，请务必选择 SCEP 证书。
+      - **服务器信任**  
 
-#### <a name="server-trust"></a>服务器信任
+        **证书服务器名称**：使用 EAP-TLS、EAP-TTLS 或 PEAP EAP 类型。 输入由受信任的证书颁发机构 (CA) 颁发的证书中使用的一个或多个常用名称。 如果输入此信息，则可在用户设备连接到此 Wi-Fi 网络时，绕过该设备上显示的动态信任对话框。  
 
-|设置名|更多信息|使用时间|
-|--------------|-------------|----------|
-|**证书服务器名称**|输入由受信任的证书颁发机构 (CA) 颁发的证书中使用的一个或多个常用名称。 如果输入此信息，则可在用户设备连接到此 Wi-Fi 网络时，绕过该设备上显示的动态信任对话框。|EAP 类型为 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**|
-|**用于服务器验证的根证书**|选择用于对连接进行身份验证的受信任的根证书配置文件。 |EAP 类型为 **EAP-TLS**、**EAP-TTLS** 或 **PEAP**|
-|**标识隐私（外部标识）**|请输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。|EAP 类型为 **PEAP**|
+        **用于服务器验证的根证书**：使用 EAP-TLS、EAP-TTLS 或 PEAP EAP 类型。 选择用于对连接进行身份验证的受信任的根证书配置文件。  
 
-#### <a name="client-authentication"></a>客户端身份验证
+        **标识隐私(外部标识)**：使用 PEAP EAP 类型。 请输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。  
 
-| 设置名 | 更多信息 | 使用时间 |
-|---|---|---|
-| **用于客户端身份验证的客户端证书（身份证书）** |  选择用于对连接进行身份验证的 SCEP 证书配置文件。 | EAP 类型为 **EAP-TLS** |
-| **身份验证方法** | 选择连接的身份验证方法：<br><br>- 证书：选择要作为标识证书提交给服务器的 SCEP 客户端证书。<br><br>- 用户名和密码：输入用于身份验证的“非 EAP 方法（内部标识）”方法。 选项包括：<br><br>- **未加密的密码 (PAP)**<br>- 质询握手 (CHAP)<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 版本 2 (MS-CHAP v2)**<br><br>- 标识隐私（外部标识）：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。 | EAP 类型为 EAP-TTLS |
+      - **客户端身份验证**
+
+        **用于客户端身份验证的客户端证书(身份证书)**：使用 EAP-TLS EAP 类型。 选择用于对连接进行身份验证的证书配置文件。
+
+        **身份验证方法**：使用 EAP-TTLS EAP 类型。 选择连接的身份验证方法：  
+
+          - **证书**：选择要作为标识证书提交给服务器的客户端证书。
+          - **用户名和密码**：输入用于身份验证的“非 EAP 方法（内部标识）”方法。 选项包括：
+
+            - **未加密的密码 (PAP)**
+            - **质询握手(CHAP)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP 版本 2 (MS-CHAP v2)**
+
+        **标识隐私(外部标识)**：使用 EAP-TTLS EAP 类型。 请输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
+
+- **强制 Wi-Fi 配置文件符合美国联邦信息处理标准(FIPS)**：当针对 FIPS 140-2 标准进行验证时选择“是”。 所有美国联邦政府机构均需要此标准，这些机构使用基于加密的安全系统来保护以数字方式存储的敏感非保密信息。 选择“否”则不符合 FIPS 标准。
 
 ## <a name="use-an-imported-settings-file"></a>使用已导入的设置文件
 

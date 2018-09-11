@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949537"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329377"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune 中的适用于 Android 设备的展台设置
 
@@ -55,7 +55,7 @@ ms.locfileid: "37949537"
 
 1. 浏览到 [Google Play 上的托管主屏幕页](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise)，并使用用于其他托管的 Google Play 应用的相同帐户登录。
 2. 选择“批准”。
-3. 转到 [Intune 门户](https://portal.azure.com)，然后选择“移动应用” > “托管的 Google Play” > “同步”。
+3. 转到 [Intune 门户](https://portal.azure.com)，然后选择“客户端应用” > “托管的 Google Play” > “同步”。
 4. 选择“应用” > “托管的主屏幕” > “分配” > “添加组”。
 5. 在“分配类型”下，选择“必需”。
 6. 选择“已包括的组” > “选择要包括的组”> 选择为展台设备创建的设备组 >“选择” > “确定” > “确定” > “保存”。
@@ -65,13 +65,13 @@ ms.locfileid: "37949537"
 对于要在展台设备上使用的每个应用，请执行以下步骤：
 
 1. [将应用添加到 Intune](store-apps-android.md)。
-2. 选择“移动应用” > “应用”> 选择应用 >“分配” > “添加组”。
+2. 选择“客户端应用” > “应用”> 选择应用 >“分配” > “添加组”。
 3. 在“分配类型”下，选择“必需”。
 4. 选择“已包括的组” > “选择要包括的组”> 选择为展台设备创建的设备组 >“选择” > “确定” > “确定” > “保存”。
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>添加可用于展台模式的 Web 链接
 
-1. 转到 [Intune 门户](https://portal.azure.com)，然后选择“移动应用” > “应用” > “添加”。
+1. 转到 [Intune 门户](https://portal.azure.com)，然后选择“客户端应用” > “应用” > “添加”。
 2. 在“应用类型”下，选择“Web 链接”。
 3. 选择“配置”并提供所需信息。 无需添加徽标图像，因为它将自动从网站的 favicon.ico 中检索。
 4. 选择“确定” > “添加”。

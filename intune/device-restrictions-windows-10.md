@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321214"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313847"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中针对 Windows 10 及更高版本的设备限制设置
 本文介绍可为运行 Windows 10 的设备配置的所有 Microsoft Intune 设备限制设置。
@@ -37,7 +37,7 @@ ms.locfileid: "39321214"
 - **可移动储备** - 指定外部存储设备（如 SD 卡）是否可以与该设备结合使用。
 - **地理位置** - 指定设备是否可以使用位置服务信息。
 - **Internet 共享** - 允许在设备上使用 Internet 连接共享。
-- **手机重置** - 控制用户是否可以在设备上恢复出厂设置。
+- **手机重置** - 控制用户是否可以对设备进行擦除。
 - **USB 连接（仅限移动版）**- 控制设备是否可以通过 USB 连接访问外部存储设备。
 - **防盗模式（仅限移动版）**- 配置是否启用 Windows 防盗模式。
 - **Cortana** - 启用或禁用 Cortana 语音助手。
@@ -50,6 +50,7 @@ ms.locfileid: "39321214"
 - **SIM 卡错误对话框（仅限移动版）**- 阻止在未检测到 SIM 卡时在设备上显示错误消息。
 - **墨迹工作区** - 阻止用户访问墨迹工作区。 如果未配置此设置，则启用墨迹工作区（功能处于开启状态），并且允许用户在锁定屏幕上使用它。
 - **自动重新部署** - 允许具有管理权限的用户在设备锁定屏幕上使用 CTRL+Win+R 删除所有用户数据和设置。 设备会自动进行重新配置并重新注册到管理。
+- **要求用户在设备设置期间连接到网络(仅限 Windows 预览体验)** - 选择“必需”以要求在 Windows 10 安装过程中设备先连接到网络，然后再继续通过“网络”页。 虽然此功能处于预览状态，但 Windows 预览体验版 1809 或更高版本需要使用此设置。
 
 ## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。

@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0fb7d432edf62de48e81f65b1ac2f67c6dbad70a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 143b4f3390d3058177f4bfde4cbfe0d210f57e86
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224947"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347910"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
@@ -47,7 +47,7 @@ ms.locfileid: "34224947"
 - 设备必须已加入 Active Directory 域服务或工作区才可使用此功能。
 - 已注册的设备必须使用 Windows 10 的 1511 版本或更高版本。
 
-此外，从适用于企业的 Microsoft Store 同步的相关集和脱机授权应用现在会合并到 UI 的单个应用条目中。 各个包中的所有部署详细信息都会迁移到单个条目。 要在 Azure 门户中查看相关集，请从“移动应用”边栏选项卡中选择“应用许可证”。
+此外，从适用于企业的 Microsoft Store 同步的相关集和脱机授权应用现在会合并到 UI 的单个应用条目中。 各个包中的所有部署详细信息都会迁移到单个条目。 要在 Azure 门户中查看相关集，请从“客户端应用”边栏选项卡中选择“应用许可证”。
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>将适用于企业的 Microsoft 应用商店帐户与 Intune 关联
 在 Intune 控制台中启用同步之前，必须将你的应用商店帐户配置为将 Intune 作为一种管理工具使用：
@@ -64,8 +64,8 @@ ms.locfileid: "34224947"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用”。
-1. 在“移动应用”窗格上，选择“设置” > “适用于企业的 Microsoft Store”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+1. 在“客户端应用”窗格上，选择“设置” > “适用于企业的 Microsoft Store”。
 2. 单击“启用”。
 3. 如果尚未这样做，请单击适用于企业的 Microsoft 应用商店的注册链接，并按之前详述的步骤关联帐户。
 5. 在“语言”下拉列表中，选择适用于企业的 Microsoft Store 中的应用在 Azure 门户中的显示语言。 无论以何种语言显示，都会以最终用户的语言（如果有）进行安装。
@@ -73,7 +73,7 @@ ms.locfileid: "34224947"
 
 ## <a name="synchronize-apps"></a>同步应用
 
-1. 在“移动应用”工作负荷中，选择“设置” > “适用于企业的 Microsoft 应用商店”。
+1. 在“客户端应用”工作负载中，选择“设置” > “适用于企业的 Microsoft Store”。
 2. 单击“同步”，将从 Microsoft 应用商店购买的应用同步到 Intune。
 
 ## <a name="assign-apps"></a>分配应用

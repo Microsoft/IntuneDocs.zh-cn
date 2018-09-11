@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329920"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312792"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -112,10 +112,12 @@ Intune 会将应用中的所有数据标记为“公司”或“个人”。 数
 
     - **为了提高可用性，将在同一发布者的多个应用之间共享 PIN：** 在 iOS 上，同一应用发布者的所有应用共享一个应用 PIN。 在 Android 上，所有应用共享一个应用 PIN。
     - **设备重启后的“以下时间过后重新检查访问要求(分钟)”行为：**“PIN 计时器”跟踪非活动状态的分钟数，此分钟数用于确定下一次显示 Intune 应用 PIN 的时间。 在 iOS 上，PIN 计时器不受设备重启影响。 因此，设备重启对用户在使用 Intune PIN 策略的 iOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，PIN 计时器在设备重启后重置。 因此，使用 Intune PIN 策略的 Android 应用可能提示输入应用 PIN，设备重启后的“以下时间过后重新检查访问要求(分钟)”设置值对此没有影响。  
-    - **与 PIN 关联的计时器的滚动特性：** 输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该 PIN 的 PIN 计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。 
+    - **与 PIN 关联的计时器的滚动特性：** 输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该 PIN 的 PIN 计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。
+
+对于 iOS 设备，即使在不同发行商的应用之间共享 PIN，当不是主要输入焦点的应用再次满足“在一定时间后重新检查访问要求(分钟)”值时，也会再次显示提示。 因此，例如，某一用户具有来自发行商 X 的应用 A 和来自发行商 Y 的应用 B，并且这两个应用共享相同 PIN。 该用户将焦点置于应用 A（前景），并最小化应用 B。 当满足“在一定时间后重新检查访问要求(分钟)”值并且用户切换到应用 B 时，将需要此 PIN。
 
       >[!NOTE] 
-      > 为了更频繁地验证用户的访问要求（即 PIN 提示），尤其是针对常用应用的访问，建议减小“以下时间过后重新检查访问要求(分钟)”设置的值。 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Intune PIN 如何与 Outlook 和 OneDrive 的内置应用 PIN 配合使用？**<br></br>
 Intune PIN 基于非活动状态计时器（又称“以下时间过后重新检查访问要求(分钟)”的值）执行操作。 因此，Intune PIN 提示与 Outlook 和 OneDrive 的内置应用 PIN 提示（默认情况下与应用启动直接关联）相互独立显示。 如果用户同时收到两个 PIN 提示，预期行为应以 Intune PIN 为准。 
@@ -137,13 +139,13 @@ IT 管理员可以部署要求对应用数据进行加密的应用保护策略�
 - **对哪些内容进行加密？**<br></br> 根据 IT 管理员的应用保护策略，仅对标记为“公司”的数据进行加密。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。 对于由 Intune 应用包装工具托管的业务线应用，所有应用数据都会被视为“公司”数据。
 
 **Intune 如何远程擦除数据？**<br></br>
-Intune 能够使用 3 种不同方式擦除应用数据：完全设备擦除、MDM 选择性擦除和 MAM 选择性擦除。 有关 MDM 远程擦除的详细信息，请参阅[通过恢复出厂设置或删除公司数据删除设备](devices-wipe.md#factory-reset)。 有关使用 MAM 进行选择性擦除的详细信息，请参阅[删除公司数据](devices-wipe.md#remove-company-data)和[如何仅擦除应用中的公司数据](apps-selective-wipe.md)。
+Intune 能够使用 3 种不同方式擦除应用数据：完全设备擦除、MDM 选择性擦除和 MAM 选择性擦除。 有关 MDM 远程擦除的详细信息，请参阅[使用“擦除”或“停用”操作删除设备](devices-wipe.md)。 有关使用 MAM 进行选择性擦除的详细信息，请参阅[“停用”操作](devices-wipe.md#retire)和[如何仅擦除应用中的公司数据](apps-selective-wipe.md)。
 
-- **什么是恢复出厂设置？**<br></br> [恢复出厂设置](devices-wipe.md)会通过将设备还原到其出厂默认设置，从设备中删除所有用户数据和设置。 设备从 Intune 删除。
+- **什么是擦除？**<br></br> [擦除](devices-wipe.md)会通过将设备还原到其出厂默认设置，从设备中删除所有用户数据和设置。 设备从 Intune 删除。
   >[!NOTE]
-  > 恢复出厂设置只有在注册了 Intune 移动设备管理 (MDM) 的设备上才能实现。
+  > 擦除只有在注册了 Intune 移动设备管理 (MDM) 的设备上才能实现。
 
-- **什么是 MDM 选择性擦除？**<br></br> 请参阅[删除设备 - 删除公司数据](devices-wipe.md#remove-company-data)，以了解删除公司数据的相关信息。
+- **什么是 MDM 选择性擦除？**<br></br> 请参阅[删除设备 - 停用](devices-wipe.md#retire)，了解删除公司数据的相关信息。
 
 - **什么是 MAM 选择性擦除？**<br></br> MAM 选择性擦除仅删除应用中的公司应用数据。 使用 Intune Azure 门户启动该请求。 若要了解如何启动擦除请求，请参阅[如何仅擦除应用中的公司数据](apps-selective-wipe.md)。
 

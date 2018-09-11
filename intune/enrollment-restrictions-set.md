@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251922"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313711"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -35,15 +35,15 @@ ms.locfileid: "40251922"
 
 - 最大设备注册数。
 - 可注册的设备平台：
-  - Android。
-  - Android 工作配置文件。
-  - iOS。
-  - macOS。
-  - 的支持。
+  - Android
+  - Android 工作配置文件
+  - iOS
+  - macOS
+  - Windows
 - 适用于 iOS、Android、Android 工作配置文件和 Windows 的平台操作系统版本。 （仅可使用 Windows 10 版本。 如果允许 Windows 8.1，请将此处留空。）
   - 最低版本。
   - 最高版本。
-- 限制个人拥有的设备（仅 iOS、Android、Android 工作配置文件、macOS）。
+- 限制个人拥有的设备（仅 iOS、Android、Android 工作配置文件、macOS、Windows）。
 
 ## <a name="default-restrictions"></a>默认限制
 
@@ -66,28 +66,46 @@ ms.locfileid: "40251922"
 
 ## <a name="set-device-type-restrictions"></a>设置设备类型限制
 
-通过执行以下步骤可更改设备类型限制的设置：
+通过执行以下步骤可更改设备类型限制的设置。 这些限制不会影响已注册的设备。 无法使用此功能阻止注册了 [Intune PC 代理](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md)的设备。
 
 1. 登录到 Azure 门户。
 2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
 3. 选择“设备注册” > “注册限制”。
-4. 在“设备类型限制”下，选择想要设置的限制。
-5. 在限制名称（默认限制为“所有用户”）下，选择“平台”。 为列出的每个平台选择“允许”或“阻止”。
-6. 选择“保存”。
-7. 在限制名称（默认限制为“所有用户”）下，选择“平台配置”。 然后选择所列平台的最低和最高版本。 支持的版本格式包括：
+4. 在“设备类型限制”下，选择想要设置的限制，然后选择“属性” > “选择平台”。 为列出的每个平台选择“允许”或“阻止”。
+    ![允许或阻止平台的屏幕截图](media/enrollment-restrictions-set/platform-allow-block.png)
+5. 选择“确定”。
+6. 选择“配置平台”。
+    ![配置平台的屏幕截图](media/enrollment-restrictions-set/configure-platforms.png)
+7. 选择所列平台的最低和最高“版本”。 支持的版本格式包括：
     - Android 工作配置文件支持 major.minor.rev.build。
-    - iOS 支持 major.minor.rev。
+    - iOS 支持 major.minor.rev。操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
     - Windows 仅对 Windows 10 支持 major.minor.rev.build。
-  操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
-8. 指定是否对每个列出的平台允许或阻止个人拥有的设备。
-    ![设备限制工作区，含默认设备平台配置，其中显示已配置“个人拥有的”设置](media/device-restrictions-platform-configurations.png)
-9. 选择“保存”。
+8. 选择是否对每个列出的平台“允许”或“阻止”个人拥有的设备。
+9. 选择“确定”。
 
+### <a name="android-device-type-restrictions"></a>Android 设备类型限制
+- 如果阻止私人拥有的 Android 设备进行注册，私人拥有的 Android 工作配置文件设备仍可注册。
+- 默认情况下，Android 工作配置文件设备的设置与 Android 设备的设置相同。 更改 Android 工作配置文件设置后，则不再相同。
+- 如果阻止个人 Android 工作配置文件注册，那么仅公司 Android 设备可注册为 Android 工作配置文件。
 
->[!NOTE]
->- 如果阻止私人拥有的 Android 设备进行注册，私人拥有的 Android 工作配置文件设备仍可注册。
->- 默认情况下，Android 工作配置文件设备的设置与 Android 设备的设置相同。 更改 Android 工作配置文件设置后，则不再相同。
->- 如果阻止个人 Android 工作配置文件注册，那么仅公司 Android 设备可注册为 Android 工作配置文件。
+### <a name="windows-device-type-restrictions"></a>Windows 设备类型限制
+将 Windows 平台设备类型限制设置为“阻止”后，Intune 将进行检查以确保每个新 Windows 注册请求已授权为企业注册。 将阻止未经授权的注册。
+
+如果符合以下条件，则视为已授权为 Windows 企业注册：
+ - 注册用户使用的是[设备注册管理员帐户]( device-enrollment-manager-enroll.md)。
+- 设备通过 [Windows AutoPilot](enrollment-autopilot.md) 进行注册。
+- 设备的 IMEI 号在“设备注册” > “[公司设备标识符](corporate-identifiers-add.md)”中列出。 （不支持 Windows Phone 8.1。）
+- 设备通过[批量预配包](windows-bulk-enroll.md)进行注册。
+- 设备通过[从 SCCM 自动注册以进行共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)进行注册。
+ 
+以下注册被 Intune 标记为企业注册，但由于其不提供 Intune 管理员每设备控制而将被阻止：
+ - 通过 [Windows 设置过程中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
+- 通过 [Windows 设置中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
+ 
+以下个人注册方法也将被阻止：
+- 通过[从 Windows 设置中添加工作帐户](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
+- 通过 Windows 设置中的[仅 MDM 注册]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)选项。
+
 
 ## <a name="set-device-limit-restrictions"></a>设置设备限制
 

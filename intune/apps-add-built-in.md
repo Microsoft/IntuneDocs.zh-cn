@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b9520343f3b631fdc2732690b462c6d8fd010c82
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224154"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329489"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>将内置应用添加到 Microsoft Intune
 
@@ -36,8 +36,8 @@ ms.locfileid: "34224154"
 若要将内置应用添加到 Microsoft Intune 中的可用应用中，请执行以下步骤：
 1. 登录到 Azure 门户。
 2. 若要显示 Microsoft Intune 窗格，请选择“更多服务” > “监视 + 管理” > “Intune”。
-3. 在“Intune”窗格中，选择“移动应用”。
-4. 在“移动应用”窗格的“管理”下，选择“应用”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+4. 在“客户端应用”窗格的“管理”下，选择“应用”。
 5. 选择“添加”。
 6. 在“应用类型”列表中的“添加”应用窗格中，选择“内置应用”。
 7. 选择“选择应用”。

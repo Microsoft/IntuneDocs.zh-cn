@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 6b69934edc70e10ee01394cf5b6a4fed75334660
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869332"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330052"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>在 Microsoft Intune 中添加应用入门
 
@@ -39,7 +39,7 @@ ms.locfileid: "37869332"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 选择“移动应用”，然后选择“应用”。
+3. 选择“客户端应用”，然后选择“应用”。
 4. 选择“添加”，然后选择“iOS”作为“应用类型”。
 5. 选择“选择应用”，显示“搜索 App Store”窗格。
 6. 在文本框中，搜索要分配到设备的应用。 选择应用，然后单击“选择”。

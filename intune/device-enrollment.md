@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909195"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313155"
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 
 | **方法** |  **需要重置** |    [**用户关联**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **锁定** | **详细信息** |
 |:---:|:---:|:---:|:---:|:---:|
-| | 设备在注册过程中恢复出厂设置。 |  将每个设备与用户关联。| 用户无法取消注册设备。  | |
+| | 设备在注册过程中被擦除。 |  将每个设备与用户关联。| 用户无法取消注册设备。  | |
 |**[BYOD](#bring-your-own-device)** | 否|   是 |   否 | [详细信息](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| 否 |否 |否  | [详细信息](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|   是 |   可选 |  可选|[详细信息](./device-enrollment-program-enroll-ios.md)|
@@ -95,7 +95,7 @@ IT 管理员可通过 USB 使用 Apple Configurator，手动准备每台公司�
 - [使用 Configurator 和设置助理注册 iOS 设备](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-对于直接注册，管理员必须创建注册策略并将其导出到 Apple Configurator，进而手动注册每台设备。 连接了 USB 的公司拥有的设备可直接进行注册，无需恢复出厂设置。 这些设备作为无用户设备进行管理。 它们未锁定、不受监控，且无法支持条件性访问、越狱检测或移动应用管理。
+对于直接注册，管理员必须创建注册策略并将其导出到 Apple Configurator，进而手动注册每台设备。 连接了 USB 的公司拥有的设备可直接进行注册，无需进行擦除。 这些设备作为无用户设备进行管理。 它们未锁定、不受监控，且无法支持条件性访问、越狱检测或移动应用管理。
 
 若要了解有关 iOS 注册的详细信息，请参阅：
 

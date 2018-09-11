@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e24414d28b8adeae7dfbedb606ca1a7d21497a3f
-ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
+ms.openlocfilehash: 6cc33bc6e03d2e0370c9e2c2dd9d3462296710e6
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43093190"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329678"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Microsoft Intune 的早期版本 - 2018 年 8 月
 
@@ -41,91 +41,14 @@ ms.locfileid: "43093190"
 
 <!-- 1808 start -->
 
-### <a name="windows-hello-will-target-users-and-devices----1106609---"></a>Windows Hello 面向用户和设备 <!-- 1106609 -->
-创建 [Windows hello 企业版](windows-hello.md)策略后，该策略会应用到组织中的所有用户（租户范围）。 进行此更新后，还可使用设备配置策略（“设备配置” > “配置文件” > “创建配置文件” > “标识保护” > “Windows Hello 企业版”），将此策略应用于特定用户或特定设备。
 
-在 Intune Azure 门户中，Windows Hello 配置和设置同时存在于“设备注册”和“设备配置”中。 **设备注册**面向整个组织（租户范围内），并支持 Windows AutoPilot (OOBE)。 **设备配置**面向使用某种策略的设备和用户，该策略会在签入期间应用。
-
-适用于：  
-- Windows 10 及更高版本
-- Windows Holographic for Business
-
-### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>在 Windows 10 和更高版本的设备上控制 S 模式 - 公共预览版 <!-- 1958649 -->
-可创建一个设备配置文件，用于将 Windows 10 设备从 S 模式下切换出来，或用于防止用户将设备从 S 模式下切换出来。 此功能的位置：Intune >“设备配置” > “配置文件” >  “Windows 10 及更高版本” > “版本升级和模式切换”。
-[S 模式下的 Windows 10 简介](https://www.microsoft.com/windows/s-mode)提供了有关 S 模式的详细信息。
-适用于：Windows 10 及更高版本（1809 及更高版本）
-
-### <a name="modern-vpn-support-updates-for-ios----2459928-1819876-and-2650856---"></a>适用于 iOS 的新式 VPN 支持更新 <!-- 2459928, 1819876, and 2650856 -->
-未来的某个更新将支持以下 iOS VPN 客户端： 
-- F5 Access（版本 3.0.1 及更高版本）
-- Citrix SSO
-- Palo Alto Networks GlobalProtect（版本 5.0 及更高版本） 在未来的某个更新中：
-- 现有 **F5 Access** 连接类型将重命名为 **F5 Access (旧)**（按 F5 品牌更新）
-- 现有 **Palo Alto Networks GlobalProtect** 连接类型将重命名为**旧版 Palo Alto Networks GlobalProtect**（按 Palo Alto 品牌更新）。 
-
-使用这些连接类型的现有配置文件将继续使用旧的 VPN 客户端。 如果要将 Cisco 旧式 AnyConnect、F5 Access (旧)、Citrix VPN 或旧版 Palo Alto Networks GlobalProtect 与 iOS 配合使用，应改为使用新应用。 尽快执行此操作以确保可在更新到 iOS 12 的 iOS 设备上实现 VPN 访问。
-
-### <a name="lock-the-company-portal-in-single-app-mode-until-user-sign-in---1067692---"></a>将公司门户锁定在单应用模式下，直至用户登录 <!--1067692 --> 
-如果在 DEP 注册过程中通过公司门户而非“设置助手”来对用户进行身份验证，可选择在单应用模式下运行公司门户。 此选项会在“设置助手”操作完成后立即锁定设备，这样用户须登录才能访问设备。 此过程可确保设备完成载入，且不会进入无任何用户绑定的孤立状态。
-
-### <a name="scope-tags-for-policies---1081974-eeready--"></a>策略的作用域标记 <!--1081974 eeready-->
-
-可创建作用域标记来限制对 Intune 资源的访问。 将作用域标记添加到某个角色分配，然后将作用域标记添加到某个配置文件。 角色将仅有权访问符合后列条件的资源：其资源配置文件的作用域标记与角色标记匹配或无作用域标记。
-若要创建作用域标记，选择“Intune 角色” > “作用域(标记)” > “创建”。
-要向角色分配添加作用域标记，选择“Intune 角色” > “所有角色” > “策略和配置文件管理器” > “分配” > “作用域(标记)”。
-要向配置文件添加作用域标记，选择“设备配置” > “配置文件”>“选择配置文件”>“属性” > “作用域(标记)”。
-
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>为 Autopilot 设备分配一个用户和友好名称 <!--1346521 -->
-未来的一个公共预览版将允许管理员将用户分配到单个 Autopilot 设备。  在使用 Autopilot 为用户设置设备时，管理员还可提供友好名称来问候用户。
-
-适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
 
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>另一个 MDM 使用的 Apple VPP 令牌 <!-- 1488946 -->
 Intune 会检测是否 Intune 和另一个 MDM 同时在使用同一个 Apple 批量采购计划 (VPP) 令牌，并显示相关详细信息。
 
-### <a name="packet-tunnel-support-for-ios-per-app-vpn-profiles-for-custom-and-pulse-secure-connection-types----1520957---"></a>针对自定义和 Pulse Secure 连接类型的 iOS 每应用 VPN 配置文件的数据包隧道支持 <!-- 1520957 -->
-如果使用 iOS 每应用 VPN 配置文件，可使用应用层隧道（应用-代理）或数据包级别隧道（数据包-隧道）。 这些选项适用于以下连接类型：
-- 自定义 VPN
-- Pulse Secure - 如果不确定使用哪个值，请查阅 VPN 提供商的文档。
-适用于：iOS
-
-### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858-eeready---"></a>Zscaler 是适用于 iOS 上 VPN 配置文件的可用连接 <!-- 1769858 eeready -->
-创建 iOS VPN 设备配置文件时（“设备配置” > “配置文件” > “创建配置文件” > “iOS”“平台”>“VPN 配置文件类型”），有几种连接类型，包括 Cisco、Citrix 等。 未来的一个更新中会将 Zscaler 添加为一个连接类型。 
-[运行 iOS 的设备的 VPN 设置](vpn-settings-ios.md)列出了可用的连接类型。
-
-### <a name="block-windows-personal-device-enrollments----1849498---"></a>阻止 Windows 个人设备注册 <!-- 1849498 -->
-可通过 Intune 中的[移动设备管理](windows-enroll.md)阻止 Windows 个人设备进行注册。 无法使用此功能阻止注册了 [Intune PC 代理](manage-windows-pcs-with-microsoft-intune.md)的设备。
-若要查看此功能，请选择“设备注册” > “设备限制”。
-启用此限制不会影响已注册的设备。
-启用限制后，Intune 将进行检查以确保每个新 Windows 注册请求已授权为企业注册。 如果符合以下条件，则视为已授权为企业注册：
-- 注册用户使用的是[设备注册管理员帐户]( device-enrollment-manager-enroll.md)。
-- 设备通过 [Windows Autopilot](enrollment-autopilot.md) 进行注册。
-- 设备的 IMEI 号在“设备注册” > “[公司设备标识符]( corporate-identifiers-add.md)”中列出）。
-- 设备通过[批量预配包](windows-bulk-enroll.md)进行注册。
-- 设备通过[从 SCCM 自动注册以进行共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management)进行注册。
-
-将阻止未经授权的注册。 以下注册被 Intune 标记为企业注册，但由于其不提供 Intune 管理员每设备控制而将被阻止：
-- 通过 [Windows 设置过程中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
-- 通过 [Windows 设置中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
-
-以下个人注册方法也将被阻止：
-- 通过[从 Windows 设置中添加工作帐户](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)。
-- 通过 Windows 设置中的[仅 MDM 注册]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)选项。
-
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>在 Autopilot 配置文件中指定计算机名称模式 <!--1849855-->
-可指定一个计算机名称模板，用于在 Autopilot 注册过程中生成和设置[计算机名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 需要在 Autopilot 配置文件中指定此模板，该文件位于“设备注册” > “Windows 注册” > “Windows Autopilot 部署服务” > “配置文件”。 仅可使用字母数字字符和连字符。
-适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
-
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>显示 iOS 版本号和生成号 <!-- 1892471 -->
 在“设备符合性” > “设备符合性”中，会显示 iOS 操作系统版本。 在未来的某个更新中，会显示生成号。
 Apple 每次发布安全更新时，会保留版本号，更新生成号。 通过所显示的生成号，可轻松确认是否已安装漏洞更新。
-
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>对于 Windows Autopilot 配置文件，隐藏公司登录页和域错误页上的“更改帐户”选项 <!--1901669 -->
-公共预览版包含新的 Windows Autopilot 配置文件选项，允许管理员隐藏公司登录页和域错误页上的“更改帐户”选项。 要隐藏这些选项，需在 Azure Active Directory 中配置公司品牌。 适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
-
-### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>延迟 iOS 软件更新在设备上的显示时间 <!-- 1949583 -->
-在 Intune >“软件更新” > “适用于 iOS 的更新策略”中，可配置不希望设备安装任何更新的日期和时间段。 在未来的某个更新中，可延迟软件更新在设备上的显示时间（1-90 天）。 
-[在 Microsoft Intune 中配置 iOS 更新策略](software-updates-ios.md)列出了当前设置。
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>“设备符合性仪表板”中的停用设备 <!-- 1981119 -->
 未来的某个更新将从设备符合性仪表板中删除已停用的设备。 这会改变符合性数字。
@@ -140,9 +63,6 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 - 改善了大型应用目录的性能
 - 为所有用户增加了辅助功能
 
-### <a name="office-365-proplus-version----2213968-eeready---"></a>Office 365 专业增强版 <!-- 2213968 eeready -->
-如果使用 Intune 将 Office 365 专业增强版应用分配到 Windows 10 设备，可选择 Office 的版本。 在 Azure 门户中，选择“Microsoft Intune” > “应用” > “添加应用”。 然后，从“类型”下拉列表中选择“Office 365 专业增强版套件(Windows 10)”。 选择“应用套件设置”以显示关联的边栏选项卡。 将“更新通道”设置为一个值，如“每月”。 （可选）选择“是”，从最终用户设备中删除其他版本的 Office (msi)。 选择“特定”，在最终用户设备上为所选通道安装特定的 Office 版本。 此时，可选择要使用的“特定版本”的 Office。 可用版本会随时间发生变化。 因此，在创建新部署时，可用版本可能为更新的版本，而不再提供某些较旧版本。 当前部署会继续部署旧版本，但版本列表会持续按通道更新。 有关详细信息，请参阅 [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
-
 ### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470---"></a>将配置文件配置为在“设置助手”期间跳过某些屏幕 <!-- 2276470 -->
 创建 macOS 注册配置文件时，可将其配置为在用户使用设置助手期间跳过以下任一屏幕：
 - Android 迁移
@@ -153,27 +73,7 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 ### <a name="change-in-the-update-process-for-on-premises-connectors----2277554---"></a>本地连接器更新过程的更改 <!-- 2277554 -->
 将根据客户反馈更改本地连接器的更新方式。 初次安装本地连接器之后，会自动对其进行更新。 此更改首先应用于适用于 Microsoft Intune 的全新 PFX 证书连接器，随后会推广至其他类型的本地连接器。 
 
-### <a name="support-for-register-dns-setting-for-windows-10-vpn----2282852---"></a>支持面向 Windows 10 VPN 的“注册 DNS”设置 <!-- 2282852 -->
-可将 Windows 10 VPN 配置文件配置为使用内部 DNS 动态注册分配给 VPN 接口的 IP 地址，而无需使用自定义配置文件。
-[Windows 10 VPN 设置](vpn-settings-windows-10.md)列出了当前可用的 VPN 配置文件设置。 
 
-### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-for-work-devices----2451462---"></a>限制应用，并阻止对 iOS for Work 和 Android for Work 设备上公司资源的访问 <!-- 2451462 -->
-在“设备符合性” > “策略” > “创建策略” > “Android for Work” > “系统安全”中，有一个全新的“受限制的应用程序”设置。 如果设备上安装了某些应用，此新设置会使用符合性策略来阻止对公司资源的访问。 除非从设备中删除受限制的应用，否则设备会一直被视为不符合要求。
-适用于： 
-- iOS
-
-### <a name="export-azure-classic-portal-compliance-policies-to-csv-file----2469637---"></a>将 Azure 经典门户符合性策略导出到 .csv 文件 <!-- 2469637 -->
-将弃用 Azure 经典门户中创建的符合性策略。  在此情况下，可查看和删除任何现有策略，但无法更新它们。 可将策略导出为逗号分隔的文件（.csv 文件）。 然后使用文件中的详细信息在 Intune Azure 门户中重新创建这些策略。
-> [!IMPORTANT]
-> Azure 经典门户停用后，无法访问策略，也无法看到策略。 因此，务必导出策略，并在 Azure 经典门户停用之前，在 Azure 门户中重新创建这些策略。
-
-### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>将术语更改为“停用”和“擦除”<!-- 2175759 -->
-为了与 Graph API 保持一致，Intune 用户界面和文档将更改以下术语：
-- “删除公司数据”将更改为“停用”
-- “恢复出厂设置”将更改为“擦除”
-
-### <a name="delete-jamf-devices----2653306---"></a>删除 Jamf 设备 <!-- 2653306 -->
-通过转到“设备”>“选择 Jamf 设备”>“删除”，可以删除 JAMF 托管的设备。
 
 <!-- 1807 start -->
 
@@ -191,10 +91,8 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>针对设备注册管理员用户，改进了公司门户应用体验 <!-- 675800 -->
 当设备注册管理员 (DEM) 登录到适用于 Windows 的公司门户应用时，该应用将仅列出 DEM 的当前正在运行的设备。 此改进将减少以前应用尝试加载所有 DEM 注册设备时出现的超时。  
 
-### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP 配置包自动添加到配置文件 <!-- 2144658 -->
-在 Intune 中使用[高级威胁防护和加入](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile)设备时，下载配置包，并将其添加到配置文件。 在未来的更新中，Intune 自动从 Windows Defender 安全中心获取包，并将其添加到配置文件。
-
-适用于 Windows 10 和更高版本。
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 注册期间，使用 VPP 设备许可证预先设置公司门户 <!-- 1608345 -->
+在设备注册计划 (DEP) 注册期间，可以使用批量采购计划 (VPP) 设备许可证预先设置公司门户。 若要完成此操作，在创建或编辑注册配置文件时，指定要用于安装公司门户的 VPP 令牌。 请确保令牌没有过期，并且具有足够的公司门户应用许可证。 如果令牌过期或许可证用完，Intune 将改为推送 App Store 公司门户（这将提示输入 Apple ID）。
 
 ### <a name="check-for-sccm-compliance----2192052---"></a>检查 SCCM 符合性 <!-- 2192052 -->
 未来的更新将包括新的 System Center Configuration Manager (SCCM) 符合性设置（“设备符合性” > “策略” > “创建策略” > “Windows 10”。 SCCM 向 Intune 符合性发送信号。 使用 Intune 设置，可以要求所有 SCCM 信号都返回“符合”。
@@ -219,10 +117,10 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 
 ### <a name="require-non-biometric-passcode-on-app-launch-and-timeout----1506985---"></a>在应用启动和超时时要求输入非生物识别密码 <!-- 1506985 -->
 
-在应用启动时和管理员指定的超时时长后要求输入非生物识别密码，Intune 会限制使用生物识别来访问公司数据，从而为启用了移动应用程序管理 (MAM) 的应用提升安全性。 这些设置将影响依靠 Touch ID (iOS)、Face ID (iOS)、Android Biometric 或其他未来生物识别身份验证方法访问启用了 APP/MAM 的应用程序的用户。 这些设置将使 Intune 管理员能够更精细地控制用户访问，让带有多个指纹或其他生物识别访问方法的设备只能向正确的用户显示公司数据。 在 Azure 门户中，打开“Microsoft Intune”。 选择“移动应用” > “应用保护策略” > “添加策略” > “设置”。 找到特定设置的“访问”部分。
+在应用启动时和管理员指定的超时时长后要求输入非生物识别密码，Intune 会限制使用生物识别来访问公司数据，从而为启用了移动应用程序管理 (MAM) 的应用提升安全性。 这些设置将影响依靠 Touch ID (iOS)、Face ID (iOS)、Android Biometric 或其他未来生物识别身份验证方法访问启用了 APP/MAM 的应用程序的用户。 这些设置将使 Intune 管理员能够更精细地控制用户访问，让带有多个指纹或其他生物识别访问方法的设备只能向正确的用户显示公司数据。 在 Azure 门户中，打开“Microsoft Intune”。 选择“客户端应用” > “应用保护策略” > “添加策略” > “设置”。 找到特定设置的“访问”部分。
 
 ### <a name="office-365-pro-plus-language-packs----1833450---"></a>Office 365 Pro Plus 语言包 <!-- 1833450 -->
-作为 Intune 管理员，你将能够为通过 Intune 管理的 Office 365 Pro Plus 应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）。 在 Azure 门户中，选择“Microsoft Intune” > “移动应用” > “应用” > “添加”。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。 在“应用套件设置”边栏选项卡中选择“语言”。
+作为 Intune 管理员，你将能够为通过 Intune 管理的 Office 365 Pro Plus 应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。 在“应用套件设置”边栏选项卡中选择“语言”。
 
 ### <a name="preview-a-new-user-experience-update-for-the-company-portal-website---2000968---"></a>预览公司门户网站的新用户体验更新<!--2000968 -->
 我们根据客户的反馈向公司门户网站/iOS 应用目录添加新功能。 可从 Android、iOS 和 Windows 设备上体验到现有功能和可用性方面的重大改进。 该网站的各个区域（如设备详细信息、反馈与支持以及设备概述）都采用了全新的现代化快速响应设计。 你还会看到：
@@ -241,7 +139,7 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 
 ### <a name="require-non-biometric-passcode-on-cold-app-launch-and-timeout----1506985---"></a>在冷应用启动和超时时要求非生物识别密码 <!-- 1506985 --> 
 
-在冷应用启动时和管理员指定的超时时长后要求输入非生物识别密码，Intune 会限制使用生物识别来访问公司数据，从而为启用了移动应用程序管理 (MAM) 的应用提升安全性。 这些设置将影响依靠 Touch ID (iOS)、Face ID (iOS)、Android Biometric 或其他未来生物识别身份验证方法访问启用了 APP/MAM 的应用程序的用户。 这些设置将使 Intune 管理员能够更精细地控制用户访问，让带有多个指纹或其他生物识别访问方法的设备只能向正确的用户显示公司数据。 在 Azure 门户中，打开“Microsoft Intune”。 选择“移动应用” > “应用保护策略” > “添加策略” > “设置”。 找到特定设置的“访问”部分。
+在冷应用启动时和管理员指定的超时时长后要求输入非生物识别密码，Intune 会限制使用生物识别来访问公司数据，从而为启用了移动应用程序管理 (MAM) 的应用提升安全性。 这些设置将影响依靠 Touch ID (iOS)、Face ID (iOS)、Android Biometric 或其他未来生物识别身份验证方法访问启用了 APP/MAM 的应用程序的用户。 这些设置将使 Intune 管理员能够更精细地控制用户访问，让带有多个指纹或其他生物识别访问方法的设备只能向正确的用户显示公司数据。 在 Azure 门户中，打开“Microsoft Intune”。 选择“客户端应用” > “应用保护策略” > “添加策略” > “设置”。 找到特定设置的“访问”部分。
 
 <!-- 1803 start -->
 

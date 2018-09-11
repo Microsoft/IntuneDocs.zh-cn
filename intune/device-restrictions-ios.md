@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321486"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329812"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 设备限制设置
 
@@ -81,7 +81,7 @@ ms.locfileid: "39321486"
 - 与 Apple Watch 配对 
 
 > [!NOTE]
-> Apple 已确认某些设置将于 2018 年迁移到“仅受监督”模式。 我们建议在使用这些设置时即考虑此更改，而不是等待 Apple 将它们迁移到“仅受监督”模式：
+> Apple 已确认某些设置将于 2019 年迁移到“仅受监督”模式。 我们建议在使用这些设置时即考虑此更改，而不是等待 Apple 将它们迁移到“仅受监督”模式：
 > - 由最终用户安装的应用
 > - 应用删除
 > - FaceTime
@@ -91,6 +91,7 @@ ms.locfileid: "39321486"
 > - iCloud 文档和数据
 > - 多玩家游戏
 > - 添加游戏中心好友
+> - Siri
 
 ## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。

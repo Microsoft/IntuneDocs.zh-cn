@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356567"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312615"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在受监督的 iOS 设备上绕过激活锁
 
@@ -78,9 +78,9 @@ Intune “绕过激活锁定”远程设备操作无需用户的 Apple ID 和密
 6. 转到设备的“硬件”部分，然后复制“条件访问”下的“激活锁旁路代码”值。
 
     >[!NOTE]
-    >在设备上恢复出厂设置之前，请复制旁路代码。 如果在复制该代码之前重置设备设置，则会从 Azure 中删除该代码。
+    >擦除设备前，请复制旁路代码。 如果在复制该代码之前重置设备设置，则会从 Azure 中删除该代码。
 
-7.  转到设备的“概述”边栏选项卡，然后选择“恢复出厂设置”。
+7.  转到设备的“概述”边栏选项卡，然后选择“擦除”。
 8.  重置设备后，系统会提示输入 Apple ID 和密码。 将“ID”字段留空，然后输入密码的“旁路代码”。 这会从设备中删除该帐户。 
 
 

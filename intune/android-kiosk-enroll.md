@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903137"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313455"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>设置 Android 企业展台设备的注册
 
@@ -112,7 +112,7 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 
 对于 Android 6 及更高版本的设备，可使用令牌注册设备。 **aft#setup** 注册方法时，Android 6.1 和更高版本还可利用 QR 码扫描。
 
-1. 打开恢复出厂设置的设备。
+1. 打开已擦除的设备。
 2. 在“欢迎使用”屏幕上，选择语言。
 3. 连接到 Wifi，然后选择“下一步”。
 4. 接受 Google 条款和条件，然后选择“下一步”。
@@ -129,7 +129,7 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 > [!Note]
 > 浏览器缩放可能使设备无法扫描 QR 码。 增加浏览器缩放比例可解决问题。
 
-1. 要在 Android 设备上启动 QR 读取，请在恢复出厂设置后看到的第一个屏幕上点击多次。
+1. 要在 Android 设备上启动 QR 读取，请在擦除后看到的第一个屏幕上点击多次。
 2. 对于 Android 7 和 Android 8 设备，系统会提示安装 QR 读取器。 Android 9 及更高版本的设备已安装了 QR 读取器。
 3. 使用 QR 读取器扫描注册配置文件 QR 码，然后按照屏幕上的提示进行注册。
 

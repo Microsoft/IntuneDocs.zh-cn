@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444874"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313232"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -85,10 +85,10 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Windows 批量注册的疑难解答
 
 ### <a name="provisioning-issues"></a>设置问题
-配置旨在用于新的 Windows 设备上。 配置失败可能需要对设备进行恢复出厂设置或通过启动映像来恢复设备。 这些示例描述了配置失败的一些原因：
+配置旨在用于新的 Windows 设备上。 预配失败可能需要对设备进行擦除或通过启动映像来恢复设备。 这些示例描述了配置失败的一些原因：
 
 - 如果因为缺少网络连接导致域加入过程失败，则尝试加入 Active Directory 域或不创建本地帐户的 Azure Active Directory 租户的配置包可能会使设备无法访问。
-- 预配包运行的脚本在系统上下文中运行。 脚本能够对设备文件系统和配置进行任意更改。 恶意或不正确的脚本可将设备置于仅能通过重置映像或恢复出厂设置才能将其恢复的状态。
+- 预配包运行的脚本在系统上下文中运行。 脚本能够对设备文件系统和配置进行任意更改。 恶意或不正确的脚本可将设备置于仅能通过重置映像或擦除才能将其恢复的状态。
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>有关批量注册和公司门户的问题
 如果用户尝试使用公司门户注册之前曾批量注册的设备，会收到警告，指示其设备需要执行进一步操作，如设置或注册。 设备已注册，但公司门户应用或站点不识别此注册。

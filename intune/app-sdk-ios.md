@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
-ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
+ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39249720"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241875"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -241,7 +241,7 @@ AccentColor | 字符串| 指定 PIN 屏幕的主题色，例如按钮文本颜�
 MAMTelemetryDisabled| 布尔值| 指定 SDK 是否会将任何遥测数据发送到其后端。| 可选。 默认值为“否”。 |
 MAMTelemetryUsePPE | 布尔值 | 指定 MAM SDK 是否将数据发送到 PPE 遥测后端。 使用 Intune 策略测试应用时使用该布尔值，以便测试遥测数据不会与客户数据相混淆。 | 可选。 默认值为“否”。 |
 MaxFileProtectionLevel | 字符串 | 可选。 允许应用指定其可以支持的 `NSFileProtectionType` 最大值。 如果该级别高于应用程序可以支持的级别，则此值将替代服务发送的策略。 可能的值：`NSFileProtectionComplete`、`NSFileProtectionCompleteUnlessOpen`、`NSFileProtectionCompleteUntilFirstUserAuthentication`、`NSFileProtectionNone`。|
-OpenInActionExtension | 布尔值 | 对于 Open-In Action 扩展，设置为“是”。 有关详细信息，请参阅通过 UIActivityViewController 共享数据部分。 |
+OpenInActionExtension | 布尔值 | 对于 Open in Action 扩展，设置为“是”。 有关详细信息，请参阅通过 UIActivityViewController 共享数据部分。 |
 WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 URL 方案。 | 应用使用的 WebView 通过链接和/或 javascript 处理 URL 时需要。 |
 
 ## <a name="receive-app-protection-policy"></a>接收应用保护策略
@@ -465,7 +465,7 @@ IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 类公开 API�
 
 ### <a name="copy-to-actions"></a>“复制到”操作
 
-通过 `UIActivityViewController` 和 `UIDocumentInteractionController` 共享文档时，iOS 会为每个支持打开该共享文档的应用程序显示“复制到”操作。 应用程序通过其 Info.plist 中的 `CFBundleDocumentTypes` 设置声明它们支持的文档类型。 如果策略禁止共享给非托管应用程序，则此类共享将不再可用。 作为替代，应用程序必须将非 UI Action 扩展添加到其应用程序并将其链接到 Intune APP SDK。 Action 扩展只是存根。 SDK 将实现文件共享行为。 请遵循以下步骤进行配置：
+通过 `UIActivityViewController` 和 `UIDocumentInteractionController` 共享文档时，iOS 会为每个支持打开该共享文档的应用程序显示“复制到”操作。 应用程序通过其 Info.plist 中的 `CFBundleDocumentTypes` 设置声明它们支持的文档类型。 如果策略禁止共享给非托管应用程序，则此类共享将不再可用。 作为替代，用户必须将非 UI Action 扩展添加到其应用程序并将其链接到 Intune App SDK。 Action 扩展只是存根。 SDK 将实现文件共享行为。 请遵循以下步骤进行配置：
 
 1. 应用程序必须在其 Info.plist `CFBundleURLTypes` 下至少定义一个 schemeURL。
 

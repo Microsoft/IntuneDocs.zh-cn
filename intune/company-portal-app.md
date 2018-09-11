@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
-ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
+ms.openlocfilehash: bd388131445715a4037cc0480c194d338212dbb0
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37844974"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329967"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -31,7 +31,7 @@ ms.locfileid: "37844974"
 > [!Tip]        
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。       
 
-自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“移动应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。  
+自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“客户端应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。  
 
 > [!Note]       
 > 当用户启动获取问题的帮助的工作流时，Windows 10 公司门户现在将直接向 Microsoft 发送应用日志。 这样一来，可以更为轻松地排除和解决向 Microsoft 提出的问题。  

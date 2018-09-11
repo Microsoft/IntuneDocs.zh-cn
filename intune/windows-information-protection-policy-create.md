@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61df998dae611eb7350fa144260780b5589afc61
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762240"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347301"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -62,8 +62,8 @@ ms.locfileid: "34762240"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。
-3. 在“Microsoft Intune”边栏选项卡上，选择“移动应用”。
-4. 在“移动应用”边栏选项卡上，选择“应用保护策略”。
+3. 在“Microsoft Intune”边栏选项卡上，选择“客户端应用”。
+4. 在“客户端应用”边栏选项卡上，选择“应用保护策略”。
 5. 选择“添加策略”以显示“添加一个策略”边栏选项卡。
 6. 添加下列值：
     - **名称：** 键入新策略的名称（必填）。
@@ -74,8 +74,8 @@ ms.locfileid: "34762240"
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>将推荐的应用添加到受保护的应用列表中
 
-1. 在“Microsoft Intune”边栏选项卡上，选择“移动应用”。
-2. 在“移动应用”边栏选项卡上，选择“应用保护策略”。
+1. 在“Microsoft Intune”边栏选项卡上，选择“客户端应用”。
+2. 在“客户端应用”边栏选项卡上，选择“应用保护策略”。
 3. 在“应用保护策略”边栏选项卡上，选择想要修改的策略。 可看到“Intune 应用保护”边栏选项卡。
 4. 从“Intune 应用保护”边栏选项卡中选择“受保护的应用”。 随即打开“受保护的应用”边栏选项卡，并显示此应用保护策略列表中已包含的全部应用。
 5. 选择“添加应用”。 “添加应用”信息显示筛选后的应用列表。 可使用边栏选项卡顶部的列表更改列表筛选器。
@@ -86,8 +86,8 @@ ms.locfileid: "34762240"
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>将 Microsoft Store 应用添加到受保护的应用列表中
 
 **添加“应用商店”应用**
-1. 在“Microsoft Intune”边栏选项卡上，选择“移动应用”。
-2. 在“移动应用”边栏选项卡上，选择“应用保护策略”。
+1. 在“Microsoft Intune”边栏选项卡上，选择“客户端应用”。
+2. 在“客户端应用”边栏选项卡上，选择“应用保护策略”。
 3. 在“应用保护策略”边栏选项卡上，选择想要修改的策略。 可看到“Intune 应用保护”边栏选项卡。
 4. 从“Intune 应用保护”边栏选项卡中选择“受保护的应用”。 随即打开“受保护的应用”边栏选项卡，并显示此应用保护策略列表中已包含的全部应用。
 5. 选择“添加应用”。 “添加应用”信息显示筛选后的应用列表。 可使用边栏选项卡顶部的列表更改列表筛选器。
@@ -99,8 +99,8 @@ ms.locfileid: "34762240"
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>将桌面应用添加到受保护的应用列表中
 
 **添加桌面应用**
-1. 在“Microsoft Intune”边栏选项卡上，选择“移动应用”。
-2. 在“移动应用”边栏选项卡上，选择“应用保护策略”。
+1. 在“Microsoft Intune”边栏选项卡上，选择“客户端应用”。
+2. 在“客户端应用”边栏选项卡上，选择“应用保护策略”。
 3. 在“应用保护策略”边栏选项卡上，选择想要修改的策略。 可看到“Intune 应用保护”边栏选项卡。
 4. 从“Intune 应用保护”边栏选项卡中选择“受保护的应用”。 随即打开“受保护的应用”边栏选项卡，并显示此应用保护策略列表中已包含的全部应用。
 5. 选择“添加应用”。 “添加应用”信息显示筛选后的应用列表。 可使用边栏选项卡顶部的列表更改列表筛选器。
@@ -116,8 +116,7 @@ ms.locfileid: "34762240"
 
 WIP Learning 是一个报表，用于监视已启用 WIP 和 WIP 未知的应用。 未知应用指不是由组织的 IT 部门部署的应用。 在“块”模式下强制执行 WIP 前，可从报告中导出这些应用并将其添加到 WIP 策略，以避免生产力中断。
 
-<!-- 1631908 -->
-除了查看已启用 WIP 的应用的相关信息外，还可以查看与网站共享工作数据的设备的摘要。 通过此信息，可以确定应将哪些网站添加到组和用户 WIP 策略中。 摘要显示已启用 WIP 的应用访问的网站 URL。
+<!-- 1631908 -->除了查看已启用 WIP 的应用的相关信息外，还可以查看与网站共享工作数据的设备的摘要。 通过此信息，可以确定应将哪些网站添加到组和用户 WIP 策略中。 摘要显示已启用 WIP 的应用访问的网站 URL。
 
 使用已启用 WIP 的应用和 WIP 未知的应用时，建议对在受保护的应用列表上具有相应应用的小组进行验证时，从“无提示”或“允许覆盖”开始。 完成后，可以更改为最终的强制策略“块”。
 
@@ -149,7 +148,7 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
 1. 打开 [Azure 门户](https://portal.azure.com)。 选择“所有服务”。 在文本框筛选器中键入“Intune”。
 
-3. 选择“Intune” > “移动应用”。
+3. 选择“Intune” > “客户端应用”。
 
 4. 选择“应用保护状态” > “报告” > “Windows 信息保护学习”。  
 

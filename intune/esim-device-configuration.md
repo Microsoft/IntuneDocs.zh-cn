@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400277"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314017"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
@@ -179,7 +179,7 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 2. 转到 Azure AD 组，然后从组中删除该设备。
 3. 当删除的设备联系 Intune 时，系统会评估更新的策略，并删除 eSIM 配置文件。
 
-当用户取消注册设备时，或者在设备上运行[删除公司数据](devices-wipe.md#remove-company-data)或[重置设备远程操作](devices-wipe.md#factory-reset)时，也会删除 eSIM 配置文件。
+当用户[停用](devices-wipe.md#retire)或取消注册设备时，或者在设备上运行[重置设备远程操作](devices-wipe.md#wipe)时，也会删除 eSIM 配置文件。
 
 > [!NOTE]
 > 删除配置文件可能无法停止计费。 请联系移动运营商，检查设备的计费状态。

@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254478"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329404"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用应用保护策略访问操作选择性地擦除数据
 
@@ -33,7 +33,7 @@ ms.locfileid: "39254478"
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。  
     Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用” > “应用保护策略”。
+3. 在“Intune”窗格中，选择“客户端应用” > “应用保护策略”。
 4. 单击“添加策略”（也可编辑现有策略）。 
 5. 单击“配置所需设置”，查看可为策略配置的设置列表。 
 6. 在“设置”窗格中向下滚动，将会看到标题为“访问操作”的部分，内含可编辑的表。

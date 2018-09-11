@@ -15,12 +15,12 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fc64f672a5c488848303f8d5ea5ea1467b0b195
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 2677009921a9c498f988bdc674db6342613a05d6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869487"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347723"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>将 Android 应用商店应用添加到 Microsoft Intune
 
@@ -31,8 +31,8 @@ ms.locfileid: "37869487"
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。  
     Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用”。
-4. 在“移动应用”工作负载窗格的“管理”下，选择“应用”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”。
 5. 选择“添加”。
 6. 在“添加应用”窗格中的“应用商店应用”类型下，选择“Android”。
 7. 若要配置应用信息，请选择“配置”，然后提供以下信息。 对于 Android 应用，导航到 [Google Play 应用商店](https://play.google.com/store) 并搜索要部署的应用。 选择应用，并记下应用的详细信息。 某些值可能已自动填充（具体取决于所选应用）。

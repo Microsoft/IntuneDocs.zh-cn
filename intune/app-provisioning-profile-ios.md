@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d3cc718c0bfd0bba68480b4cd4003cd52489a50
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5ed39a13c8866786ac044d77ca61d91becd5b89f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34225032"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329558"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 应用预配配置文件防止应用过期
 
@@ -43,9 +43,9 @@ ms.locfileid: "34225032"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在 Intune 窗格中，选择“移动应用”。
-1.  在“移动应用”工作负荷中，选择“管理” > “iOS 应用预配配置文件”。
-2.  在配置文件列表窗格中，选择“创建配置文件”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+1.  在“客户端应用”工作负载中，选择“管理” > “iOS 应用预配配置文件”。
+2.  在配置文件窗格列表中，选择“创建配置文件”。
 3. 在“创建配置文件”窗格中，配置下列值：
     - **命名** - 为此移动预配配置文件提供一个名称。
     - **说明** -（可选）提供策略的说明。

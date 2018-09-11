@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,44 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279485"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347688"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 了解这些更新有助于与用户进行通信，并更新为了支持部署而创建的任何自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日当周  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>公司门户网站的新用户体验更新<!--2000968 -->  
+我们已根据客户反馈向公司门户网站添加新功能。 可从设备上体验到现有功能和可用性的重大改进。 该网站的各个区域（如设备详细信息、反馈与支持以及设备概述）都采用了全新的现代化快速响应设计。 已更新 [Intune 公司门户网站文档](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)以体现这些更改。   
+
+将看到以下更新：  
+
+- 简化了所有设备平台上的工作流
+- 改进了设备识别和注册流
+- 提供了更多有用的错误消息
+- 语言更加友好，减少了技术术语的使用
+- 共享指向应用的直接链接的功能
+- 改善了大型应用目录的性能
+- 为所有用户增加了辅助功能  
+
+|已更新|上一个|
+|---|---|
+|![更新后的设备页面显示设备与上述设备信息完全符合，不再弹出以上完整列表。](./media/iwp-device-after-1803.png)|![设备页面的以前版本。](./media/iwp-device-before-1803.png)|
+|![更新后的应用安装页面会完全地显示应用的说明和各种安装信息，包括发布日期、版本和应用类型。](./media/iwp-app-install-after-1803.png)|![应用安装页面的以前版本。](./media/iwp-app-install-before-1803.png)|  
+
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日所在的一周  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的更多同步机会   
 适用于 Windows 的公司门户应用现在允许直接从 Windows 任务栏和“开始”菜单启动同步。 如果唯一任务是同步设备并访问公司资源，那么此功能特别有用。 要访问新功能，请右键单击固定到任务栏或“开始”菜单的公司门户图标。 在菜单选项（也称为跳转列表）中，选择“同步此设备”。 公司门户将打开“设置”页面并启动同步。  
 
-![Windows 任务栏在设备桌面上的屏幕截图。 已单击公司门户应用程序图标，以显示带有“固定到任务栏”、“关闭窗口”和“同步此设备”操作选项的菜单。](./media/sync-device-from-start-menu-1807.png)  
+![设备桌面上 Windows 任务栏的屏幕截图。 已单击公司门户应用程序图标，以显示带有“固定到任务栏”、“关闭窗口”和“同步此设备”操作选项的菜单。](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的新浏览体验  
 
@@ -112,7 +132,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 我们改进了适用于 iOS 的公司门户应用中的设备设置工作流。 语言对用户更加友好，在可能的情况下我们还对屏幕进行了合并。 我们还通过在整个设置文本中使用公司名称使语言特定于你的公司。
 
 > [!NOTE]
-> 我们使用你在 Azure 门户中设置的公司名称：“Microsoft Intune” > “移动应用” > “公司门户品牌” > “公司名称”。 如果你未设置此值，我们将使用你在“Azure Active Directory” > “属性” > “名称”中设置的租户名称。 如果你尚未在公司门户品牌中设置公司名称，并且不希望显示租户名称，我们建议你在“公司门户品牌”选项卡中设置公司名称。如果你不希望此字符串显示在公司门户的标题中，则可以取消选中该复选框以“在徽标旁显示公司名称”。
+> 我们使用在 Azure 门户中设置的公司名称：“Microsoft Intune” > “客户端应用” > “公司门户品牌” > “公司名称”。 如果你未设置此值，我们将使用你在“Azure Active Directory” > “属性” > “名称”中设置的租户名称。 如果你尚未在公司门户品牌中设置公司名称，并且不希望显示租户名称，我们建议你在“公司门户品牌”选项卡中设置公司名称。如果你不希望此字符串显示在公司门户的标题中，则可以取消选中该复选框以“在徽标旁显示公司名称”。
 
 |以前|完成|
 |---|---|
@@ -458,12 +478,7 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 -   共享指向应用的直接链接的功能
 - 改善了大型应用目录的性能
 
-不需要执行任何操作，即可准备好迎接此更改。 更新后的公司门户网站可访问后，我们会通知你。 但是，最终可能需要使用更新后的屏幕截图更新最终用户文档。 请注意，可能还需要更新 iOS 公司门户应用的文档，因为网站驱动 iOS 应用的“应用”部分。
-
-|已更新|上一个|
-|---|---|
-|![更新后的设备页面显示设备与上述设备信息完全符合，不再弹出以上完整列表。](./media/iwp-device-after-1803.png)|![设备页面的以前版本。](./media/iwp-device-before-1803.png)|
-|![更新后的应用安装页面会完全地显示应用的说明和各种安装信息，包括发布日期、版本和应用类型。](./media/iwp-app-install-after-1803.png)|![应用安装页面的以前版本。](./media/iwp-app-install-before-1803.png)|
+不需要执行任何操作，即可准备好迎接此更改。 更新后的公司门户网站可访问后，我们会通知你。 但是，最终可能需要使用更新后的屏幕截图更新最终用户文档。 请注意，可能还需要更新 iOS 公司门户应用的文档，因为网站驱动 iOS 应用的“应用”部分。  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>公司门户网站的用户界面更新 <!--1313244 part 2-->
 

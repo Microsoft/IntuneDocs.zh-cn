@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f1b2af2723ddb4c89f7f3d6409ced12f7a16883a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223656"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330290"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>移动 Intune 数据仓库帐户数据 
 
@@ -45,7 +45,7 @@ ms.locfileid: "34223656"
 3. 将报表保存在本地。
  
 ### <a name="app-protection-reports"></a>应用保护报表  
-1. 在 Azure 门户中，导航到“Microsoft Intune” -> “移动应用” -> “应用保护状态”。
+1. 在 Azure 门户中，导航到“Microsoft Intune” -> “客户端应用” -> “应用保护状态”。
 2. 单击下载图标 ( ⤓ ) 可保存每个报表。
 
 ### <a name="device-configuration-charts"></a>设备配置图表 

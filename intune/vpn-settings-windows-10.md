@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 8/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 61310f5baa64c43d2e818df6c61a36d232922c1c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744731"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312844"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune 中的 Windows 10 VPN 设置
 
@@ -42,6 +42,8 @@ ms.locfileid: "34744731"
   - **默认服务器**：启用此服务器作为设备建立连接时使用的默认服务器。 只将一台服务器设置为默认服务器。
   - **导入**：浏览到按以下格式包含服务器列表的逗号分隔文件：描述、IP 地址或 FQDN、默认服务器。 选择“确定”，将这些服务器导入到“服务器”列表。
   - **导出**：将服务器列表导出到逗号分隔值 (csv) 文件
+
+- **通过内部 DNS 注册 IP 地址**：选择“启用”，将 Windows 10 VPN 配置文件配置为通过内部 DNS 动态注册分配给 VPN 接口的 IP 地址，或选择“禁用”不动态注册 IP 地址。
 
 - **连接类型**：从以下供应商列表中选择 VPN 连接类型：
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4774cdc54a526f25b006c0c3d1a745ab96005c3a
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 5b3fbd677eea9143bf5cb297253303330129ef25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33676624"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148572"
 ---
-# <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>从适用于 Windows 10 的公司门户应用锁定设备
+# <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>从适用于 Windows 10 的公司门户应用锁定设备
 
-从适用于 Windows 10 的公司门户应用远程锁定丢失或被盗设备。 如果设备支持，无论设备在何处，公司门户应用都可锁定其屏幕。 锁定后需要密码才能解锁。
+从适用于 Windows 10 的公司门户应用远程锁定丢失或被盗设备。 如果设备支持，无论设备在何处，此设置都可锁定设备屏幕。 用户必须输入正确的密码才能解锁设备和再次使用设备。
 
 运行以下内容的设备支持远程锁定：
 
@@ -43,4 +43,4 @@ ms.locfileid: "33676624"
    ![公司门户应用的屏幕截图、“设备详细信息”页、远程锁定确认提示。](./media/1804_remote_lock_Windows_CPapp_06.png)  
 4. 如果找到你的设备，请输入密码来解锁。  
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

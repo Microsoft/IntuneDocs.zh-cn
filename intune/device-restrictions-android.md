@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587017"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313693"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 和 Samsung Knox Standard 设备限制设置 - Intune
 
@@ -35,7 +35,7 @@ ms.locfileid: "39587017"
 - **复制和粘贴(仅限 Samsung Knox)** - 允许对设备使用复制和粘贴功能。
 - **应用间的剪贴板共享(仅限 Samsung Knox)** - 允许使用剪贴板在应用之间进行复制和粘贴。
 - **诊断数据提交(仅限 Samsung Knox)** - 阻止用户从设备提交诊断数据。
-- **恢复出厂设置(仅限 Samsung Knox)** - 允许用户对设备恢复出厂设置。
+- “擦除(仅限 Samsung Knox)”：允许用户对设备执行[擦除](devices-wipe.md)。
 - **地理位置(仅限 Samsung Knox)** - 允许设备利用位置信息。
 - **切断电源(仅限 Samsung Knox)** - 允许用户切断设备电源。<br>如果禁用，则无法设置**擦除设备前的登录失败次数**。
 - **屏幕截图(仅限 Samsung Knox)** - 允许用户以图像形式捕获屏幕内容。

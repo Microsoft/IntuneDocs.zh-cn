@@ -5,7 +5,7 @@ keywords: Mac OS X、macOS、OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/11/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,50 +17,71 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224749"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147711"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
-获取对组织的应用、数据和资源的访问权限可使工作更加轻松。 你的组织使用 Intune [管理对这些资源的访问权限](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)，你需要下载适用于 macOS 的公司门户应用。 这些说明适用于使用 OS X El Capitan 10.11+ 的 macOS 设备。
+通过 Intune 公司门户应用注册 macOS 设备，以便获取对组织的电子邮件、文件和应用的安全访问权限。
+
+组织通常会要求先托管设备，然后才能从中访问专有数据。 托管设备后，组织可以通过移动设备管理提供程序向该设备推送策略和应用。 若要从设备持续访问工作或学校信息，必须配置设备以匹配策略设置。  
+
+本文介绍适用于 macOS 的 Intune 公司门户应用如何帮助你注册、配置和维护设备，以满足组织需求。
+
+## <a name="what-to-expect-from-the-company-portal-app"></a>公司门户应用的作用
+
+初始设置期间，应用要求你向组织验证自己的身份。 然后，它将告知你必须进行的所有设备设置。 例如，组织通常会设置密码的最小或最大字符数要求，必须满足此要求。    
+
+注册设备后，公司门户应用将继续确保设备受到保护。 例如，如果安装的应用来自于不受信任的源，应用将发出警报，且有时会撤销对公司数据的访问权限。 诸如此类的应用保护策略在组织中很常见，通常需要卸载不受信任的应用，然后才能重新获得访问权限。
+
+如果注册后组织实施了新的安全要求（如多重身份验证），公司门户应用将对此进行通知。 可调整设置，以便可以继续通过该设备开展工作。  
+
+若要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)。  
+
+## <a name="get-your-device-managed"></a>托管设备  
+使用以下步骤注册运行 OS X El Capitan 10.11 和更高版本的 macOS 设备。   
 
 
-1. 在你的“Dock”上找到“Safari”并打开一个新窗口，然后打开[公司门户网站](https://portal.manage.microsoft.com)。
+1. 若要访问公司门户网站，请在“Safari”中打开新窗口，并转到 https://portal.manage.microsoft.com。  
 
 2. 使用工作或学校帐户登录到公司门户网站。
 
    [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 
-3. 登录后，单击页面左上角的“菜单”，选择“我的设备”。
+3. 转到页面左上角，单击“菜单” > “设备”。  
 
-   ![Web 门户登录页面的屏幕截图，Web 门户显示没有可安装的应用，下方有“我的设备”按钮。](./media/macOS_enroll_001_landing_page.png)
+4. “设备”页将显示托管设备列表或横幅。 显示的内容取决于是否已托管设备。 
+    * 若要添加未列出的设备，请选择显示为“点击此处告诉我们你正在使用的设备或添加新设备”的横幅。
+    * 如果没有任何设备，横幅上将显示：“没有任何托管设备。请点击此处添加设备。” 单击横幅添加设备。  
 
-4. 在“我的设备”页上，显示已注册的设备列表或仅显示横幅。 这取决于是否已注册设备（macOS 或其他设备）。 若要注册未列出的设备，请选择显示“如果设备已列出，请点击此处进行识别。如果设备未列出，请点击此处注册设备”的横幅。 如果没有任何已注册设备，横幅上将显示“未注册任何设备。请点击此处注册此设备。”
+     ![“设备”页的屏幕截图，使用红色方框圈出横幅选项，以突出显示单击位置。](./media/CP-enroll-MACOS-1808.png)  
+5.  完成以下步骤，该步骤与公司门户当前显示的消息匹配。  
+    * 如果是第一次添加设备，系统将提示在设备上下载公司门户应用。 单击“下载”继续。  
 
-    ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
+         ![下载 macOS 公司门户应用提示屏幕的示例屏幕截图。 用户可以选择单击提示左下角的蓝色“下载”按钮，或单击右下角的灰色“取消”按钮。](./media/CP-enroll-download-macOS-1808.png)  
 
-5. 将公司门户应用下载到 macOS 设备以继续注册。
+    * 如果已有托管的 macOS 设备，则将收到包含当前已托管 macOS 设备列表的提示。 选择“此处未列出我的设备” > “下载”，以便在添加的设备上下载公司门户应用。  
 
-    ![提示用户下载 macOS 公司门户应用的通知。 此通知包含上述步骤中所列的文本，并在右下角显示“下载”按钮。](./media/macOS_enroll_IWP_CP_app_notice.png)
+         ![下载 macOS 公司门户应用提示屏幕的示例屏幕截图。 用户可以选择“此处未列出我的设备”，或选择页面中间位置的特定设备。 提示的左下角将显示蓝色“下载”按钮，右下角将显示灰色“取消”按钮](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. Mac 将进行检查，确认下载的 CompanyPortal.pkg 可以安全打开。 打开安装程序并完成安装过程。
+6. 设备将进行检查，确认安装文件 CompanyPortal.pkg 可以安全打开。 完成后，打开安装程序并完成安装。  
 
-7. 完成安装后，打开“应用程序”文件夹或“Launchpad”，然后打开“公司门户”。
+7. 完成安装程序后，转到“启动板”并打开“公司门户”。  
 
-8. Mac 会显示一条消息：“CompanyPortal”是从 Internet 下载的应用程序。是否确认要打开? 单击“打开”。
+8. macOS 设备将提示确认是否想要打开公司门户应用。 单击“打开”。  
 
-   > [!NOTE]
-   > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 如果计算机拒绝打开“公司门户”应用，请尝试[关闭 Gatekeeper](https://support.apple.com/HT202491)，然后打开该应用。
+   > [!TIP]
+   > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 如果计算机拒绝打开“公司门户”应用，请[关闭 Gatekeeper](https://support.apple.com/HT202491)。 然后打开该应用。
 
-9. “公司门户”应用中的第一个屏幕会提示你使用登录公司门户网站时所用的相同工作帐户或学校帐户登录。
+9. 公司门户应用中显示的第一个屏幕将提示你登录。 使用用于登录到公司门户网站的同一工作或学校帐户。
 
-10. 公司门户确认帐户信息后会显示“设备注册”和“设备符合性”状态。 黄色三角形表示为了确保可在工作时安全使用 Mac，需要执行一些操作。 单击“开始”，开始[向管理系统注册设备](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+10. 公司门户确认帐户信息后会显示“设备注册”和“设备符合性”状态。 黄色三角形突出显示保护学校或工作 macOS 设备需采取的操作。 单击“开始”可开始注册。 了解注册设备时[组织可以看到的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
-11. Mac 随即开始注册到管理系统。 在此期间，系统可能会提示提供计算机的登录信息。 注册需要几分钟时间。 在此期间，可在计算机上执行其他操作。 完成公司访问设置后，会显示一条消息，通知操作已完成。
+11. 系统可能会提示提供计算机的登录信息。 在管理中注册设备可能需要几分钟时间。 在此期间，可在设备上执行其他操作。 完成公司访问设置后，将收到一条消息，通知操作已完成。  
 
-仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)中查找他们的联系信息。
+仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。  

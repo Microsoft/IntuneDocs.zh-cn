@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/23/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,57 +17,68 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 45b087b9617b783517f8296f1726891392764d5f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8ce71a14f9bb7e877fb31e78afdf64d5e492f4a8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019324"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146683"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何从公司门户网站重置设备密码
 
-如果丢失了设备 PIN 或在 Intune 中注册的设备的密码，则可以使用[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)进行重置。 可使用公司门户网站管理在 Intune 中注册的计算机和设备，还可以用于执行大多数使用公司门户应用时执行的相同任务。
+如果丢失了设备 PIN 或密码，可使用[公司门户网站](https://portal.manage.microsoft.com)进行重置。  
 
-> [!NOTE]
-> 如果使用企业注册设备，在公司门户网站上可能看不到“重置密码”按钮。 如果看不到，请联系公司支持人员重置密码。
+如果使用的是公司注册设备，则可能看不到重置设备密码的选项。 请联系公司支持人员为你重置密码。
 
-重置密码：
-
-1. 在[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/intune/media/CP_hamburger_menu.png)，然后选择“我的设备”。
-
-2. 在“我的设备”页上，选择想要重置密码的设备名称。
-
-   ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
-
-3. 设备将在弹出窗口中打开。 选择“重置密码”按钮。
-
-   ![公司门户网站上已选设备的所有选项，包括重命名、删除、重置设备、重置密码和远程锁定。 ](./media/iwp-screen-with-all-options.png)
-
-4. 系统会显示横幅，询问你是否确定要重置密码并在重置密码后从设备中注销。 然后，需要等待 5 分钟后才能重新登录。
-
-   ![重置密码横幅，显示关于重置设备密码的警告以及用户将如何注销。用户输入的按钮为“注销”和“取消”。](./media/iwp-reset-passcode-popup.png)
-
-5. 选择“注销”，将收到最后一条消息，告知你已删除设备中的密码。 如果设备未在身边，请勿删除密码，因为对设备具有物理访问权限的任何人将能够访问设备上的大部分信息（个人或公司信息）。 
-
-   ![第二条重置密码横幅，显示关于重置设备密码的警告以及将如何删除设备中的密码。 该横幅还介绍了通过设备设置来设置新密码的方法。](./media/iwp-reset-passcode-2nd-popup.png)
-
-   不同的设备具有不同的密码类型。
-
-   **Android**：删除现有密码，然后使用字母和数字创建临时密码 
-  
    > [!NOTE]
-   > 不能为 Android 7.0 或更高版本的设备重置密码。 如果忘记密码，必须将设备重置为出厂设置。
+   > 不能为 Android 7.0 或更高版本的设备重置密码。 如果忘记密码，则必须将设备重置为出厂设置。 
 
-   **iOS**：删除现有密码且不创建临时密码。 如果使用 Touch ID 指纹扫描仪打开设备或购买商品，则需再次设置。
+## <a name="reset-your-passcode"></a>重置密码
 
-   **Windows 10 移动版**：删除现有密码，然后使用字母和数字创建临时密码。 使用 Windows Hello 面部识别进行登录时仍然受支持。
+1.  打开[公司门户网站](https://portal.manage.microsoft.com)，然后选择“菜单”按钮 >“设备”。  
+
+2. 选择需要重置密码的设备。  
+
+    ![“设备”页面的屏幕截图，其中 2 个磁贴用于显示无法识别的、以一般方式命名的设备。 灰色横幅位于设备的正下方，提示用户识别他们正在使用的设备或添加新的设备。](./media/rename-reset-device-step2-1808.png) 
+
+3. 选择“重置密码”。 如果页面顶部未显示密码选项，请选择“更多(…)” > “重置密码”。   
+
+   ![公司门户网站上已选设备的设备详细信息页，其顶部具有显示“重命名”、“删除”、“重置设备”、“重置密码”和“远程锁定”的链接列表。 ](./media/rename-reset-device-1808.png)   
+
+    ![“更多”图标的放大视图，用红色箭头突出显示。](./media/rename-reset-device-step3-more-1808.png)  
+
+4. 出现提示时，单击“注销”。再次出现提示时，重新登录。 必须在五分钟内重新登录公司门户网站，否则公司门户网站将不会重置设备密码。  
+
+   > [!NOTE]
+   > 必须重新登录以确认身份。 这是为了防止恶意尝试重置设备密码。
+
+   ![显示注销公司门户提示的示例屏幕截图。 用户输入的按钮为“注销”和“取消”。](./media/iwp-reset-passcode-popup-1808.png)
+
+5. 将显示一条消息，警告即将删除现有设备密码。 单击“重置密码”以确认。  
+    > [!WARNING]
+    > 重置密码后，对设备具有物理访问权限的任何用户都可以访问其中大多数个人和公司信息。 如果该设备当前非你所有，请勿重置密码。  
+
+   ![显示第二条重置密码消息的示例屏幕截图。 其中包括详细介绍设置新密码的文档链接，以及分别用于重置密码和取消的按钮。](./media/iwp-reset-passcode-popup2-1808.png) 
+
+6. 如果要重置 iOS 设备的密码，则将删除其现有密码。 对于 Windows 或 Android 设备，系统将发出临时密码，用于解锁设备和设置新密码。 
+
+   > [!NOTE]
+   > 可在公司门户中的设备详细信息页找到 Windows 和 Android 设备的临时密码。 有关特定于操作系统的更多密码介绍，请参阅[设置新密码](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode)部分。  
+   
+7. 在设备上，转到“设置”并更改临时密码。 
+
+8. 公司门户网站右上角将出现一个标志。 单击可读取通知和确认已成功重置密码。  
+
+## <a name="set-up-a-new-passcode"></a>设置新密码  
+
+本部分介绍每个设备平台的密码重置和临时密码行为。  
+
+**Android**：删除现有密码，然后创建由字母和数字组成的临时密码。
+
+**iOS**：删除现有密码且不创建临时密码。 如果使用 Touch ID 指纹扫描仪打开设备或进行购物，则必须重新进行设置。  
+
+**Windows 10 移动版**：删除现有密码，然后创建由字母和数字组成的临时密码。 Windows Hello 面部识别将仍在设备上有效（如果已设置）。
     
-   **Windows Phone 8.1**：删除现有密码，然后使用数字创建临时密码
+**Windows Phone 8.1**：删除现有密码，然后创建由数字组成的临时密码。  
 
-   对于 Android 和 Windows 设备，临时密码将显示在“设备详细信息”中。 
-
-6. 解锁设备，然后通过转到设备上的“设置”来设置新密码或更改临时密码。
-
-若要查看确认密码已重置成功的通知，请单击公司门户网站右上角的通知标志。
-
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

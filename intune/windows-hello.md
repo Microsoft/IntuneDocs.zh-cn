@@ -6,19 +6,19 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834764"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313728"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>将 Windows Hello 企业版与 Microsoft Intune 集成
 
@@ -31,7 +31,10 @@ ms.locfileid: "31834764"
 
 Intune 与 Hello for Business 集成的两种方式：
 
--   可以使用 Intune 策略来控制用户能够和不能用于登录的手势。
+-   可在“设备注册”下创建 Intune 策略。 此策略面向整个组织（租户级）。 它支持 Windows AutoPilot 全新体验 (OOBE)，并在设备注册时应用。 
+-  可在“设备配置”下创建标识保护配置文件。 此配置文件面向分配的用户和设备，并在签入期间应用。 
+
+使用本文创建面向整个组织的默认 Windows Hello 企业版策略。 要创建应用于选择用户和设备组的标识保护配置文件，请参阅[配置标识保护配置文件](identity-protection-configure.md)。  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
@@ -57,7 +60,7 @@ Intune 与 Hello for Business 集成的两种方式：
 
 4. 在“所有用户”窗格中，单击“属性”，然后输入 Windows Hello 企业版设置的“名称”和可选“说明”。
 
-5. 在“所有用户”窗格中，单击“设置”，然后为“配置 Windows Hello 企业版”从下列选项中进行选择：
+5. 在“所有用户”窗格中，单击“设置”，然后为“配置 Windows Hello 企业版”选择下列某一选项：
 
     - “禁用”。 如果不想要使用 Windows Hello 企业版，请选择此设置。 屏幕上的所有其他设置将不可用。
     - “启用”。 如果想要配置 Windows Hello 企业版设置，请选择此设置。

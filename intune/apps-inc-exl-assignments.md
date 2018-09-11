@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 47922a30d8106c4d60b6caa43c8855195e3a0220
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905404"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330239"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>在 Microsoft Intune 中包括和排除应用分配
 
@@ -44,8 +44,8 @@ Intune 排除组时不会考虑用户与设备的关联。 在排除设备组的
 若要使用包括和排除分配将应用分配给组，请执行以下操作：
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”菜单中，选择“移动应用”。
-4. 在“移动应用”窗格中，选择“应用”。 随即显示已添加应用的列表。
+3. 在“Intune”菜单中，选择“客户端应用”。
+4. 在“客户端应用”窗格中，选择“应用”。 随即显示已添加应用的列表。
 5. 选择要分配的应用。 仪表板显示有关应用的信息。 
 6. 在菜单的“管理”部分中选择“分配”。 
 

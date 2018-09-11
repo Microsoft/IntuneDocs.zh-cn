@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf1b47b578c5abe0051b94c9f4c2127cd48f0e76
-ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
+ms.openlocfilehash: 27995fb643e4373e2fa6a34c7147c69905f9ccc0
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43092271"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312638"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -133,13 +133,13 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
     >
     > 使用 Apple 设置助理进行身份验证时不支持这些功能。
 
-
 6. 如果对“不使用 Apple 设置助理而使用公司门户进行身份验证”选择了“是”，则可以选择使用批量采购计划 (VPP) 令牌在设备上自动安装公司门户，而无需用户提供 Apple ID。 要使用 VPP 令牌安装公司门户，请在“使用 VPP 安装公司门户”下选择一个令牌。 请确保令牌没有过期，并且具有足够公司门户应用使用的设备许可证。 如果令牌过期或许可证用完，Intune 将改为安装 App Store 公司门户并提示输入 Apple ID。
 
     ![使用 VPP 安装公司门户的屏幕截图。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
+7. 如果为“使用 VPP 安装公司门户”选择了令牌，则可在设置助理完成后，立刻选择将设备锁定为单应用模式（具体而言，即公司门户应用）。 针对“在身份验证前以单应用模式运行公司门户”，选择为“是”以设置此选项。 要使用该设备，用户必须先使用公司门户登录以进行身份验证。
 
-7. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
+8. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
 
     ![“设备管理设置”屏幕截图。](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -153,26 +153,28 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
      > [!NOTE]
      > 不受监督的注册设备只能使用 Apple Configurator 重置为受监督。 以此方式重置设备需要使用 USB 线将 iOS 设备连接到 Mac。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。
 
-8. 选择是否要为使用此配置文件的设备锁定注册。 “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。 
+9. 选择是否要为使用此配置文件的设备锁定注册。 “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。 注册设备后，除非擦除设备，否则无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。 
 
-9. 选择是否要让使用此配置文件的设备能够“与计算机同步”。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
+10. 选择是否要让使用此配置文件的设备能够“与计算机同步”。 如果选择“通过证书允许 Apple Configurator”，则必须在“Apple Configurator 证书”下选择证书。
 
-10. 如果在上一步中选择了“通过证书允许 Apple Configurator”，则选择要导入的“Apple Configurator 证书”。
+11. 如果在上一步中选择了“通过证书允许 Apple Configurator”，则选择要导入的“Apple Configurator 证书”。
 
-11. 选择“确定”。
+12. 选择“确定”。
 
-12. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)。
+13. 选择“设置助理自定义”，配置下列配置文件设置：![设置助理自定义。](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+
 
     | 部门设置 | 描述 |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>部门名称</strong> | 用户在激活过程中轻点“关于配置”时显示。 |
-    |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。 |
+    |    <strong>部门电话</strong>     | 用户在激活过程中单击“需要帮助”按钮时显示。 |
 
   用户设置设备时，可以选择在设备上显示或隐藏各种设置助理屏幕。
   - 如果选择“隐藏”，设置期间将不会显示该屏幕。 设置设备之后，用户仍可以进入“设置”菜单来设置此功能。
   - 如果选择“显示”，设置期间将显示该屏幕。 用户有时可以跳过该屏幕，无需采取任何操作。 但是，他们可以稍后进入设备的“设置”菜单来设置此功能。 
 
-| 设置助理屏幕设置 | 如果选择“显示”，设置期间设备将... |
+
+    | 设置助理屏幕设置 | 如果选择“显示”，设置期间设备将... |
     |------------------------------------------|------------------------------------------|
     | <strong>密码</strong> | 提示用户输入密码。 始终需要密码，除非设备受到保护，或以某种其他方式（即限制设备只可使用一个应用的展台模式）控制访问权限。 |
     | <strong>位置服务</strong> | 提示用户输入位置。 |
@@ -186,9 +188,9 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
     | <strong>诊断数据</strong> | 向用户展示“诊断”屏幕。 此屏幕为用户提供将诊断数据发送到 Apple 的选项。 |
 
 
-13. 选择“确定”。
+14. 选择“确定”。
 
-14. 若要保存配置文件，则选择“创建”。
+15. 若要保存配置文件，则选择“创建”。
 
 ## <a name="sync-managed-devices"></a>同步托管设备
 Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步，以在 Azure 门户的 Intune 中查看托管设备。
@@ -218,7 +220,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 2. 选择“设置默认配置文件”，在下拉列表中选择配置文件，然后选择“保存”。 此配置文件将应用于所有使用此令牌注册的设备。
 
 ## <a name="distribute-devices"></a>分配设备
-已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有恢复出厂设置才能应用注册配置文件。
+已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有擦除后才能应用注册配置文件。
 
 请参阅[通过设备注册计划在 Intune 中注册 iOS 设备](/intune-user-help/enroll-your-device-dep-ios)。
 

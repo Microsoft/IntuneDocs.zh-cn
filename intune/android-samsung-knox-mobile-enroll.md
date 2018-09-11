@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321180"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313058"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -88,7 +88,7 @@ ms.locfileid: "39321180"
 
 > [!NOTE]
 >
->在定义用户关联后，只有关联的用户才可以使用 KME 来注册设备。 即使对设备恢复出厂设置后，也是如此。 当未在 Knox 门户中定义用户关联时，拥有有效的 Intune 许可证的任何用户都可以使用 KME 来注册设备。
+>在定义用户关联后，只有关联的用户才可以使用 KME 来注册设备。 即使对设备进行擦除重置后，也是如此。 当未在 Knox 门户中定义用户关联时，拥有有效的 Intune 许可证的任何用户都可以使用 KME 来注册设备。
 >
 
 ## <a name="distribute-devices"></a>分配设备

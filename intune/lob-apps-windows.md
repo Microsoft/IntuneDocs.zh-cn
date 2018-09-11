@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321112"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347892"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>将 Windows 业务线应用添加到 Microsoft Intune
 
@@ -32,19 +32,15 @@ ms.locfileid: "39321112"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用”。
-4. 在“移动应用”工作负载中，选择“管理” > “应用”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+4. 在“客户端应用”工作负载中，选择“管理” > “应用”。
 5. 在应用列表上方，选择“添加”。
 6. 在“添加应用”窗格中，选择“业务线应用”。
 
 ## <a name="step-2-configure-the-app-package-file"></a>步骤 2：配置应用包文件
 
 1. 在“添加应用”窗格中，选择“应用包文件”。
-2. 在“应用包文件”窗格中，选择“浏览”按钮。 然后选择扩展名为 .msi、.appx、.appxbundle、.msix 或 .msixbundle 的 Windows 安装文件。
-
-    > [!NOTE]
-    > Windows 应用的文件扩展名包括 .msi、.appx、.appxbundle、.msix 和 .msixbundle。  
-
+2. 在“应用包文件”窗格中，选择“浏览”按钮。 然后选择带扩展名“.msi”、“.appx”，或“.appxbundle”的 Windows 安装文件。
 3. 完成后，选择“确定”。
 
 

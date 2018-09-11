@@ -1,11 +1,11 @@
 ---
-title: 在管理中注册公司拥有或提供的 macOS 设备 | Microsoft Docs
+title: 在管理中注册组织提供的 macOS 设备 | Microsoft Docs
 description: 介绍如何在 Intune 中注册由组织购买和提供的 macOS 设备。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 272a82f7d3d62d117fa5506ccf446b3169ff514f
-ms.sourcegitcommit: bb56ada81e6d4950f130415918c4acc455bb52dd
+ms.openlocfilehash: a5808a0ac80390b76058827d2ca0870249b043b9
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016221"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241824"
 ---
-# <a name="get-your-company-owned-macos-device-managed"></a>管理公司拥有的 macOS 设备
+# <a name="enroll-your-organization-provided-macos-device-in-management"></a>在管理中注册组织提供的 macOS 设备
 
-了解如何在 Intune 中自动管理新的 macOS 设备。
+了解如何在 Intune 中管理新的 macOS 设备。  
 
-工作设备和学校拥有的设备通常在收到之前就进行了预配置。 首次打开并登录设备时，组织会将预配置的设置发送到设备。 设备完成设置后，将获得工作单位或学校资源的访问权限。 
+工作单位或学校提供的设备通常会在分配前进行预配置。 首次打开并登录设备后，组织会将预配置的设置发送到设备。 设备完成设置后，将获得工作单位或学校资源的访问权限。 
 
 要开始管理设置，请打开设备电源并使用工作单位或学校凭据登录。 本文的其余部分介绍使用“设置助理”过程中将看到的步骤和屏幕。   
 
 ## <a name="what-is-apple-dep"></a>什么是 Apple DEP？
-如果使用的是公司拥有的设备，该设备可能是通过 Apple 设备注册计划 (DEP) 购买的。 某些组织通过 Apple DEP 购买大量的 iOS 或 macOS 设备。 然后，组织可以在其首选的移动设备管理提供程序（例如 Intune）中配置和管理设备。 如果你是管理员并想了解有关 Apple DEP 的详细信息，请参阅[使用 Apple 设备注册计划自动注册 macOS 设备](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)。  
+组织可以通过“Apple 设备注册计划”(DEP) 购买设备。 组织可通过 Apple DEP 购买大量的 iOS 或 macOS 设备。 然后，组织可以在其首选的移动设备管理提供程序（例如 Intune）中配置和管理这些设备。 如果你是管理员并想了解有关 Apple DEP 的详细信息，请参阅[使用 Apple 设备注册计划自动注册 macOS 设备](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)。  
 
 ## <a name="set-up-your-macos-device"></a>设置 macOS 设备  
-完成以下步骤以在管理中注册 macOS 设备。 如果使用的是自己的设备，而不是公司拥有的设备，请按照[个人设备和自带设备](enroll-your-device-in-intune-macos-cp.md)步骤进行操作。  
+完成以下步骤以在管理中注册 macOS 设备。 如果使用的是自己的设备，而不是组织提供的设备，请按照[个人设备和自带设备](enroll-your-device-in-intune-macos-cp.md)步骤进行操作。  
 
 1. 打开 macOS 设备电源。 
 2. 选择“语言”，然后单击“继续”。  
@@ -64,4 +64,4 @@ ms.locfileid: "43016221"
 ## <a name="get-the-company-portal-app"></a>获取公司门户应用      
 转到 App Store 以在设备上获取 Intune 公司门户应用。 使用此应用可以监视、同步、添加并删除管理中的设备，并可安装应用。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://portal.manage.microsoft.com#HelpDeskDialog)。
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

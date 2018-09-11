@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c394be6130a874e7ce2fb1b6e3c244cad98f80
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905268"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329539"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何仅擦除 Intune 托管应用中的企业数据
 
@@ -40,7 +40,7 @@ ms.locfileid: "37905268"
 
 1.  登录到 [Azure 门户](https://portal.azure.com)。
 
-2.  选择“所有服务”，在筛选器文本框中键入“Intune”，然后选择“Intune”。 Intune 窗格随即打开，选择“移动应用”窗格。
+2.  选择“所有服务”，在筛选器文本框中键入“Intune”，然后选择“Intune”。 Intune 窗格随即打开，选择“客户端应用”窗格。
 
     ![Microsoft Intune 窗格的屏幕截图](./media/apps-selective-wipe01.png)
 

@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146690"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313286"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
 
@@ -55,8 +55,8 @@ Apple School Manager 是适用于学校的设备购买和注册计划。 与 DEP
 
 ## <a name="apple-configurator"></a>Apple Configurator
 可以通过在 Mac 计算机上运行的 Apple Configurator 来注册 iOS 设备。 若要使设备准备就绪，请使用 USB 连接它们并安装注册配置文件。 可采用两种方法用 Apple Configurator 注册设备：
-- 设置助理注册 - 将设备恢复出厂设置，准备好运行“设置助理”，从而为设备的新用户安装公司策略。
-- 直接注册 - 不将设备恢复出厂设置，并使用预定义策略注册设备。 此方法适用于“无用户关联”的设备。
+- 设置助理注册 - 擦除设备，准备好运行设置助理，从而为设备的新用户安装公司策略。
+- 直接注册 - 不擦除设备，并使用预定义策略注册设备。 此方法适用于“无用户关联”的设备。
 
 详细了解 [Apple Configurator 注册](apple-configurator-setup-assistant-enroll-ios.md)。
 

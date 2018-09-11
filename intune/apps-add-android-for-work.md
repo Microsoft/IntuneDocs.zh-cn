@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909280"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329864"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>使用 Intune 将应用分配到 Android 工作配置文件设备
 
@@ -59,18 +59,18 @@ Android 企业是适用于 Android 工作配置文件设备和展台设备的程
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>将托管的 Google Play 应用与 Intune 同步
 
-如果已从该商店批准了应用，但未在“移动应用”工作负荷的“获得许可的应用”节点中看到它，则按照如下所示的步骤强制立即同步：
+如果已从商店批准了应用，但未在“客户端应用”工作负荷的“获得许可的应用”节点中看到该应用，则按照如下所示的步骤强制立即同步：
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用”。
-4. 在“移动应用”工作负载窗格的“安装程序”下，选择“托管的 Google Play”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+4. 在“客户端应用”工作负荷窗格的“设置”下，选择“托管的 Google Play”。
 5. 在“托管的 Google Play”窗格中，选择“刷新”。  
     该页会更新上次同步的时间和状态。
-6. 在“移动应用”工作负载中，选择“应用”。  
+6. 在“客户端应用”工作负荷窗格中，选择“应用”。  
     系统会显示最新可用的托管的 Google Play 应用。
 
-当应用显示在“移动应用”工作负载窗格的“应用许可”节点中时，可以[像分配任何其他应用一样分配该应用](/intune-azure/manage-apps/deploy-apps)。 只能将应用分配到用户组。
+当应用显示在“客户端应用”工作负荷窗格的“应用许可证”节点中时，可以[像分配任何其他应用一样分配该应用](/intune-azure/manage-apps/deploy-apps)。 只能将应用分配到用户组。
 
 分配应用之后，它会安装在目标设备上。 不会要求设备的用户批准此安装。
 

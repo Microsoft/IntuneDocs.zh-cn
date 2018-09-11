@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905829"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330256"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -47,7 +47,7 @@ ms.locfileid: "37905829"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 选择“移动应用”工作负荷。
+3. 选择“客户端应用”工作负荷。
 4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”。
 5. 设置以下详细信息：
     - **名称** - 在 Azure 门户中显示的配置文件名。
@@ -133,6 +133,8 @@ Intune 会验证 XML 格式。 但是，Intune 不会检查 XML 属性列表 (PL
   <string>{{serialnumberlast4digits}}</string>
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
+  <key>aaddeviceid</key>
+  <string>{{aaddeviceid}}</string>
 </dict>
 ```
 ### <a name="supported-xml-plist-data-types"></a>支持的 XML 属性列表数据类型
@@ -158,6 +160,7 @@ Intune 在属性列表中支持以下数据类型：
 - \{\{username\}\} - 例如 John Doe
 - \{\{serialnumber\}\} - 例如 F4KN99ZUG5V2（用于 iOS 设备）
 - \{\{serialnumberlast4digits\}\} - 例如 G5V2（用于 iOS 设备）
+- \{\{aaddeviceid\}\} - 例如，ab0dc123-45d6-7e89-aabb-cde0a1234b56
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>监控每个设备的 iOS 应用配置状态 
 分配配置策略后，可监视每个托管设备的 iOS 应用配置状态。 从 Azure 门户的“Microsoft Intune”中，选择“设备” > “所有设备”。 从受管理设备列表中选择特定设备，以显示该设备的边栏选项卡。 在该设备的边栏选项卡上，选择“应用配置”。  
