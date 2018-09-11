@@ -3,8 +3,8 @@ title: 用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 description: 通过 Microsoft Intune App SDK for iOS，可将 Intune 应用保护策略（也称为 APP 或 MAM 策略）合并到本机 iOS 应用中。
 keywords: ''
 author: Erikre
-manager: dougeby
 ms.author: erikre
+manager: dougeby
 ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
-ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
+ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
+ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241875"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44031314"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
