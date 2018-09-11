@@ -7,17 +7,18 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.custom: get-started
+ms.openlocfilehash: becd0c62d57517a8c1566657b5278a46d68b9c17
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29748712"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254014"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>由 Intune 托管的设备的注册选项
 
@@ -47,7 +48,7 @@ ms.locfileid: "29748712"
 
 可要求用户在注册设备时使用其他验证方法，例如电话、PIN 或生物特征数据。 了解[多重身份验证](multi-factor-authentication.md)的详细信息。
 
-## <a name="device-enrollment-manager"></a>设备注册管理员
+## <a name="device-enrollment-manager"></a>设备注册管理器
 可让用户成为设备注册管理员。  DEM 用户可使用单个用户帐户注册大量移动设备。 设备注册管理员 (DEM) 帐户最多可注册 1,000 台设备。 详细了解[设备注册管理员](device-enrollment-manager-enroll.md)。
 
 ## <a name="device-categories"></a>设备类别

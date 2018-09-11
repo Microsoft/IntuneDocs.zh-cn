@@ -3,9 +3,9 @@ title: Microsoft Intune App SDK 入门
 description: 通过 Microsoft Intune 快速启用移动应用进行移动应用程序管理 (MAM)。
 keywords: ''
 author: Erikre
-manager: dougeby
 ms.author: erikre
-ms.date: 05/15/2018
+manager: dougeby
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0df56da9fff72124bb44a2c73e63d88cb6542938
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
+ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223520"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44058942"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
