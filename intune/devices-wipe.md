@@ -1,11 +1,11 @@
 ---
-title: 使用 Microsoft Intune 删除设备上的公司数据 - Azure | Microsoft Docs
-description: 使用 Microsoft Intune 删除设备上的公司数据，或者在 Android、Android 工作配置文件、iOS、macOS 或 Windows 设备上恢复出厂设置。 并从 Azure Active Directory 中删除设备。
+title: 使用 Microsoft Intune 停用或擦除设备 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune 在 Android、Android 工作配置文件、iOS、macOS 或 Windows 设备上停用或擦除设备。 并从 Azure Active Directory 中删除设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/10/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,50 +13,50 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028739"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312811"
 ---
-# <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>通过恢复出厂设置、删除公司数据或手动取消注册设备来删除设备
+# <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用“擦除”或“停用”操作删除设备，或手动取消注册设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用“删除公司数据”或“恢复出厂设置”操作，可从 Intune 中删除不再需要的、已重新调整用途的或丢失的设备。 用户还可从 Intune 公司门户中向在 Intune 中注册的个人所有设备发出远程命令。
+使用“停用”或“擦除”操作，可从 Intune 中删除不再需要的、已重新调整用途的或丢失的设备。 用户还可从 Intune 公司门户中向在 Intune 中注册的个人所有设备发出远程命令。
 
 > [!NOTE]
-> 从 Azure Active Directory (Azure AD) 中删除用户前，对与该用户关联的所有设备使用“恢复出厂设置”或“删除公司数据”操作。 如果从 Azure AD 删除具有托管设备的用户，Intune 不再能够向这些设备发出恢复出厂设置或删除公司数据命令。
+> 从 Azure Active Directory (Azure AD) 中删除用户前，对与该用户关联的所有设备使用“擦除”或“停用”操作。 如果从 Azure AD 删除具有托管设备的用户，Intune 将不再能够擦除或停用这些设备。
 
-## <a name="factory-reset"></a>恢复出厂设置
+## <a name="wipe"></a>擦除
 
-“恢复出厂设置”操作将设备还原为其出厂默认设置。 如果选择“保留注册状态和用户帐户”复选框，则保留用户数据。 否则，驱动器将被安全擦除。
+“擦除”操作将设备还原为出厂默认设置。 如果选择“保留注册状态和用户帐户”复选框，则保留用户数据。 否则，驱动器将被安全擦除。
 
-|恢复出厂设置操作|保留注册状态和用户帐户|从 Intune 管理中删除|描述|
+|擦除操作|保留注册状态和用户帐户|从 Intune 管理中删除|描述|
 |:-------------:|:------------:|:------------:|------------|
-|恢复出厂设置| 未选中 | 是 | 擦除所有用户帐户、数据、MDM 策略和设置。 将操作系统重置为其默认状态和设置。|
-|恢复出厂设置| 已选中 | 否 | 擦除所有 MDM 策略。 保留用户帐户和数据。 将用户设置重置回默认设置。 将操作系统重置为其默认状态和设置。|
+|**擦除**| 未选中 | 是 | 擦除所有用户帐户、数据、MDM 策略和设置。 将操作系统重置为其默认状态和设置。|
+|**擦除**| 已选中 | 否 | 擦除所有 MDM 策略。 保留用户帐户和数据。 将用户设置重置回默认设置。 将操作系统重置为其默认状态和设置。|
 
 “保留注册状态和用户帐户”选项仅适用于 Windows 10 版本 1709 或更高版本。
 
 将在设备下次连接到 Intune 时重新应用 MDM 策略。
 
-恢复出厂设置可用于在将设备提供给新用户前或在设备丢失或被盗时，对设备进行重置。 请谨慎选择“恢复出厂设置”。 无法恢复设备上的数据。
+擦除可用于在将设备提供给新用户前或在设备丢失或被盗时，对设备进行重置。 请谨慎选择“擦除”。 无法恢复设备上的数据。
 
-### <a name="factory-reset-a-device"></a>恢复设备的出厂设置
+### <a name="wiping-a-device"></a>擦除设备
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 3. 选择“设备” > “所有设备”。
-4. 选择要恢复出厂设置的设备名称。
-5. 在显示设备名称的窗格中，选择“恢复出厂设置”。
+4. 选择要擦除的设备的名称。
+5. 在显示设备名称的窗格中，选择“擦除”。
 6. 对于 Windows 10 版本 1709 或更高版本，还具有“保留注册状态和用户帐户”选项。 
     
-    |在恢复出厂设置过程中保留|不保留|
+    |在擦除过程中保留 |不保留|
     | -------------|------------|
     |与设备关联的用户帐户|用户文件|
-    |计算机状态\(域加入、已加入 Azure AD）| 用户安装的应用\(存储和 Win32 应用）|
+    |计算机状态\(域加入、已加入 Azure AD）| 用户安装的应用（存储和 Win32 应用）|
     |移动设备管理 (MDM) 注册|非默认设备设置|
     |OEM 安装的应用\(存储和 Win32 应用）||
     |用户配置文件||
@@ -64,17 +64,17 @@ ms.locfileid: "39028739"
     |用户自动登录|| 
     
          
-7. 若要确认恢复出厂设置，请选择“是”。
+7. 若要确认擦除，请选择“是”。
 
-如果设备已打开并连接，“恢复出厂设置”操作会在 15 分钟内跨所有设备类型进行传播。
+如果设备已打开并连接，“擦除”操作会在 15 分钟内跨所有设备类型进行传播。
 
-## <a name="remove-company-data"></a>删除公司数据
+## <a name="retire"></a>停用
 
-“删除公司数据”操作将删除使用 Intune 分配的托管应用数据（如果适用）、设置和电子邮件配置文件。 设备从 Intune 管理中删除。 这种情况发生在设备下次检入并收到远程“删除公司数据”操作时发生。
+“停用”操作将删除使用 Intune 分配的托管应用数据（如果适用）、设置和电子邮件配置文件。 设备从 Intune 管理中删除。 这种情况在设备下次检入并收到远程“停用”操作时发生。
 
-“删除公司数据”会将用户的个人数据保留在设备上。  
+“停用”会将用户个人数据保留在设备上。  
 
-下表描述了将删除什么数据，以及在删除公司数据后“删除公司数据”操作对设备上保留的数据的影响。
+下表描述了将删除什么数据，以及在删除公司数据后“停用”操作对设备上保留的数据的影响。
 
 ### <a name="ios"></a>iOS
 
@@ -110,11 +110,11 @@ ms.locfileid: "39028739"
 
 ### <a name="android-work-profile"></a>Android 工作配置文件
 
-从 Android 工作配置文件设备上删除公司数据将删除该设备上工作配置文件中的所有数据、应用和设置。 设备将从 Intune 管理中停用。 Android 工作配置文件不支持恢复出厂设置。
+从 Android 工作配置文件设备上删除公司数据将删除该设备上工作配置文件中的所有数据、应用和设置。 设备将从 Intune 管理中停用。 Android 工作配置文件不支持擦除。
 
 ### <a name="android-enterprise-kiosk-devices"></a>Android 企业展台设备
 
-只能将 Android 展台设备恢复出厂设置。 不能从 Android 展台设备删除公司数据。
+只能擦除展台设备。 不能停用 Android 展台设备。
 
 
 ### <a name="macos"></a>macOS
@@ -137,16 +137,16 @@ ms.locfileid: "39028739"
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|不支持。|删除。|
 |证书配置文件设置|已删除并吊销证书。|已删除并吊销证书。|不支持。|已删除并吊销证书。|
 |Email|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。|不支持。|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。 删除由 Intune 预配的邮件帐户。|
-|Azure AD 脱离|不能。|不能。|删除 Azure AD 记录。|不适用。 在 Windows 10 中，无法删除已加入 Azure AD 设备的公司数据。|
+|Azure AD 脱离|不能。|不能。|删除 Azure AD 记录。|不适用。 在 Windows 10 中，无法停用已加入 Azure AD 的设备。|
 
-### <a name="remove-company-data"></a>删除公司数据
+### <a name="retire"></a>停用
 
 1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
 2. 在“设备”窗格中，选择“所有设备”。
-3. 选择想要从中删除公司数据的设备名称。
-4. 在显示设备名称的窗格中，选择“删除公司数据”。 选择“是”以确认。
+3. 选择要停用的设备的名称。
+4. 在显示设备名称的窗格中，选择“停用”。 选择“是”以确认。
 
-如果设备已打开并连接，“删除公司数据”操作会在 15 分钟内跨所有设备类型进行传播。
+如果设备已打开并连接，“停用”操作会在 15 分钟内跨所有设备类型进行传播。
 
 ## <a name="delete-devices-from-the-intune-portal"></a>从 Intune 门户中删除设备
 
@@ -181,8 +181,8 @@ ms.locfileid: "39028739"
 如果想要通过 Intune 从管理完全删除 Apple DEP 设备，请按以下步骤进行操作：
 
 1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
-2. 选择“设备” > “所有设备”，再依次选择相关设备和“删除公司数据”。
-![显示删除公司数据的屏幕截图](./media/devices-wipe/remove-company-data.png)
+2. 选择“设备” > “所有设备”，再依次选择相关设备和“停用”。
+![停用的屏幕截图](./media/devices-wipe/retire.png)
 3. 选择“设备注册” > “Apple 注册” > “注册计划令牌”，再选择相关令牌和“设备”，然后选择相关设备的复选框，最后选择“删除” > “是”。
 ![显示删除设备的屏幕截图](./media/devices-wipe/delete-device.png)
 4. 访问 [deploy.apple.com](http://deploy.apple.com)，并按序列号搜索设备。
