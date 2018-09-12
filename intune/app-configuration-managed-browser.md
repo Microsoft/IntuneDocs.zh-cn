@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40252737"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329746"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的受保护的浏览器策略管理 Internet 访问
 
@@ -108,7 +108,7 @@ Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authentic
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3.  在管理列表中的“移动应用”边栏选项卡上，选择“应用配置策略”。
+3.  在管理列表中的“客户端应用”边栏选项卡上，选择“应用配置策略”。
 4.  在“应用配置策略”边栏选项卡上，选择“添加”。
 5.  在“添加配置策略”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”。
 6.  对于“设备注册”类型，选择“托管应用”。
@@ -126,7 +126,7 @@ Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authentic
 
 将这些设置分配到 Azure AD 用户组。 如果用户安装了受保护的目标浏览器应用，则应用将按指定的设置进行管理。
 
-1. 在 Intune 移动应用程序管理仪表板的“移动应用”边栏选项卡上，选择“应用配置策略”。
+1. 在 Intune 移动应用程序管理仪表板的“客户端应用”边栏选项卡上，选择“应用配置策略”。
 2. 在应用配置列表中，选择一个想要分配的配置。
 3. 在下一个边栏选项卡上，选择“分配”。
 4. 在“分配”边栏选项卡上，选择想要将应用配置分配到的 Azure AD 组，然后选择“确定”。

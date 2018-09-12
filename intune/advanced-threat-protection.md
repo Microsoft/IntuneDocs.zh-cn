@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
-ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
+ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40251703"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313785"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中启用具有条件访问的 Windows Defender ATP
 
@@ -71,27 +71,15 @@ Windows Defender ATP 可以解决类似这种情况的安全事件。 Windows De
 
 ## <a name="onboard-devices-using-a-configuration-profile"></a>使用配置文件载入设备
 
-Windows Defender 包括设备上安装的载入配置包。 安装时，包与 [Windows Defender ATP 服务](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)进行通信以扫描文件、检测威胁，并向 Windows Defender ATP 报告风险。 使用 Intune，可以创建使用此配置包的配置文件。 然后，将此配置文件分配到首次载入的设备。
+当最终用户在 Intune 中注册时，可以使用配置文件向设备推送不同的设置。 这同样适用于 Windows Defender ATP。
 
-使用配置包载入设备后，不需要再次执行本操作。 这通常是一次性任务。
+Windows Defender 包括载入配置包，该包可与 [Windows Defender ATP 服务](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)进行通信以扫描文件、检测威胁，并向 Windows Defender ATP 报告风险。
 
-还可以使用[组策略或 System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) 载入设备。
+载入时，Intune 将从 Windows Defender ATP 收到自动生成的配置包。 配置文件被推送或部署到设备后，此配置包也会被推送到该设备。 这使 Windows Defender ATP 能够监视设备中的威胁。
 
-接下来的步骤演示如何使用 Intune 进行载入。
+使用配置包载入设备后，不需要再次执行本操作。 还可以使用[组策略或 System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) 载入设备。
 
-#### <a name="download-configuration-package"></a>下载配置包
-
-1. 在[“Windows Defender 安全中心”](https://securitycenter.windows.com)，选择“设置” > “载入”。
-2. 输入以下设置：
-  - 操作系统：Windows 10
-  - “载入计算机” > “部署方法”：移动设备管理 / Microsoft Intune
-3. 选择“下载包”，并保存“WindowsDefenderATPOnboardingPackage.zip”文件。 提取文件。
-
-此 zip 文件包含“WindowsDefenderATP.onboarding”，后续步骤中将需要此项。
-
-#### <a name="create-the-atp-configuration-profile"></a>创建 ATP 配置文件
-
-此配置文件使用你在前面的步骤中下载的载入包。
+### <a name="create-the-configuration-profile"></a>创建配置文件
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 2. 选择“设备配置” > “配置文件” > “创建配置文件”。
@@ -100,10 +88,9 @@ Windows Defender 包括设备上安装的载入配置包。 安装时，包与 [
 5. 对于“配置文件类型”，请选择“Windows Defender ATP (Windows 10 桌面版)”。
 6. 配置设置：
 
-  - 载入配置包：浏览并选择下载的“WindowsDefenderATP.onboarding”文件。 此文件启用一项设置，使设备可以向 Windows Defender ATP 服务报告。
-  - 所有文件的示例共享：允许收集示例，并与 Windows Defender ATP 共享。 例如，如果看到可疑文件，可以将其提交至 Windows Defender ATP 进行深入分析。
-  - 加快遥测报告频率：为处于高风险的设备启用此设置，让它可以向 Windows Defender ATP 服务更频繁地报告遥测。
-  - 下架配置包：如果要删除或“卸载”Windows Defender ATP 监视，可以在 [Windows Defender 安全中心](https://securitycenter.windows.com)下载卸载程序包，并进行添加。 否则请跳过此属性。
+  - **Windows Defender ATP 客户端配置包类型**：选择“载入”，将配置包添加到配置文件。 选择“卸载”，从配置文件中删除配置包。
+  - **所有文件的示例共享**：选择“启用”可允许收集示例，并与 Windows Defender ATP 共享。 例如，如果看到可疑文件，可以将其提交至 Windows Defender ATP 进行深入分析。 选择“未配置”不会向 Windows Defender ATP 共享任何事例。
+  - **加快遥测报告频率**：为处于高风险的设备启用此设置，让它可以向 Windows Defender ATP 服务更频繁地报告遥测。
 
     有关这些 Windows Defender ATP 设置的详细信息，请参阅[使用 System Center Configuration Manager 载入 Windows 10 计算机](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection)。
 

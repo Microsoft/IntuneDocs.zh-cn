@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: a1cf7fbdee6e6dc0cb280c8f9473c48608485737
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40252576"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329898"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>使用 Microsoft Intune 监视应用信息和分配
 
@@ -30,7 +30,7 @@ Intune 提供了多种方式来监视你管理的应用的属性以及管理应�
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”菜单中，选择“移动应用”。
+3. 在“Intune”菜单中，选择“客户端应用”。
 4. 在菜单的“管理”部分中选择“应用”。
 5. 在应用列表中，选择要监视的应用。 随后将看到“应用”窗格，其中概述了设备状态和用户状态。
 

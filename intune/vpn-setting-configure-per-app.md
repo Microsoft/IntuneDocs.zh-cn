@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
-ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
+ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "40252735"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347468"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -34,6 +34,7 @@ ms.locfileid: "40252735"
  - 脉冲连接安全
  - SonicWall
  - 帕洛阿尔托网络全局保护
+ - Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>每个应用 VPN 的先决条件
 
@@ -145,7 +146,7 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-3. 选择“移动应用”。
+3. 选择“客户端应用”。
 4. 单击“应用”。
 5. 从应用列表中选择应用。
 6. 单击“分配”。
@@ -187,6 +188,10 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
     - F5 Access
     - 脉冲安全
     - SonicWall Mobile Connect
+    - Zscaler 应用
+
+    > [!NOTE]
+    > 如果使用 Pulse Secure VPN 应用，可以选择使用应用层或数据包层隧道。 针对应用层隧道，将 ProviderType 值设置为 app-proxy，针对数据包层隧道，将其设置为 packet-tunnel。
 
 ### <a name="connect-using-the-per-app-vpn"></a>使用每应用 VPN 进行连接
 

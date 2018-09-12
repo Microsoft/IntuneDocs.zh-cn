@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 1461089beafd6501d6ebc87ab1a89963fa4aac57
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251544"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347767"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>将 iOS 业务线应用添加到 Microsoft Intune
 
@@ -35,8 +35,8 @@ ms.locfileid: "40251544"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用”。
-4. 在“移动应用”工作负载中，选择“管理” > “应用”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+4. 在“客户端应用”工作负载中，选择“管理” > “应用”。
 5. 在应用列表上方，选择“添加”。
 6. 在“添加应用”窗格中，选择“业务线应用”。
 

@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 2d099d049892d71c36e4b01fb1a8af6f7ad25df1
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751796"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313403"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 进行 iOS 设备注册
 
@@ -113,7 +113,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
      > [!NOTE]
      > 不受监督的注册设备只能使用 Apple Configurator 重置为受监督。 以此方式重置设备需要使用 USB 线将 iOS 设备连接到 Mac。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。
 
-7. 选择是否要为使用此配置文件的设备锁定注册。 “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。 
+7. 选择是否要为使用此配置文件的设备锁定注册。 “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。 注册设备后，除非擦除设备，否则无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。 
 
 8. 若要让多个用户使用托管 Apple ID 登录已注册 iPad，请选择“共享 iPad”下的“是”（此选项要求必需将“无用户关联注册”和“已监督”模式设置为“是”）。在 Apple School Manager 门户中创建托管的 Apple ID。 详细了解[共享 iPad](education-settings-configure-ios-shared.md) 和 [Apple 的共享 iPad 要求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
 
@@ -179,4 +179,4 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
 ## <a name="distribute-devices-to-users"></a>将设备分配给用户
 
-已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 Apple School 设备所需的配置文件。 现在可以将设备分配给用户。 打开 iOS Apple School Manager 设备时，它将注册以便由 Intune 管理。 如果设备已激活并处于使用状态，则在将设备恢复出厂设置后才能应用配置文件。
+已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 Apple School 设备所需的配置文件。 现在可以将设备分配给用户。 打开 iOS Apple School Manager 设备时，它将注册以便由 Intune 管理。 如果设备已激活并处于使用状态，则在将设备擦除后才能应用配置文件。

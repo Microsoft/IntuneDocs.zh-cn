@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751728"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313420"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 macOS 设备
 
@@ -106,7 +106,7 @@ ms.locfileid: "42751728"
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。
 2. 选择令牌，选择“配置文件”，然后选择“创建配置文件”。
 
-    ![创建配置文件屏幕截图。](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![“创建配置文件”的屏幕截图。](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. 在“创建配置文件”下，输入配置文件的“名称”和“描述”以便于管理。 用户看不到这些详细信息。 可以使用此“名称”字段在 Azure Active Directory 中创建动态组。 使用配置文件名称定义 enrollmentProfileName 参数，以向设备分配此注册配置文件。 详细了解 [Azure Active Directory 动态组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)。
 
@@ -119,7 +119,7 @@ ms.locfileid: "42751728"
 
     - 不通过用户关联进行注册 - 为不属于单个用户的设备选择此选项。 为无需访问本地用户数据即可执行任务的设备使用此选项。 公司门户等应用将无法运行。
 
-6. 选择“设备管理设置”，然后选择是否锁定使用此配置文件的设备的注册。 “锁定注册”将禁用 macOS 设置，该设置允许从“系统偏好设置”菜单或通过“终端”删除管理配置文件。 注册设备后，除非将设备恢复出厂设置，否则无法更改此设置。
+6. 选择“设备管理设置”，然后选择是否锁定使用此配置文件的设备的注册。 “锁定注册”将禁用 macOS 设置，该设置允许从“系统偏好设置”菜单或通过“终端”删除管理配置文件。 注册设备后，除非擦除设备，否则无法更改此设置。
 
     ![“设备管理设置”屏幕截图。](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
@@ -128,13 +128,14 @@ ms.locfileid: "42751728"
 8. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义。](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | 部门设置 | 描述 |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>部门名称</strong> | 用户在激活过程中轻点“关于配置”时显示。 |
-    |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。 |
+    | <strong>部门电话</strong> | 用户在激活过程中单击“需要帮助”按钮时显示。 |
 
-    用户设置设备时，可以选择在设备上显示或隐藏各种设置助理屏幕。
-    - 如果选择“隐藏”，设置期间将不会显示该屏幕。 设置设备之后，用户仍可以进入“设置”菜单来设置此功能。
-    - 如果选择“显示”，设置期间将显示该屏幕。 用户有时可以跳过该屏幕，无需采取任何操作。 但是，他们可以稍后进入设备的“设置”菜单来设置此功能。 
+  用户设置设备时，可以选择在设备上显示或隐藏各种设置助理屏幕。
+  - 如果选择“隐藏”，设置期间将不会显示该屏幕。 设置设备之后，用户仍可以进入“设置”菜单来设置此功能。
+  - 如果选择“显示”，设置期间将显示该屏幕。 用户有时可以跳过该屏幕，无需采取任何操作。 但是，他们可以稍后进入设备的“设置”菜单来设置此功能。 
+
 
     | 设置助理屏幕设置 | 如果选择“显示”，设置期间设备将... |
     |------------------------------------------|------------------------------------------|
@@ -152,6 +153,7 @@ ms.locfileid: "42751728"
     | <strong>iCloud 诊断</strong> | 为用户提供将 iCloud 诊断数据发送到 Apple 的选项。 |
     | <strong>注册</strong>| 要求用户注册设备。 |
 
+   
 
 10. 选择“确定”。
 
@@ -182,7 +184,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 2. 选择“设置默认配置文件”，在下拉列表中选择配置文件，然后选择“保存”。 此配置文件将应用于所有使用此令牌注册的设备。
 
 ## <a name="distribute-devices"></a>分配设备
-已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有恢复出厂设置才能应用注册配置文件。
+已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有擦除后才能应用注册配置文件。
 
 ## <a name="renew-a-dep-token"></a>续订 DEP 令牌  
 1. 转到 deploy.apple.com。  

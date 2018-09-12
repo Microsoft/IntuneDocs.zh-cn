@@ -15,20 +15,20 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 5653e5fda04295041ebc549977007e7060b5508b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751711"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312674"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 支持注册 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)。 使用 Apple Configurator 进行注册时，需要通过 USB 将每个 iOS 设备连接到 Mac 计算机来设置公司注册过程。 你可采用两种方式使用 Apple Configurator 将设备注册到 Intune：
-- 设置助理注册 – 恢复设备的出厂设置，使其准备好在设置助理期间进行注册。
-- 直接注册 - 不恢复设备的出厂设置，并通过 iOS 设置注册设备。 此方法适仅支持“无用户关联”的设备。
+- **设置助理注册** – 擦除设备，使其准备好在设置助理期间进行注册。
+- **直接注册** - 不擦除设备，并通过 iOS 设置注册设备。 此方法适仅支持“无用户关联”的设备。
 
 Apple Configurator 注册方法不能与[设备注册管理器](device-enrollment-manager-enroll.md)同时使用。
 
@@ -134,7 +134,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 用户收到设备后，必须完成设置助理。 配置了用户关联的设备可以安装和运行公司门户应用，以下载应用和管理设备。
 
 ## <a name="direct-enrollment"></a>直接注册
-直接使用 Apple Configurator 注册 iOS 设备时，无需获取设备序列号即可注册设备。 在注册过程中，你还可以在 Intune 捕获设备名称前对设备命名以进行标识。 直接注册的设备不支持公司门户应用。 此方法不会将设备恢复至出厂设置。
+直接使用 Apple Configurator 注册 iOS 设备时，无需获取设备序列号即可注册设备。 在注册过程中，你还可以在 Intune 捕获设备名称前对设备命名以进行标识。 直接注册的设备不支持公司门户应用。 此方法不擦除设备。
 
 无法安装需要用户隶属关系的应用（包括用于安装业务线应用的公司门户应用）。
 

@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251593"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347451"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>将 Web 应用添加到 Microsoft Intune
 
@@ -39,8 +39,8 @@ Intune 支持包括 Web 应用在内的各种应用类型。 Web 应用是客户
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。  
     Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用”。
-4. 在“移动应用”工作负载窗格的“管理”下，选择“应用”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”。
 5. 在“应用”窗格中，选择“添加”。
 6. 在“添加应用”窗格的“应用类型”下拉列表中选择“Web 链接”类型。
 7. 选择“配置”。

@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: f907ddb631c974a9c7626483446600eae149a12c
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255490"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347390"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 macOS 业务线 (LOB) 应用添加到 Microsoft Intune
 
@@ -60,8 +60,8 @@ ms.locfileid: "40255490"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“移动应用”。
-4. 在“移动应用”工作负荷中，选择“管理” > “应用”。
+3. 在“Intune”窗格中，选择“客户端应用”。
+4. 在“客户端应用”工作负载中，选择“管理” > “应用”。
 5. 在应用列表的上方，选择“添加”。
 6. 在“添加应用”窗格中，选择“业务线应用”。
 
