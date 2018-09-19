@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/29/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
-/ms.custom: intune-azure
-ms.openlocfilehash: 0205715a8e35d009401886af4bd0bf88fb9cf662
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: e3049fe461553ad1ba2e714d2274e0d39d169852
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347281"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254082"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -90,7 +90,8 @@ ms.locfileid: "43347281"
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>在 Windows 10 和更高版本的设备上控制 S 模式 - 公共预览版 <!-- 1958649 -->
 利用该功能更新，可创建一个设备配置文件，用于将 Windows 10 设备从 S 模式下切换出来，或用于防止用户将设备从 S 模式下切换出来。 此功能的位置：Intune >“设备配置” > “配置文件” >  “Windows 10 及更高版本” > “版本升级和模式切换”。
 [S 模式下的 Windows 10 简介](https://www.microsoft.com/windows/s-mode)提供了有关 S 模式的详细信息。
-适用于：Windows 10 及更高版本（1809 及更高版本）
+适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP 配置包自动添加到配置文件 <!-- 2144658 -->
 在 Intune 中使用[高级威胁防护和加入](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile)设备时，需要提前下载配置包并将其添加到配置文件。 通过此次更新，Intune 可自动从 Windows Defender 安全中心获取该包，并将其添加到配置文件。
@@ -98,6 +99,8 @@ ms.locfileid: "43347281"
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>要求用户在设备设置过程中进行连接<!--2311457-->
 现在可以设置设备配置文件，要求设备在 Windows 10 设置过程中连接到网络，然后才能继续完成“网络”页面的操作。 虽然此功能处于预览状态，但 Windows 预览体验内部版本 1809 或更高版本需要使用此设置。
+适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>限制应用，并阻止对 iOS 和 Android Enterprise 设备上公司资源的访问<!-- 2451462 -->
 在“设备符合性” > “策略” > “创建策略” > “iOS” > “系统安全”中，有一个新的“受限制的应用程序”设置。 如果设备上安装了某些应用，此新设置会使用符合性策略来阻止对公司资源的访问。 除非从设备中删除受限制的应用，否则设备会一直被视为不符合要求。
@@ -114,7 +117,7 @@ ms.locfileid: "43347281"
 有关 iOS 12 和 VPN 配置文件的详细信息，请参阅 [Microsoft Intune 支持团队博客](https://go.microsoft.com/fwlink/?linkid=2013806)。
 
 #### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal----2469637---"></a>导出 Azure 经典门户的符合性策略，以在 Intune Azure 门户中重新创建这些策略<!-- 2469637 -->
-将弃用 Azure 经典门户中创建的符合性策略。 可查看和删除任何现有符合性策略，但无法更新。 如果需要将任何符合性策略迁移到最新的 Intune Azure 门户，可将策略导出为逗号分隔的文件（.csv 文件）。 然后使用文件中的详细信息在 Intune Azure 门户中重新创建这些策略。
+将弃用 Azure 经典门户中创建的符合性策略。 可查看和删除任何现有符合性策略，但无法更新它们。 如果需要将任何符合性策略迁移到最新的 Intune Azure 门户，可将策略导出为逗号分隔的文件（.csv 文件）。 然后使用文件中的详细信息在 Intune Azure 门户中重新创建这些策略。
 
 > [!IMPORTANT]
 > Azure 经典门户停用后，将无法访问或查看符合性策略。 因此，在 Azure 经典门户停用之前，务必导出策略并在 Azure 门户中重新创建这些策略。
@@ -129,19 +132,24 @@ ms.locfileid: "43347281"
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>为 Autopilot 设备分配一个用户和友好名称 <!--1346521 -->
 现在可[将用户分配到单独的 Autopilot 设备](enrollment-autopilot.md)。 在使用 Autopilot 为用户设置设备时，管理员还可提供友好名称来问候用户。
-适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
+适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 注册期间，使用 VPP 设备许可证预先设置公司门户 <!-- 1608345 -->
 现可在设备注册计划 (DEP) 注册期间，使用批量采购计划 (VPP) 设备许可证预先设置公司门户。 若要完成此操作，在[创建或编辑注册配置文件](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)时，指定要用于安装公司门户的 VPP 令牌。 请确保令牌没有过期，并且具有足够的公司门户应用许可证。 如果令牌过期或许可证用完，Intune 将改为推送 App Store 公司门户（这将提示输入 Apple ID）。
 
+### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>需要确认才能删除正用于公司门户预先设置的 VPP 令牌 <!-- 2237634 -->
+如果在 DEP 注册期间正在使用批量购买计划 (VPP) 预先设置公司门户，则现在需要确认是否删除此令牌。
+
 #### <a name="block-windows-personal-device-enrollments----1849498---"></a>阻止 Windows 个人设备注册 <!-- 1849498 -->
-可通过 Intune 中的[移动设备管理](windows-enroll.md)[阻止 Windows 个人设备](enrollment-restrictions-set.md#set-device-type-restrictions)进行注册。 无法使用此功能阻止注册了 [Intune PC 代理](manage-windows-pcs-with-microsoft-intune.md)的设备。
+可通过 Intune 中的[移动设备管理](windows-enroll.md)[阻止 Windows 个人设备](enrollment-restrictions-set.md#set-device-type-restrictions)进行注册。 无法使用此功能阻止注册了 [Intune PC 代理](manage-windows-pcs-with-microsoft-intune.md)的设备。 这一功能将在随后几周内推出，因此你可能无法立即在用户界面中看到此功能。
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>在 Autopilot 配置文件中指定计算机名称模式 <!--1849855-->
-可[指定一个计算机名称模板](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，用于在 Autopilot 注册过程中生成和设置[计算机名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。
+可[指定一个计算机名称模板](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，用于在 Autopilot 注册过程中生成和设置[计算机名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>对于 Windows Autopilot 配置文件，隐藏公司登录页和域错误页上的“更改帐户”选项 <!--1901669 -->
-提供[新的 Windows Autopilot 配置文件选项](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，允许管理员隐藏公司登录页和域错误页上的更改帐户选项。 要隐藏这些选项，需在 Azure Active Directory 中配置公司品牌。 适用于：Windows 预览体验计划 1809 版或更高版本（预览版）。
+提供[新的 Windows Autopilot 配置文件选项](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，允许管理员隐藏公司登录页和域错误页上的更改帐户选项。 要隐藏这些选项，需在 Azure Active Directory 中配置公司品牌。 适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 注册期间，使用 VPP 设备许可证预先设置公司门户 <!-- 1608345 -->
 现可在设备注册计划 (DEP) 注册期间，使用批量采购计划 (VPP) 设备许可证预先设置公司门户。 若要完成此操作，在[创建或编辑注册配置文件](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)时，指定要用于安装公司门户的 VPP 令牌。 请确保令牌没有过期，并且具有足够的公司门户应用许可证。 如果令牌过期或许可证用完，Intune 将改为推送 App Store 公司门户（这将提示输入 Apple ID）。
@@ -168,8 +176,8 @@ ms.locfileid: "43347281"
 - 简化了所有设备平台上的工作流
 - 改进了设备识别和注册流
 - 提供了更多有用的错误消息
-- 语言更加友好，减少了技术术语的使用
-- 共享指向应用的直接链接的功能
+- 更友好的语言，减少了专业技术性术语
+- 能够共享指向应用的直接链接
 - 改善了大型应用目录的性能
 - 为所有用户增加了辅助功能  
 
@@ -1273,6 +1281,25 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>更改计划：针对顶级客户的新 Intune 支持体验 
+作为 Microsoft 顶级客户，你当前可以使用 Microsoft Premier Online (MPO) 门户 (premier.microsoft.com) 和 Intune on Azure (portal.azure.com) 为 Intune 创建支持请求。 从 2018 年 12 月 3 日起，为了继续增强顶级支持体验，你将仅能在 Intune on Azure 中创建支持请求。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+在 12 月 3 日后，你将无法在 MPO 中创建支持请求。  当你尝试执行此操作时，你将看到一个不能解除的提示，以重定向到 Intune on Azure。 在此处，你可以创建一个将被路由到 Intune 专用的 Microsoft 支持的支持请求，以及时诊断和解决你的问题。 无法在 Azure 门户中查看在 MPO 门户中创建的支持请求，因此，应停止在 MPO 中创建支持请求。  
+
+如果你使用混合移动设备管理（混合 MDM）或使用共同管理，你可以继续使用 MPO 为 ConfigMgr 创建支持请求，但使用 Azure 门户为 Intune 创建支持请求。 提醒一下，混合 MDM 已被弃用，应计划尽快移动到 Intune on Azure。 有关详细信息，请参阅“从混合移动设备管理移动到 Intune on Azure”。
+
+请注意，只有具有全局管理员、Intune 服务管理员和服务支持管理员角色的用户才能在 Azure 门户中创建支持票证。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
+- 停止使用 MPO，并使用 Intune on Azure 来创建和管理所有你的 Intune 支持请求。  
+- 如有必要，请通知你的支持人员并更新文档。
+- 如果你有用户（不具有全局管理员或 Intune 服务管理员角色）当前正在 MPO 中创建支持请求，则在 Azure Active Directory 中向其分配服务支持管理员角色，以使其能够在 Azure 门户中继续创建支持票证。
+- 单击“其他信息”以获取详细信息和有用的链接。
+
+#### <a name="additional-information"></a>其他信息
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>执行操作：请在 Intune 中更新 Android 设备限制或符合性策略密码设置
 Intune 将删除 Android 4.4 及更高版本设备的可用密码类型“设备默认值”。 由于 Android 平台和设备默认值的差异，该策略通常被设备视为可选策略。 为了消除在 Android 上强制执行此设置时造成的混淆，我们会在即将发布的版本中将此设置从 UI 中删除。 

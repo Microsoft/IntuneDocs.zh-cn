@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330154"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141671"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
 
@@ -116,7 +116,7 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 
 ### <a name="understanding-licensed-apps"></a>了解获得许可的应用
 除了了解 Web 应用、应用商店应用和 LOB 应用，还应注意批量采购计划的应用和获得许可的应用的目标，例如： 
-- 适用于企业的 Apple 批量采购计划（iOS 和 MacOS）：在 iOS 应用商店中，可以购买要在公司中运行的应用的多个许可证。 购买多个副本可帮助你有效地管理公司的应用。 有关详细信息，请参阅[管理批量购买的 iOS 应用](vpp-apps-ios.md)。
+- 适用于企业的 Apple 批量采购计划 (iOS)：在 iOS 应用商店中，可以购买要在公司中运行的应用的多个许可证。 购买多个副本可帮助你有效地管理公司的应用。 有关详细信息，请参阅[管理批量购买的 iOS 应用](vpp-apps-ios.md)。
 - Android 工作配置文件：可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android 工作配置文件设备。 为 Android 工作配置文件安装的所有应用都来自托管 Google Play 商店。 登录到该商店，浏览查找所需应用，然后批准它们。 然后，该应用会显示在 Azure 门户的“许可的应用”节点中，可以像管理任何其他应用一样管理应用的分配。
 - 适用于企业的 Microsoft Store (Windows 10)：可在适用于企业的 Microsoft Store 中为组织查找和购买应用（单个或批量）。 通过将此应用商店与 Microsoft Intune 相连，可以在 Azure 门户中管理批量购买的应用。 有关详细信息，请参阅[管理来自适用于企业的 Microsoft Store 的应用](windows-store-for-business.md)。
 

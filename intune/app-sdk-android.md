@@ -3,8 +3,8 @@ title: 用于 Android 的 Microsoft Intune App SDK 开发人员指南
 description: 用于 Android 的 Microsoft Intune App SDK 支持将 Intune 移动应用管理 (MAM) 集成到 Android 应用中。
 keywords: SDK
 author: Erikre
-manager: dougeby
 ms.author: erikre
+manager: dougeby
 ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: 4c26d9914173c07096caad428afcbd9174625ef7
+ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254393"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44031297"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -36,7 +36,7 @@ Intune App SDK 包括下列文件：
 * **Microsoft.Intune.MAM.SDK.aar**：SDK 组件（Support.V4 和 Support.V7 JAR 文件除外）。
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**：在使用 Android v4 支持库的应用中启用 MAM 所需的接口。 需要此支持的应用必须直接引用该 JAR 文件。
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar**：在使用 Android v7 支持库的应用中启用 MAM 所需的接口。 需要此支持的应用必须直接引用该 JAR 文件。
-* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**：此 jar 包含 Android 系统类的存根，它们仅存在于较新的设备上，由 MAMActivity 中的方法引用。 较新的设备将忽略这些存根类。 仅当应用对从 MAMActivity 派生的类执行反射时，此 jar 才是必需的，而大多数应用无需包含它。 如果使用此 jar，则必须小心将其所有类从 ProGuard 中排除。 它们都将位于“android”根包下
+* Microsoft.Intune.MDM.SDK.DownlevelStubs.jar：此 jar 包含 Android 系统类的存根，它们仅存在于较新的设备上，由 MAMActivity 中的方法引用。 较新的设备将忽略这些存根类。 仅当应用对从 MAMActivity 派生的类执行反射时，此 jar 才是必需的，而大多数应用无需包含它。 如果使用此 jar，则必须小心将其所有类从 ProGuard 中排除。 它们都将位于“android”根包下
 * **CHANGELOG.txt**：提供每个 SDK 版本中所做的更改记录。
 * **THIRDPARTYNOTICES.TXT**：一个归属声明，用于确认将在应用中编译的第三方和/或 OSS 代码。
 
@@ -59,13 +59,13 @@ Intune App SDK 是已编译的 Android 项目。 因此，这在很大程度上�
 
 Intune App SDK 是没有外部依赖项的标准 Android 库。 Microsoft.Intune.MAM.SDK.aar 既包含启用应用保护策略所需的接口，同时也包含与 Microsoft Intune 公司门户应用进行互操作所必需的代码。
 
-Microsoft.Intune.MAM.SDK.aar 必须指定为 Android 库引用。 要执行此操作，请在 Android Studio 中打开应用项目，然后转到“文件”>“新建”>“新模块”，选择“导入 .JAR/.AAR 包”。 选择我们的 Android 存档包 Microsoft.Intune.MAM.SDK.aar 为 .AAR 创建模块。 右键单击包含应用代码的一个或多个模块，然后转到“模块设置” > “依赖项选项卡” > “+ 图标” > “模块依赖项”，选择刚创建的 MAM SDK AAR 模块，然后选择“确定”。 这将确保生成项目时一起编译模块和 MAM SDK。
+Microsoft.Intune.MAM.SDK.aar 必须指定为 Android 库引用。 若要将 Microsoft.Intune.MAM.SDK.aar 指定为 Android 库引用，请在 Android Studio 中打开应用项目，然后转到“文件”>“新建”>“新模式”并选择“导入 .JAR/.AAR 包”。 然后，选择 Android 存档包 Microsoft.Intune.MAM.SDK.aar 为 .AAR 创建模块。 右键单击包含应用代码的一个或多个模块，然后转到“模块设置” > “依赖项选项卡” > “+ 图标” > “模块依赖项”，选择刚创建的 MAM SDK AAR 模块，然后选择“确定”。 这将确保生成项目时一起编译模块和 MAM SDK。
 
 此外，**Microsoft.Intune.MAM.SDK.Support.v4** 和 **Microsoft.Intune.MAM.SDK.Support.v7** 分别包含 `android.support.v4` 和 `android.support.v7` 的 Intune 变体。 它们并未内置于 Microsoft.Intune.MAM.SDK.aar，以防应用不希望包含支持库。 它们是标准的 JAR 文件，而不是 Android 库项目。
 
 #### <a name="proguard"></a>ProGuard
 
-如果 [ProGuard](http://proguard.sourceforge.net/)（或任何其他收缩/模糊处理机制）用作生成步骤，则必须排除 Intune SDK 类。 当生成中包含 .aar 时，我们的规则会自动集成到 ProGuard 步骤中，并保留必要的类文件。 
+如果 [ProGuard](http://proguard.sourceforge.net/)（或任何其他收缩/模糊处理机制）用作生成步骤，则必须排除 Intune SDK 类。 当生成中包含 .AAR 时，我们的规则会自动集成到 ProGuard 步骤中，并保留必要的类文件。 
 
 Azure Active Directory 身份验证库 (ADAL) 可能有其自己的 ProGuard 限制。 如果应用集成 ADAL，则必须遵循 ADAL 文档中的这些限制。
 
@@ -135,7 +135,7 @@ Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下
 |android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 
 ### <a name="renamed-methods"></a>重命名的方法
-在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（通常使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `onCreate()` 并调用 `super.onCreate()`）时，`Activity` 必须替代 `onMAMCreate()` 并调用 `super.onMAMCreate()`。 Java 编译器应强制执行最终限制，以防止意外替代原始方法（而不是 MAM 等效项）。
+在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `onCreate()` 并调用 `super.onCreate()`）时，`Activity` 必须替代 `onMAMCreate()` 并调用 `super.onMAMCreate()`。 Java 编译器应强制执行最终限制，以防止意外替代原始方法（而不是 MAM 等效项）。
 
 ### <a name="mamapplication"></a>MAMApplication
 如果应用创建了 `android.app.Application` 的子类，则必须改为创建 `com.microsoft.intune.mam.client.app.MAMApplication` 的子类。 如果应用不含 `android.app.Application` 子类，则必须将 `"com.microsoft.intune.mam.client.app.MAMApplication"` 设置为 AndroidManifest.xml 的 `<application>` 标记中的 `"android:name"` 属性。
@@ -143,14 +143,14 @@ Android 基类必须替换为其相应的 MAM 等效项。 为此，请查找下
 必须使用 `MAMPendingIntent.get*` 方法，而不是 `PendingIntent.get*`。 此后，可正常使用得到的 `PendingIntent`。
 
 ### <a name="manifest-replacements"></a>清单替换
-请注意，可能需要在清单以及 Java 代码中执行上述一些类替换。 特别说明：
+可能需要在清单以及 Java 代码中执行上述一些类替换。 特别说明：
 * `android.support.v4.content.FileProvider` 的清单引用必须替换为 `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider`。
 
 ## <a name="sdk-permissions"></a>SDK 权限
 
 Intune App SDK 需要具有三个 [Android 系统权限](https://developer.android.com/guide/topics/security/permissions.html)才能在应用上进行集成：
 
-* `android.permission.GET_ACCOUNTS`（需要时可在运行时请求）
+* `android.permission.GET_ACCOUNTS`（如有必要，可在运行时请求）
 
 * `android.permission.MANAGE_ACCOUNTS`
 
@@ -206,7 +206,7 @@ public interface AppPolicy {
 
 /**
  * Restrict where an app can save personal data.
- * This function is now deprecated. Please use getIsSaveToLocationAllowed(SaveLocation, String) instead
+ * This function is now deprecated. Use getIsSaveToLocationAllowed(SaveLocation, String) instead
  * @return True if the app is allowed to save to personal data stores; false otherwise.
  */
 @Deprecated
@@ -399,7 +399,7 @@ public interface MAMNotificationReceiver {
 
 * **WIPE_USER_AUXILIARY_DATA**：如果应用希望 Intune App SDK 执行默认选择性擦除行为，但是在擦除进行时仍想删除一些辅助数据，则应用可以注册此通知。 此通知不适用于单标识应用，它将仅发送到多标识应用。
 
-* **REFRESH_POLICY**：此通知在 `MAMUserNotification` 中进行发送。 收到此通知后，必须先使所有缓存的 Intune 策略失效，然后再更新这些策略。 这通常由 SDK 处理；但是如果以任何持久方式使用策略，则应由应用处理。
+* **REFRESH_POLICY**：此通知在 `MAMUserNotification` 中进行发送。 收到此通知后，必须先使所有缓存的 Intune 策略失效，然后再更新这些策略。 这由 SDK 处理；但是如果以任何持久方式使用策略，则应由应用处理。
 
 * **MANAGEMENT_REMOVED**：此通知在 `MAMUserNotification` 中进行发送，并通知应用它将变为不受托管。 一旦不受托管，它将无法进行以下操作：读取加密文件、读取通过 MAMDataProtectionManager 加密的数据、与加密剪贴板进行交互，或以其他方式参与托管应用生态系统。
 
@@ -410,7 +410,7 @@ public interface MAMNotificationReceiver {
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>配置 Azure Active Directory Authentication Library (ADAL)
 
-首先，请阅读 [GitHub 上的 ADAL 存储库](https://github.com/AzureAD/azure-activedirectory-library-for-android)中的 ADAL 集成指南。
+首先，阅读 [GitHub 上的 ADAL 存储库](https://github.com/AzureAD/azure-activedirectory-library-for-android)中的 ADAL 集成指南。
 
 SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) 实现其[身份验证](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)和条件启动方案，这要求应用通过 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) 进行配置。 配置值通过 AndroidManifest 元数据传递给 SDK。
 
@@ -448,7 +448,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 ### <a name="common-adal-configurations"></a>常用 ADAL 配置
 
-以下是使用 ADAL 配置应用的常见方法。 找到应用的配置，并确保 ADAL 元数据参数（如上所述）设置为所需的值。 在所有情况下，如果需要，可以为非默认环境指定颁发机构（但通常不需要）。
+以下是使用 ADAL 配置应用的常见方法。 找到应用的配置，并确保 ADAL 元数据参数（如上所述）设置为所需的值。 在所有情况下，如果需要，可以为非默认环境指定颁发机构（但不需要）。
 
 1. **应用未集成 ADAL：**
 
@@ -471,7 +471,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 3.  在“API 访问”标题下的“设置”中，选择“所需权限”。 
 4.  单击“+ 添加”。
 5.  单击“选择 API”。 
-6.  在搜索框中输入“Microsoft 移动应用程序管理”。
+6.  在搜索框中，输入“Microsoft 移动应用程序管理”。
 7.  单击选择 API 列表中的“Microsoft 移动应用程序管理”。
 8.  选择“读取和写入用户的应用管理数据”。
 9.  单击“完成”。
@@ -492,7 +492,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 ### <a name="conditional-access"></a>条件性访问
 
-条件访问 (CA) 是 Azure Active Directory [功能](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)，可用于控制对 AAD 资源的访问。 [Intune 管理员可定义仅允许从由 Intune 托管的设备或应用中访问资源的 CA 规则](https://docs.microsoft.com/intune/conditional-access)。 为确保应用能在适当的时候访问资源，必须按照以下步骤操作。 如果应用未获取任何 AAD 访问令牌，或仅访问不受 CA 保护的资源，则可跳过这些步骤。
+条件访问 (CA) 是 Azure Active Directory [功能](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)，可用于控制对 AAD 资源的访问。 [Intune 管理员可定义 CA 规则](https://docs.microsoft.com/intune/conditional-access)，该规则仅允许从由 Intune 托管的设备或应用中访问资源。 为确保应用能在适当的时候访问资源，必须按照以下步骤操作。 如果应用未获取任何 AAD 访问令牌，或仅访问不受 CA 保护的资源，则可跳过这些步骤。
 
 1. 按照 [ADAL 集成指南](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)进行操作。 
    有关代理的使用情况，请特别参阅步骤 11。
@@ -537,7 +537,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 2. 当创建一个用户帐户且该用户成功使用 ADAL 登录时，则该应用_必须_调用 `registerAccountForMAM()`。
 
-3. 在彻底删除用户帐户后，应用应调用 `unregisterAccountForMAM()` 以从 Intune 管理中删除该帐户。
+3. 在删除用户帐户后，应用应调用 `unregisterAccountForMAM()` 以从 Intune 管理中删除该帐户。
 
     > [!NOTE]
     > 如果用户暂时注销该应用，该应用不需要调用 `unregisterAccountForMAM()`。 调用可能会启动擦除以彻底删除用户的企业数据。
@@ -602,7 +602,7 @@ void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
 void updateToken(String upn, String aadId, String resourceId, String token);
 ```
 
-1. 应用必须实现 `MAMServiceAuthenticationCallback` 接口以允许 SDK 为给定用户和资源 ID 请求 ADAL 令牌。 必须通过调用其 `registerAuthenticationCallback()` 方法将回调实例提供给 `MAMEnrollmentManager`。 应用生命周期中可能很早便需要令牌以用于注册重试或应用保护策略刷新签入，因此注册回调的理想位置是在应用 `MAMApplication` 子类的 `onMAMCreate()` 方法中。
+1. 应用必须实现 `MAMServiceAuthenticationCallback` 接口以允许 SDK 为给定用户和资源 ID 请求 ADAL 令牌。 必须通过调用其 `registerAuthenticationCallback()` 方法将回调实例提供给 `MAMEnrollmentManager`。 应用生命周期中可能在较早便需要令牌，以用于注册重试或应用保护策略刷新签入，因此注册回调的理想位置是在应用 `MAMApplication` 子类的 `onMAMCreate()` 方法中。
 
 2. `acquireToken()` 方法应获取给定用户的请求资源 ID 的访问令牌。 如果无法获取请求的令牌，则会返回 null。
 
@@ -708,7 +708,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 如果收到 `COMPANY_PORTAL_REQUIRED` 结果，SDK 将阻止使用其标识已请求进行注册的活动。 相反，SDK 将让这些活动显示下载公司门户的提示。 如果要防止你的应用中出现该行为，活动可能会实施 `MAMActivity.onMAMCompanyPortalRequired`。
 
-在 SDK 显示其默认阻止 UI 之前将调用此方法。 如果应用更改了活动标识，或者取消注册尝试进行注册的用户，SDK 将不会阻止活动。 在此情况下，由该应用负责避免泄露企业数据。 请注意，只有多标识应用（稍后讨论）才能够更改活动标识。
+在 SDK 显示其默认阻止 UI 之前将调用此方法。 如果应用更改了活动标识，或者取消注册尝试进行注册的用户，SDK 将不会阻止活动。 在此情况下，由该应用负责避免泄露企业数据。 只有多标识应用（稍后讨论）才能够更改活动标识。
 
 ### <a name="notifications"></a>通知
 
@@ -745,9 +745,9 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
     ```
 
 
-2. **[可选]** 如果实现可选的自定义 BackupAgent，则需要确保使用 MAMBackupAgent 或 MAMBackupAgentHelper。 请参阅以下部分。 考虑切换为使用 Intune 的 **MAMDefaultFullBackupAgent**（如步骤 1 中所述），它在 Android M 及更高版本上提供轻松备份。
+2. **[可选]** 如果实现可选的自定义 BackupAgent，则需要确保使用 MAMBackupAgent 或 MAMBackupAgentHelper。 请参阅以下部分。 考虑切换为使用 Intune 的 MAMDefaultFullBackupAgent（如步骤 1 中所述），它在 Android M 及更高版本上提供轻松备份。
 
-3. 确定应用应接收的完整备份类型（未筛选、已筛选或无）时，需要将属性 `android:fullBackupContent` 设置为 true、false 或应用中的 XML 资源。
+3. 确定应用应接收的完整备份类型（未筛选、已筛选或无）时，你将需要将属性 `android:fullBackupContent` 设置为 true、false 或应用中的 XML 资源。
 
 4. 然后， _**必须**_ 将所有置于 `android:fullBackupContent` 的内容复制到清单中名为 `com.microsoft.intune.mam.FullBackupContent` 的元数据标记。
 
@@ -767,7 +767,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    **示例 3**：如果希望应用根据 XML 文件中定义的自定义规则具有完整备份，请将属性和元数据标记设置为相同的 XML 资源：
+    示例 3：如果希望应用根据 XML 文件中定义的自定义规则具有完整备份，将属性和元数据标记设置为相同的 XML 资源：
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -778,7 +778,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
 
 ### <a name="keyvalue-backup"></a>键/值备份
 
-[键/值备份](https://developer.android.com/guide/topics/data/keyvaluebackup.html)选项可供所有 API 8+ 使用，并可将应用数据上载到 [Android 备份服务](https://developer.android.com/google/backup/index.html)。 应用每个用户的数据量限制为 5MB。 如果你使用键/值备份，则必须使用 **BackupAgentHelper** 或 **BackupAgent**。
+[键/值备份](https://developer.android.com/guide/topics/data/keyvaluebackup.html)选项可供所有 API 8+ 使用，并可将应用数据上载到 [Android 备份服务](https://developer.android.com/google/backup/index.html)。 应用每个用户的数据量限制为 5 MB。 如果你使用键/值备份，则必须使用 **BackupAgentHelper** 或 **BackupAgent**。
 
 ### <a name="backupagenthelper"></a>BackupAgentHelper
 
@@ -802,7 +802,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
 **集成 MAM：**
 
-1. 请仔细阅读[键/值备份](https://developer.android.com/guide/topics/data/keyvaluebackup.html)的 Android 指南，尤其是[扩展 BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent)，以确保 BackupAgent 实现遵循 Android 指导原则。
+1. 仔细阅读[键/值备份](https://developer.android.com/guide/topics/data/keyvaluebackup.html)的 Android 指南，尤其是[扩展 BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent)，以确保 BackupAgent 实现遵循 Android 指导原则。
 
 2. 让类扩展 `MAMBackupAgent`。
 
@@ -827,7 +827,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 ## <a name="multi-identity-optional"></a>多标识（可选）
 
 ### <a name="overview"></a>概述
-默认情况下，Intune App SDK 会将策略作为一个整体应用到该应用。 多标识是一种可选的 Intune 应用保护功能，可以启用该功能以允许策略应用到单标识级别。 这需要比其他应用保护功能还要多得多的应用参与。
+默认情况下，Intune App SDK 会将策略作为一个整体应用到该应用。 多标识是一种可选的 Intune 应用保护功能，可以启用该功能以允许策略应用到单标识级别。 这需要比其他应用保护功能更多的应用参与。
 
 应用必须在其打算更改现用身份时通知 SDK。 在某些情况下，SDK 也会在需要标识更改时通知应用。 然而，在大多数情况下，MAM 不知道 UI 中正在显示的数据或在给定的时间内在线程上使用的数据，并且要依赖应用设置正确的标识以避免数据泄漏。 在随后各部分中，将会调用需要应用操作的一些特定方案。
 
@@ -839,7 +839,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 > [!NOTE]
 > 目前，每台设备仅支持一个 Intune 托管标识。
 
-注意，标识被简单地定义为字符串。 标识**不区分大小写**，而且向 SDK 请求标识可能会返回在设置标识时最初使用的相同大小写情况。
+标识被定义为字符串。 标识**不区分大小写**，而且向 SDK 请求标识可能会返回在设置标识时最初使用的相同大小写情况。
 
 ### <a name="enabling-multi-identity"></a>启用多标识
 
@@ -1129,13 +1129,13 @@ MAM 无法自动推断出要在 `Activity` 中读取的文件和在其中显示�
 
 ### <a name="directory-protection"></a>目录保护
 
-可能会使用用于保护文件的同一个 `protect` 方法来保护目录。 请注意，目录保护以递归方式应用于所有文件和目录中包含的子目录，以及在目录中创建的新文件。 因为目录保护以递归方式应用，所以对于非常大的目录，`protect` 调用可能需要一些时间才能完成。 为此，对包含大量文件的目录应用保护的应用可能希望在后台线程上以异步方式运行 `protect`。
+可能会使用用于保护文件的同一个 `protect` 方法来保护目录。 目录保护以递归方式应用于所有文件和目录中包含的子目录，以及在目录中创建的新文件。 因为目录保护以递归方式应用，所以对于大型目录，`protect` 调用可能需要一些时间才能完成。 为此，对包含大量文件的目录应用保护的应用可能希望在后台线程上以异步方式运行 `protect`。
 
 ### <a name="data-protection"></a>数据保护
 
-无法将文件标记为属于多身份标识。 对于必须存储属于同一文件中不同用户的数据的应用，可使用由 `MAMDataProtectionManager` 提供的功能手动执行此操作。 这可让应用加密数据并将其绑定到特定用户。 经过加密的数据适合存储到文件中的磁盘。 可查询与标识相关联的数据，并且可随后解密此数据。
+无法将文件标记为属于多身份标识。 对于必须存储属于同一文件中不同用户的数据的应用，可使用由 `MAMDataProtectionManager` 提供的功能手动执行此操作。 这可让应用加密数据并将其绑定到特定用户。 经过加密的数据适合存储到文件中的磁盘。 可查询与标识关联的数据，并且随后可解密此数据。
 
-使用 `MAMDataProtectionManager` 的应用应实现 `MANAGEMENT_REMOVED` 通知的接收器。 此通知完成后，如果在缓冲区受保护时启用了文件加密，则通过此类保护的缓冲区将不再可读。 应用可在此通知期间通过调用所有缓冲区上的 MAMDataProtectionManager.unprotect 来修正这种情况。 请注意，如果想要保留标识信息，也可以在此通知期间安全调用保护--加密保证会在此通知期间禁用。
+使用 `MAMDataProtectionManager` 的应用应实现 `MANAGEMENT_REMOVED` 通知的接收器。 此通知完成后，如果在缓冲区受保护时启用了文件加密，则通过此类保护的缓冲区将不再可读。 应用可在此通知期间通过调用所有缓冲区上的 MAMDataProtectionManager.unprotect 来修正这种情况。 如果想要保留标识信息，也可以在此通知期间安全调用保护--加密保证会在此通知期间禁用。
 
 ```java
 
@@ -1242,7 +1242,7 @@ public final class MAMDataProtectionManager {
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>为 Android 应用程序启用面向 MAM 的配置（可选）
-应用程序特定的键值对可以在 Intune 控制台中进行配置。 这些键值对根本不会被 Intune 解释，只是被传递给应用。 想要接收这种配置的应用程序可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 类进行这些操作。 如果多个策略针对同一个应用，则可能会有多个冲突的值可用于同一个键。
+应用程序特定的键值对可以在 Intune 控制台中进行配置。 这些键值对根本不会被 Intune 解释，而是被传递给应用。 想要接收这种配置的应用程序可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 类进行这些操作。 如果多个策略针对同一个应用，则可能会有多个冲突的值可用于同一个键。
 
 ### <a name="example"></a>示例
 ```
@@ -1455,8 +1455,8 @@ public interface MAMAppConfig {
 
 对于在无 [ProGuard](http://proguard.sourceforge.net/) 的情况下运行的大型代码库，Dalvik 可执行文件格式的限制会成为问题。 具体而言，可能会出现以下限制：
 
-1.  对字段的 65K 限制。
-2.  对方法的 65K 限制。
+1.  对字段的 65 K 限制。
+2.  对方法的 65 K 限制。
 
 ### <a name="policy-enforcement-limitations"></a>策略强制实施限制
 

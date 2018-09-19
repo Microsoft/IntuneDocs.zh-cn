@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
+ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347451"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44340263"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>将 Web 应用添加到 Microsoft Intune
 
@@ -62,6 +62,8 @@ Intune 支持包括 Web 应用在内的各种应用类型。 Web 应用是客户
 
 > [!Note]
 > 用户必须将 Intune 小组件添加到他们的主屏幕，显示已分配到 Android 设备的 Web 应用。
+>
+> 目前，将 Intune Web 应用部署到 iOS 设备的操作与管理配置文件相关联，无法手动删除。 可以在 Intune 门户中将部署类型更改为“卸载”，此时可以自动删除 Web 应用。 但是，如果在将应用分配意图更改为“卸载”之前删除部署，Web 应用将永久保留在设备上，直到设备从 Intune 取消注册。
 
 ## <a name="next-steps"></a>后续步骤
 

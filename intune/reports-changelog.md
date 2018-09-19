@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,30 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd9fb36bb1b8c5e66d104f530690c5d236ea25e4
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 08f5437141cc98161af740d7b8cad7c6cc1ff61c
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223690"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43821182"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 随时了解 Intune 数据仓库的更新。
+
+## <a name="1808"></a>1808
+发布于 2018 年 8 月
+
+### <a name="v10-collections"></a>v1.0 集合  
+
+现在可以通过设置查询参数 `api-version=v1.0` 来使用 v1.0 版的 Intune 数据仓库。 数据仓库中集合的更新本质上是附加更新，不会破坏现有方案。
+
+### <a name="enrollment-failure-collection-released-to-beta"></a>发布到 Beta 版的注册故障集合
+
+新的 `Enrollment Failure` 集合发布到 beta 版。 使用此集合，可以通过查看最常见的故障来了解注册过程。 
+
 
 ## <a name="1805"></a>1805
 发行时间：2018 年 5 月
