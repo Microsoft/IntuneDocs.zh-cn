@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4c268f9061ae624c1f85e386e5633b14334860b7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a640e6d914da6fead7a64d5235c1cdeac164ac9e
+ms.sourcegitcommit: 7c70c3e0fcae7c4fa8c9e108aafb1cebb366332d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313132"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44096531"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows AutoPilot 注册 Windows 设备
 Windows AutoPilot 简化了设备预配。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 AutoPilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 AutoPilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)（Windows AutoPilot 概述）。
@@ -69,7 +69,7 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
 2. 在“名称”和（可选）“说明”中，键入名称和说明。
 3. 对于“部署模式”，选择下列两个选项之一：
     - “用户驱动”：包含此配置文件的设备与设备注册用户相关联。 必须有用户凭据，才能预配设备。
-    - “自部署(预览)”：（Windows 10 Insider Preview 内部版本 17672 或更高版本）包含此配置文件的设备不与设备注册用户相关联。 无需用户凭据，即可预配设备。
+    - “自部署(预览)”：（需要最新的 [Windows 10 Insider Preview 内部版本](https://docs.microsoft.com/windows-insider/at-work-pro/)）包含此配置文件的设备不与设备注册用户相关联。 无需用户凭据，即可预配设备。
 4. 在“加入 Azure AD 时的身份”框中，选择“Azure AD 已加入”。
 5. 选择“全新体验(OOBE)”，配置下列选项，再选择“保存”：
     - “语言(区域)”*****：选择要对设备使用的语言。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
@@ -82,7 +82,7 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
 
 6. 选择“创建”，创建配置文件。 AutoPilot 部署配置文件现在即可分配给设备。
 
-*仅当选择“自部署(预览)”作为“部署模式”时，“语言(区域)”和“自动配置键盘”才可用（Windows 10 Insider Preview 内部版本 17672 或更高版本）。
+*仅当选择“自部署(预览)”作为“部署模式”时，“语言(区域)”和“自动配置键盘”才可用（需要最新的 [Windows 10 Insider Preview 内部版本](https://docs.microsoft.com/windows-insider/at-work-pro/)）。
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>将 AutoPilot 部署配置文件分配到设备组
@@ -113,7 +113,7 @@ AutoPilot 部署配置文件用于配置 AutoPilot设备。
 
 可以将用户分配到特定 Autopilot 设备 进行此分配，进行 Windows 设置时将在[公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)登录页预填充来自 Azure Active Directory 的用户。 它还允许设置自定义问候语名称。 这不会预填充或修改 Windows 登录名。 只能以这种方式分配拥有许可证的 Intune 用户。
 
-先决条件：配置了 Azure Active Directory 公司门户。
+先决条件：已配置 Azure Active Directory 公司门户和最新的 [Windows 10 Insider Preview 内部版本](https://docs.microsoft.com/windows-insider/at-work-pro/)。
 
 1. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “设备”>“选择设备”>“分配用户”。
     ![分配用户的屏幕截图](media/enrollment-autopilot/assign-user.png)
