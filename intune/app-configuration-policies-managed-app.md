@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cad4e1d6bcb47981dfb40a1146a3f5148724e08a
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 084b7bead6b294cfbfa94c9b18f539dd0e5db2a8
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330086"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028590"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>为受管理应用添加应用配置策略（无需设备注册）
 
@@ -30,7 +30,7 @@ ms.locfileid: "43330086"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 选择“客户端应用”工作负荷。
+3. 选择“客户端应用”工作负载。
 4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”。
 5. 设置以下详细信息：
     - **名称**  
@@ -43,7 +43,7 @@ ms.locfileid: "43330086"
 7. 对于该应用支持的每个配置设置，请键入“名称”和“值”，然后选择省略号 (…)。  
     若要删除配置，请选择省略号 (…)，然后选择“删除”。  
     
-启用了 Intune App SDK 的应用支持键值对形式的配置。 若要详细了解支持哪些键值配置，请参阅每个应用的相关文档。 请注意，可使用将由应用程序生成的数据动态填充的令牌。 有关 Outlook for iOS 应用配置策略设置的相关信息，请参阅[使用 Microsoft Intune 管理 Outlook for iOS 应用配置](https://technet.microsoft.com/en-us/library/mt813789(v=exchg.150).aspx)。
+启用了 Intune App SDK 的应用支持键值对形式的配置。 若要详细了解支持哪些键值配置，请参阅每个应用的相关文档。 请注意，可使用将由应用程序生成的数据动态填充的令牌。 有关 Outlook for iOS 应用配置策略设置的相关信息，请参阅[使用 Microsoft Intune 管理 Outlook for iOS 应用配置](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx)。
 
 ## <a name="configuration-values-for-using-tokens"></a>为使用令牌配置值
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 990226cba088585021db691753c6a3a8063927d3
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
+ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347247"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494041"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>将 Microsoft Store 应用添加到 Microsoft Intune
 
@@ -35,7 +35,7 @@ ms.locfileid: "43347247"
 2. 选择“所有服务” > “Intune”。  
     Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格中，选择“客户端应用”。
-4. 在“客户端应用”工作负荷窗格的“管理”下，选择“应用”。
+4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”。
 5. 在“应用”窗格中，选择“添加”。
 6. 在“添加应用”窗格中，选择“Windows ”的“应用类型”，然后选择“应用信息”。
 7. 在“应用信息”窗格中，添加应用信息。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：

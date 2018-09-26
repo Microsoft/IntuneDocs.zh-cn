@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ca5b09d415466d2ab6ce2f70a53f7fd8444d28f
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 07c07caa7d64e18aae8b44810a4fdcb2b645b9fa
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835544"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562929"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何使用 Azure AD 访问 Microsoft Graph Intune API
 
@@ -162,7 +162,7 @@ __读取 Microsoft Intune 配置__ | [DeviceManagementServiceConfig.Read.All](#s
 - **启用访问权限**设置：__读取 Microsoft Intune 应用__
 
 - 允许对以下实体属性和状态执行读取访问权限：
-    - Mobile Apps
+    - 客户端应用
     - 移动应用类别
     - 应用保护策略
     - 应用配置
@@ -175,7 +175,7 @@ __读取 Microsoft Intune 配置__ | [DeviceManagementServiceConfig.Read.All](#s
 
 - 此外，允许对以下实体作出更改：
 
-    - Mobile Apps
+    - 客户端应用
     - 移动应用类别
     - 应用保护策略
     - 应用配置

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 140b19ac64003f9ddf481a33e0cf4d423e106ffd
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905370"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028624"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
 我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 本参考指南面向非常熟悉经典门户中的 Intune 且想知道如何使用 Azure 门户中的 Intune 完成工作的用户。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。
@@ -70,12 +70,12 @@ Azure 门户中 Intune 使用 [Azure Active Directory (AD)](https://docs.microso
 ## <a name="where-did-my-conditional-access-policies-go"></a>条件访问策略在何处？
 租户迁移到 Azure 门户后，将继续强制使用租户的条件访问策略。 但是，你无法在 Azure 门户中的 Intune 中查看或修改这些策略。
 
-如果希望在 Azure 门户中查看和修改条件访问策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关迁移条件访问策略的详细信息，请参阅[在 Azure 门户中迁移经典策略](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration)。 
+如果希望在 Azure 门户中查看和修改条件访问策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关迁移条件访问策略的详细信息，请参阅[在 Azure 门户中迁移经典策略](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。 
 
 ## <a name="where-did-my-compliance-policies-go"></a>符合性策略去哪了？
 你的租户迁移到 Azure 门户后，租户的符合性策略将继续强制使用。 但是，你无法在 Azure 门户中的 Intune 中查看或修改这些策略。
 
-如果希望在 Azure 门户中查看和修改符合性策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关设备符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](https://docs.microsoft.com/en-us/intune/known-issues#compliance)。 
+如果希望在 Azure 门户中查看和修改符合性策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关设备符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](https://docs.microsoft.com/intune/known-issues#compliance)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 处于哪个位置？
 在经典门户中，可以将 Intune 设置为与 Apple 设备注册计划进行集成，并手动请求与 Apple 服务同步：

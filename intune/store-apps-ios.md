@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 04d7acb5aa0e1a534fb6ad31519c094123aa90bb
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 832105078572b3229334ccdcb2e3e89ace9e0408
+ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347671"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494058"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>将 iOS 应用商店应用添加到 Microsoft Intune
 
@@ -42,7 +42,7 @@ ms.locfileid: "43347671"
 2. 选择“所有服务” > “Intune”。  
     Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格中，选择“客户端应用”。
-4. 在“客户端应用”工作负荷窗格的“管理”下，选择“应用”。
+4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”。
 5. 在“应用”窗格中，选择“添加”。
 6. 在“应用类型”列表中，选择“应用商店应用”类型下的“iOS”。
 7. 选择“搜索 App Store”。

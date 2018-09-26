@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905319"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505727"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Wi-Fi 设置
 
@@ -62,8 +62,6 @@ Wi-Fi 配置文件支持以下设备平台：
     - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
 
-   > [!IMPORTANT]
-   > 如果要为运行 Windows 10（包括 Windows Holographic for Business）的设备创建配置文件，必须选择“Windows 8.1 及更高版本”平台。 “Windows 10 及更高版本”平台不包含 Wi-Fi 配置文件类型。 
 
 6. 对于 Apple 或 Android 设备，请在“WiFi 类型”下拉列表中，选择“基本”或“企业”。 可使用“基本”来提供基本功能，如网络名称和 SSID。 “企业”允许提供更高级的信息，如可扩展身份验证协议 (EAP)（如果 Wi-Fi 网络使用此协议）。 
 
