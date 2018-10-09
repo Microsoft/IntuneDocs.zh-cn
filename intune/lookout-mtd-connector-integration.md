@@ -3,8 +3,8 @@ title: 设置 Lookout 与 Microsoft Intune 的集成
 titlesuffix: ''
 description: 了解如何将 Intune 与 Lookout Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029859"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232167"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>使用 Intune 设置 Lookout 移动威胁防御集成
 
@@ -88,7 +88,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
     > [!NOTE] 
     > Azure AD 注册组中标识并支持的所有受 Lookout 支持并注册了 Intune 的用户设备，都注册了 Lookout MTD 控制台并可在其中激活。
 
-2. 在[“Lookout 控制台”](https://aad.lookout.com)的“系统”模块中，选择“连接器”选项卡，然后选择“注册管理”定义一组其设备应注册 Lookout 的用户。 添加用于注册的 Azure AD 安全组“显示名称”。
+2. 在 [Lookout 控制台](https://aad.lookout.com)的“系统”模块中，选择“连接器”选项卡，然后选择“注册管理”，以定义一组其设备应注册 Lookout 的用户。 添加用于注册的 Azure AD 安全组“显示名称”。
 
     ![Intune 连接器注册页面的屏幕截图](./media/lookout-mtp-enrollment.png)
 

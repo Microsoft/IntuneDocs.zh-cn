@@ -3,8 +3,8 @@ title: 如何将 Windows Hello 企业版与 Microsoft Intune 集成
 titleSuffix: ''
 description: 了解如何创建策略以控制 Windows Hello 企业版在托管设备上的使用。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 08/28/2018
 ms.topic: article
@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f2a244337b152af7bcf8bf17cf7e643bdb3faa59
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313728"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231443"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>将 Windows Hello 企业版与 Microsoft Intune 集成
 

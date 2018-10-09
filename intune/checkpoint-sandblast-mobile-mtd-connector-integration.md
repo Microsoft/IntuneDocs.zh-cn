@@ -3,8 +3,8 @@ title: Check Point SandBlast MTD 与 Microsoft Intune
 titlesuffix: ''
 description: 如何使用 Intune 设置 CheckPoint SandBlast 移动威胁防御 (MTD) 以控制移动设备对公司资源的访问。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b864d78fd7bfd7fb4e177b568b3587bc1e28b209
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9fa64ff115e6f451cef06b9cf605f55829b0b01
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29777206"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231116"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>将 Check Point SandBlast Mobile 与 Intune 集成
 

@@ -3,8 +3,8 @@ title: Zimperium MTD 连接器与 Intune
 titleSuffix: Intune on Azure
 description: 了解如何将 Intune 与 Zimperium Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 513db12094b5f58ccf743b68101b820afbcdff48
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29780061"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231468"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium 移动威胁防御连接器与 Intune
 

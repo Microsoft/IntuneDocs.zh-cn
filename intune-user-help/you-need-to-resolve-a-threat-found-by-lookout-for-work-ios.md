@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ffa0207729a6e0855b4534d40aa598bcb04e7847
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5866314c03eff5613b4c0cc5d46d2f2eace29a13
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150195"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828017"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>解决 Lookout for Work 发现的威胁  
 
@@ -32,7 +32,7 @@ Lookout for Work 应用是一项移动威胁防御服务，可识别 iOS 设备�
 * 使用 OneDrive 同步公司文件
 * 访问公司应用
 
-本文介绍如何识别 Lookout for Work 威胁警报以及如何解决这些问题。 
+本主题介绍如何识别 Lookout for Work 威胁警报以及如何解决这些警报。 
 
 ## <a name="troubleshoot-virus-or-security-threat"></a>排查病毒或安全威胁  
 当 Lookout for Work 应用检测到安全或应用威胁时，重新获取对公司资源的访问权限。  
@@ -42,7 +42,9 @@ Lookout for Work 应用是一项移动威胁防御服务，可识别 iOS 设备�
     ![Lookout for Work 错误消息示例屏幕截图，其中包含指向公司门户网站的链接和蓝色的“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. 选择你的设备。  
-3. 读取设备下方显示的警告。 它将指示打开 Lookout for Work 以解决病毒或安全威胁。   
+3. 阅读设备下方显示的警告。 它将指示打开 Lookout for Work 以解决病毒或安全威胁。     
+
+    ![公司门户设备页的示例屏幕截图，其中显示 Lookout for Work 警告。](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>排查应用威胁   
 如果安装 Lookout for Work 识别为威胁的应用，将收到一条消息，如以下屏幕截图所示。  
@@ -50,5 +52,5 @@ Lookout for Work 应用是一项移动威胁防御服务，可识别 iOS 设备�
 ![示例屏幕截图，显示 Lookout for Work 检测到的活动应用威胁和已解决应用威胁列表。](./media/ios-lfw-threat-example.png)    
 选择屏幕顶部显示的应用名称。 然后按照说明删除并卸载该应用。 只要设备上存在该应用，就无法访问公司资源。    
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
+仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。    
 

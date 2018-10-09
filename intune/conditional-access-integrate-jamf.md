@@ -3,8 +3,8 @@ title: 将 Jamf Pro 与 Microsoft Intune 集成来满足符合性要求
 titlesuffix: ''
 description: 通过将 Microsoft Intune 符合性策略与 Azure Active Directory 条件访问相结合，可确保由 Jamf 管理的设备的安全。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdeb3a21af2b4cf020d3e5029eeb5b0bc31db062
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 516e2f935225b7142c75b01967977fe97297c8e2
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024714"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232166"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -95,7 +95,7 @@ Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intun
 
 * 设备 Azure AD ID
 * JAMF 清单状态（Jamf Pro 在过去 24 小时内签入的计算机的清单状态）
-* OS 版本
+* 操作系统版本
 * 用户 Azure AD ID
 * 已加密（FileVault 2）
 * 网关守卫状态

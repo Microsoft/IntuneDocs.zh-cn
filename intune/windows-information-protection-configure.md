@@ -3,8 +3,8 @@ title: Microsoft Intune 中的 Windows 信息保护设置
 titleSuffix: ''
 description: 了解可用于管理 Windows 信息保护的 Microsoft Intune 设置。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ec649134d4c3d28c99863aa3f04d2a89d4e029f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5bb668c3c9dd1325a34a71c7a61b2efab8e52feb
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033124"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231104"
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置 Windows 信息保护
 
@@ -35,7 +35,7 @@ ms.locfileid: "31033124"
 > 若要将 Windows 10 公司门户应用与 Windows 信息保护结合使用，必须在“免除”的 Windows 信息保护模式下添加公司门户应用。 
 
 ### <a name="next-steps"></a>后续步骤
-有关更多信息，请参阅：
+有关详情，请参阅：
 -  [使用 Windows 信息保护来保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 - [使用 Microsoft Intune 经典控制台创建 Windows 信息保护 (WIP) 策略](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune)
 - [使用 Microsoft Intune Azure 门户创建具有 MDM 的 Windows 信息保护 (WIP) 策略](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)
