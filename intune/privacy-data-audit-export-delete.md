@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c646e134f6311e7c365fe38301a9015a752b553f
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313592"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028607"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>在 Intune 中审核、导出或删除个人数据
 
@@ -56,13 +56,13 @@ Intune 管理员可使用审核日志跟踪与个人数据有关的活动。 管
 
 ### <a name="delete-a-user-from-intune"></a>从 Intune 中删除用户
 
-要从 Intune 中删除最终用户的个人数据，管理员必须[从 Azure Active Directory (AAD) 中删除该用户](https://docs.microsoft.com/en-us/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)。 从 AAD 中删除（硬删除）用户时，Intune 将收到 AAD 的删除信号，然后自动开始从 Intune 服务中清除该用户的所有个人数据。 Intune 服务中的用户信息将在删除操作后的 30 天内删除。
+要从 Intune 中删除最终用户的个人数据，管理员必须[从 Azure Active Directory (AAD) 中删除该用户](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)。 从 AAD 中删除（硬删除）用户时，Intune 将收到 AAD 的删除信号，然后自动开始从 Intune 服务中清除该用户的所有个人数据。 Intune 服务中的用户信息将在删除操作后的 30 天内删除。
 
 ### <a name="reset-device-to-factory-settings"></a>将设备重置为出厂设置
 重置为出厂设置会将所有公司和个人数据及设置还原到原始出厂设置。 这样即可将设备提供给下一位员工。 用户文件、用户安装的应用程序和非默认设置都将删除，并且此数据将在删除操作后的 30 天内从 Intune 服务中删除。
 
 ### <a name="user-self-removal-from-intune-management"></a>用户从 Intune 管理中自行删除
-用户可从 Intune 管理中删除其 [Android、Apple 或 Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) 个人设备，无需管理员的协助。   
+用户可从 Intune 管理中删除其 [Android、Apple 或 Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md) 个人设备，无需管理员的协助。   
 
 ### <a name="retire"></a>停用
 “停用”操作将删除 Intune 预配的数据，例如公司应用程序、Intune 当前管理的应用的相关数据、策略设置和通过 Intune 预配的电子邮件配置文件。 此操作会将用户个人数据保留在设备上。

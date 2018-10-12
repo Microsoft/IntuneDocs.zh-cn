@@ -1,61 +1,123 @@
 ---
-title: 注册 Microsoft Intune 的 30 天免费试用版
-titleSuffix: Microsoft Intune
-description: 了解如何注册 Microsoft Intune 的 30 天免费试用版。
+title: 快速入门 - 免费试用 Microsoft Intune
+titlesuffix: ''
+description: 在本快速入门中，将创建免费试用版订阅、了解支持的配置和网络要求，并能根据需要配置自己的域名。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/04/2018
-ms.topic: conceptual
+ms.date: 09/13/2018
+ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
+ms.reviewer: ''
 ms.suite: ems
-ms.custom: get-started
-ms.openlocfilehash: 6492b757376c95c366d45a63b05f2ec60bdd791b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.custom: intune-azure
+ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
+ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254116"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581387"
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>注册 Microsoft Intune 免费试用版
+# <a name="quickstart-try-microsoft-intune-for-free"></a>快速入门：免费试用 Microsoft Intune 
 
+Microsoft Intune 可帮助你通过管理设备和应用保护员工的企业数据。 在本快速入门中，将创建免费版订阅以在测试环境中试用 Intune。
 
-本文将指导你注册 Azure 门户的 Intune 独立试用版。
+Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移动设备管理 (MDM) 和移动应用管理 (MAM)。 使用 Intune，可以确保正确配置、访问和更新员工的企业资源（数据、设备和应用），从而满足公司的符合性策略和要求。 
 
-1. 请访问 [Intune 注册](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)页面并填写表单，注册试用订阅。
-2. 如果有工作或学校帐户并希望将该帐户用于 Intune 试用版，请按照[登录说明](/intune/account-sign-up)进行操作。
+## <a name="prerequisites"></a>必备条件
+在设置 Microsoft Intune 之前，请查看以下要求：
 
-* 如果大多数 IT 操作和用户都位于不同于你所在地的区域，则建议在“公司位于哪里？”下选择该区域设置。
+   - [支持的操作系统和浏览器](supported-devices-browsers.md) 
+   - [网络配置要求和带宽](network-bandwidth-use.md)
 
-2. 注册过程结束后，将收到一条包含新帐户信息的消息。 <br/> 
+## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>注册 Microsoft Intune 免费试用版
 
-![帐户信息的图像](./media/2-end-of-sign-up-process.png) <br/>
+可以免费试用 Intune 30 天。 如果已有工作或学校帐户，请使用该帐户进行“登录”，并将 Intune 添加到订阅中。 否则，也可通过“注册”创建新帐户，以便为组织使用 Intune。
 
-此时如果单击“准备就绪”，则将转到 Office 365 管理中心，可以在此将用户添加到测试环境。 <br/><br/>但是，如果想直接进入 Intune Azure 门户，请打开一个新的浏览器窗口，然后在地址栏中输入 https://portal.azure.com。 将转到 Azure 登录页，可以在此使用获得的凭据进行登录。 任何时候想登录 Intune 试用版时都请使用该地址。 <br/> ![Azure 门户登录页的图像](./media/azure-portal-signin.png)
+> [!IMPORTANT]
+> 注册新帐户后，不能合并现有的工作或学校帐户。
 
-第一次登录到 Intune [Azure](https://portal.azure.com) 门户时，可能不会在 Azure 仪表板上看到 Intune。 将 Intune 服务添加到 Azure 的仪表板：
-1. 在仪表板左侧的 Azure 服务列表中选择“所有服务>”，并在搜索框中输入“Intune”。
-2. 从该列表中选择“Intune”，然后选择星号将服务添加到服务列表中。<br/> ![在 Azure 门户中选择 Microsoft Intune 的图像](./media/azure-add-intune1.png)
-3. 然后在服务列表中选择“Intune”以打开 Intune 仪表板。
+1. 转到 [Microsoft Intune 试用版](https://go.microsoft.com/fwlink/?linkid=2019088)页面并填写表格。
 
-注册试用版时，在注册过程中提供的电子邮件地址还将收到一封电子邮件，该电子邮件中包含帐户信息。 该电子邮件用于确认试用版处于活动状态。
+    ![Microsoft Intune 试用版帐户注册网页的屏幕截图](./media/account-sign-up-site-full-browser.png)
 
-## <a name="keeping-the-admin-experiences-straight"></a>流畅高效的管理体验
+    如果大多数 IT 操作和用户都不位于你所在的区域，则可能需要在“国家或地区”下选择该区域设置。 Azure 使用你的区域信息来提供正确的服务。 此设置以后无法更改。
+
+2. 用公司名称加上“.onmicrosoft.com”来创建自己的帐户。 
+
+    ![Microsoft Intune 试用版帐户注册网页的屏幕截图](./media/account-sign-up-site-user-id.png)
+
+    若想组织使用自己的自定义域而不采用“.onmicrosoft.com”，可以在本文后面介绍的 Office 365 管理门户中进行更改。
+
+3. 在注册过程结束时查看新帐户信息。
+
+    ![帐户信息的图像](./media/intune-end-of-sign-up-process.png) 
+
+## <a name="sign-in-to-the-azure-portal"></a>登录到 Azure 门户
+
+1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com。 
+2. 使用在上述步骤中获得的凭据。
+
+    ![Azure 门户登录页的图像](./media/azure-portal-signin.png)
+
+3. 要在 Azure 端口中查看 Microsoft Intune ，从页面左侧的边栏中选择“所有服务”。
+4. 在筛选器框中搜索 Microsoft Intune 并选择它。
+5. 选择星形图标，将 Intune 添加到收藏的服务列表底部，并打开 Intune 仪表板。
+
+注册试用版时，还将收到一份电子邮件消息，其中包含你在注册过程中提供的帐户信息和电子邮件地址。 该电子邮件用于确认试用版处于活动状态。
+
+## <a name="set-the-mdm-authority-to-intune"></a>将 MDM 机构设置为 Intune
+
+移动设备管理 (MDM) 机构设置决定了管理设备的方式。 作为 IT 管理员，必须先设置 MDM 机构，然后用户才能注册设备来进行管理。
+
+要将 MDM 机构设置为 Intune，请执行以下步骤。
+
+1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com。 
+2. 选择“所有服务” > “Microsoft Intune”。
+3. 选择橙色横幅，打开“移动设备管理机构”设置。 
+
+    > [!NOTE]
+    > 如果尚未设置 MDM 机构，则仅显示橙色横幅。
+
+4. 在“移动设备管理权限”下，将 MDM 机构设置为“Intune MDM 机构”。
+
+## <a name="configure-your-custom-domain-name-optional"></a>配置自定义域名（可选）
+
+如上所述，若想组织使用自己的自定义域而不采用“.onmicrosoft.com”，可以在 Office 365 管理门户中进行更改。 将添加、验证并配置自己的自定义域名。  
+
+> [!IMPORTANT]
+> 无法重命名或删除初始“onmicrosoft.com”域名。 可以添加、验证或删除用于 Intune 的自定义域名，以保证业务标识清晰。
+
+1. 转到 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)并使用管理员帐户登录。
+
+2. 在导航窗格中，选择“设置” > “域” > “添加域”。
+
+3. 输入自定义域名。 然后选择“下一步”。
+
+   ![Office 365 管理中心屏幕截图，其中已选择“设置”>“域”，且正在添加新域名](./media/domain-custom-add.png)
+
+4. 验证你是否是前面输入的域的所有者。 
+    
+    若选择“通过电子邮件发送代码”，会将向域中已注册的联系人发送电子邮件。 收到电子邮件后，请复制该代码，并将其输入标为“在此键入验证码”的字段。 如果验证码匹配，该域将添加至你的租户。 显示的电子邮件可能看起来不太熟悉。 一些注册机构会隐藏真实的电子邮件地址，然后隐藏注册域时提供的内容。
+
+   ![Office 365 管理中心的屏幕截图 - 验证要添加的域名](./media/domain-custom-verify.png)
+
+   > [!NOTE]
+   > 有关 TXT 记录验证的详细信息，请参阅[在 Office 365 的任何 DNS 托管提供商处创建 DNS 记录](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166)。
+
+## <a name="admin-experiences"></a>管理员体验
 
 可使用两个门户：
 - Azure 中的 Intune 仪表板 ([portal.azure.com](https://portal.azure.com))，在此可以了解 [Intune 功能](what-is-intune.md)。 通常情况下，将在 Intune 仪表板中进行操作。
-- Office 365 管理中心 ([portal.office.com](https://portal.office.com))，可以在此添加和管理用户（如果未使用 Azure Active Directory 来达到此目的）。 还可以管理帐户的帐单和支持等其他方面。
+- 如果没有使用 Azure Active Directory 来添加和管理用户，可以在 Office 365 管理中心 ([portal.office.com](https://portal.office.com)) 进行此类操作。 还可以管理帐户的帐单和支持等其他方面。
 
 ## <a name="next-steps"></a>后续步骤
 
-### <a name="integration-with-other-products"></a>与其他产品的集成
-深入了解如何在 Intune 中使用 Azure Active Directory 用户帐户：
-- [身份要求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [目录同步路线图](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [多重身份验证要求](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+在本快速入门中，你创建了一个免费订阅来在测试环境中试用 Intune，并选择配置了自定义域名。 若要详细了解 Microsoft Intune，请继续学习下一个快速入门教程以添加用户并分配许可证。
 
-深入了解如何使用 [Intune 与 System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
+> [!div class="nextstepaction"]
+> [创建用户](get-started-users.md)

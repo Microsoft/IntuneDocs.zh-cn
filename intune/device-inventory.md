@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313172"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187795"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -63,44 +63,38 @@ Intune 仅收集公司拥有的设备上的应用列表。 不检查个人设备
 
 ## <a name="hardware-device-details"></a>硬件设备详细信息
 
-### <a name="windows-and-ios-device-details"></a>Windows 和 iOS 设备详细信息：
-|详情|描述|  
-|--------------|----------------------|  
-|名称|设备的名称。|
-|管理名称|仅在控制台中使用的设备名。 更改此名称不会更改设备上的名称。|
-|UDID|设备的唯一设备标识符。|
-|Intune 设备 ID|用于唯一标识设备的 GUID。|
-|序列号|制造商提供的设备序列号。|
-|共享设备|如果为“是”，设备将被多个用户共享。|
-|用户已批准注册|如果为“是”则设备具有用户已批准注册，可让管理员管理设备上的某些安全设置。|
-|操作系统|设备上使用的操作系统。|
-|操作系统版本|设备上的操作系统版本。|
-|操作系统语言|设备上为操作系统设置的语言。|
-|总存储空间|设备上的总存储空间（以千兆字节为单位）。|
-|可用存储空间|设备上未使用的存储空间（以千兆字节为单位）。|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Windows、iOS 和 macOS 设备详细信息
-|详情|描述|  
-|--------------|----------------------|  
-|IMEI|设备的国际移动设备识别。|
-|MEID|设备的移动设备标识符。|
-|制造商|设备制造商。|
-|型号|设备型号。|
-|电话号码|分配给设备的电话号码。|
-|订阅运营商|设备的无线运营商。|
-|蜂窝技术|设备使用的无线系统。|
-|Wi-Fi MAC|设备的媒体访问控制地址。|
-|ICCID|集成电路卡标识符，即 SIM 卡的唯一标识号。|
-|注册日期|设备在 Intune 中注册的日期和时间。|
-|上次联系时间|设备上次连接到 Intune 的日期和时间。|
-|激活锁旁路代码|可用于绕开激活锁的代码。|
-|已注册 Azure AD|如果为“是”，则设备已向 Azure Directory 注册。|
-|合规性|设备的符合性状态。|
-|已激活 EAS|如果为“是”，则设备已于 Exchange 邮箱同步。|
-|EAS 激活 ID|设备的 Exchange ActiveSync 标识符。|
-|受到监督|如果为“是”，管理员对设备的控制增强。|
-|已加密|如果为“是”，则设备上存储的数据已加密。|
+|详情|描述|平台| 
+|--------------|----------------------|----|  
+|名称|设备的名称。|Windows、iOS|
+|管理名称|仅在控制台中使用的设备名。 更改此名称不会更改设备上的名称。|Windows、iOS|
+|UDID|设备的唯一设备标识符。|Windows、iOS|
+|Intune 设备 ID|用于唯一标识设备的 GUID。|Windows、iOS|
+|序列号|制造商提供的设备序列号。|Windows、iOS|
+|共享设备|如果为“是”，设备将被多个用户共享。|Windows、iOS|
+|用户已批准注册|如果为“是”则设备具有用户已批准注册，可让管理员管理设备上的某些安全设置。|Windows、iOS|
+|操作系统|设备上使用的操作系统。|Windows、iOS|
+|操作系统版本|设备上的操作系统版本。|Windows、iOS|
+|操作系统语言|设备上为操作系统设置的语言。|Windows、iOS|
+|总存储空间|设备上的总存储空间（以千兆字节为单位）。|Windows、iOS|
+|可用存储空间|设备上未使用的存储空间（以千兆字节为单位）。|Windows、iOS|
+|IMEI|设备的国际移动设备识别。|Windows、iOS、Android|
+|MEID|设备的移动设备标识符。|Windows、iOS、Android|
+|制造商|设备制造商。|Windows、iOS、Android|
+|型号|设备型号。|Windows、iOS、Android|
+|电话号码|分配给设备的电话号码。|Windows、iOS、Android|
+|订阅运营商|设备的无线运营商。|Windows、iOS、Android|
+|蜂窝技术|设备使用的无线系统。|Windows、iOS、Android|
+|Wi-Fi MAC|设备的媒体访问控制地址。|Windows、iOS、Android|
+|ICCID|集成电路卡标识符，即 SIM 卡的唯一标识号。|Windows、iOS、Android|
+|注册日期|设备在 Intune 中注册的日期和时间。|Windows、iOS、Android|
+|上次联系时间|设备上次连接到 Intune 的日期和时间。|Windows、iOS、Android|
+|激活锁旁路代码|可用于绕开激活锁的代码。|Windows、iOS、Android|
+|已注册 Azure AD|如果为“是”，则设备已向 Azure Directory 注册。|Windows、iOS、Android|
+|合规性|设备的符合性状态。|Windows、iOS、Android|
+|已激活 EAS|如果为“是”，则设备已于 Exchange 邮箱同步。|Windows、iOS、Android|
+|EAS 激活 ID|设备的 Exchange ActiveSync 标识符。|Windows、iOS、Android|
+|受到监督|如果为“是”，管理员对设备的控制增强。|Windows、iOS、Android|
+|已加密|如果为“是”，则设备上存储的数据已加密。|Windows、iOS、Android|
 
 
 

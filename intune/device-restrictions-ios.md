@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329812"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329991"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS 设备限制设置
 
@@ -114,7 +114,7 @@ ms.locfileid: "43329812"
 
 -   **在设备锁定时访问控制中心** - 允许用户在设备锁定时访问控制中心应用。
 -   **在设备锁定时查看通知** - 允许用户在不解锁设备的情况下访问通知视图。
--   **在设备锁定时使用 Passbook** - 允许用户在设备锁定时访问 Passbook 应用。
+-   **在设备锁定时使用“电子钱包”通知** - 允许用户在设备锁定时访问电子钱包应用。
 -   **在设备锁定时查看“今日”视图** - 允许用户在设备锁定时查看“今日”视图。
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store、文档查看和游戏

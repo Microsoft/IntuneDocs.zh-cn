@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253674"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727571"
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
@@ -103,7 +103,7 @@ MDM 解决方案：
 
 -   帮助防止公司数据泄露到使用者应用和服务
 
--   将限制（另存为、剪贴板、PIN 等）应用到移动应用
+-   将限制（另存为、剪贴板、PIN 等）应用到客户端应用
 
 -   从应用擦除公司数据而不从设备删除这些应用
 
@@ -122,6 +122,18 @@ MDM 解决方案：
 -   无法在这些设备上设置证书配置文件。
 
 -   无法在这些设备上设置公司 Wi-Fi 和 VPN 设置。
+
+## <a name="app-protection-global-policy"></a>应用保护全局策略
+
+若 OneDrive 管理员浏览到 admin.office.com 并选择“设备”访问权限，则他们可为 OneDrive 和 SharePoint 客户端应用设置移动应用程序管理控件。 
+
+这些设置可供 OneDrive 管理控制台使用，可配置名为全局策略的特殊 Intune 应用保护策略。 此全局策略适用于租户中的所有用户，且无法控制策略目标设定。 
+
+启用后，默认情况下将使用所选设置保护适用于 iOS 和 Android 的 OneDrive 和 SharePoint 应用。 IT 专业人员可在创建 Intune 控制台后编辑此策略，添加更多目标应用以及修改任何策略设置。 
+
+默认情况下，每个租户仅有一个全局策略。 然而，可使用 [Intune 图形 API](intune-graph-apis.md) 来为每个租户创建额外的全局策略，但不推荐这种做法。 不建议创建额外全局策略，因为对此类策略的实施进行故障排除会变得复杂。
+
+虽然全局策略适用于租户中的所有用户，但任何标准的 Intune 应用保护政策都将覆盖这些设置。
 
 
 ## <a name="multi-identity"></a>多身份

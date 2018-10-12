@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347468"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505761"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -171,7 +171,7 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
 - 通过可用的安装意向来定向应用。
 - 配置文件和应用都定向到同一组。
 - 最终用户从公司门户请求安装应用，导致在设备上安装应用和配置文件。
-- 从应用分配中删除每个应用 VPN 配置。
+- 从应用分配中删除或更改每个应用 VPN 配置。
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>验证 iOS 设备上的连接
 

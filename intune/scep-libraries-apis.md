@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
+ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575043"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700976"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 将 SCEP 的第三方 CA 添加到 Intune
 
@@ -125,6 +125,13 @@ IntuneScepServiceClient(
     - AAD_APP_KEY=“在载入过程中获得的 Azure 应用程序密钥”
     - TENANT=“在载入过程中获得的租户 ID”
     - PROVIDER_NAME_AND_VERSION=“用于标识产品及其版本的信息”
+    
+如果解决方案需要具有身份验证或无身份验证的代理，则可以添加以下属性：
+
+    - PROXY_HOST =“托管代理的主机。”
+    - PROXY_PORT =“代理侦听的端口。”
+    - PROXY_USER =“代理使用基本身份验证时所用的用户名。”
+    - PROXY_PASS =“代理使用基本身份验证时所用的密码。”
 
 引发：
 

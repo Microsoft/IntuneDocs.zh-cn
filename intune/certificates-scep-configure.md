@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321231"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028726"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -82,7 +82,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 创建用作 NDES 服务帐户的域用户帐户。 安装和配置 NDES 之前，在配置发证 CA 上的模板时输入该帐户。 确保用户具有默认权限，即“本地登录”、“作为服务登录”和“作为批处理作业登录”的权限。 某些组织已采用强化策略禁用这些权限。
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>步骤 2 - 配置证书颁发机构上的证书模板
-在此任务中完成以下操作：
+在此步骤中，你将：
 
 - 配置 NDES 证书模板
 - 发布 NDES 证书模板
@@ -145,7 +145,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 3. 通过查看“证书模板”文件夹下已发布的模板来对它进行验证。
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步骤 3 - 在 NDES 服务器上配置必备组件
-在此任务中完成以下操作：
+在此步骤中，你将：
 
 - 将 NDES 添加到 Windows Server 并配置 IIS 以支持 NDES
 - 将 NDES 服务帐户添加到 IIS_IUSR 组
@@ -156,7 +156,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
    1. 在向导中，选择“Active Directory 证书服务”以获得对 AD CS 角色服务的访问权限。 选择“网络设备注册服务”，取消选择“证书颁发机构”，然后完成向导。
 
       > [!TIP]
-      > 在“安装进度”处，不要勾选“关闭”。 而是选择“配置目标服务器上的 Active Directory 证书服务”的链接。 “AD CS 配置”向导将会打开，此配置将用于下一个任务。 打开“AD CS 配置”后，你可以关闭“添加角色和功能”向导。
+      > 在“安装进度”处，不要勾选“关闭”。 而是选择“配置目标服务器上的 Active Directory 证书服务”的链接。 “AD CS 配置”向导将会打开，此配置将用于下一步骤。 打开“AD CS 配置”后，你可以关闭“添加角色和功能”向导。
 
    2. 将 NDES 添加到服务器后，向导也会安装 IIS。 确保 IIS 具有以下配置：
 
@@ -181,7 +181,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>步骤 4 - 配置 NDES 以与 Intune 一起使用
-在此任务中完成以下操作：
+在此步骤中，你将：
 
 - 配置 NDES 以与发证 CA 一起使用
 - 在 IIS 绑定服务器身份验证 (SSL) 证书
@@ -190,7 +190,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 1. 在 NDES 服务器上，打开“AD CS 配置”向导，然后进行以下更新：
 
     > [!TIP]
-    > 如果你在上一任务中单击了该链接，则此向导已经打开。 或者，打开“服务器管理器”访问“Active Directory 证书服务”的后期部署配置。
+    > 如果在上一步骤中单击了该链接，则此向导已经打开。 或者，打开“服务器管理器”访问“Active Directory 证书服务”的后期部署配置。
 
    - 在“角色服务”页面，选择“网络设备注册服务”
    - 在“NDES 的服务帐户”页面，输入 NDES 服务帐户
@@ -202,7 +202,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
 
-    要更新此密钥，请标识证书模板的“目的”（位于“请求处理”选项卡上）。 然后，通过将现有数据替换为在“任务 1”中指定的证书模板的名称（不是模板的显示名称），更新对应的注册表项。 下表将证书模板目的映射至注册表中的值：
+    要更新此密钥，请标识证书模板的“目的”（位于“请求处理”选项卡上）。 然后，通过将现有数据替换为在“步骤 2”中指定的证书模板的名称（不是模板的显示名称），更新对应的注册表项。 下表将证书模板目的映射至注册表中的值：
 
     |证书模板目的（位于“请求处理”选项卡上）|待编辑的注册表值|在 Intune 管理控制台中显示的 SCEP 配置文件的值|
     |---|---|---|
@@ -229,7 +229,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
     ![测试 NDES](./media/SCEP_NDES_URL.png)
 
-    如果你收到“503 服务不可用”的信息，请查看事件查看器。 可能是因 NDES 用户缺少权限导致应用程序池停止。 任务 1 中描述了这些权限。
+    如果你收到“503 服务不可用”的信息，请查看事件查看器。 可能是因 NDES 用户缺少权限导致应用程序池停止。 步骤 1 中描述了这些权限。
 
 ##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>在 NDES 服务器上安装和绑定证书
 
@@ -278,7 +278,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 4. 重新启动 NDES 服务器。 服务器现已支持证书连接器。
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>步骤 5 - 启用、安装和配置 Intune 证书连接器
-在此任务中完成以下操作：
+在此步骤中，你将：
 
 - 在 Intune 中启用对 NDES 的支持。
 - 在承载环境中的网络设备注册服务 (NDES) 角色的服务器上下载、安装和配置证书连接器。 为提高组织中 NDES 实现的缩放性，可安装多个 NDES 服务器，并让每个 NDES 服务器都具有一个 Microsoft Intune 证书连接器。
@@ -299,7 +299,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
     > [!NOTE]
     > 如果为独立 Intune 安装 NDES，则 CRP 服务会自动随证书连接器一起安装。 如果将 Intune 与 Configuration Manager 配合使用，请以单独的站点系统角色安装证书注册点。
 
-6. 提示输入证书连接器的客户端证书时，选取“选择”，然后选择任务 3 中在你的 NDES 服务器上安装的“客户端身份验证”证书。
+6. 提示输入证书连接器的客户端证书时，选取“选择”，然后选择步骤 4 中在你的 NDES 服务器上安装的“客户端身份验证”证书。
 
     选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书” 处。 尽管所选证书不会显示，但可以单击“下一步”查看该证书的属性。 然后依次选择“下一步”和“安装”。
 
@@ -450,7 +450,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 成功  | 成功 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 证书颁发机构无效或无法访问。 验证证书颁发机构是否可用，以及服务器是否可以与之通信。 |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 在本地证书存储中找不到 Symantec 客户端身份验证证书。 请参阅文章[安装 Symantec 注册授权证书](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)以获取详细信息。  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 在本地证书存储中找不到 Symantec 客户端身份验证证书。 请参阅文章[安装 Symantec 注册授权证书](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)以获取详细信息。  |
 | 0x00000402 | RevokeCert_AccessDenied  | 指定的帐户无权从 CA 撤销证书。 请参阅事件消息详情中的“CA 名称”字段以确定颁发 CA。  |
 | 0x00000403 | CertThumbprint_NotFound  | 找不到与输入相匹配的证书。 注册证书连接器并重试。 |
 | 0x00000404 | Certificate_NotFound  | 找不到与提供的输入相匹配的证书。 重新注册证书连接器并重试。 |

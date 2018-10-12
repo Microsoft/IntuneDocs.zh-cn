@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329377"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602174"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune 中的适用于 Android 设备的展台设置
 
@@ -27,7 +27,7 @@ ms.locfileid: "43329377"
 
 如果展台设备的限制配置文件设置为“展台模式” = “单应用展台”，则用户只能访问一个应用。 当以此模式配置的设备启动时，将启动特定应用。 限制用户打开新应用或更改正在运行的应用。
 
-1. 确保要在展台设备上使用的应用已[部署到设备](apps-deploy.md)，并且已将该应用分配给为展台设备创建的设备组。
+1. 确保将展台设备上所需的应用[部署到设备](apps-deploy.md)，并将应用分配至为展台设备创建的设备组。
 2. 转到 [Intune 门户](https://portal.azure.com)，然后选择“设备配置” > “配置文件” > “创建配置文件”。
 3. 在“创建配置文件”边栏选项卡上，设置以下字段：
      - **名称**
@@ -51,7 +51,7 @@ ms.locfileid: "43329377"
 2. [添加并分配可用于展台模式的应用](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. （可选）[添加可用于展台模式的 Web 链接](#add-web-links-that-can-be-used-in-kiosk-mode)
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>导入和部署托管的主屏幕应用
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>导入和部署托管的主屏幕应用
 
 1. 浏览到 [Google Play 上的托管主屏幕页](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise)，并使用用于其他托管的 Google Play 应用的相同帐户登录。
 2. 选择“批准”。
@@ -59,6 +59,9 @@ ms.locfileid: "43329377"
 4. 选择“应用” > “托管的主屏幕” > “分配” > “添加组”。
 5. 在“分配类型”下，选择“必需”。
 6. 选择“已包括的组” > “选择要包括的组”> 选择为展台设备创建的设备组 >“选择” > “确定” > “确定” > “保存”。
+
+> [!NOTE]
+> 将托管主屏幕应用程序添加到多应用展台配置文件时，会添加一个图标。 不过在选择图标时没有任何反应。 因此，无需将托管主屏幕应用添加到多应用展台配置文件中。
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>添加并分配可用于展台模式的应用
 
@@ -76,7 +79,7 @@ ms.locfileid: "43329377"
 3. 选择“配置”并提供所需信息。 无需添加徽标图像，因为它将自动从网站的 favicon.ico 中检索。
 4. 选择“确定” > “添加”。
 
-请确保使用“[移动应用](apps-add.md)”向展台设备部署 Web 浏览器应用。
+请确保已将 Web 应用部署到展台设备。 有关详细信息，请参阅[将 Web 应用添加到 Microsoft Intune](web-app.md)。
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>创建多应用展台配置文件
 

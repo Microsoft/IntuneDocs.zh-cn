@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c26d9914173c07096caad428afcbd9174625ef7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: ca1f34f6a0db6db26f03f62dba69c4cd708b9d65
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031297"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028760"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -475,8 +475,9 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 7.  单击选择 API 列表中的“Microsoft 移动应用程序管理”。
 8.  选择“读取和写入用户的应用管理数据”。
 9.  单击“完成”。
+10. 单击“授予权限”，然后单击“是”。 
 
-有关使用 Azure AD 注册应用程序的信息，请参阅[此处](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)。 
+有关使用 Azure AD 注册应用程序的信息，请参阅[此处](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。 
 
 另请参阅以下[条件访问](#conditional-access)的要求。
 
@@ -1431,7 +1432,7 @@ public interface MAMAppConfig {
 > “默认注册”提供一个为设备上的应用从 APP-WE 服务获取策略的简便方法。
 
 ### <a name="general-requirements"></a>一般要求
-* 请确保已按照[常用 ADAL 配置 #2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations) 中的步骤，在 Intune 移动应用程序管理服务中注册应用。
+* 请确保已按照[常用 ADAL 配置 #2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations) 中的步骤，在 Intune 移动应用程序管理服务中注册应用。
 
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
 以下说明专门面向希望要求应用在最终用户设备上使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用开发人员。

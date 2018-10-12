@@ -2,8 +2,8 @@
 title: 基于角色的访问控制 (RBAC) 与 Microsoft Intune
 description: 了解基于角色的访问控制 (RBAC) 如何使你能够控制可在 Microsoft Intune 中执行各种操作并进行更改的人员。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ad5bf36eeb81c5deabc2c3efd73cddcc3db8a70c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253691"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028692"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>基于角色的管理控制 (RBAC) 与 Microsoft Intune
 
@@ -42,6 +42,7 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
     > [!IMPORTANT]
     > Intune 服务管理员角色不提供管理 Azure AD 条件性访问设置的功能。
+    > Intune 角色的成员需要 Intune 许可证。
 
     > [!TIP]
     > Intune 还显示三个 Azure AD 扩展：用户、组和条件访问，均使用 Azure AD RBAC 控制。 此外，**用户帐户管理员**仅执行 AAD 用户/组活动，而不具备在 Intune 中执行所有活动的完全权限。 请参阅[使用 Azure AD 的 RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)获取详细信息。

@@ -1,0 +1,56 @@
+---
+title: 不同的 Windows 设备的注册方法对应的 Intune 功能
+titlesuffix: Microsoft Intune
+description: 查看不同的 Windows 设备的注册方法分别支持哪些功能。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 09/21/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: ''
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: c9e440aef7f434cbe675506fd6f22a9bd26b2c31
+ms.sourcegitcommit: 528d2bc70bfd25803a2d9f0fe9372c8a5f5e7dad
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446814"
+---
+# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>不同的 Windows 设备的注册方法对应的功能
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Intune 可让你管理员工的设备和应用，以及他们访问公司数据的方式。 必须先在 Intune 服务中注册设备。 可通过几种方法来注册员工的设备。 每种方法都有不同的最佳做法和功能，如下表所示。
+
+## <a name="best-practices-by-enrollment-method"></a>不同注册方法对应的最佳做法
+| **Best practices**（最佳做法） | **[已联接 Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[使用 Autopilot 联接 Azure AD](enrollment-autopilot.md)** |**[批量](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|常用于 EDU 中|![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|设备可以用作共享设备|![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|个人设备必须访问公司资源|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|
+|应用的自助服务|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|
+
+## <a name="capabilities-by-enrollment-method"></a>不同注册方法对应的功能
+
+| **功能** | **[已联接 Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[使用 Autopilot 联接 Azure AD](enrollment-autopilot.md)** |**[批量](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|条件性访问                                      |![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|
+|用户与设备关联                    |![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|
+|需要 Azure AD Premium                               |![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|
+|设备可以评估受 CA 保护的资源             |![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|
+|用户不能是其设备上的管理员               |![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|配置设备设置体验的功能        |![X](media/xmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|无需用户交互即可注册设备的功能      |![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|
+|运行 PowerShell 脚本的功能                       |![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)| 
+|支持 AD 域加入后的自动注册      |![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|
+|支持混合 Azure AD 域加入后的自动注册|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![选中标记](media/checkmark.png)|
+|支持 Azure AD 加入后的自动注册       |![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![选中标记](media/checkmark.png)|![X](media/xmark.png)|
+
+## <a name="next-steps"></a>后续步骤
+
+[注册选项](enrollment-options.md)
+

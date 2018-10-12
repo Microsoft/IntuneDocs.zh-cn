@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: b92a5c7bcddbecc438aa5e72989ab2302440da7a
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141671"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562878"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
 
@@ -90,7 +90,7 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 
 首先，必须根据应用所包含数据的敏感性确定应该有权访问应用的组。 可能需要包括或排除组织中某些类型的角色。 例如，销售组可能仅需要某些 LOB 应用，而侧重于工程、财务、人力资源或法律的人员可能不需要使用 LOB 应用。 此外，销售组人员的移动设备上可能需要额外的数据保护以及对内部公司服务的访问权。 必须确定此组将如何使用应用连接到资源。 应用访问的数据将保留在云中还是本地？ 同时，用户将如何使用应用连接到资源？ 
 
-Intune 还支持对需要安全访问本地数据的移动应用（例如业务线应用服务器）启用访问权限。 提供此类型的访问通常需要将用于访问控制的 [Intune 托管证书](certificates-configure.md)与外围中的标准 VPN 网关或代理（例如 Azure Active Directory 应用程序代理）结合使用。 可以借助 Intune 的[应用包装工具和应用 SDK](apps-prepare-mobile-application-management.md) 将已访问的数据包含在业务线应用中，这样它就不能将公司数据传递给使用者应用或服务。
+Intune 还支持对需要安全访问本地数据的客户端应用（例如业务线应用服务器）启用访问权限。 提供此类型的访问通常需要将用于访问控制的 [Intune 托管证书](certificates-configure.md)与外围中的标准 VPN 网关或代理（例如 Azure Active Directory 应用程序代理）结合使用。 可以借助 Intune 的[应用包装工具和应用 SDK](apps-prepare-mobile-application-management.md) 将已访问的数据包含在业务线应用中，这样它就不能将公司数据传递给使用者应用或服务。
 
 使用 [Intune 部署规划、设计和实施指南](planning-guide.md)帮助确定如何标识与每个用例和子用例方案相关联的组织组。 有关将应用分配到组的信息，请参阅[使用 Microsoft Intune 将应用分配到组](apps-deploy.md)。
 

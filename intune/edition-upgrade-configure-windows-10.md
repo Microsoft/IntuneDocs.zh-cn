@@ -1,35 +1,35 @@
 ---
-title: 使用 Microsoft Intune 升级 Windows 10 设备 - Azure | Microsoft Docs
-description: 在 Microsoft Intune 中创建设备配置文件以将 Windows 10 设备升级到较新版本。 另请参阅 Windows 10 专业版、N 版、教育版、云、企业版、核心版、全息版和移动版支持的升级路径。
+title: 使用 Microsoft Intune 在 Windows 10 设备上升级或使用 S 模式 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中创建设备配置文件以将 Windows 10 设备升级到不同版本。 例如，可从 Windows 10 专业版升级到 Windows 10 企业版。 还可使用该配置文件在设备上启用或切出 S 模式。 另请参阅 Windows 10 专业版、N 版、教育版、云、企业版、核心版、全息版和移动版支持的升级路径。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: coryfe
+ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0e4ba42559a068ebefb453aba18060803dc36e0
+ms.sourcegitcommit: f3974c810e172f345853dacd7f2ca0abc11b1a5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025427"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44389619"
 ---
-# <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>在 Intune 中配置 Windows 10 版本升级配置文件
+# <a name="use-a-configuration-profile-to-upgrade-windows-10-or-switch-from-s-mode-in-intune"></a>使用配置文件升级 Windows 10 或在 Intune 中从 S 模式切换
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 在 Intune 中配置升级配置文件以自动将运行 Windows 10 版的设备升级到其他版本。 另请参阅支持的升级路径。
 
-## <a name="before-you-begin"></a>开始之前
-将设备升级至最新版本之前，需要以下内容之一：
+## <a name="before-you-begin"></a>在开始之前
+将设备升级至最新版本之前，需要以下先决条件：
 
-- 用于在该策略针对的所有设备上安装已更新 Windows 版本的有效产品密钥（适用于 Windows 10 桌面版）。 可以使用多次激活密钥 (MAK) 或密钥管理服务器 (KMS) 密钥，或者使用包含在遵循策略的所有设备上安装已更新 Windows 版本所需的许可信息的 Microsoft 许可证文件（适用于 Windows 10 移动版和 Windows 10 全息版）。
+- 用于在该策略针对的所有设备上安装已更新 Windows 版本的有效产品密钥（适用于 Windows 10 桌面版）。 你可以使用多激活密钥 (MAK) 或密钥管理服务器 (KMS) 密钥。 对于 Windows 10 移动版和 Windows 10 全息版，可使用包含许可信息的 Microsoft 许可证文件以在该策略针对的所有设备上安装已更新 Windows 版本。
 - 分配策略的 Windows 10 设备将在 Microsoft Intune 中注册。 无法将版本升级策略用于运行 Intune 电脑客户端软件的电脑。
 
 ## <a name="supported-upgrade-paths"></a>支持的升级路径
@@ -121,25 +121,45 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>创建包含设备限制设置的设备配置文件
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-3. 依次选择“设备配置”、“配置文件”和“创建配置文件”。
-4. 输入版本升级配置文件的“名称”和“说明”。
-5. 从“平台”下拉列表中，选择“Windows 10 及更高版本”。
-6. 从“配置文件类型”下拉列表中，选择“版本升级”。
-7. 在“版本升级”属性中，输入以下设置：
-   - **将升级到的版本** - 从下拉列表中，选择要将目标设备升级到的版本：Windows 10 桌面版、Windows 10 全息版或 Windows 10 移动版。
-   - **产品密钥** - 输入从 Microsoft 接收并且可以用于升级所有目标 Windows 10 桌面版设备的产品密钥。 
-    创建包含产品密钥的策略后，无法更新该密钥，并出于安全原因隐藏该密钥。 要更改产品密钥，请再次输入完整密钥。
-   - “许可证文件”- 选择“浏览”以选择从 Microsoft 收到的许可证文件。 此许可证文件包含要将目标设备升级到的 Windows 全息版或 Windows 10 移动版的许可证信息。
-8. 完成后，选择“创建”以保存更改。
+## <a name="upgrade-the-edition"></a>升级版本
+
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+3. 输入配置文件的“名称”和“描述”。 例如，输入类似于 `Windows 10 edition upgrade` 的内容
+4. 在“平台”中，选择“Windows 10 及更高版本”。
+5. 在“配置文件类型”中，选择“版本升级”。
+6. 在“版本升级”属性中，输入以下设置：
+
+   - **要升级到的版本**：选择要升级到的 Windows 10 版本。 将该策略针对的设备升级到所选版本。
+   - **产品密钥**：输入从 Microsoft 接收的产品密钥。 创建包含产品密钥的策略后，无法更新该密钥，并出于安全原因隐藏该密钥。 要更改产品密钥，请再次输入完整密钥。
+   - **许可证文件**：对于 Windows 10 Holographic for Business 或 Windows 10 移动版，请选择“浏览”以选择从 Microsoft 接收的许可证文件。 此许可证文件包含要将目标设备升级到的版本的许可证信息。
+
+7. 选择“确定”，保存所做更改。 选择“创建”以创建配置文件。
+
+## <a name="switch-out-of-s-mode"></a>切出 S 模式
+
+[Windows 10 S 模式](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode)旨在提高安全性和性能。 若设备仅运行来自 Microsoft Store 的应用，则可使用 S 模式帮助确保设备安全。 若设备需要 Microsoft Store 中不可用的应用，则切出 S 模式。 切出 S 模式是一种方法。 切出 S 模式后，无法返回 Windows 10 S 模式。
+
+以下步骤说明如何在 Windows 10（1809 或更高版本）设备上创建控制 S 模式的配置文件。
+
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+3. 输入配置文件的“名称”和“描述”。 例如，输入类似于 `Windows 10 switch off S mode` 的内容
+4. 在“平台”中，选择“Windows 10 及更高版本”。
+5. 在“配置文件类型”中，选择“版本升级”。
+6. 选择“模式切换(仅 Windows 预览体验)”，然后设置“切出 S 模式”属性。 选项包括：
+
+    - **无设置**：S 模式设备将保持 S 模式。 最终用户可将设备切出 S 模式。
+    - **保持 S 模式**：禁止最终用户将设备切出 S 模式。
+    - **切换**：将设备切出 S 模式。
+
+7. 选择“确定”，保存所做更改。 选择“创建”以创建配置文件。
 
 配置文件随即创建并在配置文件中列出。
 
 ## <a name="next-steps"></a>后续步骤
 
-要向组分配此配置文件，请参阅[如何分配设备配置文件](device-profile-assign.md)。
+[分配此配置文件](device-profile-assign.md)到组。
 
 >[!NOTE]
 >如果稍后删除分配的策略，设备上的 Windows 版本将不会还原，并继续正常运行。

@@ -15,12 +15,12 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53f6adba610f1ddb817e04ac8e9a0fdb2665b21a
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347808"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562895"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -129,7 +129,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>将 Datalert 应用分配给公司设备组
 
-1. 从“移动应用 - 应用”窗格中，选择在前一步骤中创建的 iOS Datalert 应用。
+1. 从“客户端应用 - 应用”窗格中，选择在前一步骤中创建的 iOS Datalert 应用。
 
 2. 在“应用”窗格上，选择“管理” > “分配”。
 

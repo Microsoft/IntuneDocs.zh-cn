@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 317a1fa5fd83cbfe95afa51894466f93131bd278
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561967"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562759"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的条件性访问与 Intune 的协作
 
@@ -27,7 +27,7 @@ ms.locfileid: "34561967"
 
 [Intune 应用保护策略](app-protection-policy.md)可帮助保护在 Intune 中已注册设备上的公司数据。 另外，应用保护策略还可用在没有注册 Intune 进行管理的员工自有设备上。 在这种情况下，即使你的公司不管理该设备，仍需要确保公司数据和资源受保护。
 
-通过确保仅支持 Intune 应用保护策略的移动应用可以访问 Exchange online 及其他 Office 365 服务，基于应用的条件访问和移动应用管理增加了一个安全层。
+通过确保仅支持 Intune 应用保护策略的客户端应用可以访问 Exchange Online 和其他 Office 365 服务，基于应用的条件访问和客户端应用管理增加了一个安全层。
 
 > [!NOTE]
 > 受管理应用是一种自身执行应用保护策略的应用，可由 Intune 管理。

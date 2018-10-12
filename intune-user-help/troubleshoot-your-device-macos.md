@@ -1,11 +1,11 @@
 ---
-title: 解决 iOS 设备的常见问题 | Microsoft Docs
-description: 了解如何解决 iOS 设备的常见问题。
+title: 解决 macOS 设备的常见问题 | Microsoft Docs
+description: Intune 中 macOS 设备的常见问题疑难解答
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eeb9b04a3e8d7a5d1f96e58e3df7310d53817090
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146772"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505710"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>解决 macOS 设备的常见问题
 
-有时 macOS 设备可能出现一些可通过故障排除修复的问题。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议通过[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上的公司支持人员联系信息与其联系。
+故障排除在注册期间和之后出现的 macOS 常见问题。 如果没有出现下面列出的问题，请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。
 
 - [尚不支持我的 macOS 版本](your-macos-version-isnt-yet-supported.md)
-- [更新 macOS 设备](you-need-to-update-your-macos-device.md)
-- [使用 Jamf 自助服务时可能出现的错误](device-little-different-jamf.md)
-- [找到序列号](how-do-i-find-the-serial-number-on-my-device-macos.md)
-- [标识设备](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [需要更新 macOS 设备](you-need-to-update-your-macos-device.md)
+- [Jamf 管理的设备不兼容](device-little-different-jamf.md)
+- [找不到序列号](how-do-i-find-the-serial-number-on-my-device-macos.md)
+- [要求识别我的设备](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)

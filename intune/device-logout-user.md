@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 223906d37159ba4081f5a5c055392321ac02e0ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d80d7a05dc01298dc7bc347098cf85fbdfc3689f
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020616"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403487"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>注销 Intune 管理的 iOS 设备上的当前用户
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-“注销当前用户”操作会注销共享 iPad 设备上的当前用户，该设备使用 [iOS 教育配置文件](education-settings-configure-ios.md)进行配置，用于管理 iOS 课堂应用。 
+“注销当前用户”操作注销共享 iPad 设备上的当前用户。 
 
 ## <a name="supported-platforms"></a>受支持的平台
 
@@ -36,7 +36,7 @@ ms.locfileid: "31020616"
 - macOS - 不支持
 - Android - 不支持
 
-## <a name="how-to-logout-the-current-user"></a>如何注销当前用户
+## <a name="how-to-log-out-the-current-user"></a>如何注销当前用户
 
 1.  登录 Azure 门户。
 2.  选择“更多服务” > “监视 + 管理” > “Intune”。

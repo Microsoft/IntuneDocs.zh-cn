@@ -3,10 +3,10 @@ title: 如何获取对 Microsoft Intune 的支持
 titlesuffix: Microsoft Intune
 description: 获取对 Microsoft Intune 付费订阅和试用订阅的在线和电话支持。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
+ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843134"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187778"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
@@ -30,17 +30,27 @@ Microsoft 对 Microsoft Intune 提供全球技术、售前、帐单和订阅支�
 
 >[!IMPORTANT]
 > 有关可与 Intune 协作的第三方产品（例如 Saaswedo、Cisco 或 Lookout）的技术支持，请首先与该产品的供应商联系。 在对 Intune 支持发起请求之前，请确保已正确配置了其他产品。
+> 
+> 若要详细了解如何对 Microsoft Intune 相关问题进行故障排除，请参阅 Intune 文档的[“故障排除”部分](help-desk-operators.md)。
+
+IT 管理员可以使用“帮助 + 支持”选项，通过 Azure 门户为 Intune 提供在线支持票证。 若要创建支持票证，必须为帐户分配以下某个 [Azure Active Directory 中的管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)： 
+
+- Intune 管理员 
+- 全局管理员 
+- 服务管理员  
+
+
+## <a name="get-context-sensitive-help"></a>获取上下文相关帮助 
+登录到 Azure 门户并打开 Intune 后，可以从 Azure 门户中的任何 Intune 边栏选项卡选择“帮助和支持”，查看针对该 Intune 区域的常见问题的解决方案。 
+
+如果常见的解决方案不起作用，可以选择“支持请求”来创建新的支持请求，该请求会打开 Azure“帮助 + 支持”页上的“基础知识”选项卡。 若要继续创建支持票证，请转到以下过程中的“步骤 3”：[创建在线支持票证](#create-an-online-support-ticket)。 
 
 ## <a name="create-an-online-support-ticket"></a>创建在线支持票证
 
-IT 管理员可以使用以下步骤从 Azure 门户提交支持票证：
->[!NOTE]
->必须具有 Intune 服务管理员或全局管理员身份才能创建联机支持票证。 有关详细信息，请参阅[分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。
-1. 使用 Intune 管理员凭据登录到 Azure 门户 (<https://portal.azure.com>)，选择门户右上角的“?” 图标，然后选择“帮助 + 支持”以转到 [Azure 帮助 + 支持](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)页。
+1. 使用 Intune 管理员凭据登录到 Azure 门户 (<https://portal.azure.com>)，选择“?” 图标，然后选择“帮助 + 支持”以转到 [Azure 帮助 + 支持](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)页。
+    ![Azure 门户帮助和支持问号链接的屏幕截图，其中突出显示了“帮助 + 支持”链接](./media/azure-get-support.png)
 
-    ![突出显示“帮助 + 支持”链接的 Azure 门户帮助和支持问号链接屏幕截图](./media/azure-get-support.png)
-
-2. 在 Azure 帮助和支持页上，选择“新建支持请求”。
+2. 在“Azure 帮助 + 支持页”上，选择“新建支持请求”。
 
     ![突出显示“新建支持请求”链接的 Azure 门户帮助和支持页屏幕截图](./media/azure-support-ticket-link.png)
 
@@ -72,7 +82,7 @@ IT 管理员可以使用以下步骤从 Azure 门户提交支持票证：
    - **时间**
    - **补充数据**
 
-     选择“下一步”。
+   选择“下一步”。
 
 5. 为此支持请求提供**联系信息**。 Microsoft 支持部门将使用此信息与你联系。
 6. 选择“创建”以提交支持请求。
@@ -80,7 +90,15 @@ IT 管理员可以使用以下步骤从 Azure 门户提交支持票证：
 >[!IMPORTANT]
 >如果有计费或订阅方面的问题，可打开一个用例，通过 [Office 管理中心](https://portal.office.com/Support/SupportEntry.aspx)获取支持。
 
+## <a name="view-support-requests"></a>查看支持请求
+可以在 Azure 门户中查看支持请求。 为此，请执行以下操作：
+
+1. 使用 Intune 管理员凭据登录到 Azure (<https://portal.azure.com>)，选择“?” 图标，然后选择“帮助 + 支持”以转到 [Azure 帮助 + 支持](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)页。
+
+2. 在“帮助 + 支持”页上，可以查看“最近的支持请求”列表，并选择它们以查看更多详细信息。
+
 ## <a name="additional-resources"></a>其他资源
 - [联系 Microsoft Intune 的辅助电话支持](phone-support-contact.md)
 - [计费和订阅管理支持](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [批量许可](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [对 Intune 问题进行故障排除](help-desk-operators.md)

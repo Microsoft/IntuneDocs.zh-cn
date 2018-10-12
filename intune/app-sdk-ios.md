@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
+ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031314"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46466772"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -32,7 +32,7 @@ ms.locfileid: "44031314"
 
 * 需要运行 OS X 10.8.5 或更高版本的 Mac OS 计算机，且需安装 Xcode 9 或更高版本。
 
-* 应用必须适用于 iOS 9.3.5 或更高版本。
+* 应用必须适用于 iOS 10 或更高版本。
 
 * 查看 [Intune App SDK for iOS 许可条款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)。 打印并保留一份许可条款副本，留作记录。 下载和使用用于 iOS 的 Intune App SDK 即表示你同意这些许可条款。  如果不接受这些条款，请不要使用此软件。
 
@@ -40,13 +40,13 @@ ms.locfileid: "44031314"
 
 ## <a name="whats-in-the-sdk"></a>SDK 包含什么
 
-用于 iOS 的 Intune App SDK 包括一个静态库、资源文件、API 标头、一个调试设置 .plist 文件和一个配置器工具。 移动应用可能只包含资源文件，并且以静态方式链接到库，以便实施大多数策略。 通过 API 实现高级的 Intune APP 功能。
+用于 iOS 的 Intune App SDK 包括一个静态库、资源文件、API 标头、一个调试设置 .plist 文件和一个配置器工具。 客户端应用可能只包含资源文件，并且以静态方式链接到库，以便实施大多数策略。 通过 API 实现高级的 Intune APP 功能。
 
 本指南介绍了以下用于 iOS 的 Intune App SDK 组件的用法：
 
-* **libIntuneMAM.a**：Intune App SDK 静态库。 如果应用不使用扩展，请将此库链接到项目，为 Intune 移动应用程序管理启用应用。
+* **libIntuneMAM.a**：Intune App SDK 静态库。 如果应用不使用扩展，请将此库链接到项目，为 Intune 客户端应用程序管理启用应用。
 
-* **IntuneMAM.framework**：Intune App SDK 框架。 将此框架链接到项目，为 Intune 移动应用程序管理启用应用。 如果应用使用扩展，则使用框架而不是静态库，使项目不会创建多个静态库副本。
+* **IntuneMAM.framework**：Intune App SDK 框架。 将此框架链接到项目，为 Intune 客户端应用程序管理启用应用。 如果应用使用扩展，则使用框架而不是静态库，使项目不会创建静态库的多个副本。
 
 * **IntuneMAMResources.bundle**：一个资源包，包含 SDK 所依赖的资源。
 

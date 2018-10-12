@@ -14,18 +14,18 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 48f15493d25ba431cedc76533c35c7307fd0f848
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 9cba874c9288b86f5676b38e587a68c227913200
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254133"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562795"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服务说明
 
 Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮助员工提高工作效率，同时保护企业数据。 通过 Intune，还可以：
 * 管理员工用于访问公司数据的移动设备。
-* 管理员工使用的移动应用。
+* 管理员工使用的客户端应用。
 * 通过帮助控制员工访问和共享公司信息的方式来保护公司信息。
 * 确保设备和应用符合公司安全要求。
 

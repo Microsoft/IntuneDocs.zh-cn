@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312890"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119097"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune 中的 Android 企业展台设置
 
@@ -45,9 +45,9 @@ Android 展台配置文件支持以下配置设置。 创建配置文件时，�
 - **允许未知来源的安装**：选择“允许”以允许用户从未知来源安装。
 - **系统更新**：选择一个选项来定义设备处理无线更新的方式：
     - **设备默认值**：使用设备的默认设置。
-    - **自动**：自动安装更新。
-    - **已延迟**：更新推迟到以后。
-    - **维护时段**：维护时段提示用户批准该更新。
+    - **自动**：无需用户交互即可自动安装更新。 设置此策略会立即安装任何挂起的更新。
+    - **已延迟**：更新推迟 30 天。 在 30 天结束时，Android 会提示用户安装更新。 设备制造商或运营商可能会阻止（免除）延迟重要的安全更新。 免除更新会在设备上显示系统对用户的通知。 
+    - **维护时段**：在 Intune 中设置的每日维护时段自动安装更新。 尝试安装持续 30 天，可能会由于空间不足或电池电量不足而导致安装失败。 30 天后，Android 会提示用户进行安装。 此时段还用于安装 Play 应用的更新。 建议将此选项用于专用设备（例如展台），因为单个应用展台前台应用可以更新。 
 
 ## <a name="kiosk-settings"></a>展台设置
 

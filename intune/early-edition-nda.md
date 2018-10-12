@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/4/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: beee1462c1b6e683287b4d304df386ce525be820
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 0f6447f4a5cfb2638278a59414e83f744adb8c81
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141626"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978257"
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2018"></a>Microsoft Intune 的早期版本 - 2018 年 9 月
 
@@ -57,6 +57,9 @@ ms.locfileid: "44141626"
 ### <a name="outlook-for-ios-and-android-app-configuration-policy---1828527---"></a>Outlook for iOS 和 Outlook for Android 应用配置策略<!--1828527 -->
 可以为 iOS 创建 Outlook for iOS 和 Outlook for Android 应用配置策略。 将为 Outlook for iOS 和 Outlook for Android 启用和添加其他配置设置。
 
+###  <a name="windows-line-of-business-lob-app-file-extensions----1884873---"></a>Windows 业务线 (LOB) 应用文件扩展名 <!-- 1884873 -->
+Windows LOB 应用的文件扩展名包括 .msi、appx、appxbundle、.msix 和 .msixbundle。 可以在 Microsoft Intune 中添加应用，方法是通过选择“客户端应用” > “应用” > “添加”。 将显示可以选择“应用类型”的“添加应用”窗格。 对于 Windows LOB 应用，选择“业务线”应用作为应用类型，选择“应用包文件”，然后输入带有相应扩展名的安装文件。
+
 ### <a name="remotely-lock-noncompliant-devices----2064495---"></a>远程锁定不符合要求的设备<!-- 2064495 -->
 如果设备不符合要求，将能够根据符合性策略创建一个可远程锁定设备的操作。 在 Intune 中，转到“设备符合性”，创建新的策略，或选择现有策略。 选择“针对非符合性的操作” > “添加”，然后选择远程锁定设备。
 在以下设备上受支持： 
@@ -72,6 +75,9 @@ ms.locfileid: "44141626"
 ### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>在 Windows 10 Wi-Fi 配置文件中使用预共享密钥<!-- 2662938 -->
 用户将能够使用预共享密钥 (PSK) 和 WPA/WPA2-个人安全协议对 Windows 10 的 Wi-Fi 配置的配置文件进行身份验证。
 目前，必须导入 Wi-Fi 配置文件，或创建自定义配置文件才能使用预共享密钥。 [Windows 10 的 Wi-Fi 设置](wi-fi-settings-windows.md)列出了当前设置。 
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995-eeready---"></a>适用于 Web 数据的应用保护策略 (APP) 设置 <!-- 2662995 eeready -->
+将更新 Android 和 iOS 设备上适用于 Web 内容的应用策略设置，以更好地处理 http 和 https Web 链接，以及通过 iOS 通用链接和 Android 应用链接进行的数据传输。  
 
 ### <a name="autopilot-device-sync-frequency-increasing-to-every-12-hours----2753673---"></a>Autopilot 设备同步频率增加到每隔 12 小时<!-- 2753673 -->
 Autopilot 设备将每 12 小时同步一次，而不是每 24 小时同步一次。

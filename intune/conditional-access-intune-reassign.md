@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4714b0bbe566589d970a5d959f1f361940e5701b
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027462"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187829"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
 从新 Azure 门户开始，条件访问按应用程序提供多策略支持和更高的可自定义度。 如果先前在 Intune 经典门户中创建了条件访问策略，则可将其迁移到 Azure 门户。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 如果准备迁移到 Azure 门户，请按照本主题中的步骤重新分配先前在 Intune 经典门户中创建的条件访问策略：
 
@@ -93,7 +93,7 @@ ms.locfileid: "31027462"
 
 8. 选择要应用新条件访问策略的应用，然后单击“选择”。
 
-9. 单击 **“完成”**。
+9. 单击“完成”。
 
     ![显示 Intune 和 Azure 门户之间的云应用用户界面比较的图像](./media/reassign-ca-3.png)
 
@@ -179,6 +179,9 @@ ms.locfileid: "31027462"
 12. 在“新建条件访问策略”边栏选项卡上，打开“启用策略”开关，然后单击“创建”。
 
     ![显示在 Intune 和 Azure 门户之间启用条件访问策略用户界面比较的图像](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> 如果配置“设备平台”，则保存策略会失败，并会显示错误“不支持策略配置”。 Exchange ActiveSync 无法识别连接设备所使用的平台。 因此，为 Exchange ActiveSync 设备创建策略时，配置特定设备平台不受支持。
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>禁用 Intune 经典门户中的条件性访问策略
 

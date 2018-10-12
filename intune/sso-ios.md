@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216252"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864602"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>配置 Microsoft Intune for iOS 设备 SSO
 
@@ -66,7 +66,7 @@ ms.locfileid: "34216252"
 
    还可以选择使用在“领域”文本框中键入的文本覆盖该领域。
 
-   例如，Contoso 可能有几个子区域，如欧洲、亚洲和北美。 它们可能希望其亚洲用户使用 SSO 有效负载，并且该应用要求 UPN 采用 username@asia.contoso.com 格式。在此情况下，如果选择“用户主体名称”，则每个用户的领域默认是从 AAD 中获取的，该领域可能只是 contoso.com。因此，可以专为亚洲用户创建此有效负载并使用值 asia.contoso.com 覆盖领域。现在，最终用户的 UPN 会变为 username@asia.contoso.com，而不再是 username@contoso.com。
+   例如，Contoso 可能有几个子区域，如欧洲、亚洲和北美。 它们可能希望其亚洲用户使用 SSO 有效负载，并且该应用要求 UPN 采用 username@asia.contoso.com 格式。 在此情况下，如果选择“用户主体名称”，则每个用户的领域默认是从 AAD 中获取的，该领域可能只是 contoso.com。 因此，可以专为亚洲用户创建此有效负载并使用值 asia.contoso.com 覆盖领域。 现在，最终用户的 UPN 会变为 username@asia.contoso.com，而不再是 username@contoso.com。
 
 - 如果选择“设备 ID”，则 Intune 会自动选择 Intune 设备 ID。
 
@@ -84,7 +84,7 @@ ms.locfileid: "34216252"
 > [!NOTE]
 > 这些 URL 必须采用正确格式化的 FQDN。 Apple 要求这些 URL 采用 `http://<yourURL.domain>` 格式
 
-匹配模式的 URL 必须以 `http://` 或 `https://` 开头。 系统将执行简单的字符串匹配，因此 URL 前缀 `http://www.contoso.com/` 与 `http://www.contoso.com:80/` 不匹配。 但是，在 iOS 9.0 或更高版本中，单个通配符 \* 可用于指定所有匹配的值。 例如，`http://*.contoso.com/` 同时匹配 `http://store.contoso.com/` 和 `http://www.contoso.com`。
+匹配模式的 URL 必须以 `http://` 或 `https://` 开头。 系统将执行简单的字符串匹配，因此 URL 前缀 `http://www.contoso.com/` 与 `http://www.contoso.com:80/` 不匹配。 但是，在 iOS 10.0 或更高版本中，单个通配符 \* 可用于指定所有匹配的值。 例如，`http://*.contoso.com/` 同时匹配 `http://store.contoso.com/` 和 `http://www.contoso.com`。
 模式 `http://.com` 和 `https://.com` 分别匹配所有的 HTTP 和 HTTPS URL。
 
 ### <a name="apps-that-will-use-single-sign-on"></a>使用 SSO 的应用

@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347791"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187846"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -39,7 +39,7 @@ ms.locfileid: "43347791"
 将弃用 Azure 经典门户中创建的符合性策略。 可查看和删除任何现有符合性策略，但无法更新它们。 如果需要将任何符合性策略迁移到最新的 Intune Azure 门户，可将策略导出为逗号分隔文件（.csv 文件）。 然后使用文件中的详细信息在 Intune Azure 门户中重新创建这些策略。
 
 > [!IMPORTANT]
-> Azure 经典门户停用时，将无法访问或查看符合性策略。 因此，在 Azure 经典门户停用之前，务必导出策略并在 Azure 门户中重新创建这些策略。
+> Azure 经典门户停用后，将无法访问或查看符合性策略。 因此，在 Azure 经典门户停用之前，务必导出策略并在 Azure 门户中重新创建这些策略。
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 旧 PC 客户端功能仅适用于 Silverlight 控制台
 
@@ -106,6 +106,15 @@ macOS 的未来版本中可能会解决此问题。
 
 <!-- ## Enrollment -->
 
+## <a name="conditional-access"></a>条件性访问
+
+### <a name="conditional-access-settings-from-intune-do-not-show-up-in-new-console"></a>Intune 的条件访问设置不会在新控制台中显示
+
+条件访问设置在你的租户迁移到 Azure 门户之后，将继续适用；但是，它们将不会出现在 Azure Intune 门户中。 
+
+如果要在 Azure 门户中查看和管理这些设置，则需要从经典门户中删除旧设置并在 Azure 门户中重新创建它们。 
+
+有关详细信息，请参阅 [Azure Active Directory 中条件性访问的最佳实践](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)。
 
 ## <a name="data-protection"></a>数据保护
 

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: ee14a7983451ae37113462e1c8f0aac5785f2f09
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253601"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187863"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
@@ -45,6 +45,13 @@ Intune 提供了设备符合性策略功能，可评估设备的符合性状态�
 -   了解有关 [Intune 设备符合性](device-compliance.md)的详细信息。
 
 -   了解有关[通过 Intune 使用条件性访问保护电子邮件、Office 365 和其他服务](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)的详细信息。
+
+> [!NOTE]
+> 在 Android 设备上为 Sharepoint Online 启用基于设备的访问时，用户必须在注册的设备上打开“启用浏览器访问”选项，如下所示：
+> 1. 启动**公司门户应用**。
+> 2. 从三个点 (…) 或硬件菜单按钮转到“设置”页。
+> 3. 按“启用浏览器访问”按钮。 
+> 4. 在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Exchange 内部部署的条件性访问
 

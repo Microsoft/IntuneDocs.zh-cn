@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481115"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562861"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune 中适用于 Windows 10 （及更高版本）的展台设置
 
@@ -45,7 +45,7 @@ ms.locfileid: "39481115"
 #### <a name="single-full-screen-app-kiosks"></a>单个全屏应用展台
 输入以下设置：
 
-- 通用 Windows 平台 (UWP) 应用标识符：输入展台应用的应用程序用户模型 ID (AUMID)。 或者选择使用[移动应用](apps-add.md)添加的现有托管应用。
+- 通用 Windows 平台 (UWP) 应用标识符：输入展台应用的应用程序用户模型 ID (AUMID)。 或者选择使用[客户端应用](apps-add.md)添加的现有托管应用。
 
     请参阅 [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（查找已安装应用的应用程序用户模型 ID）。
 
@@ -62,7 +62,7 @@ ms.locfileid: "39481115"
 输入以下设置：
 
 - 添加 Win32 应用：Win32 应用是传统的桌面应用。 输入“应用名称”和“标识符”。 就设备而言，标识符是可执行文件的完全限定的路径名。
-- 添加托管应用：选择使用 [Intune 中的“移动应用”](apps-add.md)添加的现有托管应用。
+- **添加托管应用**：选择使用 [Intune 中的“客户端应用”](apps-add.md)添加的现有托管应用。
 - 通过 AUMID 添加应用：输入[应用的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（UWP 应用）。
 - **任务栏**：在展台上选择“启用”（显示）任务栏，或将其保持为“未配置”（隐藏）。
 - “开始”菜单布局：输入一个 XML 文件，用于描述应用在“开始”菜单上的显示方式，包括应用的顺序。 相关指导和示例 XML，请参阅[自定义和导出“开始”布局](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)。
@@ -75,7 +75,7 @@ ms.locfileid: "39481115"
 
 ## <a name="kiosk-web-browser-settings"></a>展台 Web 浏览器设置
 
-这些设置控制展台上的 Web 浏览器应用。 请确保使用“[移动应用](apps-add.md)”向展台设备部署 Web 浏览器应用。
+这些设置控制展台上的 Web 浏览器应用。 请确保使用“[客户端应用](apps-add.md)”向展台设备部署 Web 浏览器应用。
 
 1. 输入以下设置：
 
@@ -115,7 +115,7 @@ ms.locfileid: "39481115"
 
 输入以下设置：
 
-- 添加托管应用：选择使用 [Intune 中的“移动应用”](apps-add.md)添加的现有托管应用。
+- **添加托管应用**：选择使用 [Intune 中的“客户端应用”](apps-add.md)添加的现有托管应用。
 - 通过 AUMID 添加应用：输入[应用的 AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)（UWP 应用）。
 - “开始”菜单布局：输入一个 XML 文件，用于描述应用在“开始”菜单上的显示方式，包括应用的顺序。 [自定义和导出开始布局](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens)提供了一些指导，并包含适用于 Windows Holographic for Business 设备的特定 XML 文件。
 - 用户帐户类型：添加一个或多个可以使用你添加的应用的用户帐户。 支持的选项包括： 

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: e71f49c6a336efa5c15d8f10e664ddbf9b0579d0
+ms.sourcegitcommit: 5bfc7a1375fdb2992b9b5d4f6d1b34eec12457ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313420"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45533653"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 macOS 设备
 
@@ -30,7 +30,7 @@ ms.locfileid: "43313420"
 
 若要设置 DEP 注册，需同时使用 Intune 和 Apple DEP 门户。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
-另外，DEP 注册不能与[设备注册管理器](device-enrollment-manager-enroll.md)一起使用。
+DEP 注册不适用于[设备注册管理器](device-enrollment-manager-enroll.md)或 [Apple School Manager](apple-school-manager-set-up-ios.md)。
 
 <!--
 **Steps to enable enrollment programs from Apple**

@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3d18413465dd6f87a98da4b1f275392feac27c52
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312792"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169043"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -111,13 +111,13 @@ Intune 会将应用中的所有数据标记为“公司”或“个人”。 数
 - **系统多久提示一次用户输入 Intune PIN？**<br></br> IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设置“以下时间过后重新检查访问要求(分钟)”。 此设置指定在设备上检测访问要求，并再次显示应用程序 PIN 屏幕之前的时长。 但是，请注意以下关于 PIN 的重要详细信息，它们会影响用户收到提示的频率： 
 
     - **为了提高可用性，将在同一发布者的多个应用之间共享 PIN：** 在 iOS 上，同一应用发布者的所有应用共享一个应用 PIN。 在 Android 上，所有应用共享一个应用 PIN。
-    - **设备重启后的“以下时间过后重新检查访问要求(分钟)”行为：**“PIN 计时器”跟踪非活动状态的分钟数，此分钟数用于确定下一次显示 Intune 应用 PIN 的时间。 在 iOS 上，PIN 计时器不受设备重启影响。 因此，设备重启对用户在使用 Intune PIN 策略的 iOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，PIN 计时器在设备重启后重置。 因此，使用 Intune PIN 策略的 Android 应用可能提示输入应用 PIN，设备重启后的“以下时间过后重新检查访问要求(分钟)”设置值对此没有影响。  
+    - **设备重启后的“以下时间过后重新检查访问要求 (分钟)”行为：**“PIN 计时器”跟踪非活动状态的分钟数，此分钟数用于确定下一次显示 Intune 应用 PIN 的时间。 在 iOS 上，PIN 计时器不受设备重启影响。 因此，设备重启对用户在使用 Intune PIN 策略的 iOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，PIN 计时器在设备重启后重置。 因此，使用 Intune PIN 策略的 Android 应用可能提示输入应用 PIN，设备重启后的“以下时间过后重新检查访问要求(分钟)”设置值对此没有影响。  
     - **与 PIN 关联的计时器的滚动特性：** 输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该 PIN 的 PIN 计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。
 
 对于 iOS 设备，即使在不同发行商的应用之间共享 PIN，当不是主要输入焦点的应用再次满足“在一定时间后重新检查访问要求(分钟)”值时，也会再次显示提示。 因此，例如，某一用户具有来自发行商 X 的应用 A 和来自发行商 Y 的应用 B，并且这两个应用共享相同 PIN。 该用户将焦点置于应用 A（前景），并最小化应用 B。 当满足“在一定时间后重新检查访问要求(分钟)”值并且用户切换到应用 B 时，将需要此 PIN。
 
-      >[!NOTE] 
-      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
+  >[!NOTE] 
+  > 为了更频繁地验证用户的访问要求（即 PIN 提示），尤其是针对常用应用的访问，建议减小“以下时间过后重新检查访问要求(分钟)”设置的值。 
       
 - **Intune PIN 如何与 Outlook 和 OneDrive 的内置应用 PIN 配合使用？**<br></br>
 Intune PIN 基于非活动状态计时器（又称“以下时间过后重新检查访问要求(分钟)”的值）执行操作。 因此，Intune PIN 提示与 Outlook 和 OneDrive 的内置应用 PIN 提示（默认情况下与应用启动直接关联）相互独立显示。 如果用户同时收到两个 PIN 提示，预期行为应以 Intune PIN 为准。 

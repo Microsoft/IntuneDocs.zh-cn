@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 62a7f2f45ccd98612e56e253945974a8eb193f25
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058738"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562708"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>将内置应用添加到 Microsoft Intune
 
@@ -48,7 +48,7 @@ ms.locfileid: "44058738"
 ## <a name="configure-app-information"></a>配置应用信息
 
 可以修改有关内置应用的信息。 此信息有助于在 Intune 中识别应用，也有助于用户在公司门户中找到该应用。
-1. 在“移动应用 - 应用”窗格中，选择想要修改的内置应用。  
+1. 在“客户端应用 - 应用”窗格中，选择想要修改的内置应用。  
     随即显示该内置应用的窗格。
 2. 选择“管理”下的“属性”选项。
 3. 若要修改该内置应用的信息，请选择“配置”选项。
