@@ -3,8 +3,8 @@ title: 使用 Microsoft Intune 进行条件访问
 titlesuffix: ''
 description: 了解 Intune 条件访问通常如何用于基于设备和基于应用的条件访问。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ee14a7983451ae37113462e1c8f0aac5785f2f09
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: db63d79a81de03a459a910a23fb9f999f33f0251
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187863"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231641"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 

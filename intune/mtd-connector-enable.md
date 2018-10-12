@@ -3,8 +3,8 @@ title: 在 Microsoft Intune 中启用移动威胁防御连接器
 titleSuffix: ''
 description: 在移动威胁防御 (MTD) 合作伙伴和 Microsoft Intune 之间启用连接器。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 370b02d06276cefa21339d3617068d5777cb8668
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: e2172c1cd066e99f3634dd856538671207cf1ed0
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168924"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232233"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中启用移动威胁防御连接器
 

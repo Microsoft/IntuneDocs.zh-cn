@@ -2,8 +2,8 @@
 title: 基于应用的条件性访问与 Intune 的协作
 description: 了解基于应用的条件性访问如何与 Intune 协作。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 317a1fa5fd83cbfe95afa51894466f93131bd278
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 95458642f60dfb8c7ba18078ef4bd238c53502aa
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562759"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231298"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的条件性访问与 Intune 的协作
 

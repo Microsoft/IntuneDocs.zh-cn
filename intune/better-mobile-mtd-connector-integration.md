@@ -3,8 +3,8 @@ title: 使用 Intune 设置 Better Mobile 集成
 titleSuffix: Intune on Azure
 description: 将 Better Mobile 连接器与 Intune 集成
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 7/25/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: 000a84ac6167b238520ea2ff88aadf9e8aa0a929
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: a677bab1f18fc0d0e0d159f2b40fae314b292e0f
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562691"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231102"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>将 Better Mobile 与 Intune 集成
 
