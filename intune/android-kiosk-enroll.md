@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c4b9b99a17e435b1d79d2e10565abbd262c89741
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313455"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187812"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>设置 Android 企业展台设备的注册
 
@@ -74,6 +74,7 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
     - **添加设备位置**enrollmentProfileName
     - 在中间的框中，选择“匹配”。
     - 在最后一个字段中，输入之前创建的注册配置文件名称。
+    有关动态成员身份规则的详细信息，请参阅 [AAD 中的组动态成员身份规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 
 5. 选择“添加查询” > “创建”。
 
 ### <a name="replace-or-remove-tokens"></a>替换或删除令牌
