@@ -165,7 +165,7 @@ DeviceConfigurationProfileDeviceActivity 实体列出每天处于成功、挂起
 | Failed    | 处于失败状态的唯一设备数。                                                     | 2        |
 
 ## <a name="deviceconfigurationprofileuseractivities"></a>deviceConfigurationProfileUserActivities 
-DeviceConfigurationProfileUserActivity **** 实体列出每天处于成功、挂起、失败或错误状态的用户数。 该数字反映了分配给该实体的设备配置文件。 例如，如果对于分配给某用户的所有策略，该用户均为成功状态，则当天的成功计数增加一。 如果向用户分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则将用户计为错误状态。 DeviceConfigurationProfileUserActivity **** 实体列出了过去 30 天内给定某天中处于各状态的用户数。 
+DeviceConfigurationProfileUserActivity ** ** 实体列出每天处于成功、挂起、失败或错误状态的用户数。 该数字反映了分配给该实体的设备配置文件。 例如，如果对于分配给某用户的所有策略，该用户均为成功状态，则当天的成功计数增加一。 如果向用户分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则将用户计为错误状态。 DeviceConfigurationProfileUserActivity ** ** 实体列出了过去 30 天内给定某天中处于各状态的用户数。 
 
 | 属性  | 描述  | 示例  |
 |------------|----------------------------------------------------------------------------------------------|-----------|
