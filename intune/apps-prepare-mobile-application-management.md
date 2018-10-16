@@ -2,10 +2,10 @@
 title: 决定如何使用 Microsoft Intune 为移动应用程序管理准备应用
 description: 本主题中的信息可帮助决定何时应该使用应用包装工具和应用 SDK 来启用自定义业务线应用，以使用移动应用管理策略。
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 8ee6001711ea283e06f990d9321362663be970de
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251863"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903437"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
