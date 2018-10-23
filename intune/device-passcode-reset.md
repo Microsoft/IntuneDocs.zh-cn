@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
-ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46300453"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424911"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -49,7 +49,6 @@ ms.locfileid: "46300453"
 | 运行 7.x 及更早版本的 Android 设备 | 否 |
 | iOS | 否 |
 | macOS | 否 |
-| iOS | 否 |
 
 要创建新的工作配置文件密码，请使用重置密码操作。 此操作会提示重置密码，并仅为工作配置文件创建新的临时密码。 
 

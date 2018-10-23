@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255231"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425149"
 ---
 # <a name="manage-software-updates-in-intune"></a>在 Intune 中管理软件更新
 
@@ -34,7 +34,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
   - Windows 预览体验计划 - 慢
   - 发布 Windows 预览体验计划 
       
-  有关可用服务频道的详细信息，请参阅 [Windows 即服务概述](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels)。
+  有关可用服务频道的详细信息，请参阅 [Windows 即服务概述](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)。
 - **延期设置**：配置更新延期设置，以延迟设备组的更新安装。 使用这些设置可分阶段推出更新，以便随时查看进度。
 - **暂停**：如果在更新部署期间的任何时间点发现问题，则推迟安装更新。
 - **维护窗口**：配置可以安装更新的时间。
@@ -44,7 +44,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
 创建更新铃声后，将其分配到设备组。 通过使用更新通道，你可以创建反映业务需求的更新策略。 有关详细信息，请参阅[使用 Windows Update for Business 更新管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
 - 要更新 Windows 10 电脑，它们必须至少运行安装了 Windows 周年更新的 Windows 10 专业版。
 

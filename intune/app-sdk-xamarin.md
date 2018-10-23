@@ -5,7 +5,7 @@ keywords: sdk、Xamarin、intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3ccd2db88df4e5b7a51e0aa2446a99f33256432
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.custom: intune
+ms.openlocfilehash: 68cc4bb576f567787e702ccd88026579b6ed5b12
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028709"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425302"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -27,7 +27,7 @@ ms.locfileid: "47028709"
 > 你可能希望首先阅读 [ Intune App SDK 入门指南](app-sdk-get-started.md)一文，其中介绍了如何为每个受支持的平台上的集成做准备。
 
 ## <a name="overview"></a>概述
-借助 [Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)，可在使用 Xamarin 生成的 iOS 和 Android 应用中启用 [Intune 应用保护策略](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)。 该绑定使开发人员可以轻松将 Intune 应用保护功能内置到基于 Xamarin 的应用中。
+借助 [Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)，可在使用 Xamarin 生成的 iOS 和 Android 应用中启用 [Intune 应用保护策略](app-protection-policy.md)。 该绑定使开发人员可以轻松将 Intune 应用保护功能内置到基于 Xamarin 的应用中。
 
 通过 Microsoft Intune App SDK Xamarin Bindings，可将 Intune 应用保护策略（也称为 APP 或 MAM 策略）合并到使用 Xamarin 开发的应用中。 启用了 MAM 的应用程序是指与 Intune App SDK 集成的应用程序。 在 Intune 主动管理移动应用时，IT 管理员可将应用保护策略部署到该应用。
 
@@ -49,7 +49,7 @@ ms.locfileid: "47028709"
 
 使用 Intune App SDK Xamarin Bindings 生成的 Xamarin 应用现在可以在已注册和未注册 Intune 移动设备管理 (MDM) 的设备上接收 Intune 应用保护策略。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 
 查看[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 打印并保留一份许可条款，以留作记录。 下载和使用 Intune App SDK Xamarin Bindings 即表示你同意这些许可条款。 如果不接受这些条款，请不要使用此软件。
 
@@ -80,14 +80,14 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 移动应用中启用 Intune 应用保护策略
 
-对于不使用 UI 框架的基于 Xamarin 的 Android 应用，需要阅读并遵循 [Intune App SDK for Android 开发人员指南](app-sdk-android.md)。 对于基于 Xamarin 的 Android 应用，需要根据本指南所包含的[表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)将类、方法和活动替换为其 MAM 等效项。 如果应用没有定义 `android.app.Application` 类，则需要创建一个，并确保继承自 `MAMApplication`。
+对于不使用 UI 框架的基于 Xamarin 的 Android 应用，需要阅读并遵循 [Intune App SDK for Android 开发人员指南](app-sdk-android.md)。 对于基于 Xamarin 的 Android 应用，需要根据本指南所包含的[表](app-sdk-android.md#class-and-method-replacements)将类、方法和活动替换为其 MAM 等效项。 如果应用没有定义 `android.app.Application` 类，则需要创建一个，并确保继承自 `MAMApplication`。
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android 集成
 
 1. 向 Xamarin.Android 项目添加 [Microsoft.Intune.MAM.Xamarin.Android NuGet 包](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)的最新版本。 这将向你提供使用 Intune 启用应用程序的必要参考。
 
 2. 请完整阅读并遵循[用于 Android 的 Intune App SDK 开发人员指南](app-sdk-android.md)，并特别注意：
-    1. [整个类和方法替换部分](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)。 
+    1. [整个类和方法替换部分](app-sdk-android.md#class-and-method-replacements)。 
     2. [MAMApplication 部分](app-sdk-android.md#mamapplication)。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
     3. 如果你的应用针对 AAD 执行身份验证，请注意 [ADAL 集成部分](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)。
     4. 如果计划从应用程序中的 MAM 服务获取策略，请注意 [MAM-WE 注册部分](app-sdk-android.md#app-protection-policy-without-device-enrollment)。
@@ -110,7 +110,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 > 由于此操作会重新编写 Visual Studio 用于 Intellisense 自动完成的依赖项，因此建议在重映射器首次运行后重启 Visual Studio 以使 Intellisense 正确识别这些更改。 
 
 
-## <a name="support"></a>Support
+## <a name="support"></a>支持
 
 你已完成将组件内置到应用中的基本步骤。 现在可以按照 Xamarin Android 示例应用中的所述步骤进行操作。 我们提供了两个示例，一个用于 Xamarin.Forms，另一个用于 Android。
 
@@ -128,7 +128,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 6.  在搜索框中，输入“Microsoft 移动应用程序管理”。
 7.  单击选择 API 列表中的“Microsoft 移动应用程序管理”。
 8.  选择“读取和写入用户的应用管理数据”。
-9.  单击“完成”。
+9.  单击 **“完成”**。
 10. 单击“授予权限”，然后单击“是”。 
     
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK

@@ -15,23 +15,20 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 516e2f935225b7142c75b01967977fe97297c8e2
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 0b4af0a638d86d32b244c3a34f8039e466394736
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232166"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424928"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
-|适用于：Azure 门户中的 Intune |
-|--|
-|正在查找有关经典门户中的 Intune 的文档？ [请转到此处](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
-| |
+适用于：Azure 门户中的 Intune
 
 如果你的组织使用 [Jamf Pro](https://www.jamf.com) 管理最终用户的 Mac，则可以将 Microsoft Intune 符合性策略用于 Azure Active Directory 条件访问，从而确保组织中的设备满足合规要求。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 
 需要满足以下要求才能通过 Jamf Pro 配置条件访问：
 
@@ -76,14 +73,14 @@ ms.locfileid: "48232166"
 
 1. 在 Microsoft Azure 门户中，打开“Microsoft Intune” > “设备符合性” > “合作伙伴设备管理器”。
 2. 通过将应用程序 ID 粘贴到 Jamf Azure Active Directory 应用程序 ID 字段来启用 Jamf 的符合性连接器。
-3. 单击 **“保存”**。
+3. 单击“保存”。
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中配置 Microsoft Intune 集成
 
 1. 在 Jamf Pro 中，导航到“全局管理” > “条件访问”。 单击“Microsoft Intune 集成”选项卡上的“编辑”按钮。
 2. 选中“启用 Microsoft Intune 集成”复选框。
 3. 提供之前步骤中保存的有关 Azure 租户的必要信息，包括“位置”、“域名”、“应用程序 ID”和“应用程序密钥”。
-4. 单击 **“保存”**。 Jamf Pro 将测试设置并验证是否成功。
+4. 单击“保存”。 Jamf Pro 将测试设置并验证是否成功。
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>设置符合性策略并注册设备
 
@@ -100,7 +97,7 @@ Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intun
 * 已加密（FileVault 2）
 * 网关守卫状态
 * 密码：最小字符集数
-* 密码过期(天)
+* 密码过期（天数）
 * 密码类型 - 简单、字母数字字符或未知
 * 防止自动登录
 * 所需的密码长度
@@ -117,12 +114,12 @@ Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intun
 * 域加入
 * Jamf ID
 * MAC 地址
-* 品牌
+* 制造商
 * 型号
 * 模型标识符
 * NIC 速度
 * 内核数量
-* 处理器数目
+* 处理器数
 * 操作系统
 * 平台
 * 处理器速度
@@ -130,7 +127,7 @@ Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intun
 * 辅助 MAC 地址
 * 序列号
 * SMC 版本
-* RAM 总量
+* 总 RAM
 * UDID
 * 用户电子邮件
 

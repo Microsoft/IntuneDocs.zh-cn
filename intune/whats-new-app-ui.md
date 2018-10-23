@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347688"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425081"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 了解这些更新有助于与用户进行通信，并更新为了支持部署而创建的任何自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
@@ -30,19 +30,19 @@ ms.locfileid: "43347688"
 ## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日当周  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>公司门户网站的新用户体验更新<!--2000968 -->  
-我们已根据客户反馈向公司门户网站添加新功能。 可从设备上体验到现有功能和可用性的重大改进。 该网站的各个区域（如设备详细信息、反馈与支持以及设备概述）都采用了全新的现代化快速响应设计。 已更新 [Intune 公司门户网站文档](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)以体现这些更改。   
+我们已根据客户反馈向公司门户网站添加新功能。 可从设备上体验到现有功能和可用性的重大改进。 该网站的各个区域（如设备详细信息、反馈与支持以及设备概述）都采用了全新的现代化快速响应设计。 已更新 [Intune 公司门户网站文档](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)以体现这些更改。   
 
 将看到以下更新：  
 
 - 简化了所有设备平台上的工作流
 - 改进了设备识别和注册流
 - 提供了更多有用的错误消息
-- 语言更加友好，减少了技术术语的使用
-- 共享指向应用的直接链接的功能
+- 更友好的语言，减少了专业技术性术语
+- 能够共享指向应用的直接链接
 - 改善了大型应用目录的性能
 - 为所有用户增加了辅助功能  
 
-|已更新|上一个|
+|已更新|上一步|
 |---|---|
 |![更新后的设备页面显示设备与上述设备信息完全符合，不再弹出以上完整列表。](./media/iwp-device-after-1803.png)|![设备页面的以前版本。](./media/iwp-device-before-1803.png)|
 |![更新后的应用安装页面会完全地显示应用的说明和各种安装信息，包括发布日期、版本和应用类型。](./media/iwp-app-install-after-1803.png)|![应用安装页面的以前版本。](./media/iwp-app-install-before-1803.png)|  
