@@ -1,42 +1,40 @@
 ---
-title: 使用 Managed Browser 应用管理 Web 访问
+title: 使用受策略保护的浏览器管理 Web 访问
 titlesuffix: Microsoft Intune
-description: 部署 Managed Browser 应用程序，以限制 Web 浏览和将 Web 数据传输到其他应用。
+description: 使用受策略保护的浏览器限制 Web 浏览和 Web 数据传输。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
-ms.reviewer: maxles
+ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb4a80a9de03844c6fffa5e56f09c375645f9188
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864535"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863155"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的受保护的浏览器策略管理 Internet 访问
+# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的受保护的浏览器策略管理 Internet 访问  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-受保护的浏览器包括 Microsoft Edge 和 Intune Managed Browser。 Edge 和 Managed Browser 是 Web 浏览应用，可以从公共应用商店中下载它以供组织使用。 通过 Intune 配置时，受保护的浏览器可以：
-- 用于通过 MyApps 服务进行单一登录来访问公司网站和 SaaS 应用，并保护 Web 数据。
-- 使用一系列 URL 和域进行预配置，以限制用户可在公司中导航到的网站。
-- 使用主页和指定的书签进行预配置。
+通过使用受 Intune 策略保护的浏览器（Microsoft Edge 或 Intune Managed Browser），可以确保始终能够安全地访问公司网站。  使用 Intune 进行配置后，受保护的浏览器可以利用以下功能：
 
-由于 Edge 和 Managed Browser 已与 Intune SDK 集成，因此也可以向其应用应用保护策略，包括：
-- 控制剪切、复制和粘贴操作的使用
-- 防止发生屏幕捕获
-- 确保指向用户所选内容的链接仅在其他托管应用中打开。
+- 应用程序保护策略。
+- 条件性访问。
+- 单一登录。
+- 应用程序配置设置。
+- Azure 应用程序代理集成。
 
-有关详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
+## <a name="getting-started"></a>开始使用
 
 可将这些设置应用于：
 
@@ -57,9 +55,7 @@ Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
 
 >[!IMPORTANT]
 >早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
-
-
-Microsoft Edge 和 Intune Managed Browser 支持从 [Microsoft Intune 应用程序合作伙伴](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)打开 Web 内容。
+    
 
 ## <a name="conditional-access-for-protected-browsers"></a>受保护浏览器的条件性访问
 
@@ -94,11 +90,11 @@ Managed Browser 现为条件访问的核准客户端应用。 这意味着可以
 
 Managed Browser 不支持经典条件访问策略。 有关详细信息，请参阅[在 Azure 门户中迁移经典策略](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。
 
-##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>在 Intune Managed Browser 中单一登录到 Azure AD 连接的 Web 应用
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>在受策略保护的浏览器中单一登录到 Azure AD 连接的 Web 应用
 
-iOS 和 Android 上的 Intune Managed Browser 应用程序现可利用到 Azure AD 连接的所有 Web 应用（SaaS 和本地）的 SSO。 Microsoft Authenticator 应用出现在 iOS 上，或出现在 Android 上的 Intune 公司门户应用时，Intune Managed Browser 的用户将能够访问 Azure AD 连接的 Web 应用，而不必重新输入凭据。
+iOS 和 Android 上的 Microsoft Edge 和 Intune Managed Browser 可利用到 Azure AD 连接的所有 Web 应用（SaaS 和本地）的 SSO。 Microsoft Authenticator 应用存在于 iOS 上，或存在于 Android 上的 Intune 公司门户应用上时，受策略保护的浏览器的用户将能够访问 Azure AD 连接的 Web 应用，而不必重新输入其凭据。
 
-Intune Managed Browser 中的 SSO 要求设备在 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Intune 公司门户进行注册。 如果 Authenticator 应用或 Intune 公司门户的用户的设备尚未在其他应用程序上注册，则用户在 Intune Managed Browser 中导航到 Azure AD 连接的 Web 应用时，系统会提示用户注册其设备。 使用 Intune 管理的帐户注册设备后，该帐户将为 Azure AD 连接的 Web 应用启用 SSO。 
+SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Intune 公司门户对设备进行注册。 如果 Authenticator 应用或 Intune 公司门户的用户的设备尚未由其他应用程序注册，用户在受策略保护的浏览器中导航到一个 Azure AD 连接的 Web 应用时，系统会提示他们注册其设备。 使用 Intune 管理的帐户注册设备后，该帐户将为 Azure AD 连接的 Web 应用启用 SSO。 
 
 > [!NOTE]
 > 设备注册是 Azure AD 服务的简单签入。 不需要完整的设备注册，并且不会向 IT 提供设备上的任何其他权限。

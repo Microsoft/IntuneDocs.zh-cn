@@ -14,12 +14,12 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 72aa45d154cc3913f5b2e3895486a8296bb7f1cf
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190633"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169441"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "34190633"
 
 ## <a name="android-or-windows-wi-fi-profile-example"></a>Android 或 Windows Wi-Fi 配置文件示例
 
-下面的示例包含针对 Android 或 Windows Wi-Fi 配置文件的 XML 代码。 
+下面的示例包含针对 Android 或 Windows Wi-Fi 配置文件的 XML 代码。 该示例用于展示正确的格式并提供更多信息。 但它只是一个示例，并非推荐的环境配置。
 
 > [!IMPORTANT]
 >
@@ -122,7 +122,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>基于 EAP 的 Wi-Fi 配置文件示例
-下面的示例包含针对基于 EAP 的 Wi-Fi 配置文件的 XML 代码：
+以下示例包含基于 EAP 的 Wi-Fi 配置文件的 XML 代码：该示例用于展示正确的格式并提供更多信息。 但它只是一个示例，并非推荐的环境配置。
+
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">

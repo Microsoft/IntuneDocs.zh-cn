@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312844"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827847"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune 中的 Windows 10 VPN 设置
 
@@ -40,10 +40,10 @@ ms.locfileid: "43312844"
   - **说明**：为服务器输入一个描述性名称，例如“Contoso VPN 服务器”
   - **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名，例如“192.168.1.1”或“vpn.contoso.com”
   - **默认服务器**：启用此服务器作为设备建立连接时使用的默认服务器。 只将一台服务器设置为默认服务器。
-  - **导入**：浏览到按以下格式包含服务器列表的逗号分隔文件：描述、IP 地址或 FQDN、默认服务器。 选择“确定”，将这些服务器导入到“服务器”列表。
+  - **导入**：浏览到以逗号分隔的文件，该文件包含采用以下格式的服务器列表：描述、IP 地址或 FQDN、默认服务器。 选择“确定”，将这些服务器导入到“服务器”列表。
   - **导出**：将服务器列表导出到逗号分隔值 (csv) 文件
 
-- **通过内部 DNS 注册 IP 地址**：选择“启用”，将 Windows 10 VPN 配置文件配置为通过内部 DNS 动态注册分配给 VPN 接口的 IP 地址，或选择“禁用”不动态注册 IP 地址。
+- **向内部 DNS 注册 IP 地址**：选择“启用”，将 Windows 10 VPN 配置文件配置为向内部 DNS 动态注册分配给 VPN 接口的 IP 地址。 选择“禁用”以免动态注册 IP 地址。
 
 - **连接类型**：从以下供应商列表中选择 VPN 连接类型：
 
@@ -59,7 +59,7 @@ ms.locfileid: "43312844"
   - **PPTP**
 
   选择 VPN 连接类型时，还可能要求你进行以下设置：  
-    - 始终打开：启用以在发生下列情况时自动连接到 VPN 连接： 
+    - **始终可用**：“启用”以在发生下列情况时自动连接到 VPN 连接： 
       - 用户登录其设备
       - 设备上的网络发生更改
       - 设备屏幕在关闭后重新打开 
@@ -114,7 +114,7 @@ ms.locfileid: "43312844"
 
 ## <a name="conditional-access"></a>条件性访问
 
-- **此 VPN 连接的条件性访问**：从客户端启用设备符合性流。 如果启用，VPN 客户端会尝试与 Azure Active Directory (AD) 进行通信，以获取用于身份验证的证书。 VPN 应设置为使用证书进行身份验证，并且 VPN 服务器必须信任由 Azure AD 返回的服务器。
+- **此 VPN 连接的条件性访问**：从客户端启用设备符合性流。 启用后，VPN 客户端与 Azure Active Directory（AD）通信以获取用于身份验证的证书。 VPN 应设置为使用证书进行身份验证，并且 VPN 服务器必须信任由 Azure AD 返回的服务器。
 
 - **使用替代证书进行单一登录 (SSO)**：为验证设备符合性，可使用除 VPN 身份验证证书以外的其他证书来进行 Kerberos 身份验证。 使用以下设置输入证书：
 
@@ -124,7 +124,17 @@ ms.locfileid: "43312844"
 
 ## <a name="dns-settings"></a>DNS 设置
 
-此 VPN 连接的域和服务器：添加要使用的 VPN 的域和 DNS 服务器。 创建连接后，你可以选择 VPN 连接将要使用的 DNS 服务器。 对于每个服务器，输入：
+- **DNS 后缀搜索列表**：在“DNS 后缀”中，输入 DNS 后缀，然后单击“添加”。 可以添加多个后缀。
+
+  使用 DNS 后缀时，可以使用其短名称而不是完全限定的域名 (FQDN) 搜索网络资源。 在使用短名称进行搜索时，后缀由 DNS 服务器自动确定。 例如，`utah.contoso.com` 位于 DNS 后缀列表中。 对 `DEV-comp` 执行 Ping 操作。 在本方案中，它解析为 `DEV-comp.utah.contoso.com`。
+
+  DNS 后缀按列出的顺序解析，并且可以更改顺序。 例如，`colorado.contoso.com` 和 `utah.contoso.com` 位于 DNS 后缀列表中，并且都具有名为 `DEV-comp` 的资源。 由于 `colorado.contoso.com` 在列表中排第一，因此它解析为 `DEV-comp.colorado.contoso.com`。
+  
+  要更改顺序，请单击 DNS 后缀左侧的点，然后将后缀拖到顶部：
+
+  ![选择三个点，然后单击并拖动以移动 DNS 后缀](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- 此 VPN 连接的域和服务器：添加要使用的 VPN 的域和 DNS 服务器。 创建连接后，你可以选择 VPN 连接将要使用的 DNS 服务器。 对于每个服务器，输入：
 - **域**
 - **DNS 服务器**
 - **代理**

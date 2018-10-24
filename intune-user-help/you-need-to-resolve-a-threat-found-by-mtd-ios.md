@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f209fa315d5d5c36e661a931c32c70ba5ba93d81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 40d4b2d316320f23b29f1a7a67c529a158a0f7d6
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150044"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827830"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>解决移动威胁防御应用发现的威胁
 
-移动威胁防御应用可检测到设备上的潜在威胁并发出警报。 某些组织将移动威胁防御服务与 Intune 等 MDM 提供程序进行集成。 集成后，移动威胁防御服务将报告威胁（如可疑应用、网络和 OS 漏洞），并在公司门户应用中发出通知。 然后，可在移动威胁防御应用中找到有关威胁和修复步骤的详细信息。  
+Mobile Threat Defense 应用可检测到设备上的潜在威胁并发出警报。 某些组织将 Mobile Threat Defense 服务与 MDM 提供程序（如 Intune）进行集成。 集成后，Mobile Threat Defense 服务将报告威胁（如可疑应用、网络和 OS 漏洞），并在公司门户应用中提供通知。 然后，可在 Mobile Threat Defense 应用中找到有关威胁和修正步骤的详细信息。  
 
 威胁在公司门户中显示为未解决的非符合性问题。 如果威胁类别为极具危险，公司将撤销你对其公司资源的访问权限。 只要设备上存在这些威胁，就可能无法：  
 
@@ -42,5 +42,5 @@ ms.locfileid: "43150044"
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。  
 

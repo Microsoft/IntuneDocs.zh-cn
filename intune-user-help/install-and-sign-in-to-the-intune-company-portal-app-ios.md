@@ -1,11 +1,11 @@
 ---
-title: 安装公司门户应用并登录 | Microsoft Docs
+title: 安装适用于 iOS 的公司门户应用并登录 | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146369"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260192"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>安装公司门户应用并登录
 
-公司门户是一款安装在 iOS 设备上的应用，可通过它来访问公司或学校的应用、电子邮件和网络。 必须先安装公司门户应用，并使用该应用在 Microsoft Intune 中注册设备，然后才能获取访问权限。 有关详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
+在 iOS 设备上安装公司门户应用，以访问工作和学校应用、电子邮件和网络。 使用该应用在 Microsoft Intune 中注册设备，并确保它能够访问工作或学校的资源。 有关详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)。
 
 1.  打开“**应用商店**”并搜索 **intune 公司门户**。
 

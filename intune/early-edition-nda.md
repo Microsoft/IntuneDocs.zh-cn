@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f6447f4a5cfb2638278a59414e83f744adb8c81
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
+ms.openlocfilehash: e37a45122ab4950e2a85cc1c6f6696759d429a3f
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978257"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828272"
 ---
-# <a name="the-early-edition-for-microsoft-intune---september-2018"></a>Microsoft Intune 的早期版本 - 2018 年 9 月
+# <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Microsoft Intune 的早期版本 - 2018 年 10 月
 
 > [!Note]
 > NDA 通知：下面的 Intune 更改仍处于开发阶段。 此信息在 NDA 下共享，但具有严格限制。 请勿在 Twitter、UserVoice、Reddit 等社交媒体或公共网站上发布此信息。 
@@ -39,35 +39,63 @@ ms.locfileid: "45978257"
  
 ## <a name="intune-in-the-azure-portal"></a>Azure 门户中的 Intune
 
-<!-- 1809 start -->
+<!-- 1810 start -->
 
-### <a name="user-account-access-of-intune-apps-on-managed-android-and-ios-devices-----1248496----"></a>托管的 Android 和 iOS 设备上的 Intune 应用的用户帐户访问权限<!-- ! 1248496  -->
+### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>将 Microsoft 推荐的设置与安全基线结合使用 <!-- 2055484 -->
+Intune 可与其他专注于安全性的服务集成，包括 Windows Defender ATP 和 Office 365 ATP。 客户要求能在各项 Microsoft 365 服务中采用通用策略和一组统一的端到端安全工作流。 我们的目标是实现策略一致，构建连接安全操作和常见管理员任务的解决方案。 在 Intune 中，我们旨在通过发布一组 Microsoft 推荐的“安全基线”（“Intune” > “安全基线”）来实现这一目标。  管理员将能够直接通过这些基线创建安全策略，然后将其部署到用户。 他们还可以自定义最佳做法建议，满足组织需求。 Intune 可确保设备始终符合这些基线，并通知不符合的用户管理员或设备。
 
-作为 Microsoft Intune 管理员，可以控制将哪些用户帐户添加到托管设备上的 Microsoft Office 应用程序。 能够限制仅允许组织用户帐户的访问权限，并阻止已注册设备上的个人帐户。 
+### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>删除管理员擦除个人设备和重置密码的能力 <!-- 2934699 -->
+为了减轻用户对公司管理员能擦除其个人设备的担忧，[擦除](devices-wipe.md#wipe)和[重置密码](device-passcode-reset.md)远程操作将不再适用于个人设备。 将设备所有权类型切换为公司，以便为组织拥有的设备启用这些操作。
 
-### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10----1333668---"></a>在运行 Windows 10 的设备上的 VPN 配置配置文件中创建 DNS 后缀<!-- 1333668 -->
-在创建 VPN 设备配置的配置文件（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”平台>“VPN”配置文件类型）时，需要输入一些 DNS 设置。 还可以在 Intune 中输入多个 DNS 后缀。 使用 DNS 后缀时，可以使用其短名称而不是完全限定的域名 (FQDN) 搜索网络资源。 此更新还允许在 Intune 中更改 DNS 后缀的顺序。
-[Windows 10 VPN 设置](vpn-settings-windows-10.md#dns-settings)列出了当前的 DNS 设置。
-适用于：Windows 10 设备
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>加入混合 Azure Active Directory 的设备支持 Autopilot <!-- 1048100 -->
+将能使用 Autopilot 对已加入混合 Azure Active Directory 的设备进行设置。 设备必须加入组织网络中，才能使用混合 Autopilot 功能。
 
-### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>支持 Android 企业工作配置文件的始终可用 VPN<!-- 1333705 -->
-用户将能够在具有托管工作配置文件的 Android 企业设备上使用始终可用 VPN 连接。 始终可用 VPN 连接一直保持连接状态，或在用户解锁设备、设备重启或无线网络更改时立即重新连接。 还可以将连接置于“锁定”模式，该模式会阻止所有网络流量，直到 VPN 连接处于活动状态。
-始终可用 VPN 设置位于“设备配置” > “配置文件” > “创建配置文件” > “Android Enterprise”平台>“配置文件类型”的“仅工作配置文件”下的“设备限制”>“连接”设置中。 
+### <a name="scope-tags-for-apps---1081941---"></a>应用的作用域标记 <!--1081941 -->
+可创建作用域标记来限制对 Intune 资源的访问。 将作用域标记添加到某个角色分配，然后将作用域标记添加到某个配置文件。 角色将仅有权访问符合后列条件的资源：其资源配置文件的作用域标记与角色标记匹配或无作用域标记。
+若要创建作用域标记，选择“Intune 角色” > “作用域(标记)” > “创建”。
+要向角色分配添加作用域标记，选择“Intune 角色” > “所有角色” > “策略和配置文件管理器” > “分配” > “作用域(标记)”。
+要向配置文件添加作用域标记，选择“设备配置” > “配置文件”>“选择配置文件”>“属性” > “作用域(标记)”。
 
-### <a name="outlook-for-ios-and-android-app-configuration-policy---1828527---"></a>Outlook for iOS 和 Outlook for Android 应用配置策略<!--1828527 -->
-可以为 iOS 创建 Outlook for iOS 和 Outlook for Android 应用配置策略。 将为 Outlook for iOS 和 Outlook for Android 启用和添加其他配置设置。
+## <a name="tenant-health-dashboard----1124854---"></a>租户运行状况仪表板 <!-- 1124854 -->
+Intune 中的“租户状态”页面将在一个位置提供租户状态信息。 该页面分为 4 个部分：  
+- **租户详细信息**：包含 MDM 机构、租户中的注册设备总数以及许可证计数等信息。 此部分还为租户提供当前服务版本。
+- **连接器状态**：包含 Apple VPP、适用于企业的 Windows 应用商店和证书连接器等已配置连接器的信息。 根据连接器的当前状态，将其标记为“正常”、“警告”或“不正常”。
+- **Intune 服务运行状况**：包含租户的活动事件或服务中断情况。 该部分信息直接检索自 Office 消息中心 ([https://portal.office.com](https://portal.office.com))。
+- **Intune 新闻**：包含租户的活动消息，其中包括租户已收到最新 Intune 功能的通知等内容。 该部分信息直接检索自 Office 消息中心 ([https://portal.office.com](https://portal.office.com))。
 
-###  <a name="windows-line-of-business-lob-app-file-extensions----1884873---"></a>Windows 业务线 (LOB) 应用文件扩展名 <!-- 1884873 -->
-Windows LOB 应用的文件扩展名包括 .msi、appx、appxbundle、.msix 和 .msixbundle。 可以在 Microsoft Intune 中添加应用，方法是通过选择“客户端应用” > “应用” > “添加”。 将显示可以选择“应用类型”的“添加应用”窗格。 对于 Windows LOB 应用，选择“业务线”应用作为应用类型，选择“应用包文件”，然后输入带有相应扩展名的安装文件。
+### <a name="enrollment-abandonment-report----1382924---"></a>注册放弃报告 <!-- 1382924 -->
+我们将在“设备注册” > “监视”下发布新报告，其中提供了有关已放弃注册的详细信息。
 
-### <a name="remotely-lock-noncompliant-devices----2064495---"></a>远程锁定不符合要求的设备<!-- 2064495 -->
-如果设备不符合要求，将能够根据符合性策略创建一个可远程锁定设备的操作。 在 Intune 中，转到“设备符合性”，创建新的策略，或选择现有策略。 选择“针对非符合性的操作” > “添加”，然后选择远程锁定设备。
-在以下设备上受支持： 
-- Android
-- iOS
-- macOS
-- Windows 10 移动版 
-- Windows Phone 8.1 及更高版本 
+### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>无需用户注册，即可部署 WIP 政策 <!-- 1434452 -->
+无需要求 MDM 用户注册其 Windows 10 设备，即可部署Windows 信息保护 (WIP) 策略。 此配置允许公司基于 WIP 配置保护其企业文档，同时允许用户管理自己的 Windows 设备。 使用 WIP 策略保护文档后，Intune 管理员可以选择性擦除受保护的数据。 通过选择用户和设备，并发送擦除请求，所有通过 WIP 策略保护的数据都将不可用。 从 Azure 门户中的 Intune，选择“移动应用” > “应用选择性擦除”。
+
+
+### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>为公司门户应用添加自定义品牌图像 <!-- 1916266 -->
+作为 Microsoft Intune 管理员，可以上传自定义品牌图像，该图像将在公司门户应用的用户配置文件页面上作为背景图像显示。 有关配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](company-portal-app.md)。
+
+### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>按交换码 ID 对已注册 Windows Autopilot 的设备进行分组 <!-- 2075110 -->
+通过 Configuration Manager [使用 Autopilot 为现有设备注册](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)时，Intune 将支持按交换码 ID 对 Windows 设备进行分组。 交换码 ID 是 Autopilot 配置文件的参数。 Intune 会自动将 [Azure AD 设备属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects)设置为“OfflineAutopilotprofile - \<交换码 ID\>”。 如此，即可通过离线 Autopilot 注册的 enrollmentprofileName 属性，根据交换码 ID 创建任意 Azure AD 动态组。 
+
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>支持 iOS 电子邮件配置文件中的 iOS 12 OAuth <!--2155106 -->
+Intune 的 iOS 电子邮件配置文件将支持 iOS 12 OAuth。 要查看此功能，请选择“Intune” > “设备配置” > “配置文件” > “创建配置文件” > “OAuth”。 如果启用此设置，将发生两种情况：
+1. 已指定的设备将发布新的配置文件。
+2. 系统会再次提示最终用户输入其凭据。
+
+### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>适用于 Android、Android 企业版的新的“所需密码类型”默认设置 <!-- 2649963 -->
+创建新的符合性策略时（“Intune” > “设备符合性” > “策略” > “创建策略” > “Android”或“Android 企业版”平台 > 系统安全性），“所需密码类型”的默认值将更改：当前默认值为设备默认；新的默认值为最小数值；应用于：Android、Android 企业版
+
+### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>将 Autopilot 配置文件分配给所有设备虚拟组 <!--2715522 -->
+可将 Autopilot 配置文件分配给所有设备虚拟组。 要执行此操作，请选择“设备注册” > “Windows 注册” > “部署配置文件”，然后选择一个配置文件，选择“分配”，接着在“分配给”下选择“所有设备”。
+
+### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新的 Azure Active Directory 使用条款功能 <!-- 2870393 -->
+Azure Active Directory 将具备可供使用的使用条款功能，而不必再使用现有的 Intune 条款和条件。 Azure AD 使用条款功能在显示哪些条款以及何时显示这些条款方面更加灵活，并能更好地支持本地化，更好地控制条款的呈现方式以及改进报告。 Azure AD 使用条款功能需要 Azure Active Directory Premium P1，后者也是企业移动性 + 安全性 E3 套件的一部分。
+
+
+### <a name="intune-will-maintain-the-office-localized-language-when-updating-office-on-end-users-machines----2971030---"></a>在最终用户计算机上更新 Office 时，Intune 将维护维持 Office 本地化语言 <!-- 2971030 -->
+Intune 在最终用户计算机上安装 Office 时，最终用户将自动获得与以前安装的 .MSI Office 相同的语言包。 
+
+<!-- 1809 start -->  
 
 ### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>iOS MDM 注册设备上的 Intune 应用数据传输设置<!-- 2244713 -->
 用户能够将 iOS MDM 注册设备上的 Intune 应用数据传输设置控制与指定注册用户的身份分开。 不使用 IntuneMAMUPN 的管理员不会观察到行为更改。 当此功能可用时，使用 IntuneMAMUPN 控制已注册设备上的数据传输行为的管理员应检查新设置，并根据需要更新其应用设置。
@@ -76,56 +104,17 @@ Windows LOB 应用的文件扩展名包括 .msi、appx、appxbundle、.msix 和 
 用户将能够使用预共享密钥 (PSK) 和 WPA/WPA2-个人安全协议对 Windows 10 的 Wi-Fi 配置的配置文件进行身份验证。
 目前，必须导入 Wi-Fi 配置文件，或创建自定义配置文件才能使用预共享密钥。 [Windows 10 的 Wi-Fi 设置](wi-fi-settings-windows.md)列出了当前设置。 
 
-### <a name="app-protection-policy-app-settings-for-web-data----2662995-eeready---"></a>适用于 Web 数据的应用保护策略 (APP) 设置 <!-- 2662995 eeready -->
+### <a name="app-protection-policy-app-settings-for-web-data----2662995---"></a>适用于 Web 数据的应用保护策略 (APP) 设置 <!-- 2662995 -->
 将更新 Android 和 iOS 设备上适用于 Web 内容的应用策略设置，以更好地处理 http 和 https Web 链接，以及通过 iOS 通用链接和 Android 应用链接进行的数据传输。  
 
 ### <a name="autopilot-device-sync-frequency-increasing-to-every-12-hours----2753673---"></a>Autopilot 设备同步频率增加到每隔 12 小时<!-- 2753673 -->
 Autopilot 设备将每 12 小时同步一次，而不是每 24 小时同步一次。
 
-### <a name="apply-autopilot-profile-to-enrolled-win-10-devices-not-already-registered-for-autopilot----1558983---"></a>将 Autopilot 配置文件应用到尚未注册 Autopilot 的已注册 Win 10 设备<!-- 1558983 -->
-可以将 Autopilot 配置文件应用到尚未注册 Autopilot 的已注册 Win 10 设备。 在 Autopilot 配置文件中，选择“将所有目标设备转换为 Autopilot”选项，以使用 Autopilot 部署服务自动注册非 Autopilot 设备。 等待 48 小时来处理注册。 取消注册设备并重置后，Autopilot 将对其进行配置。 
-
-### <a name="create-and-assign-multiple-enrollment-status--page-profiles-to-azure-ad-groups----2526564--"></a>创建多个注册状态页配置文件并将其分配给 Azure AD 组<!-- 2526564-->
-用户将能够创建多个注册状态页配置文件并将其分配给 Azure AAD 用户组。
-
 ### <a name="intune-landing-page-updates-and-node-rename---2867309---"></a>Intune 登录页更新和节点重命名<!--2867309 -->
 对 Intune 登录页的更新将包括新的和更改的监视磁贴和图表，以便更好地进行数据可视化处理。 “移动应用”节点将变为“客户端应用”。
 
-### <a name="increased-end-user-access-using-the-company-portal-app----772203---"></a>增加了最终用户使用公司门户应用的访问权限<!-- 772203 -->
-最终用户将能够从公司门户应用访问密钥帐户操作，例如密码重置和他们的 AAD 配置文件。
-
-### <a name="issue-scep-certificates-to-user-less-devices----1744554---"></a>向无用户设备颁发 SCEP 证书<!-- 1744554 -->
-目前证书的颁发对象是用户。 用户将能够向设备（包括无用户设备，如网亭）颁发 SCEP 证书（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”平台>“配置文件”的“SCEP 证书”）。 其他更新将包括：
-- SCEP 配置文件中的“使用者”属性现在是自定义文本框，可以包含新的变量。 
-- SCEP 配置文件中的“使用者可选名称(SAN)”属性现在是表格式，可以包含新的变量。 在表中，管理员可以添加属性并在自定义文本框中填写值。 SAN 将支持以下属性： 
-  - DNS
-  - 电子邮件地址
-  - UPN 可以在自定义值文本框中使用静态文本添加这些新变量。 例如，可以将 DNS 属性添加为 `DNS = {{AzureADDeviceId}}.domain.com`。
-  > [!NOTE]
-  > 在 SAN 的静态文本中无法使用大括号 ({ })、分号 (;) 和竖杠符号 (|)。 `Subject` 或 `Subject alternative name` 只接受大括号仅包含一个新设备证书变量的情况。 新的设备证书变量：  
-```
-"{{AAD_Device_ID}}",
-"{{Device_Serial}}",
-"{{Device_IMEI}}",
-"{{SerialNumber}}",
-"{{IMEINumber}}",
-"{{AzureADDeviceId}}",
-"{{WiFiMacAddress}}",
-"{{IMEI}}",
-"{{DeviceName}}",
-"{{FullyQualifiedDomainName}}",
-"{{MEID}}",
-```
-
-> [!NOTE]
->  - `{{FullyQualifiedDomainName}}` 仅适用于 Windows 和已加入域的设备。 
->  -  在使用者或 SAN 中为设备证书指定设备属性（如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员模仿。 
-
-[创建 SCEP 证书配置文件](certificates-scep-configure.md#create-a-scep-certificate-profile)列出了创建 SCEP 配置的配置文件时的当前变量。 
-
-适用于：Windows 10 及更高版本和 iOS，支持用于 Wi-fi
-
-
+### <a name="increased-end-user-access-using-the-company-portal-app----772203---"></a>借助公司门户应用提升了最终用户的访问权限<!-- 772203 -->
+最终用户将能够从公司门户应用访问密钥帐户操作，例如密码重置和他们的 AAD 配置文件。  
 
 <!-- 1808 start -->
 
@@ -143,13 +132,6 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 ### <a name="change-in-the-update-process-for-on-premises-connectors----2277554---"></a>本地连接器更新过程的更改 <!-- 2277554 -->
 将根据客户反馈更改本地连接器的更新方式。 初次安装本地连接器之后，会自动对其进行更新。 此更改首先应用于适用于 Microsoft Intune 的全新 PFX 证书连接器，随后会推广至其他类型的本地连接器。 
 
-### <a name="windows-10-and-later-kiosk-profile-improvements-in-the-azure-portal----2748224-eeready---"></a>Azure 门户中的 Windows 10 和更高版本的网亭配置文件改进<!-- 2748224 eeready -->
-Windows 10 网亭设备配置文件（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”平台>“配置文件类型”的“网亭预览”）将得到改进： 
-- 目前，用户可以在同一设备上创建多个网亭配置文件。 利用此更新，Intune 将支持每台设备只有一个网亭配置文件。 如果你仍需要在单台设备上创建多个网亭配置文件，可以使用自定义 URI。
--在“多应用网亭”配置文件中，可以在应用程序网格中对“开始菜单布局”选择应用程序磁贴大小和顺序。 如果需要更多自定义设置，可以继续上传 XML 文件。
-- 网亭浏览器设置移入“网亭”设置。 目前，“网亭 Web 浏览器”设置在 Azure 门户中具有其自己的类别。
-适用于：Windows 10 及更高版本
-
 <!-- 1807 start -->
 
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>针对设备注册管理员用户，改进了公司门户应用体验 <!-- 675800 -->
@@ -165,16 +147,10 @@ Windows 10 网亭设备配置文件（“设备配置” > “配置文件” > 
 ### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>针对即将过期的 VPP 令牌或公司门户许可证不足的警报 <!-- 2237572 -->
 如果在 DEP 注册期间使用批量采购计划 (VPP) 预先设置公司门户，则在 VPP 令牌即将过期以及公司门户的许可证不足的情况下，Intune 将发出警报。
 
-### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Windows Installer 的其他安全设置 <!-- 2282430 -->
-可允许用户控制应用安装。 如果启用，则允许因安全冲突而停止的安装继续进行。 当 Windows Installer 在系统上安装任何程序时，可指示它使用提升的权限。 此外，将能够对 Windows 信息保护 (WIP) 项目编制索引，并将有关这些项目的元数据存储在未加密的位置。 禁用策略后，将不会对受 WIP 保护的项编制索引，也不会在 Cortana 或文件资源管理器的结果中显示这些项。 默认情况下将禁用这些选项的功能。 
-
 <!-- 1806 start -->
 
 ### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>可通过 iOS 上的 APP 设置阻止第三方键盘 <!-- 1248481 -->
 在 iOS 设备上，Intune 管理员可以阻止使用第三方键盘在受策略保护的应用中访问组织数据。 当应用程序保护策略 (APP) 设置为阻止第三方键盘时，设备用户将在首次使用第三方键盘与公司数据交互时收到一条消息。 将阻止本地键盘以外的所有选项都，设备用户不会看到它们。 设备用户只会看到一次对话消息。 
-
-### <a name="office-365-pro-plus-language-packs----1833450---"></a>Office 365 Pro Plus 语言包 <!-- 1833450 -->
-作为 Intune 管理员，将能够为通过 Intune 管理的 Office 365 Pro Plus 应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）。 在 Azure 门户中，选择“Microsoft Intune” > “移动应用” > “应用” > “添加”。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。 在“应用套件设置”边栏选项卡中选择“语言”。
 
 <!-- 1805 start -->
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b92a5c7bcddbecc438aa5e72989ab2302440da7a
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562878"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863138"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
 
@@ -61,6 +61,7 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 | 内置的 iOS 应用  | 内置应用 | 选择“内置应用”作为“应用类型”，然后从提供的应用列表中选择内置应用。  |
 | 内置的 Android 应用  | 内置应用 | 选择“内置应用”作为“应用类型”，然后从提供的应用列表中选择内置应用。  |
 | Web 应用  | Web 应用  | 选择“Web 链接”作为应用类型，然后输入指向该 Web 应用的有效 URL。  |
+| Windows 应用 (Win32)  | LOB 应用  | 选择“Windows 应用 (Win32)”作为“应用类型”，选择“应用包文件”，然后选择扩展名为 .intunewin 的安装文件。  |
 
 可以在 Microsoft Intune 中添加应用，方法是通过选择“客户端应用” > “应用” > “添加”。 将显示“添加应用”窗格，可选择“应用类型”。 
 
@@ -194,3 +195,4 @@ Intune 会根据以下条件自动重新安装、更新或删除所需应用：
 - [适用于 Windows 10 的 Office 365 应用](apps-add-office365.md)
 - [适用于 macOS 的 Office 365 应用](apps-add-office365-macos.md)
 - [内置应用](apps-add-built-in.md)
+- [Win32 应用](apps-win32-app-management.md) 

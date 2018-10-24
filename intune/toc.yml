@@ -6,13 +6,6 @@ items:
     href: what-is-intune.md
   - name: 什么是 Intune for Education？
     href: introduction-intune-education.md
-  - name: Azure 中的 Intune 功能
-    href: ui-changes.md
-    items:
-    - name: 组更改
-      href: groups-get-started.md
-    - name: 旧版 Intune PC 客户端
-      href: intune-legacy-pc-client.md
   - name: 注册进行免费试用
     href: free-trial-sign-up.md
   - name: 新增功能
@@ -20,10 +13,6 @@ items:
     items:
     - name: 应用 UI 中的新增功能
       href: whats-new-app-ui.md
-    - name: 新增功能存档（Azure 门户）
-      href: whats-new-archive.md
-    - name: 新增功能存档（经典门户）
-      href: whats-new-archive-classic.md
   - name: 服务描述
     href: microsoft-intune-service-description.md
   - name: 已知问题
@@ -34,18 +23,20 @@ items:
 - name: 快速入门
   href: get-started-evaluation.md
   items:
-  - name: 导航 Azure 门户
-    href: get-started-azure.md
+  - name: 免费试用 Intune
+    href: free-trial-sign-up.md
   - name: 创建用户
-    href: get-started-users.md
+    href: quickstart-create-user.md
   - name: 创建组
-    href: get-started-groups.md
-  - name: 分配策略
-    href: get-started-policies.md
-  - name: 注册设备
-    href: get-started-enroll.md
-  - name: 分配应用
-    href: get-started-apps.md
+    href: quickstart-create-group.md
+  - name: 创建策略
+    href: quickstart-create-policy.md
+  - name: 设置自动注册
+    href: quickstart-setup-auto-enrollment.md
+  - name: 创建和分配自定义角色
+    href: quickstart-create-custom-role.md
+  - name: 创建电子邮件设备配置文件
+    href: quickstart-email-profile.md
 - name: 方案实现指南
   items:
   - name: 保护 Exchange Online
@@ -60,6 +51,10 @@ items:
     href: byod-technology-decisions.md
 - name: 概念
   items:
+  - name: 什么是设备管理？
+    href: what-is-device-management.md
+  - name: 导航 Azure 门户
+    href: get-started-azure.md
   - name: 体系结构概况
     href: high-level-architecture.md
   - name: 设备和应用生命周期
@@ -169,6 +164,8 @@ items:
         href: device-group-mapping.md
     - name: 设置 Windows 注册
       items:
+      - name: 注册方法的功能
+        href: enrollment-method-capab.md
       - name: Windows 注册
         href: windows-enroll.md
       - name: 批量注册
@@ -273,6 +270,8 @@ items:
           href: apps-add-office365-macos.md
       - name: 生成你的应用 (LOB)
         items:
+        - name: Win32 应用管理
+          href: apps-win32-app-management.md
         - name: Android LOB 应用
           href: lob-apps-android.md
         - name: iOS LOB 应用
@@ -322,6 +321,8 @@ items:
         href: company-portal-app.md
       - name: 配置 Managed Browser
         href: app-configuration-managed-browser.md
+      - name: 配置 Outlook
+        href: app-configuration-policies-outlook.md
     - name: 保护应用
       items:
       - name: 选择性地擦除应用
@@ -377,6 +378,8 @@ items:
       items:
       - name: Android
         href: device-restrictions-android.md
+      - name: Android Enterprise
+        href: device-restrictions-android-for-work.md
       - name: iOS
         href: device-restrictions-ios.md
       - name: macOS
@@ -391,8 +394,6 @@ items:
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
-      - name: Android 工作配置文件
-        href: device-restrictions-android-for-work.md
     - name: 配置终结点保护
       href: endpoint-protection-configure.md
       items:
@@ -491,7 +492,7 @@ items:
     items:
     - name: 创建 Android 策略
       href: compliance-policy-create-android.md
-    - name: 创建 Android 工作配置文件策略
+    - name: 创建 Android Enterprise 配置文件策略
       href: compliance-policy-create-android-for-work.md
     - name: 创建策略以启用 Google Play Protect
       href: compliance-policy-create-google-play-protect.md
@@ -703,7 +704,7 @@ items:
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android 工作配置文件
+      - name: Android Enterprise
         href: custom-settings-android-for-work.md
 - name: 开发人员指南
   items:
@@ -780,6 +781,8 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: 资源
   items:
+  - name: Microsoft Intune 文档指南
+    href: intune-documentation.md
   - name: 故障排除
     items:
     - name: 帮助用户排查问题
@@ -804,11 +807,25 @@ items:
       href: troubleshoot-conditional-access.md
     - name: Exchange Connector 疑难解答
       href: troubleshoot-exchange-connector.md
+  - name: 存档
+    items:
+    - name: 新增功能存档
+      items:
+      - name: 新增功能存档（Azure 门户）
+        href: whats-new-archive.md
+      - name: 新增功能存档（经典门户）
+        href: whats-new-archive-classic.md
+    - name: Azure 中的 Intune 经典功能
+      href: ui-changes.md
+    - name: Intune 经典组
+      href: groups-get-started.md
+    - name: 旧版 Intune PC 客户端
+      href: intune-legacy-pc-client.md
   - name: 词汇表
     href: intune-glossary.md
-ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821110"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828051"

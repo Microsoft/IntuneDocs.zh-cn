@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf927eff77b6a97e4c763ec0d75c7e44e4c6840
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799569"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102032"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>为受管理的 Android 设备添加应用配置策略
 
@@ -29,7 +29,9 @@ ms.locfileid: "48799569"
 使用 Microsoft Intune 中的应用配置策略，可为 Android 工作配置文件应用提供设置。 应用开发人员必须公开 Android 托管应用配置设置，以便指定该应用的配置设置。 将应用配置策略分配给想要应用设置的用户组。  只要应用检测到策略设置（通常在其首次运行时），即会使用它们。
 
 > [!Note]  
-> 并非所有应用都支持应用配置。 请咨询应用开发人员，确定他们构建的应用是否支持应用配置策略。
+> 并非所有应用都支持应用配置。 请咨询应用开发人员，确定他们构建的应用是否支持应用配置策略。<p></p>
+> 作为 Microsoft Intune 管理员，可控制将哪些用户帐户添加到托管设备上的 Microsoft Office 应用程序。 可以将访问权限限制为仅允许的组织用户帐户，并阻止已注册设备上的个人帐户。 支持性应用程序将处理应用配置并删除和阻止未经批准的帐户。<p></p>
+> 对于 Microsoft Word、Microsoft Excel、Microsoft PowerPoint，必须使用 Android 16.0.9327.1000 及更高版本。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
@@ -69,6 +71,16 @@ ms.locfileid: "48799569"
 - 用户 ID -例如 3ec2c00f-b125-4519-acf0-302ac3761822
 - 用户名称 - 例如 John Doe
 
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>仅允许在多身份应用中配置组织帐户 
+
+对于 Android 设备，请使用以下键/值对：
+
+| **Key** | com.microsoft.intune.mam.AllowedAccountUPNs |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **值** | <ul><li>一个或多个 <code>;</code> 分隔的 UPN。</li><li>仅允许此键定义的托管用户帐户。</li><li> 对于已注册 Intune 的设备，<code>{{userprincipalname}}</code> 令牌可用于表示已注册的用户帐户。</li></ul> |
+
+   > [!NOTE]
+   > 当仅允许多身份配置的组织帐户时，必须使用 Outlook for Android 2.2.222 或更高版本。 
 
 ## <a name="enter-the-json-editor"></a>输入 JSON 编辑器
 

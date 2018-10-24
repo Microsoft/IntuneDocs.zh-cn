@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fd58fae2f48791e8c63b9391a825838040b1202f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150318"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863104"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>从公司门户中删除设备
 
@@ -30,18 +30,19 @@ ms.locfileid: "43150318"
 
 删除设备：
 
-1. 在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上，点击“菜单”按钮![菜单按钮的小图像，3 个水平条平行叠放。](/Intune/whats-new/media/CP_hamburger_menu.png)，然后选择“我的设备”。
+1. 在[公司门户网站](https://portal.manage.microsoft.com)，选择“菜单”按钮 >“设备”。  
 
-   ![公司门户网站的图像，屏幕左侧有展开的侧菜单，其中包括“主页”、“所有应用”、“我的设备”、“支持人员”和“注销”按钮。](/media/iwp-expanded-sidebar.png)
+2. 选择要删除的设备。  
 
-2. 在“我的设备”页上，选择想要删除的设备名称。
+    ![“设备”页面的屏幕截图，其中 2 个磁贴用于显示无法识别的、以一般方式命名的设备。 灰色横幅位于设备的正下方，提示用户识别他们正在使用的设备或添加新的设备。](./media/rename-reset-device-step2-1808.png) 
 
-    ![“我的设备”页的屏幕截图，横幅上方显示一些未识别的设备，提示注册未列出的设备或识别未识别的设备。](./media/macOS_enroll_002_tap_here_banner.png)
+3. 选择“删除”。 如果页面顶部未显示“删除”选项，请选择“更多 (…)” > “删除”。  
 
-3. 设备将在弹出窗口中打开。 点击“删除”按钮。
+   ![公司门户网站上已选设备的设备详细信息页，其顶部具有显示“重命名”、“删除”、“重置设备”、“重置密码”和“远程锁定”的链接列表。 ](./media/rename-reset-device-1808.png)  
+  
 
-   ![公司门户网站上已选设备的所有选项，包括重命名、删除、重置设备、重置密码和远程锁定。 ](./media/iwp-screen-with-all-options.png)
+    ![“更多”图标的放大视图，用红色箭头突出显示。](./media/rename-reset-device-step3-more-1808.png)   
 
-4. 阅读警告消息，然后点击“删除”以从公司门户中删除设备。
+4. 系统会显示一条消息，警告你即将删除设备。 选择“删除”，确认该操作。  
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

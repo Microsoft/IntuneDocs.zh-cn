@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
-ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
+ms.openlocfilehash: b707fcae4af332b13d10e343a84ace801c88c2fd
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46466772"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866416"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -207,7 +207,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 ### <a name="if-your-app-does-not-use-adal"></a>应用不使用 ADAL 的情况
 
-如果应用不使用 ADAL，Intune App SDK 会为 ADAL 参数提供默认值，并处理针对 Azure AD 的身份验证。 无需指定上面列出的 ADAL 设置的任何值。
+如上所述，Intune App SDK 使用 [Azure Active Directory 身份验证库](https://github.com/AzureAD/azure-activedirectory-library-for-objc) 进行身份验证和条件启动。 它还依赖于 ADAL 以注册带有 MAM 服务的用户标识，用于不含设备注册方案的管理。 如果应用不使用 ADAL 作为其身份验证机制，Intune App SDK 将为 ADAL 参数提供默认值，并对 Azure AD 进行身份验证。 无需指定上面列出的 ADAL 设置的任何值。 应用所使用的任何身份验证机制（如果存在）都将显示在 ADAL 提示的顶部。 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>配置 Intune App SDK 设置
 

@@ -2,10 +2,10 @@
 title: 在 Microsoft Intune 中创建 Android 工作配置文件符合性策略 - Azure | Microsoft Docs
 description: 创建或配置适用于 Android 工作配置文件设备的 Microsoft Intune 设备符合性策略。 选择允许使用已越狱设备、设置可接受的威胁级别、查看 Google Play、输入最低和最高操作系统版本、选择密码要求并允许旁加载应用程序。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905081"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828153"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>在 Intune 中添加适用于 Android 工作配置文件设备的设备符合性策略
 
@@ -113,7 +113,11 @@ ms.locfileid: "37905081"
 - **阻止来自未知源的应用**：无需配置此设置，因为 Android 工作配置文件设备始终限制来自未知源的安装。
 - 公司门户应用运行时完整性：检查公司门户应用是否安装了默认运行时环境、是否已正确签名、是否不处于调试模式以及是否从已知源安装。
 - **在设备上阻止进行 USB 调试**：无需配置此设置，因为已在 Android 工作配置文件设备上禁用 USB 调试。
-- 最低安全修补程序级别：选择设备可具有的最旧的安全修补程序级别。 不满足此修补程序级别的设备将不符合要求。 输入的日期格式必须为 `YYYY-MM-DD`。
+- 最低安全修补程序级别：选择设备可具有的最旧的安全修补程序级别。 不满足此修补程序级别的设备将不符合要求。 日期必须以“YYYY-MM-DD”格式输入。
+- **受限制的应用**：可通过将应用的程序包 ID 添加到策略中来限制应用。 如果某一设备已安装该应用，此设备将被标记为非符合性设备。 
+   - **应用名称**：输入一个用户友好名称，帮助识别捆绑 ID。 
+   - **应用程序包 ID**：输入应用提供程序的唯一程序包标识符。 对于 Android，应用程序包 ID 取自应用的商店 URL。 例如，如果商店中应用的 URL 是 https://play.google.com/store/apps/details?id=com.Slack，则应用程序包 ID = com.Slack。
+
 
 ## <a name="assign-user-groups"></a>分配用户组
 

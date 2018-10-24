@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313490"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101947"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>在 Intune 中配置 iOS 更新策略
 
@@ -23,7 +23,7 @@ ms.locfileid: "43313490"
 
 设备大约每 8 小时查看一次 Intune。 若有可用更新，并且不在限制时间内，则设备会下载并安装最新的 OS 更新。 更新设备无需任何用户交互。 策略不会阻止用户手动更新 OS。
 
-此功能支持运行 iOS 10.3 及更高版本的设备。
+此功能支持运行 iOS 10.3 及更高版本的设备。 延迟设置适用于 iOS 11.3 及更高版本。
 
 ## <a name="configure-the-policy"></a>配置策略
 1. 登录到 [Azure 门户](https://portal.azure.com)。

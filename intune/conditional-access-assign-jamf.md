@@ -3,8 +3,8 @@ title: Jamf 设备的设备符合性策略
 titlesuffix: Microsoft Intune
 description: 通过将 Microsoft Intune 符合性策略与 Azure Active Directory 条件访问相结合，可确保由 Jamf 管理的设备的安全。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
+ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34482329"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812815"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上强制实现符合性
 
@@ -54,7 +54,7 @@ ms.locfileid: "34482329"
 7. 单击“添加”以选择公司门户应用中的程序包。
 8. 选择“操作”弹出菜单中的“安装”。
 9. 配置程序包的设置。
-10. 单击“作用域”选项卡以指定应在哪些计算机上安装公司门户应用。 单击“保存” 。 下次，当计算机上出现所选的触发器并符合“常规”负载中的条件时，策略将运行作用域内的设备。
+10. 单击“作用域”选项卡以指定应在哪些计算机上安装公司门户应用。 单击 **“保存”**。 下次，当计算机上出现所选的触发器并符合“常规”负载中的条件时，策略将运行作用域内的设备。
 
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>在 Jamf Pro 中创建策略，让用户在 Azure Active Directory 中注册其设备
 
@@ -69,13 +69,13 @@ ms.locfileid: "34482329"
 1. 在 Jamf Pro 中，导航到“计算机” > “策略”，然后为设备注册创建新策略。
 2. 配置“Microsoft Intune 集成”有效负载，其中包括触发器和执行频率。
 3. 单击“作用域”选项卡，并将策略的作用域设置为所有目标设备。
-4. 单击“自助服务”选项卡以将策略应用到 Jamf 自助服务中。 将策略添加到“设备符合性”类别中。 单击“保存” 。
+4. 单击“自助服务”选项卡以将策略应用到 Jamf 自助服务中。 将策略添加到“设备符合性”类别中。 单击 **“保存”**。
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>从 Intune 删除 Jamf 托管设备
 
-无法从 Intune 删除 Jamf 托管设备。 必须从 Jamf Pro 删除 Jamf 托管设备，这样设备才会从 Intune 删除。 
+通过在“所有设备”视图中选择“删除”，可从 Intune 控制台中删除 Jamf 托管设备。 通过选择多个设备并单击“删除”，可启用批量设备删除。
 
-参阅 Jamf Pro 文档，了解如何[删除 Jamf 托管设备](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)。还可通过 [Jamf 支持](https://www.jamf.com/support/)提交支持票证，获取更多帮助。 
+获取有关如何[在 Jamf Pro 文档中删除 Jamf 托管设备](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的信息。还可通过 [Jamf 支持](https://www.jamf.com/support/)提交支持票证，获取更多帮助。 
 
 ## <a name="next-steps"></a>后续步骤
 

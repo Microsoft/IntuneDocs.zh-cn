@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313785"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102117"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中启用具有条件访问的 Windows Defender ATP
 
@@ -89,6 +89,10 @@ Windows Defender 包括载入配置包，该包可与 [Windows Defender ATP 服�
 6. 配置设置：
 
   - **Windows Defender ATP 客户端配置包类型**：选择“载入”，将配置包添加到配置文件。 选择“卸载”，从配置文件中删除配置包。
+  
+    > [!NOTE] 
+    > 若已正确建立与 Windows Defender ATP 的连接，Intune 将自动载入配置文件。
+  
   - **所有文件的示例共享**：选择“启用”可允许收集示例，并与 Windows Defender ATP 共享。 例如，如果看到可疑文件，可以将其提交至 Windows Defender ATP 进行深入分析。 选择“未配置”不会向 Windows Defender ATP 共享任何事例。
   - **加快遥测报告频率**：为处于高风险的设备启用此设置，让它可以向 Windows Defender ATP 服务更频繁地报告遥测。
 

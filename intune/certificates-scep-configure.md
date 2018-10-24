@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 48bf2e6daf05dba6baebbd49be45a17a5a56e820
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028726"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828289"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文说明如何配置基础结构，然后使用 Intune 创建和分配简单证书注册协议 (SCEP) 证书配置文件。
 
@@ -140,7 +138,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
    - **net start certsvc**
 
 2. 在发证 CA 上，使用证书颁发机构管理单元发布证书模板。
-   选择“证书模板”节点，单击“操作” > “新建” > “要颁发的证书模板”，然后选择在步骤 2 中创建的模板。
+   选择“证书模板”节点，单击“操作” > “新建” > “要颁发的证书模板”，然后选择你在步骤 2 中创建的模板。
 
 3. 通过查看“证书模板”文件夹下已发布的模板来对它进行验证。
 
@@ -350,6 +348,113 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 5. 从“配置文件”类型下拉列表中，选择“SCEP 证书”。
 6. 在“SCEP 证书”窗格上，配置下列设置：
 
+   - **证书类型**：为用户证书选择“用户”。 为无用户设备（例如网亭）选择“设备”。 “设备”证书可用于以下平台：  
+     - iOS
+     - Windows 8.1 及更高版本
+     - Windows 10 及更高版本
+
+   - **使用者名称格式**：选择 Intune 在证书请求中自动创建使用者名称的方法。 如果选择“用户”证书类型或“设备”证书类型，选项将发生更改。 
+
+        **“用户”证书类型**  
+
+        可以在使用者名称中包括用户的电子邮件地址。 选择：
+
+        - 未配置
+        - 公用名称
+        - 包含电子邮件地址的公用名称
+        - 作为电子邮件地址的公用名称
+        - IMEI（国际移动设备标识）
+        - **序列号**
+        - **自定义**：选中此选项时，也会显示“自定义”文本框。 使用此字段输入一个自定义使用者名称格式，包括变量。 自定义格式支持两个变量：“公用名(CN)”和“电子邮件(E)”。 可将“公用名(CN)”设置为以下任何变量：
+
+            - **CN={{UserName}}**：用户的用户主体名称，如 janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}**：在 Azure Active Directory (AD) 中注册设备时分配的 ID。 此 ID 通常用于向 Azure AD 进行身份验证。
+            - **CN={{SERIALNUMBER}}**：制造商通常用于标识设备的唯一序列号 (SN)
+            - **CN={{IMEINumber}}**：用于标识移动电话的国际移动设备标识 (IMEI)
+            - **CN={{OnPrem_Distinguished_Name}}**：用逗号分隔的一系列相对可分辨名称，如 `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。
+
+            - **CN={{onPremisesSamAccountName}}**：管理员可以使用 Azure AD 连接到名为 `onPremisesSamAccountName` 的属性，将 Active Directory 中的 samAccountName 属性同步到 Azure AD。 Intune 可以将该变量替换为 SCEP 证书主题中的证书颁发请求的一部分。  samAccountName 属性是用于从早期版本的 Windows（Windows 2000 之前）支持客户端和服务器的用户登录名。 用户登录名称格式为：`DomainName\testUser` 或仅 `testUser`。
+
+                要使用 `{{onPremisesSamAccountName}}` 变量，请务必使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 将 `onPremisesSamAccountName` 用户属性同步到 Azure AD。
+
+            通过使用这些变量的一个或多个与静态字符串的组合，可以创建一个自定义使用者名称格式，例如：  
+
+            CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+
+            本示例创建了使用者名称格式，其中除了使用 CN 和 E 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)介绍此函数及其支持的字符串。
+
+        **“设备”证书类型**  
+
+        使用“设备”证书类型时，还可以对值使用以下设备证书变量：  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        可以在自定义值文本框中使用静态文本添加这些变量。 例如，可以将 DNS 属性添加为 `DNS = {{AzureADDeviceId}}.domain.com`。
+
+        > [!IMPORTANT]
+        >  - 在 SAN 的静态文本中，使用大括号{ }、竖杠符号 | 和分号 ; 将不起作用。 
+        >  - 使用设备证书变量时，将变量括在大括号 { } 内。
+        >  - `{{FullyQualifiedDomainName}}` 仅适用于 Windows 和已加入域的设备。 
+        >  -  在使用者或 SAN 中为设备证书使用设备属性（例如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员仿造。
+
+
+   - **使用者可选名称**：输入 Intune 在证书请求中自动创建使用者可选名称 (SAN) 的值的方法。 如果选择“用户”证书类型或“设备”证书类型，选项将发生更改。 
+
+        **“用户”证书类型**  
+
+        以下属性可用：
+
+        - 电子邮件地址
+        - 用户主体名称 (UPN)
+
+            例如，如果选择用户证书类型，则可以在使用者可选名称中包括用户主体名称 (UPN)。 如果使用客户端证书向“网络策略服务器”进行身份验证，则要将使用者可选名称设置为 UPN。 
+
+        **“设备”证书类型**  
+
+        可自定义的一个表格格式文本框。 以下属性可用：
+
+        - DNS
+        - 电子邮件地址
+        - 用户主体名称 (UPN)
+
+        凭借“设备”证书类型，可以对值使用以下设备证书变量：  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        可以在自定义值文本框中使用静态文本添加这些变量。 例如，可以将 DNS 属性添加为 `DNS = {{AzureADDeviceId}}.domain.com`。
+
+        > [!IMPORTANT]
+        >  - 在 SAN 的静态文本中，使用大括号{ }、竖杠符号 | 和分号 ; 将不起作用。 
+        >  - 使用设备证书变量时，将变量括在大括号 { } 内。
+        >  - `{{FullyQualifiedDomainName}}` 仅适用于 Windows 和已加入域的设备。 
+        >  -  在使用者或 SAN 中为设备证书使用设备属性（例如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员仿造。
+
    - **证书有效期**：如果对发证 CA 运行允许自定义有效期的 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 命令，则可以输入证书过期之前的剩余时间量。<br>可以在证书模板中输入低于（但不能高于）有效期的值。 例如，如果证书模板中的证书有效期为 2 年，则输入值可以为 1 年，但不能为 5 年。 该值还必须小于发证 CA 证书的剩余有效期。 
    - **密钥存储提供程序 (KSP)** (Windows Phone 8.1、Windows 8.1、Windows 10)：输入存储证书密钥的位置。 可以选择下列值之一：
      - 注册到受信任的平台模块(TPM) KSP (若有); 否则，注册到软件 KSP
@@ -357,40 +462,17 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
      - 注册到 Passport，否则失败(Windows 10 及更高版本)
      - **注册到软件 KSP**
 
-   - **使用者名称格式**：从列表中，选择 Intune 在证书请求中自动创建使用者名称的方法。 如果证书用于用户，还可包含使用者名称中的用户电子邮件地址。 选择：
-     - 未配置
-     - 公用名称
-     - 包含电子邮件地址的公用名称
-     - 作为电子邮件地址的公用名称
-     - IMEI（国际移动设备标识）
-     - **序列号**
-     - **自定义**：选择此选项后，将会显示另一个下拉字段。 使用此字段输入自定义使用者名称格式。 自定义格式支持两个变量：“公用名(CN)”和“电子邮件(E)”。 可将“公用名(CN)”设置为以下任何变量：
-       - **CN={{UserName}}**：用户的用户主体名称，如 janedoe@contoso.com
-       - **CN={{AAD_Device_ID}}**：在 Azure Active Directory (AD) 中注册设备时分配的 ID。 此 ID 通常用于向 Azure AD 进行身份验证。
-       - **CN={{SERIALNUMBER}}**：制造商通常用于标识设备的唯一序列号 (SN)
-       - **CN={{IMEINumber}}**：用于标识移动电话的国际移动设备标识 (IMEI)
-       - **CN={{OnPrem_Distinguished_Name}}**：用逗号分隔的一系列相对可分辨名称，如 `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。
-
-       - **CN={{onPremisesSamAccountName}}**：管理员可以使用 Azure AD 连接到名为 `onPremisesSamAccountName` 的属性，将 Active Directory 中的 samAccountName 属性同步到 Azure AD。 Intune 可以将该变量替换为 SCEP 证书主题中的证书颁发请求的一部分。  samAccountName 属性是用于从早期版本的 Windows（Windows 2000 之前）支持客户端和服务器的用户登录名。 用户登录名称格式为：`DomainName\testUser` 或仅 `testUser`。
-
-          要使用 `{{onPremisesSamAccountName}}` 变量，请务必使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 将 `onPremisesSamAccountName` 用户属性同步到 Azure AD。
-
-       通过将一个或多个以上变量与静态字符串组合使用，可以创建自定义使用者名称格式，例如：CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US。 <br/> 本示例创建了使用者名称格式，其中除了使用 CN 和 E 变量外，还使用了组织单元、组织、位置、省/直辖市/自治区和国家/地区值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)介绍此函数及其支持的字符串。
-
-- **使用者可选名称**：输入 Intune 在证书请求中自动创建使用者可选名称 (SAN) 的值的方法。 例如，如果选择用户证书类型，则可以在使用者可选名称中包括用户主体名称 (UPN)。 如果客户端证书用于向网络策略服务器进行验证，则必须将使用者可选名称设置为 UPN。
-- **密钥用法**：输入证书的密钥用法选项。 选项包括：
-  - **密钥加密**：仅在密钥加密时允许密钥交换
-  - **数字签名**：仅在数字签名帮助保护密钥时允许密钥交换
-- **密钥大小（位数）**：选择密钥中包含的位数
-- **哈希算法** (Android、Windows Phone 8.1、Windows 8.1、Windows 10)：选择要与此证书一起使用的可用哈希算法类型之一。 选择连接设备支持的最高级别安全性。
-- **根证书**：选择之前配置并分配到用户或设备的根 CA 证书配置文件。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。
-- **扩展密钥用法**：选择“添加”为证书的预期目的添加值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证。 但，你可以根据需要添加任何其他密钥用法。
-- **注册设置**
-  - **续订阈值(%)**：输入设备请求证书续订之前剩余的证书有效期限的百分比。
-  - **SCEP 服务器 URL**：为通过 SCEP 颁发证书的 NDES 服务器输入 1 个或多个 URL。
-  - 选择“确定”，然后选择“创建”来创建配置文件。
+   - **密钥用法**：输入证书的密钥用法选项。 选项包括：
+     - **密钥加密**：仅在密钥加密时允许密钥交换
+     - **数字签名**：仅在数字签名帮助保护密钥时允许密钥交换
+   - **密钥大小（位数）**：选择密钥中包含的位数
+   - **哈希算法** (Android、Windows Phone 8.1、Windows 8.1、Windows 10)：选择要与此证书一起使用的可用哈希算法类型之一。 选择连接设备支持的最高级别安全性。
+   - **根证书**：选择之前配置并分配到用户或设备的根 CA 证书配置文件。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。
+   - **扩展密钥用法**：选择“添加”为证书的预期目的添加值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证。 但，你可以根据需要添加任何其他密钥用法。
+   - **注册设置**
+     - **续订阈值(%)**：输入设备请求证书续订之前剩余的证书有效期限的百分比。
+     - **SCEP 服务器 URL**：为通过 SCEP 颁发证书的 NDES 服务器输入 1 个或多个 URL。
+     - 选择“确定”，然后选择“创建”来创建配置文件。
 
 配置文件随即创建并显示在“配置文件列表”窗格中。
 

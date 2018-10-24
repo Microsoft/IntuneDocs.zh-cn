@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd388131445715a4037cc0480c194d338212dbb0
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329967"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828238"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -34,7 +34,7 @@ ms.locfileid: "43329967"
 自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“客户端应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。  
 
 > [!Note]       
-> 当用户启动获取问题的帮助的工作流时，Windows 10 公司门户现在将直接向 Microsoft 发送应用日志。 这样一来，可以更为轻松地排除和解决向 Microsoft 提出的问题。  
+> 如果使用的是 Azure 政府，则会向最终用户提供应用日志，由其决定当启动启动获取问题帮助的进程时如何进行共享。 但是，如果使用的不是 Azure 政府，那么当用户启动获取问题帮助的进程时，Windows 10 公司门户将直接向 Microsoft 发送应用日志。 向 Microsoft 发送应用日志可更轻松地排除故障和解决问题。 
 
 ## <a name="company-information-and-privacy-statement"></a>公司信息和隐私声明        
 公司名称显示为公司门户的标题。 当用户单击隐私链接时，将显示隐私声明。

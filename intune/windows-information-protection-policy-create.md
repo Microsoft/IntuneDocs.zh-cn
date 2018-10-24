@@ -3,10 +3,10 @@ title: 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 titlesuffix: Microsoft Intune
 description: 通过 Microsoft Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347301"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799619"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -46,19 +46,27 @@ ms.locfileid: "43347301"
 
 ## <a name="prerequisites"></a>必备条件
 
-必须先配置 MAM 提供程序，然后才可以创建 WIP 应用保护策略。 详细了解[如何通过 Intune 配置 MAM 提供程序](app-protection-policies-configure-windows-10.md)。
+必须先配置 MAM 提供程序，然后才可以创建 WIP 应用保护策略。 详细了解[如何通过 Intune 配置 MAM 提供程序](app-protection-policies-configure-windows-10.md)。  
+
+> [!IMPORTANT]
+> WIP 不支持多标识，一次只能存在一个托管标识。
 
 此外，还需要具有以下许可证和更新：
 
 -   [Azure AD 高级版](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)许可证
 -   [Windows 创意者更新](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP 不支持多标识，一次只能存在一个托管标识。
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>添加 WIP 应用保护策略
 
 设置组织中的 Intune 后，可以创建特定于 WIP 的策略。
+
+> [!TIP]  
+> 有关为 Intune 创建 WIP 策略的相关信息，包括可用设置及其配置方式，请参阅 Windows 安全文档库中的[使用 Microsoft Intune 的 Azure 门户创建具有 MAM 的 Windows 信息保护 (WIP) 策略](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)。 
+
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。
@@ -123,7 +131,7 @@ WIP Learning 是一个报表，用于监视已启用 WIP 和 WIP 未知的应用
 ### <a name="what-are-the-protection-modes"></a>什么是保护模式？
 
 #### <a name="block"></a>阻止
-WIP 将查找不正确的数据共享做法并阻止用户完成操作。 这包括在不受公司保护的所有应用中共享信息，以及在组织外部的其他人员和设备之间共享公司数据。
+WIP 将查找不正确的数据共享做法并阻止用户完成操作。 阻止的操作包括在不受公司保护的应用中共享信息，以及在组织外部的其他人员和设备之间共享公司数据。
 
 #### <a name="allow-overrides"></a>允许覆盖
 WIP 查找不正确的数据共享操作，在用户执行的操作被认为存在潜在危险时，对用户发出警告。 但是，用户可以通过此模式覆盖该策略并共享数据，并将操作记录到审核日志中。

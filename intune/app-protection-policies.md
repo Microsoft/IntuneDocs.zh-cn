@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 368c804fa044dc303b22e2ae9cf8d273d6cd051a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 3478308e8e2c219631d0df864ca2add6cc57cda2
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231808"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075857"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -127,7 +127,10 @@ Intune 应用保护策略是一种针对用户身份的策略，因此用户的�
 
 ![已选中“面向所有应用类型”的“添加策略”边栏选项卡的屏幕截图](./media/app-protection-policies-target-all.png)
 
-对于视为“已托管”的 iOS 应用，需要为每个应用部署 IntuneMAMUPN 配置策略设置。 有关详细信息，请参阅[如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
+对于 iOS，需要额外的应用配置设置才能将应用设置定位到 Intune 设备上的应用：
+- 必须为所有 MDM 托管应用程序配置“IntuneMAMUPN”。  有关详细信息，请参阅[如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
+- 必须为所有第三方和 LOB MDM 托管应用程序配置“IntuneMAMDeviceID”。 应将“IntuneMAMDeviceID”配置为设备 ID 令牌。 例如，`key=IntuneMAMDeviceID, value={{deviceID}}` 。 有关详细信息，请参阅[为受管理 iOS 设备添加应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-use-ios)。
+- 若仅配置了“IntuneMAMDeviceID”，则 Intune 应用会将设备视为非托管设备。  
 
 > [!NOTE]
 > 有关根据设备管理状态分配应用保护策略的 iOS 具体支持信息，请参阅[根据管理状态应用 MAM 保护策略](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-)。

@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: af1804f657041055467e302c4dc8913e1035749d
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403589"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799653"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -138,6 +138,7 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
     ![使用 VPP 安装公司门户的屏幕截图。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. 如果为“使用 VPP 安装公司门户”选择了令牌，则可在设置助理完成后，立刻选择将设备锁定为单应用模式（具体而言，即公司门户应用）。 针对“在身份验证前以单应用模式运行公司门户”，选择为“是”以设置此选项。 要使用该设备，用户必须先使用公司门户登录以进行身份验证。
+    此功能在 iOS 11.3.1 及更高版本中运行最佳。 使用旧版本可能需要很长时间才能完成安装。
 
 8. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
 

@@ -1,11 +1,11 @@
 ---
 title: 在 Intune 中注册 Windows 10 设备 | Microsoft Docs
-description: 将 Windows 10 1607 或更高版本设备注册到 Intune
+description: 将 Windows 10 版本 1607 或更高版本设备注册到 Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/22/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fee90ed055a0d132a4f6304d7b33f67005caf0fc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 21332f5441d6b2318a8739feb0457021cb7e442b
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017336"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260209"
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>在 Intune 中注册 Windows 10 设备
 

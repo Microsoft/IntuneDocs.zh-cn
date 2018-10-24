@@ -5,7 +5,7 @@ keywords: Mac OS X、macOS、OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147711"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260243"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -80,8 +80,17 @@ ms.locfileid: "43147711"
 
 9. 公司门户应用中显示的第一个屏幕将提示你登录。 使用用于登录到公司门户网站的同一工作或学校帐户。
 
-10. 公司门户确认帐户信息后会显示“设备注册”和“设备符合性”状态。 黄色三角形突出显示保护学校或工作 macOS 设备需采取的操作。 单击“开始”可开始注册。 了解注册设备时[组织可以看到的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+10. 公司门户确认帐户信息后会显示“设备注册”和“设备符合性”状态。 黄色三角形突出显示保护学校或工作 macOS 设备需采取的操作。 单击“开始”可开始注册。 
 
-11. 系统可能会提示提供计算机的登录信息。 在管理中注册设备可能需要几分钟时间。 在此期间，可在设备上执行其他操作。 完成公司访问设置后，将收到一条消息，通知操作已完成。  
+11. 如果系统出现提示，请键入计算机的登录信息。  
+
+在管理中注册设备可能需要几分钟时间。 在此期间，可在设备上执行其他操作。 完成公司访问设置后，将收到一条消息，通知操作已完成。  
+
+## <a name="unverified-profiles"></a>未验证的配置文件
+查看已安装的 macOS 设备移动设备管理 (MDM) 配置文件时，某些配置文件可能会显示为“未验证”状态。 只要“管理配置文件”显示为“已验证”状态，便无需担心。  
+
+管理配置文件定义了 MDM 通道连接。 只要已验证管理配置文件，那么通过该通道传递给计算机的任何其他配置文件都会继承管理配置文件的安全特性。
+
+此外，由于这些其他配置文件不需要单独验证，因此它们可以更快地生成并传递到设备。 
 
 仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。  

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 61e2ec9def6ecba265521cf801322d592dd4dac9
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347426"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866348"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 部署 Windows 10 应用 
 
 Microsoft Intune 当前支持 Windows 10 设备上的各种应用类型和部署方案。 向 Intune 添加应用后，可将应用分配给用户和设备。 以下信息提供了与支持的 Windows 10 方案相关的详细信息。 此外，以下信息还提供了在将应用部署到 Windows 时要注意的关键详细信息。 
 
-业务线 (LOB) 应用和适用于企业的 Microsoft Store 应用是 Windows 10 设备支持的应用类型。
+业务线 (LOB) 应用和适用于企业的 Microsoft Store 应用是 Windows 10 设备支持的应用类型。 Windows 应用的文件扩展名包括 .msi、.appx、.appxbundle、.msix 和 .msixbundle。  
 
 > [!Note]
 > 在设备上下文中部署应用所需的最低版本的 Windows 10 更新是 [2018 年 5 月 23 日 - KB4100403（OS 内部版本 17134.81）](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403)。
@@ -46,9 +46,6 @@ Windows 10 LOB 应用已签名并上传到 Intune 管理控制台，并且可以
     - 现代业务线应用和适用于企业的 Microsoft Store 应用（在线和离线）可以部署在用户上下文中，并且支持“必需”和“可用”意图。
 - 设备上下文：在设备上下文中部署应用时，Intune 会将托管应用直接安装到设备中。
     - 只有现代业务线应用和在线许可的适用于企业的 Microsoft Store 应用才能在设备上下文中部署，并且仅支持“必需”意图。
-
-> [!Note]
-> Windows 10 设备尚不支持在设备上下文中通过 MDM 部署 MSI。
 
 在设备上下文中部署应用时，只有针对支持设备上下文的设备，安装才会成功。 此外，在设备上下文中部署还支持以下条件：
 - 如果应用部署在设备上下文中并针对用户，则安装会失败，并在管理控制台中显示以下状态和错误：

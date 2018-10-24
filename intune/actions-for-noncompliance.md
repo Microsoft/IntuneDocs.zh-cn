@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c8bc523f2796f8af7cb4801cdb13a60b7e2eb5d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fae8faf54c7b41bb547912853285cf09ec9c46d5
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905727"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828102"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>为不符合的设备自动发送电子邮件和添加操作 - Intune
 
@@ -26,13 +26,21 @@ ms.locfileid: "37905727"
 ## <a name="overview"></a>概述
 默认情况下，当 Intune 检测到不符合的设备时，会立即将设备标记为不符合。 然后 Azure Active Directory (AD) [条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)阻止设备。 设备不符合时，还可使用“针对非符合性的操作”灵活决定要执行的操作。 例如，不立即阻止设备，并给予用户宽限期以符合要求。
 
-有两种类型的操作：
+有多种类型的操作：
 
-- **通过电子邮件通知最终用户**：可先自定义电子邮件通知，再将其发送给最终用户。 可自定义收件人、主题和邮件正文，包括自定义公司徽标和联系人信息。
+- **向最终用户发送电子邮件**：可先自定义电子邮件通知，再将其发送给最终用户。 可自定义收件人、主题和邮件正文，包括自定义公司徽标和联系人信息。
 
     此外，Intune 还在电子邮件通知中详细说明了不符合的设备情况。
 
+- **远程锁定非符合性设备**：对于不符合要求的设备，可以发出远程锁定操作。 然后提示用户输入 PIN 或密码以解锁设备。 [远程锁定](device-remote-lock.md)功能的详细信息。 
+
 - **将设备标记为不符合**：可在设备被标记为不符合之后创建计划（按天数计划）。 可配置立即采取的措施，也可给予用户宽限期以符合要求。
+
+本文介绍如何：
+
+- 创建消息通知模板
+- 针对非符合性创建操作（例如发送电子邮件或远程锁定设备）
+
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -44,48 +52,57 @@ ms.locfileid: "37905727"
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
-- 使用设备符合性策略来阻止设备使用公司资源时，必须设置 Azure AD 条件性访问。 相关指南，请参阅 [Azure Active Directory 中的条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。
-
-- 必须创建通知邮件模板。 如果要向用户发送电子邮件，可使用此模板创建针对非符合性的操作。
+- 使用设备符合性策略来阻止设备使用公司资源时，必须设置 Azure AD 条件性访问。 请参阅 [Azure Active Directory 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)或[通过 Intune 使用条件性访问的常见方式](conditional-access-intune-common-ways-use.md)以获取指南。
 
 ## <a name="create-a-notification-message-template"></a>创建通知邮件模板
 
-1. 使用 Intune 凭据登录 [Azure 门户](https://portal.azure.com)。 
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-3. 选择“设备符合性”，然后选择“通知”。 
-4. 选择“创建通知”，再输入以下信息：
+要向用户发送电子邮件，请创建通知消息模板。 设备不符合要求时，在模板中输入的详细信息将显示在发送给用户的电子邮件中。
 
-   - 名称
-   - 使用者
-   - Message
-   - 电子邮件标头 – 包括公司徽标
-   - 电子邮件页脚 – 包括公司名称
-   - 电子邮件页脚 – 包括联系人信息
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+2. 选择“设备符合性” > “通知”。
+3. 选择“创建通知”。 输入以下信息：
+
+   - **名称**
+   - **主题**
+   - **Message**
+   - **电子邮件标头 – 包括公司徽标**
+   - **电子邮件页脚 – 包括公司名称**
+   - **电子邮件页脚 – 包括联系人信息**
 
    ![Intune 中符合性通知邮件的示例](./media/actionsfornoncompliance-1.PNG)
 
-在完成信息添加后，选择“创建”。 通知邮件模板已就绪，可供使用。
+4. 在完成信息添加后，选择“创建”。 通知邮件模板已就绪，可供使用。
 
 > [!NOTE]
 > 你还可以编辑先前创建的“通知”模板。
 
 ## <a name="add-actions-for-noncompliance"></a>添加针对非符合性的操作
 
-默认情况下，Intune 自动创建针对非符合性的操作。 设备无法满足符合性策略的要求时，此操作将设备标记为不符合。 可自定义将设备标记为不符合的时长。 此操作不可撤消。
+创建设备符合性策略时，Intune 会自动为非符合性创建操作。 设备无法满足符合性策略的要求时，此操作将设备标记为不符合。 可自定义将设备标记为不符合的时长。 此操作不可撤消。
 
-可在新建符合性策略或更新现有符合性策略时添加操作。 
+还可以在创建符合性策略或更新现有策略时添加其他操作。 
 
-1. 在 [Azure 门户](https://portal.azure.com)中，打开 Microsoft Intune，然后选择“设备符合性”。
+1. 在 [Azure 门户](https://portal.azure.com)中，打开“Microsoft Intune” > “设备符合性”.
 2. 选择“策略”，选择一个策略，然后选择“属性”。 
 
-  尚没有策略？ 创建 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台策略。
+    尚没有策略？ 创建 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md) 或其他平台策略。
   
-  > [!NOTE]
-  > 此时，JAMF 设备和面向设备组的设备无法接收符合性操作。
+    > [!NOTE]
+    > 此时，JAMF 设备和面向设备组的设备无法接收符合性操作。
 
-3. 选择“针对非符合性的操作”，然后选择“添加”，输入操作参数。 可选择先前创建的消息模板，添加其他收件人，并更新宽限期计划。 可在计划中输入天数（0 到 365），然后可强制执行条件访问策略。 如果输入 0 天，则条件访问会立即阻止对公司资源的访问。
+3. 选择“针对非符合性的操作” > “添加”。
+4. 选择“操作”： 
 
-4. 完成后，选择“添加” > “确定”，保存所做更改。
+    - **向最终用户发送电子邮件**：当设备不符合要求时，选择给用户发送电子邮件。 此外： 
+    
+         - 选择此前创建的“消息模板”
+         - 通过选择组输入任何“其他收件人”
+    
+    - **远程锁定不符合设备**：设备不符合要求时，锁定该设备。 该操作会强制用户输入 PIN 或密码来解锁设备。 
+    
+    - **计划**：输入非符合性触发用户设备操作的宽限天数（0 - 365 天）。 在此宽限期之后，可以强制执行条件访问策略。 如果输入“0”天，则条件访问将立即生效。 例如，如果设备不符合要求，可以立即阻止其对公司资源的访问。
+
+5. 完成后，选择“添加” > “确定”，保存所做更改。
 
 ## <a name="next-steps"></a>后续步骤
-通过运行报表，监视设备符合性活动。 相关指南，请参见[如何使用 Intune 监视设备符合性](device-compliance-monitor.md)。
+[监控设备符合性活动](device-compliance-monitor.md)。

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5eba9f6f920b4bf868e26b47e4043babe62a8945
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148025"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828034"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>解决 SandBlast Mobile Protect 发现的威胁
 
@@ -37,7 +37,12 @@ SandBlast Mobile Protect 是一项移动威胁防御服务，可识别和评估 
 ## <a name="troubleshoot-virus-or-security-threat"></a>排查病毒或安全威胁  
 如果检测到病毒或安全威胁，SandBlast Mobile Protect 应用将根据组织的访问策略实施操作。 访问策略可能阻止你访问工作网络、应用和电子邮件。  
 
-SandBlast Mobile Protect 将提示你采取操作以重新获得失去的访问权限。 选择威胁，并按照应用中的说明解决威胁。  
+![SEP Mobile 应用警报消息的示例屏幕截图。](./media/skycure-list-of-potential-issues-android.png)  
+SandBlast Mobile Protect 将提示你采取操作以重新获得失去的访问权限。 选择威胁，并按照应用中的说明解决威胁。
+
+由于应用与公司的 MDM 提供程序集成，因此还可在公司门户应用中看到访问权限受限的相关警告。 警告将指示打开 Sandblast Mobile Protect 以解决病毒或安全威胁。  
+
+  ![公司门户设备页的示例屏幕截图，其中显示 Sandblast Mobile Protect 警告。](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>排查应用威胁  
 
@@ -45,4 +50,4 @@ SandBlast Mobile Protect 将提示你采取操作以重新获得失去的访问�
 
 要解决此问题，请从 SandBlast Mobile Protect 中的威胁列表中选择此应用。 然后按照说明删除并卸载该应用。  
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)
+仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。  

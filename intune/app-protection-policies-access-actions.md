@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329404"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863172"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用应用保护策略访问操作选择性地擦除数据
 
@@ -61,7 +61,7 @@ ms.locfileid: "43329404"
 -  设备型号
 
 若要使用“设备型号”设置，请输入 iOS 型号标识符的分号分隔列表。 [HockeyApp 支持文档](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)中的“设备类型”列下列出了 iOS 型号标识符。<br>
-示例输入：iPhone5,2; iPhone5,3
+示例输入：iPhone5,2;iPhone5,3
 
 在最终用户设备上，Intune 客户端执行操作的依据为，Intune 中指定的设备型号字符串与应用程序保护策略的简单匹配情况。 匹配完全取决于设备报告的内容。 建议你（即 IT 管理员）务必要根据各种设备制造商和型号对小型用户组测试此设置，以确保行为按预期发生。 默认值为“未配置”。<br>
 请设置下列操作之一： 
@@ -69,7 +69,7 @@ ms.locfileid: "43329404"
 - 允许指定项（擦除非指定项）
 
 **如果 IT 管理员对定目标到同一 Intune 用户的相同应用的策略输入不同的 iOS 型号标识符列表，会发生什么？**<br>
-如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”和“策略 B”中列出的 iOS 型号标识符的交集。 例如，如果“策略 A”指定“iPhone5,2; iPhone5,3”，而“策略 B”则指定“iPhone5,3”，那么针对“策略 A”和“策略 B”都定目标到的 Intune 用户生成的策略是“iPhone5,3”。 
+如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”和“策略 B”中列出的 iOS 型号标识符的交集。 例如，如果“策略 A”指定“iPhone5,2; iPhone5,3”，而“策略 B”指定“iPhone5,3”，则当“策略 A”和“策略 B”以 Intune 用户为目标时，组合的原则将是“iPhone5,3”。 
 
 ### <a name="android-policy-settings"></a>Android 策略设置
 
@@ -83,10 +83,10 @@ ms.locfileid: "43329404"
 -  设备制造商
 
 若要使用“设备制造商”设置，请输入 Android 制造商的分号分隔列表。 可以在设备设置下找到设备的 Android 制造商。<br>
-示例输入：制造商 A; 制造商 B 
+示例输入：Manufacturer A;Manufacturer B 
 
 >[!NOTE]
-> 以下是使用 Intune 的设备报告的一些常见制造商，可以用作输入：Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> 以下是使用 Intune 的设备报告的一些常见制造商，可以用作输入：Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 在最终用户设备上，Intune 客户端执行操作的依据为，Intune 中指定的设备型号字符串与应用程序保护策略的简单匹配情况。 匹配完全取决于设备报告的内容。 建议你（即 IT 管理员）务必要根据各种设备制造商和型号对小型用户组测试此设置，以确保行为按预期发生。 默认值为“未配置”。<br>
 请设置下列操作之一： 
@@ -94,7 +94,7 @@ ms.locfileid: "43329404"
 - 允许指定项（擦除非指定项）
 
 **如果 IT 管理员对定目标到同一 Intune 用户的相同应用的策略输入不同的 Android 制造商列表，会发生什么？**<br>
-如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”和“策略 B”中列出的 Android 制造商的交集。 例如，如果“策略 A”指定“Google; Samsung”，而“策略 B”则指定“Google”，那么针对“策略 A”和“策略 B”都定目标到的 Intune 用户生成的策略是“Google”。 
+如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”和“策略 B”中列出的 Android 制造商的交集。 例如，如果“策略 A”指定“Google; Samsung”，而“策略 B”指定“Google”，则当“策略 A”和“策略 B”以 Intune 用户为目标时，组合的原则将是“Google”。 
 
 ### <a name="additional-settings-and-actions"></a>其他设置和操作 
 
@@ -119,5 +119,3 @@ ms.locfileid: "43329404"
 - [如何创建和分配应用保护策略](app-protection-policies.md)
 - [iOS 应用保护策略设置](app-protection-policy-settings-ios.md)
 - [Microsoft Intune 中的 Android 应用保护策略设置](app-protection-policy-settings-android.md) 
-
-

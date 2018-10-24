@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268900"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102049"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -153,7 +153,7 @@ Remember that you need to implement conditional access policies in addition to c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>部署设备符合性策略的方法
 可向用户组中的用户或设备组中的设备部署符合性策略。 将符合性策略部署到用户后，会对所有用户设备检查符合性。
 
-“符合性策略设置”（“Azure 门户”>“设备符合性”）包括：
+默认“符合性策略设置”（“Azure 门户”>“设备符合性”）包括：
 
 - **将未分配到符合性策略的设备标记为**：此属性具有两个值：
 

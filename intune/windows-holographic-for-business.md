@@ -1,31 +1,31 @@
 ---
-title: 使用 Microsoft Intune 管理 Windows Holographic 设备 - Azure | Microsoft Docs
-description: 通过 Microsoft Intune 可以在运行 Windows Holographic for Business 的设备上完成各种任务，包括配置公司门户、创建符合性策略、自定义 OMA-URI 设置、部署应用、将设备分类为组、创建配置文件、限制设备、进行软件更新、设置条款和条件、配置 VPN 和 Wi-Fi 设置，以及使用 Windows Hello 企业版。
+title: 借助 Microsoft Intune 使用 Windows Holographic 设备 - Azure | Microsoft Docs
+description: 通过 Microsoft Intune 可以在运行 Windows Holographic for Business 和 HoloLens 的设备上管理并完成各种任务，包括配置公司门户、创建符合性策略、自定义 OMA-URI 设置、部署应用、将设备分类为组、创建配置文件、限制设备、进行软件更新、设置条款和条件、配置 VPN 和 Wi-Fi 设置，以及使用 Windows Hello 企业版。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/11/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
+ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317989"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49065758"
 ---
-# <a name="customize-devices-running-windows-holographic-with-intune"></a>使用 Intune 对运行 Windows Holographic 的设备进行自定义设置
+# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>使用 Intune 管理和使用 Windows 全息版和 HoloLens 设备
 
-Microsoft Intune 支持运行 Windows Holographic for Business 的设备，例如 [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/)。
+Microsoft Intune 包含许多功能，可帮助管理运行 Windows Holographic for Business 的设备，例如 [Microsoft HoloLens](https://docs.microsoft.com/hololens/)。 使用 Intune，可以确认设备是否符合组织的规则，且可通过添加 VPN 或 WiFi 配置文件来自定义设备。 另一个关键功能是将设备用作 Kiosk，并运行特定的一个或一组应用。
 
-若要使用 Microsoft Intune 管理运行 Windows Holographic 的设备，必须创建一个 Edition Upgrade 配置文件。 此升级配置文件能将设备从 Windows Holographic 升级至 Windows Holographic for Business。 对于 Microsoft HoloLens，则可以通过购买商业套件来获得升级所需的许可证。 有关详细信息，请参阅[将运行 Windows Holographic 的设备升级到 Windows Holographic for Business](holographic-upgrade.md)。
+本文中的任务可帮助管理、自定义和保护运行 Windows Holographic for Business 的设备，包括软件更新和使用 Windows Hello 企业版。
 
-本文中的任务可帮助你管理和自定义运行 Windows Holographic for Business 的设备。 例如，你可以管理软件更新、配置 VPN 设置以及进行其他操作。
+若要配合使用 Intune 和 Windows 全息版设备，请创建版本升级配置文件。 此升级配置文件能将设备从 Windows Holographic 升级至 Windows Holographic for Business。 对于 Microsoft HoloLens，则可以通过购买商业套件来获得升级所需的许可证。 有关详细信息，请参阅[将运行 Windows Holographic 的设备升级到 Windows Holographic for Business](holographic-upgrade.md)。
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 

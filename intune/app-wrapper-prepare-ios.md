@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169492"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -39,13 +39,13 @@ ms.locfileid: "40251663"
 
 * 从 GitHub 下载[适用于 iOS 的 Microsoft Intune 应用包装工具](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)。
 
-* 运行 OS X 10.8.5 或更高版本并且已安装 Xcode 工具集版本 5 或更高版本的 macOS 计算机。
+* 运行 OS X 10.8.5 或更高版本并且已安装 Xcode 工具集版本 9 或更高版本的 macOS 计算机。
 
 * 输入 iOS 应用必须由公司或独立软件供应商 (ISV) 开发并签名。
 
   * 输入应用文件必须具有 **.ipa** 或 **.app** 扩展名。
 
-  * 输入应用必须针对 iOS 8.0 或更高版本进行编译。
+  * 输入应用必须针对 iOS 10 或更高版本。
 
   * 不能加密输入应用。
 
