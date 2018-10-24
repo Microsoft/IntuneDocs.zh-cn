@@ -15,19 +15,16 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
-ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
+ms.openlocfilehash: 3b0da7cf77fd7c1b977fcd2ddb86b95eff8804f8
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48812815"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424996"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上强制实现符合性
 
-|适用于：Azure 门户中的 Intune |
-|--|
-|正在查找有关经典门户中的 Intune 的文档？ [请转到此处](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
-| |
+适用于：Azure 门户中的 Intune
 
 可以使用 Azure Active Directory 和 Microsoft Intune 的条件访问策略，以确保最终用户符合组织的要求。 可以将这些策略应用到[使用 Jamf Pro 管理](conditional-access-integrate-jamf.md)的 Mac。 这需要能够同时访问 Intune 和 Jamf Pro 控制台。
 

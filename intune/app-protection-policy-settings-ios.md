@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f0680f601d59695828355496ef7b817335dc0d4
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ac8b70cd370d0c22a615d0d0bdc215cb3a332520
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827966"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425166"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -78,7 +78,7 @@ ms.locfileid: "48827966"
 | **要求最低 Intune 应用保护策略 SDK 版本** | 选择“是”，将要求要使用的应用上的最低 Intune 应用保护策略 SDK 版本。 如果应用的 Intune 应用保护策略 SDK 版本不符合此要求，将阻止用户访问。 <br> <br> 若要详细了解 Intune 应用保护策略 SDK，请参阅 [Intune App SDK 概述](app-sdk.md) <br><br> 此策略设置格式支持 major.minor、major.minor.build 或 major.minor.build.revision。 <br><br> **注意：** 要求应用具有 Intune SDK 版本 7.0.1 或更高版本。 <br><br>  默认值 = 否 |
 
 > [!NOTE]
-> 要详细了解在“访问权限”部分配置给同一组应用和用户的多个 Intune 应用保护设置如何在 iOS 上运行，请参阅 [Intune MAM 常见问题](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios)和[在 Intune 中使用应用保护策略访问操作选择性地擦除数据](app-protection-policies-access-actions.md)。
+> 要详细了解在“访问权限”部分配置给同一组应用和用户的多个 Intune 应用保护设置如何在 iOS 上运行，请参阅 [Intune MAM 常见问题](https://docs.microsoft.com/intune/mam-faq#app-experience-on-ios)和[在 Intune 中使用应用保护策略访问操作选择性地擦除数据](app-protection-policies-access-actions.md)。
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook 应用的加载项
 
@@ -117,9 +117,9 @@ Intune SDK 和 Intune 应用保护策略不包括对管理 LinkedIn 帐户连接
 
 |Microsoft Graph 权限  |描述  |
 |---------|---------|
-|[人员](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#people-permissions)的读取权限     |允许该应用读取与已登录用户相关的评分列表。 该列表可包括本地联系人、社交网络或组织目录中的联系人以及最近通信（如电子邮件和 Skype）中的联系人。         |
-|[日历](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23calendars-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378331622%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=fABkrlIxqggnB%2Bc%2BR%2BbFpuenhSg7OHfBhWcbv3ahmAU%3D&reserved=0)的读取权限     |允许该应用读取用户日历中的事件。 包括已登录用户日历中的会议、其时间、地点和与会者。         |
-|[用户配置文件](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23user-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378341626%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=RcnVIpntjyR4TXafOYTV0SffZuZWpshQQWY0e2VkkXg%3D&reserved=0)的读取权限     |允许用户登录到应用，并允许应用读取已登录用户的个人资料。 它还允许应用读取已登录用户的基本公司信息。         |
+|[人员](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)的读取权限     |允许该应用读取与已登录用户相关的评分列表。 该列表可包括本地联系人、社交网络或组织目录中的联系人以及最近通信（如电子邮件和 Skype）中的联系人。         |
+|[日历](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)的读取权限     |允许该应用读取用户日历中的事件。 包括已登录用户日历中的会议、其时间、地点和与会者。         |
+|[用户配置文件](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)的读取权限     |允许用户登录到应用，并允许应用读取已登录用户的个人资料。 它还允许应用读取已登录用户的基本公司信息。         |
 |Subscriptions     |此作用域不可用且尚未使用。 它包括用户组织向 Microsoft 应用和服务（如 Office 365）提供的订阅。         |
 |见解     |此作用域不可用且尚未使用。 它包括基于 Microsoft 服务的使用与已登录用户帐户相关的权益。         |
 
@@ -127,6 +127,6 @@ Intune SDK 和 Intune 应用保护策略不包括对管理 LinkedIn 帐户连接
 
 - 了解 [Microsoft 应用中的 LinkedIn 信息和功能](https://go.microsoft.com/fwlink/?linkid=850740)。
 - 在 [Office 365 产品指南页](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc)了解 LinkedIn 帐户连接版本。 
-- 了解[配置 LinkedIn 帐户连接](https://docs.microsoft.com/en-us/azure/active-directory/linkedin-integration)。
+- 了解[配置 LinkedIn 帐户连接](https://docs.microsoft.com/azure/active-directory/linkedin-integration)。
 - 有关用户的 LinkedIn 和 Microsoft 工作或学校帐户之间共享的数据的详细信息，请参阅[工作或学校的 Microsoft 应用程序中的 LinkedIn](https://www.linkedin.com/help/linkedin/answer/84077)。
 

@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: 7d9cd8c4a6f460be9b6964197fa53cd11f303ca0
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101982"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425200"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -116,7 +116,6 @@ Intune 会验证 XML 格式。 但是，Intune 不会检查 XML 属性列表 (PL
 
 了解有关 XML 属性列表的详细信息：
 
-  -  请参阅[使用 Microsoft Intune 中的移动应用配置策略配置 iOS 应用](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
   -  请参阅 iOS 开发人员库中的[了解 XML 属性列表](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)。
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>应用配置 XML 文件的示例格式

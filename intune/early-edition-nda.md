@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e37a45122ab4950e2a85cc1c6f6696759d429a3f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652132"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Microsoft Intune 的早期版本 - 2018 年 10 月
 
@@ -44,9 +44,6 @@ ms.locfileid: "48828272"
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>将 Microsoft 推荐的设置与安全基线结合使用 <!-- 2055484 -->
 Intune 可与其他专注于安全性的服务集成，包括 Windows Defender ATP 和 Office 365 ATP。 客户要求能在各项 Microsoft 365 服务中采用通用策略和一组统一的端到端安全工作流。 我们的目标是实现策略一致，构建连接安全操作和常见管理员任务的解决方案。 在 Intune 中，我们旨在通过发布一组 Microsoft 推荐的“安全基线”（“Intune” > “安全基线”）来实现这一目标。  管理员将能够直接通过这些基线创建安全策略，然后将其部署到用户。 他们还可以自定义最佳做法建议，满足组织需求。 Intune 可确保设备始终符合这些基线，并通知不符合的用户管理员或设备。
 
-### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>删除管理员擦除个人设备和重置密码的能力 <!-- 2934699 -->
-为了减轻用户对公司管理员能擦除其个人设备的担忧，[擦除](devices-wipe.md#wipe)和[重置密码](device-passcode-reset.md)远程操作将不再适用于个人设备。 将设备所有权类型切换为公司，以便为组织拥有的设备启用这些操作。
-
 ### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>加入混合 Azure Active Directory 的设备支持 Autopilot <!-- 1048100 -->
 将能使用 Autopilot 对已加入混合 Azure Active Directory 的设备进行设置。 设备必须加入组织网络中，才能使用混合 Autopilot 功能。
 
@@ -56,7 +53,7 @@ Intune 可与其他专注于安全性的服务集成，包括 Windows Defender A
 要向角色分配添加作用域标记，选择“Intune 角色” > “所有角色” > “策略和配置文件管理器” > “分配” > “作用域(标记)”。
 要向配置文件添加作用域标记，选择“设备配置” > “配置文件”>“选择配置文件”>“属性” > “作用域(标记)”。
 
-## <a name="tenant-health-dashboard----1124854---"></a>租户运行状况仪表板 <!-- 1124854 -->
+### <a name="tenant-health-dashboard----1124854---"></a>租户运行状况仪表板 <!-- 1124854 -->
 Intune 中的“租户状态”页面将在一个位置提供租户状态信息。 该页面分为 4 个部分：  
 - **租户详细信息**：包含 MDM 机构、租户中的注册设备总数以及许可证计数等信息。 此部分还为租户提供当前服务版本。
 - **连接器状态**：包含 Apple VPP、适用于企业的 Windows 应用商店和证书连接器等已配置连接器的信息。 根据连接器的当前状态，将其标记为“正常”、“警告”或“不正常”。

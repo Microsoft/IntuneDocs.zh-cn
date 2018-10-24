@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 95c9e2282336e565ddd5bd3cc4484776aa45a6eb
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: e1fb8e4f309e7ab80282dd0e94a10473442238db
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828391"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424962"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
@@ -41,7 +41,7 @@ ms.locfileid: "48828391"
 - 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Microsoft Store 中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。
 - 多个必需或可用的应用分配不会累加。 后面的应用分配会覆盖之前存在的已安装应用分配。 例如，如果第一组 Office 应用包含 Word，而后面的应用不包含，则 Word 会被卸载。 该条件不适用于任何 Visio 或 Project 应用程序。
 - **Office 版本** - 选择要分配 32 位还是 64 位版本的 Office。 可以在 32 位和 64 位设备上安装 32 位版本，但只能在 64 位设备上安装 64 位版本。
-- **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)。 
+- **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)。 
 
 ## <a name="get-started"></a>入门
 
@@ -103,7 +103,7 @@ ms.locfileid: "48828391"
         
         有关详细信息，请参阅 [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
 
-    - **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)。 
+    - **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)。 
     - 自动接受应用最终用户许可协议：如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
     - 使用共享计算机激活：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 [Office 365 的共享计算机激活概述](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **语言**：Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。 <p></p>
