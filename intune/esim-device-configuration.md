@@ -12,19 +12,19 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 654c9af4d72ca5d07a9852ba4a653d9404ea16d2
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43314017"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642865"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
 > [!NOTE]
 > Microsoft 希望收到你的反馈。 通过向 `eSIMonIntune@microsoft.com` 发送电子邮件发送问题或开始讨论。
 
-## <a name="introduction"></a>简介
+## <a name="introduction"></a>簡介
 
 eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro)）上的手机网络数据连接连接到 Internet。 如果使用 eSIM 卡，则无需从移动运营商处获取 SIM 卡。 如需跨国旅行，还可在不同移动运营商和数据套餐之间进行切换，并始终保持连接状态。
 

@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058891"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425217"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
 
@@ -77,7 +77,7 @@ ms.locfileid: "44058891"
 
     -   WinPhoneCompanyPortal.ps1 – 可用于对公司门户应用文件进行签名，以便将文件部署到 Windows Phone 8.1 设备的 PowerShell 脚本
 
-    或者，可以从[适用于企业的 Microsoft 应用商店](http://businessstore.microsoft.com/)下载 Windows Phone 8.1 公司门户（脱机许可包）或 Windows 10 公司门户（脱机许可包）。 公司门户应用需要具备脱机许可证以及为脱机使用而下载的相应的包。 选项中 Windows 8 和 Windows Phone 8 平台列表指的是各自 8.1 版本的对应项。 若要详细了解如何使用 Intune 完成此操作，请参阅[管理从适用于企业的 Microsoft 应用商店购买的应用](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)。
+    或者，可以从[适用于企业的 Microsoft 应用商店](http://businessstore.microsoft.com/)下载 Windows Phone 8.1 公司门户（脱机许可包）或 Windows 10 公司门户（脱机许可包）。 公司门户应用需要具备脱机许可证以及为脱机使用而下载的相应的包。 选项中 Windows 8 和 Windows Phone 8 平台列表指的是各自 8.1 版本的对应项。 若要详细了解如何使用 Intune 完成此操作，请参阅[管理从适用于企业的 Microsoft 应用商店购买的应用](windows-store-for-business.md)。
 
 2.  **下载 Windows Phone SDK** 下载 Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570)) 并在计算机上安装 SDK。 需要此 SDK 来生成应用程序注册令牌。
 
@@ -119,7 +119,7 @@ ms.locfileid: "44058891"
 
     -   `-EnterpriseId` - 企业 ID。 必须提供此参数或“AetxPath”。 如果未提供此参数，则从 AETX 文件中读取企业 ID。 例如 1000000001
 
-6.  部署 Windows Phone 8.1 公司门户 (SSP.appx) 应用。 若要了解如何操作，请参阅[如何添加 Windows Phone 业务线 (LOB) 应用](lob-apps-windows-phone.md)（[经典门户](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)）。
+6.  部署 Windows Phone 8.1 公司门户 (SSP.appx) 应用。 若要了解如何操作，请参阅[如何添加 Windows Phone 业务线 (LOB) 应用](lob-apps-windows-phone.md)。
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>如何续订 Symantec 企业代码签名证书
 
@@ -191,7 +191,7 @@ ms.locfileid: "44058891"
 2. 如上所述，从适用于企业的 Microsoft 应用商店下载 Windows 10 公司门户应用。  
 3. 运行在脚本标头中详细说明了其输入参数的脚本，对 Windows 10 公司门户应用进行签名（以下进行了提取）。 不需要将依赖项传入该脚本。 只有在应用上载到 Intune 管理控制台时才需要依赖项。
 
-|       参数       |                                                                    描述                                                                    |
+|       Parameter       |                                                                    说明                                                                    |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | InputWin10AppxBundle  |                                             定位到源 appxbundle 文件所在位置的路径。                                              |
 | OutputWin10AppxBundle |                                                  已签名的 appxbundle 文件 Win81Appx 的输出路径。                                                  |

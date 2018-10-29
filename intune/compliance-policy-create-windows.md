@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602310"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642862"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>在 Intune 中添加适用于 Windows 设备的设备符合性策略
 
@@ -33,8 +33,8 @@ ms.locfileid: "45602310"
 |----| ----| --- |
 | **PIN 或密码配置** | 已修正 | 已修正 |   
 | **设备加密** | 不适用 | 已修正 |   
-| **已越狱或取得 root 权限的设备** | “不适用” | “不适用” |  
-| **电子邮件配置文件** | “不适用” | “不适用” |   
+| **已越狱或取得 root 权限的设备** | 不适用 | 不适用 |  
+| **电子邮件配置文件** | 不适用 | 不适用 |   
 | **最低操作系统版本** | 已隔离 | 已隔离 |   
 | **最高操作系统版本** | 已隔离 | 已隔离 |   
 | **Windows 运行状况证明** | 已隔离：Windows 10 和 Windows 10 移动版|不适用：Windows 8.1 |
@@ -107,10 +107,10 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 
 ## <a name="windows-10-and-later-policy-settings"></a>Windows 10 和更高版本的策略设置
 
-### <a name="device-health"></a>Device health
+### <a name="device-health"></a>设备运行状况
 
-- 需要启用 BitLocker：如果启用了 BitLocker，在系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据免受未经授权的访问。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来帮助保护 Windows 操作系统和用户数据。 它还有助于确保计算机不被篡改，即使它处于无人参与、丢失或被盗状态也是如此。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 这样，在 TPM 验证计算机状态之前则无法访问密钥。
-- 需要在设备上启用安全启动：启用安全启动后，系统会被强制启动到出厂信任状态。 此外，启用安全启动后，用于启动设备的核心组件必须具有制造设备的组织所信任的正确加密签名。 UEFI 固件会在允许设备启动前确认签名。 如果有任何文件被篡改或破坏了签名，系统将不会启动。
+- 需要启用 BitLocker：如果启用了 BitLocker，在系统关闭或进入休眠状态时，设备能够保护存储在驱动器上的数据免受未经授权的访问。 Windows BitLocker 驱动器加密可以对存储在 Windows 操作系统卷上的所有数据进行加密。 BitLocker 使用 TPM 来帮助保护 Windows 操作系统和用户数据。 它还有助于确保计算机不被篡改，即使它处于无人参与、丢失或被盗状态也是如此。 如果计算机装有兼容的 TPM，BitLocker 将使用该 TPM 锁定用于保护数据的加密密钥。 因此，仅当 TPM 验证计算机的状态后才能访问密钥。
+- 需要在设备上启用安全启动：启用安全启动后，系统会被强制启动到出厂信任状态。 并且启用安全启动后，用于启动计算机的核心组件必须具有制造设备的组织所信任的正确的加密签名。 UEFI 固件会在允许设备启动前确认签名。 如果有任何文件被篡改，破坏了其签名，则系统将不会启动。
 
   > [!NOTE]
   > TPM 1.2 和 2.0 设备支持“需要在设备上启用安全启动”设置。 对于不支持 TPM 2.0 或更高版本的设备，Intune 中的策略状态显示为“不符合”。 这是 Windows 10 中[设备运行状况证明](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation)服务的限制。
@@ -118,8 +118,6 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 - 要求启用代码完整性 - 代码完整性是这样一项功能，它在每次将驱动程序或系统文件加载到内存时验证其完整性。 代码完整性检测是否正在将未签名的驱动程序或系统文件加载到内核中。 系统文件是否已被具有管理员特权的用户帐户运行的恶意软件进行了修改。
 
 有关 HAS 服务工作方式的详细信息，请参阅[运行状况证明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)。
-
-要将 Windows Defender ATP（高级威胁防护）设置为防御威胁服务，请参阅[启用使用条件访问权限的 Windows Defender ATP](advanced-threat-protection.md)。
 
 ### <a name="device-properties"></a>设备属性
 
@@ -183,6 +181,8 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
   - **低**：若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
   - 中：如果设备上存在的威胁为低级或中级，设备也将被评估为符合策略。 若检测到设备存在高级威胁，则将其确定为不合规。
   - 高：此选项是最不安全的，允许所有威胁级别。 如果将此解决方案仅用作报告目的，则可能有用。
+  
+  要将 Windows Defender ATP（高级威胁防护）设置为防御威胁服务，请参阅[启用使用条件访问权限的 Windows Defender ATP](advanced-threat-protection.md)。
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

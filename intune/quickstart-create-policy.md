@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581522"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391546"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>快速入门：为 Windows 10 设备添加设备符合性策略
 适用于 Windows 的 Intune 设备符合性策略可指定 Windows 设备须满足才能被视为符合的规则和设置。 可以将这些策略与[条件访问](https://docs.microsoft.com/intune/conditional-access)结合使用，从而允许或阻止访问公司资源。 还可获取设备报表并针对非符合性采取措施。
@@ -28,7 +28,7 @@ ms.locfileid: "46581522"
 
 如果没有 Intune 订阅，请[注册免费试用帐户](free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先決條件
 - 要完成本快速入门，必须先[创建用户](quickstart-create-user.md)并[创建组](quickstart-create-group.md)。
 
 
@@ -53,4 +53,4 @@ ms.locfileid: "46581522"
 在本快速入门中，已创建并分配了一个简单的设备符合性策略。 要注册将接收该策略的 Windows 10 设备，请继续按快速入门设置自动注册。 
  
 > [!div class="nextstepaction"]
-> [设置自动注册](quickstart-setup-auto-enrollment.md)
+> [设置设备密码长度](quickstart-set-password-length-android.md)

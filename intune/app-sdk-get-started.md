@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.custom: intune
+ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058942"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425030"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -131,7 +131,7 @@ Android 和 iOS 都使用应用相关的版本号和内部版本号。 但是，
 
 开发用于 Intune 的业务线应用程序时，请务必使用版本号和内部版本号。 Intune 应用管理功能依赖于有意义的 CFBundleVersion（适用于 iOS）和 PackageVersionCode（适用于 Android）。 这些号码都包括在应用清单中。 
 
-Intune|iOS|Android|描述|
+Intune|iOS|Android|说明|
 |---|---|---|---|
 版本号|CFBundleShortVersionString|PackageVersionName |此号码为最终用户指示应用的特定版本。|
 内部版本号|CFBundleVersion|PackageVersionCode |此号码用于指示应用代码中的迭代。|
@@ -161,9 +161,9 @@ Intune|iOS|Android|描述|
 
     * 如果你正在开发一套不会发送到应用商店的业务应用，则你应能够通过你的组织访问 Microsoft Intune。 你还可以在 [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中注册为期 1 个月的免费试用。
 
-* **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](/intune-classic/deploy-use/ios-mam-policy-settings)和 [Android 应用保护策略](/intune-classic/deploy-use/android-mam-policy-settings)的说明。
+* **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。
 
-* **疑难解答**：如果在手动测试应用的用户体验时遇到任何问题，请查看 [MAM 疑难解答](/intune-classic/troubleshoot/troubleshoot-mam)。 本文提供针对 Intune 托管的应用中可能遇到的常见问题、对话框和错误消息的相关帮助。 
+* 疑难解答：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
 
 ### <a name="badge-your-app-optional"></a>标记应用（可选）
 

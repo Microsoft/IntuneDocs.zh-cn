@@ -12,17 +12,20 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652149"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune 中针对 Windows 10 及更高版本的设备限制设置
 本文介绍可为运行 Windows 10 的设备配置的所有 Microsoft Intune 设备限制设置。
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!Note]
+> 并非所有选项在所有版本的 Windows 上都可用
 
 ## <a name="general"></a>常规
 - **屏幕捕获（仅限移动版）**- 让用户以图像形式捕获设备屏幕。
@@ -50,7 +53,7 @@ ms.locfileid: "43313847"
 - **SIM 卡错误对话框（仅限移动版）**- 阻止在未检测到 SIM 卡时在设备上显示错误消息。
 - **墨迹工作区** - 阻止用户访问墨迹工作区。 如果未配置此设置，则启用墨迹工作区（功能处于开启状态），并且允许用户在锁定屏幕上使用它。
 - **自动重新部署** - 允许具有管理权限的用户在设备锁定屏幕上使用 CTRL+Win+R 删除所有用户数据和设置。 设备会自动进行重新配置并重新注册到管理。
-- **要求用户在设备设置期间连接到网络(仅限 Windows 预览体验)** - 选择“必需”以要求在 Windows 10 安装过程中设备先连接到网络，然后再继续通过“网络”页。 虽然此功能处于预览状态，但 Windows 预览体验版 1809 或更高版本需要使用此设置。
+- **要求用户在设备设置期间连接到网络(仅限 Windows 预览体验)** - 选择“必需”以要求在 Windows 10 安装过程中设备先连接到网络，然后再继续通过“网络”页。 虽然此功能处于预览状态，但 Windows 预览体验内部版本 1809 或更高版本需要使用此设置。
 
 ## <a name="password"></a>密码
 -   **密码** - 需要最终用户输入密码才能访问设备。
@@ -78,7 +81,7 @@ ms.locfileid: "43313847"
 
 可以定义设备上的所有应用可以访问的信息。 可以使用“每应用隐私异常”对每个应用定义异常。
 
-### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>例外狀況
 
 - **帐户信息** - 定义此应用能否访问用户名、图片和其他联系人信息。
 - **后台应用** - 定义此应用能否在后台运行。
@@ -106,7 +109,7 @@ ms.locfileid: "43313847"
 - **包名称** - 应用包系列名称。
 - **应用名称** - 应用的名称。
 
-### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>例外狀況
 
 - **帐户信息** - 定义此应用能否访问用户名、图片和其他联系人信息。
 - **后台应用** - 定义此应用能否在后台运行。
@@ -395,8 +398,11 @@ ms.locfileid: "43313847"
    IPv4：192.246.246.106:100<br>
  IPv6：[2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN： www.contoso.com:345
 
-## <a name="messaging"></a>Messaging
+## <a name="messaging"></a>消息传送
 
 - **消息同步(仅移动设备)** - 禁用随时随地传送消息以及短信备份和还原。
 - **彩信(仅移动设备)** - 对设备禁用彩信发送/接收功能。
 - **富通信(仅移动设备)** - 对设备禁用富通信服务发送/接收功能。
+
+## <a name="more-information"></a>详细信息
+有关每个设置的其他技术详细信息，以及支持的 Windows 版本，请参阅 [Windows 10 策略 CSP 引用](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)

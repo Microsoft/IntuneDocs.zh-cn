@@ -15,12 +15,12 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c6709d68ce4bf847be3eb5cd5ae427db6d11aba8
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: d552ec61d148d0489dc263405eac52448c10f9ef
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903584"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642859"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 
@@ -46,7 +46,7 @@ Intune 的 URL 使用以下格式：
 
 该 URL 包含以下元素：
 
-| 元素 | 示例 | 描述 |
+| 元素 | 示例 | 说明 |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | 位置 | msua06 | 可通过查看 Azure 门户中的数据仓库 API 边栏选项卡获取基 URL。 |
 | 实体集合 | 日期 | OData 实体集合的名称。 有关数据模型中集合和实体的详细信息，请参阅[数据模型](reports-ref-data-model.md)。 |
@@ -73,7 +73,7 @@ Intune 的 URL 使用以下格式：
 > [!NOTE]
 > 筛选器示例假定现在是 2018/2/21。
 
-|                             Filter                             |           性能优化           |                                          描述                                          |
+|                             Filter                             |           性能优化           |                                          说明                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    完整                                      |    返回 `DateKey` 介于 20180214 至 20180221 的数据。                                     |
 |    `$filter=DateKey eq 20180214`                                 |    完整                                      |    返回 `DateKey` 等于 20180214 的数据。                                                    |

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0af5fb071c6abb01a2819a5d9c73f4e01bf7cb7a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
+ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312809"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410357"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -140,6 +140,9 @@ ms.locfileid: "43312809"
 ![查看不同策略中所有设置的列表](./media/compliance-policy-monitor/idc-10.png)
 
 选择特定设置时，可以看到该设置针对的每个设备的“符合性状态”、“用户的电子邮件别名”、“设备模型”及“位置”。
+
+> [!NOTE]
+> 加入 Azure AD 的 Windows 10 设备可能显示系统帐户为不符合用户。 这是预期行为，不会影响设备的整体符合性。 
 
 ## <a name="view-status-of-device-policies"></a>查看设备策略的状态
 

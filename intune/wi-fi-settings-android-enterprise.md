@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft Intune 中配置适用于 Android 设备的 Wi-Fi 设置 - Azure | Microsoft Docs
+title: 配置适用于 Android Enterprise 和展台设备的 Wi-Fi 设置 - Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: 为 Android 创建或添加 WiFi 设备配置文件。 请参阅不同的设置，包括添加证书、选择 EAP 类型以及在 Microsoft Intune 中选择身份验证方法。
+description: 为 Android Enterprise 和 Android 展台创建或添加 WiFi 设备配置文件。 请参阅不同的设置，包括添加证书、选择 EAP 类型以及在 Microsoft Intune 中选择身份验证方法。 对于展台设备，还要输入网络的预共享密码。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,26 +13,42 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7c0d11e7670134c6a2cd9ce2eb72714ba64aa03
+ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
 ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424979"
+ms.locfileid: "49431908"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>在 Microsoft Intune 中为运行 Android 的设备添加 Wi-Fi 设置
+# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中为运行 Android Enterprise 和 Android 展台的设备添加 Wi-Fi 设置
 
-可以使用特定的 WiFi 设置创建配置文件，然后将此配置文件部署到 Android 设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，添加 PKS 或 SCEP 证书等。
+可以使用特定的 WiFi 设置创建配置文件，然后将此配置文件部署到 Android Enterprise 和 Android 展台设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，使用预共享密钥等。
 
-这些 Wi-Fi 设置分为两类：基本设置和企业级设置。
-
-本文将说明这些设置。
+本文将介绍这些设置。
 
 ## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置文件](device-profile-create.md)。
 
-## <a name="basic-profile"></a>基本配置文件
+## <a name="device-owner-only---kiosk"></a>仅设备所有者 - 展台
+
+如果将 Android Enterprise 设备用作展台，则选择此选项。
+
+- 网络名称：输入此 Wi-Fi 连接的名称。 该值是用户在其设备上浏览可用连接列表时看到的名称。
+- SSID：服务集标识符的英文缩写。 该设置是设备连接到的无线网络的真实名称。 但是，用户在选择连接时只会看到你已配置的网络名称。
+- 自动连接：选择“启用”将在设备处于范围内时自动连接到此网络。 选择“禁用”以防止设备自动连接。
+- 隐藏网络：选择“启用”以在设备上的可用网络列表中隐藏此网络。 不广播 SSID。 选择“禁用”以在设备上的可用网络列表中显示此网络。
+- Wi-Fi 类型：选择要用于对 Wi-Fi 网络进行身份验证的安全协议。 选项包括：
+
+  - 开放(无身份验证)：仅在网络未受保护的情况下使用此选项。
+  - WEP- 预共享密钥：在预共享密钥中输入此密码。 设置或配置组织的网络后，还要配置密码或网络密钥。 输入此密码或网络密钥作为 PSK 值。
+  - WPA 预共享密钥：在预共享密钥中输入此密码。 设置或配置组织的网络后，还要配置密码或网络密钥。 输入此密码或网络密钥作为 PSK 值。
+
+选择“确定”，保存所做更改。
+
+## <a name="work-profile-only"></a>仅工作配置文件
+
+### <a name="basic-settings"></a>基本设置
 
 - Wi-Fi 类型：选择“基本”。
 - SSID：服务集标识符的英文缩写。 该设置是设备连接到的无线网络的真实名称。
@@ -95,7 +111,7 @@ ms.locfileid: "49424979"
 
       - 标识隐私（外部标识）：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
-选择“确定” > “创建”以保存所做的更改。 配置文件随即创建并出现在配置文件列表中。
+选择“确定” > “创建”以保存所做更改。 配置文件随即创建并出现在配置文件列表中。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -103,6 +119,5 @@ ms.locfileid: "49424979"
 
 ## <a name="more-resources"></a>更多资源
 
+- 请在[适用于运行 Android 的设备的 Wi-Fi 设置](wi-fi-settings-android.md)中查看适用于 Android 设备的设置。
 - [Wi-Fi 设置概述](wi-fi-settings-configure.md)，包含其他平台。
-
-- 使用 Android Enterprise 或 Android 展台设备？ 如果是，则查看[为运行 Android Enterprise 和 Android 展台的设备添加 Wi-Fi 设置](wi-fi-settings-android-enterprise.md)。
