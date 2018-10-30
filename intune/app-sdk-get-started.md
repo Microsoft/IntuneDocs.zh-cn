@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: f807bd479ddbbc4ca6e83072c352bb8bd60cf5a9
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425030"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225414"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -131,7 +131,7 @@ Android 和 iOS 都使用应用相关的版本号和内部版本号。 但是，
 
 开发用于 Intune 的业务线应用程序时，请务必使用版本号和内部版本号。 Intune 应用管理功能依赖于有意义的 CFBundleVersion（适用于 iOS）和 PackageVersionCode（适用于 Android）。 这些号码都包括在应用清单中。 
 
-Intune|iOS|Android|说明|
+Intune|iOS|Android|描述|
 |---|---|---|---|
 版本号|CFBundleShortVersionString|PackageVersionName |此号码为最终用户指示应用的特定版本。|
 内部版本号|CFBundleVersion|PackageVersionCode |此号码用于指示应用代码中的迭代。|
@@ -140,7 +140,7 @@ Intune|iOS|Android|说明|
 
 - **CFBundleShortVersionString**  
     指定程序包的发行版本号。 此号码表示应用的发行版本。 最终用户使用此号码引用应用。
-  - **CFBundleVersion**  
+- **CFBundleVersion**  
     程序包的内部版本，它标识程序包的迭代。 此号码可标识发行或未发行的程序包。 此号码用于应用检测。
 
 #### <a name="android"></a>Android

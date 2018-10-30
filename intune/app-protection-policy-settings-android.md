@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3778675366a19eb6ba1774f26bbb3523cdcdf92f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ae031f601792251f1dcf7b93fb914a740bc36300
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828323"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136975"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -61,6 +61,7 @@ ms.locfileid: "48828323"
   | com.android.webview |[Webview](https://developer.android.com/reference/android/webkit/WebView.html)，这是包括 Outlook 在内的许多应用所必需的。|
   | com.google.android.tts | Google 文本到语音转换 |
   | com.android.providers.settings | Android 系统设置 |
+  | com.android.settings | Android 系统设置 |
   | com.azure.authenticator | Azure 验证器应用，这是在许多情况下成功进行身份验证所必需的。 |
   | com.microsoft.windowsintune.companyportal | Intune 公司门户|
 
