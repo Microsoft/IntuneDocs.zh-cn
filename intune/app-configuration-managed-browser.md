@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863155"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357081"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>使用 Microsoft Intune 的受保护的浏览器策略管理 Internet 访问  
+# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Internet 访问
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -36,26 +36,37 @@ ms.locfileid: "48863155"
 
 ## <a name="getting-started"></a>开始使用
 
+Microsoft Edge 和 Intune Managed Browser 是 Web 浏览器应用，你和你的最终用户可以从公共应用商店中下载它以供组织使用。 
+
+浏览器策略的操作系统要求：
+- Android 4 及更高版本，或
+- iOS 8.0 及更高版本。
+
+早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
+
+>[!NOTE]
+>Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
+
+
+## <a name="application-protection-policies-for-protected-browsers"></a>受保护浏览器的应用程序保护策略
+
+由于 Edge 和 Managed Browser 已与 Intune SDK 集成，因此也可以向其应用应用保护策略，包括：
+- 控制剪切、复制和粘贴操作的使用。
+- 防止发生屏幕捕获。
+- 确保仅在托管应用和浏览器中打开公司链接。
+
+有关详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
+
 可将这些设置应用于：
 
 - 已向 Intune 注册的设备
 - 注册了其他 MDM 产品的设备
 - 非托管设备
 
-如果用户从应用商店中安装了 Managed Browser，并且 Intune 未托管它，则可将其用作基本的 Web 浏览器，其支持通过 Microsoft MyApps 网站进行单一登录。 用户将被直接转到 MyApps 网站，在其中用户可以看到其预配的所有 SaaS 应用程序。
+>[!NOTE]
+>如果用户从应用商店中安装了 Managed Browser，并且 Intune 未托管它，则可将其用作基本的 Web 浏览器，其支持通过 Microsoft MyApps 网站进行单一登录。 用户将被直接转到 MyApps 网站，在其中用户可以看到其预配的所有 SaaS 应用程序。
 Intune 未托管 Managed Browser 或 Edge 期间，无法访问由 Intune 托管的其他应用程序中的数据。 
 
-Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
-
-可以针对以下设备类型创建受保护的浏览器策略：
-
--   运行 Android 4 和更高版本的设备
-
--   运行 iOS 10.0 及更高版本的设备
-
->[!IMPORTANT]
->早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
-    
 
 ## <a name="conditional-access-for-protected-browsers"></a>受保护浏览器的条件性访问
 
@@ -82,7 +93,7 @@ Managed Browser 现为条件访问的核准客户端应用。 这意味着可以
 8. 在“分配”部分，选择“用户和组”，然后选择要向其分配此策略的用户或组。 
 
     > [!NOTE]
-    > 用户还必须以 Intune 应用保护策略为目标。 有关创建 Intune 应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
+    > 还必须使用 Intune 应用保护策略选择目标用户，以便接收应用配置策略。 有关创建 Intune 应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
 
 9. 在“分配”部分，选择“云应用”，选择要使用此策略保护的应用。
 
@@ -101,6 +112,9 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 
 ## <a name="create-a-protected-browser-app-configuration"></a>创建受保护的浏览器应用配置
 
+>[!IMPORTANT]
+>对于要应用的应用配置，用户的受保护浏览器或设备上的其他应用必须已由 [Intune 应用保护策略]( app-protection-policy.md)托管。
+
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3.  在管理列表中的“客户端应用”边栏选项卡上，选择“应用配置策略”。
@@ -114,8 +128,6 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 11. 在“添加配置策略”边栏选项卡上，选择“添加”。
 12. 创建新配置后，其显示在“应用配置”边栏选项卡上。
 
->[!IMPORTANT]
->目前，Managed Browser 依赖于自动注册。 对于要应用的应用配置，设备上的其他应用程序必须已由 Intune 应用保护策略托管。
 
 ## <a name="assign-the-configuration-settings-you-created"></a>分配已创建的配置设置
 
@@ -275,18 +287,7 @@ Browser 将启动疑难解答模式。
 ### <a name="turn-off-usage-data"></a>关闭用法数据
 Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**使用情况数据**设置关闭数据收集。 不具有对此数据的收集的控制。
 
-
 -   在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
--   Managed Browser 不使用用户在设备上对内置浏览器进行的设置。 Managed Browser 无法访问这些设置。
-
--   如果配置与 Managed Browser 关联的一个应用保护策略中的选项**访问需要简单 PIN** 或**访问需要公司凭据**，且用户选择了身份验证页面上的帮助链接，那么无论是否已将这些用户添加到策略中的阻止列表中，他们都可以浏览任何 Internet 站点。
-
--   Managed Browser 仅能在直接访问站点时阻止访问。 使用中间服务（例如翻译服务）访问站点时，该策略则不会阻止访问。
-
--   在判断是否允许通过身份验证和访问 Intune 文档时，**&#42;.microsoft.com** 不在允许或阻止列表设置的约束范围之内。 始终允许。
-
-### <a name="turn-off-usage-data"></a>关闭用法数据
-Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**使用情况数据**设置关闭数据收集。 不具有对此数据的收集的控制。
 
 ## <a name="next-steps"></a>后续步骤
 

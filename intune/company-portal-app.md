@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828238"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307400"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -61,7 +61,7 @@ ms.locfileid: "48828238"
 
 
 ## <a name="company-branding-customization"></a>公司品牌自定义       
-你可以使用公司徽标、公司名称、主题颜色和背景来自定义公司门户。     
+你可以使用公司徽标、公司名称、主题颜色和背景来自定义公司门户。 为了在没有测试设备的情况下快速预览品牌配置，可以转到 [portal.manage.microsoft.com](https://portal.manage.microsoft.com)。 请注意，上传的徽标将用于电子邮件模板。      
 
 ### <a name="theme-color"></a>主题颜色
 向公司门户应用主题颜色。 选择一种标准颜色，或输入自定义颜色的六位十六进制代码。
@@ -82,3 +82,30 @@ ms.locfileid: "48828238"
 |**在徽标旁显示公司名称**| 选择此选项，以在上传的徽标旁显示输入的公司名称。 |
 
 保存更改后，可以选择边栏选项卡顶部的“预览 Intune Web 门户中的设置”，以查看配置的外观。
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 公司门户键盘快捷方式
+
+最终用户可以使用键盘快捷方式（快捷键）在 Windows 公司门户中触发导航、应用和设备操作。
+
+可以在 Windows 公司门户应用中使用以下键盘快捷方式。
+
+| 领域 | 描述 | 键盘快捷方式 |
+|:------------------:|:--------------:|:-----------------:|
+| 导航菜单 | 导航 | Alt+M |
+|  | 住宅 | Alt+H |
+|  | 所有应用 | Alt+A |
+|  | 已安装的应用 | Alt+I |
+|  | 发送反馈 | Alt+F |
+|  | 我的个人资料 | Alt+U |
+|  | 设置 | Alt+T |
+| 主页 - 设备磁贴 | 重命名 | F2 |
+|  | 删除 | Ctrl+D 或 Delete |
+|  | 检查访问 | Ctrl+M 或 F9 |
+| 设备详细信息 | 重命名 | F2 |
+|  | 删除 | Ctrl+D 或 Delete |
+|  | 检查访问 | Ctrl+M 或 F9 |
+| 应用详细信息 | 安装 | Ctrl+I |
+
+## <a name="next-steps"></a>后续步骤
+
+- [使用 Microsoft Intune 手动添加 Windows 10 公司门户应用](store-apps-company-portal-app.md)

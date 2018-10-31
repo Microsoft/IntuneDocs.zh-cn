@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: b707fcae4af332b13d10e343a84ace801c88c2fd
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 4b7a759b574b44a07499597e89627f70b99e5496
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866416"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643087"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -144,7 +144,9 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 5. 在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中添加应用传递到 `UIApplication canOpenURL` 的各个协议。 请务必先保存所做的更改，再继续执行下一步。
 
-6. 使用 [SDK 存储库](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)中的 IntuneMAMConfigurator 工具完成配置应用的 Info.plist。 该工具有 3 个参数：
+6. 如果应用已不再使用 FaceID，请务必使用默认消息配置 [NSFaceIDUsageDescription Info.plist 键](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)。 这是必需的，这样 iOS 才能让用户知道应用计划如何使用 FaceID。 利用 Intune 应用保护策略设置，可使用 FaceID 获取应用访问权限（由 IT 管理员配置）。
+
+7. 使用 [SDK 存储库](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)中的 IntuneMAMConfigurator 工具完成配置应用的 Info.plist。 该工具有以下三个参数：
 
    |属性|如何使用它|
    |---------------|--------------------------------|
@@ -153,9 +155,6 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
    |- o |  （可选）`<Path to the output plist>` |
 
 如果未指定“-o”参数，将就地修改输入文件。 因为此工具是幂等类型，所以只要更改了应用的 Info.plist 或权利文件，就应该重新运行此工具。 还应在更新 Intune SDK 时下载并运行此工具的最新版本，以防最新版本中更改了 Info.plist 配置要求。
-
-> [!NOTE]
-> 如果应用已不再使用 FaceID，请确保使用默认消息配置 `NSFaceIDUsageDescription` info.plist 键。 这是必需的，这样 iOS 才能让用户知道应用计划如何使用 FaceID。 利用 Intune 应用保护策略设置，可使用 FaceID 获取应用访问权限（由 IT 管理员配置）。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>配置 Azure Active Directory Authentication Library (ADAL)
 

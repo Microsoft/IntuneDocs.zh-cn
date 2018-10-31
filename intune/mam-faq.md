@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/12/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307417"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643019"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -169,7 +169,11 @@ Intune APP SDK 使用一些适用于 SDK 的第一方和第三方版本的高级
 处理不同类型的设置时，先处理应用版本要求，其次是 Android 操作系统版本要求，再是 Android 修补程序版本要求。 然后，按相同顺序检查各类型设置的所有警告。
 
 ## <a name="app-experience-on-ios"></a>iOS 上的应用体验
-
+**如果将指纹或人脸添加到我的设备或将其删除，会发生什么情况？**
+Intune 应用保护策略允许将应用访问权限控制在仅限 Intune 许可用户访问。 控制对应用的访问权限的方法之一是支持的设备上需要具有 Apple 的 Touch ID 或 Face ID。 Intune 执行某个行为后，如果对设备的生物识别数据库有任何更改，则在满足下一个非活动超时值时，Intune 会提示用户输入 PIN。 对生物识别数据的更改包括添加或删除指纹或人脸。 如果 Intune 用户未设置 PIN，则会引导他们设置 Intune PIN。
+ 
+这样做的目的是继续确保应用中的组织数据安全并在应用级别受保护。 此功能仅适用于 iOS，并且需要集成了 Intune APP SDK for iOS 版本 9.0.1 或更高版本的应用程序参与。 必须集成 SDK，以便可以在目标应用程序上强制执行行为。 此集成陆续进行，取决于特定应用程序团队。 参与的一些应用包括 WXP、Outlook、Managed Browser 和 Yammer。 
+  
 **即使将数据传输策略设置为“仅管理的应用”或“无应用”，我也可以使用 iOS 共享扩展在非管理应用中打开工作或学校数据。这样不会泄漏数据吗？**<br></br>
 在不管理设备的情况下，Intune 应用保护策略不能控制 iOS 共享扩展。 因此，Intune _**会在对“公司”数据进行应用外共享之前对其进行加密**_。 可通过尝试在管理的应用外打开“公司”文件对此进行验证。 该文件应进行加密，且无法在托管应用外打开。
 

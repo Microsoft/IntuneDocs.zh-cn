@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 723e7584e1aaf22859b293a93ddbead56f6256e7
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 3165c29da5cc23e9f206dbe3e1dc0ba72c758d47
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866433"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643138"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,17 +40,30 @@ ms.locfileid: "48866433"
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->   
+-->     
+## <a name="week-of-october-15-2018"></a>2018 年 10 月 15 日当周
+
+### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>在 iOS 设备上更改指纹或 Face ID 时，会提示输入 PIN <!-- 2637704  -->
+在 iOS 设备上进行生物识别更改后，现在会提示用户输入 PIN。 这包括对已注册的指纹或 Face ID 的更改。 出现提示的时间取决于如何配置“以下时间(以分钟为单位)之后重新检查访问要求”超时。  未设置 PIN 时，会提示用户设置一个 PIN。 
+ 
+此功能仅适用于 iOS，并且需要集成了 Intune APP SDK for iOS 版本 9.0.1 或更高版本的应用程序参与。 必须集成 SDK，以便可以在目标应用程序上强制执行行为。 此集成陆续进行，取决于特定应用程序团队。 参与的一些应用包括 WXP、Outlook、Managed Browser 和 Yammer。
+
 
 ## <a name="week-of-october-1-2018"></a>2018 年 10 月 1 日当周
 
 ### <a name="app-management"></a>应用管理
 
+#### <a name="access-to-key-profile-properties-using-the-company-portal-app----772203---"></a>使用公司门户应用访问关键配置文件属性 <!-- 772203 -->
+最终用户现在可以从公司门户应用访问关键帐户属性和操作，如密码重置。 
+
+#### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>可通过 iOS 上的 APP 设置阻止第三方键盘 <!-- 1248481 -->
+在 iOS 设备上，Intune 管理员可以阻止使用第三方键盘在受策略保护的应用中访问组织数据。 当应用程序保护策略 (APP) 设置为阻止第三方键盘时，设备用户将在首次使用第三方键盘与公司数据交互时收到一条消息。 将阻止本地键盘以外的所有选项，设备用户不会看到它们。 设备用户只会看到一次对话消息。 
+
 #### <a name="user-account-access-of-intune-apps-on-managed-android-and-ios-devices----1248496---"></a>托管的 Android 和 iOS 设备上的 Intune 应用的用户帐户访问权限<!-- 1248496 -->
 作为 Microsoft Intune 管理员，可控制将哪些用户帐户添加到托管设备上的 Microsoft Office 应用程序。 可以将访问权限限制为仅允许的组织用户帐户，并阻止已注册设备上的个人帐户。 
 
-#### <a name="outlook-mobile-app-configuration-policy---1828527---"></a>Outlook Mobile 应用配置策略 <!--1828527 -->
-现在可以创建适用于 iOS 和 Android 的 Outlook Mobile 应用配置策略。 其他配置设置将为 Outlook Mobile 应用启用时被添加。
+#### <a name="outlook-ios-and-android-app-configuration-policy---1828527---"></a>Outlook for iOS 和 Outlook for Android 应用配置策略 <!--1828527 -->
+现在可以为通过 ActiveSync 协议进行基本身份验证的本地用户创建适用于 iOS 和 Android 的 Outlook for iOS 和 Outlook for Android 应用配置策略。 将为 Outlook for iOS 和 Outlook for Android 启用和添加其他配置设置。
 
 #### <a name="office-365-pro-plus-language-packs----1833450---"></a>Office 365 Pro Plus 语言包 <!-- 1833450 -->
 作为 Intune 管理员，你将能够为通过 Intune 管理的 Office 365 Pro Plus 应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。 在“应用套件设置”边栏选项卡中选择“语言”。
@@ -61,6 +74,11 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>使用 Intune 部署 Windows 10 <!-- 2309001 -->
 在业务线 (LOB) 应用和适用于企业的 Microsoft Store 应用的现有支持上进行构建时，管理员可以使用 Intune 将其组织的大部分现有应用程序部署到 Windows 10 设备上的最终用户。 管理员可以使用各种格式（例如 MSI、Setup.exe 或 MSP）为 Windows 10 用户添加、安装和卸载应用程序。 Intune 将在下载和安装、使用 Windows 10 操作中心通知最终用户状态或重新启动需求之前评估要求规则。 此功能将有效地清除对将此工作负荷转移到 Intune 和云感兴趣的组织所存在的阻碍。 此功能目前处于公共预览状态，我们预计在未来的几个月内为此功能添加重要的新功能。 
 
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>最终用户设备和应用内容菜单 <!-- 2771453 -->
+最终用户现在可以在设备和应用上使用上下文菜单触发常见操作，例如重命名设备或检查符合性。 
+
+#### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows 公司门户键盘快捷方式 <!-- 2771518 -->
+最终用户现在可以使用键盘快捷方式（快捷键）在 Windows 公司门户中触发应用和设备操作。
 
 ### <a name="device-configuration"></a>设备配置
 
@@ -136,6 +154,12 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 
 #### <a name="create-and-assign-multiple-enrollment-status--page-profiles-to-azure-ad-groups----2526564---"></a>创建多个注册状态页配置文件并将其分配给 Azure AD 组<!-- 2526564 -->
 现在可以[创建](windows-enrollment-status.md)多个注册状态页面配置文件并将其分配给 Azure AD 组。
+
+#### <a name="migration-from-device-enrollment-program-to-apple-business-manager-in-intune---2748613--"></a>在 Intune 中从设备注册计划迁移到 Apple Business Manager <!--2748613-->
+Apple Business Manager (ABM) 在 Intune 中工作，可以将你的帐户从设备注册计划 (DEP) 升级到 ABM。 Intune 中的过程是相同的。 若要将你的 Apple 帐户从 DEP 升级到 ABM，请转到 [ https://support.apple.com/en-us/HT208817]( https://support.apple.com/en-us/HT208817)。
+
+### <a name="alert-and-enrollment-status-tabs-on-the-device-enrollment-overview-page---2748656--"></a>“设备注册概述”页上的警报和注册状态选项卡 <!--2748656-->
+警报和注册失败现在显示在“设备注册概述”页的单独选项卡上。
 
 ### <a name="device-management"></a>设备管理
 
@@ -221,7 +245,7 @@ Intune 注册、公司门户和托管浏览器现在仅支持运行 iOS 10 及�
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>在 Windows 10 和更高版本的设备上控制 S 模式 - 公共预览版 <!-- 1958649 -->
 利用该功能更新，可创建一个设备配置文件，用于将 Windows 10 设备从 S 模式下切换出来，或用于防止用户将设备从 S 模式下切换出来。 此功能的位置：Intune >“设备配置” > “配置文件” >  “Windows 10 及更高版本” > “版本升级和模式切换”。
 [S 模式下的 Windows 10 简介](https://www.microsoft.com/windows/s-mode)提供了有关 S 模式的详细信息。
-适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/windows-insider/at-work-pro/)版本（预览版）。
 
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP 配置包自动添加到配置文件 <!-- 2144658 -->
@@ -230,7 +254,7 @@ Intune 注册、公司门户和托管浏览器现在仅支持运行 iOS 10 及�
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>要求用户在设备设置过程中进行连接<!--2311457-->
 现在可以设置设备配置文件，要求设备在 Windows 10 设置过程中连接到网络，然后才能继续完成“网络”页面的操作。 虽然此功能处于预览状态，但 Windows 预览体验内部版本 1809 或更高版本需要使用此设置。
-适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/windows-insider/at-work-pro/)版本（预览版）。
 
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>限制应用，并阻止对 iOS 和 Android Enterprise 设备上公司资源的访问<!-- 2451462 -->
@@ -263,7 +287,7 @@ Intune 注册、公司门户和托管浏览器现在仅支持运行 iOS 10 及�
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>为 Autopilot 设备分配一个用户和友好名称 <!--1346521 -->
 现在可[将用户分配到单独的 Autopilot 设备](enrollment-autopilot.md)。 在使用 Autopilot 为用户设置设备时，管理员还可提供友好名称来问候用户。
-适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/windows-insider/at-work-pro/)版本（预览版）。
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>在 DEP 注册期间，使用 VPP 设备许可证预先设置公司门户 <!-- 1608345 -->
 现可在设备注册计划 (DEP) 注册期间，使用批量采购计划 (VPP) 设备许可证预先设置公司门户。 若要完成此操作，在[创建或编辑注册配置文件](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)时，指定要用于安装公司门户的 VPP 令牌。 请确保令牌没有过期，并且具有足够的公司门户应用许可证。 如果令牌过期或许可证用完，Intune 将改为推送 App Store 公司门户（这将提示输入 Apple ID）。
@@ -275,11 +299,11 @@ Intune 注册、公司门户和托管浏览器现在仅支持运行 iOS 10 及�
 可通过 Intune 中的[移动设备管理](windows-enroll.md)[阻止 Windows 个人设备](enrollment-restrictions-set.md#set-device-type-restrictions)进行注册。 无法使用此功能阻止注册了 [Intune PC 代理](manage-windows-pcs-with-microsoft-intune.md)的设备。 这一功能将在随后几周内推出，因此你可能无法立即在用户界面中看到此功能。
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>在 Autopilot 配置文件中指定计算机名称模式 <!--1849855-->
-可[指定一个计算机名称模板](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，用于在 Autopilot 注册过程中生成和设置[计算机名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+可[指定一个计算机名称模板](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，用于在 Autopilot 注册过程中生成和设置[计算机名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)。 适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/windows-insider/at-work-pro/)版本（预览版）。
 
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>对于 Windows Autopilot 配置文件，隐藏公司登录页和域错误页上的“更改帐户”选项 <!--1901669 -->
-提供[新的 Windows Autopilot 配置文件选项](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，允许管理员隐藏公司登录页和域错误页上的更改帐户选项。 要隐藏这些选项，需在 Azure Active Directory 中配置公司品牌。 适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)版本（预览版）。
+提供[新的 Windows Autopilot 配置文件选项](enrollment-autopilot.md#create-an-autopilot-deployment-profile)，允许管理员隐藏公司登录页和域错误页上的更改帐户选项。 要隐藏这些选项，需在 Azure Active Directory 中配置公司品牌。 适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/windows-insider/at-work-pro/)版本（预览版）。
 
 
 
@@ -310,7 +334,7 @@ Intune 注册、公司门户和托管浏览器现在仅支持运行 iOS 10 及�
 - 改善了大型应用目录的性能
 - 为所有用户增加了辅助功能  
 
-已更新 [Intune 公司门户网站文档](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)以体现这些更改。 若要查看应用增强功能的示例，请参阅[Intune 最终用户应用的 UI 更新](whats-new-app-ui.md)。  
+已更新 [Intune 公司门户网站文档](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)以体现这些更改。 若要查看应用增强功能的示例，请参阅[Intune 最终用户应用的 UI 更新](whats-new-app-ui.md)。  
 
 ### <a name="monitor-and-troubleshoot"></a>监视和故障排除
 
@@ -469,7 +493,7 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 ### <a name="device-configuration"></a>设备配置
 
 #### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>使用“访问工作或学校帐户”设置选择设备类别 <!-- 1058963 eenotready --> 
-如果已启用[设备组映射](https://docs.microsoft.com/en-us/intune/device-group-mapping)，Windows 10 用户现将在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后，看到选择设备类别的提示。 
+如果已启用[设备组映射](https://docs.microsoft.com/intune/device-group-mapping)，Windows 10 用户现将在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后，看到选择设备类别的提示。 
 
 #### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>使用 sAMAccountName 作为电子邮件配置文件的帐户用户名 <!-- 1500307 -->
 可使用本地“sAMAccountName”作为 Android、iOS 和 Windows 10 的电子邮件配置文件的帐户用户名。 还可从 Azure Active Directory (Azure AD) 中的 `domain` 或 `ntdomain` 属性获取域。 或者，输入自定义静态域。
@@ -678,8 +702,8 @@ Intune 管理员能够设置应用程序启动要求以强制使用密码而不�
 #### <a name="line-of-business-lob-app-support-for-macos----1473977---"></a>对 macOS 的业务线 (LOB) 应用支持 <!-- 1473977 -->
 Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 使用 GitHub 中提供的工具对 macOS LOB 应用进行预处理后，可以将该应用添加到 Intune。 在 Azure 门户的“Intune”边栏选项卡中，选择“客户端应用”。 在“客户端应用”边栏选项卡上，选择“应用” > “添加”。 在“添加应用”边栏选项卡，选择“业务线应用”。 
 
-#### <a name="built-in-all-users-and-all-devices-group-for-android-for-work-afw-app-assignment----1813073---"></a>面向 Android for Work (AFW) 应用分配的内置“所有用户”和“所有设备”组<!-- 1813073 -->
-你可以利用面向 AFW 应用分配的内置“所有用户”和“所有设备”。 有关详细信息，请参阅[在 Microsoft Intune 中包括和排除应用分配](apps-inc-exl-assignments.md)。
+#### <a name="built-in-all-users-and-all-devices-group-for-android-enterprise-work-profile-app-assignment----1813073---"></a>面向 Android Enterprise 工作配置文件应用分配的内置“所有用户”和“所有设备”组 <!-- 1813073 -->
+可以利用面向 Android Enterprise 工作配置文件应用分配的内置“所有用户”和“所有设备”组。 有关详细信息，请参阅[在 Microsoft Intune 中包括和排除应用分配](apps-inc-exl-assignments.md)。
 
 #### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Intune 将重新安装用户卸载的所需应用 <!-- 1947010 -->
 如果最终用户卸载所需应用，Intune 将在 24 小时内自动重新安装该应用，而不是等待 7 天的重新评估周期。
@@ -707,10 +731,10 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 
 对于教育配置文件，新的设置在“打印机”类别下可用：“打印机”、“默认打印机”、“添加新的打印机”。
 
-#### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>在个人资料中显示呼叫方 ID - Android for Work <!--1098984 -->
+#### <a name="show-caller-id-in-personal-profile---android-enterprise-work-profile---1098984---"></a>在个人资料中显示呼叫方 ID - Android Enterprise 工作配置文件 <!--1098984 -->
 在设备上使用个人资料时，最终用户可能不会看到工作联系人的呼叫方 ID 详细信息。 
 
-进行此更新后，“Android for Work” > “设备限制” > “Work 配置文件设置”中将出现新设置：
+进行此更新后，“Android Enterprise” > “设备限制” > “工作配置文件设置”中将出现新设置：
 - 在个人资料中显示工作联系人呼叫方 ID
 
 启用（不配置）后，工作联系人的呼叫方详细信息将显示在个人资料中。 阻止后，工作联系人的呼叫方号码不会显示在个人资料中。 
@@ -736,12 +760,12 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>对 SCEP 证书使用自定义使用者名称<!-- 2064190 -->
 可以使用“OnPremisesSamAccountName”作为 SCEP 证书配置文件中自定义使用者的公用名称。 例如，你可以使用 `CN={OnPremisesSamAccountName})`。
 
-####  <a name="block-camera-and-screen-captures-on-android-for-work----1098977---"></a>在 Android for Work 上阻止照相机和屏幕捕获<!-- 1098977 -->
+####  <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles----1098977---"></a>在 Android Enterprise 工作配置文件上阻止照相机和屏幕捕获 <!-- 1098977 -->
 配置 Android 设备的设备限制时，可以阻止两个新属性： 
 - 照相机：阻止访问设备上的所有照相机
 - 屏幕捕获：阻止屏幕捕获，还会阻止在不具有安全视频输出的显示设备上显示内容
 
-适用于 Android for Work。
+适用于 Android Enterprise 工作配置文件。
 
 
 ### <a name="device-enrollment"></a>设备注册
@@ -807,7 +831,7 @@ Intune 管理员可以[删除 AutoPilot 设备](enrollment-autopilot.md#delete-a
 有关详细信息，请参阅[发送 macOS 错误](/intune-user-help/send-errors-macos)。
 
 #### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Intune 适用于 Windows 10 公司门户应用中的 Fluent 设计系统 <!-- 1195010 WNready -->
-Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视图](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics)。 在这款应用旁边，你会注意到一个静态、垂直的所有顶级页面列表。 单击任意链接，可以快速查看页面并在其之间进行切换。 这是你将看到的众多更新中的第一个更新，是我们持续不断努力成果的一部分，以便在 Intune 中创造更具适应性、更能感同身受且更为熟悉的体验。 若要查看更新后的外观，请转到[应用 UI 中的新增功能](whats-new-app-ui.md)。
+Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视图](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)。 在这款应用旁边，你会注意到一个静态、垂直的所有顶级页面列表。 单击任意链接，可以快速查看页面并在其之间进行切换。 这是你将看到的众多更新中的第一个更新，是我们持续不断努力成果的一部分，以便在 Intune 中创造更具适应性、更能感同身受且更为熟悉的体验。 若要查看更新后的外观，请转到[应用 UI 中的新增功能](whats-new-app-ui.md)。
 
 ## <a name="week-of-april-16-2018"></a>2018 年 4 月 16 日当周
 
@@ -816,7 +840,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 为 iOS 创建新的 VPN 配置文件时，现在提供两个选项：Cisco AnyConnect 和 Cisco Legacy AnyConnect。 Cisco AnyConnect 配置文件支持 4.0.7x 和更新版本。 现有 iOS Cisco AnyConnect VPN 配置文件将被标记为“Cisco Legacy AnyConnect”，并将继续适用于 Cisco AnyConnect 4.0.5x 和较旧版本，如现在一样。
 
 > [!NOTE]
-> 此更改仅适用于 iOS。 将继续只提供一个适用于 Android、Android for Work 和 macOS 平台的 Cisco AnyConnect 选项。
+> 此更改仅适用于 iOS。 将继续只提供一个适用于 Android、Android Enterprise 工作配置文件和 macOS 平台的 Cisco AnyConnect 选项。
 
 #### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>Jamf 注册的 macOS 设备现在可以向 Intune 注册<!-- 2370684 -->
 
@@ -872,7 +896,7 @@ macOS 公司门户版本 1.3 和 1.4 未成功向 Intune 注册 Jamf 设备。 m
 
 Apple 刚刚发布了 macOS 10.14。 随后，Intune 将于 2018 年 12 月支持 macOS 10.12 及更高版本。 
 
-### <a name="how-does-this-affect-me"></a>这对我有何影响？
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
 
 从 12 月开始，使用 macOS 10.11 及更早版本的设备上的最终用户将无法使用公司门户注册 Intune。 他们需要将设备升级到 macOS 10.12 或更高版本，并将公司门户应用升级到最新版本，以继续获得支持和新功能。 
 
@@ -886,13 +910,14 @@ Apple 刚刚发布了 macOS 10.14。 随后，Intune 将于 2018 年 12 月支�
 
 12 月以后，未使用上述设备的最终用户将无法访问最新版本的 macOS 公司门户应用。 运行 macOS 10.12 以下不受支持版本的现有已注册设备将继续由 Intune 管理控制台进行管理并在其中列出。
 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
 
-要求最终用户在 2018 年 12 月前将其设备升级到支持的 OS 版本。 
+- 要求最终用户在 2018 年 12 月前将其设备升级到支持的 OS 版本。 
 - 检查 Azure 控制台上的 Intune 中的 Intune 报告，查看哪些设备或用户可能会受到影响。 转到“设备”>“所有设备”并按 OS 进行筛选。 可以添加其他列，帮助确定组织中哪些人员拥有运行 macOS 10.11 的设备。 
 - 如果使用的是混合移动设备管理 (MDM)，请转到 Configuration Manager 控制台中的“资产和符合性”>“设备”，右键单击这些列以添加“操作系统”和“客户端版本”列，然后按 OS 排序。 请注意，混合 MDM 现已弃用，应尽快迁移到 Azure 上的 Intune。 
  
-其他信息 [https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)
+#### <a name="additional-information"></a>其他信息
+有关详细信息，请参阅[使用公司门户应用在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)。
  
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>更改计划：针对顶级客户的新 Intune 支持体验 
@@ -901,7 +926,7 @@ Apple 刚刚发布了 macOS 10.14。 随后，Intune 将于 2018 年 12 月支�
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 在 12 月 3 日后，你将无法在 MPO 中创建支持请求。  当你尝试执行此操作时，你将看到一个不能解除的提示，以重定向到 Intune on Azure。 在此处，你可以创建一个将被路由到 Intune 专用的 Microsoft 支持的支持请求，以及时诊断和解决你的问题。 无法在 Azure 门户中查看在 MPO 门户中创建的支持请求，因此，应停止在 MPO 中创建支持请求。  
 
-如果你使用混合移动设备管理（混合 MDM）或使用共同管理，你可以继续使用 MPO 为 ConfigMgr 创建支持请求，但使用 Azure 门户为 Intune 创建支持请求。 提醒一下，混合 MDM 已被弃用，应计划尽快移动到 Intune on Azure。 有关详细信息，请参阅“从混合移动设备管理移动到 Intune on Azure”。
+如果你使用混合移动设备管理（混合 MDM）或使用共同管理，你可以继续使用 MPO 为 ConfigMgr 创建支持请求，但使用 Azure 门户为 Intune 创建支持请求。 提醒一下，混合 MDM 已被弃用，应计划尽快移动到 Intune on Azure。 有关详细信息，请参阅[从混合移动设备管理移动到 Azure 上的 Intune](https://aka.ms/hybrid_notification)。
 
 请注意，只有具有全局管理员、Intune 服务管理员和服务支持管理员角色的用户才能在 Azure 门户中创建支持票证。
 
@@ -912,7 +937,8 @@ Apple 刚刚发布了 macOS 10.14。 随后，Intune 将于 2018 年 12 月支�
 - 单击“其他信息”以获取详细信息和有用的链接。
 
 #### <a name="additional-information"></a>其他信息
-[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+有关详细信息，请参阅 [Microsoft Intune 支持团队博客文章](https://aka.ms/IntuneSupport_MPO_to_Azure)。
+
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>执行操作：请在 Intune 中更新 Android 设备限制或符合性策略密码设置
 Intune 将删除 Android 4.4 及更高版本设备的可用密码类型“设备默认值”。 由于 Android 平台和设备默认值的差异，该策略通常被设备视为可选策略。 为了消除在 Android 上强制执行此设置时造成的混淆，我们会在即将发布的版本中将此设置从 UI 中删除。 

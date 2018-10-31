@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 10.0 及更高版本
-- Mac OS X 10.11 及更高版本
+- Mac OS X 10.11 及更高版本（在 2018 年 12 月，支持的版本将更改为 10.12 及更高版本）
 
 ### <a name="google"></a>Google
 - Android 4.4 及更高版本（包括 Samsung Knox Standard 4.4 及更高版本）

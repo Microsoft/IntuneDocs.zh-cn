@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/28/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102049"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391563"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -151,7 +151,7 @@ Remember that you need to implement conditional access policies in addition to c
 还可在不使用任何条件访问的情况下使用设备符合性策略。 独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，你可以获取有关未加密的设备数，或哪些设备已越狱或取得 root 权限的报告。 在不使用条件访问的情况下使用符合性策略时，公司资源将不具有访问限制。
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>部署设备符合性策略的方法
-可向用户组中的用户或设备组中的设备部署符合性策略。 将符合性策略部署到用户后，会对所有用户设备检查符合性。
+可向用户组中的用户或设备组中的设备部署符合性策略。 将符合性策略部署到用户后，会对所有用户设备检查符合性。 在 Windows 10 版本 1803 和更高版本的设备上，如果主要用户未注册设备，则建议部署到设备组。 在此方案中使用设备组有助于生成符合性报告。
 
 默认“符合性策略设置”（“Azure 门户”>“设备符合性”）包括：
 
