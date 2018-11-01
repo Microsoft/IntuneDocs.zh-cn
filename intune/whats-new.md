@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3165c29da5cc23e9f206dbe3e1dc0ba72c758d47
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 800d044860a8a264facdeb49f1f59526ee53acdd
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643138"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149115"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,17 @@ ms.locfileid: "49643138"
 ### Role-based access control
 
 -->     
+## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日当周
+
+### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>即使只有一个电子邮件配置文件，也可从设备删除电子邮件配置文件 <!-- 1818139 -->
+以前，如果只有唯一一个电子邮件配置文件，则无法从设备删除该电子邮件配置文件。 有了此更新，该行为发生了变化。 现在，即使设备上只有唯一一个电子邮件配置文件，也可删除该电子邮件配置文件。 有关详细信息，请参阅[使用 Intune 向设备添加电子邮件设置](email-settings-configure.md)。
+
+### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>从设备删除 PKCS 和 SCEP 证书 <!-- 3218390 -->
+在某些情况下，即使从组中删除策略，删除配置或合规性部署，或是由管理员更新现有 SCEP 或 PKCS 配置文件，PKCS 和 SCEP 证书仍会存留在设备上。 此更新改变了这种情况。 在某些情况下，PKCS 和 SCEP 证书会从设备中删除，而在其他一些情况下，这些证书会存留在设备上。 请参阅[在 Microsoft Intune 中删除 SCEP 和 PKCS 证书](remove-certificates.md)了解这些情况。
+
+### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>适用于 Intune 的 PowerShell 模块 - 提供预览版 <!-- wnready 951068 -->
+现在，[GitHub]( https://aka.ms/intunepowershell) 上提供了新 PowerShell 模块的预览版，该模块可通过 Microsoft Graph 提供对 Intune API 的支持。 有关如何使用此模块的详细信息，请参阅该处的自述文件。 
+
 ## <a name="week-of-october-15-2018"></a>2018 年 10 月 15 日当周
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>在 iOS 设备上更改指纹或 Face ID 时，会提示输入 PIN <!-- 2637704  -->

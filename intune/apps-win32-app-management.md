@@ -1,12 +1,12 @@
 ---
 title: 将 Win32 应用添加到 Microsoft Intune
 titlesuffix: ''
-description: 了解如何将 Win32 应用添加到 Microsoft Intune 并进行管理。
+description: 了解如何通过 Microsoft Intune 添加、交付和管理 Win32 应用。 本主题概述了 Intune Win32 应用交付和管理功能，以及 Win32 应用疑难解答信息。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357098"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959581"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 独立版 - Win32 应用管理（公共预览版）
 
-Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接的客户可以使用 Configuration Manager 进行 Win32 应用管理，但只使用 Intune 的客户将拥有更强大的 Win32 业务线 (LOB) 应用管理功能。 本文档概述了 Intune Win32 应用管理功能和疑难解答信息。
+Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接的客户可以使用 Configuration Manager 进行 Win32 应用管理，但只使用 Intune 的客户将拥有更强大的 Win32 业务线 (LOB) 应用管理功能。 本主题概述了 Intune Win32 应用管理功能和疑难解答信息。
 
 ## <a name="prerequisites-for-public-preview"></a>公共预览版的先决条件
 

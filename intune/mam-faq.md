@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643019"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225448"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -181,6 +181,15 @@ Intune 应用保护策略允许将应用访问权限控制在仅限 Intune 许�
 当用户尝试从公司帐户访问目标应用时，系统将在最终用户设备上按特定顺序应用 Intune 应用访问保护策略。 通常先访问擦除，然后是块，再是可取消的警告。 例如，如果适用于特定用户/应用，则先应用阻止用户访问的最低 iOS 操作系统设置，再应用警告用户更新其 iOS 版本的最低 iOS 操作系统设置。 因此，如果 IT 管理员将最低 iOS 操作系统配置为 11.0.0.0 并将最低 iOS 操作系统（仅限警告）配置为 11.1.0.0，则当尝试访问该应用的设备具有 iOS 10 时，系统将基于更严格的最低 iOS 操作系统版本设置阻止最终用户的访问。
 
 处理不同类型的设置时，先处理 Intune App SDK 版本要求，其次是应用版本要求，再是 iOS 操作系统版本要求。 然后，按相同顺序检查各类型设置的所有警告。 建议仅根据 Intune 产品团队针对关键阻止方案提供的指导配置 Intune App SDK 版本要求。
+
+## <a name="app-protection-policies---policy-refresh"></a>应用保护策略 - 策略刷新
+- 应用每 30 分钟检入一次应用服务。
+- 30 分钟的阈值以计时器为基础。
+    - 如果应用在 30 分钟时处于活动状态，则会在 30 分钟时检入。
+    - 如果应用在 30 分钟时处于睡眠状态，则会在下一焦点时检入。
+- 如果未向用户分配策略，则每 8 小时检入一次。
+- 如果未分配 Intune 许可证，则每 24 小时检入一次。
+
 
 ## <a name="see-also"></a>另请参阅
 - [实现 Intune 计划](planning-guide-onboarding.md)
