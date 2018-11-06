@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 9aac9d7523673d6907bf75bf91e1e9802a381ec2
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905302"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149047"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置电子邮件设置
 
@@ -67,9 +67,13 @@ ms.locfileid: "37905302"
 
 ## <a name="further-information"></a>更多信息
 
-### <a name="remove-an-email-profile"></a>删除电子邮件配置文件
+## <a name="remove-an-email-profile"></a>删除电子邮件配置文件
 
-如果想要从设备中删除电子邮件配置文件，请编辑分配并删除包含该设备的任何组。 如果电子邮件配置文件是设备上唯一的电子邮件配置文件，则无法通过此方法将其删除。
+电子邮件配置文件分配给设备组，而不是用户组。 可以通过不同的方式从设备删除电子邮件配置文件，即使设备上只有一个电子邮件配置文件：
+
+- **选项 1**：打开电子邮件配置文件（“设备配置” > “配置文件”），然后选择“分配”。 “包含”选项卡将显示已分配配置文件的组。 右键单击“组”，然后单击“删除”。 务必保存你的更改。
+
+- **选项 2**：[擦除或停用设备](devices-wipe.md)。 这些操作可用于有选择地或完全删除数据和设置。
 
 ### <a name="securing-email-access"></a>保护电子邮件访问权限
 

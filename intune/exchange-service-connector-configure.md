@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46d28ba8d9d8c6ec2adf2b41adbb9e7336676811
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 6132e77c4f4a86a30a55d436219f0d7e2a49980c
+ms.sourcegitcommit: ff6db80cb3638e1eec0a4c8b185649363e9e552e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806317"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>为 Intune 和 Exchange Online 配置 Exchange 服务连接器
 本文介绍如何将 Microsoft Intune 服务连接到 Exchange Online 或新 Exchange Online Dedicated 服务。 若要确定 Exchange Online Dedicated 环境采用的是**新**版本还是**旧**版本，请与帐户管理员联系。

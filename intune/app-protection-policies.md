@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3478308e8e2c219631d0df864ca2add6cc57cda2
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: d7dbb0214bb80fa0f72808c15eacc6799c0807cc
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075857"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136941"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -52,7 +52,7 @@ ms.locfileid: "49075857"
 
 6. 在“添加策略”边栏选项卡中，选择“配置所需设置”以打开“设置”。
 
-   有两种类别的策略设置：“数据重定位”和“访问”。  数据重定位策略适用于应用内外的数据移动。 访问策略决定最终用户如何在工作环境中访问应用。
+   有两种类别的策略设置：“数据重定位”和“访问”。  数据重定位策略适用于应用内外的数据移动。 访问策略决定最终用户如何访问工作环境中的应用。
    为了帮助你入门，策略设置具有默认值。 如果默认值满足需求，则无须进行任何更改。
 
    > [!TIP]

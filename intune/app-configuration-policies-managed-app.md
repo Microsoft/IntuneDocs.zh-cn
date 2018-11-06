@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799517"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136958"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>为受管理应用添加应用配置策略（无需设备注册）
 
@@ -39,7 +39,7 @@ ms.locfileid: "48799517"
       在 Azure 门户中显示的配置文件说明。
     - **设备注册类型**  
       选择“管理应用”。
-6. 选择“关联的应用”以选择要配置的应用。 从已同意并与 Intune 同步的应用列表中选择应用。
+6. 选择“关联的应用”以选择要配置的应用 **** 。 从已同意并与 Intune 同步的应用列表中选择应用。
 7. 对于该应用支持的每个配置设置，请键入“名称”和“值”，然后选择省略号 (…)。  
     若要删除配置，请选择省略号 (…)，然后选择“删除”。  
     
@@ -57,7 +57,7 @@ Intune 支持在配置设置中使用以下令牌类型。 不支持其他自定
 - \{\{accountid\}\} - 例如 fc0dc142-71d8-4b12-bbea-bae2a8514c81
 - \{\{userid\}\} - 例如 3ec2c00f-b125-4519-acf0-302ac3761822
 - \{\{username\}\} - 例如 John Doe
-- \{\{PrimarySMTPAddress\}\} - 例如 testuser@ad.domain.com 
+- \{\{PrimarySMTPAddress\}\} - 例如 testuser@ad.domain.com
 
 
 > [!Note]  

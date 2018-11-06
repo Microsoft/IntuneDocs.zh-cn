@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: a13d9b6ee37dc42e90d7c99538c9fd2e5e0d1b7b
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652132"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001586"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Microsoft Intune 的早期版本 - 2018 年 10 月
 
@@ -118,8 +118,9 @@ Autopilot 设备将每 12 小时同步一次，而不是每 24 小时同步一�
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>另一个 MDM 使用的 Apple VPP 令牌 <!-- 1488946 -->
 Intune 会检测是否 Intune 和另一个 MDM 同时在使用同一个 Apple 批量采购计划 (VPP) 令牌，并显示相关详细信息。
 
-### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>显示 iOS 版本号和生成号 <!-- 1892471 -->
-在“设备符合性” > “设备符合性”中，会显示 iOS 操作系统版本。 在未来的某个更新中，会显示生成号。
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>将显示 iOS 和 macOS 的版本号和生成号 <!-- 1892471 -->
+在“设备符合性” > “设备符合性”中，会显示 iOS 和 macOS 操作系统版本。 在未来的某个更新中，会显示这两个平台的生成号。
+
 Apple 每次发布安全更新时，会保留版本号，更新生成号。 通过所显示的生成号，可轻松确认是否已安装漏洞更新。
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>“设备符合性仪表板”中的停用设备 <!-- 1981119 -->

@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: af80dd180e8fdbaeb633bdffaad90ccdf02d5380
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289017"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959564"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理 PowerShell 脚本以供 Windows 10 设备使用
 Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows 10 设备上运行。 管理扩展对 Windows 10 移动设备管理 (MDM) 功能进行了补充，使你可更轻松地采用新式管理。
@@ -33,7 +33,7 @@ Intune 管理扩展对 Windows 10 MDM 内置功能进行了补充。 可创建 P
 
 ## <a name="prerequisites"></a>必备条件
 Intune 管理扩展具有以下先决条件：
-- 设备必须加入 Azure AD。 这不包括混合 AD 加入的设备。
+- 设备必须加入 Azure AD。 Intune 管理扩展支持已加入 Azure Active Directory、混合域和已注册共同管理的 Windows 设备。
 - 设备必须运行 Windows 10 版本 1607 或更高版本。
 - 必须[在 Azure AD 中启用](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)自动 MDM 注册，且设备必须自动注册到 Intune。
 
