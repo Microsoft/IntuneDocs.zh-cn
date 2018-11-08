@@ -29,12 +29,14 @@ items:
     href: quickstart-create-user.md
   - name: 创建组
     href: quickstart-create-group.md
-  - name: 创建策略
-    href: quickstart-create-policy.md
-  - name: 设置设备密码长度
-    href: quickstart-set-password-length-android.md
   - name: 设置自动注册
     href: quickstart-setup-auto-enrollment.md
+  - name: 注册 Windows 10 设备
+    href: quickstart-enroll-windows-device.md
+  - name: 创建设备合规性策略
+    href: quickstart-set-password-length-android.md
+  - name: 将通知发送到不符合的设备
+    href: quickstart-send-notification.md
   - name: 创建和分配自定义角色
     href: quickstart-create-custom-role.md
   - name: 创建电子邮件设备配置文件
@@ -839,9 +841,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: 词汇表
     href: intune-glossary.md
-ms.openlocfilehash: 58768bc109a5c0e079779959a7d176565582a138
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: b103a34f2e937d528e1ac350b190a112b598bd68
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50971425"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225877"
