@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075891"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025179"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 注册 Windows 设备  
 Windows Autopilot 简化了设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -26,6 +26,12 @@ Windows Autopilot 简化了设备注册。 生成和维护自定义操作系统�
 ## <a name="prerequisites"></a>必备条件
 - [已启用的 Windows 自动注册](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>如何获取用于在 InTune 中导入的 CSV
+
+请参阅“了解 powershell cmdlet”，了解使用说明。
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
 ## <a name="add-devices"></a>添加设备
 
@@ -153,15 +159,14 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 - 同步在其他门户中完成的配置文件分配
 - 显示在其他门户中对设备列表所做的更改
 
-## <a name="redeploying-windows-autopilot"></a>重新部署 Windows Autopilot
+## <a name="windows-autopilot-for-existing-devices"></a>现有设备的 Windows Autopilot
 
-通过 Configuration Manager [使用 Autopilot 为现有设备注册](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)时，可以按交换码 ID 对 Windows 设备进行分组。 交换码 ID 是 Autopilot 配置文件的参数。 [Azure AD 设备属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) 将自动设置为“OfflineAutopilotprofile - <correlator ID>”。 这样一来，即可通过使用离线 Autopilot 注册的 enrollmentprofileName 属性，根据交换码 ID 创建任意 Azure AD 动态组。
+通过 Configuration Manager [使用 Autopilot 为现有设备注册](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)时，可以按交换码 ID 对 Windows 设备进行分组。 交换码 ID 是 Autopilot 配置文件的参数。 [Azure AD 设备属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) 将自动设置为“OfflineAutopilotprofile - \< correlator ID\>”。 如此，即可使用 enrollmentprofileName 属性基于交换码 ID 创建任意 Azure AD 动态组。
 
-如果要升级不支持 Autopilot 注册的旧版 Windows，可以使用离线 Autopilot 配置文件。 在 Windows 10 1809 或更高版本的全新安装期间，Autopilot 可以提供帮助。 作为离线配置文件的一部分，可以指定交换码 ID。 
-
-警告：由于在 Intune 中未预先列出交换码 ID，因此用户可以选择使用任何所需的交换码 ID 进行注册。 如果用户创建与 Autopilot 或 Apple DEP 配置文件名称匹配的交换码 ID，设备将基于 enrollmentProfileName 属性添加到任何动态 Azure AD 设备组。 避免此冲突的方法：
-- 始终创建根据整个 enrollmentProfileName 值进行匹配的动态组规则
-- 从不以“OfflineAutopilotprofile-”开头命名 Autopilot 或 Apple DEP 配置文件。
+>[!WARNING] 
+> 由于在 Intune 中未预先列出交换码 ID，因此设备可能会报告所需的任何交换码 ID。 如果用户创建与 Autopilot 或 Apple DEP 配置文件名称匹配的交换码 ID，设备将基于 enrollmentProfileName 属性添加到任何动态 Azure AD 设备组。 避免此冲突的方法：
+> - 始终创建根据整个 enrollmentProfileName 值进行匹配的动态组规则
+> - 从不以“OfflineAutopilotprofile-”开头命名 Autopilot 或 Apple DEP 配置文件。
 
 ## <a name="next-steps"></a>后续步骤
 在为已注册的 Windows 10 设备配置 Windows Autopilot 后，了解如何管理这些设备。 有关详细信息，请参阅[什么是 Microsoft Intune 设备管理？](https://docs.microsoft.com/intune/device-management)

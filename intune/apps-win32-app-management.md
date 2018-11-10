@@ -1,27 +1,10 @@
 ---
-title: 将 Win32 应用添加到 Microsoft Intune
-titlesuffix: ''
-description: 了解如何通过 Microsoft Intune 添加、交付和管理 Win32 应用。 本主题概述了 Intune Win32 应用交付和管理功能，以及 Win32 应用疑难解答信息。
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/23/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959581"
+title: 将 Win32 应用添加到 Microsoft Intune titlesuffix：description: 了解如何通过 Microsoft Intune 添加、交付和管理 Win32 应用。 本主题概述了 Intune Win32 应用交付和管理功能，以及 Win32 应用疑难解答信息。 keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 独立版 - Win32 应用管理（公共预览版）
 
 Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接的客户可以使用 Configuration Manager 进行 Win32 应用管理，但只使用 Intune 的客户将拥有更强大的 Win32 业务线 (LOB) 应用管理功能。 本主题概述了 Intune Win32 应用管理功能和疑难解答信息。
@@ -32,7 +15,7 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 - Windows 10 客户端需要： 
     - 已联接到 Azure Active Directory (AAD) 或混合 Azure Active Directory，且
     - 在 Intune（MDM 托管）中注册
-- 在公共预览版中，Windows 应用程序大小的上限为每个应用 2 GB 
+- 在公共预览版中，Windows 应用程序大小的上限为每个应用 8 GB 
 
 > [!NOTE]
 > 我们目前正在测试 Windows 10 版本 1607 的专业版和教育版，欢迎提供反馈意见。
@@ -109,6 +92,11 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 3.  添加根据应用的 GUID 卸载应用的完整卸载命令行。 
 
     例如：`msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > 可以将 Win32 应用配置为在“用户”或“系统”上下文中安装。 “用户”上下文表示仅指定用户。 “系统”上下文表示 Windows 10 设备的所有用户。
+    >
+    > 最终用户无需登录设备即可安装 Win32 应用。
 
 4.  完成后，选择“确定”。
 
@@ -233,7 +221,6 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 ### <a name="troubleshooting-areas-to-consider"></a>故障排除需要考虑的方面
 - 检查目标以确保设备上已安装代理 - 面向组的 Win32 应用或 PowerShell 脚本将为安全组创建代理安装策略。
 - 检查 OS 版本 - Windows 10 1607 及更高版本。  
-- AAD 用户是否登录到客户端计算机？
 - 检查 Windows 10 SKU - Windows 10 S 或以 S 模式运行的 Windows 版本不支持 MSI 安装。
 
 ## <a name="next-steps"></a>后续步骤

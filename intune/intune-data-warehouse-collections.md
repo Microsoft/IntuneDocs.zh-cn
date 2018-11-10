@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 4df55309587ac079cfeaec299d70635b090e300b
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: e54b35d677d34067bfbd0ad6aad86e3dfe17fb90
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821619"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971476"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 数据仓库收集
 
@@ -499,7 +499,7 @@ termsAndConditions 实体表示给定条款和条件(T&C) 策略的元数据和�
 |    description    |    这些条款和条件的说明。     |         |
 |    title    |    这些条款和条件的标题。     |    设备管理公司策略        |
 |    summaryOfTerms    |    向用户提供的条款的摘要。     |    我同意条款和条件。    |
-|    termsAndConditionsBodyText    |    这些条款和条件文本的正文。       |    强制执行 6 位 PIN 的*设备加密*    |
+|    termsAndConditionsBodyText    |    这些条款和条件文本的正文。       |    “设备加密”：强制执行 6 位 PIN    |
 |    isDeleted    |    该值是否被删除的 True 或 False 值。     |    False    |
 |    startDateInclusiveUTC    |    这些条款和条件的开始日期。     |    2018/8/23 4:01:34 AM    |
 |    endDateEclusiveUTC    |    这些条款和条件的结束日期。     |    9999/12/31 12:00:00 AM    |

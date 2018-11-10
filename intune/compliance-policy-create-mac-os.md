@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321435"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236401"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 添加适用于 macOS 设备的设备符合性策略
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune macOS 设备符合性策略确定 macOS 设备为实现符合性而必须满足的规则和设置。 将设备符合性策略与条件访问一起使用时，可允许或阻止访问公司资源。 还可获取设备报表并针对非符合性采取措施。 可在 Intune Azure 门户中创建每个平台的设备符合性策略。 若要了解有关符合性策略以及所有系统必备组件的详细信息，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
@@ -90,6 +88,17 @@ Intune macOS 设备符合性策略确定 macOS 设备为实现符合性而必须
 - **防火墙**：“启用”防火墙可帮助保护设备免受未经授权的访问。 启用此功能，可以处理传入的 Internet 连接，并使用隐藏模式。 “未配置”（默认）使防火墙保持关闭状态，允许网络流量（未阻止）。
 - **传入连接**：阻止所有传入网络连接，DHCP、Bonjour 和 IPSec 等基本 Internet 服务需要的连接除外。 此设置还会阻止所有共享服务，包括屏幕共享、远程访问、iTunes 音乐共享等。 “未配置”（默认）允许传入连接和共享服务。 
 - **隐藏模式**：启用隐藏模式以防止设备响应可能由恶意用户发出的探测请求。 启用后，设备会继续响应授权应用的传入请求。 “未配置”（默认）使隐藏模式保持关闭状态。
+
+### <a name="gatekeeper"></a>网关守卫
+
+**允许从这些位置下载应用**：允许在不同位置的设备上安装支持的应用程序。 位置选项包括：
+
+- **未配置**：默认。 网关守卫选项对于符合性或不符合性无影响。 
+- **Mac App Store**：仅安装 Mac App Store 的应用。 不能从第三方或由未确认的开发人员安装应用。 如果用户选择网关守卫来安装 Mac App Store 外部的应用，则该设备将被视为不符合。
+- **Mac App Store 和已确认的开发人员**：安装 Mac App Store 的应用并由已确认的开发人员安装应用。 macOS 检查开发人员的身份，并执行一些其他检查，以验证应用的完整性。 如果用户选择网关守卫来安装这些选项外部的应用，则该设备会被视为不符合。
+- **任意位置**：应用可以从任何地方以及由任何开发人员安装。 此选项最不安全。
+
+有关 Apple 文档中的更多详细信息，请参阅 [macOS 上的网关守卫](https://support.apple.com/HT202491)。
 
 ## <a name="assign-user-groups"></a>分配用户组
 

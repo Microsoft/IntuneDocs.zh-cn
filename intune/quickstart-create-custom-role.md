@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581542"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410763"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入门：创建并分配自定义角色
 
@@ -47,7 +47,7 @@ ms.locfileid: "46581542"
 
 必须先将角色分配给包含安全用户的组，安全操作员才可以使用新权限。
 
-1. 在 Intune 中，选择“角色” > 所有角色” > “远程设备支持人员”。
+1. 在 Intune 中，选择“角色” > “所有角色” > “安全操作”。
 2. 在“Intune 角色”下，选择“工作” > “分配”。
 3. 在“分配名称”框中，输入“Sec ops”。
 4. 选择“成员 (组)” > “添加”。

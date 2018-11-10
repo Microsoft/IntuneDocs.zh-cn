@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494041"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025145"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>将 Microsoft Store 应用添加到 Microsoft Intune
 
@@ -54,7 +54,7 @@ ms.locfileid: "46494041"
 8. 选择“确定”。
 9. 选择“添加”。
 
-此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。 
+此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。 Microsoft Store 应用仅分配到分配类型为“适用于已注册设备”的组（用户从公司门户应用或网站安装应用）。
 
 ## <a name="next-steps"></a>后续步骤
 - [将应用分配给组](apps-deploy.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d78d850d68b8c6eb6e5b1282acddb3b93963ca4
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959513"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236146"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 
@@ -27,7 +27,7 @@ Intune 与网络访问控制合作伙伴集成，帮助组织在设备尝试访�
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune 和 NAC 解决方案如何帮助保护组织的资源？
 
-NAC 解决方案可通过 Intune 检查设备注册和符合性状态，以便作出访问控制决策。 如果设备未注册，或已注册但不符合 Intune 设备符合性策略，则设备应重定向到 Intune 进行注册和/或进行设备符合性检查。
+NAC 解决方案可通过 Intune 检查设备注册和符合性状态，以便作出访问控制决策。 如果设备未注册，或已注册但不符合 Intune 设备符合性策略，则设备应重定向到 Intune 进行注册或进行设备符合性检查。
 
 ### <a name="example"></a>示例
 
@@ -37,7 +37,7 @@ NAC 解决方案可通过 Intune 检查设备注册和符合性状态，以便�
 
 主动同步到 Intune 的设备无法从“符合” / “不符合”变成“未同步”（或“未知”）。 “未知”状态是预留给尚未进行符合性评估的新注册设备。
 
-对于被阻止而无法访问资源的设备，阻止设备的服务应将所有用户重定向到[管理门户](https://portal.manage.microsoft.com)，以确定设备被阻止的原因。  如果用户访问此页，他们的设备会同步重新接受符合性评估。
+对于被阻止而无法访问资源的设备，阻止设备的服务应将所有用户重定向到[管理门户](https://portal.manage.microsoft.com)，以确定设备被阻止的原因。  如果用户访问此页，他们的设备会同步重新接受符合性评估。
 
 ## <a name="nac-and-conditional-access"></a>NAC 和条件性访问
 
@@ -54,10 +54,20 @@ NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情
 3. 配置 NAC 伙伴解决方案以进行证书身份验证。
 4. 用户连接到公司 Wi-Fi 访问点，或者提出 VPN 连接请求。
 5. NAC 伙伴解决方案将设备信息转发给 Intune，并询问 Intune 设备注册和符合性状态。
-6. 如果设备不符合或未注册，NAC 伙伴解决方案将指示用户注册或修复设备符合性。
-7. 设备尝试重新验证符合性和/或注册状态。
+6. 如果设备不符合或未注册，NAC 合作伙伴解决方案将指示用户注册或修复设备符合性。
+7. 设备会在可用时尝试重新验证其符合性和注册状态。
 8. 设备已注册且符合后，NAC 伙伴解决方案将从 Intune 获取状态。
 9. 成功建立的连接将允许设备访问公司资源。
+
+## <a name="use-nac-on-your-ios-devices"></a>在 iOS 设备上使用 NAC
+
+iOS 上的以下 VPN 客户端目前不支持网络访问控制：
+-   Cisco AnyConnect
+-   F5 Access
+-   Citrix SSO  
+
+我们正在与合作伙伴合作以为这些更高版本的客户端发布 NAC 解决方案。 在解决方案准备就绪后，我们将使用更多详细信息来更新本文。 
+
 
 ## <a name="next-steps"></a>后续步骤
 

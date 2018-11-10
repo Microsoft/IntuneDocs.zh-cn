@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312943"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679298"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune 中设备配置文件的常见问题和解决方法
 
@@ -130,9 +130,9 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>我更改了设备限制配置文件，但更改尚未生效
 Windows Phone 设备不允许使用 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”设置为 8，然后尝试将其减少到 4。 已向设备应用更严格的配置文件。
 
-如果要将配置文件更改为安全级别较低的值，则需要重置安全策略，具体视设备平台而定。 例如，在 Windows 桌面上，从右轻扫，然后选择“设置” > “控制面板”。 选择“用户帐户”小程序。
+如果要将配置文件更改为安全级别较低的值，则需要重置安全策略。 例如，在 Windows 8.1 桌面上，从右轻扫，然后选择“设置” > “控制面板”。 选择“用户帐户”小程序。 左侧导航菜单有一个“重置安全策略”链接（接近底部）。 选中它，然后选择“重置策略”。
 
-左侧导航菜单有一个“重置安全策略”链接（接近底部）。 选中它，然后选择“重置策略”。 对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS），可能需要将其停用并重新注册回服务，这样才能应用限制较少的配置文件。
+对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本以及 iOS 和 Windows 10），可能需要将其停用并重新注册回服务，这样才能应用限制较少的配置文件。
 
 ## <a name="next-steps"></a>后续步骤
 需要更多帮助？ 请参阅[如何获取对 Microsoft Intune 的支持](get-support.md)。

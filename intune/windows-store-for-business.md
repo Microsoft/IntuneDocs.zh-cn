@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494007"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915744"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
@@ -89,4 +89,15 @@ ms.locfileid: "46494007"
 * 减小当前分配的范围，仅针对具有足够许可证的用户。
 * 从适用于企业的 Microsoft 应用商店中购买应用的更多副本。
 
+## <a name="remove-apps"></a>删除应用
 
+要删除从适用于企业的 Microsoft Store 同步的应用，需要登录适用于企业的 Microsoft Store 并退还应用。
+
+![删除应用详情的屏幕截图](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> 删除应用在专用应用商店中的可见性不会阻止 Intune 同步它们。 必须退还该应用。
+
+## <a name="next-steps"></a>后续步骤
+
+- [使用 Microsoft Intune 管理批量购买的应用和书籍](vpp-apps.md)

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425285"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236384"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>使用 Intune 管理和使用 Windows 全息版和 HoloLens 设备
 
@@ -68,6 +68,10 @@ Intune 提供了公司门户应用，用户可使用该应用访问公司数据�
 
 Microsoft Intune 可以向运行 Windows Holographic for Business 的 Microsoft HoloLens 设备部署通用 Windows 应用。 可以直接在 Intune Azure 门户中上传应用包，或者从适用于企业的 Microsoft Store 对其进行部署。 有关相关区域的详细信息，请参阅下列文章：
 - 要使用 Intune Azure 门户来部署业务线 (LOB) 应用，请参阅[如何向 Microsoft Intune 添加 Windows 业务线应用](lob-apps-windows.md)。
+
+    > [!NOTE]
+    > Intune 允许的最大包大小为 8 GB。 此包大小仅适用于上传到 Intune 的 LOB 应用。
+
 - 要使用适用于企业的 Microsoft Store 部署应用，请参阅[如何使用 Microsoft Intune 管理从适用于企业的 Microsoft Store 中购买的应用](windows-store-for-business.md)。 
 - 要了解 Microsoft Intune 的应用管理，请参阅 [Microsoft Intune 中的应用管理](app-management.md)。
 - 要详细了解如何开发 Microsoft HoloLens 应用，请参阅 [Microsoft HoloLens 混合现实应用](https://www.microsoft.com/hololens/apps)。 

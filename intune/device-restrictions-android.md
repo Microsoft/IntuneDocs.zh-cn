@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313693"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915727"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android 和 Samsung Knox Standard 设备限制设置 - Intune
 
@@ -39,7 +39,7 @@ ms.locfileid: "43313693"
 - **地理位置(仅限 Samsung Knox)** - 允许设备利用位置信息。
 - **切断电源(仅限 Samsung Knox)** - 允许用户切断设备电源。<br>如果禁用，则无法设置**擦除设备前的登录失败次数**。
 - **屏幕截图(仅限 Samsung Knox)** - 允许用户以图像形式捕获屏幕内容。
-- **语音助手(仅限 Samsung Knox)** - 允许对设备使用语音助手软件。
+- **语音助手(仅限 Samsung Knox)** - 允许在设备上使用 Samsung 语音服务和应用。 此项不适用于 Bixby 或用于朗读屏幕内容的辅助功能的语音助手。
 - **YouTube (仅限 Samsung Knox)** - 允许对设备使用 YouTube 应用。
 - **共享设备(仅限 Samsung Knox)** - 将托管 Samsung Knox Standard 设备配置为共享设备。 在此模式下，最终用户可以使用其 Azure AD 凭据登录和注销设备。 该设备仍然受管，无论是否正在使用。<br>与 SCEP 证书配置文件一起使用时，此功能允许最终用户与所有用户共享具有相同应用集的设备，但使用其自己的 SCEP 用户证书。用户注销时，会清除所有应用数据。  此功能仅限于 LOB 应用。
 - **禁止更改日期和时间 (Samsung Knox)** - 阻止用户对设备更改日期和时间设置。 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 10/24/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 800d044860a8a264facdeb49f1f59526ee53acdd
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50149115"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025230"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,16 +41,124 @@ ms.locfileid: "50149115"
 ### Role-based access control
 
 -->     
-## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日当周
+## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日当周
 
-### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>即使只有一个电子邮件配置文件，也可从设备删除电子邮件配置文件 <!-- 1818139 -->
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="require-non-biometric-pin-after-a-specified-timeout----1506985---"></a>在指定的超时后需要非生物识别 PIN <!-- 1506985 -->
+在管理员指定的超时时长后要求输入非生物识别 PIN，Intune 会限制使用生物识别来访问公司数据，从而为启用了移动应用管理 (MAM) 的应用提升安全性。 这些设置会影响依靠 Touch ID (iOS)、Face ID (iOS)、Android Biometric 或其他未来生物识别身份验证方法访问启用了 APP/MAM 的应用程序的用户。 这些设置会使 Intune 管理员能够更精细地控制用户访问，让带有多个指纹或其他生物识别访问方法的设备只能向正确的用户显示公司数据。 在 Azure 门户中，打开“Microsoft Intune”。 选择“客户端应用” > “应用保护策略” > “添加策略” > “设置”。 找到特定设置的“访问”部分。 有关访问设置的信息，请参阅 [iOS 设置](app-protection-policy-settings-ios.md#access-settings)和 [Android 设置](app-protection-policy-settings-android.md#access-settings)。
+
+#### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>iOS MDM 注册设备上的 Intune 应用数据传输设置<!-- 2244713 -->
+可以将 iOS MDM 注册设备上的 Intune 应用数据传输设置控制与指定注册用户的身份（也称为用户主体名称 (UPN)）分开。 不使用 IntuneMAMUPN 的管理员不会观察到行为更改。 当此功能可用时，使用 IntuneMAMUPN 控制已注册设备上的数据传输行为的管理员应检查新设置，并根据需要更新其应用设置。
+
+#### <a name="windows-10-win32-apps----2617325---"></a>Windows 10 Win32 应用 <!-- 2617325 -->
+可以将 Win32 应用配置为在单个用户的用户上下文中安装，而不是为该设备的所有用户安装应用。
+
+#### <a name="windows-win32-apps-and-powershell-scripts----2617330---"></a>Windows Win32 应用和 PowerShell 脚本 <!-- 2617330 -->
+最终用户无需登录设备即可安装 Win32 应用或执行 PowerShell 脚本。 
+
+#### <a name="troubleshooting-client-app-installation----1363711---"></a>客户端应用安装疑难解答 <!-- 1363711 -->
+可以通过查看“故障排除”边栏选项卡中标有“应用安装”的列来解决客户端应用的安装问题。 要查看“故障排除”边栏选项卡，请在 Intune 门户中，选择“故障排除”下的“帮助和支持”。
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>iOS VPN 客户端上的网络访问控制支持 <!-- 1333693 wnready -->
+通过此更新，可以在为 Cisco AnyConnect、F5 Access 和 Citrix SSO for iOS 创建 VPN 配置文件时启用网络访问控制 (NAC)。 此设置允许将设备的 NAC ID 包含在 VPN 配置文件中。 目前，没有任何支持此新 NAC ID 的 VPN 客户端或 NAC 合作伙伴解决方案，但我们将通过[支持博客文章](ttps://aka.ms/iOS12_and_vpn)发送通知。
+
+要使用 NAC，需要：
+1. 选择加入以允许 Intune 在 VPN 配置文件中包含设备 ID
+2. 使用直接来自 NAC 提供程序的指导更新 NAC 提供程序软件/固件
+
+有关 iOS VPN 配置文件中此设置的信息，请参阅[在 Microsoft Intune 的 iOS 设备上添加 VPN 设置](vpn-settings-ios.md)。 有关网络访问控制的详细信息，请参阅[网络访问控制 (NAC) 与 Intune 集成](network-access-control-integrate.md)。 
+
+适用于：iOS
+
+#### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>即使只有一个电子邮件配置文件，也可从设备删除电子邮件配置文件 <!-- 1818139 -->
 以前，如果只有唯一一个电子邮件配置文件，则无法从设备删除该电子邮件配置文件。 有了此更新，该行为发生了变化。 现在，即使设备上只有唯一一个电子邮件配置文件，也可删除该电子邮件配置文件。 有关详细信息，请参阅[使用 Intune 向设备添加电子邮件设置](email-settings-configure.md)。
 
-### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>从设备删除 PKCS 和 SCEP 证书 <!-- 3218390 -->
+#### <a name="powershell-scripts-and-aad----2309469---"></a>PowerShell 脚本和 AAD <!-- 2309469 -->
+Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
+
+#### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>适用于 Android、Android 企业版的新的“所需密码类型”默认设置 <!-- 2649963 -->
+创建新的符合性策略时（“Intune” > “设备符合性” > “策略” > “创建策略” > > Android 或 Android Enterprise 平台 >“系统安全性”），所需密码类型的默认值会更改：
+
+从“设备默认值”更改为“至少为数字”
+
+适用对象：Android、Android Enterprise
+
+要查看这些设置，请转到 [Android](compliance-policy-create-android.md) 和 [Android Enterprise](compliance-policy-create-android-for-work.md)。
+
+#### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>在 Windows 10 Wi-Fi 配置文件中使用预共享密钥<!-- 2662938 -->
+通过本次更新，用户能够使用预共享密钥 (PSK) 和 WPA/WPA2 个人安全协议对 Windows 10 的 Wi-Fi 配置的配置文件进行身份验证。 还可以在 Windows 10 的 2018 年 10 月更新中为设备指定按流量计费的网络的成本配置。
+
+目前，必须导入 Wi-Fi 配置文件，或创建自定义配置文件才能使用预共享密钥。 [Windows 10 的 Wi-Fi 设置](wi-fi-settings-windows.md)列出了当前设置。 
+
+#### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>从设备删除 PKCS 和 SCEP 证书 <!-- 3218390 -->
 在某些情况下，即使从组中删除策略，删除配置或合规性部署，或是由管理员更新现有 SCEP 或 PKCS 配置文件，PKCS 和 SCEP 证书仍会存留在设备上。 此更新改变了这种情况。 在某些情况下，PKCS 和 SCEP 证书会从设备中删除，而在其他一些情况下，这些证书会存留在设备上。 请参阅[在 Microsoft Intune 中删除 SCEP 和 PKCS 证书](remove-certificates.md)了解这些情况。
+
+#### <a name="use-gatekeeper-on-macos-devices-for-compliance----2504381---"></a>在 macOS 设备上使用网关守卫实现符合性 <!-- 2504381 -->
+此更新包括 macOS 网关守卫，用于评估设备的符合性。 要设置网关守卫属性，请[为 macOS 设备添加设备符合性策略](compliance-policy-create-mac-os.md)。
+
+
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="enrollment-abandonment-report----1382924---"></a>注册放弃报告 <!-- 1382924 -->
+我们在“设备注册” > “监视”下发布了新报表，其中提供了有关已放弃注册的详细信息。 有关详细信息，请参阅[公司门户放弃报表](enrollment-report-company-portal-abandon.md)。
+
+#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>将 Autopilot 配置文件分配给所有设备虚拟组 <!--2715522 -->
+可将 Autopilot 配置文件分配给所有设备虚拟组。 要执行此操作，请选择“设备注册” > “Windows 注册” > “部署配置文件”，然后选择一个配置文件，选择“分配”，接着在“分配给”下选择“所有设备”。 有关 Autopilot 配置文件的详细信息，请参阅[使用 Windows Autopilot 注册 Windows 设备](enrollment-autopilot.md)。
+
+#### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新的 Azure Active Directory 使用条款功能 <!-- 2870393 -->
+Azure Active Directory 具备可供使用的使用条款功能，而不必再使用现有的 Intune 条款和条件。 Azure AD 使用条款功能在显示哪些条款以及何时显示这些条款方面更加灵活，并能更好地支持本地化，更好地控制条款的呈现方式以及改进报告。 Azure AD 使用条款功能需要 Azure Active Directory Premium P1，后者也是企业移动性 + 安全性 E3 套件的一部分。 要了解详情，请参阅[管理公司的用户访问条款和条件](terms-and-conditions-create.md)一文。
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>已加入混合 Azure Active Directory 的设备支持 Autopilot（预览）<!-- 1048100-->
+现在可以使用 Autopilot 对已加入混合 Azure Active Directory 的设备进行设置。 设备必须加入组织网络中，才能使用混合 Autopilot 功能。 有关详细信息，请参阅[使用 Intune 和 Windows Autopilot 部署已加入混合 Azure AD 的设备](windows-autopilot-hybrid.md)。
+此功能将在未来几天内在整个用户群中推出。 因此，在推送到你的帐户之前，你可能无法执行这些步骤。
+
+### <a name="android-device-owner-mode-support---3188762--"></a>Android 设备所有者模式支持 <!--3188762-->
+对于 Samsung Knox 移动注册，Intune 现在支持将设备注册到 Android 设备所有者管理模式。 使用 WiFi 或移动电话网络的用户在第一次打开他们的设备时，只需几次点击即可进行注册。 有关详细信息，请参阅[使用 Samsung 的 Knox 移动注册自动注册 Android 设备](android-samsung-knox-mobile-enroll.md)。
+
+### <a name="device-management"></a>设备管理
+
+### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>按交换码 ID 对已注册 Windows Autopilot 的设备进行分组 <!-- 2075110 -->
+通过 Configuration Manager [使用 Autopilot 为现有设备注册](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)时，Intune 现已支持按交换码 ID 对 Windows 设备进行分组。 交换码 ID 是 Autopilot 配置文件的参数。 Intune 会自动将 [Azure AD 设备属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) 设置为“OfflineAutopilotprofile - <correlator ID>”。 如此，即可通过离线 Autopilot 注册的 enrollmentprofileName 属性，根据交换码 ID 创建任意 Azure AD 动态组。 有关详细信息，请参阅[现有设备的 Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)。
+
+### <a name="intune-app-protection-policies----2984657---"></a>Intune 应用保护策略 <!-- 2984657 -->
+可使用 Intune 应用保护策略为受 Intune 保护的应用（如 Microsoft Outlook 和 Microsoft Word）配置各种数据保护设置。 我们为 [iOS](app-protection-policy-settings-ios.md) 和 [Android](app-protection-policy-settings-android.md) 更改了这些设置的外观，以便更轻松地查找单个设置。 策略设置分为三类：
+- **数据重定位** - 此组包含数据丢失防护 (DLP) 控件，如剪切、复制、粘贴和另存为限制。 这些设置决定了用户与应用中的数据的交互方式。
+- **访问要求** - 该组包含每个应用的 PIN 选项，用于确定最终用户在工作环境中访问应用的方式。  
+- **条件启动** - 该组包含最低操作系统设置、已越狱和取得 Root 权限的设备检测以及脱机宽限期等设置。  
+  
+设置的功能不会更改，但在处理策略创作流程时会更容易找到它们。 
+
+### <a name="intune-apps"></a>Intune 应用
+
+#### <a name="intune-will-support-a-maximum-package-size-of-8-gb-for-lob-apps----1727158---"></a>对于 LOB 应用，Intune 将支持最大为 8 GB 的包大小 <!-- 1727158 -->
+Intune 将业务线 (LOB) 应用的最大包大小增加到 8 GB。 有关详细信息，请参阅[将应用添加到 Microsoft Intune](apps-add.md)。
+
+#### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>为公司门户应用添加自定义品牌图像 <!-- 1916266 -->
+Microsoft Intune 管理员可以上传自定义品牌图像，该图像将在 iOS 公司门户应用的用户配置文件页面上作为背景图像显示。 有关配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](company-portal-app.md)。
+
+#### <a name="intune-will-maintain-the-office-localized-language-when-updating-office-on-end-users-machines----2971030---"></a>在最终用户计算机上更新 Office 时，Intune 将维护维持 Office 本地化语言 <!-- 2971030 -->
+Intune 在最终用户计算机上安装 Office 时，最终用户将自动获得与以前安装的 .MSI Office 相同的语言包。 有关详细信息，请参阅[使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备](apps-add-office365.md)。
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="new-intune-support-experience-in-the-microsoft-365-device-management-portal----3076965---"></a>Microsoft 365 设备管理门户中的新 Intune 支持体验 <!-- 3076965 -->
+我们正在 [Microsoft 365 设备管理门户]( http://devicemanagement.microsoft.com)中推出适用于 Intune 的新的“帮助和支持”体验。 通过新体验，可以用自己的语言描述问题，并获得故障排除见解和基于 Web 的修复内容。 这些解决方案通过基于规则的机器学习算法提供并依赖于用户查询。  
+
+除特定于问题的指南之外，还可以使用新的案例创建工作流通过电子邮件或电话打开支持案例。  
+
+对于参与部署的客户，此新体验取代了一组静态预选选项的当前“帮助和支持”体验，这些选项基于打开“帮助和支持”时所在控制台的区域。  
+
+我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
+
+有关详细信息，请参阅“如何获取对 Microsoft Intune 的支持”中的[新的“帮助和支持”体验](get-support.md#new-help-and-support-experience)。  
 
 ### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>适用于 Intune 的 PowerShell 模块 - 提供预览版 <!-- wnready 951068 -->
 现在，[GitHub]( https://aka.ms/intunepowershell) 上提供了新 PowerShell 模块的预览版，该模块可通过 Microsoft Graph 提供对 Intune API 的支持。 有关如何使用此模块的详细信息，请参阅该处的自述文件。 
+
 
 ## <a name="week-of-october-15-2018"></a>2018 年 10 月 15 日当周
 

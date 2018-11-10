@@ -15,17 +15,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 924326de480073d7bca8e6bec2d6f7e9c11d0cc1
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425081"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236639"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 了解这些更新有助于与用户进行通信，并更新为了支持部署而创建的任何自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日当周
+
+### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>为公司门户应用添加自定义品牌图像 <!-- 1916266 -->
+Microsoft Intune 管理员可以上传自定义品牌图像，该图像将在 iOS 公司门户应用的用户配置文件页面上作为背景图像显示。 有关配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](company-portal-app.md)。
+
+
 
 ## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日当周  
 
@@ -42,7 +49,7 @@ ms.locfileid: "49425081"
 - 改善了大型应用目录的性能
 - 为所有用户增加了辅助功能  
 
-|已更新|上一步|
+|已更新|上一个|
 |---|---|
 |![更新后的设备页面显示设备与上述设备信息完全符合，不再弹出以上完整列表。](./media/iwp-device-after-1803.png)|![设备页面的以前版本。](./media/iwp-device-before-1803.png)|
 |![更新后的应用安装页面会完全地显示应用的说明和各种安装信息，包括发布日期、版本和应用类型。](./media/iwp-app-install-after-1803.png)|![应用安装页面的以前版本。](./media/iwp-app-install-before-1803.png)|  
@@ -163,7 +170,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日当周
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>公司门户网站的搜索改进<!-- 1331697 -->
-我们正在改进应用搜索功能，首先从[公司门户网站](https://portal.manage.microsoft.com)开始。 除“名称”和“说明”字段外，现在还可按应用类别执行搜索。 结果默认按相关性呈降序排列。 
+我们正在改进应用搜索功能，首先从[公司门户网站](https://portal.manage.microsoft.com)开始。 除“名称”和“说明”字段外，现在还可按应用类别执行搜索。 结果默认按相关性呈降序排列。 
 
 由于适用于 iOS 的公司门户应用中也包含公司门户网站，因此 iOS 用户也将收到此更改。 适用于 Android 和 Windows 的公司门户应用将在未来几个月中收到类似更新。
 
@@ -177,7 +184,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日那周
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>对公司门户中的设备设置工作流的改进<!-- 1490692 -->
-我们改进了适用于 Android 的公司门户应用中的设备设置工作流。 语言更贴近你公司的用语习惯，在可能的情况下我们还对屏幕进行了合并。 
+我们改进了适用于 Android 的公司门户应用中的设备设置工作流。 语言更贴近你公司的用语习惯，在可能的情况下我们还对屏幕进行了合并。 
 
 |以前|完成|
 |---|---|
@@ -205,7 +212,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 ## <a name="week-of-september-11-2017"></a>含 2017 年 9 月 11 日的那周
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司门户应用的表述更容易理解 <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司门户应用的表述更容易理解 <!-- 1396349 -->  
 
 Android 公司门户应用的注册流程进行了简化，新增了文本，更易于最终用户进行注册。 如果有自定义注册文档，则需要更新该文档，反映新的屏幕。 可找到如下所示示例图片：
 
@@ -222,7 +229,7 @@ Android 公司门户应用的注册流程进行了简化，新增了文本，更
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 邮件应用将支持 OAuth<!-- 1196951 -->
 
-在使用 OAuth 的 iOS 设备上，使用 Intune 的条件访问支持更安全的身份验证。 为支持此功能，适用于 iOS 的公司门户应用上现在有一个不同的流，允许更安全的身份验证。 如果最终用户在邮件应用中尝试登录新的 Exchange 帐户，将会看到一个 Web 视图提示。 在 Intune 中注册后，用户会看到提示，要求允许本机邮件应用访问证书。 大多数最终用户不会再看到隔离电子邮件。 现有邮件帐户会继续使用基本身份验证协议，因此仍会收到隔离电子邮件。 最终用户的这种登录体验与 Office 移动应用的登录体验类似。
+在使用 OAuth 的 iOS 设备上，使用 Intune 的条件访问支持更安全的身份验证。 为支持此功能，适用于 iOS 的公司门户应用上现在有一个不同的流，允许更安全的身份验证。 如果最终用户在邮件应用中尝试登录新的 Exchange 帐户，将会看到一个 Web 视图提示。 在 Intune 中注册后，用户会看到提示，要求允许本机邮件应用访问证书。 大多数最终用户不会再看到隔离电子邮件。 现有邮件帐户会继续使用基本身份验证协议，因此仍会收到隔离电子邮件。 最终用户的这种登录体验与 Office 移动应用的登录体验类似。
 
 ![选择本机邮件应用中的帐户类型。](./media/ios-11-ca-email-after-1708-01.png)
 

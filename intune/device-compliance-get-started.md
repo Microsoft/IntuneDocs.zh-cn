@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391563"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915693"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -153,7 +153,7 @@ Remember that you need to implement conditional access policies in addition to c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>部署设备符合性策略的方法
 可向用户组中的用户或设备组中的设备部署符合性策略。 将符合性策略部署到用户后，会对所有用户设备检查符合性。 在 Windows 10 版本 1803 和更高版本的设备上，如果主要用户未注册设备，则建议部署到设备组。 在此方案中使用设备组有助于生成符合性报告。
 
-默认“符合性策略设置”（“Azure 门户”>“设备符合性”）包括：
+在所有已注册 Intune 的设备上评估一组内置的符合性策略设置（“Azure 门户”>“设备符合性”）。 这些地方包括：
 
 - **将未分配到符合性策略的设备标记为**：此属性具有两个值：
 
@@ -171,7 +171,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 - **符合性状态有效期(天)**：输入设备报告收到的所有符合性策略的状态的期限。 未在此时间段内返回状态的设备将被视为“不符合”。 默认值为 30 天。
 
-所有设备都具有“默认设备符合性策略”（“Azure 门户”>“设备符合性”>“策略符合性”）。 使用此默认策略监视这些设置。
+所有设备都具有“内置设备符合性策略”（“Azure 门户”>“设备符合性”>“策略符合性”）。 使用此内置策略监视这些设置。
 
 若要了解策略部署完成后，移动设备获取策略所用的时间，请参阅[设备配置文件疑难解答](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
 

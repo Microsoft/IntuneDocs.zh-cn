@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4468f2e6919349095d934790740afc8c347282
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581541"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410814"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入门：创建组以管理用户
 
@@ -37,21 +37,23 @@ ms.locfileid: "46581541"
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
-以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。 通过选择“所有服务” > “Intune”，在 Azure 门户中查找 Intune。 Intune 位于“监视 + 管理”部分中。
+以[全局管理员或 Intune 服务管理员身份](users-add.md#types-of-administrators)登录 [Intune](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="create-a-group"></a>创建组
+
+你需要创建一个组以便稍后在本快速入门系列中使用。
+
 1. 打开“Microsoft Intune”窗格后，选择“组” > “新建组”。
-2. 在“组”窗格中，选择“组类型” > “安全性”。
+2. 在“组类型”下拉列表中，选择“安全”。
 3. 将“名称”设置为"Contoso 测试人员"，并为组添加“说明”。
 4. 将“成员身份类型”设置为“已分配”。 
-5. 单击“成员”，然后从现有列表中为该组选择“成员”。
+5. 单击“成员”，然后从现有列表中为该组选择一个或多个“成员”。
 
     ![在 Microsoft Intune 中创建组的屏幕截图](./media/quickstart-use-groups-01.png)
 
-6. 单击“选择”。
-7. 单击“创建”。
+6. 单击“选择” > “创建”。
 
-如果已成功创建组，则该组将显示在“所有组”的列表中。 
+已成功创建组后，该组将显示在“所有组”列表中。 
 
 ## <a name="next-steps"></a>后续步骤
 

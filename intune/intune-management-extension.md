@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af80dd180e8fdbaeb633bdffaad90ccdf02d5380
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959564"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236333"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理 PowerShell 脚本以供 Windows 10 设备使用
 Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows 10 设备上运行。 管理扩展对 Windows 10 移动设备管理 (MDM) 功能进行了补充，使你可更轻松地采用新式管理。
@@ -56,7 +56,8 @@ Intune 管理扩展具有以下先决条件：
 
 > [!NOTE]
 > - PowerShell 脚本不适用于计算机组。
-> - 仅当 Azure Active Directory (AD) 用户已登录设备时，才可在设备上执行 PowerShell 脚本。
+> - 最终用户无需登录设备即可执行 PowerShell 脚本。 
+> - Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
 
 Intune 管理扩展每一小时与 Intune 同步一次。 将策略分配给 Azure AD 组后，PowerShell 脚本将运行，还将报告运行结果。 
  

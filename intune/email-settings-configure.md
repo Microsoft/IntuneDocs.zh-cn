@@ -1,34 +1,30 @@
 ---
-title: 如何配置 Microsoft Intune 电子邮件设置
+title: 在 Microsoft Intune 中配置电子邮件设置 - Azure | Microsoft Docs
 titleSuffix: ''
-description: 了解如何配置 Microsoft Intune，以在所管理的设备上创建与公司电子邮件的连接。
+description: 在 Microsoft Intune 中创建电子邮件配置文件，并将此配置文件部署到 Android Enterprise、iOS 和 Windows 设备。 使用电子邮件配置文件以配置常见的电子邮件设置，包括电子邮件服务器和身份验证方法，以便在管理的设备上连接到公司电子邮件。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9aac9d7523673d6907bf75bf91e1e9802a381ec2
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: 41f16cf0dacc059546a09145a0c241f7c2a4a076
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50149047"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236316"
 ---
-# <a name="how-to-configure-email-settings-in-microsoft-intune"></a>如何在 Microsoft Intune 中配置电子邮件设置
+# <a name="add-email-settings-to-devices-using-intune"></a>使用 Intune 向设备添加电子邮件设置
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Microsoft Intune 包括各种电子邮件设置，可将这些设置部署到组织中的设备。 IT 管理员可以创建具有特定设置的电子邮件配置文件，以连接到邮件服务器，例如 Office 365 和 Gmail。 然后，用户便可在其移动设备上连接、验证和同步其组织的电子邮件帐户。 通过创建和部署电子邮件配置文件，可以确认设置是跨多个设备的标准设置。 而且，有助于减少不知道正确电子邮件设置的最终用户的支持呼叫。
 
-如果设备通过连接到公司电子邮件和与其同步时所需的设置进行管理，则其可使用电子邮件配置文件进行配置。 这有助于确保设置在所有设备中是标准的，还有助于减少对不了解正确电子邮件设置的最终用户的支持呼叫。
-
-大多数平台支持内置邮件客户端。 当前不支持大多数第三方电子邮件应用。
-
-你可以使用电子邮件配置文件配置下列设备类型上的本机电子邮件客户端：
+可以使用电子邮件配置文件为以下设备配置内置电子邮件设置：
 
 - Android Samsung Knox Standard 4.0 及更高版本
 - Android 工作配置文件设备
@@ -36,17 +32,15 @@ ms.locfileid: "50149047"
 - Windows Phone 8.1 及更高版本
 - Windows 10（桌面版）和 Windows 10 移动版
 
-使用本文章中的信息了解有关配置电子邮件配置文件的基础知识，然后阅读针对每个平台的深入主题以了解设备规范。
+本文介绍如何在 Microsoft Intune 中创建电子邮件配置文件。 此外，还包括指向不同平台的链接，以获得更具体的设置。
 
-## <a name="create-a-device-profile-containing-email-settings"></a>创建包含电子邮件设置的设备配置文件
+## <a name="create-a-device-profile"></a>创建设备配置文件
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格上，选择“设备配置”。
-2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
-3. 在“配置文件”窗格上，选择“创建配置文件”。
-4. 在“创建配置文件”窗格上，输入电子邮件配置文件的“名称”和“说明”。
-5. 从“平台”下拉列表中，选择要应用电子邮件设置的设备平台。 目前，可以为电子邮件设备设置选择以下平台之一：
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+3. 为电子邮件配置文件输入“名称”和“说明”。
+4. 从下拉列表选择“平台”。 选项包括：
+
     - **Android**（仅 Samsung Android Knox Standard）
     - **Android 企业**
     - **iOS**
@@ -54,18 +48,16 @@ ms.locfileid: "50149047"
     - **Windows Phone 8.1**
     - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
-6. 在“配置文件”键入下拉列表中，选择“电子邮件”。
-7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
+
+5. 在“配置文件”类型下拉列表中，选择“电子邮件”。
+6. 可配置的设置可能会因平台而异。 对于特定设置，请选择平台：
+
     - [Android 工作配置文件和 Samsung Knox Standard 设置](email-settings-android.md)
     - [iOS 设置](email-settings-ios.md)
     - [Windows Phone 8.1 设置](email-settings-windows-phone-8-1.md)
     - [Windows 10 设置](email-settings-windows-10.md)
-8. 完成后，返回“创建配置文件”窗格，然后点击“创建”。
 
-随即会创建配置文件，并显示在“配置文件列表”窗格上。
-如果想要继续操作并将此配置文件分配到组，请参阅[如何分配设备配置文件](device-profile-assign.md)。
-
-## <a name="further-information"></a>更多信息
+输入设置并创建配置文件后，配置文件将显示在配置文件列表中。 下一步，[将此配置文件分配给某些组](device-profile-assign.md)。
 
 ## <a name="remove-an-email-profile"></a>删除电子邮件配置文件
 
@@ -75,26 +67,31 @@ ms.locfileid: "50149047"
 
 - **选项 2**：[擦除或停用设备](devices-wipe.md)。 这些操作可用于有选择地或完全删除数据和设置。
 
-### <a name="securing-email-access"></a>保护电子邮件访问权限
+## <a name="secure-email-access"></a>保护电子邮件访问
 
-可以使用以下两种方法之一来帮助保护电子邮件配置文件：
+可以使用以下选项来帮助保护电子邮件配置文件：
 
-1. **证书** - 创建电子邮件配置文件时，可以选择之前在 Intune 中创建的证书配置文件。 该配置文件又称为身份证书，用于根据受信任的证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会分配到对电子邮件连接进行身份验证的计算机（通常是本机邮件服务器）。
-有关如何在 Intune 中创建和使用证书配置文件的详细信息，请参阅[如何使用 Intune 配置证书](certificates-configure.md)。
-2. **用户名和密码** - 用户通过提供其用户名和密码向本机邮件服务器进行身份验证。
-密码不包含在电子邮件配置文件中，因此用户在连接到电子邮件时需要提供密码。
+- **证书** - 创建电子邮件配置文件时，选择之前在 Intune 中创建的证书配置文件。 该证书又称为标识证书。 它根据受信任的证书配置文件（或根证书）进行身份验证，以确定用户的设备可以连接。 受信任的证书会分配到对电子邮件连接进行身份验证的计算机。 通常，此计算机是本机邮件服务器。
 
+  有关如何在 Intune 中创建和使用证书配置文件的详细信息，请参阅[如何使用 Intune 配置证书](certificates-configure.md)。
 
-### <a name="how-intune-handles-existing-email-accounts"></a>Intune 如何处理现有电子邮件帐户
+- **用户名和密码** - 用户通过输入用户名和密码向本机邮件服务器进行身份验证。 电子邮件配置文件中不存在密码。 因此，用户在连接到电子邮件时需要输入密码。
 
-如果用户已配置电子邮件帐户，Intune 电子邮件配置文件分配结果将取决于设备平台：
+## <a name="how-intune-handles-existing-email-accounts"></a>Intune 如何处理现有电子邮件帐户
 
-- **iOS**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 重复的电子邮件配置文件会阻止分配 Intune 配置文件。 在这种情况下，公司门户将通知用户其不符合规定并提示用户手动删除已配置的配置文件。 若要帮助防止此问题，请告知用户在安装电子邮件配置文件前进行注册，这可允许 Intune 设置配置文件。
+如果用户已配置电子邮件帐户，则电子邮件配置文件的分配方式因平台而异。
+
+- **iOS**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 重复的电子邮件配置文件会阻止分配 Intune 配置文件。 在这种情况下，公司门户应用将通知用户它们不符合规定，并提示用户手动删除已配置的配置文件。 要帮助防止此问题，请告知用户在安装电子邮件配置文件前进行注册，这可允许 Intune 设置配置文件。
+
 - **Windows**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 Intune 会覆盖由用户创建的现有电子邮件配置文件。
-- **Android Samsung Knox Standard**：根据电子邮件地址检测到现有的重复电子邮件配置文件，并用 Intune 配置文件覆盖它。
-由于 Android 不使用主机名来识别配置文件，因此我们建议不要创建多个电子邮件配置文件并在不同主机的同一邮件地址中使用，因为它们会相互覆盖。
-- **Android 工作配置文件** Intune 提供两个 Android 工作配置文件电子邮件配置文件，分别用于 Gmail 和 Nine Work 电子邮件应用。 这些应用在 Google Play 商店中提供，且安装在设备工作配置文件中，因此它们不会导致出现重复的配置文件。 这两个应用支持到 Exchange 的连接。 若要启用电子邮件连接，请将其中一个电子邮件应用部署到用户的设备，然后创建并部署相应的电子邮件配置文件。 Nine Work 等电子邮件应用可能需付费使用。 若有任何问题，请查看应用的许可详细信息或与应用公司联系。
 
-### <a name="update-an-email-profile"></a>更新电子邮件配置文件
+- **Android Samsung Knox Standard**：根据电子邮件地址检测到现有的重复电子邮件配置文件，并用 Intune 配置文件覆盖它。 Android 不使用主机名验证配置文件。 请勿在不同主机上使用相同的电子邮件地址创建多个电子邮件配置文件。 配置文件将相互覆盖。
+
+- **Android 工作配置文件**：Intune 提供两个 Android 工作电子邮件配置文件，分别用于 Gmail 和 Nine Work 应用。 这些应用在 Google Play 商店中提供，并且安装在设备工作配置文件中。 这些应用不会创建重复的配置文件。 这两个应用支持到 Exchange 的连接。 要使用电子邮件连接，请将其中某个电子邮件应用部署到用户的设备上。 然后创建相应的电子邮件配置文件并对其进行部署。 Nine Work 等电子邮件应用可能需付费使用。 若有任何问题，请查看应用的许可详细信息或与应用公司联系。
+
+## <a name="changes-to-assigned-email-profiles"></a>对已分配的电子邮件配置文件的更改
 
 如果更改以前分配的电子邮件配置文件，最终用户可能会看到一条消息，请求他们批准重新配置其电子邮件设置。
+
+## <a name="next-steps"></a>后续步骤
+配置文件已创建，但它尚未起到任何作用。 下一步，[将配置文件分配给一些设备](device-profile-assign.md)。

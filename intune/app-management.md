@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075840"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025162"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -94,7 +94,7 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
 - 应用许可证：查看、分配和监视从应用商店批量购买的应用。 有关详情，请参阅：
     - [iOS 批量采购计划 (VPP) 应用](vpp-apps-ios.md)。
     - [适用于企业的 Microsoft Store 批量采购的应用](windows-store-for-business.md)。
-- 发现的应用：查看由 Intune 分配，并安装在设备上的所有应用。 有关详细信息，请参阅[使用 Microsoft Intune 监视应用信息和分配](apps-monitor.md#device-and-user-status-graphs)。
+- **发现的应用**：查看由 Intune 分配或安装在设备上的应用。 有关详细信息，请参阅[使用 Microsoft Intune 查看设备详细信息](device-inventory.md)。
 - 应用安装状态：查看你创建的应用分配的状态。 有关详细信息，请参阅[使用 Microsoft Intune 监视应用信息和分配](apps-monitor.md#device-and-user-status-graphs)。
 - 应用保护状态：查看所选用户的应用保护策略的状态。
 - 审核日志：查看所有 IT 管理员的 Intune 应用相关活动。

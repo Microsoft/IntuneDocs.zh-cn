@@ -15,36 +15,50 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5460db2d646d8bd417baa50d8188acbf69a251d
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827983"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236486"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>设置注册状态页
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-在安装设备期间，“注册状态”页将显示设备上的安装信息。 用户注册时，可能尚未完全安装某些应用程序、配置文件和证书。 状态页可帮助用户在注册期间和注册后了解其设备的状态。 可以为所有用户启用状态页，也可以创建配置文件以定位特定用户组。  可以设置配置文件以显示安装进度、阻止使用直到安装完成、允许重置等。
+在安装设备期间，“注册状态”页将显示设备上的安装信息。 某些应用程序、配置文件和证书在用户完成开箱即用的注册登录到设备时可能尚未安装。 注册状态页有助于用户在设备安装期间了解其设备的状态。 可以创建多个注册状态页配置文件，并将其应用到不同的组。 配置文件可以设置为：
+- 显示安装进度。
+- 安装完成之前阻止使用。
+- 指定用户在设备安装失败时可以执行的操作。
+
+此外，还可以为每个配置文件设置优先级顺序，以对同一用户或设备的配置文件分配冲突做出解释。
+
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>为所有用户启用默认注册状态页
 
-要打开所有最终用户的注册状态页，请按照以下步骤操作。
+启用注册状态页，请执行以下步骤。
  
-1.  在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > Windows 注册” > 注册状态页(预览)”。
-2.  在“注册状态页”边栏选项卡中，选择“默认” > “设置”。
-3.  有关“显示应用和配置文件安装进度”，请选择“是”。
-4.  选择要打开的其他设置，然后选择“保存”。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > Windows 注册” > 注册状态页(预览)”。
+2. 在“注册状态页”边栏选项卡中，选择“默认” > “设置”。
+3. 有关“显示应用和配置文件安装进度”，请选择“是”。
+4. 选择要打开的其他设置，然后选择“保存”。
 
-## <a name="create-enrollment-status-page-profile-to-target-specific-users"></a>创建注册状态页配置文件以定位特定用户
+## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>创建注册状态页配置文件并将其分配到组
 
-1.  在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “注册状态页(预览)” > “创建配置文件”。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “注册状态页(预览)” > “创建配置文件”。
 2. 提供名称和说明。
 3. 选择“创建”。
 4. 在“注册状态页”列表中选择新配置文件。
 5. 选择“分配” > “选择组”> 选择要采用此配置文件的组 >“选择” > “保存”。
 6. 选择“设置”> 选择要应用于此配置文件的设置 >“保存”。
+
+## <a name="set-the-enrollment-status-page-priority"></a>设置注册状态页的优先级
+
+设备或用户可能处于多个组中，并且具有多个注册状态页配置文件。 要处理此类冲突，可以为每个配置文件设置优先级。 如果用户具有多个注册状态页配置文件，则仅应用具有最高优先级的配置文件。
+
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > Windows 注册” > 注册状态页(预览)”。
+2. 将鼠标悬停在列表中的配置文件上。
+3. 使用三个垂直点，将该配置文件拖到列表中的所需位置。
 
 
 ## <a name="enrollment-status-page-tracking-information"></a>注册状态页跟踪信息
@@ -65,8 +79,9 @@ ms.locfileid: "48827983"
     - 每台计算机业务线 (LoB) MSI 应用。
     - LoB 应用商店应用（安装上下文为设备）。
     - 离线应用商店和 LoB 应用商店应用（安装上下文为设备）。
-- 尚未跟踪连接配置文件（VPN 和 Wi-Fi），因此这些配置文件将始终显示“0/0”。
-- 尚未跟踪证书，因此这些配置文件将始终显示“0/0”。
+- 连接性配置文件
+    - 为“所有设备”或注册设备是成员的设备组分配 VPN 或 Wi-Fi 配置文件，但仅适用于 Autopilot 设备
+- 为“所有设备”或注册设备是成员的设备组分配证书配置文件，但仅适用于 Autopilot 设备
 
 ### <a name="account-setup"></a>帐户设置
 对于帐户设置，注册状态页会跟踪以下各项：

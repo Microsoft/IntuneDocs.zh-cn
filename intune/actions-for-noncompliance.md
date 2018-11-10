@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fae8faf54c7b41bb547912853285cf09ec9c46d5
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 953b468337d3317027344573d147b65d765e3db3
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828102"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236435"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>为不符合的设备自动发送电子邮件和添加操作 - Intune
 
@@ -71,7 +71,7 @@ ms.locfileid: "48828102"
 
    ![Intune 中符合性通知邮件的示例](./media/actionsfornoncompliance-1.PNG)
 
-4. 在完成信息添加后，选择“创建”。 通知邮件模板已就绪，可供使用。
+4. 在完成信息添加后，选择“创建”。 通知邮件模板已就绪，可供使用。 请注意，作为公司门户品牌的一部分上传的徽标将用于电子邮件模板。 有关公司门户品牌的详细信息，请参阅[公司标识品牌自定义](company-portal-app.md#company-identity-branding-customization)。  
 
 > [!NOTE]
 > 你还可以编辑先前创建的“通知”模板。

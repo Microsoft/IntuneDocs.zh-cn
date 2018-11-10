@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: 822be56db10f4659ba9cd027c2612d7960e40e5b
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291438"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679196"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>在 Microsoft Intune 中为运行 Windows Phone 8.1 的设备配置 VPN 设置
 
@@ -93,7 +93,7 @@ ms.locfileid: "35291438"
 ## <a name="proxy-settings"></a>代理设置
 
 - **自动检测代理设置** - 如果 VPN 服务器要求使用代理服务器进行连接，请指定是否希望设备自动检测连接设置。 有关详细信息，请参阅 Windows Server 文档。
-- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL（例如 http://proxy.contoso.com）。
+- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL（例如 `** http://proxy.contoso.com**`）。
 - **使用代理服务器** - 如果想要手动输入代理服务器设置则启用此选项。
     - **地址** - 输入代理服务器地址（作为 IP 地址）。
     - **端口号** - 输入与代理服务器关联的端口号。
