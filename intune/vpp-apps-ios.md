@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7b1c8f35dcb4bcf7a4d2872221c6bb8905ab8f5
-ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
+ms.openlocfilehash: fc7aac337c01db3098be5f699db22c3a81c6eb75
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/30/2018
-ms.locfileid: "50225431"
+ms.locfileid: "50236605"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
@@ -71,10 +71,9 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 * 在开始配合使用 Apple VPP 和 Intune 之前，先删除使用其他移动设备管理 (MDM) 供应商创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步 Apple VPP 服务中由 Intune 创建的数据。
 * Intune 支持最多添加 256 个 VPP 令牌。
 * Apple 的设备注册配置文件 (DEP) 计划可将移动设备管理 (MDM) 注册自动化。 利用 DEP，可以在不触及企业设备的情况下对其进行配置。 可以使用用于 Apple VPP 的相同计划代理帐户在 DEP 计划中进行注册。 [Apple 部署计划](https://deploy.apple.com)网站下列出的计划具有唯一的 Apple 部署计划 ID，并且此 ID 可用于登录 Apple 服务，如 iTunes 商店。
-* 使用用户授权模型向用户或设备（具有用户关联）分配 VPP 应用时，每个 Intune 用户在其设备上接受 Apple 条款与条件时都需与一个唯一的 Apple ID 或电子邮件地址相关联。 确保为新的 Intune 用户设置设备时，使用该用户的唯一 Apple ID 或电子邮件地址来配置设备。 Apple ID 或电子邮件地址与 Intune 用户配成唯一对，并且最多可用于 5 台设备。
-* 仅支持一次在一个 Intune 帐户上使用一个 VPP 令牌。 不要将同一个 VPP 令牌重复用于多个 Intune 账户。
 * 使用用户授权模型向用户或设备（具有用户关联）分配 VPP 应用时，每个 Intune 用户在其设备上接受 Apple 条款与条件时都需与一个唯一的 Apple ID 或电子邮件地址相关联。
-确保为新的 Intune 用户设置设备时，使用该用户的唯一 Apple ID 或电子邮件地址来配置设备。 Apple ID 或电子邮件地址与 Intune 用户配成唯一对，并且最多可用于 5 台设备。
+* 确保为新的 Intune 用户设置设备时，使用该用户的唯一 Apple ID 或电子邮件地址来配置设备。 Apple ID 或电子邮件地址与 Intune 用户配成唯一对，并且最多可用于 5 台设备。
+* 仅支持一次在一个 Intune 帐户上使用一个 VPP 令牌。 不要将同一个 VPP 令牌重复用于多个 Intune 账户。
 
 >[!IMPORTANT]
 >将 VPP 令牌导入 Intune 之后，不要将同一令牌导入任何其他设备管理解决方案。 这样做可能导致许可证分配和用户记录丢失。
