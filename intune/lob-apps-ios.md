@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbf02fc9633cca5059a6c58c3ef021f05469be60
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 43ca9d165bd44684a23f7e82eaed04f833b30449
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075587"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212336"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>将 iOS 业务线应用添加到 Microsoft Intune
 
@@ -55,7 +55,6 @@ ms.locfileid: "49075587"
     - 描述：为应用输入描述。 描述显示在公司门户中。
     - 发布者：输入应用的发布者名称。
     - 最低操作系统：从列表中选择可安装应用的最低操作系统版本。 如果将应用分配到具有较低操作系统的设备，则不会安装该应用。
-    - 忽略应用版本：如果应用开发人员自动更新应用，则设置为“是”。
     - 类别：选择一个或多个内置应用类别，或选择你创建的类别。 “类别”可让用户在浏览公司门户时更轻松地查找应用。
     - 在公司门户中将此应用显示为特色应用：当用户浏览应用时，在公司门户的主页上突出显示此应用。
     - 信息 URL：（可选）输入包含此应用相关信息的网站 URL。 此 URL 显示在公司门户中。

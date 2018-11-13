@@ -46,7 +46,7 @@ ms.locfileid: "48260243"
 使用以下步骤注册运行 OS X El Capitan 10.11 和更高版本的 macOS 设备。   
 
 
-1. 若要访问公司门户网站，请在“Safari”中打开新窗口，并转到 https://portal.manage.microsoft.com。  
+1. 若要访问公司门户网站，请在“Safari”中打开新窗口，并转到 https://portal.manage.microsoft.com 。  
 
 2. 使用工作或学校帐户登录到公司门户网站。
 

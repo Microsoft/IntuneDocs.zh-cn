@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024798"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298065"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
@@ -48,9 +48,6 @@ ms.locfileid: "31024798"
 排除操作仅查看组的直接成员，而不包括与用户关联的设备。 但是，没有用户的设备不会获得策略。 出现这种情况是因为这些设备与“所有用户”组没有任何关系。
 
 如果包括“所有设备”，而排除“所有用户”，则所有设备均接收策略。 在这种情况下，其目的是将与用户关联的设备从策略中排除。 但是，这样并不会排除设备，因为排除功能只比较直接组成员。
-
->[!TIP]
->排除操作不适用于符合性策略或应用分配。 若要从分配中排除成员，可使用“可用”和“不适用”分配。 例如，通过“可用”意图向“所有企业用户”分配应用，通过“不适用”意图向“高级管理人员”分配应用。 将向所有用户分配应用，“高级管理人员”组中的用户除外。 如果通过“必需”意图向“所有企业用户”分配应用，则不排除“高级管理人员”组中的用户。
 
 ## <a name="next-steps"></a>后续步骤
 有关监视设备配置文件分配的指南，请参阅[如何监视设备配置文件](device-profile-monitor.md)。
