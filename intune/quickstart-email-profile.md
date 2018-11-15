@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231944"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225741"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入门：创建适用于 iOS 设备的电子邮件设备配置文件
 
@@ -69,7 +69,7 @@ ms.locfileid: "48231944"
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门中，创建适用于 iOS 设备的电子邮件配置文件。 现在可以使用此配置文件来确定 iOS 设备是否合规，方法是创建符合性策略，将任何与该配置文件不匹配的 iOS 设备标记为不合规。 对于进一步保护，可以创建条件访问策略，阻止不符合的 iOS 设备访问电子邮件。
+在本快速入门中，创建适用于 iOS 设备的电子邮件配置文件。 现在可以使用此配置文件来确定 iOS 设备是否合规，方法是创建符合性策略，将任何与该配置文件不匹配的 iOS 设备标记为不合规。 对于进一步保护，可以创建条件访问策略，阻止不符合的 iOS 设备访问电子邮件。 有关设备符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](device-compliance-get-started.md)。
 
 > [!div class="nextstepaction"]
-> [Intune 中的设备符合性策略入门](device-compliance-get-started.md)
+> [教程：保护托管设备上的 Exchange Online 电子邮件](tutorial-protect-email-on-enrolled-devices.md)

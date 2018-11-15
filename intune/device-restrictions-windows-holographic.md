@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321607"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576794"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune 中适用于 Windows Holographic for Business 的设备限制设置
 
@@ -41,17 +41,17 @@ ms.locfileid: "39321607"
 -   **受信任的应用安装** - 允许对使用受信任的证书签名的应用进行旁加载。
 -   **开发人员解锁** - 允许 Windows 开发人员设置，如允许最终用户修改旁加载的应用。
 
-## <a name="edge-browser"></a>Microsoft Edge 浏览器
+## <a name="microsoft-edge-browser"></a>Microsoft Edge 浏览器
 
 -   **Cookie** - 允许浏览器将 Internet Cookie 保存到设备。
 -   **弹出窗口** - 阻止浏览器中的弹出窗口（仅适用于 Windows 10 桌面版）。
 -   **搜索建议** - 允许搜索引擎在你键入搜索短语时建议站点。
 -   **密码管理器** - 启用或禁用 Microsoft Edge 密码管理器功能。
-- **发送 do-not-track 标头** - 配置 Microsoft Edge 浏览器，将“不跟踪”标头发送到用户访问的网站。
+- **发送“禁止跟踪”标头** - 配置 Microsoft Edge 浏览器，将“禁止跟踪”标头发送到用户访问的网站。
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **Microsoft Edge SmartScreen** - 启用 Edge SmartScreen，以便访问网站和下载文件。
+- **Microsoft Edge SmartScreen** - 启用 Microsoft Edge SmartScreen，以便访问网站和下载文件。
 
 ## <a name="search"></a>搜索
 - **搜索位置** - 指定搜索是否可使用位置。 信息

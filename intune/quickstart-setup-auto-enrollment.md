@@ -5,14 +5,14 @@ services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 11/05/2018
 ms.author: erikje
-ms.openlocfilehash: 3b713f090fb6ada884a269e286f55f6e1b1087c4
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: c219629968fbd66ee14abf61786a791bf7f5e2e0
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581521"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510782"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>快速入门 - 设置 Windows 10 设备的自动注册
 
@@ -22,6 +22,7 @@ ms.locfileid: "46581521"
 
 ## <a name="prerequisites"></a>必备条件
 
+- Microsoft Intune 订阅 - [注册免费试用帐户](free-trial-sign-up.md)。
 - 要完成本快速入门，必须先[创建用户](quickstart-create-user.md)并[创建组](quickstart-create-group.md)。
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
@@ -30,17 +31,33 @@ ms.locfileid: "46581521"
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>设置 Windows 10 自动注册
 
-在本示例中，你将使用 MDM 注册，以便可以自动注册公司和自带设备。
+本示例将使用 MDM 注册，以便可以自动注册公司设备和自带设备。 你将注册免费的 Azure Active Directory Premium 订阅。
 
-1. 在 Azure 中，选择“Azure Active Directory” > “移动性 (MDM 和 MAM)” > “Microsoft Intune” > “某些”。
-![浏览器](media/quickstart-setup-auto-enrollment/setup-automatic-enrollment-win10.png)
-2. 选择“选择组” > “Contoso 测试人员” > “选择”。
-3. 对以下 URL 使用默认值：
-    - MDM 使用条款 URL
-    - MDM 发现 URL
-    - MDM 符合性 URL
-4. 选择 **“保存”**。
-5. 在 Windows 10 设备上以组中的用户身份登录，然后按照提示进行操作。
+1. 在 Azure 中，选择“Azure Active Directory” > “移动性(MDM 和 MAM)”。
+2. 选择“获取免费的 Premium 试用版以使用此功能”。 选择此选项将允许使用 Azure Active Directory Premium 免费试用版进行自动注册。 
+
+    ![选择 Azure Active Directory Premium 免费试用版](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
+
+    选择“企业移动性 + 安全性 E5”免费试用版选项。 此外，必须选择“激活”免费试用版。
+
+    ![选择“企业移动性 + 安全性 E5”免费试用版](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
+
+3. 选择“Microsoft Intune”。 
+
+    ![从列表中选择“Microsoft Intune”](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
+
+4. 从“MDM 用户范围”中选择“某些”，以使用 MDM 自动注册来管理员工 Windows 设备上的企业数据。 将为 AAD 加入的设备和自带的设备配置 MDM 自动注册。
+
+    ![从“配置”列表中选择“某些”](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
+
+5. 选择“选择组” > “Contoso 测试人员” > “选择”作为已分配的组。
+
+    ![选择要注册的组](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
+
+6. 从“MAM 用户范围”中选择“某些”以管理员工设备上的数据。
+7. 选择“选择组” > “Contoso 测试人员” > “选择”作为已分配的组。 
+8. 对于剩余的配置，可以使用默认值。
+9. 选择 **“保存”**。
 
 ## <a name="clean-up-resources"></a>清理资源
 
@@ -48,7 +65,9 @@ ms.locfileid: "46581521"
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门中，你已了解如何设置 Windows 10 设备的自动注册。 还可以了解在所有平台上注册设备的其他方法。
+在本快速入门中，你已了解如何设置 Windows 10 设备的自动注册。 有关设备注册的详细信息，请参阅[什么是设备注册？](device-enrollment.md)
+
+要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [什么是设备注册？（文章）](device-enrollment.md)
+> [快速入门：注册 Windows 10 设备](quickstart-enroll-windows-device.md)

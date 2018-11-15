@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150095"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561935"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中删除 SCEP 和 PKCS 证书
 
@@ -131,7 +131,7 @@ ms.locfileid: "50150095"
   - 管理员从 Azure AD 中删除用户或组
   - 管理员更改或更新 PKCS 配置文件
 
-## <a name="android--android-enterprise-devices"></a>Android 和 Android Enterprise 设备
+## <a name="android-knox-devices"></a>Android KNOX 设备
 
 #### <a name="scep-certificates"></a>SCEP 证书
 
@@ -177,6 +177,10 @@ ms.locfileid: "50150095"
   - 管理员更改或更新 PKCS 配置文件
   - 从组分配中删除配置文件
   - 从组分配中删除符合性策略 
+  
+  
+> [!NOTE]
+> Android for Work 设备未针对上述情形进行验证。 Android 旧版设备（任何非 Samsun、非工作配置文件设备）未启用证书删除功能。 
 
 ## <a name="macos-certificates"></a>macOS 证书
 

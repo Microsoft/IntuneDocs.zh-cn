@@ -15,12 +15,12 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12ab106b44d217d7e7b4b1a466fd5b12a9fb528
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: c24630dd3cc45b35e6313e9e66db74a548bb0851
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231825"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298099"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange 连接器
 
@@ -43,7 +43,7 @@ ms.locfileid: "48231825"
 |            要求             |                                                                                                                                                                                                        更多信息                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         操作系统          |                                                               Intune 支持在运行任何版本的 Windows Server 2008 SP2 64 位、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 或 Windows Server 2016 的计算机上安装本地 Exchange 连接器。<br /><br />该连接器在任何服务器核心安装上都不受支持。                                                                |
-|         Microsoft Exchange         |                                                                           本地连接器需要 Microsoft Exchange 2010 SP1 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是<strong>新</strong>配置还是<strong>旧</strong>配置，请与帐户管理员联系。                                                                           |
+|         Microsoft Exchange         |                                                                           本地连接器需要 Microsoft Exchange 2010 SP3 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是<strong>新</strong>配置还是<strong>旧</strong>配置，请与帐户管理员联系。                                                                           |
 | 移动设备管理机构 |                                                                                                                              [将移动设备管理机构设置为 Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set)。                                                                                                                               |
 |              硬件              |                                                                                                                                                     安装连接器的计算机需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间。                                                                                                                                                      |
 |  Active Directory 同步  |                                                                                      必须[设置 Active Directory 同步](users-add.md)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用连接器将 Intune 连接到 Exchange Server。                                                                                      |
@@ -70,7 +70,7 @@ ms.locfileid: "48231825"
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange 连接器软件安装包
 
-1. 在本地 Exchange 连接器支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](http://portal.azure.com)。
+1. 在本地 Exchange 连接器支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange Server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](http://portal.azure.com)。
 
 2. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 

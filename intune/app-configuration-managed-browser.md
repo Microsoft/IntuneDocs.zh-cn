@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: 0c2a4ff4654b937449f8e7a36778a67a978bd6db
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357081"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576862"
 ---
-# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Internet 访问
+# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Internet 访问
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -50,7 +50,7 @@ Microsoft Edge 和 Intune Managed Browser 是 Web 浏览器应用，你和你的
 
 ## <a name="application-protection-policies-for-protected-browsers"></a>受保护浏览器的应用程序保护策略
 
-由于 Edge 和 Managed Browser 已与 Intune SDK 集成，因此也可以向其应用应用保护策略，包括：
+由于 Microsof Edge 和 Managed Browser 已与 Intune SDK 集成，因此也可以向其应用应用保护策略，包括：
 - 控制剪切、复制和粘贴操作的使用。
 - 防止发生屏幕捕获。
 - 确保仅在托管应用和浏览器中打开公司链接。
@@ -65,7 +65,7 @@ Microsoft Edge 和 Intune Managed Browser 是 Web 浏览器应用，你和你的
 
 >[!NOTE]
 >如果用户从应用商店中安装了 Managed Browser，并且 Intune 未托管它，则可将其用作基本的 Web 浏览器，其支持通过 Microsoft MyApps 网站进行单一登录。 用户将被直接转到 MyApps 网站，在其中用户可以看到其预配的所有 SaaS 应用程序。
-Intune 未托管 Managed Browser 或 Edge 期间，无法访问由 Intune 托管的其他应用程序中的数据。 
+Intune 未托管 Managed Browser 或 Microsof Edge 期间，无法访问由 Intune 托管的其他应用程序中的数据。 
 
 
 ## <a name="conditional-access-for-protected-browsers"></a>受保护浏览器的条件性访问
@@ -83,7 +83,7 @@ Managed Browser 现为条件访问的核准客户端应用。 这意味着可以
 
 5. 在“分配”部分，选择“条件” > “客户端应用”。 随即显示“客户端应用”边栏选项卡。
 6. 单击“配置”下的“是”，将策略应用到特定客户端应用。
-7. 确认“浏览器”选为客户端应用。
+7. 确认“浏览器”已被选为客户端应用。
 
     ![Azure AD - Managed Browser - 选择客户端应用](./media/managed-browser-conditional-access-02.png)
 
@@ -151,30 +151,30 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 - 通过 Azure AD 应用程序代理设置内部应用程序。
     - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
 - 必须使用 Managed Browser 应用的最低版本 1.2.0。
-- Managed Browser 或 Edge 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
+- Managed Browser 或 Microsof Edge 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
 
     > [!NOTE]
-    > 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 和 Edge 中生效。
+    > 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 和 Microsof Edge 中生效。
 
 
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>步骤 1：从 Outlook 启用指向受保护的浏览器的自动重定向
 Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中显示**这一设置的应用保护策略。
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>步骤 2：为受保护的浏览器分配一个应用配置策略。
-此过程将 Managed Browser 或 Edge 应用配置为使用应用代理重定向。 使用创建 Edge 或 Managed Browser 应用配置的过程提供以下键值对：
+此过程将 Managed Browser 或 Microsof Edge 应用配置为使用应用代理重定向。 使用创建 Microsof Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 | Key                                                             | 值    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-若要深入了解 Managed Browser、Edge 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅“企业移动性 + 安全性”博客文章[更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)。
+若要深入了解 Managed Browser、Microsof Edge 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅“企业移动性 + 安全性”博客文章 [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)（更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问）。
 
 > [!NOTE]
-> Edge 使用与 Managed Browser 相同的键值对。 
+> Microsoft Edge 使用与 Managed Browser 相同的键值对。 
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>如何配置受保护浏览器的主页
 
-使用此设置可配置用户启动受保护的浏览器或创建新选项卡时看到的主页。使用创建 Edge 或 Managed Browser 应用配置的过程提供以下键值对：
+使用此设置可配置用户启动受保护的浏览器或创建新选项卡时看到的主页。使用创建 Microsof Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 |                                Key                                |                                                           值                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -182,13 +182,13 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>如何配置受保护的浏览器的书签
 
-使用此设置可配置一组可供 Edge 或 Managed Browser 用户使用的书签。
+使用此设置可配置一组可供 Microsoft Edge 或 Managed Browser 用户使用的书签。
 
 - 用户无法删除或修改这些书签
 - 这些书签显示在列表顶部。 用户创建的任何书签显示在这些书签下方。
 - 如果已启用应用代理重定向，可以使用应用代理 Web 应用的内部或外部 URL 添加应用。
 
-使用创建 Edge 或 Managed Browser 应用配置的过程提供以下键值对：
+使用创建 Microsof Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 |                                Key                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,7 +196,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>如何为受保护的浏览器指定允许和阻止的 URL
 
-使用创建 Edge 或 Managed Browser 应用配置的过程提供以下键值对：
+使用创建 Microsof Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 |Key|值|
 |-|-|

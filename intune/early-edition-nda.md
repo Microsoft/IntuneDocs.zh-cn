@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2018
+ms.date: 11/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bacaf8ff4119d4cd40483b65ea45e283d98a51f1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 2f21df636ab429969429c6dbdf540daaa67a8f88
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025196"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576760"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Microsoft Intune 的早期版本 - 2018 年 11 月
 
@@ -44,11 +44,6 @@ ms.locfileid: "51025196"
 ### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>卸载公司拥有的受监督 iOS 设备上的应用 <!-- 1281677 -->
 你将能够删除公司拥有的受监督 iOS 设备上的应用。 可以通过以“卸载”分配类型的用户或设备组为目标来删除任何应用。 对于个人或无监督的 iOS 设备，你将继续只能删除使用 Intune 安装的应用。
 
-### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>支持 iOS 电子邮件配置文件中的 iOS 12 OAuth <!--2155106 -->
-Intune 的 iOS 电子邮件配置文件将支持 iOS 12 OAuth。 要查看此功能，请选择“Intune” > “设备配置” > “配置文件” > “创建配置文件”。 在“创建配置文件”边栏选项卡上，可以启用或禁用“OAuth”。 如果启用此设置，将发生两种情况：
-1. 已指定的设备将发布新的配置文件。
-2. 系统会再次提示最终用户输入其凭据。
-
 ### <a name="track-installation-of-office-proplus---2620217--"></a>跟踪 Office 专业增强版的安装过程<!--2620217-->
 你将能够使用[注册状态页面](windows-enrollment-status.md)来跟踪 [Office 专业增强版](apps-add-office365.md)的安装进度。
 
@@ -69,7 +64,7 @@ Intune 将支持对 Apple School Manager 帐户使用 macOS 设备上的设备�
 可以更好地控制应用保护政策分配。 通过保存并应用应用保护策略分配，仅目标用户会受到应用保护分配策略的直接影响。
 
 ### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>适用于 Windows 10 及更高版本的新 Microsoft Edge 浏览器设置 <!-- 3174639 -->
-将添加新的设置，以帮助控制和管理设备上的 Microsoft Edge 浏览器。 有关当前设置的列表，请参阅[适用于 Windows 10（及更高版本）的设备限制](device-restrictions-windows-10.md#edge-browser)。
+将添加新的设置，以帮助控制和管理设备上的 Microsoft Edge 浏览器。 有关当前设置的列表，请参阅[适用于 Windows 10（及更高版本）的设备限制](device-restrictions-windows-10.md#microsoft-edge-browser)。
 
 ### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>选择注册状态页上跟踪的应用<!-- 2531007 -->
 可以选择在“注册状态”页面上跟踪的应用。
@@ -113,10 +108,10 @@ Intune 中的“租户状态”页面将在一个位置提供租户状态信息�
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>另一个 MDM 使用的 Apple VPP 令牌 <!-- 1488946 -->
 Intune 会检测是否 Intune 和另一个 MDM 同时在使用同一个 Apple 批量采购计划 (VPP) 令牌，并显示相关详细信息。
 
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>将显示 iOS 和 macOS 的版本号和生成号 <!-- 1892471 -->
-在“设备符合性” > “设备符合性”中，会显示 iOS 和 macOS 操作系统版本。 在未来的某个更新中，会显示这两个平台的生成号。
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>符合性策略中提供了 iOS 和 macOS 的版本号和生成号 <!-- 1892471 -->
+在“设备符合性” > “设备符合性”中，iOS 和 macOS 操作系统版本都会显示，并且可在符合性策略中使用。 在未来的更新中，还可以为这两个平台配置生成号。
 
-Apple 每次发布安全更新时，会保留版本号，更新生成号。 通过所显示的生成号，可轻松确认是否已安装漏洞更新。
+Apple 每次发布安全更新时，会保留版本号，更新生成号。 通过在符合性策略中使用生成号，可轻松地检查是否已安装漏洞更新。
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>“设备符合性仪表板”中的停用设备 <!-- 1981119 -->
 未来的某个更新将从设备符合性仪表板中删除已停用的设备。 这会改变符合性数字。

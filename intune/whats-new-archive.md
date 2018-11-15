@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c58cc56672409d954c4bf0b2829ea23d1b0a93df
-ms.sourcegitcommit: b01c607fc666254c560f5b60bd8a0def8e48197c
+ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132463"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576998"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
@@ -46,7 +46,7 @@ Android Enterprise（以前称为 Android for Work）支持包含和排除组，
 
 ### <a name="device-management"></a>设备管理
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>在 IE、Edge 或 Chrome 中将所有设备导出到 CSV 文件中<!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>在 IE、Microsoft Edge 或 Chrome 中将所有设备导出到 CSV 文件中 <!-- 2258071 -->
 在“设备” > “所有设备”中，可以将设备“导出”为 CSV 格式的列表。 设备数量 >10,000 台的 Internet Explorer (IE) 用户可以将其设备成功地导出到多个文件中。 每个文件中的设备数量最多为 10,000 台。
 
 设备数量 >30,000 台的 Edge 和 Chrome 用户可以将其设备成功地导出到多个文件中。 每个文件中的设备数量最多为 30,000 台。
@@ -296,8 +296,8 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 - **发布用户活动**：将此设置为“阻止”以阻止任务切换程序中最近使用资源的共享体验和发现。
 - **仅限本地活动**：将此设置为“阻止”以仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Microsoft Edge 浏览器的新设置 <!--1469166 -->
-现在将为具有 Microsoft Edge 浏览器的设备提供[两个新设置](device-restrictions-windows-10.md#edge-browser)：“到收藏夹文件的路径”和“对收藏夹的更改”。
+#### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Microsoft Edge 浏览器的新设置 <!--1469166 -->
+现在将为具有 Microsoft Edge 浏览器的设备提供[两个新设置](device-restrictions-windows-10.md#microsoft-edge-browser)：“到收藏夹文件的路径”和“对收藏夹的更改”。
 
 ### <a name="app-management"></a>应用管理
 
@@ -1267,7 +1267,7 @@ Intune Managed Browser 现在可与 Azure AD 应用程序代理服务集成，�
 -  隐私
 -  搜索
 -  Windows 聚焦
--  Edge 浏览器
+-  Microsoft Edge 浏览器
 
 有关 Windows 10 设置的详细信息，请参阅 [Windows 10 及更高版本的设备限制设置](device-restrictions-windows-10.md)。
 

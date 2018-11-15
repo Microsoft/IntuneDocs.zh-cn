@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237657"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511021"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
@@ -391,6 +391,28 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>告知用户重启注册过程
 擦除已阻止设备后，可告知用户重启注册过程。
+
+## <a name="macos-issues"></a>macOS 问题
+
+### <a name="macos-enrollment-errors"></a>macOS 注册错误
+**错误消息 1**：你似乎在使用虚拟机 *。请确保已完全配置了虚拟机，包括序列号和硬件型号。如果这不是虚拟机，请联系支持人员。*  
+
+**错误消息 2**：无法托管设备 *。如果使用虚拟机、具有受限制的序列号或者此设备已分配给其他人，则可能会导致此问题。了解如何解决这些问题，或联系公司支持人员。*
+
+**问题：** 此消息可能是由于以下任何一种原因导致：  
+* macOS 虚拟机 (VM) 未正确配置  
+* 已启用要求设备为公司拥有或在 Intune 中具有已注册的设备序列号的设备限制  
+* 设备已注册并仍分配给 Intune 中的其他人  
+
+**解决方法：** 首先，请与你的用户核实以确定影响其设备的问题。 然后完成以下解决方案中最相关的解决方案：
+* 如果用户注册用于测试的 VM，请确保已将其完全配置，以便 Intune 可以识别其序列号和硬件型号。 了解如何在 Intune 中[设置 VM](macos-enroll.md#enroll-virtual-macos-machines-for-testing) 的详细信息。  
+* 如果组织启用了阻止个人 macOS 设备的注册限制，则必须手动[添加个人设备的序列号](corporate-identifiers-add.md#manually-enter-corporate-identifiers)到 Intune。  
+* 如果设备仍分配给 Intune 中的其他用户，则其前所有者未使用公司门户应用来删除或重置它。 从 Intune 清除陈旧的设备记录：  
+
+    1. 转到 [Azure 门户中的 Intune](https://portal.manage.microsoft.com)，然后使用管理凭据登录。
+    2. 转到 Intune >“设备” > “所有设备”。  
+    3. 查找存在注册问题的设备。 按设备名称或 MAC/HW 地址搜索以缩小结果范围。
+    4. 选择“设备”>“删除”。 删除与设备关联的所有其他条目。  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager with Intune 时的问题
 ### <a name="mobile-devices-disappear"></a>移动设备消失

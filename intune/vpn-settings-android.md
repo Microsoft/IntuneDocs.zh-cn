@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Intune 中配置适用于 Android 设备的 VPN 设置 - Azure | Microsoft Docs
-description: 创建适用于 Android 和 Android for work 设备的 VPN 配置文件时，输入 VPN 服务器的连接名称、IP 地址或 FQDN，选择用户与 VPN 服务器进行身份验证的方式，然后选择 Citrix、SonicWall、Check Point Capsule、Pulse Secure 和 Edge 连接类型。
+description: 创建适用于 Android 和 Android for work 设备的 VPN 配置文件时，输入 VPN 服务器的连接名称、IP 地址或 FQDN，选择用户与 VPN 服务器进行身份验证的方式，然后选择 Citrix、SonicWall、Check Point Capsule、Pulse Secure 和 Microsoft Edge 连接类型。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f02a76def463c4ef1c3ee24b021df3185d263ecf
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 113d2e52783f3c7e9f013d2cc239efad45408c87
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279315"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576811"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>在 Intune 中为运行 Android 的设备配置 VPN 设置
 

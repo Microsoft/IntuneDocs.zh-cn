@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.openlocfilehash: 17b99c4a089fc426ecfeea803737fa8704f3b0a6
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505710"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212302"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>解决 macOS 设备的常见问题
 
@@ -33,3 +33,6 @@ ms.locfileid: "46505710"
 - [Jamf 管理的设备不兼容](device-little-different-jamf.md)
 - [找不到序列号](how-do-i-find-the-serial-number-on-my-device-macos.md)
 - [要求识别我的设备](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [注册 macOS 虚拟机时出错](unable-to-get-macOS-device-managed.md)  
+- [收到一条 macOS 设备序列号受到限制的消息](unable-to-get-macOS-device-managed.md)  
+- [设备可能已分配给其他人](unable-to-get-macOS-device-managed.md)  

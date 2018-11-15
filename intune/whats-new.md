@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025230"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576964"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-了解 Microsoft Intune 每周新增功能。 另外，你还可以找到[即将发生的更改](#whats-coming)、有关服务的[重要说明](#notices)，以及有关[过去版本](whats-new-archive.md)的信息。 某些功能可能会在数周内推出，第一周内可能不能供所有客户使用。
+了解 Microsoft Intune 每周新增功能。 此外，还可找到即将发生的更改、[重要说明](#notices)以及有关[过去版本](whats-new-archive.md)的信息。 某些功能可能会在数周内推出，第一周内可能不能供所有客户使用。
 
 > [!Note]
 > 有关混合移动设备管理 (MDM) 中新功能的信息，请参阅[混合新增功能页面](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
@@ -41,6 +41,21 @@ ms.locfileid: "51025230"
 ### Role-based access control
 
 -->     
+## <a name="week-of-november-5-2018"></a>2018 年 11 月 5 日当周
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>支持 iOS 电子邮件配置文件中的 iOS 12 OAuth <!--2155106 -->
+
+Intune 的 iOS 电子邮件配置文件支持 iOS 12 Open Authorization (OAuth)。 要查看此功能，请创建新配置文件（“设备配置” > “配置文件” > “创建配置文件” >  iOS 平台 >“电子邮件”配置文件类型），或更新现有的 iOS 电子邮件配置文件。 如果在已部署到用户的配置文件中启用 OAuth，则会提示用户重新进行身份验证，然后再次下载其电子邮件。
+
+[iOS 电子邮件配置文件](email-settings-ios.md)提供了有关在电子邮件配置文件中使用 OAuth 的详细信息。
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>已加入混合 Azure Active Directory 的设备支持 Autopilot（预览）<!-- 1048100-->
+现在可以使用 Autopilot 对已加入混合 Azure Active Directory 的设备进行设置。 设备必须加入组织网络中，才能使用混合 Autopilot 功能。 有关详细信息，请参阅[使用 Intune 和 Windows Autopilot 部署已加入混合 Azure AD 的设备](windows-autopilot-hybrid.md)。
+此功能将在未来几天内在整个用户群中推出。 因此，在推送到你的帐户之前，你可能无法执行这些步骤。
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>适用于 Web 数据的应用保护策略 (APP) 设置 <!-- 2662995  -->
+已更新 Android 和 iOS 设备上适用于 Web 内容的应用策略设置，能更好地处理 http 和 https Web 链接，以及通过 iOS 通用链接和 Android 应用链接进行的数据传输。  
+
 ## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日当周
 
 
@@ -112,10 +127,6 @@ Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新的 Azure Active Directory 使用条款功能 <!-- 2870393 -->
 Azure Active Directory 具备可供使用的使用条款功能，而不必再使用现有的 Intune 条款和条件。 Azure AD 使用条款功能在显示哪些条款以及何时显示这些条款方面更加灵活，并能更好地支持本地化，更好地控制条款的呈现方式以及改进报告。 Azure AD 使用条款功能需要 Azure Active Directory Premium P1，后者也是企业移动性 + 安全性 E3 套件的一部分。 要了解详情，请参阅[管理公司的用户访问条款和条件](terms-and-conditions-create.md)一文。
 
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>已加入混合 Azure Active Directory 的设备支持 Autopilot（预览）<!-- 1048100-->
-现在可以使用 Autopilot 对已加入混合 Azure Active Directory 的设备进行设置。 设备必须加入组织网络中，才能使用混合 Autopilot 功能。 有关详细信息，请参阅[使用 Intune 和 Windows Autopilot 部署已加入混合 Azure AD 的设备](windows-autopilot-hybrid.md)。
-此功能将在未来几天内在整个用户群中推出。 因此，在推送到你的帐户之前，你可能无法执行这些步骤。
-
 ### <a name="android-device-owner-mode-support---3188762--"></a>Android 设备所有者模式支持 <!--3188762-->
 对于 Samsung Knox 移动注册，Intune 现在支持将设备注册到 Android 设备所有者管理模式。 使用 WiFi 或移动电话网络的用户在第一次打开他们的设备时，只需几次点击即可进行注册。 有关详细信息，请参阅[使用 Samsung 的 Knox 移动注册自动注册 Android 设备](android-samsung-knox-mobile-enroll.md)。
 
@@ -130,7 +141,10 @@ Azure Active Directory 具备可供使用的使用条款功能，而不必再使
 - **访问要求** - 该组包含每个应用的 PIN 选项，用于确定最终用户在工作环境中访问应用的方式。  
 - **条件启动** - 该组包含最低操作系统设置、已越狱和取得 Root 权限的设备检测以及脱机宽限期等设置。  
   
-设置的功能不会更改，但在处理策略创作流程时会更容易找到它们。 
+设置的功能不会更改，但在处理策略创作流程时会更容易找到它们。
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>新的 Intune 设备订阅 SKU！--3312071-->
+为了帮助降低企业中管理设备的成本，现在已提供基于设备的新订阅 SKU。 此 Intune 设备 SKU 按月按设备获取许可。 价格因许可计划而异。 可通过直接渠道、企业协议 (EA)、Microsoft 产品和服务计划 (MPSA) 以及开放和云解决方案提供商 (CSP) 获取。
 
 ### <a name="intune-apps"></a>Intune 应用
 
@@ -675,7 +689,7 @@ Intune 现支持受到高度管控的锁定展台式 Android 设备。 这使管
 
 ## <a name="week-of-june-18-2018"></a>2018 年 6 月 18 日的这一周
 
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune 应用保护策略的 Microsoft Edge 移动设备支持 <!-- 1817882 -->
+### <a name="microsoft-edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>针对 Intune 应用保护策略的 Microsoft Edge 移动设备支持 <!-- 1817882 -->
 
 移动设备的 Microsoft Edge 浏览器现在支持在 Intune 中定义的应用保护策略。
 
@@ -784,7 +798,7 @@ AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD �
 在 Microsoft Intune MDM 托管的设备上，有时应用安装可能会失败。 当这些应用安装失败时，可能难以了解失败原因或解决此问题。 我们将发布我们的应用疑难解答功能的公共预览版。 你将在每个设备下注意到名为“托管应用”的新节点。 该节点列出了通过 Intune MDM 提供的应用。 在该节点内，将看到应用安装状态的列表。 如果选择单个应用，将看到该特定应用的疑难解答视图。 在疑难解答视图中，将看到应用的端到端生命周期，例如，应用创建、修改、设为目标和提供给设备的时间。 此外，如果应用安装失败，将向你显示错误代码以及有有助于了解错误原因的消息。 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Intune 应用保护策略和 Microsoft Edge <!-- 1818968 -->
-移动设备（iOS 和 Android）的 Microsoft Edge 浏览器现在支持 Microsoft Intune 应用保护策略。 在 Microsoft Edge 应用程序中使用其企业 Azure AD 帐户登录的 iOS 和 Android 设备用户将受 Intune 保护。 在 iOS 设备上，“Web 内容需要托管的浏览器”策略允许用户在管理 Microsoft Edge 时打开其中的链接。
+移动设备（iOS 和 Android）的 Microsoft Edge 浏览器现在支持 Microsoft Intune 应用保护策略。 在 Microsoft Edge 应用程序中使用其企业 Azure AD 帐户登录的 iOS 和 Android 设备用户将受 Intune 保护。 在 iOS 设备上，“需要使用托管浏览器获取 Web 内容”的策略允许用户在托管的 Microsoft Edge 中打开链接。
 
 ## <a name="week-of-may-14-2018"></a>2018 年 5 月 14 日当周
 
@@ -1010,6 +1024,21 @@ macOS 公司门户版本 1.3 和 1.4 未成功向 Intune 注册 Jamf 设备。 m
 现在可以使用 Intune 应用策略保护 (APP) 和条件访问 (CA) 保护通过 Outlook Mobile 对本地 Exchange 数据的访问权限。 若要在 Azure 门户中添加或修改应用保护策略，请选择“Microsoft Intune” > “客户端应用” > “应用保护策略”。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)。
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>更改计划：Intune for Education 的性能更新 <!--1750215-->
+我们将为 Intune for Education 添加一些更新，以便在为用户或设备分配设置时提高速度和可靠性。 作为此更改的一部分，到 11 月底，我们会将你的策略或设置分配移动到新组。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+
+Intune for Education 客户有两个动态的 Azure Active Directory (Azure AD) 组：“所有用户”和“所有设备”。 进行这些更新之后，“所有用户”和“所有设备”Azure AD 组将不会在 Intune for Education 控制台中可见。 但是，它们仍将在 Azure 上的 Intune 控制台中可见，并将重命名为“所有用户(已过时，请勿使用)”和“所有设备(已过时，请勿使用)”。
+
+更新推出后，将不再需要使用 Azure AD 组在 Intune 中分配应用和设置。 相反，我们会将设置分配移动到我们将为你创建的 Intune for Education 控制台中的新组，这些组仍将像以前一样显示为“所有用户”和“所有设备”。 这些更改在后端进行，因此你在 Intune for Education 控制台中看到的内容不会有任何变化。 最终用户或已注册设备不会受到任何影响。 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+在我们移动策略分配时，你无需执行任何操作。 如果你当前在 Intune for Education 控制台中分配策略，请继续执行此操作。
+
+如果当前将策略分配给 Azure 上的 Intune 中提到的 Azure AD 组，请将这些策略分配给 Intune for Education 控制台中的“所有用户”和“所有设备”组。 当在控制台中看到 Azure AD 组已重命名为已过时时，请停止在 Azure AD 中分配策略。 如果当前没有将重命名的组用于任何其他目的，则应将其删除。
+
 
 ### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>更改计划：Intune 将于 12 月支持 macOS 10.12 及更高版本 <!--2970975--> 
 

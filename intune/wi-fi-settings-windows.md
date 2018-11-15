@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236469"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298150"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>在 Intune 中添加适用于 Windows 10 及更高版本设备的 Wi-Fi 设置
 
@@ -57,6 +57,9 @@ ms.locfileid: "50236469"
   - **WPA/WPA2-Personal**：更安全的选项，通常用于 Wi-fi 连接。 为了提高安全，还可输入预共享密钥密码或网络密钥。 
 
     - **预共享密钥** (PSK)：可选。 选择 WPA/WPA2-Personal 作为安全类型时，将显示此选项。 设置或配置组织的网络后，还要配置密码或网络密钥。 输入此密码或网络密钥作为 PSK 值。 输入介于 8 到 64 个字符之间的字符串。 如果密码或网络密钥为 64 个字符，则输入十六进制字符。
+    
+      > [!NOTE]
+      > 保存 Wi-Fi 配置文件时，出于安全原因，不会显示输入的 PSK 值。 即使 PSK 保存在配置文件中，预共享密钥水印也仍显示为“未配置”。 要更改 PSK，请输入新的密钥，然后保存配置文件。 如果保存 PSK、编辑策略，并将 PSK 留空，则仍使用现有的 PSK。
 
 - 公司代理设置：选择使用组织内的代理设置。 选项包括：
   - 无：不配置任何代理设置。

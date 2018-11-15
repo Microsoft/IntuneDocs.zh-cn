@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 6b6e270e01102ae05f04253ec57759aad35c26cf
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915676"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510986"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入门：免费试用 Microsoft Intune 
 
@@ -51,7 +51,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
     ![Microsoft Intune 试用版帐户注册网页的屏幕截图](./media/account-sign-up-site-user-id.png)
 
-    若想组织使用自己的自定义域而不采用“.onmicrosoft.com”，可以在本文后面介绍的 Office 365 管理门户中进行更改。
+    如果组织使用自己的自定义域而不采用“.onmicrosoft.com”，可以在本文后面介绍的 Office 365 管理门户中进行更改。
 
 3. 在注册过程结束时查看新帐户信息。
 
@@ -124,7 +124,9 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门中，你创建了一个免费订阅来在测试环境中试用 Intune，并选择配置了自定义域名。 若要详细了解 Microsoft Intune，请继续学习下一个快速入门教程以添加用户并分配许可证。
+在本快速入门中，已创建免费版订阅以在测试环境中试用 Intune。 有关设置 Intune 的详细信息，请参阅[设置 Intune](setup-steps.md)。
+
+要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [创建用户](quickstart-create-user.md)
+> [快速入门：创建用户并为其分配许可证](quickstart-create-user.md)

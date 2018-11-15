@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 120478644743619dbcfc5e8e36806a1109924331
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50972768"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298082"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot（预览版）部署已加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置已加入混合 Azure Active Directory 的设备。 为此，请执行以下步骤。
@@ -30,7 +30,7 @@ ms.locfileid: "50972768"
 
 ## <a name="prerequisites"></a>必备条件
 
-- 成功配置[已加入混合 Azure Active Directory 的设备](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains)。
+- 成功配置[已加入混合 Azure Active Directory 的设备](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)。
     - 请确保[使用 Get-MsolDevice cmdlet 验证注册]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)。
 
 要注册的设备还必须：
@@ -110,7 +110,7 @@ ms.locfileid: "50972768"
 
 需要在运行 Windows Server 2016 且有权访问 Internet 和 Active Directory 的计算机上安装适用于 Active Directory 的 Intune Connector。 要增加扩展性和可用性或要支持多个 Active Directory 域，可以在环境中安装多个连接器。 建议在未运行任何其他 Intune 连接器的服务器上安装连接器。
 
-1. 在 Azure 门户的 Intune 中，选择“设备注册” > “Windows 注册” > “适用于 Active Directory 的 Intune Connector (预览版)” > “添加连接器”。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “适用于 Active Directory 的 Intune Connector（预览版）” > “添加连接器”。 
 2. 按照说明下载连接器。
 3. 打开下载的连接器安装文件以安装连接器 (ODJConnectorBootstrapper.exe)。
 4. 在安装结束时，选择“配置”。
@@ -124,7 +124,7 @@ ms.locfileid: "50972768"
 
 
 ## <a name="create-a-device-group"></a>创建设备组
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal)内，选择“组” > “新建组”。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“组” > “新建组”。
 2. 在“组”边栏选项卡中：
     1. 对于“组类型”，选择“安全”。
     2. 在“组名称”和“组说明”中，输入名称和说明。
@@ -175,7 +175,7 @@ ms.locfileid: "50972768"
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>创建并分配 AutoPilot 部署配置文件
 Autopilot 部署配置文件用于配置 Autopilot 设备。
 
-1. 在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册” > “Windows 注册” > “部署配置文件” > “创建配置文件”。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “部署配置文件” > “创建配置文件”。
 2. 在“名称”和（可选）“说明”中，键入名称和说明。
 3. 对于“部署模式”，选择“用户驱动”。
 4. 在“加入到 Azure AD 时的身份”框中，选择“已加入混合 Azure AD”。
@@ -188,21 +188,21 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 
 ## <a name="turn-on-the-enrollment-status-page-optional"></a>打开注册状态页面（可选）
 
-1.  在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > Windows 注册” > 注册状态页(预览)”。
-2.  在“注册状态页”边栏选项卡中，选择“默认” > “设置”。
-3.  有关“显示应用和配置文件安装进度”，请选择“是”。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > Windows 注册” > 注册状态页(预览)”。
+2. 在“注册状态页”边栏选项卡中，选择“默认” > “设置”。
+3. 有关“显示应用和配置文件安装进度”，请选择“是”。
 4. 根据需要配置其他选项。
-5.  选择 **“保存”**。
+5. 选择 **“保存”**。
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>创建并分配域加入配置文件
 
-1. 在 Microsoft Intune 中，选择“设备配置” > “配置文件” > “创建配置文件”。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备配置” > “配置文件” > “创建配置文件”。
 2. 输入以下属性：
    - **名称**：输入新配置文件的描述性名称。
    - **说明**：输入配置文件的说明。
    - **平台**：选择“Windows 10 及更高版本”。
    - **配置文件类型**：选择“域加入(预览)”。
-3.  选择“设置”，然后提供“计算机名称前缀”、“域名”和“组织单位”（可选）。 
+3. 选择“设置”，然后提供“计算机名称前缀”、“域名”和“组织单位”（可选）。 
 4. 选择“确定” > “创建”。 配置文件随即创建并显示在列表中。
 5. 要分配配置文件，请按照[分配设备配置文件](device-profile-assign.md#assign-a-device-profile)下的步骤操作。 
 

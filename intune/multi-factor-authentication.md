@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617203"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225657"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>对 Intune 设备注册要求多重身份验证
 
@@ -48,24 +48,18 @@ iOS、Android、Windows 8.1 或更高版本、Windows Phone 8.1、Windows 10 移
 >请勿为 Microsoft Intune 注册配置基于设备的访问规则。
 
 1. 使用凭据登录到 [Microsoft Azure 门户](https://portal.azure.com)。
-2. 在门户中，选择“Azure Active Directory”。
-2. 在“Azure Active Directory”中，选择“管理” > “企业应用程序”。
-3. 在“企业应用程序”中，选择“管理” > “所有应用程序”。 会出现管理的所有 Azure 应用的列表。
-3. 在列表中选择“Microsoft Intune 注册”。
-4. 在“Microsoft Intune 注册”中，选择“安全性” > “条件性访问”。
-5. 选择“新策略”。
-6. 在“新建”策略中，为策略键入描述性名称。
-7. 在“分配”部分中，选择“用户和组”。
-8. 在“用户和组”中，选择将接收此策略的用户或组，然后选择“完成”。
-9. 在“分配”部分中，选择“云应用”。
-10. 在“云应用”的“包括”选项卡上，选择“选择应用”，然后选择“选择” > “Microsoft Intune 注册”，然后选择“完成”。
-11. 在“分配”部分中，选择“条件”。
-12. 在“条件”中不需要配置 MFA 的任何设置。
-13. 在“访问控制”部分中，选择“授予”。
-14. 在“授予”中，选择“授予访问权限”，然后选择“要求多重身份验证”。
-    不要选择“要求设备标记为合规”，因为设备要注册之后才能进行评估以确定其是否合规。
-15. 选择“选择”。
-16. 在“新建策略”中，选择“启用策略” > “开”，然后选择“创建”。
+2. 在门户中，转到 [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)。
+3. 在 Azure Active Directory 中，选择“安全性”下的[条件访问](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)。
+4. 选择“新策略”。
+5. 在“新建”策略中，为策略键入描述性名称。
+6. 在“分配”部分中，选择“用户和组”。
+7. 在“用户和组”中，选择“选择用户或组”，然后选择“用户和组”。 然后选择将接收此策略的用户和/或组，再选择“完成”。
+8. 在“分配”部分中，选择“云应用”。
+9. 在“云应用”的“包括”选项卡上，选择“选择应用”，然后选择“选择” > “Microsoft Intune 注册”，然后选择“完成”。
+10. 在“分配”部分中，对于“条件”，无需为 MFA 配置任何设置。
+11. 在“访问控制”部分中，选择“授予”。
+12. 在“授予”中，选择“授予访问权限”，然后选择“要求多重身份验证”。 不要选择“要求设备标记为合规”，因为设备要注册之后才能进行评估以确定其是否合规。 然后选取“选择”。
+13. 在“新建策略”中，选择“启用策略” > “开”，然后选择“创建”。
 
 
 

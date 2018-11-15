@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ee53d0c5801a80319e33637ee68fb7b701a127
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391682"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212523"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -28,13 +28,13 @@ ms.locfileid: "49391682"
 
 - **Active Directory 域**：此部分中列出的所有服务器（Web 应用程序代理服务器除外）都必须加入 Active Directory 域。
 
-- **证书颁发机构** (CA)：在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
+- **证书颁发机构** (CA)：必须是在 Windows Server 2008 R2 企业版或更高版本上运行的 Microsoft 企业证书颁发机构 (CA)。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
     如 CA 运行的是 Windows Server 2008 R2，则必须[安装修补程序 KB2483564](http://support.microsoft.com/kb/2483564/)。
 
-- **NDES 服务器**：在运行 Windows Server 2012 R2 或更高版本的服务器上，必须设置网络设备注册服务 (NDES)。 如果在服务器上运行了企业 CA，则同时在该服务器上运行的 Intune 将不支持使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管网络设备注册服务的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。
-NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同一服务器上。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅[结合使用策略模块和网络设备注册服务](https://technet.microsoft.com/library/dn473016.aspx)。
+- **NDES 服务器**：在 Windows Server 2012 R2 或更高版本上，设置网络设备注册服务 (NDES) 服务器角色。 Intune 不支持在同时运行企业 CA 的服务器上使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管 NDES 的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。
+必须将 NDES 服务器加入与企业 CA 相同的林中的域。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅[结合使用策略模块和网络设备注册服务](https://technet.microsoft.com/library/dn473016.aspx)。
 
-- **Microsoft Intune 证书连接器**：使用 Azure 门户下载“证书连接器”安装程序 (NDESConnectorSetup.exe)。 然后可以在你想在其上安装证书连接器的托管了网络设备注册服务 (NDES) 角色的服务器上运行 NDESConnectorSetup.exe。
+- **Microsoft Intune 证书连接器**：从 Intune 管理门户下载“证书连接器”安装程序 (NDESConnectorSetup.exe)。 将在具有 NDES 角色的服务器上运行此安装程序。  
 
   - NDES 证书连接器还支持美国联邦信息处理标准 (FIPS) 模式。 FIPS 不是必需的，但启用 FIPS 时可颁发和吊销证书。
 
@@ -53,29 +53,29 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 ### <a name="network-requirements"></a>网络要求
 
-从 Internet 到外围网络，从所有主机或 Internet 上的 IP 地址到 NDES 服务器，都支持 443 端口。
+如果不使用反向代理（例如 WAP 或 Azure AD 应用代理），则允许端口 443 上的 TCP 流量从 Internet 上的所有主机/IP 地址传输到 NDES 服务器。
 
-从外围网络到受信任网络，支持域对已加入域的 NDES 服务器进行访问所需的所有端口和协议。 NDES 服务器需要证书服务器、DNS 服务器、Configuration Manager 服务器和域控制器的访问权限。
+允许 NDES 服务器和任何支持基础结构之间所需的所有端口和协议。 例如，NDES 服务器需要与 CA、DNS 服务器、Configuration Manager 服务器、域控制器以及环境中可能的其他服务进行通信。
 
-建议通过代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web Access 代理](https://technet.microsoft.com/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
+强烈建议通过反向代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web 访问代理](https://technet.microsoft.com/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
 
-### <a name="certificates-and-templates"></a>证书和模板
+### <a name="certificates-and-templates"></a>证书和模板  
 
 |对象|详细信息|
 |----------|-----------|
 |**证书模板**|在发证 CA 上配置此模板。|
 |**客户端身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上安装证书。|
-|**服务器身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。|
+|**服务器身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。 如果证书具有客户端和服务器身份验证密钥使用集（增强型密钥使用），则可以使用相同的证书。|
 |**受信任的根 CA 证书**|将此证书从根 CA 或信任根 CA 的任何设备中导出为“.cer”文件。 然后，使用受信任的 CA 证书配置文件将其分配给设备。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
 
 ### <a name="accounts"></a>帐户
 
 |名称|详细信息|
 |--------|-----------|
-|**NDES 服务帐户**|输入用作 NDES 服务帐户的域用户帐户。|
+|**NDES 服务帐户**|输入用作 NDES 服务帐户的域用户帐户。 |
 
 ## <a name="configure-your-infrastructure"></a>配置你的基础结构
-配置证书配置文件前，请完成以下步骤。 必须具备 Windows Server 2012 R2 及以上版本和 Active Directory 证书服务 (ADCS) 方面的知识，才能执行下面这些步骤：
+配置证书配置文件前，请完成以下步骤。 必须具备 Windows Server 2012 R2 或更高版本和 Active Directory 证书服务 (ADCS) 方面的知识，才能执行下面这些步骤：
 
 #### <a name="step-1---create-an-ndes-service-account"></a>步骤 1 - 创建 NDES 服务帐户
 
@@ -152,7 +152,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 - 将 NDES 添加到 Windows Server 并配置 IIS 以支持 NDES
 - 将 NDES 服务帐户添加到 IIS_IUSR 组
-- 为 NDES 服务帐户设置 SPN
+- 设置 NDES 服务帐户的服务主体名称 (SPN)
 
 1. 在承载 NDES 的服务器上安装 NDES 时，以“企业管理员”身份登录，然后使用[添加角色和功能向导](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11))：
 
@@ -177,7 +177,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
        - “管理工具” > “IIS 6 管理兼容性” > “IIS 6 WMI 兼容性”
 
-       - 在服务器上，将 NDES 服务帐户添加为“IIS_IUSR”组成员。
+       - 在服务器上，将 NDES 服务帐户添加为本地“IIS_IUSR”组成员。
 
 2. 在提升的命令指示符处，运行以下命令以设置 NDES 服务帐户的 SPN：
 
@@ -243,7 +243,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 1. 在你的 NDES 服务器上，请求并安装来自你的内部 CA 或公共 CA 的“服务器身份验证”证书。 随后绑定 IIS 中的 SSL 证书。
 
     > [!TIP]
-    > 绑定 IIS 中的 SSL 证书后，安装客户端身份验证证书。 该证书可以由 NDES 服务器信任的任何 CA 颁发。 尽管这不是最佳做法，但可以对服务器和客户端身份验证使用相同的证书，只要证书具备两个增强型密钥使用 (EKU) 即可。 查看以下步骤以获得有关这些身份验证证书的信息。
+    > 绑定 IIS 中的 SSL 证书后，安装客户端身份验证证书。 该证书可以由 NDES 服务器信任的任何 CA 颁发。 如果证书具有客户端和服务器身份验证密钥使用集（增强型密钥使用），则可以使用相同的证书。 查看以下步骤以获得有关这些身份验证证书的信息。
 
    1. 获取服务器身份验证证书后，打开“IIS 管理器”，然后选择“默认网站”。 在“操作”窗格中，选择“绑定”。
 
@@ -314,7 +314,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
     选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书” 处。 尽管所选证书不会显示，但可以单击“下一步”查看该证书的属性。 然后依次选择“下一步”和“安装”。
 
     > [!IMPORTANT]
-    > 无法在启用了 Internet Explorer 增强型安全配置的设备上注册 Intune 证书连接器。 若要使用 Intune 证书连接器，请[禁用 IE 增强型安全配置](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
+    > [必须在托管 Intune 证书连接器的 NDES 服务器](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)上禁用 Internet Explorer 增强型安全配置。
 
 6. 在向导完成后，先单击“启动证书连接器 UI，然后再关闭向导”。
 
@@ -325,7 +325,7 @@ NDES 服务器必须以域加入到托管 CA 的域，且不能与 CA 位于同�
 
 7. 在“证书连接器” UI 中：
 
-    选择“登录”，输入你的 Intune 服务管理员凭据或具有全局管理权限的租户管理员的凭据。
+    选择“登录”，输入你的 Intune 服务管理员凭据或具有全局管理权限的租户管理员的凭据。 登录后，Intune 证书连接器将从 Intune 下载证书。 此证书用于连接器和 Intune 之间的身份验证。
 
     > [!IMPORTANT]
     > 必须为用户帐户分配有效的 Intune 许可证。 如果用户帐户没有有效的 Intune 许可证，NDESConnectorUI.exe 将失败。

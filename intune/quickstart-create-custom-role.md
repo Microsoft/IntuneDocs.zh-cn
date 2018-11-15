@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410763"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561918"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入门：创建并分配自定义角色
 
@@ -64,7 +64,9 @@ ms.locfileid: "50410763"
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门中，你创建了自定义安全操作角色并将其分配给组。 可以在以下文章中了解有关安全问题的详细信息。
+在本快速入门中，你创建了自定义安全操作角色并将其分配给组。 有关 Intune 中角色的详细信息，请参阅 [Microsoft Intune 的基于角色的管理控制 (RBAC)](role-based-access-control.md)
+
+要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [设备符合性策略入门](device-compliance-get-started.md)
+> [快速入门：创建适用于 iOS 设备的电子邮件设备配置文件](quickstart-email-profile.md)

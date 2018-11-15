@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 68cc4bb576f567787e702ccd88026579b6ed5b12
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: d2531cc203c5c2b255378e836099feb0a9216d45
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425302"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298116"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -49,7 +49,7 @@ ms.locfileid: "49425302"
 
 使用 Intune App SDK Xamarin Bindings 生成的 Xamarin 应用现在可以在已注册和未注册 Intune 移动设备管理 (MDM) 的设备上接收 Intune 应用保护策略。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必备条件
 
 查看[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 打印并保留一份许可条款，以留作记录。 下载和使用 Intune App SDK Xamarin Bindings 即表示你同意这些许可条款。 如果不接受这些条款，请不要使用此软件。
 
@@ -64,17 +64,22 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
       ```csharp
       using Microsoft.Intune.MAM;
       ```
-4. 若要开始接收应用保护策略，必须在 Intune MAM 服务中注册应用。 如果应用已使用 Azure Active Directory Authentication Library (ADAL) 验证用户，应用应在成功验证用户后，向 IntuneMAMEnrollmentManager 的 registerAndEnrollAccount 方法提供用户的 UPN：
-      ```csharp
-      IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
-      ```
-      **重要说明**：请务必使用应用中的设置替代 Intune App SDK 的默认 ADAL 设置。 可以通过应用 Info.plist 中的 IntuneMAMSettings 字典执行此操作，如 [Intune App SDK for iOS 开发人员指南](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)中所述。也可以使用 IntuneMAMPolicyManager 实例的 AAD 替代属性。 对于 ADAL 设置是静态的应用，建议使用 Info.plist 方法；对于在运行时确定这些值的应用，建议使用替代属性。 
-      
-      如果应用不使用 ADAL，且希望使用 Intune SDK 处理身份验证，应用应调用 IntuneMAMEnrollmentManager 的 loginAndEnrollAccount 方法：
+4. 若要开始接收应用保护策略，必须在 Intune MAM 服务中注册应用。 如果应用不使用 [Azure Active Directory 身份验证库](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) (ADAL) 或 [Microsoft 身份验证库](https://www.nuget.org/packages/Microsoft.Identity.Client) (MSAL) 对用户进行身份验证，且希望由 Intune SDK 处理身份验证，应用应将用户的 UPN 提供给 IntuneMAMEnrollmentManager 的 LoginAndEnrollAccount 方法：
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+      如果用户的 UPN 在调用时未知，则应用可能会传入 null。 在这种情况下，系统将提示用户输入他们的电子邮件地址和密码。
       
+      如果应用已使用 ADAL 或 MSAL 对用户进行身份验证，则可以在应用和 Intune SDK 之间配置单一登录 (SSO) 体验。 首先，需要配置 ADAL/MSAL 以在由 iOS 的 Intune Xamarin Bindings (com.microsoft.adalcache) 使用的同一个密钥链访问组中存储令牌。 对于 ADAL，可以通过[设置 AuthenticationContext 的 KeychainSecurityGroup 属性](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Token-cache-serialization#enable-token-cache-sharing-across-ios-applications)来执行此操作。 对于 MSAL，需要[设置 PublicClientApplication 的 KeychainSecurityGroup 属性](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/msal-net-2-released#you-can-now-enable-sso-between-adal-and-msal-apps-on-xamarinios)。 接下来，需要将 Intune SDK 使用的默认 AAD 设置替代为应用的这些设置。 可以通过应用 Info.plist 中的 IntuneMAMSettings 字典执行此操作，如 [Intune App SDK for iOS 开发人员指南](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)中所述。也可以使用 IntuneMAMPolicyManager 实例的 AAD 替代属性。 对于 ADAL 设置是静态的应用，建议使用 Info.plist 方法；对于在运行时确定这些值的应用，建议使用替代属性。 配置所有 SSO 设置后，应用应在成功通过身份验证后向 IntuneMAMEnrollmentManager 的 RegisterAndEnrollAccount 方法提供用户的 UPN：
+      ```csharp
+      IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
+      ```
+      应用可以通过在 IntuneMAMEnrollmentDelegate 的子类中实现 EnrollmentRequestWithStatus 方法并将 IntuneMAMEnrollmentManager 的 Delegate 属性设置为该类的实例来确定尝试注册的结果。 有关示例，请参阅[示例 Xamarin.iOS 应用程序](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)。
+
+      成功注册后，应用可以通过查询以下属性来确定已注册帐户的 UPN（如果以前未知）： 
+      ```csharp
+       string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
+      ```      
 > [!NOTE] 
 > 没有适用于 iOS 的重映射器。 集成到 Xamarin.Forms 应用应与集成到常规 Xamarin.iOS 项目的操作相同。 
 
@@ -110,7 +115,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 > 由于此操作会重新编写 Visual Studio 用于 Intellisense 自动完成的依赖项，因此建议在重映射器首次运行后重启 Visual Studio 以使 Intellisense 正确识别这些更改。 
 
 
-## <a name="support"></a>支持
+## <a name="support"></a>Support
 
 你已完成将组件内置到应用中的基本步骤。 现在可以按照 Xamarin Android 示例应用中的所述步骤进行操作。 我们提供了两个示例，一个用于 Xamarin.Forms，另一个用于 Android。
 
@@ -128,7 +133,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 6.  在搜索框中，输入“Microsoft 移动应用程序管理”。
 7.  单击选择 API 列表中的“Microsoft 移动应用程序管理”。
 8.  选择“读取和写入用户的应用管理数据”。
-9.  单击 **“完成”**。
+9.  单击“完成”。
 10. 单击“授予权限”，然后单击“是”。 
     
 ### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK

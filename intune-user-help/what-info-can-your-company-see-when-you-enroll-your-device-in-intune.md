@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679247"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276109"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>在我注册自己的设备时，我的公司可以看到哪些信息？
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>在我注册自己的设备时，我的组织可以看到哪些信息？
 
-向 Microsoft Intune 注册设备时，公司看不到你的个人信息。 注册设备时，将为公司授予查看设备上特定信息的权限，如设备型号和序列号。 公司可使用此信息来帮助保护设备上的公司数据。
+向 Microsoft Intune 注册设备时，组织看不到你的个人信息。 注册设备时，将为组织授予查看设备上特定信息的权限，如设备型号和序列号。 组织可使用此信息来帮助保护设备上的公司数据。
 
-**公司永远无法看到的信息：**
+**你的组织永远看不到的内容：**
 
 - 调用和 Web 浏览历史记录
 - 电子邮件和短信
@@ -35,20 +35,23 @@ ms.locfileid: "50679247"
 - 日历
 -   密码
 - 图片，包括照片应用中的照片或本机照片
+- 文件
 
-**公司始终可以看到的信息：**
+**你的组织始终可以看到的内容：**
 
 - 设备型号（如 Google Pixel）
-- 制造商（如 Microsoft）
-- 操作系统（如 iOS）
-- 应用名称（如 Microsoft Word）
+- 设备制造商（如 Microsoft）
+- 操作系统和版本，如 iOS 12.0.1
+- 应用名称，例如 Microsoft Word：在个人设备上，组织只能看到你的托管应用清单。 在公司拥有的设备上，组织可以查看所有应用广告资源。
 - 设备所有者
 - 设备名称
-- 序列号
+- 设备序列号
+- IMEI
 
-**公司可能会看到的信息：**
+**组织可能会看到的信息：**
 
--  电话号码：对于公司拥有的设备，公司可以看到完整的电话号码。 对于个人拥有的设备，公司只能看到电话号码的最后四位数字。 可以打开相应设备的“设备详细信息”页，确定每个设备的“所有权类型”。
--  位置：公司永远无法看到设备的位置，除非 iOS 设备受监管且已丢失。 [如何判断？](https://go.microsoft.com/fwlink/?linkid=853816)
-- 应用清单：如果公司使用 Mobile Threat Defense，则可以查看 iOS 设备中应用的更多相关详细信息。 了解[移动威胁防御](you-are-prompted-to-install-mtd-ios.md)的详细信息。
-- 网络信息：可能向公司支持人员提供有关 Android 设备网络连接信息。 例如，如果公司要求设备在某个建筑物内使用，则设备将标识所连接的网络。 
+-  电话号码：对于公司拥有的设备，公司可以看到完整的电话号码。 对于个人拥有的设备，组织只能看到电话号码的最后四位数字。 可以打开相应设备的“设备详细信息”页，确定每个设备的“所有权类型”。
+- 设备存储空间：如果无法安装所需的应用，组织可以查看设备的存储空间，以确定空间是否不足。  
+-  位置：组织永远无法看到设备的位置，除非 iOS 设备受监管且已丢失。 [如何判断？](https://go.microsoft.com/fwlink/?linkid=853816)
+- 应用清单：如果组织使用 Mobile Threat Defense，则可以查看 iOS 设备中应用的更多相关详细信息。 了解[移动威胁防御](you-are-prompted-to-install-mtd-ios.md)的详细信息。
+- 网络信息：可能向组织支持人员提供有关 Android 设备网络连接信息。 例如，如果组织要求设备在某个建筑物内使用，则设备将标识所连接的网络。 

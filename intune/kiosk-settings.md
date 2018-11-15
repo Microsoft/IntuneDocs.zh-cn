@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751637"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298133"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune 中适用于 Windows 10 （及更高版本）的展台设置
 
@@ -77,8 +77,15 @@ Intune 支持每台设备一个展台配置文件。 如果在单台设备上需
   - 空闲时间后刷新浏览器：输入展台浏览器以刷新状态重新启动之前的空闲时长（1-1440 分钟）。 空闲时间是自用户上次交互以来的分钟数。 默认情况下，该值为空，这意味着没有任何空闲超时。
 
   - 允许的网站：使用此设置允许特定网站打开。 换言之，使用此功能可在设备上限制或阻止网站。 例如，可以允许 `http://contoso.com*` 中的所有网站打开。 默认情况下，允许所有网站。
+ 
+      要允许特定网站，请以单独的行上传包含允许的网站列表的文件。 如果未添加文件，则允许所有网站。 Intune 支持 *（星号）作为通配符。
 
-    若要允许特定网站，请上传包含允许的网站列表的 .csv 文件。 如果未添加 .csv 文件，则允许所有网站。 Intune 支持 *（星号）作为通配符。
+      示例文件应类似于以下列表：
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   选择“确定”，保存所做更改。
 

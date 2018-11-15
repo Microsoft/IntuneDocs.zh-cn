@@ -1,12 +1,12 @@
 ---
-title: 快速入门 - 为 Android 设备设置所需的密码长度
+title: 快速入门 - 创建适用于 Android 设备的密码符合性策略
 titlesuffix: Microsoft Intune
-description: 在此快速入门中，你将使用 Microsoft Intune 为 Android 设备设置所需的密码长度。
+description: 本快速入门将使用 Microsoft Intune 为 Android 设备设置所需的密码长度。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,18 @@ ms.assetid: 81b4fa08-5333-4c54-9f49-8db5f6984ed2
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f925df731c3ddd45b13d976b0686d76d941c71e6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 438121e0375559455547f4cc5453d272576681ca
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49395270"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510799"
 ---
-# <a name="quickstart-set-a-required-password-length-for-android-devices"></a>快速入门：为 Android 设备设置所需的密码长度
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>快速入门：创建适用于 Android 设备的密码符合性策略
 
 在此快速入门中，你将使用 Microsoft Intune 来要求工作场所的 Android 用户输入特定长度的密码后才能被授权访问其 Android 设备上的信息。 
+
+Intune 设备符合性策略指定设备为实现符合性而必须满足的规则和设置。 可以将符合性策略与条件访问结合使用，从而允许或阻止访问公司资源。 还可获取设备报表并针对非符合性采取措施。
 
 > [!IMPORTANT]
 > 除密码设置以外，还应考虑其他系统安全设置，以保护工作场所的安全。 有关详细信息，请参阅[系统安全设置](compliance-policy-create-android-for-work.md#system-security-settings)。
@@ -33,27 +35,34 @@ ms.locfileid: "49395270"
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
-以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。 通过选择“所有服务” > “Intune”，在 Azure 门户中查找 Intune。 Intune 位于“监视 + 管理”部分中。
+以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。 
 
 ## <a name="create-a-device-compliance-policy"></a>创建设备合规性策略
-1. 打开“Microsoft Intune”边栏选项卡后，选择“设备符合性” > “策略” > “创建策略”。
+
+在本快速入门中，你将使用 Intune 来要求工作场所的 Android 用户输入特定长度的密码后才能被授权访问其 Android 设备上的信息。
+
+1. 在 Intune 中，选择“设备符合性” > “策略” > “创建策略”。
 2. 添加“Android 符合性”作为“名称”。 此外，添加“说明”。
 3. 对于“平台”，请选择“Android”。 
 4. 选择“设置” > “系统安全”以显示 Android“系统安全”边栏选项卡。
-5. 在“密码”部分中的“需要密码才可解锁移动设备”旁，单击“需要”。
-6. 在“最短密码长度”旁，输入“6”。  
+5. 单击“需要密码才可解锁移动设备”旁边的“需要”。
+6. 在“最短密码长度”旁边输入“6”。 
 
-    ![在 Microsoft Intune 中创建组的屏幕截图](./media/quickstart-set-password-length-android-01.png)
+    ![在 Microsoft Intune 中创建组的屏幕截图](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-7. 完成后，单击“确定”以关闭“系统安全”边栏选项卡。 
-8. 单击“确定”以关闭“Android 合规性策略”边栏选项卡。 
-9. 单击“创建”以创建策略。
+7. 完成后，单击“确定” > “确定” > “创建”以创建策略。
 
-如果已成功创建策略，则该策略将显示在“设备符合性 - 策略”列表中。 
+成功创建策略后，该策略将显示在“设备符合性策略”列表中。 
+
+## <a name="clean-up-resources"></a>清理资源
+
+不再需要时，删除该策略。 要执行此操作，请选择“符合性策略”，然后单击“删除”。
 
 ## <a name="next-steps"></a>后续步骤
 
-在此快速入门中，你使用了 Intune 来为你的工作场所的 Android 设备创建符合性策略，以要求提供长度为至少六个字符的密码。
+在此快速入门中，你使用了 Intune 来为你的工作场所的 Android 设备创建符合性策略，以要求提供长度为至少六个字符的密码。 有关创建符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](device-compliance-get-started.md)。
+
+要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [设置自动注册](quickstart-setup-auto-enrollment.md)
+> [快速入门：向不符合要求的设备发送通知](quickstart-send-notification.md)

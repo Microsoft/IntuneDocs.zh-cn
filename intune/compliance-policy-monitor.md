@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
-ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
+ms.openlocfilehash: 8711b4c71c3581bde9ed1de8a5cc02f6b1a07ca7
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410357"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576896"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -88,9 +88,7 @@ ms.locfileid: "49410357"
 
 ![仪表板图像显示处于该特定状态的设备的详细信息](./media/compliance-policy-monitor/drill-down-details.png)
 
-如果想要查看某一特定用户拥有的所有设备，可以通过键入该用户的电子邮件来筛选图表报告：
-
-![筛选电子邮件地址，以显示该特定用户的所有设备](./media/compliance-policy-monitor/idc-3.png)
+如果想要查看某一特定用户拥有的所有设备，还可以通过键入该用户的电子邮件来筛选图表报告。
 
 #### <a name="filter-and-columns"></a>筛选器和列
 

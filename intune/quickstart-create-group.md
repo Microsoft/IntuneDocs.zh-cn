@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: e85a88b984aaa05423a35f222de9c56d7366d15a
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410814"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511003"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入门：创建组以管理用户
 
@@ -57,7 +57,9 @@ ms.locfileid: "50410814"
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门中，你使用 Intune 基于现有用户创建了组。
+在本快速入门中，你使用 Intune 基于现有用户创建了组。 有关将组添加到 Intune 的详细信息，请参阅[添加用于组织用户和设备的组](groups-add.md)。
+
+要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [创建设备合规性策略](quickstart-create-policy.md)
+> [快速入门 - 设置 Windows 10 设备的自动注册](quickstart-setup-auto-enrollment.md)
