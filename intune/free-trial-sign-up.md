@@ -79,7 +79,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 要将 MDM 机构设置为 Intune，请执行以下步骤。
 
-1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com。 
+1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com 。 
 2. 选择“所有服务” > “Microsoft Intune”。
 3. 选择表示尚未启用设备管理的横幅，或者如果没有立即看到横幅，请选择“设备注册”。 如果尚未启用设备管理，将显示“选择 MDM 机构”边栏选项卡。
 
