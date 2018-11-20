@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4b10d3dfa83e3fcfda6ba34bebc1257b19d83ac
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 32ce1a71911c7a902f2790fef584ab1c3b86a293
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642952"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167444"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -82,7 +82,7 @@ ms.locfileid: "49642952"
 
    下表详细说明了 **Invoke-appwrappingtool** 命令的属性：
 
-|屬性|信息|示例|
+|属性|信息|示例|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|源 Android 应用 (.apk) 的路径。| |
  |**-OutputPath**&lt;String&gt;|指向输出 Android 应用的路径。 如果这是与 InputPath 相同的目录路径，则打包将失败。| |
@@ -128,7 +128,7 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>重复使用签名证书和包装应用
 Android 要求所有应用都必须由有效证书进行签名才能安装在 Android 设备上。
 
-包装的应用可以作为包装过程的一部分进行签名，也可以使用现有的签名工具包装后进行签名（包装前应用中的任何签名信息都会被丢弃）。 如果可能，应在包装期间使用已在生成过程中使用的签名信息。 在某些组织中，这需要与拥有密钥存储信息的相关人员（即应用生成团队）合作。 
+包装的应用可以作为包装过程的一部分进行签名，也可以使用现有的签名工具包装后进行签名（包装前应用中的任何签名信息都会被丢弃）。 如果可能，应在包装期间使用已在生成过程中使用的签名信息。 在某些组织中，这需要与拥有密钥存储信息的相关人员（即应用生成团队）合作。 
 
 如果无法使用以前的签名证书，或之前未部署应用，则可以按照 [Android 开发人员指南](https://developer.android.com/studio/publish/app-signing.html#signing-manually)中的说明创建新的签名证书。
 

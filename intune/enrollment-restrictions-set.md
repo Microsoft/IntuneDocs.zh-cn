@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602140"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610050"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -66,7 +66,7 @@ ms.locfileid: "45602140"
 
 ## <a name="set-device-type-restrictions"></a>设置设备类型限制
 
-通过执行以下步骤可更改设备类型限制的设置。 这些限制不会影响已注册的设备。 无法使用此功能阻止注册了 [Intune PC 代理](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md)的设备。
+通过执行以下步骤可更改设备类型限制的设置。 这些限制不会影响已注册的设备。 无法使用此功能阻止注册了 [Intune PC 代理](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)的设备。
 
 1. 登录到 Azure 门户。
 2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
@@ -100,11 +100,11 @@ ms.locfileid: "45602140"
 - 设备通过[从 SCCM 自动注册以进行共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)进行注册。
  
 以下注册被 Intune 标记为企业注册，但由于其不提供 Intune 管理员每设备控制而将被阻止：
- - 通过 [Windows 设置过程中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)\*。
-- 通过 [Windows 设置中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)*。
+ - 通过 [Windows 设置过程中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)\*。
+- 通过 [Windows 设置中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)*。
  
 以下个人注册方法也将被阻止：
-- 通过[从 Windows 设置中添加工作帐户](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)\*。
+- 通过[从 Windows 设置中添加工作帐户](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)\*。
 - 通过 Windows 设置中的[仅 MDM 注册]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)选项。
 
 \* 如果通过 Autopilot 注册，则不会受到阻止。

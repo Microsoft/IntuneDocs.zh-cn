@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212523"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167529"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -365,6 +365,7 @@ ms.locfileid: "51212523"
      - iOS
      - Windows 8.1 及更高版本
      - Windows 10 及更高版本
+     - Android Enterprise
 
    - **使用者名称格式**：选择 Intune 在证书请求中自动创建使用者名称的方法。 如果选择“用户”证书类型或“设备”证书类型，选项将发生更改。 
 

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255087"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618984"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>设置 Android 工作配置文件设备的注册
 
@@ -56,5 +56,5 @@ Intune 可帮助用户将应用和设置部署到 Android 工作配置文件设�
 5.  选择“应用请求新的权限时始终批准”，然后单击“保存”。
 
 ## <a name="next-steps-for-android-work-profiles"></a>适用于 Android 工作配置文件的后续步骤
-- [部署 Android 工作配置文件应用](store-apps-android.md)
+- [部署 Android 工作配置文件应用](apps-add-android-for-work.md)
 - [添加 Android 工作配置文件配置策略](device-profiles.md)
