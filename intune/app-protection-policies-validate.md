@@ -6,8 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/23/2017
-ms.topic: article
+ms.date: 11/13/2018
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cac03f35cdec3c1a4815559abc83108bd27d3472
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 5e0a207d3e845e3983dfe6ce3abbb70fcbbe65cf
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231103"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618967"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>如何验证应用保护策略设置
 
@@ -34,7 +33,7 @@ ms.locfileid: "48231103"
 
 ### <a name="what-to-check"></a>要检查的内容
 
-如果测试显示应用保护策略行为与预期不符，建议检查这些项：
+如果测试显示应用保护策略行为与预期不符，请检查这些项：
 
 - 用户是否已获得应用保护授权？
 - 用户是否已获得 O365 授权？
@@ -42,10 +41,10 @@ ms.locfileid: "48231103"
 
 #### <a name="user-app-protection-status"></a>用户应用保护状态
 1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分。
-1. 依次选择“管理应用” > “监视” >  “应用保护状态” > “分配的用户”。
-
-2. 从列表中选择用户或搜索并选择一个用户，然后选择“选择用户”。 在“应用报告”列顶部，可以看到用户是否已获得应用保护授权。 还可以看到该用户是否已获得 O365 授权，以及该用户所有设备的应用状态。
+2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+3. 选择“客户端应用” > “监视” >  “应用保护状态”，然后选择“分配的用户”磁贴。 
+4. 在“应用报告”页上，选择“选择用户”以显示用户和组的列表。 
+5. 从列表中搜索并选择一个用户，然后选择“选择用户”。 在“应用报告”窗格顶部，可以看到用户是否已获得应用保护授权。 还可以看到该用户是否已获得 O365 授权，以及该用户所有设备的应用状态。
 
 
 

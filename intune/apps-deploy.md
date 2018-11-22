@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903414"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610101"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 将应用分配到组
 
@@ -58,7 +58,7 @@ ms.locfileid: "48903414"
 6. 在菜单的“管理”部分中选择“分配”。
 7. 选择“添加组”以打开与该应用相关的“添加组”窗格。
 8. 对于特定应用，请选择“分配类型”：
-   - 可用于已注册设备：用户从公司门户应用或网站安装应用。
+   - 可用于已注册设备：将应用分配给可从公司门户应用或网站安装应用的用户组。
    - 注册与否都可用：可将此应用分配到未将其设备注册到 Intune 的用户组。 托管的 Google Play 中的应用不支持此选项。 
    - 必需：应用安装在所选组中的设备上。
    - 卸载：已从所选组中设备上卸载应用。

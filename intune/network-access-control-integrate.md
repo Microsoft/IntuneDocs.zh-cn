@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236146"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947320"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 
@@ -59,14 +59,23 @@ NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情
 8. 设备已注册且符合后，NAC 伙伴解决方案将从 Intune 获取状态。
 9. 成功建立的连接将允许设备访问公司资源。
 
-## <a name="use-nac-on-your-ios-devices"></a>在 iOS 设备上使用 NAC
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>在 iOS 设备上使用 NAC for VPN  
+支持 NAC for Cisco Legacy AnyConnect、F5 Access Legacy 和 Citrix VPN，而无需在 VPN 配置文件中启用 NAC。
+
+还支持 NAC for Citrix SSO。 启用 NAC for Citrix SSO for iOS：
+- 使用 Citrix Gateway 12.0.59 或更高版本。  
+- 用户必须已安装 Citrix SSO 1.1.6 或更高版本。
+- [将 NetScaler 与 Intune for NAC 集成](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)，如 Citrix 产品文档中所述。
+- 在基础 VPN 设置配置中，对于“启用网络访问控制(NAC)”，选中“我同意”复选框。
+
+使用 Citrix SSO for iOS 时，出于安全原因，VPN 将每隔 24 小时断开一次连接。 可以立即重新连接 VPN。
+
 
 iOS 上的以下 VPN 客户端目前不支持网络访问控制：
 -   Cisco AnyConnect
 -   F5 Access
--   Citrix SSO  
 
-我们正在与合作伙伴合作以为这些更高版本的客户端发布 NAC 解决方案。 在解决方案准备就绪后，我们将使用更多详细信息来更新本文。 
+我们正在与合作伙伴合作，为这些更高版本的客户端发布 NAC 解决方案。 在解决方案准备就绪后，我们将使用更多详细信息来更新本文。 
 
 
 ## <a name="next-steps"></a>后续步骤

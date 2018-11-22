@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: b96e9b79d70c538982aac52ca822b403d1c0e4f8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576964"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167580"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,15 @@ ms.locfileid: "51576964"
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日当周
+
+### <a name="network-access-control-nac-support-for-citrix-sso-for-ios----3259404---"></a>对 Citrix SSO for iOS 的网络访问控制 (NAC) 支持 <!-- 3259404 -->
+
+Citrix 已向 Citrix Gateway 发布更新以允许对 Intune 中的 Citrix SSO for iOS 使用网络访问控制 (NAC)。 可以选择在 Intune 中将设备 ID 包括在 VPN 配置文件中，然后将此配置文件推送到 iOS 设备。 你需要将最新更新安装到 Citrix Gateway 才能使用此功能。
+
+[在 iOS 设备上配置 VPN 设置](vpn-settings-ios.md#base-vpn-settings)提供了有关使用 NAC 的详细信息，包括一些附加要求。 
+
 ## <a name="week-of-november-5-2018"></a>2018 年 11 月 5 日当周
 
 ### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>支持 iOS 电子邮件配置文件中的 iOS 12 OAuth <!--2155106 -->
@@ -53,11 +62,7 @@ Intune 的 iOS 电子邮件配置文件支持 iOS 12 Open Authorization (OAuth)�
 现在可以使用 Autopilot 对已加入混合 Azure Active Directory 的设备进行设置。 设备必须加入组织网络中，才能使用混合 Autopilot 功能。 有关详细信息，请参阅[使用 Intune 和 Windows Autopilot 部署已加入混合 Azure AD 的设备](windows-autopilot-hybrid.md)。
 此功能将在未来几天内在整个用户群中推出。 因此，在推送到你的帐户之前，你可能无法执行这些步骤。
 
-### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>适用于 Web 数据的应用保护策略 (APP) 设置 <!-- 2662995  -->
-已更新 Android 和 iOS 设备上适用于 Web 内容的应用策略设置，能更好地处理 http 和 https Web 链接，以及通过 iOS 通用链接和 Android 应用链接进行的数据传输。  
-
 ## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日当周
-
 
 ### <a name="app-management"></a>应用管理
 
@@ -120,9 +125,6 @@ Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>注册放弃报告 <!-- 1382924 -->
 我们在“设备注册” > “监视”下发布了新报表，其中提供了有关已放弃注册的详细信息。 有关详细信息，请参阅[公司门户放弃报表](enrollment-report-company-portal-abandon.md)。
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>将 Autopilot 配置文件分配给所有设备虚拟组 <!--2715522 -->
-可将 Autopilot 配置文件分配给所有设备虚拟组。 要执行此操作，请选择“设备注册” > “Windows 注册” > “部署配置文件”，然后选择一个配置文件，选择“分配”，接着在“分配给”下选择“所有设备”。 有关 Autopilot 配置文件的详细信息，请参阅[使用 Windows Autopilot 注册 Windows 设备](enrollment-autopilot.md)。
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新的 Azure Active Directory 使用条款功能 <!-- 2870393 -->
 Azure Active Directory 具备可供使用的使用条款功能，而不必再使用现有的 Intune 条款和条件。 Azure AD 使用条款功能在显示哪些条款以及何时显示这些条款方面更加灵活，并能更好地支持本地化，更好地控制条款的呈现方式以及改进报告。 Azure AD 使用条款功能需要 Azure Active Directory Premium P1，后者也是企业移动性 + 安全性 E3 套件的一部分。 要了解详情，请参阅[管理公司的用户访问条款和条件](terms-and-conditions-create.md)一文。
@@ -504,17 +506,6 @@ Microsoft Intune 允许将 macOS LOB 应用部署为“必需”或“注册时�
 
 
 ### <a name="device-configuration"></a>设备配置
-
-#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>使用 S/MIME 对用户的多个设备进行加密和签名 <!-- 1333642 -->
-此更新包括使用新导入的证书配置文件进行 S/MIME 电子邮件加密（“设备配置” > “配置文件” > “创建配置文件”>“选择平台”>“PKCS 导入的证书”配置文件类型）。 在 Intune 中，可以 PFX 格式导入证书。 然后 Intune 可以将这些相同的证书传递给单个用户注册的多个设备。 还包括：
-
-- 本机 iOS 电子邮件配置文件支持使用 PFX 格式的导入证书启用 S/MIME 加密。
-- Windows Phone 10 设备上的本机电子邮件应用自动使用 S/MIME 证书。
-- 可以跨多个平台传递私有证书。 但并非所有电子邮件应用都支持 S/MIME。
-- 在其他平台上，可能需要手动配置电子邮件应用以启用 S/MIME。  
-- 支持 S/MIME 加密的电子邮件应用可能以 MDM 不支持的方式（例如从发布者的证书存储读取）处理对 S/MIME 电子邮件加密的证书检索。
-
-支持的设备：Windows、Windows Phone 10、macOS、iOS、Android
 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>在 macOS 设备上使用防火墙设置创建设备符合性策略 <!-- 1497640 -->
 创建新的 macOS 符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: macOS” > “系统安全性”）时，有一些新的可用“防火墙”设置： 

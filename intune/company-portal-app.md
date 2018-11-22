@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236282"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811506"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -29,7 +29,7 @@ ms.locfileid: "50236282"
 在 Microsoft Intune 公司门户中，用户可以访问公司数据和执行常见任务，比如注册设备、安装应用，以及查找信息以从 IT 部门获得帮助。        
 
 > [!Tip]        
-> 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。       
+> 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。 请注意，必须为用户分配 Intune 许可证才能访问公司门户网站。
 
 自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“客户端应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。  
 
@@ -48,7 +48,7 @@ ms.locfileid: "50236282"
 | **隐私声明 URL** |     79     | 你可以指定自己的公司隐私声明，当用户从公司门户中单击隐私链接时，该隐私声明将出现。 必须以 `<https://www.contoso.com>` 格式输入有效的 URL。 |
 
 ## <a name="support-information"></a>支持信息      
-输入公司的支持信息，为员工提供 Intune 相关问题的联系人。       
+输入公司的支持信息，为员工提供 Intune 相关问题的联系人。          
 
 |字段名称|最大长度|更多信息|
 |---|---|---|
@@ -84,24 +84,33 @@ ms.locfileid: "50236282"
 
 ### <a name="brand-image-for-company-portal"></a>公司门户的品牌图像
 
-显示彰显公司品牌的品牌图像。 公司门户应用中添加了对品牌图像的支持，但并非所有平台都可见。
+显示彰显公司品牌的品牌图像。 保存更改后，可以在边栏选项卡顶部的 Intune Web 门户中选择“预览设置”，以查看配置的外观。 请注意，只能在 iOS 设备上预览品牌图像，而不能在 Intune Web 门户上预览。 
 
 |字段名称|更多信息|
 |---|---|
-|**上传品牌图像**| 此选项可用于在公司门户应用中的用户配置文件页面上显示背景图像。<p><ul><li>建议图像宽度：大于 1125px，但不低于 640px</li><li>最大图像大小：1.3 MB</li><li>文件类型：PNG、JPG 或 JPEG</li></ul>|
+|**上传品牌图像**| 此选项可用于在公司门户应用中的用户配置文件页面上显示背景图像。<p>注意：不同平台的图像可能以不同的方式显示。<p><ul><li>建议图像宽度：大于 1125px，但不低于 640px</li><li>最大图像大小：1.3 MB</li><li>文件类型：PNG、JPG 或 JPEG</li></ul>|
 
 合适的品牌图像可以表现出强大的公司品牌意识，增强用户对公司门户的信任。 建议考虑以下用于获取、选择和优化公司门户图像的一些提示。 
 
-- 联系市场部或文艺部。 他们可能已经拥有一组被认可的经过品牌打造的品牌图像。 他们也可以根据需要帮助你优化图像。 
+- 联系市场部或文艺部。 他们可能已经拥有一组被认可的品牌图像。 他们也可以根据需要帮助你优化图像。 
 
-- 请同时考虑景观和肖像的构图。 图像背景应足以围绕焦点。 可以基于设备大小和方向对图像进行不同的剪裁。 
+- 请同时考虑景观和肖像的构图。 图像背景应足以围绕焦点。 可以基于设备大小、方向和平台对图像进行不同的剪裁。 
 
 - 避免使用通用的图库图像。 图像应彰显公司的品牌且能带给用户亲切感。 如果你没有，那么最好不要使用，这也比使用对用户没有任何意义的通用图像要好。 
 
 - 删除不需要的元数据。 图像文件可以附带元数据，例如相机配置文件、地理位置、标题、字幕等。 使用图像优化工具去除此信息，以确保高质量并同时满足文件大小限制。 
 
-保存更改后，可以在边栏选项卡顶部的 Intune Web 门户中选择“预览设置”，以查看配置的外观。 请注意，只能在 iOS 设备上预览品牌图像，而不能在 Intune Web 门户上预览。 
+在 Intune 中添加或更改品牌图像后，除非公司门户在启动时已识别更改，然后重新启动以显示品牌图像，否则最终用户在 iOS 设备上可能不会看到更改。 
 
+### <a name="brand-image-examples"></a>品牌图像示例
+
+下图显示了 iPad 品牌图像示例：
+
+![iPhone 品牌图像示例的屏幕截图](media/company-portal-app/company-portal-app-03.png)
+
+下图显示了 iPhone 品牌图像示例：
+
+![iPad 品牌图像示例的屏幕截图](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 公司门户键盘快捷方式
 
@@ -125,6 +134,10 @@ ms.locfileid: "50236282"
 |  | 删除 | Ctrl+D 或 Delete |
 |  | 检查访问 | Ctrl+M 或 F9 |
 | 应用详细信息 | 安装 | Ctrl+I |
+
+最终用户还可以查看 Windows 公司门户应用中的可用快捷方式。
+
+![Windows 公司门户应用中的可用快捷方式的屏幕截图](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>后续步骤
 

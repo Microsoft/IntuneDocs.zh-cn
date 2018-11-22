@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187795"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610084"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -45,7 +45,7 @@ ms.locfileid: "47187795"
      - 开始远程协助会话
    - 使用“属性”可以将设备分配到[你创建的设备类别](device-group-mapping.md)，并将设备的所有权更改为个人设备或公司设备。
    - “硬件”包括设备的许多详细信息，包括设备 ID、操作系统和版本、存储空间、型号和制造商、条件访问设置等详细信息。
-   - “发现的应用”列出 Intune 发现的安装在设备上的所有应用以及应用版本。 还可以将应用列表导出到 .csv 文件中。
+   - “发现的应用”列出 Intune 发现的安装在设备上的所有应用以及应用版本。 还可以将应用列表导出到 .csv 文件中。 此列表将每隔 7 天更新一次。
    - “设备符合性”列出分配到的所有符合性策略，以及设备是否符合要求。
    - “设备配置”显示分配给该设备的所有设备配置策略，以及该策略成功还是失败。
 
@@ -60,8 +60,10 @@ Intune 仅收集公司拥有的设备上的应用列表。 不检查个人设备
 |iOS|仅托管应用|设备上安装的所有应用|
 |macOS|设备上安装的所有应用|设备上安装的所有应用|  
 |Android|仅托管应用|设备上安装的所有应用|  
+|Android Enterprise|仅托管应用|仅工作配置文件中安装的应用|  
 
 ## <a name="hardware-device-details"></a>硬件设备详细信息
+根据设备使用的运营商，可能并不会收集所有详细信息
 
 |详情|描述|平台| 
 |--------------|----------------------|----|  

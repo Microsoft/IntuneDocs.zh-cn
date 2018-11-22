@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978240"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610016"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 可使用 Microsoft Intune 管理 Windows 电脑，将其作为[使用移动设备管理 (MDM) 的移动设备](windows-enroll.md)或具有 Intune 软件客户端的计算机，如下所述。 但是，Microsoft 建议客户尽可能[使用 MDM 管理解决方案](windows-enroll.md)。
+> 可使用 Microsoft Intune 管理 Windows 电脑，将其作为[使用移动设备管理 (MDM) 的移动设备](windows-enroll.md)或具有 Intune 软件客户端的计算机，如下所述。 但是，Microsoft 建议客户尽可能[使用 MDM 管理解决方案](windows-enroll.md)。 有关详细信息，请参阅[对比作为计算机或移动设备管理 Windows 电脑](pc-management-comparison.md) 
 
 Intune 提供了可供组织管理移动设备的全面的解决方案。 Intune 可以使用 Windows 10 操作系统的内置新式设备管理功能将 Windows 电脑作为移动设备进行管理。 Intune 也可通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理，从而满足组织的管理需求。 此管理方法使用旧版 Windows 操作系统中的传统计算机管理功能。
 
@@ -40,7 +40,8 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Intune 电脑客户端管理要求
 
-**硬件**：安装 Intune 客户端软件的最低硬件要求如下：
+**硬件**：  
+安装 Intune 客户端软件的最低硬件要求如下：
 
 |要求|更多信息|
 |---------------|--------------------|
@@ -48,7 +49,8 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 |处理器和内存|请参阅 PC 操作系统的处理器和 RAM 要求。|
 |硬盘空间|安装客户端软件之前必须有 200 MB 可用磁盘空间。|
 
-**软件**：安装该客户端软件的软件要求如下：
+**软件**：  
+安装该客户端的软件要求如下：
 
 |要求|更多信息|
 |---------------|--------------------|

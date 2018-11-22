@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: d7ff5a63b6afb619fbbe762d23208c1058e99943
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410780"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610135"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>通过使用设备注册管理员帐户注册设备
 
@@ -34,7 +34,7 @@ ms.locfileid: "50410780"
   - 公司门户应用或网站中仅显示本地设备。
   - 由于应用管理的每用户 Apple ID 要求，DEM 用户帐户无法将 Apple 批量购买计划 (VPP) 应用与 Apple VPP 用户许可证一起使用。
   - 如果设备具有 Apple VPP 许可证，则可以安装 VPP 应用。
-  
+  - 设备出于条件访问而被阻止，Windows 10 1803+ 除外
 
 
 ## <a name="add-a-device-enrollment-manager"></a>添加一个设备注册管理器

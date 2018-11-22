@@ -1,10 +1,27 @@
 ---
-title: 将 Win32 应用添加到 Microsoft Intune titlesuffix：description: 了解如何通过 Microsoft Intune 添加、交付和管理 Win32 应用。 本主题概述了 Intune Win32 应用交付和管理功能，以及 Win32 应用疑难解答信息。 keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: 将 Win32 应用添加到 Microsoft Intune
+titlesuffix: ''
+description: 了解如何通过 Microsoft Intune 添加、交付和管理 Win32 应用。 本主题概述了 Intune Win32 应用交付和管理功能，以及 Win32 应用疑难解答信息。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830111"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 独立版 - Win32 应用管理（公共预览版）
 
 Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接的客户可以使用 Configuration Manager 进行 Win32 应用管理，但只使用 Intune 的客户将拥有更强大的 Win32 业务线 (LOB) 应用管理功能。 本主题概述了 Intune Win32 应用管理功能和疑难解答信息。
@@ -43,6 +60,13 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    该命令将显示工具的使用信息。    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    此命令将从指定的源文件夹和安装文件生成 `.intunewin` 文件。 对于 MSI 安装文件，此工具将检索 Intune 所需的信息。 如果指定了 `-q`，则命令将以安静模式运行；如果输出文件已存在，则将覆盖该命令。 此外，如果输出文件夹不存在，将自动创建该文件夹。    |
+
+生成 .intunewin 文件时，将需要引用的任何文件置于安装程序文件夹的子文件夹中。 然后，使用相对路径引用所需的特定文件。 例如：
+
+安装程序源文件夹：c:\testapp\v1.0<br>
+许可证文件：c:\testapp\v1.0\licenses\license.txt
+
+通过使用相对路径 licenses\license.txt 引用 license.txt 文件。
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>创建、分配和监视 Win32 应用
 

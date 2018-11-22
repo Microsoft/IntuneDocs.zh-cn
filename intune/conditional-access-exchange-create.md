@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
+ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232216"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51709132"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>为本地 Exchange 和旧版 Exchange Online Dedicated 配置条件访问策略
 
@@ -66,7 +66,7 @@ ms.locfileid: "48232216"
 - EAS 邮件客户端 Android 工作配置文件设备：Android 工作配置文件设备上仅支持工作配置文件中的 Gmail 和 Nine Work for Android Enterprise。 为了使条件访问适用于 Android 工作配置文件，必须为 Gmail 或 Nine Work for Android Enterprise 部署电子邮件配置文件，还要将这些应用部署为必需的安装。
 
 > [!NOTE]
-> 不支持 Android 和 iOS 上的 Microsoft Outlook 应用。 
+> 适用于 Android 和 iOS 的 Microsoft Outlook 不支持通过 Exchange 本地连接器。 如果想要将 Azure Active Directory 条件性访问策略和 Intune 应用保护策略与本地邮箱的 Outlook for iOS 和 Outlook for Android 配合使用，请参阅[将混合新式身份验证与 Outlook for iOS 和 Outlook for Android 配合使用](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。 
 
 ### <a name="support-for-pcs"></a>对 PC 的支持
 
@@ -77,11 +77,11 @@ Windows 8.1 和更高版本上的本机**邮件**应用程序（向 Intune 注�
 
 1. 转到 [Azure 门户](https://portal.azure.com/)，然后使用 Intune 凭据登录。
 
-1. 成功登录后，会看到“Azure 仪表板”。
+1. 成功登录后，你会看到 Azure 仪表板。
 
-1. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
+1. 从左侧菜单中选择“所有服务” **** ，然后在文本框筛选器中键入“Intune” **** 。
 
-1. 选择“Intune”，将看到“Intune 仪表板”。
+1. 选择“Intune” ****，你会看到 Intune 仪表板。
 
 1. 选择“本地访问”。 “本地访问”窗格中显示了条件访问策略的状态和受其影响的设备。
 

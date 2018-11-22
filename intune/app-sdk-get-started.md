@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 3362de6231aa8b045d064d1f3764cb2b13f5be3c
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915710"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167427"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -106,9 +106,6 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
     * 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
-
- iOS 和 Android 业务线应用版本号是可见的 <!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>业务线应用版本号
 
 现在，Intune 中的业务线应用会显示 iOS 和 Android 应用的版本号。 版本号会在 Azure 门户、应用列表和应用概述边栏选项卡中显示。 最终用户可在公司门户应用和 Web 门户中查看应用的版本号。
@@ -164,6 +161,23 @@ Intune|iOS|Android|描述|
 * **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。
 
 * 疑难解答：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>向 Intune 应用保护服务提供应用访问权限（可选）
+
+如果应用正在使用其自己的自定义 Azure Active Directory (AAD) 设置进行身份验证，则应为公共应用商店应用以及内部 LOB 应用执行以下步骤。 如果应用正在使用 Intune SDK 默认客户端 ID，则不需要执行这些步骤。 
+
+一旦在 Azure 租户内注册应用并在“所有应用程序”下显示该应用，就必须向 Intune 应用保护服务（以前称为 MAM 服务）提供应用访问权限。 在 Azure 门户中：
+
+1.  转到“Azure Active Directory”边栏选项卡。
+2.  选择“应用注册”，设置应用程序。
+3.  在“API 访问”标题下的“设置”中，选择“所需权限”。 
+4.  单击“+ 添加”。
+5.  单击“选择 API”。 
+6.  在搜索框中，输入“Microsoft 移动应用程序管理”。
+7.  单击选择 API 列表中的“Microsoft 移动应用程序管理”。
+8.  选择“读取和写入用户的应用管理数据”。
+9.  单击“完成”。
+10. 单击“授予权限”，然后单击“是”。 
 
 ### <a name="badge-your-app-optional"></a>标记应用（可选）
 

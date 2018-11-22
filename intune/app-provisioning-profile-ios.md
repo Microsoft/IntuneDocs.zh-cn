@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fdfa89654df1f62979240f364c2e28b5a15e78f
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 6668848bcb381299417ca7a641e267c41f9a1e79
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058908"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167380"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 应用预配配置文件防止应用过期
 
@@ -49,7 +49,7 @@ ms.locfileid: "44058908"
 3. 在“创建配置文件”窗格中，配置下列值：
     - **命名** - 为此移动预配配置文件提供一个名称。
     - **说明** -（可选）提供策略的说明。
-    - **上载配置文件文件** - 选择“导入”，然后选择从 Apple 开发人员网站下载的 Apple 移动配置文件（扩展名为 **.mobileprovision**）。
+    - 上传配置文件文件 - 选择“导入”，然后选择从 Apple 开发人员网站下载的 Apple 移动配置文件（扩展名为 `.mobileprovision`）。
 4. 完成后，选择“创建”。
 
 ## <a name="next-steps"></a>后续步骤

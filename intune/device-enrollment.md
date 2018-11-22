@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a9761c57b15700e147bc092b7577fe1b32c78c18
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: c46a90d36ba8b50703e62fc663b1d090ac1bcfc7
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254150"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610118"
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,6 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 |**[USB-Direct](#usb-direct)**| 否 |    否  | 否|[详细信息](./apple-configurator-direct-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>macOS 注册方法
-
 | **方法** |  **需要重置** |  **用户关联** | **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | 否| 是 | 否 | [详细信息](./macos-enroll.md)|
@@ -56,7 +55,11 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 |**[BYOD](#bring-your-own-device)** | 否 |  是 |   否 | [详细信息](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| 否 |否 |否  |[详细信息](device-enrollment-manager-enroll.md)|
 |**自动注册** | 否 |是 |否 | [详细信息](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Autopilot** |是 |是 |否 | [详细信息](enrollment-autopilot.md)]
 |**批量注册** |否 |否 |否 | [详细信息](./windows-bulk-enroll.md) |
+|**共同管理** |否 |是 |否 | [详细信息](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
+|**GPO** |否 |是 |否 | [详细信息](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+
 
 ## <a name="android-enrollment-methods"></a>Android 注册方法
 
