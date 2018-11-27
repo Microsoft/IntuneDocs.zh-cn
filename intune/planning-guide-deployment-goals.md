@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961454"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189344"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>确定部署目标、宗旨和难题
 
@@ -78,7 +79,7 @@ ms.locfileid: "29961454"
 
 部署难题是指组织最为关切的、可能会对部署产生负面影响的问题。 有时这些难题是上一个项目中遇到相关问题，你想要避免掉，有时是与当前部署工作相关的新问题。 以下举例说明 Intune 部署挑战以及可能的缓解措施。
 
--   初始项目范围中不包括支持就绪情况和最终用户体验。 这将导致支持组织的最终用户采用情况不佳并出现各种问题。
+-   初始项目范围中不包括支持就绪情况和最终用户体验。 这将导致支持组织的最终用户采用情况不佳并出现各种问题。
 
     -   **缓解：** 纳入支持培训。 通过部署计划中的成功指标来验证最终用户体验。
 

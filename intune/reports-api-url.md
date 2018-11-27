@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d552ec61d148d0489dc263405eac52448c10f9ef
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642859"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180589"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 
@@ -46,7 +47,7 @@ Intune 的 URL 使用以下格式：
 
 该 URL 包含以下元素：
 
-| 元素 | 示例 | 说明 |
+| 元素 | 示例 | 描述 |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | 位置 | msua06 | 可通过查看 Azure 门户中的数据仓库 API 边栏选项卡获取基 URL。 |
 | 实体集合 | 日期 | OData 实体集合的名称。 有关数据模型中集合和实体的详细信息，请参阅[数据模型](reports-ref-data-model.md)。 |
@@ -73,7 +74,7 @@ Intune 的 URL 使用以下格式：
 > [!NOTE]
 > 筛选器示例假定现在是 2018/2/21。
 
-|                             Filter                             |           性能优化           |                                          说明                                          |
+|                             Filter                             |           性能优化           |                                          描述                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    完整                                      |    返回 `DateKey` 介于 20180214 至 20180221 的数据。                                     |
 |    `$filter=DateKey eq 20180214`                                 |    完整                                      |    返回 `DateKey` 等于 20180214 的数据。                                                    |

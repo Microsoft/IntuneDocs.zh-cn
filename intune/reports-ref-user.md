@@ -14,25 +14,26 @@ ms.technology: ''
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1ce1d429b830ac6f494346697bd7e44ac250d9b6
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 38a4383fe9fbeec4abc8ce37ad46ce55b2849090
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642936"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182578"
 ---
 # <a name="reference-for-user-entity"></a>用户实体引用
 
 User 类别包含定义数据模型中用户属性的 User 实体。
 
-## <a name="user"></a>User
+## <a name="user"></a>用户
 
 用户实体列出了企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。
 
 User 实体集合包含用户数据。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在上个月的数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
 
-| 屬性  | 说明 | 示例 |
+| 属性  | 描述 | 示例 |
 |---------|------------|--------|
 | UserKey |数据仓库中用户的唯一标识符 - 代理键。 |123 |
 | UserId |用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |

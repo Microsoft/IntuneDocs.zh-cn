@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b8f0f038a1f093ec93182fa0ee590d83e6ebea29
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0720ff05c4bccc57e7c7ebc7f6438992f988bc8b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024951"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190143"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>使用 Microsoft Intune 防止非受管理设备上的数据泄露
 
@@ -32,7 +33,7 @@ ms.locfileid: "31024951"
 
 Intune 应用保护策略独立于设备管理。 通过应用保护策略，可管理在托管设备和由 Intune 或非 Microsoft MDM 解决方案管理的设备上的 Office 移动应用。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 满足以下要求，可使用以下操作计划：
 * 你的公司已准备好安全转换到云。

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: ef2030ba36e7a2c5f1a9566a2fcb94ecca465149
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 8058a6f4cda02a044e050f07bb6264e29b83f879
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961589"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179909"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>确定移动设备管理用例场景
 

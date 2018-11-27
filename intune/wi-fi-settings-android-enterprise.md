@@ -12,21 +12,22 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: be26522555766c6a3661857ba7722c2425cc984e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49431908"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180436"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中为运行 Android Enterprise 和 Android 展台的设备添加 Wi-Fi 设置
 
 可以使用特定的 WiFi 设置创建配置文件，然后将此配置文件部署到 Android Enterprise 和 Android 展台设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，使用预共享密钥等。
 
-本文将介绍这些设置。
+本文将说明这些设置。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建设备配置文件](device-profile-create.md)。
 
@@ -111,7 +112,7 @@ ms.locfileid: "49431908"
 
       - 标识隐私（外部标识）：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
-选择“确定” > “创建”以保存所做更改。 配置文件随即创建并出现在配置文件列表中。
+选择“确定” > “创建”以保存所做的更改。 配置文件随即创建并出现在配置文件列表中。
 
 ## <a name="next-steps"></a>后续步骤
 

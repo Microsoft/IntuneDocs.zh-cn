@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
-ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51830111"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187287"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 独立版 - Win32 应用管理（公共预览版）
 

@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 573cdf8746b9eaf593a33cd943b69a2dd83030ae
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 70d1594220b3315db2c7d7eeb01a915aaf2ec995
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391597"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186726"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
@@ -28,7 +29,7 @@ ms.locfileid: "49391597"
 
 证书用于进行身份验证并保证用户安全访问公司资源（例如 VPN 或 WiFi 网络）。 本文介绍如何导出 PKCS 证书，然后将证书添加到 Intune 配置文件中。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>要求
 
 要在 Intune 中使用 PKCS 证书，必须具有以下基础结构：
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232167"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181024"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>使用 Intune 设置 Lookout 移动威胁防御集成
 
@@ -50,11 +51,11 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 
 以下步骤介绍了如何收集提供给 Lookout 支持团队的信息。
 
-1. 登录到 [Azure 门户](https://portal.azure.com)并选择自己的订阅。 
+1. 登录到 [Azure 门户](https://portal.azure.com)并选择自己的订阅。 
 
-2. 选择订阅名称时，所生成的 URL 包括订阅 ID。  如果查找订阅 ID 时遇到任何问题，请参阅 [Microsoft 支持文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)获取有关查找订阅 ID 的提示。
+2. 选择订阅名称时，所生成的 URL 包括订阅 ID。  如果查找订阅 ID 时遇到任何问题，请参阅 [Microsoft 支持文章](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)获取有关查找订阅 ID 的提示。
 
-3. 查找 Azure AD 组 ID。 Lookout 控制台支持 2 个级别的访问：  
+3. 查找 Azure AD 组 ID。 Lookout 控制台支持 2 个级别的访问：  
    * **完全访问：** Azure AD 管理员可创建具有完全访问权限的用户组，也可选择创建具有受限访问权限的用户组。  仅这两个组的用户可登录到 **Lookout 控制台**。
    * **受限访问：** 该组中的用户无法访问 Lookout 控制台的某些配置和注册相关模块，可对 Lookout 控制台的“安全策略”模块进行只读访问。  
 

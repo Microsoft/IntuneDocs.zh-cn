@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 10f19c0b9823adcd40ce38bae1c6cbaacd59c0db
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 17d88b4e4da81f878e8bbdb5e4fde5ad2375dde7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310481"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179859"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>使用策略帮助保护运行 Intune 客户端软件的 Windows 电脑
 

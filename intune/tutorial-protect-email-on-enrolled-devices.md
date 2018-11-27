@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e88108d6c438bf2c192516be44908c4d76dfa9f
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652115"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181864"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教程：保护托管设备上的 Exchange Online 电子邮件
 了解如何使用设备符合性策略与条件访问，以确保 iOS 设备仅在由 Intune 托管并使用已批准的电子邮件应用时才可以访问 Exchange Online 电子邮件。 
@@ -32,7 +33,7 @@ ms.locfileid: "49652115"
 
 如果没有 Intune 订阅，请[注册免费试用帐户](free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必备条件
   - 在本教程中，你将需要一个具有以下订阅的测试租户：
     - Azure Active Directory Premium（[免费试用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)）
     - Office 365 商业版订阅，包括 Exchange（[免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=510938)）
@@ -119,7 +120,7 @@ ms.locfileid: "49652115"
 
 9.  选择“创建”。
 
-## <a name="try-it-out"></a>试用
+## <a name="try-it-out"></a>试试看
 使用已创建的策略后，尝试登录到 Office 365 电子邮件的任何 iOS 设备都将需要在 Intune 中注册并使用适用于 iOS 的 Outlook 移动应用。 若要在 iOS 设备上测试此方案，请尝试使用测试租户中用户的凭据登录到 Exchange Online。 系统将提示你注册该设备并安装 Outlook 移动应用。
 1. 若要在 iPhone 上测试，请转到“设置” > “密码和帐户” > “添加帐户” > “Exchange”。
 2. 在测试租户中，为用户输入电子邮件地址，然后按“下一步”。

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: a7af46f0f9db0d849e3c75da36c5fe9354554107
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 309391db50ecaee798485a9fd064f08ba17c0d74
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643104"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181711"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>联系 Microsoft Intune 的辅助电话支持
 
@@ -58,7 +59,7 @@ ms.locfileid: "49643104"
 |       法国        |                        全天候                         |  星期一到星期五<br /><br />09:00 – 17:00 CET (UTC +1)   |              法语&#42;、英语               |                                                                       0805540594                                                                       |                                                                          0157324297                                                                           |
 |       德国       |                        全天候                         |  星期一到星期五<br /><br />09:00 – 17:00 CET (UTC +1)   |              德语*、英语               |                                                                      0800 5892332                                                                      |                                                                         069380789508                                                                          |
 |       希腊        |                        全天候                         |  星期一到星期五<br /><br />09:00 – 17:00 EET (UTC +2)   |               希腊语*、英语               |                                                                     0080044142831                                                                      |                                                                                                                                                               |
-|      危地马拉      |                        全天候                         |  星期一到星期五<br /><br />09:00 – 17:00 CST (UTC -6)   |              西班牙语&#42;、英语              |                       1-800-300-0069<br /><br />步骤 1。 选择选项 4（用于特殊访问权限）<br /><br />步骤 2. 输入代码：7007                       |                                                                                                                                                               |
+|      危地马拉      |                        全天候                         |  星期一到星期五<br /><br />09:00 – 17:00 CST (UTC -6)   |              西班牙语&#42;、英语              |                       1-800-300-0069<br /><br />步骤 1。 选择选项 4（用于特殊访问权限）<br /><br />步骤 2。 输入代码：7007                       |                                                                                                                                                               |
 |    中国香港特别行政区    |                        全天候                         |  星期一到星期五<br /><br />09:00 – 18:00 HKT (UTC +8)   |     粤语*、普通话*、英语      |                                                                                                                                                        |                                                                           30713055                                                                            |
 |       匈牙利       |                        全天候                         |  星期一到星期五<br /><br />09:00 – 17:00 CET (UTC +1)   |             匈牙利语*、英语             |                                                                     36 80 983 899                                                                      |                                                                         36 1 778 9292                                                                         |
 |       冰岛       |                        全天候                         |    星期一到星期五<br /><br />09:00 – 17:00 GMT (UTC)    |                     英语                     |                                                                        8009609                                                                         |                                                                                                                                                               |

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: c96d66a11f49db68d20511aeae9b2abbab53b172
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425217"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181236"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
 
@@ -191,7 +192,7 @@ ms.locfileid: "49425217"
 2. 如上所述，从适用于企业的 Microsoft 应用商店下载 Windows 10 公司门户应用。  
 3. 运行在脚本标头中详细说明了其输入参数的脚本，对 Windows 10 公司门户应用进行签名（以下进行了提取）。 不需要将依赖项传入该脚本。 只有在应用上载到 Intune 管理控制台时才需要依赖项。
 
-|       Parameter       |                                                                    说明                                                                    |
+|       参数       |                                                                    描述                                                                    |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | InputWin10AppxBundle  |                                             定位到源 appxbundle 文件所在位置的路径。                                              |
 | OutputWin10AppxBundle |                                                  已签名的 appxbundle 文件 Win81Appx 的输出路径。                                                  |

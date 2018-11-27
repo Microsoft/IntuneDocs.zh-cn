@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 103b509a562e777a28882f21aef2ca36354533f5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410831"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183242"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
@@ -99,7 +100,7 @@ IT 管理员可以使用“帮助 + 支持”选项，通过 Azure 门户为 Int
 
 
 ## <a name="new-help-and-support-experience"></a>新的“帮助和支持”体验 
-以下信息仅在使用“设备管理”门户时适用，并且是新的“帮助和支持”体验的一部分。本次推出的参与者是在可用的 Intune 租户中随机选择的。  
+*以下信息仅在使用“设备管理”门户时适用，并且是新的“帮助和支持”体验的一部分。本次推出的参与者是在可用的 Intune 租户中随机选择的。  
 
 Intune 的“帮助和支持”更新是一个新体验，已在 [Microsoft 365 设备管理门户](http://devicemanagement.microsoft.com)中面向部分租户（并非所有租户）提供。 本新体验与 [Microsoft 365 管理中心](https://portal.office.com/AdminPortal/Home)中的体验类似，并且在从设备管理控制台的某些位置访问时取代了以前的“帮助和支持”体验。  
 

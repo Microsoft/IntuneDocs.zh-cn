@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 147431f6143d1ff81e170c656c636d0bd4f3837f
-ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
+ms.openlocfilehash: b0fe54d576a80f4f228de038d51ec3ae89a94926
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "51859522"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182681"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>在 Microsoft Intune 中为运行 Windows Phone 8.1 的设备配置 VPN 设置
 
@@ -50,7 +51,7 @@ ms.locfileid: "51859522"
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
     - **Check Point Capsule VPN**
     - **SonicWall Mobile Connect**
-    -  **F5 Edge Client**
+    - **F5 Edge Client**
     - **Pulse Secure**
 
 - **登录组或域**（仅限 SonicWall Mobile Connect）- 指定要连接到的登录组或域的名称。

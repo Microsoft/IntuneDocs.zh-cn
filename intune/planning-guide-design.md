@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864585"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186488"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -34,11 +35,11 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](planning-g
 
 -   设备平台注意事项
 
--   进行传递的要求  
+-   进行传递的要求  
 
 虽然存在本地基础结构最低要求，但设计计划仍可帮助确保拥有适当的移动设备管理解决方案，用于满足目标、宗旨和要求。
 
-让我们更详细地研究一下各个方面。 
+让我们更详细地研究一下各个方面。 
 
 ## <a name="record-your-current-environment"></a>记录当前环境
 此外，在实现和测试阶段常常有设计更改。 发生更改时，使用设计计划来记录这些更改，以及更改背后的基本原理。

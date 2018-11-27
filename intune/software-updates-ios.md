@@ -10,12 +10,13 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+search.appverid: MET150
+ms.openlocfilehash: 61bd7d5cf40355536aa7d5c361a771ce2b4f30ec
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101947"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189871"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>在 Intune 中配置 iOS 更新策略
 
@@ -46,7 +47,7 @@ ms.locfileid: "49101947"
 
     1. 选择星期
     2. 选择应用此策略的时区
-    3. 输入列入阻止列表小时的开始和结束时间
+    3. 输入列入黑名单小时的开始和结束时间
 
     > [!NOTE]
     > 如果“开始时间”和“结束时间”都设置为中午 12 点，则会关闭维护时间检查。

@@ -13,13 +13,14 @@ ms.technology: ''
 ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 600c6a00910647983cc2329f9256b613560aaf14
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: ec5127adcb12bc1196604d27ae2ac6501de03d08
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866314"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187100"
 ---
 # <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Microsoft Intune 文档 &#40；Ignite 特别版 &#41；
 欢迎使用 Microsoft Ignite 2018！ 我们非常欢迎你的到来。 在 Microsoft Ignite 2018 上，查看我们整理的一些 Intune 资源。

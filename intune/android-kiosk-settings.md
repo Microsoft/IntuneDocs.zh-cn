@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602174"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185230"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune 中的适用于 Android 设备的展台设置
 
@@ -47,7 +48,7 @@ ms.locfileid: "45602174"
 
 要为多个应用设置 Android 展台设备，请执行以下主要步骤：
 
-1. [从托管的 Google Play 导入并部署托管的主屏幕应用](#import-and -deploy-the-managed-home-screen-app)
+1. [从托管的 Google Play 导入并部署托管的主屏幕应用](#import-and-deploy-the-managed-home-screen-app)
 2. [添加并分配可用于展台模式的应用](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. （可选）[添加可用于展台模式的 Web 链接](#add-web-links-that-can-be-used-in-kiosk-mode)
 

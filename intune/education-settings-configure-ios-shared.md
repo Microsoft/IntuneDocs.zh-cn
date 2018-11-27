@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029802"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181218"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>如何为共享 iPad 设备配置 Intune 教育设置
 
@@ -183,7 +184,7 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 5. 在“配置文件”窗格上，选择“创建配置文件”。
 6. 在“创建关联”窗格上，输入“名称”和“说明”。
 7. 选择“选择类” > “配置”，将组关联到 Cart 配置文件。
-8. 选择要包括到 Cart 配置文件的类，然后选择“选择”。 
+8. 选择要包括到 Cart 配置文件的类，然后选择“选择”。 
 9. 选择“选择 Cart” > “配置”，将组关联到 Cart 配置文件。
 10. 选择要包括到 Cart 配置文件的组，然后选择“选择”。
 11. 在“创建关联”窗格上，选择“保存”以保存 Cart 配置文件。
@@ -198,7 +199,7 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 4. 在“设备配置”窗格上，选择“监视” > “分配状态”。
 5. 在“分配状态”窗格上，选择所创建的“Cart 配置文件”。
 6. 在“Cart 配置文件”窗格上，选择“分配”，然后在“包括”下选中“选择要包括的组”。
-7. 选择希望作为 Cart 配置文件目标的类（请勿选择组），然后选择“选择”。 
+7. 选择希望作为 Cart 配置文件目标的类（请勿选择组），然后选择“选择”。 
 8. 完成后，请选择“保存”。
 
 分配完成，Intune 会基于教室分配将 Classroom 配置文件部署到目标设备。

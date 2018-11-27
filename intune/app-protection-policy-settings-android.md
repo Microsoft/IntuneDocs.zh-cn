@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3d48bc6f710aa329a3427bbd245c286c1ccdce32
-ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
+ms.openlocfilehash: 531b09f4ef35e47b7415f63ad3d43fd5a66a72ec
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51619035"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181017"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -81,7 +82,7 @@ ms.locfileid: "51619035"
 
 | Setting | 如何使用 |  
 |------|------| 
-| **需要 PIN 才能进行访问** | 选择“是”以要求使用 PIN 才能使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 <br><br> 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <br> <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码则可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> 默认值 = 数值<br><br> **注意：** 允许的特殊字符包括 Android 英语键盘上的特殊字符和符号。</li></ul>  <ul><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>默认值 = **是** <br><br>注意 _：如果配置了密码类型 PIN，并且“允许简单 PIN”已设置为“是”，用户在其 PIN 中则需要使用至少 1 个字母或至少 1 个特殊字符。如果配置了密码类型 PIN，并且“允许简单 PIN”已设置为“否”，用户在其 PIN 中则需要使用至少 1 个数字和 1 个字母以及至少 1 个特殊字符****。 </li> <br> <li>  **PIN 长度**：指定 PIN 序列必须包含的最小位数。 <br><br>默认值 = 4 </li> <br> <li> 允许指纹而非 PIN (Android 6.0+)：选择“是”，允许用户使用[指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 进行应用访问。 <br><br>默认值 = **是** <br><br>***注意**：此功能支持 Android 设备上的通用生物识别控件。不支持特定于 OEM 的生物识别设置，如 Samsung Pass。*<br><br>在 Android 设备上，可让用户通过 [Android 指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 证明其身份。用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识，而不是输入 PIN。<br><br>Android 工作配置文件要求为强制执行的“允许使用指纹替代 PIN”策略注册单独的指纹。此策略仅对在 Android 工作配置文件中安装的策略托管应用有效。在公司门户注册以创建 Android 工作配置文件后，必须在设备中注册单独的指纹。有关使用 Android 工作配置文件注册工作配置文件指纹的详细信息，请参阅[锁定工作配置文件](https://support.google.com/work/android/answer/7029958) </li> <br><ul><li>** 以下时间（以分钟为单位）之后使用 PIN 而非生物识别覆盖 **：若要使用此设置，请选择“是”，然后配置非活动超时。<br><br>默认值 = **否** </li></ul> <br> <ul><li>** 非活动超时**：指定时间（分钟），在该时间后 PIN 将替代指纹的使用。 </li></ul> <br><li> **管理设备 PIN 时禁用应用 PIN**：在已注册设备上检测到设备锁后选择“是”可禁用应用 PIN。   <br><br> 默认值 = 否 </li></ul>|
+| **需要 PIN 才能进行访问** | 选择“是”以要求使用 PIN 才能使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 <br><br> 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <br> <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码则可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> 默认值 = 数值<br><br> **注意：** 允许的特殊字符包括 Android 英语键盘上的特殊字符和符号。</li></ul>  <ul><li> **允许简单 PIN**：选择“是”，允许用户使用简单的 PIN 序列，如 1234、1111、abcd 或 aaaa。 选择“否”，阻止用户使用简单的序列。 <br><br>默认值 = **是** <br><br>注意 _：如果配置了密码类型 PIN，并且“允许简单 PIN”已设置为“是”，用户在其 PIN 中则需要使用至少 1 个字母或至少 1 个特殊字符。如果配置了密码类型 PIN，并且“允许简单 PIN”已设置为“否”，用户在其 PIN 中则需要使用至少 1 个数字和 1 个字母以及至少 1 个特殊字符**。_ </li> <br> <li>  **PIN 长度**：指定 PIN 序列必须包含的最小位数。 <br><br>默认值 = 4 </li> <br> <li> 允许指纹而非 PIN (Android 6.0+)：选择“是”，允许用户使用[指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 进行应用访问。 <br><br>默认值 = **是** <br><br>***注意**：此功能支持 Android 设备上的通用生物识别控件。不支持特定于 OEM 的生物识别设置，如 Samsung Pass。*<br><br>在 Android 设备上，可让用户通过 [Android 指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 证明其身份。用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识，而不是输入 PIN。<br><br>Android 工作配置文件要求为强制执行的“允许使用指纹替代 PIN”策略注册单独的指纹。此策略仅对在 Android 工作配置文件中安装的策略托管应用有效。在公司门户注册以创建 Android 工作配置文件后，必须在设备中注册单独的指纹。有关使用 Android 工作配置文件注册工作配置文件指纹的详细信息，请参阅[锁定工作配置文件](https://support.google.com/work/android/answer/7029958) </li> <br><ul><li>** 以下时间（以分钟为单位）之后使用 PIN 而非生物识别覆盖 **：若要使用此设置，请选择“是”，然后配置非活动超时。<br><br>默认值 = **否** </li></ul> <br> <ul><li>** 非活动超时**：指定时间（分钟），在该时间后 PIN 将替代指纹的使用。 </li></ul> <br><li> **管理设备 PIN 时禁用应用 PIN**：在已注册设备上检测到设备锁后选择“是”可禁用应用 PIN。   <br><br> 默认值 = 否 </li></ul>|
 | **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 当设置为“是”并且 PIN 或生物识别提示已打开时，将同时显示公司凭据以及 PIN 或生物识别提示。 <br><br>默认值 = 否 |
 | **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：指重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，如果管理员在策略中启用 PIN 并阻止取得 root 权限的设备，用户打开 Intune 托管应用时，则必须输入 PIN，并且必须在未取得 root 权限的设备上使用此应用。 使用此设置时，用户在与配置值相等的一段时间内无需在任何 Intune 托管应用上再次输入 PIN 或再次经历 root 检测检查。  <br><br>此策略设置格式支持正整数。 <br><br> 默认值 = 30 分钟 <br><br> **注意：** 在 Android 上，所有 Intune 托管应用均共享此 PIN。应用离开设备主屏幕后，就会重置 PIN 计时器。在此设置中定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入此 PIN。 <br><br></li> |
 | **阻止屏幕捕获和 Android 助手** | 选择“是”，当使用此应用时，会阻止设备的屏幕捕获和“Android 助手”功能。 选择“是”还会在通过工作或学校帐户使用此应用时，导致应用切换器预览图像模糊。 <br><br>默认值 = 否 |

@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
-ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
+ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811523"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189803"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>不同的 Windows 设备的注册方法对应的功能
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]

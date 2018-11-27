@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e8c606f9b304f91e02ba977c801bd8de18682612
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 6e38ac954f0b8c85b7127143c98f41bfe5497ef9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231689"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179569"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况 
 
@@ -56,7 +57,7 @@ Intune 支持将应用保护策略部署到每个设备的一个用户帐户。
 
 阅读以下示例场景，了解 Intune 如何处理多用户帐户。
 
-用户 A 为两家公司（X 公司和 Y 公司）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司** **之前**部署应用保护策略。与“X 公司”关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望应用保护策略托管 Y 公司用户帐户，用户 A 必须删除 X 公司用户帐户。
+用户 A 为两家公司（X 公司和 Y 公司）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司** **之前**部署应用保护策略。与**X 公司**关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望应用保护策略托管 Y 公司用户帐户，用户 A 必须删除 X 公司用户帐户。
 ### <a name="adding-a-second-account"></a>添加第二个帐户
 ####  <a name="android"></a>Android
 系统可能会提示删除现有帐户并添加新帐户。  要删除现有帐户，请转到“设置”&gt;“常规”&gt;“应用程序管理器”&gt;“公司门户”。然后选择“清除数据”。
