@@ -13,12 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
-ms.openlocfilehash: a90f53bfc5841cc0f773751e7df917d8fc8b6cf8
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49431907"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187729"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教程：使用 Autopilot 在 Intune 中注册 Windows 设备
 Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护和应用自定义操作系统映像。 
@@ -36,7 +40,7 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 有关 Autopilot 优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
 
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必备条件
 - [设置 Windows 自动注册](quickstart-setup-auto-enrollment.md)
 - [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
@@ -77,7 +81,7 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
     2. 对于“组名称”，输入“Autopilot 组”。 对于“组说明”输入“Autopilot 设备的测试组”。
     3. 对于“成员资格类型”，选择“已分配”。
 3. 在“组”边栏选项卡中，选择“成员”并将 Autopilot 设备添加到该组。 尚未注册的 Autopilot 设备使用设备序列号作为名称。
-4. 选择 **“创建”**。  
+4. 选择“创建”。  
 
 ## <a name="create-an-autopilot-deployment-profile"></a>创建 Autopilot 部署配置文件
 
