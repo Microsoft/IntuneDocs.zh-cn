@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e4330d8e8095df49b14ab60c4b08aae44d134452
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: ffb7ecc9bfd183c6fa7a863a5b1440ee7d25b0f3
+ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679213"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281065"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>在 Microsoft Intune 中为运行 macOS 的设备配置 VPN 设置
 
@@ -56,6 +57,6 @@ ms.locfileid: "50679213"
 
 ## <a name="proxy-settings"></a>代理设置
 
-- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL（例如 `** http://proxy.contoso.com**`）。
+- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的“代理服务器 URL”。 例如，输入 `http://proxy.contoso.com`。
 - **地址** - 输入代理服务器地址（作为 IP 地址）。
 - **端口号** - 输入与代理服务器关联的端口号。
