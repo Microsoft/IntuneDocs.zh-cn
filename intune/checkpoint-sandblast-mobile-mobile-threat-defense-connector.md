@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5766c4ebe7b261356248b00d0ca2d8937d3db79a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 3600cae373dceb88122852e3d260e91e2618d516
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231504"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180419"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast 移动威胁防御连接器与 Intune
 
@@ -59,7 +60,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
 
-检测**中间人**等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
+检测“中间人”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问 **** 。
 
 **阻止通过 Wi-Fi 访问网络：**
 
@@ -71,7 +72,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
 
-检测**中间人**等网络威胁，根据设备风险阻止公司文件的同步。
+检测“中间人”等网络威胁，并根据设备风险阻止公司文件的同步 **** 。
 
 **检测到网络威胁时阻止 SharePoint Online：**
 

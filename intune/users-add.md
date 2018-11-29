@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 643f118414862e1644e6bb15d56a8e903d958d0c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 76721710f266ff5f25dca763d7b6cca561050610
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254167"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184567"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
 

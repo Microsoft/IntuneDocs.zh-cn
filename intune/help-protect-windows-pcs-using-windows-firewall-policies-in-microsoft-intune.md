@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a38ff69b878880ffa16e327eace0afe64d336f43
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310566"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181116"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows PC
 
@@ -38,7 +39,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 > [!NOTE]
 > 如果将 Microsoft Intune 策略和组策略都配置为管理 PC 上的相同设置，则组策略设置将替代 Microsoft Intune 策略。 有关如何避免 Intune 策略与组策略之间的冲突的信息，请参阅[解决 GPO 与 Microsoft Intune 之间的策略冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 >
-> 如果你想要将 Windows 防火墙设置部署到运行 Windows Vista 的计算机，则必须先安装[热修复补丁 KB971800](http://support2.microsoft.com/kb/971800) 到这些计算机上。
+> 如果要将 Windows 防火墙设置部署到运行 Windows Vista 的计算机，则必须先在这些计算机上安装[修补程序 KB971800](http://support2.microsoft.com/kb/971800)。
 
 > [!IMPORTANT]
 > 若要使用 Intune 管理 Windows 防火墙，请确保在要托管的计算机上启用以下两项服务：
@@ -79,7 +80,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 以上每个设置的默认值都是“是”，这是最安全的值。
 
 > [!IMPORTANT]
-> 如果你的环境中包括运行 Windows Vista（未安装 Service Pack）的被管理的计算机，则必须安装与 Microsoft 知识库[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或在部署到这些计算机的策略中禁用“阻止所有传入连接”策略设置。
+> 如果环境中包含运行 Windows Vista（未安装服务包）的托管计算机，则必须安装与 Microsoft 知识库[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或者在部署到这些计算机的策略中禁用“阻止所有传入连接”策略设置。
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Windows 防火墙阻止新程序时通知用户
 

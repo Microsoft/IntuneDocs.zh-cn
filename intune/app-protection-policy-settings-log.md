@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/15/2017
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,17 +14,26 @@ ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05502c901f01ba134475ec69df3c42aa6e0e7480
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231727"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189837"
 ---
 # <a name="review-client-app-protection-logs"></a>查看客户端应用保护日志
 
-了解可在应用保护日志中查看的设置。 通过为移动客户端上的应用程序启用 Intune 诊断模式来访问这些日志。 下表显示了日志中记录的设置名称和说明。
+了解可在应用保护日志中查看的设置。 启用移动客户端上的 Intune 诊断来访问这些日志。 
+
+启用和收集日志的过程因平台而异：
+- **Android 设备** - 使用“公司门户”。 请参阅[通过电子邮件将日志发送给公司支持人员](/intune-user-help/send-logs-to-your-it-admin-by-email-android)。
+- **iOS 设备** - 使用 Managed Browser 或 Microsoft Edge 收集日志。 有关详细信息，请参阅 Intune 支持团队的博客[全新的 Intune 诊断控制台，用于 Intune Managed Browser 中的日志提交](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser)。 
+- **Windows 10 设备** - 使用“MDMDiag”和事件日志。 请参阅 Windows 客户端管理内容中的 [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)（诊断 Windows 10 中的 MDM 故障）和博客 [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)（Windows 10 Intune 策略故障排除）
+
+
+下表列出了日志中记录的设置名称和说明。
 
 ## <a name="app-protection-policy-settings"></a>应用保护策略设置
 

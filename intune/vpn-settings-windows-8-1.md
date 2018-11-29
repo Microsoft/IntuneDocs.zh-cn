@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2b6ae135f298f4632d35db756f6f2d7e7e6a1730
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 69f347b3e59ca9dfe3f05c9a60dd44c257d485fb
+ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679230"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281116"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>在 Microsoft Intune 中为运行 Windows 8.1 的设备配置 VPN 设置
 
@@ -86,7 +87,7 @@ ms.locfileid: "50679230"
 ## <a name="proxy-settings"></a>代理设置
 
 - **自动检测代理设置** - 如果 VPN 服务器要求使用代理服务器进行连接，请指定是否希望设备自动检测连接设置。 有关详细信息，请参阅 Windows Server 文档。
-- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL（例如 `** http://proxy.contoso.com**`）。
+- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的“代理服务器 URL”。 例如，输入 `http://proxy.contoso.com`。
 - **使用代理服务器** - 如果想要手动输入代理服务器设置则启用此选项。
     - **地址** - 输入代理服务器地址（作为 IP 地址）。
     - **端口号** - 输入与代理服务器关联的端口号。

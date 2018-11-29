@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744629"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186168"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 远程管理 Intune 设备
 
@@ -58,7 +59,10 @@ ms.locfileid: "34744629"
 
 ![使用 TeamViewer 远程管理 Android 设备 - 示例](./media/android-teamviewer.png)
 
-启动远程会话时，最终用户会在其设备上的公司门户应用图标上看到一个通知标志。 打开应用时还会看到一条通知。 然后，用户就可以接受远程协助请求了。
+启动远程会话时，用户会在设备的公司门户应用图标上看到通知标志。 打开应用时也会显示通知。 然后，用户即可接受远程协助请求。
+
+> [!NOTE]
+> 使用“无用户”方法注册的 Windows 设备（如 DEM 和 WCD）不会在公司门户应用中显示 TeamViewer 通知。 在这些情况下，建议使用 TeamViewer 门户生成会话。
 
 在 TeamViewer 中，可对设备完成一系列操作，包括控制该设备。 有关可执行操作的详细信息，请参阅 [TeamViewer 指南](https://www.teamviewer.com/support/documents/)。
 

@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236333"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179399"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理 PowerShell 脚本以供 Windows 10 设备使用
 Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows 10 设备上运行。 管理扩展对 Windows 10 移动设备管理 (MDM) 功能进行了补充，使你可更轻松地采用新式管理。
@@ -27,9 +28,9 @@ Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows
 ## <a name="moving-to-modern-management"></a>移动到新式管理
 最终用户的计算系统正在向数字化转型。 经典、传统的 IT 侧重于单个设备平台、企业拥有的设备、在办公室办公的用户，以及各种手动、反应式 IT 过程。 而新式工作区使用多个（用户拥有和企业拥有的）设备平台、允许用户随时随地工作，并提供自动化、积极主动的 IT 过程。 
 
-Microsoft Intune 等 MDM 服务可使用 MDM 协议来管理 Windows 10 设备。 Windows 10 内置管理客户端可与 Intune 进行通信，以执行企业管理任务。 它会促使你在 Windows 10 设备上采用新式管理。 但是，可能存在你需要但 Windows 10 MDM 当前并未提供的功能，例如，高级设备配置、故障排除以及旧版 Win32 应用管理。 对于这些功能，可在 Windows 10 设备上运行 Intune 软件客户端。 但无法使用 Windows 10 MDM 提供的新功能。 [比较 Intune 软件客户端与 Windows 10 MDM 的差异](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison)。
+Microsoft Intune 等 MDM 服务可使用 MDM 协议来管理 Windows 10 设备。 Windows 10 内置管理客户端可与 Intune 进行通信，以执行企业管理任务。 它会促使你在 Windows 10 设备上采用新式管理。 但是，可能存在你需要但 Windows 10 内置 MDM 当前并未提供的功能，例如，高级设备配置。
 
-Intune 管理扩展对 Windows 10 MDM 内置功能进行了补充。 可创建 PowerShell 脚本以在提供所需功能的 Windows 10 设备上运行。 例如，可创建 PowerShell 脚本（在 Windows 10 设备上安装旧版 Win32 应用、将脚本上传到 Intune、将脚本分配给 Azure Active Directory (AD) 组），然后在 Windows 10 设备上运行这些脚本。 然后，可在 Windows 10 设备上全程监视脚本运行状态。
+Intune 管理扩展对 Windows 10 MDM 内置功能进行了补充。 可创建 PowerShell 脚本以在提供所需功能的 Windows 10 设备上运行。 你可以创建配置自定义设置的 PowerShell 脚本，将脚本上传到 Intune，分配给 Azure Active Directory (AD) 组，并在 Windows 10 设备上运行该脚本。 可监控脚本，全程查看该脚本在 Windows 10 设备上的运行状态。
 
 ## <a name="prerequisites"></a>必备条件
 Intune 管理扩展具有以下先决条件：
@@ -55,7 +56,6 @@ Intune 管理扩展具有以下先决条件：
 3. 选择一个或多个组，其中的用户的设备会接收该脚本。 “选择”分配策略到所选组。
 
 > [!NOTE]
-> - PowerShell 脚本不适用于计算机组。
 > - 最终用户无需登录设备即可执行 PowerShell 脚本。 
 > - Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
 

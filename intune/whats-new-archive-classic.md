@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 34b219b48e5bc9e3ee688895c071b230886183eb
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 5a76a54de62ead26ec4b3c7a8e34db3cd639b6c1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225419"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181694"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
 
@@ -66,7 +67,7 @@ Windows 10 公司门户应用中开始的应用安装包括如下改进：
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>批量注册 Windows 10 设备 <!-- 747607 -->
 
-现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](/intune-classic/deploy-use/bulk-enroll-windows)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将预配包应用到设备后，它们便会加入 Azure AD、注册使用 Intune，然后即可供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户，可接收分配的策略和所需的应用。 目前不支持自助服务和公司门户方案。
+现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](/intune-classic/deploy-use/bulk-enroll-windows)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将预配包应用到设备后，它们便会加入 Azure AD、注册使用 Intune，然后即可供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户，可接收分配的策略和所需的应用。 目前不支持自助服务和公司门户方案。
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure 门户中 Intune（公共预览版）的新增功能<!--736542-->
 

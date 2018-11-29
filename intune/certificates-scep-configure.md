@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
+ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167529"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303866"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -66,7 +67,7 @@ ms.locfileid: "52167529"
 |**证书模板**|在发证 CA 上配置此模板。|
 |**客户端身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上安装证书。|
 |**服务器身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。 如果证书具有客户端和服务器身份验证密钥使用集（增强型密钥使用），则可以使用相同的证书。|
-|**受信任的根 CA 证书**|将此证书从根 CA 或信任根 CA 的任何设备中导出为“.cer”文件。 然后，使用受信任的 CA 证书配置文件将其分配给设备。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
+|**受信任的根 CA 证书**|将此证书从根 CA 或信任根 CA 的任何设备中导出为“.cer”文件。 然后，使用受信任的 CA 证书配置文件将其分配给用户、设备或同时向两者分配。<br /><b>注意：<b />分配 SCEP 证书配置文件时，请务必将 SCEP 证书配置文件中引用的受信任的根证书配置文件分配到同一用户或设备组。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
 
 ### <a name="accounts"></a>帐户
 
@@ -481,7 +482,7 @@ ms.locfileid: "52167529"
      - **数字签名**：仅在数字签名帮助保护密钥时允许密钥交换
    - **密钥大小（位数）**：选择密钥中包含的位数
    - **哈希算法** (Android、Windows Phone 8.1、Windows 8.1、Windows 10)：选择要与此证书一起使用的可用哈希算法类型之一。 选择连接设备支持的最高级别安全性。
-   - **根证书**：选择之前配置并分配到用户或设备的根 CA 证书配置文件。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。
+   - **根证书**：选择之前配置并分配到用户和/或设备的根 CA 证书配置文件。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。 请务必将此受信任的根证书配置文件分配到 SCEP 证书配置文件中分配的同一个组。
    - **扩展密钥用法**：选择“添加”为证书的预期目的添加值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证。 但，你可以根据需要添加任何其他密钥用法。
    - **注册设置**
      - **续订阈值(%)**：输入设备请求证书续订之前剩余的证书有效期限的百分比。

@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425013"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179061"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
@@ -117,7 +118,7 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
 
 如果用户尚未分配 Intune 许可证，或尚未将组织的 MDM 机构设置为 Intune，则不会向用户显示任何注册选项。
 
-如果用户已分配 Intune 许可证，且已将组织的 MDM 机构设置为 Intune：
+如果已向用户分配 Intune 许可证，且已将组织的 MDM 机构设置为 Intune：
 
 - Windows 7 或 Windows 8 电脑用户将只看到一个选项：通过下载和安装组织唯一的电脑客户端软件注册 Intune。
 
@@ -256,7 +257,7 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
 
 取消注册过程不会删除 OnlineManagement 文件夹。 卸载后等待 30 分钟，然后运行此命令。 如果过早运行，则卸载可能停留在未知状态。 若要删除该文件夹，请启用提升的提示符并运行：
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>后续步骤
 [使用 Microsoft Intune 管理设备](device-management.md)

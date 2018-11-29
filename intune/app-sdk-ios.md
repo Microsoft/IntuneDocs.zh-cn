@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: c9920e914a80ec3bb02f5066e6d6e34b2236c860
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: db9f0ca860186222491906aa35baf1e92d14e548
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212489"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181329"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -140,7 +141,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
       > [!NOTE]
-      > 授权文件是一个 XML 文件，它对于移动应用程序是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。 如果应用以前没有权利文件，那么启用密钥链共享（第 3 步）应该已导致 Xcode 为应用生成一个权利文件。
+      > 授权文件是一个 XML 文件，它对于移动应用程序是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。 如果应用以前没有权利文件，那么启用密钥链共享（第 3 步）应该已导致 Xcode 为应用生成一个权利文件。 请确保应用的程序包 ID 为列表中的首项。
 
 5. 在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中添加应用传递到 `UIApplication canOpenURL` 的各个协议。 请务必先保存所做的更改，再继续执行下一步。
 

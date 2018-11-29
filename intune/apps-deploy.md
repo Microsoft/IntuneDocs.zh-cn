@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610101"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267248"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 将应用分配到组
 
@@ -65,6 +66,8 @@ ms.locfileid: "51610101"
 
      > [!NOTE]
      > 仅适用于 iOS 应用：如果已创建包含每个应用的 VPN 设置的 iOS VPN 配置文件，可在“VPN”下选择 VPN 配置文件。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅 [iOS 设备的 VPN 设置](vpn-settings-ios.md)。
+     >
+     > 仅适用于 Android 应用：如果将 Android 应用部署为“注册与否都可用”，则只能在已注册的设备上获取报告状态。
 
 9. 要选择受此应用分配影响的用户组，请选择“包括的组”。
 10. 选择要包括的一个或多个组后，请选择“选择”。

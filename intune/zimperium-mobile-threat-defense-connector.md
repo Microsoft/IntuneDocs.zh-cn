@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231468"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187449"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium 移动威胁防御连接器与 Intune
 
@@ -58,7 +59,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 ### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
 
-检测**中间人**等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
+检测“中间人”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问 **** 。
 
 **阻止通过 Wi-Fi 访问网络：**
 
@@ -70,7 +71,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
 
-检测**中间人**等网络威胁，根据设备风险阻止公司文件的同步。
+检测“中间人”等网络威胁，并根据设备风险阻止公司文件的同步 **** 。
 
 **检测到网络威胁时阻止 SharePoint Online：**
 
@@ -94,7 +95,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 -   Zimperium 移动威胁防御订阅
 
-    -   有关详细信息，请参阅 [Zimperium 网站](https://www.zimperium.com/zips-mobile-ips)。
+    -   有关详细信息，请参阅  [Zimperium 网站](https://www.zimperium.com/zips-mobile-ips) 。
 
 ## <a name="next-steps"></a>后续步骤
 
