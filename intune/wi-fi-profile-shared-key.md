@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
+ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186318"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52618180"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,9 +34,8 @@ ms.locfileid: "52186318"
 ## <a name="before-you-begin"></a>在开始之前
 
 - 如下所述，从连接到网络的计算机复制代码可能更加轻松。
-- 对于 Android，还可以使用 [Android PSK 生成器](http://intunepskgenerator.johnathonb.com/)。
 - 可以通过添加更多的 OMA-URI 设置来添加多个网络和密钥。
-- 对于 iOS，在 Mac 工作站上使用 Apple Configurator 来设置配置文件。 或者，使用 [iOS PSK 移动配置生成器](http://intunepskgenerator.johnathonb.com/)。
+- 对于 iOS，在 Mac 工作站上使用 Apple Configurator 来设置配置文件。
 - PSK 需要 64 个十六进制数字的字符串，或 8 到 63 个可打印的 ASCII 字符的密码。 不支持某些字符，如星号 ( * )。
 
 ## <a name="create-a-custom-profile"></a>创建自定义配置文件
