@@ -1,5 +1,5 @@
 ---
-title: 选择如何在 Intune 中注册 iOS 设备
+title: 在 Intune 中注册 iOS 设备
 titlesuffix: Microsoft Intune
 description: 了解如何在 Microsoft Intune 中设置 iOS 设备注册。
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: bc1ae3f545f840f9ebfa1b7b75b56862691d900e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 22951d6e129b50d37fb16d865f0b9ad9aada012f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182731"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032276"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
 

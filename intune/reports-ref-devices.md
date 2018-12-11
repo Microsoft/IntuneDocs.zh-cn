@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181440"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112919"
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
@@ -40,7 +40,7 @@ ms.locfileid: "52181440"
 
 DeviceTypes 实体表示由其他数据仓库实体引用的设备类型。 设备类型通常描述设备型号、制造商或同时包含这两项内容。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | DeviceTypeID |设备类型的唯一标识符 |
 | DeviceTypeKey |数据仓库中设备类型的唯一标识符 - 代理键 |
@@ -48,9 +48,9 @@ DeviceTypes 实体表示由其他数据仓库实体引用的设备类型。 设�
 
 ## <a name="example"></a>示例
 
-| deviceTypeID  | 名称 | 描述 |
+| deviceTypeID  | 名称 | 说明 |
 |---------|------------|--------|
-| 0 |“桌面” |Windows 桌面设备 |
+| 0 |台式机 |Windows 桌面设备 |
 | 1 |WindowsRT |WindowsRT 设备 |
 | 2 |WinMO6 |Windows Mobile 6.0 设备 |
 | 3 |Nokia |Nokia 设备 |
@@ -75,7 +75,7 @@ DeviceTypes 实体表示由其他数据仓库实体引用的设备类型。 设�
 
 ClientRegistrationStateTypes 实体表示由其他数据仓库表引用的注册类型。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | clientRegisterationStateID |注册状态的唯一标识符 |
 | clientRegisterationStateKey |数据仓库中注册状态的唯一标识符 - 代理键 |
@@ -83,7 +83,7 @@ ClientRegistrationStateTypes 实体表示由其他数据仓库表引用的注册
 
 ## <a name="example"></a>示例
 
-| ClientRegisterationStateID  | 名称 | 描述 |
+| ClientRegisterationStateID  | 名称 | 说明 |
 |---------|------------|--------|
 | 0 |NotRegistered |未注册 |
 | 1 |SMSIDConflict |SMS ID 冲突 |
@@ -99,7 +99,7 @@ ClientRegistrationStateTypes 实体表示由其他数据仓库表引用的注册
 
 EnrollmentTypes 实体表明设备的注册方式。 注册类型会捕获注册方式。 示例列出了不同的注册类型及其含义。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | managementStateID |管理状态的唯一标识符。 |
 | managementStateKey |数据仓库中管理状态的唯一标识符 - 代理键。 |
@@ -107,7 +107,7 @@ EnrollmentTypes 实体表明设备的注册方式。 注册类型会捕获注册
 
 ## <a name="example"></a>示例
 
-| enrollmentTypeID  | 名称 | 描述 |
+| enrollmentTypeID  | 名称 | 说明 |
 |---------|------------|--------|
 | 0 |Unknown |未收集注册类型 |
 | 1 |UserEnrollment |用户发起的注册 |
@@ -123,7 +123,7 @@ EnrollmentTypes 实体表明设备的注册方式。 注册类型会捕获注册
 
 OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
 
-| 属性  | 描述 | 示例 |
+| 属性  | 说明 | 示例 |
 |---------|------------|--------|
 | ownerTypeID |所有者类型的唯一标识符。 | |
 | ownerTypeKey |数据仓库中所有者类型的唯一标识符 - 代理键。 | |
@@ -133,7 +133,7 @@ OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
 
 MdmStatuses 实体表明设备的符合性状态。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | MdmStatusID |符合性状态的唯一标识符 |
 | MdmStatusKey |数据仓库中符合性状态的唯一标识符 - 代理键 | 
@@ -142,10 +142,10 @@ MdmStatuses 实体表明设备的符合性状态。
 
 ## <a name="example"></a>示例
 
-| MdmStatusID  | ComplianceStatus | 描述 |
+| MdmStatusID  | ComplianceStatus | 说明 |
 |---------|------------|--------|
 | 0 |Unknown |设备符合性状态未知。 |
-| 1 |是否满足条件 |设备符合策略。 |
+| 1 |相容 |设备符合策略。 |
 | 2 |不相容 |设备不符合。 |
 | 3 |冲突 |设备符合性导致了冲突。 |
 | 4 |错误 |读取设备的符合性状态时出错。 |
@@ -155,7 +155,7 @@ MdmStatuses 实体表明设备的符合性状态。
 
 ManagementStates 实体提供有关设备状态的详细信息。 详细信息适用于应用远程操作、设备越狱或进行 root 的情况。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | managementStateID | 管理状态的唯一标识符。 |
 | managementStateKey | 数据仓库中管理状态的唯一标识符 - 代理键。 |
@@ -163,7 +163,7 @@ ManagementStates 实体提供有关设备状态的详细信息。 详细信息�
 
 ## <a name="example"></a>示例
 
-| managementStateID  | 名称 | 描述 |
+| managementStateID  | 名称 | 说明 |
 |---------|------------|--------|
 | 0 |托管 | 托管时不存在挂起的远程操作。 |
 | 1 |RetirePending | 存在一个针对设备的挂起的停用命令。 |
@@ -182,7 +182,7 @@ ManagementStates 实体提供有关设备状态的详细信息。 详细信息�
 
 WorkPlaceJoinStateTypes 实体表示设备的 Azure Active Directory Workplace Join 的状态。  注册工作流可使用一个或多个证书进行验证或进行身份验证。 注册设备工作区时，这些证书用于验证设备和用户。 证书通过 SCEP（简单证书注册点）服务器颁发。 实体中的值表示设备经历此过程时可能出现的各种状态。 其中一些状态包括因所需证书颁发（来自 SCEP 服务器）失败导致的工作区加入失败。 如果设备永不经历此工作流，则该值设为“未知”。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | WorkPlaceJoinStateID | 工作区加入状态的唯一标识符 |
 | WorkPlaceJoinStateKey | 数据仓库中工作区加入状态的唯一标识符 - 代理键 |
@@ -190,7 +190,7 @@ WorkPlaceJoinStateTypes 实体表示设备的 Azure Active Directory Workplace J
 
 ## <a name="example"></a>示例
 
-| workPlaceJoinStateID  | 名称 | 描述 |
+| workPlaceJoinStateID  | 名称 | 说明 |
 |---------|------------|--------|
 | 0 |Unknown |如果某设备未加入工作区，则设备处于未知状态 |
 | 1 |成功 |成功加入工作区 |
@@ -206,7 +206,7 @@ WorkPlaceJoinStateTypes 实体表示设备的 Azure Active Directory Workplace J
 
 ManagementAgentTypes 实体表示用于管理设备的代理。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | ManagementAgentTypeID | 管理代理类型的唯一标识符。 |
 | ManagementAgentTypeKey | 数据仓库中管理代理类型的唯一标识符 - 代理键。 |
@@ -214,7 +214,7 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 
 ## <a name="example"></a>示例
 
-| ManagementAgentTypeID  | 名称 | 描述 |
+| ManagementAgentTypeID  | 名称 | 说明 |
 |---------|------------|--------|
 | 1 |EAS | 设备通过 Exchange Active Sync 管理 |
 | 2 |MDM | 设备由 MDM 代理管理 |
@@ -228,7 +228,7 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 
 设备实体列出受管理的所有已注册设备及相应属性。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | DeviceKey | 数据仓库中设备的唯一标识符 - 代理键。 |
 | DeviceId | 设备的唯一标识符。 |
@@ -274,7 +274,7 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 
 DevicePropertyHistory 实体具有的属性与设备表格和过去 90 天每个设备记录的每日快照的属性相同。 DateKey 列表明每行的日期。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | DateKey |引用日期表格，该表格表明当日日期。 |
 | DeviceKey |数据仓库中设备的唯一标识符 - 代理键。 这是对包含 Intune 设备 ID 的设备表格的引用。 |
@@ -316,9 +316,9 @@ DevicePropertyHistory 实体具有的属性与设备表格和过去 90 天每个
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单数据的每日快照。 DateKey 表明行的日期。 某些属性可能不适用于所有设备或仅为一部分设备进行了填充，请查看此页面了解详细信息。 有关详细信息，请参阅[通过 Microsoft Intune 中的清单了解设备](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune)。
+MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单数据的每日快照。 DateKey 表明行的日期。 某些属性可能不适用于所有设备或仅为一部分设备进行了填充，请查看此页面了解详细信息。 有关详细信息，请参阅[通过 Microsoft Intune 中的清单了解设备](device-inventory.md)。
 
-| 属性  | 描述 |
+| 属性  | 说明 |
 |---------|------------|
 | DateKey | 引用日期表格，该表格表明当日日期。 |
 | DeviceKey |数据仓库中设备的唯一标识符 - 代理键。 这是对包含 Intune 设备 ID 的设备表格的引用。 |
@@ -342,7 +342,7 @@ MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单�
 | OSManufacturer |操作系统制造商。 |
 | OSProductSuite |操作系统产品套件。 |
 | OSProductType |操作系统产品类型。 |
-| 区域设置 |操作系统区域设置。 |
+| Locale |操作系统区域设置。 |
 | PhysicalMemoryCapacity |物理内存容量（以字节为单位）。 |
 | PhysicalMemoryRemovable |物理可移动内存（以字节为单位）。 |
 | SystemEnclosureChassisTypesInnerText |定义此设备的系统底盘类型。 数字指示以下值：  <br>0 或空 = 未知   <br>1 = 这是台式电脑   <br>2 = 这是笔记本电脑  <br>3 = 这是工作站  <br>4 = 这是企业服务器  <br>100 = 这是手机  <br>101 = 这是平板电脑  <br>102/103 = 其他未知类型的移动设备 |
@@ -386,7 +386,7 @@ MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单�
 | RemovableStorageTotal |总可移动存储（以字节为单位） |
 | DeviceMemoryDeviceCapacity |设备内存容量 |
 | DeviceMemoryAvailableDeviceCapacity |设备内存可用容量 |
-| DeviceOSVersion |操作系统版本 |
+| DeviceOSVersion |OS 版本 |
 | DeviceOSPlatform |OS 平台 |
 | DeviceOSLanguage |OS 语言 |
 | PasswordMaxAttemptsBeforeWipe |设备擦除前允许的密码尝试次数上限 |
@@ -417,7 +417,7 @@ MdmDeviceInventoryHistories 实体包含过去 90 天内 MDM 托管设备清单�
 ApplicationInventory 实体列出了收集清单时在设备上找到的应用。
 
 
-|      属性      |                       描述                        |
+|      属性      |                       说明                        |
 |--------------------|----------------------------------------------------------|
 |     DeviceKey      |              对设备表格的引用。               |
 |   ApplicationKey   | ? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |

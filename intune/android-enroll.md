@@ -15,13 +15,13 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 79a1a03f74db8e44dc3ee4d6575e193ce7841e24
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190109"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031885"
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
@@ -31,7 +31,7 @@ Intune 管理员可管理以下 Android 设备：
 - Android 设备，包括 Samsung Knox 标准设备。
 - Android 企业设备，包括 [Android 工作配置文件设备](#enable-enrollment-of-android-for-work-devices)和 Android 展台设备。
 
-运行 Samsung Knox 标准版的设备支持 Intune 进行多用户管理。 即是说，用户可以使用其 Azure AD 凭据登录和注销设备。 该设备仍然受中央管理，无论是否正在使用。 当用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销时，会清除所有应用数据。
+运行 Samsung Knox 标准版的设备支持 Intune 进行多用户管理。 即是说，用户可以使用其 Azure AD 凭据登录和注销设备。 该设备仍然受中央管理，无论是否正在使用。 当用户登录时，他们可以访问应用，还可以获得已应用的任何策略。 用户注销后，所有应用数据都会被清除。
 
 ## <a name="prerequisite"></a>先决条件
 

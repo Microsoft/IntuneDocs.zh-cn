@@ -15,12 +15,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 27f3a184e355f63d20a79fd92e8326206f6eee15
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9bbf6f30b7a7490608f9896ae8fe54e27341ccae
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185621"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112317"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure 控制台上的 Intune 和旧版 Intune PC 客户端
 
@@ -53,7 +53,7 @@ Intune PC 客户端管理工作流使用[基于 Silverlight 的 Intune 管理控
 
 ## <a name="mdm-capabilities"></a>MDM 功能
 
-有关 PC 客户端和 MDM 功能之间的详细比较，请参阅[对比作为计算机或移动设备管理 Windows 电脑](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison)。 MDM 更新将继续为注册 MDM 的 Windows 10 设备带来新的管理功能，其中包括评估 Win 32 应用的选项。 查看[新增功能](https://docs.microsoft.com/intune/whats-new)以了解添加到服务的最新版本。
+有关 PC 客户端和 MDM 功能之间的详细比较，请参阅[对比作为计算机或移动设备管理 Windows 电脑](pc-management-comparison.md)。 MDM 更新将继续为注册 MDM 的 Windows 10 设备带来新的管理功能，其中包括评估 Win 32 应用的选项。 查看[新增功能](https://docs.microsoft.com/intune/whats-new)以了解添加到服务的最新版本。
 
 ## <a name="switch-from-pc-client-to-mdm"></a>从 PC 客户端切换到 MDM
 

@@ -16,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 019f09444f96d8bb3bca046ef5be20af373a3bff
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183701"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112555"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange 连接器
 
@@ -41,11 +41,11 @@ ms.locfileid: "52183701"
 下表列出了在其中安装本地 Exchange 连接器的计算机的要求。
 
 
-|            要求             |                                                                                                                                                                                                        更多信息                                                                                                                                                                                                        |
+|            要求             |                                                                                                                                                                                                        详细信息                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         操作系统          |                                                               Intune 支持在运行任何版本的 Windows Server 2008 SP2 64 位、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 或 Windows Server 2016 的计算机上安装本地 Exchange 连接器。<br /><br />该连接器在任何服务器核心安装上都不受支持。                                                                |
 |         Microsoft Exchange         |                                                                           本地连接器需要 Microsoft Exchange 2010 SP3 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是<strong>新</strong>配置还是<strong>旧</strong>配置，请与帐户管理员联系。                                                                           |
-| 移动设备管理机构 |                                                                                                                              [将移动设备管理机构设置为 Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set)。                                                                                                                               |
+| 移动设备管理机构 |                                                                                                                              [将移动设备管理机构设置为 Intune](mdm-authority-set.md)。                                                                                                                               |
 |              硬件              |                                                                                                                                                     安装连接器的计算机需要 1.6 GHz CPU、2 GB RAM 和 10 GB 可用磁盘空间。                                                                                                                                                      |
 |  Active Directory 同步  |                                                                                      必须[设置 Active Directory 同步](users-add.md)，以便将本地用户和安全组与 Azure Active Directory 的实例同步，然后才能使用连接器将 Intune 连接到 Exchange Server。                                                                                      |
 |        其他软件         |                                                                                                                                           Microsoft .NET Framework 4.5 和 Windows PowerShell 2.0 的完全安装必须安装在托管连接器的计算机上。                                                                                                                                           |
