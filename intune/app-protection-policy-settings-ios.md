@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ff7876ef5c04eb59d1e89ac03b640d4f443cca6
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184737"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728950"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "52184737"
 
 策略设置分为三类：“数据重定位”、“访问要求”和“条件启动”。 在本文中，术语策略托管应用指使用应用保护策略配置的应用。
 
-##  <a name="data-relocation-settings"></a>数据重定位设置
+##  <a name="data-protection-settings"></a>数据保护设置
 
 | Setting | 如何使用 |  
 |------|------| 
@@ -47,7 +47,7 @@ ms.locfileid: "52184737"
 
 
 > [!NOTE]
-> 无数据重定位设置可以控制 iOS 设备上由 Apple 托管的打开方式功能。 要使用管理 Apple 打开方式，请参阅[使用 Microsoft Intune 管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)。
+> 无数据保护设置可以控制 iOS 设备上由 Apple 托管的打开方式功能。 要使用管理 Apple 打开方式，请参阅[使用 Microsoft Intune 管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)。
 
 ## <a name="data-transfer-exemptions"></a>数据传输豁免
 

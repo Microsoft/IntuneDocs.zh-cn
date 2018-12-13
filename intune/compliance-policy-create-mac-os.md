@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184176"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52828988"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>使用 Intune 添加适用于 macOS 设备的设备符合性策略
 
@@ -49,7 +49,8 @@ Intune macOS 设备符合性策略确定 macOS 设备为实现符合性而必须
 ## <a name="create-a-device-compliance-policy"></a>创建设备合规性策略
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. 对于“平台”，选择“macOS”。 选择“设置配置”，然后依次输入“设备运行状况”、“设备属性”和“系统安全”设置。 完成后，请选择“确定”，然后选择“创建”。
+4. 对于“平台”，选择“macOS”。 
+5. 选择“设置配置”，然后依次输入本文中所述的“设备运行状况”、“设备属性”和“系统安全”设置。 完成后，请选择“确定”，然后选择“创建”。
 
 ## <a name="device-health"></a>设备运行状况
 
@@ -59,6 +60,8 @@ Intune macOS 设备符合性策略确定 macOS 设备为实现符合性而必须
 
 - 最低操作系统版本：设备不满足最低 OS 版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，然后访问公司资源。
 - 最高操作系统版本：设备使用的操作系统版本高于规则中指定的版本时，会阻止访问公司资源。 会要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则设备不能访问公司资源。
+- **最低 OS 内部版本**：当 Apple 发布安全更新时，通常会更新内部版本号，而非 OS 版本。 使用此功能可在设备上输入允许的最低内部版本号。
+- **最高 OS 内部版本**：当 Apple 发布安全更新时，通常会更新内部版本号，而非 OS 版本。 使用此功能可在设备上输入允许的最高内部版本号。
 
 ## <a name="system-security-settings"></a>系统安全设置
 

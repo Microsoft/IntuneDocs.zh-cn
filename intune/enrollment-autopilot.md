@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2ef7ebf495511e1d5c04aa8a9c459ba48f3dbb42
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180845"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829098"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 注册 Windows 设备  
 Windows Autopilot 简化了设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -82,8 +82,8 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
     - “自部署(预览)”：（需要最新的 [Windows 10 Insider Preview 内部版本](https://docs.microsoft.com/windows-insider/at-work-pro/)）包含此配置文件的设备不与设备注册用户相关联。 无需用户凭据，即可注册设备。
 5. 在“加入 Azure AD 时的身份”框中，选择“Azure AD 已加入”。
 6. 选择“全新体验(OOBE)”，配置下列选项，再选择“保存”：
-    - “语言(区域)”*****：选择要对设备使用的语言。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
-    - **自动配置键盘**：如果选择了“语言(区域)”，请选择“是”以跳过键盘选择页。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
+    - **语言(区域)**\*：选择要对设备使用的语言。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
+    - **自动配置键盘**\*：如果选择了“语言(区域)”，请选择“是”以跳过键盘选择页。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
     - **最终用户许可协议 (EULA)**：（Windows 10 版本 1709 或更高版本）选择是否向用户显示 EULA。
     - **隐私设置**：选择是否向用户显示隐私设置。
     - **隐藏更改帐户选项（仅限 Windows 预览体验成员）**：选择“隐藏”可防止在公司登录和域错误页上显示更改帐户选项。 要执行此操作，需[在 Azure Active Directory 中配置公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。

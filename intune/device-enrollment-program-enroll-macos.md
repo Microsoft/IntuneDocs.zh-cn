@@ -1,12 +1,12 @@
 ---
-title: 注册 macOS 设备 - 设备注册计划
+title: 注册 macOS 设备 - 设备注册计划或 Apple School Manager
 titleSuffix: Microsoft Intune
 description: 了解如何使用“设备注册计划”注册公司拥有的 macOS 设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180759"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728746"
 ---
-# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 macOS 设备
+# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用“设备注册计划”或 Apple School Manager 自动注册 macOS 设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文旨在帮助你为通过 Apple [设备注册计划 (DEP)](https://deploy.apple.com) 购买的设备设置 macOS 设备注册。 可在不触碰设备的情况下为大量设备设置 DEP 注册。 可以将 macOS 设备直接交付给用户。 用户打开设备时，“设置助理”将运行预先配置的设置，且设备将注册到 Intune 管理。
+本文旨在帮助你为通过 Apple [设备注册计划 (DEP)](https://deploy.apple.com) 或 [Apple School Manager](https://school.apple.com/) 购买的设备设置 macOS 设备注册。 可在不触碰设备的情况下为大量设备使用这些注册。 可以将 macOS 设备直接交付给用户。 用户打开设备时，“设置助理”将运行预先配置的设置，且设备将注册到 Intune 管理。
 
-若要设置 DEP 注册，需同时使用 Intune 和 Apple DEP 门户。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
+若要设置注册，需同时使用 Intune 和 Apple DEP 门户。 创建注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
-DEP 注册不适用于[设备注册管理器](device-enrollment-manager-enroll.md)或 [Apple School Manager](apple-school-manager-set-up-ios.md)。
+DEP 注册和 Apple School Manager 均不适用于[设备注册管理器](device-enrollment-manager-enroll.md)。
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -42,19 +42,19 @@ DEP 注册不适用于[设备注册管理器](device-enrollment-manager-enroll.m
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## <a name="prerequisites"></a>必备条件
-- 通过 [Apple 设备注册计划](http://deploy.apple.com)购买的设备
+- 在 [Apple School Manager](https://school.apple.com/) 或 [Apple 的设备注册计划](http://deploy.apple.com)中购买的设备
 - 序列号列表或采购订单编号。 
 - [MDM 机构](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>获取 Apple DEP 令牌
 
-必须先从 Apple 获得 DEP 令牌 (.p7m) 文件，然后才能通过 DEP 注册 macOS 设备。 此令牌允许 Intune 同步有关公司所拥有的 DEP 设备的信息。 它还允许 Intune 将注册配置文件上传到 Apple 并将这些配置文件上传到设备。
+必须先从 Apple 获得 DEP 令牌 (.p7m) 文件，然后才能通过 DEP 或 Apple School Manager 注册 macOS 设备。 此令牌允许 Intune 同步有关组织所拥有的设备的信息。 它还允许 Intune 将注册配置文件上传到 Apple 并将这些配置文件上传到设备。
 
-可使用 Apple DEP 门户创建 DEP 令牌。 还可以使用 DEP 门户将设备分配到 Intune 进行管理。
+可以使用 Apple 门户创建令牌。 还可以使用 Apple 门户将设备分配到 Intune 进行管理。
 
 > [!NOTE]
-> 如果在迁移到 Azure 前从 Intune 经典门户删除了令牌，Intune 可能会还原已删除的 Apple DEP 令牌。 可在 Azure 门户中再次删除 DEP 令牌。
+> 如果在迁移到 Azure 前从 Intune 经典门户删除了令牌，Intune 可能会还原已删除的 Apple 令牌。 可以从 Azure 门户再次删除令牌。
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>步骤 1。 下载创建令牌所需的 Intune 公钥证书。
 
@@ -66,15 +66,14 @@ DEP 注册不适用于[设备注册管理器](device-enrollment-manager-enroll.m
 
    ![Apple 证书工作区中用于下载公钥的“注册计划令牌”窗格的屏幕截图。](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. 选择“下载公钥”，将加密密钥 (.pem) 文件下载到本地并保存。 .pem 文件用于从 Apple 设备注册计划门户请求信任关系证书。
+3. 选择“下载公钥”，将加密密钥 (.pem) 文件下载到本地并保存。 .pem 文件用于从 Apple 门户请求信任关系证书。
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>步骤 2。 使用密钥从 Apple 下载令牌。
 
-1. 选择“创建 Apple 设备注册计划令牌”，以打开 Apple 部署计划门户，并使用公司 Apple ID 登录。 可使用此 Apple ID 续订 DEP 令牌。
-2.  在 Apple [部署计划门户](https://deploy.apple.com)中，对“设备注册计划”选择“开始”。
-
-3. 在“管理服务器”页上，选择“添加 MDM 服务器”。
+1. 选择“创建 Apple 设备注册计划令牌”或“通过 Apple School Manager 创建令牌”，以打开相应的 Apple 门户，并使用公司 Apple ID 登录。 可使用此 Apple ID 续订令牌。
+2.  对于 DEP，请在 Apple 门户中，选择“设备注册计划” > “管理服务器” > “添加 MDM 服务器”，然后选择“开始使用”。
+3.  对于 Apple School Manager，请在 Apple 门户中，依次选择“MDM 服务器” > “添加 MDM 服务器”。
 4. 输入“MDM 服务器名称”，然后选择“下一步”。 服务器名称供参考，用于识别移动设备管理 (MDM) 服务器。 它不是 Microsoft Intune 服务器的名称或 URL。
 
 5. “添加&lt;服务器名称&gt;”对话框随即打开，提示“上传公钥”。 选择“选择文件…” 以上传 .pem 文件，然后选择“下一步”。
@@ -89,9 +88,7 @@ DEP 注册不适用于[设备注册管理器](device-enrollment-manager-enroll.m
 
 8. 对于“选择操作”，选择“分配到服务器”，选择为 Microsoft Intune 指定的 &lt;服务器名称&gt;，然后选择“确定”。 Apple 门户将指定的设备分配到 Intune 服务器以进行管理，然后显示“分配完成”。
 
-   在 Apple 门户中，转到“部署计划”&gt;“设备注册计划”&gt;“查看分配历史记录”，以查看设备及其 MDM 服务器分配的列表。
-
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步骤 3. 保存用于创建此令牌的 Apple ID。
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步骤 3. 保存用于创建此令牌的 Apple ID
 
 在 Azure 门户中的 Intune 中，提供 Apple ID 供未来参考。
 
@@ -102,7 +99,7 @@ DEP 注册不适用于[设备注册管理器](device-enrollment-manager-enroll.m
 
 ## <a name="create-an-apple-enrollment-profile"></a>创建 Apple 注册配置文件
 
-已经安装了令牌，现在可以为 DEP 设备创建注册配置文件。 设备注册配置文件定义注册时应用于设备组的设置。
+现在，已经安装了令牌，可以为设备创建注册配置文件。 设备注册配置文件定义注册时应用于设备组的设置。
 
 1. 在 Azure 门户中的 Intune 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”。
 2. 选择令牌，选择“配置文件”，然后选择“创建配置文件”。
@@ -185,7 +182,7 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 2. 选择“设置默认配置文件”，在下拉列表中选择配置文件，然后选择“保存”。 此配置文件将应用于所有使用此令牌注册的设备。
 
 ## <a name="distribute-devices"></a>分配设备
-已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 DEP 设备所需的配置文件。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有擦除后才能应用注册配置文件。
+已启用 Apple 和 Intune 之间的管理和同步，并分配了配置文件以允许设备注册。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有擦除后才能应用注册配置文件。
 
 ## <a name="renew-a-dep-token"></a>续订 DEP 令牌  
 1. 转到 deploy.apple.com。  

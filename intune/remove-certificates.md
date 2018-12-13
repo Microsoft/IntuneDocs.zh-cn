@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180980"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579160"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中删除 SCEP 和 PKCS 证书
 
@@ -43,8 +43,7 @@ ms.locfileid: "52180980"
   - 管理员运行[擦除](devices-wipe.md#wipe)操作
   - 管理员运行[停用](devices-wipe.md#retire)操作
   - 从 Azure Active Directory (AD) 组中删除设备
-  - 从组分配中删除符合性策略
-  - 从组分配中删除配置文件
+  - 从组分配中删除证书配置文件
 
 - 出现以下情况时，将吊销 SCEP 证书：
   - 管理员更改或更新 SCEP 配置文件
@@ -53,7 +52,6 @@ ms.locfileid: "52180980"
   - 最终用户取消注册
   - 管理员运行[擦除](devices-wipe.md#wipe)操作
   - 管理员运行[停用](devices-wipe.md#retire)操作
-  - 从组分配中删除符合性策略
 
 - 出现以下情况时，SCEP 证书将保留在设备上（证书不会被吊销，也不会被删除）：
   - 最终用户丢失 Intune 许可证
@@ -78,8 +76,7 @@ ms.locfileid: "52180980"
   - 管理员撤销 Intune 许可证
   - 管理员从 Azure AD 中删除用户或组
   - 管理员更改或更新 PKCS 配置文件
-  - 从组分配中删除配置文件
-  - 从组分配中删除符合性策略 
+  - 从组分配中删除证书配置文件
 
 
 ## <a name="ios-devices"></a>iOS 设备
@@ -92,8 +89,7 @@ ms.locfileid: "52180980"
   - 管理员运行[擦除](devices-wipe.md#wipe)操作
   - 管理员运行[停用](devices-wipe.md#retire)操作
   - 从 Azure Active Directory (AD) 组中删除设备
-  - 从组分配中删除符合性策略
-  - 从组分配中删除配置文件
+  - 从组分配中删除证书配置文件
 
 - 出现以下情况时，将吊销 SCEP 证书：
   - 管理员更改或更新 SCEP 配置文件
@@ -102,7 +98,6 @@ ms.locfileid: "52180980"
   - 最终用户取消注册
   - 管理员运行[擦除](devices-wipe.md#wipe)操作
   - 管理员运行[停用](devices-wipe.md#retire)操作
-  - 从组分配中删除符合性策略
 
 - 出现以下情况时，SCEP 证书将保留在设备上（证书不会被吊销，也不会被删除）：
   - 最终用户丢失 Intune 许可证
@@ -118,8 +113,7 @@ ms.locfileid: "52180980"
   - 管理员运行[停用](devices-wipe.md#retire)操作
 
 - 出现以下情况时，将删除 PKCS 证书：
-  - 从组分配中删除符合性策略
-  - 从组分配中删除配置文件
+  - 从组分配中删除证书配置文件
   
 - 出现以下情况时，将删除根证书：
   - 最终用户取消注册
@@ -143,8 +137,7 @@ ms.locfileid: "52180980"
 - 出现以下情况时，将吊销 SCEP 证书：
   - 管理员运行[停用](devices-wipe.md#retire)操作
   - 从 Azure Active Directory (AD) 组中删除设备
-  - 从组分配中删除符合性策略
-  - 从组分配中删除配置文件
+  - 从组分配中删除证书配置文件
   - 管理员从 Azure Active Directory (AD) 中删除用户或组
   - 管理员更改或更新 SCEP 配置文件
 
@@ -176,8 +169,7 @@ ms.locfileid: "52180980"
   - 管理员撤销 Intune 许可证
   - 管理员从 Azure AD 中删除用户或组
   - 管理员更改或更新 PKCS 配置文件
-  - 从组分配中删除配置文件
-  - 从组分配中删除符合性策略 
+  - 从组分配中删除证书配置文件
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ ms.locfileid: "52180980"
   - 最终用户取消注册
   - 管理员运行[停用](devices-wipe.md#retire)操作
   - 从 Azure Active Directory (AD) 组中删除设备
-  - 从组分配中删除符合性策略
-  - 从组分配中删除配置文件
+  - 从组分配中删除证书配置文件
 
 - 出现以下情况时，将吊销 SCEP 证书：
   - 管理员更改或更新 SCEP 配置文件

@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179161"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389863"
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
@@ -66,9 +66,9 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>应用保护策略的受支持平台
-Intune 应用保护策略平台支持遵循 Office 移动应用程序平台支持。 有关详细信息，请参阅 [Office 系统要求](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)的“移动应用”部分。
+Intune 应用保护策略平台支持与适用于 Android 和 iOS 设备的 Office 移动应用程序平台支持保持一致。 有关详细信息，请参阅 [Office 系统要求](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)的“移动应用”部分。
 
-目前不支持 Windows 设备。 但是，使用 Intune 注册 Windows 10 设备时，可以使用 Windows 信息保护，它提供了类似功能。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
+目前不支持 Windows 设备。 但是，可以使用 Windows 信息保护，它提供了类似功能。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>应用保护策略如何保护应用数据
@@ -146,7 +146,9 @@ MDM 解决方案：
 
 支持多身份的应用允许用户使用不同的帐户（工作和个人）访问相同的应用，但仅当在工作环境中使用这些应用时，才会应用应用保护策略。
 
-例如这样一种情况：用户使用其工作帐户启动 OneDrive 应用。 在工作环境中，他们无法将文件移动到私人存储位置。 之后当用户通过其个人帐户使用 OneDrive 时，可无限制地从个人 OneDrive 复制和移动数据。
+例如个人环境的情况：用户在 Word 中开始一个新文档，这被视为个人环境，因此不会应用 Intune 应用保护策略。 使用公司 OneDrive 帐户保存文档后，会将其视为工作环境，因此会应用 Intune 应用保护策略。
+
+例如工作环境的情况：用户使用其工作帐户启动 OneDrive 应用。 在工作环境中，他们无法将文件移动到私人存储位置。 之后当用户通过其个人帐户使用 OneDrive 时，可无限制地从个人 OneDrive 复制和移动数据。
 
 - 了解支持 Intune 的 [MAM 和多身份](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的应用的详细信息。
 

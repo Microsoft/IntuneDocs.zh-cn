@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182257"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728865"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>在 Intune 中添加适用于 iOS 设备的设备符合性策略
 
@@ -54,7 +54,8 @@ Intune iOS 设备符合性策略确定 iOS 设备为实现符合性而必须满�
 ## <a name="create-a-device-compliance-policy"></a>创建设备合规性策略
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. 对于“平台”，请选择“iOS”。 选择“设置配置”，并依次输入“电子邮件”、“设备运行状况”、“设备属性”和“系统安全”设置。 完成后，请选择“确定”，然后选择“创建”。
+4. 对于“平台”，请选择“iOS”。 
+5. 选择“设置配置”，然后依次输入本主题中所述的“电子邮件”、“设备运行状况”、“设备属性”和“系统安全”设置。 完成后，请选择“确定”，然后选择“创建”。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ Intune iOS 设备符合性策略确定 iOS 设备为实现符合性而必须满�
 
 - **所需的最低操作系统版本**：设备不满足最低操作系统版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 用户可以选择升级其设备。 然后可访问公司资源。
 - **允许的最高操作系统版本**：设备使用的操作系统版本高于规则中指定的版本时，则会阻止访问公司资源。 然后会要求用户联系其 IT 管理员。除非变更规则以允许该操作系统版本，否则该设备不能访问公司资源。
+- **最低 OS 内部版本**：当 Apple 发布安全更新时，通常会更新内部版本号，而非 OS 版本。 使用此功能可在设备上输入允许的最低内部版本号。 此符合性检查支持运行 iOS 8.0 及更高版本的设备。 
+- **最高 OS 内部版本**：当 Apple 发布安全更新时，通常会更新内部版本号，而非 OS 版本。 使用此功能可在设备上输入允许的最高内部版本号。 此符合性检查支持运行 iOS 8.0 及更高版本的设备。
 
 ## <a name="system-security"></a>系统安全
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1cb30c1125add982a40fa2319e1f9b8b9edae1e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed6a79142c2bbe3bd93b02c17e92f4f11f2583f3
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190415"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829192"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,89 @@ ms.locfileid: "52190415"
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-26-2018"></a>2018 年 11 月 26 日当周
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>卸载公司拥有的受监督 iOS 设备上的应用 <!-- 1281677 -->
+
+你可以删除公司拥有的受监督 iOS 设备上的应用。 可以通过以“卸载”分配类型的用户或设备组为目标来删除任何应用。 对于个人或无监督的 iOS 设备，你将继续只能删除使用 Intune 安装的应用。
+
+#### <a name="downloading-intune-win32-app-content----2617320---"></a>下载 Intune Win32 应用内容 <!-- 2617320 -->
+Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用传递优化组件下载 Intune Win32 应用内容。 传递优化提供了在默认情况下处于打开状态的对等功能。 可以通过组策略配置传递优化，以后可以通过 Intune MDM 进行配置。 有关详细信息，请参阅[适用于 Windows 10 的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。 
+
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>最终用户设备和应用内容菜单 <!-- 2771453 -->
+最终用户现在可以使用设备上的上下文菜单和应用来触发常见操作，例如，重命名设备或检查合规性。
+
+#### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>在托管的主屏幕应用中设置自定义背景 <!-- 3041945 -->
+我们将添加一种设置，使你可自定义 Android Enterprise、多应用和展台模式设备上托管的主屏幕应用的背景外观。  要配置“自定义 URL 背景”，请转到的 Azure 门户中的 Intune >“设备配置”。 选择当前设备配置文件或创建新配置文件以编辑其展台设置。
+若要查看展台设置，请参阅 [Android Enterprise 设备限制](device-restrictions-android-for-work.md)。
+
+#### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>应用保护策略分配将保存并应用 <!-- 3104570 -->
+现在可以更好地控制[应用保护策略分配](app-protection-policies.md#deploy-a-policy-to-users)。 选择“分配”以设置或编辑策略的分配时，必须先保存你的配置才能使更改生效。 使用“放弃”以清除你所做的所有更改，而不保存对包括或排除列表进行的任何更改。  通过要求“保存”或“放弃”，仅向你预期的用户分配应用保护策略。
+
+#### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>适用于 Windows 10 及更高版本的新 Microsoft Edge 浏览器设置 <!-- 3174639 -->
+此更新包括用于帮助控制和管理设备上的 Microsoft Edge 浏览器的新设置。 有关这些设置的列表，请参阅[适用于 Windows 10（及更高版本）的设备限制](device-restrictions-windows-10.md#microsoft-edge-browser)。
+
+#### <a name="new-apps-support-with-app-protection-policies----3330037---"></a>具有应用保护策略的新应用支持 <!-- 3330037 -->
+现在可以管理以下具有 [Intune 应用保护策略](app-protection-policies.md)的应用：
+- Stream (iOS)
+- To DO（Android、iOS）
+- PowerApps（Android、iOS）
+- Flow（Android、iOS）
+
+使用应用保护策略来保护这些应用（如其他 Intune 策略托管应用）的公司数据和控制数据传输。 注意：如果 Flow 在控制台中尚不可见，则在创建或编辑应用保护策略时添加 Flow。 若要执行此操作，请使用“+ 更多应用”选项，然后在输入字段中指定 Flow 的“应用 ID”。 对于 Android，请使用“com.microsoft.flow”，对于 iOS，请使用“com.microsoft.procsimo”。
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 应用保护策略用户界面更新 <!-- 3251427 -->
+我们已更改 Intune 应用保护的设置和按钮的标签，以使用户更容易理解每个选项。 一些更改包括：  
+
+- 控件从“是 / 否”控件更改为主要“阻止 / **允许**”和“禁用 / 启用”控件。 标签也会更新。  
+- 将对设置重新设置格式，以在控件中并排显示设置及其标签，从而提供更好的浏览。   
+
+默认设置和设置数目将保持不变，但此更改可使用户更轻松地了解、浏览以及利用设置，以应用所选的应用保护策略。
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>将显示 iOS 和 macOS 的版本号和生成号 <!-- 1892471 -->
+在“设备符合性” > “设备符合性”中，iOS 和 macOS 操作系统版本都会显示，并且可在符合性策略中使用。 此更新包括可为这两个平台配置的生成号。
+Apple 每次发布安全更新时，会保留版本号，更新生成号。 通过在符合性策略中使用生成号，可轻松地检查是否已安装漏洞更新。
+若要使用此功能，请参阅 [iOS](compliance-policy-create-ios.md#device-health) 和 [macOS](compliance-policy-create-mac-os.md#device-properties) 符合性策略。
+
+#### <a name="update-rings-are-being-replaced-with-delivery-optimization-settings-for-windows-10-and-later----2753807---"></a>更新通道被替换为适用于 Windows 10 及更高版本的传递优化设置 <!-- 2753807 -->
+传递优化是适用于 Windows 10 及更高版本的新配置文件。 此功能可简化将软件更新传递到组织中的设备的过程。 此更新还可帮助你使用配置文件传递新更新通道和现有更新通道中的设置。
+若要配置传递优化配置文件，请参阅 [Windows 10（及更高版本）传递优化设置](delivery-optimization-windows.md)。
+
+
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>选择注册状态页上跟踪的应用<!-- 2531007 -->
+可以选择在“注册状态”页面上跟踪的应用。 在安装这些应用之前，用户无法使用该设备。 有关详细信息，请参阅[设置注册状态页](windows-enrollment-status.md)。
+
+#### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>按序列号搜索 Autopilot 设备 <!--2595788 -->
+现在可以按序列号搜索 Autopilot 设备。 若要执行此操作，请选择“设备注册” > “Windows 注册” > “设备”> 在“按序列号搜索”框中键入序列号 > 按 Enter。
+
+#### <a name="track-installation-of-office-proplus---2620217---"></a>跟踪 Office 专业增强版的安装过程<!--2620217 -->
+用户可以使用[注册状态页面](windows-enrollment-status.md)来跟踪 [Office 专业增强版](apps-add-office365.md)的安装进度。 有关详细信息，请参阅[设置注册状态页](windows-enrollment-status.md)。
+
+#### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>针对即将过期的 VPP 令牌或公司门户许可证不足的警报 <!-- 2237572 -->
+如果在 DEP 注册期间使用批量采购计划 (VPP) 预先设置公司门户，则在 VPP 令牌即将过期以及公司门户的许可证不足的情况下，Intune 将发出警报。
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133---"></a>macOS 设备注册计划支持 Apple School Manager 帐户 <!--3006133 -->
+Intune 现在支持对 Apple School Manager 帐户使用 macOS 设备上的设备注册计划。  有关详细信息，请参阅[通过 Apple School Manager 或设备注册计划自动注册 macOS 设备](device-enrollment-program-enroll-macos.md)。
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>新的 Intune 设备订阅 SKU <!--3312071-->
+为了帮助降低企业中管理设备的成本，现在已提供基于设备的新订阅 SKU。 此 Intune 设备 SKU 按月按设备获取许可。 价格因许可计划而异。 可通过直接渠道、企业协议 (EA)、Microsoft 产品和服务计划 (MPSA) 以及开放和云解决方案提供商 (CSP) 获取。
+
+### <a name="device-management"></a>设备管理
+
+#### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>暂时暂停 Android 设备上的展台模式以进行更改 <!-- 3041935 -->
+在多应用展台模式下使用 Android 设备时，IT 管理员可能需要对设备进行更改。 此更新包括新的多应用展台设置，允许 IT 管理员使用 PIN 临时暂停展台模式，并有权访问整个设备。
+若要查看展台设置，请参阅 [Android Enterprise 设备限制](device-restrictions-android-for-work.md)。
+
+#### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>启用 Android Enterprise 展台设备上的虚拟主页按钮 <!-- 3042021 -->
+新的设置将允许用户点击其设备上的软键按钮，以在其多应用展台设备上托管的主屏幕应用和其他已分配的应用之间进行切换。 此设置在用户的展台应用未对“后退”按钮及时做出响应的情况下特别有用。 可为公司拥有的一次性 Android 设备配置此设置。 要启用或禁用“虚拟主页”按钮，请转至 Azure 门户中的 Intune >“设备配置”。 选择当前设备配置文件或创建新配置文件以编辑其展台设置。
+若要查看展台设置，请参阅 [Android Enterprise 设备限制](device-restrictions-android-for-work.md)。
 
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日当周
 
@@ -84,7 +167,7 @@ Intune 的 iOS 电子邮件配置文件支持 iOS 12 Open Authorization (OAuth)�
 
 ### <a name="device-configuration"></a>设备配置
 
-#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>iOS VPN 客户端上的网络访问控制支持 <!-- 1333693 wnready -->
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693---"></a>iOS VPN 客户端上的网络访问控制支持 <!-- 1333693 -->
 通过此更新，可以在为 Cisco AnyConnect、F5 Access 和 Citrix SSO for iOS 创建 VPN 配置文件时启用网络访问控制 (NAC)。 此设置允许将设备的 NAC ID 包含在 VPN 配置文件中。 目前，没有任何支持此新 NAC ID 的 VPN 客户端或 NAC 合作伙伴解决方案，但我们将通过[支持博客文章](ttps://aka.ms/iOS12_and_vpn)发送通知。
 
 要使用 NAC，需要：
@@ -146,9 +229,6 @@ Azure Active Directory 具备可供使用的使用条款功能，而不必再使
   
 设置的功能不会更改，但在处理策略创作流程时会更容易找到它们。
 
-### <a name="new-intune-device-subscription-sku---3312071--"></a>新的 Intune 设备订阅 SKU！--3312071-->
-为了帮助降低企业中管理设备的成本，现在已提供基于设备的新订阅 SKU。 此 Intune 设备 SKU 按月按设备获取许可。 价格因许可计划而异。 可通过直接渠道、企业协议 (EA)、Microsoft 产品和服务计划 (MPSA) 以及开放和云解决方案提供商 (CSP) 获取。
-
 ### <a name="intune-apps"></a>Intune 应用
 
 #### <a name="intune-will-support-a-maximum-package-size-of-8-gb-for-lob-apps----1727158---"></a>对于 LOB 应用，Intune 将支持最大为 8 GB 的包大小 <!-- 1727158 -->
@@ -169,11 +249,11 @@ Intune 在最终用户计算机上安装 Office 时，最终用户将自动获�
 
 对于参与部署的客户，此新体验取代了一组静态预选选项的当前“帮助和支持”体验，这些选项基于打开“帮助和支持”时所在控制台的区域。  
 
-*我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
+我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
 
 有关详细信息，请参阅“如何获取对 Microsoft Intune 的支持”中的[新的“帮助和支持”体验](get-support.md#new-help-and-support-experience)。  
 
-### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>适用于 Intune 的 PowerShell 模块 - 提供预览版 <!-- wnready 951068 -->
+### <a name="powershell-module-for-intune--preview-available----951068---"></a>适用于 Intune 的 PowerShell 模块 - 提供预览版 <!-- 951068 -->
 现在，[GitHub]( https://aka.ms/intunepowershell) 上提供了新 PowerShell 模块的预览版，该模块可通过 Microsoft Graph 提供对 Intune API 的支持。 有关如何使用此模块的详细信息，请参阅该处的自述文件。 
 
 
@@ -355,7 +435,7 @@ Intune 注册、公司门户和托管浏览器现在仅支持运行 iOS 10 及�
 
 #### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>macOS 公司门户安装程序的安装程序文件名称中现在包含版本号 <!--2652728-->
 
-#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>iOS 自动应用更新 <!-- 2729759 wnready -->
+#### <a name="ios-automatic-app-updates----2729759---"></a>iOS 自动应用更新 <!-- 2729759 -->
 自动应用更新适用于设备和用于 iOS 11.0 及更高版本的用户许可应用。
 
 
@@ -733,7 +813,7 @@ Intune 现在可以检索适用于企业的 Microsoft Store (WSfB) 应用的应�
 
 ### <a name="device-enrollment"></a>设备注册
 
-#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>支持无需用户身份验证的 Windows Autopilot 注册 <!-- 1165118 wnready -->
+#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118---"></a>支持无需用户身份验证的 Windows Autopilot 注册 <!-- 1165118 -->
 Intune 现在支持无需用户身份验证的 Windows Autopilot 注册。 这是 Windows Autopilot 部署配置文件中的新选项，“Autopilot 部署模式”设置为“自部署”。  设备必须运行 Windows 10 Insider Preview 内部版本 17672 或更高版本并且具有 TPM 2.0 芯片，才能成功完成此类型的注册。 由于不需要用户身份验证，因此应仅将此选项分配给你具有物理控制权限的设备。
 
 #### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>配置 Autopilot 的 OOBE 时的新语言/区域设置 <!-- 1821766 -->
@@ -781,7 +861,7 @@ AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD �
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>将所有用户和所有设备分配为范围组 <!-- 2196803 -->
 现在可以分配所有用户、所有设备，以及范围组中的所有用户和所有设备。 要执行此操作，请选择“Intune 角色” > “所有角色” > “策略和配置文件管理器” > “分配”> 选择一项分配 >“范围(组)”。
 
-#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>现包括 iOS 和 macOS 设备的 UDID 信息 <!-- 2219806 wnready-->
+#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806---"></a>现包括 iOS 和 macOS 设备的 UDID 信息 <!-- 2219806 -->
 要查看适用于 iOS 和 macOS 设备的唯一设备标识符 (UDID)，请转到“设备” > “所有设备”> 选择一台设备 >“硬件”。 UDID 仅适用于公司设备（如“设备” > “所有设备”> 选择一台设备 >“属性” > “设备所有权”下的设置）。
 
 ### <a name="intune-apps"></a>Intune 应用
@@ -955,7 +1035,7 @@ Intune 管理员可以[删除 AutoPilot 设备](enrollment-autopilot.md#delete-a
 
 有关详细信息，请参阅[发送 macOS 错误](/intune-user-help/send-errors-macos)。
 
-#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Intune 适用于 Windows 10 公司门户应用中的 Fluent 设计系统 <!-- 1195010 WNready -->
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010---"></a>Intune 适用于 Windows 10 公司门户应用中的 Fluent 设计系统 <!-- 1195010 -->
 Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视图](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)。 在这款应用旁边，你会注意到一个静态、垂直的所有顶级页面列表。 单击任意链接，可以快速查看页面并在其之间进行切换。 这是你将看到的众多更新中的第一个更新，是我们持续不断努力成果的一部分，以便在 Intune 中创造更具适应性、更能感同身受且更为熟悉的体验。 若要查看更新后的外观，请转到[应用 UI 中的新增功能](whats-new-app-ui.md)。
 
 ## <a name="week-of-april-16-2018"></a>2018 年 4 月 16 日当周
@@ -1016,6 +1096,27 @@ macOS 公司门户版本 1.3 和 1.4 未成功向 Intune 注册 Jamf 设备。 m
 现在可以使用 Intune 应用策略保护 (APP) 和条件访问 (CA) 保护通过 Outlook Mobile 对本地 Exchange 数据的访问权限。 若要在 Azure 门户中添加或修改应用保护策略，请选择“Microsoft Intune” > “客户端应用” > “应用保护策略”。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)。
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>计划更改：Exchange Online 到 Intune 连接器在 Intune 中不可用 <!-- 3105122 -->
+若要简化 Exchange Online 和条件访问，我们将禁用 Exchange Online 到 Intune“服务间”连接器。 此更改将从 12 月服务更新开始，并于 2019 年 2 月服务更新结束。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+你将收到此消息，因为我们的记录表明，你可能正在你的环境中使用“服务间”连接器功能。 “服务间”连接器支持对适用于 Exchange Online 的 Exchange Active Sync Only 设备进行 Intune 管理，但不支持本地基础结构。 此连接器由于它在控制台中的显示方式而似乎对条件访问 (CA) 是必需的，但在实际情况下，它不是 CA 必需的。 在即将推出 Intune 服务的 12 月更新中，为了在控制台中明确这一点，我们将禁用用于设置新连接器的按钮。 然后，将于 2019 年 2 月禁用所有现有的 Exchange Online 到 Intune 连接器。
+
+如果在你的环境中使用这些连接器，则在 2 月禁用连接器之后将无法在 Intune 中监视或擦除 Exchange Active Sync Only 设备。 在此更改期间预期对最终用户没有任何影响。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
+
+如果要设置“服务间”连接器和 Exchange Active Sync Only 设备，请切换到管理设备的其他方法。 你有下列选择：
+
+- 在移动设备管理 (MDM) 中注册设备
+- 使用 Intune 应用保护策略管理设备
+- 使用此处文档中所述的 Exchange 控件。 
+
+#### <a name="additional-information"></a>其他信息
+[为 Intune 和 Exchange Online 配置 Exchange 服务连接器](https://docs.microsoft.com/intune/exchange-service-connector-configure)
+
+
 
 ### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>更改计划：Intune for Education 的性能更新 <!--1750215-->
 我们将为 Intune for Education 添加一些更新，以便在为用户或设备分配设置时提高速度和可靠性。 作为此更改的一部分，到 11 月底，我们会将你的策略或设置分配移动到新组。
@@ -1090,14 +1191,8 @@ Intune 将删除 Android 4.4 及更高版本设备的可用密码类型“设备
 #### <a name="additional-information"></a>其他信息
 https://aka.ms/PasswordSettings 
 
-### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>更改计划：向 Intune 中添加“在下一次身份验证时更改密码”<!-- 1873216 -->
-在 9 月服务版本中，Intune 计划纳入 Apple 新发布的“在下一次身份验证时更改密码”设置，该设置适用于运行 macOS 10.13 版和更高版本的设备。 在纳入此设置之前，MDM 提供商无法验证设备密码是否已更改为符合规定的密码。 Intune 的配置和符合性策略只验证在下一次更改设备密码后是否将其标记为符合规定。 添加此新的 Apple 功能后，macOS 用户会收到更新密码的请求，即使其密码已符合规定。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-这会影响使用 macOS 设备策略并使用 Intune 或混合 MDM 的环境。 现在 Apple 增添了此项“在下一次身份验证时更改密码”设置，Intune 可在推送密码策略时强制用户更新其密码。 如果设置为阻止访问公司资源直到访问设备被标记为符合规定为止，那么最终用户可能需要在重置密码以后才能访问公司资源，如电子邮件或 SharePoint 站点。 在将来，每当更新配置和符合性密码策略时，都会强制目标用户更新其密码。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-让支持人员知晓。 如果不想强制实施此 macOS 设备策略，建议取消分配或删除现有 macOS 策略。 客户研究表明，大多数客户不受此更改影响。 大多数最终用户在收到“使用密码进行注册或重置其密码以保持符合性”的请求后都会更新其密码。
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 将要求更新应用传输安全<!--748318-->
+Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求。 使用 ATS 对所有通过 HTTPS 的应用通信实施更严格的安全措施。 此更改会影响使用 iOS 公司门户应用的 Intune 客户。 我们将在 [Intune 支持博客](https://aka.ms/compportalats)中介绍详细信息。
 
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>更改计划：Intune 将移动到 TLS 1.2
 从 2018 年 10 月 31 日 开始，Intune 将支持可提供同类最佳加密的传输层安全性 (TLS) 协议版本 1.2，以确保我们的服务在默认情况下更加安全，并与 Microsoft Office 365 等其他 Microsoft 服务保持一致。 Office 已在 MC128929 中传达了此更改。
@@ -1113,13 +1208,6 @@ https://aka.ms/PasswordSettings
 我们建议主动删除环境中的 TLS 1.0 和 1.1 依赖项，并尽量在操作系统级别禁用 TLS 1.0 和 1.1。 立即开始针对迁移到 TLS 1.2 进行规划。 请查看下面的支持博客文章，获取 Intune 现在不支持但仍可接收策略以及未来将无法使用 TLS 版本 1.2 进行通信的设备的列表。 可能需要通知那些最终用户，他们即将失去对公司资源的访问权限。
 
 **其他信息**：[Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)（将 Intune 移动到 TLS 1.2 以进行加密）
-
-
-### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>更改计划：立刻使用 Azure 上的 Intune 进行 MDM 管理<!-- 1227338 -->
-一年前，我们推出了 [Azure 上 Intune 的公共预览版](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)，六个月前，我们推出了 Intune [新管理员体验的正式版](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)。 自 2018 年 8 月 31 日起，我们将面向使用 Intune 独立版的客户关闭经典 Silverlight 控制台中的移动设备管理 (MDM)。 但客户可以使用 [Azure 上的 Intune](https://aka.ms/Intune_on_Azure) 满足 MDM 需求。 如果仍在使用经典控制台进行 MDM，请停止此做法并开始熟悉 Azure 上的 Intune。 我们不希望任何最终用户受到此次更改的影响。 Silverlight 中将保留经典电脑管理。 可在[此处](https://aka.ms/Intune_on_Azure_mdm)详细了解此次更改及其带来的影响。
-
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 将要求更新应用传输安全<!--748318-->
-Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求。 使用 ATS 对所有通过 HTTPS 的应用通信实施更严格的安全措施。 此更改会影响使用 iOS 公司门户应用的 Intune 客户。 我们将在 [Intune 支持博客](https://aka.ms/compportalats)中介绍详细信息。
 
 
 

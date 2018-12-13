@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187287"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829141"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 独立版 - Win32 应用管理（公共预览版）
 
@@ -29,15 +29,11 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 
 ## <a name="prerequisites-for-public-preview"></a>公共预览版的先决条件
 
-- Windows 10 版本 1607 或更高版本（企业版）
+- Windows 10 版本 1607 或更高版本（企业版、专业版和教育版）
 - Windows 10 客户端需要： 
     - 已联接到 Azure Active Directory (AAD) 或混合 Azure Active Directory，且
     - 在 Intune（MDM 托管）中注册
 - 在公共预览版中，Windows 应用程序大小的上限为每个应用 8 GB 
-
-> [!NOTE]
-> 我们目前正在测试 Windows 10 版本 1607 的专业版和教育版，欢迎提供反馈意见。
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>准备 Win32 应用内容以进行上传
 
@@ -228,15 +224,19 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 
 此时已完成将 Win32 应用添加到 Intune 的步骤。 有关应用分配和监视的详细信息，请参阅[使用 Microsoft Intune 将应用分配到组](https://docs.microsoft.com/intune/apps-deploy)和[使用 Microsoft Intune 监视应用信息和分配](https://docs.microsoft.com/intune/apps-monitor)。
 
+## <a name="delivery-optimization"></a>传递优化
+
+Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用传递优化组件下载 Intune Win32 应用内容。 传递优化提供了在默认情况下处于打开状态的对等功能。 可以通过组策略配置传递优化，以后可以通过 Intune MDM 进行配置。 有关详细信息，请参阅[适用于 Windows 10 的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。 
+
 ## <a name="install-required-and-available-apps-on-devices"></a>在设备上安装必需和可用应用
 
 最终用户将看到必需和可用应用安装的 Windows Toast 通知。 下图显示了在设备重启之前应用安装还未完成的 toast 通知示例。 
 
 ![应用安装的 Windows toast 通知的屏幕截图示例](./media/apps-win32-app-08.png)    
 
-下图会通知最终用户，应用正在对设备进行更改。
+下图会通知最终用户，正在对设备进行应用更改。
 
-![通知最终用户应用正在对设备进行更改的屏幕截图示例](./media/apps-win32-app-09.png)    
+![通知最终用户正在对设备进行应用更改的屏幕截图示例](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 应用问题的疑难解答
 客户端计算机上的代理日志通常位于 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可利用 `CMTrace.exe` 查看这些日志文件。 可从 [SCCM 客户端工具](https://docs.microsoft.com/sccm/core/support/tools)下载 CMTrace.exe。 

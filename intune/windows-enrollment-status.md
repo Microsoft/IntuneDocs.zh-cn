@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186065"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729035"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>设置注册状态页
  
@@ -61,6 +61,16 @@ ms.locfileid: "52186065"
 2. 将鼠标悬停在列表中的配置文件上。
 3. 使用三个垂直点，将该配置文件拖到列表中的所需位置。
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>在安装特定应用程序之前阻止访问设备
+
+可以指定在用户可以访问桌面之前需要安装哪些应用。
+
+1. 在 Intune 中，选择“设备注册” > “Windows 注册” > “注册状态页(预览)”。
+2. 选择配置文件 >“设置”。
+3. 有关“显示应用和配置文件安装进度”，请选择“是”。
+4. 有关“在安装所有应用和配置文件之前阻止设备使用”，请选择“是”。
+5. 有关“如果这些所需应用已分配给用户/设备，则在安装这些应用之前阻止设备使用”，请选择“已选择”。
+ 6. 选择“选择应用”> 选择应用 >“选择” > “保存”。
 
 ## <a name="enrollment-status-page-tracking-information"></a>注册状态页跟踪信息
 

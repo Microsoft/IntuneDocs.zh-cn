@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ec3535004dccedb5b0310f4ecc10bb5c93f0ea43
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c9a3146b1ad5f6f7c439d2e49cf534e14d154f76
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186879"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728695"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>什么是 Microsoft Intune 设备配置文件？
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能通过配置文件进行管理。 一些配置文件示例如下： 
 
@@ -34,6 +32,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 本文概述了可为设备创建的各种配置文件。 使用这些配置文件来允许和/或阻止设备上的某些功能。
 
 ## <a name="before-you-begin"></a>在开始之前
+
 若要查看可用功能，请打开 [Azure 门户](https://portal.azure.com)，然后打开 Intune 资源。 
 
 设备配置包括以下选项：
@@ -55,30 +54,45 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - iOS 
 - macOS
 
-
 ## <a name="device-restrictions"></a>设备限制
+
 [设备限制](device-restrictions-configure.md)控制设备上的安全性、硬件、数据共享，以及更多设置。 例如，创建一个可阻止 iOS 设备用户使用设备相机的设备限制配置文件。 
 
 此功能支持：
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows 10
 - Windows 10 协同版
 
+## <a name="delivery-optimization"></a>传递优化
+
+[传递优化](delivery-optimization-windows.md)提供了更好的传递软件更新体验。 这些设置将替换“软件更新” > “Windows 10 更新通道”设置。
+
+使用这些设置来控制如何将软件更新下载到组织中的设备。 例如，可以允许用户获取其自己的更新，或使用设备配置文件中的传递优化云服务获取更新。
+
+此功能支持：
+
+- Windows 10 及更高版本
+
 ## <a name="endpoint-protection"></a>Endpoint Protection
+
 [适用于 Windows 10 的 Endpoint Protection 设置](endpoint-protection-windows-10.md)配置适用于 Windows 10 设备的 BitLocker 和 Windows Defender 设置。
 
 若要使用 Microsoft Intune 载入 Windows Defender 高级威胁防护 (WDATP)，请参阅 [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection)（使用移动设备管理 (MDM) 工具配置终结点）。
 
 此功能支持：
+
 - Windows 10 及更高版本
 
 ## <a name="identity-protection"></a>标识保护
+
 [标识保护](identity-protection-configure.md)控制 Windows 10 和 Windows 10 移动版设备上的 Windows Hello 企业版体验。 配置这些设置，使 Windows Hello 企业版可供用户和设备使用，以及指定设备 PIN 和手势的要求。  
 
 此功能支持：  
+
 - Windows 10 及更高版本
 - Windows Holographic for Business  
 
@@ -87,10 +101,14 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 [展台设置](kiosk-settings.md)配置文件可将设备配置为运行一个应用，或运行多个应用。 还可以自定义展台的其他功能，包括“开始”菜单和 Web 浏览器。
 
 此功能支持：
+
 - Windows 10 及更高版本
 
+展台设置也可用作适用于 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) 和 [ios](device-restrictions-ios.md#kiosk-supervised-only) 的设备限制。
+
 ## <a name="email"></a>Email
-[电子邮件设置](email-settings-configure.md)配置文件创建、分配和监视设备上的 Exchange ActiveSync 电子邮件设置。 邮件配置文件可帮助确保一致性、减少支持呼叫，并让最终用户能够在不进行任何所需设置的情况下在其个人设备上访问公司电子邮件。 
+
+[电子邮件设置](email-settings-configure.md)创建、分配和监视设备上的 Exchange ActiveSync 电子邮件设置。 邮件配置文件可帮助确保一致性、减少支持呼叫，并让最终用户能够在不进行任何所需设置的情况下在其个人设备上访问公司电子邮件。 
 
 此功能支持： 
 
@@ -100,6 +118,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - Windows 10
 
 ## <a name="vpn"></a>VPN
+
 [VPN 设置](vpn-settings-configure.md)将配置文件分配到组织中的用户和设备，从而使其方便安全地连接到网络。 
 
 虚拟专用网络 (VPN) 可让用户安全地远程访问公司网络。 设备使用 VPN 连接配置文件来初始化与 VPN 服务器的连接。 
@@ -114,6 +133,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - Windows 10
 
 ## <a name="wi-fi"></a>Wi-Fi
+
 [Wi-Fi 设置](wi-fi-settings-configure.md)将无线网络设置分配给用户和设备。 分配 WiFi 配置文件后，用户无需自行配置即可访问公司 Wi-Fi。 
 
 此功能支持： 
@@ -125,30 +145,34 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="esim-cellular---public-preview"></a>eSIM 手机网络 - 公共预览版
 
-[eSIM 手机网络配置文件](esim-device-configuration.md)提供了在受管理设备上配置手机网络流量套餐以进行 Internet 和数据访问的功能。  从移动运营商处获取激活码后，可以使用 Intune 导入这些激活码，然后分配给支持 eSIM 的设备。
+[eSIM 手机网络配置文件](esim-device-configuration.md)可让管理员在受管理设备上配置手机网络流量套餐以进行 Internet 和数据访问。 从移动运营商处获取激活码后，使用 Intune 导入这些激活码，然后分配给支持 eSIM 的设备。
 
 此功能支持：
 - Windows 10 Fall Creators Update 及更高版本
 
 ## <a name="education"></a>教育
+
 [教育设置 - Windows 10](education-settings-configure.md) 配置针对 [Windows 参加测验应用](https://education.microsoft.com/gettrained/win10takeatest)的选项。 在配置这些选项时，直到测试完成才可以在设备上运行其他应用。
 
 [教育设置 - iOS](education-settings-configure-ios-shared.md) 使用 iOS Classroom 应用来指导学习，并控制课堂中的学生设备。 可以将 iPad 设备配置为多名学生可以共享一台设备。
 
 ## <a name="edition-upgrade"></a>版本升级
+
 [Windows 10 版本升级](edition-upgrade-configure-windows-10.md)将运行某些 Windows 10 版本的设备自动升级到较新的版本。
 
 此功能支持： 
 - Windows 10 及更高版本
 
 ## <a name="update-policies"></a>更新策略
+
 [ iOS 更新策略](software-updates-ios.md)展示了创建和分配 iOS 策略以在 iOS 设备上安装软件更新的方式。 你还可以查看安装状态。
 
 此功能支持：
 - iOS
 
 ## <a name="certificates"></a>证书
-[证书](certificates-configure.md)配置可分配到设备的受信任证书、SCEP 证书和 PKCS 证书，用于对 Wi-Fi、VPN 和电子邮件配置文件进行身份验证。
+
+[证书](certificates-configure.md)配置已分配到设备的受信任证书、SCEP 证书和 PKCS 证书，用于对 Wi-Fi、VPN 和电子邮件配置文件进行身份验证。
 
 此功能支持： 
 
@@ -159,13 +183,15 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Windows 信息保护配置文件
-[Windows 信息保护](windows-information-protection-configure.md)有助于防范数据泄露，而不会干扰员工体验。 它还有助于防范企业应用和数据在企业自有设备和员工工作使用的个人设备上发生意外数据泄露。 它无需对环境或其他应用进行更改即可实现此目的。
+
+[Windows 信息保护](windows-information-protection-configure.md)有助于防范数据泄露，而不会干扰员工体验。 它还有助于防范企业应用和数据在企业自有设备和员工工作使用的个人设备上发生意外数据泄露。 使用 Windows 信息保护不需要对你的环境或其他应用进行更改。
 
 此功能支持：
 - Windows 10 及更高版本
 
 ## <a name="custom-profile"></a>自定义配置文件
-[自定义设置](custom-settings-configure.md)能够分配未在 Intune 中内置的设备设置。 例如，对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。 
+
+[自定义设置](custom-settings-configure.md)可让管理员分配未在 Intune 中内置的设备设置。 例如，对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。 
 
 此功能支持：
 
@@ -176,4 +202,4 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="manage-and-troubleshoot"></a>管理和故障排除
 
-[管理配置文件](device-profile-monitor.md)以检查设备的状态和分配的配置文件。 还可以通过查看导致冲突的设置以及包含这些设置的配置文件来帮助解决冲突。 [常见问题和解决方法](device-profile-troubleshoot.md)提供了一个问答列表，以帮助使用配置文件，包括删除配置文件时发生的情况以及导致通知发送到设备的原因等。
+[管理配置文件](device-profile-monitor.md)以检查设备的状态和分配的配置文件。 还可以通过查看导致冲突的设置以及包含这些设置的配置文件来帮助解决冲突。 [常见问题和解决方法](device-profile-troubleshoot.md)提供了一个问答，以帮助使用配置文件，包括删除配置文件时发生的情况以及导致通知发送到设备的原因等。

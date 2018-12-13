@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190398"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829175"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -639,21 +639,9 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 如有必要，可以指定颁发机构和 NonBrokerRedirectURI。
 
-使用以下步骤向 Azure AD 注册应用。
-
-在 Azure 门户中：
-1.  转到“Azure Active Directory”边栏选项卡。
-2.  选择“应用注册”，设置应用程序。
-3.  在“API 访问”标题下的“设置”中，选择“所需权限”。 
-4.  单击“+ 添加”。
-5.  单击“选择 API”。 
-6.  在搜索框中，输入“Microsoft 移动应用程序管理”。
-7.  单击选择 API 列表中的“Microsoft 移动应用程序管理”。
-8.  选择“读取和写入用户的应用管理数据”。
-9.  单击“完成”。
-10. 单击“授予权限”，然后单击“是”。 
-
-有关使用 Azure AD 注册应用程序的信息，请参阅[此处](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。 
+使用以下步骤向 Azure AD 注册应用：
+* 有关使用 Azure AD 注册应用程序的信息，请参阅[此处](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)。 
+* 确保执行向应用保护策略 (APP) 服务提供 Android 应用权限的步骤。 使用“向 Intune 应用保护服务提供应用访问权限（可选）”下的 [Intune SDK 入门指南](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)中的说明。 
 
 另请参阅以下[条件访问](#conditional-access)的要求。
 

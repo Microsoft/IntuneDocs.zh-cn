@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185948"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728814"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -74,10 +74,14 @@ ms.locfileid: "52185948"
 
    ![“分配”窗格的屏幕截图，其中突出显示“选择要包括的组”菜单选项](./media/app-protection-policy-add-users.png)
 
-3.  随即将显示“Azure Active Directory”中所有安全组的列表。 可选择要应用此策略的用户组，然后选择“选择”。 选择“选择”会将策略部署到用户。
+3.  随即将显示“Azure Active Directory”中所有安全组的列表。 可选择要应用此策略的用户组，然后选择“选择”。 
 
     ![显示 Azure Active Directory 用户列表的“添加用户组”窗格的屏幕截图](./media/azure-ad-user-group-list.png)
 
+4.  包括和排除组后，选择“保存”以保存配置并将策略部署到用户。 如果在保存配置之前选择“放弃”，则将放弃对“包括”和“排除”选项卡所做的所有更改。   
+ 
+     ![显示保存和放弃选项的屏幕截图](./media/save-assignment.png)
+  
 现已创建策略并将其部署到用户。
 
 该策略仅影响分配有 Microsoft Intune 许可证的用户。 所选安全组中没有已分配的 Intune 许可证的用户不受影响。
@@ -109,9 +113,13 @@ ms.locfileid: "52185948"
 
 2.  在“Intune 应用保护”窗格中，选择“分配”以打开“Intune 应用保护 - 分配”窗格，其中显示了具有此策略的当前用户组的列表。
 
-3.  若要向策略添加新用户组，请在“包括”选项卡中选择“选择要包括的组”，然后选择用户组。 选择“选择”以将策略部署到所选组。
+3.  若要向策略添加新用户组，请在“包括”选项卡中选择“选择要包括的组”，然后选择用户组。 选择“选择”以添加组。 
 
-4.  若要删除用户组，在“排除”选项卡中，选择“选择要排除的组”，然后选择用户组。 选择“选择”以删除用户组。
+4.  若要排除用户组，在“排除”选项卡中，选择“选择要排除的组”，然后选择用户组。 选择“选择”以删除用户组。  
+
+5.  若要删除之前已添加的组，在“包括”或“排除”选项卡上，选择省略号 (...)，然后选择“删除”。 
+
+5.  对分配所做的更改准备就绪后，选择“保存”以保存配置并将策略部署到一组新用户。 如果在保存配置之前选择“放弃”，则将放弃对“包括”和“排除”选项卡所做的所有更改。
 
 ### <a name="to-change-policy-settings"></a>更改策略设置的步骤
 

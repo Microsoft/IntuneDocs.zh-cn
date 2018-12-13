@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182000"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829090"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>为受管理应用添加应用配置策略（无需设备注册）
 
@@ -40,7 +40,7 @@ ms.locfileid: "52182000"
       在 Azure 门户中显示的配置文件说明。
     - **设备注册类型**  
       选择“管理应用”。
-6. 选择“关联的应用”以选择要配置的应用 **** 。 从已同意并与 Intune 同步的应用列表中选择应用。
+6. 选择“关联的应用” 以选择要配置的应用。 从已同意并与 Intune 同步的应用列表中选择应用。
 7. 对于该应用支持的每个配置设置，请键入“名称”和“值”，然后选择省略号 (…)。  
     若要删除配置，请选择省略号 (…)，然后选择“删除”。  
     

@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180929"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630011"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Internet 访问
 
@@ -175,7 +175,12 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>如何配置受保护浏览器的主页
 
-使用此设置可配置用户启动受保护的浏览器或创建新选项卡时看到的主页。使用创建 Microsof Edge 或 Managed Browser 应用配置的过程提供以下键值对：
+使用此设置可配置用户启动受保护的浏览器或创建新选项卡时看到的主页。 
+- 此设置将在 Managed Browser 中显示网页。  Edge 将改为显示主页快捷方式。
+- 主页快捷方式图标显示为搜索控件下的图标。  无法对其进行编辑或删除。
+- 主页快捷方式将显示组织的名称以便进行区分。  它将始终显示为第一个图标。
+
+使用创建 Microsof Edge 或 Managed Browser 应用配置的过程提供以下键值对：
 
 |                                Key                                |                                                           值                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

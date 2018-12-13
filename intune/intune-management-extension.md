@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c4fb7000d808d860494d2af572c821b42fa6d5c
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179399"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579177"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理 PowerShell 脚本以供 Windows 10 设备使用
 Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows 10 设备上运行。 管理扩展对 Windows 10 移动设备管理 (MDM) 功能进行了补充，使你可更轻松地采用新式管理。
@@ -67,6 +67,12 @@ Intune 管理扩展每一小时与 Intune 同步一次。 将策略分配给 Azu
 在“PowerShell 脚本”中，选择要监视的脚本并选择“监视”，然后选择以下报表之一：
    - **设备状态**
    - **用户状态**
+
+## <a name="troubleshoot-powershell-scripts"></a>对 PowerShell 脚本进行故障排除
+
+客户端计算机上的代理日志通常位于 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可以使用 [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) 查看这些日志文件。 
+
+![代理日志的屏幕截图](./media/apps-win32-app-10.png)  
 
 ## <a name="delete-a-powershell-script"></a>删除 PowerShell 脚本
 在“PowerShell 脚本”中，右键单击该脚本，然后选择“删除”。
