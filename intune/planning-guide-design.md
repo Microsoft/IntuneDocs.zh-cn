@@ -1,5 +1,5 @@
 ---
-title: 创建设计
+title: 创建 Microsoft Intune 设计
 titlesuffix: Microsoft Intune
 description: 本文可帮助为 Microsoft Intune 仅限云设计和实现创建设计。
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186488"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112980"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -178,7 +178,7 @@ Intune 提供两个部署选项：独立和混合。 “独立”是指在云中
 
 深入研究设备的以下方面，了解如何正确管理设备。
 
--   支持的设备平台
+-   受支持的设备平台
 
 -   设备
 
@@ -211,7 +211,7 @@ Intune 管理移动设备以保护公司数据的安全，并允许最终用户�
 
 Intune 支持公司拥有的设备和个人设备。 如果设备由设备注册管理器或设备注册计划注册，则该设备被视为公司拥有。 例如，设备可通过 Apple 设备注册计划 (DEP) 注册，被标记为“公司”并置于接收目标公司策略和应用的设备组中。
 
-请参阅[第 3 部分：确定用例场景要求](planning-guide-requirements.md)，了解有关公司和 BYOD 用例的详细信息。
+请参阅[第 3 部分：确定用例方案要求](planning-guide-requirements.md)，详细了解公司和 BYOD 用例。
 
 ### <a name="bulk-enrollment"></a>批量注册
 
@@ -257,15 +257,15 @@ Intune 支持公司拥有的设备和个人设备。 如果设备由设备注册
 
 | **策略名称** | **设备平台** | **设置** | **目标组** |   
 |:---:|:---:|:---:|:---:|
-| 公司 - iOS | iOS | PIN 必需，长度为 6，限制云备份 | 公司设备 |                                                           
-| 公司 - Android | Android | PIN 必需，长度为 6，限制云备份 | 公司设备 |                                                           
-| BYOD - iOS  | iOS | PIN 必需，长度为 4 | BYOD 设备 |
-| BYOD - Android  | Android | PIN 必需，长度为 4 | BYOD 设备 |
+| 公司 - iOS | iOS | PIN 是必需的，长度为：6，限制云备份 | 公司设备 |                                                           
+| 公司 - Android | Android | PIN 是必需的，长度为：6，限制云备份 | 公司设备 |                                                           
+| BYOD - iOS  | iOS | PIN 是必需的，长度为：4 | BYOD 设备 |
+| BYOD - Android  | Android | PIN 是必需的，长度为：4 | BYOD 设备 |
 
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定配置策略需求。
 
-### <a name="profiles"></a>Profiles
+### <a name="profiles"></a>配置文件
 
 使用配置文件来帮助最终用户连接到公司数据。 Intune 支持许多类型的配置文件。 请参阅用例和要求，确定何时配置配置文件。 所有设备配置文件按平台类型分类，且应包含在设计文档中。
 
@@ -344,7 +344,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定电子邮件配置文件需求。
-### <a name="apps"></a>应用
+### <a name="apps"></a>“应用”
 
 可使用 Intune 通过多种方式将应用提供给用户或设备。 应用程序的类型包括软件安装程序应用、来自公共应用商店的应用、来自外部链接的应用或托管 iOS 应用。 除单个应用部署外，还可通过适用于 iOS 和 Windows 的批量采购计划来管理和部署批量采购的应用。 了解详细信息：
 
@@ -352,7 +352,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 -   [适用于企业的 iOS 批量采购计划 (VPP)](vpp-apps-ios.md)
 
--   [适用于企业的 Microsoft 应用商店应用](windows-store-for-business.md)
+-   [适用于企业的 Microsoft Store 应用](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>应用类型要求
 
@@ -375,7 +375,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 应用程序保护策略通过定义应用程序管理公司数据的方式最大限度地减少数据丢失。 Intune 对任何为与移动应用管理搭配使用而构建的应用程序支持应用保护策略。 设计应用保护策略时，需确定将对给定应用中的公司数据设置什么限制。 建议查看[应用保护策略](app-protection-policy.md)如何运作。 下面是一个如何记录现有应用程序以及需要何种保护的示例。
 
-| **应用程序** | **目的** | **平台** | **用例** | **应用保护策略** |
+| 应用程序 | **目的** | **平台** | **用例** | **应用保护策略** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | 可用 | iOS | 公司 - 高级管理人员 | 不能越狱，加密文件 |                                                         
 | Word | 可用 | iOS、Android - Samsung Knox、非 Knox、Windows 10 移动版 | 公司、BYOD | 不能越狱，加密文件 |                                                         
@@ -402,7 +402,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 对于联机访问，需确定条件访问策略的目标平台和用户组。 此外，还需确定是否需要为 Exchange Online 或 Exchange 内部部署安装或配置 Intune 服务间连接器。 了解如何安装和配置 Intune 服务间连接器：<!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange 内部部署](exchange-connector-install.md)
 

@@ -1,11 +1,12 @@
 ---
 title: 需更新 iOS 设备 | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: iOS 设备未安装必需的最低操作系统版本。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 24064cb3cf02f0ac5c0ef94107d047435dec3ba0
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: 685f3a95e525f64ead427c7d2b32a62c7f85b59e
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146916"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031902"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS 设备没有必需的最低操作系统版本
 

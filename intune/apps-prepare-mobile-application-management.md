@@ -1,11 +1,11 @@
 ---
-title: 决定如何使用 Microsoft Intune 为移动应用程序管理准备应用
+title: 让应用可供使用 Microsoft Intune 进行移动应用管理
 description: 本主题中的信息可帮助决定何时应该使用应用包装工具和应用 SDK 来启用自定义业务线应用，以使用移动应用管理策略。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 8841354b268f70634a61040fb06ed857120e9cfc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181966"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112419"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -35,7 +35,7 @@ App Wrapping Tool 主要用于内部业务线 (LOB) 应用。 此工具是一个
 
 应用包装工具**不**支持 Apple App Store 或 Google Play 商店中的应用。 也不支持某些需要开发人员集成的功能（请参阅以下功能对照表）。
 
-有关未在 Intune 中注册的设备上的应用保护策略应用包装工具的详细信息，请参阅[保护未在 Microsoft Intune 中注册的设备上的业务线应用及数据](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)。
+有关未在 Intune 中注册的设备上的应用保护策略应用包装工具的详细信息，请参阅[保护未在 Microsoft Intune 中注册的设备上的业务线应用及数据](apps-add.md)。
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用应用包装工具的原因
 * 应用未内置数据保护功能
@@ -98,7 +98,7 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |阻止屏幕捕捉（仅限于 Android 设备）|X|X|
 |支持未进行设备注册的 MAM|X|X|
 |完全擦除|X|X|
-|选择性擦除 <br></br>**注意：** 对于 iOS 设备，删除管理配置文件时，也会删除该应用。|X||
+|选择性擦除 <br></br>**注意：** 对于 iOS，应用会随管理配置文件一起删除。|X||
 |防止“另存为”|X||
 |目标应用程序配置|X||
 |支持多身份标识|X||
@@ -117,4 +117,4 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 
   - [Android 应用包装工具](app-wrapper-prepare-android.md)</br>
   - [iOS 应用包装工具](app-wrapper-prepare-ios.md)</br>
-  - [使用 SDK 启用针对移动应用程序管理的应用](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  - [使用 SDK 启用针对移动应用程序管理的应用](app-sdk.md)

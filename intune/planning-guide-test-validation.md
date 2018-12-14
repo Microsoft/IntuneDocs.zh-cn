@@ -15,12 +15,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bbcf6e21b9f5dd0474461e88ff54d6dde97590aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179926"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112453"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 测试和验证
 
@@ -28,21 +28,21 @@ ms.locfileid: "52179926"
 
 建议将 IT 支持和支持人员纳入测试阶段，以便创建支持文档，且 IT 支持和支持人员能够轻松提供对该产品的支持。 如果组件或场景在该用例的基础上不起作用，请确保记录必需的更改并附上进行更改的原因。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 建议记录以下内容：
 
--   测试条件：确定针对其进行测量的基准。
+-   **测试条件：** 确定度量依据基准。
 
--   设计组件：必须存在于至少 1 个测试条件。
+-   **设计组件：** 至少必须符合 1 个测试条件。
 
 如果设计组件未存在于至少 1 个符合要求或场景的测试条件中，请考虑该设计组件是否必需。 此外，请确保具备以下项：
 
--   帐户：测试帐户应为许可 EMS 和 Office 365 测试所有用例场景的测试帐户。
+-   **帐户：** 应获得 EMS 和 Office 365 许可且可用于测试所有用例方案的测试帐户。
 
--   设备：测试设备可擦除或重置为出厂默认设置。
+-   **设备：** 可擦除或重置为出厂默认设置的测试设备。
 
--   集成组件：如果需要，应安装和配置所有集成组件（证书连接器、适用于托管 Exchange 的 Intune 服务间连接器和 Intune 本地 Exchange Connector）。
+-   **集成组件：** 如果需要，应安装和配置所有集成组件（证书连接器、适用于托管 Exchange 的 Intune 服务间连接器和 Intune 本地 Exchange 连接器）。
 
 可能需要进行设计更改以适应无法预料的困难。 此外，应完整记录所有设计更改，并随附每项更改的原因。 以下示例演示了可能的更改：
 
@@ -52,7 +52,7 @@ ms.locfileid: "52179926"
 
 -   [了解如何获得 Intune 支持](get-support.md)
 
--   [联系 Microsoft Intune 的辅助电话支持](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [联系 Microsoft Intune 的辅助电话支持](get-support.md)
 
 ## <a name="functional-validation-testing"></a>功能验证测试
 
@@ -62,7 +62,7 @@ ms.locfileid: "52179926"
 
 ## <a name="use-case-validation-testing"></a>用例验证测试
 
-执行用例验证测试，验证场景是否完整且实用。 存在两种类型的用例场景：IT 管理员和最终用户。
+执行用例验证测试，验证场景是否完整且实用。 有以下两种类型的用例方案：IT 管理员和最终用户。
 
 ### <a name="it-admin"></a>IT 管理员
 

@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188047"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112538"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>设置 Windows 设备的注册
 
@@ -34,7 +34,7 @@ Intune 管理员可通过以下方式简化注册：
 - [CNAME 注册](#simplify-windows-enrollment-without-azure-ad-premium)
 - [启用批量注册](windows-bulk-enroll.md)（需要 Azure AD Premium 和 Windows 配置设计器）
 
-两个因素决定你简化 Windows 设备注册的方式：
+两个因素决定了简化 Windows 设备注册的方式：
 
 - **是否使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 随附企业移动性 + 安全性和其他许可计划。
 - **用户将注册什么版本的 Windows 客户端？** <br>可通过添加工作或学校帐户自动注册 Windows 10 设备。 早期版本必须使用公司门户应用进行注册。
@@ -55,10 +55,10 @@ Intune 支持针对运行 Windows 10 创意者更新和加入 Azure Active Direc
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>简化 Windows 注册（不使用 Azure AD Premium）
 为简化注册，可创建将注册请求重定向到 Intune 服务器的域名服务器 (DNS) 别名（CNAME 记录类型）。 否则，尝试连接到 Intune 的用户必须在注册期间输入 Intune 服务器名称。
 
-**步骤 1：创建 CNAME**（可选）<br>
+**第 1 步：创建 CNAME**（可选）<br>
 为公司的域创建 CNAME DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
 
-尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。
+虽然可选择性创建 CNAME DNS 条目，但 CNAME 记录可简化用户的注册。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。
 
 |类型|主机名|指向|TTL|
 |----------|---------------|---------------|---|
@@ -83,12 +83,12 @@ Contoso DNS 管理员应创建以下 CNAME：
 
 对 DNS 记录所做的更改可能最多需要 72 小时才能进行传播。 无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
 
-**步骤 2：验证 CNAME**（可选）<br>
+**第 2 步：验证 CNAME**（可选）<br>
 1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，依次选择“设备注册” > “Windows 注册” > “CNAME 验证”。
 2. 在“域”框中，输入公司网站，然后选择“测试”。
 
-## <a name="tell-users-how-to-enroll-windows-devices"></a>告知用户如何注册 Windows 设备
-告诉用户如何注册其 Windows 设备以及在纳入管理之后会出现的情况。
+## <a name="tell-users-how-to-enroll-windows-devices"></a>告诉用户如何注册 Windows 设备
+告诉用户如何注册 Windows 设备以及在纳入管理之后会出现的情况。
 
 > [!NOTE]
 > 最终用户必须通过 Microsoft Edge 访问公司门户网站，才能查看为特定版本的 Windows 分配的 Windows 应用。 Google Chrome、Mozilla Firefox 和 Internet Explorer 等其他浏览器不支持该类型的筛选。
@@ -98,8 +98,8 @@ Contoso DNS 管理员应创建以下 CNAME：
 >[!IMPORTANT]
 > 如果尚未启用自动 MDM 注册，但是具有已加入到 Azure AD 的 Windows 10 设备，则注册后可在 Intune 控制台中看到两条记录。 确保具有已加入 Azure AD 的设备的用户使用相同的帐户转到“帐户” > “访问工作或学校”和“连接”后，即可停止此操作。 
 
-有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](end-user-educate.md)。
+若要详细了解最终用户任务，请参阅 [Microsoft Intune 最终用户体验的相关资源](end-user-educate.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 Azure 上使用 Intune 管理 Windows 设备时的注意事项](/intune-classic/deploy-use/intune-on-azure)。
+- [在 Azure 上使用 Intune 管理 Windows 设备时的注意事项](intune-legacy-pc-client.md)。

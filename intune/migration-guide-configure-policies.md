@@ -1,5 +1,5 @@
 ---
-title: 在 Intune 迁移过程中配置设备符合性和应用管理策略
+title: 在 Intune 迁移过程中配置设备和应用符合性
 titlesuffix: Microsoft Intune
 description: 本文提供在 Microsoft Intune 迁移过程中配置设备符合性和应用管理策略的必要步骤。
 keywords: ''
@@ -15,12 +15,13 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183785"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031817"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>在迁移到 Microsoft Intune 时，配置设备符合性和应用管理策略
 
@@ -53,15 +54,15 @@ ms.locfileid: "52183785"
 
 资源访问配置文件提供注册设备的证书和访问配置。 如果使用基于证书的身份验证，请[配置证书](certificates-configure.md)。
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>任务 3：创建和部署设备配置文件
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>任务 3：创建和部署设备配置配置文件
 
 需要创建设备配置的配置文件以强制实施设备级设置，例如：禁用照相机、应用商店、配置单应用模式、主屏幕等等。 了解[设备配置文件](device-profiles.md)。
 
 ####  <a name="directly-import-ios-configuration-profiles-optional"></a>直接导入 iOS 配置的配置文件（可选）
 
--   **Apple Configurator iOS 配置文件（iOS 7.1 及更高版本）：** 如果现有的 MDM 解决方案使用 Apple Configurator 配置文件（.mobileconfig 文件），Intune 可以直接导入它们作为自定义配置策略。
+-   **Apple Configurator iOS 配置文件（iOS 7.1 及更高版本）：** 如果现有 MDM 解决方案使用 Apple Configurator 配置文件（.mobileconfig 文件），Intune 可以直接导入它们作为自定义配置策略。
 
--   **iOS 移动应用程序配置策略：** 如果你现有的 MDM 解决方案使用 iOS 移动应用程序配置策略，Intune 可以直接将其导入，前提是它们符合 Apple 针对属性列表指定的 XML 格式。
+-   **iOS 移动应用配置策略：** 如果现有 MDM 解决方案使用 iOS 移动应用配置策略，Intune 可以直接导入它们，前提是它们符合 Apple 针对属性列表指定的 XML 格式。
 
 - 了解如何添加适用于 [iOS](custom-settings-ios.md) 的自定义策略。
 

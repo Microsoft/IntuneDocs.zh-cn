@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187831"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112946"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -67,7 +67,7 @@ ms.locfileid: "52187831"
 
 ## <a name="set-device-type-restrictions"></a>设置设备类型限制
 
-通过执行以下步骤可更改设备类型限制的设置。 这些限制不会影响已注册的设备。 无法使用此功能阻止注册了 [Intune PC 代理](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)的设备。
+通过执行以下步骤可更改设备类型限制的设置。 这些限制不会影响已注册的设备。 无法使用此功能阻止注册了 [Intune PC 代理](manage-windows-pcs-with-microsoft-intune.md)的设备。
 
 1. 登录到 Azure 门户。
 2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
@@ -123,7 +123,7 @@ ms.locfileid: "52187831"
 6. 选择“保存”。
 
 
-用户会看到一条通知，告知他们何时达到了注册设备限制。 例如，iOS 上的通知如下所示：
+在 BYOD 注册期间，用户会看到一条通知，告知他们何时达到了已注册的设备限制。 例如，iOS 上的通知如下所示：
 
 ![iOS 设备限制通知](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

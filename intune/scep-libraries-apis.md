@@ -1,11 +1,12 @@
 ---
-title: 使用 API 载入第三方证书颁发机构 - Microsoft Intune - Azure |Microsoft Docs
+title: 用于载入第三方证书颁发机构的 API
+titlesuffix: Microsoft Intune
 description: 为第三方证书颁发机构 (CA) 添加或集成 SCEP GitHub 解决方案，以向 Microsoft Intune 中的设备颁发 SCEP 证书。 此解决方案包括 Java 和 C# API，它们用于验证、向 Intune 发送成功和失败通知，以及在与 Intune 通信时使用 SSL 套接字工厂。 另请查看测试 SCEP CA 配置的步骤概述。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 054342994a75965b3e1bcb13884af07131ab0122
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181915"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032327"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 将 SCEP 的第三方 CA 添加到 Intune
 
@@ -112,7 +113,7 @@ IntuneScepServiceClient(
     Properties configProperties)
 ```
 
-描述:
+说明：
 
 实例化和配置 `IntuneScepServiceClient` 对象。
 
@@ -154,7 +155,7 @@ void ValidateRequest(
     String certificateRequest)
 ```
 
-描述:
+说明：
 
 验证 SCEP 证书请求。
 
@@ -191,7 +192,7 @@ void SendSuccessNotification(
     String certIssuingAuthority)
 ```
 
-描述:
+说明：
 
 通知 Intune 在处理 SCEP 请求时创建了一个证书。
 
@@ -230,7 +231,7 @@ void SendFailureNotification(
     String errorDescription)
 ```
 
-描述:
+说明：
 
 通知 Intune 在处理 SCEP 请求时出现错误。 不应对此类的方法引发的异常调用此方法。
 
@@ -264,7 +265,7 @@ void SetSslSocketFactory(
     SSLSocketFactory factory)
 ```
 
-描述:
+说明：
 
 使用此方法通知客户端，在与 Intune 通信时必须使用指定的（而非默认的）SSL 套接字工厂。
 

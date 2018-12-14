@@ -1,11 +1,11 @@
 ---
 title: 需启用安全启动 | Microsoft Docs
-description: ''
+description: 需要启用安全启动。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +16,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 32a6ff69bc848bbd0a2174ab4b60de905498d6fa
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: ab949b1bbb7752e20b5c93402b40b1b4dcec3f5a
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150065"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032038"
 ---
 # <a name="you-need-to-enable-secure-boot"></a>需启用安全启动
 

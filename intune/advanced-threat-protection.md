@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180228"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167988"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中启用具有条件访问的 Windows Defender ATP
 
 Windows Defender 高级威胁防护 (ATP) 和 Microsoft Intune 一起协作来帮助免受安全漏洞的威胁，并帮助限制组织中的漏洞影响。
 
-此功能适用于 Windows 10 设备
+此功能适用于：Windows 10 设备
 
 例如，有人向组织内的用户发送包含嵌入式恶意代码的 Word 附件。 在用户打开附件时，将启用内容。 提升的权限攻击随即启动，且来自远程计算机的攻击者对受害者的设备具有管理权限。 然后，攻击者会远程访问用户的其他设备。
 
@@ -89,13 +89,13 @@ Windows Defender 包括载入配置包，该包可与 [Windows Defender ATP 服�
 5. 对于“配置文件类型”，请选择“Windows Defender ATP (Windows 10 桌面版)”。
 6. 配置设置：
 
-  - **Windows Defender ATP 客户端配置包类型**：选择“载入”，将配置包添加到配置文件。 选择“卸载”，从配置文件中删除配置包。
+  - **Windows Defender ATP 客户端配置包类型**：选择“载入”将配置包添加到配置文件。 选择“卸载”，从配置文件中删除配置包。
   
     > [!NOTE] 
-    > 若已正确建立与 Windows Defender ATP 的连接，Intune 将自动载入配置文件。
+    > 如果你已正确建立与 Windows Defender ATP 的连接，Intune 会自动为你载入配置配置文件，且“Windows Defender ATP 客户端配置包类型”设置将不可用。
   
-  - **所有文件的示例共享**：选择“启用”可允许收集示例，并与 Windows Defender ATP 共享。 例如，如果看到可疑文件，可以将其提交至 Windows Defender ATP 进行深入分析。 选择“未配置”不会向 Windows Defender ATP 共享任何事例。
-  - **加快遥测报告频率**：为处于高风险的设备启用此设置，让它可以向 Windows Defender ATP 服务更频繁地报告遥测。
+  - **所有文件的示例共享**：选择“启用”可收集示例，并与 Windows Defender ATP 共享示例。 例如，如果看到可疑文件，可以将其提交至 Windows Defender ATP 进行深入分析。 选择“未配置”不会向 Windows Defender ATP 共享任何事例。
+  - **加快遥测报告频率**：对于处于高风险的设备，选择“启用”此设置，可以更频繁地向 Windows Defender ATP 服务报告遥测。
 
     有关这些 Windows Defender ATP 设置的详细信息，请参阅[使用 System Center Configuration Manager 载入 Windows 10 计算机](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection)。
 
@@ -110,10 +110,10 @@ Windows Defender 包括载入配置包，该包可与 [Windows Defender ATP 服�
 4. 在“平台”中，选择“Windows 10 及更高版本”。
 5. 在“Windows Defender ATP”设置中，将“要求设备不超过计算机风险评分”设置为首选级别：
 
-  - 清除：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
-  - 低：如果设备上仅存在低级别威胁，则该设备符合策略。 具有中等级别或高级别威胁的设备不符合策略。
-  - 中：如果设备上发现的威胁为低级别或中等级别，则该设备符合策略。 如果检测到高级别威胁，则设备会被确定为不合规。
-  - 高：该级别最不安全，允许所有威胁级别。 因此，存在高、中等、低级别威胁的设备被视为符合策略。
+  - **清除**：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
+  - **低**：如果只有低级别威胁，设备符合策略。 具有中等级别或高级别威胁的设备不符合策略。
+  - **中**：如果有低级别或中等级别威胁，设备符合策略。 如果检测到高级别威胁，则设备会被确定为不合规。
+  - **高**：此级别最不安全，允许所有威胁级别。 因此，存在高、中等、低级别威胁的设备被视为符合策略。
 
 6. 选择“确定”和“创建”以保存更改（并创建策略）。
 

@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184822"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031987"
 ---
-# <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>设置 Android 企业展台设备的注册
+# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>设置 Android Enterprise 展台设备的 Intune 注册
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -56,8 +56,8 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 
 1. 转到 [Intune 门户](https://portal.azure.com)，然后选择“设备注册” > “Android 注册” > “展台和任务设备注册”。
 2. 选择“创建”并填写必填字段。
-    - **名称**：键入将配置文件分配给动态设备组时将使用的名称。
-    - **令牌到期日期**：令牌到期的日期。 Google 规定最长为 90 天。
+    - **名称**：键入在将配置文件分配给动态设备组时使用的名称。
+    - **令牌到期日期**：令牌到期日期。 Google 规定最长为 90 天。
 3. 选择“创建”保存该配置文件。
 
 ### <a name="create-a-device-group"></a>创建设备组
@@ -66,8 +66,8 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 
 1. 转到 [Intune 门户](https://portal.azure.com)，然后选择“组” > “所有组” > “新建组”。
 2. 在“组”边栏选项卡中，填写必填字段，如下所示：
-    - **组类型**：安全性
-    - **组名**：键入直观的名称（如中心 1 设备）
+    - **组类型**：安全
+    - **组名称**：键入直观名称（如“出厂 1 设备”）
     - **成员身份类型**：动态设备
 3. 选择“添加动态查询”。
 4. 在“动态成员身份规则”边栏选项卡中，填写如下字段：
@@ -82,8 +82,8 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 
 可替换或删除令牌和 QR 码。
 
-- **替换令牌**：当令牌接近到期日期时，可使用替换令牌生成新令牌/QR 码。
-- **撤销令牌**：可立即使令牌/QR 码到期。 从此时起，令牌/QR 码不再可用。 在以下情况下可使用此选项：
+- **替换令牌**：使用“替换令牌”，可以令牌快要到期时生成新的令牌/QR 码。
+- **撤销令牌**：可以立即让令牌/QR 码到期。 从此时起，令牌/QR 码不再可用。 在以下情况下可使用此选项：
     - 意外地与未经授权的一方共享令牌/QR 码
     - 完成所有注册，不再需要令牌/QR 码
 

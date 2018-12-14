@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183037"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112368"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -29,9 +29,9 @@ ms.locfileid: "52183037"
 
 通过本文了解 Microsoft Intune 中的任何已知问题。
 
-如果要报告此处未列出的 bug，请[打开支持请求](get-support.md)。
+若要报告此处未列出的 bug，请[开启支持请求](get-support.md)。
 
-如果要为 Intune 请求新功能，可以考虑在 [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) 网站上提交报告。
+若要申请新 Intune 功能，不妨填写 [Microsoft Intune 反馈](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console)报告。
 
 ## <a name="migration"></a>迁移
 
@@ -44,23 +44,23 @@ ms.locfileid: "52183037"
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune 旧 PC 客户端功能仅适用于 Silverlight 控制台
 
-通过 Windows MDM 注册可在 Azure 门户上的 Intune 中管理 Windows 10。 有关详细信息，请参阅 [Azure 控制台上的 Intune 和旧 Intune PC 客户端](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure)。
+通过 Windows MDM 注册可在 Azure 门户上的 Intune 中管理 Windows 10。 有关详细信息，请参阅 [Azure 控制台上的 Intune 和旧 Intune PC 客户端](intune-legacy-pc-client.md)。
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>在迁移过程中 Intune 所创建的组可能会影响其他 Microsoft 产品的功能
 
 从 Intune 迁移到 Azure 门户时，可能会看到名为“All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421”的新组。 此组包含 Azure Active Directory 中的所有用户，而不仅仅是 Intune 许可的用户。 如果你希望某些现有用户或新用户不属于任何组的成员，此用法会导致其他 Microsoft 产品出现问题。
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>迁移策略的状态边栏选项卡不起作用
+### <a name="status-blades-for-migrated-policies-dont-work"></a>无法查看已迁移策略的“状态”边栏选项卡
 
 你无法查看从 Azure 门户中的 Azure 经典门户中迁移的策略的状态信息。 但可以继续在经典门户中查看这些策略的报表。 若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
 
-## <a name="apps"></a>应用
+## <a name="apps"></a>“应用”
 
 
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>针对某些 VPP 应用的多个应用安装提示
-对于已安装在最终用户设备上的某些 VPP 应用，你可能会看到多个应用安装提示。 如果你将已上传到 Intune Azure 门户的 VPP 令牌的“自动进行应用更新”选项设置为“开”，则会出现此问题。    
+对于已安装在最终用户设备上的某些 VPP 应用，可能会看到多个应用安装提示。 如果你将已上传到 Intune Azure 门户的 VPP 令牌的“自动进行应用更新”选项设置为“开”，则会出现此问题。    
 
-若要解决此问题，可禁用 VPP 令牌的“自动进行应用更新”选项。 若要执行此操作，请在 Azure 门户中打开 Microsoft Intune。 从 Intune 中选择“客户端应用” > “iOS VPP 令牌”。 接下来，选择已部署受影响应用的 VPP 令牌并选择“编辑” > “自动进行应用更新” > “关” > “保存”。 或者，可停止将受影响的应用部署为 VPP 应用，此操作可停止提示。    
+若要解决此问题，可以为 VPP 令牌禁用“自动应用更新”选项。 若要执行此操作，请在 Azure 门户中打开 Microsoft Intune。 从 Intune 中选择“客户端应用” > “iOS VPP 令牌”。 接下来，选择已部署受影响应用的 VPP 令牌并选择“编辑” > “自动进行应用更新” > “关” > “保存”。 或者，可停止将受影响的应用部署为 VPP 应用，此操作可停止提示。    
 
 这是当前版本中的一个已知问题。 我们即将推出解决此问题的修补程序。 实现此修补程序得之后，你的用户将不再看到多个应用安装提示。
 

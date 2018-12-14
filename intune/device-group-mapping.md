@@ -1,5 +1,5 @@
 ---
-title: 如何在 Intune 中将设备分类为组
+title: 在 Intune 中将设备分类到组中
 titleSuffix: Microsoft Intune
 description: 了解如何将设备分类为组以便更轻松地管理。
 keywords: ''
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189510"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031749"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>将设备分类为组以便更轻松地管理
+# <a name="categorize-devices-into-groups"></a>将设备分类到组中
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用 Microsoft Intune 设备类别，根据定义的类别自动向组添加设备。 借助此功能可以更轻松地管理这些设备。
+若要更轻松地管理设备，可使用 Microsoft Intune 设备类别，以根据定义的类别自动向组添加设备。
 
 设备类别使用以下工作流：
 1. 创建可供用户在注册设备时选择的类别。
@@ -51,7 +51,7 @@ ms.locfileid: "52189510"
 
 在步骤 2 中创建 Azure Active Directory (Azure AD) 安全组时将使用设备类别名称。
 
-### <a name="step-2-create-azure-active-directory-security-groups"></a>步骤 2：创建 Active Directory 安全组
+### <a name="step-2-create-azure-active-directory-security-groups"></a>步骤 2：创建 Azure Active Directory 安全组
 在此步骤中，你将在 Azure 门户中基于设备类别和设备类别名称创建动态组。
 
 若要继续，请参阅 Azure AD 文档中的[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)。

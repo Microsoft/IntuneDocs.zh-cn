@@ -1,7 +1,7 @@
 ---
 title: 使用设备注册管理员帐户注册设备
 titlesuffix: Microsoft Intune
-description: 使用设备注册管理器帐户在 Intune 中注册设备。 "
+description: 使用设备注册管理器帐户在 Intune 中注册设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,15 +15,15 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 1d3e01cdbc7c9e30034e83e9609c0df5f031c18a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184907"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031834"
 ---
-# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>通过使用设备注册管理员帐户注册设备
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用设备注册管理员帐户在 Intune 中注册设备
 
 通过使用设备注册管理器 (DEM) 帐户，可以使用单个 Azure Active Directory 帐户注册多达 1,000 个移动设备。 DEM 是一种 Intune 权限，可以应用于 AAD 用户帐户，并允许用户最多注册 1,000 个设备。 将设备交付给设备的用户之前，使用 DEM 帐户注册和准备设备非常有用。
 

@@ -1,12 +1,12 @@
 ---
-title: 使用 Windows Autopilot 为已加入混合 Active Directory 的设备设置 Intune 注册
-titleSuffix: Microsoft Intune
-description: 使用 Windows Autopilot 在 Intune 中注册已加入混合 Active Directory 的设备。
+title: 注册混合 Active Directory 加入设备 - Windows Autopilot
+titleSuffix: ''
+description: 使用 Windows Autopilot 在 Microsoft Intune 中注册混合 Active Directory 加入设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189956"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112436"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot（预览版）部署已加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置已加入混合 Azure Active Directory 的设备。 为此，请执行以下步骤。
@@ -46,7 +46,7 @@ ms.locfileid: "52189956"
 
    ![Azure 门户的屏幕截图](./media/auto-enroll-azure-main.png)
 
-2. 选择“移动性(MDM 和 MAM)”。
+2. 选择“移动性 (MDM 和 MAM)”。
 
    ![Azure 门户的屏幕截图](./media/auto-enroll-mdm.png)
 
@@ -58,17 +58,17 @@ ms.locfileid: "52189956"
 
    ![Azure 门户的屏幕截图](./media/auto-enroll-scope.png)
 
-5. 对以下 URL 使用默认值：
+5. 对下列 URL 使用默认值：
     - **MDM 使用条款 URL**
     - **MDM 发现 URL**
     - **MDM 符合性 URL**
-6. 选择 **“保存”**。
+6. 选择“保存”。
 
 ## <a name="increase-the-computer-account-limit-in-the-organizational-unit"></a>增加组织单位中的计算机帐户限制
 
 可使用适用于 Active Directory 的 Intune Connector 在本地 Active 目录域中创建 Autopilot 注册计算机。 托管 Intune Connector 的计算机必须有权在域中创建计算机对象。 
 
-在某些域中，计算机未被授予创建计算机的权限。 或者管理员可能不希望增加域范围内的计算机帐户限制。 在这些情况下，可以将权限委派给创建已加入混合 Azure AD 的设备的组织单位。
+在某些域中，计算机未被授予创建计算机的权限。 此外，域内置有一个限制（默认值为 10），未获得创建计算机对象的委托权限的所有用户和计算机都要遵循此限制。 因此，必须向在创建混合 Aure AD 加入设备的组织单位上托管 Intune 连接器的计算机委托权限。
 
 授予创建计算机权限的组织单位必须与以下内容匹配：
 - 在域加入配置文件中输入的组织单位
@@ -122,7 +122,7 @@ ms.locfileid: "52189956"
 
 ### <a name="configure-web-proxy-settings"></a>配置 Web 代理设置
 
-如果网络环境中有 Web 代理，请按照此处的说明进行操作，以使适用于 Active Directory 的 Intune Connector 正常运行：[使用现有的本地代理服务器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)。
+如果网络环境中有 Web 代理，请按照此处的说明操作，让适用于 Active Directory 的 Intune Connector 能够正常运行：[使用现有本地代理服务器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)。
 
 
 ## <a name="create-a-device-group"></a>创建设备组
@@ -137,7 +137,7 @@ ms.locfileid: "52189956"
     - 若要创建包括所有具有特定采购订单 ID 的 Autopilot 设备的组，请键入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     在“高级规则”框中添加代码后，，选择“保存”。
-5. 选择“创建”。  
+5. 选择 **“创建”**。  
 
 ## <a name="register-your-autopilot-devices"></a>注册 Autopilot 设备
 
@@ -194,7 +194,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 2. 在“注册状态页”边栏选项卡中，选择“默认” > “设置”。
 3. 有关“显示应用和配置文件安装进度”，请选择“是”。
 4. 根据需要配置其他选项。
-5. 选择 **“保存”**。
+5. 选择“保存”。
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>创建并分配域加入配置文件
 
@@ -203,7 +203,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
    - **名称**：输入新配置文件的描述性名称。
    - **说明**：输入配置文件的说明。
    - **平台**：选择“Windows 10 及更高版本”。
-   - **配置文件类型**：选择“域加入(预览)”。
+   - **配置文件类型**：选择“域加入(预览版)”。
 3. 选择“设置”，然后提供“计算机名称前缀”、“域名”和“组织单位”（可选）。 
 4. 选择“确定” > “创建”。 配置文件随即创建并显示在列表中。
 5. 要分配配置文件，请按照[分配设备配置文件](device-profile-assign.md#assign-a-device-profile)下的步骤操作。 

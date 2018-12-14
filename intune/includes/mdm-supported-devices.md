@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 10.0 及更高版本
-- Mac OS X 10.11 及更高版本（在 2018 年 12 月，支持的版本将更改为 10.12 及更高版本）
+- Mac OS X 10.12 及更高版本
 
 ### <a name="google"></a>Google
 - Android 4.4 及更高版本（包括 Samsung Knox Standard 4.4 及更高版本）
@@ -26,8 +26,8 @@
 - Windows Phone 8.1、Windows 8.1 RT、运行 Windows 8.1（持续模式）的电脑
 
 > [!NOTE]
-> Intune 不能用于管理 Windows Server 操作系统。
+> Intune 不能用于管理 Windows Server 操作系统。 Home SKU 并不支持所有 Intune 功能
 
-拥有企业移动性 + 安全性 (EMS) 的客户还可以[使用 Azure Active Directory (Azure AD) 注册 Windows 10 设备](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)。
+拥有企业管理 + 安全性 (EMS) 的客户还可以使用 [Azure Active Directory (Azure AD) 注册 Windows 10 设备](/intune/windows-enroll.md)。
 
 

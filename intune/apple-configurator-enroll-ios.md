@@ -1,5 +1,5 @@
 ---
-title: 注册 iOS 设备 - Apple Configurator 设置助理
+title: iOS 设备注册 - Apple Configurator 设置助理
 titleSuffix: Microsoft Intune
 description: 了解如何通过 Apple Configurator 使用设置助理来注册公司拥有的 iOS 设备。
 keywords: ''
@@ -15,15 +15,15 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: c36a87f6b0bd3e869275f5ac8089cc4fa4926698
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 6a49ee917540c9378f69dc6a025fbe5f8429767c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180357"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112810"
 ---
-# <a name="enroll-ios-devices-with-apple-configurator"></a>使用 Apple Configurator 注册 iOS 设备
+# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>通过 Apple Configurator 设置 iOS 设备注册
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -129,8 +129,8 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 9. 在“配置 iOS 设置助理”上，选择要提供给用户的步骤，然后选择“准备”。 如果出现系统提示，请进行身份验证以更新信任设置。  
 10. iOS 设备完成准备后，断开 USB 电缆的连接。  
 
-### <a name="distribute-devices"></a>分配设备
-设备现已准备好进行企业注册。 关闭设备，并将它们分发给用户。 用户打开其设备时，设置助理启动。
+### <a name="distribute-devices"></a>分发设备
+设备现已准备好企业注册。 关闭设备，并将它们分发给用户。 用户打开其设备时，设置助理启动。
 
 用户收到设备后，必须完成设置助理。 配置了用户关联的设备可以安装和运行公司门户应用，以下载应用和管理设备。
 

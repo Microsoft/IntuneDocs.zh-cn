@@ -1,6 +1,6 @@
 ---
-title: 使用 Microsoft Intune 进行条件访问
-titlesuffix: ''
+title: 条件访问方案
+titlesuffix: Microsoft Intune
 description: 了解 Intune 条件访问通常如何用于基于设备和基于应用的条件访问。
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187661"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112470"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
@@ -45,14 +45,14 @@ Intune 提供了设备符合性策略功能，可评估设备的符合性状态�
 
 -   了解有关 [Intune 设备符合性](device-compliance.md)的详细信息。
 
--   了解有关[通过 Intune 使用条件性访问保护电子邮件、Office 365 和其他服务](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)的详细信息。
+-   了解有关[通过 Intune 使用条件性访问保护电子邮件、Office 365 和其他服务](app-based-conditional-access-intune.md)的详细信息。
 
 > [!NOTE]
 > 在 Android 设备上为 Sharepoint Online 启用基于设备的访问时，用户必须在注册的设备上打开“启用浏览器访问”选项，如下所示：
-> 1. 启动**公司门户应用**。
+> 1. 启动“公司门户应用”。
 > 2. 从三个点 (…) 或硬件菜单按钮转到“设置”页。
 > 3. 按“启用浏览器访问”按钮。 
-> 4. 在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
+> 4. 在 Chrome 浏览器中注销 Office 365 并重新启动 Chrome。
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Exchange 内部部署的条件性访问
 
@@ -125,7 +125,7 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 
 在基于设备风险的条件性访问决策中，Intune 和移动威胁防御集成发挥着重要的作用。
 
--   了解 [Intune 移动威胁防御](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense)的详细信息。
+-   了解 [Intune 移动威胁防御](mobile-threat-defense.md)的详细信息。
 
 ### <a name="conditional-access-for-windows-pcs"></a>Windows 电脑的条件访问
 
@@ -133,11 +133,11 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 
 #### <a name="corporate-owned"></a>公司拥有的设备
 
--   加入本地 AD 域：此选项通常适用于那些已经非常习惯通过 AD 组策略和/或 System Center Configuration Manager 管理其电脑的组织。
+-   **本地 AD 域加入：** 此选项通常适用于已经非常习惯通过 AD 组策略和/或 System Center Configuration Manager 管理 PC 的组织。
 
--   加入 Azure AD 域和 Intune 管理：这种方案通常适用于选择自有设备 (CYOD)，以及漫游笔记本电脑的情况，这些设备几乎不连接企业网络。 设备加入 Azure AD 并注册 Intune，这会删除本地 AD 和域控制器上的任何依赖项。 这可在访问公司资源时用作条件性访问标准。
+-   **Azure AD 域加入和 Intune 管理：** 这种方案通常适用于自带设备办公 (CYOD)，以及漫游笔记本电脑的情况，这些设备几乎不连接企业网络。 设备加入 Azure AD 并注册 Intune，这会删除本地 AD 和域控制器上的任何依赖项。 这可在访问公司资源时用作条件性访问标准。
 
--   **加入 AD 域和 System Center Configuration Manager：** 截止到当前的分支，System Center Configuration Manager 提供了可以评估特定符合性标准的条件性访问功能（除了已加入域的电脑）：
+-   **AD 域加入和 System Center Configuration Manager：** 自当前分支起，System Center Configuration Manager 提供了可以评估特定符合性标准的条件访问功能（除了能够成为域加入 PC 之外）：
 
     -   电脑是否已加密？
 
@@ -147,7 +147,7 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 
 #### <a name="bring-your-own-device-byod"></a>自带设备办公 (BYOD)
 
--   **工作区加入和 Intune 管理：** 用户可加入其个人设备以访问公司资源和服务。 你可以使用“工作区加入”并将设备注册到 Intune 以接收设备级别的策略，这是评估条件性访问标准的另一个选项。
+-   **工作区加入和 Intune 管理：** 用户可以加入自己的个人设备，以访问公司资源和服务。 你可以使用“工作区加入”并将设备注册到 Intune 以接收设备级别的策略，这是评估条件性访问标准的另一个选项。
 
 ## <a name="app-based-conditional-access"></a>基于应用的条件性访问
 

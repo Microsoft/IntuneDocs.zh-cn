@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182102"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112847"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182102"
 
 使用适用于 iOS 的 Microsoft Intune 应用包装工具启用内部 iOS 应用的 Intune 应用保护策略，无需更改应用自身的代码。
 
-该工具是在应用周围创建包装程序的 macOS 命令行应用程序。 处理应用后，通过向其部署[应用保护策略](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)可更改应用功能。
+该工具是在应用周围创建包装程序的 macOS 命令行应用程序。 处理应用后，通过向其部署[应用保护策略](app-protection-policies.md)可更改应用功能。
 
 若要下载该工具，请参阅 GitHub 上的 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)（适用于 iOS 的 Microsoft Intune 应用包装工具）。
 
@@ -102,7 +102,7 @@ ms.locfileid: "52182102"
 
    ![Apple 开发者门户](./media/iOS-signing-cert-1.png)
 
-5. 安装完成后，单击 ![“Apple 开发者门户”](./media/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 证书。
+5. 单击 ![“Apple 开发者门户”](./media/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 证书。
 
 6. 在“生产”下选择创建“内部和临时”证书。
 
@@ -127,7 +127,7 @@ ms.locfileid: "52182102"
 
     ![在 Keychain Access 应用中向证书颁发机构请求证书](./media/iOS-signing-cert-6.png)
 
-12. 返回到 Apple 开发者站点。 单击“继续”。 然后上传 CSR 文件。
+12. 返回到 Apple 开发者站点。 单击“继续” 。 然后上传 CSR 文件。
 
 13. Apple 将生成签名证书。 下载签名证书并将其保存到 macOS 计算机上容易记住的位置。
 
@@ -157,7 +157,7 @@ ms.locfileid: "52182102"
 
    ![选择内部预配配置文件](./media/iOS-provisioning-profile-1.png)
 
-5. 单击“继续”。 请确保将以前生成的签名证书链接到预配配置文件。
+5. 单击“继续” 。 请确保将以前生成的签名证书链接到预配配置文件。
 
 6. 请按照此步骤将配置文件（扩展名为 .mobileprovision）下载到 macOS 计算机。
 
@@ -186,7 +186,7 @@ ms.locfileid: "52182102"
 > [!NOTE]
 > 如下表所示，某些参数是可选的。
 
-**示例：** 以下示例命令在名为 MyApp.ipa 的应用上运行应用包装工具。 指定签名证书的预配配置文件和 SHA-1 哈希，并用于对已包装的应用签名。 创建输出应用 (MyApp_Wrapped.ipa)，且将其存储在桌面文件夹中。
+**示例：** 下面的示例命令在 MyApp.ipa 应用中运行应用包装工具。 指定签名证书的预配配置文件和 SHA-1 哈希，并用于对已包装的应用签名。 创建输出应用 (MyApp_Wrapped.ipa)，且将其存储在桌面文件夹中。
 
 ```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -197,7 +197,7 @@ ms.locfileid: "52182102"
 
 |属性|如何使用它|
 |---------------|--------------------------------|
-|**-i**|`<Path of the input native iOS application file>`。 文件名必须以 .app 或 .ipa 结尾。 |
+|**-i**|`<Path of the input native iOS application file>`”。 文件名必须以 .app 或 .ipa 结尾。 |
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
@@ -214,17 +214,17 @@ ms.locfileid: "52182102"
 
 在 IntuneMAMPackager/Contents/MacOS 文件夹中，使用文本编辑器或 Xcode 打开 `Parameters.plist`（一个空白 plist 模板）。 为以下项输入参数：
 
-| Plist 项 |  默认值| 注意 |
+| Plist 项 |  默认值| 注释 |
 |------------------|--------------|-----|
-| 输入应用程序包路径  |empty| 与 -i 相同|
-| 输出应用程序包路径 |empty| 与 -o 相同|
-| 预配配置文件路径 |empty| 与 -p 相同|
-| SHA-1 证书哈希 |empty| 与 -c 相同|
+| 输入应用程序包路径  |空| 与 -i 相同|
+| 输出应用程序包路径 |空| 与 -o 相同|
+| 预配配置文件路径 |空| 与 -p 相同|
+| SHA-1 证书哈希 |空| 与 -c 相同|
 | 已启用详情 |false| 与 -v 相同|
 | 删除缺失的权利 | false| 与 -c 相同|
 | 防止默认生成 |false | 相当于使用不带参数的 -b|
 |生成字符串替代 | empty| 已包装输出应用的自定义 CFBundleVersion |
-|扩展预配配置文件路径 | empty| 应用的一系列扩展预配配置文件。
+|扩展预配配置文件路径 | 空| 应用的一系列扩展预配配置文件。
 
 
 将 IntuneMAMPackager 与 plist 一起作为唯一参数运行：
@@ -260,7 +260,7 @@ ms.locfileid: "52182102"
 ### <a name="error-messages"></a>错误消息
 如果应用包装工具失败，将在控制台显示以下错误消息之一：
 
-|错误消息|更多信息|
+|错误消息|详细信息|
 |-----------------|--------------------|
 |你必须指定有效的 iOS 配置文件。|配置文件可能无效。 检查以确保具有正确的设备权限，以及针对开发或分发的正确配置文件。 配置文件可能已过期。|
 |指定有效的输入应用程序名称。|确保你指定的输入应用程序名称正确。|
@@ -316,7 +316,7 @@ ms.locfileid: "52182102"
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>适用于 iOS 的应用包装工具支持的功能
 
-|功能|描述|推荐指南|
+|功能|说明|推荐指南|
 |--------------|---------------|------------------------|
 |应用组|使用应用组可让多个应用访问共享容器，并支持应用之间的其他进程间通信。<br /><br />若要启用应用组，请打开“功能”窗格，并单击“应用组”中的“开”。 你可以添加应用组，也可以选择现有应用组。|使用应用组时，请使用反向 DNS 表示法：<br /><br />*group.com.companyName.AppGroup*|
 |后台模式|启用后台模式后，iOS 应用可以在后台继续运行。||
@@ -439,5 +439,5 @@ ms.locfileid: "52182102"
 
 ### <a name="see-also"></a>另请参阅
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)</br>
-- [使用 Microsoft Intune 策略管理设备上的设置和功能](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [使用 SDK 启用针对移动应用程序管理的应用](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [使用 SDK 启用针对移动应用程序管理的应用](app-sdk.md)

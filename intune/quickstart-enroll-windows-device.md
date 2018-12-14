@@ -5,22 +5,22 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183462"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977331"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>快速入门：注册 Windows 10 设备
 
@@ -29,7 +29,7 @@ ms.locfileid: "52183462"
 在 Microsoft Intune 中注册设备可使 Windows 10 设备获取访问组织安全数据（包括电子邮件、文件和其他资源）的权限。 这适用于 Windows 10 桌面设备和 Windows 10 移动设备。 注册设备有助于为你和你的组织确保这类访问的安全，且有助于将工作数据与个人数据分开。
 
 > [!TIP]
-> 了解[在 Intune 中注册设备](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)后会发生的情况，以及这对[设备上的信息](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)的意义。
+> 了解[在 Intune 中注册设备](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)后会发生的情况，以及这对[设备上的信息](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)的意义。
 
 如果没有 Intune 订阅，请[注册免费试用帐户](free-trial-sign-up.md)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "52183462"
 4. 请确认 Windows 10 版本为 1607 或更高版本。
 
     > [!IMPORTANT]
-    > 本快速入门中提供的步骤适用于 Windows 10 版本1607 或更高版本，如果你的版本是 1511 或更低版本，请继续[这些步骤](/intune-user-help/enroll-your-w10-device-your-account.md)。
+    > 本快速入门中提供的步骤适用于 Windows 10 版本1607 或更高版本，如果你的版本是 1511 或更低版本，请继续[这些步骤](/intune-user-help/enroll-your-w10-device-your-account)。
 
 ## <a name="enroll-windows-10-desktop"></a>注册 Windows 10 桌面版
 
@@ -85,7 +85,7 @@ ms.locfileid: "52183462"
 
    ![新添加的帐户的屏幕截图](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    如果执行了之前的步骤，但仍无法访问你的工作或学校电子邮件帐户和文件，请按照[看到“访问工作单位或学校”时要执行的故障排除步骤](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)中的步骤操作。
+    如果执行了之前的步骤，但仍无法访问你的工作或学校电子邮件帐户和文件，请按照[看到“访问工作单位或学校”时要执行的故障排除步骤](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)中的步骤操作。
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>确认 Intune 中的设备注册
 
@@ -97,13 +97,13 @@ ms.locfileid: "52183462"
 
 ## <a name="clean-up-resources"></a>清理资源
 
-要取消注册 Windows 设备，请参阅[从管理删除 Windows 设备](/intune-user-help/unenroll-your-device-from-intune-windows.md)。
+要取消注册 Windows 设备，请参阅[从管理删除 Windows 设备](/intune-user-help/unenroll-your-device-from-intune-windows)。
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门中，你已了解如何如何将 Windows 10 设备注册到 Intune 中。 还可以了解在所有平台上注册设备的其他方法。 有关将设备与 Intune 配合使用的详细信息，请参阅[使用托管设备完成工作](/intune-user-help/use-managed-devices-to-get-work-done.md)。
+在本快速入门中，你已了解如何如何将 Windows 10 设备注册到 Intune 中。 还可以了解在所有平台上注册设备的其他方法。 有关将设备与 Intune 配合使用的详细信息，请参阅[使用托管设备完成工作](/intune-user-help/use-managed-devices-to-get-work-done)。
 
 要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [快速入门：为 Android 设备设置所需的密码长度](quickstart-set-password-length-android.md)
+> [快速入门：设置 Android 设备的必需密码长度](quickstart-set-password-length-android.md)

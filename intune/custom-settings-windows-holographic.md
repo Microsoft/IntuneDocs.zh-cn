@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune 中 Windows Holographic for Business 设备的自定义设置 - Azure | Microsoft Docs
+title: 自定义设置 - Windows Holographic for Business 设备 - Microsoft Intune
 description: 在 Microsoft Intune 中为运行 Windows Holographic for Business（包括 Microsoft Hololens）的设备添加或创建自定义配置文件，以使用 OMA-URI 设置。 可以设置 AllowFastReconnect、AllowVPN、AllowUpdateService、UpdateServiceURL、RequireUpdatesApproval、ApprovedUpdates 和 ApplicationLaunchRestrictions 策略配置服务提供程序 (CSP) 设置。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 2c4e6041f00ad55b18f8b20996da8002f5ce0247
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185570"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032191"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>在 Intune 中使用适用于 Windows Holographic for Business 设备的自定义设置
 
@@ -39,7 +39,7 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 2. 选择“设备配置” > “配置文件” > “创建配置文件”。
 3. 输入以下设置：
 
-    - **名称**：输入配置文件的名称，例如 `hololens custom profile`。
+    - **名称**：输入配置文件的名称，如 `hololens custom profile`。
     - **说明**：输入配置文件的说明。
     - **平台**：选择“Windows 10 及更高版本”。
     - **配置文件类型**：选择“自定义”。
@@ -47,8 +47,8 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 4. 在“自定义 OMA-URI 设置”中，选择“添加”。 输入以下设置：
 
     - **名称**：输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。
-    - **说明**：输入设置的简要说明以及其他重要详细信息。
-    - **OMA-URI**（区分大小写）：输入想要作为设置使用的 OMA-URI。
+    - **说明**：输入包含设置概述以及其他所有重要详细信息的说明。
+    - **OMA-URI**（区分大小写）：输入要用作设置的 OMA-URI。
     - **数据类型**：选择用于此 OMA-URI 设置的数据类型。 选项包括：
 
         - 字符串
@@ -56,7 +56,7 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
         - 日期和时间
         - 整数
         - 浮点
-        - 布尔值
+        - 布尔
         - Base64（文件）
 
     - **值**：输入要与已输入的 OMA-URI 关联的数据值。 值取决于所选的数据类型。 例如，如果选择了“日期和时间”，则从日期选取器中选择值。
@@ -75,28 +75,28 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br/>0 - 不允许<br/>1 - 允许（默认值）|
+> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|整数<br/>0 - 不允许<br/>1 - 允许（默认值）|
 
 ### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br/>0 – 不允许更新服务 <br/>1 – 允许更新服务（默认值）。|
+> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|整数<br/>0 – 不允许更新服务 <br/>1 – 允许更新服务（默认值）。|
 
 ### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - 不允许<br/>1 - 允许（默认值）|
+> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|整数<br/>0 - 不允许<br/>1 - 允许（默认值）|
 
 ### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – 未配置。 设备安装所有适用的更新。<br/>1 – 设备仅安装既适用又在已批准更新列表中的更新。 如果 IT 想控制设备上的更新部署（例如部署前需要测试），请将此策略设置为 1。|
+> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|整数<br/>0 – 未配置。 设备安装所有适用的更新。<br/>1 – 设备仅安装既适用又在已批准更新列表中的更新。 如果 IT 想控制设备上的更新部署（例如部署前需要测试），请将此策略设置为 1。|
 
 ### <a name="scheduledinstalltimehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-scheduledinstalltime"></a>[ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
 
@@ -131,21 +131,21 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - 设备返回到当前没有活动用户的状态时立即删除<br/>1 - 按存储容量阈值删除（默认）<br/>2 - 按存储容量阈值和配置文件非活动阈值删除|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|整数<br/>0 - 设备返回到当前没有活动用户的状态时立即删除<br/>1 - 按存储容量阈值删除（默认）<br/>2 - 按存储容量阈值和配置文件非活动阈值删除|
 
 ### <a name="enableprofilemanagerhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[EnableProfileManager](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|布尔值<br/>True - 启用<br/>False - 禁用（默认值）|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|布尔<br/>True - 启用<br/>False - 禁用（默认值）|
 
 ### <a name="profileinactivitythresholdhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[ProfileInactivityThreshold](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|Integer<br/>默认值为 30。|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|整数<br/>默认值为 30。|
 
 
 ### <a name="storagecapacitystartdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStartDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
@@ -153,14 +153,14 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|Integer<br/>默认值为 25。|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|整数<br/>默认值为 25。|
 
 ### <a name="storagecapacitystopdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStopDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|Integer<br/>默认值为 50。|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|整数<br/>默认值为 50。|
 
 ## <a name="find-the-policies-you-can-configure"></a>查找可以配置的策略
 

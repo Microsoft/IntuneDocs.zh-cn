@@ -1,6 +1,6 @@
 ---
-title: Check Point SandBlast MTD 与 Microsoft Intune
-titlesuffix: ''
+title: 设置 Check Point SandBlast MTD
+titlesuffix: Microsoft Intune
 description: 了解如何将 Intune 与 Check Point SandBlast Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
@@ -15,13 +15,13 @@ ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 3600cae373dceb88122852e3d260e91e2618d516
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: f60cd89992eb459849d849aca4b9265d393c29f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180419"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112521"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast 移动威胁防御连接器与 Intune
 
@@ -58,7 +58,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ![Check Point MTD 授予访问权限](./media/checkpoint-MTD-3.PNG)
 
-### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
+### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 
 检测“中间人”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问 **** 。
 
@@ -70,7 +70,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ![Check Point MTD 授予 Wi-Fi 访问权限](./media/checkpoint-MTD-5.PNG)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
 检测“中间人”等网络威胁，并根据设备风险阻止公司文件的同步 **** 。
 
@@ -90,7 +90,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ## <a name="pre-requisites"></a>先决条件
 
--   Azure Active Directory Premium
+-   Azure Active Directory 高级版
 
 -   Microsoft Intune 订阅
 

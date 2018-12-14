@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: df84438ca93e50c392b085eb439abe02f074e5c3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189718"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112912"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
@@ -53,7 +53,7 @@ ms.locfileid: "52189718"
 所有设备平台上都可能发生这些问题。
 
 ### <a name="device-cap-reached"></a>已达到设备上限
-**问题：** 注册期间，用户收到一个错误（如“公司门户暂时不可用”），并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
+**问题：** 用户在注册期间看到错误消息（如“公司门户暂不可用”），并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
 
 **解决方法：**
 
@@ -73,12 +73,12 @@ ms.locfileid: "52189718"
 
 > [!NOTE]
 > 
-> 可通过使用设备注册管理器帐户避免达到设备注册上限，如[使用 Microsoft Intune 中的设备注册管理器注册企业自有设备](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)中所述。
+> 可通过使用设备注册管理器帐户避免达到设备注册上限，如[使用 Microsoft Intune 中的设备注册管理器注册企业自有设备](device-enrollment-manager-enroll.md)中所述。
 > 
 > 如果对添加到设备注册管理器帐户的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
-**问题：** 用户的设备上收到“公司门户暂时不可用”错误。
+**问题：** 用户在设备上看到错误消息“公司门户暂不可用”。
 
 **解决方法：**
 
@@ -93,7 +93,7 @@ ms.locfileid: "52189718"
 5.  如果用户成功登录，iOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，需要手动安装 Intune 公司门户应用，之后才能重试注册。
 
 ### <a name="mdm-authority-not-defined"></a>未定义 MDM 机构
-**问题：** 用户收到“未定义 MDM 机构”错误。
+**问题：** 用户看到错误消息“未定义 MDM 机构”。
 
 **解决方法：**
 
@@ -120,7 +120,7 @@ ms.locfileid: "52189718"
 
     4.  在顶部选择**新建查询**并执行以下查询：
 
-        -   查看所有用户：`select * from [CM_ DBName].[dbo].[User_DISC]`
+        -   若要查看所有用户：`select * from [CM_ DBName].[dbo].[User_DISC]`
 
         -   若要查看特定用户，请使用下面的查询，其中 %testuser1% 为要查找的用户的 username@domain.com 的占位符：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
@@ -130,13 +130,13 @@ ms.locfileid: "52189718"
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名称包含特殊字符，则无法创建策略或注册设备
 **问题：** 无法创建策略或注册设备。
 
-**解决方法：** 在 [Office 365 管理中心](https://portal.office.com/)，删除公司名称中的特殊字符并保存公司信息。
+**解决方法：** 在 [Office 365 管理中心](https://portal.office.com/)内，删除公司名称中的特殊字符，并保存公司信息。
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>如果多个域都经过验证，则无法登录或注册设备
-**问题：** 将第二个经过验证的域添加到 ADFS 时可能会发生此问题。 具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
+**问题：** 将第二个已验证域添加到 ADFS 时，可能会遇到此问题。 具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
 
 
-<strong>解决方法：</strong>Microsoft Office 365 客户需要为每个后缀部署 AD FS 2.0 联合身份验证服务的单独实例，前提是他们属于以下情形：
+<strong>解决方法：</strong>在下列情况下，Microsoft Office 365 客户必须为每个后缀单独部署 AD FS 2.0 联合身份验证服务实例：
 - 通过 AD FS 2.0 使用单一登录 (SSO) 且
 - 在其组织内为用户的 UPN 后缀提供多个顶级域名（例如，@contoso.com 或 @fabrikam.com）。
 
@@ -157,7 +157,7 @@ ms.locfileid: "52189718"
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>设备无法签入 Intune 服务，并在 Intune 管理控制台中显示为“不正常”
-**问题：** 运行 Android 版本 4.4.x 和 5.x 的某些 Samsung 设备可能会停止签入 Intune 服务。 如果设备不签入：
+**问题：** 一些运行 Android 版本 4.4.x 和 5.x 的 Samsung 设备可能会停止使用 Intune 服务签入。 如果设备不签入：
 
 - 它们将无法从 Intune 服务接收策略、应用和远程命令。
 - 它们在管理控制台中显示的管理状态为“不正常”。
@@ -206,7 +206,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败
-**问题：** 用户在 Android 设备上收到**配置文件安装失败**错误。
+**问题：** 用户在 Android 设备上看到错误消息“配置文件安装失败”。
 
 **解决方法：**
 
@@ -220,7 +220,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 ### <a name="android-certificate-issues"></a>Android 证书问题
 
-**问题**：用户在其设备上收到以下消息：无法登录，因为设备缺少必需的证书。
+**问题**：用户在设备上看到以下错误消息：无法登录，因为设备缺少必需证书。
 
 **解决方法 1**：
 
@@ -266,12 +266,12 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 |错误消息|问题|解决方法|
 |-------------|-----|----------|
 |NoEnrollmentPolicy|找不到注册策略|检查是否已设置所有注册必备组件（如 Apple Push Notification 服务 (APNs) 证书），并确保已启用“iOS 平台”。 有关说明，请参阅[设置 iOS 和 Mac 设备管理](ios-enroll.md)。|
-|DeviceCapReached|已注册太多的移动设备。|用户必须从公司门户中删除当前已注册的某个移动设备，然后才可注册其他设备。 请参阅你使用的设备类型的说明：[Android ](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) 和 [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
+|DeviceCapReached|已注册太多的移动设备。|用户必须从公司门户中删除当前已注册的某个移动设备，然后才可注册其他设备。 请参阅所使用设备类型的相关说明：[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
 |APNSCertificateNotValid|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供通道以与注册的 iOS 设备联系。 如果出现以下情况，注册将失败，并将显示此消息：<ul><li>获取 APN 证书的步骤尚未完成，或</li><li>APN 证书已过期。</li></ul>查看[同步 Active Directory 并将用户添加到 Intune](users-add.md) 和[组织用户和设备](groups-add.md)中有关如何设置用户的信息。|
 |AccountNotOnboarded|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供通道以与注册的 iOS 设备联系。 如果出现以下情况，注册将失败，并将显示此消息：<ul><li>获取 APN 证书的步骤尚未完成，或</li><li>APN 证书已过期。</li></ul>有关详细信息，请查看[使用 Microsoft Intune 设置 iOS 和 Mac 管理](ios-enroll.md)。|
 |DeviceTypeNotSupported|用于可能已尝试使用非 iOS 设备进行注册。 不支持你正在尝试注册的移动设备类型。<br /><br />确认设备正在运行 iOS 版本 8.0 或更高版本。<br /><br />|请确保用户的设备正在运行 iOS 版本 8.0 或更高版本。|
 |UserLicenseTypeInvalid|无法注册设备，因为用户帐户还不是所需用户组的成员。<br /><br />|用户必须是相应用户组的成员才能注册其设备。 此消息表明用户持有的移动设备管理机构许可证类型不正确。 例如，如果以下两项均为“true”，则用户将看到此错误：<ol><li>已将 Intune 设置为移动设备管理机构</li><li>他们使用的是 System Center 2012 R2 Configuration Manager 许可。</li></ol>有关详细信息，请查看下列文章：<br /><br />查看[同步 Active Directory 并将用户添加到 Intune](users-add.md) 和[组织用户和设备](groups-add.md)中的[使用 Microsoft Intune 设置 iOS 和 Mac 管理](ios-enroll.md)以及有关如何设置用户的信息。|
-|MdmAuthorityNotDefined|尚未定义移动设备管理机构。<br /><br />|尚未在 Intune 中设置移动设备管理机构。<br /><br />查看[开始使用 Microsoft Intune 的 30 天试用版](free-trial-sign-up.md)中的“步骤 6：注册移动设备并安装应用”部分的第 1 项。|
+|MdmAuthorityNotDefined|尚未定义移动设备管理机构。<br /><br />|尚未在 Intune 中设置移动设备管理机构。<br /><br />请查看[开始使用 Microsoft Intune 的 30 天试用版](free-trial-sign-up.md)中“第 6 步：注册移动设备并安装应用”部分内的第 1 项。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>设备处于非活动状态，或管理控制台不能与其通信
 **问题：** iOS 设备未使用 Intune 服务签入。 设备必须定期使用该服务签入，以保持对受保护的公司资源的访问权限。 如果设备不签入：
@@ -280,7 +280,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 - 它们在管理控制台中显示的管理状态为“不正常”。
 - 受条件访问策略保护的用户可能失去对公司资源的访问权限。
 
-**解决方法：** 与最终用户共享以下解决方法，帮助他们重新获得公司资源的访问权限。
+**解决方法：** 与最终用户共享以下解决办法，帮助他们重新获得对公司资源的访问权限。
 
 如果用户启动了 iOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...” 消息）。
 
@@ -315,7 +315,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败
-**问题：** 用户的 iOS 设备上收到**配置文件安装失败**错误。
+**问题：** 用户在 iOS 设备上看到错误消息“配置文件安装失败”。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>失败配置文件安装的故障排除步骤
 
@@ -330,14 +330,14 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 5.  确认默认浏览器为适用于 iOS 的 Safari，并且已启用 Cookie。
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
-**问题：** 用户注册了 iOS 设备，但它未出现在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
+**问题：** 用户注册了 iOS 设备，但它未显示在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
 
 - Configuration Manager 站点中的 Microsoft Intune 连接器当前未与 Intune 服务进行通信。
 - 数据发现管理器 (ddm) 组件或状态管理器 (statmgr) 组件当前未处理来自 Intune 服务的消息。
 - 你可能已从某个帐户下载了 MDM 证书，而在其他帐户上使用了它。
 
 
-**解决方法：** 查看以下日志文件是否存在错误：
+**解决方法：** 请查看下列日志文件，以确定潜在错误：
 
 - dmpdownloader.log
 - ddm.log
@@ -348,7 +348,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>用户的 iOS 设备在注册屏幕上受阻时间超过 10 分钟
 
-**问题**注册设备可能在两个屏幕的其中一个上受阻：
+**问题**：注册设备可能会在两个屏幕之一中卡滞：
 - 等待来自“Microsoft”的最终配置
 - 引导式访问应用不可用。 请与管理员联系。
 
@@ -364,7 +364,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 | 使用 VPP 安装公司门户 | 使用令牌：令牌地址 |
 | 在身份验证前以单应用模式运行公司门户 | 是 |
 
-**解决方法**：要解决此问题，必须：
+**解决方法**：若要解决此问题，必须执行以下操作：
 1. 确定 VPP 令牌是否存在问题并进行修复。
 2. 确定已阻止的设备。
 3. 擦除受影响的设备。
@@ -396,16 +396,16 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 ## <a name="macos-issues"></a>macOS 问题
 
 ### <a name="macos-enrollment-errors"></a>macOS 注册错误
-**错误消息 1**：你似乎在使用虚拟机 *。请确保已完全配置了虚拟机，包括序列号和硬件型号。如果这不是虚拟机，请联系支持人员。*  
+**错误消息 1：***你似乎使用的是虚拟机。请确保已完全配置了虚拟机，包括序列号和硬件型号。如果这不是虚拟机，请联系支持人员。*  
 
-**错误消息 2**：无法托管设备 *。如果使用虚拟机、具有受限制的序列号或者此设备已分配给其他人，则可能会导致此问题。了解如何解决这些问题，或联系公司支持人员。*
+**错误消息 2：***无法托管你的设备。如果使用虚拟机、具有受限制的序列号或者此设备已分配给其他人，则可能会导致此问题。了解如何解决这些问题，或联系公司支持人员。
 
-**问题：** 此消息可能是由于以下任何一种原因导致：  
+**问题：** 导致此消息出现的原因如下：  
 * macOS 虚拟机 (VM) 未正确配置  
 * 已启用要求设备为公司拥有或在 Intune 中具有已注册的设备序列号的设备限制  
 * 设备已注册并仍分配给 Intune 中的其他人  
 
-**解决方法：** 首先，请与你的用户核实以确定影响其设备的问题。 然后完成以下解决方案中最相关的解决方案：
+**解决方法：** 首先，请与用户联系，以确定其设备受到哪个问题的影响。 然后完成以下解决方案中最相关的解决方案：
 * 如果用户注册用于测试的 VM，请确保已将其完全配置，以便 Intune 可以识别其序列号和硬件型号。 了解如何在 Intune 中[设置 VM](macos-enroll.md#enroll-virtual-macos-machines-for-testing) 的详细信息。  
 * 如果组织启用了阻止个人 macOS 设备的注册限制，则必须手动[添加个人设备的序列号](corporate-identifiers-add.md#manually-enter-corporate-identifiers)到 Intune。  
 * 如果设备仍分配给 Intune 中的其他用户，则其前所有者未使用公司门户应用来删除或重置它。 从 Intune 清除陈旧的设备记录：  
@@ -417,9 +417,9 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager with Intune 时的问题
 ### <a name="mobile-devices-disappear"></a>移动设备消失
-**问题：** 在向 Configuration Manager 成功注册移动设备后，它从移动设备集合中消失。 但是，该设备仍具有管理配置文件，并列示在 CSS 网关中。
+**问题：** 移动设备成功注册到 Configuration Manager 后就从移动设备集合中消失。 但是，该设备仍具有管理配置文件，并列示在 CSS 网关中。
 
-**解决方法：** 可能会发生此问题，原因如下：
+**解决方法：** 导致此问题发生的原因如下：
 - 具有自定义进程，该进程会删除未加入域的设备，或 
 - 用户已在订阅中停用设备。
 若要验证并检查从 Configuration Manager 控制台中删除了该设备的是哪个进程或用户帐户，请执行以下步骤。
@@ -450,7 +450,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
-**问题：** 注册失败，出现“该计算机已注册”错误。 注册日志显示错误 **hr 0x8007064c**。
+**问题：** 注册失败，并看到错误消息“计算机已注册”。 注册日志显示错误 **hr 0x8007064c**。
 
 此次失败出现的原因是计算机：
 - 先前已注册，或
@@ -464,9 +464,9 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 1. 双击“证书”，选择“计算机帐户” > “下一步”，然后选择“本地计算机”。
 1. 双击“证书(本地计算机)”，然后选择“个人/证书”。
 1. 查找 Sc_Online_Issuing 发布的 Intune 证书，并将其删除（若存在）。
-1. 如果以下注册表项存在，请将其删除：**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** 及所有子项。
+1. 删除注册表项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey（若有）以及所有子项。
 1. 尝试重新注册。
-1. 如果仍无法注册电脑，请查找并删除此项（若存在）：KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95。
+1. 如果 PC 仍无法注册，请查找并删除以下项（若有）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。
 1. 尝试重新注册。
 
     > [!IMPORTANT]
@@ -484,14 +484,14 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 |0x80043002、0x80CF3002|帐户处于维护模式。|当帐户处于维护模式时，便无法注册新客户端计算机。 若要查看帐户设置，请登录到你的帐户。|
 |0x80043003、0x80CF3003|帐户被删除。|验证你的帐户和 Intune 订阅是否仍处于活动状态。 若要查看帐户设置，请登录到你的帐户。|
 |0x80043005、0x80CF3005|客户端计算机已停用。|等几个小时并从计算机中删除任何较旧版本的客户端软件，然后重试客户端软件安装。|
-|0x80043006、0x80CF3006|已达到允许此帐户拥有的最大座位数。|贵组织必须购买附加的席位，你才能在服务中注册更多客户端计算机。|
-|0x80043007、0x80CF3007|在安装程序所在的文件夹中找不到证书文件。|在开始安装之前提取所有文件。 请不要重命名或移动任何提取的文件：所有文件必须位于同一文件夹中，否则安装将失败。|
+|0x80043006、0x80CF3006|已达到帐户所允许的最大座位数。|贵组织必须购买附加的席位，你才能在服务中注册更多客户端计算机。|
+|0x80043007，0x80CF3007|在安装程序所在的文件夹中找不到证书文件。|在开始安装之前提取所有文件。 请不要重命名或移动任何提取的文件：所有文件必须位于同一文件夹中，否则安装将失败。|
 |0x8024D015、0x00240005、0x80070BC2、0x80070BC9、0x80CFD015|无法安装软件，因为客户端计算机的重启处于挂起状态。|重启计算机，然后重试客户端软件安装。|
 |0x80070032|未在客户端计算机上找到安装客户端软件所需的一个或多个必备项。|确保所有必需的更新都已安装在客户端计算机上，然后重试客户端软件安装。|
 |0x80043008、0x80CF3008|未能启动 Microsoft Online Management 更新服务。|请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](get-support.md)中所述。|
 |0x80043009、0x80CF3009|已在服务中注册客户端计算机。|你必须先停用客户端计算机，然后才能在服务中重新注册该客户端计算机。|
-|0x8004300B、0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
-|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 对 DLL 进行疑难解答时，可能必须使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/kb/198038)中描述的工具。|
+|0x8004300B，0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
+|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库(DLL) 的自定义操作引起的。 排查 DLL 问题时，可能需要使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/kb/198038)中描述的工具。|
 |0x80cf0440|到服务终结点的连接已终止。|试用或付费帐户处于挂起状态。 创建一个新的试用或付费帐户，并重新注册。|
 
 

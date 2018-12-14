@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f835f2bd2802454bbcdb27251524dfa4d2400f1a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178363"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977297"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -56,25 +56,28 @@ ms.locfileid: "52178363"
 
 ### <a name="device-compliance-status-report"></a>设备符合性状态报告
 
-此图表显示所有已注册 Intune 的设备的符合性状态。 设备符合性状态保存在 Intune 和 Azure Active Directory 这两个不同的数据库中。 
+此图表显示所有已注册 Intune 的设备的符合性状态。 设备符合性状态保存在两个不同的数据库中：Intune 和 Azure Active Directory。 
+
+> [!IMPORTANT]
+> Intune 对设备上的所有符合性评估遵循设备签入计划。 [详细了解设备签入计划](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
 
 不同的设备符合性策略状态的说明：
 
 - **符合**：设备已成功应用一个或多个设备符合性策略设置。
 
-- **在宽限期内**：设备面向一个或多个设备符合性策略设置。 但是，用户尚未应用策略。 这意味着设备不符合要求，但处于管理员定义的宽限期内。
+- **在宽限期内：** 设备成为一个或多个设备符合性策略设置的目标。 但是，用户尚未应用策略。 这意味着设备不符合要求，但处于管理员定义的宽限期内。
 
   - 详细了解[针对不符合设备的操作](actions-for-noncompliance.md)。
 
-- **未评估**：新注册的设备的初始状态。 或者，设备未分配有任何符合性策略，并且没有用于检查符合性的触发器。
+- **未评估**：新注册设备的初始状态。 或者，设备未分配有任何符合性策略，并且没有用于检查符合性的触发器。
 
-- **符合**：设备应用一个或多个设备符合性策略设置失败。 或者，用户未遵守策略。
+- **不符合：** 设备无法应用一个或多个设备符合性策略设置。 或者，用户未遵守策略。
 
-- **设备未同步：** 设备未能报告其设备符合性策略状态，原因为下面其中一项：
+- **设备未同步：** 设备无法报告自己的设备符合性策略状态，原因为下列之一：
 
-  - **未知**：由于其他原因，设备脱机或无法与 Intune 或 Azure AD 通信。
+  - **未知**：由于其他原因，设备处于脱机状态，或无法与 Intune 或 Azure AD 通信。
 
-  - **错误**：设备无法与 Intune 和 Azure AD 通信，并收到一条注明原因的错误消息。
+  - **错误**：设备无法与 Intune 和 Azure AD 通信，并收到注明原因的错误消息。
 
 > [!IMPORTANT]
 > 已注册到 Intune 但未由任何设备符合性策略指定的设备包含在位于“符合性”存储桶下的此报告中。
@@ -154,8 +157,8 @@ ms.locfileid: "52178363"
 
     - 已成功：策略已应用
     - 错误：无法应用策略。 此消息通常与链接到错误说明的错误代码一起显示。 
-    - 冲突：两个设置都应用于同一设备，Intune 无法解决冲突。 管理员应进行审核。
-    - 挂起：设备尚未签入 Intune，无法接收策略。 
+    - 冲突：两个设置应用于同一设备，Intune 无法解决冲突。 管理员应进行审核。
+    - 挂起：设备尚未使用 Intune 签入，无法接收策略。 
     - 不适用：设备无法接收策略。 例如，策略更新了 iOS 11.1 的特定设置，但设备使用的是 iOS 10。 
 
 3. 若要查看使用此策略的设备的详细信息，请选择其中一种状态。 例如，选择“已成功”。 在下一个窗口中，将列出特定设备的详细信息，包括设备名称和部署状态。

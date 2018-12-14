@@ -1,12 +1,12 @@
 ---
-title: 准备好配置面向 Windows 10 的应用保护策略
+title: 配置适用于 Windows 10 的应用保护策略
 titleSuffix: Microsoft Intune
 description: 在 Azure AD 中设置移动应用管理 (MAM) 提供程序。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5953038f3627f98f0e034aeba4c2c92ea3dca2d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: e6e725d2e499c7f004ebf982bc0e70457c166f67
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184380"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031970"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>准备好配置面向 Windows 10 的应用保护策略 
 
@@ -40,7 +40,7 @@ ms.locfileid: "52184380"
 4. 配置“配置”边栏选项卡上的“还原默认 MAM URL”组中的设置。
 
    **MAM 用户范围**  
-   使用 MAM 自动注册来管理员工的 Windows 设备上的企业数据。 将 MAM 自动注册配置为使用用户自己的设备方案。<ul><li>**无**<br>选择是否所有用户均不可在 MAM 中注册。</li><li>**一些**<br>选择包含将要在 MAM 中进行注册的用户的 Azure AD 组。</li><li>**所有**<br>选择是否所有用户均可在 MAM 中注册。</li></ul>
+   使用 MAM 自动注册来管理员工的 Windows 设备上的企业数据。 将 MAM 自动注册配置为使用用户自己的设备方案。<ul><li>**无**<br>选择是否所有用户均不可在 MAM 中注册。</li><li>**部分**<br>选择包含将要在 MAM 中进行注册的用户的 Azure AD 组。</li><li>**所有**<br>选择是否所有用户均可在 MAM 中注册。</li></ul>
 
    **MAM 使用条款 URL**  
    Microsoft Intune 不支持 MAM 使用条款 URL。 必须将此输入框留空，以便应用保护策略。
@@ -51,7 +51,7 @@ ms.locfileid: "52184380"
    **MAM 符合性 URL**  
    Microsoft Intune 不支持 MAM 符合性 URL。 必须将此输入框留空，以便应用保护策略。 
 
-5.  单击 **“保存”**。
+5.  单击“保存”。
 
 ## <a name="next-steps"></a>后续步骤
 

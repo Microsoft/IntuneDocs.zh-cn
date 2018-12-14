@@ -5,22 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fd99a168747bd4a0f5852404e767d658b8400ba2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180827"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032259"
 ---
-# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>使用 Intune 管理和使用 Windows 全息版和 HoloLens 设备
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>通过 Intune 管理和使用 Windows Holographic 和 HoloLens 设备上的不同设备管理功能
 
 Microsoft Intune 包含许多功能，可帮助管理运行 Windows Holographic for Business 的设备，例如 [Microsoft HoloLens](https://docs.microsoft.com/hololens/)。 使用 Intune，可以确认设备是否符合组织的规则，且可通过添加 VPN 或 WiFi 配置文件来自定义设备。 另一个关键功能是将设备用作 Kiosk，并运行特定的一个或一组应用。
 
@@ -32,13 +32,13 @@ Microsoft Intune 包含许多功能，可帮助管理运行 Windows Holographic 
 
 Azure Active Directory (AD) 是帮助管理和控制运行 Windows Holographic for Business 的设备的绝佳资源。 使用 Intune 和 Azure AD 可以： 
 
-- **[设置已加入 Azure Active Directory 的设备](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**：在 Azure Active Directory (AD) 中，可添加工作所有的 Windows 10 设备，包括运行 Windows Holographic for Business 的设备。 Azure AD 可使用此功能来控制设备。 此功能有助于确保用户从满足安全性和符合性标准的设备访问公司资源。
+- **[将设备加入 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**：在 Azure Active Directory (AD) 中，可以添加工作所有的 Windows 10 设备，包括运行 Windows Holographic for Business 的设备。 Azure AD 可使用此功能来控制设备。 此功能有助于确保用户从满足安全性和符合性标准的设备访问公司资源。
 
-  请参阅 [Azure AD 中的设备管理简介](https://docs.microsoft.com/azure/active-directory/device-management-introduction)了解更多详细信息。
+  [Azure AD 中的设备管理](https://docs.microsoft.com/azure/active-directory/devices/overview)提供了更多详细信息。
 
-- **[Windows 设备的批量注册](windows-bulk-enroll.md)**：可将大量新的 Windows 设备加入到 Azure Active Directory (AD) 和 Intune。 此功能称为批量注册，并使用预配包。 这些包将运行 Windows Holographic for Business 的设备加入到 Azure AD 租户，并在 Intune 中注册它们。
+- **[Windows 设备批量注册](windows-bulk-enroll.md)**：可以将大量新 Windows 设备加入 Azure Active Directory (AD) 和 Intune。 此功能称为批量注册，并使用预配包。 这些包将运行 Windows Holographic for Business 的设备加入到 Azure AD 租户，并在 Intune 中注册它们。
 
-## <a name="company-portal"></a>Company Portal
+## <a name="company-portal"></a>公司门户
 **[配置公司门户应用](company-portal-app.md)**
 
 Intune 提供了公司门户应用，用户可使用该应用访问公司数据、注册设备、安装应用、联系 IT 部门等。 你可以为运行 Windows Holographic for Business 的设备自定义公司门户应用。
@@ -49,7 +49,6 @@ Intune 提供了公司门户应用，用户可使用该应用访问公司数据�
 - [重命名设备](/intune-user-help/rename-your-device-cpapp)
 - 在设备上[安装应用](/intune-user-help/install-apps-cpapp-windows)
 - 从设置应用或公司门户应用[手动同步设备](/intune-user-help/sync-your-device-manually-windows)
-
 
 ## <a name="compliance-policy"></a>合规性策略
 **[创建设备符合性策略](compliance-policy-create-windows.md)**
@@ -85,11 +84,11 @@ Intune 具有一些内置操作，允许 IT 管理员在本地设备上执行不
 
 使用运行 Windows Holographic for Business 的设备时，可使用以下操作： 
 
-- **[擦除](devices-wipe.md#wipe)**：执行“擦除”操作可从 Intune 中删除设备，并将设备还原到其出厂默认设置。 请在将设备交给新用户之前或设备丢失或被盗时使用此操作。
+- **[擦除](devices-wipe.md#wipe)**：执行“擦除”操作可以从 Intune 中删除设备，并将设备还原回出厂默认设置。 请在将设备交给新用户之前或设备丢失或被盗时使用此操作。
 
-- **[停用](devices-wipe.md#retire)**：执行“停用”操作可从 Intune 中删除设备。 此外，它还会删除 Intune 分配的托管应用数据、设置和电子邮件配置文件。 用户的个人数据保留在设备上。
+- **[停用](devices-wipe.md#retire)**：执行“停用”操作可以从 Intune 中删除设备。 此外，它还会删除 Intune 分配的托管应用数据、设置和电子邮件配置文件。 用户的个人数据保留在设备上。
 
-- **[同步设备以获取最新策略和操作](device-sync.md)**：执行“同步”操作会强制设备使用 Intune 立即签入。 当设备签入时，该设备会立即收到分配给自己的任何挂起的操作或策略。 此功能有助于验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
+- **[同步设备以获取最新策略和操作](device-sync.md)**：执行“同步”操作可以强制设备立即使用 Intune 签入。 当设备签入时，该设备会立即收到分配给自己的任何挂起的操作或策略。 此功能有助于验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
 
 **[什么是 Microsoft Intune 设备管理？](device-management.md)** 是了解使用 Azure 门户管理设备的最佳资源。 
 
@@ -130,7 +129,7 @@ Intune 提供可在组织内的不同设备上启用或禁用的设置和功能�
 
 Intune 提供了一个名为“更新圈”的功能供 Windows 10 设备使用。 这些更新圈包括一组用于确定更新安装方式的设置。 例如，你可以创建一个维护时段来安装更新，也可以选择在安装更新后重新启动。 更新圈可应用于运行 Windows Holographic for Business 的多个设备。
 
-## <a name="terms-and-conditions"></a>条款和条件
+## <a name="terms-and-conditions"></a>Terms and conditions
 **[设置公司的用户访问条款和条件](terms-and-conditions-create.md)**
 
 可以要求用户先接受你所在公司的条款和条件，然后才能注册设备和访问公司应用，包括电子邮件。 在 Intune 中可以定义条款和条件在公司门户中的显示方式，并将这些条款和条件分配给运行 Windows Holographic for Business 的设备。

@@ -1,7 +1,7 @@
 ---
-title: 不同的 Windows 设备的注册方法对应的 Intune 功能
+title: Windows 设备的 Intune 注册方法功能
 titlesuffix: Microsoft Intune
-description: 查看不同的 Windows 设备的注册方法分别支持哪些功能。
+description: Windows 设备的每种注册方法对应的功能。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189803"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032123"
 ---
-# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>不同的 Windows 设备的注册方法对应的功能
+# <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Windows 设备的 Intune 注册方法功能
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 可让你管理员工的设备和应用，以及他们访问公司数据的方式。 必须先在 Intune 服务中注册设备。 可通过几种方法来注册员工的设备。 每种方法都有不同的最佳做法和功能，如下表所示。
+在 Intune 中注册工作人员设备的方法有多种。 每种方法都有不同的最佳做法和功能，如下表所示。
 
 ## <a name="best-practices-by-enrollment-method"></a>不同注册方法对应的最佳做法
 | **Best practices**（最佳做法） | **[已联接 Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[使用 Autopilot 联接 Azure AD](enrollment-autopilot.md)** |**[批量](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |

@@ -1,11 +1,12 @@
 ---
 title: 设备缺少必需的证书 | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: 设备缺少公司支持人员所需的证书。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +17,19 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150746"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032208"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>你的设备缺少必需的证书
 
 ## <a name="whats-a-certificate"></a>什么是证书？
 
-[加密](https://technet.microsoft.com/library/cc962030.aspx)是为信息提供安全性的技术。 传统上来说，加密一直被用于传递编码消息，以[确保通信处于保密状态](https://technet.microsoft.com/library/cc962019.aspx)。 加密最简单的形式便是替代或转置字母，以将编码消息创建到不可读取、杂乱或隐藏的消息中。 只有具有解码密钥或证书的人才能将编码消息转换回其原始的可读取形式。 Android 设备结合使用证书和 Intune，确保设备与组织资源（如电子邮件和文档）之间的通信，通过无线电从一端传递到另一端的过程中始终保持安全。
+[加密](https://technet.microsoft.com/library/cc962030.aspx)是为信息提供安全性的技术。 传统上来说，加密一直被用于传递编码消息，以[确保通信处于保密状态](https://technet.microsoft.com/library/cc962019.aspx)。 加密的最简单形式是替代或转置字母，以在不可读取、杂乱或隐藏的消息中创建已编码消息。 只有具有解码密钥或证书的人才能将编码消息转换回其原始的可读取形式。 Android 设备结合使用证书和 Intune，确保设备与组织资源（如电子邮件和文档）之间的通信，通过无线电从一端传递到另一端的过程中始终保持安全。
 
 ## <a name="fixing-certificate-issues"></a>修复证书问题
 
@@ -38,6 +39,6 @@ ms.locfileid: "43150746"
 
 首先应尝试确认设备是否[缺少通常随附预安装在其上的证书](your-device-is-missing-a-preinstalled-certificate-android.md)。
 
-如果无法确认，则公司支持人员会[要求再安装一个证书以获取额外的安全性](your-device-is-missing-an-IT-required-certificate-android.md)。
+如果你在解决证书问题后仍看到错误，公司支持人员会[要求你再安装一个证书以获取额外安全防护](your-device-is-missing-an-IT-required-certificate-android.md)。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

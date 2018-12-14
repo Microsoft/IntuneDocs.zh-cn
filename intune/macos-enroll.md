@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186998"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112402"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中设置 macOS 设备注册
 
@@ -37,7 +37,7 @@ Intune 可以管理 macOS 设备以允许用户访问公司电子邮件和应用
 
 - [配置域](custom-domain-name-configure.md)
 - [设置 MDM 机构](mdm-authority-set.md)
-- [创建组](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [创建组](groups-add.md)
 - [配置公司门户](company-portal-app.md)
 - 在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中分配用户许可证
 - [获取 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -47,7 +47,7 @@ Intune 可以管理 macOS 设备以允许用户访问公司电子邮件和应用
 可以让用户注册其个人设备用于 Intune 管理，这称为“自带设备办公”或 BYOD。 完成先决条件和分配的用户许可证后，用户可以通过以下方式注册其设备：
 - 转到[公司门户网站](https://portal.manage.microsoft.com)或
 - 下载公司门户应用。
-还可以向他们发送指向在线注册步骤的链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
+还可以向他们发送联机注册步骤链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
 
 有关其他最终用户任务的信息，请参阅以下文章：
 
@@ -56,8 +56,8 @@ Intune 可以管理 macOS 设备以允许用户访问公司电子邮件和应用
 
 ## <a name="company-owned-macos-devices"></a>公司拥有的 macOS 设备
 对于为用户购买设备的组织，Intune 还支持以下公司自有的 macOS 设备注册方法：
-- [Apple 的设备注册计划 (DEP)](device-enrollment-program-enroll-macos.md)：组织可以通过 Apple 的设备注册计划 (DEP) 购买 macOS 设备。 DEP 允许用户通过“无线方式”部署注册配置文件以对设备进行管理。
-- [设备注册管理员 (DEM)](device-enrollment-manager-enroll.md)：可以使用 DEM 帐户最多注册 1,000 台设备。
+- [Apple 设备注册计划 (DEP)](device-enrollment-program-enroll-macos.md)：组织可以通过 Apple 设备注册计划 (DEP) 购买 macOS 设备。 DEP 允许用户通过“无线方式”部署注册配置文件以对设备进行管理。
+- [设备注册管理员 (DEM)](device-enrollment-manager-enroll.md)：最多可以使用 DEM 帐户注册 1,000 台设备。
 
 ## <a name="block-macos-enrollment"></a>阻止 macOS 注册
 默认情况下，Intune 允许注册 macOS 设备。 若要阻止 macOS 注册设备，请参阅[设置设备类型限制](enrollment-restrictions-set.md)。
