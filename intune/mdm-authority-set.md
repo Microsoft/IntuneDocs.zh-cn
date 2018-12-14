@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0eb3ccf85c8851f16dcfe303603f65517fcf7312
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183751"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112572"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>设置移动设备管理机构
 
@@ -41,7 +41,7 @@ ms.locfileid: "52183751"
 - **Office 365 的移动设备管理** - 集成了 Office 365 和 Intune 云解决方案。 可在 Office 365 管理中心中配置 Intune。 包括 Intune 独立版中提供的部分功能。 在 Office 365 管理中心中设置 MDM 机构。
 
 > [!IMPORTANT]
-> 在 Configuration Manager 版本 1610 或更高版本和 Microsoft Intune 版本 1705 中，你将可以更改 MDM 颁发机构，而无需联系 Microsoft 支持部门，并且无需取消注册并重新注册现有的受管理设备。 有关详细信息，请参阅[如果选择了错误的 MDM 颁发机构设置怎么办](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)。
+> 在 Configuration Manager 版本 1610 或更高版本和 Microsoft Intune 版本 1705 中，你将可以更改 MDM 颁发机构，而无需联系 Microsoft 支持部门，并且无需取消注册并重新注册现有的受管理设备。 有关详细信息，请参阅[准备将 MDM 机构更改为 Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager)。
 
 ## <a name="set-mdm-authority-to-intune"></a>将 MDM 机构设置为 Intune
 
@@ -90,8 +90,8 @@ ms.locfileid: "52183751"
     > [!NOTE]    
     > 如果 MDM 机构显示由 Intune 和 Office 365 托管，则在将 MDM 机构更改为“Configuration Manager”（混合）时，将不再托管 Office 365 托管的 MDM 设备。 我们建议你在更改 MDM 机构之前，许可 Intune 或 Enterprise Mobility Suite 的这些用户。   
 
-- 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，删除设备注册管理器角色。 有关详细信息，请参阅[从 Intune 删除设备注册管理器](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune)。
-- 请关闭任何已配置的设备组映射。 有关详细信息，请参阅[使用 Microsoft Intune 中的设备组映射对设备进行分类](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)。
+- 在 [Microsoft Intune 管理控制台](http://manage.microsoft.com)中，删除设备注册管理器角色。 有关详细信息，请参阅[从 Intune 删除设备注册管理器](device-enrollment-manager-enroll.md#remove-device-enrollment-manager-permissions)。
+- 请关闭任何已配置的设备组映射。 有关详细信息，请参阅[使用 Microsoft Intune 中的设备组映射对设备进行分类](device-group-mapping.md)。
 - 更改 MDM 机构期间应不会对最终用户产生明显影响。 但是，你可能需要将此更改传递给用户，以确保其设备已开机，并在更改后立即与服务连接。 此预防措施将确保尽可能多的设备可尽快通过新机构连接并注册服务。
 - 在更改 MDM 机构之前，如果你使用 Intune 独立版管理 iOS 设备，则必须确保已续订先前在 Intune 中使用的同一 Apple Push Notification 服务 (APN) 证书，并再次用于在 Configuration Manager（混合）中设置租户。    
 
@@ -129,7 +129,7 @@ ms.locfileid: "52183751"
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>更改 MDM 机构的预期结果
 
-- 当 Intune 服务检测到租户的 MDM 机构已更改时，它将向所有已注册的设备发送通知消息，以便签入并与服务同步（此通知并非计划的定期签入）。 因此，租户的 MDM 机构从 Intune standalone 更改为混合环境后，开机且联机的所有设备将与服务连接，接收新的 MDM 机构，并且由混合环境托管。 这些设备的管理和保护不会中断。
+- 当 Intune 服务检测到租户的 MDM 机构已更改时，它将向所有已注册的设备发送通知消息，以便签入并与服务同步（此通知并非计划的定期签入）。 因此，租户的 MDM 机构从 Intune standalone 更改为混合环境后，开机且联机的所有设备将与服务连接，接收新的 MDM 机构，并且由混合环境托管。 对这些设备的管理和保护不会中断。
 - 更改 MDM 机构过程中（或在不久之后），即使设备开机且联机，但设备在新的 MDM 机构中注册到该服务之前，将会有最长八小时的延迟（取决于计划的下次定期签入的执行时间）。    
 
   > [!IMPORTANT]    
@@ -137,7 +137,7 @@ ms.locfileid: "52183751"
 
 - 用户可以通过手动启动从设备到服务的签入来快速更改为新的 MDM 机构。 用户可以通过使用公司门户应用轻松进行此更改，并启动设备符合性检查。
 - 更改 MDM 机构后，要验证设备签入并与服务同步后一切工作正常运行，可在 Configuration Manager 控制台中查找设备。 之前由 Intune 托管的设备现在将显示为 Configuration Manager 平台中的托管设备。    
-- 在更改 MDM 机构期间设备处于脱机状态时，以及设备签入服务，会存在一个过渡期。 为帮助确保设备在此过渡期间仍然受到保护并可正常运行，以下配置文件将在设备上最多保留七天（或直到设备与新的 MDM 机构连接并接收将覆盖现有设置的新设置为止）：
+- 在更改 MDM 机构期间设备处于脱机状态时，以及设备签入服务，会存在一个过渡期。 为帮助确保设备在此过渡期间仍然受到保护并可正常运行，以下配置文件将在设备上保留长达七天（或直到设备与新的 MDM 机构连接并接收将覆盖现有设置的新设置为止）：
     - 电子邮件配置文件
     - VPN 配置文件
     - 证书配置文件

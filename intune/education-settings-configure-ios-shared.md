@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24fb627d0fcf0fe3b24a8242d8ac22ccf6f3ff91
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181218"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032362"
 ---
-# <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>如何为共享 iPad 设备配置 Intune 教育设置
+# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>为共享 iPad 设备配置 Intune 教育设置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> Intune 中适用于 Classroom 应用的 Intune 设置已过时。 文本仅适用于 Intune 中使用现有教育版配置文件的用户。
 
 Intune 支持 iOS Classroom 应用，可帮助教师在课堂上指导学习以及控制学生设备。 此外，对于 Classroom 应用，Apple 支持对学生 iPad 设备进行配置的功能，以便多名学生可以共享单台设备。 本文档指导如何通过 Intune 实现此目标。
 
@@ -96,9 +99,9 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 - **使用者名称格式** - 对于教师证书，Intune 将自动在证书公用名称上添加前缀“主持人”，对于学生证书则添加“成员”。
 - **证书颁发机构** - 在 Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。
-- **证书颁发机构名称** - 输入你的证书颁发机构的名称。
+- 证书颁发机构名称 - 输入证书颁发机构的名称。
 - **证书模板名称** - 输入已添加到发证 CA 的证书模板的名称。
-- **续订阈值(%)** - 指定设备请求证书续订之前剩余的证书有效期限的百分比。
+- **续订阈值 (%)** - 指定设备请求续订证书之前剩余的证书生存期的百分比。
 - **证书有效期** - 指定距离证书过期的剩余时间量。 你可以指定比指定证书模板中的有效期小的值，但不能指定较大的值。 例如，证书模板中的证书有效期为 2 年，则你可以指定值 1 年，但不能指定值 5 年。 该值还必须小于发证 CA 证书的剩余有效期。
 
 完成教师证书配置后，选择“确定”。
