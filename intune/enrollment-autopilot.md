@@ -15,20 +15,20 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829098"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112846"
 ---
-# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 注册 Windows 设备  
-Windows Autopilot 简化了设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
+# <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
+Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
 
 
 ## <a name="prerequisites"></a>必备条件
-- [已启用的 Windows 自动注册](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- [已启用的 Windows 自动注册](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>如何获取用于在 InTune 中导入的 CSV
@@ -78,17 +78,17 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 2. 在“名称”和（可选）“说明”中，键入名称和说明。
 3. 如果希望已分配组中的所有设备自动转换为 Autopilot，请把“将所有目标设备转换为 Autopilot”设置为“是”。 已分配组中的所有非 Autopilot 设备都将注册 Autopilot 部署服务。 等待 48 小时来处理注册。 取消注册设备并重置后，Autopilot 将对其进行注册。 以这种方式注册设备后，禁用此选项或删除配置文件分配将不会从 Autopilot 部署服务中删除该设备。 必须改为[直接删除该设备](enrollment-autopilot.md#delete-autopilot-devices)。
 4. 对于“部署模式”，选择下列两个选项之一：
-    - “用户驱动”：包含此配置文件的设备与设备注册用户相关联。 必须具备用户凭据，才能注册设备。
+    - **用户驱动**：包含此配置文件的设备与设备注册用户相关联。 必须具备用户凭据，才能注册设备。
     - “自部署(预览)”：（需要最新的 [Windows 10 Insider Preview 内部版本](https://docs.microsoft.com/windows-insider/at-work-pro/)）包含此配置文件的设备不与设备注册用户相关联。 无需用户凭据，即可注册设备。
 5. 在“加入 Azure AD 时的身份”框中，选择“Azure AD 已加入”。
 6. 选择“全新体验(OOBE)”，配置下列选项，再选择“保存”：
     - **语言(区域)**\*：选择要对设备使用的语言。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
     - **自动配置键盘**\*：如果选择了“语言(区域)”，请选择“是”以跳过键盘选择页。 仅当选择“自部署”作为“部署模式”时，此选项才可用。
-    - **最终用户许可协议 (EULA)**：（Windows 10 版本 1709 或更高版本）选择是否向用户显示 EULA。
+    - **最终用户许可协议(EULA)**：（Windows 10 版本 1709 或更高版本）选择是否向用户显示 EULA。
     - **隐私设置**：选择是否向用户显示隐私设置。
-    - **隐藏更改帐户选项（仅限 Windows 预览体验成员）**：选择“隐藏”可防止在公司登录和域错误页上显示更改帐户选项。 要执行此操作，需[在 Azure Active Directory 中配置公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
+    - **隐藏更改帐户选项(仅限 Windows 预览体验成员)**：选择“隐藏”可防止在公司登录和域错误页上显示更改帐户选项。 要执行此操作，需[在 Azure Active Directory 中配置公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
     - **用户帐户类型**：选择用户的帐户类型（“管理员”或“标准”用户）。
-    - **应用计算机名称模板（仅限 Windows 预览体验成员）**：选择“是”可创建模板，以便在注册期间命名设备时使用。 名称长度必须在 15 个字符或以下，可以包含字母、数字和连字符。 名称不能全为数字。 使用 [%SERIAL% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)添加特定于硬件的序列号。 或者使用 [%RAND:x% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)，添加随机数字字符串，其中 x 等于要添加的位数。 
+    - **应用计算机名称模板(仅限 Windows 预览体验成员)**：选择“是”可创建模板，以便在注册期间命名设备时使用。 名称长度必须在 15 个字符或以下，可以包含字母、数字和连字符。 名称不能全为数字。 使用 [%SERIAL% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)添加特定于硬件的序列号。 或者使用 [%RAND:x% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)，添加随机数字字符串，其中 x 等于要添加的位数。 
 
 6. 选择“创建”，创建配置文件。 Autopilot 部署配置文件现在即可分配给设备。
 
