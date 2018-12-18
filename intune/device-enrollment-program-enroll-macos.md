@@ -1,12 +1,12 @@
 ---
 title: 注册 macOS 设备 - 设备注册计划或 Apple School Manager
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: 了解如何使用“设备注册计划”注册公司拥有的 macOS 设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728746"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032344"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用“设备注册计划”或 Apple School Manager 自动注册 macOS 设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文旨在帮助你为通过 Apple [设备注册计划 (DEP)](https://deploy.apple.com) 或 [Apple School Manager](https://school.apple.com/) 购买的设备设置 macOS 设备注册。 可在不触碰设备的情况下为大量设备使用这些注册。 可以将 macOS 设备直接交付给用户。 用户打开设备时，“设置助理”将运行预先配置的设置，且设备将注册到 Intune 管理。
+可以为通过 Apple [设备注册计划 (DEP)](https://deploy.apple.com) 或 [Apple School Manager](https://school.apple.com/) 购买的 macOS 设备设置 Intune 注册。 可在不触碰设备的情况下为大量设备使用这些注册。 可以将 macOS 设备直接交付给用户。 用户打开设备时，“设置助理”将运行预先配置的设置，且设备将注册到 Intune 管理。
 
 若要设置注册，需同时使用 Intune 和 Apple DEP 门户。 创建注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
@@ -123,7 +123,7 @@ DEP 注册和 Apple School Manager 均不适用于[设备注册管理器](device
  
 7. 选择“确定”。
 
-8. 选择“设置助理设置”，以配置下列配置文件设置：![设置助理自定义。](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
+8. 选择“设置助理设置”，配置以下配置文件设置：![设置助理的自定义项](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)。
 
     | 部门设置 | 描述 |
     |---|---|

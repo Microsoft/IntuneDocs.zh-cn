@@ -5,27 +5,29 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730395"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977263"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 10（和更高版本）传递优化设置
 
-本文列举并介绍了可以为 Windows 10 设备配置的所有传递优化设置。 将这些设置添加到设备配置文件，然后使用 Microsoft Intune 将其分配或部署到设备中。
+本文列举并介绍了可以为 Windows 10 设备配置的所有传递优化设置。 将这些设置添加到设备配置文件，然后使用 Microsoft Intune 将其分配或部署到设备中。 
+
+[传递优化更新](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)是一个不错的资源，可用于了解有关 Windows 10 上的传递优化的详细信息。
 
 ## <a name="settings"></a>设置
 
-**传递优化下载模式**：选择将更新传递到设备的方式。 选项包括：
+**传递优化下载模式**：选择如何将更新传递到设备。 选项包括：
 
 - **未配置**：最终用户使用自己的方法更新其设备，可能使用的是 Windows 更新或操作系统提供的“传递优化”设置。
 - **仅 HTTP，无对等互连**：仅从 Internet 获取更新。 不从网络上的其他计算机（称为对等互连或对等）获取更新。

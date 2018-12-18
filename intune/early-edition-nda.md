@@ -1,6 +1,7 @@
 ---
-title: 早期版本
-description: ''
+title: 早期版本 - Microsoft Intune
+titlesuffix: ''
+description: Microsoft Intune 的早期版本
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,18 +16,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829124"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112827"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 的早期版本 - 2018 年 12 月
 
 > [!Note]
-> NDA 通知：下面的 Intune 更改仍处于开发阶段。 此信息在 NDA 下共享，但具有严格限制。 请勿在 Twitter、UserVoice、Reddit 等社交媒体或公共网站上发布此信息。 
+> NDA 通知：下面的更改依据 Intune 开发。 此信息在 NDA 下共享，但具有严格限制。 请勿在 Twitter、UserVoice、Reddit 等社交媒体或公共网站上发布此信息。 
 
 早期版本提供了一份即将发布的 Microsoft Intune 版本中将出现的功能列表（在 NDA 下共享）。 此信息的提供具有条件限制，并且会不断变化。 请勿发布推文、在 UserVoice 上发帖，或者以其他方式在公司外部共享此信息。 此处列出的某些功能有无法按期发布的风险并可能推迟到以后的版本。 正在以试验模式（外部测试）测试其他功能，以确保它们可立即供客户使用。 如果有任何问题或顾虑，请与 Microsoft 产品组联系人联系。
 
@@ -53,15 +54,23 @@ ms.locfileid: "52829124"
 
 [Windows 10 VPN 设置](vpn-settings-windows-10.md)介绍了设置的当前列表。 
 
+### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>使用 S/MIME 对用户的多个设备进行加密和签名 <!-- 1333642 eeready -->
+将支持使用新导入的证书配置文件进行 S/MIME 电子邮件加密（“设备配置” > “配置文件” > “创建配置文件”>“选择平台”>“PKCS 导入的证书”配置文件类型）。 在 Intune 中，可以 PFX 格式导入证书。 然后 Intune 可以将这些相同的证书传递给单个用户注册的多个设备。 还包括：
+
+- 本机 iOS 电子邮件配置文件支持使用 PFX 格式的导入证书启用 S/MIME 加密。
+- Windows Phone 10 设备上的本机电子邮件应用自动使用 S/MIME 证书。
+- 可以跨多个平台传递私有证书。 但并非所有电子邮件应用都支持 S/MIME。
+- 在其他平台上，可能需要手动配置电子邮件应用以启用 S/MIME。  
+- 支持 S/MIME 加密的电子邮件应用可能以 MDM 不支持的方式（例如从发布者的证书存储读取）处理对 S/MIME 电子邮件加密的证书检索。
+
+在以下设备上受支持：Windows、Windows Phone 10、macOS、iOS、Android
+
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Windows 公司门户应用中的帮助和支持页 <!-- 1488939 -->
 将向 Windows 公司门户应用添加一个新页。 帮助和支持页将提供支持人员联系信息。 此外，最终用户将能够在出现问题时发送公司门户日志。 此页面还提供“常见问题解答”部分来帮助最终用户。
 
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>在 Windows 10 设备上使用 VPN 配置文件的受信任网络检测 <!-- 1500165 -->
 使用受信任的网络检测时，能够在用户已使用受信任的网络时阻止 VPN 配置文件自动创建 VPN 连接。 能够添加 DNS 后缀，以便在运行 Windows 10 及更高版本的设备上启用受信任的网络检测（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”作为平台 >“VPN”作为配置文件类型）。
 [Windows 10 VPN 设置](vpn-settings-windows-10.md)列出了当前的 VPN 设置。
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>支持 Android 公司拥有的完全托管设备 <!-- 574342 -->
-Intune 将支持完全托管的 Android 设备，这是公司拥有的“设备所有者”方案，其中设备由 IT 管理员紧密管理并与各个用户关联。 这样，管理员便可以管理整个设备、强制扩展不可用于工作配置文件的策略控制的范围并限制用户仅从托管的 Google Play 安装应用。 若要设置完全托管的 Android 设备，请转到“设备注册” > “Android 注册” > “公司拥有的完全托管的用户设备”。
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune App SDK 将支持 256 位加密密钥 <!-- 1832174 -->
 应用保护策略启用加密时，适用于 iOS 的 Intune App SDK 将使用 256 位加密密钥。 SDK 将继续提供 128 位密钥支持以与使用旧版 SDK 的内容和应用兼容。
@@ -99,11 +108,14 @@ Intune 将支持完全托管的 Android 设备，这是公司拥有的“设备�
 [iOS 电子邮件配置设置](email-settings-ios.md)列出了当前设置。
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>在 iOS DEP 设备上跳过更多设置助理屏幕 <!-- 2687509 -->
-除了当前可以跳过的屏幕之外，你将能够将 iOS DEP 设备设置为在用户注册设备时跳过设置助理中的以下屏幕：显示色调、隐私、Android 迁移、主页按钮、iMessage 和 FaceTime、载入、监视迁移、外观、屏幕时间、软件更新、SIM 安装程序。
+除了当前可以跳过的屏幕之外，你还能够将 iOS DEP 设备设置为在用户注册设备时跳过设置助理中的以下屏幕：显示色调、隐私、Android 迁移、主页按钮、iMessage 和 FaceTime、载入、监视迁移、外观、屏幕时间、软件更新、SIM 安装程序。
 若要选择要跳过的屏幕，请转到“设备注册” > “Apple 注册” > “注册计划令牌”> 选择令牌 >“配置文件”> 选择配置文件 >“属性” > “设置助理的自定义项”> 对于要跳过的任何屏幕选择“隐藏”>“确定”。
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>某些 BitLocker 设置支持 Windows 10 专业版<!-- 2727036 -->
 你将能够创建在 Windows 10 设备上设置 Endpoint Protection 设置的配置文件，包括 BitLocker。 这会为某些 BitLocker 设置添加对 Windows 10 专业版的支持。 若要查看当前 Windows 10 版本设置，请参阅[适用于 Windows 10 的 Endpoint protection 设置](endpoint-protection-windows-10.md#windows-encryption)。
+Intune 将提供其他设备报告字段，包括 Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，将通过选择“客户端应用” > “应用保护状态”并选择“应用保护报告: iOS、Android”来获取这些字段。 此外，这些参数将帮助你配置设备制造商“允许”列表 (Android)、设备型号的“允许”列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。 
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Intune 设备报告字段 <!-- 2748738 -->
 Intune 将提供其他设备报告字段，包括 Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，将通过选择“客户端应用” > “应用保护状态”并选择“应用保护报告: iOS、Android”来获取这些字段。 此外，这些参数将帮助你配置设备制造商“允许”列表 (Android)、设备型号的“允许”列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。 
 
 ### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>Azure 门户中的共享设备配置将重命名为适用于 iOS 设备的“锁定屏幕消息”<!-- 2809362 -->

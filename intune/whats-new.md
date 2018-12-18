@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ed6a79142c2bbe3bd93b02c17e92f4f11f2583f3
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
+ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829192"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53200600"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,14 @@ ms.locfileid: "52829192"
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-december-10-2018"></a>2018 年 12 月 10 日当周
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>macOS 设备所需的 Microsoft Auto Update 版本 4.50 <!-- 3503442 -->
+若要继续接收公司门户和其他 Office 应用程序的更新，由 Intune 管理的 macOS 设备必须升级到 Microsoft Auto Update 4.5.0。 用户可能已经拥有此版本的 Office 应用程序。
+
+### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Intune 需要 macOS 10.12 或更高版本 <!-- 2827778 -->
+Intune 现在需要 macOS 版本 10.12 或更高版本。 使用以前的 macOS 版本的设备无法使用公司门户注册到 Intune。 若要获得支持和新功能，用户必须将设备升级到 macOS 10.12 或更高版本，并将公司门户升级到最新版本。
 
 ## <a name="week-of-november-26-2018"></a>2018 年 11 月 26 日当周
 
@@ -114,7 +122,7 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 Intune 现在支持对 Apple School Manager 帐户使用 macOS 设备上的设备注册计划。  有关详细信息，请参阅[通过 Apple School Manager 或设备注册计划自动注册 macOS 设备](device-enrollment-program-enroll-macos.md)。
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>新的 Intune 设备订阅 SKU <!--3312071-->
-为了帮助降低企业中管理设备的成本，现在已提供基于设备的新订阅 SKU。 此 Intune 设备 SKU 按月按设备获取许可。 价格因许可计划而异。 可通过直接渠道、企业协议 (EA)、Microsoft 产品和服务计划 (MPSA) 以及开放和云解决方案提供商 (CSP) 获取。
+为了帮助降低企业中管理设备的成本，现在已提供基于设备的新订阅 SKU。 此 Intune 设备 SKU 按月按设备获取许可。 价格因许可计划而异。 可直接通过 Office 管理门户，以及通过[企业协议](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA)、[Microsoft 产品和服务协议](https://www.microsoft.com/licensing/mpsa/default) (MPSA)、[Microsoft 开放式协议](https://partner.microsoft.com/licensing/licensing-agreements)和[云解决方案提供商](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP) 获得许可。
 
 ### <a name="device-management"></a>设备管理
 
@@ -187,9 +195,9 @@ Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>适用于 Android、Android 企业版的新的“所需密码类型”默认设置 <!-- 2649963 -->
 创建新的符合性策略时（“Intune” > “设备符合性” > “策略” > “创建策略” > > Android 或 Android Enterprise 平台 >“系统安全性”），所需密码类型的默认值会更改：
 
-从“设备默认值”更改为“至少为数字”
+开始时间：设备默认设置：最少数字
 
-适用对象：Android、Android Enterprise
+适用于：Android、Android Enterprise
 
 要查看这些设置，请转到 [Android](compliance-policy-create-android.md) 和 [Android Enterprise](compliance-policy-create-android-for-work.md)。
 
@@ -213,15 +221,18 @@ Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新的 Azure Active Directory 使用条款功能 <!-- 2870393 -->
 Azure Active Directory 具备可供使用的使用条款功能，而不必再使用现有的 Intune 条款和条件。 Azure AD 使用条款功能在显示哪些条款以及何时显示这些条款方面更加灵活，并能更好地支持本地化，更好地控制条款的呈现方式以及改进报告。 Azure AD 使用条款功能需要 Azure Active Directory Premium P1，后者也是企业移动性 + 安全性 E3 套件的一部分。 要了解详情，请参阅[管理公司的用户访问条款和条件](terms-and-conditions-create.md)一文。
 
-### <a name="android-device-owner-mode-support---3188762--"></a>Android 设备所有者模式支持 <!--3188762-->
+#### <a name="android-device-owner-mode-support---3188762--"></a>Android 设备所有者模式支持 <!--3188762-->
 对于 Samsung Knox 移动注册，Intune 现在支持将设备注册到 Android 设备所有者管理模式。 使用 WiFi 或移动电话网络的用户在第一次打开他们的设备时，只需几次点击即可进行注册。 有关详细信息，请参阅[使用 Samsung 的 Knox 移动注册自动注册 Android 设备](android-samsung-knox-mobile-enroll.md)。
 
 ### <a name="device-management"></a>设备管理
+#### <a name="new-settings-for-software-updates------1907869--wnready---"></a>软件更新的新设置 <!-- 1907869  wnready -->  
+- 现在可以将某些通知配置为向最终用户发出完成最新软件更新安装后需要重新启动的警报。   
+- 现在可以配置在非工作时间重新启动的重新启动警告提示，这支持 BYOD 方案。
 
-### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>按交换码 ID 对已注册 Windows Autopilot 的设备进行分组 <!-- 2075110 -->
+#### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>按交换码 ID 对已注册 Windows Autopilot 的设备进行分组 <!-- 2075110 -->
 通过 Configuration Manager [使用 Autopilot 为现有设备注册](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)时，Intune 现已支持按交换码 ID 对 Windows 设备进行分组。 交换码 ID 是 Autopilot 配置文件的参数。 Intune 会自动将 [Azure AD 设备属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) 设置为“OfflineAutopilotprofile - <correlator ID>”。 如此，即可通过离线 Autopilot 注册的 enrollmentprofileName 属性，根据交换码 ID 创建任意 Azure AD 动态组。 有关详细信息，请参阅[现有设备的 Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)。
 
-### <a name="intune-app-protection-policies----2984657---"></a>Intune 应用保护策略 <!-- 2984657 -->
+#### <a name="intune-app-protection-policies----2984657---"></a>Intune 应用保护策略 <!-- 2984657 -->
 可使用 Intune 应用保护策略为受 Intune 保护的应用（如 Microsoft Outlook 和 Microsoft Word）配置各种数据保护设置。 我们为 [iOS](app-protection-policy-settings-ios.md) 和 [Android](app-protection-policy-settings-android.md) 更改了这些设置的外观，以便更轻松地查找单个设置。 策略设置分为三类：
 - **数据重定位** - 此组包含数据丢失防护 (DLP) 控件，如剪切、复制、粘贴和另存为限制。 这些设置决定了用户与应用中的数据的交互方式。
 - **访问要求** - 该组包含每个应用的 PIN 选项，用于确定最终用户在工作环境中访问应用的方式。  
@@ -591,9 +602,9 @@ Microsoft Intune 允许将 macOS LOB 应用部署为“必需”或“注册时�
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>在 macOS 设备上使用防火墙设置创建设备符合性策略 <!-- 1497640 -->
 创建新的 macOS 符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: macOS” > “系统安全性”）时，有一些新的可用“防火墙”设置： 
 
-- 防火墙：配置环境对传入连接的处理方式。
-- 传入连接：阻止所有传入连接，DHCP、Bonjour 和 IPSec 等基本 Internet 服务需要的连接除外。 此设置还会阻止所有共享服务。
-- 隐藏模式：启用隐藏模式以防止设备响应探测请求。 设备会继续回应已授权应用的传入请求。
+- **防火墙**：配置环境对传入连接的处理方式。
+- **传入连接**：阻止所有传入连接，DHCP、Bonjour 和 IPSec 等基本 Internet 服务需要的连接除外。 此设置还会阻止所有共享服务。
+- **隐藏模式**：启用隐藏模式以防止设备响应探测请求。 设备会继续回应已授权应用的传入请求。
 
 适用于：macOS 10.12 及更高版本
 
@@ -689,8 +700,8 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>公司门户应用中不合规消息的更新<!-- 1832222 -->
 我们修改了设备用户在设备不合规时看到的消息。 消息保留其原始含义，但已使用更友好的语言和更少的技术术语进行了更新。 我们还刷新了文档和修正步骤的链接，使其保持最新状态。
 以下修改前后的内容是将看到的消息改进的一个示例：
-- 修改前：此设备未在 IT 管理员要求的指定时间内联系 Intune 服务。要解决此问题，请打开设备上的公司门户应用，单击“检查符合性”按钮。
-- 修改后：设备在一段时间内未签入组织。要重新建立连接，请打开设备上的公司门户应用并点击设备的“检查设置”。
+- **修改前**：*此设备未在 IT 管理员要求的指定时间内联系 Intune 服务。* 要解决此问题，请打开设备上的公司门户应用，单击“检查符合性”按钮。
+- **修改后**：*设备在一段时间内未签入组织。* 要重新建立连接，请打开设备上的公司门户应用并点击设备的“检查设置”。
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>撤消 iOS VPP 应用许可证 <!-- 1863797 -->
 作为管理员，可回收分配给用户或设备的 iOS VPP 应用许可证。 也可通过卸载 iOS VPP 应用回收应用许可证。 卸载应用前，需要将用户或设备从应用的目标组中删除。 从该组中删除用户或设备可避免重新安装该应用。 完成这些步骤后，可选择将该应用许可证分配给其他用户或设备。 有关 iOS VPP 应用许可证的详细信息，请参阅[在 Microsoft Intune 中管理 iOS 批量购买的应用](vpp-apps-ios.md)。
@@ -721,9 +732,9 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 - 不适用 还显示了图像，展示其他平台的设备计数。 例如，如果正在查看 iOS 配置文件，则新磁贴会显示同时分配给到配置文件的非 iOS 设备数。 请参阅[设备符合性策略](compliance-policy-monitor.md#view-status-of-device-policies)。
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>设备符合性支持第三方防病毒解决方案 <!-- 2325484 -->
-当创建设备符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: Windows 10 及更高版本” > “设置” > “系统安全”）时，会出现新的[设备安全性](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)选项： 
-- 防病毒：当设置为“需要”时，可使用在 Windows 安全中心注册的防病毒解决方案（如 Symantec 和 Windows Defender）来检查符合性。 
-- 反间谍软件：当设置为“需要”时，可以使用在 Windows 安全中心注册的反间谍软件解决方案（如 Symantec 和 Windows Defender）来检查符合性。 
+创建设备符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: Windows 10 及更高版本” > “设置” > “系统安全”）时，有以下新的**[设备安全](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** 选项： 
+- **防病毒**：当设置为“必需”时，可以使用在 Windows 安全中心注册的防病毒解决方案（如 Symantec 和 Windows Defender）来检查符合性。 
+- **反间谍软件**：当设置为“必需”时，可以使用在 Windows 安全中心注册的反间谍软件解决方案（如 Symantec 和 Windows Defender）来检查符合性。 
 
 适用于：Windows 10 及更高版本 
 
@@ -830,7 +841,7 @@ AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD �
 #### <a name="set-compliance-by-device-location----851881----"></a>按设备位置设置符合性 <!-- 851881 ! -->
 在某些情况下，你可能想要将访问企业资源的权限限制到某个特定位置（该位置由网络连接定义）。 现在可以基于设备的 IP 地址来创建符合性策略（“设备符合性” > “位置”）。 如果设备移动到 IP 范围以外，则该设备将无法访问企业资源。
 
-适用于：拥有更新的公司门户应用的 Android 设备 6.0 及更高版本
+适用于：Android 设备 6.0 及更高版本，并安装了最新的公司门户应用
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>在 Windows 10 企业版 RS4 AutoPilot 设备上阻止使用者应用和体验<!-- 1621980 -->
 你将能够阻止在 Windows 10 企业版 RS4 AutoPilot 设备上安装使用者应用和体验。 要查看此功能，请转到“Intune” > “设备配置” > “配置文件” > “创建配置文件” > “平台” = “Windows 10 或更高版本” > “配置文件类型” = “设备限制” > “配置” > “Windows 聚焦” > “使用者功能”。 
@@ -844,7 +855,7 @@ AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD �
 #### <a name="management-name-field-will-be-editable----1875989---"></a>管理名称字段将可编辑 <!-- 1875989 -->
 现在可以在设备的“属性”边栏选项卡上编辑管理名称字段。 若要编辑此字段，请选择“设备” > “所有设备”> 选择设备 >“属性”。 可以使用管理名称字段来唯一标识设备。
 
-#### <a name="new-all-devices-filter-device-category----1878520---"></a>新建所有设备筛选器：设备类别 <!-- 1878520 -->
+#### <a name="new-all-devices-filter-device-category----1878520---"></a>新的“所有设备”筛选器：设备类别 <!-- 1878520 -->
 现在可以按设备类别筛选“所有设备”列表。 为此，请选择“设备” > “所有设备” > “筛选器” > “设备类别”。
 
 #### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>使用 TeamViewer 共享 iOS 和 MacOS 设备的屏幕 <!-- 1985547 -->
@@ -944,23 +955,23 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 
 启用（不配置）后，工作联系人的呼叫方详细信息将显示在个人资料中。 阻止后，工作联系人的呼叫方号码不会显示在个人资料中。 
 
-适用范围：Android OS v6.0 和更高版本的 Android 工作配置文件设备
+适用于：Android OS v6.0 和更高版本的 Android 工作配置文件设备
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>添加到 Endpoint Protection 设置的新 Windows Defender Credential Guard 设置<!--1102252 --><!--from 1802 and 1804-->
 
 此次更新后，[Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard)（“设备配置” > “配置文件” > “Endpoint Protection”）将包括以下设置： 
 
-- Windows Defender Credential Guard：以基于虚拟化的安全性启用 Credential Guard。 启用此功能可帮助在下次同时启用“使用安全启动的平台安全级别”和“基于虚拟化的安全性”而重新启动时保护凭据。 选项包括：
-  - 禁用：如果之前已使用“无锁启用”选项启用 Credential Guard，则会远程关闭 Credential Guard。
+- **Windows Defender Credential Guard**：以基于虚拟化的安全性启用 Credential Guard。 启用此功能可帮助在下次同时启用“使用安全启动的平台安全级别”和“基于虚拟化的安全性”而重新启动时保护凭据。 选项包括：
+  - **禁用**：如果之前已使用“无锁启用”选项启用 Credential Guard，则会远程关闭 Credential Guard。
 
-  - 使用 UEFI 锁启用：可确保 Credential Guard 不能使用注册表项或使用组策略禁用。 若要使用此设置来禁用 Credential Guard，必须将组策略设置为“禁用”。 然后，与实际存在的用户一起，从每台计算机中删除安全功能。 这些步骤清除保留在 UEFI 中的配置。 只要 UEFI 配置仍然存在，Credential Guard 就会保持启用状态。
+  - **使用 UEFI 锁启用**：可确保 Credential Guard 不能使用注册表项或使用组策略禁用。 若要使用此设置来禁用 Credential Guard，必须将组策略设置为“禁用”。 然后，与实际存在的用户一起，从每台计算机中删除安全功能。 这些步骤清除保留在 UEFI 中的配置。 只要 UEFI 配置仍然存在，Credential Guard 就会保持启用状态。
 
-  - 无锁启用：允许使用组策略远程禁用 Credential Guard。 使用此设置的设备必须至少在 Windows 10（版本 1511）上运行。
+  - **无锁启用**：允许使用组策略远程禁用 Credential Guard。 使用此设置的设备必须至少在 Windows 10（版本 1511）上运行。
 
 配置 Credential Guard 时，会自动启用以下相关技术： 
 
-  - 启用基于虚拟化的安全性 (VBS)：在下次重新启动时启用基于虚拟化的安全性 (VBS)。 基于虚拟化的安全性使用 Windows 虚拟机监控程序提供对安全服务的支持，并要求“安全启动”。
-  - 安全启动和直接内存访问 (DMA)：通过“安全启动”和直接内存访问启用 VBS。 DMA 保护需要硬件支持，并且仅在正确配置的设备上启用。 
+  - **启用基于虚拟化的安全 (VBS)**：在下次重新启动时打开基于虚拟化的安全 (VBS)。 基于虚拟化的安全性使用 Windows 虚拟机监控程序提供对安全服务的支持，并要求“安全启动”。
+  - **安全启动和直接内存访问 (DMA)**：通过“安全启动”和直接内存访问启用 VBS。 DMA 保护需要硬件支持，并且仅在正确配置的设备上启用。 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>对 SCEP 证书使用自定义使用者名称<!-- 2064190 -->
 可以使用“OnPremisesSamAccountName”作为 SCEP 证书配置文件中自定义使用者的公用名称。 例如，你可以使用 `CN={OnPremisesSamAccountName})`。
@@ -1042,7 +1053,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 #### <a name="use-cisco-anyconnect-client-for-ios----1333708---"></a>对 iOS 使用 Cisco AnyConnect 客户端 <!-- 1333708 -->
 
-为 iOS 创建新的 VPN 配置文件时，现在提供两个选项：Cisco AnyConnect 和 Cisco Legacy AnyConnect。 Cisco AnyConnect 配置文件支持 4.0.7x 和更新版本。 现有 iOS Cisco AnyConnect VPN 配置文件将被标记为“Cisco Legacy AnyConnect”，并将继续适用于 Cisco AnyConnect 4.0.5x 和较旧版本，如现在一样。
+创建适用于 iOS 的新 VPN 配置文件时，现在有以下两个选项：Cisco AnyConnect 和 Cisco 旧式 AnyConnect。 Cisco AnyConnect 配置文件支持 4.0.7x 和更新版本。 现有 iOS Cisco AnyConnect VPN 配置文件将被标记为“Cisco Legacy AnyConnect”，并将继续适用于 Cisco AnyConnect 4.0.5x 和较旧版本，如现在一样。
 
 > [!NOTE]
 > 此更改仅适用于 iOS。 将继续只提供一个适用于 Android、Android Enterprise 工作配置文件和 macOS 平台的 Cisco AnyConnect 选项。
@@ -1097,7 +1108,7 @@ macOS 公司门户版本 1.3 和 1.4 未成功向 Intune 注册 Jamf 设备。 m
 
 ## <a name="notices"></a>通知
 
-### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>计划更改：Exchange Online 到 Intune 连接器在 Intune 中不可用 <!-- 3105122 -->
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>更改计划：Exchange Online 到 Intune 连接器在 Intune 中不可用 <!-- 3105122 -->
 若要简化 Exchange Online 和条件访问，我们将禁用 Exchange Online 到 Intune“服务间”连接器。 此更改将从 12 月服务更新开始，并于 2019 年 2 月服务更新结束。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
@@ -1133,7 +1144,7 @@ Intune for Education 客户有两个动态的 Azure Active Directory (Azure AD) 
 如果当前将策略分配给 Azure 上的 Intune 中提到的 Azure AD 组，请将这些策略分配给 Intune for Education 控制台中的“所有用户”和“所有设备”组。 当在控制台中看到 Azure AD 组已重命名为已过时时，请停止在 Azure AD 中分配策略。 如果当前没有将重命名的组用于任何其他目的，则应将其删除。
 
 
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>更改计划：Intune 将于 12 月支持 macOS 10.12 及更高版本 <!--2970975--> 
+### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>更改计划：随后，Intune 将于 12 月支持 macOS 10.12 及更高版本 <!--2970975--> 
 
 Apple 刚刚发布了 macOS 10.14。 随后，Intune 将于 2018 年 12 月支持 macOS 10.12 及更高版本。 
 
@@ -1162,6 +1173,8 @@ Apple 刚刚发布了 macOS 10.14。 随后，Intune 将于 2018 年 12 月支�
  
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>更改计划：针对顶级客户的新 Intune 支持体验 
+2018 年 12 月 4 日更新：我们正在尝试改善此过程，以便 MPO 中的支持请求创建不会在 12 月 3 日（而是在更晚的日期）禁用。 我们将通过消息中心通知用户并尽快更新此文章以共享此更改的时间线。
+
 作为 Microsoft 顶级客户，你当前可以使用 Microsoft Premier Online (MPO) 门户 (premier.microsoft.com) 和 Intune on Azure (portal.azure.com) 为 Intune 创建支持请求。 从 2018 年 12 月 3 日起，为了继续增强顶级支持体验，你将仅能在 Intune on Azure 中创建支持请求。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
@@ -1194,7 +1207,7 @@ https://aka.ms/PasswordSettings
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 将要求更新应用传输安全<!--748318-->
 Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求。 使用 ATS 对所有通过 HTTPS 的应用通信实施更严格的安全措施。 此更改会影响使用 iOS 公司门户应用的 Intune 客户。 我们将在 [Intune 支持博客](https://aka.ms/compportalats)中介绍详细信息。
 
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>更改计划：Intune 将移动到 TLS 1.2
+### <a name="plan-for-change-intune-moving-to-tls-12"></a>更改计划：将 Intune 移动到 TLS 1.2
 从 2018 年 10 月 31 日 开始，Intune 将支持可提供同类最佳加密的传输层安全性 (TLS) 协议版本 1.2，以确保我们的服务在默认情况下更加安全，并与 Microsoft Office 365 等其他 Microsoft 服务保持一致。 Office 已在 MC128929 中传达了此更改。
 
 公司门户也将于 2018 年 10 月 31 日支持 TLS 1.2。
@@ -1207,7 +1220,7 @@ Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求�
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
 我们建议主动删除环境中的 TLS 1.0 和 1.1 依赖项，并尽量在操作系统级别禁用 TLS 1.0 和 1.1。 立即开始针对迁移到 TLS 1.2 进行规划。 请查看下面的支持博客文章，获取 Intune 现在不支持但仍可接收策略以及未来将无法使用 TLS 版本 1.2 进行通信的设备的列表。 可能需要通知那些最终用户，他们即将失去对公司资源的访问权限。
 
-**其他信息**：[Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)（将 Intune 移动到 TLS 1.2 以进行加密）
+**其他信息**：[将 Intune 移动到 TLS 1.2 以进行加密](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
 
 

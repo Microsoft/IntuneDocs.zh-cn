@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73be6facab5deb8a09462dc03c4683af3d34c027
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 290d60732130a82fb3daf7779142605ebc0bfeaa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829226"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112997"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
@@ -108,7 +108,7 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
 
 #### <a name="configure-gatekeeper-to-control-macos-app-download-source----1690459---"></a>配置网关守卫以控制 macOS 应用下载源 <!-- 1690459 -->
 
-可以配置网关守卫，通过控制可以下载应用的位置保护设备免受应用侵害。 可以配置以下下载源：Mac App Store、Mac App Store 和已识别的开发人员，或任意位置。 还可以配置用户是否可以通过按住 Control 并单击以替代这些网关守卫控件来安装应用。
+可以配置网关守卫，通过控制可以下载应用的位置保护设备免受应用侵害。 你可以配置以下下载源：Mac 应用商店、Mac 应用商店和确定的开发人员或任何来源。 还可以配置用户是否可以通过按住 Control 并单击以替代这些网关守卫控件来安装应用。
 
 可以在“设备配置” -> “创建配置文件” -> “macOS” -> “终结点保护”下找到这些设置。
 
@@ -148,7 +148,7 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
    启用此选项可防止计算机对探测请求做出响应。 计算机仍然会响应授权应用的传入请求。 意外的请求将被忽略，如 ICMP (ping)。
 
 #### <a name="disable-checks-on-device-restart---1805490---"></a>禁用设备重启检查 <!--1805490 -->
-通过 Intune 可以 [管理软件更新]](windows-update-for-business-configure.md)。 进行此更新后，提供“重新启动检查”属性，并默认启用。 要跳过重启设备时出现的典型检查（如活动用户、电池水平等），请选择“跳过”。
+Intune 使你可以控制[对软件更新的管理](windows-update-for-business-configure.md)。 进行此更新后，提供“重新启动检查”属性，并默认启用。 要跳过重启设备时出现的典型检查（如活动用户、电池水平等），请选择“跳过”。
 
 #### <a name="new-windows-10-insider-preview-channels-available-for-deployment-rings----1746293---"></a>提供用于部署圈的新 Windows 10 Insider Preview 通道<!-- 1746293 -->
 现在创建 Windows 10 部署圈时，可以选择是否选择以下 Windows 10 Insider Preview 服务通道：
@@ -161,7 +161,7 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
 
 ### <a name="new-windows-defender-exploit-guard-settings----1631893---"></a>新 Windows Defender 攻击防护设置 <!-- 1631893 -->
 
-现可提供六个新的“攻击面减少”设置和扩展的“受控文件夹访问权限: 文件夹保护”功能。 这些设置可以在 Device configuration\Profiles\
+现可提供六个新的“攻击面减少”设置和扩展的“受控文件夹访问权限: 文件夹保护”功能。 可以在以下位置找到这些设置：Device configuration\Profiles\
 Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 
 #### <a name="attack-surface-reduction"></a>攻击面减少
@@ -233,10 +233,10 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 #### <a name="new-additions-to-our-docs-about-user-privacy----1440709---"></a>新增了一些有关用户隐私的文档<!-- 1440709 -->
 我们一直在努力增强用户对其数据和隐私的控制权，作为此工作的一部分，我们更新了一些文档，在其中介绍了如何通过公司门户应用查看和删除存储在本地的数据。 了解这些更新的方式如下：
 
-- **Android**[如何从 Intune 删除 Android 设备](/intune-user-help/unenroll-your-device-from-intune-android.md)
-- **Android（如果用户拒绝了使用条款）**：[拒绝“使用条款”后如何删除设备管理](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
-- **iOS**：[从 Intune 删除 iOS 设备](/intune-user-help/unenroll-your-device-from-intune-ios.md)
-- **Windows**：[从 Intune 删除 Windows 设备](/intune-user-help/unenroll-your-device-from-intune-windows.md)
+- **Android**：[如何从 Intune 删除 Android 设备](/intune-user-help/unenroll-your-device-from-intune-android)
+- **Android（如果用户拒绝了使用条款）**：[拒绝“使用条款”后删除对设备的管理](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **iOS**：[从 Intune 删除 iOS 设备](/intune-user-help/unenroll-your-device-from-intune-ios)
+- **Windows**：[从 Intune 删除 Windows 设备](/intune-user-help/unenroll-your-device-from-intune-windows)
 
 ## <a name="february-2018"></a>2018 年 2 月
 
@@ -294,8 +294,8 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 
 #### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>设备限制的新隐私设置 <!--1308926 -->
 现在将为设备提供[两个新的隐私设置](device-restrictions-windows-10.md#privacy)：
-- **发布用户活动**：将此设置为“阻止”以阻止任务切换程序中最近使用资源的共享体验和发现。
-- **仅限本地活动**：将此设置为“阻止”以仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。
+- **发布用户活动**：将此设置为“阻止”可阻止任务切换程序中最近使用资源的共享体验和发现。
+- **仅限本地活动**：将此设置为“阻止”可仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。
 
 #### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Microsoft Edge 浏览器的新设置 <!--1469166 -->
 现在将为具有 Microsoft Edge 浏览器的设备提供[两个新设置](device-restrictions-windows-10.md#microsoft-edge-browser)：“到收藏夹文件的路径”和“对收藏夹的更改”。
@@ -1039,7 +1039,7 @@ Android Oreo 中启用的新 UI 元素有进一步的优化。  最终用户将
 
 ### <a name="block-unsupported-samsung-knox-device-enrollment----1490695---"></a>阻止不受支持的 Samsung Knox 设备注册  <!-- 1490695 -->
 
-公司门户应用仅尝试注册受支持的 Samsung Knox 设备。 为了避免出现阻止 MDM 注册的 Knox 激活错误，仅在 [Samsung 发布的设备列表](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中有相应设备时，才尝试执行设备注册。 Samsung 设备的一些型号支持 Knox，而另一些型号则不支持 Knox。 购买并部署前，请与设备经销商确认 Knox 兼容性。 有关已验证设备的完整列表，可以参阅 [Android 和 Samsung Knox Standard 策略设置](/intune/supported-devices-browsers.md#intune-supported-web-browsers)。
+公司门户应用仅尝试注册受支持的 Samsung Knox 设备。 为了避免出现阻止 MDM 注册的 Knox 激活错误，仅在 [Samsung 发布的设备列表](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中有相应设备时，才尝试执行设备注册。 Samsung 设备的一些型号支持 Knox，而另一些型号则不支持 Knox。 购买并部署前，请与设备经销商确认 Knox 兼容性。 有关已验证设备的完整列表，可以参阅 [Android 和 Samsung Knox Standard 策略设置](supported-devices-browsers.md#intune-supported-web-browsers)。
 
 ### <a name="end-of-support-for-android-43-and-lower----1171126-1326920---"></a>停止对 Android 4.3 及更低版本的支持 <!-- 1171126, 1326920 -->
 Android 托管的应用和公司门户应用需要使用 Android 4.4 和更高版本访问公司资源。 截至 12 月，所有注册的设备都将在 12 月内被强制停用，进而将无法再访问公司资源。 如果使用应用保护策略而不使用 MDM，应用将不会收到更新，并且随着时间推移其体验质量将会降低。
@@ -1548,7 +1548,7 @@ Intune 新增了注册限制，可控制允许注册的移动设备平台。 Int
 * 限制移动设备注册不会限制电脑客户端注册。  
 * 阻止个人自有设备的注册有一个附加选项，该选项仅适用于 iOS 和 Android。
 
-Intune 将所有新设备都标记为个人所有，除非 IT 管理员将设备标记为公司所有，如[本文](https://docs.microsoft.com/intune-classic/deploy-use/manage-corporate-owned-devices)所述。
+Intune 将所有新设备都标记为个人所有，除非 IT 管理员将设备标记为公司所有，如[本文](device-enrollment.md)所述。
 
 ### <a name="view-all-actions-on-managed-devices---677150--"></a>查看托管设备上的所有操作<!--677150-->
 新添加的__设备操作__报表显示了在设备上执行远程操作（如出厂重置）的操作者，还额外显示了该操作的状态。 请参阅 [What is device management?](device-management.md)（什么是设备管理？）。

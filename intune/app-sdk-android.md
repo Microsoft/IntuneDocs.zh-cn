@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 12/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829175"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168022"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -38,11 +38,11 @@ Intune App SDK 包括下列文件：
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**：在使用 Android v4 支持库的应用中启用 MAM 所需的类。
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar**：在使用 Android v7 支持库的应用中启用 MAM 所需的类。
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**：在使用 Android v17 支持库的应用中启用 MAM 所需的类。 
-* **Microsoft.Intune.MAM.SDK.Support.Text.jar**：在使用包 `android.support.text` 中 Android 支持库类的应用中启用 MAM 所需的类。
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar**：在使用 `android.support.text` 包中 Android 支持库类的应用中启用 MAM 所需的类。
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**：此 jar 包含 Android 系统类的存根，它们仅存在于较新的设备上，由 MAMActivity 中的方法引用。 较新的设备将忽略这些存根类。 仅当应用对从 MAMActivity 派生的类执行反射时，此 jar 才是必需的，而大多数应用无需包含它。 如果使用此 jar，则必须小心将其所有类从 ProGuard 中排除。 它们都将位于“android”根包下
-* **com.microsoft.intune.mam.build.jar**：[帮助集成 SDK](#build-tooling) 的一个 Gradle 插件。
+* **com.microsoft.intune.mam.build.jar**：Gradle 插件，[可帮助集成 SDK](#build-tooling)。
 * **CHANGELOG.txt**：提供每个 SDK 版本中所做的更改记录。
-* **THIRDPARTYNOTICES.TXT**：一个归属声明，用于确认将在应用中编译的第三方和/或 OSS 代码。
+* **THIRDPARTYNOTICES.TXT**：一个归属声明，用于确认将编译到应用中的第三方和/或 OSS 代码。
 
 ## <a name="requirements"></a>要求
 
@@ -451,7 +451,7 @@ String toString();
 > [!NOTE]
 > `MAMPolicyManager.getPolicy` 会始终返回非 null 应用策略（即使设备或应用不在 Intune 管理策略下，也是如此）。
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>示例：确定应用是否需要 PIN
+### <a name="example-determine-if-pin-is-required-for-the-app"></a>例如：确定应用是否需要 PIN
 
 如果应用有其自己的 PIN 用户体验，则当 IT 管理员将 SDK 配置为提示输入应用 PIN 时，你可能要将其禁用。 若要确定 IT 管理员是否已为当前最终用户对此应用部署应用 PIN 策略，请调用以下方法：
 
@@ -460,7 +460,7 @@ String toString();
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-the-primary-intune-user"></a>示例：确定主要 Intune 用户
+### <a name="example-determine-the-primary-intune-user"></a>例如：确定主要 Intune 用户
 
 除了 AppPolicy 中公开的 API，`MAMUserInfo` 接口内定义的 `getPrimaryUser()` API 还公开了用户主体名称 (**UPN**)。 若要获取 UPN，请调用以下项：
 
@@ -486,7 +486,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>示例：确定是否允许保存到设备或云存储
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>例如：确定是否允许保存到设备或云存储
 
 许多应用都可实现允许最终用户在本地保存文件或保存到云存储服务的功能。 使用 Intune App SDK，IT 管理员可通过应用他们认为适合于组织的策略限制来防止数据泄漏。  例如，IT 可以控制最终用户是否可以保存到“个人”非托管数据存储。 这包括保存到本地位置、SD 卡或第三方备份服务。
 
@@ -844,7 +844,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 * 支持主权云需要提供颁发机构。
 #### <a name="registration"></a>注册
 
-* 为方便起见，注册方法为幂等；例如，`registerAccountForMAM()` 将仅在尚未注册帐户时注册该帐户并尝试注册应用，`unregisterAccountForMAM()` 将仅在目前已注册帐户时取消注册该帐户。 后续调用没有操作，因此，多次调用这些方法不会产生任何危害。 此外，并不保证对这些方法的调用和结果通知之间是一一对应的：即如果为某个已注册的标识调用 `registerAccountForMAM`，可能不会再次为该标识发送通知。 可能发送的通知并未与对这些方法的任何调用对应，因为 SDK 可能定期在后台尝试注册，并且从 Intune 服务接收的擦除请求可能触发取消注册。
+* 为方便起见，注册方法为幂等；例如，`registerAccountForMAM()` 将仅在尚未注册帐户时注册该帐户并尝试注册应用，`unregisterAccountForMAM()` 将仅在目前已注册帐户时取消注册该帐户。 后续调用没有操作，因此，多次调用这些方法不会产生任何危害。 此外，并不保证对这些方法的调用和结果通知之间是一对一对应的：即，如果为某个已注册的标识调用 `registerAccountForMAM`，可能不会再次为该标识发送通知。 可能发送的通知并未与对这些方法的任何调用对应，因为 SDK 可能定期在后台尝试注册，并且从 Intune 服务接收的擦除请求可能触发取消注册。
 
 * 可以为任意数量的不同标识调用注册方法，但当前只有一个用户帐户可以成功注册。 如果同时或近乎同时注册了获得 Intune 许可并应用了应用保护策略的多个用户帐户，不保证哪个帐户将会注册成功。
 
@@ -916,7 +916,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
 
 4. 然后， _**必须**_ 将所有置于 `android:fullBackupContent` 的内容复制到清单中名为 `com.microsoft.intune.mam.FullBackupContent` 的元数据标记。
 
-    **示例 1**：如果你希望应用在无需排除的情况下进行完整备份，请同时将 `android:fullBackupContent` 属性和 `com.microsoft.intune.mam.FullBackupContent` 元数据标记设置为 **true**：
+    **示例 1**：如果你希望应用在无需排除的情况下进行完整备份，请同时将 `android:fullBackupContent` 属性和 `com.microsoft.intune.mam.FullBackupContent` 元数据标记设置为 true：
 
     ```xml
     android:fullBackupContent="true"
@@ -924,7 +924,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
     ```
 
-    **示例 2**：如果你希望应用使用其自定义 BackupAgent 并选择退出符合 Intune 策略的完整自动备份，则必须将属性和元数据标记同时设置为 **false**：
+    **示例 2**：如果希望应用使用其自定义 BackupAgent 并选择退出符合 Intune 策略的完整自动备份，则必须将属性和元数据标记同时设置为 false：
 
     ```xml
     android:fullBackupContent="false"
@@ -932,7 +932,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    示例 3：如果希望应用根据 XML 文件中定义的自定义规则具有完整备份，将属性和元数据标记设置为相同的 XML 资源：
+    **示例 3**：如果希望应用根据 XML 文件中定义的自定义规则具有完整备份，将属性和元数据标记设置为相同的 XML 资源：
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -1616,9 +1616,8 @@ public interface MAMAppConfig {
 4. 通过将以下值放入清单来启用所需的 MAM 策略：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
-
-> [!NOTE]
-    > 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则将发生冲突。
+   >
+   > 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则将发生冲突。
 
 3. 通过将以下值放入清单来启用所需的 MAM 策略：
 ```xml

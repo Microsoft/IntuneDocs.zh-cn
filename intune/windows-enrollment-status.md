@@ -1,7 +1,7 @@
 ---
 title: 设置注册状态页
 titleSuffix: Microsoft Intune
-description: 为注册 Windows 10 设备的用户献上问候。
+description: 为注册 Windows 10 设备的用户设置问候语页面。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729035"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032089"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>设置注册状态页
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-在安装设备期间，“注册状态”页将显示设备上的安装信息。 某些应用程序、配置文件和证书在用户完成开箱即用的注册登录到设备时可能尚未安装。 注册状态页有助于用户在设备安装期间了解其设备的状态。 可以创建多个注册状态页配置文件，并将其应用到不同的组。 配置文件可以设置为：
+在使用 Intune 安装设备期间，“注册状态”页将显示设备上的安装信息。 某些应用程序、配置文件和证书在用户完成开箱即用的注册登录到设备时可能尚未安装。 注册状态页有助于用户在设备安装期间了解其设备的状态。 可以创建多个注册状态页配置文件，并将其应用到不同的组。 配置文件可以设置为：
 - 显示安装进度。
 - 安装完成之前阻止使用。
 - 指定用户在设备安装失败时可以执行的操作。
