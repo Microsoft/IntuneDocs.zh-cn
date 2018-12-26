@@ -59,7 +59,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 ### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
 
-检测“中间人”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问 **** 。
+检测“中间人”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问。  **** 
 
 **阻止通过 Wi-Fi 访问网络：**
 

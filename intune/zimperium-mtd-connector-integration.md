@@ -73,16 +73,16 @@ Zimperium 应用授权流程如下：
 
 4.  选择“添加 MDM”，然后从“MDM 提供商”列表中选择“Microsoft Intune”。
 
-5.  在你将 Microsoft Intune 设置为 MDM 服务后，“Microsoft Intune 配置”  ****  窗口弹出，在其中为以下每个选项选择“添加 Azure Active Directory”  ****  ：“Zimperium zConsole”、“zIPS iOS 和 Android 应用”，以授权 Zimperium 通过 Azure AD 单一登录与 Intune 和 Azure AD 进行通信。
+5.  在你将 Microsoft Intune 设置为 MDM 服务后，“Microsoft Intune 配置” 窗口弹出，在其中为以下每个选项选择“添加 Azure Active Directory” ：  ****  **** “Zimperium zConsole”、“zIPS iOS 和 Android 应用”，以授权 Zimperium 通过 Azure AD 单一登录与 Intune 和 Azure AD 进行通信。
 
     > [!IMPORTANT]  
     > 必须添加 Zimperium zConsole、zIPS iOS 和 Android 应用，才能完成与 Intune 集成的过程。
 
-6.  选择“接受”，授权 Zimperium 应用与 Intune 和 Azure Active Directory 进行通信  ****  。
+6.  选择“接受”，授权 Zimperium 应用与 Intune 和 Azure Active Directory 进行通信 。  **** 
 
 7.  将 Zimperium zConsole 以及 zIPS iOS 和 Android 应用添加到 Azure AD 后，添加 Azure AD 安全组。 此添加允许 Zimperium 将 Azure AD 安全组与其服务同步。
 
-8.  选择“完成”，保存配置并启动首次 Azure AD 安全组同步  **** 。
+8.  选择“完成”，保存配置并启动首次 Azure AD 安全组同步 。  ****
 
 9.  注销 Zimperium MTD 控制台。
 

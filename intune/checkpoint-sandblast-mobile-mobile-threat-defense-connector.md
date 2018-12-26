@@ -60,7 +60,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 
-检测“中间人”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问 **** 。
+检测“中间人”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问。  **** 
 
 **阻止通过 Wi-Fi 访问网络：**
 
@@ -72,7 +72,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
-检测“中间人”等网络威胁，并根据设备风险阻止公司文件的同步 **** 。
+检测“中间人”等网络威胁，并根据设备风险阻止公司文件的同步。  **** 
 
 **检测到网络威胁时阻止 SharePoint Online：**
 
