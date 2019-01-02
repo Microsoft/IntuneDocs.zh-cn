@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180130"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305924"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>使用 Intune 将应用分配到 Android 工作配置文件设备
 
@@ -56,7 +56,7 @@ Android 企业是适用于 Android 工作配置文件设备和展台设备的程
 
     ![用于处理新应用权限请求的选项](media/approve-app-settings.png)
 
-    应用将获得批准并显示在 IT 管理员控制台中。 接下来，可以[将 Android 工作配置文件应用与 Intune 同步](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune)。 
+    应用将获得批准并显示在 IT 管理员控制台中。 接下来，可以[将 Android 工作配置文件应用与 Intune 同步](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)。 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>将托管的 Google Play 应用与 Intune 同步
 
@@ -84,7 +84,7 @@ Android 企业需要用户先在托管的 Google Play Web 控制台中批准应�
 
 定期访问托管的 Google Play 控制台，查看是否有新权限。 可以将 Google Play 配置为当已批准的应用需要新权限时向你和其他人发送电子邮件。 如果分配了应用，但发现设备上未安装此应用，请执行以下步骤，检查是否有新权限：
 
-1. 转到 [Google Play](http://play.google.com/work)。
+1. 转到 [Google Play](https://play.google.com/work)。
 2. 使用发布和批准应用时所用的 Google 帐户登录。
 3. 选择“更新”选项卡，并检查是否有任何应用需要更新。  
     列出的所有应用都需要新权限，且在应用新权限之前不会进行分配。
