@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181507"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737927"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>在 Microsoft Intune 中包括和排除应用分配
 
@@ -50,7 +50,7 @@ Intune 排除组时不会考虑用户与设备的关联。 在排除设备组的
 5. 选择要分配的应用。 仪表板显示有关应用的信息。 
 6. 在菜单的“管理”部分中选择“分配”。 
 
-    ![Intune 应用分配](./media/apps-inc-exl-01.png)
+    ![分配应用时包括应用分配](./media/apps-inc-exl-01.png)
 7. 选择“添加组”，添加分配有该应用的那些用户组。 
 8. 在“添加组”窗格中，从可用的分配类型中选择某个“分配类型”。
 9. 对于分配类型，请选择“不论是否注册均可使用”。

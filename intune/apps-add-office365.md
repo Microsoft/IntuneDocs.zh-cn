@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c98eb7795ca01db9a78b428faf433109928cff76
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e2958b536aa6603fc9cde14e679a05e4a9d5f4dd
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182256"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266964"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
@@ -71,16 +71,16 @@ ms.locfileid: "52182256"
 1. 在“添加应用”窗格中，选择“应用套件信息”。
 2. 在“应用套件信息”窗格中，请执行以下操作：
     - **套件名称**：输入应用套件的名称，该名称将显示在公司门户中。 请确保使用的所有套件名称都是唯一的。 如果同一应用套件名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
-    - 套件描述：为应用套件输入描述。 例如，可以列出已选择要包括的应用。
-    - 发布者：Microsoft 显示为发布者。
-    - 类别：（可选）选择一个或多个内置应用类别或所创建的类别。 该设置可让用户在浏览公司门户时更轻松地查找应用套件。
-    - 在“公司门户”中将此显示为特别推荐的应用：选择此选项可在用户浏览应用时，在“公司门户”的主页上突出显示应用套件。
-    - 信息 URL：（可选）输入包含此应用相关信息的网站 URL。 在公司门户中向用户显示该 URL。
-    - 隐私 URL：（可选）输入包含此应用相关隐私信息的网站 URL。 在公司门户中向用户显示该 URL。
-    - 开发人员：Microsoft 显示为开发人员。
-    - 所有者：Microsoft 显示为所有者。
-    - 备注：输入与此应用有关的任何备注。
-    - 徽标：用户浏览公司门户时，Office 365 徽标与应用一同显示。
+    - **套件描述**：输入应用套件的描述。 例如，可以列出已选择要包括的应用。
+    - **发布者**：Microsoft 显示为发布者。
+    - **类别**：（可选）选择一个或多个内置应用类别或所创建的类别。 该设置可让用户在浏览公司门户时更轻松地查找应用套件。
+    - **在公司门户中将此应用显示为特色应用**：当用户浏览应用时，选择此选项以在公司门户的主页上突出显示应用套件。
+    - **信息 URL**：（可选）输入包含此应用相关信息的网站的 URL。 在公司门户中向用户显示该 URL。
+    - **隐私 URL**：（可选）输入包含此应用相关隐私信息的网站的 URL。 在公司门户中向用户显示该 URL。
+    - **开发者**：Microsoft 显示为开发者。
+    - **所有者**：Microsoft 显示为所有者。
+    - **备注**：输入想与此应用关联的任何备注。
+    - **徽标**：用户浏览公司门户时，Office 365 徽标与应用一同显示。
 3. 选择“确定”。
 
 ## <a name="configure-app-settings"></a>配置应用设置
@@ -89,8 +89,8 @@ ms.locfileid: "52182256"
 
 1. 在“添加应用”窗格中，选择“应用套件设置”。
 2. 在“应用套件设置”窗格中，请执行以下操作：
-    - Office 版本：选择是否想要分配 32 位或 64 位版本的 Office。 可以在 32 位和 64 位设备上安装 32 位版本，但只能在 64 位设备上安装 64 位版本。
-    - 更新通道：选择在设备上更新 Office 的方式。 有关不同更新通道的信息，请参阅 [Office 365 专业增强版的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。 选择：
+    - **Office 版本**：选择要分配 32 位还是 64 位版本的 Office。 可以在 32 位和 64 位设备上安装 32 位版本，但只能在 64 位设备上安装 64 位版本。
+    - **更新通道**：选择在设备上更新 Office 的方式。 有关不同更新通道的信息，请参阅 [Office 365 专业增强版的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。 选择：
         - **每月**
         - **每月（定向）**
         - **半年**
@@ -105,8 +105,8 @@ ms.locfileid: "52182256"
         有关详细信息，请参阅 [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
 
     - **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)。 Intune 在最终用户计算机上重新安装 Office 时，最终用户将自动获得与以前安装的 .MSI Office 相同的语言包。 
-    - 自动接受应用最终用户许可协议：如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
-    - 使用共享计算机激活：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 [Office 365 的共享计算机激活概述](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
+    - **自动接受应用最终用户许可协议**：如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
+    - **使用共享的计算机激活**：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 [Office 365 的共享计算机激活概述](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **语言**：Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。 <p></p>
     可以为通过 Intune 管理的 Office 365 专业增强版应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。 在“应用套件设置”边栏选项卡中选择“语言”。 有关其他信息，请参阅 [Office 365 专业增强版中的语言部署概述](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
 
@@ -120,33 +120,31 @@ ms.locfileid: "52182256"
 
 ### <a name="status-for-office-csp"></a>Office CSP 的状态
 
-||||
-|-|-|-|
-|状态|阶段|描述|
-|1460 (ERROR_TIMEOUT)|下载|下载 Office 部署工具失败|    
-|13 (ERROR_INVALID_DATA)|-|无法验证下载的 Office 部署工具的签名|
-|来自 CertVerifyCertificateChainPolicy 的错误代码|-|下载的 Office 部署工具的证书检查失败|    
-|997|WIP|安装|
-|0|安装后|安装成功|    
-|1603 (ERROR_INSTALL_FAILURE)|-|任何先决条件检查失败，如：<ul><li>SxS（尝试在安装 2016 MSI 时安装）</li><li>版本不匹配</li><li>其他</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|尝试在计算机上没有即点即用 Office 时卸载|     
-|17002|-|未能完成方案（安装）。 可能的原因：<ul><li>用户已取消安装</li><li>另一个安装取消了安装</li><li>安装期间磁盘空间不足</li><li>未知语言 ID</li></ul>|
-|17004|-|未知 SKU|   
+| 状态 | 阶段 | 描述 |
+|--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1460 (ERROR_TIMEOUT) | 下载 | 下载 Office 部署工具失败 |
+| 13 (ERROR_INVALID_DATA) | - | 无法验证下载的 Office 部署工具的签名 |
+| 来自 CertVerifyCertificateChainPolicy 的错误代码 | - | 下载的 Office 部署工具的证书检查失败 |
+| 997 | WIP | 安装 |
+| 0 | 安装后 | 安装成功 |
+| 1603 (ERROR_INSTALL_FAILURE) | - | 任何先决条件检查失败，如：SxS（尝试在安装 2016 MSI 时安装）版本与其他版本不匹配 |
+| 0x8000ffff (E_UNEXPECTED) | - | 尝试在计算机上没有即点即用 Office 时卸载 |
+| 17002 | - | 未能完成方案（安装）。 可能的原因：用户取消了安装；另一个安装取消了安装；安装期间磁盘空间不足；语言 ID 未知 |
+| 17004 | - | 未知 SKU |
 
 
 ### <a name="office-deployment-tool-error-codes"></a>Office 部署工具错误代码
 
-|||||
-|-|-|-|-|
-|方案|返回代码|UI|备注|
-|没有可用的即点即用安装时卸载工作量|-2147418113、0x8000ffff 或 2147549183|错误代码：30088-1008<br>错误代码：30125-1011 (404)|Office 部署工具|
-|安装 MSI 版本时安装|1603|-|Office 部署工具|
-|用户或另一个安装取消了安装|17002|-|即点即用|
-|尝试在安装了 32 位的设备上安装 64 位。|1603|-|Office 部署工具返回代码|
-|尝试安装未知的 SKU（不是 Office CSP 的合法用例，因为我们只应传入有效的 SKU）|17004|-|即点即用|
-|空间不足|17002|-|即点即用|
-|即点即用客户端无法启动（意外）|17000|-|即点即用|
-|即点即用客户端无法将方案加入队列（意外）|17001|-|即点即用|
+| 方案 | 返回代码 | UI | 备注 |
+|------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
+| 没有可用的即点即用安装时卸载工作量 | -2147418113、0x8000ffff 或 2147549183 | 错误代码:30088-1008 错误代码：30125-1011 (404) | Office 部署工具 |
+| 安装 MSI 版本时安装 | 1603 | - | Office 部署工具 |
+| 用户或另一个安装取消了安装 | 17002 | - | 即点即用 |
+| 尝试在安装了 32 位的设备上安装 64 位。 | 1603 | - | Office 部署工具返回代码 |
+| 尝试安装未知的 SKU（不是 Office CSP 的合法用例，因为我们只应传入有效的 SKU） | 17004 | - | 即点即用 |
+| 空间不足 | 17002 | - | 即点即用 |
+| 即点即用客户端无法启动（意外） | 17000 | - | 即点即用 |
+| 即点即用客户端无法将方案加入队列（意外） | 17001 | - | 即点即用 |
 
 ## <a name="next-steps"></a>后续步骤
 

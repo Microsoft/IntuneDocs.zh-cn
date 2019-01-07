@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 86f0892fe855201b9bdb28d61301353f6588954a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188120"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266999"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
@@ -84,6 +84,19 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 |    用户拒绝了更新应用的提议。 (0x87D13B63)    |    最终用户在更新过程中单击了“取消”。     |
 |    未知错误   (0x87D103E8)    |    出现未知应用安装错误。 如果未出现其他错误，则会显示此错误。    |
 
+### <a name="other-installation-errors"></a>其他安装错误
+
+|    错误消息/代码    |    描述    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF、0x80CF201C（客户端错误）    |    若要安装此应用，你必须具有支持旁加载的系统。 确保使用受信任的签名对应用包进行了签名，并且确保在已启用 AllowAllTrustedApps 策略且已加入域的设备上安装了该应用包，或者在具有 Windows 旁加载许可证且已启用 AllowAllTrustedApps 策略的设备上安装了该应用包。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。     |
+|    0x80073CF0    |    无法打开包。 可能的原因：<ul><li> 未对包进行签名。</li><li> 发布者名称与签名证书使用者不匹配。</li></ul> 有关信息，请查看 AppxPackagingOM 事件日志。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
+|    0x80073CF3    |    包未通过更新、依赖关系或冲突验证。 可能的原因：<ul><li> 传入包与已安装的包冲突。</li><li> 找不到指定的包依赖关系。</li><li> 包不支持正确的处理器体系结构。</li></ul> 有关信息，请查看 AppXDeployment-Server 事件日志。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
+|    0x80073CFB    |    已经安装了提供的包，阻止重新安装此包。 如果正在安装的包与已安装的包并不完全相同，则可能会收到此错误。 确认数字签名也是包的一部分。 对包进行重新构建或者重新签名时，该包与以前安装的包在位方面不再完全相同。 用于修复此错误的两个可能的选项如下所示：<ul><li> 递增应用的版本号，然后对包进行重新构建并重新签名。</li><li> 在安装新包之前，请删除系统上每个用户的旧包。</li></ul> 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
+|    0x87D1041C    |    应用程序安装成功，但未检测到应用程序。 应用已通过 Intune 成功部署，随后可卸载。 卸载应用的原因包括：<ul><li> 最终用户已卸载此应用。</li><li> 包中的标识信息与设备报告不良应用的信息不匹配。</li><li>对于自更新的 MSI，产品版本在 Intune 之外更新后与应用的信息不匹配。</li></ul> 指示用户从公司门户重新安装应用。 注意，在设备下次签入时，将自动重新安装所需应用。    |
+
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>对 Microsoft 应用商店中的应用进行故障排除
+
+[排除 Microsoft 应用商店应用的打包、部署和查询故障](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)主题中的信息有助于解决使用 Intune 或其他方式从 Microsoft 应用商店安装应用时可能会遇到的问题。
 
 ## <a name="next-steps"></a>后续步骤
 

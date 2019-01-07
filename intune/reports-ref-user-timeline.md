@@ -1,12 +1,12 @@
 ---
 title: 数据仓库用户实体时间线
 titlesuffix: Microsoft Intune
-description: 了解 Intune 数据仓库如何表示时间线中的用户。
+description: 了解 Microsoft Intune 数据仓库如何表示时间线中的用户。
 keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4493ea8442642c09ee7a94b9b73fe0412c015649
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d270aef9bd7102148466006f4057f1c598b02b0e
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189905"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642695"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 数据仓库中的生存期表示形式
 

@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031987"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626078"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>设置 Android Enterprise 展台设备的 Intune 注册
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android 通过其公司拥有的一次性解决方案集支持展台型设备。 这些设备用于单一用途，例如数字签名、票据打印或库存管理等。 管理员会将设备的用途限制为有限的一组应用和 Web 链接。 它还可以防止用户在设备上添加其他应用或执行其他操作。
+Android 通过其[专用设备](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use)解决方案集支持展台型设备。 这些设备用于单一用途，例如数字签名、票据打印或库存管理等。 管理员会将设备的用途限制为有限的一组应用和 Web 链接。 它还可以防止用户在设备上添加其他应用或执行其他操作。
 
 Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 Android 企业的特定详细信息，请参阅 [Android 企业要求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)。
 

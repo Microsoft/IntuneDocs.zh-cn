@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Intune 部署 Windows 10 应用
 titlesuffix: ''
-description: 了解 Microsoft Intune 提供的 Windows 10 应用方案。
+description: 了解 Microsoft Intune 提供的 Windows 10 应用部署方案。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: 0ece7f3d5b7f0d01359a342da5e3dca9b8193a27
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977280"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642602"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 部署 Windows 10 应用 
 
@@ -38,7 +38,7 @@ Microsoft Intune 当前支持 Windows 10 设备上的各种应用类型和部署
 
 Windows 10 LOB 应用已签名并上传到 Intune 管理控制台，并且可以包括通用 Windows 平台 (UWP) 应用和 Windows 应用包 (AppX) 等现代应用，以及简单的 Microsoft Installer 包文件 (MSI) 等 Win 32 应用。 每次必须由管理员手动上传和部署 LOB 应用的更新。部署的更新将自动安装在已安装应用且无需用户干预的最终用户设备上。 用户无法控制更新。 
 
-## <a name="microsoft-store-for-business-apps"></a>适用于企业的 Microsoft Store 应用
+## <a name="microsoft-store-for-business-apps"></a>适用于企业的 Microsoft 应用商店应用
 
 适用于企业的 Microsoft Store 应用是从适用于企业的 Microsoft Store 管理门户购买的现代应用，然后同步到 Microsoft Intune 进行管理。 这些应用可以在线获得许可或离线获得许可。 适用于企业的 Microsoft Store 应用的更新由 Microsoft Store 直接管理，管理员无需执行其他操作。管理员还可以使用自定义统一资源标识符 (URI) 阻止对特定应用的更新。 有关详细信息，请参阅 [Enterprise 应用管理 - 防止应用自动更新](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)。 在设备上，最终用户还可以禁用设备上所有适用于企业的 Microsoft Store 应用的更新。 
 
@@ -57,10 +57,10 @@ Windows 10 LOB 应用已签名并上传到 Intune 管理控制台，并且可以
 
 在设备上下文中部署应用时，只有针对支持设备上下文的设备，安装才会成功。 此外，在设备上下文中部署还支持以下条件：
 - 如果应用部署在设备上下文中并针对用户，则安装会失败，并在管理控制台中显示以下状态和错误：
-    - 状态：失败。
+    - 状态:失败。
     - 错误：用户无法成为“设备上下文”安装的目标。
 - 如果应用部署在设备上下文中但针对的是不支持设备上下文的设备，则安装会失败，并在管理控制台中显示以下状态和错误：
-    - 状态：失败。
+    - 状态:失败。
     - 错误：此平台不支持设备上下文安装。 
 
 > [!Note]

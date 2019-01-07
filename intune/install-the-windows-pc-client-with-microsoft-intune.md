@@ -14,19 +14,19 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 66402d9e2bc66ec96de88f64dd61c41e1ddb34e5
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179061"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553633"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 可使用 Microsoft Intune 管理 Windows 电脑，将其作为[使用移动设备管理 (MDM) 的移动设备](windows-enroll.md)或具有 Intune 软件客户端的计算机，如下所述。 但是，Microsoft 建议客户尽可能[使用 MDM 管理解决方案](windows-enroll.md)。
+> 可使用 Microsoft Intune 管理 Windows 电脑，将其作为[使用移动设备管理 (MDM) 的移动设备](windows-enroll.md)或具有 Intune 软件客户端的计算机，如下所述。 但是，Microsoft 建议客户尽可能[使用 MDM 管理解决方案](windows-enroll.md)。 有关详细信息，请参阅[对比作为计算机或移动设备管理 Windows 电脑](pc-management-comparison.md) 
 
 
 通过安装 Intune 客户端软件来注册 Windows 电脑。 Intune 客户端软件可通过以下方法安装：
@@ -260,4 +260,4 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>后续步骤
-[使用 Microsoft Intune 管理设备](device-management.md)
+[使用 Intune 软件客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c96d66a11f49db68d20511aeae9b2abbab53b172
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4e37675186ef21d219627ec3ec1973e6e9944d1d
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181236"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737961"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
 
@@ -34,10 +34,10 @@ ms.locfileid: "52181236"
 
 
 1. **注册为 Microsoft 开发人员**<br>
-   使用登录以购买公司帐户时所使用的公司帐户信息[注册为 Microsoft 开发人员](http://go.microsoft.com/fwlink/?LinkId=268442)。 在你接收代码签名证书之前，此请求需获得公司主管授权。
+   使用登录以购买公司帐户时所使用的公司帐户信息[注册为 Microsoft 开发人员](https://go.microsoft.com/fwlink/?LinkId=268442)。 在你接收代码签名证书之前，此请求需获得公司主管授权。
 
 2. **获取公司 Symantec 证书**<br>
-  使用你的 Symantec ID 从 [Symantec 网站](http://go.microsoft.com/fwlink/?LinkId=268441) 购买证书。 购买证书后，你在注册为 Microsoft 开发人员时指定的公司审批人将收到一封请求审批证书请求的电子邮件。 有关 Symantec 证书要求的详细信息，请参阅[为什么 Windows Phone 需要 Symantec 证书？](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows 设备注册常见问题。
+  使用你的 Symantec ID 从 [Symantec 网站](https://go.microsoft.com/fwlink/?LinkId=268441) 购买证书。 购买证书后，你在注册为 Microsoft 开发人员时指定的公司审批人将收到一封请求审批证书请求的电子邮件。 有关 Symantec 证书要求的详细信息，请参阅[为什么 Windows Phone 需要 Symantec 证书？](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows 设备注册常见问题。
 
 3.  **导入证书**<br>
     批准请求后，你将收到一封包含导入证书说明的电子邮件。 按照电子邮件中的说明导入证书。
@@ -45,14 +45,14 @@ ms.locfileid: "52181236"
 4.  **验证导入的证书**<br>
     要验证是否正确导入了证书，请转到“证书”管理单元，右键单击“证书”，并选择“查找证书”。 在 **“包含”** 字段中输入“Symantec”，然后单击 **“立即查找”**。 导入的证书应出现在结果中。
 
-    ![查找 Symantec 证书](./media/wit.gif)
+    ![在“查找证书”对话框中列出了证书结果](./media/wit.gif)
 
 5. **导出签名证书**<br>
     验证证书是否存在后，可以导出 .pfx 文件以进行公司门户签名。 选择 **“预期目的”** 为“代码签名”的 Symantec 证书。 右键单击代码签名证书并选择**导出**。
 
     ![导出签名证书](./media/wit-walk-cert2.gif)
 
-    在 **“证书导出向导”** 中，选择 **“是，导出私钥”** ，然后单击 **“下一步”**。 **选择“个人信息交换 - PKCS #12 (.PFX)”**，并选择**如果可能，在证书路径中包括所有证书**。 完成向导。 有关详细信息，请参阅 [How to Export a Certificate with the Private Key（如何导出带私钥的证书）](http://go.microsoft.com/fwlink/?LinkID=203031)。
+    在 **“证书导出向导”** 中，选择 **“是，导出私钥”** ，然后单击 **“下一步”**。 **选择“个人信息交换 - PKCS #12 (.PFX)”**，并选择**如果可能，在证书路径中包括所有证书**。 完成向导。 有关详细信息，请参阅 [How to Export a Certificate with the Private Key（如何导出带私钥的证书）](https://go.microsoft.com/fwlink/?LinkID=203031)。
 
 6.  **将应用上传到 Intune**<br>
     上传已签名应用文件和你的代码签名证书，以便最终用户可以使用此应用。
@@ -65,39 +65,39 @@ ms.locfileid: "52181236"
 
     4.  完成向导。
 
-## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>示例：下载、签名和部署适用于 Windows 设备的公司门户应用
+## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>例如：下载、签名和部署适用于 Windows 设备的公司门户应用
 
 可以使用 Intune 将公司门户应用部署到 Windows 设备（包括 Windows Phone 和 Windows 10 移动版设备），而不是从 Microsoft 应用商店进行安装。 必须下载公司门户应用，并使用你的证书对其进行签名。  只有在你的用户不会使用公司应用商店，并且你想要将公司门户部署到 Windows Phone 8.1 设备的情况下，此操作才有必要。
 
 
 1.  **下载公司门户应用**
 
-    若要使用 Intune 部署公司门户应用，可以从下载中心下载 [Microsoft Intune Company Portal App for Windows Phone 8.1](http://go.microsoft.com/fwlink/?LinkId=615799)（适用于 Windows Phone 8.1 的 Microsoft Intune 公司门户应用）并运行自解压缩 (.exe) 文件。 此文件包含两个文件：
+    若要使用 Intune 部署公司门户应用，可以从下载中心下载 [Microsoft Intune Company Portal App for Windows Phone 8.1](https://go.microsoft.com/fwlink/?LinkId=615799)（适用于 Windows Phone 8.1 的 Microsoft Intune 公司门户应用）并运行自解压缩 (.exe) 文件。 此文件包含两个文件：
 
     -   CompanyPortal.appx – 适用于 Windows Phone 8.1 的公司门户安装
 
     -   WinPhoneCompanyPortal.ps1 – 可用于对公司门户应用文件进行签名，以便将文件部署到 Windows Phone 8.1 设备的 PowerShell 脚本
 
-    或者，可以从[适用于企业的 Microsoft 应用商店](http://businessstore.microsoft.com/)下载 Windows Phone 8.1 公司门户（脱机许可包）或 Windows 10 公司门户（脱机许可包）。 公司门户应用需要具备脱机许可证以及为脱机使用而下载的相应的包。 选项中 Windows 8 和 Windows Phone 8 平台列表指的是各自 8.1 版本的对应项。 若要详细了解如何使用 Intune 完成此操作，请参阅[管理从适用于企业的 Microsoft 应用商店购买的应用](windows-store-for-business.md)。
+    或者，可以从[适用于企业的 Microsoft 应用商店](https://businessstore.microsoft.com/)下载 Windows Phone 8.1 公司门户（脱机许可包）或 Windows 10 公司门户（脱机许可包）。 公司门户应用需要具备脱机许可证以及为脱机使用而下载的相应的包。 选项中 Windows 8 和 Windows Phone 8 平台列表指的是各自 8.1 版本的对应项。 若要详细了解如何使用 Intune 完成此操作，请参阅[管理从适用于企业的 Microsoft 应用商店购买的应用](windows-store-for-business.md)。
 
-2.  **下载 Windows Phone SDK** 下载 Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570)) 并在计算机上安装 SDK。 需要此 SDK 来生成应用程序注册令牌。
+2.  **下载 Windows Phone SDK** 下载 Windows Phone SDK 8.0](https://go.microsoft.com/fwlink/?LinkId=615570)) 并在计算机上安装 SDK。 需要此 SDK 来生成应用程序注册令牌。
 
 3.  **生成 AETX 文件**通过使用 AETGenerator.exe（Windows Phone SDK 8.0 的一部分），从 Symantec PFX 文件生成应用程序注册令牌 (.aetx) 文件。 有关如何创建 AETX 文件的说明，请参阅 [如何为 Windows Phone 生成应用程序注册令牌](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
 
-4.  **下载用于 Windows 8.1 的 Windows SDK** 下载并安装 [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525))。 请注意，公司门户应用中包含的 PowerShell 脚本使用默认安装位置 `${env:ProgramFiles(x86)}\Windows Kits\8.1`。 如果安装到其他位置，则必须包括 cmdlet 参数中的位置。
+4.  **下载用于 Windows 8.1 的 Windows SDK** 下载并安装 [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=613525) (https://go.microsoft.com/fwlink/?LinkId=613525))。 请注意，公司门户应用中包含的 PowerShell 脚本使用默认安装位置 `${env:ProgramFiles(x86)}\Windows Kits\8.1`。 如果安装到其他位置，则必须包括 cmdlet 参数中的位置。
 
 5.  **使用 PowerShell 对应用进行代码签名**以管理员身份在主计算机上打开随 Windows SDK（Symantec 企业移动代码签名证书）一起安装的 **Windows PowerShell**，导航到 Sign-WinPhoneCompanyPortal.ps1 文件并运行该脚本。
 
     **示例 1**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
     ```
     此示例对 C:\temp\ 中的 CompanyPortal.appx 进行签名，并生成 CompanyPortalEnterpriseSigned.appx。 它将使用 PFX 密码 1234，并从 PFX 文件读取发布者 ID。 还将从 cert.aetx 文件读取企业 ID。
 
     **示例 2**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
     ```
     此示例对 C:\temp\ 中的 CompanyPortal.appx 进行签名，并生成 CompanyPortalEnterpriseSigned.appx。 它将使用 PFX 密码 1234，并使用指定的发布者 ID。
@@ -128,7 +128,7 @@ ms.locfileid: "52181236"
 
 1.  大约在证书到期前 14 天查找发自 Symantec 的续订电子邮件。 电子邮件包括 Symantec 有关续订你的企业证书的说明。
 
-    有关 Symantec 证书的其他信息，请访问 [www.symantec.com](http://www.symantec.com) 或致电 1-877-438-8776 或 1-650-426-3400。
+    有关 Symantec 证书的其他信息，请访问 [www.symantec.com](https://www.symantec.com) 或致电 1-877-438-8776 或 1-650-426-3400。
 
 2.  转到网站（示例：[https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)），使用 Symantec 发布者 ID 和与证书关联的电子邮件地址登录。 记住，请使用你将用于下载证书的同一计算机开始续订。
 
@@ -155,7 +155,7 @@ ms.locfileid: "52181236"
 1. 在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中登录到帐户，并获取公司门户应用的脱机许可证版本。  
 2. 获得应用之后，选择“**清单**”页中的应用。  
 3. 选择“**Windows 10 所有设备**”作为“**平台**”，然后选择相应的**体系结构**并下载。 此应用不需要应用许可证文件。
-![Windows 10 所有设备和供下载的体系结构 X86 包详细信息的图像](./media/Win10CP-all-devices.png)
+![可供下载的 Windows 10 X86 包详细信息的图像](./media/Win10CP-all-devices.png)
 4. 下载“所需框架”下的所有包。 必须对 x86、x64 和 ARM 体系结构完成此操作，并生成如下所示的共 9 个包。
 
 ![要下载的依赖项文件的图像 ](./media/Win10CP-dependent-files.png)
@@ -164,7 +164,7 @@ ms.locfileid: "52181236"
    ![随 APPXBUN 文件一起保存的 Dependencies 文件夹的图像](./media/Win10CP-Dependencies-save.png)
    2. 将九个依赖项包置于 Dependencies 文件夹中。  
    如果依赖项未按此格式放置，Intune 将无法在包上载期间将其识别并上载，从而导致上载失败并出现以下错误。  
-   ![在应用程序文件夹中找不到此软件安装程序的 Windows 应用依赖项。 你可以继续创建和部署此应用程序，但直到提供缺少的 Windows 应用依赖项后，此应用程序才能运行。](./media/Win10CP-error-message.png)
+   ![错误消息 - 必须提供 Windows 应用依赖项。](./media/Win10CP-error-message.png)
 6. 返回到 Intune，然后将公司门户作为新的应用上载。 将其作为所需的应用部署到所需的目标用户集。  
 
 有关 Intune 如何处理通用应用的依赖项的详细信息，请参阅[通过 Microsoft Intune MDM 部署具有依赖项的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  

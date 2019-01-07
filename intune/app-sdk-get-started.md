@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 4ccbdff5eac7fef8d28696d8340eb498bae95176
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187848"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657774"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -81,7 +81,7 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 * **[Intune App SDK for iOS 开发人员指南](app-sdk-ios.md)**：本文档将指导逐步完成使用 Intune App SDK 启用本机 iOS 应用的过程。
 
-* **[Intune App SDK for Android 开发人员指南](app-sdk-android.md)**：本文档将指导你逐步完成使用 Intune App SDK 启用本机 Android 应用的过程。
+* **[Intune App SDK for Android 开发人员指南](app-sdk-android.md)**：本文档将指导逐步完成使用 Intune App SDK 启用本机 Android 应用的过程。
 
 * **[Intune App SDK Xamarin Bindings 指南](app-sdk-xamarin.md)**：此文档可帮助使用 Intune 应用保护策略适用的 Xamarin 来生成 iOS 和 Android 应用。
 
@@ -99,7 +99,7 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 Microsoft Intune 收集应用的使用情况统计数据。
 
-* **Intune App SDK for iOS**：默认情况下，SDK 会记录有关使用事件的 SDK 遥测数据。 会将此数据发送到 Microsoft Intune。
+* **用于 iOS 的 Intune 应用 SDK**：默认情况下，SDK 会记录有关使用事件的 SDK 遥测数据。 会将此数据发送到 Microsoft Intune。
 
     * 如果选择不从应用将 SDK 遥测数据发送到 Microsoft Intune，则必须通过在 IntuneMAMSettings 字典中将属性 `MAMTelemetryDisabled` 设置为“YES”，来禁用遥测数据传输。
 
@@ -153,7 +153,7 @@ Intune|iOS|Android|描述|
 ### <a name="test-your-app"></a>测试应用程序
 完成将 iOS 或 Android 应用与 Intune App SDK 集成的必需步骤后，需确保所有应用保护策略都已针对用户和 IT 管理员启用并正常工作。若要测试已集成的应用，则需查看以下文档：
 
-* **Microsoft Intune 测试帐户**：若要就 Intune 应用保护功能对 Intune 托管的应用进行测试，你将需要 Microsoft Intune 帐户。
+* **Microsoft Intune 测试帐户**：若要就 Intune 应用保护功能对 Intune 托管的应用进行测试，将需要 Microsoft Intune 帐户。
 
     * 如果启用 Intune 应用保护策略 iOS 或 Android 应用商店应用的 ISV，则在使用 Microsoft Intune 完成注册（如注册步骤中所述）后，会收到促销代码。 促销代码允许你注册具有 1 年延期使用的 Microsoft Intune 试用。
 
@@ -161,7 +161,7 @@ Intune|iOS|Android|描述|
 
 * **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。
 
-* 疑难解答：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
+* **疑难解答**：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
 
 ### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>向 Intune 应用保护服务提供应用访问权限（可选）
 
@@ -188,7 +188,7 @@ Intune|iOS|Android|描述|
 
 该标记是一个“公文包”图标，如下例中所示：
 
-![标记示例 1](./media/badge-example-1.png) ![标记示例 2](./media/badge-example-2.png)
+![Intune 应用保护策略 - 标记示例 1](./media/badge-example-1.png) ![Intune 应用保护策略 - 标记示例 2](./media/badge-example-2.png)
 
 **标记应用时的所需条件**:
 

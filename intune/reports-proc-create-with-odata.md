@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182986"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429706"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 从 OData 数据源创建报表
 
@@ -45,7 +45,7 @@ ms.locfileid: "52182986"
 
 ## <a name="install-power-bi-desktop"></a>安装 Power BI Desktop
 
-安装最新版本的 Power BI Desktop。 可从 [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) 下载 Power BI Desktop
+安装最新版本的 Power BI Desktop。 可从以下地址下载 Power BI Desktop：[PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>连接到租户的 Intune 数据仓库的 OData 数据源
 
@@ -106,7 +106,7 @@ ms.locfileid: "52182986"
 可以向树状图添加筛选器，以便使用应用解答其他问题。
 
 
-1. 要添加筛选器，请选择报表画布，然后选择“可视化效果”下的切片器图标 (![带数据的树状图](media/reports-create-slicer.png))。
+1. 要添加筛选器，请选择报表画布，然后选择“可视化效果”下的切片器图标（带数据模型和支持的关系的树状图![](media/reports-create-slicer.png)）。
 2. 查找“ownerTypes”表，并将“ownerTypeName”数据字段拖动到“可视化效果”面板下的“筛选器”部分中。  
 
    在设备表中有一个名为“OwnerTypeKey”的数据字段，它包含表示设备是公司拥有还是个人所有的代码。 若要在此筛选器中显示友好名称，请查找“ownerTypes”表，并拖动“ownerTypeName”。 此示例说明数据模型如何支持表之间的关系。

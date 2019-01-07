@@ -1,12 +1,12 @@
 ---
 title: 手动添加 Windows 10 公司门户应用
 titleSuffix: Microsoft Intune
-description: 了解如何手动添加 Windows 10 公司门户应用。
+description: 了解工作人员如何将 Windows 10 公司门户应用从 Microsoft Store 手动添加到其电脑。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190262"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642585"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手动添加 Windows 10 公司门户应用
 
@@ -51,7 +51,7 @@ ms.locfileid: "52190262"
 
 7. 选择“下载”以下载“所需框架”下的所有包。  
     必须为 x86、x64 和 ARM 体系结构完成此操作 – 共生成 12 个包。
-8. 将公司门户应用上传到 Intune 之前，请创建一个文件夹（例如：C:\Company Portal），其中包按以下方式构建：
+8. 在将公司门户应用上载到 Intune 前，创建一个文件夹（例如：C:\Company Portal），其中包含使用以下方式构建的包：
    - 将公司门户包放置在 C:\Company Portal 中。 在此位置也创建一个 Dependencies 子文件夹。  
 
      ![Dependencies 文件夹与 APPXBUN 文件一起保存](./media/Win10CP-Dependencies-save.png)

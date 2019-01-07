@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/09/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168022"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53378277"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -86,7 +86,7 @@ Intune App SDK 是一个 Android 库，使应用能够支持和参与 Intune 策
 ### <a name="gradle-build-plugin"></a>Gradle 生成插件
 如果应用不使用 gradle 进行生成，请跳转至[与命令行工具集成](#command-line-build-tool)。 
 
-应用 SDK 插件作为 SDK 的一部分 GradlePlugin/com.microsoft.intune.mam.build.jar 分发。 若要使 Gradle 能够找到插件，必须将其添加到 buildscript classpath 中。 插件依赖于也必须被添加的 [Javassist](http://jboss-javassist.github.io/javassist/)。 若要将这些添加到 classpath 中，请将以下内容添加到根 `build.gradle`
+应用 SDK 插件作为 SDK 的一部分 GradlePlugin/com.microsoft.intune.mam.build.jar 分发。 若要使 Gradle 能够找到插件，必须将其添加到 buildscript classpath 中。 插件依赖于也必须被添加的 [Javassist](https://jboss-javassist.github.io/javassist/)。 若要将这些添加到 classpath 中，请将以下内容添加到根 `build.gradle`
 
 ```groovy
 buildscript {
@@ -170,7 +170,7 @@ intunemam {
 
 #### <a name="dependencies"></a>依赖关系
 
-gradle 插件在 [Javassist](http://jboss-javassist.github.io/javassist/) 上具有一个依赖项，它必须可用于 Gradle 的依赖项解析（如上所述）。 运行插件时，Javassist 仅会在生成时被使用。 应用中将不会添加任何 Javassist 代码。
+gradle 插件在 [Javassist](https://jboss-javassist.github.io/javassist/) 上具有一个依赖项，它必须可用于 Gradle 的依赖项解析（如上所述）。 运行插件时，Javassist 仅会在生成时被使用。 应用中将不会添加任何 Javassist 代码。
 
 > [!NOTE]
 > 必须使用版本 3.0 或更新版本的 Android Gradle 插件以及 Gradle 4.1 或更新版本。
@@ -338,7 +338,7 @@ Azure Active Directory 身份验证库 ([ADAL](https://azure.microsoft.com/docum
 
 应尽早初始化日志记录，以从记录的数据中获取最大价值。 `Application.onMAMCreate()` 通常是初始化日志记录的最佳位置。
 
-若要在应用中接收 MAM 日志，请创建 [Java 处理程序](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html)并将其添加到 `MAMLogHandlerWrapper`。 这将在应用处理程序上为每个日志消息调用 `publish()`。
+若要在应用中接收 MAM 日志，请创建 [Java 处理程序](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html)并将其添加到 `MAMLogHandlerWrapper`。 这将在应用处理程序上为每个日志消息调用 `publish()`。
 
 ```java
 /**
@@ -499,12 +499,12 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
 ```
 
-... 其中 `service` 是下列 SaveLocation 之一：
+`service` 参数必须是以下 `SaveLocation` 值之一：
 
 
-    * SaveLocation.ONEDRIVE_FOR_BUSINESS
-    * SaveLocation.LOCAL
-    * SaveLocation.SHAREPOINT
+- `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+- `SaveLocation.LOCAL`
+- `SaveLocation.SHAREPOINT`
 
 之前确定用户策略是否允许用户将数据保存到不同位置的方法是同一个 **AppPolicy** 类中的 `getIsSaveToPersonalAllowed()`。 现在**不推荐使用**也不应使用此功能，以下调用等效于 `getIsSaveToPersonalAllowed()`：
 
@@ -798,7 +798,7 @@ Result getRegisteredAccountStatus(String upn);
 
 [主权云感知](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud)的应用程序必须将 `authority` 提供给 `registerAccountForMAM()`。  这可通过在 ADAL 的 [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters 中提供 `instance_aware=true`，然后对 AuthenticationCallback AuthenticationResult 调用 `getAuthority()` 来实现。
 
-```
+```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
         new AuthenticationCallback<AuthenticationResult>() {
             @Override
@@ -817,7 +817,8 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 > [!NOTE]
 > 请勿设置 AndroidManifest.xml 元数据颁发机构。
 <br/>
-```
+
+```xml
 <meta-data
     android:name="com.microsoft.intune.mam.aad.Authority"
     android:value="https://AAD authority/" />
@@ -892,7 +893,7 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 ## <a name="protecting-backup-data"></a>保护备份数据
 
-自 Android Marshmallow (API 23) 开始，Android 有两种方法可供应用来备份其数据。 用户可以在其应用中使用这两种选项，但需要不同的步骤，以确保正确实现 Intune 数据保护。 可查看下表，以了解有关正确数据保护行为所需的对应操作。  有关备份方法的详细信息，可参阅 [Android API 指南](http://developer.android.com/guide/topics/data/backup.html)。
+自 Android Marshmallow (API 23) 开始，Android 有两种方法可供应用来备份其数据。 用户可以在其应用中使用这两种选项，但需要不同的步骤，以确保正确实现 Intune 数据保护。 可查看下表，以了解有关正确数据保护行为所需的对应操作。  有关备份方法的详细信息，可参阅 [Android API 指南](https://developer.android.com/guide/topics/data/backup.html)。
 
 ### <a name="auto-backup-for-apps"></a>应用的自动备份
 
@@ -1413,7 +1414,7 @@ public final class MAMDataProtectionManager {
 应用程序特定的键值对可以在 Intune 控制台中进行配置。 这些键值对根本不会被 Intune 解释，只是被传递给应用。 想要接收这种配置的应用程序可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 类进行这些操作。 如果多个策略针对同一个应用，则可能会有多个冲突的值可用于同一个键。
 
 ### <a name="example"></a>示例
-```
+```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
@@ -1434,7 +1435,7 @@ LOGGER.info("Found value " + valueToUse);
 
 ### <a name="mamappconfig-reference"></a>MAMAppConfig 引用
 
-```
+```java
 public interface MAMAppConfig {
     /**
      * Conflict resolution types for Boolean values.
@@ -1609,20 +1610,27 @@ public interface MAMAppConfig {
    > 与应用关联的“客户端 ID”一词与 Azure 门户中的“应用程序 ID”一词的含义相同。 
 2. 启用 SSO 需要“通用 ADAL 配置”#2。
 
-3. 通过将以下值放入清单来启用默认注册：```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+3. 通过将以下值放入清单来启用默认注册：
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则可能发生冲突。
 
-4. 通过将以下值放入清单来启用所需的 MAM 策略：```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+4. 通过将以下值放入清单来启用所需的 MAM 策略：
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
    >
    > 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则将发生冲突。
 
 3. 通过将以下值放入清单来启用所需的 MAM 策略：
-```xml
-<meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-```
+
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
 
 > [!NOTE] 
 > 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
-ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
+ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200600"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553684"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,11 +45,20 @@ ms.locfileid: "53200600"
 
 ## <a name="week-of-december-10-2018"></a>2018 年 12 月 10 日当周
 
-### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>macOS 设备所需的 Microsoft Auto Update 版本 4.50 <!-- 3503442 -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="updates-for-application-transport-security----748318---"></a>针对应用程序传输安全进行更新<!-- 748318 -->
+
+Microsoft Intune 支持传输层安全性 (TLS) 1.2+，以提供一流的加密，确保 Intune 在默认情况下更为安全，并与 Microsoft Office 365 等其他 Microsoft 服务一致。 为了满足此要求，iOS 和 macOS 公司门户将强制执行 Apple 更新的应用程序传输层安全性 (ATS) 要求，这些要求也需要 TLS 1.2+。 使用 ATS 对所有通过 HTTPS 的应用通信实施更严格的安全措施。 此更改会影响使用 iOS 和 macOS 公司门户应用的 Intune 客户。 有关详细信息，请参阅 [Intune 支持博客](https://aka.ms/compportalats)。
+
+#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune App SDK 将支持 256 位加密密钥 <!-- 1832174 -->
+由应用保护策略启用加密时，适用于 Android 的 Intune App SDK 现在将使用 256 位加密密钥。 SDK 将继续提供 128 位密钥支持以与使用旧版 SDK 的内容和应用兼容。
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>macOS 设备所需的 Microsoft Auto Update 版本 4.5.0 <!-- 3503442 -->
 若要继续接收公司门户和其他 Office 应用程序的更新，由 Intune 管理的 macOS 设备必须升级到 Microsoft Auto Update 4.5.0。 用户可能已经拥有此版本的 Office 应用程序。
 
 ### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Intune 需要 macOS 10.12 或更高版本 <!-- 2827778 -->
-Intune 现在需要 macOS 版本 10.12 或更高版本。 使用以前的 macOS 版本的设备无法使用公司门户注册到 Intune。 若要获得支持和新功能，用户必须将设备升级到 macOS 10.12 或更高版本，并将公司门户升级到最新版本。
+Intune 现在需要 macOS 版本 10.12 或更高版本。 使用以前的 macOS 版本的设备无法使用公司门户注册到 Intune。 若要获得支持协助和新功能，用户必须将设备升级到 macOS 10.12 或更高版本，并将公司门户升级到最新版本。
 
 ## <a name="week-of-november-26-2018"></a>2018 年 11 月 26 日当周
 
@@ -103,6 +112,23 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 传递优化是适用于 Windows 10 及更高版本的新配置文件。 此功能可简化将软件更新传递到组织中的设备的过程。 此更新还可帮助你使用配置文件传递新更新通道和现有更新通道中的设置。
 若要配置传递优化配置文件，请参阅 [Windows 10（及更高版本）传递优化设置](delivery-optimization-windows.md)。
 
+#### <a name="new-device-restriction-settings-added-to-ios-and-macos-devices----2827760---"></a>将新设备限制设置添加到 iOS 和 macOS 设备 <!-- 2827760 -->
+此更新包括随 iOS 12 发布的 iOS 和 macOS 设备的新设置：
+
+**iOS 设置**： 
+- 常规：阻止应用删除（仅监管模式）
+- 常规：阻止 USB 受限模式（仅监管模式）
+- 常规：强制执行自动日期和时间（仅监管模式）
+- 密码:阻止密码自动填充（仅监管模式）
+- 密码:阻止密码临近感应请求（仅监管模式）
+- 密码:阻止密码共享（仅监管模式）
+
+**macOS 设置**： 
+- 密码:阻止密码自动填充
+- 密码:阻止密码临近感应请求
+- 密码:阻止密码共享
+
+要了解有关这些设置的详细信息，请参阅 [iOS](device-restrictions-ios.md) 和 [macOS](device-restrictions-macos.md) 设备限制设置。
 
 ### <a name="device-enrollment"></a>设备注册
 
@@ -1143,35 +1169,6 @@ Intune for Education 客户有两个动态的 Azure Active Directory (Azure AD) 
 
 如果当前将策略分配给 Azure 上的 Intune 中提到的 Azure AD 组，请将这些策略分配给 Intune for Education 控制台中的“所有用户”和“所有设备”组。 当在控制台中看到 Azure AD 组已重命名为已过时时，请停止在 Azure AD 中分配策略。 如果当前没有将重命名的组用于任何其他目的，则应将其删除。
 
-
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>更改计划：随后，Intune 将于 12 月支持 macOS 10.12 及更高版本 <!--2970975--> 
-
-Apple 刚刚发布了 macOS 10.14。 随后，Intune 将于 2018 年 12 月支持 macOS 10.12 及更高版本。 
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-
-从 12 月开始，使用 macOS 10.11 及更早版本的设备上的最终用户将无法使用公司门户注册 Intune。 他们需要将设备升级到 macOS 10.12 或更高版本，并将公司门户应用升级到最新版本，以继续获得支持和新功能。 
-
-当前支持 macOS 10.12 和更高版本的设备有： 
-- MacBook（2009 后期版本或更高版本）。 
-- iMac（2009 后期版本或更高版本）
-- MacBook Air（2010 后期版本或更高版本）。  
-- MacBook Pro（2010 后期版本或更高版本）。 
-- Mac Mini（2010 后期版本或更高版本）。 
-- Mac Pro（2010 后期版本或更高版本）。 
-
-12 月以后，未使用上述设备的最终用户将无法访问最新版本的 macOS 公司门户应用。 运行 macOS 10.12 以下不受支持版本的现有已注册设备将继续由 Intune 管理控制台进行管理并在其中列出。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-
-- 要求最终用户在 2018 年 12 月前将其设备升级到支持的 OS 版本。 
-- 检查 Azure 控制台上的 Intune 中的 Intune 报告，查看哪些设备或用户可能会受到影响。 转到“设备”>“所有设备”并按 OS 进行筛选。 可以添加其他列，帮助确定组织中哪些人员拥有运行 macOS 10.11 的设备。 
-- 如果使用的是混合移动设备管理 (MDM)，请转到 Configuration Manager 控制台中的“资产和符合性”>“设备”，右键单击这些列以添加“操作系统”和“客户端版本”列，然后按 OS 排序。 请注意，混合 MDM 现已弃用，应尽快迁移到 Azure 上的 Intune。 
- 
-#### <a name="additional-information"></a>其他信息
-有关详细信息，请参阅[使用公司门户应用在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)。
- 
-
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>更改计划：针对顶级客户的新 Intune 支持体验 
 2018 年 12 月 4 日更新：我们正在尝试改善此过程，以便 MPO 中的支持请求创建不会在 12 月 3 日（而是在更晚的日期）禁用。 我们将通过消息中心通知用户并尽快更新此文章以共享此更改的时间线。
 
@@ -1204,28 +1201,3 @@ Intune 将删除 Android 4.4 及更高版本设备的可用密码类型“设备
 #### <a name="additional-information"></a>其他信息
 https://aka.ms/PasswordSettings 
 
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 将要求更新应用传输安全<!--748318-->
-Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求。 使用 ATS 对所有通过 HTTPS 的应用通信实施更严格的安全措施。 此更改会影响使用 iOS 公司门户应用的 Intune 客户。 我们将在 [Intune 支持博客](https://aka.ms/compportalats)中介绍详细信息。
-
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>更改计划：将 Intune 移动到 TLS 1.2
-从 2018 年 10 月 31 日 开始，Intune 将支持可提供同类最佳加密的传输层安全性 (TLS) 协议版本 1.2，以确保我们的服务在默认情况下更加安全，并与 Microsoft Office 365 等其他 Microsoft 服务保持一致。 Office 已在 MC128929 中传达了此更改。
-
-公司门户也将于 2018 年 10 月 31 日支持 TLS 1.2。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-从 2018 年 10 月 31 日开始，Intune 将不再支持 TLS 协议版本 1.0 或 1.1。 所有客户端-服务器和浏览器-服务器组合应使用 TLS 版本 1.2，以确保顺利连接到 Intune。 请注意，此更改将影响不再受 Intune 支持但仍可通过 Intune 接收策略以及不能使用 TLS 版本 1.2 的最终用户设备。 其中包括运行 Android 4.3 及更低版本的设备。 有关受影响设备和浏览器的列表，请参阅下面的“其他信息”。
-
-2018 年 10 月 31 日之后，如果遇到与使用旧版 TLS 相关的问题，将需要更新到 TLS 1.2，或使用支持 TLS 1.2 的设备才可解决。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-我们建议主动删除环境中的 TLS 1.0 和 1.1 依赖项，并尽量在操作系统级别禁用 TLS 1.0 和 1.1。 立即开始针对迁移到 TLS 1.2 进行规划。 请查看下面的支持博客文章，获取 Intune 现在不支持但仍可接收策略以及未来将无法使用 TLS 版本 1.2 进行通信的设备的列表。 可能需要通知那些最终用户，他们即将失去对公司资源的访问权限。
-
-**其他信息**：[将 Intune 移动到 TLS 1.2 以进行加密](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-
-## <a name="see-also"></a>另请参阅
-* [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [云平台路线图](https://www.microsoft.com/cloud-platform/roadmap)
-* [What's new in the Company Portal UI](whats-new-app-ui.md)（公司门户 UI 新增功能）
-* [前几个月的新增功能](whats-new-archive.md)

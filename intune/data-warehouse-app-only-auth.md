@@ -1,12 +1,12 @@
 ---
 title: Intune 数据仓库仅应用程序身份验证
 titleSuffix: Microsoft Intune
-description: 本主题介绍了数据仓库仅应用程序身份验证。
+description: 本主题介绍了 Microsoft Intune 数据仓库仅应用程序身份验证。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 096a6ee5d2f80600d800293ae9b5d4be6a07b027
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185196"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642789"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune 数据仓库仅应用程序身份验证
 

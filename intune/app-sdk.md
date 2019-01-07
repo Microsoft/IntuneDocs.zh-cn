@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5180682489e693e49e8142d7912302bc8ea2f7a8
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180674"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429689"
 ---
-# <a name="intune-app-sdk-overview"></a>Intune App SDK 概述
+# <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK 概述
 Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用保护策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 你会发现可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用 API 针对需要应用参与的功能来自定义应用行为。
 
 为应用启用应用保护策略后，IT 管理员可部署这些策略来保护应用内的公司数据。
@@ -75,4 +75,8 @@ IT 管理员可以要求用户使用其工作或学校帐户登录以访问该�
 ### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>按需应用与 Citrix mVPN 的 VPN 连接 
 可以同时使用 Citrix XenMobile MDX 和 Microsoft Intune 来管理设备和应用。 这种组合意味着可在使用 Citrix mVPN 技术的同时通过 Intune 应用保护策略管理应用。 与 Citrix 的集成可用于 Intune App SDK for iOS 和 Intune App SDK for Android，以及适用于 iOS 和 Android 的 Intune 应用包装工具（带 -citrix 标志）。
  
-要了解有关 Citrix MDX 的详细信息，请参阅[有关 MDX 工具包](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html)、[适用于 iOS 的 Citrix MDX 应用包装器](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)和[适用于 Android 的 Citrix MDX 应用包装器](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)。
+要了解有关 Citrix MDX 的详细信息，请参阅[有关 MDX 工具包](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html)、[适用于 iOS 的 Citrix MDX 应用包装器](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)和[适用于 Android 的 Citrix MDX 应用包装器](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)。
+
+## <a name="next-steps"></a>后续步骤
+
+- 了解[应用保护策略](app-protection-policy.md)。

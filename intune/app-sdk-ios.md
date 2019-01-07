@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/05/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 0fc0e5bdb261b3cfbc2e5507e1206354d8cc4051
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630045"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657825"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -49,7 +49,7 @@ ms.locfileid: "52630045"
 
 * **IntuneMAM.framework**：Intune App SDK 框架。 将此框架链接到项目，为 Intune 客户端应用程序管理启用应用。 如果应用使用扩展，则使用框架而不是静态库，使项目不会创建静态库的多个副本。
 
-* **IntuneMAMResources.bundle**：一个资源包，包含 SDK 所依赖的资源。
+* **IntuneMAMResources.bundle**：一个资源捆绑包，包含 SDK 所依赖的资源。
 
 * **标头**：用于公开 Intune App SDK API。 如果你使用 API，则需要包括包含该 API 的标头文件。 以下头文件包含 Intune App SDK 面向开发人员发布的 API、数据类型和协议：
 
@@ -81,7 +81,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 若要启用 Intune App SDK，请执行以下步骤：
 
-1. **选项 1（推荐）**：将 `IntuneMAM.framework` 链接到你的项目。 将 `IntuneMAM.framework` 拖到项目目标的“嵌入二进制文件”列表。
+1. **选项 1（建议）**：将 `IntuneMAM.framework` 链接到项目。 将 `IntuneMAM.framework` 拖到项目目标的“嵌入二进制文件”列表。
 
    > [!NOTE]
    > 如果使用框架，必须在将应用提交到应用商店之前，从通用框架中手动删除模拟器体系结构。 有关详细信息，请参阅[向 App Store 提交应用](#Submit-your-app-to-the-App-Store)。
@@ -127,21 +127,21 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 4. 启用 keychain 共享后，请按照以下步骤创建单独的访问组，以便 Intune App SDK 可在其中存储数据。 可使用 UI 或使用授权文件创建密钥链访问组。 如果你使用 UI 创建密钥链访问组，请务必按照以下步骤操作：
 
-   1. 如果移动应用未定义任何 keychain 访问组，请将此应用的程序包 ID 添加为第一个组。
-
-   2. 将共享密钥链组 `com.microsoft.intune.mam` 添加到现有访问组中。 Intune App SDK 使用此访问组来存储数据。
-
-   3. 将 `com.microsoft.adalcache` 添加到现有的访问组。
-
-       ![Intune App SDK iOS：keychain 共享](./media/intune-app-sdk-ios-keychain-sharing.png)
-
-   4. 如果直接编辑权利文件，而不是使用上述 Xcode UI 创建密钥链访问组，则需要在密钥链访问组前加上 `$(AppIdentifierPrefix)`（Xcode 会自动处理此问题）。 例如：
-
-           * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-           * `$(AppIdentifierPrefix)com.microsoft.adalcache`
-
-      > [!NOTE]
-      > 授权文件是一个 XML 文件，它对于移动应用程序是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。 如果应用以前没有权利文件，那么启用密钥链共享（第 3 步）应该已导致 Xcode 为应用生成一个权利文件。 请确保应用的程序包 ID 为列表中的首项。
+    1. 如果移动应用未定义任何 keychain 访问组，请将此应用的程序包 ID 添加为第一个组。
+    
+    2. 将共享密钥链组 `com.microsoft.intune.mam` 添加到现有访问组中。 Intune App SDK 使用此访问组来存储数据。
+    
+    3. 将 `com.microsoft.adalcache` 添加到现有的访问组。
+    
+        ![Intune App SDK iOS：keychain 共享](./media/intune-app-sdk-ios-keychain-sharing.png)
+    
+    4. 如果直接编辑权利文件，而不是使用上述 Xcode UI 创建密钥链访问组，则需要在密钥链访问组前加上 `$(AppIdentifierPrefix)`（Xcode 会自动处理此问题）。 例如：
+    
+        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+    
+        > [!NOTE]
+        > 授权文件是一个 XML 文件，它对于移动应用程序是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。 如果应用以前没有权利文件，那么启用密钥链共享（第 3 步）应该已导致 Xcode 为应用生成一个权利文件。 请确保应用的程序包 ID 为列表中的首项。
 
 5. 在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中添加应用传递到 `UIApplication canOpenURL` 的各个协议。 请务必先保存所做的更改，再继续执行下一步。
 
@@ -432,7 +432,7 @@ MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指
 
 类 | 描述
 ----- | -----------
-IntuneMAMPolicyManager.h | IntuneMAMPolicyManager 类公开部署到应用程序的 Intune APP 策略。 值得注意的是，它公开对[启用多身份标识](#-enable-multi-identity-optional)有用的 API。 |
+IntuneMAMPolicyManager.h | IntuneMAMPolicyManager 类公开部署到应用程序的 Intune APP 策略。 值得注意的是，它公开对[启用多身份标识](app-sdk-ios.md#enable-multi-identity-optional)有用的 API。 |
 IntuneMAMPolicy.h | IntuneMAMPolicy 类公开一些适用于该应用的 MAM 策略设置。 公开这些策略以便应用自定义其 UI。 大多数策略设置由 SDK 而不是应用实现。 “另存为”控件是应由应用实现的唯一设置。 此类公开了实现“另存为”所需的一些 API。 |
 IntuneMAMFileProtectionManager.h | IntuneMAMFileProtectionManager 类公开 API，应用可使用这些 API 根据提供的标识显式保护文件和目录。 标识可由 Intune 托管或非托管，SDK 将应用相应的 MAM 策略。 可选择是否使用此类。 |
 IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 类公开 API，应用可以使用这些 API 来保护给定提供标识的数据缓冲区。 标识可由 Intune 托管或非托管，SDK 将相应地应用加密。 |
@@ -484,7 +484,7 @@ IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 类公开 API�
 
 6. 配置 `NSExtensionActivationRule` 以支持单个文件以及应用程序的 `CFBundleDocumentTypes` 中以“`com.microsoft.intune.mam`”为前缀的所有类型。 例如，如果应用程序支持 public.text 和 public.image，则激活规则为：
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -500,41 +500,41 @@ IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 类公开 API�
 
 如果应用已包含 Share 或 Action 扩展，则必须修改它们的 `NSExtensionActivationRule` 以允许 Intune 类型。 对于扩展支持的每种类型，需添加以“`com.microsoft.intune.mam`”为前缀的附加类型。 例如，如果现有的激活规则是：  
 
-    ```
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
     ).@count > 0
-    ```
+).@count > 0
+```
 
 它应更改为：
 
-    ```
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
     ).@count > 0
-    ```
+).@count > 0
+```
 
 > [!NOTE]
 > 可以使用 IntuneMAMConfigurator 工具将 Intune 类型添加到激活规则。 如果现有的激活规则使用预定义的字符串常量（例如 NSExtensionActivationSupportsFileWithMaxCount、NSExtensionActivationSupportsText 等），谓词语法可能会变得相当复杂。 添加 Intune 类型时，IntuneMAMConfigurator 工具也可用于将激活规则从字符串常量转换为谓词字符串。
@@ -543,11 +543,11 @@ IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 类公开 API�
 
 旧版 UI：
 
-![旧版共享 UI](./media/sharing-UI-old.png)
+![共享数据 - iOS 旧的共享 UI](./media/sharing-UI-old.png)
 
 新版 UI：
 
-![新版共享 UI](./media/sharing-UI-new.png)
+![共享数据 - iOS 新的共享 UI](./media/sharing-UI-new.png)
 
 ## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>为 iOS 应用程序启用目标配置（APP/MAM 应用配置）
 
@@ -571,7 +571,7 @@ Intune 管理员可以通过 Intune Azure 门户和 Intune 图形 API 定位并�
 
 默认情况下，用于 iOS 的 Intune App SDK 会收集以下事件类型的遥测：
 
-* **应用启动事件**：用于帮助 Microsoft Intune 按照管理类型（含 MDM 的 MAM、不含 MDM 注册的 MAM 等）了解已启用 MAM 的应用的使用情况。
+* **应用启动**：用于帮助 Microsoft Intune 按照管理类型（含 MDM 的 MAM、不含 MDM 注册的 MAM 等）了解已启用 MAM 的应用的使用情况。
 
 * **注册调用**：用于帮助 Microsoft Intune 了解客户端启动的注册调用的成功率和其他各种性能指标。
 
@@ -596,13 +596,13 @@ Intune 管理员可以通过 Intune Azure 门户和 Intune 图形 API 定位并�
 
 * **UI 标识**：确定应用于主线程上 UI 任务的策略，例如剪切/复制/粘贴、PIN、身份验证和数据共享。 UI 标识不会影响文件任务（如加密和备份）。
 
-* **线程标识**：线程标识会影响应用于当前线程上的策略类型。 此标识会影响所有任务、文件和 UI。
+* **线程标识**：影响应用于当前线程上的策略类型。 此标识会影响所有任务、文件和 UI。
 
 不论用户是否为托管，应用都会负责设置合适的标识。
 
 在任何时候，每个线程都具有用于 UI 任务和文件任务的有效标识。 此标识是用于确定应应用哪些策略（如有）的标识。 如果此标识为“无标识”或用户不是托管的，则不会应用任何策略。 下图显示如何确定有效的标识。
 
-  ![Intune App SDK iOS：链接的框架和库](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS：标识确定进程](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>线程队列
 

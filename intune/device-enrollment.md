@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: e677b62c7610739079184bc5ef59e47544f833bb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190211"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570802"
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -47,6 +47,7 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | 否| 是 | 否 | [详细信息](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| 否 |否 |否  | [详细信息](./device-enrollment-manager-enroll.md)|
+|**[DEP](#apple-device-enrollment-program)**|   是 |   可选 |  可选|[详细信息](./device-enrollment-program-enroll-macos.md)|
 
 
 ## <a name="windows-enrollment-methods"></a>Windows 注册方法
@@ -56,10 +57,10 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 |**[BYOD](#bring-your-own-device)** | 否 |  是 |   否 | [详细信息](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| 否 |否 |否  |[详细信息](device-enrollment-manager-enroll.md)|
 |**自动注册** | 否 |是 |否 | [详细信息](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Autopilot** |是 |是 |否 | [详细信息](enrollment-autopilot.md)]
+|**Autopilot** |是 |是 |否 | [详细信息](enrollment-autopilot.md)
 |**批量注册** |否 |否 |否 | [详细信息](./windows-bulk-enroll.md) |
-|**共同管理** |否 |是 |否 | [详细信息](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
-|**GPO** |否 |是 |否 | [详细信息](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+|**共同管理** |否 |是 |否 | [详细信息](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**GPO** |否 |是 |否 | [详细信息](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 
 ## <a name="android-enrollment-methods"></a>Android 注册方法
@@ -81,7 +82,7 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 设备注册管理员 (DEM) 是一个特殊的用户帐户，用于注册和管理多个企业拥有的设备。 管理员可安装公司门户并注册多个无用户设备。 这些类型的设备非常适用于销售点或实用工具应用，但是不适用于需要访问电子邮件或公司资源的用户。 了解有关 [DEM](./device-enrollment-manager-enroll.md) 的详细信息。 
 
 ### <a name="apple-device-enrollment-program"></a>Apple 设备注册计划
-通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 设备。 用户第一次开启设备并运行 iOS 设置助理时，将注册设备。 此方法支持 iOS 受监督模式，该模式可启用使用特定功能配置的设备。
+通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 和 macOS 设备。 用户第一次开启设备并运行设置助理时，将注册设备。 此方法支持 iOS 受监督模式，该模式可启用使用特定功能配置的设备。
 
 了解有关 iOS DEP 注册的详细信息：
 

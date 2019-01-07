@@ -1,7 +1,7 @@
 ---
 title: Intune 数据仓库 API 终结点
 titlesuffix: Microsoft Intune
-description: 参考主题介绍 Intune 数据仓库 API URL 结构。
+description: 此参考主题介绍 Microsoft Intune 数据仓库 API URL 结构。 提供了筛选器示例。
 keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180589"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642738"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/20/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189174"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737910"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入门：免费试用 Microsoft Intune 
 
@@ -50,7 +50,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 2. 用公司名称加上“.onmicrosoft.com”来创建自己的帐户。 
 
-    ![Microsoft Intune 试用版帐户注册网页的屏幕截图](./media/account-sign-up-site-user-id.png)
+    ![Microsoft Intune 试用版帐户新凭据进程的屏幕截图](./media/account-sign-up-site-user-id.png)
 
     如果组织使用自己的自定义域而不采用“.onmicrosoft.com”，可以在本文后面介绍的 Office 365 管理门户中进行更改。
 
@@ -106,13 +106,13 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 3. 输入自定义域名。 然后选择“下一步”。
 
-   ![Office 365 管理中心屏幕截图，其中已选择“设置”>“域”，且正在添加新域名](./media/domain-custom-add.png)
+   ![Office 365 管理中心的屏幕截图 - 添加域](./media/domain-custom-add.png)
 
 4. 验证你是否是前面输入的域的所有者。 
     
     若选择“通过电子邮件发送代码”，会将向域中已注册的联系人发送电子邮件。 收到电子邮件后，请复制该代码，并将其输入标为“在此键入验证码”的字段。 如果验证码匹配，该域将添加至你的租户。 显示的电子邮件可能看起来不太熟悉。 一些注册机构会隐藏真实的电子邮件地址，然后隐藏注册域时提供的内容。
 
-   ![Office 365 管理中心的屏幕截图 - 验证要添加的域名](./media/domain-custom-verify.png)
+   ![Office 365 管理中心的屏幕截图 - 验证域](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > 有关 TXT 记录验证的详细信息，请参阅[在 Office 365 的任何 DNS 托管提供商处创建 DNS 记录](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166)。
@@ -130,4 +130,4 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [快速入门：创建用户并为其分配许可证](quickstart-create-user.md)
+> [快速入门：创建用户并向用户分配许可证](quickstart-create-user.md)

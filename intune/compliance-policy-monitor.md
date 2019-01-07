@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977297"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642806"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -69,7 +69,12 @@ ms.locfileid: "52977297"
 
   - 详细了解[针对不符合设备的操作](actions-for-noncompliance.md)。
 
-- **未评估**：新注册设备的初始状态。 或者，设备未分配有任何符合性策略，并且没有用于检查符合性的触发器。
+- **未评估**：新注册设备的初始状态。 此状态的其他可能原因包括：
+
+  - 设备未分配有任何符合性策略，并且没有用于检查符合性的触发器
+  - 自上次更新符合性策略后尚未签入的设备
+  - 未关联到特定用户的设备
+  - 使用设备注册管理器 (DEM) 帐户注册的设备
 
 - **不符合：** 设备无法应用一个或多个设备符合性策略设置。 或者，用户未遵守策略。
 

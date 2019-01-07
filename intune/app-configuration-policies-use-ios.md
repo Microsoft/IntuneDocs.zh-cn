@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dd18b882af8c685bb640468ef7076ed6317126a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184601"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324933"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -100,14 +100,14 @@ Microsoft Intune 提供对应用而言唯一的配置设置。 可对已注册�
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>仅允许在多身份应用中配置组织帐户 
 
-对于 Android 设备，请使用以下键/值对：
+对于 iOS 设备，请使用以下键/值对：
 
 | **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **值** | <ul><li>**启用**：唯一允许的帐户是由 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 键定义的托管用户帐户。</li><li>**禁用**（或任何不是与“启用”值大小写严格匹配的值，）：允许任何帐户。</li></ul> |
+| **值** | <ul><li>**启用**：唯一允许的帐户是由 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 键定义的托管用户帐户。</li><li>**禁用**（或任何不是与“启用”值大小写严格匹配的值）：允许任何帐户。</li></ul> |。
 
    > [!NOTE]
-   > 当仅允许多身份配置的组织帐户时，必须使用 OneDrive for iOS 10.34 或更高版本以及 Outlook for iOS 2.99.0 或更高版本。
+   > 当仅允许多身份配置的组织帐户时，必须使用 OneDrive for iOS 10.34 或更高版本以及 Outlook for iOS 2.99.0 或更高版本，且应用必须以 [Intune 应用保护策略](app-protection-policy.md)为目标。
 
 ## <a name="enter-xml-data"></a>输入 XML 数据
 
@@ -123,7 +123,7 @@ Intune 会验证 XML 格式。 但是，Intune 不会检查 XML 属性列表 (PL
 
 在创建应用配置文件时，你可以指定下面的一个或多个使用此格式的值：
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>

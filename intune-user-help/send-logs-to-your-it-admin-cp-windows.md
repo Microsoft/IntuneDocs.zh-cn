@@ -1,11 +1,11 @@
 ---
 title: 将 Windows 10 设备的日志发送给公司支持人员 | Microsoft Docs
-description: 将 Windows 10 1511+ 设备注册到 Intune
+description: 发送诊断日志以帮助公司支持人员修复应用问题
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2017
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,29 +14,35 @@ ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: priyar
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146513"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626061"
 ---
-# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>通过 Windows 10 的公司门户应用将日志发送给公司支持人员
+# <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>通过 Windows 的公司门户将诊断日志发送给公司支持人员
 
-如果在 Windows 10 设备上使用公司门户应用时遇到错误，可以通过电子邮件向公司支持人员发送信息，以帮助他们解决问题。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
+故障排除适用于 Windows 10 的公司门户应用中的应用问题。 如果在 Windows 10 设备上使用应用时遇到问题，可以向支持团队发送电子邮件寻求帮助。 公司门户应用中发生的事件和错误将保存在设备上一个名为“诊断日志”的特殊文档中。 请求帮助时，应用会打开预填充的电子邮件，并附有诊断 ID，从而可以快速获取所需的帮助。
 
 > [!Note]       
-> 当用户启动获取问题的帮助的工作流时，Windows 10 公司门户将直接向 Microsoft 发送应用日志。 这样一来，可以更为轻松地排除和解决向 Microsoft 提出的问题。
+> 单击“获取帮助”后，公司门户会自动将日志发送到 Microsoft 的支持团队。 此步骤是一个主动步骤，可以更轻松地故障排除和解决与 Microsoft 相关的问题。  
 
 1. 打开“公司门户”应用。
-2. 选择“设置”齿轮，然后“发送日志”。
-3. “共享”将打开。 选择“邮件”。 这将创建一封附加公司门户日志的电子邮件，你可以将其发送给公司支持人员。
+2. 选择“设置” > “获取帮助”。  
 
-   ![公司门户应用的“设置”页中“发送日志”的对话。 单击此链接将显示“发送日志 - 向你的公司支持人员发送诊断日志，帮助他们解决公司门户的问题。”](./media/w10-share-logs-after-1711.png)
+   ![“设置”页的屏幕截图，突出显示“设置”和“获取帮助”部分和按钮。](./media/1811_Get_Help_Windows_Cpapp.png)    
 
-可能还需要[通过“设置”应用发送日志](send-logs-to-your-it-admin-settings-windows.md)，以便为公司支持人员提供更多帮助，协助他们尽力对所发现的问题进行故障排除。
+3. 显示“共享”屏幕时，选择“邮件”。 “邮件”应用将创建一封电子邮件。 键入遇到问题的描述，以便支持团队了解日志中要查找的内容。
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+   ![“共享”屏幕的屏幕截图，突出显示邮件应用图标。](./media/1811_Mail_Logs_Windows_CPapp.png)  
+
+
+   ![在邮件应用中打开的预填充电子邮件的屏幕截图。](./media/1811_Get_Help_Email_Windows_CPapp.png)  
+
+如果公司需要有关应用或设备活动的其他信息，则还需要[从设置应用发送日志](send-logs-to-your-it-admin-settings-windows.md)。  
+
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

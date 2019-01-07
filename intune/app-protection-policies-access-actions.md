@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032045"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734232"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用应用保护策略访问操作选择性地擦除数据
 
@@ -110,7 +110,7 @@ ms.locfileid: "53032045"
 
 在某些情况下，例如“最低 OS 版本”设置，根据不同的版本号，可将该设置配置为执行所有适用的操作。 
 
-![Intune 应用保护访问操作的屏幕截图 - 最低 OS 版本](./media/apps-selective-wipe-access-actions05.png)
+![应用保护访问操作的屏幕截图 - 最低 OS 版本](./media/apps-selective-wipe-access-actions05.png)
 
 完成设置配置后，该行将显示在只读视图中，可随时对其进行编辑。 此外，该行将显示一个可在“设置”列中选择的下拉列表。 将无法在下拉列表中选择已配置且不允许多项操作的设置。
 

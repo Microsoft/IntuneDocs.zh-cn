@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a0fb9aca406c1a49c979b59e5d879d66a730c1c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9cd03d4953376d20e96ec146ece91120d592cb99
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185878"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429774"
 ---
-# <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune
+# <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -99,9 +99,9 @@ Intune 还支持对需要安全访问本地数据的客户端应用（例如业�
 ### <a name="determine-the-type-of-app-for-your-solution"></a>为解决方案确定应用的类型
 
 可从以下应用类型中进行选择：
-- 应用商店中的应用：上传到 Microsoft 应用商店、iOS 应用商店或 Android 应用商店的应用是应用商店应用。 应用商店应用的提供者对应用进行维护并提供更新。 在应用商店列表选择应用，并使用 Intune 将其添加为用户的可用应用。
-- 内部编写的应用（业务线）：内部创建的应用是业务线 (LOB) 应用。 此应用类型的功能已为一些支持 Intune 的平台创建，例如 Windows、iOS 或 Android。 组织创建更新并将这些更新作为单独的文件提供给你。 可以通过使用 Intune 添加和部署更新为用户提供应用更新。
-- Web 上的应用：Web 应用是客户端-服务器应用程序。 服务器提供 Web 应用，其中包括 UI、内容和功能。 此外，新式 Web 托管平台通常会提供安全性、负载均衡和其他优势。 此应用类型是在 Web 上单独进行维护的。 可以使用 Intune 指向此应用类型。 还可以指定哪组用户可以访问此应用。 请注意，Android 不支持 Web 应用。
+- **应用商店中的应用**：上传到 Microsoft 应用商店、iOS 应用商店或 Android 应用商店的应用是应用商店应用。 应用商店应用的提供者对应用进行维护并提供更新。 在应用商店列表选择应用，并使用 Intune 将其添加为用户的可用应用。
+- **内部编写的应用（业务线）**：内部创建的应用是业务线 (LOB) 应用。 此应用类型的功能已为一些支持 Intune 的平台创建，例如 Windows、iOS 或 Android。 组织创建更新并将这些更新作为单独的文件提供给你。 可以通过使用 Intune 添加和部署更新为用户提供应用更新。
+- **Web 上的应用**：Web 应用是客户端-服务器应用程序。 服务器提供 Web 应用，其中包括 UI、内容和功能。 此外，新式 Web 托管平台通常会提供安全性、负载均衡和其他优势。 此应用类型是在 Web 上单独进行维护的。 可以使用 Intune 指向此应用类型。 还可以指定哪组用户可以访问此应用。 请注意，Android 不支持 Web 应用。
 
 确定组织需要的应用时，请考虑这些应用如何与云服务集成，应用访问什么数据，应用是否对 BYOD 用户可用以及应用是否需要 Internet 访问。
 
@@ -118,9 +118,9 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 
 ### <a name="understanding-licensed-apps"></a>了解获得许可的应用
 除了了解 Web 应用、应用商店应用和 LOB 应用，还应注意批量采购计划的应用和获得许可的应用的目标，例如： 
-- 适用于企业的 Apple 批量采购计划 (iOS)：在 iOS 应用商店中，可以购买要在公司中运行的应用的多个许可证。 购买多个副本可帮助你有效地管理公司的应用。 有关详细信息，请参阅[管理批量购买的 iOS 应用](vpp-apps-ios.md)。
-- Android 工作配置文件：可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android 工作配置文件设备。 为 Android 工作配置文件安装的所有应用都来自托管 Google Play 商店。 登录到该商店，浏览查找所需应用，然后批准它们。 然后，该应用会显示在 Azure 门户的“许可的应用”节点中，可以像管理任何其他应用一样管理应用的分配。
-- 适用于企业的 Microsoft Store (Windows 10)：可在适用于企业的 Microsoft Store 中为组织查找和购买应用（单个或批量）。 通过将此应用商店与 Microsoft Intune 相连，可以在 Azure 门户中管理批量购买的应用。 有关详细信息，请参阅[管理来自适用于企业的 Microsoft Store 的应用](windows-store-for-business.md)。
+- **适用于企业的 Apple 批量采购计划 (iOS)**：iOS App Store 允许为想要在公司运行的应用购买多个许可证。 购买多个副本可帮助你有效地管理公司的应用。 有关详细信息，请参阅[管理批量购买的 iOS 应用](vpp-apps-ios.md)。
+- **Android 工作配置文件**：可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android 工作配置文件设备。 为 Android 工作配置文件安装的所有应用都来自托管 Google Play 商店。 登录到该商店，浏览查找所需应用，然后批准它们。 然后，该应用会显示在 Azure 门户的“许可的应用”节点中，可以像管理任何其他应用一样管理应用的分配。
+- **适用于企业的 Microsoft Store (Windows 10)**：可在适用于企业的 Microsoft Store 中为组织查找和购买应用（单个或批量）。 通过将此应用商店与 Microsoft Intune 相连，可以在 Azure 门户中管理批量购买的应用。 有关详细信息，请参阅[管理来自适用于企业的 Microsoft Store 的应用](windows-store-for-business.md)。
 
     > [!NOTE]
     > Windows 应用的文件扩展名包括 .msi、.appx、.appxbundle、.msix 和 .msixbundle。  

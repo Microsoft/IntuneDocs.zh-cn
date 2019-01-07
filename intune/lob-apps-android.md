@@ -1,12 +1,12 @@
 ---
 title: 将 Android 业务线应用添加到 Microsoft Intune
 titlesuffix: ''
-description: 了解如何将 Android 业务线应用添加到 Microsoft Intune。
+description: 了解如何将 Android 业务线 (LOB) 应用添加到 Microsoft Intune。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60ca4e81fbf2b081a27c633a13d808e88389bb1c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2d1bc4762f46062cc80bb584da0a71423140c234
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182935"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642772"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>将 Android 业务线应用添加到 Microsoft Intune
 
@@ -52,18 +52,18 @@ ms.locfileid: "52182935"
 
 1. 在“添加应用”窗格中，选择“应用信息”。
 2. 在“应用信息”窗格中，添加应用的详细信息。 此窗格中的某些值可能已自动填充，具体取决于所选应用。
-    - 名称：输入显示在公司门户中的应用的名称。 请确保使用的所有应用名称都是唯一的。 如果同一应用名称存在两次，则公司门户中仅显示其中一个应用。
-    - 描述：为应用输入描述。 描述显示在公司门户中。
-    - 发布者：输入应用的发布者名称。
-    - 最低操作系统：从列表中选择可安装应用的最低操作系统版本。 如果将应用分配到具有较低操作系统的设备，则不会安装该应用。
-    - 类别：选择一个或多个内置应用类别，或选择你创建的类别。 “类别”可让用户在浏览公司门户时更轻松地查找应用。
-    - 在公司门户中将此应用显示为特色应用：当用户浏览应用时，在公司门户的主页上突出显示此应用。
-    - 信息 URL：（可选）输入包含此应用相关信息的网站 URL。 此 URL 显示在公司门户中。
-    - 隐私 URL：（可选）输入包含此应用相关隐私信息的网站 URL。 此 URL 显示在公司门户中。
-    - 开发者：（可选）输入应用开发者的名称。
-    - 所有者：（可选）输入此应用的所有者的名称。 例如，“HR 部门”。
-    - 备注：输入与此应用有关的任何备注。
-    - 徽标：上传与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
+    - **名称**：输入显示在公司门户中的应用的名称。 请确保使用的所有应用名称都是唯一的。 如果同一应用名称存在两次，则公司门户中仅显示其中一个应用。
+    - **说明**：输入应用的说明。 描述显示在公司门户中。
+    - **发布者**：输入应用发布者的名称。
+    - **最低操作系统**：从列表中选择可安装应用的最低操作系统版本。 如果将应用分配到具有较低操作系统的设备，则不会安装该应用。
+    - **类别**：选择一个或多个内置应用类别，或选择你创建的类别。 “类别”可让用户在浏览公司门户时更轻松地查找应用。
+    - **在公司门户中将此应用显示为特色应用**：当用户浏览应用时，在公司门户的主页上突出显示应用。
+    - **信息 URL**：（可选）输入包含此应用相关信息的网站的 URL。 此 URL 显示在公司门户中。
+    - **隐私 URL**：（可选）输入包含此应用相关隐私信息的网站的 URL。 此 URL 显示在公司门户中。
+    - **开发者**：（可选）输入应用开发者的名称。
+    - **所有者**：（可选）输入此应用的所有者的名称。 例如，“HR 部门”。
+    - **备注**：输入想与此应用关联的任何备注。
+    - **徽标**：上传与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
 3. 完成后，选择“确定”。
 
 ## <a name="step-4-finish-up"></a>步骤 4：完成

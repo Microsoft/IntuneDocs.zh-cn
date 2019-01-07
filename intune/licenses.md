@@ -15,12 +15,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: d6020207ab32a4e7c18f59f74caeedc9e4f17bf4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 90398729a99a10667d87646a4beaaaf8a7f6201f
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031681"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266913"
 ---
 # <a name="licenses-that-include-intune"></a>包括 Intune 的许可证
 
@@ -39,10 +39,9 @@ ms.locfileid: "53031681"
 | Microsoft 365 E3 | Intune | [了解详细信息](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 E5 | Intune | [了解详细信息](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 F1 | Intune | [了解详细信息](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Office 365 F1 | 无 | [了解详细信息](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
 | Microsoft 365 Business | Intune | [了解详细信息](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Office 365 商业高级版 | 无 | [了解详细信息](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Azure Active Directory 免费版、基本版、高级 P1 版、高级 P2 版 | 无 | [了解详细信息](https://azure.microsoft.com/pricing/details/active-directory/) |
+
+不在此列表中的许可证中不包含 Intune。
 
 如果用户直接或间接受益于某许可证下的任何功能，则需要使用相应的正确许可证。
 

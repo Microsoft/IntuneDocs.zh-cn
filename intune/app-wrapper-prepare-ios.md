@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112847"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738046"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -100,9 +100,9 @@ ms.locfileid: "53112847"
 
 4. 单击“证书、ID 和配置文件”。
 
-   ![Apple 开发者门户](./media/iOS-signing-cert-1.png)
+   ![Apple 开发人员门户 - 证书、ID 和配置文件](./media/iOS-signing-cert-1.png)
 
-5. 单击 ![“Apple 开发者门户”](./media/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 证书。
+5. 安装完成后，单击 ![“Apple 开发者门户”](./media/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 证书。
 
 6. 在“生产”下选择创建“内部和临时”证书。
 
@@ -125,9 +125,9 @@ ms.locfileid: "53112847"
 
 11. 请按照 Apple 开发者站点上有关如何创建 CSR 文件的说明进行操作。 将 CSR 文件保存到 macOS 的计算机。
 
-    ![在 Keychain Access 应用中向证书颁发机构请求证书](./media/iOS-signing-cert-6.png)
+    ![输入请求的证书的信息](./media/iOS-signing-cert-6.png)
 
-12. 返回到 Apple 开发者站点。 单击“继续” 。 然后上传 CSR 文件。
+12. 返回到 Apple 开发者站点。 单击“继续”。 然后上传 CSR 文件。
 
 13. Apple 将生成签名证书。 下载签名证书并将其保存到 macOS 计算机上容易记住的位置。
 
@@ -141,7 +141,7 @@ ms.locfileid: "53112847"
 
 16. 将显示消息窗口。 滚动到底部并在“指纹”标签下查看。 复制 **SHA1** 字符串（模糊显示），将其用作应用包装工具的“-c”参数。
 
-    ![将证书添加到密钥链](./media/iOS-signing-cert-9.png)
+    ![iPhone 信息 - 指纹 SHA1 字符串](./media/iOS-signing-cert-9.png)
 
 
 
@@ -157,7 +157,7 @@ ms.locfileid: "53112847"
 
    ![选择内部预配配置文件](./media/iOS-provisioning-profile-1.png)
 
-5. 单击“继续” 。 请确保将以前生成的签名证书链接到预配配置文件。
+5. 单击“继续”。 请确保将以前生成的签名证书链接到预配配置文件。
 
 6. 请按照此步骤将配置文件（扩展名为 .mobileprovision）下载到 macOS 计算机。
 
@@ -179,7 +179,7 @@ ms.locfileid: "53112847"
 
 打开 macOS 终端并运行以下命令：
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
@@ -188,7 +188,7 @@ ms.locfileid: "53112847"
 
 **示例：** 下面的示例命令在 MyApp.ipa 应用中运行应用包装工具。 指定签名证书的预配配置文件和 SHA-1 哈希，并用于对已包装的应用签名。 创建输出应用 (MyApp_Wrapped.ipa)，且将其存储在桌面文件夹中。
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -197,7 +197,7 @@ ms.locfileid: "53112847"
 
 |属性|如何使用它|
 |---------------|--------------------------------|
-|**-i**|`<Path of the input native iOS application file>`”。 文件名必须以 .app 或 .ipa 结尾。 |
+|**-i**|`<Path of the input native iOS application file>`。 文件名必须以 .app 或 .ipa 结尾。 |
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
@@ -214,17 +214,17 @@ ms.locfileid: "53112847"
 
 在 IntuneMAMPackager/Contents/MacOS 文件夹中，使用文本编辑器或 Xcode 打开 `Parameters.plist`（一个空白 plist 模板）。 为以下项输入参数：
 
-| Plist 项 |  默认值| 注释 |
+| Plist 项 |  默认值| 注意 |
 |------------------|--------------|-----|
-| 输入应用程序包路径  |空| 与 -i 相同|
-| 输出应用程序包路径 |空| 与 -o 相同|
-| 预配配置文件路径 |空| 与 -p 相同|
-| SHA-1 证书哈希 |空| 与 -c 相同|
+| 输入应用程序包路径  |empty| 与 -i 相同|
+| 输出应用程序包路径 |empty| 与 -o 相同|
+| 预配配置文件路径 |empty| 与 -p 相同|
+| SHA-1 证书哈希 |empty| 与 -c 相同|
 | 已启用详情 |false| 与 -v 相同|
 | 删除缺失的权利 | false| 与 -c 相同|
 | 防止默认生成 |false | 相当于使用不带参数的 -b|
 |生成字符串替代 | empty| 已包装输出应用的自定义 CFBundleVersion |
-|扩展预配配置文件路径 | 空| 应用的一系列扩展预配配置文件。
+|扩展预配配置文件路径 | empty| 应用的一系列扩展预配配置文件。
 
 
 将 IntuneMAMPackager 与 plist 一起作为唯一参数运行：
@@ -260,7 +260,7 @@ ms.locfileid: "53112847"
 ### <a name="error-messages"></a>错误消息
 如果应用包装工具失败，将在控制台显示以下错误消息之一：
 
-|错误消息|详细信息|
+|错误消息|更多信息|
 |-----------------|--------------------|
 |你必须指定有效的 iOS 配置文件。|配置文件可能无效。 检查以确保具有正确的设备权限，以及针对开发或分发的正确配置文件。 配置文件可能已过期。|
 |指定有效的输入应用程序名称。|确保你指定的输入应用程序名称正确。|
@@ -289,7 +289,7 @@ ms.locfileid: "53112847"
 
 3.  通过各控制台输入以下脚本，筛选应用限制输出的已保持的日志：
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     你可以将筛选后的日志提交给 Microsoft。
@@ -316,7 +316,7 @@ ms.locfileid: "53112847"
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>适用于 iOS 的应用包装工具支持的功能
 
-|功能|说明|推荐指南|
+|功能|描述|推荐指南|
 |--------------|---------------|------------------------|
 |应用组|使用应用组可让多个应用访问共享容器，并支持应用之间的其他进程间通信。<br /><br />若要启用应用组，请打开“功能”窗格，并单击“应用组”中的“开”。 你可以添加应用组，也可以选择现有应用组。|使用应用组时，请使用反向 DNS 表示法：<br /><br />*group.com.companyName.AppGroup*|
 |后台模式|启用后台模式后，iOS 应用可以在后台继续运行。||
@@ -368,20 +368,20 @@ ms.locfileid: "53112847"
 
 3.  使用 codesign 工具检查 .app 包上的权利，其中 `YourApp.app` 是 .app 包的实际名称：
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  使用安全工具检查应用的嵌入式预配配置文件的权利，其中 `YourApp.app` 是 .app 包的实际名称。
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>使用 – e 参数从应用中删除权利
 此命令将删除不在权利文件中的应用中的任何已启用功能。 如果删除应用正在使用的功能，它会中断你的应用。 你可能会删除丢失功能的一个情况示例是拥有一个默认具有所有功能的供应商生产应用。
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ ms.locfileid: "53112847"
 只需运行常规的应用包装命令并附加 `-citrix` 标记。 `-citrix` 标记当前不带任何参数。
 
 **使用格式**：
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **示例命令**：
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 

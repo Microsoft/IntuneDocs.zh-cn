@@ -1,7 +1,7 @@
 ---
 title: Intune 数据仓库更改日志
 titlesuffix: Microsoft Intune
-description: Intune 数据仓库 API 中的更改列表。
+description: 此主题提供 Microsoft Intune 数据仓库 API 的更改列表。
 keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189939"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642755"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
@@ -95,4 +95,4 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 
 ## <a name="next-steps"></a>后续步骤
  - 了解 [Intune 每周新增功能](whats-new.md)。 另外，还可找到即将发生的更改、有关服务的重要说明，以及有关过去版本的信息。
- - 请参阅 [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)。
+ - 请参阅 [Microsoft Intune 博客](https://go.microsoft.com/fwlink/?LinkID=273882)。

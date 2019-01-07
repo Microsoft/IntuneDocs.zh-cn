@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112827"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642891"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune 的早期版本 - 2018 年 12 月
 
@@ -50,11 +50,11 @@ ms.locfileid: "53112827"
 在 Windows 10 及更高版本设备上，你将能够创建包含 DNS 服务器列表的 VPN 配置文件来解析域，如 contoso.com。 这将包括名称解析的新设置（“设备配置” > “配置文件” > “创建配置文件”> 选择“Windows 10 及更高版本”作为平台 > 选择“VPN”作为配置文件类型 >“DNS 设置” >“添加”）： 
 
 - **自动连接**：如果为“已启用”，则当设备与所输入的域（如 contoso.com）通信时，会自动连接到 VPN。
-- **永久性**：默认情况下，只要使用此 VPN 配置文件连接设备，所有名称解析策略表 (NRPT) 规则就会处于活动状态。 当 NRPT 规则的此设置为“已启用”时，该规则将在设备上保持活动状态，即使 VPN 断开连接或删除 VPN 配置文件也是如此。 该规则将保留下来直至被手动删除，可以使用 PowerShell 完成删除操作。
+- **永久性**：默认情况下，只要使用此 VPN 配置文件连接设备，所有名称解析策略表 (NRPT) 规则就会处于活动状态。 当 NRPT 规则的此设置为“已启用”时，该规则将在设备上保持活动状态，即使 VPN 断开连接也是如此。 该规则会保持活动状态，直到删除 VPN 配置文件或手动删除该规则，删除操作可以使用 PowerShell 完成。
 
 [Windows 10 VPN 设置](vpn-settings-windows-10.md)介绍了设置的当前列表。 
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>使用 S/MIME 对用户的多个设备进行加密和签名 <!-- 1333642 eeready -->
+### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>使用 S/MIME 对用户的多个设备进行加密和签名 <!-- 1333642 eeready -->
 将支持使用新导入的证书配置文件进行 S/MIME 电子邮件加密（“设备配置” > “配置文件” > “创建配置文件”>“选择平台”>“PKCS 导入的证书”配置文件类型）。 在 Intune 中，可以 PFX 格式导入证书。 然后 Intune 可以将这些相同的证书传递给单个用户注册的多个设备。 还包括：
 
 - 本机 iOS 电子邮件配置文件支持使用 PFX 格式的导入证书启用 S/MIME 加密。
@@ -73,14 +73,14 @@ ms.locfileid: "53112827"
 [Windows 10 VPN 设置](vpn-settings-windows-10.md)列出了当前的 VPN 设置。
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune App SDK 将支持 256 位加密密钥 <!-- 1832174 -->
-应用保护策略启用加密时，适用于 iOS 的 Intune App SDK 将使用 256 位加密密钥。 SDK 将继续提供 128 位密钥支持以与使用旧版 SDK 的内容和应用兼容。
+应用保护策略启用加密时，适用于 Android 的 Intune App SDK 将使用 256 位加密密钥。 SDK 将继续提供 128 位密钥支持以与使用旧版 SDK 的内容和应用兼容。
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>在 Intune 配置文件中已启用共享 PC 设置 <!-- 1907917 -->
 目前，你可以在使用自定义 OMA-URI 设置的 Windows 10 桌面设备上配置共享 PC 设置。 将添加新的配置文件以配置共享 PC 设置（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “共享多用户设备”）。
 适用于：Windows 10 及更高版本、Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune 策略更新身份验证方法和公司门户应用安装  <!-- 1927359 -->
-在某些设备上从应用商店安装公司门户应用时，Intune 将不再支持该应用。 仅当在注册过程中使用 Apple 设置助理进行身份验证时，此更改才适用。 此更改也只会影响通过以下方式注册的 iOS 设备：  
+在已通过 Apple 公司设备注册方法之一经由“设置助理”注册的设备上，Intune 将不再支持由最终用户从应用商店手动安装的公司门户。 仅当在注册过程中使用 Apple 设置助理进行身份验证时，此更改才适用。 此更改也只会影响通过以下方式注册的 iOS 设备：  
 * Apple 配置器
 * Apple Business Manager
 * Apple School Manager
@@ -113,6 +113,9 @@ ms.locfileid: "53112827"
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>某些 BitLocker 设置支持 Windows 10 专业版<!-- 2727036 -->
 你将能够创建在 Windows 10 设备上设置 Endpoint Protection 设置的配置文件，包括 BitLocker。 这会为某些 BitLocker 设置添加对 Windows 10 专业版的支持。 若要查看当前 Windows 10 版本设置，请参阅[适用于 Windows 10 的 Endpoint protection 设置](endpoint-protection-windows-10.md#windows-encryption)。
+
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Intune 设备报告字段 <!-- 2748738 -->
 Intune 将提供其他设备报告字段，包括 Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，将通过选择“客户端应用” > “应用保护状态”并选择“应用保护报告: iOS、Android”来获取这些字段。 此外，这些参数将帮助你配置设备制造商“允许”列表 (Android)、设备型号的“允许”列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Intune 设备报告字段 <!-- 2748738 -->

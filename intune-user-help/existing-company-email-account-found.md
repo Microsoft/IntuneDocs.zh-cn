@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,32 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f44b281bc8a0edd39e25bf966841a5f458c6677e
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 3c06bb8efd0d6f7795094f36dcb513c5dca63e77
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903465"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570785"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>找到现有公司电子邮件帐户
 
-你已有组织或公司的电子邮件帐户，现在你想在移动设备上访问该帐户。 公司支持人员需要你提供协助，从向你的设备发送电子邮件的用户开始，全程保护电子邮件访问的安全。 当前电子邮件可能已经处理，但执行以下步骤将使信息更安全。
+在管理你的设备前，你的移动设备可能已具有访问你的工作或学校电子邮件帐户的权限。 如果你的设备现在已被管理，我们建议你：
 
-1.  找到设备的“设置”，然后删除先前设置的与公司电子邮件的连接。  例如，在 iOS 设备上，点击“设置” > “邮件” > “帐户”。 选择工作电子邮件帐户，然后单击“删除”。
+* 断开设备与现有工作电子邮件帐户的连接。
+* 重新同步公司门户应用中的设备设置。  
 
-2.  退出“设置”并在设备上打开公司门户应用。  
+这些步骤将确保你的设备符合公司的安全要求，并确保你的电子邮件保持安全。
 
-3. 转到“设备”并选择要更新的设备。
+1.  在你的设备上，转到“设置”并找到你已连接的帐户。 例如，在安装 iOS 11 或更高版本的设备上，选择“密码和帐户”。
+ 
+2. 选择并删除你的工作电子邮件帐户。
 
-4. 选择“检查设置”。 稍后，设备将更新为新的电子邮件设置。
+3. 在设备上打开公司门户应用。  
+
+4. 在你的设备列表中，选择你想要更新的设备。
+
+5. 选择“检查设置”。 稍后，设备将同步你的新电子邮件设置。
+
+6. 登录到你的工作或学校电子邮件帐户。
 
 仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

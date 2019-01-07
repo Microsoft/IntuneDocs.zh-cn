@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 55d624f63c8563cc3dde561b98cd0894d5a9b65d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 521f33b0c4cfa0f1f4ba534acc2f3fec9a53f151
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189149"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429621"
 ---
 # <a name="reference-for-date-entity"></a>日期实体引用
 
 “日期”类别包含日期实体，用于定义数据模型中的日期引用。
 
-**日期**
+## <a name="date"></a>日期
 
 日期实体表示跨多个数据仓库实体引用的日期。
 
@@ -53,3 +53,6 @@ ms.locfileid: "52189149"
 | CalendarQuarter |                    日历季度                    |          3           |
 |  CalendarYear   |                     日历年                      |         2016         |
 
+## <a name="next-steps"></a>后续步骤
+
+- 了解有关 [Intune 数据仓库](reports-nav-create-intune-reports.md)的详细信息。

@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112436"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642551"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot（预览版）部署已加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置已加入混合 Azure Active Directory 的设备。 为此，请执行以下步骤。
@@ -46,7 +46,7 @@ ms.locfileid: "53112436"
 
    ![Azure 门户的屏幕截图](./media/auto-enroll-azure-main.png)
 
-2. 选择“移动性 (MDM 和 MAM)”。
+2. 选择“移动性(MDM 和 MAM)”。
 
    ![Azure 门户的屏幕截图](./media/auto-enroll-mdm.png)
 
@@ -58,11 +58,11 @@ ms.locfileid: "53112436"
 
    ![Azure 门户的屏幕截图](./media/auto-enroll-scope.png)
 
-5. 对下列 URL 使用默认值：
+5. 对以下 URL 使用默认值：
     - **MDM 使用条款 URL**
     - **MDM 发现 URL**
     - **MDM 符合性 URL**
-6. 选择“保存”。
+6. 选择 **“保存”**。
 
 ## <a name="increase-the-computer-account-limit-in-the-organizational-unit"></a>增加组织单位中的计算机帐户限制
 
@@ -137,7 +137,7 @@ ms.locfileid: "53112436"
     - 若要创建包括所有具有特定采购订单 ID 的 Autopilot 设备的组，请键入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     在“高级规则”框中添加代码后，，选择“保存”。
-5. 选择 **“创建”**。  
+5. 选择“创建”。  
 
 ## <a name="register-your-autopilot-devices"></a>注册 Autopilot 设备
 
@@ -194,7 +194,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 2. 在“注册状态页”边栏选项卡中，选择“默认” > “设置”。
 3. 有关“显示应用和配置文件安装进度”，请选择“是”。
 4. 根据需要配置其他选项。
-5. 选择“保存”。
+5. 选择 **“保存”**。
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>创建并分配域加入配置文件
 
@@ -204,7 +204,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
    - **说明**：输入配置文件的说明。
    - **平台**：选择“Windows 10 及更高版本”。
    - **配置文件类型**：选择“域加入(预览版)”。
-3. 选择“设置”，然后提供“计算机名称前缀”、“域名”和“组织单位”（可选）。 
+3. 选择“设置”，然后提供“计算机名称前缀”、“域名”和 DN 格式的“组织单位”（可选）。 
 4. 选择“确定” > “创建”。 配置文件随即创建并显示在列表中。
 5. 要分配配置文件，请按照[分配设备配置文件](device-profile-assign.md#assign-a-device-profile)下的步骤操作。 
 

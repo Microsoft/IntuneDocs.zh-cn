@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630011"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324967"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Internet 访问
 
@@ -150,7 +150,7 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 ### <a name="before-you-start"></a>开始之前
 
 - 通过 Azure AD 应用程序代理设置内部应用程序。
-    - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)。 
+    - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started)。 
 - 必须使用 Managed Browser 应用的最低版本 1.2.0。
 - Managed Browser 或 Microsof Edge 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
 
@@ -168,7 +168,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-若要深入了解 Managed Browser、Microsof Edge 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅“企业移动性 + 安全性”博客文章 [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)（更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问）。
+若要深入了解 Managed Browser、Microsoft Edge 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅“企业移动性 + 安全性”博客文章[更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)。
 
 > [!NOTE]
 > Microsoft Edge 使用与 Managed Browser 相同的键值对。 
@@ -261,6 +261,19 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>在 Intune Managed Browser 中打开 Web 链接与Microsoft Edge 
+
+Intune Managed Browser 和 Microsoft Edge 现在都被视为策略托管的浏览器/受保护的浏览器。 如今，现有的应用保护策略将导致来自 Intune 托管应用的 Web 链接在特定浏览器中打开，具体取决于场景和平台。 
+
+在 Android 上： 
+* 如果设备上同时有 MB 和 Edge，则使用 Managed Browser，除非所有需要策略托管浏览器的 Intune 托管应用的应用配置设置“com.microsoft.intune.useEdge”设置为“true”。  
+* 如果设备上只有 Microsoft Edge，并且是针对策略的，则使用 Microsoft Edge。
+* 如果设备上只有 Managed Browser 且目标是策略，则使用 Managed Browser。 
+
+在 iOS 上，对于已经集成了针对 iOS v. 9.0.9+ 的 Intune SDK 的应用： 
+* 如果设备上同时有 MB 和 Edge，则使用 Managed Browser，除非所有需要策略托管浏览器的应用配置设置“com.microsoft.intune.useEdge”设置为“true”，或者，如果已安装 Microsoft Edge 且收到了策略，则使用 Microsoft Edge。 
+* 如果设备上只有 Microsoft Edge，针对策略，并且已收到策略，则使用 Microsoft Edge。 
+* 如果设备上只有 Managed Browser，针对策略，并且已收到策略，则使用 Managed Browser。
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用 Managed Browser 访问托管应用日志
 

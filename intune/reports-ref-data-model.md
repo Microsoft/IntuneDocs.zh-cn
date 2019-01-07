@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188103"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737995"
 ---
-# <a name="data-warehouse-data-model"></a>数据库仓库数据模型
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 数据库仓库数据模型
 
 Intune 数据仓库每天对数据进行采样，呈现不断变化的移动设备环境的历史视图。 该视图由一段时间内相关的实体组成。
 

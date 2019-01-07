@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
+ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977348"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531322"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune 中的设备符合性策略入门
 
@@ -29,7 +29,7 @@ ms.locfileid: "52977348"
 
 - 使用密码来访问设备
 
-- Encryption
+- 加密
 
 - 设备是否越狱或取得 root 权限
 
@@ -137,7 +137,7 @@ Remember that you need to implement conditional access policies in addition to c
 |---------|---------|
 |Unknown     |1|
 |不适用     |2|
-|相容|3|
+|是否满足条件|3|
 |InGracePeriod|4|
 |不符合|5|
 |错误|6|
@@ -157,7 +157,7 @@ Remember that you need to implement conditional access policies in addition to c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>部署设备符合性策略的方法
 可向用户组中的用户或设备组中的设备部署符合性策略。 将符合性策略部署到用户后，会对所有用户设备检查符合性。 在 Windows 10 版本 1803 和更高版本的设备上，如果主要用户未注册设备，则建议部署到设备组。 在此方案中使用设备组有助于生成符合性报告。
 
-在所有已注册 Intune 的设备上评估一组内置的符合性策略设置（“Azure 门户”>“设备符合性”）。 其中包括：
+在所有已注册 Intune 的设备上评估一组内置的符合性策略设置（“Azure 门户”>“设备符合性”）。 这些地方包括：
 
 - **将未分配到符合性策略的设备标记为**：此属性有两个值：
 
@@ -171,7 +171,7 @@ Remember that you need to implement conditional access policies in addition to c
   启用此设置要求设备：
   - 在 OS 级别启用位置服务
   - 允许公司门户使用位置服务
-  - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。 通过打开公司门户应用或将设备移动 500 米或更远距离来触发评估。
+  - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。 通过打开公司门户应用或将设备移动 500 米或更远距离来触发评估。 如果设备在 72 小时内未移动 500 米，则用户需要打开公司门户应用，以增强越狱评估。
 
 - **符合性状态有效期(天)**：输入设备报告所有已收到符合性策略的状态的时间段。 未在此时间段内返回状态的设备将被视为“不符合”。 默认值为 30 天。
 
@@ -181,7 +181,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 使用符合性报告是检查设备状态的有效方法。 对于相关指导，请参阅[监视符合性策略](compliance-policy-monitor.md)。
 
-### <a name="actions-for-noncompliance"></a>针对非符合性的操作
+### <a name="actions-for-noncompliance"></a>对不符合设备的操作
 可配置按时间顺序排列的操作序列，并将其应用到不满足符合性策略条件的设备。 这些不符合性操作可以自动完成，请参阅[自动执行不符合性操作](actions-for-noncompliance.md)中的说明。
 
 ## <a name="azure-classic-portal-vs-azure-portal"></a>Azure 经典门户与 Azure 门户

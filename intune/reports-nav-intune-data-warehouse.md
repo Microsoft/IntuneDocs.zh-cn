@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b08746965c23c8d247a53bcd0b0844a24581b4e6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 730195b200448d529d2a56ac8e8a45548264de2d
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179065"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429638"
 ---
-#  <a name="intune-data-warehouse-api"></a>Intune 数据仓库 API
+#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune 数据仓库 API
 
 通过 Intune 数据仓库 API 可访问机器可读格式的 Intune 数据，以便在最喜欢的分析工具中使用它。 可使用该 API 生成报表，获取有关企业移动环境的见解。 API 使用 OData 协议，该协议遵循以下内容的标准模式：
 
@@ -66,6 +66,6 @@ OData 定义抽象的数据模型和协议，允许任何客户端访问任何�
 
 有关使用 Azure AD 的详细信息，请参阅 [Azure AD 的身份验证方案](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)。
 
-在 [odata.org](http://www.odata.org) 上查找 OData 资源。
+在 [odata.org](https://www.odata.org) 上查找 OData 资源。
   
-在 [OData 版本 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)) 处查看 OData 4.0 标准版  
+在 [OData 版本 4.0] (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)) 处查看 OData 4.0 标准版  
