@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816950"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>如何验证应用保护策略设置
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247061"
 
 验证应用保护策略是否已正确设置并运行。 本指南适用于 Azure 门户中的应用保护策略。
 
-### <a name="checking-for-symptoms"></a>检查症状
+## <a name="checking-for-symptoms"></a>检查症状
 由于应用保护是数据保护工具，因此用户不太可能报告问题。 如果应用保护配置出现问题，用户将具有不受限制的访问权限，就如同没有应用保护一样，并且不会知道出现了问题。 因此，建议让一小组可专门测试应用保护限制的用户试验应用保护策略来验证应用保护配置。
 
 
-### <a name="what-to-check"></a>要检查的内容
+## <a name="what-to-check"></a>要检查的内容
 
 如果测试显示应用保护策略行为与预期不符，请检查这些项：
 
@@ -41,7 +41,7 @@ ms.locfileid: "53247061"
 - 用户是否已获得 O365 授权？
 - 每个用户的应用保护应用的状态。 可能的应用状态为“**已签入**”和“**未签入**”。
 
-#### <a name="user-app-protection-status"></a>用户应用保护状态
+### <a name="user-app-protection-status"></a>用户应用保护状态
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 选择“客户端应用” > “监视” >  “应用保护状态”，然后选择“分配的用户”磁贴。 
@@ -50,7 +50,7 @@ ms.locfileid: "53247061"
 
 
 
-### <a name="what-to-do"></a>要执行的操作
+## <a name="what-to-do"></a>要执行的操作
 下面是要根据用户状态采取的操作：
 
 - 如果用户未获得应用保护授权，请为用户分配 Intune 许可证。
@@ -58,6 +58,6 @@ ms.locfileid: "53247061"
 - 如果用户的应用被列为“未签入”，请检查是否已为该应用正确配置应用保护策略。
 - 确保这些条件适用于要应用应用保护策略的所有用户。
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 
 [什么是 Intune 应用保护策略？](app-protection-policies.md)
