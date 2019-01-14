@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: aa447721449b2b3733e20d9f65f0253e9123228b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 761605a74e6aeda65d9c6361b18b51e255873ac1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816525"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>将 Better Mobile 与 Intune 集成
 
@@ -62,7 +62,7 @@ Better Mobile 应用授权流程如下：
 1. 转到 [Better Mobile 管理控制台](https://aad.bmobi.net)，使用凭据登录。
 2. 选择“集成” > “EMM/MDM” > “添加帐户”。
 
-     ![Better Mobile 管理控制台](media/better_mobile_console.png)
+     ![Better Mobile 管理控制台的示意图](media/better_mobile_console.png)
  
 3. 选择“Intune”。
 4. 在“帐户名称”旁边，键入描述符。 

@@ -1,12 +1,11 @@
 ---
-title: 设置 Lookout 与 Microsoft Intune 的集成
-titlesuffix: ''
+title: 设置 Lookout 与 Microsoft Intune 的集成 | Microsoft Intune
 description: 了解如何将 Intune 与 Lookout Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 84bc12d568fce0f5cd6e460595eedf0af0d6296e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816865"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>使用 Intune 设置 Lookout 移动威胁防御集成
 
@@ -77,11 +76,11 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 
 3. 在[“Lookout 控制台”](https://aad.lookout.com)中，从“系统”模块选择“连接器”选项卡，然后选择“Intune”。
 
-   ![Lookout 控制台的屏幕截图，其中打开了“连接器”选项卡并突出显示了“Intune”选项](./media/lookout_mtp_setup-intune-connector.png)
+   ![Lookout 控制台的示意图，其中“连接器”选项卡上有“Intune”选项](./media/lookout_mtp_setup-intune-connector.png)
 
 4. 转到“连接器” > “连接设置”，以分钟为单位指定“检测信号频率”。
 
-   ![连接设置选项卡的屏幕截图，其中显示了已配置信号检测频率](./media/lookout-mtp-connection-settings.png)
+   ![连接设置选项卡的示意图，其中已配置信号检测频率](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>配置注册组
 1. 最佳做法是在 [Azure AD 管理门户](https://manage.windowsazure.com)中创建一个 Azure AD 安全组，并在其中包含少量用于测试 Lookout 集成的用户。
@@ -95,10 +94,10 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 
     >[!IMPORTANT]
     > 正如 Azure 门户安全组的“属性”中所示，“显示名称”区分大小写。 如下图所示，安全组的“显示名称”为大小写混用，而标题全为小写。 在 Lookout 控制台中，请匹配安全组的“显示名称”的大小写。
-    >![Azure 门户 Azure Active Directory 服务属性页的屏幕截图](./media/aad-group-display-name.png)
+    >![Azure 门户、Azure Active Directory 服务属性页的示意图](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >最佳做法是使用递增时间的默认值（5 分钟）检查新设备。 当前限制，Lookout 无法验证组显示名称：请确保 Azure 门户中的“显示名称”字段与 Azure AD 安全组完全匹配。 不支持创建嵌套组：Lookout 中使用的 Azure AD 安全组只能包含用户。 不能包含其他组。
+    >最佳做法是使用递增时间的默认值（5 分钟）检查新设备。 当前限制，Lookout 无法验证组显示名称：请确保 Azure 门户中的“显示名称”字段与 Azure AD 安全组完全匹配。 **不支持创建嵌套组：** Lookout 中使用的 Azure AD 安全组仅能包含用户。 不能包含其他组。
 
 3.  添加组后，用户下次在其受支持的设备上打开 Lookout for Work 应用时，将在 Lookout 中激活该设备。
 
@@ -115,7 +114,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 ## <a name="configure-enrollment-settings"></a>配置注册设置
 在“系统”模块中的“连接器”页上，指定在将设备视为已断开连接之前的天数。  断开连接的设备会被视为不符合，并根据 Intune 条件访问策略，不得访问公司应用程序。 可以指定介于 1 到 90 天之间的值。
 
-![Lookout 注册设置](./media/lookout-console-enrollment-settings.png)
+![系统模块上的 Lookout 注册设置](./media/lookout-console-enrollment-settings.png)
 
 ## <a name="configure-email-notifications"></a>配置电子邮件通知
 如果希望接收有关威胁的电子邮件警报，请使用要接收通知的用户帐户登录 [Lookout 控制台](https://aad.lookout.com)。 在“系统”模块“首选项”选项卡上选择通知的威胁级别，并将其设置为“开启”。 保存你的更改。
@@ -123,7 +122,7 @@ Lookout 移动终结点安全租户会与 Azure AD 订阅关联，以将 Lookout
 ![显示用户帐户的“首选项”页面屏幕截图](./media/lookout-mtp-email-notifications.png) 如果希望不再收到通知，请将通知设置为“关闭”并保存修改。
 
 ### <a name="configure-threat-classification"></a>配置威胁分类
-Lookout 移动威胁防御将移动威胁分为多种类型。 [Lookout 威胁分类](http://personal.support.lookout.com/hc/articles/114094130693)关联了默认威胁等级。 可随时对其进行修改，以满足公司需求。
+Lookout 移动威胁防御将移动威胁分为多种类型。 [Lookout 威胁分类](https://personal.support.lookout.com/hc/articles/114094130693)关联了默认威胁等级。 可随时对其进行修改，以满足公司需求。
 
 ![显示威胁和分类的“策略”页面屏幕截图](./media/lookout-mtp-threat-classification.png)
 

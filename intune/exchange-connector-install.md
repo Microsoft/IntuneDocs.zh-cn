@@ -1,12 +1,11 @@
 ---
-title: 设置 Microsoft Intune 本地 Exchange 连接器
-titleSuffix: ''
+title: 设置 Microsoft Intune 本地 Exchange 连接器 | Microsoft Intune
 description: 基于 Intune 注册和 Exchange Active Sync (EAS)，使用本地 Exchange 连接器来管理设备对 Exchange 邮箱的访问。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817256"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>在 Microsoft Intune Azure 中设置 Intune 本地 Exchange 连接器
 
@@ -41,7 +40,7 @@ ms.locfileid: "53112555"
 下表列出了在其中安装本地 Exchange 连接器的计算机的要求。
 
 
-|            要求             |                                                                                                                                                                                                        详细信息                                                                                                                                                                                                        |
+|            要求             |                                                                                                                                                                                                        更多信息                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         操作系统          |                                                               Intune 支持在运行任何版本的 Windows Server 2008 SP2 64 位、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 或 Windows Server 2016 的计算机上安装本地 Exchange 连接器。<br /><br />该连接器在任何服务器核心安装上都不受支持。                                                                |
 |         Microsoft Exchange         |                                                                           本地连接器需要 Microsoft Exchange 2010 SP3 或更高版本或旧版 Exchange Online Dedicated。 若要确定 Exchange Online Dedicated 环境采用的是<strong>新</strong>配置还是<strong>旧</strong>配置，请与帐户管理员联系。                                                                           |
@@ -71,7 +70,7 @@ ms.locfileid: "53112555"
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange 连接器软件安装包
 
-1. 在本地 Exchange 连接器支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange Server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](http://portal.azure.com)。
+1. 在本地 Exchange 连接器支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange Server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](https://portal.azure.com)。
 
 2. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 

@@ -1,6 +1,5 @@
 ---
-title: 创建和部署 Windows 信息保护 (WIP) 应用保护策略
-titlesuffix: Microsoft Intune
+title: 创建和部署 Windows 信息保护 (WIP) 应用保护策略 | Microsoft Intune
 description: 通过 Microsoft Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817307"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -35,15 +34,15 @@ ms.locfileid: "52181320"
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>允许和豁免应用列表
 
--   **受保护的应用**：这些应用需要符合此策略。
+-   **受保护的应用：** 这些应用需要符合此策略。
 
--   **豁免应用**：这些应用从此策略中豁免，可以无限制地访问公司数据。
+-   **豁免应用：** 这些应用从此策略中豁免，可以无限制地访问公司数据。
 
 ### <a name="types-of-apps"></a>应用类型
 
--   **推荐的应用**：一份预先填写好的应用列表（主要为 Microsoft Office 应用），便于轻松导入策略。
--   应用商店应用：可将 Windows 应用商店中的任何应用添加到策略。
--   Windows 桌面应用：可将任何传统 Windows 桌面应用添加到策略（例如，.exe、.dll）
+-   **推荐的应用：** 一份预先填写好的应用列表（主要为 Microsoft Office 应用），便于轻松导入策略。
+-   **应用商店应用：** 可将 Windows 应用商店中的任何应用添加到策略。
+-   **Windows 桌面应用：** 可将任何传统 Windows 桌面应用添加到策略（例如，.exe、.dll）
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -76,9 +75,9 @@ ms.locfileid: "52181320"
 5. 选择“添加策略”以显示“添加一个策略”边栏选项卡。
 6. 添加下列值：
     - **名称：** 键入新策略的名称（必填）。
-    - **说明：**（可选）键入说明。
+    - **描述：**（可选）键入说明。
     - **平台：** 选择“Windows 10”作为应用保护策略的支持平台。
-    - **注册状态：** 选择“不注册”作为策略的注册状态。
+    - **注册状态：** 选择“无需注册”作为策略的注册状态。
 7.  选择“创建”。 创建策略并在“应用保护策略”边栏选项卡的表中显示该策略。
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>将推荐的应用添加到受保护的应用列表中
@@ -149,7 +148,7 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
 1.  在“应用策略”边栏选项卡中，选择策略的名称，然后选择“所需设置”。
 
-    ![Learning 模式屏幕截图](./media/learning-mode-sc1.png)
+    ![学习模式窗格的屏幕截图](./media/learning-mode-sc1.png)
 
 1.  选择一种设置，然后选择“保存”。
 

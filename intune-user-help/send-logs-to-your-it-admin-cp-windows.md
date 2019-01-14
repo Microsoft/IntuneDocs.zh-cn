@@ -1,6 +1,6 @@
 ---
 title: 将 Windows 10 设备的日志发送给公司支持人员 | Microsoft Docs
-description: 发送诊断日志以帮助公司支持人员修复应用问题
+description: 发送错误详细信息以帮助公司支持人员修复应用问题
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: cc1af3dee9dc8c591322c26b65a354130b05786a
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626061"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006312"
 ---
 # <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>通过 Windows 的公司门户将诊断日志发送给公司支持人员
 

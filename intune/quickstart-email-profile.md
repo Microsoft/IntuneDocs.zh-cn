@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3da4208b3036b0252e2e5bd26d8361d04642183a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817035"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入门：创建适用于 iOS 设备的电子邮件设备配置文件
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入门：创建适用于 iOS 的电子邮件设备配置文件
 
 在本快速入门中，你将了解如何创建适用于 iOS 设备的电子邮件设备配置文件。 本配置文件指定了 iOS 设备上内置电子邮件应用连接到公司电子邮件所需的设置。 电子邮件设备配置文件有助于跨设备标准化设置，并允许最终用户在不进行任何所需设置的情况下在其个人设备上访问公司电子邮件。 要进一步保护电子邮件，可以使用电子邮件配置文件来确定设备是否符合要求，然后设置条件访问权限以仅允许兼容设备访问电子邮件。 有关电子邮件配置文件的详细信息，请参阅[如何在 Microsoft Intune 中配置电子邮件设置](email-settings-configure.md)
 
@@ -48,11 +48,11 @@ ms.locfileid: "52189687"
      ![创建适用于 iOS 的电子邮件配置文件](media/quickstart-email-profile/ios-email-profile-name.png)
 
 5. 选择“设置”，并输入以下设置（保留其他设置的默认值）：
-   - **电子邮件服务器**：对于本快速入门，输入“outlook.office365.com”。 本设置指定 iOS 邮件应用用于连接到电子邮件的电子邮件服务器的 Exchange 位置 (URL)。
-   - **帐户名称**：输入“公司电子邮件”。
+   - **电子邮件服务器**：对于本快速入门，请输入“outlook.office365.com”。 本设置指定 iOS 邮件应用用于连接到电子邮件的电子邮件服务器的 Exchange 位置 (URL)。
+   - **帐户名**：输入公司电子邮件。
    - **AAD 中的用户名属性**：此名称是 Intune 从 Azure Active Directory (Azure AD) 获取的属性。 Intune 使用此名称动态生成此配置文件的用户名。 在本快速入门中，我们假设希望将“用户主体名称”用作配置文件的用户名（例如，user1@contoso.com）。
    - **AAD 中的电子邮件地址属性**：此设置将设置 Azure AD 中用于登录 Exchange 的电子邮件地址。 在本快速入门中，选择“用户主体名称”。
-   - **身份验证方法**：在本快速入门中，选择“用户名和密码”。 （如果已经为 Intune 设置了证书，也可以选择“证书”。）
+   - **身份验证方法**：在本快速入门中，请选择“用户名和密码”。 （如果已经为 Intune 设置了证书，也可以选择“证书”。）
     
      ![创建适用于 iOS 的电子邮件配置文件](media/quickstart-email-profile/ios-email-profile.png)
 

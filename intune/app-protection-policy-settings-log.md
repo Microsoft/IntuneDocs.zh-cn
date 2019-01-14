@@ -1,5 +1,5 @@
 ---
-title: 查看应用保护策略日志
+title: 查看应用保护策略日志 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 了解可在应用保护日志中查看的设置。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3e7b6ec1063b4337f44de0a4502bcbf7c2a45edf
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817205"
 ---
 # <a name="review-client-app-protection-logs"></a>查看客户端应用保护日志
 
@@ -39,8 +39,8 @@ ms.locfileid: "52189837"
 
 | 名称                        | 可能值                                                                                                                                                                                                                                                                                           | Azure Intune 移动应用程序管理门户中的设置                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x 分钟                                                                                                                                                                                                                                                                                                   | [访问] 重新检查访问要求 - 脱机宽限期<br>注意：如果设备脱机，这是指重新检查应用访问要求前的时间段。             |
-| AccessRecheckOnlineTimeout  | _x_ 分钟                                                                                                                                                                                                                                                                                                   | [访问] 重新检查访问要求 - 超时。<br>注意：如果设备联机，这是指在应用启动后重新检查应用访问要求前的时间段。 |
+| AccessRecheckOfflineTimeout | x 分钟                                                                                                                                                                                                                                                                                                   | [访问] 重新检查访问要求 - 脱机宽限期<br>注意：如果设备处于脱机状态，这是指重新检查应用访问要求之前的时间段。             |
+| AccessRecheckOnlineTimeout  | _x_ 分钟                                                                                                                                                                                                                                                                                                   | [访问] 重新检查访问要求 - 超时。<br>注意：如果设备处于联机状态，这是指在应用启动后重新检查应用访问要求之前的时间段。 |
 | AppPinDisabled              | 0 = 否<br>1 = 是                                                                                                                                                                                                                                                                                           | [访问] 托管设备 PIN 时禁用应用 PIN。                                                                                                                                     |
 | AppSharingFromLevel         | 0 = 没有应用<br>1 = 托管应用<br>2 = 任何应用。                                                                                                                                                                                                                                                              | [数据重定位] 允许此应用接收其他应用的数据。                                                                                                                        |
 | AppSharingToLevel           | 0 = 没有应用<br>1 = 托管应用<br>2 = 任何应用。                                                                                                                                                                                                                                                              | [数据重定位] 允许此应用将数据传输给其他应用。                                                                                                                         |

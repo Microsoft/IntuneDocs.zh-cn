@@ -1,6 +1,5 @@
 ---
-title: Symantec 连接器与 Microsoft Intune
-titlesuffix: ''
+title: Symantec 连接器与 Microsoft Intune | Microsoft Intune
 description: 了解如何将 Intune 与 Symantec Endpoint Protection Mobile 相集成以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817105"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 连接器
 
@@ -67,13 +66,13 @@ Intune 支持与 SEP Mobile 集成的两种模式：
 
 **检测到恶意应用时对其进行阻止：**
 
-![检测到恶意应用](./media/symantec-arch-1.png)
+![检测到恶意应用的概念图](./media/symantec-arch-1.png)
 
 **修正后授予访问权限：**
 
-![检测到恶意应用后，则会在修正后授予访问权限](./media/symantec-arch-2.png)
+![检测到恶意应用后，在修正后授予访问权限的示意图](./media/symantec-arch-2.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
+### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 
 检测**中间人**等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
 
@@ -85,7 +84,7 @@ Intune 支持与 SEP Mobile 集成的两种模式：
 
 ![威胁解除后授予访问权限](./media/symantec-arch-4.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
 检测**中间人**等网络威胁，根据设备风险阻止公司文件的同步。
 

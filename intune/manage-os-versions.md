@@ -1,23 +1,23 @@
 ---
-title: 使用 Microsoft Intune 管理操作系统版本
+title: 使用 Microsoft Intune 管理操作系统版本 | Microsoft Intune
 description: 了解如何使用 Microsoft Intune 跨平台管理操作系统版本。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
-ms.openlocfilehash: c75956cd1e3e9bba0017a624b99dcc090d32978b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 27a581a72c20c940a04a791ef9e63a2dc8bf5b24
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816984"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理操作系统版本
 在新式移动和桌面平台上，主要更新、修补程序和新版本的发布速度很快。 你在 Windows 上具有完全管理更新和修补程序的控制权限，但在 iOS 和 Android 等平台上，最终用户也需参与此过程。  Microsoft Intune 可帮助构建跨不同平台的操作系统版本管理。
@@ -59,13 +59,12 @@ Intune MDM 设备符合性策略提供以下工具：
 使用 Intune 应用保护策略和移动应用程序管理 (MAM) 访问设置，可在应用层级指定最低操作系统版本。 如此一来便可通知、鼓励或要求最终用户将操作系统更新至指定的最低版本。
  
 有两种不同选项： 
+- **警告** - 如果最终用户打开具有应用程序保护策略的应用，或对于具有 MAM 访问设置的设备，其操作系统版本低于指定版本，则“警告”将通知最终用户需进行升级。 允许访问应用和组织数据。
+  ![Android 更新警告对话框示意图](./media/os-version-update-warning.png) 
 
-|警告  |阻止  |
-|---------|---------|
-|如果最终用户打开具有应用程序保护策略的应用，或对于具有 MAM 访问设置的设备，其操作系统版本低于指定版本，则“警告”将通知最终用户需进行升级。 允许访问应用和组织数据。|如果最终用户打开具有应用程序保护策略的应用，或对于具有 MAM 访问设置的设备，其操作系统版本低于指定版本，则“阻止”将通知最终用户必须进行升级。 不允许访问应用和组织数据。|
-|![Android 更新警告对话框](./media/os-version-update-warning.png)    |![已阻止应用访问对话框](./media/os-version-access-blocked.png)          |
+- **阻止** - 如果最终用户打开具有应用程序保护策略的应用，或对于具有 MAM 访问设置的设备，其操作系统版本低于指定版本，则“阻止”将通知最终用户必须进行升级。 不允许访问应用和组织数据。
+  ![已阻止应用访问对话框示意图](./media/os-version-access-blocked.png)
 
- 
 ### <a name="in-practice"></a>具体实践
 当前，在打开或恢复应用时，组织通过使用应用保护策略设置提醒最终用户需确保其应用处于最新版本。 例如这个示例配置：如果版本为最新版本减一，则将警告最终用户；如果版本为最新版本减二，则将阻止最终用户。
  
@@ -73,13 +72,13 @@ Intune MDM 设备符合性策略提供以下工具：
 
 ## <a name="managing-a-new-operating-system-version-rollout"></a>管理新操作系统版本的推出
 可使用本文所述 Intune 功能，在自定义的时间线内将组织移至新操作系统版本。 以下是关于某个示例部署模型的步骤说明，该示例在七天内将用户从操作系统 v1 移至操作系统 v2。
-- 步骤 1：使用注册限制将操作系统 v2 作为注册设备的最低版本。 此操作确保新的最终用户设备在注册时满足符合性。
-- 步骤 2a：使用 Intune 应用保护策略，在应用打开或恢复时，警告用户他们需要操作系统 v2。
+- **步骤 1**：使用注册限制将操作系统 v2 作为注册设备的最低版本。 此操作确保新的最终用户设备在注册时满足符合性。
+- **步骤 2a**：使用 Intune 应用保护策略，在应用打开或恢复时，警告用户他们需要操作系统 v2。
 - 步骤 2b。 使用设备符合性策略，将操作系统 v2 作为使设备获得符合性的最低版本。 使用针对不符合性的操作，允许七天的宽限期，并向最终用户发送包含时间线和要求的电子邮件通知。
   -  这些策略将通过电子邮件或 Intune 公司门户，以及在打开启用了应用保护策略的应用时，告知最终用户现有设备需要更新。
   - 可运行符合性报告来标识不符合的用户。 
-- 步骤 3a：使用 Intune 应用保护策略，在设备未运行操作系统 v2 的情况下，当应用打开或恢复时阻止用户。
-- 步骤 3b：使用设备符合性策略，将操作系统 v2 作为使设备获得符合性的最低版本。
+- **步骤 3a**：使用 Intune 应用保护策略，在设备未运行操作系统 v2 的情况下，当应用打开或恢复时阻止用户。
+- **步骤 3b**：使用设备符合性策略，将操作系统 v2 作为使设备获得符合性的最低版本。
   - 这些策略要求更新设备，以便继续访问组织数据。 当与设备条件访问配合使用时，受保护的服务将被阻止。 启用了应用保护策略的应用在打开时或访问组织数据时将被阻止。
 
 ## <a name="next-steps"></a>后续步骤

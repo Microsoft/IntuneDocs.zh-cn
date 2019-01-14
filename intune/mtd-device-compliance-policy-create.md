@@ -1,12 +1,11 @@
 ---
-title: 使用 Microsoft Intune 创建 MTD 设备符合性策略
-titlesuffix: ''
+title: 使用 Microsoft Intune 创建 MTD 设备符合性策略 | Microsoft Intune
 description: 创建使用 MTD 合作伙伴威胁级别的 Intune 设备符合性策略，以确定移动应用是否可以访问公司资源。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aaa02c397ca17011dd231c98018ca86c190f49ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5962ff96b9c92bcf69a75221f1b7c5a5ab2f2634
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186166"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995974"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 创建移动威胁防御 (MTD) 设备符合性策略
 
 > [!NOTE] 
 > 此信息适用于所有移动威胁防御合作伙伴。
 
-搭载 MTD 的 Intune 可帮助检测移动设备上存在的威胁和评估相关风险。 可创建评估风险的 Intune 设备符合性策略规则，确定设备是否合规。 然后可使用条件性访问策略，根据设备合规性阻止对服务的访问。
+搭载 MTD 的 Intune 可帮助检测移动设备上存在的威胁和评估相关风险。 可创建评估风险的 Intune 设备符合性策略规则，确定设备是否合规。 然后可使用[条件访问策略](create-conditional-access-intune.md)，根据设备符合性阻止对服务的访问。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -54,11 +53,11 @@ MTD 设备符合性策略先决条件：
 
 7.  在“设备运行状况”窗格中，从“要求设备不高于设备威胁级别”下的下拉列表中选择移动威胁级别。
 
-    a.  **安全**：此级别是最安全的威胁级别。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
+    a.  **安全**：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
 
-    b.  **低**：如果设备上仅存在低级威胁，则该设备合规。 低级以上的任意威胁都将使设备不合规。
+    b.  **低**：如果设备上仅存在低级威胁，则该设备符合要求。 低级以上的任意威胁都将使设备不合规。
 
-    c.  **中**：如果设备上发现的威胁为低级别或中等级别，设备为合规。 如果检测到高级别威胁，则设备会被确定为不合规。
+    c.  **中**：如果有低级别或中等级别威胁，则设备符合要求。 如果检测到高级别威胁，则设备会被确定为不合规。
 
     d.  **高**：此级别是最不安全的威胁级别。 此选项将许可所有威胁级别，且仅将移动威胁防御用作报告目的。 设备必须使用此设置激活 MTD 应用。
 

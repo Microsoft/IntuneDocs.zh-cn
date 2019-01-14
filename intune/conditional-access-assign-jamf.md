@@ -1,12 +1,12 @@
 ---
-title: Jamf 设备的设备符合性策略
+title: Jamf 设备的设备符合性策略 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 通过将 Microsoft Intune 符合性策略与 Azure Active Directory 条件访问相结合，可确保由 Jamf 管理的设备的安全。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa89e96b05e5344dec32fb452be8ebeaa58bc12
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d7d054b11a4abc969ad411169d0222be37fd6711
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817222"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上强制实现符合性
 
@@ -31,7 +31,7 @@ ms.locfileid: "52182017"
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>在 Intune 中设置设备符合性策略
 
-1. 打开 Microsoft Azure，然后导航到“Intune” > “设备符合性” > “策略”。 可以为 macOS 创建策略，其中包括对不符合要求的用户和组选择一系列的操作（例如，发送警告电子邮件）。
+1. 打开 Microsoft Azure，然后导航到“Intune” > “设备符合性” > “策略”。 可以为 macOS 创建策略，其中包括针对不符合要求的用户和组选择一系列操作（例如发送警告电子邮件）。
 2. 搜索所需的组，然后向其应用策略。
 
 > [!Note]
@@ -57,7 +57,7 @@ ms.locfileid: "52182017"
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>在 Jamf Pro 中创建策略，让用户在 Azure Active Directory 中注册其设备
 
 > [!NOTE]
-> 在继续下一步骤前，需要为 macOS [部署公司门户](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos)。  
+> 在继续下一步骤前，需要为 macOS [部署公司门户](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro)。  
 
 最终用户需要在 Jamf 自助服务中启动公司门户应用，以使用 Azure AD 将设备注册为由 Jamf Pro 管理的设备。 这需要最终用户采取措施。 建议通过电子邮件、Jamf Pro 通知或任何其他方式[联系最终用户](end-user-educate.md)，通知他们单击 Jamf 自助服务中的按钮。
 

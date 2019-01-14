@@ -1,5 +1,5 @@
 ---
-title: Android 应用保护策略设置
+title: Android 应用保护策略设置 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 本主题介绍适用于 Android 设备的应用保护策略设置。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 99c72eeb587c7718b076183170436b29dd7dccac
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: 8505560527a8ea1b5d75eef5f7c3423d6a2d6a7d
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817392"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。

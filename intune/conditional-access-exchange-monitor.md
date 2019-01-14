@@ -1,6 +1,5 @@
 ---
-title: 监视 Microsoft Intune 中的 Exchange 条件访问
-titlesuffix: ''
+title: 监视 Microsoft Intune 中的 Exchange 条件访问| Microsoft Intune
 description: 通过 Intune Azure 门户监视本地 Exchange 和 Exchange Online 的条件访问符合性。
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c9602dbe183501cc779fcb9b5d5a1e6e4bf6154
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816764"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>在 Intune 中监视本地 Exchange 和 Exchange Online 的条件性访问符合性
 
@@ -56,13 +55,13 @@ ms.locfileid: "52180572"
 
 在设备细节窗格上，可以看到更多信息：
 
--   **概述：** 可以看到设备属性，例如：操作系统版本、设备型号、所有权、序列号、设备制造商、电话号码和上次审查设备的时间。
+-   **概述：** 可以查看设备属性，例如：操作系统版本、设备型号、所有权、序列号、设备制造商、电话号码和上次审查设备的时间。
 
 -   **属性：** 可以设置设备所有权（个人或公司）。
 
 -   **硬件：** 提供在“概述”上看到的信息及存储详细信息（总空间和可用空间）、系统封闭、网络详细信息、网络服务及其他条件访问阻止详细信息。
 
--   **已发现的应用：** 显示设备上已安装的所有应用程序。 还可以将已安装的应用列表导出为 .CSV 格式。
+-   **发现的应用：** 显示设备上已安装的所有应用程序。 还可以将已安装的应用列表导出为 .CSV 格式。
 
 -   **符合性：** 显示所有设备符合性策略详细信息。
 

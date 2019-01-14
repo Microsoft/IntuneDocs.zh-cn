@@ -1,6 +1,5 @@
 ---
-title: 管理 iOS 应用之间的数据传输
-titlesuffix: Microsoft Intune
+title: 管理 iOS 应用之间的数据传输 | Microsoft Intune
 description: 了解如何在 Microsoft Intune 中使用移动应用管理策略来管理应用之间的数据传输。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: bbd0272b37b56f9f9e66cdf00ddc89a827f3c875
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816967"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输
 
@@ -40,7 +39,7 @@ ms.locfileid: "52728661"
 
 -   **由 Intune 管理的设备：** 对于在 Intune 中注册的设备，自动允许在具有应用保护策略的应用与其他通过 Intune 部署的托管 iOS 应用之间进行数据传输。 要指定数据传输到其他应用的方式，请启用“允许应用向其他应用传送数据”，然后选择首选的共享级别。 要指定应用从其他应用接收数据的方式，请启用“允许应用从其他应用接收数据”，然后选择首选的数据接收级别。 可使用“打开方式管理”功能控制在通过 Intune 部署的应用之间进行的数据传输。 有关如何接收和共享应用数据的详细信息，请参阅[数据重定位设置](app-protection-policy-settings-ios.md#data-protection-settings)。   
 
--   **第三方 MDM 解决方案托管的设备：** 可以使用 iOS 的“打开方式管理”功能将数据传输限制为仅在托管应用之间进行。
+-   **由第三方 MDM 解决方案管理的设备：** 可以使用 iOS 的“打开方式管理”功能将数据传输限制为仅在托管应用之间进行。
 若要确保使用第三方 MDM 解决方案部署的应用也与 Intune 应用保护策略相关联，请按照下一部分[配置用户 UPN 设置](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)演练中所述，配置用户 UPN 设置。 如果应用是使用用户 UPN 设置部署的，则会在用户使用工作帐户登录时将应用保护策略应用到该应用。
 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>为 Microsoft Intune 或第三方 EMM 配置用户 UPN 设置
@@ -77,7 +76,7 @@ ms.locfileid: "52728661"
    |ManageEngine 移动设备管理器 | IntuneMAMUPN | 字符串 | %upn% |
 
 
-### <a name="example-2-end-user-experience"></a>示例 2：最终用户体验示例
+### <a name="example-2-end-user-experience"></a>示例 2：最终用户体验
 
 1.  用户在设备上安装 Microsoft Word 应用。
 

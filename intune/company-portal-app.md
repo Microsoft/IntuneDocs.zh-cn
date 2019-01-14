@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817375"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -89,7 +89,7 @@ ms.locfileid: "53738012"
 
 |字段名称|更多信息|
 |---|---|
-|**上传品牌图像**| 此选项可用于在公司门户应用中的用户配置文件页面上显示背景图像。<p>*注意*：不同平台的图像可能以不同的方式显示。<p><ul><li>建议图像宽度：大于 1125px，但不低于 640px</li><li>最大图像大小：1.3 MB</li><li>文件类型：PNG、JPG 或 JPEG</li></ul>|
+|**上传品牌图像**| 此选项可用于在公司门户应用中的用户配置文件页面上显示背景图像。<p>*注意*：不同平台的图像可能以不同的方式显示。<p><ul><li>建议图像宽度：低于 1125px，但不低于 640px</li><li>最大图像大小：1.3 MB</li><li>文件类型：PNG、JPG 或 JPEG</li></ul>|
 
 合适的品牌图像可以表现出强大的公司品牌意识，增强用户对公司门户的信任。 建议考虑以下用于获取、选择和优化公司门户图像的一些提示。 
 

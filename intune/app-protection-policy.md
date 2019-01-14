@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389863"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006278"
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
@@ -37,14 +37,14 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 
 可对运行在设备上的应用进行配置的应用保护策略包括：
 
-- **在 Microsoft Intune 中注册：** 这些设备通常是公司自有设备。
+- **已在 Microsoft Intune 中注册：** 这些设备通常是公司自有设备。
 
-- **在第三方移动设备管理 (MDM) 解决方案中注册：** 这些设备通常为公司自有设备。
+- **已在第三方移动设备管理 (MDM) 解决方案中注册：** 这些设备通常是公司自有设备。
 
   > [!NOTE]
   > 移动应用管理策略不应与第三方移动应用管理或安全容器解决方案一起使用。
 
-- **未在任何移动设备管理解决方案中注册：** 该设备通常为员工自有设备，且未在 Intune 或其他 MDM 解决方案中托管或注册。
+- **未在任何移动设备管理解决方案中注册：** 此类设备通常是员工拥有的设备，且未在 Intune 或其他 MDM 解决方案中进行托管或注册。
 
 > [!IMPORTANT]
 > 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 此外，还可以通过为启用了混合现代身份验证的 Outlook for iOS 和 Outlook for Android 创建 Intune 应用保护策略来保护对 Exchange 本地邮箱的访问。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。 连接到本地 Exchange 或 SharePoint 服务的其他应用不支持应用保护策略。
@@ -75,14 +75,14 @@ Intune 应用保护策略平台支持与适用于 Android 和 iOS 设备的 Offi
 
 #### <a name="apps-without-app-protection-policies"></a>不具有应用保护策略的应用
 
-![图像显示在未实施应用保护策略时，数据可在应用之间自由移动](./media/apps-without-protection-policies.png)
+![在没有策略的应用之间进行数据移动的概念图](./media/apps-without-protection-policies.png)
 
 在无限制的情况下使用应用时，公司和个人数据可能混合。 公司数据可能最终位于个人存储空间等位置或传输到监控范围外的应用中，导致数据丢失。 上图中的箭头显示了公司应用和个人应用之间以及到存储位置的无限制数据移动。
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>采用应用保护策略的数据保护
 
-![图像显示在应用应用保护策略时保护公司数据的方式 ](./media/apps-with-protection-policies.png)
+![显示公司数据受策略保护的概念图](./media/apps-with-protection-policies.png)
 
 
 可使用应用保护策略以防将公司数据保存到设备的本地存储中。 还可限制将数据移动到不受应用保护策略保护的其他应用。 应用保护策略设置包括：
@@ -146,7 +146,7 @@ MDM 解决方案：
 
 支持多身份的应用允许用户使用不同的帐户（工作和个人）访问相同的应用，但仅当在工作环境中使用这些应用时，才会应用应用保护策略。
 
-例如个人环境的情况：用户在 Word 中开始一个新文档，这被视为个人环境，因此不会应用 Intune 应用保护策略。 使用公司 OneDrive 帐户保存文档后，会将其视为工作环境，因此会应用 Intune 应用保护策略。
+例如个人环境的情况：用户在 Word 中开始一个新文档，这被视为个人环境，因此不会应用 Intune 应用保护策略。 使用公司 OneDrive 帐户保存文档后，该文档将被视为工作环境，因此会应用 Intune 应用保护策略。
 
 例如工作环境的情况：用户使用其工作帐户启动 OneDrive 应用。 在工作环境中，他们无法将文件移动到私人存储位置。 之后当用户通过其个人帐户使用 OneDrive 时，可无限制地从个人 OneDrive 复制和移动数据。
 

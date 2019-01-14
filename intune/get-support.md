@@ -1,12 +1,11 @@
 ---
-title: 如何获取对 Microsoft Intune 的支持
-titlesuffix: Microsoft Intune
+title: 如何获取对 Microsoft Intune 的支持 | Microsoft Intune
 description: 获取对 Microsoft Intune 付费订阅和试用订阅的在线和电话支持。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2feb18f9c21929d803bbb3605842effa8f63d75d
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 6a57a3a26a786e86775ce1509c5f751d2856f95b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817290"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
@@ -49,11 +48,11 @@ IT 管理员可以使用“帮助 + 支持”选项，通过 Azure 门户为 Int
 
 1. 使用 Intune 管理员凭据登录到 Azure 门户 (<https://portal.azure.com>)，选择“?” 图标，然后选择“帮助 + 支持”以转到 [Azure 帮助 + 支持](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)页。
 
-   ![突出显示“帮助 + 支持”链接的 Azure 门户帮助和支持问号链接屏幕截图](./media/azure-get-support.png)
+   ![问号链接的示意图，其中突出显示了“帮助 + 支持”链接](./media/azure-get-support.png)
 
 2. 在 Azure“帮助 + 支持”页上，选择“新建支持请求”。
 
-   ![突出显示“新建支持请求”链接的 Azure 门户帮助和支持页屏幕截图](media/azure-support-ticket-link.png)
+   ![帮助和支持页面的示意图，其中突出显示了“新建支持请求”链接](media/azure-support-ticket-link.png)
 
 3. 对于大多数 Intune 技术支持问题，在“基本信息”选项卡上选择以下选项：
    - **问题类型**：**技术**
@@ -63,18 +62,18 @@ IT 管理员可以使用“帮助 + 支持”选项，通过 Azure 门户为 Int
    - **问题子类型**：从下拉菜单中选择问题子类型。
    - **主题**：简要描述遇到的问题。
 
-   ![“帮助 + 支持”-“新建支持请求”页上的“基本信息”选项卡的屏幕截图](./media/get-support/help-new-support-case-basics.png)
+   ![“帮助 + 支持”-“新建支持请求”页上的“基本信息”选项卡的示意图](./media/get-support/help-new-support-case-basics.png)
 
    选择“下一步:解决方案”以继续。
 4. 在“解决方案”选项卡上，查看可能有助于在不提交票证的情况下解决问题的建议步骤。 如果在查看完步骤后仍想创建支持请求，请单击“下一步:详细信息”。
 
-   ![“帮助 + 支持”-“新建支持请求”页上的“解决方案”选项卡的屏幕截图](./media/get-support/help-new-support-case-solutions.png)
+   ![“帮助 + 支持”-“新建支持请求”页上的“解决方案”选项卡的示意图](./media/get-support/help-new-support-case-solutions.png)
 5. 在“详细信息”选项卡上，填写问题的详细信息、支持方法、联系信息，然后单击“下一步:查看 + 创建”。
 
-   ![“帮助 + 支持”-“新建支持请求”页上的“详细信息”选项卡的屏幕截图](./media/get-support/help-new-support-case-details.png)
+   ![“帮助 + 支持”-“新建支持请求”页上的“详细信息”选项卡的示意图](./media/get-support/help-new-support-case-details.png)
 6. 查看此信息，并验证其是否正确，然后选择“创建”以提交支持请求。
 
-   ![“帮助 + 支持” - “新建支持请求”页上的“查看 + 创建”选项卡的屏幕截图](./media/get-support/help-new-support-case-create.png)
+   ![“新建支持请求”页上的“查看 + 创建”选项卡的示意图](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
@@ -117,7 +116,7 @@ IT 管理员可以使用“帮助 + 支持”选项，通过 Azure 门户为 Int
 ## <a name="new-help-and-support-experience"></a>新的“帮助和支持”体验
 以下信息仅在使用“设备管理”门户时适用，并且是新的“帮助和支持”体验的一部分。本次推出的参与者是在可用的 Intune 租户中随机选择的。  
 
-Intune 的“帮助和支持”更新是一个新体验，已在 [Microsoft 365 设备管理门户](http://devicemanagement.microsoft.com)中面向部分租户（并非所有租户）提供。 本新体验与 [Microsoft 365 管理中心](https://portal.office.com/AdminPortal/Home)中的体验类似，并且在从设备管理控制台的某些位置访问时取代了以前的“帮助和支持”体验。  
+Intune 的“帮助和支持”更新是一个新体验，已在 [Microsoft 365 设备管理门户](https://devicemanagement.microsoft.com)中面向部分租户（并非所有租户）提供。 本新体验与 [Microsoft 365 管理中心](https://portal.office.com/AdminPortal/Home)中的体验类似，并且在从设备管理控制台的某些位置访问时取代了以前的“帮助和支持”体验。  
 
 在“设备管理”门户中，从“所有服务” > “设备管理”下的任何边栏选项卡中选择“帮助和支持”时，都将获得新体验（“故障排除”边栏选项卡除外）。 从“故障排除”等其他位置访问“帮助和支持”时，请使用“?” 选择控制台横幅右上角的选项，或者从左侧窗格服务列表中选择“帮助 + 支持”时，你将获得原始体验。  
 
@@ -143,7 +142,7 @@ Intune 的“帮助和支持”更新是一个新体验，已在 [Microsoft 365 
 
 ### <a name="view-context-sensitive-help"></a>查看上下文相关帮助
 选择提供的选项或提交自己的查询后，上下文相关的结果将显示在“查看解决方案”下。 这些结果包括 Intune 特定的自助指导和基于查询条件的 Web 搜索返回的其他结果。  
-![查看结果](./media/get-support/view-results.png)
+![“查看结果”窗格的示意图](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>获取支持
 如果自助指导或基于 Web 的指导无法帮助你解决问题，则可以使用控制台创建电子邮件或电话支持问题。  
@@ -151,16 +150,16 @@ Intune 的“帮助和支持”更新是一个新体验，已在 [Microsoft 365 
 
 - 对于电子邮件请求，请提供电子邮件地址，也可以选择在提交中添加附件。 选择“发送”以创建请求。  
 
-  ![电子邮件请求](./media/get-support/email-support.png)
+  ![“电子邮件请求”窗格的示意图](./media/get-support/email-support.png)
   
 - 对于电话请求，请提供电话号码。 （可选）可以包含电子邮件地址并在提交中添加附件。 选择“给我打电话”以提交请求。  
 
-   ![电话请求](./media/get-support/phone-support.png)
+   ![“电话请求”窗格的示意图](./media/get-support/phone-support.png)
 
 ### <a name="view-support-cases"></a>查看支持案例
 选择历史记录按钮以查看已创建的支持案例。  
 
-![查看支持案例](./media/get-support/view-support-tickets.png)
+![“查看支持案例”窗格的示意图](./media/get-support/view-support-tickets.png)
 
 - 在此工作流程中，只能看到使用新工作流程打开的支持案例。 要查看它们，请使用设备管理控制台中的“帮助和支持”视图，该视图是新体验的一部分。 这些案例的数字长度为八位数。 此外，还可以从 Microsoft 365 管理中心查看这些案例。  
 
@@ -173,5 +172,5 @@ Intune 的“帮助和支持”更新是一个新体验，已在 [Microsoft 365 
 ## <a name="additional-resources"></a>其他资源
 - [联系 Microsoft Intune 的辅助电话支持](phone-support-contact.md)
 - [计费和订阅管理支持](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- [批量许可](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [批量许可](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [对 Intune 问题进行故障排除](help-desk-operators.md)

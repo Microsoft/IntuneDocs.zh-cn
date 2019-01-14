@@ -1,11 +1,11 @@
 ---
 title: 如何从 Intune 删除 Android 设备 | Microsoft Docs
-description: 介绍如何从 Intune 取消注册 Android 设备
+description: 如何从 Intune 公司门户删除 Android 设备
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d932005c955afed7f16e9766b559b77b2cd43182
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: 75b26e178badbaa7905199eb91490134d2b72ba9
+ms.sourcegitcommit: 61ed365f7f8826451c41bcab5e19bef97b5a3c72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959479"
+ms.lasthandoff: 01/05/2019
+ms.locfileid: "54057332"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>取消注册 Android 设备管理  
 
@@ -51,8 +51,23 @@ ms.locfileid: "49959479"
 -   删除文件夹“\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal”
 
 ## <a name="uninstall-the-company-portal-app"></a>卸载公司门户应用  
-公司门户是一个设备管理应用，因此在[取消注册设备管理](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management)之前，都无法将其卸载。 该操作完成后，请点击并按住公司门户应用图标，直到看到“卸载”。 点击“卸载”，从设备中删除应用。  
+公司门户是一种设备管理应用。 因此在[取消注册设备管理](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management)之前，都无法将其卸载。 该操作完成后，请点击并按住公司门户应用图标，直到看到“卸载”。 点击“卸载”，从设备中删除应用。  
 
 或者，点击“设置” > “应用” > “公司门户” > “卸载”。  
+
+### <a name="remove-company-portal-app-as-device-administrator"></a>以设备管理员身份删除公司门户应用  
+还有最后一种办法，以设备管理员的身份删除该应用，从而从设备卸载它。  
+
+如果有公司拥有的设备，组织可能会要求始终在该设备上安装公司门户。 如果卸载该应用，那么在重新安装它之前，可能会无法访问受保护的公司资源，例如电子邮件、应用、WiFi 或 VPN。 若要详细了解如何安装、更新或删除所需应用，请参阅[向 Microsoft Intune 添加应用](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune)。  
+
+以设备管理员身份完成以下步骤来禁用公司门户。 在 Android 设备上，每项设置的实际名称可能会有所不同。  
+
+**Android 步骤，选项 1**：  
+1. 选择“设置” > “安全性” > “其他安全设置” > “设备管理员”。  
+2. 清除“公司门户”选择。  
+
+**Android 步骤，选项 2**：  
+1. 选择“设置” > “锁屏界面和安全性” > “其他安全设置” > “设备管理应用”。  
+2. 清除“公司门户”选择。    
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)

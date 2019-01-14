@@ -1,6 +1,5 @@
 ---
-title: 条件访问方案
-titlesuffix: Microsoft Intune
+title: 条件访问方案 | Microsoft Intune
 description: 了解 Intune 条件访问通常如何用于基于设备和基于应用的条件访问。
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817154"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
@@ -49,10 +48,10 @@ Intune 提供了设备符合性策略功能，可评估设备的符合性状态�
 
 > [!NOTE]
 > 在 Android 设备上为 Sharepoint Online 启用基于设备的访问时，用户必须在注册的设备上打开“启用浏览器访问”选项，如下所示：
-> 1. 启动“公司门户应用”。
+> 1. 启动**公司门户应用**。
 > 2. 从三个点 (…) 或硬件菜单按钮转到“设置”页。
 > 3. 按“启用浏览器访问”按钮。 
-> 4. 在 Chrome 浏览器中注销 Office 365 并重新启动 Chrome。
+> 4. 在 Chrome 浏览器中，从 Office 365 中注销并重启 Chrome。
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Exchange 内部部署的条件性访问
 

@@ -1,6 +1,5 @@
 ---
-title: 使用 Microsoft Intune 设置 Symantec 集成
-titlesuffix: ''
+title: 设置 Symantec 与 Microsoft Intune 的集成 | Microsoft Intune
 description: 如何使用 Microsoft Intune 设置 Symantec Endpoint Protection Mobile 解决方案以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4b519c30f432a6d8584c2bd5bca94ead95a862b1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817341"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>设置 Symantec Endpoint Protection Mobile 与 Intune 的集成
 
@@ -41,11 +40,11 @@ ms.locfileid: "52180139"
 
 SEP Mobile 支持与 Intune 集成的两种模式：
 
--   只读集成（基本设置）：仅列出来自 Azure Active Directory 的设备并在 Symantec Endpoint Protection Mobile 管理控制台中对其进行填充。
+-   **只读集成(基本设置)：** 仅列出来自 Azure Active Directory 的设备并在 Symantec Endpoint Protection Mobile 管理控制台中对其进行填充。
 <br>
     -   如果在 Symantec Endpoint Protection Mobile 管理控制台中未选中“向 Intune 报告设备的运行状况和风险”和“同时向 Intune 报告安全事件”框，集成将为只读模式，并因此绝不会更改 Intune 中的设备状态（符合或不符合）。
 <br></br>
--   完全集成：允许 SEP Mobile 向 Intune 报告设备风险和安全事件详细信息，这将在两个云服务中之间创建双向通信。
+-   **完全集成：** 允许 SEP Mobile 向 Intune 报告设备风险和安全事件详细信息，这将在两个云服务中之间创建双向通信。
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile 应用如何与 Azure AD 和 Intune 一起使用？
 
@@ -53,7 +52,7 @@ SEP Mobile 支持与 Intune 集成的两种模式：
 
 -   **Android 应用：** 允许最终用户使用 Android 应用登录到 Azure AD。
 
--   管理应用：这是 SEP Mobile Azure AD 多租户应用，可实现与 Intune 之间的服务到服务通信。
+-   **管理应用：** 这是 SEP Mobile Azure AD 多租户应用，可实现与 Intune 之间的服务到服务通信。
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>设置 Intune 与 SEP Mobile 之间的只读集成
 
@@ -68,7 +67,7 @@ SEP Mobile 支持与 Intune 集成的两种模式：
 
 4.  在“iOS 应用”旁边，选择“添加到 Active Directory”。
 
-    ![[Symantec Endpoint Protection Mobile 管理控制台]上的 iOS 应用的图像](./media/symantec-portal-basic-add.png)
+    ![Symantec Endpoint Protection Mobile 管理控制台的示意图](./media/symantec-portal-basic-add.png)
 
 5.  登录页打开后，输入你的 Intune 凭据，然后选择“接受”。
 
@@ -90,7 +89,7 @@ SEP Mobile 支持与 Intune 集成的两种模式：
 
 SEP Mobile 将运行其移动威胁防御服务的设备与 Azure AD 安全组同步。
 
-![显示 SEP Mobile 管理控制台上已完成的安全组配置的图像](./media/symantec-portal-basic-status.png)
+![SEP Mobile 管理控制台上的安全组配置的示意图](./media/symantec-portal-basic-status.png)
 
 ## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>设置 Intune 和 SEP Mobile 之间的完全集成
 

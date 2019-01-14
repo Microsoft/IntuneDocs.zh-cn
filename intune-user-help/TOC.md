@@ -130,6 +130,7 @@
 ### [如果重置设备会发生什么情况？](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [关闭 Microsoft 使用情况数据收集](turn-off-microsoft-usage-data-collection-windows.md)
 ### [手动同步设备](sync-your-device-manually-windows.md)
+### [获得帮助和支持](help-support-windows-cpapp.md)
 
 ### [对 Windows 常见问题进行故障排除](troubleshoot-your-device-windows.md)
 #### [解决访问点限制](resolve-access-point-restrictions.md)

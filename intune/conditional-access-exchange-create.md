@@ -1,5 +1,5 @@
 ---
-title: 创建 Exchange 条件访问策略
+title: 创建 Exchange 条件访问策略 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 在 Intune 中配置 Exchange 内部部署的条件访问和旧版 Exchange Online Dedicated。
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817052"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>为本地 Exchange 和旧版 Exchange Online Dedicated 配置条件访问策略
 
@@ -80,9 +80,9 @@ Windows 8.1 和更高版本上的本机**邮件**应用程序（向 Intune 注�
 
 1. 成功登录后，你会看到 Azure 仪表板。
 
-1. 从左侧菜单中选择“所有服务” **** ，然后在文本框筛选器中键入“Intune” **** 。
+1. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入“Intune”。  ****  **** 
 
-1. 选择“Intune” ****，你会看到 Intune 仪表板。
+1. 选择“Intune”，你会看到 Intune 仪表板。  ****
 
 1. 选择“本地访问”。 “本地访问”窗格中显示了条件访问策略的状态和受其影响的设备。
 

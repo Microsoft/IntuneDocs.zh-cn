@@ -15,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c6ab669b1f9331d0bd0a70ca5f86ac7f3f190fb6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bda8512bd28351c384bfe53b46db62e5a86fe9bd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180362"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817273"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 
@@ -48,7 +48,7 @@ NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情
 
 以下列表概述了与 Intune 集成时的 NAC 集成的工作原理。 前三步 (1-3) 介绍了上手流程。 NAC 解决方案与 Intune 集成后，步骤 4-9 描述正在进行的操作。
 
-![NAC 如何与 Intune 协作](./media/ca-intune-common-ways-2.png)
+![NAC 与 Intune 的协作方式的概念图](./media/ca-intune-common-ways-2.png)
 
 1. 向 Azure Active Directory (AAD) 注册 NAC 伙伴解决方案，并为 Intune NAC API 授予委派权限。
 2. 通过包括 Intune 发现 URL 在内的适当设置来配置 NAC 伙伴解决方案。

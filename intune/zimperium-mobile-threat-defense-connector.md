@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817239"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium 移动威胁防御连接器与 Intune
 
 可根据 Zimperium 进行的风险评估，使用条件访问控制移动设备对公司资源的访问，Zimperium 是与 Microsoft Intune 集成的移动威胁防御 (MTD) 解决方案。 基于从运行 Zimperium 应用的设备收集的遥测评估风险。
 
-可以基于通过 Intune 设备符合性策略启动的 Zimperium 风险评估配置条件访问策略，从而根据检测到的威胁允许或阻止不符合设备访问公司资源。
+可基于通过 Intune 设备符合性策略启用的 Zimperium 风险评估配置条件访问策略。 风险评估策略可以根据检测到的威胁，允许或阻止不符合要求的设备访问企业资源。
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune 和 Zimperium 如何帮助你保护公司资源？
 
@@ -51,15 +51,15 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 **检测到恶意应用时对其进行阻止：**
 
-![检测到恶意应用](./media/Maliciousapps_blocked_Zimperium.png)
+![检测到恶意应用的概念图](./media/Maliciousapps_blocked_Zimperium.png)
 
 **修正后授予访问权限：**
 
-![检测到恶意应用，授予访问权限](./media/maliciousapps_unblocked_Zimperium.png)
+![在修正后授予访问权限的概念图](./media/maliciousapps_unblocked_Zimperium.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
+### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 
-检测“中间人”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问。  **** 
+检测“ **中间人**”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问。 
 
 **阻止通过 Wi-Fi 访问网络：**
 
@@ -69,9 +69,9 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 ![威胁解除后授予访问权限](./media/network_wifi_unblocked_Zimperium.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
-检测“中间人”等网络威胁，并根据设备风险阻止公司文件的同步 **** 。
+检测“ **中间人**”等网络威胁，并根据设备风险阻止公司文件的同步。  
 
 **检测到网络威胁时阻止 SharePoint Online：**
 
@@ -95,7 +95,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 -   Zimperium 移动威胁防御订阅
 
-    -   有关详细信息，请参阅  [Zimperium 网站](https://www.zimperium.com/zips-mobile-ips) 。
+    -   有关详细信息，请访问  [Zimperium 网站](https://www.zimperium.com/zips-mobile-ips)。
 
 ## <a name="next-steps"></a>后续步骤
 

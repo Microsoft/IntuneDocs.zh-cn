@@ -1,6 +1,5 @@
 ---
-title: Lookout MTD 连接器与 Microsoft Intune
-titlesuffix: ''
+title: Lookout MTD 连接器与 Microsoft Intune | Microsoft Intune
 description: 了解如何将 Intune 与 Lookout 移动威胁防御 (MTD) 相集成以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817069"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout 移动威胁防御连接器与 Intune
 
@@ -63,34 +62,34 @@ Intune 中的符合性策略包括用于 Lookout 移动威胁防御的新规则�
 
 **检测到恶意应用时对其进行阻止：**
 
-![显示条件访问策略因在设备上检测到恶意软件，而将其确定为不符合时阻止访问的图示](./media/malicious-apps-blocked.png)
+![由于检测到恶意应用而阻止访问的策略概念图](./media/malicious-apps-blocked.png)
 
 **修正后授予访问权限：**
 
-![显示条件访问策略在解除威胁后将设备确定为合规时授予访问权限的图示](./media/malicious-apps-unblocked.png)
+![显示在修正后授予访问权限的概念图](./media/malicious-apps-unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
+### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 检测中间人攻击等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
 
 **阻止通过 Wi-Fi 访问网络**
 
-![关系图：显示根据网络威胁阻止 WiFi 访问的条件访问策略](./media/network-wifi-blocked.png)
+![根据网络威胁阻止 WiFi 访问的示意图](./media/network-wifi-blocked.png)
 
 **修正后授予访问权限：**
 
-![条件访问在解除威胁后允许访问的图示](./media/network-wifi-unblocked.png)
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
+![允许修正后访问的条件访问概念图](./media/network-wifi-unblocked.png)
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
 基于设备风险检测对网络的威胁，如中间人攻击和阻止同步企业文件。
 
 **检测到网络威胁时阻止 SharePoint Online：**
 
-![条件访问基于检测到的威胁阻止设备访问 SharePoint Online 的图示](./media/network-spo-blocked.png)
+![阻止对 SharePoint Online 的访问的概念图](./media/network-spo-blocked.png)
 
 
 **修正后授予访问权限：**
 
-![条件访问在解除网络威胁后允许访问的图示](./media/network-spo-unblocked.png)
+![在解除网络威胁后允许访问的概念图](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>后续步骤
 要实施此解决方案，必须执行以下几个主要步骤：

@@ -1,12 +1,11 @@
 ---
-title: 向 Microsoft Intune 添加并分配 MTD 应用
-titleSuffix: ''
+title: 向 Microsoft Intune 添加并分配 MTD 应用 | Microsoft Intune
 description: 在 Azure 门户中使用 Intune 添加移动威胁防御 (MTD) 应用、Microsoft Authenticator 应用和 iOS 配置策略。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181167"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995991"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用
 
 > [!NOTE] 
 > 本主题适用于所有移动威胁防御合作伙伴。
 
-可以使用 Intune 添加和部署 MTD 应用，以便最终用户可以在其移动设备中确定某个威胁时接收通知，并接收指导来解除威胁。
+可以使用 Intune 添加和部署 Mobile Threat Defense (MTD) 应用，以便最终用户可以在其移动设备中确定某个威胁时接收通知，并接收指导来解除威胁。
 
 
 ## <a name="before-you-begin"></a>在开始之前
@@ -38,13 +37,12 @@ ms.locfileid: "52181167"
   -   [将应用添加到 Intune](apps-add.md)。
   -   [将 iOS 应用配置策略添加到 Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
   -   [使用 Intune 分配应用](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
-  -   [添加 iOS 应用配置策略](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
 
 > [!TIP]
 > Intune 公司门户在 Android 设备上以中转站的方式工作，以便用户能够让 Azure AD 检查自己的标识。
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>配置适用于 iOS 的 Microsoft Authenticator
-对于 iOS 设备，需要 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)，这样用户便可让 Azure AD 检查自己的标识。 此外，需要 iOS 应用配置策略，该策略指示要与 Intune 配合使用的 MTD iOS 应用。
+对于 iOS 设备，需要 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)，这样用户便可让 Azure AD 检查自己的标识。 此外，需要 iOS 应用配置策略，用于设置要与 Intune 配合使用的 MTD iOS 应用。
 
 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 使用“配置应用信息”部分下步骤 12 中的此 [Microsoft Authenticator 应用商店 URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。
 
@@ -145,11 +143,11 @@ ms.locfileid: "52181167"
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 应用配置策略
 
-- 按照[使用 iOS 应用配置策略](app-configuration-policies-use-ios.md)主题中所述的步骤，创建 iOS 应用配置策略。
+- 按照[使用 iOS 应用配置策略](app-configuration-policies-use-ios.md)一文中所述的步骤，创建 iOS 应用配置策略。
 
 ### <a name="sep-mobile-app-configuration-policy"></a>SEP 移动应用配置策略
 
--   使用以前在 [Symantec Endpoint Protection 管理控制台](https://aad.skycure.com)中配置的相同 Azure AD 帐户，这也应该是用于登录 Intune 经典门户的相同帐户。
+-   使用以前在 [Symantec Endpoint Protection 管理控制台](https://aad.skycure.com)中配置的相同 Azure AD 帐户，这也应是用于登录 Intune 经典门户的相同帐户。
 
 -   需要**下载** iOS 应用配置策略文件： 
     -   转到 [Symantec Endpoint Protection 管理控制台](https://aad.skycure.com)并使用管理员凭据登录。

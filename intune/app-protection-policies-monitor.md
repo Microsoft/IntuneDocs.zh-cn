@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 765fae6f0e860935f5ceccadfdf1d9c3fe45d60e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816834"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -50,13 +50,13 @@ ms.locfileid: "52181898"
 
 -   **用户**：公司中正在工作环境中使用与该策略相关联的应用的用户总数。
 
--   **通过策略进行管理**：已在工作环境中使用某应用且已分配到策略的用户数。
+-   **由策略管理**：已在工作环境中使用某应用且已分配到策略的用户数。
 
 -   **无策略**：正在工作环境中使用任何策略均不以其为目标的应用的用户数。 可以考虑将这些用户添加到策略。
     > [!NOTE]
     > 如果每个平台有多个策略且已至少为某个用户分配了一个策略，则该用户被视为由策略管理。
 
-- **已标记用户**：遇到问题的用户数量。 目前仅将具有已越狱设备的用户报告在“已标记用户”下。
+- **已标记用户**：遇到问题的用户数。 目前仅将具有已越狱设备的用户报告在“已标记用户”下。
 
 
 ## <a name="detailed-view"></a>详细视图
@@ -72,7 +72,7 @@ ms.locfileid: "52181898"
 
   - **已签入**：策略已部署到用户，且应用在工作环境中至少使用了一次。
 
-  - **未签入**：策略已部署到用户，但应用从那时起尚未在工作环境中使用。
+  - **未签入**：策略已部署到用户，但应用从部署策略起尚未在工作环境中使用。
 
 >[!NOTE]
 > 如果搜索的用户没有部署 MAM 策略，你将看到一条消息，告知你用户不是任何 MAM 策略的目标对象。
@@ -81,11 +81,11 @@ ms.locfileid: "52181898"
 
 1.  若要选择用户，请选择“摘要”磁贴。
 
-    ![突出显示 Intune 移动应用程序管理“设置”边栏选项卡上的“摘要”磁贴的屏幕截图](./media/MAM-reporting-6.png)
+    ![Intune 移动应用管理的“摘要”磁贴的屏幕截图](./media/MAM-reporting-6.png)
 
 2. 在打开的“应用报表”窗格中，选择“选择用户”以搜索 Azure Active Directory 用户。
 
-    ![突出显示“应用报告”窗格上的“选择用户”选项的屏幕截图](./media/MAM-reporting-2.png)
+    ![“应用报告”窗格上的“选择用户”选项的屏幕截图](./media/MAM-reporting-2.png)
 
 3. 从列表中选择一个用户。 可以看到该用户符合性状态的详细信息。
 
@@ -98,11 +98,11 @@ ms.locfileid: "52181898"
 
 ![突出显示“设置”窗格中 2 个可用报表的屏幕截图](./media/MAM-reporting-7.png)
 
--   **应用保护用户报表：** 概述了可在以上详细视图部分下的“用户状态”中找到的相同信息。
+-   **应用保护用户报表：** 概述了可在以上“详细视图”部分下的“用户状态”报表中找到的相同信息。
 
 -   **应用保护应用报表：** 提供了生成报表前，管理员可选择的两种不同应用保护状态。 状态可以为受保护，也可以为不受保护。
 
-    -   托管 MAM 活动的用户状态（受保护）：此报表概述了 每个用的每个托管 MAM 应用的活动。
+    -   托管 MAM 活动的用户状态（受保护）：此报表概述了每个用户的每个托管 MAM 应用的活动。
 
         -   它显示了每个用户的 MAM 策略所面向的所有应用，并通过 MAM 策略将每个应用的状态细分为“已签入”，或者显示以 MAM 策略为目标但应用从未签入的应用。
 <br></br>
@@ -112,7 +112,7 @@ ms.locfileid: "52181898"
 
         -   已签入所有应用，但应用还未获取任何 MAM 策略。
 
-![显示用户“应用报告”边栏选项卡的屏幕截图，其中包含 3 个已注册应用的详细信息表格](./media/MAM-reporting-4.png)
+![用户“应用报告”边栏选项卡的屏幕截图，其中包含 3 个应用的详细信息](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>表格分组
 
@@ -129,7 +129,7 @@ ms.locfileid: "52181898"
 
 1. 在“Intune 移动应用程序管理”窗格中，选择“应用保护报表”。
 
-    ![突出显示“Intune 移动应用程序管理”窗格中应用保护下载链接的屏幕截图](./media/app-protection-report-csv-2.png)
+    ![应用保护下载链接的屏幕截图](./media/app-protection-report-csv-2.png)
 
 2. 选择“是”以保存报表，然后选择“另存为”，并选择要在其中保存报表的文件夹。
 

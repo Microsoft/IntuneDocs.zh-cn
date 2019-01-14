@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737910"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067425"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入门：免费试用 Microsoft Intune 
 
@@ -50,7 +50,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 2. 用公司名称加上“.onmicrosoft.com”来创建自己的帐户。 
 
-    ![Microsoft Intune 试用版帐户新凭据进程的屏幕截图](./media/account-sign-up-site-user-id.png)
+    ![Intune 试用版帐户新凭据进程的屏幕截图](./media/account-sign-up-site-user-id.png)
 
     如果组织使用自己的自定义域而不采用“.onmicrosoft.com”，可以在本文后面介绍的 Office 365 管理门户中进行更改。
 

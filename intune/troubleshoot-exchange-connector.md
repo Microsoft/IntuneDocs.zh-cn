@@ -1,11 +1,11 @@
 ---
-title: Exchange Connector 疑难解答
+title: Exchange 连接器疑难解答| Microsoft Intune
 description: 解决与 Intune On-premises Exchange Connector 相关的问题。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 06/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85b4764ef5797ad592744e3c519f82f3f1cdd1bb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fecdda5467c83ab12ca921e86259884171e07819
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816542"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune On-Premises Exchange Connector 疑难解答
 

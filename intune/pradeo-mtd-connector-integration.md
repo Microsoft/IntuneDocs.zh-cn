@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
-ms.openlocfilehash: d7b88b73c260a6a84fdb835069de23c52775929a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 65b480b60b195ab012743f9a4006fb69aa929dbb
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816797"
 ---
 # <a name="integrate-pradeo-with-intune"></a>将 Pradeo 与 Intune 集成
 
@@ -67,7 +67,7 @@ Pradeo 应用授权流程如下：
 
 4.  在“EMM (企业移动性管理) - Intune”窗口中的“第 1 步”下，选择“Pradeo 连接器”按钮。 
 
-    ![Pradeo EMM Intune 窗口](./media/pradeo_setup.png)
+    ![Pradeo EMM Intune 窗口的屏幕截图](./media/pradeo_setup.png)
 
 5. 在 Microsoft Intune 连接窗口中，输入 Intune 凭据。
 

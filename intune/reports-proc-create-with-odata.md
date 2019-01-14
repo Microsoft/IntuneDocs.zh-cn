@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429706"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067442"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 从 OData 数据源创建报表
 
@@ -61,7 +61,7 @@ ms.locfileid: "53429706"
 7. 在“OData 数据源”窗口中，将自定义源 URL 粘贴至 URL 框。
 8. 选择“基本”。
 
-    ![OData 数据源](media/reports-create-01-odatafeed.png)
+    ![租户的 Intune 数据仓库的 OData 数据源](media/reports-create-01-odatafeed.png)
 
 9. 选择“确定”。
 10. 选择“组织帐户”，然后使用 Intune 凭据登录。
@@ -70,7 +70,7 @@ ms.locfileid: "53429706"
 
 11. 选择“**连接**”。 导航器将开启，并显示 Intune 数据仓库中表的列表。
 
-    ![导航器](media/reports-create-02-loadentities.png)
+    ![“导航器”-“数据仓库表的列表”的屏幕截图](media/reports-create-02-loadentities.png)
 
 12. 依次选择“设备”和“ownerTypes”表。  选择“加载”。 Power BI 会将数据加载至模型。
 
@@ -78,7 +78,7 @@ ms.locfileid: "53429706"
 
 通过导入多个表，不仅可以分析单个表中的数据，还能跨表分析相关数据。  在 PowerBI 中有一项功能名为“自动检测”，可用于查找和创建关系。 数据仓库中已生成的表本就可配合 PowerBI 自动检测功能使用。 但是，即使 PowerBI 不自动查找关系，你仍然可以管理关系。
 
-![管理关系](media/reports-create-03-managerelationships.png)
+![管理多个表中相关数据的关系](media/reports-create-03-managerelationships.png)
 
 1. 选择“管理关系”。
 2. 如果 PowerBI 未检测到关系，请选择“自动检测...”。
@@ -99,7 +99,7 @@ ms.locfileid: "53429706"
 
 现在就有了一个视觉对象，它显示组织中设备制造商的分布情况。
 
-![包含数据的树状图](media/reports-create-06-treemapwdata.png)
+![包含“设备制造商的分布情况”数据的树状图](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>添加筛选器
 
@@ -111,7 +111,7 @@ ms.locfileid: "53429706"
 
    在设备表中有一个名为“OwnerTypeKey”的数据字段，它包含表示设备是公司拥有还是个人所有的代码。 若要在此筛选器中显示友好名称，请查找“ownerTypes”表，并拖动“ownerTypeName”。 此示例说明数据模型如何支持表之间的关系。
 
-![包含筛选器的树状图](media/reports-create-08_ownertype.png)
+![包含“支持表之间的关系”筛选器的树状图](media/reports-create-08_ownertype.png)
 
 现在有了一个交互式筛选器，可用于在公司自有设备和个人拥有的设备之间切换。 可使用此筛选器查看分布变化情况。
 

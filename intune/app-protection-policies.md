@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817358"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -72,11 +72,11 @@ ms.locfileid: "52728814"
 
 2. 在“Intune 应用保护”窗格中，选择“分配”以打开“Intune 应用保护 - 分配”窗格。 在“包括”选项卡上，选择“选择要包括的组”。 
 
-   ![“分配”窗格的屏幕截图，其中突出显示“选择要包括的组”菜单选项](./media/app-protection-policy-add-users.png)
+   ![“分配”窗格的屏幕截图，其中包含“选择要包含的组”菜单](./media/app-protection-policy-add-users.png)
 
 3.  随即将显示“Azure Active Directory”中所有安全组的列表。 可选择要应用此策略的用户组，然后选择“选择”。 
 
-    ![显示 Azure Active Directory 用户列表的“添加用户组”窗格的屏幕截图](./media/azure-ad-user-group-list.png)
+    ![“添加用户组”窗格的屏幕截图，其中包含 Azure AD 用户列表](./media/azure-ad-user-group-list.png)
 
 4.  包括和排除组后，选择“保存”以保存配置并将策略部署到用户。 如果在保存配置之前选择“放弃”，则将放弃对“包括”和“排除”选项卡所做的所有更改。   
  
@@ -138,7 +138,7 @@ Intune 应用保护策略是一种针对用户身份的策略，因此用户的�
 
 要创建这些策略，请在 Intune 控制台中浏览找到“客户端应用” > “应用保护策略”，然后选择“创建策略”。 还可以编辑现有的应用保护策略。 要将应用保护策略同时应用到托管和非托管设备，请确保将“面向所有应用类型”设置为“是”（这是默认值）。 如果希望根据管理状态逐渐分配，请将“面向所有应用类型”设置为“否”。 
 
-![已选中“面向所有应用类型”的“添加策略”边栏选项卡的屏幕截图](./media/app-protection-policies-target-all.png)
+![“添加策略”边栏选项卡的屏幕截图，其中包含“面向所有应用类型”](./media/app-protection-policies-target-all.png)
 
 对于 iOS，需要额外的应用配置设置才能将应用设置定位到 Intune 设备上的应用：
 - 必须为所有 MDM 托管应用程序配置“IntuneMAMUPN”。 有关详细信息，请参阅[如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。

@@ -1,12 +1,11 @@
 ---
-title: 将条件访问迁移到 Azure 门户
-titlesuffix: Microsoft Intune
+title: 将条件访问迁移到 Azure 门户 | Microsoft Intune
 description: 将先前在 Intune 经典门户中创建的条件访问策略重新分配给 Azure 门户。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgree
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6dbd7d9079bdb826f83cce76650cacebee056b68
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d319ff39574565c3f326bd6b03b346e989bdc488
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817426"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
@@ -46,7 +45,7 @@ ms.locfileid: "52184482"
             - 逐渐从在 Intune 经典门户中应用条件访问策略的安全组中删除用户。
             - 确认新策略适用于这些用户后，可在 Intune 经典门户中禁用该策略。 
 <br /><br />
-- 如果条件访问策略设置配置为在 Intune 经典门户中使用 Exchange ActiveSync (EAS)，请参阅[本主题中的说明](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients)，了解如何在 Azure 门户中重新分配 EAS 条件访问策略设置。
+- 如果条件访问策略设置配置为在 Intune 经典门户中使用 Exchange ActiveSync (EAS)，请参阅[本主题中的说明](#reassign-intune-device-based-conditional-access-policies-for-eas-clients)，了解如何在 Azure 门户中重新分配 EAS 条件访问策略设置。
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>验证 Intune 经典门户中基于设备的条件访问策略
 
@@ -81,7 +80,7 @@ ms.locfileid: "52184482"
 
 4. 在“分配”部分下，选择“用户和组”以应用新条件访问策略。
     
-    ![显示 Intune 和 Azure 门户之间的用户组用户界面比较的图像](./media/reassign-ca-1.png)
+    ![Intune 和 Azure 门户之间的用户组用户界面比较图](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > 对 Azure 门户做出的选择应与之前对经典门户做出的选择相对应。 例如，如果在 Intune 经典门户中选择了所有用户，则应在 Azure 门户中选择“所有用户”。 此外，如果在 Intune 经典门户中选择了“免除组”选项，则也需要在 Azure 门户中排除所选的这些组。
@@ -96,7 +95,7 @@ ms.locfileid: "52184482"
 
 9. 单击“完成”。
 
-    ![显示 Intune 和 Azure 门户之间的云应用用户界面比较的图像](./media/reassign-ca-3.png)
+    ![Intune 和 Azure 门户之间的云应用用户界面比较图](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > 如果多个应用具有相同的策略，请考虑在 Azure 门户中将其并入一个策略。
@@ -107,7 +106,7 @@ ms.locfileid: "52184482"
 
 12. 选完设备平台后，单击两次“完成”。
 
-    ![显示 Intune 和 Azure 门户之间的设备平台用户界面比较的图像](./media/reassign-ca-4.png)
+    ![Intune 和 Azure 门户之间的设备平台用户界面比较图](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > 如果在 Intune 经典门户中选择了单个平台，请在 Azure 门户中选择单个平台。
@@ -121,7 +120,7 @@ ms.locfileid: "52184482"
 
 15. 选完客户端应用后，单击两次“完成”。
 
-    ![显示 Intune 和 Azure 门户之间的客户端应用用户界面比较的图像](./media/reassign-ca-6.png)
+    ![Intune 和 Azure 门户之间的客户端应用用户界面比较图](./media/reassign-ca-6.png)
 
 16. 如果在 Intune 经典门户中选择了浏览器设置，请在 Azure 门户中同时选择“浏览器”和“移动应用和桌面客户端”。 如果在 Intune 经典门户中未选择浏览器设置，则只需选择“移动应用和桌面客户端”。 
 
@@ -135,7 +134,7 @@ ms.locfileid: "52184482"
 
 21. 在“新建条件访问策略”边栏选项卡上，打开“启用策略”开关，然后单击“创建”。
 
-    ![显示 Intune 和 Azure 门户之间的启用条件访问策略用户界面比较的图像](./media/reassign-ca-11.png)
+    ![Intune 和 Azure 之间的启用条件访问策略用户界面比较图](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>为 EAS 客户端重新分配基于设备的 Intune 条件访问策略
 
@@ -149,7 +148,7 @@ ms.locfileid: "52184482"
 
 4. 在“分配”部分下，选择“用户和组”以应用新条件访问策略。
 
-    ![显示 Intune 和 Azure 门户之间的用户组用户界面比较的图像](./media/reassign-ca-12.png)
+    ![Azure 和 Intune 门户之间的用户组用户界面比较图](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > 对 Azure 门户做出的选择应与之前对 Azure 门户做出的选择相对应。 例如，如果在 Intune 经典门户中选择了所有用户，则应在 Azure 门户中选择“所有用户”。 此外，如果在 Intune 经典门户中选择了“免除组”选项，则也需要在 Azure 门户中排除所选的这些组。
@@ -160,14 +159,14 @@ ms.locfileid: "52184482"
 
 7. 在“云应用”边栏选项卡上，单击“选择应用”，然后选择“Exchange Online”。 然后依次单击“选择”和“完成”。
 
-    ![显示 Intune 和 Azure 门户之间的云应用用户界面比较的图像](./media/reassign-ca-14.png)
+    ![Intune 和 Azure 门户之间的云应用用户界面比较图](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > EAS 客户端的条件访问策略不能包含任何其他云应用。
 
 8. 在“条件”边栏选项卡上，选择“客户端应用”，然后选择适用的客户端应用。 如果选择阻止 Intune 不支持的客户端，请使用选项“仅将策略应用于支持的平台”。
 
-    ![显示 Intune 和 Azure 门户之间的客户端应用用户界面比较的图像](./media/reassign-ca-15.png)
+    ![Azure 和 Intune 门户之间的客户端应用用户界面比较图](./media/reassign-ca-15.png)
 
 9. 选完客户端应用后，单击两次“完成”。
 
@@ -175,11 +174,11 @@ ms.locfileid: "52184482"
 
 11. 在“授予访问控制”下，选择“要求设备标记为兼容”，然后单击“选择”。
 
-    ![显示 Intune 和 Azure 门户之间的授权访问权限用户界面比较的图像](./media/reassign-ca-16.png)
+    ![Intune 和 Azure 门户之间的授予访问权限用户界面比较图](./media/reassign-ca-16.png)
 
 12. 在“新建条件访问策略”边栏选项卡上，打开“启用策略”开关，然后单击“创建”。
 
-    ![显示在 Intune 和 Azure 门户之间启用条件访问策略用户界面比较的图像](./media/reassign-ca-17.png)
+    ![Intune 和 Azure 之间的启用条件访问策略用户界面比较图](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > 如果配置“设备平台”，则保存策略会失败，并会显示错误“不支持策略配置”。 Exchange ActiveSync 无法识别连接设备所使用的平台。 因此，为 Exchange ActiveSync 设备创建策略时，配置特定设备平台不受支持。
@@ -201,7 +200,7 @@ ms.locfileid: "52184482"
 
 4.  取消选中“启用条件访问策略”选项，然后单击“保存”。
 
-    ![显示禁用 Intune 经典门户中的条件访问策略的图像](./media/reassign-ca-18.png)
+    ![禁用 Intune 经典门户中的条件访问策略的示意图](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>另请参阅
 

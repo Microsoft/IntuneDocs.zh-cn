@@ -1,5 +1,5 @@
 ---
-title: 设置 Check Point SandBlast MTD
+title: 设置 Check Point SandBlast MTD | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 了解如何将 Intune 与 Check Point SandBlast Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f60cd89992eb459849d849aca4b9265d393c29f7
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 4aca991b9cdb665b0c8340b77fb6a854269023ff
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816899"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast 移动威胁防御连接器与 Intune
 
@@ -90,7 +90,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ## <a name="pre-requisites"></a>先决条件
 
--   Azure Active Directory 高级版
+-   Azure Active Directory Premium
 
 -   Microsoft Intune 订阅
 

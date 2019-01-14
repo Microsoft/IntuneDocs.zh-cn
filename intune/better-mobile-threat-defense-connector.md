@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: 8eeb55ca9e2c698d2d9e1814e9ea17f779326732
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 313c20699c30d20d1bbc9bb6aea9189a83b61f53
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816627"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>通过 Intune 启用 Better Mobile Threat Defense 连接器
 
@@ -48,13 +48,13 @@ Intune 设备符合性策略包括基于 Better Mobile 风险评估的 Mobile Th
 
 **检测到恶意应用时对其进行阻止：**
 
-![检测到恶意应用](./media/better_mobile_maliciousapps_blocked.png)
+![检测到恶意应用的示意图](./media/better_mobile_maliciousapps_blocked.png)
 
 **修正后授予访问权限：**
 
 ![检测到恶意应用，授予访问权限](./media/better_mobile_maliciousapps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>基于对网络的威胁来控制访问
+### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 
 检测“中间人”攻击等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
 
@@ -64,9 +64,9 @@ Intune 设备符合性策略包括基于 Better Mobile 风险评估的 Mobile Th
 
 **修正后授予访问权限：**
 
-![威胁解除后授予访问权限](./media/better_mobile_network_wifi_unblocked.png)
+![修正后授予访问权限的示意图](./media/better_mobile_network_wifi_unblocked.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>基于对网络的威胁来控制对 SharePoint Online 的访问
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
 基于设备风险检测对网络的威胁，如“中间人”攻击和阻止同步企业文件。
 
