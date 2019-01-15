@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210748"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -98,7 +98,7 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |阻止屏幕捕捉（仅限于 Android 设备）|X|X|
 |支持未进行设备注册的 MAM|X|X|
 |完全擦除|X|X|
-|选择性擦除 <br></br>**注意：** 对于 iOS，应用会随管理配置文件一起删除。|X||
+|选择性擦除 <br><br>**注意：** 对于 iOS，应用会随管理配置文件一起删除。|X||
 |防止“另存为”|X||
 |目标应用程序配置|X||
 |支持多身份标识|X||
@@ -115,6 +115,6 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 
 要详细了解应用保护策略和 Intune，请参阅以下主题：
 
-  - [Android 应用包装工具](app-wrapper-prepare-android.md)</br>
-  - [iOS 应用包装工具](app-wrapper-prepare-ios.md)</br>
+  - [Android 应用包装工具](app-wrapper-prepare-android.md)<br>
+  - [iOS 应用包装工具](app-wrapper-prepare-ios.md)<br>
   - [使用 SDK 启用针对移动应用程序管理的应用](app-sdk.md)

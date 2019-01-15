@@ -3,8 +3,8 @@ title: 什么是应用保护策略
 titleSuffix: Microsoft Intune
 description: 了解 Microsoft Intune 应用保护策略如何帮助保护公司数据，防止数据丢失。
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
-ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
+ms.openlocfilehash: b6ebc3db81b969d83bc22034057ab4217e90931f
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54006278"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297275"
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
