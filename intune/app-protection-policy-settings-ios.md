@@ -3,8 +3,8 @@ title: iOS 应用保护策略设置 | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: 本主题介绍适用于 iOS 设备的应用保护策略设置。
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 32bec8f46329f583cc33e4df40192ca0ad59a427
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a1d44c5e94c725eb617c8d7c1ca7e43aa12679a2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817409"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297479"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
