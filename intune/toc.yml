@@ -583,12 +583,12 @@ items:
           href: data-apple-sends-to-intune.md
         - name: Google 发送到 Intune 的数据
           href: data-google-sends-to-intune.md
+        - name: Jamf Pro 向 Intune 发送的数据
+          href: data-jamf-sends-to-intune.md
         - name: Intune 向 Apple 发送的数据
           href: data-intune-sends-to-apple.md
         - name: Intune 向 Google 发送的数据
           href: data-intune-sends-to-google.md
-        - name: 从 Jamf Pro 共享到 Intune 的信息
-          href: conditional-access-integrate-jamf.md
       - name: 视图和正确的个人数据
         href: privacy-data-view-correct.md
       - name: 审核、导出、删除
@@ -854,9 +854,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: 解决策略冲突
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: 1f17ae67e609e9836c29f6afd810bbea5ece99b4
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 2939459eafe7771c33ec20fd150c36c7808c2b1c
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203580"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325043"
