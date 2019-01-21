@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d1bc4762f46062cc80bb584da0a71423140c234
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 8ed3bb57010535806d082f706b317839747fa881
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642772"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210816"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>将 Android 业务线应用添加到 Microsoft Intune
 
@@ -31,6 +31,9 @@ ms.locfileid: "53642772"
 
 > [!Note]
 > 若要深入了解来自托管的 Google Play 应用商店的 LOB 应用，请参阅[处理来自托管的 Google Play 应用商店的业务线应用](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store)。 
+
+> [!Note]
+> 对于 Android for Work 设备，请按照[本文](https://docs.microsoft.com/intune/apps-add-android-for-work)操作。 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步骤 1：指定软件安装程序文件
 

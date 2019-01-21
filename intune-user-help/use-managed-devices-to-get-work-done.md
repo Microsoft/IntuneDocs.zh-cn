@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150660"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203139"
 ---
-# <a name="use-managed-devices-to-get-work-done"></a>使用托管设备完成工作
-Microsoft Intune 是一款可以让组织管理设备（如智能手机、平板电脑和电脑）、应用和电子邮件等其他公司资源的软件。 这样员工可以在几乎任何地方从几乎任意设备访问其工作信息，并且还能保护公司信息安全。
+# <a name="use-managed-devices-to-access-work-or-school-resources"></a>使用受管理设备访问工作或学校资源
+Microsoft Intune 是一个设备管理系统，可允许组织管理对设备、应用和电子邮件的访问。 通过设备管理，你和其他员工及学生可几乎在任何设备上从任何地方访问你的工作信息。 即使远程工作，你和贵组织的信息仍然是安全的。
 
-将设备注册为使用 Intune 管理后，IT 部门可以管理这些工作或学校资源，让设备更安全，同时员工也能够自由地使用其偏爱的设备来完成工作。 实现此目的的主要方法之一是通过公司门户将设备注册到管理。
+Microsoft Intune 是贵公司用于配置其安全性和设备需求的软件。 准备好受管理设备时，你将使用 Intune 公司门户应用。 通过此应用，可以使用首选设备来访问工作或学校资源。 
 
-## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>在 Intune 中注册我的设备时，我的公司可以看到什么信息？
-公司的支持部门可以看到与工作相关的信息，但无法看到你的个人信息。 如果要注册个人设备以便在工作时使用，了解这一点尤为重要。 我们在用户帮助的下一篇文章中介绍了 IT 部门[可以看到和不能看到的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>在托管自己的设备时，我的公司可以看到哪些信息？
+在公司门户中进行设置之后，公司支持人员只能查看与工作相关的信息。 无法查看你的个人信息。 如果要注册个人设备以便在工作时使用，了解这一点尤为重要。 在下一篇文章中详细了解公司支持人员[可以查看和无法查看的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
 
-## <a name="how-do-i-get-the-company-portal"></a>如何获取公司门户？
-你可通过两种不同方式获取公司门户：
+## <a name="how-do-i-get-company-portal"></a>如何获取公司门户？
+通过以下方式获取公司门户：
 
-- 通过在设备上安装公司门户应用。 通常通过在设备上转到应用商店，可以获取公司门户应用，但公司支持人员也可为你安装公司门户应用。
-- 通过转到公司支持人员设置的[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+- 在设备上安装公司门户应用。 通常通过在设备上转到应用商店，可以获取公司门户应用，但公司支持人员也可为你安装公司门户应用。
+- 转到公司支持人员设置的[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>应用和网站之间的有什么区别？
 公司门户应用和公司门户网站存在一些细微差别，但你可以在两者上执行大部分相同任务。 可以执行的任务有：

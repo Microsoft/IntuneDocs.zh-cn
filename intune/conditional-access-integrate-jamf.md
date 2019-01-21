@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/04/2018
+ms.date: 01/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
+ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816814"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270582"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -38,53 +38,50 @@ ms.locfileid: "53816814"
 
 ## <a name="connecting-intune-to-jamf-pro"></a>将 Intune 连接到 Jamf Pro
 
-可以通过以下方式将 Intune 与 Jamf Pro 连接：
+若要将 Intune 与 Jamf Pro 连接，可通过以下方式实现：
 
 1. 在 Azure 中创建新的应用程序
 2. 启用 Intune 以与 Jamf Pro 集成
 3. 在 Jamf Pro 中配置条件访问
 
-## <a name="create-a-new-application-in-azure-active-directory"></a>在 Azure Active Directory 中创建新的应用程序
+## <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中创建应用程序
 
-1. 打开“Azure Active Directory” > “应用注册”。
-2. 单击“+新应用程序注册”。
+1. 在 [Azure 门户](https://portal.azure.com)中转到“Azure Active Directory” > “应用注册”。
+2. 选择“+新应用程序注册”。
 3. 输入显示名称，如 Jamf 条件访问。
 4. 选择“Web 应用/API”。
 5. 使用 Jamf Pro 实例 URL 指定登录 URL。
-6. 单击“创建应用程序”。
-7. 保存新创建的“应用程序 ID”，然后打开“设置”并导航到”API 访问” > “密钥”以创建新的应用程序密钥。 输入描述、过期之前的时间，然后保存该应用程序密钥。
+6. 选择“创建”。 应用程序已创建，且门户提供应用程序详细信息。
+7. 保存新应用程序的应用程序 ID 的副本。 在后续步骤中指定此 ID。 接下来，选择“设置”，并转到“API 访问” > “密钥”。
+8. 在“密钥”窗格中，指定“说明”，到期前需要等待的时间，然后选择“保存”以生成应用程序密钥（值）。
 
    > [!IMPORTANT]
    > 应用程序密钥在此过程中仅显示一次。 请务必将其保存在可以轻松检索到它的地方。
 
-8. 打开“设置”，然后导航到“API 访问” > “所需权限”，删除所有权限。
-
-   > [!NOTE]
-   > 添加新的必要权限。 应用程序必须具有单个必需权限才能正常工作。
-
-9. 选择“Microsoft Intune API”，然后单击“选择”。
-10. 选择“将设备属性发送到 Microsoft Intune”，然后单击“选择”。
-11. 保存应用程序的必需权限后，单击“授予权限”按钮。
+8. 在应用的“设置”窗格上，导航到“API 访问” > “所需权限”。 选择任何现有权限，然后单击“删除”并删除所有权限。 添加新权限时有必要删除现有权限，且应用程序仅在具有单个所需权限时正常运行。  
+9. 若要分配新权限，请选择“+添加” > “选择 API” > “Microsoft Intune API”，然后单击“选择”。
+10. 在“启用访问权限”窗格，选择“向 Microsoft Intune 发送设备属性”，然后单击“选择”并选择“完成”。
+11. 在“所需权限”窗格，选择“授予权限”，然后单击“是”，以向应用程序应用所需权限。
 
     > [!NOTE]
     > 如果应用程序密钥过期，则必须在 Microsoft Azure 中创建一个新的应用程序密钥，然后更新 Jamf Pro 中的条件访问数据。 Azure 允许同时具有旧密钥和新密钥，以防止服务中断。
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>启用 Intune 以与 Jamf Pro 集成
 
-1. 在 Microsoft Azure 门户中，打开“Microsoft Intune” > “设备符合性” > “合作伙伴设备管理器”。
-2. 通过将应用程序 ID 粘贴到 Jamf Azure Active Directory 应用程序 ID 字段来启用 Jamf 的符合性连接器。
-3. 单击 **“保存”**。
+1. 在 [Azure 门户](https://portal.azure.com)中，转到“Microsoft Intune” > “设备符合性” > “合作伙伴设备管理器”。
+2. 通过将上一步骤期间保存的应用程序 ID 粘贴到“Jamf Azure Active Directory 应用 ID”字段来启用 Jamf 的符合性连接器。
+3. 选择“保存”。
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中配置 Microsoft Intune 集成
 
 1. 在 Jamf Pro 中，导航到“全局管理” > “条件访问”。 单击“Microsoft Intune 集成”选项卡上的“编辑”按钮。
 2. 选中“启用 Microsoft Intune 集成”复选框。
 3. 提供之前步骤中保存的有关 Azure 租户的必要信息，包括“位置”、“域名”、“应用程序 ID”和“应用程序密钥”。
-4. 单击 **“保存”**。 Jamf Pro 将测试设置并验证是否成功。
+4. 选择“保存”。 Jamf Pro 将测试设置并验证是否成功。
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>设置符合性策略并注册设备
 
-完成 Intune 和 Jamf 之间的集成配置后，需要[将符合性策略应用到 Jamf 托管的设备](conditional-access-assign-jamf.md)。
+配置 Intune 和 Jamf 之间的集成后，需要[将符合性策略应用到 Jamf 托管的设备](conditional-access-assign-jamf.md)。
 
 ## <a name="information-shared-from-jamf-pro-to-intune"></a>从 Jamf Pro 共享到 Intune 的信息
 

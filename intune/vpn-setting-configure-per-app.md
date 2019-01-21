@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180725"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297394"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -33,9 +33,9 @@ ms.locfileid: "52180725"
  - Citrix
  - F5
  - 脉冲连接安全
+ - Palo Alto Networks
  - SonicWall
- - 帕洛阿尔托网络全局保护
- - Zscaler
+ - Zscaler 专用访问
 
 ## <a name="prerequisites-for-per-app-vpn"></a>每个应用 VPN 的先决条件
 
@@ -186,10 +186,12 @@ VPN 配置文件包含附带客户端凭据的 SCEP 证书、VPN 的连接信息
     - Check Point Capsule 连接
     - Cisco AnyConnect
     - Citrix VPN
+    - Citrix SSO
     - F5 Access
+    - 帕洛阿尔托网络全局保护
     - 脉冲安全
     - SonicWall Mobile Connect
-    - Zscaler 应用
+    - Zscaler
 
     > [!NOTE]
     > 如果使用 Pulse Secure VPN 应用，可以选择使用应用层或数据包层隧道。 针对应用层隧道，将 ProviderType 值设置为 app-proxy，针对数据包层隧道，将其设置为 packet-tunnel。

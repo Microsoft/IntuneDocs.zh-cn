@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +15,27 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303849"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203206"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>创建配置文件
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，然后搜索“Microsoft Intune”。
 
-2. 在 Microsoft Intune 中，依次选择“设备配置”、“配置文件”。 然后选择“创建配置文件”。
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
+
+2. 选择“设备配置” > “配置文件” > “创建配置文件”。
 
 3. 输入以下属性：
 
    - **名称**：输入新配置文件的描述性名称。
-   - **说明**：输入配置文件的说明。 （这是可选的，但建议使用它。）
+   - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
    - **平台**：选择平台类型：  
 
        - **Outlook Web Access (OWA)**
@@ -46,7 +47,7 @@ ms.locfileid: "52303849"
        - **Windows 10 及更高版本**
 
    - **配置文件类型**：选择要创建的类型。 列表取决于所选择的平台。
-   - **设置**：以下主题介绍了每种配置文件类型的设置：
+   - **设置**：以下文章介绍了每种配置文件类型的设置：
 
        -  [设备功能](device-features-configure.md)
        -  [设备限制](device-restrictions-configure.md)

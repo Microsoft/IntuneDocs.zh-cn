@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190296"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203546"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑难解答门户帮助公司的用户
 
@@ -271,6 +271,15 @@ ms.locfileid: "52190296"
 | 注册授权失败 | 尝试注册时使用的是旧版公司门户。 |
 | 设备不受支持 | 设备不符合 Intune 注册的最低要求。 |
 | 不符合注册限制 | 管理员配置的注册限制导致此注册被阻止。 |
+| 设备版本太低 | 管理员配置的注册限制需要更高版本的设备。 |
+| 设备版本太高 | 管理员配置的注册限制需要更低版本的设备。 |
+| 不能以个人身份注册设备 | 管理员配置的注册限制阻止个人注册，且失败的设备未预定义为企业设备。 |
+| 已阻止设备平台 | 管理员配置了阻止此设备平台的注册限制。 |
+| 批量令牌过期 | 预配包中的批量令牌已过期。 |
+| 找不到 Autopilot 设备或详细信息 | 尝试注册时，找不到 Autopilot 设备。 |
+| 找不到或未分配 Autopilot 配置文件 | 设备没有有效的 Autopilot 配置文件。 |
+| 意外的 Autopilot 注册方法 | 设备尝试使用不受允许的方法注册。 |
+| 已删除 Autopilot 设备 | 已从此帐户的 Autopilot 中删除尝试注册的设备。 |
 | 已达到设备上限 | 管理员配置的设备限制导致此注册被阻止。 |
 | Apple 载入 | 目前所有 iOS 设备注册都被阻止，因为 Intune 中缺少 Apple MDM 推送证书，或该证书已过期。 |
 | 设备未预先注册 | 设备未预先注册为公司，且所有个人注册都已被管理员阻止。 |

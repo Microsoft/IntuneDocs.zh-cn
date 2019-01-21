@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
-ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
+ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53996025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210901"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,131 @@ ms.locfileid: "53996025"
 ### Role-based access control
 
 -->     
+
+
+## <a name="week-of-january-7-2019"></a>2019 年 1 月 7 日当周
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="intune-app-pin----2298397---"></a>Intune 应用 PIN <!-- 2298397 -->
+作为 IT 管理员，你现在可以配置在最终用户必须更改其 Intune 应用 PIN 之前可以等待的天数。 新设置是在该等待天数之后重置的 PIN，同时，通过选择“Intune”“客户端应用” > “应用保护策略” > “创建策略” > “设置” > “访问要求” > ，便会在 Azure 门户中提供新设置。 可用于 [iOS](app-protection-policy-settings-ios.md) 和 [Android](app-protection-policy-settings-android.md) 设备，此功能支持正整数。
+
+
+#### <a name="intune-device-reporting-fields----2748738---"></a>Intune 设备报告字段 <!-- 2748738 -->
+Intune 提供其他设备报告字段，包括 Android 注册 ID、Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，通过选择“客户端应用” > “应用保护状态”并选择“应用保护报告: iOS、Android”来获取这些字段。 此外，这些参数将帮助你配置设备制造商“允许”列表 (Android)、设备型号的“允许”列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。 
+
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>管理模板为公共预览版，并移动到其自己的配置文件 <!-- 3322847 -->
+
+Intune 中的管理模板（“设备配置” > “管理模板”）目前为个人预览版。 借助此更新：
+
+- 管理模板包括可在 Intune 中托管的大约 300 个设置。 以前，这些设置仅存在于组策略编辑器中。
+- 管理模板现已推出公共预览版。
+- 管理模板从“设备配置” > “管理模板”移动到“设备配置” > “配置文件” > “创建配置文件”> 在“平台”中，选择“Windows 10 及更高版本”，在“配置文件类型”中，选择“管理模板”。
+- 已启用报告
+
+有关此功能的更多信息，请转到[用于配置组策略设置的 Windows 10 模板](administrative-templates-windows.md)。
+
+适用于：Windows 10 及更高版本
+
+#### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user-----1333642---"></a>使用 S/MIME 对用户的多个设备进行加密和签名 <!-- 1333642 -->
+此更新包括使用新导入的证书配置文件进行 S/MIME 电子邮件加密（“设备配置” > “配置文件” > “创建配置文件”>“选择平台”>“PKCS 导入的证书”配置文件类型）。 在 Intune 中，可以 PFX 格式导入证书。 然后 Intune 可以将这些相同的证书传递给单个用户注册的多个设备。 还包括：
+- 本机 iOS 电子邮件配置文件支持使用 PFX 格式的导入证书启用 S/MIME 加密。
+- Windows Phone 10 设备上的本机电子邮件应用自动使用 S/MIME 证书。
+- 可以跨多个平台传递私有证书。 但并非所有电子邮件应用都支持 S/MIME。
+- 在其他平台上，可能需要手动配置电子邮件应用以启用 S/MIME。  
+- 支持 S/MIME 加密的电子邮件应用可能以 MDM 不支持的方式（例如从发布者的证书存储读取）处理对 S/MIME 电子邮件加密的证书检索。
+有关此功能的详细信息，请参阅[对电子邮件进行签名和加密的 S/MIME 概述](certificates-s-mime-encryption-sign.md)。
+在以下设备上受支持：Windows、Windows Phone 10、macOS、iOS、Android
+
+#### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>用于在 Windows 10 及更高版本设备上使用 DNS 设置时自动连接并保留规则的新选项 <!-- 1333665, 2999078 -->
+在 Windows 10 及更高版本设备上，可以创建包含 DNS 服务器列表的 VPN 配置文件来解析域，如 contoso.com。 这一升级包括名称解析的新设置（“设备配置” > “配置文件” > “创建配置文件”> 选择“Windows 10 及更高版本”作为平台 > 选择“VPN”作为配置文件类型 >“DNS 设置” >“添加”）： 
+- **自动连接**：如果为“已启用”，则当设备与所输入的域（如 contoso.com）通信时，会自动连接到 VPN。
+- **永久性**：默认情况下，只要使用此 VPN 配置文件连接设备，所有名称解析策略表 (NRPT) 规则就会处于活动状态。 当 NRPT 规则的此设置为“已启用”时，该规则将在设备上保持活动状态，即使 VPN 断开连接也是如此。 该规则会保持活动状态，直到删除 VPN 配置文件或手动删除该规则，删除操作可以使用 PowerShell 完成。
+[Windows 10 VPN 设置](vpn-settings-windows-10.md)介绍了设置。 
+
+#### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>在 Windows 10 设备上使用 VPN 配置文件的受信任网络检测 <!-- 1500165 -->
+使用受信任的网络检测时，可以在用户已使用受信任的网络时阻止 VPN 配置文件自动创建 VPN 连接。 通过此更新，可以添加 DNS 后缀，以便在运行 Windows 10 及更高版本的设备上启用受信任的网络检测（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”作为平台 >“VPN”作为配置文件类型）。
+[Windows 10 VPN 设置](vpn-settings-windows-10.md)列出了当前的 VPN 设置。
+
+#### <a name="manage-windows-holographic-for-business-devices-used-by-multiple-users----1907917-1063203---"></a>管理多个用户使用的 Windows Holographic for Business 设备 <!-- 1907917, 1063203 -->
+目前，你可以在使用自定义 OMA-URI 设置的 Windows 10 和 Windows Holographic for Business 设备上配置共享电脑设置。 通过此更新，会添加新的配置文件以配置共享设备设置（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “共享多用户设备”）。
+若要了解关于此功能的更多信息，请转到[用于托管共享设备的 Intune 设置](shared-user-device-settings.md)。
+适用于：Windows 10 及更高版本、Windows Holographic for Business
+
+#### <a name="new-windows-10-update-settings---2626030--2512994----"></a>新的 Windows 10 更新设置 <!--2626030  2512994  -->
+对于 [Windows 10 更新通道](windows-update-for-business-configure.md)，可以配置：
+- **自动更新行为** - 使用新选项“重置为默认值”，在运行“2018 年 10 月更新”的 Windows 10 计算机上还原初始的自动更新设置
+- **阻止用户暂停 Windows 更新** - 配置新的软件更新设置，使你能够阻止或允许用户通过其计算机的“设置”暂停更新安装。 
+
+#### <a name="ios-email-profiles-can-use-smime-signing-and-encryption----2662949---"></a>iOS 电子邮件配置文件可以使用 S/MIME 签名和加密 <!-- 2662949 -->
+你可以创建包含不同设置的电子邮件配置文件。 此更新包括可用于在 iOS 设备上对电子邮件通信进行签名和加密的 S/MIME 设置（“设备配置” > “配置文件” > “创建配置文件”> 选择“iOS”作为平台 >“电子邮件”作为配置文件类型）。
+[iOS 电子邮件配置设置](email-settings-ios.md)列出了设置。
+
+#### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>某些 BitLocker 设置支持 Windows 10 专业版<!-- 2727036 -->
+你可以创建在 Windows 10 设备上设置 Endpoint Protection 设置的配置文件，包括 BitLocker。 此更新会为某些 BitLocker 设置添加对 Windows 10 专业版的支持。 若要查看这些保护设置，请转到[适用于 Windows 10 的 Endpoint protection 设置](endpoint-protection-windows-10.md#windows-encryption)。
+
+#### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal---2809362---"></a>Azure 门户中的共享设备配置将重命名为适用于 iOS 设备的“锁屏消息”<!-- 2809362 -->
+创建适用于 iOS 设备的配置文件时，你可以添加“共享设备配置”设置以在锁屏上显示特定文本。 此更新包括以下更改： 
+- Azure 门户中的“共享设备配置”设置将重命名为“锁定屏幕消息(仅限受监督的设备)”（“设备配置” > “配置文件” > “创建配置文件”> 选择“iOS”作为平台 > 选择“设备功能”作为配置文件类型 >“锁定屏幕消息”）。
+- 添加锁屏消息时，可以插入序列号、设备名称或另一个特定于设备的值作为“资产标记信息”和“锁屏脚注”中的变量。 例如，可以使用大括号输入 `Device name: {{devicename}}` 或 `Serial number is {{serialnumber}}`。 [iOS 令牌](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)列出了可用的令牌。
+[用于在锁屏上显示消息的设置](shared-device-settings-ios.md)列出了设置。
+
+#### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>添加到 iOS 设备的新 App Store、文档查看和游戏设备限制设置 <!-- 2827760-->
+在“设备配置” > “配置文件” > “创建配置文件” > 平台选择“iOS”> 配置文件类型选择“设备限制”>“App Store、文档查看和游戏”中，添加了以下设置：允许托管应用将联系人写入非托管联系人帐户（仅限监控模式）。允许非托管应用从托管联系人帐户中读取联系人（仅限监控模式）。若要查看这些设置，请转到 [iOS 设备限制](device-restrictions-ios.md#app-store-doc-viewing-gaming)。
+
+#### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android Enterprise 设备所有者设备的新通知、提示和锁屏设置 <!-- 3201839 3201843 -->
+以设备所有者身份运行时，此更新包括 Android Enterprise 设备上的多项新功能。 若要使用这些功能，请转到“设备配置” > “配置文件” > “创建配置文件”> 在“平台”中，选择“Android Enterprise” > 在“配置文件类型”中，选择“仅设备所有者” > “设备限制”。
+新的功能包括： 
+- 禁止显示系统通知，包括传入呼叫、系统警报、系统错误等
+- 建议跳过首次打开的应用的启动教程和提示
+- 禁用高级锁屏设置，例如照相机、通知、指纹解锁等。若要查看这些设置，请转到 [Android Enterprise 设备限制设置](device-restrictions-android-for-work.md)。
+
+#### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android Enterprise 设备所有者设备可以使用 Always On VPN 连接 <!-- 3202194 -->
+在此更新中，可以在 Android Enterprise 设备所有者设备上使用始终可用的 VPN 连接。 始终可用 VPN 连接一直保持连接状态，或在用户解锁设备、设备重启或无线网络更改时立即重新连接。 还可以将连接置于“锁定”模式，该模式会阻止所有网络流量，直到 VPN 连接处于活动状态。
+可以在“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Android 企业版”>“仅设备所有者”的“设备限制”>“连接”设置中启用始终可用的 VPN。 若要查看这些设置，请转到 [Android Enterprise 设备限制设置](device-restrictions-android-for-work.md)。
+
+#### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Windows 10 设备上的任务管理器中的结束进程的新设置 <!-- 3285177 --> 
+此更新包括使用 Windows 10 设备上的任务管理器的结束进程的新设置。 使用设备配置文件（“设备配置” > “配置文件” > “创建配置文件”> 在“平台”中，选择“Windows 10”> 在“配置文件类型”中，选择“设备限制” > “常规”设置），选择允许或阻止此设置。
+若要查看这些设置，请转到 [Windows 10 设备限制设置](device-restrictions-windows-10.md)。
+适用于：Windows 10 及更高版本
+
+
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>更详细的注册限制失败消息传送 <!-- 3111564 -->
+不满足注册限制时，会收到更详细的错误消息。 若要查看这些消息，请转到“Intune” > “故障排除”> 并检查“注册故障”表。 有关详细信息，请参阅[注册失败列表](help-desk-operators.md#configuration-policies-reference)。
+
+#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>在 iOS DEP 设备上跳过更多设置助理屏幕 <!-- 2687509 -->
+除了当前可以跳过的屏幕之外，还可以将 iOS DEP 设备设置为在用户注册设备时跳过设置助理中的以下屏幕：显示色调、隐私、Android 迁移、主页按钮、iMessage 和 FaceTime、载入、监视迁移、外观、屏幕时间、软件更新、SIM 安装程序。
+若要选择要跳过的屏幕，请转到“设备注册” > “Apple 注册” > “注册计划令牌”> 选择令牌 >“配置文件”> 选择配置文件 >“属性” > “设置助理的自定义项”> 对于要跳过的任何屏幕选择“隐藏”>“确定”。
+
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="tenant-status-dashboard-----1124854---"></a>租户状态仪表板 <!-- 1124854 -->
+新[租户状态页](tenant-status.md)会提供一个位置，可以在其中查看租户状态和相关详情。  该仪表板分为 4 个区域：
+- **租户详细信息** - 显示租户姓名和位置、MDM 机构、租户中的注册设备总数以及许可证计数等信息。 此部分还为租户列出当前服务版本。
+- **连接器状态** - 显示有关已配置的可用连接器的信息，还可以列出尚未启用的连接器。  
+   根据每个连接器的当前状态，将其标记为“正常”、“警告”或“不正常”。 选择要了解的连接器，并查看其详细信息或为其配置其他信息。
+-  **Intune 服务运行状况** - 显示租户活动事件或服务中断情况的详细信息。 该部分信息直接检索自 Office 消息中心。
+-  **Intune 新闻** - 显示租户的活动信息。 消息包括在租户收到最新 Intune 功能时的通知等。  该部分信息直接检索自 Office 消息中心。
+
+#### <a name="new-help-and-support-experience-in-company-portal-for-windows-10----1488939--"></a>适用于 Windows 10 的公司门户的新“帮助和支持”体验 <!-- 1488939-->
+新的公司门户“帮助和支持”页有助于用户针对应用和访问问题进行故障排除和请求帮助。 在新页面中，用户可以通过电子邮件发送错误和诊断日志的详细信息，并查找其组织的支持人员详细信息。 用户还可以查找常见问题解答部分，其中带有相关 Intune 文档的链接。 
+
+#### <a name="new-help-and-support-experience-for-intune------3307080---"></a>Intune 的新的“帮助和支持”体验 <!-- #3307080 -->
+我们将在未来几天向所有租户推出新的“帮助和支持”体验。 可以在 Intune 上进行此新体验，并且可以在使用 [Azure 门户](https://portal.azure.com/)中的“Intune”边栏选项卡时对其进行访问。
+通过新体验，可以用自己的语言描述问题，并获得故障排除见解和基于 Web 的修复内容。 这些解决方案通过基于规则的机器学习算法提供并依赖于用户查询。 除特定于问题的指南之外，还会使用新的案例创建工作流通过电子邮件或电话打开支持案例。 此新体验取代了一组静态预选选项的先前的“帮助和支持”体验，这些选项基于打开“帮助和支持”时所在控制台的区域。 有关详细信息，请参阅[如何获取对 Microsoft Intune 的支持](get-support.md)。
+
+### <a name="role-based-access-control"></a>基于角色的访问控制
+
+#### <a name="scope-tags-for-apps----1081941---"></a>应用的作用域标记 <!-- 1081941 -->
+可创建作用域标记来限制对角色和应用的访问。 可向应用添加作用域标记，以便只有具有特定角色（该角色也分配有该作用域标记）的人员才可以访问该应用。 有关详细信息，请参阅[使用作用域标记筛选策略](scope-tags.md)。
+
+
 
 ## <a name="week-of-december-10-2018"></a>2018 年 12 月 10 日当周
 
@@ -244,7 +369,7 @@ Azure Active Directory 具备可供使用的使用条款功能，而不必再使
 对于 Samsung Knox 移动注册，Intune 现在支持将设备注册到 Android 设备所有者管理模式。 使用 WiFi 或移动电话网络的用户在第一次打开他们的设备时，只需几次点击即可进行注册。 有关详细信息，请参阅[使用 Samsung 的 Knox 移动注册自动注册 Android 设备](android-samsung-knox-mobile-enroll.md)。
 
 ### <a name="device-management"></a>设备管理
-#### <a name="new-settings-for-software-updates------1907869--wnready---"></a>软件更新的新设置 <!-- 1907869  wnready -->  
+#### <a name="new-settings-for-software-updates------1907869---"></a>软件更新的新设置 <!-- 1907869 -->  
 - 现在可以将某些通知配置为向最终用户发出完成最新软件更新安装后需要重新启动的警报。   
 - 现在可以配置在非工作时间重新启动的重新启动警告提示，这支持 BYOD 方案。
 
@@ -281,7 +406,7 @@ Intune 在最终用户计算机上安装 Office 时，最终用户将自动获�
 
 我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
 
-有关详细信息，请参阅“如何获取对 Microsoft Intune 的支持”中的[新的“帮助和支持”体验](get-support.md#new-help-and-support-experience)。  
+有关详细信息，请参阅“如何获取对 Microsoft Intune 的支持”中的[“帮助和支持”体验](get-support.md#help-and-support-experience)。  
 
 ### <a name="powershell-module-for-intune--preview-available----951068---"></a>适用于 Intune 的 PowerShell 模块 - 提供预览版 <!-- 951068 -->
 现在，[GitHub]( https://aka.ms/intunepowershell) 上提供了新 PowerShell 模块的预览版，该模块可通过 Microsoft Graph 提供对 Intune API 的支持。 有关如何使用此模块的详细信息，请参阅该处的自述文件。 

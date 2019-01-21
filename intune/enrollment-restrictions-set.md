@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112946"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122531"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -81,6 +81,8 @@ ms.locfileid: "53112946"
     - Android 工作配置文件支持 major.minor.rev.build。
     - iOS 支持 major.minor.rev。操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
     - Windows 仅对 Windows 10 支持 major.minor.rev.build。
+> [!Note]
+> Windows 10 注册过程中不提供生成号，因此对于实例，如果输入 10.0.17134.100 而设备是 10.0.17134.174，则在注册过程中将阻止该实例。
 8. 选择是否对每个列出的平台“允许”或“阻止”个人拥有的设备。
 9. 选择“确定”。
 

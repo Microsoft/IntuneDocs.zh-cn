@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f587fdf7c1690dbb0a31388a9c70b780179e541e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642874"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210867"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 客户端从 Intune 数据仓库 API 获取数据
 
@@ -47,7 +47,7 @@ ms.locfileid: "53642874"
     3.  在“登录 URL”中键入一个 URL。 登录 URL 因具体方案不同而有所不同，但是如果计划使用 Postman，请键入 `https://www.getpostman.com/oauth2/callback`。 向 Azure AD 进行身份验证时，将针对客户端身份验证步骤使用回调。
 4.  选择“创建”。
 
-     ![Intune 数据仓库 API](./media/reports-get_rest_data_client_overview.png)
+     ![Intune 数据仓库客户端应用](./media/reports-get_rest_data_client_overview.png)
 
 5. 将此应用的“应用程序 ID”记下来。 下一部分中将用到此 ID。
 
@@ -134,7 +134,7 @@ ms.locfileid: "53642874"
 
 12. 选择“请求令牌”。
 
-    ![令牌信息](./media/reports-postman_getnewtoken.png)
+    ![访问令牌信息](./media/reports-postman_getnewtoken.png)
 
 13. 在 Active AD 授权页面中键入凭据。 Postman 中的令牌列表现包含名为 `Bearer` 的令牌。
 14. 选择“使用令牌”。 标头列表包含授权的新密钥值和值 `Bearer <your-authorization-token>`。
@@ -144,7 +144,7 @@ ms.locfileid: "53642874"
 1.  选择“发送”。
 2.  返回的数据显示在 Postman 响应正文中。
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Postman 客户端状态为 200 正常](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>创建 REST 客户端 (C#) 以从 Intune 数据仓库获取数据
 
@@ -161,7 +161,7 @@ ms.locfileid: "53642874"
 6. 选择“我接受”以接受 NuGet 包的许可。
 7. 从解决方案资源管理器打开 `Program.cs`。
 
-    ![Visual Studio 中的项目](./media/reports-get_rest_data_in.png)
+    ![Visual Studio 中的 Progam.cs 和解决方案资源管理器](./media/reports-get_rest_data_in.png)
 
 8. 将 Program.cs 的代码替换为以下代码：  
    ```csharp

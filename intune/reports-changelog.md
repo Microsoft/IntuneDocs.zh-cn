@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642755"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297224"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 随时了解 Intune 数据仓库的更新。
+
+## <a name="1812"></a>1812 
+_2018 年 12 月发布_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>发布到 v1.0 的注册活动集合 
+
+注册活动集合现已在 v1.0 中提供。 可以使用此集合来了解环境中的注册失败量和趋势。 有关详细信息，请参阅 [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities)、[enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses)、[enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories) 和 [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons)。
 
 ## <a name="1808"></a>1808
 发布于 2018 年 8 月
@@ -36,9 +43,9 @@ ms.locfileid: "53642755"
 
 现在可以通过设置查询参数 `api-version=v1.0` 来使用 v1.0 版的 Intune 数据仓库。 数据仓库中集合的更新本质上是附加更新，不会破坏现有方案。
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>发布到 Beta 版的注册故障集合
+### <a name="enrollment-activities-collection-released-to-beta"></a>发布到 beta 版本的注册活动集合
 
-新的 `Enrollment Failure` 集合发布到 beta 版。 使用此集合，可以通过查看最常见的故障来了解注册过程。 
+新的 `Enrollment Activities` 集合发布到 beta 版。 使用此集合，可以通过查看最常见的故障来了解注册过程。 
 
 
 ## <a name="1805"></a>1805

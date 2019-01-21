@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817154"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122581"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
@@ -39,15 +39,14 @@ ms.locfileid: "53817154"
 Intune 提供了设备符合性策略功能，可评估设备的符合性状态。 在用户尝试访问公司资源时，符合性状态会报告给 Azure Active Directory，用于强制执行在 Azure Active Directory 中创建的条件性访问策略。
 
 通过 [Azure 门户](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)为 Exchange online 和其他 Office 365 产品配置基于设备的条件访问策略。
-
--   了解有关 [Azure Active Directory 中条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)的详细信息。
+-   了解有关 [Azure Active Directory 中通过条件访问要求使用受管理设备](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices)的详细信息。
 
 -   了解有关 [Intune 设备符合性](device-compliance.md)的详细信息。
 
--   了解有关[通过 Intune 使用条件性访问保护电子邮件、Office 365 和其他服务](app-based-conditional-access-intune.md)的详细信息。
+-   了解有关[Azure Active Directory 中通过条件访问使用受支持的浏览器](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers)的详细信息。
 
 > [!NOTE]
-> 在 Android 设备上为 Sharepoint Online 启用基于设备的访问时，用户必须在注册的设备上打开“启用浏览器访问”选项，如下所示：
+> 在 Android 设备上为 Sharepoint Online 或对 Exchange Online 的基于浏览器的访问启用基于设备的访问时，用户必须在注册的设备上打开“启用浏览器访问”选项，如下所示：
 > 1. 启动**公司门户应用**。
 > 2. 从三个点 (…) 或硬件菜单按钮转到“设置”页。
 > 3. 按“启用浏览器访问”按钮。 
@@ -146,7 +145,9 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 
 #### <a name="bring-your-own-device-byod"></a>自带设备办公 (BYOD)
 
--   **工作区加入和 Intune 管理：** 用户可以加入自己的个人设备，以访问公司资源和服务。 你可以使用“工作区加入”并将设备注册到 Intune 以接收设备级别的策略，这是评估条件性访问标准的另一个选项。
+-   **工作区加入和 Intune 管理：** 用户可以加入自己的个人设备，以访问公司资源和服务。 你可以使用工作区将设备加入并注册到 Intune MDM 以接收设备级别的策略，这是评估条件访问标准的另一个选项。
+
+了解有关 [Azure Active Directory 中的设备管理](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview)的详细信息。
 
 ## <a name="app-based-conditional-access"></a>基于应用的条件性访问
 

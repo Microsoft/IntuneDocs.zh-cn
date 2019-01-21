@@ -16,18 +16,15 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642551"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149655"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot（预览版）部署已加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置已加入混合 Azure Active Directory 的设备。 为此，请执行以下步骤。
-
-> [!NOTE]
-> 此功能将在未来几天内在整个用户群中推出。 因此，在推送到你的帐户之前，你可能无法执行这些步骤。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -204,7 +201,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
    - **说明**：输入配置文件的说明。
    - **平台**：选择“Windows 10 及更高版本”。
    - **配置文件类型**：选择“域加入(预览版)”。
-3. 选择“设置”，然后提供“计算机名称前缀”、“域名”和 DN 格式的“组织单位”（可选）。 
+3. 选择“设置”，然后提供 [DN 格式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)的“计算机名前缀”、“域名”和（可选）“组织单位”。 
 4. 选择“确定” > “创建”。 配置文件随即创建并显示在列表中。
 5. 要分配配置文件，请按照[分配设备配置文件](device-profile-assign.md#assign-a-device-profile)下的步骤操作。 
 

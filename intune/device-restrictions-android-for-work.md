@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: c9e2e0df79625329310171c509327395989f3a7c
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032531"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203597"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置
 
@@ -77,6 +77,10 @@ ms.locfileid: "53032531"
   - **仅 Wi-Fi**
   - **始终**
 
+- **通知窗口**：设置为“禁用”时，设备上不显示窗口通知，包括 toast、传入呼叫、传出呼叫、系统警报和系统错误。 设置为“未配置”时使用操作系统默认设置，该设置可用于显示通知。
+- **跳过第一次使用提示**：选择“启用”隐藏或跳过来自应用的建议，这些建议用于在应用启动时逐步提供教程或阅读任何介绍性提示。 设置为“未配置”时使用操作系统默认设置，该设置可在应用启动时显示这些建议。
+
+
 ### <a name="system-security-settings"></a>系统安全设置
 
 - **对应用进行威胁扫描**：“必需”，强制为工作和个人配置文件启用“验证应用”设置。
@@ -126,6 +130,7 @@ ms.locfileid: "53032531"
 ### <a name="device-password-settings"></a>设备密码设置
 
 - **锁屏**：选择“禁用”可阻止用户在设备上使用锁屏功能。 “未配置”则允许用户使用屏锁功能。
+- **禁用的锁屏功能**：在设备上启用了锁屏功能时，选择要禁用的功能。 例如，勾选“安全照相机”会禁用设备上的照相机功能。 所有未勾选的功能均在设备上保持启用状态。
 - **所需的密码类型**：定义设备所需的密码类型。 选项包括：
   - **至少为数字**
   - **数字复杂度**：不允许使用重复或连续数字（例如，“1111”或“1234”）。
@@ -145,6 +150,32 @@ ms.locfileid: "53032531"
 - **添加新用户**：选择“阻止”可阻止用户添加新用户。 每个用户都在设备上拥有个人空间，用于自定义主屏幕、帐户、应用和设置。 “未配置”则允许用户将其他用户添加到设备中。
 - **删除用户**：选择“阻止”可阻止用户删除用户。 “未配置”则允许用户从设备中删除其他用户。
 - **帐户更改**：选择“阻止”可阻止用户修改帐户。 “未配置”则允许用户在设备上更新用户帐户。
+
+### <a name="connectivity"></a>连接性
+
+- **始终可用 VPN**：选择“启用”，将 VPN 客户端设置为自动连接并重新连接到 VPN。 始终可用 VPN 连接一直保持连接状态，或在用户解锁设备、设备重启或无线网络更改时立即连接。 
+
+  选择“未配置”以禁用所有 VPN 客户端的始终可用 VPN。
+
+  > [!IMPORTANT]
+  > 请务必将只有一个始终可用 VPN 策略部署到单个设备。 不支持将多个始终可用 VPN 策略部署到单个设备。
+
+- **VPN 客户端**：选择支持始终可用的 VPN 客户端。 选项包括：
+  - Cisco AnyConnect
+  - F5 Access
+  - 帕洛阿尔托网络全局保护
+  - 脉冲安全
+  - 自定义
+    - **包 ID**：在 Google Play 商店中输入应用的包 ID。 例如，如果 Play 商店中应用的 URL 为 `https://play.google.com/store/details?id=com.contosovpn.android.prod`，则包 ID 为`com.contosovpn.android.prod`。
+
+  > [!IMPORTANT]
+  >  - 所选的 VPN 客户端必须安装在设备上，并且必须支持工作配置文件中的按应用 VPN。 否则将会出错。 
+  >  - 需要批准“托管 Google Play 商店”中的 VPN 客户端应用，将应用同步到 Intune，然后将应用部署到设备。 执行此操作后，应用将安装在用户的工作配置文件中。
+  >  - 将每应用 VPN 与适用于 Android 3.0.4 的 F5 Access 结合使用时，可能存在已知问题。 有关详细信息，请参阅[适用于 Android 3.0.4 的 F5 Access 的 F5 发行说明](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)。
+
+- **锁定模式**：选择“启用”可强制所有流量使用 VPN 隧道。 如果未建立与 VPN 的连接，则设备将无法访问网络。
+
+  选择“未配置”可允许流量通过 VPN 隧道或通过移动网络。
 
 ## <a name="work-profile-only"></a>仅工作配置文件 
 
@@ -245,11 +276,11 @@ ms.locfileid: "53032531"
     - **包 ID**：在 Google Play 商店中输入应用的包 ID。 例如，如果 Play 商店中应用的 URL 为 `https://play.google.com/store/details?id=com.contosovpn.android.prod`，则包 ID 为`com.contosovpn.android.prod`。
 
   > [!IMPORTANT]
-  >  - 所选的 VPN 客户端必须安装在设备上，并且必须支持工作配置文件中的按应用 VPN。 否则，将会出错。 
+  >  - 所选的 VPN 客户端必须安装在设备上，并且必须支持工作配置文件中的按应用 VPN。 否则将会出错。 
   >  - 需要批准“托管 Google Play 商店”中的 VPN 客户端应用，将应用同步到 Intune，然后将应用部署到设备。 执行此操作后，应用将安装在用户的工作配置文件中。
   >  - 将每应用 VPN 与适用于 Android 3.0.4 的 F5 Access 结合使用时，可能存在已知问题。 有关详细信息，请参阅[适用于 Android 3.0.4 的 F5 Access 的 F5 发行说明](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)。
 
-- **锁定模式**：“启用”可强制所有流量使用 VPN 隧道。 如果未建立与 VPN 的连接，则设备将无法访问网络。
+- **锁定模式**：选择“启用”可强制所有流量使用 VPN 隧道。 如果未建立与 VPN 的连接，则设备将无法访问网络。
 
   选择“未配置”可允许流量通过 VPN 隧道或通过移动网络。
 

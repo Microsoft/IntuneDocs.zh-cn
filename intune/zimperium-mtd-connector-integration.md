@@ -15,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b12cec7a01d809eb5a6b6523a73dd224c10c972e
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3f19425fad2cd5d8d2d832eac42c84f4a0f827b0
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817188"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122615"
 ---
 # <a name="integrate-zimperium-with-intune"></a>将 Zimperium 与 Intune 集成
 
@@ -64,7 +64,7 @@ Zimperium 应用授权流程如下：
 
 ## <a name="to-set-up-zimperium-integration"></a>设置 Zimperium 集成
 
-1.  转到  [Zimperium MTD 控制台](https://sso.zimperium.com/signon/aad/) 并使用你的凭据登录。 必须以具有全局管理员角色的 Azure Active Directory 用户身份登录，才能执行 Zimperium 集成设置过程。 此一次性设置操作使用全局管理员权限，在组织中授权 Zimperium 应用与 Intune 进行通信。 
+1.  转到 [Zimperium MTD 控制台](https://sso.zimperium.com/signon/aad/)使用你的凭据登录。 必须以具有全局管理员角色的 Azure Active Directory 用户身份登录，才能执行 Zimperium 集成设置过程。 此一次性设置操作使用全局管理员权限，在组织中授权 Zimperium 应用与 Intune 进行通信。 
 
 2.  从左侧菜单中选择“管理”。
 
@@ -72,16 +72,16 @@ Zimperium 应用授权流程如下：
 
 4.  选择“添加 MDM”，然后从“MDM 提供商”列表中选择“Microsoft Intune”。
 
-5.  在你将 Microsoft Intune 设置为 MDM 服务后，“Microsoft Intune 配置” 窗口弹出，在其中为以下每个选项选择“添加 Azure Active Directory” ：  ****  ****  **“Zimperium zConsole”**、**“zIPS iOS 和 Android 应用”**，以授权 Zimperium 通过 Azure AD 单一登录与 Intune 和 Azure AD 进行通信。
+5.  将 Microsoft Intune 设置为 MDM 服务后，将弹出“Microsoft Intune 配置”窗口，在其中为以下每个选项选择“添加 Azure Active Directory”：**“Zimperium zConsole”**、**“zIPS iOS 和 Android 应用”**，以授权 Zimperium 通过 Azure AD 单一登录与 Intune 和 Azure AD 进行通信。
 
     > [!IMPORTANT]  
     > 必须添加 Zimperium zConsole、zIPS iOS 和 Android 应用，才能完成与 Intune 集成的过程。
 
-6.  选择“ **接受**”，授权 Zimperium 应用与 Intune 和 Azure Active Directory 进行通信 。 
+6.  选择“接受”，授权 Zimperium 应用与 Intune 和 Azure Active Directory 通信。
 
 7.  将 Zimperium zConsole 以及 zIPS iOS 和 Android 应用添加到 Azure AD 后，添加 Azure AD 安全组。 此添加允许 Zimperium 将 Azure AD 安全组与其服务同步。
 
-8.  选择“完成”，保存配置并启动首次 Azure AD 安全组同步 。  ****
+8.  选择“完成”，保存配置并启动首次 Azure AD 安全组同步。
 
 9.  注销 Zimperium MTD 控制台。
 

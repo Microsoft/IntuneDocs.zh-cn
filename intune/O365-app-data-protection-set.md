@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210799"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>你的用户将如何在 Microsoft Intune 中的托管 Office 365 应用上体验基本保护
 
@@ -89,33 +89,32 @@ ms.locfileid: "54067459"
 
 ## <a name="what-policies-does-this-wizard-set"></a>此向导设置哪些策略？
 
-|     |       | |
-|----|--------|-|
-|**名称**|管理 Office 365 应用| |
-| **描述**|由“管理 Office 365 应用”向导创建| |
-| |  | |
-| **设置名称** |**iOS 策略值** | **Android 策略值** |
-|阻止 iTunes 和 iCloud 备份| 否 | 不适用 |
-|阻止 Android 备份 |不适用 | 否|
-|允许应用向其他应用传送数据 | 所有应用 | 所有应用|
-|允许应用从其他应用接收数据| 所有应用 | 所有应用|
-|防止“另存为” | 否 | 否|
-|限制使用其他应用剪切、复制和粘贴 | 任何应用 | 任何应用 |
-|限制显示在企业托管浏览器内的 Web 内容 | 否| 否|
-|加密应用数据 | 当设备锁定 | 是|
-|禁用联系人同步 | 否| 否|
-|禁用打印 | 否 | 否|
-|访问需要 PIN | 否 | 是|
-|重置 PIN 前的尝试次数 | 不适用 |5|
-|允许使用简单 PIN | 不适用 |是|
-|PIN 长度 | 不适用 | 4|
-|允许使用指纹而不是 PIN | 不适用 | 是 |
-|访问需要公司凭据 | 否 | 否|
-|阻止在已越狱或取得 root 权限的设备上运行托管应用 | 否 | 否|
-|在一定时间后重新检查访问要求（分钟）- 超时 | 30 | 30|
-|在一定时间后重新检查访问要求（分钟）- 脱机宽限期 | 720 |720|
-|擦除应用数据之前的脱机间隔时间（天） | 90 | 90|
-|阻止屏幕捕获（仅限于 Android 设备） | 不适用 | 否 |
+**名称**：管理 Office 365 应用<br>
+**说明**：由“管理 Office 365 应用”向导创建
+
+| 设置名 | iOS 策略值 | Android 策略值 |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| 阻止 iTunes 和 iCloud 备份 | 否 | 不适用 |
+| 阻止 Android 备份 | 不适用 | 否 |
+| 允许应用向其他应用传送数据 | 所有应用 | 所有应用 |
+| 允许应用从其他应用接收数据 | 所有应用 | 所有应用 |
+| 防止“另存为” | 否 | 否 |
+| 限制使用其他应用剪切、复制和粘贴 | 任何应用 | 任何应用 |
+| 限制显示在企业托管浏览器内的 Web 内容 | 否 | 否 |
+| 加密应用数据 | 当设备锁定 | 是 |
+| 禁用联系人同步 | 否 | 否 |
+| 禁用打印 | 否 | 否 |
+| 访问需要 PIN | 否 | 是 |
+| 重置 PIN 前的尝试次数 | 不适用 | 5 |
+| 允许使用简单 PIN | 不适用 | 是 |
+| PIN 长度 | 不适用 | 4 |
+| 允许使用指纹而不是 PIN | 不适用 | 是 |
+| 访问需要公司凭据 | 否 | 否 |
+| 阻止在已越狱或取得 root 权限的设备上运行托管应用 | 否 | 否 |
+| 在一定时间后重新检查访问要求（分钟）- 超时 | 30 | 30 |
+| 在一定时间后重新检查访问要求（分钟）- 脱机宽限期 | 720 | 720 |
+| 擦除应用数据之前的脱机间隔时间（天） | 90 | 90 |
+| 阻止屏幕捕获（仅限于 Android 设备） | 不适用 | 否 |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>为什么只为 Android 设备配置了应用 PIN 策略？
 加密在 iOS 和 Android 上的工作方式不同。

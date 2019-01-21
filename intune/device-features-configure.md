@@ -14,12 +14,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65457a65504b633018bb61851f16c8c65fa1c806
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185672"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203087"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中添加 iOS 或 macOS 设备功能设置
 
@@ -30,7 +30,7 @@ ms.locfileid: "52185672"
 - AirPrint 和 AirPlay 设置
 - 主屏幕布局
 - 应用的通知
-- 共享设备配置
+- 锁屏界面消息
 - 设置单一登录
 - 筛选 Web 内容
 
@@ -44,7 +44,7 @@ ms.locfileid: "52185672"
 4. 输入以下属性：
 
    - **名称**：输入新配置文件的描述性名称。
-   - **说明**：输入配置文件的说明。 （这是可选的，但建议使用它。）
+   - **说明**：输入配置文件的说明。 （此设置是可选的，但建议设置。）
    - **平台**：选择平台类型：
      - **iOS**
      - **macOS**
@@ -55,7 +55,7 @@ ms.locfileid: "52185672"
      - [适用于 iOS 的 AirPlay 设置](airplay-settings-ios.md)
      - [适用于 iOS 的主屏幕布局设置](home-screen-settings-ios.md)
      - [适用于 iOS 的应用通知设置](app-notification-settings-ios.md)
-     - [适用于 iOS 的共享设备配置设置](shared-device-settings-ios.md)
+     - [适用于 iOS 的锁屏界面消息](shared-device-settings-ios.md)
      - [配置 Intune for iOS 设备 SSO](sso-ios.md)
      - [适用于 iOS 的 Web 内容筛选器设置](web-content-filter-settings-ios.md)
 

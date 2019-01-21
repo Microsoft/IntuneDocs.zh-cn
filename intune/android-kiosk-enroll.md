@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
+ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626078"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54098311"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>设置 Android Enterprise 展台设备的 Intune 注册
 
@@ -112,7 +112,7 @@ Intune 可帮助你将应用和设置部署到 Android 展台设备。 有关 An
 
 ### <a name="enroll-by-using-a-token"></a>使用令牌注册
 
-对于 Android 6 及更高版本的设备，可使用令牌注册设备。 **aft#setup** 注册方法时，Android 6.1 和更高版本还可利用 QR 码扫描。
+对于 Android 6 及更高版本的设备，可使用令牌注册设备。 使用 afw#setup 注册方法时，Android 6.1 和更高版本还可利用 QR 码扫描。
 
 1. 打开已擦除的设备。
 2. 在“欢迎使用”屏幕上，选择语言。

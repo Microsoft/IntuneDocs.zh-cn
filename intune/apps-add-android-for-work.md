@@ -1,12 +1,12 @@
 ---
-title: 将应用分配到 Android 工作配置文件设备
+title: 将托管 Google Play 应用分配到 Android 企业设备
 titlesuffix: Microsoft Intune
-description: 了解如何从托管的 Google Play 应用商店同步应用，以及将应用分配到 Android 工作配置文件设备。
+description: 了解如何从托管的 Google Play 应用商店同步应用，以及将应用分配到 Android 企业设备。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305924"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239568"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>使用 Intune 将应用分配到 Android 工作配置文件设备
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 将托管 Google Play 应用分配到 Android 企业设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android 企业是适用于 Android 工作配置文件设备和展台设备的程序。 对于 Android 工作配置文件设备，Android 企业是一组功能和服务，它将分隔个人应用和数据与工作应用和数据。 用户将其 Android 设备用于工作时，Android 企业将提供额外的管理选项和隐私。 Intune 可帮助用户将应用和设置部署到 Android 工作配置文件设备，确保将工作信息和个人信息分开。 在 Android 工作配置文件设备上安装的所有应用都来自托管 Google Play 应用商店。 可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android 工作配置文件设备。 登录到该商店，浏览查找所需应用，然后批准它们。 然后，该应用会显示在 Azure 门户的“许可的应用”节点中，可以像管理任何其他应用一样管理应用的分配。
+Android 企业是适用于 Android 工作配置文件设备、专用/展台设备和完全托管设备的程序。 对于 Android 工作配置文件设备，Android 企业是一组功能和服务，它将分隔个人应用和数据与工作应用和数据。 用户将其 Android 设备用于工作时，Android 企业将提供额外的管理选项和隐私。 Intune 可帮助用户将应用和设置部署到 Android 工作配置文件设备，确保将工作信息和个人信息分开。 在 Android 工作配置文件设备上安装的所有应用都来自托管 Google Play 应用商店。 可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android 工作配置文件设备。 登录到该商店，浏览查找所需应用，然后批准它们。 然后，该应用会显示在 Azure 门户的“许可的应用”节点中，可以像管理任何其他应用一样管理应用的分配。
 
 此外，如果你创建了自己的业务线 (LOB) 应用，则可以按如下所示分配它们：
 - 注册 Google 开发人员帐户，然后通过该帐户将应用发布到 Google Play 商店的专用区域。

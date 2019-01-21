@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642840"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203410"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -192,7 +192,15 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
     | <strong>缩放</strong> | 设置设备时，为用户提供缩放显示内容的选项。 |
     | <strong>Siri</strong> | 为用户提供设置 Siri 的选项。 |
     | <strong>诊断数据</strong> | 向用户展示“诊断”屏幕。 此屏幕为用户提供将诊断数据发送到 Apple 的选项。 |
-
+    | <strong>显示色调</strong> | 为用户提供打开“显示色调”的选项。 |
+    | <strong>隐私</strong> | 向用户展示“隐私”屏幕。 |
+    | <strong>Android 迁移</strong> | 为用户提供从 Android 设备迁移数据的选项。 |
+    | <strong>iMessage 和 FaceTime</strong> | 为用户提供设置 iMessage 和 FaceTime 的选项。 |
+    | <strong>载入</strong> | 显示用户教育的载入信息屏幕，如“封面页”以及“多任务和控制中心”。 |
+    | <strong>监视迁移</strong> | 为用户提供从监视设备迁移数据的选项。 |
+    | <strong>屏幕使用时间</strong> | 显示“屏幕使用时间”屏幕。 |
+    | <strong>软件更新</strong> | 显示强制“软件更新”屏幕。 |
+    | <strong>SIM 设置</strong> | 为用户提供添加移动电话计划的选项。 |
 
 14. 选择“确定”。
 

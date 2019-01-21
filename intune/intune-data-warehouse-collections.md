@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: d290fadf92ee112a1f663c6894861b393b81f74d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190313"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297496"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 数据仓库收集
 
@@ -312,6 +312,92 @@ deviceEnrollmentType 实体表明设备的注册方式。 注册类型会捕获�
 | 9                | WindowsCoManagement                | AutoPilot 或组策略触发的 Windows 10 共同管理。                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | 使用设备身份验证的 Windows 10 Azure AD 联接。                                            |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+EnrollmentActivity 实体表示设备注册活动。
+
+| 属性                      | 描述                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | 记录此注册活动时的日期键。               |
+| deviceEnrollmentTypeKey       | 注册类型的键。                                        |
+| deviceTypeKey                 | 设备类型的键。                                                |
+| enrollmentEventStatusKey      | 表示注册成功或失败的状态键钥。    |
+| enrollmentFailureCategoryKey  | 注册失败类别的键（如果注册失败）。        |
+| enrollmentFailureReasonKey    | 注册失败原因的键（如果注册失败）。          |
+| osVersion                     | 设备的操作系统版本。                               |
+| count                         | 符合上述分类的注册活动总数。  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+EnrollmentEventStatus 实体表示设备注册结果。
+
+| 属性                   | 描述                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | 数据仓库中注册状态的唯一标识符（代理键）  |
+| enrollmentEventStatusName  | 注册状态的名称。 请参阅以下示例。                            |
+
+### <a name="example"></a>示例
+
+| enrollmentEventStatusName  | 描述                            |
+|----------------------------|----------------------------------------|
+| 成功                    | 成功的设备注册         |
+| Failed                     | 失败的设备注册             |
+| 不可用              | 注册状态不可用。  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+EnrollmentFailureCategory 实体指示设备注册失败的原因。 
+
+| 属性                       | 描述                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | 数据仓库中注册失败类别的唯一标识符（代理键）  |
+| enrollmentFailureCategoryName  | 注册失败类别的名称。 请参阅以下示例。                            |
+
+### <a name="example"></a>示例
+
+| enrollmentFailureCategoryName   | 描述                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| 不适用                  | 注册失败类别不适用。                                                            |
+| 不可用                   | 注册失败类别不可用。                                                             |
+| Unknown                         | 未知错误。                                                                                                |
+| 身份验证                  | 身份验证失败。                                                                                        |
+| 授权                   | 调用已通过身份验证，但未得到注册授权。                                                         |
+| AccountValidation               | 未能验证注册帐户。 （已阻止帐户，未启用注册）                      |
+| UserValidation                  | 无法验证用户。 （用户不存在，缺少许可证）                                           |
+| DeviceNotSupported              | 移动设备管理不支持设备。                                                         |
+| InMaintenance                   | 帐户处于维护中。                                                                                    |
+| BadRequest                      | 客户端发送了服务不理解/不支持的请求。                                        |
+| FeatureNotSupported             | 此帐户不支持此注册所使用的功能。                                        |
+| EnrollmentRestrictionsEnforced  | 管理员配置的注册限制阻止了此注册。                                          |
+| ClientDisconnected              | 客户端超时或终端用户终止了注册。                                                        |
+| UserAbandonment                 | 终端用户放弃了注册。 （终端用户启动了加入，但未能及时完成）  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+EnrollmentFailureReason 实体表示特定失败类别中设备注册失败的详细原因。  
+
+| 属性                     | 描述                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | 数据仓库中注册失败原因的唯一标识符（代理键）  |
+| enrollmentFailureReasonName  | 注册失败原因的名称。 请参阅以下示例。                            |
+
+### <a name="example"></a>示例
+
+| enrollmentFailureReasonName      | 描述                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 不适用                   | 注册失败原因不适用。                                                                                                                                                       |
+| 不可用                    | 注册失败原因不可用。                                                                                                                                                        |
+| Unknown                          | 未知错误。                                                                                                                                                                                         |
+| UserNotLicensed                  | 未在 Intune 中找到用户或用户没有有效许可证。                                                                                                                                     |
+| UserUnknown                      | 用户对 Intune 未知。                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | 只有一位用户可以注册设备。 此设备之前已由另一位用户注册。                                                                                                                |
+| EnrollmentOnboardingIssue        | 尚未配置 Intune 移动设备管理 (MDM) 机构。                                                                                                                                 |
+| AppleChallengeIssue              | iOS 管理配置文件安装延迟或失败。                                                                                                                                         |
+| AppleOnboardingIssue             | 注册 Intune 需要 Apple MDM Push Certificate。                                                                                                                                       |
+| DeviceCap                        | 用户尝试注册的设备数超过最大允许数量。                                                                                                                                        |
+| AuthenticationRequirementNotMet  | Intune 注册服务未能对此请求进行授权。                                                                                                                                            |
+| UnsupportedDeviceType            | 此设备不满足 Intune 注册的最低要求。                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | 因已配置的注册限制规则而未能注册此设备。                                                                                                                          |
+| BulkDeviceNotPreregistered       | 未找到该设备的国际移动设备标识符 (IMEI) 或序列号。  没有此标识符的设备会识别为个人所有设备，目前此类设备受到阻止。  |
+| FeatureNotSupported              | 用户试图访问尚未面向所有客户发布的功能，或者试图访问与 Intune 配置不兼容的功能。                                                            |
+| UserAbandonment                  | 终端用户放弃了注册。 （终端用户启动了加入，但未能及时完成）                                                                                           |
+| APNSCertificateExpired           | 无法使用 Apple MDM Push Certificate 管理 Apple 设备。                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 intuneManagementExtension 列出每日在每台 Windows 10 设备上的 intuneManagementExtension 运行状况。 将保留过去 60 天内的数据。

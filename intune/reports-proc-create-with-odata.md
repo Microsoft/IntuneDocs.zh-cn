@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210714"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 从 OData 数据源创建报表
 
@@ -89,7 +89,7 @@ ms.locfileid: "54067442"
 
 树状图图表以框中框的形式显示分层数据。 每一层次结构分支都是一个框，其中包含显示子分支的更小的框。 可使用 Power BI Desktop 创建 Intune 数据树状图。
 
-![可视化效果 > 树状图](media/reports-create-03-treemap.png)
+![Power BI 树状图可视化效果](media/reports-create-03-treemap.png)
 
 1. 选择图表类型。 选择“树状图”。
 2. 在数据模型中，查找“设备”表。

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146733"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203308"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>通过 Windows 10 的“设置”应用将日志发送给公司支持人员
 
-如果在使用公司管理的 Windows 10 设备时遇到错误，可以通过电子邮件向公司支持人员发送信息，以帮助他们解决问题。 此信息保留在设备上一个名为_诊断日志_的专用文档中。
+使用“设置”应用对适用于 Windows 10 的公司门户进行故障排除。 如果在 Windows 10 设备上使用应用时遇到问题，可以向支持团队发送电子邮件寻求帮助。 公司门户应用中发生的事件和错误将保存在设备上一个名为“诊断日志”的特殊文档中。 它们可以包含关于错误的额外见解，并且在导出时对支持团队非常有用。
 
-1. 通过转到“开始菜单”并选择“设置”按钮，打开 Windows“设置”应用。 还可以在搜索栏中搜索“设置”。
+1. 若要打开“设置”应用，请转到“启动”菜单 >“设置”。 还可以在搜索栏中搜索“设置”。
 2. 转至“帐户” > “访问工作或学校”。
 3. 选择“导出管理日志文件”。
 

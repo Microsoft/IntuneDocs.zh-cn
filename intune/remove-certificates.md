@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,184 +14,184 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
-ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
+ms.openlocfilehash: f653cd8c7eb0181581d9c21b7f9bc35a008c6df6
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52579160"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122532"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中删除 SCEP 和 PKCS 证书
 
-在 Microsoft Intune 中，可以向设备添加 SCEP 和 PKCS 证书。 这些证书也可以在[擦除](devices-wipe.md#wipe)或[停用](devices-wipe.md#retire)设备时删除。 在某些其他情况下，证书将自动删除，而在某些情况下，证书将保留在设备上。
+在 Microsoft Intune 中，可以向设备添加简单证书注册协议 (SCEP) 和公钥加密标准 (PKCS) 证书。 这些证书也可以在[擦除](devices-wipe.md#wipe)或[停用](devices-wipe.md#retire)设备时删除。 
 
-本文列出了一些常见场景，以及它们对 PKCS 和 SCEP 证书的影响。
+在某些其他情况下，证书将自动删除，而在某些情况下，证书将保留在设备上。 本文列出了一些常见场景，以及它们对 PKCS 和 SCEP 证书的影响。
 
 > [!NOTE]
-> 若要为已从 Active Directory (AD) 或 Azure AD 中删除的用户删除和吊销证书，请务必按顺序执行以下步骤：
+> 若要为已从本地 Active Directory 或 Azure Active Directory (Azure AD) 中删除的用户删除和撤销证书，请按顺序执行以下步骤：
 >
->    1. 擦除或停用用户设备
->    2. 从 AD 或 Azure AD 中删除用户
+> 1. 擦除或停用用户设备。
+> 2. 从本地 Active Directory 或 Azure AD 删除用户。
 
 ## <a name="windows-devices"></a>Windows 设备
 
 #### <a name="scep-certificates"></a>SCEP 证书
 
-- 出现以下情况时，将吊销并删除 SCEP 证书：
+出现以下情况时，将吊销并删除 SCEP 证书：
 
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
-  - 从 Azure Active Directory (AD) 组中删除设备
-  - 从组分配中删除证书配置文件
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
+- 设备从 Azure AD 组中删除。
+- 证书配置文件从组分配中删除。
 
-- 出现以下情况时，将吊销 SCEP 证书：
-  - 管理员更改或更新 SCEP 配置文件
+出现以下情况时，将吊销 SCEP 证书：
+- 管理员更改或更新 SCEP 配置文件。
 
-- 出现以下情况时，将删除根证书：
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+出现以下情况时，将删除根证书：
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，SCEP 证书将保留在设备上（证书不会被吊销，也不会被删除）：
-  - 最终用户丢失 Intune 许可证
-  - 管理员撤销 Intune 许可证
-  - 管理员从 Azure AD 中删除用户或组
+出现以下情况时，SCEP 证书将保留在设备上（证书不会被撤销，也不会被删除）：
+- 用户丢失 Intune 许可证。
+- 管理员撤销 Intune 许可证。
+- 管理员从 Azure AD 中删除用户或组。
 
 #### <a name="pkcs-certificates"></a>PKCS 证书
 
-- 出现以下情况时，将吊销并删除 PKCS 证书：
+出现以下情况时，将吊销并删除 PKCS 证书：
 
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，将删除根证书：
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+出现以下情况时，将删除根证书：
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）：
-  - 最终用户丢失 Intune 许可证
-  - 管理员撤销 Intune 许可证
-  - 管理员从 Azure AD 中删除用户或组
-  - 管理员更改或更新 PKCS 配置文件
-  - 从组分配中删除证书配置文件
+出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）：
+- 用户丢失 Intune 许可证。
+- 管理员撤销 Intune 许可证。
+- 管理员从 Azure AD 中删除用户或组。
+- 管理员更改或更新 PKCS 配置文件。
+- 证书配置文件从组分配中删除。
 
 
 ## <a name="ios-devices"></a>iOS 设备
 
 #### <a name="scep-certificates"></a>SCEP 证书
 
-- 出现以下情况时，将吊销并删除 SCEP 证书：
+出现以下情况时，将吊销并删除 SCEP 证书：
 
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
-  - 从 Azure Active Directory (AD) 组中删除设备
-  - 从组分配中删除证书配置文件
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
+- 设备从 Azure AD 组中删除。
+- 证书配置文件从组分配中删除。
 
-- 出现以下情况时，将吊销 SCEP 证书：
-  - 管理员更改或更新 SCEP 配置文件
+出现以下情况时，将吊销 SCEP 证书：
+- 管理员更改或更新 SCEP 配置文件。
 
-- 出现以下情况时，将删除根证书：
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+出现以下情况时，将删除根证书：
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，SCEP 证书将保留在设备上（证书不会被吊销，也不会被删除）：
-  - 最终用户丢失 Intune 许可证
-  - 管理员撤销 Intune 许可证
-  - 管理员从 Azure AD 中删除用户或组
+出现以下情况时，SCEP 证书将保留在设备上（证书不会被撤销，也不会被删除）：
+- 用户丢失 Intune 许可证。
+- 管理员撤销 Intune 许可证。
+- 管理员从 Azure AD 中删除用户或组。
 
 #### <a name="pkcs-certificates"></a>PKCS 证书
 
-- 出现以下情况时，将吊销并删除 PKCS 证书：
+出现以下情况时，将吊销并删除 PKCS 证书：
 
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，将删除 PKCS 证书：
-  - 从组分配中删除证书配置文件
+出现以下情况时，将删除 PKCS 证书：
+- 证书配置文件从组分配中删除。
   
-- 出现以下情况时，将删除根证书：
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+出现以下情况时，将删除根证书：
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）：
-  - 最终用户丢失 Intune 许可证
-  - 管理员撤销 Intune 许可证
-  - 管理员从 Azure AD 中删除用户或组
-  - 管理员更改或更新 PKCS 配置文件
+出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）：
+- 用户丢失 Intune 许可证。
+- 管理员撤销 Intune 许可证。
+- 管理员从 Azure AD 中删除用户或组。
+- 管理员更改或更新 PKCS 配置文件。
 
 ## <a name="android-knox-devices"></a>Android KNOX 设备
 
 #### <a name="scep-certificates"></a>SCEP 证书
 
-- 出现以下情况时，将吊销并删除 SCEP 证书：
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
+出现以下情况时，将吊销并删除 SCEP 证书：
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
 
-- 出现以下情况时，将吊销 SCEP 证书：
-  - 管理员运行[停用](devices-wipe.md#retire)操作
-  - 从 Azure Active Directory (AD) 组中删除设备
-  - 从组分配中删除证书配置文件
-  - 管理员从 Azure Active Directory (AD) 中删除用户或组
-  - 管理员更改或更新 SCEP 配置文件
+出现以下情况时，将吊销 SCEP 证书：
+- 管理员运行[停用](devices-wipe.md#retire)操作。
+- 设备从 Azure AD 组中删除。
+- 证书配置文件从组分配中删除。
+- 管理员从 Azure AD 中删除用户或组。
+- 管理员更改或更新 SCEP 配置文件。
 
-- 出现以下情况时，将删除根证书：
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+出现以下情况时，将删除根证书：
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，SCEP 证书将保留在设备上（证书不会被吊销，也不会被删除）：
-  - 最终用户丢失 Intune 许可证
-  - 管理员撤销 Intune 许可证
-  - 管理员从 Azure AD 中删除用户或组
+出现以下情况时，SCEP 证书将保留在设备上（证书不会被撤销，也不会被删除）：
+- 用户丢失 Intune 许可证。
+- 管理员撤销 Intune 许可证。
+- 管理员从 Azure AD 中删除用户或组。
 
 #### <a name="pkcs-certificates"></a>PKCS 证书
 
-- 出现以下情况时，将吊销并删除 PKCS 证书：
+出现以下情况时，将吊销并删除 PKCS 证书：
 
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，将删除根证书：
-  - 最终用户取消注册
-  - 管理员运行[擦除](devices-wipe.md#wipe)操作
-  - 管理员运行[停用](devices-wipe.md#retire)操作
+出现以下情况时，将删除根证书：
+- 用户取消注册。
+- 管理员运行[擦除](devices-wipe.md#wipe)操作。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
 
-- 出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）：
-  - 最终用户丢失 Intune 许可证
-  - 管理员撤销 Intune 许可证
-  - 管理员从 Azure AD 中删除用户或组
-  - 管理员更改或更新 PKCS 配置文件
-  - 从组分配中删除证书配置文件
+出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）：
+- 用户丢失 Intune 许可证。
+- 管理员撤销 Intune 许可证。
+- 管理员从 Azure AD 中删除用户或组。
+- 管理员更改或更新 PKCS 配置文件。
+- 证书配置文件从组分配中删除。
   
   
 > [!NOTE]
-> Android for Work 设备未针对上述情形进行验证。 Android 旧版设备（任何非 Samsun、非工作配置文件设备）未启用证书删除功能。 
+> Android for Work 设备未针对上述情形进行验证。 Android 旧设备（任何非 Samsung、非工作配置文件设备）未启用证书删除功能。 
 
 ## <a name="macos-certificates"></a>macOS 证书
 
 #### <a name="scep-certificates"></a>SCEP 证书
 
-- 出现以下情况时，将吊销并删除 SCEP 证书：
-  - 最终用户取消注册
-  - 管理员运行[停用](devices-wipe.md#retire)操作
-  - 从 Azure Active Directory (AD) 组中删除设备
-  - 从组分配中删除证书配置文件
+出现以下情况时，将吊销并删除 SCEP 证书：
+- 用户取消注册。
+- 管理员运行[停用](devices-wipe.md#retire)操作。
+- 设备从 Azure AD 组中删除。
+- 证书配置文件从组分配中删除。
 
-- 出现以下情况时，将吊销 SCEP 证书：
-  - 管理员更改或更新 SCEP 配置文件
+出现以下情况时，将吊销 SCEP 证书：
+- 管理员更改或更新 SCEP 配置文件。
 
-- 出现以下情况时，SCEP 证书将保留在设备上（证书不会被吊销，也不会被删除）：
-  - 最终用户丢失 Intune 许可证
-  - 管理员撤销 Intune 许可证
-  - 管理员从 Azure AD 中删除用户或组
+出现以下情况时，SCEP 证书将保留在设备上（证书不会被撤销，也不会被删除）：
+- 用户丢失 Intune 许可证。
+- 管理员撤销 Intune 许可证。
+- 管理员从 Azure AD 中删除用户或组。
 
 > [!NOTE]
 > 不支持使用[擦除](devices-wipe.md#wipe)操作将 macOS 设备恢复出厂设置。

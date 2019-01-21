@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210731"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手动添加 Windows 10 公司门户应用
 
@@ -47,7 +47,7 @@ ms.locfileid: "53642585"
 5. 对于“平台”，选择“Windows 10 所有设备”，然后选择适合的“最低版本”、“体系结构”和“下载应用元数据”值。 
 6. 选择“下载”，将文件保存到本地计算机。
 
-    ![针对“下载”选择的“Windows 10 所有设备”和体系结构 X86 包详细信息](./media/Win10CP-all-devices.png)
+    ![会选择体系结构为 X86 的 Windows 10 设备](./media/Win10CP-all-devices.png)
 
 7. 选择“下载”以下载“所需框架”下的所有包。  
     必须为 x86、x64 和 ARM 体系结构完成此操作 – 共生成 12 个包。
