@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147496"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203257"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>在 iOS 设备上使用托管应用
 
@@ -34,7 +34,7 @@ ms.locfileid: "43147496"
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>如何获取托管应用？
+## <a name="how-do-i-get-managed-apps"></a>如何获取托管应用？  
 你可通过以下几种不同的方式获取托管应用：
 
 -   如果已在 Microsoft Intune 中注册设备，则你可以从公司门户应用或公司门户网站安装应用，或者可由公司支持人员将其安装到你的设备。 若要了解相关注册信息，请参阅[在 Intune 中注册 iOS 设备](enroll-your-device-in-intune-ios.md)或[在 Intune 中注册 macOS 设备](enroll-your-device-in-intune-macos.md)。
@@ -43,7 +43,16 @@ ms.locfileid: "43147496"
 
 公司支持人员有时可能会为你安装的应用购买多个许可证。 如果你看到一条消息，要求你接受 Apple Volume Purchase Program 协议，这是正常现象，可以接受该协议。 如果不接受，你将无法安装该应用。
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>我的公司支持人员可管理应用中的哪些内容？
+## <a name="available-apps"></a>可用应用   
+ 贵组织会选择适合在工作中或学校里使用的应用。 这些应用是在公司门户中仅能找到的应用。   
+
+ 也可以根据设备类型使用应用。 例如，如果使用适用于 iOS 的公司门户应用，则可以访问 iOS 应用，但不能访问 Android 应用。   
+
+## <a name="request-an-app-for-work-or-school"></a>请求用于工作或用于学校的应用   
+ 如果未在公司门户中找到需要的应用，则可以请求该应用。 在公司门户应用的“支持”选项卡中查找“支持人员”的联系人详细信息。可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>我的公司支持人员可管理应用中的哪些内容？  
 以下是公司支持人员可在应用中管理的一些选项示例，它们可影响用户在其设备上与公司数据的交互：
 
 -   对特定网站的访问

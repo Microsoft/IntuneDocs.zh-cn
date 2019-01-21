@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959496"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203495"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 配置托管应用，以满足组织的安全要求，并保护工作和学校数据。 这些应用面向设备提供，以供自动安装和使用。 
@@ -56,7 +56,15 @@ ms.locfileid: "49959496"
 * 组织在公司门户中提供托管应用。 转到“公司门户”应用或网站，搜索、查看和安装这些应用。 
 * 从 Google Play 商店安装应用，然后使用工作或学校帐户登录应用。  
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>我的公司支持人员可管理应用中的哪些内容？
+ ## <a name="available-apps"></a>可用应用   
+ 贵组织会选择适合在工作中或学校里使用的应用。 这些应用是在公司门户中仅能找到的应用。   
+
+ 也可以根据设备类型使用应用。 例如，如果使用适用于 Android 的公司门户应用，则可以访问 Android 应用，但不能访问 iOS 应用。   
+
+ ## <a name="request-an-app-for-work-or-school"></a>请求用于工作或用于学校的应用   
+ 如果未在公司门户中找到需要的应用，则可以请求该应用。 在公司门户应用的“联系 IT”选项卡中查找“支持人员”的联系详情。可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>我的公司支持人员可管理应用中的哪些内容？  
 以下列表描述公司支持人员可以在应用内管理的设置。 这些设置将影响查看、访问或使用设备上工作或学校数据的方式：
 
 * 对特定网站的访问  

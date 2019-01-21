@@ -1,11 +1,11 @@
 ---
 title: 从适用于 Windows 的 Intune 公司门户应用安装应用
-description: 了解如何从适用于 Windows 的公司门户应用安装和共享应用
+description: 从适用于 Windows 的公司门户应用安装和共享应用
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863087"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203223"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>在设备上安装和共享应用
 在设备上从适用于 Windows 的公司门户应用安装应用
@@ -35,10 +35,10 @@ ms.locfileid: "48863087"
 2. 查找并从公司门户应用的以下任意部分安装应用：  
 
     * **主页**：从列表中选择组织特别推荐的应用。  
-    * **显示所有**：在“主页” > “应用”部分，单击“显示所有”以查看所有可用的应用。  
-    * **所有应用**：在导航窗格中选择此页，查看所有可用的应用，包括已安装和特别推荐的应用。  
+    * **显示全部**：在“主页” > “应用”部分，单击“显示全部”以查看所有可用的应用。  
+    * **所有应用**：在导航窗格中选择此页，查看所有可用的应用，包括已安装的和特别推荐的应用。  
     * **搜索应用**：静态搜索栏位于应用的导航窗格中。  若要查找可用的应用，请按应用名称或发布服务器搜索。  
-    * “所有应用”：查看、排序和筛选所有可用的应用。 搜索结果按相关性自动排序。  
+    * **所有应用**：查看、排序和筛选所有可用的应用。 搜索结果按相关性自动排序。  
 
 3. 选择一个应用。   
 4. 在应用详细信息页面上，单击“安装”。 安装完成后，可看到“已安装”状态。  
@@ -63,4 +63,16 @@ ms.locfileid: "48863087"
 
 共享后，收件人将收到查看应用详细信息的链接和消息。 该链接会打开公司门户的“应用详细信息”页。 
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+## <a name="available-apps"></a>可用应用  
+
+贵组织会选择适合在工作中或学校里使用的应用。 这些应用是在公司门户中仅能找到的应用。  
+
+也可以根据设备类型使用应用。 例如，如果使用适用于 Windows 的公司门户应用，则可以访问 Windows 应用，但不能访问 iOS 应用。  
+
+## <a name="request-an-app-for-work-or-school"></a>请求用于工作或用于学校的应用  
+如果未在公司门户中找到需要的应用，请请求该应用。 在公司门户应用的“支持和帮助”页面中查找“帮助台”的联系人详细信息。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。    
+
+  ![适用于 Windows 10 的公司门户应用的“帮助和支持”页面，突出显示了帮助台详细信息。 ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

@@ -3,10 +3,10 @@ title: 如何监视应用保护策略
 titleSuffix: Microsoft Intune
 description: 在 Intune 中监视移动应用管理策略的符合性状态。
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816834"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297292"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ ms.locfileid: "53816834"
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3. 在“Intune”窗格中，选择“客户端应用”。
-4. 在“客户端应用”工作负荷中，选择“监视” > “应用保护状态”，查看摘要视图：
+4. 在“客户端应用”工作负荷中，选择“监视”部分的“应用保护状态”，查看摘要视图：
 
 ![“Intune 移动应用程序管理”窗格上的“摘要”磁贴](./media/app-protection-user-status-summary.png)
 
--   **用户**：公司中正在工作环境中使用与该策略相关联的应用的用户总数。
+-   **分配的用户**：贵公司中使用与工作环境中策略相关的应用且受保护和获许可的分配用户，以及未受保护和未获得许可的分配用户的总数。
+-   **已标记用户**：遇到问题的用户数。 将越狱设备报告在“已标记用户”下。
+-   “iOS 用户状态”和“Android 用户状态”：已在相关平台的工作环境中使用某应用且已分配到策略的用户数。 此信息显示策略托管的用户数量，以及正在工作环境中使用任何策略均不以其为目标的应用的用户数。 可以考虑将这些用户添加到策略。
 
--   **由策略管理**：已在工作环境中使用某应用且已分配到策略的用户数。
-
--   **无策略**：正在工作环境中使用任何策略均不以其为目标的应用的用户数。 可以考虑将这些用户添加到策略。
     > [!NOTE]
     > 如果每个平台有多个策略且已至少为某个用户分配了一个策略，则该用户被视为由策略管理。
-
-- **已标记用户**：遇到问题的用户数。 目前仅将具有已越狱设备的用户报告在“已标记用户”下。
-
 
 ## <a name="detailed-view"></a>详细视图
 可以通过选择“用户状态”磁贴（基于设备操作系统平台）和“已标记用户”磁贴转到摘要的详细视图。
@@ -79,7 +75,7 @@ ms.locfileid: "53816834"
 
 若要查看用户的报告，请按照这些步骤进行操作：
 
-1.  若要选择用户，请选择“摘要”磁贴。
+1.  若要选择用户，请选择“用户状态”摘要磁贴。
 
     ![Intune 移动应用管理的“摘要”磁贴的屏幕截图](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ ms.locfileid: "53816834"
 
 ## <a name="reporting-view"></a>报表视图
 
-可从详细视图中找到相同报表，还可通过其他报表了解 MAM 策略的合规性状态：
+可以在“应用保护状态”边栏选项卡中找到相同报告。
 
-![突出显示“设置”窗格中 2 个可用报表的屏幕截图](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Intune 提供其他设备报告字段，包括 Android 注册 ID、Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，通过选择“客户端应用” > “应用保护状态”并选择“应用保护报告: iOS、Android”来获取这些字段。 此外，这些参数将帮助你配置设备制造商“允许”列表 (Android)、设备型号的“允许”列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。 
 
--   **应用保护用户报表：** 概述了可在以上“详细视图”部分下的“用户状态”报表中找到的相同信息。
+其他报表也可以帮助了解 MAM 策略符合性状态。 若要查看这些报表，请选择“客户端应用” > “应用保护状态” > “报表”。 
 
--   **应用保护应用报表：** 提供了生成报表前，管理员可选择的两种不同应用保护状态。 状态可以为受保护，也可以为不受保护。
+“报表”边栏选项卡根据用户和应用提供多个报表，包括以下内容：
+
+
+-   **用户报表**：此报表概述了可在以上“详细视图”部分下的“用户状态”报表中找到的相同信息。
+
+-   **应用报表**：此报表提供了生成报表前，管理员可选择的两种不同应用保护状态。 状态可以为受保护，也可以为不受保护。
 
     -   托管 MAM 活动的用户状态（受保护）：此报表概述了每个用户的每个托管 MAM 应用的活动。
 
         -   它显示了每个用户的 MAM 策略所面向的所有应用，并通过 MAM 策略将每个应用的状态细分为“已签入”，或者显示以 MAM 策略为目标但应用从未签入的应用。
-<br></br>
+<br><br>
     -   非托管 MAM 活动的用户状态（不受保护）：此报表概述了每个用户目前已启用 MAM 的非托管应用的活动。 发生这种情况的原因如下：
 
         -   用户正在使用这些应用，或者这些应用是 MAM 策略目前未针对的应用。
