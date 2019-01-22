@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324899"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316910"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -147,39 +147,6 @@ Android 要求所有应用都必须由有效证书进行签名才能安装在 An
 -   确保应用程序来源可信。
 
 -   确保包含已包装应用的输出目录的安全。 考虑为输出使用用户级目录。
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>需要用户登录提示以自动注册 APP-WE 服务，需要 Intune 应用保护策略以使用已包装的 Android LOB 应用，以及启用 ADAL SSO（可选）
-
-以下指南面向：需要在应用启动时出现用户提示以自动注册 APP-WE 服务（本节中称为“默认注册”）；需要 Intune 应用保护策略以仅允许受 Intune 保护的用户使用你的已包装的 Android LOB 应用。 指南中还说明如何为已包装的 Android LOB 应用启用 SSO。 
-
-> [!NOTE] 
-> “默认注册”提供一个为设备上的应用从 APP-WE 服务获取策略的简便方法。
-
-### <a name="general-requirements"></a>一般要求
-* Intune SDK 团队需要应用的应用程序 ID。 可按此方式找到此内容：在 [Azure 门户](https://portal.azure.com/)中的“所有应用程序”下，找到“应用程序 ID”列。 建议通过电子邮件 msintuneappsdk@microsoft.com 联系 Intune SDK 团队。
-     
-### <a name="working-with-the-intune-sdk"></a>使用 Intune SDK
-以下说明专门面向最终用户设备上要求使用 Intune 应用保护策略的所有 Android 和 Xamarin 应用。
-
-1. 使用 [Intune SDK for Android 指南](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)中定义的步骤配置 ADAL。
-
-> [!NOTE]
-> 与应用关联的“客户端 ID”一词与 Azure 门户中与应用关联的“应用程序 ID”一词的含义相同。 
-> * 启用 SSO 需要“通用 ADAL 配置”#2。
-
-2. 通过将以下值放入清单来启用默认注册：
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则可能发生冲突。
-
-3. 通过将以下值放入清单来启用所需的 MAM 策略：
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
 
 ### <a name="see-also"></a>另请参阅
 - [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)
