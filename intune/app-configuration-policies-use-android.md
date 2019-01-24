@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179943"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386969"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>为受管理的 Android 设备添加应用配置策略
 
@@ -62,13 +62,17 @@ ms.locfileid: "52179943"
 ### <a name="supported-variables-for-configuration-values"></a>可用作配置值的变量
 
 如果选择变量作为值类型，有以下选项可供选择：
-- 用户主体名称 - 例如 John@contoso.com
-- 邮件 - 例如 John@contoso.com
-- Partian UPN - 例如 John
-- 帐户 ID - 例如 fc0dc142-71d8-4b12-bbea-bae2a8514c81
-- 设备 ID - 例如 b9841cd9-9843-405f-be28-b2265c59ef97
-- 用户 ID -例如 3ec2c00f-b125-4519-acf0-302ac3761822
-- 用户名称 - 例如 John Doe
+
+| 选项 | 示例 |
+|----|----|
+| Mail | john@contoso.com |
+| 用户主体名称 | john@contoso.com |
+| 部分 UPN | john |
+| Domain | contoso.com |
+| 用户名 | John Doe |
+| 帐户 ID | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| 用户 ID | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| 设备 ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>仅允许在多身份应用中配置组织帐户 
 

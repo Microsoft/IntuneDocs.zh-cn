@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce7b6020c9212a0379915e00e361853e2eb3259
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c7e9fe1b0b54d020c3b3a4368922d570c64ae8ee
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184108"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325026"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune 中的数据安全性和数据共享
 
@@ -63,7 +63,7 @@ Intune 还使用 RBAC 和 JiT 等技术保护支持事件，以确保在默认�
 - [Intune 向 Google 发送的数据](data-intune-sends-to-google.md)
 - [Apple 发送到 Intune 的数据](data-apple-sends-to-intune.md)
 - [Google 发送到 Intune 的数据](data-google-sends-to-intune.md)
-- [从 Jamf Pro 共享到 Intune 的信息](conditional-access-integrate-jamf.md#information-shared-from-jamf-pro-to-intune)
+- [Jamf Pro 向 Intune 发送的数据](data-jamf-sends-to-intune.md)
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager数据共享
 

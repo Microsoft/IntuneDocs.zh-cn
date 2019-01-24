@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182392"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418170"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -55,7 +55,8 @@ ms.locfileid: "52182392"
 
 ## <a name="reset-a-passcode"></a>重置密码
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
+
+1. 使用以下任一角色登录 [Azure 门户](https://portal.azure.com)：Azure Active Directory 全局管理员、Azure Active Directory Intune 服务管理员、支持人员或角色管理员。 有关角色和权限的完整列表，请参阅 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)。
 2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 3. 依次选择“设备”和“所有设备”。
 4. 从你管理的设备列表中，选择一个设备，然后选择“...更多”。 然后选择“删除密码”设备远程操作。

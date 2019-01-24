@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0efc84da6a9efb594600b9ca33aa5eb7622c8101
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d1b553d262200e58a4c06dd0f4bcb72ca1398080
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203427"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386971"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Microsoft Intune 的早期版本 - 2019 年 1 月
 
@@ -48,9 +48,6 @@ ms.locfileid: "54203427"
 
 ### <a name="managed-google-play-app-type----1352580---"></a>托管的 Google Play 应用类型 <!-- 1352580 -->
 “托管的 Google Play”应用类型让你可以专门将[托管的 Google Play 应用](https://play.google.com/work/search?q=microsoft&c=apps)添加到 Intune。 Intune 管理员现在可以在 Intune 中浏览、搜索、批准、同步和分配已批准的托管的 Google Play 应用。 无需单独浏览到托管的 Google Play 控制台，也无需重新进行身份验证。 在 Intune 中，选择“客户端应用” > “应用” > “添加”。 在“应用类型”列表中，将应用类型选择为“托管的 Google Play”。
-
-### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>对 Android 公司拥有的完全托管设备的支持（预览版）<!-- 1574342  -->
-Intune 将支持完全托管的 Android 设备，这是公司拥有的“设备所有者”方案，其中设备由 IT 管理员紧密管理并与各个用户关联。 这样，管理员便可以管理整个设备、强制扩展不可用于工作配置文件的策略控制的范围并限制用户仅从托管的 Google Play 安装应用。 要设置完全托管的 Android 设备，请转到“设备注册” > “Android 注册” > “公司拥有的完全托管的用户设备”。 请注意，此功能处于预览状态。 Android 完全托管的用户设备目前无法使用部分 Intune 功能，例如证书、符合性以及条件访问。
 
 ### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>部署获得许可的适用于企业的 Microsoft Store 联机应用 <!-- 1672660  -->
 你将能够在设备上下文中分配所需的适用于企业的 Microsoft Store 联机应用，这些应用已获得许可。 如果以这种方式部署适用于企业的 Microsoft Store 应用，则可在设备上为所有用户安装该应用。 这仅适用于 Windows 10 RS4+ 桌面版设备。 对于获得许可的适用于企业的 Microsoft Store 联机应用，可在客户端应用分配页面中选择安装在设备上下文中。
@@ -130,9 +127,8 @@ Intune macOS 公司门户现在支持 macOS 的深色模式。 如果在 macOS 1
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>将 Microsoft 推荐的设置与安全基线结合使用 <!-- 2055484 -->
 Intune 可与其他专注于安全性的服务集成，包括 Windows Defender ATP 和 Office 365 ATP。 客户要求能在各项 Microsoft 365 服务中采用通用策略和一组统一的端到端安全工作流。 我们的目标是实现策略一致，构建连接安全操作和常见管理员任务的解决方案。 在 Intune 中，我们旨在通过发布一组 Microsoft 推荐的“安全基线”（“Intune” > “安全基线”）来实现这一目标。  管理员将能够直接通过这些基线创建安全策略，然后将其部署到用户。 他们还可以自定义最佳做法建议，满足组织需求。 Intune 可确保设备始终符合这些基线，并通知不符合的用户管理员或设备。
 
-### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>无需用户注册，即可部署 WIP 政策 <!-- 1434452 -->
-无需要求 MDM 用户注册其 Windows 10 设备，即可部署Windows 信息保护 (WIP) 策略。 此配置允许公司基于 WIP 配置保护其企业文档，同时允许用户管理自己的 Windows 设备。 使用 WIP 策略保护文档后，Intune 管理员可以选择性擦除受保护的数据。 通过选择用户和设备，并发送擦除请求，所有通过 WIP 策略保护的数据都将不可用。 从 Azure 门户中的 Intune，选择“移动应用” > “应用选择性擦除”。
-
+### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>对未注册的 WIP 设备的选择性擦除支持 <!-- 1434452 -->
+未注册的 Windows 信息保护 (WIP-WE) 允许客户保护其在 Windows 10 设备上的公司数据，而不需要完整的 MDM 注册。 使用 WIP-WE 策略保护文档后，Intune 管理员可以选择性擦除受保护的数据。 通过选择用户和设备，并发送擦除请求，所有通过 WIP-WE 策略保护的数据都将不可用。 从 Azure 门户中的 Intune，选择“移动应用” > “应用选择性擦除”。
 
 <!-- 1809 start -->  
 

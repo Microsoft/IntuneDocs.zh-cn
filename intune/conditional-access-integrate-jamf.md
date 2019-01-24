@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/12/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
-ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
+ms.openlocfilehash: 971dc851714045a8a3b60dfe8ff6c6acc4419294
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270582"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325009"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -83,51 +83,9 @@ ms.locfileid: "54270582"
 
 配置 Intune 和 Jamf 之间的集成后，需要[将符合性策略应用到 Jamf 托管的设备](conditional-access-assign-jamf.md)。
 
-## <a name="information-shared-from-jamf-pro-to-intune"></a>从 Jamf Pro 共享到 Intune 的信息
 
-Jamf Pro 捕获有关托管的 macOS 设备的清单信息。 Jamf Pro 向 Intune 报告以下信息：
-
-* 设备 Azure AD ID
-* JAMF 清单状态（Jamf Pro 在过去 24 小时内签入的计算机的清单状态）
-* 操作系统版本
-* 用户 Azure AD ID
-* 已加密（FileVault 2）
-* 网关守卫状态
-* 密码：最小字符集数
-* 密码过期(天)
-* 密码类型 - 简单、字母数字字符或未知
-* 防止自动登录
-* 所需的密码长度
-* 密码：阻止重用的曾用密码数
-* 系统完整性保护
-* 上次签入时间
-* 体系结构类型
-* 可用的 RAM 槽
-* 电池容量
-* 启动 ROM
-* 总线速度
-* 缓存大小
-* 设备名称
-* 域加入
-* Jamf ID
-* MAC 地址
-* 品牌
-* 型号
-* 模型标识符
-* NIC 速度
-* 内核数量
-* 处理器数目
-* 操作系统
-* 平台
-* 处理器速度
-* 处理器类型
-* 辅助 MAC 地址
-* 序列号
-* SMC 版本
-* RAM 总量
-* UDID
-* 用户电子邮件
 
 ## <a name="next-steps"></a>后续步骤
 
 - [将符合性策略应用到 Jamf 管理的设备](conditional-access-assign-jamf.md)
+- [Jamf 向 Intune 发送的数据](data-jamf-sends-to-intune.md)

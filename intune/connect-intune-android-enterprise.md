@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c32effb645b329c8095ec8757a980b1f3d80a4d7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 698bc4e7e2d2cf8ece1b1c17b091a91c76a7d178
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184280"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386894"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>将 Intune 帐户连接到 Android 企业帐户
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-要支持 Android 工作配置文件设备和 Android 展台设备，必须将 Intune 租户帐户连接到 Android 企业帐户。 
+要支持 [Android 工作配置文件](android-work-profile-enroll.md)、[Android 完全托管](android-fully-managed-enroll.md)和 [Android 专用设备](android-kiosk-enroll.md)，必须将 Intune 租户帐户连接到 Android 企业帐户。  
 
 > [!NOTE]
 > 因为 Google 和 Microsoft 域之间的交互，此步骤可能需要你调整浏览器设置。  请确保“portal.azure.com”和“play.google.com”在浏览器中位于同一安全区域。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032021"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316876"
 ---
 # <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>用于在 Intune 中配置电子邮件、身份验证和同步的 Android 和 Android Enterprise 设备设置
 
@@ -29,7 +29,7 @@ Intune 管理员可以为以下 Android 设备创建并分配电子邮件设置�
 - Android Samsung Knox Standard
 - Android Enterprise
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建设备配置配置文件](email-settings-configure.md)。
 
@@ -69,7 +69,9 @@ Intune 管理员可以为以下 Android 设备创建并分配电子邮件设置�
 
 ### <a name="content-sync-settings"></a>内容同步设置
 
-- **要同步的内容类型**：选择要从以下项同步到设备的内容类型：
+- **要同步的内容类型**：请选择想要同步到设备的内容类型。 “未配置”会禁用此设置。 设置为“未配置”时，如果最终用户在设备上启用同步，则当设备与 Intune 同步时，将再次禁用同步，因为策略已得到加强。 
+
+  可以同步以下内容： 
   - **联系人**
   - **日历**
   - **任务**
@@ -84,7 +86,9 @@ Intune 管理员可以为以下 Android 设备创建并分配电子邮件设置�
   - 如果已选择“证书”，请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。
 - **SSL**：发送电子邮件、接收电子邮件以及与 Exchange Server 通信时，请使用安全套接字层 (SSL) 通信。
 - **要同步的电子邮件数**：选择要同步多少天的电子邮件，或选择“无限制”同步所有可用电子邮件。
-- **要同步的内容类型**（仅限 Nine Work）：选择要从以下项同步到设备的内容类型：
+- **要同步的内容类型**（仅限 Nine Work）：请选择想要同步到设备的内容类型。 “未配置”会禁用此设置。 设置为“未配置”时，如果最终用户在设备上启用同步，则当设备与 Intune 同步时，将再次禁用同步，因为策略已得到加强。 
+
+  可以同步以下内容： 
   - **联系人**
   - **日历**
   - **任务**

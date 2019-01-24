@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149655"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380469"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot（预览版）部署已加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置已加入混合 Azure Active Directory 的设备。 为此，请执行以下步骤。
@@ -116,6 +116,9 @@ ms.locfileid: "54149655"
 6. 选择“登录”。
 7. 输入用户全局管理员或 Intune 管理员角色凭据。
 8. 转到“设备注册” > “Windows 注册” > “适用于 Active Directory 的 Intune Connector (预览版)”并确认连接状态为“活动”。
+
+ > [!NOTE]
+ > 在连接器中登录后，可能需要几分钟才能显示在 [Intune](https://aka.ms/intuneportal) 中。 请注意，连接器将仅显示是否可以与 Intune 服务成功通信。
 
 ### <a name="configure-web-proxy-settings"></a>配置 Web 代理设置
 

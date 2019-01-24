@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: ''
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: 1866d658503cb2dcdf482a050d7bbd73a914858b
+ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122632"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54400018"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用“擦除”或“停用”操作删除设备，或手动取消注册设备
 
@@ -81,22 +81,20 @@ ms.locfileid: "54122632"
 
 |数据类型|iOS|
 |-------------|-------|
-|Intune 安装的公司应用和关联数据|**使用公司门户安装的应用：** 删除所有应用数据和应用。 这些应用包括最初从应用商店安装且后来作为公司应用管理的应用。 <br /><br /> **使用移动应用管理并从应用商店安装的 Microsoft 应用：** 删除公司应用数据。 不会删除个人应用数据和应用。|
+|Intune 安装的公司应用和关联数据|**使用公司门户安装的应用：** 对于固定到管理配置文件的应用，将删除所有应用数据和应用。 这些应用包括最初从应用商店安装且后来作为公司应用管理的应用。 <br /><br /> **使用移动应用管理并从应用商店安装的 Microsoft 应用：** 对于非公司门户托管的应用，将删除受应用本地存储中的移动应用程序管理 (MAM) 加密保护的公司应用数据。 受应用外部的 MAM 加密保护的数据仍然是加密且不可用的，但不会删除。 不会删除个人应用数据和应用。|
 |设置|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|
 |Wi-Fi 和 VPN 配置文件设置|删除。|
 |证书配置文件设置|已删除并吊销证书。|
 |管理代理|删除管理配置文件。|
 |Email|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
-|Outlook|删除适用于 iOS 的 Microsoft Outlook 应用接收到的电子邮件。 进行此操作之前，需先将 Outlook 移动应用部署为 iOS 用户的必需应用。|
 |Azure AD 脱离|删除 Azure AD 记录。|
-|联系人 |删除从应用直接同步到本机通讯簿的联系人。 无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
 
 ### <a name="android"></a>Android
 
 |数据类型|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web 链接|删除。|删除。|
-|非托管的 Google Play 应用|保留已安装的应用和数据。|保留已安装的应用和数据。|
+|非托管的 Google Play 应用|保留已安装的应用和数据。 <br /> <br />删除受应用本地存储中的移动应用管理 (MAM) 加密保护的公司应用数据。 受应用外部的 MAM 加密保护的数据仍然是加密且不可用的，但不会删除。 |保留已安装的应用和数据。 <br /> <br />删除受应用本地存储中的移动应用管理 (MAM) 加密保护的公司应用数据。 受应用外部的 MAM 加密保护的数据仍然是加密且不可用的，但不会删除。|
 |非托管的业务线应用|保留已安装的应用和数据。|已卸载应用并删除了应用的本地数据。 未删除应用外的数据（例如 SD 卡上的数据）。|
 |托管的 Google Play 应用|删除应用数据。 应用不会删除。 应用（例如 SD 卡）外由移动应用程序管理 (MAM) 加密保护的数据仍然进行加密处理且不可用，但不删除。|删除应用数据。 应用不会删除。 应用（例如 SD 卡）外由 MAM 加密保护的数据仍然进行加密处理，但不删除。|
 |托管的业务线应用|删除应用数据。 应用不会删除。 应用（例如 SD 卡）外由 MAM 加密保护的数据仍然进行加密处理且不可用，但不删除。|删除应用数据。 应用不会删除。 应用（例如 SD 卡）外由 MAM 加密保护的数据仍然进行加密处理且不可用，但不删除。|
@@ -105,9 +103,7 @@ ms.locfileid: "54122632"
 |证书配置文件设置|已撤销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
 |Email|N/A（Android 设备不支持电子邮件配置文件）|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
-|Outlook|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Outlook 应用接收的电子邮件。 否则，取消注册设备时不会擦除 Outlook。|仅当 Outlook 由 MAM 策略保护时，才会删除 Android 版 Outlook 应用接收的电子邮件。 否则，取消注册设备时不会擦除 Outlook。|
 |Azure AD 脱离|删除 Azure AD 记录。|删除 Azure AD 记录。|
-|联系人 |删除从应用直接同步到本机通讯簿的联系人。 无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。|删除从应用直接同步到本机通讯簿的联系人。 无法删除从本机通讯簿同步到另一个外部源中的任何联系人。 <br /> <br />目前仅支持 Outlook 应用。
 
 ### <a name="android-work-profile"></a>Android 工作配置文件
 
