@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: cdac4623c6c5c9e7258897e1536856e6b24492ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 8479e69d661b163778a4d0b4eb1f68e729436f4e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831490"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows Holographic for Business 设备设置
 
@@ -26,9 +26,9 @@ ms.locfileid: "53032004"
 
 本文列出并介绍了可以在 Windows Holographic for Business 设备（如 Microsoft Hololens）上控制的各种设置。 在移动设备管理 (MDM) 解决方案中，使用这些设置可允许或禁用功能、控制安全等。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
-[创建设备配置配置文件](device-restrictions-configure.md)。
+[创建设备配置配置文件](device-restrictions-configure.md#create-the-profile)。
 
 ## <a name="general"></a>常规
 
@@ -51,7 +51,7 @@ ms.locfileid: "53032004"
 
 - **Cookie**：允许浏览器将 Internet Cookie 保存到设备。
 - **弹出窗口**：阻止浏览器中的弹出窗口（仅适用于 Windows 10 桌面版）。
-- **搜索建议**：使搜索引擎能够在输入搜索短语时搜索建议站点。
+- **搜索建议**：使搜索引擎在你键入搜索短语时可建议站点。
 - **密码管理器**：启用或禁用 Microsoft Edge 密码管理器功能。
 - **发送 Do Not Track 头**：将 Microsoft Edge 浏览器配置为，将 Do Not Track 头发送到用户访问的网站。
 
@@ -79,7 +79,7 @@ ms.locfileid: "53032004"
 
 ## <a name="kiosk---obsolete"></a>展台 - 已过时
 
-这些设置为只读，无法更改。 若要配置展台模式，请参阅[展台设置](kiosk-settings.md#windows-holographic-for-business)。
+这些设置为只读，无法更改。 若要配置展台模式，请参阅[展台设置](kiosk-settings-holographic.md)。
 
 展台设备通常运行特定应用。 用户不得在该设备上访问除展台应用以外的任何功能。
 
@@ -104,3 +104,7 @@ ms.locfileid: "53032004"
 ## <a name="reporting-and-telemetry"></a>报告和遥测
 
 - **共享使用情况数据**：选择诊断数据提交级别。
+
+## <a name="next-steps"></a>后续步骤
+
+[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。

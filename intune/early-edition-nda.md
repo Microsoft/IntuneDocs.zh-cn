@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: d1b553d262200e58a4c06dd0f4bcb72ca1398080
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 8cd32a7ec99064a36d58a5a714406659d9d16675
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386971"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072433"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Microsoft Intune 的早期版本 - 2019 年 1 月
 
@@ -43,39 +43,10 @@ ms.locfileid: "54386971"
 
 <!-- 1901 start -->
 
-### <a name="android-enterprise-apps----1352553----"></a>Android Enterprise 应用 <!-- 1352553  -->
-将能从 Microsoft Intune 中删除托管的 Google Play 应用。 要删除托管的 Google Play 应用，请在 Azure 门户中打开 Microsoft Intune 并选择“客户端应用” > “应用”。 在应用列表中，选择托管的 Google Play 应用右侧的省略号 (...)，并在显示的列表中选择“删除”。 从应用列表删除托管的 Google Play 应用时，托管的 Google Play 应用会自动变为未批准状态。
-
-### <a name="managed-google-play-app-type----1352580---"></a>托管的 Google Play 应用类型 <!-- 1352580 -->
-“托管的 Google Play”应用类型让你可以专门将[托管的 Google Play 应用](https://play.google.com/work/search?q=microsoft&c=apps)添加到 Intune。 Intune 管理员现在可以在 Intune 中浏览、搜索、批准、同步和分配已批准的托管的 Google Play 应用。 无需单独浏览到托管的 Google Play 控制台，也无需重新进行身份验证。 在 Intune 中，选择“客户端应用” > “应用” > “添加”。 在“应用类型”列表中，将应用类型选择为“托管的 Google Play”。
 
 ### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>部署获得许可的适用于企业的 Microsoft Store 联机应用 <!-- 1672660  -->
 你将能够在设备上下文中分配所需的适用于企业的 Microsoft Store 联机应用，这些应用已获得许可。 如果以这种方式部署适用于企业的 Microsoft Store 应用，则可在设备上为所有用户安装该应用。 这仅适用于 Windows 10 RS4+ 桌面版设备。 对于获得许可的适用于企业的 Microsoft Store 联机应用，可在客户端应用分配页面中选择安装在设备上下文中。
 
-### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>将配置文件配置为在“设置助手”期间跳过某些屏幕 <!-- 2276470  -->
-创建 macOS 注册配置文件时，可将其配置为在用户使用设置助手期间跳过以下任一屏幕：
-- Android 迁移
-- 显示基调
-- 隐私
-- iCloudStorage
-
-### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522----"></a>将 Autopilot 配置文件分配给所有设备虚拟组 <!--2715522  -->
-可将 Autopilot 配置文件分配给所有设备虚拟组。 要执行此操作，请选择“设备注册” > “Windows 注册” > “部署配置文件”，然后选择一个配置文件，选择“分配”，接着在“分配给”下选择“所有设备”。 有关 Autopilot 配置文件的详细信息，请参阅[使用 Windows Autopilot 注册 Windows 设备](enrollment-autopilot.md)。
-
-### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324----"></a>使用设备配置配置文件在受监管的 iOS 设备上自定义壁纸 <!-- 2809324  -->
-在为 iOS 设备创建设备配置配置文件时，可以允许或限制“设备配置” > “配置文件” > “创建配置文件” > “iOS”（作为平台）>“设备限制”（作为配置文件类型）中的一些设置。 此更新包括新的“壁纸”设置，管理员可以通过此设置将 .png、.jpg 或 .jpeg 图像用作壁纸、预览图像以及阻止用户更改壁纸。 壁纸设置仅应用于受监管的设备。 要获取当前设置的列表，请参阅 [iOS 设备限制设置](device-restrictions-ios.md)。
-
-### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win 32 应用的 Toast 通知 <!-- 3136566   -->
-你将能够隐藏每个应用分配的最终用户 Toast 通知。 在 Intune 中，选择“客户端应用” > “应用”> 选择该应用 >“分配” > “包括组”。 
-
-### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396---"></a>在“设备限制”>“Android Enterprise 的设备所有者”中删除“通过蓝牙共享联系人”<!-- 3598396 -->
-在创建 Android Enterprise 设备的设备限制配置文件时，会有一个“通过蓝牙共享联系人”设置。 在此更新中，“通过蓝牙共享联系人”设置将被删除（“设备配置” > “配置文件” > “创建配置文件” > “Android Enterprise”（作为平台）>“设备限制”>“设备所有者”（作为配置文件类型）>“常规”）。 
-
-Android Enterprise 设备所有者管理不支持“通过蓝牙共享联系人”设置。 因此，在删除此设置时，即使在环境中启用并配置了此设置，此更改也不会影响任何设备或租户。
-
-要查看设置的当前列表，请转到[用于允许或限制功能的 Android Enterprise 设备设置](device-restrictions-android-for-work.md)。
-
-适用于：Android Enterprise 设备所有者
 
 <!-- 1812 start -->
 
@@ -96,23 +67,6 @@ Android Enterprise 设备所有者管理不支持“通过蓝牙共享联系人�
 如果用户从应用商店安装公司门户应用，然后尝试通过该应用注册这些设备，则他们将收到错误。 在注册过程中由 Intune 自动推送公司门户时，这些设备应仅使用公司门户。 将更新 Azure 门户中的 Intune 注册配置文件，以便你可以指定设备的身份验证方式以及是否收到公司门户应用。 如果希望 DEP 设备用户具有公司门户，则需要在注册配置文件中指定你的首选项。 此外，公司门户应用中的“标识设备”屏幕很快就会过时。  
 若要在已注册的 DEP 设备上安装公司门户，需要转到“Intune”>“客户端应用”，并将其作为具有应用配置策略的托管应用进行推送。 未来的文档中将详细概述执行这些步骤的方式。
 
-### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379---"></a>非管理员可以在已加入 Azure AD 的 Windows 10 设备上启用 BitLocker<!-- 2147379 -->
-在 Windows 10 设备上启用 BitLocker 设置时（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”作为平台 >“Endpoint protection”作为配置文件类型 >“Windows 加密”），将添加 BitLocker 设置。 此更新包括新的 BitLocker 设置，以允许标准用户（非管理员）启用加密。 若要查看当前设置，请参阅[适用于 Windows 10 的 Endpoint protection 设置](endpoint-protection-windows-10.md#windows-encryption)。
-
-
-### <a name="additional-settings-for-outlook----3301182---"></a>Outlook 的其他设置 <!-- 3301182 -->
-现在可以使用 Intune 为 iOS 和 Android 配置 Outlook 其他设置。  设置包括以下内容：
-- 仅允许在 iOS 和 Android 的 Outlook 中使用工作或学校帐户
-- 部署适用于 Office 365 和混合新式身份验证本地帐户的新式身份验证
-- 选择基本身份验证时，请使用 `SAMAccountName` 作为电子邮件配置文件中的用户名字段
-- 允许保存联系人
-- 配置外部收件人邮件提示
-- 配置“重点收件箱”
-- 需要进行生物识别来访问适用于 iOS 的 Outlook 
-- 阻止外部图像
-
-> [!NOTE]
-> 如果使用 Intune 应用保护策略来管理公司标识的访问权限，则应考虑不启用“需要生物识别”。 有关详细信息，请参阅 [iOS 访问要求](app-protection-policy-settings-ios.md#access-settings)和 [Android 访问要求](app-protection-policy-settings-android.md#access-settings)的“访问需要的公司凭据”。
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>管理模板为公共预览版，并移动到其自己的配置文件 <!-- 3322847 -->
 Intune 中的管理模板（“设备配置” > “管理模板”）目前为个人预览版。 借助此更新：管理模板包括可在 Intune 中管理的大约 300 个设置。 以前，这些设置仅存在于组策略编辑器中。
@@ -121,14 +75,6 @@ Intune 中的管理模板（“设备配置” > “管理模板”）目前为�
 
 ### <a name="intune-macos-company-portal-dark-mode----3300524---"></a>Intune macOS 公司门户深色模式 <!-- 3300524 -->
 Intune macOS 公司门户现在支持 macOS 的深色模式。 如果在 macOS 10.14+ 设备上启用了深色模式，公司门户会将其外观调整为能反映该模式的颜色。
-
-<!-- 1810 start -->
-
-### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>将 Microsoft 推荐的设置与安全基线结合使用 <!-- 2055484 -->
-Intune 可与其他专注于安全性的服务集成，包括 Windows Defender ATP 和 Office 365 ATP。 客户要求能在各项 Microsoft 365 服务中采用通用策略和一组统一的端到端安全工作流。 我们的目标是实现策略一致，构建连接安全操作和常见管理员任务的解决方案。 在 Intune 中，我们旨在通过发布一组 Microsoft 推荐的“安全基线”（“Intune” > “安全基线”）来实现这一目标。  管理员将能够直接通过这些基线创建安全策略，然后将其部署到用户。 他们还可以自定义最佳做法建议，满足组织需求。 Intune 可确保设备始终符合这些基线，并通知不符合的用户管理员或设备。
-
-### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>对未注册的 WIP 设备的选择性擦除支持 <!-- 1434452 -->
-未注册的 Windows 信息保护 (WIP-WE) 允许客户保护其在 Windows 10 设备上的公司数据，而不需要完整的 MDM 注册。 使用 WIP-WE 策略保护文档后，Intune 管理员可以选择性擦除受保护的数据。 通过选择用户和设备，并发送擦除请求，所有通过 WIP-WE 策略保护的数据都将不可用。 从 Azure 门户中的 Intune，选择“移动应用” > “应用选择性擦除”。
 
 <!-- 1809 start -->  
 
@@ -142,18 +88,6 @@ Intune 会检测是否 Intune 和另一个 MDM 同时在使用同一个 Apple �
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>“设备符合性仪表板”中的停用设备 <!-- 1981119 -->
 未来的某个更新将从设备符合性仪表板中删除已停用的设备。 这会改变符合性数字。
-
-
-
-<!-- 1807 start -->
-
-### <a name="check-for-configuration-manager-compliance----2192052---"></a>检查 Configuration Manager 符合性<!-- 2192052 -->
-未来的更新将包括新的 System Center Configuration Manager 符合性设置（“设备符合性”“策略” >  > “创建策略” > “Windows 10”）。 Configuration Manager 向 Intune 符合性发送信号。 使用 Intune 设置，可以要求所有 Configuration Manager 信号都返回“符合”。
-
-例如，要求所有软件更新都安装在设备上。 在 Configuration Manager 中，此要求具有“已安装”状态。 如果设备上的任何计划都处于未知状态，则此设备在 Intune 中不兼容。
-
-适用于 Windows 10 及更高版本
-
 
 
 ## <a name="notices"></a>通知

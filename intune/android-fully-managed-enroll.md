@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387200"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146904"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>设置 Android 完全托管的设备（预览版）的 Intune 注册
 
@@ -38,7 +38,7 @@ Intune 可帮助将应用和设置部署到 Android 企业设备，包括 Androi
 
 设备必须满足以下要求才能作为 Android 完全托管设备进行管理：
 
-- Android OS 版本 6.0 及更高版本。
+- Android OS 版本 5.1 及以上版本。
 - 设备必须运行具有 Google Mobile Services (GMS) 连接性的 Android 版本。 设备必须有可用的 GMS，并且必须能连接到 GMS。
 
 如果满足上述要求，则设备制造商/OEM 不受限制。

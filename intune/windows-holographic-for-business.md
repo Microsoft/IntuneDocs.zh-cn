@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: df91908f3d3be7be23e3cecfa83e2d92b656b91e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831592"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>通过 Intune 管理和使用 Windows Holographic 和 HoloLens 设备上的不同设备管理功能
 
@@ -108,7 +108,7 @@ Intune 提供可在组织内的不同设备上启用或禁用的设置和功能�
 
 可通过在 Intune 中创建一个自定义配置文件来配置 OMA-URI（开放移动联盟统一资源标识符）设置。 可使用 OMA-URI 设置来控制 Windows Holographic for Business 设备上的各种功能，例如启用 VPN 或检查 Microsoft 更新上有无更新。
 
-#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[配置展台模式](kiosk-settings.md#windows-holographic-for-business)
+#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[配置展台模式](kiosk-settings-holographic.md)
 
 使用 Intune 提供的共享或来宾 PC 功能，可将 Windows Holographic for Business 设备配置为作为展台运行。 这些设备可以运行一个（单个应用展台模式）或多个应用（多个应用展台模式）。
 

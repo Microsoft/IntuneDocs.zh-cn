@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297377"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831558"
 ---
 # <a name="manage-software-updates-in-intune"></a>在 Intune 中管理软件更新
 
@@ -106,7 +106,7 @@ Windows 即服务是更新 Windows 10 设备的方法。 在 Windows 10 中，�
 
    - 阻止用户暂停 Windows 更新：默认情况下允许。 使用此设置阻止或允许用户通过其计算机的“设置”暂停更新安装。 
       
-   - **传递优化下载模式**：传递优化不再作为“软件更新”下的“Windows 10 更新圈”的一部分进行配置。 现在，传递优化通过设备配置进行设置。 但是，以前的配置在控制台中仍然可用。 可以通过将以前的配置编辑为“未配置”来删除这些配置，否则便无法对其进行修改。 为避免新旧策略之间的冲突，请参阅[从现有更新圈移动到传递优化](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization)，然后将设置移动到传递优化配置文件。 
+   - **传递优化下载模式**：传递优化不再作为“软件更新”下的“Windows 10 更新圈”的一部分进行配置。 现在，传递优化通过设备配置进行设置。 但是，以前的配置在控制台中仍然可用。 可以通过将以前的配置编辑为“未配置”来删除这些配置，否则便无法对其进行修改。 为避免新旧策略之间的冲突，请参阅[从现有更新圈移动到传递优化](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)，然后将设置移动到传递优化配置文件。 
 
 5. 完成后，选择“确定”。 在“创建更新频道”中，选择“创建”。
 

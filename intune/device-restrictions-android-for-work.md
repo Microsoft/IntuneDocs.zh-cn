@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387014"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072552"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置
 
@@ -48,7 +48,6 @@ ms.locfileid: "54387014"
 - **Wi-fi 设置更改**：选择“阻止”可阻止用户更改设备所有者创建的 Wi-Fi 设置。 用户可以创建自己的 Wi-Fi 配置。 “未配置”则允许用户更改设备上的 Wi-Fi 设置。
 - **Wi-Fi 接入点配置**：选择“阻止”可阻止用户创建或更改任何 Wi-Fi 配置。 “未配置”则允许用户更改设备上的 Wi-Fi 设置。
 - **蓝牙配置**：选择“阻止”可阻止用户配置设备上的蓝牙。 “未配置”则允许使用设备上的蓝牙。
-- **通过蓝牙共享联系人**：选择“阻止”可阻止在 Android 设备使用蓝牙配对时从其他设备（例如汽车系统）访问工作联系人。 “未配置”则允许访问配对到 Android 设备的其他蓝牙设备上的工作联系人。
 - **网络共享和访问热点**：选择“阻止”可阻止网络共享和访问便携式热点。 “未配置”则允许网络共享和访问便携式热点。
 - **USB 存储**：选择“允许”可访问设备上的 USB 存储。 “未配置”则允许访问 USB 存储。
 - **USB 文件传输**：选择“阻止”可阻止通过 USB 传输文件。 “未配置”则允许传输文件。

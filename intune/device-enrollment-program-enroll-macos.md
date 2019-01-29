@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032344"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068282"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用“设备注册计划”或 Apple School Manager 自动注册 macOS 设备
 
@@ -150,7 +150,7 @@ DEP 注册和 Apple School Manager 均不适用于[设备注册管理器](device
     | <strong>FileVault</strong> | 为用户提供设置 FileVault 加密的选项。 |
     | <strong>iCloud 诊断</strong> | 为用户提供将 iCloud 诊断数据发送到 Apple 的选项。 |
     | <strong>注册</strong>| 要求用户注册设备。 |
-
+    
    
 
 10. 选择“确定”。
