@@ -3,7 +3,7 @@ title: Windows 10 的批量注册
 titlesuffix: Microsoft Intune
 description: 为 Microsoft Intune 创建批量注册包
 keywords: ''
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 97f51b4934a2dc2267e255da0ec1d896dd6b8961
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184805"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751189"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -48,9 +48,8 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
    - **项目文件夹** - 项目的保存位置
    - **说明** - 项目的可选说明![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](media/bulk-enroll-name.png)
 
-4. 输入设备的唯一名称。 名称可以包含序列号 (%%SERIAL%%) 或一组随机的字符。 （可选）如果正在升级 Windows 版本，还可以输入产品密钥、将设备配置为共享以及删除预安装的软件。
-
-   ![一张屏幕截图，显示在 Windows 配置设计器应用中指定名称和产品密钥](media/bulk-enroll-device.png)
+4. 输入设备的唯一名称。 名称可以包含序列号 (%SERIAL%) 或一组随机字符。 （可选）如果正在升级 Windows 版本，还可以输入产品密钥、将设备配置为共享以及删除预安装的软件。
+   ![显示在 Windows 配置设计器应用中指定名称和产品密钥的屏幕截图](media/bulk-enroll-device.png)
 
 5. （可选）可以配置 Wi-Fi 网络设备首次启动时所连接到的网络。  如果未配置网络设备，在设备首次启动时必须建立有线网络连接。
    ![在 Windows 配置设计器应用中启用包括网络 SSID 和网络类型选项的 Wi-Fi 的屏幕快照](media/bulk-enroll-network.png)

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324852"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199432"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
@@ -41,7 +41,7 @@ ms.locfileid: "53324852"
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>使用 IMEI 或序列号标识公司拥有的设备
 
-Intune 管理员可以创建和导入列有 IMEI 编号或序列号的逗号分隔值 (.csv) 文件。 设备注册期间，Intune 使用这些标识符来指定设备的所有权为公司。 可以声明所有支持平台的 IMEI 编号。 可以仅声明 iOS、macOS 和 Android 设备的序列号。 每个 IMEI 或序列号可以在列表中指定详细信息，以便用于管理。
+作为 Intune 管理员，可以创建和导入列出 14 位 IMEI 编号或序列号的逗号分隔值 (.csv) 文件。 设备注册期间，Intune 使用这些标识符来指定设备的所有权为公司。 可以声明所有支持平台的 IMEI 编号。 可以仅声明 iOS、macOS 和 Android 设备的序列号。 每个 IMEI 或序列号可以在列表中指定详细信息，以便用于管理。
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
@@ -49,7 +49,7 @@ Intune 管理员可以创建和导入列有 IMEI 编号或序列号的逗号分�
 [了解如何查找 Android 设备序列号](https://support.google.com/store/answer/3333000)。
 
 ## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>使用 .csv 文件添加企业标识符
-若要创建列表，请创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加 IMEI 或序列号，在右列添加详细信息。 仅可在单个 .csv 文件中导入一种类型的 ID、IMEI 或序列号。 详细信息限制为 128 个字符，且仅用于管理。 在设备上不显示详细信息。 当前限制为每个 .csv 文件 5,000 行。
+若要创建列表，请创建没有标题的两列逗号分隔值 (.csv) 列表。 在左列添加 14 位 IMEI 或序列号，在右列添加详细信息。 仅可在单个 .csv 文件中导入一种类型的 ID、IMEI 或序列号。 详细信息限制为 128 个字符，且仅用于管理。 在设备上不显示详细信息。 当前限制为每个 .csv 文件 5,000 行。
 
 **上传含序列号的 .csv 文件** - 创建两列不带标头的逗号分隔值 (.csv) 列表，并将列表限制为每个 .csv 文件 5,000 台设备或 5 MB。
 

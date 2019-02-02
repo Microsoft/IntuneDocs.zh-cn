@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11b241a14ed70a2e999fa505449cd12cdd1e025e
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 7ab60e64927db5537a106c1257a5624670771f86
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831405"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中配置设备限制设置
 
@@ -32,7 +32,7 @@ ms.locfileid: "52728780"
 
 了解设备限制配置文件基础知识，然后阅读针对每个平台的深入文章以了解设备规范。
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>创建包含设备限制设置的设备配置文件
+## <a name="create-the-profile"></a>创建配置文件
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Intune”。
 2. 选择“设备配置” > “配置文件” > “创建配置文件”。
@@ -48,7 +48,7 @@ ms.locfileid: "52728780"
     - **Windows 10 及更高版本**
 
 5. 在“配置文件类型”下拉列表中，选择“设备限制”。 若要为 Windows 10 协同版设备（如 Surface Hub）创建设备限制配置文件，请选择“设备限制(Windows 10 协同版)”。
-6. 根据所选择的平台，可配置的设置有所不同。 选择平台详细设置：
+6. 根据所选择的平台，可配置的设置有所不同。 选择平台，以了解详细设置：
 
     - [Android 设置](device-restrictions-android.md)
     - [Android Enterprise 设置](device-restrictions-android-for-work.md)
@@ -60,13 +60,13 @@ ms.locfileid: "52728780"
     - [Windows 10 协同版设置](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business 设置](device-restrictions-windows-holographic.md)
 
-7. 完成后，返回“创建配置文件”页面，然后选择“创建”。
+7. 完成后，选择“确定” > “创建”以保存所做的更改。
 
-配置文件随即创建并显示在“配置文件列表”页中。 
+此时，配置文件创建完成，并出现在配置文件列表中。
 
-## <a name="next-step"></a>下一步
+## <a name="next-steps"></a>后续步骤
 
-创建配置文件后，即可进行分配。 相关步骤，请参阅[分配设备配置文件](device-profile-assign.md)。 
+创建配置文件后，即可进行分配。 下一步，[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

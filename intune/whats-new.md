@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418204"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199483"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,6 +31,7 @@ ms.locfileid: "54418204"
 > [!Note]
 > 有关混合移动设备管理 (MDM) 中新功能的信息，请参阅[混合新增功能页面](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)。
 
+**RSS 源**：通过将以下 URL 复制并粘贴到源阅读器中，可以在页面更新时收到通知：`https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
 <!-- Common categories:  
 ### App management
@@ -42,6 +43,102 @@ ms.locfileid: "54418204"
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-21-2019"></a>2019 年 1 月 21 日当周
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win 32 应用的 Toast 通知 <!-- 3136566   -->
+可以取消显示每个应用分配的最终用户 Toast 通知。 在 Intune 中，依次选择“客户端应用” > “应用”> 应用 >“分配” > “包括组”。 
+
+#### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Intune 应用保护策略用户界面更新 <!-- 3251427  -->
+我们已更改 Intune 应用保护的设置和按钮的标签，以使用户更容易理解每个选项。 一些更改包括：  
+- 控件从“是 / 否”控件更改为主要“阻止 / **允许**”和“禁用 / 启用”控件。 标签也会更新。  
+- 将对设置重新设置格式，以在控件中并排显示设置及其标签，从而提供更好的浏览。   
+
+默认设置和设置数目将保持不变，但此更改可使用户更轻松地了解、浏览以及利用设置，以应用所选的应用保护策略。 有关信息，请参阅 [iOS 设置](app-protection-policy-settings-ios.md)和 [Android 设置](app-protection-policy-settings-android.md)。
+
+#### <a name="additional-settings-for-outlook----3301182----"></a>Outlook 的其他设置 <!-- 3301182  -->
+现在可以使用 Intune 为 iOS 和 Android 配置 Outlook 其他设置。  设置包括以下内容：只能在 iOS 版和 Android 版 Outlook 中使用工作或学校帐户；为 Office 365 和混合新式身份验证本地帐户部署新式身份验证；在选择基本身份验证的情况下，对电子邮件配置文件中的用户名字段使用 `SAMAccountName`；允许保存联系人；配置外部收件人邮件提醒；配置“重点收件箱”；要求必须进行生物识别才能访问 iOS 版 Outlook；屏蔽外部图像
+> [!NOTE]
+> 如果使用 Intune 应用保护策略来管理公司标识的访问权限，则应考虑不启用“需要生物识别”。 有关详细信息，请参阅 [iOS 访问设置](app-protection-policy-settings-ios.md#access-settings)和 [Android 访问设置](app-protection-policy-settings-android.md#access-settings)的“必须有公司凭据才能访问”。
+
+#### <a name="delete-android-enterprise-apps----1352553---"></a>删除 Android Enterprise 应用 <!-- 1352553 -->
+可以从 Microsoft Intune 中删除托管 Google Play 应用。 若要删除托管 Google Play 应用，请在 Azure 门户中打开“Microsoft Intune”，并依次选择“客户端应用” > “应用”。 在应用列表中，选择托管 Google Play 应用右侧的省略号 (...)，再从随即显示的列表中选择“删除”。 从应用列表删除托管的 Google Play 应用时，托管的 Google Play 应用会自动变为未批准状态。
+
+#### <a name="managed-google-play-app-type----1352580---"></a>托管的 Google Play 应用类型 <!-- 1352580 -->
+“托管的 Google Play”应用类型让你可以专门将[托管的 Google Play 应用](https://play.google.com/work/search?q=microsoft&c=apps)添加到 Intune。 作为 Intune 管理员，现在可以在 Intune 中浏览、搜索、批准、同步和分配已批准的托管 Google Play 应用。  不再需要单独转到托管 Google Play 控制台，也不再需要重新进行身份验证。  在 Intune 中，选择“客户端应用” > “应用” > “添加”。 在“应用类型”列表中，将应用类型选择为“托管的 Google Play”。
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>结合使用 Microsoft 建议设置与安全基线（公共预览版）<!-- 2055484   -->
+注意：此功能正在逐步推出，很快就可用。
+
+Intune 可与其他专注于安全性的服务集成，包括 Windows Defender ATP 和 Office 365 ATP。 客户要求能在各项 Microsoft 365 服务中采用通用策略和一组统一的端到端安全工作流。 我们的目标是实现策略一致，构建连接安全操作和常见管理员任务的解决方案。 在 Intune 中，我们旨在通过发布一组 Microsoft 推荐的“安全基线”（“Intune” > “安全基线”）来实现这一目标。  管理员可以直接通过这些基线创建安全策略，再将它们部署到用户。 还可以自定义最佳做法建议，以满足组织需求。 Intune 可确保设备始终符合这些基线，并通知不符合的用户管理员或设备。
+
+若要详细了解安全基线，请参阅[在 Intune 中创建 Windows 10 安全基线](security-baselines-monitor.md)。
+
+此功能适用于：Windows 10 及更高版本
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>非管理员可以在已加入 Azure AD 的 Windows 10 设备上启用 BitLocker<!-- 2147379   -->
+在 Windows 10 设备上启用 BitLocker 设置时（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”作为平台 >“Endpoint protection”作为配置文件类型 >“Windows 加密”），将添加 BitLocker 设置。 
+
+此更新包括新的 BitLocker 设置，以允许标准用户（非管理员）启用加密。 
+
+若要查看设置，请转到[适用于 Windows 10 的 Endpoint Protection 设置](endpoint-protection-windows-10.md#windows-encryption)。
+
+#### <a name="check-for-configuration-manager-compliance----2192052--eepublished----"></a>检查 Configuration Manager 符合性<!-- 2192052  eepublished  -->
+此更新包括新的 System Center Configuration Manager 符合性设置（“设备符合性” > “策略” > “创建策略” > “Windows 10 及更高版本” > “Configuration Manager 符合性）。 Configuration Manager 向 Intune 符合性发送信号。 使用此设置，可以要求所有 Configuration Manager 信号都返回“符合”。
+
+例如，要求所有软件更新都安装在设备上。 在 Configuration Manager 中，此要求具有“已安装”状态。 如果设备上的任意计划处于未知状态，此设备在 Intune 中不符合要求。
+
+[Configuration Manager 符合性](compliance-policy-create-windows.md#configuration-manager-compliance)介绍了此设置。
+
+适用于：Windows 10 及更高版本
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324-----"></a>使用设备配置配置文件在受监管的 iOS 设备上自定义壁纸 <!-- 2809324   -->
+为 iOS 设备创建设备配置文件时，可以自定义一些功能（“设置配置” > “配置文件” > “创建配置文件” > “iOS”（作为平台）>“设备功能”（作为配置文件类型））。 此更新包括新的墙纸设置，可便于管理员在主屏幕或锁定屏幕上使用 .png、.jpg 或 .jpeg 格式图像。 这些壁纸设置仅适用于受监督的设备。 
+
+有关这些设置的列表，请参阅 [iOS 设备功能设置](ios-device-features-settings.md)。
+
+#### <a name="windows-10-kiosk-is-generally-available----3594661----"></a>Windows 10 展台已全面推出 <!-- 3594661  -->
+在此更新中，Windows 10 及更高版本设备上的展台功能已全面推出（正式版）。 若要查看可以添加和配置的所有设置，请参阅[适用于 Windows 10（及更高版本）的展台设置](kiosk-settings.md)。
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396-----"></a>在“设备限制”>“Android Enterprise 的设备所有者”中删除“通过蓝牙共享联系人”<!-- 3598396   -->
+在创建 Android Enterprise 设备的设备限制配置文件时，会有一个“通过蓝牙共享联系人”设置。 在此更新中，“通过蓝牙共享联系人”设置遭删除（“设备配置” > “配置文件” > “创建配置文件” > “Android Enterprise”（作为平台）>“设备限制”>“设备所有者”（作为配置文件类型）>“常规”）。 
+
+Android Enterprise 设备所有者管理不支持“通过蓝牙共享联系人”设置。 因此，在删除此设置时，即使在环境中启用并配置了此设置，此更改也不会影响任何设备或租户。
+
+要查看设置的当前列表，请转到[用于允许或限制功能的 Android Enterprise 设备设置](device-restrictions-android-for-work.md)。
+
+适用于：Android Enterprise 设备所有者
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune 应用保护策略用户界面更新 <!-- 3251427 -->
+我们已更改 Intune 应用保护的设置和按钮的标签，以使用户更容易理解每个选项。 一些更改包括：  
+- 控件从“是 / 否”控件更改为主要“阻止 / **允许**”和“禁用 / 启用”控件。 标签也会更新。  
+- 将对设置重新设置格式，以在控件中并排显示设置及其标签，从而提供更好的浏览。   
+
+默认设置和设置数目将保持不变，但此更改可使用户更轻松地了解、浏览以及利用设置，以应用所选的应用保护策略。 有关信息，请参阅 [iOS 设置](app-protection-policy-settings-ios.md)和 [Android 设置](app-protection-policy-settings-android.md)。
+
+### <a name="device-management"></a>设备管理
+
+#### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>对未注册的 WIP 设备的选择性擦除支持 <!-- 1434452 -->
+未注册的 Windows 信息保护 (WIP-WE) 允许客户保护其在 Windows 10 设备上的公司数据，而不需要完整的 MDM 注册。 使用 WIP-WE 策略保护文档后，Intune 管理员可以选择性擦除受保护的数据。 通过选择用户和设备，并发送擦除请求，所有通过 WIP-WE 策略保护的数据都将不可用。 从 Azure 门户中的 Intune，选择“移动应用” > “应用选择性擦除”。
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services----3762211----"></a>运行日志新推出，以及能够向 Azure Monitor 服务发送日志 <!-- 3762211  -->
+Intune 有内置审核日志，可以在事件变更时跟踪事件。 此更新包含新日志功能，包括： 
+- 运行日志（预览版）显示已注册用户和设备的详细信息，其中包括成功和失败尝试次数。
+- 可将审核日志和运行日志发送到 Azure Monitor，包括存储帐户、事件中心和 Log Analytics。 借助这些服务，可以存储数据、使用分析工具（如 Splunk 和 QRadar），并能获取日志数据的可视化效果。
+
+[使用 Intune 将日志数据发送到存储、事件中心或 Log Analytics](review-logs-using-azure-monitor.md) 详细介绍了此功能。
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>在 iOS DEP 设备上跳过更多设置助理屏幕 <!-- 2687509  -->
+除了当前可以跳过的屏幕之外，还可以将 iOS DEP 设备设置为在用户注册设备时跳过设置助理中的以下屏幕：显示色调、隐私、Android 迁移、主页按钮、iMessage 和 FaceTime、载入、监视迁移、外观、屏幕时间、软件更新、SIM 安装程序。
+若要选择要跳过的屏幕，请转到“设备注册” > “Apple 注册” > “注册计划令牌”> 选择令牌 >“配置文件”> 选择配置文件 >“属性” > “设置助理的自定义项”> 对于要跳过的任何屏幕选择“隐藏”>“确定”。
+如果你新建或编辑配置文件，选定跳过屏幕需要与 Apple MDM 服务器同步。 用户可以发起手动同步设备，这样在选取配置文件变更时就不会有任何延迟。
+此功能已开始逐步推出，需要几天的时间即可供所有客户使用。
+
 ## <a name="week-of-january-14-2019"></a>2019 年 1 月 14 日当周
 
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>对 Android 公司拥有的完全托管设备的支持（预览版）<!-- 1574342  -->

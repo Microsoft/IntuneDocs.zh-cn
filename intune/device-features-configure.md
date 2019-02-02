@@ -1,68 +1,64 @@
 ---
 title: 使用 Microsoft Intune 创建 iOS 或 macOS 设备配置文件 - Azure | Microsoft Docs
-description: 添加或创建 iOS 或 macOS 设备配置文件，然后在 Microsoft Intune 中配置 AirPrint、AirPlay、主屏幕布局、应用通知、共享设备、单一登录的设置以及 Web 内容筛选器设置。
+description: 添加或创建 iOS 或 macOS 设备配置文件，再配置 Microsoft Intune 中用于为设备配置 AirPrint、主屏幕布局、应用通知、共享设备、单一登录和 Web 内容筛选器的设置。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: heenamac
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 4542a65afa87668702620a1b50443c9844692a87
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203087"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831269"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中添加 iOS 或 macOS 设备功能设置
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Intune 包含许多有助于管理员控制 iOS 和 macOS 设备的功能和设置。 例如，管理员可以：
 
-使用设备功能，可以控制 iOS 和 macOS 设备上的一系列设置和功能，例如：
+- 允许用户有权在网络中访问 AirPrint 打印机
+- 将应用和文件夹添加到主屏幕，包括添加新页面
+- 选择是否以及如何显示应用通知
+- 将锁定屏幕配置为显示消息或资产标记，特别是对于共享设备
+- 为用户提供安全的单一登录体验，以在应用间共用凭据
+- 筛选使用成人语言的网站，并允许或屏蔽特定网站
 
-- AirPrint 和 AirPlay 设置
-- 主屏幕布局
-- 应用的通知
-- 锁屏界面消息
-- 设置单一登录
-- 筛选 Web 内容
+这些功能在 Intune 中可用，并可供管理员进行配置。 Intune 使用“配置文件”创建和自定义这些设置，从而满足组织需求。 在配置文件中添加这些功能后，便能将此配置文件推送或部署到组织中的 iOS 和 macOS 设备。
 
-本文介绍有关配置 iOS 设备功能配置文件的基础知识。 然后，你可以逐步浏览其他文章，以为设备配置平台特定的设置。
+本文介绍了如何创建设备配置文件。 还可以查看所有适用于 [iOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 设备的设置。
 
 ## <a name="create-a-device-profile"></a>创建设备配置文件
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-3. 选择“设备配置” > “配置文件” > “创建配置文件”。
-4. 输入以下属性：
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+3. 输入以下属性：
 
-   - **名称**：输入新配置文件的描述性名称。
-   - **说明**：输入配置文件的说明。 （此设置是可选的，但建议设置。）
-   - **平台**：选择平台类型：
-     - **iOS**
-     - **macOS**
-   - **配置文件类型**：选择“设备功能”。
-   - **设置**：设置取决于你选择的平台。 以下文章介绍了每种配置文件类型的设置：
+    - **名称**：输入新配置文件的描述性名称。
+    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **平台**：选择平台：
+        - **iOS**
+        - **macOS**
+    - **配置文件类型**：选择“设备功能”。
+    - **设置**：输入要配置的设置。 有关所有设置及其用途的列表，请参阅：
 
-     - [适用于 iOS 和 MacOS 的 AirPrint 设置](air-print-settings-ios-macos.md)
-     - [适用于 iOS 的 AirPlay 设置](airplay-settings-ios.md)
-     - [适用于 iOS 的主屏幕布局设置](home-screen-settings-ios.md)
-     - [适用于 iOS 的应用通知设置](app-notification-settings-ios.md)
-     - [适用于 iOS 的锁屏界面消息](shared-device-settings-ios.md)
-     - [配置 Intune for iOS 设备 SSO](sso-ios.md)
-     - [适用于 iOS 的 Web 内容筛选器设置](web-content-filter-settings-ios.md)
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
-5. 完成后，依次选择“确定”、“创建”以保存所做更改。
+4. 完成后，依次选择“确定”、“创建”以保存所做更改。
 
-配置文件随即创建并显示在列表中。
+此时，配置文件创建完成，并出现在列表中。 请务必[分配配置文件](device-profile-assign.md)，并[监视配置文件状态](device-profile-monitor.md)。
 
-## <a name="next-step"></a>下一步
+## <a name="next-steps"></a>后续步骤
 
-要向组分配此配置文件，请参阅[如何分配设备配置文件](device-profile-assign.md)。
+创建配置文件后，即可进行分配。 下一步，[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
+
+查看所有适用于 [iOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 设备的设备功能设置。

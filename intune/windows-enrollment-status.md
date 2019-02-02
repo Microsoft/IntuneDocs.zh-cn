@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032089"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105181"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>设置注册状态页
  
@@ -32,7 +32,7 @@ ms.locfileid: "53032089"
 - 安装完成之前阻止使用。
 - 指定用户在设备安装失败时可以执行的操作。
 
-此外，还可以为每个配置文件设置优先级顺序，以对同一用户或设备的配置文件分配冲突做出解释。
+此外，还可以设置每个配置文件的优先级，以解释同一用户或设备的配置文件分配冲突。
 
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>为所有用户启用默认注册状态页

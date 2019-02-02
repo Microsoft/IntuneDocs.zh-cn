@@ -1,12 +1,11 @@
 ---
-title: 用于 Android Enterprise 设备和展台设备的 Wi-Fi 设置
-titleSuffix: Microsoft Intune
+title: 适用于 Android Enterprise 和展台设备的 Wi-Fi 设置 - Microsoft Intune | Microsoft Docs
 description: 为 Android Enterprise 和 Android 展台创建或添加 WiFi 设备配置文件。 请参阅不同的设置，包括添加证书、选择 EAP 类型以及在 Microsoft Intune 中选择身份验证方法。 对于展台设备，还要输入网络的预共享密码。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,22 +13,22 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1424cd43c6ccde17724a4165fe74def4da291e29
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ea72cda4cb72af9028c52078e2215619bb2bef3c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831473"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中为运行 Android Enterprise 和 Android 展台的设备添加 Wi-Fi 设置
 
 可以使用特定的 WiFi 设置创建配置文件，然后将此配置文件部署到 Android Enterprise 和 Android 展台设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，使用预共享密钥等。
 
-本文将说明这些设置。
+本文将说明这些设置。 [在设备上使用 Wi-Fi](wi-fi-settings-configure.md) 详细介绍了 Microsoft Intune 中的 Wi-Fi 功能。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
-[创建设备配置文件](device-profile-create.md)。
+[创建设备配置文件](wi-fi-settings-configure.md#create-a-device-profile)。
 
 ## <a name="device-owner-only---kiosk"></a>仅设备所有者 - 展台
 
@@ -66,7 +65,7 @@ ms.locfileid: "53112351"
 
   - **EAP-TLS**：此外请输入：
 
-    - **服务器信任** - **用于服务器验证的根证书**：选择现有受信任的根证书配置文件。 当客户端连接到网络时，将向服务器显示此证书，并被用于验证连接。
+    - **服务器信任** - **用于服务器验证的根证书**：选择现有受信任的根证书配置文件。 当客户端连接到网络时，此证书向服务器显示，并对连接进行身份验证。
 
       选择“确定”，保存所做更改。
 
@@ -76,7 +75,7 @@ ms.locfileid: "53112351"
 
   - **EAP-TTLS**：此外请输入：
 
-    - **服务器信任** - **用于服务器验证的根证书**：选择现有受信任的根证书配置文件。 当客户端连接到网络时，将向服务器显示此证书，并被用于验证连接。
+    - **服务器信任** - **用于服务器验证的根证书**：选择现有受信任的根证书配置文件。 当客户端连接到网络时，此证书向服务器显示，并对连接进行身份验证。
 
       选择“确定”，保存所做更改。
 
@@ -95,7 +94,7 @@ ms.locfileid: "53112351"
 
   - **PEAP**：此外请输入：
 
-    - **服务器信任** - **用于服务器验证的根证书**：选择现有受信任的根证书配置文件。 当客户端连接到网络时，将向服务器显示此证书，并被用于验证连接。
+    - **服务器信任** - **用于服务器验证的根证书**：选择现有受信任的根证书配置文件。 当客户端连接到网络时，此证书向服务器显示，并对连接进行身份验证。
 
       选择“确定”，保存所做更改。
 
@@ -116,9 +115,6 @@ ms.locfileid: "53112351"
 
 ## <a name="next-steps"></a>后续步骤
 
-配置文件已创建，但未执行任何操作。 下一步，[分配此配置文件](device-profile-assign.md)。
+配置文件已创建，但未执行任何操作。 下一步是[分配此配置文件](device-profile-assign.md)，并[监视配置文件状态](device-profile-monitor.md)。
 
-## <a name="more-resources"></a>更多资源
-
-- 请在[适用于运行 Android 的设备的 Wi-Fi 设置](wi-fi-settings-android.md)中查看适用于 Android 设备的设置。
-- [Wi-Fi 设置概述](wi-fi-settings-configure.md)，包含其他平台。
+此外，还可以为 [Android](wi-fi-settings-android.md)、[iOS](wi-fi-settings-ios.md)、[macOS](wi-fi-settings-macos.md)、[Windows 10](wi-fi-settings-windows.md) 和 [Windows 8.1](wi-fi-settings-import-windows-8-1.md) 创建 Wi-Fi 配置文件。

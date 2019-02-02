@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068316"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 独立版 - Win32 应用管理（公共预览版）
 
@@ -239,6 +239,9 @@ Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用�
 下图会通知最终用户，正在对设备进行应用更改。
 
 ![通知用户正在进行应用更改的屏幕截图](./media/apps-win32-app-09.png)    
+
+## <a name="toast-notifications-for-win32-apps"></a>Win32 应用的 Toast 通知 
+如需要，可以隐藏每个应用分配的最终用户 Toast 通知。 在 Intune 中，选择“客户端应用” > “应用”> 选择该应用 >“分配” > “包括组”。 
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 应用问题的疑难解答
 客户端计算机上的代理日志通常位于 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可利用 `CMTrace.exe` 查看这些日志文件。 可从 [SCCM 客户端工具](https://docs.microsoft.com/sccm/core/support/tools)下载 CMTrace.exe。 

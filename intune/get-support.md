@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 87d25fa76b3d2716099178ca428c8032fd99886c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203342"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831626"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
@@ -42,7 +42,7 @@ IT 管理员可以使用“帮助和支持”选项，通过 Azure 门户为 Int
 
 ## <a name="help-and-support-experience"></a>帮助和支持体验
 > [!TIP]   
-> 2019 年 1 月，向所有租户推出了新的帮助和支持体验。 如果租户尚未获得此新体验，则可以在本文中的 [Azure 帮助 + 支持体验](#azure-help-+-support-experience)中找到有关之前的体验的信息。  
+> 新的“帮助和支持”体验适用于所有租户。 如果租户不提供这种新体验，请清除浏览器缓存，并重新加载页面。
 
 可从 [Microsoft 365 设备管理门户](http://devicemanagement.microsoft.com)以及 Azure 门户中 Intune 下的所有边栏选项卡（或页面）获得 Intune 的帮助和支持体验。 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203529"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072569"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Windows 10（及更高版本）设置，用于保护使用 Intune 的设备
 
@@ -152,6 +152,9 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 基本设置是适合所有数据驱动器类型的通用 BitLocker 设置。 这些设置用于管理最终用户可以在所有类型的数据驱动器中修改哪些驱动器加密任务或配置选项。
 
 - **其他磁盘加密的警告**：选择“阻止”可禁用关于设备上存在其他磁盘加密服务的警告。 “未配置”（默认设置）允许显示此类警告。
+    - **允许标准用户在 Azure AD 加入期间启用加密**：如果你选择“允许”，标准用户/非管理员可以在用户登录时启用 BitLocker 加密。 此设置仅适用于 Azure Active Directory 加入 (Azure ADJ) 设备。 “未配置”仅允许管理员在设备上启用 BitLocker 加密。
+      
+      此设置仅适用于 Azure Active Directory 加入 (Azure ADJ) 设备。 它还要求必须将“针对其他磁盘加密的警告”设置为“阻止”。
 - **配置加密方法**：设置为“启用”启用此设置，可配置操作系统、数据和可移动驱动器的加密算法。 设置为“未配置”（默认设置）时，BitLocker 会将 XTS-AES 128 位用作默认加密方法，或使用任何安装脚本指定的加密方法。
   - **操作系统驱动器加密**：选择操作系统驱动器的加密方法。 建议使用 XTS-AES 算法。
   - **固定数据驱动器的加密**：选择固定（内置）数据驱动器的加密方法。 建议使用 XTS-AES 算法。

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460049"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
 
@@ -52,12 +52,12 @@ ms.locfileid: "52187905"
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>将适用于企业的 Microsoft 应用商店帐户与 Intune 关联
 在 Intune 控制台中启用同步之前，必须将你的应用商店帐户配置为将 Intune 作为一种管理工具使用：
-1. 确保使用与登录 Intune 相同的租户帐户登录企业应用商店。
-2. 在企业应用商店中，选择**设置** > **管理工具**。
-3. 在“管理工具”页上选择“添加管理工具”，然后选择“Microsoft Intune”。
+1. 请确保登录[适用于企业的 Microsoft Store](https://www.microsoft.com/business-store) 与登录 Intune 时使用的租户帐户相同。
+2. 在“业务应用商店”中，依次选择“管理”选项卡、“设置”和“分发”选项卡。
+3. 如果没有专门将 Microsoft Intune 用作移动设备管理工具，请选择“添加管理工具”来添加“Microsoft Intune”。 如果尚未将 Microsoft Intune 激活为移动设备管理工具，请单击“Microsoft Intune”旁边的“激活”。 请注意，应激活“Microsoft Intune”，而不是“Microsoft Intune 注册”。
 
 > [!NOTE]
-> 以前只能将一个用于分配应用的管理工具关联到适用于企业的 Microsoft 应用商店。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。
+> 以前只能将一个用于分配应用的管理工具关联到适用于企业的 Microsoft 应用商店。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。 
 
 现在可以继续，并在 Intune 控制台中设置同步。
 
@@ -92,12 +92,12 @@ ms.locfileid: "52187905"
 
 ## <a name="remove-apps"></a>删除应用
 
-要删除从适用于企业的 Microsoft Store 同步的应用，需要登录适用于企业的 Microsoft Store 并退还应用。
+要删除从适用于企业的 Microsoft Store 同步的应用，需要登录适用于企业的 Microsoft Store 并退还应用。 无论应用免费与否，过程都一样。 对于免费应用，应用商店不退款。 下面的示例展示了免费应用的退款。 
 
 ![删除应用详情的屏幕截图](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> 删除应用在专用应用商店中的可见性不会阻止 Intune 同步它们。 必须退还该应用。
+> 在专用应用商店中隐藏应用不会阻止 Intune 同步应用。 必须执行应用退款，才能完全删除应用。
 
 ## <a name="next-steps"></a>后续步骤
 

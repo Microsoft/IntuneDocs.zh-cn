@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: bd282a6b23f33b11cbd046cac4f791d6d675e365
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751206"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -100,7 +100,7 @@ ms.locfileid: "54122531"
 - 该设备已在 Windows Autopilot 中注册，但不是 Windows 设置中的仅 MDM 注册选项。
 - 设备的 IMEI 号在“设备注册” > “[公司设备标识符](corporate-identifiers-add.md)”中列出。 （不支持 Windows Phone 8.1。）
 - 设备通过[批量预配包](windows-bulk-enroll.md)进行注册。
-- 设备通过[从 SCCM 自动注册以进行共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)进行注册。
+- 设备通过 GPO 或[从 SCCM 自动注册以执行共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)进行注册。
  
 以下注册被 Intune 标记为企业注册，但由于其不提供 Intune 管理员每设备控制而将被阻止：
  - 通过 [Windows 设置过程中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)\*。

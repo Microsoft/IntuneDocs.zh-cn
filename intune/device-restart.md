@@ -14,12 +14,12 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184297"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068265"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 远程重启设备
 
@@ -32,7 +32,7 @@ ms.locfileid: "52184297"
 
 - Windows - Windows 8.1 及更高版本支持
 - Windows Phone - Windows Phone 8.1 及更高版本支持
-- Android 展台设备 - 支持
+- Android 展台设备 - Android 7.0 及更高版本支持
 - iOS - 支持
 
     > [!Note]  

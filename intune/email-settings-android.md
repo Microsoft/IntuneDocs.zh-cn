@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 中的 Android 和 Android Enterprise 电子邮件设置 - Azure | Microsoft Docs
-description: 创建使用 Exchange 服务器并从 Azure Active Directory 检索属性的设备配置电子邮件配置文件。 在 Android 和 Android 工作配置文件设备上，使用 Microsoft Intune 启用 SSL 或 SMIME、通过证书或用户名/密码对用户进行身份验证，以及同步电子邮件和日程安排。
+title: Microsoft Intune 中的 Android 电子邮件设置 - Azure | Microsoft Docs
+description: 创建使用 Exchange 服务器并从 Azure Active Directory 检索属性的设备配置电子邮件配置文件。 在 Android Samsung KNOX 设备上，使用 Microsoft Intune 启用 SSL 或 SMIME、通过证书或用户名/密码验证用户身份，以及同步电子邮件和日程安排。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,34 +13,33 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
+ms.openlocfilehash: 4336be8d24ac4a81ec6fca09f22d594000bbd9a5
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831373"
 ---
-# <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>用于在 Intune 中配置电子邮件、身份验证和同步的 Android 和 Android Enterprise 设备设置
+# <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune 中用于配置电子邮件、身份验证和同步的 Android 设备设置
 
-本文列出并介绍了可以在 Android 和 Android Enterprise 设备上控制的各种电子邮件设置。 在移动设备管理 (MDM) 解决方案中，使用这些设置可配置电子邮件服务器、使用 SSL 加密电子邮件等。
+本文列出并介绍了可以在 Intune 中的 Android Samsung KNOX 设备上控制的各种电子邮件设置。 在移动设备管理 (MDM) 解决方案中，使用这些设置可配置电子邮件服务器、使用 SSL 加密电子邮件等。
 
-Intune 管理员可以为以下 Android 设备创建并分配电子邮件设置：
+作为 Intune 管理员，可以创建电子邮件设置，并将这些设置分配到 Android Samsung KNOX Standard 设备。
 
-- Android Samsung Knox Standard
-- Android Enterprise
+若要详细了解 Intune 中的电子邮件配置文件，请参阅[配置电子邮件设置](email-settings-configure.md)。
 
 ## <a name="before-you-begin"></a>在开始之前
 
-[创建设备配置配置文件](email-settings-configure.md)。
+[创建设备配置配置文件](email-settings-configure.md#create-a-device-profile)。
 
 ## <a name="android-samsung-knox"></a>Android (Samsung KNOX)
 
-- **电子邮件服务器**：输入 Exchange 服务器的主机名。
+- **电子邮件服务器**：输入 Exchange 服务器的主机名。 例如，输入 `outlook.office365.com`。
 - **帐户名**：输入电子邮件帐户的显示名称。 该名称将显示在用户的设备上。
-- **AAD 中的用户名属性**：此名称是 Intune 从 Azure Active Directory (AAD) 获取的属性。 Intune 将动态生成此配置文件使用的用户名。 选项包括：
+- **AAD 中的用户名属性**：此名称是 Intune 从 Azure Active Directory (Azure AD) 获取的属性。 Intune 将动态生成此配置文件使用的用户名。 选项包括：
   - **用户主体名称**：获取名称，如 `user1` 或 `user1@contoso.com`
   - **用户名**：仅获取名称，如 `user1`
-  - **SAM 帐户名**：需要域，如 `domain\user1`。 sAM 帐户名仅用于 Android 设备。 不支持 Android Enterprise。
+  - **SAM 帐户名**：需要域，如 `domain\user1`。 sAM 帐户名仅用于 Android 设备。
 
     此外请输入：  
     - **用户域名源**：选择“AAD”(Azure Active Directory) 或“自定义”。
@@ -51,7 +50,9 @@ Intune 管理员可以为以下 Android 设备创建并分配电子邮件设置�
       选择使用自定义属性时，请输入：
       - **要使用的自定义域名**：输入 Intune 用于域名的值，如 `contoso.com` 或 `contoso`
 
-- **AAD 中的电子邮件地址属性**：选择用户电子邮件地址的生成方式。 选择“用户主体名称”（`user1@contoso.com` 或 `user1`）以使用完整主体名称作为电子邮件地址，或选择“主 SMTP 地址”(`user1@contoso.com`) 以使用主 SMTP 地址登录到 Exchange。
+- **AAD 中的电子邮件地址属性**：此名称是 Intune 从 Azure AD 获取的电子邮件属性。 Intune 动态生成此配置文件使用的电子邮件地址。 选项包括：
+  - **用户主体名称**：使用完整的主体名称（如 `user1@contoso.com` 或 `user1`）作为电子邮件地址。
+  - **主 SMTP 地址**：使用主 SMTP 地址（如 `user1@contoso.com`）登录 Exchange。
 
 - **身份验证方法**：选择“用户名和密码”或“证书”作为电子邮件配置文件所用的身份验证方法。
   - 如果选择“证书”，请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。
@@ -71,27 +72,13 @@ Intune 管理员可以为以下 Android 设备创建并分配电子邮件设置�
 
 - **要同步的内容类型**：请选择想要同步到设备的内容类型。 “未配置”会禁用此设置。 设置为“未配置”时，如果最终用户在设备上启用同步，则当设备与 Intune 同步时，将再次禁用同步，因为策略已得到加强。 
 
-  可以同步以下内容： 
-  - **联系人**
-  - **日历**
-  - **任务**
-
-## <a name="android-enterprise"></a>Android Enterprise
-
-- **电子邮件应用**：选择“Gmail”或“Nine Work”
-- **电子邮件服务器**：Exchange 服务器的主机名。
-- **AAD 中的用户名属性**：此名称是 Active Directory (AD) 或 Azure AD 中的属性，用于生成此电子邮件配置文件的用户名。 选择“主 SMTP 地址”（如 user1@contoso.com）或“用户主体名称”（如 user1 或 user1@contoso.com）。
-- **AAD 中的电子邮件地址属性**：每个设备上用户电子邮件地址的生成方式。 选择“用户主体名称”，使用完整的用户主体名称作为电子邮件地址，或者选择“用户名”。
-- **身份验证方法**：选择“用户名和密码”或“证书”作为电子邮件配置文件所用的身份验证方法。
-  - 如果已选择“证书”，请选择之前创建的、将用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。
-- **SSL**：发送电子邮件、接收电子邮件以及与 Exchange Server 通信时，请使用安全套接字层 (SSL) 通信。
-- **要同步的电子邮件数**：选择要同步多少天的电子邮件，或选择“无限制”同步所有可用电子邮件。
-- **要同步的内容类型**（仅限 Nine Work）：请选择想要同步到设备的内容类型。 “未配置”会禁用此设置。 设置为“未配置”时，如果最终用户在设备上启用同步，则当设备与 Intune 同步时，将再次禁用同步，因为策略已得到加强。 
-
-  可以同步以下内容： 
-  - **联系人**
-  - **日历**
-  - **任务**
+  可以同步以下内容：  
+  - **联系人**：选择“启用”可允许最终用户将联系人同步到自己的设备。
+  - **日历**：选择“启用”可允许最终用户将日历同步到自己的设备。
+  - **任务**：选择“启用”可允许最终用户将所有任务都同步到自己的设备。
 
 ## <a name="next-steps"></a>后续步骤
-[在 Intune 中配置电子邮件设置](email-settings-configure.md)
+
+[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
+
+还可以为 [Android Enterprise（工作配置文件）](email-settings-android-enterprise.md)、[iOS](email-settings-ios.md)、[Windows 10 及更高版本](email-settings-windows-10.md)和 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 创建电子邮件配置文件。

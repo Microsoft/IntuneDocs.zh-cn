@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a338cce6249cc7c5214a9d69a897cad3eaa09e93
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 54af9b1ef7872caddb972515d9c4765f8492bf00
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831354"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中添加和使用设备上的 Wi-Fi 设置
 
-使用 Microsoft Intune Wi-Fi 配置文件将无线网络设置分配到组织中的用户和设备。 分配 Wi-Fi 配置文件后，你的用户将有权访问贵公司的 Wi-Fi 网络，而无需自行配置。
+Wi-Fi 是许多移动设备用来实现网络访问的无线网络。 Microsoft Intune 包括内置 Wi-Fi 设置，可部署到组织中的用户和组织。 此组设置称为“配置文件”，可以分配到不同的用户和组。 分配后，用户有权访问组织的 Wi-Fi 网络，而无需自行配置。
 
 例如，安装名为“Contoso Wi-Fi”的新 Wi-Fi 网络。 然后你要将所有 iOS 设备设置为连接到此网络。 过程如下：
 
-1. 创建包含连接到 Contoso Wi-Fi 无线网络所需的设置的 Wi-Fi 配置文件。
-2. 将该配置文件分配到包含所有 iOS 设备用户的组。
+1. 创建 Wi-Fi 配置文件，其中包含用于连接到 Contoso Wi-Fi 无线网络的设置。
+2. 将配置文件分配到包含所有 iOS 设备用户的组。
 3. 用户在其设备上的无线网络列表中找到新的 Contoso Wi-Fi 网络。 然后，他们可以使用所选的身份验证方法连接到该网络。
 
-使用本文中的步骤创建 Wi-Fi 配置文件。 然后，查看有关平台特定设置和详细信息的主题。
+本文列出了创建 Wi-Fi 配置文件的步骤。 它还收录了介绍每个平台的不同设置的链接。
 
 ## <a name="supported-device-platforms"></a>支持的设备平台
 
@@ -45,7 +45,7 @@ Wi-Fi 配置文件支持以下设备平台：
 > [!NOTE]
 > 对于运行 Windows 8.1 的设备，你可以导入之前从另一台设备导出的 Wi-Fi 配置。
 
-## <a name="create-a-wi-fi-device-profile"></a>创建 Wi-Fi 设备配置文件
+## <a name="create-a-device-profile"></a>创建设备配置文件
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。 
 2. 选择“设备配置” > “配置文件” > “创建配置文件”。
@@ -56,7 +56,6 @@ Wi-Fi 配置文件支持以下设备平台：
     - **Android 企业**
     - **iOS**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
 
@@ -80,4 +79,4 @@ Wi-Fi 配置文件支持以下设备平台：
 
 ## <a name="next-steps"></a>后续步骤
 
-配置文件已创建，但未执行任何操作。 下一步，[分配此配置文件](device-profile-assign.md)。
+配置文件已创建，但未执行任何操作。 下一步是[分配此配置文件](device-profile-assign.md)，并[监视配置文件状态](device-profile-monitor.md)。

@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387213"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146887"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>注册 Android 专用设备或完全托管的设备（预览版）
 
 在 Intune 中设置好 [Android 专用设备](android-kiosk-enroll.md)或[完全托管的设备](android-fully-managed-enroll.md)后，就可以注册设备。 Android 设备的注册方式取决于操作系统。
 
-| 注册方法 | 适用于专用设备的最低 Android OS 版本 | 适用于完全托管设备的最低 Android OS 版本 |
-| ----- | ----- | ----- |
-| 近场通信 | 5.1 | 6.0 |
-| 令牌输入 | 6.0 | 6.0 |
-| QR 码 | 7.0 | 7.0 |
-| Zero Touch  | 8.0\* | 8.0\* |
+| 注册方法 | 适用于专用设备和完全托管设备的最低 Android OS 版本 |
+| ----- | ----- |
+| 近场通信 | 5.1 |
+| 令牌输入 | 6.0 |
+| QR 码 | 7.0 |
+| Zero Touch  | 8.0\* |
 
 \* 参与制造商。
 
@@ -42,7 +42,7 @@ ms.locfileid: "54387213"
 
 ### <a name="enroll-by-using-a-token"></a>使用令牌注册
 
-对于 Android 6 及更高版本的设备，可使用令牌注册设备。 **aft#setup** 注册方法时，Android 6.1 和更高版本还可利用 QR 码扫描。
+对于 Android 6 及更高版本的设备，可使用令牌注册设备。 使用 afw#setup 注册方法时，Android 6.1 和更高版本还可利用 QR 码扫描。
 
 1. 打开已擦除的设备。
 2. 在“欢迎使用”屏幕上，选择语言。
