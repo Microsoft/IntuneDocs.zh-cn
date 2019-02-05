@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: 设置设备合规性
     items:
-    - name: 设备符合性概述
+    - name: 符合性概述
       href: device-compliance-get-started.md
-    - name: 创建 Android 策略
+    - name: Android 符合性
       href: compliance-policy-create-android.md
-    - name: 创建 Android Enterprise 配置文件策略
+    - name: Android 企业符合性
       href: compliance-policy-create-android-for-work.md
-    - name: 创建策略以启用 Google Play Protect
+    - name: 启用 Google Play 保护
       href: compliance-policy-create-google-play-protect.md
-    - name: 创建 iOS 策略
+    - name: iOS 符合性
       href: compliance-policy-create-ios.md
-    - name: 创建 Windows 策略
+    - name: Windows 符合性
       href: compliance-policy-create-windows.md
-    - name: 基于位置的策略
+    - name: 基于位置的符合性
       href: use-network-locations.md
     - name: 评估策略
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: 监视设备符合性
       href: compliance-policy-monitor.md
-  - name: 配置设备
+  - name: 配置设备设置
     items:
-    - name: 使用配置文件配置设备
+    - name: 设备配置概述
       href: device-profiles.md
     - name: 设备配置文件
       href: device-profile-create.md
     - name: 管理模板
       href: administrative-templates-windows.md
-    - name: 设备功能（iOS 和 MacOS）
+    - name: 设备功能
       href: device-features-configure.md
-    - name: 设备限制
+    - name: 限制设备设置和功能
       href: device-restrictions-configure.md
-    - name: 传递优化
+    - name: 提供更新
       href: delivery-optimization-windows.md
-    - name: 版本升级和模式切换
+    - name: 升级版本和 S 模式
       href: edition-upgrade-configure-windows-10.md
-    - name: 电子邮件设置
+    - name: 配置电子邮件
       href: email-settings-configure.md
-    - name: 展台设置
+    - name: 启用展台模式
       href: kiosk-settings.md
-    - name: VPN 设置
+    - name: 添加 VPN
       href: vpn-settings-configure.md
       items:
       - name: 面向 Android 的每应用 VPN
         href: android-pulse-secure-per-app-vpn.md
       - name: 面向 iOS 的每应用 VPN
         href: vpn-setting-configure-per-app.md
-    - name: Wi-Fi 设置
+    - name: 添加无线 Wi-fi 网络
       href: wi-fi-settings-configure.md
       items:
       - name: 具有预共享密钥的 Wi-Fi
         href: wi-fi-profile-shared-key.md
-    - name: 教育设置
+    - name: 教育参加测验应用
       href: education-settings-configure.md
     - name: 共享的多用户设备
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: 监视配置文件
       href: device-profile-monitor.md
-    - name: 配置文件疑难解答
+    - name: 常见问题和解答
       href: device-profile-troubleshoot.md
   - name: 保护设备数据
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Intune API 参考
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: 用于配置设备的图形 API
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: 资源
   items:
   - name: Microsoft Intune 文档指南
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: 防止非受管理设备上的数据泄露
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504538"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645183"
