@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: b3ced7e52de05e98c2f4a7ec9a828972ab60cf71
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386905"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290717"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>设置 Android 企业专用设备的 Intune 注册
 
@@ -101,7 +101,7 @@ Intune可帮助将应用和设置部署到 Android 专用设备。 有关 Androi
 
 ## <a name="managing-apps-on-android-dedicated-devices"></a>在 Android 专用设备上管理应用
 
-Android 专用设备上只能安装分配类型[设置为必需](apps-deploy.md#to-assign-an-app)的应用。 从托管的 Google Play 应用商店安装应用与从 Android 工作配置文件设备安装应用的方式相同。
+Android 专用设备上只能安装分配类型[设置为必需](apps-deploy.md#assign-an-app)的应用。 从托管的 Google Play 应用商店安装应用与从 Android 工作配置文件设备安装应用的方式相同。
 
 当应用开发人员向 Google Play 发布更新时，托管设备上的应用会自动更新。
 

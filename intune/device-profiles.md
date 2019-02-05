@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203512"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229978"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>对 Microsoft Intune 中使用设备配置文件的设备应用功能设置
 
@@ -123,7 +123,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - Android Enterprise
 - iOS
 - macOS
-- Windows 10
+- Windows 10 及更高版本
 - Windows 10 协同版
 
 ## <a name="delivery-optimization"></a>传递优化
@@ -174,7 +174,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 及更高版本
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 及更高版本
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -201,6 +201,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - iOS
 - macOS
 - Windows 8.1 （仅限导入）
+- Windows 10 及更高版本
 
 ## <a name="esim-cellular---public-preview"></a>eSIM 手机网络 - 公共预览版
 
@@ -241,7 +242,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 及更高版本
 
 ## <a name="windows-information-protection-profile"></a>Windows 信息保护配置文件
 
