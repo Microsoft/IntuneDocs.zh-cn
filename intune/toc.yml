@@ -55,8 +55,6 @@ items:
     href: what-is-device-management.md
   - name: 什么是 Intune for Education？
     href: introduction-intune-education.md
-  - name: 导航 Azure 门户
-    href: get-started-azure.md
   - name: 体系结构概况
     href: high-level-architecture.md
   - name: 设备生命周期
@@ -955,9 +953,9 @@ items:
       href: data-outside-protect.md
     - name: 防止非受管理设备上的数据泄露
       href: data-leak-prevention.md
-ms.openlocfilehash: cb54a7f48a96684c98ed73584adf4acc57a19f56
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.openlocfilehash: 1c293290d9d2e2dc2ba44278f77edf9976cb2a7c
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690778"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761001"
