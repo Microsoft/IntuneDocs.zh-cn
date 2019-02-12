@@ -2,8 +2,8 @@
 title: 在 Microsoft Intune 中配置 iOS 软件更新策略 - Azure | Microsoft Docs
 description: 在 Microsoft Intune 中创建或添加配置策略，以限制在由 Intune 管理或监督的 iOS 设备上自动安装软件更新的时间。 可以选择不安装更新的日期和时间。 还可以将此策略分配给组、用户或设备，并检查是否存在任何安装故障。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: article
@@ -11,12 +11,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
-ms.openlocfilehash: 61bd7d5cf40355536aa7d5c361a771ce2b4f30ec
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cce77976ea0cb31596ca0a1fd6c4becc9e3cee34
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189871"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833593"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>在 Intune 中配置 iOS 更新策略
 
@@ -33,7 +34,10 @@ ms.locfileid: "52189871"
 4. 输入策略的名称和描述。
 5. 选择“设置”。 
 
-    输入 iOS 设备不强制安装最新更新时的详细信息。 这些设置会创建受限制的时间范围。 可以配置一周里的一天、时区、开始时间、结束时间，以及是否延迟软件更新的可见性(天)，以便输入用户。 可以选择软件更新的延迟范围（1 到 90 天）。 若要选择退出设置软件更新延迟，请输入 0。 这些更新设置将仅应用于受监管的 iOS 设备。
+    输入 iOS 设备不强制安装最新更新时的详细信息。 这些设置会创建受限制的时间范围。 可以配置一周里的一天、时区、开始时间、结束时间，以及是否延迟软件更新的可见性(天)，以便输入用户。 可以选择软件更新的延迟范围（1 到 90 天）。 延迟到期时，用户会收到通知，通知更新到触发延迟时可用的最早版本的 OS。 若要选择退出设置软件更新延迟，请输入 0。 这些更新设置将仅应用于受监管的 iOS 设备。
+  
+    例如，如果 iOS 12.a 在 1 月 1 日可用，且“延迟 OS 更新”设置为 5 天，该特定版本将不会作为可用更新出现在任何最终用户的、分配到该配置文件的设备上。 在发布后的第六天，该更新将显示为可用，并且所有最终用户都可以自由发起更新。
+
 
 6. 选择“确定”，保存所做更改。 选择“创建”以创建策略。
 
@@ -44,7 +48,7 @@ ms.locfileid: "52189871"
 1. 在“软件更新”中，选择“适用于 iOS 的更新策略”。
 2. 选择一个现有策略，然后选择“属性”。
 3. 更新限制时间：
-
+    
     1. 选择星期
     2. 选择应用此策略的时区
     3. 输入列入黑名单小时的开始和结束时间

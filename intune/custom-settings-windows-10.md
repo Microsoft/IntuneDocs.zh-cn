@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d87d8c8da5511f641b785f28bad7d7ef6739d888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 86c822ba197851fe7e05d91ff8aa703fb9fe3811
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184448"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842774"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>在 Intune 中使用适用于 Windows 10 设备的自定义设置
 
@@ -42,7 +43,7 @@ Windows 10 提供了许多配置服务提供程序 (CSP) 设置，例如，[策�
 2. 选择“设备配置” > “配置文件” > “创建配置文件”。
 3. 输入以下设置：
 
-    - **名称**：输入配置文件的名称，例如 `windows 10 custom profile`。
+    - **名称**：输入配置文件的名称，如 `windows 10 custom profile`。
     - **说明**：输入配置文件的说明。
     - **平台**：选择“Windows 10 及更高版本”。
     - **配置文件类型**：选择“自定义”。
@@ -50,8 +51,8 @@ Windows 10 提供了许多配置服务提供程序 (CSP) 设置，例如，[策�
 4. 在“自定义 OMA-URI 设置”中，选择“添加”。 输入以下设置：
 
     - **名称**：输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。
-    - **说明**：输入设置的简要说明以及其他重要详细信息。
-    - **OMA-URI**（区分大小写）：输入想要作为设置使用的 OMA-URI。
+    - **说明**：输入包含设置概述以及其他所有重要详细信息的说明。
+    - **OMA-URI**（区分大小写）：输入要用作设置的 OMA-URI。
     - **数据类型**：选择用于此 OMA-URI 设置的数据类型。 选项包括：
 
         - 字符串

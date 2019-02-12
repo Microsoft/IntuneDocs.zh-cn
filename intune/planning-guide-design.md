@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 192e0ac0e67fb519f1dcd2ff9faf0d7748942997
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112980"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834528"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -178,7 +179,7 @@ Intune 提供两个部署选项：独立和混合。 “独立”是指在云中
 
 深入研究设备的以下方面，了解如何正确管理设备。
 
--   受支持的设备平台
+-   支持的设备平台
 
 -   设备
 
@@ -265,7 +266,7 @@ Intune 支持公司拥有的设备和个人设备。 如果设备由设备注册
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定配置策略需求。
 
-### <a name="profiles"></a>配置文件
+### <a name="profiles"></a>Profiles
 
 使用配置文件来帮助最终用户连接到公司数据。 Intune 支持许多类型的配置文件。 请参阅用例和要求，确定何时配置配置文件。 所有设备配置文件按平台类型分类，且应包含在设计文档中。
 
@@ -344,7 +345,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定电子邮件配置文件需求。
-### <a name="apps"></a>“应用”
+### <a name="apps"></a>应用
 
 可使用 Intune 通过多种方式将应用提供给用户或设备。 应用程序的类型包括软件安装程序应用、来自公共应用商店的应用、来自外部链接的应用或托管 iOS 应用。 除单个应用部署外，还可通过适用于 iOS 和 Windows 的批量采购计划来管理和部署批量采购的应用。 了解详细信息：
 
@@ -352,7 +353,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 -   [适用于企业的 iOS 批量采购计划 (VPP)](vpp-apps-ios.md)
 
--   [适用于企业的 Microsoft Store 应用](windows-store-for-business.md)
+-   [适用于企业的 Microsoft 应用商店应用](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>应用类型要求
 
@@ -375,7 +376,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 应用程序保护策略通过定义应用程序管理公司数据的方式最大限度地减少数据丢失。 Intune 对任何为与移动应用管理搭配使用而构建的应用程序支持应用保护策略。 设计应用保护策略时，需确定将对给定应用中的公司数据设置什么限制。 建议查看[应用保护策略](app-protection-policy.md)如何运作。 下面是一个如何记录现有应用程序以及需要何种保护的示例。
 
-| 应用程序 | **目的** | **平台** | **用例** | **应用保护策略** |
+| **应用程序** | **目的** | **平台** | **用例** | **应用保护策略** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | 可用 | iOS | 公司 - 高级管理人员 | 不能越狱，加密文件 |                                                         
 | Word | 可用 | iOS、Android - Samsung Knox、非 Knox、Windows 10 移动版 | 公司、BYOD | 不能越狱，加密文件 |                                                         

@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9b008130ec089b99ab64fe0dbbef7ae89b753817
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149801"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844184"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解决 Symantec Endpoint Protection Mobile 发现的威胁
 
@@ -32,7 +33,7 @@ Symantec Endpoint Protection (SEP) Mobile 是一项移动威胁防御服务，�
 * 使用 OneDrive 同步公司文件
 * 访问公司应用
 
-本文介绍如何识别 SEP Mobile 威胁警报以及如何解决这些问题。 
+本主题介绍如何识别 SEP Mobile 威胁警报以及如何解决这些警报。 
 
 ## <a name="resolve-virus-or-security-threat"></a>解决病毒或安全威胁  
 
@@ -41,7 +42,7 @@ Symantec Endpoint Protection (SEP) Mobile 是一项移动威胁防御服务，�
     ![Lookout for Work 错误消息示例屏幕截图，其中包含指向公司门户网站的链接和蓝色的“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. 选择你的设备。  
-3. 读取设备下方显示的警告。 它将指示打开 SEP Mobile 以解决病毒或安全威胁。     
+3. 阅读设备下方显示的警告。 它将指示打开 SEP Mobile 以解决病毒或安全威胁。     
 
     ![公司门户设备页的示例屏幕截图，其中显示 SEP Mobile 警告。](./media/CP-lookout-virus-banner-1808.png)
 

@@ -2,8 +2,8 @@
 title: 在 Microsoft Intune 中使用私钥证书和公钥证书 - Azure | Micrososft Docs
 description: 向 Microsoft Intune 添加或创建公钥加密标准 (PKCS) 证书，所需步骤如下：导出根证书、配置证书模板、下载和安装 Microsoft Intune 证书连接器 (NDES)、创建设备配置文件，并在 Azure 和证书颁发机构中创建 PKCS 证书配置文件。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -11,16 +11,17 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5c2c649df23a84d8836a68fd0456da6ce8dda2c0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203614"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837269"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
@@ -136,6 +137,7 @@ ms.locfileid: "54203614"
 6. 在“高级”选项卡上，建议让“使用此计算机的系统帐户(默认)”保持选中状态。
 7. 应用 > 关闭
 8. 返回到 Azure 门户（通过选择“Intune” > “设备配置” > “证书颁发机构”）。 片刻之后，将显示绿色复选标记，且“连接状态”显示“可用”。 连接器服务器现可与 Intune 通信。
+9. 如果网络环境中有 Web 代理，则可能需要其他配置才能使连接器正常运行。 有关详细信息，请参阅 Azure Active Directory 文档中的[使用现有本地代理服务器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)。
 
 > [!NOTE]
 > Microsoft Intune 证书连接器中包含 TLS 1.2 支持。 因此，如果已安装 Microsoft Intune 证书连接器的服务器支持 TLS 1.2，则使用 TLS 1.2。 如果服务器不支持 TLS 1.2，则使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。

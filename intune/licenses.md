@@ -15,12 +15,13 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 90398729a99a10667d87646a4beaaaf8a7f6201f
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3bf0b81cf424e3ec3f003306ae24638eb0b973b9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266913"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833560"
 ---
 # <a name="licenses-that-include-intune"></a>包括 Intune 的许可证
 

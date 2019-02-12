@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734266"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838761"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 将应用分配到组
 
@@ -51,7 +52,7 @@ ms.locfileid: "53734266"
 >
 > 若要在未注册 Intune 的设备上接收应用更新，设备用户必须转至其公司门户并手动安装应用更新。
 
-## <a name="to-assign-an-app"></a>分配应用
+## <a name="assign-an-app"></a>分配应用
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
@@ -62,7 +63,7 @@ ms.locfileid: "53734266"
 7. 选择“添加组”以打开与该应用相关的“添加组”窗格。
 8. 对于特定应用，请选择“分配类型”：
    - **适用于已注册的设备**：将应用分配给可从公司门户应用或网站安装应用的用户组。
-   - **注册与否都可用：** 可将此应用分配到未将其设备注册到 Intune 的用户组。 托管的 Google Play 中的应用不支持此选项。 必须为用户分配 Intune 许可证，请参阅 [Intune 许可证](licenses.md)。
+   - **注册与否都可用：** 可将此应用分配到未将其设备注册到 Intune 的用户组。 必须为用户分配 Intune 许可证，请参阅 [Intune 许可证](licenses.md)。
    - **必需**：应用安装在所选组中的设备上。 在应用安装开始之前，某些平台可能会显示需最终用户确认的其他提示。
    - **卸载**：如果 Intune 之前已使用相同部署通过“可用于已注册设备”或“必需”分配将应用程序安装到设备上，则会从所选组中的设备卸载该应用。 部署后无法删除 Web 链接。
 
@@ -122,6 +123,9 @@ ms.locfileid: "53734266"
 > [!NOTE]
 > 仅针对托管 iOS 应用商店应用：将这些应用添加到 Microsoft Intune 并将其分配为“必需”时，将自动根据“必需”和“可用”意向进行创建。<br><br>
 > 标记为所需意图的 iOS 应用商店应用（不是 iOS VPP 应用）将在设备签入时在设备上执行，并且还会显示在公司门户应用中。
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise APP-WE 应用部署
+对于没有注册 (APP-WE) 部署方案的未注册应用保护策略中的 Android 设备，现在可以使用托管的 Google Play 将应用商店应用和 LOB 应用部署到用户。 具体而言，可以向最终用户提供应用目录以及不再需要最终用户通过允许从未知源进行安装来放宽其设备的安全状况的安装体验。 此外，此部署方案将改进最终用户体验。 有关分配应用的步骤，请参阅[分配应用](apps-deploy.md#assign-an-app)。
 
 ## <a name="next-steps"></a>后续步骤
 

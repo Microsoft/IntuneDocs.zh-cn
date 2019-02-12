@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203631"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230114"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -420,7 +420,7 @@ ms.locfileid: "54203631"
 
 - **“开始”菜单布局**：自定义桌面设备上的开始菜单，可以上传包含自定义项的 XML 文件，包括列出的应用的顺序等。 用户无法更改输入的“开始”菜单布局。
 - **在“开始”菜单中将网站固定到磁贴**：从 Microsoft Edge 导入图像，这些图像在桌面设备的 Windows 开始菜单中显示为链接。
-- **解锁任务栏中的应用**：选择“阻止”可阻止用户从“开始”菜单中解锁应用。
+- **解锁任务栏中的应用**：选择“阻止”可阻止用户从“任务栏”中解锁应用。
 - **快速用户切换**：选择“阻止”可防止在未注销的情况下在同时登录的用户之间切换。
 - **最常用的应用**：选择“阻止”可隐藏最常用的应用，使其不在开始菜单上显示。 还可通过此设置禁用“设置”应用中的相应切换。
 - **最近添加的应用**：选择“阻止”可隐藏最近添加的应用，使其不在开始菜单上显示。 还可通过此设置禁用“设置”应用中的相应切换。

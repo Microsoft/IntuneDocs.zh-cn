@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203139"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690676"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>使用受管理设备访问工作或学校资源
 Microsoft Intune 是一个设备管理系统，可允许组织管理对设备、应用和电子邮件的访问。 通过设备管理，你和其他员工及学生可几乎在任何设备上从任何地方访问你的工作信息。 即使远程工作，你和贵组织的信息仍然是安全的。
@@ -39,16 +39,9 @@ Microsoft Intune 是贵公司用于配置其安全性和设备需求的软件。
 - 转到公司支持人员设置的[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>应用和网站之间的有什么区别？
-公司门户应用和公司门户网站存在一些细微差别，但你可以在两者上执行大部分相同任务。 可以执行的任务有：
+适用于 Windows 10、iOS、macOS 和 Android 的每个公司门户应用都与设备的相应平台无缝集成。 该网站可从任何设备进行访问，无论你使用何种设备，都会为你提供相同的通用体验。 
 
-- 在管理中注册设备
-- 查看设备状态
-- 为组织下载推荐的和必需的应用
-- 重命名设备
-- 重置设备的 PIN 或密码
-- 联系 IT 部门以获得帮助
-
-若要查看与在设备上使用公司门户应用可以执行的操作相比，使用公司门户网站可执行的操作，请选择以下链接之一：
+可以在以下链接下方找到特定于设备平台的公司门户指南，从注册步骤开始：  
 
 - [使用 Android 设备](using-your-android-device-with-intune.md)
 - [使用 iOS 设备](using-your-ios-device-with-intune.md)

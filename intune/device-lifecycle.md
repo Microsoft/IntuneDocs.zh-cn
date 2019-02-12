@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: c0d6dcc4bee31ce0197699a8106a25dbcd71af17
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 25df77266e0ce10329d94f7185a78c944b3771cb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887128"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844609"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune 移动设备管理 (MDM) 生命周期概述
 
@@ -31,7 +32,7 @@ ms.locfileid: "52887128"
 ## <a name="enroll"></a>注册
 当今的移动设备管理 (MDM) 策略适用于各种手机、平板电脑和电脑（iOS、Android、Windows 和 Mac OS X）。 如果你需要能够管理设备（这对公司拥有的设备来说很常见），第一步便是[设置设备注册](device-enrollment.md)。 你还可以通过向 Intune (MDM) 注册设备或[安装 Intune 客户端软件](manage-windows-pcs-with-microsoft-intune.md)来管理 Windows 电脑。
 
-## <a name="configure"></a>配置
+## <a name="configure"></a>用户密码重置策略
 将你的设备注册只是第一步。 若要充分利用所有这些 Intune 功能并确保你的设备安全且符合公司标准，你可以从各种策略中选择。 这些策略让你能够几乎配置受管理设备运作方式的方方面面。 例如，对于含有公司数据的设备，用户是否应该有密码？ 你可以要求获得密码。 你有公司 Wi-Fi 吗？ 你可以自动配置它。 以下是可用的配置选项类型：
 
 - [**设备配置**](device-profiles.md)。 这些策略让你能够配置所管理设备的特性和功能。 例如，你可以要求在 Windows Phone 上使用密码，或禁用 iPhone 的照相机。

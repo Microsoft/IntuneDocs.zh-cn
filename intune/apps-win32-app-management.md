@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068316"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290751"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune 独立版 - Win32 应用管理（公共预览版）
+# <a name="intune-standalone---win32-app-management"></a>Intune 独立版 - Win32 应用管理
 
 Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接的客户可以使用 Configuration Manager 进行 Win32 应用管理，但只使用 Intune 的客户将拥有更强大的 Win32 业务线 (LOB) 应用管理功能。 本主题概述了 Intune Win32 应用管理功能和疑难解答信息。
 
-## <a name="prerequisites-for-public-preview"></a>公共预览版的先决条件
+## <a name="prerequisites"></a>必备条件
 
 - Windows 10 版本 1607 或更高版本（企业版、专业版和教育版）
 - Windows 10 客户端需要： 
     - 已联接到 Azure Active Directory (AAD) 或混合 Azure Active Directory，且
     - 在 Intune（MDM 托管）中注册
-- 在公共预览版中，Windows 应用程序大小的上限为每个应用 8 GB 
+- Windows 应用程序大小的上限为每个应用 8 GB
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>准备 Win32 应用内容以进行上传
 
-使用 [Microsoft Intune Win32 应用上传准备工具](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool)以预处理 Win32 应用。 打包工具将应用程序安装文件转换为 .intunewin 格式。 打包工具还检测 Intune 所需的某些属性，以确定应用程序安装状态。 在应用安装程序文件夹上使用此工具后，你将能够在 Intune 控制台中创建 Win32 应用。
+使用 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)以预处理 Win32 应用。 该工具将应用程序安装文件转换为 .intunewin 格式。 该工具还检测 Intune 所需的某些属性，以确定应用程序安装状态。 在应用安装程序文件夹上使用此工具后，你将能够在 Intune 控制台中创建 Win32 应用。
 
-你可以从 GitHub 下载 [Microsoft Intune Win32 应用上传准备工具](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool)。
+可从 GitHub 下载 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)。
 
 ### <a name="available-command-line-parameters"></a>可用的命令行参数 
 
@@ -74,7 +74,7 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 1.  登录到 [Azure 门户](https://portal.azure.com/)。
 2.  选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
 3.  在“Intune”窗格中，选择“客户端应用” > “应用” > “添加”。
-4.  在“添加”应用窗格中，从提供的下拉列表中选择“Windows 应用 (Win32) - 预览版”。
+4.  在“添加”应用窗格中，从提供的下拉列表中选择“Windows 应用(Win32)”。
 
     ![添加应用边栏选项卡 - 添加类型下拉列表框的屏幕截图](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
     ![应用包文件边栏选项卡的屏幕截图](./media/apps-win32-app-02.png)
 
 2.  在“应用包文件”窗格中，选择“浏览”按钮。 然后选择扩展名为 .intunewin 的 Windows 安装文件。
+
+    > [!IMPORTANT]
+    > 请确保使用最新版本的 Microsoft Win32 内容准备工具。 如果不使用最新版本，你将看到一条警告，指示该应用是使用旧版本的 Microsoft Win32 内容准备工具打包的。 
+
 3.  完成后，选择“确定”。
 
 ### <a name="step-3-configure-app-information"></a>步骤 3：配置应用信息
@@ -171,7 +175,7 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
             
                 ![检测规则窗格的屏幕截图 - 注册表项存在](./media/apps-win32-app-05.png)    
             
-            2.  检查注册表值存在（不适用于预览版）。
+            2.  检查是否存在注册表值。
         
                 ![检测规则窗格的屏幕截图 - 注册表值存在](./media/apps-win32-app-06.png)    
         

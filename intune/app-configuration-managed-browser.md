@@ -16,12 +16,13 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324967"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086210"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Internet 访问
 
@@ -150,9 +151,9 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 ### <a name="before-you-start"></a>开始之前
 
 - 通过 Azure AD 应用程序代理设置内部应用程序。
-    - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started)。 
+    - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。 
 - 必须使用 Managed Browser 应用的最低版本 1.2.0。
-- Managed Browser 或 Microsof Edge 应用的用户具有分配给该应用的 [Intune 应用保护策略]( app-protection-policy.md)。
+- Managed Browser 或 Microsof Edge 应用的用户具有分配给该应用的 [Intune 应用保护策略](app-protection-policy.md)。
 
     > [!NOTE]
     > 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 和 Microsof Edge 中生效。

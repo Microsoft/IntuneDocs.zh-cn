@@ -16,12 +16,13 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4aa5cb24bc153839c6aac193f074128dd46a2e5f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40278904cd3af75451d0323a7665e88f6b526928
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185400"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844245"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 分配给 macOS 设备
 
@@ -49,16 +50,16 @@ ms.locfileid: "52185400"
     此信息有助于在 Intune 中识别应用套件，也有助于用户在公司门户中找到应用套件。
 8. 输入以下信息：
     - **套件名称**：输入应用套件的名称，该名称将显示在公司门户中。 请确保使用的所有套件名称都是唯一的。 如果同一应用套件名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
-    - 套件描述：为应用套件输入描述。
-    - 发布者：Microsoft 显示为发布者。
-    - 类别：选择一个或多个内置应用类别或你创建的类别。 该设置可让用户在浏览公司门户时更轻松地查找应用套件。
-    - 在“公司门户”中将此显示为特别推荐的应用：选择此选项可在用户浏览应用时，在“公司门户”的主页上突出显示应用套件。
-    - 信息 URL：（可选）输入包含此应用相关信息的网站 URL。 在公司门户中向用户显示该 URL。
-    - 隐私 URL：（可选）输入包含此应用相关隐私信息的网站 URL。 在公司门户中向用户显示该 URL。
-    - 开发人员：Microsoft 显示为开发人员。
-    - 所有者：Microsoft 显示为所有者。
-    - 备注：（可选）输入要与此应用关联的任何备注。
-    - 徽标：用户浏览公司门户时，Office 365 徽标与应用一同显示。
+    - **套件描述**：输入应用套件的描述。
+    - **发布者**：Microsoft 显示为发布者。
+    - **类别**：选择一个或多个内置应用类别或你创建的类别。 该设置可让用户在浏览公司门户时更轻松地查找应用套件。
+    - **在公司门户中将此应用显示为特色应用**：当用户浏览应用时，选择此选项以在公司门户的主页上突出显示应用套件。
+    - **信息 URL**：（可选）输入包含此应用相关信息的网站的 URL。 在公司门户中向用户显示该 URL。
+    - **隐私 URL**：（可选）输入包含此应用相关隐私信息的网站的 URL。 在公司门户中向用户显示该 URL。
+    - **开发者**：Microsoft 显示为开发者。
+    - **所有者**：Microsoft 显示为所有者。
+    - **备注**：（可选）输入要与此应用关联的任何备注。
+    - **徽标**：用户浏览公司门户时，Office 365 徽标与应用一同显示。
 9. 选择“确定”。
 10. 在“添加应用”窗格上，选择“添加”。  
     应用套件在应用列表中显示为各个条目。

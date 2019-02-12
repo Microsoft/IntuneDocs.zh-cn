@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 31cfa617e0ca5d8d0848d1ecb781fda701589ccd
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199415"
+ms.locfileid: "55229944"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>使用 Intune 将 Windows 10 及更高版本设备作为展台运行的设置
 
@@ -101,7 +101,7 @@ ms.locfileid: "55199415"
 
     - **应用程序名称**：必须的。 输入应用程序的名称。
     - **本地路径**：必须的。 输入可执行文件的路径，例如 `C:\Program Files (x86)\Microsoft VS Code\Code.exe` 或 `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`。
-    - **应用程序用户模型 ID (AUMID)**：输入 Win32 应用的应用程序用户模型 ID (AUMID)。 此设置确定桌面上磁贴的开始布局。 若要获取此 ID，请参阅[查找已安装应用的应用程序用户模型 ID](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)。
+    - **应用程序用户模型 ID (AUMID)**：输入 Win32 应用的应用程序用户模型 ID (AUMID)。 此设置确定桌面上磁贴的开始布局。 若要获取此 ID，请参阅 [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)。
     - **磁贴大小**：必须的。 选择“小”、“中”、“宽”或“大”的应用磁贴大小。
   
   - **按 AUMID 添加**：使用此选项可添加收件箱 Windows 应用，如记事本或计算器。 输入以下属性： 

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 75b26e178badbaa7905199eb91490134d2b72ba9
-ms.sourcegitcommit: 61ed365f7f8826451c41bcab5e19bef97b5a3c72
+ms.openlocfilehash: 09298013dff42323cc08d1044881c2ab1d81d093
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2019
-ms.locfileid: "54057332"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290547"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>取消注册 Android 设备管理  
 
@@ -35,39 +35,39 @@ ms.locfileid: "54057332"
 
 1. 在公司门户中，转到右上角并点击三个垂直点。 “操作”菜单随即打开。
 
-   ![Android 公司门户应用的图像和操作菜单将在右上角打开。 新的“删除公司门户”选项是第三个选项，位于“我的配置文件“和“设置”的下方，以及“条款和条件”、“帮助和反馈”和“关于”的上方。](./media/android_remove_cp_menu_action_after_1705.png)
+   ![Android 公司门户应用的屏幕截图，其中操作菜单已在右上角打开。 新的“删除公司门户”选项是第三个选项，位于“我的配置文件“和“设置”的下方，以及“条款和条件”、“帮助和反馈”和“关于”的上方。](./media/android_remove_cp_menu_action_after_1705.png)
 
 2. 点击“删除公司门户”。  
 
 3. 将显示一条消息，说明取消注册设备后会发生的情况。 点击“确定”，确认要从公司门户中删除设备。
 
-   ![在操作菜单中选择新的“删除公司门户”选项后，将出现一个确认对话图像。 该对话将通知用户“删除公司门户，设备将不再由公司支持人员管理，并且可能删除对公司数据、公司应用和公司电子邮件的访问权限。” 然后，它会要求用户通过选择“是”确认删除“公司门户”应用。](./media/android_remove_cp_menu_confirmation_after_1705.png)
+   ![在操作菜单中选择新的“删除公司门户”选项后出现确认的屏幕截图。](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-## <a name="removing-data-collected-by-the-company-portal-app"></a>删除由公司门户应用收集的数据  
+## <a name="remove-data-collected-by-the-company-portal-app"></a>删除由公司门户应用收集的数据  
 
 若要删除 Android 适用的公司门户应用存储在设备上的所有数据，请执行以下操作：
 
--   在“应用程序”中单击该应用，然后单击“清除数据”按钮以清除应用数据
--   删除文件夹“\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal”
+-   通过点击“应用程序” >  [应用名称]  > “清除数据”来清除应用数据。
+-   删除以下文件夹：\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal。
 
 ## <a name="uninstall-the-company-portal-app"></a>卸载公司门户应用  
-公司门户是一种设备管理应用。 因此在[取消注册设备管理](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management)之前，都无法将其卸载。 该操作完成后，请点击并按住公司门户应用图标，直到看到“卸载”。 点击“卸载”，从设备中删除应用。  
+公司门户是一种设备管理应用。 因此在取消注册设备管理之前，都无法将其卸载。 该操作完成后，请点击并按住公司门户应用图标，直到看到“卸载”。 点击“卸载”，从设备中删除应用。  
 
 或者，点击“设置” > “应用” > “公司门户” > “卸载”。  
 
-### <a name="remove-company-portal-app-as-device-administrator"></a>以设备管理员身份删除公司门户应用  
-还有最后一种办法，以设备管理员的身份删除该应用，从而从设备卸载它。  
+### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>以设备管理员身份删除公司门户应用  
+还有最后一种办法，以设备管理员的身份从设备卸载该应用。  
 
-如果有公司拥有的设备，组织可能会要求始终在该设备上安装公司门户。 如果卸载该应用，那么在重新安装它之前，可能会无法访问受保护的公司资源，例如电子邮件、应用、WiFi 或 VPN。 若要详细了解如何安装、更新或删除所需应用，请参阅[向 Microsoft Intune 添加应用](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune)。  
+如果有公司拥有的设备，组织可能会要求始终在该设备上安装公司门户。 卸载该应用后，除非重新安装它，否则可能无法访问受保护的公司资源，例如电子邮件、应用、Wi-Fi 或 VPN。 若要详细了解如何安装、更新或删除所需应用，请参阅[向 Microsoft Intune 添加应用](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune)。  
 
-以设备管理员身份完成以下步骤来禁用公司门户。 在 Android 设备上，每项设置的实际名称可能会有所不同。  
+以下是以设备管理员身份禁用公司门户的步骤。 在 Android 设备上，每项设置的实际名称可能会有所不同。  
 
-**Android 步骤，选项 1**：  
+**选项 1**：  
 1. 选择“设置” > “安全性” > “其他安全设置” > “设备管理员”。  
 2. 清除“公司门户”选择。  
 
-**Android 步骤，选项 2**：  
+**选项 2**：  
 1. 选择“设置” > “锁屏界面和安全性” > “其他安全设置” > “设备管理应用”。  
 2. 清除“公司门户”选择。    
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

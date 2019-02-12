@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5eb25c48e3724fdc9277a790d01908e976c75be
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9bbdb56770c154a482ad004f1f3f980809424caf
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54832020"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848502"
 ---
 # <a name="windows-10-and-newer-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Intune 中用于启用 Windows Hello 企业版的 Windows 10（及更高版本）设备设置
 
@@ -46,8 +47,8 @@ ms.locfileid: "54832020"
 - **PIN 中的大写字母**：可以要求最终用户添加大写字母，从而强制实施安全系数更高的 PIN。 选项包括：
 
   - **不允许**（默认）：禁止用户在 PIN 中使用大写字母。 如果未配置这项设置，也会出现此行为。
-  - **允许**：允许用户在 PIN 中使用大写字母，但不是必须使用。
-  - **必需**：用户至少必须在 PIN 中添加一个大写字母。 例如，常见的做法是要求包含至少一个大写字母和一个特殊字符。
+  - **允许**：允许用户在 PIN 中使用特殊字符，但不是必须使用。
+  - **必需**：用户至少必须在 PIN 中添加一个特殊字符。 例如，常见的做法是要求包含至少一个大写字母和一个特殊字符。
 
 - **PIN 中的特殊字符**：可以要求最终用户添加特殊字符，从而强制实施安全系数更高的 PIN。 选项包括：
 

@@ -2,10 +2,10 @@
 title: 通过 Microsoft Intune 使用 PIN 登录 Windows 10 设备 - Azure | Microsoft Docs
 description: 使用 Windows Hello 企业版，用户可使用 PIN、指纹等登录设备。 在 Intune 中为包含这些设置的 Windows 10 设备创建标识保护配置文件，并将配置文件分配到用户组和设备组。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c917294ac11f8f0a19c0f8f361df8d2910cb461c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831372"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837997"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>结合使用 Windows 10 设备上的 Windows Hello 企业版与 Microsoft Intune
 
@@ -60,7 +61,7 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
 
 4. 完成后，选择“确定” > “创建”以保存所做的更改。
 
-此时，配置文件创建完成，并出现在配置文件列表中。 下一步是将此配置文件[分配](device-profile-assign.md)到组。
+此时，配置文件创建完成，并出现在配置文件列表中。 接下来，将此配置文件[分配](device-profile-assign.md)给用户和设备组，以满足需求。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

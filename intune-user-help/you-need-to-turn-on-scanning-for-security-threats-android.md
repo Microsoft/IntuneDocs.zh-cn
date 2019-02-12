@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: c98980cca305bef01dd91e69d00a471b10e741a8
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810e2175faef422eb0ccf9bd24ac8d9b43aee92d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147479"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846904"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>在你的设备上启用安全威胁扫描 
 如果你在不知情的情况下安装了不安全的应用，你的设备数据可能存在风险。 为了保护你设备上的数据，我们建议你： 

@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
-ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55146887"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843436"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>注册 Android 专用设备或完全托管的设备（预览版）
 

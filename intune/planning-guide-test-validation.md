@@ -15,12 +15,13 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2a733eb92dba91c5e11d6ec463eb538df3845fb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112453"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834307"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 测试和验证
 
@@ -28,7 +29,7 @@ ms.locfileid: "53112453"
 
 建议将 IT 支持和支持人员纳入测试阶段，以便创建支持文档，且 IT 支持和支持人员能够轻松提供对该产品的支持。 如果组件或场景在该用例的基础上不起作用，请确保记录必需的更改并附上进行更改的原因。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 建议记录以下内容：
 

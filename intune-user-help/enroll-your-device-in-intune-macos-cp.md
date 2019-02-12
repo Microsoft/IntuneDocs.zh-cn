@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: d54c778923b0d217187f6e4c70e4bc8730788fbc
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260243"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690795"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -57,7 +57,7 @@ ms.locfileid: "48260243"
 
 4. “设备”页将显示托管设备列表或横幅。 显示的内容取决于是否已托管设备。 
     * 若要添加未列出的设备，请选择显示为“点击此处告诉我们你正在使用的设备或添加新设备”的横幅。
-    * 如果没有任何设备，横幅上将显示：“没有任何托管设备。请点击此处添加设备。” 单击横幅添加设备。  
+    * 如果你没有任何设备，横幅显示：你没有任何托管设备。请点击此处添加设备。” 单击横幅添加设备。  
 
      ![“设备”页的屏幕截图，使用红色方框圈出横幅选项，以突出显示单击位置。](./media/CP-enroll-MACOS-1808.png)  
 5.  完成以下步骤，该步骤与公司门户当前显示的消息匹配。  
@@ -93,4 +93,11 @@ ms.locfileid: "48260243"
 
 此外，由于这些其他配置文件不需要单独验证，因此它们可以更快地生成并传递到设备。 
 
-仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。  
+## <a name="updating-the-company-portal-app"></a>更新公司门户应用
+
+与更新任何其他 Office 应用相同，更新公司门户应用也通过 Microsoft AutoUpdate for Mac 完成。 在此处查找有关[更新适用于 macOS 的 Microsoft 应用](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)的详细信息。  
+
+## <a name="next-steps"></a>后续步骤  
+是否需要额外帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。  
+
+

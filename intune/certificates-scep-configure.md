@@ -2,24 +2,25 @@
 title: 在 Microsoft Intune 中使用 SCEP 证书 - Azure | Microsoft Docs
 description: 要在 Microsoft Intune 中使用 SCEP 证书，请配置本地 AD 域，创建证书颁发机构，设置 NDES 服务器，并安装 Intune 证书连接器。 然后创建 SCEP 证书配置文件并将此配置文件分配到组。 另请参阅不同的事件 ID 及其说明，以及 Intune 连接器服务的诊断代码。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597369"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838118"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -556,9 +557,10 @@ ms.locfileid: "53597369"
 | 0x00000409 | CRPSCEPSigningCert_NotFound  | 无法检索签名证书。 验证 Intune 连接器服务配置是否正确，以及 Intune 连接器服务是否正在运行。 此外，验证证书下载事件是否成功。 |
 | 0x00000410 | CRPSCEPDeserialize_Failed  | 未能反序列化 SCEP 质询请求。 验证是否正确安装 NDES 和 Intune 连接器。 |
 | 0x00000411 | CRPSCEPChallenge_Expired  | 由于证书质询已过期，因此请求已被拒绝。 客户端设备可以在从管理服务器获取新的质询后重试。 |
-| 0x0FFFFFFFF | Unknown_Error  | 我们无法完成你的请求，因为发生了服务器端错误。 请重试。 |
+| 0x0FFFFFFFF | Unknown_Error  | 我们无法完成你的请求，因为发生了服务器端错误。 请稍后重试。 |
 
 ## <a name="next-steps"></a>后续步骤
 
 - [使用 PKCS 证书](certficates-pfx-configure.md)，或[从 Symantec PKI 管理器 Web 服务颁发 PKCS 证书](certificates-symantec-configure.md)
 - [添加第三方 CA 以通过 Intune 使用 SCEP](certificate-authority-add-scep-overview.md)
+- 有关其他帮助，请使用[在 Microsoft Intune 中对 SCEP 证书配置文件部署进行故障排除](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune)指南。

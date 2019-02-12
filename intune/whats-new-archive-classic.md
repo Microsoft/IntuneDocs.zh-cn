@@ -15,12 +15,13 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5186af2e02363d74f2f046188168efd38eee363
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112895"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843419"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
 
@@ -32,31 +33,31 @@ ms.locfileid: "53112895"
 
 ### <a name="new-capabilities"></a>新功能
 
-#### <a name="myapps-available-for-managed-browser---822308-822303--"></a>适用于 Managed Browser 的 MyApps <!--822308, 822303-->
+#### <a name="myapps-available-for-managed-browser---822308-822303--"></a>MyApps 可用于托管浏览器 <!--822308, 822303-->
 
 Microsoft MyApps 现在在托管浏览器中具有更好的支持。 面向管理的托管浏览器用户将直接转到 MyApps 服务，他们可在此处访问管理员预配的 SaaS 应用。 面向 Intune 管理的用户将能够继续从内置托管浏览器书签访问 MyApps。
 
-#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Managed Browser 和公司门户的新图标 <!--918433, 918431, 971473-->
+#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>托管浏览器和公司门户的新图标 <!--918433, 918431, 971473-->
 
-Managed Browser 将获得该应用的 Android 和 iOS 版的更新图标。 新图标将包含更新的 Intune 徽章，使其与企业移动性 + 安全性 (EM+S) 中的其他应用更加一致。 可以在 [Intune 应用 UI 页中的新增功能](whats-new-app-ui.md)中查看 Managed Browser 的新图标。
+托管浏览器正在接收 Android 和 iOS 版本应用的更新图标。 新图标将包含更新的 Intune 徽章，使其与企业移动性 + 安全性 (EM+S) 中的其他应用更加一致。 你可以在 [Intune 应用 UI 页面中的新增内容](whats-new-app-ui.md)上查看 Managed Browser 的新图标。
 
-公司门户还正在接收 Android、iOS 和 Windows 版本应用的更新图标，以提高与 EM + S 中其他应用的一致性。 这些图标将于四月至五月底逐步在平台上发布。
+公司门户还正在接收 Android、iOS 和 Windows 版本应用的更新图标，以提高与 EM + S 中其他应用的一致性。 这些图标将在 4 月至 5 月下旬在所有平台中逐步发布。
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 公司门户中的登录进度指示器 <!--953374-->
 
-用户启动或重启应用时，Android 公司门户应用的更新程序将显示登录进度指示器。 允许用户访问应用前，指示器将经历以下新状态：开始是“正在连接...”，然后是“正在登录...”，接下来是“正在查看安全要求...”。 可以在 [Intune 应用 UI 页面中的新增内容](whats-new-app-ui.md)上查看适用于 Android 的公司门户应用的新屏幕。
+用户启动或恢复应用时，Android 公司门户应用的更新会显示进度指示器。 允许用户访问应用前，指示器将经历以下新状态：开始是“正在连接...”，然后是“正在登录...”，接下来是“正在查看安全要求...”。 可以在 [Intune 应用 UI 页面中的新增内容](whats-new-app-ui.md)上查看适用于 Android 的公司门户应用的新屏幕。
 
-#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>阻止应用访问 SharePoint Online <!-- 679339 -->
+#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>阻止应用访问 SharePoint Online<!-- 679339 -->
 
-现在可以创建基于应用的条件访问策略来阻止未向其实施应用保护策略的应用访问 [SharePoint Online](app-based-conditional-access-intune-create.md)。 在基于应用程序的条件访问方案中，可以使用 Azure 门户指定想要有权访问 SharePoint Online 的应用。
+现在可以创建基于应用的条件访问策略以阻止应用（没有对这些应用适用的应用保护策略）访问 [SharePoint Online](app-based-conditional-access-intune-create.md)。 在基于应用程序的条件访问方案中，可以使用 Azure 门户指定想要有权访问 SharePoint Online 的应用。
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>从适用于 iOS 的企业门户到 Outlook for iOS 的单一登录支持 <!--834012-->
-如果用户使用相同帐户在同一设备上登录 iOS 公司门户应用，再也不用登录 Outlook 应用了。 启动 Outlook 应用后，可以选择自己的帐户并自动登录。 我们还在不断努力，以便为其他 Microsoft 应用添加此功能。
+如果用户在同一设备上使用同一帐户登录到适用于 iOS 的公司门户应用，则不再需要登录 Outlook 应用。 用户启动 Outlook 应用时，他们将能够选择自己的帐户并自动登录。 我们也正在致力于为其他 Microsoft 应用添加此功能。
 
 #### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>改进了适用于 iOS 的公司门户应用的状态消息传送 <!--744866-->
-iOS 公司门户应用中现在将显示更具体的新错误消息，以提供有关设备动态的更多可访问信息。 这些错误之前包含在标题为“公司门户暂时不可用”的常规错误消息中。 此外，如果用户在没有 Internet 连接的情况下在 iOS 上启动公司门户，他们现在将在主页上看到显示“无Internet 连接”的持续状态栏。
+现在将在适用于 iOS 的公司门户应用中显示更具体的新错误消息，以提供有关设备状态的更多可访问信息。 这些错误情况以前包含在标题为“公司门户暂时不可用”的常规错误消息中。 此外，如果用户在没有 Internet 连接的情况下在 iOS 上启动公司门户，他们现在将在主页上看到显示“无Internet 连接”的持续状态栏。
 
-#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>改进了 Windows 10 公司门户应用的应用安装状态 <!--676495-->
+#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>改进 Windows 10 公司门户应用的应用安装状态 <!--676495-->
 
 Windows 10 公司门户应用中开始的应用安装包括如下改进：
 -   为 MSI 包提供更快的安装进度报告
@@ -67,15 +68,15 @@ Windows 10 公司门户应用中开始的应用安装包括如下改进：
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>批量注册 Windows 10 设备 <!-- 747607 -->
 
-现在，可以使用 Windows 配置设计器 (WCD)，将运行 Windows 10 创意者更新的大量设备加入 Azure Active Directory 和 Intune。 若要为 Azure AD 租户启用[批量 MDM 注册](windows-bulk-enroll.md)，请创建一个预配包，以使用 Windows 配置设计器将设备加入 Azure AD 租户，然后将预配包应用到要批量注册并管理的企业拥有的设备。 将预配包应用到设备后，它们便会加入 Azure AD、注册使用 Intune，然后即可供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户，可接收分配的策略和所需的应用。 暂不支持执行自助式操作和使用公司门户。
+现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](windows-bulk-enroll.md)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将预配包应用到设备后，它们便会加入 Azure AD、注册使用 Intune，然后即可供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户，可接收分配的策略和所需的应用。 目前不支持自助服务和公司门户方案。
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure 门户中 Intune（公共预览版）的新增功能<!--736542-->
 
-在 2017 年年初，我们将会把管理体验完全迁移到 Azure 上，以便能够在可使用 Graph API 进行扩展的新式服务平台上对核心 EMS 工作流进行强大的集成式管理。
+在 2017 年初，我们会将完整管理体验迁移到 Azure 上，以便能够在可使用图形 API 进行扩展的新式服务平台上对核心 EMS 工作流进行强大且集成的管理。
 
-从本月开始，新建的试用租户将可以在 Azure 门户中看到新管理体验的公开预览版。 在预览状态下，将以循环访问方式交付功能，以及与现有 Intune 控制台等同的体验。
+新的试用租户将于本月开始在 Azure 门户中看到新管理体验的公开预览版。 在预览状态下，将以迭代方式交付现有 Intune 控制台的功能和奇偶校验。
 
-对于 Azure 门户中的管理体验，将使用已宣布的新分组和定位功能；将现有租户迁移为采用新的分组体验时，也会迁移为在租户上预览新管理体验。 与此同时，如果要在租户迁移完成之前测试或查看任何新功能，请注册新的 Intune 试用帐户或参阅[新文档](whats-new.md)。
+对于 Azure 门户中的管理体验，将使用已宣布的新分组和定位功能；将现有租户迁移为采用新的分组体验时，也会迁移为在租户上预览新管理体验。 在此期间，如果想要在租户迁移之前测试或查看任何新功能，请注册新的 Intune 试用帐户或查阅[新文档](whats-new.md)。
 
 在[此处](whats-new.md)可找到 Azure 中 Intune 预览版的新增功能。
 
@@ -83,33 +84,33 @@ Windows 10 公司门户应用中开始的应用安装包括如下改进：
 
 #### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>直接访问 Apple 注册方案 <!--951869-->
 
-对于 2017 年 1 月之后创建的 Intune 帐户，Intune 允许在 Azure 预览门户中使用“注册设备”工作负载直接访问 Apple 注册方案。 以前，只能通过 Azure 门户中的链接访问 Apple 注册预览版。 在 2017 年 1 月之前创建的 Intune 帐户必须先进行一次性迁移，然后才能在 Azure 中使用这些功能。 虽然迁移时间表尚未宣布，但会尽快发布详细信息。 如果现有帐户无法访问注册预览，强烈建议创建试用帐户来测试新体验。
+对于在 2017 年 1 月之后创建的 Intune 帐户，Intune 支持在 Azure 预览门户中使用注册设备工作负荷直接访问 Apple 注册方案。 以前，只能通过 Azure 门户中的链接访问 Apple 注册预览版。 2017 年 1 月之前创建的 Intune 帐户需要进行一次性迁移，然后才能使用 Azure 中的这些功能。 虽然迁移时间表尚未宣布，但会尽快发布详细信息。 强烈建议创建一个试用帐户，在现有帐户无法访问预览版时测试新体验。
 
 #### <a name="whats-coming-for-appx-in-intune-in-the-azure-portal----1000270---"></a>Azure 门户中 Intune 的 Appx 新增功能 <!-- 1000270 -->
 
 在迁移到 Azure 门户中 Intune 期间，我们做出了三项 appx 更改：
 
 1. 在 Intune 控制台中添加新 appx 应用类型，这些类型只能部署到已进行 MDM 注册的设备。
-2. 重新利用现有的 appx 应用类型，使其仅定位通过 Intune PC 代理管理的 PC。
-3. 通过迁移将现有全部 appx 转换成 MDM appx。
+2. 重用现有的 appx 应用类型，以仅面向通过 Intune PC 代理托管的 PC。
+3. 通过迁移将所有现有的 appxs 转换为 MDM appx。
 
-##### <a name="how-does-this-affect-me"></a>这会对我产生哪些影响？
+##### <a name="how-does-this-affect-me"></a>这对我有何影响？
 
-这不会影响通过 Intune PC 代理管理的设备中的任何现有部署。 不过，迁移后，将无法把已迁移的 appx 部署到任何通过 Intune PC 代理管理且以前未定位的新设备。
+这不会影响通过 Intune PC 代理管理的设备中的任何现有部署。 但是，迁移后将无法将这些已迁移的 appx 部署到由先前未面向的 Intune PC 代理托管的任何新设备。
 
-##### <a name="what-action-do-i-need-to-take"></a>我需要采取哪些措施
+##### <a name="what-action-do-i-need-to-take"></a>我需要执行什么操作
 
-迁移后，如果要进行新的 PC 部署，则需要再次将 appx 重新上载为 PC appx。 若要了解详细信息，请参阅 Intune 支持团队博客上的 [Azure 门户中 Intune 的 Appx 更改](https://aka.ms/appxchange)。  
+迁移后，如果要进行新的 PC 部署，则需要将 appx 作为电脑 appx 再次上传。 若要了解详细信息，请参阅 Intune 支持团队博客上的 [Azure 门户中 Intune 的 Appx 更改](https://aka.ms/appxchange)。  
 
-#### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure 门户将替换管理角色
+#### <a name="administration-roles-being-replaced-in-azure-portal"></a>在 Azure 门户中被替换的管理角色
 
-在 Intune 经典门户 (Silverlight) 中使用的现有移动应用程序管理 (MAM) 管理角色（参与者、所有者和只读）被替换为 Intune Azure 门户中一套完整的基于角色的新的管理控制方法 (RBAC)。 迁移到 Azure 门户后，便需要向管理员重新分配这些新的管理角色。 有关 RBAC 和新角色的详细信息，请参阅 [Microsoft Intune 基于角色的访问控制](role-based-access-control.md)。
+在 Intune 经典门户 (Silverlight) 中使用的现有移动应用程序管理 (MAM) 管理角色（参与者、所有者和只读）被替换为 Intune Azure 门户中一套完整的基于角色的新的管理控制方法 (RBAC)。 在迁移到 Azure 门户后，需要将管理员重新分配到这些新的管理角色。 有关 RBAC 和新角色的详细信息，请参阅 [Microsoft Intune 基于角色的访问控制](role-based-access-control.md)。
 
 ### <a name="whats-coming"></a>即将推出
 
-#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了适用于所有平台的公司门户应用的登录体验 <!--User Story 1132123-->
+#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
 
-我们宣布将在接下来的几个月内推出一项更新，用以提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 在 Azure AD 执行此更改后，适用于所有平台的公司门户应用的用户体验都会自动焕然一新。 此外，用户现在还可以使用生成的一次性代码从其他设备登录公司门户。 当用户需要在不使用凭据的情况下登录时，此功能就特别有用。
+我们宣布将在接下来的几个月内推出一项更新，用以提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。
 
 可以在[“应用 UI 中的新增功能”](whats-new-app-ui.md)页看到使用凭据进行登录以前的登录体验和新登录体验，以及从其他设备进行登录的新登录体验的屏幕快照。
 
@@ -122,11 +123,11 @@ Windows 10 公司门户应用中开始的应用安装包括如下改进：
 使用 [Microsoft 合作伙伴中心](https://partnercenter.microsoft.com/)和 [Microsoft Office 365 合作伙伴管理中心](https://portal.office.com/)，可以登录所管理的客户帐户。 作为合作伙伴，未来请使用其中一个网站管理客户。
 
 
-#### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 要求针对应用传输安全进行更新 <!--748318-->
+#### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 将要求更新应用传输安全<!--748318-->
 
-Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求。 ATS 用于对所有通过 HTTPS 的应用通信强制实施更严格的安全措施。 此更改会影响使用 iOS 公司门户应用的 Intune 客户。
+Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求。 使用 ATS 对所有通过 HTTPS 的应用通信实施更严格的安全措施。 此更改会影响使用 iOS 公司门户应用的 Intune 客户。
 
-我们通过强制实施新的 ATS 要求的 Apple TestFlight 计划提供了适用于 iOS 的公司门户应用的可用版本。 如果你想要试用以测试你的 ATS 符合性，请发送电子邮件至 <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a>，并提供你的名字、姓氏、电子邮件地址和公司名称。 请参阅 [Intune 支持博客](https://aka.ms/compportalats)，了解更多详情。
+我们通过强制实施新的 ATS 要求的 Apple TestFlight 计划提供了适用于 iOS 的公司门户应用的可用版本。 如果你想要试用以测试你的 ATS 符合性，请发送电子邮件至 <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a>，并提供你的名字、姓氏、电子邮件地址和公司名称。 请查看 [Intune 支持博客](https://aka.ms/compportalats)，了解更多详细信息。
 
 ## <a name="march-2017"></a>2017 年 3 月
 
@@ -143,9 +144,9 @@ Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求�
 
 可根据通过 Intune 设备符合性策略启用的 Symantec Endpoint Protection Mobile (Skycure) 风险评估，配置 EMS 条件访问策略。 根据检测到的威胁，可使用这些策略允许或阻止不符合设备访问企业资源。 有关详细信息，请参阅 [Symantec Endpoint Protection Mobile 连接器](skycure-mobile-threat-defense-connector.md)。
 
-#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 公司门户应用的新用户体验 <!--621622-->
+#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 适用的公司门户应用的最新用户体验<!--621622-->
 
-适用于 Android 的公司门户应用将更新其用户界面，提供更现代的外观和感受以及更好的用户体验。 值得注意的更新有：
+适用于 Android 的公司门户应用将更新其用户界面，提供更现代的外观和感受以及更好的用户体验。 值得注意的更新包括：
 
 - 颜色:公司门户选项卡标头按 IT 定义的品牌进行着色。
 - 应用：“应用”选项卡中的“特别推荐的应用”和“所有应用”按钮已更新。
@@ -161,7 +162,7 @@ Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求�
 
 #### <a name="signing-script-for-windows-10-company-portal---941642--"></a>对 Windows 10 公司门户的脚本进行签名<!--941642-->
 
-如果你需要下载和旁加载 Windows 10 公司门户应用，现在可以使用脚本简化并精简组织的应用签名过程。   若要下载该脚本及其使用说明，请参阅 TechNet 库中的 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript)（Windows 10 公司门户适用的 Microsoft Intune 签名脚本）。 有关此公告的详细信息，请参阅 Intune 支持团队博客上的[更新 Windows 10 公司门户应用](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)。
+如果你需要下载和旁加载 Windows 10 公司门户应用，现在可以使用脚本简化并精简组织的应用签名过程。   要下载脚本及其使用说明，请参阅 TechNet 库中的 [Windows 10 公司门户的 Microsoft Intune 签名脚本](https://aka.ms/win10cpscript)。 有关此公告的详细信息，请参阅 Intune 支持团队博客上的[更新 Windows 10 公司门户应用](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)。
 
 
 ### <a name="notices"></a>通知
@@ -174,7 +175,7 @@ IOS 10.3 发行版于 2017 年 3 月 27 面向 iOS 用户推出。 所有现有�
 
 #### <a name="improved-support-for-android-users-based-in-china---720444--"></a>改进了对身处中国的 Android 用户的支持<!--720444-->
 
-由于中国地区没有 Google Play 商店，Android 设备必须从中国的市场获取应用。 公司门户通过重定向中国的 Android 用户，从本地应用商店下载公司门户和 Outlook 应用来支持此工作流。 启用条件性访问策略后，将同时改善有关移动设备管理和移动应用程序管理的用户体验。 下列中文应用商店中提供适用于 Android 的公司门户和 Outlook 应用：
+由于中国地区没有 Google Play 商店，Android 设备必须从中国的市场获取应用。 公司门户将支持此工作流，方法是将中国的 Android 用户重定向为从本地应用商店下载公司门户和 Outlook 应用。 对于移动设备管理和移动应用程序管理，此举将改善启用条件性访问策略时的用户体验。 下列中文应用商店中提供适用于 Android 的公司门户和 Outlook 应用：
 
 - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
 - [小米](https://go.microsoft.com/fwlink/?linkid=836947)
@@ -200,8 +201,8 @@ Microsoft 已宣布发布 Microsoft Teams 的通用版本。 适用于 iOS 和 A
 
 ### <a name="new-capabilities"></a>新功能
 
-### <a name="modernizing-the-company-portal-website---753980--"></a>新式公司门户网站 <!--753980-->
-公司门户网站将支持面向不具有托管设备的用户的应用。 为了与其他 Microsoft 产品和服务保持一致，此网站将采用新的对比色配色方案、动态插图和“汉堡”菜单 ![（汉堡菜单的小图，该图片现已添加到公司门户网站左上角，](./media/CP_hamburger_menu.png).
+### <a name="modernizing-the-company-portal-website---753980--"></a>公司门户网站现代化<!--753980-->
+公司门户网站将支持面向不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![（汉堡菜单的小图，该图片现已添加到公司门户网站左上角，](./media/CP_hamburger_menu.png)。
 
 ### <a name="notices"></a>通知
 
@@ -224,10 +225,10 @@ iOS 版公司门户应用内的链接（包括文档和应用链接）将通过 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows 设备的新 MDM 服务器地址<!--893007-->
 Windows 和 Windows Phone 用户如果输入 __manage.microsoft.com__ 作为 MDM 服务器地址（出现提示时），尝试注册设备时将失败。 MDM 服务器地址已从 __manage.microsoft.com__ 更改为 __enrollment.manage.microsoft.com__。 通知用户在注册 Windows 和/或 Windows Phone 时，如果出现提示，请使用 __enrollment.manage.microsoft.com__ 作为 MDM 服务器地址。 无需更改 CNAME 设置。 有关此更改的详细信息，请访问[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)。
 
-#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 公司门户应用的新用户体验 <!--621622-->
-自 3 月起，Android 公司门户应用将根据 [Material Design 指南](https://material.io/guidelines/material-design/introduction.html)打造更加新式的外观。 改进的用户体验包括：
+#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 适用的公司门户应用的最新用户体验<!--621622-->
+从 3 月开始，Android 适用的公司门户应用将按照[材料设计指南](https://material.io/guidelines/material-design/introduction.html)来打造更具现代感的外观。 改进的用户体验包括：
 
-* __颜色__：可以根据自定义调色板对选项卡标题进行着色。
+* __颜色__：可以根据自定义调色板对选项卡标头着色。
 * __界面__：更新了“应用”选项卡中的“特别推荐的应用”和“所有应用”按钮。“搜索”按钮现在是浮动的操作按钮。
 * __导航__：为了更便于导航，“所有应用”以选项卡形式呈现出“特别推荐”、“所有”和“类别”视图。
 * __服务__：提高了“我的设备”和“联系 IT”选项卡的可读性。
@@ -235,15 +236,15 @@ Windows 和 Windows Phone 用户如果输入 __manage.microsoft.com__ 作为 MDM
 可在 [UI 更新页](whats-new-app-ui.md)上查看最初和最后的图像。
 
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>将多个管理工具与适用于企业的 Microsoft 应用商店关联<!--926135-->
-使用多个管理工具部署适用于企业的 Microsoft 应用商店时，以前只能将一个管理工具与适用于企业的 Microsoft 应用商店关联。 现在可将多种管理工具与该应用商店关联，例如 Intune 和 Configuration Manager。 有关详细信息，请参阅[使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用](windows-store-for-business.md)。
+使用多个管理工具部署适用于企业的 Microsoft 应用商店时，以前只能将一个管理工具与适用于企业的 Microsoft 应用商店关联。 现在可以将多个管理工具与应用商店相关联，例如 Intune 和 Configuration Manager。 有关详细信息，请参阅[使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用](windows-store-for-business.md)。
 
 ## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Azure 门户中 Intune（公共预览版）的新增功能 <!--736542-->
 
-在 2017 年年初，我们将会把管理体验完全迁移到 Azure 上，以便能够在可使用 Graph API 进行扩展的新式服务平台上对核心 EMS 工作流进行强大的集成式管理。
+在 2017 年初，我们会将完整管理体验迁移到 Azure 上，以便能够在可使用图形 API 进行扩展的新式服务平台上对核心 EMS 工作流进行强大且集成的管理。
 
-从本月开始，新建的试用租户将可以在 Azure 门户中看到新管理体验的公开预览版。 在预览状态下，将以循环访问方式交付功能，以及与现有 Intune 控制台等同的体验。
+新的试用租户将于本月开始在 Azure 门户中看到新管理体验的公开预览版。 在预览状态下，将以迭代方式交付现有 Intune 控制台的功能和奇偶校验。
 
-对于 Azure 门户中的管理体验，将使用已宣布的新分组和定位功能；将现有租户迁移为采用新的分组体验时，也会迁移为在租户上预览新管理体验。 与此同时，如果要在租户迁移完成之前测试或查看任何新功能，请注册新的 Intune 试用帐户或参阅[新文档](whats-new.md)。
+对于 Azure 门户中的管理体验，将使用已宣布的新分组和定位功能；将现有租户迁移为采用新的分组体验时，也会迁移为在租户上预览新管理体验。 在此期间，如果想要在租户迁移之前测试或查看任何新功能，请注册新的 Intune 试用帐户或查阅[新文档](whats-new.md)。
 
 在[此处](whats-new.md)可找到 Azure 中 Intune 预览版的新增功能。
 
@@ -258,7 +259,7 @@ Windows 和 Windows Phone 用户如果输入 __manage.microsoft.com__ 作为 MDM
 Intune 现在完全支持并可管理 Android 7.1.1。
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>解决 iOS 设备处于非活动状态，或管理控制台不能与其通信的问题 <!--unknown-->
-如果用户的设备失去与 Intune 的联系，可向其提供新的故障排除步骤，帮助他们重新获得公司资源的访问权限。 请参阅[设备处于非活动状态，或管理控制台无法与其通信](troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)。
+如果用户的设备失去与 Intune 的联系，可向其提供新的故障排除步骤，帮助他们重新获得公司资源的访问权限。 请参阅[设备处于非活动状态，或管理控制台不能与其通信](troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)。
 
 ### <a name="notices"></a>通知
 
@@ -273,8 +274,8 @@ Intune 现在完全支持并可管理 Android 7.1.1。
 #### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>iOS 版公司门户链接在应用内打开<!--665954-->
 iOS 版公司门户应用内的链接（包括文档和应用链接）将通过 Safari 的应用内视图直接在公司门户应用中打开。 此更新将与 1 月的服务更新分开提供。
 
-#### <a name="modernizing-the-company-portal-website---753980--"></a>新式公司门户网站 <!--753980-->
-自 2 月起，公司门户网站将支持面向不使用受管理设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![公司门户网站汉堡菜单](./media/CP_hamburger_menu.png).
+#### <a name="modernizing-the-company-portal-website---753980--"></a>公司门户网站现代化<!--753980-->
+从 2 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![公司门户网站汉堡菜单](./media/CP_hamburger_menu.png)。
 
 #### <a name="new-documentation-for-app-protection-policies---583398--"></a>新的应用保护策略文档<!--583398-->
 针对想要使用 Intune 应用包装工具或 Intune App SDK 在 iOS 和 Android 应用中启用应用保护策略（称为 MAM 策略）的管理员和应用开发人员，我们更新了相关文档。
@@ -367,4 +368,4 @@ __对 Windows Phone 8 公司门户的支持__将取消对 Windows Phone 8 公司
 
 
 ### <a name="see-also"></a>另请参阅
-若要详细了解最近的开发情况，请参阅 [Microsoft Intune 中的新增功能](whats-new.md)。
+有关最近开发的详细信息，请参阅 [Microsoft Intune 中的新增功能](whats-new.md)。

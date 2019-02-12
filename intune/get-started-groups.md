@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fcf6f3071e50304216a182a21dd542cace1b6390
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b7e187bb182db0491e055ce3af3833d82e578de
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186454"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842399"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>创建组来管理用户和数据访问
 

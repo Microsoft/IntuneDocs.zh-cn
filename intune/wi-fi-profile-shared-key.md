@@ -15,12 +15,13 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
-ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40711576af9b7799211971418a0b2529d12468cd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52618180"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836381"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自定义设备配置文件，创建具有预共享密钥的 Wi-Fi 配置文件 - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -122,7 +123,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>基于 EAP 的 Wi-Fi 配置文件示例
-以下示例包含基于 EAP 的 Wi-Fi 配置文件的 XML 代码：该示例用于展示正确的格式并提供更多信息。 但它只是一个示例，并非推荐的环境配置。
+下面的示例包含针对基于 EAP 的 Wi-Fi 配置文件的 XML 代码：该示例用于展示正确的格式并提供更多信息。 但它只是一个示例，并非推荐的环境配置。
 
 
 ```
@@ -215,7 +216,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 2. 搜索 XML 文件以找到具有正确配置文件的 XML 文件。
 3. 找到正确的 XML 文件后，复制 XML 代码并将其粘贴到 OMA-URI 设置页的“数据”字段中。
 
-## <a name="best-practices"></a>最佳做法
+## <a name="best-practices"></a>最佳实践
 - 在部署具有 PSK 的 Wi-Fi 配置文件前，请确认该设备能否直接连接到终结点。
 
 - 在轮换密钥（密码或通行短语）时，预计故障时间并进行相应的部署规划。 考虑在非工作时间段推送新 Wi-Fi 配置文件。 此外，警告用户连接性可能会受到影响。

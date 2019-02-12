@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bc2ee6c8281e035cbbb6cf41b7f41c208d3c04c8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112912"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835191"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
 
@@ -120,7 +121,7 @@ ms.locfileid: "53112912"
 
     4.  在顶部选择**新建查询**并执行以下查询：
 
-        -   若要查看所有用户：`select * from [CM_ DBName].[dbo].[User_DISC]`
+        -   查看所有用户：`select * from [CM_ DBName].[dbo].[User_DISC]`
 
         -   若要查看特定用户，请使用下面的查询，其中 %testuser1% 为要查找的用户的 username@domain.com 的占位符：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
@@ -484,14 +485,14 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 |0x80043002、0x80CF3002|帐户处于维护模式。|当帐户处于维护模式时，便无法注册新客户端计算机。 若要查看帐户设置，请登录到你的帐户。|
 |0x80043003、0x80CF3003|帐户被删除。|验证你的帐户和 Intune 订阅是否仍处于活动状态。 若要查看帐户设置，请登录到你的帐户。|
 |0x80043005、0x80CF3005|客户端计算机已停用。|等几个小时并从计算机中删除任何较旧版本的客户端软件，然后重试客户端软件安装。|
-|0x80043006、0x80CF3006|已达到帐户所允许的最大座位数。|贵组织必须购买附加的席位，你才能在服务中注册更多客户端计算机。|
-|0x80043007，0x80CF3007|在安装程序所在的文件夹中找不到证书文件。|在开始安装之前提取所有文件。 请不要重命名或移动任何提取的文件：所有文件必须位于同一文件夹中，否则安装将失败。|
+|0x80043006、0x80CF3006|已达到允许此帐户拥有的最大座位数。|贵组织必须购买附加的席位，你才能在服务中注册更多客户端计算机。|
+|0x80043007、0x80CF3007|在安装程序所在的文件夹中找不到证书文件。|在开始安装之前提取所有文件。 请不要重命名或移动任何提取的文件：所有文件必须位于同一文件夹中，否则安装将失败。|
 |0x8024D015、0x00240005、0x80070BC2、0x80070BC9、0x80CFD015|无法安装软件，因为客户端计算机的重启处于挂起状态。|重启计算机，然后重试客户端软件安装。|
 |0x80070032|未在客户端计算机上找到安装客户端软件所需的一个或多个必备项。|确保所有必需的更新都已安装在客户端计算机上，然后重试客户端软件安装。|
 |0x80043008、0x80CF3008|未能启动 Microsoft Online Management 更新服务。|请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](get-support.md)中所述。|
 |0x80043009、0x80CF3009|已在服务中注册客户端计算机。|你必须先停用客户端计算机，然后才能在服务中重新注册该客户端计算机。|
-|0x8004300B，0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
-|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库(DLL) 的自定义操作引起的。 排查 DLL 问题时，可能需要使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/kb/198038)中描述的工具。|
+|0x8004300B、0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
+|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 排查 DLL 问题时，可能需要使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/kb/198038)中描述的工具。|
 |0x80cf0440|到服务终结点的连接已终止。|试用或付费帐户处于挂起状态。 创建一个新的试用或付费帐户，并重新注册。|
 
 

@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: 313c20699c30d20d1bbc9bb6aea9189a83b61f53
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4783ec9ac1dfa9b1754d1c15f73bf22f35fa11a5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816627"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839648"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>通过 Intune 启用 Better Mobile Threat Defense 连接器
 

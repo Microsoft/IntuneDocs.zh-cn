@@ -2,8 +2,8 @@
 title: 在 Microsoft Intune 中检查安全基线是否成功部署 - Azure | Microsoft Docs
 description: 在 Microsoft Intune MDM 中，检查部署到用户和设备的安全基线的错误、冲突和成功状态。 了解如何使用 Intune 中的客户端日志和报告功能排除故障。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/24/2019
 ms.topic: article
@@ -14,12 +14,13 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28a98a20e5f0b5181628da46ccd662f1f8f503dd
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bfbdad6d98065a691528d4cdada0b6f9377e1109
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070156"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848230"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>在 Microsoft Intune 中监视安全基线和配置文件
 

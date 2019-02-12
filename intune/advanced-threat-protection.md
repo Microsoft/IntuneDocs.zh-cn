@@ -2,10 +2,10 @@
 title: 在 Microsoft Intune 中使用 Windows Defender ATP - Azure | Microsoft Docs
 description: 了解如何在端到端应用场景中启用 Windows Defender 高级威胁防护 (ATP)，包括在 Intune 和 Windows Defender 安全中心（ATP 门户）中启用 ATP，使用 ATP 配置文件载入设备，创建 Intune 设备符合性策略，创建 Azure AD 条件访问策略，以及监视设备符合性。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53167988"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845170"
 ---
-# <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中启用具有条件访问的 Windows Defender ATP
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>使用 Intune 中的条件访问强制执行 Windows Defender ATP的符合性
 
 Windows Defender 高级威胁防护 (ATP) 和 Microsoft Intune 一起协作来帮助免受安全漏洞的威胁，并帮助限制组织中的漏洞影响。
 

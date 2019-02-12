@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba60df2dcec51e1c45e6a84a8fc9831937f70aef
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0d5abe78389d58043b44ba6e7f31854407019c0d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190045"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834121"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
@@ -35,7 +36,7 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 
 要使用 Intune 将 eSIM 部署到设备，需要以下条件：
 
-- 支持 eSIM 的设备（如 Surface LTE）：请参阅[设备是否支持 eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data)。 或者，请参阅[一些已知支持 eSIM 的设备](#esim-capable-devices)的列表（在本文中）。
+- **支持 eSIM 的设备**，例如，Surface LTE：请参阅[设备是否支持 eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data)。 或者，请参阅[一些已知支持 eSIM 的设备](#esim-capable-devices)的列表（在本文中）。
 - 已注册并且由 Intune 托管 MDM 的 Windows 10 Fall Creators Update PC（1709 或更高版本）
 - 移动运营商提供的激活码。 这些一次性使用的激活码被添加到 Intune，并部署到支持 eSIM 的设备。 请联系移动运营商获取 eSIM 激活码。
 
@@ -65,8 +66,11 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
-## <a name="step-1-add-cellular-activation-codes"></a>步骤 1：添加手机网络激活码
+## <a name="step-1-add-cellular-activation-codes"></a>步骤 1：添加手机网络激活代码
 
 移动运营商在以逗号分隔的文件 (csv) 中提供手机网络激活码。 如果有此文件，请使用以下步骤将其添加到 Intune：
 
@@ -108,7 +112,7 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 > - 仅针对设备，不针对用户。
 > - 我们建议创建包含 eSIM 设备的静态 Azure AD 设备组。 使用组即确认仅针对 eSIM 设备。
 
-## <a name="step-3-assign-esim-activation-codes-to-devices"></a>步骤 3：将 eSIM 激活码分配给设备
+## <a name="step-3-assign-esim-activation-codes-to-devices"></a>步骤 3：将 eSIM 激活代码分配给设备
 
 将配置文件分配给包含 eSIM 设备的 Azure AD 组。
 
@@ -145,10 +149,10 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 
     Intune 显示针对设备的激活码的发送和安装状态。
 
-    - 设备未同步：创建 eSIM 部署策略后，目标设备未联系 Intune
-    - 激活挂起：Intune 在设备上主动安装激活码时的临时状态
-    - 激活：激活码安装成功
-    - 激活失败：激活码安装失败 - 请参阅故障排除指南。
+    - **设备未同步**：创建 eSIM 部署策略后，目标设备未联系 Intune
+    - **激活挂起**：Intune 在设备上主动安装激活代码时的临时状态
+    - **活动**：激活代码安装成功
+    - **激活失败**：激活代码安装失败 - 请参阅故障排除指南。
 
 #### <a name="view-the-detailed-device-status"></a>查看设备状态详情
 
@@ -157,12 +161,12 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅。
 2. 选择“设备状态”。 Intune 会显示有关设备的其他详细信息：
 
-  - 设备名称：目标设备的名称
-  - 用户：注册设备的用户
-  - ICCID：设备上安装的激活码内的唯一代码，由移动运营商提供
-  - 激活状态：设备上激活码的 Intune 发送和安装状态
-  - 手机网络状态：由移动运营商提供的状态。 跟进移动运营商进行故障排除。
-  - 上次签入时间：设备上次与 Intune 通信的日期
+  - **设备名**：目标设备的名称
+  - **用户**：注册设备的用户
+  - **ICCID**：移动运营商在设备上安装的激活代码内提供的唯一代码
+  - **激活状态**：设备上激活代码的 Intune 发送和安装状态
+  - **手机状态**：由移动运营商提供的状态。 跟进移动运营商进行故障排除。
+  - **上次签入时间**：设备上次与 Intune 通信的日期
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>监视实际设备上的 eSIM 配置文件详细信息
 
@@ -190,8 +194,8 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 - 确保 csv 文件格式正确。 确认该文件不包含重复代码、多个移动运营商或不同的流量套餐。 请记住，每个文件对于移动运营商和手机网络流量套餐必须是唯一的。
 - 创建仅包含目标 eSIM 设备的静态设备 Azure AD 组。
 - 如果部署状态存在问题，请检查以下内容：
-  - 文件格式不正确：请参阅“步骤 1：添加手机网络激活码”（在本文中），了解如何正确设置文件格式。
-  - 手机网络激活失败，联系移动运营商：激活码可能无法在其网络中激活。 或者，配置文件下载和手机网络激活失败。
+  - **文件格式不正确**：请参阅本主题中的**步骤 1：添加手机网络激活代码**（在本文中），了解如何正确设置文件格式。
+  - **手机网络激活失败，请联系移动运营商**：激活代码可能未在其网络中激活。 或者，配置文件下载和手机网络激活失败。
 
 ## <a name="next-steps"></a>后续步骤
 [配置设备配置文件](device-profiles.md)

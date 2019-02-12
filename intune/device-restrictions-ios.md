@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune; seodec18
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 94e09f413ea0e6b3811c7c19a93d188ac15ee04c
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380508"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230080"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 设备设置
 
@@ -322,12 +322,16 @@ ms.locfileid: "54380508"
 | com.apple.compass           | 指南针      | Apple     |
 | com.apple.MobileAddressBook | 联系人     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | 文件        | Apple     |
 | com.apple.mobileme.fmf1     | 查找好友 | Apple     |
 | com.apple.mobileme.fmip1    | 查找 iPhone  | Apple     |
 | com.apple.gamecenter        | 游戏中心  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | 运行状况       | Apple     |
+| com.apple.Home              | 住宅         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
 | com.apple.MobileStore       | iTunes 商店 | Apple     |
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
@@ -345,8 +349,10 @@ ms.locfileid: "54380508"
 | com.apple.reminders         | 提醒    | Apple     |
 | com.apple.MobileSafari      | Safari       | Apple     |
 | com.apple.Preferences       | 设置     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 股票       | Apple     |
 | com.apple.tips              | 提示         | Apple     |
+| com.apple.TV                | TV           | Apple     |
 | com.apple.videos            | 视频       | Apple     |
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | 电子钱包       | Apple     |

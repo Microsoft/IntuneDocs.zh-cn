@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203495"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841328"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 配置托管应用，以满足组织的安全要求，并保护工作和学校数据。 这些应用面向设备提供，以供自动安装和使用。 

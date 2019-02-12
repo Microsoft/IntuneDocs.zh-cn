@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1a6019365b03a54e5897bc8788c171ef969e0d1e
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ec227fc3057f80e94ae58ce68c19f06b7dba8bc5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032363"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848468"
 ---
 # <a name="reference-for-application-entities"></a>应用程序实体引用
 
@@ -37,7 +38,7 @@ ms.locfileid: "53032363"
 
 AppRevision 实体列出了应用的所有版本。
 
-| 属性  | 说明 | 示例 |
+| 属性  | 描述 | 示例 |
 |---------|------------|--------|
 | AppKey |应用的唯一标识符。 |123 |
 | ApplicationId |应用的唯一标识符 - 类似于 AppKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |
@@ -59,7 +60,7 @@ AppRevision 实体列出了应用的所有版本。
 
 AppTypes 实体列出了应用的安装源。
 
-| 属性  | 说明 |
+| 属性  | 描述 |
 |---------|------------|
 | AppTypeID |类型 ID |
 | AppTypeKey |密钥的代理键 |
@@ -67,7 +68,7 @@ AppTypes 实体列出了应用的安装源。
 
 ### <a name="example"></a>示例
 
-| AppTypeID  | 名称 | 说明 |
+| AppTypeID  | 名称 | 描述 |
 |---------|------------|--------|
 | 0 |Android 应用商店应用 | Android 应用商店应用。 |
 | 1 |Android LOB 应用 | Android 业务线应用。 |
@@ -88,7 +89,7 @@ AppTypes 实体列出了应用的安装源。
 
 VppProgramTypes 实体列出了应用的可能 VPP 计划类型。
 
-| 属性  | 说明 |
+| 属性  | 描述 |
 |---------|------------|
 | VppProgramTypeID | 类型 ID。 |
 | VppProgramTypeKey | 密钥的代理键。 |
@@ -96,7 +97,7 @@ VppProgramTypes 实体列出了应用的可能 VPP 计划类型。
 
 ### <a name="example"></a>示例
 
-| VppProgramID  | 名称 | 说明 |
+| VppProgramID  | 名称 | 描述 |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft 的 VPP 计划。 |
 | 00000000-0000-0000-0000-000000000000 | 尚未提供 | 默认值，无 VPP。 |
@@ -108,7 +109,7 @@ VppProgramTypes 实体列出了应用的可能 VPP 计划类型。
 
 ApplicationInventory 项列出了收集清单时在设备上找到的应用程序。
 
-| 属性  | 说明 |
+| 属性  | 描述 |
 |---------|------------|
 | DeviceKey | 这是对包含 Intune 设备 ID 的“设备”表的引用。 |
 | DateKey | 对表明清单日期的日期表格的引用。 |
@@ -120,7 +121,7 @@ ApplicationInventory 项列出了收集清单时在设备上找到的应用程�
 
 MobileAppInstallState 实体表示已分配到包含设备和/或用户的组的移动应用的安装状态。
 
-| 属性 | 说明 |
+| 属性 | 描述 |
 |---|---|
 | AppInstallStateKey | 帐户的应用安装状态的唯一 ID。 |
 | AppInstallState | 应用安装状态的枚举值。 |
@@ -131,7 +132,7 @@ MobileAppInstallState 实体表示已分配到包含设备和/或用户的组的
 MobileAppDeviceUserInstallStatus 表示给定设备和用户的移动应用安装状态。
 
 
-|      属性      |                                                         说明                                                         |
+|      属性      |                                                         描述                                                         |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------|
 |      DateKey       |                                  记录应用安装状态的当天日期的键。                                  |
 |       AppKey       |                             用于标识 AppRevision 实例的移动应用键。                              |

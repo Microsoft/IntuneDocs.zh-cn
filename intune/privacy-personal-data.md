@@ -2,8 +2,8 @@
 title: Intune 中的隐私和个人数据
 description: 了解 Intune 中收集和处理哪些个人数据。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/18/2018
 ms.topic: article
@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 98debd35941cacd3b83bd47805cc70ccc9afb5cc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 58b34b7967aeceba8f34e23fbff090c5457fe66f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181016"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838897"
 ---
 # <a name="privacy-and-personal-data-in-intune"></a>Intune 中的隐私和个人数据
 

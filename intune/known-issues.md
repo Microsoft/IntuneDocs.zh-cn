@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 985c3b2cf3de712e5441f72c3a9f52da6e482fcd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112368"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842416"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune 中的已知问题
 
@@ -54,7 +55,7 @@ ms.locfileid: "53112368"
 
 你无法查看从 Azure 门户中的 Azure 经典门户中迁移的策略的状态信息。 但可以继续在经典门户中查看这些策略的报表。 若要查看已迁移配置策略的状态信息，请在 Azure 门户中重新创建这些策略。
 
-## <a name="apps"></a>“应用”
+## <a name="apps"></a>应用
 
 
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>针对某些 VPP 应用的多个应用安装提示

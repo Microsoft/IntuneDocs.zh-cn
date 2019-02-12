@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7fbe3371d86d02247922c87680605c9ea3a1f4df
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817035"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845833"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入门：创建适用于 iOS 的电子邮件设备配置文件
 
