@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 1/28/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,13 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 08848853a70d0fbdabeb123960f36dc19478e6c2
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89945a1b5036ff298a49bba444b23a8f317681b1
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230046"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086159"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -32,7 +33,7 @@ ms.locfileid: "55230046"
 | Setting | 如何使用 | 默认值 |
 |------|------|------|
 | **将组织数据备份到 Android 备份服务** | 选择“阻止”可阻止此应用将工作或学校数据备份到 [Android 备份服务](https://developer.android.com/google/backup/index.html)。<br><br> 选择“允许”可允许此应用备份工作或学校数据。| **允许** |
-| 将组织数据发送到其他应用 | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> <p>默认情况下，Intune 允许向一些豁免应用和服务传输数据。 此外，如果需要允许将数据传输到不支持 Intune APP 的应用，则可以创建自己的豁免项目。 有关详细信息，请参阅[数据传输豁免](#Data-transfer-exemptions)。<p>此策略也适用于 Android 应用链接。  通用 Web 链接由“在 Intune Managed Browser 中打开应用链接”策略设置托管。<p>**注意：** Intune 目前不支持 Android Instant Apps 功能。Intune 将阻止进/出该应用的任何数据连接。有关详细信息，请参阅 Android 开发人员文档中的 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html)。</p>| **所有应用** | 
+| 将组织数据发送到其他应用 | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> <p>默认情况下，Intune 允许向一些豁免应用和服务传输数据。 此外，如果需要允许将数据传输到不支持 Intune APP 的应用，则可以创建自己的豁免项目。 有关详细信息，请参阅[数据传输豁免](#Data-transfer-exemptions)。<p>此策略也适用于 Android 应用链接。  通用 Web 链接由“在 Intune Managed Browser 中打开应用链接”策略设置托管。<p>**注意：** Intune 目前不支持 Android Instant Apps 功能。Intune 将阻止进/出该应用的任何数据连接。有关详细信息，请参阅 Android 开发人员文档中的 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html)*。</p>| **所有应用** | 
 |<ul><ui> **选择要豁免的应用** | 为上一选项选择“策略托管应用”时，此选项才可用。 | |
 | **从其他应用接收数据** | 指定哪些应用可将数据传输到此应用： <ul><li>**策略托管应用**：仅允许从其他策略托管应用进行传输。</li><li>**所有应用**：允许从任何应用传输的数据。</li><li>**无**：不允许从任何应用传输数据，包括其他策略托管应用。 </li></ul> <p>有一些豁免应用和服务，Intune 可能会允许从其传输数据。 有关应用和服务的完整列表，请参阅[数据传输豁免](#data-transfer-exemptions)。 | **所有应用** |
 | **保存组织数据的副本** | 选择“阻止”，在此应用中禁用使用“另存为”选项。 如果想要允许使用“另存为”，则选择“允许”。 **注意：** Microsoft Excel、OneNote、PowerPoint 和 Word 支持此设置。它也可能受第三方和 LOB 应用支持。| **允许** |  
@@ -105,7 +106,7 @@ ms.locfileid: "55230046"
 | <ul><ul><ui>**天数** | “PIN 重置间隔的天数”设置为“是”时，指定 PIN 重置所需的时间。 | **0** | 
 |<ul><ui> **设置设备 PIN 时的应用 PIN** | 如果设置为“禁用”，则设置了设备 PIN 的 MDM 注册设备上不需要应用 PIN。   | **启用** |
 | **用于访问的工作或学校帐户凭据** | 选择“需要”，要求用户使用其工作或学校帐户而非输入 PIN 进行登录以访问应用。 设置为“需要”并且 PIN 或生物识别提示已打开时，将同时显示公司凭据以及 PIN 或生物识别提示。 | **不需要** |
-| **在(非活动状态的分钟数)后重新检查访问要求** | 配置应用要求用户再次指定访问要求之前必须经过的非活动状态的分钟数。  <br><br>**注意：** 在 Android 上，所有 Intune 托管应用均共享此 PIN。*应用离开设备主屏幕后，就会重置 PIN 计时器。在此设置中定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入此 PIN。| **30** |
+| **在(非活动状态的分钟数)后重新检查访问要求** | 配置应用要求用户再次指定访问要求之前必须经过的非活动状态的分钟数。  <br><br>**注意：** 在 Android 上，所有 Intune 托管应用均共享此 PIN。应用离开设备主屏幕后，就会重置 PIN 计时器。在此设置中定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入此 PIN。| **30** |
 
 
 > [!NOTE]  
