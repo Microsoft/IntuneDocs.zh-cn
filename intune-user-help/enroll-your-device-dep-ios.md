@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
-ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241790"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847754"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>在管理中注册组织提供的 iOS 设备
 
@@ -48,7 +49,7 @@ ms.locfileid: "43241790"
 
 4. 连接 Wi-Fi 后，随即显示“配置”屏幕。 它会显示“[你的公司] 将自动配置你的设备”。
 
-   配置允许 [你的公司] 无线管理此设备。管理员可以帮助你设置电子邮件和网络帐户、安装和配置应用以及远程管理设置。管理员可能禁用功能、安装和删除应用、监视和限制 Internet 流量以及远程擦除此设备。
+   配置允许 [你的公司] 无线管理此设备。管理员可以帮助你设置电子邮件和网络帐户、安装和配置应用以及远程管理设置。管理员可能禁用功能、安装和删除应用、监视和限制 Internet 流量以及远程擦除此设备。**
  
    配置提供者：[贵公司的] iOS 团队 [地址]
 
