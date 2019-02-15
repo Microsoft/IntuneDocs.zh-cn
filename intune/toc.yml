@@ -229,6 +229,45 @@ items:
       href: enrollment-report-company-portal-abandon.md
     - name: 设备注册疑难解答
       href: troubleshoot-device-enrollment-in-intune.md
+  - name: 管理设备
+    href: device-management.md
+    items:
+    - name: 设备管理功能
+      href: device-management-capabilities.md
+    - name: 绕过激活锁定
+      href: device-activation-lock-bypass.md
+    - name: 管理 Windows Fresh Start
+      href: device-fresh-start.md
+    - name: 找到丢失的 iOS 设备
+      href: device-locate.md
+    - name: 启用 iOS 丢失模式
+      href: device-lost-mode.md
+    - name: 开启 iOS 监督模式
+      href: device-supervised-mode.md
+    - name: 锁定设备
+      href: device-remote-lock.md
+    - name: 重置密码
+      href: device-passcode-reset.md
+    - name: 重启设备
+      href: device-restart.md
+    - name: 注销当前用户
+      href: device-logout-user.md
+    - name: 删除用户
+      href: device-remove-user.md
+    - name: 擦除设备
+      href: device-erase.md
+    - name: 远程控制移动设备
+      href: device-profile-android-teamviewer.md
+    - name: Windows 10 PIN 重置
+      href: device-windows-pin-reset.md
+    - name: 安装 Exchange 服务连接器
+      href: exchange-service-connector-configure.md
+    - name: 同步设备
+      href: device-sync.md
+    - name: 检查设备清单
+      href: device-inventory.md
+    - name: 删除设备
+      href: devices-wipe.md
   - name: 设置设备合规性
     items:
     - name: 符合性概述
@@ -959,9 +998,9 @@ items:
       href: data-outside-protect.md
     - name: 防止非受管理设备上的数据泄露
       href: data-leak-prevention.md
-ms.openlocfilehash: 3b178658fad3e94d09dcd5979e155b8097753ffd
-ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
+ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56240038"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302194"
