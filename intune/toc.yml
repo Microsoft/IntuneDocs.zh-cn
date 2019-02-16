@@ -372,7 +372,8 @@ items:
       - name: 安装 Exchange 本地连接器
         href: exchange-connector-install.md
       - name: 创建并分配条件访问策略
-        href: conditional-access-exchange-create.md
+      - name: 基于设备的条件访问策略
+        href: create-conditional-access-intune.md
       - name: 从 Intune 经典门户重新分配条件访问策略
         href: conditional-access-intune-reassign.md
       - name: 基于应用的条件性访问
@@ -998,9 +999,9 @@ items:
       href: data-outside-protect.md
     - name: 防止非受管理设备上的数据泄露
       href: data-leak-prevention.md
-ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 1183db94d839619e1130261345f6988a627938bb
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302194"
+ms.locfileid: "56307849"
