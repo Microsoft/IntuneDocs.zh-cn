@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 951db22026725c2ec2e9c2be340bcccd44b2528b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 383370aaaca10cb44b614be6e250218106406cb4
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848094"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307747"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>在 Intune 中监视本地 Exchange 和 Exchange Online 的条件性访问符合性
 
-从 Intune 1704 版本开始，管理员可以查看与 Exchange ActiveSync 设备记录相关的报告信息。这些记录通过本地 Exchange 连接器或 Intune 服务到服务连接器（Exchange Online 连接器）与 Intune 同步。 条件访问符合性报告将提供具有不同同步状态的设备摘要：
+从 Intune 1704 版本开始，管理员可以查看与 Exchange ActiveSync 设备记录（通过本地 Exchange Connector 或 Intune 服务到服务连接器（Exchange Online 连接器）与 Intune 同步）相关的报告信息。 条件访问符合性报告将提供具有不同同步状态的设备摘要：
 
 -   **允许**
 
@@ -36,11 +36,11 @@ ms.locfileid: "55848094"
 
 1.  转到 [Azure 门户](https://portal.azure.com/)，然后使用 Intune 凭据登录。
 
-2.  成功登录后，你会看到 Azure 仪表板。
+2.  成功登录后，会看到“Azure 仪表板”。
 
-3.  从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入“Intune”。  ****  **** 
+3.  从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
-4.  选择“Intune”，你会看到 Intune 仪表板。  ****
+4.  选择“Intune”，将看到“Intune 仪表板”。
 
 5.  选择“条件访问”，然后选择“概述”。
 
