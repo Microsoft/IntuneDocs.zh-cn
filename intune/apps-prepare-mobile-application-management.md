@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834766"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325429"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -87,7 +87,6 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |允许应用从其他应用接收数据|X|X|
 |限制使用其他应用剪切、复制和粘贴|X|X|
 |访问需要简单 PIN|X|X|
-|使用 Intune PIN 替换内置应用 PIN|X||
 |指定重置 PIN 前的尝试次数|X|X|
 |允许使用指纹而不是 PIN|X|X|
 |允许面部识别而非 PIN（仅限 iOS）|X|X|
@@ -98,8 +97,8 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |指定离线宽限期|X|X|
 |阻止屏幕捕捉（仅限于 Android 设备）|X|X|
 |支持未进行设备注册的 MAM|X|X|
-|完全擦除|X|X|
-|选择性擦除 <br><br>**注意：** 对于 iOS，应用会随管理配置文件一起删除。|X||
+|完全擦除应用数据|X|X|
+|多标识方案中的工作和学校数据的选择性擦除 <br><br>**注意：** 对于 iOS，应用会随管理配置文件一起删除。|X||
 |防止“另存为”|X||
 |目标应用程序配置|X||
 |支持多身份标识|X||

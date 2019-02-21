@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b68206fd2170dd2bc156d844ae83caafaa08180
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ba3e4ae88423183d5d0317dedb59715d2adb4e11
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836568"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240021"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 将托管 Google Play 应用添加到 Android 企业设备
 
@@ -41,8 +41,8 @@ Android 企业是适用于 Android 工作配置文件设备、专用/展台设�
 >[!NOTE]
 >在使用 Microsoft Intune 时，我们建议使用 Microsoft Edge 或 Google Chrome 浏览器。
 
-## <a name="managed-google-play-app-type"></a>“托管 Google Play”应用类型 
-使用“托管 Google Play”应用类型，可以专门将[托管 Google Play 应用](https://play.google.com/work/search?q=microsoft&c=apps)添加到 Intune。 作为 Intune 管理员，现在可以在 Intune 中浏览、搜索、批准、同步和分配已批准的托管 Google Play 应用。  不再需要单独转到托管 Google Play 控制台，也不再需要重新进行身份验证。 
+## <a name="managed-google-play-app-type"></a>“托管 Google Play”应用类型
+使用“托管 Google Play”应用类型，可以专门将[托管 Google Play 应用](https://play.google.com/work/search?q=microsoft&c=apps)添加到 Intune。 作为 Intune 管理员，现在可以在 Intune 中浏览、搜索、批准、同步和分配已批准的托管 Google Play 应用。  不再需要单独转到托管 Google Play 控制台，也不再需要重新进行身份验证。
 
 > [!NOTE]
 > 若要使用 Intune 同步托管 Google Play 应用，请参阅[使用 Intune 同步托管 Google Play 应用](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)
@@ -55,11 +55,12 @@ Android 企业是适用于 Android 工作配置文件设备、专用/展台设�
 3. 在“Intune”窗格中，依次选择“客户端应用” > “应用”。
 5. 在“应用”窗格中，选择“添加”。
 6. 在“应用类型”下拉列表框中，选择“托管 Google Play”。
-7. 选择“托管 Google Play - 批准应用”，以搜索已批准的托管 Google Play 应用。
-8. 单击要添加的各个应用。 然后，
-9. 单击“批准”以批准托管 Google Play 应用，再单击“批准”以接受应用权限。 
-10. 单击“确定”，以添加一个或多个应用。
-11. 单击“添加应用”窗格中的“添加”，以与托管 Google Play 服务同步。
+7. 选择“托管 Google Play - 批准”可打开托管的 Google Play 目录。
+8. 使用搜索框搜索想要添加的应用。
+9. 单击“批准”以批准托管 Google Play 中的应用，再单击“批准”以接受应用权限。
+10. 选择“批准设置”窗口中的“应用请求新的权限时始终批准”，然后单击“保存”。 如果不选择此选项，将需要在应用开发人员发布更新时手动批准所有新权限。  这将导致应用安装和更新暂停，直到批准该权限。 为此，建议选择此选项以自动批准新权限。 
+11. 单击“确定”以添加已批准的应用。
+12. 单击“同步应用”窗格上的“同步”，以与托管 Google Play 服务同步。
 
 ## <a name="synchronize-a-managed-google-play-app-with-intune-alternative"></a>使用 Intune 同步托管 Google Play 应用（备用）
 若要使用 Intune 同步托管 Google Play 应用，而不是直接使用 Intune 添加它，请按照下列步骤操作。
@@ -75,8 +76,8 @@ Android 企业是适用于 Android 工作配置文件设备、专用/展台设�
     下面的示例选择了 Microsoft Excel 应用。
 
     ![托管的 Google Play 应用商店中的“批准”按钮](media/approve.png)
-    
-   一个用于该应用的窗口会打开，请你为该应用授予执行各种操作的权限。 
+
+   一个用于该应用的窗口会打开，请你为该应用授予执行各种操作的权限。
 
 4. 选择“批准”，接受应用权限并继续。
 
@@ -86,7 +87,7 @@ Android 企业是适用于 Android 工作配置文件设备、专用/展台设�
 
     ![用于处理新应用权限请求的选项](media/approve-app-settings.png)
 
-    应用将获得批准并显示在 IT 管理员控制台中。 接下来，可以[将 Android 工作配置文件应用与 Intune 同步](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)。 
+    应用将获得批准并显示在 IT 管理员控制台中。 接下来，可以[将 Android 工作配置文件应用与 Intune 同步](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)。
 
 ### <a name="sync-a-managed-google-play-app-with-intune"></a>将托管的 Google Play 应用与 Intune 同步
 
@@ -121,7 +122,7 @@ Android 企业需要用户先在托管的 Google Play Web 控制台中批准应�
 3. 选择“更新”选项卡，并检查是否有任何应用需要更新。  
     列出的所有应用都需要新权限，且在应用新权限之前不会进行分配。
 
-或者，可将 Google Play 配置为根据每个应用的情况自动重新审批应用权限。 
+或者，可将 Google Play 配置为根据每个应用的情况自动重新审批应用权限。
 
 ## <a name="working-with-a-line-of-business-app-from-the-managed-google-play-store"></a>从托管的 Google Play 应用商店中使用业务线应用
 
@@ -139,10 +140,9 @@ Android 企业需要用户先在托管的 Google Play Web 控制台中批准应�
 5. 在该商店的“应用”节点中，验证是否显示已发布的应用。  
     应用已自动获得批准，可与 Intune 同步。
 
-## <a name="delete-managed-google-play-apps"></a>删除托管 Google Play 应用 
+## <a name="delete-managed-google-play-apps"></a>删除托管 Google Play 应用
 必要时，可以从 Microsoft Intune 中删除托管 Google Play 应用。 若要删除托管 Google Play 应用，请在 Azure 门户中打开“Microsoft Intune”，并依次选择“客户端应用” > “应用”。 在应用列表中，选择托管 Google Play 应用右侧的省略号 (...)，再从随即显示的列表中选择“删除”。 从应用列表删除托管的 Google Play 应用时，托管的 Google Play 应用会自动变为未批准状态。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [将应用分配给组](apps-deploy.md) 
-
+- [将应用分配给组](apps-deploy.md)

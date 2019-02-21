@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08e6c7657eeba7a41b9927e736fe7f4fc07e25e6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a57dca7f6b817177cbd131e969c1b5aa52a248a8
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848570"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307764"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>基于角色的管理控制 (RBAC) 与 Microsoft Intune
 
@@ -29,7 +29,8 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 - **角色定义**：角色名称、角色管理的资源，以及对每个资源获得的授权。
 - **成员**：获得授权的用户组。
-- **范围**：成员可以管理的用户组或设备组。
+- **作用域(组)**：成员可以管理的用户组或设备组。
+- **[作用域(标记)](https://docs.microsoft.com/intune/scope-tags)**：应用角色分配的标记。
 - **分配**：在定义、成员和作用域已配置完成后，角色就会进行分配。
 
 ![Intune RBAC 示例](./media/intune-rbac-1.PNG)
@@ -82,20 +83,22 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“角色” > “所有角色”。
-4. 在“Intune 角色 - 所有角色”窗格上，选择要分配的内置角色。
+3. 在“Intune”边栏选项卡上，选择“角色” > “所有角色”。
+4. 在“Intune 角色 - 所有角色”边栏选项卡上，选择要分配的内置角色。
 
-5. 在<角色名称> -“概述”窗格上，依次选择“管理”、“分配”。
+5. 在“<角色名称> - 概述”边栏选项卡上，选择“管理” > “分配”。
 
-6. 在“自定义角色”窗格上，选择“分配”。
+6. 在“自定义角色”边栏选项卡，选择“分配”。
 
-7. 在“角色分配”窗格上，输入分配的“名称”和可选“说明”。
+7. 在“角色分配”边栏选项卡上，输入分配的“分配名称”和可选“分配说明”。
 
-8. 对于“成员”，选择包含要对其授予权限的用户的组。
+8. 对于“成员(组)”，选择包含要对其授予权限的用户的组。
 
-9. 对于“作用域”，选择包含上述成员将有权管理的用户的组。
-<br></br>
-10. 完成后，选择“确定”。 新分配将显示在分配列表中。
+9. 对于“作用域(组)”，选择包含上述成员将有权管理的用户的组。
+
+10. 对于“作用域(标记)”，选择将要应用此角色分配的标记。
+
+11. 完成后，选择“确定”。 新分配将显示在分配列表中。
 
 ### <a name="intune-rbac-table"></a>Intune RBAC 表
 
@@ -116,31 +119,21 @@ RBAC 可以帮助你控制组织中哪些人员可执行各种 Intune 任务，�
 
 2. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
-3. 选择“Intune” > “角色” > “所有角色” > “添加自定义”。
+3. 选择“Intune” > “角色” > “所有角色” > “添加”。
 
-4. 在“添加自定义角色”窗格上，输入新角色的名称和说明，然后单击“权限”。
+4. 在“添加自定义角色”边栏选项卡上，输入新角色的名称和说明，然后单击“权限”。
 
-5. 在“权限”窗格上，选择要用于此角色的权限。 使用 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)帮助你确定要应用哪些权限。
+5. 在“权限”边栏选项卡上，选择要用于此角色的权限。 使用 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)帮助你确定要应用哪些权限。
 
-6. 完成后，选择“确定”。
+6. 在“作用域(标记)”边栏选项卡上，选择将要应用此自定义角色的标记。
 
-7. 在“添加自定义角色”窗格上，单击“创建”。 新角色会显示在“Intune 角色 - 所有角色”窗格的列表中。
+7. 完成后，选择“确定”。
+
+7. 在“添加自定义角色”边栏选项卡上，单击“创建”。 新角色会显示在“Intune 角色 - 所有角色”边栏选项卡上的列表中。
 
 ### <a name="to-assign-a-custom-role"></a>若要分配自定义角色
 
-1. 在“Intune 角色 - 所有角色”窗格上，选择要分配的自定义角色。
-
-2. 在<角色名称> -“概述”窗格上，依次选择“管理”、“分配”。 在此窗格上，还可以编辑或删除现有角色。
-
-3. 在“自定义角色”窗格上，选择“分配”。
-
-4. 在“角色分配”窗格上，输入分配的“名称”和可选“说明”。
-
-5. 对于“成员”，选择包含要对其授予权限的用户的组。
-
-6. 对于“作用域”，选择包含上述成员将有权管理的用户的组。
-
-7. 完成后，选择“确定”。 新分配将显示在分配列表中。
+请按照与[分配内置角色](https://docs.microsoft.com/intune/role-based-access-control#to-assign-a-built-in-role)相同的步骤操作，并选择自定义角色。
 
 ## <a name="next-steps"></a>后续步骤
 

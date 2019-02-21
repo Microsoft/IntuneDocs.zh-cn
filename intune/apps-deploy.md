@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838761"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240055"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 将应用分配到组
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-向 Microsoft Intune [添加应用](apps-add.md)后，可将应用分配给用户和设备。 值得注意的是，无论设备是否由 Intune 管理，都可以将应用分配到设备。 
+向 Microsoft Intune [添加应用](apps-add.md)后，可将应用分配给用户和设备。 值得注意的是，无论设备是否由 Intune 管理，都可以将应用分配到设备。
 
 > [!NOTE]
 > 设备组不支持可用部署意图，仅用户组支持。
@@ -124,8 +124,19 @@ ms.locfileid: "55838761"
 > 仅针对托管 iOS 应用商店应用：将这些应用添加到 Microsoft Intune 并将其分配为“必需”时，将自动根据“必需”和“可用”意向进行创建。<br><br>
 > 标记为所需意图的 iOS 应用商店应用（不是 iOS VPP 应用）将在设备签入时在设备上执行，并且还会显示在公司门户应用中。
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise APP-WE 应用部署
-对于没有注册 (APP-WE) 部署方案的未注册应用保护策略中的 Android 设备，现在可以使用托管的 Google Play 将应用商店应用和 LOB 应用部署到用户。 具体而言，可以向最终用户提供应用目录以及不再需要最终用户通过允许从未知源进行安装来放宽其设备的安全状况的安装体验。 此外，此部署方案将改进最终用户体验。 有关分配应用的步骤，请参阅[分配应用](apps-deploy.md#assign-an-app)。
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>将托管的 Google Play 应用部署到非托管设备
+对于没有注册的 APP-WE（未注册情况下的应用保护策略）部署方案中的 Android 设备，可以使用托管的 Google Play 将应用商店应用和业务线 (LOB) 应用部署到用户。 定位为“是否注册均可使用”的托管 Google Play 应用将显示在最终用户的设备上的 Play Store 应用中，而不会显示在公司门户应用中。 最终用户将浏览和安装以这种方式从 Play 应用部署的应用。 因为应用是从托管的 Google Play 安装的，所以最终用户无需将其设备设置更改为允许从未知源安装应用，这意味着设备将更为安全。 如果应用开发人员向 Play 发布了已在用户的设备上安装的应用的新版本，则 Play 将自动更新该应用。 
+
+将托管的 Google Play 应用分配到非托管设备的步骤：
+
+1. 将 Intune 租户连接到托管的 Google Play。 如果已执行此操作以便管理 Android 企业工作配置文件、专用设备或完全托管的设备，则无需再执行此操作。
+2. 将托管的 Google Play 中的应用添加到 Intune 控制台。
+3. 对托管 Google Play 应用的定位是对于预期用户组“是否注册均可使用”。 非注册的设备不支持“必需”和“卸载”的应用定位。
+4. 将应用保护策略分配给用户组。
+5. 当最终用户下次打开公司门户应用时，他们将看到一条消息，指出在 Play Store 应用中有可供他们使用的应用。  用户点击此通知后将直接转到 Play 应用以看到公司应用，也可以单独导航到 Play Store 应用。
+6. 最终用户可以展开 Play Store 应用中的上下文菜单并在其个人 Google 帐户（可以看到其个人应用）和其工作帐户（将看到面向他们的商店和 LOB 应用）之间进行切换。 最终用户通过在 Play Store 应用中点击“安装”来安装应用。
+
+在 Intune 控制台中发出应用选择性擦除时，工作帐户将从 Play Store 应用中自动删除，且最终用户从那时起将无法再在 Play Store 应用目录中看到工作应用。 从设备中删除工作帐户后，从 Play Store 安装的应用将仍然安装在设备上，不会卸载。 
 
 ## <a name="next-steps"></a>后续步骤
 

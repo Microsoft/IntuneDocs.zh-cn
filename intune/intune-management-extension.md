@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303389"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302177"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>在 Intune 中管理 PowerShell 脚本以供 Windows 10 设备使用
 
@@ -30,9 +31,9 @@ ms.locfileid: "55303389"
 
 最终用户的计算系统正在向数字化转型。 经典、传统的 IT 侧重于单个设备平台、企业拥有的设备、在办公室办公的用户，以及各种手动、反应式 IT 过程。 新式工作区使用多个用户拥有和企业拥有的平台，允许用户随时随地工作，并提供自动化、积极主动的 IT 过程。
 
-Microsoft Intune 等 MDM 服务可以管理运行 Windows 10 的移动和桌面设备。 Windows 10 内置管理客户端可与 Intune 进行通信，以运行企业管理任务。 可能存在你需要但 Windows 10 MDM 当前并未提供的任务，例如，高级设备配置、故障排除以及旧版 Win32 应用管理。 对于这些功能，可在 Windows 10 设备上运行 Intune 软件客户端。 [对比作为计算机或移动设备管理 Windows 电脑](pc-management-comparison.md)是一个不错的资源。
+Microsoft Intune 等 MDM 服务可以管理运行 Windows 10 的移动和桌面设备。 Windows 10 内置管理客户端可与 Intune 进行通信，以运行企业管理任务。 你可能需要执行一些任务，例如高级设备配置和故障排除。 对于 Win32 应用管理，可以在 Windows 10 设备上使用 [Win32 应用管理](apps-win32-app-management.md)功能。
 
-Intune 管理扩展对 Windows 10 MDM 内置功能进行了补充。 可创建 PowerShell 脚本以在 Windows 10 设备上运行。 例如，可创建 PowerShell 脚本（安装旧版 Win32 应用、将脚本上传到 Intune、将脚本分配给 Azure Active Directory (AD) 组），然后运行这些脚本。 然后，可全程监视脚本运行状态。
+Intune 管理扩展对 Windows 10 MDM 内置功能进行了补充。 可创建 PowerShell 脚本以在 Windows 10 设备上运行。 例如，可创建 PowerShell 脚本（执行高级设备配置、将脚本上传到 Intune、将脚本分配给 Azure Active Directory (AD) 组），然后运行这些脚本。 然后，可全程监视脚本运行状态。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -46,7 +47,7 @@ Intune 管理扩展具有以下先决条件：
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
 2. 选择“设备配置” > “PowerShell 脚本” > “添加”。
-3. 输入 PowerShell 脚本的“名称”和“说明”。 对于“脚本位置”，请浏览查找该 PowerShell 脚本。 脚本的大小必须小于 200 KB (ASCII) 或 100 KB (Unicode)。
+3. 输入 PowerShell 脚本的“名称”和“说明”。 对于“脚本位置”，请浏览查找该 PowerShell 脚本。 该脚本的大小不能超过 200 KB。
 4. 选择**配置**。 然后选择是在设备上（“是”），还是在系统环境中（“否”）通过用户凭据运行该脚本。 默认情况下，脚本在系统环境中运行。 选择“是”，除非脚本必须在系统环境中运行。 
   ![“添加 PowerShell 脚本”窗格](./media/mgmt-extension-add-script.png)
 5. 选择是否由受信任的发布者对脚本进行签名（“是”）。 默认情况下，不需要对脚本进行签名。 

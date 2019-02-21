@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230114"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307883"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -70,6 +71,7 @@ ms.locfileid: "55230114"
 - **Microsoft 帐户**：使用户可以将 Microsoft 帐户与设备关联。
 - **非 Microsoft 帐户**：允许用户将电子邮件帐户添加到与 Microsoft 帐户不相关联的设备。
 - **Microsoft 帐户的设置同步**：允许在设备间同步与 Microsoft 帐户关联的设备和应用设置。
+- **Microsoft 帐户登录助手**：选择“禁用”可防止最终用户控制 Microsoft 登录助手服务 (wlidsvc)，例如手动停止或启动服务。 当设置为“未配置”时，wlidsvc NT 服务将使用操作系统 (OS) 默认设置，这可能会允许最终用户启动和停止该服务。 操作系统使用此服务以允许用户登录到其 Microsoft 帐户。
 
 ## <a name="cloud-printer"></a>云打印机
 
@@ -136,6 +138,10 @@ ms.locfileid: "55230114"
 - **墨迹工作区**：阻止用户访问墨迹工作区。 “未配置”可启用墨迹工作区，并且允许用户在锁屏界面上使用它。
 - **自动重新部署**：允许具有管理权限的用户在设备锁屏界面上使用“CTRL + Win + R”删除所有用户数据和设置。 设备会自动进行重新配置并重新注册到管理。
 - **要求用户在设备设置过程中连接到网络（仅 Windows 预览体验成员版）**：选择“必需”，以便设备在 Windows 10 安装过程中连接到网络，然后才能继续完成网络页面的操作。 虽然此功能处于预览状态，但 Windows 预览体验内部版本 1809 或更高版本需要使用此设置。
+- **直接内存访问**：“阻止”将防止所有热插拔 PCI 下游端口进行直接内存访问 (DMA)，直到用户登录到 Windows。 “启用”（默认设置）允许访问 DMA，即使用户未登录。
+
+  CSP：[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **从任务管理器结束进程**：此设置确定非管理员是否可以使用任务管理器来结束任务。 选择“阻止”，则会阻止标准用户（非管理员）使用任务管理器结束设备上的进程或任务。 选择“未配置”（默认选项），则会允许标准用户使用任务管理器结束进程或任务。
 
 ## <a name="kiosk-preview---obsolete"></a>展台（预览版）- 已过时
@@ -192,7 +198,7 @@ ms.locfileid: "55230114"
 ## <a name="locked-screen-experience"></a>锁定屏幕体验
 
 - **操作中心通知（仅限移动版）**：让操作中心通知显示在设备锁屏界面上（仅限 Windows 10 移动版）。
-- **锁屏界面图片 URL（仅限桌面版）** 输入将用作 Windows 锁屏界面墙纸的图片（格式为 JPEG）的 URL。 用户无法更改此设置。
+- **锁屏界面图片 URL（仅限桌面版）** 输入将用作 Windows 锁屏界面墙纸的图片（格式为 JPEG）的 URL。 此设置将锁定映像。 此后无法更改该映像。
 - **用户可配置的屏幕超时（仅限移动版）**：允许用户配置时间量 
 - **锁屏界面上的 Cortana（仅限桌面版）**：当设备处于锁屏界面时，不允许用户与 Cortana 交互（仅限 Windows 10 桌面版）。
 - **锁屏界面上的 Toast 通知**：阻止在设备锁屏界面上显示警报消息。
@@ -313,7 +319,6 @@ ms.locfileid: "55230114"
   - **防止重用以前的密码**：指定设备记住的以前用过的密码数目。
   - **必须提供密码才能让设备从空闲状态恢复（仅限移动版）**：指定用户必须输入密码以解锁设备（仅限 Windows 10 移动版）。
   - **简单密码**：允许使用 1111 和 1234 等简单密码。 此设置还允许或阻止使用 Windows 图片密码。
-- **加密**：启用对目标设备的加密。
 
 ## <a name="per-app-privacy-exceptions"></a>每应用隐私异常
 

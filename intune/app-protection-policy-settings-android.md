@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/28/2019
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89945a1b5036ff298a49bba444b23a8f317681b1
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 1802da8150c9729a2bed8ff82d39f7946b750e06
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086159"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325497"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -54,9 +54,6 @@ ms.locfileid: "56086159"
 | **使用本机联系人应用同步应用** | 选择“禁用”，阻止应用将数据保存到设备上的本机“联系人”应用。 如果选择“启用”，应用可将数据保存到设备上的本机“联系人”应用。 <br><br>执行选择性擦除以从应用删除工作或学校数据时，将删除从应用直接同步到本机“联系人”应用的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 目前仅适用于 Microsoft Outlook 应用。 | **启用** |
 | **打印组织数据** | 选择“禁用”，阻止应用打印工作或学校数据。 | **启用** |
 |**使用策略托管浏览器共享 Web 内容** | 指定如何从策略管理的应用中打开 Web 内容（http/https 链接）。 选择：<ul><li>**需要**：允许 Web 内容仅在策略托管浏览器中打开。</li><li>**未配置**：允许在任何应用中使用网络链接 </li></ul><br><br> 如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问](app-configuration-managed-browser.md)。<br><br>**策略托管的浏览器**<br>如果部署多个策略托管的浏览器，则只有一个将会启动。  启动顺序将为 Intune Managed Browser，然后才是 Microsoft Edge。  在 Android 上，如果未安装 Intune Managed Browser 和 Microsoft Edge，最终用户可以从支持 http/https 链接的其他策略托管应用中进行选择。<p>如果需要策略托管的浏览器，但未安装，系统将提示最终用户安装 Intune Managed Browser。<p>如果需要使用策略托管的浏览器，则将由“允许应用向其他应用传送数据”策略设置管理 Android 应用链接。<p>**Intune 设备注册**<br>如果使用 Intune 管理设备，请参阅“使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问”。 <p>**策略托管的 Microsoft Edge**<br>移动设备（iOS 和 Android）的 Microsoft Edge 浏览器支持 Intune 应用保护策略。 在 Microsoft Edge 浏览器应用程序中使用其企业 Azure AD 帐户登录的用户将受 Intune 保护。 Microsoft Edge 浏览器集成了 MAM SDK 并支持其除阻止以外的所有数据保护策略：<br><ul><li>**另存为**：Microsoft Edge 浏览器不允许用户向云存储提供商（如 OneDrive）添加直接的应用内连接。</li><li>**联系人同步**：Microsoft Edge 浏览器不会保存到本地联系人列表。</li></ul><br>**注意：** APP SDK 无法确定目标应用是否为浏览器。在 Android 设备上，允许使用支持 http/https 意向的其他托管浏览器应用。 | 未配置 |
-| **第三方键盘** | 选择“禁用”，阻止在托管应用程序中使用第三方键盘。 <br><br>启用此设置后，用户将收到一次性消息，说明禁止使用第三方键盘。 用户首次需要使用键盘与组织数据进行交互时，将会出现此消息。 使用托管应用程序时，只能使用标准键盘，所有其他键盘选项都将禁用。 此设置不影响在非托管应用程序中使用第三方键盘。 | **启用** |
-
-
 
   ## <a name="data-transfer-exemptions"></a>数据传输豁免
 
@@ -93,21 +90,12 @@ ms.locfileid: "56086159"
 
 ##  <a name="access-requirements"></a>访问要求
 
-| Setting | 如何使用 | 默认值 |
-|------|------|------|
-| **需要 PIN 才能进行访问** | 选择“需要”，要求使用 PIN 才能使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 <br><br> 为 PIN 强度配置以下设置：| **需要** |
-|<ul><ui> **PIN 类型** | 在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码则可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br>**注意：** 允许的特殊字符包括 Android 英语键盘上的特殊字符和符号。| **数字** |
-|<ul><ui> **简单 PIN** |选择“允许”，允许用户使用 1234、1111、abcd 或 aaaa 等简单的 PIN 序列。 选择“阻止”，阻止用户使用简单的序列。 <br><br>**注意：** 如果 PIN 类型配置为“密码”，并且“简单 PIN”设置为“允许”，则用户在其 PIN 中需要使用至少 1 个字母或至少 1 个特殊字符 *。* 如果 PIN 类型配置为“密码”，并且“简单 PIN”设置为“阻止”，则用户在其 PIN 中需要使用至少 1 个数字和 1 个字母以及至少 1 个特殊字符。 | **允许** |
-| <ul><ui> **选择最小 PIN 长度** | 指定 PIN 序列必须包含的最小位数。  | **4** |
-|<ul><ui> **用于访问的指纹而非 PIN (Android 6.0+)** | 选择“允许”，允许用户使用[指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 进行应用访问。 <br><br>**注意：** 此功能支持 Android 设备上的通用生物识别控件。不支持特定于 OEM 的生物识别设置，如 Samsung Pass。 <br><br>在 Android 设备上，可让用户通过 [Android 指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 证明其身份。 用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识，而不是输入 PIN。 <br><br> Android 工作配置文件要求为强制执行的“允许使用指纹替代 PIN”策略注册单独的指纹。 此策略仅对在 Android 工作配置文件中安装的策略托管应用有效。 在公司门户注册以创建 Android 工作配置文件后，必须在设备中注册单独的指纹。 有关使用 Android 工作配置文件的工作配置文件指纹的详细信息，请参阅[锁定工作配置文件](https://support.google.com/work/android/answer/7029958)。 |**允许** |
-| <ul><ul><ui>**超时后使用 PIN 替代指纹** |  设置为“需要”时，在应用处于空闲状态持续了指定超时时间段后，PIN 提示符将替代 Touch ID 提示符。   | **需要** |
-| <ul><ul><ui>**超时(非活动状态的分钟数)** | 以分钟为单位，指定在 PIN 提示符替代 Touch ID 提示符之前，应用可以空闲的时间。  <br><br>此超时值应大于“在(活动状态的分钟数)后重新检查访问要求”下的指定值。| **30** |
-|<ul><ui> **PIN 重置间隔的天数** | 选择“是”，要求用户在一段时间（以天为单位）后更改其应用 PIN。 <br><br> 默认值 = 否  <br><br> 设置为“是”时，可以配置重置所需的天数。 | **否**|
-| <ul><ul><ui>**天数** | “PIN 重置间隔的天数”设置为“是”时，指定 PIN 重置所需的时间。 | **0** | 
-|<ul><ui> **设置设备 PIN 时的应用 PIN** | 如果设置为“禁用”，则设置了设备 PIN 的 MDM 注册设备上不需要应用 PIN。   | **启用** |
-| **用于访问的工作或学校帐户凭据** | 选择“需要”，要求用户使用其工作或学校帐户而非输入 PIN 进行登录以访问应用。 设置为“需要”并且 PIN 或生物识别提示已打开时，将同时显示公司凭据以及 PIN 或生物识别提示。 | **不需要** |
-| **在(非活动状态的分钟数)后重新检查访问要求** | 配置应用要求用户再次指定访问要求之前必须经过的非活动状态的分钟数。  <br><br>**注意：** 在 Android 上，所有 Intune 托管应用均共享此 PIN。应用离开设备主屏幕后，就会重置 PIN 计时器。在此设置中定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入此 PIN。| **30** |
-
+| Setting | 如何使用 |  
+|------|------| 
+| **需要 PIN 才能进行访问** | 选择“是”以要求使用 PIN 才能使用此应用。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 <br><br> 默认值 = **是**。<br><br> 为 PIN 强度配置以下设置： <br> <ul><li>**选择类型**：在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码则可采用至少 1 个字母或至少 1 个特殊字符进行定义。 <br><br> 默认值 = 数值<br><br> **注意：** 允许的特殊字符包括 Android 英语键盘上的特殊字符和符号。</li></ul>  <ul><li>**重置 PIN 前的尝试次数：** 指定用户在重置 PIN 之前必须成功输入其 PIN 的尝试次数。 <br><br> 默认值 = 5 </li> <br> <li> **允许使用简单 PIN：** 选择“是”可允许用户使用 1234、1111、abcd 或 aaaa 等简单的 PIN 序列。 选择“否”，阻止用户使用简单的序列。 <br><br>默认值 = **是** <br><br>**注意：** 如果配置了密码类型 PIN，并且“允许使用简单 PIN”已设置为“是”，用户在其 PIN 中则需要使用至少 1 个字母或至少 1 个特殊字符。 如果配置了密码类型 PIN，并且“允许使用简单 PIN”已设置为“否”，用户在其 PIN 中则需要使用至少 1 个数字和 1 个字母以及至少 1 个特殊字符。* </li> <br> <li>  **PIN 长度：** 指定 PIN 序列必须包含的最小位数。 <br><br>默认值 = 4 </li> <br> <li> **允许指纹而非 PIN (Android 6.0+)：** 选择“是”，允许用户使用[指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 进行应用访问。 <br><br>默认值 = **是** <br><br>**注意：** 此功能支持 Android 设备上的通用生物识别控件。 不支持特定于 OEM 的生物识别设置，如 * Samsung Pass。 <br><br>在 Android 设备上，可让用户通过 [Android 指纹身份验证](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)而非 PIN 证明其身份。 用户尝试通过其工作或学校帐户使用此应用时，系统会提示他们提供其指纹标识，而不是输入 PIN。 <br><br> Android 工作配置文件要求为强制执行的“允许使用指纹替代 PIN”策略注册单独的指纹。 此策略仅对在 Android 工作配置文件中安装的策略托管应用有效。 在公司门户注册以创建 Android 工作配置文件后，必须在设备中注册单独的指纹。 有关使用 Android 工作配置文件的工作配置文件指纹的详细信息，请参阅[锁定工作配置文件](https://support.google.com/work/android/answer/7029958)。<br><br><ul><li>**超时后使用 PIN 替代指纹**：要使用此设置，请选择“是”，然后配置非活动超时。 <br><br>默认值 = 否  </li></ul> <br> <ul><li>**超时(非活动状态的分钟数)**：指定密码或数值 PIN（如配置所示）将覆盖指纹的使用的时间（以分钟为单位）。 </li></ul></li></ul><br><ul><li>**托管设备 PIN 后禁用应用 PIN**：选择“是”，如果在已配置公司门户的已注册设备上检测到设备锁，则禁用应用 PIN。 <br><br> 默认值 = **否**。 </li></ul> | 
+| **访问需要公司凭据** | 选择“是”，要求用户使用其工作或学校帐户（而不是输入 PIN）登录进行应用访问。 当设置为“是”并且 PIN 或生物识别提示已打开时，将同时显示公司凭据以及 PIN 或生物识别提示。 <br><br>默认值 = 否  |
+| **在一定时间后重新检查访问要求（分钟）** | 配置下列设置： <ul><li>**超时**：这是重新检查访问要求（在前面的策略中定义）之前的分钟数。 例如，如果管理员在策略中启用 PIN 并阻止取得 root 权限的设备，用户打开 Intune 托管应用时，则必须输入 PIN，并且必须在未取得 root 权限的设备上使用此应用。 使用此设置时，用户在与配置值相等的一段时间内无需在任何 Intune 托管应用上再次输入 PIN 或再次经历 root 检测检查。  <br><br>此策略设置格式支持正整数。 <br><br> 默认值 = 30 分钟 <br><br> **注意：** 在 Android 上，所有 Intune 托管应用均共享此 PIN。 应用离开设备主屏幕后，就会重置 PIN 计时器。 在此设置中定义的超时期限内，用户无需在共享 PIN 的任何 Intune 托管应用上输入此 PIN。* <br><br></li> |
+| **阻止屏幕捕获和 Android 助手** | 选择“是”，当使用此应用时，会阻止设备的屏幕捕获和“Android 助手”功能。 选择“是”还会在通过工作或学校帐户使用此应用时，导致应用切换器预览图像模糊。 <br><br>默认值 = 否  |
 
 > [!NOTE]  
 > 要详细了解在“访问权限”部分配置给同一组应用和用户的多个 Intune 应用保护设置如何在 Android 上运行，请参阅 [Intune MAM 常见问题](mam-faq.md)和[在 Intune 中使用应用保护策略访问操作选择性地擦除数据](app-protection-policies-access-actions.md)。

@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f6d346d7f060b5e997577b09c3ee8b006843ab7b
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690829"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302228"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -240,10 +241,15 @@ Intune 中的管理模板（“设备配置” > “管理模板”）目前为�
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android Enterprise 设备所有者设备的新通知、提示和锁屏设置 <!-- 3201839 3201843 -->
 以设备所有者身份运行时，此更新包括 Android Enterprise 设备上的多项新功能。 若要使用这些功能，请转到“设备配置” > “配置文件” > “创建配置文件”> 在“平台”中，选择“Android Enterprise” > 在“配置文件类型”中，选择“仅设备所有者” > “设备限制”。
+
 新的功能包括： 
-- 禁止显示系统通知，包括传入呼叫、系统警报、系统错误等
-- 建议跳过首次打开的应用的启动教程和提示
-- 禁用高级锁屏设置，例如照相机、通知、指纹解锁等。若要查看这些设置，请转到 [Android Enterprise 设备限制设置](device-restrictions-android-for-work.md)。
+
+- 禁止显示系统通知，包括传入呼叫、系统警报、系统错误等。
+- 建议跳过首次打开的应用的启动教程和提示。
+- 禁用高级锁屏设置，例如照相机、通知、指纹解锁等。
+
+
+若要查看这些设置，请转到 [Android Enterprise 设备限制设置](device-restrictions-android-for-work.md)。
 
 #### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android Enterprise 设备所有者设备可以使用 Always On VPN 连接 <!-- 3202194 -->
 在此更新中，可以在 Android Enterprise 设备所有者设备上使用始终可用的 VPN 连接。 始终可用 VPN 连接一直保持连接状态，或在用户解锁设备、设备重启或无线网络更改时立即重新连接。 还可以将连接置于“锁定”模式，该模式会阻止所有网络流量，直到 VPN 连接处于活动状态。
@@ -282,7 +288,7 @@ Intune 中的管理模板（“设备配置” > “管理模板”）目前为�
 ### <a name="role-based-access-control"></a>基于角色的访问控制
 
 #### <a name="scope-tags-for-apps----1081941---"></a>应用的作用域标记 <!-- 1081941 -->
-可创建作用域标记来限制对角色和应用的访问。 可向应用添加作用域标记，以便只有具有特定角色（该角色也分配有该作用域标记）的人员才可以访问该应用。 使用 Apple Volume Purchase Program (VPP) 购买的应用无法分配作用域标签。  有关详细信息，请参阅[使用作用域标记筛选策略](scope-tags.md)。
+可创建作用域标记来限制对角色和应用的访问。 可向应用添加作用域标记，以便只有具有特定角色（该角色也分配有该作用域标记）的人员才可以访问该应用。 目前，无法向从托管 Google Play 添加到 Intune 的应用或使用 Apple Volume Purchase Program (VPP) 购买的应用分配作用域标记（但在将来会提供此支持）。 有关详细信息，请参阅[使用作用域标记筛选策略](scope-tags.md)。
 
 
 
