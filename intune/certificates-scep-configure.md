@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838118"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742731"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -364,10 +364,12 @@ ms.locfileid: "55838118"
 6. 输入以下设置：
 
    - **证书类型**：为用户证书选择“用户”。 为无用户设备（例如网亭）选择“设备”。 “设备”证书可用于以下平台：  
+     - Android Enterprise
      - iOS
+     - macOS
      - Windows 8.1 及更高版本
      - Windows 10 及更高版本
-     - Android Enterprise
+
 
    - **使用者名称格式**：选择 Intune 如何自动创建证书请求中的使用者名称。 如果选择“用户”证书类型或“设备”证书类型，选项将发生更改。 
 

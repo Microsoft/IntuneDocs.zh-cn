@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c777beb294482a179d4b99fc71db031367698d0d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dd6ba4c9c93bf41d0407f5fa0feead440d858507
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835769"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742119"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>使用 Intune 将 Windows 10 和 Windows Holographic for Business 设备作为专用展台运行的设置
 
@@ -69,6 +69,6 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
 
 可以为运行下列平台的设备创建展台配置文件：
 - [Outlook Web Access (OWA)](device-restrictions-android.md#kiosk)
-- [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings)
+- [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)
 - [Windows 10 及更高版本](kiosk-settings-windows.md)
 - [Windows Holographic for Business](kiosk-settings-holographic.md)
