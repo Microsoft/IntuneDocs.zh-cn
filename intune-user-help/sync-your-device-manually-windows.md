@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840206"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335065"
 ---
 # <a name="sync-your-windows-device-manually"></a>手动同步 Windows 设备
 
 当应用程序安装速度不理想时，启动手动设备同步。手动同步强制你的设备与 Intune 连接，以获取最新的更新和通信。 设备同步完成后，安装速度可能会提升。
 
-Intune 支持从公司门户应用、桌面任务栏或“开始”菜单以及从设备设置应用进行手动同步。 
-
-在运行 Creator 的 Update (1703) 或更高版本的 Windows 10 设备上支持公司门户应用功能。 
-* [从公司门户应用同步](#Sync-from-Company-Portal-app-for-Windows)  
+Intune 支持从公司门户应用、桌面任务栏或“开始”菜单以及从设备设置应用进行手动同步。 在运行 Creator 的 Update (1703) 或更高版本的 Windows 10 设备上支持公司门户应用功能。 
 
 所有 Windows 设备都可以从设备设置应用中同步，其中包括：
 
@@ -75,11 +72,11 @@ Intune 支持从公司门户应用、桌面任务栏或“开始”菜单以及�
 
 3. 在桌面上存在多个 Windows 10 版本。 将你的屏幕与以下屏幕截图比较，以确定执行哪组步骤。 
 
-    * 如果你的屏幕显示的是访问工作单位或学校，则跳过[访问工作单位或学校](#access-work-or-school)中的步骤。
+    * 如果你的屏幕显示的是访问工作单位或学校，则跳过[访问工作单位或学校](#access-work-or-school-steps)中的步骤。
 
     ![访问设置应用中的工作单位或学校选项](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * 如果你的屏幕显示的是工作单位访问，则跳过[工作单位访问](#work-access)下的步骤。  
+    * 如果你的屏幕显示的是工作单位访问，则跳过[工作单位访问](#work-access-steps)下的步骤。  
 
     ![选择工作单位访问作为帐户类型](./media/win10pc-sync-3-work-access.png)
 

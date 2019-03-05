@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/09/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91a8364927667bbc910d86dc3e95f447eb5cf93a
-ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
+ms.openlocfilehash: a2dce0b743cd2944569e19a8106327f6735b1d6b
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55905809"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231700"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>适用于 Intune 的 Windows 安全基线设置  
 
@@ -186,15 +186,15 @@ ms.locfileid: "55905809"
   
     - **删除匹配的硬件设备**  
       仅“按设备标识符安装硬件设备”设置为“阻止安装硬件设备”时，此设置才可用。
-      - 默认值：是
+      - **默认值**：是
   
     - **已阻止的硬件设备标识符**  </br>
       仅“按设备标识符安装硬件设备”设置为“阻止安装硬件设备”时，此设置才可用。
-      - 默认值：是  
+      - **默认值**：是  
   
 - **按安装程序类安装硬件设备**  
   使用此策略设置可以指定禁止 Windows 安装的设备驱动程序的设备安装程序类全局唯一标识符 (GUID) 列表。 此策略设置优先于任何其他允许 Windows 安装设备的策略设置。 如果启用此策略设置，则禁止 Windows 安装或更新你所创建的列表中列出了其设备安装程序类 GUID 的设备驱动程序。 如果在某个远程桌面服务器上启用了此策略设置，则此策略设置会影响指定设备从远程桌面客户端到该远程桌面服务器的重定向。 如果禁用或未配置此策略设置，则 Windows 根据其他允许或禁止策略设置来安装和更新设备。
-  - 默认值：阻止安装硬件设备  
+  - **默认值**：阻止安装硬件设备  
   
     - **删除匹配的硬件设备**  </br>
       仅“按安装程序类安装硬件设备”设置为“阻止硬件设备安装”时，此设置才可用。
@@ -610,7 +610,7 @@ ms.locfileid: "55905809"
   
 - **Internet Explorer 受限制区域的活动脚本编制**  
   利用此策略设置，可管理区域中页面上的脚本代码是否运行。 如果启用此策略设置，则区域中页面上的脚本代码可自动运行。 如果在下拉列表框中选择“提示”，系统会询问用户选择是否允许区域中页面上的脚本代码运行。 如果禁用此策略设置，则会阻止区域中页面上的脚本代码运行。 如果未配置此策略设置，则会阻止区域中页面上的脚本代码运行。
-  - 默认值：禁用  
+  - **默认值**：禁用  
   
 - **Internet Explorer internet 区域登录选项**  
   利用此策略设置，可管理登录选项的设置。 如果启用此策略设置，则可以从下列登录选项中进行选择。 匿名登录，以禁用 HTTP 验证并只为通用 Internet 文件系统 (CIFS) 协议使用来宾帐户。 提示用户名和密码以询问用户的用户 ID 和密码。 询问用户后，可在会话的剩余阶段中自动使用这些值。 仅在 Intranet 区域中自动登录，以询问用户在其他区域中的用户 ID 和密码。 询问用户后，可在会话的剩余阶段中自动使用这些值。 用当前用户名和密码自动登录，以尝试使用 Windows NT 质询响应进行登录（也称为 NTLM 验证）。 如果服务器支持 Windows NT 质询响应，则登录使用用户的网络用户名和密码来登录。 如果服务器不支持 Windows NT 质询响应，则询问用户的用户名和密码。 如果禁用此策略设置，则登录设置为“仅在 Intranet 区域中自动登录”。 如果未配置此策略设置，则登录设置为“仅在 Intranet 区域中自动登录”。

@@ -1,12 +1,12 @@
 ---
-title: 图形 Api 在 Microsoft Intune-Azure 中配置设备时使用 |Microsoft Docs
+title: 图形 Api 在 Microsoft Intune-Azure 中配置设备 |Microsoft Docs
 titleSuffix: ''
-description: 请参阅使用匹配的 Windows CSP 的所有图形 Api 的列表和偏移量 URI 和较新 Windows 10 设备上使用 Microsoft Intune 中配置设备时。 请参阅匹配 API 和 CSP 共享的 Pc、 endpoint protection、 Windows Defender 高级威胁防护、 标识保护、 Windows 10 团队、 展台、 和适用于企业的 Windows 更新。
+description: 请参阅使用匹配的 Windows CSP 的所有图形 API 实体的列表和偏移量 URI 和较新 Windows 10 设备上使用 Microsoft Intune 中配置设备时。 请参阅匹配 API 和 CSP 共享的 Pc、 endpoint protection、 Windows Defender 高级威胁防护、 标识保护、 Windows 10 团队、 展台、 和适用于企业的 Windows 更新。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,30 +15,34 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ccc46914e53e72d941cc726b6a32fa421e23ca4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b2bed795125043eac07fce41a0f101a9b029bd06
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232125"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335303"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>图形 Api 和匹配在 Intune 中使用的 Windows 10 Csp
 
-使用 Microsoft Intune[图形 API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview)来配置设备 (**Intune** > **设备配置**) 运行 Windows 10 及更高版本。 Graph API 使用配置服务提供商 (Csp) 来读取、 设置、 更改，和/或删除设备上的配置设置。
+使用 Microsoft Intune [Graph API 实体](https://docs.microsoft.com/graph/api/resources/intune-graph-overview)（将打开另一个文档站点） 来配置设备 (**Intune** > **设备配置**) 运行 Windows 10及更高版本。 Graph API 使用配置服务提供商 (Csp) 来读取、 设置、 更改，和/或删除设备上的配置设置。
 
 此列表适用于：
 
 - Windows 10 及更高版本
 
-本文列出了关系图属性和其匹配的 Windows 10 的 Csp 和偏移量的 Uri。
+本文列出了图形实体和其匹配的 Windows 10 Csp 和偏移量的 Uri。
+
+此信息可用于各种方案。 例如，请参阅什么使用 Intune，请参阅设置，以包括在自定义 OMA-URI 配置中，依次类推。 
 
 ## <a name="windows-10-csps"></a>Windows 10 的 Csp
 
-Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提供程序参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)。
+Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提供程序参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)（将打开另一个文档站点）。
 
 ## <a name="graph-api-properties-to-csp-mapping"></a>到 CSP 的映射的图形 API 属性
 
-以下列表显示由 Microsoft Intune 使用 Windows 10 设备配置的图形 API 属性。 它还显示了相应的 Windows 10 CSP 和偏移量的 URI。
+以下列表显示了 Graph API 实体由 Microsoft Intune 使用 Windows 10 设备配置的大多数。 它还显示了相应的 Windows 10 CSP 和偏移量的 URI。
+
+若要查看以下 Api 应用的 Windows 10 版本，请使用 Windows 10[配置服务提供程序参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)（将打开另一个文档站点）。
 
 #### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration.License 
 **CSP**:./Device/Vendor/MSFT/WindowsLicensing  
@@ -237,8 +241,7 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 **偏移量 URI**: /Config/CredentialsUI/EnumerateAdministrators
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadditionalguardedfolders"></a>Windows10EndpointProtectionConfiguration.DefenderAdditionalGuardedFolders 
-**CSP**:./Device/Vendor/MSFT/Policy/  
-**偏移量 URI**: /Config/Defender/ControlledFolderAccessProtectedFolders
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/Defender/ControlledFolderAccessProtectedFolders
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadvancedransomewareprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderAdvancedRansomewareProtectionType 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -257,23 +260,21 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 **偏移量 URI**: /Config/Defender/AttackSurfaceReductionRules (CSP/配置需要关系图属性： windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType、 windows10endpointprotection /Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType、 windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType、 windows10endpointprotection /Configuration.defenderOfficeMacroCodeAllowWin32ImportsType、 windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType、 windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionTypewindows10endpointprotection/Configuration.defenderEmailContentExecutionType、 windows10endpointprotection/Configuration.defenderPreventCredentialStealingType、 windows10endpointprotection /Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxml"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXml 
-**CSP**:./Device/Vendor/MSFT/Policy/**偏移量 URI**: /Config/ExploitGuard/ExploitProtectionSettings
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxmlfilename"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXmlFileName 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **偏移量 URI**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardedfoldersallowedapppaths"></a>Windows10EndpointProtectionConfiguration.DefenderGuardedFoldersAllowedAppPaths 
-**CSP**:./Device/Vendor/MSFT/Policy/  
-**偏移量 URI**: /Config/Defender/ControlledFolderAccessAllowedApplications
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/Defender/ControlledFolderAccessAllowedApplications
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardmyfolderstype"></a>Windows10EndpointProtectionConfiguration.DefenderGuardMyFoldersType 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **偏移量 URI**: /Config/Defender/EnableControlledFolderAccess
 
 #### <a name="windows10endpointprotectionconfigurationdefendernetworkprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderNetworkProtectionType 
-**CSP**:./Device/Vendor/MSFT/Policy/  
-**偏移量 URI**: /Config/Defender/EnableNetworkProtection
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/Defender/EnableNetworkProtection
 
 #### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunch"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunch 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -340,8 +341,7 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 **偏移量 URI**: /Config/Defender/AttackSurfaceReductionRules (CSP/配置需要关系图属性： windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType、 windows10endpointprotection /Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType、 windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType、 windows10endpointprotection /Configuration.defenderOfficeMacroCodeAllowWin32ImportsType、 windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType、 windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionTypewindows10endpointprotection/Configuration.defenderEmailContentExecutionType、 windows10endpointprotection/Configuration.defenderPreventCredentialStealingType、 windows10endpointprotection /Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterblockexploitprotectionoverride"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterBlockExploitProtectionOverride 
-**CSP**:./Device/Vendor/MSFT/Policy/  
-**偏移量 URI**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableaccountui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAccountUI 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -416,19 +416,18 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 **偏移量 URI**: /Config/Defender/AttackSurfaceReductionRules (CSP/配置需要关系图属性： windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType、 windows10endpointprotection /Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType、 windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType、 windows10endpointprotection /Configuration.defenderOfficeMacroCodeAllowWin32ImportsType、 windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType、 windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionTypewindows10endpointprotection/Configuration.defenderEmailContentExecutionType、 windows10endpointprotection/Configuration.defenderPreventCredentialStealingType、 windows10endpointprotection /Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablesecurebootwithdma"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableSecureBootWithDMA 
-**CSP**:./Device/Vendor/MSFT/Policy/  
+**CSP**:./Device/Vendor/MSFT/Policy  
 **偏移量 URI**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablevirtualizationbasedsecurity"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableVirtualizationBasedSecurity 
-**CSP**:./Device/Vendor/MSFT/Policy/  
-**偏移量 URI**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlaunchsystemguard"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLaunchSystemGuard 
-**CSP**:./Device/Vendor/MSFT/Policy/  
+**CSP**:./Device/Vendor/MSFT/Policy  
 **偏移量 URI**: /Config/DeviceGuard/ConfigureSystemGuardLaunch
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlocalsystemauthoritycredentialguardsettings"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLocalSystemAuthorityCredentialGuardSettings 
-**CSP**:./Device/Vendor/MSFT/Policy/  
+**CSP**:./Device/Vendor/MSFT/Policy  
 **偏移量 URI**: /Config/DeviceGuard/LsaCfgFlags
 
 #### <a name="windows10endpointprotectionconfigurationdmaguarddeviceenumerationpolicy"></a>Windows10EndpointProtectionConfiguration.DmaGuardDeviceEnumerationPolicy 
@@ -868,12 +867,10 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 **偏移量 URI**: /Config/MSSecurityGuide/WDigestAuthentication
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenblockoverrideforfiles"></a>Windows10EndpointProtectionConfiguration.SmartScreenBlockOverrideForFiles 
-**CSP**:./Device/Vendor/MSFT/Policy/  
-**偏移量 URI**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenenableinshell"></a>Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
-**CSP**:./Device/Vendor/MSFT/Policy/  
-**偏移量 URI**: /Config/SmartScreen/EnableSmartScreenInShell
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/SmartScreen/EnableSmartScreenInShell
 
 #### <a name="windows10endpointprotectionconfigurationsolicitedremoteassistance"></a>windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -1030,6 +1027,9 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 #### <a name="windows10endpointprotectionconfigurationxboxserviceslivenetworkingservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
 **CSP**:./Vendor/MSFT/Policy  
 **偏移量 URI**: /Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
+
+#### <a name="windows10enterprisemodernappmanagementconfigurationuninstallbuiltinapps"></a>Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
+**CSP**:N/A Graph API 调用只**偏移量 URI**:只能在 n/A Graph API 调用
 
 #### <a name="windows10generalconfigurationaccountsblockaddingnonmicrosoftaccountemail"></a>Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
 **CSP**:./Vendor/MSFT/Policy  
@@ -2924,9 +2924,17 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 **CSP**:./Device/Vendor/MSFT/Policy  
 **偏移量 URI**: /Config/Update/PauseFeatureUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
+**CSP**:不适用-Graph API 只能**偏移量 URI**:不是适用-仅图形 API
+
 #### <a name="windowsupdateforbusinessconfigurationfeatureupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
-**CSP**:./Device/Vendor/MSFT/Policy  
-**偏移量 URI**: / 回滚/FeatureUpdate
+**CSP**:不适用-Graph API 只能**偏移量 URI**:不是适用-仅图形 API
+
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackwindowindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
+**CSP**:不适用-Graph API 只能**偏移量 URI**:不是适用-仅图形 API
+
+#### <a name="windowsupdateforbusinessconfigurationinstallationschedule"></a>WindowsUpdateForBusinessConfiguration.InstallationSchedule
+**CSP**:./Device/Vendor/MSFT/Policy**偏移量 URI**: /Config/Update/ActiveHoursStart、 /Config/Update/ActiveHoursEnd、 /Config/Update/ScheduledInstallDay、 /Config/Update/ScheduledInstallTime
 
 #### <a name="windowsupdateforbusinessconfigurationmicrosoftupdateserviceallowed"></a>WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -2948,9 +2956,11 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 **CSP**:./Device/Vendor/MSFT/Policy  
 **偏移量 URI**: /Config/Update/PauseQualityUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationqualityupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
+**CSP**:不适用-Graph API 只能**偏移量 URI**:不是适用-仅图形 API
+
 #### <a name="windowsupdateforbusinessconfigurationqualityupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
-**CSP**:./Device/Vendor/MSFT/Policy  
-**偏移量 URI**: / 回滚/QualityUpdate
+**CSP**:不适用-Graph API 只能**偏移量 URI**:不是适用-仅图形 API
 
 #### <a name="windowsupdateforbusinessconfigurationscheduleimminentrestartwarninginminutes"></a>WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -2976,4 +2986,4 @@ Windows 10 配置服务提供程序的详细信息，请参阅[配置服务提�
 ## <a name="next-steps"></a>后续步骤
 
 - [设备配置概述](device-profiles.md)
-- [配置服务提供程序参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
+- [配置服务提供程序参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)（将打开另一个文档站点）

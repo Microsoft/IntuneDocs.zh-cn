@@ -6,19 +6,19 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 01/02/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: faf51236be219a860447d2243967b90e3aab1d01
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2e86558006b91159271c5267288c5103c4c3b465
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837231"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57229813"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理操作系统版本
 在新式移动和桌面平台上，主要更新、修补程序和新版本的发布速度很快。 你在 Windows 上具有完全管理更新和修补程序的控制权限，但在 iOS 和 Android 等平台上，最终用户也需参与此过程。  Microsoft Intune 可帮助构建跨不同平台的操作系统版本管理。

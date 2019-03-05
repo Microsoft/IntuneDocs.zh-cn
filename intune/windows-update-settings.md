@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325463"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334980"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune 中的 Windows 更新设置  
 
@@ -236,6 +236,6 @@ ms.locfileid: "56325463"
 
 传递优化不再作为“软件更新”下的“Windows 10 更新圈”的一部分进行配置。 现在，传递优化通过设备配置进行设置。 但是，以前的配置在控制台中仍然可用。 可以通过将以前的配置编辑为“未配置”来删除这些配置，否则便无法对其进行修改。 
 
-为避免新旧策略之间的冲突，请参阅[从现有更新圈移动到传递优化](https://docs.microsoft.com/en-us/intune/delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization)，然后将设置移动到传递优化配置文件。
+为避免新旧策略之间的冲突，请参阅[从现有更新圈移动到传递优化](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)，然后将设置移动到传递优化配置文件。
 
 

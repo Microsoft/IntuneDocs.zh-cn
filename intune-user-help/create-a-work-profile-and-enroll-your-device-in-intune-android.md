@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 683156b968c743c4c82b472c6e566d5762c22c1a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844660"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334946"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>创建工作配置文件并在 Intune 中注册设备
 
@@ -33,7 +33,7 @@ ms.locfileid: "55844660"
 
 创建工作配置文件：
 
-1.  在 Android 公司门户的“欢迎”屏幕上，点击“登录”，然后使用你的工作或学校帐户登录。 如果尚未安装免费应用，请从 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 下载并安装它。
+1.  在 Android 公司门户的“欢迎”屏幕上，点击“登录”，然后使用你的工作或学校帐户登录。 如果尚未安装免费应用，请从 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 下载并安装它。
 
     ![Android 公司门户应用“欢迎”屏幕](./media/and-enroll-0-welcome-screen.png)
 

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af53739574a5ae7087b59d72bacd866e132a19ac
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843215"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334997"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>你的 Android 设备似乎已加密，但公司门户将该设备识别为未加密
 
@@ -66,13 +66,13 @@ ms.locfileid: "55843215"
 如果你拥有以下设备之一，如果你未将设备更新到最新的 Android 版本，则可能会遇到此问题。 你可以通过转到“设置” > “更新”为此类设备安装更新。 
 
 - [华为荣耀 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [华为 P9](http://consumer.huawei.com/en/phones/p9/)
+- [华为 P9](https://consumer.huawei.com/en/phones/p9/)
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>目前无法更新来解决此问题的已知设备
 
 无法在下列设备上解决此问题。 可能需要使用其他设备来访问公司资源。 
 
 - [华为 Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO 设备](http://www.oppo.com/en/smartphones)
+- [OPPO 设备](https://www.oppo.com/en/smartphones)
 - [Vivo 设备](https://www.vivo.co.in)
 - [小米 Mi 智能手机](https://xiaomi-mi.com/mi-smartphones/)

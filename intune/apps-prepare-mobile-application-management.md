@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: af7963bcfb16a619fa6cddd8285def30e4ef51dd
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325429"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230699"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -98,7 +98,7 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |阻止屏幕捕捉（仅限于 Android 设备）|X|X|
 |支持未进行设备注册的 MAM|X|X|
 |完全擦除应用数据|X|X|
-|多标识方案中的工作和学校数据的选择性擦除 <br><br>**注意：** 对于 iOS，应用会随管理配置文件一起删除。|X||
+|多标识方案中的工作和学校数据的选择性擦除 <br><br>**注意:** 对于 iOS，应用会随管理配置文件一起删除。|X||
 |防止“另存为”|X||
 |目标应用程序配置|X||
 |支持多身份标识|X||

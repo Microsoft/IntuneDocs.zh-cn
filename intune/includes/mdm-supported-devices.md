@@ -28,6 +28,6 @@
 > [!NOTE]
 > Intune 不能用于管理 Windows Server 操作系统。 Home SKU 并不支持所有 Intune 功能
 
-拥有企业管理 + 安全性 (EMS) 的客户还可以使用 [Azure Active Directory (Azure AD) 注册 Windows 10 设备](/intune/windows-enroll.md)。
+拥有企业管理 + 安全性 (EMS) 的客户还可以使用 [Azure Active Directory (Azure AD) 注册 Windows 10 设备](/intune/windows-enroll)。
 
 

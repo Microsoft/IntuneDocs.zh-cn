@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66ade3d833a82e717284c4abfe48b2c1b6d85add
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836500"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334963"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
@@ -50,7 +50,7 @@ IT 管理员可以使用“帮助和支持”选项，通过 Azure 门户为 Int
 ![Intune 边栏选项卡](./media/get-support/intune-blades.png)
 
 
-本新体验与 [Microsoft 365 管理中心](https://portal.office.com/AdminPortal/Home)中显示的体验类似，并取代了[之前的帮助和支持体验](#azure-help-+-and-support-experience)。 
+本新体验与 [Microsoft 365 管理中心](https://portal.office.com/AdminPortal/Home)中显示的体验类似，并取代了[之前的帮助和支持体验](#azure-help-+-support-experience)。 
 
 若要访问帮助和支持，请使用以下内容：  
 - **设备管理仪表板：**
