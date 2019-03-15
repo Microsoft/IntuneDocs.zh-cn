@@ -9,6 +9,7 @@ ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841807"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389979"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>快速入门：注册 Windows 10 设备
 
@@ -59,7 +60,7 @@ ms.locfileid: "55841807"
 4. 请确认 Windows 10 版本为 1607 或更高版本。
 
     > [!IMPORTANT]
-    > 本快速入门中提供的步骤适用于 Windows 10 版本1607 或更高版本，如果你的版本是 1511 或更低版本，请继续[这些步骤](/intune-user-help/enroll-your-w10-device-your-account)。
+    > 本快速入门中提供的步骤适用于 Windows 10 版本1607 或更高版本，如果你的版本是 1511 或更低版本，请继续[这些步骤](/intune-user-help/enroll-windows-10-device.md)。  
 
 ## <a name="enroll-windows-10-desktop"></a>注册 Windows 10 桌面版
 
