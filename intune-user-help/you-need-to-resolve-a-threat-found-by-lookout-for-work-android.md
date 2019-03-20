@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 03463bebfd9279173179dff56ce8df9d80b1707b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148515"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55848010"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>解决 Lookout for Work 发现的威胁  
 
@@ -39,9 +40,9 @@ Lookout for Work 应用是一项移动威胁防御服务，可识别 Android 设
 
 1. 如果检测到病毒或安全威胁，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)。  
 
-    ![Lookout for Work 错误消息的示例屏幕截图，其中包含指向公司门户网站的链接和蓝色“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)
+    ![Lookout for Work 错误消息示例屏幕截图，其中包含指向公司门户网站的链接和蓝色的“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)
 
-2. 选择设备。  
+2. 选择你的设备。  
 3. 阅读设备下方显示的警告。 它将指示打开 Lookout for Work 以解决病毒或安全威胁。 
 
     ![公司门户设备页的示例屏幕截图，其中显示 Lookout for Work 警告。](./media/CP-lookout-virus-banner-1808.png)  

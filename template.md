@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283563"
 ---
 # <a name="metadata-and-markdown-template"></a>元数据和标记模板
@@ -34,10 +34,10 @@ ms.locfileid: "20283563"
 
 - 冒号（：）和元数据元素的值之间**必须**有一个空格。
 - 如果可选的元数据元素没有值，用 # 注释该元素（不要留空或使用 "na"）；如果你要向注释的元素添加值，请务必删除 #。
-- 值（例如标题）中的冒号将元数据分析器隔断。 在它们的位置上，使用 HTML 编码 &#58;（例如，“标题：Azure Rights Management &#58;基础知识 |Azure RMS”）
+- 值（例如标题）中的冒号将元数据分析器隔断。 在它们的位置上，使用 HTML 编码 & #58;（例如，“标题：Azure Rights Management & #58;基础知识 |Azure RMS”）
 - **标题**：该标题将显示在搜索引擎结果中。 标题应以竖线 (|) 结尾，后跟服务名称（见以上示例）。 标题无需（且很可能不应）与 H1 标题中的标题相同。 大约应为 65 个字符（包含内容 | 服务名称）
 - **作者**，**管理员**，**审阅者**：作者字段应包含作者的 **Github 用户名**，而不是其别名。  而“管理者”和“审阅者”字段则应包含别名。 ms.reviewer 指定与文章或服务关联的 PM 的名称。
-- **ms.assetid**：这是来自 CAPS 的文章的 GUID。 创建新的标记文件时，从 [https://www.guidgenerator.com](https://www.guidgenerator.com) 获取 GUID。 
+- **ms.assetid**：这是来自 CAPS 的文章的 GUID。 新建 Markdown 文件时，请从 [https://www.guidgenerator.com](https://www.guidgenerator.com) 获取 GUID。 
 - **ms.prod**、**ms.service**、**ms.technology**、**ms.devlang**、**ms.topic**、**ms.tgt_pltfrm**：可在[此处](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default)找到这些元素的可能值。
 
 ## <a name="basic-markdown-and-gfm"></a>基本标记和 GFM
@@ -90,7 +90,7 @@ ms.locfileid: "20283563"
 
 如果 URL 出现在标记文件中，将转换为可单击的链接。
 
-- 示例：http://www.github.com
+- 示例： http://www.github.com
 
 ## <a name="lists"></a>列表
 
@@ -126,7 +126,7 @@ ms.locfileid: "20283563"
 
 ##### <a name="unordered-list-with-an-embedded-lists"></a>带有嵌入式列表、未经排序的列表
 
-- 如果 
+- 此 
 - 项目符号 
 - 列表
     - Peacock 太太
@@ -167,7 +167,7 @@ ms.locfileid: "20283563"
 
 ## <a name="blockquotes"></a>块引用
 
-> 干旱已经持续了一千万年，可怕的蜥蜴的统治早已结束。 在位于赤道的这片将来有一天会被称为非洲的大陆上，生存的斗争已经达到凶残的至高点，而胜利似乎遥遥无期。 在这片贫瘠干涸的土地上，只有小巧、敏捷或凶猛的生物才可能繁衍生息，甚至才可能抱有生存下去的期望。
+> 干旱持续至今，长达一千万年之久，可怕的蜥蜴的极盛时代已结束很久。 在位于赤道的这片将来有一天会被称为非洲的大陆上，生存的斗争已经达到凶残的至高点，而胜利似乎遥遥无期。 在这片贫瘠干涸的土地上，只有小巧、敏捷或凶猛的生物才可能繁衍生息，甚至才可能抱有生存下去的期望。
 
 ## <a name="images"></a>图像
 
