@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f546fc66f7c602705289493eb2f5c96555ab7603
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728933"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566346"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Intune 中 Android 和 Samsung Knox Standard 设备限制设置列表
 
@@ -104,7 +106,7 @@ ms.locfileid: "52728933"
 - **Web 浏览器(仅限 Samsung Knox)**：选择“阻止”可阻止在设备上使用默认 Web 浏览器。 “未配置”则允许使用设备的默认 Web 浏览器。
 - **自动填充(仅限 Samsung Knox)**：选择“阻止”可阻止在浏览器中自动填充文本。 “未配置”则允许使用 Web 浏览器的自动填充功能。
 - **Cookie (仅限 Samsung Knox)**：选择希望如何在设备上处理网站的 cookie。 选项包括：
-  - 允许
+  - Allow
   - 阻止所有 cookie
   - 允许访问的网站的 cookie
   - 允许当前网站的 cookie
@@ -164,4 +166,4 @@ ms.locfileid: "52728933"
 
 [分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
-还可以为 [Android 企业](device-restrictions-android-for-work.md#kiosk-settings)和 [Windows 10](kiosk-settings.md) 设备创建展台配置文件。
+还可以为 [Android 企业](device-restrictions-android-for-work.md#dedicated-device-settings)和 [Windows 10](kiosk-settings.md) 设备创建展台配置文件。

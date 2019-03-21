@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 188c32a2fd38d3445380a9d1898b90a3bb080ae1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149029"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57335201"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>在 Intune 中注册 Android 设备
 
@@ -36,7 +37,7 @@ ms.locfileid: "43149029"
 
 **注册 Android 设备：**
 
-1. 从 [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安装免费的 Intune 公司门户应用。
+1. 从 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) 安装免费的 Intune 公司门户应用。
 
 2. 打开公司门户应用。
 

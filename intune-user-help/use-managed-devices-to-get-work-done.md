@@ -18,11 +18,11 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b7b67f1484ed74bd538cad53f02babd542b77fff
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55838829"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>使用受管理设备访问工作或学校资源
@@ -58,7 +58,7 @@ Microsoft Intune 是贵公司用于配置其安全性和设备需求的软件。
 - [安装 Android 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [安装 iOS 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [安装 macOS 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [安装 Windows 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+- [安装 Windows 版公司门户应用](about-cp-app-for-windows-10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>可将何种计算机或设备添加到公司门户？
 -   使用 iOS（例如 iPhone 和 iPad）和 macOS（例如 MacBook 和 iMac）的 Apple 设备

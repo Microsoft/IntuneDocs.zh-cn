@@ -9,18 +9,19 @@ ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
-ms.topic: conceptual
+ms.localizationpriority: medium
+ms.topic: reference
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c6ec55db072cd02fae2b4eef659f601b63bb850
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ee2084cd7b5ba2d51311b675c3f31c41cc83fc4f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231683"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566159"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>在 Intune 中使用适用于 Windows Holographic for Business 设备的自定义设置
 
@@ -40,7 +41,7 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 2. 选择“设备配置” > “配置文件” > “创建配置文件”。
 3. 输入以下设置：
 
-    - **名称**：输入配置文件的名称，如 `hololens custom profile`。
+    - **名称**：输入配置文件的名称，例如 `hololens custom profile`。
     - **说明**：输入配置文件的说明。
     - **平台**：选择“Windows 10 及更高版本”。
     - **配置文件类型**：选择“自定义”。
@@ -48,8 +49,8 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 4. 在“自定义 OMA-URI 设置”中，选择“添加”。 输入以下设置：
 
     - **名称**：输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。
-    - **说明**：输入包含设置概述以及其他所有重要详细信息的说明。
-    - **OMA-URI**（区分大小写）：输入要用作设置的 OMA-URI。
+    - **说明**：输入设置的简要说明以及其他重要详细信息。
+    - **OMA-URI**（区分大小写）：输入想要作为设置使用的 OMA-URI。
     - **数据类型**：选择用于此 OMA-URI 设置的数据类型。 选项包括：
 
         - 字符串

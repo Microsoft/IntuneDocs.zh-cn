@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aff0aad055aee08dfbf17622e3d9f9c3061165b8
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 666b61eec021fa6a2cdad5126f572234d97b6883
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233961"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566091"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>在 Intune 中为运行 Android 的设备配置 VPN 设置
 
@@ -36,13 +37,13 @@ ms.locfileid: "57233961"
 
 ## <a name="android-vpn-settings"></a>Android VPN 设置
 
-- **连接名称**：为此连接输入名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。
+- **连接名称**：输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。
 - **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com。
 
   - **身份验证方法**：选择设备向 VPN 服务器进行身份验证的方法。 选项包括：
 
-    - **证书**：选择现有 SCEP 或 PKCS 证书配置文件，以对连接进行身份验证。 [配置证书](certificates-configure.md)列出了创建证书配置文件的步骤。
-    - **用户名和密码**：登录 VPN 服务器时，最终用户会看到输入用户名和密码的提示。
+    - **证书**：选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 [配置证书](certificates-configure.md)列出了创建证书配置文件的步骤。
+    - **用户名和密码**：登录 VPN 服务器时，系统会提示最终用户输入用户名和密码。
 
 - **连接类型**：选择 VPN 连接类型。 选项包括：
 
@@ -53,18 +54,18 @@ ms.locfileid: "57233961"
   - **Pulse Secure**
   - **Citrix**
 
-- **指纹**（仅限 Check Point Capsule VPN）：输入字符串（如“Contoso 指纹代码”），以验证能否信任 VPN 服务器。 可将指纹发送到客户端，使其在连接时知道信任具有相同指纹的任何服务器。 如果设备没有指纹，则会提示用户信任 VPN 服务器，并显示指纹。 用户手动验证指纹，并选择“信任”进行连接。
+- **指纹**（仅限 Check Point Capsule VPN）：输入字符串（例如“Contoso Fingerprint Code”），验证 VPN 服务器是否可以信任。 可将指纹发送到客户端，使其在连接时知道信任具有相同指纹的任何服务器。 如果设备没有指纹，则会提示用户信任 VPN 服务器，并显示指纹。 用户手动验证指纹，并选择“信任”进行连接。
 - **输入 Citrix VPN 属性的键值对**（仅限 Citrix）：输入由 Citrix 提供的键值对。 这些值配置 VPN 连接的属性。
 
 ## <a name="android-enterprise-vpn-settings"></a>Android Enterprise VPN 设置
 
-- **连接名称**：为此连接输入名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。
+- **连接名称**：输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。
 - **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com。
 
   - **身份验证方法**：选择设备向 VPN 服务器进行身份验证的方法。 选项包括：
   
-    - **证书**：选择现有 SCEP 或 PKCS 证书配置文件，以对连接进行身份验证。 [配置证书](certificates-configure.md)列出了创建证书配置文件的步骤。
-    - **用户名和密码**：登录 VPN 服务器时，最终用户会看到输入用户名和密码的提示。
+    - **证书**：选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 [配置证书](certificates-configure.md)列出了创建证书配置文件的步骤。
+    - **用户名和密码**：登录 VPN 服务器时，系统会提示最终用户输入用户名和密码。
 
 - **连接类型**：选择 VPN 连接类型。 选项包括：
 

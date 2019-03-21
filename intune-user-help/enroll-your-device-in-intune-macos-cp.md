@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55834715"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
@@ -58,7 +58,7 @@ ms.locfileid: "55834715"
 
 4. “设备”页将显示托管设备列表或横幅。 显示的内容取决于是否已托管设备。 
     * 若要添加未列出的设备，请选择显示为“点击此处告诉我们你正在使用的设备或添加新设备”的横幅。
-    * 如果你没有任何设备，横幅显示：你没有任何托管设备。请点击此处添加设备。” 单击横幅添加设备。  
+    * 如果没有任何设备，横幅上将显示：“没有任何托管设备。请点击此处添加设备。” 单击横幅添加设备。  
 
      ![“设备”页的屏幕截图，使用红色方框圈出横幅选项，以突出显示单击位置。](./media/CP-enroll-MACOS-1808.png)  
 5.  完成以下步骤，该步骤与公司门户当前显示的消息匹配。  

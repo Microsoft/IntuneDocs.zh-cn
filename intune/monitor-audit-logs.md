@@ -6,19 +6,20 @@ ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f44d25f75ccc68912bea7b108ca56afe6aecb528
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 98540af0f0b7d259973d1a7e873c68fc64f488d1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57239044"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460668"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune 活动的审核日志
 审核日志记录了导致 Microsoft Intune 有所变化的活动。 可以创建、更新（编辑）、删除和分配操作或远程任务，并能生成可查看的审核事件。 可以查看大多数 Intune 工作负载的审核日志。 默认针对所有客户启用审核且无法禁用。 审核事件从功能发布日期 2017 年 12 月开始记录；以前的事件不可用。

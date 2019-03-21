@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a44b5b911d89a2e31f2a718aaa76702847ffb3d8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849197"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566652"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -187,7 +188,7 @@ ms.locfileid: "55849197"
 > [!NOTE]
 > 如下表所示，某些参数是可选的。
 
-**示例：** 下面的示例命令在 MyApp.ipa 应用中运行应用包装工具。 指定签名证书的预配配置文件和 SHA-1 哈希，并用于对已包装的应用签名。 创建输出应用 (MyApp_Wrapped.ipa)，且将其存储在桌面文件夹中。
+**示例：** 以下示例命令在名为 MyApp.ipa 的应用上运行应用包装工具。 指定签名证书的预配配置文件和 SHA-1 哈希，并用于对已包装的应用签名。 创建输出应用 (MyApp_Wrapped.ipa)，且将其存储在桌面文件夹中。
 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -438,7 +439,8 @@ ms.locfileid: "55849197"
 > [!NOTE]
 > 使用 Intune App Wrapping Tool 版本 7.1.13 或更高版本包装的应用已启用日志记录功能。
 
-### <a name="see-also"></a>另请参阅
-- [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)</br>
-- [使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+## <a name="see-also"></a>另请参阅
+
+- [决定如何使用 Microsoft Intune 为移动应用程序管理准备应用](apps-prepare-mobile-application-management.md)
+- [常见的问题、 问题和解决方法与设备策略和配置文件](device-profile-troubleshoot.md)
 - [使用 SDK 启用针对移动应用程序管理的应用](app-sdk.md)

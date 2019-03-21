@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834647"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56742527"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>在设备上安装和共享应用
 在设备上从适用于 Windows 的公司门户应用安装应用
@@ -36,10 +36,11 @@ ms.locfileid: "55834647"
 2. 查找并从公司门户应用的以下任意部分安装应用：  
 
     * **主页**：从列表中选择组织特别推荐的应用。  
-    * **显示全部**：在“主页” > “应用”部分，单击“显示全部”以查看所有可用的应用。  
-    * **所有应用**：在导航窗格中选择此页，查看所有可用的应用，包括已安装的和特别推荐的应用。  
+    * **显示所有**：在“主页” > “应用”部分，单击“显示所有”以查看所有可用的应用。  
+    * **所有应用**：在导航窗格中选择此页，查看所有可用的应用，包括已安装和特别推荐的应用。  
+    * **应用类别**： 选择基于类型或函数应用在导航窗格中选择此页。 应用程序进行排序在类别下，如**特色**，**教育**，并**工作效率**。  
     * **搜索应用**：静态搜索栏位于应用的导航窗格中。  若要查找可用的应用，请按应用名称或发布服务器搜索。  
-    * **所有应用**：查看、排序和筛选所有可用的应用。 搜索结果按相关性自动排序。  
+    * “所有应用”：查看、排序和筛选所有可用的应用。 搜索结果按相关性自动排序。  
 
 3. 选择一个应用。   
 4. 在应用详细信息页面上，单击“安装”。 安装完成后，可看到“已安装”状态。  

@@ -6,10 +6,11 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 784ad8366391c55a97ac58d9c1f7ab7707062aa8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 16992d8a80ca42db84cfa071422a779606a99891
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845656"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460073"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>使用策略帮助保护运行 Intune 客户端软件的 Windows 电脑
 
@@ -43,7 +44,6 @@ Windows 防火墙帮助 Windows 电脑免于受到黑客、恶意软件和其他
 
 作为 IT 管理员，你的主要工作之一是[保持你管理的 Windows 电脑中没有恶意软件和病毒](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)。 将 Intune 与 Endpoint Protection 集成以提供对恶意软件威胁的实时防护、使恶意软件定义保持最新，以及自动扫描计算机。 Endpoint Protection 还提供可帮助你管理和监视恶意软件攻击的工具。
 
+## <a name="see-also"></a>另请参阅
 
-
-### <a name="see-also"></a>另请参阅
-[使用 Microsoft Intune 策略管理设备上的设置和功能](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[常见的问题、 问题和解决方法与设备策略和配置文件](device-profile-troubleshoot.md)

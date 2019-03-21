@@ -18,11 +18,11 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55844541"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>通过 Windows 公司门户使用 iOS 设备
@@ -46,7 +46,7 @@ ms.locfileid: "55844541"
 公司门户中也支持其他版本的 Windows，例如 [Windows 10 全息版](https://www.microsoft.com/hololens)。 但是，本文不介绍这些版本，因为它们用于非常特定的用途。
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>在公司门户中设置设备
-- [将我的 Windows 设备托管在公司门户中](enroll-your-device-in-intune-windows.md)
+- [将我的 Windows 设备托管在公司门户中](windows-enrollment-company-portal.md)  
 - [对设备进行管托管意味着什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [公司可以在我的设备上看到哪些信息？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [对设备进行加密](encrypt-your-device-windows.md)
