@@ -12,6 +12,8 @@ items:
     items:
     - name: 应用 UI 中的新增功能
       href: whats-new-app-ui.md
+    - name: 开发过程中的功能
+      href: in-development.md
   expanded: true
 - name: 快速入门
   items:
@@ -75,8 +77,6 @@ items:
     href: windows-information-protection-configure.md
   - name: MAM 常见问题
     href: mam-faq.md
-  - name: 策略和配置文件常见问题
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 操作方式指南
   items:
   - name: 规划部署
@@ -225,9 +225,7 @@ items:
       items:
       - name: 设备注册计划或 Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: 在 Windows 电脑上安装 Intune 软件客户端
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: 放弃报告
+    - name: 不完整的注册报表
       href: enrollment-report-company-portal-abandon.md
     - name: 设备注册疑难解答
       href: troubleshoot-device-enrollment-in-intune.md
@@ -258,7 +256,7 @@ items:
       href: device-logout-user.md
     - name: 删除用户
       href: device-remove-user.md
-    - name: 擦除设备
+    - name: 清除 macOS 设备
       href: device-erase.md
     - name: 远程控制移动设备
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@ items:
     - name: 限制设备设置和功能
       href: device-restrictions-configure.md
     - name: 提供更新
+      displayName: delivery optimization; updates
       href: delivery-optimization-windows.md
     - name: 升级版本和 S 模式
       href: edition-upgrade-configure-windows-10.md
@@ -363,7 +362,7 @@ items:
         - name: Intune 向 Google 发送的数据
           href: data-intune-sends-to-google.md
         - name: 从 Jamf Pro 共享到 Intune 的信息
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: 视图和正确的个人数据
         href: privacy-data-view-correct.md
       - name: 审核、导出、删除
@@ -376,6 +375,7 @@ items:
       - name: 安装 Exchange 本地连接器
         href: exchange-connector-install.md
       - name: 创建并分配条件访问策略
+        href: conditional-access-exchange-create.md
       - name: 基于设备的条件访问策略
         href: create-conditional-access-intune.md
       - name: 从 Intune 经典门户重新分配条件访问策略
@@ -448,6 +448,8 @@ items:
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: 监视设备加密
+      href: encryption-monitor.md
     - name: 证书
       href: certificates-configure.md
       items:
@@ -532,6 +534,8 @@ items:
         href: apps-inc-exl-assignments.md
       - name: 部署 Windows 10 应用
         href: apps-windows-10-app-deploy.md
+      - name: 将应用部署到政府环境
+        href: apps-deploy-gcc-dod.md
     - name: 监视应用
       href: apps-monitor.md
     - name: 配置应用
@@ -616,6 +620,8 @@ items:
       href: data-google-sends-to-intune.md
   - name: 获得帮助和支持
     items:
+    - name: 租户状态
+      href: tenant-status.md
     - name: 故障排除
       items:
       - name: 帮助用户排查问题
@@ -624,6 +630,8 @@ items:
         href: troubleshoot-company-resource-access-problems.md
       - name: 应用安装问题疑难解答
         href: troubleshoot-app-install.md
+      - name: 移动应用程序管理故障排除
+        href: troubleshoot-mam.md
       - name: Intune 活动的审核日志
         href: monitor-audit-logs.md
       - name: 使用 Azure Monitor 查看日志
@@ -636,14 +644,12 @@ items:
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint Protection 疑难解答
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: 策略疑难解答
+      - name: 策略和配置文件疑难解答
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: 条件访问疑难解答
         href: troubleshoot-conditional-access.md
       - name: Exchange Connector 疑难解答
         href: troubleshoot-exchange-connector.md
-    - name: 已知问题
-      href: known-issues.md
     - name: 获取支持
       href: get-support.md
 - name: 参考
@@ -660,14 +666,6 @@ items:
           href: device-restrictions-android.md
         - name: Email
           href: email-settings-android.md
-        - name: 受信任的证书
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 证书
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 导入的证书
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS 证书
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -687,16 +685,8 @@ items:
           href: device-restrictions-android-for-work.md
         - name: Email
           href: email-settings-android-enterprise.md
-        - name: 受信任的证书
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 证书
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 导入的证书
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS 证书
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: 自定义
@@ -713,12 +703,6 @@ items:
           href: device-restrictions-ios.md
         - name: Email
           href: email-settings-ios.md
-        - name: 受信任的证书
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 证书
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 证书
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -737,26 +721,20 @@ items:
           href: device-restrictions-macos.md
         - name: Endpoint Protection
           href: endpoint-protection-macos.md
-        - name: 受信任的证书
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 证书
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: 自定义
           href: custom-settings-macos.md
-    - name: 安全基线
-      items:
-      - name: Windows 安全基线设置
-        href: security-baseline-settings-windows.md
     - name: Windows 10 及更高版本
       items:
       - name: 合规性策略设置
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: 配置文件设置
         items:
+        - name: 交付优化设置
+          href: delivery-optimization-settings.md
         - name: 设备限制
           href: device-restrictions-windows-10.md
         - name: 设备限制（Windows 10 协同版）
@@ -771,12 +749,6 @@ items:
           href: identity-protection-windows-settings.md
         - name: Kiosk
           href: kiosk-settings-windows.md
-        - name: 受信任的证书
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 证书
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 证书
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -787,6 +759,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: 自定义
           href: custom-settings-windows-10.md
+      - name: 安全基线设置
+        href: security-baseline-settings-windows.md
       - name: Windows 更新设置
         href: windows-update-settings.md
     - name: Windows Holographic for Business
@@ -809,10 +783,6 @@ items:
         items:
         - name: 设备限制
           href: device-restrictions-windows-8-1.md
-        - name: 受信任的证书
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 证书
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Wi-Fi 导入
@@ -827,10 +797,6 @@ items:
           href: device-restrictions-windows-phone-8-1.md
         - name: Email
           href: email-settings-windows-phone-8-1.md
-        - name: 受信任的证书
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 证书
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: 自定义
@@ -854,6 +820,9 @@ items:
         href: app-wrapper-prepare-android.md
       - name: Intune App SDK for Android
         href: app-sdk-android.md
+        items:
+        - name: Intune App SDK for Android 测试指南
+          href: app-sdk-android-testing-guide.md
       - name: Intune App SDK Xamarin Bindings
         href: app-sdk-xamarin.md
     - name: 使用 Intune 数据仓库
@@ -912,34 +881,6 @@ items:
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: 资源
   items:
-  - name: Microsoft Intune 文档指南
-    href: intune-documentation.md
-  - name: 故障排除
-    items:
-    - name: 帮助用户排查问题
-      href: help-desk-operators.md
-    - name: 公司资源访问权限问题疑难解答
-      href: troubleshoot-company-resource-access-problems.md
-    - name: 应用安装问题疑难解答
-      href: troubleshoot-app-install.md
-    - name: 移动应用程序管理故障排除
-      href: troubleshoot-mam.md
-    - name: Intune 活动的审核日志
-      href: monitor-audit-logs.md
-    - name: 查看应用保护日志
-      href: app-protection-policy-settings-log.md
-    - name: 电子邮件配置文件疑难解答
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: 软件更新疑难解答
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Endpoint Protection 疑难解答
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: 策略疑难解答
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: 条件访问疑难解答
-      href: troubleshoot-conditional-access.md
-    - name: Exchange Connector 疑难解答
-      href: troubleshoot-exchange-connector.md
   - name: 存档
     items:
     - name: 新增功能存档
@@ -1005,9 +946,9 @@ items:
       href: data-outside-protect.md
     - name: 防止非受管理设备上的数据泄露
       href: data-leak-prevention.md
-ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742816"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306853"
