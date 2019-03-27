@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34d1cbe969b8e186d9e067660237da9c4ca88fb8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396211"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429727"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 可以为公司带来什么好处？
 Microsoft Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮助员工提高工作效率，同时保护企业数据。
@@ -46,15 +46,15 @@ Microsoft Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮�
 
 ## <a name="quickstarts"></a>快速入门
 
-我们了解移动设备管理的最初阶段并不容易，因为你需要代表公司做出各种不同的决策。 以下快速入门帮助你开始使用 Intune，并在最短的时间内完成一些常见任务。
+我们了解着手开始管理移动设备可能并不容易。 你需要代表公司做出很多不同的决策。 以下快速入门可帮助你开始使用 Intune，并在最短的时间内完成一些常见任务。
 
-可使用页面左侧的目录，按照相应的快速入门顺序进行学习。
+可使用此页面左侧的目录，按照快速入门的相应顺序进行学习。
 
 - [免费试用 Intune](free-trial-sign-up.md) - 创建免费订阅以在测试环境中试用 Intune。    
 - [创建用户](quickstart-create-user.md) - 向 Intune 添加用户，使用户在移动设备上访问公司资源。
-- [创建组](quickstart-create-group.md) - 将用户归组，以便更轻松地管理策略和用户对应用的访问权限。
-- [设置自动注册](quickstart-setup-auto-enrollment.md) - 将 Microsoft Intune 设置为在特定用户登录到 Windows 10 设备时自动注册设备。
-- [注册设备](quickstart-enroll-windows-device.md) - 使用 Intune 用户角色并将设备注册到 Microsoft Intune。 然后，返回到 Intune 并确认已注册的设备。
+- [创建组](quickstart-create-group.md) - 将用户归组，以便更轻松地管理他们可访问的策略和应用。
+- [设置自动注册](quickstart-setup-auto-enrollment.md) - 将 Intune 设置为在特定用户登录到 Windows 10 设备时自动注册设备。
+- [注册设备](quickstart-enroll-windows-device.md) - 使用 Intune 用户角色并将设备注册到 Intune。 然后，返回 Intune 并确认设备注册成功。
 - [创建设备符合性策略](quickstart-set-password-length-android.md) - 创建设备符合性策略并为策略分配组。
 - [向不符合要求的设备发送通知](quickstart-send-notification.md) - 通过创建和分配符合性策略，向使用不符合要求的设备的员工发送电子邮件通知。
 - [添加和分配应用](quickstart-add-assign-app.md) - 添加客户端应用并将其分配给公司的员工。
@@ -64,13 +64,13 @@ Microsoft Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮�
 
 ## <a name="prerequisites"></a>必备条件
 
-在开始之前，必须激活 Intune 管理员和租户帐户。 创建免费订阅以在测试环境中[免费试用 Intune](free-trial-sign-up.md)。 当前订阅者还可以在实时租户中完成这些活动。 这些入门文章假设你在测试设备上执行操作。
+在开始之前，必须激活 Intune 管理员和租户帐户。 创建免费订阅以在测试环境中[免费试用 Intune](free-trial-sign-up.md)。 当前订阅者还可以在实时租户中完成这些活动。 这些入门文章假定你在测试设备上执行操作。
 
 为了完成所有的入门任务，还需要确保你是组织的全局管理员。
 
 ## <a name="intune-architecture"></a>Intune 体系结构
 
-Intune 是企业移动性 + 安全性 (EMS) 的组件，可用于管理移动设备和应用。 它与 Azure Active Directory (Azure AD) 等其他 EMS 组件紧密集成以实现标识和访问控制，并与 Azure 信息保护集成以实现数据保护。 将它与 Office 365 结合使用时，员工可以在其设备上高效工作，同时保护组织的信息。
+Intune 是企业移动性 + 安全性 (EMS) 的组件，可用于管理移动设备和应用。 它与 Azure Active Directory (Azure AD) 等其他 EMS 组件紧密集成以实现标识和访问控制，并与 Azure 信息保护集成以实现数据保护。 将它与 Office 365 结合使用时，员工可以在其所有设备上高效工作，同时保护组织的信息。
 
 ![Microsoft Intune 的高级体系结构图表](/intune/media/intunearchitecture.svg)
 
