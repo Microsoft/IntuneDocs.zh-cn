@@ -4,6 +4,7 @@ description: 快速入门 - 在 Intune 中创建用户。
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189480"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991085"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>快速入门：创建用户并为其分配许可证
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>快速入门：创建用户并向其分配许可证
 
 在本快速入门中，你将创建一个用户，然后为该用户分配许可证。 使用 Intune 时，你希望有权访问公司数据的每个人都必须拥有用户帐户。 Intune 管理员稍后可以配置此类用户来管理访问控制。
 
@@ -45,9 +47,9 @@ ms.locfileid: "52189480"
 
 ## <a name="assign-a-license-to-the-user"></a>向用户分配许可证
 
-创建用户之后，必须使用 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)为其分配 Intune 许可证。 如果没有分配许可证，用户就无法将他们的设备注册到 Intune 中。 
+创建用户后，必须使用 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854) Intune 许可证。 如果没有分配许可证，用户就无法将他们的设备注册到 Intune 中。 
 
-1. 使用登录 Intune 的凭据登录 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
+1. 使用登录 Intune 所用的凭据登录 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
 2. 选择“用户” > “活动用户”> 选择刚刚创建的用户。
 3. 选择“产品许可证”旁边的“编辑”。
 4. 在“位置”下，为用户选择位置。
@@ -61,7 +63,7 @@ ms.locfileid: "52189480"
 
 ## <a name="clean-up-resources"></a>清理资源
 
-如果不再需要此用户，则可以删除该用户，方法是导航到 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“用户” > “活跃用户” > 选择列表中的用户 > “删除用户” > “删除用户” > “确认更改” > “关闭”。
+如果不再需要此用户，则可以删除该用户，方法是导航到 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“用户” > “活跃用户” > 选择列表中的用户 > “删除用户” > “删除用户” > “确认更改” > “关闭”。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -4,6 +4,7 @@ description: 快速入门 - 在 Intune 中设置 Windows 10 设备的自动注�
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179640"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394319"
 ---
-# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>快速入门 - 设置 Windows 10 设备的自动注册
+# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>快速入门：设置适用于 Windows 10 设备的自动注册
 
 在本快速入门中，将 Microsoft Intune 设置为在特定用户登录到 Windows 10 设备时自动注册设备。
 

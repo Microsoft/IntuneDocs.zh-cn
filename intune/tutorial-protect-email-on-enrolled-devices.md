@@ -3,25 +3,27 @@ title: 教程 - 保护 Intune 托管设备上的 Exchange Online 电子邮件
 titlesuffix: Microsoft Intune
 description: 了解如何使用 iOS Intune 符合性策略和 Azure AD 条件访问保护 Exchange Online，以要求托管设备和 Outlook 应用。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2018
-ms.topic: quickstart
+ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181864"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57528201"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教程：保护托管设备上的 Exchange Online 电子邮件
 了解如何使用设备符合性策略与条件访问，以确保 iOS 设备仅在由 Intune 托管并使用已批准的电子邮件应用时才可以访问 Exchange Online 电子邮件。 

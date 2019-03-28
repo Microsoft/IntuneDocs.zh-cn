@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 81b4fa08-5333-4c54-9f49-8db5f6984ed2
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87fb7091079086e5c455376cb5c4ae8e10f28ec1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179246"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57397217"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>快速入门：创建适用于 Android 设备的密码符合性策略
 
@@ -66,4 +68,4 @@ Intune 设备符合性策略指定设备为实现符合性而必须满足的规�
 要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [快速入门：向不符合要求的设备发送通知](quickstart-send-notification.md)
+> [快速入门：将通知发送到不相容设备](quickstart-send-notification.md)

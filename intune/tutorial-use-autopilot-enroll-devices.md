@@ -10,6 +10,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
@@ -17,12 +18,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187729"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57395992"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教程：使用 Autopilot 在 Intune 中注册 Windows 设备
 Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护和应用自定义操作系统映像。 
@@ -42,7 +44,7 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 
 ## <a name="prerequisites"></a>必备条件
 - [设置 Windows 自动注册](quickstart-setup-auto-enrollment.md)
-- [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 
 ## <a name="add-devices"></a>添加设备
@@ -93,9 +95,9 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 4. 对于“部署模式”，选择“用户驱动”。 包含此配置文件的设备与设备注册用户相关联。 必须具备用户凭据，才能注册设备。
 5. 在“加入 Azure AD 时的身份”框中，选择“Azure AD 已加入”。
 6. 选择“全新体验 (OOBE)”，配置下列选项并将其他选项保留为默认值，然后选择“保存”：
-    - 最终用户许可协议 (EULA)：“隐藏”
-    - 隐私设置：“显示”
-    - 用户帐户类型：“标准”
+    - **最终用户许可协议(EULA)**：**隐藏**
+    - **隐私设置**：**显示**
+    - **用户帐户类型**：**标准**
 
 6. 选择“创建”，创建配置文件。 Autopilot 部署配置文件现在即可分配给设备。
 

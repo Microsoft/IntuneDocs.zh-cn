@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186250"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991128"
 ---
-# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>快速入门：向不符合要求的设备发送通知
+# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>快速入门：将通知发送到不符合的设备
 
 本快速入门将使用 Microsoft Intune 向具有不符合要求的设备的员工发送电子邮件通知。
 
@@ -48,11 +50,11 @@ ms.locfileid: "52186250"
 2. 输入以下信息：
 
    - **名称**：Contoso 管理员
-   - **主题**：设备符合性
+   - **主题**：*设备符合性*
    - **消息**：当前设备不满足组织符合性要求。
-   - **电子邮件标头 - 包括公司徽标**：设置为“已启用”以显示组织徽标。
-   - **电子邮件页脚 - 包括公司徽标**：设置为“已启用”以显示组织名称。
-   - **电子邮件页脚 - 包括联系人信息**：设置为“已启用”以显示组织的联系人信息。
+   - **电子邮件标头 – 包括公司徽标**：设置为“已启用”以显示组织的徽标。
+   - **电子邮件页脚 – 包括公司名称**：设置为“已启用”以显示组织的名称。
+   - **电子邮件页脚 – 包括联系人信息**：设置为“已启用”以显示组织的联系人信息。
 
    ![Intune 中符合性通知邮件的示例](./media/quickstart-send-notification-01.png)
 
@@ -84,7 +86,7 @@ ms.locfileid: "52186250"
     ![新的符合性策略的系统安全设置](./media/quickstart-send-notification-02.png) 
 
 7. 依次单击“确定”、“确定”和“创建”即可创建符合性策略。
-8. 选择新策略的名称：Windows 10 符合性。
+8. 选择新政策的名称：Windows 10 符合性。
 9. 选择“属性” > “针对非符合性的操作” > “添加”。
 10. 在“操作”下拉框中，确认选中“向最终用户发送电子邮件”。
 11. 选择“消息模板” > “Contoso 管理员” > “选择”以选择先前在本主题中创建的消息模板。
@@ -112,4 +114,4 @@ ms.locfileid: "52186250"
 要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [快速入门：添加和分配客户端应用](quickstart-add-assign-app.md)
+> [快速入门：添加并分配客户端应用](quickstart-add-assign-app.md)

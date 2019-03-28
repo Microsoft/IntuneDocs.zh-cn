@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179062"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393364"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入门：创建和分配应用保护策略
 
@@ -46,8 +48,8 @@ ms.locfileid: "52179062"
 
     - **名称**：Windows 10 内容保护
     - **说明**：与此策略相关联的用户将无法在设备上的指定应用与其他非托管应用之间剪切、复制或粘贴任何内容。
-    - **平台**：Windows 10
-    - **注册状态**：已注册
+    - **平台**：*Windows 10*
+    - **注册状态**：需要注册
 
 3. 选择“受保护的应用”以选择必须遵守此策略的应用。
 4. 单击“添加应用”。

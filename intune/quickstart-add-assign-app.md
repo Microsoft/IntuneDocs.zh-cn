@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184499"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391889"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>快速入门：添加和分配客户端应用
+# <a name="quickstart-add-and-assign-a-client-app"></a>快速入门：添加并分配客户端应用
 
 本快速入门将使用 Intune 来添加客户端应用并将其分配给公司的员工。 管理员的首要任务之一是，确保最终用户能够访问他们在执行工作时所需的应用。 
 
@@ -103,4 +105,4 @@ ms.locfileid: "52184499"
 要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [快速入门：创建和分配应用保护策略](quickstart-create-assign-app-policy.md)
+> [快速入门：创建并分配应用保护策略](quickstart-create-assign-app-policy.md)
