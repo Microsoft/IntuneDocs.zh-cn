@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565464"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394875"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -87,6 +87,7 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |允许应用向其他应用传送数据|X|X|
 |允许应用从其他应用接收数据|X|X|
 |限制使用其他应用剪切、复制和粘贴|X|X|
+|指定的字符数不受剪切或复制自托管应用|X|X|
 |访问需要简单 PIN|X|X|
 |指定重置 PIN 前的尝试次数|X|X|
 |允许使用指纹而不是 PIN|X|X|

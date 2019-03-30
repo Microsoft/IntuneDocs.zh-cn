@@ -1,11 +1,11 @@
 ---
-title: 公司资源访问权限问题疑难解答 | Microsoft Docs
-description: 使用 Microsoft Intune 错误和状态代码帮助解决资源访问权限问题。
+title: 在 Microsoft Intune-Azure 中的错误和状态代码 |Microsoft Docs
+description: 使用 MDM 托管设备，在 Microsoft Intune 中获取对公司资源，在 iOS 设备上的错误和 OMA 响应错误访问权限时，请参阅错误、 状态代码、 说明和解决方法的列表。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461492"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330472"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>排查 Microsoft Intune 中的公司资源访问权限问题
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>常见的错误代码和在 Microsoft Intune 中的说明
 
-当 Microsoft Intune 操作返回错误代码时，使用本主题中的错误和状态代码可帮助你解决疑难问题。
+本文列出了常见错误、 状态代码、 说明和可能的解决方案访问组织资源时。 使用此信息来帮助解决使用 Microsoft Intune 时的访问权限问题。
 
-如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](get-support.md)，了解更多获得帮助的方法。
+如果需要支持的帮助，请参阅[获取对 Microsoft Intune 支持](get-support.md)。
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM 托管的 Windows 设备的状态代码
 
@@ -385,5 +385,6 @@ ms.locfileid: "57461492"
 |-2016345912|0x87D100C8|SyncML 命令成功完成。|
 |-2016346011|0x87D10065|指定的 SyncML 命令正在执行，但尚未完成。|
 
-### <a name="next-steps"></a>后续步骤
-如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](get-support.md)中所述。
+## <a name="next-steps"></a>后续步骤
+
+联系到 Microsoft 支持部门[获取对 Microsoft Intune 支持](get-support.md)。

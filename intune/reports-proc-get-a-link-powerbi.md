@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 03/28/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3342eec0ea9797f4ce21b53e589ff4f427d03bb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b93bb9911fa93998e443a797d085a568280c278
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564799"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618495"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 连接到数据仓库
 
@@ -57,7 +57,7 @@ Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据
 > 每个 Power BI 文件 (pbix) 可能会因租户位置而有所不同。 如果要管理多个 Intune 租户，请在登录该租户时，确保使用从 Azure 门户下载的文件。  
 
 1.  登录 Azure 门户，选择“监视 + 管理” > “Intune”。 还可搜索 Intune 资源。  
-2.  打开“Microsoft Intune 数据仓库 API (预览)”边栏选项卡。
+2.  打开**设置 Intune 数据仓库**边栏选项卡。
 3.  选择“下载 PowerBI 文件”。 扩展名为 (Pbix) 的文件将下载到指定位置。
 4.  使用 Power BI 打开文件。 此时会加载“Intune 数据仓库报表”，但可能需要一些时间才能获取租户数据。
 5.  选择“刷新”，加载租户数据并查看报表。
@@ -68,7 +68,7 @@ Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据
 借助经 Azure AD 身份验证的客户端，OData URL 可连接到数据仓库 API 中的 RESTful 终结点，该终结点向报告客户端公开数据模型。 按以下说明使用 Power BI Desktop 连接并创建自己的报表。 无需局限于 Power BI Desktop，可将自己最喜爱的分析工具与 OData URL 配合使用，前提是客户端支持 OAUTH2.0 身份验证和 OData v4.0 标准。
 
 1.  登录 Azure 门户，选择“监视 + 管理” > “Intune”。 还可搜索 Intune 资源。  
-2.  打开“Microsoft Intune 数据仓库 API (预览)”边栏选项卡。
+2.  打开**设置 Intune 数据仓库**边栏选项卡。
 3. 在报表边栏选项卡中检索自定义源 URL，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4. 打开 Power BI Desktop。
 5. 选择“开始” > “获取数据”。 选择“OData 源”。
