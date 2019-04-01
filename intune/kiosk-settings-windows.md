@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565734"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429685"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>使用 Intune 将 Windows 10 及更高版本设备作为展台运行的设置
 
@@ -176,6 +176,7 @@ ms.locfileid: "57565734"
 
       选择“确定”，保存所做更改。
 
+    - **AutoLaunch**： 可选。 当用户登录时，请选择 AutoLaunch 到应用程序。 单个应用程序可以是 AutoLaunched。
     - 磁贴大小：必填。 选择“小”、“中”、“宽”或“大”的应用磁贴大小。
 
   > [!TIP]
@@ -184,6 +185,8 @@ ms.locfileid: "57565734"
 - 使用替代“开始”布局：选择“是”输入一个 XML 文件，用于描述应用在开始菜单上的显示方式，包括应用的顺序。 如果在开始菜单中需要更多自定义，请使用此选项。 相关指导和示例 XML，请参阅[自定义和导出“开始”布局](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)。
 
 - Windows 任务栏：选择“显示”或“隐藏”任务栏。 默认情况下，不会显示任务栏。 可以看到图标（如 Wi-fi 图标），但最终用户无法更改这些设置。
+
+- **允许下载文件夹的访问权限**： 选择**是**以允许用户访问 Windows 资源管理器中的下载文件夹。 默认情况下已禁用下载文件夹的访问权限。 此功能通常为最终用户用于访问从浏览器下载的项目。
 
 选择“确定”，保存所做更改。
 

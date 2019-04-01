@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fa6a68d1b5a8d2ccf87587ecab36c7807770d48
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565343"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330413"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 macOS 设备设置
 
@@ -46,7 +46,7 @@ ms.locfileid: "57565343"
   此功能适用于：  
   - macOS 10.13 及更高版本
 
-- **延迟 （仅限监管模式） 的软件更新**： 当设置为**未配置**（默认值），软件更新显示在设备上为 Apple 释放它们。 例如，如果 macOS 更新在特定日期中获取由 Apple 发布的然后该更新很自然地显示发布日期围绕在设备上。
+- **将软件更新延迟**： 当设置为**未配置**（默认值），软件更新显示在设备上为 Apple 释放它们。 例如，如果 macOS 更新在特定日期中获取由 Apple 发布的然后该更新很自然地显示发布日期围绕在设备上。 毫不延迟地允许种子生成更新。
 
   **启用**允许延迟时软件更新显示在设备上，从 0-90 天。 此设置不会控制何时更新或未安装。 
 

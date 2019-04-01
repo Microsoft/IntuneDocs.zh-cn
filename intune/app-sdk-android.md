@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: HT
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068944"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514491"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > 请确保您的应用程序利用`resourceId`并`aadId`参数传递给`acquireToken()`，以便获取正确的令牌。
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1633,7 +1633,7 @@ public final class MAMDataProtectionManager {
 
 注册 `WIPE_USER_DATA` 的应用无法享有 SDK 默认的选择性擦除行为的好处。 对于多身份标识感知应用，这种丢失可能更为重要，因为 MAM 默认的选择性擦除将仅擦除其标识被擦除锁定的文件。 如果多身份标识感知应用希望完成 MAM 默认选择性擦除_**并**_ 希望针对擦除执行其自己的操作，则应注册 `WIPE_USER_AUXILIARY_DATA` 通知。 此通知将在执行 MAM 默认选择性擦除前一秒由 SDK 发出。 应用不能同时注册 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA`。
 
-默认选择性擦除将完成活动和终止应用程序进程正常关闭应用程序。 如果您的应用程序重写默认 seletive 擦除，你可能想要关闭您的应用程序手动来防止用户访问内存中数据擦除发生后，请考虑。
+默认选择性擦除将完成活动和终止应用程序进程正常关闭应用程序。 如果您的应用程序重写默认选择性擦除，你可能想要关闭您的应用程序手动来防止用户访问内存中数据擦除发生后，请考虑。
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>为 Android 应用程序启用面向 MAM 的配置（可选）
@@ -1667,7 +1667,7 @@ LOGGER.info("Found value " + valueToUse);
 应用配置会添加一个新的通知类型：
 * **REFRESH_APP_CONFIG**：此通知在 `MAMUserNotification` 中发送，并通知应用新的应用配置数据可用。
 
-### <a name="further-reading"></a>延伸阅读
+### <a name="further-reading"></a>深入阅读
 有关图形 API 功能的详细信息，请参阅[图形 API 参考](https://developer.microsoft.com/graph/docs/concepts/overview)。 <br>
 
 关于如何在 Android 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 Android 的 Microsoft Intune 应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-use-android)。
@@ -1785,7 +1785,7 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 
 ## <a name="telemetry"></a>遥测技术
 
-Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用会记录遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。
+Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用程序记录系统生成的数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人数据。
 
 > [!NOTE]
 > 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
