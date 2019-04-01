@@ -77,7 +77,7 @@ items:
     href: windows-information-protection-configure.md
   - name: MAM 常见问题
     href: mam-faq.md
-- name: 操作方式指南
+- name: 操作方法指南
   items:
   - name: 规划部署
     items:
@@ -98,7 +98,7 @@ items:
         href: planning-guide-support-plan.md
       - name: 设计
         href: planning-guide-design.md
-      - name: 实现
+      - name: 实施
         href: planning-guide-onboarding.md
       - name: 测试和验证
         href: planning-guide-test-validation.md
@@ -154,6 +154,10 @@ items:
       items:
       - name: 基于角色的访问控制
         href: role-based-access-control.md
+      - name: 向用户分配角色
+        href: assign-role.md
+      - name: 创建自定义角色
+        href: create-custom-role.md
       - name: 使用作用域标记
         href: scope-tags.md
   - name: 注册设备
@@ -537,7 +541,7 @@ items:
         href: apps-windows-10-app-deploy.md
       - name: 将应用部署到政府环境
         href: apps-deploy-gcc-dod.md
-    - name: 监视应用
+    - name: 监视器应用
       href: apps-monitor.md
     - name: 配置应用
       href: app-configuration-policies-overview.md
@@ -623,7 +627,7 @@ items:
     items:
     - name: 租户状态
       href: tenant-status.md
-    - name: 故障排除
+    - name: 疑难解答
       items:
       - name: 帮助用户排查问题
         href: help-desk-operators.md
@@ -653,7 +657,7 @@ items:
         href: troubleshoot-exchange-connector.md
     - name: 获取支持
       href: get-support.md
-- name: 参考
+- name: 引用
   items:
   - name: 设置列表
     items:
@@ -665,7 +669,7 @@ items:
         items:
         - name: 设备限制
           href: device-restrictions-android.md
-        - name: Email
+        - name: 电子邮件
           href: email-settings-android.md
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
@@ -684,7 +688,7 @@ items:
         items:
         - name: 设备限制
           href: device-restrictions-android-for-work.md
-        - name: Email
+        - name: 电子邮件
           href: email-settings-android-enterprise.md
         - name: VPN
           href: vpn-settings-android.md#android-enterprise-vpn-settings
@@ -702,7 +706,7 @@ items:
           href: ios-device-features-settings.md
         - name: 设备限制
           href: device-restrictions-ios.md
-        - name: Email
+        - name: 电子邮件
           href: email-settings-ios.md
         - name: VPN
           href: vpn-settings-ios.md
@@ -742,7 +746,7 @@ items:
           href: device-restrictions-windows-10-teams.md
         - name: 版本升级和模式切换
           href: edition-upgrade-windows-settings.md
-        - name: Email
+        - name: 电子邮件
           href: email-settings-windows-10.md
         - name: Endpoint Protection
           href: endpoint-protection-windows-10.md
@@ -754,7 +758,7 @@ items:
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
           href: wi-fi-settings-windows.md
-        - name: 教育
+        - name: 教育水平
           href: education-settings-windows.md
         - name: 共享的多用户设备
           href: shared-user-device-settings-windows.md
@@ -796,7 +800,7 @@ items:
         items:
         - name: 设备限制
           href: device-restrictions-windows-phone-8-1.md
-        - name: Email
+        - name: 电子邮件
           href: email-settings-windows-phone-8-1.md
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
@@ -945,9 +949,9 @@ items:
       href: data-outside-protect.md
     - name: 防止非受管理设备上的数据泄露
       href: data-leak-prevention.md
-ms.openlocfilehash: d273d9c300f49a2d78f8b9ed62031497b06a0060
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: c58e250d7aeb4913554874c8a1e931b2dc356dfd
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514416"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658568"

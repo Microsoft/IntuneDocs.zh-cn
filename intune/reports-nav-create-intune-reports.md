@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ac6591256e1bb45c0e2ac9c1d6fe9ac213b106a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c3112683d44b7c4d4a3e9d1bccc6fb8c06450600
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234029"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58068858"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 数据仓库
 
@@ -42,7 +43,7 @@ ms.locfileid: "57234029"
   -  一个使用 OData 标准的数据模型
 
 > [!Note]
-> 如果将混合移动设备管理 (MDM) 与 System Center Configuration Manager 和 Microsoft Intune 配合使用，建议通过 SCCM 检索数据。 Intune 数据仓库仅包含 Intune 数据。 可将 SCCM Power BI 仪表板用于自定义报表。 有关详细信息，请参阅 [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)（宣布推出适用于 System Center Configuration Manager 的 Power BI 解决方案模板）和[适用于 Dynamics 365 的 Power BI 内容](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)。
+> 如果将共同管理的移动设备管理 (MDM) 与 System Center Configuration Manager 和 Microsoft Intune 配合使用，则需要从 Configuration Manager 检索数据。 Intune 数据仓库仅包含 Intune 数据。 为自定义报表，可以使用 Configuration Manager Power BI 仪表板。 有关详细信息，请参阅 [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)（宣布推出适用于 System Center Configuration Manager 的 Power BI 解决方案模板）和[适用于 Dynamics 365 的 Power BI 内容](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)。
 
 > [!Important]  
 > 现在可以通过设置查询参数  `api-version=v1.0` 来使用 v1.0 版的 Intune 数据仓库。 数据仓库中集合的更新本质上是附加更新，不会破坏现有方案。<br><br>
@@ -52,4 +53,4 @@ ms.locfileid: "57234029"
 
 - 获取链接并使用 Power BI 来获取见解。 有关说明，请参阅[使用 Power BI 连接到 Intune 数据仓库](reports-proc-get-a-link-powerbi.md)。
 - 通过链接，使用 Power BI 创建自定义报表。 有关说明，请参阅[使用 Power BI 从 OData 数据源创建报表](reports-proc-create-with-odata.md)。
-- 有关 Intune 数据仓库 API、数据模型及实体间关系的详细信息<!-- , and an example of creating a custom client to retrieve data,-->，请参阅 [Intune 数据仓库 API](reports-nav-intune-data-warehouse.md)。
+- 有关 Intune 数据仓库 API、数据模型及实体间关系的详细信息，<!-- , and an example of creating a custom client to retrieve data,--> 请参阅 [Intune 数据仓库 API](reports-nav-intune-data-warehouse.md)。

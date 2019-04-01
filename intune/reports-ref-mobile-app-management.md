@@ -6,10 +6,11 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238755"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565683"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>移动应用管理 (MAM) 实体引用
 
@@ -83,12 +84,12 @@ MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 
 | 属性 | 描述 | 示例 |
 |---------|------------|--------|
 | DateKey |日期键，表明在数据仓库中记录 MAM 应用签入的时间。 | 20160703 |
-| ApplicationInstanceKey |与此 MAM 应用签入关联的应用实例的键。 |1900/5/2 中午 12:00:00 |
-| UserKey |与此 MAM 应用签入关联的用户的键。 |1900/1/12 中午 12:00:00 |
-| ApplicationKey |已签入的 MAM 应用的键。 |1900/1/10 中午 12:00:00 |
-| DeviceHealthKey |与此 MAM 应用签入关联的 DeviceHealth 的键。 |1900/1/2 中午 12:00:00 |
-| PlatformKey |表示与此 MAM 应用签入关联的设备的平台。 |1900/1/1 中午 12:00:00 |
-| EffectiveAppliedPolicyKey |表示与已签入的 MAM 应用关联的有效应用的策略。 有效应用的策略通过合并与特定应用和用户相关的所有策略生成。 |1900/5/2 中午 12:00:00 |
+| ApplicationInstanceKey |与此 MAM 应用签入关联的应用实例的键。 | 123 |
+| UserKey |与此 MAM 应用签入关联的用户的键。 | 4323 |
+| ApplicationKey |已签入的 MAM 应用的键。 |234 |
+| DeviceHealthKey |与此 MAM 应用签入关联的 DeviceHealth 的键。 | 321 |
+| PlatformKey |表示与此 MAM 应用签入关联的设备的平台。 |123 |
+| EffectiveAppliedPolicyKey |表示与已签入的 MAM 应用关联的有效应用的策略。 有效应用的策略通过合并与特定应用和用户相关的所有策略生成。 | 322 |
 | LastCheckInDate |上次签入此 MAM 应用的日期和时间。 该值可以为 null。 |2016/11/23 - 中午 12:00:00 |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -97,8 +98,8 @@ MamDeviceHealth 实体表示部署有移动应用管理 (MAM) 策略的设备（
 
 | 属性 | 描述 | 示例 |
 |---------|------------|--------|
-| DeviceHealthKey |数据仓库中设备及其相关运行状况的唯一标识符 - 代理键。 |1900/1/1 中午 12:00:00 |
-| DeviceHealth |设备及其相关运行状况的的唯一标识符 - 类似于 DeviceHealthKey，但该标识符是自然键。 |1900/1/1 中午 12:00:00 |
+| DeviceHealthKey |数据仓库中设备及其相关运行状况的唯一标识符 - 代理键。 |123 |
+| DeviceHealth |设备及其相关运行状况的的唯一标识符 - 类似于 DeviceHealthKey，但该标识符是自然键。 |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |表示设备的状态。 <br>不可用 - 此设备上没有信息。 <br>正常 - 设备未越狱。 <br>不正常 - 设备已越狱。 |不可用 正常 不正常 |
 | RowLastModifiedDateTimeUtc |上次在数据仓库中修改此特定 MAM 设备运行状况时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
 

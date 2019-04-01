@@ -10,18 +10,20 @@ ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297496"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400477"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 数据仓库收集
 
@@ -505,7 +507,10 @@ ownerType 实体表明拥有设备的是公司、个人还是未知对象。
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 所有者类型的唯一标识符。                                                                                                                                               |                            |
 | ownerTypeKey  | 数据仓库中所有者类型的唯一标识符 - 代理键。                                                                                                       |                            |
-| ownerTypeName | 表示设备的所有者类型：公司 - 设备为企业所有。  个人 - 设备为个人所有 (BYOD)。   未知 - 此设备上无此信息。 | 公司 个人 未知 |
+| ownerTypeName | 表示设备的所有者类型：企业 - 设备为企业所有。  个人 - 设备为个人所有 (BYOD)。   未知 - 此设备上无此信息。 | 公司个人未知 |
+
+> [!Note]  
+> 有关`ownerTypeName`筛选器在 azure Ad 的设备创建动态组时，您需要将值设置`deviceOwnership`作为`Company`。 有关详细信息，请参阅[设备的规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
 
 ## <a name="policies"></a>策略
 “策略”实体列出了设备配置文件、应用配置文件和符合性策略。 可使用移动设备管理 (MDM) 将策略分配给企业中的一个组。

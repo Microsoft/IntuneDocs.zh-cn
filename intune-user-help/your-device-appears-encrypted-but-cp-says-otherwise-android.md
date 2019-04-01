@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
-ms.translationtype: HT
+ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57334997"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389466"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>你的 Android 设备似乎已加密，但公司门户将该设备识别为未加密
 
@@ -63,16 +63,15 @@ ms.locfileid: "57334997"
 
 ### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>可更新来解决此问题的已知设备
 
-如果你拥有以下设备之一，如果你未将设备更新到最新的 Android 版本，则可能会遇到此问题。 你可以通过转到“设置” > “更新”为此类设备安装更新。 
+如果尚未将设备更新到最新版本的 Android，请转到你的设备**设置**应用，然后选择**更新**。 在更新之前，这些设备可能显示为不符合：  
 
-- [华为荣耀 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [华为 P9](https://consumer.huawei.com/en/phones/p9/)
+- 华为荣耀 8
+- 华为 P9
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>目前无法更新来解决此问题的已知设备
+以下设备将始终显示已加密，不能用于访问公司资源。 若要访问公司资源，必须使用不同的设备。  
 
-无法在下列设备上解决此问题。 可能需要使用其他设备来访问公司资源。 
-
-- [华为 Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO 设备](https://www.oppo.com/en/smartphones)
-- [Vivo 设备](https://www.vivo.co.in)
-- [小米 Mi 智能手机](https://xiaomi-mi.com/mi-smartphones/)
+- 华为 Mate 8
+- OPPO 设备
+- Vivo 设备
+- 小米 Mi 智能手机

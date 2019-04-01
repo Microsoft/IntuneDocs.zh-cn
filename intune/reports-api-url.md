@@ -6,10 +6,11 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 02/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851434"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396468"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 
@@ -57,11 +58,13 @@ Intune 的 URL 使用以下格式：
 
 ## <a name="api-version-information"></a>API 版本信息
 
-此 API 的当前版本为：`beta`。 
+现在可以通过设置查询参数  `api-version=v1.0` 来使用 v1.0 版的 Intune 数据仓库。 数据仓库中集合的更新本质上是附加更新，不会破坏现有方案。
+
+可通过使用 beta 版本，试用数据仓库的最新功能。 若要使用 beta 版本，URL 中必须包含查询参数  `api-version=beta`。 Beta 版本会提供尚未正式作为支持服务推出的功能。 随着 Intune 不断添加新功能，beta 版本可能会更改行为和数据协定。 任何依赖于 beta 版本的自定义代码或报告工具都可能会因不断推出的更新而临时中断运行。
 
 ## <a name="odata-query-options"></a>OData 查询选项
 
-当前版本支持以下 OData 查询参数：`$filter, $orderby, $select, $skip,` 和 `$top`。
+当前版本支持以下 OData 查询参数：`$filter`、`$select`、`$skip,` 和 `$top`。 在中`$filter`，则只`DateKey`或`RowLastModifiedDateTimeUTC`列都适用，和其他属性会触发错误的请求时可能会支持。
 
 ## <a name="datekey-range-filters"></a>DateKey 范围筛选器
 
@@ -73,15 +76,12 @@ Intune 的 URL 使用以下格式：
 ## <a name="filter-examples"></a>筛选器示例
 
 > [!NOTE]
-> 筛选器示例假定现在是 2018/2/21。
+> 筛选器示例假定现在是 2019/2/21。
 
 |                             Filter                             |           性能优化           |                                          描述                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    完整                                      |    返回 `DateKey` 介于 20180214 至 20180221 的数据。                                     |
 |    `$filter=DateKey eq 20180214`                                 |    完整                                      |    返回 `DateKey` 等于 20180214 的数据。                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    完整                                      |    返回 `DateKey` 介于 20180214 至 20180220 的数据。                                     |
-|    `maxhistorydays=7&$filter=Id gt 1`                            |    部分，不会优化 Id gt 1    |    返回 `DateKey` 介于 20180214 至 20180221 且 ID 大于 1 的数据。             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    完整                                      |    返回 `DateKey` 等于 20180214 的数据。 已忽略 `maxhistorydays`。                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    无                                      |    未将其视作 `DateKey` 范围筛选器，因此没有性能提升。                              |
-|    `$filter=DateKey ne 20180214`                                 |    无                                      |    未将其视作 `DateKey` 范围筛选器，因此没有性能提升。                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    无                                      |    未将其视作 `DateKey` 范围筛选器，因此没有性能提升。 已忽略 `maxhistorydays`。    |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完整                                       |    返回与数据`RowLastModifiedDateTimeUTC`大于或等于 `2018-02-21T23:18:51.3277273Z`                             |

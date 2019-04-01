@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 02/21/2018
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f4ce34abdb0c1b3d7dbc2bbd3f41f618715fb3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837386"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566482"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK 概述
-Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用保护策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 你会发现可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用 API 针对需要应用参与的功能来自定义应用行为。
+Intune App SDK 可用于 iOS 和 Android，可让应用支持 Intune [应用保护策略](app-protection-policy.md)。 如果应用具有应用保护策略应用于它，它可以由 Intune 管理，并且由 Intune 作为托管应用被识别。 此 SDK 努力使应用开发者所需的代码更改数量降到最低。 你会发现可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用 SDK 的 API 自定义应用行为以支持需要应用参与的功能。
 
-为应用启用应用保护策略后，IT 管理员可部署这些策略来保护应用内的公司数据。
+使应用能够支持 Intune 应用保护策略后，IT 管理员可部署这些策略来保护应用内的公司数据。
 
 ## <a name="app-protection-features"></a>应用保护功能
 
@@ -51,13 +52,13 @@ IT 管理员可使用 [Intune Managed Browser 应用](app-configuration-managed-
 ### <a name="enforce-a-pin-policy"></a>强制执行 PIN 策略
 IT 管理员可要求最终用户输入 PIN 以访问应用中的公司数据。 这可确保使用应用的用户与最初使用工作或学校帐户登录的用户为同一用户。 最终用户配置其 PIN 时，Intune App SDK 使用 Azure Active Directory 验证最终用户的凭据是否为已注册的 Intune 帐户。
 
-### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>要求用户使用工作或学校帐户进行登录以访问应用
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>要求用户使用工作或学校帐户进行登录以访问应用
 IT 管理员可以要求用户使用其工作或学校帐户登录以访问该应用。 Intune App SDK 使用 Azure Active Directory 提供单一登录体验，其中一旦输入凭据就将在后续登录中重用该凭据。 我们还支持通过与 Azure Active Directory 联合的标识管理解决方案进行身份验证。
 
 ### <a name="check-device-health-and-compliance"></a>检查设备运行状况和合规性
 在最终用户访问应用之前，IT 管理员可以检查设备的运行状况及其是否符合 Intune 策略。 在 iOS 上，此策略将检查设备是否已越狱。 在 Android 上，此策略将检查设备是否已获得 root 权限。
 
-### <a name="multi-identity-support"></a>多身份支持
+### <a name="support-multi-identity"></a>支持多身份
 多身份支持功能是 SDK 的一种功能，其允许策略托管（企业）帐户和非托管（个人）帐户在单个应用中共存。
 
 例如，许多用户在 iOS 和 Android 的 Office 移动应用中同时配置公司和个人电子邮件帐户。 当用户使用公司帐户访问数据时，IT 管理员必须确信实施应用保护策略。 但是，当用户访问个人电子邮件帐户时，该数据应在 IT 管理员的控制之外。 Intune App SDK 通过**仅**将应用保护策略应用到应用中的公司标识来实现此功能。
@@ -80,4 +81,4 @@ IT 管理员可以要求用户使用其工作或学校帐户登录以访问该�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解[应用保护策略](app-protection-policy.md)。
+- [Microsoft Intune App SDK 入门](app-sdk-get-started.md)。

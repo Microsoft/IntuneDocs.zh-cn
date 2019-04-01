@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,15 +18,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55837571"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 设备注册疑难解答
-如果你按照“[在 Intune 中注册 Windows 10 移动版或 Windows 10 桌面版设备](enroll-your-w10-phone-or-w10-pc-windows.md)”中的步骤操作，但是仍无法访问工作或学校电子邮件和文件，请尝试以下故障排除步骤。
+如果注册了你的设备，但仍无法访问工作或学校电子邮件和文件，请尝试以下故障排除步骤。  
 
 1.  查看接下来的两个屏幕，并找到与你在设备上看到的相似屏幕。 按照与你在设备上看到的屏幕相匹配的步骤操作。
 
@@ -48,18 +48,18 @@ ms.locfileid: "55837571"
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - 如果你没有看到以上所示的连接信息，或者你看到此类信息但是其中缺少部分选项，则点击“**连接**”，然后使用你的工作或学校凭据登录。 立即连接。
+   - 如果看不到，如上所示的连接信息或你看到它，但它缺少的一些选项，请点击**Connect**。 然后使用工作或学校凭据登录以连接。  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>看到“你的帐户”时执行的故障排除步骤
 
 如果执行了上述步骤，但仍无法访问你的工作或学校电子邮件、文件和其他数据，请返回到“**帐户**”并点击“**工作访问**”。
 
-- 如果你看到你的工作单位或学校帐户，那么恭喜你。 你已连接。
+- 如果你看到你的工作或学校帐户列出，你已连接。  
 
 - 如果看不到工作单位或学校帐户，请点击“连接”，然后使用工作单位或学校凭据登录。
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>看到“设置工作或学校帐户”时执行的故障排除步骤
 
-如果看到消息“我们无法自动发现与所输入用户名匹配的管理终结点。请检查用户名并重试。如果知道管理终结点的 URL，请输入。”，则应尝试重新输入用户名和密码</strong>。 如果仍无效，则应咨询公司支持人员，获取需在“管理终结点”文本框中提供的网站。 网站可能类似于www.yourcompany.onmicrosoft.com。
+如果看到消息“我们无法自动发现与所输入用户名匹配的管理终结点。请检查用户名并重试。如果知道管理终结点的 URL，请输入。”，则应尝试重新输入用户名和密码。 如果仍无效，则应咨询公司支持人员，获取需在“管理终结点”文本框中提供的网站。 网站可能类似于www.yourcompany.onmicrosoft.com。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

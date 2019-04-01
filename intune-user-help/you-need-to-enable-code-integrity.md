@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: chrisbal
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34bad76c3b6ff00b42eac70bcd870ef4d59ab017
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839936"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56426920"
 ---
-# <a name="you-need-to-enable-code-integrity"></a>需启用代码完整性
+# <a name="enable-code-integrity"></a>启用代码完整性
 
-为安全保存组织信息，需要实现不同类型的安全性，以预防不同类型的问题。 实现这种安全性的一种方法是使用 Windows 代码完整性，它能确保深层程序（驱动程序）和系统文件不被修改。
+你的组织可能需要您的 PC 以使用名为的威胁保护功能来启用*代码完整性*。 代码完整性检查驱动程序和系统文件有损坏或恶意软件在设备上。 若要在设备上运行的代码完整性，另一个安全功能称为[*安全引导*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot)还必须启用。 
 
-当系统主动使用安全启动时，将自动开启代码完整性。
+如果您的 PC 不符合策略，因为已禁用代码完整性，应联系组织的 IT 支持团队。 他们将帮助你启用安全启动，这将触发下一次启动你的设备代码完整性。 
 
-> [!Tip]
-> 启用安全启动是一项高级任务。 我们建议你联系公司支持人员，寻求有关此任务的帮助。
+如果你自己标识为高级的设备用户，并想要尝试的步骤，请参阅[重新启用安全启动](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot)。
 
-如果你认为可以继续操作，请参阅[禁用安全启动](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)页中的“重新启用安全启动”部分，尝试自己启用安全启动。
+## <a name="additional-resources-for-it-administrators"></a>面向 IT 管理员的其他资源  
+如果你是 Intune 管理员并且想要了解有关 Intune 的设备运行状况合规性设置的详细信息，请参阅[在 Intune 中添加适用于 Windows 10 设备的设备符合性策略](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings)。 可在 Intune 中执行的符合性操作的详细信息，请参阅[HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results)。  
 
+## <a name="next-steps"></a>后续步骤  
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

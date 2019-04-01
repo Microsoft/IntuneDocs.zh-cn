@@ -6,22 +6,23 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f5b7a37e1ed21c4680a57098bdd0a43a79346
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: af0c544540798a52dc018c749909da6cea50df6c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238398"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566669"
 ---
 # <a name="reference-for-policy-entities"></a>策略实体参考
 
@@ -68,8 +69,6 @@ DeviceConfigurationProfileDeviceActivity 实体列出每天处于成功、挂起
 | 成功 |处于成功状态的唯一设备数。 |12 |
 | 错误 |处于错误状态的唯一设备数。 |10 |
 | Failed |处于失败状态的唯一设备数。 |2 |
-
-
 
 DeviceConfigurationProfileUserActivity 实体列出每天处于成功、挂起、失败或错误状态的用户数。 该数字反映了分配给该实体的设备配置文件。 例如，如果对于分配给某用户的所有策略，该用户均为成功状态，则当天的成功计数增加一。 如果向用户分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则将用户计为错误状态。  DeviceConfigurationProfileUserActivity 实体列出了过去 30 天内给定某天中处于各状态的用户数。
 

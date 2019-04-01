@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b554bd4eb6aa5e49354501e69326b6eeb11098ef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236954"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566040"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -30,7 +31,6 @@ ms.locfileid: "57236954"
 通过限制应用的功能，而不更改应用自身的代码，使用适用于 Android 的 Microsoft Intune 应用包装工具，更改内部 Android 应用的行为。
 
 该工具是一个 Windows 命令行应用程序，它在 PowerShell 中运行并在 Android 应用周围创建“包装器”。 包装应用后，可通过在 Intune 中配置[移动应用程序管理策略](app-protection-policies.md)来更改应用的功能。
-
 
 在运行工具前查看[运行应用包装工具的安全注意事项](#security-considerations-for-running-the-app-wrapping-tool)。 若要下载该工具，请转到 GitHub 上的[适用于 Android 的 Microsoft Intune 应用包装工具](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)。
 
@@ -53,10 +53,12 @@ ms.locfileid: "57236954"
 
 - Android 要求对所有应用包 (.apk) 进行签名。 有关重复使用现有证书和证书签名的综合指南，请参阅[重复使用签名证书和包装应用](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)。 Java 可执行文件 keytool.exe 可用于生成对已包装的输出应用进行签名所需的新凭据。 必须保证设置的所有密码的安全性，但需要记住密码，因为运行应用包装工具时需要使用。
 
-> [!NOTE]
-> Intune App Wrapping Tool 不支持用于应用签名的 Google 的 v2 和即将推出 v3 签名方案。 使用 Intune App Wrapping Tool 包装 .apk 文件后，建议使用 [Google 提供的 Apksigner 工具]( https://developer.android.com/studio/command-line/apksigner)。 这将确保一旦应用安装到最终用户设备上，它就可以通过 Android 标准正确启动。 
+    > [!NOTE]
+    > Intune App Wrapping Tool 不支持用于应用签名的 Google 的 v2 和即将推出 v3 签名方案。 使用 Intune App Wrapping Tool 包装 .apk 文件后，建议使用 [Google 提供的 Apksigner 工具]( https://developer.android.com/studio/command-line/apksigner)。 这将确保一旦应用安装到最终用户设备上，它就可以通过 Android 标准正确启动。 
 
-- （可选）在输入应用中启用 Multidex。 有时由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 在此方案中，最佳做法是在该应用自身中启用 Multidex。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作。 
+- （可选）有时，由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 Intune 应用包装工具将自动处理期间产生包装为具有最小 API 的应用级别为 21 或更高版本的 DEX 文件溢出 (在[v.1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases))。 对于应用程序，最小值为 < 21 的 API 级别，最佳做法是以提高使用包装器的 API 级别的最小值`-UseMinAPILevelForNativeMultiDex`标志。 对于客户无法增加应用的最低 API 级别，提供了下列 DEX 溢出解决方法。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作：
+* 使用 ProGuard 来消除应用程序的主索引文件的未使用的类引用。
+* 对于使用 v3.1.0 客户或更高版本的 Android Gradle 插件中，禁用[D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)。  
 
 ## <a name="install-the-app-wrapping-tool"></a>安装应用包装工具
 
@@ -92,7 +94,8 @@ ms.locfileid: "57236954"
 |**-KeyStorePassword**&lt;SecureString&gt;|用于解密密钥库的密码。 Android 要求对所有的应用程序包 (.apk) 签名。 使用 Java keytool 生成 KeyStorePassword。 在此处了解更多有关 Java [密钥存储](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)的信息。| |
 |**-KeyAlias**&lt;String&gt;|要用于进行签名的密钥的名称。| |
 |**-KeyPassword**&lt;SecureString&gt;|用于解密私钥的密码，该私钥将用于签名。| |
-|**-SigAlg**&lt;SecureString&gt;| （可选）用于签名的签名算法的名称。 该算法必须与私钥兼容。|例如：SHA256withRSA、SHA1withRSA|
+|**-SigAlg**&lt;SecureString&gt;| （可选）用于签名的签名算法的名称。 该算法必须与私钥兼容。|示例：SHA256withRSA、SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| （可选）此标志用于源 Android 应用的最低 API 级别增加到 21。 此标志将提示进行确认，因为它将限制谁可以安装此应用。 用户可以通过追加参数跳过确认对话框中"-确认： $false"到其 PowerShell 命令。 该标志只应使用最小 API < 21 无法成功地包装 DEX 溢出错误导致的应用程序上的客户。 | |
 | **&lt;CommonParameters&gt;** | （可选）该命令支持常见的 PowerShell 参数，如 verbose 和 debug。 |
 
 

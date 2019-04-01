@@ -7,20 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2176eda7ce54906c6af5b34cc3db49e21ecda274
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 1c6a2f4fc3e3cae171cea96520d075a659d4d1ca
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231955"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566329"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>将运行 Windows Holographic 的设备升级到 Windows Holographic for Business
 
@@ -36,8 +37,8 @@ Microsoft Intune 包含许多有助于管理和保护设备的设置。 本文�
 
 ## <a name="edition-upgrade"></a>版本升级
 
-- **要升级到的版本**：选择“Windows 10 Holographic for Business”。
-- **许可证文件**：转到并选择系统提供的 XML 许可证文件。
+- **要升级到版本**： 选择**Windows 10 Holographic for Business**。
+- **许可证文件**：浏览找到并选择系统提供的 XML 许可证文件。
 
   ![输入包含 Holographic for Business 许可证信息的 XML 文件名](media/Holographic-edition-upgrade.png)
  

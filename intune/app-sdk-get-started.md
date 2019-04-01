@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
-ms.topic: article
+ms.date: 02/24/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
@@ -16,31 +17,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9c8ca0b04cbb6f7cf570134a6f4bdce7bf57ed
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
-ms.translationtype: HT
+ms.openlocfilehash: 23c254094281c7591730b2972ec0de41f5243e66
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325446"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566380"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
-本指南将帮助通过 Microsoft Intune 快速对移动应用启用应用保护策略。 先去了解 [Intune App SDK 概述](app-sdk.md)中介绍的 Intune App SDK 优点可能会很有帮助。
+本指南将帮助通过 Microsoft Intune 快速启用移动应用以支持应用保护策略。 先去了解 [Intune App SDK 概述](app-sdk.md)中介绍的 Intune App SDK 优点可能会很有帮助。
 
-Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT 管理员创造一致的体验。 但是由于平台限制，某些功能的支持存在细微差异。
+Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT 管理员创造一致的体验。 但是由于平台差异和限制，某些功能的支持存在细微差异。
 
 ## <a name="register-your-store-app-with-microsoft"></a>向 Microsoft 注册应用商店应用
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>如果应用位于组织内部且非公用：
 
-则*不需要*注册应用。 对于内部业务线应用，IT 管理员将对应用进行内部部署。 Intune 将检测使用 SDK 构建的应用，并允许 IT 管理员对其应用保护策略。 可跳到[启用 iOS 或 Android 应用的应用保护策略](#enable-your-iOS-or-Android-app-for-app-protection-policy)部分。
+则无需注册应用__。 为内部[行的业务线 (LOB) 应用](apps-add.md#app-types-in-microsoft-intune)的编写或对你的公司，IT 管理员将在内部部署应用程序。 Intune 将检测已使用 SDK 构建的应用，并允许 IT 管理员对其应用保护策略。 可跳到[启用 iOS 或 Android 应用的应用保护策略](#enable-your-iOS-or-Android-app-for-app-protection-policy)部分。
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>如果应用将被发布到公共应用商店（例如Apple App Store 或 Google Play）：
 
-则_**必须**_ 首先向 Microsoft Intune 注册应用并同意注册条款。 然后，IT 管理员可将应用保护策略应用到托管应用，该应用将被列为 Intune 应用合作伙伴。
+则_**必须**_ 首先向 Microsoft Intune 注册应用并同意注册条款。 然后，IT 管理员可将应用保护策略应用到托管应用，该应用将被列为[受 Intune 保护的合作伙伴应用](apps-supported-intune-apps.md#partner-apps)。
 
 除非已完成注册并已由 Microsoft Intune 团队确认，否则 Intune 管理员不能向应用深层链接应用应用保护策略。 Microsoft 还会将你的应用添加到其 [Microsoft Intune 合作伙伴页](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 在该页面中，将显示应用的图标，表明它支持 Intune 应用保护策略。
 
+### <a name="the-registration-process"></a>注册过程
 要开始注册过程，且如果尚未使用 Microsoft 联系人，请填写 [Microsoft Intune 应用程序合作伙伴问卷](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u)。
 
 我们将使用调查表答复中列出的电子邮件地址来联系你并继续注册过程。 此外，如果我们有任何问题，我们会使用你的注册电子邮件地址与你联系。
@@ -82,7 +84,7 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 * **[Intune App SDK for iOS 开发人员指南](app-sdk-ios.md)**：本文档将指导逐步完成使用 Intune App SDK 启用本机 iOS 应用的过程。
 
-* **[Intune App SDK for Android 开发人员指南](app-sdk-android.md)**：本文档将指导逐步完成使用 Intune App SDK 启用本机 Android 应用的过程。
+* **[Intune App SDK for Android 开发人员指南](app-sdk-android.md)**：本文档将指导你逐步完成使用 Intune App SDK 启用本机 Android 应用的过程。
 
 * **[Intune App SDK Xamarin Bindings 指南](app-sdk-xamarin.md)**：此文档可帮助使用 Intune 应用保护策略适用的 Xamarin 来生成 iOS 和 Android 应用。
 
@@ -94,13 +96,13 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
  
  * 使用 [Azure ActiveDirectory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)构建应用并对其启用 AAD 代理身份验证。
  
- * iOS 和 Android 平台上的应用的 [AAD 客户端 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) 必须是唯一的。
+ * iOS 和 Android 平台上的应用的 [AAD 客户端 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) 必须是唯一的。
  
 ## <a name="configure-telemetry-for-your-app"></a>配置应用遥测
 
 Microsoft Intune 收集应用的使用情况统计数据。
 
-* **用于 iOS 的 Intune 应用 SDK**：默认情况下，SDK 会记录有关使用事件的 SDK 遥测数据。 会将此数据发送到 Microsoft Intune。
+* **Intune App SDK for iOS**：默认情况下，SDK 会记录有关使用事件的 SDK 遥测数据。 会将此数据发送到 Microsoft Intune。
 
     * 如果选择不从应用将 SDK 遥测数据发送到 Microsoft Intune，则必须通过在 IntuneMAMSettings 字典中将属性 `MAMTelemetryDisabled` 设置为“YES”，来禁用遥测数据传输。
 
@@ -154,17 +156,17 @@ Intune|iOS|Android|描述|
 ### <a name="test-your-app"></a>测试应用程序
 完成将 iOS 或 Android 应用与 Intune App SDK 集成的必需步骤后，需确保所有应用保护策略都已针对用户和 IT 管理员启用并正常工作。若要测试已集成的应用，则需查看以下文档：
 
-* **Microsoft Intune 测试帐户**：若要就 Intune 应用保护功能对 Intune 托管的应用进行测试，将需要 Microsoft Intune 帐户。
+* **Microsoft Intune 测试帐户**：若要就 Intune 应用保护功能对 Intune 托管的应用进行测试，你将需要 Microsoft Intune 帐户。
 
     * 如果启用 Intune 应用保护策略 iOS 或 Android 应用商店应用的 ISV，则在使用 Microsoft Intune 完成注册（如注册步骤中所述）后，会收到促销代码。 促销代码允许你注册具有 1 年延期使用的 Microsoft Intune 试用。
 
-    * 如果你正在开发一套不会发送到应用商店的业务应用，则你应能够通过你的组织访问 Microsoft Intune。 你还可以在 [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中注册为期 1 个月的免费试用。
+    * 如果你正在开发一套不会发送到应用商店的业务应用，则你应能够通过你的组织访问 Microsoft Intune。 你还可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中注册为期 1 个月的免费试用。
     
-    * 如果使用终端用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Office 管理员门户网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](https://docs.microsoft.com/en-ca/intune/licenses-assign)。
+    * 如果使用最终用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Microsoft 365 管理中心网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](https://docs.microsoft.com/en-ca/intune/licenses-assign)。
 
 * **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。
 
-* **疑难解答**：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
+* 疑难解答：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
 
 ### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>向 Intune 应用保护服务提供应用访问权限（可选）
 

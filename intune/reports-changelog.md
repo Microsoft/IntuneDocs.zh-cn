@@ -6,10 +6,11 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
@@ -17,18 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e10549e05f814975337831e3eb9821d87a3f43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834001"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565632"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 随时了解 Intune 数据仓库的更新。
+
+## <a name="1902"></a>1902 
+发布时间：2019 年 2 月
+
+### <a name="power-bi-compliance-app"></a>符合性的 power BI 应用 
+
+访问 Intune 数据仓库中使用 Power BI Online [Intune 符合性 （数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)应用。 使用此 Power BI 应用，现在可以访问并共享预创建的报表，而无需任何设置，而无需离开你的 web 浏览器。 
+
+> [!NOTE]
+> 有两个附加的筛选器可以应用到 Intune 符合性应用程序。
+
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>将其他筛选器添加到 Intune 符合性应用
+1. 打开[Intune 符合性 （数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) web 浏览器中的应用。
+2. 单击**非合规的设备**，然后选择**不符合**中**complianceStatus**筛选器。 
+3. 单击**未知的设备**，然后选择**尚不可用**中**complianceStatus**筛选器。 
 
 ## <a name="1812"></a>1812 
 _2018 年 12 月发布_
@@ -83,7 +99,7 @@ _2018 年 12 月发布_
 ## <a name="1710"></a>1710
 发布于 2017 年 11 月
 
-### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1544273---"></a>名为“当前用户”的新实体集合仅限于当前活动的用户数据<!-- 1544273 -->
+### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1544273---"></a>名为“当前用户”的新实体集合仅限于当前活动的用户数据 <!-- 1544273 -->
 
 User 实体集合包含企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
 
@@ -92,11 +108,11 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 ## <a name="1709"></a>1709
 发布于 2017 年 10 月
 
-### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>用户设备关联实体集合被添加到 Intune 数据仓库数据模型 <!-- 1187917 -->
+### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>添加到 Intune 数据仓库数据模型的用户设备关联实体集合 <!-- 1187917 -->
 
 现在可使用用户设备关联信息（该信息将用户和设备实体集合相关联）生成报表和数据可视化效果。 可通过从“数据仓库 Intune”页检索到的 Power BI 文件 (PBIX)、通过 OData 终结点或通过开发自定义客户端，访问数据模型。 有关详细信息，请参阅[用户设备关联](reports-ref-user-device.md)。
 
-### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>数据库仓库数据模型中的新实体 <!-- 1479526 --><!-- -->
+### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>数据仓库数据模型中的新实体 <!-- 1479526 --><!-- -->
 
  - 添加了实体 [UserDeviceAssociation](reports-ref-user-device.md)。 UserDeviceAssociation 包含组织中的用户设备关联。 现在可使用用户设备关联信息（该信息将用户和设备实体集合相关联）生成报表和数据可视化效果。  
  - 添加了 [IntuneManagementExtension](reports-ref-intunemanagementextension.md) 实体。 IntuneManagementExtension 包含移动设备的实体，可用于跟踪版本和安装状态等信息。
