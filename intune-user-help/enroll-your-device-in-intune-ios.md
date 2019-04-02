@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,83 +14,110 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: esmich
+ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7db319586b9375b8c88f177197e2fdf15378ab4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ee0f438d929abd6b5b90acbaeeddc41e3ce11f98
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847295"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490636"
 ---
-# <a name="set-up-ios-device-access-to-your-company-resources"></a>设置 iOS 设备对公司资源的访问
+# <a name="set-up-ios-device-access-to-your-company-resources"></a>设置 iOS 设备对公司资源的访问  
 
 通过 Intune 公司门户应用注册 iOS 设备，以便获取对组织的电子邮件、文件和应用的安全访问权限。
 
-必须先托管企业或个人设备，随后才能从该设备访问专有数据。 托管设备完成后，组织将通过移动设备管理 (MDM) 提供程序为该设备分配策略和应用。 
+必须先托管企业或个人设备，随后才能从该设备访问专有数据。 设备进入托管状态后，组织将通过移动设备管理 (MDM) 提供程序（如 Intune）为该设备分配策略和应用。 
 
-若要持续拥有从设备访问工作或学校信息的权限，必须配置设备以匹配组织的首选设置。 本文介绍公司门户如歌帮助注册、配置和维护设备，以满足这些需求。
+若要持续拥有从设备访问工作或学校信息的权限，必须配置设备以匹配组织的首选设置。 本文介绍如何使用公司门户注册设备和维护组织的设置要求。 
 
 > [!NOTE]
-> 如果想要在邮件应用中访问公司电子邮件，但收到托管设备的提示，那么通过本文你将了解如何解决该问题。 按照下面的说明，获取对 iOS 设备上的电子邮件和其他公司资源的访问权限。
+> 如果想要在邮件应用中访问公司电子邮件，但收到托管设备的提示，那么通过本文你将了解如何解决该问题。 按照下面的说明，获取对 iOS 设备上的电子邮件和其他公司资源的访问权限。  
 
-## <a name="what-to-expect-from-the-company-portal-app"></a>公司门户应用的作用
+## <a name="what-to-expect-from-the-company-portal-app"></a>公司门户应用的作用  
 
-### <a name="security"></a>安全
-初始设置期间，应用要求你向组织验证自己的身份。 然后，它将告知你必须更新的所有设备设置。 例如，组织通常会设置密码的最小或最大字符数要求，必须满足此要求。    
+### <a name="security"></a>安全  
+初始设置期间，应用要求你向组织验证自己的身份。 然后，它将告知你必须更新的所有设备设置。 例如，组织通常会设置密码的最小或最大字符数要求，必须满足此要求。     
 
-### <a name="protection"></a>保护
-注册设备后，公司门户应用将继续确保设备受到保护。 例如，如果安装的应用来自于不受信任的源，应用将发出警报，且有时会撤销对公司数据的访问权限。 与此类似的应用保护策略在组织中很常见。 它们通常要求先卸载不受信任的应用，然后才能重新获得访问权限。
+### <a name="protection"></a>保护  
+注册设备后，公司门户应用将继续确保设备受到保护。 例如，如果安装的应用来自于不受信任的源，应用将发出警报，且有时会撤销对公司数据的访问权限。 此类策略通常在组织中，并通常要求你先卸载不受信任的应用，然后可以重新获得访问权限。  
 
-### <a name="setting-notifications"></a>设置通知
+### <a name="setting-notifications"></a>设置通知  
 如果注册后组织强制使用新的安全要求（如多重身份验证），公司门户应用将对此作出通知。 可调整设置，以便可以继续通过该设备开展工作。  
 
-要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](https://docs.microsoft.com//intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios)。 
+要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](https://docs.microsoft.com//intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios)。  
 
-## <a name="before-you-start"></a>开始之前
+## <a name="enroll-your-ios-device"></a>注册 iOS 设备   
 
-- 请确保在注册开始后完成整个过程。 如果暂停超过几分钟时间，安装可能结束，并且需要重新开始。  
-- 如果该过程失败，请返回到公司门户应用并重试。  
-- 请检查 Wi-Fi 是否正常及设备上的 Safari 是否运行正常。
-- 下载并安装 [Intune 公司门户应用](install-and-sign-in-to-the-intune-company-portal-app-ios.md)。  
+> [!IMPORTANT]
+> 在本部分中屏幕截图显示正在运行 iOS 版本 12.1 及更早版本的设备的体验。 如果适用，我们提供了特定于 iOS 版本 12.2 及更高版本的说明。 如果您注意到你的体验，与不同的屏幕截图所示，请参阅 12.2 说明。      
+
+转到应用商店，下载并安装[Intune 公司门户应用](install-and-sign-in-to-the-intune-company-portal-app-ios.md)向你的设备。 注册期间，您还需要一个 Wi-fi 连接并能访问到 Safari。 
+
+如果暂停超过几分钟后，在注册过程中，应用程序可能会关闭或结束安装程序。 如果发生这种情况，请打开公司门户应用，然后重试。  
+
+1. 打开公司门户并使用工作或学校帐户登录。 
+
+    ![公司门户应用，登录的示例屏幕截图。](./media/ios-01-cp-enroll-1903.PNG)  
+
+2. 当提示你接收公司门户通知，点击**允许。** 公司门户使用通知来向您发出警报，例如，需要更新你的设备设置。 
+
+    ![公司门户主页上，"通知"提示符的示例屏幕截图。](./media/ios-04-cp-enroll-1903.PNG)  
+
+3. 上**设置的访问权限**屏幕上，选择**开始。**  
+
+     ![示例的公司门户中，"设置访问权限"屏幕的屏幕截图。](./media/ios-05-cp-enroll-1903.PNG)  
+
+4. 读完你的组织可以看到和不能看到的设备信息的列表。 [本主题的更多详情](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md)可以通过找到**了解详细信息**链接。 完成后，点击**继续**。  
+
+    ![示例屏幕截图中的公司门户应用"可以看到哪些内容我的组织"，使用继续按钮。](./media/ios-06-cp-enroll-1903.PNG)  
+ 
+5. **什么是下一步？** 屏幕总结了的剩余步骤。 这些步骤可能不同，具体取决于你的 iOS 版本。 
+    * **12.2 及更高版本的 iOS**： 你的体验可能会改为要求您为：  
+
+        a. **允许管理配置文件的下载**： 你的浏览器将打开公司门户网站，并提示您允许下载。 将设置应用程序中保存下载。  
+
+        b. **打开设置应用并将配置文件安装**： 你将需要转到设置应用并安装管理配置文件。  
+
+        c. **返回到公司门户应用**： 你将需要返回到公司门户应用以完成安装。  
+
+    如果你已准备好下载管理配置文件，请点击**继续**。  
+
+6. Safari 打开公司门户网站。 当提示你下载的配置文件，点击**允许**。  
+    * **12.2 及更高版本的 iOS**： 等待配置文件来完成下载 Safari 然后点击**完成**。 然后在设备上打开“设置”应用。  
+
+    > [!IMPORTANT]
+    > 你必须转到**设置**应用并将其下载 8 分钟内安装此配置文件。 如果不这样做，将删除的配置文件，并且您将需要重新启动注册。 
+
+7. 在中**设置**应用，点击**安装下载配置文件** > **安装**。 如果**安装下载配置文件**不会显示为一个选项，请转到**常规** > **配置文件**。 如果仍看不到配置文件，您可能需要再次下载。  
+
+    ![示例屏幕截图中的设置应用中，安装下载配置文件设置下，该值指示最近下载的配置文件旁边的红色标记。](./media/ios-10-cp-enroll-1903.PNG)  
+    
+8. 如果系统提示，请输入你的设备密码。 然后点击**安装**。      
+
+9. 下一个屏幕是设备管理的标准系统警告。 若要了解有关你的组织可以和不能在设备上看到的内容的详细信息，请参阅相关[Intune docs 文章](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md)。 若要继续安装，请点击**安装**。 如果系统提示信任远程管理，请点击**信任**。  
+
+    ![示例的设置应用程序，用于根证书和移动设备管理的标准系统警告屏幕的屏幕截图。](./media/ios-15-cp-enroll-1903.PNG)  
+
+10. 安装完成后，点击**完成**。 若要验证是否已安装的配置文件，请转到**配置文件和设备管理**设置。 应会看到下列出的配置文件**移动设备管理**。   
+
+    ![示例屏幕截图中的配置文件和设备管理设置应用程序设置，从而显示管理配置文件。](./media/ios-00-cp-enroll-1903.PNG)  
 
 
-## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>使用公司门户应用程序设置对公司资源的访问
+11. 返回到“公司门户”应用。 公司门户将开始同步，并设置你的设备。 公司门户可能会提示你更新其他设备设置。 如果存在，请点击**继续**。
 
-|您看到的内容|说明|
-|---|---|
-|![公司门户登录屏幕，底部有“登录”按钮。](./media/ios-01-cp-enroll-1802.PNG)|打开公司门户应用程序并点击“登录”。|
-|![Azure AD 登录提示符。](./media/ios-02-cp-enroll-1802.PNG)|输入公司电子邮件地址，然后点击“下一步”。|
-|![Azure AD 密码提示符。](./media/ios-03-cp-enroll-1802.PNG)|输入你的密码，然后点击“登录”。|
-|![正在加载公司资源初始屏幕。](./media/ios-04-cp-enroll-1802.PNG)|等待此屏幕加载完成。|
-|![条款和条件页。](./media/ios-05-cp-enroll-1802.PNG)|阅读并接受所有条款和条件。|
-|![设置公司访问屏幕。 当前，管理和设置都需要解决方案。](./media/ios-06-cp-enroll-1802.PNG)|点击“开始”以开始执行使你的设备能够访问公司资源的过程。 如果现在无法执行这一过程，可以“推迟”此过程，但这也意味着将无法获取电子邮件、文档等资源。|
-|![“我的公司可以看到什么信息”屏幕。](./media/ios-07-cp-enroll-1802.PNG)|通过点击底部的链接，可以详细了解你的公司可以看到的信息。 否则，点击“继续”。|
-|![“下一步是什么”屏幕。](./media/ios-08-cp-enroll-1802.PNG)|此屏幕介绍安装中的操作。 将用到 Safari、设置应用和公司门户应用。 点击“继续”。|
-|![在点击“下一步是什么”上的“下一步”后加载屏幕。](./media/ios-09-cp-enroll-1802.PNG)|等待此屏幕加载完成。|
-|![切换到 Safari 进行注册。](./media/ios-cp-sent-to-safari-1808.png)|你将被转到 Safari 以获取设备的管理信息。|
-|![系统提示打开设置应用。](./media/ios-8-cp-enroll-1711.PNG)|点击“允许”打开设置应用，下载配置的配置文件。 安装该文件，让公司管理你设备上的公司信息。|
-|![设备设置中“安装配置文件”屏幕的屏幕截图。](./media/ios-9-cp-enroll-1711.PNG)|点击“安装”。|
-|![安装屏幕底部的配置文件模式对话框。](./media/ios-10-cp-enroll-1711.PNG)|点击“安装”。|
-|![配置文件正在安装加载屏幕。](./media/ios-11-cp-enroll-1711.PNG)|等待此屏幕加载完成。|
-|![配置文件管理警告屏幕。](./media/ios-12-cp-enroll-1711.PNG)|该警告由 Apple 编写，可让你详细了解可以对受管理的设备执行什么类型的操作。 详细了解[你的公司可以看到什么信息](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。|
-|![系统提示询问是否信任远程管理。](./media/ios-13-cp-enroll-1711.PNG)|点击“信任”允许公司管理你设备上的公司信息和设置。|
-|![配置文件完成安装加载屏幕。](./media/ios-14-cp-enroll-1711.PNG)|等待此屏幕加载完成。|
-|![配置文件已安装屏幕。](./media/ios-15-cp-enroll-1711.PNG)|配置文件已安装，即将对你设备上的公司信息和设置进行管理。|
-|![切换到 Safari 进行注册。](./media/ios-16-cp-enroll-1711.PNG)|将返回到 Safari 以完成获取你设备上的管理信息的过程。 |
-|![系统提示打开公司门户。](./media/ios-17-cp-enroll-1711.PNG)|点击“打开”。|
-|![正在加载公司资源屏幕。](./media/ios-21-cp-enroll-1802.PNG)|等待此屏幕加载完成。|
-|![选择公司门户应用中的设备类别。](./media/ios-22-cp-enroll-1802.PNG)|为你的设备选择最适合的类别。 这通常与拥有设备的用户以及该设备大部分时间所在的位置有关。|
-|![已选择类别。](./media/ios-23-cp-enroll-1802.PNG)||
-|![设备管理成功，现在需要更新设置。](./media/ios-24-cp-enroll-1802.PNG)|你已成功管理你的设备。 公司可能还需要你更新一些其他设置，例如，密码长度。 点击“继续”以继续。|
-|![确认设备设置。](./media/ios-25-cp-enroll-1802.PNG)|公司门户将检查是否需要更新任何设置。|
-|![设置检查已完成，具有错误的 OS 版本](./media/ios-26-cp-enroll-1802.PNG)|公司门户将提供如何能够修复设置中存在的任何问题的说明。 修复完成后，点击“检查设置”。|
-|![确认设备设置加载屏幕](./media/ios-27-cp-enroll-1802.PNG)|你的设备将检查你的设置是否能够足够安全地访问公司资源。|
-|![已成功注册和更新设置](./media/ios-28-cp-enroll-1802.PNG)|祝贺你！ 你的设备现已在 Intune 中注册。|
+    ![公司门户"设置访问权限"屏幕，要求设置旁边的黄色三角形中的示例屏幕截图。](./media/ios-12-cp-enroll-1903.PNG)  
+
+12. 你将了解在列表中的所有项都显示一个绿色圆圈时完成该安装程序。 点击“完成”。  
+    
+    ![示例屏幕截图中的公司门户，"准备好了 ！" 屏幕，其中显示所有的绿色圆圈。](./media/ios-13-cp-enroll-1903.PNG)  
 
 > [!Note]
-> 在完全实现设备管理前，还需完成几个步骤。 了解关于[使用电信费用管理注册设备](enroll-your-device-with-telecom-expense-management-ios.md)的详细信息。 如果组织正在使用 Apple 的设备注册计划，请在[此处](enroll-your-device-dep-ios.md)了解详细信息。
+> 如果你的组织监视语音和数据限制，或者你提供公司拥有的设备，可能有几个步骤才能完成。 如果系统会提示你安装**Datalert**应用，请参阅[注册你的设备在电信费用管理中](enroll-your-device-with-telecom-expense-management-ios.md)。 如果你的组织是 Apple 的设备注册计划的一部分，找出[如何注册公司自有设备](enroll-your-device-dep-ios.md)。  
+
+## <a name="next-steps"></a>后续步骤  
+查找帮助您在工作或学校的应用。 了解[如何应用都可用](use-managed-apps-on-your-device-ios.md)给你通过公司门户。  
 
 仍需帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。  

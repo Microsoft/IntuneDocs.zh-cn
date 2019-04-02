@@ -4,7 +4,7 @@ description: Microsoft 365 企业版包含 Microsoft Intune。 了解 Intune 如
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231241"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646482"
 ---
 # <a name="what-is-device-management"></a>什么是设备管理？ 
 
@@ -91,7 +91,7 @@ Intune 包含在 Microsoft 365 中，并与 Azure Active Directory (Azure AD) �
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [管理用户](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [管理组和成员](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [故障排除](https://docs.microsoft.com/intune/help-desk-operators)
+- [疑难解答](https://docs.microsoft.com/intune/help-desk-operators)
 
 ## <a name="next-step"></a>下一步
 当准备好开始使用 MDM 或 MAM 解决方案时，请按不同步骤设置 Intune、登记设备并开始创建策略，请参阅 [Microsoft 365 的移动设备管理](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)。 
