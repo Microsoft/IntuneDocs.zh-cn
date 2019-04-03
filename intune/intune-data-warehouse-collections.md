@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400477"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358311"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 数据仓库收集
 
@@ -55,7 +55,7 @@ appType 实体列出了应用的安装源。
 
 |   属性  |        描述        |
 |:-----------:|:-------------------------:|
-| AppTypeID   | 类型 ID           |
+| AppTypeID   | 类型的 ID           |
 | AppTypeKey  | 密钥的代理键 |
 | AppTypeName | 应用类型                  |
 
@@ -231,7 +231,7 @@ DeviceRegistrationState 实体表示由其他数据仓库收集引用的注册�
 | DeviceEnrollmentType       | 与此设备关联的注册类型的键，表明注册方法。                                                                                             |
 | ComplianceStateKey         | 与此设备关联的符合性状态的键。                                                                                                                             |
 | OSVersion                  | 设备的操作系统版本。                                                                                                                                                |
-| EasDeviceId                | 设备的 Exchange ActiveSync Id。                                                                                                                                                  |
+| EasDeviceId                | 设备的 Exchange ActiveSync ID。                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | 与设备关联的用户的唯一标识符。                                                                                                                           |
 | RowLastModifiedDateTimeUTC | 上次在数据仓库中修改此设备时的 UTC 日期和时间。                                                                                                       |
@@ -281,7 +281,7 @@ deviceType 实体表示由其他数据仓库实体引用的设备类型。 设�
 | 12           | ISocConsumer      | iSoc 使用者设备                                |
 | 13           | Unix              | Unix 设备                                         |
 | 14           | MacMDM            | 使用内置 MDM 代理管理的 Mac OS X 设备 |
-| 15           | HoloLens          | Holo Lens 设备                                    |
+| 15           | HoloLens          | HoloLens 设备                                       |
 | 16           | SurfaceHub        | Surface Hub 设备                                  |
 | 17           | AndroidForWork    | 使用 Android Profile Owner 管理的 Android 设备  |
 | 18           | AndroidEnterprise | Android 企业设备。                          |
@@ -368,8 +368,8 @@ EnrollmentFailureCategory 实体指示设备注册失败的原因。
 | BadRequest                      | 客户端发送了服务不理解/不支持的请求。                                        |
 | FeatureNotSupported             | 此帐户不支持此注册所使用的功能。                                        |
 | EnrollmentRestrictionsEnforced  | 管理员配置的注册限制阻止了此注册。                                          |
-| ClientDisconnected              | 客户端超时或终端用户终止了注册。                                                        |
-| UserAbandonment                 | 终端用户放弃了注册。 （终端用户启动了加入，但未能及时完成）  |
+| ClientDisconnected              | 客户端超时或最终用户终止了注册。                                                        |
+| UserAbandonment                 | 最终用户放弃了注册。 （最终用户启动了加入，但未能及时完成）  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 EnrollmentFailureReason 实体表示特定失败类别中设备注册失败的详细原因。  
@@ -398,7 +398,7 @@ EnrollmentFailureReason 实体表示特定失败类别中设备注册失败的�
 | EnrollmentCriteriaNotMet         | 因已配置的注册限制规则而未能注册此设备。                                                                                                                          |
 | BulkDeviceNotPreregistered       | 未找到该设备的国际移动设备标识符 (IMEI) 或序列号。  没有此标识符的设备会识别为个人所有设备，目前此类设备受到阻止。  |
 | FeatureNotSupported              | 用户试图访问尚未面向所有客户发布的功能，或者试图访问与 Intune 配置不兼容的功能。                                                            |
-| UserAbandonment                  | 终端用户放弃了注册。 （终端用户启动了加入，但未能及时完成）                                                                                           |
+| UserAbandonment                  | 最终用户放弃了注册。 （最终用户启动了加入，但未能及时完成）                                                                                           |
 | APNSCertificateExpired           | 无法使用 Apple MDM Push Certificate 管理 Apple 设备。                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -448,7 +448,7 @@ managementAgentType 实体表示用于管理设备的代理。
 | 5                     | EasIntuneClient                   | 设备由 Exchange Active Sync 和 Intune 电脑代理共同管理 |
 | 8                     | ConfigManagerClient               | 设备由 System Center Configuration Manager 代理管理     |
 | 10                    | ConfigurationManagerClientMdm     | 设备由 Configuration Manager 和 MDM 管理。                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | 设备由 Configuration Manager、MDM 和 Eas 管理。               |
+| 11                    | ConfigurationManagerCLientMdmEas  | 通过 Configuration Manager、 MDM 和 Exchange Active Sync 管理设备。               |
 | 16                    | Unknown                           | 未知的管理代理类型                                              |
 | 32                    | Jamf                              | 设备属性从 Jamf 提取。                               |
 | 64                    | GoogleCloudDevicePolicyController |  设备由 Google 的 CloudDPC 管理。                                 |
@@ -617,7 +617,7 @@ UserDeviceAssociation 实体包含组织中的用户设备关联。
 | UserKey                    | 数据仓库中用户的唯一标识符 - 代理键。                                                                                                                                                         | 123                                  |
 | UserId                     | 用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | 用户的电子邮件地址。                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | 用户的用户主体名称。                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | 用户的用户主体名称。                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | 用户的显示名称。                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | 指定此用户是否获得 Intune 许可。                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | 指示是否所有用户的许可证都已过期，以及是否因此将用户从 Intune 中删除。 对于单个记录，此标志不会更改。 相反，将为新用户状态创建新记录。 | True/False                           |

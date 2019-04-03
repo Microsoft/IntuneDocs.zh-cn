@@ -2,8 +2,8 @@
 title: Microsoft Intune 中适用于 Windows 10 设备的保护设置 - Azure | Microsoft Docs
 description: 在 Windows 10 设备上，使用或配置 Endpoint Protection 设置，以在 Microsoft Intune 中对本地设备启用 Windows Defender 功能，包括应用程序防护、防火墙、SmartScreen、加密和 BitLocker、攻击防护、应用程序控制、安全中心和安全性。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566686"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342991"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Windows 10（及更高版本）设置，用于保护使用 Intune 的设备
 
@@ -87,8 +87,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 以下设置适用于特定网络类型，包括“域(工作区)网络”、“专用(可检测)网络”和“公用(不可检测)网络”。
 
-#### <a name="general-settings"></a>常规设置
-
+#### <a name="general-settings"></a>常规设置  
 - **Windows Defender 防火墙**：选择“启用”可打开此防火墙并提升安全性。 “未配置”（默认设置）允许所有流量而不考虑任何其他策略设置。
 - **隐藏模式**：设置为“阻止”可阻止防火墙在隐藏模式下运行。 阻止隐藏模式还可以阻止“IPsec 安全数据包免除”。 “未配置”（默认设置）可让防火墙在隐藏模式下运行，有助于阻止对探测请求的响应。
 - **受防护**：设置为“阻止”可以关闭此功能。 “未配置”（默认设置）会启用此设置。 如果开启此设置和 Windows Defender 防火墙，则会阻止所有传入流量，而不考虑任何其他策略设置。
@@ -299,7 +298,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 > C:\windows\IMECache
 >  
 > **在 X86 上客户端计算机**:<br>
-> *C:\Program Files\Microsoft Intune 管理 Extension\Content*<br>
+> C:\Program Files\Microsoft Intune Management Extension\Content<br>
 > C:\windows\IMECache
 
 ### <a name="controlled-folder-access"></a>受控文件夹访问权限

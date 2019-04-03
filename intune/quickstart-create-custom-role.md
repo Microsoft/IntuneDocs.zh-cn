@@ -6,19 +6,19 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 03/26/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
+ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400274"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477122"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入门：创建和分配自定义角色
 
@@ -32,7 +32,7 @@ ms.locfileid: "57400274"
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
-以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。
+以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="create-a-custom-role"></a>创建自定义角色
 

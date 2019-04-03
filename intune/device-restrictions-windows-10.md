@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中适用于 Windows 10 的设备限制设置 - Azure | Microsoft Docs
-description: 有关如何在 Windows 10 及更高版本设备上创建设备限制的信息，请参阅所有设置及其说明的列表。 使用配置文件中的这些设置可以控制 Microsoft Intune 中的屏幕截图、密码要求、展台设置、应用商店中的应用、Edge 浏览器、Windows Defender、对云的访问权限、开始菜单等。
+description: 有关如何在 Windows 10 及更高版本设备上创建设备限制的信息，请参阅所有设置及其说明的列表。 使用配置文件中的这些设置可以控制 Microsoft Intune 中的屏幕截图、密码要求、展台设置、应用商店中的应用、Microsoft Edge 浏览器、Windows Defender、对云的访问权限、开始菜单等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566738"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394994"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -29,7 +29,7 @@ ms.locfileid: "57566738"
 这些设置将添加到 Intune 中的设备配置配置文件中，然后分配或部署到 Windows 10 设备。
 
 > [!Note]
-> 并非所有选项在所有版本的 Windows 上都可用
+> 并非所有选项在所有版本的 Windows 上都可用。 若要查看支持的版本，请参阅[策略的 Csp](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) （将打开另一个 Microsoft 网站上）。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -59,13 +59,13 @@ ms.locfileid: "57566738"
 - **蓝牙可发现性**：允许其他已启用蓝牙的设备可发现此设备。
 - **蓝牙预配对**：允许配置特定蓝牙设备以自动与主机设备配对。
 - **蓝牙广告**：允许设备通过蓝牙接收广告。
-- **连接设备服务**：允许选择是否允许连接设备服务，以便启用对其他蓝牙设备的发现和连接。
+- **连接设备服务**：允许选择允许连接设备服务，以便启用对其他蓝牙设备的发现和连接。
 - **NFC**：允许用户在设备上启用和配置近场通信 (NFC) 功能。
 - **Wi-Fi**：允许用户在设备上启用和配置 Wi-Fi（仅限 Windows 10 移动版）。
 - **自动连接到 Wi-Fi 热点**：可让设备自动连接到免费 Wi-Fi 热点并自动接受该连接的任何条款和条件。
 - **手动配置 Wi-Fi**：控制用户是否可以配置自己的 Wi-Fi 连接或是否只能使用 Wi-Fi 配置文件配置的连接（仅限 Windows 10 移动版）。
-- **Wi-Fi 扫描间隔**：指定设备扫描 Wi-Fi 网络的频率。 指定介于 1（频次最高）至 500（频次最低）之间的值。
-- **蓝牙允许的服务**：以十六进制字符串指定受允许的蓝牙服务和配置文件列表。
+- **Wi-Fi 扫描间隔**：输入设备扫描 Wi-Fi 网络的频率。 输入从 1（频率最高）到 500（频率最低）的值。
+- **蓝牙允许的服务**：以十六进制字符串输入允许的蓝牙服务和配置文件列表。
 
 ## <a name="cloud-and-storage"></a>云和存储
 
@@ -145,7 +145,6 @@ ms.locfileid: "57566738"
 
 - **结束进程从任务管理器**： 此设置确定是否以非管理员可以使用任务管理器到结束任务。 选择“阻止”，则会阻止标准用户（非管理员）使用任务管理器结束设备上的进程或任务。 选择“未配置”（默认选项），则会允许标准用户使用任务管理器结束进程或任务。
 
-
 ## <a name="locked-screen-experience"></a>锁定屏幕体验
 
 - **操作中心通知(仅限移动版)**：允许设备锁定屏幕上显示操作中心通知（仅限 Windows 10 移动版）。
@@ -157,7 +156,7 @@ ms.locfileid: "57566738"
 
 ## <a name="messaging"></a>Messaging
 
-- **消息同步(仅限移动版)**：禁用随时随地传送消息以及短信备份和还原。
+- **消息同步(仅移动设备)**：禁用“随时随地传送消息”以及短信备份和还原。
 - **彩信(仅限移动版)**：对设备禁用彩信发送/接收功能。
 - **富通信(仅限移动版)**：对设备禁用富通信服务发送/接收功能。
 
@@ -168,25 +167,25 @@ ms.locfileid: "57566738"
 根据你选择的更改可用设置。 选项包括：
 
 - **不**（默认值）： Microsoft Edge 不在展台模式下运行。 所有 Microsoft Edge 设置都都可供你更改和配置。
-- **数字/Interactive 标志 （单应用展台）**： 适用于数字/Interactive 招牌边缘展台模式仅在 Windows 10 单应用展台上使用的筛选器 Edge 设置。 选择此设置以打开 URL 的全屏模式，并仅显示该网站上的内容。 [设置数字的符号](https://docs.microsoft.com/windows/configuration/setup-digital-signage)提供了有关此功能的详细信息。
-- **InPrivate 公共浏览 （单应用展台）**： 适用于 Windows 10 单应用展台上使用 InPrivate 公共的浏览 Edge 展台模式的筛选器 Edge 设置。 在运行多选项卡版本的 Microsoft Edge。
-- **正常模式 （多应用展台）**： 适用于正常边缘展台模式的筛选器 Edge 设置。 与所有的浏览功能在运行完整版本的 Microsoft Edge。
-- **公共浏览 （多应用展台）**： 适用于 Windows 10 多应用展台上的公共浏览的筛选器 Edge 设置。  在运行 Microsoft Edge InPrivate 多选项卡的版本。
+- **数字/Interactive 标志 （单应用展台）**： 适用于数字/Interactive 招牌 Microsoft Edge 展台模式仅在 Windows 10 单应用展台上使用的筛选器 Microsoft Edge 设置。 选择此设置以打开 URL 的全屏模式，并仅显示该网站上的内容。 [设置数字的符号](https://docs.microsoft.com/windows/configuration/setup-digital-signage)提供了有关此功能的详细信息。
+- **InPrivate 公共浏览 （单应用展台）**： 适用于 InPrivate 公共浏览 Microsoft Edge 的展台模式在 Windows 10 单应用展台上使用的筛选器 Microsoft Edge 设置。 在运行多选项卡版本的 Microsoft Edge。
+- **正常模式 （多应用展台）**： 适用于正常 Microsoft Edge 展台模式的筛选器 Microsoft Edge 设置。 与所有的浏览功能在运行完整版本的 Microsoft Edge。
+- **公共浏览 （多应用展台）**： 适用于 Windows 10 多应用展台上的公共浏览的筛选器 Microsoft Edge 设置。  在运行 Microsoft Edge InPrivate 多选项卡的版本。
 
 > [!TIP]
 > 有关这些选项所执行的操作的详细信息，请参阅[Microsoft Edge 展台模式配置类型](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)。
 
 此设备限制配置文件直接与展台配置文件，使用来创建[Windows 展台设置](kiosk-settings-windows.md)。 总结：
 
-1. 创建[Windows 展台设置](kiosk-settings-windows.md)要在展台模式下运行设备配置文件。 选择 Microsoft Edge 作为应用程序并将边缘展台模式设置展台配置文件中。
-2. 创建此文章中所述的设备限制配置文件和配置特定功能和 Microsoft Edge 中允许的设置。 请务必选择作为展台配置文件中所选的同一边缘展台模式类型 ([Windows 展台设置](kiosk-settings-windows.md))。 
+1. 创建[Windows 展台设置](kiosk-settings-windows.md)要在展台模式下运行设备配置文件。 选择 Microsoft Edge 作为应用程序并将 Microsoft Edge 展台模式设置展台配置文件中。
+2. 创建此文章中所述的设备限制配置文件和配置特定功能和 Microsoft Edge 中允许的设置。 请务必选择作为展台配置文件中所选的同一 Microsoft Edge 展台模式类型 ([Windows 展台设置](kiosk-settings-windows.md))。 
 
     [支持的展台模式设置](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode)是一个不错的资源。
 
 > [!IMPORTANT] 
 > 请务必将此 Microsoft Edge 配置文件分配到同一设备为你网亭的配置文件 ([Windows 展台设置](kiosk-settings-windows.md))。
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>开始体验
 
@@ -204,7 +203,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **自定义主页按钮 URL**：打开为“主页按钮 URL”设置选择的选项
   - **隐藏主页按钮**：隐藏主页按钮
 - **用户可以更改主页按钮**：“允许”可让用户更改主页按钮。 用户的更改会覆盖对主页按钮进行的任何管理员设置。 “未配置”可在设备上使用 OS 默认行为，这可能会阻止用户更改管理员配置主页按钮的方式。
-- **显示首次运行体验页**：“阻止”可在首次运行 Microsoft Edge 时阻止显示简介页。 借助此功能，诸如在零排放配置中注册的企业可以阻止此页面。 “未配置”可显示简介页。
+- **显示首次运行体验页**：“阻止”可在首次运行 Microsoft Edge 时阻止显示简介页。 借助此功能，诸如在零排放配置中注册的企业组织可以阻止此页面。 “未配置”可显示简介页。
   - **首次运行体验 URL**：输入用户首次运行 Microsoft Edge 时要显示的页面 URL（仅限 Windows 10 移动版）。
 - **在空闲时间后刷新浏览器**： 输入空闲前的分钟数刷新浏览器时，从 0-1440年分钟。 默认值是`5`分钟。 如果设置为`0`（零），在空闲后不会刷新浏览器。
 
@@ -300,7 +299,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **密码**：需要最终用户输入密码才能访问设备。
   - **所需的密码类型**：指定密码是否只能是数字或字母数字。
   - **最短密码长度**：仅适用于 Windows 10 移动版。
-  - **擦除设备前的登录失败次数**：对于运行 Windows 10 的设备：如果该设备已启用 BitLocker，在超过指定的登录失败次数后将进入 BitLocker 恢复模式。 如果该设备未启用 BitLocker，则不会应用此设置。 对于运行 Windows 10 移动版的设备：超过指定的登录失败次数后，将擦除设备。
+  - **擦除设备前的登录失败次数**：对于运行 Windows 10 的设备：如果该设备已启用 BitLocker，在超过指定的登录失败次数后将进入 BitLocker 恢复模式。 如果该设备未启用 BitLocker，则不会应用此设置。 对于运行 Windows 10 移动版的设备：超过输入的登录失败次数后，将擦除设备。
   - **屏幕锁定前的最大非活动状态分钟数**：指定锁定屏幕前，设备必须处于空闲状态的时间长度。
   - **密码过期(天)**：指定必须更改设备密码之前的时间长度。
   - **防止重用以前的密码**：指定设备记住的以前用过的密码数目。
@@ -331,7 +330,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **电话**：定义此应用能否访问电话。
 - **无线收发器**：一些应用使用设备中的无线收发器（例如，蓝牙）发送和接收数据，需要打开或关闭这些无线收发器。 定义此应用能否控制这些无线收发器。
 - **任务**：定义此应用能否访问任务。
-- **受信任的设备**：选择此应用能否使用受信任的设备（已连接的硬件，或设备随附的硬件）。 例如，将 TV、投影仪等用作受信任的设备。
+- **受信任的设备**： 选择此应用程序可以使用受信任的设备。 受信任的设备是连接的硬件或设备随附的硬件。 例如，将 TV、投影仪等用作受信任的设备。
 - **反馈和诊断**：定义此应用能否访问诊断信息。
 - **与设备同步**：选择此应用能否自动与设备未显式配对的无线设备共享和同步信息。
 
@@ -352,7 +351,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **发布用户活动**：“阻止”可阻止任务切换程序中最近使用资源的共享体验和发现。
 - **仅限本地活动**：“阻止”可仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。
 
-可以配置设备上的所有应用可以访问的信息。 可以使用“每应用隐私异常”对每个应用定义异常。
+可以配置设备上的所有应用可以访问的信息。 此外，使用“每应用隐私异常”对每个应用定义异常。
 
 ### <a name="exceptions"></a>例外
 
@@ -467,24 +466,46 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **扫描所有下载**：控制 Defender 是否扫描从 Internet 下载的所有文件。
 - **扫描 Microsoft Web 浏览器中加载的脚本**：允许 Defender 扫描在 Internet Explorer 中使用的脚本。
 - **Defender 的最终用户访问权限**：控制是否对最终用户隐藏 Windows Defender 用户界面。 此设置更改后，在最终用户的电脑下次重启时生效。
-- **签名更新间隔(小时)**：指定 Defender 检查新签名文件的时间间隔。
+- **签名更新间隔(小时)**：输入 Defender 检查新签名文件的时间间隔。
 - **监视文件和程序活动**：允许 Defender 监视设备上的文件和程序活动。
-- **删除已隔离恶意软件之前的天数**：允许 Defender 按指定的天数继续跟踪已解决的恶意软件，以便可以手动检查之前受影响的设备。 如果你将天数设置为 0，则恶意软件将保留在隔离文件夹中，并且不会自动删除。
-- **在扫描期间限制 CPU 使用率**：可让你限制允许扫描使用的 CPU 量（从 1 到 100）。
+- **删除已隔离恶意软件之前的天数**： 继续跟踪解决的恶意软件的天数，输入，以便您可以手动检查之前受影响的设备。 如果你将天数设置为 0，则恶意软件将保留在隔离文件夹中，并且不会自动删除。
+- **在扫描期间限制 CPU 使用率**：限制允许扫描使用的 CPU 量（从 1 到 100）。
 - **扫描存档文件**：允许 Defender 扫描存档的文件（如 Zip 或 Cab 文件）。
 - **扫描传入的电子邮件**：允许 Defender 在电子邮件到达设备时扫描它们。
 - **完全扫描期间扫描可移动驱动器**：允许 Defender 扫描可移动驱动器（如 U 盘）。
 - **完全扫描期间扫描映射的网络驱动器**：允许 Defender 扫描映射网络驱动器上的文件。
   如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
 - **扫描从网络文件夹打开的文件**：允许 Defender 扫描共享网络驱动器上的文件（例如，从 UNC 路径访问的文件）。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
-- **Cloud 保护**：允许或阻止 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息。 此信息用于在将来改进本服务。
+- **Cloud 保护**：允许或阻止 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息。 此信息可在将来提高该服务。
 - **在示例提交前提示用户**：控制是否自动向 Microsoft 发送可能需要进一步分析的潜在恶意文件。
-- **执行日常快速扫描的时间**：允许计划每日在你选择的时间里发生的快速扫描。
-- **要执行的系统扫描类型**：输入计划系统扫描时运行的扫描级别。
+- **执行日常快速扫描时间**： 选择为小时，以便运行每日快速扫描。 **未配置**不会运行每日扫描。 如果您希望更多自定义，配置**要执行的系统扫描类型**设置。
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **要执行的系统扫描类型**： 计划系统扫描，其中包括的扫描，级别和一天和时间以运行该扫描。 选项包括：
+  - **未配置**： 不会计划系统扫描在设备上的。 最终用户可以手动运行扫描根据需要或需要在其设备上。
+  - **禁用**： 禁用扫描在设备上的任何系统。 若要将扫描设备的合作伙伴防病毒解决方案，请选择此选项。
+  - **快速扫描**： 在常见位置看起来可能存在恶意软件注册，如注册表项并将其告知 Windows 启动文件夹。
+    - **计划日期**： 选择一天中运行扫描。
+    - **计划时间**： 选择为小时，以便运行扫描。
+  - **完全扫描**： 在常见位置看起来可能存在恶意软件注册，并且还会扫描每个文件和设备上的文件夹。
+    - **计划日期**： 选择一天中运行扫描。
+    - **计划时间**： 选择为小时，以便运行扫描。
+
+  此设置可能与冲突**执行每日快速扫描时间**设置。 一些建议：
+
+  - 若要运行每日快速扫描，配置**执行每日快速扫描时间**设置。
+  - 若要运行每日快速扫描和完全扫描每周，然后配置**时间执行每日快速扫描**，并设置**要执行的系统扫描类型**到完全扫描使用的日期和时间。
+  - 未配置**时间执行每日快速扫描**设置，并同时**要执行的系统扫描类型**设置为**快速扫描**。 这些设置可能会发生冲突，并可能不会运行一次扫描。
+  - 若要在早上 6 点运行一次快速扫描每个星期二，配置**要执行的系统扫描类型**设置。
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **检测可能不需要的应用程序**：在Windows 检测到可能不需要的应用程序时选择保护级别：
   - **阻止**
   - **审核**有关可能不需要的应用程序的详细信息，请参阅[检测和阻止可能不需要的应用程序](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)。
-- **检测到恶意软件威胁时的操作**：使用此选项可选择 Defender 针对其探测到的每个威胁级别要执行的操作（低、中、高和严重）。 选项包括：
+- **检测到恶意软件威胁时的操作**：选择 Defender 针对其检测到的每个威胁级别（低、中、高和严重）要执行的操作。 选项包括：
   - **清理**
   - **隔离**
   - **移除**

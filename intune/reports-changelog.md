@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565632"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358252"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 随时了解 Intune 数据仓库的更新。
+
+## <a name="1903"></a>1903
+发行时间：2019 年 3 月
+
+### <a name="v10-changes-reflecting-back-to-beta"></a>V1.0 更改专用于反映将返回到 beta
+V1.0 在 1808年中首次引入，它有差异在一些重要方面与 beta 版 API。 在 1903年这些更改将反映回 beta API 版本。 如果使用的测试 API 版的重要报表，我们强烈建议切换到 V1.0 以避免重大更改的那些报表。 请参阅[API 版本信息](reports-api-url.md)有关详细信息在数据仓库 API 版本和向后兼容性。 
 
 ## <a name="1902"></a>1902 
 发布时间：2019 年 2 月
@@ -42,9 +48,9 @@ ms.locfileid: "57565632"
 > 有两个附加的筛选器可以应用到 Intune 符合性应用程序。
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>将其他筛选器添加到 Intune 符合性应用
-1. 打开[Intune 符合性 （数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) web 浏览器中的应用。
+1. 打开[Intune 符合性 （数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)在 web 浏览器中的应用。
 2. 单击**非合规的设备**，然后选择**不符合**中**complianceStatus**筛选器。 
-3. 单击**未知的设备**，然后选择**尚不可用**中**complianceStatus**筛选器。 
+3. 单击**未知设备**，然后选择**尚不可用**中**complianceStatus**筛选器。 
 
 ## <a name="1812"></a>1812 
 _2018 年 12 月发布_
@@ -93,7 +99,7 @@ _2018 年 12 月发布_
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>数据仓库数据模型中的新实体 <!-- 2077804 -->
 
- - 已添加实体 [MobileAppDeviceuserInstallStatus](reports-ref-application.md#mobileappdeviceuserinstallstatus)。 MobileAppDeviceUserInstallStatus 表示给定设备和用户的移动应用安装状态。
+ - 已添加实体 [MobileAppDeviceuserInstallStatus](reports-ref-application.md)。 MobileAppDeviceUserInstallStatus 表示给定设备和用户的移动应用安装状态。
  - 已添加实体 [MobileAppInstallState](reports-ref-application.md#mobileappinstallstate)。 MobileAppInstallState 实体表示已分配到包含设备和/或用户的组的移动应用程序的安装状态。 
 
 ## <a name="1710"></a>1710

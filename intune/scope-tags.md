@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756796"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658543"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>使用 RBAC 和作用域标记为分布式 IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>使用基于角色的访问控制 (RBAC) 和作用域标记为分布式 IT
 
-可以使用基于角色的访问控制 (RBAC) 和作用域标记以确保正确的管理员具有正确的访问权限和对正确的 Intune 对象的可见性。 角色确定哪些访问管理员拥有对哪些对象。 作用域标记确定管理员可以看到哪些对象。
+可以使用基于角色的访问控制和作用域标记以确保正确的管理员具有正确的访问权限和对正确的 Intune 对象的可见性。 角色确定哪些访问管理员拥有对哪些对象。 作用域标记确定管理员可以看到哪些对象。
 
 例如，假设西雅图地区办事处管理员分配的策略和配置文件管理器角色。 您希望此管理员查看和管理配置文件和仅应用于西雅图设备策略。 要执行此操作，您应该：
 
@@ -83,6 +83,21 @@ ms.locfileid: "57756796"
 3. 下**选择标记**，选择你想要添加到配置文件的标记。
 4. 选择**选择** > **确定** > **保存**。
 
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>若要将作用域标记分配到应用配置策略
+使用对设备**设备注册类型**设置为**托管设备**:
+1. 选择**客户端应用** > **应用配置策略**> 选择应用配置策略。
+2. 选择**属性** > **作用域 （标记）** > 选择你想要分配到策略的标记。
+
+使用对设备**设备注册类型**设置为**托管应用**:
+1. 选择**客户端应用** > **应用配置策略**> 选择应用配置策略。
+2. 选择**作用域 （标记）** > 选择你想要分配到策略的标记。
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>若要向 iOS 应用预配配置文件分配的范围标记
+1. 在 Intune 中，选择**客户端应用** > **iOS 应用预配配置文件**> 选择配置文件。
+2. 选择**属性** > **作用域 （标记）** > 选择你想要分配到配置文件的标记。
+3. 选择**选择** > **确定** > **保存**。
+
 ## <a name="scope-tag-details"></a>作用域标记详细信息
 当使用具有作用域标记，请牢记这些详细信息：
 
@@ -96,20 +111,13 @@ ms.locfileid: "57756796"
     - 应用配置策略 – 托管设备
     - PowerShell 脚本
     - DEP 令牌
+    - iOS 应用预配配置文件
 - 当管理员在 Intune 中创建一个对象时，所有作用域标记分配给该管理员将自动分配给新的对象。
 - Intune RBAC 不适用于 Azure Active Directory 角色。 因此，Intune 服务管理员和全局管理员角色具有完全管理员访问 Intune，无论它们有哪些作用域标记。
 - 使用作用域标记的角色分配中的管理员还可以查看 Intune 无作用域标记的对象。
 - 只能将分配有角色分配中的范围标记。
 - 你可以在您的角色分配范围 （组） 中列出的目标组。
 - 如果您有分配给你的角色的作用域标记，则无法删除 Intune 对象上的所有作用域标记。 至少一个范围标记是必需的。
-- 如果用户具有多个角色分配，这些角色分配中的权限扩展到不同的对象，如下所示：
-    - 分配权限仅应用于该角色分配范围 （组） 中的对象 （如策略或应用程序）。 分配权限不应用于其他角色分配中的对象，除非其他分配专门向其授予。
-    - 其他权限 （如创建和读取） 中的任何用户的分配适用于相同类型 （如所有策略或所有应用） 的所有对象。
-    - （如策略或应用程序） 的不同类型的对象的权限不会应用于每个其他。 例如，某个策略，读取权限不提供对用户的分配中的应用的读取权限。
-
-
-
-
 
 ## <a name="next-steps"></a>后续步骤
 
