@@ -6,33 +6,33 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 10/30/2018
+ms.date: 03/25/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991085"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514257"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>快速入门：创建用户并向其分配许可证
+# <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>快速入门：在 Intune 中创建用户并向用户分配许可证
 
-在本快速入门中，你将创建一个用户，然后为该用户分配许可证。 使用 Intune 时，你希望有权访问公司数据的每个人都必须拥有用户帐户。 Intune 管理员稍后可以配置此类用户来管理访问控制。
+在本快速入门中，你将创建用户，然后向其分配 Intune 许可证。 使用 Intune 时，你希望有权访问公司数据的每个人都必须拥有自己的用户帐户。 Intune 管理员稍后可以配置用户来管理访问控制。
 
 如果没有 Intune 订阅，请[注册免费试用帐户](free-trial-sign-up.md)。
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
-以[全局管理员或 Intune 服务管理员身份](users-add.md#types-of-administrators)登录 [Intune](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
+以[全局管理员或 Intune 服务管理员](users-add.md#types-of-administrators)身份登录 [Intune](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="create-a-user"></a>创建用户
 
-用户必须拥有用户帐户才能注册 Intune 设备管理。
+用户必须拥有用户帐户才能注册 Intune 设备管理。 若要创建新用户，请执行以下操作：
 
 1. 在 Intune 中，选择“用户” > “所有用户” > “新建用户”。
 ![浏览器](media/quickstart-create-user/create-user.png)
@@ -40,17 +40,19 @@ ms.locfileid: "57991085"
 3. 在“用户名”框中输入用户标识符，例如 Dewey@contoso.onmicrosoft.com。
 
     > [!NOTE]
-    > 如果尚未配置客户的域名，请使用用于创建 Intune 订阅的已验证的域名（或[免费试用版](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)）。 
+    > 如果尚未配置客户端域名，请使用用于创建 Intune 订阅（或[免费试用版](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)）的已验证的域名。 
 
 4. 选择“显示密码”并记下的自动生成的密码，以便登录到测试设备。
 5. 选择“创建”。
 
 ## <a name="assign-a-license-to-the-user"></a>向用户分配许可证
 
-创建用户后，必须使用 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854) Intune 许可证。 如果没有分配许可证，用户就无法将他们的设备注册到 Intune 中。 
+创建用户后，必须使用 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)向其分配 Intune 许可证。 如果不向用户分配许可证，他们将无法在 Intune 中注册其设备。 
+
+若要向用户分配 Intune 许可证，请执行以下操作：
 
 1. 使用登录 Intune 所用的凭据登录 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
-2. 选择“用户” > “活动用户”> 选择刚刚创建的用户。
+2. 选择“用户” > “活动用户”，然后选择刚刚创建的用户。
 3. 选择“产品许可证”旁边的“编辑”。
 4. 在“位置”下，为用户选择位置。
 5. 单击 Intune 许可证（或拥有的包含 Intune 的其他许可证）旁边的“开启”。 显示的[产品名称](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference) ** 用作 Azure 管理中的服务计划 
@@ -67,7 +69,7 @@ ms.locfileid: "57991085"
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门中，你创建了一个用户并为该用户分配了许可证。 有关将用户添加到 Intune 的详细信息，请参阅[添加用户并授予对 Intune 的管理权限](users-add.md)。
+在本快速入门中，你创建了一个用户并向其分配了 Intune 许可证。 有关将用户添加到 Intune 的详细信息，请参阅[添加用户并授予对 Intune 的管理权限](users-add.md)。
 
 要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 

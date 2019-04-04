@@ -1,12 +1,12 @@
 ---
 title: 教程 - 保护 Intune 托管设备上的 Exchange Online 电子邮件
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何使用 iOS Intune 符合性策略和 Azure AD 条件访问保护 Exchange Online，以要求托管设备和 Outlook 应用。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528201"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799762"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教程：保护托管设备上的 Exchange Online 电子邮件
 了解如何使用设备符合性策略与条件访问，以确保 iOS 设备仅在由 Intune 托管并使用已批准的电子邮件应用时才可以访问 Exchange Online 电子邮件。 
@@ -43,7 +43,7 @@ ms.locfileid: "57528201"
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
-以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。 通过选择“所有服务” > “Intune”，在 Azure 门户中查找 Intune。
+以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="create-the-ios-device-compliance-policy"></a>创建 iOS 设备符合性策略
 设置 Intune 设备符合性策略以设置设备必须满足才能被视为符合的条件。 在本教程中，我们将为 iOS 设备创建设备符合性策略。 符合性策略是特定于平台的，因此针对要评估的每个设备平台需要单独的符合性策略。
@@ -93,7 +93,7 @@ ms.locfileid: "57528201"
 5.  在“分配”下，选择“条件” > “设备平台”。
      
     1. 在“配置”下，选择“是”。
-    2. 在“包含”选项卡上，选择“所有平台(包括不受支持的平台)”，然后选择“完成”。 
+    2. 在“包含”选项卡上，选择“任何设备”，然后选择“完成”。 
     3. 再次选择“完成”。
    
     ![选择 Office 365 Exchange Online 应用](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

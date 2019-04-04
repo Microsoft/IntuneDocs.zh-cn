@@ -1,12 +1,12 @@
 ---
 title: 快速入门 - 创建和分配应用保护策略
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本快速入门使用 Microsoft Intune 来创建和分配应用保护策略。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393364"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871355"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入门：创建和分配应用保护策略
 
@@ -72,7 +72,7 @@ ms.locfileid: "57393364"
 3.  选择“分配”。
 4.  单击“包括”选项卡上的“选择要包括的组”。
 5.  选择“Contoso 测试人员”作为要包括的组。
-6.  单击“选择”。 
+6.  单击“选择” > “保存”。 
 
 现已分配应用保护策略。
 

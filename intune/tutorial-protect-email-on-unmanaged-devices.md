@@ -1,12 +1,12 @@
 ---
 title: 教程 - 保护非托管设备上的 Exchange Online 电子邮件
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何使用 Intune 应用保护策略和 Azure AD 条件访问来保护 Office 365 Exchange Online。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528269"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798778"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教程：保护非托管设备上的 Exchange Online 电子邮件
 
@@ -91,8 +91,8 @@ ms.locfileid: "57528269"
 5.  在“分配”下，选择“条件” > “设备平台”。
      
     1. 在“配置”下，选择“是”。
-    2. 在“包含”选项卡上，选择“所有平台(包括不受支持的平台)”。 
-    3. 选择“完成”。
+    2. 在“包含”选项卡上，选择“任何设备”。
+    1. 选择“完成”。
    
 6.  在“条件”窗格上，选择“客户端应用”。
      
@@ -136,7 +136,7 @@ ms.locfileid: "57528269"
 5.  在“分配”下，选择“条件” > “设备平台”。
      
     1. 在“配置”下，选择“是”。
-    2. 在“包含”选项卡上，选择“所有平台(包括不受支持的平台)”，然后选择“完成”。 
+    2. 在“包含”选项卡上，选择“任何设备”，然后选择“完成”。 
     3. 再次选择“完成”。
 
 6.  在“条件”窗格上，选择“客户端应用”。

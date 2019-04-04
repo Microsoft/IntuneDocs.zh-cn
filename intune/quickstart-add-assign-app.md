@@ -1,12 +1,12 @@
 ---
 title: 快速入门 - 添加和分配客户端应用
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本快速入门将使用 Microsoft Intune 来添加和分配客户端应用。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391889"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798737"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入门：添加并分配客户端应用
 
@@ -37,7 +37,7 @@ ms.locfileid: "57391889"
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
-以[全局管理员或 Intune 服务管理员身份](users-add.md#types-of-administrators)登录 [Intune](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
+以[全局管理员或 Intune 服务管理员](users-add.md#types-of-administrators)身份登录 [Intune](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="add-the-client-app-to-intune"></a>将客户端应用添加到 Intune
 
@@ -66,7 +66,7 @@ ms.locfileid: "57391889"
 向 Microsoft Intune 添加应用后，可将应用分配给用户组或设备组。
 
 > [!NOTE]
-> 本快速入门基于本系列前面的快速入门。 有关详细信息，请参阅本快速入门中的[先决条件](quickstart-add-assign-app.md#prerequisites)。
+> 本快速入门以本系列前面的快速入门为基础。 有关详细信息，请参阅本快速入门中的[先决条件](quickstart-add-assign-app.md#prerequisites)。
 
 可使用以下步骤将应用分配给组：
 1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用”。 

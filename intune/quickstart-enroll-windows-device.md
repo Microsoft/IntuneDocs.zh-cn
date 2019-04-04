@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389979"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871410"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>快速入门：注册 Windows 10 设备
 
-在本快速入门中，你将首先扮演 Intune 用户的角色，将 Windows 10 设备注册到 Microsoft Intune。 然后，返回 Intune 并确认已注册的设备。
+在本快速入门中，你将首先扮演 Intune 用户的角色，将 Windows 10 设备注册到 Microsoft Intune。 然后，你将返回 Intune 并确认已注册的设备。
 
 在 Microsoft Intune 中注册设备可使 Windows 10 设备获取访问组织安全数据（包括电子邮件、文件和其他资源）的权限。 这适用于 Windows 10 桌面设备和 Windows 10 移动设备。 注册设备有助于为你和你的组织确保这类访问的安全，且有助于将工作数据与个人数据分开。
 
@@ -72,7 +72,7 @@ ms.locfileid: "57389979"
 
     ![选择“访问工作学校帐户”](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. 使用你的工作或学校帐户登录 Intune，然后选择“下一步”。 如果你已执行 [创建用户并分配许可证] 快速入门，则可以使用创建的用户帐户登录。
+3. 使用你的工作或学校帐户登录 Intune，然后选择“下一步”。 如果你已按快速入门的说明 [创建用户并分配许可证](quickstart-create-user.md)，则可以使用已创建的用户帐户登录。
 
     > [!NOTE]
     > 如果你设置了“.onmicrosoft.com”，则用户帐户会将“.onmicrosoft.com”作为帐户地址的一部分。 

@@ -1,12 +1,12 @@
 ---
 title: 快速入门 - 向不符合要求的设备发送通知
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本快速入门将使用 Microsoft Intune 将电子邮件通知发送到不符合的设备。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991128"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871427"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>快速入门：将通知发送到不符合的设备
 
@@ -40,7 +40,7 @@ ms.locfileid: "57991128"
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
-以[全局管理员](users-add.md#types-of-administrators)或 Intune [服务管理员身份](users-add.md#types-of-administrators)登录 [Intune](https://aka.ms/intuneportal) 门户。 
+以[全局管理员](users-add.md#types-of-administrators)或 Intune [服务管理员身份](users-add.md#types-of-administrators)登录 [Intune](https://aka.ms/intuneportal) 门户。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="create-a-notification-message-template"></a>创建通知邮件模板
 
@@ -83,14 +83,13 @@ ms.locfileid: "57991128"
 5. 将“需要密码才可解锁移动设备”设置为“需要”。 此设置指定在允许访问用户移动设备上的信息之前是否要求用户输入密码。 
 6. 将“最短密码长度”设置为“6”。 此设置指定密码的最小位数或最小字符数。
 
-    ![新的符合性策略的系统安全设置](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. 依次单击“确定”、“确定”和“创建”即可创建符合性策略。
-8. 选择新政策的名称：Windows 10 符合性。
-9. 选择“属性” > “针对非符合性的操作” > “添加”。
-10. 在“操作”下拉框中，确认选中“向最终用户发送电子邮件”。
-11. 选择“消息模板” > “Contoso 管理员” > “选择”以选择先前在本主题中创建的消息模板。
-12. 选择“确定” > “确定” > “保存”以保存所做的更改。
+8. 选择“属性” > “针对非符合性的操作” > “添加”。
+9. 在“操作”下拉框中，确认选中“向最终用户发送电子邮件”。
+10. 选择“消息模板” > “Contoso 管理员” > “选择”以选择先前在本主题中创建的消息模板。
+11. 选择“ADD” > “确定” > “保存”以保存所做的更改。
 
 ## <a name="assign-the-policy"></a>分配策略
 

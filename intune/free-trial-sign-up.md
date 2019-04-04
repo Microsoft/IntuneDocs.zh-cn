@@ -1,6 +1,6 @@
 ---
 title: 快速入门 - 免费试用 Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: 在本快速入门中，将创建免费试用版订阅、了解支持的配置和网络要求，并能根据需要配置自己的域名。
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756847"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871389"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入门：免费试用 Microsoft Intune 
 
@@ -67,7 +67,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
     ![Azure 门户登录页的图像](./media/azure-portal-signin.png)
 
-3. 要在 Azure 端口中查看 Microsoft Intune ，从页面左侧的边栏中选择“所有服务”。
+3. 要在 Azure 门户中查看 Microsoft Intune，从页面左侧的边栏中选择“所有服务”。
 4. 在筛选器框中搜索 Microsoft Intune 并选择它。
 5. 选择星形图标，将 Intune 添加到收藏的服务列表底部，并打开 Intune 仪表板。
 
@@ -110,7 +110,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
    ![Microsoft 365 管理中心的屏幕截图 - 添加域名](./media/domain-custom-add.png)
 
-4. 验证你是否是前面输入的域的所有者。 
+4. 验证你是否是上一步中输入的域的所有者。 
     
     若选择“通过电子邮件发送代码”，会将向域中已注册的联系人发送电子邮件。 收到电子邮件后，请复制该代码，并将其输入标为“在此键入验证码”的字段。 如果验证码匹配，该域将添加至你的租户。 显示的电子邮件可能看起来不太熟悉。 某些注册机构隐藏了实际的电子邮件地址。 此外，电子邮件地址可能与在注册域名时提供的地址不同。
 
@@ -123,7 +123,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 可使用两个门户：
 - Azure 中的 Intune 仪表板 ([portal.azure.com](https://portal.azure.com))，在此可以了解 [Intune 功能](what-is-intune.md)。 通常情况下，将在 Intune 仪表板中进行操作。
-- 如果没有使用 Azure Active Directory 来添加和管理用户，可以在 Microsoft 365 管理中心 ([admin.microsoft.com](https://admin.microsoft.com)) 进行此类操作。 还可以管理帐户的帐单和支持等其他方面。
+- 如果没有使用 Azure Active Directory 来添加和管理用户，可以在 Microsoft 365 管理中心 ([admin.microsoft.com](https://admin.microsoft.com)) 执行此类操作。 还可以管理帐户的帐单和支持等其他方面。
 
 ## <a name="next-steps"></a>后续步骤
 

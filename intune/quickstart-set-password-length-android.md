@@ -1,12 +1,12 @@
 ---
 title: 快速入门 - 创建适用于 Android 设备的密码符合性策略
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本快速入门将使用 Microsoft Intune 为 Android 设备设置所需的密码长度。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397217"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799652"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>快速入门：创建适用于 Android 设备的密码符合性策略
 
@@ -49,7 +49,8 @@ Intune 设备符合性策略指定设备为实现符合性而必须满足的规�
 3. 对于“平台”，请选择“Android”。 
 4. 选择“设置” > “系统安全”以显示 Android“系统安全”边栏选项卡。
 5. 单击“需要密码才可解锁移动设备”旁边的“需要”。
-6. 在“最短密码长度”旁边输入“6”。 
+6. 选择“所需的密码类型”旁边的“至少为数字”。
+7. 在“最短密码长度”旁边输入“6”。 
 
     ![在 Microsoft Intune 中创建组的屏幕截图](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
