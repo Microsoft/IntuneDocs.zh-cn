@@ -1,6 +1,6 @@
 ---
 title: 对比 Windows 电脑管理选项
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用 Apple 设备注册计划 (DEP) 或 Apple 配置器注册企业拥有的 iOS 设备。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c70dbee01c546f73052b8741ce339c7bfe92fc7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0dbd89a2a281f3a4d80737c284fb1a1ca5004616
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461135"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799416"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>对比作为计算机或移动设备管理 Windows 电脑
 

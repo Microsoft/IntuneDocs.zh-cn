@@ -1,6 +1,6 @@
 ---
 title: 为运行 Intune 软件客户端的 Windows 电脑添加应用
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 通过本主题中的信息了解如何在部署 Windows 电脑的应用之前将它们添加到 Intune。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aaeabeebc636e58eac2058b0f482efef34878f0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460923"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798887"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>为运行 Intune 软件客户端的 Windows 电脑添加应用
 

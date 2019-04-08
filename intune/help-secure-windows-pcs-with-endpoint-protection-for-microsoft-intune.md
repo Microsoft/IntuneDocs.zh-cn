@@ -1,6 +1,6 @@
 ---
 title: 适用于 Windows 电脑的 Endpoint Protection
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用提供对恶意软件威胁的实时防护的 Endpoint Protection 保障托管计算机的安全。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 188242f870e5b7218a5b58a201782bf4bed4c25e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7192d7c71d1737a624f2c76e3253cb232dc1f2af
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460965"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798966"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
 

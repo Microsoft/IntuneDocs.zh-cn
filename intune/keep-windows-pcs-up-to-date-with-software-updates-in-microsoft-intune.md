@@ -1,6 +1,6 @@
 ---
 title: 适用于 Windows PC 的软件更新
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 通过确保向托管计算机快速安装最新修补程序和软件，使该计算机保持最新版本。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381802de52f63cd4d7c836dbabe25167c0370ee5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 68f8b814084328fdc5aed954cb71b9ce8dcedc63
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460659"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798945"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本
 

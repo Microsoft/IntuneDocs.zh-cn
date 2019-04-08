@@ -1,6 +1,6 @@
 ---
 title: 技术支持疑难解答门户
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 支持人员使用疑难解答门户来解决用户的技术问题。
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57787128"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798392"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑难解答门户帮助公司的用户
 
@@ -68,7 +68,7 @@ ms.locfileid: "57787128"
 | 2.   | 用户选择  | 当前所选用户的名称。 单击“更改用户”可选择新用户。       |
 | 3.   | 用户状态  | 显示用户的 Intune 许可证状态、设备数目、每个设备的符合性、应用数目以及应用的符合性。       |
 | 4.   | 用户信息  | 使用该列表在窗格中选择要查看的详细信息。 <br>可选内容如下： <ul><li>客户端应用<li>相容性策略<li> 配置策略<li>应用保护策略 <li>注册限制</ul>      |
-| 5.   | 组成员身份  | 显示所选用户所属的当前组。       |
+| 5.   | 组成员资格  | 显示所选用户所属的当前组。       |
 
 <!-- this section needs to be updated
 

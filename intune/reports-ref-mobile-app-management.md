@@ -1,6 +1,6 @@
 ---
 title: 移动应用管理 (MAM)
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 数据仓库 API 中实体集合的“移动应用管理”类别的参考主题。
 keywords: Intune 数据仓库
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 524a4f39ba6a319f42ca23c7d85e84ffd86fce0d
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
-ms.translationtype: HT
+ms.openlocfilehash: 0e9f01ad981350f250e35961f9a41a62698061a1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358210"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799592"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>移动应用管理 (MAM) 实体引用
 

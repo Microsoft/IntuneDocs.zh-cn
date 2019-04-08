@@ -1,6 +1,6 @@
 ---
 title: 请求并提供 Windows 电脑的远程协助
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 说明对作为电脑托管的 Windows 桌面寻求远程协助时最终用户和 IT 管理员需要执行的步骤，以及远程启动电脑的步骤。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b57bae0c0e7a734071be79318286714a97d0fbf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b7004d72328d606f6adc5cd84e79ce4830409059
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460591"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798525"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>请求并提供 Windows 电脑的远程协助
 

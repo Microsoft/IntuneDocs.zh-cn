@@ -1,6 +1,6 @@
 ---
 title: 管理运行 Intune 软件客户端的电脑软件许可协议
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用 Intune 可以管理通过 Microsoft 批量许可协议购买的软件和通过其他方式购买的软件的许可协议。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d79cf2e8d61de1737d3a47533fbf25976c32d7a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461203"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798795"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows PC 软件的许可协议
 

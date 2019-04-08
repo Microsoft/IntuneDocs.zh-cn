@@ -1,6 +1,6 @@
 ---
 title: 常见 Windows PC 管理任务
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解运行 Intune 软件客户端的 Windows 电脑的管理方法。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75b6d9eda926cab6c7b2b34e1c7beceee88266d6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2fdb45c711e605da9a1d160593d37564ef846d32
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460404"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797944"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 软件客户端的常见 Windows 电脑管理任务
 

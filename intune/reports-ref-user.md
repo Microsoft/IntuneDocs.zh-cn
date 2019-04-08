@@ -1,6 +1,6 @@
 ---
 title: 用户 - Intune 数据仓库
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 数据仓库 API 中实体集合的“用户”类别的参考主题。
 keywords: Intune 数据仓库
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 16084e2cd33f6aac9313bb1f8e9fba0467a3ce73
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358164"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797851"
 ---
 # <a name="reference-for-user-entity"></a>用户实体引用
 

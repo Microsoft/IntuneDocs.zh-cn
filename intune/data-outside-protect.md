@@ -1,6 +1,6 @@
 ---
 title: 防止对公司门户进行未经授权的访问
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 在公司网络外部共享公司数据时，使用 Microsoft Intune 防止未经授权的访问。
 keywords: Office 365 O365 Azure 信息保护 数据保护 外部网络 公司数据
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ffe9fcf4f16041eed698d94bb16f9ed2fd94341
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0882fb19d3ce74c837b83973ec07f391bc2875fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460455"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799433"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>使用 Microsoft Intune 防止对公司数据进行未经授权的访问
 

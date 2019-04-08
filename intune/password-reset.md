@@ -1,6 +1,6 @@
 ---
 title: 削减支持人员成本
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 通过自助密码重置削减支持人员成本
 keywords: Azure Active Directory SSPR 密码重置
 author: MandiOhlinger
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 621df273e7910e51cf7de869aa7858039d66549b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ce6ed4b57199f87fc014addf74a06e70a285044b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459962"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798920"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>通过自助密码重置削减支持人员成本
 

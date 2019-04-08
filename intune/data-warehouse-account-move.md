@@ -1,6 +1,6 @@
 ---
 title: 移动 Intune 数据仓库帐户数据
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何在移动帐户时备份 Intune 数据仓库数据。
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c83ed35ab9c9c607f6283f2d5b18cf129f53cfab
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 0c73e4c8aa5f71fb80110d4a223b9872c8dbaff3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514358"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798096"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>移动 Intune 数据仓库帐户数据 
 

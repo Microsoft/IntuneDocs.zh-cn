@@ -1,6 +1,6 @@
 ---
 title: 数据库仓库数据模型
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune 数据仓库每天都会采样数据，显示不断变化的移动环境的历史视图。
 keywords: Intune 数据仓库
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 43e555a27565de43d417adc473d48254d8b7d5a2
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565514"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798167"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 数据库仓库数据模型
 
