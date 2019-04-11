@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 4b5e6ac4683284dc71c9171f4367e72d5ec45c59
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871427"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899005"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>快速入门：将通知发送到不符合的设备
 
@@ -85,7 +85,7 @@ ms.locfileid: "58871427"
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. 依次单击“确定”、“确定”和“创建”即可创建符合性策略。
+7. 依次选择“确定” > “确定” > “创建”即可创建合规性策略。
 8. 选择“属性” > “针对非符合性的操作” > “添加”。
 9. 在“操作”下拉框中，确认选中“向最终用户发送电子邮件”。
 10. 选择“消息模板” > “Contoso 管理员” > “选择”以选择先前在本主题中创建的消息模板。
