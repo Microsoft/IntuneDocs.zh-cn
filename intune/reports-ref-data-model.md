@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43e555a27565de43d417adc473d48254d8b7d5a2
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5a56c06970e267d8ba604e9d4e53f4a3f315fbcb
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798167"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533553"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 数据库仓库数据模型
 
@@ -46,7 +46,7 @@ Intune 数据仓库每天对数据进行采样，呈现不断变化的移动设�
   -  [Intune 管理扩展](reports-ref-intunemanagementextension.md)
   -  [策略](reports-ref-policy.md)
   -  [移动应用管理 (MAM)](reports-ref-mobile-app-management.md)
-  -  [User](reports-ref-user.md)
+  -  [用户](reports-ref-user.md)
   -  [当前用户](reports-ref-current-user.md)
   -  [用户设备关联](reports-ref-user-device.md)
 

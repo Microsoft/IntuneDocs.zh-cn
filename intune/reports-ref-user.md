@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16084e2cd33f6aac9313bb1f8e9fba0467a3ce73
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 4e650f8cb713d76c44d3f3399612ee5fd6d02426
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797851"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429138"
 ---
 # <a name="reference-for-user-entity"></a>用户实体引用
 
@@ -35,16 +35,17 @@ User 类别包含定义数据模型中用户属性的 User 实体。
 
 User 实体集合包含用户数据。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在上个月的数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
 
-| 属性  | 描述 | 示例 |
-|---------|------------|--------|
-| UserKey |数据仓库中用户的唯一标识符 - 代理键。 |123 |
-| UserId |用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail |用户的电子邮件地址。 |John@constoso.com |
-| userPrincipalName | 用户的用户主体名称。 | John@constoso.com |
-| DisplayName |用户的显示名称。 |John |
-| IntuneLicensed |指定此用户是否获得 Intune 许可。 |True/False |
-| IsDeleted | 指示是否所有用户的许可证都已过期，以及是否因此将用户从 Intune 中删除。 对于单个记录，此标志不会更改。 相反，将为新用户状态创建新记录。 |True/False |
-| RowLastModifiedDateTimeUTC |上次在数据仓库中修改记录时的 UTC 日期和时间  |2016/11/23 - 中午 12:00:00 |
+|          属性          |                                                                                                           描述                                                                                                          |                示例               |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
+| UserKey                    | 数据仓库中用户的唯一标识符 - 代理键。                                                                                                                                                         | 123                                  |
+| UserId                     | 用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
+| UserEmail                  | 用户的电子邮件地址。                                                                                                                                                                                                     | John@constoso.com                    |
+| userPrincipalName                        | 用户的用户主体名称。                                                                                                                                                                                               | John@constoso.com                    |
+| DisplayName                | 用户的显示名称。                                                                                                                                                                                                      | John                                 |
+| IntuneLicensed             | 指定此用户是否获得 Intune 许可。                                                                                                                                                                              | True/False                           |
+| IsDeleted                  | 指示是否所有用户的许可证都已过期，以及是否因此将用户从 Intune 中删除。 对于单个记录，此标志不会更改。 相反，将为新用户状态创建新记录。 | True/False                           |
+| RowLastModifiedDateTimeUTC | 上次在数据仓库中修改记录时的 UTC 日期和时间                                                                                                                                                 | 2016/11/23 0:00                      |
+
 
 ## <a name="next-steps"></a>后续步骤
  - 可以使用“当前用户”实体集合将用户数据限制为当前活动的用户。 有关详细信息，请参阅[引用当前用户实体](reports-ref-current-user.md)。
