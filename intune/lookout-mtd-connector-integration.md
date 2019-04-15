@@ -1,5 +1,6 @@
 ---
-title: 设置 Lookout 与 Microsoft Intune 的集成 | Microsoft Intune
+title: 设置 Lookout 与 Microsoft Intune 的集成
+titleSuffix: Microsoft Intune
 description: 了解如何将 Intune 与 Lookout Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69e9cfa1ffc294ca26f94bab94d8b758611a4ac0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3644ebaa0582cea5e79c5123ac89b97bc6f97f29
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237565"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569566"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>使用 Intune 设置 Lookout 移动威胁防御集成
 

@@ -3,24 +3,26 @@ title: 在 Microsoft Intune 中删除 SCEP 或 PKCS 证书 - Azure | Microsoft D
 titleSuffix: ''
 description: 管理员可以使用擦除或停用操作，从 Microsoft Intune 中删除证书。 在某些情况下，证书将自动删除，如取消注册设备或删除符合性策略。 而在某些情况下，证书会自动保留在设备上，如丢失或删除 Intune 许可证。 请查看 Android、Android Enterprise、iOS、macOS 和 Windows 设备适用的不同方式。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 977e7006d39ae76516d5b06019e463d1018aaa79
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.reviewer: lacranda
+ms.openlocfilehash: 6a1280ca2a78853ae188ad68620f0b82846a365a
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229252"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59569254"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中删除 SCEP 和 PKCS 证书
 

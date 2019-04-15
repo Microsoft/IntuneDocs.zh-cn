@@ -1,6 +1,6 @@
 ---
 title: 设置 Microsoft Intune 中的条款和条件
-titlesuffix: ''
+titleSuffix: ''
 description: 设置用户将在公司门户中看到的 Intune 条款和条件。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 10/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b0571ad6196277ee2bc257d72cc4db24fcc3424
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7c056e86f7e768d79b4851fda327dc2e32fa349c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237939"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567304"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>用户访问条款和条件
 

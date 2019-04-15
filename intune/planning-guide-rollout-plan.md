@@ -1,6 +1,6 @@
 ---
 title: 确定针对推出和时间段的组
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文可帮助你决定向 Microsoft Intune 推出的组和针对这些部署的时间段。
 keywords: ''
 author: dougeby
@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34b4027ce42873ae2debdcf17c8ed443cb59b184
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: e75900137ce1e590078a8baa5d00dbc617afc937
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230833"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567564"
 ---
 # <a name="develop-a-rollout-plan"></a>制定推出计划
 

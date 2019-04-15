@@ -1,6 +1,6 @@
 ---
 title: 使用 Intune 绕过 iOS 激活锁定
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何使用 Intune 绕过 iOS 激活锁定以访问锁定的设备。
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d44636baaa6b4be71ac6a80369286065e586293
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 406a08788663603340ab4af78217a07e68e66604
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237480"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568591"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在受监督的 iOS 设备上绕过激活锁
 

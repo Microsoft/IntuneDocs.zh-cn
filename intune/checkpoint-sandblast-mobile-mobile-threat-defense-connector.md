@@ -1,6 +1,6 @@
 ---
-title: 设置 Check Point SandBlast MTD | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: 设置 Check Point SandBlast MTD
+titleSuffix: Microsoft Intune
 description: 了解如何将 Intune 与 Check Point SandBlast Mobile Threat Defense 相集成以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
@@ -10,6 +10,7 @@ ms.date: 07/03/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6650d3d947b99077e5a9e783806ff18f60521aa9
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ac9ecbdd55fff39cbdf1b772d2db8e364730e90e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238089"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569644"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast 移动威胁防御连接器与 Intune
 

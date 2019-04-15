@@ -1,15 +1,16 @@
 ---
 title: 在 Microsoft Intune 中管理 iOS 批量购买的应用
-titlesuffix: ''
+titleSuffix: ''
 description: 了解如何才能将从 iOS 应用商店批量购买的应用同步到 Microsoft Intune 中，然后管理并跟踪其使用情况。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 606fe0dfe7160d6fe61366db98b7f22a45216bd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dca219f1593265e0bf6447c054969548d5d79351
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229821"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570632"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用
 
@@ -124,11 +125,11 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 
 | # | 方案                                | 邀请到 Apple VPP 计划                              | 应用安装提示 | Apple ID 提示 |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD - 用户已获许可                             | Y                                                                                               | Y                                           | Y                                 |
-| 2 | Corp - 用户已获许可（不受监督的设备）     | Y                                                                                               | Y                                           | Y                                 |
-| 3 | Corp - 用户已获许可（受监督的设备）         | Y                                                                                               | N                                           | Y                                 |
-| 4 | BYOD - 设备已获许可                           | N                                                                                               | Y                                           | N                                 |
-| 5 | CORP - 设备已获许可（不受监督的设备）                           | N                                                                                               | Y                                           | N                                 |
+| 1 | BYOD - 用户已获许可                             | 是                                                                                               | 是                                           | 是                                 |
+| 2 | Corp - 用户已获许可（不受监督的设备）     | 是                                                                                               | 是                                           | 是                                 |
+| 3 | Corp - 用户已获许可（受监督的设备）         | 是                                                                                               | N                                           | 是                                 |
+| 4 | BYOD - 设备已获许可                           | N                                                                                               | 是                                           | N                                 |
+| 5 | CORP - 设备已获许可（不受监督的设备）                           | N                                                                                               | 是                                           | N                                 |
 | 6 | CORP - 设备已获许可（受监督的设备）                           | N                                                                                               | N                                           | N                                 |
 | 7 | 展台模式（受监督的设备）- 设备已获许可 | N                                                                                               | N                                           | N                                 |
 | 8 | 展台模式（受监督的设备）- 用户已获许可   | --- | ---                                          | ---                                |

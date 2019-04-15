@@ -1,6 +1,6 @@
 ---
 title: 规划和设计 Intune 部署的模板和资源
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 规划模板和其他 Intune 信息的链接，这些信息可能在 Microsoft Intune 部署规划和实现过程中有所帮助。
 keywords: ''
 author: dougeby
@@ -10,18 +10,19 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb42270a585bf390e91995a010168414a030a66f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 14c1dcef4479cbbe6606cf4bb107514a21d7ab21
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236460"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567512"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>规划 Intune 部署的其他资源
 

@@ -9,6 +9,7 @@ ms.date: 05/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ayesham
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad1c633261e4d917cb88793efbac2ff4416dd429
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d2431695f89c9cdf339a0192e27f8140ec042435
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236681"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396226"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>使用 Intune 中的位置（网络围墙）
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236681"
 
 可以创建基于位置的网络符合性策略，也称为网络隔离。 该策略确保设备必须连接到工作网络才符合要求。 该策略可以与条件性访问策略一起使用，以便设备只有在连接到工作网络时才能访问工作资源。 当设备未连接到工作网络时，该设备变得不符合要求，失去对工作资源的访问权限。
 
-请考虑以下情形：
+请考虑以下方案：
 
 在制造设施中，某些员工使用 Android 设备。 员工将 Android 设备带到设施或工厂外。 为防止未经授权的访问，可以执行以下操作：
 

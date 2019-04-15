@@ -1,6 +1,6 @@
 ---
 title: 获取用于 Intune 的 Apple MDM 推送证书
-titlesuffix: ''
+titleSuffix: ''
 description: 获取用于通过 Intune 管理 iOS 设备的 Apple MDM 推送证书。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 03/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5719d1f662cc644377057b07dd632288a5c16552
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 51fe7ab05174f614ad4278cd83ede31c6bb9beb2
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238007"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567447"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>获取 Apple MDM Push Certificate
 

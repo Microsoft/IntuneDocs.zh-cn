@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56323376"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>启用 Windows 10 自动注册
 
 自动注册允许用户在 Intune 中注册其 Windows 10 设备。 为了进行注册，用户将其工作帐户添加到其个人拥有的设备或将公司拥有的设备加入 Azure Active Directory。 在后台，设备进行注册并加入 Azure Active Directory。 注册后，使用 Intune 管理设备。

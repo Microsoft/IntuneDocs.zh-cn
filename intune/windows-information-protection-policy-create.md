@@ -1,5 +1,6 @@
 ---
-title: 创建和部署 Windows 信息保护 (WIP) 应用保护策略 | Microsoft Intune
+title: 创建和部署 Windows 信息保护 (WIP) 应用保护策略
+titleSuffix: Microsoft Intune
 description: 通过 Microsoft Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231564"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569761"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -125,7 +127,8 @@ ms.locfileid: "57231564"
 
 WIP Learning 是一个报表，用于监视已启用 WIP 和 WIP 未知的应用。 未知应用指不是由组织的 IT 部门部署的应用。 在“块”模式下强制执行 WIP 前，可从报告中导出这些应用并将其添加到 WIP 策略，以避免生产力中断。
 
-<!-- 1631908 -->除了查看已启用 WIP 的应用的相关信息外，还可以查看与网站共享工作数据的设备的摘要。 通过此信息，可以确定应将哪些网站添加到组和用户 WIP 策略中。 摘要显示已启用 WIP 的应用访问的网站 URL。
+<!-- 1631908 -->
+除了查看已启用 WIP 的应用的相关信息外，还可以查看与网站共享工作数据的设备的摘要。 通过此信息，可以确定应将哪些网站添加到组和用户 WIP 策略中。 摘要显示已启用 WIP 的应用访问的网站 URL。
 
 使用已启用 WIP 的应用和 WIP 未知的应用时，建议对在受保护的应用列表上具有相应应用的小组进行验证时，从“无提示”或“允许覆盖”开始。 完成后，可以更改为最终的强制策略“块”。
 
