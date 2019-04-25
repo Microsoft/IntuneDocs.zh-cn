@@ -8,10 +8,12 @@
 
 ## [登录到公司门户](sign-in-to-the-company-portal.md)
 
-## [使用 Android 设备](using-your-android-device-with-intune.md)
-### [注册 Android 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [注册设备](enroll-your-device-in-Intune-android.md)
-#### [使用 Android for Work 注册设备](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## 使用 Android 设备
+### [为何注册 Android 设备](why-enroll-android-device.md)
+### 注册你的设备
+#### [注册 Android 设备](enroll-device-android-company-portal.md)  
+#### [使用 Android 工作配置文件注册](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [使用 Microsoft Intune 应用注册](enroll-device-android-microsoft-intune-app.md)
 ### [在设备上使用托管应用](use-managed-apps-on-your-device-android.md)
 ### [加密设备](encrypt-your-device-android.md)
 ### [设置 PIN 或密码](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [取消注册设备](unenroll-your-device-from-intune-android.md)
 #### [如果拒绝“使用条款”，则取消注册设备](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [修复 Android 的常见问题](troubleshoot-your-device-android.md)
+### 修复 Android 的常见问题
 #### [检查设备符合性](check-compliance-on-your-device-android.md)
 #### [修复与 Samsung Knox 相关的常见问题](samsung-knox-errors-android.md)
 #### [更新设备以安装 Outlook](update-device-outlook-android.md)
 
-#### 使用日志有助于解决问题
+#### Logging
 ##### [启用详细日志记录](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [使用电子邮件发送日志](send-logs-to-your-it-admin-by-email-android.md)
+##### [上传日志和通过电子邮件发送日志](send-logs-to-your-it-admin-by-email-android.md)
 ##### [使用 USB 线缆发送日志](send-logs-to-your-it-admin-using-cable-android.md)
-##### [提交注册错误](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [将错误发送给 Microsoft](send-logs-to-microsoft-android.md)
 
 ### 操作系统问题

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513981"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune 可以为公司带来什么好处？
 Microsoft Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮助员工提高工作效率，同时保护企业数据。
