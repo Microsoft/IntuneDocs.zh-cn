@@ -1,6 +1,6 @@
 ---
 title: 使用设备注册管理员帐户注册设备
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用设备注册管理器帐户在 Intune 中注册设备。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a12d162b9877bbbc73ecbcc7bb2ed2f1e0095b9e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 6bb3289bf2136506903d1fefe6c5170580a6fc11
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509776"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用设备注册管理员帐户在 Intune 中注册设备
 
@@ -32,12 +33,14 @@ ms.locfileid: "57228284"
 
 使用 DEM 用户帐户注册的 DEM 用户帐户和设备具有以下限制：
 
+  - 必须为 DEM 帐户用户分配 Intune 许可证。
   - 无法通过公司门户进行擦除。 可以从 Azure 门户中的 Intune 擦除通过 DEM 用户帐户注册的设备。
   - 公司门户应用或网站中仅显示本地设备。
   - 由于应用管理的每用户 Apple ID 要求，DEM 用户帐户无法将 Apple 批量购买计划 (VPP) 应用与 Apple VPP 用户许可证一起使用。
   - 如果设备具有 Apple VPP 许可证，则可以安装 VPP 应用。
   - 设备出于条件访问而被阻止，Windows 10 1803+ 除外
-  - 每个使用 DEM 帐户注册的设备都必须有自己的 Intune 设备许可证。
+  - 向 DEM 帐户注册的每台设备都需要获得适当许可才能由 Intune 托管。 许可证可以是 Intune 用户许可证，也可以是 Intune 设备许可证。
+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>添加一个设备注册管理器

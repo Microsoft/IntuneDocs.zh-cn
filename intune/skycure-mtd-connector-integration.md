@@ -1,5 +1,6 @@
 ---
-title: 设置 Symantec 与 Microsoft Intune 的集成 | Microsoft Intune
+title: 使用 Microsoft Intune 设置 Symantec 集成
+titleSuffix: Microsoft Intune
 description: 如何使用 Microsoft Intune 设置 Symantec Endpoint Protection Mobile 解决方案以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 12/21/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 676f34f8bc445109c2d4b86cf419f37cf291dfcc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9b44164ff31be89e01eb895a8b889e07bb3f704f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506517"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>设置 Symantec Endpoint Protection Mobile 与 Intune 的集成
 

@@ -9,6 +9,7 @@ ms.date: 05/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76e0c411afe1fb4e32b26c6ad669cb91b6cd3336
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5a253894e400e4b63de40d2d8ef56cefef5b2ca0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512793"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>在 Intune 中审核、导出或删除个人数据
 
@@ -79,6 +80,9 @@ Intune 管理员可使用审核日志跟踪与个人数据有关的活动。 管
 1. 从本地 Active Directory (AD) 中删除用户。 这将阻止用户同步到 Azure AD，还可避免用户被 Configuration Manager 发现所发现。 
 2. 从 Configuration Manager 控制台中删除用户，以从 Configuration Manager 中删除用户和关联数据。 在控制台中，转到“资产和符合性” > “用户”，右键单击要删除的用户，然后单击“删除”。
 3. [从 AAD 中删除用户](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)，这可同时从 Azure Active Directory 和 Intune 中删除用户和关联数据。 从 AAD 中删除（硬删除）用户时，Intune 将收到 AAD 的删除信号，然后自动开始从 Intune 服务中清除该用户的所有个人数据。 Intune 服务中的用户信息将在删除操作后的 30 天内删除。
+
+> [!Important]
+>已弃用载入新的混合 MDM 客户这一功能。 有关详细信息，请参阅博客文章[从混合移动设备管理移动到 Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)。
 
 ## <a name="next-steps"></a>后续步骤
 

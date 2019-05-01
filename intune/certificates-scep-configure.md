@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510003"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -36,9 +37,9 @@ ms.locfileid: "56742731"
 - **NDES 服务器**：在 Windows Server 2012 R2 或更高版本上，设置网络设备注册服务 (NDES) 服务器角色。 Intune 不支持在同时运行企业 CA 的服务器上使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管 NDES 的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。
 必须将 NDES 服务器加入与企业 CA 相同的林中的域。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅[结合使用策略模块和网络设备注册服务](https://technet.microsoft.com/library/dn473016.aspx)。
 
-- **Microsoft Intune 证书连接器**：从 Intune 管理门户下载“证书连接器”安装程序 (NDESConnectorSetup.exe)。 将在具有 NDES 角色的服务器上运行此安装程序。  
+- **Microsoft Intune 证书连接器**：在 Intune 门户中，转到“设备配置” > “证书连接器” > “添加”，然后按照“为 SCEP 安装连接器的步骤”操作。 使用门户中的下载链接开始下载证书连接器安装程序 NDESConnectorSetup.exe。  将在具有 NDES 角色的服务器上运行此安装程序。  
 
-  - NDES 证书连接器还支持美国联邦信息处理标准 (FIPS) 模式。 FIPS 不是必需的，但启用 FIPS 时可颁发和吊销证书。
+此 NDES 证书连接器还支持美国联邦信息处理标准 (FIPS) 模式。 FIPS 不是必需的，但启用 FIPS 时可颁发和吊销证书。
 
 - **Web 应用程序代理服务器**（可选）：将运行 Windows Server 2012 R2 或更高版本的服务器用作 Web 应用程序代理 (WAP) 服务器。 该配置：
   - 允许设备使用 Internet 连接接收证书。
@@ -262,7 +263,7 @@ ms.locfileid: "56742731"
 
     客户端身份验证证书必须具备以下属性：
 
-    - **增强型密钥用法**：此值必须包括客户端身份验证
+    - **增强型密钥使用**：此值必须包括客户端身份验证
 
     - **使用者名称**：此值必须与安装证书的服务器（NDES 服务器）的 DNS 名称相同
 
@@ -298,12 +299,13 @@ ms.locfileid: "56742731"
 > Microsoft Intune 证书连接器必须安装在单独的 Windows Server 上。 它不能安装在证书颁发机构 (CA) 上。 它还必须安装在与网络设备注册服务 (NDES) 角色相同的服务器上。
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-2. 选择“设备配置” > “证书颁发机构” > “添加”
-3. 下载并保存连接器文件。 将该文件保存到可从要安装连接器的服务器访问的位置。
+2. 选择“设备配置” > “认证连接器” > “添加”。
+3. 下载并保存 SCEP 文件的连接器。 将该文件保存到可从要安装连接器的服务器访问的位置。
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. 下载完成后，请转到托管网络设备注册服务 (NDES) 角色的服务器。 然后：
+
+4. 下载完成后，请转到托管网络设备注册服务 (NDES) 的服务器。 然后：
 
     1. 确保已安装 .NET 4.5 Framework，因为它是 NDES 证书连接器的必需项。 Windows Server 2012 R2 和更高版本中自动包含 .NET 4.5 Framework。
     2. 运行安装程序 (NDESConnectorSetup.exe)。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 CRP Web 服务 CertificateRegistrationSvc 作为 IIS 中的应用程序运行。
@@ -363,8 +365,8 @@ ms.locfileid: "56742731"
 5. 从“配置文件”类型下拉列表中，选择“SCEP 证书”。
 6. 输入以下设置：
 
-   - **证书类型**：为用户证书选择“用户”。 为无用户设备（例如网亭）选择“设备”。 “设备”证书可用于以下平台：  
-     - Android Enterprise
+   - **证书类型**：为用户证书选择“用户”。 “用户”证书类型可包含证书主题和 SAN 中的用户和设备属性。  对于无用户设备（如展台）等方案或 Windows 设备，请选择“设备”，将证书放在本地计算机证书存储中。 “设备”证书只能在证书主题和 SAN 中包含设备属性。  “设备”证书可用于以下平台：  
+     - Android Enterprise - 工作配置文件
      - iOS
      - macOS
      - Windows 8.1 及更高版本

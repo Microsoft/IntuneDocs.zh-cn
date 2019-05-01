@@ -1,27 +1,28 @@
 ---
 title: Intune 测试和验证
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 如何在环境中测试和验证 Intune 仅限云解决方案。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4974dc3e86b26434cb633bd58e524d290573ecd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512842"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 测试和验证
 
@@ -43,7 +44,7 @@ ms.locfileid: "57237548"
 
 -   **设备：** 可擦除或重置为出厂默认设置的测试设备。
 
--   **集成组件：** 如果需要，应安装和配置所有集成组件（证书连接器、适用于托管 Exchange 的 Intune 服务间连接器和 Intune 本地 Exchange 连接器）。
+-   **集成组件：** 必要时，应安装和配置所有集成组件（证书连接器和 Intune Exchange 本地连接器）。
 
 可能需要进行设计更改以适应无法预料的困难。 此外，应完整记录所有设计更改，并随附每项更改的原因。 以下示例演示了可能的更改：
 

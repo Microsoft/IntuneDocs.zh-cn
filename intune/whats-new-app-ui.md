@@ -1,48 +1,96 @@
 ---
 title: Intune 最终用户应用的 UI 更新
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解 Microsoft Intune 中针对最终用户设备上可用的应用所做的 UI 更改。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2018
-ms.topic: article
+ms.date: 04/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61516834"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
-了解此版本的 Microsoft Intune 中，针对最终用户会看到的应用所做的 UI 更新。 了解这些更新有助于与用户进行通信，并更新为了支持部署而创建的任何自定义文档。 还有助于了解如何在用户使用公司门户寻求支持人员的帮助和支持时更好地解决用户面临的任何问题。
+了解 Microsoft Intune 应用的最新更新。 我们会定期新增内容和改进 Intune 公司门户应用和网站。 如果你是 Intune 管理员或支持人员，则本文提供了以下方面所需的信息：
+
+* 提醒学生和员工有关应用和注册方面的更改。
+* 更新组织的文档或帮助台程序。  
+
+如果你是员工或学生，请务必查看屏幕截图和公司门户帮助文档的链接。 有关如何使用公司门户应用的详细信息，请参阅[公司门户用户帮助文档](https://docs.microsoft.com/intune-user-help/)。  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日当周  
+
+### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>新最终用户应用（Microsoft Intune 应用） <!--3903244 -->  
+有一种适用于 Android 完全托管设备的新最终用户应用，名为 Microsoft Intune。 此新应用质轻、现代，并可提供与公司门户应用类似的功能，但适用于完全托管的公司设备。 有关详细信息，请参阅 [Google Play 上的 Microsoft Intune 应用](https://play.google.com/store/apps/details?id=com.microsoft.intune)。  
+
+设备详细信息屏幕的示例屏幕截图： 
+
+![Microsoft Intune 应用的屏幕截图，其中显示了 Jane 的 Android 设备的详细信息。](./media/1904-intune-app-device-details.png)   
+
+“安装程序访问”屏幕的示例屏幕截图：  
+
+![Microsoft Intune 应用的屏幕截图，其中显示了安装程序访问注册屏幕。](./media/1904-intune-app-setup-access.png)   
+
+应用菜单的示例屏幕截图：  
+
+![Microsoft Intune 应用的屏幕截图，其中显示了边栏菜单。](./media/1904-intune-app-navigation-menu.png)   
+
+“帮助”屏幕的示例屏幕截图：  
+
+![Microsoft Intune 应用“帮助”屏幕的屏幕截图。](./media/1904-intune-app-help.png)   
+
+
+## <a name="week-of-april-1-2019"></a>2019 年 4 月 1 日当周  
+
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>对 iOS 12 设备用户的公司门户注册的更改 <!--3448635 -->  
+适用于 iOS 的公司门户的注册屏幕和步骤已更新，以与 Apple iOS 12.2 中发布的 MDM 注册更改保持一致。 更新的工作流提示用户执行以下操作：  
+
+* 允许 Safari 在返回公司门户应用之前打开公司门户网站并下载管理配置文件。  
+* 打开“设置”应用以在其设备上安装管理配置文件。  
+* 返回公司门户应用以完成注册。  
+
+要了解更新的注册步骤和屏幕，请参阅[在 Intune 中注册 iOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)。  
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>iOS 版公司门户应用的用户体验更新 <!-- 2536024 -->
+适用于 iOS 设备的公司门户应用的主页已经过重新设计。 经此更改后，主页将更好地遵循 iOS UI 模式，更易于查找应用和电子书。  
+
+## <a name="week-of-february-19-2019"></a>2019 年 2 月 19 日当周  
+### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>适用于 Windows 10 的公司门户应用中的全新应用类别屏幕<!-- 3834780 WNready4Review -->  
+添加了名为“应用类别”的新屏幕，以改善适用于 Windows 10 的公司门户中的应用浏览和选择体验。 用户现在可以看到他们的应用按照“特别推荐”、“教育”和“工作效率”等类别进行排序。 此更改将出现在公司门户 10.3.3451.0 版及更高版本中。 有关在公司门户中安装应用的详细信息，请参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)。  
+
+![适用于 Windows 10 的公司门户的应用类别屏幕的屏幕截图。](./media/1902_CP_app_categories.png)   
+
 
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日当周
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows 公司门户键盘快捷方式 <!-- 2771518 -->
-最终用户现在可以使用键盘快捷方式（快捷键）在 Windows 公司门户中触发应用和设备操作。
+最终用户现在可以[使用键盘快捷方式（快捷键）](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts)在 Windows 公司门户中触发应用和设备操作。
 
 ## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日当周
 
 ### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>为公司门户应用添加自定义品牌图像 <!-- 1916266 -->
-Microsoft Intune 管理员可以上传自定义品牌图像，该图像将在 iOS 公司门户应用的用户配置文件页面上作为背景图像显示。 有关配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](company-portal-app.md)。
-
-
+Microsoft Intune 管理员可以上传自定义品牌图像，该图像将在 iOS 公司门户应用的用户配置文件页面上作为背景图像显示。 有关配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](company-portal-app.md)。  
 
 ## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日当周  
 
-### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>公司门户网站的新用户体验更新<!--2000968 -->  
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>公司门户网站的新用户体验更新 <!--2000968 -->  
 我们已根据客户反馈向公司门户网站添加新功能。 可从设备上体验到现有功能和可用性的重大改进。 该网站的各个区域（如设备详细信息、反馈与支持以及设备概述）都采用了全新的现代化快速响应设计。 已更新 [Intune 公司门户网站文档](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)以体现这些更改。   
 
 将看到以下更新：  
@@ -69,7 +117,7 @@ Microsoft Intune 管理员可以上传自定义品牌图像，该图像将在 iO
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的新浏览体验  
 
-现在，在适用于 Windows 的公司门户应用中浏览或搜索应用时，用户能在现有的“磁贴”视图和新添加的“详细信息”视图之间切换。 新视图列出应用程序详细信息，如名称、发布服务器、发布日期和安装状态。  
+现在，在适用于 Windows 的公司门户应用中浏览或搜索应用时，用户可在现有的“磁贴”视图和新的“详细信息”视图之间切换。 新视图列出应用程序详细信息，如名称、发布服务器、发布日期和安装状态。  
 
 通过“应用”页的“已安装”视图可查看已完成和正在进行的应用安装的详细信息。  
 
@@ -82,7 +130,7 @@ Microsoft Intune 管理员可以上传自定义品牌图像，该图像将在 iO
 ![适用于 Windows 的 Intune 公司门户应用的屏幕截图，显示了详细信息视图中已安装的应用。](/intune/media/details-installed-view-cpapp-1807.png) 
 
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日当周
-### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 <!-- 1195010 --> 的公司门户应用中的更新导航视图
+### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>适用于 Windows 10 的公司门户应用中的更新导航视图 <!-- 1195010 -->
 Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视图](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)。 在这款应用旁边，你会注意到一个静态、垂直的所有顶级页面列表。 单击任意链接，可以快速查看页面并在其之间进行切换。 这是你将看到的众多更新中的第一个更新，是我们持续不断努力成果的一部分，以便在 Intune 中创造更具适应性、更能感同身受且更为熟悉的体验。 
 
 ![显示 Fluent 设计导航视图的公司门户应用仪表板的屏幕截图](./media/1804_WindowsCP_Fluent_01.png)
@@ -90,8 +138,8 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日当周
 
-### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 版公司门户应用的用户体验更新<!-- 1412866 -->
-我们向 iOS 版公司门户应用发布了用户体验主要更新。 此更新具有经过完全重新设计的视觉效果，包括现代化的外观。 我们保留了应用的功能，但提高了其可用性和可访问性。  
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 版公司门户应用的用户体验更新 <!-- 1412866 -->
+我们已向 iOS 版公司门户应用发布用户体验主要更新。 此更新具有经过完全重新设计的视觉效果，包括现代化的外观。 我们保留了应用的功能，但提高了其可用性和可访问性。  
 
 你还会看到：
 - 对 iPhone X 的支持。
@@ -105,7 +153,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 |*与上一步结合使用*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
 |![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
 
-### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>改进了 Windows 适用的公司门户应用中的语言<!-- 1683758 -->
+### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>改进了 Windows 适用的公司门户应用中的语言 <!-- 1683758 -->
 我们对 Windows 10 适用的公司门户中的语言进行了改进，使其更加用户友好，并且更适合你的公司。
 
 |以前|完成|
@@ -115,7 +163,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 ## <a name="week-of-march-12-2018"></a>2018 年 3 月 12 日当周
 
-### <a name="company-portal-for-android-visual-updates----976944---"></a>适用于 Android 的公司门户的视觉更新 <!-- 976944 -->
+### <a name="company-portal-for-android-visual-updates----976944---"></a>适用于 Android 的公司门户的视觉对象更新 <!-- 976944 -->
 
 我们已更新适用于 Android 的公司门户应用以遵循 Android 的 [Material Design](https://material.io/)（材料设计）准则。
 
@@ -132,7 +180,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日当周
 
-### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>适用于 Windows 10 的公司门户应用的设置向导中的新“设备类别”步骤<!-- 1335292 -->
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>适用于 Windows 10 的公司门户应用的设置向导中的新“设备类别”步骤 <!-- 1335292 -->
 
 如果已启用[设备组映射](device-group-mapping.md)，则适用于 Windows 10 的公司门户应用现可逐步指导用户在注册其设备后选择设备类别。
 
@@ -140,7 +188,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 ## <a name="week-of-november-13-2017"></a>2017 年 11 月 13 日当周
 
-### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>在适用于 iOS 的公司门户（版本 2.9.0）中对设备设置工作流的改进<!-- 1417174 -->
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>在适用于 iOS 的公司门户（版本 2.9.0）中对设备设置工作流的改进 <!-- 1417174 -->
 
 我们改进了适用于 iOS 的公司门户应用中的设备设置工作流。 语言对用户更加友好，在可能的情况下我们还对屏幕进行了合并。 我们还通过在整个设置文本中使用公司名称使语言特定于你的公司。
 
@@ -160,7 +208,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 ## <a name="week-of-november-6-2017"></a>2017 年 11 月 6 日当周
 
-### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>更新适用于 Windows 10 的公司门户应用<!--1299474-->
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>更新适用于 Windows 10 的公司门户应用 <!--1299474-->
 适用于 Windows 10 的公司门户应用的“设置”页面已更新，以使设置和预期的用户操作在所有设置中更加一致。 其更新也旨在匹配其他 Windows 应用的布局。
 
 |以前|完成|
@@ -168,14 +216,14 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
 
 
-### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>公司门户应用和网站的搜索改进<!-- 1418189 -->
+### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>公司门户应用和网站的搜索改进 <!-- 1418189 -->
 公司门户应用现在可使用跨应用类别、名称和说明的搜索。 结果按相关性呈降序排列。 这些更新在[公司门户网站](https://portal.manage.microsoft.com)中同样可用。
 
 我们仍在努力优化跟踪相关性的方式，因此请使用公司门户网站底部的“反馈”链接向我们反馈当前的运行状况。
 
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日当周
 
-### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>公司门户网站的搜索改进<!-- 1331697 -->
+### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>公司门户网站的搜索改进 <!-- 1331697 -->
 我们正在改进应用搜索功能，首先从[公司门户网站](https://portal.manage.microsoft.com)开始。 除“名称”和“说明”字段外，现在还可按应用类别执行搜索。 结果默认按相关性呈降序排列。 
 
 由于适用于 iOS 的公司门户应用中也包含公司门户网站，因此 iOS 用户也将收到此更改。 适用于 Android 和 Windows 的公司门户应用将在未来几个月中收到类似更新。
@@ -189,7 +237,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日那周
 
-### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>对公司门户中的设备设置工作流的改进<!-- 1490692 -->
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>对公司门户中的设备设置工作流的改进 <!-- 1490692 -->
 我们改进了适用于 Android 的公司门户应用中的设备设置工作流。 语言更贴近你公司的用语习惯，在可能的情况下我们还对屏幕进行了合并。 
 
 |以前|完成|
@@ -218,7 +266,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 ## <a name="week-of-september-11-2017"></a>含 2017 年 9 月 11 日的那周
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 公司门户应用的表述更容易理解 <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>适用于 Android 的公司门户应用的表述更易于理解 <!-- 1396349 -->  
 
 Android 公司门户应用的注册流程进行了简化，新增了文本，更易于最终用户进行注册。 如果有自定义注册文档，则需要更新该文档，反映新的屏幕。 可找到如下所示示例图片：
 
@@ -233,7 +281,7 @@ Android 公司门户应用的注册流程进行了简化，新增了文本，更
 
 ## <a name="august-2017"></a>2017 年 8 月
 
-### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 邮件应用将支持 OAuth<!-- 1196951 -->
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 邮件应用将支持 OAuth <!-- 1196951 -->
 
 在使用 OAuth 的 iOS 设备上，使用 Intune 的条件访问支持更安全的身份验证。 为支持此功能，适用于 iOS 的公司门户应用上现在有一个不同的流，允许更安全的身份验证。 如果最终用户在邮件应用中尝试登录新的 Exchange 帐户，将会看到一个 Web 视图提示。 在 Intune 中注册后，用户会看到提示，要求允许本机邮件应用访问证书。 大多数最终用户不会再看到隔离电子邮件。 现有邮件帐户会继续使用基本身份验证协议，因此仍会收到隔离电子邮件。 最终用户的这种登录体验与 Office 移动应用的登录体验类似。
 
@@ -253,7 +301,7 @@ Android 公司门户应用的注册流程进行了简化，新增了文本，更
 
 
 
-### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>“Intune 移动应用管理”(MAM) 对话框将具有新式界面<!-- 1199015 -->
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>“Intune 移动应用管理”(MAM)”对话框将具有新式界面 <!-- 1199015 -->
 
 更新后，“Intune 移动应用管理”(MAM) 对话框将具有新式外观和体验。 对话框功能与以前相同。
 
@@ -266,7 +314,7 @@ Android 公司门户应用的注册流程进行了简化，新增了文本，更
 ![新式界面](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>适用于 Windows 10 的公司门户应用上“设备详细信息”页的更新<!-- 1287448 -->
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>适用于 Windows 10 的公司门户应用上“设备详细信息”页的更新 <!-- 1287448 -->
 
 适用于 Windows 10 的公司门户应用将标题下的“类别”标签移动至“设备详细信息”页上的一个属性。
 
@@ -274,13 +322,13 @@ Android 公司门户应用的注册流程进行了简化，新增了文本，更
 
 ## <a name="july-2017"></a>2017 年 7 月
 
-### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>应用详细信息页显示 Android 设备的新信息<!--1287476-->
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>应用详细信息页显示 Android 设备的新信息 <!--1287476-->
 
 Android 版“公司门户”应用的应用详细信息页现在会显示 IT 管理员为该应用定义的应用类别。
 
 ![新的应用详细信息页](./media/cp_android_appdetails_after_1708.png)
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验<!--User Story 1132123-->
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>改进了所有平台上跨公司门户应用的登录体验 <!--User Story 1132123-->
 
 我们宣布将在接下来的几个月内推出一项更新，用以提升适用于 Android、iOS 和 Windows 的 Intune 公司门户应用的登录体验。 当 Azure AD 进行此更改时，新的用户体验将自动在公司门户应用的所有平台上显现。 此外，用户可以使用生成的一次性验证码从其他设备立即登录到公司门户。 当用户需要在没有凭据的情况下登录时，这尤为有用。  
 
@@ -351,7 +399,7 @@ __从其他设备登录时的新登录体验__
 
 ![一个 Windows 10 公司门户应用的图像，其中显示新的自动同步状态，同时显示一个状态消息，指示设备正在同步并尝试下载该应用。](./media/w10_download_pending_syncing_after_1706.png)
 
-### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Windows 10 公司门户新的引导式体验<!---1058938--->
+### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Windows 10 公司门户的全新引导式体验 <!---1058938--->
 适用于 Windows 10 的公司门户应用将为尚未被标识或注册的设备提供引导式的 Intune 演练体验。 新体验提供了循序渐进的说明，引导用户完成 AAD 注册（条件性访问功能所需）和 MDM 注册（设备管理功能所需）。 引导式体验可从公司门户主页获取。 如果用户没有完成注册，仍可以继续使用应用，但可用功能受到限制。
 
 此更新仅在运行 Windows 10 周年更新（内部版本 1607）或更高版本的设备上可见。
@@ -373,7 +421,7 @@ __从其他设备登录时的新登录体验__
 
 ![在操作菜单中选择新的“删除公司门户”选项后，将出现一个确认对话图像。 该对话将通知用户“删除公司门户，设备将不再由 IT 管理员管理，并且可能删除对公司数据、公司应用和公司电子邮件的访问权限。” 然后，它会要求用户通过选择“是”确认删除“公司门户”应用。](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>对适用于 iOS 的公司门户应用中应用磁贴的改进<!--1230777-->
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>对适用于 iOS 的公司门户应用中应用磁贴的改进 <!--1230777-->
 我们更新了主页上的应用磁贴设计，以反映你为公司门户设置的品牌颜色。
 
 **之前**
@@ -434,7 +482,7 @@ __从其他设备登录时的新登录体验__
 </body>
 </html>
 
-### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>改进 Windows 10 公司门户应用的应用安装状态 <!--676495-->
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>改进了适用于 Windows 10 的公司门户应用的应用安装状态 <!--676495-->
 现在，Windows 10 公司门户应用在应用详细信息页上提供安装进度栏。 运行 Windows 10 周年更新和更高版本的设备上的现代应用支持此功能。
 
 __之前__![以前版本加载页面的图像，其状态消息仅显示“正在安装”。](./media/cp_win10_install_status_before_1704.png)
@@ -443,18 +491,18 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 
 ## <a name="february-2017"></a>2017 年 2 月
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android 公司门户应用的新用户体验 <!--621622, announced 1702-->
+### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>适用于 Android 的公司门户应用的最新用户体验 <!--621622, announced 1702-->
 从 3 月开始，Android 适用的公司门户应用将按照[材料设计指南](https://material.io/guidelines/material-design/introduction.html)来打造更具现代感的外观。 改进的用户体验包括：
 
 * __颜色__：可以根据自定义调色板对选项卡标头着色。
 
 ![左侧为更新之前的 Android 适用的公司门户应用的图像。 右侧为更新之后的 Android 适用的公司门户应用的图像。 两张图像中都选定了“应用”、“设备”和“联系 IT”三个可用选项卡中的“设备”选项卡。](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __界面__：“应用”选项卡上已更新了“特色应用”和“所有应用”按钮。“搜索”按钮现在是浮动的操作按钮。
+* __界面__：更新了“应用”选项卡中的“特别推荐的应用”和“所有应用”按钮。“搜索”按钮现在是浮动的操作按钮。
 
 ![左侧为更新之前的 Android 适用的公司门户应用的图像。 右侧为更新之后的 Android 适用的公司门户应用的图像。 两张图像中都选定了“应用”、“设备”和“联系 IT”三个可用选项卡中的“应用”选项卡。](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __导航__：“所有应用”以选项卡形式呈现出“特色”、“所有”和“分类”视图，便于导航。 “联系 IT 部门”已经过精简，更加清晰易辨。
+* __导航__：为了更便于导航，“所有应用”以选项卡形式呈现出“特别推荐”、“所有”和“类别”视图。 “联系 IT”已经简化，改善了可读性。
 
 <html>
 <body>
@@ -470,7 +518,7 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 
 ## <a name="january-2017"></a>2017 年 1 月
 
-### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>新式公司门户网站 <!--753980, announced 1701-->
+### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>公司门户网站现代化 <!--753980, announced 1701-->
 从 2 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 为了与其他 Microsoft 产品和服务保持一致，此网站将采用新的对比色配色方案、动态插图和“汉堡”菜单 ![现已添加到公司门户网站左上角的“汉堡”菜单的小图像](./media/CP_hamburger_menu.png) 它包括了支持人员详细联系信息和现有托管设备的信息），这与 Microsoft 其他产品和服务保持一致。 登录页将重新进行排列，以突出显示用户可使用的应用，同时包含特别推荐的应用和最近更新的应用的传送视图。
 
 ![左侧是当前版本的公司门户网站的图像，其中包含之前版本的应用、“我的设备”以及“特别推荐”视图和“类别”视图。 右侧是更新版本的公司门户网站的图像，其中包含刷新的应用轮播、“最近发布”的应用列表和更新的“类别”视图。](./media/CP_Website_BeforeAfter_Feb2016.png)
@@ -479,26 +527,7 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 以下是我们通过更新用户界面提升用户体验的各种方法的计划。
 
 > [!Note]
-> 请注意，以下图像可能是预览版，发布的产品可能与当前版本有所不同。
-
-### <a name="ui-iwp"></a>公司门户网站的新用户体验更新 <!--2000968-->
-
-我们将自 8 月起推出新的公司门户网站体验，向你呈现 UI 更新、简化的工作流和辅助功能改进。 这将包括应用共享等客户驱动的增强功能和改进的整体性能，以便带来更为用户友好的体验。
-
-我们根据客户反馈添加了一些新功能，这些功能将显著提高现有功能和可用性：
-
--   整个网站的 UI 改进
--   共享指向应用的直接链接的功能
-- 改善了大型应用目录的性能
-
-不需要执行任何操作，即可准备好迎接此更改。 更新后的公司门户网站可访问后，我们会通知你。 但是，最终可能需要使用更新后的屏幕截图更新最终用户文档。 请注意，可能还需要更新 iOS 公司门户应用的文档，因为网站驱动 iOS 应用的“应用”部分。  
-
-### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>公司门户网站的用户界面更新 <!--1313244 part 2-->
-
-__对精选应用的更新__ 我们在网站中添加了一个专用页面，用户可在其中浏览精选的应用，还可以对主页的“精选”部分做出一些用户界面调整。
-
-![显示应用的彩色磁贴。 它们是每个应用下方的较大方形，填充颜色取决于应用徽标的主体颜色。 “精选应用”部分在公司门户应用的顶部单独显示。](./media/cp_win10_colorful_tiles_after_1708.png)
-
+> 以下图像可能是预览版且发布的产品可能与当前版本有所不同。  
 
 
 ### <a name="see-also"></a>另请参阅

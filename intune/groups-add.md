@@ -1,6 +1,6 @@
 ---
 title: 添加用于组织用户和设备的组
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 添加组，以便按地理位置、部门或硬件详情来组织用户和设备。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 06/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e7d45c4f1c990123e310c8910e9b7bd3cf0ce4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9e0e3994addf8722adc8606f20517bcd4aeb7acd
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514053"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>添加用于组织用户和设备的组
 Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 Intune 管理员，可以设置适合组织需要的组。 创建组，以便按地理位置、部门或硬件特性来组织用户或设备。 使用组来管理大规模的任务。 例如，可设置用于大量用户的策略，或向一组设备部署应用。
@@ -39,7 +40,7 @@ Intune 使用 Azure Active Directory (AD) 组来管理设备和用户。 作为 
 3. 在 Intune 窗格中，选择“组”，然后在“所有组”窗格中选择“新建组”。
    ![显示“新建组”已选择的 Azure 门户的屏幕截图](./media/groups-add-new.png)
 4. 对于“组类型”，选择下列选项之一：
-    - **安全性**：安全组是用于填充用户组的绝佳资源。 由于安全组定义谁有权访问哪些资源，因此可顺利地转换到 Intune 用户组。 从 Active Directory 同步到 Azure Active Directory 的安全组，或者在 Azure Active Directory 中通过 Office 365 管理中心或 Azure 门户直接创建的安全组，都可用于在 Intune 中创建用户组。
+    - **安全性**：安全组是用于填充用户组的绝佳资源。 由于安全组定义谁有权访问哪些资源，因此可顺利地转换到 Intune 用户组。 在 Intune 中创建用户组时，可使用从 Active Directory 同步到 Azure Active Directory 的安全组，也可使用在 Azure Active Directory 中通过 Microsoft 365 管理中心或 Azure 门户直接创建的安全组。
     - **Office 365**
 
 5. 为新组键入“名称”和“描述”。 这些属性仅出现在管理门户中，并且不会向用户显示。

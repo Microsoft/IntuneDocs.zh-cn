@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/03/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cc29e7bb56c5a5e21264e275cfecf0ea4b0e9273
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501357"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的应用配置策略
 
-使用 Microsoft Intune 中的应用配置策略提供适用于 iOS 或 Android 应用的配置设置。 可利用这些配置设置自定义应用。 无需直接向用户和设备分配这些配置策略。 而是应将配置策略与一个应用相互关联，然后分配该应用。 只要应用检测到配置策略设置（通常在其首次运行时），即会使用它们。
+使用 Microsoft Intune 中的应用配置策略提供适用于 iOS 或 Android 应用的配置设置。 可利用这些配置设置自定义应用。 无需直接向用户或设备分配这些配置策略。 而是应将配置策略与一个应用相互关联，然后分配该应用。 只要应用检测到配置策略设置（通常在其首次运行时），即会使用它们。
 
 可通过将包括和排除分配相结合来向一组用户和设备分配应用配置策略。 添加应用配置策略后，即可设置应用分配策略的配置。 设置策略分配时，可选择包括和排除应用该策略的用户组。 选择包括一个或多个组时，可以选择要包括的特定组或选择内置组。 内置组包括“所有用户”、“所有设备”和“所有用户 + 所有设备”。
 
-例如，应用可能要求指定以下任意详细信息：
+例如，应用配置设置可能要求指定以下任意详细信息：
 
 - 自定义端口号
 - 语言设置
 - 安全设置
 - 公司徽标之类的品牌设置
 
-如果用户输入的这些设置不正确，可能会加重支持人员的负担并降低新应用的采用率。
+如果用户改为输入这些设置，可能会输错，从而可能加重支持人员的负担并降低新应用的采用率。
 
-通过让你在运行应用之前将策略中的这些设置分配给用户，应用配置策略可消除此类问题。 随后这些设置会自动提供，用户无需执行任何操作。
+借助应用配置策略，你可在用户运行应用之前向已分配给他们的策略分配配置设置，从而消除应用设置问题。 随后这些设置会自动提供，用户无需执行任何操作。
 
 只要应用检测到配置设置，即会使用它们。 通常情况下，应用在用户首次运行该应用时检测配置设置。
 

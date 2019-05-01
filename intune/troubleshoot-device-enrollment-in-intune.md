@@ -1,32 +1,34 @@
 ---
 title: 设备注册疑难解答
-description: 有关设备注册问题故障排除的建议。
+titleSuffix: Microsoft Intune
+description: 有关如何排查 Microsoft Intune 中设备注册问题的建议。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509145"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>排查 Intune 中的设备注册问题
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
-本文针对设备注册问题排查提供了相关建议。 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](get-support.md)，了解更多获得帮助的方法。
+本文针对[设备注册](device-enrollment.md)问题排查提供了相关建议。 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](get-support.md)，了解更多获得帮助的方法。
 
 
 ## <a name="initial-troubleshooting-steps"></a>初始故障排除步骤
@@ -100,7 +102,7 @@ ms.locfileid: "57238670"
 
 1.  验证确保已 MDM 机构[设置得当](mdm-authority-set.md)。
     
-2.  验证用户的凭据已与 Azure Active Directory 正确同步。 可以在 Office 365 门户中验证用户的 UPN 是否与 Active Directory 信息相匹配。
+2.  验证用户的凭据已与 Azure Active Directory 正确同步。 可在 Microsoft 365 管理中心验证用户的 UPN 是否与 Active Directory 信息相匹配。
     如果 UPN 与 Active Directory 信息不匹配：
 
     1.  关闭本地服务器上的目录同步。
@@ -131,7 +133,7 @@ ms.locfileid: "57238670"
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名称包含特殊字符，则无法创建策略或注册设备
 **问题：** 无法创建策略或注册设备。
 
-**解决方法：** 在 [Office 365 管理中心](https://portal.office.com/)内，删除公司名称中的特殊字符，并保存公司信息。
+**解决方法：** 在 [Microsoft 365 管理中心](https://admin.microsoft.com/)内，删除公司名称中的特殊字符，再保存公司信息。
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>如果多个域都经过验证，则无法登录或注册设备
 **问题：** 将第二个已验证域添加到 ADFS 时，可能会遇到此问题。 具有第二个域的用户主体名称 (UPN) 后缀的用户可能无法登录门户或注册设备。
@@ -225,7 +227,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 **解决方法 1**：
 
-用户可能可以按照[设备缺少必需证书](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)中的说明操作，检索缺少的证书。 如果错误一直存在，请尝试解决方法 2。
+用户可能可以按照[设备缺少必需证书](/intune-user-help/your-device-is-missing-a-required-certificate-android)中的说明操作，检索缺少的证书。 如果错误一直存在，请尝试解决方法 2。
 
 **解决方法 2**：
 
@@ -492,7 +494,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 |0x80043008、0x80CF3008|未能启动 Microsoft Online Management 更新服务。|请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](get-support.md)中所述。|
 |0x80043009、0x80CF3009|已在服务中注册客户端计算机。|你必须先停用客户端计算机，然后才能在服务中重新注册该客户端计算机。|
 |0x8004300B、0x80CF300B|无法运行客户端软件安装包，因为不支持客户端上运行的 Windows 的版本。|Intune 不支持客户端计算机上运行的 Windows 的版本。|
-|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 排查 DLL 问题时，可能需要使用 [Microsoft 支持 KB198038：用于打包和部署问题的有用工具](https://support.microsoft.com/kb/198038)中描述的工具。|
+|0xAB2|Windows Installer 无法针对自定义操作访问 VBScript 运行时。|此错误是由基于动态链接库 (DLL) 的自定义操作引起的。 排查 DLL 问题时，可能需要使用 [Microsoft 支持 KB198038：针对打包和部署问题的有用工具](https://support.microsoft.com/kb/198038)。|
 |0x80cf0440|到服务终结点的连接已终止。|试用或付费帐户处于挂起状态。 创建一个新的试用或付费帐户，并重新注册。|
 
 

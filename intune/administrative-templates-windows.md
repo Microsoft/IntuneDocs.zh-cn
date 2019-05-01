@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504264"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中用于配置组策略设置的 Windows 10 模板
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>使用 Windows 10 模板在 Microsoft Intune 中配置组策略设置
 
 管理贵组织中的设备时，你希望创建一组应用于不同设备组的设置。 例如，你有多个设备组。 对于 GroupA，要分配一组特定设置。 对于 GroupB，要分配另一组设置。 此外，还需要可配置设置的简单视图。
 
-可以使用 Microsoft Intune 中的“管理模板”完成此任务。 管理模板包括数百个设置，这些设置可控制 Internet Explorer、Microsoft Office 程序和远程桌面中的功能以及对 OneDrive 的访问，并可使用图片密码或 PIN 进行登录等等。 这些模板类似于 Active Directory (AD) 中的组策略 (GPO) 设置，并且是使用 XML 的 [ADMX 支持的设置](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)。 但是，Intune 中的模板 100% 基于云。 它们提供更为简单和直接的方法来配置设置，并可查找所需设置。
+可以使用 Microsoft Intune 中的“管理模板”完成此任务。 管理模板包括数百个设置，这些设置可控制 Internet Explorer、Microsoft Office 程序和远程桌面中的功能以及对 OneDrive 的访问，并可使用图片密码或 PIN 进行登录等等。 这些模板类似于 Active Directory (AD) 中的组策略 (GPO) 设置，是使用 XML 且 [ADMX 支持的设置](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)（打开另一 Docs 站点）。 但是，Intune 中的模板 100% 基于云。 它们提供更为简单和直接的方法来配置设置，并可查找所需设置。
 
 “管理模板”内置于 Intune 中，不需要任何自定义（包括使用 OMA-URI）。 作为移动设备管理 (MDM) 解决方案的一部分，请将这些模板设置用作一站式服务，以管理 Windows 10 设备。
 
 本文列出为 Windows 10 设备创建模板的步骤，并演示如何筛选 Microsoft Intune 中的所有可用设置。 创建模板时，模板会创建设备配置配置文件。 然后，可以将此配置文件分配或部署到贵组织中的 Windows 10 设备。
-
-> [!NOTE]
-> 独立设备支持管理模板。 System Center Configuration Manager (SCCM) 共同托管设备当前不支持管理模板。
 
 ## <a name="create-a-template"></a>创建模板
 
@@ -75,6 +73,8 @@ ms.locfileid: "55833610"
   ![单击“路径”，按字母顺序进行排序](./media/administrative-templates-windows/search-copy-settings.png)
 
   在另一个示例中，搜索 `microsoft word`。 随即便可看到可以为 Microsoft Word 程序设置的所有设置。 搜索 `explorer` 查看所有可以添加到模板的 Internet Explorer 设置。
+
+此功能使用 [Windows 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)（打开另一 Docs 站点）。 CSP 适用于不同版本的 Windows，例如家庭版、专业版和企业版等。 要查看 CSP 是否适用于特定版本，请转到 [Windows 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)（打开另一 Docs 站点）。
 
 ## <a name="next-steps"></a>后续步骤
 

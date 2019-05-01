@@ -9,6 +9,7 @@ ms.date: 05/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: edb07842-6a16-482e-8c1d-541a29e169a8
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d59cc651ace76738c3ad608ab99b7c63f5e1872
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3b499f3171910f28a2d190d28e8ab6e945fa463a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511262"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Intune 中的数据存储和处理
 
@@ -33,7 +34,7 @@ Intune [收集数据](privacy-data-collect.md)后，将执行数据存储和处�
 
 - SQLAzure 
 - 可靠集合 (Service Fabric)  
-- Azure 存储空间 
+- Azure 存储 
 
 遥测数据（服务日志、性能日志、错误等）对于监视和提供稳定服务有关键作用，将发送到 Microsoft 的遥测数据存储中。
 

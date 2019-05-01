@@ -5,37 +5,40 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/01/2018
-ms.topic: article
+ms.date: 4/19/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5bd8bfe0230e4d49ce5ae4372e0f373a014c00ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504192"
 ---
-# <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>为不符合的设备自动发送电子邮件和添加操作 - Intune
+# <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>为 Intune 中不符合要求的设备自动发送电子邮件和添加操作
 
-“针对非符合性的操作功能”可配置一系列以时间排序的操作。 这些操作适用于不满足符合性策略的设备。 
+对于不满足符合性策略或规则的设备，可添加针对非符合性的操作。 此功能会配置一系列按时间顺序排列的操作，例如向最终用户发送电子邮件等。
 
 ## <a name="overview"></a>概述
-默认情况下，当 Intune 检测到不符合的设备时，会立即将设备标记为不符合。 然后 Azure Active Directory (AD) [条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)阻止设备。 设备不符合时，还可使用“针对非符合性的操作”灵活决定要执行的操作。 例如，不立即阻止设备，并给予用户宽限期以符合要求。
+
+默认情况下，当 Intune 检测到不符合的设备时，会立即将设备标记为不符合。 然后 Azure Active Directory (AD) [条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)阻止设备。 当设备不符合要求时，还可通过“针对非符合性的操作”灵活决定要执行的操作。 例如，不立即阻止设备，并给予用户宽限期以符合要求。
 
 有多种类型的操作：
 
-- **向最终用户发送电子邮件**：可先自定义电子邮件通知，再将其发送给最终用户。 可自定义收件人、主题和邮件正文，包括自定义公司徽标和联系人信息。
+- **向最终用户发送电子邮件**：先自定义电子邮件通知，再将其发送给最终用户。 可自定义收件人、主题和邮件正文，包括自定义公司徽标和联系人信息。
 
     此外，Intune 还在电子邮件通知中详细说明了不符合的设备情况。
 
-- **远程锁定非符合性设备**：对于不符合要求的设备，可以发出远程锁定操作。 然后提示用户输入 PIN 或密码以解锁设备。 [远程锁定](device-remote-lock.md)功能的详细信息。 
+- **远程锁定不符合要求的设备**：对于不符合要求的设备，可发出远程锁定操作。 然后提示用户输入 PIN 或密码以解锁设备。 [远程锁定](device-remote-lock.md)功能的详细信息。 
 
-- **将设备标记为不符合**：可在设备被标记为不符合之后创建计划（按天数计划）。 可配置立即采取的措施，也可给予用户宽限期以符合要求。
+- **将设备标记为不符合**：创建在设备被标记为不符合之后要执行的计划时间（天数）。 可配置立即采取的措施，也可给予用户宽限期以符合要求。
 
 本文介绍如何：
 
@@ -72,14 +75,14 @@ ms.locfileid: "52187763"
 
    ![Intune 中符合性通知邮件的示例](./media/actionsfornoncompliance-1.PNG)
 
-4. 在完成信息添加后，选择“创建”。 通知邮件模板已就绪，可供使用。 请注意，作为公司门户品牌的一部分上传的徽标将用于电子邮件模板。 有关公司门户品牌的详细信息，请参阅[公司标识品牌自定义](company-portal-app.md#company-identity-branding-customization)。  
+4. 在完成信息添加后，选择“创建”。 通知邮件模板已就绪，可供使用。 作为公司门户品牌的一部分上传的徽标可用于电子邮件模板。 有关公司门户品牌的详细信息，请参阅[公司标识品牌自定义](company-portal-app.md#company-identity-branding-customization)。
 
 > [!NOTE]
-> 你还可以编辑先前创建的“通知”模板。
+> 还可更改或更新先前创建的现有通知模板。
 
 ## <a name="add-actions-for-noncompliance"></a>添加针对非符合性的操作
 
-创建设备符合性策略时，Intune 会自动为非符合性创建操作。 设备无法满足符合性策略的要求时，此操作将设备标记为不符合。 可自定义将设备标记为不符合的时长。 此操作不可撤消。
+创建设备符合性策略时，Intune 会自动为非符合性创建操作。 如果设备不满足符合性策略的要求，此操作会将设备标记为不符合。 可自定义将设备标记为不符合的时长。 此操作不可撤消。
 
 还可以在创建符合性策略或更新现有策略时添加其他操作。 
 
@@ -99,11 +102,15 @@ ms.locfileid: "52187763"
          - 选择此前创建的“消息模板”
          - 通过选择组输入任何“其他收件人”
     
-    - **远程锁定不符合设备**：设备不符合要求时，锁定该设备。 该操作会强制用户输入 PIN 或密码来解锁设备。 
-    
-    - **计划**：输入非符合性触发用户设备操作的宽限天数（0 - 365 天）。 在此宽限期之后，可以强制执行条件访问策略。 如果输入“0”天，则条件访问将立即生效。 例如，如果设备不符合要求，可以立即阻止其对公司资源的访问。
+    - **远程锁定不符合要求的设备**：当设备不符合要求时，锁定设备。 该操作会强制用户输入 PIN 或密码来解锁设备。 
 
-5. 完成后，选择“添加” > “确定”，保存所做更改。
+    - **停用不符合要求的设备**：当设备不符合要求时，从设备中删除所有公司数据并从 Intune 管理中删除设备。 为防止意外擦除设备，此操作支持的最短计划时间为 30 天。  
+
+    
+5. 配置计划:输入非符合性状态触发用户设备操作之后的宽限天数（0 到 365 天）。 在此宽限期之后，可以强制执行条件访问策略。 如果输入“0”（零）天，则条件访问将立即生效。 例如，如果设备不符合要求，可以立即阻止其对公司资源的访问。
+
+6. 完成后，选择“添加” > “确定”，保存所做更改。
 
 ## <a name="next-steps"></a>后续步骤
-[监控设备符合性活动](device-compliance-monitor.md)。
+
+[监视策略](compliance-policy-monitor.md)。

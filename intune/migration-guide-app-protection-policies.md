@@ -1,5 +1,5 @@
 ---
-title: 在 Intune 迁移过程中配置应用保护策略
+title: 在迁移过程中配置应用保护策略
 titleSuffix: Microsoft Intune
 description: 本文提供在 Microsoft Intune 迁移过程中设置应用保护策略的必要步骤。
 keywords: ''
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 076750334c8faba6e9a99368d7af682b10de8962
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: c516c53c38eb033aa2a9688c40b301bedcc7a034
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508338"
 ---
 # <a name="configure-app-protection-policies-optional"></a>配置应用保护策略（可选）
 

@@ -1,26 +1,29 @@
 ---
-title: 管理 iOS 应用之间的数据传输 | Microsoft Intune
+title: 管理 iOS 应用之间的数据传输
+titleSuffix: Microsoft Intune
 description: 了解如何在 Microsoft Intune 中使用移动应用管理策略来管理应用之间的数据传输。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509499"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输
 
@@ -49,11 +52,15 @@ ms.locfileid: "55229893"
 
 2.  使用下面的常规步骤，通过 Intune 或第三方 MDM 解决方案，部署想要托管的应用和电子邮件配置文件。 示例 1 中也涵盖了这一体验。
 
-3.  使用以下应用配置设置来部署该应用：
+3.  通过托管设备的下列应用配置设置来部署该应用：
 
       键 = IntuneMAMUPN，值 = <username@company.com>
 
       示例：[‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > 在 Intune 中，应用配置策略必须针对“托管设备”这一注册类型。
+       > 此外，如果设为可用，则需要从 Itune 公司门户安装应用；或者根据需要将应用推送到设备。 
 
 4.  使用 Intune 或第三方 MDM 提供程序将“打开方式管理”策略部署到已注册设备。
 

@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515417"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot（预览版）部署加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置加入混合 Azure Active Directory (Azure AD) 的设备。 为此，请执行本文中的步骤。
@@ -36,6 +37,7 @@ ms.locfileid: "57238177"
 - 可以访问 Internet。
 - 可以访问 Active Directory（不支持 VPN 连接）。
 - 体验全新体验 (OOBE)。
+- 能够对尝试加入的域的域控制器执行 ping 操作。
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>设置 Windows 10 自动注册
 
@@ -119,7 +121,7 @@ ms.locfileid: "57238177"
 
 ### <a name="configure-web-proxy-settings"></a>配置 Web 代理设置
 
-如果网络环境中有 Web 代理，请参阅[使用现有的本地代理服务器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)，确保适用于 Active Directory 的 Intune 连接器正常工作。
+如果网络环境中有 Web 代理，请参阅[使用现有的本地代理服务器](autopilot-hybrid-connector-proxy.md)，确保适用于 Active Directory 的 Intune 连接器正常工作。
 
 
 ## <a name="create-a-device-group"></a>创建设备组
@@ -210,6 +212,9 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 1. 选择“确定” > “创建”。  
     此时，配置文件创建完成，并显示在列表中。
 1. 要分配配置文件，请按照[分配设备配置文件](device-profile-assign.md#assign-a-device-profile)下的步骤操作。 
+
+> [!NOTE]
+> 对于混合 Azure AD 联接而言，Windows Autopilot 的命名功能不支持 %SERIAL% 等变量，仅支持使用计算机名称前缀。
 
 ## <a name="next-steps"></a>后续步骤
 

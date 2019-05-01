@@ -10,6 +10,7 @@ ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9b0cb07e6dcf192aa25c13e8637934c46d6799
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 65c19f58e41e4f8a739ae16a1b56703fb743b738
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513080"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -30,7 +31,7 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
 
 ## <a name="prerequisites"></a>必备条件
 - [已启用的 Windows 自动注册](windows-enroll.md#enable-windows-10-automatic-enrollment)
-- [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>如何获取用于在 Intune 中导入的 CSV
 
@@ -102,6 +103,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 2. 在特定的配置文件边栏选项卡中，选择“分配”。 
 3. 选择“选择组”，在“选择组”边栏选项卡中，选择一个或多个要向其分配配置文件的组，再选择“选择”。
 
+
 > [!NOTE]
 > Intune 将定期检查分配组中的新设备，然后开始将配置文件分配到这些设备的过程。 此过程可能需要几分钟才能完成。 部署设备前，请确保此过程已完成。  可以在“设备注册”>“Windows 注册”>“设备”下进行检查，其中应该看到配置文件状态从“未分配”更改为“正在分配”，并最终更改为“已分配”。
 
@@ -117,7 +119,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 > [!NOTE]
 > 对配置文件的更改应用于分配有此配置文件的设备。 但是，需在设备重置并重新注册之后，已更新的配置文件才可应用于已在 Intune 中注册的设备。
 
-## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows Autopilot 未分配设备警报 <!-- 163236 -->  
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>针对 Windows Autopilot 未分配设备的警报  <!-- 163236 -->  
 
 警报将显示没有 Autopilot 部署配置文件的 Autopilot 程序设备数。 使用警报中的信息可创建配置文件，并将其分配到未分配的设备。 单击警报时，可看到 Windows Autopilot 设备的完整列表，以及与之相关的详细信息。
 

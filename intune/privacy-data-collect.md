@@ -6,21 +6,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eede87fdca31e8e263d1dea78d766fec59f05f58
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511296"
 ---
 # <a name="data-collection-in-intune"></a>Intune 中的数据收集
 
@@ -129,8 +131,8 @@ Intune 收集的聚合数据可能包括但不限于以下内容：
     - 已安装的设备数
     - installedDeviceCount：已安装该应用程序的设备数。
     - notApplicableDeviceCount：无法使用该应用程序的设备数。
-    - notInstalledDeviceCount：可以使用该应用程序但是尚未安装的设备数。
-    - pendingInstallDeviceCount：可以使用该应用程序但是还在等待安装的设备数。
+    - notInstalledDeviceCount：可使用该应用程序但是尚未安装的设备数。
+    - pendingInstallDeviceCount：可使用该应用程序但是还在等待安装的设备数。
     
 ## <a name="next-steps"></a>后续步骤
 

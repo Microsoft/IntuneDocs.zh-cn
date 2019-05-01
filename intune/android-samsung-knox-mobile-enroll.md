@@ -1,27 +1,29 @@
 ---
 title: 使用 Samsung 的 Knox Mobile Enrollment 自动注册 Android 设备
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何使用 Samsung KME 注册 Android 设备
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 47627bc9f223c301fd04b88c0080b3a6fea26fe8
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3f753b959d7b2c64358abd92f4276a8e7f55c0f6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503994"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -63,7 +65,7 @@ ms.locfileid: "53032448"
 |-------------------|-----------|-------| 
 |MDM Server URI     | 否        |将其留空。 
 |配置文件名称       | 是       |输入选择的配置文件名称。 
-|说明        | 否        |输入说明配置文件的文本。 
+|描述        | 否        |输入说明配置文件的文本。 
 |MDM 代理 APK      | 是       |https://aka.ms/intune_kme_deviceowner 
 |将此应用设置为 Google 设备所有者 | 是 | 选择此选项以注册到 Android Enterprise。 
 |支持的 MDM      | 是       |Microsoft Intune 
@@ -111,7 +113,7 @@ ms.locfileid: "53032448"
 >用户关联仅适用于 Android 注册。 在定义用户关联后，只有关联的用户才可以使用 KME 来注册设备。 即使对设备恢复出厂设置后，也是如此。 当未在 Knox 门户中定义用户关联时，拥有有效 Intune 许可证的任何用户都可以使用 KME 来注册设备。
 >
 
-## <a name="distribute-devices"></a>分发设备
+## <a name="distribute-devices"></a>分配设备
 
 创建和分配 MDM 配置文件后，关联用户名称并在 Intune 中将设备标识为“公司自有”，可以向用户分配设备。
 

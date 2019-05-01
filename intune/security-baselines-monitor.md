@@ -5,67 +5,81 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b853d42efc247f6080cc4ed6ad8b4943b85b3215
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506941"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>在 Microsoft Intune 中监视安全基线和配置文件
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中监视安全基线和配置文件  
 
-使用安全基线时，有不同的监视选项可用。 可以监视应用到用户和设备的安全基线配置文件。 还可以监视实际基线，以及与建议值匹配（或不匹配）的任何设备。
+Intune 提供了用于监视安全基线的多个选项。 可以监视应用到用户和设备的安全基线配置文件。 还可以监视实际基线，以及与建议值匹配（或不匹配）的任何设备。
 
 本文介绍了这两个监视选项。
 
 [Intune 中的安全基线](security-baselines.md)详细介绍了 Microsoft Intune 中的安全基线功能。
 
-## <a name="monitor-the-baseline-and-your-devices"></a>监视基线和设备
+## <a name="monitor-the-baseline-and-your-devices"></a>监视基线和设备  
 
-监视基线时，你根据 Microsoft 的建议深入了解设备的安全状态。
+监视基线时，你根据 Microsoft 的建议深入了解设备的安全状态。 可以在 Intune 控制台的安全基线的“概述”窗格中查看这些见解。  首次分配基线后，最多 24 小时后会显示数据。 之后进行的更改最多六个小时后会显示。  
 
-> [!NOTE]
-> 在基线首次分配后，报告最多可能需要 24 小时才能更新。 此后，报告最多可能需要 6 小时才能更新。
+若要查看基线和设备的监视数据，请登录到 [Intune 门户](https://aka.ms/intuneportal)。 接下来，选择“安全基线 (预览)”，然后选择“基线”，查看“概述”窗格。
 
-1. 在 [Azure 门户](https://portal.azure.com/)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 依次选择“安全基线(预览版)”和基线。
-3. “概览”中的图显示有多少台设备受选定基线影响，以及不同的状态：
+“概述”窗格提供两种监视状态的方法：
+- **设备视图** - 基线的每个状态类别中的设备数量摘要。  
+- **按类别** - 一个视图，显示基线中的每个类别，并包含每个基线类别的每个状态组的设备百分比。 
 
-    ![检查设备状态](./media/security-baselines-monitor/overview.png)
+每个设备由以下状态之一表示，这些状态同时在“设备”视图和“按类别”视图中使用：  
+- **匹配基线** - 基线中的所有设置与建议的设置匹配。
+- **不匹配基线** - 基线中至少有一个设置与建议的设置不匹配。
+- **错误配置** - 至少一个设置未正确配置。 此状态表示设置处于冲突、错误或挂起状态。
+- **不适用** - 至少一个设置不适用且未应用。
 
-    图中显示以下状态：
 
-    - **与基线匹配**：基线中的所有设置与建议的设置匹配。
-    - **与基线不匹配**：基线中至少有一个设置与建议的设置不匹配。
-    - **错误配置**：至少一个设置未正确配置。 此状态表示设置处于冲突、错误或挂起状态。
-    - **不适用**：至少一个设置不适用且未应用。
+### <a name="device-view"></a>设备视图
+“概述”窗格显示具有特定基线状态的设备数量的图表型摘要；已分配的 Windows 10 设备的安全基线状态。  
 
-4. 选择设备数字不是零的状态之一。 例如，选择“错误配置”状态。
+![检查设备状态](./media/security-baselines-monitor/overview.png)
 
-5. 此时，系统列出有此状态的所有设备。 选择特定设备可以获取更多详细信息。 
+当某设备具有基线中不同类别的不同状态时，该设备由单个状态表示。 用于表示设备的状态按以下优先顺序进行选择：错误配置、不匹配基线、不适用、匹配基线。  
 
-    在下面的示例中，依次选择“设备配置”和有“错误”状态的配置文件：
+例如，如果某设备有一个设置的类别为“错误配置”，且有一个或多个设置的类别为“不匹配基线”，则该设备的类别为“错误配置”。  
 
-    ![检查设备状态](./media/security-baselines-monitor/device-configuration-profile-list.png)
+可以单击图表以深入了解和查看各种状态的设备的列表。 然后，可以从该列表中选择设备，查看其详细信息。 例如：
+- 选择“设备配置”，然后选择状态为“错误”的配置文件：
 
-    选择有“错误”状态的配置文件。 此时，系统列出配置文件中的所有设置及其状态。 现在，可以滚动查找导致错误出现的设置：
+  ![检查设备状态](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![查看导致错误的设置](./media/security-baselines-monitor/profile-with-error-status.png)
+- 选择有“错误”状态的配置文件。 此时，系统列出配置文件中的所有设置及其状态。 现在，可以滚动查找导致错误出现的设置：
+
+  ![查看导致错误的设置](./media/security-baselines-monitor/profile-with-error-status.png)
 
 使用此报告查看配置文件中导致问题出现的任何设置。 此外，还能获取部署到设备的策略和配置文件的更多详细信息。
 
 > [!NOTE]
 > 如果基线中的属性设置为“未配置”，此设置会遭忽略，且不会强制实施任何限制。 此属性不会显示在任何报告中。
+
+### <a name="per-category-view"></a>“按类别”视图
+“概述”窗格显示基线的“按类别”图表；按类别显示的安全基线状态。  此视图显示基线中的每个类别，并标识归入每个类别各个状态的设备的百分比。 
+ 
+![按类别显示的状态视图](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+不显示“匹配基线”状态，直到 100% 的设备都报告了该类别的状态。   
+
+可以通过选择列顶部的上下箭头图标，按每个列对按类别显示的视图进行排序。  
+
 
 ## <a name="monitor-the-profile"></a>监视配置文件
 

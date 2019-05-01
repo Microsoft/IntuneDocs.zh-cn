@@ -1,15 +1,16 @@
 ---
-title: 将 Win32 应用添加到 Microsoft Intune
-titlesuffix: ''
-description: 了解如何通过 Microsoft Intune 添加、交付和管理 Win32 应用。 本主题概述了 Intune Win32 应用交付和管理功能，以及 Win32 应用疑难解答信息。
+title: 向 Microsoft Intune 添加并分配 Win32 应用
+titleSuffix: ''
+description: 了解如何通过 Microsoft Intune 添加、分配和管理 Win32 应用。 本主题概述了 Intune Win32 应用交付和管理功能，以及 Win32 应用疑难解答信息。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2019
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
@@ -17,37 +18,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a2abee2e926605a4d7d35baa53f6259ef77db3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
+ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62426147"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 独立版 - Win32 应用管理
 
-Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接的客户可以使用 Configuration Manager 进行 Win32 应用管理，但只使用 Intune 的客户将拥有更强大的 Win32 业务线 (LOB) 应用管理功能。 本主题概述了 Intune Win32 应用管理功能和疑难解答信息。
+[Intune 独立版](mdm-authority-set.md)现拥有更强大的 Win32 应用管理功能。 虽然云连接的客户可以使用 Configuration Manager 进行 Win32 应用管理，但只使用 Intune 的客户将拥有更强大的 Win32 业务线 (LOB) 应用管理功能。 本主题概述了 Intune Win32 应用管理功能和疑难解答信息。
+
+> [!NOTE]
+> 此应用管理功能支持适用于 Windows 应用程序的 32 位和 64 位操作系统体系结构。
 
 ## <a name="prerequisites"></a>必备条件
 
+要使用 Win32 应用管理，请确保满足以下条件：
+
 - Windows 10 版本 1607 或更高版本（企业版、专业版和教育版）
 - Windows 10 客户端需要： 
-    - 已联接到 Azure Active Directory (AAD) 或混合 Azure Active Directory，且
-    - 在 Intune（MDM 托管）中注册
-- Windows 应用程序大小的上限为每个应用 8 GB
+    - 设备必须加入 Azure AD 并进行自动注册。 Intune 管理扩展支持已加入 Azure AD、已加入混合域和已注册组策略的设备。 
+    > [!NOTE]
+    > 对于已注册组策略的情况，最终用户使用本地用户帐户将 Windows 10 设备加入 AAD。 用户必须使用其 AAD 用户帐户登录设备并注册 Intune。 如果 PowerShell 脚本或 Win32 应用以用户或设备为目标，Intune 将在设备上安装 Intune 管理扩展。
+- Windows 应用程序大小的上限为每个应用 8 GB。
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>准备 Win32 应用内容以进行上传
 
-使用 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)以预处理 Win32 应用。 该工具将应用程序安装文件转换为 .intunewin 格式。 该工具还检测 Intune 所需的某些属性，以确定应用程序安装状态。 在应用安装程序文件夹上使用此工具后，你将能够在 Intune 控制台中创建 Win32 应用。
+使用 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)预处理 Windows 经典 (Win32) 应用。 该工具将应用程序安装文件转换为 .intunewin 格式。 该工具还检测 Intune 所需的某些属性，以确定应用程序安装状态。 在应用安装程序文件夹上使用此工具后，你将能够在 Intune 控制台中创建 Win32 应用。
 
-可从 GitHub 下载 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)。
+> [!IMPORTANT]
+> [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)在创建 .intunewin 文件时压缩所有文件和子文件夹。 确保将 Microsoft Win32 内容准备工具与安装程序文件和文件夹分开，这样就不会在 .intunewin 文件中包含该工具或其他不必要的文件和文件夹。
+
+可从 GitHub 以 zip 文件形式下载 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)。 压缩文件包含名为 Microsoft-Win32-Content-Prep-Tool-master 的文件夹。 该文件夹包含准备工具、许可证、自述文件和发行说明。 
+
+### <a name="process-flow-to-create-intunewin-file"></a>.intunewin 文件的创建流程
+
+   ![.intunewin 文件的创建流程](./media/prepare-win32-app.svg)
+
+### <a name="run-the-microsoft-win32-content-prep-tool"></a>运行 Microsoft Win32 内容准备工具
+
+如果在没有参数的情况下通过命令窗口运行 `IntuneWinAppUtil.exe`，该工具将指导你逐步输入所需参数。 或者，可以根据以下可用命令行参数向命令添加参数。
 
 ### <a name="available-command-line-parameters"></a>可用的命令行参数 
 
 |    **命令行参数**    |    **描述**    |
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    帮助    |
-|    `-c <setup_folder>`     |    所有安装程序文件的安装程序文件夹。    |
+|    `-c <setup_folder>`     |    所有安装程序文件的文件夹。 此文件夹中的所有文件将压缩为 .intunewin 文件。    |
 |   ` -s <setup_file>`     |    安装程序文件（如 setup.exe 或 setup.msi）。    |
 |    `-o <output_folder>`     |    生成的 .intunewin 文件的输出文件夹。    |
 |    `-q`       |    安静模式    |
@@ -57,7 +75,7 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 |    **示例命令**    |    **描述**    |
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    该命令将显示工具的使用信息。    |
-|    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    此命令将从指定的源文件夹和安装文件生成 `.intunewin` 文件。 对于 MSI 安装文件，此工具将检索 Intune 所需的信息。 如果指定了 `-q`，则命令将以安静模式运行；如果输出文件已存在，则将覆盖该命令。 此外，如果输出文件夹不存在，将自动创建该文件夹。    |
+|    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    此命令将从指定的源文件夹和安装文件生成 `.intunewin` 文件。 对于 MSI 安装文件，此工具将检索 Intune 所需的信息。 如果指定了 `-q`，则命令将以安静模式运行；如果输出文件已存在，则将覆盖该命令。 此外，如果输出文件夹不存在，将自动创建该文件夹。    |
 
 生成 .intunewin 文件时，将需要引用的任何文件置于安装程序文件夹的子文件夹中。 然后，使用相对路径引用所需的特定文件。 例如：
 
@@ -68,7 +86,15 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>创建、分配和监视 Win32 应用
 
-与业务线 (LOB) 应用一样，可以向 Microsoft Intune 添加 Win32 应用。 此类应用通常由内部或第三方编写。 以下步骤提供指导，以帮助将 Windows 应用添加到 Intune。
+与业务线 (LOB) 应用一样，可以向 Microsoft Intune 添加 Win32 应用。 此类应用通常由内部或第三方编写。 
+
+### <a name="process-flow-to-add-a-win32-app-to-intune"></a>将 Win32 应用添加到 Intune 的流程
+
+   ![将 Win32 应用添加到 Intune 的流程](./media/add-win32-app.svg)
+
+### <a name="add-a-win32-app-to-intune"></a>将 Win32 应用添加到 Intune
+
+以下步骤提供指导，以帮助将 Windows 应用添加到 Intune。
 
 ### <a name="step-1-specify-the-software-setup-file"></a>步骤 1：指定软件安装程序文件
 
@@ -113,7 +139,11 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 1.  在“添加应用”窗格中，选择“程序”以配置应用的安装和删除命令。
 2.  添加用于安装应用的完整安装命令行。 
 
-    例如，如果应用文件名为“MyApp123”，请添加以下内容：`msiexec /i “MyApp123.msi”`
+    例如，如果应用文件名为“MyApp123”，请添加以下内容：<br>
+    `msiexec /p “MyApp123.msp”`<p>
+    此外，如果应用程序为 `ApplicationName.exe`，命令将为应用程序名称，后跟程序包支持的命令参数（开关）。 <br>例如：<br>
+    `ApplicationName.exe /quite`<br>
+    在上述命令中，`ApplicaitonName.exe` 程序包支持 `/quite` 命令参数。<p> 如需获取应用程序包支持的特定参数，请联系应用程序供应商。
 
 3.  添加根据应用的 GUID 卸载应用的完整卸载命令行。 
 
@@ -129,14 +159,32 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 ### <a name="step-5-configure-app-requirements"></a>步骤 5：配置应用要求
 
 1.  在“添加应用”窗格中，选择“要求”以配置设备在安装应用之前必须满足的要求。
-2.  在“要求”窗格中，配置以下信息。 此窗格中的某些值可能已自动填充。
+2.  在“添加要求规则”窗格中，配置以下信息。 此窗格中的某些值可能已自动填充。
     - **操作系统体系结构**：选择安装应用所需的体系结构。
     - **最低操作系统**：选择安装应用所需的最低操作系统。
     - **所需的磁盘空间(MB)**：添加系统驱动器上安装应用所需的可用磁盘空间（可选）。
     - **所需的物理内存(MB)**：添加安装应用所需的物理内存 (RAM)（可选）。
     - **所需的逻辑处理器的最小数**：添加安装应用所需的最小逻辑处理器数（可选）。
     - **所需的最低 CPU 速度 (MHz)**：添加安装应用所需的最低 CPU 速度（可选）。
-3.  完成后，选择“确定”。
+
+3. 单击“添加”以显示“添加要求规则”边栏选项卡，并配置其他要求规则。 选择“要求类型”，以选择将用于确定如何验证要求的规则类型。 要求规则可以基于文件系统信息、注册表值和 PowerShell 脚本。 
+    - **文件**：选择“文件”作为“要求类型”时，要求规则必须检测文件或文件夹、日期、版本或大小。 
+        - **路径** - 包含要检测的文件或文件夹的文件夹完整路径。
+        - **文件或文件夹** - 要检测的文件或文件夹。
+        - **属性** - 选择用于验证应用是否存在的规则类型。
+        - **与 64 位客户端上的 32 位应用程序相关联** - 选择“是”以展开 64 位客户端上的 32 位上下文中的任何路径环境变量。 选择“否”（默认值），展开 64 位客户端上的 64 位上下文中的任何路径变量。 32 位客户端将始终使用 32 位上下文。
+    - **注册表**：选择“注册表”作为“要求类型”时，要求规则必须根据值、字符串、整数或版本检测注册表设置。
+        - **密钥路径** - 包含要检测的值的注册表项的完整路径。
+        - **值名称** - 要检测的注册表值的名称。 如果此值为空，则将对密钥进行检测。 如果检测方法不是文件或文件夹存在，则密钥的（默认）值将用作检测值。
+        - **注册表项要求** – 选择用于确定如何验证要求规则的注册表项比较的类型。
+        - **与 64 位客户端上的 32 位应用相关联** -选择“是”，搜索 64 位客户端上的 32 位注册表。 选择“否”（默认值），搜索 64 位客户端上的 64 位注册表。 32 位客户端将始终搜索 32 位注册表。
+    - **脚本**：如果在 Intune 控制台中无法根据提供给你的文件、注册表或其他任何方法创建要求规则，请选择“脚本”作为“要求类型”。
+        - **脚本文件** – 对于基于 PowerShell 脚本的要求规则，如果存在代码为 0，则将更详细地检测 STDOUT。 例如，在整数值为 1 时，可以检测 STDOUT。
+        - **在 64 位客户端上以 32 位进程形式运行脚本** - 选择“是”，在 64 位客户端上以 32 位进程运行脚本。 选择“否”（默认值），在 64 位客户端上以 64 位进程运行该脚本。 32 位客户端在 32 位进程中运行该脚本。
+        - **使用登录凭据运行此脚本**：选择“是”，使用登录设备凭据运行脚本**。
+        - **强制执行脚本签名检查** - 选择“是”，验证脚本已由受信任的发布者签名，这将允许脚本在没有显示警告或提示的情况下运行。 该脚本将运行畅通。 选择“否”（默认值），运行无需签名验证的最终用户确认脚本。
+        - **选择输出数据类型**：选择确定要求规则是否匹配时所用的数据类型。
+4.  完成后，选择“确定”。
 
 ### <a name="step-6-configure-app-detection-rules"></a>步骤 6：配置应用检测规则
 
@@ -231,9 +279,39 @@ Intune 独立版拥有更强大的 Win32 应用管理功能。 虽然云连接�
 
 此时已完成将 Win32 应用添加到 Intune 的步骤。 有关应用分配和监视的详细信息，请参阅[使用 Microsoft Intune 将应用分配到组](https://docs.microsoft.com/intune/apps-deploy)和[使用 Microsoft Intune 监视应用信息和分配](https://docs.microsoft.com/intune/apps-monitor)。
 
+## <a name="app-dependencies"></a>应用依赖项
+
+应用依赖项是在能够安装 Win32 应用前必须安装的应用程序。 可以要求将其他应用作为依赖项安装。 具体来说，设备必须先安装相关应用，再安装 Win32 应用。 最多有 100 个依赖项，其中包括任何已包含的依赖项，以及应用本身的依赖项。 仅在向 Intune 添加并上传 Win32 应用之后，才可以添加 Win32 应用依赖项。 添加 Win32 应用之后，Win32 应用的边栏选项卡上将显示“依赖项”选项。 
+
+> [!NOTE]
+> 只有在 Intune 管理代理升级到 1904 版本（1.18.120.0 之后的版本）后的一到两周才能使用应用依赖项功能。
+
+添加应用依赖项时，可以根据应用名称和发布者进行搜索。 此外，还可根据应用名称和发布者对已添加的依赖项进行排序。 在已添加的应用依赖项列表中无法选中之前添加的应用依赖项。 
+
+可以选择是否自动安装每个相关应用。 每个依赖项的“自动安装”选项默认设置为“是”。 即使相关应用的目标不是用户或设备，Intune 也将通过自动安装相关应用，在设备上安装满足依赖关系的应用，然后安装 Win32 应用。 务必注意，依赖项可具有递归子依赖项，并且将先安装每个子依赖项，然后安装主依赖项。 此外，依赖项的安装不遵循给定依赖项级别的安装顺序。
+
+要向 Win32 应用添加应用依赖项，请按以下步骤操作：
+
+1. 在 Intune 中，选择“客户端应用” > “应用”，查看已添加客户端应用的列表。 
+2. 选择已添加的“Windows 应用(Win32)”应用。 
+3. 选择“依赖项”，添加在安装 Win32 应用之前必须安装的相关应用。 
+4. 单击“添加”添加应用依赖项。
+5. 添加相关应用之后，单击“选择”。
+6. 通过在“自动安装”下选择“是”或“否”，选择是否自动安装相关应用。
+7. 单击 **“保存”**。
+
+最终用户将看到 Windows Toast 通知，其中指出了在 Win32 应用安装过程中下载和安装的相关应用。 此外，如果未安装相关应用，最终用户通常会看到下列其中一条通知：
+- 1 个或多个相关应用无法安装
+- 1 个或多个相关应用要求不满足
+- 1 个或多个相关应用等待设备重启
+
+如果不选择“自动安装”依赖项，将不会尝试安装 Win32 应用。 此外，应用报告将显示标记为 `failed` 的依赖项，并提供失败原因。 可以单击 Win 32 应用[安装详细信息](troubleshoot-app-install.md#win32-app-installation-troubleshooting)中提供的失败消息（或警告），查看依赖项安装失败的信息。 
+
+每个依赖项将遵循 Intune Win32 应用重试逻辑（等待 5 分钟后尝试安装 3 次）和全局重新评估计划。 此外，依赖项仅在设备上安装 Win32 应用时适用。 依赖项在卸载 Win32 应用时不适用。 要删除依赖项，必须单击依赖项列表行末的相关应用左侧的椭圆形（三个点）。 
+
 ## <a name="delivery-optimization"></a>传递优化
 
-Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用传递优化组件下载 Intune Win32 应用内容。 传递优化提供了在默认情况下处于打开状态的对等功能。 可以通过组策略配置传递优化，以后可以通过 Intune MDM 进行配置。 有关详细信息，请参阅[适用于 Windows 10 的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。 
+Windows 10 1709 及更高版本的客户端将在 Windows 10 客户端上使用传递优化组件下载 Intune Win32 应用内容。 传递优化提供了在默认情况下处于打开状态的对等功能。 传递优化可通过组策略和 Intune 设备配置进行配置。 有关详细信息，请参阅[适用于 Windows 10 的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。 
 
 ## <a name="install-required-and-available-apps-on-devices"></a>在设备上安装必需和可用应用
 
@@ -246,12 +324,27 @@ Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用�
 ![通知用户正在进行应用更改的屏幕截图](./media/apps-win32-app-09.png)    
 
 ## <a name="toast-notifications-for-win32-apps"></a>Win32 应用的 Toast 通知 
-如需要，可以隐藏每个应用分配的最终用户 Toast 通知。 在 Intune 中，选择“客户端应用” > “应用”> 选择该应用 >“分配” > “包括组”。 
+如需要，可以隐藏每个应用分配的最终用户 Toast 通知。 在 Intune 中，依次选择“客户端应用” > “应用”> 应用 >“分配” > “包括组”。 
+
+> [!NOTE]
+> 在未注册设备上不会卸载已安装 Intune 管理扩展的 Win32 应用。 管理员可利用分配排除避免向 BYOD 设备提供 Win32 应用。
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 应用问题的疑难解答
-客户端计算机上的代理日志通常位于 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可利用 `CMTrace.exe` 查看这些日志文件。 可从 [SCCM 客户端工具](https://docs.microsoft.com/sccm/core/support/tools)下载 CMTrace.exe。 
+客户端计算机上的代理日志通常位于 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可利用 `CMTrace.exe` 查看这些日志文件。 从 [Configuration Manager 客户端工具](https://docs.microsoft.com/sccm/core/support/tools)可以下载 CMTrace.exe。 
 
 ![客户端计算机上代理日志的屏幕截图](./media/apps-win32-app-10.png)    
+
+> [!IMPORTANT]
+> 为了能够正确安装和执行 LOB Win32 应用，反恶意软件设置应不扫描以下目录：<p>
+> **在 X64 客户端计算机上**：<br>
+> C:\Program Files (x86)\Microsoft Intune Management Extension\Content<br>
+> C:\windows\IMECache
+>  
+> **在 X86 客户端计算机上**：<br>
+> C:\Program Files\Microsoft Intune Management Extension\Content<br>
+> C:\windows\IMECache
+
+有关对 Win32 应用进行故障排除的更多信息，请参阅 [Win32 应用安装故障排除](troubleshoot-app-install.md#win32-app-installation-troubleshooting)。
 
 ### <a name="troubleshooting-areas-to-consider"></a>故障排除需要考虑的方面
 - 检查目标以确保设备上已安装代理 - 面向组的 Win32 应用或 PowerShell 脚本将为安全组创建代理安装策略。

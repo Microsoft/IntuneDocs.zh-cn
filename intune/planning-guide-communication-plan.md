@@ -1,27 +1,29 @@
 ---
 title: 制定推出通信计划
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文可帮助用户为 Microsoft Intune 部署制定推出通信计划。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513284"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>制定推出通信计划
 
@@ -55,7 +57,7 @@ ms.locfileid: "52179810"
 
 提供几种可用来向目标组织组和用户传达 Intune 推出信息的传递方法。 以下列表展示了一些示例及可应用该方法的波次：
 
--   用于“启动”波次的组织范围内的面对面会议或 Skype 会议
+-   整个组织中针对启动阶段的面对面会议或 Microsoft Teams 会议
 
 -   用于“预注册”、“注册”和“注册后”波次的电子邮件
 

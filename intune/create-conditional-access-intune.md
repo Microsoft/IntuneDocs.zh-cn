@@ -1,33 +1,34 @@
 ---
 title: 使用 Intune 设置基于设备的条件访问
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何根据 Microsoft Intune 设备符合性和移动应用管理创建基于设备的条件访问策略。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508603"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>创建基于设备的条件访问策略
 
-使用 Intune，可以通过向访问控制添加移动设备符合性来增强 Azure Active Directory 中的条件访问。 一旦创建了 Intune 符合性策略（该策略定义设备的符合性需求），就可以使用设备的符合性状态来允许或阻止对应用程序和服务的访问。 可以通过创建使用“要求设备标记为兼容”设置的条件访问策略来实现这一点。 
+使用 Intune，可以通过向访问控制添加移动设备符合性来增强 Azure Active Directory 中的条件访问。 一旦创建了 Intune 符合性策略（该策略定义设备的符合性需求），就可以使用设备的符合性状态来允许或阻止对应用程序和服务的访问。 可以通过创建使用“要求设备标记为兼容”设置的条件访问策略来实现这一点。  
 
-条件访问策略指定要保护的应用或服务，可以访问应用或服务的条件，以及向其应用策略的用户。 条件访问是 Azure AD 的一项高级功能，可以在 Azure Active Directory 中配置，但也可以在 Intune 门户中设置这些相同的策略。 
+条件访问策略指定要保护的应用或服务，可以访问应用或服务的条件，以及向其应用策略的用户。 条件访问是 Azure AD 的一项高级功能，可以在 Azure Active Directory 中配置，但也可以在 Intune 门户中设置这些相同的策略。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同。  
 
 > [!IMPORTANT]
 > 在设置条件访问之前，需要设置 Intune 设备符合性策略，以便根据设备是否满足特定需求对其进行评估。 请参阅 [Intune 中的设备符合性策略入门](device-compliance-get-started.md)。

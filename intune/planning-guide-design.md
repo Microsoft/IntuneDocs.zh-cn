@@ -1,15 +1,16 @@
 ---
 title: 创建 Microsoft Intune 设计
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文可帮助为 Microsoft Intune 仅限云设计和实现创建设计。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22af3d4de296d90a89bb3d812cab0e55983e786b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512696"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -110,6 +111,10 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](planning-g
 
 Intune 提供两个部署选项：独立和混合。 “独立”是指在云中运行的 Intune 服务，“混合”是指 Intune 与 System Center Configuration Manager 的集成。 本指南主要用于使用独立选项。 [决定哪个选项适合你的业务需求](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
 
+> [!Important]
+>已弃用载入新的混合 MDM 客户这一功能。 有关详细信息，请参阅博客文章[从混合移动设备管理移动到 Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)。
+
+
 ## <a name="intune-tenant-location"></a>Intune 租户位置
 
 如果组织拥有全球布局，请确保在订阅服务时规划租户所在的位置。 首次注册 Intune 订阅并映射到下面所列的全球各区域时，将定义国家/地区：
@@ -133,7 +138,7 @@ Intune 提供两个部署选项：独立和混合。 “独立”是指在云中
 
 -   公钥基础结构 (PKI)
 
-接下来我们详细探讨一下这些常见的外部依赖关系
+接下来，让我们详细探讨一下这些常见的外部依赖关系。
 
 ### <a name="identity"></a>标识
 
@@ -399,11 +404,9 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定符合性策略需求。
 #### <a name="conditional-access-policies"></a>条件性访问策略
 
-使用条件访问仅允许符合要求的设备访问电子邮件和其他公司资源。 Intune 配合企业移动性 + 安全 (EMS) 工作，控制对公司资源的访问。 需确定是否需要条件访问，以及必须保护的内容。 了解有关[条件性访问](conditional-access.md)的详细信息。
+使用条件访问仅允许符合要求的设备访问电子邮件和其他公司资源。 Intune 配合企业移动性 + 安全 (EMS) 工作，控制对公司资源的访问。 请确定是否需要条件访问，以及必须保护的内容。 了解有关[条件性访问](conditional-access.md)的详细信息。
 
-对于联机访问，需确定条件访问策略的目标平台和用户组。 此外，还需确定是否需要为 Exchange Online 或 Exchange 内部部署安装或配置 Intune 服务间连接器。 了解如何安装和配置 Intune 服务间连接器：<!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+对于联机访问，请确定条件访问策略的目标平台和用户组。 此外，还需确定是否需要为 Exchange 本地安装或配置 Intune 连接器： 
 
 -   [Exchange 内部部署](exchange-connector-install.md)
 

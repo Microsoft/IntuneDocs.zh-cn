@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506808"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -62,7 +63,7 @@ Intune MAM 支持两种配置：
 
 - 最终用户必须向其 Azure Active Directory 帐户分配 Microsoft Intune 许可证。 请参阅[管理 Intune 许可证](/intune/licenses-assign)，以了解如何向最终用户分配 Intune 许可证。
 
-- 最终用户必须属于应用保护策略所针对的安全组。 同一应用保护策略必须面向正在使用的特定应用。 可以在 [Azure 门户](https://portal.azure.com)的 Intune 控制台中创建和部署应用保护策略。 当前可以在 [Office 门户](https://portal.office.com)中创建安全组。
+- 最终用户必须属于应用保护策略所针对的安全组。 同一应用保护策略必须面向正在使用的特定应用。 可以在 [Azure 门户](https://portal.azure.com)的 Intune 控制台中创建和部署应用保护策略。 当前可以在 [Microsoft 365 管理中心](https://admin.microsoft.com)创建安全组。
 
 - 最终用户必须使用其 AAD 帐户登录到应用。
 
@@ -77,7 +78,7 @@ Intune MAM 支持两种配置：
 
 **使用 [Word、Excel 和 PowerPoint](https://products.office.com/business/office) 应用有什么其他要求？**
 
-- 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用，可以包括 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)可在 [Office 门户](https://portal.office.com)中分配 Office 365 许可证。
+- 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用，可以包括 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)可在 [Microsoft 365 管理中心](https://admin.microsoft.com)分配 Office 365 许可证。
 
 - 最终用户必须具有使用粒度另存为功能进行配置的托管位置（该功能位于“阻止另存为”应用程序保护策略设置下）。 例如，如果托管位置为 OneDrive，则应在最终用户的 Word、Excel 或 PowerPoint 应用中对 [OneDrive](https://onedrive.live.com/about/) 应用进行配置。
 
@@ -170,6 +171,27 @@ Intune APP SDK 使用一些适用于 SDK 的第一方和第三方版本的高级
 
 处理不同类型的设置时，先处理应用版本要求，其次是 Android 操作系统版本要求，再是 Android 修补程序版本要求。 然后，按相同顺序检查各类型设置的所有警告。
 
+凭借 Intune 应用保护策略，管理员能够要求最终用户设备通过 Google 的适用于 Android 设备的 SafetyNet 认证。新 SafetyNet 认证结果发送给服务的频率是多少？ <br><br> 新的 Google Play 服务决定将按照 Intune 服务确定的时间间隔报告给 IT 管理员。 由于负载原因，服务调用频率受限，因此该值在内部维护，并且不可配置。 IT 管理员针对 Google SafetyNet 认证设置配置的任何操作都将在条件启动时根据最后报告的结果发送到 Intune 服务。 如果没有数据，若无其他条件启动检查失败，则允许访问，用于确定认证结果的 Google Play 服务“往返”将在后端开始，并在设备失败时以异步方式提示用户。 如果数据过时，将根据最后报告的结果阻止或允许访问，同样，用于确定认证结果的 Google Play 服务“往返”将开始，并在设备失败时以异步方式提示用户。
+
+凭借 Intune 应用保护策略，管理员能够要求最终用户设备通过 Google 的适用于 Android 设备的 Verify Apps API 发送信号。最终用户如何开启应用扫描，使其不会因此被阻止访问？<br><br> 如何执行此操作的说明根据设备略有不同。 常规流程包括转到 Google Play 商店，然后单击“我的应用和游戏”，单击最后一次应用扫描的结果，然后你会转到“Play 保护”菜单。 确保“扫描设备以检测安全隐患”开关为开启状态。
+
+Google 的 SafetyNet 认证 API 实际上在 Android 设备上检查什么？“检查基本完整性”和“检查基本完整性和认证设备”的可配置值之间有什么区别？ <br><br>
+Intune 利用 Google Play 保护 SafetyNet API 添加到我们对未注册设备的现有 root 权限检测检查。 Google 开发并维护此 API 集，当它们不希望应用在已取得 root 权限的设备上运行时，Android 应用可以采用这些 API。 例如，Android Pay 应用已将此合并。 尽管 Google 不公开共享所进行的全部 root 权限检测检查，但是我们希望这些 API 能够检测出已取得其设备 root 权限的用户。 然后，可以阻止这些用户访问，或者可以从启用策略的应用中擦除其公司帐户。 “检查基本完整性”描述设备的总体完整性。 已取得根权限的设备、模拟器、虚拟设备以及具有篡改迹象的设备无法通过基本完整性检查。 “检查基本完整性和认证设备”描述设备与 Google 服务的兼容性。 只有经过 Google 认证的未修改的设备才能通过此检查。 以下设备将无法通过检查：
+* 基本完整性检查未通过的设备
+* 具有未锁定引导装入程序的设备
+* 具有自定义系统映像/ROM 的设备
+* 制造商未申请或未通过 Google 认证的设备 
+* 系统映像直接通过 Android 开源程序源文件生成的设备
+* 具有 beta 版本/开发者预览版系统映像的设备
+
+请参阅 [Google 的 SafetyNet 认证文档](https://developer.android.com/training/safetynet/attestation)，获取技术详细信息。
+
+为 Android 设备创建 Intune 应用保护策略时，“条件启动”部分有两项类似检查。我应要求采用“SafetyNet 设备认证”设置还是“已越狱/已获得 root 权限的设备”设置？ <br><br>
+Google Play 保护的 SafetyNet API 检查要求最终用户保持在线状态，至少是在执行“往返”以确定认证结果期间。 如果最终用户为离线状态，IT 管理员仍可通过“已越狱/已获得 root 权限的设备”设置强制执行结果。 不过，如果最终用户长时间离线，“脱机宽限期”值就会发挥作用，在达到计时器值后将阻止所有对工作或学校数据的访问，直至网络访问可用。 同时开启这两个设置就可以通过分层方法来保持最终用户设备正常运行，这在最终用户通过移动设备访问工作或学校数据时非常重要。 
+
+利用 Google Play 保护 API 的应用保护策略设置需要 Google Play Services 才能运行。如果最终用户所在区域不允许使用 Google Play Services 该怎么办？<br><br>
+“SafetyNet 设备认证”和“应用威胁扫描”设置都需要 Google 确定的 Google Play Services 版本才能正常运行。 由于这些设置属于安全领域，如果最终用户是这些设置的目标，并且未使用适当版本的 Google Play Services，或者没有 Google Play Services 的访问权限，则将被阻止。 
+
 ## <a name="app-experience-on-ios"></a>iOS 上的应用体验
 **如果将指纹或人脸添加到我的设备或将其删除，会发生什么情况？**
 Intune 应用保护策略允许将应用访问权限控制在仅限 Intune 许可用户访问。 控制对应用的访问权限的方法之一是支持的设备上需要具有 Apple 的 Touch ID 或 Face ID。 Intune 执行某个行为后，如果对设备的生物识别数据库有任何更改，则在满足下一个非活动超时值时，Intune 会提示用户输入 PIN。 对生物识别数据的更改包括添加或删除指纹或人脸。 如果 Intune 用户未设置 PIN，则会引导他们设置 Intune PIN。
@@ -184,20 +206,13 @@ Intune 应用保护策略允许将应用访问权限控制在仅限 Intune 许�
 
 处理不同类型的设置时，先处理 Intune App SDK 版本要求，其次是应用版本要求，再是 iOS 操作系统版本要求。 然后，按相同顺序检查各类型设置的所有警告。 建议仅根据 Intune 产品团队针对关键阻止方案提供的指导配置 Intune App SDK 版本要求。
 
-## <a name="app-protection-policies---policy-refresh"></a>应用保护策略 - 策略刷新
-- 应用每 30 分钟检入一次应用服务。
-- 30 分钟的阈值以计时器为基础。
-    - 如果应用在 30 分钟时处于活动状态，则会在 30 分钟时检入。
-    - 如果应用在 30 分钟时处于睡眠状态，则会在下一焦点时检入。
-- 如果未向用户分配策略，则每 8 小时检入一次。
-- 如果未分配 Intune 许可证，则每 24 小时检入一次。
-
 
 ## <a name="see-also"></a>另请参阅
 - [实现 Intune 计划](planning-guide-onboarding.md)
 - [Intune 测试和验证](planning-guide-test-validation.md)
 - [Microsoft Intune 中的 Android 移动应用管理策略设置](app-protection-policy-settings-android.md)
 - [iOS 移动应用管理策略设置](app-protection-policy-settings-ios.md)
-- [验证应用保护策略](app-protection-policies-validate.md)
+- [应用保护策略策略刷新](app-protection-policy-delivery.md)
+- [验证应用保护策略](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [为托管应用添加应用配置策略（无需设备注册）](app-configuration-policies-managed-app.md)
 - [如何获取对 Microsoft Intune 的支持](get-support.md)

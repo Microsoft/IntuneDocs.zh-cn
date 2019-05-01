@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490532"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>使用 Intune 中的条件访问强制执行 Windows Defender ATP的符合性
 
@@ -109,12 +110,12 @@ Windows Defender 包括载入配置包，该包可与 [Windows Defender ATP 服�
 2. 选择“设备符合性” > “策略” > “创建策略”。
 3. 输入“名称”和“描述”。
 4. 在“平台”中，选择“Windows 10 及更高版本”。
-5. 在“Windows Defender ATP”设置中，将“要求设备不超过计算机风险评分”设置为首选级别：
+5. 在“Windows Defender ATP”设置中，将“要求设备不高于计算机风险评分”设置为首选级别。 威胁级别分类[由 Windows Defender ATP 确定](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue)。
 
-  - **清除**：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
-  - **低**：如果只有低级别威胁，设备符合策略。 具有中等级别或高级别威胁的设备不符合策略。
-  - **中**：如果有低级别或中等级别威胁，设备符合策略。 如果检测到高级别威胁，则设备会被确定为不合规。
-  - **高**：此级别最不安全，允许所有威胁级别。 因此，存在高、中等、低级别威胁的设备被视为符合策略。
+   - **清除**：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。 （Windows Defender ATP 使用“安全”值。）
+   - **低**：如果只有低级别威胁，设备符合策略。 具有中等级别或高级别威胁的设备不符合策略。
+   - **中**：如果有低级别或中等级别威胁，设备符合策略。 如果检测到高级别威胁，则设备会被确定为不合规。
+   - **高**：此级别最不安全，允许所有威胁级别。 因此，存在高、中等、低级别威胁的设备被视为符合策略。
 
 6. 选择“确定”和“创建”以保存更改（并创建策略）。
 
@@ -126,10 +127,13 @@ Windows Defender 包括载入配置包，该包可与 [Windows Defender ATP 服�
 4. 包含或排除你的 Azure AD 组以向它们分配策略。
 5. 若要将策略部署到组，请选择“保存”。 将评估策略针对的用户设备的符合性。
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>创建 Azure AD 条件访问策略
-如果设备不符合策略，条件访问策略将阻止访问资源。 因此，如果设备超出威胁级别，可以阻止对公司资源（如 SharePoint 或 Exchange Online）的访问。
+## <a name="create-a-conditional-access-policy"></a>创建条件访问策略
+如果设备不符合策略，条件访问策略将阻止访问资源。 因此，如果设备超出威胁级别，可以阻止对公司资源（如 SharePoint 或 Exchange Online）的访问。  
 
-1. 在 [Azure 门户](https://portal.azure.com)中，打开“Azure Active Directory” > ”条件访问“ > ”新建策略“。
+> [!TIP]  
+> 条件访问是一项 Azure Active Directory (Azure AD) 技术。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同。  
+
+1. 在 [Azure 门户](https://portal.azure.com)中，打开“Intune” > “条件访问” > “新建策略”。
 2. 输入策略“名称”，然后选择“用户和组”。 使用“包括”或“排除”选项来添加策略的组，然后选择“完成”。
 3. 选择“云应用”，然后选择要保护的应用。 例如，选取“选择应用”，然后选择“Office 365 SharePoint Online”和“Office 365 Exchange Online”。
 

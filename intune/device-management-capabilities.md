@@ -5,10 +5,11 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b5308eb1f9d83bcc9b9cbc29cac9bcf09356e77
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510140"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 已注册设备管理功能
 
@@ -30,7 +31,7 @@ ms.locfileid: "57231938"
 
 本文提供注册设备后可获得的功能的完整列表。
 
-管理、清单、应用部署、预配和停用都可通过 Intune 门户进行处理。
+管理、盘存、应用部署、预配和停用操作均可通过 Azure 门户中 Intune 来执行。
 
 用户获取公司门户的访问权限，这使他们可以安装应用、注册和删除设备以及与其 IT 部门或支持人员联系。
 
@@ -42,7 +43,7 @@ ms.locfileid: "57231938"
 |--------------|-----------|--------------------|
 |配置策略<br><br>自定义策略| 让你可在组织中管理移动设备上多个设置和功能。 例如，你可以申请密码、限制失败尝试次数、限制屏幕锁定前的时间量、设置密码过期时间，以及阻止使用以前用过的密码。 你还可以控制硬件和软件功能的使用，例如设备的摄像头或 Web 浏览器。<br><br>配置策略不包含所需设置时，请使用自定义策略。 对于 iOS 设备，你可以导入你从 Apple 配置工具中导出的设置。 对于其他设备，你可以使用开放移动联盟统一资源标识符 (OMA-URI) 设置配置设备上的设置和功能。|[使用 Microsoft Intune 策略管理设备上的设置和功能](device-compliance-get-started.md)|
 |远程擦除、远程锁定和密码重置|在设备丢失或被盗时，清除敏感数据。 例如，你可以远程锁定设备、将其还原为出厂设置或仅擦除企业数据。<br><br>你可以在用户无法访问其设备时重置密码，锁定遗失或被盗的设备，甚至擦除遗失或被盗设备的数据。|使用[远程锁定](device-remote-lock.md)和[密码重置](device-passcode-reset.md)功能帮助保护设备|
-|展台模式|允许你锁定移动设备的某些功能，如屏幕捕捉和电源开关。 此外允许您限制设备运行您指定的单个应用程序。|[Microsoft Intune 中的 iOS 配置策略设置](device-restrictions-ios.md)|
+|展台模式|允许你锁定移动设备的某些功能，如屏幕捕捉和电源开关。 此外允许您限制设备运行您指定的单个应用程序。 |[Microsoft Intune 中的 iOS 配置策略设置](device-restrictions-ios.md)|
 
 ## <a name="app-management"></a>应用管理
 

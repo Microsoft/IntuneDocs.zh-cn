@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508949"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -122,7 +124,7 @@ ms.locfileid: "53642806"
 
 选中该磁贴时，它将显示没有任何符合性策略的所有设备。 此外，它还将显示设备用户、策略部署状态和设备模型。
 
-#### <a name="what-you-need-to-know"></a>需要了解的信息
+#### <a name="what-you-need-to-know"></a>须知内容
 
 - 使用“将未分配有任何符合性策略的设备标记为”安全设置，请务必标识不具有符合性策略的设备。 然后才能为这些设备分配至少一个符合性策略。
 

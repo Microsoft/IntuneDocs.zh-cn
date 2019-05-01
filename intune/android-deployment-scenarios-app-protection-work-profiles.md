@@ -9,17 +9,18 @@ ms.date: 02/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fd12432d07d1486e0943f88c0cf8b4536e651bc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490189"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune 中 Android 企业设备上的应用程序保护策略和工作配置文件
 
@@ -50,7 +51,7 @@ Intune 应用保护策略 (APP) 是面向用户的数据保护策略。 策略�
 
     为了提供帮助，Intune 为现有 Android 应用 (APK) 添加了 App Wrapping Tool 工具，并创建了可识别 APP 策略的应用。
 
-    有关此工具的详细信息，请参阅[针对应用保护策略调整业务线应用](apps-prepare-mobile-application-management.md)。
+    有关此工具的详细信息，请参阅[针对应用保护策略准备业务线应用](apps-prepare-mobile-application-management.md)。
 
 若要查看使用 APP 启用的应用的列表，请参阅[使用一组丰富的移动应用程序保护策略的托管应用](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 

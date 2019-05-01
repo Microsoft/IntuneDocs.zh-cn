@@ -1,15 +1,16 @@
 ---
-title: 在 Intune 中注册 Android 专用设备或完全托管的设备
-titlesuffix: Microsoft Intune
-description: 了解如何在 Intune 中注册 Android 企业专用设备或完全托管的设备。
+title: 在 Intune 中注册 Android Enterprise 专用设备或完全托管设备
+titleSuffix: Microsoft Intune
+description: 了解如何在 Intune 中注册 Android Enterprise 专用设备或完全托管设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f56e2987fefcc514911f762c5fd82ca1ebc6779c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503867"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>注册 Android 专用设备或完全托管的设备（预览版）
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>注册 Android Enterprise 专用设备或完全托管设备（预览）
 
-在 Intune 中设置好 [Android 专用设备](android-kiosk-enroll.md)或[完全托管的设备](android-fully-managed-enroll.md)后，就可以注册设备。 Android 设备的注册方式取决于操作系统。
+在 Intune 中设置好 [Android Enterprise 专用设备](android-kiosk-enroll.md)或[完全托管设备](android-fully-managed-enroll.md)之后，即可注册设备。 Android Enterprise 设备的注册方式取决于操作系统。
 
 | 注册方法 | 适用于专用设备和完全托管设备的最低 Android OS 版本 |
 | ----- | ----- |

@@ -1,27 +1,29 @@
 ---
 title: Intune 载入过程
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文提供将 Microsoft Intune 仅限云解决方案载入到环境中时需考虑的所有详细信息。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5c1fb2b6b20c9687418e14f8e35543c04833a25
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9cd9f14d48c86119acf862e2d335fe88fb2a9a1c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513964"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>实现 Microsoft Intune 计划
 
@@ -76,7 +78,7 @@ ms.locfileid: "52186386"
 
 ### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>任务 4：分配 Intune 和 Office 365 用户许可证
 
-EMS/Intune 和 Office 365 推出的所有目标用户均需具备分配给他们的许可证。 可在 Office 365 管理中心门户分配 EMS/Intune 和 Office 365 许可证。
+EMS/Intune 和 Office 365 推出的所有目标用户均需具备分配给他们的许可证。 可在 Microsoft 365 管理中心分配 EMS/Intune 和 Office 365 许可证。
 
 -   了解有关[如何分配 Intune 许可证](licenses-assign.md)的详细信息。
 
@@ -92,7 +94,7 @@ EMS/Intune 和 Office 365 推出的所有目标用户均需具备分配给他们
 
 -   详细了解[如何启用 Apple 设备进行注册](apple-mdm-push-certificate-get.md)。
 
-### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>任务 7：添加和部署条款和条件策略
+### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>任务 7：添加和部署条款与条件策略
 
 Intune 支持条款和条件策略。 根据 Intune 部署用例和要求，适当地添加条款和条件策略，并将其部署到目标组。
 
@@ -116,7 +118,7 @@ Intune 支持部署 Web、业务线和公共应用商店应用。 还可管理�
 
 -   详细了解[添加和部署应用](app-management.md)。
 
-### <a name="task-11-add-and-deploy-compliance-policies"></a>任务 11： 添加和部署合规性策略
+### <a name="task-11-add-and-deploy-compliance-policies"></a>任务 11：添加和部署符合性策略
 
 Intune 支持符合性策略。 根据 Intune 部署用例和要求，适当地添加符合性策略，并将其部署到目标组。
 

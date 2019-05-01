@@ -1,26 +1,28 @@
 ---
 title: 特殊迁移注意事项
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文提供开始 Microsoft Intune 迁移活动前，需注意的特殊事项。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 039b3dc4d45b340a7d7f8ed0314661a2505a779b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 15a3130263e19f8d6bef55427bf9a53f8e8b42ef
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508372"
 ---
 # <a name="special-migration-considerations"></a>特殊迁移注意事项
 
@@ -35,4 +37,4 @@ Apple 设备注册计划 (DEP) 设置最终用户无法删除的设备配置。 
 
 ## <a name="next-steps"></a>后续步骤
 
-[阶段 2：迁移活动](migration-guide-campaign.md)
+[第 2 阶段：迁移活动](migration-guide-campaign.md)

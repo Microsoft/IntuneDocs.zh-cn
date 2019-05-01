@@ -1,32 +1,33 @@
 ---
-title: 使用 Microsoft Intune 将 Office 365 应用安装到设备
-titlesuffix: ''
-description: 了解如何使用 Microsoft Intune 更轻松地在 Windows 10 设备上安装 Office 365 应用。
+title: 使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
+titleSuffix: ''
+description: 了解如何使用 Microsoft Intune 在 Windows 10 设备上安装 Office 365 应用。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d3db1449ec583678924fadb0db930146c3cd848
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507101"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
-此应用类型使用户可以轻松地将 Office 365 应用分配到所管理的运行 Windows 10 的设备。 还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。 所需的应用将显示为 Intune 控制台的应用列表中的一个条目。
+必须首先将应用添加到 Intune 中，才可以分配、监视、配置或保护它们。 其中一个可用的[应用类型](apps-add.md#app-types-in-microsoft-intune)是适用于 Windows 10 的 Office 365 应用。 通过在 Intune 中选择此应用类型，可以将 Office 365 应用分配并安装到所管理的运行 Windows 10 的设备。 还可以分配和安装适用于 Microsoft Project Online 桌面客户端和 Microsoft Visio Online 计划 2 的应用，前提是拥有它们的许可证。 可用的 Office 365 应用将显示为 Azure 内 Intune 控制台中应用列表中的一个条目。
 
 > [!NOTE]
 > 必须使用 Office 365 专业增强版许可证来激活通过 Microsoft Intune 部署的 Office 365 专业增强版应用。 Intune 目前不支持 Office 365 商业版。
@@ -54,18 +55,25 @@ ms.locfileid: "57229745"
 5. 选择“添加”。
 6. 在“添加应用”窗格中，请在“应用类型”列表中的“Office 365 套件”下选择“Windows 10”。
 
-现在，你便可以配置应用套件。
+## <a name="select-settings-format"></a>选择设置格式
 
-## <a name="configure-the-app-suite"></a>配置应用套件
+可通过选择“设置格式”来选择配置应用设置的方法。 设置格式选项包括：
+- 配置设计器
+- 输入 XML 数据
 
-选择想要分配到设备的 Office 应用。
+选择“配置设计器”后，“添加应用”边栏选项卡会发生变化，会新增两个设置选项：
+- 配置应用套件
+- 应用套件设置
 
-1. 在“添加应用”窗格中，选择“配置应用套件”。
-2. 在“配置应用套件”窗格中，选择想要分配到设备的标准 Office 应用。  
-    此外，还可以安装适用于 Microsoft Project Online 桌面客户端的应用和 Microsoft Visio Pro for Office 365，前提是拥有它们的许可证。
-3. 选择“确定”。
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>配置应用信息
+选择“输入 XML 数据”后，“添加应用”边栏选项卡会显示“输入 XML 数据”选项。 选择此选项以显示“配置文件”边栏选项卡。 
+
+![添加 Office 365 配置设计器](./media/apps-add-office365/apps-add-office365-01.png)
+    
+有关“输入 XML 数据”选项的详细信息，请参阅下方的[输入 XML 数据](apps-add-office365.md#enter-xml-format)。
+
+## <a name="configure-app-suite-information"></a>配置应用套件信息
 
 在此步骤中，提供有关该应用套件的信息。 此信息有助于在 Intune 中识别应用套件，也有助于用户在公司门户中找到应用套件。
 
@@ -84,9 +92,18 @@ ms.locfileid: "57229745"
     - **徽标**：用户浏览公司门户时，Office 365 徽标与应用一同显示。
 3. 选择“确定”。
 
-## <a name="configure-app-settings"></a>配置应用设置
+## <a name="configure-app-suite"></a>配置应用套件
 
-在此步骤中，配置应用套件的安装选项。 这些设置适用于添加到该套件的所有应用。
+如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”边栏选项卡中的“配置应用套件”选项。 选择想要分配到设备的 Office 应用。
+
+1. 在“添加应用”窗格中，选择“配置应用套件”。
+2. 在“配置应用套件”窗格中，选择想要分配到设备的标准 Office 应用。  
+    此外，还可以安装适用于 Microsoft Project Online 桌面客户端和 Microsoft Visio Online 计划 2 的应用，前提是拥有它们的许可证。
+3. 选择“确定”。
+
+## <a name="configure-app-suite-settings"></a>配置应用套件设置
+
+如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”边栏选项卡中的“应用套件设置”选项。 在此步骤中，配置应用套件的安装选项。 这些设置适用于添加到该套件的所有应用。
 
 1. 在“添加应用”窗格中，选择“应用套件设置”。
 2. 在“应用套件设置”窗格中，请执行以下操作：
@@ -110,6 +127,10 @@ ms.locfileid: "57229745"
     - **使用共享的计算机激活**：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 [Office 365 的共享计算机激活概述](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **语言**：Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。 <p></p>
     可以为通过 Intune 管理的 Office 365 专业增强版应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。 在“应用套件设置”边栏选项卡中选择“语言”。 有关其他信息，请参阅 [Office 365 专业增强版中的语言部署概述](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
+
+## <a name="enter-xml-format"></a>输入 XML 格式
+
+如果选择“设置格式”下拉框下方的“输入 XML 数据”选项，将看到“添加应用”边栏选项卡中的“输入 XML 格式”选项。 有关详细信息，请参阅 [Office 部署工具的配置选项](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
 
 ## <a name="finish-up"></a>完成
 
@@ -138,7 +159,7 @@ ms.locfileid: "57229745"
 
 | 方案 | 返回代码 | UI | 备注 |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
-| 没有可用的即点即用安装时卸载工作量 | -2147418113、0x8000ffff 或 2147549183 | 错误代码:30088-1008 错误代码：30125-1011 (404) | Office 部署工具 |
+| 没有可用的即点即用安装时卸载工作量 | -2147418113、0x8000ffff 或 2147549183 | 错误代码：30088-1008 错误代码：30125-1011 (404) | Office 部署工具 |
 | 安装 MSI 版本时安装 | 1603 | - | Office 部署工具 |
 | 用户或另一个安装取消了安装 | 17002 | - | 即点即用 |
 | 尝试在安装了 32 位的设备上安装 64 位。 | 1603 | - | Office 部署工具返回代码 |

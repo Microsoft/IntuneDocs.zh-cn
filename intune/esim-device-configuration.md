@@ -9,17 +9,18 @@ ms.date: 7/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 680853446b40949309ef406a6cab5b6b0181798a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4bdaf5768c1b78fbd07a732ee6690e59638fcff1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513711"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
@@ -189,12 +190,12 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 > [!NOTE]
 > 删除配置文件可能无法停止计费。 请联系移动运营商，检查设备的计费状态。
 
-## <a name="best-practices--troubleshooting"></a>最佳实践和疑难解答
+## <a name="best-practices--troubleshooting"></a>最佳做法和疑难解答
 
 - 确保 csv 文件格式正确。 确认该文件不包含重复代码、多个移动运营商或不同的流量套餐。 请记住，每个文件对于移动运营商和手机网络流量套餐必须是唯一的。
 - 创建仅包含目标 eSIM 设备的静态设备 Azure AD 组。
 - 如果部署状态存在问题，请检查以下内容：
-  - **文件格式不正确**：请参阅本主题中的**步骤 1：添加手机网络激活代码**（在本文中），了解如何正确设置文件格式。
+  - **文件格式不正确**：请参阅**步骤 1：添加手机网络激活代码**（在本文中），了解如何正确设置文件格式。
   - **手机网络激活失败，请联系移动运营商**：激活代码可能未在其网络中激活。 或者，配置文件下载和手机网络激活失败。
 
 ## <a name="next-steps"></a>后续步骤

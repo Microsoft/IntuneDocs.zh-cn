@@ -2,25 +2,27 @@
 title: 在 Microsoft Intune 中创建证书配置文件 - Azure | Microsoft Docs
 description: 针对所用设备，通过配置 SCEP 或 PKCS 证书环境来添加或创建证书配置文件、导出公共证书、在 Azure 门户中创建配置文件，然后在 Azure 门户中向 Microsoft Intune 证书配置文件 分配 SCEP 或 PKCS
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 07/23/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
-ms.reviewer: heenamac
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70e8a5e9ad973f5d2c94a146a9f263f461d0ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508257"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为设备配置证书配置文件
 
@@ -33,33 +35,37 @@ ms.locfileid: "52180555"
 
 每个证书类型均具有其自己的先决条件和基础结构要求。
 
+
 ## <a name="overview"></a>概述
 
 1. 确保设置正确的证书基础结构。 可以使用 [SCEP 证书](certificates-scep-configure.md)和 [PKCS 证书](certficates-pfx-configure.md)。
 
-2. 在每台设备上安装根证书或中间证书颁发机构 (CA) 证书，以便该设备识别 CA 的合法性。 为此，创建并分配**受信任的证书配置文件**。 分配此配置文件时，Intune 托管的设备会请求并接收根证书。 必须为每个平台创建单独的配置文件。 受信任的证书配置文件可用于以下平台：
+2. 在每台设备上安装根证书或中间证书颁发机构 (CA) 证书，以便该设备识别 CA 的合法性。 要安装证书，请为每台设备创建并分配受信任的证书配置文件。 分配此配置文件时，Intune 托管的设备会请求并接收根证书。 必须为每个平台创建单独的配置文件。 受信任的证书配置文件可用于以下平台：
 
     - iOS 8.0 及更高版本
     - macOS 10.11 和更高版本
     - Android 4.0 及更高版本
-    - Android 工作配置文件
+    - Android Enterprise  
     - Windows 8.1 及更高版本
     - Windows Phone 8.1 及更高版本
     - Windows 10 及更高版本
 
-3. 创建证书配置文件以便设备请求 1 个将用于对 VPN、Wi-Fi 和电子邮件访问进行身份验证的证书。 可以为运行以下平台的设备创建并分配 PKCS 或 SCEP 证书配置文件：
+    > [!NOTE]  
+    > 运行专用设备适用的 Android Enterprise 的设备不支持证书配置文件。
 
-   - iOS 8.0 及更高版本
-   - Android 4.0 及更高版本
-   - Android 工作配置文件
-   - Windows 10（桌面版和移动版）及更高版本
+3. 创建证书配置文件以便设备请求 1 个将用于对 VPN、Wi-Fi 和电子邮件访问进行身份验证的证书。 下列配置文件类型可用于不同的平台：  
 
-   对于运行以下平台的设备，只能使用 SCEP 证书配置文件：
+   | 平台     |PKCS 证书|SCEP 证书| PKCS 导入的证书 | 
+   |--------------|----------------|----------------|-------------------|
+   | Android                | 是    | 是    | 是    |
+   | Android Enterprise     | 是    | 是    | 是    |
+   | iOS                    | 是    | 是    | 是    |
+   | macOS                  |        | 是    | 是    |
+   | Windows Phone 8.1      |        | 是    | 是    |
+   | Windows 8.1 及更高版本  |        | 是    |        |
+   | Windows 10 及更高版本   | 是    | 是    | 是    |
 
-   - macOS 10.9 和更高版本
-   - Windows Phone 8.1 及更高版本
-
-务必为每个设备平台创建单独的配置文件。 在创建配置文件时，将其与已创建的受信任的根证书配置文件关联。
+   务必为每个设备平台创建单独的配置文件。 在创建配置文件时，将其与已创建的受信任的根证书配置文件关联。
 
 ### <a name="further-considerations"></a>更多注意事项
 
@@ -70,7 +76,7 @@ ms.locfileid: "52180555"
 
 ## <a name="step-1-configure-your-certificate-infrastructure"></a>步骤 1：配置证书基础结构
 
-参阅以下主题，以了解为各种类型的证书配置文件配置基础结构的帮助：
+请查看下列主题，在为各类型的证书配置文件配置基础结构方面获取帮助：
 
 - [使用 Intune 配置和管理 SCEP 证书](certificates-scep-configure.md)
 - [使用 Intune 配置和管理 PKCS 证书](certficates-pfx-configure.md)
@@ -82,7 +88,7 @@ ms.locfileid: "52180555"
 
 设置受信任的证书配置文件时，导入该证书。
 
-## <a name="step-3-create-trusted-certificate-profiles"></a>步骤 3 - 创建受信任的证书配置文件
+## <a name="step-3-create-trusted-certificate-profiles"></a>步骤 3：创建受信任的证书配置文件
 必须先创建受信任的证书配置文件，才可创建 SCEP 或 PKCS 证书配置文件。 对于每个设备平台，需要一个受信任的证书配置文件和一个 SCEP 或 PKCS 配置文件。 为每个设备平台创建受信任的证书的步骤是相似的。
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
@@ -92,7 +98,7 @@ ms.locfileid: "52180555"
 5. 从“平台”下拉列表中，为此受信任证书选择设备平台。 选项包括：
 
     - **Outlook Web Access (OWA)**
-    - **Android 企业**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -100,7 +106,7 @@ ms.locfileid: "52180555"
     - **Windows 10 及更高版本**
 
 6. 从“配置文件类型”下拉列表中，选择“受信任的证书”。
-7. 浏览到任务 1 中保存的证书，然后选择“确定”。
+7. 浏览到[步骤 2：导出受信任的根 CA 证书](#step-2-export-your-trusted-root-ca-certificate)中保存的证书，然后选择“确定”。
 8. 从以下位置选择受信任证书的**目标存储区**（仅适用于 Windows 8.1 和 Windows 10 设备）：
 
     - **计算机证书存储区 - 根**
@@ -111,11 +117,12 @@ ms.locfileid: "52180555"
 
 系统随即创建配置文件，并在列表中显示。 要向组分配此配置文件，请参阅[分配设备配置文件](device-profile-assign.md)。
 
-Android 设备可能会显示第三方已安装受信任的证书的消息。
+   >[!NOTE]
+   > Android 设备可能会显示第三方已安装受信任的证书的消息。
 
-## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>步骤 4 - 创建 SCEP 或 PKCS 证书配置文件
+## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>步骤 4：创建 SCEP 或 PKCS 证书配置文件
 
-参阅以下主题，以了解配置和分配各个类型的证书配置文件的帮助：
+请查看下列文章，在配置和分配各类型的证书配置文件方面获取帮助：
 
 - [使用 Intune 配置和管理 SCEP 证书](certificates-scep-configure.md)
 - [使用 Intune 配置和管理 PKCS 证书](certficates-pfx-configure.md)

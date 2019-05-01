@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 180a4cad27082105aa41c2bd79e6f9c05a65d162
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490638"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>在 Intune 中创建 Windows 10 安全基线
 
@@ -46,6 +47,10 @@ ms.locfileid: "57238602"
 本文展示了如何使用安全基线来创建、分配和监视配置文件。
 
 若要详细了解此功能，最好参考 [Windows 安全基线](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)资源。 若要详细了解 MDM 以及可以在 Windows 设备上执行哪些操作，最好参考[移动设备管理](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) 资源。
+
+## <a name="prerequisites"></a>必备条件
+要在 Intune 中管理基线，帐户必须具有内置的[策略和配置文件管理员](role-based-access-control.md#built-in-roles)角色。
+
 
 ## <a name="co-managed-devices"></a>共同管理的设备
 
@@ -107,7 +112,7 @@ Intune 托管设备上的安全基线类似于使用 Configuration Manager 的�
 
 Microsoft 安全团队多年来一直与 Windows 开发人员以及安全社区直接合作，共同创建这些建议，经验丰富。 此基线中的设置被视为最相关的安全相关配置选项。 在 Windows 的每个新内部版本中，团队都会根据新发布的功能调整自己的建议。
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>面向组策略和 Intune 的 Windows 安全基线建议是否有区别Intune 托管?
+#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>面向组策略和 Intune 的 Windows 安全基线建议是否有区别Intune？
 
 为每个基线选择并整理设置的 Microsoft 安全团队不变。 Intune 包含 Intune 安全基线中的所有相关设置。 组策略基线中有一些本地域控制器专用设置。 这些设置被排除在 Intune 建议范围之外。 其他所有设置都是相同的。
 

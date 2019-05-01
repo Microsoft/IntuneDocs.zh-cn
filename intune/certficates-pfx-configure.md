@@ -1,14 +1,15 @@
 ---
-title: 在 Microsoft Intune 中使用私钥证书和公钥证书 - Azure | Micrososft Docs
-description: 向 Microsoft Intune 添加或创建公钥加密标准 (PKCS) 证书，所需步骤如下：导出根证书、配置证书模板、下载和安装 Microsoft Intune 证书连接器 (NDES)、创建设备配置文件，并在 Azure 和证书颁发机构中创建 PKCS 证书配置文件。
+title: 在 Microsoft Intune 中使用私钥证书和公钥证书 - Azure | Microsoft Docs
+description: 向 Microsoft Intune 添加或创建公钥加密标准 (PKCS) 证书，所需步骤如下：在 Azure 和证书颁发机构中导出根证书、配置证书模板、下载和安装 Intune 证书连接器 (NDES)、创建设备配置文件以及创建 PKCS 证书配置文件。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 04/03/2019
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: lacranda
@@ -16,65 +17,80 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7f7f77914b899b7173b8bfacb82cd0c50c6e7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508531"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
-证书用于进行身份验证并保证用户安全访问公司资源（例如 VPN 或 WiFi 网络）。 许多组织中都使用采用私钥和公钥密钥对的证书（也称为 PKCS 证书）。 Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行访问和身份验证。 使用 Intune 中的设备配置配置文件将这些设置推送（或部署）到设备。
+Intune 支持使用私钥和公钥对 (PKCS) 证书。 本文有助于帮助配置所需的本地证书连接器等基础结构，导出 PKCS 证书，然后将证书添加到 Intune 设备配置配置文件。
 
-本文列出了使用 PKCS 证书的要求，介绍如何导出 PKCS 证书，以及如何将证书添加到 Intune 设备配置文件。
+Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行访问和身份验证。 证书用于进行身份验证并保证用户安全访问公司资源（例如 VPN 或 WiFi 网络）。 使用 Intune 中的设备配置配置文件，将这些设置部署到设备。
+
 
 ## <a name="requirements"></a>要求
 
 要在 Intune 中使用 PKCS 证书，必须具有以下基础结构：
 
-- **Active Directory 域**：此部分中列出的所有服务器都必须加入 Active Directory 域。
+- **Active Directory 域**：  
+  此部分中列出的所有服务器都必须加入 Active Directory 域。
 
-  若要深入了解如何安装和配置 AD DS，请参阅 [AD DS 设计和规划](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning)。
+  有关安装和配置 Active Directory 域服务 (AD DS) 的详细信息，请参阅 [AD DS 设计和规划](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning)。
 
-- **证书颁发机构** (CA)：企业证书颁发机构 (CA)
+- **证书颁发机构**：  
+   企业证书颁发机构 (CA)。
 
-  若要深入了解如何安装和配置 Active Directory 证书服务 (AD CS)，请参阅 [Active Directory 证书服务分步指南](https://technet.microsoft.com/library/cc772393)。
+  有关安装和配置 Active Directory 证书服务 (AD CS) 的信息，请参阅 [Active Directory 证书服务分步指南](https://technet.microsoft.com/library/cc772393)。
 
-  > [!WARNING]
+  > [!WARNING]  
   > Intune 要求在企业证书颁发机构 (CA) 而非独立 CA 中运行 AD CS。
 
-- **客户端**：连接到企业 CA
+- **客户端**：  
+  连接到企业 CA。
 
-- **根证书**：从企业 CA 导出的根证书的副本
+- **根证书**：  
+  从企业 CA 导出的根证书的副本。
 
-- **Microsoft Intune 证书连接器**：使用 Azure 门户下载“证书连接器”安装程序 (NDESConnectorSetup.exe)。 
+- Intune 证书连接器（也称为 NDES 证书连接器）：  
+  在 Intune 门户中，转到“设备配置” > “证书连接器” > “添加”，然后按照“为 PKCS #12 安装连接器的步骤”操作。 使用门户中的下载链接开始下载证书连接器安装程序 NDESConnectorSetup.exe。  
 
   连接器处理用于身份验证或 S/MIME 电子邮件签名的 PKCS 证书请求。
 
   NDES 证书连接器还支持美国联邦信息处理标准 (FIPS) 模式。 FIPS 不是必需的，但启用 FIPS 时可颁发和吊销证书。
 
-- **Microsoft Intune 的 PFX 证书连接器**：如果计划使用 S/MIME 电子邮件加密，请使用 Azure 门户下载“Microsoft Intune 的 PFX 证书连接器”安装程序 (PfxCertificateConnectorBootstrapper.exe)。 该连接器处理导入 Intune 中的 PFX 文件的请求，以便为特定用户进行 S/MIME 电子邮件加密。
+- **Microsoft Intune 的 PFX 证书连接器**：  
+   如果计划使用 S/MIME 电子邮件加密，请使用 Intune 门户下载导入的 PFX 证书的连接器。  转到“设备配置” > “证书连接器” > “添加”，然后按照“为导入的 PFX 证书安装连接器的步骤”操作。 使用门户中的下载链接开始下载安装程序 PfxCertificateConnectorBootstrapper.exe。 
 
-- **Windows Server**：托管以下内容：
+  该连接器处理导入 Intune 中的 PFX 文件的请求，以便为特定用户进行 S/MIME 电子邮件加密。  
 
-  - 用于身份验证和 S/MIME 电子邮件签名方案的 Microsoft Intune 证书连接器 (NDESConnectorSetup.exe)
-  - 用于 S/MIME 电子邮件加密方案的 Microsoft Intune 的 PFX 证书连接器 (PfxCertificateConnectorBootstrapper.exe)。
+  新版本可用时，此连接器可自动更新。 要使用更新功能，必须：
+  - 在服务器上安装 Microsoft Intune 的导入的 PFX 证书连接器。
+  - 要自动接收重要更新，请确保防火墙已打开，以便连接器从端口 443 访问 autoupdate.msappproxy.net。  
 
-  可在同一服务器上运行这两种连接器（Microsoft Intune 证书连接器和 Microsoft Intune 的 PFX 证书连接器）。
+
+- **Windows Server**：  
+  使用 Windows Server 托管以下内容：
+
+  - Microsoft Intune 证书连接器 - 用于身份验证和 S/MIME 电子邮件签名方案
+  - Microsoft Intune 的 PFX 证书连接器 - 用于 S/MIME 电子邮件加密方案。
+
+  可在同一服务器上安装这两种连接器（Microsoft Intune 证书连接器和 PFX 证书连接器）。
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>从企业 CA 中导出根证书
 
-要验证 VPN、WiFi 或其他资源，每台设备均需具备根证书或中间 CA 证书。 以下步骤介绍如何从企业 CA 中获取所需的证书。
+要使用 VPN、WiFi 或其他资源对设备进行身份验证，设备需要根证书或中间 CA 证书。 以下步骤介绍如何从企业 CA 中获取所需的证书。
 
-1. 使用具有管理权限的帐户登录到企业 CA。
-2. 以管理员身份打开命令提示符。
-3. 将根 CA 证书 (.cer) 导出到稍后可访问的位置。
-4. 向导完成后，关闭向导前，单击“启动证书连接器 UI” 。
+**使用命令行**：  
+1. 使用管理员帐户登录根证书颁发机构服务器。
+ 
+2. 转到“开始” > “运行”，然后输入“Cmd”以打开命令提示符。 
+    
+3. 指定“certutil  -ca.cert ca_name.cer”以将根证书导出为名为“ca_name.cer”的文件。
 
-   `certutil -ca.cert certnew.cer`
 
-   有关详细信息，请参阅[用于管理证书的 Certutil 任务](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign)。
 
 ## <a name="configure-certificate-templates-on-the-ca"></a>在 CA 上配置证书模板
 
@@ -118,14 +134,15 @@ ms.locfileid: "57230034"
 
 ### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune 证书连接器
 
-> [!IMPORTANT] 
-> Microsoft Intune 证书连接器必须安装在单独的 Windows Server 上。 不能安装在证书颁发机构 (CA) 上。
+> [!IMPORTANT]  
+> Microsoft Intune 证书连接器不能安装在颁发的证书颁发机构 (CA) 上，而必须安装在单独的 Windows 服务器上。  
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 选择“设备配置” > “证书颁发机构” > “添加”。
-3. 下载并保存连接器文件。 将该文件保存到可从要安装连接器的服务器访问的位置。
+2. 选择“设备配置” > “认证连接器” > “添加”。
+3. 下载连接器文件并将其保存到可从服务器上进行访问的位置，将在该服务器上安装连接器。
 
-    ![ConnectorDownload][ConnectorDownload]
+    ![NDES 连接器下载](media/certificates-pfx-configure/download-ndes-connector.png)
+ 
 
 4. 下载完成后，登录服务器。 然后：
 
@@ -136,32 +153,31 @@ ms.locfileid: "57230034"
 5. NDES 连接器将打开“注册”选项卡。要启用到 Intune 的连接，请“登录”并输入具有全局管理权限的帐户。
 6. 在“高级”选项卡上，建议让“使用此计算机的系统帐户(默认)”保持选中状态。
 7. 应用 > 关闭
-8. 返回到 Azure 门户（通过选择“Intune” > “设备配置” > “证书颁发机构”）。 片刻之后，将显示绿色复选标记，且“连接状态”显示“可用”。 连接器服务器现可与 Intune 通信。
+8. 返回到 Intune 门户（“Intune” > “设备配置” > “认证连接器”）。 片刻之后，将显示绿色复选标记，且“连接状态”显示“可用”。 连接器服务器现可与 Intune 通信。
 9. 如果网络环境中有 Web 代理，则可能需要其他配置才能使连接器正常运行。 有关详细信息，请参阅 Azure Active Directory 文档中的[使用现有本地代理服务器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)。
 
-> [!NOTE]
-> Microsoft Intune 证书连接器中包含 TLS 1.2 支持。 因此，如果已安装 Microsoft Intune 证书连接器的服务器支持 TLS 1.2，则使用 TLS 1.2。 如果服务器不支持 TLS 1.2，则使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。
+> [!NOTE]  
+> Microsoft Intune 证书连接器支持 TLS 1.2。 如果在托管连接器的服务器上安装了 TLS 1.2，则连接器使用 TLS 1.2。 否则，使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>Microsoft Intune 的 PFX 证书连接器
 
 1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-2. 选择“设备配置” > “证书颁发机构” > “添加”
+2. 选择“设备配置” > “认证连接器” > “添加”
 3. 下载并保存 Microsoft Intune 的 PFX 证书连接器。 将该文件保存到可从要安装连接器的服务器访问的位置。
 4. 下载完成后，登录服务器。 然后：
 
     1. 确保已安装 .NET 4.6 Framework 或更高版本，因为它是 Microsoft Intune 的 PFX 证书连接器的必需项。 如果未安装 .NET 4.6 Framework，安装程序会自动安装它。
-    2. 运行安装程序 (PfxCertificateConnectorBootstrapper.exe)并接受默认位置。 连接器将安装到 `Program Files\Microsoft Intune\PFXCertificateConnector`。
+    2. 运行安装程序 (PfxCertificateConnectorBootstrapper.exe) 并接受默认位置，此操作会将连接器安装到 `Program Files\Microsoft Intune\PFXCertificateConnector`。
     3. 连接器服务在本地系统帐户下运行。 如果需要通过代理进行 Internet 访问，请确认本地服务帐户可以访问服务器上的代理设置。
 
 5. 安装后，Microsoft Intune 的 PFX 证书连接器将打开“注册”选项卡。 要启用到 Intune 的连接，请“登录”并输入具有 Azure 全局管理员或 Intune 管理员权限的帐户。
 6. 关闭窗口。
-7. 返回到 Azure 门户（通过选择“Intune” > “设备配置” > “证书颁发机构”）。 片刻之后，将显示绿色复选标记，且“连接状态”显示“可用”。 连接器服务器现可与 Intune 通信。
+7. 返回到 Azure 门户（“Intune” > “设备配置” > “认证连接器”）。 片刻之后，将显示绿色复选标记，且“连接状态”显示“可用”。 连接器服务器现可与 Intune 通信。
 
 ## <a name="create-a-trusted-certificate-profile"></a>创建受信任的证书配置文件
 
 1. 在 [Azure 门户](https://portal.azure.com)，转到“Intune” > “设备配置” > “配置文件” > “创建配置文件”。
-
-   ![NavigateIntune][NavigateIntune]
+    ![导航到 Intune 并为受信任的证书创建新的配置文件](media/certificates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. 输入以下属性：
 
@@ -175,7 +191,7 @@ ms.locfileid: "57230034"
    > [!NOTE]
    > 能否为证书选择“目标存储区”取决于步骤三中所选的平台。
 
-   ![ProfileSettings][ProfileSettings]
+   ![创建配置文件并上传受信任的证书](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
 4. 选择“确定” > “创建”以保存配置文件。
 5. 若要将新配置文件分配给一个或多个设备，请参阅[分配 Microsoft Intune 设备配置文件](device-profile-assign.md)。
@@ -228,6 +244,26 @@ ms.locfileid: "57230034"
 
 4. 选择“确定” > “创建”以保存配置文件。
 5. 若要将新配置文件分配给一个或多个设备，请参阅[分配 Microsoft Intune 设备配置文件](device-profile-assign.md)。
+
+## <a name="whats-new-for-connectors"></a>连接器的新增功能
+我们将定期发布这两个证书连接器的更新。 更新连接器时，你可以在此处阅读有关更改的信息。 
+
+PFX 证书连接器[支持自动更新](#requirements)，但需要手动更新 Intune 证书连接器。
+ 
+### <a name="april-2-2019"></a>2019 年 4 月 2日
+- **NDES 证书连接器 - 版本 6.1904.1.0**  
+  此版本中的更改：  
+  - 解决了使用全局管理员帐户登录连接器后连接器可能无法注册到 Intune 的问题。  
+  - 包括证书吊销的可靠性修补程序。  
+  - 包括性能修补程序，以提高处理 PKCS 证书请求的速度。  
+
+- **PFX 证书连接器 - 版本 6.1904.0.401**
+  > [!NOTE]  
+  > 此版本的 PFX 连接器的自动更新直到 2019 年 4 月 11 日才可用。  
+
+  此版本中的更改：  
+  - 解决了使用全局管理员帐户登录连接器后连接器可能无法注册到 Intune 的问题。  
+
 
 ## <a name="next-steps"></a>后续步骤
 

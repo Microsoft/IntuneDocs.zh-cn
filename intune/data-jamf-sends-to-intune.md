@@ -1,5 +1,6 @@
 ---
-title: JAMF Pro 向 Intune 发送的数据 | Microsoft Intune
+title: JAMF Pro 向 Intune 发送的数据
+titleSuffix: Microsoft Intune
 description: Jamf Pro 向 Microsoft Intune 发送的数据的列表
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 01/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: elocholi
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22d81c768fb7f80498da483421f8b358d59ab8c2
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 452d6fafccc2d53d2f6940197ef4a1aa19febfc2
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509528"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro 向 Intune 发送的数据
 
@@ -64,7 +66,7 @@ ms.locfileid: "57233223"
 * 辅助 MAC 地址
 * 序列号
 * SMC 版本
-* RAM 总量
+* 总 RAM
 * UDID
 * 用户电子邮件
 

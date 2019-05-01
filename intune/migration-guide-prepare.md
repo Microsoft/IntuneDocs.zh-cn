@@ -1,28 +1,30 @@
 ---
 title: 为移动设备管理准备 Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 迁移到 Microsoft Intune 之前，请评估业务和技术需求。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 1e21fef5102b22dfe698a9adb73736508452acfe
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e527ed11e451ec0ef2f6d2fde42e0c8fd53408f3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508355"
 ---
-# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>阶段 1：为移动设备管理 (MDM) 准备 Microsoft Intune
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>第 1 阶段：为移动设备管理 (MDM) 准备 Microsoft Intune
 
 在深入了解 Intune 设置的详细信息之前，让我们回顾一下组织的移动设备管理要求。 它可能有助于在当前 MDM 提供程序中运行活动用户的报告，以识别关键用户组。 然后，就可以开始解决[评估 MDM 需求](migration-guide-prepare.md#assess-mdm-requirements)部分中提到的问题。
 
