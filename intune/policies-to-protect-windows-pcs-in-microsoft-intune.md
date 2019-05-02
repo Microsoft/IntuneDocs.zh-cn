@@ -1,6 +1,6 @@
 ---
 title: 保护 Windows 电脑的策略
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 当 Windows 电脑由 Intune 客户端软件管理时，使用这些策略帮助你确保其安全性。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16992d8a80ca42db84cfa071422a779606a99891
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: eead854aed4015c6811441b00c633c58ad2fbc7c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460073"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798531"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>使用策略帮助保护运行 Intune 客户端软件的 Windows 电脑
 

@@ -1,6 +1,6 @@
 ---
 title: 使用 Intune 数据仓库
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用 Intune 数据仓库生成报表，获取有关企业移动环境的见解。
 keywords: Intune 数据仓库
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3112683d44b7c4d4a3e9d1bccc6fb8c06450600
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: MTE75
+ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068858"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798113"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 数据仓库
 

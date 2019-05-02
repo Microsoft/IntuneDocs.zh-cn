@@ -1,6 +1,6 @@
 ---
 title: Intune 数据仓库 API 终结点
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 此参考主题介绍 Microsoft Intune 数据仓库 API URL 结构。 提供了筛选器示例。
 keywords: Intune 数据仓库
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396468"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798488"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 
@@ -53,7 +53,7 @@ Intune 的 URL 使用以下格式：
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | 位置 | msua06 | 可通过查看 Azure 门户中的数据仓库 API 边栏选项卡获取基 URL。 |
 | 实体集合 | 日期 | OData 实体集合的名称。 有关数据模型中集合和实体的详细信息，请参阅[数据模型](reports-ref-data-model.md)。 |
-| api-version | beta | 版本是指要访问的 API 版本。 有关详细信息，请参阅[版本](#API-version-information)。 |
+| api-version | beta | 版本是指要访问的 API 版本。 有关详细信息，请参阅[版本](reports-api-url.md#api-version-information)。 |
 | maxhistorydays | 7 | （可选）要检索的历史记录的最大天数。 此参数可提供给任何集合，但仅对键属性中包含 `dateKey` 的集合生效。 有关详细信息，请参阅 [DateKey 范围筛选器](reports-api-url.md#datekey-range-filters)。 |
 
 ## <a name="api-version-information"></a>API 版本信息

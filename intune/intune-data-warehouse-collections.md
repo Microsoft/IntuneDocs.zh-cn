@@ -1,12 +1,12 @@
 ---
 title: Intune 数据库仓库收集
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune 数据仓库收集提供与数据仓库 API 相关的详细信息。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358311"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429218"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune 数据仓库收集
 
@@ -427,6 +427,85 @@ IntuneManagementExtensionVersion 实体列出 IntuneManagementExtension 使用�
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
 | ExtensionVersionKey | IntuneManagementExtension 版本的唯一标识符。 | 1       |
 | ExtensionVersion    | 4 位版本号。                                   | 1.0.2.0 |
+
+## <a name="mamapplications"></a>MamApplications
+
+MamApplication 实体列出了未在企业中注册便通过移动应用程序管理 (MAM) 托管的业务线 (LOB) 应用。
+
+| 属性 | 描述 | 示例 |
+|---------|------------|--------|
+| mamApplicationKey |MAM 应用程序的唯一标识符。 | 432 |
+| mamApplicationName |MAM 应用程序的名称。 |MAM 应用程序的示例名称 |
+| mamApplicationId |MAM 应用的应用程序 ID。 | 123 |
+| IsDeleted |表明是否已更新此 MAM 应用记录。 <br>True - MAM 应用拥有新纪录，其中含有此表中的更新的字段。 <br>False - 此 MAM 应用的最新记录。 |True/False |
+| StartDateInclusiveUTC |在数据仓库中创建此 MAM 应用时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+| DeletedDateUTC |IsDeleted 更改为 True 时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+| RowLastModifiedDateTimeUTC |上次在数据仓库中修改此 MAM 应用时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+MamApplicationInstance 实体将托管移动应用程序管理 (MAM) 应用列为单个实例（按每设备每用户）。 实体中列出的所有用户和设备都受保护，因为向它们分配了至少一个 MAM 策略。
+
+
+|          属性          |                                                                                                  描述                                                                                                  |               示例                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               数据仓库中 MAM 应用实例的唯一标识符 - 代理键。                                                                |                 123                  |
+|           UserId           |                                                                              已安装此 MAM 应用的用户的用户 ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              MAM 应用实例的唯一标识符 - 类似于 ApplicationInstanceKey，但该标识符是自然键。                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | Mam 应用程序为其创建此 Mam 应用程序实例的应用程序 Id。   | 2016/11/23 - 中午 12:00:00   |
+|     ApplicationVersion     |                                                                                     此 MAM 应用的应用程序版本。                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 创建此 MAM 应用实例记录的日期。 该值可以为 null。                                                                 |        2016/11/23 - 中午 12:00:00        |
+|          平台          |                                                                          安装此 MAM 应用的设备平台。                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      安装此 MAM 应用的设备的平台版本。                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            包装此 MAM 应用时所使用的 MAM SDK 版本。                                                                            |                 3.2                  |
+| mamDeviceId | MAM 应用程序实例与之关联的设备的设备 Id。   | 2016/11/23 - 中午 12:00:00   |
+| mamDeviceType | MAM 应用程序实例与之关联的设备的设备类型。   | 2016/11/23 - 中午 12:00:00   |
+| mamDeviceName | MAM 应用程序实例与之关联的设备的设备名称。   | 2016/11/23 - 中午 12:00:00   |
+|         IsDeleted          | 表明是否已更新此 MAM 应用实例记录。 <br>True - 此 MAM 应用实例拥有新纪录，其中含有此表中的更新的字段。 <br>False - 此 MAM 应用实例的最新记录。 |              True/False              |
+|   StartDateInclusiveUtc    |                                                              在数据仓库中创建此 MAM 应用实例时的 UTC 日期和时间。                                                               |        2016/11/23 - 中午 12:00:00        |
+|       DeletedDateUtc       |                                                                             IsDeleted 更改为 True 时的 UTC 日期和时间。                                                                              |        2016/11/23 - 中午 12:00:00        |
+| RowLastModifiedDateTimeUtc |                                                           上次在数据仓库中修改此 MAM 应用实例时的 UTC 日期和时间。                                                            |        2016/11/23 - 中午 12:00:00        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 应用实例后收集的数据。 
+
+> [!Note]  
+> 若某个应用实例在一天中签入多次，数据仓库会将其存储为签入一次。
+
+| 属性 | 描述 | 示例 |
+|---------|------------|--------|
+| DateKey |日期键，表明在数据仓库中记录 MAM 应用签入的时间。 | 20160703 |
+| ApplicationInstanceKey |与此 MAM 应用签入关联的应用实例的键。 | 123 |
+| UserKey |与此 MAM 应用签入关联的用户的键。 | 4323 |
+| mamApplicationKey |应用程序密钥的应用程序与 MAM 应用签入相关联。 | 432 |
+| DeviceHealthKey |与此 MAM 应用签入关联的 DeviceHealth 的键。 | 321 |
+| PlatformKey |表示与此 MAM 应用签入关联的设备的平台。 |123 |
+| LastCheckInDate |上次签入此 MAM 应用的日期和时间。 该值可以为 null。 |2016/11/23 - 中午 12:00:00 |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+MamDeviceHealth 实体表示部署有移动应用管理 (MAM) 策略的设备（即使是越狱设备）。
+
+| 属性 | 描述 | 示例 |
+|---------|------------|--------|
+| DeviceHealthKey |数据仓库中设备及其相关运行状况的唯一标识符 - 代理键。 |123 |
+| DeviceHealth |设备及其相关运行状况的的唯一标识符 - 类似于 DeviceHealthKey，但该标识符是自然键。 |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |表示设备的状态。 <br>不可用 - 此设备上没有信息。 <br>正常 - 设备未越狱。 <br>不正常 - 设备已越狱。 |不可用 正常 不正常 |
+| RowLastModifiedDateTimeUtc |上次在数据仓库中修改此特定 MAM 设备运行状况时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+MamPlatform 实体列出了安装有移动应用程序管理 (MAM) 应用的平台的名称和类型。
+
+
+|          属性          |                                    描述                                    |                         示例                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     数据仓库中平台的唯一标识符 - 代理键。      |                           123                           |
+|          平台          | 平台的唯一标识符 - 类似于 PlatformKey，但该标识符是自然键。 |                           123                           |
+|        PlatformName        |                                   平台名称                                   | 不可用 <br>无 <br>Windows <br>IOS <br>Android。 |
+| RowLastModifiedDateTimeUtc | 上次在数据仓库中修改此平台时的 UTC 日期和时间。  |                 2016/11/23 - 中午 12:00:00                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
 managementAgentType 实体表示用于管理设备的代理。

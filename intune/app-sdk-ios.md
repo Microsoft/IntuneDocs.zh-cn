@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b19a0100a53cebe66dae9805ac0cc5b5314e8ad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 1a834b1f35bdefd91abfc1ec9ca8b44d4eb593cd
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566771"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533603"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -86,7 +86,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 1. **选项 1（推荐）**：将 `IntuneMAM.framework` 链接到你的项目。 将 `IntuneMAM.framework` 拖到项目目标的“嵌入二进制文件”列表。
 
    > [!NOTE]
-   > 如果使用框架，必须在将应用提交到应用商店之前，从通用框架中手动删除模拟器体系结构。 有关详细信息，请参阅[向 App Store 提交应用](#Submit-your-app-to-the-App-Store)。
+   > 如果使用框架，必须在将应用提交到应用商店之前，从通用框架中手动删除模拟器体系结构。 有关详细信息，请参阅[向 App Store 提交应用](#submit-your-app-to-the-app-store)。
 
    **选项 2**：链接到 `libIntuneMAM.a` 库。 将 `libIntuneMAM.a` 库拖动到项目目标的“链接的框架和库”列表中。
 
@@ -179,7 +179,7 @@ Intune App SDK 使用 [Azure Active Directory Authentication Library](https://gi
 
 3. 如果应用未定义任何 keychain 访问组，请将此应用的程序包 ID 添加为第一个组。
 
-4. 通过向密钥链访问组添加 `com.microsoft.adalcache` 和 `com.microsoft.workplacejoin`，启用 ADAL 单一登录 (SSO)。
+4. 通过向密钥链访问组添加 `com.microsoft.adalcache`，启用 ADAL 单一登录 (SSO)。
 
 5. 如果正在显式设置 ADAL 共享缓存密钥链组，请确保将其设置为 `<appidprefix>.com.microsoft.adalcache`。 除非替代 ADAL，否则它将完成此设置。 如果希望指定一个自定义密钥链组来替代 `com.microsoft.adalcache`，请在“IntuneMAMSettings”下的 Info.plist 文件中使用键 `ADALCacheKeychainGroupOverride` 进行指定。
 
@@ -267,7 +267,7 @@ WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 U
 (void)registerAndEnrollAccount:(NSString *)identity;
 ```
 
-通过调用 `registerAndEnrollAccount` 方法，SDK 会注册用户帐户并尝试代表此帐户注册应用。 如果注册由于任何原因失败，SDK 会在 24 小时后自动重试注册。 出于调试目的，应用可通过委托接收有关任何注册请求的结果的[通知](#Status-result-and-debug-notifications)。
+通过调用 `registerAndEnrollAccount` 方法，SDK 会注册用户帐户并尝试代表此帐户注册应用。 如果注册由于任何原因失败，SDK 会在 24 小时后自动重试注册。 出于调试目的，应用可通过委托接收有关任何注册请求的结果的[通知](#status-result-and-debug-notifications)。
 
 在调用此 API 后，应用可继续正常工作。 如果注册成功，SDK 会通知用户需要重启应用。 此时，用户可立即重启应用。
 
@@ -291,7 +291,7 @@ WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 U
 
 通过调用此方法，如果找不到任何现有令牌，SDK 会提示用户输入凭据。 随后，SDK 会尝试代表提供的用户帐户向 Intune MAM 服务注册应用。 可以使用作为标识的“nil”调用此方法。 在这种情况下，SDK 会使用设备上的现有托管用户进行注册（在 MDM 中），或在找不到任何现有用户时提示用户输入用户名。
 
-如果注册失败，应用应考虑在之后某一时间再次调用此 API，取决于失败的详细信息。 应用可通过委托接收有关任何注册请求的结果的[通知](#Status-result-and-debug-notifications)。
+如果注册失败，应用应考虑在之后某一时间再次调用此 API，取决于失败的详细信息。 应用可通过委托接收有关任何注册请求的结果的[通知](#status-result-and-debug-notifications)。
 
 在调用此 API 后，应用可继续正常工作。 如果注册成功，SDK 会通知用户需要重启应用。
 
@@ -432,7 +432,7 @@ MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指
 
 可调用 Intune App SDK 的几个 API 来获取有关部署到应用的 Intune APP 策略信息。 可以使用此数据自定义应用行为。 下表介绍了将使用的一些基本 Intune 类。
 
-类 | 描述
+实例 | 描述
 ----- | -----------
 IntuneMAMPolicyManager.h | IntuneMAMPolicyManager 类公开部署到应用程序的 Intune APP 策略。 值得注意的是，它公开对[启用多身份标识](app-sdk-ios.md#enable-multi-identity-optional)有用的 API。 |
 IntuneMAMPolicy.h | IntuneMAMPolicy 类公开一些适用于该应用的 MAM 策略设置。 公开这些策略以便应用自定义其 UI。 大多数策略设置由 SDK 而不是应用实现。 “另存为”控件是应由应用实现的唯一设置。 此类公开了实现“另存为”所需的一些 API。 |

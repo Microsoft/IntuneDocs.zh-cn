@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394994"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423690"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -138,7 +138,10 @@ ms.locfileid: "58394994"
 - **SIM 卡错误对话框(仅限移动版)**：阻止在未检测到 SIM 卡时在设备上显示错误消息。
 - **墨迹工作区**：阻止用户访问墨迹工作区。 “未配置”可启用墨迹工作区，并且允许用户在锁屏界面上使用它。
 - **自动重新部署**：允许具有管理权限的用户在设备锁定屏幕上使用 CTRL+Win+R 删除所有用户数据和设置。 设备会自动进行重新配置并重新注册到管理。
-- **要求用户在设备设置期间连接到网络(仅限 Windows 预览体验)**：选择“必需”以便在 Windows 10 安装过程中设备先连接到网络，然后再继续通过“网络”页。 虽然此功能处于预览状态，但 Windows 预览体验内部版本 1809 或更高版本需要使用此设置。
+- **要求用户在设备设置期间连接到网络(仅限 Windows 预览体验)**：选择“必需”以便在 Windows 10 安装过程中设备先连接到网络，然后再继续通过“网络”页。
+
+  下一次设备擦除或重置，该设置才会生效。 像任何其他 Intune 配置，必须注册设备，并由 Intune 以接收配置设置中。 但注册一次，并接收策略，然后重置设备强制执行在下一步的 Windows 安装过程中设置。
+
 - **直接内存访问**：“阻止”将防止所有热插拔 PCI 下游端口进行直接内存访问 (DMA)，直到用户登录 Windows。 “启用”（默认设置）允许访问 DMA，即使用户未登录。
 
   CSP：[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
@@ -305,6 +308,29 @@ ms.locfileid: "58394994"
   - **防止重用以前的密码**：指定设备记住的以前用过的密码数目。
   - **设备从空闲状态返回时需要输入密码(仅限移动版)**：指定用户必须输入密码才能解锁设备（仅限 Windows 10 移动版）。
   - **简单密码**：允许使用简单密码，如 1111 和 1234。 此设置还允许或阻止使用 Windows 图片密码。
+- **在 AADJ 期间自动加密**:**块**设备已加入 Azure AD 时，设备准备首次使用时，会阻止自动 BitLocker 设备加密。 **未配置**（默认值） 使用操作系统默认值，可以启用加密。 详细信息[BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
+
+  [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **联邦信息处理标准 (FIPS) 策略**:**允许**使用联邦信息处理标准 (FIPS) 策略，这是美国政府标准的加密、 哈希和签名。 **未配置**（默认值） 使用操作系统默认值，它不使用 FIPS。
+
+  [加密/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Windows Hello 设备身份验证**:**允许**用户使用 Windows Hello 配套设备，例如电话、 适用性外或 IoT 设备，若要登录到 Windows 10 计算机。 **未配置**（默认值） 使用操作系统默认值，这可能会阻止 Windows Hello 配套设备使用 Windows 进行身份验证。
+
+  [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Web 登录**： 启用 Windows 登录支持非 ADFS （Active Directory 联合身份验证服务） 联合提供程序，例如安全断言标记语言 (SAML)。 SAML 使用安全令牌，用于实现单一登录 (SSO) 的 web 浏览器体验。 选项包括：
+
+  - **未配置**（默认值）： 在设备上使用操作系统默认值。
+  - **启用**: Web 凭据提供程序进行登录。
+  - **禁用**： 登录已禁用 Web 凭据提供程序。
+
+  [身份验证/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **首选 Azure AD 租户域**： 输入 Azure AD 组织中现有的域名。 当此域中的用户登录时，他们无需键入域的名称。 例如，输入 `contoso.com`。 中的用户`contoso.com`域中可以使用登录其用户名，例如"abby"，而不是"abby@contoso.com"。
+
+  [身份验证/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>每应用隐私异常
 

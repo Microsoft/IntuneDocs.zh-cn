@@ -1,12 +1,12 @@
 ---
 title: 在开发的 Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: 中开发的 Microsoft Intune 功能
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675436"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587376"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>在开发中 Microsoft Intune-2019 年 4 月
 
 以帮助你准备和规划，此页列出了 Intune UI 更新和功能正在开发中，但尚未释放。 此外：
 
-- 如果我们希望，您将需要采取措施在更改前的，我们将发布免费的 Office 消息中心文章。
+- 如果我们希望，您将需要采取措施在更改前的，我们将发布互为补充的 Office 消息中心文章。
 - 当作为预览功能启动在生产中，或已公开发布，功能说明将移动关闭此页和到上[新增功能页](whats-new.md)。
 - 此页并[新增功能页](whats-new.md)会定期更新。 返回查看其他更新。
 - 请参阅[M365 路线图](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS)战略可交付结果和时间线。
@@ -60,18 +60,6 @@ ms.locfileid: "58675436"
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>需要应用保护条件性访问  <!--1634317 -->
 你将能够使用*需要应用保护策略*，这可确认策略会在登录完成以防止用户访问使用条件性访问所保护的数据之前应用到用户的应用。 虽然策略保障可能会减慢第一次的使用体验，它有助于防止出现网络问题、 管理配置错误、 或有意的工作以避免受到应用程序保护策略。 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>部署获得许可的适用于企业的 Microsoft Store 联机应用 <!-- 16726660 -->
-你将能够在设备上下文中分配所需的适用于企业的 Microsoft Store 联机应用，这些应用已获得许可。 如果以这种方式部署适用于企业的 Microsoft Store 应用，则可在设备上为所有用户安装该应用。 这仅适用于 Windows 10 RS4+ 桌面版设备。 对于获得许可的适用于企业的 Microsoft Store 联机应用，可在客户端应用分配页面中选择安装在设备上下文中。
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>包括和排除各种用户组和设备组分配策略和配置文件时 <!-- 1807547 -->
-如果将分配符合性策略或配置文件，可以直接将其分配给安全组，与用户或设备。 目前，你可以包括和排除仅用户组，*或*包括和排除仅设备组。 您不能包括和排除的混合组，如包括用户组*和*排除设备组。
-
-您可以包括和排除多个用户组和设备组。 可包含一组用户，并排除设备组。 例如，可以分配或将设备配置文件部署到一组用户，但排除个人设备。
-
-[分配设备配置配置文件](device-profile-assign.md)包括将配置文件分配给用户组和设备组的详细信息。
-
-适用于： 所有平台
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>停用不符合要求的设备 <!-- 1827291 -->
 我们要添加新的符合性操作停用的不符合要求的设备。 正在停用不符合要求的设备，删除所有公司数据并也由 Intune 管理中都删除设备。 此操作运行时达到配置的值以天为单位。 最小值为 30 天。 
@@ -142,7 +130,7 @@ Intune 将支持具有 OEMConfig 配置 Android 企业设备。 具体而言，�
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>检查了在 Windows 10 设备符合性策略中的 TPM 芯片集 <!-- 3617671 -->
 许多 Windows 10 和更高版本设备都有受信任的平台模块 (TPM) 芯片集。 新的符合性设置将检查 TPM 是否在设备上。
 
-[Windows 10 和更高版本的符合性策略设置](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)列出了当前设置。
+[Windows 10 和更高版本的符合性策略设置](compliance-policy-create-windows.md)列出了当前设置。
 
 适用于： 
 - Windows 10 及更高版本
@@ -177,15 +165,6 @@ Intune 将支持具有 OEMConfig 配置 Android 企业设备。 具体而言，�
 
 ### <a name="windows-update-notifications----3316782---"></a>Windows 更新通知 <!-- 3316782 -->
 我们添加了支持与 Windows 更新环配置以便你将能够配置您的用户看到的 Windows 更新通知。 此设置不会在门户中，从可用，但可以使用 Intune Graph API 进行配置。
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>将 12 个设备用户更改为适用于 iOS 的公司门户注册 <!--3448635 --> 
-将更新适用于 iOS 的公司门户应用注册屏幕和步骤与在 Apple iOS 12.2 中发布的 MDM 注册更改保持一致。 更新的工作流现在将提示用户：
-
-- 允许使用 Safari 打开公司门户网站 （通过 Safari) 并返回到公司门户应用之前下载的管理配置文件。
-- 打开设置应用在其设备上安装管理配置文件。
-- 返回到完成注册的公司门户应用。
-
-有关如何准备这些更改的详细信息，请参阅[Microsoft 技术社区文章](https://aka.ms/CP_changes_iOS12)。 在此期间，若要在公司门户中支持新的 iOS 注册，我们已更新中的步骤[在 Intune 中的注册 iOS 设备](https://docs.microsoft.com/en-us/intune/ios-enroll)。 Apple 发布 iOS 版本 12.2 后，这些文档更改都将实时。 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>更轻松地访问诊断设置 <!-- 3804627 -->
 我们将添加到一个新选项**审核日志**边栏选项卡中可用于直接打开在 Intune 控制台中每个审核日志工作负载*诊断设置*页。
