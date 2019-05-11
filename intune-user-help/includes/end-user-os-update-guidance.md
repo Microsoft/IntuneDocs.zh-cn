@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bbad42e478fadcb40f35d621e805367e60944a00
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MTE75
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490462"
+---
   > [!NOTE]
   > 保持设备为最新可使你访问最新功能，还可确保设备的操作系统版本最安全。 Microsoft 和大多数主要供应商一般会建议将个人和公司设备保留为所提供的最新版本软件。
 
