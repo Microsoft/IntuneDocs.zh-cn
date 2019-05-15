@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504192"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135222"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>为 Intune 中不符合要求的设备自动发送电子邮件和添加操作
 
@@ -103,9 +103,6 @@ ms.locfileid: "61504192"
          - 通过选择组输入任何“其他收件人”
     
     - **远程锁定不符合要求的设备**：当设备不符合要求时，锁定设备。 该操作会强制用户输入 PIN 或密码来解锁设备。 
-
-    - **停用不符合要求的设备**：当设备不符合要求时，从设备中删除所有公司数据并从 Intune 管理中删除设备。 为防止意外擦除设备，此操作支持的最短计划时间为 30 天。  
-
     
 5. 配置计划:输入非符合性状态触发用户设备操作之后的宽限天数（0 到 365 天）。 在此宽限期之后，可以强制执行条件访问策略。 如果输入“0”（零）天，则条件访问将立即生效。 例如，如果设备不符合要求，可以立即阻止其对公司资源的访问。
 

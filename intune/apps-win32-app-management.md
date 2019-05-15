@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426147"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135124"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 独立版 - Win32 应用管理
 
@@ -142,8 +142,8 @@ ms.locfileid: "62426147"
     例如，如果应用文件名为“MyApp123”，请添加以下内容：<br>
     `msiexec /p “MyApp123.msp”`<p>
     此外，如果应用程序为 `ApplicationName.exe`，命令将为应用程序名称，后跟程序包支持的命令参数（开关）。 <br>例如：<br>
-    `ApplicationName.exe /quite`<br>
-    在上述命令中，`ApplicaitonName.exe` 程序包支持 `/quite` 命令参数。<p> 如需获取应用程序包支持的特定参数，请联系应用程序供应商。
+    `ApplicationName.exe /quiet`<br>
+    在上述命令中，`ApplicationName.exe` 程序包支持 `/quiet` 命令参数。<p> 如需获取应用程序包支持的特定参数，请联系应用程序供应商。
 
 3.  添加根据应用的 GUID 卸载应用的完整卸载命令行。 
 
@@ -282,9 +282,6 @@ ms.locfileid: "62426147"
 ## <a name="app-dependencies"></a>应用依赖项
 
 应用依赖项是在能够安装 Win32 应用前必须安装的应用程序。 可以要求将其他应用作为依赖项安装。 具体来说，设备必须先安装相关应用，再安装 Win32 应用。 最多有 100 个依赖项，其中包括任何已包含的依赖项，以及应用本身的依赖项。 仅在向 Intune 添加并上传 Win32 应用之后，才可以添加 Win32 应用依赖项。 添加 Win32 应用之后，Win32 应用的边栏选项卡上将显示“依赖项”选项。 
-
-> [!NOTE]
-> 只有在 Intune 管理代理升级到 1904 版本（1.18.120.0 之后的版本）后的一到两周才能使用应用依赖项功能。
 
 添加应用依赖项时，可以根据应用名称和发布者进行搜索。 此外，还可根据应用名称和发布者对已添加的依赖项进行排序。 在已添加的应用依赖项列表中无法选中之前添加的应用依赖项。 
 
