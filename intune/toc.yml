@@ -552,6 +552,8 @@
               href: app-configuration-policies-use-ios.md
             - name: Android 托管设备
               href: app-configuration-policies-use-android.md
+            - name: 用于 Android Enterprise 的托管主屏幕应用
+              href: app-configuration-managed-home-screen-app.md
             - name: 托管应用
               href: app-configuration-policies-managed-app.md
             - name: 使用 iOS 应用预配配置文件
