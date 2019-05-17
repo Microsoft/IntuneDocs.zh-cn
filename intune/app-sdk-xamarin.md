@@ -91,18 +91,18 @@ SDK 依靠 [Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 移动应用中启用 Intune 应用保护策略
 
 1. 向 Xamarin.Android 项目添加 [Microsoft.Intune.MAM.Xamarin.Android NuGet 包](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)。
-    1. 对于 Xamarin.Forms 应用中，添加[Microsoft.Intune.MAM.Remapper.Tasks NuGet 包](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks)到你的 Xamarin.Android 项目。 
-2. 请按照所需的常规步骤[集成 Intune App SDK](app-sdk-android.md)到 Android 移动应用中时引用此文档的其他详细信息。
+    1. 对于 Xamarin.Forms 应用，还要将 [Microsoft.Intune.MAM.Remapper.Tasks NuGet 包](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks)添加到 Xamarin.Android 项目中。 
+2. 按照[将 Intune App SDK 集成](app-sdk-android.md)到 Android 移动应用中所需的一般步骤进行操作，同时参阅此文档以获取更多详细信息。
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android 集成
 
-用于集成 Intune App SDK 的完整概述可在[Microsoft Intune App SDK for Android 开发人员指南](app-sdk-android.md)。 在阅读本指南和 Intune App SDK 与你的 Xamarin 应用集成以下各节旨在突出显示实现之间的差异，在 Java 中开发本机 Android 应用和 Xamarin 应用程序开发中C#。 这些部分应处理为补充，并且不能充当阅读整个指南的替代。
+有关集成 Intune App SDK 的完整概述，请参阅[面向 Android 开发人员的 Microsoft Intune App SDK for Android 指南](app-sdk-android.md)。 阅读本指南并将 Intune App SDK 与 Xamarin 应用集成时，下面几部分着重介绍用 Java 开发的本机 Android 应用和用 C# 开发的 Xamarin 应用的实现之间的差异。 这些部分应视为补充部分，不能因此不阅读完整指南。
 
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重命名的方法](app-sdk-android.md#renamed-methods)
 在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `OnCreate()` 并调用 `base.OnCreate()`）时，`Activity` 必须替代 `OnMAMCreate()` 并调用 `base.OnMAMCreate()`。
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 应用程序](app-sdk-android.md#mamapplication)
-您的应用程序必须定义`Android.App.Application`继承的类`MAMApplication`。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
+应用必须定义一个继承自 `MAMApplication` 的 `Android.App.Application` 类。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -111,7 +111,7 @@ SDK 依靠 [Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com
         : base(handle, transfer) { }
 ```
 > [!NOTE]
-> 使用 MAM Xamarin 绑定问题可能会导致应用程序崩溃时在调试模式下部署。 解决方法是，`Debuggable=false`必须将属性添加到`Application`类和`android:debuggable="true"`标志必须从在清单，如果手动进行设置。
+> 在“调试”模式下部署时，MAM Xamarin 绑定的问题可能导致应用程序故障。 变通方法是必须将 `Debuggable=false` 属性添加到 `Application` 类，并且如果手动设置，则必须从清单中删除 `android:debuggable="true"` 标记。
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[启用需要应用参与的功能](app-sdk-android.md#enable-features-that-require-app-participation)
 示例：确定应用是否需要 PIN
@@ -149,12 +149,12 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms 集成
 
-有关`Xamarin.Forms`我们提供了应用程序`Microsoft.Intune.MAM.Remapper`包来自动执行 MAM 类替换，通过将注入`MAM`类划分为类层次结构的常用`Xamarin.Forms`类。 
+对于 `Xamarin.Forms` 应用程序，我们提供了 `Microsoft.Intune.MAM.Remapper` 包，以便将 `MAM` 类注入常用 `Xamarin.Forms` 类的类层次结构中，从而自动执行 MAM 类替换。 
 
 > [!NOTE]
-> Xamarin.Forms 集成是对上面详细说明的 Xamarin.Android 集成此外完成。
+> 除了上面详述的 Xamarin.Android 集成之外，还要完成 Xamarin.Forms 集成。
 
-Remapper 添加到你的项目后，需要执行的 MAM 等效替换。 例如，`FormsAppCompatActivity`并`FormsApplicationActivity`可以继续使用为你提供应用程序重写中`OnCreate`并`OnResume`替换为 MAM 等效项`OnMAMCreate`和`OnMAMResume`分别。
+将重映射器添加到项目后，需要执行 MAM 等效替换。 如果将对 `OnCreate` 和 `OnResume` 的替代分别替换为 MAM 等效的 `OnMAMCreate` 和 `OnMAMResume`，则 `FormsAppCompatActivity` 和 `FormsApplicationActivity` 可以继续在应用程序中使用。
 
 ```csharp
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -166,13 +166,13 @@ Remapper 添加到你的项目后，需要执行的 MAM 等效替换。 例如�
             LoadApplication(new App());
         }
 ```
-如果不会将替换内容然后你可能会遇到以下编译错误之前进行替换：
+如果未进行替换，则在进行替换之前可能会遇到以下编译错误：
 * [编译器错误 CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239)。 此错误常见于此窗体 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``。
 这是预期结果，因为当重映射器修改 Xamarin 类的继承时，将 `sealed` 某些函数，并添加新的 MAM 变量来替代。
-* [编译器错误 CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507)： 此窗体中通常出现此错误``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``。 当重映射器更改一些 Xamarin 类的继承时，某些成员函数将更改为 `public`。 如果重写任一这些函数，您需要更改这些访问修饰符的重写为`public`也。
+* [编译器错误 CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507)：此错误常见于此窗体 ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``。 当重映射器更改一些 Xamarin 类的继承时，某些成员函数将更改为 `public`。 如果替代任何这些函数，则还需要将这些替代的访问修饰符更改为 `public`。
 
 > [!NOTE]
-> Remapper 重新编写 Visual Studio 使用 IntelliSense 自动完成功能的依赖项。 因此，您可能需要重新加载并 Remapper 添加 intellisense 能够正确识别所做的更改时重新生成项目。
+> 重映射器重写了 Visual Studio 用于 IntelliSense 自动完成的依赖项。 因此，在为 IntelliSense 添加重映射器时，可能需要重载并重新生成项目，以正确识别更改。
 
 ## <a name="support"></a>Support
-如果你的组织已经是 Intune 的客户，请与 Microsoft 支持代表合作打开支持票证并在 [Github 问题页](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上创建一个问题，我们会尽快为你提供帮助。 
+如果你的组织已经是 Intune 的客户，请与 Microsoft 支持代表合作，开立支持票证并在 [GitHub 问题页](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上创建一个问题，我们会尽快为你提供帮助。 

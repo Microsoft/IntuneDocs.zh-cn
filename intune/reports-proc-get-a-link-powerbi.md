@@ -1,12 +1,12 @@
 ---
 title: 使用 Power BI 连接到数据仓库
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 可下载一个文件与 Microsoft Power BI 结合使用，从而为 Microsoft Intune 租户加载动态生成的交互式报表。
 keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b93bb9911fa93998e443a797d085a568280c278
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
-ms.translationtype: MTE75
+ms.openlocfilehash: 259d700d04547a801b0ebc37242dacf536ad61d3
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618495"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871372"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 连接到数据仓库
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-可下载一个文件与 Microsoft Power BI 结合使用，从而为 Intune 租户加载动态生成的交互式报表。 数据仓库 Power BI 文件 (pbix) 包含租户连接设置及以下示例报表和图表：  
+可使用 Power BI 符合性应用为 Intune 租户加载交互式动态生成的报告。 此外，可使用 OData 链接在 Power BI 中加载租户数据。 Intune 为你的租户提供连接设置，使你可以查看与以下内容相关的示例报表和图表：  
 
   -  设备
   -  注册
@@ -47,29 +47,36 @@ ms.locfileid: "58618495"
 
 ## <a name="install-power-bi"></a>安装 Power BI
 
-安装最新版本的 Power BI Desktop。 可从 [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) 下载 Power BI Desktop
+安装最新版本的 [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi)。 有关详细信息，请参阅 [Power BI Desktop](https://powerbi.microsoft.com/desktop)
 
-## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>使用 Power BI 文件 (pbix) 加载数据和报表
+## <a name="load-the-data-and-reports-using-the-power-bi-intune-compliance-data-warehouse-app"></a>使用 Power BI Intune 符合性数据仓库应用加载数据和报表
 
-Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据模型的预置报表。 在 Power BI Desktop 中打开文件并登录 Azure AD。 报表从 Intune 租户加载数据。
+Power BI [Intune 符合性数据仓库应用](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)包含租户信息和一组基于数据仓库数据模型的预置报表。
 
-> [!Important]  
-> 每个 Power BI 文件 (pbix) 可能会因租户位置而有所不同。 如果要管理多个 Intune 租户，请在登录该租户时，确保使用从 Azure 门户下载的文件。  
+1.  导航到 [Intune 符合性数据仓库应用](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)以开始安装过程。
+2.  当系统提示从受信任的源安装 Power BI 应用时，单击“安装”。
+3.  单击“Intune 符合性数据仓库应用”磁贴。
+4.  单击“连接数据”按钮。 
+    随即显示“连接到 Intune 符合性数据仓库应用”对话框。
+5.  单击“登录”按钮。
+6.  使用用户帐户登录，此帐户具有你要查看报表的租户的 Intune 数据仓库访问权限。 
+7.  单击“报表”选项卡，然后单击“符合性 V1.0”报表。
+8.  若要稍后轻松导航回到这些报表，请单击“符合性 V1.0”报表旁边的星标。 这会将报告添加到 Power BI 收藏夹中。
 
-1.  登录 Azure 门户，选择“监视 + 管理” > “Intune”。 还可搜索 Intune 资源。  
-2.  打开**设置 Intune 数据仓库**边栏选项卡。
-3.  选择“下载 PowerBI 文件”。 扩展名为 (Pbix) 的文件将下载到指定位置。
-4.  使用 Power BI 打开文件。 此时会加载“Intune 数据仓库报表”，但可能需要一些时间才能获取租户数据。
-5.  选择“刷新”，加载租户数据并查看报表。
-6.  如果 Power BI 尚未对 Azure Active Directory 凭据进行身份验证，则 Power BI 会提示用户提供凭据。 选择凭据时，请选择“组织帐户”作为身份验证方法。
+或者，从 Intune 门户安装应用：
+
+1.  登录 Azure 门户，选择“监视 + 管理” > “Intune”。 还可为 Intune 搜索资源。
+2.  打开“设置 Intune 数据仓库”边栏选项卡。
+3.  选择“获取 Power BI 应用”以访问和共享浏览器中为租户预创建的 Power BI 报表。
+4.  请按照上述步骤 2-8 操作。
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>使用 OData 链接加载 Power BI 中的数据
 
 借助经 Azure AD 身份验证的客户端，OData URL 可连接到数据仓库 API 中的 RESTful 终结点，该终结点向报告客户端公开数据模型。 按以下说明使用 Power BI Desktop 连接并创建自己的报表。 无需局限于 Power BI Desktop，可将自己最喜爱的分析工具与 OData URL 配合使用，前提是客户端支持 OAUTH2.0 身份验证和 OData v4.0 标准。
 
 1.  登录 Azure 门户，选择“监视 + 管理” > “Intune”。 还可搜索 Intune 资源。  
-2.  打开**设置 Intune 数据仓库**边栏选项卡。
-3. 在报表边栏选项卡中检索自定义源 URL，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+2.  打开“设置 Intune 数据仓库”边栏选项卡。
+3. 在报表边栏选项卡中检索自定义源 URL，例如 `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. 打开 Power BI Desktop。
 5. 选择“开始” > “获取数据”。 选择“OData 源”。
 6. 选择“基本”。
@@ -84,7 +91,7 @@ Power BI 文件 (pbix) 包含租户连接信息和一组基于数据仓库数据
 
 ## <a name="next-steps"></a>后续步骤
 
-可获取环境相关问题的答案，例如在上周白天注册的设备数。 可借助一些报表来获取有关 Intune 租户和客户总体的见解，这些报表使用从 Azure 中边栏选项卡检索的 Intune 数据仓库 Power BI 文件 (pbix)。 同时，Intune 还提供其他许多扩展或重用数据的方法。 可使用 Power BI 和 Intune 数据仓库 API 执行的操作还有许多，例如：
+可获取环境相关问题的答案，例如在上周白天注册的设备数。 可使用从 Azure 边栏选项卡中检索的 Intune 数据仓库 Power BI 报表来获取有关 Intune 租户和客户端总体的见解。 同时，Intune 还提供其他许多扩展或重用数据的方法。 Power BI 和 Intune 数据仓库 API 提供其他功能，例如：
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  已整理租户数据，便于用户从数据中获取见解。 有关数据组织方式的详细信息，请参阅[数据仓库数据模型](reports-ref-data-model.md)。

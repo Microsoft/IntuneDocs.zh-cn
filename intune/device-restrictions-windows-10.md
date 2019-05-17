@@ -29,7 +29,7 @@ ms.locfileid: "59423690"
 这些设置将添加到 Intune 中的设备配置配置文件中，然后分配或部署到 Windows 10 设备。
 
 > [!Note]
-> 并非所有选项在所有版本的 Windows 上都可用。 若要查看支持的版本，请参阅[策略的 Csp](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) （将打开另一个 Microsoft 网站上）。
+> 并非所有选项在所有版本的 Windows 上都可用。 若要查看受支持的版本，请参阅 [policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)（策略 CSP）（打开另一个 Microsoft 网站）。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -138,15 +138,15 @@ ms.locfileid: "59423690"
 - **SIM 卡错误对话框(仅限移动版)**：阻止在未检测到 SIM 卡时在设备上显示错误消息。
 - **墨迹工作区**：阻止用户访问墨迹工作区。 “未配置”可启用墨迹工作区，并且允许用户在锁屏界面上使用它。
 - **自动重新部署**：允许具有管理权限的用户在设备锁定屏幕上使用 CTRL+Win+R 删除所有用户数据和设置。 设备会自动进行重新配置并重新注册到管理。
-- **要求用户在设备设置期间连接到网络(仅限 Windows 预览体验)**：选择“必需”以便在 Windows 10 安装过程中设备先连接到网络，然后再继续通过“网络”页。
+- **要求用户在设备设置期间连接到网络**：选择“需要”以便在 Windows 10 安装过程中设备先连接到网络，然后再通过“网络”页。
 
-  下一次设备擦除或重置，该设置才会生效。 像任何其他 Intune 配置，必须注册设备，并由 Intune 以接收配置设置中。 但注册一次，并接收策略，然后重置设备强制执行在下一步的 Windows 安装过程中设置。
+  该设置在下次擦除或重置设备时生效。 与任何其他 Intune 配置一样，该设备必须由 Intune 注册和管理才能接收配置设置。 但注册后，接收策略并在下一次 Windows 设置期间重置设备会强制执行该设置。
 
 - **直接内存访问**：“阻止”将防止所有热插拔 PCI 下游端口进行直接内存访问 (DMA)，直到用户登录 Windows。 “启用”（默认设置）允许访问 DMA，即使用户未登录。
 
   CSP：[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
-- **结束进程从任务管理器**： 此设置确定是否以非管理员可以使用任务管理器到结束任务。 选择“阻止”，则会阻止标准用户（非管理员）使用任务管理器结束设备上的进程或任务。 选择“未配置”（默认选项），则会允许标准用户使用任务管理器结束进程或任务。
+- **从任务管理器结束进程**：此设置确定非管理员是否可以使用任务管理器来结束任务。 选择“阻止”，则会阻止标准用户（非管理员）使用任务管理器结束设备上的进程或任务。 选择“未配置”（默认选项），则会允许标准用户使用任务管理器结束进程或任务。
 
 ## <a name="locked-screen-experience"></a>锁定屏幕体验
 
@@ -167,26 +167,26 @@ ms.locfileid: "59423690"
 
 ### <a name="use-microsoft-edge-kiosk-mode"></a>使用 Microsoft Edge 展台模式
 
-根据你选择的更改可用设置。 选项包括：
+可用设置因你所选的项而异。 选项包括：
 
-- **不**（默认值）： Microsoft Edge 不在展台模式下运行。 所有 Microsoft Edge 设置都都可供你更改和配置。
-- **数字/Interactive 标志 （单应用展台）**： 适用于数字/Interactive 招牌 Microsoft Edge 展台模式仅在 Windows 10 单应用展台上使用的筛选器 Microsoft Edge 设置。 选择此设置以打开 URL 的全屏模式，并仅显示该网站上的内容。 [设置数字的符号](https://docs.microsoft.com/windows/configuration/setup-digital-signage)提供了有关此功能的详细信息。
-- **InPrivate 公共浏览 （单应用展台）**： 适用于 InPrivate 公共浏览 Microsoft Edge 的展台模式在 Windows 10 单应用展台上使用的筛选器 Microsoft Edge 设置。 在运行多选项卡版本的 Microsoft Edge。
-- **正常模式 （多应用展台）**： 适用于正常 Microsoft Edge 展台模式的筛选器 Microsoft Edge 设置。 与所有的浏览功能在运行完整版本的 Microsoft Edge。
-- **公共浏览 （多应用展台）**： 适用于 Windows 10 多应用展台上的公共浏览的筛选器 Microsoft Edge 设置。  在运行 Microsoft Edge InPrivate 多选项卡的版本。
+- **否**（默认）：Microsoft Edge 未在展台模式下运行。 可更改和配置所有 Microsoft Edge 设置。
+- **数字/交互式标牌（单应用展台）**：筛选适用于数字/交互式标牌 Microsoft Edge 展台模式的 Microsoft Edge 设置，仅用于 Windows 10 单应用展台。 选择此设置可打开 URL 全屏，仅显示该网站上的内容。 [设置数字标牌](https://docs.microsoft.com/windows/configuration/setup-digital-signage)提供有关此功能的详细信息。
+- **InPrivate 公共浏览（单应用展台）**：筛选适用于 InPrivate 公共浏览 Microsoft Edge 展台模式的 Microsoft Edge 设置，用于 Windows 10 单应用展台。 运行 Microsoft Edge 的多选项卡版本。
+- **普通模式(多应用展台)**：筛选适用于普通 Microsoft Edge 展台模式的 Microsoft Edge 设置。 使用所有浏览功能运行完整版 Microsoft Edge。
+- **公共浏览（多应用展台）**：筛选适用于 Windows 10 多应用展台上公共浏览的 Microsoft Edge 设置。  运行 Microsoft Edge InPrivate 的多选项卡版本。
 
 > [!TIP]
-> 有关这些选项所执行的操作的详细信息，请参阅[Microsoft Edge 展台模式配置类型](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)。
+> 有关这些选项用途的详细信息，请参阅 [Microsoft Edge 展台模式配置类型](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)。
 
-此设备限制配置文件直接与展台配置文件，使用来创建[Windows 展台设置](kiosk-settings-windows.md)。 总结：
+此设备限制配置文件与你使用 [Windows 展台设置](kiosk-settings-windows.md)创建的展台配置文件直接相关。 总结：
 
-1. 创建[Windows 展台设置](kiosk-settings-windows.md)要在展台模式下运行设备配置文件。 选择 Microsoft Edge 作为应用程序并将 Microsoft Edge 展台模式设置展台配置文件中。
-2. 创建此文章中所述的设备限制配置文件和配置特定功能和 Microsoft Edge 中允许的设置。 请务必选择作为展台配置文件中所选的同一 Microsoft Edge 展台模式类型 ([Windows 展台设置](kiosk-settings-windows.md))。 
+1. 创建 [Windows 展台设置](kiosk-settings-windows.md)配置文件以在展台模式下运行设备。 选择 Microsoft Edge 作为应用程序，并在展台配置文件中设置 Microsoft Edge 展台模式。
+2. 创建本文中介绍的设备限制配置文件，并配置 Microsoft Edge 中允许的特定功能和设置。 请务必选择展台配置文件中所选的同一 Microsoft Edge 展台模式类型（[Windows 展台设置](kiosk-settings-windows.md)）。 
 
-    [支持的展台模式设置](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode)是一个不错的资源。
+    [受支持的展台模式设置](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode)是出色的资源。
 
 > [!IMPORTANT] 
-> 请务必将此 Microsoft Edge 配置文件分配到同一设备为你网亭的配置文件 ([Windows 展台设置](kiosk-settings-windows.md))。
+> 请务必将此 Microsoft Edge 配置文件分配到与展台配置文件相同的设备（[Windows 展台设置](kiosk-settings-windows.md)）。
 
 [ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
@@ -208,11 +208,11 @@ ms.locfileid: "59423690"
 - **用户可以更改主页按钮**：“允许”可让用户更改主页按钮。 用户的更改会覆盖对主页按钮进行的任何管理员设置。 “未配置”可在设备上使用 OS 默认行为，这可能会阻止用户更改管理员配置主页按钮的方式。
 - **显示首次运行体验页**：“阻止”可在首次运行 Microsoft Edge 时阻止显示简介页。 借助此功能，诸如在零排放配置中注册的企业组织可以阻止此页面。 “未配置”可显示简介页。
   - **首次运行体验 URL**：输入用户首次运行 Microsoft Edge 时要显示的页面 URL（仅限 Windows 10 移动版）。
-- **在空闲时间后刷新浏览器**： 输入空闲前的分钟数刷新浏览器时，从 0-1440年分钟。 默认值是`5`分钟。 如果设置为`0`（零），在空闲后不会刷新浏览器。
+- **空闲时间后刷新浏览器**：输入刷新浏览器之前的空闲分钟数，范围为 0-1440 分钟。 默认为 `5` 分钟。 设置为 `0`（零）时，浏览器在空闲后不刷新。
 
-  在运行时，此设置才可用[公共 InPrivate 浏览 （单应用展台）](#use-microsoft-edge-kiosk-mode)。
+  此设置仅在 [InPrivate 公共浏览（单应用展台）](#use-microsoft-edge-kiosk-mode)中运行时可用。
 
-  CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
+  CSP：[ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
 
 - **弹出窗口**：选择“阻止”可阻止浏览器中的弹出窗口。 仅适用于 Windows 10 桌面版。 “未配置”则允许 Web 浏览器中的弹出窗口。
 - **将 Intranet 流量发送到 Internet Explorer**：“允许”可让用户在 Internet Explorer 中打开 Intranet 网站（仅限 Windows 10 桌面版）。 “未配置”则允许用户使用 Microsoft Edge。
@@ -245,11 +245,11 @@ ms.locfileid: "59423690"
   - Yahoo
   - 自定义值
 - **搜索建议**：“未配置”允许搜索引擎在你在地址栏中键入搜索短语时建议站点。 “阻止”则阻止此功能。
-- **允许搜索引擎方面的更改**:**是**（默认值），用户可以添加新的搜索引擎，或更改 Microsoft Edge 中的默认搜索引擎。 选择**否**以防止用户自定义搜索引擎。
+- **允许更改搜索引擎**：“是”（默认）允许用户添加新搜索引擎，或更改 Microsoft Edge 中的默认搜索引擎。 选择“否”可阻止用户自定义搜索引擎。
 
-  在运行时，此设置才可用[正常模式 （多应用展台）](#use-microsoft-edge-kiosk-mode)。
+  此设置仅在[普通模式（多应用展台）](#use-microsoft-edge-kiosk-mode)中运行时可用。
 
-  CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
+  CSP：[AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
 ### <a name="privacy-and-security"></a>隐私和安全性
 
@@ -308,29 +308,29 @@ ms.locfileid: "59423690"
   - **防止重用以前的密码**：指定设备记住的以前用过的密码数目。
   - **设备从空闲状态返回时需要输入密码(仅限移动版)**：指定用户必须输入密码才能解锁设备（仅限 Windows 10 移动版）。
   - **简单密码**：允许使用简单密码，如 1111 和 1234。 此设置还允许或阻止使用 Windows 图片密码。
-- **在 AADJ 期间自动加密**:**块**设备已加入 Azure AD 时，设备准备首次使用时，会阻止自动 BitLocker 设备加密。 **未配置**（默认值） 使用操作系统默认值，可以启用加密。 详细信息[BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
+- **AADJ 期间的自动加密**：设备加入 Azure AD 后，准备首次使用时，“阻止”会阻止自动 BitLocker 设备加密。 “未配置”（默认）使用操作系统默认值，可以启用加密。 有关详细信息，请参阅 [BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **联邦信息处理标准 (FIPS) 策略**:**允许**使用联邦信息处理标准 (FIPS) 策略，这是美国政府标准的加密、 哈希和签名。 **未配置**（默认值） 使用操作系统默认值，它不使用 FIPS。
+- **美国联邦信息处理标准 (FIPS) 政策**：“允许”使用美国联邦信息处理标准 (FIPS) 政策，该政策是美国政府加密、散列和签名的标准。 “未配置”（默认）使用操作系统默认值，它不会使用 FIPS。
 
-  [加密/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+  [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello 设备身份验证**:**允许**用户使用 Windows Hello 配套设备，例如电话、 适用性外或 IoT 设备，若要登录到 Windows 10 计算机。 **未配置**（默认值） 使用操作系统默认值，这可能会阻止 Windows Hello 配套设备使用 Windows 进行身份验证。
+- **Windows Hello 设备身份验证**：“允许”用户使用 Windows Hello 配套设备（如手机、健身手环或 IoT 设备）登录到 Windows 10 计算机。 “未配置”（默认）使用操作系统默认值，这可能会阻止 Windows Hello 配套设备进行 Windows 身份验证。
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
-- **Web 登录**： 启用 Windows 登录支持非 ADFS （Active Directory 联合身份验证服务） 联合提供程序，例如安全断言标记语言 (SAML)。 SAML 使用安全令牌，用于实现单一登录 (SSO) 的 web 浏览器体验。 选项包括：
+- **Web 登录**：为非 ADFS（Active Directory 联合身份验证服务）联合提供程序（如安全断言标记语言 (SAML)）启用 Windows 登录支持。 SAML 使用安全令牌，该令牌为 Web 浏览器提供单一登录 (SSO) 体验。 选项包括：
 
-  - **未配置**（默认值）： 在设备上使用操作系统默认值。
-  - **启用**: Web 凭据提供程序进行登录。
-  - **禁用**： 登录已禁用 Web 凭据提供程序。
+  - **未配置**（默认）：在设备上使用操作系统默认值。
+  - **已启用**：已为登录启用了 Web 凭据提供程序。
+  - **已禁用**：已为登录禁用了 Web 凭据提供程序。
 
-  [身份验证/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+  [Authentication/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
 
-- **首选 Azure AD 租户域**： 输入 Azure AD 组织中现有的域名。 当此域中的用户登录时，他们无需键入域的名称。 例如，输入 `contoso.com`。 中的用户`contoso.com`域中可以使用登录其用户名，例如"abby"，而不是"abby@contoso.com"。
+- **首选 Azure AD 租户域**：在你的 Azure AD 组织中输入现有域名。 当此域中的用户登录时，无需键入域名。 例如，输入 `contoso.com`。 `contoso.com` 域中的用户可使用其用户名登录，如“abby”，而不是“abby@contoso.com”。
 
-  [身份验证/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>每应用隐私异常
 
@@ -356,7 +356,7 @@ ms.locfileid: "59423690"
 - **电话**：定义此应用能否访问电话。
 - **无线收发器**：一些应用使用设备中的无线收发器（例如，蓝牙）发送和接收数据，需要打开或关闭这些无线收发器。 定义此应用能否控制这些无线收发器。
 - **任务**：定义此应用能否访问任务。
-- **受信任的设备**： 选择此应用程序可以使用受信任的设备。 受信任的设备是连接的硬件或设备随附的硬件。 例如，将 TV、投影仪等用作受信任的设备。
+- **受信任的设备**：选择此应用能否使用受信任的设备。 受信任的设备是连接的硬件或设备随附的硬件。 例如，将 TV、投影仪等用作受信任的设备。
 - **反馈和诊断**：定义此应用能否访问诊断信息。
 - **与设备同步**：选择此应用能否自动与设备未显式配对的无线设备共享和同步信息。
 
@@ -396,7 +396,7 @@ ms.locfileid: "59423690"
 - **电话**：定义此应用能否访问电话。
 - **无线收发器**：一些应用使用设备中的无线收发器（例如，蓝牙）发送和接收数据，需要打开或关闭这些无线收发器。 定义此应用能否控制这些无线收发器。
 - **任务**：定义此应用能否访问任务。
-- **受信任的设备**： 选择此应用程序可以使用受信任的设备。 受信任的设备是连接的硬件或设备随附的硬件。 例如，将 TV、投影仪等用作受信任的设备。
+- **受信任的设备**：选择此应用能否使用受信任的设备。 受信任的设备是连接的硬件或设备随附的硬件。 例如，将 TV、投影仪等用作受信任的设备。
 - **反馈和诊断**：选择此应用能否访问诊断信息。
 - **与设备同步** - 定义此应用能否自动与这台 PC、平板电脑或手机未显式配对的无线设备共享和同步信息。
 
@@ -494,7 +494,7 @@ ms.locfileid: "59423690"
 - **Defender 的最终用户访问权限**：控制是否对最终用户隐藏 Windows Defender 用户界面。 此设置更改后，在最终用户的电脑下次重启时生效。
 - **签名更新间隔(小时)**：输入 Defender 检查新签名文件的时间间隔。
 - **监视文件和程序活动**：允许 Defender 监视设备上的文件和程序活动。
-- **删除已隔离恶意软件之前的天数**： 继续跟踪解决的恶意软件的天数，输入，以便您可以手动检查之前受影响的设备。 如果你将天数设置为 0，则恶意软件将保留在隔离文件夹中，并且不会自动删除。
+- **删除已隔离恶意软件之前的天数**：按输入的天数继续跟踪已解决的恶意软件，以便可以手动检查之前受影响的设备。 如果你将天数设置为 0，则恶意软件将保留在隔离文件夹中，并且不会自动删除。
 - **在扫描期间限制 CPU 使用率**：限制允许扫描使用的 CPU 量（从 1 到 100）。
 - **扫描存档文件**：允许 Defender 扫描存档的文件（如 Zip 或 Cab 文件）。
 - **扫描传入的电子邮件**：允许 Defender 在电子邮件到达设备时扫描它们。
@@ -502,27 +502,27 @@ ms.locfileid: "59423690"
 - **完全扫描期间扫描映射的网络驱动器**：允许 Defender 扫描映射网络驱动器上的文件。
   如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
 - **扫描从网络文件夹打开的文件**：允许 Defender 扫描共享网络驱动器上的文件（例如，从 UNC 路径访问的文件）。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
-- **Cloud 保护**：允许或阻止 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息。 此信息可在将来提高该服务。
+- **Cloud 保护**：允许或阻止 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息。 此信息可在将来改进本服务。
 - **在示例提交前提示用户**：控制是否自动向 Microsoft 发送可能需要进一步分析的潜在恶意文件。
-- **执行日常快速扫描时间**： 选择为小时，以便运行每日快速扫描。 **未配置**不会运行每日扫描。 如果您希望更多自定义，配置**要执行的系统扫描类型**设置。
+- **每天执行快速扫描的时间**：选择要运行每天快速扫描的时间。 “未配置”（默认）不运行每天扫描。 如果需要更多自定义，请配置“要执行的系统扫描类型”设置。
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
-- **要执行的系统扫描类型**： 计划系统扫描，其中包括的扫描，级别和一天和时间以运行该扫描。 选项包括：
-  - **未配置**： 不会计划系统扫描在设备上的。 最终用户可以手动运行扫描根据需要或需要在其设备上。
-  - **禁用**： 禁用扫描在设备上的任何系统。 若要将扫描设备的合作伙伴防病毒解决方案，请选择此选项。
-  - **快速扫描**： 在常见位置看起来可能存在恶意软件注册，如注册表项并将其告知 Windows 启动文件夹。
-    - **计划日期**： 选择一天中运行扫描。
-    - **计划时间**： 选择为小时，以便运行扫描。
-  - **完全扫描**： 在常见位置看起来可能存在恶意软件注册，并且还会扫描每个文件和设备上的文件夹。
-    - **计划日期**： 选择一天中运行扫描。
-    - **计划时间**： 选择为小时，以便运行扫描。
+- **要执行的系统扫描类型**：计划系统扫描，包括扫描级别以及运行扫描的日期和时间。 选项包括：
+  - **未配置**：不在设备上计划系统扫描。 最终用户可根据需要在其设备上手动运行扫描。
+  - **禁用**：禁用设备上的所有系统扫描。 如果使用的是扫描设备的合作伙伴防病毒解决方案，请选择此选项。
+  - **快速扫描**：查看可能注册恶意软件的常见位置，如注册表项和已知的 Windows 启动文件夹。
+    - **计划日期**：选择运行扫描的日期。
+    - **计划时间**：选择运行扫描的时间。
+  - **完全扫描**：查看可能注册恶意软件的常见位置，并扫描设备上的每个文件和文件夹。
+    - **计划日期**：选择运行扫描的日期。
+    - **计划时间**：选择运行扫描的时间。
 
-  此设置可能与冲突**执行每日快速扫描时间**设置。 一些建议：
+  此设置可能与“要执行每日快速扫描的时间”设置相冲突。 一些建议：
 
-  - 若要运行每日快速扫描，配置**执行每日快速扫描时间**设置。
-  - 若要运行每日快速扫描和完全扫描每周，然后配置**时间执行每日快速扫描**，并设置**要执行的系统扫描类型**到完全扫描使用的日期和时间。
-  - 未配置**时间执行每日快速扫描**设置，并同时**要执行的系统扫描类型**设置为**快速扫描**。 这些设置可能会发生冲突，并可能不会运行一次扫描。
-  - 若要在早上 6 点运行一次快速扫描每个星期二，配置**要执行的系统扫描类型**设置。
+  - 若要运行每日快速扫描，请配置“要执行每日快速扫描的时间”设置。
+  - 若要每周运行每日快速扫描和完全扫描，请配置“要执行每日快速扫描的时间”，并将“要执行的系统扫描类型”设置为带日期和时间的完全扫描。
+  - 请勿在“要执行的系统扫描类型”设置为“快速扫描”的同时配置“要执行每日快速扫描的时间”设置。 这些设置可能会发生冲突，扫描可能无法运行。
+  - 若要在每周二上午 6 点运行快速扫描，请配置“要执行的系统扫描类型”设置。
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  

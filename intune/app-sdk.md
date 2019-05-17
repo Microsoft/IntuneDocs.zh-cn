@@ -26,7 +26,7 @@ ms.lasthandoff: 04/09/2019
 ms.locfileid: "59292443"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK 概述
-Intune App SDK 可用于 iOS 和 Android，可让应用支持 Intune [应用保护策略](app-protection-policy.md)。 如果应用具有应用保护策略应用于它，它可以由 Intune 管理，并且由 Intune 作为托管应用被识别。 此 SDK 努力使应用开发者所需的代码更改数量降到最低。 你会发现可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用 SDK 的 API 自定义应用行为以支持需要应用参与的功能。
+Intune App SDK 可用于 iOS 和 Android，可让应用支持 Intune [应用保护策略](app-protection-policy.md)。 如果应用应用了应用保护策略，它可以由 Intune 托管，并被 Intune 识别为托管应用。 此 SDK 努力使应用开发者所需的代码更改数量降到最低。 你会发现可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用 SDK 的 API 自定义应用行为以支持需要应用参与的功能。
 
 使应用能够支持 Intune 应用保护策略后，IT 管理员可部署这些策略来保护应用内的公司数据。
 

@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft Intune 中创建 Android 设备符合性策略 - Azure | Microsoft Docs
-description: 请参阅在 Microsoft Intune 中设置适用于 Android 设备的合规性时，可以使用的所有设置的列表。 设置密码规则，选择最小值或最大操作系统版本、 限制特定的应用程序，防止重复使用密码和的详细信息。
+title: Microsoft Intune 中的 Android 设备符合性设置 - Azure | Microsoft Docs
+description: 查看在 Microsoft Intune 中为 Android 设备设置符合性时可以使用的所有设置的列表。 设置密码规则，选择最低或最高操作系统版本，限制特定应用，防止重复使用密码等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,17 +24,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423571"
 ---
-# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>若要将设备标记为符合或不符合使用 Intune 的 android 设置
+# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Android 设置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文列出并描述了可以在 Intune 中的 Android 设备配置的不同的符合性设置。 作为你的移动设备管理 (MDM) 解决方案的一部分，使用这些设置以取得 root 权限 （已越狱） 将设备标记为不符合，将设置允许的威胁级别，启用 Google Play Protect，和的详细信息。
+本文列出并描述了在 Intune 中可针对 Android 设备配置的不同符合性设置。 作为移动设备管理 (MDM) 解决方案的一部分，请使用这些设置将获得 root 权限的（已越狱）设备标记为不符合要求，设置允许的威胁级别，启用 Google Play Protect 等。
 
 此功能适用于：
 
 - Android
 
-作为 Intune 管理员，使用这些符合性设置来帮助保护组织资源。 若要了解有关符合性策略以及所有系统必备组件的详细信息，请参阅[设备符合性入门](device-compliance-get-started.md)。
+作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -49,7 +49,7 @@ ms.locfileid: "59423571"
   - 中：如果设备上存在的威胁为低级或中级，设备也将被评估为符合策略。 如果设备被检测到存在高级威胁，则会被确定为不符合要求。
   - 高：此选项是最不安全的，允许所有威胁级别。 如果将此解决方案仅用作报告目的，则可能有用。
 
-### <a name="google-play-protect"></a>Google Play 保护
+### <a name="google-play-protect"></a>Google Play Protect
 
 - **配置 Google Play Services**：要求安装并启用 Google Play Services 应用。 可通过 Google Play Services 进行安全更新，它是已获得认证的 Google 设备上的很多安全功能的基本依赖项。 如果选择“未配置”（默认值），则不会评估此设置的符合性或不符合性。
 - **最新的安全提供程序**：要求最新的安全提供程序可以保护设备免受已知漏洞的攻击。 如果选择“未配置”（默认值），则不会评估此设置的符合性或不符合性。
@@ -64,7 +64,7 @@ ms.locfileid: "59423571"
   - 检查基本完整性和已认证的设备
 
 > [!NOTE]
-> 若要配置 Google Play 保护设置，请使用应用保护策略，请参阅[Intune 应用保护策略设置](app-protection-policy-settings-android.md#conditional-launch)在 Android 上。
+> 若要使用应用保护策略配置 Google Play Protect 设置，请参阅 Android 上的 [Intune 应用保护策略设置](app-protection-policy-settings-android.md#conditional-launch)。
 
 ## <a name="device-property-settings"></a>设备属性设置
 
@@ -120,14 +120,14 @@ ms.locfileid: "59423571"
 
 ## <a name="locations"></a>位置
 
-在策略中，您可以强制符合性由设备的位置。 选择从现有位置。 尚无位置？ [使用 Intune 中的位置（网络围墙）](use-network-locations.md)提供一些指导。
+在策略中，可根据设备位置强制执行符合性。 从现有位置进行选择。 尚无位置？ 在 Intune 中[使用的位置（网络围墙）](use-network-locations.md)提供一些指导。
 
-1. 选择**位置** > **选择位置**。
-2. 从列表中，检查你的位置 >**选择**。
+1. 选择“位置” > “选择位置”。
+2. 从列表中，勾选你的位置，然后选择“选择”。
 3. 选择“保存”以保存策略。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [添加适用于不符合要求的设备操作](actions-for-noncompliance.md)并[使用筛选器策略的作用域标记](scope-tags.md)。
+- [为不符合要求的设备添加操作](actions-for-noncompliance.md)并[使用范围标记来筛选策略](scope-tags.md)。
 - [监视符合性策略](compliance-policy-monitor.md)。
-- [适用于 Android Enterprise 的符合性策略设置](compliance-policy-create-android-for-work.md)
+- 请参阅[适用于Android Enterprise 设备的符合性策略设置](compliance-policy-create-android-for-work.md)。

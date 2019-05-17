@@ -604,7 +604,7 @@ Intune 管理员可以通过 Intune Azure 门户和 Intune 图形 API 定位并�
 
 在任何时候，每个线程都具有用于 UI 任务和文件任务的有效标识。 此标识是用于确定应应用哪些策略（如有）的标识。 如果此标识为“无标识”或用户不是托管的，则不会应用任何策略。 下图显示如何确定有效的标识。
 
-  ![Intune App SDK iOS： 标识确定进程](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS：标识确定过程](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>线程队列
 

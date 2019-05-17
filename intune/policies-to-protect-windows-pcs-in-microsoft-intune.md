@@ -46,4 +46,4 @@ Windows 防火墙帮助 Windows 电脑免于受到黑客、恶意软件和其他
 
 ## <a name="see-also"></a>另请参阅
 
-[常见的问题、 问题和解决方法与设备策略和配置文件](device-profile-troubleshoot.md)
+[设备策略和配置文件的常见疑问、问题和解决方案](device-profile-troubleshoot.md)

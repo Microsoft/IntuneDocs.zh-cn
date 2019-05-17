@@ -1,6 +1,6 @@
 ---
 title: 排查应用安装问题
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune 疑难解答窗格有助于排查应用安装问题。
 keywords: ''
 author: Erikre
@@ -17,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57577840"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799495"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
 在 Microsoft Intune MDM 托管的设备上，有时应用安装可能会失败。 当这些应用安装失败时，可能难以了解失败原因或解决此问题。 Microsoft Intune 提供应用安装失败详细信息，以便支持人员和 Intune 管理员能够查看应用信息，从而根据请求为用户提供帮助。 Intune 疑难解答窗格提供失败详细信息，包括用户设备上托管应用的详细信息。 在“托管应用”窗格中，可以在各个设备下详细了解应用的端到端生命周期。 可查看安装问题，如应用的创建时间、修改时间、定目标时间以及传递给设备的时间。 
 
-## <a name="app-troubleshooting-details"></a>应用程序故障排除的详细信息
+## <a name="app-troubleshooting-details"></a>应用疑难解答详细信息
 
 Intune 根据特定用户设备上安装的应用，提供应用疑难解答详细信息。
 
@@ -53,46 +53,46 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 > [!Note]  
 > 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格。
 
-## <a name="win32-app-installation-troubleshooting"></a>Win32 应用程序安装的故障排除
+## <a name="win32-app-installation-troubleshooting"></a>Win32 应用安装疑难解答
 
-选择使用 Intune 管理扩展部署的 Win32 应用。 可以选择**收集日志**选项在 Win32 应用程序安装失败时。 
+选择使用 Intune 管理扩展部署的 Win32 应用。 Win32 应用安装失败时，可选择“收集日志”选项。 
 
 > [!IMPORTANT]
-> **收集日志**Win32 应用程序已成功安装在设备上时，将不会启用选项。<p>你可以收集的 Win32 应用程序日志信息之前，必须在 Windows 客户端上安装 Intune 管理扩展。 将 PowerShell 脚本或 Win32 应用部署到用户或设备安全组后，将安装 Intune 管理扩展。 有关详细信息，请参阅[Intune 管理扩展-先决条件](intune-management-extension.md#prerequisites)。
+> 如果 Win32 应用已在设备上成功安装，则不会启用“收集日志”选项。<p>Intune 管理扩展必须先安装在 Windows客户端上，才能收集 Win32 应用日志信息。 将 PowerShell 脚本或 Win32 应用部署到用户或设备安全组后，将安装 Intune 管理扩展。 有关详细信息，请参阅 [Intune 管理扩展 - 先决条件](intune-management-extension.md#prerequisites)。
 
 ### <a name="collect-log-file"></a>收集日志文件
 
-若要收集 Win32 应用程序安装日志，首先按照提供的部分中的步骤[应用程序故障排除的详细信息](troubleshoot-app-install.md#app-troubleshooting-details)。 然后，继续执行以下步骤：
+若要收集 Win32 应用安装日志，请先按照[应用疑难解答详细信息](troubleshoot-app-install.md#app-troubleshooting-details)部分中提供的步骤进行操作。 然后，继续执行以下步骤：
 
-1. 单击**收集日志**选项卡上**安装详细信息**边栏选项卡。
+1. 单击“安装详细信息”边栏选项卡上的“收集日志”选项。
 
     <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
 
-2. 文件路径提供日志文件名称，以便开始日志文件收集过程并单击**确定**。
+2. 使用包含日志文件名的文件路径以开始日志文件收集过程，然后单击“确定”。
     
     > [!NOTE]
-    > 日志收集所需少于两个小时。 支持的文件类型： *.log、.txt、.dmp、.cab、.zip、.xml、.evtx 和.evtl*。 允许最多 25 文件路径。
+    > 日志收集需要最多两小时。 支持的文件类型：.log、.txt、.dmp、.cab、.zip、.xml、.evtx 和 .evtl。 最多允许 25 个文件路径。
 
-3. 一旦已收集的日志文件，可以选择**日志**链接以下载日志文件。
+3. 收集日志文件后，可选择“日志”链接来下载日志文件。
 
     <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
 
     > [!NOTE]
-    > 将显示通知，指示成功的应用程序日志集合。
+    > 将显示通知，指示应用日志收集成功。
 
-#### <a name="win32-log-collection-requirements"></a>Win32 日志集合要求
+#### <a name="win32-log-collection-requirements"></a>Win32 日志收集要求
 
-有特殊要求，必须遵循以收集日志文件：
+收集日志文件时必须遵循特定要求：
 
 - 必须指定完整的日志文件路径。 
-- 你可以指定日志收集，如下所示的环境变量：<br>
-  *%PROGRAMFILES%、 %PROGRAMDATA%%公共 %、 %WINDIR%、 %TEMP%、 %TMP%*
-- 只有确切文件允许扩展，如：<br>
-  *.log、.txt、.dmp、.cab、.zip、.xml*
-- 要上载的最大日志文件为 60 MB 或前 25 个文件，以先发生者为准。 
-- Win32 应用程序安装日志收集启用符合所需应用的可用，然后卸载应用程序分配意图。
-- 存储的日志加密来保护日志中包含任何 PII 信息。
-- 打开支持票证的 Win32 应用程序失败，而将附加使用上面提供的步骤的相关的失败日志。
+- 可为日志收集指定环境变量，例如：<br>
+  %PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%
+- 只允许使用精确的文件扩展名，例如：<br>
+  .log、.txt、.dmp、.cab、.zip、.xml
+- 上传的最大日志文件为 60 MB 或 25 个文件，以先达到者为准。 
+- 为满足需要的、可用和卸载应用分配意图的应用启用 Win32 应用安装日志收集。
+- 存储的日志已加密，以保护日志中包含的任何 PII 信息。
+- 如果开立 Win32 应用支持票证失败，请使用上面提供的步骤附加相关的失败日志。
 
 ## <a name="app-installation-errors"></a>应用安装错误
 
@@ -126,16 +126,16 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 | 用户拒绝了安装应用的提议。 (0x87D13B62) | 初始应用安装过程中，用户单击了“取消”。 |
 | 用户拒绝了更新应用的提议。 (0x87D13B63) | 最终用户在更新过程中单击了“取消”。 |
 | 未知错误 (0x87D103E8) | 出现未知应用安装错误。 如果未出现其他错误，则会显示此错误。 |
-| 仅共享 iPad (-2016330861) 上安装 VPP 应用。 | 必须使用 Apple Volume Purchase Program 安装共享 iPad 上获取应用程序。 |
-| 不能安装应用时禁用应用程序存储区 (-2016330860)。  | 必须启用用户安装应用的 App Store。 |
-| 找不到 VPP 许可证应用 (-2016330859)。  | 请尝试撤消和重新分配应用许可证。 |
-| 不能使用你的 MDM 提供程序 (-2016330858) 安装系统应用程序。 | 安装 iOS 操作系统预安装的应用程序不受支持的方案。 |
-| 当设备处于丢失模式 (-2016330857) 时，不能安装应用。 | 丢失模式中阻止了该设备的所有使用。   禁用丢失模式下安装应用。 |
-| 当设备处于展台模式 (-2016330856) 时，不能安装应用。 | 请尝试将此设备添加到要安装的应用展台模式配置策略的排除组。 |
-| 不能在此设备 (-2016330852) 上安装 32 位应用程序。 | 此设备不支持安装 32 位应用程序。 请尝试部署应用程序的 64 位版本。 |
-| 用户必须登录到应用商店 (-2016330855)。 | 用户需要登录到应用商店，然后才能安装应用程序。 |
-| 未知的问题。 请稍后重试 (-2016330854)。 | 由于未知原因，应用程序安装失败。   请稍后重试。 |
-| 应用安装失败。 Intune 将尝试再次下一次设备同步 (-2016330853)。 | 应用安装遇到设备错误。 同步设备，以尝试重新安装该应用程序。 |
+| 只能在 Shared iPad 上安装 VPP 应用 (-2016330861)。 | 必须使用 Apple Volume Purchase Program 获取应用，才能在 Shared iPad 上进行安装。 |
+| 禁用 App Store 时无法安装应用 (-2016330860)。  | 必须启用 App Store，用户才能安装该应用。 |
+| 找不到应用的 VPP 许可证 (-2016330859)。  | 尝试撤消并重新分配应用许可证。 |
+| 无法使用 MDM 提供程序安装系统应用 (-2016330858)。 | 不支持安装 iOS 操作系统预安装的应用。 |
+| 设备处于丢失模式时无法安装应用 (-2016330857)。 | 在丢失模式下，将阻止对该设备的所有使用。   禁用丢失模式以安装应用。 |
+| 设备处于展台模式时无法安装应用 (-2016330856)。 | 尝试将此设备添加到展台模式配置策略的排除组以安装应用。 |
+| 无法在此设备上安装 32 位应用 (-2016330852)。 | 该设备不支持安装 32 位应用。 尝试部署 64 位版本的应用。 |
+| 用户必须登录 App Store (-2016330855)。 | 用户需要先登录 App Store，然后才能安装应用。 |
+| 未知问题。 请稍后重试 (-2016330854)。 | 由于未知原因，应用安装失败。   请稍后重试。 |
+| 应用安装失败。 Intune 将在下次设备同步时再次尝试 (-2016330853)。 | 应用安装出现设备错误。 同步设备以尝试再次安装应用。 |
 
 ### <a name="other-installation-errors"></a>其他安装错误
 

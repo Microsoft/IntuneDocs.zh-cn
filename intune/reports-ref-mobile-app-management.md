@@ -44,8 +44,8 @@ MamApplication 实体列出了未在企业中注册便通过移动应用程序�
 | 属性 | 描述 | 示例 |
 |---------|------------|--------|
 | mamApplicationKey |MAM 应用程序的唯一标识符。 | 432 |
-| mamApplicationName |MAM 应用程序的名称。 |MAM 应用程序的示例名称 |
-| mamApplicationId |MAM 应用的应用程序 ID。 | 123 |
+| mamApplicationName |MAM 应用程序的名称。 |MAM 应用程序示例名称 |
+| mamApplicationId |MAM 应用程序的应用程序 ID。 | 123 |
 | IsDeleted |表明是否已更新此 MAM 应用记录。 <br>True - MAM 应用拥有新纪录，其中含有此表中的更新的字段。 <br>False - 此 MAM 应用的最新记录。 |True/False |
 | StartDateInclusiveUTC |在数据仓库中创建此 MAM 应用时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
 | DeletedDateUTC |IsDeleted 更改为 True 时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
@@ -62,15 +62,15 @@ MamApplicationInstance 实体将托管移动应用程序管理 (MAM) 应用列�
 |   ApplicationInstanceKey   |                                                               数据仓库中 MAM 应用实例的唯一标识符 - 代理键。                                                                |                 123                  |
 |           UserId           |                                                                              已安装此 MAM 应用的用户的用户 ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM 应用实例的唯一标识符 - 类似于 ApplicationInstanceKey，但该标识符是自然键。                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | Mam 应用程序为其创建此 Mam 应用程序实例的应用程序 Id。   | 2016/11/23 - 中午 12:00:00   |
+| mamApplicationId | 创建此 MAM 应用程序实例的 MAM 应用程序的应用程序 ID。   | 2016/11/23 - 中午 12:00:00   |
 |     ApplicationVersion     |                                                                                     此 MAM 应用的应用程序版本。                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 创建此 MAM 应用实例记录的日期。 该值可以为 null。                                                                 |        2016/11/23 - 中午 12:00:00        |
 |          平台          |                                                                          安装此 MAM 应用的设备平台。                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      安装此 MAM 应用的设备的平台版本。                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            包装此 MAM 应用时所使用的 MAM SDK 版本。                                                                            |                 3.2                  |
-| mamDeviceId | MAM 应用程序实例与之关联的设备的设备 Id。   | 2016/11/23 - 中午 12:00:00   |
-| mamDeviceType | MAM 应用程序实例与之关联的设备的设备类型。   | 2016/11/23 - 中午 12:00:00   |
-| mamDeviceName | MAM 应用程序实例与之关联的设备的设备名称。   | 2016/11/23 - 中午 12:00:00   |
+| mamDeviceId | 与 MAM 应用程序实例关联的设备的设备 ID。   | 2016/11/23 - 中午 12:00:00   |
+| mamDeviceType | 与 MAM 应用程序实例关联的设备的设备类型。   | 2016/11/23 - 中午 12:00:00   |
+| mamDeviceName | 与 MAM 应用程序实例关联的设备的设备名。   | 2016/11/23 - 中午 12:00:00   |
 |         IsDeleted          | 表明是否已更新此 MAM 应用实例记录。 <br>True - 此 MAM 应用实例拥有新纪录，其中含有此表中的更新的字段。 <br>False - 此 MAM 应用实例的最新记录。 |              True/False              |
 |   StartDateInclusiveUtc    |                                                              在数据仓库中创建此 MAM 应用实例时的 UTC 日期和时间。                                                               |        2016/11/23 - 中午 12:00:00        |
 |       DeletedDateUtc       |                                                                             IsDeleted 更改为 True 时的 UTC 日期和时间。                                                                              |        2016/11/23 - 中午 12:00:00        |
@@ -89,7 +89,7 @@ MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 
 | DateKey |日期键，表明在数据仓库中记录 MAM 应用签入的时间。 | 20160703 |
 | ApplicationInstanceKey |与此 MAM 应用签入关联的应用实例的键。 | 123 |
 | UserKey |与此 MAM 应用签入关联的用户的键。 | 4323 |
-| mamApplicationKey |应用程序密钥的应用程序与 MAM 应用签入相关联。 | 432 |
+| mamApplicationKey |与 MAM 应用程序签入相关联的应用程序的应用程序密钥。 | 432 |
 | DeviceHealthKey |与此 MAM 应用签入关联的 DeviceHealth 的键。 | 321 |
 | PlatformKey |表示与此 MAM 应用签入关联的设备的平台。 |123 |
 | EffectiveAppliedPolicyKey |表示与已签入的 MAM 应用关联的有效应用的策略。 有效应用的策略通过合并与特定应用和用户相关的所有策略生成。 | 322 |

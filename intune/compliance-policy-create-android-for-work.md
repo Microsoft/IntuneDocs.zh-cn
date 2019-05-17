@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 中的 Android Enterprise 设备设置 - Azure | Microsoft Docs
-description: 请参阅在 Microsoft Intune 中设置 Android 企业设备的符合性时可以使用的所有设置的列表。 设置密码规则，选择最小值或最大操作系统版本、 限制特定的应用程序，防止重复使用密码和的详细信息。
+title: Microsoft Intune 中的 Android Enterprise 符合性设置 - Azure | Microsoft Docs
+description: 查看在 Microsoft Intune 中为 Android Enterprise 设备设置符合性时可以使用的所有设置的列表。 设置密码规则，选择最低或最高操作系统版本，限制特定应用，防止重复使用密码等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,21 +24,21 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423554"
 ---
-# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>将设备标记为符合或不符合使用 Intune 的 android 企业版设置
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Android Enterprise 设置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文列出并描述可在 Intune 中 Android 企业版设备配置的不同的符合性设置。 作为你的移动设备管理 (MDM) 解决方案的一部分，使用这些设置以取得 root 权限 （已越狱） 将设备标记为不符合，将设置允许的威胁级别，启用 Google Play Protect，和的详细信息。
+本文列出并描述了在 Intune 中可针对 Android Enterprise 设备配置的不同符合性设置。 作为移动设备管理 (MDM) 解决方案的一部分，请使用这些设置将获得 root 权限的（已越狱）设备标记为不符合要求，设置允许的威胁级别，启用 Google Play Protect 等。
 
 此功能适用于：
 
 - Android Enterprise
 
-作为 Intune 管理员，使用这些符合性设置来帮助保护组织资源。 若要了解有关符合性策略以及所有系统必备组件的详细信息，请参阅[设备符合性入门](device-compliance-get-started.md)。
+作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 ## <a name="before-you-begin"></a>在开始之前
 
-[创建合规性策略](create-compliance-policy.md#create-the-policy)。 对于“平台”，选择“Android 企业”。
+[创建合规性策略](create-compliance-policy.md#create-the-policy)。 对于“平台”，选择“Android Enterprise”。
 
 ## <a name="device-health"></a>Device health
 
@@ -49,7 +49,7 @@ ms.locfileid: "59423554"
   - **中**：若设备设备上存在的威胁为低级或中级，则将其评为合规。 如果设备被检测到存在高级威胁，则会被确定为不符合要求。
   - 高：此选项是最不安全的，因为它允许所有威胁级别。 如果将此解决方案仅用作报告目的，则可能有用。
 
-### <a name="google-play-protect"></a>Google Play 保护
+### <a name="google-play-protect"></a>Google Play Protect
 
 - **配置 Google Play Services**：要求安装并启用 Google Play Services 应用。 可通过 Google Play Services 进行安全更新，它是已获得认证的 Google 设备上的很多安全功能的基本依赖项。 如果选择“未配置”（默认值），则不会评估此设置的符合性或不符合性。
 - **最新的安全提供程序**：要求最新的安全提供程序可以保护设备免受已知漏洞的攻击。 如果选择“未配置”（默认值），则不会评估此设置的符合性或不符合性。
@@ -59,7 +59,7 @@ ms.locfileid: "59423554"
   - 检查基本完整性和已认证的设备
 
 > [!NOTE]
-> Android 企业版设备上**对应用进行威胁扫描**是设备配置策略。 使用配置策略，管理员可以启用的设备上的设置。 请参阅 [Android Enterprise 设备限制设置](device-restrictions-android-for-work.md)。
+> 在 Android Enterprise 设备上，“对应用进行威胁扫描”是一种设备配置策略。 使用配置策略，管理员可在设备上启用设置。 请参阅 [Android Enterprise 设备限制设置](device-restrictions-android-for-work.md)。
 
 ## <a name="device-properties-settings"></a>设备属性设置
 
@@ -89,7 +89,7 @@ ms.locfileid: "59423554"
 
 - **设备上的数据存储加密**：选择“需要”加密设备上的数据存储。 如果选择“未配置”（默认值），则不会评估此设置的符合性或不符合性。 
 
-  不必配置此设置，因为 Android 工作配置文件设备会强制进行加密。
+  不必配置此设置，因为 Android Enterprise 设备会强制进行加密。
 
 ### <a name="device-security"></a>设备安全
 
@@ -100,7 +100,7 @@ ms.locfileid: "59423554"
   > [!IMPORTANT]
   > 旁加载应用程序需要启用“阻止来自未知源的应用”设置。 仅未在设备上旁加载 Android 应用时，才强制执行此符合性策略。
 
-  无需配置此设置，因为 Android 工作配置文件设备始终限制来自未知源的安装。
+  无需配置此设置，因为 Android Enterprise 设备始终限制来自未知源的安装。
 
 - **公司门户应用运行时完整性**：选择“要求”以确认公司门户应用满足以下所有要求：
 
@@ -113,7 +113,7 @@ ms.locfileid: "59423554"
 
 - **在设备上阻止 USB 调试**：选择“阻止”可阻止设备使用 USB 调试功能。 如果选择“未配置”（默认值），则不会评估此设置的符合性或不符合性。
 
-  无需配置此设置，因为已在 Android 工作配置文件设备上禁用 USB 调试。
+  无需配置此设置，因为已在 Android Enterprise 设备上禁用 USB 调试。
 
 - 最低安全修补程序级别：选择设备可具有的最旧的安全修补程序级别。 不满足此修补程序级别的设备将不符合要求。 日期必须以“YYYY-MM-DD”格式输入。
 
@@ -121,6 +121,6 @@ ms.locfileid: "59423554"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [添加适用于不符合要求的设备操作](actions-for-noncompliance.md)并[使用筛选器策略的作用域标记](scope-tags.md)。
+- [为不符合要求的设备添加操作](actions-for-noncompliance.md)并[使用范围标记来筛选策略](scope-tags.md)。
 - [监视符合性策略](compliance-policy-monitor.md)。
-- [适用于 Android 设备的合规性策略设置](compliance-policy-create-android.md)
+- 请参阅[适用于 Android 设备的符合性策略设置](compliance-policy-create-android.md)。

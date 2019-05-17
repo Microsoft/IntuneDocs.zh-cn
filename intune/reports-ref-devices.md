@@ -85,7 +85,7 @@ EnrollmentActivity 实体表示设备注册活动。
 | enrollmentFailureCategoryKey  | 注册失败类别的键（如果注册失败）。        |
 | enrollmentFailureReasonKey    | 注册失败原因的键（如果注册失败）。          |
 | osVersion                     | 设备的操作系统版本。                               |
-| count                         | 符合上述分类的注册活动总数。  |
+| 计数                         | 符合上述分类的注册活动总数。  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
 EnrollmentEventStatus 实体表示设备注册结果。
@@ -167,10 +167,10 @@ OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
 |---------|------------|--------|
 | ownerTypeID |所有者类型的唯一标识符。 | |
 | ownerTypeKey |数据仓库中所有者类型的唯一标识符 - 代理键。 | |
-| ownerTypeName |表示设备的所有者类型：  <br>公司-设备为企业所有。 <br>个人 - 设备为个人所有 (BYOD)。  <br>未知 - 此设备上无此信息。 |公司个人未知 |
+| ownerTypeName |表示设备的所有者类型：  <br>公司 - 设备为企业所有。 <br>个人 - 设备为个人所有 (BYOD)。  <br>未知 - 此设备上无此信息。 |公司/个人未知 |
 
 > [!Note]  
-> 有关`ownerTypeName`在 azure Ad 的设备创建动态组时，您需要将筛选器值设置`deviceOwnership`作为`Company`。 有关详细信息，请参阅[设备的规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
+> 对于在为设备创建动态组时 Azure AD 中的 `ownerTypeName`，需要将筛选器值 `deviceOwnership` 设置为 `Company`。 有关详细信息，请参阅[设备规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
 
 ## <a name="managementstates"></a>ManagementStates
 

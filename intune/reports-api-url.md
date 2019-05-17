@@ -64,7 +64,7 @@ Intune 的 URL 使用以下格式：
 
 ## <a name="odata-query-options"></a>OData 查询选项
 
-当前版本支持以下 OData 查询参数：`$filter`、`$select`、`$skip,` 和 `$top`。 在中`$filter`，则只`DateKey`或`RowLastModifiedDateTimeUTC`列都适用，和其他属性会触发错误的请求时可能会支持。
+当前版本支持以下 OData 查询参数：`$filter`、`$select`、`$skip,` 和 `$top`。 在 `$filter` 中，当列适用时，可能仅支持 `DateKey` 或 `RowLastModifiedDateTimeUTC`，其他属性将触发错误请求。
 
 ## <a name="datekey-range-filters"></a>DateKey 范围筛选器
 
@@ -84,4 +84,4 @@ Intune 的 URL 使用以下格式：
 |    `$filter=DateKey eq 20180214`                                 |    完整                                      |    返回 `DateKey` 等于 20180214 的数据。                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    完整                                      |    返回 `DateKey` 介于 20180214 至 20180220 的数据。                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    完整                                      |    返回 `DateKey` 等于 20180214 的数据。 已忽略 `maxhistorydays`。                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完整                                       |    返回与数据`RowLastModifiedDateTimeUTC`大于或等于 `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完整                                       |    返回 `RowLastModifiedDateTimeUTC` 数据大于或等于 `2018-02-21T23:18:51.3277273Z`                             |

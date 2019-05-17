@@ -1,12 +1,12 @@
 ---
 title: Intune 数据仓库更改日志
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 此主题提供 Microsoft Intune 数据仓库 API 的更改列表。
 keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 30f315f58a905e690a43ab3c44aee783bd0ef8c9
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358252"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571801"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
@@ -31,26 +31,166 @@ ms.locfileid: "58358252"
 
 随时了解 Intune 数据仓库的更新。
 
+## <a name="1903-part-2"></a>1903（第 2 部分）
+发行日期：2019 年 4 月
+
+### <a name="beta-changes"></a>beta 版本更改
+
+下表列出了 Intune 数据仓库中最近删除的集合和替换集合。
+
+|    收集                          |    “更改”     |    其他信息                                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    mobileAppDeviceUserInstallStatus    |    已删除    |    请改用 [mobileAppInstallStatusCounts](intune-data-warehouse-collections.md#mobileappinstallstatuscounts)。                                                                                                                                                                                                                                                                     |
+|    enrollmentTypes                     |    已删除    |    请改用 [deviceEnrollmentTypes](intune-data-warehouse-collections.md#deviceenrollmenttypes)。                                                                                                                                                                                                                                                                                      |
+|    mdmStatuses                         |    已删除    |    请改用 [complianceStates](intune-data-warehouse-collections.md#compliancestates)。                                                                                                                                                                                                                                                                                               |
+|    workPlaceJoinStateTypes             |    已删除    |    请改用 [devices](intune-data-warehouse-collections.md#devices) 和 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 集合中的 `azureAdRegistered` 属性。                                                                                                                                                                                                             |
+|    clientRegistrationStateTypes        |    已删除    |    请改用 [deviceRegistrationStates](intune-data-warehouse-collections.md#deviceregistrationstates)。                                                                                                                                                                                                                                                                             |
+|    currentUser                         |    已删除    |    请改用 [users](intune-data-warehouse-collections.md#users) 集合。                                                                                                                                                                                                                                                                                                      |
+|    mdmDeviceInventoryHistories         |    已删除    |    许多属性都是冗余的，或者现在可在 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 或 [devices](intune-data-warehouse-collections.md#devices) 集合中找到。 这两个集合中未列出的所有 mdmDeviceInventoryHistories 属性都不再可用。 请查看下面的详细信息。    |
+
+下表列出了以前在 mdmDeviceInventoryHistories 集合中找到的旧属性以及 change/replacement。 已删除 mdmDeviceInventoryHistories 中未在下面列出的所有属性。
+
+|    旧属性                |    Change/replacement                                                           |
+|--------------------------------|---------------------------------------------------------------------------------|
+|    cellularTechnology          |    devices 集合中的 cellularTechnology                                     |
+|    deviceClientId              |    devices 集合中的 deviceId                                               |
+|    deviceManufacturer          |    devices 集合中的制造商                                           |
+|    deviceModel                 |    devices 集合中的模型                                                  |
+|    deviceName                  |    devices 集合中的 deviceName                                             |
+|    deviceOsPlatform            |    devices 集合中的 deviceTypeKey                                          |
+|    deviceOsVersion             |    devicePropertyHistories 集合中的 osVersion                              |
+|    deviceType                  |    devices 集合中的 deviceTypeKey，引用 deviceTypes 集合    |
+|    encryptionState             |    devices 集合中的 encryptionState 属性                           |
+|    exchangeActiveSyncId        |    devices 集合中的 easDeviceId 属性                               |
+|    exchangeDeviceId            |    devices 集合中的 easDeviceId                                            |
+|    imei                        |    devices 集合中的 imei                                                   |
+|    isSupervised                |    devices 集合中的 isSupervised 属性                              |
+|    jailBroken                  |    devicePropertyHistories 集合中的 jailBroken                             |
+|    meid                        |    devices 集合中的 meid 属性                                      |
+|    oem                         |    devices 集合中的制造商                                           |
+|    osName                      |    devices 集合中的 deviceTypeKey，引用 deviceTypes 集合    |
+|    phoneNumber                 |    devices 集合中的 phoneNumber                                            |
+|    platformType                |    devices 集合中的模型                                                  |
+|    product                     |    devices 集合中的 deviceTypeKey                                          |
+|    productVersion              |    devicePropertyHistories 集合中的 osVersion                              |
+|    serialNumber                |    设备集合中的 serialNumber                                           |
+|    storageFree                 |    devices 集合中的 freeStorageSpaceInBytes 属性                   |
+|    storageTotal                |    devices 集合中的 totalStorageSpaceInBytes 属性                |
+|    subscriberCarrierNetwork    |    devices 集合中的 subscriberCarrier 属性                         |
+|    wifimac                     |    devices 集合中的 wiFiMacAddress                                         |
+
+下表列出了 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 集合中找到的属性更改： 
+
+|    旧属性                  |    Change/replacement                                               |
+|----------------------------------|---------------------------------------------------------------------|
+|    categoryId                    |    deviceCategoryKey，可引用 deviceCategories 集合       |
+|    certExpirationDate            |    已删除                                                          |
+|    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
+|    createdDate                   |    devices 集合中的 enrolledDateTime                           |
+|    deviceTypeKey                 |    devices 集合中的 deviceTypeKey                              |
+|    easID                         |    devices 集合中的 easDeviceId                                |
+|    enrolledByUser                |    devices 集合中的 userId                                     |
+|    enrollmentTypeKey             |    devices 集合中的 deviceEnrollmentTypeKey                    |
+|    graphDeviceIsCompliant        |    已删除                                                          |
+|    graphDeviceIsManaged          |    已删除                                                          |
+|    lastContact                   |    devices 集合中的 lastSyncDateTime                           |
+|    lastContactNotification       |    已删除                                                          |
+|    lastContactWorkplaceJoin      |    已删除                                                          |
+|    lastExchangeStatusUtc         |    已删除                                                          |
+|    lastModifiedDateTimeUTC       |    已删除                                                          |
+|    lastPolicyUpdateUtc           |    已删除                                                          |
+|    managementAgentKey            |    managementStateKey                                               |
+|    制造商                  |    devices 集合中的 manufacturer                               |
+|    mdmStatusKey                  |    complianceStateKey，可引用 complianceStates 集合    |
+|    model                         |    devices 集合中的模型                                      |
+|    osFamily                      |    devices 集合中的 operatingSystem                            |
+|    osRevisionNumber              |    devices 集合中的 osVersion                                  |
+|    processorArchitecture         |    已删除                                                          |
+|    referenceId                   |    devices 集合中的 azureAdDeviceId                            |
+|    serialNumber                  |    devices 集合中的 serialNumber                               |
+|    workplaceJoinStateKey         |    azureAdRegistered                                                |
+
+下表列出了 [devices](intune-data-warehouse-collections.md#devices) 集合中找到的属性更改： 
+
+|    旧属性                  |    Change/replacement                                               |
+|----------------------------------|---------------------------------------------------------------------|
+|    categoryId                    |    deviceCategoryKey，可引用 deviceCategories 集合       |
+|    certExpirationDate            |    已删除                                                          |
+|    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
+|    createdDate                   |    enrolledDateTime                                                 |
+|    easId                         |    easDeviceId                                                      |
+|    enrolledByUser                |    userId                                                           |
+|    enrollmentTypeKey             |    deviceEnrollmentTypeKey                                          |
+|    graphDeviceIsCompliant        |    已删除                                                          |
+|    graphDeviceIsManaged          |    已删除                                                          |
+|    lastContact                   |    lastSyncDateTime                                                 |
+|    lastContactNotification       |    已删除                                                          |
+|    lastContactWorkplaceJoin      |    已删除                                                          |
+|    lastExchangeStatusUtc         |    已删除                                                          |
+|    lastPolicyUpdateUtc           |    已删除                                                          |
+|    mdmStatusKey                  |    complianceStateKey，可引用 complianceStates 集合    |
+|    osFamily                      |    operatingSystem                                                  |
+|    processorArchitecture         |    已删除                                                          |
+|    referenceId                   |    azureAdDeviceId                                                  |
+|    workplaceJoinStateKey         |    azureAdRegistered                                                |
+
+下表列出了 [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities) 集合中找到的属性更改： 
+
+|    旧属性         |    Change/replacement         |
+|-------------------------|-------------------------------|
+|    enrollmentTypeKey    |    deviceEnrollmentTypeKey    |
+
+下表列出了 [mamApplications](intune-data-warehouse-collections.md#mamapplications) 集合中找到的属性更改： 
+
+|    旧属性       |    Change/replacement    |
+|-----------------------|--------------------------|
+|    applicationKey     |    mamApplicationKey     |
+|    applicationName    |    mamApplicationName    |
+|    applicationId      |    mamApplicationId      |
+
+下表列出了 [mamApplicationInstances](intune-data-warehouse-collections.md#mamapplicationinstances) 集合中找到的属性更改： 
+
+|    旧属性     |    Change/replacement    |
+|---------------------|--------------------------|
+|    applicationId    |    mamApplicationId      |
+|    deviceId         |    mamDeviceId           |
+|    deviceType       |    mamDeviceType         |
+|    deviceName       |    mamDeviceName         |
+
+下表列出了 [mamCheckins](intune-data-warehouse-collections.md#mamcheckins) 集合中找到的属性更改： 
+
+|    旧属性      |    Change/replacement    |
+|----------------------|--------------------------|
+|    applicationKey    |    mamApplicationKey     |
+
+下表列出了 [users](intune-data-warehouse-collections.md#users) 集合中找到的属性更改： 
+
+|    旧属性             |    Change/replacement    |
+|-----------------------------|--------------------------|
+|    startDateInclusiveUtc    |    已删除               |
+|    endDateInclusiveUtc      |    已删除               |
+|    isCurrent                |    已删除               |
+
 ## <a name="1903"></a>1903
 发行时间：2019 年 3 月
 
-### <a name="v10-changes-reflecting-back-to-beta"></a>V1.0 更改专用于反映将返回到 beta
-V1.0 在 1808年中首次引入，它有差异在一些重要方面与 beta 版 API。 在 1903年这些更改将反映回 beta API 版本。 如果使用的测试 API 版的重要报表，我们强烈建议切换到 V1.0 以避免重大更改的那些报表。 请参阅[API 版本信息](reports-api-url.md)有关详细信息在数据仓库 API 版本和向后兼容性。 
+### <a name="v10-changes-reflecting-back-to-beta"></a>V1.0 更改在 beta 版本中体现
+V1.0 在 1808 版本首次引入后，它在某些重要方面与 beta 版 API 有所不同。 在 1903 版本中，这些更改将在 beta 版 API 中体现。 如果有使用 beta 版 API 的重要报表，我们强烈建议将这些报表切换到 V1.0 以避免中断性变更。 要详细了解数据仓库 API 版本和后向兼容性，请参阅 [API 版本信息](reports-api-url.md)。 
 
 ## <a name="1902"></a>1902 
 发布时间：2019 年 2 月
 
-### <a name="power-bi-compliance-app"></a>符合性的 power BI 应用 
+### <a name="power-bi-compliance-app"></a>Power BI 合规性应用 
 
-访问 Intune 数据仓库中使用 Power BI Online [Intune 符合性 （数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)应用。 使用此 Power BI 应用，现在可以访问并共享预创建的报表，而无需任何设置，而无需离开你的 web 浏览器。 
+使用 [Intune 合规性（数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)应用访问 Power BI Online 中的 Intune 数据仓库。 使用此 Power BI 应用，可立即访问和共享预创建的报表，无需任何设置，也无需离开 Web 浏览器。 
 
 > [!NOTE]
-> 有两个附加的筛选器可以应用到 Intune 符合性应用程序。
+> 可将两个附加筛选器应用于 Intune Compliance 应用。
 
-#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>将其他筛选器添加到 Intune 符合性应用
-1. 打开[Intune 符合性 （数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)在 web 浏览器中的应用。
-2. 单击**非合规的设备**，然后选择**不符合**中**complianceStatus**筛选器。 
-3. 单击**未知设备**，然后选择**尚不可用**中**complianceStatus**筛选器。 
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>将附加筛选器添加到 Intune Compliance 应用
+1. 在 Web 浏览器中打开 [Intune Compliance（数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)应用。
+2. 在“complianceStatus”筛选器中单击“不符合设备”并选择“不符合”。 
+3. 在“complianceStatus”筛选器中单击“未知设备”并选择“尚未提供”。 
 
 ## <a name="1812"></a>1812 
 _2018 年 12 月发布_

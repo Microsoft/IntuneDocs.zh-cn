@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 中的 Windows 10 教育设置 - Azure | Microsoft Docs
-description: 请参阅在 Microsoft Intune 中设置适用于 Windows 8.1 和 Windows Phone 8.1 设备的合规性时，可以使用的所有设置的列表。 执行在最小值和最大操作系统上，设置密码限制和长度，符合性检查上启用加密的数据存储和的详细信息。
+title: Microsoft Intune 中的 Windows 8.1 符合性设置 - Azure | Microsoft Docs
+description: 查看在 Microsoft Intune 中为 Windows 8.1 和 Windows Phone 8.1 设备设置符合性时可以使用的所有设置的列表。 检查最小和最大操作系统的符合性，设置密码限制和长度，启用数据存储加密等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,27 +22,27 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59424928"
 ---
-# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>若要将设备标记为符合或不符合使用 Intune 的 Windows 8.1 设置
+# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Windows 8.1 设置
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-本文列出并描述了可以在 Intune 中的 Windows 8.1 设备配置的不同的符合性设置。 作为你的移动设备管理 (MDM) 解决方案的一部分，使用这些设置以阻止简单密码，设置最小值和最高操作系统版本，等等。
+本文列出并描述了在 Intune 中可对 Windows 8.1 设备配置的不同符合性设置。 作为移动设备管理 (MDM) 解决方案的一部分，请使用这些设置来阻止简单密码，设置最低和最高操作系统版本等。
 
 此功能适用于：
 
 - Windows Phone 8.1
 - Windows 8.1 及更高版本
 
-作为 Intune 管理员，使用这些符合性设置来帮助保护组织资源。 若要了解有关符合性策略以及所有系统必备组件的详细信息，请参阅[设备符合性入门](device-compliance-get-started.md)。
+作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 ## <a name="before-you-begin"></a>在开始之前
 
-[创建合规性策略](create-compliance-policy.md#create-the-policy)。 有关**平台**，选择**Windows Phone 8.1**或**Windows 8.1 及更高版本**。
+[创建合规性策略](create-compliance-policy.md#create-the-policy)。 对于“平台”，请选择“Windows Phone 8.1”或“Windows 8.1 及更高版本”。
 
 ## <a name="device-properties"></a>设备属性
 
-- **所需的最小操作系统**： 输入允许的最低版本。 设备不满足最低操作系统版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，然后访问公司资源。
-- **允许的最高 OS 版本**： 输入的最大允许版本。 如果设备使用的 OS 版本高于在规则中输入的版本，对公司资源的访问受阻。 会要求用户联系其 IT 管理员。除非将规则更改为允许 OS 版本，否则设备无法访问组织资源。
+- **所需的最低操作系统**：输入允许的最低版本。 设备不满足最低操作系统版本要求时，它将被报告为不符合要求。 将显示一个链接，链接中包含有关如何升级的信息。 最终用户可以选择升级其设备，然后访问公司资源。
+- **允许的最高操作系统版本**：输入允许的最高版本。 如果设备使用的 OS 版本高于在规则中输入的版本，对公司资源的访问受阻。 会要求用户联系其 IT 管理员。除非将规则更改为允许 OS 版本，否则设备无法访问组织资源。
 
 Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本规则设置为 Windows 8.1，则该设备将报告为不符合要求，即使该设备具有 Windows 8.1 也是如此。
 
@@ -83,6 +83,6 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [添加适用于不符合要求的设备操作](actions-for-noncompliance.md)并[使用筛选器策略的作用域标记](scope-tags.md)。
+- [为不符合要求的设备添加操作](actions-for-noncompliance.md)并[使用范围标记来筛选策略](scope-tags.md)。
 - [监视符合性策略](compliance-policy-monitor.md)。
-- 请参阅[合规性策略设置适用于 Windows 10 及更高版本](compliance-policy-create-windows.md)设备。
+- 请参阅[适用于 Windows 10 及更高版本设备的符合性策略设置](compliance-policy-create-windows.md)。

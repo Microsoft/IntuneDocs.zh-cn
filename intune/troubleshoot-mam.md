@@ -1,6 +1,6 @@
 ---
 title: 移动应用程序管理故障排除
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本主题介绍条件性访问部署的一些故障排除提示。
 keywords: ''
 author: Erikre
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4db9845befe7440e615e8deb874971a5b80efdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: dc7b7f56060ff90cc7b9df6cb8700c163d78e8f5
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461169"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798621"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>移动应用程序管理故障排除
 
@@ -38,7 +38,7 @@ ms.locfileid: "57461169"
 | -- | -- | -- |
 | 策略不适用于 Skype for Business | Azure 门户中制定的无需设备注册的应用保护策略不适用于 iOS 和 Android 设备上的 Skype for Business 应用。 | 必须将 Skype for Business 设置为进行新式验证。  请按照[为租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)中的指示为 Skype 设置新式验证。 |
 | Office 应用策略不适用 | 应用保护策略不适用于任何用户的任何[支持的 Office 应用](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。 | 确认用户已获得 Intune 许可，且 Office 应用是某个已部署的应用保护策略的目标对象。 可能需要最多 8 小时来使新部署的应用保护策略生效。 |
-| 管理员无法在 Azure 门户中配置应用保护策略 | IT 管理员用户无法在 Azure 门户中配置应用保护策略。 | 下列用户角色可访问 Azure 门户： <ul><li>全局管理员，您可以在设置[Microsoft 365 管理中心](https://admin.microsoft.com/)</li><li>所有者，可在 [Azure 门户](https://portal.azure.com/)设置中。</li><li>参与者，可在 [Azure 门户](https://portal.azure.com/)设置中。</li></ul> 若要获取设置这些角色方面的帮助，请参阅[结合使用基于角色的管理控制 (RBAC) 和 Microsoft Intune](role-based-access-control.md)。|
+| 管理员无法在 Azure 门户中配置应用保护策略 | IT 管理员用户无法在 Azure 门户中配置应用保护策略。 | 下列用户角色可访问 Azure 门户： <ul><li>全局管理员，可在 [Microsoft 365 管理中心](https://admin.microsoft.com/)中设置</li><li>所有者，可在 [Azure 门户](https://portal.azure.com/)设置中。</li><li>参与者，可在 [Azure 门户](https://portal.azure.com/)设置中。</li></ul> 若要获取设置这些角色方面的帮助，请参阅[结合使用基于角色的管理控制 (RBAC) 和 Microsoft Intune](role-based-access-control.md)。|
 |应用保护策略报表中缺少用户帐户 | 管理控制台报表不显示最近部署了应用保护策略的用户帐户。 | 若用户是应用保护策略的新目标用户，则可能要 24 小时后，该用户才会在报表中显示为目标用户。 |
 | 策略更改无效 | 对应用保护策略的更改和更新可能需要 8 小时才能应用。 | 如果适用，最终用户可注销该应用，然后重新登录，强行与服务同步。 |
 | DEP 中无法使用应用保护策略 | 应用保护策略不适用于 Apple DEP 设备。 | 请确保通过 Apple 设备注册计划 (DEP) 使用用户关联。 对需要在 DEP 下进行用户身份验证的应用而言，用户关联是必须的。 <br><br>若要详细了解 iOS DEP 注册，请参阅[通过 Apple 设备注册计划自动注册 iOS 设备](device-enrollment-program-enroll-ios.md)。|

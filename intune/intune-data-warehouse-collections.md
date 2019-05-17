@@ -326,7 +326,7 @@ EnrollmentActivity 实体表示设备注册活动。
 | enrollmentFailureCategoryKey  | 注册失败类别的键（如果注册失败）。        |
 | enrollmentFailureReasonKey    | 注册失败原因的键（如果注册失败）。          |
 | osVersion                     | 设备的操作系统版本。                               |
-| count                         | 符合上述分类的注册活动总数。  |
+| 计数                         | 符合上述分类的注册活动总数。  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
 EnrollmentEventStatus 实体表示设备注册结果。
@@ -435,8 +435,8 @@ MamApplication 实体列出了未在企业中注册便通过移动应用程序�
 | 属性 | 描述 | 示例 |
 |---------|------------|--------|
 | mamApplicationKey |MAM 应用程序的唯一标识符。 | 432 |
-| mamApplicationName |MAM 应用程序的名称。 |MAM 应用程序的示例名称 |
-| mamApplicationId |MAM 应用的应用程序 ID。 | 123 |
+| mamApplicationName |MAM 应用程序的名称。 |MAM 应用程序示例名称 |
+| mamApplicationId |MAM 应用程序的应用程序 ID。 | 123 |
 | IsDeleted |表明是否已更新此 MAM 应用记录。 <br>True - MAM 应用拥有新纪录，其中含有此表中的更新的字段。 <br>False - 此 MAM 应用的最新记录。 |True/False |
 | StartDateInclusiveUTC |在数据仓库中创建此 MAM 应用时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
 | DeletedDateUTC |IsDeleted 更改为 True 时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
@@ -453,15 +453,15 @@ MamApplicationInstance 实体将托管移动应用程序管理 (MAM) 应用列�
 |   ApplicationInstanceKey   |                                                               数据仓库中 MAM 应用实例的唯一标识符 - 代理键。                                                                |                 123                  |
 |           UserId           |                                                                              已安装此 MAM 应用的用户的用户 ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM 应用实例的唯一标识符 - 类似于 ApplicationInstanceKey，但该标识符是自然键。                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | Mam 应用程序为其创建此 Mam 应用程序实例的应用程序 Id。   | 2016/11/23 - 中午 12:00:00   |
+| mamApplicationId | 创建此 MAM 应用程序实例的 MAM 应用程序的应用程序 ID。   | 2016/11/23 - 中午 12:00:00   |
 |     ApplicationVersion     |                                                                                     此 MAM 应用的应用程序版本。                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 创建此 MAM 应用实例记录的日期。 该值可以为 null。                                                                 |        2016/11/23 - 中午 12:00:00        |
 |          平台          |                                                                          安装此 MAM 应用的设备平台。                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      安装此 MAM 应用的设备的平台版本。                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            包装此 MAM 应用时所使用的 MAM SDK 版本。                                                                            |                 3.2                  |
-| mamDeviceId | MAM 应用程序实例与之关联的设备的设备 Id。   | 2016/11/23 - 中午 12:00:00   |
-| mamDeviceType | MAM 应用程序实例与之关联的设备的设备类型。   | 2016/11/23 - 中午 12:00:00   |
-| mamDeviceName | MAM 应用程序实例与之关联的设备的设备名称。   | 2016/11/23 - 中午 12:00:00   |
+| mamDeviceId | 与 MAM 应用程序实例关联的设备的设备 ID。   | 2016/11/23 - 中午 12:00:00   |
+| mamDeviceType | 与 MAM 应用程序实例关联的设备的设备类型。   | 2016/11/23 - 中午 12:00:00   |
+| mamDeviceName | 与 MAM 应用程序实例关联的设备的设备名。   | 2016/11/23 - 中午 12:00:00   |
 |         IsDeleted          | 表明是否已更新此 MAM 应用实例记录。 <br>True - 此 MAM 应用实例拥有新纪录，其中含有此表中的更新的字段。 <br>False - 此 MAM 应用实例的最新记录。 |              True/False              |
 |   StartDateInclusiveUtc    |                                                              在数据仓库中创建此 MAM 应用实例时的 UTC 日期和时间。                                                               |        2016/11/23 - 中午 12:00:00        |
 |       DeletedDateUtc       |                                                                             IsDeleted 更改为 True 时的 UTC 日期和时间。                                                                              |        2016/11/23 - 中午 12:00:00        |
@@ -479,7 +479,7 @@ MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 
 | DateKey |日期键，表明在数据仓库中记录 MAM 应用签入的时间。 | 20160703 |
 | ApplicationInstanceKey |与此 MAM 应用签入关联的应用实例的键。 | 123 |
 | UserKey |与此 MAM 应用签入关联的用户的键。 | 4323 |
-| mamApplicationKey |应用程序密钥的应用程序与 MAM 应用签入相关联。 | 432 |
+| mamApplicationKey |与 MAM 应用程序签入相关联的应用程序的应用程序密钥。 | 432 |
 | DeviceHealthKey |与此 MAM 应用签入关联的 DeviceHealth 的键。 | 321 |
 | PlatformKey |表示与此 MAM 应用签入关联的设备的平台。 |123 |
 | LastCheckInDate |上次签入此 MAM 应用的日期和时间。 该值可以为 null。 |2016/11/23 - 中午 12:00:00 |
@@ -527,7 +527,7 @@ managementAgentType 实体表示用于管理设备的代理。
 | 5                     | EasIntuneClient                   | 设备由 Exchange Active Sync 和 Intune 电脑代理共同管理 |
 | 8                     | ConfigManagerClient               | 设备由 System Center Configuration Manager 代理管理     |
 | 10                    | ConfigurationManagerClientMdm     | 设备由 Configuration Manager 和 MDM 管理。                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | 通过 Configuration Manager、 MDM 和 Exchange Active Sync 管理设备。               |
+| 11                    | ConfigurationManagerCLientMdmEas  | 设备由 Configuration Manager、MDM 和 Exchange Active Sync 管理。               |
 | 16                    | Unknown                           | 未知的管理代理类型                                              |
 | 32                    | Jamf                              | 设备属性从 Jamf 提取。                               |
 | 64                    | GoogleCloudDevicePolicyController |  设备由 Google 的 CloudDPC 管理。                                 |
@@ -586,10 +586,10 @@ ownerType 实体表明拥有设备的是公司、个人还是未知对象。
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 所有者类型的唯一标识符。                                                                                                                                               |                            |
 | ownerTypeKey  | 数据仓库中所有者类型的唯一标识符 - 代理键。                                                                                                       |                            |
-| ownerTypeName | 表示设备的所有者类型：企业 - 设备为企业所有。  个人 - 设备为个人所有 (BYOD)。   未知 - 此设备上无此信息。 | 公司个人未知 |
+| ownerTypeName | 表示设备的所有者类型：企业 - 设备为企业所有。  个人 - 设备为个人所有 (BYOD)。   未知 - 此设备上无此信息。 | 公司/个人未知 |
 
 > [!Note]  
-> 有关`ownerTypeName`筛选器在 azure Ad 的设备创建动态组时，您需要将值设置`deviceOwnership`作为`Company`。 有关详细信息，请参阅[设备的规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
+> 对于在为设备创建动态组时 Azure AD 中的 `ownerTypeName` 筛选器，需要将值 `deviceOwnership` 设置为 `Company`。 有关详细信息，请参阅[设备规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
 
 ## <a name="policies"></a>策略
 “策略”实体列出了设备配置文件、应用配置文件和符合性策略。 可使用移动设备管理 (MDM) 将策略分配给企业中的一个组。
