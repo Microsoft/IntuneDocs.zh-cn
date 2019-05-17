@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836347"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569410"
 ---
 # <a name="what-are-app-protection-policies"></a>什么是应用保护策略？
 
@@ -50,7 +51,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 > [!IMPORTANT]
 > 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 此外，还可以通过为启用了混合现代身份验证的 Outlook for iOS 和 Outlook for Android 创建 Intune 应用保护策略来保护对 Exchange 本地邮箱的访问。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。 连接到本地 Exchange 或 SharePoint 服务的其他应用不支持应用保护策略。
 
-**使用应用保护策略的主要优点有**
+**使用应用保护策略的主要优点**：
 
 -   在应用级别保护公司数据。 由于移动应用管理不需要设备管理，因此可在受管理和不受管理设备上保护公司数据。 管理以用户标识为中心，因而不再需要设备管理。
 
@@ -69,8 +70,8 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，防止数据丢
 ### <a name="supported-platforms-for-app-protection-policies"></a>应用保护策略的受支持平台
 Intune 应用保护策略平台支持与适用于 Android 和 iOS 设备的 Office 移动应用程序平台支持保持一致。 有关详细信息，请参阅 [Office 系统要求](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)的“移动应用”部分。
 
-目前不支持 Windows 设备。 但是，可以使用 Windows 信息保护，它提供了类似功能。 有关详细信息，请参阅[使用 Windows 信息保护 (WIP) 保护企业数据](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)。
-
+> [!IMPORTANT]
+> 接收 Android 应用保护策略的设备必须安装有 Intune 公司门户。 有关详细信息，请参阅 [Intune 公司门户访问应用要求](end-user-mam-apps-android.md#access-apps)。
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>应用保护策略如何保护应用数据
 

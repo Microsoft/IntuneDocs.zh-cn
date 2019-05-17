@@ -1,15 +1,16 @@
 ---
-title: 将 Intune 帐户连接到 Android 企业帐户
-titlesuffix: Microsoft Intune
-description: 了解如何将 Intune 帐户连接到 Android 企业帐户。
+title: 将 Intune 帐户连接到托管的 Google Play 帐户。
+titleSuffix: Microsoft Intune
+description: 了解如何将 Intune 帐户连接到托管的 Google Play 帐户。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 6/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 421d9c56f959fe30d35c0c55ce34017a7a0ba5a6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19efd0821deeac0e76c60ee67e6230da554391a0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838252"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567382"
 ---
-# <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>将 Intune 帐户连接到 Android 企业帐户
+# <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>将 Intune 帐户连接到托管的 Google Play 帐户
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-要支持 [Android 工作配置文件](android-work-profile-enroll.md)、[Android 完全托管](android-fully-managed-enroll.md)和 [Android 专用设备](android-kiosk-enroll.md)，必须将 Intune 租户帐户连接到 Android 企业帐户。  
+要支持 [Android Enterprise 工作配置文件](android-work-profile-enroll.md)、[Android Enterprise 完全托管](android-fully-managed-enroll.md)和 [Android Enterprise 专用设备](android-kiosk-enroll.md)，必须将 Intune 租户帐户连接到托管的 Google Play 帐户。  
 
 > [!NOTE]
 > 因为 Google 和 Microsoft 域之间的交互，此步骤可能需要你调整浏览器设置。  请确保“portal.azure.com”和“play.google.com”在浏览器中位于同一安全区域。
@@ -42,7 +43,7 @@ ms.locfileid: "55838252"
    
 4. 选择“启动 Google 立即连接”以打开托管的 Google Play 网站。 网站将在浏览器的新选项卡中打开。
   
-5. 在 Google 的登录页上，输入将与此租户的所有 Android 企业管理任务相关联的 Google 帐户。 这是在公司的 IT 管理员之间共享的 Google 帐户，用于在 Google Play 控制台中管理和发布应用。 可以使用现有 Google 帐户或创建新帐户。 所选帐户不能与 G-Suite 域相关联。
+5. 在 Google 的登录页上，输入将与此租户的所有 Android Enterprise 管理任务相关联的 Google 帐户。 这是在公司的 IT 管理员之间共享的 Google 帐户，用于在 Google Play 控制台中管理和发布应用。 可以使用现有 Google 帐户或创建新帐户。 所选帐户不能与 G-Suite 域相关联。
     
     > [!Note]
     > 如果使用 Microsoft Edge 浏览器，单击右上角的“登录”可登录到 Google 帐户。
@@ -51,9 +52,9 @@ ms.locfileid: "55838252"
 
 7. 同意 Android 协议，然后选择“确认”。 你的请求会进行处理。
 
-## <a name="disconnect-your-android-enterprise-administrative-account"></a>断开 Android 企业管理帐户的连接
+## <a name="disconnect-your-android-enterprise-administrative-account"></a>断开 Android Enterprise 管理帐户的连接
 
-可以关闭 Android 企业注册和管理。 若要执行此操作，必须首先停用任何已注册的 Android 工作配置文件设备。 然后，在 Intune 管理控制台中选择“断开连接”，将从注册中删除所有已注册的 Android 工作配置文件设备和展台设备。 此操作还会删除 Android 企业帐户与 Intune 之间的关系。
+可以关闭 Android Enterprise 注册和管理。 若要执行此操作，必须首先停用任何已注册的 Android Enterprise 工作配置文件设备。 然后，在 Intune 管理控制台中选择“断开连接”，从注册中删除所有已注册的 Android Enterprise 工作配置文件设备和专用设备。 此操作还会删除托管的 Google Play 帐户与 Intune 之间的关系。
 
 1. 作为 Intune 管理员，在 [Azure 门户](https://portal.azure.com)中，选择“所有服务” > “监视 + 管理” > “Intune”。
 2. 选择“设备注册” > “Android 注册” > “托管的 Google Play” > “断开连接”。
@@ -61,4 +62,4 @@ ms.locfileid: "55838252"
 
 ## <a name="next-steps"></a>后续步骤
 
-连接到 Android 企业帐户后，可[设置 Android 工作配置文件设备](android-work-profile-enroll.md)和[设置 Android 展台设备](android-kiosk-enroll.md)。
+连接到托管的 Google Play 帐户后，可[设置 Android Enterprise 工作配置文件设备](android-work-profile-enroll.md)和[设置 Android Enterprise 专用设备](android-kiosk-enroll.md)。

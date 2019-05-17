@@ -9,6 +9,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97a1ab3327f8d76f1623d51fe80289a8f15d7ff1
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 956fe061912e0eb96a18c410e1455252874d6b84
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235219"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57459945"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>注册或登录到 Microsoft Intune
 
@@ -38,7 +39,7 @@ ms.locfileid: "57235219"
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>如何注册或登录到 Intune
 
-1. 请访问 [Intune 注册页](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。
+1. 请访问 [Intune 注册页](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。
 
    ![Microsoft Intune 试用版帐户注册网页的屏幕截图](./media/account-sign-up-site.png)
 
@@ -47,4 +48,4 @@ ms.locfileid: "57235219"
 ## <a name="post-sign-up-considerations"></a>注册后的注意事项
 注册新订阅后，在注册过程中提供的电子邮件地址将收到一封含有帐户信息的电子邮件。 这封电子邮件将确认你的订阅处于活动状态。
 
-完成注册过程后，系统会定向到 Office 365 管理中心，在此处可添加用户并为其分配许可证。 如果只有使用默认 onmicrosoft.com 域名的基于云的帐户，此时就可以继续操作，并添加用户和分配许可证。 但是，如果要使用组织的[自定义域名](custom-domain-name-configure.md)，或者从本地 Active Directory [同步用户帐户信息](users-add.md#sync-active-directory-and-add-users-to-intune)，则可关闭该浏览器窗口。
+完成注册过程后，系统会定向到 Microsoft 365 管理中心，在此处可添加用户并为其分配许可证。 如果只有使用默认 onmicrosoft.com 域名的基于云的帐户，此时就可以继续操作，并添加用户和分配许可证。 但是，如果要使用组织的[自定义域名](custom-domain-name-configure.md)，或者从本地 Active Directory [同步用户帐户信息](users-add.md#sync-active-directory-and-add-users-to-intune)，则可关闭该浏览器窗口。

@@ -1,27 +1,29 @@
 ---
 title: 基于应用的条件性访问与 Intune 的协作
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解基于应用的条件性访问如何与 Intune 协作。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/31/2017
-ms.topic: article
+ms.date: 02/11/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30f5b902619c84e6d1d193c252e76475d2e54e82
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b4c39a1d95a10c96b8f34703f99c4d8414efbbf0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816729"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567369"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的条件性访问与 Intune 的协作
 
@@ -67,7 +69,7 @@ ms.locfileid: "53816729"
 
 3. 在设备上安装代理应用。
 
-4. 代理应用将开启 Azure AD 注册进程，在 Azure AD 中创建一个设备记录。 这与移动设备管理 (MDM) 注册过程不同，但此记录是必须的，以便可在设备上强制执行条件性访问策略。
+4. 代理应用将启动 Azure AD 注册进程，在 Azure AD 中创建一个设备记录。 这与移动设备管理 (MDM) 注册过程不同，但此记录是必需的，用于在设备上强制执行条件访问策略。
 
 5. 代理应用将验证应用程序的身份。 有一个安全层，以便代理应用可验证该应用是否授权用户使用。
 

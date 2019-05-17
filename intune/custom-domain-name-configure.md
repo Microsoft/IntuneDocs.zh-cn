@@ -1,6 +1,6 @@
 ---
 title: 配置自定义域名
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 向你的 Microsoft Intune 订阅添加自定义域名
 keywords: ''
 author: dougeby
@@ -10,18 +10,20 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181490"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567239"
 ---
 # <a name="configure-a-custom-domain-name"></a>配置自定义域名
 
@@ -42,14 +44,14 @@ ms.locfileid: "52181490"
 
 ## <a name="to-add-and-verify-your-custom-domain"></a>添加和验证自定义域
 
-1. 转到 [Office 365 管理门户](https://portal.office.com/Admin/Default.aspx)并登录到你的管理员帐户。
+1. 转到 [Microsoft 365 管理中心](https://admin.microsoft.com/)并登录到管理员帐户。
 
 2. 在导航窗格中，选择“安装”&gt;“域”。
 
 3. 选择“添加域”，然后键入你的自定义域名。 选择“下一步”。
-   ![Office 365 管理中心屏幕截图，其中已选择“设置”>“域”，并且正在添加新域名](./media/domain-custom-add.png)
+   ![Microsoft 365 管理中心屏幕截图，其中已选择“设置”>“域”，且正在添加新域名](./media/domain-custom-add.png)
 4. “验证域”对话框将打开，为你提供用于在 DNS 托管提供者中创建 TXT 记录的值。
-    - **GoDaddy 用户**：Office 365 管理门户会将你重定向到 GoDaddy 的登录页。 输入你的凭据并接受域更改权限协议后，自动创建 TXT 记录。 你还可以[创建 TXT 记录](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a)。
+    - **GoDaddy 用户**：Microsoft 365 管理中心将你重定向到 GoDaddy 的登录页。 输入你的凭据并接受域更改权限协议后，自动创建 TXT 记录。 你还可以[创建 TXT 记录](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a)。
     - **Register.com 用户**：按照[分步说明](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify)创建 TXT 记录。
 
 也可在 [Azure Active Directory 中执行](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)添加和验证自定义域的步骤。

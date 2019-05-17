@@ -1,15 +1,16 @@
 ---
 title: 什么是 Microsoft Intune 中的应用管理？
-titlesuffix: ''
+titleSuffix: ''
 description: 通过 Microsoft Intune 平台了解客户端应用程序的管理功能。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34807edabf99a107c259fdfae5e43db18084fb67
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850892"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59569059"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -44,7 +45,7 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | 向设备和用户添加和分配应用 | 是 | 是 | 是 | 是 | 是 |
 | 将应用分配到未注册 Intune 的设备 | 是 | 是 | 否 | 否 | 否 |
-| 使用应用配置策略来控制应用的启动行为 | 否 | 是 | 否 | 否 | 否 |
+| 使用应用配置策略来控制应用的启动行为 | 是 | 是 | 否 | 否 | 否 |
 | 使用移动应用预配策略续订过期应用 | 否 | 是 | 否 | 否 | 否 |
 | 使用应用保护策略来保护应用中的公司数据 | 是 | 是 | 否 | 否1 | 否 |
 | 仅从已安装应用中删除公司数据（应用选择性擦除） | 是 | 是 | 否 | 是 | 是 |

@@ -1,27 +1,29 @@
 ---
 title: Intune 规划和设计简介
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 本文将简要介绍所有 Microsoft Intune 规划、设计和实施部分。 通过各类工具，可帮助你确定目标、用例场景和要求，创建推出和通信计划、支持、测试和验证计划。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b2ddf29157255feaa7d336913640a1cf434f921c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185766"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568630"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 部署规划、设计和实施指南
 
@@ -33,21 +35,21 @@ ms.locfileid: "52185766"
 
 本指南包含用于引导用户完成整个 Intune 部署过程的各个部分。 从第 1 部分开始，明确你的目标、宗旨和难题。 然后，以最符合你需求的顺序转至部分 2 – 7。 无需按顺序完成这些部分；你可以同时完成这些部分。
 
--   [第 1 部分：确定部署目标、宗旨和难题](planning-guide-deployment-goals.md)
+-   [第 1 部分：确定部署目标、宗旨和挑战](planning-guide-deployment-goals.md)
 
--   [第 2 部分：确定用例方案](planning-guide-scenarios.md)
+-   [第 2 部分：确定用例场景](planning-guide-scenarios.md)
 
--   [第 3 部分：确定用例方案要求](planning-guide-requirements.md)
+-   [第 3 部分：确定用例要求](planning-guide-requirements.md)
 
 -   [第 4 部分：制定推出计划](planning-guide-rollout-plan.md)
 
--   [第 5 部分：制定推出计划](planning-guide-communication-plan.md)
+-   [第 5 部分：制定推出通信计划](planning-guide-communication-plan.md)
 
 -   [第 6 部分：制定支持计划](planning-guide-support-plan.md)
 
 -   [第 7 部分：创建 Intune 设计](planning-guide-design.md)
 
--   [第 8 部分：实施 Intune](planning-guide-onboarding.md)
+-   [第 8 部分：Intune 实现过程](planning-guide-onboarding.md)
 
 -   [第 9 部分：测试和验证](planning-guide-test-validation.md)
 
@@ -63,4 +65,4 @@ ms.locfileid: "52185766"
 
 ## <a name="next-steps"></a>后续步骤
 
-让我们开始第一部分：[确定部署目标、宗旨和难题](planning-guide-deployment-goals.md)。
+让我们开始进入第 1 部分：[确定部署目标、宗旨和挑战](planning-guide-deployment-goals.md)。

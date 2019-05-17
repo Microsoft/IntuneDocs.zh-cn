@@ -1,15 +1,16 @@
 ---
 title: 将 Windows 业务线应用添加到 Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: 了解如何使用 Microsoft Intune 添加 Windows 业务线 (LOB) 应用。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7776c1bddb459347679cb4aea3bc4e14e05e1418
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
+ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238772"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59570762"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>将 Windows 业务线应用添加到 Microsoft Intune
 
@@ -92,4 +93,4 @@ ms.locfileid: "57238772"
 
 - 详细了解可用于监视应用的属性和分配的方法。 请参阅[如何监视应用信息和分配](apps-monitor.md)。
 
-- 详细了解 Intune 中应用的上下文。 请参阅[设备和应用生命周期概述](introduction-device-app-lifecycles.md)。
+- 详细了解 Intune 中应用的上下文。 请参阅 [Microsoft Intune 中的应用生命周期概述](app-lifecycle.md)。

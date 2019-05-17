@@ -1,15 +1,15 @@
 ---
 title: 使用 Intune 设置基于应用的条件性访问策略
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何使用 Intune 创建基于应用的条件性访问策略。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2026a446ffef3bd845affe45a7732ef3ab8ec24
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1514fe9dfcd09e2b77967b0fed8c36fb7a06634f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842909"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567486"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>使用 Intune 设置基于应用的条件性访问策略
 
@@ -33,12 +33,11 @@ ms.locfileid: "55842909"
 > [!IMPORTANT]
 > 本文介绍了添加基于应用的条件访问策略的步骤。 从批准的应用列表添加应用（如 SharePoint Online、Microsoft Teams 和 Microsoft Exchange Online）时，可使用相同步骤。
 
-## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>在 Azure AD 工作负载中创建基于应用的条件访问策略
-
-IT 管理员可从 Azure AD 工作负载中创建基于应用的条件访问策略。 该访问意味着无需在 Azure 和 Intune 工作负载之间进行切换。
+## <a name="create-app-based-conditional-access-policies"></a>创建基于应用的条件访问策略
+条件访问是一项 Azure Active Directory (Azure AD) 技术。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同。 这意味着无需在 Intune 和 Azure AD 之间切换即可配置策略。
 
 > [!IMPORTANT]
-> 需要具备 Azure AD Premium 许可证才能从 Intune Azure 门户创建 Azure AD 条件性访问策略。
+> 需要具备 Azure AD Premium 许可证才能从 Intune 门户创建条件访问策略。
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>创建基于应用的条件性访问策略
 

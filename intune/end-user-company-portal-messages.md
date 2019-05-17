@@ -1,6 +1,6 @@
 ---
 title: 用户可能在设备上看到的公司门户消息
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解最终用户可能在公司门户中看到的不同消息。
 keywords: ''
 author: lenewsad
@@ -10,18 +10,19 @@ ms.date: 03/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fd42ece4a0df60ebe6f15b67c91bba46f210ff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233146"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569124"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>帮助最终用户理解公司门户应用消息
 
@@ -110,6 +111,34 @@ ms.locfileid: "57233146"
 ### <a name="what-it-means"></a>其含义
 
 将公司门户添加到 Windows 信息保护 (WIP) 应用保护策略中的“允许的应用”或“豁免应用”列表。 有关详细信息，请参阅[通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略](windows-information-protection-policy-create.md)。
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>在 iOS 设备上批准 iOS 公司应用（业务线应用） 
+
+### <a name="where-it-appears"></a>显示位置
+默认情况下，如果你的组织开发的 iOS 应用未在 App Store 中提供，则不受设备信任。 使用公司门户安装此类应用并启动应用时，将显示以下消息：
+
+![iOS 应用消息 - 不受信任的企业级开发版](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>其含义
+此消息指示你需要修改 iOS 设备设置才能在 iOS 设备上批准和安装由你的公司开发的应用。
+
+使用公司门户安装此类应用并启动应用时，请按照以下步骤在下载应用后批准它：
+
+1. 启动已安装的公司应用（业务线应用）后，你会看到“不受信任的企业级开发版”消息。 <br>
+   按“取消”。
+2. 导航到“设置” > “通用” > “设备管理”。
+
+   ![iOS 设备 UI - 设备管理](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. 选择“管理配置文件” > “企业应用”。
+4. 选择开发者名称。
+5. 按“信任开发者名称”。
+6. 在应用安装弹出消息上选择“信任”来确认应用。
+
+   ![iOS 设备 UI - 信任应用消息](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    此时，应该能够启动并使用公司应用。
+
 
 ### <a name="see-also"></a>另请参阅
 [最终用户需了解的 Intune 使用情况](end-user-educate.md)

@@ -1,15 +1,16 @@
 ---
 title: 屏蔽在 Intune 上不使用现代验证的应用
 titleSuffix: Microsoft Intune
-description: 了解如何屏蔽不使用 Microsoft Intune 进行新式身份验证 (ADAL) 的应用。
+description: 了解使用 Microsoft Intune 的应用和新式身份验证 (ADAL)。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 04/03/2019
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
+ms.topic: conceptual
 ms.technology: ''
 ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
@@ -17,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a651f926f8e8cc5beab80a70649c82677e0b2487
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9ca96f36f8813d80c7ebb07bfb3bd65f8aa0b392
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833046"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569098"
 ---
-# <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>屏蔽不使用现代验证 (ADAL) 的应用
+# <a name="block-apps-that-dont-use-modern-authentication-adal"></a>屏蔽不使用新式身份验证 (ADAL) 的应用
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用应用保护策略且基于应用的条件访问依赖使用[新式身份验证](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)（即实现 OAuth2）的应用。 目前大部分 Office 移动和桌面应用都使用新式身份验证。 但也有第三方应用和旧版 Office 应用使用其他身份验证方法（如基本身份验证和基于窗体的身份验证）。
 
-## <a name="block-apps"></a>屏蔽应用
+## <a name="block-access-to-apps"></a>阻止访问应用
 
-若要屏蔽对不使用新式身份验证的应用的访问，我们建议使用以下方法：
+若要阻止访问不使用新式身份验证的应用，请使用 Intune 应用保护策略实现条件访问。 有关详细信息，请参阅[使用 Intune 且基于应用的条件访问](app-based-conditional-access-intune.md)。
 
-- 将 ADFS 声明规则设置为阻止非新式验证协议。 情形 3 [阻止所有对 O365 的访问（基于浏览器的应用除外）](https://technet.microsoft.com/library/dn592182.aspx)中提供了详细说明。
-- 对于 Exchange 和 SharePoint Online，请使用 Azure Active Directory 条件访问并使用 PowerShell commandlet Set-SPOTenant for SharePoint Online。 有关详细说明，请参阅[为 Azure Active Directory 条件访问设置 SharePoint Online 和 Exchange Online](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols)。
+## <a name="additional-information"></a>其他信息
 
-
->[!IMPORTANT]
->基于应用的 CA 不得与基于 Azure Active Directory (Azure AD) 证书的身份验证结合使用。 一次只能配置其中一种。
+有关 Azure AD 条件访问的详细信息，请参阅以下主题：
+- [什么是 Azure Active Directory 中的条件访问？](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [基于应用的条件访问的工作方式](app-based-conditional-access-intune.md#how-app-based-conditional-access-works)
+- [为 Azure Active Directory 条件访问设置 SharePoint Online 和 Exchange Online](https://docs.microsoft.com/azure/active-directory/conditional-access/conditional-access-for-exo-and-spo)
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -1,15 +1,16 @@
 ---
 title: 在 Intune 中注册 Android 设备
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何在 Intune 中注册 Android 设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846751"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568669"
 ---
 # <a name="enroll-android-devices"></a>注册 Android 设备
 
@@ -30,10 +31,10 @@ ms.locfileid: "55846751"
 
 Intune 管理员可管理以下 Android 设备：
 - Android 设备，包括 Samsung Knox 标准设备。
-- Android 企业设备，包括：
-    - **Android 工作配置文件设备**：已被授予访问公司数据的权限的个人设备。 管理员可以管理工作帐户、应用和数据。 设备上的个人数据与工作数据分开，管理员不控制个人设置或数据。 
-    - **Android 专用设备**：公司所有的单一用途设备，如数字签名、票证打印或库存管理。 管理员会将设备的用途限制为有限的一组应用和 Web 链接。 它还可以防止用户在设备上添加其他应用或执行其他操作。
-    - **Android 完全托管的设备**：公司所有的单个用户设备，专门用于工作并非个人用途。 管理员可以管理整个设备，强制执行工作配置文件不可用的策略控制。 
+- Android Enterprise 设备，包括：
+    - **Android Enterprise 工作配置文件设备**：已被授予访问公司数据的权限的个人设备。 管理员可以管理工作帐户、应用和数据。 设备上的个人数据与工作数据分开，管理员不控制个人设置或数据。 
+    - **Android Enterprise 专用设备**：公司所有的单一用途设备，如数字签名、票证打印或库存管理。 管理员会将设备的用途限制为有限的一组应用和 Web 链接。 它还可以防止用户在设备上添加其他应用或执行其他操作。
+    - **Android Enterprise 完全托管设备**：公司所有的单个用户设备，专门用于工作并非个人用途。 管理员可以管理整个设备，强制执行工作配置文件不可用的策略控制。 
 
 ## <a name="prerequisite"></a>先决条件
 
@@ -52,13 +53,13 @@ Intune 管理员可管理以下 Android 设备：
 
 若要阻止 Android 设备注册或仅阻止个人拥有的 Android 设备注册，请参阅 [Set device type restrictions](enrollment-restrictions-set.md)（设置设备类型限制）。
 
-## <a name="set-up-android-enterprise-enrollment"></a>设置 Android 企业注册
+## <a name="set-up-android-enterprise-enrollment"></a>设置 Android Enterprise 注册
 
-Android 企业是一组 Android 设备功能和服务，它将分隔个人应用和数据与包含工作应用和数据的工作配置文件。 Android 企业设备包括工作配置文件设备、完全托管设备和专用设备。 
+Android 企业版提供了一组注册选项，为用户提供最新且安全的功能。 Android Enterprise 注册选项包括工作配置文件设备、完全托管设备和专用设备。
 
-- [设置 Android 工作配置文件注册](android-work-profile-enroll.md)
-- [设置 Android 专用设备注册](android-kiosk-enroll.md)
-- [设置 Android 完全托管设备注册](android-fully-managed-enroll.md)
+- [设置 Android Enterprise 工作配置文件注册](android-work-profile-enroll.md)
+- [设置 Android Enterprise 专用设备注册](android-kiosk-enroll.md)
+- [设置 Android Enterprise 完全托管设备注册](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>注册 Samsung Knox 设备时的最终用户体验
 
@@ -76,6 +77,6 @@ Intune 支持 Samsung Knox 标准版设备进行多用户管理。 即是说，�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [设置 Android 工作配置文件注册](android-work-profile-enroll.md)
-- [设置 Android 专用设备注册](android-kiosk-enroll.md)
-- [设置 Android 完全托管设备注册](android-fully-managed-enroll.md)
+- [设置 Android Enterprise 工作配置文件注册](android-work-profile-enroll.md)
+- [设置 Android Enterprise 专用设备注册](android-kiosk-enroll.md)
+- [设置 Android Enterprise 完全托管设备注册](android-fully-managed-enroll.md)

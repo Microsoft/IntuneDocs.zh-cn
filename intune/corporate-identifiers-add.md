@@ -1,27 +1,29 @@
 ---
 title: 将企业标识符添加到 Intune
-titlesuffix: ''
+titleSuffix: ''
 description: 了解如何将企业标识符（注册方法、IMEI 和序列号）添加到 Microsoft Intune。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28ad1e492c4bdd7c87371611530cd3f8e2abc2e1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199432"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567278"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
@@ -66,8 +68,9 @@ ms.locfileid: "55199432"
 ```
 
 > [!IMPORTANT]
-> 某些 Android 设备具有多个 IMEI 号码。 对于每个已注册的设备，Intune 仅读取一个 IMEI 号码。 如果导入一个 IMEI 号码，但它与 Intune 列出的 IMEI 不符的情况下，就会将设备归类为个人设备，而非公司拥有的设备。 如果为设备导入多个 IMEI 号码，则未列出号码的注册状态将显示为“未知”。<br>
->另请注意：不保证 Android 序列号存在或是唯一的。 请与你的设备提供商核实，以明确序列号是否是可信的设备 ID。
+> 某些 Android 和 iOS 设备具有多个 IMEI 号码。 对于每个已注册的设备，Intune 仅读取一个 IMEI 号码。 如果导入一个 IMEI 号码，但它与 Intune 列出的 IMEI 不符，在这种情况下，就会将设备归类为个人设备，而非公司拥有的设备。 如果为设备导入多个 IMEI 号码，则未列出号码的注册状态将显示为“未知”。<br>
+>另请注意：建议以序列号的形式标识 iOS 设备。
+>不保证 Android 序列号存在或是唯一的。 请与你的设备提供商核实，以明确序列号是否是可信的设备 ID。
 >设备向 Intune 报告的序列号可能与设备的“Android 设置/关于”菜单中显示的 ID 不一致。 请验证设备制造商报告的序列号的类型。
 >尝试上传其序列号中包含点 (.) 的文件将导致上传失败。 不支持包含点的序列号。
 

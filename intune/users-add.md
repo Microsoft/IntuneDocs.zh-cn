@@ -1,6 +1,6 @@
 ---
 title: 添加用户并授予权限
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 将本地用户与 Azure AD 同步，并授予对 Intune 订阅的管理员权限。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01f1102c71aa182a63e395c3ee3be21a134ff0b3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a4e25ab5a546f20309853346d0d4ded42fee6e8b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846309"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568305"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
 
@@ -31,10 +32,10 @@ ms.locfileid: "55846309"
 作为管理员，可直接添加用户或从本地 Active Directory 同步用户。 添加后，用户可注册设备并访问公司资源。 还可为用户提供更多权限，包括“全局管理员”和“服务管理员”权限。
 
 ## <a name="add-users-to-intune"></a>添加用户到 Intune
-可通过 [Office 365 门户](https://www.office.com/signin)或 [Azure 门户](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)，手动将用户添加到 Intune 订阅。 管理员可以通过编辑用户帐户来分配 Intune 许可证。 可通过 Office 365 门户或 Intune Azure 门户分配许可证。 若要深入了解如何使用 Office 365 门户，请参阅[向 Office 365 门户逐一或批量添加用户](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
+可通过 [Microsoft 365 管理中心](https://admin.microsoft.com)或 [Azure 门户](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)，手动将用户添加到 Intune 订阅。 管理员可以通过编辑用户帐户来分配 Intune 许可证。 可通过 Microsoft 365 管理中心或 Intune Azure 门户分配许可证。 若要深入了解如何使用 Microsoft 365管理中心，请参阅[向 Microsoft 365 管理中心逐一或批量添加用户](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
 
-### <a name="add-intune-users-in-the-office-365-admin-center"></a>在 Office 365 管理中心添加 Intune 用户
-1. 使用全局管理员或用户管理管理员帐户登录 [Office 365 门户](https://www.office.com/signin)。
+### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心添加 Intune 用户
+1. 使用全局管理员或用户管理管理员帐户登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。
 2. 在 Office 365 菜单中，选择“管理员”。
 3. 在管理中心，选择“添加用户”。
 
@@ -77,7 +78,7 @@ ms.locfileid: "55846309"
 在 Intune 订阅中添加用户后，最好为一些用户授予管理员权限。  若要授予管理员权限，请按照下列步骤操作：
 
 ### <a name="give-admin-permissions-in-office-365"></a>在 Office 365 中授予管理员权限
-1. 使用全局管理员帐户登录 [Office 365 门户](https://www.office.com/signin)。
+1. 使用全局管理员帐户登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。
 2. 在 Office 365 菜单中，选择“管理员”。
 3. 在管理中心，选择“活动用户”，然后选择要为其授予管理员权限的用户。
 
@@ -90,7 +91,7 @@ ms.locfileid: "55846309"
 6. 选择 **“保存”**。
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>在 Azure 门户中授予管理员权限
-1. 使用全局管理员帐户登录 [Azure 门户](https://www.office.com/signin)。
+1. 使用全局管理员帐户登录 [Azure 门户](https://portal.azure.com)。
 2. 在 Azure 门户中，依次选择“用户”和要向其授予管理员权限的用户。
 3. 选择“目录角色”，然后选择权限。
   ![目录角色的屏幕截图](./media/add-intune-directory-role.png)
@@ -98,7 +99,7 @@ ms.locfileid: "55846309"
 
 ### <a name="types-of-administrators"></a>管理员类型
 
-为用户分配一个或多个管理员权限。 这些权限定义了各用户的管理范围及其能够管理的任务。 管理员权限在不同的 Microsoft 云服务之间是通用的，但部分服务可能不支持某些权限。 Azure 门户和 Office 365 门户均列出 Intune 未使用的受限管理员角色。 Intune 管理员权限包括以下选项：
+为用户分配一个或多个管理员权限。 这些权限定义了各用户的管理范围及其能够管理的任务。 管理员权限在不同的 Microsoft 云服务之间是通用的，但部分服务可能不支持某些权限。 Azure 门户和 Microsoft 365 管理中心均列出 Intune 未使用的受限管理员角色。 Intune 管理员权限包括以下选项：
 
 - 全局管理员 -（Office 365 和 Intune）访问 Intune 中的所有管理功能。 默认注册 Intune 的人员为全局管理员。全局管理员是唯一可分配其他管理员角色的管理员。 在组织中可有多个全局管理员。 建议最好只向公司中的少数人分配此角色，以降低业务风险。
 - 密码管理员 -（Office 365 和 Intune）重置密码、管理服务请求并监视服务运行状况。 密码管理员仅限为用户重置密码。
@@ -109,7 +110,7 @@ ms.locfileid: "55846309"
 
 创建 Microsoft Intune 订阅使用的是全局管理员帐户。 最佳做法是，不要将全局管理员用于日常管理任务。 虽然管理员不需要 Intune 许可证即可访问 Azure 门户上的 Intune，但在执行某些管理任务（例如设置 Exchange 服务连接器）时，则需要 Intune 许可证。
 
-若要访问 Office 365 门户，必须将帐户设置为“允许登录”。 在 Azure 门户中，将“配置文件”下的“禁止登录”设置为“否”，以允许访问。 此状态与拥有订阅许可证不同。 默认情况下，所有用户帐户均为“已允许”。 无管理员权限的用户可使用 Office 365 门户重置 Intune 密码。
+若要访问 Microsoft 365 管理中心，必须将帐户设置为“允许登录”。 在 Azure 门户中，将“配置文件”下的“禁止登录”设置为“否”，以允许访问。 此状态与拥有订阅许可证不同。 默认情况下，所有用户帐户均为“已允许”。 无管理员权限的用户可使用 Microsoft 365 管理中心重置 Intune 密码。
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>同步 Active Directory 并将用户添加到 Intune
 可配置目录同步，将用户帐户从本地 Active Directory 导入到包含 Intune 用户的 Microsoft Azure Active Directory (Azure AD)。 让本地 Active Directory 服务与你所有基于 Azure Active Directory 的服务相连接，使管理用户标识变得更简单。 还可以配置单一登录功能，使用户的身份验证体验熟悉且简单。 通过将同一 [Azure AD 租户](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)与多个服务相链接，先前同步的用户帐户便可用于所有基于云的服务。

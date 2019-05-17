@@ -1,6 +1,6 @@
 ---
 title: 设置 macOS 设备注册
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 了解如何在 Intune 中设置 macOS 设备注册。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 08/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d23d03169cdbf3c88be257cafe6aa84dc8c5257f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236750"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568318"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中设置 macOS 设备注册
 
@@ -40,7 +41,7 @@ Intune 可以管理 macOS 设备以允许用户访问公司电子邮件和应用
 - [设置 MDM 机构](mdm-authority-set.md)
 - [创建组](groups-add.md)
 - [配置公司门户](company-portal-app.md)
-- 在 [Office 365 门户](http://go.microsoft.com/fwlink/p/?LinkId=698854)中分配用户许可证
+- 在 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)分配用户许可证
 - [获取 Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>用户拥有的 macOS 设备 (BYOD)

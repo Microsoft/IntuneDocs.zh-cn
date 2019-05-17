@@ -7,21 +7,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 031db83302dfef8b99fc83ab7975e233c3eeb799
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188086"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396856"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -104,7 +106,7 @@ Intune 目前与下列电信费用管理提供商集成：
 
    ![显示 Datalert 连接状态为“活动”的 Intune 页面](./media/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>步骤 3：将 Datalert 应用部署到企业注册的设备
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>步骤 3：将 Datalert 应用部署到公司注册的设备
 
 若要确保收集仅来自公司拥有的线路的数据使用情况，必须执行以下两项操作：
 - 在 Intune 中创建设备类别

@@ -1,27 +1,28 @@
 ---
-title: 创建 Exchange 条件访问策略 | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: 创建 Exchange 条件访问策略
+titleSuffix: Microsoft Intune
 description: 在 Intune 中配置 Exchange 内部部署的条件访问和旧版 Exchange Online Dedicated。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 003e6e5aa78440861e6aff5be138c4a302171c1b
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840393"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571733"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>为本地 Exchange 和旧版 Exchange Online Dedicated 配置条件访问策略
 
@@ -79,48 +80,50 @@ Windows 8.1 和更高版本上的本机**邮件**应用程序（向 Intune 注�
 
 1. 转到 [Azure 门户](https://portal.azure.com/)，然后使用 Intune 凭据登录。
 
-1. 成功登录后，你会看到 Azure 仪表板。
+2. 转到“Intune” > “Exchange 访问”，然后选择“Exchange 本地访问”。 
 
-1. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
+3. 在“Exchange 本地访问”窗格上，选择“是”以“启用 Exchange 本地访问控制”。
 
-1. 选择“Intune”，将看到“Intune 仪表板”。
+4. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
 
-1. 选择“本地访问”。 “本地访问”窗格中显示了条件访问策略的状态和受其影响的设备。
+5. 选择“Intune”，将看到“Intune 仪表板”。
 
-1. 在“管理”下，选择“Exchange 内部部署访问”。
+6. 选择“本地访问”。 “本地访问”窗格中显示了条件访问策略的状态和受其影响的设备。
 
-1. 在“Exchange 本地访问”窗格上，选择“是”以启用 Exchange本地访问控制。
+7. 在“管理”下，选择“Exchange 内部部署访问”。
+
+8. 在“Exchange 本地访问”窗格上，选择“是”以启用 Exchange本地访问控制。
 
     > [!NOTE]
     > 如果尚未配置 Exchange Active Sync 本地连接器，则禁用此选项。  启用 Exchange 本地部署的条件性访问之前，必须首先安装并配置至少一个连接器。 有关详细信息，请参阅[安装 Intune 本地 Exchange Connector](exchange-connector-install.md)
 
-1. 在“分配”下，选择“包含的组”。  使用应该应用条件性访问的安全用户组。 用户需在 Intune 中注册设备并满足符合性配置文件的要求，然后才可执行此操作。
+9. 在“分配”下，选择“包含的组”。  使用应该应用条件性访问的安全用户组。 用户需在 Intune 中注册设备并满足符合性配置文件的要求，然后才可执行此操作。
 
-1. 如果想排除特定的用户组，可通过选择“排除的组”，并选择不需要设备注册和符合性的用户组。
+10. 如果想排除特定的用户组，可通过选择“排除的组”，并选择不需要设备注册和符合性的用户组。
 
-1. 在“设置”下，选择“用户通知”以修改默认的电子邮件消息。 设备不符合要求，且用户想访问 Exchange 内部部署时将向用户发送此消息。 消息模板使用的是标记语言。  键入时还可看到消息的预览显示情况。
+11. 在“设置”下，选择“用户通知”以修改默认的电子邮件消息。 设备不符合要求，且用户想访问 Exchange 内部部署时将向用户发送此消息。 消息模板使用的是标记语言。  键入时还可看到消息的预览显示情况。
     > [!TIP]
     > 若要了解有关标记语言的详细信息，请参阅这篇维基百科[文章](https://en.wikipedia.org/wiki/Markup_language)。
 
-1. 在“高级 Exchange Active Sync 访问设置”窗格上，针对非 Intune 托管的设备的访问设置全局默认规则，而针对平台级别的规则，请按以下两个步骤操作。
+12. 在“高级 Exchange Active Sync 访问设置”窗格上，针对非 Intune 托管的设备的访问设置全局默认规则，而针对平台级别的规则，请按以下两个步骤操作。 要转到高级设置窗格，在“Exchange 访问 - Exchange 本地访问”视图上，选择“Exchange ActiveSync - 本地连接器”。
 
-1. 对于不受条件性访问或其他规则影响的设备，可以选择允许或阻止该设备访问 Exchange。
+13. 对于不受条件性访问或其他规则影响的设备，可以选择允许或阻止该设备访问 Exchange。
 
    - 将此项设置为允许访问时，所有设备均可立即访问本地 Exchange。  如果属于“包含的组”中用户的设备之后被评估为不符合合规性策略或未在 Intune 中注册，将阻止此设备。
    - 将此项设置为阻止访问时，一开始会立即阻止所有设备访问本地 Exchange。  “包含的组”中的用户在 Intune 中注册其设备且该设备被评为符合之后，这些设备即获得访问权限。 始终阻止未运行 Samsung Knox Standard 的 Android 设备，因为系统不支持此设置。
 
-1. 在“设备平台例外”下，选择“添加”以指定平台。 如果将“非托管设备访问”设置为“已阻止”，则即使平台专门阻止，已注册且符合要求的设备仍可访问。 选择“确定”保存设置。
+14. 在“设备平台例外”下，选择“添加”以指定平台。 如果将“非托管设备访问”设置为“已阻止”，则即使平台专门阻止，已注册且符合要求的设备仍可访问。 选择“确定”保存设置。
 
-1. 在“本地”窗格上，单击“保存”以保存条件访问策略。
+15. 在“本地”窗格上，单击“保存”以保存条件访问策略。
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>在 Intune 中创建 Azure AD 条件性访问策略
 
-自 Intune 1704 版本起，管理员可通过 Intune Azure 门户创建 Azure AD 条件访问策略，而无需在 Azure 和 Intune 工作负荷之间切换。
+条件访问是一项 Azure Active Directory (Azure AD) 技术。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同。  
 
 > [!IMPORTANT]
 > 需要具备 Azure AD Premium 许可证才能从 Intune Azure 门户创建 Azure AD 条件性访问策略。
 
-### <a name="to-create-azure-ad-conditional-access-policy"></a>创建 Azure AD 条件访问策略
+### <a name="to-create-a-conditional-access-policy"></a>创建条件访问策略
 
 1. 在“Intune 仪表板”中，选择“条件访问”。
 

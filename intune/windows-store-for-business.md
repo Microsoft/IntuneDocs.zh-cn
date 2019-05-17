@@ -1,35 +1,36 @@
 ---
-title: 管理来自适用于企业的 Microsoft 应用商店的应用
-titlesuffix: Microsoft Intune
-description: 了解如何从适用于企业的 Microsoft Store 将应用同步到 Intune，并对其进行分配和跟踪。
+title: 管理从适用于企业的 Microsoft Store 批量采购的应用或免费应用
+titleSuffix: Microsoft Intune
+description: 了解如何将从适用于企业的 Microsoft Store 采购（或免费）的应用同步到 Intune。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75e6cdd97bbc591a76e541874152455c4fe258c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 67d99977776657219638980eb6de8a4079384185
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234916"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587495"
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft 应用商店中购买的应用
+# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft Store 批量采购（或免费）的应用
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 可在[适用于企业的 Microsoft 应用商店](https://www.microsoft.com/business-store)中为组织查找和购买应用（单个或批量）。 通过将此应用商店与 Microsoft Intune 相连，可以在 Azure 门户中管理批量购买的应用。 例如：
-* 你可以将从应用商店中购买的应用列表与 Intune 同步。
+* 可以将从应用商店中购买（或免费）的应用列表与 Intune 同步。
 * Intune 管理控制台中将显示已同步的应用，可以像分配所有其他应用那样分配这些应用。
 * 你可以跟踪可用许可证的数量以及正在 Intune 管理控制台中使用的许可证数量。
 * 如果可用许可证数量不足，Intune 将阻止应用的分配和安装。
@@ -80,7 +81,7 @@ ms.locfileid: "57234916"
 
 ## <a name="assign-apps"></a>分配应用
 
-分配应用商店中应用的方式与分配任何其他 Intune 应用的方式相同。 有关详细信息，请参阅[如何使用 Microsoft Intune 将应用分配到组](apps-deploy.md)。 但是，不是从“所有应用”页面分配应用，而是从“获得许可的应用”页面分配应用。
+分配应用商店中应用的方式与分配任何其他 Intune 应用的方式相同。 有关详细信息，请参阅[如何使用 Microsoft Intune 将应用分配到组](apps-deploy.md)。 
 
 脱机应用可面向用户组、设备组或同时具有用户和设备的组。
 可为设备上的特定用户或所有用户安装脱机应用。 

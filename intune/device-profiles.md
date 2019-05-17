@@ -1,14 +1,15 @@
 ---
 title: Microsoft Intune 中的设备功能和设置 - Azure | Microsoft Docs
-description: Azure 门户中的不同 Microsoft Intune 设备配置文件概述，包括功能、限制、电子邮件、WiFi、VPN、教育、证书、升级 Windows 10、BitLocker 和 Windows Defender、Windows 信息保护、管理模板，以及自定义设备配置设置。 使用这些配置文件管理和保护公司内的数据和设备。
+description: 不同 Microsoft Intune 设备配置文件的概述。 在 Azure 门户中获取有关功能、限制、电子邮件、WiFi、VPN、教育、证书、升级 Windows 10、BitLocker 和 Windows Defender、Windows 信息保护、管理模板，以及自定义设备配置设置的信息。 使用这些配置文件管理和保护公司内的数据和设备。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,90 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4dc68071886b8f2a0852feb69bf78c2c265f046d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845085"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570346"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>对 Microsoft Intune 中使用设备配置文件的设备应用功能设置
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>对 Microsoft Intune 中使用设备配置文件的设备应用功能和设置
 
-Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加“配置文件”。 可以为不同的设备、不同的平台（包括 iOS、Android 和 Windows）创建配置文件，然后使用 Intune 将该配置文件应用于组织中的设备。
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-一些配置文件示例如下：
+Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS、Android 和 Windows。 然后，使用 Intune 应用配置文件或将其“分配”给设备。
+
+作为移动设备管理 (MDM) 解决方案的一部分，使用这些配置文件来完成不同的任务。 一些配置文件示例如下：
 
 - 在 Windows 10 设备上，使用可阻止 Internet Explorer 中 ActiveX 控件的配置文件模板。
 - 在 iOS 和 macOS 设备上，允许用户使用组织中的 AirPrint 打印机。
 - 允许或阻止访问设备上的蓝牙。
 - 创建 WiFi 或 VPN 配置文件，让不同设备访问公司网络。
 - 管理软件更新，包括何时安装它们。
-- 运行 Android 设备和专用的展台设备，该设备可以运行一个或多个应用。
+- 将 Android 设备作为专用的展台设备运行，该设备可以运行一个或多个应用。
 
-本文列出了创建配置文件的步骤，并概述可创建的不同类型的配置文件。 使用这些配置文件来允许或阻止设备上的某些功能。
-
-## <a name="create-the-profile"></a>创建配置文件
-
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-
-2. 选择“设备配置”。 你有下列选择：
-
-    - **概述**：列出配置文件的状态，并提供有关分配给用户和设备的配置文件的其他详细信息。
-    - **管理**：创建设备配置文件，并上传自定义 [PowerShell 脚本](intune-management-extension.md)以在配置文件中运行，并使用 [eSIM](esim-device-configuration.md) 向设备添加数据计划。
-    - **监视**：检查配置文件的状态（成功或失败），并查看配置文件中的日志。
-    - **设置**：在配置文件中添加 SCEP 或 PFX 证书颁发机构，或启用[电信费用管理](telecom-expenses-monitor.md)。
-
-3. 依次选择“配置文件” > “创建配置文件”。 输入以下属性：
-
-   - **名称**：输入配置文件的描述性名称。
-   - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
-   - **平台**：选择设备平台。 选项包括：  
-
-       - **Outlook Web Access (OWA)**
-       - **Android 企业**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 及更高版本**
-       - **Windows 10 及更高版本**
-
-   - **配置文件类型**：选择要创建的设置类型。 显示的列表取决于所选择的平台：
-
-       - [管理模板](administrative-templates-windows.md)
-       - [自定义](custom-settings-configure.md)
-       - [传递优化](delivery-optimization-windows.md)
-       - [设备功能](device-features-configure.md)
-       - [设备限制](device-restrictions-configure.md)
-       - [版本升级和模式切换](edition-upgrade-configure-windows-10.md)
-       - [教育](education-settings-configure.md)
-       - [Email](email-settings-configure.md)
-       - [Endpoint protection](endpoint-protection-configure.md)
-       - [标识保护](identity-protection-configure.md)  
-       - [展台](kiosk-settings.md)
-       - [PKCS 证书](certficates-pfx-configure.md)
-       - [SCEP 证书](certificates-scep-configure.md)
-       - [受信任的证书](certificates-configure.md)
-       - [更新策略](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows 信息保护](windows-information-protection-configure.md)
-
-     例如，如果选择“iOS”作为平台，配置文件类型选项外观将如下所示：
-
-     ![在 Intune 中创建 iOS 配置文件](./media/create-device-profile.png)
-
-4. 选择“设置”。 按类别对设置进行排列。 选择某个类别，查看可配置的所有设置的列表。
-
-5. 完成后，选择“确定” > “创建”，保存所做更改。
-
-若要了解有关不同配置文件类型的详细信息，请阅读本文的下一个部分。
+本文概述了可创建的不同类型的配置文件。 使用这些配置文件来允许或阻止设备上的某些功能。
 
 ## <a name="administrative-templates-preview"></a>管理模板（预览版）
 
-[管理模板](administrative-templates-windows.md)包括数百个可针对 Internet Explorer、OneDrive、远程桌面、Word、Excel 和其他 Office 程序等配置的设置。
+[管理模板](administrative-templates-windows.md)包括数百个可针对 Internet Explorer、OneDrive、远程桌面、Word、Excel 和其他 Office 程序配置的设置。
 
-这些模板会为管理员提供了类似于组策略的简易设置视图，但它们是 100% 基于云的。 
+这些模板为管理员提供了类似于组策略的简化设置视图，但它们是完全基于云的。
 
 此功能支持：
 
@@ -164,7 +110,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 - Windows 10 及更高版本
 
-展台设置也可用作适用于 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) 和 [ios](device-restrictions-ios.md#kiosk-supervised-only) 的设备限制。
+展台设置也可用作适用于 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 和 [ios](device-restrictions-ios.md#kiosk-supervised-only) 的设备限制。
 
 ## <a name="email"></a>Email
 
@@ -173,6 +119,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 此功能支持： 
 
 - Android
+- Android Enterprise
 - iOS
 - Windows Phone 8.1
 - Windows 10 及更高版本
@@ -186,6 +133,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 此功能支持： 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
@@ -199,6 +147,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 此功能支持： 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows 8.1 （仅限导入）
@@ -211,7 +160,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 此功能支持：
 - Windows 10 Fall Creators Update 及更高版本
 
-## <a name="education"></a>教育
+## <a name="education"></a>教育水平
 
 [教育设置 - Windows 10](education-settings-configure.md) 配置针对 [Windows 参加测验应用](https://education.microsoft.com/gettrained/win10takeatest)的选项。 在配置这些选项时，直到测试完成才可以在设备上运行其他应用。
 
@@ -235,12 +184,14 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="certificates"></a>证书
 
-[证书](certificates-configure.md)配置已分配到设备的受信任证书、SCEP 证书和 PKCS 证书，用于对 Wi-Fi、VPN 和电子邮件配置文件进行身份验证。
+[证书](certificates-configure.md)配置分配到设备的受信任、SCEP 和 PKCS 证书。 这些证书会对 WiFi、VPN 和电子邮件配置文件进行身份验证。
 
 此功能支持： 
 
 - Android
+- Android Enterprise
 - iOS
+- macOS
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10 及更高版本
@@ -255,7 +206,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="shared-multi-user-device"></a>共享的多用户设备
 
-[Windows 10](shared-user-device-settings-windows.md) 和 [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) 包括用于管理多用户设备（也称为共享设备或共享电脑）的设置。 当用户登录设备时，你可选择用户是否可更改睡眠选项，或在设备上保存文件。 在其他示例中，可以创建可检测 Windows HoloLens 设备中非活动凭据的策略，以节省空间。
+[Windows 10](shared-user-device-settings-windows.md) 和 [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) 包括用于管理多用户设备（也称为共享设备或共享电脑）的设置。 当用户登录设备时，你可选择用户是否可更改睡眠选项，或在设备上保存文件。 在其他示例中，为节省空间，可以创建可删除 Windows HoloLens 设备中非活动凭据的配置文件。
 
 这些共享多用户设备设置允许管理员控制部分设备功能，并使用 Intune 管理这些共享设备。
 
@@ -264,21 +215,30 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 - Windows 10 及更高版本
 - Windows Holographic for Business
 
-## <a name="custom-profile"></a>自定义配置文件
+## <a name="zebra-mobility-extensions-mx"></a>Zebra 移动性扩展 (MX)
 
-[自定义设置](custom-settings-configure.md)可让管理员分配未在 Intune 中内置的设备设置。 例如，对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。 
+通过 [Zebra 移动性扩展 (MX)](android-zebra-mx-overview.md)，管理员可以在 Intune 中使用和管理 Zebra 设备。 创建具有你的设置的 StageNow 配置文件，然后使用 Intune 将这些配置文件分配并部署到 Zebra 设备。 [StageNow 日志及常见问题](android-zebra-mx-logs-troubleshoot.md)是一个不错的资源，有助于在使用 StageNow 时对配置文件进行故障排除并查看一些潜在问题。
 
 此功能支持：
 
 - Android
+
+## <a name="custom-profile"></a>自定义配置文件
+
+[自定义设置](custom-settings-configure.md)可让管理员分配未在 Intune 中内置的设备设置。 对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。
+
+此功能支持：
+
+- Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>管理和故障排除
 
-[管理配置文件](device-profile-monitor.md)以检查设备的状态和分配的配置文件。 还可以通过查看导致冲突的设置以及包含这些设置的配置文件来帮助解决冲突。 [常见问题和解决方法](device-profile-troubleshoot.md)提供了一个问答，以帮助使用配置文件，包括删除配置文件时发生的情况以及导致通知发送到设备的原因等。
+[管理配置文件](device-profile-monitor.md)以检查设备的状态和分配的配置文件。 还可以通过查看导致冲突的设置以及包含这些设置的配置文件来帮助解决冲突。 [常见问题和解决方法](device-profile-troubleshoot.md)可帮助管理员处理配置文件。 它介绍了删除配置文件时发生的情况，导致将通知发送到设备的原因等等。
 
 ## <a name="next-steps"></a>后续步骤
-选择平台，并开始：
 
+选择平台开始使用。

@@ -1,27 +1,28 @@
 ---
 title: 对 Intune 设备注册要求多重身份验证
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 如何在 Azure AD 中要求对 Intune 设备注册进行多重身份验证。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834086"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568786"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>对 Intune 设备注册要求多重身份验证
 
@@ -50,11 +51,10 @@ iOS、Android、Windows 8.1 或更高版本、Windows Phone 8.1、Windows 10 移
 >请勿为 Microsoft Intune 注册配置基于设备的访问规则。
 
 1. 使用凭据登录到 [Microsoft Azure 门户](https://portal.azure.com)。
-2. 在门户中，转到 [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)。
-3. 在 Azure Active Directory 中，选择“安全性”下的[条件访问](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)。
+2. 在门户中，转到“Intune”，然后选择“条件访问”。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同。
 4. 选择“新策略”。
 5. 在“新建”策略中，为策略键入描述性名称。
-6. 在“分配”部分中，选择“用户和组”。
+6. 在“分配”部分中，选择“用户和组”。 
 7. 在“用户和组”中，选择“选择用户或组”，然后选择“用户和组”。 然后选择将接收此策略的用户和/或组，再选择“完成”。
 8. 在“分配”部分中，选择“云应用”。
 9. 在“云应用”的“包括”选项卡上，选择“选择应用”，然后选择“选择” > “Microsoft Intune 注册”，然后选择“完成”。

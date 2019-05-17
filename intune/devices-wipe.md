@@ -5,28 +5,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846819"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570541"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用“擦除”或“停用”操作删除设备，或手动取消注册设备
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-使用“停用”或“擦除”操作，可从 Intune 中删除不再需要的、已重新调整用途的或丢失的设备。 用户还可从 Intune 公司门户中向在 Intune 中注册的个人所有设备发出远程命令。
+使用“停用”或“擦除”操作，可从 Intune 中删除不再需要的、已重新调整用途的或丢失的设备。 用户还可从 Intune 公司门户向注册到 Intune 的设备发出远程命令。
 
 > [!NOTE]
 > 从 Azure Active Directory (Azure AD) 中删除用户前，对与该用户关联的所有设备使用“擦除”或“停用”操作。 如果从 Azure AD 删除具有托管设备的用户，Intune 将不再能够擦除或停用这些设备。
@@ -128,9 +129,9 @@ ms.locfileid: "55846819"
 
 ### <a name="windows"></a>Windows
 
-|数据类型|Windows 8.1 (MDM) 和 Windows RT 8.1|Windows RT|Windows Phone 8.1 和 Windows Phone 8|Windows 10|
+|数据类型|Windows 8.1 (MDM) 和 Windows RT 8.1|Windows RT|Windows Phone 8.1 和 Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Intune 安装的公司应用和关联数据|对于受 EFS 保护的文件，会撤销密钥。 用户无法打开文件。|未删除公司应用。|卸载最初通过公司门户安装的应用。 删除公司应用数据。|卸载应用。 删除旁加载密钥。<br>对于 Windows 10 版本 1703（创意者更新）及更高版本，不会删除 Office 365 专业增强版应用。|
+|Intune 安装的公司应用和关联数据|对于受 EFS 保护的文件，会撤销密钥。 用户无法打开文件。|未删除公司应用。|卸载最初通过公司门户安装的应用。 删除公司应用数据。|卸载应用。 删除旁加载密钥。<br>对于 Windows 10 版本 1703（创意者更新）及更高版本，不会删除 Office 365 专业增强版应用。 在未注册设备上不会卸载已安装 Intune 管理扩展的 Win32 应用。 管理员可利用分配排除避免向 BYOD 设备提供 Win32 应用。|
 |设置|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|不支持。|删除。|
 |证书配置文件设置|已删除并吊销证书。|已删除并吊销证书。|不支持。|已删除并吊销证书。|
@@ -166,7 +167,7 @@ ms.locfileid: "55846819"
 
 由于通信问题或设备丢失，可能需要从 Azure AD 删除设备。 可以使用“删除”操作从 Azure 门户中删除已知无法访问且不太可能再与 Azure 通信的设备记录。 “删除”操作不会从管理中删除设备。
 
-1.  使用管理员凭据登录 [Azure 门户中的 Azure Active Directory](http://aka.ms/accessaad)。 还可以登录到 [Office 365 门户](https://portal.office.com)。 从菜单中，选择“管理中心” > “Azure AD”。
+1.  使用管理员凭据登录 [Azure 门户中的 Azure Active Directory](http://aka.ms/accessaad)。 还可以登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。 从菜单中，选择“管理中心” > “Azure AD”。
 2.  创建 Azure 订阅（如果没有）。 如果有付费帐户，应该不需要提供信用卡或付款（选择“注册免费的 Azure Active Directory”订阅链接）。
 3.  选择“Azure Active Directory”，然后选择组织。
 4.  选择“用户”  选项卡。

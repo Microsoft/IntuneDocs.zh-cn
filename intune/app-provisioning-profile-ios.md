@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune 中的 iOS 应用预配配置文件
-titlesuffix: ''
+titleSuffix: ''
 description: Intune 提供了一些工具，用于将新的预配配置文件主动分配到安装了即将到期应用的设备。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f02e4416f68fef7531f6d6ffa617273904b752c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233842"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569553"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 应用预配配置文件防止应用过期
 
@@ -51,7 +52,7 @@ ms.locfileid: "57233842"
 3. 在“创建配置文件”窗格中，配置下列值：
     - **命名** - 为此移动预配配置文件提供一个名称。
     - **说明** -（可选）提供策略的说明。
-    - 上传配置文件文件 - 选择“导入”，然后选择从 Apple 开发人员网站下载的 Apple 移动配置文件（扩展名为 `.mobileprovision`）。
+    - **上传配置文件的文件** - 选择“打开”图标，然后选择从 [Apple 开发者网站](https://developer.apple.com/)下载的 Apple 移动配置文件（扩展名为 `.mobileprovision`）。
 4. 完成后，选择“创建”。
 
 ## <a name="next-steps"></a>后续步骤

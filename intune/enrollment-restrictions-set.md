@@ -1,15 +1,16 @@
 ---
 title: 在 Microsoft Intune 中设置注册限制
-titlesuffix: ''
+titleSuffix: ''
 description: 按平台限制注册，并在 Intune 中设置设备注册限制。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839653"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569111"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -42,10 +43,11 @@ ms.locfileid: "55839653"
   - iOS
   - macOS
   - Windows
-- 适用于 iOS、Android、Android 工作配置文件和 Windows 的平台操作系统版本。 （仅可使用 Windows 10 版本。 如果允许 Windows 8.1，请将此处留空。）
+  - Windows Mobile
+- 适用于 iOS、Android、Android 工作配置文件、Windows 和 Windows Mobile 的平台操作系统版本。 （仅可使用 Windows 10 版本。 如果允许 Windows 8.1，请将此处留空。）
   - 最低版本。
   - 最高版本。
-- 限制个人拥有的设备（仅 iOS、Android、Android 工作配置文件、macOS、Windows）。
+- 限制个人拥有的设备（仅限 iOS、Android、Android 工作配置文件、macOS、Windows 和 Windows Mobile）。
 
 ## <a name="default-restrictions"></a>默认限制
 
@@ -73,7 +75,7 @@ ms.locfileid: "55839653"
 1. 登录到 Azure 门户。
 2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
 3. 选择“设备注册” > “注册限制”。
-4. 在“设备类型限制”下，选择想要设置的限制，然后选择“属性” > “选择平台”。 为列出的每个平台选择“允许”或“阻止”。
+4. 在“设备类型限制”下，选择要设置的限制，然后选择“属性” > “选择平台”。 为列出的每个平台选择“允许”或“阻止”。
     ![允许或阻止平台的屏幕截图](media/enrollment-restrictions-set/platform-allow-block.png)
 5. 选择“确定”。
 6. 选择“配置平台”。
@@ -103,7 +105,7 @@ ms.locfileid: "55839653"
 - 设备通过[批量预配包](windows-bulk-enroll.md)进行注册。
 - 设备通过 GPO 或[从 SCCM 自动注册以执行共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)进行注册。
  
-以下注册被 Intune 标记为企业注册，但由于其不提供 Intune 管理员每设备控制而将被阻止：
+以下注册被 Intune 标记为企业。 但由于它们不提供 Intune 管理员每设备控制，因此将被阻止：
  - 通过 [Windows 设置过程中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)\*。
 - 通过 [Windows 设置中的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)实现的[自动 MDM 注册](windows-enroll.md#enable-windows-10-automatic-enrollment)*。
  
@@ -126,9 +128,20 @@ ms.locfileid: "55839653"
 6. 选择“保存”。
 
 
-在 BYOD 注册期间，用户会看到一条通知，告知他们何时达到了已注册的设备限制。 例如，iOS 上的通知如下所示：
+在 BYOD 注册期间，用户会看到一条通知，告知他们何时达到了已注册的设备限制。 例如，在 iOS 上：
 
 ![iOS 设备限制通知](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+> [!IMPORTANT]
+> 设备限制不适用于以下 Windows 注册类型：
+> - 共同托管的注册
+> - GPO 注册
+> - 加入 Azure Active Directory 的注册
+> - 加入 Bulk Active Directory 的注册
+> - Autopilot 注册
+>
+> 不对这些注册类型强制执行设备限制，因为它们被视为共享设备方案。
+> 可以在 [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) 中为这些注册类型设置硬性限制。
 
 ## <a name="change-enrollment-restriction-priority"></a>更改注册限制优先级
 

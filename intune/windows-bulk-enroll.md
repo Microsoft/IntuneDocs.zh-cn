@@ -1,6 +1,6 @@
 ---
 title: Windows 10 的批量注册
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 为 Microsoft Intune 创建批量注册包
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 5/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7df624f0a3db11b058498c650a9f9c3dd95e8d12
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236800"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568162"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236800"
 
 作为管理员，可以将大量新的 Windows 设备加入到 Azure Active Directory 和 Intune。 若要为你的 Azure AD 租户批量注册设备，可以使用 Windows 配置设计器 (WCD) 应用来创建配置包。 将配置包应用于企业拥有的设备可将设备加入到你的 Azure AD 租户并为其注册 Intune 管理。 应用此包后，即可供你的 Azure AD 用户登录。
 
-Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略和必需的应用。 目前不支持自助服务和公司门户方案。
+Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略和必需的应用。 使用 Windows 批量注册注册到 Intune 的 Windows 设备可以使用公司门户应用安装可用的应用。 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows 设备批量注册的先决条件
 

@@ -1,15 +1,16 @@
 ---
 title: 为受管理的 Android 设备添加应用配置策略
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 使用 Microsoft Intune 中的应用配置策略，可提供用户在运行 Android 工作配置文件应用时的设置。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/21/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840410"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567421"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>为受管理的 Android 设备添加应用配置策略
 
@@ -44,13 +45,13 @@ ms.locfileid: "55840410"
 6. 对“平台”选择“Android”。
 7. 选择“关联应用”，可选择要为其定义应用配置策略的应用。 从已批准并与 Intune 同步的 Android 工作配置文件应用列表中选择。
 8. 选择“权限”。 可使用以下工具设置配置：
-    - [配置设计器](#Use-the-configuration-designer)
-    - [JSON 编辑器](#Enter-the-JSON-editor)
+    - [配置设计器](#use-the-configuration-designer)
+    - [JSON 编辑器](#enter-the-json-editor)
 9. 选择“确定”，然后选择“添加”。
 
 ## <a name="use-the-configuration-designer"></a>使用配置设计器
 
-可以对支持配置的 Android 应用使用配置设计器。 配置将应用于已在 Intune 中注册的设备。 相较于应用公开，通过设计器可以为设置配置特定的配置值。
+当 Android 应用已设计为支持配置设置时，可以对该应用使用配置设计器。 配置将应用于已在 Intune 中注册的设备。 相较于应用公开，通过设计器可以为设置配置特定的配置值。
 
 选择“添加”，以选择想为应用指定的配置设置的列表。  
 对于配置中的每个项和值，请设置以下内容：

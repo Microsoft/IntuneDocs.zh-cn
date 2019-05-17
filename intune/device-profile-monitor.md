@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 786cd6e7d0acaeb6e78035d8ec580c30d29d09e7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186590"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391709"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中监视设备配置文件
 
@@ -64,11 +66,11 @@ Intune 包含 Azure 门户中的一些功能，可帮助监视和管理设备配
     关闭“用户状态”详细信息。
 
 5. 返回“配置文件”列表，选择特定的配置文件。 也可以更改现有属性：
-  - 属性：更改名称或更新任何现有设置。
-  - 分配：包括或排除策略应该应用的设备。 选择“所选组”以选择特定的组。
-  - 设备状态：列出分配给配置文件的设备，并显示配置文件是否成功部署。 可以选择特定设备以获取更多详细信息，包括已安装的应用。
-  - 用户状态：列出受此配置文件影响的设备的用户名，以及配置文件是否成功部署。 可以选择特定用户以获取更多详细信息。
-  - 每个设置状态：通过显示配置文件中的各个设置来筛选输出，并显示设置是否成功应用。
+  - **属性**：更改名称或更新任何现有设置。
+  - **分配**：包含或排除应该应用策略的设备。 选择“所选组”以选择特定的组。
+  - **设备状态**：列出分配给配置文件的设备，并显示配置文件是否成功部署。 可以选择特定设备以获取更多详细信息，包括已安装的应用。
+  - **用户状态**：列出受此配置文件影响的设备的用户名，以及配置文件是否已成功部署。 可以选择特定用户以获取更多详细信息。
+  - **每个设置状态**：通过显示配置文件中的各个设置来筛选输出，并显示设置是否成功应用。
 
 ## <a name="view-conflicts"></a>查看冲突
 

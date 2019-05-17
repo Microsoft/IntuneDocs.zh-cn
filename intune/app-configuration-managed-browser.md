@@ -1,40 +1,52 @@
 ---
-title: 使用受策略保护的浏览器管理 Web 访问
-titlesuffix: Microsoft Intune
-description: 使用受策略保护的浏览器限制 Web 浏览和 Web 数据传输。
+title: 使用受策略保护的浏览器管理公司 Web 访问
+titleSuffix: Microsoft Intune
+description: 使用由 Intune 分配的受策略保护的浏览器管理公司 Web 浏览和 Web 数据传输。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086210"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569722"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Internet 访问
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Web 访问
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 通过使用受 Intune 策略保护的浏览器（Microsoft Edge 或 Intune Managed Browser），可以确保始终能够安全地访问公司网站。  使用 Intune 进行配置后，受保护的浏览器可以利用以下功能：
 
-- 应用程序保护策略。
-- 条件性访问。
-- 单一登录。
-- 应用程序配置设置。
-- Azure 应用程序代理集成。
+- 应用程序保护策略
+- 条件性访问
+- 单一登录
+- 应用程序配置设置
+- Azure 应用程序代理集成
+
+## <a name="microsoft-edge-support"></a>Microsoft Edge 支持
+
+可以使用 Microsoft Edge 支持 iOS 和 Android 设备上的企业方案。 Microsoft Edge 将增加对最终用户体验的改进，支持与 Intune Managed Browser 相同的所有管理方案。 提供了 Intune 策略启用的以下 Microsoft Edge 企业功能。 这些企业功能包括：
+
+1. **双重标识** - 用户可以同时添加工作帐户以及个人帐户以进行浏览。 两个标识完全独立，这类似于 Office 365 和 Outlook 中的体系结构和体验。 Intune 管理员将能够为工作帐户中受保护的浏览体验设置所需的策略。 
+2. **Intune 应用保护策略集成** - 管理员现在可以将应用保护策略定向到 Microsoft Edge，包括控制剪切、复制和粘贴，防止执行屏幕捕获，并确保仅在其他托管应用中打开用户选择的链接。
+3. **Azure 应用程序代理集成** - 管理员可以控制对 SaaS 应用和 Web 应用的访问，帮助确保仅在安全的 Microsoft Edge 浏览器中运行基于浏览器的应用，不论最终用户是从公司网络连接还是从 Internet 连接。 
+4. **托管收藏夹和主页快捷方式** - 当最终用户处于其企业环境中时，为了便于访问，管理员可以将 URL 设置为显示在收藏夹下。 管理员可以设置主页快捷方式，该快捷方式将在企业用户在 Microsoft Edge 中打开新页面或新选项卡时显示为主快捷方式。
+
+Microsoft Edge 的 Microsoft Intune 保护策略有助于保护组织的数据和资源。 受 Intune 保护的 Microsoft Edge 可确保公司的资源不仅在本机安装的应用中受保护，而且还在通过 Web 浏览器访问时受保护。
 
 ## <a name="getting-started"></a>开始使用
 
@@ -72,11 +84,15 @@ Intune 未托管 Managed Browser 或 Microsof Edge 期间，无法访问由 Intu
 
 ## <a name="conditional-access-for-protected-browsers"></a>受保护浏览器的条件性访问
 
-Managed Browser 现为条件访问的核准客户端应用。 这意味着可以限制移动浏览器访问 Azure AD 连接的 Web 应用（在此只能使用 Managed Browser），防止从其他任何未受保护的浏览器（例如 Safari 或 Chrome）进行访问。 这种保护可应用于 Azure 资源（如 Exchange Online 和 SharePoint Online）、Office 门户，甚至本地站点，这些站点已通过 [Azure AD 应用程序代理](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)向外部用户公开。 
+Managed Browser 现为条件访问的核准客户端应用。 这意味着可以限制移动浏览器访问 Azure AD 连接的 Web 应用（在此只能使用 Managed Browser），防止从其他任何未受保护的浏览器（例如 Safari 或 Chrome）进行访问。 这种保护可应用于 Azure 资源（如 Exchange Online 和 SharePoint Online）、Microsoft 365 管理中心，甚至本地站点（这些站点已通过 [Azure AD 应用程序代理](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)向外部用户公开）。 
 
-要限制 Azure AD 连接的 Web 应用在移动平台上使用 Intune Managed Browser，可以创建一个需要核准的客户端应用程序的 Azure AD 条件访问策略。 
+要限制 Azure AD 连接的 Web 应用在移动平台上使用 Intune Managed Browser，可以创建一个需要核准的客户端应用程序的条件访问策略。 
 
-1. 在 Azure 门户中，选择“Azure Active Directory” > “企业应用程序” > “条件访问” > “新建策略”。 
+> [!TIP]  
+> 条件访问是一项 Azure Active Directory (Azure AD) 技术。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同。  
+
+
+1. 在 Intune 门户中，选择“条件访问” > “新建策略”。 
 2. 接下来，从选项卡的“访问控制”部分选择“授予”。 
 3. 单击“需要核准的客户端应用”。 
 4. 在“授予”边栏选项卡上单击“选择”。 必须将此策略分配给希望只由 Intune Managed Browser 应用访问的云应用。
@@ -267,12 +283,12 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 Intune Managed Browser 和 Microsoft Edge 现在都被视为策略托管的浏览器/受保护的浏览器。 如今，现有的应用保护策略将导致来自 Intune 托管应用的 Web 链接在特定浏览器中打开，具体取决于场景和平台。 
 
 在 Android 上： 
-* 如果设备上同时有 MB 和 Edge，则使用 Managed Browser，除非所有需要策略托管浏览器的 Intune 托管应用的应用配置设置“com.microsoft.intune.useEdge”设置为“true”。  
-* 如果设备上只有 Microsoft Edge，并且是针对策略的，则使用 Microsoft Edge。
-* 如果设备上只有 Managed Browser 且目标是策略，则使用 Managed Browser。 
+* 如果用户已在设备上同时下载 Managed Browser 和 Microsoft Edge，则会打开 Managed Browser。 若要确保打开 Microsoft Edge（而不是 Managed Browser），请将所有需要策略托管浏览器的 Intune 托管应用的应用配置设置“com.microsoft.intune.useEdge”设置为“true”。  
+* 如果设备上只有 Microsoft Edge，并且是针对策略的，则会打开 Microsoft Edge。
+* 如果设备上只有 Managed Browser 且目标是策略，则会打开 Managed Browser。 
 
 在 iOS 上，对于已经集成了针对 iOS v. 9.0.9+ 的 Intune SDK 的应用： 
-* 如果设备上同时有 MB 和 Edge，则使用 Managed Browser，除非所有需要策略托管浏览器的应用配置设置“com.microsoft.intune.useEdge”设置为“true”，或者，如果已安装 Microsoft Edge 且收到了策略，则使用 Microsoft Edge。 
+* 如果设备上同时有 MB 和 Edge，则使用 Managed Browser，除非所有需要策略托管浏览器的 Intune 托管应用的应用配置设置“com.microsoft.intune.useEdge”已设置为“true”，或者，如果已安装 Microsoft Edge 且收到了策略，则使用 Microsoft Edge。 
 * 如果设备上只有 Microsoft Edge，针对策略，并且已收到策略，则使用 Microsoft Edge。 
 * 如果设备上只有 Managed Browser，针对策略，并且已收到策略，则使用 Managed Browser。
 

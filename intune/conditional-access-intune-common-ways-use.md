@@ -1,26 +1,28 @@
 ---
-title: 条件访问方案 | Microsoft Intune
+title: 条件访问方案
+titleSuffix: Microsoft Intune
 description: 了解 Intune 条件访问通常如何用于基于设备和基于应用的条件访问。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842756"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569371"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
@@ -31,7 +33,7 @@ ms.locfileid: "55842756"
 下面的信息有助于了解如何使用 Intune 移动设备符合性功能和 Intune 移动应用程序管理 (MAM) 功能。 
 
 > [!NOTE]
-> 条件访问是 Azure Active Directory Premium 许可证附带的 Azure Active Directory 功能。 Intune 通过向解决方案添加移动设备符合性和移动应用管理来增强此功能。
+> 条件访问是 Azure Active Directory Premium 许可证附带的 Azure Active Directory 功能。 Intune 通过向解决方案添加移动设备符合性和移动应用管理来增强此功能。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同。  
 
 ## <a name="device-based-conditional-access"></a>基于设备的条件性访问
 
@@ -71,7 +73,7 @@ Intune 提供了设备符合性策略功能，可评估设备的符合性状态�
 
 Intune Exchange 连接器将拉取存在于 Exchange 服务器上的全部 Exchange Active Sync (EAS) 记录，因此，Intune 可以使用这些 EAS 记录并将其映射到 Intune 设备记录。 这些记录都是通过 Intune 注册和识别的设备。 此过程将允许或阻止电子邮件访问。
 
-如果 EAS 记录是全新的，并且 Intune 不能识别，则 Intune 会发出一个 command-let 命令禁止访问电子邮件。 下面是有关此流程工作方式的更多详细信息：
+如果 EAS 记录是全新的，并且 Intune 不能识别，则 Intune 会发出一个 cmdlet 命令（发音为“command-let”）禁止访问电子邮件。 下面是有关此流程工作方式的更多详细信息：
 
 ![使用 CA 流程图的 Exchange 内部部署](./media/ca-intune-common-ways-1.png)
 
@@ -79,7 +81,7 @@ Intune Exchange 连接器将拉取存在于 Exchange 服务器上的全部 Excha
 
 2.  如果设备不受 Intune 管理，它将无法访问电子邮件。 Intune 会将阻止通知发送到 EAS 客户端。
 
-3.  EAS 收到阻止通知后，将设备移至隔离区域，并发送含修正步骤和链接的隔离电子邮件，以便用户可以注册自己的设备。
+3.  EAS 收到阻止通知后，将设备移至隔离区域，并发送包含修正步骤（其中包含链接）的隔离电子邮件，以便用户可以注册自己的设备。
 
 4.  发生工作区加入流程，这是 Intune 托管设备的第一步。
 
@@ -91,7 +93,7 @@ Intune Exchange 连接器将拉取存在于 Exchange 服务器上的全部 Excha
 
 8.  Azure AD 设备注册会保存设备状态信息。
 
-9.  如果该用户满足条件性访问策略，Intune 会通过 Intune Exchange 连接器发出 command-let 允许邮箱进行同步。
+9.  如果用户满足条件访问策略，Intune 会通过 Intune Exchange 连接器发出 cmdlet，允许邮箱进行同步。
 
 10. Exchange Server 会将通知发送到 EAS 客户端，以便用户可以访问电子邮件。
 
@@ -101,10 +103,10 @@ Intune 评估并管理设备状态。
 
 #### <a name="whats-the-exchange-server-role"></a>什么是 Exchange Server 角色？
 
-Exchange Server 提供了 API 和基础结构，可将设备移至其隔离区域。
+Exchange Server 提供了 API 和基础结构，可将设备移至隔离区域。
 
 > [!IMPORTANT]
-> 请记住，使用该设备的用户必须将符合性配置文件分配到设备中，以便对其进行符合性评估。 如果未向用户部署合规性策略，该设备将被视为合规且不会对其应用任何访问限制。
+> 请注意，使用设备的用户必须将符合性配置文件分配到该设备中，以便对其进行符合性评估。 如果未向用户部署合规性策略，该设备将被视为合规且不会对其应用任何访问限制。
 
 ### <a name="conditional-access-based-on-network-access-control"></a>基于网络访问控制的条件性访问
 
@@ -136,7 +138,7 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 
 -   **Azure AD 域加入和 Intune 管理：** 这种方案通常适用于自带设备办公 (CYOD)，以及漫游笔记本电脑的情况，这些设备几乎不连接企业网络。 设备加入 Azure AD 并注册 Intune，这会删除本地 AD 和域控制器上的任何依赖项。 这可在访问公司资源时用作条件性访问标准。
 
--   **AD 域加入和 System Center Configuration Manager：** 自当前分支起，System Center Configuration Manager 提供了可以评估特定符合性标准的条件访问功能（除了能够成为域加入 PC 之外）：
+-   **AD 域加入和 System Center Configuration Manager：** 自当前分支起，System Center Configuration Manager 还提供可以评估特定符合性标准的条件访问功能（作为加入域的电脑是已有功能）：
 
     -   电脑是否已加密？
 

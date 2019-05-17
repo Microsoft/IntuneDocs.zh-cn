@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c61eb47f29b201997d04fa6b1405ad2f186e4fcc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237182"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567265"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -33,7 +34,7 @@ ms.locfileid: "57237182"
 > [!Tip]        
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。 请注意，必须为用户分配 Intune 许可证才能访问公司门户网站。
 
-自定义公司门户有助于为最终用户提供熟悉且有帮助的体验。 为此，请从“客户端应用”工作负荷中，选择“设置” > “公司门户品牌”，然后配置所需设置。  
+自定义公司门户有助于为最终用户提供熟悉且有用的体验。 为此，在 Intune 门户中，选择“客户端应用” > “品牌和自定义”，然后配置所需的设置。 
 
 > [!Note]       
 > 如果使用的是 Azure 政府，则会向最终用户提供应用日志，由其决定当启动启动获取问题帮助的进程时如何进行共享。 但是，如果使用的不是 Azure 政府，那么当用户启动获取问题帮助的进程时，Windows 10 公司门户将直接向 Microsoft 发送应用日志。 向 Microsoft 发送应用日志可更轻松地排除故障和解决问题。 
@@ -90,7 +91,7 @@ ms.locfileid: "57237182"
 
 |字段名称|更多信息|
 |---|---|
-|**上传品牌图像**| 此选项可用于在公司门户应用中的用户配置文件页面上显示背景图像。<p>*注意*：不同平台的图像可能以不同的方式显示。<p><ul><li>建议图像宽度：低于 1125px，但不低于 640px</li><li>最大图像大小：1.3 MB</li><li>文件类型：PNG、JPG 或 JPEG</li></ul>|
+|**上传品牌图像**| 使用此选项可以显示品牌图像。 在 iOS 公司门户中，它显示为用户个人资料页上的背景图像。<p><ul><li>建议图像宽度：低于 1125px，但不低于 640px</li><li>最大图像大小：1.3 MB</li><li>文件类型：PNG、JPG 或 JPEG</li></ul>|
 
 合适的品牌图像可以表现出强大的公司品牌意识，增强用户对公司门户的信任。 建议考虑以下用于获取、选择和优化公司门户图像的一些提示。 
 

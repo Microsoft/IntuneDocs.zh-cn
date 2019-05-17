@@ -7,9 +7,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849244"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566499"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -102,8 +103,13 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 ![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>步骤 4. 上传令牌。
-在“Apple 令牌”框中，浏览到证书 (.pem) 文件，选择“打开”，然后选择“创建”。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。 Intune 会自动与 Apple 同步以查看你的注册计划帐户。
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>步骤 4. 上传令牌并选择作用域标记。
+
+1. 在“Apple 令牌”框中，浏览到证书 (.pem) 文件，选择“打开”。
+2. 如果要将[作用域标记](scope-tags.md)应用于此 DEP 令牌，则选择“作用域 (标记)”，并选择所需的作用域标记。 应用于令牌的作用域标记将由添加到此令牌的配置文件和设备继承。
+3. 选择“创建”。
+
+使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。 Intune 会自动与 Apple 同步以查看你的注册计划帐户。
 
 ## <a name="create-an-apple-enrollment-profile"></a>创建 Apple 注册配置文件
 
@@ -145,6 +151,8 @@ Apple 在 iOS 5 中引入了受监督模式。 处于受监督模式的 iOS 设�
 
 7. 如果为“使用 VPP 安装公司门户”选择了令牌，则可在设置助理完成后，立刻选择将设备锁定为单应用模式（具体而言，即公司门户应用）。 针对“在身份验证前以单应用模式运行公司门户”，选择为“是”以设置此选项。 要使用该设备，用户必须先使用公司门户登录以进行身份验证。
     仅 iOS 11.3.1 及更高版本支持此功能。
+
+   ![单应用模式的屏幕截图。](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备。
 
