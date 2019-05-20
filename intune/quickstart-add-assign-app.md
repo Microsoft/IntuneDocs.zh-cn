@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 024c4eb37d1b9991db6d1ca0b5c528e9dd333422
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798737"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764793"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入门：添加并分配客户端应用
 
@@ -51,7 +51,7 @@ ms.locfileid: "58798737"
 4. 单击“确定”，接受默认选定的应用。
 5. 选择“应用套件信息”。
 6. 输入“Microsoft Office 365 应用套件”作为“套件名称”。
-7. 输入“Microsoft Office 365 应用套件”。 作为“套件说明”。
+7. 输入“Microsoft Office 365 应用套件”作为“套件说明”。
 8. 单击“在公司门户中将此应用显示为特色应用”旁的“是”。
 9. 单击" **确定**"。
 

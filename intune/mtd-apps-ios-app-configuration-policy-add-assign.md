@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 108b9fb0eb227e9f046919efc6ef4d04b0903c40
+ms.sourcegitcommit: d259c0986d356135e626a30468971e32f8103f4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513437"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65442954"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用
 
@@ -59,6 +59,7 @@ ms.locfileid: "61513437"
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
   - [Better Mobile](#configure-better-mobile-apps)
+  - [Sophos Mobile](#configure-sophos-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>配置 Lookout for Work 应用
 
@@ -142,7 +143,18 @@ ms.locfileid: "61513437"
 
     - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在“配置应用信息”部分下的步骤 12 中使用此[应用商店 URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4)。
 
+
+### <a name="configure-sophos-apps"></a>配置 Sophos 应用  
+- **Outlook Web Access (OWA)**
+
+    - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在步骤 7 中使用此 [Sophos 应用商店 URL](https://play.google.com/store/apps/details?id=com.sophos.smsec)。
+
+ - **iOS**
+
+    - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在“配置应用信息”部分下的步骤 12 中使用此[应用商店 URL](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8)。
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>使用 iOS 应用配置策略配置 MTD 应用
+
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work 应用配置策略
 
@@ -163,7 +175,7 @@ ms.locfileid: "61513437"
 
     - 在“步骤 8”中，使用选项“输入 XML 数据”，复制 *.plist 文件中的内容并粘贴到配置策略正文。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果无法检索文件，请联系 [Symantec Endpoint Protection Mobile 企业支持部门](https://support.symantec.com/en_US/contact-support.html)。
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Check Point SandBlast Mobile 应用配置策略
@@ -192,6 +204,9 @@ ms.locfileid: "61513437"
 <string>{{udidlast4digits}}</string>
 </dict>
 ```
+### <a name="pradeo-app-configuration-policy"></a>Pradeo 应用配置策略
+Pradeo 在 iOS 上不支持应用程序配置策略。  相反，若要获取已配置的应用，请与 Pradeo 合作以实现已预先配置了所需设置的自定义 IPA 或 APK 文件。
+
 
 ### <a name="better-mobile-app-configuration-policy"></a>Better Mobile 应用配置策略
 
@@ -208,6 +223,9 @@ ms.locfileid: "61513437"
 <string>{{userprincipalname}}</string>
 </dict>
 ```
+
+### <a name="sophos-mobile-app-configuration-policy"></a>Sophos Mobile 应用配置策略
+按照[使用 iOS 应用配置策略](app-configuration-policies-use-ios.md)一文中所述的步骤，创建 iOS 应用配置策略。
 
 ## <a name="assign-apps-to-groups"></a>将应用分配给组
 

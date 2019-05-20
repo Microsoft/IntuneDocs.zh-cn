@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512917"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527219"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>监视 BitLocker 和设备加密  
 Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，并帮助你通过设备访问 BitLocker 的重要信息，如 Azure Active Directory (Azure AD) 中所示。  
@@ -60,7 +60,7 @@ Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，�
 
 此窗格提供以下详细信息：  
 - **设备名称** – 所查看设备的名称。  
-- **加密就绪状态** - 对设备支持 BitLocker 加密的就绪状态的评估。 即使设备由于缺少 TPM 而导致加密就绪状态为“未就绪”，加密状态也可能为“已加密”。 （有关详细信息，请参阅上述部分的加密就绪状态。）
+- **加密就绪状态** - 对设备支持 BitLocker 加密的就绪状态的评估。 即使设备由于缺少 TPM 而导致加密就绪状态为“未就绪”，加密状态也可能为“已加密”。 （有关详细信息，请参阅上述部分中的加密就绪状态。）
 - **加密状态** - OS 驱动器是否加密。  
 - **配置文件** – 适用于此设备并包括以下配置文件类型和设置的“设备配置”配置文件列表：  
   - 配置文件类型 = 终结点保护  

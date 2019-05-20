@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a013698e56b342953e52296270e7571a257db860
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506941"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135088"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中监视安全基线和配置文件  
 
@@ -35,7 +35,7 @@ Intune 提供了用于监视安全基线的多个选项。 可以监视应用到
 
 监视基线时，你根据 Microsoft 的建议深入了解设备的安全状态。 可以在 Intune 控制台的安全基线的“概述”窗格中查看这些见解。  首次分配基线后，最多 24 小时后会显示数据。 之后进行的更改最多六个小时后会显示。  
 
-若要查看基线和设备的监视数据，请登录到 [Intune 门户](https://aka.ms/intuneportal)。 接下来，选择“安全基线 (预览)”，然后选择“基线”，查看“概述”窗格。
+若要查看基线和设备的监视数据，请登录到 [Intune 门户](https://go.microsoft.com/fwlink/?linkid=2090973)。 接下来，选择“设备安全性” > “安全基线(预览)”，然后选择一条基线并查看“概述”窗格。
 
 “概述”窗格提供两种监视状态的方法：
 - **设备视图** - 基线的每个状态类别中的设备数量摘要。  

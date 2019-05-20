@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515417"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619449"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>使用 Intune 和 Windows Autopilot（预览版）部署加入混合 Azure AD 的设备
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置加入混合 Azure Active Directory (Azure AD) 的设备。 为此，请执行本文中的步骤。
 
 ## <a name="prerequisites"></a>必备条件
@@ -35,7 +35,7 @@ ms.locfileid: "61515417"
 要注册的设备还必须：
 - 使用 [2018 年 10 月更新](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)运行 Windows 10。
 - 可以访问 Internet。
-- 可以访问 Active Directory（不支持 VPN 连接）。
+- 可以访问 Active Directory（目前不支持 VPN 连接）。
 - 体验全新体验 (OOBE)。
 - 能够对尝试加入的域的域控制器执行 ping 操作。
 
@@ -211,7 +211,14 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 1. 选择“设置”，然后提供 [DN 格式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)的“计算机名前缀”、“域名”和（可选）“组织单位”。 
 1. 选择“确定” > “创建”。  
     此时，配置文件创建完成，并显示在列表中。
-1. 要分配配置文件，请按照[分配设备配置文件](device-profile-assign.md#assign-a-device-profile)下的步骤操作。 
+1. 若要分配配置文件，请遵循[分配设备配置文件](device-profile-assign.md#assign-a-device-profile)下的步骤进行操作，并将配置文件分配给[创建设备组](windows-autopilot-hybrid.md#create-a-device-group)步骤中所使用的同一组
+   - 部署多个域加入配置文件
+   
+     a. 创建一个包含带有特定 Autopilot 部署配置文件的所有 Autopilot 设备的动态组，输入 (device.enrollmentProfileName -eq "Autopilot 配置文件名称")。 
+     
+     b. 将“Autopilot 配置文件名称”替换为在[创建并分配 Autopilot 部署配置文件](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile)下创建的配置文件的显示名称。 
+     
+     c. 创建多个 Autopilot 部署配置文件，并将该设备分配给此动态组中指定的配置文件。
 
 > [!NOTE]
 > 对于混合 Azure AD 联接而言，Windows Autopilot 的命名功能不支持 %SERIAL% 等变量，仅支持使用计算机名称前缀。

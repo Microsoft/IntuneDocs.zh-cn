@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e364ad88591b8ecc945702659255d9378723624f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6296328a8f994e9f22a6ecd863d09396c0676094
+ms.sourcegitcommit: b1ad73f5c9fd0ad8026c572aef8d15e258951c8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512999"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64880439"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>什么是 Mobile Threat Defense 与 Intune 的集成？
 Intune 可以集成来自移动威胁防御供应商的数据，作为合规性策略和条件访问规则的信息源。 使用此信息，可通过阻止存在风险的移动设备的访问，来帮助保护 Exchange 和 SharePoint 等公司资源。  
@@ -80,5 +80,5 @@ Intune 使用移动威胁防御连接器在 Intune 和所选的移动威胁防�
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
-- Sophos（即将发布详细信息）
+- [Sophos Mobile](sophos-mtd-connector.md)
 - Wandera（即将发布详细信息）

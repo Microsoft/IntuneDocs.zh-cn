@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab9fef5a577783ebbdd512de6d00ab98483e754c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 92216550ee53c220beb3dc325be02c28b5eeb0c5
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513337"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135213"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中启用移动威胁防御连接器
 
@@ -67,7 +67,7 @@ ms.locfileid: "61513337"
 - **合作伙伴无响应之前的天数**：在 Intune 由于连接断开将合作伙伴视为无响应之前的天数。 Intune 将忽略无响应 MTD 合作伙伴的符合性状态。
 
 > [!IMPORTANT] 
-> 在创建设备符合性和条件性访问策略规则之前，必须先添加和分配 MTD 应用。 这样可以确保最终用户能够安装 MTD 应用，以便访问电子邮件或其他公司资源。
+> 如有可能，我们建议在创建设备符合性和条件性访问策略规则之前，先添加和分配 MTD 应用。 这样有助于确保最终用户能够安装 MTD 应用，以便访问电子邮件或其他公司资源。
 
 > [!TIP]
 > 可以从“移动威胁防御”窗格中查看 Intune 和 MTD 合作伙伴之间的“连接状态”和“上次同步”时间。

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 68f5fad9d05787b6e79792d594480547ce10cf81
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568422"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764910"
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -67,11 +67,19 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 
 ## <a name="android-enrollment-methods"></a>Android 注册方法
 
-| **方法** |  **需要重置** |    **用户关联**   |   **锁定** | **详细信息**|
+| 个人 | **注册方法** | **需要重置** | **用户关联** | **锁定** | **详细信息**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | 否|   是 |   否 | [详细信息](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| 否 |否 |否  |[详细信息](./device-enrollment-manager-enroll.md)|
-|**Android 工作配置文件**| 否 | 是 | 否| [详细信息](./android-work-profile-enroll.md) |
+|**Android 设备管理**|**用户通过公司门户启动** | 否 | 是 | 否 | [详细信息](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android Enterprise 工作配置文件**|**用户通过公司门户启动**| 否 | 是 | 否 | [详细信息](./android-work-profile-enroll.md)|
+
+
+| **公司** | **注册方法** | **需要重置** | **用户关联** | **锁定** | **详细信息**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android 设备管理**|[DEM](#device-enrollment-manager) 通过公司门户启动| 否 | 否 | 否 |[详细信息](./device-enrollment-manager-enroll.md)|
+|**Android 设备管理**|**（预声明的 IMEI 或 SN）用户通过公司门户启动**| 否 | 是 | 否 | [详细信息](./corporate-identifiers-add.md)|
+|**带有 Zebra Mobility Extensions 的 Android 设备管理**|用户或 [DEM](#device-enrollment-manager) 通过公司门户启动| 否 | 如果用户启动，则为是；如果 [DEM](#device-enrollment-manager) 启动，则为否 | 否 | [详细信息](./android-zebra-mx-overview.md)|
+|**Android Enterprise 专用**|**NFC、令牌、QR 代码、Zero Touch**| 是 | 否 | 可通过策略进行配置 | [详细信息](./android-kiosk-enroll.md)|
+|**Android Enterprise 完全托管（预览版）**|**NFC、令牌、QR 代码、Zero Touch**| 是 | 是 | 可通过策略进行配置 | [详细信息](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>自带设备办公

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
-ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59570762"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764718"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>将 Windows 业务线应用添加到 Microsoft Intune
 
@@ -63,7 +63,7 @@ ms.locfileid: "59570762"
     - **在公司门户中将此应用显示为特色应用**：当用户浏览应用时，在公司门户的主页上突出显示应用。
     - **信息 URL**：（可选）输入包含此应用相关信息的网站的 URL。 此 URL 显示在公司门户中。
     - **隐私 URL**：（可选）输入包含此应用相关隐私信息的网站的 URL。 此 URL 显示在公司门户中。
-    - **命令行参数**：（可选）输入要在 .msi 文件运行时应用到该文件的任意命令行参数。 例如 /q。
+    - **命令行参数**：（可选）输入要在 .msi 文件运行时应用到该文件的任意命令行参数。  例如 /q。 不要添加 msiexec 命令或参数（如 /i 或 /x），因为它们是自动使用的。 有关详细信息，请参阅[命令行选项](https://docs.microsoft.com/windows/desktop/Msi/command-line-options)。 
     - **开发者**：（可选）输入应用开发者的名称。
     - **所有者**：（可选）输入此应用的所有者的名称。 例如，“HR 部门”。
     - **备注**：输入想与此应用关联的任何备注。

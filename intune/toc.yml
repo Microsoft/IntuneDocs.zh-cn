@@ -442,11 +442,16 @@
                       items:
                         - name: Sophos Mobile 和 Intune 集成
                           href: sophos-mtd-connector-integration.md
-            - name: Windows Defender ATP
-              href: advanced-threat-protection.md
-            - name: 安全基线
-              href: security-baselines.md
+            - name: Microsoft Defender
               items:
+                - name: Microsoft Defender ATP
+                  href: advanced-threat-protection.md
+                - name: 安全任务
+                  href: atp-manage-vulnerabilities.md
+            - name: 安全基线
+              items:
+                - name: 安全基线
+                  href: security-baselines.md
                 - name: 监视基线
                   href: security-baselines-monitor.md
             - name: Endpoint Protection
@@ -552,7 +557,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android 托管设备
               href: app-configuration-policies-use-android.md
-            - name: 用于 Android Enterprise 的托管主屏幕应用
+            - name: 配置 Managed Home Screen
               href: app-configuration-managed-home-screen-app.md
             - name: 托管应用
               href: app-configuration-policies-managed-app.md
@@ -770,8 +775,12 @@
                   href: shared-user-device-settings-windows.md
                 - name: 自定义
                   href: custom-settings-windows-10.md
-            - name: 安全基线设置
-              href: security-baseline-settings-windows.md
+            - name: 安全基线
+              items:
+                - name: Windows 10 基线设置
+                  href: security-baseline-settings-windows.md
+                - name: Microsoft Defender ATP 基准设置
+                  href: security-baseline-settings-defender-atp.md
             - name: Windows 更新设置
               href: windows-update-settings.md
         - name: Windows Holographic for Business

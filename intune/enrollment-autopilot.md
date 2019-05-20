@@ -18,18 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65c19f58e41e4f8a739ae16a1b56703fb743b738
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6545724294eefc83789f56f851549c0b5fee7f22
+ms.sourcegitcommit: 01117021dfaebb5507aa146b7369447c3d5a403d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513080"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65626432"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
 
 
 ## <a name="prerequisites"></a>必备条件
+- [Intune 订阅](licenses.md)
 - [已启用的 Windows 自动注册](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 订阅](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
@@ -150,15 +151,17 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 
 ## <a name="delete-autopilot-devices"></a>删除 Autopilot 设备
 
-可以删除未注册的 Windows Autopilot 设备。
+可以删除未注册到 Intune 的 Windows Autopilot 设备：
 
-1. 如果已在 Intune 中注册设备，必须先[从 Azure Active Directory 门户中删除设备](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)。
+- 在“设备注册” > “Windows 注册” > “设备”处将设备从 Windows Autopilot 中删除。 选择要删除的设备，然后选择“删除”。 Windows Autopilot 设备删除可能需要几分钟才能完成。
 
-2. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “设备”。
+要从租户中完全删除设备，需要删除 Intune设备、Azure Active Directory 设备和 Windows Autopilot 设备记录。 这些操作均可以在 Intune 中完成：
 
-3. 在“Windows Autopilot 设备”下，选择要删除的设备，然后选择“删除”。
+1. 如果设备已注册到 Intune，则必须先[从“Intune 所有设备”边栏选项卡中将其删除](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)。
 
-4. 通过选择“是”确认删除。 删除可能需要几分钟。
+2. 在“设备” > “Azure AD 设备”处删除 Azure Active Directory 设备中的设备。
+
+3. 在“设备注册” > “Windows 注册” > “设备”处将设备从 Windows Autopilot 中删除。 选择要删除的设备，然后选择“删除”。 Windows Autopilot 设备删除可能需要几分钟才能完成。
 
 ## <a name="using-autopilot-in-other-portals"></a>在其他门户中使用 Autopilot
 如果对移动设备管理不感兴趣，可以在其他门户中使用 Autopilot。 尽管使用其他门户也是一种选择，但我们建议仅使用 Intune 来管理 Autopilot 部署。 如果同时使用 Intune 和其他门户，Intune 将无法：  
