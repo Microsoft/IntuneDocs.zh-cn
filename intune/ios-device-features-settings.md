@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/01/2019
+ms.date: 04/23/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 1bcd3a5d0b9f7abc1aa2e0b4d96c30c956b6b4c7
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799259"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764899"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>用于使用 Intune 中常见 iOS 功能的 iOS 设备设置
 
@@ -35,22 +35,18 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 
 [创建 iOS 设备配置文件](device-features-configure.md#create-a-device-profile)。
 
-## <a name="airprint-settings"></a>AirPrint 设置
+## <a name="airprint"></a>AirPrint
 
-借助此功能，iOS 用户可使用已知 AirPrint 打印机进行打印。
+- **IP 地址**：输入打印机的 IPv4 或 IPv6 地址。 如果使用主机名标识打印机，可以通过在“终端”中对打印机执行 ping 操作来获取 IP 地址。 （本文中的）获取 IP 地址和路径提供了更多详细信息。
+- **路径**：网络中打印机的路径通常是 `ipp/print`。 （本文中的）获取 IP 地址和路径提供了更多详细信息。
+- **端口**：输入 AirPrint 目标的侦听端口。 如果将此属性留空，AirPrint 使用默认端口。 适用于 iOS 11.0 及更高版本。
+- **TLS**：选择“启用”可使用传输层安全性 (TLS) 确保 AirPrint 连接安全。 适用于 iOS 11.0 及更高版本。
 
-1. 选择“设置”中的“AirPrint”。 输入 AirPrint 服务器的以下属性：
+**添加**：将 AirPrint 服务器添加到列表中。 可以添加多个 AirPrint 服务器。 还可以导入包含此类信息的逗号分隔文件 (.csv)。 创建列表后，还可以导出 AirPrint 服务器列表。
 
-    - **IP 地址**：输入打印机的 IPv4 或 IPv6 地址。 如果使用主机名标识打印机，可以通过在“终端”中对打印机执行 ping 操作来获取 IP 地址。 （本文中的）获取 IP 地址和路径提供了更多详细信息。
-    - **路径**：网络中打印机的路径通常是 `ipp/print`。 （本文中的）获取 IP 地址和路径提供了更多详细信息。
-    - **端口**：输入 AirPrint 目标的侦听端口。 如果将此属性留空，AirPrint 使用默认端口。 适用于 iOS 11.0 及更高版本。
-    - **TLS**：选择“启用”可使用传输层安全性 (TLS) 确保 AirPrint 连接安全。 适用于 iOS 11.0 及更高版本。
+选择“确定”，保存列表。
 
-2. 选择“添加”。 此时，AirPrint 服务器添加到列表中。 可以添加多个 AirPrint 服务器。
-
-    还可以导入包含此类信息的逗号分隔文件 (.csv)。 创建列表后，还可以导出 AirPrint 服务器列表。
-
-3. 完成后，选择“确定”，以保存列表。
+### <a name="get-server-ip-address-resource-path-and-port"></a>获取服务器 IP 地址、资源路径和端口
 
 必须有打印机的 IP 地址、资源路径和端口，才能添加 AirPrinter 服务器。 下面逐步介绍了如何获取此类信息。
 
@@ -73,29 +69,32 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 
 使用“程序坞”设置最多可以向 iOS 屏幕的程序坞添加六个项或文件夹。 许多设备支持添加的项数更少。 例如，iPhone 设备最多支持添加四个项。 在此示例中，设备上仅显示你添加的前四个项。
 
-1. 在“设置”中，依次选择“主屏幕布局(仅监督模式)” > “程序坞” > “添加”。 最多可以对设备程序坞添加六个项（应用和文件夹加起来）。
-2. 在“类型”中，选择添加“应用”或“文件夹”。
+最多可以对设备程序坞添加六个项（应用和文件夹加起来）。
 
-    - **添加应用**：选择此选项可向屏幕上的程序坞添加应用。 输入：
+- **添加**：将应用或文件夹添加到设备的程序坞。
+- **类型**：添加应用或文件夹：
 
+  - **应用**：选择此选项可向屏幕上的程序坞添加应用。 输入：
+
+    - **应用名**：输入应用的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
+    - **应用程序包 ID**：输入应用的捆绑 ID。 有关一些示例，请参阅[内置 iOS 应用的捆绑 ID](bundle-ids-built-in-ios-apps.md)。
+
+    选择“确定”，保存所做更改。
+
+  - **文件夹**：选择此选项可向屏幕上的程序坞添加文件夹。
+
+    添加到文件夹中页面的应用按照列表中的相同顺序从左向右排列。 如果添加的应用数超过了页面能够容纳的量，应用会移到其他页面。
+
+    - **文件夹名称**：输入文件夹的名称。 此名称在设备上向用户显示。
+    - **页面列表**：添加一个页面，并输入以下属性：
+
+      - **页名称**：输入页面的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
       - **应用名**：输入应用的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
-      - **应用程序包 ID**：输入应用的捆绑 ID。 有关一些示例，请参阅（本文中的）[内置 iOS 应用的捆绑 ID](#bundle-ids-for-built-in-ios-apps)。
+      - **应用程序包 ID**：输入应用的捆绑 ID。 有关一些示例，请参阅[内置 iOS 应用的捆绑 ID](bundle-ids-built-in-ios-apps.md)。
 
-      选择“确定”，保存所做更改。
+      最多可以对设备程序坞添加 20 个页面。
 
-    - **添加文件夹**：选择此选项可向屏幕上的程序坞添加文件夹。 
-
-      添加到文件夹中页面的应用按照列表中的相同顺序从左向右排列。 如果添加的应用数超过了页面能够容纳的量，应用会移到其他页面。
-
-      1. 填写“文件夹名称”。 此名称在设备上向用户显示。
-      2. 选择“添加”，并输入以下属性：
-
-          - **页名称**：输入页面的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
-          - **应用名**：输入应用的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
-          - **应用程序包 ID**：输入应用的捆绑 ID。 有关一些示例，请参阅（本文中的）[内置 iOS 应用的捆绑 ID](#bundle-ids-for-built-in-ios-apps)。
-
-      3. 选择“添加”。 最多可以对设备程序坞添加 20 个页面。
-      4. 选择“确定”，保存所做更改。
+    选择“确定”，保存所做更改。
 
 > [!NOTE]
 > 使用 Dock 设置添加图标时，将锁定主屏幕上的图标和页面，并且无法移动。 这可能是 iOS 和 Apple 的 MDM 策略的固有设计。
@@ -117,33 +116,37 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 > [!TIP]
 > 若要对任何主屏幕和页面列表中的项重新排序，可以拖放这些项。
 
-1. 在“设置”中，依次选择“主屏幕布局(仅监督模式)” > “页面” > “添加”。 最多可以在设备上添加 40 个页面。
-2. 填写“页面名称”。 此名称可便于你在 Azure 门户中参考，不会显示在 iOS 设备上。 
+最多可以在设备上添加 40 个页面。
 
-    选择“添加”。 最多可以在设备上添加 60 个项（应用和文件夹加起来）。
+- **页面列表**：添加一个页面，并输入以下属性：
 
-3. 在“类型”中，选择添加“应用”或“文件夹”。
+  - **页名称**：输入页面的名称。 此名称可便于你在 Azure 门户中参考，不会显示在 iOS 设备上。
 
-    - **添加应用**：选择此选项可向屏幕上的页面添加应用。 输入：
+  最多可以在设备上添加 60 个项（应用和文件夹加起来）。
 
-      - **应用名**：输入应用的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
-      - **应用程序包 ID**：输入应用的捆绑 ID。 有关一些示例，请参阅（本文中的）[内置 iOS 应用的捆绑 ID](#bundle-ids-for-built-in-ios-apps)。
+  - **添加**：将应用或文件夹添加到设备的页面。
+
+    - **类型**：添加应用或文件夹：
+
+      - **应用**：选择此选项可向屏幕上的页面添加应用。 此外请输入：
+
+        - **应用名**：输入应用的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
+        - **应用程序包 ID**：输入应用的捆绑 ID。 有关一些示例，请参阅[内置 iOS 应用的捆绑 ID](bundle-ids-built-in-ios-apps.md)。
 
       选择“确定”，保存所做更改。
 
-    - **添加文件夹**：选择此选项可向屏幕上的程序坞添加文件夹。 
+      - **文件夹**：选择此选项可向屏幕上的程序坞添加文件夹。
 
-      添加到文件夹中页面的应用按照列表中的相同顺序从左向右排列。 如果添加的应用数超过了页面能够容纳的量，应用会移到其他页面。
+        添加到文件夹中页面的应用按照列表中的相同顺序从左向右排列。 如果添加的应用数超过了页面能够容纳的量，应用会移到其他页面。
 
-      1. 填写“文件夹名称”。 此名称在设备上向用户显示。
-      2. 选择“添加”，并输入以下属性：
+        - **文件夹名称**：输入文件夹的名称。 此名称在设备上向用户显示。
+        - **添加**：将页面添加到文件夹。 同时输入以下属性：
 
           - **页名称**：输入页面的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
           - **应用名**：输入应用的名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在 iOS 设备上。
-          - **应用程序包 ID**：输入应用的捆绑 ID。 有关一些示例，请参阅（本文中的）[内置 iOS 应用的捆绑 ID](#bundle-ids-for-built-in-ios-apps)。
+          - **应用程序包 ID**：输入应用的捆绑 ID。 有关一些示例，请参阅[内置 iOS 应用的捆绑 ID](bundle-ids-built-in-ios-apps.md)。
 
-      3. 选择“添加”。
-      4. 选择“确定”，保存所做更改。
+      选择“确定”，保存所做更改。
 
 #### <a name="example"></a>示例
 
@@ -159,50 +162,43 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 
 选择在 iOS 设备上安装的应用如何发送通知。 这些设置支持运行 iOS 9.3 及更高版本的已监督设备。
 
-1. 在“设置”中，依次选择“应用通知(仅监督模式)” > “添加”：
+- **添加**：添加应用通知：
 
     ![在 Intune 中的 iOS 配置文件内添加应用通知](./media/ios-macos-app-notifications.png)
 
-2. 输入以下属性：
+  - **应用程序包 ID**：输入要添加的应用的“应用程序包 ID”。 有关一些示例，请参阅[内置 iOS 应用的捆绑 ID](bundle-ids-built-in-ios-apps.md)。
+  - **应用名**：输入要添加的应用名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在设备上。
+  - **发布者**：输入要添加的应用的发布者。 此名称可便于你在 Azure 门户中参考。 它不会显示在设备上。
+  - **通知**：“启用”或“禁用”应用向设备发送通知。
+    - **在通知中心中显示**：“启用”可允许应用在设备通知中心显示通知。 选择“禁用”可阻止应用在设备通知中心内显示通知。
+    - **在锁定屏幕中显示**：选择“启用”可在设备锁定屏幕上看到应用的通知。 选择“禁用”可阻止应用在锁定屏幕中显示通知。
+    - **警报类型**：选择在设备解锁后的通知显示方式。 选项包括：
+      - **无**：不显示通知。
+      - **横幅**：短暂显示包含通知的横幅。
+      - **模式**：显示通知，并且用户必须先手动关闭通知，然后才能继续使用设备。
+    - **应用图标上的锁屏提醒**：选择“启用”可向应用图标添加锁屏提醒。 通知提醒表示应用已发送通知。
+    - **声音**：选择“启用”可在通知送达时播放声音。
 
-    - **应用程序包 ID**：输入要添加的应用的“应用程序包 ID”。 有关一些示例，请参阅（本文中的）[内置 iOS 应用的捆绑 ID](#bundle-ids-for-built-in-ios-apps)。
-    - **应用名**：输入要添加的应用名称。 此名称可便于你在 Azure 门户中参考。 它不会显示在设备上。
-    - **发布者**：输入要添加的应用的发布者。 此名称可便于你在 Azure 门户中参考。 它不会显示在设备上。
-    - **通知**：“启用”或“禁用”应用向设备发送通知。
-       - **在通知中心中显示**：“启用”可允许应用在设备通知中心显示通知。 选择“禁用”可阻止应用在设备通知中心内显示通知。
-       - **在锁定屏幕中显示**：选择“启用”可在设备锁定屏幕上看到应用的通知。 选择“禁用”可阻止应用在锁定屏幕中显示通知。
-       - **警报类型**：选择在设备解锁后的通知显示方式。 选项包括：
-         - **无**：不显示通知。
-         - **横幅**：短暂显示包含通知的横幅。
-         - **模式**：显示通知，并且用户必须先手动关闭通知，然后才能继续使用设备。
-       - **应用图标上的锁屏提醒**：选择“启用”可向应用图标添加锁屏提醒。 通知提醒表示应用已发送通知。
-       - **声音**：选择“启用”可在通知送达时播放声音。
-
-3. 选择“确定”，保存所做更改。 继续添加所需的应用。 完成时，选择“确定”。
+选择“确定”，保存所做更改。
 
 ## <a name="lock-screen-message-settings"></a>锁定屏幕消息设置
 
 使用这些设置在登录窗口和锁定屏幕中显示自定义消息或文本。 例如，可输入“如果丢失，请送还至…”消息和资产标记信息。 
 
-该功能支持受监管设备运行：
+此功能支持运行 iOS 9.3 及更高版本的受监督设备。
 
-- iOS 9.3 及更高版本
+- **资产标记信息**：输入有关设备的资产标记的信息。 例如，输入 `Owned by Contoso Corp` 或 `Serial Number: {{serialnumber}}`。
 
-1. 在“设置”中，请选择“锁屏信息(仅受监督模式)”。
-2. 输入以下设置：
+  输入的文本显示在设备上的登录窗口和锁定屏幕中。
 
-    - **资产标记信息**：输入有关设备的资产标记的信息。 例如，输入 `Owned by Contoso Corp` 或 `Serial Number: {{serialnumber}}`。 
+- **锁定屏幕脚注**：输入一个可帮助在设备丢失或被盗时将其找回的注释。 可以输入所需的任何文本。 例如，输入类似于 `If found, call Contoso at ...` 的内容。
 
-      输入的文本显示在设备上的登录窗口和锁定屏幕中。
+  设备令牌还可以用于向这些字段添加特定于设备的信息。 例如，若要显示序列号，请输入 `Serial Number: {{serialnumber}}`。 在锁屏上，文本显示类似于 `Serial Number 123456789ABC`。 输入变量时，请务必使用大括号 `{{ }}`。 [应用配置令牌](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可用变量的列表。 还可以使用 `deviceName` 或任何其他特定于设备的值。
 
-    - **锁定屏幕脚注**：输入一个可帮助在设备丢失或被盗时将其找回的注释。 可以输入所需的任何文本。 例如，输入类似于 `If found, call Contoso at ...` 的内容。
+  > [!NOTE]
+  > 变量不在 UI 中验证。 因此，可能会看到使用不正确输入保存的配置文件。 例如，如果输入 `{{Devicename}}` 而不是 `{{devicename}}`，则显示文本字符串而不是设备的唯一名称。
 
-    设备令牌还可以用于向这些字段添加特定于设备的信息。 例如，若要显示序列号，请输入 `Serial Number: {{serialnumber}}`。 在锁屏上，文本显示类似于 `Serial Number 123456789ABC`。 输入变量时，请务必使用大括号 `{{ }}`。 [应用配置令牌](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可用变量的列表。 还可以使用 `deviceName` 或任何其他特定于设备的值。
-
-    > [!NOTE]
-    > 变量不在 UI 中验证。 因此，可能会看到使用不正确输入保存的配置文件。 例如，如果输入 `{{Devicename}}` 而不是 `{{devicename}}`，则显示文本字符串而不是设备的唯一名称。
-
-3. 完成后，选择“确定”，以保存更改。
+选择“确定”，保存所做更改。
 
 ## <a name="single-sign-on-settings"></a>单一登录设置
 
@@ -213,82 +209,77 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 - 已将应用编码为，在设备上的单一登录中查找用户凭据存储。
 - Intune 配置有 iOS 设备 SSO。
 
-1. 选择“设置”中的“单一登录”：
+![“单一登录”页](./media/sso-blade.png)
 
-   ![“单一登录”页](./media/sso-blade.png)
+- **来自 AAD 的用户名属性**：Intune 为 Azure AD 中的每个用户寻找此属性。 然后，Intune 先填充相应字段（如“UPN”），再生成在设备上安装的 XML。 选项包括：
 
-2. 输入以下设置：
+  - **用户主体名称**：将按以下方式分析 UPN：
 
-    - **来自 AAD 的用户名属性**：Intune 为 Azure AD 中的每个用户寻找此属性。 然后，Intune 先填充相应字段（如“UPN”），再生成在设备上安装的 XML。 选项包括：
+    ![用户名属性](media/User-name-attribute.png)
 
-      - **用户主体名称**：将按以下方式分析 UPN：
+    还可以使用在“领域”文本框中键入的文本覆盖该领域。
 
-        ![用户名属性](media/User-name-attribute.png)
+    例如，Contoso 有多个区域，包括欧洲、亚洲和北美。 Contoso 希望亚洲用户使用 SSO，且应用要求采用 `username@asia.contoso.com` 格式的 UPN。 在你选择“用户主体名称”后，系统从 Azure AD 中获取每个用户的领域，即 `contoso.com`。 因此，对于亚洲用户，选择“用户主体名称”，再输入“`asia.contoso.com`”。 最终用户的 UPN 变成 `username@asia.contoso.com`，而不是 `username@contoso.com`。
 
-        还可以使用在“领域”文本框中键入的文本覆盖该领域。
+  - **Intune 设备 ID**：Intune 会自动选择 Intune 设备 ID。
 
-        例如，Contoso 有多个区域，包括欧洲、亚洲和北美。 Contoso 希望亚洲用户使用 SSO，且应用要求采用 `username@asia.contoso.com` 格式的 UPN。 在你选择“用户主体名称”后，系统从 Azure AD 中获取每个用户的领域，即 `contoso.com`。 因此，对于亚洲用户，选择“用户主体名称”，再输入“`asia.contoso.com`”。 最终用户的 UPN 变成 `username@asia.contoso.com`，而不是 `username@contoso.com`。
+    默认情况下，应用只需使用设备 ID。 但如果应用使用领域和设备 ID，你可以在“领域”文本框中键入领域。
 
-      - **Intune 设备 ID**：Intune 会自动选择 Intune 设备 ID。
+    > [!NOTE]
+    > 如果使用设备 ID，则默认将领域留空。
 
-        默认情况下，应用只需使用设备 ID。 但如果应用使用领域和设备 ID，你可以在“领域”文本框中键入领域。
+  - **Azure AD 设备 ID**
 
-        > [!NOTE]
-        > 如果使用设备 ID，则默认将领域留空。
+- **领域**：输入 URL 的域部分。 例如，输入 `contoso.com`。
+- **使用单一登录的 URL 前缀**：添加组织中要求用户进行单一登录身份验证的任何 URL。
 
-      - **Azure AD 设备 ID**
+  例如，用户连接到任何这些站点时，iOS 设备会使用单一登录凭据。 用户不需要输入任何其他凭据。 如果已启用多重身份验证，用户必须输入第二重身份验证凭据。
 
-    - **领域**：输入 URL 的域部分。 例如，输入 `contoso.com`。
-    - **使用单一登录的 URL 前缀**：添加组织中要求用户进行单一登录身份验证的任何 URL。
+  > [!NOTE]
+  > 这些 URL 必须采用正确格式化的 FQDN。 Apple 要求这些 URL 必须采用 `http://<yourURL.domain>` 格式。
 
-        例如，用户连接到任何这些站点时，iOS 设备会使用单一登录凭据。 用户不需要输入任何其他凭据。 如果已启用多重身份验证，用户必须输入第二重身份验证凭据。
+  匹配模式的 URL 必须以 `http://` 或 `https://` 开头。 由于运行的是简单字符串匹配，因此 `http://www.contoso.com/` URL 前缀与 `http://www.contoso.com:80/` 不匹配。 在 iOS 10.0 或更高版本中，可使用一个通配符 \* 输入所有匹配值。 例如，`http://*.contoso.com/` 同时匹配 `http://store.contoso.com/` 和 `http://www.contoso.com`。
 
-        > [!NOTE]
-        > 这些 URL 必须采用正确格式化的 FQDN。 Apple 要求这些 URL 必须采用 `http://<yourURL.domain>` 格式。
+  `http://.com` 和 `https://.com` 模式分别匹配所有 HTTP 和 HTTPS URL。
 
-        匹配模式的 URL 必须以 `http://` 或 `https://` 开头。 由于运行的是简单字符串匹配，因此 `http://www.contoso.com/` URL 前缀与 `http://www.contoso.com:80/` 不匹配。 在 iOS 10.0 或更高版本中，可使用一个通配符 \* 输入所有匹配值。 例如，`http://*.contoso.com/` 同时匹配 `http://store.contoso.com/` 和 `http://www.contoso.com`。
+- **使用单一登录的应用**：在可以使用单一登录的用户设备上添加应用。
 
-        `http://.com` 和 `https://.com` 模式分别匹配所有 HTTP 和 HTTPS URL。
+  `AppIdentifierMatches` 数组必须包含与应用捆绑 ID 匹配的字符串。 这些字符串可以是完全匹配项（如 `com.contoso.myapp`），也可以使用 \* 通配符输入捆绑 ID 的前缀匹配项。 通配符必须位于句点字符 (.) 后面，并只能在字符串末尾出现一次（如 `com.contoso.*`）。 如果包括通配符，则程序包 ID 以前缀开头的任何应用都将被授予对帐户的访问权限。
 
-    - **使用单一登录的应用**：在可以使用单一登录的用户设备上添加应用。
+  使用应用名称输入一个用户友好名称，帮助识别捆绑 ID。
 
-        `AppIdentifierMatches` 数组必须包含与应用捆绑 ID 匹配的字符串。 这些字符串可以是完全匹配项（如 `com.contoso.myapp`），也可以使用 \* 通配符输入捆绑 ID 的前缀匹配项。 通配符必须位于句点字符 (.) 后面，并只能在字符串末尾出现一次（如 `com.contoso.*`）。 如果包括通配符，则程序包 ID 以前缀开头的任何应用都将被授予对帐户的访问权限。
+- **凭据续订证书**：如果使用证书（而不是密码）进行身份验证，选择现有 SCEP 或 PFX 证书作为身份验证证书。 通常，此证书是针对其他配置文件（如 VPN、Wi-Fi 或电子邮件）部署到用户的相同证书。
 
-        使用应用名称输入一个用户友好名称，帮助识别捆绑 ID。
-
-    - **凭据续订证书**：如果使用证书（而不是密码）进行身份验证，选择现有 SCEP 或 PFX 证书作为身份验证证书。 通常，此证书是针对其他配置文件（如 VPN、Wi-Fi 或电子邮件）部署到用户的相同证书。
-
-3. 完成后，选择“确定”，以保存更改。
+选择“确定”，保存所做更改。
 
 ## <a name="web-content-filter-settings"></a>Web 内容筛选器设置
 
 这些设置控制 iOS 设备上的浏览器 URL 访问。
 
-1. 选择“设置”中的“Web 内容筛选器(仅监督模式)”。
-2. 选择“筛选器类型”。 选项包括：
+- **筛选器类型**：选择以允许特定网站。 选项包括：
 
-    - **配置 URL**：使用 Apple 的内置 Web 筛选器来查找成人术语，包括猥亵和露骨色情语言。 此功能在网页加载时评估每个网页，并发现和阻止不适合的内容。 还可以添加不希望筛选器检查的 URL。 或屏蔽特定 URL，无论 Apple 的筛选器设置如何。
+  - **配置 URL**：使用 Apple 的内置 Web 筛选器来查找成人术语，包括猥亵和露骨色情语言。 此功能在网页加载时评估每个网页，并发现和阻止不适合的内容。 还可以添加不希望筛选器检查的 URL。 或屏蔽特定 URL，无论 Apple 的筛选器设置如何。
 
-      - **允许的 URL**：添加允许的 URL。 这些 URL 可绕过 Apple 的 Web 筛选器。
+    - **允许的 URL**：添加允许的 URL。 这些 URL 可绕过 Apple 的 Web 筛选器。
 
-        > [!NOTE]
+      > [!NOTE]
         > 输入的 URL 是你不希望 Apple Web 筛选器评估的 URL。 这些 URL 不是允许的网站列表。 若要创建允许的网站列表，请将“筛选器类型”设置为“仅特定网站”。
 
-        选择“确定”，保存所做更改。
+      选择“确定”，保存所做更改。
 
-      - **阻止的 URL**：添加要阻止打开的 URL，无论 Apple Web 筛选器设置如何。
-
-        选择“确定”，保存所做更改。
-
-    - **仅限特定网站**（仅适用于 Safari Web 浏览器）：向 Safari 浏览器的书签添加这些 URL。 用户只能访问这些网站；无法打开其他任何网站。 仅在知道用户可以访问的 URL 的确切列表时使用此选项。
-
-      - **URL**：输入要允许的网站 URL。 例如，输入 `https://www.contoso.com`。
-      - **书签路径**：输入存储书签的路径。 例如，输入 `/Contoso/Business Apps`。 如不添加路径，则书签将被添加到设备上的默认书签文件夹中。
-      - **标题**：为书签输入描述性标题。
-
-      如果未输入任何 URL，最终用户无法访问任何网站（`microsoft.com`、`microsoft.net` 和 `apple.com` 除外）。 Intune 自动允许这些 URL。
+    - **阻止的 URL**：添加要阻止打开的 URL，无论 Apple Web 筛选器设置如何。
 
       选择“确定”，保存所做更改。
+
+  - **仅限特定网站**（仅适用于 Safari Web 浏览器）：向 Safari 浏览器的书签添加这些 URL。 用户只能访问这些网站；无法打开其他任何网站。 仅在知道用户可以访问的 URL 的确切列表时使用此选项。
+
+    - **URL**：输入要允许的网站 URL。 例如，输入 `https://www.contoso.com`。
+    - **书签路径**：输入存储书签的路径。 例如，输入 `/Contoso/Business Apps`。 如不添加路径，则书签将被添加到设备上的默认书签文件夹中。
+    - **标题**：为书签输入描述性标题。
+
+    如果未输入任何 URL，最终用户无法访问任何网站（`microsoft.com`、`microsoft.net` 和 `apple.com` 除外）。 Intune 自动允许这些 URL。
+
+    选择“确定”，保存所做更改。
 
 ## <a name="wallpaper-settings"></a>壁纸设置
 
@@ -305,57 +296,6 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 
 > [!TIP]
 > 若要在锁定屏幕和主屏幕上显示不同的图像，请创建包含锁定屏幕图像的配置文件， 以及另一个包含主屏幕图像的配置文件。 将两个配置文件分配到 iOS 用户组或设备组。
-
-## <a name="bundle-ids-for-built-in-ios-apps"></a>内置 iOS 应用的捆绑 ID
-
-下表显示了一些常见的内置 iOS 应用的捆绑 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。
-
-| 捆绑 ID                   | 应用名称     | 发布者 |
-|-----------------------------|--------------|-----------|
-| com.apple.AppStore          | App Store    | Apple     |
-| com.apple.calculator        | 计算器   | Apple     |
-| com.apple.mobilecal         | 日历     | Apple     |
-| com.apple.camera            | 照相机       | Apple     |
-| com.apple.mobiletimer       | 时钟        | Apple     |
-| com.apple.compass           | 指南针      | Apple     |
-| com.apple.MobileAddressBook | 联系人     | Apple     |
-| com.apple.facetime          | FaceTime     | Apple     |
-| com.apple.DocumentsApp      | 文件        | Apple     |
-| com.apple.mobileme.fmf1     | 查找好友 | Apple     |
-| com.apple.mobileme.fmip1    | 查找 iPhone  | Apple     |
-| com.apple.gamecenter        | 游戏中心  | Apple     |
-| com.apple.mobilegarageband  | GarageBand   | Apple     |
-| com.apple.Health            | 运行状况       | Apple     |
-| com.apple.Home              | 住宅         | Apple     |
-| com.apple.iBooks            | iBooks       | Apple     |
-| com.apple.iMovie            | iMovie       | Apple     |
-| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
-| com.apple.MobileStore       | iTunes 商店 | Apple     |
-| com.apple.itunesu           | iTunes U     | Apple     |
-| com.apple.Keynote           | Keynote      | Apple     |
-| com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.Maps              | 映射         | Apple     |
-| com.apple.MobileSMS         | 消息     | Apple     |
-| com.apple.Music             | 音乐        | Apple     |
-| com.apple.news              | 新闻         | Apple     |
-| com.apple.mobilenotes       | 注意        | Apple     |
-| com.apple.Numbers           | 数字      | Apple     |
-| com.apple.Pages             | 页面        | Apple     |
-| com.apple.Photo-Booth       | Photo Booth  | Apple     |
-| com.apple.mobileslideshow   | 照片       | Apple     |
-| com.apple.podcasts          | 播客     | Apple     |
-| com.apple.reminders         | 提醒    | Apple     |
-| com.apple.mobilesafari      | Safari       | Apple     |
-| com.apple.Preferences       | 设置     | Apple     |
-| com.apple.SiriViewService   | Siri         | Apple     |
-| com.apple.stocks            | 股票       | Apple     |
-| com.apple.tips              | 提示         | Apple     |
-| com.apple.TV                | TV           | Apple     |
-| com.apple.videos            | 视频       | Apple     |
-| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
-| com.apple.Passbook          | 电子钱包       | Apple     |
-| com.apple.Bridge            | 观看        | Apple     |
-| com.apple.weather           | 天气      | Apple     |
 
 ## <a name="next-steps"></a>后续步骤
 
