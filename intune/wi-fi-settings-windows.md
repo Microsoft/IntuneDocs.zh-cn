@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/8/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.reviewer: tycast
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 880a81b49a78e7afd83aca510f85133e91416cf4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 502babf80b4286adb19a09988d16bd56562d4925
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566261"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046669"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>在 Intune 中添加适用于 Windows 10 及更高版本设备的 Wi-Fi 设置
 
@@ -92,7 +91,7 @@ ms.locfileid: "57566261"
   - **固定**：如果网络配置了网络流量的固定限制，请使用此选项。 达到此限制后，将禁止网络访问。
   - **变量**：如果网络流量按字节计费，则使用此选项。
 
-- **单一登录(SSO)**：允许配置单一登录 (SSO)，其中凭据共享，以用于计算机和 Wi-Fi 网络登录。 你的选项为：
+- **单一登录(SSO)** ：允许配置单一登录 (SSO)，其中凭据共享，以用于计算机和 Wi-Fi 网络登录。 你的选项为：
   - 禁用：禁用 SSO 行为。 用户需要单独向网络进行身份验证。
   - **在用户登录到设备之前启用**：在用户登录过程之前使用 SSO 对网络进行身份验证。
   - **在用户登录到设备后启用**：在用户登录过程完成后立即使用 SSO 对网络进行身份验证。
@@ -126,11 +125,11 @@ ms.locfileid: "57566261"
 
         **用于服务器验证的根证书**：使用 EAP-TLS、EAP-TTLS 或 PEAP EAP 类型。 选择用于对连接进行身份验证的受信任的根证书配置文件。  
 
-        **标识隐私(外部标识)**：使用 PEAP EAP 类型。 请输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。  
+        **标识隐私(外部标识)** ：使用 PEAP EAP 类型。 请输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。  
 
       - **客户端身份验证**
 
-        **用于客户端身份验证的客户端证书(身份证书)**：使用 EAP-TLS EAP 类型。 选择用于对连接进行身份验证的证书配置文件。
+        **用于客户端身份验证的客户端证书(身份证书)** ：使用 EAP-TLS EAP 类型。 选择用于对连接进行身份验证的证书配置文件。
 
         **身份验证方法**：使用 EAP-TTLS EAP 类型。 选择连接的身份验证方法：  
 
@@ -142,14 +141,14 @@ ms.locfileid: "57566261"
             - **Microsoft CHAP (MS-CHAP)**
             - **Microsoft CHAP 版本 2 (MS-CHAP v2)**
 
-        **标识隐私(外部标识)**：使用 EAP-TTLS EAP 类型。 请输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
+        **标识隐私(外部标识)** ：使用 EAP-TTLS EAP 类型。 请输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
 - 公司代理设置：选择使用组织内的代理设置。 选项包括：
   - 无：不配置任何代理设置。
   - 手动配置：输入“代理服务器 IP 地址”及其“端口号”。
   - 自动配置：输入指向代理自动配置 (PAC) 脚本的 URL。 例如，输入 `http://proxy.contoso.com/proxy.pac`。
 
-- **强制 Wi-Fi 配置文件符合美国联邦信息处理标准(FIPS)**：当针对 FIPS 140-2 标准进行验证时选择“是”。 所有美国联邦政府机构均需要此标准，这些机构使用基于加密的安全系统来保护以数字方式存储的敏感非保密信息。 选择“否”则不符合 FIPS 标准。
+- **强制 Wi-Fi 配置文件符合美国联邦信息处理标准(FIPS)** ：当针对 FIPS 140-2 标准进行验证时选择“是”。 所有美国联邦政府机构均需要此标准，这些机构使用基于加密的安全系统来保护以数字方式存储的敏感非保密信息。 选择“否”则不符合 FIPS 标准。
 
 选择“确定” > “创建”以保存所做的更改。 配置文件随即创建并出现在配置文件列表中。
 

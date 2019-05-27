@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 04/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d914ea9bffe9485d2e37f8ede4d168f597f9e200
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565922"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135152"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备配置 VPN 设置
 
@@ -42,7 +42,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 - **Cisco (IPSec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **Zscaler**：需要将 Zscaler Private Access (ZPA) 与 Azure AD 帐户集成。 有关详细步骤，请参阅 [Zscaler 文档](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)。 
+- **Zscaler**：要使用条件访问，或允许用户绕过 Zscaler 登录屏幕，必须将 Zscaler Private Access (ZPA) 与 Azure AD 帐户集成。 有关详细步骤，请参阅 [Zscaler 文档](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)。 
 - **自定义 VPN**
 
 > [!NOTE]
@@ -67,22 +67,31 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 
 - **拆分隧道**：启用或禁用此设置，让设备根据流量确定使用哪个连接。 例如，旅馆中的用户使用 VPN 连接访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。
 
-- VPN 标识符（自定义 VPN、Zscaler 和 Citrix）：所用 VPN 应用的标识符，由 VPN 提供商提供。
+- **VPN 标识符**（自定义 VPN、Zscaler 和 Citrix）：所用 VPN 应用的标识符，由 VPN 提供商提供。
   - **输入组织的自定义 VPN 属性的键/值对**：添加或导入用于自定义 VPN 连接的“键”和“值”。 请记住，这些值通常由 VPN 提供商提供。
 
-- 启用网络访问控制 (NAC)（仅适用于 Citrix SSO）：选择“我同意”后，设备 ID 将包含在 VPN 配置文件中。 此 ID 可用于对 VPN 进行身份验证以允许或阻止网络访问。
+- **启用网络访问控制 (NAC)**（Citrix SSO、F5 Access）：选择“我同意”后，设备 ID 将包含在 VPN 配置文件中。 此 ID 可用于对 VPN 进行身份验证以允许或阻止网络访问。
+
+  使用 F5 Access 时，请务必：
+
+  - 确认所使用的是 F5 BIG-IP 13.1.1.5。 BIG-IP 14 不受支持。
+  - 将 BIG-IP 与 Intune for NAC 集成。 请参阅[概述：使用终结点管理系统配置 APM 以进行设备状态检查](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 指南。
+  - 在 VPN 配置文件中启用 NAC。
 
   将 Citrix SSO 与 Gateway 配合使用时，请务必：
 
   - 确认使用的是 Citrix Gateway 12.0.59 或更高版本。
   - 确认你的用户已在其设备上安装 Citrix SSO 1.1.6 或更高版本。
-  - 将 Citrix Gateway 与 Intune for NAC 集成，如[将 Microsoft Intune/Enterprise Mobility Suite 与 NetScaler（LDAP+OTP 方案）集成](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix 部署指南中所述。
+  - 将 Citrix 网关与 Intune for NAC 集成。 请参阅 [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix 部署指南（将 Microsoft Intune/Enterprise Mobility Suite 与 NetScaler（LDAP+OTP 方案）集成）。
   - 在 VPN 配置文件中启用 NAC。
 
-  重要详细信息：  
+  **重要详细信息**：  
 
-  - 启用 NAC 后，VPN 将每隔 24 小时断开一次连接。
-  - 设备 ID 是配置文件的一部分，但不能出现在 Intune 中。 Microsoft 不会将此 ID 存储在任何位置，也不会由 Microsoft 共享。 VPN 合作伙伴支持此功能后，VPN 客户端（例如 Citrix SSO）即可获取 ID，并查询 Intune 以确认设备已注册以及 VPN 配置文件是否符合要求。
+  - 启用 NAC 后，VPN 将每隔 24 小时断开一次连接。 可以立即重新连接 VPN。
+  - 设备 ID 是配置文件的一部分，但不显示在 Intune 中。 Microsoft 不会将此 ID 存储在任何位置，也不会由 Microsoft 共享。
+
+  如果设备 ID 受 VPN 合作伙伴支持，Citrix SSO 等 VPN 客户端可获取该 ID。 然后，它可以查询 Intune 以确认该设备是否已注册，以及 VPN 配置文件是否符合要求。
+
   - 要删除此设置，请重新创建配置文件，不要选择“我同意”。 然后，重新分配配置文件。
 
 ## <a name="automatic-vpn-settings"></a>自动 VPN 设置
@@ -92,7 +101,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
   - 在结合使用 iOS 每应用 VPN 配置文件和 Pulse Secure 或自定义 VPN 时，选择使用应用层隧道（应用-代理）或数据包级别隧道（数据包-隧道）。 针对应用层隧道，将 ProviderType 值设置为 app-proxy，针对数据包层隧道，将其设置为 packet-tunnel。 如果不确定使用哪个值，请查阅 VPN 提供商的文档。
   - **将触发此 VPN 的 Safari URL**：添加一个或多个网站 URL。 使用设备上的 Safari 浏览器访问这些 URL 时，将自动建立 VPN 连接。
 
-- **按需 VPN**：配置用于控制何时启动 VPN 连接的条件规则。 例如，创建一个条件，仅在设备未连接到公司 Wi-fi 网络时才使用 VPN 连接。 或者创建一个条件，如果设备无法访问输入的 DNS 搜索域，则不启动 VPN 连接。
+- **按需 VPN**：配置用于控制何时启动 VPN 连接的条件规则。 例如，创建一个条件，仅在设备未连接到公司 Wi-fi 网络时才使用 VPN 连接。 或者创建条件。 例如，如果设备无法访问输入的 DNS 搜索域，则不启动 VPN 连接。
 
   - **SSID 或 DNS 搜索域**：选择此条件将使用无线网络“SSID”还是“DNS 搜索域”。 选择“添加”以配置一个或多个 SSID 或搜索域。
   - **URL 字符串探测**：可选。 输入规则用作测试的 URL。 如果具有此配置文件的设备在不重定向的情况下访问此 URL，则会启动 VPN 连接。 并且，设备会连接到目标 URL。 用户看不到该 URL 字符串探测站点。 URL 字符串探测示例是审核 Web 服务器的地址，用于在连接 VPN 前检查设备的符合性。 另一种可能性是 URL 通过 VPN 将设备连接到目标 URL 前，测试 VPN 连接至站点的能力。

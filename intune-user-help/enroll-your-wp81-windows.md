@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57335099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497470"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 中注册 Windows Phone 8.1 设备  
 
-注册设备才能访问工作或学校电子邮件、 文件和其他资源。 注册设备后，组织可以保护公司数据的安全。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和[公司支持人员在你的设备上可以看到和不可以看到的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。  
+注册设备以访问工作或学校电子邮件、文件和其他资源。 注册设备后，组织可以保护公司数据的安全。 若要了解有关注册的详细信息，请参阅[安装公司门户应用并在 Intune 中注册设备后会发生什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)和[公司支持人员在你的设备上可以看到和不可以看到的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。  
 
-若要在 Intune 中注册设备，请按照组说明进行操作的权限或当前帐户状态相匹配。
+要在 Intune 中注册设备，请按照与你的权限或当前帐户状态匹配的说明进行操作。
 
 ## <a name="enroll-through-company-portal"></a>通过公司门户注册  
 如果可以从 Microsoft Store 安装公司门户应用，请执行以下步骤。 
@@ -78,7 +78,7 @@ ms.locfileid: "57335099"
     ![“已添加帐户”屏幕](./media/WP81-enroll-4-account-added.png)  
 
 ## <a name="enroll-through-settings-app"></a>通过设置应用注册  
-如果无法从 Windows Phone 设备，访问 Microsoft Store 或你没有 Microsoft 帐户，请执行以下步骤。
+如果无法从 Windows Phone 设备访问 Microsoft Store 或者没有 Microsoft 帐户，请执行以下步骤。
 
 1.  点击**设置** &gt; **工作区**。  
 

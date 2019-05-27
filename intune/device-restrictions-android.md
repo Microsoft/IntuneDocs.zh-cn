@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566346"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042469"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Intune 中 Android 和 Samsung Knox Standard 设备限制设置列表
 
@@ -33,17 +32,17 @@ ms.locfileid: "57566346"
 ## <a name="general"></a>常规
 
 - **照相机**：选择“阻止”可阻止访问照相机。 “未配置”则允许访问设备的照相机。
-- **复制和粘贴(仅限 Samsung Knox)**：选择“阻止”可阻止复制和粘贴。 “未配置”则允许使用设备上的复制和粘贴功能。
-- **应用间的剪贴板共享(仅限 Samsung Knox)**：选择“阻止”可阻止使用剪贴板在应用之间进行复制和粘贴。 “未配置”则允许使用剪贴板在应用之间进行复制和粘贴。
-- **诊断数据提交(仅限 Samsung Knox)**：选择“阻止”可阻止用户从设备提交诊断数据。 “未配置”则允许用户提交数据。
-- **擦除(仅限 Samsung Knox)**：允许用户在设备上运行[擦除](devices-wipe.md)操作。
-- **地理位置(仅限 Samsung Knox)**：选择“阻止”可禁止设备使用位置信息。 “未配置”则允许设备使用位置信息。
-- **关闭电源(仅限 Samsung Knox)**：选择“阻止”可阻止用户关闭设备电源。 如果禁用此设置，则无法设置“擦除设备前的登录失败次数”设置，并且也不会起作用。 “未配置”则允许用户关闭设备电源。
-- **屏幕捕获(仅限 Samsung Knox)**：选择“阻止”可阻止屏幕截图。 “未配置”则允许用户将屏幕内容作为图像捕获。
-- **语音助手(仅限 Samsung Knox)**：选择“阻止”可禁用 Samsung 语音服务。 “未配置”则允许在设备上使用 Samsung 语音服务和应用。 此设置不适用于 Bixby 或用于朗读屏幕内容的辅助功能的语音助手。
-- **YouTube (仅限 Samsung Knox)**：选择“阻止”可阻止用户使用 YouTube 应用。 “未配置”则允许在设备上使用 YouTube 应用。
-- **共享设备(仅限 Samsung Knox)**：将托管 Samsung Knox Standard 设备配置为共享设备。 在设置为“允许”后，最终用户可以使用其 Azure AD 凭据登录和注销设备。 该设备仍然处于托管状态，无论是否正在使用。</br>与 SCEP 证书配置文件一起使用时，此功能允许最终用户与所有用户共享具有相同应用的设备。 但每个用户都有其自己的 SCEP 用户证书。 用户注销时，会清除所有应用数据。 此功能仅限于 LOB 应用。 </br>“未配置”则阻止多个最终用户在设备上使用其 Azure AD 凭据登录公司门户应用。
-- **禁止更改日期和时间(Samsung Knox)**：选择“阻止”可阻止用户更改设备的日期和时间设置。 “未配置”则允许用户更改日期和时间设置。
+- **复制和粘贴(仅限 Samsung Knox)** ：选择“阻止”可阻止复制和粘贴。 “未配置”则允许使用设备上的复制和粘贴功能。
+- **应用间的剪贴板共享(仅限 Samsung Knox)** ：选择“阻止”可阻止使用剪贴板在应用之间进行复制和粘贴。 “未配置”则允许使用剪贴板在应用之间进行复制和粘贴。
+- **诊断数据提交(仅限 Samsung Knox)** ：选择“阻止”可阻止用户从设备提交诊断数据。 “未配置”则允许用户提交数据。
+- **擦除(仅限 Samsung Knox)** ：允许用户在设备上运行[擦除](devices-wipe.md)操作。
+- **地理位置(仅限 Samsung Knox)** ：选择“阻止”可禁止设备使用位置信息。 “未配置”则允许设备使用位置信息。
+- **关闭电源(仅限 Samsung Knox)** ：选择“阻止”可阻止用户关闭设备电源。 如果禁用此设置，则无法设置“擦除设备前的登录失败次数”设置，并且也不会起作用。 “未配置”则允许用户关闭设备电源。
+- **屏幕捕获(仅限 Samsung Knox)** ：选择“阻止”可阻止屏幕截图。 “未配置”则允许用户将屏幕内容作为图像捕获。
+- **语音助手(仅限 Samsung Knox)** ：选择“阻止”可禁用 Samsung 语音服务。 “未配置”则允许在设备上使用 Samsung 语音服务和应用。 此设置不适用于 Bixby 或用于朗读屏幕内容的辅助功能的语音助手。
+- **YouTube (仅限 Samsung Knox)** ：选择“阻止”可阻止用户使用 YouTube 应用。 “未配置”则允许在设备上使用 YouTube 应用。
+- **共享设备(仅限 Samsung Knox)** ：将托管 Samsung Knox Standard 设备配置为共享设备。 在设置为“允许”后，最终用户可以使用其 Azure AD 凭据登录和注销设备。 该设备仍然处于托管状态，无论是否正在使用。</br>与 SCEP 证书配置文件一起使用时，此功能允许最终用户与所有用户共享具有相同应用的设备。 但每个用户都有其自己的 SCEP 用户证书。 用户注销时，会清除所有应用数据。 此功能仅限于 LOB 应用。 </br>“未配置”则阻止多个最终用户在设备上使用其 Azure AD 凭据登录公司门户应用。
+- **禁止更改日期和时间(Samsung Knox)** ：选择“阻止”可阻止用户更改设备的日期和时间设置。 “未配置”则允许用户更改日期和时间设置。
 
 ## <a name="password"></a>密码
 
@@ -55,7 +54,7 @@ ms.locfileid: "57566346"
 - **最短密码长度**：输入用户必须输入的最短密码长度（介于 4 到 16 个字符之间）。
 - **屏幕锁定前的最大不活动分钟数**：输入在屏幕锁定前在设备上允许的最大不活动分钟数。 在设备上，最终用户设置的时间值不能大于在配置文件所配置的时间。 最终用户不能设置更低的时间值。 例如，如果配置文件设置为 15 分钟，则最终用户可将值设置为 5 分钟。 最终用户不得将值设置为 30 分钟。 
 - **擦除设备前登录失败的次数**：输入在擦除设备前允许的登录失败次数。
-- **密码过期(天数)**：输入必须更改设备密码前的天数。
+- **密码过期(天数)** ：输入必须更改设备密码前的天数。
 - **所需的密码类型**：输入所需的密码复杂性级别以及是否可以使用生物识别设备。 选项包括：
   - **设备默认值**
   - **低安全性生物识别**
@@ -65,7 +64,7 @@ ms.locfileid: "57566346"
   - **至少包含字母数字**
   - **至少为字母数字与符号**
 - **防止重用以前的密码**：阻止最终用户创建以前使用过的密码。
-- **指纹解锁(仅限 Samsung Knox)**：选择“阻止”可阻止使用指纹解锁设备。 “未配置”则允许用户使用指纹解锁设备。
+- **指纹解锁(仅限 Samsung Knox)** ：选择“阻止”可阻止使用指纹解锁设备。 “未配置”则允许用户使用指纹解锁设备。
 - **Smart Lock 和其他信任代理**：选择“阻止”可阻止 Smart Lock 或其他信任代理调整锁定屏幕设置 (Samsung KNOX Standard 5.0+)。 此手机功能（有时称为“信任代理”）可以在设备处于可信任位置时禁用或绕过设备锁定屏幕密码。 例如，此功能可以在设备连接到特定蓝牙设备或靠近 NFC 标签时使用。 可以使用此设置防止用户配置 Smart Lock。
 - **加密**：选择“必需”，以便对设备上的文件进行加密。 并非所有设备都支持加密。 要使用此功能，还需要执行以下操作： 
   1. 将“密码”设置为“必需”。
@@ -84,7 +83,7 @@ ms.locfileid: "57566346"
 
 ## <a name="google-play-store"></a>Google Play Store
 
-- **Google Play 商店(仅限 Samsung Knox)**：选择“阻止”可阻止用户使用 Google Play 商店。 “未配置”则允许用户访问设备上的 Google Play 商店。
+- **Google Play 商店(仅限 Samsung Knox)** ：选择“阻止”可阻止用户使用 Google Play 商店。 “未配置”则允许用户访问设备上的 Google Play 商店。
 
 ## <a name="restricted-apps"></a>受限制的应用
 
@@ -103,15 +102,15 @@ ms.locfileid: "57566346"
 
 ## <a name="browser"></a>浏览器
 
-- **Web 浏览器(仅限 Samsung Knox)**：选择“阻止”可阻止在设备上使用默认 Web 浏览器。 “未配置”则允许使用设备的默认 Web 浏览器。
-- **自动填充(仅限 Samsung Knox)**：选择“阻止”可阻止在浏览器中自动填充文本。 “未配置”则允许使用 Web 浏览器的自动填充功能。
-- **Cookie (仅限 Samsung Knox)**：选择希望如何在设备上处理网站的 cookie。 选项包括：
+- **Web 浏览器(仅限 Samsung Knox)** ：选择“阻止”可阻止在设备上使用默认 Web 浏览器。 “未配置”则允许使用设备的默认 Web 浏览器。
+- **自动填充(仅限 Samsung Knox)** ：选择“阻止”可阻止在浏览器中自动填充文本。 “未配置”则允许使用 Web 浏览器的自动填充功能。
+- **Cookie (仅限 Samsung Knox)** ：选择希望如何在设备上处理网站的 cookie。 选项包括：
   - Allow
   - 阻止所有 cookie
   - 允许访问的网站的 cookie
   - 允许当前网站的 cookie
-- **Javascript (仅限 Samsung Knox)**：选择“阻止”可阻止 Web 浏览器运行 Java 脚本。 “未配置”则允许设备 Web 浏览器运行 Java 脚本。
-- **弹出窗口(仅限 Samsung Knox)**：选择“阻止”可阻止 Web 浏览器中的弹出窗口。 “未配置”则允许 Web 浏览器中的弹出窗口。
+- **Javascript (仅限 Samsung Knox)** ：选择“阻止”可阻止 Web 浏览器运行 Java 脚本。 “未配置”则允许设备 Web 浏览器运行 Java 脚本。
+- **弹出窗口(仅限 Samsung Knox)** ：选择“阻止”可阻止 Web 浏览器中的弹出窗口。 “未配置”则允许 Web 浏览器中的弹出窗口。
 
 ## <a name="allow-or-block-apps"></a>允许或禁止应用
 
@@ -131,21 +130,21 @@ ms.locfileid: "57566346"
 
 ## <a name="cloud-and-storage"></a>云和存储
 
-- **Google 备份(仅限 Samsung Knox)**：选择“阻止”可阻止设备同步到 Google 备份。 “未配置”则允许使用 Google 备份。
-- **Google 帐户自动同步(仅限 Samsung Knox)**：选择“阻止”可在设备上阻止 Google 帐户自动功能。 “未配置”则允许自动同步 Google 帐户设置。
-- **可移动存储(仅限 Samsung Knox)**：选择“阻止”可阻止设备使用可移动存储。 “未配置”则允许设备使用可移动存储，如 SD 卡。
-- **存储卡加密(仅限 Samsung Knox)**：选择“必需”强制加密存储卡。 “未配置”则允许使用未加密的存储卡。 并非所有设备都支持存储卡加密。 若要进行确认，请咨询设备制造商。
+- **Google 备份(仅限 Samsung Knox)** ：选择“阻止”可阻止设备同步到 Google 备份。 “未配置”则允许使用 Google 备份。
+- **Google 帐户自动同步(仅限 Samsung Knox)** ：选择“阻止”可在设备上阻止 Google 帐户自动功能。 “未配置”则允许自动同步 Google 帐户设置。
+- **可移动存储(仅限 Samsung Knox)** ：选择“阻止”可阻止设备使用可移动存储。 “未配置”则允许设备使用可移动存储，如 SD 卡。
+- **存储卡加密(仅限 Samsung Knox)** ：选择“必需”强制加密存储卡。 “未配置”则允许使用未加密的存储卡。 并非所有设备都支持存储卡加密。 若要进行确认，请咨询设备制造商。
 
 ## <a name="cellular-and-connectivity"></a>手机网络和连接性
 
-- **数据漫游(仅限 Samsung Knox)**：选择“阻止”可阻止通过移动电话网络进行数据漫游。 “未配置”则允许设备在处于移动电话网络时进行数据漫游。
-- **短信/彩信(仅限 Samsung Knox)**：选择“阻止”可阻止在设备上使用短信。 “未配置”则允许在设备上使用短信和彩信消息传送。
-- **语音拨号(仅限 Samsung Knox)**：选择“阻止”可阻止用户在设备上使用语音拨号功能。 “未配置”则允许在设备上使用语音拨号。
-- **语音漫游(仅限 Samsung Knox)**：选择“阻止”可阻止通过移动电话网络进行语音漫游。 “未配置”则允许设备在处于移动电话网络时进行语音漫游。
-- **蓝牙(仅限 Samsung Knox)**：选择“阻止”可阻止在设备上使用蓝牙。 “未配置”则允许在设备上使用蓝牙。
-- **NFC (仅限 Samsung Knox)**：选择“阻止”可阻止近场通信 (NFC) 技术。 “未配置”则允许在支持的设备上使用近场通信的操作。
-- **Wi-Fi (仅限 Samsung Knox)**：选择“阻止”可阻止在设备上使用 Wi-Fi。 “未配置”则允许设备的 Wi-Fi 功能。
-- **Wi-Fi Tethering (仅限 Samsung Knox)**：选择“阻止”可阻止在设备上使用 Wi-Fi Tethering。 “未配置”则允许在设备上使用 Wi-Fi Tethering。
+- **数据漫游(仅限 Samsung Knox)** ：选择“阻止”可阻止通过移动电话网络进行数据漫游。 “未配置”则允许设备在处于移动电话网络时进行数据漫游。
+- **短信/彩信(仅限 Samsung Knox)** ：选择“阻止”可阻止在设备上使用短信。 “未配置”则允许在设备上使用短信和彩信消息传送。
+- **语音拨号(仅限 Samsung Knox)** ：选择“阻止”可阻止用户在设备上使用语音拨号功能。 “未配置”则允许在设备上使用语音拨号。
+- **语音漫游(仅限 Samsung Knox)** ：选择“阻止”可阻止通过移动电话网络进行语音漫游。 “未配置”则允许设备在处于移动电话网络时进行语音漫游。
+- **蓝牙(仅限 Samsung Knox)** ：选择“阻止”可阻止在设备上使用蓝牙。 “未配置”则允许在设备上使用蓝牙。
+- **NFC (仅限 Samsung Knox)** ：选择“阻止”可阻止近场通信 (NFC) 技术。 “未配置”则允许在支持的设备上使用近场通信的操作。
+- **Wi-Fi (仅限 Samsung Knox)** ：选择“阻止”可阻止在设备上使用 Wi-Fi。 “未配置”则允许设备的 Wi-Fi 功能。
+- **Wi-Fi Tethering (仅限 Samsung Knox)** ：选择“阻止”可阻止在设备上使用 Wi-Fi Tethering。 “未配置”则允许在设备上使用 Wi-Fi Tethering。
 
 ## <a name="kiosk"></a>Kiosk
 

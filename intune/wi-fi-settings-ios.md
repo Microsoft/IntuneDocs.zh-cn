@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/18/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91e69fed37f9a6171ef72d3c01e2de9a31bbcaed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9f51f2eafed0d54fb58eff643785451e2f49c853
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566295"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046674"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加 Wi-Fi 设置
 

@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 487115938ad334d1cefb2a6ecfc8d64ac6688a45
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cb54f5e4cede6141c87073a7dfb6570cf85e920b
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565887"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042893"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>在 Intune 中使用适用于 Windows Phone 8.1 设备的自定义设置
 

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/16/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d96bf5a4b0d9a8ce6aa7de0123a8bcc7e6db9692
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1589189147fd034a034791c2090c2a78134d866e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566431"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050588"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中为运行 Android Enterprise 和 Android 展台的设备添加 Wi-Fi 设置
 

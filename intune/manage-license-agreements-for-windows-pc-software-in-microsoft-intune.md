@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798795"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046947"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows PC 软件的许可协议
 

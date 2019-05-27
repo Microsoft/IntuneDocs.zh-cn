@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798887"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050200"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>为运行 Intune 软件客户端的 Windows 电脑添加应用
 
@@ -78,7 +77,7 @@ ms.locfileid: "58798887"
 5. 在“**检测规则**”页上，你可以配置规则，以便检测正在配置的应用是否已在电脑上安装。 或者，可以使用默认检测规则来自动覆盖以前安装的应用的所有版本。 此选项适用于 Windows Installer（仅限 .exe 文件）。
 
    可以配置的规则包括：
-   - **文件存在**。 指定要检测的文件的路径。 可以在电脑上的 **%ProgramFiles%** 下搜索（搜索 **Program Files**\&lt;路径&gt; 和 **Program Files (x86)**\&lt;路径&gt;），或者在 **%SystemDrive%** 下搜索（从电脑的根驱动器搜索，通常为驱动器 C）。
+   - **文件存在**。 指定要检测的文件的路径。 可以在电脑上的 **%ProgramFiles%** 下搜索（搜索 **Program Files**\&lt;路径&gt; 和 **Program Files (x86)** \&lt;路径&gt;），或者在 **%SystemDrive%** 下搜索（从电脑的根驱动器搜索，通常为驱动器 C）。
    - **MSI 产品代码存在**。 选择“**浏览**”以选择想要检测的 Windows Installer (msi) 文件。
    - <strong>注册表项存在</strong>。 指定以 <strong>HKEY_LOCAL_MACHINE\</strong> 开头的注册表项。 将同时搜索 32 位和 64 位路径。 如果在任一位置中存在指定的项，则满足检测规则。
 

@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834715"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196783"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -31,7 +31,9 @@ ms.locfileid: "55834715"
 
 组织通常会要求先托管设备，然后才能从中访问专有数据。 托管设备后，组织可以通过移动设备管理提供程序向该设备推送策略和应用。 若要从设备持续访问工作或学校信息，必须配置设备以匹配策略设置。  
 
-本文介绍适用于 macOS 的 Intune 公司门户应用如何帮助你注册、配置和维护设备，以满足组织需求。
+本文介绍适用于 macOS 的 Intune 公司门户应用如何帮助你注册、配置和维护设备，以满足组织需求。  
+</br>
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>公司门户应用的作用
 

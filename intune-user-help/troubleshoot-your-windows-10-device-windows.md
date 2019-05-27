@@ -19,14 +19,14 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501232"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 设备注册疑难解答
-如果注册了你的设备，但仍无法访问工作或学校电子邮件和文件，请尝试以下故障排除步骤。  
+如果已注册设备，但仍无法访问工作或学校电子邮件和文件，请尝试执行以下故障排除步骤。  
 
 1.  查看接下来的两个屏幕，并找到与你在设备上看到的相似屏幕。 按照与你在设备上看到的屏幕相匹配的步骤操作。
 
@@ -48,13 +48,13 @@ ms.locfileid: "55837571"
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - 如果看不到，如上所示的连接信息或你看到它，但它缺少的一些选项，请点击**Connect**。 然后使用工作或学校凭据登录以连接。  
+   - 如果未看到以上所示的连接信息，或者看到了此类信息但其中缺少部分选项，则点击“连接”。 然后使用工作或学校凭据登录以连接。  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>看到“你的帐户”时执行的故障排除步骤
 
 如果执行了上述步骤，但仍无法访问你的工作或学校电子邮件、文件和其他数据，请返回到“**帐户**”并点击“**工作访问**”。
 
-- 如果你看到你的工作或学校帐户列出，你已连接。  
+- 如果能看到工作单位或学校帐户，则已连接。  
 
 - 如果看不到工作单位或学校帐户，请点击“连接”，然后使用工作单位或学校凭据登录。
 

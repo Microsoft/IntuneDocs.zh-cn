@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a834b1f35bdefd91abfc1ec9ca8b44d4eb593cd
-ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
-ms.translationtype: HT
+ms.openlocfilehash: 51ad3b2db3a45c06c0019b6f57ac4147112807fa
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59533603"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049819"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -83,7 +82,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 若要启用 Intune App SDK，请执行以下步骤：
 
-1. **选项 1（推荐）**：将 `IntuneMAM.framework` 链接到你的项目。 将 `IntuneMAM.framework` 拖到项目目标的“嵌入二进制文件”列表。
+1. **选项 1（推荐）** ：将 `IntuneMAM.framework` 链接到你的项目。 将 `IntuneMAM.framework` 拖到项目目标的“嵌入二进制文件”列表。
 
    > [!NOTE]
    > 如果使用框架，必须在将应用提交到应用商店之前，从通用框架中手动删除模拟器体系结构。 有关详细信息，请参阅[向 App Store 提交应用](#submit-your-app-to-the-app-store)。

@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: def09c1782db5b888257b7283074a997abbfa625
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 207a3f950d6fca2d6fcbe024f24fbf05487f2151
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460778"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040391"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
 我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 本参考指南面向非常熟悉经典门户中的 Intune 且想知道如何使用 Azure 门户中的 Intune 完成工作的用户。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。

@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 02/19/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 47115fcb2662439bff867043c2fb58bc3550dbbb
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799495"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044872"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
@@ -48,7 +47,7 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
     > 可以将同一应用分配到多个组，但应用的预期操作（意向）应不同。 例如，如果在应用分配期间对用户排除了应用，那么应用的解析意向显示为“已排除”。 有关详细信息，请参阅[如何解决不同应用意向之间的冲突](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)。<br><br>
     > 如果所需应用安装失败，用户或用户的支持人员可以同步设备并重试应用安装。
 
-应用安装错误详细信息指出问题所在。 根据这些详细信息，可以确定解决问题的最佳措施。 若要详细了解如何排查应用安装问题，请参阅[用于排查应用安装问题的错误代码](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues)。
+应用安装错误详细信息指出问题所在。 根据这些详细信息，可以确定解决问题的最佳措施。 若要详细了解如何排查应用安装问题，请参阅[应用安装错误](troubleshoot-app-install.md#app-installation-errors)。
 
 > [!Note]  
 > 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格。

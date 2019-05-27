@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7192d7c71d1737a624f2c76e3253cb232dc1f2af
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798966"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047517"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
 
@@ -138,7 +137,7 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 
 ### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>决定是否选择排除的进程设置
 
-“在运行扫描或使用实时保护时要排除的进程”让你能在计算机上运行扫描或使用实时保护时排除特定的进程。 只能排除具有下列扩展名的文件：**.exe**、**.com** 或 **.scr**。
+“在运行扫描或使用实时保护时要排除的进程”让你能在计算机上运行扫描或使用实时保护时排除特定的进程。 只能排除具有下列扩展名的文件： **.exe**、 **.com** 或 **.scr**。
 
 ### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>决定是否选择排除的文件类型设置
 

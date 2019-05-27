@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/02/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
-ms.translationtype: HT
+ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871444"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041158"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>使用 REST 客户端从 Intune 数据仓库 API 获取数据
 

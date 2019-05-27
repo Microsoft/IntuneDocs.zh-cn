@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/18/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 551d77b21e69eca76c4d9804130f253a69ca736b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50269e63f016c1d4f74b006d7748e5c300faac61
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566125"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050231"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>添加 Microsoft Intune 中适用于 macOS 设备的 Wi-Fi 设置
 

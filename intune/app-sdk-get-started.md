@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/24/2019
+ms.date: 04/29/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: 6f2729918a164989714f88564ef0f42f7f319f16
+ms.sourcegitcommit: d21cf21dee15b11b8206bf92cc602b082e9846a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423588"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65709050"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -164,7 +164,7 @@ Intune|iOS|Android|描述|
     
     * 如果使用最终用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Microsoft 365 管理中心网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](https://docs.microsoft.com/en-ca/intune/licenses-assign)。
 
-* **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。
+* **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。 如果应用已集成 Intune SDK，但尚未在 Azure 门户中作为目标应用列出，则可以使用策略将其设置为目标，方法是选择“+ 更多应用”选项并在文本框中提供捆绑包 ID (iOS) 或包名称 (Android)。
 
 * 疑难解答：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
 

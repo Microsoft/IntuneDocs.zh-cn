@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 000f48f062e9e7300337ade04c8cf872d96eab2a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461339"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040219"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>排查 Microsoft Intune 中的软件更新问题
 
