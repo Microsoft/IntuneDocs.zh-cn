@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508949"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942053"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -75,7 +75,9 @@ ms.locfileid: "61508949"
 
   - 设备未分配有任何符合性策略，并且没有用于检查符合性的触发器
   - 自上次更新符合性策略后尚未签入的设备
-  - 未关联到特定用户的设备
+  - 未关联到特定用户的设备，例如：
+    - 无用户关联的通过 Apple 设备注册计划 (DEP) 购买的 iOS 设备
+    - Android 展台或 Android Enterprise 专用设备
   - 使用设备注册管理器 (DEM) 帐户注册的设备
 
 - **不符合：** 设备无法应用一个或多个设备符合性策略设置。 或者，用户未遵守策略。

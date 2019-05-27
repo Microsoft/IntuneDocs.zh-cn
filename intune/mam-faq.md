@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506808"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992905"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -51,6 +51,13 @@ Intune MAM 支持两种配置：
 
 **应用保护策略的示例有哪些？**<br></br>
 请参阅 [Android 应用保护策略设置](app-protection-policy-settings-android.md)和 [iOS 应用保护策略设置](app-protection-policy-settings-ios.md)，获取有关每种应用保护策略设置的详细信息。
+
+**是否可以将 MDM 和 MAM 策略同时应用于不同设备的同一用户？例如，用户能够从启用了 MAM 的计算机访问其工作资源，并开始工作和使用 Intune MDM 托管设备。是否有针对此意见的注意事项？**<br></br>
+如果在不设置设备状态的情况下将 MAM 策略应用于用户，用户将同时在 BYOD 设备和 Intune 托管设备上获得 MAM 策略。 还可以根据托管状态应用 MAM 策略。 因此，在创建应用保护策略时，应在“面向所有应用类型”旁边选择“否”。 然后，执行以下任意操作：
+- 将不太严格的 MAM 策略应用于 Intune 托管设备，并将更严格的 MAM 策略应用于未注册 MDM 的设备。
+- 将 MAM 策略仅应用于未注册的设备。
+
+有关详细信息，请参阅[如何监视应用保护策略](app-protection-policies-monitor.md)。
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>可使用应用保护策略进行管理的应用
 

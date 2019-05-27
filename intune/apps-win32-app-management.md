@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135124"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853953"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 独立版 - Win32 应用管理
 
@@ -153,6 +153,8 @@ ms.locfileid: "65135124"
     > 可以将 Win32 应用配置为在“用户”或“系统”上下文中安装。 “用户”上下文表示仅指定用户。 “系统”上下文表示 Windows 10 设备的所有用户。
     >
     > 最终用户无需登录设备即可安装 Win32 应用。
+    > 
+    > 将应用设置为在用户上下文中安装且设备上的最终用户具有管理员权限时，将在管理员权限下执行 Win32 应用安装和卸载（默认情况）。
 
 4.  完成后，选择“确定”。
 
@@ -243,7 +245,7 @@ ms.locfileid: "65135124"
             Intune 代理检查脚本的结果。 读取脚本写入到标准输出 (STDOUT) 流、标准错误 (STDERR) 流和退出代码的值。 如果脚本以非零值退出，则脚本失败，并且应用程序检测状态为“未安装”。 如果退出代码为零，并且 STDOUT 具有数据，则应用程序检测状态为“已安装”。 
 
             > [!NOTE]
-            > 脚本以 0 值退出时，脚本执行成功。 第二个输出通道表示检测到应用 - STDOUT 数据表明该应用已在客户端上找到。 我们不会从 STDOUT 中查找特定的字符串。
+            > Microsoft 建议将你的脚本编码为 UTF-8。 脚本以 0 值退出时，脚本执行成功。 第二个输出通道表示检测到应用 - STDOUT 数据表明该应用已在客户端上找到。 我们不会从 STDOUT 中查找特定的字符串。
 
         4.  添加应用规则后，请选择“添加” > “确定”。
 

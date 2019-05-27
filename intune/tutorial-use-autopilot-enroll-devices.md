@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511504"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732989"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教程：使用 Autopilot 在 Intune 中注册 Windows 设备
 Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护和应用自定义操作系统映像。 
@@ -90,23 +90,20 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 在创建设备组后，必须创建一个部署配置文件，以便可以配置 Autopilot 设备。
 
 1. 在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册” > “Windows 注册” > “部署配置文件” > “创建配置文件”。
-2. 对于“名称”，输入“Autopilot 配置文件”。 对于“说明”输入“Autopilot 设备的测试配置文件”。
+2. 在“基本信息”页上，对于“名称”，输入“Autopilot 配置文件”。 对于“说明”输入“Autopilot 设备的测试配置文件”。
 3. 将“将所有目标设备转换为 Autopilot”设置为“是”。 此设置可确保列表中的所有设备均注册到 Autopilot 部署服务。 等待 48 小时来处理注册。
-4. 对于“部署模式”，选择“用户驱动”。 包含此配置文件的设备与设备注册用户相关联。 必须具备用户凭据，才能注册设备。
-5. 在“加入 Azure AD 时的身份”框中，选择“Azure AD 已加入”。
-6. 选择“全新体验 (OOBE)”，配置下列选项并将其他选项保留为默认值，然后选择“保存”：
+4. 选择“下一步”。
+5. 在“全新体验(OOBE)”页上，对于“部署模式”，选择“用户驱动”。 包含此配置文件的设备与设备注册用户相关联。 必须具备用户凭据，才能注册设备。
+6. 在“加入 Azure AD 时的身份”框中，选择“Azure AD 已加入”。
+7. 配置以下选项并将其他选项设置为默认值：
     - **最终用户许可协议(EULA)**：**隐藏**
     - **隐私设置**：**显示**
     - **用户帐户类型**：**标准**
-
-6. 选择“创建”，创建配置文件。 Autopilot 部署配置文件现在即可分配给设备。
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>将 Autopilot 部署配置文件分配到设备组
-
-现已创建部署配置文件，可将其分配到设备组。
-1. 在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册” > “Windows 注册” > “部署配置文件”>“选择配置文件”。
-2. 在特定的配置文件边栏选项卡中，选择“分配”。 
-3. 选中“选择组”然后在“选择组”边栏选项卡中，选择“Autopilot 组”然后选中“选择”。
+8. 选择“下一步”。
+9. 在“分配”页上，为“分配给”选择“所选组”。
+10. 依次选择“选择要包括的组”、“Autopilot 组”。
+11. 选择“下一步”。
+12. 在“查看 + 创建”页上，选择“创建”以创建配置文件。
 
 ## <a name="distribute-devices-to-users"></a>将设备分配给用户
 

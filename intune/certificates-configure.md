@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 40d8b3d14411827642661b01929d17e83a5198ad
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508257"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765359"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为设备配置证书配置文件
 
@@ -133,3 +133,9 @@ ms.locfileid: "61508257"
 [分配设备配置文件](device-profile-assign.md)  
 [使用 S/MIME 对电子邮件进行签名和加密](certificates-s-mime-encryption-sign.md)  
 [使用第三方证书颁发机构](certificate-authority-add-scep-overview.md)
+
+## <a name="see-also"></a>另请参阅
+
+[对与 Microsoft Intune 证书配置文件一起使用的 NDES 配置进行故障排除](https://support.microsoft.com/help/4459540)
+
+[在 Microsoft Intune 中对 SCEP 证书配置文件部署进行故障排除](https://support.microsoft.com/help/4457481)

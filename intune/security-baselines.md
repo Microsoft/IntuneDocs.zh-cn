@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中使用安全基线 - Azure | Microsoft Docs
-description: 添加或配置建议的组安全设置，以保护使用 Microsoft Intune 进行移动设备管理的设备上的用户和数据。 启用 bitlocker、配置 Windows Defender 高级威胁防护、控制 Internet Explorer、使用智能屏幕、设置本地安全策略、要求输入密码、阻止 Internet 下载等。
+description: 添加或配置建议的组安全设置，以保护使用 Microsoft Intune 进行移动设备管理的设备上的用户和数据。 启用 BitLocker、配置 Microsoft Defender 高级威胁防护、控制 Internet Explorer、使用智能屏幕、设置本地安全策略、要求输入密码、阻止 Internet 下载等。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 9dd289535ba4276b1bca21044d362172517b07e0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197626"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732514"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>在 Intune 中创建 Windows 10 安全基线
 
@@ -44,9 +44,19 @@ ms.locfileid: "65197626"
 
 分配此配置文件后，可以监视配置文件和基线。 例如，可以查看哪些设备与基线匹配或不匹配。
 
-本文展示了如何使用安全基线来创建、分配和监视配置文件。
+本文可帮助你使用安全基线来创建、分配和监视配置文件。
 
 若要详细了解此功能，最好参考 [Windows 安全基线](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)资源。 若要详细了解 MDM 以及可以在 Windows 设备上执行哪些操作，最好参考[移动设备管理](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) 资源。
+
+## <a name="available-security-baselines"></a>可用的安全基线  
+
+以下安全基线可与 Intune 一起使用。
+- **预览版：2018 年 10 月的 MDM 安全基线**  
+  [查看设置](security-baseline-settings-windows.md)
+
+- **预览版：Windows Defender ATP 基线**  
+  [查看设置](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>必备条件
 要在 Intune 中管理基线，帐户必须具有内置的[策略和配置文件管理员](role-based-access-control.md#built-in-roles)角色。
@@ -60,51 +70,36 @@ Intune 托管设备上的安全基线类似于使用 Configuration Manager 的�
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 在 [Azure 门户](https://portal.azure.com/)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 选择“设备安全性” > “安全基线(预览)”。 此时，系统列出了可用基线。 添加更多基线后，如下图所示：
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)，然后选择“设备安全性” > “安全基线(预览)”。 此时，系统列出了可用基线。 
 
-    ![查看 Intune 中当前可用的安全基线列表](./media/security-baselines/available-baselines.png)
+    ![选择要配置的安全基线](./media/security-baselines/available-baselines.png)
 
-3. 依次选择要使用的基线和“创建配置文件”。
-4. 在“基本信息”中，输入以下属性：
 
-    - **名称**：输入安全基线配置文件的名称。 例如，输入 `pilot Windows 10 MDM baseline - Oct 2018`。
+2. 依次选择要使用的基线和“创建配置文件”。  
+
+3. 在“基本信息”选项卡上，指定以下属性：
+
+    - **名称**：输入安全基线配置文件的名称。 例如，输入 Defender ATP 的标准配置文件
     - **说明**：输入一些文本来描述此基线的用途。 可以在“说明”中视需要输入任意文本。 虽是可选属性，但强烈建议输入说明。
 
-5. 展开“设置”。 在列表中，可以看到此安全基线中的所有设置，以及这些设置的自动设置值。 这些设置及其值都是建议的，可自行更改。
+4. 选择”配置”选项卡以查看此基线中的“设置”的可用组。 选择一个组以将其展开并查看其中包含的各个设置。 这些设置具有安全基线的默认配置。 重新配置默认设置以满足你的业务需求。  
 
-    ![展开“设置”查看此安全基线在 Intune 中的所有设置](./media/security-baselines/sample-list-of-settings.png)
+    ![展开某个组以查看该组的设置](./media/security-baselines/sample-list-of-settings.png)
 
-    展开一些设置可以查看它们的值。 例如，展开“Windows Defender”。 请注意一些设置及其设置值：
+5. 选择“分配”选项卡以向组分配基线。 向现有组分配基线，或在 Intune 控制台中使用标准过程创建新组来完成配置。  
 
-    ![查看部分“Windows Defender”设置在 Intune 中的自动设置值](./media/security-baselines/expand-windows-defender.png)
+   ![分配配置文件](./media/security-baselines/assignments.png)
+  
+6. 准备好部署基线后，请选择“查看 + 创建”选项卡以查看基线的详细信息。 然后，选择“保存配置文件”进行保存并部署配置文件。 
 
-6. 创建配置文件。 
-7. 选择“配置文件”。 此时，配置文件创建完成，并出现在列表中。 不过，它尚未执行任何操作。 下一步是分配配置文件。
+   ![查看基线](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>分配配置文件
+   只要保存，配置文件就会推送到通过 Intune 签入的设备。 所以这可能会立即发生。
 
-创建完成的配置文件可供分配到用户、设备和组。 分配完成后，配置文件及其设置便会应用于选定用户、设备和组。
+   > [!TIP]  
+   > 无需先向组分配配置文件即可将其保存。 可以稍后编辑配置文件以添加组。 
 
-1. 在 Intune 中，依次选择“安全基线”、基线和“配置文件”。
-2. 依次选择配置文件和“分配”。
-
-    ![选择 Intune 中的安全基线配置文件，并单击“分配”来部署配置文件](./media/security-baselines/assignments.png)
-
-3. 在“包括”选项卡中，添加要将此策略应用到的组、用户或设备。
-
-    > [!TIP]
-    > 请注意，还可以排除组。 如果向“所有用户”应用策略，建议排除管理员组。 万一发生什么事情，你和你的管理员不希望无计可施。
-
-4. 单击“保存”以保存更改。
-
-只要保存，配置文件就会推送到通过 Intune 签入的设备。 所以这可能会立即发生。
-
-## <a name="available-security-baselines"></a>可用的安全基线  
-
-以下安全基线可与 Intune 一起使用。
-- **预览版：MDM 安全基线**
-  - 版本：[2018 年 10 月](security-baseline-settings-windows.md)
+7. 创建配置文件后，可以通过转到“设备安全性” > “安全基线”对其进行编辑，选择已配置的基线，然后选择“配置文件”。  选择该配置文件，然后选择“属性”以编辑设置，并选择“分配”以编辑接收此基线的组。 
 
 ## <a name="q--a"></a>问与答
 

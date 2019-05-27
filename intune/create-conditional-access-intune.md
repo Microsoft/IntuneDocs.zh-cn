@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5299ef8c0159592c9754f886fe1c3d90a6637599
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508603"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765369"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>创建基于设备的条件访问策略
 
@@ -97,3 +97,5 @@ ms.locfileid: "61508603"
 
 ## <a name="see-also"></a>另请参阅
 [使用 Intune 且基于应用的条件性访问](app-based-conditional-access-intune.md)
+
+[对 Intune 条件访问进行故障排除](https://support.microsoft.com/help/4456106)

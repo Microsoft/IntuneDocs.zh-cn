@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: 72121aa48e7b5d46e25aac28ad386832b6b4ea72
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527219"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733090"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>监视 BitLocker 和设备加密  
 Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，并帮助你通过设备访问 BitLocker 的重要信息，如 Azure Active Directory (Azure AD) 中所示。  
 
-- [加密报表（公共预览版）](#encryption-report)提供关于设备加密状态和就绪状态的详细信息。 报表的详细信息有助于找出导致无法成功加密所要保护的设备的问题。  
-- 通过 Intune 门户[查看 BitLocker 的详细信息（公共预览版）](#bitlocker-recovery-keys)，比如设备密钥 ID 和恢复密钥。  
+- [加密报表](#encryption-report)提供关于设备加密状态和就绪状态的详细信息。 报表的详细信息有助于找出导致无法成功加密所要保护的设备的问题。  
+- 通过 Intune 门户[查看 BitLocker 的详细信息](#bitlocker-recovery-keys)，比如设备密钥 ID 和恢复密钥。  
 
 ## <a name="encryption-report"></a>加密报表
-可以使用加密报表（公共预览版）查看关于 Windows 10 设备加密状态的详细信息。  
+可以使用加密报表查看关于 Windows 10 设备加密状态的详细信息。  
 
-要查找报表，请登录 [Intune](https://aka.ms/intuneportal)，前往“设备配置”，然后在“监视器”下，选择“加密报表(预览版)”。  
+要查找报表，请登录 [Intune](https://aka.ms/intuneportal)，前往“设备配置”，然后在“监视”下，选择“加密报表”。  
 
 ### <a name="prerequisites"></a>先决条件：
 为了在加密报表中显示，设备必须运行 Windows 1607 版本或更高版本。  
@@ -95,9 +95,9 @@ Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，�
    - 恢复密钥备份所需的网络不可用。  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 恢复密钥
-Intune 公共预览版允许访问 BitLocker 的 Azure AD 边栏选项卡，因此可通过 Intune 门户查看 Windows 10 设备的 BitLocker 密钥 ID 和恢复密钥。  为了能够访问，设备必须将其密钥托管到 Azure AD。 
+Intune 允许访问 BitLocker 的 Azure AD 边栏选项卡，因此可通过 Intune 门户查看 Windows 10 设备的 BitLocker 密钥 ID 和恢复密钥。  为了能够访问，设备必须将其密钥托管到 Azure AD。 
 1. 登录 [Intune](https://aka.ms/intuneportal)，前往“设备”，然后在“管理”下，选择“所有设备”。
-2. 选择列表中的设备，然后在“监视”下，选择“恢复密钥 – 预览”。  
+2. 选择列表中的设备，然后在“监视”下，选择“恢复密钥”。  
   
 如果 Azure AD 中有密钥，将提供以下信息：
 - BitLocker 密钥 ID

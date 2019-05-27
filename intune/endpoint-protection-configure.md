@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 5/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,37 +15,46 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add75e252c8d49025ac01832e5fb12afea9ede67
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+mr.reviewer: karthib
+ms.openlocfilehash: c13c5d71d1ff631d7a3c84cd3f62037569757917
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512944"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975767"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中添加终结点保护设置
 
-终结点保护可用于控制设备上的各种安全功能，包括防火墙、bitlocker、允许和阻止应用、Windows Defender 和加密等。 可在 Microsoft Intune 中使用设备配置文件配置这些设置。
+使用 Intune，可以使用设备配置文件来管理设备上的公共终结点保护安全功能，包括：
+- 防火墙 
+- BitLocker
+- 允许和阻止应用  
+- Windows Defender 和加密
 
 例如，可以创建一个终结点保护配置文件，仅允许 macOS 用户安装来自 Mac App Store 的应用。 或者在 Windows 10 设备上运行应用时启用 Windows SmartScreen。
 
-本文介绍如何创建配置文件。 然后选择设备平台，获取有关可用设置的详细信息。
+在创建配置文件之前，请查看详细介绍 Intune 可以针对每个支持平台管理的终结点保护设置的以下文章： 
+   - [macOS 设置](endpoint-protection-macos.md)
+   - [Windows 10 设置](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>创建包含终结点保护设置的设备配置文件
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)。
 3. 选择“设备配置” > “配置文件” > “创建配置文件”。
 4. 输入终结点保护配置文件的“名称”和“描述”。
 5. 从“平台”下拉列表中，选择要应用自定义设置的设备平台。 目前，可以为设备限制设置选择以下平台之一：
    - **macOS**
    - **Windows 10 及更高版本**
 6. 在“配置文件类型”下拉列表中，选择“Endpoint Protection”。 
-7. 根据所选择的平台，可配置的设置有所不同。 有关每个平台的详细设置，请转到以下主题之一：
+7. 根据所选择的平台，可配置的设置有所不同。 请参阅：
    - [macOS 设置](endpoint-protection-macos.md)
-   - [Windows 10 设置](endpoint-protection-windows-10.md)
-8. 完成后，返回“创建配置文件”页，然后单击“创建”。
+   - [Windows 10 设置](endpoint-protection-windows-10.md)  
 
-配置文件随即创建并显示在“配置文件列表”页中。 要向组分配此配置文件，请参阅[分配设备配置文件](device-profile-assign.md)。
+8. 配置适用的设置后，选择“创建配置文件”页上的“创建”。
 
-## <a name="next-steps"></a>后续步骤
+   配置文件随即创建并显示在“配置文件列表”页中。 要向组分配此配置文件，请参阅[分配设备配置文件](device-profile-assign.md)。
+
+
+## <a name="next-steps"></a>后续步骤  
+
 要向组分配配置文件，请参阅[分配设备配置文件](device-profile-assign.md)。

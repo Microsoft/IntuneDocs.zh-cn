@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135194"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975824"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -45,7 +45,114 @@ ms.locfileid: "65135194"
 
 -->  
 
+
 <!-- ########################## -->
+
+## <a name="week-of-may-13-2019"></a>2019 年 5 月 13 日当周 
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359-idready-wnready--"></a>Intune 策略更新身份验证方法和公司门户应用安装  <!-- 1927359 idready wnready-->
+在已通过 Apple 公司设备注册方法之一经由“设置助理”注册的设备上，Intune 将不再支持由最终用户从应用商店手动安装的公司门户。 仅当在注册过程中使用 Apple 设置助理进行身份验证时，此更改才适用。 此更改也只会影响通过以下方式注册的 iOS 设备：  
+* Apple 配置器
+
+* Apple Business Manager
+
+* Apple School Manager
+
+* Apple 设备注册计划 (DEP)
+
+如果用户从应用商店安装公司门户应用，然后尝试通过该应用注册这些设备，则他们将收到错误。 在注册过程中由 Intune 自动推送公司门户时，这些设备应仅使用公司门户。 将更新 Azure 门户中的 Intune 注册配置文件，以便你可以指定设备的身份验证方式以及是否收到公司门户应用。 如果希望 DEP 设备用户具有公司门户，则需要在注册配置文件中指定你的首选项。 
+
+此外，iOS 公司门户中的“标识设备”屏幕将被删除。 因此，想要启用条件访问或部署公司应用的管理员必须更新 DEP 注册配置文件。 仅当使用设置助理对 DEP 注册进行身份验证时，此要求才适用。 在这种情况下，必须将公司门户推送到设备上。 若要执行此操作，请选择“Intune” > “设备注册” > “Apple 注册” > “注册计划令牌”> 选择令牌 >“配置文件”> 选择配置文件 >“属性”> 将“安装公司门户”设置为 True。
+
+若要在已注册的 DEP 设备上安装公司门户，需要转到“Intune”>“客户端应用”，并将其作为具有应用配置策略的托管应用进行推送。 
+
+#### <a name="configure-how-end-users-update-a-line-of-business-lob-app-using-an-app-protection-policy----3568384---"></a>配置最终用户使用应用保护策略更新业务线 (LOB) 应用的方式 <!-- 3568384 -->
+用户现在可以配置最终用户可获取业务线 (LOB) 应用的更新版本的位置。 最终用户将在“最低应用版本”条件启动对话框中看到此功能，系统将提示最终用户更新到 LOB 应用的最低版本。 必须提供这些更新详细信息作为 LOB 应用保护策略（应用）的一部分。 此功能在 iOS 和 Android 中可用。 在 iOS 上，此功能要求应用与 Intune SDK for iOS v. 10.0.7 或更高版本集成（或使用包装工具包装）。 在 Android 上，此功能需要使用最新的公司门户。 若要配置最终用户更新 LOB 应用的方式，应用需要使用键 `com.microsoft.intune.myappstore` 发送给它的托管应用配置策略。 发送的值将定义最终用户从哪个应用商店中下载应用。 如果应用是通过公司门户部署的，则值必须为 `CompanyPortal`。 对于任何其他应用商店，必须输入完整的 URL。
+
+#### <a name="intune-management-extension-powershell-scripts-----3734186-idready---"></a>Intune 管理扩展 PowerShell 脚本  <!-- 3734186 idready -->
+用户可以在设备上配置使用用户的管理员权限运行的 PowerShell 脚本。 有关详细信息，请参阅[在 Intune 中的 Windows 10 设备上使用 PowerShell 脚本](intune-management-extension.md)和 [Win32 应用管理](apps-win32-app-management.md)。
+
+#### <a name="android-enterprise-app-management----4459905---"></a>Android Enterprise 应用管理 <!-- 4459905 -->
+Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enterprise 相关的应用，以便 IT 管理员可以轻松配置和使用 Android Enterprise 管理。 这四个 Android Enterprise 应用如下所示：
+
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - 用于 Android Enterprise 完全托管方案。
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** - 帮助你使用双因素身份验证登录帐户。
+- **[Intune 公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - 用于应用保护策略 (APP) 和 Android Enterprise 工作配置文件方案。
+- [托管的主屏幕](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - 用于 Android Enterprise 专用/展台方案。
+
+在过去，IT 管理员需要在设置过程中从[托管的 Google Play 商店](https://play.google.com/store/apps)手动查找并批准这些应用。 此更改消除了这些以前的手动步骤，客户可以更轻松快速地使用 Android Enterprise 管理。
+
+当管理员首次将 Intune 租户连接到托管的 Google Play 时，他们将看到已自动添加到其 Intune 应用列表的这四个应用。 有关详细信息，请参阅[如何将 Intune 帐户连接到托管的 Google Play 帐户](connect-intune-android-enterprise.md)。 对于已连接其租户或已使用 Android Enterprise 的租户，管理员无需执行任何操作。 在完成 2019 年 5 月服务推出后的 7 天内，将自动显示这四个应用。
+
+### <a name="device-configuration"></a>设备配置
+
+####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>适用于 Defender ATP 的 Intune 安全任务（公共预览版）     <!-- 3208597 -->
+在公共预览版中，可以使用 Intune 管理 Microsoft Defender 高级威胁防护 (ATP) 的安全任务。 这与 ATP 集成，并增加了基于风险的方法来发现终结点漏洞和配置错误，并对其设置优先级和进行修正，同时缩短了从发现到缓解的时间。
+
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>了解 Windows 10 设备合规性策略中的 TPM 芯片组 <!-- 3617671   idstaged-->
+许多 Windows 10 及更高版本设备都具有受信任的平台模块 (TPM) 芯片组。 此更新包含一个新符合性设置，它将检查设备上的 TPM 芯片版本。 
+
+[Windows 10 及更高版本的符合性策略设置](compliance-policy-create-windows.md#device-security)介绍了此设置。
+
+适用于：Windows 10 及更高版本
+
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>防止最终用户修改其个人热点，并禁止 Siri 服务器登录 iOS 设备 <!-- 4097904   --> 
+为 iOS 设备创建设备限制配置文件（在“设备配置” > “配置文件” > “创建配置文件” >  针对平台选择“iOS”> 针对配置文件类型选择“设备限制”）。 此更新包括可配置的新设置：
+
+- **内置应用**：Siri 命令的服务器端日志记录
+- **无线**：个人热点的用户修改（仅限监管模式）
+
+若要查看这些设置，请转到[适用于 iOS 的内置应用设置](device-restrictions-ios.md#built-in-apps)和[适用于 iOS 的无线设置](device-restrictions-ios.md#wireless)。
+
+适用于：iOS 12.2 及更新版本
+
+#### <a name="new-classroom-app-device-restriction-settings-for-macos-devices----4097905-----"></a>macOS 设备的新 Classroom 应用设备限制设置 <!-- 4097905   --> 
+可以为 macOS 设备创建设备配置文件（依次选择“设备配置” > “配置文件” > “创建配置文件” >  针对平台选择“macOS”> 针对配置文件类型选择“设备限制”）。 此更新包含新 Classroom 应用设置，用于阻止屏幕截图的选项以及用于禁用 iCloud 照片库的选项。
+
+要查看最新设置，请转到[使用 Intune 允许或限制功能的 macOS 设备设置](device-restrictions-macos.md)。
+
+适用范围：macOS
+
+#### <a name="the-ios-password-to-access-app-store-setting-is-renamed---4557891----"></a>已重命名用于访问应用商店设置的 iOS 密码<!-- 4557891  -->
+“用于访问应用商店的密码”设置已重命名为“要求所有购买都输入 iTunes Store 密码”（“设备配置” > “配置文件” > “创建配置文件” > “iOS”(针对平台) > 配置文件类型的“设备限制”>“App Store、文档查看和游戏”）。
+
+若要查看可用设置，请转到 [App Store、文档查看和游戏 iOS 设置](device-restrictions-ios.md#app-store-doc-viewing-gaming)。
+
+适用于：iOS
+
+####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender 高级威胁防护基线（预览版）  <!--  3754134 -->
+已添加用于 [Microsoft Defender 高级威胁防护](security-baseline-settings-defender-atp.md)设置的安全基线（预览版）。  
+
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="windows-enrollment-status-page-esp-is-now-generally-available----3605348---"></a>Windows 注册状态页 (ESP) 现已正式发布 <!-- 3605348 -->
+注册状态页现在没有预览版。 有关详细信息，请参阅[设置注册状态页](windows-enrollment-status.md)。
+
+
+#### <a name="intune-user-interface-update---autopilot-enrollment-profile-creation-----4593669---"></a>Intune 用户界面更新 - Autopilot 注册配置文件创建  <!-- 4593669 -->
+用于创建 Autopilot 注册配置文件的用户界面已更新为与 Azure 用户界面样式保持一致。 有关详细信息，请参阅[创建 Autopilot 注册配置文件](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile)。 接下来，其他 Intune 方案将更新为此新 UI 样式。
+
+#### <a name="enable-autopilot-reset-for-all-windows-devices----4225665---"></a>为所有 Windows 设备启用 Autopilot 重置 <!-- 4225665 -->
+Autopilot 重置现在适用于所有 Windows 设备，甚至包括那些未配置为使用注册状态页的设备。 如果在初始设备注册过程中未为设备配置注册状态页，则设备将在登录后直接转到桌面。 可能最多需要 8 小时才能同步并在 Intune 中显示符合。 有关详细信息，请参阅[使用远程 Windows Autopilot 重置功能重置设备](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote)。
+
+#### <a name="exact-imei-format-not-required-when-searching-all-devices---30407680---"></a>搜索所有设备时不需要确切的 IMEI 格式 <!--30407680 -->
+搜索“所有设备”时，无需在 IMEI 号码中包含空格。
+
+#### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>从 Apple 门户删除设备时，Intune 门户将反映此操作 <!--2489996 -->
+如果从 Apple 的设备注册计划或 Apple Business Manager 门户删除设备，下次同步时将自动从 Intune 删除该设备。
+
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="the-encryption-report-is-out-of-public-preview------4587546--------"></a>加密报表没有公共预览版   <!-- 4587546      -->
+[BitLocker 和设备加密的报表](encryption-monitor.md)现已正式发布，并且不再是公共预览版的一部分。 
+
+<!-- ########################## -->
+
+#### <a name="outlook-signature-and-biometric-settings-for--ios-and-android-devices----4050557---"></a>适用于 iOS 和 Android 设备的 Outlook 签名和生物识别设置 <!-- 4050557 -->
+现在可以指定是否在 iOS 和 Android 设备上的 Outlook 中启用了默认签名。 此外，还可以选择允许用户更改 iOS 上的 Outlook 中的生物识别设置。
 
 ## <a name="week-of-may-6-2019"></a>2019 年 5 月 6 日当周 
 
@@ -56,7 +163,7 @@ ms.locfileid: "65135194"
 F5 发布了针对 BIG-IP 13 的更新，在 Intune 中实现了针对 iOS 上的 F5 Access 的 NAC 功能支持。 使用此功能需要：
 
 - 将 BIG-IP 更新为 13.1.1.5 版。 不支持 BIG-IP 14。
-- 将 BIG-IP 与 Intune 相集成以配置 NAC。 [概述：使用终结点管理系统配置 APM 以进行设备状态检查](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)中列出了相关步骤。
+- 将 BIG-IP 与 Intune 相集成以配置 NAC。 [概述：使用终结点管理系统配置 APM 以进行设备状态检查](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)中列出了相关步骤。
 - 在 Intune 中的 VPN 配置文件中选择“启用网络访问控制(NAC)”设置。
 
 若要查看可用设置，请转至[在 iOS 设备上配置 VPN](vpn-settings-ios.md)。
@@ -111,7 +218,7 @@ Android 设备上的 Intune 应用保护策略 (APP) 现在使用符合 FIPS 140
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android Enterprise 工作配置文件设备的其他托管 Google Play 应用报告 <!-- 4105925  -->
 对于部署到 Android Enterprise 工作配置文件设备的托管 Google Play 应用，可以查看设备上安装的应用的特定版本号。 这仅适用于所需的应用。 对于可用的应用，相同的功能将在未来版本中启用。 
 
-#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>iOS 第三方键盘 <!-- 4111843 idready eeready -->
+#### <a name="ios-third-party-keyboards----4111843-----"></a>iOS 第三方键盘 <!-- 4111843   -->
 由于 iOS 平台更改，不再支持适用于针对 iOS 的“第三方键盘”设置的 Intune 应用保护策略 (APP) 的支持。 你将无法在 Intune 管理控制台中配置此设置，并且此设置将不会在 Intune App SDK 中的客户端上强制执行。
 
 ### <a name="device-configuration"></a>设备配置
@@ -1131,7 +1238,7 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 现在可以[创建](windows-enrollment-status.md)多个注册状态页面配置文件并将其分配给 Azure AD 组。
 
 #### <a name="migration-from-device-enrollment-program-to-apple-business-manager-in-intune---2748613--"></a>在 Intune 中从设备注册计划迁移到 Apple Business Manager <!--2748613-->
-Apple Business Manager (ABM) 在 Intune 中工作，可以将你的帐户从设备注册计划 (DEP) 升级到 ABM。 Intune 中的过程是相同的。 若要将你的 Apple 帐户从 DEP 升级到 ABM，请转到 [ https://support.apple.com/en-us/HT208817]( https://support.apple.com/en-us/HT208817)。
+Apple Business Manager (ABM) 在 Intune 中工作，可以将你的帐户从设备注册计划 (DEP) 升级到 ABM。 Intune 中的过程是相同的。 若要将你的 Apple 帐户从 DEP 升级到 ABM，请转到 [ https://support.apple.com/HT208817]( https://support.apple.com/HT208817)。
 
 ### <a name="alert-and-enrollment-status-tabs-on-the-device-enrollment-overview-page---2748656--"></a>“设备注册概述”页上的“警报”和“注册状态”选项卡 <!--2748656-->
 警报和注册失败现在显示在“设备注册概述”页的单独选项卡上。

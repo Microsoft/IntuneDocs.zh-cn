@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 96a0da69cdb77ae36ce2456186593f5c334c870c
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510003"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765400"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -567,4 +567,6 @@ ms.locfileid: "61510003"
 
 - [使用 PKCS 证书](certficates-pfx-configure.md)，或[从 Symantec PKI 管理器 Web 服务颁发 PKCS 证书](certificates-symantec-configure.md)
 - [添加第三方 CA 以通过 Intune 使用 SCEP](certificate-authority-add-scep-overview.md)
-- 有关其他帮助，请使用[在 Microsoft Intune 中对 SCEP 证书配置文件部署进行故障排除](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune)指南。
+- 有关其他帮助，请使用以下指南：
+  - [在 Microsoft Intune 中对 SCEP 证书配置文件部署进行故障排除](https://support.microsoft.com/help/4457481)
+  - [对与 Microsoft Intune 证书配置文件一起使用的 NDES 配置进行故障排除](https://support.microsoft.com/help/4459540)

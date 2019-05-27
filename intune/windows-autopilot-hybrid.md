@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
+ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619449"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65816294"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置加入混合 Azure Active Directory (Azure AD) 的设备。 为此，请执行本文中的步骤。
@@ -119,6 +119,9 @@ ms.locfileid: "65619449"
 > [!NOTE]
 > 登录到连接器之后，可能需要几分钟才能显示在 [Intune](https://aka.ms/intuneportal) 中。 它只有在能够成功与 Intune 服务通信时才会显示。
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>关闭 IE 增强的安全配置
+默认情况下，Windows Server 已打开 Internet Explorer 增强的安全配置。 如果无法登录到用于 Active Directory 的 Intune 连接器，则为管理员关闭 IE 增强的安全配置。 [如何关闭 Internet Explorer 增强的安全配置](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### <a name="configure-web-proxy-settings"></a>配置 Web 代理设置
 
 如果网络环境中有 Web 代理，请参阅[使用现有的本地代理服务器](autopilot-hybrid-connector-proxy.md)，确保适用于 Active Directory 的 Intune 连接器正常工作。
@@ -194,7 +197,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>（可选）打开注册状态页
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “注册状态页(预览)”。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “注册状态页”。
 1. 在“注册状态页”窗格中，选择“默认” > “设置”。
 1. 在“显示应用和配置文件安装进度”中，选择“确定”。
 1. 根据需要配置其他选项。
