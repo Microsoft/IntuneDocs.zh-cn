@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
-ms.translationtype: HT
+ms.openlocfilehash: eb7ff33384b86267e007e986737eeea6b8d3203e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135152"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040123"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备配置 VPN 设置
 
@@ -36,7 +35,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 - **SonicWall Mobile Connect**
 - **F5 Access 旧版**：适用于 F5 Access 应用版本 2.1 及较早版本。
 - **F5 Access**：适用于 F5 Access 应用版本 3.0 及更高版本。
-- **Palo Alto 网络全局保护(旧版)**：适用于 Palo Alto 网络全局保护应用版本 4.1 及较早版本。
+- **Palo Alto 网络全局保护(旧版)** ：适用于 Palo Alto 网络全局保护应用版本 4.1 及较早版本。
 - **Palo Alto 网络全局保护**：适用于 Palo Alto 网络全局保护应用版本 5.0 及更高版本。
 - **Pulse Secure**
 - **Cisco (IPSec)**
@@ -55,7 +54,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 - **连接名称**：最终用户在浏览其设备的可用 VPN 连接列表时将看到此名称。
 - **自定义域名**（仅限 Zscaler）：使用用户所属的域预填充 Zscaler 应用的登录字段。 例如，如果用户名为 `Joe@contoso.net`，则应用打开时，`contoso.net` 域将静态显示在字段中。 如果未键入域名，则使用 Azure Active Directory (AD) 中的 UPN 的域部分。
 - **IP 地址或 FQDN**：设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 `192.168.1.1` 或 `vpn.contoso.com`。
-- **组织的云名称（仅限 Zscaler）**：键入在其中预配组织的云的名称。 用于登录 Zscaler 的 URL 包含此名称。  
+- **组织的云名称（仅限 Zscaler）** ：键入在其中预配组织的云的名称。 用于登录 Zscaler 的 URL 包含此名称。  
 - **身份验证方法**：选择设备向 VPN 服务器进行身份验证的方法。 
   - “证书”：在“身份验证证书”下，选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 [配置证书](certificates-configure.md)提供了有关证书配置文件的一些指导。
   - **用户名和密码**：最终用户必须输入用户名和密码才能登录 VPN 服务器。  
@@ -70,7 +69,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 - **VPN 标识符**（自定义 VPN、Zscaler 和 Citrix）：所用 VPN 应用的标识符，由 VPN 提供商提供。
   - **输入组织的自定义 VPN 属性的键/值对**：添加或导入用于自定义 VPN 连接的“键”和“值”。 请记住，这些值通常由 VPN 提供商提供。
 
-- **启用网络访问控制 (NAC)**（Citrix SSO、F5 Access）：选择“我同意”后，设备 ID 将包含在 VPN 配置文件中。 此 ID 可用于对 VPN 进行身份验证以允许或阻止网络访问。
+- **启用网络访问控制 (NAC)** （Citrix SSO、F5 Access）：选择“我同意”后，设备 ID 将包含在 VPN 配置文件中。 此 ID 可用于对 VPN 进行身份验证以允许或阻止网络访问。
 
   使用 F5 Access 时，请务必：
 
