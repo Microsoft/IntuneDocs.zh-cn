@@ -8,19 +8,18 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 07/25/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 282fb642e147353f50e730884037815ef2dc16aa
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 2e803eb3d47d44c8c8f3cd1b699b5ca220aeb91f
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508459"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049113"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>将 Better Mobile 与 Intune 集成
 

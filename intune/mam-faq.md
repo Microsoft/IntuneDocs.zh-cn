@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992905"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041651"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -220,6 +219,6 @@ Intune 应用保护策略允许将应用访问权限控制在仅限 Intune 许�
 - [Microsoft Intune 中的 Android 移动应用管理策略设置](app-protection-policy-settings-android.md)
 - [iOS 移动应用管理策略设置](app-protection-policy-settings-ios.md)
 - [应用保护策略策略刷新](app-protection-policy-delivery.md)
-- [验证应用保护策略](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
+- [验证应用保护策略](app-protection-policy-delivery.md)
 - [为托管应用添加应用配置策略（无需设备注册）](app-configuration-policies-managed-app.md)
 - [如何获取对 Microsoft Intune 的支持](get-support.md)

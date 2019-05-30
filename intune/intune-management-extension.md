@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b7ea047daca5dad327b431986840a59074614d1
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2c590f81b846fe3671d5ccddede28a4a4bd799ba
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732637"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264162"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 中的 Windows 10 设备上使用 PowerShell 脚本
 
@@ -42,26 +41,42 @@ Intune 管理扩展对 Windows 10 MDM 内置功能进行了补充。 可创建 P
 
 ## <a name="prerequisites"></a>必备条件
 
-Intune 管理扩展具有以下先决条件：
+Intune 管理扩展具有以下先决条件。 满足这些条件后，在向用户或设备分配 PowerShell 脚本或 Win32 应用时，将自动安装 Intune 管理扩展。
 
-- 必须将设备加入或注册到 Azure AD，且 Azure AD 和 Intune 配置为[自动注册](quickstart-setup-auto-enrollment.md)。 Intune 管理扩展支持已加入 Azure AD、混合 Azure AD 域和已注册共同管理的 Windows 设备。
-- 设备必须运行 Windows 10 版本 1607 或更高版本。
-- 将 PowerShell 脚本或 Win32 应用部署到用户或设备安全组后，将安装 Intune 管理扩展代理。
+- 运行 Windows 10 版本 1607 或更高版本的设备。 如果设备是通过[批量自动注册](windows-bulk-enroll.md)进行注册的，设备必须运行 Windows 10 版本 1703 或更高版本。 Windows 10 上的 S 模式不支持 Intune 管理扩展，因为该模式禁止运行非存储应用。 
+  
+- 加入 Azure Active Directory (AD) 的设备，其中包括：
+  
+  - 已联接混合 Azure AD 的设备：同时加入 Azure Active Directory (AD) 和本地 Active Directory (AD) 的设备。 相关指南请参阅[规划混合 Azure Active Directory 联接实现](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)。
+
+- 在 Intune 中注册的设备，其中包括：
+
+  - 在组策略 (GPO) 中注册的设备。 相关指南请参阅[通过组策略自动注册 Windows 10 设备](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)。
+  
+  - 在 Intune 中手动注册的设备，即在下述情况下注册的设备：
+  
+    - 用户使用本地用户帐户登录设备，然后将设备手动加入 Azure AD（且 Azure AD 中已启用到 Intune 的自动注册）。
+    
+    或者
+    
+    - 用户使用其 Azure AD 帐户登录设备，然后在 Intune 中进行注册。
+
+  - 使用 Configuration Manager 和 Intune 的共同托管设备。 相关指南请参阅[什么是共同管理](https://docs.microsoft.com/sccm/comanage/overview)。
 
 ## <a name="create-a-script-policy"></a>创建脚本策略 
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 选择“设备配置” > “PowerShell 脚本” > “添加”。
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”    。
+2. 选择“设备配置” > “PowerShell 脚本” > “添加”    。
 3. 输入以下属性：
     - **名称**：输入 PowerShell 脚本的名称。 
     - **说明**：输入 PowerShell 脚本的说明。 此设置是可选的，但建议进行。 
     - **脚本位置**：浏览 PowerShell 脚本。 脚本必须小于 200 KB (ASCII)。
-4. 选择“配置”，并输入以下属性：
-    - **使用登录凭据运行此脚本**：选择“是”，可以使用设备上的用户凭据运行脚本。 选择“否”（默认值），在系统上下文中运行该脚本。 许多管理员选择“是”。 如果脚本必须在系统上下文中运行，请选择“否”。
-    - **强制执行脚本签名检查**：如果脚本必须由受信任的发布者签名，请选择“是”。 如果不需要对脚本进行签名，请选择“否”（默认）。 
-    - **在 64 位 PowerShell 主机中运行脚本**：选择“是”，可以在 64 位客户端体系结构上的 64 位 PowerShell (PS) 主机中运行脚本。 选择“否”（默认），在 32 位 PowerShell 主机中运行脚本。
+4. 选择“配置”，并输入以下属性  ：
+    - **使用登录凭据运行此脚本**：选择“是”，可以使用设备上的用户凭据运行脚本  。 选择“否”（默认值），在系统上下文中运行该脚本  。 许多管理员选择“是”  。 如果脚本必须在系统上下文中运行，请选择“否”  。
+    - **强制执行脚本签名检查**：如果脚本必须由受信任的发布者签名，请选择“是”  。 如果不需要对脚本进行签名，请选择“否”（默认）  。 
+    - **在 64 位 PowerShell 主机中运行脚本**：选择“是”，可以在 64 位客户端体系结构上的 64 位 PowerShell (PS) 主机中运行脚本  。 选择“否”（默认），在 32 位 PowerShell 主机中运行脚本  。
 
-      设置为“是”或“否”时，请对新策略行为和现有策略行为使用下表：
+      设置为“是”或“否”时，请对新策略行为和现有策略行为使用下表   ：
 
       | 在 64 位 PS 主机中运行脚本 | 客户端体系结构 | 新的 PS 脚本 | 现有的策略 PS 脚本 |
       | --- | --- | --- | --- | 
@@ -69,24 +84,23 @@ Intune 管理扩展具有以下先决条件：
       | 是 | 64 位 | 在适用于 64 位体系结构的 64 位 PS 主机中运行脚本。 在 32 位上运行时，脚本在 32 位 PS 主机中运行。 | 在 32 位 PS 主机中运行脚本。 如果此设置更改为 64 位，则脚本将在 64 位 PS 主机中打开（它不会运行），并报告结果。 在 32 位上运行时，脚本在 32 位 PS 主机中运行。 |
 
     ![在 Microsoft Intune 中添加和使用 PowerShell 脚本](./media/mgmt-extension-add-script.png)
-5. 选择“确定” > “创建”保存脚本。
+5. 选择“确定” > “创建”保存脚本   。
 
 > [!NOTE]
 > 将 PowerShell 脚本设置为用户上下文且设备上的最终用户具有管理员权限时，将在管理员权限下运行该脚本（默认情况）。
 
 ## <a name="assign-the-policy"></a>分配策略
 
-1. 在“PowerShell 脚本”中，选择要分配的脚本，然后选择“管理” > “分配”。
+1. 在“PowerShell 脚本”中，选择要分配的脚本，然后选择“管理” > “分配”    。
 
     ![将 PowerShell 脚本分配或部署到 Microsoft Intune 中的设备组](./media/mgmt-extension-assignments.png)
 
-2. 选择“选择组”，列出可用的 Azure AD 组。 
-3. 选择一个或多个组，其中的用户的设备会接收该脚本。 “选择”分配策略到所选组。
+2. 选择“选择组”，列出可用的 Azure AD 组  。 
+3. 选择一个或多个组，其中的用户的设备会接收该脚本。 “选择”分配策略到所选组  。
 
 > [!NOTE]
 > - 最终用户无需登录设备即可执行 PowerShell 脚本。
-> - Intune 中的 PowerShell 脚本可应用于 Azure AD 设备安全组。
-> - Intune 中的 PowerShell 脚本可应用于 Azure AD 用户安全组。
+> - Intune 中的 PowerShell 脚本可定向于 Azure AD 设备安全组或 Azure AD 用户安全组。
 
 对于任何新脚本或更改，Intune 管理扩展客户端都会每隔一小时检查一次，并在每次重启后使用 Intune 检查。 将策略分配给 Azure AD 组后，PowerShell 脚本将运行，还将报告运行结果。 脚本执行后，除非脚本或策略发生更改，否则不会再次执行。
 
@@ -94,7 +108,7 @@ Intune 管理扩展具有以下先决条件：
 
 可在 Azure 门户中监视用户和设备的 PowerShell 脚本运行状态。
 
-在“PowerShell 脚本”中，选择要监视的脚本并选择“监视”，然后选择以下报表之一：
+在“PowerShell 脚本”中，选择要监视的脚本并选择“监视”，然后选择以下报表之一   ：
 
 - **设备状态**
 - **用户状态**
@@ -107,45 +121,61 @@ Intune 管理扩展具有以下先决条件：
 
 ## <a name="delete-a-script"></a>删除脚本
 
-在“PowerShell 脚本”中，右键单击该脚本，然后选择“删除”。
+在“PowerShell 脚本”中，右键单击该脚本，然后选择“删除”   。
 
 ## <a name="common-issues-and-resolutions"></a>常见问题和解决方法
-
-PowerShell 脚本不会在每次登录时运行。 它们仅在重新启动后运行，或在重新启动“Microsoft Intune 管理扩展”服务后运行。 Intune 管理扩展客户端每小时检查一次 Intune 中的脚本或策略发生的任何更改。
 
 #### <a name="issue-intune-management-extension-doesnt-download"></a>问题：未下载 Intune 管理扩展
 
 **可能的解决方法**：
 
-- 确保在 Azure AD 中自动注册设备。 若要确认，在设备上执行以下操作： 
+- 设备未加入 Azure AD。 请确保设备满足本文中的[先决条件](#prerequisites)。 
+- 未向用户或设备所属的组分配任何 PowerShell 脚本或 Win32 应用。
+- 由于未访问 Internet 和未访问 Windows 推送通知服务 (WNS) 等原因，无法向 Intune 服务嵌入设备。
+- 设备处于 S 模式下。 S 模式下运行的设备不支持 Intune 管理扩展。 
 
-  1. 转至“设置” > “帐户” > “访问工作或学校”。
-  2. 选择已加入的帐户 >“信息”。
-  3. 在“高级诊断报告”下，选择“创建报表”。
-  4. 在 Web 浏览器中打开 `MDMDiagReport`，然后转到“已注册的配置源”部分。
-  5. 查找“MDMDeviceWithAAD”属性。 如果此属性不存在，则不会自动注册用户的设备。
+要查看是否会自动注册设备，可执行以下操作：
 
-    [启用 Windows 10 自动注册](windows-enroll.md#enable-windows-10-automatic-enrollment)包括相关步骤。
+  1. 转至“设置”   > “帐户”   > “访问工作或学校”  。
+  2. 选择已加入的帐户 >“信息”  。
+  3. 在“高级诊断报告”  下，选择“创建报表”  。
+  4. 在 Web 浏览器中，打开 `MDMDiagReport`。
+  5. 搜索 MDMDeviceWithAAD 属性  。 如果存在此属性，则设备已自动注册。 如果没有此属性，则未自动注册设备。
+
+[启用 Windows 10 自动注册](windows-enroll.md#enable-windows-10-automatic-enrollment)分步介绍了如何在 Intune 中配置自动注册功能。
 
 #### <a name="issue-powershell-scripts-do-not-run"></a>问题：PowerShell 脚本未运行
 
 **可能的解决方法**：
 
+- PowerShell 脚本不会在每次登录时运行。 它们在下述情况下运行：
+
+  - 在向设备分配脚本时
+  - 如果更改了脚本，请将其上传，再将其分配给用户或设备
+  
+    > [!TIP]
+    > Microsoft Intune 管理扩展是一项在设备上运行的服务，如同服务应用 (services.msc) 中列出中的任何其他服务一样  。 设备重启后，此服务可能也会重启，并检查是否随附 Intune 服务分配了任何 PowerShell 脚本。 如果 Microsoft Intune 管理扩展服务设置为“手动”，则设备重启后可能不会重启此服务  。
+
+- Intune 管理扩展客户端每小时检查一次 Intune 中的脚本或策略是否发生任何更改。
 - 确认 Intune 管理扩展已下载到 `%ProgramFiles(x86)%\Microsoft Intune Management Extension`。
-- 在 Surface Hub 上未运行脚本。
-- 检查 `\ProgramData\Microsoft\IntuneManagementExtension\Logs` 中的日志是否存在任何错误。
+- 未在 Surface Hub 或 Windows 10 的 S 模式下运行的脚本。
+- 检查日志是否存在任何错误。 请参阅本文中的[排查脚本问题](#troubleshoot-scripts)。
 - 对于可能的权限问题，确保将 PowerShell 脚本的属性设置为 `Run this script using the logged on credentials`。 另外，确保已登录的用户具有适当的权限来运行脚本。
-- 若要找出脚本问题，请运行示例脚本。 例如，创建 `C:\Scripts` 目录，并为每个人提供完全控制权限。 运行以下脚本：
 
-  ```powershell
-  write-output "Script worked" | out-file c:\Scripts\output.txt
-  ```
+- 要隔离脚本问题，请执行以下操作：
 
-  如果成功，应创建 output.txt，其中应包括“脚本已运行”文本。
+  - 检查设备上的 PowerShell 执行配置。 相关指南请参阅[PowerShell 执行策略](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) 。
+  - 使用 Intune 管理扩展运行示例脚本。 例如，创建 `C:\Scripts` 目录，并为每个人提供完全控制权限。 运行以下脚本：
 
-- 若要在不使用 Intune 的情况下测试脚本执行，请本地使用 [psexec 工具](https://docs.microsoft.com/sysinternals/downloads/psexec)在系统上下文中运行脚本：
+    ```powershell
+    write-output "Script worked" | out-file c:\Scripts\output.txt
+    ```
 
-  `psexec -i -s`
+    如果成功，应创建 output.txt，其中应包括“脚本已运行”文本。
+
+  - 要在不使用 Intune 的情况下测试脚本执行，请在系统帐户中本地使用 [psexec 工具](https://docs.microsoft.com/sysinternals/downloads/psexec)来运行脚本：
+
+    `psexec -i -s`
 
 ## <a name="next-steps"></a>后续步骤
 
