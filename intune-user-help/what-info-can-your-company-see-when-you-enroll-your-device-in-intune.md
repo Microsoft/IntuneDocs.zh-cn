@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91ea3aab5cd04624bfa036615b8d7710573bcae1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7f47d7e238bc810db9057a4a7c86dbfa523b0e7b
+ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846972"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174209"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>在我注册自己的设备时，我的组织可以看到哪些信息？
 
@@ -43,7 +43,7 @@ ms.locfileid: "55846972"
 - 设备型号（如 Google Pixel）
 - 设备制造商（如 Microsoft）
 - 操作系统和版本，如 iOS 12.0.1
-- 应用名称，例如 Microsoft Word：在个人设备上，组织只能看到你的托管应用清单。 在公司拥有的设备上，组织可以查看所有应用广告资源。
+- 应用清单和应用名称（如 Microsoft Word）。 在个人设备上，组织只能看到托管应用清单。 在公司拥有的设备上，组织可以查看所有应用广告资源。
 - 设备所有者
 - 设备名称
 - 设备序列号
@@ -51,8 +51,8 @@ ms.locfileid: "55846972"
 
 **组织可能会看到的信息：**
 
--  电话号码：对于公司拥有的设备，公司可以看到完整的电话号码。 对于个人拥有的设备，组织只能看到电话号码的最后四位数字。 可以打开相应设备的“设备详细信息”页，确定每个设备的“所有权类型”。
+-  电话号码：对于公司拥有的设备，公司可以看到完整的电话号码  。 对于个人拥有的设备，组织只能看到电话号码的最后四位数字  。 可以打开相应设备的“设备详细信息”  页，确定每个设备的“所有权类型”  。
 - 设备存储空间：如果无法安装所需的应用，组织可以查看设备的存储空间，以确定空间是否不足。  
 -  位置：你的组织永远不会看到你的设备的位置，除非你需要恢复丢失、受监督的 iOS 设备。 访问 [Apple iOS 文档](https://go.microsoft.com/fwlink/?linkid=853816)以详细了解受监督的设备。  
-- 应用清单：如果组织使用 Mobile Threat Defense，则可以查看 iOS 设备中应用的相关详细信息。 了解[移动威胁防御](you-are-prompted-to-install-mtd-ios.md)的详细信息。
+- 应用清单详细信息：如果组织使用 Mobile Threat Defense，则可以查看 iOS 设备中应用的相关详细信息。 了解[移动威胁防御](you-are-prompted-to-install-mtd-ios.md)的详细信息。
 - 网络信息：可能向组织支持人员提供有关 Android 设备网络连接信息。 例如，如果组织要求设备在某个建筑物内使用，则设备将标识所连接的网络。 

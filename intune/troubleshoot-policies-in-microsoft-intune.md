@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460506"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044604"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>在 Intune 中对策略和配置文件进行故障排除
 
@@ -33,13 +32,13 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 ## <a name="use-built-in-troubleshooting"></a>使用内置的故障排除功能
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 选择“故障排除”：
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”    。
+2. 选择“故障排除”  ：
 
     ![在 Intune 中，转到帮助和支持，并选择“故障排除”](./media/help-and-support-troubleshoot.png)
 
-3. 选择“选择用户”> 选择有问题的用户 >“选择”。
-4. 确认“Intune 许可证”和“帐户状态”都显示绿色对勾：
+3. 选择“选择用户”> 选择有问题的用户 >“选择”   。
+4. 确认“Intune 许可证”和“帐户状态”都显示绿色对勾   ：
 
     ![在 Intune 中，选择用户，并确认“帐户状态”和“Intune 许可证”都显示绿色复选标记状态](./media/account-status-intune-license-show-green.png)
 
@@ -48,46 +47,46 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
     - [分配许可证，以便用户可以注册设备](licenses-assign.md)
     - [将用户添加到 Intune](users-add.md)
 
-5. 在“设备”下，找到有问题的设备。 查看不同的列：
+5. 在“设备”下，找到有问题的设备  。 查看不同的列：
 
-    - **托管**：要使设备接收符合性或配置策略，此属性必须显示“MDM”或“EAS/MDM”。
+    - **托管**：要使设备接收符合性或配置策略，此属性必须显示“MDM”或“EAS/MDM”   。
 
-      - 如果“托管”未设置为“MDM”或“EAS/MDM”，则设备未注册。 除非注册设备，否则设备收不到符合性或配置策略。
+      - 如果“托管”未设置为“MDM”或“EAS/MDM”，则设备未注册    。 除非注册设备，否则设备收不到符合性或配置策略。
 
       - 应用保护策略（移动应用管理）不要求注册设备。 有关详细信息，请参阅[创建和分配应用保护策略](app-protection-policies.md)。
 
-    - **Azure AD 联接类型**： 应设置为**工作区**或**AzureAD**。
+    - **Azure AD 加入类型**：应设置为“工作区”或“AzureAD”   。
  
-      - 如果此列为“未注册”，则可能存在注册问题。 通常情况下，取消注册并重新注册设备可消除此状态。
+      - 如果此列为“未注册”，则可能存在注册问题  。 通常情况下，取消注册并重新注册设备可消除此状态。
 
-    - **Intune 合规**： 应**是**。 如果显示“否”，则符合性策略存在问题，或设备未连接到 Intune 服务。 例如，设备可能已关闭，或者可能未连接到网络。 最终，该设备可能在 30 天后变得不符合。
-
-      有关详细信息，请参阅[设备符合性策略入门](device-compliance-get-started.md)。
-
-    - **Azure AD 符合性**： 应**是**。 如果显示“否”，则符合性策略存在问题，或设备未连接到 Intune 服务。 例如，设备可能已关闭，或者可能未连接到网络。 最终，该设备可能在 30 天后变得不符合。
+    - **Intune 符合性**：应为“是”  。 如果显示“否”，则符合性策略存在问题，或设备未连接到 Intune 服务  。 例如，设备可能已关闭，或者可能未连接到网络。 最终，该设备可能在 30 天后变得不符合。
 
       有关详细信息，请参阅[设备符合性策略入门](device-compliance-get-started.md)。
 
-    - **上次签入**： 应为最近的时间和日期。 默认情况下，Intune 设备每隔 8 小时签入一次。
+    - **Azure AD 符合性**：应为“是”  。 如果显示“否”，则符合性策略存在问题，或设备未连接到 Intune 服务  。 例如，设备可能已关闭，或者可能未连接到网络。 最终，该设备可能在 30 天后变得不符合。
 
-      - 如果“上次签入时间”超过 24 小时，则设备可能存在问题。 未签入的设备无法从 Intune 接收策略。
+      有关详细信息，请参阅[设备符合性策略入门](device-compliance-get-started.md)。
+
+    - **上次迁入时间**：应为最近的时间和日期。 默认情况下，Intune 设备每隔 8 小时签入一次。
+
+      - 如果“上次签入时间”超过 24 小时，则设备可能存在问题  。 未签入的设备无法从 Intune 接收策略。
 
       - 强制签入：
-        - 在 Android 设备上，打开公司门户应用 >“设备”> 从列表中选择设备 >“检查设备设置”。
-        - 在 iOS 设备上，打开公司门户应用 >“设备”> 从列表中选择设备 >“检查设置”。 
-        - 在 Windows 设备上，打开“设置” > “帐户” > “访问工作或学校”> 选择帐户或 MDM 注册>“信息” > “同步”。
+        - 在 Android 设备上，打开公司门户应用 >“设备”> 从列表中选择设备 >“检查设备设置”   。
+        - 在 iOS 设备上，打开公司门户应用 >“设备”> 从列表中选择设备 >“检查设置”   。 
+        - 在 Windows 设备上，打开“设置” > “帐户” > “访问工作或学校”> 选择帐户或 MDM 注册>“信息” > “同步”      。
 
     - 选择设备以查看特定于策略的信息。
 
-      “设备符合性”显示分配给设备的符合性策略的状态。
+      “设备符合性”显示分配给设备的符合性策略的状态  。
 
-      “设备配置”显示分配给设备的配置策略的状态。
+      “设备配置”显示分配给设备的配置策略的状态  。
 
-      如果“设备符合性”或“设备配置”下未显示所需策略，则说明未正确定位策略。 打开策略，并将策略分配给此用户或设备。
+      如果“设备符合性”或“设备配置”下未显示所需策略，则说明未正确定位策略   。 打开策略，并将策略分配给此用户或设备。
 
       **策略状态**：
 
-      - **不适用**： 此策略不支持此平台上。 例如，iOS 策略不适用于 Android。 Samsung KNOX 策略不适用于 Windows 设备。
+      - **不适用**：此策略在该平台上不受支持。 例如，iOS 策略不适用于 Android。 Samsung KNOX 策略不适用于 Windows 设备。
       - **冲突**：设备上有现有设置，Intune 无法覆盖该设置。 或者，使用不同的值部署了两个具有相同设置的策略。
       - **挂起**：设备未签入到 Intune，无法获得策略。 或者，设备接收到该策略，但尚未将状态报告给 Intune。
       - **错误**：在[公司资源访问权限问题疑难解答](troubleshoot-company-resource-access-problems.md)处查看错误和可能的解决方案。
@@ -99,10 +98,10 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>不确定是否正确应用了配置文件
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 选择“设备” > “所有设备”> 选择设备 >“设备配置”。 
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”    。
+2. 选择“设备” > “所有设备”> 选择设备 >“设备配置”    。 
 
-    每台设备均列出了其配置文件。 每个配置文件都具有“状态”。 综合考虑所有分配的配置文件（包括硬件以及 OS 限制和要求）时，状态适用。 可能的状态包括：
+    每台设备均列出了其配置文件。 每个配置文件都具有“状态”  。 综合考虑所有分配的配置文件（包括硬件以及 OS 限制和要求）时，状态适用。 可能的状态包括：
 
     - **符合**：设备收到配置文件并向 Intune 报告其符合设置。
 
@@ -110,7 +109,7 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
     - **挂起**：配置文件已发送到设备，但尚未向 Intune 报告状态。 例如，Android 上的加密需要用户启用加密，可能显示为挂起状态。
 
-**很有帮助的链接**:[监视配置设备配置文件](device-profile-monitor.md)
+**有用链接**：[监视配置设备配置文件](device-profile-monitor.md)
 
 > [!NOTE]
 > 当具有不同限制级别的两个策略应用于同一个设备或用户时，会使用限制更严格的策略。
@@ -125,11 +124,11 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 ## <a name="cant-change-security-policies-for-enrolled-devices"></a>无法更改已注册设备的安全策略
 
-Windows Phone 设备不允许使用 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”设置为 8，然后尝试将其减少到 4。 对设备应用更严格的策略。
+Windows Phone 设备不允许使用 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”设置为 8，然后尝试将其减少到 4  。 对设备应用更严格的策略。
 
 如果要将策略更改为安全级别较低的值，可能需要重置安全策略，具体视设备平台而定。
 
-例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”栏。 选择“设置” > “控制面板” > “用户帐户”。 在左侧，选择“重置安全策略”链接，然后选择“重置策略”。
+例如，在 Windows 中，在桌面上从右轻扫打开“超级按钮”  栏。 选择“设置” > “控制面板” > “用户帐户”    。 在左侧，选择“重置安全策略”  链接，然后选择“重置策略”  。
 
 对于其他 MDM 设备（例如 Android、iOS 以及 Windows Phone 8.1），可能需要将其停用并重新注册，这样才能应用限制较少的策略。
 
@@ -153,7 +152,7 @@ Windows Phone 设备不允许使用 MDM 或 EAS 设置安全策略后降低其�
     > [!NOTE]
     > 请勿尝试从“程序和功能”中删除客户端。
 
-3. 在开始菜单上，键入“UAC”，打开“用户帐户控制”设置。
+3. 在开始菜单上，键入“UAC”，打开“用户帐户控制”设置  。
 
 4. 将通知滑块移动到默认设置。
 

@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 206bc3276f3c175fe61852f235c722b835ad60b4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 61d8f5f66d424c434edf119ad7fe221c35ee35ae
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564850"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042217"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>使用 Intune 在 Windows 10 设备上配置“参加测验”应用
 
@@ -38,7 +37,7 @@ ms.locfileid: "57564850"
 
 ## <a name="take-a-test-settings"></a>“参加测验”设置
 
-- **帐户类型**： 选择如何用户登录到测试。 选项包括：
+- **帐户类型**：选择用户登录测验的方式。 选项包括：
   - Azure AD 帐户
   - 域帐户
   - 本地帐户
@@ -48,8 +47,8 @@ ms.locfileid: "57564850"
   - `user@contoso.com`
   - `computerName\username`
 - **评估 URL**：输入你想让用户执行测试的 URL。 若要详细了解如何获取 URL，请参阅[“参加测验”文档](https://docs.microsoft.com/education/windows/take-tests-in-windows-10)。
-- **屏幕监视**：选择“允许”可在用户参加测验时监视屏幕活动。 如果选择“未配置”，便无法在测验期间监视屏幕。
-- **测试建议**：选择“允许”可向测验者显示文本建议。 如果选择“未配置”，便无法向正在参加测验的用户显示文本建议。
+- **屏幕监视**：选择“允许”可在用户参加测验时监视屏幕活动  。 如果选择“未配置”  ，便无法在测验期间监视屏幕。
+- **测试建议**：选择“允许”可向测验者显示文本建议  。 如果选择“未配置”  ，便无法向正在参加测验的用户显示文本建议。
 
 ## <a name="next-steps"></a>后续步骤
 

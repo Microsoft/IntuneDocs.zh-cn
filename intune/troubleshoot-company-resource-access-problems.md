@@ -1,13 +1,12 @@
 ---
-title: 在 Microsoft Intune-Azure 中的错误和状态代码 |Microsoft Docs
-description: 使用 MDM 托管设备，在 Microsoft Intune 中获取对公司资源，在 iOS 设备上的错误和 OMA 响应错误访问权限时，请参阅错误、 状态代码、 说明和解决方法的列表。
+title: Microsoft Intune 中的错误和状态代码 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune 中的 MDM 受管理设备、访问公司资源、iOS 设备出现错误以及 OMA 响应错误时，请参阅错误、状态代码、说明和解决方案列表。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/20/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 36d21c0b80a2737be39bbee2399f6005c43edc43
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330472"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040435"
 ---
-# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>常见的错误代码和在 Microsoft Intune 中的说明
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Microsoft Intune 中的常见错误代码和说明
 
-本文列出了常见错误、 状态代码、 说明和可能的解决方案访问组织资源时。 使用此信息来帮助解决使用 Microsoft Intune 时的访问权限问题。
+本文列出了访问组织资源时出现的常见错误、状态代码、说明和潜在解决方案。 此信息用于帮助解决使用 Microsoft Intune 时的访问权限问题。
 
-如果需要支持的帮助，请参阅[获取对 Microsoft Intune 支持](get-support.md)。
+如果需要支持帮助，请参阅[获取 Microsoft Intune 支持](get-support.md)。
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM 托管的 Windows 设备的状态代码
 
@@ -387,4 +386,4 @@ ms.locfileid: "58330472"
 
 ## <a name="next-steps"></a>后续步骤
 
-联系到 Microsoft 支持部门[获取对 Microsoft Intune 支持](get-support.md)。
+请联系 Microsoft 支持部门，以[获取 Microsoft Intune 支持](get-support.md)。
