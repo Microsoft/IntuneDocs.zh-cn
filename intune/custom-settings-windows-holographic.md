@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8512f8270e7f219814aa5e3919f72b95de93cbcf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 551294be1d6b90d65104b50413c088e8e15bcd09
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048464"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373595"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>在 Intune 中使用适用于 Windows Holographic for Business 设备的自定义设置
 
@@ -36,16 +36,16 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
 3. 输入以下设置：
 
     - **名称**：输入配置文件的名称，例如 `hololens custom profile`。
     - **说明**：输入配置文件的说明。
-    - **平台**：选择“Windows 10 及更高版本”。
-    - **配置文件类型**：选择“自定义”。
+    - **平台**：选择“Windows 10 及更高版本”  。
+    - **配置文件类型**：选择“自定义”  。
 
-4. 在“自定义 OMA-URI 设置”中，选择“添加”。 输入以下设置：
+4. 在“自定义 OMA-URI 设置”中，选择“添加”   。 输入以下设置：
 
     - **名称**：输入 OMA-URI 设置的唯一名称，以帮助你在设置列表中识别它。
     - **说明**：输入设置的简要说明以及其他重要详细信息。
@@ -60,12 +60,12 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
         - 布尔值
         - Base64（文件）
 
-    - **值**：输入要与已输入的 OMA-URI 关联的数据值。 值取决于所选的数据类型。 例如，如果选择了“日期和时间”，则从日期选取器中选择值。
+    - **值**：输入要与已输入的 OMA-URI 关联的数据值。 值取决于所选的数据类型。 例如，如果选择了“日期和时间”，则从日期选取器中选择值  。
 
-    添加一些设置后，可以选择“导出”。 “导出”将创建逗号分隔值 (.csv) 文件中添加的所有值的列表。
+    添加一些设置后，可以选择“导出”  。 “导出”将创建逗号分隔值 (.csv) 文件中添加的所有值的列表  。
 
-5. 选择“确定”，保存所做更改。 根据需要继续添加更多设置。
-6. 完成后，选择“确定” > “创建”，以创建 Intune 配置文件。 完成后，配置文件将显示在“设备配置 - 配置文件”列表中。
+5. 选择“确定”，保存所做更改  。 根据需要继续添加更多设置。
+6. 完成后，选择“确定” > “创建”，以创建 Intune 配置文件   。 完成后，配置文件将显示在“设备配置 - 配置文件”列表中  。
 
 ## <a name="recommended-custom-settings"></a>推荐的自定义设置
 
@@ -118,7 +118,7 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 > [!div class="mx-tableFixed"]
 > |OMA-URI|数据类型|
 > |---|---|
-> |./Vendor/MSFT/Update/ApprovedUpdates/GUID<br/><br/>**重要说明**<br/>必须代表最终用户阅读和接受更新 EULA。 如果不这样做，将被视为违反法律或合同义务。|更新批准的节点和代表最终用户的 EULA 接受。<br/><br/>有关详细信息，请参阅[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。|
+> |./Vendor/MSFT/Update/ApprovedUpdates/GUID <br/><br/>**重要说明**<br/>必须代表最终用户阅读和接受更新 EULA。 如果不这样做，将被视为违反法律或合同义务。|更新批准的节点和代表最终用户的 EULA 接受。<br/><br/>有关详细信息，请参阅[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。|
 
 ### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 
@@ -167,7 +167,7 @@ Windows Holographic for Business 自定义配置文件使用开放移动联盟�
 
 在 [Windows Holographic 中支持的 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) 中，可以找到 Windows Holographic 支持的所有配置服务提供程序 (CSP) 的完整列表。 并非所有设置都与所有 Windows Holographic 版本兼容。 [Windows Holographic 中支持的 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) 中的表格列出了每个 CSP 受支持的版本。
 
-此外，Intune 并不支持 [Windows Holographic 中支持的 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) 中列出的所有设置。 若要查明 Intune 是否支持所需的设置，请打开针对该设置的文章。 每个设置页面都将显示其支持的操作。 若要使用 Intune，设置必须支持“添加”或“替换”操作。
+此外，Intune 并不支持 [Windows Holographic 中支持的 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) 中列出的所有设置。 若要查明 Intune 是否支持所需的设置，请打开针对该设置的文章。 每个设置页面都将显示其支持的操作。 若要使用 Intune，设置必须支持“添加”  或“替换”  操作。
 
 ## <a name="next-steps"></a>后续步骤
 

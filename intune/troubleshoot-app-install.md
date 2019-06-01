@@ -16,63 +16,62 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47115fcb2662439bff867043c2fb58bc3550dbbb
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fe7ffa6ff024c719fc24209947b87b07ea2b6791
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044872"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412693"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
-在 Microsoft Intune MDM 托管的设备上，有时应用安装可能会失败。 当这些应用安装失败时，可能难以了解失败原因或解决此问题。 Microsoft Intune 提供应用安装失败详细信息，以便支持人员和 Intune 管理员能够查看应用信息，从而根据请求为用户提供帮助。 Intune 疑难解答窗格提供失败详细信息，包括用户设备上托管应用的详细信息。 在“托管应用”窗格中，可以在各个设备下详细了解应用的端到端生命周期。 可查看安装问题，如应用的创建时间、修改时间、定目标时间以及传递给设备的时间。 
+在 Microsoft Intune MDM 托管的设备上，有时应用安装可能会失败。 当这些应用安装失败时，可能难以了解失败原因或解决此问题。 Microsoft Intune 提供应用安装失败详细信息，以便支持人员和 Intune 管理员能够查看应用信息，从而根据请求为用户提供帮助。 Intune 疑难解答窗格提供失败详细信息，包括用户设备上托管应用的详细信息。 在“托管应用”  窗格中，可以在各个设备下详细了解应用的端到端生命周期。 可查看安装问题，如应用的创建时间、修改时间、定目标时间以及传递给设备的时间。 
 
 ## <a name="app-troubleshooting-details"></a>应用疑难解答详细信息
 
 Intune 根据特定用户设备上安装的应用，提供应用疑难解答详细信息。
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“疑难解答”。
-4. 单击“选择用户”，选择要对其排查问题的用户。 此时，“选择用户”窗格显示。
-5. 通过键入名称或电子邮件地址选择用户。 单击窗格底部的“选择”。 此用户的疑难解答信息显示在“疑难解答”窗格中。 
-6. 在“设备”列表中，选择要对其排查问题的设备。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 在“Intune”窗格中，选择“疑难解答”   。
+4. 单击“选择用户”  ，选择要对其排查问题的用户。 此时，“选择用户”  窗格显示。
+5. 通过键入名称或电子邮件地址选择用户。 单击窗格底部的“选择”  。 此用户的疑难解答信息显示在“疑难解答”  窗格中。 
+6. 在“设备”  列表中，选择要对其排查问题的设备。
     ![Intune 疑难解答窗格。](media/troubleshoot-app-install-01.png)
-7. 在选定设备窗格中，选择“托管应用”。 此时，托管应用列表显示。
+7. 在选定设备窗格中，选择“托管应用”  。 此时，托管应用列表显示。
     ![Intune 托管的特定设备的详细信息。](media/troubleshoot-app-install-02.png)
-8. 在列表中，选择“安装状态”为“失败”的应用。
+8. 在列表中，选择“安装状态”  为“失败”的应用。
     ![显示安装失败详细信息的选定应用。](media/troubleshoot-app-install-03.png)
 
     > [!Note]  
-    > 可以将同一应用分配到多个组，但应用的预期操作（意向）应不同。 例如，如果在应用分配期间对用户排除了应用，那么应用的解析意向显示为“已排除”。 有关详细信息，请参阅[如何解决不同应用意向之间的冲突](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)。<br><br>
+    > 可以将同一应用分配到多个组，但应用的预期操作（意向）应不同。 例如，如果在应用分配期间对用户排除了应用，那么应用的解析意向显示为“已排除”  。 有关详细信息，请参阅[如何解决不同应用意向之间的冲突](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)。<br><br>
     > 如果所需应用安装失败，用户或用户的支持人员可以同步设备并重试应用安装。
 
 应用安装错误详细信息指出问题所在。 根据这些详细信息，可以确定解决问题的最佳措施。 若要详细了解如何排查应用安装问题，请参阅[应用安装错误](troubleshoot-app-install.md#app-installation-errors)。
 
 > [!Note]  
-> 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格。
+> 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格  。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 应用安装疑难解答
 
-选择使用 Intune 管理扩展部署的 Win32 应用。 Win32 应用安装失败时，可选择“收集日志”选项。 
+选择使用 Intune 管理扩展部署的 Win32 应用。 Win32 应用安装失败时，可选择“收集日志”选项  。 
 
 > [!IMPORTANT]
-> 如果 Win32 应用已在设备上成功安装，则不会启用“收集日志”选项。<p>Intune 管理扩展必须先安装在 Windows客户端上，才能收集 Win32 应用日志信息。 将 PowerShell 脚本或 Win32 应用部署到用户或设备安全组后，将安装 Intune 管理扩展。 有关详细信息，请参阅 [Intune 管理扩展 - 先决条件](intune-management-extension.md#prerequisites)。
+> 如果 Win32 应用已在设备上成功安装，则不会启用“收集日志”选项  。<p>Intune 管理扩展必须先安装在 Windows客户端上，才能收集 Win32 应用日志信息。 将 PowerShell 脚本或 Win32 应用部署到用户或设备安全组后，将安装 Intune 管理扩展。 有关详细信息，请参阅 [Intune 管理扩展 - 先决条件](intune-management-extension.md#prerequisites)。
 
 ### <a name="collect-log-file"></a>收集日志文件
 
 若要收集 Win32 应用安装日志，请先按照[应用疑难解答详细信息](troubleshoot-app-install.md#app-troubleshooting-details)部分中提供的步骤进行操作。 然后，继续执行以下步骤：
 
-1. 单击“安装详细信息”边栏选项卡上的“收集日志”选项。
+1. 单击“安装详细信息”边栏选项卡上的“收集日志”选项   。
 
     <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
 
-2. 使用包含日志文件名的文件路径以开始日志文件收集过程，然后单击“确定”。
+2. 使用包含日志文件名的文件路径以开始日志文件收集过程，然后单击“确定”  。
     
     > [!NOTE]
-    > 日志收集需要最多两小时。 支持的文件类型：.log、.txt、.dmp、.cab、.zip、.xml、.evtx 和 .evtl。 最多允许 25 个文件路径。
+    > 日志收集需要最多两小时。 支持的文件类型：.log、.txt、.dmp、.cab、.zip、.xml、.evtx 和 .evtl  。 最多允许 25 个文件路径。
 
-3. 收集日志文件后，可选择“日志”链接来下载日志文件。
+3. 收集日志文件后，可选择“日志”链接来下载日志文件  。
 
     <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
 
@@ -85,9 +84,9 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 
 - 必须指定完整的日志文件路径。 
 - 可为日志收集指定环境变量，例如：<br>
-  %PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%
+  %PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP% 
 - 只允许使用精确的文件扩展名，例如：<br>
-  .log、.txt、.dmp、.cab、.zip、.xml
+  .log、.txt、.dmp、.cab、.zip、.xml 
 - 上传的最大日志文件为 60 MB 或 25 个文件，以先达到者为准。 
 - 为满足需要的、可用和卸载应用分配意图的应用启用 Win32 应用安装日志收集。
 - 存储的日志已加密，以保护日志中包含的任何 PII 信息。
@@ -140,9 +139,9 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 
 |    错误消息/代码    |    描述    |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0x80073CFF、0x80CF201C（客户端错误）    |    若要安装此应用，你必须具有支持旁加载的系统。 确保使用受信任的签名对应用包进行了签名，并且确保在已启用 AllowAllTrustedApps 策略且已加入域的设备上安装了该应用包，或者在具有 Windows 旁加载许可证且已启用 AllowAllTrustedApps 策略的设备上安装了该应用包。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。     |
-|    0x80073CF0    |    无法打开包。 可能的原因：<ul><li> 未对包进行签名。</li><li> 发布者名称与签名证书使用者不匹配。</li></ul> 有关信息，请查看 AppxPackagingOM 事件日志。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
-|    0x80073CF3    |    包未通过更新、依赖关系或冲突验证。 可能的原因：<ul><li> 传入包与已安装的包冲突。</li><li> 找不到指定的包依赖关系。</li><li> 包不支持正确的处理器体系结构。</li></ul> 有关信息，请查看 AppXDeployment-Server 事件日志。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
+|    0x80073CFF、0x80CF201C（客户端错误）    |    若要安装此应用，你必须具有支持旁加载的系统。 确保使用受信任的签名对应用包进行了签名，并且确保在已启用 AllowAllTrustedApps  策略且已加入域的设备上安装了该应用包，或者在具有 Windows 旁加载许可证且已启用 AllowAllTrustedApps  策略的设备上安装了该应用包。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。     |
+|    0x80073CF0    |    无法打开包。 可能的原因：<ul><li> 未对包进行签名。</li><li> 发布者名称与签名证书使用者不匹配。</li></ul> 有关信息，请查看 AppxPackagingOM  事件日志。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
+|    0x80073CF3    |    包未通过更新、依赖关系或冲突验证。 可能的原因：<ul><li> 传入包与已安装的包冲突。</li><li> 找不到指定的包依赖关系。</li><li> 包不支持正确的处理器体系结构。</li></ul> 有关信息，请查看 AppXDeployment-Server  事件日志。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
 |    0x80073CFB    |    已经安装了提供的包，阻止重新安装此包。 如果正在安装的包与已安装的包并不完全相同，则可能会收到此错误。 确认数字签名也是包的一部分。 对包进行重新构建或者重新签名时，该包与以前安装的包在位方面不再完全相同。 用于修复此错误的两个可能的选项如下所示：<ul><li> 递增应用的版本号，然后对包进行重新构建并重新签名。</li><li> 在安装新包之前，请删除系统上每个用户的旧包。</li></ul> 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
 |    0x87D1041C    |    应用程序安装成功，但未检测到应用程序。 应用已通过 Intune 成功部署，随后可卸载。 卸载应用的原因包括：<ul><li> 最终用户已卸载此应用。</li><li> 包中的标识信息与设备报告不良应用的信息不匹配。</li><li>对于自更新的 MSI，产品版本在 Intune 之外更新后与应用的信息不匹配。</li></ul> 指示用户从公司门户重新安装应用。 注意，在设备下次签入时，将自动重新安装所需应用。    |
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d01b1f745450785209bf289be5b6e36ac65cc2d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 5d39b62762d623c150ac6198bd2d6215b4410663
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046309"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412292"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>使用审核日志跟踪和监视 Microsoft Intune 中的事件
 
@@ -39,7 +39,7 @@ ms.locfileid: "66046309"
 
 可以查看每个 Intune 工作负载的监视组中的审核日志：
 
-1. 在 [Azure 门户](https://portal.azure.com/)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”    。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择要查看其审核日志的工作负载。 例如，选择“设备”  。
 3. 在“监视”下，选择“审核日志”   。
 
@@ -62,7 +62,7 @@ ms.locfileid: "66046309"
 - 应用程序名称
 - 活动
 - 目标
-- 分类
+- Category
 - 状态
 
 要查看更具体的事件信息，请在列表中选择某项：

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e4f94ead5ecc42f8ac67c596fc9424b112c2065
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 39aba38d808a770ee04f5d165ca8037b43576812
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048590"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374010"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用适用于 Android 设备的自定义设置
 
@@ -42,16 +42,16 @@ Android 自定义配置文件使用开放移动联盟统一资源标识符 (OMA-
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
 3. 输入以下设置：
 
     - **名称**：输入配置文件的名称，例如 `android custom profile`。
     - **说明**：输入配置文件的说明。
-    - **平台**：选择“Android”。
-    - **配置文件类型**：选择“自定义”。
+    - **平台**：选择“Android”  。
+    - **配置文件类型**：选择“自定义”  。
 
-4. 在“自定义 OMA-URI 设置”中，选择“添加”。 输入以下设置：
+4. 在“自定义 OMA-URI 设置”中，选择“添加”   。 输入以下设置：
 
     - **名称**：输入 OMA-URI 设置的唯一名称，便于轻松查找。
     - **说明**：输入设置的简要说明以及其他重要详细信息。
@@ -66,12 +66,12 @@ Android 自定义配置文件使用开放移动联盟统一资源标识符 (OMA-
       - 布尔值
       - Base64（文件）
 
-    - **值**：输入要与已输入的 OMA-URI 关联的数据值。 值取决于所选的数据类型。 例如，如果选择了“日期和时间”，则从日期选取器中选择值。
+    - **值**：输入要与已输入的 OMA-URI 关联的数据值。 值取决于所选的数据类型。 例如，如果选择了“日期和时间”，则从日期选取器中选择值  。
 
-    添加一些设置后，可以选择“导出”。 “导出”将创建逗号分隔值 (.csv) 文件中添加的所有值的列表。
+    添加一些设置后，可以选择“导出”  。 “导出”将创建逗号分隔值 (.csv) 文件中添加的所有值的列表  。
 
-5. 选择“确定”，保存所做更改。 根据需要继续添加更多设置。 
-6. 完成后，选择“确定” > “创建”，以创建 Intune 配置文件。 完成后，配置文件将显示在“设备配置 - 配置文件”列表中。
+5. 选择“确定”，保存所做更改  。 根据需要继续添加更多设置。 
+6. 完成后，选择“确定” > “创建”，以创建 Intune 配置文件   。 完成后，配置文件将显示在“设备配置 - 配置文件”列表中  。
 
 ## <a name="next-steps"></a>后续步骤
 

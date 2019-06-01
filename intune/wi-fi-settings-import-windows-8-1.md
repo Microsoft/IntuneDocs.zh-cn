@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ce2813702d9b2b3cb91f5531308cbb58b1f9f80
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9e4c27f7aca8d510ed82eabeab87612b1c16e11
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050610"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373310"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>在 Intune 中导入适用于 Windows 设备的 Wi-Fi 设置
 
-对于运行 Windows 的设备，可以导入之前导出到文件的 Wi-Fi 配置文件。 对于 Windows 10 及更高版本的设备，还可以直接在 Intune 中[创建 Wi-Fi 配置文件](wi-fi-settings-windows.md)。
+对于运行 Windows 的设备，可以导入之前导出到文件的 Wi-Fi 配置文件。 对于 Windows 10 及更高版本的设备，还可以直接在 Intune 中[创建 Wi-Fi 配置文件](wi-fi-settings-windows.md)  。
 
 适用于：  
 - Windows 8.1 及更高版本
@@ -40,27 +40,27 @@ ms.locfileid: "66050610"
 1. 为导出的 W-Fi-配置文件创建本地文件夹，如 **c:\WiFi**。
 2. 以管理员身份打开命令提示符。
 3. 运行 `netsh wlan show profiles` 命令，并记下想导出的配置文件的名称。 在此示例中，配置文件的名称是 **WiFiName**。
-4. 运行 `netsh wlan export profile name="ProfileName" folder=c:\Wifi` 命令。 此命令会在目标文件夹中创建一个名为“Wi-Fi-WiFiName.xml”的 Wi-Fi 配置文件。
+4. 运行 `netsh wlan export profile name="ProfileName" folder=c:\Wifi` 命令。 此命令会在目标文件夹中创建一个名为“Wi-Fi-WiFiName.xml”  的 Wi-Fi 配置文件。
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>将 Wi-Fi 设置导入 Intune
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”。
-3. 输入设备限制配置文件的“名称”和“描述”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
+3. 输入设备限制配置文件的“名称”和“描述”   。
 
     > [!IMPORTANT]
-    > - 该名称必须与 Wi-Fi 配置文件 xml 中的名称属性相同。 否则操作会失败。
-    > - 如果要导出的 Wi-Fi 配置文件中包含预共享密钥，则必须在命令中添加 `key=clear`。 例如，输入 `netsh wlan export profile name="ProfileName" key=clear folder=c:\Wifi`
+    > - 该名称必须与 Wi-Fi 配置文件 xml 中的名称属性相同  。 否则操作会失败。
+    > - 如果要导出的 Wi-Fi 配置文件中包含预共享密钥，则必须在命令中添加 `key=clear`  。 例如，输入 `netsh wlan export profile name="ProfileName" key=clear folder=c:\Wifi`
     > - 在 Windows 10 中使用预共享的密钥会导致 Intune 中出现修正错误。 出现这种情况时，Wi-Fi 配置文件已正确分配给设备，并且该配置文件可以正常工作。
     > - 如果导出的 Wi-Fi 配置文件含有预共享密钥，请务必保管好该文件。 密钥为纯文本格式，你需负责保管好该密钥。
 
-4. 在“平台”中，选择“Windows 8.1 及更高版本”。
-5. 在“配置文件类型”中，选择“Wi-Fi 导入”。
+4. 在“平台”中，选择“Windows 8.1 及更高版本”   。
+5. 在“配置文件类型”中，选择“Wi-Fi 导入”   。
 6. 配置下列设置：
     - **连接名称**：输入 Wi-Fi 连接的名称。 最终用户浏览可用 Wi-Fi 网络时，会显示此名称。
-    - 配置文件 XML：选择浏览按钮，然后选择包含想要导入的 Wi-Fi 配置文件设置的 XML 文件。
+    -  配置文件 XML：选择浏览按钮，然后选择包含想要导入的 Wi-Fi 配置文件设置的 XML 文件。
     - **文件内容**：显示你选择的配置文件的 XML 代码。
-7. 完成后，选择“确定” > “创建”以保存所做的更改。 配置文件随即创建并出现在配置文件列表中。
+7. 完成后，选择“确定”   > “创建”  以保存所做的更改。 配置文件随即创建并出现在配置文件列表中。
 
 ## <a name="next-steps"></a>后续步骤
 
