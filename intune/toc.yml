@@ -652,14 +652,14 @@
               href: review-logs-using-azure-monitor.md
             - name: 查看应用保护日志
               href: app-protection-policy-settings-log.md
-            - name: 电子邮件配置文件疑难解答
+            - name: 策略和配置文件疑难解答
+              href: troubleshoot-policies-in-microsoft-intune.md
+            - name: 电子邮件配置文件问题和解决方法
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: 软件更新疑难解答
               href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Endpoint Protection 疑难解答
+            - name: 终结点保护常见错误
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-            - name: 策略和配置文件疑难解答
-              href: troubleshoot-policies-in-microsoft-intune.md
             - name: 条件访问疑难解答
               href: troubleshoot-conditional-access.md
             - name: Exchange Connector 疑难解答
@@ -825,6 +825,10 @@
                   href: vpn-settings-windows-phone-8-1.md
                 - name: 自定义
                   href: custom-settings-windows-phone-8-1.md
+    - name: 错误代码和描述
+      items:
+        - name: 软件更新错误
+          href: software-update-agent-error-codes.md
     - name: 开发人员指南
       items:
         - name: 用于添加第三方证书颁发机构的 API
