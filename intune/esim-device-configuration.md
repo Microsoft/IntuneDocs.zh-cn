@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bb4d94048025f4b0b6c984c4bf0972b432707b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041880"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402733"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
@@ -37,8 +37,8 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 要使用 Intune 将 eSIM 部署到设备，需要以下条件：
 
 - **支持 eSIM 的设备**，例如，Surface LTE：请参阅[设备是否支持 eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data)。 或者，请参阅[一些已知支持 eSIM 的设备](#esim-capable-devices)的列表（在本文中）。
-- 已注册并且由 Intune 托管 MDM 的 Windows 10 Fall Creators Update PC（1709 或更高版本）
-- 移动运营商提供的激活码。 这些一次性使用的激活码被添加到 Intune，并部署到支持 eSIM 的设备。 请联系移动运营商获取 eSIM 激活码。
+- 已注册并且由 Intune 托管 MDM 的 Windows 10 Fall Creators Update PC（1709 或更高版本） 
+- 移动运营商提供的激活码  。 这些一次性使用的激活码被添加到 Intune，并部署到支持 eSIM 的设备。 请联系移动运营商获取 eSIM 激活码。
 
 ## <a name="deploy-esim-to-devices---overview"></a>将 eSIM 部署到设备 - 概述
 
@@ -68,17 +68,16 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 - Surface Pro LTE
 - HP Spectre Folio 13
 - Lenovo Yoga C630
-- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>步骤 1：添加手机网络激活代码
 
 移动运营商在以逗号分隔的文件 (csv) 中提供手机网络激活码。 如果有此文件，请使用以下步骤将其添加到 Intune：
 
 1. 登录到 [Azure 门户](https://portal.azure.com/)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-3. 选择“设备配置” > “eSIM 手机网络配置文件” > “添加”。
+2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
+3. 选择“设备配置” > “eSIM 手机网络配置文件” > “添加”    。
 4. 选择具有激活码的 CSV 文件。
-5. 选择“确定”，保存所做更改。
+5. 选择“确定”，保存所做更改  。
 
 #### <a name="csv-file-requirements"></a>CSV 文件要求
 
@@ -116,15 +115,15 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 
 将配置文件分配给包含 eSIM 设备的 Azure AD 组。
 
-1. 在 [Azure 门户](https://portal.azure.com/)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-2. 选择“设备配置” > “eSIM 手机网络” > “配置文件”。
-3. 在配置文件列表中，选择要分配的 eSIM 手机网络订阅池，然后选择“分配”。
-4. 选择“包括”组或“排除”组，然后选择组。
+1. 在 [Azure 门户](https://portal.azure.com/)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
+2. 选择“设备配置” > “eSIM 手机网络” > “配置文件”    。
+3. 在配置文件列表中，选择要分配的 eSIM 手机网络订阅池，然后选择“分配”  。
+4. 选择“包括”组或“排除”组，然后选择组   。
 
     ![包含要分配配置文件的设备组](./media/esim-device-configuration/include-exclude-groups.png)
 
-5. 选择组时，会选择 Azure AD 组。 要选择多个组，请使用 Ctrl 键，然后选择组。
-6. 完成后，“保存”更改。
+5. 选择组时，会选择 Azure AD 组。 要选择多个组，请使用 Ctrl 键，然后选择组  。
+6. 完成后，“保存”  更改。
 
 eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM 模块会联系移动运营商以下载手机网络配置文件。 该联系人会完成将设备注册到移动运营商网络。
 
@@ -135,15 +134,15 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 分配配置文件后，可以监视订阅池的部署状态。
 
 1. 登录到 [Azure 门户](https://portal.azure.com/)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-3. 选择“设备配置” > “eSIM 手机网络配置文件”。 随即会列出所有现有的 eSIM 手机网络订阅池。
-4. 选择订阅，然后查看“部署状态”。
+2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
+3. 选择“设备配置” > “eSIM 手机网络配置文件”   。 随即会列出所有现有的 eSIM 手机网络订阅池。
+4. 选择订阅，然后查看“部署状态”  。
 
 #### <a name="check-the-profile-status"></a>检查配置文件状态
 创建设备配置文件后，Intune 会提供图形图表。 这些图表显示配置文件的状态，例如成功分配给设备，或配置文件是否显示冲突。
 
-1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅。
-2. 在“概述”选项卡中，顶部图形图表显示分配给特定 eSIM 手机网络订阅池部署的设备数。
+1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅   。
+2. 在“概述”选项卡中，顶部图形图表显示分配给特定 eSIM 手机网络订阅池部署的设备数  。
 
     它还显示分配了相同设备配置文件的其他平台的设备数量。
 
@@ -158,8 +157,8 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 
 可以监视和查看可在“设备状态”中查看的设备详细列表。**
 
-1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅。
-2. 选择“设备状态”。 Intune 会显示有关设备的其他详细信息：
+1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅   。
+2. 选择“设备状态”  。 Intune 会显示有关设备的其他详细信息：
 
   - **设备名**：目标设备的名称
   - **用户**：注册设备的用户
@@ -170,8 +169,8 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>监视实际设备上的 eSIM 配置文件详细信息
 
-1. 在设备上，打开“设置”>转到“网络和 Internet”。
-2. 选择“手机网络” > “管理 eSIM 配置文件”
+1. 在设备上，打开“设置”>转到“网络和 Internet”   。
+2. 选择“手机网络” > “管理 eSIM 配置文件”  
 3. 此时会列出 eSIM 配置文件：
 
     ![在设备设置中查看 eSIM 配置文件](./media/esim-device-configuration/device-settings-cellular-profiles.png)

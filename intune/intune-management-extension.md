@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c590f81b846fe3671d5ccddede28a4a4bd799ba
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264162"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373475"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 中的 Windows 10 设备上使用 PowerShell 脚本
 
@@ -65,7 +65,7 @@ Intune 管理扩展具有以下先决条件。 满足这些条件后，在向用
 
 ## <a name="create-a-script-policy"></a>创建脚本策略 
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”    。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“设备配置” > “PowerShell 脚本” > “添加”    。
 3. 输入以下属性：
     - **名称**：输入 PowerShell 脚本的名称。 

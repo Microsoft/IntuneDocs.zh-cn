@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8483e036e270744daa5e36bf9375da6e11c25746
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1a5c85c936e49c277b54b542f372f97b247d6a37
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048305"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373807"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中添加 iOS 或 macOS 设备功能设置
 
@@ -39,8 +39,8 @@ Intune 包含许多有助于管理员控制 iOS 和 macOS 设备的功能和设�
 
 ## <a name="create-a-device-profile"></a>创建设备配置文件
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。
@@ -48,13 +48,13 @@ Intune 包含许多有助于管理员控制 iOS 和 macOS 设备的功能和设�
     - **平台**：选择平台：
         - **iOS**
         - **macOS**
-    - **配置文件类型**：选择“设备功能”。
+    - **配置文件类型**：选择“设备功能”  。
     - **设置**：输入要配置的设置。 有关所有设置及其用途的列表，请参阅：
 
         - [iOS](ios-device-features-settings.md)
         - [macOS](macos-device-features-settings.md)
 
-4. 完成后，依次选择“确定”、“创建”以保存所做更改。
+4. 完成后，依次选择“确定”、“创建”以保存所做更改   。
 
 此时，配置文件创建完成，并出现在列表中。 请务必[分配配置文件](device-profile-assign.md)，并[监视配置文件状态](device-profile-monitor.md)。
 

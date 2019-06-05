@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df4a3dc5c45a909e2c56b1fd741445bc6485e1e8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044466"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373654"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -65,15 +65,15 @@ Zscaler Private Access (ZPA) 与 Azure Active Directory (Azure AD) 集成以进�
 
 将 CA 颁发的 VPN 服务器根证书导入到 Intune 中创建的配置文件中。 受信任的证书配置文件指示 iOS 设备自动信任 VPN 服务器提供的 CA。
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
 3. 输入以下属性：
     - **名称**
     - **描述**
-    - **平台**：选择“iOS”。
-    - **配置文件类型**：选择“受信任的证书”。
+    - **平台**：选择“iOS”  。
+    - **配置文件类型**：选择“受信任的证书”  。
 4. 选择文件夹图标，浏览到从 VPN 管理控制台导出的 VPN 证书（.cer 文件）。 
-5. 选择“确定” > “创建”。
+5. 选择“确定” > “创建”   。
 
     ![在 Microsoft Intune 中为 iOS 设备创建受信任的证书配置文件](./media/vpn-per-app-create-trusted-cert.png)
 
@@ -86,7 +86,7 @@ Zscaler Private Access (ZPA) 与 Azure Active Directory (Azure AD) 集成以进�
 - [使用 Intune 配置和管理 SCEP 证书](certificates-scep-configure.md)
 - [使用 Intune 配置和管理 PKCS 证书](certficates-pfx-configure.md)
 
-请确保配置用于客户端身份验证的证书。 可以直接在 SCEP 证书配置文件中设置该证书（“扩展密钥用法”列表 >“客户端身份验证”）。 对于 PKCS，请在证书颁发机构 (CA) 的证书模板中设置客户端身份验证。
+请确保配置用于客户端身份验证的证书。 可以直接在 SCEP 证书配置文件中设置该证书（“扩展密钥用法”列表 >“客户端身份验证”）   。 对于 PKCS，请在证书颁发机构 (CA) 的证书模板中设置客户端身份验证。
 
 ![在 Microsoft Intune 中创建 SCEP 证书配置文件，包括主题名称格式、密钥用法、扩展密钥用法等](./media/vpn-per-app-create-scep-cert.png)
 
@@ -94,42 +94,42 @@ Zscaler Private Access (ZPA) 与 Azure Active Directory (Azure AD) 集成以进�
 
 VPN 配置文件包含附带客户端凭据的 SCEP 或 PKCS 证书、VPN 的连接信息以及每应用 VPN 标志，用于启用供 iOS 应用程序使用的每应用 VPN 功能。
 
-1. 在 Intune 中，选择“设备配置” > “配置文件” > “创建配置文件”。 
+1. 在 Intune 中，选择“设备配置” > “配置文件” > “创建配置文件”     。 
 2. 输入以下属性： 
     - **名称**
     - **描述**
-    - **平台**：选择“iOS”。
-    - **配置文件类型**：选择“VPN”。
-3. 在“连接类型”中，选择你的 VPN 客户端应用。
-4. 选择“基础 VPN”。 [iOS VPN 设置](vpn-settings-ios.md)列出并介绍了所有设置。 使用每应用 VPN 时，请确保设置列出的以下属性： 
+    - **平台**：选择“iOS”  。
+    - **配置文件类型**：选择“VPN”  。
+3. 在“连接类型”中，选择你的 VPN 客户端应用  。
+4. 选择“基础 VPN”  。 [iOS VPN 设置](vpn-settings-ios.md)列出并介绍了所有设置。 使用每应用 VPN 时，请确保设置列出的以下属性： 
     
-    - **身份验证方法**：选择“证书”。 
-    - **身份验证证书**：选择现有 SCEP 或 PKCS 证书 >“确定”。      
-    - **拆分隧道**：选择“禁用”，强制所有流量在 VPN 连接处于活动状态时使用 VPN 隧道。 
+    - **身份验证方法**：选择“证书”  。 
+    - **身份验证证书**：选择现有 SCEP 或 PKCS 证书 >“确定”  。      
+    - **拆分隧道**：选择“禁用”，强制所有流量在 VPN 连接处于活动状态时使用 VPN 隧道  。 
 
       ![在每应用 VPN 配置文件中，输入连接、IP 地址或 FQDN、身份验证方法以及 Microsoft Intune 中的拆分调优](./media/vpn-per-app-create-vpn-profile.png)
 
     有关其他设置的信息，请参阅 [iOS VPN 设置](vpn-settings-ios.md)。
 
-5. 选择“自动 VPN” > “自动 VPN 类型” > “每应用 VPN”
+5. 选择“自动 VPN” > “自动 VPN 类型” > “每应用 VPN”   
 
     ![在 Intune 中，将自动 VPN 设置为 iOS 设备上的每应用 VPN](./media/vpn-per-app-automatic.png)
 
-6. 选择“确定” > “确定” > “创建”。
+6. 选择“确定” > “确定” > “创建”    。
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>将应用与 VPN 配置文件相关联
 
 添加 VPN 配置文件后，将应用和 Azure AD 组与配置文件关联。
 
-1. 在 **Intune** 中，选择“客户端应用” > “应用”。
-2. 从列表 >“分配” > “添加组”中选择应用。
-3. 在“分配类型”中，选择“需要”或“适用于已注册的设备”。
-4. 选择“包含组” > “选择要包括的组”> 选择（在本文中）[创建](#create-a-group-for-your-vpn-users)的组 >“选择”。
-5. 在“VPN”中，选择（在本文中）[创建](#create-a-per-app-vpn-profile)的每应用 VPN 配置文件。
+1. 在 **Intune** 中，选择“客户端应用” > “应用”   。
+2. 从列表 >“分配” > “添加组”中选择应用   。
+3. 在“分配类型”中，选择“需要”或“适用于已注册的设备”    。
+4. 选择“包含组” > “选择要包括的组”> 选择（在本文中）[创建](#create-a-group-for-your-vpn-users)的组 >“选择”    。
+5. 在“VPN”中，选择（在本文中）[创建](#create-a-per-app-vpn-profile)的每应用 VPN 配置文件  。
 
     ![在 Microsoft Intune 中将应用分配给每应用 VPN 配置文件](./media/vpn-per-app-app-to-vpn.png)
 
-6. 选择“确定” > “保存”。
+6. 选择“确定” > “保存”   。
 
 当存在以下所有条件时，在下一个设备签入期间，会删除应用和配置文件之间的关联：
 
@@ -151,13 +151,13 @@ VPN 配置文件包含附带客户端凭据的 SCEP 或 PKCS 证书、VPN 的连
 ### <a name="before-you-attempt-to-connect"></a>尝试连接之前请确保满足以下各项
 
  - 确保将上述所有策略部署到同一个组。 否则，每应用 VPN 体验将无法正常运行。
- - 如果使用的是 Pulse Secure VPN 应用或自定义 VPN 客户端应用，可以选择使用应用层或数据包层隧道。 针对应用层隧道，将 ProviderType 值设置为 app-proxy，针对数据包层隧道，将其设置为 packet-tunnel。 请查看 VPN 提供程序文档，确保使用的是正确的值。
+ - 如果使用的是 Pulse Secure VPN 应用或自定义 VPN 客户端应用，可以选择使用应用层或数据包层隧道。 针对应用层隧道，将 ProviderType 值设置为 app-proxy，针对数据包层隧道，将其设置为 packet-tunnel    。 请查看 VPN 提供程序文档，确保使用的是正确的值。
 
 ### <a name="connect-using-the-per-app-vpn"></a>使用每应用 VPN 进行连接
 
 无需选择 VPN 或键入凭据即可连接，感受“零接触”体验。 “零接触”体验意味着：
 
- - 设备不要求你信任 VPN 服务器。 也就是说，用户看不到“动态信任”对话框。
+ - 设备不要求你信任 VPN 服务器。 也就是说，用户看不到“动态信任”对话框  。
  - 用户无需键入凭据。
  - 用户打开其中某个关联应用时，用户的设备将连接到 VPN。
 

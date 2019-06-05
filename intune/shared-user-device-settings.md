@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a5064a9065dba75f3594f2e6bb6fb36b42be2e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc1fca439f0edf4a5d4caaad4ff4f9e0bae5972b
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044962"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374051"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>使用 Intune 控制共享电脑或多用户设备上的访问权限、帐户和电源功能
 
@@ -41,18 +41,18 @@ ms.locfileid: "66044962"
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 选择“设备配置”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
    - **名称**：输入新配置文件的描述性名称。
    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
-   - **平台**：选择“Windows 10 及更高版本”。
-   - **配置文件类型**：选择“共享的多用户设备”。
+   - **平台**：选择“Windows 10 及更高版本”  。
+   - **配置文件类型**：选择“共享的多用户设备”  。
 
 4. 配置 [Windows 10 及更高版本](shared-user-device-settings-windows.md)和 [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) 的设置。
 
-5. 选择“确定” > “创建”以保存所做的更改。
+5. 选择“确定”   > “创建”  以保存所做的更改。
 
 配置文件已创建并在列表中显示，但它尚未起到任何作用。 请务必向组织中的设备组[分配配置文件](device-profile-assign.md)。
 
