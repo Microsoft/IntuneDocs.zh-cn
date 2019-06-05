@@ -7,36 +7,14 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: ffcef5b4d78856709f8563ee1f667ec7e5d993b3
-ms.sourcegitcommit: d2e04a38e024b0f5afb0ca202823227de9da3ad1
+ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65732606"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454120"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
-
-### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>通过设置助理进行身份验证的公司 iOS 设备上的 Intune 公司门户注册工作流的更改内容 <!-- 1927359 -->
-使用设置助理进行身份验证时，通过以下任一 Apple 公司设备注册方式注册 iOS 设备的工作流将发生变化：Apple Configurator、Apple Business Manager、Apple School Manager 或 Apple 设备注册计划 (DEP)。 此更改仅适用于注册了用户关联的设备。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-此更改推出时，将更新 Azure 门户中的 Intune 注册配置文件，以便你可以指定设备的身份验证方式以及是否收到公司门户应用。 通过上述方法注册 iOS 设备的工作流也会得到改进。 
-
-- 注册新设备并使用设置助理进行身份验证时，将能够选择是否自动部署公司门户应用。 最终用户将无法再在注册流程中看到“识别你的设备”屏幕和“确认你的设备”屏幕。  
-- 对于已通过 Apple 公司设备注册方法之一借助设置助理注册的设备，如果需要启用条件访问，必须执行相应操作。 必须使用特定的 xml [配置应用配置策略](https://aka.ms/enrollment_setup_assistant)，以便将公司门户推送到这些设备。  如果选择以这种方式推送公司门户，最终用户将无法再在注册流程中看到“识别你的设备”屏幕和“确认你的设备”屏幕。 
-- 在此更改推出之后，如果你还没有使用上述应用配置文件部署公司门户，并且最终用户从 App Store 下载公司门户应用，那么，他们可以登录，但会收到一条错误消息。 他们将无法使用该应用进行条件访问。 
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-如果计划使用修改后的工作流，则需要更新最终用户指南，以表明：
-
-- 最终用户将无法再在注册流程中看到上述两个屏幕。 
-- 他们需要在公司门户自动部署时登录到该门户，而不是从 App Store 下载。 
-
-如有需要，现在可以选择创建一个应用配置策略，为此更改做好准备。 推出这个新的工作流后，你将能够在控制台中看到更新的注册配置文件。 我们还会通过消息中心向你发送有关此推出的通知。 然后，需要执行操作，以便最终用户可以在借助设置助理进行身份验证后，通过 DEP 进行注册，并且你可以使用公司门户进行条件访问。
-
-#### <a name="additional-information"></a>其他信息 
-[https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
-
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>将 Android 公司门户应用更新到最新版本 <!--4536963-->
 Intune 定期发布 Android 公司门户应用的更新。 在 2018 年 11 月，我们发布了一次公司门户更新，其中包括后端开关，以便为 Google 从现有通知平台更改为 Google 的 Firebase 云消息传递 (FCM) 做好准备。 随着 Google 停用其现有通知平台并迁移到 FCM，最终用户需要将他们的公司门户应用至少更新到 2018 年 11 月版本，以便继续与 Google Play 商店通信。
@@ -49,3 +27,16 @@ Intune 定期发布 Android 公司门户应用的更新。 在 2018 年 11 月�
 
 #### <a name="additional-information"></a>其他信息
 https://firebase.google.com/docs/cloud-messaging/
+
+
+### <a name="new-fullscreen-experience-coming-to-intune---4593669--"></a>Intune 即将推出新的全屏幕体验 <!--4593669-->
+我们将在 Azure 门户中向 Intune 推出更新的创建和编辑 UI 体验。 此新体验将使用压缩在一个边栏选项卡中的向导样式格式简化现有工作流。 此更新将消除“边栏选项卡扩展”或需要向下钻取到深度边栏选项卡体验的任何创建和编辑流。 创建工作流也将更新为包含分配（应用分配除外）。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+接下来的几个月里，将同时在 portal.azure.com 和 devicemanagement.microsoft.com 推出 Intune 全屏幕体验。 此 UI 更新不会影响现有策略和配置文件的功能，但你将看到一个稍经修改的工作流。 例如，创建新策略时，你将能够将某些分配设置为此流的一部分，而不是在创建策略后执行此操作。 有关控制台中新体验的屏幕截图，请参阅附加信息中的博客文章。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
+不需要执行任何操作，但可以考虑在必要时更新 IT 专业人员指南。 当在 Azure 门户上向 Intune 中的各种边栏选项卡推出此体验时，我们将更新文档。
+
+#### <a name="additional-information"></a>其他信息 
+https://aka.ms/intune_fullscreen
