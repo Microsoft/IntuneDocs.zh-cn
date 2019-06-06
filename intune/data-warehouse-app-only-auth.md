@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042673"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454037"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune 数据仓库仅应用程序身份验证
 
@@ -42,60 +42,61 @@ Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure 
 在本部分中，将详细介绍有关在 Intune 中要指向的 Web 应用。 Web 应用是客户端-服务器应用程序。 服务器提供 Web 应用，其中包括 UI、内容和功能。 此应用类型是在 Web 上单独进行维护的。 你可以使用 Intune 授予 Web 应用对 Intune 的访问权限。 数据流由 Web 应用启动。 
 
 1.  登录到 [Azure 门户](https://portal.azure.com)。
-2.  使用 Azure 门户顶部附近的“搜索资源、服务和文档”字段搜索“Azure Active Directory”。
-3.  在下拉菜单中，选择“服务”下的“Azure Active Directory”。
-4.  选择“应用注册”。
-5.  单击“新应用程序注册”，以显示“创建”边栏选项卡。
-6.  在“创建”边栏选项卡中，添加以下应用详细信息：
+2.  使用 Azure 门户顶部附近的“搜索资源、服务和文档”字段搜索“Azure Active Directory”   。
+3.  在下拉菜单中，选择“服务”下的“Azure Active Directory”。  
+4.  选择“应用注册”  。
+5.  单击“新应用程序注册”  ，以显示“创建”  边栏选项卡。
+6.  在“创建”边栏选项卡中，添加以下应用详细信息  ：
 
-    - 应用名称，例如“Intune 仅应用身份验证”。
-    - “应用程序类型”。 选择“Web 应用/API”，以添加一个表示 Web 应用程序和/或 Web API 的应用程序。
-    - 应用程序的“登录 URL”。 进行身份验证期间用户将自动导航到这个位置。 用户需要证明自己所说的身份。 有关详细信息，请参阅[什么是 Azure Active Directory 的应用程序访问与单一登录？](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)
+    - 应用名称，例如“Intune 仅应用身份验证”  。
+    - “应用程序类型”  。 选择“Web 应用/API”  ，以添加一个表示 Web 应用程序和/或 Web API 的应用程序。
+    - 应用程序的“登录 URL”  。 进行身份验证期间用户将自动导航到这个位置。 用户需要证明自己所说的身份。 有关详细信息，请参阅[什么是 Azure Active Directory 的应用程序访问与单一登录？](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)
 
-7.  单击“创建”边栏选项卡底部的“创建”。
+7.  单击“创建”边栏选项卡底部的“创建”   。
 
     >[!NOTE] 
-    > 复制“已注册的应用”边栏选项卡中的“应用程序 ID”，以供以后使用。
+    > 复制“已注册的应用”边栏选项卡中的“应用程序 ID”，以供以后使用。  
 
 ## <a name="create-a-key"></a>创建密钥
 
 在本部分中，Azure AD 将生成应用的密钥值。
 
-1.  在“应用注册”边栏选项卡上，选择新创建的应用，以显示应用边栏选项卡。
-2.  选择边栏选项卡顶部附近的“设置”，以显示“设置”边栏选项卡。
-3.  在“设置”边栏选项卡上，选择“密钥”。
-4.  添加密钥“说明”，即“过期”时间以及密钥的“值”。
-5.  单击“保存”，以保存和更新应用程序的密钥。
+1.  在“应用注册”  边栏选项卡上，选择新创建的应用，以显示应用边栏选项卡。
+2.  选择边栏选项卡顶部附近的“设置”  ，以显示“设置”边栏选项卡  。
+3.  在“设置”边栏选项卡上，选择“密钥”   。
+4.  添加密钥“说明”  ，即“过期”时间  以及密钥的“值”  。
+5.  单击“保存”，以保存和更新应用程序的密钥  。
 6.  你必须将所生成的密钥值（base64 编码）复制下来。
 
     >[!NOTE] 
-    > 因为离开“密钥”边栏选项卡后，将不再显示此密钥值， 以后将无法从此边栏选项卡检索此密钥。 请复制此密钥，以供以后使用。
+    > 因为离开“密钥”边栏选项卡后，将不再显示此密钥值  ， 以后将无法从此边栏选项卡检索此密钥。 请复制此密钥，以供以后使用。
 
 ## <a name="grant-application-permissions"></a>授予应用程序权限
 
 在本部分中，将授予应用程序权限。
 
-1.  在“设置”边栏选项卡上，选择“必需权限”。
-2.  单击“添加” 。
-3.  选择“添加 API”，以显示“选择 API”边栏选项卡。
-4.  从“选择 API”边栏选项卡选择“Microsoft Intune API (MicrosoftIntuneAPI)”，然后单击“选择”。 已选择“选择权限”步骤，并已显示“启用访问权限”边栏选项卡。
-5.  从“应用程序权限”部分选择“从 Microsoft Intune 获取数据仓库信息”选项。
-6.  从“启用访问权限”边栏选项卡单击“选择”。
-7.  从“添加 API 访问权限”边栏选项卡单击“完成”。
-8.  从“必需权限”边栏选项卡单击“授予权限”，当提示更新此应用程序的任何已有权限时，单击“是”。
+1.  在“设置”  边栏选项卡上，选择“必需权限”  。
+2.  单击“添加”  。
+3.  选择“添加 API”，以显示“选择 API”边栏选项卡   。
+4.  从“选择 API”边栏选项卡选择“Microsoft Intune API (MicrosoftIntuneAPI)”，然后单击“选择”。    已选择“选择权限”步骤，并已显示“启用访问权限”边栏选项卡。  
+5.  从“应用程序权限”部分选择“从 Microsoft Intune 获取数据仓库信息”选项   。
+6.  从“启用访问权限”边栏选项卡单击“选择”。  
+7.  从“添加 API 访问权限”边栏选项卡单击“完成”。  
+8.  从“必需权限”边栏选项卡单击“授予权限”，当提示更新此应用程序的任何已有权限时，单击“是”    。
 
 ## <a name="generate-token"></a>生成令牌
 
 使用 Visual Studio 创建支持 .NET Framework 并使用 C# 作为编码语言的控制台应用 (.NET Framework) 项目。
 
-1.  选择“文件” > “新建” > “项目”，以显示“新建项目”对话框。
-2.  在左侧选择“Visual C#”，以显示所有的 .NET Framework 项目。
-3.  选择“控制台应用(.NET Framework)”，添加应用名称，然后单击“确定”，以创建应用。
-4.  在“解决方案资源管理器”中，选择“Program.cs”，以显示代码。
-5.  在弹出菜单中，选择“添加” > “新建项”。 随即将显示“添加新项”对话框。
-6.  在左侧的“Visual C#”下，选择“代码”。
-7.  选择“类”，将类的名称更改为“IntuneDataWarehouseClass.cs”，然后单击“添加”。
-8.  将下列代码添加到 <code>Main</code> 方法中：
+1.  选择  “文件” > “新建”   > “项目”，以显示“新建项目”对话框   。
+2.  在左侧选择“Visual C#”，以显示所有的 .NET Framework 项目  。
+3.  选择“控制台应用(.NET Framework)”，添加应用名称，然后单击“确定”，以创建应用   。
+4.  在“解决方案资源管理器”中，选择“Program.cs”，以显示代码   。
+5.  在解决方案资源管理器中，添加对 `System.Configuration` 程序集的引用。
+6.  在弹出菜单中，选择“添加” > “新建项”   。 随即将显示“添加新项”对话框  。
+7.  在左侧的“Visual C#”下，选择“代码”。  
+8.  选择“类”，将类的名称更改为“IntuneDataWarehouseClass.cs”，然后单击“添加”。   
+9.  将下列代码添加到 <code>Main</code> 方法中：
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -110,7 +111,7 @@ Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure 
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. 在代码文件的顶部添加以下代码，以添加其他命名空间：
+10. 在代码文件的顶部添加以下代码，以添加其他命名空间：
 
     ``` csharp
      using System.Security;
@@ -118,7 +119,7 @@ Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure 
      using System.Configuration;
     ``` 
 
-10. 在 <code>Main</code> 方法的后面添加以下专用方法，用于处理和转换应用密钥：
+11. 在 <code>Main</code> 方法的后面添加以下专用方法，用于处理和转换应用密钥：
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -136,10 +137,10 @@ Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure 
     }
     ```
 
-11. 在“解决方案资源管理器”中，右键单击“引用”，然后选择“管理 NuGet 程序包”。
-12. 搜索“Microsoft.IdentityModel.Clients.ActiveDirectory”，然后安装相关的 Microsoft NuGet 程序包。
-13. 在“解决方案资源管理器”中，选择并打开“App.config”文件。
-14. 添加 <code>appSettings</code> 部分，使 xml 如下所示：
+12. 在“解决方案资源管理器”中，右键单击“引用”，然后选择“管理 NuGet 程序包”    。
+13. 搜索“Microsoft.IdentityModel.Clients.ActiveDirectory”，然后安装相关的 Microsoft NuGet 程序包  。
+14. 在“解决方案资源管理器”中，选择并打开“App.config”文件。  
+15. 添加 <code>appSettings</code> 部分，使 xml 如下所示：
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,8 +156,8 @@ Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure 
     </configuration>
     ``` 
 
-15. 更新 <code>appId</code>、<code>appKey</code> 和 <code>tenantDomain</code> 值，以与唯一的应用相关值匹配。
-16. 生成应用。
+16. 更新 <code>appId</code>、<code>appKey</code> 和 <code>tenantDomain</code> 值，以与唯一的应用相关值匹配。
+17. 生成应用。
 
     >[!NOTE] 
     > 若要查看其他实现代码，请参阅 [Intune 数据仓库代码示例](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp )。

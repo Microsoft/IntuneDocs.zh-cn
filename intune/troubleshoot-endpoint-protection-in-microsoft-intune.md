@@ -1,11 +1,11 @@
 ---
-title: Intune 中的 Endpoint Protection 疑难解答 - Azure | Microsoft Docs
-description: 解决使用 Microsoft Intune Endpoint Protection 时出现的问题。
+title: Microsoft Intune 中的常见 Endpoint Protection 信息 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中使用 Endpoint Protection 和 Windows Defender 以及对其进行故障排除时，请参阅常见消息和可能的解决方案。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,36 +17,70 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec655a53018c2e45d1cb771c1ce9c0aad376b2b1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040155"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402642"
 ---
-# <a name="troubleshoot-endpoint-protection-in-intune"></a>Intune 中的 Endpoint Protection 疑难解答
+# <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune 中的 Endpoint Protection 问题和可能的解决方案
 
-此信息有助于解决使用 Endpoint Protection 时出现的问题。 此外，还可以[查看事件日志和错误代码以排除使用 Windows Defender AV 遇到的问题](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)。
+本文列出并描述了一些错误和警告的潜在原因和解决方案。 此信息有助于解决使用 Endpoint Protection 时出现的问题。
 
-如果此信息没有帮助，还可以[获取对 Microsoft Intune 的支持](get-support.md)。
+## <a name="windows-defender-error-codes"></a>Windows Defender 错误代码
 
-### <a name="error-messages"></a>错误消息
-本章节描述了以下错误和警告的潜在原因和解决方案。
+查看事件日志和错误代码以[排除使用 Windows Defender AV 遇到的问题](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)。
 
-|状态项|可能的原因|可能的解决方案|
-|---------------|--------------------|-----------------------|
-|**Endpoint Protection 引擎不可用**|Intune Endpoint Protection 引擎已损坏或删除。|如果 Intune Endpoint Protection 引擎已损坏，可以尝试更新或重新安装软件。<br /><br />若要强制执行立即更新，请在 Endpoint Protection 客户端软件中选择**更新**（参见托管计算机上的工具栏）。<br /><br />如果无法更新引擎，则必须重新安装 Endpoint Protection 引擎。<br /><br />在托管计算机“控制面板”的已安装程序列表中，找出“Microsoft Intune Endpoint Protection 代理”，然后卸载应用程序。<br /><br />在下次更新同步期间，Microsoft Online Management 更新管理器将会检测缺少的程序，并在计划安装时间重新安装它。|
-|**已禁用 Endpoint Protection**|Intune Endpoint Protection 已遭到管理员（通过使用配置文件）或托管计算机上的某位用户禁用。|启用 Endpoint Protection。 请参阅 Intune 中的[添加 Endpoint Protection 设置](endpoint-protection-configure.md)或[打开 Windows Defender 以访问公司资源](/intune-user-help/turn-on-defender-windows)。|
-|**已禁用实时保护**|实时保护已遭到管理员（通过使用配置文件）或托管计算机上的某位用户禁用。|启用 Endpoint Protection。 请参阅 Intune 中的 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)或[打开实时保护以访问公司资源](/intune-user-help/turn-on-defender-windows)。 |
-|**已禁用下载扫描**|下载扫描被管理员（通过使用配置文件）或被托管计算机上的某位用户禁用。|启用扫描。 请参阅 Intune 中的 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)或[打开实时保护以访问公司资源](/intune-user-help/turn-on-defender-windows)。 |
-|**已禁用文件和程序活动监视**|文件和程序活动监视已遭到管理员（通过使用配置文件）或托管计算机上的某位用户禁用。|启用文件和程序活动。 请参阅 Intune 中的 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)或[打开实时保护以访问公司资源](/intune-user-help/turn-on-defender-windows)。 |
-|**已禁用行为监视**|行为监视已遭到管理员（通过使用配置文件）或托管计算机上的某位用户禁用。|启用行为监视。 请参阅 Intune 中的 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)或[打开实时保护以访问公司资源](/intune-user-help/turn-on-defender-windows)。 |
-|**已禁用脚本扫描**|脚本扫描已遭到管理员（通过使用配置文件）或托管计算机上的某位用户禁用。|启用脚本扫描。 请参阅 Intune 中的 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)或[打开实时保护以访问公司资源](/intune-user-help/turn-on-defender-windows)。 |
-|**已禁用网络检查系统**|网络检查系统已遭到管理员（通过使用配置文件）或托管计算机上的某位用户禁用。|启用网络检查系统 (NIS)。 请参阅 Intune 中的 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)或[打开实时保护以访问公司资源](/intune-user-help/turn-on-defender-windows)。 |
-|**恶意软件定义过期**|计算机可能已与 Internet 断开了很长一段时间，其恶意软件定义可能尚未更新。 如果计算机上的恶意软件定义过期 14 天或更长时间，就会出现这种状态。|如果恶意软件定义过期，可使用 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)更新定义。|
-|**完全扫描逾期**|已经有 14 天未进行完全扫描。 可能的原因是完全扫描时计算机进行了重新启动。|如果完全扫描逾期，可运行一次完全扫描或计划定期完全扫描。 请参阅 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)。 |
-|**快速扫描逾期**|已经有 14 天未进行快速扫描。 这可能是快速扫描过程中重启所导致。|如果快速扫描逾期，可运行一次快速扫描或计划定期快速扫描。 请参阅 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)。|
-|**正在运行的另一个端点防护应用程序**|另一个 Endpoint Protection 应用程序正在运行，并且计算机处于正常状态。|默认情况下，如果安装了另一个 Endpoint Protection 应用程序，且 Intune 检测到该应用程序，则设备会变得不稳定。|
+## <a name="common-intune-errors-and-possible-resolutions"></a>Intune 的常见错误和可能的解决方法
 
-### <a name="next-steps"></a>后续步骤
-如果此信息没有帮助，还可以[获取对 Microsoft Intune 的支持](get-support.md)。
+#### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection 引擎不可用
+
+**可能的原因**：Intune Endpoint Protection 引擎已损坏或删除。
+
+**可能的解决方案**：
+
+- 如果 Endpoint Protection 损坏或无法更新，则更新或重新安装程序。
+- 强制执行即时更新。 在 Endpoint Protection 客户端程序（可能在任务栏中）中，选择“更新”  。
+- 在“控制面板”>“程序”中，选择“Microsoft Intune Endpoint Protection 代理”  。 卸载应用程序。
+- 在下次更新同步期间，Microsoft Online Management 更新管理器将会检测缺少的程序，并在计划安装时间重新安装它。
+
+#### <a name="features-are-disabled"></a>禁用功能
+
+可能会收到一些功能被禁用的消息。 如果管理员使用配置文件禁用了 Intune Endpoint Protection 或 Windows Defender，则可能出现这些消息。 或者，最终用户在设备上禁用了它。 可能的消息：
+
+`Endpoint Protection disabled`  
+`Real-time protection disabled`  
+`Download scanning disabled`  
+`File and program activity monitoring disabled`  
+`Behavior monitoring disabled`  
+`Script scanning disabled`  
+`Network Inspection System disabled`  
+
+**可能的解决方案**：启用这些功能。 如需指导，请参阅：
+
+- [添加 Endpoint Protection 设置](endpoint-protection-configure.md)
+- [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [最终用户：打开访问公司资源的实时保护](/intune-user-help/turn-on-defender-windows)
+
+#### <a name="malware-definitions-out-of-date"></a>恶意软件定义过期
+
+如果设备上的恶意软件定义过期 14 天或更长时间，就会显示这种状态。 例如，该消息可能显示设备是否与 Internet 断开连接，或者恶意软件定义是否过时。
+
+**可能的解决方案**：如果恶意软件定义过期，可使用 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)更新定义。
+
+#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>完全扫描逾期或快速扫描逾期
+
+14 天内尚未完成完全扫描或快速扫描。 如果设备在完全扫描期间重新启动，就会发生这种情况。
+
+**可能的原因**：如果扫描逾期，可运行一次扫描或计划定期扫描。 请参阅 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)。
+
+#### <a name="another-endpoint-protection-application-running"></a>正在运行的另一个端点防护应用程序
+
+另一个 Endpoint Protection 应用程序正在运行，并且设备处于正常状态。
+
+**可能的解决方案**：如果安装了另一个 Endpoint Protection 应用程序，且 Intune 检测到该应用程序，则设备会变得不稳定。
+
+## <a name="next-steps"></a>后续步骤
+
+[从 Microsoft 获取支持帮助](get-support.md)，或使用[社区论坛](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)。

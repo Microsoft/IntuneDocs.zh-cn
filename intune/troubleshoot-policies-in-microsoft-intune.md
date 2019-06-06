@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044604"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402662"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>在 Intune 中对策略和配置文件进行故障排除
 
@@ -32,13 +32,12 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 ## <a name="use-built-in-troubleshooting"></a>使用内置的故障排除功能
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”    。
-2. 选择“故障排除”  ：
+1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，选择“故障排除”  ：
 
     ![在 Intune 中，转到帮助和支持，并选择“故障排除”](./media/help-and-support-troubleshoot.png)
 
-3. 选择“选择用户”> 选择有问题的用户 >“选择”   。
-4. 确认“Intune 许可证”和“帐户状态”都显示绿色对勾   ：
+2. 选择“选择用户”> 选择有问题的用户 >“选择”   。
+3. 确认“Intune 许可证”和“帐户状态”都显示绿色对勾   ：
 
     ![在 Intune 中，选择用户，并确认“帐户状态”和“Intune 许可证”都显示绿色复选标记状态](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
     - [分配许可证，以便用户可以注册设备](licenses-assign.md)
     - [将用户添加到 Intune](users-add.md)
 
-5. 在“设备”下，找到有问题的设备  。 查看不同的列：
+4. 在“设备”下，找到有问题的设备  。 查看不同的列：
 
     - **托管**：要使设备接收符合性或配置策略，此属性必须显示“MDM”或“EAS/MDM”   。
 
@@ -98,7 +97,7 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>不确定是否正确应用了配置文件
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”> 筛选“Intune”> 选择“Intune”    。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“设备” > “所有设备”> 选择设备 >“设备配置”    。 
 
     每台设备均列出了其配置文件。 每个配置文件都具有“状态”  。 综合考虑所有分配的配置文件（包括硬件以及 OS 限制和要求）时，状态适用。 可能的状态包括：
@@ -164,4 +163,6 @@ Windows Phone 设备不允许使用 MDM 或 EAS 设置安全策略后降低其�
 
 ## <a name="next-steps"></a>后续步骤
 
-如果仍需要一些帮助，可以[获取 Microsoft Intune 支持](get-support.md)。
+[电子邮件配置文件的常见问题和解决方法](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+[从 Microsoft 获取支持帮助](get-support.md)，或使用[社区论坛](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)。

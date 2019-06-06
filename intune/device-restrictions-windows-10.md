@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
-ms.translationtype: HT
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174191"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354224"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -58,6 +58,24 @@ ms.locfileid: "66174191"
 - **在系统驱动器上安装应用**：选择“阻止”可阻止在设备的系统驱动器上安装应用  。 选择“未配置”（默认）则允许在系统驱动器上安装应用  。
 - **游戏 DVR**（仅桌面版）：选择“阻止”可禁用 Windows 游戏录制和播放  。 选择“未配置”（默认）则允许录制和播放游戏  。
 - **仅限商店提供的应用**：选择“需要”可强制最终用户仅从 Windows 应用商店安装应用  。 选择“未配置”（默认）则允许最终用户从 Windows 应用商店以外的位置安装应用  。
+- **更新时强制重启应用失败**：使用应用时，它可能没有更新。 使用此设置以强制重新启动应用。 “未配置”  （默认）不会强制重启应用。 “需要”  允许管理员在特定日期和时间或按定期计划强制重新启动。 如果设置为“需要”  ，还要输入：
+
+  - **开始日期/时间**：选择特定日期和时间来重启应用。
+  - **定期**：选择每天、每周或每月重新启动。
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **用户对安装进行控制**：当设置为“未配置”  （默认），Windows Installer 将阻止用户更改通常为系统管理员保留的安装选项，如输入安装文件的目录。 “块”  允许用户更改这些安装选项，并绕过某些 Windows Installer 的安全功能。
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **使用提升的权限安装应用程序**：当设置为“未配置”  （默认），如果系统安装系统管理员没有部署或提供的程序，它将应用当前用户的权限。 当 Windows Installer 在系统上安装任何程序时，“块”  将指示它使用提升的权限。 这些权限扩展到所有程序。
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **启动应用**：输入用户登录设备后要打开的应用程序列表。 请确保使用分号分隔的 Windows 应用程序包系列名称 (PFN) 列表。 若要运行此策略，Windows 应用程序清单必须使用启动任务。
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 选择“确定”，保存所做更改  。
 
@@ -408,6 +426,10 @@ ms.locfileid: "66174191"
     - **数字**：密码必须只是数字。
     - **字母数字**：密码必须是数字和字母的混合。
   - **最短密码长度**：输入所需的最小数量或字符数，范围为 4-16。 例如，输入 `6` 可要求密码长度至少为六个字符。
+  
+    > [!IMPORTANT]
+    > 当 Windows 桌面的密码要求更改时，用户下次登录时会受到影响，因为此时设备从空闲状态变为活动状态。 密码满足要求的用户仍然会被提示更改密码。
+    
   - **擦除设备前登录失败的次数**：输入在擦除设备之前允许的身份验证失败数量，从 1 到 11。 `0`（零）可能会禁用设备擦除功能。
 
     根据版本的不同，此设置会产生不同的影响。 有关具体细节，请参阅 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)。
@@ -755,7 +777,7 @@ ms.locfileid: "66174191"
 
   有关可能不需要的应用程序的详细信息，请参阅[检测和阻止可能不需要的应用程序](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)。
 
-- **检测到恶意软件威胁时的操作**：选择 Defender 针对其检测到的每个威胁级别（低、中、高和严重）要执行的操作。 选项包括：
+- **检测到恶意软件威胁时的操作**：选择 Defender 针对其检测到的每个威胁级别（低、中、高和严重）要执行的操作。 如果不能，Windows Defender 将选择最佳选项，以确保解决威胁。 选项包括：
   - **清理**
   - **隔离**
   - **移除**
