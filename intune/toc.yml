@@ -135,6 +135,10 @@
           items:
             - name: 网络配置
               href: network-bandwidth-use.md
+            - name: Intune 终结点
+              href: intune-endpoints.md
+            - name: Intune 美国政府终结点
+              href: intune-us-government-endpoints.md
         - name: 登录到 Intune
           href: account-sign-up.md
         - name: 配置域
