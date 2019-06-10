@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73d6aab271e6c065dbdaac2359974457d8fae607
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050557"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412003"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中添加和使用设备上的 Wi-Fi 设置
 
@@ -48,10 +48,10 @@ Wi-Fi 配置文件支持以下设备平台：
 
 ## <a name="create-a-device-profile"></a>创建设备配置文件
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。 
-2. 选择“设备配置” > “配置文件” > “创建配置文件”。
-3. 为 Wi-Fi 配置文件输入“名称”和“说明”。
-4. 从“平台”下拉列表中，选择要应用 Wi-Fi 设置的设备平台。 选项包括：
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
+3. 为 Wi-Fi 配置文件输入“名称”  和“说明”  。
+4. 从“平台”  下拉列表中，选择要应用 Wi-Fi 设置的设备平台。 选项包括：
 
     - **Outlook Web Access (OWA)**
     - **Android 企业**
@@ -60,10 +60,10 @@ Wi-Fi 配置文件支持以下设备平台：
     - **Windows 8.1 及更高版本**
     - **Windows 10 及更高版本**
 
-5. 在“配置文件类型”中，选择“Wi-Fi”。
+5. 在“配置文件类型”  中，选择“Wi-Fi”  。
 
-    - 对于作为展台运行的 Android Enterprise 设备，可以选择“仅设备所有者” > “Wi-Fi”。
-    - 对于 Windows 8.1 及更高版本，可以选择“Wi-Fi 导入”。 此选项允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
+    - 对于作为展台运行的 Android Enterprise  设备，可以选择“仅设备所有者”   > “Wi-Fi”  。
+    - 对于 Windows 8.1 及更高版本  ，可以选择“Wi-Fi 导入”  。 此选项允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
 
 6. 某些 Wi-Fi 设置针对每个平台会有所不同。 若要查看特定平台的设置，可选择：
 
@@ -74,9 +74,9 @@ Wi-Fi 配置文件支持以下设备平台：
     - [Windows 10 及更高版本](wi-fi-settings-windows.md)
     - [Windows 8.1 及更高版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
 
-    大多数平台都具有“基本”和“企业”设置。 “基本”包括功能，如网络名称和 SSID。 “企业”可提供更高级的信息，如可扩展身份验证协议 (EAP)。
+    大多数平台都具有“基本”  和“企业”  设置。 “基本”  包括功能，如网络名称和 SSID。 “企业”  可提供更高级的信息，如可扩展身份验证协议 (EAP)。
 
-7. 添加 Wi-Fi 设置完成后，选择“创建配置文件” > “创建”以添加配置文件。 配置文件随即创建并显示在配置文件列表中（“设备配置” > “配置文件”）。
+7. 添加 Wi-Fi 设置完成后，选择“创建配置文件”   > “创建”  以添加配置文件。 配置文件随即创建并显示在配置文件列表中（“设备配置”   > “配置文件”  ）。
 
 ## <a name="next-steps"></a>后续步骤
 

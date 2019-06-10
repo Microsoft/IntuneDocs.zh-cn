@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7657577372a37c7554941886b80277bfee11e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1aa79bbaa6765a0d4b6009468bdfa184222c5f00
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049427"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454083"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
@@ -34,7 +34,7 @@ ms.locfileid: "66049427"
 ## <a name="before-you-start"></a>开始之前
 
 > [!IMPORTANT]
-> 如果最终用户设备上有 .msi Office 应用，则必须使用“删除 MSI”功能来安全地卸载这些应用。 否则，Intune 提供的 Office 365 应用将无法安装。
+> 如果最终用户设备上有 .msi Office 应用，则必须使用“删除 MSI”  功能来安全地卸载这些应用。 否则，Intune 提供的 Office 365 应用将无法安装。
 
 - 部署这些应用的设备必须运行 Windows 10 创意者更新或更高版本。
 - Intune 仅支持添加来自 Office 365 套件的 Office 应用。
@@ -43,41 +43,40 @@ ms.locfileid: "66049427"
 - 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Microsoft Store 中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。
 - 多个必需或可用的应用分配不会累加。 后面的应用分配会覆盖之前存在的已安装应用分配。 例如，如果第一组 Office 应用包含 Word，而后面的应用不包含，则 Word 会被卸载。 该条件不适用于任何 Visio 或 Project 应用程序。
 - **Office 版本** - 选择要分配 32 位还是 64 位版本的 Office。 可以在 32 位和 64 位设备上安装 32 位版本，但只能在 64 位设备上安装 64 位版本。
-- **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)。 Intune 在最终用户计算机上重新安装 Office 时，最终用户将自动获得与以前安装的 .MSI Office 相同的语言包。
+- **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用  。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)。 Intune 在最终用户计算机上重新安装 Office 时，最终用户将自动获得与以前安装的 .MSI Office 相同的语言包。
 
 ## <a name="get-started"></a>入门
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“客户端应用”。
-4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”。
-5. 选择“添加”。
-6. 在“添加应用”窗格中，请在“应用类型”列表中的“Office 365 套件”下选择“Windows 10”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 在“Intune”窗格中，选择“客户端应用”   。
+4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”    。
+5. 选择“添加”  。
+6. 在“添加应用”窗格中，请在“应用类型”列表中的“Office 365 套件”下选择“Windows 10”     。
 
 ## <a name="select-settings-format"></a>选择设置格式
 
-可通过选择“设置格式”来选择配置应用设置的方法。 设置格式选项包括：
+可通过选择“设置格式”来选择配置应用设置的方法  。 设置格式选项包括：
 - 配置设计器
 - 输入 XML 数据
 
-选择“配置设计器”后，“添加应用”边栏选项卡会发生变化，会新增两个设置选项：
+选择“配置设计器”后，“添加应用”边栏选项卡会发生变化，会新增两个设置选项   ：
 - 配置应用套件
 - 应用套件设置
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-选择“输入 XML 数据”后，“添加应用”边栏选项卡会显示“输入 XML 数据”选项。 选择此选项以显示“配置文件”边栏选项卡。 
+选择“输入 XML 数据”后，“添加应用”边栏选项卡会显示“输入 XML 数据”选项    。 选择此选项以显示“配置文件”边栏选项卡  。 
 
 ![添加 Office 365 配置设计器](./media/apps-add-office365/apps-add-office365-01.png)
     
-有关“输入 XML 数据”选项的详细信息，请参阅下方的[输入 XML 数据](apps-add-office365.md#enter-xml-format)。
+有关“输入 XML 数据”选项的详细信息，请参阅下方的[输入 XML 数据](apps-add-office365.md#enter-xml-format)  。
 
 ## <a name="configure-app-suite-information"></a>配置应用套件信息
 
 在此步骤中，提供有关该应用套件的信息。 此信息有助于在 Intune 中识别应用套件，也有助于用户在公司门户中找到应用套件。
 
-1. 在“添加应用”窗格中，选择“应用套件信息”。
-2. 在“应用套件信息”窗格中，请执行以下操作：
+1. 在“添加应用”  窗格中，选择“应用套件信息”  。
+2. 在  “应用套件信息”窗格中，请执行以下操作：
     - **套件名称**：输入应用套件的名称，该名称将显示在公司门户中。 请确保使用的所有套件名称都是唯一的。 如果同一应用套件名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - **套件描述**：输入应用套件的描述。 例如，可以列出已选择要包括的应用。
     - **发布者**：Microsoft 显示为发布者。
@@ -89,23 +88,23 @@ ms.locfileid: "66049427"
     - **所有者**：Microsoft 显示为所有者。
     - **备注**：输入想与此应用关联的任何备注。
     - **徽标**：用户浏览公司门户时，Office 365 徽标与应用一同显示。
-3. 选择“确定”。
+3. 选择“确定”  。
 
 ## <a name="configure-app-suite"></a>配置应用套件
 
-如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”边栏选项卡中的“配置应用套件”选项。 选择想要分配到设备的 Office 应用。
+如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”边栏选项卡中的“配置应用套件”选项     。 选择想要分配到设备的 Office 应用。
 
-1. 在“添加应用”窗格中，选择“配置应用套件”。
-2. 在“配置应用套件”窗格中，选择想要分配到设备的标准 Office 应用。  
+1. 在“添加应用”  窗格中，选择“配置应用套件”  。
+2. 在“配置应用套件”  窗格中，选择想要分配到设备的标准 Office 应用。  
     此外，还可以安装适用于 Microsoft Project Online 桌面客户端和 Microsoft Visio Online 计划 2 的应用，前提是拥有它们的许可证。
-3. 选择“确定”。
+3. 选择“确定”  。
 
 ## <a name="configure-app-suite-settings"></a>配置应用套件设置
 
-如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”边栏选项卡中的“应用套件设置”选项。 在此步骤中，配置应用套件的安装选项。 这些设置适用于添加到该套件的所有应用。
+如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”边栏选项卡中的“应用套件设置”选项     。 在此步骤中，配置应用套件的安装选项。 这些设置适用于添加到该套件的所有应用。
 
-1. 在“添加应用”窗格中，选择“应用套件设置”。
-2. 在“应用套件设置”窗格中，请执行以下操作：
+1. 在“添加应用”  窗格中，选择“应用套件设置”  。
+2. 在  “应用套件设置”窗格中，请执行以下操作：
     - **Office 版本**：选择要分配 32 位还是 64 位版本的 Office。 可以在 32 位和 64 位设备上安装 32 位版本，但只能在 64 位设备上安装 64 位版本。
     - **更新通道**：选择在设备上更新 Office 的方式。 有关不同更新通道的信息，请参阅 [Office 365 专业增强版的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。 选择：
         - **每月**
@@ -113,7 +112,7 @@ ms.locfileid: "66049427"
         - **半年**
         - **半年（定向）**
 
-        选择通道后，可选择“特定”，在最终用户设备上为所选通道安装特定的 Office 版本。 然后，选择要使用的特定版本的 Office。
+        选择通道后，可选择“特定”，在最终用户设备上为所选通道安装特定的 Office 版本  。 然后，选择要使用的特定版本的 Office  。
         
         可用版本会随时间发生变化。 因此，在创建新部署时，可用版本可能为更新的版本，而不再提供某些较旧版本。 当前部署会继续部署旧版本，但版本列表会持续按通道更新。
         
@@ -121,19 +120,27 @@ ms.locfileid: "66049427"
         
         有关详细信息，请参阅 [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
 
-    - **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)。 Intune 在最终用户计算机上重新安装 Office 时，最终用户将自动获得与以前安装的 .MSI Office 相同的语言包。 
+    - **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用  。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)。 Intune 在最终用户计算机上重新安装 Office 时，最终用户将自动获得与以前安装的 .MSI Office 相同的语言包。 
     - **自动接受应用最终用户许可协议**：如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
     - **使用共享的计算机激活**：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 [Office 365 的共享计算机激活概述](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **语言**：Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。 <p></p>
-    可以为通过 Intune 管理的 Office 365 专业增强版应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。 在“应用套件设置”边栏选项卡中选择“语言”。 有关其他信息，请参阅 [Office 365 专业增强版中的语言部署概述](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
+    可以为通过 Intune 管理的 Office 365 专业增强版应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）  。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”     。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”     。 在“应用套件设置”边栏选项卡中选择“语言”   。 有关其他信息，请参阅 [Office 365 专业增强版中的语言部署概述](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
+
+## <a name="select-scope-tags-optional"></a>选择作用域标记（可选）。
+可以使用作用域标记来确定谁可以在 Intune 中查看客户端应用信息。 若要详细了解作用域标记，请参阅[将基于角色的访问控制和作用域标记用于分布式 IT](scope-tags.md)。
+
+1. 选择“作用域(标记)”   >   “添加”。
+2. 使用“选择”  框搜索作用域标记。
+3. 选中要分配到此应用的作用域标记旁边的复选框。
+4. 选择“选择” > “确定”   。
 
 ## <a name="enter-xml-format"></a>输入 XML 格式
 
-如果选择“设置格式”下拉框下方的“输入 XML 数据”选项，将看到“添加应用”边栏选项卡中的“输入 XML 格式”选项。 有关详细信息，请参阅 [Office 部署工具的配置选项](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
+如果选择“设置格式”下拉框下方的“输入 XML 数据”选项，将看到“添加应用”边栏选项卡中的“输入 XML 格式”选项     。 有关详细信息，请参阅 [Office 部署工具的配置选项](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
 
 ## <a name="finish-up"></a>完成
 
-完成后，在“添加应用”窗格中，选择“添加”。 创建的应用将显示在应用列表中。
+完成后，在“添加应用”  窗格中，选择“添加”  。 创建的应用将显示在应用列表中。
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>在安装应用套件期间出错
 

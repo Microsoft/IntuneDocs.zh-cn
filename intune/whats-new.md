@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264168"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469591"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -45,6 +45,13 @@ ms.locfileid: "66264168"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-27-2019"></a>2019 年 5 月 27 日当周 
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="reporting-for-potentially-harmful-apps-on-android-devices----4223162---"></a>报告 Android 设备上可能有害的应用 <!-- 4223162 -->
+Intune 现在提供有关 Android 设备上可能有害的应用的其他报告信息。 
 
 ## <a name="week-of-may-20-2019"></a>2019 年 5 月 20 日当周 
 
@@ -134,7 +141,7 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 适用于：iOS
 
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender 高级威胁防护基线（预览版）  <!--  3754134 -->
-已添加用于 [Microsoft Defender 高级威胁防护](security-baseline-settings-defender-atp.md)设置的安全基线（预览版）。  
+已添加用于 [Microsoft Defender 高级威胁防护](security-baseline-settings-defender-atp.md)设置的安全基线（预览版）。 当环境满足使用 [Microsoft Defender 高级威胁防护](advanced-threat-protection.md#prerequisites)的先决条件时，此基线才可用。
 
 ### <a name="device-enrollment"></a>设备注册
 
@@ -153,6 +160,14 @@ Autopilot 重置现在适用于所有 Windows 设备，甚至包括那些未配�
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>从 Apple 门户删除设备时，Intune 门户将反映此操作 <!--2489996 -->
 如果从 Apple 的设备注册计划或 Apple Business Manager 门户删除设备，下次同步时将自动从 Intune 删除该设备。
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>注册状态页现在跟踪 Win32 应用 <!-- 2714451 -->
+这仅适用于运行 Windows 10 版本 1903 及更高版本的设备。 有关详细信息，请参阅[设置注册状态页](windows-enrollment-status.md)。
+
+### <a name="device-management"></a>设备管理
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>使用图形 API 批量重置和擦除设备 <!-- 3295288 -->
+用户现在可以使用图形 API 批量重置和擦除多达 100 台设备。
 
 
 ### <a name="monitor-and-troubleshoot"></a>监视和故障排除
@@ -227,7 +242,7 @@ Android 设备上的 Intune 应用保护策略 (APP) 现在使用符合 FIPS 140
 “设备概述”页将显示主要用户，也称为用户设备相关性用户 (UDA)。 要查看设备的主要用户，请选择“Intune” > “设备” > “所有设备”> 选择一个设备    。 主要用户将显示在靠近“概述”页顶部的位置  。
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android Enterprise 工作配置文件设备的其他托管 Google Play 应用报告 <!-- 4105925  -->
-对于部署到 Android Enterprise 工作配置文件设备的托管 Google Play 应用，可以查看设备上安装的应用的特定版本号。 这仅适用于所需的应用。 对于可用的应用，相同的功能将在未来版本中启用。 
+对于部署到 Android Enterprise 工作配置文件设备的托管 Google Play 应用，可以查看设备上安装的应用的特定版本号。 这仅适用于所需的应用。  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS 第三方键盘 <!-- 4111843   -->
 由于 iOS 平台更改，不再支持适用于针对 iOS 的“第三方键盘”设置的 Intune 应用保护策略 (APP) 的支持  。 你将无法在 Intune 管理控制台中配置此设置，并且此设置将不会在 Intune App SDK 中的客户端上强制执行。
@@ -277,7 +292,7 @@ Android 设备上的 Intune 应用保护策略 (APP) 现在使用符合 FIPS 140
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>了解 Windows 10 设备合规性策略中的 TPM 芯片组 <!-- 3617671 -->
 
-此功能已推迟，应包含在将来版本中。
+此功能已推迟，并计划稍后发布。
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>更新了 Windows 10 及更高版本设备上 Microsoft Edge 浏览器的 UI 更改 <!-- 3775833   -->
 创建设备配置文件时，可以允许或限制 Windows 10 及更高版本设备上的 Microsoft Edge 功能（依次选择“设备配置” > “配置文件” > “创建配置文件”> 针对平台选择“Windows 10 和更高版本”> 针对配置文件类型选择“设备限制”>“Microsoft Edge 浏览器”     >     ）。 在此更新中，Microsoft Edge 设置的描述更具体，更易于理解。 
@@ -320,7 +335,7 @@ Android 设备上的 Intune 应用保护策略 (APP) 现在使用符合 FIPS 140
 ### <a name="device-management"></a>设备管理
 
 #### <a name="retire-noncompliant-devices-----1827291-----"></a>停用不合规的设备  <!-- 1827291   -->
-此功能已推迟至将来版本中发布。
+此功能已推迟，并计划在将来版本中发布。
 
 
 ### <a name="monitor-and-troubleshoot"></a>监视和故障排除
@@ -878,7 +893,7 @@ Intune 中的管理模板（“设备配置”   >   “管理模板”）当前
 ### <a name="role-based-access-control"></a>基于角色的访问控制
 
 #### <a name="scope-tags-for-apps----1081941---"></a>应用的作用域标记 <!-- 1081941 -->
-可创建作用域标记来限制对角色和应用的访问。 可向应用添加作用域标记，以便只有具有特定角色（该角色也分配有该作用域标记）的人员才可以访问该应用。 目前，无法向从托管 Google Play 添加到 Intune 的应用或使用 Apple Volume Purchase Program (VPP) 购买的应用分配作用域标记（但在将来会提供此支持）。 有关详细信息，请参阅[使用作用域标记筛选策略](scope-tags.md)。
+可创建作用域标记来限制对角色和应用的访问。 可向应用添加作用域标记，以便只有具有特定角色（该角色也分配有该作用域标记）的人员才可以访问该应用。 目前，无法向从托管 Google Play 添加到 Intune 的应用或使用 Apple Volume Purchase Program (VPP) 购买的应用分配作用域标记（但计划在将来提供此支持）。 有关详细信息，请参阅[使用作用域标记筛选策略](scope-tags.md)。
 
 <!-- ########################## -->
 ## <a name="week-of-december-10-2018"></a>2018 年 12 月 10 日当周
@@ -908,7 +923,7 @@ Intune 现在需要 macOS 版本 10.12 或更高版本。 使用以前的 macOS 
 你可以删除公司拥有的受监督 iOS 设备上的应用。 可以通过以“卸载”分配类型的用户或设备组为目标来删除任何应用  。 对于个人或无监督的 iOS 设备，你将继续只能删除使用 Intune 安装的应用。
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>下载 Intune Win32 应用内容 <!-- 2617320 -->
-Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用传递优化组件下载 Intune Win32 应用内容。 传递优化提供了在默认情况下处于打开状态的对等功能。 可以通过组策略配置传递优化，以后可以通过 Intune MDM 进行配置。 有关详细信息，请参阅[适用于 Windows 10 的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。 
+Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用传递优化组件下载 Intune Win32 应用内容。 传递优化提供了在默认情况下处于打开状态的对等功能。 目前，可以通过组策略配置传递优化。 有关详细信息，请参阅[适用于 Windows 10 的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>最终用户设备的应用内容菜单 <!-- 2771453 -->
 最终用户现在可以使用设备上的上下文菜单和应用来触发常见操作，例如，重命名设备或检查合规性。
