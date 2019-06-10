@@ -576,10 +576,12 @@
                   href: windows-store-for-business.md
                 - name: iOS 电子图书
                   href: vpp-ebooks-ios.md
-            - name: 配置公司门户应用
+            - name: 配置公司门户
               href: company-portal-app.md
             - name: 配置 Managed Browser
               href: app-configuration-managed-browser.md
+            - name: 配置 Microsoft Edge
+              href: manage-microsoft-edge.md
             - name: 配置 Outlook
               href: app-configuration-policies-outlook.md
         - name: 保护应用
