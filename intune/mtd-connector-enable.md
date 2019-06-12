@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7998eb82b27a7e70d5a77374950e544fd603f6d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046285"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819644"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中启用移动威胁防御连接器
 
@@ -33,17 +33,13 @@ ms.locfileid: "66046285"
 
 ## <a name="to-enable-the-mtd-connector"></a>启用 MTD 连接器
 
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用 Intune 凭据登录。 成功登录后，会看到“Azure 仪表板”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 
-2. 在“Azure 仪表板”中，从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
+4. 在“Intune 仪表板”  中，选择“设备符合性”  ，然后选择“设置”  部分下的“移动威胁防御”  。
 
-3. 选择“Intune”，随即打开“Intune 仪表板”。
+5. 在“移动威胁防御”窗格上，选择“添加”   。
 
-4. 在“Intune 仪表板”中，选择“设备符合性”，然后选择“设置”部分下的“移动威胁防御”。
-
-5. 在“移动威胁防御”窗格上，选择“添加”。
-
-6. 从下拉列表中选择 MTD 解决方案作为“要设置的移动威胁防御连接器”。
+6. 从下拉列表中选择 MTD 解决方案作为“要设置的移动威胁防御连接器”  。
 
     ![Intune Azure 门户中的 MTD 设置](./media/enable-mtd-connector-1.png)
 
@@ -69,4 +65,4 @@ ms.locfileid: "66046285"
 > 如有可能，我们建议在创建设备符合性和条件性访问策略规则之前，先添加和分配 MTD 应用。 这样有助于确保最终用户能够安装 MTD 应用，以便访问电子邮件或其他公司资源。
 
 > [!TIP]
-> 可以从“移动威胁防御”窗格中查看 Intune 和 MTD 合作伙伴之间的“连接状态”和“上次同步”时间。
+> 可以从“移动威胁防御”窗格中查看 Intune 和 MTD 合作伙伴之间的“连接状态”和“上次同步”时间   。
