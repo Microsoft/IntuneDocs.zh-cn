@@ -270,7 +270,7 @@
         - name: 清除 macOS 设备
           href: device-erase.md
         - name: 远程控制移动设备
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: Windows 10 PIN 重置
           href: device-windows-pin-reset.md
         - name: 同步设备
