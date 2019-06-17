@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
-ms.translationtype: HT
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744307"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031650"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>Microsoft Intune 开发过程中的功能 - 2019 年 6 月
 
@@ -51,14 +51,11 @@ ms.locfileid: "66744307"
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>设备用户可以查看他们已安装或尝试安装的所有托管应用 <!-- 2352913 -->
 Company Portal for Windows 将列出用户设备上安装的所有（要求的和可用的）托管应用。 用户将能够查看已尝试和待处理的应用安装及其当前状态。 如果组织未提供所需或可用的应用，则用户将看到一条消息，说明尚未安装任何公司应用。 用户还可以按安装状态对其应用进行排序或筛选。
 
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>用于 Android 工作配置文件的可用 Google Play 应用报告 <!-- 3041956 -->
-对于 Android 工作配置文件设备上的可用应用安装，可以查看应用安装状态以及托管的 Google Play 应用的安装版本。 有关详细信息，请查看[如何监视应用保护策略](app-protection-policies-monitor.md)、[使用 Intune 管理 Android 工作配置文件设备](android-enterprise-overview.md)和[托管的 Google Play 应用类型](apps-add-android-for-work.md#managed-google-play-app-type)。
-
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>配置允许哪种浏览器链接到组织数据 <!-- 3145939 -->
 借助 Android 和 iOS 设备上的 Intune 应用保护策略 (APP)，可以将 Org web 链接转移到特定的浏览器（不仅限于 Intune Managed Browser 和 Microsoft Edge）。  有关 APP 的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)。
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>公司门户网站上的已安装应用页  <!-- 4224326 -->
-[公司门户网站](https://portal.manage.microsoft.com/)将添加一个新网页，该网页向用户显示已安装在他们设备上的所有应用。 此列表包括可用的应用和组织要求使用的应用。 在此页中，用户可以查看其设备上应用的安装和要求状态。 有关公司门户网站的详细信息，请参阅[使用 Intune 公司门户网站](/intune-user-help/using-the-intune-company-portal-website.md)和[如何配置 Microsoft Intune 公司门户应用](company-portal-app.md)。
+[公司门户网站](https://portal.manage.microsoft.com/)将添加一个新网页，该网页向用户显示已安装在他们设备上的所有应用。 此列表包括可用的应用和组织要求使用的应用。 在此页中，用户可以查看其设备上应用的安装和要求状态。 有关公司门户网站的详细信息，请参阅[使用 Intune 公司门户网站](/intune-user-help/using-the-intune-company-portal-website)和[如何配置 Microsoft Intune 公司门户应用](company-portal-app.md)。
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>在不使用用户凭据的情况下从应用程序调用 Graph API 读取操作 <!-- 4655885 -->
 应用程序将能够在不使用用户凭据的情况下通过应用标识调用 Intune Graph API 读取操作。 要了解详细信息，请参阅[在没有用户的情况下访问](https://docs.microsoft.com/graph/auth-v2-service)。
