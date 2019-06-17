@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MTE75
+ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043793"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506876"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -33,11 +33,11 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>如果应用位于组织内部且非公用：
 
-则无需注册应用__。 对于由公司编写或为公司编写的内部[业务线 (LOB) 应用](apps-add.md#app-types-in-microsoft-intune)，IT 管理员将在内部部署该应用。 Intune 将检测已使用 SDK 构建的应用，并允许 IT 管理员对其应用保护策略。 可跳到[启用 iOS 或 Android 应用的应用保护策略](#enable-your-ios-or-android-app-for-app-protection-policy)部分。
+则无需注册应用 _ _。 对于由公司编写或为公司编写的内部[业务线 (LOB) 应用](apps-add.md#app-types-in-microsoft-intune)，IT 管理员将在内部部署该应用。 Intune 将检测已使用 SDK 构建的应用，并允许 IT 管理员对其应用保护策略。 可跳到[启用 iOS 或 Android 应用的应用保护策略](#enable-your-ios-or-android-app-for-app-protection-policy)部分。
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>如果应用将被发布到公共应用商店（例如Apple App Store 或 Google Play）：
 
-则_**必须**_ 首先向 Microsoft Intune 注册应用并同意注册条款。 然后，IT 管理员可将应用保护策略应用到托管应用，该应用将被列为[受 Intune 保护的合作伙伴应用](apps-supported-intune-apps.md#partner-apps)。
+则 _**必须**_ 首先向 Microsoft Intune 注册应用并同意注册条款。 然后，IT 管理员可将应用保护策略应用到托管应用，该应用将被列为[受 Intune 保护的合作伙伴应用](apps-supported-intune-apps.md#partner-apps)。
 
 除非已完成注册并已由 Microsoft Intune 团队确认，否则 Intune 管理员不能向应用深层链接应用应用保护策略。 Microsoft 还会将你的应用添加到其 [Microsoft Intune 合作伙伴页](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。 在该页面中，将显示应用的图标，表明它支持 Intune 应用保护策略。
 
@@ -81,11 +81,11 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 需要参阅以下开发人员指南中的一个来帮助将 Intune App SDK 集成到应用：
 
-* **[Intune App SDK for iOS 开发人员指南](app-sdk-ios.md)**：本文档将指导逐步完成使用 Intune App SDK 启用本机 iOS 应用的过程。
+* **[Intune App SDK for iOS 开发人员指南](app-sdk-ios.md)** ：本文档将指导逐步完成使用 Intune App SDK 启用本机 iOS 应用的过程。
 
-* **[Intune App SDK for Android 开发人员指南](app-sdk-android.md)**：本文档将指导你逐步完成使用 Intune App SDK 启用本机 Android 应用的过程。
+* **[Intune App SDK for Android 开发人员指南](app-sdk-android.md)** ：本文档将指导你逐步完成使用 Intune App SDK 启用本机 Android 应用的过程。
 
-* **[Intune App SDK Xamarin Bindings 指南](app-sdk-xamarin.md)**：此文档可帮助使用 Intune 应用保护策略适用的 Xamarin 来生成 iOS 和 Android 应用。
+* **[Intune App SDK Xamarin Bindings 指南](app-sdk-xamarin.md)** ：此文档可帮助使用 Intune 应用保护策略适用的 Xamarin 来生成 iOS 和 Android 应用。
 
 
 
@@ -115,7 +115,7 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
 ### <a name="full-version-number"></a>完整版本号
 
-完整版本号标识应用的特定版本。 该号码显示为“版本号(内部版本号)”。 例如：2.2(2.2.17560800)。 
+完整版本号标识应用的特定版本。 该号码显示为“版本号(内部版本号)”   。 例如：2.2(2.2.17560800)。 
 
 完整版本号包含两个部分：
 
@@ -129,7 +129,7 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
 Android 和 iOS 都使用应用相关的版本号和内部版本号。 但是，这两个操作系统都具有特定于 OS 的含义。 下表说明了这些术语之间的关联。
 
-开发用于 Intune 的业务线应用程序时，请务必使用版本号和内部版本号。 Intune 应用管理功能依赖于有意义的 CFBundleVersion（适用于 iOS）和 PackageVersionCode（适用于 Android）。 这些号码都包括在应用清单中。 
+开发用于 Intune 的业务线应用程序时，请务必使用版本号和内部版本号。 Intune 应用管理功能依赖于有意义的 CFBundleVersion（适用于 iOS）和 PackageVersionCode（适用于 Android）   。 这些号码都包括在应用清单中。 
 
 Intune|iOS|Android|描述|
 |---|---|---|---|
@@ -165,24 +165,21 @@ Intune|iOS|Android|描述|
 
 * **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。 如果应用已集成 Intune SDK，但尚未在 Azure 门户中作为目标应用列出，则可以使用策略将其设置为目标，方法是选择“+ 更多应用”选项并在文本框中提供捆绑包 ID (iOS) 或包名称 (Android)。
 
-* 疑难解答：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
+*  疑难解答：如果在手动测试应用的安装用户体验时遇到任何问题，请参阅[应用安装问题疑难解答](troubleshoot-app-install.md)。 
 
 ### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>向 Intune 应用保护服务提供应用访问权限（可选）
 
-如果应用正在使用其自己的自定义 Azure Active Directory (AAD) 设置进行身份验证，则应为公共应用商店应用以及内部 LOB 应用执行以下步骤。 如果应用正在使用 Intune SDK 默认客户端 ID，则不需要执行这些步骤。 
+如果应用正在使用其自己的自定义 Azure Active Directory (AAD) 设置进行身份验证，则应为公共应用商店应用以及内部 LOB 应用执行以下步骤。 如果应用正在使用 Intune SDK 默认客户端 ID，则不需要执行这些步骤  。 
 
-一旦在 Azure 租户内注册应用并在“所有应用程序”下显示该应用，就必须向 Intune 应用保护服务（以前称为 MAM 服务）提供应用访问权限。 在 Azure 门户中：
+一旦在 Azure 租户内注册应用并在“所有应用程序”下显示该应用  ，就必须向 Intune 应用保护服务（以前称为 MAM 服务）提供应用访问权限。 在 Azure 门户中：
 
-1.  转到“Azure Active Directory”边栏选项卡。
-2.  选择“应用注册”，设置应用程序。
-3.  在“API 访问”标题下的“设置”中，选择“所需权限”。 
-4.  单击“+ 添加”。
-5.  单击“选择 API”。 
-6.  在搜索框中，输入“Microsoft 移动应用程序管理”。
-7.  单击选择 API 列表中的“Microsoft 移动应用程序管理”。
-8.  选择“读取和写入用户的应用管理数据”。
-9.  单击“完成”。
-10. 单击“授予权限”，然后单击“是”。 
+1.  转到“Azure Active Directory”边栏选项卡  。
+2.  在“应用注册”下，转到为应用程序设置的列表  。
+3.  单击“+ 添加权限”  。
+4.  单击“我的组织使用的 API”  。 
+5.  在搜索框中，输入“Microsoft 移动应用程序管理”  。
+6.  在“委托的权限”下，选择“DeviceManagementManagedApps.ReadWrite: 读取和写入用户的应用管理数据”*复选框   。
+7. 单击“添加权限”  。
 
 ### <a name="badge-your-app-optional"></a>标记应用（可选）
 

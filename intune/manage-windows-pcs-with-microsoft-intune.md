@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e39766bc8a880c104bd5af9ff530144e2b5d2beb
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041689"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044944"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
 
@@ -58,7 +58,7 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 |---------------|--------------------|
 |操作系统 | 运行 Windows 7 SP1 和 Windows 8.1 或更高版本的 Windows 设备。 </br></br>**不支持家庭版各版本。**|
 |管理权限|安装客户端软件的帐户必须具有该设备的本地管理员权限。|
-|Windows Installer 3.1|PC 至少必须安装 Windows Installer 3.1。<br /><br />查看 PC 上 Windows Installer 的版本：<br /><br />  在电脑上，右键单击 **%windir%\System32\msiexec.exe**，然后单击“属性”。<br /><br />你可以从 Microsoft Developer Network 网站上的 [Windows Installer Redistributables（Windows Installer 可再分发文件）](http://go.microsoft.com/fwlink/?LinkID=234258) 中下载最新版本的 Windows Installer。|
+|Windows Installer 3.1|PC 至少必须安装 Windows Installer 3.1。<br /><br />查看 PC 上 Windows Installer 的版本：<br /><br />  在电脑上，右键单击 **%windir%\System32\msiexec.exe**，然后单击“属性”  。<br /><br />你可以从 Microsoft Developer Network 网站上的 [Windows Installer Redistributables（Windows Installer 可再分发文件）](http://go.microsoft.com/fwlink/?LinkID=234258) 中下载最新版本的 Windows Installer。|
 |删除不兼容的客户端软件|安装 Intune 客户端软件之前，需从该电脑卸载任何 Configuration Manager、Operations Manager 和 Service Manager 客户端软件。|
 
 > [!WARNING]
@@ -70,7 +70,7 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>使用 Intune 客户端软件时具有的计算机管理功能
 在大多数情况下，你将向 Microsoft Intune 注册设备，这样可提供更多的功能。 但是，你也可以通过使用 Intune 软件客户端来管理电脑，该客户端提供以下功能：
 
--   [软件更新管理](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - 可使电脑保持最新版本，并决定何时进行更新。
+-   [软件更新管理](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - 可使电脑保持最新版本，并决定何时进行更新  。
 
 -   **[Windows 防火墙策略](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - 可帮助确保公司所用电脑的 Windows 防火墙均处于活动状态且均配置正确。
 
@@ -87,7 +87,7 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 
 虽然 Intune 客户端软件通过管理软件更新、Windows 防火墙和 Endpoint Protection 支持[帮助保护电脑的管理功能](policies-to-protect-windows-pcs-in-microsoft-intune.md)，但由 Intune 客户端软件管理的电脑不能以其他 Intune 策略为目标，包括特定于移动设备管理的 **Windows** 策略设置。
 
-在使用 Intune 客户端软件管理 Windows 电脑时，只能使用“计算机管理”部分下显示的策略。
+在使用 Intune 客户端软件管理 Windows 电脑时，只能使用“计算机管理”  部分下显示的策略。
 
 Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对象 (GPO) 执行方式类似的策略来管理 Windows 电脑。 如果使用 Intune 管理 Active Directory 加入域的计算机，请[确保 Intune 策略不与组织中使用的其他 GPO 冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。 请参阅[组策略入门](https://technet.microsoft.com/library/hh147307.aspx)了解详细信息。
 
@@ -116,7 +116,7 @@ Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对�
 -   完全擦除（选择性擦除可用）
 -   条件性访问
 
-还需注意，在 Intune 管理控制台中，只有在已使用 Intune 客户端软件注册设备后，才会显示某些部分，例如“更新”、“保护”和“许可证”。
+还需注意，在 Intune 管理控制台中，只有在已使用 Intune 客户端软件注册设备后，才会显示某些部分，例如“更新”  、“保护”  和“许可证”  。
 
   ![仅为电脑客户端显示的管理控制台项](media/admin-console-settings-only-for-pc-agent.png)
 

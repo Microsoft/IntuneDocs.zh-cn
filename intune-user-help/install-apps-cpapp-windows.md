@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56742527"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828950"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>在设备上安装和共享应用
 在设备上从适用于 Windows 的公司门户应用安装应用
@@ -36,14 +36,14 @@ ms.locfileid: "56742527"
 2. 查找并从公司门户应用的以下任意部分安装应用：  
 
     * **主页**：从列表中选择组织特别推荐的应用。  
-    * **显示所有**：在“主页” > “应用”部分，单击“显示所有”以查看所有可用的应用。  
+    * **显示所有**：在“主页” > “应用”部分，单击“显示所有”以查看所有可用的应用    。  
     * **所有应用**：在导航窗格中选择此页，查看所有可用的应用，包括已安装和特别推荐的应用。  
     * **应用类别**： 选择基于类型或函数应用在导航窗格中选择此页。 应用程序进行排序在类别下，如**特色**，**教育**，并**工作效率**。  
     * **搜索应用**：静态搜索栏位于应用的导航窗格中。  若要查找可用的应用，请按应用名称或发布服务器搜索。  
-    * “所有应用”：查看、排序和筛选所有可用的应用。 搜索结果按相关性自动排序。  
+    * “所有应用”  ：查看、排序和筛选所有可用的应用。 搜索结果按相关性自动排序。  
 
 3. 选择一个应用。   
-4. 在应用详细信息页面上，单击“安装”。 安装完成后，可看到“已安装”状态。  
+4. 在应用详细信息页面上，单击“安装”  。 安装完成后，可看到“已安装”状态  。  
 
     ![适用于 Windows 10 的公司门户应用，选择应用，“应用详细信息”页。](./media/RS1_AppDetailsPage_Installed_02.png)  
     
@@ -58,12 +58,12 @@ ms.locfileid: "56742527"
 
     ![适用于 Windows 10 的公司门户应用的标题页，其中显示了应用和设备列表。 “共享”上下文菜单可进行点击，显示在示例应用图标的顶部。 ](./media/1808_ShareContext_CP_Windows.png)  
 
-2. 选择“共享”。
-3. 从各个联系人中选择或选择另一个程序（如 OneNote），以发送到组。 如果未看到希望使用的应用，请选择“在 Microsoft Store 中获取应用”，以查看其他可用的应用。  
+2. 选择“共享”  。
+3. 从各个联系人中选择或选择另一个程序（如 OneNote），以发送到组。 如果未看到希望使用的应用，请选择“在 Microsoft Store 中获取应用”，以查看其他可用的应用  。  
 
     ![适用于 Windows 10 的公司门户应用“共享”弹出页面的示例屏幕截图。 页面显示“了解公司门户应用中的 <示例应用名称>”。 该页显示了一个联系人和 2 个应用可供选择，以便发送该链接和“在 Microsoft Store 中获取应用”链接。 ](./media/1808_ShareApps_CP_Windows.png) 
 
-共享后，收件人将收到查看应用详细信息的链接和消息。 该链接会打开公司门户的“应用详细信息”页。 
+共享后，收件人将收到查看应用详细信息的链接和消息。 该链接会打开公司门户的“应用详细信息”页  。 
 
 ## <a name="available-apps"></a>可用应用  
 
@@ -71,8 +71,12 @@ ms.locfileid: "56742527"
 
 也可以根据设备类型使用应用。 例如，如果使用适用于 Windows 的公司门户应用，则可以访问 Windows 应用，但不能访问 iOS 应用。  
 
+## <a name="required-apps"></a>Required apps  
+
+你的组织可能将某些应用程序部署到你的设备直接并将其作为标记**所需**。 这些应用将自动安装，而无需干预。
+
 ## <a name="request-an-app-for-work-or-school"></a>请求用于工作或用于学校的应用  
-如果未在公司门户中找到需要的应用，请请求该应用。 在公司门户应用的“支持和帮助”页面中查找“帮助台”的联系人详细信息。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。    
+如果未在公司门户中找到需要的应用，请请求该应用。 在公司门户应用的“支持和帮助”页面中查找“帮助台”的联系人详细信息  。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。    
 
   ![适用于 Windows 10 的公司门户应用的“帮助和支持”页面，突出显示了帮助台详细信息。 ](./media/1812_UCP_Help_Support_helpdesk.png)  
 

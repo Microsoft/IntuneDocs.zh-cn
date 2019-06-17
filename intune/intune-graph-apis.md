@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6276f38eed4d20e7e81437c2ba3e2c9bc58ae1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047754"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819737"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何使用 Azure AD 访问 Microsoft Graph Intune API
 
@@ -61,25 +61,25 @@ ms.locfileid: "66047754"
 
 注册应用以使用 Microsoft Graph API：
 
-1.  使用管理凭据登录到 [Azure 门户](https://portal.azure.com)。
+1.  登录到[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)使用管理凭据。
 
     根据需要可以使用：
     - 租户管理员帐户。
     - 启用了**用户可以注册应用程序**设置的租户用户帐户。
 
-2.  从菜单中依次选择“Azure Active Directory”&gt;“应用注册”。
+2.  从菜单中依次选择“Azure Active Directory”  &gt;“应用注册”  。
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  选择“新应用程序注册”，以创建新的应用程序，或选择现有应用程序。  （如果你选择现有应用程序，请跳过下一步。）
+3.  选择“新应用程序注册”  ，以创建新的应用程序，或选择现有应用程序。  （如果你选择现有应用程序，请跳过下一步。）
 
-4.  在“创建”边栏选项卡上，指定下列信息：
+4.  在“创建”  边栏选项卡上，指定下列信息：
 
     1.  应用程序的**名称**（用户登录时显示）。
 
-    2.  “应用程序类型”和“重定向 URI”值。
+    2.   “应用程序类型”和“重定向 URI”  值。
 
-        这些信息会因要求的不同而异。 例如，如果你正在使用 Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)，请将“应用程序类型”设置为 `Native`，将“重定向 URI”设置为 `urn:ietf:wg:oauth:2.0:oob`。
+        这些信息会因要求的不同而异。 例如，如果你正在使用 Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)，请将“应用程序类型”  设置为 `Native`，将“重定向 URI”  设置为 `urn:ietf:wg:oauth:2.0:oob`。
 
         <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
@@ -87,17 +87,17 @@ ms.locfileid: "66047754"
 
 5.  从应用程序边栏选项卡：
 
-    1.  注意“应用程序 ID”值。
+    1.  注意“应用程序 ID”  值。
 
-    2.  选择“设置”&gt;“API 访问”&gt;“所需权限”。
+    2.  选择“设置”  &gt;“API 访问”  &gt;“所需权限”  。
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  从“所需权限”边栏选项卡中，选择“添加”&gt;“添加 API 访问权限”&gt;“选择 API”。
+6.  从“所需权限”  边栏选项卡中，选择“添加”  &gt;“添加 API 访问权限”  &gt;“选择 API”  。
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  从“选择 API”边栏选项卡中，依次选择“Microsoft Graph”&gt;“选择”。  打开“启用访问权限”边栏选项卡，并列出你的应用程序可用的权限范围。
+7.  从“选择 API”  边栏选项卡中，依次选择“Microsoft Graph”  &gt;“选择”  。  打开“启用访问权限”  边栏选项卡，并列出你的应用程序可用的权限范围。
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -105,13 +105,13 @@ ms.locfileid: "66047754"
 
     为获得最佳效果，请选择实现应用程序所需的最少角色。
 
-    完成后，选择“选择”和“完成”保存更改。
+    完成后，选择“选择”  和“完成”  保存更改。
 
 此时，你也可以：
 
 - 选择将权限授予所有租户帐户，以无需提供凭据即可使用该应用程序。  
 
-    为此，请选择“授予权限”并接受确认提示。
+    为此，请选择“授予权限”  并接受确认提示。
 
     第一次运行应用程序时，系统会提示你授予应用程序执行所选角色的权限。
 
@@ -121,7 +121,7 @@ ms.locfileid: "66047754"
 
     为此，请执行以下操作：
 
-  1. 从应用程序边栏选项卡中选择“清单”，将打开“编辑清单”边栏选项卡。
+  1. 从应用程序边栏选项卡中选择“清单”  ，将打开“编辑清单”  边栏选项卡。
 
      <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
@@ -343,12 +343,12 @@ __读取 Microsoft Intune 配置__ | DeviceManagementServiceConfig.Read.All
 3.  使用解决方案资源管理器将 Microsoft ADAL NuGet 包添加到项目中。
 
     1.  右键单击解决方案资源管理器。
-    2.  选择“管理 NuGet 程序包...” &gt;“浏览”。
-    3.  选择 `Microsoft.IdentityModel.Clients.ActiveDirectory`，然后选择“安装”。
+    2.  选择“管理 NuGet 程序包...”  &gt;“浏览”  。
+    3.  选择 `Microsoft.IdentityModel.Clients.ActiveDirectory`，然后选择“安装”  。
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
-4.  在 Program.cs 顶部添加以下语句：
+4.  在 Program.cs 顶部  添加以下语句：
 
     ``` csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;</p>
@@ -567,7 +567,7 @@ catch {
 
 若需邀请用户成为租户的来宾，请执行以下操作：
 
-1.  从“快速任务”面板选择“添加来宾用户”。
+1.  从“快速任务”  面板选择“添加来宾用户”  。
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
@@ -575,17 +575,17 @@ catch {
 
     <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
-3.  选择“邀请”。
+3.  选择“邀请”  。
 
 此操作将会向用户发送一个邀请。
 
    <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" alt="A sample guest invitation" />
 
-   用户需要选择“开始使用”链接才能接受邀请。
+   用户需要选择“开始使用”  链接才能接受邀请。
 
-关系建立（或邀请被接受）后，将用户帐户添加到“目录角色”。
+关系建立（或邀请被接受）后，将用户帐户添加到“目录角色”  。
 
-请记住，根据需要将用户添加到其他角色。 例如，要允许用户管理 Intune 设置，他们需要成为“全局管理员”或“Intune 服务管理员”。
+请记住，根据需要将用户添加到其他角色。 例如，要允许用户管理 Intune 设置，他们需要成为“全局管理员”  或“Intune 服务管理员”  。
 
 此外：
 

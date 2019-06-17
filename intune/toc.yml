@@ -376,15 +376,15 @@
         - name: 条件性访问
           href: conditional-access.md
           items:
-            - name: 条件访问的常见使用方式
+            - name: 条件性访问的常见使用方式
               href: conditional-access-intune-common-ways-use.md
             - name: 安装 Exchange 本地连接器
               href: exchange-connector-install.md
-            - name: 创建并分配条件访问策略
+            - name: 创建并分配条件性访问策略
               href: conditional-access-exchange-create.md
             - name: 基于设备的条件访问策略
               href: create-conditional-access-intune.md
-            - name: 从 Intune 经典门户重新分配条件访问策略
+            - name: 从 Intune 经典门户重新分配条件性访问策略
               href: conditional-access-intune-reassign.md
             - name: 基于应用的条件性访问
               href: app-based-conditional-access-intune.md

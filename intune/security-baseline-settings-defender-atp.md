@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373500"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749915"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
-查看 Microsoft Intune 支持的 Microsoft Defender 高级威胁防护（以前称为 Windows Defender 高级威胁防护）基线设置。 本文中的默认值表示 Intune 的默认基线配置。 这些默认值表示 Intune 的推荐配置，可能与 Windows 默认值不匹配。
+查看 Microsoft Intune 支持的 Microsoft Defender 高级威胁防护（以前称为 Windows Defender 高级威胁防护）基线设置。 高级威胁防护 (ATP) 基线默认值表示针对 ATP 的建议配置，可能与其他安全基线中的基线默认值不匹配。  
 
   当环境满足使用 [Microsoft Defender 高级威胁防护](advanced-threat-protection.md#prerequisites)的先决条件时，Microsoft Defender 高级威胁防护基线才可用。
 
@@ -33,7 +33,7 @@ ms.locfileid: "66373500"
 
 
 > [!NOTE]  
-> WDATP 基线设置处于预览状态  。 在预览状态下，可用设置的列表，以及此内容呈现这些设置的顺序可能与门户中提供的内容不匹配。 
+> ATP 基线设置处于预览状态  。 在预览状态下，可用设置的列表，以及此内容呈现这些设置的顺序可能与门户中提供的内容不匹配。  
 >
 > 当基线设置不处于预览状态后，此内容将更新以反映 Intune 支持的安全基线设置的当前列表。
 
