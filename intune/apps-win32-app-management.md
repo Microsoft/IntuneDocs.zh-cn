@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043826"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804697"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 独立版 - Win32 应用管理
 
@@ -97,8 +97,7 @@ ms.locfileid: "66043826"
 
 ### <a name="step-1-specify-the-software-setup-file"></a>步骤 1：指定软件安装程序文件
 
-1.  登录到 [Azure 门户](https://portal.azure.com/)。
-2.  选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 3.  在“Intune”窗格中，选择“客户端应用” > “应用” > “添加”。
 4.  在“添加”应用窗格中，从提供的下拉列表中选择“Windows 应用(Win32)”。
 
@@ -342,12 +341,50 @@ Windows 10 1709 及更高版本的客户端将在 Windows 10 客户端上使用�
 > C:\Program Files\Microsoft Intune Management Extension\Content<br>
 > C:\windows\IMECache
 
-有关对 Win32 应用进行故障排除的更多信息，请参阅 [Win32 应用安装故障排除](troubleshoot-app-install.md#win32-app-installation-troubleshooting)。
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>检测使用 PowerShell 的 Win32 应用文件版本
 
-### <a name="troubleshooting-areas-to-consider"></a>故障排除需要考虑的方面
+如果难以检测到 Win32 应用文件版本，请考虑使用或修改以下 PowerShell 命令：
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+在以上 PowerShell 命令中，使用 Win32 应用文件的路径替换 `<path to binary file>` 字符串。 示例路径类似于以下内容：<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+另外，使用需要检测的文件版本替换 `<file version of successfully detected file>` 字符串。 示例文件版本字符串类似于以下内容：<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+如果需要获取 Win32 应用的版本信息，可使用以下 PowerShell 命令：
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+在以上 PowerShell 命令中，使用文件路径替换 `<path to binary file>`。
+
+### <a name="additional-troubleshooting-areas-to-consider"></a>需要考虑的其他故障排除方面
 - 检查目标以确保设备上已安装代理 - 面向组的 Win32 应用或 PowerShell 脚本将为安全组创建代理安装策略。
 - 检查 OS 版本 - Windows 10 1607 及更高版本。  
 - 检查 Windows 10 SKU - Windows 10 S 或以 S 模式运行的 Windows 版本不支持 MSI 安装。
+
+有关对 Win32 应用进行故障排除的更多信息，请参阅 [Win32 应用安装故障排除](troubleshoot-app-install.md#win32-app-installation-troubleshooting)。
 
 ## <a name="next-steps"></a>后续步骤
 

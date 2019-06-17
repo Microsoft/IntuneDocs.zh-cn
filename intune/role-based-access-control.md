@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040660"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804482"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的基于角色的访问控制 (RBAC)
 
@@ -30,6 +30,8 @@ ms.locfileid: "66040660"
 若要创建、编辑或分配角色，你的帐户必须在 Azure AD 中具有以下权限之一：
 - **全局管理员**
 - Intune 服务管理员（也称为 Intune 管理员）
+
+有关 Intune RBAC 的建议和意见，可查看此系列的五个视频，它们展示了示例和演练：[1](https://www.youtube.com/watch?v=5deXLMLcnKY)、[2](https://www.youtube.com/watch?v=38dnMBLuxbQ)、[3](https://www.youtube.com/watch?v=6vqg9cAkMbY)、[4](https://www.youtube.com/watch?v=5yOLajFFMHE)、[5](https://www.youtube.com/watch?v=P5DDvsSF4Wk)。
 
 ## <a name="roles"></a>角色
 角色定义授予分配给该角色的用户的权限集。

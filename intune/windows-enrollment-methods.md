@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: c3f5f3b39efd33e8dbd3dd84f9a5f2abaf347216
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046704"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819581"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>适用于 Windows 设备的 Intune 注册方法
 
@@ -49,8 +49,8 @@ ms.locfileid: "66046704"
 
 - [混合 Azure AD 联接](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)允许管理员配置 Active Directory 组策略，以自动注册已联接混合 Azure AD 的设备。 
 - [Configuration Manager 共同管理](https://docs.microsoft.com/sccm/comanage/overview)允许管理员将其现有的 Configuration Manager 受管理设备注册到 Intune 中，以获得 Intune 和 Configuration Manager 的双重优势。 
-- [设备注册管理员](device-enrollment-manager-enroll.md) (DEM) 是一个特殊的服务帐户。 DEM 帐户具有以下权限，即允许授权用户注册和管理多个公司拥有的设备。 这些类型的设备非常适用于销售点或实用工具应用，但是不适用于需要访问电子邮件或公司资源的用户。 此外，这种方法还禁止使用条件访问等功能。 
-- [批量注册](windows-bulk-enroll.md)允许授权用户将大量新的公司拥有的设备加入 Azure Active Directory 和 Intune。 可以使用 Windows 配置设计器 (WCD) 应用来创建预配包。 然后，在初始 Windows OOBE 体验期间或从现有 Windows 电脑使用 USB 介质时，可以安装预配包以自动将设备注册到 Intune 中。 
+- [设备注册管理员](device-enrollment-manager-enroll.md) (DEM) 是一个特殊的服务帐户。 DEM 帐户具有以下权限，即允许授权用户注册和管理多个公司拥有的设备。 这些类型的设备非常适用于销售点或实用工具应用，但是不适用于需要访问电子邮件或公司资源的用户。 这种方法还禁止使用条件访问等功能。 
+- [批量注册](windows-bulk-enroll.md)允许授权用户将大量新的公司拥有的设备加入 Azure Active Directory 和 Intune。 可以使用 Windows 配置设计器 (WCD) 应用来创建预配包。 然后，在初始 Windows OOBE 体验期间或从现有 Windows 电脑使用 USB 介质时，可以安装预配包以自动将设备注册到 Intune 中。 这种方法还禁止使用条件访问。 
 
 ## <a name="next-steps"></a>后续步骤
 

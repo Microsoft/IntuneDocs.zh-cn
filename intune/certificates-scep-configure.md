@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
-ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
+ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448108"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744331"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -115,7 +115,8 @@ ms.locfileid: "66448108"
    - 在“安全性”选项卡上，添加 NDES 服务帐户，并授予它“注册”模板的权限   。 将创建 SCEP 配置文件的 Intune 管理员需要“读取”权限，以便在创建 SCEP 配置文件时可以浏览到该模板  。
 
      > [!NOTE]
-     > 若要吊销证书，NDES 服务帐户需要针对证书配置文件所用的每个证书模板具有“颁发和管理证书”权限  。
+     > 若要撤销证书，NDES 服务帐户需要证书颁发机构的“颁发和管理证书”权限  。 若要委派此权限，请打开“证书颁发机构”管理控制台，右键单击“证书颁发机构”名称。 然后，在“安全”选项卡上，添加或选择帐户，然后选中“颁发和管理证书”  复选框。
+
 
 3. 在模板的“常规”  选项卡上查看“有效期”  。 默认情况下，Intune 使用模板中配置的值。 但是，可以将 CA 配置为允许申请者输入其他值，随后便能够在 Intune 管理员控制台中设置此值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
 
@@ -299,15 +300,15 @@ ms.locfileid: "66448108"
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“设备配置” > “认证连接器” > “添加”    。
-3. 下载并保存 SCEP 文件的连接器。 将该文件保存到可从要安装连接器的服务器访问的位置。
+3. 下载并保存 SCEP 文件的连接器。 将该文件保存到可从要安装连接器的 NDES 服务器访问的位置。
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. 下载完成后，请转到托管网络设备注册服务 (NDES) 的服务器。 然后：
+4. 下载完成后，请转到托管网络设备注册服务 (NDES) 的 NDES 服务器。 然后：
 
     1. 确保已安装 .NET 4.5 Framework，因为它是 NDES 证书连接器的必需项。 Windows Server 2012 R2 和更高版本中自动包含 .NET 4.5 Framework。
-    2. 运行安装程序 (NDESConnectorSetup.exe)  。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 CRP Web 服务 CertificateRegistrationSvc 作为 IIS 中的应用程序运行。
+    2. 使用对服务器具有管理权限的帐户运行安装程序 (NDESConnectorSetup.exe)  。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 CRP Web 服务 CertificateRegistrationSvc 作为 IIS 中的应用程序运行。
 
     > [!NOTE]
     > 如果为独立 Intune 安装 NDES，则 CRP 服务会自动随证书连接器一起安装。 如果将 Intune 与 Configuration Manager 配合使用，请以单独的站点系统角色安装证书注册点。
@@ -335,7 +336,7 @@ ms.locfileid: "66448108"
 
     如果组织使用代理服务器并且 NDES 服务器需要代理才能访问 Internet，请选择“使用代理服务器”  。 然后输入用于连接的代理服务器名称、端口和帐户凭据。
 
-    选择“高级”选项卡，然后输入在证书颁发机构上拥有“颁发和管理证书”权限的帐户的凭据   。 单击“应用”以应用更改  。
+    选择“高级”选项卡，然后输入在证书颁发机构上拥有“颁发和管理证书”权限的帐户的凭据   。 单击“应用”以应用更改  。 如果在[配置证书颁发机构](#configure-the-certification-authority)时将此权限委派给了 NDES 服务帐户，请在此处指定该帐户。 
 
     你现在可以关闭证书连接器 UI。
 

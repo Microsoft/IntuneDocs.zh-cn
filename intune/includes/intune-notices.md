@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454120"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744318"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
 
@@ -40,3 +40,35 @@ https://firebase.google.com/docs/cloud-messaging/
 
 #### <a name="additional-information"></a>其他信息 
 https://aka.ms/intune_fullscreen
+
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>更改计划：Intune 将于 9 月开始支持 iOS 11 及更高版本 <!-- 4665342-->
+我们预计 Apple 将于 9 月发布 iOS 13。 Intune 注册、公司门户和 Managed Browser 将在 iOS 13 发布后不久开始支持 iOS 11 及更高版本。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+如果 iOS 11.0 及更高版本上支持 O365 移动应用，这可能不会对你造成任何影响。你可能已升级了 OS 或设备。 但如果你拥有下面列出的任何设备，或者决定要注册下面列出的任何设备，请注意，以下设备不支持 iOS 10 以上的 OS。 需将这些设备升级为支持 iOS 11 或更高版本的设备：
+
+- iPhone 5
+- iPhone 5c
+- iPad（第 4 代）
+
+从 7 月开始，使用 iOS 10 和公司门户的 MDM 注册设备将收到升级其 OS 或设备的提示。 如果使用应用程序保护策略 (APP)，还可以设置“要求最低 iOS 操作系统版本(仅警告)”访问设置。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+检查 Intune 报告，查看可能受影响的设备或用户。 转到“设备”   > “所有设备”  ，并按“OS”进行筛选。 可以添加其他列，帮助确定组织中哪些人员拥有运行 iOS 10 的设备。 要求最终用户在 9 月前将其设备升级到支持的 OS 版本。
+
+### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>更改计划：支持 Intune App SDK for iOS 的 8.1.1 版及更高版本 <!-- 3586942-->
+从 2019 年 9 月起，Intune 将通过 Intune App SDK 8.1.1 及更高版本支持 iOS 应用。 不再支持使用低于 SDK 8.1.1 版本构建的应用。 此更改将随 Apple iOS 13 的发布（预计将于 9 月发布，并且已在 MC181399 中公布）而生效。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+借助 Intune App SDK 或 App Wrapping 集成，可通过数据加密保护公司数据免受未经批准的应用程序和用户的影响。 Intune 应用保护策略 (APP) 启用加密时，Intune App SDK for iOS 将默认使用 256 位加密密钥。 在此更改之后，在 SDK 8.1.1 之前的版本上使用 128 位加密密钥的任何 iOS 应用都不能再与集成了 SDK 8.1.1 或使用 256 位密钥的应用程序共享数据。 所有的 iOS 应用都需要 SDK 8.1.1 版本或更高版本，才能进行受保护的数据共享。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
+检查 Microsoft、第三方和业务线 (LOB) 应用。 应确保所有受 Intune APP 保护的应用程序都使用 8.1.1 或更高版本。
+
+- 对于 LOB 应用：可能需要重新发布与 SDK 8.1.1 版本或更高版本集成的应用。 建议使用最新的 SDK 版本。 要了解如何针对应用保护策略准备好 LOB 应用，请参阅[针对应用保护策略准备好业务线应用](../apps-prepare-mobile-application-management.md)。
+- Microsoft/第三方应用：确保向用户部署这些应用的最新版本。
+
+还应更新文档或开发人员指南（如适用），将此更改添加到其中，以支持 SDK。
+
+#### <a name="additional-information"></a>其他信息
+https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
