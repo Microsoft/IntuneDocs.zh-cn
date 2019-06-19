@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5ede50bed3cefbcee5aaa96dfbecfe24d2bd8d9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 631d76aca2c393be3c81cb8b6f532605664f4ce4
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041264"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031634"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune 中的数据安全性和数据共享
 
@@ -70,7 +70,7 @@ Intune 还使用 RBAC 和 JiT 等技术保护支持事件，以确保在默认�
 
 Microsoft Intune 不与 System Center Configuration Manager 共享任何数据。 System Center Configuration Manager 是由客户直接部署、管理和运行的本地产品。 Configuration Manager 收集的诊断和使用情况数据仅用于改进将来版本的安装体验、质量和安全性。
 
-有关详细信息，请参阅 [SCCM 的诊断和使用情况数据](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md)。 
+有关详细信息，请参阅 [SCCM 的诊断和使用情况数据](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)。 
 
 
 ## <a name="next-steps"></a>后续步骤

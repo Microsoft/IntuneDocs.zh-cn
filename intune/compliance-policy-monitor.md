@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc97e9884fbcd23c599c917c181e29cdbc3708ee
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374028"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041299"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -60,7 +60,7 @@ ms.locfileid: "66374028"
 此图表显示所有已注册 Intune 的设备的符合性状态。 设备符合性状态保存在两个不同的数据库中：Intune 和 Azure Active Directory。 
 
 > [!IMPORTANT]
-> Intune 对设备上的所有符合性评估遵循设备签入计划。 [详细了解设备签入计划](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
+> Intune 对设备上的所有符合性评估遵循设备签入计划。 [详细了解设备签入计划](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
 
 不同的设备符合性策略状态的说明：
 
