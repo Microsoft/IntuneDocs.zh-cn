@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 207a3f950d6fca2d6fcbe024f24fbf05487f2151
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040391"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046327"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
 我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 本参考指南面向非常熟悉经典门户中的 Intune 且想知道如何使用 Azure 门户中的 Intune 完成工作的用户。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。
@@ -40,7 +40,7 @@ ms.locfileid: "66040391"
 | 公司设备注册配置文件 | 策略 > 企业设备注册 | [设备注册 > Apple 注册 > AC 配置文件](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | 管理员 > 移动设备管理 > Android for Work | 设备注册 > Android 注册 |
 | 条款和条件 | 策略 > 条款和条件 | 设备注册 > 条款和条件 |
-“公司门户”设置|“管理”>“公司门户”|“管理”>“移动应用”<br> “设置”>“‘公司门户’品牌”
+“公司门户”设置|“管理”>“公司门户”|“管理”  >“移动应用”<br> “设置”  >“‘公司门户’品牌”
 
 
 ## <a name="where-do-i-manage-groups"></a>在哪个位置管理组？
@@ -69,15 +69,15 @@ Azure 门户中 Intune 使用 [Azure Active Directory (AD)](https://docs.microso
 
 新限制功能仅添加到 Azure 门户。
 
-## <a name="where-did-my-conditional-access-policies-go"></a>条件访问策略在何处？
-租户迁移到 Azure 门户后，将继续强制使用租户的条件访问策略。 但是，你无法在 Azure 门户中的 Intune 中查看或修改这些策略。
+## <a name="where-did-my-conditional-access-policies-go"></a>我的条件访问策略会去向何处？
+在你的租户迁移到 Azure 门户后，还会继续强制执行你租户的条件访问策略。 但是，你无法在 Azure 门户中的 Intune 中查看或修改这些策略。
 
-如果希望在 Azure 门户中查看和修改条件访问策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关迁移条件访问策略的详细信息，请参阅[在 Azure 门户中迁移经典策略](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。 
+若要在 Azure 门户中查看和修改条件访问策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 若要详细了解如何迁移条件访问策略，请参阅[在 Azure 门户中迁移经典策略](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)。 
 
 ## <a name="where-did-my-compliance-policies-go"></a>符合性策略去哪了？
 你的租户迁移到 Azure 门户后，租户的符合性策略将继续强制使用。 但是，你无法在 Azure 门户中的 Intune 中查看或修改这些策略。
 
-如果希望在 Azure 门户中查看和修改符合性策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关设备符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](https://docs.microsoft.com/intune/known-issues#compliance)。 
+如果希望在 Azure 门户中查看和修改符合性策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关设备符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](https://docs.microsoft.com/intune/device-compliance-get-started)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 处于哪个位置？
 在经典门户中，可以将 Intune 设置为与 Apple 设备注册计划进行集成，并手动请求与 Apple 服务同步：
@@ -88,13 +88,13 @@ Azure 门户中 Intune 使用 [Azure Active Directory (AD)](https://docs.microso
 
 ![Azure DEP 令牌的图像](./media/07-azure-dep-token.png)
 
-不过，经典门户中的“同步”选项已迁移到序列号管理工作流，因为手动同步结果已列于其中：
+不过，经典门户中的“同步”  选项已迁移到序列号管理工作流，因为手动同步结果已列于其中：
 
 ![Azure DEP 同步的图像](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>企业预注册设备处于哪个位置？
 ### <a name="by-ios-serial-number"></a>按 iOS 序列号排列
-在经典门户中，可以通过 Apple 设备注册计划 (DEP) 和 Apple 配置器工具注册 iOS 设备。 这两种方法都按序列号提供设备预注册，并且设计分配特殊企业设备注册的配置文件。 注册之前，可以通过“按 iOS 序列号排列的企业预注册设备”设备组管理注册配置文件的分配：
+在经典门户中，可以通过 Apple 设备注册计划 (DEP) 和 Apple 配置器工具注册 iOS 设备。 这两种方法都按序列号提供设备预注册，并且设计分配特殊企业设备注册的配置文件。 注册之前，可以通过“按 iOS 序列号排列的企业预注册设备”  设备组管理注册配置文件的分配：
 
 ![经典 Apple 序列号的图像](./media/09-classic-apple-serials.png)
 

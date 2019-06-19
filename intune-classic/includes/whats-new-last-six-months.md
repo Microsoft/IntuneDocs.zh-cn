@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461288"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044705"
 ---
 ## <a name="april-2017"></a>2017 年 4 月
 
@@ -26,7 +26,7 @@ Microsoft MyApps 现在在托管浏览器中具有更好的支持。 面向管�
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>阻止应用访问 SharePoint Online <!-- 679339 -->
 
-现在可以创建基于应用的条件访问策略以阻止应用（没有对这些应用适用的应用保护策略）访问 [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online)。 在基于应用程序的条件访问方案中，可以使用 Azure 门户指定想要有权访问 SharePoint Online 的应用。
+现在可以创建基于应用的条件访问策略，用于阻止未应用应用保护策略的应用访问 [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online)。 在基于应用的条件访问方案中，可以使用 Azure 门户，指定要向其授予对 SharePoint Online 访问权限的应用。
 
 #### <a name="single-sign-in-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>从适用于 iOS 的公司门户到 Outlook for iOS 的单一登录支持 <!--834012-->
 如果用户在同一设备上使用同一帐户登录到适用于 iOS 的公司门户应用，则不再需要登录 Outlook 应用。 用户启动 Outlook 应用时，他们将能够选择自己的帐户并自动登录。 我们也正在致力于为其他 Microsoft 应用添加此功能。
@@ -112,24 +112,24 @@ Apple 宣布他们将强制对应用程序传输安全 (ATS) 实施特定要求�
 
 #### <a name="support-for-skycure"></a>对 Skycure 的支持
 
-现在可根据 Skycure 给出的风险评估，使用条件访问控制移动设备对公司资源的访问，Skycure 是与 Microsoft Intune 集成的移动威胁防御解决方案。 基于从运行 Skycure 的设备收集的遥测评估风险，包括：
+现在可以使用条件访问（基于Skycure 执行的风险评估）控制移动设备对企业资源的访问。Skycure 是与 Microsoft Intune 集成的移动威胁防御解决方案。 基于从运行 Skycure 的设备收集的遥测评估风险，包括：
 
 - 物理防御
 - 网络防御
 - 应用程序防御
 - 漏洞防御
 
-可基于通过 Intune 设备符合性策略启用的 Skycure 风险评估配置 EMS 条件访问策略。 根据检测到的威胁，可使用这些策略允许或阻止不符合设备访问企业资源。 有关详细信息，请参阅 [Skycure 移动威胁防御连接器](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)。
+可根据通过 Intune 设备合规性策略启用的 Skycure 风险评估，配置 EMS 条件访问策略。 根据检测到的威胁，可使用这些策略允许或阻止不符合设备访问企业资源。 有关详细信息，请参阅 [Skycure 移动威胁防御连接器](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)。
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>适用于 Android 的公司门户应用的最新用户体验 <!--621622-->
 
 适用于 Android 的公司门户应用将更新其用户界面，提供更现代的外观和感受以及更好的用户体验。 值得注意的更新包括：
 
 - 颜色：公司门户选项卡标头将按 IT 定义的品牌进行着色。
-- 应用：“应用”选项卡上将更新“特色应用”和“所有应用”按钮。
-- 搜索：“应用”选项卡上的“搜索”按钮现在是浮动的操作按钮。
-- 导航应用：“所有应用”视图以选项卡形式呈现出“特色”、“所有”和“分类”，便于导航。
-- 支持：更新“我的设备”和“联系 IT”选项卡以提高可读性。
+- 应用：“应用”  选项卡上将更新“特色应用”  和“所有应用”  按钮。
+- 搜索：“应用”  选项卡上的“搜索”  按钮现在是浮动的操作按钮。
+- 导航应用：“所有应用”  视图以选项卡形式呈现出“特色”  、“所有”  和“分类”  ，便于导航。
+- 支持：更新“我的设备”  和“联系 IT”  选项卡以提高可读性。
 
 有关这些更改的详细信息，请参阅 [Intune 最终用户应用的 UI 更新](/intune/whats-new-app-ui)。
 
@@ -337,7 +337,7 @@ __适用于 Windows 10 设备的新 Microsoft Intune 公司门户__ Microsoft �
 新应用还允许用户们在 Windows 10 设备上利用传统平台功能，例如单一登录 (SSO) 和基于证书的身份验证。 此应用将作为对现有 Windows 8.1 公司门户和 Windows Phone 8.1 公司门户（安装自 Microsoft 应用商店）的升级而提供。 有关详细信息，请转到 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)。
 
 > [!IMPORTANT]
-> __Intune 和 Android for Work 上的更新__虽然可通过“必需”操作部署 Android for Work 应用，但如果已将 Intune 组迁移至新的 Azure AD 组体验，则只可以将应用部署为“可用”。
+> __Intune 和 Android for Work 上的更新__虽然可通过“必需”  操作部署 Android for Work 应用，但如果已将 Intune 组迁移至新的 Azure AD 组体验，则只可以将应用部署为“可用”  。
 
 __Intune App SDK for Cordova 插件现在支持 MAM（无需注册设备）__ 应用开发人员现在可以使用 Intune App SDK for Cordova 插件启用 MAM 功能，且无需在适用于 Android 和 iOS 的基于 Cordova 的应用中注册设备。 可在[此处](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)找到 Intune App SDK for Cordova 插件。
 

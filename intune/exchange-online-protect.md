@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30c0e5af6d7ff0467383294c071d0ffdb96c5dc1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d3e74244315b7345a632a9ecd2bf631a134e5ab
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041838"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045023"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>无需设备管理即可保护 Office 365 Exchange Online
 
@@ -34,9 +34,9 @@ ms.locfileid: "66041838"
 
 1. [了解条件访问](conditional-access.md)。 
 2. [了解基于应用的条件访问](app-based-conditional-access-intune.md)。
-3. [为 Exchange Online 设置基于应用的条件访问策略](app-based-conditional-access-intune-create.md)。
+3. [创建用于 Exchange Online 的基于应用的条件访问策略](app-based-conditional-access-intune-create.md)。
 4. [阻止无法管理的应用](app-modern-authentication-block.md)，尤其是未使用 Azure Active Directory 身份验证库 (ADAL) 的应用。
-5. （可选）[为 SharePoint Online 设置基于应用的条件访问策略](app-based-conditional-access-intune-create.md)。 这些策略会阻止通过无法管理和保护的应用访问公司数据。 这些策略还会限制通过 SharePoint 移动应用进行访问。 
+5. （可选）[创建用于 SharePoint Online 的基于应用的条件访问策略](app-based-conditional-access-intune-create.md)。 这些策略会阻止通过无法管理和保护的应用访问公司数据。 这些策略还会限制通过 SharePoint 移动应用进行访问。 
 
 ## <a name="what-to-tell-employees-and-students"></a>应告知员工和学生的事项
 
@@ -47,7 +47,7 @@ ms.locfileid: "66041838"
 
 你已使用基于应用的条件访问来提高公司数据的安全性。 在后续步骤中，可详细了解增强公司数据保护的其他方式，包括： 
 
-* [在 Active Directory 和 Azure Active Directory 中基于设备符合性、设备风险、位置和用户属性设置条件访问 ](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。  
+* [在 Active Directory 和 Azure Active Directory 中创建基于设备合规性、设备风险、位置和用户属性的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。  
 * 设置应用保护策略，帮助防止出现有意或无意的公司数据泄露。 
 * 利用 Azure 信息保护来保护网络外部的公司数据。 
 

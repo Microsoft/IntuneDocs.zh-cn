@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
-ms.translationtype: MTE75
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354224"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041120"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -430,9 +430,9 @@ ms.locfileid: "66354224"
     > [!IMPORTANT]
     > 当 Windows 桌面的密码要求更改时，用户下次登录时会受到影响，因为此时设备从空闲状态变为活动状态。 密码满足要求的用户仍然会被提示更改密码。
     
-  - **擦除设备前登录失败的次数**：输入在擦除设备之前允许的身份验证失败数量，从 1 到 11。 `0`（零）可能会禁用设备擦除功能。
+  - **登录失败多少次后擦除设备**：输入身份验证失败多少次后可擦除设备，最多为 11 次。 由版本决定您输入有效数字。 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)列出了支持的值。 如果为 `0`（零），可能会禁用设备擦除功能。
 
-    根据版本的不同，此设置会产生不同的影响。 有关具体细节，请参阅 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)。
+    此设置的影响也因版本而异。 有关此设置的具体详细信息，请参阅 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)。
 
   - **屏幕锁定前的最大非活动状态分钟数**：输入锁定屏幕前，设备必须处于空闲状态的时间长度。
   - **密码过期(天)** ：必须更改设备密码时，输入时间长度（天数），从 1 到 365。 例如，要使密码在 90 天后过期，请输入 `90`。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049602"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045531"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -726,13 +726,13 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 1. 按照 [ADAL 集成指南](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)进行操作。 
    有关代理的使用情况，请特别参阅步骤 11。
-2. [使用 Azure Active Directory 注册应用程序] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration))。 
+2. [使用 Azure Active Directory 注册应用程序] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration) )。 
    可在上面的 ADAL 集成指南中找到重定向 URI。
 3. 根据上述第 2 项中的[常用 ADAL 配置](#common-adal-configurations)设置清单元数据参数。
 4. 通过从 [Azure 门户](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2)启用[基于设备的 CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) 测试所有内容已正确配置并确认以下内容
     - 登录到应用会提示安装和注册 Intune 公司门户
     - 注册后，成功登录到应用。
-5. 应用发布 Intune APP SDK 集成后，请联系 msintuneappsdk@microsoft.com 以添加到[基于应用的条件访问](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)的已批准应用列表中
+5. 在你的应用发布 Intune APP SDK 集成后，请立即联系 msintuneappsdk@microsoft.com，将它添加到核准应用列表中，以实现[基于应用的条件访问](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
 6. 将应用添加到已批准列表后，通过[配置基于应用的 CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) 进行验证，并确保成功登录到应用。
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>无需设备注册的应用保护策略

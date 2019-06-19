@@ -4,10 +4,10 @@ description: Microsoft 365 企业版包含 Microsoft Intune。 了解 Intune 如
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 audience: ITPro
-ms.service: ''
+ms.service: microsoft-intune
 ms.technology: ''
 ms.custom: intune
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
@@ -15,18 +15,18 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050274"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043839"
 ---
 # <a name="what-is-device-management"></a>什么是设备管理？ 
 
-所有管理员的关键任务是保护组织的资源和数据。 此任务是设备管理。 用户可以通过多个设备打开和共享个人文件、访问网站以及安装应用和游戏。 这些用户也是员工和学生。 他们希望使用他们的设备访问工作和学校资源，例如电子邮件和 OneNote。 设备管理使组织能够保护其资源和数据。 
+所有管理员的关键任务是保护组织的资源和数据。 此任务是设备管理  。 用户可以通过多个设备打开和共享个人文件、访问网站以及安装应用和游戏。 这些用户也是员工和学生。 他们希望使用他们的设备访问工作和学校资源，例如电子邮件和 OneNote。 设备管理使组织能够保护其资源和数据。 
 
-使用设备管理提供程序，组织可以确保只有经过授权的人员和设备才能访问专有信息。 同时，设备用户可以放心地从其手机访问工作数据，因为他们知道他们的设备符合组织的安全要求。 作为组织，你可能会问 - 应该使用什么来保护我们的资源？
+使用设备管理提供程序，组织可以确保只有经过授权的人员和设备才能访问专有信息。 同时，设备用户可以放心地从其手机访问工作数据，因为他们知道他们的设备符合组织的安全要求。 作为组织，你可能会问 - 应该使用什么来保护我们的资源  ？
 
 答案是 [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune)。 Intune 提供移动设备管理 (MDM) 和移动应用程序管理 (MAM)。 MDM 或 MAM 解决方案的一些关键任务是：
 
@@ -44,7 +44,7 @@ Intune 包含在 Microsoft 365 中，并与 Azure Active Directory (Azure AD) �
 
 使用 Intune，你可以管理每个人的多个设备，以及在每个设备上运行的不同平台，包括 iOS、macOS、Android 和 Windows。 Intune 按设备平台分隔策略和设置。 因此，可以轻松管理和查看特定平台的设备。
 
-[常见方案](https://docs.microsoft.com/intune/common-scenarios)是了解 Intune 在使用移动设备时如何回答常见问题的绝佳资源。 你将发现以下方案：  
+[常见方案](https://docs.microsoft.com/intune/common-scenarios)  是了解 Intune 在使用移动设备时如何回答常见问题的绝佳资源。 你将发现以下方案：  
 - 使用本地 Exchange 保护电子邮件
 - 安全可靠地访问 Office 365
 - 使用个人设备访问组织资源
@@ -52,22 +52,22 @@ Intune 包含在 Microsoft 365 中，并与 Azure Active Directory (Azure AD) �
 ## <a name="integration-with-secure-and-protect-services"></a>与安全和保护服务集成
 所有设备管理解决方案的关键任务是提供安全性和保护。 Intune 能够很好的与其他服务集成，以完成此任务。 例如：
 
-- Microsoft 365 是简化常见 IT 任务的关键组件。 在 Microsoft 365 管理中心内，可创建用户，并管理组。 还可以访问其他服务，如 Intune、Azure AD 等。 
+- Microsoft 365 是简化常见 IT 任务的关键组件  。 在 Microsoft 365 管理中心内，可创建用户，并管理组。 还可以访问其他服务，如 Intune、Azure AD 等。 
 
   例如，在 Microsoft 365 中创建 iOS 设备组。 然后，使用 Intune 将策略推送到着重于 iOS 功能的 iOS 设备组，例如访问应用商店、使用 AirDrop、备份到 iCloud、使用 Apple 的 Web 筛选器等。
 
-- Windows Defender 包含许多安全功能，可帮助保护 Windows 10 设备。 例如，结合使用 Intune 和 Windows Defender，可以： 
+- Windows Defender 包含许多安全功能，可帮助保护 Windows 10 设备  。 例如，结合使用 Intune 和 Windows Defender，可以： 
 
     - 启用 [Windows Defender SmartScreen ](https://docs.microsoft.com/intune/endpoint-protection-windows-10) 以查找移动设备上的文件和应用中的可疑活动。 
     - 使用 [Windows Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)来帮助阻止移动设备上的安全漏洞。 并且，通过阻止用户访问公司资源来帮助限制安全漏洞的影响。
 
-- 条件访问是 Azure Active Directory 的功能，可以与 Intune 完美集成。 使用[条件访问](https://docs.microsoft.com/intune/conditional-access)，确保只允许符合的设备访问电子邮件、SharePoint 和其他应用。 
+- 条件访问  是与 Intune 完美集成的 Azure Active Directory 功能。 使用[条件访问](https://docs.microsoft.com/intune/conditional-access)，可以确保只有合规设备，才能访问电子邮件、SharePoint 和其他应用。 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>选择适合你的设备管理解决方案
 
-有几种方法可以实现设备管理。 首先，可以使用 Intune 中内置的功能来管理设备的不同方面。 这种方法称为移动设备管理 (MDM)。 用户“登记”他们的设备，并使用证书与 Intune 通信。 作为 IT 管理员，你可以在设备上推送应用、将设备限制到特定的操作系统、阻止个人设备等。 如果设备丢失或被盗，还可以从设备中删除所有数据。 
+有几种方法可以实现设备管理。 首先，可以使用 Intune 中内置的功能来管理设备的不同方面。 这种方法称为移动设备管理 (MDM)  。 用户“登记”他们的设备，并使用证书与 Intune 通信。 作为 IT 管理员，你可以在设备上推送应用、将设备限制到特定的操作系统、阻止个人设备等。 如果设备丢失或被盗，还可以从设备中删除所有数据。 
 
-在第二种方法中，可以在设备上管理应用。 这种方法称为移动应用程序管理 (MAM)。 用户可以使用其个人设备访问组织资源。 打开应用（如电子邮件或 SharePoint）时，系统会提示用户进行其他身份验证。 如果设备丢失或被盗，可以从设备中删除所有组织数据。 
+在第二种方法中，可以在设备上管理应用。 这种方法称为移动应用程序管理 (MAM)  。 用户可以使用其个人设备访问组织资源。 打开应用（如电子邮件或 SharePoint）时，系统会提示用户进行其他身份验证。 如果设备丢失或被盗，可以从设备中删除所有组织数据。 
 
 此外，还可以结合使用 [MDM 和 MAM](https://docs.microsoft.com/intune/byod-technology-decisions)。
 

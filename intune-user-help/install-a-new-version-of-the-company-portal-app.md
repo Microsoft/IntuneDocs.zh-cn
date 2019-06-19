@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fcee9a5d721eb3c898c65e18c6fd56189739ffa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
+ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840515"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840952"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>如何更新公司门户应用
 
@@ -29,7 +29,7 @@ ms.locfileid: "55840515"
 * 有一个更新版本的公司门户可用。
 * 不再支持当前的公司门户版本。
 
-以下步骤介绍如何在 Android、iOS 和 Windows 设备上更新或获取最新版本的应用。    
+下面逐步介绍了如何在 Android、iOS、macOS 和 Windows 设备上更新或获取最新版应用。    
 
 ## <a name="update-the-company-portal-app-on-your-android-device"></a>在 Android 设备上更新公司门户应用  
 
@@ -37,17 +37,27 @@ ms.locfileid: "55840515"
 
 ## <a name="update-the-company-portal-app-on-your-ios-device"></a>在 iOS 设备上更新公司门户应用  
 
-当新版本可用时，公司门户应用旁边的已安装应用列表中会显示“更新”选项。  
+当新版本可用时，公司门户应用旁边的已安装应用列表中会显示“更新”选项  。  
 
-1. 打开“应用商店”并搜索“Intune”。  
-2. 找到应用后，点击“更新”。  
+1. 打开“应用商店”并搜索“Intune”  。  
+2. 找到应用后，点击“更新”  。  
+
+## <a name="update-the-company-portal-app-on-your-macos-device"></a>在 macOS 设备上更新公司门户应用
+
+设置公司门户可用时自动安装更新。 
+
+1. 打开公司门户并转到**帮助**。 
+2. 选择“检查是否有更新”  。 
+3. 在 Microsoft 自动更新屏幕上，选择**自动下载并安装**。 
+
+若要查看可用的更新，请选择**检查是否有更新**。  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>在 Windows 设备上更新公司门户应用
-要在可用时自动获取更新，请打开 Microsoft Store 并转到“设置”。 然后开启“应用更新”。 要查看最近的更新以及在下载队列中等待的应用，请转到“下载和更新”。  
+要在可用时自动获取更新，请打开 Microsoft Store 并转到“设置”  。 然后开启“应用更新”  。 要查看最近的更新以及在下载队列中等待的应用，请转到“下载和更新”  。  
 
-如果希望手动更新应用，或者公司禁用了“应用更新”，请完成以下步骤。  
+如果希望手动更新应用，或者公司禁用了“应用更新”，请完成以下步骤  。  
 1. 打开 Microsoft Store。
-2. 在“搜索”框中，键入“公司门户”。
+2. 在“搜索”框中，键入“公司门户”  。
 3. 单击该应用以在设备上安装最新版本。 
 
 

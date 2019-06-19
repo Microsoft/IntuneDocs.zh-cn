@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c5892541359263383621307d269936f01fa2c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041537"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044522"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>对比作为计算机或移动设备管理 Windows 电脑
 
@@ -43,7 +43,7 @@ ms.locfileid: "66041537"
 |**清单**|可用 <br>[查看 Windows 电脑的硬件和软件清单](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|可用 <br>[如何监视应用信息](apps-monitor.md)<br>[什么是设备管理](device-management.md)|
 |**Windows 防火墙策略**|可用 <br>[使用 Windows 防火墙策略帮助保护 Windows 电脑](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |可用 <br>[Windows Defender 防火墙](endpoint-protection-windows-10.md#windows-defender-firewall)|
 |**反恶意软件保护**|Endpoint Protection<br>[使用 Endpoint Protection 帮助保障 Windows 电脑的安全](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[启用 Windows Defender](advanced-threat-protection.md)|
-|**远程协助** |TeamViewer<br>[请求并提供 Windows 电脑的远程协助](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [使用 TeamViewer 远程管理 Intune 设备](device-profile-android-teamviewer.md) |
+|**远程协助** |TeamViewer<br>[请求并提供 Windows 电脑的远程协助](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [使用 TeamViewer 远程管理 Intune 设备](teamviewer-support.md) |
 |**应用程序部署** | 不可用于适用于企业的 Microsoft 应用商店，<br>仅限 .exe、.appx 和多文件 .msi 格式<br>[为运行 Intune 软件客户端的 Windows 电脑添加应用](add-apps-for-windows-pcs-in-microsoft-intune.md)|可用于 Microsoft 应用商店应用和业务线应用<br>[如何添加 Windows 应用商店应用](store-apps-windows.md)<br>[如何添加 Windows 业务线 (LOB) 应用](lob-apps-windows.md)|
 |**应用保护**|不可用|可用 <br>[什么是应用保护策略？](app-protection-policy.md)|
 |**运行状况证明**|不可用|可用|
