@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
-ms.translationtype: HT
+ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506876"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045822"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -91,7 +91,7 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>为 iOS 或 Android 应用启用基于应用的条件访问
  
- 除了为应用启用应用保护策略外，还需要使应用具备以下条件，使其在基于 Azure ActiveDirectory (AAD) 应用的条件访问下正常运行：
+ 除了为应用启用应用保护策略外，还需要为应用启用以下策略，这样应用才能正常使用基于 Azure ActiveDirectory (AAD) 应用的条件访问：
  
  * 使用 [Azure ActiveDirectory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)构建应用并对其启用 AAD 代理身份验证。
  
