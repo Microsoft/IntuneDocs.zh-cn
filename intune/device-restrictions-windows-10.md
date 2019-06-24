@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
+ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041120"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67234975"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -420,7 +420,8 @@ ms.locfileid: "67041120"
 
 这些设置使用 [DeviceLock 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)，该策略还列出了受支持的 Windows 版本。
 
-- **密码**：选择“必需”  ，最终用户输入密码才能访问设备。 选择“未配置”（默认）可允许在没有密码的情况下访问设备  。
+- **密码**：选择“必需”  ，最终用户输入密码才能访问设备。 选择“未配置”（默认）可允许在没有密码的情况下访问设备  。 适用于仅限本地帐户。 保持配置的 Active Directory (AD) 和 Azure AD 域帐户密码。
+
   - **所需的密码类型**：选择密码类型。 选项包括：
     - **未配置**：密码可以包含数字和字母。
     - **数字**：密码必须只是数字。

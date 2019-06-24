@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749915"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197550"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
@@ -83,7 +83,7 @@ ms.locfileid: "66749915"
 
   **默认值**：是
 
-## <a name="attach-surface-reduction"></a>攻击面减少  
+## <a name="attack-surface-reduction"></a>攻击面减少  
 
 - **Office 应用启动子进程类型**  
   [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“阻止”  时，不会允许 Office 应用创建子进程。 Office 应用包括 Word、Excel、PowerPoint、OneNote 和 Access。 创建子进程是典型的恶意软件行为，尤其是在基于宏的攻击中，该行为试图使用 Office 应用启动或下载恶意可执行文件。  

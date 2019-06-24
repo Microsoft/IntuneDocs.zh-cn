@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048114"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263683"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置
 
@@ -56,7 +56,7 @@ ms.locfileid: "66048114"
 - **使用 NFC 无线收发数据**：选择“阻止”  可阻止使用近场通信 (NFC) 技术从应用无线收发数据。 “未配置”  则允许使用 NFC 在设备之间共享数据。
 - **调试功能**：选择“允许”  可允许用户在设备上使用调试功能。 “未配置”  则阻止用户在设备上使用调试功能。
 - **麦克风调节**：选择“阻止”  可防止用户取消麦克风静音和调节麦克风音量。 “未配置”  则允许用户使用和调节设备麦克风的音量。
-- **恢复出厂设置保护电子邮件**：选择“Google 帐户电子邮件地址”  。 输入设备管理员的电子邮件地址，该地址可以在擦除设备后解锁设备。 请务必使用分号分隔电子邮件地址，例如 `admin1@gmail.com;admin2@gmail.com`。 如果未输入电子邮件，则任何人都可以在设备恢复出厂设置后解锁设备。
+- **恢复出厂设置保护电子邮件**：选择“Google 帐户电子邮件地址”  。 输入设备管理员的电子邮件地址，该地址可以在擦除设备后解锁设备。 请务必使用分号分隔电子邮件地址，例如 `admin1@gmail.com;admin2@gmail.com`。 如果未输入电子邮件，则任何人都可以在设备恢复出厂设置后解锁设备。 运行非用户恢复出厂设置，例如运行恢复出厂设置使用恢复菜单上，则仅适用于这些电子邮件。
 - **网络安全门**：选择“启用”可允许用户打开网络安全门功能  。 如果设备启动时未建立网络连接，则安全门会要求临时连接到网络并刷新设备策略。 应用策略之后，将忽略临时网络且设备将继续启动。 在以下情况下，此功能会将设备连接到网络：
   - 上一个策略中没有合适的网络。
   - 设备以锁定任务模式进入应用。
@@ -100,6 +100,8 @@ ms.locfileid: "66048114"
   >   - [分配给为专用设备创建的设备组](apps-deploy.md)
   > 
   > “托管主屏幕”  应用不需要位于配置文件中，但需要将其添加为客户端应用。 将“托管主屏幕”  应用添加为客户端应用后，在配置文件中添加的任何其他应用都会在“托管主屏幕”  应用中显示为图标。 
+  >
+  > 当使用具有管理主页屏幕多应用展台模式，拨号器/phone 应用程序可能无法正常工作。 
 
   - 选择“添加”  并从列表中选择应用。
 
