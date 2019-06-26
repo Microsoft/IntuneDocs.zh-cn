@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041911"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251169"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中添加终结点保护设置
 
@@ -38,18 +38,18 @@ ms.locfileid: "66041911"
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>创建包含终结点保护设置的设备配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)。
-3. 选择“设备配置” > “配置文件” > “创建配置文件”。
-4. 输入终结点保护配置文件的“名称”和“描述”。
-5. 从“平台”下拉列表中，选择要应用自定义设置的设备平台。 目前，可以为设备限制设置选择以下平台之一：
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 选择“设备配置” > “配置文件” > “创建配置文件”    。
+4. 输入终结点保护配置文件的“名称”和“描述”   。
+5. 从“平台”  下拉列表中，选择要应用自定义设置的设备平台。 目前，可以为设备限制设置选择以下平台之一：
    - **macOS**
    - **Windows 10 及更高版本**
-6. 在“配置文件类型”下拉列表中，选择“Endpoint Protection”。 
+6. 在“配置文件类型”  下拉列表中，选择“Endpoint Protection”  。 
 7. 根据所选择的平台，可配置的设置有所不同。 请参阅：
    - [macOS 设置](endpoint-protection-macos.md)
    - [Windows 10 设置](endpoint-protection-windows-10.md)  
 
-8. 配置适用的设置后，选择“创建配置文件”页上的“创建”。
+8. 配置适用的设置后，选择“创建配置文件”页上的“创建”   。
 
    配置文件随即创建并显示在“配置文件列表”页中。 要向组分配此配置文件，请参阅[分配设备配置文件](device-profile-assign.md)。
 

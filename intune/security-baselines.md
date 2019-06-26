@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: bb1ddcadcac1ec9b4730a5dcd66abca111d80196
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374133"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251201"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>在 Intune 中创建 Windows 10 安全基线
 
@@ -70,7 +70,7 @@ Intune 托管设备上的安全基线类似于使用 Configuration Manager 的�
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=20909)，然后选择“设备安全性”   >   “安全基线(预览)”。 此时，系统列出了可用基线。 
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后选择“设备安全性”   >   “安全基线(预览)”。 此时，系统列出了可用基线。 
 
     ![选择要配置的安全基线](./media/security-baselines/available-baselines.png)
 
