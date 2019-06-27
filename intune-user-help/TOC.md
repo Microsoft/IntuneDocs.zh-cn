@@ -157,6 +157,7 @@
 ### [重置设备](reset-device-cp-app.md)
 
 ## [使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)
+### [管理应用](manage-apps-cpweb.md)  
 ### [远程锁定设备](remote-lock-your-device-cpwebsite.md)  
 ### [重命名设备](rename-your-device-cpwebsite.md)  
 ### [删除设备](remove-your-device-cpwebsite.md)  
