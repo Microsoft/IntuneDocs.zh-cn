@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196854"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402702"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>设置 iOS 设备对公司资源的访问  
 
@@ -59,15 +59,15 @@ ms.locfileid: "66196854"
 
 1. 打开公司门户并使用工作或学校帐户登录。 
 
-    ![公司门户应用的示例屏幕截图，“登录”。](./media/ios-01-cp-enroll-1903.PNG)  
+    ![公司门户应用的示例屏幕截图，“登录”。](./media/ios-01-cp-enroll-1904.PNG)  
 
 2. 当系统提示接收公司门户通知时，请点击“允许”  。 例如，如果需要更新设备设置，公司门户会使用通知来提醒你。 
 
-    ![公司门户主页的示例屏幕截图，“通知”提示。](./media/ios-04-cp-enroll-1903.PNG)  
+    ![公司门户主页的示例屏幕截图，“通知”提示。](./media/ios-02-cp-enroll-1904.PNG)  
 
 3. 在“设置访问权限”屏幕上，选择“开始”   。  
 
-     ![公司门户的示例屏幕截图，“设置访问权限”屏幕。](./media/ios-05-cp-enroll-1903.PNG)  
+     ![公司门户的示例屏幕截图，“设置访问权限”屏幕。](./media/ios-03-cp-enroll-1904.PNG)  
 
 4. 仔细阅读组织可以看到和无法看到的设备信息列表。 然后点击“继续”  。  
 
@@ -87,7 +87,7 @@ ms.locfileid: "66196854"
 
 7. 仅限 iOS 12.2 及更高版本：当系统提示打开公司门户时，请点击“打开”  。 “安装管理配置文件”屏幕列出了安装配置文件的步骤  。
 
-    ![公司门户的示例屏幕截图，“安装管理配置文件”屏幕。](./media/ios-1904-settings-icon.PNG)  
+    ![公司门户的示例屏幕截图，“安装管理配置文件”屏幕。](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. 转到 Settings 应用，然后点击“已下载的配置文件”  。  
 
@@ -99,24 +99,24 @@ ms.locfileid: "66196854"
     
 10. 输入设备密码。 然后点击“安装”  。    
 
-    ![Settings 应用的示例屏幕截图，“安装配置文件”屏幕，其中光标位于**安装**按钮上。](./media/ios-1904-password-install.PNG)  
+    ![Settings 应用的示例屏幕截图，“安装配置文件”屏幕，其中光标位于**安装**按钮上。](./media/ios-10-cp-enroll-1904.PNG)  
 
 
 11. 下一个屏幕是设备管理的标准系统警告。 若要继续安装，请点击“安装”  。 如果系统提示信任远程管理，请点击“信任”  。  
 
-    ![Settings 应用的示例屏幕截图，根证书和移动设备管理的标准系统警告屏幕。](./media/ios-15-cp-enroll-1903.PNG)  
+    ![Settings 应用的示例屏幕截图，根证书和移动设备管理的标准系统警告屏幕。](./media/ios-11-cp-enroll-1904.PNG)  
 
 12. 安装完成后，点击“完成”  。 若要验证配置文件是否已安装，请转到“配置文件和设备管理”设置  。 应该会在“移动设备管理”下看到此配置文件  。   
 
-    ![Settings 应用的示例屏幕截图，“配置文件和设备管理”设置，其中显示管理配置文件。](./media/ios-00-cp-enroll-1903.PNG)  
+    ![Settings 应用的示例屏幕截图，“配置文件和设备管理”设置，其中显示管理配置文件。](./media/ios-12-cp-enroll-1904.PNG)  
 
 13. 返回到 Company Portal 应用。 Company Portal 将开始同步和设置你的设备。 Company Portal 可能会提示更新其他设备设置。 如果是这样，请点击“继续”  。  
 
-    ![Company Portal 的示例屏幕截图，“设置访问权限”屏幕，其中设置要求旁边有黄色三角形。](./media/ios-12-cp-enroll-1903.PNG)  
+    ![Company Portal 的示例屏幕截图，“设置访问权限”屏幕，其中设置要求旁边有黄色三角形。](./media/ios-13-cp-enroll-1904.PNG)  
 
 14. 当列表中的所有项目显示绿色圆圈时，表明设置已完成。 点击“完成”  。   
     
-    ![Company Portal 的示例截图，“设置完成!” 屏幕，显示所有绿色圆圈。](./media/ios-13-cp-enroll-1903.PNG)  
+    ![Company Portal 的示例截图，“设置完成!” 屏幕，显示所有绿色圆圈。](./media/ios-14-cp-enroll-1904.PNG)  
 
 > [!Note]
 > 如果组织监视语音和数据限制，或者为你提供公司拥有的设备，则可能还需要完成一些步骤。 如果系统提示安装 Datalert 应用，请参阅[在电信费用管理中注册设备](enroll-your-device-with-telecom-expense-management-ios.md)  。 如果组织参加了 Apple 的设备注册计划，请了解[如何注册公司拥有的设备](enroll-your-device-dep-ios.md)。  

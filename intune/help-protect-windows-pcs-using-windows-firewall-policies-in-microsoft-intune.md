@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b289f9edc1522333f70308a6979b2ea2e71b17c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047540"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403019"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows PC
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果你想要管理防火墙设置的 Windows 电脑注册为移动设备，请参阅[在 Intune 中添加终结点保护设置](endpoint-protection-configure.md)。
 
 Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管理的 Windows 电脑。 其中的一种方法是提供使你能够在电脑上配置 Windows 防火墙设置的策略。
 
@@ -50,13 +53,13 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 
 ## <a name="configure-a-windows-firewall-policy"></a>配置 Windows 防火墙策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略”&gt;“添加策略”。
+1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略”  &gt;“添加策略”  。
 
 2.  配置和部署 **Windows 防火墙设置**策略。 你可以使用建议的设置，或对设置进行自定义。 如果你需要有关如何创建和部署策略的详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
 
     以下部分列出你可在策略中配置的值，还列出将在你未自定义策略的情况下使用的默认值。
 
-部署 Windows 防火墙策略之后，你可以在“策略”工作区的“所有策略”页上查看其状态。
+部署 Windows 防火墙策略之后，你可以在“策略”  工作区的“所有策略”  页上查看其状态。
 
 ## <a name="specify-policy-settings-for-windows-firewall"></a>指定 Windows 防火墙策略设置
 
@@ -67,7 +70,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 - 连接到专用（受信任的）网络（例如家庭网络）
 - 连接到不受信任的公用网络（例如咖啡店）
 
-以上每个设置的默认值都是“是”，这是最安全的值。
+以上每个设置的默认值都是“是”  ，这是最安全的值。
 
 
 
@@ -78,10 +81,10 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 - 连接到专用（受信任的）网络（例如家庭网络）
 - 连接到不受信任的公用网络（例如咖啡店）
 
-以上每个设置的默认值都是“是”，这是最安全的值。
+以上每个设置的默认值都是“是”  ，这是最安全的值。
 
 > [!IMPORTANT]
-> 如果环境中包含运行 Windows Vista（未安装服务包）的托管计算机，则必须安装与 Microsoft 知识库[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或者在部署到这些计算机的策略中禁用“阻止所有传入连接”策略设置。
+> 如果环境中包含运行 Windows Vista（未安装服务包）的托管计算机，则必须安装与 Microsoft 知识库[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或者在部署到这些计算机的策略中禁用“阻止所有传入连接”策略设置  。
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Windows 防火墙阻止新程序时通知用户
 
@@ -90,7 +93,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 - 连接到专用（受信任的）网络（例如家庭网络）
 - 连接到不受信任的公用网络（例如咖啡店）
 
-以上每个设置的默认值都是“是”。
+以上每个设置的默认值都是“是”  。
 
 
 ### <a name="configure-predefined-exceptions"></a>配置预定义的例外

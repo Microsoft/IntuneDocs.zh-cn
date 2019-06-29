@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3e24bd79fbceba1834d02af8512e5dd52676d471
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050200"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403309"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>为运行 Intune 软件客户端的 Windows 电脑添加应用
 
@@ -95,12 +95,12 @@ ms.locfileid: "66050200"
 
 8. 在“**摘要**”页上，审阅你指定的信息。 准备就绪后，选择“**上载**”。
 
-9. 选择“关闭”完成操作。
+9. 选择“关闭”完成操作。 
 
-该应用将显示在“应用”工作区的“应用”节点中。
+该应用将显示在“应用”  工作区的“应用”  节点中。
 
 ## <a name="next-steps"></a>后续步骤
 
 创建应用后，下一步是进行部署。 有关详细信息，请参阅[使用 Microsoft Intune 将应用分配到组](apps-deploy.md)。
 
-如需阅读有关将软件部署到 Windows 电脑的提示和技巧的详细信息，请参阅博客文章 [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/)（支持提示：将 Intune 软件分发到电脑的最佳实践）。
+如需阅读有关将软件部署到 Windows 电脑的提示和技巧的详细信息，请参阅博客文章 [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://support.microsoft.com/en-US/help/2583929)（支持提示：将 Intune 软件分发到电脑的最佳实践）。

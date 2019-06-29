@@ -1,6 +1,6 @@
 ---
-title: 使用 Microsoft Intune 中的范围标记来筛选策略 - Azure | Microsoft Docs
-description: 使用范围标记将配置文件筛选到特定角色。
+title: 使用 Microsoft Intune 中的作用域标记来筛选策略 - Azure | Microsoft Docs
+description: 使用作用域标记将配置文件筛选到特定角色。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045194"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403797"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>对分布式 IT 使用基于角色的访问控制 (RBAC) 和范围标记
 
@@ -36,16 +36,18 @@ ms.locfileid: "66045194"
 4. 将“西雅图”范围标记添加到希望在成员（组）中向管理员显示的设备。 
 
 
-## <a name="to-create-a-scope-tag"></a>创建范围标记
+## <a name="to-create-a-scope-tag"></a>创建作用域标记
 
 1. 在 Intune 中，选择“角色” > “范围(标记)” > “创建”    。
 
     ![显示创建范围标记的屏幕截图。](./media/scope-tags/create-scope-tag.png)
 
-2. 提供名称和说明   。
-3. 选择“创建”  。
+3. 如果你希望特定组中的所有设备，请选择**向所选组中的所有设备分配作用域标记**。
+    1. 在中**选择要包括的组**页上，选择包含你想要分配到此作用域标记的设备的组。
+    2. 选择“选择”  。
+4. 选择“创建”  。
 
-## <a name="to-assign-a-scope-tag-to-a-role"></a>向角色分配范围标记
+## <a name="to-assign-a-scope-tag-to-a-role"></a>向角色分配作用域标记
 
 1. 在 Intune 中，选择“角色” > “所有角色”，选择一个角色，然后选择“分配” > “分配”     。
 
@@ -110,7 +112,7 @@ ms.locfileid: "66045194"
     - 设备合规性策略
     - 设备配置文件
     - Windows 10 更新通道
-    - 受管理设备
+    - 托管设备
     - 应用
     - 应用配置策略 - 受管理设备
     - PowerShell 脚本

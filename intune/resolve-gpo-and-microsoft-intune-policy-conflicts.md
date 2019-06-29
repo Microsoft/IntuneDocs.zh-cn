@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c7de15c3839548e8edf5056579eab1c0c0751a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045259"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403763"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解决组策略对象 (GPO) 与 Microsoft Intune 之间的策略冲突
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。
 
 Intune 使用策略来帮助你管理 Windows 电脑上的设置。 例如，你可以使用策略来控制电脑上 Windows 防火墙的设置。 Intune 的许多设置都类似于你可使用 Windows 组策略配置的设置。 但是，有时可能会有两种方法互相冲突。
 
@@ -110,13 +113,13 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-你可以将 GPO 仅应用于在所选 GPO 的组策略管理控制台的“安全筛选”区域中指定的那些安全组。 默认情况下，GPO 应用于“Authenticated Users”。
+你可以将 GPO 仅应用于在所选 GPO 的组策略管理控制台的“安全筛选”  区域中指定的那些安全组。 默认情况下，GPO 应用于“Authenticated Users”  。
 
--   在“Active Directory 用户和计算机”管理单元中，创建包含不希望使用 Intune 管理的计算机和用户帐户的新安全组。 例如，可以将组命名为 *Not In Microsoft Intune*。
+-   在“Active Directory 用户和计算机”  管理单元中，创建包含不希望使用 Intune 管理的计算机和用户帐户的新安全组。 例如，可以将组命名为 *Not In Microsoft Intune*。
 
--   在组策略管理控制台中所选 GPO 的“委派”选项卡上，右键单击新的安全组以将相应的“读取”和“应用组策略”权限委派给该安全组中的用户和计算机。 （“应用组策略” 权限可在“高级”  对话框上找到。）
+-   在组策略管理控制台中所选 GPO 的“委派”  选项卡上，右键单击新的安全组以将相应的“读取”  和“应用组策略”  权限委派给该安全组中的用户和计算机。 （“应用组策略”  权限可在“高级”  对话框上找到。）
 
--   然后，将新的安全组筛选器应用于所选 GPO，并删除“Authenticated Users”默认筛选器。
+-   然后，将新的安全组筛选器应用于所选 GPO，并删除“Authenticated Users”  默认筛选器。
 
 在 Intune 服务中的注册发生更改时，必须对新安全组进行维护。
 
