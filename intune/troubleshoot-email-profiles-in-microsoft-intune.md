@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 2246e3f6faa853f620327558a7faf4dc9d6a6e85
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402710"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197511"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中电子邮件配置文件的常见问题和解决方法
 
 回顾一些常见电子邮件配置文件问题，并了解如何排查并解决这些问题。
 
+## <a name="what-you-need-to-know"></a>须知内容
+
+- 已为注册设备的用户部署了电子邮件配置文件。 若要配置电子邮件配置文件，Intune 使用 Azure Active Directory (AD) 属性中的用户的电子邮件配置文件在注册过程。 [将电子邮件设置添加到设备](email-settings-configure.md)可能是很好的资源。
+- 从 Configuration Manager 混合迁移至 Intune 独立版后, 从 Configuration Manager 混合环境的电子邮件配置文件将保持在设备上 7 天。 这是预期行为。 如果需要更快地删除电子邮件配置文件，请联系[Intune 支持](get-support.md)。
+- Android 企业版 Gmail 或部署使用托管的 Google Play 商店工作的 9 个。 [添加托管 Google Play 应用](apps-add-android-for-work.md)列出的步骤。
+- Microsoft Outlook for iOS 和 Android 不支持电子邮件配置文件。 相反，将部署应用配置策略。 有关详细信息，请参阅[Outlook 配置设置](app-configuration-policies-outlook.md)。
+- 针对设备组 （而不是用户组） 的电子邮件配置文件可能无法传递到设备。 如果设备具有主要用户，则设备目标设定应起作用。 如果电子邮件配置文件包含用户证书，请确保为目标用户组。
+- 可能会反复提示用户输入其密码的电子邮件配置文件。 在此方案中，选中在电子邮件配置文件中引用的所有证书。 如果其中一个证书不针对的是用户，Intune 会尝试将电子邮件配置文件部署。
+
 ## <a name="device-already-has-an-email-profile-installed"></a>设备已安装电子邮件配置文件
 
-如果用户在 Intune 中注册之前创建电子邮件配置文件，则 Intune 电子邮件配置文件可能无法按预期工作：
+如果用户在 Intune 或 Office 365 MDM 中注册前创建的电子邮件配置文件，由 Intune 部署的电子邮件配置文件可能无法按预期工作：
 
 - **iOS**：Intune 基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 用户创建电子邮件配置文件会阻止部署 Intune 创建的配置文件。 这是一个常见问题，因为 iOS 用户通常会创建电子邮件配置文件，然后注册。 公司门户应用指明用户不符合策略，并可能会提示用户删除电子邮件配置文件。
 
@@ -50,19 +59,16 @@ Samsung KNOX 不使用主机名识别配置文件。 不建议创建多个电子
 
 ## <a name="unable-to-send-images-from--email-account"></a>无法从电子邮件帐户发送图像
 
-适用于 Azure 经典门户中的 Intune。
-
 自动配置了电子邮件帐户的用户无法从其设备发送图片或图像。 未启用“允许从第三方应用程序发送电子邮件”时，可能会发生此情况  。
 
 ### <a name="intune-solution"></a>Intune 解决方案
 
-1. 打开 Microsoft Intune 管理控制台，选择“策略”工作负荷 >“配置策略”   。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 依次选择“设备配置”   > “配置文件”  。
+3. 选择电子邮件配置文件 >**属性** > **设置**。
+4. 设置**允许从第三方应用程序发送电子邮件**将设置为**启用**。
 
-2. 选择电子邮件配置文件，然后单击**编辑**。
-
-3. 选择“允许从第三方应用程序发送电子邮件” 
-
-### <a name="configuration-manager-integrated-with-intune-solution"></a>与 Intune 解决方案集成的 Configuration Manager
+### <a name="configuration-manager-hybrid"></a>Configuration Manager 混合
 
 1. 打开 Configuration Manager 控制台 >“资产和符合性”  。
 

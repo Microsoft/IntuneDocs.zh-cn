@@ -269,6 +269,8 @@
           href: device-logout-user.md
         - name: 删除用户
           href: device-remove-user.md
+        - name: 查找主要用户
+          href: find-primary-user.md
         - name: 清除 macOS 设备
           href: device-erase.md
         - name: 远程控制移动设备

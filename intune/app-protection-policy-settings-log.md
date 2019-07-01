@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96cb9869db746942615221c5ab112ea5afd8de9c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8dca73de4491ab4f4822d42d589ef4e3bbbc50f1
+ms.sourcegitcommit: 569cd2d655d33db4fc5c5fb1f8f74a6bfdd78738
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049680"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67157044"
 ---
 # <a name="review-client-app-protection-logs"></a>查看客户端应用保护日志
 
 了解可在应用保护日志中查看的设置。 启用移动客户端上的 Intune 诊断来访问这些日志。 
 
 启用和收集日志的过程因平台而异：
-- **Android 设备** - 使用“公司门户”。 请参阅[通过电子邮件将日志发送给公司支持人员](/intune-user-help/send-logs-to-your-it-admin-by-email-android)。
-- **iOS 设备** - 使用 Managed Browser 或 Microsoft Edge 收集日志。 有关详细信息，请参阅 Intune 支持团队的博客[全新的 Intune 诊断控制台，用于 Intune Managed Browser 中的日志提交](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021)。 
-- **Windows 10 设备** - 使用“MDMDiag”和事件日志。 请参阅 Windows 客户端管理内容中的 [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)（诊断 Windows 10 中的 MDM 故障）和博客 [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)（Windows 10 Intune 策略故障排除）
+- **Android 设备** - 使用“公司门户”  。 请参阅[通过电子邮件将日志发送给公司支持人员](/intune-user-help/send-logs-to-your-it-admin-by-email-android)。
+- **iOS 设备** - 使用 Managed Browser 或 Microsoft Edge  收集日志。 有关详细信息，请参阅 Intune 支持团队的博客[全新的 Intune 诊断控制台，用于 Intune Managed Browser 中的日志提交](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021)。 
+- **Windows 10 设备** - 使用“MDMDiag”和事件日志  。 请参阅 Windows 客户端管理内容中的 [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)（诊断 Windows 10 中的 MDM 故障）和博客 [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)（Windows 10 Intune 策略故障排除）
 
 
 下表列出了日志中记录的设置名称和说明。
