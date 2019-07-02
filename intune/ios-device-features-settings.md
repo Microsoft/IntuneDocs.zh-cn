@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 06/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b31c7778ea167b98468a0a9ad9e37047c30ce201
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047167"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413812"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>用于使用 Intune 中常见 iOS 功能的 iOS 设备设置
 
@@ -195,7 +195,7 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
   设备令牌还可以用于向这些字段添加特定于设备的信息。 例如，若要显示序列号，请输入 `Serial Number: {{serialnumber}}`。 在锁屏上，文本显示类似于 `Serial Number 123456789ABC`。 输入变量时，请务必使用大括号 `{{ }}`。 [应用配置令牌](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可用变量的列表。 还可以使用 `deviceName` 或任何其他特定于设备的值。
 
   > [!NOTE]
-  > 变量不在 UI 中验证。 因此，可能会看到使用不正确输入保存的配置文件。 例如，如果输入 `{{Devicename}}` 而不是 `{{devicename}}`，则显示文本字符串而不是设备的唯一名称。
+  > 变量不在 UI 中，验证，并且是区分大小写。 因此，可能会看到使用不正确输入保存的配置文件。 例如，如果输入 `{{DeviceID}}` 而不是 `{{deviceid}}`，则显示文本字符串而不是设备的唯一 ID。 请确保输入正确的信息。
 
 选择“确定”，保存所做更改。
 

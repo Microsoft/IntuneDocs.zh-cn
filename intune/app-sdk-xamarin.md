@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f065849bd15a23558aa9bb7f82730dca9d4b3fa
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 506bdc73717ed9af11ab8db0e5f459145ab27f83
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043648"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407096"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -74,7 +74,7 @@ SDK 依靠 [Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com
       ```
       如果用户的 UPN 在调用时未知，则应用可能会传入 null。 在这种情况下，系统将提示用户输入他们的电子邮件地址和密码。
       
-      如果应用已使用 ADAL 或 MSAL 对用户进行身份验证，则可以在应用和 Intune SDK 之间配置单一登录 (SSO) 体验。 首先，需要配置 ADAL/MSAL 以在由 iOS 的 Intune Xamarin Bindings (com.microsoft.adalcache) 使用的同一个密钥链访问组中存储令牌。 对于 ADAL，可以通过[设置 AuthenticationContext 的 KeychainSecurityGroup 属性](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Token-cache-serialization#enable-token-cache-sharing-across-ios-applications)来执行此操作。 对于 MSAL，需要[设置 PublicClientApplication 的 KeychainSecurityGroup 属性](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/msal-net-2-released#you-can-now-enable-sso-between-adal-and-msal-apps-on-xamarinios)。 接下来，需要将 Intune SDK 使用的默认 AAD 设置替代为应用的这些设置。 可以通过应用 Info.plist 中的 IntuneMAMSettings 字典执行此操作，如 [Intune App SDK for iOS 开发人员指南](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)中所述。也可以使用 IntuneMAMPolicyManager 实例的 AAD 替代属性。 对于 ADAL 设置是静态的应用，建议使用 Info.plist 方法；对于在运行时确定这些值的应用，建议使用替代属性。 配置所有 SSO 设置后，应用应在成功通过身份验证后向 IntuneMAMEnrollmentManager 的 RegisterAndEnrollAccount 方法提供用户的 UPN：
+      如果应用已使用 ADAL 或 MSAL 对用户进行身份验证，则可以在应用和 Intune SDK 之间配置单一登录 (SSO) 体验。 首先，需要配置 ADAL/MSAL 以在由 iOS 的 Intune Xamarin Bindings (com.microsoft.adalcache) 使用的同一个密钥链访问组中存储令牌。 对于 ADAL，可通过[设置 AuthenticationContext 的 iOSKeychainSecurityGroup 属性](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access)来执行此操作。 对于 MSAL，需要[设置 PublicClientApplication 的 iOSKeychainSecurityGroup 属性](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access)。 接下来，需要将 Intune SDK 使用的默认 AAD 设置替代为应用的这些设置。 可以通过应用 Info.plist 中的 IntuneMAMSettings 字典执行此操作，如 [Intune App SDK for iOS 开发人员指南](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)中所述。也可以使用 IntuneMAMPolicyManager 实例的 AAD 替代属性。 对于 ADAL 设置是静态的应用，建议使用 Info.plist 方法；对于在运行时确定这些值的应用，建议使用替代属性。 配置所有 SSO 设置后，应用应在成功通过身份验证后向 IntuneMAMEnrollmentManager 的 RegisterAndEnrollAccount 方法提供用户的 UPN：
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```

@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e24e72951d473c2e7e49d5ae62b39df18635c16
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040278"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403553"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>查看 Windows 电脑的硬件和软件清单
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果想要查看 Windows 电脑的清单注册为移动设备，请参阅[在 Intune 中查看设备详细信息](device-inventory.md)。
 
 Intune 收集使用 Intune 软件客户端作为电脑管理的桌面硬件和软件相关详细信息。 使用下列过程中的信息来了解如何创建：
 
