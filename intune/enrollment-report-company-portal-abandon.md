@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041854"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529755"
 ---
 # <a name="incomplete-user-enrollments-report"></a>“用户注册不完整”报表
 
 该报表会显示公司门户注册过程中用户在哪些方面未完成注册过程。
 
-要查看报表，请选择“Intune” > “设备注册” > “用户注册不完整”。
+要查看报表，请选择“Intune” > “设备注册” > “用户注册不完整”    。
 
 通过此信息，可更新使用培训文档，帮助客户完成注册。 例如，如果许多用户在“使用条款”区域退出，则可以调查该区域并使其更直观地为用户呈现。
 
@@ -35,9 +35,9 @@ ms.locfileid: "66041854"
 
 不完整的注册是指用户执行下列任一操作的情况：
 
--   明确选择停止注册的操作
--   在注册过程中关闭公司门户
--   注册部分之间花费的时间超过 30 分钟
+- 明确选择停止注册的操作
+- 在注册过程中关闭公司门户
+- 注册部分之间花费的时间超过 30 分钟
 
 如果用户选择停止注册并多次重启，则会显示多次尝试和多次不完整注册。 如果用户等待 30 分钟再打开新的注册屏幕，则被视为多次不完整注册。
 
@@ -47,24 +47,24 @@ ms.locfileid: "66041854"
 
 报表显示过去两周的数据，但可以筛选报表以显示过去 30 天内的任何时段。
 
-可以通过选择“筛选器”来筛选日期范围、操作系统和注册部分。
+可以通过选择“筛选器”来筛选日期范围、操作系统和注册部分  。
 
 ### <a name="number-and-percentage-tiles"></a>数量和百分比磁贴
 
 在报表的顶部，可查看与所有注册相关的不完整注册的次数和所占的百分比。
 
--   发起注册的次数：尝试注册的次数。
--   不完整注册的次数：尝试注册但未完全注册且导致设备不符合要求的次数。
--   不完整注册率：放弃的注册尝试次数所占百分比（放弃注册的次数/发起注册的次数）。
+- 发起注册的次数：尝试注册的次数。
+- 不完整注册的次数：尝试注册但未完全注册且导致设备不符合要求的次数。
+- 不完整注册率：放弃的注册尝试次数所占百分比（放弃注册的次数/发起注册的次数）。
 
 ### <a name="line-graph"></a>折线图
 
 折线图显示了下列四个核心注册部分中每个部分的每日不完整注册次数：
 
--   安装程序清单
--   平台屏幕
--   使用条款
--   符合性/激活
+- 安装程序清单
+- 平台屏幕
+- 使用条款
+- 符合性/激活
 
 ### <a name="user-abandonment-actions"></a>用户的放弃操作
 
@@ -75,11 +75,11 @@ ms.locfileid: "66041854"
 
 | 操作名称 | 屏幕或流 | 平台 | 操作 |
 | ---- |---- |---- |---- |
-| EnrollmentWrapUp | 提示在公司门户中打开页面 | iOS/Android | 取消 |
-| EnrollmentWrapUp | 注册设备屏幕直到完成“加载公司资源” | iOS/Android | 用时超过 30 分钟 |
-| DeviceCategory | 选择“设备类别”（如果管理员已配置），然后单击“完成” | iOS/Android | 用时超过 30 分钟 |
+| EnrollmentWrapUp | 提示在公司门户中打开页面 | iOS/Android | 取消  |
+| EnrollmentWrapUp | 注册设备屏幕直到完成“加载公司资源”  | iOS/Android | 用时超过 30 分钟 |
+| DeviceCategory | 选择“设备类别”（如果管理员已配置），然后单击“完成”  | iOS/Android | 用时超过 30 分钟 |
 | PreEnrollmentWizard | 在已开始注册但返回到“设置访问权限”时设置访问屏幕 | iOS/Android| **推迟** |
-| PreEnrollmentWizard | 设置访问屏幕，直到单击“下一步是什么”屏幕上的“下一步” | iOS/Android | 用时超过 30 分钟 |
+| PreEnrollmentWizard | 设置访问屏幕，直到单击“下一步是什么”屏幕上的“下一步”   | iOS/Android | 用时超过 30 分钟 |
 
 #### <a name="platform-screens-section"></a>平台屏幕部分
 
@@ -90,16 +90,16 @@ ms.locfileid: "66041854"
 | iOSProfileLaunch | 提示信任配置文件的来源以注册设备 | iOS | **取消** |
 | iOSProfileLaunch | 安装配置文件屏幕，直到安装配置文件完成 | iOS | 用时超过 30 分钟 |
 | AndroidPermissions | 设备管理员激活屏幕 | Android | **取消** |
-| AndroidPermissions | 从提示批准打电话和管理电话到设备管理员“激活” | Android | 用时超过 30 分钟 |
+| AndroidPermissions | 从提示批准打电话和管理电话到设备管理员“激活”  | Android | 用时超过 30 分钟 |
 | KnoxActivation | KLMS 代理激活（仅限 Samsung） | Android| **取消** |
-| KnoxActivation | “确认”前的 KLMS 代理激活 | Android | 用时超过 30 分钟|
+| KnoxActivation | “确认”前的 KLMS 代理激活  | Android | 用时超过 30 分钟|
 
 #### <a name="terms-of-use-section"></a>使用条款部分
 
 | 操作名称 | 屏幕或流 | 平台 | 操作 |
 | ---- |---- |---- |---- |
 | TermsofUse | 使用条款（如果管理员已配置） | iOS/Android | **全部拒绝** |
-| TermsofUse | “全部接受”之前的使用条款 | iOS/Android | 用时超过 30 分钟 |
+| TermsofUse | “全部接受”之前的使用条款  | iOS/Android | 用时超过 30 分钟 |
 
 #### <a name="complianceactivation-section"></a>“符合性/激活”部分
 
