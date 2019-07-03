@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a483eb45e350104b2188906c97dae3a98c52ff2c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 43e1bee27d785269d57fa7a35a8f6f9fd9bbbd8c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043339"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530566"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>将 Check Point SandBlast Mobile 与 Intune 集成
 
@@ -63,24 +63,24 @@ Check Point SandBlast 应用授权流程包含下列内容：
 
 1.  请转到 [Check Point SandBlast Mobile MTD 控制台](https://intune-4.eu1.locsec.net/)，并使用凭据登录。
 
-2.  单击“设置”选项卡。
+2.  单击“设置”选项卡  。
 
-3.  依次选择“设备管理”和“设置”。
+3.  依次选择“设备管理”和“设置”   。
 
-4.  从“MDM 服务”下拉列表中选择 “Microsoft Intune”。
+4.  从“MDM 服务”下拉列表中选择 “Microsoft Intune”   。
 
-5.  将 Microsoft Intune 设置为 MDM 服务后，系统会弹出“Microsoft Intune 配置”窗口，请为每个设备平台（ iOS、Android 和 Windows）选择“添加到我的组织”，授权 Check Point SandBlast Mobile 与 Intune 和 Azure AD 进行通信。
+5.  将 Microsoft Intune 设置为 MDM 服务后，系统会弹出“Microsoft Intune 配置”窗口，请为每个设备平台（ iOS、Android 和 Windows）选择“添加到我的组织”，授权 Check Point SandBlast Mobile 与 Intune 和 Azure AD 进行通信   。
 
     ![显示 Check Point MTD Intune 配置的图像](./media/checkpoint-MTD-1.PNG)
 
     > [!IMPORTANT]
     > 必须添加所有设备平台，才能继续执行下一步。
 
-6.  选择“接受”，授权 Check Point SandBlast Mobile 应用与 Intune 和 Azure Active Directory 进行通信。
+6.  选择“接受”，授权 Check Point SandBlast Mobile 应用与 Intune 和 Azure Active Directory 进行通信  。
 
 7.  启用所有设备平台后，需要输入 Azure AD 安全组。
 
-8.  选择“验证”，Azure AD 安全组成功通过验证后，选择“保存”。
+8.  选择“验证”，Azure AD 安全组成功通过验证后，选择“保存”   。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17db2227303fe3937156ad6afa610dce48bd1992
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041353"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528313"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入门：添加并分配客户端应用
 
@@ -44,21 +44,21 @@ ms.locfileid: "66041353"
 
 可使用以下步骤将应用添加到 Intune：
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用” > “添加”。 
-2. 在“应用类型”下拉框的“Office 365 套件”部分中选择“Windows 10”。
-3. 选择“配置应用套件”以选择要分配给 Intune 用户的 Office 应用。
-4. 单击“确定”，接受默认选定的应用。
-5. 选择“应用套件信息”。
-6. 输入“Microsoft Office 365 应用套件”作为“套件名称”。
-7. 输入“Microsoft Office 365 应用套件”作为“套件说明”。
-8. 单击“在公司门户中将此应用显示为特色应用”旁的“是”。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用” > “添加”    。 
+2. 在“应用类型”下拉框的“Office 365 套件”部分中选择“Windows 10”    。
+3. 选择“配置应用套件”以选择要分配给 Intune 用户的 Office 应用  。
+4. 单击“确定”，接受默认选定的应用  。
+5. 选择“应用套件信息”  。
+6. 输入“Microsoft Office 365 应用套件”作为“套件名称”   。
+7. 输入“Microsoft Office 365 应用套件”作为“套件说明”   。
+8. 单击“在公司门户中将此应用显示为特色应用”旁的“是”   。
 9. 单击" **确定**"。
 
     ![添加应用信息的屏幕截图](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. 选择“应用套件设置”。
-9. 在“更新通道”下拉框中，选择“每月”。
-10. 单击“确定” > 添加”。
+8. 选择“应用套件设置”  。
+9. 在“更新通道”下拉框中，选择“每月”   。
+10. 单击“确定” > 添加”   。
 
 ## <a name="assign-the-app-to-a-group"></a>将应用分配给组
 
@@ -68,30 +68,30 @@ ms.locfileid: "66041353"
 > 本快速入门以本系列前面的快速入门为基础。 有关详细信息，请参阅本快速入门中的[先决条件](quickstart-add-assign-app.md#prerequisites)。
 
 可使用以下步骤将应用分配给组：
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用”。 
-2. 选择要分配给组的应用。   
-3. 单击“分配” > “添加组”，显示“添加组”边栏选项卡。
-4. 在“分配类型”下拉框中，选择“适用于已注册设备”。 
-5. 单击“包括的组” >  选择要包括的组  > “Contoso 测试人员”。
-6. 单击“选择” > “确定” > “确定” > “保存”即可分配组。
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用”   。 
+2. 选择要分配给组的应用。
+3. 单击“分配” > “添加组”，显示“添加组”边栏选项卡    。
+4. 在“分配类型”下拉框中，选择“适用于已注册设备”   。 
+5. 单击“包括的组” >  选择要包括的组  > “Contoso 测试人员”    。
+6. 单击“选择” > “确定” > “确定” > “保存”即可分配组     。
 
-现已将应用分配给“Contoso 测试人员”组。
+现已将应用分配给“Contoso 测试人员”组  。
 
 ## <a name="install-the-app-on-the-enrolled-device"></a>在已注册设备上安装应用
 
-必须安装并使用公司门户应用才能安装 Intune 提供的“Contoso 的待办事项”应用。 使用以下步骤验证该应用是否可供已注册设备的用户使用。
+必须安装并使用公司门户应用才能安装 Intune 提供的“Contoso 的待办事项”应用  。 使用以下步骤验证该应用是否可供已注册设备的用户使用。
 
 1. 登录到已注册的 Windows 10 桌面版设备。
 
     > [!IMPORTANT]
     > 设备必须[已向 Intune 注册](quickstart-enroll-windows-device.md)。 此外，必须使用分配给应用的组中包含的帐户登录设备。
 
-2. 从“开始”菜单中，打开“Microsoft Store”。 然后，找到“公司门户”应用并安装。
-3. 启动“公司门户”应用。
-4. 单击使用 Intune 添加的应用。 在本快速入门中，添加了“Microsoft Office 365 应用套件”应用。
+2. 从“开始”菜单中，打开“Microsoft Store”   。 然后，找到“公司门户”应用并安装  。
+3. 启动“公司门户”应用  。
+4. 单击使用 Intune 添加的应用。 在本快速入门中，添加了“Microsoft Office 365 应用套件”应用  。
 
     > [!NOTE]
-    > 如果未成功将任何应用分配给 Intune 用户，你将看到以下消息：IT 管理员未向你提供任何应用。
+    > 如果未成功将任何应用分配给 Intune 用户，你将看到以下消息：IT 管理员未向你提供任何应用。 
 
 5. 单击“**安装**”。
 

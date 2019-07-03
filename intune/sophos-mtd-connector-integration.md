@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeddbf39093210e640125db3be6ddd6bcad7d59b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec60a618280caf6a5b7ef242c192cc64b5d839de
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045005"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511910"
 ---
 # <a name="integrate-sophos-mobile-with-intune"></a>将 Sophos Mobile 与 Intune 相集成  
 
@@ -48,22 +48,22 @@ Sophos Mobile 应用授权流程如下：
 
 ## <a name="to-set-up-sophos-mobile-integration"></a>设置 Sophos Mobile 集成  
 
-1. 登录 [Azure 门户]( https://portal.azure.com/)，转到“Intune” > “设备符合性” > “Mobile Threat Defense”> 选择“添加”。  
-2. 在“添加连接器”页面上，使用下拉列表以选择“Sophos”。 然后选择“创建”。  
-3. 选择“打开 Sophos 管理控制台”链接。  
+1. 登录 [Azure 门户]( https://portal.azure.com/)，转到“Intune” > “设备符合性” > “Mobile Threat Defense”> 选择“添加”     。  
+2. 在“添加连接器”页面上，使用下拉列表以选择“Sophos”   。 然后选择“创建”  。  
+3. 选择“打开 Sophos 管理控制台”链接  。  
 4. 使用 Sophos 凭据登录 [Sophos 管理控制台](https://central.sophos.com/)。  
-5. 转到“Mobile” > “设置” > “设置” > “Sophos 设置”。  
-6. 在“Sophos 设置”页面上，选择“Intune MTD”选项卡。  
+5. 转到“Mobile” > “设置” > “设置” > “Sophos 设置”     。  
+6. 在“Sophos 设置”页面上，选择“Intune MTD”选项卡   。  
    ![Sophos 设置](./media/sophos-mtd-connector-integration/sophos-setup.png) 
  
-7. 选择“绑定”，然后选择“是”。 Sophos 将连接到 Intune 并要求你登录你的 Intune 订阅。 
-8. 在 Microsoft Intune 身份验证窗口中，输入你的 Intune 凭据并选择“接受”以接受“Sophos Mobile Thread Defense”的权限请求。  
+7. 选择“绑定”，然后选择“是”   。 Sophos 将连接到 Intune 并要求你登录你的 Intune 订阅。 
+8. 在 Microsoft Intune 身份验证窗口中，输入你的 Intune 凭据并选择“接受”以接受“Sophos Mobile Thread Defense”的权限请求   。  
    ![Intune 身份验证](./media/sophos-mtd-connector-integration/intune-authentication.png)
 
-9. 在“Sophos 设置”页面上，选择“保存”以完成 Intune 的配置：  
+9. 在“Sophos 设置”页面上，选择“保存”以完成 Intune 的配置   ：  
    ![保存 Sophos 设置](./media/sophos-mtd-connector-integration/save-sophos-configuration.png)  
 
-1. 出现“成功集成”消息即表示集成已完成。  
+1. 出现“成功集成”消息即表示集成已完成  。  
 1. 在 Intune 控制台中，Sophos 现已可用。  
 
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050339"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530769"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入门：创建和分配应用保护策略
 
@@ -42,21 +42,21 @@ ms.locfileid: "66050339"
 
 可使用以下步骤创建应用保护策略：
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用保护策略” > “创建策略”。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用保护策略” > “创建策略”    。 
 2. 输入以下详细信息： 
 
-    - **名称**：Windows 10 内容保护
-    - **说明**：与此策略相关联的用户将无法在设备上的指定应用与其他非托管应用之间剪切、复制或粘贴任何内容。
+    - **名称**：Windows 10 内容保护 
+    - **说明**：与此策略相关联的用户将无法在设备上的指定应用与其他非托管应用之间剪切、复制或粘贴任何内容。 
     - **平台**：*Windows 10*
-    - **注册状态**：需要注册
+    - **注册状态**：需要注册 
 
-3. 选择“受保护的应用”以选择必须遵守此策略的应用。
-4. 单击“添加应用”。
-5. 在“推荐的应用”下，选择“Word Mobile”。
-5. 单击“确定” > “确定”。 
-6. 选择“所需的设置”以配置应用。
-7. 单击“允许覆盖”以设置 Windows 信息保护模式。 选择此选项将阻止企业数据离开受保护的应用。
-8. 单击“确定” > “创建”。
+3. 选择“受保护的应用”以选择必须遵守此策略的应用  。
+4. 单击“添加应用”  。
+5. 在“推荐的应用”下，选择“Word Mobile”   。
+5. 单击“确定” > “确定”   。 
+6. 选择“所需的设置”以配置应用  。
+7. 单击“允许覆盖”以设置 Windows 信息保护模式  。 选择此选项将阻止企业数据离开受保护的应用。
+8. 单击“确定” > “创建”   。
 
 现在将在 Intune 中看到应用保护策略。
 
@@ -66,12 +66,12 @@ ms.locfileid: "66050339"
 
 可使用以下步骤分配应用保护策略：
 
-1.  在 [Intune](https://aka.ms/intuneportal) 中，选择“Intune” > “客户端应用” > “应用保护策略”。 
-2.  选择先前创建的应用保护策略。 在本快速入门中，策略是“Windows 10 内容保护”。
-3.  选择“分配”。
-4.  单击“包括”选项卡上的“选择要包括的组”。
-5.  选择“Contoso 测试人员”作为要包括的组。
-6.  单击“选择” > “保存”。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“Intune” > “客户端应用” > “应用保护策略”    。 
+2. 选择先前创建的应用保护策略。 在本快速入门中，策略是“Windows 10 内容保护”  。
+3. 选择“分配”  。
+4. 单击“包括”选项卡上的“选择要包括的组”   。
+5. 选择“Contoso 测试人员”作为要包括的组  。
+6. 单击“选择”   > “保存”  。 
 
 现已分配应用保护策略。
 
