@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72835ce45860eb6b10ac7967693cc50b9ceaa96f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3fccf3425222814f9493fe525033f67c734012c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043577"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045865"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>通过 Intune 启用 Better Mobile Threat Defense 连接器
 
@@ -57,7 +57,7 @@ Intune 设备符合性策略包括基于 Better Mobile 风险评估的 Mobile Th
 
 ### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 
-检测“中间人”攻击等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
+检测“中间人”攻击等网络威胁，并基于设备风险保护对 WiFi 网络的访问  。
 
 **阻止通过 Wi-Fi 访问网络：**
 
@@ -69,7 +69,7 @@ Intune 设备符合性策略包括基于 Better Mobile 风险评估的 Mobile Th
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
-基于设备风险检测对网络的威胁，如“中间人”攻击和阻止同步企业文件。
+基于设备风险检测对网络的威胁，如“中间人”攻击和阻止同步企业文件  。
 
 **检测到网络威胁时阻止 SharePoint Online：**
 

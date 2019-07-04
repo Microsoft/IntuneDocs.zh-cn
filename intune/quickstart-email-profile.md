@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbf04d771a9c1fd43cfe695dd2d27b9cfe1a0528
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bbd8d81dfab46a1e752084aab75fbcf0d8104187
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050310"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044279"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入门：创建适用于 iOS 的电子邮件设备配置文件
 
@@ -35,39 +35,39 @@ ms.locfileid: "66050310"
 以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="create-an-ios-email-profile"></a>创建 iOS 电子邮件配置文件
-1. 在 Intune 中选择“设备配置”，然后选择“配置文件”。
-2. 选择“创建配置文件”。
+1. 在 Intune 中选择“设备配置”，然后选择“配置文件”   。
+2. 选择“创建配置文件”  。
    
    ![创建适用于 iOS 的电子邮件配置文件](media/quickstart-email-profile/ios-create-profile.png)
 
-3. 在“名称”下，输入新配置文件的描述性名称。 对于本示例，请输入“iOS 需要的工作电子邮件”。
+3. 在“名称”下，输入新配置文件的描述性名称  。 对于本示例，请输入“iOS 需要的工作电子邮件”  。
 4. 输入以下配置文件信息：
-   - 对于“描述”，请输入“需要 iOS 设备使用工作电子邮件”。
-   - 对于“平台”，请选择“iOS”。
-   - 对于“配置文件类型”，请选择“电子邮件”。
+   - 对于“描述”，请输入“需要 iOS 设备使用工作电子邮件”   。
+   - 对于“平台”  ，请选择“iOS”  。
+   - 对于“配置文件类型”，请选择“电子邮件”   。
     
      ![创建适用于 iOS 的电子邮件配置文件](media/quickstart-email-profile/ios-email-profile-name.png)
 
-5. 选择“设置”，并输入以下设置（保留其他设置的默认值）：
-   - **电子邮件服务器**：对于本快速入门，请输入“outlook.office365.com”。 本设置指定 iOS 邮件应用用于连接到电子邮件的电子邮件服务器的 Exchange 位置 (URL)。
-   - **帐户名**：输入公司电子邮件。
-   - **AAD 中的用户名属性**：此名称是 Intune 从 Azure Active Directory (Azure AD) 获取的属性。 Intune 使用此名称动态生成此配置文件的用户名。 在本快速入门中，我们假设希望将“用户主体名称”用作配置文件的用户名（例如，user1@contoso.com）。
-   - **AAD 中的电子邮件地址属性**：此设置将设置 Azure AD 中用于登录 Exchange 的电子邮件地址。 在本快速入门中，选择“用户主体名称”。
-   - **身份验证方法**：在本快速入门中，请选择“用户名和密码”。 （如果已经为 Intune 设置了证书，也可以选择“证书”。）
+5. 选择“设置”，并输入以下设置（保留其他设置的默认值）： 
+   - **电子邮件服务器**：对于本快速入门，请输入“outlook.office365.com”  。 本设置指定 iOS 邮件应用用于连接到电子邮件的电子邮件服务器的 Exchange 位置 (URL)。
+   - **帐户名**：输入公司电子邮件  。
+   - **AAD 中的用户名属性**：此名称是 Intune 从 Azure Active Directory (Azure AD) 获取的属性。 Intune 使用此名称动态生成此配置文件的用户名。 在本快速入门中，我们假设希望将“用户主体名称”用作配置文件的用户名（例如，user1@contoso.com）  。
+   - **AAD 中的电子邮件地址属性**：此设置将设置 Azure AD 中用于登录 Exchange 的电子邮件地址。 在本快速入门中，选择“用户主体名称”  。
+   - **身份验证方法**：在本快速入门中，请选择“用户名和密码”  。 （如果已经为 Intune 设置了证书，也可以选择“证书”  。）
     
      ![创建适用于 iOS 的电子邮件配置文件](media/quickstart-email-profile/ios-email-profile.png)
 
-6. 选择“确定”。
-7. 选择“创建”。 新的配置文件将显示在配置文件列表中，并显示仪表板，以便监视如何将配置文件分配给 iOS 设备和 iOS 用户。
-8. 选择“分配”。
-9. 选择“Include”选项卡，然后选择“所有用户和所有设备”。 
-10. 选择“保存”。
+6. 选择“确定”  。
+7. 选择“创建”  。 新的配置文件将显示在配置文件列表中，并显示仪表板，以便监视如何将配置文件分配给 iOS 设备和 iOS 用户。
+8. 选择“分配”  。
+9. 选择“Include”选项卡，然后选择“所有用户和所有设备”   。 
+10. 选择“保存”  。
 
 ## <a name="clean-up-resources"></a>清理资源
 如果不想使用为其他教程或测试创建的配置文件，可以立即删除它。
-1. 在 Intune 中选择“设备配置”，然后选择“配置文件”。
-2. 选择创建的测试配置文件，“iOS 需要的工作电子邮件”。
-3. 选择配置文件旁边的省略号（“...”），然后选择“删除”。
+1. 在 Intune 中选择“设备配置”，然后选择“配置文件”   。
+2. 选择创建的测试配置文件，“iOS 需要的工作电子邮件”  。
+3. 选择配置文件旁边的省略号（“...”），然后选择“删除”   。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040599"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046300"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
@@ -55,7 +55,7 @@ ms.locfileid: "66040599"
 所有设备平台上都可能发生这些问题。
 
 ### <a name="device-cap-reached"></a>已达到设备上限
-**问题：** 用户在注册期间看到错误消息（如“公司门户暂不可用”），并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”。
+**问题：** 用户在注册期间看到错误消息（如“公司门户暂不可用”  ），并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”  。
 
 **解决方法：**
 
@@ -63,9 +63,9 @@ ms.locfileid: "66040599"
 
 通过下述步骤，检查确保向用户分配的设备数未超过上限：
 
-1. 在 Intune 中，选择“设备注册” > “注册限制” > “设备限制”。 记下“设备限制”列中的值。
+1. 在 Intune 中，选择“设备注册” > “注册限制” > “设备限制”    。 记下“设备限制”列中的值  。
 
-2. 在 Intune 中，选择“用户” > “所有用户”，再依次选择相关用户和“设备”。 记下设备的数量。
+2. 在 Intune 中，选择“用户” > “所有用户”，再依次选择相关用户和“设备”    。 记下设备的数量。
 
 3. 如果用户注册的设备数已达到其设备限制，则在执行下述操作前无法再注册设备：
     - [删除现有设备](devices-wipe.md)，或者
@@ -80,7 +80,7 @@ ms.locfileid: "66040599"
 > 如果对添加到设备注册管理器帐户的用户帐户强制实施条件访问策略，该特定用户登录将无法完成注册。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司门户暂时不可用
-**问题：** 用户在设备上看到错误消息“公司门户暂不可用”。
+**问题：** 用户在设备上看到错误消息“公司门户暂不可用”  。
 
 **解决方法：**
 
@@ -95,7 +95,7 @@ ms.locfileid: "66040599"
 5.  如果用户成功登录，iOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，需要手动安装 Intune 公司门户应用，之后才能重试注册。
 
 ### <a name="mdm-authority-not-defined"></a>未定义 MDM 机构
-**问题：** 用户看到错误消息“未定义 MDM 机构”。
+**问题：** 用户看到错误消息“未定义 MDM 机构”  。
 
 **解决方法：**
 
@@ -126,7 +126,7 @@ ms.locfileid: "66040599"
 
         -   若要查看特定用户，请使用下面的查询，其中 %testuser1% 为要查找的用户的 username@domain.com 的占位符：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        编写查询后，选择“!执行”。
+        编写查询后，选择“!执行”  。
         返回结果后，即可查找云用户 ID。  如果找不到任何 ID，则表示未授权该用户使用 Intune。
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名称包含特殊字符，则无法创建策略或注册设备
@@ -143,7 +143,7 @@ ms.locfileid: "66040599"
 - 在其组织内为用户的 UPN 后缀提供多个顶级域名（例如，@contoso.com 或 @fabrikam.com）。
 
 
-[AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)与 SupportMultipleDomain 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+[AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)与 SupportMultipleDomain 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的问题
@@ -162,7 +162,7 @@ ms.locfileid: "66040599"
 **问题：** 一些运行 Android 版本 4.4.x 和 5.x 的 Samsung 设备可能会停止使用 Intune 服务签入。 如果设备不签入：
 
 - 它们将无法从 Intune 服务接收策略、应用和远程命令。
-- 它们在管理控制台中显示的管理状态为“不正常”。
+- 它们在管理控制台中显示的管理状态为“不正常”  。
 - 受条件访问策略保护的用户可能失去对公司资源的访问权限。
 
 Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Intune 公司门户及其组件。 当公司门户处于停用状态时，它无法在后台运行且无法联系 Intune 服务。
@@ -176,7 +176,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 **解决方法 #2：**
 
-告知你的用户尝试升级到 Android 6.0。 停用问题不会发生在 Android 6.0 设备上。 若要检查是否有可用的更新，请转到“设置” > “关于设备” > “手动下载更新”> 按照提示进行操作。
+告知你的用户尝试升级到 Android 6.0。 停用问题不会发生在 Android 6.0 设备上。 若要检查是否有可用的更新，请转到“设置” > “关于设备” > “手动下载更新”> 按照提示进行操作    。
 
 **解决方法 #3：**
 
@@ -186,29 +186,29 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
    ![选择设备上的“Smart Manager”图标](./media/troubleshoot-device-enrollment-in-intune/smart-manager-app-icon.png)
 
-2. 选择“电池”磁贴。
+2. 选择“电池”  磁贴。
 
    ![选择“电池”磁贴](./media/troubleshoot-device-enrollment-in-intune/smart-manager-battery-tile.png)
 
-3. 在“应用省电”或“应用优化”下，选择“详细信息”。
+3. 在“应用省电”  或“应用优化”  下，选择“详细信息”  。
 
    ![在“应用省电”或“应用优化”下选择“详细信息”](./media/troubleshoot-device-enrollment-in-intune/smart-manager-app-power-saving-detail.png)
 
-4. 从应用列表中选择“公司门户”。
+4. 从应用列表中选择“公司门户”  。
 
    ![从应用列表中选择“公司门户”](./media/troubleshoot-device-enrollment-in-intune/smart-manager-company-portal.png)
 
-5. 选择“关闭”。
+5. 选择“关闭”  。
 
    ![从“应用优化”对话框中选择“关闭”](./media/troubleshoot-device-enrollment-in-intune/smart-manager-app-optimization-turned-off.png)
 
-6. 在“应用省电”或“应用优化”下，确认公司门户已关闭。
+6. 在“应用省电”  或“应用优化”  下，确认公司门户已关闭。
 
    ![验证公司门户已关闭](./media/troubleshoot-device-enrollment-in-intune/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败
-**问题：** 用户在 Android 设备上看到错误消息“配置文件安装失败”。
+**问题：** 用户在 Android 设备上看到错误消息“配置文件安装失败”  。
 
 **解决方法：**
 
@@ -222,7 +222,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 ### <a name="android-certificate-issues"></a>Android 证书问题
 
-**问题**：用户在设备上看到以下错误消息：无法登录，因为设备缺少必需证书。
+**问题**：用户在设备上看到以下错误消息：无法登录，因为设备缺少必需证书。 
 
 **解决方法 1**：
 
@@ -236,26 +236,26 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 若要解决此问题，请按以下步骤将证书导入 AD FS 服务器或代理上的计算机个人证书：
 
-1.  在 ADFS 和代理服务器上，右键单击“开始” > “运行” > “certlm.msc”，启动本地计算机证书管理控制台。
-2.  展开“个人”，再选择“证书”。
+1.  在 ADFS 和代理服务器上，右键单击“开始” > “运行” > “certlm.msc”，启动本地计算机证书管理控制台    。
+2.  展开“个人”  ，再选择“证书”  。
 3.  查找用于 AD FS 服务通信的证书（公共签名证书），然后双击以查看其属性。
-4.  选择“证书路径”选项卡，查看证书的父证书。
-5.  在每个父证书上，选择“查看证书”。
-6.  选择“详细信息” > “复制到文件...”。
+4.  选择“证书路径”  选项卡，查看证书的父证书。
+5.  在每个父证书上，选择“查看证书”  。
+6.  选择“详细信息” > “复制到文件...”   。
 7.  按照向导提示操作，将父证书的公钥导出或保存到所选的文件位置。
-8.  右键单击“证书” > “所有任务” > “导入”。
-9.  按照向导提示操作，将一个或多个父证书导入“Local Computer\Personal\Certificates”。
+8.  右键单击“证书”   > “所有任务”   > “导入”  。
+9.  按照向导提示操作，将一个或多个父证书导入“Local Computer\Personal\Certificates”  。
 10. 重启 AD FS 服务器。
 11. 在所有 AD FS 和代理服务器上重复上述步骤。
 
-若要验证证书安装是否正确，可以使用 [https://www.digicert.com/help/](https://www.digicert.com/help/) 上的诊断工具。 在“服务器地址”框中，输入 ADFS 服务器的 FQDN（IE：sts.contso.com），再单击“检查服务器”。
+若要验证证书安装是否正确，可以使用 [https://www.digicert.com/help/](https://www.digicert.com/help/) 上的诊断工具。 在“服务器地址”  框中，输入 ADFS 服务器的 FQDN（IE：sts.contso.com），再单击“检查服务器”  。
 
 **若要验证是否正确安装证书**：
 
 以下步骤只描述了用于验证是否正确安装证书的许多方法和工具中的一种。
 
 1. 转到[免费的 Digicert 工具](ttps://www.digicert.com/help/)。
-2. 输入 AD FS 服务器的完全限定域名（例如 sts.contoso.com），再选择“检查服务器”。
+2. 输入 AD FS 服务器的完全限定域名（例如 sts.contoso.com），再选择“检查服务器”  。
 
 如果已正确安装服务器证书，则会在结果中看见所有复选标记。 如果存在上述问题，则会在报告的“证书名称匹配”和“已正确安装 SSL 证书”部分看见红色的 X。
 
@@ -279,24 +279,24 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 **问题：** iOS 设备未使用 Intune 服务签入。 设备必须定期使用该服务签入，以保持对受保护的公司资源的访问权限。 如果设备不签入：
 
 - 它们将无法从 Intune 服务接收策略、应用和远程命令。
-- 它们在管理控制台中显示的管理状态为“不正常”。
+- 它们在管理控制台中显示的管理状态为“不正常”  。
 - 受条件访问策略保护的用户可能失去对公司资源的访问权限。
 
 **解决方法：** 与最终用户共享以下解决办法，帮助他们重新获得对公司资源的访问权限。
 
-如果用户启动了 iOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...” 消息）。
+如果用户启动了 iOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...”  消息）。
 
   ![尝试同步通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-如果同步成功，将在 iOS 公司门户应用中看到“同步成功”内联通知，指示你的设备处于正常状态。
+如果同步成功，将在 iOS 公司门户应用中看到“同步成功”  内联通知，指示你的设备处于正常状态。
 
   ![同步成功通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-如果同步失败，用户将在 iOS 公司门户应用中看到“无法同步”内联通知。
+如果同步失败，用户将在 iOS 公司门户应用中看到“无法同步”  内联通知。
 
   ![无法同步通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
-若要解决此问题，用户必须选择“设置”按钮，该按钮位于“无法同步”通知的右侧。 通过“设置”按钮，用户可转到“公司访问设置”流屏幕，在此处，用户可按提示注册设备。
+若要解决此问题，用户必须选择“设置”  按钮，该按钮位于“无法同步”  通知的右侧。 通过“设置”按钮，用户可转到“公司访问设置”流屏幕，在此处，用户可按提示注册设备。
 
   ![“公司访问设置”屏幕](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_company_access_setup.png)
 
@@ -317,7 +317,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败
-**问题：** 用户在 iOS 设备上看到错误消息“配置文件安装失败”。
+**问题：** 用户在 iOS 设备上看到错误消息“配置文件安装失败”  。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>失败配置文件安装的故障排除步骤
 
@@ -373,7 +373,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 4. 告知用户重启注册过程。
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>确定 VPP 令牌是否存在问题
-1. 转到“Intune” > “设备注册” > “Apple 注册” > “注册计划令牌”>“令牌名称”>“配置文件”>“配置文件名称”>“管理” > “属性”。
+1. 转到“Intune” > “设备注册” > “Apple 注册” > “注册计划令牌”>“令牌名称”>“配置文件”>“配置文件名称”>“管理” > “属性”        。
 2. 查看属性，了解是否出现与以下情况类似的错误：
     - 此令牌已过期。
     - 此令牌超出公司门户许可范围。
@@ -383,14 +383,14 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 3. 修复此令牌的问题。
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>确定 VPP 令牌阻止了哪些设备
-1. 转到“Intune” > “设备注册” > “Apple 注册” > “注册计划令牌”>“令牌名称”>“设备”。
-2. 按照“已阻止”筛选“配置文件状态”列。
-3. 记下“已阻止”的所有设备的序列号。
+1. 转到“Intune” > “设备注册” > “Apple 注册” > “注册计划令牌”>“令牌名称”>“设备”      。
+2. 按照“已阻止”筛选“配置文件状态”列   。
+3. 记下“已阻止”的所有设备的序列号  。
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>远程擦除已阻止设备
 修复 VPP 令牌的问题后，必须擦除已阻止设备。
-1. 转到“Intune” > “设备” > “所有设备” > “列” > “序列号” > “应用”。 
-2. 对于每个已阻止设备，请在“所有设备”列表中选择该设备，然后依次选择“擦除” > “确认”。
+1. 转到“Intune” > “设备” > “所有设备” > “列” > “序列号” > “应用”       。 
+2. 对于每个已阻止设备，请在“所有设备”列表中选择该设备，然后依次选择“擦除” > “确认”    。
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>告知用户重启注册过程
 擦除已阻止设备后，可告知用户重启注册过程。
@@ -413,9 +413,9 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 * 如果设备仍分配给 Intune 中的其他用户，则其前所有者未使用公司门户应用来删除或重置它。 从 Intune 清除陈旧的设备记录：  
 
     1. 转到 [Azure 门户中的 Intune](https://portal.manage.microsoft.com)，然后使用管理凭据登录。
-    2. 转到 Intune >“设备” > “所有设备”。  
+    2. 转到 Intune >“设备” > “所有设备”   。  
     3. 查找存在注册问题的设备。 按设备名称或 MAC/HW 地址搜索以缩小结果范围。
-    4. 选择“设备”>“删除”。 删除与设备关联的所有其他条目。  
+    4. 选择“设备”>“删除”  。 删除与设备关联的所有其他条目。  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager with Intune 时的问题
 ### <a name="mobile-devices-disappear"></a>移动设备消失
@@ -428,9 +428,9 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 #### <a name="check-how-device-was-removed"></a>检查设备的删除途径
 
-1.  在 Configuration Manager 管理控制台中，选择“监视”&gt;“系统状态”&gt;“状态消息查询”。
+1.  在 Configuration Manager 管理控制台中，选择“监视”  &gt;“系统状态”  &gt;“状态消息查询”  。
 
-2.  右键单击“已手动删除的集合成员资源”，并选择“显示消息”。
+2.  右键单击“已手动删除的集合成员资源”  ，并选择“显示消息”  。
 
 3.  选取适当的时间/日期或过去 12 小时。
 
@@ -452,7 +452,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>该计算机已注册 - 错误 hr 0x8007064c
-**问题：** 注册失败，并看到错误消息“计算机已注册”。 注册日志显示错误 **hr 0x8007064c**。
+**问题：** 注册失败，并看到错误消息“计算机已注册”  。 注册日志显示错误 **hr 0x8007064c**。
 
 此次失败出现的原因是计算机：
 - 先前已注册，或
@@ -461,12 +461,12 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 **解决方法：**
 
-1. 在“开始”菜单中，键入“运行” -> “MMC”。
-1. 选择“文件” > “添加/删除管理单元”。
-1. 双击“证书”，选择“计算机帐户” > “下一步”，然后选择“本地计算机”。
-1. 双击“证书(本地计算机)”，然后选择“个人/证书”。
+1. 在“开始”  菜单中，键入“运行”   -> “MMC”  。
+1. 选择“文件”   > “添加/删除管理单元”  。
+1. 双击“证书”  ，选择“计算机帐户”   > “下一步”  ，然后选择“本地计算机”  。
+1. 双击“证书(本地计算机)”  ，然后选择“个人/证书”  。
 1. 查找 Sc_Online_Issuing 发布的 Intune 证书，并将其删除（若存在）。
-1. 删除注册表项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey（若有）以及所有子项。
+1. 删除注册表项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey  （若有）以及所有子项。
 1. 尝试重新注册。
 1. 如果 PC 仍无法注册，请查找并删除以下项（若有）：**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**。
 1. 尝试重新注册。

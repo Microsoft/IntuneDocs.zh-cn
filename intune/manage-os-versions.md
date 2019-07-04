@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041672"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044922"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理操作系统版本
 在新式移动和桌面平台上，主要更新、修补程序和新版本的发布速度很快。 你在 Windows 上具有完全管理更新和修补程序的控制权限，但在 iOS 和 Android 等平台上，最终用户也需参与此过程。  Microsoft Intune 可帮助构建跨不同平台的操作系统版本管理。
@@ -76,7 +76,7 @@ Intune MDM 设备符合性策略提供以下工具：
 可使用本文所述 Intune 功能，在自定义的时间线内将组织移至新操作系统版本。 以下是关于某个示例部署模型的步骤说明，该示例在七天内将用户从操作系统 v1 移至操作系统 v2。
 - **步骤 1**：使用注册限制将操作系统 v2 作为注册设备的最低版本。 此操作确保新的最终用户设备在注册时满足符合性。
 - **步骤 2a**：使用 Intune 应用保护策略，在应用打开或恢复时，警告用户他们需要操作系统 v2。
-- 步骤 2b。 使用设备符合性策略，将操作系统 v2 作为使设备获得符合性的最低版本。 使用针对不符合性的操作，允许七天的宽限期，并向最终用户发送包含时间线和要求的电子邮件通知。
+- 步骤 2b  。 使用设备符合性策略，将操作系统 v2 作为使设备获得符合性的最低版本。 使用针对不符合性的操作，允许七天的宽限期，并向最终用户发送包含时间线和要求的电子邮件通知  。
   -  这些策略将通过电子邮件或 Intune 公司门户，以及在打开启用了应用保护策略的应用时，告知最终用户现有设备需要更新。
   - 可运行符合性报告来标识不符合的用户。 
 - **步骤 3a**：使用 Intune 应用保护策略，在设备未运行操作系统 v2 的情况下，当应用打开或恢复时阻止用户。

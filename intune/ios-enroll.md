@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 943aa8361778c60f498f6b1919299d99bf678fd9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bc14561aa2932327d69f920885fa17538bdf245c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047112"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045544"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
 
@@ -68,7 +68,7 @@ Apple School Manager 是适用于学校的设备购买和注册计划。 与 DEP
 
 需要关联用户才可支持以下内容：
   - 移动应用程序管理 (MAM) 应用
-  - 对电子邮件和公司数据的条件性访问
+  - 对电子邮件和公司数据的条件访问
   - 公司门户应用
 
 **用户如何注册具有用户关联的公司所有的 iOS 设备**

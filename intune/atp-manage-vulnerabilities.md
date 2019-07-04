@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 987e3171c4e5c5ba3f15097837e2c018ddc7a4b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049198"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045290"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>使用 Intune 修正由 Microsoft Defender ATP 标识的漏洞  
 
@@ -49,14 +49,14 @@ ms.locfileid: "66049198"
   此安全任务显示在 Intune 控制台中，状态为“挂起”：  
   ![在 Intune 控制台中查看安全任务的列表](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
  
-- Intune 管理员选择该安全任务以查看有关该任务的详细信息。  然后，管理员选择“接受”，这样会将 Intune 和 ATP 中的状态更新为“已接受”。  
+- Intune 管理员选择该安全任务以查看有关该任务的详细信息。  然后，管理员选择“接受”  ，这样会将 Intune 和 ATP 中的状态更新为“已接受”  。  
   ![接受或拒绝安全任务](./media/atp-manage-vulnerabilities/temp-accept-task.png) 
  
 - 然后，管理员根据提供的指导修正任务。  指导因所需的修正类型而异。 修正指导（如果有）包括可在 Intune 中打开配置的相关窗格的链接。 
 
   由于此示例中的媒体播放器不是托管应用，因此 Intune 只能提供文本说明。 如果应用已托管，则 Intune 可以提供下载更新版本的说明，并提供用于打开应用部署的链接，以便更新的文件可以添加到部署。 
 
-- 完成修正后，Intune 管理员将打开安全任务并选择“完成任务”。  修正状态已针对 Intune 进行了更新，安全管理员在 ATP 中确认了修改后的漏洞状态。  
+- 完成修正后，Intune 管理员将打开安全任务并选择“完成任务”  。  修正状态已针对 Intune 进行了更新，安全管理员在 ATP 中确认了修改后的漏洞状态。  
 
 ## <a name="prerequisites"></a>必备条件  
 
@@ -66,25 +66,25 @@ ms.locfileid: "66049198"
 
 **ATP 的 Intune 配置**：  
 - 配置与 Microsoft Defender ATP 的服务间连接。  
-- 将配置文件类型为 Microsoft Defender ATP（Windows 10 桌面版）的设备符合性策略部署到具有由 ATP 评估出来的风险的设备。
+- 将配置文件类型为 Microsoft Defender ATP（Windows 10 桌面版）  的设备符合性策略部署到具有由 ATP 评估出来的风险的设备。
   有关如何将 Intune 设置为使用 ATP 的信息，请参阅[使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。  
 
 ## <a name="work-with-security-tasks"></a>使用安全任务  
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备安全性” > “安全任务”。  
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备安全性”   >   “安全任务”。  
 2. 从列表中选择一项任务以打开显示有关该安全任务的其他详细信息的资源窗口。  
 3. 查看安全任务资源窗口时，可以选择其他链接：  
    - 托管应用 - 查看易受攻击的应用。 多个应用中出现漏洞时，你会看到筛选后的应用列表。  
-   - 设备 - 查看易受攻击的设备的列表，你可以在其中链接到具有该设备上的漏洞的更多详细信息的条目。  
+   - 设备 - 查看易受攻击的设备  的列表，你可以在其中链接到具有该设备上的漏洞的更多详细信息的条目。  
    - 请求者 - 使用该链接将邮件发送给提交了此安全任务的管理员。  
    - 说明 - 打开安全任务时读取由请求者提交的自定义消息。  
-4. 选择“接受”或“拒绝”将通知发送到 ATP 以执行计划的操作。 接受或拒绝任务后，可以提交发送到 ATP 的说明。  
+4. 选择“接受”  或“拒绝”  将通知发送到 ATP 以执行计划的操作。 接受或拒绝任务后，可以提交发送到 ATP 的说明。  
 
 5. 接受任务后，重新打开安全任务（如果已关闭），然后按照修正详细信息修正漏洞。  安全任务详细信息中 ATP 提供的说明因所涉及的漏洞而异。  
 
    可以这样做时，修正说明包括可在 Intune 控制台中打开相关配置对象的链接。  
 
-6. 完成修正步骤后，打开安全任务并选择“完成任务”。  此操作将更新 Intune 和 ATP 中的安全任务状态。  
+6. 完成修正步骤后，打开安全任务并选择“完成任务”  。  此操作将更新 Intune 和 ATP 中的安全任务状态。  
 
 修正成功后，根据已修正设备中的新信，ATP 中的风险危险性分数可能会下降。 
 

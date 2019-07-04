@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744331"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344094"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -68,7 +68,7 @@ ms.locfileid: "66744331"
 |**证书模板**|在发证 CA 上配置此模板。|
 |**客户端身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上安装证书。|
 |**服务器身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。 如果证书具有客户端和服务器身份验证密钥使用集（增强型密钥使用），则可以使用相同的证书  。|
-|**受信任的根 CA 证书**|将此证书从根 CA 或信任根 CA 的任何设备中导出为“.cer”  文件。 然后，使用受信任的 CA 证书配置文件将其分配给用户、设备或同时向两者分配。<br /><b>注意：<b />分配 SCEP 证书配置文件时，请务必将 SCEP 证书配置文件中引用的受信任的根证书配置文件分配到同一用户或设备组。<br /><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。<br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
+|**受信任的根 CA 证书**|将此证书从根 CA 或信任根 CA 的任何设备中导出为“.cer”  文件。 然后，使用受信任的 CA 证书配置文件将其分配给用户、设备或同时向两者分配。<br /> **注意：<br />分配 SCEP 证书配置文件时，请务必将 SCEP 证书配置文件中引用的受信任的根证书配置文件分配到同一用户或设备组  。若要创建此配置文件，请参阅[创建受信任的证书配置文件](certficates-pfx-configure.md#create-a-trusted-certificate-profile)，如有关 PKCS 证书配置文件的文章中所述。** <br/><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。 <br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
 
 ### <a name="accounts"></a>帐户
 
@@ -487,7 +487,7 @@ ms.locfileid: "66744331"
      - **数字签名**：仅当数字签名有助于保护密钥时才允许密钥交换
    - **密钥大小（位）** ：选择密钥中包含的位数
    - **哈希算法**（Android、Windows Phone 8.1、Windows 8.1、Windows 10）：选择要与此证书一起使用的可用哈希算法类型之一。 选择连接设备支持的最高级别安全性。
-   - **根证书**：选择之前配置并分配到用户和/或设备的根 CA 证书配置文件。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。 请务必将此受信任的根证书配置文件分配到 SCEP 证书配置文件中分配的同一个组。
+   - **根证书**：选择之前创建并分配给用户和/或设备的[受信任的根证书配置文件](certficates-pfx-configure.md#create-a-trusted-certificate-profile)。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。 请务必将此受信任的根证书配置文件分配到 SCEP 证书配置文件中分配的同一个组。
    - **扩展密钥用法**：为证书的预期目的添加  值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证  。 但，你可以根据需要添加任何其他密钥用法。
    - **注册设置**
      - **续订阈值 (%)** ：输入设备请求证书续订之前剩余的证书有效期限的百分比。
@@ -508,6 +508,7 @@ ms.locfileid: "66744331"
 
     > [!NOTE]
     > 对于 iOS，如果部署了使用相同证书配置文件的多个资源配置文件，则管理配置文件中应会显示该证书的多个副本。
+- 如果使用 Intune 和 Configuration Manager 的共同管理，则在 Configuration Manager 中将资源访问策略  的[工作负载滑块](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)设置为“Intune”  或“试点 Intune”  。 此设置允许 Windows 10 客户端启动请求证书的过程。  
 
 有关如何分配配置文件的信息，请参阅[分配设备配置文件](device-profile-assign.md)。
 
@@ -552,7 +553,7 @@ ms.locfileid: "66744331"
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 成功  | 成功 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 证书颁发机构无效或无法访问。 验证证书颁发机构是否可用，以及服务器是否可以与之通信。 |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 在本地证书存储中找不到 Symantec 客户端身份验证证书。 请参阅文章[安装 Symantec 注册授权证书](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)以获取详细信息。  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | 在本地证书存储中找不到 Symantec 客户端身份验证证书。 有关详细信息，请参阅文章[设置 DigiCert PKI 平台的 Intune 证书连接器](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting)。  |
 | 0x00000402 | RevokeCert_AccessDenied  | 指定的帐户无权从 CA 撤销证书。 请参阅事件消息详情中的“CA 名称”字段以确定颁发 CA。  |
 | 0x00000403 | CertThumbprint_NotFound  | 找不到与输入相匹配的证书。 注册证书连接器并重试。 |
 | 0x00000404 | Certificate_NotFound  | 找不到与提供的输入相匹配的证书。 重新注册证书连接器并重试。 |

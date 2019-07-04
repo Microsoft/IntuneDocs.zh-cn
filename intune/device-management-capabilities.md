@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 415005ee58367a189986e9d7bd0ef693f14bc5c9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2c2c50909b701ee5418ea69d73e67518de1c5bce
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048370"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045732"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 已注册设备管理功能
 
-通过在 Microsoft Intune 服务中*注册*设备，你可以使用 Microsoft Intune 管理各种设备。 你可自己注册一些设备类型，或者用户可使用公司门户应用注册。 注册可以让他们浏览和安装应用，确保他们的设备符合公司策略，并可联系 IT 支持人员。
+通过在 Microsoft Intune 服务中*注册*设备，你可以使用 Microsoft Intune 管理各种设备。 你可自己注册一些设备类型，或者用户可使用公司门户  应用注册。 注册可以让他们浏览和安装应用，确保他们的设备符合公司策略，并可联系 IT 支持人员。
 
 本文提供注册设备后可获得的功能的完整列表。
 
@@ -65,7 +65,7 @@ ms.locfileid: "66048370"
 |Wi-Fi 配置文件|将无线网络设置部署到你的用户。 通过部署这些设置，你可最小化用户连接到公司网络时所需的工作。|[Microsoft Intune 中的 Wi-Fi 连接](wi-fi-settings-configure.md)|
 |电子邮件配置文件|创建并将电子邮件设置部署到设备上，以便用户可以在个人设备上访问公司电子邮件，而无需进行任何特殊设置。|[使用 Microsoft Intune 的电子邮件配置文件配置对公司电子邮件的访问](email-settings-configure.md)|
 |VPN 配置文件|将 VPN 设置部署到用户和你的组织中的设备。 通过部署这些设置，你可以最大限度减少用户连接到公司网络资源需要进行的工作。|[Microsoft Intune 中的 VPN 连接](device-profiles.md#vpn)|
-|条件性访问策略|管理从非 Intune 托管设备对 Microsoft Exchange 电子邮件和 SharePoint Online 进行的访问。|[使用 Microsoft Intune 限制对电子邮件和 SharePoint 的访问](app-based-conditional-access-intune.md)|
+|条件访问策略|管理从非 Intune 托管设备对 Microsoft Exchange 电子邮件和 SharePoint Online 进行的访问。|[使用 Microsoft Intune 限制对电子邮件和 SharePoint 的访问](app-based-conditional-access-intune.md)|
 
 ## <a name="next-steps"></a>后续步骤
 

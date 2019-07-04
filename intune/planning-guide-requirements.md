@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 907190d3022e3ed6af06f7304f24f38452f2d4bd
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 98441f03ae2ac9ef23e84de8d06198335da69198
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046256"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044316"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>确定用例场景要求
 
@@ -50,7 +50,7 @@ ms.locfileid: "66046256"
 下面是可在“要求”列使用的几个其他示例：
 
 - **安全电子邮件**
-    - Exchange Online/内部部署条件性访问
+    - Exchange Online/本地条件访问
     - Outlook 应用保护策略
 
 - **设备设置**

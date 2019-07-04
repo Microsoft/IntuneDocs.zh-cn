@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a10fa6983b8e8c34a1844c647d952ca8cbf0730c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050174"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045988"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>通过 Intune 管理和使用 Windows Holographic 和 HoloLens 设备上的不同设备管理功能
 
@@ -33,11 +33,11 @@ Microsoft Intune 包含许多功能，可帮助管理运行 Windows Holographic 
 
 Azure Active Directory (AD) 是帮助管理和控制运行 Windows Holographic for Business 的设备的绝佳资源。 使用 Intune 和 Azure AD 可以： 
 
-- **[将设备加入 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**：在 Azure Active Directory (AD) 中，可以添加工作所有的 Windows 10 设备，包括运行 Windows Holographic for Business 的设备。 Azure AD 可使用此功能来控制设备。 此功能有助于确保用户从满足安全性和符合性标准的设备访问公司资源。
+- **[将设备加入 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** ：在 Azure Active Directory (AD) 中，可以添加工作所有的 Windows 10 设备，包括运行 Windows Holographic for Business 的设备。 Azure AD 可使用此功能来控制设备。 此功能有助于确保用户从满足安全性和符合性标准的设备访问公司资源。
 
   [Azure AD 中的设备管理](https://docs.microsoft.com/azure/active-directory/devices/overview)提供了更多详细信息。
 
-- **[Windows 设备批量注册](windows-bulk-enroll.md)**：可以将大量新 Windows 设备加入 Azure Active Directory (AD) 和 Intune。 此功能称为批量注册，并使用预配包。 这些包将运行 Windows Holographic for Business 的设备加入到 Azure AD 租户，并在 Intune 中注册它们。
+- **[Windows 设备批量注册](windows-bulk-enroll.md)** ：可以将大量新 Windows 设备加入 Azure Active Directory (AD) 和 Intune。 此功能称为批量注册，并使用预配包。 这些包将运行 Windows Holographic for Business 的设备加入到 Azure AD 租户，并在 Intune 中注册它们。
 
 ## <a name="company-portal"></a>Company Portal
 **[配置公司门户应用](company-portal-app.md)**
@@ -56,7 +56,7 @@ Intune 提供了公司门户应用，用户可使用该应用访问公司数据�
 
 符合性策略即设备为符合要求必须满足的规则和设置。 可以将这些策略与条件访问结合使用，阻止不符合要求的设备访问公司资源。 在 Intune 中可以为运行 Windows Holographic for Business 的设备创建符合性策略，从而允许或阻止其访问权限。 例如，可以创建一个要求启用 Bitlocker 的策略。
 
-另请参阅[设备符合性策略入门](device-compliance-get-started.md)。
+另请参阅[设备符合性策略入门](device-compliance-get-started.md)  。
 
 ## <a name="deploy-and-manage-apps"></a>部署和管理应用
 **[向 Intune 添加应用](apps-add.md)**
@@ -85,11 +85,11 @@ Intune 具有一些内置操作，允许 IT 管理员在本地设备上执行不
 
 使用运行 Windows Holographic for Business 的设备时，可使用以下操作： 
 
-- **[擦除](devices-wipe.md#wipe)**：执行“擦除”操作可以从 Intune 中删除设备，并将设备还原回出厂默认设置。 请在将设备交给新用户之前或设备丢失或被盗时使用此操作。
+- **[擦除](devices-wipe.md#wipe)** ：执行“擦除”  操作可以从 Intune 中删除设备，并将设备还原回出厂默认设置。 请在将设备交给新用户之前或设备丢失或被盗时使用此操作。
 
-- **[停用](devices-wipe.md#retire)**：执行“停用”操作可以从 Intune 中删除设备。 此外，它还会删除 Intune 分配的托管应用数据、设置和电子邮件配置文件。 用户的个人数据保留在设备上。
+- **[停用](devices-wipe.md#retire)** ：执行“停用”  操作可以从 Intune 中删除设备。 此外，它还会删除 Intune 分配的托管应用数据、设置和电子邮件配置文件。 用户的个人数据保留在设备上。
 
-- **[同步设备以获取最新策略和操作](device-sync.md)**：执行“同步”操作可以强制设备立即使用 Intune 签入。 当设备签入时，该设备会立即收到分配给自己的任何挂起的操作或策略。 此功能有助于验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
+- **[同步设备以获取最新策略和操作](device-sync.md)** ：执行“同步”  操作可以强制设备立即使用 Intune 签入。 当设备签入时，该设备会立即收到分配给自己的任何挂起的操作或策略。 此功能有助于验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
 
 **[什么是 Microsoft Intune 设备管理？](device-management.md)** 是了解使用 Azure 门户管理设备的最佳资源。 
 

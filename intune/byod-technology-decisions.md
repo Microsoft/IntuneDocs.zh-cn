@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3f6fc48a68122f0a192adc8e2140bb7a603b31
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043464"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045780"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>用于通过 Microsoft 企业移动性 + 安全性 (EMS) 启用 BYOD 的技术决策
 

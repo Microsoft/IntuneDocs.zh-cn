@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804670"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044598"
 ---
 # <a name="plan-communications"></a>计划通信 
 通信计划是 Intune 迁移的关键要素。 已提供以下工具和模板来帮助你培训最终用户。 Intune Adoption Kit 包括电子邮件模板、Intune 注册指南和最终用户注册指导视频链接。  
@@ -30,9 +30,9 @@ ms.locfileid: "66804670"
 
 ## <a name="email-templates"></a>电子邮件模板 
 建议遵循以下电子邮件通信计划。 我们为你的通信计划提供了一些适合的模板：
-- 电子邮件 #1：阐释了规划的好处、期望和安排。 利用此机会来展示各种新服务，由 Intune 托管设备对这些服务授予访问权限。 
+- 电子邮件 #1  ：阐释了规划的好处、期望和安排。 利用此机会来展示各种新服务，由 Intune 托管设备对这些服务授予访问权限。 
 
-- 电子邮件 #2：宣布现已可通过 Intune 访问服务。 告知用户立即注册。  向用户提供在其访问受到之前的时间线。 提醒用户有关迁移的好处和战略原因。
+- 电子邮件 #2  ：宣布现已可通过 Intune 访问服务。 告知用户立即注册。  向用户提供在其访问受到之前的时间线。 提醒用户有关迁移的好处和战略原因。
 在一段时间后，可以开始通过条件访问策略强制实施符合性，并将其用作访问公司数据的条件，如[推动最终用户采用条件访问](migration-guide-drive-adoption.md)中所述。
 
 ## <a name="intune-enrollment-guide"></a>Intune 注册指南 

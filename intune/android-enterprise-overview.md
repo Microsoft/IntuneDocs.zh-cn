@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d66a9ae4d72ef37f39c2017c4351847e8bace46
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049900"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045885"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作配置文件设备
 
@@ -62,7 +62,7 @@ Android 企业不提供默认电子邮件应用或如 iOS 提供的本机电子�
 
 ## <a name="app-protection-policies"></a>应用保护策略
 
-工作配置文件和个人配置文件完全支持所应用的应用保护策略。 可在 Android 应用发布控制台中发布业务线应用，地址为 https://play.google.com/apps/publish。 此控制台包含让应用专用于组织的选项。 有关详细信息，请参阅[在 Intune 中添加适用于 Android 企业工作配置文件设备的设备合规性策略](compliance-policy-create-android-for-work.md)。 有关应用保护策略的一般信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
+工作配置文件和个人配置文件完全支持所应用的应用保护策略。 可在 Android 应用发布控制台中发布业务线应用，地址为 https://play.google.com/apps/publish 。 此控制台包含让应用专用于组织的选项。 有关详细信息，请参阅[在 Intune 中添加适用于 Android 企业工作配置文件设备的设备合规性策略](compliance-policy-create-android-for-work.md)。 有关应用保护策略的一般信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
 
 ## <a name="vpn-profiles"></a>VPN 配置文件
 

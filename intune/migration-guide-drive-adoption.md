@@ -1,5 +1,5 @@
 ---
-title: 推动最终用户采用条件性访问
+title: 推动最终用户采用条件访问
 titleSuffix: Microsoft Intune
 description: 了解如何在 Microsoft Intune 中使用条件访问，从而推动注册。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050472"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044589"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>在 Microsoft Intune 中推动最终用户采用条件访问
 
@@ -58,19 +58,19 @@ ms.locfileid: "66050472"
 
 ### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>任务 1：决定要如何实现条件访问
 
-[条件性访问的常见使用方式](conditional-access-intune-common-ways-use.md)。
+[条件访问的常见使用方式](conditional-access-intune-common-ways-use.md)。
 
 ### <a name="task-2-set-up-intune-conditional-access"></a>任务 2：设置 Intune 条件访问
 
 选择下列选项之一：
 
--   [在 Azure Active Directory 中配置条件性访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+-   [在 Azure Active Directory 中配置条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
 -   [使用 Intune 安装本地 Exchange 连接器](exchange-connector-install.md)
 
--   [为 Exchange Online 设置基于应用的条件性访问策略](app-based-conditional-access-intune-create.md)
+-   [创建用于 Exchange Online 的基于应用的条件访问策略](app-based-conditional-access-intune-create.md)
 
--   [为 SharePoint Online 设置基于应用的条件性访问策略](app-based-conditional-access-intune-create.md)
+-   [为 SharePoint Online 设置基于应用的条件访问策略](app-based-conditional-access-intune-create.md)
 
 -   [屏蔽不使用现代验证 (ADAL) 的应用](app-modern-authentication-block.md)
 

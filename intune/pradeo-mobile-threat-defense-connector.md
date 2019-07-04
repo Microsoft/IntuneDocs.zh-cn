@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df1a3fcfe0f6fd0fc2a5fbfe73935c8f47c106ff
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b945218fd1c2692bdc5ca92db5f309488a1a10bd
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041600"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044308"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Pradeo 移动威胁防御连接器与 Intune
 
@@ -57,7 +57,7 @@ Intune 设备符合性策略包括基于 Pradeo 风险评估的 Pradeo 移动威
 
 ### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 
-检测“中间人”攻击等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
+检测“中间人”攻击等网络威胁，并基于设备风险保护对 WiFi 网络的访问  。
 
 **阻止通过 Wi-Fi 访问网络：**
 
@@ -69,7 +69,7 @@ Intune 设备符合性策略包括基于 Pradeo 风险评估的 Pradeo 移动威
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
-基于设备风险检测对网络的威胁，如“中间人”攻击和阻止同步企业文件。
+基于设备风险检测对网络的威胁，如“中间人”攻击和阻止同步企业文件  。
 
 **检测到网络威胁时阻止 SharePoint Online：**
 

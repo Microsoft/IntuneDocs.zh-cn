@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0a83526a2e9333c0e6a131e59cee29a4a76fffa
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041198"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389312"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -99,8 +99,8 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
     
     - **隐藏更改帐户选项（需要 Windows 10 版本 1809 或更高版本）** ：选择“隐藏”可防止在公司登录和域错误页上显示更改帐户选项。  要执行此操作，需[在 Azure Active Directory 中配置公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
     - **用户帐户类型**：选择用户的帐户类型（“管理员”或“标准”用户   ）。
-    - **允许 White Glove OOBE**：选择“是”  以允许 White Glove 支持。
-    - **应用设备名称模板**：选择“是”可创建模板，以便在注册期间命名设备时使用。  名称长度必须在 15 个字符或以下，可以包含字母、数字和连字符。 名称不能全为数字。 使用 [%SERIAL% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)添加特定于硬件的序列号。 或者使用 [%RAND:x% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)，添加随机数字字符串，其中 x 等于要添加的位数。 
+    - **允许 White Glove OOBE**（需要 Windows 10 版本 1903 或更高版本；[其他物理要求](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)）：选择“是”  以允许 White Glove 支持。
+    - **应用设备名称模板**（需要 Windows 10 版本 1809 或更高版本）：选择“是”可创建模板，以便在注册期间命名设备时使用。  名称长度必须在 15 个字符或以下，可以包含字母、数字和连字符。 名称不能全为数字。 使用 [%SERIAL% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)添加特定于硬件的序列号。 或者使用 [%RAND:x% 宏](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)，添加随机数字字符串，其中 x 等于要添加的位数。 
     - **语言(区域)** \*：选择要对设备使用的语言。 仅当选择“自部署”  作为“部署模式”  时，此选项才可用。
     - **自动配置键盘**\*：如果选择了“语言(区域)”  ，请选择“是”  以跳过键盘选择页。 仅当选择“自部署”  作为“部署模式”  时，此选项才可用。
 8. 选择“下一步”  。

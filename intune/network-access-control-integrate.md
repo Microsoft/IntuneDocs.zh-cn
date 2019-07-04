@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9663691053d8ecd204ad899805153d0bfb25e6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041567"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044533"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 
@@ -37,13 +37,13 @@ NAC 解决方案可通过 Intune 检查设备注册和符合性状态，以便�
 
 ## <a name="feature-behaviors"></a>功能行为
 
-主动同步到 Intune 的设备无法从“符合” / “不符合”变成“未同步”（或“未知”）。 “未知”状态是预留给尚未进行符合性评估的新注册设备。
+主动同步到 Intune 的设备无法从“符合” / “不符合”变成“未同步”（或“未知”）     。 “未知”状态是预留给尚未进行符合性评估的新注册设备  。
 
 对于被阻止而无法访问资源的设备，阻止设备的服务应将所有用户重定向到[管理门户](https://portal.manage.microsoft.com)，以确定设备被阻止的原因。  如果用户访问此页，他们的设备会同步重新接受符合性评估。
 
-## <a name="nac-and-conditional-access"></a>NAC 和条件性访问
+## <a name="nac-and-conditional-access"></a>NAC 和条件访问
 
-NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情，请参阅[结合使用 Intune 和 条件访问的常见方式](conditional-access-intune-common-ways-use.md)。
+NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情，请参阅[使用 Intune 条件访问的常见方式](conditional-access-intune-common-ways-use.md)。
 
 ## <a name="how-the-nac-integration-works"></a>NAC 集成的工作原理
 
@@ -74,7 +74,7 @@ NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情
   - 使用 Citrix Gateway 12.0.59 或更高版本。  
   - 用户必须已安装 Citrix SSO 1.1.6 或更高版本。
   - [将 NetScaler 与 Intune for NAC 集成](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)，如 Citrix 产品文档中所述。
-  - 在 VPN 配置文件中，选择“基本设置” > “启用网络访问控制(NAC)”> 选择“我同意”。
+  - 在 VPN 配置文件中，选择“基本设置” > “启用网络访问控制(NAC)”> 选择“我同意”    。
 
   出于安全原因，VPN 每隔 24 小时将断开一次连接。 可以立即重新连接 VPN。
 
@@ -82,7 +82,7 @@ NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情
 
   - 使用 F5 BIG-IP 13.1.1.5。 不支持 BIG-IP 14。
   - 将 BIG-IP 与 Intune 相集成以配置 NAC。 [概述：使用终结点管理系统配置 APM 以进行设备状态检查](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 指南列出了相关步骤。
-  - 在 VPN 配置文件中，选择“基本设置” > “启用网络访问控制(NAC)”> 选择“我同意”。
+  - 在 VPN 配置文件中，选择“基本设置” > “启用网络访问控制(NAC)”> 选择“我同意”    。
 
   出于安全原因，VPN 每隔 24 小时将断开一次连接。 可以立即重新连接 VPN。
 

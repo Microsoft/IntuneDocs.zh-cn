@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808b594e4ac47845272be2978da2463727f9807c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040774"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044073"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 连接器
 
@@ -48,9 +48,9 @@ Intune 设备符合性策略包括基于 SEP Mobile 风险评估的 SEP Mobile �
 
 Intune 支持与 SEP Mobile 集成的两种模式：
 
--   “基本设置”为只读模式，Intune 中的设备在该模式下对 SEP Mobile 可见。
+-    “基本设置”为只读模式，Intune 中的设备在该模式下对 SEP Mobile 可见。
 
--   “完全集成”允许 SEP Mobile 向 Intune 报告设备风险和安全事件的详细信息。
+-    “完全集成”允许 SEP Mobile 向 Intune 报告设备风险和安全事件的详细信息。
 
 ## <a name="sample-scenarios"></a>示例方案
 

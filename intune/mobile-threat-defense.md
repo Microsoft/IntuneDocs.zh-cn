@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5329e23ee6307f86c7b1fcaead0cb24b8271443c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 74050f51347f234029a83ce0e3463fe6b11aee1b
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041625"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044576"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>什么是 Mobile Threat Defense 与 Intune 的集成？
 Intune 可以集成来自移动威胁防御供应商的数据，作为合规性策略和条件访问规则的信息源。 使用此信息，可通过阻止存在风险的移动设备的访问，来帮助保护 Exchange 和 SharePoint 等公司资源。  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e21eb6169acf8ae69ace94fd54007eaa4f7f90f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046756"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044353"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>实现 Microsoft Intune 计划
 
@@ -42,7 +42,7 @@ ms.locfileid: "66046756"
 
 -   Azure AD Connect（用于目录同步）
 
--   Intune On-Premises Connector for Exchange（如果需要，用于 Exchange 内部部署的条件访问）
+-   适用于 Exchange 的 Intune 本地连接器（如果需要，用于 Exchange 本地的条件访问）
 
 -   Intune 证书连接器（如果需要，用于 SCEP 证书部署）
 

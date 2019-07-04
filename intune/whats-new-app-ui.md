@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046426"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045635"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解 Microsoft Intune 应用的最新更新。 我们会定期新增内容和改进 Intune 公司门户应用和网站。 如果你是 Intune 管理员或支持人员，则本文提供了以下方面所需的信息：
@@ -37,13 +37,13 @@ ms.locfileid: "66046426"
 ## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日当周  
 
 ### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>新最终用户应用（Microsoft Intune 应用） <!--3903244 -->  
-有一种适用于 Android 完全托管设备的新最终用户应用，名为 Microsoft Intune。 此新应用质轻、现代，并可提供与公司门户应用类似的功能，但适用于完全托管的公司设备。 有关详细信息，请参阅 [Google Play 上的 Microsoft Intune 应用](https://play.google.com/store/apps/details?id=com.microsoft.intune)。  
+有一种适用于 Android 完全托管设备的新最终用户应用，名为 Microsoft Intune  。 此新应用质轻、现代，并可提供与公司门户应用类似的功能，但适用于完全托管的公司设备。 有关详细信息，请参阅 [Google Play 上的 Microsoft Intune 应用](https://play.google.com/store/apps/details?id=com.microsoft.intune)。  
 
 设备详细信息屏幕的示例屏幕截图： 
 
 ![Microsoft Intune 应用的屏幕截图，其中显示了 Jane 的 Android 设备的详细信息。](./media/1904-intune-app-device-details.png)   
 
-“安装程序访问”屏幕的示例屏幕截图：  
+“安装程序访问”屏幕的示例屏幕截图  ：  
 
 ![Microsoft Intune 应用的屏幕截图，其中显示了安装程序访问注册屏幕。](./media/1904-intune-app-setup-access.png)   
 
@@ -51,7 +51,7 @@ ms.locfileid: "66046426"
 
 ![Microsoft Intune 应用的屏幕截图，其中显示了边栏菜单。](./media/1904-intune-app-navigation-menu.png)   
 
-“帮助”屏幕的示例屏幕截图：  
+“帮助”屏幕的示例屏幕截图  ：  
 
 ![Microsoft Intune 应用“帮助”屏幕的屏幕截图。](./media/1904-intune-app-help.png)   
 
@@ -72,7 +72,7 @@ ms.locfileid: "66046426"
 
 ## <a name="week-of-february-19-2019"></a>2019 年 2 月 19 日当周  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>适用于 Windows 10 的公司门户应用中的全新应用类别屏幕<!-- 3834780 WNready4Review -->  
-添加了名为“应用类别”的新屏幕，以改善适用于 Windows 10 的公司门户中的应用浏览和选择体验。 用户现在可以看到他们的应用按照“特别推荐”、“教育”和“工作效率”等类别进行排序。 此更改将出现在公司门户 10.3.3451.0 版及更高版本中。 有关在公司门户中安装应用的详细信息，请参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)。  
+添加了名为“应用类别”的新屏幕，以改善适用于 Windows 10 的公司门户中的应用浏览和选择体验  。 用户现在可以看到他们的应用按照“特别推荐”、“教育”和“工作效率”等类别进行排序    。 此更改将出现在公司门户 10.3.3451.0 版及更高版本中。 有关在公司门户中安装应用的详细信息，请参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)。  
 
 ![适用于 Windows 10 的公司门户的应用类别屏幕的屏幕截图。](./media/1902_CP_app_categories.png)   
 
@@ -110,15 +110,15 @@ Microsoft Intune 管理员可以上传自定义品牌图像，该图像将在 iO
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日所在的一周  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的更多同步机会   
-适用于 Windows 的公司门户应用现在允许直接从 Windows 任务栏和“开始”菜单启动同步。 如果唯一任务是同步设备并访问公司资源，那么此功能特别有用。 要访问新功能，请右键单击固定到任务栏或“开始”菜单的公司门户图标。 在菜单选项（也称为跳转列表）中，选择“同步此设备”。 公司门户将打开“设置”页面并启动同步。  
+适用于 Windows 的公司门户应用现在允许直接从 Windows 任务栏和“开始”菜单启动同步。 如果唯一任务是同步设备并访问公司资源，那么此功能特别有用。 要访问新功能，请右键单击固定到任务栏或“开始”菜单的公司门户图标  。 在菜单选项（也称为跳转列表）中，选择“同步此设备”  。 公司门户将打开“设置”页面并启动同步  。  
 
 ![设备桌面上 Windows 任务栏的屏幕截图。 已单击公司门户应用程序图标，以显示带有“固定到任务栏”、“关闭窗口”和“同步此设备”操作选项的菜单。](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的新浏览体验  
 
-现在，在适用于 Windows 的公司门户应用中浏览或搜索应用时，用户可在现有的“磁贴”视图和新的“详细信息”视图之间切换。 新视图列出应用程序详细信息，如名称、发布服务器、发布日期和安装状态。  
+现在，在适用于 Windows 的公司门户应用中浏览或搜索应用时，用户可在现有的“磁贴”视图和新的“详细信息”视图之间切换   。 新视图列出应用程序详细信息，如名称、发布服务器、发布日期和安装状态。  
 
-通过“应用”页的“已安装”视图可查看已完成和正在进行的应用安装的详细信息。  
+通过“应用”页的“已安装”视图可查看已完成和正在进行的应用安装的详细信息   。  
 
 显示平铺视图的示例屏幕截图：  
  
@@ -192,7 +192,7 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 我们改进了适用于 iOS 的公司门户应用中的设备设置工作流。 语言对用户更加友好，在可能的情况下我们还对屏幕进行了合并。 我们还通过在整个设置文本中使用公司名称使语言特定于你的公司。
 
 > [!NOTE]
-> 我们使用在 Azure 门户中设置的公司名称：“Microsoft Intune” > “客户端应用” > “公司门户品牌” > “公司名称”。 如果你未设置此值，我们将使用你在“Azure Active Directory” > “属性” > “名称”中设置的租户名称。 如果你尚未在公司门户品牌中设置公司名称，并且不希望显示租户名称，我们建议你在“公司门户品牌”选项卡中设置公司名称。如果你不希望此字符串显示在公司门户的标题中，则可以取消选中该复选框以“在徽标旁显示公司名称”。
+> 我们使用在 Azure 门户中设置的公司名称：“Microsoft Intune” > “客户端应用” > “公司门户品牌” > “公司名称”     。 如果你未设置此值，我们将使用你在  “Azure Active Directory” >   “属性” >   “名称”中设置的租户名称。 如果你尚未在公司门户品牌中设置公司名称，并且不希望显示租户名称，我们建议你在“公司门户品牌”选项卡中设置公司名称。如果你不希望此字符串显示在公司门户的标题中，则可以取消选中该复选框以“在徽标旁显示公司名称”。
 
 |以前|完成|
 |---|---|
@@ -282,7 +282,7 @@ Android 公司门户应用的注册流程进行了简化，新增了文本，更
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 邮件应用将支持 OAuth <!-- 1196951 -->
 
-在使用 OAuth 的 iOS 设备上，使用 Intune 的条件访问支持更安全的身份验证。 为支持此功能，适用于 iOS 的公司门户应用上现在有一个不同的流，允许更安全的身份验证。 如果最终用户在邮件应用中尝试登录新的 Exchange 帐户，将会看到一个 Web 视图提示。 在 Intune 中注册后，用户会看到提示，要求允许本机邮件应用访问证书。 大多数最终用户不会再看到隔离电子邮件。 现有邮件帐户会继续使用基本身份验证协议，因此仍会收到隔离电子邮件。 最终用户的这种登录体验与 Office 移动应用的登录体验类似。
+在使用 OAuth 的 iOS 设备上，Intune 条件访问支持更安全的身份验证。 为支持此功能，适用于 iOS 的公司门户应用上现在有一个不同的流，允许更安全的身份验证。 如果最终用户在邮件应用中尝试登录新的 Exchange 帐户，将会看到一个 Web 视图提示。 在 Intune 中注册后，用户会看到提示，要求允许本机邮件应用访问证书。 大多数最终用户不会再看到隔离电子邮件。 现有邮件帐户会继续使用基本身份验证协议，因此仍会收到隔离电子邮件。 最终用户的这种登录体验与 Office 移动应用的登录体验类似。
 
 ![选择本机邮件应用中的帐户类型。](./media/ios-11-ca-email-after-1708-01.png)
 
@@ -304,18 +304,18 @@ Android 公司门户应用的注册流程进行了简化，新增了文本，更
 
 更新后，“Intune 移动应用管理”(MAM) 对话框将具有新式外观和体验。 对话框功能与以前相同。
 
-之前的体验
+之前的体验 
 
 ![旧界面](./media/NewUI_Old_AttachFileHandler.jpg)
 
-新式体验
+新式体验 
 
 ![新式界面](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>适用于 Windows 10 的公司门户应用上“设备详细信息”页的更新 <!-- 1287448 -->
 
-适用于 Windows 10 的公司门户应用将标题下的“类别”标签移动至“设备详细信息”页上的一个属性。
+适用于 Windows 10 的公司门户应用将标题下的“类别”标签移动至“设备详细信息”页上的一个属性   。
 
 ![适用于 Windows 的公司门户应用的“设备详细信息”屏幕，现在“类别”字段显示为一个属性，而不是直接显示在屏幕标题的下方。](./media/cp_win10_category_tag_move_after_1708.png)
 
@@ -355,7 +355,7 @@ __从其他设备登录时的新登录体验__
 
 ![公司门户登录页，在网站的图形表示形式前方显示人形图标。 下面是“登录”按钮。 底部的链接指向 Microsoft 隐私和 Cookie 信息。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
-点击“从其他设备登录”链接。
+点击“从其他设备登录”链接  。
 
 ![通过使用工作计算机的唯一密码访问 aka.ms/devicelogin 页面，然后使用验证码进行登录可获得说明。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
@@ -363,7 +363,7 @@ __从其他设备登录时的新登录体验__
 
 ![用户工作计算机上用户浏览器的图像，而不是公司门户应用的图像。 显示的“设备登录”页将提示用户输入他们在公司门户应用中收到的验证码。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-输入在公司门户应用中看到的验证码。 选择“继续”，你将能够使用受贵公司支持的任意方法进行身份验证，如智能卡。
+输入在公司门户应用中看到的验证码。 选择“继续”  ，你将能够使用受贵公司支持的任意方法进行身份验证，如智能卡。
 
 ![用户已在字段中输入唯一代码，且“设备登录”网站已请求确认 Intune 公司门户是否是接收登录授权的正确应用。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
@@ -376,9 +376,9 @@ __从其他设备登录时的新登录体验__
 ## <a name="june-2017"></a>2017 年 6 月
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>适用于 Android 的公司门户应用现推出了全新的应用保护政策最终用户体验
-根据客户反馈，已修改适用于 Android 的公司门户应用，以便显示“访问公司内容”按钮。 其目的在于，使最终用户在仅需要访问支持应用保护策略（Intune 移动应用程序管理的一项功能）的应用时，无需完成不必要的注册过程。
+根据客户反馈，已修改适用于 Android 的公司门户应用，以便显示“访问公司内容”  按钮。 其目的在于，使最终用户在仅需要访问支持应用保护策略（Intune 移动应用程序管理的一项功能）的应用时，无需完成不必要的注册过程。
 
-用户只需点击“访问公司内容”按钮，而不是开始注册设备。
+用户只需点击“访问公司内容”  按钮，而不是开始注册设备。
 
 ![一个 Android 公司门户应用的图像，图像正中以较大文字显示“访问公司内容”，而不是按照标准情况提供立即注册选项](./media/and_access_company_content_after_1706.png)
 
@@ -386,7 +386,7 @@ __从其他设备登录时的新登录体验__
 
 ![公司门户网站图像，其中显示确认登录的画面。](./media/and_iwp_sign_in_auth_page_after_1706.png)
 
-仍可通过点击“操作”菜单，让设备注册为完全管理。
+仍可通过点击“操作”  菜单，让设备注册为完全管理。
 
 ![另一个 Android 公司门户应用的图像，其中显示了屏幕右上角的菜单，含有一个用于继续注册设备的选项。](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
 
@@ -497,11 +497,11 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 
 ![左侧为更新之前的 Android 适用的公司门户应用的图像。 右侧为更新之后的 Android 适用的公司门户应用的图像。 两张图像中都选定了“应用”、“设备”和“联系 IT”三个可用选项卡中的“设备”选项卡。](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __界面__：更新了“应用”选项卡中的“特别推荐的应用”和“所有应用”按钮。“搜索”按钮现在是浮动的操作按钮。
+* __界面__：更新了“应用”选项卡中的“特别推荐的应用”和“所有应用”按钮    。  “搜索”按钮现在是浮动的操作按钮。
 
 ![左侧为更新之前的 Android 适用的公司门户应用的图像。 右侧为更新之后的 Android 适用的公司门户应用的图像。 两张图像中都选定了“应用”、“设备”和“联系 IT”三个可用选项卡中的“应用”选项卡。](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __导航__：为了更便于导航，“所有应用”以选项卡形式呈现出“特别推荐”、“所有”和“类别”视图。 “联系 IT”已经简化，改善了可读性。
+* __导航__：为了更便于导航，“所有应用”以选项卡形式呈现出“特别推荐”、“所有”和“类别”视图    。 “联系 IT”  已经简化，改善了可读性。
 
 <html>
 <body>

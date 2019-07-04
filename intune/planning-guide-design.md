@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046140"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044401"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -401,7 +401,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定符合性策略需求。
-#### <a name="conditional-access-policies"></a>条件性访问策略
+#### <a name="conditional-access-policies"></a>条件访问策略
 
 使用条件访问仅允许符合要求的设备访问电子邮件和其他公司资源。 Intune 配合企业移动性 + 安全 (EMS) 工作，控制对公司资源的访问。 请确定是否需要条件访问，以及必须保护的内容。 了解有关[条件性访问](conditional-access.md)的详细信息。
 
@@ -409,7 +409,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 -   [Exchange 内部部署](exchange-connector-install.md)
 
-下面是一个如何记录条件性访问策略的示例：
+下面是一个如何记录条件访问策略的示例：
 
 | **服务** | **新式验证平台** | **基本身份验证** | **用例** |   
 |:---:|:---:|:---:|:---:|

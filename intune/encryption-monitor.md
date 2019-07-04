@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047825"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316935"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>监视 BitLocker 和设备加密  
 Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，并帮助你通过设备访问 BitLocker 的重要信息，如 Azure Active Directory (Azure AD) 中所示。  
@@ -32,13 +32,13 @@ Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，�
 ## <a name="encryption-report"></a>加密报表
 可以使用加密报表查看关于 Windows 10 设备加密状态的详细信息。  
 
-要查找报表，请登录 [Intune](https://aka.ms/intuneportal)，前往“设备配置”，然后在“监视”下，选择“加密报表”。  
+要查找报表，请登录 [Intune](https://aka.ms/intuneportal)，前往“设备配置”，然后在“监视”下，选择“加密报表”    。  
 
 ### <a name="prerequisites"></a>先决条件：
 为了在加密报表中显示，设备必须运行 Windows 1607 版本或更高版本。  
 
 ### <a name="report-details"></a>报表详细信息
-报表显示 Windows 10 设备的“设备名称”以及每个设备的高级详细信息，包括以下内容：  
+报表显示 Windows 10 设备的“设备名称”以及每个设备的高级详细信息，包括以下内容  ：  
 - **OS 版本** – Windows 版本。  
 - **TPM 版本** – 设备上受信任平台模块 (TPM) 芯片的版本。  
 - **加密就绪状态** – 对设备支持 BitLocker 加密的就绪状态的评估。 设备可标识为：
@@ -51,26 +51,26 @@ Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，�
   - **未就绪**：设备不具完备的加密功能，但仍支持加密。 例如，用户可以手动加密设备，也可以通过可设置为无需 TMP 即可加密的组策略加密设备。
   - **不适用**：用于对此设备进行分类的信息不足。  
 
-- **加密状态** – OS 驱动器是否加密。  
+- **加密状态** – OS 驱动器是否加密。 
 
 
 ### <a name="device-encryption-status"></a>设备加密状态
-选择设备时，Intune 会显示“设备加密状态”窗格。
+选择设备时，Intune 会显示“设备加密状态”窗格  。
 
 此窗格提供以下详细信息：  
 - **设备名称** – 所查看设备的名称。  
-- **加密就绪状态** - 对设备支持 BitLocker 加密的就绪状态的评估。 即使设备由于缺少 TPM 而导致加密就绪状态为“未就绪”，加密状态也可能为“已加密”。 （有关详细信息，请参阅上述部分中的加密就绪状态。）
-- **加密状态** - OS 驱动器是否加密。  
-- **配置文件** – 适用于此设备并包括以下配置文件类型和设置的“设备配置”配置文件列表：  
-  - 配置文件类型 = 终结点保护  
-  - 设置 > Windows 加密 > 加密设备 = 需要  
+- **加密就绪状态** - 对设备支持 BitLocker 加密的就绪状态的评估。 即使设备由于缺少 TPM 而导致加密就绪状态为“未就绪”，加密状态也可能为“已加密”   。 （有关详细信息，请参阅上述部分中的加密就绪状态。）
+- **加密状态** - OS 驱动器是否加密。 可能需要多达 24 小时，Intune 才能开始报告设备加密状态或对该状态所做的更改。  
+- **配置文件** – 适用于此设备并包括以下配置文件类型和设置的“设备配置”配置文件列表  ：  
+  - 配置文件类型 = 终结点保护   
+  - 设置 > Windows 加密 > 加密设备 = 需要   
 
   如果配置文件状态摘要表明存在问题，则此列表可用于查找特定策略以供查看。  
 
-- **配置文件状态摘要** – 适用于此设备的配置文件摘要。 摘要表示所有适用配置文件中的最不利条件。 例如，如果某个配置文件导致出现错误，配置文件状态摘要将显示“错误”。  
+- **配置文件状态摘要** – 适用于此设备的配置文件摘要。 摘要表示所有适用配置文件中的最不利条件。 例如，如果某个配置文件导致出现错误，配置文件状态摘要将显示“错误”  。  
 - **状态详细信息** – 关于设备加密状态的高级详细信息。 
   > [!NOTE]  
-  > Intune 仅显示运行 Windows 10 2019 年 4 月更新版或更高版本的设备的状态详细信息。
+  > Intune 仅显示运行 Windows 10 2019 年 4 月更新版或更高版本的设备的状态详细信息   。
   
   此字段显示可检测到的每个适用错误的信息。 使用此信息可了解设备加密未准备就绪的原因。  
 
@@ -95,15 +95,15 @@ Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，�
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 恢复密钥
 Intune 允许访问 BitLocker 的 Azure AD 边栏选项卡，因此可通过 Intune 门户查看 Windows 10 设备的 BitLocker 密钥 ID 和恢复密钥。  为了能够访问，设备必须将其密钥托管到 Azure AD。 
-1. 登录 [Intune](https://aka.ms/intuneportal)，前往“设备”，然后在“管理”下，选择“所有设备”。
-2. 选择列表中的设备，然后在“监视”下，选择“恢复密钥”。  
+1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，前往“设备”，然后在“管理”下，选择“所有设备”    。
+2. 选择列表中的设备，然后在“监视”下，选择“恢复密钥”   。  
   
 如果 Azure AD 中有密钥，将提供以下信息：
 - BitLocker 密钥 ID
 - BitLocker 恢复密钥
 - 驱动器类型  
 
-如果 Azure AD 中没有密钥，Intune 将显示“未找到此设备的 BitLocker 密钥”。  
+如果 Azure AD 中没有密钥，Intune 将显示“未找到此设备的 BitLocker 密钥”  。  
 
 使用 [BitLocker 配置服务提供程序](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP) 获取 BitLocker 的信息。 Windows 10 1703 版本和更高版本，以及 Windows 10 专业版 1809 版本和更高版本支持 BitLocker CSP。 
 

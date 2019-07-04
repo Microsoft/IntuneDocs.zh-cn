@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373475"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298417"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 中的 Windows 10 设备上使用 PowerShell 脚本
 
@@ -45,7 +45,7 @@ Intune 管理扩展具有以下先决条件。 满足这些条件后，在向用
 
 - 运行 Windows 10 版本 1607 或更高版本的设备。 如果设备是通过[批量自动注册](windows-bulk-enroll.md)进行注册的，设备必须运行 Windows 10 版本 1703 或更高版本。 Windows 10 上的 S 模式不支持 Intune 管理扩展，因为该模式禁止运行非存储应用。 
   
-- 加入 Azure Active Directory (AD) 的设备，其中包括：
+- 加入 Azure Active Directory (AD) 的设备，其中包括：  
   
   - 已联接混合 Azure AD 的设备：同时加入 Azure Active Directory (AD) 和本地 Active Directory (AD) 的设备。 相关指南请参阅[规划混合 Azure Active Directory 联接实现](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)。
 
@@ -55,13 +55,20 @@ Intune 管理扩展具有以下先决条件。 满足这些条件后，在向用
   
   - 在 Intune 中手动注册的设备，即在下述情况下注册的设备：
   
-    - 用户使用本地用户帐户登录设备，然后将设备手动加入 Azure AD（且 Azure AD 中已启用到 Intune 的自动注册）。
+    - Azure AD 中已启用[自动注册到 Intune](quickstart-setup-auto-enrollment.md)。 最终用户使用本地用户帐户登录设备，将设备手动加入 Azure AD，然后使用其 Azure AD 帐户登录设备。
     
-    或者
+    要么  
     
     - 用户使用其 Azure AD 帐户登录设备，然后在 Intune 中进行注册。
 
-  - 使用 Configuration Manager 和 Intune 的共同托管设备。 相关指南请参阅[什么是共同管理](https://docs.microsoft.com/sccm/comanage/overview)。
+  - 使用 Configuration Manager 和 Intune 的共同托管设备。 确保将  “客户端应用”工作负载设置为“试点 Intune”  或“Intune”  。 请参阅以下内容以获取指导： 
+  
+    - [什么是共同管理](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [“客户端应用”工作负载](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [将 Configuration Manager 工作负荷切换到 Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
+> [!TIP]
+> 确保设备已[加入](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) Azure AD。 仅在 Azure AD 中[注册](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)的设备不会收到你的脚本。
 
 ## <a name="create-a-script-policy"></a>创建脚本策略 
 
@@ -87,7 +94,7 @@ Intune 管理扩展具有以下先决条件。 满足这些条件后，在向用
 5. 选择“确定” > “创建”保存脚本   。
 
 > [!NOTE]
-> 将 PowerShell 脚本设置为用户上下文且设备上的最终用户具有管理员权限时，将在管理员权限下运行该脚本（默认情况）。
+> 将脚本设置为用户上下文且最终用户拥有管理员权限时，默认情况下将在管理员权限下运行 PowerShell 脚本。
 
 ## <a name="assign-the-policy"></a>分配策略
 
@@ -156,6 +163,7 @@ Intune 管理扩展具有以下先决条件。 满足这些条件后，在向用
     > [!TIP]
     > Microsoft Intune 管理扩展是一项在设备上运行的服务，如同服务应用 (services.msc) 中列出中的任何其他服务一样  。 设备重启后，此服务可能也会重启，并检查是否随附 Intune 服务分配了任何 PowerShell 脚本。 如果 Microsoft Intune 管理扩展服务设置为“手动”，则设备重启后可能不会重启此服务  。
 
+- 确保设备已[加入 Azure AD](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)。 仅加入你的工作区或组织（在 Azure AD 中[注册](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)）的设备不会收到脚本。
 - Intune 管理扩展客户端每小时检查一次 Intune 中的脚本或策略是否发生任何更改。
 - 确认 Intune 管理扩展已下载到 `%ProgramFiles(x86)%\Microsoft Intune Management Extension`。
 - 未在 Surface Hub 或 Windows 10 的 S 模式下运行的脚本。

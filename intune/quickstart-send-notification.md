@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d1153254f5e803bc0e1f933b8bdc022f241abcc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bb175d2133cf2a7bc5b064c13afb7e252147c729
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045845"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044252"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>快速入门：将通知发送到不符合的设备
 
@@ -35,7 +35,7 @@ ms.locfileid: "66045845"
 如果没有 Intune 订阅，请[注册免费试用帐户](free-trial-sign-up.md)。
 
 ## <a name="prerequisites"></a>必备条件
-- 使用设备符合性策略阻止设备使用公司资源时，必须设置 AAD 条件访问。 如果已完成[创建设备符合性策略](quickstart-set-password-length-android.md)快速入门，则可使用 Azure Active Directory。 有关 AAD 的详细信息，请参阅 [Azure Active Directory 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)和[通过 Intune 使用条件访问的常见方式](conditional-access-intune-common-ways-use.md)。
+- 使用设备符合性策略阻止设备使用公司资源时，必须设置 AAD 条件访问。 如果已完成[创建设备符合性策略](quickstart-set-password-length-android.md)快速入门，则可使用 Azure Active Directory。 有关 AAD 的详细信息，请参阅 [Azure Active Directory 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)和[使用 Intune 条件访问的常见方式](conditional-access-intune-common-ways-use.md)。
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
@@ -45,19 +45,19 @@ ms.locfileid: "66045845"
 
 要向用户发送电子邮件，请创建通知消息模板。 设备不符合要求时，在模板中输入的详细信息将显示在发送给用户的电子邮件中。
 
-1. 在 Intune 中，选择“设备符合性” > “通知” > “创建通知”。 
+1. 在 Intune 中，选择“设备符合性” > “通知” > “创建通知”    。 
 2. 输入以下信息：
 
-   - **名称**：Contoso 管理员
+   - **名称**：Contoso 管理员 
    - **主题**：*设备符合性*
-   - **消息**：当前设备不满足组织符合性要求。
-   - **电子邮件标头 – 包括公司徽标**：设置为“已启用”以显示组织的徽标。
-   - **电子邮件页脚 – 包括公司名称**：设置为“已启用”以显示组织的名称。
-   - **电子邮件页脚 – 包括联系人信息**：设置为“已启用”以显示组织的联系人信息。
+   - **消息**：当前设备不满足组织符合性要求。 
+   - **电子邮件标头 – 包括公司徽标**：设置为“已启用”以显示组织的徽标  。
+   - **电子邮件页脚 – 包括公司名称**：设置为“已启用”以显示组织的名称  。
+   - **电子邮件页脚 – 包括联系人信息**：设置为“已启用”以显示组织的联系人信息  。
 
    ![Intune 中符合性通知邮件的示例](./media/quickstart-send-notification-01.png)
 
-3. 在完成信息添加后，选择“创建”。 通知邮件模板已就绪，可供使用。
+3. 在完成信息添加后，选择“创建”  。 通知邮件模板已就绪，可供使用。
 
     > [!NOTE]
     > 此外，还可以编辑先前创建的“通知”模板。
@@ -70,40 +70,40 @@ ms.locfileid: "66045845"
 
 以下步骤将为 Windows 10 设备创建符合性策略。
 
-1. 在 Intune 中，选择“设备符合性”。
-2. 选择“策略” > “创建策略”。
+1. 在 Intune 中，选择“设备符合性”  。
+2. 选择“策略” > “创建策略”   。
 3. 输入以下信息：
 
-   - **名称**：Windows 10 符合性
-   - **说明**：Windows 10 符合性策略
+   - **名称**：Windows 10 符合性 
+   - **说明**：Windows 10 符合性策略 
    - **平台**：Windows 10 及更高版本
 
-4. 选择“设置” > “系统安全”，显示与设备安全相关的设置。
-5. 将“需要密码才可解锁移动设备”设置为“需要”。 此设置指定在允许访问用户移动设备上的信息之前是否要求用户输入密码。 
-6. 将“最短密码长度”设置为“6”。 此设置指定密码的最小位数或最小字符数。
+4. 选择“设置” > “系统安全”，显示与设备安全相关的设置   。
+5. 将“需要密码才可解锁移动设备”设置为“需要”   。 此设置指定在允许访问用户移动设备上的信息之前是否要求用户输入密码。 
+6. 将“最短密码长度”设置为“6”   。 此设置指定密码的最小位数或最小字符数。
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. 依次选择“确定” > “确定” > “创建”即可创建合规性策略。
-8. 选择“属性” > “针对非符合性的操作” > “添加”。
-9. 在“操作”下拉框中，确认选中“向最终用户发送电子邮件”。
-10. 选择“消息模板” > “Contoso 管理员” > “选择”以选择先前在本主题中创建的消息模板。
-11. 选择“ADD” > “确定” > “保存”以保存所做的更改。
+7. 依次选择“确定”   > “确定”   > “创建”  即可创建合规性策略。
+8. 选择“属性” > “针对非符合性的操作” > “添加”    。
+9. 在“操作”下拉框中，确认选中“向最终用户发送电子邮件”   。
+10. 选择“消息模板” > “Contoso 管理员” > “选择”以选择先前在本主题中创建的消息模板    。
+11. 选择“ADD”   > “确定”   > “保存”  以保存所做的更改。
 
 ## <a name="assign-the-policy"></a>分配策略
 
 可以将符合性策略分配给特定用户组或所有用户。 当 Intune 识别出设备不符合时，将通知用户他们必须更新其设备以满足符合性策略。 可使用以下步骤分配策略。
 
-1. 选择前面创建的“Windows 10 符合性”策略。
-2. 选择“分配”。
-3. 在“分配给”下拉框中，选择“所有用户”。 此操作将选择所有用户。 任何具有“Windows 10 及更高版本”设备且不符合此符合性策略的用户都将收到通知。
+1. 选择前面创建的“Windows 10 符合性”策略  。
+2. 选择“分配”  。
+3. 在“分配给”下拉框中，选择“所有用户”   。 此操作将选择所有用户。 任何具有“Windows 10 及更高版本”设备且不符合此符合性策略的用户都将收到通知  。
 
     > [!NOTE]
     > 可以在分配符合性策略时包含和排除组。
 
-4. 单击 **“保存”**。
+4. 单击 **“保存”** 。
 
-如果已成功创建并保存该策略，则它将显示在“设备符合性”-“策略”列表中。 请注意将列表中的“已分配”设置为“是”。
+如果已成功创建并保存该策略，则它将显示在“设备符合性”-“策略”列表中  。 请注意将列表中的“已分配”设置为“是”   。
 
 ## <a name="next-steps"></a>后续步骤
 
