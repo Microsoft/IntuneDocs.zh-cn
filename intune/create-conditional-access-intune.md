@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ed6259c996772817ceaa8ec827c8ac506adfd399
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045104"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530469"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>创建基于设备的条件访问策略
 
@@ -34,12 +34,12 @@ ms.locfileid: "67045104"
 
 ## <a name="create-conditional-access-policy"></a>创建条件访问策略
 
-1.  在 Intune 门户中，选择“条件访问”   > “策略”   > “新建策略”  。
+1. 在 Intune 门户中，选择“条件访问”   > “策略”   > “新建策略”  。
    
     ![创建新的条件访问策略](media/create-conditional-access-intune/create-ca.png)
  
-2.  在“分配”  下，选择“用户和组”  。 
-3.  在“包含”  选项卡上，确定希望向其应用此条件访问策略的用户或组。 选择要包含的对象后，如果希望从此策略中排除任何用户、角色或组，可以使用“排除”  选项卡。  
+2. 在“分配”  下，选择“用户和组”  。 
+3. 在“包含”  选项卡上，确定希望向其应用此条件访问策略的用户或组。 选择要包含的对象后，如果希望从此策略中排除任何用户、角色或组，可以使用“排除”  选项卡。  
     - **所有用户**：选择此选项可将策略应用到所有用户和组，其中包括内部用户和来宾用户。
   
     - **选择用户和组**：选择此选项并指定一个或多个以下选项：
@@ -52,9 +52,9 @@ ms.locfileid: "67045104"
      
        > [!TIP]  
        > 针对较小的用户组测试策略，以确保它按预期工作。
-4.  选择“完成”  。
-5.  在“分配”  下，选择“云应用”  。 
-6.  在“包含”选项卡  上，标识希望使用此条件访问策略保护的应用和服务。 如果希望从该策略中排除任何应用或服务，则可以使用“排除”  选项卡。
+4. 选择“完成”  。
+5. 在“分配”  下，选择“云应用”  。 
+6. 在“包含”选项卡  上，标识希望使用此条件访问策略保护的应用和服务。 如果希望从该策略中排除任何应用或服务，则可以使用“排除”  选项卡。
     - **所有云应用**：选择此选项可将策略应用到所有应用。
       > [!IMPORTANT]  
       > 访问 Azure 门户的 Microsoft Azure 管理应用包含在此列表中。 无论是在此处还是在“用户和组”  选项中，请务必使用“排除”  选项卡，确保你（或指定的用户或组）能够登录到 Azure 门户。 
@@ -63,8 +63,8 @@ ms.locfileid: "67045104"
     
       ![创建新的条件访问策略](media/create-conditional-access-intune/create-ca-select-apps.png)
 
-7.  选择“完成”  。
-8.  在“分配”  下，选择“条件”  。
+7. 选择“完成”  。
+8. 在“分配”  下，选择“条件”  。
     - **登录风险**：选择“是”将 Azure AD Identity Protection 登录风险检测与此策略结合使用，然后选择应向其应用策略的登录风险级别。
     - **设备平台**：在“包含”  选项卡上，确定你希望向其应用此条件访问策略的设备平台。 使用“排除”  选项卡从此策略中排除平台。
     - **位置**：在“包含”  选项卡上，指定策略是否适用于任何位置、IT 部门控制下的受信任网络位置或特定网络位置。 使用“排除”  选项卡从此策略中排除网络位置。 
@@ -76,7 +76,7 @@ ms.locfileid: "67045104"
       > [!TIP]  
       > 如果希望同时保护“新式身份验证”  客户端和“Exchange ActiveSync”客户端  ，请创建两个单独的条件访问策略，分别针对每种客户端类型。 虽然 Exchange ActiveSync 支持新式身份验证，但 Exchange ActiveSync 支持的惟一条件是平台。 不支持其他条件，包括多重身份验证。 为有效防止 Exchange ActiveSync 对 Exchange Online 的访问，请创建指定云应用 Office 365 Exchange Online 和客户端应用 Exchange ActiveSync 的条件访问策略，同时仅将策略应用于所选的支持平台。
 
-9.  选择“完成”  。
+9. 选择“完成”  。
 10. 在“访问控制”  下，选择“授予”  。 根据设置的条件配置发生的情况。  可以从以下选项中选择：
     - **阻止访问**：在此策略中指定的用户将在你指定的条件下被拒绝访问应用。
     - **授予访问权限**：在此策略中指定的用户将被授予访问权限，但你可以要求进一步执行任何以下操作：

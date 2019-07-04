@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046300"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528748"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
@@ -34,10 +34,10 @@ ms.locfileid: "67046300"
 
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
--   [为在 Microsoft Intune 中注册设备做好准备](setup-steps.md)
--   [设置 iOS 和 Mac 设备管理](ios-enroll.md)
--   [设置 Windows 设备管理](windows-enroll.md)
--   [设置 Android 设备管理](android-enroll.md) - 无需其他步骤
+- [为在 Microsoft Intune 中注册设备做好准备](setup-steps.md)
+- [设置 iOS 和 Mac 设备管理](ios-enroll.md)
+- [设置 Windows 设备管理](windows-enroll.md)
+- [设置 Android 设备管理](android-enroll.md) - 无需其他步骤
 
 还可以确保用户设备上的日期和时间设置正确无误：
 
@@ -236,15 +236,15 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 若要解决此问题，请按以下步骤将证书导入 AD FS 服务器或代理上的计算机个人证书：
 
-1.  在 ADFS 和代理服务器上，右键单击“开始” > “运行” > “certlm.msc”，启动本地计算机证书管理控制台    。
-2.  展开“个人”  ，再选择“证书”  。
-3.  查找用于 AD FS 服务通信的证书（公共签名证书），然后双击以查看其属性。
-4.  选择“证书路径”  选项卡，查看证书的父证书。
-5.  在每个父证书上，选择“查看证书”  。
-6.  选择“详细信息” > “复制到文件...”   。
-7.  按照向导提示操作，将父证书的公钥导出或保存到所选的文件位置。
-8.  右键单击“证书”   > “所有任务”   > “导入”  。
-9.  按照向导提示操作，将一个或多个父证书导入“Local Computer\Personal\Certificates”  。
+1. 在 ADFS 和代理服务器上，右键单击“开始” > “运行” > “certlm.msc”，启动本地计算机证书管理控制台    。
+2. 展开“个人”  ，再选择“证书”  。
+3. 查找用于 AD FS 服务通信的证书（公共签名证书），然后双击以查看其属性。
+4. 选择“证书路径”  选项卡，查看证书的父证书。
+5. 在每个父证书上，选择“查看证书”  。
+6. 选择“详细信息” > “复制到文件...”   。
+7. 按照向导提示操作，将父证书的公钥导出或保存到所选的文件位置。
+8. 右键单击“证书”   > “所有任务”   > “导入”  。
+9. 按照向导提示操作，将一个或多个父证书导入“Local Computer\Personal\Certificates”  。
 10. 重启 AD FS 服务器。
 11. 在所有 AD FS 和代理服务器上重复上述步骤。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4fa42a52e104ef1c9cf13c8490159f3dbb2efed
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045327"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530678"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
@@ -81,7 +81,7 @@ ms.locfileid: "67045327"
 3. 提供策略的名称。
 
 4. 在“分配”部分下，选择“用户和组”以应用新条件访问策略   。
-    
+
     ![Intune 和 Azure 门户之间的用户组用户界面比较图](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044158"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528243"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的基于角色的访问控制 (RBAC)
 
@@ -38,9 +38,9 @@ ms.locfileid: "67044158"
 可以使用内置和自定义角色。 内置角色涵盖一些常见的 Intune 方案。 可以使用所需的确切权限集[创建自己的自定义角色](create-custom-role.md)。 一些 Azure Active Directory 角色具有对 Intune 的权限。
 要查看角色，请选择“Intune” > “角色” > “所有角色”> 选择一个角色    。 你将看到以下页面：
 
--   **属性**：角色的名称、说明、类型、分配和作用域标记。 
--   **权限**：列出一组定义该角色具有哪些权限的开关。
--   **分配**：[角色分配]( assign-role.md)列表，用于定义有权访问哪些用户/设备的用户。 一个角色可以有多个分配，并且一个用户可以位于多个分配中。
+- **属性**：角色的名称、说明、类型、分配和作用域标记。 
+- **权限**：列出一组定义该角色具有哪些权限的开关。
+- **分配**：[角色分配]( assign-role.md)列表，用于定义有权访问哪些用户/设备的用户。 一个角色可以有多个分配，并且一个用户可以位于多个分配中。
 
 ### <a name="built-in-roles"></a>内置角色
 无需进一步配置，即可向组分配内置角色。 无法删除或编辑内置角色的名称、说明、类型或权限。 有关每个内置角色的完整权限列表，请参阅 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)。
@@ -84,10 +84,10 @@ ms.locfileid: "67044158"
 可以为用户分配自定义和内置角色。 用户必须有 Intune 许可证，才能分配有 Intune 角色。
 要查看角色分配，请选择“Intune” > “角色” > “所有角色”> 选择一个角色 > 选择分配    。 你将看到以下页面：
 
--   **属性**：分配的名称、说明、角色、成员、作用域和标记。
--   **成员**：列出的组中的所有用户都有权管理作用域（组）中列出的用户/设备。
--   **作用域(组)** ：这些组中的所有用户/设备都可以由成员中的用户管理。
--   **[作用域(标记)](scope-tags.md)** ：成员中的用户可以查看具有相同作用域标记的资源。
+- **属性**：分配的名称、说明、角色、成员、作用域和标记。
+- **成员**：列出的组中的所有用户都有权管理作用域（组）中列出的用户/设备。
+- **作用域(组)** ：这些组中的所有用户/设备都可以由成员中的用户管理。
+- **[作用域(标记)](scope-tags.md)** ：成员中的用户可以查看具有相同作用域标记的资源。
 
 ### <a name="multiple-role-assignments"></a>多个角色分配
 如果用户具有多个角色分配，则这些角色分配中的权限会扩展到不同的对象，如下所示：

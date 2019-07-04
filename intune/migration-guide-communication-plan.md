@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d207d1ac51da5b34f48aeffd83791bdbb40bf971
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044598"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494546"
 ---
 # <a name="plan-communications"></a>计划通信 
 通信计划是 Intune 迁移的关键要素。 已提供以下工具和模板来帮助你培训最终用户。 Intune Adoption Kit 包括电子邮件模板、Intune 注册指南和最终用户注册指导视频链接。  
 
-下载：[Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit)
+下载：[Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>电子邮件模板 
 建议遵循以下电子邮件通信计划。 我们为你的通信计划提供了一些适合的模板：

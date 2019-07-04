@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: c2e8c475cd52e199519db7a3d7ea83e6dbfef1a3
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045780"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530648"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>用于通过 Microsoft 企业移动性 + 安全性 (EMS) 启用 BYOD 的技术决策
 
@@ -56,7 +56,7 @@ ms.locfileid: "67045780"
 
 * 尝试访问的用户
 * 位置是否可信任
-*   登录风险级别
+* 登录风险级别
 * 设备平台
 
 尽管如此，许多组织通常有自身关注的特定风险。  下表列出了常见风险，以及 MDM 与 MAM 应对该风险的方法。

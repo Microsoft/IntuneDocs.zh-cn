@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046281"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528683"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教程：保护非托管设备上的 Exchange Online 电子邮件
 
@@ -74,7 +74,7 @@ ms.locfileid: "67046281"
 
     选择“确定”  ，返回到“设置”窗格。  
 
-7.  在“设置”窗格中，选择“确定”  ，然后在“创建策略”窗格中，选择“创建”  。
+7. 在“设置”窗格中，选择“确定”  ，然后在“创建策略”窗格中，选择“创建”  。
 
 将创建 Outlook 的应用保护策略。 接下来，设置条件访问，要求设备使用 Outlook 应用。
 
@@ -188,5 +188,5 @@ ms.locfileid: "67046281"
 4. 选择“条件访问”   > “策略”  。  
 5. 在“策略名称”  列表中，为每个测试策略选择上下文菜单 (...  )，然后选择“删除”  。 单击“是”  以确认。  
 
- ## <a name="next-steps"></a>后续步骤  
+## <a name="next-steps"></a>后续步骤  
 在本教程中，创建了应用保护策略来限制用户对 Outlook 应用的操作，还创建了需要 Outlook 应用并要求对新式身份验证客户端进行 MFA 的条件访问策略。 若要了解如何将 Intune 与条件访问结合使用来保护其他应用和服务，请参阅[设置条件访问](conditional-access.md)。
