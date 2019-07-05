@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 50574a2d3dc4ba5731b1a90f563ddd1a08e7f833
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044879"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529637"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
 
 结合使用 Intune 应用保护策略和 Microsoft Edge，可确保公司的网站始终在安全措施到位的情况下被访问。 提供了 Intune 策略启用的以下 Microsoft Edge 企业功能。 这些企业功能包括：
 
-1.  **双重标识** - 用户可以同时添加工作帐户以及个人帐户以进行浏览。 两个标识完全独立，这类似于 Office 365 和 Outlook 中的体系结构和体验。 Intune 管理员将能够为工作帐户中受保护的浏览体验设置所需的策略。
-2.  **Intune 应用保护策略集成** - 由于 Microsoft Edge 已与 Intune SDK 集成，因此可以应用保护策略为目标，确保实现数据丢失保护。 这些功能包括控制剪切、复制和粘贴，阻止屏幕捕获，以及确保用户选择的链接仅在其他托管应用中打开。
-3.  **Azure 应用程序代理集成** - 可控制对 SaaS 应用和 Web 应用的访问，帮助确保仅在安全的 Microsoft Edge 浏览器中运行基于浏览器的应用，不论最终用户是从公司网络连接还是从 Internet 连接。
-4.  **应用程序配置** - 可利用应用程序配置设置来加强组织的安全状况，并为最终用户配置易用功能。 例如，可定义书签、主页快捷方式、允许/阻止的站点、Azure 应用程序代理等。
+1. **双重标识** - 用户可以同时添加工作帐户以及个人帐户以进行浏览。 两个标识完全独立，这类似于 Office 365 和 Outlook 中的体系结构和体验。 Intune 管理员将能够为工作帐户中受保护的浏览体验设置所需的策略。
+2. **Intune 应用保护策略集成** - 由于 Microsoft Edge 已与 Intune SDK 集成，因此可以应用保护策略为目标，确保实现数据丢失保护。 这些功能包括控制剪切、复制和粘贴，阻止屏幕捕获，以及确保用户选择的链接仅在其他托管应用中打开。
+3. **Azure 应用程序代理集成** - 可控制对 SaaS 应用和 Web 应用的访问，帮助确保仅在安全的 Microsoft Edge 浏览器中运行基于浏览器的应用，不论最终用户是从公司网络连接还是从 Internet 连接。
+4. **应用程序配置** - 可利用应用程序配置设置来加强组织的安全状况，并为最终用户配置易用功能。 例如，可定义书签、主页快捷方式、允许/阻止的站点、Azure 应用程序代理等。
 Microsoft Edge 的 Microsoft Intune 保护策略有助于保护组织的数据和资源。 结合使用这些策略和 Microsoft Edge，可确保公司的资源不仅在本机安装的应用中受保护，而且还在通过 Web 浏览器访问时受保护。
 
 ## <a name="getting-started"></a>开始使用
@@ -115,8 +115,8 @@ SSO 要求设备通过 Microsoft Authenticator 应用（iOS 设备）或 Intune 
     > [!NOTE]
     > Microsoft Edge 使用与 Managed Browser 相同的键值对。 
 
-8.  完成后，请单击“确定”  。
-9.  在“添加配置策略”边栏选项卡上，选择“添加”   。<br>
+8. 完成后，请单击“确定”  。
+9. 在“添加配置策略”边栏选项卡上，选择“添加”   。<br>
     创建新配置后，其显示在“应用配置”  边栏选项卡上。
 
 ## <a name="assign-the-configuration-settings-you-created"></a>分配已创建的配置设置 
@@ -184,7 +184,7 @@ Outlook 必须配置有应用保护策略，该策略启用“使用策略托管
 
 |    Key    |    值    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 `|` 分隔标题和 URL。      **示例：**<br>`Microsoft Bing|https://www.bing.com`<p>若要配置多个书签，可使用双字符 `||` 分隔每对书签。<p>**示例：**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    此配置的值是一个书签列表。 每个书签都由书签标题和书签 URL 组成。 用字符 `|` 分隔标题和 URL。      **示例：**<br>`Microsoft Bing|https://www.bing.com`<br>若要配置多个书签，可使用双字符 `||` 分隔每对书签。<p>**示例：**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="how-to-display-myapps-within-microsoft-edge-bookmarks"></a>如何在 Microsoft Edge 书签内显示 MyApps
 
@@ -201,16 +201,17 @@ Outlook 必须配置有应用保护策略，该策略启用“使用策略托管
 
 |    Key    |    值    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    选择：<p>1.指定允许的 URL（仅允许这些 URL；无法访问其他站点）：<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2.指定阻止的 URL（可访问其他所有站点）：<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    键的对应值是 URL 列表。 将要允许或阻止的所有 URL 作为单个值输入，并用竖线 `|` 字符分隔。<p>**示例：**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    选择：<p>1.指定允许的 URL（仅允许这些 URL；无法访问其他站点）：<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2.指定阻止的 URL（可访问其他所有站点）：<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    键的对应值是 URL 列表。 将要允许或阻止的所有 URL 作为单个值输入，并用竖线 `|` 字符分隔。<br>**示例：**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>允许的和阻止的站点列表的 URL 格式 
 可使用多种 URL 格式来构建允许/阻止的站点列表。 下表详细介绍了这些允许的模式。 开始之前，请注意以下几点： 
 - 在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
-- 可以根据以下允许模式列表中的规则使用通配符 (*)。
+- 可以根据以下允许模式列表中的规则使用通配符 (\*)。
+- 通配符只能匹配主机名中的整体部分（由句点分隔）或路径的整体部分（由正斜杠分隔）。 例如，不支持 `http://*contoso.com`  。
 - 可以在地址中指定端口号。 如果未指定端口号，则使用以下值：
     - 对于 http，使用端口 80
     - 对于 https，使用端口 443
-- 不支持对端口号使用通配符  。 例如，不支持 `http://www.contoso.com:*` 和 `http://www.contoso.com:*/`。
+- 不支持对端口号使用通配符  。 例如，不支持 `http://www.contoso.com:*` 和 `http://www.contoso.com:*/`。 
 
     |    URL    |    详细信息    |    匹配    |    不匹配    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -232,6 +233,7 @@ Outlook 必须配置有应用保护策略，该策略启用“使用策略托管
     - IP 地址
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
@@ -247,13 +249,13 @@ Outlook 必须配置有应用保护策略，该策略启用“使用策略托管
 
 ## <a name="directing-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>将用户定向到 Microsoft Edge，而不是 Intune Managed Browser 
 
-现在，Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览器。 若要确保将用户定向为使用正确的浏览器应用，请使用以下配置设置将所有 Intune 托管应用（例如，Outlook 和 OneDrive）设为目标：
+现在，Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览器。 为引导用户使用正确的浏览器应用，请使用以下配置设置将所有 Intune 托管应用（例如 Outlook、OneDrive 和 SharePoint）设为目标：
 
 |    Key    |    值    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    若值为 `true`，则将用户定向为使用 Microsoft Edge。<p>若值为 `false`，则将用户定向为使用 Intune Managed Browser。    |
+|    `com.microsoft.intune.useEdge`    |    值 `true` 将引导用户下载和使用 Microsoft Edge。<br>值 `false` 将引导用户使用 Intune Managed Browser。    |
 
-如果未设置此应用配置值，以下逻辑将定义打开企业链接所使用的浏览器。
+如果未设置此应用配置值，以下逻辑将定义打开企业链接所使用的浏览器。 
 
 在 Android 上：
 - 如果用户已在设备上同时下载 Intune Managed Browser 和 Microsoft Edge，则会启动 Intune Managed Browser。 

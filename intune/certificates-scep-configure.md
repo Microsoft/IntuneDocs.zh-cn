@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344094"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494289"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -30,10 +30,10 @@ ms.locfileid: "67344094"
 
 - **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
 
-- **证书颁发机构** (CA)：必须是在 Windows Server 2008 R2 企业版或更高版本上运行的 Microsoft 企业证书颁发机构 (CA)。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。
+- **证书颁发机构** (CA)：必须是在 Windows Server 2008 R2 企业版或更高版本上运行的 Microsoft 企业证书颁发机构 (CA)。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](https://technet.microsoft.com/library/jj125375.aspx)。
     如 CA 运行的是 Windows Server 2008 R2，则必须[安装修补程序 KB2483564](http://support.microsoft.com/kb/2483564/)。
 
-- **NDES 服务器**：在 Windows Server 2012 R2 或更高版本上，设置网络设备注册服务 (NDES) 服务器角色。 Intune 不支持在同时运行企业 CA 的服务器上使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管 NDES 的说明，请参阅[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)。
+- **NDES 服务器**：在 Windows Server 2012 R2 或更高版本上，设置网络设备注册服务 (NDES) 服务器角色。 Intune 不支持在同时运行企业 CA 的服务器上使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管 NDES 的说明，请参阅[网络设备注册服务指南](https://technet.microsoft.com/library/hh831498.aspx)。
 必须将 NDES 服务器加入与企业 CA 相同的林中的域。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅[结合使用策略模块和网络设备注册服务](https://technet.microsoft.com/library/dn473016.aspx)。 无法使用已与其他 MDM 一起使用的 NDES 服务器。
 
 - **Microsoft Intune 证书连接器**：在 Intune 门户中，转到“设备配置” > “证书连接器” > “添加”，然后按照“为 SCEP 安装连接器的步骤”操作     。 使用门户中的下载链接开始下载证书连接器安装程序 NDESConnectorSetup.exe  。  将在具有 NDES 角色的服务器上运行此安装程序。  
@@ -507,7 +507,8 @@ ms.locfileid: "67344094"
 - 尽管单独分配每个配置文件，但仍需分配受信任的根 CA 和 SCEP 或 PKCS 配置文件。 否则，SCEP 或 PKCS 证书策略将失败。
 
     > [!NOTE]
-    > 对于 iOS，如果部署了使用相同证书配置文件的多个资源配置文件，则管理配置文件中应会显示该证书的多个副本。
+    > 在 iOS 设备上，当 SCEP 证书配置文件与其他配置文件（如 Wi-Fi 或 VPN 配置文件）相关联，设备将收到其他每个配置文件的证书。 这会使 iOS 设备拥有 SCEP 证书请求提供的多个证书。  
+
 - 如果使用 Intune 和 Configuration Manager 的共同管理，则在 Configuration Manager 中将资源访问策略  的[工作负载滑块](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)设置为“Intune”  或“试点 Intune”  。 此设置允许 Windows 10 客户端启动请求证书的过程。  
 
 有关如何分配配置文件的信息，请参阅[分配设备配置文件](device-profile-assign.md)。

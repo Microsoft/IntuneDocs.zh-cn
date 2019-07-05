@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325547"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500653"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>查找 Intune 设备的主要用户
 
@@ -60,8 +60,8 @@ Intune 会在注册过程中或不久后自动将主要用户添加到设备。 
 | Windows | Azure AD 联接（全新安装体验） | 注册用户 | 在注册过程中 | 
 | Windows | Azure AD 联接（Autopilot 全新安装体验） | 注册用户 | 在注册过程中 | 
 | Windows | 仅注册 MDM | 注册用户 | 在注册过程中 | 
-| Windows | 混合 AADJ + 自动注册 GPO | 要登录的第一个用户 | 当第一个用户登录时 | 
-| Windows | 共同管理 | 要登录的第一个用户 | 当第一个用户登录时 | 
+| Windows | 混合 AADJ + 自动注册 GPO | 登录到 Windows 的第一个用户 | 当第一个用户登录到 Windows 时| 
+| Windows | 共同管理 | 登录到 Windows 的第一个用户 | 当第一个用户登录到 Windows 时 | 
 | Windows | Azure AD 联接（批量注册令牌） | 无 | “不适用” | 
 | Windows | Azure AD 联接（Autopilot 自部署模式） | 无 | “不适用” | 
 | 跨平台 | 使用公司门户应用进行用户驱动的注册 | 注册用户 | 在注册过程中 |
