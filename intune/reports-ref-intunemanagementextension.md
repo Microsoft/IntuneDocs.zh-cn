@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebece46bac8ebee5cb3c6a573f0b09c4b308abe3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 571080f3d25753fdc423c45100b06377ecd426b5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040987"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549196"
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune 管理扩展参考
 
-IntuneManagementExtension 类别包含移动设备的实体，可用于跟踪如下信息：
+IntuneManagementExtension 类别包含移动设备的实体，可用于跟踪如下信息： 
 
-  -  IntuneManagementExtension 的版本
-  -  IntuneManagementExtension 的安装状态
+  - IntuneManagementExtension 的版本
+  - IntuneManagementExtension 的安装状态
 
 ## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
 
-IntuneManagementExtensionVersion 实体列出 IntuneManagementExtension 使用的所有版本。
+IntuneManagementExtensionVersion 实体列出 IntuneManagementExtension 使用的所有版本  。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -42,7 +42,7 @@ IntuneManagementExtensionVersion 实体列出 IntuneManagementExtension 使用�
 
 ## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
 
-IntuneManagementExtensionHealthState 列出 IntuneManagementExtension 的所有可能运行状况状态。
+IntuneManagementExtensionHealthState 列出 IntuneManagementExtension 的所有可能运行状况状态  。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -51,7 +51,7 @@ IntuneManagementExtensionHealthState 列出 IntuneManagementExtension 的所有�
 
 ## <a name="intunemanagementextension"></a>IntuneManagementExtension
 
-IntuneManagementExtension 列出每日在每台 Windows 10 设备上的 IntuneManagementExtension 运行状况。
+IntuneManagementExtension 列出每日在每台 Windows 10 设备上的 IntuneManagementExtension 运行状况  。
 将保留过去 60 天内的数据。 
 
 

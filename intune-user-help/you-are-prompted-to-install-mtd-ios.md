@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846241"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527632"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>在 iOS 设备上安装移动威胁防御应用
 
@@ -38,12 +38,12 @@ ms.locfileid: "55846241"
 
 移动威胁防御帮助公司保证设备安全，避免有可能尝试窃取公司信息的应用。 要添加此保护，需要向公司使用的移动威胁防御报告设备中应用的额外信息。 公司无法查看个人应用中的数据。 在使用移动威胁防御服务时，设备中的所有应用都将被添加至[公司可以查看的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。 公司可以查看的部分应用内容如下所示：
 
-*   应用程序名称
+* 应用程序名称
 * 应用 ID：在应用商店中标识应用的唯一名称
-*   应用版本和短版本号：应用的特定版本号
+* 应用版本和短版本号：应用的特定版本号
 * 应用程序包和动态大小：应用在设备中使用的空间大小
 * 应用有效性：应用是否被批准使用
-*   应用管理状态：该应用由公司托管，还是属于个人应用
+* 应用管理状态：该应用由公司托管，还是属于个人应用
 
 ## <a name="if-the-installation-doesnt-work"></a>安装不成功
 

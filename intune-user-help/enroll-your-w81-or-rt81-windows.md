@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ecc93ae788179991fd27545405d8d7319f74481
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 45937f54926178615cf9d84230feb63d1ef242b5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61495190"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545555"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>如何在 Intune 中注册 Windows 8.1 或 Windows RT 8.1 设备  
 
@@ -32,23 +32,23 @@ ms.locfileid: "61495190"
 
 注册 Windows 8.1 或 Windows RT 8.1 设备：  
 
-1.  在设备上，点击**设置** &gt; **电脑设置** &gt; **网络** &gt; **工作区**。  
+1. 在设备上，点击**设置** &gt; **电脑设置** &gt; **网络** &gt; **工作区**。  
 
     ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
-2.  如有必要，在“用户 ID”中输入工作单位或学校电子邮件，然后点击“加入”。 如果不需要用户 ID，则使用登录到此设备时输入的电子邮件地址。  
+2. 如有必要，在“用户 ID”中输入工作单位或学校电子邮件，然后点击“加入”  。 如果不需要用户 ID，则使用登录到此设备时输入的电子邮件地址。  
 
-3.  输入你的工作或学校电子邮件的密码。  
+3. 输入你的工作或学校电子邮件的密码。  
 
 
     ![type-password](./media/W81-2-workplacesettings_signin.png)  
 
-4.  在“打开设备管理”下，单击“打开”。  
+4. 在“打开设备管理”  下，单击“打开”  。  
 
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)  
 
-5.  在“允许公司支持人员提供的应用和服务”对话框中，选中“我同意”复选框，然后点击“打开”。  
+5. 在“允许公司支持人员提供的应用和服务”对话框中，选中“我同意”复选框，然后点击“打开”    。  
 
 
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)  
@@ -58,14 +58,14 @@ ms.locfileid: "61495190"
 
     ![enrollment-complete](./media/W81-5-enrolled-done.png)
 
-我们还建议你安装公司门户应用，通过该应用，你可以轻松地识别和获取与你和你的角色相关的公司应用。 根据公司设置 Intune 的方式，公司门户应用可能已在注册过程中安装。 若要检查你是否具有该应用，请在应用列表中查找“公司门户”。 如果未在应用列表中看到“公司门户”，请按照这些步骤安装它。
+我们还建议你安装公司门户应用，通过该应用，你可以轻松地识别和获取与你和你的角色相关的公司应用。 根据公司设置 Intune 的方式，公司门户应用可能已在注册过程中安装。 若要检查你是否具有该应用，请在应用列表中查找“公司门户”  。 如果未在应用列表中看到“公司门户”，请按照这些步骤安装它。
 
-1.  点击**开始** &gt; **应用商店**。  
+1. 点击**开始** &gt; **应用商店**。  
 
-2.  点击“**搜索**”，然后键入“**公司门户**”。  
+2. 点击“**搜索**”，然后键入“**公司门户**”。  
 
-3.  在结果列表中，点击“公司门户”。  
+3. 在结果列表中，点击“公司门户”  。  
 
-4.  点击“安装”或“释放”。 显示的选项取决于公司设置该应用的方式。  
+4. 点击“安装”  或“释放”  。 显示的选项取决于公司设置该应用的方式。  
 
 仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

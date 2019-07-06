@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045531"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558421"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -111,10 +111,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 默认情况下，此插件将仅在 `project` 依赖项上执行操作  。
 测试编译不会受到影响。 可以提供配置以列出
-*  要排除的项目
-*  [要包括的外部依赖项](#usage-of-includeexternallibraries) 
-*  要从处理中排除的特定类
-*  要从处理中排除的变体。 这些可能是指一个完整的变体名称或一种口味。 例如
+* 要排除的项目
+* [要包括的外部依赖项](#usage-of-includeexternallibraries) 
+* 要从处理中排除的特定类
+* 要从处理中排除的变体。 这些可能是指一个完整的变体名称或一种口味。 例如
      * 如果应用具有 {`savory`, `sweet`} 和 {`vanilla`, `chocolate`} 口味的生成类型 `debug` 和 `release`，则可以指定
      * `savory` 以排除具有咸辣口味的所有变体，或指定 `savoryVanillaRelease` 以仅排除此变体。
 
@@ -834,7 +834,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
-        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+            return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
         }
     }
     ```
@@ -1187,7 +1187,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 默认情况下，Intune App SDK 会将策略作为一个整体应用到该应用。 多标识是一种可选的 Intune 应用保护功能，可以启用该功能以允许策略应用到单标识级别。 这需要比其他应用保护功能还要多得多的应用参与。
 
 > [!NOTE]
->  缺少正确的应用参与可能会导致数据泄漏和其他安全问题。
+> 缺少正确的应用参与可能会导致数据泄漏和其他安全问题。
 
 用户注册设备或应用后，SDK 会注册此标识并将其作为主要 Intune 托管标识。 应用中的其他用户会被视为具有不受限策略设置的非托管标识。
 
@@ -1317,7 +1317,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
   1. 如果活动从由另一 MAM 应用发送的 `Intent` 启动，则活动的标识将在发送 `Intent` 时基于另一应用的有效标识进行设置。
 
-  2.  使用服务，将设置线程的标识，方法与 `onStart` 或 `onBind` 调用期间进行的操作类似。 在从 `onBind` 返回的 `Binder` 中进行调用也将暂时设置线程标识。
+  2. 使用服务，将设置线程的标识，方法与 `onStart` 或 `onBind` 调用期间进行的操作类似。 在从 `onBind` 返回的 `Binder` 中进行调用也将暂时设置线程标识。
 
   3. 在 `ContentProvider` 中进行调用同样会对其持续时间设置线程标识。
 
@@ -1429,12 +1429,12 @@ public final class MAMFileProtectionManager {
     * this method will silently do nothing.
     *
     * @param identity
-    *       Identity to set.
+    *        Identity to set.
     * @param file
-    *       File to protect.
+    *        File to protect.
     *
     * @throws IOException
-    *       If the file cannot be protected.
+    *         If the file cannot be protected.
     */
    public static void protect(final File file, final String identity) throws IOException;
 
@@ -1742,8 +1742,8 @@ LOGGER.info("Found value " + valueToUse);
 
 对于在无 [ProGuard](http://proguard.sourceforge.net/) 的情况下运行的大型代码库，Dalvik 可执行文件格式的限制会成为问题。 具体而言，可能会出现以下限制：
 
-1.  对字段的 65 K 限制。
-2.  对方法的 65 K 限制。
+1. 对字段的 65 K 限制。
+2. 对方法的 65 K 限制。
 
 ### <a name="policy-enforcement-limitations"></a>策略强制实施限制
 

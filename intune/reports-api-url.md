@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122a7eef56f2850fced164a37b518f650ed2ecdf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 38e24bff110cea7d7a565ca00fc0e3e13e37744f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045862"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530760"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 
@@ -69,8 +69,8 @@ Intune 的 URL 使用以下格式：
 
 `DateKey` 范围筛选器可用于限制键属性为 `dateKey` 的某些集合可下载的数据量。 通过提供以下 `$filter` 查询参数，`DateKey` 筛选器可用于优化服务性能：
 
-1.  `$filter` 中的 `DateKey` 可单独支持 `lt/le/eq/ge/gt` 运算符并可与逻辑运算符 `and` 结合使用，将它们映射到开始日期和/或结束日期。
-2.  `maxhistorydays` 作为自定义查询选项提供。<br>
+1. `$filter` 中的 `DateKey` 可单独支持 `lt/le/eq/ge/gt` 运算符并可与逻辑运算符 `and` 结合使用，将它们映射到开始日期和/或结束日期。
+2. `maxhistorydays` 作为自定义查询选项提供。<br>
 
 ## <a name="filter-examples"></a>筛选器示例
 

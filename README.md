@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804424"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545234"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开放源代码行为准则
 
@@ -30,7 +30,7 @@ ms.locfileid: "66804424"
     5. 创建拉取请求。
     
     **选项 2：在此存储库中找到相应的文章并更新**  
-    1.  大多数主题位于 `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`。 在此文件夹中，搜索主题名称，如 `troubleshoot-policies-in-microsoft-intune`。 
+    1. 大多数主题位于 `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`。 在此文件夹中，搜索主题名称，如 `troubleshoot-policies-in-microsoft-intune`。 
     2. 选择该链接，然后单击铅笔图标。 将鼠标悬停在铅笔图标上方时，将看到“编辑此文件”工具提示  。 
     3. 进行更改，然后“提交”所做的更改  。 
     4. 创建拉取请求。 

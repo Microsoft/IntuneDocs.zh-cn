@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836466"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528766"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>通过适用于 Windows 的公司门户使用电子邮件将有关问题发送给公司支持人员
 
@@ -32,24 +32,24 @@ ms.locfileid: "55836466"
 请求帮助时，将打开预填充的电子邮件，可在其中详细说明问题。 它还包括一个诊断日志 ID。 如果你的支持团队不能根据说明解决问题，那么他们会联系 Microsoft 寻求帮助。 Microsoft 将需要诊断 ID 来引用应用日志。   
 
 
-> [!Note]       
-> 单击“获取帮助”后，公司门户会自动将日志发送到 Microsoft 的支持团队。 此步骤是一个主动步骤，可以更轻松地进行故障排除和解决升级到需要 Microsoft 支持人员帮助的问题。 如上所述，Microsoft 的支持团队可以使用电子邮件中的诊断 ID 来提取日志。  
+> [!Note]
+> 单击“获取帮助”  后，公司门户会自动将日志发送到 Microsoft 的支持团队。 此步骤是一个主动步骤，可以更轻松地进行故障排除和解决升级到需要 Microsoft 支持人员帮助的问题。 如上所述，Microsoft 的支持团队可以使用电子邮件中的诊断 ID 来提取日志。  
 
 ## <a name="what-is-a-diagnostic-log"></a>什么是诊断日志？
 
-公司门户应用中发生的事件和错误将保存在设备上一个名为“诊断日志”的特殊文档中。 日志可能会显示：  
+公司门户应用中发生的事件和错误将保存在设备上一个名为“诊断日志”  的特殊文档中。 日志可能会显示：  
 * 出现问题的时间。  
 * 导致问题的步骤。  
 * 问题出现时的应用状态。   
 
 ## <a name="steps-to-get-help"></a>获取帮助的步骤  
 
-1. 打开“公司门户”应用。
-2. 依次选择“帮助和支持” > “获取帮助”。  
+1. 打开“公司门户”  应用。
+2. 依次选择“帮助和支持” > “获取帮助”   。  
 
    ![“帮助和支持”页的屏幕截图，突出显示左侧导航栏和“获取帮助”部分。](./media/1812_UCP_Help_Support_Get_Help_Logs.png)    
 
-3. 显示“共享”屏幕时，选择“邮件”。 “邮件”应用将创建一封电子邮件。 键入所遇到问题的说明，以便支持团队了解要查找的内容。  
+3. 显示“共享”  屏幕时，选择“邮件”  。 “邮件”  应用将创建一封电子邮件。 键入所遇到问题的说明，以便支持团队了解要查找的内容。  
 
    ![“共享”屏幕的屏幕截图，突出显示邮件应用图标。](./media/1811_Mail_Logs_Windows_CPapp.png)  
 

@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f328577ba2da97595c116efc51626176a14931a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1ad21f9197f32f8ff06cc0537719261f3daec7cb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840750"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545747"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>使用公司门户重置你的 iOS 设备会发生什么情况？
 
@@ -31,14 +31,14 @@ ms.locfileid: "55840750"
 
 **公司支持人员管理你的移动设备**
 
--   设备将不再出现在公司门户中。
+- 设备将不再出现在公司门户中。
 
--   你的设备将被重置为出厂默认设置，并删除你的个人数据、应用和设置。
+- 你的设备将被重置为出厂默认设置，并删除你的个人数据、应用和设置。
 
 **设备只可以访问公司电子邮件**
 
--   设备将不再出现在公司门户中。
+- 设备将不再出现在公司门户中。
 
--   将删除你的公司电子邮件帐户和未保存的电子邮件。
+- 将删除你的公司电子邮件帐户和未保存的电子邮件。
 
 如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

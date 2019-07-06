@@ -17,31 +17,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040209"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548819"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>使用策略简化 Windows 电脑管理
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-若要通过在 Windows 桌面上运行 Intune 软件客户端将桌面作为电脑管理，可只在 Intune 管理控制台中使用“计算机管理”下的策略。 管理控制台中列出所有其他策略都仅适用于移动设备。 使用**计算机管理**策略，可在 Microsoft Intune Center 中配置设置、控制对电脑的更新，以及为电脑配置 Windows 防火墙。
+若要通过在 Windows 桌面上运行 Intune 软件客户端将桌面作为电脑管理，可只在 Intune 管理控制台中使用“计算机管理”  下的策略。 管理控制台中列出所有其他策略都仅适用于移动设备。 使用**计算机管理**策略，可在 Microsoft Intune Center 中配置设置、控制对电脑的更新，以及为电脑配置 Windows 防火墙。
 
 ![用于 Windows 电脑的策略模板](media/pc_policy_template.png)
 
 ### <a name="manage-the-microsoft-intune-center"></a>管理 Microsoft Intune Center
 用户可以看到 Intune 软件客户端作为 **Microsoft Intune 中心**。 Microsoft Intune Center 使用户能够：
 
--   从公司门户中获取应用程序。
+- 从公司门户中获取应用程序。
 
--   检查更新。
+- 检查更新。
 
--   管理 Microsoft Intune Endpoint Protection。
+- 管理 Microsoft Intune Endpoint Protection。
 
--  请求远程协助。
+- 请求远程协助。
 
 Microsoft Intune Center 安装在所有被管理的计算机上。 可以在 Intune 策略中配置下列设置，并且这些设置将在 Microsoft Intune Center 中向用户显示：
 

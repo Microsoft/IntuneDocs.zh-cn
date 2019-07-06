@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045822"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529177"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -33,7 +33,7 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>如果应用位于组织内部且非公用：
 
-则无需注册应用 _ _。 对于由公司编写或为公司编写的内部[业务线 (LOB) 应用](apps-add.md#app-types-in-microsoft-intune)，IT 管理员将在内部部署该应用。 Intune 将检测已使用 SDK 构建的应用，并允许 IT 管理员对其应用保护策略。 可跳到[启用 iOS 或 Android 应用的应用保护策略](#enable-your-ios-or-android-app-for-app-protection-policy)部分。
+则无需注册应用 __ 。 对于由公司编写或为公司编写的内部[业务线 (LOB) 应用](apps-add.md#app-types-in-microsoft-intune)，IT 管理员将在内部部署该应用。 Intune 将检测已使用 SDK 构建的应用，并允许 IT 管理员对其应用保护策略。 可跳到[启用 iOS 或 Android 应用的应用保护策略](#enable-your-ios-or-android-app-for-app-protection-policy)部分。
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>如果应用将被发布到公共应用商店（例如Apple App Store 或 Google Play）：
 
@@ -160,8 +160,8 @@ Intune|iOS|Android|描述|
     * 如果启用 Intune 应用保护策略 iOS 或 Android 应用商店应用的 ISV，则在使用 Microsoft Intune 完成注册（如注册步骤中所述）后，会收到促销代码。 促销代码允许你注册具有 1 年延期使用的 Microsoft Intune 试用。
 
     * 如果你正在开发一套不会发送到应用商店的业务应用，则你应能够通过你的组织访问 Microsoft Intune。 你还可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中注册为期 1 个月的免费试用。
-    
-    * 如果使用最终用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Microsoft 365 管理中心网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](https://docs.microsoft.com/en-ca/intune/licenses-assign)。
+
+    * 如果使用最终用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Microsoft 365 管理中心网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](https://docs.microsoft.com/intune/licenses-assign)。
 
 * **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。 如果应用已集成 Intune SDK，但尚未在 Azure 门户中作为目标应用列出，则可以使用策略将其设置为目标，方法是选择“+ 更多应用”选项并在文本框中提供捆绑包 ID (iOS) 或包名称 (Android)。
 
@@ -173,12 +173,12 @@ Intune|iOS|Android|描述|
 
 一旦在 Azure 租户内注册应用并在“所有应用程序”下显示该应用  ，就必须向 Intune 应用保护服务（以前称为 MAM 服务）提供应用访问权限。 在 Azure 门户中：
 
-1.  转到“Azure Active Directory”边栏选项卡  。
-2.  在“应用注册”下，转到为应用程序设置的列表  。
-3.  单击“+ 添加权限”  。
-4.  单击“我的组织使用的 API”  。 
-5.  在搜索框中，输入“Microsoft 移动应用程序管理”  。
-6.  在“委托的权限”下，选择“DeviceManagementManagedApps.ReadWrite: 读取和写入用户的应用管理数据”*复选框   。
+1. 转到“Azure Active Directory”边栏选项卡  。
+2. 在“应用注册”下，转到为应用程序设置的列表  。
+3. 单击“+ 添加权限”  。
+4. 单击“我的组织使用的 API”  。 
+5. 在搜索框中，输入“Microsoft 移动应用程序管理”  。
+6. 在“委托的权限”下，选择“DeviceManagementManagedApps.ReadWrite: 读取和写入用户的应用管理数据”*复选框   。
 7. 单击“添加权限”  。
 
 ### <a name="badge-your-app-optional"></a>标记应用（可选）

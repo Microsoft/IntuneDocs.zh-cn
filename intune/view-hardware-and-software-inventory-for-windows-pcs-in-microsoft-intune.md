@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403553"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547972"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>查看 Windows 电脑的硬件和软件清单
 
@@ -33,41 +33,41 @@ ms.locfileid: "67403553"
 
 Intune 收集使用 Intune 软件客户端作为电脑管理的桌面硬件和软件相关详细信息。 使用下列过程中的信息来了解如何创建：
 
--   列出所管理电脑的硬件功能信息的报表。
+- 列出所管理电脑的硬件功能信息的报表。
 
--   列出每台电脑上所安装的软件的报表。
+- 列出每台电脑上所安装的软件的报表。
 
--   如何刷新电脑清单，确保报表中的数据为最新。
+- 如何刷新电脑清单，确保报表中的数据为最新。
 
 ## <a name="to-display-information-about-pcs-you-manage"></a>显示所管理的电脑的信息
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**报表**&gt;**计算机清单报表**。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**报表**&gt;**计算机清单报表**。
 
-2.  在“创建新报表”  页上，接受默认值或对其进行自定义以筛选报表将返回的结果。 例如，可选择只在报表中显示运行 Windows 8.1 的电脑。
+2. 在“创建新报表”  页上，接受默认值或对其进行自定义以筛选报表将返回的结果。 例如，可选择只在报表中显示运行 Windows 8.1 的电脑。
 
-3.  选择“查看报表”，在新窗口中打开“计算机清单报表”。
+3. 选择“查看报表”  ，在新窗口中打开“计算机清单报表”  。
 
-    你可以选择各个列标题，按任何列（如“名称”、“底盘类型”或“制造商”）对报表进行排序。
+    你可以选择各个列标题，按任何列（如“名称”  、“底盘类型”  或“制造商”  ）对报表进行排序。
 
 ## <a name="to-display-software-installed-on-pcs-you-manage"></a>显示所管理的电脑上安装的软件
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**报表**&gt;**检测到的软件报表**。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择**报表**&gt;**检测到的软件报表**。
 
-2.  在“创建新报表”  页上，接受默认值或对其进行自定义以筛选报表将返回的结果。 例如，你可以选择只在报表中显示 Microsoft 发布的软件。
+2. 在“创建新报表”  页上，接受默认值或对其进行自定义以筛选报表将返回的结果。 例如，你可以选择只在报表中显示 Microsoft 发布的软件。
 
-3.  选择“查看报表”，在新窗口中打开“检测到的软件报表”。
+3. 选择“查看报表”  ，在新窗口中打开“检测到的软件报表”  。
 
-    你可以选择各个列标题，按任何列（如“名称”、“发布者”或“类别”）对报表进行排序。 通过选择列表项旁边的方向箭头，可以展开列表中的更新以显示更多详细信息（例如安装了更新的电脑）。
+    你可以选择各个列标题，按任何列（如“名称”  、“发布者”  或“类别”  ）对报表进行排序。 通过选择列表项旁边的方向箭头，可以展开列表中的更新以显示更多详细信息（例如安装了更新的电脑）。
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>刷新计算机清单以确保其为最新
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含需刷新清单的电脑的另一个组）。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”  &gt;“所有设备”  （或包含需刷新清单的电脑的另一个组）。
 
-2.  选择一台电脑，或按住 **Ctrl** 选择多台电脑。
+2. 选择一台电脑，或按住 **Ctrl** 选择多台电脑。
 
-3.  在任务栏上，选择**远程任务**&gt;**刷新清单**。
+3. 在任务栏上，选择**远程任务**&gt;**刷新清单**。
 
-4.  若要查看任务状态，请选择页面右下角的“远程任务”。
+4. 若要查看任务状态，请选择页面右下角的“远程任务”  。
 
     “任务状态”  对话框显示当前远程任务、任务状态、设备名称和任何报告的错误，并提供指向疑难解答信息的链接。
 

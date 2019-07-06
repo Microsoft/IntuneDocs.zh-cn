@@ -18,32 +18,32 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ebf8d43bd18629d38be24929b3df5c12a7e244b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837367"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546526"
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司门户网站
 使用[公司门户网站](https://portal.manage.microsoft.com)查看、编辑、添加和删除托管设备。
 
 可以从公司门户网站进行以下任何操作：
 
--   [重命名设备](rename-your-device-cpwebsite.md)
+- [重命名设备](rename-your-device-cpwebsite.md)
 
--   [移除设备](remove-your-device-cpwebsite.md)
+- [移除设备](remove-your-device-cpwebsite.md)
 
--   [重置设备](reset-erase-your-device-cpwebsite.md)
+- [重置设备](reset-erase-your-device-cpwebsite.md)
 
--   [重置设备密码](reset-your-passcode-cpwebsite.md)
+- [重置设备密码](reset-your-passcode-cpwebsite.md)
 
--   [远程锁定设备](remote-lock-your-device-cpwebsite.md)
+- [远程锁定设备](remote-lock-your-device-cpwebsite.md)
 
--   找到公司支持人员的联系信息（如果已配置）
+- 找到公司支持人员的联系信息（如果已配置）
 
--   检查符合性状态
+- 检查符合性状态
 
--   远程管理 PC
+- 远程管理 PC
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

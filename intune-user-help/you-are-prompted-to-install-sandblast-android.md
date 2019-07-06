@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a012cb7fe25b70ee260f2b3a2d49a47c3bae06a3
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843759"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558457"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>需要在 Android 设备上安装 SandBlast Mobile Protect
 
@@ -31,27 +31,27 @@ ms.locfileid: "55843759"
 
 **需要执行的操作：**
 
-1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 – 从 Play Store 安装 SandBlast 移动保护”。 此外，还可以在__符合性详细信息__下的公司门户应用内找到此项。
+1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 – 从 Play Store 安装 SandBlast 移动保护”  。 此外，还可以在__符合性详细信息__下的公司门户应用内找到此项。
 
-2. 将转到 Play Store 中的 SandBlast Mobile Protect 安装页。 安装 SandBlast Mobile Protect，然后点击“接受”以允许 SandBlast Mobile Protect 访问你的设备。
+2. 将转到 Play Store 中的 SandBlast Mobile Protect 安装页。 安装 SandBlast Mobile Protect，然后点击“接受”以允许 SandBlast Mobile Protect 访问你的设备  。
 
-3. 打开 SandBlast Mobile Protect，然后点击“验证”。
+3. 打开 SandBlast Mobile Protect，然后点击“验证”  。
 
-4. 点击“使用 Azure Active Directory 登录”，然后输入用于访问工作/学校电子邮件和文件的帐户。
+4. 点击“使用 Azure Active Directory 登录”  ，然后输入用于访问工作/学校电子邮件和文件的帐户。
 
-5. 选择用于访问工作或学校电子邮件和文件的帐户，然后点击“添加帐户”。
+5. 选择用于访问工作或学校电子邮件和文件的帐户，然后点击“添加帐户”  。
 
-6. 点击“接受”，授予 SandBlast Mobile Protect 让你登录并读取个人资料的权限。
+6. 点击“接受”，授予 SandBlast Mobile Protect 让你登录并读取个人资料的权限  。
 
-7. 查看有关 SandBlast Mobile Protect 如何保护设备的项，然后点击“确定”。 SandBlast Mobile Protect 将花一些时间进行设置，然后开始检查设备上的安全威胁。
+7. 查看有关 SandBlast Mobile Protect 如何保护设备的项，然后点击“确定”  。 SandBlast Mobile Protect 将花一些时间进行设置，然后开始检查设备上的安全威胁。
 
 8. SandBlast Mobile Protect 立即开始检查设备上的安全威胁。
 
-9.  如果 SandBlast Mobile Protect 在设备上找到安全威胁，你将看到有关如何解决该问题的说明。
+9. 如果 SandBlast Mobile Protect 在设备上找到安全威胁，你将看到有关如何解决该问题的说明。
 
-10.  如果未找到任何威胁，则所有三个威胁类型将显示为绿色。
+10. 如果未找到任何威胁，则所有三个威胁类型将显示为绿色。
 
-11. 公司门户中的“设备详细信息”屏幕将显示你当前符合你公司的安全要求。
+11. 公司门户中的“设备详细信息”  屏幕将显示你当前符合你公司的安全要求。
 
     ![你的设备当前符合策略](./media/mtd-device-now-compliant-android.png)
 

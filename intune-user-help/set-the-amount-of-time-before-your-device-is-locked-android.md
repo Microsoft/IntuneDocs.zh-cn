@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a91de6b4f86500afa043d0b8045980e6437af3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3236d61d34766c5517ac1051fa3bfebd3de558d0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843130"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546007"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>如何设置锁定设备之前的时间量
 
 若要使 Android 设备上的数据更加安全，公司支持人员可以设置一个策略，要求用户设置在设备自动锁定前，它可以保持空闲的时间量。 请按照以下步骤来设置锁定设备之前的时间量。
 
-1.  在设备的**设置**中，单击**安全**&gt;**自动锁定**（在某些设备上显示为**以下时间后锁定电话**）。
+1. 在设备的**设置**中，单击**安全**&gt;**自动锁定**（在某些设备上显示为**以下时间后锁定电话**）。
 
-2.  指定密码超时值。
+2. 指定密码超时值。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

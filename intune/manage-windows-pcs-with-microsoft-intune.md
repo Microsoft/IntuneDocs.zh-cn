@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 733cb20c43b34393003f2e9f4f4466922f3f581e
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044944"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572551"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
 
@@ -70,16 +70,16 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>使用 Intune 客户端软件时具有的计算机管理功能
 在大多数情况下，你将向 Microsoft Intune 注册设备，这样可提供更多的功能。 但是，你也可以通过使用 Intune 软件客户端来管理电脑，该客户端提供以下功能：
 
--   [软件更新管理](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - 可使电脑保持最新版本，并决定何时进行更新  。
+- [软件更新管理](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - 可使电脑保持最新版本，并决定何时进行更新  。
 
--   **[Windows 防火墙策略](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - 可帮助确保公司所用电脑的 Windows 防火墙均处于活动状态且均配置正确。
+- **[Windows 防火墙策略](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - 可帮助确保公司所用电脑的 Windows 防火墙均处于活动状态且均配置正确。
 
--   **[反恶意软件保护](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune 包括 Endpoint Protection，它有助于保护你的电脑免遭恶意软件侵害。
+- **[反恶意软件保护](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune 包括 Endpoint Protection，它有助于保护你的电脑免遭恶意软件侵害。
 
--   **[远程协助](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune 允许用户与 IT 支持人员联系，后者可使用 Intune 附带的远程桌面功能来提供协助（需要 TeamViewer 软件）。
+- **[远程协助](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune 允许用户与 IT 支持人员联系，后者可使用 Intune 附带的远程桌面功能来提供协助（需要 TeamViewer 软件）。
 
--   **[软件许可证管理](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - 跟踪有多少软件许可证可用，以及有多少可用的许可证已使用。
--   **[应用部署](add-apps-for-windows-pcs-in-microsoft-intune.md)** - 将软件部署到你管理的 PC。 在使用软件客户端管理电脑时，一些应用管理功能不可用。
+- **[软件许可证管理](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - 跟踪有多少软件许可证可用，以及有多少可用的许可证已使用。
+- **[应用部署](add-apps-for-windows-pcs-in-microsoft-intune.md)** - 将软件部署到你管理的 PC。 在使用软件客户端管理电脑时，一些应用管理功能不可用。
 
 <!-- - **Compliance settings reporting** -->
 
@@ -113,8 +113,8 @@ Intune 使用与 Windows Server Active Directory 域服务 (AD DS) 组策略对�
 
 某些管理选项（可用于将电脑作为移动设备管理）不能用于使用 Intune 客户端软件管理的电脑：
 
--   完全擦除（选择性擦除可用）
--   条件性访问
+- 完全擦除（选择性擦除可用）
+- 条件性访问
 
 还需注意，在 Intune 管理控制台中，只有在已使用 Intune 客户端软件注册设备后，才会显示某些部分，例如“更新”  、“保护”  和“许可证”  。
 

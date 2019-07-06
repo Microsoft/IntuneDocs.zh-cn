@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
-ms.translationtype: HT
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468718"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494247"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune 开发过程中的功能 - 2019 年 7 月
 
@@ -58,8 +58,6 @@ ms.locfileid: "67468718"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>应用管理
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>设备用户可以查看他们已安装或尝试安装的所有托管应用 <!-- 2352913 -->
-Company Portal for Windows 将列出用户设备上安装的所有（要求的和可用的）托管应用。 用户将能够查看已尝试和待处理的应用安装及其当前状态。 如果组织未提供所需或可用的应用，则用户将看到一条消息，说明尚未安装任何公司应用。 用户还可以按安装状态对其应用进行排序或筛选。
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>自定义的通知的用户和组    <!-- 16766574   -->
 你将很快能够从公司门户应用程序到 iOS 和使用 Intune 管理的 Android 设备上的用户发送自定义的临时推送通知。 这些自定义通知不受限于特定 Intune 功能和可用于任何目的需要，包括常规通知你想要将发送到某些或所有员工。  
@@ -75,7 +73,7 @@ Company Portal for Windows 将列出用户设备上安装的所有（要求的�
 
 
 ### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>支持适用于 iOS 的 IKEv2 VPN 配置文件 <!-- 1943438 -->
-可以使用 IKEv2 协议为 iOS 本机 VPN 客户端创建 VPN 配置文件。 IKEv2 是以下位置中的新连接类型：“设备配置” > “配置文件” > “创建配置文件” > 平台为“iOS”>配置文件类型为“VPN”>“设置”。
+可以使用 IKEv2 协议为 iOS 本机 VPN 客户端创建 VPN 配置文件。 IKEv2 是以下位置中的新连接类型：  “设备配置” >   “配置文件” > “创建配置文件”   > 平台为“iOS”  >配置文件类型为“VPN”  >“设置”  。
 
 这些 VPN 配置文件配置本机 VPN 客户端。 因此，没有 VPN 客户端应用安装或推送到托管设备。 此功能要求设备在 Intune （MDM 注册）中注册。
 
@@ -84,7 +82,7 @@ Company Portal for Windows 将列出用户设备上安装的所有（要求的�
 适用于：iOS
 
 ### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>在创建 Windows 10 设备配置配置文件时使用“适用性规则” <!-- 2549910 -->
-创建 Windows 10 设备配置配置文件（“设备配置” > “配置文件” > “创建配置文件” > 适用于平台的“Windows 10”）。 你将能够创建“适用性规则”，使配置文件仅应用于特定版本。 例如，创建一个启用某些 BitLocker 设置的配置文件。 添加配置文件后，请使用适用性规则，使配置文件仅适用于运行 Windows 10 企业版的设备。
+创建 Windows 10 设备配置配置文件（“设备配置” > “配置文件” > “创建配置文件” > 适用于平台的“Windows 10”）     。 你将能够创建“适用性规则”，使配置文件仅应用于特定版本  。 例如，创建一个启用某些 BitLocker 设置的配置文件。 添加配置文件后，请使用适用性规则，使配置文件仅适用于运行 Windows 10 企业版的设备。
 
 适用于： 
 - Windows 10 及更高版本

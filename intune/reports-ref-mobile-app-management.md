@@ -17,28 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 059f39a52b1dbc6e5f7a014741c0657a2ba8bc10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a8d16e058afbedfd1a343560b3727d33776da45
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045359"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547872"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>移动应用管理 (MAM) 实体引用
 
-“移动应用管理”类别包含移动应用的实体，例如：
+“移动应用管理”类别包含移动应用的实体，例如  ：
 
-  -  应用
-  -  Instances
-  -  签入状态
-  -  运行状况状态
-  -  策略状态
-  -  注册状态
-  -  平台类型
+  - 应用
+  - Instances
+  - 签入状态
+  - 运行状况状态
+  - 策略状态
+  - 注册状态
+  - 平台类型
 
 ## <a name="mamapplication"></a>MamApplication
 
-MamApplication 实体列出了未在企业中注册便通过移动应用程序管理 (MAM) 托管的业务线 (LOB) 应用。
+MamApplication 实体列出了未在企业中注册便通过移动应用程序管理 (MAM) 托管的业务线 (LOB) 应用  。
 
 | 属性 | 描述 | 示例 |
 |---------|------------|--------|
@@ -53,7 +53,7 @@ MamApplication 实体列出了未在企业中注册便通过移动应用程序�
 
 ## <a name="mamapplicationinstance"></a>MamApplicationInstance
 
-MamApplicationInstance 实体将托管移动应用程序管理 (MAM) 应用列为单个实例（按每设备每用户）。 实体中列出的所有用户和设备都受保护，因为向它们分配了至少一个 MAM 策略。
+MamApplicationInstance 实体将托管移动应用程序管理 (MAM) 应用列为单个实例（按每设备每用户）  。 实体中列出的所有用户和设备都受保护，因为向它们分配了至少一个 MAM 策略。
 
 
 |          属性          |                                                                                                  描述                                                                                                  |               示例                |
@@ -78,7 +78,7 @@ MamApplicationInstance 实体将托管移动应用程序管理 (MAM) 应用列�
 
 ## <a name="mamcheckin"></a>MamCheckin
 
-MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 应用实例后收集的数据。 
+MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 应用实例后收集的数据  。 
 
 > [!Note]  
 > 若某个应用实例在一天中签入多次，数据仓库会将其存储为签入一次。
@@ -97,7 +97,7 @@ MamCheckin 实体表示使用 Intune 服务签入移动应用程序管理 (MAM) 
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
 
-MamDeviceHealth 实体表示部署有移动应用管理 (MAM) 策略的设备（即使是越狱设备）。
+MamDeviceHealth 实体表示部署有移动应用管理 (MAM) 策略的设备（即使是越狱设备）  。
 
 | 属性 | 描述 | 示例 |
 |---------|------------|--------|
@@ -108,7 +108,7 @@ MamDeviceHealth 实体表示部署有移动应用管理 (MAM) 策略的设备（
 
 ## <a name="mameffectivepolicy"></a>MamEffectivePolicy
 
-MamEffectivePolicy 实体列出了组织中应用的所有移动应用管理 (MAM) 有效策略。 有效应用的策略通过合并与特定应用和用户相关的所有策略生成。
+MamEffectivePolicy 实体列出了组织中应用的所有移动应用管理 (MAM) 有效策略  。 有效应用的策略通过合并与特定应用和用户相关的所有策略生成。
 
 | 属性 | 描述 | 示例 |
 |---------|------------|--------|
@@ -118,7 +118,7 @@ MamEffectivePolicy 实体列出了组织中应用的所有移动应用管理 (MA
 
 ## <a name="mamglobalapplication"></a>MamGlobalApplication
 
-MamGlobalApplication 实体列出了未在企业中注册便通过移动应用程序管理 (MAM) 托管的应用商店应用。
+MamGlobalApplication 实体列出了未在企业中注册便通过移动应用程序管理 (MAM) 托管的应用商店应用  。
 
 
 |          属性          |                                               描述                                               |           示例            |
@@ -130,7 +130,7 @@ MamGlobalApplication 实体列出了未在企业中注册便通过移动应用�
 
 ## <a name="mamplatform"></a>MamPlatform
 
-MamPlatform 实体列出了安装有移动应用程序管理 (MAM) 应用的平台的名称和类型。
+MamPlatform 实体列出了安装有移动应用程序管理 (MAM) 应用的平台的名称和类型  。
 
 
 |          属性          |                                    描述                                    |                         示例                         |

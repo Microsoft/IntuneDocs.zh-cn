@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ddecf202160decb6ab219cfe0ef490092132059
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9ca937fc5d129dc98c288fa0dde59aa861709f93
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840733"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527885"
 ---
 # <a name="install-lookout-for-work"></a>安装 Lookout for Work
 
@@ -31,31 +31,31 @@ ms.locfileid: "55840733"
 
 ## <a name="what-you-need-to-do"></a>需要执行的操作
 
-1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 — 从 Play Store 安装 Lookout for Work”。
+1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 — 从 Play Store 安装 Lookout for Work”  。
 
    ![需要安装 Lookout for Work](./media/lookout-required-app-install-android.png)
 
-2. 将转至 Play Store 中的 Lookout for Work 安装页。 安装 Lookout for Work，然后点击“接受”以便 Lookout for Work 可访问设备。
+2. 将转至 Play Store 中的 Lookout for Work 安装页。 安装 Lookout for Work，然后点击“接受”  以便 Lookout for Work 可访问设备。
 
    ![点击“接受”以便 Lookout for Work 访问设备](./media/lookout-accept-store-permissions-android.png)
 
-3. 打开 Lookout for Work，然后点击“激活”。
+3. 打开 Lookout for Work，然后点击“激活”  。
 
    ![打开 Lookout for Work，然后点击“激活”](./media/lookout-activate-button-android.png)
 
-4. 点击“使用 Azure Active Directory 登录”，然后输入用于访问工作/学校电子邮件和文件的帐户。
+4. 点击“使用 Azure Active Directory 登录”  ，然后输入用于访问工作/学校电子邮件和文件的帐户。
 
    ![使用工作或学校帐户登录](./media/lookout-sign-in-azure-android.png)
 
-5. 选择用于访问工作或学校电子邮件和文件的帐户，然后点击“添加帐户”。
+5. 选择用于访问工作或学校电子邮件和文件的帐户，然后点击“添加帐户”  。
 
    ![选择工作或学校帐户，然后点击“添加帐户”](./media/lookout-pick-account-android.png)
 
-6. 点击“接受”以授予 Lookout for Work 让你登录并读取个人资料的权限。 屏幕将显示 Lookout for Work 正在连接到 Lookout 安全云。
+6. 点击“接受”  以授予 Lookout for Work 让你登录并读取个人资料的权限。 屏幕将显示 Lookout for Work 正在连接到 Lookout 安全云。
 
    ![点击“接受”以授予 Lookout for Work 读取你的个人资料的权限](./media/lookout-needs-permission-to-view-profile-android.png)
 
-7. 查看关于 Lookout 如何保护设备的项，然后点击“确定”。
+7. 查看关于 Lookout 如何保护设备的项，然后点击“确定”  。
 
    ![查看 Lookout for Work 如何保护设备](./media/lookout-how-it-protects-your-device-android.png)
 

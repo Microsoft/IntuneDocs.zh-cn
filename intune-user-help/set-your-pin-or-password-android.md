@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95862c006baef40bfb219e5cff50d5622c8c00b4
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 767788d702db45686d686e21018cbf0c5b038412
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068856"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546656"
 ---
 # <a name="set-your-pin-or-password"></a>设置你的 PIN 或密码
 
@@ -31,10 +31,10 @@ ms.locfileid: "58068856"
 
 可以使用以下步骤设置 PIN 或密码。
 
-1.  点击“设置” > “安全” > “屏幕锁定” > “密码”。
+1. 点击“设置”   > “安全”   > “屏幕锁定”   > “密码”  。
 
-2.  选择并确认新密码。
+2. 选择并确认新密码。
 
-对于某些设备，除了设置屏幕密码以外，还需设置启动 PIN。 你可以尝试通过在设置应用中查找位置启用此选项来解决此问题。 例如，在 Samsung Galaxy S7 上，通过转到“设置” > “锁定屏幕和安全性” > “安全启动”启用“安全启动”。 请单击[此处](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android)，查看详细信息。 
+对于某些设备，除了设置屏幕密码以外，还需设置启动 PIN。 你可以尝试通过在设置应用中查找位置启用此选项来解决此问题。 例如，在 Samsung Galaxy S7 上，通过转到“设置”   > “锁定屏幕和安全性”   > “安全启动”  启用“安全启动”。 请单击[此处](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android)，查看详细信息。 
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

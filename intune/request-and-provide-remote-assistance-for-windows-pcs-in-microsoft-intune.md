@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040913"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549150"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>请求并提供 Windows 电脑的远程协助
 
@@ -43,7 +43,7 @@ Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买�
 
 ## <a name="configure-the-teamviewer-connector"></a>配置 TeamViewer 连接器
 
-1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com)中，选择“管理员”  。
 2. 在**管理员**工作区中，选择 **TeamViewer**。
 3. 在 **TeamViewer** 页面中 **TeamViewer 连接器**下，选择**启用**。
 4. 在**启用 TeamViewer** 对话框中，查看然后**接受**许可条款。 如果你尚未拥有 TeamViewer 许可证，选择**购买 TeamViewer 许可证**。
@@ -79,13 +79,13 @@ Intune 可使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买�
 ## <a name="remotely-restart-a-windows-pc"></a>远程重启 Windows 电脑
 帮助用户解决问题时，可能需要不时远程重启其电脑。 请按照以下步骤远程重启 Windows 电脑。
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”&gt;“所有设备”（或包含要重启的电脑的另一个组）。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“组”  &gt;“所有设备”  （或包含要重启的电脑的另一个组）。
 
-2.  选择一台或多台电脑，然后选择“远程任务”&gt;“重启计算机”。
+2. 选择一台或多台电脑，然后选择“远程任务”  &gt;“重启计算机”  。
 
-3.  若要查看任务状态，请选择页面右下角的“远程任务”。
+3. 若要查看任务状态，请选择页面右下角的“远程任务”  。
 
-4.  在“任务状态”  对话框中，查看当前远程任务、任务状态、设备名称以及报告的任何错误。
+4. 在“任务状态”  对话框中，查看当前远程任务、任务状态、设备名称以及报告的任何错误。
 
 ### <a name="see-also"></a>另请参阅
 

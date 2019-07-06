@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 6e7290820134ffba2638c313adb4297d7da29c3b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330392"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545962"
 ---
 # <a name="unenroll-your-macos-device-from-company-portal"></a>取消注册 macOS 设备从公司门户
 
@@ -31,26 +31,26 @@ ms.locfileid: "58330392"
 
 请按照以下步骤从管理中取消注册 macOS 设备：
 
-1.  登录到 macOS 公司门户。
-2.  转到“设备”，选择要取消注册的设备。
+1. 登录到 macOS 公司门户。
+2. 转到“设备”  ，选择要取消注册的设备。
 
-3.  选择省略号菜单图标 >**删除**。
-4.  出现确认消息。 选择**删除**取消注册设备。 
+3. 选择省略号菜单图标 >**删除**。
+4. 出现确认消息。 选择**删除**取消注册设备。 
 
 从 Intune 取消注册设备后，将发生以下情况：
 
--   设备不显示在“公司门户”中。
+- 设备不显示在“公司门户”中。
 
--   不能通过“公司门户”安装应用。
+- 不能通过“公司门户”安装应用。
 
--   将不再应用在添加设备时设备上更改的任何设置（如密码长度）。
+- 将不再应用在添加设备时设备上更改的任何设置（如密码长度）。
 
--   你可能不再能够访问设备上的某些公司资源（例如文件共享或内部网站）。
+- 你可能不再能够访问设备上的某些公司资源（例如文件共享或内部网站）。
 
--   你不再能使用设备上的公司应用和公司数据。
+- 你不再能使用设备上的公司应用和公司数据。
 
--   你可能不再能够使用 Wi-Fi 或虚拟专用网 (VPN) 连接到公司网络。
+- 你可能不再能够使用 Wi-Fi 或虚拟专用网 (VPN) 连接到公司网络。
 
--   设备可能无权访问公司电子邮件。
+- 设备可能无权访问公司电子邮件。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

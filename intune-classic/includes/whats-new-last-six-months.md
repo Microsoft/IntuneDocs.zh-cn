@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 448ec3aaa9bc9ad09e54d7dd78d4f08a4adae010
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044705"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67571977"
 ---
 ## <a name="april-2017"></a>2017 年 4 月
 
@@ -37,15 +37,15 @@ Microsoft MyApps 现在在托管浏览器中具有更好的支持。 面向管�
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>改进了适用于 Windows 10 的公司门户应用的应用安装状态 <!--676495-->
 
 Windows 10 公司门户应用中开始的应用安装包括如下改进：
--   为 MSI 包提供更快的安装进度报告
--   为运行 Windows 10 周年更新和更高版本的设备上的现代应用提供更快的安装进度报告
--   为运行 Windows 10 周年更新和更高版本的设备上的现代应用安装提供了新的进度栏
+- 为 MSI 包提供更快的安装进度报告
+- 为运行 Windows 10 周年更新和更高版本的设备上的现代应用提供更快的安装进度报告
+- 为运行 Windows 10 周年更新和更高版本的设备上的现代应用安装提供了新的进度栏
 
 你可以在 [Intune 应用 UI 页面中的新增功能](/intune/whats-new-app-ui)上看到新的进度栏。
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>批量注册 Windows 10 设备 <!-- 747607 -->
 
-现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](/intune-classic/deploy-use/bulk-enroll-windows)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将程序包应用到设备后，设备将加入 Azure AD 并注册 Intune，以供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户并接收分配的策略和必需的应用。 目前不支持自助服务和公司门户方案。
+现在可以使用 Windows 配置设计器 (WCD) 将运行 Windows 10 创意者更新的大量设备加入到 Azure Active Directory 和 Intune。 若要启用 Azure AD 租户的[批量 MDM 注册](/intune-classic/deploy-use/bulk-enroll-windows)，请使用 Windows 配置设计器创建将设备加入你的 Azure AD 租户的预配程序包，并将程序包应用到你想要批量注册和管理的公司所有的设备。 将程序包应用到设备后，设备将加入 Azure AD 并注册 Intune，以供 Azure AD 用户登录。  Azure AD 用户是这些设备上的标准用户并接收分配的策略和必需的应用。 目前不支持自助服务和公司门户方案。
 
 ### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure 上的 Intune 管理体验公开预览版的新增功能 <!--736542-->
 
@@ -334,7 +334,7 @@ __Android 不再支持 Intune AV 播放器、图像查看器和 PDF 查看器应
 
 __适用于 Windows 10 设备的新 Microsoft Intune 公司门户__ Microsoft 将发布[适用于 Windows 10 设备的新 Microsoft Intune 公司门户](https://www.microsoft.com/store/apps/9wzdncrfj3pz)。 此应用利用了新 Windows 10 Universal 格式，将在应用内为用户提供更新的用户体验，且跨所有 Windows 10 设备（PC 和移动设备等）提供相同的体验，同时还将保持现有的一切功能。
 
-新应用还允许用户们在 Windows 10 设备上利用传统平台功能，例如单一登录 (SSO) 和基于证书的身份验证。 此应用将作为对现有 Windows 8.1 公司门户和 Windows Phone 8.1 公司门户（安装自 Microsoft 应用商店）的升级而提供。 有关详细信息，请转到 [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp)。
+新应用还允许用户们在 Windows 10 设备上利用传统平台功能，例如单一登录 (SSO) 和基于证书的身份验证。 此应用将作为对现有 Windows 8.1 公司门户和 Windows Phone 8.1 公司门户（安装自 Microsoft 应用商店）的升级而提供。 有关详细信息，请转到 [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp)。
 
 > [!IMPORTANT]
 > __Intune 和 Android for Work 上的更新__虽然可通过“必需”  操作部署 Android for Work 应用，但如果已将 Intune 组迁移至新的 Azure AD 组体验，则只可以将应用部署为“可用”  。

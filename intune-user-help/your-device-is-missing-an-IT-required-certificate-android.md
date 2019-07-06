@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ef2bc644b537787bd5275e95a4ecc72c899393
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6bdf97e6a36a49bc6df5a182af7676c357440f3e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835871"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529327"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>你的 Android 设备缺少公司支持人员所需的证书
 
@@ -48,11 +48,11 @@ ms.locfileid: "55835871"
 
     如果未看到挂锁符号，请停止操作并与公司支持人员联系。 锁意味着你已安全登录，所以在没有看到该符号前请不要继续进行操作。
 
-4. 选择“查看证书”。
+4. 选择“查看证书”  。
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. 在“证书”对话框中，选择“证书路径”选项卡，然后标识需要从 Internet 获取的证书。 所需证书的名称将显示在与上一示例屏幕截图中突出显示的位置相同的位置上。
+5. 在“证书”  对话框中，选择“证书路径”  选项卡，然后标识需要从 Internet 获取的证书。 所需证书的名称将显示在与上一示例屏幕截图中突出显示的位置相同的位置上。
 
 ## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>在你的 Android 移动设备上下载并安装缺少的证书。
 
@@ -62,7 +62,7 @@ ms.locfileid: "55835871"
 
 3. 证书下载后，从你的设备顶部向下拖动以打开你的通知，然后在通知列表中点击证书的名称。
 
-4. 在如下面的屏幕截图中所示的“命名证书”对话框中，接受默认的证书名称。
+4. 在如下面的屏幕截图中所示的“命名证书”  对话框中，接受默认的证书名称。
 
 5. 确保**凭据使用**设置为**用于 VPN 和应用**，然后点击**确定**。
 

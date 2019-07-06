@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837419"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546510"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>从 Intune 取消注册 Android 设备会发生什么情况？
 
 从 Intune 取消注册 Android 设备时：
 
--   公司支持人员不再能够管理设备。
+- 公司支持人员不再能够管理设备。
 
--   你将无法再访问公司数据和资源。
+- 你将无法再访问公司数据和资源。
 
--   设备将不再显示在公司门户中。
+- 设备将不再显示在公司门户中。
 
--   再也不能从公司门户安装应用。
+- 再也不能从公司门户安装应用。
 
--   将不再应用当添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
+- 将不再应用当添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
 
 如果将设备设置为仅接收公司电子邮件，然后取消注册设备，则你的设备将不再显示在公司门户中。
 

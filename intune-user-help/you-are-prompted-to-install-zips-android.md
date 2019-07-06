@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ee68b4f330077ce0892baa5e8d82f6c9c4e8ffe
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 4f83504e5d651d7f981fa605fc9157287bdb09a4
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068919"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529273"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>在 Android 设备上安装 Zimperium zIPS
 
@@ -31,19 +31,19 @@ ms.locfileid: "58068919"
 
 ## <a name="what-you-need-to-do"></a>需要执行的操作
 
-1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 – 从 Play Store 安装 Skycure”。 此外，还可以在__符合性详细信息__下的公司门户应用内找到此项。
+1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 – 从 Play Store 安装 Skycure”  。 此外，还可以在__符合性详细信息__下的公司门户应用内找到此项。
 
-2. 将转到 Play Store 中的 Zimperium zIPS 安装页。 安装 Zimperium zIPS，然后点击“接受”以允许 Zimperium zIPS 访问你的设备。
+2. 将转到 Play Store 中的 Zimperium zIPS 安装页。 安装 Zimperium zIPS，然后点击“接受”以允许 Zimperium zIPS 访问你的设备  。
 
-3. 打开 Zimperium zIPS，然后点击“验证”。
+3. 打开 Zimperium zIPS，然后点击“验证”  。
 
-4. 点击“使用 Azure Active Directory 登录”，然后输入用于访问工作/学校电子邮件和文件的帐户。
+4. 点击“使用 Azure Active Directory 登录”  ，然后输入用于访问工作/学校电子邮件和文件的帐户。
 
-5. 选择用于访问工作或学校电子邮件和文件的帐户，然后点击“添加帐户”。
+5. 选择用于访问工作或学校电子邮件和文件的帐户，然后点击“添加帐户”  。
 
-6. 点击“接受”，授予 Zimperium zIPS 让你登录并读取个人资料的权限。
+6. 点击“接受”，授予 Zimperium zIPS 让你登录并读取个人资料的权限  。
 
-7. 查看有关 Zimperium zIPS 如何保护设备的项，然后点击“确定”。 Zimperium zIPS 将花一些时间进行设置，然后开始检查设备上的安全威胁。
+7. 查看有关 Zimperium zIPS 如何保护设备的项，然后点击“确定”  。 Zimperium zIPS 将花一些时间进行设置，然后开始检查设备上的安全威胁。
 
 8. Zimperium zIPS 立即开始检查设备上的安全威胁。
 
@@ -51,7 +51,7 @@ ms.locfileid: "58068919"
 
    * 如果未找到任何威胁，则所有三个威胁类型将显示为绿色。
 
-11. 公司门户中的“设备详细信息”屏幕将显示你当前符合你公司的安全要求。
+11. 公司门户中的“设备详细信息”  屏幕将显示你当前符合你公司的安全要求。
 
     ![你的设备当前符合策略](./media/mtd-device-now-compliant-android.png)
 

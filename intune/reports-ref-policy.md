@@ -16,25 +16,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23476383abfddabffc411afa286c97b30ef04439
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040968"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549180"
 ---
 # <a name="reference-for-policy-entities"></a>策略实体参考
 
-“策略”类别包含移动设备的实体，可用于跟踪此类信息：
+“策略”类别包含移动设备的实体，可用于跟踪此类信息  ：
 
-  -  设备配置文件、应用配置文件和符合性策略的清单  
-  -  每天处于成功、挂起、失败或错误状态的设备数  
-  -  每天处于成功、挂起、失败或错误状态的用户数  
-  -  处于成功、挂起、失败或错误状态的总设备数  
+  - 设备配置文件、应用配置文件和符合性策略的清单  
+  - 每天处于成功、挂起、失败或错误状态的设备数  
+  - 每天处于成功、挂起、失败或错误状态的用户数  
+  - 处于成功、挂起、失败或错误状态的总设备数  
 
 ## <a name="policy"></a>策略
 
-“策略”实体列出了设备配置文件、应用配置文件和符合性策略。 可使用移动设备管理 (MDM) 将策略分配给企业中的一个组。
+“策略”实体列出了设备配置文件、应用配置文件和符合性策略  。 可使用移动设备管理 (MDM) 将策略分配给企业中的一个组。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -49,7 +49,7 @@ ms.locfileid: "66040968"
 
 ## <a name="policytype"></a>PolicyType
 
-PolicyType 实体列出了设备配置文件、应用配置文件和符合性策略的类型。 可使用移动设备管理 (MDM) 将策略分配给企业中的一个组。
+PolicyType 实体列出了设备配置文件、应用配置文件和符合性策略的类型  。 可使用移动设备管理 (MDM) 将策略分配给企业中的一个组。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -59,7 +59,7 @@ PolicyType 实体列出了设备配置文件、应用配置文件和符合性策
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
-DeviceConfigurationProfileDeviceActivity 实体列出每天处于成功、挂起、失败或错误状态的设备数。 该数字反映了分配给该实体的设备配置文件。 例如，如果对于分配给某设备的所有策略，该设备均为成功状态，则当天的成功计数增加一。 如果向设备分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则实体会增加成功计数，同时让设备处于错误状态。 实体列出了过去 30 天中给定某天中处于各状态的设备数。
+DeviceConfigurationProfileDeviceActivity 实体列出每天处于成功、挂起、失败或错误状态的设备数   。 该数字反映了分配给该实体的设备配置文件。 例如，如果对于分配给某设备的所有策略，该设备均为成功状态，则当天的成功计数增加一  。 如果向设备分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则实体会增加成功计数，同时让设备处于错误状态。 实体列出了过去 30 天中给定某天中处于各状态的设备数。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -69,7 +69,7 @@ DeviceConfigurationProfileDeviceActivity 实体列出每天处于成功、挂起
 | 错误 |处于错误状态的唯一设备数。 |10 |
 | Failed |处于失败状态的唯一设备数。 |2 |
 
-DeviceConfigurationProfileUserActivity 实体列出每天处于成功、挂起、失败或错误状态的用户数。 该数字反映了分配给该实体的设备配置文件。 例如，如果对于分配给某用户的所有策略，该用户均为成功状态，则当天的成功计数增加一。 如果向用户分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则将用户计为错误状态。  DeviceConfigurationProfileUserActivity 实体列出了过去 30 天内给定某天中处于各状态的用户数。
+DeviceConfigurationProfileUserActivity 实体列出每天处于成功、挂起、失败或错误状态的用户数   。 该数字反映了分配给该实体的设备配置文件。 例如，如果对于分配给某用户的所有策略，该用户均为成功状态，则当天的成功计数增加一  。 如果向用户分配了两个配置文件，一个处于成功状态，另一个处于错误状态，则将用户计为错误状态。  DeviceConfigurationProfileUserActivity 实体列出了过去 30 天内给定某天中处于各状态的用户数  。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -81,7 +81,7 @@ DeviceConfigurationProfileUserActivity 实体列出每天处于成功、挂起�
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
-PolicyTypeActivity 列出了处于成功、挂起、失败或错误状态的总设备数。 它列出了每天与设备配置文件、应用配置文件或符合性策略相关的这些状态。
+PolicyTypeActivity 列出了处于成功、挂起、失败或错误状态的总设备数  。 它列出了每天与设备配置文件、应用配置文件或符合性策略相关的这些状态。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043913"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530728"
 ---
 # <a name="troubleshoot-conditional-access"></a>条件访问疑难解答
 
@@ -35,8 +35,8 @@ ms.locfileid: "67043913"
 - 设备必须由 Intune 注册和管理。
 - 用户和设备都必须符合分配的 Intune 符合性策略。
 - 默认情况下，必须为用户分配设备符合性策略。 这可能取决于“标记未分配符合性策略的设备”设置的配置方式，该设置可在 Intune 管理门户中的“设备符合性” > “符合性策略设置”下进行配置    。
--   如果用户使用的是设备的本机邮件客户端而不是 Outlook，则必须在设备上激活 Exchange ActiveSync。 此操作在 iOS、Windows Phone 和 Android 设备上自动进行。
--   Intune Exchange Connector 必须正确配置。 有关详细信息，请参阅 [Microsoft Intune 中的 Exchange Connector 疑难解答](troubleshoot-exchange-connector.md)。
+- 如果用户使用的是设备的本机邮件客户端而不是 Outlook，则必须在设备上激活 Exchange ActiveSync。 此操作在 iOS、Windows Phone 和 Android 设备上自动进行。
+- Intune Exchange Connector 必须正确配置。 有关详细信息，请参阅 [Microsoft Intune 中的 Exchange Connector 疑难解答](troubleshoot-exchange-connector.md)。
 
 可在 Azure 门户和设备清单报告中针对各个设备查看这些条件。
 

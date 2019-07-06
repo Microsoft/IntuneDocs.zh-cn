@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbf35b77c843b4dc084916b2c283b6c66d5f066d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849227"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546638"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>拒绝“使用条款”后删除对设备的管理
 
@@ -31,17 +31,17 @@ ms.locfileid: "55849227"
 
 卸载公司门户应用时，同时将从 Intune 删除设备。 设备将无法再访问公司资源。 若要深入了解删除对设备的管理后会发生什么情况，请参阅[从 Intune 取消注册设备会发生什么情况？](what-happens-if-you-unenroll-your-device-from-intune-android.md)。
 
-你需转到“设备管理员”设置，并关闭“公司门户”才能卸载公司门户应用。 由于你拥有的 Android 设备的不同，操作步骤可能也有些许不同。
+你需转到“设备管理员”  设置，并关闭“公司门户”  才能卸载公司门户应用。 由于你拥有的 Android 设备的不同，操作步骤可能也有些许不同。
 
 ## <a name="removing-the-device-from-the-company-portal-app"></a>从公司门户应用删除设备
 
 若要从 Intune 删除设备并卸载公司门户应用，请执行以下操作：
 
-1.  转到**设置**&gt;**安全&amp;屏幕锁定**&gt;**设备管理员**。
+1. 转到**设置**&gt;**安全&amp;屏幕锁定**&gt;**设备管理员**。
 
     完成此步骤将立即取消注册你的设备。
 
-2.  取消勾选“公司门户”旁边的复选框或将其关闭。
+2. 取消勾选“公司门户”  旁边的复选框或将其关闭。
 
     现在即可卸载公司门户应用。
 

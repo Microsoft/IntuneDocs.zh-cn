@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6daeaaac7fb554e2c29f6ac150eaff8308d670b0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 13a12da72577edfee1d6ba23c2cd5e56d1fe397e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850550"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527574"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>在 iOS 设备上安装 Symantec Endpoint Protection Mobile
 
@@ -29,13 +29,13 @@ ms.locfileid: "55850550"
 
 ## <a name="what-you-need-to-do"></a>需要执行的操作
 
-1.  如果看到以下提示，请点击“安装”允许在设备上安装 SEP Mobile。
+1. 如果看到以下提示，请点击“安装”允许在设备上安装 SEP Mobile  。
 
-2. 看到以下消息时，请点击“设置”，打开“定位服务”，然后点击“继续”。
+2. 看到以下消息时，请点击“设置”  ，打开“定位服务”  ，然后点击“继续”  。
 
-3. 查看 SEP Mobile 所需的权限，然后点击“继续”。
+3. 查看 SEP Mobile 所需的权限，然后点击“继续”  。
 
-4. 提示要求允许 SEP Mobile 发送通知时，请点击“允许”。
+4. 提示要求允许 SEP Mobile 发送通知时，请点击“允许”  。
 
 5. SEP Mobile 完成安装，并显示欢迎屏幕。
 

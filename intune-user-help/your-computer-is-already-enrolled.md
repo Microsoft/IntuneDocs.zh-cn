@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836416"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545667"
 ---
 # <a name="your-computer-is-already-enrolled"></a>你的计算机已注册
 
@@ -31,11 +31,11 @@ ms.locfileid: "55836416"
 
 链接你的计算机：
 
-1.  在要将其链接到帐户的计算机上，选择“开始”，然后选择“Microsoft Intune Center”。
+1. 在要将其链接到帐户的计算机上，选择“开始”  ，然后选择“Microsoft Intune Center”  。
 
-2.  打开公司门户。
+2. 打开公司门户。
 
-3.  按照提示将计算机链接到你的用户帐户。
+3. 按照提示将计算机链接到你的用户帐户。
 
 如果希望取消注册设备，请使用你拥有的设备类型的说明：[Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md) 或 [Windows](unenroll-your-device-from-intune-windows.md)。
 

@@ -18,30 +18,30 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bcae8e48fd9c6558d77aced73d12b15e54b2f7
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040938"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546343"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安装 Android 适用的公司门户应用
 
 公司门户应用使你可以访问公司或学校的应用、电子邮件和 Internet 连接。 此应用可通过保护设备安全来帮助保护组织信息的安全 - 例如保持公司应用处于最新版本，或确保设备在一段特定时间后自行锁定。 若要了解有关公司门户和它在设备管理中的部件的功能的详细信息，请参阅[为什么要注册 Android 设备](why-enroll-android-device.md)。  
 
-1.  点击“主页”   > “Play Store”  。
+1. 点击“主页”   > “Play Store”  。
 
-2.  在“搜索”  框中，键入“Intune 公司门户”  。  
+2. 在“搜索”  框中，键入“Intune 公司门户”  。  
 
-3.  点击“Intune 公司门户”  。
+3. 点击“Intune 公司门户”  。
 
     ![android-search-company-portal](./media/and-cpinstall-1-search-cp.png)
 
-4.  点击“安装”  。
+4. 点击“安装”  。
 
     ![android-install-company-portal](./media/and-cpinstall-2-install.png)
 
-5.  点击“接受”  。
+5. 点击“接受”  。
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 

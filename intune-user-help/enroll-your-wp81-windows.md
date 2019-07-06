@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dd15e960b3c2802930981271cb6cd9ffea841cee
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497470"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545489"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 中注册 Windows Phone 8.1 设备  
 
@@ -34,45 +34,45 @@ ms.locfileid: "61497470"
 ## <a name="enroll-through-company-portal"></a>通过公司门户注册  
 如果可以从 Microsoft Store 安装公司门户应用，请执行以下步骤。 
 
-1.  点击“开始” > “应用商店”。  
+1. 点击“开始” > “应用商店”   。  
 
-2.  点击“**搜索**”，然后键入“**公司门户**”。  
+2. 点击“**搜索**”，然后键入“**公司门户**”。  
 
-3.  在结果列表中，点击“公司门户”。  
+3. 在结果列表中，点击“公司门户”  。  
 
 
     ![公司门户搜索结果](./media/WP81-1-CP-search-store-v2.png)  
 
-4.  点击**公司门户** &gt; **安装**。  
+4. 点击**公司门户** &gt; **安装**。  
 
 
     ![安装公司门户](./media/WP81-2-CP-install-v2.png)  
 
 注册设备：  
 
-1.  在设备上，打开“Microsoft Intune 公司门户”应用。  
+1. 在设备上，打开“Microsoft Intune 公司门户”  应用。  
 
 
-2.  提供你的凭据。 可能会要求你接受公司的条款和条件（如果适用）。  
+2. 提供你的凭据。 可能会要求你接受公司的条款和条件（如果适用）。  
 
-3.  轻扫到“我的设备”。  
+3. 轻扫到“我的设备”  。  
 
-4.  选择“点击以注册或识别该设备”。  
+4. 选择“点击以注册或识别该设备”  。  
 
 
     ![“点击以注册或识别该设备”屏幕](./media/WP81-enroll-1-swipe-my-devices.png)  
 
-5.  点击“注册此设备”。  
+5. 点击“注册此设备”  。  
 
 
     ![“注册此设备”屏幕](./media/WP81-enroll-2-enroll-this-device.png)  
 
-6.  点击“添加帐户”。  
+6. 点击“添加帐户”  。  
 
 
     ![工作区设置屏幕](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7.  按照请求输入更多信息，然后点击“登录”完成注册。 现在你应该可以在**设置** &gt; **工作区**页面上看到你的工作区帐户。  
+7. 按照请求输入更多信息，然后点击“登录”  完成注册。 现在你应该可以在**设置** &gt; **工作区**页面上看到你的工作区帐户。  
 
 
     ![“已添加帐户”屏幕](./media/WP81-enroll-4-account-added.png)  
@@ -80,13 +80,13 @@ ms.locfileid: "61497470"
 ## <a name="enroll-through-settings-app"></a>通过设置应用注册  
 如果无法从 Windows Phone 设备访问 Microsoft Store 或者没有 Microsoft 帐户，请执行以下步骤。
 
-1.  点击**设置** &gt; **工作区**。  
+1. 点击**设置** &gt; **工作区**。  
 
-2.  点击“添加帐户”，然后使用工作单位帐户登录。  
+2. 点击“添加帐户”  ，然后使用工作单位帐户登录。  
 
-3.  按照请求输入更多信息，然后点击“登录”完成注册。  
+3. 按照请求输入更多信息，然后点击“登录”  完成注册。  
 
-4.  如果提示安装企业应用或中心，请确保选中相关复选框，然后点击“完成”。  
+4. 如果提示安装企业应用或中心，请确保选中相关复选框，然后点击“完成”  。  
 
 如果你的公司支持人员已将公司门户设置为在注册过程中进行安装，则你的应用列表中将显示公司门户。  
 

@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564459"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545265"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>如何通过加密保护 Windows 设备
 
@@ -37,8 +37,8 @@ ms.locfileid: "57564459"
 
 如果你有桌面设备，则以下说明介绍了如何对它进行加密。
 
-1.  搜索，然后启动“管理 BitLocker”应用。
+1. 搜索，然后启动“管理 BitLocker”  应用。
 
-2.  选择“启用 BitLocker”，然后按照说明加密你的各个驱动器。
+2. 选择“启用 BitLocker”  ，然后按照说明加密你的各个驱动器。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

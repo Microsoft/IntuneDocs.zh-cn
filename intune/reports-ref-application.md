@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: deea42bf9ef35d173761fddb16aa43eaa8876269
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a1ee376bdf2dff6dc59b6c51b20ff87c1ed81d82
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041082"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549235"
 ---
 # <a name="reference-for-application-entities"></a>应用程序实体引用
 
-“应用程序”类别包含移动设备的实体，可用于跟踪此类信息：
+“应用程序”类别包含移动设备的实体，可用于跟踪此类信息  ：
 
-  -  应用版本
-  -  应用的安装源
-  -  创建应用的开发人员类型
-  -  应用的托管软件类型，例如移动版或桌面版
-  -  应用的批量购买计划 (VPP) 状态
+  - 应用版本
+  - 应用的安装源
+  - 创建应用的开发人员类型
+  - 应用的托管软件类型，例如移动版或桌面版  
+  - 应用的批量购买计划 (VPP) 状态
 
 ## <a name="apprevision"></a>AppRevision
 
-AppRevision 实体列出了应用的所有版本。
+AppRevision 实体列出了应用的所有版本  。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -58,7 +58,7 @@ AppRevision 实体列出了应用的所有版本。
 
 ## <a name="apptypes"></a>AppTypes
 
-AppTypes 实体列出了应用的安装源。
+AppTypes 实体列出了应用的安装源  。
 
 | 属性  | 描述 |
 |---------|------------|
@@ -87,7 +87,7 @@ AppTypes 实体列出了应用的安装源。
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 
-VppProgramTypes 实体列出了应用的可能 VPP 计划类型。
+VppProgramTypes 实体列出了应用的可能 VPP 计划类型  。
 
 | 属性  | 描述 |
 |---------|------------|
@@ -107,7 +107,7 @@ VppProgramTypes 实体列出了应用的可能 VPP 计划类型。
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 
-ApplicationInventory 项列出了收集清单时在设备上找到的应用程序。
+ApplicationInventory 项列出了收集清单时在设备上找到的应用程序  。
 
 | 属性  | 描述 |
 |---------|------------|
@@ -119,7 +119,7 @@ ApplicationInventory 项列出了收集清单时在设备上找到的应用程�
 
 ## <a name="mobileappinstallstate"></a>MobileAppInstallState
 
-MobileAppInstallState 实体表示已分配到包含设备和/或用户的组的移动应用的安装状态。
+MobileAppInstallState  实体表示已分配到包含设备和/或用户的组的移动应用的安装状态。
 
 | 属性 | 描述 |
 |---|---|

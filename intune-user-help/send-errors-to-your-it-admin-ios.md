@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa48aae8f35ad55e3e836016262056268fd9cd89
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7a6b2e04e40aa12e791e34f3899686d5f5661df2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836279"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546700"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>将与 iOS 设备问题相关的错误发送给公司支持人员
 在 iOS 设备上使用公司门户应用有时会出现错误。 发生这种情况时，可以通过电子邮件将有关该错误的详细信息发送给公司的支持人员。 这些详细信息将提供为你解决该问题所需的上下文。
@@ -32,10 +32,10 @@ ms.locfileid: "55836279"
 
 如果在 iOS 设备上使用公司门户应用时遇到错误，可以发送相关信息以帮助公司支持人员解决问题。 可以使用多种不同的方式发送错误信息：
 
--   在错误警报消息中，点击“报告”。
+- 在错误警报消息中，点击“报告”  。
 
--   在公司门户应用的“更多”选项卡中，点击“获取帮助”。
+- 在公司门户应用的“更多”选项卡中，点击“获取帮助”   。
 
--   在公司门户应用中，摇动设备，然后在诊断警报出现时点击“发送诊断报告”。 如果摇动设备时未出现该警报，请打开“设置” > “公司门户”，确保“摇一摇”选项已打开。
+- 在公司门户应用中，摇动设备，然后在诊断警报出现时点击“发送诊断报告”  。 如果摇动设备时未出现该警报，请打开“设置”   > “公司门户”  ，确保“摇一摇”  选项已打开。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
