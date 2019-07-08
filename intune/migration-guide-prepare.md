@@ -16,16 +16,16 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afede7f3f5adf194beceafd7c3d2dbee1b0e64b7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046271"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494594"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>第 1 阶段：为移动设备管理 (MDM) 准备 Microsoft Intune
 
-在深入了解 Intune 设置的详细信息之前，让我们回顾一下组织的移动设备管理要求。 它可能有助于在当前 MDM 提供程序中运行活动用户的报告，以识别关键用户组。 然后，就可以开始解决[评估 MDM 需求](migration-guide-prepare.md#assess-mdm-requirements)部分中提到的问题。
+在深入了解 Intune 设置的详细信息之前，让我们回顾一下组织的移动设备管理要求。 它可能有助于在当前 MDM 提供程序中运行活动用户的报告，以识别关键用户组。 然后，就可以开始解决[评估 MDM 要求](migration-guide-prepare.md#assess-mdm-requirements)部分中提到的问题。
 
 ## <a name="assess-mdm-requirements"></a>评估 MDM 要求
 

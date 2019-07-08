@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 524c4aebe6cdde0b0bc45f76a4675bbed8172d67
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402773"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511695"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”  边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -31,18 +31,18 @@ ms.locfileid: "66402773"
 > [!IMPORTANT]
 > 设备上需具备 Intune 公司门户，以接收 Android 设备的应用保护策略。 有关详细信息，请参阅 [Intune 公司门户访问应用要求](end-user-mam-apps-android.md)。
 
-##  <a name="data-protection"></a>数据保护 
+## <a name="data-protection"></a>数据保护 
 ### <a name="data-transfer"></a>数据传输
 | Setting | 如何使用 | 默认值 |
 |------|------|------|
 | **将组织数据备份到 Android 备份服务** | 选择“阻止”可阻止此应用将工作或学校数据备份到 [Android 备份服务](https://developer.android.com/google/backup/index.html)  。<br><br> 选择“允许”可允许此应用备份工作或学校数据  。| **允许** |
 | 将组织数据发送到其他应用  | 指定哪些应用可从此应用接收数据： <ul><li> **策略托管应用**：仅允许传输到其他策略托管应用。</li> <li>**所有应用**：允许传输到任何应用。 </li> <li>**无**：不允许将数据传输到任何应用，包括其他策略托管应用。</li></ul> <p>默认情况下，Intune 允许向一些豁免应用和服务传输数据。 此外，如果需要允许将数据传输到不支持 Intune APP 的应用，则可以创建自己的豁免项目。 有关详细信息，请参阅[数据传输豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。<p>此策略也适用于 Android 应用链接。  通用 Web 链接由“在 Intune Managed Browser 中打开应用链接”策略设置托管  。<p><div class="NOTE"><p>备注</p><p>Intune 目前不支持 Android Instant Apps 功能。 Intune 将阻止进/出该应用的任何数据连接。 有关详细信息，请参阅 Android 开发人员文档中的 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html)。</p><p>如果“将组织数据发送到其他应用”  配置为“所有应用”  ，则可能仍会通过 OS 共享将文本数据传输到剪贴板。</p></div> | **所有应用** | 
-|<ul><ui> **选择要豁免的应用** | 为上一选项选择“策略托管应用”时，此选项才可用  。 | |
+|<ul><ui>**选择要豁免的应用** | 为上一选项选择“策略托管应用”时，此选项才可用  。 | |
 | **从其他应用接收数据** | 指定哪些应用可将数据传输到此应用： <ul><li>**策略托管应用**：仅允许从其他策略托管应用进行传输。</li><li>**所有应用**：允许从任何应用传输的数据。</li><li>**无**：不允许从任何应用传输数据，包括其他策略托管应用。 </li></ul> <p>有一些豁免应用和服务，Intune 可能会允许从其传输数据。 有关应用和服务的完整列表，请参阅[数据传输豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。 | **所有应用** |
 | **保存组织数据的副本** | 选择“阻止”，在此应用中禁用使用“另存为”选项  。 如果想要允许使用“另存为”，则选择“允许”  。 **注意:** Microsoft Excel、OneNote、PowerPoint 和 Word 支持此设置。  它也可能受第三方和 LOB 应用支持。| **允许** |  
-|<ul><ui> **允许用户将副本保存到所选的服务** |用户可以保存到所选的服务（OneDrive for Business、SharePoint 和本地存储）中。 将阻止所有其他服务。  | **未选择任何项** |
+|<ul><ui>**允许用户将副本保存到所选的服务** |用户可以保存到所选的服务（OneDrive for Business、SharePoint 和本地存储）中。 将阻止所有其他服务。  | **未选择任何项** |
 | **限制在其他应用间进行剪切、复制和粘贴** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。 | **任何应用** |
-| **应用剪切和复制操作的字符限制** | 指定可从组织数据和帐户中剪切或复制的字符数。  这允许将指定数量的字符共享到任何应用程序，而不受“限制使用其他应用剪切、复制和粘贴”设置的限制。<p>默认值 = 0<p>**注意**：需要 Intune 公司门户版本 5.0.4364.0 或更高版本。  | **0** |
+| <ul><ui>**剪切和复制任何应用的字符限制** | 指定可从组织数据和帐户中剪切或复制的字符数。  这允许将指定数量的字符共享到任何应用程序，而不受“限制使用其他应用剪切、复制和粘贴”设置的限制。<p>默认值 = 0<p>**注意**：需要 Intune 公司门户版本 5.0.4364.0 或更高版本。  | **0** |
 | **屏幕捕获和 Google 助手** | 选择“禁用”，则使用此应用时，会阻止设备的屏幕捕获和“Google 助手”功能   。 选择“禁用”还会导致在通过工作或学校帐户使用此应用时应用切换器预览图像模糊  。| **启用** |
 
   
@@ -50,7 +50,7 @@ ms.locfileid: "66402773"
 | Setting | 如何使用 | 默认值 |
 |------|------|------|
 | **对组织数据进行加密** | 选择“需要”，在此应用中启用工作或学校数据加密  。 Intune 使用 OpenSSL 256 位 AES 加密方案和 Android Keystore 系统安全加密应用数据。 数据在文件 I/O 任务期间同步加密。 始终加密设备存储中的内容。 SDK 将继续提供 128 位密钥支持以与使用旧版 SDK 的内容和应用兼容。 <br><br> 加密方法与 FIPS 140-2 兼容。     |  **需要**|  
-
+| <ul><ui>**对已注册设备上的组织数据进行加密** | 选择“需要”  可使用 Intune 应用层加密对所有设备上的组织数据强制执行加密。 选择“不需要”  后，不使用 Intune 应用层加密对已注册设备上的组织数据强制执行加密。| **需要** |
 
 
 ### <a name="functionality"></a>功能
@@ -58,13 +58,16 @@ ms.locfileid: "66402773"
 |------|------|------|
 | **使用本机联系人应用同步应用** | 选择“禁用”，阻止应用将数据保存到设备上的本机“联系人”应用  。 如果选择“启用”，应用可将数据保存到设备上的本机“联系人”应用  。 <br><br>执行选择性擦除以从应用删除工作或学校数据时，将删除从应用直接同步到本机“联系人”应用的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 目前仅适用于 Microsoft Outlook 应用。 | **启用** |
 | **打印组织数据** | 选择“禁用”，阻止应用打印工作或学校数据  。 | **启用** |
-|**使用策略托管浏览器共享 Web 内容** | 指定如何从策略管理的应用中打开 Web 内容（http/https 链接）。 选择：<ul><li>**需要**：允许 Web 内容仅在策略托管浏览器中打开。</li><li>**未配置**：允许在任何应用中使用网络链接 </li></ul><br><br> 如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问](app-configuration-managed-browser.md)。<br><br>**策略托管的浏览器**<br>如果部署多个策略托管的浏览器，则只有一个将会启动。  启动顺序将为 Intune Managed Browser，然后才是 Microsoft Edge。  在 Android 上，如果未安装 Intune Managed Browser 和 Microsoft Edge，最终用户可以从支持 http/https 链接的其他策略托管应用中进行选择。<p>如果需要策略托管的浏览器，但未安装，系统将提示最终用户安装 Intune Managed Browser。<p>如果需要使用策略托管的浏览器，则将由“允许应用向其他应用传送数据”策略设置管理 Android 应用链接  。<p>**Intune 设备注册**<br>如果使用 Intune 管理设备，请参阅“使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问”。 <p>**策略托管的 Microsoft Edge**<br>移动设备（iOS 和 Android）的 Microsoft Edge 浏览器支持 Intune 应用保护策略。 在 Microsoft Edge 浏览器应用程序中使用其企业 Azure AD 帐户登录的用户将受 Intune 保护。 Microsoft Edge 浏览器集成了 MAM SDK 并支持其除阻止以外的所有数据保护策略：<br><ul><li>**另存为**：Microsoft Edge 浏览器不允许用户向云存储提供商（如 OneDrive）添加直接的应用内连接。</li><li>**联系人同步**：Microsoft Edge 浏览器不会保存到本地联系人列表。</li></ul><br>**注意:** APP SDK 无法确定目标应用是否为浏览器。  在 Android 设备上，允许使用支持 http/https 意向的其他托管浏览器应用。 | 未配置  |
+|**使用策略托管浏览器共享 Web 内容** | 指定如何从策略管理的应用中打开 Web 内容（http/https 链接）。 选择：<ul><li>**需要**：允许 Web 内容仅在策略托管浏览器中打开。</li><li>**非托管浏览器**：允许 Web 内容仅在“非托管浏览器 ID”  设置定义的非托管浏览器中打开。 Web 内容在目标浏览器中处于非托管状态。<br>**注意**：需要 Intune 公司门户版本 5.0.4415.0 或更高版本。</li><li>**未配置**：允许在任何应用中使用网络链接 </li></ul><br><br> 如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问](app-configuration-managed-browser.md)。<br><br>**策略托管的浏览器**<br>如果部署多个策略托管的浏览器，则只有一个将会启动。  启动顺序将为 Intune Managed Browser，然后才是 Microsoft Edge。  在 Android 上，如果未安装 Intune Managed Browser 和 Microsoft Edge，最终用户可以从支持 http/https 链接的其他策略托管应用中进行选择。<p>如果需要策略托管的浏览器，但未安装，系统将提示最终用户安装 Intune Managed Browser。<p>如果需要使用策略托管的浏览器，则将由“允许应用向其他应用传送数据”策略设置管理 Android 应用链接  。<p>**Intune 设备注册**<br>如果使用 Intune 管理设备，请参阅“使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问”。 <p>**策略托管的 Microsoft Edge**<br>移动设备（iOS 和 Android）的 Microsoft Edge 浏览器支持 Intune 应用保护策略。 在 Microsoft Edge 浏览器应用程序中使用其企业 Azure AD 帐户登录的用户将受 Intune 保护。 Microsoft Edge 浏览器集成了 MAM SDK 并支持其除阻止以外的所有数据保护策略：<br><ul><li>**另存为**：Microsoft Edge 浏览器不允许用户向云存储提供商（如 OneDrive）添加直接的应用内连接。</li><li>**联系人同步**：Microsoft Edge 浏览器不会保存到本地联系人列表。</li></ul><br>**注意:** APP SDK 无法确定目标应用是否为浏览器。  在 Android 设备上，允许使用支持 http/https 意向的其他托管浏览器应用。 | 未配置  |
+|<ul><ui>**非托管浏览器 ID** | 输入单个浏览器的应用程序 ID。 策略托管应用程序的 Web 内容（http/https 链接）将在指定的浏览器中打开。  Web 内容在目标浏览器中处于非托管状态。 | **空** |
+|<ul><ui>**非托管浏览器名称** | 输入与“非托管浏览器 ID”  关联的浏览器的应用程序名称。 如果未安装指定的浏览器，将向用户显示此名称。  | **空** |
 
-  ## <a name="data-transfer-exemptions"></a>数据传输豁免
+
+## <a name="data-transfer-exemptions"></a>数据传输豁免
 
   有一些豁免应用和平台服务，Intune 应用保护策略可能会允许向其或从其传输数据。 例如，Android 上所有 Intune 托管的应用都必须能够将数据传输至 Google 文本到语音转换或从中接收数据，这样使移动设备屏幕上的文本可以被朗读出来。 此列表可能会更改以反映有利于安全工作效率的服务和应用。
 
-  ### <a name="full-exemptions"></a>完全豁免
+### <a name="full-exemptions"></a>完全豁免
 
   完全允许这些应用和服务向 Intune 托管应用传输数据或从其接收数据。
 
@@ -81,7 +84,7 @@ ms.locfileid: "66402773"
   | com.azure.authenticator | Azure 验证器应用，这是在许多情况下成功进行身份验证所必需的。 |
   | com.microsoft.windowsintune.companyportal | Intune 公司门户|
 
-  ### <a name="conditional-exemptions"></a>有条件的豁免
+### <a name="conditional-exemptions"></a>有条件的豁免
   只有在某些条件下，才允许这些应用和服务向 Intune 托管应用传输数据或从其接收数据。
 
   |应用/服务名称 | 描述 | 豁免条件|
@@ -93,7 +96,7 @@ ms.locfileid: "66402773"
 
 有关详细信息，请参阅[应用的数据传输策略例外情况](app-protection-policies-exception.md)。
 
-##  <a name="access-requirements"></a>访问要求
+## <a name="access-requirements"></a>访问要求
 
 | Setting | 如何使用 |  
 |------|------| 
