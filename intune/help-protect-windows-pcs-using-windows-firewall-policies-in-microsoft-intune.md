@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403019"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572517"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows PC
 
@@ -43,19 +43,19 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 > [!NOTE]
 > 如果将 Microsoft Intune 策略和组策略都配置为管理 PC 上的相同设置，则组策略设置将替代 Microsoft Intune 策略。 有关如何避免 Intune 策略与组策略之间的冲突的信息，请参阅[解决 GPO 与 Microsoft Intune 之间的策略冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 >
-> 如果要将 Windows 防火墙设置部署到运行 Windows Vista 的计算机，则必须先在这些计算机上安装[修补程序 KB971800](http://support2.microsoft.com/kb/971800)。
+> 如果你想要将 Windows 防火墙设置部署到运行 Windows Vista 的计算机，则必须先安装[热修复补丁 KB971800](http://support2.microsoft.com/kb/971800) 到这些计算机上。
 
 > [!IMPORTANT]
 > 若要使用 Intune 管理 Windows 防火墙，请确保在要托管的计算机上启用以下两项服务：
 >
-> -   Windows 防火墙
-> -   IPsec 策略代理
+> - Windows 防火墙
+> - IPsec 策略代理
 
 ## <a name="configure-a-windows-firewall-policy"></a>配置 Windows 防火墙策略
 
-1.  在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略”  &gt;“添加策略”  。
+1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，选择“策略”  &gt;“添加策略”  。
 
-2.  配置和部署 **Windows 防火墙设置**策略。 你可以使用建议的设置，或对设置进行自定义。 如果你需要有关如何创建和部署策略的详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
+2. 配置和部署 **Windows 防火墙设置**策略。 你可以使用建议的设置，或对设置进行自定义。 如果你需要有关如何创建和部署策略的详细信息，请参阅[使用 Microsoft Intune 计算机客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。
 
     以下部分列出你可在策略中配置的值，还列出将在你未自定义策略的情况下使用的默认值。
 
@@ -84,7 +84,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 以上每个设置的默认值都是“是”  ，这是最安全的值。
 
 > [!IMPORTANT]
-> 如果环境中包含运行 Windows Vista（未安装服务包）的托管计算机，则必须安装与 Microsoft 知识库[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或者在部署到这些计算机的策略中禁用“阻止所有传入连接”策略设置  。
+> 如果你的环境中包括运行 Windows Vista（未安装 Service Pack）的被管理的计算机，则必须安装与 Microsoft 知识库[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或在部署到这些计算机的策略中禁用“阻止所有传入连接”策略设置  。
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Windows 防火墙阻止新程序时通知用户
 

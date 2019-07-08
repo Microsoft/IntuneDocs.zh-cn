@@ -18,17 +18,17 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bbd4f8f0925aac5aada44277c4d21a71b412e0e7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501232"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546686"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 设备注册疑难解答
 如果已注册设备，但仍无法访问工作或学校电子邮件和文件，请尝试执行以下故障排除步骤。  
 
-1.  查看接下来的两个屏幕，并找到与你在设备上看到的相似屏幕。 按照与你在设备上看到的屏幕相匹配的步骤操作。
+1. 查看接下来的两个屏幕，并找到与你在设备上看到的相似屏幕。 按照与你在设备上看到的屏幕相匹配的步骤操作。
 
     如果你看到此屏幕，请按照[看到“访问工作单位或学校”时要执行的故障排除步骤](#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)中的步骤操作。
 
@@ -48,7 +48,7 @@ ms.locfileid: "61501232"
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - 如果未看到以上所示的连接信息，或者看到了此类信息但其中缺少部分选项，则点击“连接”。 然后使用工作或学校凭据登录以连接。  
+   - 如果未看到以上所示的连接信息，或者看到了此类信息但其中缺少部分选项，则点击“连接”  。 然后使用工作或学校凭据登录以连接。  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>看到“你的帐户”时执行的故障排除步骤
 
@@ -56,10 +56,10 @@ ms.locfileid: "61501232"
 
 - 如果能看到工作单位或学校帐户，则已连接。  
 
-- 如果看不到工作单位或学校帐户，请点击“连接”，然后使用工作单位或学校凭据登录。
+- 如果看不到工作单位或学校帐户，请点击“连接”  ，然后使用工作单位或学校凭据登录。
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>看到“设置工作或学校帐户”时执行的故障排除步骤
 
-如果看到消息“我们无法自动发现与所输入用户名匹配的管理终结点。请检查用户名并重试。如果知道管理终结点的 URL，请输入。”，则应尝试重新输入用户名和密码。 如果仍无效，则应咨询公司支持人员，获取需在“管理终结点”文本框中提供的网站。 网站可能类似于www.yourcompany.onmicrosoft.com。
+如果看到消息“我们无法自动发现与所输入用户名匹配的管理终结点。请检查用户名并重试。如果知道管理终结点的 URL，请输入。”，则应尝试重新输入用户名和密码</strong>。 如果仍无效，则应咨询公司支持人员，获取需在“管理终结点”文本框中提供的网站。 网站可能类似于www.yourcompany.onmicrosoft.com。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
