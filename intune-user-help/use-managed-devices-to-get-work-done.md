@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,35 +14,91 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: robstack
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7b67f1484ed74bd538cad53f02babd542b77fff
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2c0d3484311d044842daf6718b306d45fc93edf2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838829"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545926"
 ---
-# <a name="use-managed-devices-to-access-work-or-school-resources"></a>使用受管理设备访问工作或学校资源
-Microsoft Intune 是一个设备管理系统，可允许组织管理对设备、应用和电子邮件的访问。 通过设备管理，你和其他员工及学生可几乎在任何设备上从任何地方访问你的工作信息。 即使远程工作，你和贵组织的信息仍然是安全的。
+# <a name="enroll-device-for-access-to-work-or-school-resources"></a>注册设备的工作或学校资源的访问权限
+若要注册设备并获取对电子邮件和应用程序的访问权限，你将需要安装 Intune 公司门户应用或 Microsoft Intune 应用。 注册时，你的组织已配置，如密码、 PIN 和加密，基本的管理策略应用到你的设备。 一旦你的设备设置符合所有组织的要求，可以从几乎任何位置安全访问你的工作信息。  
 
-Microsoft Intune 是贵公司用于配置其安全性和设备需求的软件。 准备好受管理设备时，你将使用 Intune 公司门户应用。 通过此应用，可以使用首选设备来访问工作或学校资源。 
+公司门户和 Microsoft Intune 应用保护你注册的设备通过确保你的设备设置的与组织的策略匹配。 
 
-## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>在托管自己的设备时，我的公司可以看到哪些信息？
-在公司门户中进行设置之后，公司支持人员只能查看与工作相关的信息。 无法查看你的个人信息。 如果要注册个人设备以便在工作时使用，了解这一点尤为重要。 在下一篇文章中详细了解公司支持人员[可以查看和无法查看的内容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。
+此外，公司门户应用还能：  
+* 将你的个人和工作信息分开。  
+* 轻松查找和安装相关工作和学校的应用。   
 
-## <a name="how-do-i-get-company-portal"></a>如何获取公司门户？
-通过以下方式获取公司门户：
+## <a name="get-the-apps"></a>获取应用
+若要获取公司门户，请执行以下操作：
 
-- 在设备上安装公司门户应用。 通常通过在设备上转到应用商店，可以获取公司门户应用，但公司支持人员也可为你安装公司门户应用。
-- 转到公司支持人员设置的[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+- 从特定于平台的应用商店安装公司门户应用。 在某些情况下，你的组织将为你安装公司门户应用。  
+- 转到[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)从浏览器访问该应用。  
 
-## <a name="whats-the-difference-between-the-app-and-the-website"></a>应用和网站之间的有什么区别？
-适用于 Windows 10、iOS、macOS 和 Android 的每个公司门户应用都与设备的相应平台无缝集成。 该网站可从任何设备进行访问，无论你使用何种设备，都会为你提供相同的通用体验。 
+如果您需要使用 Microsoft Intune 应用，你的组织将安装它为您。  
 
-可以在以下链接下方找到特定于设备平台的公司门户指南，从注册步骤开始：  
+
+## <a name="what-information-can-my-company-see-when-i-enroll"></a>当我注册时，我的公司可以看到什么信息？
+已注册设备后，你组织的支持人员只能看到与工作相关的信息。 无法查看你的个人信息。 如果要注册个人设备以便工作时，使用[了解究竟是什么可以和不能看到](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。  
+
+
+## <a name="whats-the-difference-between-the-apps-and-the-website"></a>应用与网站有何区别？
+公司门户应用已可用于 Windows 10、 iOS、 macOS 和 Android 设备。 无缝集成你的设备的各自的平台。 网站版本可以从任意设备访问，无论你使用何种设备，都会为你提供相同的通用体验。 
+
+Microsoft Intune 应用是公司拥有的 Android 设备。  
+
+## <a name="what-kind-of-devices-can-you-enroll-with-company-portal"></a>使用公司门户可以注册的设备类型？
+- 使用 iOS（例如 iPhone 和 iPad）和 macOS（例如 MacBook 和 iMac）的 Apple 设备
+- Android 设备
+- Windows 设备
+    - Windows 10 移动版
+    - Windows 10 桌面版
+    - Windows Phone 8.1
+    - Windows 8.1
+
+## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>您可以使用 Microsoft Intune 应用注册何种设备？  
+你可以注册公司拥有的 Android 设备，你的组织已设置为使用与该应用程序。 应用程序支持 Android 6.0 及更高版本。 
+
+## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>是否可从公司门户中删除计算机或设备？
+可以从公司门户中删除或重置计算机或设备。 **删除**和**重置**有所不同。
+
+如果从公司门户中删除计算机或设备，也会从 Intune 取消注册设备。 一旦取消注册，你将无法再从该设备访问公司门户，并且可能会从设备中删除某些公司数据。 若要了解如何从公司门户删除设备，请参阅以下链接：  
+
+- [取消注册 Android 设备](unenroll-your-device-from-intune-android.md)
+- [取消注册 iOS 设备](unenroll-your-device-from-intune-ios.md)
+- [取消注册 macOS 设备](unenroll-your-device-from-intune-macos.md)
+- [取消注册 Windows 设备](unenroll-your-device-from-intune-windows.md)
+
+如果你重置计算机或设备，公司门户会尝试将计算机或设备重置回制造商默认设置。 重置设备会从设备中删除所有公司数据和个人数据。 如果设备丢失，还可以在公司门户网站中远程重置。  
+
+若要了解如何重置你的设备，请参阅[将设备从公司门户网站重置](reset-erase-your-device-cpwebsite.md)。  
+
+## <a name="can-you-remove-a-computer-or-device-from-the-microsoft-intune-app"></a>可以删除计算机或设备从 Microsoft Intune 应用？
+否，没有任何方法，以便从 Microsoft Intune 应用中删除企业拥有的设备。  
+
+## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>如果看不到我的公司门户或 Microsoft Intune 应用中的设备？
+若要能够看到设备，必须先将它添加到公司门户。 转到管理员建议的公司门户，并遵循设备的相关步骤。 你也无法查看你公司所拥有和管理的设备。
+
+如果您使用 Microsoft Intune 应用程序，则只能看到当前正在使用的设备。 其他已注册的设备不会对你的应用中可见。  
+
+## <a name="where-else-can-i-go-for-help"></a>可以从其他哪些地方获取帮助？  
+若要解决常见的问题和疑问，请查看这些特定于平台的文档：  
+
+- [解决 Android 设备的常见问题](check-compliance-on-your-device-android.md)  
+- [解决 iOS 设备的常见问题](troubleshoot-your-device-ios.md)
+- [解决 macOS 设备的常见问题](troubleshoot-your-device-macos.md)
+- [解决 Windows 设备的常见问题](troubleshoot-your-device-windows.md)
+
+您可以还联系支持人员。 公司门户和 Microsoft Intune 应用程序提供帮助和支持列出的联系人信息以及如何报告问题的页面。 联系信息，还可以在你的组织[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
+
+## <a name="next-steps"></a>后续步骤  
+
+获取开始注册到你的设备的平台特定的帮助：  
 
 - [使用 Android 设备](using-your-android-device-with-intune.md)
 - [使用 iOS 设备](using-your-ios-device-with-intune.md)
@@ -50,50 +106,4 @@ Microsoft Intune 是贵公司用于配置其安全性和设备需求的软件。
 - [使用 Windows 设备](using-your-windows-device-with-intune.md)
 - [使用公司门户网站](using-the-intune-company-portal-website.md)
 
-## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>将计算机或设备添加到公司门户时，会发生什么情况？
-当你将计算机或设备添加到公司门户时，可能会安装了某个软件或下载了某个应用（视设备而定）。 你还可以授予公司支持人员管理你的设备的权限，以帮助保护设备上的公司信息。
 
-若要了解公司支持人员在你的设备上可以看到和不可以看到的内容，请使用与你正在使用的设备类型匹配的链接：
-
-- [安装 Android 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [安装 iOS 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [安装 macOS 版公司门户应用](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [安装 Windows 版公司门户应用](about-cp-app-for-windows-10.md)
-
-## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>可将何种计算机或设备添加到公司门户？
--   使用 iOS（例如 iPhone 和 iPad）和 macOS（例如 MacBook 和 iMac）的 Apple 设备
--   Android 设备
--   Windows 设备
-    -   Windows 10 移动版
-    -   Windows 10 桌面版
-    -   Windows Phone 8.1
-    -   Windows 8.1
-
-## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>是否可从公司门户中删除计算机或设备？
-可以从公司门户中删除或重置计算机或设备。 **删除**和**重置**有所不同。
-
-将计算机或设备从公司门户中删除时，将从 Intune 取消注册设备。 一旦取消注册，你将无法再从该设备访问公司门户，并且可能会从设备中删除某些公司数据。 如要查看如何从公司门户中删除设备，请选择以下链接之一：
-
-- [取消注册 Android 设备](unenroll-your-device-from-intune-android.md)
-- [取消注册 iOS 设备](unenroll-your-device-from-intune-ios.md)
-- [取消注册 macOS 设备](unenroll-your-device-from-intune-macos.md)
-- [取消注册 Windows 设备](unenroll-your-device-from-intune-windows.md)
-
-*重置*计算机或设备后，公司门户会尝试将计算机或设备重置回制造商的默认设置。 重置设备将从设备删除所有公司和个人数据！ 如果设备丢失，还可在公司门户网站上远程重置。
-
-可以阅读下文了解如何重置设备：
-
-- [从公司门户网站重置（清除）设备](reset-erase-your-device-cpwebsite.md)
-
-## <a name="what-if-i-cant-see-my-device-in-the-company-portal"></a>如果在公司门户中看不到我的设备该怎么办？
-若要能够看到设备，必须先将它添加到公司门户。 转到管理员建议的公司门户，并遵循设备的相关步骤。 你也无法查看你公司所拥有和管理的设备。
-
-## <a name="where-else-can-i-go-for-help"></a>可以从其他哪些地方获取帮助？
-Microsoft 建议首先尝试自己解决问题。 对于 Intune 支持的每个平台可能出现的问题，我们提供了相应的解决方法列表。
-
-- [解决 Android 设备的常见问题](troubleshoot-your-device-android.md)
-- [解决 iOS 设备的常见问题](troubleshoot-your-device-ios.md)
-- [解决 macOS 设备的常见问题](troubleshoot-your-device-macos.md)
-- [解决 Windows 设备的常见问题](troubleshoot-your-device-windows.md)
-
-你可以在底部发表评论请求帮助，但是由于每个组织的需求不同，所以我们可能无法回答你的每一个问题。 向公司支持人员寻求帮助可能是获得最快和最相关回复的好方法。 [公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)应该会提供他们的联系信息。

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841328"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546037"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 配置托管应用，以满足组织的安全要求，并保护工作和学校数据。 这些应用面向设备提供，以供自动安装和使用。 
@@ -45,32 +45,32 @@ ms.locfileid: "55841328"
 ## <a name="commonly-managed-apps"></a>常用托管应用  
 学校或工作场所中通常必需或可用的托管应用示例包括：
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word、Excel 和 PowerPoint
+- Microsoft Word、Excel 和 PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>如何获取托管应用？
-首先，需要安装公司门户，并且如果需要，请将设备纳入管理。 之后，可通过三种方式获取托管应用。
-* 注册时，组织将自动向你的设备安装应用。 若要了解注册相关信息，请参阅[在 Intune 中注册设备](enroll-your-device-in-Intune-android.md)。
-* 组织在公司门户中提供托管应用。 转到“公司门户”应用或网站，搜索、查看和安装这些应用。 
-* 从 Google Play 商店安装应用，然后使用工作或学校帐户登录应用。  
+有三种方法来获取托管的应用。  
+* 注册时，组织将自动向你的设备安装应用。  
+* 从 Google Play 商店安装应用，然后使用工作或学校帐户登录应用。    
+* 组织在公司门户中提供托管应用。 转到公司门户应用或网站，以搜索、查看和安装可用应用。 有关这些应用程序的详细信息，请参阅下一部分中，[可用的应用](#available-apps)。  
 
- ## <a name="available-apps"></a>可用应用   
- 贵组织会选择适合在工作中或学校里使用的应用。 这些应用是在公司门户中仅能找到的应用。   
+### <a name="available-apps"></a>可用应用   
+ 你的组织可以选择在工作或学校，为你进行适当且有用和使其可供您在公司门户应用。  
 
  也可以根据设备类型使用应用。 例如，如果使用适用于 Android 的公司门户应用，则可以访问 Android 应用，但不能访问 iOS 应用。   
 
- ## <a name="request-an-app-for-work-or-school"></a>请求用于工作或用于学校的应用   
- 如果未在公司门户中找到需要的应用，则可以请求该应用。 在公司门户应用的“联系 IT”选项卡中查找“支持人员”的联系详情。可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。   
+## <a name="request-an-app-for-work-or-school"></a>请求用于工作或用于学校的应用   
+ 如果未在公司门户中找到需要的应用，则可以请求该应用。 查找联系人详细信息您**支持人员**中任一应用程序**联系 IT 部门**选项卡。可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>我的公司支持人员可管理应用中的哪些内容？  
 以下列表描述公司支持人员可以在应用内管理的设置。 这些设置将影响查看、访问或使用设备上工作或学校数据的方式：
 
 * 对特定网站的访问  
 
-* 使用 Microsoft Edge 和 Azure Active Directory 代理访问公司内部网站  
+* 使用 Microsoft Edge 和 Azure Active Directory 代理访问内部公司网站  
 
 * 最低应用版本，最低 OS 版本
 

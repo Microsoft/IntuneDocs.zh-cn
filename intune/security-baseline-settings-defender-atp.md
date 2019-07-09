@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
-ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67197550"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549126"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
@@ -192,7 +192,7 @@ ms.locfileid: "67197550"
 ## <a name="device-control"></a>设备控制  
 
 - **完全扫描期间扫描可移动驱动器**  
-  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) - 设置为“是”  时，Defender 将在完全扫描期间扫描可移动驱动器（如闪存驱动器）中的恶意软件和不需要的软件。 Defender 防病毒软件将先扫描 USB 设备上的所有文件，然后才能运行 USB 设备上的文件。
+  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) - 如果设置为“是”  ，Defender 会在完全扫描期间扫描可移动驱动器（如 U 盘）中是否有恶意软件和不需要的软件。 Defender 防病毒软件将先扫描 USB 设备上的所有文件，然后才能运行 USB 设备上的文件。
 
   此列表中的相关设置：Defender/AllowFullScanOnMappedNetworkDrives   
 

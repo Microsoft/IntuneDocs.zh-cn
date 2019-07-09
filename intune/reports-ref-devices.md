@@ -17,29 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045300"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547920"
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
-“设备”类别包含移动设备的实体，可用于跟踪此类信息：
+“设备”类别包含移动设备的实体，可用于跟踪此类信息  ：
 
-  -  设备类型
-  -  设备登记和注册状态
-  -  设备所有权
-  -  设备管理状态
-  -  设备 Azure AD 成员身份状态
-  -  注册状态
-  -  设备的历史信息
-  -  设备上的应用的清单
+  - 设备类型
+  - 设备登记和注册状态
+  - 设备所有权
+  - 设备管理状态
+  - 设备 Azure AD 成员身份状态
+  - 注册状态
+  - 设备的历史信息
+  - 设备上的应用的清单
 
 ## <a name="devicetypes"></a>DeviceTypes
 
-DeviceTypes 实体表示由其他数据仓库实体引用的设备类型。 设备类型通常描述设备型号、制造商或同时包含这两项内容。
+DeviceTypes 实体表示由其他数据仓库实体引用的设备类型  。 设备类型通常描述设备型号、制造商或同时包含这两项内容。
 
 | 属性  | 描述 |
 |---------|------------|
@@ -73,7 +73,7 @@ DeviceTypes 实体表示由其他数据仓库实体引用的设备类型。 设�
 | 255 |Unknown |未知设备类型 |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
-EnrollmentActivity 实体表示设备注册活动。
+EnrollmentActivity 实体表示设备注册活动  。
 
 | 属性                      | 描述                                                               |
 |-------------------------------|---------------------------------------------------------------------------|
@@ -87,7 +87,7 @@ EnrollmentActivity 实体表示设备注册活动。
 | 计数                         | 符合上述分类的注册活动总数。  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
-EnrollmentEventStatus 实体表示设备注册结果。
+EnrollmentEventStatus 实体表示设备注册结果  。
 
 | 属性                   | 描述                                                                       |
 |----------------------------|-----------------------------------------------------------------------------------|
@@ -103,7 +103,7 @@ EnrollmentEventStatus 实体表示设备注册结果。
 | 不可用              | 注册状态不可用。  |
 
 ## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
-EnrollmentFailureCategory 实体指示设备注册失败的原因。 
+EnrollmentFailureCategory 实体指示设备注册失败的原因  。 
 
 | 属性                       | 描述                                                                                 |
 |--------------------------------|---------------------------------------------------------------------------------------------|
@@ -130,7 +130,7 @@ EnrollmentFailureCategory 实体指示设备注册失败的原因。
 | UserAbandonment                 | 最终用户放弃了注册。 （最终用户启动了加入，但未能及时完成）  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
-EnrollmentFailureReason 实体表示特定失败类别中设备注册失败的详细原因。  
+EnrollmentFailureReason 实体表示特定失败类别中设备注册失败的详细原因  。  
 
 | 属性                     | 描述                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------|
@@ -160,7 +160,7 @@ EnrollmentFailureReason 实体表示特定失败类别中设备注册失败的�
 | APNSCertificateExpired           | 无法使用 Apple MDM Push Certificate 管理 Apple 设备。                                                                                                                            |
 ## <a name="ownertypes"></a>OwnerTypes
 
-OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
+OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象  。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -173,7 +173,7 @@ OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象。
 
 ## <a name="managementstates"></a>ManagementStates
 
-ManagementStates 实体提供有关设备状态的详细信息。 详细信息适用于应用远程操作、设备越狱或进行 root 的情况。
+ManagementStates 实体提供有关设备状态的详细信息  。 详细信息适用于应用远程操作、设备越狱或进行 root 的情况。
 
 | 属性  | 描述 |
 |---------|------------|
@@ -200,7 +200,7 @@ ManagementStates 实体提供有关设备状态的详细信息。 详细信息�
 
 ## <a name="managementagenttypes"></a>ManagementAgentTypes
 
-ManagementAgentTypes 实体表示用于管理设备的代理。
+ManagementAgentTypes 实体表示用于管理设备的代理  。
 
 | 属性  | 描述 |
 |---------|------------|
@@ -222,7 +222,7 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 
 ## <a name="devices"></a>设备
 
-设备实体列出受管理的所有已注册设备及相应属性。
+设备实体列出受管理的所有已注册设备及相应属性  。
 
 |          属性          |                                                                                       描述                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -264,7 +264,7 @@ ManagementAgentTypes 实体表示用于管理设备的代理。
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
-DevicePropertyHistory 实体具有的属性与设备表格和过去 90 天每个设备记录的每日快照的属性相同。 DateKey 列表明每行的日期。
+DevicePropertyHistory 实体具有的属性与设备表格和过去 90 天每个设备记录的每日快照的属性相同  。 DateKey 列表明每行的日期。
 
 |          属性          |                                                                                      描述                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -282,7 +282,7 @@ DevicePropertyHistory 实体具有的属性与设备表格和过去 90 天每个
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 
-ApplicationInventory 实体列出了收集清单时在设备上找到的应用。
+ApplicationInventory 实体列出了收集清单时在设备上找到的应用  。
 
 
 |      属性      |                       描述                        |

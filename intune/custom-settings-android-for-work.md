@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,20 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: aea4a3d6f8d28e4277435b1d9fc092e68adb9e55
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373637"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530315"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用适用于 Android Enterprise 设备的自定义设置
 
-借助 Microsoft Intune，可以使用“自定义配置文件”添加或创建适用于 Android Enterprise 设备的自定义设置。 自定义配置文件是 Intune 中的一项功能。 这项功能用于添加未内置到 Intune 的设备设置和功能。
+借助 Microsoft Intune，可以使用“自定义配置文件”，添加或创建适用于 Android Enterprise 工作配置文件设备的自定义设置。 自定义配置文件是 Intune 中的一项功能。 这项功能用于添加未内置到 Intune 的设备设置和功能。
 
 Android Enterprise 自定义配置文件使用开放移动联盟统一资源标识符 (OMA-URI) 设置控制 Android Enterprise 设备上的功能。 移动设备制造商通常使用这些设置来控制这些功能。
 
-Intune 支持有限数量的 Android 自定义配置文件。
+Intune 支持有限的数量的 Android 企业自定义配置文件，包括：
+
+- ./Vendor/MSFT/WiFi/Profile/SSID/设置：[创建具有预共享密钥的 Wi-fi 配置文件](wi-fi-profile-shared-key.md)具有一些示例。
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList:[创建每应用 VPN 配置文件](android-pulse-secure-per-app-vpn.md)具有一些示例。
+- ./Vendor/MSFT/WorkProfile/disallowcrossprofilecopypaste，以确实： 请参阅[示例](#example)（在这篇文章）。
+
+如果需要其他设置，请参阅[Android enterprise OEMConfig](android-oem-configuration-overview.md)。
 
 本文介绍如何创建适用于 Android Enterprise 设备的自定义配置文件。 文中还提供了可阻止复制粘贴操作的自定义配置文件的示例。
 

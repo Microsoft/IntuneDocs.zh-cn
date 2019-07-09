@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe7ffa6ff024c719fc24209947b87b07ea2b6791
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
-ms.translationtype: MTE75
+ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412693"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558507"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
@@ -50,6 +50,18 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 
 > [!Note]  
 > 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格  。
+
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>目标用户组应用安装将不会访问设备
+安装应用程序问题时，应考虑以下操作：
+- 如果应用程序不会显示在公司门户中，请确保与部署应用**可用**意向和用户与应用支持的设备类型访问公司门户。
+- 对于 Windows BYOD 设备，用户需要将工作帐户添加到设备。
+- 检查用户是否是通过 AAD 设备限制：
+  1. 导航到[Azure Active Directory 设备设置](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)。
+  2. 请记下为设置的值**每个用户的最大设备**。
+  3. 导航到[Azure Active Directory 用户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)。
+  4. 选择受影响的用户，然后单击**设备**。
+  5. 如果用户是通过设置限制，然后删除不再需要任何过期记录。
+- 对于 iOS DEP 设备，请确保用户被列为**注册的用户**Intune 设备概述边栏选项卡中。 如果显示 NA，然后将配置策略部署的 Intune 公司门户网站。 有关详细信息，请参阅[配置公司门户应用](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 应用安装疑难解答
 

@@ -14,12 +14,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41ca1c3b387b2cd43ac882a8aec50980c8ed3807
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041226"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493905"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune 的传递优化设置
 
@@ -63,7 +63,7 @@ Intune 控制台中的大多数选项都直接映射到传递优化设置，Wind
 |[对等缓存的最小内容文件大小（以 MB 为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#minimum-peer-caching-content-file-size)      | 1703        | 指定文件使用对等缓存必须达到或超过的最小大小（以 MB 为单位）。  <br><br>**默认值**：没有配置任何值   <br><br>**建议**：10 MB   <br><br>策略 CSP：[DOMinFileSizeToCache](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominfilesizetocache)  <br><br>      |
 |[上传所需的最低电池剩余电量（以百分比为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)      | 1709        | 以百分比形式指定设备将数据上传到对等所必须具有的最低电池剩余电量。 如果电池剩余电量下降到指定值，则任何活动上传都会自动暂停。   <br><br>**默认值**：没有配置任何值   <br><br>**建议**：40%   <br><br>策略 CSP：[DOMinBatteryPercentageAllowedToUpload](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominbatterypercentageallowedtoupload) <br><br>        |
 |[修改缓存驱动器](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#modify-cache-drive)        | 1607        | 指定传递优化用于其缓存的驱动器。 可以使用环境变量、驱动器号或完整路径。  <br><br>**默认值**：%SystemDrive% <br><br>策略 CSP：[DOModifyCacheDrive](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domodifycachedrive) <br><br>        |
-| [最长缓存期限（以天为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | 指定每个文件成功下载后，文件在设备的传递优化缓存中保存的期限。   <br><br>使用 Intune 配置缓存期限（以天为单位）。 定义的天数将转换为适用的秒数，这是 Windows 定义此设置的方式。 例如，Intune 配置为 3 天，在设备上会转换为 259200 秒（3 天）。  <br><br>**默认值**：没有配置任何值      <br><br>**建议**：7   <br><br>策略 CSP：[DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
+| [最长缓存期限（以天为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | 指定每个文件成功下载后，文件在设备的传递优化缓存中保存的期限。   <br><br>使用 Intune 配置缓存期限（以天为单位）。 定义的天数转换为相应秒数，这是 Windows 定义此设置的方式。 例如，Intune 配置为 3 天，在设备上会转换为 259200 秒（3 天）。  <br><br>**默认值**：没有配置任何值      <br><br>**建议**：7   <br><br>策略 CSP：[DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | 最大缓存大小类型  | 查看详情     | 选择如何管理传递优化使用的设备上的磁盘空间量。 如果未配置缓存大小，则默认为可用磁盘空间的 20%。  <br><ul><li>**未配置**（默认）</li><br><li>**绝对值** - 指定[最大缓存绝对大小（以 GB 为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size)，以配置设备可用于传递优化的最大驱动器空间量。 如果将其设置为 0（零），缓存大小将不受限制，但是当设备磁盘空间不足时，传递优化将清除缓存。 <br><br>要求使用 Windows 1607<br><br> 策略 CSP：[DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**百分比** - 指定[最大缓存大小（以百分比为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size)，以配置设备可用于传递优化的最大驱动器空间量。 百分比是可用的驱动器空间，并且传递优化会不断评估可用的驱动器空间，并清除缓存以使最大缓存大小低于设置的百分比。 <br><br>要求使用 Windows 1511<br><br>策略 CSP：[DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [VPN 对等缓存](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | 选择“启用”可以将设备配置为在通过 VPN 连接到域网络时参与对等缓存  。 启用的设备可以从 VPN 或公司域网络上下载或上传到其他域网络设备。  <br><br>**默认值**：未配置  <br><br>策略 CSP：[DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
 
