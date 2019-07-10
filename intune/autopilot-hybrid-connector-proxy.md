@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f91ec3124d8fab067ec32194a68508762c6cef33
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043547"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735256"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>与现有本地代理服务器结合使用
 
@@ -64,6 +64,7 @@ OS 组件尝试通过执行针对 wpad.domainsuffix 的 DNS 查找，来查找�
     </appSettings>
 </configuration>
 ```
+
 若要确保连接器更新服务也绕过代理，请对 C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config 做出类似更改。
 
 ```xml
@@ -87,9 +88,9 @@ OS 组件尝试通过执行针对 wpad.domainsuffix 的 DNS 查找，来查找�
 
 修改配置文件之后，需要重新启动 Intune 连接器服务。 
 
-1. 打开“services.msc”。
-2. 找到并选择“Intune ODJConnector 服务”。
-3. 选择“重启”。
+1. 打开“services.msc”  。
+2. 找到并选择“Intune ODJConnector 服务”  。
+3. 选择“重启”  。
 
 ![服务重启的屏幕截图](media/autopilot-hybrid-connector-proxy/service-restart.png)
 

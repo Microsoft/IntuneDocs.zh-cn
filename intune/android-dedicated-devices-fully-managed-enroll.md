@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d81f28b03a41bcdc8b6c9f18ef58e6a42346ba7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a4f81f29fea9008c7dd47902812141db8448bc3
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049979"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735726"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>注册 Android Enterprise 专用设备或完全托管设备（预览）
 
@@ -43,16 +43,16 @@ ms.locfileid: "66049979"
 
 ### <a name="enroll-by-using-a-token"></a>使用令牌注册
 
-对于 Android 6 及更高版本的设备，可使用令牌注册设备。 使用 afw#setup 注册方法时，Android 6.1 和更高版本还可利用 QR 码扫描。
+对于 Android 6 及更高版本的设备，可使用令牌注册设备。 使用 afw#setup 注册方法时，Android 6.1 和更高版本还可利用 QR 码扫描  。
 
 1. 打开已擦除的设备。
-2. 在“欢迎使用”屏幕上，选择语言。
-3. 连接到 Wifi，然后选择“下一步”。
-4. 接受 Google 条款和条件，然后选择“下一步”。
-5. 在 Google 登录屏幕上，输入 afw#setup 而不是 Gmail 帐户，然后选择“下一步”。
-6. 为“Android 设备策略”应用选择“安装”。
+2. 在“欢迎使用”屏幕上，选择语言  。
+3. 连接到 Wifi，然后选择“下一步”   。
+4. 接受 Google 条款和条件，然后选择“下一步”  。
+5. 在 Google 登录屏幕上，输入 afw#setup 而不是 Gmail 帐户，然后选择“下一步”   。
+6. 为“Android 设备策略”应用选择“安装”   。
 7. 继续安装此策略。  某些设备可能要求接受附加条款。 
-8. 在“注册此设备”屏幕上，允许设备扫描 QR 码或选择手动输入令牌。
+8. 在“注册此设备”屏幕上，允许设备扫描 QR 码或选择手动输入令牌  。
 9. 请按照屏幕上的提示完成注册。 
 
 ### <a name="enroll-by-using-a-qr-code"></a>使用 QR 码注册
@@ -71,23 +71,24 @@ ms.locfileid: "66049979"
 要使用 Google 的 Zero Touch 系统，设备必须支持该系统，并且与该服务中的一个供应商关联。  有关详细信息，请参阅 [Google 的 Zero Touch 计划网站](https://www.android.com/enterprise/management/zero-touch/)。 
 
 1. 在 Zero Touch 控制台中创建新配置。
-2. 从 EMM DPC 下拉列表中选择“Microsoft Intune”。
-3. 在 Google 的 Zero Touch 控制台中，将以下 JSON 复制/粘贴到 DPC 附加字段中。 将 YourEnrollmentToken 字符串替换为在注册配置文件中创建的注册令牌。 请务必给注册令牌加上双引号。
+2. 从 EMM DPC 下拉列表中选择“Microsoft Intune”  。
+3. 在 Google 的 Zero Touch 控制台中，将以下 JSON 复制/粘贴到 DPC 附加字段中。 将 YourEnrollmentToken 字符串替换为在注册配置文件中创建的注册令牌  。 请务必给注册令牌加上双引号。
 
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+    ```json
+    { 
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
+    
+        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
+            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+        } 
     } 
-} 
-```
-4. 选择“应用”。
+    ```
+
+4. 选择“应用”  。
 
 
 ## <a name="next-steps"></a>后续步骤

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
-ms.translationtype: HT
+ms.openlocfilehash: ebd8f15a8f8633043f64cb4e004aafbb3c399042
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558507"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648896"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
@@ -51,17 +51,17 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 > [!Note]  
 > 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格  。
 
-## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>目标用户组应用安装将不会访问设备
-安装应用程序问题时，应考虑以下操作：
-- 如果应用程序不会显示在公司门户中，请确保与部署应用**可用**意向和用户与应用支持的设备类型访问公司门户。
-- 对于 Windows BYOD 设备，用户需要将工作帐户添加到设备。
-- 检查用户是否是通过 AAD 设备限制：
-  1. 导航到[Azure Active Directory 设备设置](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)。
-  2. 请记下为设置的值**每个用户的最大设备**。
-  3. 导航到[Azure Active Directory 用户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)。
-  4. 选择受影响的用户，然后单击**设备**。
-  5. 如果用户是通过设置限制，然后删除不再需要任何过期记录。
-- 对于 iOS DEP 设备，请确保用户被列为**注册的用户**Intune 设备概述边栏选项卡中。 如果显示 NA，然后将配置策略部署的 Intune 公司门户网站。 有关详细信息，请参阅[配置公司门户应用](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)。
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>用户组目标应用安装无法访问设备
+在安装应用程序时遇到问题时, 应考虑下列操作:
+- 如果公司门户中未显示应用程序, 请确保使用**可用**意向部署应用, 并且用户正在使用应用支持的设备类型访问公司门户。
+- 对于 Windows BYOD 设备, 用户需要将工作帐户添加到设备。
+- 检查用户是否超出 AAD 设备限制:
+  1. 导航到[Azure Active Directory 设备设置](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)"。
+  2. 记下为**每个用户的最大设备**设置的值。
+  3. 导航到[Azure Active Directory 用户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)"。
+  4. 选择受影响的用户, 然后单击 "**设备**"。
+  5. 如果用户超过设置限制, 则删除不再需要的任何过时记录。
+- 对于 iOS DEP 设备, 请确保用户在 Intune 设备概述边栏选项卡中列出为 "**用户已注册**"。 如果显示 NA, 则部署 Intune 公司门户的配置策略。 有关详细信息，请参阅[配置公司门户应用](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 应用安装疑难解答
 
@@ -161,8 +161,14 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 
 [排除 Microsoft 应用商店应用的打包、部署和查询故障](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)主题中的信息有助于解决使用 Intune 或其他方式从 Microsoft 应用商店安装应用时可能会遇到的问题。
 
+## <a name="app-troubleshoooting-resources"></a>应用 troubleshoooting 资源
+- [作为 Office Pro Plus 部署的一部分部署 Visio 和项目](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Deploying-Visio-and-Project-as-part-of-your-Office/ba-p/701795)
+- [采取措施, 确保通过 Intune 在 Windows 10 1903 上部署的 MSfB 应用](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Take-Action-to-Ensure-MSfB-Apps-deployed-through/ba-p/658864)
+- [Microsoft Intune 中的 MSI 应用部署疑难解答](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
+- [向 Intune 经典 Windows PC 代理分发软件的最佳实践](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
+
 ## <a name="next-steps"></a>后续步骤
 
 - 有关其他 Intune 疑难解答信息，请参阅[使用疑难解答门户为公司用户提供帮助](help-desk-operators.md)。 
-- 了解 Microsoft Intune 中的任何已知问题。 有关详细信息，请参阅 [Microsoft Intune 中的已知问题](known-issues.md)。
+- 了解 Microsoft Intune 中的任何已知问题。 有关详细信息, 请参阅[Intune 客户成功](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)。
 - 需要更多帮助？ 请参阅[如何获取对 Microsoft Intune 的支持](get-support.md)。
