@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b25a72fdc552433886f7eb3349a8f396e2019ea
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041641"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549433"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服务说明
 
@@ -39,13 +39,13 @@ Intune 与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访�
 可以通过包含 100 个用户许可证的 30 天免费试用版开始使用 Intune。 若要开始免费试用，[请转到 Intune 注册页面](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。 如果组织有企业协议或等效的批量许可协议，请与 Microsoft 代表联系以设置免费试用版。
 
 > [!NOTE]
-> 如果你的组织已有 Microsoft Online Services 工作或学校帐户，并且你有可能会在试用期结束后继续在生产中使用此 Intune 订阅，请选择该页上的“登录”选项，并使用组织的全局管理员帐户进行身份验证。 此操作可确保你的 Intune 试用版链接到你现有工作或学校帐户。
+> 如果你的组织已有 Microsoft Online Services 工作或学校帐户，并且你有可能会在试用期结束后继续在生产中使用此 Intune 订阅，请选择该页上的“登录”  选项，并使用组织的全局管理员帐户进行身份验证。 此操作可确保你的 Intune 试用版链接到你现有工作或学校帐户。
 
 <!--- For a list of settings that you can set up on mobile devices, see:
 
--   [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
+- [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
 
--   [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
+- [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
 
 For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
 ## <a name="intune-onboarding-benefit"></a>Intune 载入权益
@@ -85,7 +85,7 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 - 对你可能想要与支持人员或最终用户分享的最终用户体验的更改。 对此类更改，我们通常在 7-30 天前通知并将它们记录在 [Intune 应用 UI 中的新增功能](whats-new-app-ui.md)。 对于拼写错误的更改，我们通常不会在文档中标注。 但是，在 UI 中最终用户注册体验的任何一项更改都是非常重要的，因此，我们将会向 Office 365 消息中心的客户发送消息，并链接到 Intune App UI 中的“新增功能”部分，以便客户收到具体变更的通知，并在生产中推出更改之前有时间评估和更新最终用户的指南。
 
-- 需要你采取操作的更改称为“计划更改”，通常会提前大约 30 天通知。 在 Office 365 消息中心，该“类别”会特别提及“计划更改”，而且，如果我们有在生产中推出更改的确切日期，我们还会加入“采取行动”日期，让你看到更改队列和解释标记。
+- 需要你采取操作的更改称为“计划更改”  ，通常会提前大约 30 天通知。 在 Office 365 消息中心，该“类别”会特别提及“计划更改”，而且，如果我们有在生产中推出更改的确切日期，我们还会加入“采取行动”日期  ，让你看到更改队列和解释标记。
 
 - 对于大多数弃用功能，我们通常会提前 90 天发出弃用通知。 例如，如果我们不再支持特定版本的 IE，我们会计划提前 90 天发送通知。 但是，当另一家公司宣布弃用时，弃用通知将变得比较复杂。 例如，某一浏览器公司发出通知，他们将不再支持最新版本的 Silverlight，在这种情况下，我们会让客户知道我们即将停止对此浏览器的支持，但给客户通知的提前时间可能少于 90 天。
 

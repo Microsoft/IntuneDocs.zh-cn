@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416838"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713279"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>使用安全基线在 Intune 中配置 Windows 10 设备
 
@@ -155,7 +155,7 @@ Intune 托管设备上的安全基线类似于使用 Configuration Manager 的�
 3. 在“更改版本”  窗格中，使用“选择要更新到的安全基线”  下拉列表，然后选择要使用的版本实例。  
 
    ![选择版本](./media/security-baselines/select-instance.png)  
- 
+   
 4. 选择“查看更新”  ，下载显示配置文件当前实例版本与所选新版本之间的差异的 CSV 文件。 查看此文件可以了解添加、删除的设置以及这些设置在更新后的配置文件中的默认值。  
 
    准备就绪后，继续执行下一步骤。  

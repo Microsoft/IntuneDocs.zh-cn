@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e803eb3d47d44c8c8f3cd1b699b5ca220aeb91f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049113"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546979"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>将 Better Mobile 与 Intune 集成
 
@@ -32,47 +32,47 @@ ms.locfileid: "66049113"
 
 开始将 Better Mobile 与 Intune 集成之前，请确保具有以下各项：
 
--   Microsoft Intune 订阅
+- Microsoft Intune 订阅
 
--   用于授予下列权限的 Azure Active Directory 管理员凭据：
+- 用于授予下列权限的 Azure Active Directory 管理员凭据：
 
-    -   登录和读取用户配置文件
+    - 登录和读取用户配置文件
 
-    -   使用已登录用户的身份访问目录
+    - 使用已登录用户的身份访问目录
 
-    -   读取目录数据
+    - 读取目录数据
 
-    -   向 Intune 发送设备信息
+    - 向 Intune 发送设备信息
 
--   用于访问 Better Mobile 管理控制台的管理员凭据。
+- 用于访问 Better Mobile 管理控制台的管理员凭据。
 
 ### <a name="better-mobile-app-authorization"></a>Better Mobile 应用授权
 
 Better Mobile 应用授权流程如下：
 
--   允许 Better Mobile 服务将与设备运行状况状态相关的信息反馈给 Intune。
+- 允许 Better Mobile 服务将与设备运行状况状态相关的信息反馈给 Intune。
 
--   同步 Better Mobile 与 Azure AD 注册组成员身份，以填充其设备的数据库。
+- 同步 Better Mobile 与 Azure AD 注册组成员身份，以填充其设备的数据库。
 
--   允许 Better Mobile 管理控制台使用 Azure AD 单一登录 (SSO)。
+- 允许 Better Mobile 管理控制台使用 Azure AD 单一登录 (SSO)。
 
--   允许 Better Mobile 应用使用 Azure AD SSO 登录。
+- 允许 Better Mobile 应用使用 Azure AD SSO 登录。
 
 ## <a name="to-set-up-better-mobile-integration"></a>要设置 Better Mobile 集成，请执行以下操作：
 
 1. 转到 [Better Mobile 管理控制台](https://aad.bmobi.net)，使用凭据登录。
-2. 选择“集成” > “EMM/MDM” > “添加帐户”。
+2. 选择“集成”   > “EMM/MDM”   > “添加帐户”  。
 
      ![Better Mobile 管理控制台的示意图](media/better_mobile_console.png)
  
-3. 选择“Intune”。
-4. 在“帐户名称”旁边，键入描述符。 
-5. 在“Microsoft 登录”窗口中，输入 Intune 凭据。
-6. 在“请求权限”窗口中，选择“接受”。
-7. 搜索希望 Better Mobile 从中同步设备的 Azure AD 安全组，并在列表中选择它们。 然后，选择“继续”。
-8. 选择“完成”。
-9. 随即会再次出现“添加帐户”页。 关闭该页。 
+3. 选择“Intune”  。
+4. 在“帐户名称”  旁边，键入描述符。 
+5. 在“Microsoft 登录”  窗口中，输入 Intune 凭据。
+6. 在“请求权限”  窗口中，选择“接受”  。
+7. 搜索希望 Better Mobile 从中同步设备的 Azure AD 安全组，并在列表中选择它们。 然后，选择“继续”  。
+8. 选择“完成”  。
+9. 随即会再次出现“添加帐户”  页。 关闭该页。 
 
 ## <a name="next-steps"></a>后续步骤
 
--   [设置更好的客户端应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [设置更好的客户端应用](mtd-apps-ios-app-configuration-policy-add-assign.md)

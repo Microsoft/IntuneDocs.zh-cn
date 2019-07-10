@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045980"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549290"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>确定移动设备管理用例场景
 
@@ -33,9 +33,9 @@ ms.locfileid: "66045980"
 ## <a name="device-ownership"></a>设备所有权
 首先可以参考组织的 Intune 部署目标和宗旨，帮助确定用于部署的主要用例场景。 在 Intune 部署计划的范围内，回答以下问题：
 
--   是否打算支持企业拥有的设备？
+- 是否打算支持企业拥有的设备？
 
--   是否打算支持个人拥有的设备 (BYOD)？
+- 是否打算支持个人拥有的设备 (BYOD)？
 
 这些不是选择题。 你可能会发现，你需要同时支持两种形式的设备所有权才能满足你的组织目标。 子用例将帮助阐明应用不同设备管理策略的位置。
 
@@ -43,11 +43,11 @@ ms.locfileid: "66045980"
 
 确定是否每个用例场景还包括子用例。 例如，你的组织可能已确定要求，用以支持包含基于用户类型或设备角色的其他子用例的企业用例场景，例如：
 
--   信息工作者
+- 信息工作者
 
--   高级管理人员
+- 高级管理人员
 
--   Kiosk
+- Kiosk
 
 下面是几个用例和子用例场景的示例：
 

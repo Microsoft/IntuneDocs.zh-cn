@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 6480c6fb412c12e228b8bc3647045cf15da531e1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044073"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548019"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 连接器
 
 可根据 Symantec Endpoint Protection Mobile (SEP Mobile) 给出的风险评估，使用条件访问控制移动设备对公司资源的访问，SEP Mobile 是与 Microsoft Intune 集成的移动威胁防御解决方案。 基于从运行 SEP Mobile 的设备收集的遥测评估风险，包括：
 
--   物理防御
+- 物理防御
 
--   网络防御
+- 网络防御
 
--   应用程序防御
+- 应用程序防御
 
--   漏洞防御
+- 漏洞防御
 
 可以通过 Intune 设备符合性策略启用 SEP Mobile 风险评估，然后使用条件访问策略根据检测到的威胁允许或阻止不符合设备访问公司资源。
 
@@ -48,9 +48,9 @@ Intune 设备符合性策略包括基于 SEP Mobile 风险评估的 SEP Mobile �
 
 Intune 支持与 SEP Mobile 集成的两种模式：
 
--    “基本设置”为只读模式，Intune 中的设备在该模式下对 SEP Mobile 可见。
+-  “基本设置”为只读模式，Intune 中的设备在该模式下对 SEP Mobile 可见。
 
--    “完全集成”允许 SEP Mobile 向 Intune 报告设备风险和安全事件的详细信息。
+-  “完全集成”允许 SEP Mobile 向 Intune 报告设备风险和安全事件的详细信息。
 
 ## <a name="sample-scenarios"></a>示例方案
 
@@ -60,11 +60,11 @@ Intune 支持与 SEP Mobile 集成的两种模式：
 
 在设备上检测到恶意应用（如恶意软件）时，可阻止设备，直到解除威胁：
 
--   连接到公司电子邮件
+- 连接到公司电子邮件
 
--   使用 OneDrive for Work 应用同步企业文件
+- 使用 OneDrive for Work 应用同步企业文件
 
--   访问公司应用
+- 访问公司应用
 
 **检测到恶意应用时对其进行阻止：**
 
@@ -100,17 +100,17 @@ Intune 支持与 SEP Mobile 集成的两种模式：
 
 ## <a name="supported-platforms"></a>受支持的平台
 
--   **Android 4.1 及更高版本**
+- **Android 4.1 及更高版本**
 
--   **iOS 8 及更高版本**
+- **iOS 8 及更高版本**
 
 ## <a name="pre-requisites"></a>先决条件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 订阅
+- Microsoft Intune 订阅
 
--   Symantec Endpoint Protection Mobile 订阅
+- Symantec Endpoint Protection Mobile 订阅
 
 有关详细信息，请参阅 [Symantec 网站](https://www.skycure.com/skycure-microsoft-integration/)。
 

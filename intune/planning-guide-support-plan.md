@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041462"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548327"
 ---
 # <a name="develop-a-support-plan"></a>制定支持计划
 
 拥有一个 Intune 支持计划有助于更高效地确定和解决与 Intune 相关的问题。 同时又可提高用户的总体 Intune 体验。 下面是制定 Intune 支持计划时要考虑的一些问题：
 
--   哪些团队负责提供 Intune 支持？
+- 哪些团队负责提供 Intune 支持？
 
--   哪个流程可用于提供 Intune 支持？
+- 哪个流程可用于提供 Intune 支持？
 
--   计划如何提供 Intune 支持培训？
+- 计划如何提供 Intune 支持培训？
 
--   有什么机会可以让支持团队早点参与到 Intune 部署流程中？
+- 有什么机会可以让支持团队早点参与到 Intune 部署流程中？
 
 让我们更详细地研究一下每个方面。
 
@@ -50,23 +50,23 @@ ms.locfileid: "66041462"
 
 对于产品推出的初始阶段，可将这 3 个层次全部囊括在网桥或 Skype 调用之中。 下面举例说明了组织如何实现其 IT 支持或帮助台工作流：
 
-1.  最终用户就注册问题联系第 1 层 IT 支持或帮助台。
+1. 最终用户就注册问题联系第 1 层 IT 支持或帮助台。
 
-2.  如果第 1 层 IT 支持或帮助台无法确定根本原因，他们会上报给第 2 层。
+2. 如果第 1 层 IT 支持或帮助台无法确定根本原因，他们会上报给第 2 层。
 
-3.  第 2 层的 IT 支持或帮助台经过调查，还不能解决问题，就会上报给第 3 层，同时提供将附加信息来协助调查。
+3. 第 2 层的 IT 支持或帮助台经过调查，还不能解决问题，就会上报给第 3 层，同时提供将附加信息来协助调查。
 
-4.  第 3 层的 IT 支持人员或相关支持人员将作进一步调查，以确定根本原因，并将解决方法传至第 2 层和第 1 层。
+4. 第 3 层的 IT 支持人员或相关支持人员将作进一步调查，以确定根本原因，并将解决方法传至第 2 层和第 1 层。
 
-5.  然后第 1 层的 IT 支持/帮助台与客户联系并解决其问题。
+5. 然后第 1 层的 IT 支持/帮助台与客户联系并解决其问题。
 
 这类方法可以带来很多益处，尤其是在 Intune 推出的早期阶段，包括：
 
--   协助技术学习和推广。
+- 协助技术学习和推广。
 
--   快速确定问题和解决方案。
+- 快速确定问题和解决方案。
 
--   提高整体用户体验。
+- 提高整体用户体验。
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>计划如何提供 Intune 支持培训？
 
@@ -74,15 +74,15 @@ ms.locfileid: "66041462"
 
 下面介绍 Intune 支持培训议程的示例。
 
--   Intune 支持计划评审
+- Intune 支持计划评审
 
--   Intune 概述
+- Intune 概述
 
--   常见问题故障排除
+- 常见问题故障排除
 
--   工具和资源
+- 工具和资源
 
--   问与答
+- 问与答
 
 [Intune 文档](https://docs.microsoft.com/intune/)提供 Intune 概述、详细的功能说明及一些故障排除信息。 [Intune 论坛](https://social.technet.microsoft.com/Forums/home)是基于社区的资源，涉及 Intune 文档中未涵盖的问题及主题。
 

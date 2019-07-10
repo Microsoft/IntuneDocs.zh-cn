@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8bbb1c7ec7151a09c8eeae33f4252781e5338f7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048332"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546712"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用设备注册管理员帐户在 Intune 中注册设备
 
@@ -44,11 +44,11 @@ ms.locfileid: "66048332"
 
 ## <a name="add-a-device-enrollment-manager"></a>添加一个设备注册管理器
 
-1.  在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “设备注册管理员”。
+1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “设备注册管理员”   。
 
-2.  选择“添加”。
+2. 选择“添加”  。
 
-3.  在“添加用户”边栏选项卡上，输入 DEM 用户的用户主体名称，并选择“添加”。 DEM 用户将添加到 DEM 用户列表。
+3. 在“添加用户”  边栏选项卡上，输入 DEM 用户的用户主体名称，并选择“添加”  。 DEM 用户将添加到 DEM 用户列表。
 
 ## <a name="permissions-for-dem"></a>DEM 的权限
 
@@ -65,6 +65,6 @@ ms.locfileid: "66048332"
 
 **删除设备注册管理器**
 
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”，然后选择“设备注册管理器”。
-2. 在“设备注册管理员”边栏选项卡上，选择 DEM 用户，然后选择“删除”。
+1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”，然后选择“设备注册管理器”   。
+2. 在“设备注册管理员”边栏选项卡上，选择 DEM 用户，然后选择“删除”   。
 

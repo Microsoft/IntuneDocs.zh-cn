@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: faceee883194dbbdcec83f282806035ffc0432d1
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 1fda4268e66703c8bd2132c9af22fed52f1791b1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174180"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548957"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>教程：使用 Apple 商务管理 (ABM) 中的 Apple 公司设备注册功能在 Intune 中注册 iOS 设备
 Apple 商务管理中的设备注册功能简化了注册设备过程。 Intune 还支持 Apple 的旧版设备注册计划 (DEP) 门户，但我们鼓励使用 Apple 商务管理重新开始注册。 借助 Microsoft Intune 和 Apple 公司设备注册，设备会在用户第一次打开设备时自动安全地进行注册。 因此可以向许多用户发送设备，而无需单独设置每个设备。 
@@ -53,7 +53,7 @@ Apple 商务管理中的设备注册功能简化了注册设备过程。 Intune 
 
 4. 选择“创建 Apple 设备注册计划令牌”，以打开 Apple 部署计划门户，并使用公司 Apple ID 登录  。 可使用此 Apple ID 续订 DEP 令牌。
 
-5.  在 Apple [部署计划门户](https://deploy.apple.com)中，对“设备注册计划”选择“开始”   。 你的注册流程可能与 [Apple 商务管理](https://business.apple.com)中的以下步骤略有不同。
+5. 在 Apple [部署计划门户](https://deploy.apple.com)中，对“设备注册计划”选择“开始”   。 你的注册流程可能与 [Apple 商务管理](https://business.apple.com)中的以下步骤略有不同。
 
 4. 在“管理服务器”  页上，选择“添加 MDM 服务器”  。
 

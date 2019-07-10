@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 980138015cdbe063d6d4b05eb6dd8ab70be4b601
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512251"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548484"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Pradeo 移动威胁防御连接器与 Intune
 
@@ -41,11 +41,11 @@ Intune 设备符合性策略包括基于 Pradeo 风险评估的 Pradeo 移动威
 
 在设备上检测到恶意应用（如恶意软件）时，可阻止进行以下操作，直到解决威胁：
 
--   连接到公司电子邮件
+- 连接到公司电子邮件
 
--   使用 OneDrive for Work 应用同步企业文件
+- 使用 OneDrive for Work 应用同步企业文件
 
--   访问公司应用
+- 访问公司应用
 
 **检测到恶意应用时对其进行阻止：**
 
@@ -81,19 +81,19 @@ Intune 设备符合性策略包括基于 Pradeo 风险评估的 Pradeo 移动威
 
 ## <a name="supported-platforms"></a>受支持的平台
 
--   **Android 4.0.3 和更高版本**
+- **Android 4.0.3 和更高版本**
 
--   **iOS 7 及更高版本**
+- **iOS 7 及更高版本**
 
 ## <a name="prerequisites"></a>必备条件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 订阅
+- Microsoft Intune 订阅
 
--   用于移动威胁防御的 Pradeo Security 订阅
+- 用于移动威胁防御的 Pradeo Security 订阅
 
-    -   有关详细信息，请参阅 [Pradeo 网站](https://www.pradeo.com/en-US/mobile-threat-protection)。
+    - 有关详细信息，请参阅 [Pradeo 网站](https://www.pradeo.com/en-US/mobile-threat-protection)。
 
 ## <a name="next-steps"></a>后续步骤
 

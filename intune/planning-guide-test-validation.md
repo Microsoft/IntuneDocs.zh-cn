@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046055"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549356"
 ---
 # <a name="intune-testing-and-validation"></a>Intune 测试和验证
 
@@ -33,17 +33,17 @@ ms.locfileid: "66046055"
 
 建议记录以下内容：
 
--   **测试条件：** 确定度量依据基准。
+- **测试条件：** 确定度量依据基准。
 
--   **设计组件：** 至少必须符合 1 个测试条件。
+- **设计组件：** 至少必须符合 1 个测试条件。
 
 如果设计组件未存在于至少 1 个符合要求或场景的测试条件中，请考虑该设计组件是否必需。 此外，请确保具备以下项：
 
--   **帐户：** 应获得 EMS 和 Office 365 许可且可用于测试所有用例方案的测试帐户。
+- **帐户：** 应获得 EMS 和 Office 365 许可且可用于测试所有用例方案的测试帐户。
 
--   **设备：** 可擦除或重置为出厂默认设置的测试设备。
+- **设备：** 可擦除或重置为出厂默认设置的测试设备。
 
--   **集成组件：** 必要时，应安装和配置所有集成组件（证书连接器和 Intune Exchange 本地连接器）。
+- **集成组件：** 必要时，应安装和配置所有集成组件（证书连接器和 Intune Exchange 本地连接器）。
 
 可能需要进行设计更改以适应无法预料的困难。 此外，应完整记录所有设计更改，并随附每项更改的原因。 以下示例演示了可能的更改：
 
@@ -51,9 +51,9 @@ ms.locfileid: "66046055"
 
 在测试和验证过程中，可能会遇到需要技术指导或专项疑难解答的挑战或问题。 建议通过 Microsoft 支持渠道寻求帮助。
 
--   [了解如何获得 Intune 支持](get-support.md)
+- [了解如何获得 Intune 支持](get-support.md)
 
--   [联系 Microsoft Intune 的辅助电话支持](get-support.md)
+- [联系 Microsoft Intune 的辅助电话支持](get-support.md)
 
 ## <a name="functional-validation-testing"></a>功能验证测试
 

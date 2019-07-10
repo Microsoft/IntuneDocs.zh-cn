@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d07d9466cda86270898d0e54e8d50b358bcb1b84
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0c962085ce61f01613bfc04ef0c80699e6f5a3e8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494105"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547432"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -44,15 +44,15 @@ ms.locfileid: "67494105"
 ## <a name="prerequisites"></a>必备条件
 
 若要使用 KME 注册到 Intune，必须首先通过执行以下步骤在 Samsung Knox 门户上注册你的公司：
-1.  [确保 KME 适用于你所在的区域](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries)：KME 适用于超过 55 个国家/地区。 确保支持你所在的国家/地区的部署。
+1. [确保 KME 适用于你所在的区域](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries)：KME 适用于超过 55 个国家/地区。 确保支持你所在的国家/地区的部署。
 
-2.  [受支持的设备](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+)：KME 适用于所有 Samsung 设备。若要进行 Android 注册，版本至少必须为 Knox 2.4；若要进行 Android Enterprise 注册，版本至少必须为 Knox 2.8。
+2. [受支持的设备](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+)：KME 适用于所有 Samsung 设备。若要进行 Android 注册，版本至少必须为 Knox 2.4；若要进行 Android Enterprise 注册，版本至少必须为 Knox 2.8。
 
-3.  [网络要求](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm)：请确保网络允许必要的防火墙和网络访问规则。
+3. [网络要求](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm)：请确保网络允许必要的防火墙和网络访问规则。
 
-4.  [注册 Samsung 帐户](https://www2.samsungknox.com/en/user/register)：必须使用 Samsung 帐户，才能注册和启用 KME，并在一处集中管理所有 Knox Enterprise 权利。
+4. [注册 Samsung 帐户](https://www2.samsungknox.com/en/user/register)：必须使用 Samsung 帐户，才能注册和启用 KME，并在一处集中管理所有 Knox Enterprise 权利。
 
-5.  注册审核：在你填写并提交配置文件后，Samsung 会审核你的申请，然后要么立即批准它，要么将它置于待审核状态，以供进一步跟进。 帐户获得批准后，可以继续执行后续步骤。
+5. 注册审核：在你填写并提交配置文件后，Samsung 会审核你的申请，然后要么立即批准它，要么将它置于待审核状态，以供进一步跟进。 帐户获得批准后，可以继续执行后续步骤。
 
 ## <a name="create-mdm-profile"></a>创建 MDM 配置文件
 

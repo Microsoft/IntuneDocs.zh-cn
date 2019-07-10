@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494594"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548363"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>第 1 阶段：为移动设备管理 (MDM) 准备 Microsoft Intune
 
@@ -31,30 +31,30 @@ ms.locfileid: "67494594"
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>你需要管理哪些类型的设备？
 
--   需要支持哪些[平台](supported-devices-browsers.md)？
+- 需要支持哪些[平台](supported-devices-browsers.md)？
 
--   这些是不是需要用来支持公司或个人的设备？
+- 这些是不是需要用来支持公司或个人的设备？
 
--   使用哪种连接？ Wi-Fi、手机网络还是 VPN？
+- 使用哪种连接？ Wi-Fi、手机网络还是 VPN？
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>用户需要在受管理设备上执行哪些操作？
 
--   是否需要为最终用户预配应用？
+- 是否需要为最终用户预配应用？
 
--   是否使用自定义业务线应用？ 或者，你是否只需要公共应用商店应用？
+- 是否使用自定义业务线应用？ 或者，你是否只需要公共应用商店应用？
 
--   是否需要预配电子邮件帐户？
+- 是否需要预配电子邮件帐户？
 
 ### <a name="what-kinds-of-users"></a>用户属于哪些类型？
 
--   一台设备将由多少用户使用？
+- 一台设备将由多少用户使用？
 
--   需要哪些使用条款？
+- 需要哪些使用条款？
 
-    -   请务必让法律部门尽早参与到其中。
-    -   何种本地化是必需的？
+    - 请务必让法律部门尽早参与到其中。
+    - 何种本地化是必需的？
 
--   用户是否熟悉常规技术和 IT？
+- 用户是否熟悉常规技术和 IT？
 
 ### <a name="what-is-your-device-security-policy"></a>什么是设备安全策略？
 
@@ -68,11 +68,11 @@ ms.locfileid: "67494594"
 
 - 必须支持哪些类型的身份验证？ 如果需要基于证书的身份验证，必须预配哪些类型的证书？
   - Intune 可以为注册设备预配具备资源访问配置文件的证书。
-  -   你需要支持哪种类型的公钥基础结构 (PKI)？
+  - 你需要支持哪种类型的公钥基础结构 (PKI)？
   <br></br>
 - 是否需要支持设备或应用级别的虚拟专用网 (VPN)？
 
-  -   Intune 可以预配第三方 VPN 提供程序的 VPN 配置。
+  - Intune 可以预配第三方 VPN 提供程序的 VPN 配置。
   <br/><br/>
 - 是否可以针对某些要求允许临时异常来避免故障时间？ 或者，具有访问权限的设备是否必须始终符合所有安全要求？
 

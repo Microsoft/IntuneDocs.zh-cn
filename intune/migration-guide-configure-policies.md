@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 86aefbfc37db7929f9748d4783db319cf97d4545
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512267"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548469"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>在迁移到 Microsoft Intune 时，配置设备符合性和应用管理策略
 
@@ -30,13 +30,13 @@ ms.locfileid: "67512267"
 
 每个设备平台可能会提供不同的设置，但 Intune 设备策略通过提供以下移动设备管理功能用于每个设备平台：
 
--   控制每个用户注册的设备数。
+- 控制每个用户注册的设备数。
 
--   管理设备设置（如设备级别的加密、密码长度、照相机使用情况）。
+- 管理设备设置（如设备级别的加密、密码长度、照相机使用情况）。
 
--   提供应用、电子邮件配置文件、VPN 配置文件等。
+- 提供应用、电子邮件配置文件、VPN 配置文件等。
 
--   评估安全符合性策略的设备级条件。
+- 评估安全符合性策略的设备级条件。
 
 > [!IMPORTANT]
 > 设备管理策略不直接分配给单个设备或用户，而是分配给用户组。 策略可能直接应用到用户组，从而应用到用户设备，策略也可能应用到设备组，并因此应用到组成员。
@@ -61,9 +61,9 @@ ms.locfileid: "67512267"
 
 #### <a name="directly-import-ios-configuration-profiles-optional"></a>直接导入 iOS 配置的配置文件（可选）
 
--   **Apple Configurator iOS 配置文件（iOS 7.1 及更高版本）：** 如果现有 MDM 解决方案使用 Apple Configurator 配置文件（.mobileconfig 文件），Intune 可以直接导入它们作为自定义配置策略。
+- **Apple Configurator iOS 配置文件（iOS 7.1 及更高版本）：** 如果现有 MDM 解决方案使用 Apple Configurator 配置文件（.mobileconfig 文件），Intune 可以直接导入它们作为自定义配置策略。
 
--   **iOS 移动应用配置策略：** 如果现有 MDM 解决方案使用 iOS 移动应用配置策略，Intune 可以直接导入它们，前提是它们符合 Apple 针对属性列表指定的 XML 格式。
+- **iOS 移动应用配置策略：** 如果现有 MDM 解决方案使用 iOS 移动应用配置策略，Intune 可以直接导入它们，前提是它们符合 Apple 针对属性列表指定的 XML 格式。
 
 - 了解如何添加适用于 [iOS](custom-settings-ios.md) 的自定义策略。
 
@@ -71,25 +71,25 @@ ms.locfileid: "67512267"
 
 设备符合性策略评估以安全为目标的设置，并提供显示设备是否符合企业标准的报告。 此类设置包括：
 
--   PIN 长度
+- PIN 长度
 
--   越狱状态
+- 越狱状态
 
--   OS 版本
+- OS 版本
 
 请参阅有关设备符合性设置的其他资源：
 
--   了解[设备符合性策略](device-compliance.md)。
+- 了解[设备符合性策略](device-compliance.md)。
 
--   了解[如何创建设备符合性策略](device-compliance-get-started.md)。
+- 了解[如何创建设备符合性策略](device-compliance-get-started.md)。
 
 ### <a name="task-5-publish-and-deploy-apps"></a>任务 5：发布和部署应用
 
 使用 Intune MDM 时，可以通过要求其自动安装，或使它们在公司门户中可用的方式来提供应用。
 
--   [如何添加应用](apps-add.md)。
+- [如何添加应用](apps-add.md)。
 
--   [如何部署应用](apps-deploy.md)。
+- [如何部署应用](apps-deploy.md)。
 
 ### <a name="task-6-enable-device-enrollment"></a>任务 6：启用设备注册
 

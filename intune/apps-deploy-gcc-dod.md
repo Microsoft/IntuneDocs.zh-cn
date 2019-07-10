@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed4bc1d4063c177f438f7b7fbbe960b28a2a904c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 17d94252dd957c5699b34e0b8c2cbae2eee0b66f
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049335"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713359"
 ---
 # <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>使用 Intune 在 GCC 高级版和 DoD 环境中部署应用 
 
@@ -40,10 +40,10 @@ ms.locfileid: "66049335"
 如果需要从适用于企业的 Microsoft Store 中[下载脱机许可应用](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app)，请按照以下步骤下载应用程序： 
 
 1. 登录到[适用于企业的 Microsoft Store](https://businessstore.microsoft.com/)。
-2. 选择“管理” > “设置”。
-3. 在“购物体验”下，将“显示脱机应用”设置为“开”。
+2. 选择“管理” > “设置”   。
+3. 在“购物体验”下，将“显示脱机应用”设置为“开”    。
 
-购买应用时，如果有脱机版本，可以选择将许可类型更改为脱机。 获取应用后，可以通过选择[适用于企业的 Microsoft Store](https://businessstore.microsoft.com/) 中的“管理” > “产品和服务”来管理该应用。 此外，可以下载应用及其依赖项。 然后，可以使用 Intune 向用户部署此下载的应用（及其依赖项）。  
+购买应用时，如果有脱机版本，可以选择将许可类型更改为脱机。 获取应用后，可以通过选择[适用于企业的 Microsoft Store](https://businessstore.microsoft.com/) 中的“管理” > “产品和服务”来管理该应用   。 此外，可以下载应用及其依赖项。 然后，可以使用 Intune 向用户部署此下载的应用（及其依赖项）。  
 
 ## <a name="syncing-intune-to-the-store-for-business"></a>将 Intune 同步到适用于企业的 Microsoft Store 
 

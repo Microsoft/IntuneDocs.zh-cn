@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530691"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572563"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast 移动威胁防御连接器与 Intune
 
@@ -45,11 +45,11 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 在设备上检测到恶意应用（如恶意软件）时，可阻止设备，直到解除威胁：
 
--   连接到公司电子邮件
+- 连接到公司电子邮件
 
--   使用 OneDrive for Work 应用同步企业文件
+- 使用 OneDrive for Work 应用同步企业文件
 
--   访问公司应用
+- 访问公司应用
 
 **检测到恶意应用时对其进行阻止：**
 
@@ -61,7 +61,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-based-on-threat-to-network"></a>根据网络威胁控制访问权限
 
-检测“ **中间人**”等网络威胁，并根据设备风险保护对 Wi-Fi 网络的访问。 
+检测**中间人**等网络威胁，并基于设备风险保护对 WiFi 网络的访问。
 
 **阻止通过 Wi-Fi 访问网络：**
 
@@ -73,7 +73,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
-检测“ **中间人**”等网络威胁，并根据设备风险阻止公司文件的同步。  
+检测**中间人**等网络威胁，根据设备风险阻止公司文件的同步。
 
 **检测到网络威胁时阻止 SharePoint Online：**
 
@@ -85,18 +85,18 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ## <a name="supported-platforms"></a>受支持的平台
 
--   **Android 4.1 及更高版本**
+- **Android 4.1 及更高版本**
 
--   **iOS 8 及更高版本**
+- **iOS 8 及更高版本**
 
 ## <a name="pre-requisites"></a>先决条件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune 订阅
+- Microsoft Intune 订阅
 
--   Check Point SandBlast Mobile 威胁防御订阅
-    -   有关详细信息，请参阅 [CheckPoint SandBlast 网站 ](https://www.checkpoint.com/)。
+- Check Point SandBlast Mobile 威胁防御订阅
+    - 有关详细信息，请参阅 [CheckPoint SandBlast 网站 ](https://www.checkpoint.com/)。
 
 ## <a name="next-steps"></a>后续步骤
 

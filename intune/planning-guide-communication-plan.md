@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046231"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548354"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>制定推出通信计划
 
 良好的变更管理依赖于与即将实行的变更相关的清楚有效的通信。 若要让 Intune 部署路径更流畅，推出通信计划应包括四个方面：
 
--   将传达哪些信息
+- 将传达哪些信息
 
--   用于通信的传递方法
+- 用于通信的传递方法
 
--   接收通信的人员
+- 接收通信的人员
 
--   通信的时间线
+- 通信的时间线
 
 让我们更详细地研究一下每个方面。
 
@@ -42,13 +42,13 @@ ms.locfileid: "66046231"
 
 确定要传达的信息将取决于在 Intune 推出过程中进行通信的时间。 可能会决定分波次与组织中的组和用户通信，以 Intune 推出“启动”开始，接着是“预注册”，然后是“注册后”。 接下来将讨论在每一波次中可传达的信息类型。
 
-“启动”波次 <br/>用于介绍 Intune 项目本身的广泛通信。 此类通信应回答诸如什么是 Intune、为什么组织应采用 Intune（对组织和用户而言有何优势）等问题，并提供高级别的部署和推出计划。
+“启动”波次  <br/>用于介绍 Intune 项目本身的广泛通信。 此类通信应回答诸如什么是 Intune、为什么组织应采用 Intune（对组织和用户而言有何优势）等问题，并提供高级别的部署和推出计划。
 
-“预注册”波次<br/> 即包括其他信息的广泛通信，相关信息有 Intune 和配套产品/服务（例如 Office、Outlook 和 OneDrive）、用户资源和安排组织组及用户接收 Intune 的特定时间线。
+“预注册”波次 <br/> 即包括其他信息的广泛通信，相关信息有 Intune 和配套产品/服务（例如 Office、Outlook 和 OneDrive）、用户资源和安排组织组及用户接收 Intune 的特定时间线。
 
-“注册”波次<br/> 此类通信面向计划接收 Intune 的组织的组和用户。 用于通知用户准备接收 Intune 并提供注册说明和联系信息，以便获取帮助或提出问题。
+“注册”波次 <br/> 此类通信面向计划接收 Intune 的组织的组和用户。 用于通知用户准备接收 Intune 并提供注册说明和联系信息，以便获取帮助或提出问题。
 
-“注册后”波次<br/> 此类通信针对已注册 Intune 的组织组和用户。 用于向用户提供其他有用资源，并收集注册期间和注册后的用户体验反馈。
+“注册后”波次 <br/> 此类通信针对已注册 Intune 的组织组和用户。 用于向用户提供其他有用资源，并收集注册期间和注册后的用户体验反馈。
 
 可阅读此[最终用户注册指南](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)，获取相关说明和指导。 可按原样使用，或根据组织需要来操作。
 
@@ -56,13 +56,13 @@ ms.locfileid: "66046231"
 
 提供几种可用来向目标组织组和用户传达 Intune 推出信息的传递方法。 以下列表展示了一些示例及可应用该方法的波次：
 
--   整个组织中针对启动阶段的面对面会议或 Microsoft Teams 会议
+- 整个组织中针对启动阶段的面对面会议或 Microsoft Teams 会议
 
--   用于“预注册”、“注册”和“注册后”波次的电子邮件
+- 用于“预注册”、“注册”和“注册后”波次的电子邮件
 
--   用于所有波次的组织网站
+- 用于所有波次的组织网站
 
--   用于“启动”和“预注册”波次的 Yammer、海报和传单
+- 用于“启动”和“预注册”波次的 Yammer、海报和传单
 
 ## <a name="communications-timeline"></a>通信时间线
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87e5ac06e93027b577d42b27e7d15b9b18e11020
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 30e104d82580a5a0b6b01edb0eaade0673b33d83
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046365"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548404"
 ---
 # <a name="typical-migration-cycle"></a>典型迁移周期
 
@@ -55,9 +55,9 @@ Intune 提供了几种方法，可用于监视迁移情况：
 
 在每个阶段完成之后跟踪注册设备的用户数量，从而可以：
 
--   评估通信计划的有效性。
+- 评估通信计划的有效性。
 
--   估计强制实施条件访问的影响。
+- 估计强制实施条件访问的影响。
 
 
 ## <a name="post-migration"></a>迁移后

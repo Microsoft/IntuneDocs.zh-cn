@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffaf29d34c7f6a08d48717f7560926d53cfa8ba2
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: da828b162e008541cb5cb2b5d15092d0fce417c5
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529778"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572537"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>在 Microsoft Intune 中设置 Intune 本地 Exchange 连接器
 本文中的信息有助于安装和监视 Intune 的 Exchange Active Sync 本地连接器。  结合使用 Intune 本地 Exchange 连接器与[条件访问策略，以允许或阻止对 Exchange 本地邮箱的访问](conditional-access-exchange-create.md)。 
@@ -58,22 +58,22 @@ Intune 支持每个订阅安装多个本地 Exchange 连接器。 如果有多�
 创建将由本地 Exchange 连接器使用的 Active Directory 用户帐户。 帐户必须具有运行以下要求的 Windows PowerShell Exchange cmdlets 的权限：
 
 
- -   Get-ActiveSyncOrganizationSettings、Set-ActiveSyncOrganizationSettings
- -   Get-CasMailbox、Set-CasMailbox
- -   Get-ActiveSyncMailboxPolicy、Set-ActiveSyncMailboxPolicy、New-ActiveSyncMailboxPolicy、Remove-ActiveSyncMailboxPolicy
- -   Get-ActiveSyncDeviceAccessRule、Set-ActiveSyncDeviceAccessRule、New-ActiveSyncDeviceAccessRule、Remove-ActiveSyncDeviceAccessRule
- -   Get-ActiveSyncDeviceStatistics
- -   Get-ActiveSyncDevice
- -   Get-ExchangeServer
- -   Get-ActiveSyncDeviceClass
- -   Get-Recipient
- -   Clear-ActiveSyncDevice、Remove-ActiveSyncDevice
- -   Set-ADServerSettings
- -   Get-Command
+ - Get-ActiveSyncOrganizationSettings、Set-ActiveSyncOrganizationSettings
+ - Get-CasMailbox、Set-CasMailbox
+ - Get-ActiveSyncMailboxPolicy、Set-ActiveSyncMailboxPolicy、New-ActiveSyncMailboxPolicy、Remove-ActiveSyncMailboxPolicy
+ - Get-ActiveSyncDeviceAccessRule、Set-ActiveSyncDeviceAccessRule、New-ActiveSyncDeviceAccessRule、Remove-ActiveSyncDeviceAccessRule
+ - Get-ActiveSyncDeviceStatistics
+ - Get-ActiveSyncDevice
+ - Get-ExchangeServer
+ - Get-ActiveSyncDeviceClass
+ - Get-Recipient
+ - Clear-ActiveSyncDevice、Remove-ActiveSyncDevice
+ - Set-ADServerSettings
+ - Get-Command
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange 连接器软件安装包
 
-1. 在本地 Exchange 连接器支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange Server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](https://portal.azure.com)。
+1. 在本地 Exchange 连接器支持的 Windows Server 操作系统上，使用用户帐户（该帐户是本地 Exchange server 中的管理员且有使用 Exchange Server 的许可证）打开 [Azure 门户](https://portal.azure.com)。
 
 2. 转到“Intune” > “Exchange 访问”    
 

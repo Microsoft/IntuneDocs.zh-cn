@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 07/09/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 325428f99c50ac4d2eede35d4aaadd858cd8b136
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ec03471e4ff3940f09fe4a9bef53b86e32bafa8
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047671"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713349"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入门：免费试用 Microsoft Intune 
 
@@ -38,7 +38,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>注册 Microsoft Intune 免费试用版
 
-可以免费试用 Intune 30 天。 如果已有工作或学校帐户，请使用该帐户进行“登录”，并将 Intune 添加到订阅中。 否则，也可通过“注册”创建新帐户，以便为组织使用 Intune。
+可以免费试用 Intune 30 天。 如果已有工作或学校帐户，请使用该帐户进行“登录”，并将 Intune 添加到订阅中  。 否则，也可通过“注册”创建新帐户，以便为组织使用 Intune  。
 
 > [!IMPORTANT]
 > 注册新帐户后，不能合并现有的工作或学校帐户。
@@ -47,13 +47,13 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
     ![Microsoft Intune 试用版帐户注册网页的屏幕截图](./media/account-sign-up-site-full-browser.png)
 
-    如果大多数 IT 操作和用户都不位于你所在的区域，则可能需要在“国家或地区”下选择该区域设置。 Azure 使用你的区域信息来提供正确的服务。 此设置以后无法更改。
+    如果大多数 IT 操作和用户都不位于你所在的区域，则可能需要在“国家或地区”下选择该区域设置  。 Azure 使用你的区域信息来提供正确的服务。 此设置以后无法更改。
 
-2. 用公司名称加上“.onmicrosoft.com”来创建自己的帐户。 
+2. 用公司名称加上“.onmicrosoft.com”来创建自己的帐户  。 
 
     ![Intune 试用版帐户新凭据进程的屏幕截图](./media/account-sign-up-site-user-id.png)
 
-    如果想使用组织自己的自定义域名，但不使用“.onmicrosoft.com”，则可以在本文后面介绍的 Microsoft 365 管理中心进行更改。
+    如果想使用组织自己的自定义域名，但不使用“.onmicrosoft.com”，则可以在本文后面介绍的 Microsoft 365 管理中心进行更改  。
 
 3. 在注册过程结束时查看新帐户信息。
 
@@ -61,14 +61,14 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 ## <a name="sign-in-to-the-azure-portal"></a>登录到 Azure 门户
 
-1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com 。 
+1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com  。 
 2. 使用在上述步骤中获得的凭据。
 
     ![Azure 门户登录页的图像](./media/azure-portal-signin.png)
 
-3. 要在 Azure 门户中查看 Microsoft Intune，从页面左侧的边栏中选择“所有服务”。
-4. 在筛选器框中搜索 Microsoft Intune 并选择它。
-5. 选择星形图标，将 Intune 添加到收藏的服务列表底部，并打开 Intune 仪表板。
+3. 要在 Azure 门户中查看 Microsoft Intune，从页面左侧的边栏中选择“所有服务”  。
+4. 在筛选器框中搜索 Microsoft Intune 并选择它  。
+5. 选择星形图标，将 Intune 添加到收藏的服务列表底部，并打开 Intune 仪表板  。
 
 注册试用版时，还将收到一份电子邮件消息，其中包含你在注册过程中提供的帐户信息和电子邮件地址。 该电子邮件用于确认试用版处于活动状态。
 
@@ -81,37 +81,37 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 
 要将 MDM 机构设置为 Intune，请执行以下步骤。
 
-1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com 。 
-2. 选择“所有服务” > “Microsoft Intune”。
-3. 选择表示尚未启用设备管理的横幅，或者如果没有立即看到横幅，请选择“设备注册”。 如果尚未启用设备管理，将显示“选择 MDM 机构”边栏选项卡。
+1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com  。 
+2. 选择“所有服务” > “Microsoft Intune”   。
+3. 选择表示尚未启用设备管理的横幅，或者如果没有立即看到横幅，请选择“设备注册”  。 如果尚未启用设备管理，将显示“选择 MDM 机构”边栏选项卡  。
 
     > [!NOTE]
-    > 如果已设置 MDM 机构，“设备注册”边栏选项卡将显示 MDM 机构值。 如果尚未设置 MDM 机构，则仅显示橙色横幅。 
+    > 如果已设置 MDM 机构，“设备注册”边栏选项卡将显示 MDM 机构值  。 如果尚未设置 MDM 机构，则仅显示橙色横幅。 
 
     ![“选择 MDM 机构”边栏选项卡的图像](./media/choose-mdm-authority.png) 
 
-4. 如果未设置 MDM 机构，在“选择 MDM 机构”下，将 MDM 机构设置为“Intune MDM 机构”。
+4. 如果未设置 MDM 机构，在“选择 MDM 机构”下，将 MDM 机构设置为“Intune MDM 机构”   。
 
 有关 MDM 机构的更多信息，请参阅[设置移动设备管理机构](mdm-authority-set.md)。
 
 ## <a name="configure-your-custom-domain-name-optional"></a>配置自定义域名（可选）
 
-如上所述，若想使用组织自己的自定义域名，但不使用“.onmicrosoft.com”，则可以在 Microsoft 365 管理中心进行更改。 通过以下步骤可以添加、验证和配置你的自定义域名。  
+如上所述，若想使用组织自己的自定义域名，但不使用“.onmicrosoft.com”，则可以在 Microsoft 365 管理中心进行更改  。 通过以下步骤可以添加、验证和配置你的自定义域名。  
 
 > [!IMPORTANT]
-> 你无法重命名或删除域名的初始部分“onmicrosoft.com”。 但可以添加、验证或删除用于 Intune 的自定义域名，以保证业务标识清晰。 有关详细信息，请参阅[配置自定义域名](custom-domain-name-configure.md)。
+> 你无法重命名或删除域名的初始部分“onmicrosoft.com”   。 但可以添加、验证或删除用于 Intune 的自定义域名，以保证业务标识清晰  。 有关详细信息，请参阅[配置自定义域名](custom-domain-name-configure.md)。
 
 1. 转到 [Microsoft 365 管理中心](https://admin.microsoft.com)并使用管理员帐户登录。
 
-2. 在导航窗格中，选择“设置” > “域” > “添加域”。
+2. 在导航窗格中，选择“设置” > “域” > “添加域”    。
 
-3. 输入自定义域名。 然后选择“下一步”。
+3. 输入自定义域名。 然后选择“下一步”  。
 
    ![Microsoft 365 管理中心的屏幕截图 - 添加域名](./media/domain-custom-add.png)
 
 4. 验证你是否是上一步中输入的域的所有者。 
     
-    若选择“通过电子邮件发送代码”，会将向域中已注册的联系人发送电子邮件。 收到电子邮件后，请复制该代码，并将其输入标为“在此键入验证码”的字段。 如果验证码匹配，该域将添加至你的租户。 显示的电子邮件可能看起来不太熟悉。 某些注册机构隐藏了实际的电子邮件地址。 此外，电子邮件地址可能与在注册域名时提供的地址不同。
+    若选择“通过电子邮件发送代码”，会将向域中已注册的联系人发送电子邮件  。 收到电子邮件后，请复制该代码，并将其输入标为“在此键入验证码”的字段  。 如果验证码匹配，该域将添加至你的租户。 显示的电子邮件可能看起来不太熟悉。 某些注册机构隐藏了实际的电子邮件地址。 此外，电子邮件地址可能与在注册域名时提供的地址不同。
 
    ![Microsoft 365 管理中心的屏幕截图 - 验证域名](./media/domain-custom-verify.png)
 

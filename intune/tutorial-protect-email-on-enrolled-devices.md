@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530739"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548050"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教程：保护托管设备上的 Exchange Online 电子邮件
 了解如何使用设备符合性策略与条件访问，以确保 iOS 设备仅在由 Intune 托管并使用已批准的电子邮件应用时才可以访问 Exchange Online 电子邮件。 
@@ -53,7 +53,7 @@ ms.locfileid: "67530739"
 4. 在“平台”  下，选择“iOS”  。 
 5. 选择“设置”   > “电子邮件”  。 
      
-    1.  在“需要移动设备具有托管电子邮件配置文件”  旁边，选择“需要”  。
+    1. 在“需要移动设备具有托管电子邮件配置文件”  旁边，选择“需要”  。
     2. 选择“确定”  。
 
     ![将电子邮件符合性策略设置为需要托管电子邮件配置文件](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
@@ -77,7 +77,7 @@ ms.locfileid: "67530739"
 ## <a name="create-the-conditional-access-policy"></a>创建条件访问策略
 现在我们将创建一个条件访问策略，要求所有设备平台在 Intune 中注册并符合我们的 Intune 符合性策略，之后才能访问 Exchange Online。 我们也将要求使用 Outlook 应用访问电子邮件。 条件访问策略可在 Azure AD 门户或 Intune 门户中配置。 由于我们已在 Intune 门户中，我们将在此处创建该策略。
 1. 在 Intune 中，选择“条件访问”   > “策略”   > “新建策略”  。
-1.  在“名称”  中，输入“Office 365 电子邮件的测试策略”  。 
+1. 在“名称”  中，输入“Office 365 电子邮件的测试策略”  。 
 3. 在“分配”  下，选择“用户和组”  。 在“包含”  选项卡上，选择“所有用户”  ，然后选择“完成”  。
 
 4. 在“分配”  下，选择“云应用”  。 因为我们要保护 Office 365 Exchange Online 电子邮件，我们将通过执行以下步骤来进行选择：

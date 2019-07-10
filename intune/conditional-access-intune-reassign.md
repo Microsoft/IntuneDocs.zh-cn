@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530678"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546878"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
@@ -51,13 +51,13 @@ ms.locfileid: "67530678"
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>验证 Intune 经典门户中基于设备的条件访问策略
 
-1.  转到 [Intune 经典门户](https://manage.microsoft.com)，并用自己的凭据登录。
+1. 转到 [Intune 经典门户](https://manage.microsoft.com)，并用自己的凭据登录。
 
-2.  在左侧菜单中选择“策略”  。
+2. 在左侧菜单中选择“策略”  。
 
-3.  选择“条件访问”，然后选择为其创建条件访问策略的 Microsoft 云服务（例如 Exchange Online 或 SharePoint Online）  。
+3. 选择“条件访问”，然后选择为其创建条件访问策略的 Microsoft 云服务（例如 Exchange Online 或 SharePoint Online）  。
 
-4.  记下条件访问设置，并参考这些设置在 Azure 门户中创建相同的条件访问策略。
+4. 记下条件访问设置，并参考这些设置在 Azure 门户中创建相同的条件访问策略。
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>配合使用基于应用和基于设备的条件访问策略
 
@@ -194,13 +194,13 @@ ms.locfileid: "67530678"
 
 ### <a name="to-disable-the-conditional-access-policies"></a>禁用条件访问策略
 
-1.  转到 [Intune 经典门户](https://manage.microsoft.com)，并用自己的凭据登录。
+1. 转到 [Intune 经典门户](https://manage.microsoft.com)，并用自己的凭据登录。
 
-2.  在左侧菜单中选择“策略”  。
+2. 在左侧菜单中选择“策略”  。
 
-3.  选择“条件访问”，然后选择为其创建条件访问策略的 Microsoft 云服务（例如 Exchange Online 或 SharePoint Online）  。
+3. 选择“条件访问”，然后选择为其创建条件访问策略的 Microsoft 云服务（例如 Exchange Online 或 SharePoint Online）  。
 
-4.  取消选中“启用条件访问策略”选项，然后单击“保存”   。
+4. 取消选中“启用条件访问策略”选项，然后单击“保存”   。
 
     ![禁用 Intune 经典门户中的条件访问策略的示意图](./media/reassign-ca-18.png)
 

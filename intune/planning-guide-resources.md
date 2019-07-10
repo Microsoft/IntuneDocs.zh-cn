@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8e8e0f440377f40937145d78d3959318c21e6e5
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046320"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549308"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>规划 Intune 部署的其他资源
 
@@ -50,12 +50,12 @@ ms.locfileid: "67046320"
 
 查看以下其他信息的资源，这些信息可能在 Intune 部署规划、设计和实现过程中有所帮助。
 
--   [Microsoft Intune 文档](/intune/) - 整套 Intune 文档。
+- [Microsoft Intune 文档](/intune/) - 整套 Intune 文档。
 
--   [Intune 博客](https://blogs.technet.microsoft.com/enterprisemobility/) - 可帮助你了解 Intune 如何适应更大的 Enterprise Mobility 构想的文章。
+- [Intune 博客](https://blogs.technet.microsoft.com/enterprisemobility/) - 可帮助你了解 Intune 如何适应更大的 Enterprise Mobility 构想的文章。
 
--   [Microsoft 信任中心](http://www.microsoft.com/TrustCenter) - 了解 Microsoft 关于所有 Microsoft 云产品和服务的安全性、隐私、符合性以及透明度方法。
+- [Microsoft 信任中心](http://www.microsoft.com/TrustCenter) - 了解 Microsoft 关于所有 Microsoft 云产品和服务的安全性、隐私、符合性以及透明度方法。
 
--   [Intune 用户之声](http://microsoftintune.uservoice.com/) - 想要请求某项功能，或与其他客户进行功能投票？ 通过“用户之声”提供关于 Intune 的反馈。 我们始终在倾听用户的声音。
+- [Intune 用户之声](http://microsoftintune.uservoice.com/) - 想要请求某项功能，或与其他客户进行功能投票？ 通过“用户之声”提供关于 Intune 的反馈。 我们始终在倾听用户的声音。
 
--   [注册指南](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - 一组文档，你可以原样使用，或作为通信计划的一部分与最终用户一起进行修改，以帮助他们了解在 Intune 中注册其个人设备意味着什么。
+- [注册指南](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - 一组文档，你可以原样使用，或作为通信计划的一部分与最终用户一起进行修改，以帮助他们了解在 Intune 中注册其个人设备意味着什么。

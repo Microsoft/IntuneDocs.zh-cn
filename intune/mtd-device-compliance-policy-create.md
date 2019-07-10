@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58ee82e44e8aa8d68c0fb00c4497cc0455ed21d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2315136fe277f06f6dbb11c13139a9dc193ce6f7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528636"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549373"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>使用 Intune 创建移动威胁防御 (MTD) 设备符合性策略
 
@@ -37,23 +37,23 @@ ms.locfileid: "67528636"
 
 MTD 设备符合性策略先决条件：
 
--   使用 Intune 设置 MTD 集成
+- 使用 Intune 设置 MTD 集成
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>创建 MTD 设备符合性策略
 
-1.  转到 [Azure 门户](https://portal.azure.com/)，然后使用 Intune 凭据登录。
+1. 转到 [Azure 门户](https://portal.azure.com/)，然后使用 Intune 凭据登录。
 
-2.  在“Azure 仪表板”中，从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune    。
+2. 在“Azure 仪表板”中，从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune    。
 
-3.  选择“Intune”  ，随即显示“Intune 仪表板”  。
+3. 选择“Intune”  ，随即显示“Intune 仪表板”  。
 
 4. 在“Intune 仪表板”  中，选择“设备符合性”  ，然后选择“管理”  部分下的“策略”  。
 
-5.  选择“创建策略”  ，输入设备符合性“名称”  、“说明”  ，选择“平台”  ，然后选择“设置”  部分下的“配置”  。
+5. 选择“创建策略”  ，输入设备符合性“名称”  、“说明”  ，选择“平台”  ，然后选择“设置”  部分下的“配置”  。
 
-6.  在“符合性策略”窗格中，选择“设备运行状况”   。
+6. 在“符合性策略”窗格中，选择“设备运行状况”   。
 
-7.  在“设备运行状况”窗格中，从“要求设备不高于设备威胁级别”下的下拉列表中选择移动威胁级别   。
+7. 在“设备运行状况”窗格中，从“要求设备不高于设备威胁级别”下的下拉列表中选择移动威胁级别   。
 
     a.  **安全**：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
 
@@ -63,7 +63,7 @@ MTD 设备符合性策略先决条件：
 
     d.  **高**：此级别是最不安全的威胁级别。 此选项将许可所有威胁级别，且仅将移动威胁防御用作报告目的。 设备必须使用此设置激活 MTD 应用。
 
-8.  单击“确定”  两次，然后选择“创建”  。
+8. 单击“确定”  两次，然后选择“创建”  。
 
 > [!IMPORTANT]
 > 如果为 Office 365 或其他服务创建条件访问策略，将评估设备的符合性并阻止不符合设备访问公司资源，直到解决威胁。

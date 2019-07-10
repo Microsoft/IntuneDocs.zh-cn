@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494289"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547355"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -429,7 +429,7 @@ ms.locfileid: "67494289"
         >  - 在使用者的静态文本中，未括住变量的大括号 { }  将解析为错误。 
         >  - 使用设备证书变量时，将变量括在大括号 { } 内  。
         >  - `{{FullyQualifiedDomainName}}` 仅适用于 Windows 和已加入域的设备。 
-        >  -  在使用者或 SAN 中为设备证书使用设备属性（例如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员仿造。
+        >  - 在使用者或 SAN 中为设备证书使用设备属性（例如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员仿造。
         >  - 如果不支持指定的设备变量，则不会在设备上安装配置文件。 例如，如果在分配给不具有 IMEI 号码的设备的 SCEP 配置文件的使用者名称中使用了 {{IMEI}}，配置文件安装将失败。 
 
 
@@ -472,7 +472,7 @@ ms.locfileid: "67494289"
         >  - 在 SAN 的静态文本中，使用大括号{ }、竖杠符号 | 和分号 ; 将不起作用    。 
         >  - 使用设备证书变量时，将变量括在大括号 { } 内  。
         >  - `{{FullyQualifiedDomainName}}` 仅适用于 Windows 和已加入域的设备。 
-        >  -  在使用者或 SAN 中为设备证书使用设备属性（例如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员仿造。
+        >  - 在使用者或 SAN 中为设备证书使用设备属性（例如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员仿造。
         >  - 如果不支持指定的设备变量，则不会在设备上安装配置文件。 例如，如果在分配给不具有 IMEI 号码的设备的 SCEP 配置文件的使用者可选名称中使用了 {{IMEI}}，配置文件安装将失败。  
 
    - **证书有效期**：如果对颁发 CA 运行了允许自定义有效期的 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 命令，则可以输入证书过期之前的剩余时间量。<br>可以在证书模板中输入低于（但不能高于）有效期的值。 例如，如果证书模板中的证书有效期为 2 年，则输入值可以为 1 年，但不能为 5 年。 该值还必须小于发证 CA 证书的剩余有效期。 

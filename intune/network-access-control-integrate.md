@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044533"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572188"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 
@@ -39,7 +39,7 @@ NAC 解决方案可通过 Intune 检查设备注册和符合性状态，以便�
 
 主动同步到 Intune 的设备无法从“符合” / “不符合”变成“未同步”（或“未知”）     。 “未知”状态是预留给尚未进行符合性评估的新注册设备  。
 
-对于被阻止而无法访问资源的设备，阻止设备的服务应将所有用户重定向到[管理门户](https://portal.manage.microsoft.com)，以确定设备被阻止的原因。  如果用户访问此页，他们的设备会同步重新接受符合性评估。
+对于被阻止而无法访问资源的设备，阻止设备的服务应将所有用户重定向到[管理门户](https://portal.manage.microsoft.com)，以确定设备被阻止的原因。  如果用户访问此页，他们的设备会同步重新接受符合性评估。
 
 ## <a name="nac-and-conditional-access"></a>NAC 和条件访问
 
