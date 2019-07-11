@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197051"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735758"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>使用 Microsoft Intune 应用注册公司设备
 
@@ -46,9 +46,9 @@ ms.locfileid: "66197051"
 2. 在“欢迎使用”屏幕上，选择语言  。   如果系统指示使用 QR 码或 NFC 注册，请按照与该方法匹配的以下步骤操作。  
      * NFC：针对程序员设备点击 NFC 支持的设备，以连接到组织的网络。 按照屏幕上的提示操作。 访问 Chrome 的服务条款屏幕时，请继续执行步骤 5。  
 
-      * QR 码：完成 [QR 码注册](#qr-code-enrollment)中的步骤。  
+     * QR 码：完成 [QR 码注册](#qr-code-enrollment)中的步骤。  
 
-      如果系统指示使用其他方法，请继续执行步骤 3。    
+     如果系统指示使用其他方法，请继续执行步骤 3。    
 
 1. 连接 Wi-Fi，然后点击“下一步”  。 按照与注册方法匹配的步骤操作。 
 

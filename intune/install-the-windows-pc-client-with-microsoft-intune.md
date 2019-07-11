@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 62d30d0c404fb8393f5aa2c999cd1fc09b266350
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572601"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735883"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
@@ -90,16 +90,17 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
 
 2. 通过向“SetupComplete.cmd”  脚本中添加以下命令来创建“WindowsIntuneEnrollPending”  注册表项：
 
-    ```
+    ```cmd
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
 3. 将以下命令添加到“setupcomplete.cmd”  中，以使用 /PrepareEnroll 命令行参数运行注册程序包：
 
-    ```
+    ```cmd
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
     ```
+
     > [!TIP]
     > **SetupComplete.cmd** 脚本使 Windows 安装程序能够在用户登录之前修改系统。 “/PrepareEnroll”  命令行参数会将目标计算机准备就绪，以便其在 Windows 安装程序结束后在 Intune 中自动注册。
 

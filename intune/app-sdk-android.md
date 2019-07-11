@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558421"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735629"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -105,6 +105,7 @@ buildscript {
 ```
 
 然后，在 APK 项目的 `build.gradle` 文件中，只需将插件应用为
+
 ```groovy
 apply plugin: 'com.microsoft.intune.mam'
 ```
@@ -141,8 +142,8 @@ intunemam {
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
-
 ```
+
 这将产生以下影响：
 * 不重写 `:product:FooLib`，因为它包含在 `excludeProjects` 中
 * 重写 `:product:foo-project`，但 `com.contoso.SplashActivity` 除外，因为它位于 `excludeClasses` 中，因此会被跳过
@@ -1072,9 +1073,10 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 
 > [!NOTE]
 > 应用的 `MAMServiceAuthenticationCallback.acquireToken()` 方法必须将新的 `forceRefresh` 标记的 true 状态传递给 `acquireTokenSilentSync()`，以强制通过中转站刷新  。  这是为了解决 ADAL 中可能影响 MAM 服务令牌的令牌的缓存问题。 它通常如下所示：
-```java
-AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
-```
+>
+> ```java
+> AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+> ```
 
 > [!NOTE]
 > 如果要在修正尝试期间显示自定义的阻止 UX，则应将 showUX 参数的 false 状态传递给 `remediateCompliance()`  。 必须确保在调用 `remediateCompliance()` 之前先显示 UX 并注册通知侦听器。  这将防止在 `remediateCompliance()` 迅速失败的情况下，出现导致通知缺失的争用条件。  例如，Activity 子类的 `onCreate()` 或 `onMAMCreate()` 方法是注册通知侦听器再调用 `remediateCompliance()` 的理想之选。  `remediateCompliance()` 的参数可作为额外意向传递给 UX。  收到符合性状态通知后，可显示结果，也可仅完成活动。
@@ -1415,6 +1417,7 @@ UI 线程上的操作通常将后台任务分派给另一线程。 多标识应�
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+
 ### <a name="file-protection"></a>文件保护
 
 基于线程和进程标识，每个文件在创建时都具有与之关联的标识。 此标识可用于文件加密和选择性擦除。 但只有文件的标识经托管且具有要求加密的策略时才会进行加密。 SDK 的默认选择性功能擦除将仅擦除与擦除请求的托管标识相关联的文件。 应用可使用 `MAMFileProtectionManager` 类查询或更改文件的标识。
@@ -1643,6 +1646,7 @@ public final class MAMDataProtectionManager {
 > `offline` 中无法传递用于通过 MAM-WE 传递的配置设置。  在这种情况下，通过 `MAMUserNotification` 在空标识上传递的只有 Android Enterprise AppRestrictions。
 
 ### <a name="example"></a>示例
+
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
@@ -1678,6 +1682,7 @@ LOGGER.info("Found value " + valueToUse);
 
 ### <a name="how-to-customize"></a>如何自定义
 若要将样式更改应用到 Intune MAM 视图，必须首先创建一个样式来替代 XML 文件。 此文件应位于应用的“/ res/xml”目录，你可以按照自己的喜好对它进行命名。 下面是此文件应遵循的格式示例。
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1722,16 +1727,20 @@ LOGGER.info("Found value " + valueToUse);
 1. 如果应用集成了 ADAL 或者你需要启用 SSO，则请按照[通用 ADAL 配置](#common-adal-configurations) #2 [配置 ADAL](#configure-azure-active-directory-authentication-library-adal)。 如果不需要，则可跳过此步骤。
    
 2. 通过将以下值放入清单来启用默认注册：
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
+
    > [!NOTE] 
    > 这必须是应用中唯一的 MAM-WE 集成。 如果有任何其他调用 MAMEnrollmentManager API 的尝试，则将发生冲突。
 
 3. 通过将以下值放入清单来启用所需的 MAM 策略：
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
+
    > [!NOTE] 
    > 这将强制用户在设备上下载公司门户，并且需要完成默认注册流程才能使用。
 
@@ -1748,9 +1757,11 @@ LOGGER.info("Found value " + valueToUse);
 ### <a name="policy-enforcement-limitations"></a>策略强制实施限制
 
 * **使用内容解析程序**：“传输或接收”Intune 策略可能会阻止或部分阻止使用内容解析程序访问其他应用中的内容提供程序。 这将导致 `ContentResolver` 方法返回 null 或引发失败值（例如 `openOutputStream` 在受阻时会引发 `FileNotFoundException`）。 应用可以通过进行以下调用，来确定是否策略已导致（或策略会导致）通过内容解析程序写入数据失败：
+
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
+
     或如果没有关联活动
 
     ```java
