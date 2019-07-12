@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494059"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649025"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的应用配置策略
 
-使用 Microsoft Intune 中的应用配置策略提供适用于 iOS 或 Android 应用的配置设置。 可利用这些配置设置自定义应用。 无需直接向用户或设备分配这些配置策略。 而是应将配置策略与一个应用相互关联，然后分配该应用。 只要应用检测到配置策略设置（通常在其首次运行时），即会使用它们。
+使用 Microsoft Intune 中的应用配置策略提供适用于 iOS 或 Android 应用的配置设置。 通过这些配置设置可以使用应用配置和管理的行业标准方法来对应用进行自定义。 只要应用检测到配置策略设置（通常在其首次运行时），即会使用它们。
 
 可通过将包括和排除分配相结合来向一组用户和设备分配应用配置策略。 添加应用配置策略后，即可设置应用分配策略的配置。 设置策略分配时，可选择包括和排除应用该策略的用户组。 选择包括一个或多个组时，可以选择要包括的特定组或选择内置组。 内置组包括“所有用户”、“所有设备”和“所有用户 + 所有设备”    。
 
@@ -52,9 +52,11 @@ ms.locfileid: "67494059"
 
 ## <a name="apps-that-support-app-configuration"></a>支持应用配置的应用
 
-可对支持应用配置策略的应用使用该策略。 要在 Intune 中提供应用配置，应用必须编写为支持使用应用配置。 有关详细信息，请咨询应用供应商。
+### <a name="managed-devices"></a>托管设备
+可对支持应用配置策略的应用使用该策略。 要在 Intune 中提供应用配置，应用必须编写为支持使用由 [Appconfig 社区](https://www.appconfig.org/members)定义的应用配置。 有关详细信息，请咨询应用供应商。
 
-可通过如下方式准备业务线应用：将 Intune App SDK 合并到应用，或在开发应用后对其进行包装。 Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用配置策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 有关详细信息，请参阅 [Intune App SDK 概述](app-sdk.md)。
+### <a name="managed-apps"></a>托管应用
+可通过如下方式准备业务线应用：将 Intune App SDK 合并到应用，或在开发应用后对其进行包装。 Intune App SDK 可用于 iOS 和 Android，可对应用启用 Intune 应用保护配置策略。 其将努力使应用开发人员所需的代码更改数量降到最低。 有关详细信息，请参阅 [Intune App SDK 概述](app-sdk.md)。
 
 ## <a name="graph-api-support-for-app-configuration"></a>应用配置的图形 API 支持
 

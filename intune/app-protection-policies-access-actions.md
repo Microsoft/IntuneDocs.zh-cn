@@ -1,7 +1,7 @@
 ---
-title: 使用应用保护策略访问操作擦除数据
+title: 使用应用保护策略条件启动操作擦除数据
 titleSuffix: Microsoft Intune
-description: 了解如何在 Microsoft Intune 中使用应用保护策略访问操作选择性地擦除数据。
+description: 了解如何在 Microsoft Intune 中使用应用保护策略条件启动操作选择性地擦除数据。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804684"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558448"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>在 Intune 中使用应用保护策略访问操作选择性地擦除数据
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用应用保护策略条件启动操作选择性地擦除数据
 
 使用 Intune 应用保护策略，可配置设置以阻止最终用户访问公司应用或帐户。 这些设置的目标是组织为越狱设备和最低 OS 版本等内容所设置的数据重定位和访问要求。
  
 通过使用这些设置，可显式选择从最终用户的设备上擦除公司数据，作为对违规行为所采取的措施。 对于某些设置，可根据不同的指定值配置多项操作，例如阻止访问和擦除数据。
 
-## <a name="create-an-app-protection-policy-using-access-actions"></a>使用访问操作创建应用保护策略
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>使用条件启动操作创建应用保护策略
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 3. 在“Intune”窗格中，选择“客户端应用” > “应用保护策略”    。
 4. 单击“添加策略”（也可编辑现有策略）  。 
 5. 单击“配置所需设置”，查看可为策略配置的设置列表  。 
-6. 在“设置”窗格中向下滚动，将会看到标题为“访问操作”  的部分，内含可编辑的表。
+6. 在“设置”窗格中向下滚动，将会看到标题为“条件启动”  的部分，内含可编辑的表。
 
     ![Intune 应用保护访问操作的屏幕截图](./media/apps-selective-wipe-access-actions01.png)
 
@@ -52,13 +52,13 @@ ms.locfileid: "66804684"
 
 ### <a name="ios-policy-settings"></a>iOS 策略设置
 对于 iOS，可使用“设置”下拉列表为以下设置配置操作  ：
--  最大 PIN 尝试次数
--  离线宽限期
--  已越狱/获得 root 权限的设备
--  最低 OS 版本
--  最低应用版本
--  最低 SDK 版本
--  设备型号
+- 最大 PIN 尝试次数
+- 离线宽限期
+- 已越狱/获得 root 权限的设备
+- 最低 OS 版本
+- 最低应用版本
+- 最低 SDK 版本
+- 设备型号
 
 若要使用“设备型号”  设置，请输入 iOS 型号标识符的分号分隔列表。 [HockeyApp 支持文档](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)中的“设备类型”列下列出了 iOS 型号标识符。<br>
 示例输入：iPhone5,2;iPhone5,3 
@@ -74,15 +74,15 @@ ms.locfileid: "66804684"
 ### <a name="android-policy-settings"></a>Android 策略设置
 
 对于 Android，可使用“设置”下拉列表为以下设置配置操作  ：
--  最大 PIN 尝试次数
--  离线宽限期
--  已越狱/获得 root 权限的设备
--  最低 OS 版本
--  最低应用版本
--  最低修补程序版本
--  设备制造商
--  SafetyNet 设备证明
--  对应用进行威胁扫描
+- 最大 PIN 尝试次数
+- 离线宽限期
+- 已越狱/获得 root 权限的设备
+- 最低 OS 版本
+- 最低应用版本
+- 最低修补程序版本
+- 设备制造商
+- SafetyNet 设备证明
+- 对应用进行威胁扫描
 
 若要使用“设备制造商”  设置，请输入 Android 制造商的分号分隔列表。 可以在设备设置下找到设备的 Android 制造商。<br>
 示例输入：制造商 A;制造商 B  
@@ -105,9 +105,9 @@ ms.locfileid: "66804684"
 要配置设置，请从“设置”列下方的下拉列表中选择一项设置  。 选择设置后，如果需要设置值，则可在同一行的“值”列下启用可编辑的文本框  。 此外，将在“操作”列下启用下拉列表，其中条件启动操作适用于该设置  。 
 
 以下列表提供了常见的操作列表：
--  **阻止访问** - 阻止最终用户访问公司应用。
--  **擦除数据** - 擦除最终用户设备上的公司数据。
--  **警告** - 向最终用户提供对话框作为警告消息。
+- **阻止访问** - 阻止最终用户访问公司应用。
+- **擦除数据** - 擦除最终用户设备上的公司数据。
+- **警告** - 向最终用户提供对话框作为警告消息。
 
 在某些情况下，例如“最低 OS 版本”设置，根据不同的版本号，可将该设置配置为执行所有适用的操作  。 
 

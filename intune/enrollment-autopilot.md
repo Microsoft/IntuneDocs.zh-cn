@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512109"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649116"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -35,7 +35,7 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>如何获取用于在 Intune 中导入的 CSV
 
-有关详细信息，请查看“understanding”PowerShell cmdlet。
+有关详细信息，请查看“了解 powershell cmdlet”。
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,9 +47,10 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
 
     ![Windows Autopilot 设备的屏幕截图](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. 在“添加 Windows Autopilot 设备”  下，浏览添加 CSV 文件，其中列出了要添加的设备。 CSV 文件应列出设备的序列号、Windows 产品 ID、硬件哈希和可选组标记、分配的用户和订单 ID。 列表中最多可包含 500 行。 请使用以下标题和行格式：
+2. 在“添加 Windows Autopilot 设备”  下，浏览添加 CSV 文件，其中列出了要添加的设备。 此 CSV 文件应列出序列号、Windows 产品 ID、硬件哈希和可选的组标记。 列表中最多可包含 500 行。 请使用以下标题和行格式：
 
-    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`</br>
+    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![“添加 Windows Autopilot 设备”的屏幕截图](media/enrollment-autopilot/autopilot-import-device2.png)
 

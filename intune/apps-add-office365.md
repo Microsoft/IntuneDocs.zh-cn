@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 095c2ee0aba0680de0c5fc55c1406dba41111b92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527442"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648699"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
 
@@ -42,6 +42,7 @@ ms.locfileid: "67527442"
 - Windows 10 S、Windows 家庭版、Windows 团队、Windows Holographic 或 Windows Holographic for Business 设备上不支持此安装方法。
 - 在已使用 Intune 部署 Office 365 应用的设备上，Intune 不支持安装 Microsoft Store 中的 Office 365 桌面应用（称为 Office Centennial 应用）。 如果安装此配置，可能会导致数据丢失或损坏。
 - 多个必需或可用的应用分配不会累加。 后面的应用分配会覆盖之前存在的已安装应用分配。 例如，如果第一组 Office 应用包含 Word，而后面的应用不包含，则 Word 会被卸载。 该条件不适用于任何 Visio 或 Project 应用程序。
+- 当前不支持多个 Office 365 部署。 只会向设备提供一个部署
 - **Office 版本** - 选择要分配 32 位还是 64 位版本的 Office。 可以在 32 位和 64 位设备上安装 32 位版本，但只能在 64 位设备上安装 64 位版本。
 - **从最终用户设备中删除 MSI** - 选择是否要从最终用户设备中删除预先存在的 Office .MSI 应用。 如果最终用户设备上存在预先存在的 .MSI 应用，安装不会成功。 要卸载的应用不仅限于在“配置应用套件”中选择安装的应用，因为它会从最终用户设备中删除所有 Office (MSI) 应用  。 有关详细信息，请参阅[升级到 Office 365 专业增强版后删除现有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)。 Intune 在最终用户计算机上重新安装 Office 时，最终用户将自动获得与以前安装的 .MSI Office 相同的语言包。
 
@@ -142,7 +143,14 @@ ms.locfileid: "67527442"
 
 完成后，在“添加应用”  窗格中，选择“添加”  。 创建的应用将显示在应用列表中。
 
+## <a name="troubleshooting"></a>疑难解答
+Intune 使用 [Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)下载 Office 365 专业增强版并使用 [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks) 将其部署到客户端计算机。 参考[管理 Office 365 终结点](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)中所述的最佳做法，确保网络配置允许客户端直接访问 CDN（而不是通过中心代理路由 CDN 流量）以避免引入不必要的延迟。
+
+如果遇到安装或运行时问题，请在目标设备上运行 [Microsoft Office 365 支持和恢复助手](https://diagnostics.office.com)。
+
 ## <a name="errors-during-installation-of-the-app-suite"></a>在安装应用套件期间出错
+
+有关如何查看详细安装日志的信息，请参阅[如何启用 Office 365 专业增强版 ULS 日志记录](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging)。
 
 下表列出了用户可能会遇到的常见错误代码及其含义。
 

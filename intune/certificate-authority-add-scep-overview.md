@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,28 +15,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66713864"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648457"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中添加合作伙伴证书颁发机构
 
-在 Microsoft Intune 中，可以添加第三方证书颁发机构 (CA)。 这些 CA 可以使用简单证书注册协议 (SCEP) 将证书传递到移动设备。 此功能可以在 Windows、iOS、Android 和 macOS 设备上颁发新证书和续订证书。
+将第三方证书颁发机构 (CA) 与 Intune 配合使用。 第三方 CA 可以使用简单证书注册协议 (SCEP) 向移动设备预配新证书或续订证书，并且可以支持 Windows、iOS、Android 和 macOS 设备。
 
 使用此功能分两个部分：开源代码 API 和 Intune 管理员任务。
 
 **第 1 部分 - 使用开源代码 API**  
-Microsoft 创建了与 Intune 集成的 API，用于验证证书、发送成功或失败通知，以及使用 SSL（特别是 SSL 套接字工厂）与 Intune 进行通信。
+Microsoft 创建了与 Intune 集成的 API。 通过该 API，可验证证书、发送成功或失败通知，以及使用 SSL（特别是 SSL 套接字工厂）与 Intune 进行通信。
 
-[Intune SCEP API 公共 GitHub 存储库](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)中提供了该 API，你可以下载和在解决方案中使用。 将证书传递给设备之前，将此 API 与第三方 SCEP 服务器配合使用，以针对 Intune 运行自定义质询验证。
+[Intune SCEP API 公共 GitHub 存储库](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)中提供了该 API，你可以下载和在解决方案中使用。 SCEP 向设备预配证书之前，将此 API 与第三方 SCEP 服务器配合使用，以针对 Intune 运行自定义质询验证。
 
 [与 Intune SCEP 管理解决方案集成](scep-libraries-apis.md)可提供有关使用 API、其方法以及测试构建的解决方案的详细信息。
 
 **第 2 部分 - 创建应用程序和配置文件**  
-使用 Azure Active Directory (Azure AD) 应用程序，可以将权限委托给 Intune 来处理来自设备的 SCEP 请求。 Azure AD 应用程序包括在开发者创建的 API 解决方案中使用的应用程序 ID 和身份验证密钥值。 然后，管理员可以使用 Intune 创建和部署 SCEP 证书配置文件。 还可以在设备上查看有关部署状态的报告。
+使用 Azure Active Directory (Azure AD) 应用程序，可以将权限委托给 Intune 来处理来自设备的 SCEP 请求。 Azure AD 应用程序包括在开发者创建的 API 解决方案中使用的应用程序 ID 和身份验证密钥值。 然后，管理员使用 Intune 创建和部署 SCEP 证书配置文件，从而可以在设备上查看有关部署状态的报表。
 
 本文从管理员角度概述了此功能，包括创建 Azure AD 应用程序。
 
@@ -72,30 +72,30 @@ Microsoft 创建了与 Intune 集成的 API，用于验证证书、发送成功�
 
 #### <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中创建应用程序  
 
-1. 在 [Azure 门户](https://portal.azure.com)中转到“Azure Active Directory” > “应用注册”，然后选择“新建注册”。  
+1. 在 [Azure 门户](https://portal.azure.com)中转到“Azure Active Directory” > “应用注册”，然后选择“新建注册”    。  
 
-2. 在“注册应用程序”页上，指定以下详细信息：  
-   - 在“名称”部分中，输入一个有意义的应用程序名称。  
-   - 对于“支持的帐户类型”部分，选择“任何组织目录中的帐户”。  
-   - 对于“重定向 URI”，保留 Web 的默认值，然后指定第三方 SCEP 服务器的登录 URL。  
+2. 在“注册应用程序”  页上，指定以下详细信息：  
+   - 在“名称”  部分中，输入一个有意义的应用程序名称。  
+   - 对于“支持的帐户类型”  部分，选择“任何组织目录中的帐户”  。  
+   - 对于“重定向 URI”  ，保留 Web 的默认值，然后指定第三方 SCEP 服务器的登录 URL。  
 
-3. 选择“注册”以创建应用程序并打开新应用的“概述”页。  
+3. 选择“注册”  以创建应用程序并打开新应用的“概述”页。  
 
-4. 在应用的“概述”页上，复制“应用程序(客户端)ID”值并记录该值以供将来使用。 稍后将需要此值。  
+4. 在应用的“概述”  页上，复制“应用程序(客户端)ID”  值并记录该值以供将来使用。 稍后将需要此值。  
 
-5. 在应用的导航窗格中，转到“管理”下的“证书和密码”。 选择“新建客户端密码”按钮。 在“说明”中输入值，选择“截止期限”的任何选项，然后选择“添加”以生成客户端密码的值。 
+5. 在应用的导航窗格中，转到“管理”下的“证书和密码”   。 选择“新建客户端密码”  按钮。 在“说明”中输入值，选择“截止期限”的任何选项  ，然后选择“添加”  以生成客户端密码的值  。 
    > [!IMPORTANT]  
    > 在离开此页面之前，使用第三方 CA 实现复制客户端密码的值并记录该值以供将来使用。 不再显示此值。 请务必查看有关他们希望如何配置应用程序 ID、身份验证密钥和租户 ID 的第三方 CA 指南。  
 
-6. 记录租户 ID。 租户 ID 是帐户中 @ 符号后面的域文本。 例如，如果帐户是 *admin@name.onmicrosoft.com*，则租户 ID 是 name.onmicrosoft.com。  
+6. 记录租户 ID  。 租户 ID 是帐户中 @ 符号后面的域文本。 例如，如果帐户是 *admin@name.onmicrosoft.com* ，则租户 ID 是 name.onmicrosoft.com  。  
 
-7. 在应用的导航窗格中，转到“管理”下的“API 权限”，然后选择“添加权限”。  
+7. 在应用的导航窗格中，转到“管理”下的“API 权限”   ，然后选择“添加权限”  。  
 
-8. 在“请求获取 API 权限”页上，选择“Intune”，然后选择“应用程序权限”。 选中 scep_challenge_provider 对应的复选框（SCEP 质询验证）。  
+8. 在“请求获取 API 权限”  页上，选择“Intune”  ，然后选择“应用程序权限”  。 选中 scep_challenge_provider  对应的复选框（SCEP 质询验证）。  
 
-   选择“添加权限”以保存此配置。  
+   选择“添加权限”  以保存此配置。  
 
-9. 停留在“API 权限”页上，然后依次选择“为 Microsoft 授予管理员同意”、“是”。  
+9. 停留在“API 权限”  页上，然后依次选择“为 Microsoft 授予管理员同意”  、“是”  。  
    
    将完成 Azure AD 中的应用注册过程。
 
@@ -117,13 +117,14 @@ Microsoft 创建了与 Intune 集成的 API，用于验证证书、发送成功�
 ## <a name="third-party-certification-authority-partners"></a>第三方证书颁发机构合作伙伴
 以下第三方证书颁发机构支持 Intune：
 
-- [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
 - [EJBCA GitHub 开放源代码版本](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 如果第三方 CA 有兴趣将产品与 Intune 集成，请查看 API 指南：
 
