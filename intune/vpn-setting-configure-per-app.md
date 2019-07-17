@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373654"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884523"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -150,16 +150,16 @@ VPN 配置文件包含附带客户端凭据的 SCEP 或 PKCS 证书、VPN 的连
 
 ### <a name="before-you-attempt-to-connect"></a>尝试连接之前请确保满足以下各项
 
- - 确保将上述所有策略部署到同一个组。 否则，每应用 VPN 体验将无法正常运行。
- - 如果使用的是 Pulse Secure VPN 应用或自定义 VPN 客户端应用，可以选择使用应用层或数据包层隧道。 针对应用层隧道，将 ProviderType 值设置为 app-proxy，针对数据包层隧道，将其设置为 packet-tunnel    。 请查看 VPN 提供程序文档，确保使用的是正确的值。
+- 确保将上述所有策略部署到同一个组。 否则，每应用 VPN 体验将无法正常运行。
+- 如果使用的是 Pulse Secure VPN 应用或自定义 VPN 客户端应用，可以选择使用应用层或数据包层隧道。 针对应用层隧道，将 ProviderType 值设置为 app-proxy，针对数据包层隧道，将其设置为 packet-tunnel    。 请查看 VPN 提供程序文档，确保使用的是正确的值。
 
 ### <a name="connect-using-the-per-app-vpn"></a>使用每应用 VPN 进行连接
 
 无需选择 VPN 或键入凭据即可连接，感受“零接触”体验。 “零接触”体验意味着：
 
- - 设备不要求你信任 VPN 服务器。 也就是说，用户看不到“动态信任”对话框  。
- - 用户无需键入凭据。
- - 用户打开其中某个关联应用时，用户的设备将连接到 VPN。
+- 设备不要求你信任 VPN 服务器。 也就是说，用户看不到“动态信任”对话框  。
+- 用户无需键入凭据。
+- 用户打开其中某个关联应用时，用户的设备将连接到 VPN。
 
 <!-- ## Troubleshooting the per-app VPN
 

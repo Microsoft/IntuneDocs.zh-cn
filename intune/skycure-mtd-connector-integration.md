@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 513001993d890afba848138e01ff823796ea773d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572441"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884439"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>设置 Symantec Endpoint Protection Mobile 与 Intune 的集成
 
@@ -44,7 +44,7 @@ SEP Mobile 支持与 Intune 集成的两种模式：
 
 - **只读集成(基本设置)：** 仅列出来自 Azure Active Directory 的设备并在 Symantec Endpoint Protection Mobile 管理控制台中对其进行填充。
 <br>
-    - 如果在 Symantec Endpoint Protection Mobile 管理控制台中未选中“向 Intune 报告设备的运行状况和风险”  和“同时向 Intune 报告安全事件”  框，集成将为只读模式，并因此绝不会更改 Intune 中的设备状态（符合或不符合）。
+  - 如果在 Symantec Endpoint Protection Mobile 管理控制台中未选中“向 Intune 报告设备的运行状况和风险”  和“同时向 Intune 报告安全事件”  框，集成将为只读模式，并因此绝不会更改 Intune 中的设备状态（符合或不符合）。
 <br></br>
 - **完全集成：** 允许 SEP Mobile 向 Intune 报告设备风险和安全事件详细信息，这将在两个云服务中之间创建双向通信。
 

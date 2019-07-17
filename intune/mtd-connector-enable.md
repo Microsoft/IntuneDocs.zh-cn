@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45bcafad3dc6c2a407e1b7b88e07f4021e8b5a36
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a2084ad1ec0deefd24c0d61f69d99ee11149af96
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528292"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882734"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中启用移动威胁防御连接器
 
@@ -50,10 +50,10 @@ ms.locfileid: "67528292"
 可以根据组织要求决定需要启用哪些 MTD 切换选项。 下面是更多详细信息：
 
 - **将 Android 4.1+ 设备连接到 [MTD 合作伙伴名称] for Work MTD**：如果启用此选项，可以让 Android 4.1 + 设备将安全风险报回 Intune。
-    - **如果未收到任何数据则标记为不符合**：如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
+  - **如果未收到任何数据则标记为不符合**：如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
 <br></br>
 - **将 iOS 8.0+ 设备连接到 [MTD 合作伙伴名称] for Work MTD**：启用此选项后，可让 iOS 8.0+ 设备向 Intune 报告安全风险。
-    - **如果未收到任何数据则标记为不符合**：如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
+  - **如果未收到任何数据则标记为不符合**：如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
 <br></br>
 - **为 iOS 设备启用应用同步**：允许此 Mobile Threat Defense 合作伙伴请求 Intune 中的 iOS 应用程序的元数据，以用于威胁分析。
 

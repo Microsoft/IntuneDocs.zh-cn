@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549420"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882848"
 ---
 # <a name="phase-2-migration-campaign"></a>阶段 2：迁移活动
 
@@ -43,19 +43,19 @@ ms.locfileid: "67549420"
 
 - 监视每个周期的支持人员负载以及注册是否成功。 保留计划时间以确保在迁移下一个之前，可以对每个组的成功条件进行评估。 你的试验部署应确定以下内容：
 
-    - 注册成功率和失败率为预期结果。
+  - 注册成功率和失败率为预期结果。
 
-    - 用户工作效率：
+  - 用户工作效率：
 
-        - VPN、Wi-fi、电子邮件和证书等企业资源正常运行。
+    - VPN、Wi-fi、电子邮件和证书等企业资源正常运行。
 
-        - 预配的应用可供访问。
+    - 预配的应用可供访问。
 
-    - 数据安全：
+  - 数据安全：
 
-        - 出现相容性报告。
+    - 出现相容性报告。
 
-        - 强制实施移动应用保护。
+    - 强制实施移动应用保护。
 
 如果对迁移的第一阶段感到满意，请重复[迁移周期](migration-guide-cycle.md)以执行下一阶段。
 

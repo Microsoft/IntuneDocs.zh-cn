@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528253"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882724"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>确定用例场景要求
 
@@ -50,21 +50,21 @@ ms.locfileid: "67528253"
 下面是可在“要求”列使用的几个其他示例：
 
 - **安全电子邮件**
-    - Exchange Online/本地条件访问
-    - Outlook 应用保护策略
+  - Exchange Online/本地条件访问
+  - Outlook 应用保护策略
 
 - **设备设置**
-    - 具有 4 个、6 个字符的 PIN 设置
-    - 限制云备份
+  - 具有 4 个、6 个字符的 PIN 设置
+  - 限制云备份
 
 - **配置文件**
-    - Wi-Fi
-    - VPN
-    - 电子邮件（Windows 10 移动版）
+  - Wi-Fi
+  - VPN
+  - 电子邮件（Windows 10 移动版）
 
 - **应用**
-    - 具有应用保护策略的 Office 365
-    - 具有应用保护策略的业务线 (LOB)
+  - 具有应用保护策略的 Office 365
+  - 具有应用保护策略的业务线 (LOB)
 
 ## <a name="next-steps"></a>后续步骤
 

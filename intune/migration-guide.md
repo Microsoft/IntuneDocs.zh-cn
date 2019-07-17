@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549397"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882765"
 ---
 # <a name="intune-migration-guide"></a>Intune 迁移指南
 
@@ -37,25 +37,25 @@ ms.locfileid: "67549397"
 
 - [第 1 阶段：为移动设备管理准备 Intune](migration-guide-prepare.md)
 
-    - [评估 MDM 迁移要求](migration-guide-prepare.md#assess-mdm-requirements)
+  - [评估 MDM 迁移要求](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [基本设置](migration-guide-setup.md)
+  - [基本设置](migration-guide-setup.md)
 
-    - [配置设备和应用管理策略](migration-guide-configure-policies.md)
+  - [配置设备和应用管理策略](migration-guide-configure-policies.md)
 
-    - [配置应用保护策略](migration-guide-app-protection-policies.md)
+  - [配置应用保护策略](migration-guide-app-protection-policies.md)
 
-    - [特殊迁移注意事项](migration-guide-considerations.md)
+  - [特殊迁移注意事项](migration-guide-considerations.md)
 
 - [第 2 阶段：迁移活动](migration-guide-campaign.md)
 
-    - [通信计划](migration-guide-communication-plan.md)
+  - [通信计划](migration-guide-communication-plan.md)
 
-    - [推动最终用户采用条件访问](migration-guide-drive-adoption.md)
+  - [推动最终用户采用条件访问](migration-guide-drive-adoption.md)
 
-    - [典型迁移周期](migration-guide-cycle.md)
-        - [监视迁移](migration-guide-cycle.md#monitoring-migration)
-        - [迁移后](migration-guide-cycle.md#post-migration)
+  - [典型迁移周期](migration-guide-cycle.md)
+    - [监视迁移](migration-guide-cycle.md#monitoring-migration)
+    - [迁移后](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>假设
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da828b162e008541cb5cb2b5d15092d0fce417c5
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572537"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883289"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>在 Microsoft Intune 中设置 Intune 本地 Exchange 连接器
 本文中的信息有助于安装和监视 Intune 的 Exchange Active Sync 本地连接器。  结合使用 Intune 本地 Exchange 连接器与[条件访问策略，以允许或阻止对 Exchange 本地邮箱的访问](conditional-access-exchange-create.md)。 
@@ -58,18 +58,18 @@ Intune 支持每个订阅安装多个本地 Exchange 连接器。 如果有多�
 创建将由本地 Exchange 连接器使用的 Active Directory 用户帐户。 帐户必须具有运行以下要求的 Windows PowerShell Exchange cmdlets 的权限：
 
 
- - Get-ActiveSyncOrganizationSettings、Set-ActiveSyncOrganizationSettings
- - Get-CasMailbox、Set-CasMailbox
- - Get-ActiveSyncMailboxPolicy、Set-ActiveSyncMailboxPolicy、New-ActiveSyncMailboxPolicy、Remove-ActiveSyncMailboxPolicy
- - Get-ActiveSyncDeviceAccessRule、Set-ActiveSyncDeviceAccessRule、New-ActiveSyncDeviceAccessRule、Remove-ActiveSyncDeviceAccessRule
- - Get-ActiveSyncDeviceStatistics
- - Get-ActiveSyncDevice
- - Get-ExchangeServer
- - Get-ActiveSyncDeviceClass
- - Get-Recipient
- - Clear-ActiveSyncDevice、Remove-ActiveSyncDevice
- - Set-ADServerSettings
- - Get-Command
+- Get-ActiveSyncOrganizationSettings、Set-ActiveSyncOrganizationSettings
+- Get-CasMailbox、Set-CasMailbox
+- Get-ActiveSyncMailboxPolicy、Set-ActiveSyncMailboxPolicy、New-ActiveSyncMailboxPolicy、Remove-ActiveSyncMailboxPolicy
+- Get-ActiveSyncDeviceAccessRule、Set-ActiveSyncDeviceAccessRule、New-ActiveSyncDeviceAccessRule、Remove-ActiveSyncDeviceAccessRule
+- Get-ActiveSyncDeviceStatistics
+- Get-ActiveSyncDevice
+- Get-ExchangeServer
+- Get-ActiveSyncDeviceClass
+- Get-Recipient
+- Clear-ActiveSyncDevice、Remove-ActiveSyncDevice
+- Set-ADServerSettings
+- Get-Command
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>下载本地 Exchange 连接器软件安装包
 
@@ -184,9 +184,9 @@ Intune 支持每个订阅有多个本地 Exchange 连接器。 对于有多个 E
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>手动强制执行快速同步或完全同步
 本地 Exchange 连接器会定期自动同步 EAS 和 Intune 设备记录。 如果设备的符合性状态发生更改，则自动同步过程会定期更新记录，以便阻止或允许设备访问。
 
-   - 定期执行“快速同步”，每天执行若干次  。 快速同步会检索自上次同步以来发生更改的 Intune 许可用户和本地 Exchange 条件访问目标用户的设备信息。
+- 定期执行“快速同步”，每天执行若干次  。 快速同步会检索自上次同步以来发生更改的 Intune 许可用户和本地 Exchange 条件访问目标用户的设备信息。
 
-   - 默认情况下，每天进行一次“完全同步”  。 完全同步会检索所有 Intune 许可用户和本地 Exchange 条件访问目标用户的设备信息。 完全同步还会检索 Exchange 服务器信息，并确保 Azure 门户中 Intune 指定的配置已在 Exchange 服务器上更新。 
+- 默认情况下，每天进行一次“完全同步”  。 完全同步会检索所有 Intune 许可用户和本地 Exchange 条件访问目标用户的设备信息。 完全同步还会检索 Exchange 服务器信息，并确保 Azure 门户中 Intune 指定的配置已在 Exchange 服务器上更新。 
 
 
 可以使用 Intune 仪表板上的“快速同步”或“完全同步”选项强制连接器运行同步，步骤如下   ：

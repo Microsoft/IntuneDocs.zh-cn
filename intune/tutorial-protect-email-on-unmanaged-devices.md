@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528683"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884501"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教程：保护非托管设备上的 Exchange Online 电子邮件
 
@@ -32,10 +32,10 @@ ms.locfileid: "67528683"
 > * 创建 Azure Active Directory (Azure AD) 条件访问策略，仅允许 Outlook 应用访问 Exchange Online 中的公司电子邮件。 还需要为新式身份验证客户端（如 Outlook for iOS 和 Outlook for Android）提供多重身份验证 (MFA)。
 
 ## <a name="prerequisites"></a>必备条件
-  - 在本教程中，你将需要一个具有以下订阅的测试租户：
-    - Azure Active Directory Premium（[免费试用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)）
-    - Intune 订阅（[免费试用](free-trial-sign-up.md)）
-    - Office 365 商业版订阅，包括 Exchange（[免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=510938)）
+- 在本教程中，你将需要一个具有以下订阅的测试租户：
+  - Azure Active Directory Premium（[免费试用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)）
+  - Intune 订阅（[免费试用](free-trial-sign-up.md)）
+  - Office 365 商业版订阅，包括 Exchange（[免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=510938)）
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 

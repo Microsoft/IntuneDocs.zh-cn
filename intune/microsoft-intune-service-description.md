@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549433"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882881"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服务说明
 
@@ -60,24 +60,24 @@ Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 �
 
 - 同时会在 [Microsoft 365 管理中心](https://admin.microsoft.com/)信息中心公布重要的服务更新。 如果安装了配套 [Office 365 管理移动应用](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)，就可以在你的移动设备上接收通知。 深入了解如何使用 [Office 365 消息中心](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)。
 
-    以下为某些有帮助的提示：
+  以下为某些有帮助的提示：
 
-    - Office 365 消息中心中的消息是有针对性的。 这意味着，如果你的公司不具有适用于 EDU 产品/服务的 Intune，我们不会向你发送有关适用于 EDU 的 Intune 消息。
+  - Office 365 消息中心中的消息是有针对性的。 这意味着，如果你的公司不具有适用于 EDU 产品/服务的 Intune，我们不会向你发送有关适用于 EDU 的 Intune 消息。
 
-    - 消息过期。 例如，您的服务已更新的通知与“新增功能”页面的链接可能会在下一个服务更新通知之前过期。 否则，你可能会积压大量不再相关的消息。
+  - 消息过期。 例如，您的服务已更新的通知与“新增功能”页面的链接可能会在下一个服务更新通知之前过期。 否则，你可能会积压大量不再相关的消息。
 
-    - Office 365 管理移动应用允许你搜索所有消息，并且，如果你想要与组织中的同事分享，还可转发通知。
+  - Office 365 管理移动应用允许你搜索所有消息，并且，如果你想要与组织中的同事分享，还可转发通知。
 
-    - 在编辑消息中心首选项下方，我们最终将切换为 **Intune**，因此，你会看到这些发布到 Intune 订阅上的消息。 如果你看到的是 Office 365 的移动设备管理，而不是 Intune 的，那么你看到的是不同的服务。
+  - 在编辑消息中心首选项下方，我们最终将切换为 **Intune**，因此，你会看到这些发布到 Intune 订阅上的消息。 如果你看到的是 Office 365 的移动设备管理，而不是 Intune 的，那么你看到的是不同的服务。
 
 - 还使用两个博客来分享 EMS 消息和 Intune 支持的最佳做法：
 
-    - [企业移动性 + 安全博客](https://blogs.technet.microsoft.com/enterprisemobility/)
+  - [企业移动性 + 安全博客](https://blogs.technet.microsoft.com/enterprisemobility/)
 
-    - [Intune 支持博客](https://blogs.technet.microsoft.com/intunesupport/)
+  - [Intune 支持博客](https://blogs.technet.microsoft.com/intunesupport/)
 
->[!Note]
->可在 [Microsoft 365 管理中心](https://admin.microsoft.com)监视 Intune 服务运行状况。 在左侧窗格中选择**服务运行状况**。 你还可以使用 [Office 365 管理移动应用](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)查看服务运行状况。
+> [!Note]
+> 可在 [Microsoft 365 管理中心](https://admin.microsoft.com)监视 Intune 服务运行状况。 在左侧窗格中选择**服务运行状况**。 你还可以使用 [Office 365 管理移动应用](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)查看服务运行状况。
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Microsoft 提供有关 Intune 服务的通知类型
 

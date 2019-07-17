@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ec03471e4ff3940f09fe4a9bef53b86e32bafa8
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 8c640eb7ffccf3b522c1f9049b97eff499b346ff
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713349"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883231"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入门：免费试用 Microsoft Intune 
 
@@ -33,8 +33,8 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 ## <a name="prerequisites"></a>必备条件
 在设置 Microsoft Intune 之前，请查看以下要求：
 
-   - [支持的操作系统和浏览器](supported-devices-browsers.md) 
-   - [网络配置要求和带宽](network-bandwidth-use.md)
+- [支持的操作系统和浏览器](supported-devices-browsers.md) 
+- [网络配置要求和带宽](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>注册 Microsoft Intune 免费试用版
 

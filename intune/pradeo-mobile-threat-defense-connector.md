@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 6ccfe9ccd186f38a971aa6bac5d58bf61e44450d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548484"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882747"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Pradeo 移动威胁防御连接器与 Intune
 
@@ -93,7 +93,7 @@ Intune 设备符合性策略包括基于 Pradeo 风险评估的 Pradeo 移动威
 
 - 用于移动威胁防御的 Pradeo Security 订阅
 
-    - 有关详细信息，请参阅 [Pradeo 网站](https://www.pradeo.com/en-US/mobile-threat-protection)。
+  - 有关详细信息，请参阅 [Pradeo 网站](https://www.pradeo.com/en-US/mobile-threat-protection)。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a0df4f32513eb37bd7396d8e6249f9c6e71a4e4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548675"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884187"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>适用于 Windows 设备的 Intune 注册方法
 
@@ -36,8 +36,8 @@ ms.locfileid: "67548675"
 用户可以使用以下任何方法自助注册其 Windows 设备：
 
 - [自带设备办公 (BYOD)](https://docs.microsoft.com/intune-user-help/enroll-windows-10-device)：用户通过选择从设备的“设置”连接“工作和学校”帐户来注册其个人拥有的设备   。 过程如下：
-    - 使用 Azure Active Directory 注册设备以访问企业资源（如电子邮件）。
-    - 将设备作为个人拥有的设备 (BYOD) 注册到 Intune 中。
+  - 使用 Azure Active Directory 注册设备以访问企业资源（如电子邮件）。
+  - 将设备作为个人拥有的设备 (BYOD) 注册到 Intune 中。
 如果管理员已配置自动注册（Azure AD 高级订阅可用），则用户只需输入一次凭据。 否则，他们必须通过仅限 MDM 注册单独注册并重新输入其凭据。  
 - “仅限 MDM 注册”允许用户将加入电脑的现有工作组、Active Directory 或 Azure Active 目录注册到 Intune  。 用户从现有 Windows 电脑上的“设置”中注册。 不建议使用此方法，因为它不会将设备注册到 Azure Active Directory 中。 它还会禁止使用条件访问等功能。
 - [Azure Active Directory (Azure AD) 联接](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - 使用 Azure Active Directory 加入设备，并允许用户使用其 Azure AD 凭据登录 Windows。 如果启用了自动注册，则设备将自动注册到 Intune 中。 自动注册的好处在于，用户可以单步执行过程。 否则，他们必须通过仅限 MDM 注册单独注册并重新输入其凭据。 用户在初始 Windows OOBE 或“设置”期间以这种方式注册。 该设备在 Intune 中标记为公司拥有的设备。

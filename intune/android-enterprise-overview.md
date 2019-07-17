@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547496"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885130"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作配置文件设备
 
@@ -71,9 +71,9 @@ VPN 支持类似于 Android VPN 配置文件。 可使用相同的 VPN 提供商
 - **限于工作配置文件的 VPN** - VPN 连接仅限于部署到工作配置文件的应用。 仅 Android 企业托管应用可使用 VPN 连接。 设备上的个人应用无法使用托管 VPN 连接。 有关详细信息，请参阅 [Android 企业 VPN 设置](vpn-settings-android.md#android-enterprise-vpn-settings)。
 
 - **特定于应用的 VPN** - 如果 VPN 提供程序支持以下项，可在 Intune 中配置特定于应用的 VPN：
-    - 特定于应用的 VPN 配置
-    - 通过 Android 企业应用配置文件配置每个应用 VPN 的功能。
-    有关详细信息，请参阅[使用 Microsoft Intune 自定义配置文件为 Android 设备创建每个应用 VPN 配置文件](android-pulse-secure-per-app-vpn.md)。
+  - 特定于应用的 VPN 配置
+  - 通过 Android 企业应用配置文件配置每个应用 VPN 的功能。
+  有关详细信息，请参阅[使用 Microsoft Intune 自定义配置文件为 Android 设备创建每个应用 VPN 配置文件](android-pulse-secure-per-app-vpn.md)。
 
 ## <a name="certificate-profiles"></a>证书配置文件
 

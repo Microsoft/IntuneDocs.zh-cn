@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c05543884e0d9a00b570fb9ed4be1cdef65ca0
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66841123"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882245"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 远程管理 Intune 设备
 
@@ -32,8 +32,8 @@ ms.locfileid: "66841123"
 
 - Azure 门户中的 Intune 管理员必须具有以下 [Intune 角色](role-based-access-control.md)：  
 
-    - **更新远程协助**：允许管理员修改 TeamViewer 连接器设置
-    - **请求远程协助**:允许管理员为任何用户发起新的远程协助会话。 具有此角色的用户不受作用域内任何 Intune 角色的限制。 此外，获得了作用域内某一 Intune 角色的用户或设备组也可以请求远程协助。 
+  - **更新远程协助**：允许管理员修改 TeamViewer 连接器设置
+  - **请求远程协助**:允许管理员为任何用户发起新的远程协助会话。 具有此角色的用户不受作用域内任何 Intune 角色的限制。 此外，获得了作用域内某一 Intune 角色的用户或设备组也可以请求远程协助。 
 
 - 具有登录凭据的 [TeamViewer](https://www.teamviewer.com) 帐户。 只有一些 TeamViewer 许可证可能支持与 Intune 集成。 有关 TeamViewer 特定的需求，请参阅 [TeamViewer 集成合作伙伴：Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/)。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407169"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885083"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>什么是 Mobile Threat Defense 与 Intune 的集成？
 Intune 可以集成来自移动威胁防御供应商的数据，作为合规性策略和条件访问规则的信息源。 使用此信息，可通过阻止存在风险的移动设备的访问，来帮助保护 Exchange 和 SharePoint 等公司资源。  
@@ -47,14 +47,14 @@ Intune 使用移动威胁防御连接器在 Intune 和所选的移动威胁防�
 **应用清单**  
 如果为 iOS 设备启用“应用同步”，来自公司和个人拥有的 iOS 设备的清单将发送给 MTD 服务提供程序。 应用清单中的数据包括：
 
- - 应用 ID
- - 应用版本
- - 应用内部版本号
- - 应用名称
- - 应用程序包大小
- - 应用动态大小
- - 应用是否经过验证
- - 应用是否受管理
+- 应用 ID
+- 应用版本
+- 应用内部版本号
+- 应用名称
+- 应用程序包大小
+- 应用动态大小
+- 应用是否经过验证
+- 应用是否受管理
 
 ## <a name="sample-scenarios"></a>示例方案
 

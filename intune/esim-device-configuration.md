@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402733"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883256"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
@@ -160,12 +160,12 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅   。
 2. 选择“设备状态”  。 Intune 会显示有关设备的其他详细信息：
 
-  - **设备名**：目标设备的名称
-  - **用户**：注册设备的用户
-  - **ICCID**：移动运营商在设备上安装的激活代码内提供的唯一代码
-  - **激活状态**：设备上激活代码的 Intune 发送和安装状态
-  - **手机状态**：由移动运营商提供的状态。 跟进移动运营商进行故障排除。
-  - **上次签入时间**：设备上次与 Intune 通信的日期
+    - **设备名**：目标设备的名称
+    - **用户**：注册设备的用户
+    - **ICCID**：移动运营商在设备上安装的激活代码内提供的唯一代码
+    - **激活状态**：设备上激活代码的 Intune 发送和安装状态
+    - **手机状态**：由移动运营商提供的状态。 跟进移动运营商进行故障排除。
+    - **上次签入时间**：设备上次与 Intune 通信的日期
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>监视实际设备上的 eSIM 配置文件详细信息
 

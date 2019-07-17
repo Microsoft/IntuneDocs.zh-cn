@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735446"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884054"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 独立版 - Win32 应用管理
 
@@ -37,9 +37,9 @@ ms.locfileid: "67735446"
 
 - Windows 10 版本 1607 或更高版本（企业版、专业版和教育版）
 - Windows 10 客户端需要： 
-    - 设备必须加入 Azure AD 并进行自动注册。 Intune 管理扩展支持已加入 Azure AD、已加入混合域和已注册组策略的设备。 
-    > [!NOTE]
-    > 对于已注册组策略的情况，最终用户使用本地用户帐户将 Windows 10 设备加入 AAD。 用户必须使用其 AAD 用户帐户登录设备并注册 Intune。 如果 PowerShell 脚本或 Win32 应用以用户或设备为目标，Intune 将在设备上安装 Intune 管理扩展。
+  - 设备必须加入 Azure AD 并进行自动注册。 Intune 管理扩展支持已加入 Azure AD、已加入混合域和已注册组策略的设备。 
+  > [!NOTE]
+  > 对于已注册组策略的情况，最终用户使用本地用户帐户将 Windows 10 设备加入 AAD。 用户必须使用其 AAD 用户帐户登录设备并注册 Intune。 如果 PowerShell 脚本或 Win32 应用以用户或设备为目标，Intune 将在设备上安装 Intune 管理扩展。
 - Windows 应用程序大小的上限为每个应用 8 GB。
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>准备 Win32 应用内容以进行上传

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572285"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884884"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -49,47 +49,47 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](planning-g
 
 - **云中的标识**
 
-    - 是否使用 DirSync 或 Azure Active Directory (Azure AD) Connect？
+  - 是否使用 DirSync 或 Azure Active Directory (Azure AD) Connect？
 
-    - 环境是否进行了联合？
+  - 环境是否进行了联合？
 
-    - 是否启用了多重身份验证 (MFA)？
+  - 是否启用了多重身份验证 (MFA)？
 
 - **电子邮件环境**
 
-    - 是否使用 Exchange？ 是位于本地还是云中？
+  - 是否使用 Exchange？ 是位于本地还是云中？
 
-    - 是否正在进行将 Exchange 迁移到云这一项目？
+  - 是否正在进行将 Exchange 迁移到云这一项目？
 
 - **当前移动设备管理 (MDM) 解决方案**
 
-    - 当前是否在使用其他 MDM 解决方案？
+  - 当前是否在使用其他 MDM 解决方案？
 
-    - 正在对公司和 BYOD 用例场景使用什么 MDM 解决方案？
+  - 正在对公司和 BYOD 用例场景使用什么 MDM 解决方案？
 
-    - 正在使用哪些功能（例如应用设备设置、Wi-Fi 配置）？
+  - 正在使用哪些功能（例如应用设备设置、Wi-Fi 配置）？
 
-    - 支持哪些设备平台？
+  - 支持哪些设备平台？
 
-    - 哪些组以及有多少用户正在使用 MDM 解决方案？
+  - 哪些组以及有多少用户正在使用 MDM 解决方案？
 
 - **证书解决方案**
 
-    - 是否已实施证书解决方案？
+  - 是否已实施证书解决方案？
 
-    - 使用了哪种类型的证书？
+  - 使用了哪种类型的证书？
 
 - **系统管理**
 
-    - 如何管理电脑和服务器环境？
+  - 如何管理电脑和服务器环境？
 
-    - 是否正在使用 System Center Configuration Manager？ 是否正在使用第三方系统管理平台？
+  - 是否正在使用 System Center Configuration Manager？ 是否正在使用第三方系统管理平台？
 
 - **VPN 解决方案**
 
-    - 你的 VPN 解决方案是什么？
+  - 你的 VPN 解决方案是什么？
 
-    - 是否将其同时用于公司和 BYOD 用例场景？
+  - 是否将其同时用于公司和 BYOD 用例场景？
 
 请务必将任何项目或任何其他计划记录到位，在记录当前 MDM 环境时它们会影响环境。 下面的示例演示了在创建 Intune 设计时记录当前环境的一种方法：
 

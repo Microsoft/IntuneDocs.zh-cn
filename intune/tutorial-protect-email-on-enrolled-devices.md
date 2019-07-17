@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a5a355c82455e135319b7683756eb0ef5c032876
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548050"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882362"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教程：保护托管设备上的 Exchange Online 电子邮件
 了解如何使用设备符合性策略与条件访问，以确保 iOS 设备仅在由 Intune 托管并使用已批准的电子邮件应用时才可以访问 Exchange Online 电子邮件。 
@@ -35,10 +35,10 @@ ms.locfileid: "67548050"
 如果没有 Intune 订阅，请[注册免费试用帐户](free-trial-sign-up.md)。
 
 ## <a name="prerequisites"></a>必备条件
-  - 在本教程中，你将需要一个具有以下订阅的测试租户：
-    - Azure Active Directory Premium（[免费试用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)）
-    - Office 365 商业版订阅，包括 Exchange（[免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=510938)）
-  - 在开始之前，按照[快速入门：创建适用于 iOS 的电子邮件设备配置文件](quickstart-email-profile.md)中的步骤创建适用于 iOS 设备的测试设备配置文件。
+- 在本教程中，你将需要一个具有以下订阅的测试租户：
+  - Azure Active Directory Premium（[免费试用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)）
+  - Office 365 商业版订阅，包括 Exchange（[免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=510938)）
+- 在开始之前，按照[快速入门：创建适用于 iOS 的电子邮件设备配置文件](quickstart-email-profile.md)中的步骤创建适用于 iOS 设备的测试设备配置文件。
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 

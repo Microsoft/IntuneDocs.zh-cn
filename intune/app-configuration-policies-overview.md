@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649025"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885120"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的应用配置策略
 
@@ -44,8 +44,8 @@ ms.locfileid: "67649025"
 只要应用检测到配置设置，即会使用它们。 通常情况下，应用在用户首次运行该应用时检测配置设置。
 
 对于如何使用 Intune 的应用配置，你有两个选择：
- - **受管理设备** - 设备由 Intune 作为移动设备管理 (MDM) 提供程序进行管理。
- - **托管应用** - 在未进行设备注册的情况下受到管理的应用。
+- **受管理设备** - 设备由 Intune 作为移动设备管理 (MDM) 提供程序进行管理。
+- **托管应用** - 在未进行设备注册的情况下受到管理的应用。
 
 > [!NOTE]
 > 作为 Microsoft Intune 管理员，可控制将哪些用户帐户添加到托管设备上的 Microsoft Office 应用程序。 可以将访问权限限制为仅允许的组织用户帐户，并阻止已注册设备上的个人帐户。 支持性应用程序将处理应用配置并删除和阻止未经批准的帐户。
@@ -66,9 +66,9 @@ ms.locfileid: "67649025"
 
 ### <a name="managed-devices"></a>托管设备
 
- - 了解如何将应用配置用于 iOS 设备。  请参阅[为受管理的 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)。
- - 了解如何将应用配置用于 Android 设备。  请参阅[为受管理的 Android 设备添加应用配置策略](app-configuration-policies-use-android.md)。
+- 了解如何将应用配置用于 iOS 设备。  请参阅[为受管理的 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)。
+- 了解如何将应用配置用于 Android 设备。  请参阅[为受管理的 Android 设备添加应用配置策略](app-configuration-policies-use-android.md)。
 
 ### <a name="managed-apps"></a>托管应用
 
- - 了解如何将应用配置用于受管理的应用。 请参阅[为受管理应用添加应用配置策略（无需设备注册）](app-configuration-policies-managed-app.md)。
+- 了解如何将应用配置用于受管理的应用。 请参阅[为受管理应用添加应用配置策略（无需设备注册）](app-configuration-policies-managed-app.md)。

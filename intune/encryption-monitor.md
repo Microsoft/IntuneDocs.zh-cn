@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316935"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883371"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>监视 BitLocker 和设备加密  
 Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，并帮助你通过设备访问 BitLocker 的重要信息，如 Azure Active Directory (Azure AD) 中所示。  
@@ -76,22 +76,22 @@ Intune 提供一个集中位置用于识别 Windows 10 设备的加密状态，�
 
   Intune 可能报告的状态详细信息示例如下：  
 
-   - BitLocker 策略需要用户同意启动 BitLocker 驱动器加密向导以开始加密 OS 卷，但用户未同意。  
-   - OS 卷的加密方法与 BitLocker 策略不匹配。  
-   - BitLocker 策略需要 TPM 保护程序保护 OS 卷，但未使用 TPM。  
-   - BitLocker 策略需要只有 TPM 的保护程序保护 OS 卷，但未使用 TPM 保护。  
-   - BitLocker 策略需要对 OS 卷使用 TPM+PIN 保护，但未使用 TPM+PIN 保护程序。  
-   - BitLocker 策略需要对 OS 卷使用 TPM+启动密钥保护，但未使用 TPM+启动密钥保护程序。  
-   - BitLocker 策略需要对 OS 卷使用 TPM+PIN+启动密钥保护，但未使用 TPM+PIN+启动密钥保护程序。  
-   - OS 卷未受保护。  
-   - 恢复密钥备份失败。  
-   - 固定驱动器未受保护。  
-   - 固定驱动器的加密方法与 BitLocker 策略不匹配。  
-   - 为了加密驱动器，BitLocker 策略需要用户以管理员身份登录，或者，如果设备连接到 Azure AD，AllowStandardUserEncryption 策略必须设置为 1。  
-   - Windows 恢复环境 (WinRE) 未配置。  
-   - TPM 无法用于 BitLocker，原因是 TPM 不存在，导致在注册表中不可用，或者是 OS 位于可删除驱动器。  
-   - TPM 未准备就绪，BitLocker 无法使用。  
-   - 恢复密钥备份所需的网络不可用。  
+  - BitLocker 策略需要用户同意启动 BitLocker 驱动器加密向导以开始加密 OS 卷，但用户未同意。  
+  - OS 卷的加密方法与 BitLocker 策略不匹配。  
+  - BitLocker 策略需要 TPM 保护程序保护 OS 卷，但未使用 TPM。  
+  - BitLocker 策略需要只有 TPM 的保护程序保护 OS 卷，但未使用 TPM 保护。  
+  - BitLocker 策略需要对 OS 卷使用 TPM+PIN 保护，但未使用 TPM+PIN 保护程序。  
+  - BitLocker 策略需要对 OS 卷使用 TPM+启动密钥保护，但未使用 TPM+启动密钥保护程序。  
+  - BitLocker 策略需要对 OS 卷使用 TPM+PIN+启动密钥保护，但未使用 TPM+PIN+启动密钥保护程序。  
+  - OS 卷未受保护。  
+  - 恢复密钥备份失败。  
+  - 固定驱动器未受保护。  
+  - 固定驱动器的加密方法与 BitLocker 策略不匹配。  
+  - 为了加密驱动器，BitLocker 策略需要用户以管理员身份登录，或者，如果设备连接到 Azure AD，AllowStandardUserEncryption 策略必须设置为 1。  
+  - Windows 恢复环境 (WinRE) 未配置。  
+  - TPM 无法用于 BitLocker，原因是 TPM 不存在，导致在注册表中不可用，或者是 OS 位于可删除驱动器。  
+  - TPM 未准备就绪，BitLocker 无法使用。  
+  - 恢复密钥备份所需的网络不可用。  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 恢复密钥
 Intune 允许访问 BitLocker 的 Azure AD 边栏选项卡，因此可通过 Intune 门户查看 Windows 10 设备的 BitLocker 密钥 ID 和恢复密钥。  为了能够访问，设备必须将其密钥托管到 Azure AD。 

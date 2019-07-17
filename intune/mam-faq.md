@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54511e29bd44b862a5ad06bdfda2067ed7248677
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 2d4cf000d395bb278b3207fc7a4327d3307abbe4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494288"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883010"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -123,9 +123,9 @@ Intune 会将应用中的所有数据标记为“公司”或“个人”。 数
 
 - **系统多久提示一次用户输入 Intune PIN？**<br></br> IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设置“以下时间过后重新检查访问要求(分钟)”。 此设置指定在设备上检测访问要求，并再次显示应用程序 PIN 屏幕之前的时长。 但是，请注意以下关于 PIN 的重要详细信息，它们会影响用户收到提示的频率： 
 
-    - **在同一发布者的应用之间共享 PIN 以提高可用性：** 在 iOS 上，同一应用发布者  的所有应用之间共享一个应用 PIN 码。 在 Android 上，所有应用共享一个应用 PIN。
-    - **在设备重启后“(分钟)后重新检查访问要求”的行为：** “PIN 计时器”跟踪确定何时显示下一个 Intune 应用 PIN 的不活动分钟数。 在 iOS 上，PIN 计时器不受设备重启影响。 因此，设备重启对用户在使用 Intune PIN 策略的 iOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，PIN 计时器在设备重启后重置。 因此，使用 Intune PIN 策略的 Android 应用可能提示输入应用 PIN，设备重启后的“以下时间过后重新检查访问要求(分钟)”设置值对此没有影响  。  
-    - **与 PIN 关联的计时器的滚动特性：** 输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该 PIN 的 PIN 计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。
+  - **在同一发布者的应用之间共享 PIN 以提高可用性：** 在 iOS 上，同一应用发布者  的所有应用之间共享一个应用 PIN 码。 在 Android 上，所有应用共享一个应用 PIN。
+  - **在设备重启后“(分钟)后重新检查访问要求”的行为：** “PIN 计时器”跟踪确定何时显示下一个 Intune 应用 PIN 的不活动分钟数。 在 iOS 上，PIN 计时器不受设备重启影响。 因此，设备重启对用户在使用 Intune PIN 策略的 iOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，PIN 计时器在设备重启后重置。 因此，使用 Intune PIN 策略的 Android 应用可能提示输入应用 PIN，设备重启后的“以下时间过后重新检查访问要求(分钟)”设置值对此没有影响  。  
+  - **与 PIN 关联的计时器的滚动特性：** 输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该 PIN 的 PIN 计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。
 
 对于 iOS 设备，即使在不同发行商的应用之间共享 PIN，当不是主要输入焦点的应用再次满足“在一定时间后重新检查访问要求(分钟)”  值时，也会再次显示提示。 因此，例如，某一用户具有来自发行商 X  的应用 A  和来自发行商 Y  的应用 B  ，并且这两个应用共享相同 PIN。 该用户将焦点置于应用 A  （前景），并最小化应用 B  。 当满足“在一定时间后重新检查访问要求(分钟)”  值并且用户切换到应用 B  时，将需要此 PIN。
 

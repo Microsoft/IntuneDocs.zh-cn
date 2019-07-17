@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94f2bd9237e92b22b9d73e4f7777dc0faf3f0fe
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529622"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883032"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
 
@@ -67,9 +67,9 @@ Apple School Manager 是适用于学校的设备购买和注册计划。 与 DEP
 配置了用户关联的设备可以安装和运行公司门户应用，以下载应用和管理设备。 用户收到设备后，必须完成一些其他步骤，以便完成设置助理并安装公司门户应用。
 
 需要关联用户才可支持以下内容：
-  - 移动应用程序管理 (MAM) 应用
-  - 对电子邮件和公司数据的条件访问
-  - 公司门户应用
+- 移动应用程序管理 (MAM) 应用
+- 对电子邮件和公司数据的条件访问
+- 公司门户应用
 
 **用户如何注册具有用户关联的公司所有的 iOS 设备**
 1. 用户打开设备时，系统会提示其完成设置助理。 

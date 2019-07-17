@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 1a5cd898545bae51395352d5cf1e7b1ee9bd22dd
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251169"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883250"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中添加终结点保护设置
 
@@ -33,8 +33,8 @@ ms.locfileid: "67251169"
 例如，可以创建一个终结点保护配置文件，仅允许 macOS 用户安装来自 Mac App Store 的应用。 或者在 Windows 10 设备上运行应用时启用 Windows SmartScreen。
 
 在创建配置文件之前，请查看详细介绍 Intune 可以针对每个支持平台管理的终结点保护设置的以下文章： 
-   - [macOS 设置](endpoint-protection-macos.md)
-   - [Windows 10 设置](endpoint-protection-windows-10.md)
+- [macOS 设置](endpoint-protection-macos.md)
+- [Windows 10 设置](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>创建包含终结点保护设置的设备配置文件
 

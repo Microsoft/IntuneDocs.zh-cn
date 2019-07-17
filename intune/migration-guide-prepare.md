@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548363"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882847"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>第 1 阶段：为移动设备管理 (MDM) 准备 Microsoft Intune
 
@@ -51,8 +51,8 @@ ms.locfileid: "67548363"
 
 - 需要哪些使用条款？
 
-    - 请务必让法律部门尽早参与到其中。
-    - 何种本地化是必需的？
+  - 请务必让法律部门尽早参与到其中。
+  - 何种本地化是必需的？
 
 - 用户是否熟悉常规技术和 IT？
 
@@ -63,8 +63,8 @@ ms.locfileid: "67548363"
 - 当前使用的设备密码/PIN 码长度是？
 
 - 是否需要禁用设备功能，或限制某些设备行为？ 可通过设备配置配置文件控制各种特定于平台的设置，例如：
-    - 禁用摄像头
-    - 锁定到单应用模式<br/>
+  - 禁用摄像头
+  - 锁定到单应用模式<br/>
 
 - 必须支持哪些类型的身份验证？ 如果需要基于证书的身份验证，必须预配哪些类型的证书？
   - Intune 可以为注册设备预配具备资源访问配置文件的证书。

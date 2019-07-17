@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: f5c78eb01e495b87a35bed06c9800c04a7f97ba4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572471"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882019"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium 移动威胁防御连接器与 Intune
 
@@ -96,7 +96,7 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 
 - Zimperium 移动威胁防御订阅
 
-    - 有关详细信息，请访问 [Zimperium 网站](https://www.zimperium.com/zips-mobile-ips)。
+  - 有关详细信息，请访问 [Zimperium 网站](https://www.zimperium.com/zips-mobile-ips)。
 
 ## <a name="next-steps"></a>后续步骤
 

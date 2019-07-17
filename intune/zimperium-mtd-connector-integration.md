@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e78c9034058a5f60f01056711465b28deca77d83
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3eb18c45f81e427f1d14ce77086e0d7684994e82
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572159"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884165"
 ---
 # <a name="integrate-zimperium-with-intune"></a>将 Zimperium 与 Intune 集成
 
@@ -39,13 +39,13 @@ ms.locfileid: "67572159"
 
 - 授予下列权限的 Azure Active Directory 全局管理员管理凭据：
 
-    - 登录和读取用户配置文件
+  - 登录和读取用户配置文件
 
-    - 使用已登录用户的身份访问目录
+  - 使用已登录用户的身份访问目录
 
-    - 读取目录数据
+  - 读取目录数据
 
-    - 向 Intune 发送设备信息
+  - 向 Intune 发送设备信息
 
 - 用于访问 Zimperium MTD 控制台的管理员凭据。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546878"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883792"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>将条件访问策略从 Intune 经典门户重新分配到 Azure 门户
 
@@ -38,14 +38,14 @@ ms.locfileid: "67546878"
 
 - 验证新策略可以按预期在 Azure 门户中运行后，在 Intune 经典门户中禁用条件策略。
 <br /><br />
-    - 在 Intune 典门户中“禁用”  条件访问策略之前，需先规划如何将用户转移到新策略。 有两种方法：
+  - 在 Intune 典门户中“禁用”  条件访问策略之前，需先规划如何将用户转移到新策略。 有两种方法：
 <br /><br />
-        - 使用相同的包含组来应用在 Azure 门户中创建的策略，并创建一个新免除组，以与 Intune 经典门户应用的策略配合使用  。
-            - 逐渐将某些用户移动到经典门户中指定的免除组中。 这样可以阻止应用 Intune 经典门户所面向的策略。 除 Intune 经典门户中应用的策略外，还会应用在 Azure 门户中创建的、针对同一用户组的策略。 
+    - 使用相同的包含组来应用在 Azure 门户中创建的策略，并创建一个新免除组，以与 Intune 经典门户应用的策略配合使用  。
+      - 逐渐将某些用户移动到经典门户中指定的免除组中。 这样可以阻止应用 Intune 经典门户所面向的策略。 除 Intune 经典门户中应用的策略外，还会应用在 Azure 门户中创建的、针对同一用户组的策略。 
 <br /><br />
-        - **在 Azure 门户中创建一个要实施条件访问策略的新组**。 如果选择此方法，需要执行以下操作：
-            - 逐渐从在 Intune 经典门户中应用条件访问策略的安全组中删除用户。
-            - 确认新策略适用于这些用户后，可在 Intune 经典门户中禁用该策略。 
+    - **在 Azure 门户中创建一个要实施条件访问策略的新组**。 如果选择此方法，需要执行以下操作：
+      - 逐渐从在 Intune 经典门户中应用条件访问策略的安全组中删除用户。
+      - 确认新策略适用于这些用户后，可在 Intune 经典门户中禁用该策略。 
 <br /><br />
 - 如果条件访问策略设置配置为在 Intune 经典门户中使用 Exchange ActiveSync (EAS)，请参阅[本主题中的说明](#reassign-intune-device-based-conditional-access-policies-for-eas-clients)，了解如何在 Azure 门户中重新分配 EAS 条件访问策略设置  。
 
@@ -64,10 +64,10 @@ ms.locfileid: "67546878"
 通过使用 Azure 门户中的“Intune 应用保护”边栏选项卡，管理员可以设置基于应用的条件规则，以便仅允许支持 Intune 应用保护策略的应用访问公司资源  。 可使用基于设备的条件访问策略覆盖这些基于应用的条件访问策略。 可以合并基于设备的和基于应用的条件策略（逻辑 AND），还可以提供其中一个选项（逻辑 OR）。 如果条件访问策略的要求是：
 
 - 需要兼容设备和 (AND) 使用已批准的应用  。
-    - 应使用[“Azure Active Directory 条件访问”边栏选项卡](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)和[“Intune 应用保护”边栏选项卡](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)来设置条件访问策略。
+  - 应使用[“Azure Active Directory 条件访问”边栏选项卡](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)和[“Intune 应用保护”边栏选项卡](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)来设置条件访问策略。
 <br /><br />
 - 需要兼容设备或 (OR) 使用已批准的应用  。
-    - 应使用 [Intune 经典门户](https://manage.microsoft.com)和[“Intune 应用保护”边栏选项卡](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)来设置条件访问策略。
+  - 应使用 [Intune 经典门户](https://manage.microsoft.com)和[“Intune 应用保护”边栏选项卡](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)来设置条件访问策略。
 
 > [!TIP] 
 > 本主题提供一些屏幕截图，用于比较 Intune 经典门户和 Azure 门户的用户体验。
