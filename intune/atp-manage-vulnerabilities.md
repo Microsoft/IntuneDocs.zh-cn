@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
+ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045290"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270280"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>使用 Intune 修正由 Microsoft Defender ATP 标识的漏洞  
 
@@ -32,7 +32,7 @@ ms.locfileid: "67045290"
 
 将 Intune 连接到 Microsoft Defender 高级威胁防护后，ATP 会从托管设备中收到威胁和漏洞的详细信息。  
 
-在 Windows Defender 安全中心控制台中，ATP 安全管理员可查看有关终结点漏洞的数据。 然后，管理员使用单击来创建用于标记需修正的易受攻击的设备的安全任务。 安全任务会立即传递到 Intune 控制台，Intune 管理员可以在其中查看它们。 安全任务标识漏洞类型、优先级、状态和用于修正漏洞的步骤。 Intune 管理员选择接受或拒绝该任务。  
+在 Microsoft Defender 安全中心控制台中，ATP 安全管理员可查看有关终结点漏洞的数据。 然后，管理员使用单击来创建用于标记需修正的易受攻击的设备的安全任务。 安全任务会立即传递到 Intune 控制台，Intune 管理员可以在其中查看它们。 安全任务标识漏洞类型、优先级、状态和用于修正漏洞的步骤。 Intune 管理员选择接受或拒绝该任务。  
 
 接受任务后，Intune 管理员会通过 Intune 使用作为安全任务的一部分提供的指导修正漏洞。  
 
@@ -67,7 +67,7 @@ ms.locfileid: "67045290"
 **ATP 的 Intune 配置**：  
 - 配置与 Microsoft Defender ATP 的服务间连接。  
 - 将配置文件类型为 Microsoft Defender ATP（Windows 10 桌面版）  的设备符合性策略部署到具有由 ATP 评估出来的风险的设备。
-  有关如何将 Intune 设置为使用 ATP 的信息，请参阅[使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。  
+  有关如何将 Intune 设置为使用 ATP 的信息，请参阅[使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune)。  
 
 ## <a name="work-with-security-tasks"></a>使用安全任务  
 

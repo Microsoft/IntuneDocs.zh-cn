@@ -1,5 +1,5 @@
 ---
-title: 结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
+title: 通过 Intune 管理适用于 iOS 和 Android 的 Microsoft Edge
 titleSuffix: ''
 description: 结合使用 Intune 应用保护策略和 Microsoft Edge，确保公司的网站始终在安全措施到位的情况下被访问。
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 147547577615c6e74a9c5b3dd8b200ba387bad79
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
+ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648466"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68287217"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
 
@@ -157,7 +157,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 ### <a name="before-you-start"></a>开始之前
 
 - 通过 Azure AD 应用程序代理设置内部应用程序。
-    - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
+  - 要配置应用程序代理和发布应用程序，请参阅[设置文档](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
 - Microsoft Edge 应用必须分配 [Intune 应用保护策略](app-protection-policy.md)。
 
 > [!NOTE]
@@ -228,34 +228,34 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 - 可以根据以下允许模式列表中的规则使用通配符 (\*)。
 - 通配符只能匹配主机名中的整体部分（由句点分隔）或路径的整体部分（由正斜杠分隔）。 例如，不支持 `http://*contoso.com`  。
 - 可以在地址中指定端口号。 如果未指定端口号，则使用以下值：
-    - 对于 http，使用端口 80
-    - 对于 https，使用端口 443
+  - 对于 http，使用端口 80
+  - 对于 https，使用端口 443
 - 不支持对端口号使用通配符  。 例如，不支持 `http://www.contoso.com:*` 和 `http://www.contoso.com:*/`。 
 
     |    URL    |    详细信息    |    匹配    |    不匹配    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    匹配单个页面    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    匹配单个页面    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    匹配以 `www.contoso.com` 开头的所有 URL    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    匹配 `contoso.com` 下的所有子域    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    匹配单个文件夹    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    匹配以 `www.contoso.com` 开头的所有 URL    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    匹配 `contoso.com` 下的所有子域    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    匹配以 `contoso.com/` 结尾的所有子域    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    匹配单个文件夹    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    匹配单个页面（使用端口号）    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    匹配单个安全页面    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    匹配单个文件夹和所有子文件夹    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
 - 以下是一些不能指定的输入的示例：
-    - `*.com`
-    - `*.contoso/*`
-    - `www.contoso.com/*images`
-    - `www.contoso.com/*images*pigs`
-    - `www.contoso.com/page*`
-    - IP 地址
-    - `https://*`
-    - `http://*`
-    - `https://*contoso.com`
-    - `http://www.contoso.com:*`
-    - `http://www.contoso.com: /*`
-  
+  - `*.com`
+  - `*.contoso/*`
+  - `www.contoso.com/*images`
+  - `www.contoso.com/*images*pigs`
+  - `www.contoso.com/page*`
+  - IP 地址
+  - `https://*`
+  - `http://*`
+  - `https://*contoso.com`
+  - `http://www.contoso.com:*`
+  - `http://www.contoso.com: /*`
+
 ## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>定义用户尝试访问阻止站点时的行为
 
 借助内置于 Microsoft Edge 的双重标识模型，可为最终用户提供比 Intune Managed Browser 中可实现的体验更加灵活的体验。 当用户在 Microsoft Edge 中点击阻止站点时，可以提示他们在其个人上下文（而不是其工作上下文）中打开链接。 这样能够使他们受到保护，同时保护公司资源安全。 例如，如果通过 Outlook 向用户发送指向新闻文章的链接，则可以在其个人上下文或 InPrivate 选项卡中打开该链接。其工作上下文不允许访问新闻网站。 默认情况下，这些转换是允许的。

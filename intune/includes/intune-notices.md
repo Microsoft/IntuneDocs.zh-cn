@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744318"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67812502"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
 
@@ -72,3 +72,19 @@ https://aka.ms/intune_fullscreen
 
 #### <a name="additional-information"></a>其他信息
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>更改计划：Intune 中的新 Windows 更新设置 <!-- 4464404 -->
+从 Intune 服务的 8 月版本或 1908 开始，我们将添加新的“截止时间设置”，可以对此进行配置，而不是“允许用户重新启动(预定重启)”设置。 我们计划在 1909 或 9 月更新中的 UI 上禁用预定重启设置，然后在 10 月底之前将它们从控制台中完全删除。 
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+如果在环境中管理 Windows 10 设备： 
+- 对于 8 月 Intune 更新或 1908，除了旧的预定重启设置，你还会在控制台中看到新的截止时间设置。
+- 如果同时配置了这两个旧设置和新设置，则截止时间设置值将重写预定重启设置值。
+- 截止时间设置将替换 1910 更新控制台中的“允许用户重新启动(预定重启)”选项。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
+开始使用 1908 中的截止时间设置，方法是使用所需的值对其进行配置。 准备就绪后，可以将预定重启设置设为“未配置”，以便在 10 月从控制台中删除这些设置。
+
+如果需要，请更新文档和任何自动化脚本。 
+
+删除预定重启设置之前，我们会随时为你提供最新消息并将提醒发送到消息中心。
