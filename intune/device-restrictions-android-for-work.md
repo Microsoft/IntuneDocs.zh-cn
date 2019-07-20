@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263683"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883429"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置
 
@@ -56,7 +56,7 @@ ms.locfileid: "67263683"
 - **使用 NFC 无线收发数据**：选择“阻止”  可阻止使用近场通信 (NFC) 技术从应用无线收发数据。 “未配置”  则允许使用 NFC 在设备之间共享数据。
 - **调试功能**：选择“允许”  可允许用户在设备上使用调试功能。 “未配置”  则阻止用户在设备上使用调试功能。
 - **麦克风调节**：选择“阻止”  可防止用户取消麦克风静音和调节麦克风音量。 “未配置”  则允许用户使用和调节设备麦克风的音量。
-- **恢复出厂设置保护电子邮件**：选择“Google 帐户电子邮件地址”  。 输入设备管理员的电子邮件地址，该地址可以在擦除设备后解锁设备。 请务必使用分号分隔电子邮件地址，例如 `admin1@gmail.com;admin2@gmail.com`。 如果未输入电子邮件，则任何人都可以在设备恢复出厂设置后解锁设备。 运行非用户恢复出厂设置，例如运行恢复出厂设置使用恢复菜单上，则仅适用于这些电子邮件。
+- **恢复出厂设置保护电子邮件**：选择“Google 帐户电子邮件地址”  。 输入设备管理员的电子邮件地址，该地址可以在擦除设备后解锁设备。 请务必使用分号分隔电子邮件地址，例如 `admin1@gmail.com;admin2@gmail.com`。 如果未输入电子邮件，则任何人都可以在设备恢复出厂设置后解锁设备。 这些电子邮件仅适用于运行非用户出厂设置的情况, 例如, 使用 "恢复" 菜单运行恢复出厂设置。
 - **网络安全门**：选择“启用”可允许用户打开网络安全门功能  。 如果设备启动时未建立网络连接，则安全门会要求临时连接到网络并刷新设备策略。 应用策略之后，将忽略临时网络且设备将继续启动。 在以下情况下，此功能会将设备连接到网络：
   - 上一个策略中没有合适的网络。
   - 设备以锁定任务模式进入应用。
@@ -101,7 +101,7 @@ ms.locfileid: "67263683"
   > 
   > “托管主屏幕”  应用不需要位于配置文件中，但需要将其添加为客户端应用。 将“托管主屏幕”  应用添加为客户端应用后，在配置文件中添加的任何其他应用都会在“托管主屏幕”  应用中显示为图标。 
   >
-  > 当使用具有管理主页屏幕多应用展台模式，拨号器/phone 应用程序可能无法正常工作。 
+  > 将多应用展台模式与托管主屏幕一起使用时, 拨号程序/电话应用程序可能无法正常工作。 
 
   - 选择“添加”  并从列表中选择应用。
 
@@ -208,9 +208,9 @@ ms.locfileid: "67263683"
     - **包 ID**：在 Google Play 商店中输入应用的包 ID。 例如，如果 Play 商店中应用的 URL 为 `https://play.google.com/store/details?id=com.contosovpn.android.prod`，则包 ID 为`com.contosovpn.android.prod`。
 
   > [!IMPORTANT]
-  >  - 所选的 VPN 客户端必须安装在设备上，并且必须支持工作配置文件中的按应用 VPN。 否则将会出错。 
-  >  - 需要批准“托管 Google Play 商店”中的 VPN 客户端应用，将应用同步到 Intune，然后将应用部署到设备  。 执行此操作后，应用将安装在用户的工作配置文件中。
-  >  - 将每应用 VPN 与适用于 Android 3.0.4 的 F5 Access 结合使用时，可能存在已知问题。 有关详细信息，请参阅[适用于 Android 3.0.4 的 F5 Access 的 F5 发行说明](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)。
+  > - 所选的 VPN 客户端必须安装在设备上，并且必须支持工作配置文件中的按应用 VPN。 否则将会出错。 
+  > - 需要批准“托管 Google Play 商店”中的 VPN 客户端应用，将应用同步到 Intune，然后将应用部署到设备  。 执行此操作后，应用将安装在用户的工作配置文件中。
+  > - 将每应用 VPN 与适用于 Android 3.0.4 的 F5 Access 结合使用时，可能存在已知问题。 有关详细信息，请参阅[适用于 Android 3.0.4 的 F5 Access 的 F5 发行说明](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)。
 
 - **锁定模式**：选择“启用”以强制所有流量使用 VPN 隧道  。 如果未建立与 VPN 的连接，则设备将无法访问网络。
 
@@ -315,9 +315,9 @@ ms.locfileid: "67263683"
     - **包 ID**：在 Google Play 商店中输入应用的包 ID。 例如，如果 Play 商店中应用的 URL 为 `https://play.google.com/store/details?id=com.contosovpn.android.prod`，则包 ID 为`com.contosovpn.android.prod`。
 
   > [!IMPORTANT]
-  >  - 所选的 VPN 客户端必须安装在设备上，并且必须支持工作配置文件中的按应用 VPN。 否则将会出错。 
-  >  - 需要批准“托管 Google Play 商店”中的 VPN 客户端应用，将应用同步到 Intune，然后将应用部署到设备  。 执行此操作后，应用将安装在用户的工作配置文件中。
-  >  - 将每应用 VPN 与适用于 Android 3.0.4 的 F5 Access 结合使用时，可能存在已知问题。 有关详细信息，请参阅[适用于 Android 3.0.4 的 F5 Access 的 F5 发行说明](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)。
+  > - 所选的 VPN 客户端必须安装在设备上，并且必须支持工作配置文件中的按应用 VPN。 否则将会出错。 
+  > - 需要批准“托管 Google Play 商店”中的 VPN 客户端应用，将应用同步到 Intune，然后将应用部署到设备  。 执行此操作后，应用将安装在用户的工作配置文件中。
+  > - 将每应用 VPN 与适用于 Android 3.0.4 的 F5 Access 结合使用时，可能存在已知问题。 有关详细信息，请参阅[适用于 Android 3.0.4 的 F5 Access 的 F5 发行说明](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)。
 
 - **锁定模式**：选择“启用”以强制所有流量使用 VPN 隧道  。 如果未建立与 VPN 的连接，则设备将无法访问网络。
 

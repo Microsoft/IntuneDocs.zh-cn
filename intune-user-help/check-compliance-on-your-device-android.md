@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506851"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230077"
 ---
 # <a name="check-compliance-on-your-android-device"></a>在 Android 设备上检查合规性
 
@@ -31,6 +31,6 @@ ms.locfileid: "66506851"
 
 1. 在设备上打开适用于 Android 的公司门户应用。  
 
-2. 点击“查看设备设置”  。  
+2. 点击“查看设备设置”  。   
 
 如果无法重置丢失或被盗的设备，请让公司支持人员为你重置。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

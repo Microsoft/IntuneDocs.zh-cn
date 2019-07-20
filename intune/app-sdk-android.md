@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: b033052ebd5d3d26976482ea2435c8a0d7314c8e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735629"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885048"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -116,8 +116,8 @@ apply plugin: 'com.microsoft.intune.mam'
 * [要包括的外部依赖项](#usage-of-includeexternallibraries) 
 * 要从处理中排除的特定类
 * 要从处理中排除的变体。 这些可能是指一个完整的变体名称或一种口味。 例如
-     * 如果应用具有 {`savory`, `sweet`} 和 {`vanilla`, `chocolate`} 口味的生成类型 `debug` 和 `release`，则可以指定
-     * `savory` 以排除具有咸辣口味的所有变体，或指定 `savoryVanillaRelease` 以仅排除此变体。
+  * 如果应用具有 {`savory`, `sweet`} 和 {`vanilla`, `chocolate`} 口味的生成类型 `debug` 和 `release`，则可以指定
+  * `savory` 以排除具有咸辣口味的所有变体，或指定 `savoryVanillaRelease` 以仅排除此变体。
 
 #### <a name="example-partial-buildgradle"></a>部分 build.gradle 示例
 
@@ -680,15 +680,15 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
 
 * **NonBrokerRedirectURI** 是在无代理情况下使用的 AAD 重定向 URI。 如果未指定，则使用默认值 `urn:ietf:wg:oauth:2.0:oob`。 此默认设置适用于大多数应用。
 
-    * NonBrokerRedirectURI 仅在 SkipBroker 为“true”时使用。
+  * NonBrokerRedirectURI 仅在 SkipBroker 为“true”时使用。
 
 * SkipBroker 用于替代默认的 ADAL SSO 参与行为  。 只应为指定 ClientID 且不支持中转身份验证/设备范围 SSO 的应用指定 SkipBroker  。 在此情况下，应将其设置为“true”。 大多数应用不得设置 SkipBroker 参数。
 
-    * 必须在清单中指定 ClientID，才能指定 SkipBroker 值  。
+  * 必须在清单中指定 ClientID，才能指定 SkipBroker 值  。
 
-    * 指定 ClientID 时，默认值为“false”。
+  * 指定 ClientID 时，默认值为“false”。
 
-    * SkipBroker为“true”时，将使用 NonBrokerRedirectURI。 未集成 ADAL（因此没有 ClientID）的应用也将默认为“true”。
+  * SkipBroker为“true”时，将使用 NonBrokerRedirectURI。 未集成 ADAL（因此没有 ClientID）的应用也将默认为“true”。
 
 ### <a name="common-adal-configurations"></a>常用 ADAL 配置
 
@@ -1317,48 +1317,48 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
 #### <a name="examples"></a>示例
 
-  1. 如果活动从由另一 MAM 应用发送的 `Intent` 启动，则活动的标识将在发送 `Intent` 时基于另一应用的有效标识进行设置。
+1. 如果活动从由另一 MAM 应用发送的 `Intent` 启动，则活动的标识将在发送 `Intent` 时基于另一应用的有效标识进行设置。
 
-  2. 使用服务，将设置线程的标识，方法与 `onStart` 或 `onBind` 调用期间进行的操作类似。 在从 `onBind` 返回的 `Binder` 中进行调用也将暂时设置线程标识。
+2. 使用服务，将设置线程的标识，方法与 `onStart` 或 `onBind` 调用期间进行的操作类似。 在从 `onBind` 返回的 `Binder` 中进行调用也将暂时设置线程标识。
 
-  3. 在 `ContentProvider` 中进行调用同样会对其持续时间设置线程标识。
-
-
-  此外，用户与活动的交互可能导致隐式标识切换。
-
-  **示例：** 用户在 `Resume` 期间取消授权提示将导致隐式切换到空标识。
-
-  应用有机会识别这些更改，在必要的情况下，可以禁止这些更改。 `MAMService` 和 `MAMContentProvider` 公开子类可能会重写的以下方法：
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  在 `MAMActivity` 类中，此方法中还会存在其他参数：
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchReason reason,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  * `AppIdentitySwitchReason` 可以捕获隐式切换的源，且可接受值 `CREATE`、`RESUME_CANCELLED` 和 `NEW_INTENT`。  因活动继续而导致显示 PIN、身份验证或其他相容 UI 以及当用户尝试取消该 UI（通常通过使用“后退”按钮）时，将使用 `RESUME_CANCELLED` 原因。
+3. 在 `ContentProvider` 中进行调用同样会对其持续时间设置线程标识。
 
 
-  * `AppIdentitySwitchResultCallback` 如下所示：
+    此外，用户与活动的交互可能导致隐式标识切换。
+
+    **示例：** 用户在 `Resume` 期间取消授权提示将导致隐式切换到空标识。
+
+    应用有机会识别这些更改，在必要的情况下，可以禁止这些更改。 `MAMService` 和 `MAMContentProvider` 公开子类可能会重写的以下方法：
 
     ```java
-    public interface AppIdentitySwitchResultCallback {
-        /**
-         * @param result
-         *            whether the identity switch can proceed.
-         */
-        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-    }
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchResultCallback callback);
     ```
 
-    其中 ```AppIdentitySwitchResult``` 是 `SUCCESS` 或 `FAILURE`。
+    在 `MAMActivity` 类中，此方法中还会存在其他参数：
+
+    ```java
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchReason reason,
+      final AppIdentitySwitchResultCallback callback);
+    ```
+
+    * `AppIdentitySwitchReason` 可以捕获隐式切换的源，且可接受值 `CREATE`、`RESUME_CANCELLED` 和 `NEW_INTENT`。  因活动继续而导致显示 PIN、身份验证或其他相容 UI 以及当用户尝试取消该 UI（通常通过使用“后退”按钮）时，将使用 `RESUME_CANCELLED` 原因。
+
+
+    * `AppIdentitySwitchResultCallback` 如下所示：
+
+      ```java
+      public interface AppIdentitySwitchResultCallback {
+          /**
+            * @param result
+            *            whether the identity switch can proceed.
+            */
+          void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+        }
+        ```
+
+      其中 ```AppIdentitySwitchResult``` 是 `SUCCESS` 或 `FAILURE`。
 
 对于所有隐式标识更改（通过由 `MAMService.onMAMBind` 返回的 Binder 完成的更改除外），都会调用 `onMAMIdentitySwitchRequired` 方法。 `onMAMIdentitySwitchRequired` 的默认实现将立即调用：
 
@@ -1498,13 +1498,13 @@ public interface MAMFileProtectionInfo {
 MAM 无法自动推断出要在 `Activity` 中读取的文件和在其中显示的数据之间的关系。 应用必须  在显示公司数据之前适当地设置 UI 标识。 这包括从文件中读取的数据。 如果一个文件来自应用外部（来自 `ContentProvider` 或从公开可写的位置读取），则应用必须  在显示从文件中读取的信息之前尝试确定文件标识（使用 `MAMFileProtectionManager.getProtectionInfo`）。 如果 `getProtectionInfo` 报告非 NULL、非空的标识，则必须将 UI 标识  设置为匹配此标识（使用 `MAMActivity.switchMAMIdentity` 或 `MAMPolicyManager.setUIPolicyIdentity`）。 如果标识切换失败，则不得  显示来自该文件的数据。
 
 示例流如下所示：
-  * 用户选择要在应用中打开的文档。
-  * 在打开流程期间，在从磁盘读取数据之前，应用确认应该用于显示内容的标识
-    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
-    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
-    * 应用会一直等待，直到将结果报告给回叫
-    * 如果报告的结果是一个故障，则应用不显示文档。
-  * 应用将打开并呈现该文件。
+* 用户选择要在应用中打开的文档。
+* 在打开流程期间，在从磁盘读取数据之前，应用确认应该用于显示内容的标识
+  * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+  * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+  * 应用会一直等待，直到将结果报告给回叫
+  * 如果报告的结果是一个故障，则应用不显示文档。
+* 应用将打开并呈现该文件。
   
 #### <a name="single-identity-to-multi-identity-transition"></a>单一标识转换到多标识
 如果之前通过单标识 Intune 集成发布的应用稍后集成了多标识，则之前安装的应用进行转换（不向用户显示且没有关联的 UX）。 应用无需明确执行任何操作即可处理这一转换  。 在转换之前创建的所有文件都将继续被视为“托管”（因此，如果已启用加密策略，则它们将保持加密状态）。 如果需要，可对 `MAMFileProtectionManager.protect` 的升级和使用进行检测，以标记具有空标识的特定文件或目录（如果它们已加密，则此操作将去除加密）。
@@ -1513,11 +1513,11 @@ MAM 无法自动推断出要在 `Activity` 中读取的文件和在其中显示�
 
 文件标识标记可识别脱机模式。 应考虑以下几点：
 
-  * 如果未安装公司门户，则无法将文件标记为标识。
+* 如果未安装公司门户，则无法将文件标记为标识。
 
-  * 如果已安装公司门户，但应用不具有 Intune MAM 策略，则无法可靠地将文件标记为标识。
+* 如果已安装公司门户，但应用不具有 Intune MAM 策略，则无法可靠地将文件标记为标识。
 
-  * 文件标识标记可用时，所有之前创建的文件都将被视为专用/不受托管（属于空字符串标识），除非应用先前已作为单身份标识托管应用，在这种情况下，该应用被视为归属于已注册用户。
+* 文件标识标记可用时，所有之前创建的文件都将被视为专用/不受托管（属于空字符串标识），除非应用先前已作为单身份标识托管应用，在这种情况下，该应用被视为归属于已注册用户。
 
 ### <a name="directory-protection"></a>目录保护
 

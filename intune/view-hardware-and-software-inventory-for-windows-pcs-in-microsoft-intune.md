@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2b9d17426bf3dde3fd1684c12113adf0c5095d5f
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547972"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353304"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>查看 Windows 电脑的硬件和软件清单
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果想要查看 Windows 电脑的清单注册为移动设备，请参阅[在 Intune 中查看设备详细信息](device-inventory.md)。
+> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果要查看注册为移动设备的 Windows 电脑的清单, 请参阅[在 Intune 中查看设备详细信息](device-inventory.md)。
 
 Intune 收集使用 Intune 软件客户端作为电脑管理的桌面硬件和软件相关详细信息。 使用下列过程中的信息来了解如何创建：
 
@@ -71,6 +71,6 @@ Intune 收集使用 Intune 软件客户端作为电脑管理的桌面硬件和�
 
     “任务状态”  对话框显示当前远程任务、任务状态、设备名称和任何报告的错误，并提供指向疑难解答信息的链接。
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 
 [使用 Intune 软件客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

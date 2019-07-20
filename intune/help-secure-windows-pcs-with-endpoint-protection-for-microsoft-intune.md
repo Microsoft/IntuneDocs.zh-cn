@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61e0a7fa4fa63e17a1fa4165042d9e82a2ffacc2
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548767"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354103"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
 
@@ -145,8 +145,8 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>指定 Microsoft Active Protection Service 设置
 Microsoft Active Protection Service 是一个可帮助你决定如何应对潜在威胁的在线社区。 该社区还可帮助防止新的恶意软件感染的传播。 可以通过选择“是”  来“加入 Microsoft Active Protection Service”  ，然后指定“成员资格级别”  ：
-  - “基本”  - 将有关检测到的恶意软件的基本信息发送到 Microsoft。 这包括软件来自何处、你实施的或 Endpoint Protection 自动实施的操作，以及这些操作是否成功等。
-  - “高级”  - 将有关恶意软件、间谍软件和可能不需要的软件的详细信息发送到 Microsoft。 这包括软件的位置、文件名、软件如何工作和它如何影响计算机等信息。
+- “基本”  - 将有关检测到的恶意软件的基本信息发送到 Microsoft。 这包括软件来自何处、你实施的或 Endpoint Protection 自动实施的操作，以及这些操作是否成功等。
+- “高级”  - 将有关恶意软件、间谍软件和可能不需要的软件的详细信息发送到 Microsoft。 这包括软件的位置、文件名、软件如何工作和它如何影响计算机等信息。
 
 还可以**接收基于 Microsoft Active Protection Service 报表的动态定义**。
 
@@ -197,5 +197,5 @@ Intune 可以在安装有 Intune 客户端的远程托管电脑上使用 Endpoin
 ## <a name="need-more-help"></a>需要更多帮助？
 有关更多帮助和支持，请参阅 [Microsoft Intune 中的 Endpoint Protection 疑难解答](troubleshoot-endpoint-protection-in-microsoft-intune.md)。
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)

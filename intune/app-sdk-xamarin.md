@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
-ms.translationtype: HT
+ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735471"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67794371"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -107,6 +107,7 @@ SDK 依靠 [Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com
 从1.4428.1 版本开始, `Microsoft.Intune.MAM.Remapper`可以将包作为[生成工具](app-sdk-android.md#build-tooling)添加到 Xamarin Android 应用程序, 以执行 MAM 类、方法和系统服务的替换。 如果包括 Remapper, 则在生成应用程序时, 将自动执行已重命名方法和 MAM 应用程序部分的 MAM 等效替换部分。
 
 若要从 i 中排除类, 可以将以下属性添加到项目`.csproj`文件中。
+
 ```xml
   <PropertyGroup>
     <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
@@ -200,7 +201,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 > 重映射器重写了 Visual Studio 用于 IntelliSense 自动完成的依赖项。 因此，在为 IntelliSense 添加重映射器时，可能需要重载并重新生成项目，以正确识别更改。
 
 ### <a name="company-portal-app"></a>公司门户应用
-Intune SDK Xamarin 绑定依赖于设备上是否存在[公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android 应用来启用应用保护策略。 公司门户从 Intune 服务中检索应用保护策略。 应用初始化时，它会加载策略和代码以强制从公司门户实施该策略。 用户无需登录。
+Intune SDK Xamarin 绑定依赖于设备上是否存在[公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)Android 应用来启用应用保护策略。 公司门户从 Intune 服务中检索应用保护策略。 应用初始化时，它会加载策略和代码以强制从公司门户实施该策略。 用户无需登录。
 
 > [!NOTE]
 > 如果 Android  设备上未安装公司门户应用，Intune 托管应用的行为与不支持 Intune 应用保护策略的普通应用相同。
@@ -208,7 +209,7 @@ Intune SDK Xamarin 绑定依赖于设备上是否存在[公司门户](https://pl
 对于无需设备注册的应用保护， _**不会**_ 要求用户使用公司门户应用注册设备。
 
 ### <a name="sample-applications"></a>示例应用程序
-[GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)上提供了 xamarin 和 xamarin 窗体应用中突出显示了 MAM 功能的示例应用程序。
+[GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)上提供了 Xamarin 和 Xamarin 窗体应用中突出显示了 MAM 功能的示例应用程序。
 
 ## <a name="support"></a>Support
 如果你的组织已经是 Intune 的客户，请与 Microsoft 支持代表合作，开立支持票证并在 [GitHub 问题页](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上创建一个问题，我们会尽快为你提供帮助。 

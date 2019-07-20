@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2eb47240516737f03c10d1280887fea275c5ed99
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546597"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883946"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>从 Intune 删除 iOS 设备
 
@@ -44,25 +44,25 @@ ms.locfileid: "67546597"
     |![公司门户应用“设备”屏幕的屏幕截图，其中显示了用户单击“删除设备”后出现的选项。 以红色突出显示了“删除”按钮，并以蓝色突出显示了“了解详细信息”和“取消”按钮。](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
 
-  从 Intune 取消注册设备后，将发生以下情况：
+    从 Intune 取消注册设备后，将发生以下情况：
 
-  - 设备将不再出现在公司门户中。
+    - 设备将不再出现在公司门户中。
 
-  - 再也不能从公司门户安装应用。
+    - 再也不能从公司门户安装应用。
 
-  - 将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
+    - 将不再应用当你添加设备时在设备上更改的任何设置（例如禁用相机，或需要一定的密码长度）。
 
-  - 你可能不再能够访问设备上的某些公司资源（例如文件共享或内部网站）。
+    - 你可能不再能够访问设备上的某些公司资源（例如文件共享或内部网站）。
 
-  - 你不再能使用设备上的公司应用和公司数据。
+    - 你不再能使用设备上的公司应用和公司数据。
 
-  - 你可能不再能够使用 Wi-Fi 或虚拟专用网 (VPN) 连接到公司网络。
+    - 你可能不再能够使用 Wi-Fi 或虚拟专用网 (VPN) 连接到公司网络。
 
-  - 已从设备中删除公司电子邮件配置文件。
+    - 已从设备中删除公司电子邮件配置文件。
 
-  - 仅针对电子邮件配置的设备将不再出现在公司门户应用或网站中。
-  
-  - 卸载应用。 删除公司应用数据。
+    - 仅针对电子邮件配置的设备将不再出现在公司门户应用或网站中。
+
+    - 卸载应用。 删除公司应用数据。
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>删除由公司门户应用收集的数据
 

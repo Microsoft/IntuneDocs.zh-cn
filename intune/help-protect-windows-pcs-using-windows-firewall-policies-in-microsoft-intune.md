@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572517"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354016"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows PC
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果你想要管理防火墙设置的 Windows 电脑注册为移动设备，请参阅[在 Intune 中添加终结点保护设置](endpoint-protection-configure.md)。
+> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果要管理注册为移动设备的 Windows 电脑的防火墙设置, 请参阅[在 Intune 中添加 endpoint protection 设置](endpoint-protection-configure.md)。
 
 Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管理的 Windows 电脑。 其中的一种方法是提供使你能够在电脑上配置 Windows 防火墙设置的策略。
 
@@ -140,5 +140,5 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 |**Windows Virtual PC**<br>（Windows 7 或更高版本）|允许虚拟机与其他计算机通信。|
 |**无线便携设备**|启用使用媒体传输协议 (MTP) 从启用网络的照相机或媒体设备向被管理的计算机传输媒体。 此设置使用 SSDP 和 UPnP 网络协议。|
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)

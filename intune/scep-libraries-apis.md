@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2b324c8c6e1687b8ce5563aa85c155e21fc197
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040720"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882378"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 将 SCEP 的第三方 CA 添加到 Intune
 
@@ -79,7 +79,7 @@ SCEP 管理解决方案还包括报告。 管理员可以获取有关 SCEP 配�
 
     - 允许管理员配置库进行身份验证所使用的 [Azure 应用程序标识符、Azure 应用程序密钥和租户 ID](#onboard-scep-server-in-azure)（在本文中）。 应允许管理员更新 Azure 应用程序密钥。
     - 识别包含 Intune 生成的 SCEP 密码的 SCEP 请求
-    - 使用“验证请求 API”库验证 Intune 生成的 SCEP 密码
+    - 使用“验证请求 API”库验证 Intune 生成的 SCEP 密码 
     - 使用库通知 API 通知 Intune 已针对具有 Intune 生成的 SCEP 密码的 SCEP 请求发出的证书。 还要通知 Intune 在处理这些 SCEP 请求时可能会发生的错误。
     - 确认服务器记录了足够的信息以帮助管理员排查问题
 
@@ -93,7 +93,7 @@ SCEP 管理解决方案还包括报告。 管理员可以获取有关 SCEP 配�
 
 要对 Intune 进行身份验证，SCEP 服务器需要 Azure 应用程序 ID、Azure 应用程序密钥和租户 ID。 SCEP 服务器还需要有权访问 Intune API。
 
-要获取此数据，SCEP 服务器管理员需登录到 Azure 门户，注册应用程序，为应用程序授予 Microsoft Intune API\SCEP 质询验证权限，为应用程序创建密钥，然后下载应用程序 ID、其密钥和租户 ID。
+要获取此数据，SCEP 服务器管理员需登录到 Azure 门户，注册应用程序，为应用程序授予 Microsoft Intune API\SCEP 质询验证权限，为应用程序创建密钥，然后下载应用程序 ID、其密钥和租户 ID  。
 
 有关注册应用程序以及获取 ID 和密钥的指导，请参阅[使用门户创建 AAD 应用程序和服务主体以访问资源](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)。
 
@@ -176,8 +176,8 @@ void ValidateRequest(
 
 **安全说明**  
 
-  - 如果此方法引发异常，则 SCEP 服务器不得向客户端颁发证书。
-  - SCEP 证书请求验证失败可能表示 Intune 基础结构中存在问题。 或者，他们可以表示攻击者正在尝试获取证书。
+- 如果此方法引发异常，则 SCEP 服务器不得向客户端颁发证书  。
+- SCEP 证书请求验证失败可能表示 Intune 基础结构中存在问题。 或者，他们可以表示攻击者正在尝试获取证书。
 
 ##### <a name="sendsuccessnotification-method"></a>SendSuccessNotification 方法
 
@@ -217,8 +217,8 @@ void SendSuccessNotification(
 
 **安全说明**
 
-  - 如果此方法引发异常，则 SCEP 服务器不得向客户端颁发证书。
-  - SCEP 证书请求验证失败可能表示 Intune 基础结构中存在问题。 或者，他们可以表示攻击者正在尝试获取证书。
+- 如果此方法引发异常，则 SCEP 服务器不得向客户端颁发证书  。
+- SCEP 证书请求验证失败可能表示 Intune 基础结构中存在问题。 或者，他们可以表示攻击者正在尝试获取证书。
 
 ##### <a name="sendfailurenotification-method"></a>SendFailureNotification 方法
 
@@ -254,8 +254,8 @@ void SendFailureNotification(
 
 **安全说明**
 
-  - 如果此方法引发异常，则 SCEP 服务器不得向客户端颁发证书。
-  - SCEP 证书请求验证失败可能表示 Intune 基础结构中存在问题。 或者，他们可以表示攻击者正在尝试获取证书。
+- 如果此方法引发异常，则 SCEP 服务器不得向客户端颁发证书  。
+- SCEP 证书请求验证失败可能表示 Intune 基础结构中存在问题。 或者，他们可以表示攻击者正在尝试获取证书。
 
 ##### <a name="setsslsocketfactory-method"></a>SetSslSocketFactory 方法
 

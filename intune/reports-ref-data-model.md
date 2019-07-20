@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547894"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884757"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune 数据库仓库数据模型
 
@@ -32,22 +32,22 @@ Intune 数据仓库每天对数据进行采样，呈现不断变化的移动设�
 
 仓库公开以下高级区域中的数据：
 
-  - 启用了应用保护的应用和使用情况
-  - 已注册的设备、属性和清单
-  - 应用和软件清单
-  - 设备配置和符合性策略
+- 启用了应用保护的应用和使用情况
+- 已注册的设备、属性和清单
+- 应用和软件清单
+- 设备配置和符合性策略
 
 这些区域包含对 Intune 环境有意义的实体。 你可在以下主题中找到关于实体集的详细信息：
 
-  - [应用程序](reports-ref-application.md)
-  - [日期](reports-ref-date.md)
-  - [设备](reports-ref-devices.md)
-  - [Intune 管理扩展](reports-ref-intunemanagementextension.md)
-  - [策略](reports-ref-policy.md)
-  - [移动应用管理 (MAM)](reports-ref-mobile-app-management.md)
-  - [用户](reports-ref-user.md)
-  - [当前用户](reports-ref-current-user.md)
-  - [用户设备关联](reports-ref-user-device.md)
+- [应用程序](reports-ref-application.md)
+- [日期](reports-ref-date.md)
+- [设备](reports-ref-devices.md)
+- [Intune 管理扩展](reports-ref-intunemanagementextension.md)
+- [策略](reports-ref-policy.md)
+- [移动应用管理 (MAM)](reports-ref-mobile-app-management.md)
+- [用户](reports-ref-user.md)
+- [当前用户](reports-ref-current-user.md)
+- [用户设备关联](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>关系：星型架构模型
 
@@ -63,6 +63,6 @@ Intune 数据仓库每天对数据进行采样，呈现不断变化的移动设�
 
 ## <a name="next-steps"></a>后续步骤
 
- - 要了解有关数据仓库如何在 Intune 中跟踪用户生存期的详细信息，请参阅 [Intune 数据仓库中的用户生存期表示](reports-ref-user-timeline.md)。
- - 在[创建第一个数据仓库](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)中了解有关使用数据仓库的详细信息。
- - 在[通过导入数据集创建新的 Power BI 报表](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)了解有关使用 Power BI 和数据仓库的详细信息。 
+- 要了解有关数据仓库如何在 Intune 中跟踪用户生存期的详细信息，请参阅 [Intune 数据仓库中的用户生存期表示](reports-ref-user-timeline.md)。
+- 在[创建第一个数据仓库](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)中了解有关使用数据仓库的详细信息。
+- 在[通过导入数据集创建新的 Power BI 报表](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)了解有关使用 Power BI 和数据仓库的详细信息。 

@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548655"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353876"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>在 Microsoft Intune 中利用软件更新使 Windows 电脑保持最新版本
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果你想要管理更新的 Windows 电脑注册为移动设备，请参阅[管理 Intune 中的软件更新](windows-update-for-business-configure.md)。
+> 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果要管理注册为移动设备的 Windows 电脑的更新, 请参阅[在 Intune 中管理软件更新](windows-update-for-business-configure.md)。
 
 Microsoft Intune 可通过多种方式帮助保护托管计算机，其中包括管理软件更新，它通过确保快速安装最新修补程序和软件更新，使计算机保持最新版本。
 
@@ -260,5 +260,5 @@ Microsoft Intune 可通过多种方式帮助保护托管计算机，其中包括
 6. 你可以检查“所有更新”  页底部的详细信息窗格来了解有关更新的提醒消息。
 
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 [保护 Windows 电脑的策略](policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402905"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353640"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>管理 Windows 电脑的用户设备链接
 
@@ -32,7 +32,7 @@ ms.locfileid: "67402905"
 
 必须将用户链接到计算机，然后才能将软件部署到用户。 可将某个用户链接到多台计算机，但每台计算机只能链接到一个用户。 用户会自动链接到他们使用公司门户在 Intune 中注册的任何计算机。
 
-有关设备的主要用户的详细信息，请参阅[查找主要用户](find-primary-user.md)。
+有关设备的主要用户的详细信息, 请参阅[查找主要用户](find-primary-user.md)。
 
 若要将用户链接到计算机：
 
@@ -53,6 +53,6 @@ ms.locfileid: "67402905"
 > [!TIP]
 > 如果想要限制最终用户将自己链接到计算机的能力，则启用“Microsoft Intune 代理设置”  策略中的“限制用户将自己链接到计算机的能力”  选项。
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 
 [使用 Intune 软件客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

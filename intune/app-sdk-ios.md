@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735557"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306751"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -52,14 +52,14 @@ ms.locfileid: "67735557"
 
 以下文件与包含 Swift 代码的应用/扩展相关, 并通过 Xcode 10.2 + 编译:
 
-*  IntuneMAMSwift: Intune App SDK Swift 框架。 此框架包含应用将调用的 Api 的所有标头。 将此框架链接到应用/扩展, 以启用 Intune 客户端应用程序管理。
+* **IntuneMAMSwift**: INTUNE App SDK Swift 框架。 此框架包含应用将调用的 Api 的所有标头。 将此框架链接到应用/扩展, 以启用 Intune 客户端应用程序管理。
 
-*  IntuneMAMSwiftStub: Intune App SDK Swift 存根 framework。 这是必须链接的应用/扩展所需的 IntuneMAMSwift 的依赖项。
+* **IntuneMAMSwiftStub**: INTUNE App SDK Swift 存根 framework。 这是必须链接的应用/扩展所需的 IntuneMAMSwift 的依赖项。
 
 
 以下文件与所有 apps/docs.ms 相关:
 
-* **IntuneMAMConfigurator**: 一种工具, 用于配置应用程序或扩展的信息。 info.plist 具有 Intune 管理的最低要求更改。 根据你的应用或扩展的功能, 你可能需要对 info.plist 进行其他手动更改。
+* **IntuneMAMConfigurator**: 一种工具, 用于配置应用程序或扩展的信息。 Info.plist 具有 Intune 管理的最低要求更改。 根据你的应用或扩展的功能, 你可能需要对 info.plist 进行其他手动更改。
 
 * **标头**：用于公开公共 Intune App SDK API。 这些标头包含在 IntuneMAM/IntuneMAMSwift 框架中, 因此使用任一框架的开发人员无需手动将标头添加到项目。 选择链接到静态库 (Libintunemam.a) 的开发人员需要在其项目中手动包含这些标头。
 
@@ -94,9 +94,9 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 若要启用 Intune App SDK，请执行以下步骤：
 
-1. **选项 1-框架 (推荐)** : 如果你使用的是 Xcode 10.2 +, 而你的应用程序/扩展包含`IntuneMAMSwift.framework` Swift `IntuneMAMSwiftStub.framework`代码, 则链接和到`IntuneMAMSwiftStub.framework`你的**目标: 将和拖动`IntuneMAMSwift.framework`到嵌入的项目**目标的二进制列表。
+1. **选项 1-框架 (推荐)** : 如果你使用的是 Xcode 10.2 +, 而你的应用程序/扩展包含`IntuneMAMSwift.framework` Swift `IntuneMAMSwiftStub.framework`代码, 请链接和`IntuneMAMSwift.framework`到你的  目标: 将和`IntuneMAMSwiftStub.framework`链接到项目目标。
 
-    否则, 链接`IntuneMAM.framework`到目标: 将拖动`IntuneMAM.framework`到项目**目标的** "嵌入的二进制文件" 列表。
+    否则, 链接`IntuneMAM.framework`到目标: 将拖动`IntuneMAM.framework`到项目目标的 "**嵌入的二进制文件**" 列表。
 
    > [!NOTE]
    > 如果使用框架，必须在将应用提交到应用商店之前，从通用框架中手动删除模拟器体系结构。 有关详细信息，请参阅[向 App Store 提交应用](#submit-your-app-to-the-app-store)。
@@ -116,7 +116,7 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
      ![Intune App SDK iOS：复制资源包](./media/intune-app-sdk-ios-copy-bundle-resources.png)
      
-2. 如果需要从 Swift 调用任何 Intune Api, 你的应用程序/扩展必须通过目标 C 桥接标头来导入所需的 Intune SDK 标头。 如果你的应用程序/扩展尚未包含目标 C 桥接标头, 则可以通过`SWIFT_OBJC_BRIDGING_HEADER`生成配置设置或 Xcode UI 的 **"目标-c" 桥接标头**字段指定一个。 桥接标头应如下所示:
+2. 如果需要从 Swift 调用任何 Intune Api, 你的应用程序/扩展必须通过目标 C 桥接标头来导入所需的 Intune SDK 标头。 如果你的应用程序/扩展尚未包含目标 C 桥接标头, 则可以通过`SWIFT_OBJC_BRIDGING_HEADER`生成配置设置或 Xcode UI 的 "**目标-c" 桥接标头**字段指定一个。 桥接标头应如下所示:
 
    ```objc
       #import <IntuneMAMSwift/IntuneMAM.h>
@@ -162,15 +162,15 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
     
     c. 将 `com.microsoft.adalcache` 添加到现有的访问组。
     
-        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
+      ![Intune App SDK iOS：keychain 共享](./media/intune-app-sdk-ios-keychain-sharing.png)
     
     d. 如果直接编辑权利文件，而不是使用上述 Xcode UI 创建密钥链访问组，则需要在密钥链访问组前加上 `$(AppIdentifierPrefix)`（Xcode 会自动处理此问题）。 例如：
     
-        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+      - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+      - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
-        > [!NOTE]
-        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
+      > [!NOTE]
+      > 授权文件是一个 XML 文件，它对于移动应用程序是唯一的。 它用于在 iOS 应用中指定特殊权限和功能。 如果应用以前没有权利文件，那么启用密钥链共享（第 3 步）应该已导致 Xcode 为应用生成一个权利文件。 请确保应用的程序包 ID 为列表中的首项。
 
 6. 在应用的 Info.plist 文件的 `LSApplicationQueriesSchemes` 数组中添加应用传递到 `UIApplication canOpenURL` 的各个协议。 请务必先保存所做的更改，再继续执行下一步。
 
@@ -742,7 +742,7 @@ SDK 将在后台定期执行以下操作：
 
 ### <a name="how-can-i-troubleshoot-my-app"></a>如何对应用进行故障排除？
 
-Intune SDK for iOS 9.0.3 + 支持在移动应用内添加诊断控制台, 用于测试策略和记录错误。 `IntuneMAMDiagnosticConsole.h` `IntuneMAMDiagnosticConsole`定义类接口, 开发人员可以使用该类接口显示 Intune 诊断控制台。 这样, 最终用户或开发人员就可以在测试过程中收集和共享 Intune 日志, 以帮助诊断他们可能遇到的任何问题。 此 API 对于集成程序是可选的。
+Intune SDK for iOS 9.0.3 + 支持在移动应用内添加诊断控制台, 用于测试策略和记录错误。 `IntuneMAMDiagnosticConsole.h``IntuneMAMDiagnosticConsole`定义类接口, 开发人员可以使用该类接口显示 Intune 诊断控制台。 这样, 最终用户或开发人员就可以在测试过程中收集和共享 Intune 日志, 以帮助诊断他们可能遇到的任何问题。 此 API 对于集成程序是可选的。
 
 ## <a name="submit-your-app-to-the-app-store"></a>将应用提交到应用商店
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 7c832fd423a2486fa7c2252513202d82dc432859
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549208"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882574"
 ---
 # <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune 数据仓库 API
 
 通过 Intune 数据仓库 API 可访问机器可读格式的 Intune 数据，以便在最喜欢的分析工具中使用它。 可使用该 API 生成报表，获取有关企业移动环境的见解。 API 使用 OData 协议，该协议遵循以下内容的标准模式：
 
-  - 请求和响应标头
-  - 状态代码
-  - HTTP 方法
-  - URL 约定
-  - 媒体类型
-  - 负载格式
-  - 查询选项
+- 请求和响应标头
+- 状态代码
+- HTTP 方法
+- URL 约定
+- 媒体类型
+- 负载格式
+- 查询选项
 
 OData (Open Data Protocol) 是结构化信息标准促进组织 (OASIS) 的一个标准，用于定义构建和使用 RESTful API 的最佳实践。 Intune 数据仓库使用 OData 4.0。
 
@@ -56,8 +56,8 @@ OData (Open Data Protocol) 是结构化信息标准促进组织 (OASIS) 的一�
 
 API 需要 Azure AD 的授权。 Azure AD 使用 OAuth 2.0。 一旦获得授权，即可通过使用 HTTP GET 谓词并联系公开的实体集合从 API 获取数据。 有关详细信息，请参阅：
 
- - [授权](reports-api-url.md)
- - [API URL 结构](reports-api-url.md)
+- [授权](reports-api-url.md)
+- [API URL 结构](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Intune 数据库仓库数据模型
 

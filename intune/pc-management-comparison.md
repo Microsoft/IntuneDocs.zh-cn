@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: fec72636a5d76ce4eb1fa0c28978eeb70d1e61b5
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044522"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353554"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>对比作为计算机或移动设备管理 Windows 电脑
 
@@ -49,7 +49,7 @@ ms.locfileid: "67044522"
 |**运行状况证明**|不可用|可用|
 
 
-### <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows 电脑管理的优点
+## <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows 电脑管理的优点
 使用现代移动设备管理的 Windows 电脑管理具有以下优点：
 - **可伸缩性** - MDM 管理可随着 Intune 云管理伸缩。 Intune 软件客户端仅限于 7,000 台电脑。
 - **简洁性** - 使用在操作系统中包含的现代管理功能，无需依赖已下载软件客户端

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735736"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354465"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune On-Premises Exchange Connector 疑难解答
 
@@ -51,5 +51,5 @@ ms.locfileid: "67735736"
 - 若要获取某个邮箱的 SMTP 地址的列表，请使用 Get-Mailbox -Identity user | select emailaddresses | fl
 - 若要获取有关设备的访问状态的详细信息，请使用 Get-CASMailbox <upn> | fl
 
-### <a name="next-steps"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 如果此信息没有帮助，还可以[获取对 Microsoft Intune 的支持](get-support.md)。

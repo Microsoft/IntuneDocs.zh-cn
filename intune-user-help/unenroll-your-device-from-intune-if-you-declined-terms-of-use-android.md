@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 12e3b111572758ca8d77406287134df8cdf7e027
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546638"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883964"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>拒绝“使用条款”后删除对设备的管理
 
@@ -49,8 +49,8 @@ ms.locfileid: "67546638"
 
 若要删除 Android 适用的公司门户应用存储在设备上的所有数据，请执行以下操作：
 
-  - 在“应用程序”中单击该应用，然后单击“清除数据”按钮以清除应用数据
-  - 删除文件夹“\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal”
+- 在“应用程序”中单击该应用，然后单击“清除数据”按钮以清除应用数据
+- 删除文件夹“\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal”
 
 
 仍需帮助？ 请联系公司支持人员（访问[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)获取联系信息），或写邮件给 <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android 团队</a>。

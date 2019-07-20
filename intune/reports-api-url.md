@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648784"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313749"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
 
@@ -51,7 +51,7 @@ Intune 的 URL 使用以下格式：
 | 元素 | 示例 | 描述 |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | 位置 | msua06 | 可通过查看 Azure 门户中的数据仓库 API 边栏选项卡获取基 URL。 |
-| 实体集合 | 日期 | OData 实体集合的名称。 有关数据模型中集合和实体的详细信息，请参阅[数据模型](reports-ref-data-model.md)。 |
+| 实体集合 | devicePropertyHistories | OData 实体集合的名称。 有关数据模型中集合和实体的详细信息，请参阅[数据模型](reports-ref-data-model.md)。 |
 | api-version | beta | 版本是指要访问的 API 版本。 有关详细信息，请参阅[版本](reports-api-url.md#api-version-information)。 |
 | maxhistorydays | 7 | （可选）要检索的历史记录的最大天数。 此参数可提供给任何集合，但仅对键属性中包含 `dateKey` 的集合生效。 有关详细信息，请参阅 [DateKey 范围筛选器](reports-api-url.md#datekey-range-filters)。 |
 

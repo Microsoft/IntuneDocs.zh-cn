@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa483a49ad7fa44172a83f024540a75d1d881dc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b61f4ded04d01f04727768557e6730c34fd4760c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040926"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882445"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 数据仓库中的生存期表示形式
 
@@ -34,13 +34,13 @@ ms.locfileid: "66040926"
 
 如果浏览实体的整个生存期，这种情况可能就更为明显。
 
-假定用户 John Smith 在 2017 年 6 月 1 日分配了许可证，那么“用户”表将具有以下条目： 
+假定用户  John Smith 在 2017 年 6 月 1 日分配了许可证，那么  “用户”表将具有以下条目： 
  
 | DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | 12/31/9999 | TRUE
  
-John Smith 在 2017 年 7 月 25 日放弃其许可证。 “用户”表具有以下条目。 现有记录中的更改是 `marked`。 
+John Smith 在 2017 年 7 月 25 日放弃其许可证。  “用户”表具有以下条目。 现有记录中的更改是 `marked`。 
 
 | DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
@@ -73,11 +73,11 @@ John Smith 在 2017 年 7 月 25 日放弃其许可证。 “用户”表具有�
 | StartDateInclusiveUTC  | 将实体加载到 Intune 数据仓库中的 UTC 日期。 在将实体导入 Intune 数据仓库之前可能已创建该实体。 |
 | DeletedDateUTC  | 在 Intune 中删除该实体的 UTC 日期。 |  
 
-任何前缀为 Row 的元数据列，例如 RowLastModifiedDateTimeUTC，指明在 Intune 数据仓库中创建或修改记录的时间。 仓库在 Intune 数据的下游。 该值与 Intune 中实体的生存期无关。  
+任何前缀为 Row  的元数据列，例如 RowLastModifiedDateTimeUTC  ，指明在 Intune 数据仓库中创建或修改记录的时间。 仓库在 Intune 数据的下游。 该值与 Intune 中实体的生存期无关。  
  
 任何想要仅查看当前存在的维度实体的人员都希望应用筛选器 **IsDeleted = FALSE**。
 
 ## <a name="next-steps"></a>后续步骤
 
- - 要了解有关 Current User 实体的详细信息，请参阅 [current user 实体参考](reports-ref-current-user.md)。
- - 要了解有关 User 实体的详细信息，请参阅 [User 实体参考](reports-ref-user.md)。
+- 要了解有关 Current User 实体的详细信息，请参阅 [current user 实体参考](reports-ref-current-user.md)  。
+- 要了解有关 User 实体的详细信息，请参阅 [User 实体参考](reports-ref-user.md)  。

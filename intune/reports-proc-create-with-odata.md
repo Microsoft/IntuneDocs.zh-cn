@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648910"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353663"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 从 OData 数据源创建报表
 
 本文介绍如何使用 Power BI Desktop 和交互式筛选器创建树状图可视化效果。 例如，比起仅了解公司所拥有设备与个人设备的情况，CFO 可能更想了解设备的整体分布情况。 树状图可提供关于设备类型总数的深入见解。 可以查看 iOS、Android 和 Windows 设备的总数，无论它们属于公司还是个人。
 
-### <a name="overview-of-creating-the-chart"></a>创建图表概述
+## <a name="overview-of-creating-the-chart"></a>创建图表概述
 
 要创建此图表，必须：
 1. 安装 Power BI Desktop（如果还未安装）。
@@ -120,5 +120,5 @@ ms.locfileid: "67648910"
 
 ## <a name="next-steps"></a>后续步骤
 
- - 有关[创建和管理关系](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)的详细信息，请参阅 Power BI 文档中的 Power BI Desktop 部分。
- - 咨询 [Intune 数据仓库模型](https://docs.microsoft.com/intune/reports-ref-data-model)。
+- 有关[创建和管理关系](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)的详细信息，请参阅 Power BI 文档中的 Power BI Desktop 部分。
+- 咨询 [Intune 数据仓库模型](https://docs.microsoft.com/intune/reports-ref-data-model)。

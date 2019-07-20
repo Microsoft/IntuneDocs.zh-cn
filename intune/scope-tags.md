@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403797"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882494"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>对分布式 IT 使用基于角色的访问控制 (RBAC) 和范围标记
 
@@ -42,8 +42,8 @@ ms.locfileid: "67403797"
 
     ![显示创建范围标记的屏幕截图。](./media/scope-tags/create-scope-tag.png)
 
-3. 如果你希望特定组中的所有设备，请选择**向所选组中的所有设备分配作用域标记**。
-    1. 在中**选择要包括的组**页上，选择包含你想要分配到此作用域标记的设备的组。
+3. 如果要将所有设备置于特定组中, 请选择 "**向所选组中的所有设备分配作用域标记**"。
+    1. 在 "**选择要包括的组**" 页中, 选择包含要将此作用域标记分配到的设备的组。
     2. 选择“选择”  。
 4. 选择“创建”  。
 
@@ -108,17 +108,17 @@ ms.locfileid: "67403797"
 使用范围标记时，请谨记下列详细信息：
 
 - 当前可将范围标记分配给：
-    - 角色分配
-    - 设备合规性策略
-    - 设备配置文件
-    - Windows 10 更新通道
-    - 托管设备
-    - 应用
-    - 应用配置策略 - 受管理设备
-    - PowerShell 脚本
-    - DEP 令牌
-    - iOS 应用预配配置文件
-    - Volume Purchase Program (VPP) 令牌
+  - 角色分配
+  - 设备合规性策略
+  - 设备配置文件
+  - Windows 10 更新通道
+  - 托管设备
+  - 应用
+  - 应用配置策略 - 受管理设备
+  - PowerShell 脚本
+  - DEP 令牌
+  - iOS 应用预配配置文件
+  - Volume Purchase Program (VPP) 令牌
 - 管理员在 Intune 中创建对象时，分配给该管理员的所有范围标记都将自动分配给新对象。
 - Intune RBAC 不适用于 Azure Active Directory 角色。 因此，无论 Intune 服务管理员和全局管理员角色具有哪些范围标记，它们都对 Intune 具有完整的管理员访问权限。
 - 而角色分配中带有范围标记的管理员也可查看不带范围标记的 Intune 对象。

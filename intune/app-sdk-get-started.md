@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 428d9c333bb45d1f8456154104209690a95fb508
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529177"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885095"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -90,24 +90,24 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>为 iOS 或 Android 应用启用基于应用的条件访问
- 
- 除了为应用启用应用保护策略外，还需要为应用启用以下策略，这样应用才能正常使用基于 Azure ActiveDirectory (AAD) 应用的条件访问：
- 
- * 使用 [Azure ActiveDirectory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)构建应用并对其启用 AAD 代理身份验证。
- 
- * iOS 和 Android 平台上的应用的 [AAD 客户端 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) 必须是唯一的。
- 
+
+除了为应用启用应用保护策略外，还需要为应用启用以下策略，这样应用才能正常使用基于 Azure ActiveDirectory (AAD) 应用的条件访问：
+
+* 使用 [Azure ActiveDirectory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)构建应用并对其启用 AAD 代理身份验证。
+
+* iOS 和 Android 平台上的应用的 [AAD 客户端 ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) 必须是唯一的。
+
 ## <a name="configure-telemetry-for-your-app"></a>配置应用遥测
 
 Microsoft Intune 收集应用的使用情况统计数据。
 
 * **Intune App SDK for iOS**：默认情况下，SDK 会记录有关使用事件的 SDK 遥测数据。 会将此数据发送到 Microsoft Intune。
 
-    * 如果选择不从应用将 SDK 遥测数据发送到 Microsoft Intune，则必须通过在 IntuneMAMSettings 字典中将属性 `MAMTelemetryDisabled` 设置为“YES”，来禁用遥测数据传输。
+  * 如果选择不从应用将 SDK 遥测数据发送到 Microsoft Intune，则必须通过在 IntuneMAMSettings 字典中将属性 `MAMTelemetryDisabled` 设置为“YES”，来禁用遥测数据传输。
 
 * **Intune App SDK for Android**：Intune App SDK for Android 不会控制应用中的数据集合。 默认情况下，公司门户应用会记录遥测数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人身份信息 (PII)。 
 
-    * 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
+  * 如果最终用户选择不发送此数据，则必须在“公司门户”应用的“设置”下关闭遥测。 有关详细信息，请参阅[关闭 Microsoft 使用情况数据收集](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)。 
 
 ## <a name="line-of-business-app-version-numbers"></a>业务线应用版本号
 
@@ -119,11 +119,11 @@ Microsoft Intune 收集应用的使用情况统计数据。
 
 完整版本号包含两个部分：
 
- - **版本**  
-   版本号是应用的发行版号（可人工读取）。 最终用户使用版本号确定应用的不同发行版。
+- **版本**  
+  版本号是应用的发行版号（可人工读取）。 最终用户使用版本号确定应用的不同发行版。
 
- - **内部版本号**  
-    内部版本号是一个内部号码，可在应用检测中使用，并可用于以编程方式管理应用。 内部版本号是指应用的迭代，应用可引用代码中的更改。
+- **内部版本号**  
+  内部版本号是一个内部号码，可在应用检测中使用，并可用于以编程方式管理应用。 内部版本号是指应用的迭代，应用可引用代码中的更改。
 
 ### <a name="version-and-build-number-in-android-and-ios"></a>Android 和 iOS 中的版本号和内部版本号
 
@@ -139,16 +139,16 @@ Intune|iOS|Android|描述|
 #### <a name="ios"></a>iOS
 
 - **CFBundleShortVersionString**  
-    指定程序包的发行版本号。 此号码表示应用的发行版本。 最终用户使用此号码引用应用。
+  指定程序包的发行版本号。 此号码表示应用的发行版本。 最终用户使用此号码引用应用。
 - **CFBundleVersion**  
-    程序包的内部版本，它标识程序包的迭代。 此号码可标识发行或未发行的程序包。 此号码用于应用检测。
+  程序包的内部版本，它标识程序包的迭代。 此号码可标识发行或未发行的程序包。 此号码用于应用检测。
 
 #### <a name="android"></a>Android
 
- - **PackageVersionName**  
-    向用户显示的版本号。 可将此属性设置为原始字符串或对字符串资源的引用。 字符串仅用于向用户显示。
- - **PackageVersionCode**  
-    内部版本号。 此号码仅用于确定某个版本是否比另一个版本新，数字越大表示版本越新。 这不是向用户显示的版本号 
+- **PackageVersionName**  
+  向用户显示的版本号。 可将此属性设置为原始字符串或对字符串资源的引用。 字符串仅用于向用户显示。
+- **PackageVersionCode**  
+  内部版本号。 此号码仅用于确定某个版本是否比另一个版本新，数字越大表示版本越新。 这不是向用户显示的版本号 
 
 ## <a name="next-steps-after-integration"></a>集成后的后续步骤
 
@@ -157,11 +157,11 @@ Intune|iOS|Android|描述|
 
 * **Microsoft Intune 测试帐户**：若要就 Intune 应用保护功能对 Intune 托管的应用进行测试，你将需要 Microsoft Intune 帐户。
 
-    * 如果启用 Intune 应用保护策略 iOS 或 Android 应用商店应用的 ISV，则在使用 Microsoft Intune 完成注册（如注册步骤中所述）后，会收到促销代码。 促销代码允许你注册具有 1 年延期使用的 Microsoft Intune 试用。
+  * 如果启用 Intune 应用保护策略 iOS 或 Android 应用商店应用的 ISV，则在使用 Microsoft Intune 完成注册（如注册步骤中所述）后，会收到促销代码。 促销代码允许你注册具有 1 年延期使用的 Microsoft Intune 试用。
 
-    * 如果你正在开发一套不会发送到应用商店的业务应用，则你应能够通过你的组织访问 Microsoft Intune。 你还可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中注册为期 1 个月的免费试用。
+  * 如果你正在开发一套不会发送到应用商店的业务应用，则你应能够通过你的组织访问 Microsoft Intune。 你还可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中注册为期 1 个月的免费试用。
 
-    * 如果使用最终用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Microsoft 365 管理中心网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](https://docs.microsoft.com/intune/licenses-assign)。
+  * 如果使用最终用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Microsoft 365 管理中心网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](https://docs.microsoft.com/intune/licenses-assign)。
 
 * **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。 如果应用已集成 Intune SDK，但尚未在 Azure 门户中作为目标应用列出，则可以使用策略将其设置为目标，方法是选择“+ 更多应用”选项并在文本框中提供捆绑包 ID (iOS) 或包名称 (Android)。
 

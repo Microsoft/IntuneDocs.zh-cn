@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835771"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884062"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>从公司门户网站远程锁定设备
 
@@ -38,27 +38,27 @@ ms.locfileid: "55835771"
 * Windows 10 移动版（设备已设置密码）
 * Windows Phone 8.1（设备已设置密码）  
 
-1. 在[公司门户网站](https://portal.manage.microsoft.com)，选择“菜单”按钮 >“设备”。  
+1. 在[公司门户网站](https://portal.manage.microsoft.com)，选择“菜单”按钮 >“设备”   。  
 
 2. 选择要锁定的设备。  
 
     ![“设备”页面的屏幕截图，其中 2 个磁贴用于显示无法识别的、以一般方式命名的设备。 灰色横幅位于设备的正下方，提示用户识别他们正在使用的设备或添加新的设备。](./media/rename-reset-device-step2-1808.png) 
 
-3. 选择“远程锁定”。 如果页面顶部未显示锁定选项，请选择“更多(…)” > “远程锁定”。  
+3. 选择“远程锁定”  。 如果页面顶部未显示锁定选项，请选择“更多(…)” > “远程锁定”   。  
 
    ![公司门户网站上已选设备的设备详细信息页，其顶部具有显示“重命名”、“删除”、“重置设备”、“重置密码”和“远程锁定”的链接列表。 ](./media/rename-reset-device-1808.png) 
 
     ![“更多”图标的放大视图，用红色箭头突出显示。](./media/rename-reset-device-step3-more-1808.png)    
 
-4. 显示一条消息，警告即将锁定设备。 点击“远程锁定”进行确认。
+4. 显示一条消息，警告即将锁定设备。 点击“远程锁定”进行确认  。
 
 确认后，公司门户将尝试锁定设备。 在此期间将显示“远程锁定挂起”消息。 设备锁定后，状态将显示为“远程锁定成功”。  
 
 该“远程锁定”状态将在以下三个位置中显示：
 
-   * 网站的通知区域。
-   * 设备的“详细信息”页。
-   * 该页“设备”部分上显示设备名称的磁贴。  
+* 网站的通知区域。
+* 设备的“详细信息”  页。
+* 该页“设备”部分上显示设备名称的磁贴  。  
 
 > [!Note]
 > 如果看到远程锁定失败通知，请等待几分钟。 然后再次尝试锁定设备。 状态将变回“远程锁定挂起”。 如果重试不起作用，请联系公司支持人员获取帮助。

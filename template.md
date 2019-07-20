@@ -14,12 +14,12 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509630"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354408"
 ---
 # <a name="metadata-and-markdown-template"></a>元数据和标记模板
 
@@ -124,13 +124,13 @@ ms.locfileid: "61509630"
 - 列表
 
 
-##### <a name="unordered-list-with-an-embedded-lists"></a>带有嵌入式列表、未经排序的列表
+#### <a name="unordered-list-with-an-embedded-lists"></a>带有嵌入式列表、未经排序的列表
 
 - 此 
 - 项目符号 
 - 列表
-    - Peacock 太太
-    - Green 先生
+  - Peacock 太太
+  - Green 先生
 - 包含  
 - other
     1. Mustard 上校

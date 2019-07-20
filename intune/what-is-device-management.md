@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043839"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884272"
 ---
 # <a name="what-is-device-management"></a>什么是设备管理？ 
 
@@ -58,8 +58,8 @@ Intune 包含在 Microsoft 365 中，并与 Azure Active Directory (Azure AD) �
 
 - Windows Defender 包含许多安全功能，可帮助保护 Windows 10 设备  。 例如，结合使用 Intune 和 Windows Defender，可以： 
 
-    - 启用 [Windows Defender SmartScreen ](https://docs.microsoft.com/intune/endpoint-protection-windows-10) 以查找移动设备上的文件和应用中的可疑活动。 
-    - 使用 [Windows Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)来帮助阻止移动设备上的安全漏洞。 并且，通过阻止用户访问公司资源来帮助限制安全漏洞的影响。
+  - 启用 [Windows Defender SmartScreen ](https://docs.microsoft.com/intune/endpoint-protection-windows-10) 以查找移动设备上的文件和应用中的可疑活动。 
+  - 使用 [Windows Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)来帮助阻止移动设备上的安全漏洞。 并且，通过阻止用户访问公司资源来帮助限制安全漏洞的影响。
 
 - 条件访问  是与 Intune 完美集成的 Azure Active Directory 功能。 使用[条件访问](https://docs.microsoft.com/intune/conditional-access)，可以确保只有合规设备，才能访问电子邮件、SharePoint 和其他应用。 
 

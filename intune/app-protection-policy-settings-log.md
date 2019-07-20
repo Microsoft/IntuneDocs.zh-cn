@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acad6b0fa343bdbcc722929886a8e68a4fa4d8bc
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713291"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885069"
 ---
 # <a name="review-client-app-protection-logs"></a>查看客户端应用保护日志
 
@@ -72,5 +72,5 @@ ms.locfileid: "67713291"
 
 ## <a name="next-steps"></a>后续步骤
 
- - 若要了解有关应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
- - Intune 提供了多种工具来帮助你解决环境中的问题。 有关详细信息，请参阅[使用疑难解答门户帮助用户](help-desk-operators.md)。
+- 若要了解有关应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
+- Intune 提供了多种工具来帮助你解决环境中的问题。 有关详细信息，请参阅[使用疑难解答门户帮助用户](help-desk-operators.md)。

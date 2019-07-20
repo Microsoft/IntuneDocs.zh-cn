@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: eb9f7eef1f7f0e4a712bdf3e8a3706374ac002a8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548819"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353320"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>使用策略简化 Windows 电脑管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "67548819"
 
 ![用于 Windows 电脑的策略模板](media/pc_policy_template.png)
 
-### <a name="manage-the-microsoft-intune-center"></a>管理 Microsoft Intune Center
+## <a name="manage-the-microsoft-intune-center"></a>管理 Microsoft Intune Center
 用户可以看到 Intune 软件客户端作为 **Microsoft Intune 中心**。 Microsoft Intune Center 使用户能够：
 
 - 从公司门户中获取应用程序。
@@ -63,6 +63,6 @@ Microsoft Intune Center 安装在所有被管理的计算机上。 可以在 Int
 - [在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows 电脑](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - 这些策略可简化托管计算机上 Windows 防火墙设置的管理。
 
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 
 [使用 Intune 软件客户端的常见 Windows 电脑管理任务](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
