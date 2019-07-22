@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,42 +17,42 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0baf74515af22fb04f773da0d26b94a7eec5f572
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 16cb03788f8a3dd261a1e6d9dbc3efe4b50f4f73
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041027"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313821"
 ---
-# <a name="reference-for-date-entity"></a>日期实体引用
+# <a name="reference-for-dates-entity"></a>日期实体参考
 
-“日期”类别包含日期实体，用于定义数据模型中的日期引用。
+“日期”类别包含日期实体，用于定义数据模型中的日期引用   。
 
-## <a name="date"></a>日期
+## <a name="dates"></a>日期
 
-日期实体表示跨多个数据仓库实体引用的日期。
+日期  实体表示跨多个数据仓库实体引用的日期。
 
 
 |    属性     |                      描述                       |       示例        |
 |-----------------|--------------------------------------------------------|----------------------|
-|     DateKey     | 数据仓库中此日期的唯一标识符。 |       20160703       |
-|    FullDate     |    此日期以完整日期/时间格式表示。     | 2016/7/3 中午 12:00:00 |
-|    DayOfWeek    |                      星期几                       |          1           |
-|   DayOfMonth    |                      几月几日                      |          3           |
-|    DayOfYear    |                      当年的哪天                       |         185          |
-|   WeekOfYear    |                      当年的哪周                      |          28          |
-|   MonthOfYear   |                   当年的哪月                    |          7           |
-| CalendarQuarter |                    日历季度                    |          3           |
-|  CalendarYear   |                     日历年                      |         2016         |
-|     DateKey     | 数据仓库中此日期的唯一标识符。 |       20160703       |
-|    FullDate     |    此日期以完整日期/时间格式表示。     | 2016/7/3 中午 12:00:00 |
-|    DayOfWeek    |                      星期几                       |          1           |
-|   DayOfMonth    |                      几月几日                      |          3           |
-|    DayOfYear    |                      当年的哪天                       |         185          |
-|   WeekOfYear    |                      当年的哪周                      |          28          |
-|   MonthOfYear   |                   当年的哪月                    |          7           |
-| CalendarQuarter |                    日历季度                    |          3           |
-|  CalendarYear   |                     日历年                      |         2016         |
+|     dateKey     | 数据仓库中此日期的唯一标识符。 |       20160703       |
+|    fullDate     |    此日期以完整日期/时间格式表示。     | 2016/7/3 中午 12:00:00 |
+|    dayOfWeek    |                      星期几                       |          1           |
+|   dayOfMonth    |                      几月几日                      |          3           |
+|    dayOfYear    |                      当年的哪天                       |         185          |
+|   weekOfYear    |                      当年的哪周                      |          28          |
+|   monthOfYear   |                   当年的哪月                    |          7           |
+| calendarQuarter |                    日历季度                    |          3           |
+|  calendarYear   |                     日历年                      |         2016         |
+|     dateKey     | 数据仓库中此日期的唯一标识符。 |       20160703       |
+|    fullDate     |    此日期以完整日期/时间格式表示。     | 2016/7/3 中午 12:00:00 |
+|    dayOfWeek    |                      星期几                       |          1           |
+|   dayOfMonth    |                      几月几日                      |          3           |
+|    dayOfYear    |                      当年的哪天                       |         185          |
+|   weekOfYear    |                      当年的哪周                      |          28          |
+|   monthOfYear   |                   当年的哪月                    |          7           |
+| calendarQuarter |                    日历季度                    |          3           |
+|  calendarYear   |                     日历年                      |         2016         |
 
 ## <a name="next-steps"></a>后续步骤
 

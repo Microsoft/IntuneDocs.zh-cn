@@ -17,54 +17,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713143"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313811"
 ---
 # <a name="reference-for-application-entities"></a>应用程序实体引用
 
 “应用程序”类别包含移动设备的实体，可用于跟踪此类信息  ：
 
-  - 应用版本
-  - 应用的安装源
-  - 创建应用的开发人员类型
-  - 应用的托管软件类型，例如移动版或桌面版  
-  - 应用的批量购买计划 (VPP) 状态
+- 应用版本
+- 应用的安装源
+- 创建应用的开发人员类型
+- 应用的托管软件类型，例如移动版或桌面版  
+- 应用的批量购买计划 (VPP) 状态
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-AppRevision 实体列出了应用的所有版本  。
+appRevision  实体列出了应用的所有版本。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
-| AppKey |应用的唯一标识符。 |123 |
-| ApplicationId |应用的唯一标识符 - 类似于 AppKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |
-| 修订 |上传二进制文件时管理员提到的版本。 |2 |
-| 标题 |应用标题。 |Excel |
-| 发布者 |应用发布者。 |Microsoft |
-| UploadState |应用的上传状态。 |1 |
-| AppTypeKey |对下一部分中所述的 AppType 的引用。 | |
-| VppProgramTypeKey |对下述 VppProgramType 的引用。 | |
-| CreationTime |创建此修订版本的时间。 |2016/11/23 - 中午 12:00:00 |
-| ModifiedTime |上次更改与此修订版本相关的任何内容的时间。 |2016/11/23 - 中午 12:00:00 |
+| appKey |应用的唯一标识符。 |123 |
+| applicationId |应用的唯一标识符 - 类似于 AppKey，但该标识符是自然键。 |b66bc706-ffff-7437-0340-032819502773 |
+| revision |上传二进制文件时管理员提到的版本。 |2 |
+| title |应用标题。 |Excel |
+| publisher |应用发布者。 |Microsoft |
+| uploadState |应用的上传状态。 |1 |
+| appTypeKey |对下一部分中所述的 AppType 的引用。 | |
+| vppProgramTypeKey |对下述 VppProgramType 的引用。 | |
+| creationTime |创建此修订版本的时间。 |2016/11/23 - 中午 12:00:00 |
+| modifiedTime |上次更改与此修订版本相关的任何内容的时间。 |2016/11/23 - 中午 12:00:00 |
 | 大小 |二进制文件的大小。 | |
-| StartDateInclusiveUTC |在数据仓库中创建此应用修订版本时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
-| EndDateExclusiveUTC |此应用修订版本停用时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
-| IsCurrent |表明此应用修订版本目前是否在数据仓库中。 |True/False |
-| RowLastModifiedDateTimeUTC |上次在数据仓库中修改此应用版本时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+| startDateInclusiveUTC |在数据仓库中创建此应用修订版本时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+| endDateExclusiveUTC |此应用修订版本停用时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
+| isCurrent |表明此应用修订版本目前是否在数据仓库中。 |True/False |
+| rowLastModifiedDateTimeUTC |上次在数据仓库中修改此应用版本时的 UTC 日期和时间。 |2016/11/23 - 中午 12:00:00 |
 
-## <a name="apptypes"></a>AppTypes
+## <a name="apptypes"></a>appTypes
 
-AppTypes 实体列出了应用的安装源  。
+appType  实体列出了应用的安装源。
 
 | 属性  | 描述 |
 |---------|------------|
-| AppTypeID |类型的 ID |
-| AppTypeKey |密钥的代理键 |
-| AppTypeName |应用类型 |
+| appTypeID |类型的 ID |
+| appTypeKey |密钥的代理键 |
+| appTypeName |应用类型 |
 
 ### <a name="example"></a>示例
 
@@ -85,15 +85,15 @@ AppTypes 实体列出了应用的安装源  。
 | 12 |Windows Phone LOB 应用 | Windows Phone 业务线应用。 |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-VppProgramTypes 实体列出了应用的可能 VPP 计划类型  。
+vppProgramType  实体列出了应用的可能 VPP 计划类型。
 
 | 属性  | 描述 |
 |---------|------------|
-| VppProgramTypeID | 类型 ID。 |
-| VppProgramTypeKey | 密钥的代理键。 |
-| VppProgramTypeName | VPP 计划类型。 |
+| vppProgramTypeID | 类型 ID。 |
+| vppProgramTypeKey | 密钥的代理键。 |
+| vppProgramTypeName | VPP 计划类型。 |
 
 ### <a name="example"></a>示例
 
@@ -105,27 +105,27 @@ VppProgramTypes 实体列出了应用的可能 VPP 计划类型  。
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>applicationInventories
 
-ApplicationInventory 项列出了收集清单时在设备上找到的应用程序  。
+applicationInventory 项列出了收集清单时在设备上找到的应用程序  。
 
 | 属性  | 描述 |
 |---------|------------|
-| DeviceKey | 这是对包含 Intune 设备 ID 的“设备”表的引用。 |
-| DateKey | 对表明清单日期的日期表格的引用。 |
-| ApplicationName | 应用程序名称。 |
-| ApplicationVersion | 应用程序版本。 |
-| BundleSize | 应用的大小（以字节为单位）。 |
+| deviceKey | 这是对包含 Intune 设备 ID 的“设备”表的引用。 |
+| dateKey | 对表明清单日期的日期表格的引用。 |
+| applicationName | 应用程序名称。 |
+| applicationVersion | 应用程序版本。 |
+| bundleSize | 应用的大小（以字节为单位）。 |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-MobileAppInstallState  实体表示已分配到包含设备和/或用户的组的移动应用的安装状态。
+mobileAppInstallState  实体表示已分配到包含设备和/或用户的组的移动应用程序的安装状态。
 
 | 属性 | 描述 |
 |---|---|
-| AppInstallStateKey | 帐户的应用安装状态的唯一 ID。 |
-| AppInstallState | 应用安装状态的枚举值。 |
-| AppInstallStateName | 应用安装状态的名称。 |
+| appInstallStateKey | 帐户的应用安装状态的唯一 ID。 |
+| appInstallState | 应用安装状态的枚举值。 |
+| appInstallStateName | 应用安装状态的名称。 |
 
 
 

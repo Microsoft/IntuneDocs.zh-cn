@@ -17,27 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7401b5da7629addf03498afd44033a59839d39e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8d24716f65d5ff8afba5fc0a89cfef082712429
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045323"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313675"
 ---
 # <a name="reference-for-user-device-association-entity"></a>用户设备关联实体参考
 
-UserDeviceAssociation 实体包含组织中的用户设备关联。
+userDeviceAssociation  实体包含组织中的用户设备关联。
 
-## <a name="userdeviceassociation"></a>UserDeviceAssociation
+## <a name="userdeviceassociations"></a>userDeviceAssociations
 
 
 |        名称        |                                           描述                                            |        示例         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
-|      UserKey       |              数据仓库中用户的唯一标识符。 （代理键）。               |          123           |
-|     DeviceKey      |                      数据仓库中设备的唯一标识符。                      |          123           |
-| CreatedDateTimeUTC |           创建用户设备关联时的日期和时间。 使用 UTC 格式。           | 2016/11/23 - 中午 12:00:00 |
-|     IsDeleted      | 指示用户已取消设备注册，并且该关联不再活跃。 |       True/False       |
-|  EndedDateTimeUTC  |              IsDeleted 更改为 True 时的 UTC 日期和时间。               | 2017/06/23 凌晨 12:00:00 |
+|      userKey       |              数据仓库中用户的唯一标识符。 （代理键）。               |          123           |
+|     deviceKey      |                      数据仓库中设备的唯一标识符。                      |          123           |
+| createdDateTimeUTC |           创建用户设备关联时的日期和时间。 使用 UTC 格式。           | 2016/11/23 - 中午 12:00:00 |
+|     isDeleted      | 指示用户已取消设备注册，并且该关联不再活跃。 |       True/False       |
+|  endedDateTimeUTC  |              IsDeleted 更改为 True 时的 UTC 日期和时间。               | 2017/06/23 凌晨 12:00:00 |
 
 ## <a name="next-steps"></a>后续步骤
 

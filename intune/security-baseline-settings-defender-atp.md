@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549126"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354434"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
 查看 Microsoft Intune 支持的 Microsoft Defender 高级威胁防护（以前称为 Windows Defender 高级威胁防护）基线设置。 高级威胁防护 (ATP) 基线默认值表示针对 ATP 的建议配置，可能与其他安全基线中的基线默认值不匹配。  
 
-  当环境满足使用 [Microsoft Defender 高级威胁防护](advanced-threat-protection.md#prerequisites)的先决条件时，Microsoft Defender 高级威胁防护基线才可用。
+当环境满足使用 [Microsoft Defender 高级威胁防护](advanced-threat-protection.md#prerequisites)的先决条件时，Microsoft Defender 高级威胁防护基线才可用。 
 
-
+此基线针对物理设备进行了优化, 目前不建议在虚拟机 (Vm) 或 VDI 终结点上使用。 某些基线设置可能会影响虚拟化环境中的远程交互会话。 有关详细信息, 请参阅 Windows 文档中[的将符合性提高到 Microsoft DEFENDER ATP 安全基线](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)。
 
 
 > [!NOTE]  
@@ -164,22 +164,22 @@ ms.locfileid: "67549126"
 
   对于 Bit locker 可移动驱动器策略，配置以下设置：
 
-    - **需要为写入权限进行加密**  
-      **默认值**：是
+  - **需要为写入权限进行加密**  
+    **默认值**：是
 
-    - **加密方法**  
-      **默认值**：AES 128 位 CBC
+  - **加密方法**  
+    **默认值**：AES 128 位 CBC
 
 - **Bit locker 固定驱动器策略**  
   此策略的值确定 BitLocker 用于加密固定驱动器的密码强度。 企业可以控制加密级别，增强安全性（AES-256 强于 AES-128）。 如果启用此设置，可以为固定的数据驱动器、操作系统驱动器和可移动数据驱动器单独配置加密算法和密钥加密强度。 对于固定的驱动器和操作系统驱动器，建议使用 XTS-AES 算法。 对于可移动驱动器，如果驱动器用于非运行 Windows 10（版本 1511 或更高版本）的其他设备，则应使用 AES-CBC 128 位或 AES-CBC 256 位。 如果驱动器已加密或正在进行加密，更改加密方法不会产生任何影响。 在这些情况下，将忽略此策略设置。
 
   对于 Bit locker 固定驱动器策略，配置以下设置：
 
-    - **需要为写入权限进行加密**  
-      **默认值**：是
+  - **需要为写入权限进行加密**  
+    **默认值**：是
 
-    - **加密方法**  
-      **默认值**：AES 128 位 XTS
+  - **加密方法**  
+    **默认值**：AES 128 位 XTS
 
 - **Bit locker 系统驱动器策略**  
   此策略的值确定 BitLocker 用于加密系统驱动器的密码强度。 企业可能想要控制加密级别，增强安全性（AES-256 强于 AES-128）。 如果启用此设置，可以为固定的数据驱动器、操作系统驱动器和可移动数据驱动器单独配置加密算法和密钥加密强度。 对于固定的驱动器和操作系统驱动器，建议使用 XTS-AES 算法。 对于可移动驱动器，如果驱动器用于非运行 Windows 10（版本 1511 或更高版本）的其他设备，则应使用 AES-CBC 128 位或 AES-CBC 256 位。 如果驱动器已加密或正在进行加密，更改加密方法不会产生任何影响。 在这些情况下，将忽略此策略设置。  

@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,35 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d5231daf1d28f94b6e2e1ef0c976c5b9f1877d22
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547920"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313763"
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
 “设备”类别包含移动设备的实体，可用于跟踪此类信息  ：
 
-  - 设备类型
-  - 设备登记和注册状态
-  - 设备所有权
-  - 设备管理状态
-  - 设备 Azure AD 成员身份状态
-  - 注册状态
-  - 设备的历史信息
-  - 设备上的应用的清单
+- 设备类型
+- 设备登记和注册状态
+- 设备所有权
+- 设备管理状态
+- 设备 Azure AD 成员身份状态
+- 注册状态
+- 设备的历史信息
+- 设备上的应用的清单
 
-## <a name="devicetypes"></a>DeviceTypes
+## <a name="devicetypes"></a>deviceTypes
 
-DeviceTypes 实体表示由其他数据仓库实体引用的设备类型  。 设备类型通常描述设备型号、制造商或同时包含这两项内容。
+deviceTypes 实体表示由其他数据仓库实体引用的设备类型  。 设备类型通常描述设备型号、制造商或同时包含这两项内容。
 
 | 属性  | 描述 |
 |---------|------------|
-| DeviceTypeID |设备类型的唯一标识符 |
-| DeviceTypeKey |数据仓库中设备类型的唯一标识符 - 代理键 |
-| DeviceTypeName |设备类型 |
+| deviceTypeID |设备类型的唯一标识符 |
+| deviceTypeKey |数据仓库中设备类型的唯一标识符 - 代理键 |
+| deviceTypeName |设备类型 |
 
 ### <a name="example"></a>示例
 
@@ -73,7 +73,7 @@ DeviceTypes 实体表示由其他数据仓库实体引用的设备类型  。 �
 | 255 |Unknown |未知设备类型 |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
-EnrollmentActivity 实体表示设备注册活动  。
+enrollmentActivity 实体表示设备注册活动  。
 
 | 属性                      | 描述                                                               |
 |-------------------------------|---------------------------------------------------------------------------|
@@ -87,7 +87,7 @@ EnrollmentActivity 实体表示设备注册活动  。
 | 计数                         | 符合上述分类的注册活动总数。  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
-EnrollmentEventStatus 实体表示设备注册结果  。
+enrollmentEventStatus 实体表示设备注册结果  。
 
 | 属性                   | 描述                                                                       |
 |----------------------------|-----------------------------------------------------------------------------------|
@@ -158,9 +158,9 @@ EnrollmentFailureReason 实体表示特定失败类别中设备注册失败的�
 | FeatureNotSupported              | 用户试图访问尚未面向所有客户发布的功能，或者试图访问与 Intune 配置不兼容的功能。                                                            |
 | UserAbandonment                  | 最终用户放弃了注册。 （最终用户启动了加入，但未能及时完成）                                                                                           |
 | APNSCertificateExpired           | 无法使用 Apple MDM Push Certificate 管理 Apple 设备。                                                                                                                            |
-## <a name="ownertypes"></a>OwnerTypes
+## <a name="ownertypes"></a>ownerTypes
 
-OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象  。
+enrollmentType 实体表明拥有设备的是公司、个人还是未知对象  。
 
 | 属性  | 描述 | 示例 |
 |---------|------------|--------|
@@ -171,9 +171,9 @@ OwnerTypes 实体表明拥有设备的是公司、个人还是未知对象  。
 > [!Note]  
 > 对于在为设备创建动态组时 Azure AD 中的 `ownerTypeName`，需要将筛选器值 `deviceOwnership` 设置为 `Company`。 有关详细信息，请参阅[设备规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)。 
 
-## <a name="managementstates"></a>ManagementStates
+## <a name="managementstates"></a>managementStates
 
-ManagementStates 实体提供有关设备状态的详细信息  。 详细信息适用于应用远程操作、设备越狱或进行 root 的情况。
+managementStates 实体提供有关设备状态的详细信息  。 详细信息适用于应用远程操作、设备越狱或进行 root 的情况。
 
 | 属性  | 描述 |
 |---------|------------|
@@ -198,15 +198,15 @@ ManagementStates 实体提供有关设备状态的详细信息  。 详细信息
 | 10 |RetireCanceled | 已取消停用命令。 |
 | 11 |Discovered | 该设备是 Intune 新发现的设备，首次签入后，即会变为“托管”状态。 |
 
-## <a name="managementagenttypes"></a>ManagementAgentTypes
+## <a name="managementagenttypes"></a>managementAgentTypes
 
-ManagementAgentTypes 实体表示用于管理设备的代理  。
+ManagementAgentType  实体表示用于管理设备的代理。
 
 | 属性  | 描述 |
 |---------|------------|
-| ManagementAgentTypeID | 管理代理类型的唯一标识符。 |
-| ManagementAgentTypeKey | 数据仓库中管理代理类型的唯一标识符 - 代理键。 |
-| ManagementAgentTypeName |表明用于管理设备的代理类型。 |
+| managementAgentTypeID | 管理代理类型的唯一标识符。 |
+| managementAgentTypeKey | 数据仓库中管理代理类型的唯一标识符 - 代理键。 |
+| managementAgentTypeName |表明用于管理设备的代理类型。 |
 
 ### <a name="example"></a>示例
 
@@ -226,70 +226,58 @@ ManagementAgentTypes 实体表示用于管理设备的代理  。
 
 |          属性          |                                                                                       描述                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| DeviceKey                  | 数据仓库中设备的唯一标识符 - 代理键。                                                                                                               |
-| DeviceId                   | 设备的唯一标识符。                                                                                                                                                     |
-| DeviceName                 | 允许对设备命名的平台上设备的名称。 在其他平台上，Intune 从其他属性创建名称。 此属性不可同时用于所有设备。 |
-| DeviceTypeKey              | 此设备的设备类型属性的键。                                                                                                                                    |
-| DeviceRegistrationState    | 此设备的客户端注册状态属性的键。                                                                                                                      |
-| OwnerTypeKey               | 此设备的所有者类型属性的键：企业、个人或未知。                                                                                                    |
-| EnrolledDateTime           | 设备注册的日期和时间。                                                                                                                                         |
-| LastSyncDateTime           | 使用 Intune 签入的上一已知设备。                                                                                                                                              |
-| ManagementAgentKey         | 与此设备关联的管理代理键。                                                                                                                             |
-| ManagementStateKey         | 与此设备关联的管理状态键，表明远程操作的最新状态或设备是否越狱/获取了 root 权限。                                                |
-| AzureADDeviceId            | 此设备 Azure deviceID。                                                                                                                                                  |
-| AzureADRegistered          | 是否在 Azure Active Directory 中注册了该设备。                                                                                                                             |
-| DeviceCategoryKey          | 与此设备关联的类别的键。                                                                                                                                     |
-| DeviceEnrollmentType       | 与此设备关联的注册类型的键，表明注册方法。                                                                                             |
-| ComplianceStateKey         | 与此设备关联的符合性状态的键。                                                                                                                             |
-| OSVersion                  | 设备的操作系统版本。                                                                                                                                                |
-| EasDeviceId                | 设备的 Exchange ActiveSync ID。                                                                                                                                                  |
-| SerialNumber               | SerialNumber                                                                                                                                                                           |
-| UserId                     | 与设备关联的用户的唯一标识符。                                                                                                                           |
-| RowLastModifiedDateTimeUTC | 上次在数据仓库中修改此设备时的 UTC 日期和时间。                                                                                                       |
+| deviceKey                  | 数据仓库中设备的唯一标识符 - 代理键。                                                                                                               |
+| deviceId                   | 设备的唯一标识符。                                                                                                                                                     |
+| deviceName                 | 允许对设备命名的平台上设备的名称。 在其他平台上，Intune 从其他属性创建名称。 此属性不可同时用于所有设备。 |
+| deviceTypeKey              | 此设备的设备类型属性的键。                                                                                                                                    |
+| deviceRegistrationState    | 此设备的客户端注册状态属性的键。                                                                                                                      |
+| ownerTypeKey               | 此设备的所有者类型属性的键：企业、个人或未知。                                                                                                    |
+| enrolledDateTime           | 设备注册的日期和时间。                                                                                                                                         |
+| lastSyncDateTime           | 使用 Intune 签入的上一已知设备。                                                                                                                                              |
+| managementAgentKey         | 与此设备关联的管理代理键。                                                                                                                             |
+| managementStateKey         | 与此设备关联的管理状态键，表明远程操作的最新状态或设备是否越狱/获取了 root 权限。                                                |
+| azureADDeviceId            | 此设备 Azure deviceID。                                                                                                                                                  |
+| azureADRegistered          | 是否在 Azure Active Directory 中注册了该设备。                                                                                                                             |
+| deviceCategoryKey          | 与此设备关联的类别的键。                                                                                                                                     |
+| deviceEnrollmentType       | 与此设备关联的注册类型的键，表明注册方法。                                                                                             |
+| complianceStateKey         | 与此设备关联的符合性状态的键。                                                                                                                             |
+| osVersion                  | 设备的操作系统版本。                                                                                                                                                |
+| easDeviceId                | 设备的 Exchange ActiveSync ID。                                                                                                                                                  |
+| serialNumber               | SerialNumber                                                                                                                                                                           |
+| userId                     | 与设备关联的用户的唯一标识符。                                                                                                                           |
+| rowLastModifiedDateTimeUTC | 上次在数据仓库中修改此设备时的 UTC 日期和时间。                                                                                                       |
 | 制造商               | 设备制造商                                                                                                                                                             |
-| 型号                      | 设备型号                                                                                                                                                                    |
-| OperatingSystem            | 设备的操作系统。 Windows、iOS 等。                                                                                                                                   |
-| IsDeleted                  | 显示设备是否被删除的二进制文件。                                                                                                                                 |
-| AndroidSecurityPatchLevel  | Android 安全修补程序级别                                                                                                                                                           |
+| model                      | 设备型号                                                                                                                                                                    |
+| operatingSystem            | 设备的操作系统。 Windows、iOS 等。                                                                                                                                   |
+| isDeleted                  | 显示设备是否被删除的二进制文件。                                                                                                                                 |
+| androidSecurityPatchLevel  | Android 安全修补程序级别                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
 | isSupervised               | 设备受监督的状态                                                                                                                                                               |
-| FreeStorageSpaceInBytes    | 可用存储（以字节为单位）。                                                                                                                                                                 |
-| TotalStorageSpaceInBytes   | 总存储（以字节为单位）。                                                                                                                                                                |
-| EncryptionState            | 设备的加密状态。                                                                                                                                                      |
-| SubscriberCarrier          | 设备的订阅者运营商                                                                                                                                                       |
-| PhoneNumber                | 设备的电话号码                                                                                                                                                             |
+| freeStorageSpaceInBytes    | 可用存储（以字节为单位）。                                                                                                                                                                 |
+| totalStorageSpaceInBytes   | 总存储（以字节为单位）。                                                                                                                                                                |
+| encryptionState            | 设备的加密状态。                                                                                                                                                      |
+| subscriberCarrier          | 设备的订阅者运营商                                                                                                                                                       |
+| phoneNumber                | 设备的电话号码                                                                                                                                                             |
 | IMEI                       | IMEI                                                                                                                                                                                   |
-| CellularTechnology         | 设备的移动电话技术                                                                                                                                                    |
+| cellularTechnology         | 设备的移动电话技术                                                                                                                                                    |
 | WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
+| ICCD                       | 集成卡标识符                                                                                                                                                     |
 
-## <a name="devicepropertyhistory"></a>DevicePropertyHistory
+## <a name="devicepropertyhistories"></a>devicePropertyHistories
 
-DevicePropertyHistory 实体具有的属性与设备表格和过去 90 天每个设备记录的每日快照的属性相同  。 DateKey 列表明每行的日期。
+devicePropertyHistory 实体具有的属性与设备表格和过去 90 天每个设备记录的每日快照的属性相同  。 DateKey 列表明每行的日期。
 
 |          属性          |                                                                                      描述                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| DateKey                    | 引用日期表格，该表格表明当日日期。                                                                                                                                          |
-| DeviceKey                  | 数据仓库中设备的唯一标识符 - 代理键。 这是对包含 Intune 设备 ID 的设备表格的引用。                               |
-| DeviceName                 | 允许对设备命名的平台上设备的名称。 在其他平台上，Intune 从其他属性创建名称。 此属性不可同时用于所有设备。 |
-| DeviceRegistrationStateKey | 此设备的设备注册状态属性的键。                                                                                                                    |
-| OwnerTypeKey               | 此设备的所有者类型属性的键：企业、个人或未知。                                                                                                  |
-| ManagementStateKey         | 与此设备关联的管理状态键，表明远程操作的最新状态或设备是否越狱/获取了 root 权限。                                                |
-| AzureADRegistered          | 是否在 Azure Active Directory 中注册了该设备。                                                                                                                             |
-| ComplianceStateKey         | ComplianceState 的键。                                                                                                                                                            |
+| dateKey                    | 引用日期表格，该表格表明当日日期。                                                                                                                                          |
+| deviceKey                  | 数据仓库中设备的唯一标识符 - 代理键。 这是对包含 Intune 设备 ID 的设备表格的引用。                               |
+| deviceName                 | 允许对设备命名的平台上设备的名称。 在其他平台上，Intune 从其他属性创建名称。 此属性不可同时用于所有设备。 |
+| deviceRegistrationStateKey | 此设备的设备注册状态属性的键。                                                                                                                    |
+| ownerTypeKey               | 此设备的所有者类型属性的键：企业、个人或未知。                                                                                                  |
+| managementStateKey         | 与此设备关联的管理状态键，表明远程操作的最新状态或设备是否越狱/获取了 root 权限。                                                |
+| azureADRegistered          | 是否在 Azure Active Directory 中注册了该设备。                                                                                                                             |
+| complianceStateKey         | ComplianceState 的键。                                                                                                                                                            |
 | OSVersion                  | 操作系统版本。                                                                                                                                                                          |
-| JailBroken                 | 设备是否越狱或取得 root 权限。                                                                                                                                         |
-| DeviceCategoryKey          | 此设备的设备类别属性的键。 
-
-## <a name="applicationinventory"></a>ApplicationInventory
-
-ApplicationInventory 实体列出了收集清单时在设备上找到的应用  。
-
-
-|      属性      |                       描述                        |
-|--------------------|----------------------------------------------------------|
-|     DeviceKey      |              对设备表格的引用。               |
-|   ApplicationKey   | ? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |
-|  ApplicationName   | ? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |
-| ApplicationVersion | ? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |
-|     BundleSize     | ? （从 ExchangeDeviceService\DeviceApplication 复制而来）。 |
+| jailBroken                 | 设备是否越狱或取得 root 权限。                                                                                                                                         |
+| deviceCategoryKey          | 此设备的设备类别属性的键。 
 

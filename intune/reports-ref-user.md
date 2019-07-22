@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,35 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0551327bfe2b320bb91699e1176985bbdf94de92
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 80a5e931589aaf48d99080a35ee2df040d11d201
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045216"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313710"
 ---
 # <a name="reference-for-user-entity"></a>用户实体引用
 
-User 类别包含定义数据模型中用户属性的 User 实体。
+Users  类别包含定义数据模型中用户属性的 user  实体。
 
-## <a name="user"></a>用户
+## <a name="users"></a>用户
 
-用户实体列出了企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。
+用户  实体列出了企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。
 
-User 实体集合包含用户数据。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在上个月的数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
+用户  实体集合包含用户数据。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在上个月的数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
 
 |          属性          |                                                                                                           描述                                                                                                          |                示例               |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
-| UserKey                    | 数据仓库中用户的唯一标识符 - 代理键。                                                                                                                                                         | 123                                  |
-| UserId                     | 用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail                  | 用户的电子邮件地址。                                                                                                                                                                                                     | John@constoso.com                    |
+| userKey                    | 数据仓库中用户的唯一标识符 - 代理键。                                                                                                                                                         | 123                                  |
+| userId                     | 用户的唯一标识符 - 类似于 UserKey，但该标识符是自然键。                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
+| userEmail                  | 用户的电子邮件地址。                                                                                                                                                                                                     | John@constoso.com                    |
 | userPrincipalName                        | 用户的用户主体名称。                                                                                                                                                                                               | John@constoso.com                    |
-| DisplayName                | 用户的显示名称。                                                                                                                                                                                                      | John                                 |
-| IntuneLicensed             | 指定此用户是否获得 Intune 许可。                                                                                                                                                                              | True/False                           |
-| IsDeleted                  | 指示是否所有用户的许可证都已过期，以及是否因此将用户从 Intune 中删除。 对于单个记录，此标志不会更改。 相反，将为新用户状态创建新记录。 | True/False                           |
+| displayName                | 用户的显示名称。                                                                                                                                                                                                      | John                                 |
+| intuneLicensed             | 指定此用户是否获得 Intune 许可。                                                                                                                                                                              | True/False                           |
+| isDeleted                  | 指示是否所有用户的许可证都已过期，以及是否因此将用户从 Intune 中删除。 对于单个记录，此标志不会更改。 相反，将为新用户状态创建新记录。 | True/False                           |
 | RowLastModifiedDateTimeUTC | 上次在数据仓库中修改记录时的 UTC 日期和时间                                                                                                                                                 | 2016/11/23 0:00                      |
 
 
 ## <a name="next-steps"></a>后续步骤
- - 可以使用“当前用户”实体集合将用户数据限制为当前活动的用户。 有关详细信息，请参阅[引用当前用户实体](reports-ref-current-user.md)。
- - 要了解有关数据仓库如何在 Intune 中跟踪用户生存期的详细信息，请参阅 [Intune 数据仓库中的用户生存期表示](reports-ref-user-timeline.md)。
+- 可以使用“当前用户”  实体集合将用户数据限制为当前活动的用户。 有关详细信息，请参阅[引用当前用户实体](reports-ref-current-user.md)。
+- 要了解有关数据仓库如何在 Intune 中跟踪用户生存期的详细信息，请参阅 [Intune 数据仓库中的用户生存期表示](reports-ref-user-timeline.md)。
