@@ -171,6 +171,7 @@
       items:
         - name: 什么是设备注册？
           href: device-enrollment.md
+          displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
         - name: 设备管理功能
           href: device-management-capabilities.md
         - name: 注册选项
@@ -184,6 +185,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: 企业标识符
               href: corporate-identifiers-add.md
+              displayName: COD
             - name: 多重身份验证
               href: multi-factor-authentication.md
             - name: 设备注册管理器
@@ -273,6 +275,8 @@
           href: device-remove-user.md
         - name: 查找主要用户
           href: find-primary-user.md
+        - name: 发送通知
+          href: custom-notifications.md
         - name: 清除 macOS 设备
           href: device-erase.md
         - name: 远程控制移动设备
@@ -559,20 +563,27 @@
               href: apps-add-built-in.md
             - name: PowerShell 脚本
               href: intune-management-extension.md
-        - name: 部署应用
-          href: apps-deploy.md
+        - name: 分配应用
           items:
+            - name: 将应用分配给组
+              href: apps-deploy.md
+              displayName: app assignment; assignment
             - name: 包括和排除应用
               href: apps-inc-exl-assignments.md
+              displayName: app assignment
             - name: 部署 Windows 10 应用
               href: apps-windows-10-app-deploy.md
             - name: 将应用部署到政府环境
               href: apps-deploy-gcc-dod.md
         - name: 监视应用
           href: apps-monitor.md
+        - name: 发现的应用
+          href: app-discovered-apps.md
         - name: 配置应用
-          href: app-configuration-policies-overview.md
           items:
+            - name: 应用配置策略
+              href: app-configuration-policies-overview.md
+              displayName: App configuration policy; configuration policy
             - name: iOS 托管设备
               href: app-configuration-policies-use-ios.md
             - name: Android 托管设备
