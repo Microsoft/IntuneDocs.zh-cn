@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412695"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354521"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>使用 Intune 将日志数据发送到存储、事件中心或 Log Analytics（预览版）
 
@@ -174,43 +174,43 @@ Microsoft Intune 包含可提供环境信息的内置日志。 审核日志  显
 
 查看常见问题解答，并了解 Azure Monitor 中 Intune 日志的所有已知问题。
 
-#### <a name="which-logs-are-included"></a>包含哪些日志？
+### <a name="which-logs-are-included"></a>包含哪些日志？
 
 使用此功能可以路由审核日志和运行日志（预览版）。
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>操作执行后，相应的日志何时出现在事件中心内？
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>操作执行后，相应的日志何时出现在事件中心内？
 
 日志通常在操作执行后的几分钟内出现在事件中心内。 [什么是 Azure 事件中心？](https://docs.microsoft.com/azure/event-hubs/)提供了详细信息。
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>操作执行后，相应的日志何时出现在存储帐户中？
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>操作执行后，相应的日志何时出现在存储帐户中？
 
 对于 Azure 存储帐户，延迟时间介于操作执行后的 5 分钟和 15 分钟之间。
 
-#### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>如果管理员更改诊断设置的保留期，会发生什么情况？
+### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>如果管理员更改诊断设置的保留期，会发生什么情况？
 
 新的保留策略应用于在更改后收集的日志。 在策略更改前收集的日志不受影响。
 
-#### <a name="how-much-does-it-cost-to-store-my-data"></a>存储数据的成本是多少？
+### <a name="how-much-does-it-cost-to-store-my-data"></a>存储数据的成本是多少？
 
 存储成本具体视日志大小和选择的保留期而定。 有关租户的估算成本（视生成的日志量而定）列表，请参阅（本文中的）[活动日志的存储大小](#storage-size-for-activity-logs)。
 
-#### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>将数据流式传输到事件中心的成本是多少？
+### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>将数据流式传输到事件中心的成本是多少？
 
 流式传输成本具体视每分钟收到的消息数而定。 若要详细了解如何计算成本和根据消息数估算成本，请参阅（本文中的）[活动日志的事件中心消息](#event-hub-messages-for-activity-logs)。
 
-#### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>如何将 Intune 审核日志与我的 SIEM 系统集成？
+### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>如何将 Intune 审核日志与我的 SIEM 系统集成？
 
 结合使用 Azure Monitor 与事件中心，将日志流式传输到 SIEM 系统。 首先，[将日志流式传输到事件中心](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)。 然后，通过已配置的事件中心[设置 SIEM 工具](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub)。 
 
-#### <a name="what-siem-tools-are-currently-supported"></a>目前支持哪些 SIEM 工具？
+### <a name="what-siem-tools-are-currently-supported"></a>目前支持哪些 SIEM 工具？
 
 目前，[Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk)、QRadar 和 [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory)（打开新网站）支持 Azure Monitor。 若要详细了解连接器工作原理，请参阅[将 Azure 监视数据流式传输到事件中心以供外部工具使用](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs)。
 
-#### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>我能否在不使用外部 SIEM 工具的情况下访问事件中心内的数据？
+### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>我能否在不使用外部 SIEM 工具的情况下访问事件中心内的数据？
 
 是。 若要从自定义应用访问这些日志，可使用[事件中心 API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph)。
 
-#### <a name="what-data-is-stored"></a>存储什么数据？
+### <a name="what-data-is-stored"></a>存储什么数据？
 
 Intune 不存储通过管道发送的任何数据。 Intune 将数据路由到租户授权的 Azure Monitor 管道。 有关详细信息，请参阅 [Azure Monitor 概述](https://docs.microsoft.com/azure/azure-monitor/overview)。
 

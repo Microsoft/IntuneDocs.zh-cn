@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91633aee190b5fb5bda9495f66d4503042aa6a80
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 9a1e370b65d8bfd7e61562347323bf1455dfe55b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713322"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354296"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输
 
@@ -109,5 +109,5 @@ ms.locfileid: "67713322"
 首先，向 iOS 应用[创建和分配应用保护策略](app-protection-policies.md)。 有关如何测试应用保护策略的详细信息，请参阅[验证应用保护策略](app-protection-policies-validate.md)。
 
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 [什么是 Intune 应用保护策略](app-protection-policy.md)

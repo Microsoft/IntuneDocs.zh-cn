@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548092"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375240"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
@@ -69,7 +69,7 @@ ms.locfileid: "67548092"
 
 3. 如果用户注册的设备数已达到其设备限制，则在执行下述操作前无法再注册设备：
     - [删除现有设备](devices-wipe.md)，或者
-    - 通过[设置设备限制](enrollment-restrictions-set.md#set-device-limit-restrictions)来提高设备上限。
+    - 通过[设置设备限制](enrollment-restrictions-set.md)来提高设备上限。
 
 为避免达到设备上限，请一定要删除陈旧的设备记录。
 
@@ -499,5 +499,5 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 
 
-### <a name="next-steps"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 如果此疑难解答信息没有帮助到你，请联系 Microsoft 支持部门，如[如何获取对 Microsoft Intune 的支持](get-support.md)中所述。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884523"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354503"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -48,7 +48,7 @@ Zscaler Private Access (ZPA) 与 Azure Active Directory (Azure AD) 集成以进�
 
 为了证明其身份，VPN 服务器提供了设备必须在提示的情况下必须接受的证书。 要确保自动批准证书，请创建包含由证书颁发机构 (CA) 颁发的 VPN 服务器根证书的受信任证书配置文件。 
 
-#### <a name="export-the-certificate-and-add-the-ca"></a>导出证书并添加 CA
+### <a name="export-the-certificate-and-add-the-ca"></a>导出证书并添加 CA
 
 1. 在 VPN 服务器上打开管理控制台。
 2. 确认 VPN 服务器使用基于证书的身份验证。 

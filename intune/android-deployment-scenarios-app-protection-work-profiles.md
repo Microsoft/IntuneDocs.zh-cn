@@ -14,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5814a4aac064394dbd0c7f5902dc3f62459ad1d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049916"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353809"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune 中 Android 企业设备上的应用程序保护策略和工作配置文件
 
@@ -48,7 +48,7 @@ Intune 应用保护策略 (APP) 是面向用户的数据保护策略。 策略�
 
 3. **使用 Intune App Wrapping Tool 进行包装**：某些客户无需访问源代码即可编译 Android 应用（.APK 文件）。 在没有源代码的情况下，开发人员无法与 Intune SDK 集成。 如果没有 SDK，则开发人员将无法为其应用启用 APP 策略。 开发人员必须修改或重新编码应用才能支持 APP 策略。
 
-    为了提供帮助，Intune 为现有 Android 应用 (APK) 添加了 App Wrapping Tool 工具，并创建了可识别 APP 策略的应用。
+    为了提供帮助，Intune 为现有 Android 应用 (APK) 添加了 App Wrapping Tool  工具，并创建了可识别 APP 策略的应用。
 
     有关此工具的详细信息，请参阅[针对应用保护策略准备业务线应用](apps-prepare-mobile-application-management.md)。
 
@@ -58,7 +58,7 @@ Intune 应用保护策略 (APP) 是面向用户的数据保护策略。 策略�
 
 本部分介绍 APP-WE 和 Android 企业工作配置文件部署方案的重要特征。
 
-#### <a name="app-we"></a>APP-WE
+### <a name="app-we"></a>APP-WE
 
 APP-WE（未注册情况下的应用保护策略）部署定义应用（而不是设备）上的策略。 在此方案中，设备通常不是由 MDM 机构（例如 Intune）注册或管理的。 若要保护应用并访问组织数据，管理员使用 APP 可管理的应用并向这些应用应用数据保护策略。
 
@@ -71,7 +71,7 @@ APP-WE（未注册情况下的应用保护策略）部署定义应用（而不�
 
 APP-WE 方案适用于想在其设备上使用小型组织占用而不想在 MDM 中注册的最终用户。 作为管理员，你仍然需要保护数据。 这些设备不受管理。 所以，常见的 MDM 任务和功能（如 WiFi、设备 VPN 和证书管理）不属于此部署方案。
 
-#### <a name="android-enterprise-work-profiles"></a>Android 企业工作配置文件
+### <a name="android-enterprise-work-profiles"></a>Android 企业工作配置文件
 
 工作配置文件是核心 Android 企业部署方案和唯一面向 BYOD 用例的方案。 工作配置文件是在 Android 操作系统级别创建的单独分区，可由 Intune 进行管理。
 
@@ -95,9 +95,9 @@ Intune APP 和工作配置文件是相互补充的技术，可以一起使用，
 
 ### <a name="suppress-app-policy-for-work-profiles"></a>取消工作配置文件的 APP 策略
 
-你可能需要支持具有多个设备（APP-WE 方案中的未托管设备和使用工作配置文件的托管设备）的单个用户。 
+你可能需要支持具有多个设备（APP-WE 方案中的未托管设备和使用工作配置文件的托管设备）的单个用户。
 
-例如，你要求最终用户在打开工作应用时输入 PIN。 根据设备的不同，PIN 功能由 APP 或工作配置文件处理。 对于 APP-WE 设备，PIN 启动行为由 APP 强制实施。 对于工作配置文件设备，可以使用由操作系统强制实施的设备或工作配置文件 PIN。 若要完成此方案，请配置 APP 设置，以便在向工作配置文件部署应用时不会应用这些 APP 设置。 如果不按此方法对其进行配置，则最终用户会再次在 APP 层收到设备发送的要求输入 PIN 的提示。
+例如，你要求最终用户在打开工作应用时输入 PIN。 根据设备的不同，PIN 功能由 APP 或工作配置文件处理。 对于 APP-WE 设备，PIN 启动行为由 APP 强制实施。 对于工作配置文件设备，可以使用由操作系统强制实施的设备或工作配置文件 PIN。 若要完成此方案，请配置 APP 设置，以便在向工作配置文件部署应用时  不会应用这些 APP 设置。 如果不按此方法对其进行配置，则最终用户会再次在 APP 层收到设备发送的要求输入 PIN 的提示。
 
 ### <a name="control-multi-identity-behavior-in-work-profiles"></a>控制工作配置文件中的多标识行为
 
@@ -111,13 +111,13 @@ Office 应用程序（如 Outlook 和 OneDrive）具有“多标识”行为。 
 
 在多个企业移动方案中，均建议最好使用 Intune APP。
 
-#### <a name="older-devices-running-android-44-51-are-being-used"></a>正在使用运行 Android 4.4 5.1 的较旧设备
+### <a name="older-devices-running-android-44-51-are-being-used"></a>正在使用运行 Android 4.4 5.1 的较旧设备
 
 官方宣称，使用 Google 移动服务的任何 Android 设备 5.0 或更高版本都支持工作配置文件，并且都有资格使用这种方式进行管理。 但是，某些 OEM 的 Android 5.0 和 5.1 设备不支持工作配置文件。
 
 如果使用的是不支持工作配置文件的版本，为了确保对设备上的组织数据使用 DLP，则必须使用 Intune APP 功能。
 
-#### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>MDM、注册和 Google 服务均可用
+### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>MDM、注册和 Google 服务均可用
 
 出于不同的原因，某些客户不需要任何形式的设备管理（包括工作配置文件管理）：
 

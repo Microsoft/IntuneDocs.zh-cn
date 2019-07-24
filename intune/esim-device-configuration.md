@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883256"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354388"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
@@ -79,7 +79,7 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 4. 选择具有激活码的 CSV 文件。
 5. 选择“确定”，保存所做更改  。
 
-#### <a name="csv-file-requirements"></a>CSV 文件要求
+### <a name="csv-file-requirements"></a>CSV 文件要求
 
 使用具有激活码的 csv 文件时，请确保你或你的移动运营商遵循以下要求：
 
@@ -89,7 +89,7 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 - 每个文件应特定于单个移动运营商，并且所有激活码应特定于同一计费套餐。 Intune 将激活码随机分配给目标设备。 无法保证哪个设备会获得特定的激活码。
 - 一个 csv 文件中最多可以导入 1000 个激活码。
 
-#### <a name="csv-file-example"></a>CSV 文件示例
+### <a name="csv-file-example"></a>CSV 文件示例
 
 1. csv 的第一行和第一个单元格是移动运营商 eSIM 激活服务的 URL，称为 SM-DP +（订阅管理器数据准备服务器）。 URL 应为完全限定的域名 (FQDN)，不带任何逗号。
 2. 第二行和所有后续行都是包含两个值的唯一一次性使用的激活码：
@@ -129,7 +129,7 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 
 ## <a name="step-4-monitor-deployment"></a>步骤 4：监视部署
 
-#### <a name="review-the-deployment-status"></a>查看部署状态
+### <a name="review-the-deployment-status"></a>查看部署状态
 
 分配配置文件后，可以监视订阅池的部署状态。
 
@@ -138,7 +138,7 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 3. 选择“设备配置” > “eSIM 手机网络配置文件”   。 随即会列出所有现有的 eSIM 手机网络订阅池。
 4. 选择订阅，然后查看“部署状态”  。
 
-#### <a name="check-the-profile-status"></a>检查配置文件状态
+### <a name="check-the-profile-status"></a>检查配置文件状态
 创建设备配置文件后，Intune 会提供图形图表。 这些图表显示配置文件的状态，例如成功分配给设备，或配置文件是否显示冲突。
 
 1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅   。
@@ -167,7 +167,7 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
     - **手机状态**：由移动运营商提供的状态。 跟进移动运营商进行故障排除。
     - **上次签入时间**：设备上次与 Intune 通信的日期
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>监视实际设备上的 eSIM 配置文件详细信息
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>监视实际设备上的 eSIM 配置文件详细信息
 
 1. 在设备上，打开“设置”>转到“网络和 Internet”   。
 2. 选择“手机网络” > “管理 eSIM 配置文件”  

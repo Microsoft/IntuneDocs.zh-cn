@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 2f3c36e0fac3784828c6a4c0bbf077dea83da369
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045988"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354454"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>通过 Intune 管理和使用 Windows Holographic 和 HoloLens 设备上的不同设备管理功能
 
@@ -105,23 +105,23 @@ Intune 提供可在组织内的不同设备上启用或禁用的设置和功能�
 
 在配置文件中，可以使用 OMA-URI 来自定义某些设置、创建设备限制并配置虚拟专用网络 (VPN) 和 Wi-Fi。
 
-#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[自定义设备设置](custom-settings-windows-holographic.md)
+### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[自定义设备设置](custom-settings-windows-holographic.md)
 
 可通过在 Intune 中创建一个自定义配置文件来配置 OMA-URI（开放移动联盟统一资源标识符）设置。 可使用 OMA-URI 设置来控制 Windows Holographic for Business 设备上的各种功能，例如启用 VPN 或检查 Microsoft 更新上有无更新。
 
-#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[配置展台模式](kiosk-settings-holographic.md)
+### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[配置展台模式](kiosk-settings-holographic.md)
 
 使用 Intune 提供的共享或来宾 PC 功能，可将 Windows Holographic for Business 设备配置为作为展台运行。 这些设备可以运行一个（单个应用展台模式）或多个应用（多个应用展台模式）。
 
-#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[设备限制](device-restrictions-windows-holographic.md)
+### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[设备限制](device-restrictions-windows-holographic.md)
 
 通过设备限制可以控制设备上的各种设置和功能，包括要求提供密码、从 [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps) 安装应用以及启用蓝牙等。 应在 Intune 配置文件中创建这些限制。 此配置文件可应用于运行 Windows Holographic for Business 的多个设备。
 
-#### <a name="configure-vpnvpn-settings-configuremd"></a>[配置 VPN](vpn-settings-configure.md)
+### <a name="configure-vpnvpn-settings-configuremd"></a>[配置 VPN](vpn-settings-configure.md)
 
 虚拟专用网络 (VPN) 可让你的用户安全远程访问你的公司网络。 在 Intune 中可以创建 VPN 配置文件并使其包含针对运行 Windows Holographic for Business 的设备的特定设置。 例如可以创建一个 VPN 配置文件，让所有 Windows Holographic for Business 设备均使用 Citrix VPN 作为连接类型。
 
-#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[配置 Wi-Fi](wi-fi-settings-configure.md)
+### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[配置 Wi-Fi](wi-fi-settings-configure.md)
 
 还可以在 Intune 中创建 Wi-Fi 配置文件，为 Windows Holographic for Business 设备分配无线网络设置。 分配 Wi-Fi 配置文件后，最终用户无需进行任何网络配置即可获得企业网络访问权限。 例如，可以创建一个仅供 Windows Holographic for Business 设备使用的 Wi-Fi 网络。
 
