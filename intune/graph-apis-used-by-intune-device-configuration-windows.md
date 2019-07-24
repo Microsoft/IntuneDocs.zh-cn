@@ -1,7 +1,7 @@
 ---
 title: 用于在 Microsoft Intune 中配置设备的图形 Api-Azure |Microsoft Docs
 titleSuffix: ''
-description: 在 Windows 10 设备上查看具有匹配的 Windows CSP 和偏移 URI 的所有图形 API 实体的列表, 以及在 Microsoft Intune 中配置设备时使用的更新版本。 查看适用于共享 Pc、endpoint protection、Windows Defender 高级威胁防护、标识保护、Windows 10 团队、展台和企业 Windows 更新的匹配 API 和 CSP。
+description: 在 Windows 10 设备上查看具有匹配的 Windows CSP 和偏移 URI 的所有图形 API 实体的列表, 以及在 Microsoft Intune 中配置设备时使用的更新版本。 请参阅适用于共享电脑的匹配 API 和 CSP、endpoint protection、Microsoft Defender 高级威胁防护、标识保护、Windows 10 团队、展台和适用于企业的 Windows 更新。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3732a4539c13ad05ae8c95621246429b7f38987e
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 9db6be9c61455056f7ad32a9dba3fa6be9f6f5c3
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354414"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427268"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>在 Intune 中使用图形 Api 和匹配的 Windows 10 Csp
 
