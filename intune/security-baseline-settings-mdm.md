@@ -5,7 +5,7 @@ description: 用于管理 Windows 10 的 Intune 安全基线设置
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882301"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491909"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>适用于 Intune 的 MDM 安全基线设置  
 
@@ -1773,7 +1773,12 @@ ms.locfileid: "67882301"
   **默认值**：是
 
 - **配置 Windows Hello 企业版**   
-  Windows Hello 企业版是一种取代密码、智能卡和虚拟智能卡登录 Windows 的替代方法。 如果启用或未配置此策略设置，设备将预配 Windows Hello 企业版。 如果禁用此策略设置，设备不会为任何用户预配 Windows Hello 企业版。
+    Windows Hello 企业版是一种取代密码、智能卡和虚拟智能卡登录 Windows 的替代方法。  
+
+  - 如果设置为 *"是"* , 则会启用此策略, 并且设备将设置 Windows Hello 企业版。  
+  - 当设置为 "*未配置*" 时, 基线不会影响设备的策略设置。 这意味着, 如果在设备上禁用 Windows Hello 企业版, 则该设备将保持禁用状态。 如果启用, 它将保持启用状态。 
+
+  不能通过此基线禁用 Windows Hello 企业版。 你可以在配置[windows 注册](windows-hello.md)时禁用 Windows Hello 企业版, 或作为[标识保护](identity-protection-configure.md)的设备配置文件的一部分。  
 
   **默认值**：是
 

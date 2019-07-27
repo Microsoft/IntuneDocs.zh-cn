@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: f9b02deb529bd6a9bca882fecb3d55d9db513191
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341340"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427169"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune 开发过程中的功能 - 2019 年 7 月
 
@@ -58,10 +58,6 @@ ms.locfileid: "68341340"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>应用管理
 
-
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>针对用户和组的自定义通知    <!-- 16766574   -->
-你将很快能够向通过 Intune 管理的 iOS 和 Android 设备上的用户发送来自公司门户应用程序的自定义即席推送通知。 这些自定义通知不依赖于特定的 Intune 功能, 可用于所需的任何用途, 包括要发送给部分或全部员工的一般通知。  
-
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>为组织帐户配置应用通知内容 <!-- 2576686 -->
 Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制组织帐户的应用通知内容。 此功能需要应用程序的支持, 可能无法用于所有启用应用的应用程序。 有关 APP 的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)。
 
@@ -70,7 +66,6 @@ Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制�
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>设备配置
-
 
 ### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>支持适用于 iOS 的 IKEv2 VPN 配置文件 <!-- 1943438 -->
 可以使用 IKEv2 协议为 iOS 本机 VPN 客户端创建 VPN 配置文件。 IKEv2 是以下位置中的新连接类型：  “设备配置” >   “配置文件” > “创建配置文件”   > 平台为“iOS”  >配置文件类型为“VPN”  >“设置”  。
@@ -81,39 +76,18 @@ Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制�
 
 适用于：iOS
 
-### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>在创建 Windows 10 设备配置配置文件时使用“适用性规则” <!-- 2549910 -->
-创建 Windows 10 设备配置配置文件（“设备配置” > “配置文件” > “创建配置文件” > 适用于平台的“Windows 10”）     。 你将能够创建“适用性规则”，使配置文件仅应用于特定版本  。 例如，创建一个启用某些 BitLocker 设置的配置文件。 添加配置文件后，请使用适用性规则，使配置文件仅适用于运行 Windows 10 企业版的设备。
-
-适用于： 
-- Windows 10 及更高版本
-
-### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender 防火墙的高级设置   <!--  1311949     -->
-作为公共预览版，你很快就可以使用 Intune 在客户端上管理 Windows Defender 的自定义防火墙规则。  
-
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>为 Android 企业创建 OEMConfig 配置文件时的新配置设计器 <!-- 3712769  -->
-在 Intune 中, 可以创建一个设备配置文件, 该配置文件使用 OEMConfig 应用 (设备配置 > 配置文件 > 创建配置文件 > Android enterprise for platform > OEMConfig 用于配置文件类型)。 执行此操作时, 将打开一个 JSON 编辑器, 其中包含要更改的模板和值。 此更新包括一个配置设计器, 它具有改进的用户体验, 可显示应用程序中嵌入的详细信息, 包括标题、说明等。 JSON 编辑器仍可用, 并显示您在配置设计器中所做的任何更改。
-
-若要查看当前设置, 请参阅[使用并使用 OEMConfig 管理 Android 企业设备](android-oem-configuration-overview.md)。
-
-适用对象：Android Enterprise
-
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>设备管理
 
-### <a name="improve-device-location---3855417---"></a>改善设备位置<!-- 3855417 -->
-你将能够使用**定位设备**操作来放大设备的确切坐标。 有关查找丢失的 iOS 设备的详细信息, 请参阅[查找丢失的 ios 设备](device-locate.md)。
-
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>将自动设备清理时间限制为减少到30天 <!--4231059  -->
 在上次登录后, 你将能够将自动设备清理时间限制设置为短于30天 (而非当前限制为90天)。 为此, 请参阅**Intune** > **设备** > **设置** > **设备清理规则**。
-
 
 <!-- ***********************************************-->
 ## <a name="security"></a>安全
 
 ### <a name="import-and-export-security-baselines------3408610------------"></a>导入和导出安全基线    <!--3408610          -->  
 我们正在添加导出和导入安全基线的功能, 以便你可以与你进行自定义并在 Intune 环境之间共享。
-
 
 
 <!-- ***********************************************-->

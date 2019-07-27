@@ -18,16 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e43fccabd142527d9e17317d56fa029844fa270d
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329460"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467317"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>使用 Android 工作配置文件注册设备
 
-注册个人 Android 设备，以访问公司电子邮件、应用和其他工作数据。 在注册过程中，将设置 Android 工作配置文件。 此配置文件将设备上的个人数据与工作数据分开。 公司支持人员只管理其中包含工作文件和数据的工作配置文件。 公司支持人员无法管理设备上的个人数据。 找到有关[创建工作配置文件时会发生的情况](what-happens-when-you-create-a-work-profile-android.md)的详细信息。  
+注册个人 Android 设备，以访问公司电子邮件、应用和其他工作数据。 在注册过程中，将设置 Android 工作配置文件。 此配置文件将设备上的个人数据与工作数据分开。 公司支持人员只管理其中包含工作文件和数据的工作配置文件。 公司支持人员无法管理设备上的个人数据。
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+找到有关[创建工作配置文件时会发生的情况](what-happens-when-you-create-a-work-profile-android.md)的详细信息。
 
 ## <a name="create-work-profile-and-enroll-device"></a>创建工作配置文件和注册设备
 

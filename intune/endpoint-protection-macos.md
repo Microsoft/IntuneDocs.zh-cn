@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d110013c10f0330c0edbbf230c508009fb47b2a6
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341315"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467422"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 MacOS 终结点保护设置  
 
@@ -92,36 +92,24 @@ ms.locfileid: "68341315"
   - **恢复密钥类型**  
     为设备创建*个人密钥*恢复密钥。 为个人密钥配置以下设置。  
 
-     - **个人恢复密钥的位置**-向用户指定一条简短消息, 说明他们如何检索其个人恢复密钥。 启用 FileVault 时, 此文本将插入用户看到的消息中。  
+    - **个人恢复密钥的位置**-向用户指定一条简短消息, 说明他们可在何处检索个人恢复密钥。 如果忘记了密码, 则系统会在提示输入其个人恢复密钥时, 将此文本插入用户在其登录屏幕上看到的消息。  
       
-     - **个人恢复密钥轮换**-指定设备的个人恢复密钥将旋转的频率。 您可以选择 "**未配置**" 或 " **1**到**12**个月" 的默认值。  
+    - **个人恢复密钥轮换**-指定设备的个人恢复密钥将旋转的频率。 您可以选择 "**未配置**" 或 " **1**到**12**个月" 的默认值。  
 
-  - **推迟 FileVault, 直到注销** 
-    > [!NOTE]
-    > 只有在7月发布完成了几天的推出后, 才支持 FileVault。 在推出完成之前, 如果配置了 FileVault, 则必须将*FileVault*设置为 "注销", 才能**启用**。   
-
-    在用户注销之前, FileVault 将不会启用。在注销或下一次登录时, 系统将提示本地用户或移动帐户用户启用 FileVault。  
+  - **注销时禁用提示**  
+    禁止提示用户在注销时启用 FileVault。如果设置为 "禁用", 则会禁用注销时的提示, 而是在用户登录时提示用户。  
     - 未配置   
-    - **启用**  
-    
+    - **禁用**  
+
     **默认值**：未配置  
 
+  - **允许绕过的次数**  
+  设置用户在需要 FileVault 之前允许用户登录所需的提示的次数。  
 
-
-    - **注销时禁用提示**  
-      禁止提示用户在注销时启用 FileVault。  
-      - 未配置   
-      - **启用**  
-
-      **默认值**：未配置  
-
-    - **允许绕过的次数**  
-      设置用户在需要 FileVault 之前允许用户登录所需的提示的次数。  
-
-      - **未配置**-在允许下次登录之前需要对设备进行加密。  
-      -  **1**到**10** -允许用户在需要对设备进行加密之前忽略1到10次的提示。  
-      - **无限制, 始终提示**-系统会提示用户启用 FileVault, 但绝不会要求加密。  
+    - **未配置**-在允许下次登录之前需要对设备进行加密。  
+    - **1**到**10** -允许用户在需要对设备进行加密之前忽略1到10次的提示。  
+    - **无限制, 始终提示**-系统会提示用户启用 FileVault, 但绝不会要求加密。  
  
-      **默认值**：未配置  
+    **默认值**：未配置  
 
 
