@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ea3ae66a32353b4aa6c782b13e6a587ee1f4464e
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354465"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491818"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune On-Premises Exchange Connector 疑难解答
 
@@ -47,9 +47,9 @@ ms.locfileid: "68354465"
 
 
 ## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>使用 Powershell 获取有关 Exchange Connector 问题的详细数据
-- 若要获取某个邮箱的所有移动设备的列表，请使用 Get-ActiveSyncDeviceStatistics -mailbox mbx
-- 若要获取某个邮箱的 SMTP 地址的列表，请使用 Get-Mailbox -Identity user | select emailaddresses | fl
-- 若要获取有关设备的访问状态的详细信息，请使用 Get-CASMailbox <upn> | fl
+- 若要获取邮箱的所有移动设备的列表, 请使用`Get-ActiveSyncDeviceStatistics -mailbox mbx`
+- 若要获取邮箱的 SMTP 地址列表, 请使用`Get-Mailbox -Identity user | select emailaddresses | fl`
+- 若要获取有关设备的访问状态的详细信息，请使用 `Get-CASMailbox <upn> | fl`
 
 ## <a name="next-steps"></a>后续步骤
 如果此信息没有帮助，还可以[获取对 Microsoft Intune 的支持](get-support.md)。

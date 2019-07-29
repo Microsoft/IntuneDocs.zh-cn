@@ -4,7 +4,7 @@ description: Microsoft 365 企业版包含 Microsoft Intune。 了解 Intune 如
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884272"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427314"
 ---
 # <a name="what-is-device-management"></a>什么是设备管理？ 
 
@@ -59,7 +59,7 @@ Intune 包含在 Microsoft 365 中，并与 Azure Active Directory (Azure AD) �
 - Windows Defender 包含许多安全功能，可帮助保护 Windows 10 设备  。 例如，结合使用 Intune 和 Windows Defender，可以： 
 
   - 启用 [Windows Defender SmartScreen ](https://docs.microsoft.com/intune/endpoint-protection-windows-10) 以查找移动设备上的文件和应用中的可疑活动。 
-  - 使用 [Windows Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)来帮助阻止移动设备上的安全漏洞。 并且，通过阻止用户访问公司资源来帮助限制安全漏洞的影响。
+  - 使用 [Microsoft Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) 来帮助阻止移动设备上的安全漏洞。 并且，通过阻止用户访问公司资源来帮助限制安全漏洞的影响。
 
 - 条件访问  是与 Intune 完美集成的 Azure Active Directory 功能。 使用[条件访问](https://docs.microsoft.com/intune/conditional-access)，可以确保只有合规设备，才能访问电子邮件、SharePoint 和其他应用。 
 
@@ -73,11 +73,11 @@ Intune 包含在 Microsoft 365 中，并与 Azure Active Directory (Azure AD) �
 
 设置 Intune 时，还可以选择仅在 Azure 门户中管理设备，或结合使用 Intune 和 Microsoft 365 来管理设备。 [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal)（在 Azure 门户中将移动设备管理迁移到 Intune）是一个 Microsoft IT 案例研究。 在本案例研究中，了解 Microsoft IT 如何选择新式设备管理方法以及相关经验。
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>使用“设备管理”仪表板简化 IT 任务
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>使用“设备管理”管理中心简化 IT 任务
 
-[设备管理仪表板](https://devicemanagement.portal.azure.com/)是一站式服务，可管理和完成移动设备的任务。 此仪表板包括用于设备管理（包括 Intune 和 Azure Active Directory）和客户端应用管理的服务。 
+[设备管理管理中心](https://devicemanagement.portal.azure.com/)是一站式服务，可管理和完成移动设备的任务。 此工作区包括用于设备管理（包括 Intune 和 Azure Active Directory）和客户端应用管理的服务。 
 
-在“设备管理”仪表板中，你可以：
+在 "设备管理" 管理中心, 你可以:
 
 - [注册设备](https://docs.microsoft.com/intune/device-enrollment)
 - [设置设备合规性](https://docs.microsoft.com/intune/device-compliance-get-started)

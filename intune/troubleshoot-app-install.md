@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebd8f15a8f8633043f64cb4e004aafbb3c399042
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: b93fc8bc1bddbae8b1b0bde4f8b8815e8052fb51
+ms.sourcegitcommit: 2fa20338bd0236884e1f3fde624cf70da89fd254
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648896"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68507694"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
@@ -156,6 +156,7 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 |    0x80073CF3    |    包未通过更新、依赖关系或冲突验证。 可能的原因：<ul><li> 传入包与已安装的包冲突。</li><li> 找不到指定的包依赖关系。</li><li> 包不支持正确的处理器体系结构。</li></ul> 有关信息，请查看 AppXDeployment-Server  事件日志。 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
 |    0x80073CFB    |    已经安装了提供的包，阻止重新安装此包。 如果正在安装的包与已安装的包并不完全相同，则可能会收到此错误。 确认数字签名也是包的一部分。 对包进行重新构建或者重新签名时，该包与以前安装的包在位方面不再完全相同。 用于修复此错误的两个可能的选项如下所示：<ul><li> 递增应用的版本号，然后对包进行重新构建并重新签名。</li><li> 在安装新包之前，请删除系统上每个用户的旧包。</li></ul> 有关更多信息，请参阅[对 Windows 应用商店应用的打包、部署和查询进行故障排除](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)。    |
 |    0x87D1041C    |    应用程序安装成功，但未检测到应用程序。 应用已通过 Intune 成功部署，随后可卸载。 卸载应用的原因包括：<ul><li> 最终用户已卸载此应用。</li><li> 包中的标识信息与设备报告不良应用的信息不匹配。</li><li>对于自更新的 MSI，产品版本在 Intune 之外更新后与应用的信息不匹配。</li></ul> 指示用户从公司门户重新安装应用。 注意，在设备下次签入时，将自动重新安装所需应用。    |
+|    0x8000FFFF    |    安装过程中发生意外错误。 有关其他信息, 请查看安装日志。    |
 
 ## <a name="troubleshooting-apps-from-the-microsoft-store"></a>对 Microsoft 应用商店中的应用进行故障排除
 

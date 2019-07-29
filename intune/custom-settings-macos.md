@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 06/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04671df820fee96d4090b13f6fa8f6c4f983a1ac
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: e0309c5aa73dc8c03cabd69878d55ac51aa6d4f3
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530226"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375131"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用适用于 macOS 设备的自定义设置
 
@@ -31,13 +31,17 @@ ms.locfileid: "67530226"
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple 配置文件管理器](https://support.apple.com/profile-manager)
 
-这些工具可用于将设置导出到配置文件。 在 Intune 中，导入此文件，然后将该配置文件分配给 macOS 用户和设备。 分配后便会分发设置，并在组织中为 macOS 创建基线或标准。
+这些工具可用于将设置导出到配置文件。 在 Intune 中，导入此文件，然后将该配置文件分配给 macOS 用户和设备。 分配后, 就会分配设置。 它们还为组织中的 macOS 创建基准或标准。
 
-本文介绍如何创建适用于 macOS 设备的自定义配置文件。 文中还对如何使用 Apple Configurator 和 Apple 配置文件管理器提供了一些指导。
+本文提供了有关使用 Apple 配置器和 Apple 配置文件管理器的一些指导, 并介绍了可配置的属性。
 
 ## <a name="before-you-begin"></a>在开始之前
 
-- 使用 Apple Configurator 创建配置文件时，请确保导出的设置与正在使用的设备上的 macOS 版本兼容  。 有关如何解决不兼容设置的信息，请在 [Apple 开发人员](https://developer.apple.com/)网站上搜索“配置文件参考”和“移动设备管理协议参考”   。
+[创建配置文件](device-profile-create.md)。
+
+## <a name="what-you-need-to-know"></a>须知内容
+
+- 使用 Apple 配置器创建配置文件时，请确保导出的设置与设备上的 macOS 版本兼容  。 有关如何解决不兼容设置的信息，请在 [Apple 开发人员](https://developer.apple.com/)网站上搜索“配置文件参考”和“移动设备管理协议参考”   。
 
 - 使用 Apple 配置文件管理器时，请务必  ：
 
@@ -47,25 +51,19 @@ ms.locfileid: "67530226"
 
     下载并保存此文件。 需在 Intune 配置文件中输入此文件。 
 
-  - 请确保从 Apple 配置文件管理器导出的设置与正在使用的设备上的 macOS 版本兼容。 有关如何解决不兼容设置的信息，请在 [Apple 开发人员](https://developer.apple.com/)网站上搜索“配置文件参考”和“移动设备管理协议参考”   。
+  - 请确保从 Apple 配置文件管理器导出的设置与设备上的 macOS 版本兼容。 有关如何解决不兼容设置的信息，请在 [Apple 开发人员](https://developer.apple.com/)网站上搜索“配置文件参考”和“移动设备管理协议参考”   。
 
-## <a name="create-the-profile"></a>创建配置文件
+## <a name="custom-configuration-profile-settings"></a>自定义配置文件设置
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
-3. 输入以下设置：
+- **自定义配置文件名称**：输入策略的名称。 此名称将在设备上和 Intune 状态中显示。
+- **配置文件**：浏览到使用 Apple Configurator 或 Apple 配置文件管理器创建的配置文件。 已导入的文件显示在“文件内容”区域中  。
 
-    - **名称**：输入配置文件的名称，例如 `macos custom profile`。
-    - **说明**：输入配置文件的说明。
-    - **平台**：选择“macOS”  。
-    - **配置文件类型**：选择“自定义”  。
+  你还可以将设备令牌添加到`.mobileconfig`文件。 设备令牌用于添加特定于设备的信息。 例如，若要显示序列号，请输入 `{{serialnumber}}`。 在设备上, 文本显示类似`123456789ABC`于, 这对于每个设备都是唯一的。 输入变量时，请务必使用大括号 `{{ }}`。 [应用配置令牌](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可用变量的列表。 还可以使用 `deviceid` 或任何其他特定于设备的值。
 
-4. 在“自定义配置”中，请输入以下设置  ：
+  > [!NOTE]
+  > 变量不在 UI 中进行验证, 且区分大小写。 因此，可能会看到使用不正确输入保存的配置文件。 例如，如果输入 `{{DeviceID}}` 而不是 `{{deviceid}}`，则显示文本字符串而不是设备的唯一 ID。 请确保输入正确的信息。
 
-    - **自定义配置文件名称**：输入策略的名称。 此名称将在设备上和 Intune 状态中显示。
-    - **配置文件**：浏览到使用 Apple Configurator 或 Apple 配置文件管理器创建的配置文件。 已导入的文件显示在“文件内容”区域中  。
-
-5. 选择“确定” > “创建”，以创建 Intune 配置文件   。 完成后，配置文件将显示在“设备配置 - 配置文件”列表中  。
+选择“确定”   > “创建”  以保存所做的更改。 此时，配置文件创建完成，并出现在配置文件列表中。
 
 ## <a name="next-steps"></a>后续步骤
 

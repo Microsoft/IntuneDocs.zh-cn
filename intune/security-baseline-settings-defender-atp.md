@@ -5,7 +5,7 @@ description: Intune 支持用于管理 Microsoft Defender 高级威胁防护的�
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354434"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491917"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
@@ -29,7 +29,7 @@ ms.locfileid: "68354434"
 
 当环境满足使用 [Microsoft Defender 高级威胁防护](advanced-threat-protection.md#prerequisites)的先决条件时，Microsoft Defender 高级威胁防护基线才可用。 
 
-此基线针对物理设备进行了优化, 目前不建议在虚拟机 (Vm) 或 VDI 终结点上使用。 某些基线设置可能会影响虚拟化环境中的远程交互会话。 有关详细信息, 请参阅 Windows 文档中[的将符合性提高到 Microsoft DEFENDER ATP 安全基线](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)。
+此基线针对物理设备进行了优化, 目前不建议在虚拟机 (Vm) 或 VDI 终结点上使用。 某些基线设置可能会影响虚拟化环境中的远程交互式会话。 有关详细信息，请参阅 Windows 文档中的[提高 Microsoft Defender ATP 安全基线的符合性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)。
 
 
 > [!NOTE]  
@@ -292,7 +292,7 @@ ms.locfileid: "68354434"
 
   **默认值**：审核模式
 
-## <a name="web-network-protection"></a>Web 网络保护  
+## <a name="web--network-protection"></a>Web 和网络保护  
 
 - **网络保护类型**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 此策略可用于在 Windows Defender 攻击防护中启用或禁用网络保护。 网络保护是 Windows Defender 攻击防护的一项功能，可阻止员工使用任何应用访问 Internet 上的钓鱼邮件、攻击宿主站点和恶意内容。 这包括阻止第三方浏览器连接到危险站点。  
@@ -600,6 +600,13 @@ ms.locfileid: "68354434"
 
 - **配置 Windows Hello 企业版** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello 企业版是一种取代密码、智能卡和虚拟智能卡登录 Windows 的替代方法。  
+
+  - 如果设置为 *"是"* , 则会启用此策略, 并且设备将设置 Windows Hello 企业版。  
+  - 当设置为 "*未配置*" 时, 基线不会影响设备的策略设置。 这意味着, 如果在设备上禁用 Windows Hello 企业版, 则该设备将保持禁用状态。 如果启用, 它将保持启用状态。 
+
+  不能通过此基线禁用 Windows Hello 企业版。 你可以在配置[windows 注册](windows-hello.md)时禁用 Windows Hello 企业版, 或作为[标识保护](identity-protection-configure.md)的设备配置文件的一部分。  
+
+Windows Hello 企业版是一种取代密码、智能卡和虚拟智能卡登录 Windows 的替代方法。  
 
   如果启用或未配置此策略设置，设备将预配 Windows Hello 企业版。 如果禁用此策略设置，设备不会为任何用户预配 Windows Hello 企业版。
 
