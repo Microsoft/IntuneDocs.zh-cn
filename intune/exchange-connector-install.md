@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883289"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427321"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>在 Microsoft Intune 中设置 Intune 本地 Exchange 连接器
 本文中的信息有助于安装和监视 Intune 的 Exchange Active Sync 本地连接器。  结合使用 Intune 本地 Exchange 连接器与[条件访问策略，以允许或阻止对 Exchange 本地邮箱的访问](conditional-access-exchange-create.md)。 
@@ -152,8 +152,22 @@ Intune 支持每个订阅有多个本地 Exchange 连接器。 对于有多个 E
 为完成故障转移，在连接器使用指定 CAS 创建与 Exchange 的成功连接后，连接器将发现该 Exchange 组织的其他 CAS。 如果有其他可用的 CAS，可使连接器故障转移到其他 CAS，直到主 CAS 可用，请了解这一点。 默认情况下，启用其他 CAS 的发现。 可以使用以下过程关闭故障转移：  
 1. 在安装 Exchange 连接器的服务器上，请转到 %ProgramData  %\Microsoft\Windows Intune Exchange Connector。 
 2. 使用文本编辑器打开“OnPremisesExchangeConnectorServiceConfiguration.xml”  。
-3. 将“&lt;IsCasFailoverEnabled&gt;true  &lt;/IsCasFailoverEnabled&gt;”更改为“&lt;IsCasFailoverEnabled&gt;false  &lt;/IsCasFailoverEnabled&gt;”，禁用此功能。    
+3. 将“&lt;IsCasFailoverEnabled&gt;true  &lt;/IsCasFailoverEnabled&gt;”更改为“&lt;IsCasFailoverEnabled&gt;false  &lt;/IsCasFailoverEnabled&gt;”，禁用此功能。  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Exchange 连接器的可选性能优化  
+
+使用 Exchange ActiveSync 支持 5,000 台或更多设备时，可以配置可选设置以提高连接器的性能。 通过使 Exchange 能够使用 PowerShell 命令运行空间的多个实例，可以实现更高的性能。 
+
+在进行此更改之前，请确保用于运行 Exchange 连接器的帐户不用于其他 Exchange 管理目的。 这是因为 Exchange 每个帐户的运行空间限制为 18 个，其中大部分运行空间都将被连接器使用。 
+
+此性能更改不适用于在较旧或性能低下的硬件上运行的连接器。  
+
+1. 在安装了连接器的服务器上，打开连接器安装目录。  默认位置是 C:\ProgramData\Microsoft\Windows Intune Exchange Connector  。 
+2. 编辑文件 OnPremisesExchangeConnectorServiceConfiguration.xml  。
+3. 找到“EnableParallelCommandSupport”并将值设置为“true”   ：  
+     
+   \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+4. 保存文件，然后重启 Microsoft Intune Exchange 连接器服务。
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>重新安装本地 Exchange 连接器
 可能需要重新安装 Exchange 连接器。 由于支持单个连接器连接到每个 Exchange 组织，因此如果为组织安装第二个连接器，则安装的新连接器将替换原始连接器。

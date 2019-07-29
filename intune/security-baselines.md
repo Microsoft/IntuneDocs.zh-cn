@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
-ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
+ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67851483"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353590"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>使用安全基线在 Intune 中配置 Windows 10 设备
 
@@ -73,6 +73,9 @@ ms.locfileid: "67851483"
 - **Microsoft Defender ATP 基线**  
   （若要使用此基线，环境必须满足使用 [Microsoft Defender 高级威胁防护](advanced-threat-protection.md#prerequisites)的先决条件）  。
   - [预览版：Microsoft Defender ATP 基线](security-baseline-settings-defender-atp.md)  
+
+  > [!NOTE]
+  > Microsoft Defender ATP 安全基线已针对物理设备进行了优化，目前不建议在虚拟机 (VM) 或 VDI 终结点上使用。 某些基线设置可能会影响虚拟化环境中的远程交互式会话。  有关详细信息，请参阅 Windows 文档中的 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)（提高 Microsoft Defender ATP 安全基线的符合性）。
 
 可以继续使用和编辑之前基于预览版模板创建的配置文件，无需考虑该预览模板是否可用于创建新配置文件。 
 
@@ -177,19 +180,19 @@ Intune 托管设备上的安全基线类似于使用 Configuration Manager 的�
 
 ## <a name="q--a"></a>问与答
 
-#### <a name="why-these-settings"></a>为什么要使用这些设置？
+### <a name="why-these-settings"></a>为什么要使用这些设置？
 
 Microsoft 安全团队多年来一直与 Windows 开发人员以及安全社区直接合作，共同创建这些建议，经验丰富。 此基线中的设置被视为最相关的安全相关配置选项。 在 Windows 的每个新内部版本中，团队都会根据新发布的功能调整自己的建议。
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>面向组策略和 Intune 的 Windows 安全基线建议是否有区别Intune？
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>面向组策略和 Intune 的 Windows 安全基线建议是否有区别Intune？
 
 为每个基线选择并整理设置的 Microsoft 安全团队不变。 Intune 包含 Intune 安全基线中的所有相关设置。 组策略基线中有一些本地域控制器专用设置。 这些设置被排除在 Intune 建议范围之外。 其他所有设置都是相同的。
 
-#### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune 安全基线是否符合 CIS 或 NSIT？
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune 安全基线是否符合 CIS 或 NSIT？
 
 严格来讲不符合。 Microsoft 安全团队咨询 CIS 等组织来汇编建议。 不过，“符合 CIS”和 Microsoft 基线不存在一对一映射关系。
 
-#### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft 安全基线有哪些认证？ 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft 安全基线有哪些认证？ 
 
 - Microsoft 多年来一直在发布面向组策略 (GPO) 和[安全性符合性工具包](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10)的安全基线。 许多组织都使用这些基线。 这些基线中的建议是 Microsoft 安全团队与企业客户及外部机构交流得出，包括美国国防部 (DoD)、美国国家标准技术研究所 (NIST) 等。 我们与这些组织共享建议和基线。 这些组织也有他们自己的建议，这些建议与 Microsoft 的建议非常相似。 随着移动设备管理 (MDM) 继续向云发展，Microsoft 为这些组策略基线创建了等效的 MDM 建议。 这些附加基线内置于 Microsoft Intune，其中包括关于遵循（或不遵循）基线的用户、组和设备的符合性报告。
 
@@ -202,4 +205,5 @@ Microsoft 安全团队多年来一直与 Windows 开发人员以及安全社区�
   - [MDM 安全基线](security-baseline-settings-mdm.md)  
   - [Microsoft Defender ATP 基线](security-baseline-settings-defender-atp.md)  
 
-- 检查状态并监视[基线和配置文件](security-baselines-monitor.md)。
+- 检查状态并监视[基线和配置文件](security-baselines-monitor.md)
+

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 069658bdd231be96d7f9fbe23de1b4e38fdc5a9e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: af27a9b07434346a5425d0539759cb90ebf1ee6f
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885144"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427085"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性  
 
@@ -52,6 +52,17 @@ Microsoft Defender ATP 可以解决类似这种情况的安全事件。 Microsof
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>在 Intune 中启用 Microsoft Defender ATP
 
+将新的应用程序集成到 Intune Mobile Threat Defense 并启用连接时，Intune 会在 Azure Active Directory 中创建经典条件访问策略。 集成的每个 MTD 应用（例如，[Defender ATP](advanced-threat-protection.md) 或其他 [MTD 合作伙伴](mobile-threat-defense.md#mobile-threat-defense-partners)）都会创建新的经典条件访问策略。  可以忽略这些策略，但不能对其进行编辑、删除或禁用。
+
+MTD 应用的经典条件访问策略： 
+
+- Intune MTD 使用该策略来要求设备在 Azure AD 中注册，以使其具有设备 ID。 此 ID 是必需的，以便设备可以成功向 Intune 报告其状态。  
+- 此策略与可能创建的用于帮助管理 MTD 的条件访问策略不同。
+- 默认情况下，该策略与用于评估的其他条件访问策略不交互。  
+
+要查看经典条件访问策略，请转到 [Azure](https://portal.azure.com/#home) 中的“Azure Active Directory” > “条件访问” > “经典策略”    。
+
+### <a name="to-enable-defender-atp"></a>启用 Defender ATP
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“设备符合性”   > “Microsoft Defender ATP”  ，然后在“连接器设置”  下，选择“打开 Microsoft Defender 安全中心”  。
 

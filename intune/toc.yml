@@ -5,6 +5,7 @@
   items:
     - name: 什么是 Intune？
       href: what-is-intune.md
+      displayName: ems; emm; azure ad; active directory; ad
     - name: Intune 可以为公司带来什么好处？
       href: get-started-evaluation.md
     - name: 新增功能
@@ -18,6 +19,7 @@
   items:
     - name: 免费试用 Intune
       href: free-trial-sign-up.md
+      displayName: 'tenant; trial; get started, start; help'
     - name: 创建用户
       href: quickstart-create-user.md
     - name: 创建组
@@ -56,6 +58,7 @@
   items:
     - name: 什么是设备管理？
       href: what-is-device-management.md
+      displayName: teamviewer
     - name: 什么是 Intune for Education？
       href: introduction-intune-education.md
     - name: 体系结构概况
@@ -70,6 +73,7 @@
       href: byod-technology-decisions.md
     - name: 应用保护策略和工作配置文件 (Android)
       href: android-deployment-scenarios-app-protection-work-profiles.md
+      displayName: app-we; without; without enrollment
     - name: 管理操作系统版本
       href: manage-os-versions.md
     - name: 管理 Windows Holographic
@@ -134,6 +138,7 @@
       items:
         - name: Intune 设置步骤
           href: setup-steps.md
+          displayName: fasttrack
         - name: 支持的配置
           href: supported-devices-browsers.md
           items:
@@ -188,6 +193,7 @@
               displayName: COD
             - name: 多重身份验证
               href: multi-factor-authentication.md
+              displayName: mfa; multifactor
             - name: 设备注册管理器
               href: device-enrollment-manager-enroll.md
             - name: 将设备映射到组
@@ -214,20 +220,24 @@
           items:
             - name: 设置 Android 注册
               href: android-enroll.md
+              displayName: wpj
             - name: 将 Intune 连接到 Android Enterprise
               href: connect-intune-android-enterprise.md
             - name: Android Enterprise 工作配置文件注册
               href: android-work-profile-enroll.md
             - name: Android Enterprise 专用设备注册
               href: android-kiosk-enroll.md
+              displayName: gms
             - name: Android Enterprise 完全托管设备注册
               href: android-fully-managed-enroll.md
+              displayName: gms
             - name: 注册 Android Enterprise 专用设备或完全托管设备
               href: android-dedicated-devices-fully-managed-enroll.md
             - name: 管理 Android Enterprise 工作配置文件设备
               href: android-enterprise-overview.md
             - name: Samsung Knox 移动注册
               href: android-samsung-knox-mobile-enroll.md
+              displayName: kda; kme
         - name: 设置 iOS 注册
           href: ios-enroll.md
           items:
@@ -246,9 +256,11 @@
           href: enrollment-report-company-portal-abandon.md
         - name: 设备注册疑难解答
           href: troubleshoot-device-enrollment-in-intune.md
+          displayName: sso
     - name: 管理设备
-      href: device-management.md
       items:
+        - name: 设备管理概述
+          href: device-management.md
         - name: 设备管理功能
           href: device-management-capabilities.md
         - name: 绕过激活锁定
@@ -332,6 +344,7 @@
               href: vpn-setting-configure-per-app.md
         - name: 添加无线 Wi-fi 网络
           href: wi-fi-settings-configure.md
+          displayName: wifi
           items:
             - name: 具有预共享密钥的 Wi-Fi
               href: wi-fi-profile-shared-key.md
@@ -343,6 +356,7 @@
           href: shared-user-device-settings.md
         - name: Zebra 设备上的移动性扩展
           href: android-zebra-mx-overview.md
+          displayName: mx
           items:
             - name: StageNow 日志及常见问题
               href: android-zebra-mx-logs-troubleshoot.md
@@ -362,6 +376,7 @@
       items:
         - name: 设备保护概述
           href: device-protect.md
+          displayName: compliant; noncompliant; mfa
         - name: 隐私和个人数据
           href: privacy-personal-data.md
           items:
@@ -389,8 +404,10 @@
         - name: 加密设备
           href: encrypt-devices.md
         - name: 条件性访问
-          href: conditional-access.md
           items:
+            - name: 条件访问概述
+              href: conditional-access.md
+              displayName: ca
             - name: 条件性访问的常见使用方式
               href: conditional-access-intune-common-ways-use.md
             - name: 安装 Exchange 本地连接器
@@ -431,6 +448,7 @@
                       items:
                         - name: 更佳的移动和 Intune 集成
                           href: better-mobile-mtd-connector-integration.md
+                          displayName: sso
                     - name: 设置 Check Point
                       href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
                       items:
@@ -491,14 +509,18 @@
           items:
             - name: SCEP
               href: certificates-scep-configure.md
+              displayName: ksp
             - name: PKCS
               href: certficates-pfx-configure.md
+              displayName: ksp
             - name: 使用 S/MIME 加密电子邮件
               href: certificates-s-mime-encryption-sign.md
             - name: 结合使用第三方证书颁发机构和 SCEP
               href: certificate-authority-add-scep-overview.md
+              displayName: csr
             - name: 使用 DigiCert PKI
               href: certificates-digicert-configure.md
+              displayName: ca; pkcs; pki; ra; registration authority
             - name: 删除 SCEP 或 PKCS 证书
               href: remove-certificates.md
         - name: eSIM 移动电话配置文件
@@ -519,6 +541,7 @@
           href: app-management.md
         - name: 添加应用
           href: apps-add.md
+          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
           items:
             - name: 受 Intune 保护的应用
               href: apps-supported-intune-apps.md
@@ -559,6 +582,7 @@
                   href: lob-apps-macos.md
             - name: Web 应用
               href: web-app.md
+              displayName: web; web link; weblink; web-link
             - name: 内置应用
               href: apps-add-built-in.md
             - name: PowerShell 脚本
@@ -594,9 +618,11 @@
               href: app-configuration-policies-managed-app.md
             - name: 使用 iOS 应用预配配置文件
               href: app-provisioning-profile-ios.md
-            - name: 使用批量购买的应用和书籍
-              href: vpp-apps.md
+            - name: 批量采购的应用和书籍
               items:
+                - name: 管理 VPP 应用和书籍
+                  href: vpp-apps.md
+                  displayName: vpp; volume purchased
                 - name: iOS VPP 应用
                   href: vpp-apps-ios.md
                 - name: 适用于企业的 Microsoft 应用商店应用
@@ -616,11 +642,15 @@
             - name: 选择性地擦除应用
               href: apps-selective-wipe.md
             - name: 使用应用保护策略
-              href: app-protection-policy.md
               items:
+                - name: 了解应用保护策略
+                  href: app-protection-policy.md
+                  displayName: app; protection; policy
                 - name: 创建应用保护策略
-                  href: app-protection-policies.md
                   items:
+                    - name: 常规设置
+                      href: app-protection-policies.md
+                      displayName: dlp; data loss prevention
                     - name: Android 设置
                       href: app-protection-policy-settings-android.md
                     - name: iOS 设置
@@ -671,6 +701,10 @@
           href: tenant-status.md
         - name: 故障排除
           items:
+            - name: 注册疑难解答
+              items:
+                - name: iOS 设备注册疑难解答
+                  href: troubleshoot-ios-enrollment-errors.md
             - name: 帮助用户排查问题
               href: help-desk-operators.md
             - name: 公司资源访问权限问题疑难解答
@@ -877,6 +911,7 @@
               href: app-sdk-ios.md
             - name: Android 应用包装工具
               href: app-wrapper-prepare-android.md
+              displayName: dex
             - name: Intune App SDK for Android
               href: app-sdk-android.md
               items:

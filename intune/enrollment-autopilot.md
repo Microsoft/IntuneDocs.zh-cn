@@ -17,15 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649116"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387333"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
+
+有四种类型的 Autopilot 部署：[自部署模式](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying)（适用于展台、数字签名或共享设备）、[白手套](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)（使合作伙伴和 IT 人员可以预配 Windows 10 电脑，以使其完善配置且可用于业务）、[适用于现有设备的 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices)（使用户可将最新版本的 Windows 10 轻松部署到现有设备）和[用户驱动模式](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven)（适用于传统用户）。 
 
 
 ## <a name="prerequisites"></a>必备条件
