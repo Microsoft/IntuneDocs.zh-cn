@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d27cd977909bb7aa237441102110a7abc27ad301
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884991"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660954"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用  
 
@@ -164,26 +164,23 @@ ms.locfileid: "67884991"
 - 请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，以添加 Check Point SandBlast Mobile iOS 应用配置策略。
   - 在“步骤 8”  中，使用选项“输入 XML 数据”  ，复制下列内容并粘贴到配置策略正文。
 
-```
-<dict><key>MDM</key><string>INTUNE</string></dict>
-```
+        <dict><key>MDM</key><string>INTUNE</string></dict>
+
 
 ### <a name="zimperium-app-configuration-policy"></a>Zimperium 应用配置策略  
 - 请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，添加 Zimperium iOS 应用配置策略。
   - 在“步骤 8”  中，使用选项“输入 XML 数据”  ，复制下列内容并粘贴到配置策略正文。
-
-```
-<dict>
-<key>provider</key><string>Intune</string>
-<key>userprincipalname</key><string>{{userprincipalname}}</string>
-<key>deviceid</key>
-<string>{{deviceid}}</string>
-<key>serialnumber</key>
-<string>{{serialnumber}}</string>
-<key>udidlast4digits</key>
-<string>{{udidlast4digits}}</string>
-</dict>
-```
+ 
+        <dict>
+        <key>provider</key><string>Intune</string>
+        <key>userprincipalname</key><string>{{userprincipalname}}</string>
+        <key>deviceid</key>
+        <string>{{deviceid}}</string>
+        <key>serialnumber</key>
+        <string>{{serialnumber}}</string>
+        <key>udidlast4digits</key>
+        <string>{{udidlast4digits}}</string>
+        </dict>
 
 ### <a name="pradeo-app-configuration-policy"></a>Pradeo 应用配置策略  
 Pradeo 在 iOS 上不支持应用程序配置策略。  相反，若要获取已配置的应用，请与 Pradeo 合作以实现已预先配置了所需设置的自定义 IPA 或 APK 文件。
@@ -192,16 +189,15 @@ Pradeo 在 iOS 上不支持应用程序配置策略。  相反，若要获取已
 - 请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，添加 Better Mobile iOS 应用配置策略。
   - 在“步骤 8”  中，使用选项“输入 XML 数据”  ，复制下列内容并粘贴到配置策略正文。 使用相应的控制台 URL 替换 `https://client.bmobi.net` URL。
 
-```
-<dict>
-<key>better_server_url</key>
-<string>https://client.bmobi.net</string>
-<key>better_udid</key>
-<string>{{aaddeviceid}}</string>
-<key>better_user</key>
-<string>{{userprincipalname}}</string>
-</dict>
-```
+        <dict>
+        <key>better_server_url</key>
+        <string>https://client.bmobi.net</string>
+        <key>better_udid</key>
+        <string>{{aaddeviceid}}</string>
+        <key>better_user</key>
+        <string>{{userprincipalname}}</string>
+        </dict>
+
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Sophos Mobile 应用配置策略  
 按照[使用 iOS 应用配置策略](app-configuration-policies-use-ios.md)一文中所述的步骤，创建 iOS 应用配置策略。
@@ -210,22 +206,20 @@ Pradeo 在 iOS 上不支持应用程序配置策略。  相反，若要获取已
 请参阅[将 Microsoft Intune 应用配置策略用于 iOS](app-configuration-policies-use-ios.md)，查看相关操作说明，添加 Wandera iOS 应用配置策略。
 - 在第 8 步中，  使用“输入 XML 数据”选项  。 登录到 RADAR Wandera 门户并浏览到“设置”   > “EMM 集成”   > “应用推送”  。 选择“Intune”  ，然后复制下列内容并粘贴到配置策略正文。  
 
-  ```
-  <dict><key>secretKey</key>
-  <string>SeeRADAR</string>
-  <key>apiKey</key>
-  <string> SeeRADAR </string>
-  <key>customerId</key>
-  <string> SeeRADAR </string>
-  <key>email</key>
-  <string>{{mail}}</string>
-  <key>firstName</key>
-  <string>{{username}}</string>
-  <key>lastName</key>
-  <string></string>
-  <key>activationType</key>
-  <string>PROVISION_THEN_AWP</string></dict>  
-  ```
+      <dict><key>secretKey</key>
+       <string>SeeRADAR</string>
+       <key>apiKey</key>
+       <string> SeeRADAR </string>
+       <key>customerId</key>
+       <string> SeeRADAR </string>
+       <key>email</key>
+       <string>{{mail}}</string>
+       <key>firstName</key>
+       <string>{{username}}</string>
+       <key>lastName</key>
+       <string></string>
+       <key>activationType</key>
+       <string>PROVISION_THEN_AWP</string></dict>  
 
 ## <a name="assign-apps-to-groups"></a>将应用分配给组  
 - 此步骤适用于所有 MTD 合作伙伴。 请参阅[使用 Intune 向组分配应用](apps-deploy.md)，查看相关操作说明。

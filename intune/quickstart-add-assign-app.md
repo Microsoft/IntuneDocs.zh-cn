@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528313"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482815"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入门：添加并分配客户端应用
 
@@ -43,7 +43,6 @@ ms.locfileid: "67528313"
 可以包含应用，以便 Intune 可以管理应用的各个方面。 
 
 可使用以下步骤将应用添加到 Intune：
-
 1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用” > “添加”    。 
 2. 在“应用类型”下拉框的“Office 365 套件”部分中选择“Windows 10”    。
 3. 选择“配置应用套件”以选择要分配给 Intune 用户的 Office 应用  。
@@ -56,9 +55,9 @@ ms.locfileid: "67528313"
 
     ![添加应用信息的屏幕截图](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. 选择“应用套件设置”  。
-9. 在“更新通道”下拉框中，选择“每月”   。
-10. 单击“确定” > 添加”   。
+10. 选择“应用套件设置”  。
+11. 在“更新通道”下拉框中，选择“每月”   。
+12. 单击“确定” > 添加”   。
 
 ## <a name="assign-the-app-to-a-group"></a>将应用分配给组
 

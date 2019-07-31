@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a9cf1b610830928a753be176de2643fa1826bd0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8a8a444f886a5b754fd6ba3763e183db0fe95d5f
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050327"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482970"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入门：创建组以管理用户
 
@@ -31,7 +31,7 @@ ms.locfileid: "66050327"
 如果没有 Intune 订阅，请[注册免费试用帐户](free-trial-sign-up.md)。
 
 >[!NOTE]
->为方便起见，Intune 在具有内置优化的控制台中提供了预先创建的“所有用户”和“所有设备”组。
+>为方便起见，Intune 在具有内置优化的控制台中提供了预先创建的“所有用户”和“所有设备”组   。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -45,18 +45,18 @@ ms.locfileid: "66050327"
 
 你需要创建一个组以便稍后在本快速入门系列中使用。 若要创建组，请执行以下操作：
 
-1. 打开“Microsoft Intune”窗格后，选择“组” > “新建组”。
-2. 在“组类型”下拉列表中，选择“安全”。
-3. 在“组名称”字段中，输入新组的名称（例如，Contoso 测试人员）。
-4. 添加对该组的描述。
-5. 将“成员身份类型”设置为“已分配”。 
-6. 单击“成员”，然后从列表中为该组选择一个或多个成员。
+1. 打开“Microsoft Intune”窗格后，选择“组” > “新建组”    。
+2. 在“组类型”下拉列表中，选择“安全”   。
+3. 在“组名称”  字段中，输入新组的名称（例如，Contoso 测试人员  ）。
+4. 添加对该组的描述  。
+5. 将“成员身份类型”设置为“已分配”   。 
+6. 单击“成员”，然后从列表中为该组选择一个或多个成员  。
 
     ![在 Microsoft Intune 中创建组的屏幕截图](./media/quickstart-use-groups-01.png)
 
-7. 单击“选择” > “创建”。
+7. 单击“选择” > “创建”   。
 
-已成功创建组后，该组将显示在“所有组”列表中。 
+已成功创建组后，该组将显示在“所有组”列表中  。 
 
 ## <a name="next-steps"></a>后续步骤
 

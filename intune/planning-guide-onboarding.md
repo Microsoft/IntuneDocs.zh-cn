@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e595ee2353a1554d97e49af666d20642a631596
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d05d9dd896321e48c3d1d9dec22cd0d1192dc0b6
+ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549302"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533196"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>实现 Microsoft Intune 计划
 
@@ -137,8 +137,4 @@ Intune 支持 iOS、Mac OS、Android、Windows 桌面版和 Windows Mobile 设�
 
 
 ## <a name="next-steps"></a>后续步骤
-
-查看此 [Microsoft Virtual Academy Intune 会话模块](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408)，了解有关 Intune 实现过程的详细信息。
-
-
 请参阅[测试和验证 Intune 部署](planning-guide-test-validation.md)的相关指南。

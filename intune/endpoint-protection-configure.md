@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: d0e3e67cd227c5ce8ac2cb42f79bdea1da8e2d75
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375123"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482774"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中添加终结点保护设置  
 
@@ -63,7 +63,7 @@ ms.locfileid: "68375123"
 - 对于每个配置文件，如果单个规则无法使用，则该配置文件中的所有规则都无法使用，并且不会将任何规则应用于设备。  
 - 如果某个规则无法使用，则配置文件中的所有规则都将报告为无法使用。 Intune 无法识别哪个单独的规则无法使用。  
 
-Windows [防火墙配置服务提供程序]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) (CSP) 中详细介绍了 Intune 可以管理的防火墙规则。 若要查看 Intune 支持的 Windows 10 设备自定义防火墙设置列表，请参阅[自定义防火墙规则](endpoint-protection-windows-10.md#custom-firewall-rules)。  
+Windows [防火墙配置服务提供程序]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) (CSP) 中详细介绍了 Intune 可以管理的防火墙规则。 若要查看 Intune 支持的 Windows 10 设备自定义防火墙设置列表，请参阅[自定义防火墙规则](endpoint-protection-windows-10.md#firewall-rules)。  
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>向 Endpoint Protection 配置文件添加自定义防火墙规则  
 
@@ -73,7 +73,7 @@ Windows [防火墙配置服务提供程序]( https://docs.microsoft.com/windows/
 
 3. 选择“Windows Defender 防火墙”以打开配置页，对于“防火墙规则”，选择“添加”以打开“创建规则”页     。  
 
-4. 指定“防火墙规则”的设置，然后选择“确定”以保存该设置  。 若要查看文档中可用的自定义防火墙规则选项，请参阅[自定义防火墙规则](endpoint-protection-windows-10.md#custom-firewall-rules)。  
+4. 指定“防火墙规则”的设置，然后选择“确定”以保存该设置  。 若要查看文档中可用的自定义防火墙规则选项，请参阅[自定义防火墙规则](endpoint-protection-windows-10.md#firewall-rules)。  
 
 5. 保存规则后，它将显示在规则列表中的“Windows Defender 防火墙”页上  。  
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: d0f155a9a4900ed10b2030af3c80c13def0bb82e
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572188"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660912"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>网络访问控制 (NAC) 与 Intune 集成
 
@@ -93,8 +93,8 @@ NAC 支持条件访问，可提供访问控制决策。 如需了解更多详情
 
 ## <a name="next-steps"></a>后续步骤
 
-- [将 Cisco ISE 与 Intune 集成](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
-- [将 Citrix NetScaler 与 Intune 集成](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [将 Cisco ISE 与 Intune 集成](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
+- [将 Citrix NetScaler 与 Intune 集成](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 - [将 F5 BIG-IP Access Policy Manager 与 Intune 集成](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [将 HP Aruba ClearPass 与 Intune 集成](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
-- [将 Squadra 安全性可移动媒体管理器 (secRMM) 与 Intune 集成](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)
+- [将 Squadra 安全性可移动媒体管理器 (secRMM) 与 Intune 集成](https://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)
