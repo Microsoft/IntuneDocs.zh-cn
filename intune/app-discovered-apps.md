@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68388508"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590904"
 ---
 # <a name="intune-discovered-apps"></a>Intune 发现的应用
 
@@ -30,13 +30,22 @@ Intune 发现的应用是租户中在 Intune 注册相关设备上检测到的�
 
 ## <a name="monitor-discovered-apps-with-intune"></a>使用 Intune 监视发现的应用
 
-Intune 提供有关在租户的 Intune 注册设备上检测到的应用的列表。
+Intune 提供有关在租户的 Intune 注册设备上检测到的应用的聚合列表。
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 在“Intune”窗格中，选择“客户端应用” > “发现的应用”    。
 
 >[!NOTE]
 >从“发现的应用”边栏选项卡中选择“导出”，可以将发现的应用列表导出为 .csv 文件   。
+>
+>对于发现的 Win32 应用，当前没有聚合计数。 此类数据只能在每台设备上查看。
+
+Intune 还提供租户中单个设备的已发现应用的列表。 
+
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 在“Intune”窗格中，选择“设备” > “所有设备”   。
+3. 选择设备。
+4. 要查看此设备的检测到的应用，请在“监视器”部分中选择“已发现的应用”   。 
 
 ## <a name="details-of-discovered-apps"></a>发现的应用的详细信息
 

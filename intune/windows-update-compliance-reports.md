@@ -1,5 +1,6 @@
 ---
-title: 在 Microsoft Intune 中使用 Windows 更新的更新符合性报告 | Microsoft Docs
+title: 在 Microsoft Intune 中使用 Windows 更新的更新符合性报告
+titleSuffix: Microsoft Intune
 description: 使用 OMS 更新符合性查看向 Intune 部署的 Windows 更新的报告数据。
 keywords: ''
 author: brenduns
@@ -14,31 +15,31 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 09f3cafc16d8a08885731aa244a089367c6c0933
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66039671"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660393"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Intune 的更新符合性报告
-使用 Intune 将 Windows 更新部署到 Windows 10 设备时，请使用 Intune 或名为“更新符合性”的免费解决方案查看有关更新符合性的详细信息，其中该方案是 Microsoft Operations Management Suite (OMS) 的一部分。
+使用 Intune 将 Windows 更新部署到 Windows 10 设备时，请使用 Intune 或名为“更新符合性”的免费解决方案查看有关更新符合性的详细信息，其中该方案是 Microsoft Operations Management Suite (OMS) 的一部分  。
 
 ## <a name="use-intune"></a>使用 Intune
 查看已配置的 Windows 10 更新通道的部署状态策略报告： 
 1. 登录到 [Azure 门户](https://portal.azure.com/)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。
-3. 选择“软件更新” > “概述”。 可查看有关已分配的任意更新通道状态的一般信息。
+2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
+3. 选择“软件更新” > “概述”   。 可查看有关已分配的任意更新通道状态的一般信息。
 4. 打开以下报告之一：  
 
    **对于所有部署通道**：
-   1. 在“软件更新” > “Windows 10 更新通道”上
-   2. 在“监视”部分，选择“每个更新通道的部署状态”。  
+   1. 在“软件更新” > “Windows 10 更新通道”上  
+   2. 在“监视”部分，选择“每个更新通道的部署状态”   。  
 
    **对于特定部署通道**：  
 
-   1. 在“软件更新” > “Windows 10 更新通道”中，选择要查看的部署通道。  
-   2. 在“监视”部分，从下列报表中进行选择以查看有关更新通道的更详细信息：  
+   1. 在“软件更新” > “Windows 10 更新通道”中，选择要查看的部署通道   。  
+   2. 在“监视”部分，从下列报表中进行选择以查看有关更新通道的更详细信息：   
       - **设备状态**  
       - **用户状态**  
 
@@ -49,12 +50,12 @@ ms.locfileid: "66039671"
 
 在 Intune 控制台中，可使用自定义策略的 OMA-URI 设置来配置商业 ID。 有关详细信息，请参阅 [Microsoft Intune 中适用于 Windows 10 设备的 Intune 策略设置](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)。  
 
-用于配置商业 ID 的 OMA-URI（区分大小写）路径为：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID  
+用于配置商业 ID 的 OMA-URI（区分大小写）路径为：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID   
 
 例如，你可以在“**添加或编辑 OMA-URI 设置**”中使用以下值：
 - **设置名称**：Windows Analytics 商业 ID
 - **设置说明**：为 Windows Analytics 解决方案配置商业 ID
-- OMA-URI（区分大小写）：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+- OMA-URI（区分大小写）：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID  
 - **数据类型**：字符串
 - **值**：\<使用 OMS 工作区中 Windows 遥测选项卡上显示的 GUID>
  

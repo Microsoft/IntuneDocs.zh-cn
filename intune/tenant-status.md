@@ -14,14 +14,14 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: c744878c49dfa5adb1b4f64587abfe06151a69a0
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670991"
 ---
-# <a name="intune-tenant-status-page"></a>Intune 租户状态页面
+# <a name="use-the-intune-tenant-status-page"></a>使用 Intune 租户状态页面
 “租户状态”页是一个集中式中心，可在其中查看有关租户的当前信息和重要详细信息。 详细信息包括许可证可用性及其使用、连接器状态以及有关 Intune 服务的重要通信。  
 
 若要查看仪表板，请在 Azure 门户中转到“Intune”>“租户状态”  。  租户状态下将出现“帮助和支持组”  。  

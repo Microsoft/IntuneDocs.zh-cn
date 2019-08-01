@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中使用 Microsoft Defender ATP - Azure | Microsoft Docs
-description: 了解如何在端到端应用场景中启用 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP)，包括在 Intune 和 Microsoft Defender 安全中心中启用 Microsoft Defender ATP，使用 Microsoft Defender ATP 配置文件载入设备，创建 Intune 设备符合性策略，创建 Azure AD 条件访问策略，以及监视设备符合性。
+description: 将 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP) 与 Intune 一起使用，包括设置和配置，使用 ATP 载入 Intune 设备，然后将设备 ATP 风险评估与 Intune 设备符合性和条件访问策略结合使用来保护网络资源。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,32 +15,39 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af27a9b07434346a5425d0539759cb90ebf1ee6f
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 8508915f0b4711b2aa65465dd7ac79f575a8d008
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427085"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670961"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性  
 
-Microsoft Defender 高级威胁防护 (Microsoft Defender ATP) 和 Microsoft Intune 一起协作来帮助免受安全漏洞的威胁，并帮助限制组织中的漏洞影响。
+可以将 Microsoft Defender 高级威胁防护 (Microsoft Defender ATP) 和 Microsoft Intune 集成为 Mobile Threat Defense 解决方案，以帮助免受安全漏洞的威胁，并帮助限制组织中的漏洞影响。 Microsoft Defender ATP 适用于运行 Windows 10 或更高版本的设备。
 
-此功能适用于：Windows 10 设备
+要成功，请配合使用以下配置：
+- **在 Intune 和 Microsoft Defender ATP 之间创建一个服务到服务的连接**。 通过这个连接，Microsoft Defender ATP 可以从使用 Intune 管理的 Windows 10 设备收集有关计算机风险的数据。  
+- **使用设备配置配置文件将设备载入 Microsoft Defender ATP**。 载入设备将其配置为与 Microsoft Defender ATP 进行通信，并提供有助于评估其风险级别的数据。  
+ - **使用设备合规性策略设置要允许的风险级别**。 由 Microsoft Defender ATP 报告风险等级。  将超出允许风险级别的设备识别为不合规。  
+-  使用条件访问策略阻止用户从不合规的设备访问公司资源。  
 
-例如，有人向组织内的用户发送包含嵌入式恶意代码的 Word 附件。 在用户打开附件时，将启用内容。 提升的权限攻击随即启动，且来自远程计算机的攻击者对受害者的设备具有管理权限。 然后，攻击者会远程访问用户的其他设备。
+此外，将 Intune 与 Microsoft Defender ATP 集成时，可以利用 ATP 威胁和漏洞管理 (TVM) 并[使用 Intune 修正由 TVM 标识的终结点漏洞](atp-manage-vulnerabilities.md)。
 
-此安全漏洞可能会影响整个组织。
+## <a name="example-of-using-microsoft-defender-atp-with-intune"></a>将 Microsoft Defender ATP 和 Intune 结合使用的示例  
 
-Microsoft Defender ATP 可以解决类似这种情况的安全事件。 Microsoft Defender 安全中心将设备报告为“高风险”，并包括可疑活动的详细报告。 在本例中，Microsoft Defender ATP 检测设备是否存在以下情形：执行了异常代码、遇到了进程权限提升、插入了恶意代码，以及发布了可疑的远程 Shell。 然后，Microsoft Defender ATP 会为你提供选项来缓解威胁。
+下面的示例有助于解释这些解决方案如何协同工作以帮助保组织。 在此示例中，Microsoft Defender ATP 和 Intune 已经集成在一起了。  
 
-使用 Intune 可创建符合性策略，用于确定可接受的风险级别。 如果设备超过这一级别的风险，则设备不符合策略。 与 Azure Active Directory (AD) 条件访问结合使用时，将阻止用户访问公司资源。
+有人向组织内的用户发送包含嵌入式恶意代码的 Word 附件。  
+- 在用户打开附件时，将启用内容。  
+- 提升的权限攻击随即启动，且来自远程计算机的攻击者对受害者的设备具有管理权限。  
+- 然后，攻击者会远程访问用户的其他设备。 此安全漏洞可能会影响整个组织。  
 
-本文介绍如何：
+Microsoft Defender ATP 可以帮助解决类似这种情况的安全事件。  
+- 在本例中，Microsoft Defender ATP 检测设备是否存在以下情形：执行了异常代码、遇到了进程权限提升、插入了恶意代码，以及发布了可疑的远程 Shell。  
+- 基于该设备的这些操作，Microsoft Defender ATP [将该设备分类为高风险](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue#severity)，并在 Microsoft Defender 安全中心门户中包含可疑活动的详细报告。  
 
-- 在 Microsoft Defender 安全中心启用 Intune，并在 Intune 中启用 Microsoft Defender ATP。 这些任务在 Intune 和 Microsoft Defender ATP 之间创建一个服务到服务的连接。 此连接允许 Microsoft Defender ATP 写入 Intune 设备的计算机风险。
-- 在 Intune 中创建符合性策略。
-- 根据威胁级别在设备上启用 Azure Active Directory (AD) 中的条件访问。
+因为你有 Intune 设备合规性策略来对具有“中等”  或“高”  风险级别的设备分类为不合规，所以受危害的设备被分类为不合规。 这种分类允许条件访问策略介入并阻止从该设备访问公司资源。  
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -52,17 +59,10 @@ Microsoft Defender ATP 可以解决类似这种情况的安全事件。 Microsof
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>在 Intune 中启用 Microsoft Defender ATP
 
-将新的应用程序集成到 Intune Mobile Threat Defense 并启用连接时，Intune 会在 Azure Active Directory 中创建经典条件访问策略。 集成的每个 MTD 应用（例如，[Defender ATP](advanced-threat-protection.md) 或其他 [MTD 合作伙伴](mobile-threat-defense.md#mobile-threat-defense-partners)）都会创建新的经典条件访问策略。  可以忽略这些策略，但不能对其进行编辑、删除或禁用。
+第一步是在 Intune 和 Microsoft Defender ATP 之间设置服务到服务连接。 这需要管理访问 Microsoft Defender 安全中心和 Intune。  
 
-MTD 应用的经典条件访问策略： 
+### <a name="to-enable-defender-atp"></a>启用 Defender ATP  
 
-- Intune MTD 使用该策略来要求设备在 Azure AD 中注册，以使其具有设备 ID。 此 ID 是必需的，以便设备可以成功向 Intune 报告其状态。  
-- 此策略与可能创建的用于帮助管理 MTD 的条件访问策略不同。
-- 默认情况下，该策略与用于评估的其他条件访问策略不交互。  
-
-要查看经典条件访问策略，请转到 [Azure](https://portal.azure.com/#home) 中的“Azure Active Directory” > “条件访问” > “经典策略”    。
-
-### <a name="to-enable-defender-atp"></a>启用 Defender ATP
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“设备符合性”   > “Microsoft Defender ATP”  ，然后在“连接器设置”  下，选择“打开 Microsoft Defender 安全中心”  。
 
@@ -79,19 +79,28 @@ MTD 应用的经典条件访问策略：
 4. 返回到 Intune，“设备符合性”   > “Microsoft Defender ATP”  。 将“将 Windows 设备版本 10.0.15063 及更高版本连接到 Microsoft Defender ATP”  设置为“启用”  。
 5. 选择“保存”  。
 
-通常执行此任务一次。 因此，如果已在 Intune 资源中启用 Microsoft Defender ATP，则不需要再次执行本操作。
+通常执行此任务一次。 在为 Intune 租户启用 Microsoft Defender ATP 之后，就不需要再执行此任务。
 
-## <a name="onboard-devices-using-a-configuration-profile"></a>使用配置文件载入设备
+> [!TIP]  
+> 将新的应用程序集成到 Intune Mobile Threat Defense 并启用连接时，Intune 会在 Azure Active Directory 中创建经典条件访问策略。 集成的每个 MTD 应用（例如，[Defender ATP](advanced-threat-protection.md) 或其他 [MTD 合作伙伴](mobile-threat-defense.md#mobile-threat-defense-partners)）都会创建新的经典条件访问策略。  可以忽略这些策略，但不能对其进行编辑、删除或禁用。
+> 
+> MTD 应用的经典条件访问策略： 
+> 
+> - Intune MTD 使用该策略来要求设备在 Azure AD 中注册，以使其具有设备 ID。 此 ID 是必需的，以便设备可以成功向 Intune 报告其状态。  
+> - 此策略与可能创建的用于帮助管理 MTD 的条件访问策略不同。
+> - 默认情况下，该策略与用于评估的其他条件访问策略不交互。  
+> 
+> 要查看经典条件访问策略，请转到 [Azure](https://portal.azure.com/#home) 中的“Azure Active Directory” > “条件访问” > “经典策略”    。
 
-当最终用户在 Intune 中注册时，可以使用配置文件向设备推送不同的设置。 这同样适用于 Microsoft Defender ATP。
+## <a name="onboard-devices-by-using-a-configuration-profile"></a>使用配置文件载入设备
 
-Microsoft Defender ATP 包括载入配置包，该包可与 [Microsoft Defender ATP 服务](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)进行通信以扫描文件、检测威胁，并向 Microsoft Defender ATP 报告风险。
+在 Intune 和 Microsoft Defender ATP 之间建立服务到服务连接之后，将 Intune 管理的设备载入到 ATP，以便收集和使用有关其风险级别的数据。 要载入设备，请使用适用于 Microsoft Defender ATP 的设备配置文件。  
 
-载入时，Intune 将从 Microsoft Defender ATP 收到自动生成的配置包。 当 Intune 向设备发送配置文件时，它会将配置包推送到设备，这样 Microsoft Defender ATP 就可以监视设备是否受到威胁。
+建立到 Microsoft Defender ATP 的连接后，Intune 会接收到来自 Microsoft Defender ATP 的 Microsoft Defender ATP 载入配置包。 此包部署到具有设备配置文件的设备上。 配置包配置设备，以与 [Microsoft Defender ATP 服务](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)进行通信以扫描文件、检测威胁，并向 Microsoft Defender ATP 报告风险。  
 
 使用配置包载入设备后，不需要再次执行本操作。 还可以使用[组策略或 System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 载入设备。
 
-### <a name="create-the-configuration-profile"></a>创建配置文件
+### <a name="create-the-device-configuration-profile"></a>创建设备配置文件
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“设备配置”   > “配置文件”   > “创建配置文件”  。
@@ -100,10 +109,10 @@ Microsoft Defender ATP 包括载入配置包，该包可与 [Microsoft Defender 
 5. 对于“配置文件类型”  ，请选择“Microsoft Defender ATP (Windows 10 桌面版)”  。
 6. 配置设置：
 
-    - Microsoft Defender ATP 客户端配置包类型  ：选择“载入”  将配置包添加到配置文件。 选择“卸载”，从配置文件中删除配置包  。
+   - Microsoft Defender ATP 客户端配置包类型  ：选择“载入”  将配置包添加到配置文件。 选择“卸载”，从配置文件中删除配置包  。
   
-    > [!NOTE]  
-    > 如果你已正确建立与 Microsoft Defender ATP 的连接，Intune 会自动为你载入  配置文件，且“Microsoft Defender ATP 客户端配置包类型”  设置将不可用。
+     > [!NOTE]  
+     > 如果你已正确建立与 Microsoft Defender ATP 的连接，Intune 会自动为你载入  配置文件，且“Microsoft Defender ATP 客户端配置包类型”  设置将不可用。
   
     - **所有文件的示例共享**：选择“启用”  可收集示例，并与 Microsoft Defender ATP 共享示例。 例如，如果看到可疑文件，可以将其提交至 Microsoft Defender ATP 进行深入分析。 选择“未配置”  不会向 Microsoft Defender ATP 共享任何示例。
     - **加快遥测报告频率**：对于处于高风险的设备，选择“启用”  此设置，可以更频繁地向 Microsoft Defender ATP 服务报告遥测。
@@ -111,33 +120,35 @@ Microsoft Defender ATP 包括载入配置包，该包可与 [Microsoft Defender 
     有关这些 Microsoft Defender ATP 设置的详细信息，请参阅[使用 System Center Configuration Manager 载入 Windows 10 计算机](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)。
 
 7. 选择“确定”  和“创建”  保存更改，此操作将创建配置文件。
+8. [将设备配置文件分配给](device-profile-assign.md)希望使用 Microsoft Defender ATP 进行评估的设备。  
 
-## <a name="create-the-compliance-policy"></a>创建符合性策略
-符合性策略确定设备上可接受的风险级别。
+## <a name="create-and-assign-the-compliance-policy"></a>创建并分配合规性策略  
+
+合规性策略确定设备可接受的风险级别。
+
+### <a name="create-the-compliance-policy"></a>创建符合性策略  
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“设备符合性”   > “策略”   > “创建策略”  。
 3. 输入“名称”  和“描述”  。
 4. 在“平台”  中，选择“Windows 10 及更高版本”  。
-5. 在“Microsoft Defender ATP”  设置中，将“要求设备不高于计算机风险评分”  设置为首选级别。 威胁级别分类[由 Microsoft Defender ATP 确定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue)。
+5. 在“Microsoft Defender ATP”  设置中，将“要求设备不高于计算机风险评分”  设置为首选级别。 
+   
+   威胁级别分类[由 Microsoft Defender ATP 确定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue)。
 
    - **清除**：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。 （Microsoft Defender ATP 使用“安全”  值。）
    - **低**：如果只有低级别威胁，设备符合策略。 具有中等级别或高级别威胁的设备不符合策略。
    - **中**：如果有低级别或中等级别威胁，设备符合策略。 如果检测到高级别威胁，则设备会被确定为不合规。
    - **高**：此级别最不安全，允许所有威胁级别。 因此，存在高、中等或低级别威胁的设备被视为符合策略。
 
-6. 选择“确定”  和“创建”  以保存更改（并创建策略）。
+6. 选择“确定”  和“创建”  以保存更改（并创建策略）。  
+7. [将设备合规性策略分配](create-compliance-policy.md#assign-user-groups)给适用的组。
 
-## <a name="assign-the-policy"></a>分配策略
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备符合性”   > “策略”  >“选择你的 Microsoft Defender ATP 符合性策略”。
-3. 选择“分配”  。
-4. 包含或排除你的 Azure AD 组以向它们分配策略。
-5. 若要将策略部署到组，请选择“保存”  。 将评估策略针对的用户设备的符合性。
 
-## <a name="create-a-conditional-access-policy"></a>创建条件访问策略
-如果  设备不符合策略，条件访问策略将阻止访问资源。 因此，如果设备超出威胁级别，可以阻止对公司资源（如 SharePoint 或 Exchange Online）的访问。  
+## <a name="create-a-conditional-access-policy"></a>创建条件访问策略  
+
+条件访问策略阻止设备访问超过合规性策略中设置的威胁级别的资源。 可以阻止设备访问公司资源，如 SharePoint 或 Exchange Online。  
 
 > [!TIP]  
 > 条件访问是一项 Azure Active Directory (Azure AD) 技术。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同   。  
@@ -158,18 +169,20 @@ Microsoft Defender ATP 包括载入配置包，该包可与 [Microsoft Defender 
 
 6. 选择“启用策略”  ，然后选择“创建”  以保存更改。
 
-[什么是条件访问？](conditional-access.md)是很棒的资源。
 
-## <a name="monitor-device-compliance"></a>监视设备符合性
+
+## <a name="monitor-device-compliance"></a>监视设备符合性  
+
 接下来，监视具有 Microsoft Defender ATP 符合性策略的设备状态。
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“设备符合性”   > “策略符合性”  。
 3. 在列表中找到 Microsoft Defender ATP 策略，并查看符合策略和不符合策略的设备。
 
-## <a name="more-good-stuff"></a>更多出色内容
-[Microsoft Defender ATP 条件访问](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)  
-[Microsoft Defender ATP 风险仪表板](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  
+## <a name="next-steps"></a>后续步骤  
 
+[Microsoft Defender ATP 条件访问](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)   
+[Microsoft Defender ATP 风险仪表板](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  
+[使用带有 ATP 漏洞管理的安全任务来修复设备上的问题](atp-manage-vulnerabilities.md)。  
 [设备符合性策略入门](device-compliance-get-started.md)  
-[Azure AD 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+ 

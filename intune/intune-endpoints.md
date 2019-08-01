@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
-ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
+ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411599"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482960"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune 网络终结点  
 
@@ -146,7 +146,7 @@ ms.locfileid: "68411599"
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune 证书连接器  
 
-托管 Microsoft Intune 证书连接器的服务器必须具有使用 TCP 端口 443 访问下表中列出的公共 IP 位置的权限   。  
+托管 Microsoft Intune 证书连接器的服务器必须具有使用 TCP 端口 443 访问下表中列出的公共 IP 位置的权限   。 有关证书的详细信息，请参阅[通过 Intune 配置和使用 PKCS 证书](certficates-pfx-configure.md)和[通过 Intune 配置和使用 SCEP 证书](certificates-scep-configure.md)。
 
 |Domains                             |IP 地址       |
 |---------------|--------------------------------------|

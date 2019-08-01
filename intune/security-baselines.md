@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Intune 中使用安全基线 - Azure | Microsoft Docs
-description: 添加或配置建议的 Windows 安全设置，以保护使用 Microsoft Intune 进行移动设备管理的设备上的用户和数据。 启用 BitLocker、配置 Microsoft Defender 高级威胁防护、控制 Internet Explorer、使用智能屏幕、设置本地安全策略、要求输入密码、阻止 Internet 下载等。
+description: 使用建议的 Windows 安全设置，以保护使用 Microsoft Intune 进行移动设备管理的设备上的用户和数据。 启用加密、配置 Microsoft Defender 高级威胁防护、控制 Internet Explorer、设置本地安全策略、要求输入密码、阻止 Internet 下载等。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353590"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671021"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>使用安全基线在 Intune 中配置 Windows 10 设备
 

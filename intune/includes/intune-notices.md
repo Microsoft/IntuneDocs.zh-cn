@@ -7,14 +7,35 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: 4423e731bc1538cd2454de32f0d50f2d08eedc69
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67812502"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670933"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
+
+
+### <a name="decreasing-support-for-android-device-administrator"></a>减少对 Android 设备管理员的支持 
+Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2.2 发布）是一种管理 Android 设备的方法。 不过，[Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise)（随 Android 5.0 发布）现在提供改进的管理功能。 为了实现更现代化、更丰富、更安全的设备管理，Google 正在减少新 Android 版本中对设备管理员的支持。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+由于 Google 的这些变化，Intune 用户将受到以下几个方面的影响： 
+- Intune 将只能在 2020 年夏季之前为运行 Android 10 和更高版本（也称为 Android Q）的设备管理员管理的 Android 设备提供支持。 此日期是预计发布 Android 下一个主要版本的时间。  
+- 在 2020 年夏季以后运行 Android 10 或更高版本的设备管理员管理的设备将无法再进行完全管理。    
+- 设备管理员管理的仍在低于 Android 10 的 Android 版本上运行 Android 设备将不会受到影响，可以继续由设备管理员进行完全管理。  
+- 对于所有 Android 10 及更高版本的设备，Google 限制了设备管理员管理代理（如公司门户）访问设备标识符信息的能力。 在设备更新到 Android 10 或更高版本后，这将影响以下 Intune 功能： 
+    - VPN 的网络访问控制将不再有效。  
+    - 使用 IMEI 或序列号将设备识别为公司拥有的设备将不会自动将设备标记为公司拥有的设备。 
+    - 在 Intune 中，IMEI 和序列号将不再对 IT 管理员可见。 
+        > [!Note]
+        > 这只会影响 Android 10 及更高版本上设备管理员管理的设备，并且不会影响作为 Android Enterprise 管理的设备。 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+为避免在即将到来的 2020 年夏季出现功能降低的情况，建议采取如下操作：
+- 不要将新设备加入设备管理员管理中。
+- 如果希望设备接收到 Android 10 的更新，请将其从设备管理员管理迁移到 Android Enterprise 管理和/或应用保护策略。
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>将 Android 公司门户应用更新到最新版本 <!--4536963-->
 Intune 定期发布 Android 公司门户应用的更新。 在 2018 年 11 月，我们发布了一次公司门户更新，其中包括后端开关，以便为 Google 从现有通知平台更改为 Google 的 Firebase 云消息传递 (FCM) 做好准备。 随着 Google 停用其现有通知平台并迁移到 FCM，最终用户需要将他们的公司门户应用至少更新到 2018 年 11 月版本，以便继续与 Google Play 商店通信。
@@ -51,7 +72,7 @@ https://aka.ms/intune_fullscreen
 - iPhone 5c
 - iPad（第 4 代）
 
-从 7 月开始，使用 iOS 10 和公司门户的 MDM 注册设备将收到升级其 OS 或设备的提示。 如果使用应用程序保护策略 (APP)，还可以设置“要求最低 iOS 操作系统版本(仅警告)”访问设置。
+从 7 月开始，使用 iOS 10 和公司门户的 MDM 注册设备将收到升级其 OS 或设备的提示。 如果使用应用程序保护策略 (APP)，则还可以设置“要求最低 iOS 操作系统(仅警告)”访问设置。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
 检查 Intune 报告，查看可能受影响的设备或用户。 转到“设备”   > “所有设备”  ，并按“OS”进行筛选。 可以添加其他列，帮助确定组织中哪些人员拥有运行 iOS 10 的设备。 要求最终用户在 9 月前将其设备升级到支持的 OS 版本。
@@ -63,7 +84,7 @@ https://aka.ms/intune_fullscreen
 借助 Intune App SDK 或 App Wrapping 集成，可通过数据加密保护公司数据免受未经批准的应用程序和用户的影响。 Intune 应用保护策略 (APP) 启用加密时，Intune App SDK for iOS 将默认使用 256 位加密密钥。 在此更改之后，在 SDK 8.1.1 之前的版本上使用 128 位加密密钥的任何 iOS 应用都不能再与集成了 SDK 8.1.1 或使用 256 位密钥的应用程序共享数据。 所有的 iOS 应用都需要 SDK 8.1.1 版本或更高版本，才能进行受保护的数据共享。
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
-检查 Microsoft、第三方和业务线 (LOB) 应用。 应确保所有受 Intune APP 保护的应用程序都使用 8.1.1 或更高版本。
+检查 Microsoft、第三方和业务线 (LOB) 应用。 确保所有受 Intune APP 保护的应用程序都使用 SDK 版本 8.1.1 或更高版本。
 
 - 对于 LOB 应用：可能需要重新发布与 SDK 8.1.1 版本或更高版本集成的应用。 建议使用最新的 SDK 版本。 要了解如何针对应用保护策略准备好 LOB 应用，请参阅[针对应用保护策略准备好业务线应用](../apps-prepare-mobile-application-management.md)。
 - Microsoft/第三方应用：确保向用户部署这些应用的最新版本。
@@ -74,7 +95,7 @@ https://aka.ms/intune_fullscreen
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>更改计划：Intune 中的新 Windows 更新设置 <!-- 4464404 -->
-从 Intune 服务的 8 月版本或 1908 开始，我们将添加新的“截止时间设置”，可以对此进行配置，而不是“允许用户重新启动(预定重启)”设置。 我们计划在 1909 或 9 月更新中的 UI 上禁用预定重启设置，然后在 10 月底之前将它们从控制台中完全删除。 
+从 Intune 服务的 8 月版本或 1908 开始，我们将添加新的“截止时间设置”，可以对此进行配置，而不是“允许用户重启(预定重启)”设置。 我们计划在 1909 或 9 月更新中的 UI 上禁用预定重启设置，然后在 10 月底之前将它们从控制台中完全删除。 
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 如果在环境中管理 Windows 10 设备： 
@@ -88,3 +109,22 @@ https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
 如果需要，请更新文档和任何自动化脚本。 
 
 删除预定重启设置之前，我们会随时为你提供最新消息并将提醒发送到消息中心。
+
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>更改计划：适用于 Android 的 Intune App SDK 和应用保护策略将于 10 月份支持 Android 5.0 和更高版本 <!--4911065 -->
+Intune 将于 10 月份支持 Android 5.x (Lollipop) 及更高版本。 使用最新的 Intune App SDK 更新所有包装好的应用，并更新设备。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+如果没有使用或未计划使用适用于 Android 的 SDK 或应用，此更改不会影响你。 如果正在使用 Intune App SDK，请确保更新到最新版本，并将设备更新到 Android 5.x 和更高版本。 如果不更新，应用将不会收到更新，并且随着时间推移其体验质量将会降低。 
+
+下面是运行 Android 版本 4.x 的 Intune 中注册的常用设备列表。 如果有其中一个设备，请执行相应的步骤，确保该设备将支持 Android 版本 5.0 或更高版本，或者将其替换为支持 Android 版本 5.0 或更高版本的设备。 这个列表并未包含所有可能需要评估的设备：
+- Samsung SM-T561  
+- Samsung SM-T365 
+- Samsung GT-I9195 
+- Samsung SM-G800F
+- Samsung SM-G357FZ
+- Motorola XT1080
+- Samsung GT-I9305
+- Samsung SM-T231
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+使用最新的 Intune App SDK 包装应用。 还可以设置“要求最低操作系统版本(仅警告)”条件启动设置来通知个人设备上的最终用户进行升级。

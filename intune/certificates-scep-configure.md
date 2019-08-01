@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353772"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467506"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
 
@@ -373,7 +373,14 @@ ms.locfileid: "68353772"
      - Windows 10 及更高版本
 
 
-   - **使用者名称格式**：选择 Intune 如何自动创建证书请求中的使用者名称。 如果选择“用户”证书类型或“设备”证书类型，选项将发生更改   。 
+   - **使用者名称格式**：选择 Intune 如何自动创建证书请求中的使用者名称。 如果选择“用户”证书类型或“设备”证书类型，选项将发生更改   。  
+
+     > [!NOTE]  
+     > 当生成的证书签名请求 (CSR) 中的使用者名称包含以下字符之一作为转义字符（后跟反斜杠 \\）时，使用 SCEP 获取证书存在[已知问题](#avoid-certificate-signing-requests-with-escaped-special-characters)：
+     > - \+
+     > - ;
+     > - 、
+     > - =
 
         **“用户”证书类型**  
 
@@ -495,6 +502,42 @@ ms.locfileid: "68353772"
      - 选择“确定”，然后选择“创建”来创建配置文件   。
 
 配置文件随即创建并显示在“配置文件列表”窗格中。
+
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>避免证书签名请求中包含转义的特殊字符
+包含具有一个或多个以下特殊字符作为转义字符的使用者名称 (CN) 的 SCEP 证书请求存在一个已知问题。 包含一个特殊字符作为转义字符的使用者名称会导致使用者名称不正确的 CSR，进而导致 Intune SCEP 质询验证失败，并且未颁发证书。  
+
+特殊字符为：
+- \+
+- 、
+- ;
+- =
+
+当使用者名称包含一个特殊字符时，请使用以下选项之一来解决此限制：  
+- 用引号封装包含特殊字符的 CN 值。  
+- 删除 CN 值中的特殊字符。  
+
+例如，使用者名称显示为 Test user (TestCompany, LLC)   。  如果 CSR 包含一个 CN，该 CN 在 TestCompany 和 LLC 之间有逗号，则会出现问题   。  可以通过在整个 CN 周围加上引号，或者删除 TestCompany 和 LLC   之间的逗号来避免这一问题：
+- **添加引号**：*CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **删除逗号**：*CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+ 但是，使用反斜杠字符转义逗号的尝试将失败，CRP 日志中出现错误：  
+- **转义的逗号**：*CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+此错误类似于以下错误： 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
 
 ## <a name="assign-the-certificate-profile"></a>分配证书配置文件
 

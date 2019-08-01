@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427321"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660941"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>在 Microsoft Intune 中设置 Intune 本地 Exchange 连接器
 本文中的信息有助于安装和监视 Intune 的 Exchange Active Sync 本地连接器。  结合使用 Intune 本地 Exchange 连接器与[条件访问策略，以允许或阻止对 Exchange 本地邮箱的访问](conditional-access-exchange-create.md)。 
@@ -121,7 +121,7 @@ Intune 支持每个订阅安装多个本地 Exchange 连接器。 如果有多�
 
 5. 提供必要的凭据，将通知发送到用户的 Exchange Server 邮箱。 此用户可专用于通知。 通知用户需要 Exchange 邮箱才能通过电子邮件发送通知。 可使用 Intune 中的条件访问策略配置这些通知。  
 
-       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
+   确保在 Exchange 客户端访问服务器上配置 Autodiscover 服务和 Exchange Web 服务。 有关详细信息，请参阅[客户端访问服务器](https://technet.microsoft.com/library/dd298114.aspx)。
 
 6. 在“密码”  字段中提供此帐户的密码，使 Intune 能够访问 Exchange 服务器。
 
@@ -158,7 +158,7 @@ Intune 支持每个订阅有多个本地 Exchange 连接器。 对于有多个 E
 
 使用 Exchange ActiveSync 支持 5,000 台或更多设备时，可以配置可选设置以提高连接器的性能。 通过使 Exchange 能够使用 PowerShell 命令运行空间的多个实例，可以实现更高的性能。 
 
-在进行此更改之前，请确保用于运行 Exchange 连接器的帐户不用于其他 Exchange 管理目的。 这是因为 Exchange 每个帐户的运行空间限制为 18 个，其中大部分运行空间都将被连接器使用。 
+在进行此更改之前，请确保用于运行 Exchange 连接器的帐户不用于其他 Exchange 管理目的。 这是因为 Exchange 每个帐户的运行空间数有限，其中大部分运行空间都将被连接器使用。 
 
 此性能更改不适用于在较旧或性能低下的硬件上运行的连接器。  
 

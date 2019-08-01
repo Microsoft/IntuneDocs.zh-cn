@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671056"
 ---
-# <a name="monitor-device-encryption"></a>监视设备加密  
+# <a name="monitor-device-encryption-with-intune"></a>使用 Intune 监视设备加密   
 
 Microsoft Intune 加密报表是查看有关受管理设备的加密状态详细信息的集中位置。 查看有关设备加密状态的详细信息，并查找管理设备恢复密钥的选项。 可用的恢复密钥选项取决于要查看的设备类型。  
 
@@ -59,7 +59,7 @@ Microsoft Intune 加密报表是查看有关受管理设备的加密状态详细
     
     有关详细信息，请参阅 Windows 文档中的 [BitLocker 配置服务提供商 (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)。  
 
-  - **未就绪**：设备不具完备的加密功能，但仍支持加密。 例如，用户可以手动加密 Windows 设备，也可以通过可设置为无需 TMP 即可加密的组策略加密设备。
+  - **未就绪**：设备不具完备的加密功能，但仍支持加密。 例如，用户可以手动加密 Windows 设备，也可以通过可设置为无需 TPM 即可加密的组策略加密设备。
   - **不适用**：用于对此设备进行分类的信息不足。  
 
 - **加密状态** – OS 驱动器是否加密。  
@@ -93,8 +93,6 @@ Microsoft Intune 加密报表是查看有关受管理设备的加密状态详细
 - **配置文件状态摘要** – 适用于此设备的配置文件摘要。 摘要表示适用配置文件中的最不利条件。 例如，如果几个适用的配置文件中只有一个导致错误，则配置文件状态摘要将显示“错误”   。  
 
 - **状态详细信息** – 关于设备加密状态的高级详细信息。  
-  > [!NOTE]
-  > 只有在完成 7 月版本推出之后（即将推出），才完全支持 FileVault。 在推出完成之前，macOS 的设备状态详细信息和设备加密详细信息可能不会准确地显示在加密报表中。
 
   > [!IMPORTANT]  
   > 对于 Windows 10 设备，Intune 仅显示运行 Windows 10 2019 年 4 月更新或更高版本的设备的状态详细信息   。  

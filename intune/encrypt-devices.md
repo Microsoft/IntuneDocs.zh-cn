@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57b459efa5b423f1c73a0d6b7b9172f71f4c86d3
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375173"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467470"
 ---
 # <a name="use-device-encryption-with-intune"></a>使用 Intune 设备加密  
 
@@ -66,10 +66,7 @@ FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行
 
    例如：若要检索丢失或最近轮换的恢复密钥，请从任意设备登录 Intune 公司门户网站。 在门户中，转到“设备”并选择已启用 FileVault 的设备，然后选择“获取恢复密钥”   。 系统会显示当前恢复密钥。  
 
-6. 配置其余设置以满足你的业务需求，然后选择“确定”  。  
-
-   > [!NOTE]
-   > 只有在完成 7 月版本推出之后（即将推出），才完全支持 FileVault。 在推出完成之前，如果配置 FileVault，则必须将“FileVault 延期至注销”设置为“启用”   。  
+6. 配置其余 [FileVault 设置](endpoint-protection-macos.md#filevault)以满足业务需求，然后选择“确定”  。  
 
 7. 完成其他设置配置，然后保存配置文件。  
 

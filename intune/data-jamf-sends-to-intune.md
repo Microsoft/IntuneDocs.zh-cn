@@ -1,7 +1,7 @@
 ---
 title: JAMF Pro 向 Intune 发送的数据
 titleSuffix: Microsoft Intune
-description: Jamf Pro 向 Microsoft Intune 发送的数据的列表
+description: 集成 Jamf Pro 使用 Intune 管理 Mac 后，请查看 Jamf Pro 发送到 Microsoft Intune 的数据列表。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 287ed06ddab0b98117aa4a75942087f360e4656d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048544"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670900"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro 向 Intune 发送的数据
 
@@ -70,7 +70,7 @@ ms.locfileid: "66048544"
 * 用户电子邮件
 
 
-通过在“所有设备”视图中选择“删除”，可从 Intune 控制台中删除 Jamf 托管设备。 通过选择多个设备并单击“删除”，可启用批量设备删除。
+通过在“所有设备”视图中选择“删除”，可从 Intune 控制台中删除 Jamf 托管设备   。 通过选择多个设备并单击“删除”，可启用批量设备删除  。
 
 获取有关如何[在 Jamf Pro 文档中删除 Jamf 托管设备](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的信息。还可通过 [Jamf 支持](https://www.jamf.com/support/)提交支持票证，获取更多帮助。 
 

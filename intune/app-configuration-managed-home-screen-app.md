@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374847"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482865"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>配置适用于 Android Enterprise 的 Microsoft 托管主屏幕应用
 
@@ -386,6 +386,9 @@ ms.locfileid: "68374847"
 
 ## <a name="googles-android-device-policy-app"></a>Google 的 Android 设备策略应用
 托管主屏幕应用现在可以访问 Google 的 Android 设备策略应用。 托管主屏幕应用是一种自定义启动器，用于使用多应用展台模式在 Intune 中注册为 Android Enterprise (AE) 专用设备的设备。 你可以访问 Android 设备策略应用，或引导用户访问 Android 设备策略应用，以获取支持和进行调试。 此启动功能在设备注册并锁定到托管主屏幕时可用。 无需其他安装项，即可使用此功能。
+
+## <a name="managed-home-screen-debug-screen"></a>托管的主屏幕调试屏幕
+可以通过单击“后退”按钮访问托管的主屏幕的调试屏幕，直到显示调试屏幕（单击“后退”按钮 15 次或更多次）   。 在此调试屏幕中，可以启动 Android 设备策略应用程序、查看和上传日志，或临时暂停展台模式以更新设备。 有关暂停展台模式的详细信息，请参阅 Android Enterprise [专用设备设置](device-restrictions-android-for-work.md#dedicated-device-settings)中的“退出展台模式”  项。
 
 ## <a name="next-steps"></a>后续步骤
 
