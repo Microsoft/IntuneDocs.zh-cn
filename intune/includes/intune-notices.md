@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 4423e731bc1538cd2454de32f0d50f2d08eedc69
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670933"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68775842"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
 
@@ -36,6 +36,10 @@ Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2
 为避免在即将到来的 2020 年夏季出现功能降低的情况，建议采取如下操作：
 - 不要将新设备加入设备管理员管理中。
 - 如果希望设备接收到 Android 10 的更新，请将其从设备管理员管理迁移到 Android Enterprise 管理和/或应用保护策略。
+
+#### <a name="additional-information"></a>其他信息
+- [从设备管理员迁移到 Android Enterprise 的 Google 指南](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
+- [弃用设备管理员 API 计划的 Google 文档](https://developers.google.com/android/work/device-admin-deprecation)
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>将 Android 公司门户应用更新到最新版本 <!--4536963-->
 Intune 定期发布 Android 公司门户应用的更新。 在 2018 年 11 月，我们发布了一次公司门户更新，其中包括后端开关，以便为 Google 从现有通知平台更改为 Google 的 Firebase 云消息传递 (FCM) 做好准备。 随着 Google 停用其现有通知平台并迁移到 FCM，最终用户需要将他们的公司门户应用至少更新到 2018 年 11 月版本，以便继续与 Google Play 商店通信。
