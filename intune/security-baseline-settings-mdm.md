@@ -1,7 +1,7 @@
 ---
 title: 适用于 Windows 10 的 Intune 安全基线设置
 titleSuffix: Microsoft Intune
-description: 用于管理 Windows 10 的 Intune 安全基线设置
+description: 查看使用 Intune 管理的 windows 10 设备的 Windows MDM 安全基线中的默认设置和可用设置。
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491909"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680042"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>适用于 Intune 的 MDM 安全基线设置  
 
 查看 Microsoft Intune 运行 Windows 10 或更高版本的设备所支持的 MDM 安全基线设置。 此基线中的设置的默认值表示适用设备的推荐配置, 并且可能与其他安全基线的基线默认值不匹配。  
 
-最新的基准版本为**2019 年春季更新 (19H1) 的 MDM 安全基线**  
+最新的基准版本为**适用于2019的 MDM 安全基线**  
 
 若要了解先前版本中此基线的最新版本中的更改内容, 请参阅[新模板中的更改内容](#whats-changed-in-the-new-template)。  
 
 > [!NOTE]  
-> 2019年6月, 预览版 MDM 安全基线已替换为 "*用于春季2019更新 (19H1) 的 MDM 安全基线*" 模板, 该模板可用 (不在预览中)。 在*春季 2019 update (19H1) 基线的 Mdm 安全基线*可用性之前创建的配置文件不会更新, 以反映针对春季 2019 Update (19H1) 版本的 Mdm 安全基线中的设置和值。  尽管不能基于预览模板创建新的配置文件, 但可以编辑并继续使用之前基于预览模板创建的配置文件。   
+> 2019年6月, 预览版 MDM 安全基线已替换为 " *5 月版 2019* " 模板的版本, 该版本已正式发布 (不是预览版)。 在2019年5月的版本中, 在*Mdm 安全基线*的可用性之前创建的配置文件不会更新以反映在5月2019版的 Mdm 安全基线中的设置和值。  尽管不能基于预览模板创建新的配置文件, 但可以编辑并继续使用之前基于预览模板创建的配置文件。   
   
 若要了解如何将安全基线与 Intune 配合使用, 请参阅[使用安全基线](security-baselines.md)。  
 
@@ -1825,7 +1825,7 @@ ms.locfileid: "68491909"
   **默认值**：已启用
 
 ## <a name="whats-changed-in-the-new-template"></a>新模板中的更改
-"*春季2019更新 (19H1)" 的 "MDM 安全基线*" 模板具有对*预览*模板的以下更改。
+" *5 月 2019" 模板的 MDM 安全基线*与*预览*模板中的以下更改有关。
 
 ### <a name="changes-to-the-baseline-settings"></a>更改基线设置
 以下设置为：

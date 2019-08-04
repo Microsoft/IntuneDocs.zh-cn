@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794371"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680048"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -114,6 +114,9 @@ SDK 依靠 [Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> 此时, Remapper 的问题会阻止 Xamarin Android 应用中的调试。 建议在解决此问题之前对应用程序进行手动集成。
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重命名的方法](app-sdk-android.md#renamed-methods)
 在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `OnCreate()` 并调用 `base.OnCreate()`）时，`Activity` 必须替代 `OnMAMCreate()` 并调用 `base.OnMAMCreate()`。
 
@@ -177,7 +180,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 对于 `Xamarin.Forms` 应用程序，`Microsoft.Intune.MAM.Remapper` 包将 `MAM` 类注入常用 `Xamarin.Forms` 类的类层次结构中，从而自动执行 MAM 类替换。 
 
 > [!NOTE]
-> 除了上面详述的 Xamarin.Android 集成之外，还要完成 Xamarin.Forms 集成。
+> 除了上面详述的 Xamarin.Android 集成之外，还要完成 Xamarin.Forms 集成。 Remapper 的行为与 Xamarin 应用程序的行为方式不同, 因此仍需要执行手动 MAM 替换。
 
 将重映射器添加到项目后，需要执行 MAM 等效替换。 如果将对 `OnCreate` 和 `OnResume` 的替代分别替换为 MAM 等效的 `OnMAMCreate` 和 `OnMAMResume`，则 `FormsAppCompatActivity` 和 `FormsApplicationActivity` 可以继续在应用程序中使用。
 
@@ -199,6 +202,9 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 
 > [!NOTE]
 > 重映射器重写了 Visual Studio 用于 IntelliSense 自动完成的依赖项。 因此，在为 IntelliSense 添加重映射器时，可能需要重载并重新生成项目，以正确识别更改。
+
+#### <a name="troubleshooting"></a>疑难解答
+* 如果你在启动时在应用程序中遇到空白的白屏, 你可能需要强制在主线程上执行导航调用。
 
 ### <a name="company-portal-app"></a>公司门户应用
 Intune SDK Xamarin 绑定依赖于设备上是否存在[公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)Android 应用来启用应用保护策略。 公司门户从 Intune 服务中检索应用保护策略。 应用初始化时，它会加载策略和代码以强制从公司门户实施该策略。 用户无需登录。
