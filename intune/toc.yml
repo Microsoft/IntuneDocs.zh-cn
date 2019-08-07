@@ -703,18 +703,20 @@
           href: tenant-status.md
         - name: 故障排除
           items:
+            - name: 帮助用户排查问题
+              href: help-desk-operators.md
             - name: 注册疑难解答
               items:
                 - name: iOS 设备注册疑难解答
                   href: troubleshoot-ios-enrollment-errors.md
                 - name: Windows 设备注册疑难解答
                   href: troubleshoot-windows-enrollment-errors.md
-            - name: 帮助用户排查问题
-              href: help-desk-operators.md
             - name: 公司资源访问权限问题疑难解答
               href: troubleshoot-company-resource-access-problems.md
             - name: 应用安装问题疑难解答
               href: troubleshoot-app-install.md
+            - name: 排除设备操作故障
+              href: troubleshoot-device-actions.md
             - name: 移动应用程序管理故障排除
               href: troubleshoot-mam.md
             - name: Intune 活动的审核日志

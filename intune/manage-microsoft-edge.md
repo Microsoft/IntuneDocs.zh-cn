@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
-ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287217"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701011"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
 
@@ -76,9 +76,6 @@ Microsoft Edge 的 Microsoft Intune 保护策略有助于保护组织的数据�
 
 9. 在“分配”部分，选择“用户和组”，然后选择要向其分配此策略的用户或组   。
 
-    > [!NOTE]
-    > 还必须使用 Intune 应用保护策略选择目标用户，以便接收应用配置策略。 有关创建 Intune 应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)。
-
 10. 在“分配”部分，选择“云应用”，选择要使用此策略保护的应用   。
 
 配置以上策略后，会强制要求用户使用 Microsoft Edge 访问已通过此策略保护的 Azure AD 连接的 Web 应用。 如果用户尝试在此情况下使用非托管浏览器，他们会收到一条消息，指示他们必须使用 Microsoft Edge。
@@ -96,8 +93,6 @@ SSO 要求设备通过 Microsoft Authenticator 应用（iOS 设备）或 Intune 
 > 设备注册是 Azure AD 服务的简单签入。 不需要完整的设备注册，并且不会向 IT 提供设备上的任何其他权限。
 
 ## <a name="create-a-protected-browser-app-configuration"></a>创建受保护的浏览器应用配置
-
-对于要应用的应用配置，用户的受保护浏览器或设备上的其他应用必须已由 [Intune 应用保护策略](app-protection-policy.md)托管。
 
 若要创建适用于 Microsoft Edge 的应用配置，请执行以下操作：
 

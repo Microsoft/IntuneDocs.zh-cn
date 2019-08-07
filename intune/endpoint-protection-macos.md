@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467422"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756510"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 MacOS 终结点保护设置  
 
@@ -97,11 +97,18 @@ ms.locfileid: "68467422"
     - **个人恢复密钥轮换**-指定设备的个人恢复密钥将旋转的频率。 您可以选择 "**未配置**" 或 " **1**到**12**个月" 的默认值。  
 
   - **注销时禁用提示**  
-    禁止提示用户在注销时启用 FileVault。如果设置为 "禁用", 则会禁用注销时的提示, 而是在用户登录时提示用户。  
+    禁止提示用户在注销时启用 FileVault。如果设置为 "启用", 则会禁用注销时的提示, 而是在用户登录时提示用户。  
     - 未配置   
-    - **禁用**  
+    - **启用**-在注销时禁用提示。
 
     **默认值**：未配置  
+
+     > [!IMPORTANT]  
+     > 如果设置 "**在注销时禁用提示**" 设置为 "*启用*", 则会出现一个已知问题。 如果设置为 "*启用*", 则 "**允许绕过的次数**" 设置必须设置为一个值, 且不能设置为 "*未配置*"。 如果设置为 "*未配置*", 则设备上的配置文件将失败。 在这种情况下, 设备会将其报告为 "  **配置文件状态摘要**", 而无需进一步的详细信息。
+     > 
+     > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则*不能配置***允许绕过的次数**, 也不能具有值。  
+     > 
+     > 此问题将在将来的更新中解决。 
 
   - **允许绕过的次数**  
   设置用户在需要 FileVault 之前允许用户登录所需的提示的次数。  

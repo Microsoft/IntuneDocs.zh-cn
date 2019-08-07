@@ -1,11 +1,12 @@
 ---
-title: Intune 的 Windows 10 传递优化设置 | Microsoft Docs
+title: Intune 的 Windows 10 传递优化设置
+titleSuffix: Microsoft Intune
 description: 可以使用 Intune 部署的适用于 Windows 10 设备的传递优化设置。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493905"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756569"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune 的传递优化设置
 
@@ -66,6 +67,15 @@ Intune 控制台中的大多数选项都直接映射到传递优化设置，Wind
 | [最长缓存期限（以天为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | 指定每个文件成功下载后，文件在设备的传递优化缓存中保存的期限。   <br><br>使用 Intune 配置缓存期限（以天为单位）。 定义的天数转换为相应秒数，这是 Windows 定义此设置的方式。 例如，Intune 配置为 3 天，在设备上会转换为 259200 秒（3 天）。  <br><br>**默认值**：没有配置任何值      <br><br>**建议**：7   <br><br>策略 CSP：[DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | 最大缓存大小类型  | 查看详情     | 选择如何管理传递优化使用的设备上的磁盘空间量。 如果未配置缓存大小，则默认为可用磁盘空间的 20%。  <br><ul><li>**未配置**（默认）</li><br><li>**绝对值** - 指定[最大缓存绝对大小（以 GB 为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size)，以配置设备可用于传递优化的最大驱动器空间量。 如果将其设置为 0（零），缓存大小将不受限制，但是当设备磁盘空间不足时，传递优化将清除缓存。 <br><br>要求使用 Windows 1607<br><br> 策略 CSP：[DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**百分比** - 指定[最大缓存大小（以百分比为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size)，以配置设备可用于传递优化的最大驱动器空间量。 百分比是可用的驱动器空间，并且传递优化会不断评估可用的驱动器空间，并清除缓存以使最大缓存大小低于设置的百分比。 <br><br>要求使用 Windows 1511<br><br>策略 CSP：[DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [VPN 对等缓存](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | 选择“启用”可以将设备配置为在通过 VPN 连接到域网络时参与对等缓存  。 启用的设备可以从 VPN 或公司域网络上下载或上传到其他域网络设备。  <br><br>**默认值**：未配置  <br><br>策略 CSP：[DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>本地服务器缓存  
+
+|Setting  |Windows 版本  |详细信息  |
+|---------|-----------------|---------|
+|缓存服务器主机名 | 1809  |指定设备将用于传递优化的网络缓存服务器的 IP 地址或 FQDN, 然后选择 "**添加**" 将该项添加到列表中。  <br><br>**默认值**：未配置  <br><br>策略 CSP: [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[延迟前台下载缓存服务器回退 (秒)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |指定一个时间 0-2592000 (以秒为单位), 以将缓存服务器的回退延迟到用于前台内容下载的 HTTP 源。 当策略延迟从 http 进行前台下载时, 它将首先应用 (以允许从对等机下载)。 (0-2592000)    <br><br>**默认值**：0  <br><br>策略 CSP [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |
+|[延迟后台下载缓存服务器回退 (秒)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |指定一个时间 0-2592000 (以秒为单位), 以将缓存服务器的回退延迟到 HTTP 源以获取背景内容下载。 配置*延迟后台 HTTP 下载 (以秒为单位)* 后, 该设置将首先应用于允许来自对等方的下载。 (0-2592000)   <br><br>**默认值**：0 <br><br>策略 CSP: [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>后续步骤
 
