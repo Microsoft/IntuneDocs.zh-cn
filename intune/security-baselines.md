@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671021"
+ms.locfileid: "68679974"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>使用安全基线在 Intune 中配置 Windows 10 设备
 
@@ -67,7 +67,7 @@ ms.locfileid: "68671021"
 以下安全基线实例可与 Intune 一起使用。 使用链接可以查看每个基线的最新实例的设置。 
 
 - **MDM 安全基线**
-  - [2019 年春季的 MDM 安全基线 (19H1)](security-baseline-settings-mdm.md)
+  - [2019 年 5 月 MDM 安全基线](security-baseline-settings-mdm.md)
   - [预览版：2018 年 10 月的 MDM 安全基线](security-baseline-settings-mdm-archive.md)
 
 - **Microsoft Defender ATP 基线**  

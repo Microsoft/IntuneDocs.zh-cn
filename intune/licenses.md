@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,35 +16,40 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec97819e49bdb1564b8dd75b23302608492e183
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 38b381fca17dec66303958ee04c018967ae0d999
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397332"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833534"
 ---
-# <a name="licenses-that-include-intune"></a>包括 Intune 的许可证
+# <a name="microsoft-intune-licensing"></a>Microsoft Intune 许可
+Microsoft Intune 可满足不同的客户需求，并适用于不同的组织规模，包括为学校和小型企业提供的简单易用管理体验，以及企业客户所需的更高级功能。 只要订阅处于活动状态，包含 Microsoft Intune 的大多数许可证还会授予使用 System Center Configuration Manager 的权限。 
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+## <a name="microsoft-intune"></a>Microsoft Intune
+以下许可证包含 Intune：
 
-下表显示了每种许可证可使用哪个版本的 Intune：
+- Microsoft 365 E5
+- Microsoft 365 E3
+- 企业移动性 + 安全性 E5
+- 企业移动性 + 安全性 E3
+- Microsoft 365 Business
+- Microsoft 365 F1
 
-| 许可 | 包括的 Intune 版本 | 价格和功能比较 |
-|-----------------------------------------------------------------------|-------------------------------------------------------------|---|
-| Intune | Intune | [了解详细信息](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| 企业移动性 + 安全性 E3 | Intune | [了解详细信息](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| 企业移动性 + 安全性 E5 | Intune | [了解详细信息](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Education A1 | 教育的 Intune | [了解详细信息](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A3 | 教育的 Intune | [了解详细信息](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A5 | 教育的 Intune | [了解详细信息](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 E3 | Intune | [了解详细信息](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 E5 | Intune | [了解详细信息](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 F1 | Intune | [了解详细信息](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 Business | Intune | [了解详细信息](https://www.microsoft.com/en-us/microsoft-365/business) |
 
-不在此列表中的许可证中不包含 Intune。
 
-如果用户直接或间接受益于某许可证下的任何功能，则需要使用相应的正确许可证。
+## <a name="microsoft-intune-for-education"></a>Microsoft Intune for Education
+以下许可证中包含 Intune for Education：
 
-若要向用户分配许可证，请参阅文章[向用户帐户分配 Intune 许可证](licenses-assign.md)。
+- Microsoft 365 Education A5
+- Microsoft 365 Education A3
 
+## <a name="additional-information"></a>其他信息
+- 除了上面列出的捆绑包外，Microsoft Intune 用户和设备订阅也可以作为独立订阅提供。
+- Microsoft Intune 设备专用订阅适用于不使用用户关联功能的展台类型方案。
+- 如果用户或设备直接或间接受益于 Microsoft Intune 服务（包括通过 [Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) 访问 Microsoft Intune 服务），必须有相应的 Microsoft Intune 许可证。
+- 如果 Intune 不包含在许可证中，也不包含在上面的表中。
+
+有关产品版本、产品许可更新、批量许可计划的最新信息，以及与特定用例相关的其他信息，请访问 [Microsoft 许可](https://www.microsoft.com/licensing/default)页。  
+
+有关用户和设备许可证如何影响对服务的访问，以及如何向用户分配许可证，请参阅[向用户帐户分配 Intune 许可证](licenses-assign.md)这篇文章。

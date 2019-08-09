@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9ac1830bcc407431cf0a5df8e8c11baa0c27c9c
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625103"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700998"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -99,7 +99,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
     - **最终用户许可协议(EULA)** ：（Windows 10 版本 1709 或更高版本）选择是否向用户显示 EULA。
     - **隐私设置**：选择是否向用户显示隐私设置。
     >[!IMPORTANT]
-    >对于 Windows 10 版本 1903 设备及更高版本上的 Autopilot 部署，诊断数据默认值自动设置为“完整”。 有关详细信息，请参阅 [Windows 诊断数据](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
+    >“诊断数据”设置的默认值因 Windows 版本而异。 对于运行 Windows 10 版本 1903 的设备，默认值在全新体验期间设置为“完全”。 有关详细信息，请参阅 [Windows 诊断数据](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
     - **隐藏更改帐户选项（需要 Windows 10 版本 1809 或更高版本）** ：选择“隐藏”可防止在公司登录和域错误页上显示更改帐户选项。  要执行此操作，需[在 Azure Active Directory 中配置公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)。
     - **用户帐户类型**：选择用户的帐户类型（“管理员”或“标准”用户   ）。

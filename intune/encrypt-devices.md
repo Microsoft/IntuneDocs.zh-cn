@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467470"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756547"
 ---
 # <a name="use-device-encryption-with-intune"></a>使用 Intune 设备加密  
 
@@ -67,6 +67,13 @@ FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行
    例如：若要检索丢失或最近轮换的恢复密钥，请从任意设备登录 Intune 公司门户网站。 在门户中，转到“设备”并选择已启用 FileVault 的设备，然后选择“获取恢复密钥”   。 系统会显示当前恢复密钥。  
 
 6. 配置其余 [FileVault 设置](endpoint-protection-macos.md#filevault)以满足业务需求，然后选择“确定”  。  
+
+   > [!IMPORTANT]  
+   > 如果将“禁止在注销时提示”  设置设为“启用”  ，则存在一个已知问题。 设置为“启用”  时，必须将“允许绕过的次数”  设置设为具体值，不得设置为“未配置”  。 如果设置为“未配置”  ，配置文件会无法在设备上运行。 在这种情况下，设备会将“配置文件状态摘要”  报告为“错误”  ，且不提供更多详细信息。
+   > 
+   > 当“禁止在注销时提示”  设置设为“未配置”  时，“允许绕过的次数”  可以是“未配置”  ，也可以是具体值。  
+   > 
+   > 此问题将在今后发布的更新中予以解决。 
 
 7. 完成其他设置配置，然后保存配置文件。  
 

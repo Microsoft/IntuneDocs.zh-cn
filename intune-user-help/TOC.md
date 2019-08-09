@@ -39,8 +39,8 @@
 ### 操作系统问题
 #### [更新设备](you-need-to-update-your-android-device.md)
 #### [不支持的版本](your-android-version-isnt-yet-supported.md)
-#### [设备已取得 root 权限，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [缺少必需的证书](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [设备为根设备，无法连接](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [缺少必需的证书](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [关闭未知源](you-need-to-turn-off-unknown-sources-android.md)
 #### [关闭 USB 调试](you-need-to-turn-off-usb-debugging-android.md)
 #### [打开安全威胁扫描](you-need-to-turn-on-scanning-for-security-threats-android.md)

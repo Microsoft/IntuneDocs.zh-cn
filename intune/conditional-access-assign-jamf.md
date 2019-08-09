@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680011"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上强制实现符合性
 
@@ -33,7 +33,10 @@ ms.locfileid: "67045212"
 ## <a name="set-up-device-compliance-policies-in-intune"></a>在 Intune 中设置设备符合性策略
 
 1. 打开 Microsoft Azure，然后导航到“Intune”   > “设备符合性”   > “策略”  。 可以为 macOS 创建策略，其中包括针对不符合要求的用户和组选择一系列操作（例如发送警告电子邮件）。
-2. 搜索所需的组，然后向其应用策略。
+2. 先选择策略，再选择“分配”。 可以包括或排除 Azure Active Directory (AD) 安全组。
+3. 选择“选定组”，以查看 Azure AD 安全组。 先选择要应用此策略的用户组，再选择“保存”，以向用户部署此策略。
+
+此时，已将策略应用于用户。 此策略定目标到的用户所使用的设备会接受合规性评估，并在 Azure Active Directory 中对“需要标记为合规的设备”设置标记为合规。
 
 > [!Note]
 > Intune 要求全磁盘加密，以符合要求。

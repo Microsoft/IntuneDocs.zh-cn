@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884884"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783243"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -116,7 +116,7 @@ Intune 提供两个部署选项：独立和混合。 “独立”是指在云中
 
 ## <a name="intune-tenant-location"></a>Intune 租户位置
 
-如果组织拥有全球布局，请确保在订阅服务时规划租户所在的位置。 首次注册 Intune 订阅并映射到下面所列的全球各区域时，将定义国家/地区：
+如果组织拥有全球布局，请确保在订阅服务时规划租户所在的位置。 国家/地区在你首次注册 Intune 订阅并映射到下面所列的全球各国家/地区时定义：
 
 - 北美
 
@@ -125,7 +125,7 @@ Intune 提供两个部署选项：独立和混合。 “独立”是指在云中
 - 亚太地区
 
 >[!IMPORTANT]
-> 之后不能更改国家/地区和租户位置。
+> 之后便无法更改国家/地区和租户位置。
 
 ## <a name="external-dependencies"></a>外部依赖关系
 

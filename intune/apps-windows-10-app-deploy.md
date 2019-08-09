@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680076"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 部署 Windows 10 应用 
 
@@ -34,6 +34,8 @@ Microsoft Intune 当前支持 Windows 10 设备上的各种应用类型和部署
 > 部署现代应用所需的最小 Windows 10 更新如下所示：
 > - 对于 Windows 10 1803，[2018 年 5 月 23 日 - KB4100403（操作系统内部版本 17134.81）](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)。
 > - 对于 Windows 10 1709，[2018 年 6 月 21 日 - KB4284822（操作系统内部版本 16299.522）](https://support.microsoft.com/help/4284822)。
+>
+> 如果未关联主要用户，只有 Windows 10 1803 及更高版本支持安装应用。
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 业务线应用
 

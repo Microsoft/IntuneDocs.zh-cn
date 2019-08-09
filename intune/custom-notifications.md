@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660380"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680104"
 ---
 # <a name="send-custom-notifications-in-intune"></a>使用 Intune 发送自定义通知  
 
@@ -38,8 +38,9 @@ ms.locfileid: "68660380"
 ## <a name="considerations-for-using-custom-notifications"></a>使用自定义通知的注意事项  
 
 **设备配置**：  
-- 设备必须安装公司门户应用，用户才可以接收自定义通知。 它们还必须配置权限，以允许公司门户应用发送推送通知。 公司门户将提示用户允许发送通知。  
+- 设备必须安装公司门户应用，用户才可以接收自定义通知。 它们还必须配置权限，以允许公司门户应用发送推送通知。 公司门户会提示用户允许接收安装或更新通知。  
 - 在 Android 上，Google Play Services 是必备依赖项。  
+- 设备必须已注册 MDM。
 
 **创建通知**：  
 - 若要创建消息，请使用分配了包含“组织”的“更新”权限的 Intune 角色的帐户   。 若要向用户分配权限，请参阅[角色分配](role-based-access-control.md#role-assignments)  
