@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625122"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862145"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>安装组织所需证书丢失  
 
-如果设备未在 Intune 中注册，并且缺少公司支持人员所需的特定证书，则无法登录到公司门户应用。 在尝试登录时，你将看到以下消息：
+如果设备未在 Intune 中注册, 并且缺少所需的证书, 你将无法登录到公司门户应用。 在尝试登录时，你将看到以下消息：
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -43,8 +43,8 @@ ms.locfileid: "68625122"
 
 1. 在公司门户应用中, 将鼠标移到右侧角并选择菜单。  
 2. 选择“设置”  。  
-3. 在 "**启用浏览器访问**" 旁边, 选择 "**启用**"。  
-4. 在 "设备管理员" 屏幕上, 选择 "**激活**"。 
+3. 在 " **启用浏览器**访问 **"** 旁边, 选择 "启用"。  
+4. 在 "设备管理员" 屏幕上 **,** 选择 "激活"。 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>通过 web 搜索标识并下载缺少的证书
 完成这些步骤以在你的设备上手动标识并安装证书。  
@@ -82,3 +82,7 @@ ms.locfileid: "68625122"
 7. 重新打开公司门户应用。 现在应能够登录到公司门户应用。 如需帮助，请与公司支持人员联系。
 
 如果看到相同的“缺少证书”消息（如之前所示），且已经按照步骤执行了操作，说明可能存在另一个需要公司支持人员帮助你安装的证书。 请使用[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上提供的联系信息，联系公司支持人员获取帮助。
+
+## <a name="next-steps"></a>后续步骤  
+
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

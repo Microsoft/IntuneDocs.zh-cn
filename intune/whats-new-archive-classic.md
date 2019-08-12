@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09a996e3e1a47cae33e8a4189b4406a940acfe3
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: d414295966580e0dd91ce2b94757509fd13bdfbe
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353272"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783138"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
 
@@ -178,7 +178,7 @@ IOS 10.3 发行版于 2017 年 3 月 27 面向 iOS 用户推出。 所有现有�
 由于中国地区没有 Google Play 商店，Android 设备必须从中国的市场获取应用。 公司门户将支持此工作流，方法是将中国的 Android 用户重定向为从本地应用商店下载公司门户和 Outlook 应用。 对于移动设备管理和移动应用程序管理，此举将改善启用条件性访问策略时的用户体验。 下列中文应用商店中提供适用于 Android 的公司门户和 Outlook 应用：
 
 - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
-- [小米](https://go.microsoft.com/fwlink/?linkid=836947)
+- [小米](http://en.miui.com/thread-469541-1-1.html)
 - [腾讯](https://go.microsoft.com/fwlink/?linkid=836949)
 - [华为](https://go.microsoft.com/fwlink/?linkid=836948)
 - [豌豆荚](https://go.microsoft.com/fwlink/?linkid=836950)
@@ -223,15 +223,15 @@ Microsoft 已宣布发布 Microsoft Teams 的通用版本。 适用于 iOS 和 A
 iOS 版公司门户应用内的链接（包括文档和应用链接）将通过 Safari 的应用内视图直接在公司门户应用中打开。 此更新将与 1 月的服务更新分开提供。
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows 设备的新 MDM 服务器地址 <!--893007-->
-Windows 和 Windows Phone 用户如果输入 __manage.microsoft.com__ 作为 MDM 服务器地址（出现提示时），尝试注册设备时将失败。 MDM 服务器地址已从 __manage.microsoft.com__ 更改为 __enrollment.manage.microsoft.com__。 通知用户在注册 Windows 和/或 Windows Phone 时，如果出现提示，请使用 __enrollment.manage.microsoft.com__ 作为 MDM 服务器地址。 无需更改 CNAME 设置。 有关此更改的详细信息，请访问[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)。
+Windows 和 Windows Phone 用户如果输入 __manage.microsoft.com__ 作为 MDM 服务器地址（出现提示时），尝试注册设备时将失败。 MDM 服务器地址已从 __manage.microsoft.com__ 更改为 __enrollment.manage.microsoft.com__ 。 通知用户在注册 Windows 和/或 Windows Phone 时，如果出现提示，请使用 __enrollment.manage.microsoft.com__ 作为 MDM 服务器地址。 无需更改 CNAME 设置。 有关此更改的详细信息，请访问[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange)。
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>适用于 Android 的公司门户应用的最新用户体验 <!--621622-->
 从 3 月开始，Android 适用的公司门户应用将按照[材料设计指南](https://material.io/guidelines/material-design/introduction.html)来打造更具现代感的外观。 改进的用户体验包括：
 
-* __颜色__：可以根据自定义调色板对选项卡标头着色。
-* __界面__：“应用”选项卡上已更新了“特色应用”和“所有应用”按钮。“搜索”按钮现在是浮动的操作按钮。
-* __导航__：“所有应用”以选项卡形式呈现出“特色”、“所有”和“分类”视图，便于导航。
-* __服务__：“我的设备”和“联系 IT”选项卡提高了可读性。
+* __颜色__ ：可以根据自定义调色板对选项卡标头着色。
+* __界面__ ：“应用”选项卡上已更新了“特色应用”和“所有应用”按钮。“搜索”按钮现在是浮动的操作按钮。
+* __导航__ ：“所有应用”以选项卡形式呈现出“特色”、“所有”和“分类”视图，便于导航。
+* __服务__ ：“我的设备”和“联系 IT”选项卡提高了可读性。
 
 可在 [UI 更新页](whats-new-app-ui.md)上查看最初和最后的图像。
 
@@ -322,13 +322,13 @@ Intune 将所有新设备都标记为个人所有，除非 IT 管理员将设备
 __注册移动到 Azure 门户时的多重身份验证__ <!--VSO 750545-->
 以前，管理员会进入 Intune 控制台或 Configuration Manager（2016 年 10 月之前的版本）控制台，以设置 MFA 用于 Intune 注册。 通过此更新的功能，现在可使用 Intune凭据登录 [Microsoft Azure 门户](https://manage.windowsazure.com)，并通过 Azure AD 配置 MFA 设置。 在[此处](https://aka.ms/mfa_ad)了解详细信息。
 
-__适用于 Android 的公司门户应用现已在中国推出__ <!--VSO 658093-->
+__适用于 Android 的公司门户应用现已在中国推出__  <!--VSO 658093-->
 我们将发布 Android 版公司门户应用，以供中国地区下载。 由于中国地区没有 Google Play 商店，Android 设备必须从中国的应用市场获取应用。 可在以下应用商店下载用于 Android 的公司门户应用：
 * [百度](https://go.microsoft.com/fwlink/?linkid=836946)
 * [华为](https://go.microsoft.com/fwlink/?linkid=836948)
 * [腾讯](https://go.microsoft.com/fwlink/?linkid=836949)
 * [豌豆荚](https://go.microsoft.com/fwlink/?linkid=836950)
-* [小米](https://go.microsoft.com/fwlink/?linkid=836947)
+* [小米](http://en.miui.com/thread-469541-1-1.html)
 
 Android 版公司门户应用使用 Google Play Services 与 Microsoft Intune 服务进行通信。 由于 Google Play Services 尚未在中国推出，因此执行以下任何任务最高可能需要 8 个小时才能完成。 
 
@@ -360,7 +360,7 @@ __适用于 Windows 10 设备的新 Microsoft Intune 公司门户__ Microsoft �
 新应用还允许用户们在 Windows 10 设备上利用传统平台功能，例如单一登录 (SSO) 和基于证书的身份验证。 此应用将作为对现有 Windows 8.1 公司门户和 Windows Phone 8.1 公司门户（安装自 Microsoft 应用商店）的升级而提供。 有关详细信息，请转到 [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp)。
 
 > [!IMPORTANT]
-> __Intune 和 Android for Work 上的更新__虽然可通过“必需”  操作部署 Android for Work 应用，但如果已将 Intune 组迁移至新的 Azure AD 组体验，则只可以将应用部署为“可用”  。
+> __Intune 和 Android for Work 上的更新__ 虽然可通过“必需”  操作部署 Android for Work 应用，但如果已将 Intune 组迁移至新的 Azure AD 组体验，则只可以将应用部署为“可用”  。
 
 __Intune App SDK for Cordova 插件现在支持 MAM（无需注册设备）__ 应用开发人员现在可以使用 Intune App SDK for Cordova 插件启用 MAM 功能，且无需在适用于 Android 和 iOS 的基于 Cordova 的应用中注册设备。 可在[此处](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)找到 Intune App SDK for Cordova 插件。
 
@@ -368,11 +368,11 @@ __Intune App SDK Xamarin 组件现在支持 MAM（无需注册设备）__ 应用
 
 ### <a name="notices"></a>通知
 
-__上传 Symantec 签名证书不再需要已签名的 Windows Phone 8 公司门户__上传 Symantec 签名证书不再需要已签名的 Windows Phone 8 公司门户应用。 可以独立上传该证书。
+__上传 Symantec 签名证书不再需要已签名的 Windows Phone 8 公司门户__ 上传 Symantec 签名证书不再需要已签名的 Windows Phone 8 公司门户应用。 可以独立上传该证书。
 
 ### <a name="deprecations"></a>弃用功能
 
-__对 Windows Phone 8 公司门户的支持__将取消对 Windows Phone 8 公司门户的支持。 2016 年 10 月弃用了对 Windows Phone 8 和 WinRT 平台的支持。 2016 年 10 月弃用了对 Windows 8 公司门户的支持。
+__对 Windows Phone 8 公司门户的支持__ 将取消对 Windows Phone 8 公司门户的支持。 2016 年 10 月弃用了对 Windows Phone 8 和 WinRT 平台的支持。 2016 年 10 月弃用了对 Windows 8 公司门户的支持。
 
 
 ## <a name="see-also"></a>另请参阅
