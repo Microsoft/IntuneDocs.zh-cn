@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511924"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783025"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>在管理中注册组织提供的 macOS 设备
 
@@ -40,10 +40,10 @@ ms.locfileid: "67511924"
 完成以下步骤以在管理中注册 macOS 设备。 如果使用的是自己的设备，而不是组织提供的设备，请按照[个人设备和自带设备](enroll-your-device-in-intune-macos-cp.md)步骤进行操作。  
 
 1. 打开 macOS 设备电源。 
-2. 选择“国家/地区”，然后单击“继续”  。  
+2. 选择你所在的国家/地区，再单击“继续”  。  
 
    ![macOS 设备设置助理“欢迎”屏幕的屏幕截图，显示可供选择的语言列表。](./media/macos-dep-welcome-1808.png)   
-3. 选择键盘布局。 此列表根据所选国家/地区显示一个或多个选项。 要查看所有布局选项，而不考虑所选国家/地区，请单击“全部显示”  。 完成后，单击“继续”  。  
+3. 选择键盘布局。 此列表根据你选择的国家/地区显示一个或多个选项。 若要查看所有布局选项（无论你选择的是哪个国家/地区），请单击“全部显示”  。 完成后，单击“继续”  。  
 
    ![macOS 设备设置助理“键盘布局”屏幕的屏幕截图，显示可供选择的键盘语言列表、未选中的“全部显示”选项以及“后退”和“继续”按钮。](./media/macos-dep-keyboard-1808.png)  
 4. 选择 Wi-Fi 网络。 必须具有 Internet 连接才能继续设置。 如果未看到网络或需要通过有线网络进行连接，请单击“其他网络选项”  。 完成后，单击“继续”  。  

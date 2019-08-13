@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f2015bb6997861d8856c7fe89662c21be105f5b
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
-ms.translationtype: MTE75
+ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482949"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783213"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -636,7 +636,7 @@ public interface MAMNotificationReceiver {
 > [!NOTE]
 > 应用不能同时注册 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA` 通知。
 
-### <a name="managementremoved"></a>MANAGEMENT_REMOVED
+### <a name="management_removed"></a>MANAGEMENT_REMOVED
 
 `MANAGEMENT_REMOVED` 通知表示前一名策略托管用户将不再由 Intune MAM 策略托管。 这不需要擦除用户数据或注销用户（如果必须进行擦除，系统将发送 `WIPE_USER_DATA` 通知）。 许多应用可能根本不需要处理此通知，不过使用 `MAMDataProtectionManager` 的应用应[特别留意此通知](#data-protection)。
 
@@ -1370,7 +1370,7 @@ BackupAgent 使你可以更明确要备份哪些数据。 因为主要由开发�
 
   * 如果阻止标识切换，其结果与 `Receive` 共享设置禁止数据流入的结果相同。
 
-  * 如果服务在主线程上运行，则**必须**同步调用 `reportIdentitySwitchResult` 或挂起 UI 线程。
+  * 如果服务在主线程上运行，必须  同步调用 `reportIdentitySwitchResult`，否则 UI 线程会停止响应。
 
   * 若要创建 `Activity`，将在 `onMAMCreate` 之前调用 `onMAMIdentitySwitchRequired`  。 如果应用必须显示 UI 来确定是否允许切换标识，则必须使用*另一*活动显示该 UI。
 

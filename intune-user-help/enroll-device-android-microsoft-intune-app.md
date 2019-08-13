@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735758"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862203"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>使用 Microsoft Intune 应用注册公司设备
 
@@ -50,9 +50,9 @@ ms.locfileid: "67735758"
 
      如果系统指示使用其他方法，请继续执行步骤 3。    
 
-1. 连接 Wi-Fi，然后点击“下一步”  。 按照与注册方法匹配的步骤操作。 
+3. 连接 Wi-Fi，然后点击“下一步”  。 按照与注册方法匹配的步骤操作。 
 
-    * 令牌：转到 Google 登录屏幕后，完成[令牌注册](#token-enrollment)中的步骤。    
+    * 令牌：转到 Google 登录屏幕后，完成[令牌注册](#token-enrollment)中的步骤。  
     * Google Zero Touch：连接到 Wi-Fi 后，组织会识别你的设备。 继续执行步骤 4 并按照屏幕上的提示进行操作，直到设置完成。    
  
        ![Google 条款屏幕的示例图像，如果使用的是 Google Zero Touch，其中会突出显示“接受并继续”按钮。](./media/google-zero-touch-intune-app-01.png)   
@@ -78,21 +78,19 @@ ms.locfileid: "67735758"
 
    ![“设置工作电话”屏幕的示例图像，其中突出显示“安装”按钮。](./media/fully-managed-intune-app-11.png)   
 
-10. 收到设备准备就绪的消息时，请点击“完成”  。 
+10. 点击 **"** 开始" 打开 Microsoft Intune 应用并注册设备。 
 
-11. 请转到应用，然后打开 Microsoft Intune 应用。 选择“登录”  。 
+    ![“设置工作电话”屏幕的示例图像，其中突出显示了“开始”按钮。](./media/fully-managed-intune-app-17.png)   
 
-12. 在“设置访问”屏幕上，将看到待处理任务的列表  。 点击“继续”  。  
+11. 点击 **"登录** ", 然后**点击** "下一步" 开始注册。 当你看到注册已完成的消息时, 点击 **"** 完成"。  
 
-       ![Microsoft Intune 应用“设置访问”屏幕的示例图像，其中显示待处理任务。](./media/fully-managed-intune-app-14.png)   
+    ![示例图像: 设置访问权限, 注册设备屏幕, 突出显示 "完成" 按钮。](./media/fully-managed-intune-app-19.png)   
 
-13. 设备注册完成后，点击“继续”  。 Microsoft Intune 可能会提示更新其他设备设置。   
+10. 收到设备准备就绪的消息后，点击“完成”  。  
 
-       ![Microsoft Intune 应用“更新设备设置”屏幕的示例图像。](./media/fully-managed-intune-app-15-2.png)   
+    ![“设置工作电话”屏幕的示例图像，其中突出显示了“完成”按钮。](./media/fully-managed-intune-app-18.png)   
 
-14. 列表中的所有项显示绿色圆圈时，表明设置已完成。 现在即可访问公司资源。  
-
-       ![Microsoft Intune 应用“设置访问”屏幕的示例图像，其中显示已完成的任务。](./media/fully-managed-intune-app-16.png)   
+如果在访问组织的资源时遇到问题, 可能需要更新设备上的其他设置。 登录到 Microsoft Intune 应用以检查所需的更新。   
 
 
 ## <a name="qr-code-enrollment"></a>QR 码设备注册  
@@ -118,11 +116,7 @@ ms.locfileid: "67735758"
 
 3. 在“注册此设备”屏幕上，选择“下一步”   。  
 
-   ![“注册此设备”屏幕的示例图像。 该图像显示 QR 码的说明，其中突出显示了“下一步”按钮。](./media/token-intune-app-02.png)  
-
-4. 选择“输入条形码”  。
-
-   ![可用 QR 码扫描仪的示例屏幕截图。 该截图突出显示了“输入条形码”按钮。](./media/token-intune-app-03.png)  
+4. 选择“输入条形码”  。  
 
 5. 在“扫描或输入条形码”屏幕上，键入组织提供的条形码  。  然后单击 **“下一步”** 。  
 
