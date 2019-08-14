@@ -16,7 +16,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
 ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/03/2019
 ms.locfileid: "68756510"
@@ -106,7 +106,7 @@ ms.locfileid: "68756510"
      > [!IMPORTANT]  
      > 如果设置 "**在注销时禁用提示**" 设置为 "*启用*", 则会出现一个已知问题。 如果设置为 "*启用*", 则 "**允许绕过的次数**" 设置必须设置为一个值, 且不能设置为 "*未配置*"。 如果设置为 "*未配置*", 则设备上的配置文件将失败。 在这种情况下, 设备会将其报告为 "  **配置文件状态摘要**", 而无需进一步的详细信息。
      > 
-     > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则*不能配置***允许绕过的次数**, 也不能具有值。  
+     > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则 *不能配置* **允许绕过的次数**, 也不能具有值。  
      > 
      > 此问题将在将来的更新中解决。 
 

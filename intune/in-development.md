@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969e7bc4804e1f66230c76d742bec2c67c2fa006
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
-ms.translationtype: HT
+ms.openlocfilehash: 95eede7c62e728aa0dbade4478eb87f31c252558
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670925"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833551"
 ---
 # <a name="in-development-for-microsoft-intune---august-2019"></a>开发过程中的 Microsoft Intune 功能 - 2019 年 8 月
 
@@ -62,7 +62,7 @@ ms.locfileid: "68670925"
 当设备在用户或设备组级别上取消注册时, 管理员将能够管理是否在设备上删除或保留应用。 
 
 ### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>为适用于企业的 Microsoft Store 应用分类 <!-- 3926922 -->
-你将能够为业务应用 Microsoft Store 分类。 为此, 请选择 " **Intune** > **客户端应用** > **应用**> 选择" 适用于企业应用的 Microsoft Store >**应用信息** > "**类别**。 在下拉菜单中, 分配一个类别。
+你将能够为业务应用 Microsoft Store 分类。 为此, 请选择 **"**  > Intune  客户端应用 > 应用  >选择适用于企业应用 > 应用的 Microsoft Store信息   > 类别。  在下拉菜单中, 分配一个类别。
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>为组织帐户配置应用通知内容 <!-- 2576686 -->
 Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制组织帐户的应用通知内容。 此功能需要应用程序的支持, 可能无法用于所有启用应用的应用程序。 有关 APP 的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)。
 
@@ -73,7 +73,7 @@ Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制�
 ## <a name="device-configuration"></a>设备配置
 
 ### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809----"></a>某些无人监督的 iOS 设备限制将仅在 iOS 13.0 版本中受到监督 <!-- 4867809  -->
-某些设置将仅适用于使用 iOS 13.0 版本的受监督设备。 这些设置包括：
+某些设置将适用于从 iOS 13.0 版开始的监督设备。 这些设置包括：
 
 - App Store、文档查看和游戏
   - App Store
@@ -98,16 +98,16 @@ Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制�
 - iOS 13.0 及更高版本
 
 ### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709----"></a>新设置以及对现有设置的更改以限制 iOS 和 macOS 设备上的功能 <!-- 4867699 4867709  -->
-你将能够创建配置文件以限制运行 iOS 和 macOS 的设备上的设置 (**设备配置** > **文件** > 为平台**创建配置文件** > **iOS**或**macOS** )键入 >**设备限制**)。 将添加以下功能：
+你将能够创建配置文件以限制运行 iOS 和 macOS 的设备上的设置 **(设备**配置 >   文件 > **创建配置文件** > iOS  或macOS  的平台**类型 > 设备限制**)。 将添加以下功能：
 
-- 在**macOS** > **设备限制** > **云和存储**中, 使用新的 "**移交**" 设置来阻止用户在一个 macOS 设备上启动工作, 并继续在另一个 macOS 或 iOS 设备上工作。
+- 在**macOS** > 设备限制   >   云和存储**中, 使用新的 "移交** " 设置来阻止用户在一个 macOS 设备上启动工作, 并继续在另一个 macOS 或 iOS 设备上工作。
   要查看最新设置，请转到[使用 Intune 允许或限制功能的 macOS 设备设置](device-restrictions-macos.md)。
 - 在**iOS** > **设备限制**中, 有一些更改:
-  - **内置应用程序** > **查找我的 iPhone (仅限监督模式)** : 在 "查找我的应用" 功能中阻止此功能的新设置。 
-  - **内置应用** > **查找朋友 (仅限监督**的设备): 在 "查找我的应用" 功能中阻止此功能的新设置。 
-  -   > **Wi-fi 状态的无线修改 (仅限被监督的设备)** : 阻止用户在设备上打开或关闭 wi-fi 的新设置。
-  - **键盘和字典** > **QuickPath (仅限被监督**的设备): 阻止 QuickPath 功能的新设置。
-  - **云和存储**:**活动延续**会重命名为 "**提交**"。
+  - **内置**应用程序 >   查找我的 iPhone (仅限监督模式): 在 "查找我的应用" 功能中阻止此功能的新设置。 
+  -  内置应用 >   查找朋友 (仅限监督的设备): 在 "查找我的应用" 功能中阻止此功能的新设置。 
+  - **Wi-fi**状态的无线 > **修改 (仅限被监督的**设备): 阻止用户在设备上打开或关闭 wi-fi 的新设置。
+  - **键盘和字典** >   QuickPath (仅限被监督的设备): 阻止 QuickPath 功能的新设置。
+  - **云和存储**: **活动延续**会重命名**为**"提交"。
 
   要查看最新设置，请转到[使用 Intune 允许或限制功能的 iOS 设备设置](device-restrictions-ios.md)。
 
@@ -116,7 +116,7 @@ Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制�
 - iOS 13 和更高版本
 
 ### <a name="control-the-apps-files-documents-and-folders-that-open-when-user-signs-in-to-macos-devices---3914202----"></a>控制用户登录 macOS 设备时打开的应用、文件、文档和文件夹 <!--3914202  -->
-你将能够在 macOS 设备上启用和配置功能 (**设备配置** > **文件** > 为平台 >**设备功能** **创建配置文件** > **macOS**配置文件类型)。 
+你将**能够在 macOS 设备上启用和配置功能 (设备配置** >    > 文件**创建配置文件**  > 配置文件类型的**平台 >** 设备功能的 macOS  )。 
 
 将有新的登录项设置, 用于控制用户登录已注册设备时打开的应用、文件、文档和文件夹。 
 
@@ -126,13 +126,13 @@ Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制�
 - macOS
 
 ### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946----"></a>多应用模式下 Android 企业专用设备的新增功能 <!-- 3755304 3041943 3041946  -->
-你将能够在 Android 企业专用设备上控制展台样式体验中的功能和设置。 为此, 请选择 "**设备配置** > **文件** > " "**创建配置文件** > **Android Enterprise** for platform >**设备所有者",** 并选择 "配置文件类型的设备限制"。
+你将能够在 Android 企业专用设备上控制展台样式体验中的功能和设置。 为此, 请选择 **"设备** > **配置**文件" > "创建配置文件   > Android企业  "仅适用于  平台 > 设备所有者, 配置文件类型的设备限制。
 
 将添加以下功能：
-- **专用设备** > **多应用**: 可通过在设备上向上轻扫, 或在屏幕上浮动, 使用户可以移动**虚拟主页按钮**。
-- **专用设备** > **多应用**:**闪光灯访问权限**允许用户使用闪光灯。 
-- **专用设备** > **多应用**:**媒体音量控制**允许用户使用滑块控制设备的媒体音量。 
-- **专用设备** > **多应用**: 启用屏幕保护程序、上传自定义映像, 并控制何时显示屏幕保护程序。
+- **专用设备** > 多应用  :可通过在设备  上向上轻扫, 或在屏幕上浮动, 使用户可以移动虚拟主页按钮。
+- **专用设备** > 多应用  :闪光灯访问  权限允许用户使用闪光灯。 
+- **专用设备** > 多应用  :媒体音量  控制允许用户使用滑块控制设备的媒体音量。 
+- **专用设备** >   多应用: 启用屏幕保护程序、上传自定义映像, 并控制何时显示屏幕保护程序。
 
 要查看当前设置，请转到[便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置](device-restrictions-android-for-work.md#dedicated-device-settings)。
 
@@ -167,11 +167,11 @@ Android 和 iOS 设备上的 Intune 应用保护策略 (应用) 允许您控制�
 - 屏幕时间
 - Touch ID 设置
 
-为此, 请执行 "**设备注册** > " "**Apple 注册** > " "注册**计划令牌**" > 选择 >**配置文件**的令牌 > 选择配置文件 > "**属性** > " "**编辑"** **设置助理自定义**旁边。
-有关设置助理自定义的详细信息, 请参阅[创建 Apple 注册配置文件](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)。
+为此, 请使用 " **设备注册** >   " "Apple注册  >   " "注册计划令牌" > 选择令牌 >配置  文件 > 选择配置文件 **>** 属性 > "自**定义" 旁边**的 "编辑  "。
+有关设置助理自定义的详细信息, [请参阅创建 Apple 注册](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)配置文件。
 
 ### <a name="android-enrollment-device-administrator-support----4869749----"></a>Android 注册设备管理员支持 <!-- 4869749  -->
-Android 设备管理员注册选项将添加到 android 注册页面 (**Intune** > **设备注册** > **Android 注册**)。 默认情况下, 将为所有租户启用 Android 设备管理员。  
+Android 设备管理员注册选项将添加到 android  注册页面 (Intune > **设备注册** > Android注册  )。 默认情况下, 将为所有租户启用 Android 设备管理员。  
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>对于 iOS 设备, 自定义公司门户的 "注册过程隐私" 屏幕 <!-- 4394993  -->
 使用 markdown, 你可以自定义公司门户的隐私屏幕, 最终用户可以在 iOS 注册过程中看到这些屏幕。 具体而言, 你将能够自定义你的组织无法在设备上看到或执行的操作的列表。
@@ -183,7 +183,7 @@ Android 设备管理员注册选项将添加到 android 注册页面 (**Intune**
 每个 Android 设备的 "硬件" 页上的新条目将包括设备的操作系统内部版本号。
 
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>将自动设备清理时间限制为减少到30天 <!--4231059  -->
-在上次登录后, 你将能够将自动设备清理时间限制设置为短于30天 (而非当前限制为90天)。 为此, 请参阅**Intune** > **设备** > **设置** > **设备清理规则**。
+在上次登录后, 你将能够将自动设备清理时间限制设置为短于30天 (而非当前限制为90天)。 为此, 请参阅 Intune > 设备 > 设置 > 设备清理规则。    
 
 <!-- ***********************************************-->
 ## <a name="role-based-access-control"></a>基于角色的访问控制
