@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 08/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494482"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550174"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -57,13 +57,13 @@ ms.locfileid: "67494482"
 - **在系统卷上安装应用数据**：选择“阻止”可阻止应用在设备的系统卷上存储数据  。 选择“未配置”（默认）则允许应用在系统磁盘卷上存储数据  。
 - **在系统驱动器上安装应用**：选择“阻止”可阻止在设备的系统驱动器上安装应用  。 选择“未配置”（默认）则允许在系统驱动器上安装应用  。
 - **游戏 DVR**（仅桌面版）：选择“阻止”可禁用 Windows 游戏录制和播放  。 选择“未配置”（默认）则允许录制和播放游戏  。
-- **应用商店的应用仅**： 当用户从 Microsoft Store 以外位置安装应用时，此设置确定用户体验。 选项包括：
+- **仅限来自应用商店的应用**: 此设置确定用户从 Microsoft Store 以外的位置安装应用时的用户体验。 选项包括：
 
-  - **未配置**（默认值）： 允许最终用户安装来自 Microsoft Store，包括其他策略设置中定义的应用程序以外位置的应用。  
-  - **随处**： 关闭应用程序的建议，并允许用户从任何位置安装应用。  
-  - **仅存储**： 强制最终用户只安装 Microsoft Store 应用。
-  - **建议**： 从 web 中的 Microsoft Store 安装应用，用户将看到一条消息，建议他们从应用商店下载。  
-  - **更喜欢存储**： 在 Microsoft Store 以外位置安装应用时向用户发出警告。
+  - **未配置**(默认值): 允许最终用户从 Microsoft Store 以外的位置安装应用, 包括其他策略设置中定义的应用。  
+  - **任何地方**: 关闭应用建议, 并允许用户从任何位置安装应用。  
+  - **仅限应用商店**: 强制最终用户仅从 Microsoft Store 安装应用。
+  - **建议**: 从 Microsoft Store 中提供的 web 安装应用时, 用户将看到一条消息, 建议用户从应用商店下载该应用。  
+  - **首选存储**: 当用户安装来自 Microsoft Store 以外的位置时警告用户。
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
@@ -429,7 +429,7 @@ ms.locfileid: "67494482"
 
 这些设置使用 [DeviceLock 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)，该策略还列出了受支持的 Windows 版本。
 
-- **密码**：选择“必需”  ，最终用户输入密码才能访问设备。 选择“未配置”（默认）可允许在没有密码的情况下访问设备  。 适用于仅限本地帐户。 保持配置的 Active Directory (AD) 和 Azure AD 域帐户密码。
+- **密码**：选择“必需”  ，最终用户输入密码才能访问设备。 选择“未配置”（默认）可允许在没有密码的情况下访问设备  。 仅适用于本地帐户。 域帐户密码保留 Active Directory (AD) 和 Azure AD 配置。
 
   - **所需的密码类型**：选择密码类型。 选项包括：
     - **未配置**：密码可以包含数字和字母。
@@ -440,7 +440,7 @@ ms.locfileid: "67494482"
     > [!IMPORTANT]
     > 当 Windows 桌面的密码要求更改时，用户下次登录时会受到影响，因为此时设备从空闲状态变为活动状态。 密码满足要求的用户仍然会被提示更改密码。
     
-  - **登录失败多少次后擦除设备**：输入身份验证失败多少次后可擦除设备，最多为 11 次。 由版本决定您输入有效数字。 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)列出了支持的值。 如果为 `0`（零），可能会禁用设备擦除功能。
+  - **登录失败多少次后擦除设备**：输入身份验证失败多少次后可擦除设备，最多为 11 次。 输入的有效数字取决于版本。 [DeviceLock/MAXDEVICEPASSWORDFAILEDATTEMPTS CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)列出了支持的值。 如果为 `0`（零），可能会禁用设备擦除功能。
 
     此设置的影响也因版本而异。 有关此设置的具体详细信息，请参阅 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)。
 
@@ -753,9 +753,6 @@ ms.locfileid: "67494482"
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
-  > [!WARNING]
-  > Azure 门户中 Intune 中的此设置可能会显示“失败”状态。 这是报告功能的一个 bug。 在重新生成行为并进行故障排除之后，Intune 产品组确认状态实际上是成功的。 我们会在即将发布的版本中解决报告的 bug。 随着时间线的变化，目前没有 ETA。 对此功能的任何更新都在 [Microsoft Intune 开发过程中的功能](in-development.md)中公布。
-
 - **要执行的系统扫描类型**：计划系统扫描，包括扫描级别以及运行扫描的日期和时间。 选项包括：
   - **未配置**：不在设备上计划系统扫描。 最终用户可根据需要在其设备上手动运行扫描。
   - **禁用**：禁用设备上的所有系统扫描。 如果使用的是扫描设备的合作伙伴防病毒解决方案，请选择此选项。
@@ -776,9 +773,6 @@ ms.locfileid: "67494482"
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
-
-  > [!WARNING]
-  > Azure 门户中 Intune 中的此设置可能会显示“失败”状态。 这是报告功能的一个 bug。 在重新生成行为并进行故障排除之后，Intune 产品组确认状态实际上是成功的。 我们会在即将发布的版本中解决报告的 bug。 随着时间线的变化，目前没有 ETA。 对此功能的任何更新都在 [Microsoft Intune 开发过程中的功能](in-development.md)中公布。
 
 - **检测可能不需要的应用程序**：在 Windows 检测到可能不需要的应用程序时选择保护级别。 选项包括：
   - **未配置**（默认）：禁用 Windows Defender 可能不需要的应用程序保护。

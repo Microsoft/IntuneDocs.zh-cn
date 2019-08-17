@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
+ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046974"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69487752"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>使用 Intune 将 Windows 10 及更高版本设备作为展台运行的设置
 
@@ -66,9 +66,7 @@ ms.locfileid: "66046974"
     > [!NOTE]
     > 此设置会在设备上启用 Microsoft Edge 浏览器。 要配置 Microsoft Edge 专属设置，请创建设备配置文件（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10”（针对平台），再选择“设备限制” >  “Microsoft Edge 浏览器”       ）。 [Microsoft Edge 浏览器](device-restrictions-windows-10.md#microsoft-edge-browser)列出并介绍了可用设置。
 
-    选择“确定”，保存所做更改  。
-
-  - **添加展台浏览器**：选择“展台浏览器设置”  。 这些设置控制展台上的 Web 浏览器应用。 确保从应用商店获取[展台浏览器应用](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP)，将其作为[客户端应用](apps-add.md)添加到 Intune，然后将应用分配到展台设备。
+  - **添加展台浏览器**：选择“展台浏览器设置”  。 这些设置控制展台上的 Web 浏览器应用。 请确保从应用商店获取[展台浏览器应用](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP), 并将其作为[客户端应用](apps-add.md)添加到 Intune。 然后, 将应用分配到展台设备。
 
     输入以下设置：
 
@@ -91,15 +89,14 @@ ms.locfileid: "66046974"
       `http://bing.com`  
       `https://bing.com`  
       `http://contoso.com/*`  
-      `https://contoso.com/*`  
+      `https://contoso.com/*`
 
-    选择“确定”，保存所做更改  。
+    > [!NOTE]
+    > 使用 Microsoft 展台浏览器启用了自动登录功能的 Windows 10 网亭必须使用来自 Microsoft Store for Business 的脱机许可证。 此要求是因为自动登录使用的本地用户帐户没有 Azure Active Directory (AD) 凭据。 因此, 无法评估联机许可证。 有关详细信息，请参阅[分发脱机应用](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)。
 
   - **添加商店应用**：选择“添加商店应用”，再从列表中选择应用  。
 
     未列出任何应用？ 使用[客户端应用](apps-add.md)中的步骤添加一些应用。
-
-  选择“确定”，保存所做更改  。
 
 ## <a name="multi-app-kiosks"></a>多应用展台
 
@@ -132,8 +129,6 @@ ms.locfileid: "66046974"
       > [!NOTE]
       > 此设置会在设备上启用 Microsoft Edge 浏览器。 要配置 Microsoft Edge 专属设置，请创建设备配置文件（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10”（针对平台），再选择“设备限制” >  “Microsoft Edge 浏览器”       ）。 [Microsoft Edge 浏览器](device-restrictions-windows-10.md#microsoft-edge-browser)列出并介绍了可用设置。
 
-      选择“确定”，保存所做更改  。
-
     - **添加展台浏览器**：这些设置控制展台上的 Web 浏览器应用。 请确保使用[客户端应用](apps-add.md)向展台设备部署 Web 浏览器应用。
 
       输入以下设置：
@@ -152,13 +147,12 @@ ms.locfileid: "66046974"
 
         若要允许特定网站，请上传包含允许的网站列表的 .csv 文件。 如果未添加 .csv 文件，则允许所有网站。
 
-      选择“确定”，保存所做更改  。
+      > [!NOTE]
+      > 使用 Microsoft 展台浏览器启用了自动登录功能的 Windows 10 网亭必须使用来自 Microsoft Store for Business 的脱机许可证。 此要求是因为自动登录使用的本地用户帐户没有 Azure Active Directory (AD) 凭据。 因此, 无法评估联机许可证。 有关详细信息，请参阅[分发脱机应用](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)。
 
   - 应用程序 
 
     - 添加应用商店应用  ：从适用于企业的 Microsoft Store 中添加应用。 如果未列出任何应用，则可以获取应用，并[将其添加到 Intune](store-apps-windows.md)。 例如，可以添加展台浏览器、Excel、OneNote 等。
-
-      选择“确定”，保存所做更改  。
 
     - 添加 Win32 应用  ：Win32 应用是一个传统的桌面应用，如 Visual Studio Code 或 Google Chrome。 输入以下属性：
 
@@ -166,14 +160,10 @@ ms.locfileid: "66046974"
       - 本地路径  ：必填。 输入可执行文件的路径，例如 `C:\Program Files (x86)\Microsoft VS Code\Code.exe` 或 `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`。
       - **应用程序用户模型 ID (AUMID)** ：输入 Win32 应用的应用程序用户模型 ID (AUMID)。 此设置确定桌面上磁贴的开始布局。 若要获取此 ID，请参阅 [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)。
 
-      选择“确定”，保存所做更改  。
-
     - 按 AUMID 添加  ：使用此选项可添加收件箱 Windows 应用，如记事本或计算器。 输入以下属性：
 
       - 应用程序名称  ：必填。 输入应用程序的名称。
       - 应用程序用户模型 ID (AUMID)  ：必填。 输入 Windows 应用的应用程序用户模型 ID (AUMID)。 若要获取此 ID，请参阅[查找已安装应用的应用程序用户模型 ID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)。
-
-      选择“确定”，保存所做更改  。
 
     - **自动启动**：可选。 选择在用户登录时要自动启动的应用程序。 仅自动启动一个应用。
     - 磁贴大小  ：必填。 选择“小”、“中”、“宽”或“大”的应用磁贴大小。
@@ -186,8 +176,6 @@ ms.locfileid: "66046974"
 - Windows 任务栏  ：选择“显示”  或“隐藏”  任务栏。 默认情况下，不会显示任务栏。 可以看到图标（如 Wi-fi 图标），但最终用户无法更改这些设置。
 
 - **允许访问 Downloads 文件夹**：选择“是”，让用户能够访问 Windows 资源管理器中的 Downloads 文件夹  。 默认禁用对 Downloads 文件夹的访问。 此功能通常由最终用户用来访问从浏览器下载的项目。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="next-steps"></a>后续步骤
 

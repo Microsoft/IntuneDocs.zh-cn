@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
-ms.translationtype: HT
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756510"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960419"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 MacOS 终结点保护设置  
 
@@ -82,6 +82,9 @@ ms.locfileid: "68756510"
 ## <a name="filevault"></a>FileVault  
 有关 Apple FileVault 设置的详细信息, 请参阅 Apple 开发人员内容中的[FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) 。 
 
+> [!IMPORTANT]  
+> 10.15 macOS, FileVault 配置要求用户批准 MDM 注册。 
+
 - **FileVault**  
   可以在运行 macOS 10.13 和更高版本的设备上通过 FileVault 使用 XTS-AES 128*启用*完整磁盘加密。  
   - 未配置   
@@ -104,7 +107,7 @@ ms.locfileid: "68756510"
     **默认值**：未配置  
 
      > [!IMPORTANT]  
-     > 如果设置 "**在注销时禁用提示**" 设置为 "*启用*", 则会出现一个已知问题。 如果设置为 "*启用*", 则 "**允许绕过的次数**" 设置必须设置为一个值, 且不能设置为 "*未配置*"。 如果设置为 "*未配置*", 则设备上的配置文件将失败。 在这种情况下, 设备会将其报告为 "  **配置文件状态摘要**", 而无需进一步的详细信息。
+     > 如果将“禁止在注销时提示”  设置设为“启用”  ，则存在一个已知问题。 设置为“启用”  时，必须将“允许绕过的次数”  设置设为具体值，不得设置为“未配置”  。 如果设置为“未配置”  ，配置文件会无法在设备上运行。 在这种情况下，设备会将“配置文件状态摘要”  报告为“错误”  ，且不提供更多详细信息。
      > 
      > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则 *不能配置* **允许绕过的次数**, 也不能具有值。  
      > 

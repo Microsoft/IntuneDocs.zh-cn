@@ -4,7 +4,7 @@ description: Microsoft 365 企业版包含 Microsoft Intune。 了解 Intune 如
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 08/14/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427314"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022869"
 ---
 # <a name="what-is-device-management"></a>什么是设备管理？ 
 
@@ -75,7 +75,7 @@ Intune 包含在 Microsoft 365 中，并与 Azure Active Directory (Azure AD) �
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>使用“设备管理”管理中心简化 IT 任务
 
-[设备管理管理中心](https://devicemanagement.portal.azure.com/)是一站式服务，可管理和完成移动设备的任务。 此工作区包括用于设备管理（包括 Intune 和 Azure Active Directory）和客户端应用管理的服务。 
+[设备管理管理中心](https://devicemanagement.microsoft.com/)是一站式服务，可管理和完成移动设备的任务。 此工作区包括用于设备管理（包括 Intune 和 Azure Active Directory）和客户端应用管理的服务。 
 
 在 "设备管理" 管理中心, 你可以:
 
