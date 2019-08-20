@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c4b1541de3500089bafc388779a3cfe97fbd29
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756573"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993705"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 设备注册问题疑难解答
 
@@ -60,31 +60,31 @@ ms.locfileid: "68756573"
 
 ##### <a name="remove-devices-that-were-enrolled"></a>删除已注册的设备
 1. 登录到 [Azure 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。    
-2. 中转到 " **用户** > " "**所有用户**"。    
+2. 中转到 "**用户** > " "**所有用户**"。    
 3. 选择受影响的用户帐户, 然后单击 "**设备**"。    
 4. 选择任何未使用或不需要的设备, 然后单击 "**删除**"。 
 
-##### <a name="increase-thedevice-enrollment-limit"></a>增加设备注册限制
+##### <a name="increase-the-device-enrollment-limit"></a>增加设备注册限制
 
 > [!NOTE]
 > 此方法会增加所有用户的设备注册限制, 而不只是受影响的用户。
 
 1. 登录到 [Azure 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
-2. 中转到 " **设备注册** >" "注册 **限制**", 然后选择 " **设备限制**"。    
+2. 中转到 "**设备注册** > " "注册**限制**", 然后选择 "**设备限制**"。    
 3. 增加**设备限制**的值。 
 
-##### <a name="checkdevice-type-restrictions"></a>查看设备类型限制
-1. 使用全局管理员帐户登录到  [Intune 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) 。
-2. 中转到 " **设备注册** > " "注册**限制**", 然后在 " **设备类型限制**" 下选择 **默认**限制。    
-3. 选择 " **平台**", 然后选择 " **允许**  **Windows (MDM)** "。
+##### <a name="check-device-type-restrictions"></a>查看设备类型限制
+1. 使用全局管理员帐户登录 [Intune 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
+2. 中转到 "**设备注册** > " "注册**限制**", 然后在 "**设备类型限制**" 下选择**默认**限制。    
+3. 选择 "**平台**", 然后选择 "**允许** **Windows (MDM)** "。
 
     > [!IMPORTANT]
-    > 如果当前设置已 **允许**, 请将其更改为 " **阻止**", 保存设置, 然后将其更改回 " **允许** " 并再次保存设置。 这会重置注册设置。
+    > 如果当前设置已**允许**, 请将其更改为 "**阻止**", 保存设置, 然后将其更改回 "**允许**" 并再次保存设置。 这会重置注册设置。
 
 4. 等待大约15分钟, 然后再次注册受影响的设备。    
 
 ##### <a name="upgrade-windows-10-home"></a>升级 Windows 10 家庭版
-[将 windows 10 家庭版升级到 windows 10 专业](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) 版或更高版本。 
+将[windows 10 家庭版升级到 windows 10 专业](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro)版或更高版本。 
 
 
 
@@ -92,17 +92,17 @@ ms.locfileid: "68756573"
 
 错误 0x801c0003: "不允许此用户进行注册。 你可以重试, 或与系统管理员联系并提供错误代码801c0003。 "
 
-**原因:** **用户可以将设备加入到 Azure AD**设置设置为 "**无**"。 这会阻止新用户将其设备加入到 Azure AD。 因此, Intune 注册将失败。
+**原因:** **用户可以将设备加入到 Azure AD**设置设置为 "**无**"。 这会阻止新用户将其设备加入到 Azure AD。 因此, Intune 注册将失败。
 
 #### <a name="resolution"></a>解决方法
-1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/) 。    
-2. 请参阅**Azure Active Directory** > **** 设备" "**设备设置**"。>     
-3. 将“用户可以将设备加入 Azure AD”设置为“全部” ****  。    
+1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
+2. 请参阅**Azure Active Directory** >   设备 > ""**设备设置**"。    
+3. 将“用户可以将设备加入 Azure AD”设置为“全部”   。    
 4. 再次注册设备。   
 
 ### <a name="the-device-is-already-enrolled"></a>设备已注册。
 
-错误 8018000a: "出现错误。 设备已注册。  你可以与你的系统管理员联系并提供错误代码8018000a。 "
+错误 8018000a: "出现错误。 设备已注册。  你可以与你的系统管理员联系并提供错误代码8018000a。 "
 
 **原因:** 满足以下条件之一:
 - 其他用户已在 Intune 中注册了设备, 或已将设备加入 Azure AD。 若要确定是否是这种情况, 请参阅 "**设置** > " "**帐户** > " "**工作访问**"。 查找类似于以下内容的消息: "系统上的另一个用户已连接到工作或学校。 请删除此工作或学校连接, 然后重试。 "    
@@ -136,7 +136,7 @@ ms.locfileid: "68756573"
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>似乎未正确配置 MDM 使用条款终结点。
 
 **原因:** 满足以下条件之一: 
- - 在租户上使用 Office 365 和 Intune 的移动设备管理 (MDM), 尝试注册该设备的用户没有有效的 Intune 许可证或 Office 365 许可证。     
+ - 在租户上使用 Office 365 和 Intune 的移动设备管理 (MDM), 尝试注册该设备的用户没有有效的 Intune 许可证或 Office 365 许可证。     
 - Azure AD 中的 MDM 条款和条件为空或不包含正确的 URL。    
 
 #### <a name="resolution"></a>解决方法
@@ -144,12 +144,12 @@ ms.locfileid: "68756573"
 若要解决此问题, 请使用以下方法之一: 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>向用户分配有效的许可证
-中转到 [Microsoft 365 管理中心](https://portal.office.com/adminportal/home), 然后将 Intune 或 Office 365 许可证分配给用户。
+中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home), 然后将 Intune 或 Office 365 许可证分配给用户。
 
-##### <a name="correct-themdm-terms-of-use-url"></a>更正 MDM 使用条款 URL
-  1. 登录到 [Azure 门户](https://portal.azure.com/), 然后选择 " **Azure Active Directory**"。    
-  2. 选择 " **移动性 (MDM 和 MAM)** ", 然后单击 " **Microsoft Intune**"。    
-  3. 选择 " **还原默认 Mdm url**", 验证 **MDM 使用条款 url**是否设置为 **https://portal.manage.microsoft.com/TermsofUse.aspx** 。    
+##### <a name="correct-the-mdm-terms-of-use-url"></a>更正 MDM 使用条款 URL
+  1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”  。    
+  2. 选择 "**移动性 (MDM 和 MAM)** ", 然后单击 " **Microsoft Intune**"。    
+  3. 选择 "**还原默认 Mdm url**", 验证**MDM 使用条款 url**是否设置为 **https://portal.manage.microsoft.com/TermsofUse.aspx** 。    
   4. 选择 **“保存”** 。    
 
 
@@ -164,10 +164,10 @@ ms.locfileid: "68756573"
 #### <a name="resolution"></a>解决方法
 使用以下方法之一来解决此问题:
 
-##### <a name="disablemdm-automatic-enrollment-in-azure"></a>在 Azure 中禁用 MDM 自动注册。
-1. 登录到 [Azure 门户](https://portal.azure.com/)。    
-2. 请参阅 **Azure Active Directory** > **移动性 (MDM 和 MAM)**  > **Microsoft Intune**。    
-3. 将 " **MDM 用户范围**" 设置为 "**无**", 然后单击 "**保存**"。    
+##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>在 Azure 中禁用 MDM 自动注册。
+1. 登录到 [Azure 门户](https://portal.azure.com/)。    
+2. 请参阅**Azure Active Directory** > **移动性 (MDM 和 MAM)**  > **Microsoft Intune**。    
+3. 将 " **MDM 用户范围**" 设置为 "**无**", 然后单击 "**保存**"。    
      
 ##### <a name="uninstall"></a>“卸载”
 从计算机上卸载 Intune PC 客户端或 Configuration Manager 客户端代理。    
@@ -179,34 +179,34 @@ ms.locfileid: "68756573"
 **原因:** 客户端软件已过期。
 
 #### <a name="resolution"></a>解决方法
-1. 登录到 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
-2. 请参阅 " **管理员** > **客户端软件下载**", 然后单击 " **下载客户端软件**"。    
+1. 登录到 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
+2. 请参阅 "**管理员** > **客户端软件下载**", 然后单击 "**下载客户端软件**"。    
 3. 保存安装包, 然后安装客户端软件。 
 
 
 ### <a name="the-account-certificate-is-not-valid-and-may-be-expired"></a>帐户证书无效并可能已过期。
 
-错误: "帐户证书无效, 可能已过期, 0x80cf4017。"
+错误：“帐户证书无效并可能已过期，0x80cf4017。”
 
 **原因:** 客户端软件已过期。
 
 #### <a name="resolution"></a>解决方法
-1. 登录到 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
-2. 请参阅 " **管理员** > **客户端软件下载**", 然后单击 " **下载客户端软件**"。    
+1. 登录到 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
+2. 请参阅 "**管理员** > **客户端软件下载**", 然后单击 "**下载客户端软件**"。    
 3. 保存安装包, 然后安装客户端软件。    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>你的组织不支持此版本的 Windows。 
 
-错误: "出现问题。 你的组织不支持此版本的 Windows。  (出现代码 0x80180014) "
+错误: "出现问题。 你的组织不支持此版本的 Windows。  (出现代码 0x80180014) "
 
 **原因:** 在 Intune 租户中禁用了 Windows MDM 注册。
 
 #### <a name="resolution"></a>解决方法
 若要在独立 Intune 环境中解决此问题, 请执行以下步骤: 
  
-1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/) 。    
-2. 选择左侧的 " **Intune** ", 然后选择 " **设备注册** > " "注册**限制**"。    
-3. 在 " **设备类型限制**" 中, 单击 " **平台**", 然后选择 "**允许**  **Windows (MDM)** "。    
+1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
+2. 选择左侧的 " **Intune** ", 然后选择 "**设备注册** > " "注册**限制**"。    
+3. 在 "**设备类型限制**" 中, 单击 "**平台**", 然后选择 "**允许** **Windows (MDM)** "。    
 4. 单击 **“保存”** 。    
  
 若要在具有 Intune 和 Configuration Manager 的混合 MDM 中解决此问题, 请执行以下步骤: 
@@ -221,11 +221,11 @@ ms.locfileid: "68756573"
 **原因:** 不允许各自设置包的帐户包 (Package_GUID) 中的 Azure AD 用户帐户将设备加入 Azure AD。 当你使用 Windows 配置设计器 (WCD) 或设置 School Pc 应用程序设置设置包时, 会自动创建这些 Azure AD 帐户, 然后使用这些帐户将设备加入 Azure AD。
 
 #### <a name="resolution"></a>解决方法
-1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/) 。    
+1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
 2. **> 设备设置中转到 Azure Active Directory > 设备**"。    
-3. 设置 **用户可以将设备加入到**  **全部**或 **选定**Azure AD。
+3. 设置**用户可以将设备加入到** **全部**或**选定**Azure AD。
 
-   如果选择 " **** 选择", 请单击 " **选择**", 然后单击 " **添加成员**" 添加可以加入其设备的所有用户 Azure AD。 请确保已添加预配包的所有 Azure AD 帐户。
+   如果选择 "  选择", 请单击 "**选择**", 然后单击 "**添加成员**" 添加可以加入其设备的所有用户 Azure AD。 请确保已添加预配包的所有 Azure AD 帐户。
  
 有关如何为 Windows 配置设计器创建预配包的详细信息, 请参阅[创建适用于 windows 10 的预配包](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package)。
 
@@ -246,7 +246,7 @@ ms.locfileid: "68756573"
     ```
 **原因:** 满足以下条件之一: 
 - UPN 包含未经验证或不可路由的域, 如本地 ( joe@contoso.local如)。    
-- **MDM 用户作用域** 设置为 " **无**"。 
+- **MDM 用户作用域**设置为 "**无**"。 
 
 #### <a name="resolution"></a>解决方法
 如果 UPN 包含未经验证或不可路由的域, 请执行以下步骤: 
@@ -261,7 +261,7 @@ ms.locfileid: "68756573"
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-如果 **MDM 用户作用域** 设置为 " **无**", 请执行以下步骤: 
+如果**MDM 用户作用域**设置为 "**无**", 请执行以下步骤: 
  
 1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”  。
 2. 选择 "**移动性 (MDM 和 MAM)** ", 然后选择 " **Microsoft Intune**"。    
