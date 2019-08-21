@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36383df6474e46a9a82745f6a2e069b553f4aef9
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 2825286c652a7229c32435a24ca816f21b8f2ff4
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354246"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993745"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保护的应用  
 
@@ -45,7 +45,6 @@ Intune 托管应用启用了一组丰富的移动应用保护策略。 托管应
 |-------------------------------------------------|-------------------------|---------------------------------------------|
 | **Microsoft Azure 信息保护查看器**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | 使用 AIP 查看器应用，可以安全地与他人进行协作。 可以查看他人已与你共享的受保护文件（受权限保护的电子邮件、PDF 文件、图片、文本文件）。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.egress.switchdroid.intune)、[iOS 应用商店链接](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) | 
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings 是有助于跟踪预订、员工和客户的约会日程安排应用。 再也不会错过约会，并且爽约也会变少。<p>Bookings 应用可用于：<br><ul><li>查看和管理日历</li><li>随时随地创建预订或更改现有预订</li><li>查看员工成员的实时状态</li><li>轻松快速地响应客户</li><li>快速获取下一个预订的方向定位</li><li>管理客户列表</li></ul> | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
-| **Microsoft Connections**<p><img alt="Microsoft app - Microsoft Connections icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-connections.png" width="100"> | Microsoft Connections 有助于小型企业通过易用的电子邮件市场营销工具吸引并留住客户。 使用预设计的公告、新闻稿和引荐模板，可轻松创建专业的电子邮件市场营销活动。 | [iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-connections/id1172261641?mt=8) |  
 | **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | 使用个人助理 Cortana 可以随时了解工作和生活动态，非常快速、方便且有趣。 在手机上安装智能数字助理有助于随时随地跨设备跟踪重要事件。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.cortana)、<br>[iOS 应用商店链接](https://apps.apple.com/us/app/cortana/id1054501703) 
 | **Microsoft Dynamics CRM**<p><img alt="Microsoft app - Microsoft Dynamics CRM icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-dynamics-crm.png" width="100"> | 使用 Microsoft Dynamics CRM，不仅可以吸引客户，同时还能保持高效，无论是在工作，还是外出。 每次赴约都准备充分，在更新备注、任务、联系人、帐户、事例和潜在客户的同时，详细信息仍为最新。 销售人员可以在外出时按照上下文业务流程管理销售数据。 为代理和监督员提供全方位事例管理功能，方便他们自由移动。 “一次配置，到处部署”模型提供了顺畅用户体验。 适用于 iOS 和 Android。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone)、<br>[iOS 应用商店链接](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8) |  
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge 为 Windows 10 用户创建一种跨设备持续浏览体验。 由于内容和数据在后台无缝同步，因此用户可以跨设备浏览，分毫不差。 使用中心等熟悉的 Microsoft Edge 功能，用户可以通过减少杂乱的方式来整理网页，这样就能更轻松地随时随地查找、查看和管理自己的内容。 Microsoft Edge 旨在方便 Windows 10 用户按所需方式随时随地浏览 Web，而不会中断自己的工作流。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
