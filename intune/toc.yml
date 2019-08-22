@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: 应用保护策略交付
                   href: app-protection-policy-delivery.md
+                - name: 保护应用扩展
+                  href: app-protection-policy-extensions.md
                 - name: 监视应用保护用户状态
                   href: app-protection-policies-monitor.md
                 - name: 准备使用 WIP 应用保护策略
