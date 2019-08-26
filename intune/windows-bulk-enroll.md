@@ -16,12 +16,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403463"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651038"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -39,10 +39,10 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
 1. 从 Microsoft 应用商店下载 [Windows 配置设计器 (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22)。
    ![Windows 配置设计器应用商店的屏幕截图](media/bulk-enroll-store.png)
 
-2. 打开“Windows 配置设计器”  应用，然后选择“配置桌面设备”  。
+2. 打开“Windows 配置设计器”应用，然后选择“配置桌面设备”。
    ![在 Windows 配置设计器应用中选择配置桌面设备的屏幕快照](media/bulk-enroll-select.png)
 
-3. 此时，“新项目”  窗口打开，在其中指定以下信息：
+3. 此时，“新项目”窗口打开，在其中指定以下信息：
    - **名称** - 你的项目的名称
    - **项目文件夹** - 项目的保存位置
    - **说明** - 项目的可选说明![在 Windows 配置设计器应用中指定名称、项目文件夹和说明的屏幕快照](media/bulk-enroll-name.png)
@@ -54,26 +54,26 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
 5. （可选）可以配置 Wi-Fi 网络设备首次启动时所连接到的网络。  如果未配置网络设备，在设备首次启动时必须建立有线网络连接。
    ![在 Windows 配置设计器应用中启用包括网络 SSID 和网络类型选项的 Wi-Fi 的屏幕快照](media/bulk-enroll-network.png)
 
-6. 选择“在 Azure AD 中注册”  ，输入“批量令牌到期”  日期，然后选择“获取批量令牌”  。
+6. 选择“在 Azure AD 中注册”，输入“批量令牌到期”日期，然后选择“获取批量令牌”。
    ![Windows 配置设计器应用中的帐户管理屏幕截图](media/bulk-enroll-account.png)
 
 7. 提供你的 Azure AD 凭据，以获取批量令牌。
    ![Windows 配置设计器应用的登录屏幕截图](media/bulk-enroll-cred.png)
 
-8. 成功提取“批量令牌”  后，单击“下一步”  。
+8. 成功提取“批量令牌”后，单击“下一步”。
 
-9. （可选）可以“添加应用程序”  和“添加证书”  。 将在此设备上配置应用和证书。
+9. （可选）可以“添加应用程序”和“添加证书”。 将在此设备上配置应用和证书。
 
-10. （可选）还可以使用密码保护你的配置包。  单击“创建”  。
+10. （可选）还可以使用密码保护你的配置包。  单击“创建”。
     ![Windows 配置设计器应用中的包保护屏幕截图](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>配置设备
 
-1. 在应用中所指定的“项目文件夹”  中访问指定位置的配置包。
+1. 在应用中所指定的“项目文件夹”中访问指定位置的配置包。
 
 2. 选择向设备应用配置包的方式。  可使用以下方法之一向设备应用配置包：
    - 将配置包置于 USB 驱动器，将 USB 驱动器插入想要进行批量注册的设备，并在初始设置时应用它
-   - 将配置包置于网络文件夹，并在初始设置后将其应用于想要进行批处理注册的设备上
+   - 将预配程序包置于网络文件夹中，并在初始设置后应用它
 
    有关应用配置包的分步说明，请参阅[应用配置包](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package)。
 

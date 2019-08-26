@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: b7c76439b734837b5a4dd7e5fdbba5d21d0681d7
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756547"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960430"
 ---
 # <a name="use-device-encryption-with-intune"></a>使用 Intune 设备加密  
 
@@ -37,7 +37,7 @@ Intune 还提供内置的[加密报表](encryption-monitor.md)，其中提供了
 
 使用 Intune 在运行 macOS 的设备上配置 FileVault 磁盘加密。 然后，使用 Intune 加密报表查看这些设备的加密详细信息和管理 FileVault 加密设备的恢复密钥。  
 
-FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行 macOS 10.13 或更高版本的设备上配置 FileVault  。  
+FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行 macOS 10.13 或更高版本的设备上配置 FileVault。  
 
 若要配置 FileVault，请为 macOS 平台创建用于 Endpoint Protection 的[设备配置配置文件](device-profile-create.md)。 FileVault 设置是 macOS Endpoint Protection 的可用设置类别之一。  
 
@@ -49,29 +49,29 @@ FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行
 
 ### <a name="how-to-configure-macos-filevault"></a>如何配置 macOS FileVault 
 
-1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备配置” > “配置文件” > “创建配置文件”    。  
+1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备配置” > “配置文件” > “创建配置文件”。  
 
 2. 设置下列选项:  
 
    - 平台：macOS  
    - 配置文件类型：Endpoint Protection  
 
-3. 选择“设置” > “FileVault”   。  
+3. 选择“设置” > “FileVault”。  
 
-4. 对于 FileVault，请选择“启用”   。  
+4. 对于 FileVault，请选择“启用”。  
 
-5. 对于“恢复密钥类型”，仅支持“个人密钥”   。  
+5. 对于“恢复密钥类型”，仅支持“个人密钥”。  
 
    请考虑添加一条消息，以帮助指导最终用户检索其设备的恢复密钥。 使用个人恢复密钥轮换设置时，此信息对最终用户非常有用。通过该设置，可以定期自动为设备生成新的恢复密钥。  
 
-   例如：若要检索丢失或最近轮换的恢复密钥，请从任意设备登录 Intune 公司门户网站。 在门户中，转到“设备”并选择已启用 FileVault 的设备，然后选择“获取恢复密钥”   。 系统会显示当前恢复密钥。  
+   例如：若要检索丢失或最近轮换的恢复密钥，请从任意设备登录 Intune 公司门户网站。 在门户中，转到“设备”并选择已启用 FileVault 的设备，然后选择“获取恢复密钥”。 系统会显示当前恢复密钥。  
 
-6. 配置其余 [FileVault 设置](endpoint-protection-macos.md#filevault)以满足业务需求，然后选择“确定”  。  
+6. 配置其余 [FileVault 设置](endpoint-protection-macos.md#filevault)以满足业务需求，然后选择“确定”。  
 
    > [!IMPORTANT]  
-   > 如果将“禁止在注销时提示”  设置设为“启用”  ，则存在一个已知问题。 设置为“启用”  时，必须将“允许绕过的次数”  设置设为具体值，不得设置为“未配置”  。 如果设置为“未配置”  ，配置文件会无法在设备上运行。 在这种情况下，设备会将“配置文件状态摘要”  报告为“错误”  ，且不提供更多详细信息。
+   > 如果将“禁止在注销时提示”设置设为“启用”，则存在一个已知问题。 设置为“启用”时，必须将“允许绕过的次数”设置设为具体值，不得设置为“未配置”。 如果设置为“未配置”，配置文件会无法在设备上运行。 在这种情况下，设备将“配置文件状态摘要”报告为“错误”，且不提供更多详细信息。
    > 
-   > 当“禁止在注销时提示”  设置设为“未配置”  时，“允许绕过的次数”  可以是“未配置”  ，也可以是具体值。  
+   > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则 *不能配置* **允许绕过的次数**, 也不能具有值。  
    > 
    > 此问题将在今后发布的更新中予以解决。 
 
@@ -85,7 +85,7 @@ FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行
 
 使用 Intune 在运行 Windows 10 的设备上配置 BitLocker 磁盘加密。 然后，使用 Intune 加密报表查看这些设备的加密详细信息。 还可以从设备访问 BitLocker 的重要信息，如 Azure Active Directory (Azure AD) 中所示。  
 
-BitLocker 适用于运行 Windows 10 或更高版本的设备  。  
+BitLocker 适用于运行 Windows 10 或更高版本的设备。  
 
 为 Windows 10 或更高版本的平台创建用于 Endpoint Protection 的[设备配置配置文件](device-profile-create.md)时，请配置 BitLocker。 BitLocker 设置属于 Windows 10 Endpoint Protection 的 Windows 加密设置类别。    
 
@@ -99,9 +99,9 @@ BitLocker 适用于运行 Windows 10 或更高版本的设备  。
    - 平台：Windows 10 及更高版本  
    - 配置文件类型：Endpoint Protection  
 
-3. 选择“设置” > “Windows Encryption”   。
+3. 选择“设置” > “Windows Encryption”。
 
-4. 配置 BitLocker 的设置以满足你的业务需求，然后选择“确定”  。  
+4. 配置 BitLocker 的设置以满足你的业务需求，然后选择“确定”。  
 
 5. 完成其他设置配置，然后保存配置文件。  
 

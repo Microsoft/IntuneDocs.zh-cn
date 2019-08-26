@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c92f70844594fd8524f2e49c537f1afaadaf96
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a637ae12f3a2ee395503bedd595c490579fdb43c
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783196"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993547"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -38,7 +38,7 @@ ms.locfileid: "68783196"
 3. [分配设备](#distribute-devices)。
 
 
-当从加入 Knox 部署计划的授权经销商购买设备时，设备标识符（序列号和 IMEI）的列表将被自动添加到 Knox 门户。
+如果你从加入 Knox 部署计划的授权经销商购买设备，设备标识符（序列号和 IMEI）列表会自动添加到 Knox 门户。
 
 
 ## <a name="prerequisites"></a>必备条件
@@ -52,7 +52,7 @@ ms.locfileid: "68783196"
 
 4. [注册 Samsung 帐户](https://www2.samsungknox.com/en/user/register)：必须使用 Samsung 帐户，才能注册和启用 KME，并在一处集中管理所有 Knox Enterprise 权利。
 
-5. 注册审核：在你填写并提交配置文件后，Samsung 会审核你的申请，然后要么立即批准它，要么将它置于待审核状态，以供进一步跟进。 帐户获得批准后，可以继续执行后续步骤。
+5. 注册审核：在你完成并提交配置文件后，Samsung 会审阅你的申请，然后要么立即批准它，要么将它置于待审阅状态，以供进一步跟进。 在你的帐户获准后，可以继续执行后续步骤。
 
 ## <a name="create-mdm-profile"></a>创建 MDM 配置文件
 
@@ -68,7 +68,7 @@ ms.locfileid: "68783196"
 |MDM 代理 APK      | 是       |https://aka.ms/intune_kme_deviceowner 
 |将此应用设置为 Google 设备所有者 | 是 | 选择此选项以注册到 Android Enterprise。 
 |支持的 MDM      | 是       |Microsoft Intune 
-|保持启用所有系统应用 | 否 | 选择此选项可确保所有应用都已启用并可供配置文件使用。 如果未选择此选项，则设备的应用托盘中仅会显示一组非常有限的系统应用。 电子邮件应用等应用仍然处于隐藏状态。 
+|保持启用所有系统应用 | 否 | 选择此选项可确保所有应用都已启用并可供配置文件使用。 如果你未选中此选项，设备的应用托盘中只会显示一组有限的系统应用。 电子邮件应用等应用仍然处于隐藏状态。 
 |自定义 JSON        | 否        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":“输入 Intune 注册令牌字符串”}。 了解[如何创建注册配置文件](android-kiosk-enroll.md)。 
 | 添加法律协议 | 否 | 将其留空。 
 
@@ -82,8 +82,8 @@ ms.locfileid: "68783196"
 |配置文件名称       | 是       |输入选择的配置文件名称。
 |description        | 否        |输入说明配置文件的文本。
 |MDM 代理 APK      | 是       |https://aka.ms/intune_kme
-|将此应用设置为 Google 设备所有者 | 否 | 对于 Android，请将此选项保持未选定状态。 仅适用于 Android Enterprise。
-|跳过安装向导  | 否        |选择此选项以代表最终用户跳过标准设备安装提示。
+|将此应用设置为 Google 设备所有者 | 否 | 对于 Android，请将此选项保持未选定状态。 此选项仅适用于 Android Enterprise。
+|跳过安装向导  | 否        |选中此选项可以为最终用户跳过标准设备安装提示。
 |允许最终用户取消注册 | 否 | 选择此选项以允许用户取消 KME。
 |自定义 JSON        | 否        |将其留空。
 | 添加法律协议 | 否 | 将其留空。
@@ -92,7 +92,7 @@ ms.locfileid: "68783196"
 ## <a name="add-devices"></a>添加设备
 
 若要向设备分配 MDM 配置文件，必须使用以下方法之一将支持的 Samsung Knox 设备添加到 Knox 门户：
-- **使用 Samsung 批准的经销商：** 如果是从 Samsung 批准的经销商之一处购买的设备，请使用此方法。 经销商在获得批准后可以自动为你上载设备。 [访问 Samsung Knox 注册用户指南以了解如何添加经销商](https://docs.samsungknox.com/KME-Getting-Started/Content/Register_resellers.htm)。
+- **使用 Samsung 批准的经销商：** 若要从 Samsung 核准经销商之一处购买设备，请使用这种方法。 经销商在获得批准后可以自动为你上载设备。 [访问 Samsung Knox 注册用户指南以了解如何添加经销商](https://docs.samsungknox.com/KME-Getting-Started/Content/Register_resellers.htm)。
 
 - **使用 Knox Deployment App (KDA)：** 如果需要使用 KME 注册现有设备，请使用此方法。 使用此方法，可通过蓝牙或 NFC 将设备添加到 Knox 门户。 [访问 Samsung Knox 注册用户指南以了解如何使用 KDA](https://docs.samsungknox.com/KME-Getting-Started/Content/add-device-info.htm)。
 
@@ -103,9 +103,9 @@ ms.locfileid: "68783196"
 
 对于使用 Android KME 在 Intune 中注册的设备，可以将最终用户的登录方式配置为如下所示：
 
-- **不含用户名关联：** 在 Knox 门户中，对于已添加设备，将“设备详细信息”  下的“用户 ID”  和“密码”  字段留空。 这需要最终用户在注册到 Intune 时输入用户名和密码。
+- **不含用户名关联：** 在 Knox 门户中，对于已添加设备，将“设备详细信息”下的“用户 ID”和“密码”字段留空。 此选项要求最终用户必须在注册 Intune 时输入用户名和密码。
 
-- **含用户名关联：** 在 Knox 门户中，对于已添加设备，填写“设备详细信息”  下的“用户 ID”  （如，已分配用户的用户名或[设备注册管理员](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)帐户）。 这将预填充用户名并需要最终用户在注册到 Intune 时输入密码。
+- **含用户名关联：** 在 Knox 门户中，对于已添加设备，填写“设备详细信息”下的“用户 ID”（如，已分配用户的用户名或[设备注册管理员](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)帐户）。 此选项预填充用户名，并要求最终用户必须在注册 Intune 时输入密码。
 
 > [!NOTE]
 >
@@ -116,19 +116,19 @@ ms.locfileid: "68783196"
 
 创建和分配 MDM 配置文件后，关联用户名称并在 Intune 中将设备标识为“公司自有”，可以向用户分配设备。
 
-仍需帮助？ 查看完整的 [Knox 移动注册用户指南](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)。
+仍需帮助？ 请查看完整的 [KME 用户指南](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
-- **设备所有者支持：** Intune 支持使用 Android Enterprise 将设备注册到仅展台模式。 其他 Android Enterprise 设备所有者模式将在 Intune 中可用时受支持。
+- **设备所有者支持：** - **设备所有者支持：** Intune 支持使用 KME 门户注册专用设备和完全托管设备。 其他 Android Enterprise 设备所有者模式将在 Intune 中可用时受支持。
 
-- **无工作配置文件支持：** KME 是公司设备注册方法，而在 Android 工作配置文件中注册的设备则确保工作数据和个人数据在个人设备上相互独立。 因此，Intune 不支持使用 KME 将设备注册到工作配置文件。
+- **无工作配置文件支持：** KME 是公司设备注册方法，而在 Android 工作配置文件中注册的设备则确保工作数据和个人数据在个人设备上相互独立。 因此，Intune 不支持使用 KME 向工作配置文件注册设备。
 
 - **恢复出厂设置才能注册到 Android Enterprise：** 若要重新利用已设置的设备，必须在注册到 Android Enterprise 时对设备恢复出厂设置。
 
-- **使用 Google Play 帐户更新：** 无需使用 Google Play 帐户，即可将设备注册到 Microsoft Intune。 但未来对 Intune 公司门户应用的更新可能会要求在设备上使用 Google Play 帐户。 注册到 Google 设备所有者时，不需要 Google Play 帐户。
+- **使用 Google Play 帐户更新：** 向 Microsoft Intune 注册设备不需要使用 Google Play 帐户。 但未来对 Intune 公司门户应用的更新可能会要求在设备上使用 Google Play 帐户。 注册 Google 设备所有者不需要使用 Google Play 帐户。
 
-- **“密码”字段被忽略：** 如果“密码”  字段是使用 Knox 门户中的“设备详细信息”  进行填充，它便会在 Android 注册期间被 Intune 公司门户应用忽略。 最终用户必须在设备上输入密码才能完成设备注册。
+- **“密码”字段被忽略：** 如果“密码”字段是使用 Knox 门户中的“设备详细信息”进行填充，它便会在 Android 注册期间被 Intune 公司门户应用忽略。 最终用户必须在设备上输入密码才能完成设备注册。
 
 
 ## <a name="getting-support"></a>获取支持

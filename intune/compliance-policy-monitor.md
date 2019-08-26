@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041299"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651208"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -32,11 +32,11 @@ ms.locfileid: "67041299"
 
 ## <a name="open-the-compliance-dashboard"></a>打开符合性仪表板
 
-打开“Intune 设备符合性仪表板”  ：
+打开“Intune 设备符合性仪表板”：
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 
-2. 选择“设备符合性” > 概述   。 “设备符合性仪表板”随即打开  。
+2. 选择“设备符合性” > 概述。 “设备符合性仪表板”随即打开。
 
 > [!IMPORTANT]
 > 设备必须注册到 Intune 才能接收设备符合性策略。
@@ -88,11 +88,11 @@ ms.locfileid: "67041299"
   - **错误**：设备无法与 Intune 和 Azure AD 通信，并收到注明原因的错误消息。
 
 > [!IMPORTANT]
-> 已注册到 Intune 但未由任何设备符合性策略指定的设备包含在位于“符合性”存储桶下的此报告中  。
+> 已注册到 Intune 但未由任何设备符合性策略指定的设备包含在位于“符合性”存储桶下的此报告中。
 
 #### <a name="drill-down-for-more-details"></a>向下钻取，了解详细信息
 
-在“设备符合性状态”  图表中，选择一个状态。 例如，选择“不符合”  状态：
+在“设备符合性状态”图表中，选择一个状态。 例如，选择“不符合”状态：
 
 ![选择“不符合”状态](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
@@ -106,20 +106,20 @@ ms.locfileid: "67041299"
 
 ![选择“筛选器和列”，更改图表中的结果](./media/compliance-policy-monitor/filter-columns.png)
 
-选择“筛选器”  按钮时，将打开筛选器弹出窗口，其中包括符合性状态、已越狱的设备等多个选项。 应用  筛选器以更新结果。
+选择“筛选器”按钮时，将打开筛选器弹出窗口，其中包括符合性状态、已越狱的设备等多个选项。 应用筛选器以更新结果。
 
-使用“列”  属性添加或删除图表输出中的列。 例如，“用户主体名称”  可能显示在设备上注册的电子邮件地址。 应用  列以更新结果。
+使用“列”属性添加或删除图表输出中的列。 例如，“用户主体名称”可能显示在设备上注册的电子邮件地址。 应用列以更新结果。
 
 #### <a name="device-details"></a>设备详细信息
 
-在图表中，选择某一特定设备，然后选择“设备符合性”  ：
+在图表中，选择某一特定设备，然后选择“设备符合性”：
 
 ![选择某一特定设备，然后选择“设备符合性”，查看应用的符合性策略](./media/compliance-policy-monitor/see-policies-applied-specific-device.png)
 
 这将提供有关应用于该设备的设备符合性策略设置的详细信息。 选择该特定策略时，它将显示策略中的所有设置。
 
 ### <a name="devices-without-compliance-policy"></a>没有符合性策略的设备
-在“设备符合性”   > “概述”  中，此报告还标识出了未分配有任何符合性策略的设备：
+在“设备符合性” > “概述”中，此报告还标识出了未分配有任何符合性策略的设备：
 
 ![查看没有任何符合性策略的设备](./media/compliance-policy-monitor/devices-without-policies.png)
 
@@ -127,9 +127,9 @@ ms.locfileid: "67041299"
 
 #### <a name="what-you-need-to-know"></a>须知内容
 
-- 使用“将未分配有任何符合性策略的设备标记为”  安全设置，请务必标识不具有符合性策略的设备。 然后才能为这些设备分配至少一个符合性策略。
+- 使用“将未分配有任何符合性策略的设备标记为”安全设置，请务必标识不具有符合性策略的设备。 然后才能为这些设备分配至少一个符合性策略。
 
-  可以在 Intune 门户中配置安全性设置。 选择“设备符合性”   > “符合性策略设置”  。 然后将“将未分配有任何符合性策略的设备标记为”设置为“符合”或“不符合”    。 
+  可以在 Intune 门户中配置安全性设置。 选择“设备符合性” > “符合性策略设置”。 然后将“将未分配有任何符合性策略的设备标记为”设置为“符合”或“不符合”。 
 
   有关详细信息，请参阅 [Intune 服务中的安全性增强功能](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/)。
 
@@ -137,22 +137,24 @@ ms.locfileid: "67041299"
 
 ### <a name="per-policy-device-compliance-report"></a>基于策略的设备符合性报告
 
-“设备符合性”   > “策略符合性”  报告显示策略，以及符合和不符合的设备数。 
+“设备符合性” > “策略符合性”报告显示策略，以及符合和不符合的设备数。 
 
 ![查看策略列表以及符合和不符合该策略的设备数列表](./media/compliance-policy-monitor/idc-8.png)
 
-选择特定策略时，可以看到该符合性策略针对的每个设备的“符合性状态”  、“用户的电子邮件别名”  、“设备模型”  及“位置”  。
+选择特定策略时，可以看到该符合性策略针对的每个设备的“符合性状态”、“用户的电子邮件别名”、“设备模型”及“位置”。
 
 ## <a name="setting-compliance-report"></a>设置符合性报告
 
-“设备符合性”   > “设置符合性”  报告显示每个符合性设置以及处于各符合性状态的设备总数。 它显示所有符合性策略中的所有设备符合性策略设置、应用策略设置的平台及不符合的设备数。
+“设备符合性” > “设置符合性”报告显示每个符合性设置以及处于各符合性状态的设备总数。 它显示所有符合性策略中的所有设备符合性策略设置、应用策略设置的平台及不符合的设备数。
 
 ![查看不同策略中所有设置的列表](./media/compliance-policy-monitor/idc-10.png)
 
-选择特定设置时，可以看到该设置针对的每个设备的“符合性状态”  、“用户的电子邮件别名”  、“设备模型”  及“位置”  。
+选择特定设置时，可以看到该设置针对的每个设备的“符合性状态”、“用户的电子邮件别名”、“设备模型”及“位置”。
 
 > [!NOTE]
-> 加入 Azure AD 的 Windows 10 设备可能显示系统帐户为不符合用户。 这是预期行为，不会影响设备的整体符合性。 
+> 可以将策略分配给设备和同一设备上的用户。 在某些情况下，设备可以在用户登录前（如在设备重启时）同步。 符合性策略可以评估此用户，并将设备显示为不符合。 此行为还可以将系统帐户显示为不符合的用户。
+>
+> 这是多用户 Windows 10 设备的已知问题。 有关此行为的任何变更或更新在[开发中](in-development.md)和/或[新增功能](whats-new.md)中公布。
 
 ## <a name="view-status-of-device-policies"></a>查看设备策略的状态
 
@@ -160,8 +162,8 @@ ms.locfileid: "67041299"
 
 此功能包含在设备状态报告中：
 
-1. 选择“设备符合性” > “策略”   。 随即会显示一个策略列表，包括平台（如果分配了策略）以及更多详细信息。
-2. 选择一个策略 >“概述”  。 在此视图中，策略分配包括以下状态：
+1. 选择“设备符合性” > “策略”。 随即会显示一个策略列表，包括平台（如果分配了策略）以及更多详细信息。
+2. 选择一个策略 >“概述”。 在此视图中，策略分配包括以下状态：
 
     - 已成功：策略已应用
     - 错误：无法应用策略。 此消息通常与链接到错误说明的错误代码一起显示。 
@@ -169,7 +171,7 @@ ms.locfileid: "67041299"
     - 挂起：设备尚未使用 Intune 签入，无法接收策略。 
     - 不适用：设备无法接收策略。 例如，策略更新了 iOS 11.1 的特定设置，但设备使用的是 iOS 10。 
 
-3. 若要查看使用此策略的设备的详细信息，请选择其中一种状态。 例如，选择“已成功”  。 在下一个窗口中，将列出特定设备的详细信息，包括设备名称和部署状态。
+3. 若要查看使用此策略的设备的详细信息，请选择其中一种状态。 例如，选择“已成功”。 在下一个窗口中，将列出特定设备的详细信息，包括设备名称和部署状态。
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Intune 如何解决策略冲突
 多个 Intune 策略应用到设备时可能会发生策略冲突。 如果策略设置重叠，Intune 将使用以下规则解决所有冲突：

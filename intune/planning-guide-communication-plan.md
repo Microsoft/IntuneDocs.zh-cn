@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548354"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022832"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>制定推出通信计划
 
@@ -42,15 +42,15 @@ ms.locfileid: "67548354"
 
 确定要传达的信息将取决于在 Intune 推出过程中进行通信的时间。 可能会决定分波次与组织中的组和用户通信，以 Intune 推出“启动”开始，接着是“预注册”，然后是“注册后”。 接下来将讨论在每一波次中可传达的信息类型。
 
-“启动”波次  <br/>用于介绍 Intune 项目本身的广泛通信。 此类通信应回答诸如什么是 Intune、为什么组织应采用 Intune（对组织和用户而言有何优势）等问题，并提供高级别的部署和推出计划。
+“启动”波次 <br/>用于介绍 Intune 项目本身的广泛通信。 此类通信应回答诸如什么是 Intune、为什么组织应采用 Intune（对组织和用户而言有何优势）等问题，并提供高级别的部署和推出计划。
 
-“预注册”波次 <br/> 即包括其他信息的广泛通信，相关信息有 Intune 和配套产品/服务（例如 Office、Outlook 和 OneDrive）、用户资源和安排组织组及用户接收 Intune 的特定时间线。
+“预注册”波次<br/> 即包括其他信息的广泛通信，相关信息有 Intune 和配套产品/服务（例如 Office、Outlook 和 OneDrive）、用户资源和安排组织组及用户接收 Intune 的特定时间线。
 
-“注册”波次 <br/> 此类通信面向计划接收 Intune 的组织的组和用户。 用于通知用户准备接收 Intune 并提供注册说明和联系信息，以便获取帮助或提出问题。
+“注册”波次<br/> 此类通信面向计划接收 Intune 的组织的组和用户。 用于通知用户准备接收 Intune 并提供注册说明和联系信息，以便获取帮助或提出问题。
 
-“注册后”波次 <br/> 此类通信针对已注册 Intune 的组织组和用户。 用于向用户提供其他有用资源，并收集注册期间和注册后的用户体验反馈。
+“注册后”波次<br/> 此类通信针对已注册 Intune 的组织组和用户。 用于向用户提供其他有用资源，并收集注册期间和注册后的用户体验反馈。
 
-可阅读此[最终用户注册指南](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)，获取相关说明和指导。 可按原样使用，或根据组织需要来操作。
+你可能会发现此 [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) 很有用。 可以按原样使用，可以根据组织需要进行修改。
 
 ## <a name="communication-delivery-methods"></a>通信传递方法
 

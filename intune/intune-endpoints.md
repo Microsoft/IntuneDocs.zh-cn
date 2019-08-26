@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: 1d46290975cc03343de5197b41236988a6486bfd
+ms.sourcegitcommit: 6b7e214e753d0bbc1fdf129853a258d3a4d60081
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482960"
+ms.lasthandoff: 08/10/2019
+ms.locfileid: "68937153"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune 网络终结点  
 
@@ -34,7 +34,7 @@ ms.locfileid: "68482960"
 
 若要管理防火墙和代理服务器后面的设备，必须启用 Intune 的通信。
 
-- 由于 Intune 客户端使用 **HTTP (80)** 和 **HTTPS (443)** ，因此代理服务器必须支持这两种协议。 Windows 信息保护使用端口 444。
+- 由于 Intune 客户端使用 **HTTP (80)** 和 **HTTPS (443)**，因此代理服务器必须支持这两种协议。 Windows 信息保护使用端口 444。
 - 对于某些任务（例如下载经典电脑代理的软件更新），Intune 需要对 manage.microsoft.com 的未经身份验证的代理服务器访问权限
 
 可以修改单个客户端计算机上的代理服务器设置。 还可以使用“组策略”设置来更改位于指定代理服务器后面的所有客户端计算机的设置。
@@ -43,16 +43,16 @@ ms.locfileid: "68482960"
 <!--
 > [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
-托管的设备需要允许“所有用户”  通过防火墙访问服务的配置。
+托管的设备需要允许“所有用户”通过防火墙访问服务的配置。
 
 下表列出了 Intune 客户端访问的端口和服务：
 
 |Domains    |IP 地址      |
 |-----------|----------------|
-|login.microsoftonline.com | 详细信息 [Office 365 URL 和 IP 地址范围](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
-|portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 |
-| sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
-|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 40.83.123.72<br>13.76.177.110<br>52.169.9.87<br>52.174.26.23<br>104.40.82.191<br>13.82.96.212|
+|login.microsoftonline.com <br> *.officeconfig.msocdn.com <br> config.office.com <br> graph.windows.net| 详细信息 [Office 365 URL 和 IP 地址范围](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
+|portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 <br>13.72.226.202<br>52.189.220.232|
+| sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84<br>13.73.112.122<br>52.237.192.112|
+|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com |40.83.123.72<br>13.76.177.110<br>52.169.9.87<br>52.174.26.23<br>104.40.82.191<br>13.82.96.212<br>52.147.8.239<br>40.115.69.185|
 |portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com<br>portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com<br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com<br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com<br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com<br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com<br>fei.amsua0202.manage.microsoft.com <br>portal.fei.amsua0202.manage.microsoft.com <br>m.fei.amsua0202.manage.microsoft.com<br>portal.fei.amsua0402.manage.microsoft.com <br>m.fei.amsua0402.manage.microsoft.com|52.160.70.20<br>52.168.54.64 |
 |portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com<br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com<br>fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com<br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com<br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com<br>portal.fei.amsub0202.manage.microsoft.com <br>m.fei.amsub0202.manage.microsoft.com<br>portal.fei.amsub0302.manage.microsoft.com <br>m.fei.amsub0302.manage.microsoft.com|52.138.193.149<br>51.144.161.187|
 |portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com<br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com<br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com<br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com|52.175.12.209<br>20.188.107.228|
@@ -78,9 +78,13 @@ ms.locfileid: "68482960"
 |fef.amsub0202.manage.microsoft.com|40.69.208.122|
 |fef.amsub0302.manage.microsoft.com|13.74.145.65|
 |enterpriseregistration。windows。net|52.175.211.189|
+|fef.amsua0102.manage.microsoft.com|52.242.211.0|
+|fef.amsua0702.manage.microsoft.com|52.232.225.75|
+|fef.amsub0502.manage.microsoft.com|40.67.219.144|
+|fef.msud01.manage.microsoft.com|20.40.178.139|
 |Admin.manage.microsoft.com|52.224.221.227<br>52.161.162.117<br>52.178.44.195<br>52.138.206.56<br>52.230.21.208<br>13.75.125.10|
-|wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57|
-|mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
+|wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57<br>52.187.196.98<br>52.237.196.51|
+|mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180<br>52.187.196.173<br>52.156.162.48|
 
 ## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>PowerShell 脚本和 Win32 应用的网络要求  
 
@@ -146,7 +150,7 @@ ms.locfileid: "68482960"
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune 证书连接器  
 
-托管 Microsoft Intune 证书连接器的服务器必须具有使用 TCP 端口 443 访问下表中列出的公共 IP 位置的权限   。 有关证书的详细信息，请参阅[通过 Intune 配置和使用 PKCS 证书](certficates-pfx-configure.md)和[通过 Intune 配置和使用 SCEP 证书](certificates-scep-configure.md)。
+托管 Microsoft Intune 证书连接器的服务器必须具有使用 TCP 端口 443 访问下表中列出的公共 IP 位置的权限。 有关证书的详细信息，请参阅[通过 Intune 配置和使用 PKCS 证书](certficates-pfx-configure.md)和[通过 Intune 配置和使用 SCEP 证书](certificates-scep-configure.md)。
 
 |Domains                             |IP 地址       |
 |---------------|--------------------------------------|
