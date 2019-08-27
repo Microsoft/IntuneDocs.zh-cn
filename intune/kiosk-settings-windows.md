@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487752"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998895"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>使用 Intune 将 Windows 10 及更高版本设备作为展台运行的设置
 
@@ -97,6 +97,17 @@ ms.locfileid: "69487752"
   - **添加商店应用**：选择“添加商店应用”，再从列表中选择应用  。
 
     未列出任何应用？ 使用[客户端应用](apps-add.md)中的步骤添加一些应用。
+    
+ - **指定应用重启的维护时段**: 默认值为 "未配置", 请选择 "需要" 以检查是否有应用需要重新启动才能完成安装。
+ 
+     如果使用展台浏览器或其他 Microsoft Store for business 应用, 请决定检查应用更新是否需要重新启动才能完成应用程序安装的频率。 如果未配置此设置, 则在安装应用更新后, 业务应用 Microsoft Store 将在非计划的时间启动3天。
+     
+     - **维护时段开始时间**: 选择开始检查客户端是否有任何需要重新启动的应用程序更新的日期和时间。 默认开始时间为午夜或零分钟。
+     
+     - **维护时段定期**: 默认为每天。
+         设置应用更新的维护时段发生的频率。 建议为每日建议, 以避免不计划的应用重启。
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>多应用展台
 
