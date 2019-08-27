@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412003"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69545916"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中添加和使用设备上的 Wi-Fi 设置
 
@@ -40,7 +40,7 @@ Wi-Fi 配置文件支持以下设备平台：
 - Android 4 及更高版本
 - Android Enterprise 和展台
 - iOS 8.0 及更高版本
-- macOS（Mac OS X 10.11 及更高版本）
+- macOS X 10.11 及更高版本
 - Windows 10 及更高版本、Windows 10 移动版和 Windows Holographic for Business
 
 > [!NOTE]
@@ -48,35 +48,39 @@ Wi-Fi 配置文件支持以下设备平台：
 
 ## <a name="create-a-device-profile"></a>创建设备配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
-3. 为 Wi-Fi 配置文件输入“名称”  和“说明”  。
-4. 从“平台”  下拉列表中，选择要应用 Wi-Fi 设置的设备平台。 选项包括：
+1. 在 Intune 中，选择“设备配置” > “配置文件” > [创建配置文件](https://go.microsoft.com/fwlink/?linkid=2090973)    。
+2. 输入以下属性：
 
-    - **Outlook Web Access (OWA)**
-    - **Android 企业**
-    - **iOS**
-    - **macOS**
-    - **Windows 8.1 及更高版本**
-    - **Windows 10 及更高版本**
+    - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的 WiFi 配置文件”  。
+    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **平台**：选择设备平台。 选项包括：
 
-5. 在“配置文件类型”  中，选择“Wi-Fi”  。
+      - **Outlook Web Access (OWA)**
+      - **Android Enterprise**
+      - **iOS**
+      - **macOS**
+      - **Windows 8.1 及更高版本**
+      - **Windows 10 及更高版本**
 
-    - 对于作为展台运行的 Android Enterprise  设备，可以选择“仅设备所有者”   > “Wi-Fi”  。
-    - 对于 Windows 8.1 及更高版本  ，可以选择“Wi-Fi 导入”  。 此选项允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
+    - **配置文件类型**：选择“Wi-Fi”  。
 
-6. 某些 Wi-Fi 设置针对每个平台会有所不同。 若要查看特定平台的设置，可选择：
+      > [!TIP]
+      >
+      > - 对于作为专用设备（展台）运行的 Android Enterprise  设备，依次选择“仅设备所有者”   > “Wi-Fi”  。
+      > - 对于 Windows 8.1 及更高版本  ，可以选择“Wi-Fi 导入”  。 此选项允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
+
+3. 某些 Wi-Fi 设置针对每个平台会有所不同。 若要查看特定平台的设置，请选择你的平台：
 
     - [Outlook Web Access (OWA)](wi-fi-settings-android.md)
-    - [Android Enterprise 和展台](wi-fi-settings-android-enterprise.md)
+    - [Android Enterprise](wi-fi-settings-android-enterprise.md)（包括专用设备）
     - [iOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 及更高版本](wi-fi-settings-windows.md)
     - [Windows 8.1 及更高版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
 
-    大多数平台都具有“基本”  和“企业”  设置。 “基本”  包括功能，如网络名称和 SSID。 “企业”  可提供更高级的信息，如可扩展身份验证协议 (EAP)。
+4. 完成后，依次选择“创建配置文件”   > “创建”  。
 
-7. 添加 Wi-Fi 设置完成后，选择“创建配置文件”   > “创建”  以添加配置文件。 配置文件随即创建并显示在配置文件列表中（“设备配置”   > “配置文件”  ）。
+此时，配置文件创建，并显示在配置文件列表中（“设备配置”   > “配置文件”  ）。
 
 ## <a name="next-steps"></a>后续步骤
 
