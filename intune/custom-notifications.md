@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680104"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021753"
 ---
 # <a name="send-custom-notifications-in-intune"></a>使用 Intune 发送自定义通知  
 
@@ -51,7 +51,6 @@ ms.locfileid: "68680104"
 - 组可以包含用户或设备，但仅向用户发送消息且发送到用户已注册的每个 iOS 或 Android 设备。  
 
 **发送**：  
-- Intune 会在发送通知后尝试发送最多一小时。  
 - Intune 将消息发送到用户的公司门户应用，然后创建推送通知。 用户无需登录应用，即可在设备上推送通知。  
 - Intune 和公司门户应用无法保证发送自定义通知。 自定义通知可能会在几个小时的延迟后显示（如果有的话），因此它们不应用于紧急消息。  
 - 来自 Intune 的自定义通知消息在设备上显示为标准推送通知。 如果公司门户应用在收到通知后在 iOS 设备上处于打开状态，则通知将在应用中显示，而不在推送通知中显示。  
