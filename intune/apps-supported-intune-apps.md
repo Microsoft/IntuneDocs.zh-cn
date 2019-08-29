@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2825286c652a7229c32435a24ca816f21b8f2ff4
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: 63ab31845ba4d084c81ff33970703ec630d67daa
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993745"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70002031"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保护的应用  
 
-Intune 托管应用启用了一组丰富的移动应用保护策略。 托管应用可用于：
+本主题列出的应用是常用于 Microsoft Intune 的受支持合作伙伴应用和 Microsoft 应用。 受 Intune 保护的应用启用了一组丰富的移动应用保护策略。 这些应用可便于：
 - 限制“复制和粘贴”和“另存为”功能
 - 将 Web 链接配置为在安全的 Microsoft 浏览器内打开
 - 启用多标识使用和应用级条件访问
@@ -77,7 +77,7 @@ Intune 托管应用启用了一组丰富的移动应用保护策略。 托管应
 | 应用标题 | 应用说明 | 支持的一个或多个平台的应用商店链接 | 
 |-------------------------------------------------|-------------------------|---------------------------------------------|
 | **Acronis Access**<p><img alt="Partner app - Acronis Access icon" src="./media/apps-supported-intune-apps/icon-p-acronis-access.png" width="100"> | 使用 Acronis Access，可以从任意位置使用任何设备安全地访问业务文件。 与同事、客户和供应商轻松共享文档的同时，保持文件和数据的安全性和隐私性，只允许你和你的组织访问它们。 此应用的操作极简单，提供无可比拟的安全性、隐私性和管理功能。 | [iOS 应用商店链接](https://itunes.apple.com/us/app/acronis-access/id429704844?mt=8) |                       
-| **适用于 Microsoft Intune 的 Adobe Acrobat Reader**<p><img alt="Partner app - Adobe Acrobat Reader for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | 使用适用于 Intune 的 Adobe Acrobat Reader，可以在 Microsoft Intune 托管环境中打开、查看和处理 PDF。 适用于 iOS 和 Android。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.adobe.reader.intune)、<br>[iOS 应用商店链接](https://geo.itunes.apple.com/us/app/adobe-acrobat-reader-for-microsoft/id1051980424?mt=8) |                      
+| **Adobe Acrobat Reader**<p><img alt="Partner app - Adobe Acrobat Reader icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | 使用 Adobe Acrobat Reader，可以在 Microsoft Intune 托管环境中打开、查看和处理 PDF。 适用于 iOS 和 Android。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.adobe.reader)、<br>[iOS 应用商店链接](https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564) |                      
 | **Blackberry Enterprise BRIDGE**<p><img alt="Partner app - Blackberry Enterprise BRIDGE icon" src="./media/apps-supported-intune-apps/icon-p-blackberry-enterprise-bridge.png" width="100"> | 通过 Blackberry Enterprise BRIDGE，可使用 Intune 托管的 Microsoft 应用（如 BlackBerry Dynamics 中的 Microsoft Word、Microsoft PowerPoint 和 Microsoft Excel），安全地查看、编辑和保存文档。 可以在 BlackBerry Dynamics 和 Intune 托管的移动应用之间将文档作为电子邮件附件进行共享，并在文档共享过程中维护数据加密。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.blackberry.intune.bridge)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/blackberry-enterprise-bridge/id1305494864?mt=8) |
 | **Box for EMM**<p><img alt="Partner app - Box for EMM icon" src="./media/apps-supported-intune-apps/icon-p-box-for-emm.png" width="100"> | 使用 Box for EMM，可以让员工保持联系和协作，同时跨任何移动设备集中管理安全、策略和预配。 | [iOS 应用商店链接](https://itunes.apple.com/us/app/box-for-emm/id882085676?mt=8) |
 | **CellTrust SL2™ for Microsoft Intune**<p><img alt="Partner app - CellTrust SL2 for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-celltrust-sl2.png" width="100"> | CellTrust SL2™ for Microsoft Intune 是一款企业级应用程序，其工作原理是在自带设备上分配安全的移动业务编号 (MBN)，以便将单台设备上的个人和业务通信分开。 无缝解决方案可在不使用个人号码的情况下保护设备上的短信和业务通话。 对于需要更高的业务通信安全性以及存档电子数据展示和符合性需求的企业而言，此功能至关重要。 <br> Microsoft Intune 是企业移动管理 (EMM) 领域中基于云的服务，可帮助员工提高工作效率，同时保护企业数据。 <br> CellTrust SL2™ for Microsoft Intune 提供了一个功能强大的企业移动平台，使员工能够随时随地轻松访问安全的业务应用程序以及语音和短信。 此应用是利用 Microsoft Intune SDK 和自定义功能开发的，以允许组织根据其行业和 IT 需求对其进行量身定制。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.celltrust.sl2_intune)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/celltrust-sl2-for-intune/id1442087513?mt=8) |
