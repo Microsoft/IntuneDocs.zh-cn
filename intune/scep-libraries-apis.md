@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b6daa574b983b4a03346e521c61f267e13c7de1a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882378"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122341"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 将 SCEP 的第三方 CA 添加到 Intune
 
@@ -304,4 +304,4 @@ void SetSslSocketFactory(
 - [添加第三方 CA 概述](certificate-authority-add-scep-overview.md)
 - [安装 Intune](setup-steps.md)
 - [设备注册](device-enrollment.md)
-- [配置 SCEP 证书配置文件](certificates-scep-configure.md#create-a-scep-certificate-profile)（此方案不使用 Microsoft NDES Server\Connector 安装程序）
+- [配置 SCEP 证书配置文件](certificates-profile-scep.md)（此方案不使用 Microsoft NDES Server\Connector 安装程序）
