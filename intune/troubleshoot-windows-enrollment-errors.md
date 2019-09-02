@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993705"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063007"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 设备注册问题疑难解答
 
@@ -223,7 +223,7 @@ ms.locfileid: "68993705"
 #### <a name="resolution"></a>解决方法
 1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
 2. **> 设备设置中转到 Azure Active Directory > 设备**"。    
-3. 设置**用户可以将设备加入到** **全部**或**选定**Azure AD。
+3. 将“用户可以将设备加入 Azure AD”  设置为“全部”  或“已选择”  。
 
    如果选择 "  选择", 请单击 "**选择**", 然后单击 "**添加成员**" 添加可以加入其设备的所有用户 Azure AD。 请确保已添加预配包的所有 Azure AD 帐户。
  
@@ -331,7 +331,7 @@ Registering your device for mobile management (Previous step failed)
 
 此问题通常发生在混合 Azure AD Autopilot 方案中的设备重新启动之前, 当设备在初始登录屏幕中超时时。 这意味着由于连接问题, 无法找到或无法成功访问域控制器。 或者该设备进入了无法加入域的状态。
 
-**原因:** 最常见的原因是混合 Azure AD 联接正在使用, 并且在 Autopilot 配置文件中配置了 "分配用户" 功能。 使用 "分配用户" 功能可在初始登录屏幕期间在设备上执行 Azure AD 联接, 这会使设备处于无法加入本地域的状态。 因此, 只应在标准 Azure AD 联接 Autopilot 方案中使用 "分配用户" 功能。  应在混合 Azure AD 联接方案中使用该功能。
+**原因:** 最常见的原因是混合 Azure AD 联接正在使用, 并且在 Autopilot 配置文件中配置了 "分配用户" 功能。 使用 "分配用户" 功能可在初始登录屏幕期间在设备上执行 Azure AD 联接, 这会使设备处于无法加入本地域的状态。 因此, 只应在标准 Azure AD 联接 Autopilot 方案中使用 "分配用户" 功能。  不应在混合 Azure AD 联接方案中使用该功能。
 
 #### <a name="resolution"></a>解决方法
 
