@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960419"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158025"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 MacOS 终结点保护设置  
 
@@ -100,14 +100,14 @@ ms.locfileid: "68960419"
     - **个人恢复密钥轮换**-指定设备的个人恢复密钥将旋转的频率。 您可以选择 "**未配置**" 或 " **1**到**12**个月" 的默认值。  
 
   - **注销时禁用提示**  
-    禁止提示用户在注销时启用 FileVault。如果设置为 "启用", 则会禁用注销时的提示, 而是在用户登录时提示用户。  
+    禁止提示用户在注销时启用 FileVault。如果设置为 "禁用", 则在注销时会禁用提示, 而是在用户登录时提示用户。  
     - 未配置   
-    - **启用**-在注销时禁用提示。
+    - **禁用**-在注销时禁用提示。
 
     **默认值**：未配置  
 
      > [!IMPORTANT]  
-     > 如果将“禁止在注销时提示”  设置设为“启用”  ，则存在一个已知问题。 设置为“启用”  时，必须将“允许绕过的次数”  设置设为具体值，不得设置为“未配置”  。 如果设置为“未配置”  ，配置文件会无法在设备上运行。 在这种情况下，设备会将“配置文件状态摘要”  报告为“错误”  ，且不提供更多详细信息。
+     > 将设置“注销时禁用提示”  设置为“禁用”  时，存在一个已知问题。 设置为“禁用”  时，必须将“允许的免验证次数”  设置为一个值，且不能设置为“未配置”  。 如果设置为“未配置”  ，配置文件会无法在设备上运行。 在这种情况下，设备会将“配置文件状态摘要”  报告为“错误”  ，且不提供更多详细信息。
      > 
      > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则 *不能配置* **允许绕过的次数**, 也不能具有值。  
      > 
@@ -122,4 +122,5 @@ ms.locfileid: "68960419"
  
     **默认值**：未配置  
 
+有关 FileVault 与 Intune 的详细信息, 请参阅[FileVault 恢复密钥](encryption-monitor.md#filevault-recovery-keys)。
 
