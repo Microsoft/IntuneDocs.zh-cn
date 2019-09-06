@@ -13,12 +13,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 398b8c748fddfa032194cfa60547d76322e28c9a
+ms.sourcegitcommit: 2a7d621587471822b1428440b24f08c8722612dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511322"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70234812"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>快速入门：在 Intune 中创建用户并向用户分配许可证
 
@@ -34,16 +34,16 @@ ms.locfileid: "61511322"
 
 用户必须拥有用户帐户才能注册 Intune 设备管理。 若要创建新用户，请执行以下操作：
 
-1. 在 Intune 中，选择“用户” > “所有用户” > “新建用户”。
+1. 在 Intune 中，选择“用户” > “所有用户” > “新建用户”    。
 ![浏览器](media/quickstart-create-user/create-user.png)
-2. 在“名称”框中，输入一个名称，例如“Dewey Kellum”。
-3. 在“用户名”框中输入用户标识符，例如 Dewey@contoso.onmicrosoft.com。
+2. 在“名称”框中，输入一个名称，例如“Dewey Kellum”   。
+3. 在“用户名”框中输入用户标识符，例如 Dewey@contoso.onmicrosoft.com  。
 
     > [!NOTE]
     > 如果尚未配置客户端域名，请使用用于创建 Intune 订阅（或[免费试用版](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)）的已验证的域名。 
 
-4. 选择“显示密码”并记下的自动生成的密码，以便登录到测试设备。
-5. 选择“创建”。
+4. 选择“显示密码”并记下的自动生成的密码，以便登录到测试设备  。
+5. 选择“创建”  。
 
 ## <a name="assign-a-license-to-the-user"></a>向用户分配许可证
 
@@ -52,20 +52,20 @@ ms.locfileid: "61511322"
 若要向用户分配 Intune 许可证，请执行以下操作：
 
 1. 使用登录 Intune 所用的凭据登录 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
-2. 选择“用户” > “活动用户”，然后选择刚刚创建的用户。
-3. 选择“产品许可证”旁边的“编辑”。
-4. 在“位置”下，为用户选择位置。
-5. 单击 Intune 许可证（或拥有的包含 Intune 的其他许可证）旁边的“开启”。 显示的[产品名称](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference) ** 用作 Azure 管理中的服务计划 
+2. 选择“用户” > “活动用户”，然后选择刚刚创建的用户   。
+3. 选择“产品许可证”旁边的“编辑”   。
+4. 在“位置”下，为用户选择位置  。
+5. 单击 Intune 许可证（或拥有的包含 Intune 的其他许可证）旁边的“开启”  。 显示的[产品名称](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference) ** 用作 Azure 管理中的服务计划 
 
    > [!NOTE]
    > 此设置会为该用户使用其中一个许可证。 如果使用的是试用环境，则稍后会将此许可证重新分配给实际环境中的真实用户。
-6. 选择“保存” > “关闭”。
+6. 选择“保存” > “关闭”   。
 
-新的活跃 Intune 用户现将显示他们正在使用 Intune 许可证。
+新的活跃 Intune 用户现将显示他们正在使用 Intune 许可证  。
 
 ## <a name="clean-up-resources"></a>清理资源
 
-如果不再需要此用户，则可以删除该用户，方法是导航到 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“用户” > “活跃用户” > 选择列表中的用户 > “删除用户” > “删除用户” > “确认更改” > “关闭”。
+如果不再需要此用户，则可以删除该用户，方法是导航到 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“用户” > “活跃用户” >  选择列表中的用户  > “删除用户” > “删除用户” > “确认更改” > “关闭”        。
 
 ## <a name="next-steps"></a>后续步骤
 

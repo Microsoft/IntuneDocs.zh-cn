@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: faff917dfafaaedb988cbbfb8174547f0b0ccf3b
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648457"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122263"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中添加合作伙伴证书颁发机构
 
@@ -42,7 +42,7 @@ Microsoft 创建了与 Intune 集成的 API。 通过该 API，可验证证书�
 
 ## <a name="overview"></a>概述
 
-以下步骤概述了如何在 Intune 中颁发 SCEP 证书：
+以下步骤概述了如何在 Intune 中使用 SCEP 证书：
 
 1. 在 Intune 中，管理员创建 SCEP 证书配置文件，然后将用户或设备作为此配置文件的目标。
 2. 设备签入到 Intune。
@@ -106,9 +106,9 @@ Microsoft 创建了与 Intune 集成的 API。 通过该 API，可验证证书�
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>配置和部署 SCEP 证书配置文件
 以管理员身份创建针对用户或设备的 SCEP 证书配置文件。 然后，分配配置文件。
 
-- [创建 SCEP 证书配置文件](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [创建 SCEP 证书配置文件](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [分配证书配置文件](certificates-scep-configure.md#assign-the-certificate-profile)
+- [分配证书配置文件](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## <a name="removing-certificates"></a>删除证书
 

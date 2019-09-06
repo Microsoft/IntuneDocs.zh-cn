@@ -1,11 +1,11 @@
 ---
-title: 使用 Microsoft Intune 在 Azure Monitor 中路由审核日志 - Azure | Microsoft Docs
+title: 使用 Microsoft Intune 将日志路由到 Azure Monitor - Azure | Microsoft Docs
 description: 使用“诊断设置”将 Microsoft Intune 中的审核日志和运行日志发送到 Azure 存储帐户、事件中心或 Log Analytics。 选择所需的数据保留时间，并查看不同规模租户的估算成本。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ed32ad564f850c06b37b15e1994ac066a929ffaa
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354521"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122415"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>使用 Intune 将日志数据发送到存储、事件中心或 Log Analytics（预览版）
 
-Microsoft Intune 包含可提供环境信息的内置日志。 审核日志  显示 Intune 中发生的各种事件或任务的详细信息。 运行日志（预览版）显示了注册成功/失败的用户和设备的详细信息，还显示了不符合条件的设备的详细信息  。
+Microsoft Intune 包含可提供环境信息的内置日志：
+
+- 审核日志  显示 Intune 中发生的各种事件或任务的详细信息。
+- 运行日志（预览版）显示了注册成功/失败的用户和设备的详细信息，还显示了不符合条件的设备的详细信息  。
+- **设备合规性运行日志（预览版）** 显示了 Intune 中设备合规性的运行报告以及有关非合规性设备的详细信息。
 
 还可以将这些日志发送到 Azure Monitor 服务，包括存储帐户、事件中心和 Log Analytics。 具体而言，你可以：
 
@@ -35,7 +39,7 @@ Microsoft Intune 包含可提供环境信息的内置日志。 审核日志  显
 
 这些功能是 Intune中“诊断设置”  的一部分。
 
-本文介绍了如何使用“诊断设置”  将日志数据发送到不同服务，提供了示例和成本估算，并回答了一些常见问题。
+本文介绍了如何使用“诊断设置”  将日志数据发送到不同服务，提供了示例和成本估算，并回答了一些常见问题。 启用此功能后，日志将路由到所选的 Azure Monitor 服务。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -54,7 +58,7 @@ Microsoft Intune 包含可提供环境信息的内置日志。 审核日志  显
 ## <a name="send-logs-to-azure-monitor"></a>将日志发送到 Azure Monitor
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“监视”  下的“诊断设置”  。 第一次打开它时，需要启用它：
+2. 选择“监视”  下的“诊断设置”  。 第一次打开它时，需要启用它。 否则，请添加设置。
 
     ![在 Intune 中启用“诊断设置”以将日志发送到 Azure Monitor](media/diagnostics-settings-turn-on.png)
 
@@ -87,7 +91,14 @@ Microsoft Intune 包含可提供环境信息的内置日志。 审核日志  显
       如果选择使用存储帐户，还要输入所需的数据保留天数（保留期）。 若要永久保留数据，请将“保留期(天数)”  设置为“`0`”（零）。
 
       > [!NOTE]
-      > 运行日志目前处于预览阶段。 若要提供反馈（包括运行日志中所含的信息），请转到 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback)（打开新网站）。
+      > 运行日志目前处于预览阶段。 若要提供反馈（包括运行日志中所含的信息），请转到 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback)。
+
+    - **LOG** > **DeviceComplianceOrg**：设备合规性运行日志（预览版）显示了 Intune 中设备合规性的运行报告以及有关非合规性设备的详细信息。 选中此选项可以将合规性日志发送到存储帐户、事件中心或 Log Analytics。
+
+      如果选择使用存储帐户，还要输入所需的数据保留天数（保留期）。 若要永久保留数据，请将“保留期(天数)”  设置为“`0`”（零）。
+ 
+      > [!NOTE]
+      > 设备合规性运行日志以预览版提供。 若要提供反馈（包括报告中所含的信息），请转到 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback)。
 
     完成后，设置如下所示： 
 

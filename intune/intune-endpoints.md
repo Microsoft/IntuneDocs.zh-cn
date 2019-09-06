@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d46290975cc03343de5197b41236988a6486bfd
-ms.sourcegitcommit: 6b7e214e753d0bbc1fdf129853a258d3a4d60081
+ms.openlocfilehash: 7202ea3230cef8f6d262bdd99fe035076e4466b1
+ms.sourcegitcommit: 9d26ac74eff7647031ae29b13da815703c436f03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68937153"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70176903"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune 网络终结点  
 
@@ -34,7 +34,7 @@ ms.locfileid: "68937153"
 
 若要管理防火墙和代理服务器后面的设备，必须启用 Intune 的通信。
 
-- 由于 Intune 客户端使用 **HTTP (80)** 和 **HTTPS (443)**，因此代理服务器必须支持这两种协议。 Windows 信息保护使用端口 444。
+- 由于 Intune 客户端使用 **HTTP (80)** 和 **HTTPS (443)** ，因此代理服务器必须支持这两种协议。 Windows 信息保护使用端口 444。
 - 对于某些任务（例如下载经典电脑代理的软件更新），Intune 需要对 manage.microsoft.com 的未经身份验证的代理服务器访问权限
 
 可以修改单个客户端计算机上的代理服务器设置。 还可以使用“组策略”设置来更改位于指定代理服务器后面的所有客户端计算机的设置。
@@ -43,7 +43,7 @@ ms.locfileid: "68937153"
 <!--
 > [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
-托管的设备需要允许“所有用户”通过防火墙访问服务的配置。
+托管的设备需要允许“所有用户”  通过防火墙访问服务的配置。
 
 下表列出了 Intune 客户端访问的端口和服务：
 
@@ -85,6 +85,8 @@ ms.locfileid: "68937153"
 |Admin.manage.microsoft.com|52.224.221.227<br>52.161.162.117<br>52.178.44.195<br>52.138.206.56<br>52.230.21.208<br>13.75.125.10|
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57<br>52.187.196.98<br>52.237.196.51|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180<br>52.187.196.173<br>52.156.162.48|
+|*。manage。microsoft。com|40.82.248.224/28<br>20.189.105.0/24<br>20.37.153.0/24<br>20.37.192.128/25<br>20.38.81.0/24<br>20.41.1.0/24<br>20.42.1.0/24<br>20.42.130.0/24<br>20.42.224.128/25<br>20.43.129.0/24<br>40.119.8.128/25<br>40.74.25.0/24<br>40.82.249.128/25<br>40.80.184.128/25<br>52.150.137.0/25|
+
 
 ## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>PowerShell 脚本和 Win32 应用的网络要求  
 
@@ -150,7 +152,7 @@ ms.locfileid: "68937153"
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune 证书连接器  
 
-托管 Microsoft Intune 证书连接器的服务器必须具有使用 TCP 端口 443 访问下表中列出的公共 IP 位置的权限。 有关证书的详细信息，请参阅[通过 Intune 配置和使用 PKCS 证书](certficates-pfx-configure.md)和[通过 Intune 配置和使用 SCEP 证书](certificates-scep-configure.md)。
+托管 Microsoft Intune 证书连接器的服务器必须具有使用 TCP 端口 443 访问下表中列出的公共 IP 位置的权限   。 有关证书的详细信息，请参阅[通过 Intune 配置和使用 PKCS 证书](certficates-pfx-configure.md)和[通过 Intune 配置和使用 SCEP 证书](certificates-scep-configure.md)。
 
 |Domains                             |IP 地址       |
 |---------------|--------------------------------------|

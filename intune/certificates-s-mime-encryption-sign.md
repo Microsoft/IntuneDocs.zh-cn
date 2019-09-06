@@ -1,5 +1,5 @@
 ---
-title: 使用 S/MIME 对电子邮件进行签名和加密 - Microsoft Intune - Azure | Micrososft Docs
+title: 使用 S/MIME 对电子邮件进行签名和加密 - Microsoft Intune - Azure | Microsoft Docs
 description: 了解如何在 Microsoft Intune 中使用电子邮件数字证书对设备上的电子邮件进行签名和加密。 这些证书称为 S/MIME，都是使用设备配置文件进行配置的。 签名和加密证书使用 PKCS 或私有证书，并使用连接器导入证书。
 keywords: ''
 author: MandiOhlinger
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048900"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122231"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>在 Intune 中对电子邮件进行签名和加密的 S/MIME 概述
 

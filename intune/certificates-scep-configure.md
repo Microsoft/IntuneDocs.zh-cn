@@ -1,12 +1,12 @@
 ---
-title: 在 Microsoft Intune 中使用 SCEP 证书 - Azure | Microsoft Docs
-description: 要在 Microsoft Intune 中使用 SCEP 证书，请配置本地 AD 域，创建证书颁发机构，设置 NDES 服务器，并安装 Intune 证书连接器。 然后创建 SCEP 证书配置文件并将此配置文件分配到组。 另请参阅不同的事件 ID 及其说明，以及 Intune 连接器服务的诊断代码。
+title: 配置基础结构以支持在 Microsoft Intune 中使用 SCEP 证书配置文件 - Azure | Microsoft Docs
+description: 要在 Microsoft Intune 中使用 SCEP，请配置本地 AD 域、创建证书颁发机构、设置 NDES 服务器，并安装 Intune 证书连接器。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2019
-ms.topic: conceptual
+ms.date: 08/28/2019
+ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,603 +15,352 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97612a8d169295d9ec28d230fb6f37a0be8ce324
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: 76cd6084815a9f63e653a63d36ba8265a7a0fbd6
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582965"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122479"
 ---
-# <a name="configure-and-use-scep-certificates-with-intune"></a>在 Intune 中配置和使用 SCEP 证书
-
-本文说明如何配置基础结构，然后使用 Intune 创建和分配简单证书注册协议 (SCEP) 证书配置文件。
-
-## <a name="configure-on-premises-infrastructure"></a>配置本地基础结构
-
-- **Active Directory 域**：本部分列出的所有服务器（Web 应用程序代理服务器除外）必须加入你的 Active Directory 域。
-
-- **证书颁发机构** (CA)：必须是在 Windows Server 2008 R2 企业版或更高版本上运行的 Microsoft 企业证书颁发机构 (CA)。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](https://technet.microsoft.com/library/jj125375.aspx)。
-    如 CA 运行的是 Windows Server 2008 R2，则必须[安装修补程序 KB2483564](http://support.microsoft.com/kb/2483564/)。
-
-- **NDES 服务器**：在 Windows Server 2012 R2 或更高版本上，设置网络设备注册服务 (NDES) 服务器角色。 Intune 不支持在同时运行企业 CA 的服务器上使用 NDES。 有关如何配置 Windows Server 2012 R2 以托管 NDES 的说明，请参阅[网络设备注册服务指南](https://technet.microsoft.com/library/hh831498.aspx)。
-必须将 NDES 服务器加入与企业 CA 相同的林中的域。 有关在单独的林、独立的网络或内部的域中部署 NDES 服务器的详细信息，可查阅[结合使用策略模块和网络设备注册服务](https://technet.microsoft.com/library/dn473016.aspx)。 无法使用已与其他 MDM 一起使用的 NDES 服务器。
-
-- **Microsoft Intune 证书连接器**：在 Intune 门户中，转到“设备配置” > “证书连接器” > “添加”，然后按照“为 SCEP 安装连接器的步骤”操作     。 使用门户中的下载链接开始下载证书连接器安装程序 NDESConnectorSetup.exe  。  将在具有 NDES 角色的服务器上运行此安装程序。  
-
-此 NDES 证书连接器还支持美国联邦信息处理标准 (FIPS) 模式。 FIPS 不是必需的，但启用 FIPS 时可颁发和吊销证书。
-
-- **Web 应用程序代理服务器**（可选）：将运行 Windows Server 2012 R2 或更高版本的服务器用作 Web 应用程序代理 (WAP) 服务器。 该配置：
-  - 允许设备使用 Internet 连接接收证书。
-  - 是设备通过 Internet 连接接收和续订证书时的安全建议。
+# <a name="configure-infrastructure-to-support-scep-with-intune"></a>配置基础结构以支持在 Intune 中使用 SCEP  
   
-- **Azure AD 应用程序代理**（可选）：可以使用 Azure AD 应用程序代理（而不是专用的 Web 应用程序代理 (WAP) 服务器）向 Internet 发布 NDES 服务器。 有关详细信息，请参阅[如何提供对本地应用程序的安全远程访问](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
+Intune 支持使用简单证书注册协议 (SCEP) 来[验证体验与应用和公司资源的连接](certificates-configure.md)。 SCEP 使用证书颁发机构 (CA) 证书来保护证书签名请求 (CSR) 的消息交换。 当基础结构支持 SCEP 时，可以使用 Intune SCEP 证书  配置文件（Intune 中的一种设备配置文件）将证书部署到设备。 使用 Active Directory 证书服务证书颁发机构时，需要 Microsoft Intune 证书连接器才可在 Intune 中使用 SCEP 证书配置文件。 使用[第三方证书颁发机构](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration)时，不需要该连接器。  
 
-### <a name="additional"></a>Additional
+本文中的信息可帮助配置基础结构，以便在使用 Active Directory 证书服务时支持 SCEP。 在配置基出结构后，可以在 Intune 中[创建和部署 SCEP 证书配置文件](certificates-profile-scep.md)。  
 
-- 承载 WAP 的服务器[必须安装此更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](http://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](http://support.microsoft.com/kb/3011135)。
-- WAP 服务器必须具有与将要向外部客户端发布的名称相匹配的 SSL 证书，并且信任 NDES 服务器上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建至 NDES 服务器的新 SSL 连接。
+> [!TIP]  
+> Intune 还支持使用[公钥加密标准 12 号证书](certficates-pfx-configure.md)。  
 
-有关详细信息，请参阅[规划 WAP 证书](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates)和[有关 WAP 服务器的常规信息](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11))。
+
+## <a name="prerequisites-for-using-scep-for-certificates"></a>使用 SCEP 证书的先决条件  
+在继续操作之前，请确保[已创建受信任的证书配置文件](certificates-configure.md#export-the-trusted-root-ca-certificate)并将其部署到将使用 SCEP 证书配置文件的设备  。 SCEP 证书配置文件直接引用用于通过受信任的根 CA 证书来预配设备的受信任证书配置文件。  
+
+### <a name="servers-and-server-roles"></a>服务器和服务器角色  
+以下本地基础结构必须在已加入 Active Directory 域的服务器上运行，Web 应用程序代理服务器除外。  
+- 证书颁发机构  - 使用在 Windows Server 2008 R2 企业版 Service Pack 1 或更高版本上运行的 Microsoft Active Directory 证书服务企业证书颁发机构 (CA)。 所用 Windows Server 版本必须仍受 Microsoft 支持。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。 如果 CA 运行的是 Windows Server 2008 R2 SP1，则必须[安装修补程序 KB2483564](http://support.microsoft.com/kb/2483564/)。  
+
+- NDES 服务器角色  - 必须在 Windows Server 2012 R2 或更高版本上配置网络设备注册服务 (NDES) 服务器角色。 本文的后面部分介绍了如何[安装 NDES](#set-up-ndes)。  
+
+  - 托管 NDES 的服务器必须已加入域，并与企业 CA 位于相同的林中。  
+  - 不可使用在托管企业 CA 的服务器上安装的 NDES。  
+  - 可以将 Microsoft Intune 证书连接器安装在托管 NDES 的同一服务器上。  
+
+  要详细了解 NDES，请参阅 Windows Server 文档[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)以及 [Using a Policy Module with the Network Device Enrollment Service（将策略模块与网络设备注册服务配合使用）](https://technet.microsoft.com/library/dn473016.aspx)。  
+
+- Microsoft Intune 证书连接器  - 需要 Microsoft Intune 证书连接器才可在 Intune 中使用 SCEP 证书配置文件。 本文介绍了如何[安装此连接器](#install-the-intune-certificate-connector)。  
+
+  该连接器支持美国联邦信息处理标准 (FIPS) 模式。 FIPS 不是必需的，但启用它时可颁发和吊销证书。  
+  - 该连接器必须与 NDES 服务器角色在同一服务器上运行，且该服务器运行 Windows Server 2012 R2 或更高版本。  
+  - 该连接器需要 .NET 4.5 Framework，而 Windows Server 2012 R2 中自动包含 .NET 4.5 Framework。  
+  - 必须在托管 NDES 和 Microsoft Intune 证书连接器的服务器上[禁用](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) Internet Explorer 增强型安全配置。  
+
+以下本地基础结构是可选的：  
+  要允许 Internet 上的设备获取证书，需要将 NDES URL 发布到企业网络外部。 可以使用 Azure AD 应用程序代理、Web 应用程序代理服务器或其他反向代理。
+  
+- Azure AD 应用程序代理  （可选）- 可以使用 Azure AD 应用程序代理（而不是专用的 Web 应用程序代理 (WAP) 服务器）向 Internet 发布 NDES URL。 这允许面向 Intranet 和面向 Internet 的设备获取证书。 有关详细信息，请参阅[如何提供对本地应用程序的安全远程访问](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。 
+
+- Web 应用程序代理服务器  （可选）- 使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器来将 NDES URL 发布到 Internet。  这允许面向 Intranet 和面向 Internet 的设备获取证书。
+
+  承载 WAP 的服务器[必须安装此更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](http://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](http://support.microsoft.com/kb/3011135)。  
+
+  WAP 服务器必须具有与发布到外部客户端的名称匹配的 SSL 证书，并且信任托管 NDES 服务的计算机上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建与 NDES 服务的新 SSL 连接。  
+
+  有关详细信息，请参阅[规划 WAP 证书](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates)和[有关 WAP 服务器的常规信息](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11))。
+
+### <a name="accounts"></a>帐户   
+- NDES 服务帐户  - 在设置 NDES 前，确定要用作 NDES 服务帐户的域用户帐户。 可以在配置 NDES 之前，在配置发证 CA 上的模板时指定该帐户。  
+
+  此帐户必须对托管 NDES 的服务器拥有以下权限：  
+  - 本地登录   
+  - 作为服务登录   
+  - 作为批处理作业登录   
+
+  有关详细信息，请参阅[创建充当 NDES 服务帐户的域用户帐户](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11)#to-create-a-domain-user-account-to-act-as-the-ndes-service-account)。 
+- 对托管 NDES 服务的计算机的访问权限  - 需要一个有权限在安装 NDES 的服务器上安装和配置 Windows 服务器角色的域用户帐户。  
+
+- 对证书颁发机构的访问权限  - 需要一个有权管理证书颁发机构的与用户帐户。  
 
 ### <a name="network-requirements"></a>网络要求
 
-如果不使用反向代理（例如 WAP 或 Azure AD 应用代理），则允许端口 443 上的 TCP 流量从 Internet 上的所有主机/IP 地址传输到 NDES 服务器。
+建议通过反向代理（例如，[Azure AD 应用程序代理、Web 访问代理](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)或第三方代理）发布 NDES 服务器。 如果不使用反向代理，则允许端口 443 上的 TCP 流量从 Internet 上的所有主机和 IP 地址传输到 NDES 服务。  
 
-允许 NDES 服务器和任何支持基础结构之间所需的所有端口和协议。 例如，NDES 服务器需要与 CA、DNS 服务器、Configuration Manager 服务器、域控制器以及环境中可能的其他服务进行通信。
+允许 NDES 服务和环境中任何支持基础结构之间进行通信所需的所有端口和协议。 例如，托管 NDES 服务的计算机需要与 CA、DNS 服务器、域控制器以及环境中可能的其他服务或服务器（例如 Configuration Manager）进行通信。
 
-强烈建议通过反向代理（例如，[Azure AD 应用程序代理](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web 访问代理](https://technet.microsoft.com/library/dn584107.aspx)或第三方代理）发布 NDES 服务器。
+### <a name="certificates-and-templates"></a>证书和模板
 
-### <a name="certificates-and-templates"></a>证书和模板  
+使用 SCEP 时，使用了以下证书和模板。
 
-|对象|详细信息|
+|对象    |详细信息    |
 |----------|-----------|
-|**证书模板**|在发证 CA 上配置此模板。|
-|**客户端身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上安装证书。|
-|**服务器身份验证证书**|发证 CA 或公共 CA 请求；在 NDES 服务器上的 IIS 中安装并绑定该 SSL 证书。 如果证书具有客户端和服务器身份验证密钥使用集（增强型密钥使用），则可以使用相同的证书  。|
-|**受信任的根 CA 证书**|将此证书从根 CA 或信任根 CA 的任何设备中导出为“.cer”  文件。 然后，使用受信任的 CA 证书配置文件将其分配给用户、设备或同时向两者分配。<br /> **注意：<br />分配 SCEP 证书配置文件时，请务必将 SCEP 证书配置文件中引用的受信任的根证书配置文件分配到同一用户或设备组  。若要创建此配置文件，请参阅[创建受信任的证书配置文件](certficates-pfx-configure.md#create-a-trusted-certificate-profile)，如有关 PKCS 证书配置文件的文章中所述。** <br/><br />你可以在每个操作系统平台上使用一个受信任的根 CA 证书，并将其与你创建的每个受信任的根证书配置文件相关联。 <br /><br />你可以在需要时使用其它受信任的根 CA 证书。 例如，你可以这样做来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。|
+|**SCEP 证书模板**         |将在发证 CA 上配置的模板，用于完成设备 SCEP 请求。 |
+|**客户端身份验证证书** |从发证 CA 或公共 CA 请求。<br /> 此证书安装在托管 NDES 服务的计算机上，供 Intune 证书连接器使用。<br /> 如果证书已在用于颁发证书的 CA 模板上设置客户端和服务器身份验证密钥用法（增强型密钥使用）    ， 则可将相同的证书用于服务器和客户端身份验证。 |
+|**服务器身份验证证书** |发证 CA 或公共 CA 请求 Web 服务器证书。<br /> 在托管 NDES 的计算机上的 IIS 中安装并绑定此 SSL 证书。<br />如果证书已在用于颁发证书的 CA 模板上设置客户端和服务器身份验证密钥用法（增强型密钥使用）    ， 则可将相同的证书用于服务器和客户端身份验证。 |
+|**受信任的根 CA 证书**       |要使用 SCEP 证书配置文件，设备必须信任受信任的根证书颁发机构 (CA)。 在 Intune 中使用受信任的证书配置文件为用户和设备预配受信任的根 CA 证书  。 <br/><br/> -  在每个操作系统平台上使用一个受信任的根 CA 证书，并将该证书与创建的每个受信任的根证书配置文件关联。 <br /><br /> -  可以在需要时使用其它受信任的根 CA 证书。 例如，可以使用其他证书来信任为 Wi-Fi 访问点的服务器身份验证证书签名的 CA。 为发证 CA 创建其他受信任的根 CA 证书。  对于在 Intune 中创建的 SCEP 证书配置文件，请确保在其中为发证 CA 指定受信任的根 CA 配置文件。<br/><br/> 有关受信任证书配置文件的信息，请参阅“在 Intune 中使用证书进行身份验证”中的[导出受信任的 CA 证书](certificates-configure.md#export-the-trusted-root-ca-certificate)和[创建受信任的证书配置文件](certificates-configure.md#create-trusted-certificate-profiles)  。 |
 
-### <a name="accounts"></a>帐户
+## <a name="configure-the-certification-authority"></a>配置证书颁发机构
 
-|名称|详细信息|
-|--------|-----------|
-|**NDES 服务帐户**|输入用作 NDES 服务帐户的域用户帐户。 |
+在以下各节介绍了如何：
+- 为 NDES 配置和发布所需模板。 
+- 设置吊销证书的所需权限。 
 
-## <a name="configure-your-infrastructure"></a>配置你的基础结构
-配置证书配置文件前，请完成以下步骤。 必须具备 Windows Server 2012 R2 或更高版本和 Active Directory 证书服务 (ADCS) 方面的知识，才能执行下面这些步骤：
+完成以下各节需要具备 Windows Server 2012 R2 或更高版本和 Active Directory 证书服务 (AD CS) 方面的知识。  
 
-### <a name="step-1---create-an-ndes-service-account"></a>步骤 1 - 创建 NDES 服务帐户
+### <a name="access-your-issuing-ca"></a>访问发证 CA
 
-创建用作 NDES 服务帐户的域用户帐户。 安装和配置 NDES 之前，在配置发证 CA 上的模板时输入该帐户。 确保用户具有默认权限，即“本地登录”  、“作为服务登录”  和“作为批处理作业登录”  的权限。 某些组织已采用强化策略禁用这些权限。
+1. 使用有权管理 CA 的域帐户登录发证 CA。  
+2. 打开证书颁发机构 Microsoft 管理控制台 (MMC)。 运行“certsrv.msc”，或在服务器管理器中单击“工具”，然后单击“证书颁发机构”     。
+3. 选择“证书模板”节点，单击“操作” > “管理”    。
 
-### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>步骤 2 - 配置证书颁发机构上的证书模板
-在此步骤中，你将：
+### <a name="create-the-scep-certificate-template"></a>创建 SCEP 证书模板
 
-- 配置 NDES 证书模板
-- 发布 NDES 证书模板
+1. 创建 v2 证书模板（具有 Windows 2003 兼容性），用作 SCEP 证书模板。 你可以：  
+   - 使用“证书模板”管理单元创建新的自定义模板  。  
+   - 复制现有模板（如用户模板）然后更新，将其用作 NDES 模板。
+ 
+2. 在模板的指定选项卡上配置以下设置：
+   - 常规  ：
+     - 取消选中“在 Active Directory 中发布证书”  。
+     - 指定一个友好的“模板显示名称”，以便稍后识别此模板  。  
 
-#### <a name="configure-the-certification-authority"></a>配置证书颁发机构
+   - **使用者名称**：  
+     - 选择“在请求中提供”  。 由适用于 NDES 的 Intune 策略模块强制实施安全措施。  
 
-1. 以企业管理员身份登录。
+     ![模板，“使用者名称”选项卡](./media/certificates-scep-configure/scep-ndes-subject-name.jpg)
+   - **扩展**：  
+     - 确保“应用程序策略描述”包括“客户端身份验证”   。  
+       > [!IMPORTANT]  
+       > 只添加所需的应用程序策略即可。 与你的安全管理员确认你的选择。
+ 
+     - 对于 iOS 和 macOS 证书模板，编辑“密钥用法”并确保未选择“数字签名为原件的证明”   。
 
-2. 在发证 CA 上，使用“证书模板”管理单元创建新的自定义模板。 或者，复制现有模板，然后更新现有模板（如用户模板）以与 NDES 配合使用。
+     ![模板，“扩展”选项卡](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
-   >[!NOTE]
-   > NDES 证书模板必须基于 v2 证书模板（具有 Windows 2003 兼容性）。
+   - **安全性**：  
+     - 添加 NDES 服务帐户  。 此帐户需要具有此模板的读取  和注册  权限。
 
-   模板必须进行以下配置：
+     - 为将创建 SCEP 配置文件的 Intune 管理员添加其他帐户。 这些帐户需要模板的读取权限，以便使这些管理员能够在创建 SCEP 配置文件时浏览此模板  。  
 
-   - 通常情况下  ：
+     ![模板，“安全”选项卡](./media/certificates-scep-configure/scep-ndes-security.jpg)  
+
+   - 请求处理  ：  
+      下图是一个示例。 你的配置可能有所不同。  
+
+     ![模板，“请求处理”选项卡](./media/certificates-scep-configure/scep-ndes-request-handling.png) 
+
+   - 颁发要求  ：  
+     下图是一个示例。 你的配置可能有所不同。  
+
+     ![模板，“颁发要求”选项卡](./media/certificates-scep-configure/scep-ndes-issuance-reqs.jpg)  
+
+3. 保存证书模板。  
+
+### <a name="create-the-client-certificate-template"></a>创建客户端证书模板
+
+Intune 证书连接器要求某个证书的“客户端身份验证”增强型密钥用法和使用者名称与安装连接器的计算机的 FQDN 相同  。 需要添加具有以下属性的模板：
+
+- “扩展” > “应用程序策略”必须包含“客户端身份验证”   
+- “使用者名称” > “在请求中提供”   。
+
+如果已有包含这些属性的模板，则可以重复使用它，否则可以通过复制现有模板或创建自定义模板来创建新模板。
+
+### <a name="create-the-server-certificate-template"></a>创建服务器证书模板
+
+托管设备和 NDES 服务器上的 IIS 之间的通信使用 HTTPS，这需要使用证书。 可以使用 Web 服务器证书模板来颁发此证书  。 或者，如果想要使用专用模板，则需要以下属性：
+
+- “扩展” > “应用程序策略”必须包含“服务器身份验证”   
+- “使用者名称” > “在请求中提供”   。
+
+> [!NOTE]  
+> 如果证书同时满足客户端和服务器证书模板的要求，则可以对 IIS 和 Intune 证书连接器使用单个证书。
+
+### <a name="grant-permissions-for-certificate-revocation"></a>授予吊销证书的权限
+
+为了使 Intune 能够吊销不再需要的证书，必须授予证书颁发机构权限。 
+
+在 Intune 证书连接器上，可以使用 NDES 服务器系统帐户或特定帐户（如 NDES 服务帐户）   。
+
+1. 在“证书颁发机构”控制台中，右键单击 CA 名称，然后单击“属性”  。
+2. 在“安全”  选项卡中，单击“添加”  。
+3. 授予“颁发和管理证书”权限  ：
+   - 如果选择使用 NDES 服务器系统帐户，请提供针对 NDES 服务器的权限  。
+   - 如果选择使用 NDES 服务帐户，则改为提供针对该帐户权限  。
+
+### <a name="modify-the-validity-period-of-the-certificate-template"></a>修改证书模板的有效期
+
+可选择修改证书模板的有效期。  
+
+[创建 SCEP 证书模板](#create-the-scep-certificate-template)后，可以编辑模板，在“常规”选项卡上查看“有效期”   。  
+
+默认情况下，Intune 使用模板中配置的值。 但是，可以将 CA 配置为允许申请者输入其他值，并且可在 Intune 控制台中设置该值。  
+
+> [!IMPORTANT]  
+> 对于 iOS 和 macOS，请始终使用模板中设置的值。  
+
+#### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>配置可在 Intune 控制台中设置的值  
+1. 请在 CA 上运行以下命令：  
+   -certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE   
+   -net stop certsvc   
+   -net start certsvc   
+
+2. 在发证 CA 上，使用证书颁发机构管理单元发布证书模板。 选择“证书模板”节点，选择“操作” > “新建” > “要颁发的证书模板”，然后选择在前面一节中创建的模板     。  
+
+3. 通过查看“证书模板”  文件夹中已发布的模板来对该模板进行验证。  
+
+## <a name="set-up-ndes"></a>设置 NDES  
+以下过程可帮助配置用于 Intune 的网络设备注册服务 (NDES)。 有关 NDES 的详细信息，请参阅[网络设备注册服务指南](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v%3dws.11))。  
+
+### <a name="install-the-ndes-service"></a>安装 NDES 服务  
+1. 在将要通过 NDES 服务的服务器上，以“企业管理员”身份登录，并使用[添加角色和功能向导](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11))安装 NDES  ：
+
+   1. 在向导中，选择“Active Directory 证书服务”  以获得对 AD CS 角色服务的访问权限。 选择“网络设备注册服务”  ，取消选中“证书颁发机构”  ，然后完成向导。  
+
+      > [!TIP]  
+      > 在“安装进度”  处，不要选择“关闭”  。 而是选择“配置目标服务器上的 Active Directory 证书服务”的链接  。 “AD CS 配置”向导随即打开，它可用于本文中的下一个过程：“配置 NDES 服务”   。 打开“AD CS 配置”后，你可以关闭“添加角色和功能”向导。  
+
+   2. 将 NDES 添加到服务器后，向导也会安装 IIS。 确认 IIS 具有以下配置：  
+
+      - “Web 服务器” > “安全性” > “请求筛选”     
+      - “Web 服务器” > “应用程序开发” > “ASP.NET 3.5”     
+
+        安装 ASP.NET 3.5 会安装 .NET Framework 3.5。 安装 .NET Framework 3.5 时，安装核心“.NET Framework 3.5”  功能和“HTTP 激活”  。  
+      - “Web 服务器” > “应用程序开发” > “ASP.NET 4.5”     
+
+        安装 ASP.NET 4.5 会安装 .NET Framework 4.5。 安装 .NET Framework 4.5 时，安装核心“.NET Framework 4.5”功能、“ASP.NET 4.5”和“WCF 服务” > “HTTP 激活”功能     。  
+
+      - “管理工具” > “IIS 6 管理兼容性” > “IIS 6 元数据库兼容性”     
+      - “管理工具” > “IIS 6 管理兼容性” > “IIS 6 WMI 兼容性”     
+      - 在服务器上，将 NDES 服务帐户添加为本地“IIS_IUSR”组成员  。  
+
+2. 在托管 NDES 服务的计算机中，在提升的命令提示符处运行以下命令。 以下命令可设置 NDES 服务帐户的 SPN：  
+
+   `setspn -s http/<DNS name of the computer that hosts the NDES service> <Domain name>\<NDES Service account name>`
    
-       - 确认未  选中“在 Active Directory 中发布证书”  属性。
-       - 为模板输入友好的“模板显示名称”  。
+   例如，如果托管 NDES 服务的计算机名为 Server01  ，域为 Contoso.com  ，并且服务帐户为 NDESService  ，则使用：  
 
-   - 在“使用者名称”处，选择“在请求中提供”   。 （由适用于 NDES 的 Intune 策略模块强制实施安全措施）。
+   `setspn –s http/Server01.contoso.com contoso\NDESService`  
 
-   - 在“扩展”选项卡上，确认“应用程序策略描述”包括“客户端身份验证”    。
+### <a name="configure-the-ndes-service"></a>配置 NDES 服务  
 
-     > [!IMPORTANT]
-     > 对于 iOS 和 macOS 证书模板，在“扩展”选项卡上编辑“密钥用法”，并确认未选择“数字签名为原件的证明”    。
+1. 在托管 NDES 服务的计算机中，打开“AD CS 配置”向导，然后进行以下更新  ：  
 
-   - 在“安全性”选项卡上，添加 NDES 服务帐户，并授予它“注册”模板的权限   。 将创建 SCEP 配置文件的 Intune 管理员需要“读取”权限，以便在创建 SCEP 配置文件时可以浏览到该模板  。
+   > [!TIP]  
+   > 如果从上一个过程继续，并单击了“在目标服务器上配置 Active Directory 证书服务”链接，则此向导应已打开  。 或者，打开“服务器管理器”访问“Active Directory 证书服务”的后期部署配置。  
 
-     > [!NOTE]
-     > 若要撤销证书，NDES 服务帐户需要证书颁发机构的“颁发和管理证书”权限  。 若要委派此权限，请打开“证书颁发机构”管理控制台，右键单击“证书颁发机构”名称。 然后，在“安全”选项卡上，添加或选择帐户，然后选中“颁发和管理证书”  复选框。
-
-
-3. 在模板的“常规”  选项卡上查看“有效期”  。 默认情况下，Intune 使用模板中配置的值。 但是，可以将 CA 配置为允许申请者输入其他值，随后便能够在 Intune 管理员控制台中设置此值。 如果你想要一直使用模板中的值，跳过该步骤的其余部分即可。
-
-   > [!IMPORTANT]
-   > iOS 和 macOS 始终使用模板中设置的值，无论你设置的其他配置如何。
-
-示例模板配置：
-
-![模板，“请求处理”选项卡](./media/scep_ndes_request_handling.png)
-
-![模板，“使用者名称”选项卡](./media/scep_ndes_subject_name.jpg)
-
-![模板，“安全”选项卡](./media/scep_ndes_security.jpg)
-
-![模板，“扩展”选项卡](./media/scep_ndes_extensions.jpg)
-
-![模板，“颁发要求”选项卡](./media/scep_ndes_issuance_reqs.jpg)
-
-> [!IMPORTANT]
-> 对于应用程序策略，只添加所需的应用程序策略即可。 与你的安全管理员确认你的选择。
-
-配置 CA 以允许申请者输入有效期：
-
-1. 请在 CA 上运行以下命令：
-   - **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
-   - **net stop certsvc**
-   - **net start certsvc**
-
-2. 在发证 CA 上，使用证书颁发机构管理单元发布证书模板。
-   选择“证书模板”  节点，单击“操作”   > “新建”   > “要颁发的证书模板”  ，然后选择你在步骤 2 中创建的模板。
-
-3. 通过查看“证书模板”  文件夹下已发布的模板来对它进行验证。
-
-### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>步骤 3 - 在 NDES 服务器上配置必备组件
-在此步骤中，你将：
-
-- 将 NDES 添加到 Windows Server 并配置 IIS 以支持 NDES
-- 将 NDES 服务帐户添加到 IIS_IUSR 组
-- 设置 NDES 服务帐户的服务主体名称 (SPN)
-
-1. 在承载 NDES 的服务器上安装 NDES 时，以“企业管理员”身份登录，然后使用[添加角色和功能向导](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11))  ：
-
-   1. 在向导中，选择“Active Directory 证书服务”  以获得对 AD CS 角色服务的访问权限。 选择“网络设备注册服务”  ，取消选择“证书颁发机构”  ，然后完成向导。
-
-      > [!TIP]
-      > 在“安装进度”  处，不要勾选“关闭”  。 而是选择“配置目标服务器上的 Active Directory 证书服务”的链接  。 “AD CS 配置”向导将会打开，此配置将用于下一步骤  。 打开“AD CS 配置”后，你可以关闭“添加角色和功能”向导。
-
-   2. 将 NDES 添加到服务器后，向导也会安装 IIS。 确认 IIS 具有以下配置：
-
-       - “Web 服务器” > “安全性” > “请求筛选”   
-
-       - “Web 服务器” > “应用程序开发” > “ASP.NET 3.5”    
-
-            安装 ASP.NET 3.5 会安装 .NET Framework 3.5。 安装 .NET Framework 3.5 时，安装核心“.NET Framework 3.5”  功能和“HTTP 激活”  。
-
-       - “Web 服务器” > “应用程序开发” > “ASP.NET 4.5”    
-
-            安装 ASP.NET 4.5 会安装 .NET Framework 4.5。 安装 .NET Framework 4.5 时，安装核心“.NET Framework 4.5”功能、“ASP.NET 4.5”和“WCF 服务” > “HTTP 激活”功能     。
-
-       - “管理工具” > “IIS 6 管理兼容性” > “IIS 6 元数据库兼容性”   
-
-       - “管理工具” > “IIS 6 管理兼容性” > “IIS 6 WMI 兼容性”   
-
-       - 在服务器上，将 NDES 服务帐户添加为本地“IIS_IUSR”组成员  。
-
-2. 在提升的命令指示符处，运行以下命令以设置 NDES 服务帐户的 SPN：
-
-    `setspn -s http/<DNS name of NDES Server> <Domain name>\<NDES Service account name>`
-
-    例如，如果 NDES 服务器名为 Server01  ，你的域为 Contoso.com  ，并且服务帐户为 NDESService  ，则使用：
-
-    `setspn –s http/Server01.contoso.com contoso\NDESService`
-
-### <a name="step-4---configure-ndes-for-use-with-intune"></a>步骤 4 - 配置 NDES 以与 Intune 一起使用
-在此步骤中，你将：
-
-- 配置 NDES 以与发证 CA 一起使用
-- 在 IIS 绑定服务器身份验证 (SSL) 证书
-- 在 IIS 中配置请求筛选
-
-1. 在 NDES 服务器上，打开“AD CS 配置”向导，然后进行以下更新：
-
-    > [!TIP]
-    > 如果在上一步骤中单击了该链接，则此向导已经打开。 或者，打开“服务器管理器”访问“Active Directory 证书服务”的后期部署配置。
-
-   - 在“角色服务”页面，选择“网络设备注册服务”  
-   - 在“NDES 的服务帐户”页面，输入 NDES 服务帐户 
-   - 在“NDES 的 CA”页面，单击“选择”，然后选择在其中配置证书模板的发证 CA  
+   - 在“角色服务”中，选择“网络设备注册服务”   。
+   - 在“NDES 的服务帐户”中，指定 NDES 服务帐户  。
+   - 在“NDES 的 CA”中，单击“选择”，然后选择在其中配置证书模板的发证 CA   。
    - 在“为 NDES 加密”页面，设置符合公司要求的秘钥长度  。
    - 在“确认”页面，选择“配置”，完成向导   。
 
-2. 完成向导后，在 NDES 服务器上更新以下注册表项：
+2. 完成向导后，在托管 NDES 服务的计算机中更新以下注册表项：  
+   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`  
 
-    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
+   要更新此密钥，请标识证书模板的“目的”（位于“请求处理”选项卡上）   。 然后，通过将现有数据替换为在[创建证书模板](#create-the-scep-certificate-template)时指定的证书模板名称（不是模板的显示名称），更新对应的注册表项。  
 
-    要更新此密钥，请标识证书模板的“目的”（位于“请求处理”选项卡上）   。 然后，通过将现有数据替换为在“步骤 2”中指定的证书模板的名称（不是模板的显示名称），更新对应的注册表项。 下表将证书模板目的映射至注册表中的值：
+   下表将证书模板目的映射至注册表中的值：
+   
+   |证书模板目的（位于“请求处理”选项卡上）|待编辑的注册表值|在 Intune 管理控制台中显示的 SCEP 配置文件的值|
+   |------------------------|-------------------------|---|
+   |签名               |SignatureTemplate        |数字签名 |
+   |加密              |EncryptionTemplate       |密钥加密  |
+   |签名和加密|GeneralPurposeTemplate   |密钥加密<br/>数字签名 |  
 
-    |证书模板目的（位于“请求处理”选项卡上）|待编辑的注册表值|在 Intune 管理控制台中显示的 SCEP 配置文件的值|
-    |---|---|---|
-    |签名|SignatureTemplate|数字签名|
-    |加密|EncryptionTemplate|密钥加密|
-    |签名和加密|GeneralPurposeTemplate|密钥加密<br/>数字签名|
+   例如，如果证书模板的目的为“加密”  ，然后将“EncryptionTemplate”  值编辑为你的证书模板的名称。  
 
-    例如，如果证书模板的目的为“加密”  ，然后将“EncryptionTemplate”  值编辑为你的证书模板的名称。
+3. 配置 IIS 请求筛选，在 IIS 中添加对 NDES 服务收到的长 URL（查询）的支持。
+   1. 在 IIS 管理器中，选择“默认网站” > “请求筛选” > “编辑功能设置”，打开“编辑请求筛选设置”页面     。  
 
-3. NDES 服务器收到长 URL（查询），要求添加两个注册表项：
+   2. 配置下列设置：  
+      - 最大 URL 长度(字节) = 65534   
+      - 最大查询字符串(字节) = 65534   
+   3. 选择“确定”，保存此配置并关闭 IIS 管理器  。  
+   4. 查看以下注册表项并确认其具有指示的值，以验证此配置：  
 
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters`    
 
-   |                        位置                        |      值      | 类型  |      数据       |
-   |--------------------------------------------------------|-----------------|-------|-----------------|
-   | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534（十进制） |
-   | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534（十进制） |
+      以下值设置为 DWORD 值：  
+      - 名称：MaxFieldLength  ，十进制值为 65534   
+      - 名称：MaxRequestBytes  ，十进制值为 65534   
+4. 重启托管 NDES服务的服务器。 请勿使用 iisreset  ；iireset 未完成所需更改。  
 
-4. 在 IIS 管理器中，选择“默认网站” > “请求筛选” > “编辑功能设置”    。 将“URL 最大长度”和“最大查询字符串”更改为“65534”，如下所示    ：
+5. 浏览到 http://Server_FQDN/certsrv/mscep/mscep.dll   。 应看到与下图类似的 NDES 页面：  
 
-    ![IIS 的最大 URL 长度和最大查询长度](./media/SCEP_IIS_max_URL.png)
+   ![测试 NDES](./media/certificates-scep-configure/scep-ndes-url.png)
+  
+   如果 Web 地址返回“503 服务不可用”  ，请查看计算机事件查看器。 当应用程序池因缺少 [NDES 服务帐户权限](#accounts)而停止时，通常会出现此错误。  
+  
+### <a name="install-and-bind-certificates-on-the-server-that-hosts-ndes"></a>在托管 NDES 服务的服务器上安装和绑定证书  
+> [!TIP]  
+> 在以下过程中，如果某个服务器配置为同时满足服务器和客户端身份验证的要求，则可以使用单个证书进行“服务器身份验证”和“客户端身份验证”   。 以下过程的步骤 1 和步骤 3 中描述了用于每种身份验证的条件。  
 
-5. 重新启动服务器。 请勿使用 iisreset  ；它不会完成这些更改。
-6. 浏览到 `http://*FQDN*/certsrv/mscep/mscep.dll`。 应看到与下图类似的 NDES 页面：
+1. 从内部 CA 或公共 CA 请求“服务器身份验证”  证书，然后在服务器上安装该证书。  
 
-    ![测试 NDES](./media/SCEP_NDES_URL.png)
+   如果服务器对单个网络地址使用外部和内部名称，则服务器身份验证证书必须具有：  
 
-    如果你收到“503 服务不可用”  的信息，请查看事件查看器。 可能是因 NDES 用户缺少权限导致应用程序池停止。 步骤 1 中描述了这些权限。
+   - “使用者名称”  （包括外部公共服务器名称）。
+   - “使用者可选名称”  （包括内部服务器名称）。  
 
-#### <a name="install-and-bind-certificates-on-the-ndes-server"></a>在 NDES 服务器上安装和绑定证书
+2. 在 IIS 中绑定服务器身份验证证书：  
+  
+   1. 安装服务器身份验证证书后，打开“IIS 管理器”，然后选择“默认网站”   。 在“操作”窗格中，选择“绑定”   。  
+   1. 选择“添加”，将“类型”设置为“https”并确认端口为“443”     。  
+   1. 为“SSL 证书”  指定服务器身份验证证书。  
+ 
+3. 在你的 NDES 服务器上，请求并安装来自你的内部 CA 或公用证书颁发机构的“客户端身份验证”  证书。  
 
-1. 在你的 NDES 服务器上，请求并安装来自你的内部 CA 或公共 CA 的“服务器身份验证”  证书。 随后绑定 IIS 中的 SSL 证书。
+   客户端身份验证证书必须具备以下属性：  
+   - **增强型密钥使用**：此值必须包括“客户端身份验证”  。  
+   - **使用者名称**：此值必须与安装证书的服务器（NDES 服务器）的 DNS 名称相同。  
 
-    > [!TIP]
-    > 绑定 IIS 中的 SSL 证书后，安装客户端身份验证证书。 该证书可以由 NDES 服务器信任的任何 CA 颁发。 如果证书具有客户端和服务器身份验证密钥使用集（增强型密钥使用），则可以使用相同的证书  。 查看以下步骤以获得有关这些身份验证证书的信息。
+4. 托管 NDES 服务的服务器现已支持 Intune 证书连接器。  
 
-   1. 获取服务器身份验证证书后，打开“IIS 管理器”，然后选择“默认网站”   。 在“操作”窗格中，选择“绑定”   。
+## <a name="install-the-intune-certificate-connector"></a>安装 Intune 证书连接器  
+Microsoft Intune 证书连接器安装在运行 NDES 服务的服务器上。 不支持在证书颁发机构 (CA) 所在的同一服务器上使用 NDES 或 Intune 证书连接器。  
 
-   2. 选择“添加”，将“类型”设置为“https”并确认端口为“443”     。 独立 Intune 仅支持端口 443。
+安装证书连接器：  
+1. 使用具有 Intune 权限的帐户登录 [Intune 门户](https://aka.ms/intuneportal)。  
 
-   3. 为“SSL 证书”输入服务器身份验证证书  。
+2. 选择“设备配置”   > “证书颁发机构”   > “添加”  。  
 
-      > [!NOTE]
-      > 如果 NDES 服务器对单个网络地址使用外部和内部名称，则服务器身份验证证书必须具有：
-      > - **使用者名称**（包括外部公共服务器名称）
-      > - **使用者可选名称**（包括内部服务器名称）
-
-2. 在你的 NDES 服务器上，请求并安装来自你的内部 CA 或公用证书颁发机构的“客户端身份验证”  证书。 如果证书具有这两个功能，则可以与服务器身份验证证书相同。
-
-    客户端身份验证证书必须具备以下属性：
-
-    - **增强型密钥使用**：此值必须包括客户端身份验证 
-
-    - **使用者名称**：此值必须与安装证书的服务器（NDES 服务器）的 DNS 名称相同
-
-#### <a name="configure-iis-request-filtering"></a>配置 IIS 请求筛选
-
-1. 在 NDES 服务器上打开“IIS 管理器”，在“连接”窗格中选择“默认网站”，然后打开“请求筛选”     。
-
-2. 选择“编辑功能设置”，然后设置值  ：
-
-    - **查询字符串(字节)**  = **65534**
-    - **最大 URL 长度(字节)**  = **65534**
-
-3. 查看以下注册表：
-
-    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters`
-
-    确认以下值都设置为 DWORD 值：
-
-    - 名称：MaxFieldLength  ，十进制值为 65534 
-    - 名称：MaxRequestBytes  ，十进制值为 65534 
-
-4. 重新启动 NDES 服务器。 服务器现已支持证书连接器。
-
-### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>步骤 5 - 启用、安装和配置 Intune 证书连接器
-在此步骤中，你将：
-
-- 在 Intune 中启用对 NDES 的支持。
-- 在承载环境中的网络设备注册服务 (NDES) 角色的服务器上下载、安装和配置证书连接器。 为提高组织中 NDES 实现的缩放性，可安装多个 NDES 服务器，并让每个 NDES 服务器都具有一个 Microsoft Intune 证书连接器。
-
-#### <a name="download-install-and-configure-the-certificate-connector"></a>下载、安装和配置证书连接器
-
-> [!IMPORTANT] 
-> Microsoft Intune 证书连接器  必须安装在单独的 Windows Server 上。 它不能安装在证书颁发机构 (CA) 上。 它  还必须安装在与网络设备注册服务 (NDES) 角色相同的服务器上。
-
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “认证连接器” > “添加”    。
-3. 下载并保存 SCEP 文件的连接器。 将该文件保存到可从要安装连接器的 NDES 服务器访问的位置。
+3. 下载并保存 SCEP 文件的连接器。 将该文件保存到可从要安装连接器的服务器访问的位置。
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
+4. 下载完成后，请转到托管网络设备注册服务 (NDES) 角色的服务器。 然后：  
 
-4. 下载完成后，请转到托管网络设备注册服务 (NDES) 的 NDES 服务器。 然后：
+   1. 确认已安装 .NET 4.5 Framework，因为它是 Intune 证书连接器的必需项。 Windows Server 2012 R2 和更高版本中自动包含 .NET 4.5 Framework。  
+   2. 运行安装程序 (NDESConnectorSetup.exe)  。 安装程序还会安装 NDES 和 IIS 证书注册点 (CRP) Web 服务的策略模块。 CRP Web 服务 CertificateRegistrationSvc 作为 IIS 中的应用程序运行  。  
 
-    1. 确保已安装 .NET 4.5 Framework，因为它是 NDES 证书连接器的必需项。 Windows Server 2012 R2 和更高版本中自动包含 .NET 4.5 Framework。
-    2. 使用对服务器具有管理权限的帐户运行安装程序 (NDESConnectorSetup.exe)  。 该安装程序也会安装 NDES 和 CRP Web Service 的策略模块。 CRP Web 服务 CertificateRegistrationSvc 作为 IIS 中的应用程序运行。
+      - 如果为独立 Intune 安装 NDES，则 CRP 服务会自动随证书连接器一起安装。 
+      - 如果将 Intune 与 Configuration Manager 配合使用，请以 Configuration Manager 站点系统角色安装证书注册点。  
+5. 提示输入证书连接器的客户端证书时，选取“选择”  ，然后选择在前文[在托管 NDES 的服务器上安装和绑定证书](#install-and-bind-certificates-on-the-server-that-hosts-ndes)过程的步骤 3 中，在 NDES 服务器上安装的“客户端身份验证”  证书。  
 
-    > [!NOTE]
-    > 如果为独立 Intune 安装 NDES，则 CRP 服务会自动随证书连接器一起安装。 如果将 Intune 与 Configuration Manager 配合使用，请以单独的站点系统角色安装证书注册点。
+   选择客户端身份验证证书后，会返回到“Microsoft Intune 证书连接器的客户端证书”  处。 尽管不会显示所选证书，但可以选择“下一步”查看该证书的属性  。 然后依次选择“下一步”和“安装”   。
 
-5. 提示输入证书连接器的客户端证书时，选取“选择”  ，然后选择步骤 4 中在你的 NDES 服务器上安装的“客户端身份验证”  证书。
+6. 在向导完成后，先单击“启动证书连接器 UI，然后再关闭向导”  。  
 
-    选择客户端身份验证证书后，你将返回到“Microsoft Intune 证书连接器的客户端证书”  处。 尽管所选证书不会显示，但可以单击“下一步”查看该证书的属性  。 然后依次选择“下一步”和“安装”   。
+   如果在启动证书连接器 UI 前关闭了向导，可以通过运行以下命令重新打开它：<install_Path>\NDESConnectorUI\NDESConnectorUI.exe 
 
-    > [!IMPORTANT]
-    > [必须在托管 Intune 证书连接器的 NDES 服务器](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)上禁用 Internet Explorer 增强型安全配置。
+7. 在“证书连接器”  UI 中：  
+   1. 选择“登录”，输入你的 Intune 服务管理员凭据或具有全局管理权限的租户管理员的凭据  。  
+   2. 必须为所用帐户分配有效的 Intune 许可证。  
+   3. 登录后，Intune 证书连接器从 Intune 下载证书。 此证书用于连接器和 Intune 之间的身份验证。 如果所用帐户没有 Intune 许可证，则连接器（NDESConnectorUI.exe）无法从 Intune 获取证书。  
 
-6. 在向导完成后，先单击“启动证书连接器 UI，然后再关闭向导”  。
+      如果组织使用代理服务器并且 NDES 服务器需要代理才能访问 Internet，请选择“使用代理服务器”  。 然后输入用于连接的代理服务器名称、端口和帐户凭据。  
 
-    > [!TIP]
-    > 如果在启动证书连接器 UI 前关闭了向导，你可以通过运行以下命令重新打开它：
-    >
-    > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
+    4. 选择“高级”选项卡，然后输入在证书颁发机构上拥有“颁发和管理证书”权限的帐户的凭据   。 单击“应用”以应用更改  。  
 
-7. 在“证书连接器”  UI 中：
-
-    选择“登录”，输入你的 Intune 服务管理员凭据或具有全局管理权限的租户管理员的凭据  。 登录后，Intune 证书连接器将从 Intune 下载证书。 此证书用于连接器和 Intune 之间的身份验证。
-
-    > [!IMPORTANT]
-    > 必须为用户帐户分配有效的 Intune 许可证。 如果用户帐户没有有效的 Intune 许可证，NDESConnectorUI.exe 将失败。
-
-    如果组织使用代理服务器并且 NDES 服务器需要代理才能访问 Internet，请选择“使用代理服务器”  。 然后输入用于连接的代理服务器名称、端口和帐户凭据。
-
-    选择“高级”选项卡，然后输入在证书颁发机构上拥有“颁发和管理证书”权限的帐户的凭据   。 单击“应用”以应用更改  。 如果在[配置证书颁发机构](#configure-the-certification-authority)时将此权限委派给了 NDES 服务帐户，请在此处指定该帐户。 
-
-    你现在可以关闭证书连接器 UI。
+    5. 你现在可以关闭证书连接器 UI。  
 
 8. 打开命令提示符，输入“services.msc”，然后按 Enter   。 右键单击  “Intune 连接器服务” >   “重启”。
 
-要验证服务是否正在运行，请打开浏览器并输入以下 URL。 应返回 403 错误  ：
 
-`http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
+要验证服务是否正在运行，请打开浏览器并输入以下 URL。 应返回 403 错误  ：`http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`  
 
-> [!NOTE]
-> NDES 证书连接器中包含 TLS 1.2 支持。 因此，如果已安装 NDES 证书连接器的服务器支持 TLS 1.2，则使用 TLS 1.2。 如果服务器不支持 TLS 1.2，则使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。
-
-## <a name="create-a-scep-certificate-profile"></a>创建 SCEP 证书配置文件
-
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
-3. 为 SCEP 证书配置文件输入“名称”和“说明”   。
-4. 从“平台”  下拉列表中，为此 SCEP 证书选择设备平台。 目前，可以为设备限制设置选择以下平台之一：
-   - **Outlook Web Access (OWA)**
-   - **Android Enterprise**
-   - **iOS**
-   - **macOS**
-   - **Windows Phone 8.1**
-   - **Windows 8.1 及更高版本**
-   - **Windows 10 及更高版本**
-5. 从“配置文件”类型下拉列表中，选择“SCEP 证书”   。
-6. 输入以下设置：
-
-   - **证书类型**：为用户证书选择“用户”  。 “用户”证书类型可包含证书主题和 SAN 中的用户和设备属性  。  对于无用户设备（如展台）等方案或 Windows 设备，请选择“设备”，将证书放在本地计算机证书存储中  。 “设备”证书只能在证书主题和 SAN 中包含设备属性  。  “设备”证书可用于以下平台  ：  
-     - Android Enterprise - 工作配置文件
-     - iOS
-     - macOS
-     - Windows 8.1 及更高版本
-     - Windows 10 及更高版本
-
-
-   - **使用者名称格式**：选择 Intune 如何自动创建证书请求中的使用者名称。 如果选择“用户”证书类型或“设备”证书类型，选项将发生更改   。  
-
-     > [!NOTE]  
-     > 当生成的证书签名请求 (CSR) 中的使用者名称包含以下字符之一作为转义字符（后跟反斜杠 \\）时，使用 SCEP 获取证书存在[已知问题](#avoid-certificate-signing-requests-with-escaped-special-characters)：
-     > - \+
-     > - ;
-     > - 、
-     > - =
-
-        **“用户”证书类型**  
-
-        可以在使用者名称中包括用户的电子邮件地址。 选择：
-
-        - 未配置 
-        - 公用名称 
-        - 包含电子邮件地址的公用名称 
-        - 作为电子邮件地址的公用名称 
-        - IMEI（国际移动设备标识） 
-        - **序列号**
-        - **自定义**：选中此选项时，也会显示“自定义”文本框  。 使用此字段输入一个自定义使用者名称格式，包括变量。 自定义格式支持两种变量：公用名 (CN)  和电子邮件 (E)  。 可将“公用名(CN)”设置为以下任何变量  ：
-
-            - **CN={{UserName}}** ：用户的用户主体名称，例如 janedoe@contoso.com
-            - **CN={{AAD_Device_ID}}** ：在 Azure Active Directory (AD) 中注册设备时分配的 ID。 此 ID 通常用于向 Azure AD 进行身份验证。
-            - **CN={{SERIALNUMBER}}** ：制造商通常用于标识设备的唯一序列号 (SN)
-            - **CN={{IMEINumber}}** ：用于标识移动电话的国际移动设备标识 (IMEI)
-            - **CN={{OnPrem_Distinguished_Name}}** ：用逗号分隔的一系列相对可分辨名称，如 `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-                要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。
-
-            - **CN={{onPremisesSamAccountName}}** ：管理员可以使用 Azure AD 连接到名为 `onPremisesSamAccountName` 的属性，将 Active Directory 中的 samAccountName 属性同步到 Azure AD。 Intune 可以将该变量替换为 SCEP 证书主题中的证书颁发请求的一部分。  samAccountName 属性是用于从早期版本的 Windows（Windows 2000 之前）支持客户端和服务器的用户登录名。 用户登录名称格式为：`DomainName\testUser` 或仅 `testUser`。
-
-                要使用 `{{onPremisesSamAccountName}}` 变量，请务必使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) 将 `onPremisesSamAccountName` 用户属性同步到 Azure AD。
-
-            通过使用这些变量的一个或多个与静态字符串的组合，可以创建一个自定义使用者名称格式，例如：  
-
-            CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US 
-
-            此示例创建了使用者名称格式，其中除了使用 CN 和 E 变量外，还使用了“组织单位”、“组织”、“位置”、“省/自治区/直辖市”和“国家/地区”值的字符串。 [CertStrToName 函数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)介绍此函数及其支持的字符串。
-
-        **“设备”证书类型**  
-
-        使用“设备”证书类型时，还可以对值使用以下设备证书变量  ：  
-
-        ```
-        "{{AAD_Device_ID}}",
-        "{{Device_Serial}}",
-        "{{Device_IMEI}}",
-        "{{SerialNumber}}",
-        "{{IMEINumber}}",
-        "{{AzureADDeviceId}}",
-        "{{WiFiMacAddress}}",
-        "{{IMEI}}",
-        "{{DeviceName}}",
-        "{{FullyQualifiedDomainName}}",
-        "{{MEID}}",
-        ```
-
-        可以在自定义值文本框中使用静态文本添加这些变量。 例如，可以将公用名添加为 `CN = {{DeviceName}}text`。
-
-        > [!IMPORTANT]
-        >  - 在使用者的静态文本中，未括住变量的大括号 { }  将解析为错误。 
-        >  - 使用设备证书变量时，将变量括在大括号 { } 内  。
-        >  - `{{FullyQualifiedDomainName}}` 仅适用于 Windows 和已加入域的设备。 
-        >  - 在使用者或 SAN 中为设备证书使用设备属性（例如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员仿造。
-        >  - 如果不支持指定的设备变量，则不会在设备上安装配置文件。 例如，如果在分配给不具有 IMEI 号码的设备的 SCEP 配置文件的使用者名称中使用了 {{IMEI}}，配置文件安装将失败。 
-
-
-   - **使用者备用名称**：输入 Intune 如何自动创建证书请求中使用者可选名称 (SAN) 的值。 如果选择“用户”证书类型或“设备”证书类型，选项将发生更改   。 
-
-        **“用户”证书类型**  
-
-        以下属性可用：
-
-        - 电子邮件地址
-        - 用户主体名称 (UPN)
-
-            例如，如果选择用户证书类型，则可以在使用者可选名称中包括用户主体名称 (UPN)。 如果使用客户端证书向“网络策略服务器”进行身份验证，则要将使用者可选名称设置为 UPN。 
-
-        **“设备”证书类型**  
-
-        可自定义的一个表格格式文本框。 以下属性可用：
-
-        - DNS
-
-        凭借“设备”证书类型，可以对值使用以下设备证书变量  ：  
-
-        ```
-        "{{AAD_Device_ID}}",
-        "{{Device_Serial}}",
-        "{{Device_IMEI}}",
-        "{{SerialNumber}}",
-        "{{IMEINumber}}",
-        "{{AzureADDeviceId}}",
-        "{{WiFiMacAddress}}",
-        "{{IMEI}}",
-        "{{DeviceName}}",
-        "{{FullyQualifiedDomainName}}",
-        "{{MEID}}",
-        ```
-
-        可以在自定义值文本框中使用静态文本添加这些变量。 例如，可以将 DNS 属性添加为 `DNS name = {{AzureADDeviceId}}.domain.com`。
-
-        > [!IMPORTANT]
-        >  - 在 SAN 的静态文本中，使用大括号{ }、竖杠符号 | 和分号 ; 将不起作用    。 
-        >  - 使用设备证书变量时，将变量括在大括号 { } 内  。
-        >  - `{{FullyQualifiedDomainName}}` 仅适用于 Windows 和已加入域的设备。 
-        >  - 在使用者或 SAN 中为设备证书使用设备属性（例如 IMEI、序列号和完全限定的域名）时，请注意这些属性可能被有权访问设备的人员仿造。
-        >  - 如果不支持指定的设备变量，则不会在设备上安装配置文件。 例如，如果在分配给不具有 IMEI 号码的设备的 SCEP 配置文件的使用者可选名称中使用了 {{IMEI}}，配置文件安装将失败。  
-
-   - **证书有效期**：如果对颁发 CA 运行了允许自定义有效期的 `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` 命令，则可以输入证书过期之前的剩余时间量。<br>可以在证书模板中输入低于（但不能高于）有效期的值。 例如，如果证书模板中的证书有效期为 2 年，则输入值可以为 1 年，但不能为 5 年。 该值还必须小于发证 CA 证书的剩余有效期。 
-   - 密钥存储提供程序 (KSP)  （Windows Phone 8.1、Windows 8.1、Windows 10）：输入存储证书密钥的位置。 可以选择下列值之一：
-     - 注册到受信任的平台模块(TPM) KSP (若有); 否则，注册到软件 KSP 
-     - 注册到受信任的平台模块(TPM) KSP，否则失败 
-     - 注册到 Passport，否则失败(Windows 10 及更高版本) 
-     - **注册到软件 KSP**
-
-   - **密钥用法**：输入证书的密钥用法选项。 选项包括：
-     - **密钥加密**：仅在密钥已加密时才允许密钥交换
-     - **数字签名**：仅当数字签名有助于保护密钥时才允许密钥交换
-   - **密钥大小（位）** ：选择密钥中包含的位数
-   - **哈希算法**（Android、Windows Phone 8.1、Windows 8.1、Windows 10）：选择要与此证书一起使用的可用哈希算法类型之一。 选择连接设备支持的最高级别安全性。
-   - **根证书**：选择之前创建并分配给用户和/或设备的[受信任的根证书配置文件](certficates-pfx-configure.md#create-a-trusted-certificate-profile)。 此 CA 证书必须是将颁发在此证书配置文件中配置的证书的 CA 的根证书。 请务必将此受信任的根证书配置文件分配到 SCEP 证书配置文件中分配的同一个组。
-   - **扩展密钥用法**：为证书的预期目的添加  值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证  。 但，你可以根据需要添加任何其他密钥用法。
-   - **注册设置**
-     - **续订阈值 (%)** ：输入设备请求证书续订之前剩余的证书有效期限的百分比。
-     - **SCEP 服务器 URL**：为通过 SCEP 颁发证书的 NDES 服务器输入 1 个或多个 URL。 例如，输入类似于 `https://ndes.contoso.com/certsrv/mscep/mscep.dll` 的内容。
-     - 选择“确定”，然后选择“创建”来创建配置文件   。
-
-配置文件随即创建并显示在“配置文件列表”窗格中。
-
-### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>避免证书签名请求中包含转义的特殊字符
-包含具有一个或多个以下特殊字符作为转义字符的使用者名称 (CN) 的 SCEP 证书请求存在一个已知问题。 包含一个特殊字符作为转义字符的使用者名称会导致使用者名称不正确的 CSR，进而导致 Intune SCEP 质询验证失败，并且未颁发证书。  
-
-特殊字符为：
-- \+
-- 、
-- ;
-- =
-
-当使用者名称包含一个特殊字符时，请使用以下选项之一来解决此限制：  
-- 用引号封装包含特殊字符的 CN 值。  
-- 删除 CN 值中的特殊字符。  
-
-例如，使用者名称显示为 Test user (TestCompany, LLC)   。  如果 CSR 包含一个 CN，该 CN 在 TestCompany 和 LLC 之间有逗号，则会出现问题   。  可以通过在整个 CN 周围加上引号，或者删除 TestCompany 和 LLC   之间的逗号来避免这一问题：
-- **添加引号**：*CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
-- **删除逗号**：*CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
-
- 但是，使用反斜杠字符转义逗号的尝试将失败，CRP 日志中出现错误：  
-- **转义的逗号**：*CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
-
-此错误类似于以下错误： 
-
-```
-Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
-
-  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
-
-   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
-
-Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
-
-   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
-```
-
-
-
-## <a name="assign-the-certificate-profile"></a>分配证书配置文件
-
-将证书配置文件分配给组之前，请注意以下几点：
-
-- 将证书配置文件分配给组时，将在设备上安装受信任的 CA 证书配置文件的证书文件。 设备使用 SCEP 证书配置文件来创建设备需要的证书。
-- 仅在运行创建配置文件时使用的平台的设备上安装证书配置文件。
-- 可以向用户集合或设备集合分配证书配置文件。
-- 若要在注册设备后向设备快速发布证书，请将证书配置文件分配给用户组（而不是设备组）。 如果分配到设备组，则需要在设备接收策略前进行完整的设备注册。
-- 尽管单独分配每个配置文件，但仍需分配受信任的根 CA 和 SCEP 或 PKCS 配置文件。 否则，SCEP 或 PKCS 证书策略将失败。
-
-    > [!NOTE]
-    > 在 iOS 设备上，当 SCEP 证书配置文件与其他配置文件（如 Wi-Fi 或 VPN 配置文件）相关联，设备将收到其他每个配置文件的证书。 这会使 iOS 设备拥有 SCEP 证书请求提供的多个证书。  
-
-- 如果使用 Intune 和 Configuration Manager 的共同管理，则在 Configuration Manager 中将资源访问策略  的[工作负载滑块](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)设置为“Intune”  或“试点 Intune”  。 此设置允许 Windows 10 客户端启动请求证书的过程。  
-
-有关如何分配配置文件的信息，请参阅[分配设备配置文件](device-profile-assign.md)。
-
-## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Intune 连接器设置验证和故障排除
-
-若要解决问题并验证 Intune 连接器设置，请参阅[证书颁发机构脚本示例](https://aka.ms/intuneconnectorverificationscript)
-
-## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune 连接器事件和诊断代码
-
-从版本 6.1806.x.x 开始，Intune 连接器服务会在“事件查看器”（“应用程序和服务日志” > “Microsoft Intune 连接器”）中记录事件    。 使用这些事件可帮助解决 Intune 连接器配置中的潜在问题。 这些事件记录操作的成功和失败，并且还包含带有消息的诊断代码，以帮助 IT 管理员进行故障排除。
-
-### <a name="event-ids-and-descriptions"></a>事件 ID 和说明
-
-> [!NOTE]
-> 有关每个事件的相关诊断代码的详细信息，请使用“诊断代码”表（在本文中）  。
-
-| 事件 ID      | 事件名称    | 事件说明 | 相关诊断代码 |
-| ------------- | ------------- | -------------     | -------------            |
-| 10010 | StartedConnectorService  | 连接器服务已启动 | 0x00000000, 0x0FFFFFFF |
-| 10020 | StoppedConnectorService  | 连接器服务已停止 | 0x00000000, 0x0FFFFFFF |
-| 10100 | CertificateRenewal_Success  | 连接器注册证书已成功更新 | 0x00000000, 0x0FFFFFFF |
-| 10102 | CertificateRenewal_Failure  | 连接器注册证书更新失败。 重新安装连接器。 | 0x00000000, 0x00000405, 0x0FFFFFFF |
-| 10302 | RetrieveCertificate_Error  | 未能从注册表中检索到连接器注册证书。 查看事件详细信息，获取与此事件相关的证书指纹。 | 0x00000000, 0x00000404, 0x0FFFFFFF |
-| 10301 | RetrieveCertificate_Warning  | 查看事件详细信息中的诊断信息。 | 0x00000000, 0x00000403, 0x0FFFFFFF |
-| 20100 | PkcsCertIssue_Success  | 已成功颁发 PKCS 证书。 查看事件详细信息，获取与此事件相关的设备 ID、用户 ID、CA 名称、证书模板名称和证书指纹。 | 0x00000000, 0x0FFFFFFF |
-| 20102 | PkcsCertIssue_Failure  | 未能颁发 PKCS 证书。 查看事件详细信息，获取与此事件相关的设备 ID、用户 ID、CA 名称、证书模板名称和证书指纹。 | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
-| 20200 | RevokeCert_Success  | 已成功撤销证书。 查看事件详细信息，获取与此事件相关的设备 ID、用户 ID、CA 名称和证书序列号。 | 0x00000000, 0x0FFFFFFF |
-| 20202 | RevokeCert_Failure | 未能撤销证书。 查看事件详细信息，获取与此事件相关的设备 ID、用户 ID、CA 名称和证书序列号。 有关其他信息，请参阅 NDES SVC 日志。   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Upload_Success | 已成功下载证书的请求或撤销数据。 查看事件详细信息，获取上传详细信息。 | 0x00000000, 0x0FFFFFFF |
-| 20302 | Upload_Failure | 未能下载证书的请求或撤销数据。 查看“事件详细信息”>“上传状态”以确定故障点。| 0x00000000, 0x0FFFFFFF |
-| 20400 | Download_Success | 已成功下载签署证书、下载客户端证书或撤销证书的请求。 查看事件详细信息，获取下载详细信息。  | 0x00000000, 0x0FFFFFFF |
-| 20402 | Download_Failure | 未能下载签署证书、下载客户端证书或撤销证书的请求。 查看事件详细信息，获取下载详细信息。 | 0x00000000, 0x0FFFFFFF |
-| 20500 | CRPVerifyMetric_Success  | 证书注册点已成功验证客户端质询 | 0x00000000, 0x0FFFFFFF |
-| 20501 | CRPVerifyMetric_Warning  | 证书注册点已完成并拒绝了请求。 有关详细信息，请参阅诊断代码和消息。 | 0x00000000, 0x00000411, 0x0FFFFFFF |
-| 20502 | CRPVerifyMetric_Failure  | 证书注册点未能验证客户端质询。 有关详细信息，请参阅诊断代码和消息。 有关与该质询相对应的设备 ID，请查看事件消息详细信息。 | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |
-| 20600 | CRPNotifyMetric_Success  | 证书注册点已成功完成通知过程并已将证书发送到客户端设备。 | 0x00000000, 0x0FFFFFFF |
-| 20602 | CRPNotifyMetric_Failure  | 证书注册点未能完成通知过程。 查看事件消息的详细信息，获取有关请求的信息。 验证 NDES 服务器和 CA 之间的连接。 | 0x00000000, 0x0FFFFFFF |
-
-### <a name="diagnostic-codes"></a>诊断代码
-
-| 诊断代码 | 诊断名称 | 诊断消息 |
-| -------------   | -------------   | -------------      |
-| 0x00000000 | 成功  | 成功 |
-| 0x00000400 | PKCS_Issue_CA_Unavailable  | 证书颁发机构无效或无法访问。 验证证书颁发机构是否可用，以及服务器是否可以与之通信。 |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | 在本地证书存储中找不到 Symantec 客户端身份验证证书。 有关详细信息，请参阅文章[设置 DigiCert PKI 平台的 Intune 证书连接器](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting)。  |
-| 0x00000402 | RevokeCert_AccessDenied  | 指定的帐户无权从 CA 撤销证书。 请参阅事件消息详情中的“CA 名称”字段以确定颁发 CA。  |
-| 0x00000403 | CertThumbprint_NotFound  | 找不到与输入相匹配的证书。 注册证书连接器并重试。 |
-| 0x00000404 | Certificate_NotFound  | 找不到与提供的输入相匹配的证书。 重新注册证书连接器并重试。 |
-| 0x00000405 | Certificate_Expired  | 证书已过期。 重新注册证书连接器以更新证书，然后重试。 |
-| 0x00000408 | CRPSCEPCert_NotFound  | 找不到 CRP 加密证书。 验证是否正确安装 NDES 和 Intune 连接器。 |
-| 0x00000409 | CRPSCEPSigningCert_NotFound  | 无法检索签名证书。 验证 Intune 连接器服务配置是否正确，以及 Intune 连接器服务是否正在运行。 此外，验证证书下载事件是否成功。 |
-| 0x00000410 | CRPSCEPDeserialize_Failed  | 未能反序列化 SCEP 质询请求。 验证是否正确安装 NDES 和 Intune 连接器。 |
-| 0x00000411 | CRPSCEPChallenge_Expired  | 由于证书质询已过期，因此请求已被拒绝。 客户端设备可以在从管理服务器获取新的质询后重试。 |
-| 0x0FFFFFFFF | Unknown_Error  | 我们无法完成你的请求，因为发生了服务器端错误。 请稍后重试。 |
+> [!NOTE]  
+> Intune 证书连接器支持 TLS 1.2。 如果托管连接器的服务器支持 TLS 1.2，则使用 TLS 1.2。 如果服务器不支持 TLS 1.2，则使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 PKCS 证书](certficates-pfx-configure.md)，或[从 Symantec PKI 管理器 Web 服务颁发 PKCS 证书](certificates-symantec-configure.md)
-- [添加第三方 CA 以通过 Intune 使用 SCEP](certificate-authority-add-scep-overview.md)
-- 有关其他帮助，请使用以下指南：
-  - [在 Microsoft Intune 中对 SCEP 证书配置文件部署进行故障排除](https://support.microsoft.com/help/4457481)
-  - [对与 Microsoft Intune 证书配置文件一起使用的 NDES 配置进行故障排除](https://support.microsoft.com/help/4459540)
+[创建 SCEP 证书配置文件](certificates-profile-scep.md)  
+[Troubleshoot issues for the Intune certificate connector（排查 Intune 证书连接器问题）](troubleshoot-certificate-connector-events.md)

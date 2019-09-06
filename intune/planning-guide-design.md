@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a3055d375c98f9a74d0e738b7e894ba038b31776
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783243"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70121859"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -166,7 +166,7 @@ Intune 提供两个部署选项：独立和混合。 “独立”是指在云中
 
 如果打算通过 Intune 将证书与 VPN、Wi-Fi 或电子邮件配置文件结合使用，请确保已有支持的 [PKI 基础结构](certificates-configure.md)，且准备好创建和部署证书配置文件。
 
-此外，如果要颁发 SCEP 证书，则需确定将托管网络设备注册服务 (NDES) 功能的服务器，以及通信的发生方式。
+此外，如果要使用 SCEP 证书，则需确定将托管网络设备注册服务 (NDES) 功能的服务器，以及通信的发生方式。
 
 了解详细信息：
 
@@ -297,7 +297,7 @@ Intune 支持公司拥有的设备和个人设备。 如果设备由设备注册
 建议记录哪些用户组需要证书、需要多少证书配置文件，以及将它们部署到哪些用户组。
 
 >[!NOTE]
-> 请记住，SCEP 证书需要受信任的根证书，因此请确保 SCEP 证书的所有目标用户同时接收受信任的根证书。 如果需要 SCEP 证书，请设计并记录需要什么 SCEP 证书模板。
+> 请记住，SCEP 证书配置文件需要受信任的根证书，因此请确保 SCEP 证书配置文件的所有目标用户同时也接收受信任的根证书。 如果需要 SCEP 证书，请设计并记录需要什么 SCEP 证书模板。
 
 下面是一个如何在设计过程中记录证书的示例：
 

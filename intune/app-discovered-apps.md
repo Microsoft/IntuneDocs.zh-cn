@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590904"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206404"
 ---
 # <a name="intune-discovered-apps"></a>Intune 发现的应用
 
@@ -62,6 +62,9 @@ Intune 还提供租户中单个设备的已发现应用的列表。
 | macOS | 设备上安装的所有应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Android | 仅托管应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Android Enterprise | 仅托管应用 | 仅工作配置文件中安装的应用 | 自设备注册时间起每隔 7 天刷新一次 |
+
+> [!NOTE]
+>使用 Intune 管理扩展的 Windows 10 混合 Azure AD 联接设备当前不会按上述计划收集应用清单。 这是一个已知问题。 有关此行为的任何变更或更新在[开发中](in-development.md)和/或[新增功能](whats-new.md)中公布。
 
 发现的应用数可能与应用安装状态计数不一致。 导致不一致的可能原因包括：
 - 已安装的托管应用的定位更改可能会导致状态边栏选项卡中的安装计数减少，但仍会在检测到的应用中报告。

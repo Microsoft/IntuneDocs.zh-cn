@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 4893f3484c497ed72352b2bbb229003c2d639107
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354503"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122289"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -83,7 +83,7 @@ Zscaler Private Access (ZPA) 与 Azure Active Directory (Azure AD) 集成以进�
 
 要配置和分配客户端身份验证证书，请参阅以下某篇文章：
 
-- [使用 Intune 配置和管理 SCEP 证书](certificates-scep-configure.md)
+- [配置基础结构以支持在 Intune 中使用 SCEP](certificates-scep-configure.md)
 - [使用 Intune 配置和管理 PKCS 证书](certficates-pfx-configure.md)
 
 请确保配置用于客户端身份验证的证书。 可以直接在 SCEP 证书配置文件中设置该证书（“扩展密钥用法”列表 >“客户端身份验证”）   。 对于 PKCS，请在证书颁发机构 (CA) 的证书模板中设置客户端身份验证。

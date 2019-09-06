@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cda32e72956e5998d5ebc8d8bed2baea39951ec
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021802"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122394"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
@@ -286,6 +286,5 @@ Microsoft Intune 的 PFX 证书连接器[支持自动更新](#requirements)，�
 
 配置文件已创建，但它尚未起到任何作用。 下一步，[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
-[使用 SCEP 证书](certificates-scep-configure.md)，或[从 Digicert PKI 管理器 Web 服务颁发 PKCS 证书](certificates-digicert-configure.md)。
-
+[使用 SCEP 证书](certificates-scep-configure.md)，或[从 Symantec PKI 管理器 Web 服务颁发 PKCS 证书](certificates-symantec-configure.md)。
 
