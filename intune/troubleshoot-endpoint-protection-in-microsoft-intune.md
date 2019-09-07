@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353336"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302336"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune 中的 Endpoint Protection 问题和可能的解决方案
 
@@ -60,20 +60,20 @@ ms.locfileid: "68353336"
 **可能的解决方案**：启用这些功能。 如需指导，请参阅：
 
 - [添加 Endpoint Protection 设置](endpoint-protection-configure.md)
-- [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender 防病毒](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [最终用户：打开访问公司资源的实时保护](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>恶意软件定义过期
 
 如果设备上的恶意软件定义过期 14 天或更长时间，就会显示这种状态。 例如，该消息可能显示设备是否与 Internet 断开连接，或者恶意软件定义是否过时。
 
-**可能的解决方案**：如果恶意软件定义过期，可使用 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)更新定义。
+**可能的解决方案**：如果恶意软件定义过期，可使用 [Windows Defender 防病毒](device-restrictions-windows-10.md#microsoft-defender-antivirus)更新定义。
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>完全扫描逾期或快速扫描逾期
 
 14 天内尚未完成完全扫描或快速扫描。 如果设备在完全扫描期间重新启动，就会发生这种情况。
 
-**可能的原因**：如果扫描逾期，可运行一次扫描或计划定期扫描。 请参阅 [Windows Defender 防病毒](device-restrictions-windows-10.md#windows-defender-antivirus)。
+**可能的原因**：如果扫描逾期，可运行一次扫描或计划定期扫描。 请参阅 [Windows Defender 防病毒](device-restrictions-windows-10.md#microsoft-defender-antivirus)。
 
 ### <a name="another-endpoint-protection-application-running"></a>正在运行的另一个端点防护应用程序
 
