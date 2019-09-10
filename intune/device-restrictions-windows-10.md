@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998946"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302298"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
-本文列出并介绍了可以在 Windows 10 和更高版本设备上控制的所有不同设置。 作为移动设备管理 (MDM) 解决方案的一部分，请使用这些设置以允许或禁用功能、设置密码规则、自定义锁屏界面，使用 Windows Defender 等。
+本文列出并介绍了可以在 Windows 10 和更高版本设备上控制的所有不同设置。 作为移动设备管理 (MDM) 解决方案的一部分，请使用这些设置以允许或禁用功能、设置密码规则、自定义锁屏界面，使用 Microsoft Defender 等。
 
 这些设置将添加到 Intune 中的设备配置配置文件中，然后分配或部署到 Windows 10 设备。
 
@@ -57,13 +57,13 @@ ms.locfileid: "69998946"
 - **在系统卷上安装应用数据**：选择“阻止”可阻止应用在设备的系统卷上存储数据  。 选择“未配置”（默认）则允许应用在系统磁盘卷上存储数据  。
 - **在系统驱动器上安装应用**：选择“阻止”可阻止在设备的系统驱动器上安装应用  。 选择“未配置”（默认）则允许在系统驱动器上安装应用  。
 - **游戏 DVR**（仅桌面版）：选择“阻止”可禁用 Windows 游戏录制和播放  。 选择“未配置”（默认）则允许录制和播放游戏  。
-- **仅限来自应用商店的应用**: 此设置确定用户从 Microsoft Store 以外的位置安装应用时的用户体验。 选项包括：
+- **仅限来自应用商店的应用**：此设置确定用户从 Microsoft Store 以外的位置安装应用时的用户体验。 选项包括：
 
-  - **未配置**(默认值): 允许最终用户从 Microsoft Store 以外的位置安装应用, 包括其他策略设置中定义的应用。  
-  - **任何地方**: 关闭应用建议, 并允许用户从任何位置安装应用。  
-  - **仅限应用商店**: 强制最终用户仅从 Microsoft Store 安装应用。
-  - **建议**: 从 Microsoft Store 中提供的 web 安装应用时, 用户将看到一条消息, 建议用户从应用商店下载该应用。  
-  - **首选存储**: 当用户安装来自 Microsoft Store 以外的位置时警告用户。
+  - **未配置**（默认值）：允许最终用户从 Microsoft Store 以外的位置安装应用，包括其他策略设置中定义的应用。  
+  - **任何地方**：关闭应用建议，并允许用户从任何位置安装应用。  
+  - **仅限应用商店**：强制最终用户仅从 Microsoft Store 安装应用。
+  - **建议**：从 Microsoft Store 中提供的 web 安装应用时，用户将看到一条消息，建议用户从应用商店下载该应用。  
+  - **首选存储**：当用户安装来自 Microsoft Store 以外的位置时警告用户。
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
@@ -78,8 +78,6 @@ ms.locfileid: "69998946"
 - **启动应用**：输入用户登录设备后要打开的应用程序列表。 请确保使用分号分隔的 Windows 应用程序包系列名称 (PFN) 列表。 若要运行此策略，Windows 应用程序清单必须使用启动任务。
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
-
-选择“确定”，保存所做更改  。
 
 ## <a name="cellular-and-connectivity"></a>手机网络和连接性
 
@@ -114,8 +112,6 @@ ms.locfileid: "69998946"
 
   有关服务列表的详细信息，请参阅 [ServicesAllowedList 用法指南](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide)。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="cloud-and-storage"></a>云和存储
 
 这些设置使用[帐户策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts)，该策略还列出了受支持的 Windows 版本。
@@ -124,8 +120,6 @@ ms.locfileid: "69998946"
 - **非 Microsoft 帐户**：选择“阻止”可阻止最终用户使用用户界面添加非 Microsoft 帐户  。 选择“未配置”（默认）可允许用户添加与 Microsoft 帐户无关的电子邮件帐户  。
 - **Microsoft 帐户的设置同步**：选择“未配置”（默认）可允许设备和应用设置与 Microsoft 帐户关联以在设备之间进行同步  。 选择“阻止”可阻止这种同步  。
 - **Microsoft 帐户登录助手**：设置为“未配置”（默认）时，最终用户可以启动和停止“Microsoft 帐户登录助手”(wlidsvc) 服务   。 此操作系统服务允许用户登录到其 Microsoft 帐户。 选择“禁用”可防止终端用户控制 Microsoft 登录助手服务 (wlidsvc)  。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="cloud-printer"></a>云打印机
 
@@ -140,8 +134,6 @@ ms.locfileid: "69998946"
 
 > [!TIP]
 > 设置 [Windows Server 混合云打印](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview)后，可以配置这些设置，然后部署到 Windows 设备。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="control-panel-and-settings"></a>控制面板和设置
 
@@ -165,8 +157,6 @@ ms.locfileid: "69998946"
   - **隐私**：选择“阻止”可阻止访问设备上设置应用的隐私区域  。 选择“未配置”（默认）则允许访问  。
   - **更新安全**：选择“阻止”可阻止访问设备上设置应用的更新安全区域  。 选择“未配置”（默认）则允许访问  。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="display"></a>显示
 
 这些设置使用[显示策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display)，该策略还列出了受支持的 Windows 版本。
@@ -182,8 +172,6 @@ ms.locfileid: "69998946"
   对列表中的所有旧应用禁用 GDI DPI 缩放。
 
 还可以使用应用列表“导入”.csv 文件  。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="general"></a>常规
 
@@ -230,8 +218,6 @@ ms.locfileid: "69998946"
 
 - **从任务管理器结束进程**：此设置确定非管理员是否可以使用任务管理器来结束任务。 选择“阻止”，则会阻止标准用户（非管理员）使用任务管理器结束设备上的进程或任务  。 选择“未配置”（默认选项），则会允许标准用户使用任务管理器结束进程或任务  。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="locked-screen-experience"></a>锁定屏幕体验
 
 - **操作中心通知（仅限移动版）** ：选择“阻止”可阻止设备锁定屏幕上显示操作中心通知  。 选择“未配置”（默认）则允许用户选择哪些应用可在锁定屏幕上显示通知  。
@@ -255,8 +241,6 @@ ms.locfileid: "69998946"
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-选择“确定”，保存所做更改  。
-
 ## <a name="messaging"></a>Messaging
 
 这些设置使用[消息策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging)，该策略还列出了受支持的 Windows 版本。
@@ -264,8 +248,6 @@ ms.locfileid: "69998946"
 - **消息同步（仅限移动版）** ：选择“阻止”可禁用备份和还原文本消息，以及在 Windows 设备之间同步消息  。 禁用有助于避免将信息存储在组织控件之外的服务器上。 选择“未配置”（默认）则允许用户更改这些设置并同步其消息  。
 - **彩信（仅限移动版）** ：选择“阻止”可对设备禁用彩信发送和接收功能  。 对于企业，使用此策略在设备上禁用彩信，作为审计或管理需求的一部分。 选择“未配置”（默认）则允许发送和接收彩信  。
 - **富通信(仅限移动版)** ：选择“阻止”可对设备禁用富通信服务 (RCS) 发送和接收功能  。 对于企业，使用此策略在设备上禁用富通信，作为审计或管理需求的一部分。 选择“未配置”（默认）则允许发送和接收富通信  。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge 浏览器
 
@@ -327,7 +309,7 @@ ms.locfileid: "69998946"
 - **在 Internet Explorer 中打开站点时显示消息**：使用此设置可将 Microsoft Edge 配置为在 Internet Explorer 11 中打开站点之前显示通知。 选项包括：
   - **不显示消息**：使用操作系统的默认行为，这可能不会显示消息。
   - **显示在 Internet Explorer 11 中打开站点的消息**：在 IE 中打开站点时显示消息。 将在 IE 中打开站点。 
-  - **显示“在 Microsoft Edge 中打开站点”选项的消息**：在 Edge 中打开站点时显示消息。 该消息包含  “在 Microsoft Edge 中继续”链接，以便用户可以选择 Microsoft Edge，而不是 IE。
+  - **显示“在 Microsoft Edge 中打开站点”选项的消息**：在 Microsoft Edge 中打开站点时显示消息。 该消息包含  “在 Microsoft Edge 中继续”链接，以便用户可以选择 Microsoft Edge，而不是 IE。
 
   > [!IMPORTANT]
   > 此设置要求你使用“企业模式站点列表位置”设置、“将 intranet 流量发送到 Internet Explorer”设置或这两个设置   。
@@ -335,8 +317,6 @@ ms.locfileid: "69998946"
 - **允许 Microsoft 兼容性列表**：选择“是”（默认）允许使用 Microsoft 兼容性列表  。 选择“否”会阻止 Microsoft Edge 中的 Microsoft 兼容性列表  。 Microsoft 的此列表可帮助 Microsoft Edge 正确显示具有已知兼容性问题的站点。
 - **预加载起始页和“新建选项卡”页**：选择“是”（默认）可使用操作系统默认行为，可能是预加载这些页面  。 预加载可最大程度地缩短启动 Microsoft Edge 和加载新标签的时间。 选择“否”可阻止 Microsoft Edge 预加载起始页和“新建选项卡”页  。
 - **预启动起始页和“新建选项卡”页**：选择“是”（默认）可使用操作系统默认行为，可能是预启动这些页面  。 预启动可帮助提高 Microsoft Edge 的性能并最大程度地缩短启动 Microsoft Edge 所需的时间。 选择“否”可阻止 Microsoft Edge 预启动起始页和“新建选项卡”页  。
-
-选择“确定”，保存所做更改  。
 
 ### <a name="favorites-and-search"></a>收藏夹和搜索
 
@@ -357,8 +337,6 @@ ms.locfileid: "69998946"
 - **允许更改搜索引擎**：“是”（默认）允许用户添加新搜索引擎，或更改 Microsoft Edge 中的默认搜索引擎  。 选择“否”可阻止用户自定义搜索引擎  。
 
   此设置仅在[普通模式（多应用展台）](#use-microsoft-edge-kiosk-mode)中运行时可用。
-
-选择“确定”，保存所做更改  。
 
 ### <a name="privacy-and-security"></a>隐私和安全性
 
@@ -383,8 +361,6 @@ ms.locfileid: "69998946"
 - **允许动态磁贴数据收集**：选择“是”（默认）可允许 Microsoft Edge 从固定到开始菜单的动态磁贴收集信息  。 选择“否”会阻止收集此信息，这可能会为用户提供有限的体验  。
 - **用户可以覆盖证书错误**：选择“是”（默认）可允许用户访问具有安全套接字层/传输层安全性 (SSL/TLS) 错误的网站  。 选择“否”（建议用于提高安全性）可阻止用户访问具有 SSL 或 TLS 错误的网站  。
 
-选择“确定”，保存所做更改  。
-
 ### <a name="additional"></a>Additional
 
 - **允许 Microsoft Edge 浏览器**（仅限移动版）：选择“是”（默认）可允许在移动设备上使用 Microsoft Edge Web 浏览器  。 选择“否”可阻止在设备上使用 Microsoft Edge  。 如果选择“否”，则其他个人设置仅适用于桌面  。
@@ -401,8 +377,6 @@ ms.locfileid: "69998946"
 
   还可以  导入包含包系列名称的 CSV 文件。 或者，“导出”输入的包系列名称  。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="network-proxy"></a>网络代理
 
 这些设置使用 [NetworkProxy 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)，该策略还列出了受支持的 Windows 版本。
@@ -416,13 +390,11 @@ ms.locfileid: "69998946"
   - **代理例外**：输入不得使用代理服务器的任何 URL。 请使用分号分隔每一项。
   - **跳过本地地址的代理服务器**：选择“未配置”（默认）可阻止在 Intranet 上使用代理服务器作为本地地址  。 选择“允许”可将代理服务器用于本地地址  。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="password"></a>密码
 
 这些设置使用 [DeviceLock 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)，该策略还列出了受支持的 Windows 版本。
 
-- **密码**：选择“必需”  ，最终用户输入密码才能访问设备。 选择“未配置”（默认）可允许在没有密码的情况下访问设备  。 仅适用于本地帐户。 域帐户密码保留 Active Directory (AD) 和 Azure AD 配置。
+- **密码**：选择“必需”  ，最终用户输入密码才能访问设备。 选择“未配置”（默认）可允许在没有密码的情况下访问设备  。 仅适用于本地帐户。 域帐户密码保留 Active Directory （AD）和 Azure AD 配置。
 
   - **所需的密码类型**：选择密码类型。 选项包括：
     - **未配置**：密码可以包含数字和字母。
@@ -466,8 +438,6 @@ ms.locfileid: "69998946"
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-选择“确定”，保存所做更改  。
-
 ## <a name="per-app-privacy-exceptions"></a>每应用隐私异常
 
 可以添加隐私行为不同于“默认隐私”中所定义设置的应用。
@@ -496,23 +466,17 @@ ms.locfileid: "69998946"
 - **反馈和诊断**：定义此应用能否访问诊断信息。
 - **与设备同步**：选择此应用能否自动与设备未显式配对的无线设备共享和同步信息。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="personalization"></a>个性化设置
 
 这些设置使用[个性化设置策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)，该策略还列出了受支持的 Windows 版本。
 
 - **桌面背景图片 URL (仅限桌面版)** ：输入要用作 Windows 桌面墙纸的图片（格式为 .jpg、.jpeg 或 .png）的 URL。 用户无法更改图片。 例如，输入 `https://contoso.com/logo.png`。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="printer"></a>打印机
 
 - **打印机**：已添加的本地打印机的列表。
 - **默认打印机**：设置默认打印机。
 - **用户添加新打印机的权限**：允许或阻止使用本地打印机。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="privacy"></a>隐私
 
@@ -524,8 +488,6 @@ ms.locfileid: "69998946"
 - **仅限本地活动**：“阻止”  可仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。 选择“未配置”（默认）可启用此功能  。
 
 可以配置设备上的所有应用可以访问的信息。 此外，使用“每应用隐私异常”  对每个应用定义异常。
-
-选择“确定”，保存所做更改  。
 
 ### <a name="exceptions"></a>例外
 
@@ -548,8 +510,6 @@ ms.locfileid: "69998946"
 - **反馈和诊断**：选择此应用能否访问诊断信息。
 - **与设备同步** - 定义此应用能否自动与这台 PC、平板电脑或手机未显式配对的无线设备共享和同步信息。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="projection"></a>投影
 
 这些设置使用[ 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay)，该策略还列出了受支持的 Windows 版本。
@@ -557,8 +517,6 @@ ms.locfileid: "69998946"
 - **来自无线显示接收方的用户输入**：“阻止”可阻止来自无线显示接收方的用户输入  。 选择“未配置”（默认）可允许无线显示器将键盘、鼠标、笔和触摸输入发送回源设备  。
 - **投影到此电脑**：选择“阻止”可阻止其他设备发现用于投影的设备  。 选择“未配置”（默认）使设备可发现，并可投影到锁定屏幕上方的设备  。
 - **需要用于配对的 PIN**：选择“需要”在连接投影设备时始终提示输入 PIN  。 选择“未配置”（默认）则无需使用 PIN 将设备与投影设备配对  。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="reporting-and-telemetry"></a>报告和遥测
 
@@ -602,8 +560,6 @@ ms.locfileid: "69998946"
   - **严格**：针对成人内容的最高筛选。
   - **中等**：针对成人内容的中等筛选。 不会筛选有效的搜索结果。
 - **在搜索中显示 Web 结果**：设置为“阻止”时，用户无法搜索，且搜索中不会显示 Web 结果  。 选择“未配置”（默认）允许用户搜索 Web，并在设备上显示结果  。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="start"></a>启动
 
@@ -675,8 +631,6 @@ ms.locfileid: "69998946"
   - **隐藏**：隐藏快捷方式并在设置应用中禁用设置。
   - **显示**：显示快捷方式并在设置应用中禁用设置。
 
-选择“确定”，保存所做更改  。
-
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
 - **Microsoft Edge SmartScreen**：选择“需要”可关闭 Windows Defender SmartScreen，并阻止用户将其打开  。 选择“未配置”（默认）可启动 SmartScreen  。 帮助保护用户免受潜在威胁，防止用户将其关闭。
@@ -693,8 +647,6 @@ ms.locfileid: "69998946"
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-选择“确定”，保存所做更改  。
-
 ## <a name="windows-spotlight"></a>Windows 聚焦
 
 这些设置使用[体验策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience)，该策略还列出了受支持的 Windows 版本。
@@ -709,38 +661,96 @@ ms.locfileid: "69998946"
   - **Windows 聚焦个性化设置**：选择“阻止”可阻止 Windows 使用诊断数据为用户提供自定义体验  。 选择“未配置”（默认）可允许 Microsoft 使用诊断数据提供个性化的建议、提示和套餐，以根据用户的需求定制 Windows  。
   - **Windows 欢迎使用体验**：选择“阻止”可禁用 Windows 聚焦 Windows 欢迎体验功能  。 当 Windows 及其应用有更新和更改时，Windows 欢迎体验使用将不会显示。 选择“未配置”（默认）则允许 Windows 欢迎使用体验显示有关新功能或更新功能的用户信息  。
 
-选择“确定”，保存所做更改  。
-
-## <a name="windows-defender-antivirus"></a>Windows Defender 防病毒
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 防病毒
 
 这些设置使用[defender 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)，该策略还列出了受支持的 Windows 版本。
 
-- **实时监控**：选择“启用”可阻止对恶意软件、间谍软件和其他不需要的软件的实时扫描  。 选择“未配置”（默认）则允许此功能  。
-- **行为监控**：选择“启用”可阻止 Defender 检查设备上是否存在某些已知模式的可疑活动  。 选择“未配置”（默认）则允许 Windows Defender 行为监视  。
-- **网络检查系统 (NIS)** ：NIS 可帮助保护设备免遭基于网络的攻击。 它使用 Microsoft Endpoint Protection 中心中的已知漏洞签名来帮助检测和阻止恶意流量。
-- **扫描所有下载**：控制 Defender 是否扫描从 Internet 下载的所有文件。
-- **扫描 Microsoft Web 浏览器中加载的脚本**：选择“未配置”（默认）允许 Defender 扫描在 Internet Explorer 中使用的脚本  。 选择“启用”可阻止此扫描  。
-- **Defender 的最终用户访问权限**：选择“阻止”可对最终用户隐藏 Windows Defender 用户界面  。 所有 Windows Defender 通知也被禁止。 选择“未配置”（默认）则允许用户访问 Windows Defender UI  。 此设置更改后，在最终用户的电脑下次重启时生效。
-- **签名更新间隔(小时)** ：输入 Defender 检查新签名文件的时间间隔，从 0 到 24。 选项包括：
+- **实时监控**：选择“启用”可禁止对恶意软件、间谍软件和其他不需要的软件的实时扫描  。 选择“未配置”（默认）则允许此功能  。
 
-  - “未配置”  （默认）
-  - **不检查**：Defender 不检查新签名文件。
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **行为监控**：选择“启用”可禁止 Defender 检查设备上是否存在某些已知模式的可疑活动  。 选择“未配置”（默认）则允许 Windows Defender 行为监视  。
+
+  [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **网络检查系统 (NIS)** ：NIS 可帮助保护设备免遭基于网络的攻击。 它使用 Microsoft Endpoint Protection 中心中的已知漏洞签名来帮助检测和阻止恶意流量。
+
+  “未配置”（默认设置）会禁用此功能  。 不会阻止用户连接到已知的漏洞。 如果设置为 "**启用**"，则会启用网络保护和网络阻止功能，并且用户无法将其关闭。 阻止用户连接到已知的漏洞。
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **扫描所有下载**：**未配置**（默认）具有 Defender 扫描从 Internet 下载的所有文件。 如果设置为 "**启用**"，则将禁用此功能。 因此，Defender 不会扫描所有下载的 Internet 文件。
+
+  [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **扫描 Microsoft Web 浏览器中加载的脚本**：选择“未配置”（默认）允许 Defender 扫描在 Internet Explorer 中使用的脚本  。 选择“启用”可阻止此扫描  。
+
+  [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **Defender 的最终用户访问权限**：选择“阻止”可对最终用户隐藏 Windows Defender 用户界面  。 所有 Windows Defender 通知也被禁止。 选择“未配置”（默认）则允许用户访问 Windows Defender UI  。 此设置更改后，在最终用户的电脑下次重启时生效。
+
+  [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **安全智能更新间隔（小时）** ：输入从0-24 开始检查新安全智能的时间间隔（以小时为单位）。 选项包括：
+
+  - **未配置**（默认值）：每8小时检查一次更新。
+  - 不**检查**： Defender 不检查是否有新的安全智能更新。
   - **1 到 24**：`1` 表示每小时检查一次，`2` 表示每两小时检查一次，`24` 表示每天检查一次，依此类推。
-- **监视文件和程序活动**：允许 Defender 监视设备上的文件和程序活动。
-- **删除已隔离恶意软件之前的天数**：按输入的天数继续跟踪已解决的恶意软件，以便可以手动检查之前受影响的设备。 如果你将天数设置为 0  ，则恶意软件将保留在隔离文件夹中，并且不会自动删除。 设置为 `90` 时，隔离项目将在系统上存储 90 天，然后删除。
-- **在扫描期间限制 CPU 使用率**：限制允许扫描使用的 CPU 量（从 1  到 100  ）。
-- **扫描存档文件**：选择“启用”可阻止 Defender 扫描存档的文件（如 Zip 或 Cab 文件）  。 选择“未配置”（默认）则允许扫描文件  。
+  
+  [Defender/SignatureUpdateInterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **监视文件和程序活动**：允许 Defender 监视设备上的文件和程序活动。 选项包括：
+
+  - **未配置**（默认值）：监视所有文件
+  - **已禁用监视**
+  - **监视所有文件**
+  - **仅监视传入的文件**
+  - **仅监视传出的文件**
+
+  [Defender/RealTimeScanDirection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **删除已隔离恶意软件之前的天数**：按输入的天数继续跟踪已解决的恶意软件，以便可以手动检查之前受影响的设备。 如果你将天数设置为 `0`，则恶意软件将保留在隔离文件夹中，并且不会自动删除。 设置为 `90` 时，隔离项目将在系统上存储 90 天，然后删除。
+
+  [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **在扫描期间限制 CPU 使用率**：限制允许扫描使用的 CPU 量（从 `0` 到 `100`）。
+- **扫描存档文件**：**允许**关闭 Defender 扫描存档文件（如 Zip 或 Cab 文件）。 选择“未配置”（默认）则允许扫描文件  。
+
+  [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **扫描传入的电子邮件**：选择“启用”可允许 Defender 在电子邮件到达设备时扫描它们  。 选择“未配置”（默认）会阻止电子邮件扫描  。
+
+  [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **完全扫描期间扫描可移动驱动器**：选择“启用”可阻止完全扫描可移动驱动器  。 选择“未配置”（默认）则允许 Defender 扫描可移动驱动器，如 U 盘  。
+
+  在快速扫描过程中，可能仍会扫描可移动驱动器。
+
+  [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **完全扫描期间扫描映射的网络驱动器**：选择“启用”可允许 Defender 扫描映射网络驱动器上的文件  。 选择“未配置”（默认）则阻止完全扫描  。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
+
+  在快速扫描过程中，可能仍会扫描映射的网络驱动器。
+
+  [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **扫描从网络文件夹打开的文件**：选择“未配置”（默认）可允许 Defender 扫描共享网络驱动器上的文件（例如，从 UNC 路径访问的文件）  。 选择“启用”可阻止此扫描  。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
+
+  [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **Cloud 保护**：选择“未配置”（默认）允许 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息  。 选择“启用”可阻止此功能  。
+
+  [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **在示例提交前提示用户**：控制是否自动向 Microsoft 发送可能需要进一步分析的潜在恶意文件。 选项包括：
-  - 未配置 
+
+  - **未配置**（默认值）：自动发送安全示例。
   - **始终提示**
   - **发送个人数据之前进行提示**
   - **从不发送数据**
-  - **发送所有数据而不提示**：自动发送数据
+  - **发送所有数据而不提示**：自动发送数据。
+
+  [Defender/SubmitSamplesConsent CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **每天执行快速扫描的时间**：选择要运行每天快速扫描的时间。 “未配置”（默认）不运行每天扫描  。 如果需要更多自定义，请配置“要执行的系统扫描类型”设置  。
 
@@ -756,12 +766,16 @@ ms.locfileid: "69998946"
     - **计划日期**：选择运行扫描的日期。
     - **计划时间**：选择运行扫描的时间。
 
-  此设置可能与“要执行每日快速扫描的时间”设置相冲突  。 一些建议：
-
-  - 若要运行每日快速扫描，请配置“要执行每日快速扫描的时间”设置  。
-  - 若要每周运行每日快速扫描和完全扫描，请配置“要执行每日快速扫描的时间”  。 并将“要执行的系统扫描类型”设置为带日期和时间的完全扫描  。
-  - 请勿在“要执行的系统扫描类型”设置为“快速扫描”的同时配置“要执行每日快速扫描的时间”设置    。 这些设置可能会发生冲突，扫描可能无法运行。
-  - 若要在每周二上午 6 点运行快速扫描，请配置“要执行的系统扫描类型”设置  。
+  > [!TIP]
+  > 此设置可能与“要执行每日快速扫描的时间”设置相冲突  。 一些建议：  
+  >
+  > - 如果要计划每日一次的快速扫描和每周完全扫描，请执行以下操作：
+  >   1. 配置**执行每日快速扫描**设置的时间。
+  >   2. 配置执行完全扫描**要执行的系统扫描类型**。
+  > 
+  > - 如果你只想每天进行一次快速扫描（无完全扫描），请使用以下设置： **Time 执行每日快速扫描**或**执行的系统扫描类型**。 例如，若要在每周二上午 6 点运行快速扫描，请配置“要执行的系统扫描类型”设置  。
+  > 
+  > - 请勿在“要执行的系统扫描类型”设置为“快速扫描”的同时配置“要执行每日快速扫描的时间”设置    。 这些设置可能会发生冲突，扫描可能无法运行。
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -774,7 +788,10 @@ ms.locfileid: "69998946"
 
   有关可能不需要的应用程序的详细信息，请参阅[检测和阻止可能不需要的应用程序](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)。
 
-- **检测到恶意软件威胁时的操作**：选择 Defender 针对其检测到的每个威胁级别（低、中、高和严重）要执行的操作。 如果不能，Windows Defender 将选择最佳选项，以确保解决威胁。 选项包括：
+  [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **针对检测到的恶意软件威胁的操作**：选择要如何处理恶意软件线程。 **未配置**（默认值）允许 Microsoft Defender 选择最佳选项。 设置为“启用”  后，可选择 Defender 针对其探测到的每个威胁级别（低、中、高和严重）要执行的操作。 选项包括：
+  
   - **清理**
   - **隔离**
   - **移除**
@@ -782,15 +799,15 @@ ms.locfileid: "69998946"
   - **用户定义**
   - **阻止**
 
-选择“确定”，保存所做更改  。
+  如果你的操作不可行，Windows Defender 将选择最佳选项以确保修正威胁。 
+
+  [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 防病毒排除项
 
 - **要从扫描和实时保护排除的文件和文件夹**：向排除列表添加一个或多个文件和文件夹（如 C:\Path  或 %ProgramFiles%\Path\filename.exe  ）。 不会在任何实时或计划的扫描中包括这些文件和文件夹。
 - **要从扫描和实时保护排除的文件扩展名**：向排除列表添加一个或多个文件扩展名（如 jpg  或 txt  ）。 不会在任何实时或计划的扫描中包括具有这些扩展名的任何文件。
 - **要从扫描和实时保护排除的进程**：向排除列表添加一个或多个类型为 .exe  、.com  或 .scr  的进程。 这些进程不会包括在任何实时或计划的扫描中。
-
-选择“确定”，保存所做更改  。
 
 ## <a name="next-steps"></a>后续步骤
 
