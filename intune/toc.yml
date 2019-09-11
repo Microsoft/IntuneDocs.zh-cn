@@ -857,8 +857,8 @@
                   href: custom-settings-windows-10.md
             - name: 安全基线
               items:
-                - name: Windows 10 基线设置
-                  href: security-baseline-settings-mdm.md
+                - name: Windows 10 MDM 基线设置
+                  href: security-baseline-settings-mdm-all.md
                 - name: Microsoft Defender ATP 基准设置
                   href: security-baseline-settings-defender-atp.md
             - name: Windows 更新设置
@@ -1047,10 +1047,6 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: 终结点保护常见错误
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: 安全基线存档
-          items:
-            - name: 存档的 MDM 安全基线
-              href: security-baseline-settings-mdm-archive.md
     - name: 方案实现指南
       items:
         - name: 保护 Exchange Online
