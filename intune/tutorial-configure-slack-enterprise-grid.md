@@ -3,10 +3,10 @@ title: 教程 - 配置 Slack 以将 Intune 用于 EMM 和应用配置
 titleSuffix: Microsoft Intune
 description: 本教程将配置 Slack，以将 Intune 用于 EMM 和应用配置。
 keywords: ''
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/11/2019
+ms.date: 09/09/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7ff4e1fd9f055268a461d1a81b8a2e31fe3d32b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548997"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842080"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>教程：配置 Slack 以将 Intune 用于 EMM 和应用配置
 

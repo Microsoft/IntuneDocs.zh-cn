@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
+ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063034"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70815455"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>使用安全基线在 Intune 中配置 Windows 10 设备
 
@@ -74,8 +74,8 @@ ms.locfileid: "70063034"
 以下安全基线实例可与 Intune 一起使用。 使用链接可以查看每个基线的最新实例的设置。 
 
 - **MDM 安全基线**
-  - [2019 年 5 月 MDM 安全基线](security-baseline-settings-mdm.md)
-  - [预览版：2018 年 10 月的 MDM 安全基线](security-baseline-settings-mdm-archive.md)
+  - [2019 年 5 月 MDM 安全基线](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [预览版：2018 年 10 月的 MDM 安全基线](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Microsoft Defender ATP 基线**  
   （若要使用此基线，环境必须满足使用 [Microsoft Defender 高级威胁防护](advanced-threat-protection.md#prerequisites)的先决条件）  。
@@ -215,7 +215,7 @@ Microsoft 安全团队多年来一直与 Windows 开发人员以及安全社区�
 
 ## <a name="next-steps"></a>后续步骤
 - 查看可用基线的最新版本中的设置：  
-  - [MDM 安全基线](security-baseline-settings-mdm.md)  
+  - [MDM 安全基线](security-baseline-settings-mdm-all.md)  
   - [Microsoft Defender ATP 基线](security-baseline-settings-defender-atp.md)  
 
 - 检查状态并监视[基线和配置文件](security-baselines-monitor.md)
