@@ -546,10 +546,11 @@
         - name: 什么是 Intune 应用管理？
           href: app-management.md
           displayName: mam-we
-        - name: 添加应用概述
-          href: apps-add.md
-          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
+        - name: 添加应用
           items:
+            - name: 添加应用概述
+              href: apps-add.md
+              displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
             - name: 受 Intune 保护的应用
               href: apps-supported-intune-apps.md
             - name: 应用商店应用
@@ -561,9 +562,10 @@
                 - name: Windows Phone 8.1 应用商店应用
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft 应用商店应用
-                  href: store-apps-windows.md
                   items:
-                    - name: 手动添加公司门户应用
+                    - name: Windows 应用
+                      href: store-apps-windows.md
+                    - name: 公司门户应用
                       href: store-apps-company-portal-app.md
                 - name: 托管的 Google Play 应用
                   href: apps-add-android-for-work.md
@@ -571,10 +573,13 @@
                   href: apps-add-office365.md
                 - name: 适用于 macOS 的 Office 365 应用
                   href: apps-add-office365-macos.md
+            - name: Web 应用
+              href: web-app.md
+              displayName: web; web link; weblink; web-link
+            - name: 内置应用
+              href: apps-add-built-in.md
             - name: 生成你的应用 (LOB)
               items:
-                - name: Win32 应用管理
-                  href: apps-win32-app-management.md
                 - name: Android LOB 应用
                   href: lob-apps-android.md
                 - name: iOS LOB 应用
@@ -587,11 +592,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB 应用
                   href: lob-apps-macos.md
-            - name: Web 应用
-              href: web-app.md
-              displayName: web; web link; weblink; web-link
-            - name: 内置应用
-              href: apps-add-built-in.md
+            - name: Win32 应用管理
+              href: apps-win32-app-management.md
             - name: PowerShell 脚本
               href: intune-management-extension.md
         - name: 分配应用
@@ -849,7 +851,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: 教育水平
+                - name: 安全评估
                   href: education-settings-windows.md
                 - name: 共享的多用户设备
                   href: shared-user-device-settings-windows.md
