@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388114"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808627"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>将设备与 Intune 同步以获取最新的策略和操作
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-“同步”设备操作会强制所选设备立即通过 Intune 签入。 当设备签入时，该设备会立即收到已分配给自己的任何挂起的操作或策略。 此功能可帮助立即验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
+“同步”  设备操作会强制所选设备立即通过 Intune 签入。 当设备签入时，该设备会立即收到已分配给自己的任何挂起的操作或策略。 此功能可帮助立即验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
 
 ## <a name="supported-platforms"></a>受支持的平台
 
@@ -40,19 +37,18 @@ ms.locfileid: "57388114"
 
 ## <a name="sync-a-device"></a>同步设备
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”。 
-3. 在 Intune 中，选择“设备” > “所有设备”。
-4. 在所管理的设备列表中，选择一个设备，选择“更多”，然后选择“同步”。
-5. 选择“是”以确认。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 
+3. 在 Intune 中，选择“设备” > “所有设备”    。
+4. 在所管理的设备列表中，选择一个设备，打开其“概述”窗格，然后选择“同步”   。
+5. 选择“是”以确认  。
 
-选择“设备” > “设备操作”，查看同步操作的状态。
+选择“设备” > “设备操作”，查看同步操作的状态   。
 
-可以在[刷新周期时间](device-profiles.md)中查找标准 Intune 策略签入频率。
+可以在[刷新周期时间](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)中查找标准 Intune 策略签入频率。
 
 ## <a name="retryable-error-codes"></a>可重试错误代码
 
-当管理员运行“同步”设备操作时，已失败但引发了可重试错误代码的 iOS 和 Android 应用仍对设备可用。 但是，引发不可重试错误代码的应用必须等待七日，才可用于设备。
+当管理员运行“同步”设备操作时，已失败但引发了可重试错误代码的 iOS 和 Android 应用仍对设备可用  。 但是，引发不可重试错误代码的应用必须等待七日，才可用于设备。
 
 
 | 错误代码  | 建议的说明 | 可重试 |

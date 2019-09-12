@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122140"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842142"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -53,6 +53,25 @@ ms.locfileid: "70122140"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日当周
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="updates-to-microsoft-intune-app----4997846---"></a>对 Microsoft Intune 应用的更新 <!-- 4997846 -->
+适用于 Android 的 Microsoft Intune 应用已更新，具有以下改进：
+- 更新并改进了布局，包含最重要操作的底部导航。
+- 添加了一个显示用户个人资料的附加页面。
+- 在应用中为用户添加了对可操作通知（例如需要更新其设备设置）的显示。
+- 添加了对自定义推送通知的显示，将应用与适用于 iOS 和 Android 的公司门户应用中最近新增的支持保持一致。 有关详细信息，请参阅[使用 Intune 发送自定义通知](custom-notifications.md)。
+
+## <a name="week-of-september-2-2019"></a>2019 年 9 月 2 日当周
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="intune-user-interface-update--tenant-status-dashboard-----5273210----"></a>Intune 用户界面更新 - 租户状态仪表板  <!-- 5273210  -->
+租户状态仪表板的用户界面已更新为与 Azure 用户界面样式保持一致。 有关详细信息，请参阅[租户状态](tenant-status.md)。
+
 
 ## <a name="week-of-august-26-2019"></a>2019 年 8 月 26 日当周
 
@@ -185,7 +204,7 @@ Intune 现在支持安装和使用多个 [Microsoft Intune 证书连接器来执
 
 在此更新中，这种行为得到了修复。 因此，“执行每日快速扫描的时间”  和“要执行的系统扫描类型”  设置在扫描成功完成后显示“成功”状态，并在无法应用设置时显示“失败”状态。 
 
-若要详细了解 Windows Defender 防病毒设置，请参阅[使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置](device-restrictions-windows-10.md#windows-defender-antivirus)。 
+若要详细了解 Windows Defender 防病毒设置，请参阅[使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置](device-restrictions-windows-10.md#microsoft-defender-antivirus)。 
 
 ### <a name="device-enrollment"></a>设备注册
 

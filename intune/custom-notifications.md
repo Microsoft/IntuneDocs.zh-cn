@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,28 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bffbc96e945d522453c299717a6eb413354a4af4
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021753"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70878039"
 ---
 # <a name="send-custom-notifications-in-intune"></a>使用 Intune 发送自定义通知  
 
-使用 Microsoft Intune 向使用托管 iOS 设备和 Android 设备的用户发送自定义通知。 这些消息在用户设备上显示为来自公司门户应用的标准推送通知，就像设备上显示的来自其他应用程序的通知一样。 Windows 设备不支持 Intune 自定义通知。   
+使用 Microsoft Intune 向使用托管 iOS 设备和 Android 设备的用户发送自定义通知。 这些消息在用户设备上显示为来自公司门户应用和 Microsoft Intune 应用的标准推送通知，就像设备上显示的来自其他应用程序的通知一样。 Windows 设备不支持 Intune 自定义通知。   
 
 自定义通知消息包括短标题和不超过 500 个字符的消息正文。 可以出于任何常规通信目的自定义这些消息。
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>发送自定义通知的常见方案  
 
-- 自定义通知用于向特定用户发出有关公司门户中可用的新应用的警报。  
+- 自定义通知用于提醒特定用户有关公司门户中可用的新应用。  
 - 通知所有员工关于时间表中发生的更改，例如因恶劣天气导致的办公楼关闭。  
 
 ## <a name="considerations-for-using-custom-notifications"></a>使用自定义通知的注意事项  
 
 **设备配置**：  
-- 设备必须安装公司门户应用，用户才可以接收自定义通知。 它们还必须配置权限，以允许公司门户应用发送推送通知。 公司门户会提示用户允许接收安装或更新通知。  
+- 设备必须安装公司门户应用或 Microsoft Intune 应用，用户才可以接收自定义通知。 它们还必须配置权限，以允许公司门户应用或 Microsoft Intune 应用发送推送通知。 如有必要，公司门户应用和 Microsoft Intune 应用可能会提示用户允许通知。  
 - 在 Android 上，Google Play Services 是必备依赖项。  
 - 设备必须已注册 MDM。
 
@@ -51,8 +51,8 @@ ms.locfileid: "70021753"
 - 组可以包含用户或设备，但仅向用户发送消息且发送到用户已注册的每个 iOS 或 Android 设备。  
 
 **发送**：  
-- Intune 将消息发送到用户的公司门户应用，然后创建推送通知。 用户无需登录应用，即可在设备上推送通知。  
-- Intune 和公司门户应用无法保证发送自定义通知。 自定义通知可能会在几个小时的延迟后显示（如果有的话），因此它们不应用于紧急消息。  
+- Intune 将消息发送到用户的公司门户应用或 Microsoft Intune 应用，然后创建推送通知。 用户无需登录应用，即可在设备上推送通知。  
+- Intune 和公司门户应用及 Microsoft Intune 应用无法保证发送自定义通知。 自定义通知可能会在几个小时的延迟后显示（如果有的话），因此它们不应用于紧急消息。  
 - 来自 Intune 的自定义通知消息在设备上显示为标准推送通知。 如果公司门户应用在收到通知后在 iOS 设备上处于打开状态，则通知将在应用中显示，而不在推送通知中显示。  
 - 因设备设置而异，自定义通知可以在 iOS 和 Android 设备的锁屏界面上显示。  
 - 在 Android 设备上，其他应用可能可以访问自定义通知中的数据。 请勿将其用于敏感通信。  
@@ -80,7 +80,7 @@ Intune 不会跟踪你发送的自定义通知，并且设备不会在设备的�
 
 ## <a name="receive-a-custom-notification"></a>接收自定义通知  
 
-用户可以在设备上看到作为标准推送通知由 Intune 从公司门户应用发送的自定义通知消息。 这些通知类似于用户从设备上的其他应用接收的推送通知。  
+用户可以在设备上看到作为标准推送通知由 Intune 从公司门户应用或 Microsoft Intune 应用发送的自定义通知消息。 这些通知类似于用户从设备上的其他应用接收的推送通知。  
 
 在 iOS 设备上，如果在收到通知时公司门户应用处于打开状态，则通知将在应用中显示，而不在推送通知中显示。  
 

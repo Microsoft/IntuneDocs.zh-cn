@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373418"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739206"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>在 Intune 中添加 iOS 软件更新策略
 
@@ -53,14 +53,8 @@ ms.locfileid: "66373418"
 
     - **在不更改计划更新的情况下延迟最终用户看到软件更新的时间（天数）** ： 
 
-      **此设置已移动至[设备限制](device-restrictions-ios.md#general)。它将从门户中的此位置中删除**。 在短时间内，可在此处更改现有策略。 大约一个月之后，将从现有策略中删除此设置。
-
-      若要限制设置的影响程度，建议：
-        - 从门户中的此位置中删除现有策略。
-        - 创建新的[设备限制策略](device-restrictions-ios.md#general)。
-        - 目标用户与原始策略的目标用户相同。
-
-      如果存在冲突，此设置不产生效果，除非两个值相同  。 若要防止冲突，请确保从门户中的此位置中更改或删除现有策略。
+      **如果要在受监管的 iOS 设备上延迟软件更新在特定时间内的可见性，请在[设备限制](device-restrictions-ios.md#general)中配置这些设置。
+     
       > [! 重要事项]  
       > 将开始时间和结束时间设为凌晨 12 点的策略计算为 0 小时，而不是 24 小时   。 其效果是不实施限制。  
 

@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062929"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842178"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
 
-有四种类型的 Autopilot 部署：[自部署模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)（适用于展台、数字签名或共享设备）、[白手套](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)（使合作伙伴和 IT 人员可以预配 Windows 10 电脑，以使其完善配置且可用于业务）、[适用于现有设备的 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices)（使用户可将最新版本的 Windows 10 轻松部署到现有设备）和[用户驱动模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)（适用于传统用户）。 
+有四种类型的 Autopilot 部署：
+- [自部署模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)（适用于网亭、数字签名或共享设备）
+- [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)（使合作伙伴和 IT 人员可以预配 Windows 10 电脑，以使其完善配置且可用于业务）、[适用于现有设备的 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices)（使用户可将最新版本的 Windows 10 轻松部署到现有设备）
+- [用户驱动的模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)（适用于传统用户）。 
 
 
 ## <a name="prerequisites"></a>必备条件
@@ -74,9 +77,9 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
     3. 对于“成员资格类型”  ，选择“已分配”  或“动态设备”  。
 3. 如果在上一步中选择“已分配”作为“成员资格类型”，请选择“组”边栏选项卡中的“成员”，并将 Autopilot 设备添加到组中     。
     尚未注册的 Autopilot 设备使用设备序列号作为名称。
-4. 如果选择“动态设备”  作为“成员资格类型”  ，请选择“组”  边栏选项卡中的“动态设备成员”  ，并在“高级规则”  框中键入以下任意代码。
+4. 如果选择“动态设备”  作为“成员资格类型”  ，请选择“组”  边栏选项卡中的“动态设备成员”  ，并在“高级规则”  框中键入以下任意代码。 这些规则仅收集 Autopilot 设备，因为它们的目标是仅由 Autopilot 设备拥有的属性。
     - 若要创建包括所有 Autopilot 设备的组，请键入：`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Intune 的组标记字段映射到 Azure AD 设备上的 OrderID 属性。 若要创建包括所有具有特定组标记 (OrderID) 的 Autopilot 设备的组，必须键入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Intune 的组标记字段映射到 Azure AD 设备上的 OrderID 属性。 若要创建包括所有具有特定组标记（Azure AD 设备 OrderID）的所有 Autopilot 设备的组，必须键入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - 若要创建包括所有具有特定采购订单 ID 的 Autopilot 设备的组，请键入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     在“高级规则”  框中添加代码后，，选择“保存”  。
@@ -93,7 +96,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 4. 选择“下一步”  。
 5. 在“全新体验(OOBE)”  页上，对于部署模式  ，选择以下两个选项之一：
     - **用户驱动**：包含此配置文件的设备与设备注册用户相关联。 必须具备用户凭据，才能注册设备。
-    - **自部署(预览)** ：（需要 Windows 10 版本 1809 或更高版本）包含此配置文件的设备不与设备注册用户相关联。 无需用户凭据，即可注册设备。
+    - **自部署(预览)** ：（需要 Windows 10 版本 1809 或更高版本）包含此配置文件的设备不与设备注册用户相关联。 无需用户凭据，即可注册设备。 如果某个设备没有与其关联的用户，那么基于用户的合规性策略不适用于该设备。 使用自部署模式时，仅应用针对设备的合规性策略。
 
     ![OOBE 页面的屏幕截图](media/enrollment-autopilot/create-profile-outofbox.png)
 

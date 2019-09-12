@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3bc5f8a3f0094c363a705b37b904435ef9e91781
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660941"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864479"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>在 Microsoft Intune 中设置 Intune 本地 Exchange 连接器
 本文中的信息有助于安装和监视 Intune 的 Exchange Active Sync 本地连接器。  结合使用 Intune 本地 Exchange 连接器与[条件访问策略，以允许或阻止对 Exchange 本地邮箱的访问](conditional-access-exchange-create.md)。 
@@ -124,6 +124,9 @@ Intune 支持每个订阅安装多个本地 Exchange 连接器。 如果有多�
    确保在 Exchange 客户端访问服务器上配置 Autodiscover 服务和 Exchange Web 服务。 有关详细信息，请参阅[客户端访问服务器](https://technet.microsoft.com/library/dd298114.aspx)。
 
 6. 在“密码”  字段中提供此帐户的密码，使 Intune 能够访问 Exchange 服务器。
+
+   > [!NOTE]
+   > 要使连接成功，用于登录租户的帐户必须至少是 Intune 服务管理员。 如果没有此帐户，连接将失败，并出现以下错误消息：“远程服务器返回错误:(400) 错误请求。”
 
 7. 选择“连接”  。
 

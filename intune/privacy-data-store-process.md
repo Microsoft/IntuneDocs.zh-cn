@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050364"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739213"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Intune 中的数据存储和处理
 
@@ -41,7 +41,7 @@ Intune [收集数据](privacy-data-collect.md)后，将执行数据存储和处�
 
 Microsoft 在全球许多地区提供和运营 Intune 服务。 Intune 遵从客户数据管理员做出的存储位置选择。
 
-有关详细信息，请参阅 [Microsoft Intune：我的客户数据在何处？](For more information, see Microsoft Intune Where is my customer data?)
+有关详细信息，请参阅[数据位于何处？](https://www.microsoft.com/trust-center/privacy/data-location)
 
 ### <a name="personal-data-retention"></a>个人数据保留
 
