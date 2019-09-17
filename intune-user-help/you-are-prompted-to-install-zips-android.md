@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 09/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f83504e5d651d7f981fa605fc9157287bdb09a4
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: b12cb83485c25181bdcc015857c68da795676219
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529273"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864445"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>在 Android 设备上安装 Zimperium zIPS
 
@@ -31,7 +31,7 @@ ms.locfileid: "67529273"
 
 ## <a name="what-you-need-to-do"></a>需要执行的操作
 
-1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 – 从 Play Store 安装 Skycure”  。 此外，还可以在__符合性详细信息__下的公司门户应用内找到此项。
+1. 从屏幕顶部向下拖动以打开“通知”栏，然后点击“所需应用程序 – 从 Play Store 安装 Zimperium”  。 此外，还可以在__符合性详细信息__下的公司门户应用内找到此项。
 
 2. 将转到 Play Store 中的 Zimperium zIPS 安装页。 安装 Zimperium zIPS，然后点击“接受”以允许 Zimperium zIPS 访问你的设备  。
 

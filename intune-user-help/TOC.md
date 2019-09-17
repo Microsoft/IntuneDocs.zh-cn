@@ -1,6 +1,6 @@
 # 有关 Intune 的用户帮助
 
-## [使用托管设备来完成工作](use-managed-devices-to-get-work-done.md)
+## [什么是设备注册？](use-managed-devices-to-get-work-done.md)
 
 ## [我的公司可以使用 Intune 看到哪些信息？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
