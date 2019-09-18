@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b81525034f69b43abeb60f562e4d6ee6a46b866
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e44bbf9396cd2aff3f2b2b134c72eb871f719a91
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511756"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080113"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>快速入门：设置适用于 Windows 10 设备的自动注册
 
@@ -39,31 +39,31 @@ ms.locfileid: "61511756"
 
 本示例将使用 MDM 注册，以便可以自动注册公司设备和自带设备。 你将注册免费的 Azure Active Directory Premium 订阅。
 
-1. 在 Azure 中，选择“Azure Active Directory” > “移动性(MDM 和 MAM)”。
-2. 选择“获取免费的 Premium 试用版以使用此功能”。 选择此选项将允许使用 Azure Active Directory Premium 免费试用版进行自动注册。 
+1. 在 Azure 中，选择“Azure Active Directory” > “移动性(MDM 和 MAM)”   。
+2. 选择“获取免费的 Premium 试用版以使用此功能”  。 选择此选项将允许使用 Azure Active Directory Premium 免费试用版进行自动注册。 
 
     ![选择 Azure Active Directory Premium 免费试用版](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    选择“企业移动性 + 安全性 E5”免费试用版选项。 此外，必须选择“激活”免费试用版。
+    选择“企业移动性 + 安全性 E5”免费试用版选项  。 此外，必须选择“激活”免费试用版  。
 
     ![选择“企业移动性 + 安全性 E5”免费试用版](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
-3. 选择“Microsoft Intune”。 
+3. 选择“Microsoft Intune”  。 
 
     ![从列表中选择“Microsoft Intune”](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
 
-4. 从“MDM 用户范围”中选择“某些”，以使用 MDM 自动注册来管理员工 Windows 设备上的企业数据。 将为 AAD 加入的设备和自带的设备配置 MDM 自动注册。
+4. 从“MDM 用户范围”中选择“某些”，以使用 MDM 自动注册来管理员工 Windows 设备上的企业数据   。 将为 AAD 加入的设备和自带的设备配置 MDM 自动注册。
 
     ![从“配置”列表中选择“某些”](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. 选择“选择组” > “Contoso 测试人员” > “选择”作为已分配的组。
+5. 选择“选择组” > “Contoso 测试人员” > “选择”作为已分配的组    。
 
     ![选择要注册的组](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
-6. 从“MAM 用户范围”中选择“某些”以管理员工设备上的数据。
-7. 选择“选择组” > “Contoso 测试人员” > “选择”作为已分配的组。 
+6. 从“MAM 用户范围”中选择“某些”以管理员工设备上的数据   。
+7. 选择“选择组” > “Contoso 测试人员” > “选择”作为已分配的组    。 
 8. 对于剩余的配置，可以使用默认值。
-9. 选择 **“保存”**。
+9. 选择 **“保存”** 。
 
 ## <a name="clean-up-resources"></a>清理资源
 

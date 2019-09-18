@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027387"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905046"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>使用 Intune 监视设备加密   
 
@@ -201,8 +201,7 @@ Intune 支持多种选项来轮换和恢复个人恢复密钥。 轮换密钥的
   1. 从任意设备登录 Intune 公司门户网站  。  
   2. 在门户中，转到“设备”，然后选择使用 FileVault 加密的 macOS 设备  。  
   3. 选择“获取恢复密钥”  。 系统会显示当前恢复密钥。  
-  
-     在 iPhone 上，必须选择三个圆点，然后系统才会出现“获取恢复密钥”选项   。  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 恢复密钥  
 

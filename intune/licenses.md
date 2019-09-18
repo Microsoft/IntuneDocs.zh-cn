@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38b381fca17dec66303958ee04c018967ae0d999
-ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
+ms.openlocfilehash: def679ec8e530ce94aae6f8884f9ad94bf2cf58d
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68833534"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079802"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune 许可
 Microsoft Intune 可满足不同的客户需求，并适用于不同的组织规模，包括为学校和小型企业提供的简单易用管理体验，以及企业客户所需的更高级功能。 只要订阅处于活动状态，包含 Microsoft Intune 的大多数许可证还会授予使用 System Center Configuration Manager 的权限。 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76cd6084815a9f63e653a63d36ba8265a7a0fbd6
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122479"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061395"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>配置基础结构以支持在 Intune 中使用 SCEP  
   
@@ -355,7 +355,7 @@ Microsoft Intune 证书连接器安装在运行 NDES 服务的服务器上。 �
 8. 打开命令提示符，输入“services.msc”，然后按 Enter   。 右键单击  “Intune 连接器服务” >   “重启”。
 
 
-要验证服务是否正在运行，请打开浏览器并输入以下 URL。 应返回 403 错误  ：`http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`  
+要验证服务是否正在运行，请打开浏览器并输入以下 URL。 应返回 403 错误  ：`https://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`  
 
 > [!NOTE]  
 > Intune 证书连接器支持 TLS 1.2。 如果托管连接器的服务器支持 TLS 1.2，则使用 TLS 1.2。 如果服务器不支持 TLS 1.2，则使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。

@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
-ms.reviewer: arnab
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a637ae12f3a2ee395503bedd595c490579fdb43c
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993547"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071648"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -103,9 +103,9 @@ ms.locfileid: "68993547"
 
 对于使用 Android KME 在 Intune 中注册的设备，可以将最终用户的登录方式配置为如下所示：
 
-- **不含用户名关联：** 在 Knox 门户中，对于已添加设备，将“设备详细信息”下的“用户 ID”和“密码”字段留空。 此选项要求最终用户必须在注册 Intune 时输入用户名和密码。
+- **不含用户名关联：** 在 Knox 门户中，对于已添加设备，将“设备详细信息”  下的“用户 ID”  和“密码”  字段留空。 此选项要求最终用户必须在注册 Intune 时输入用户名和密码。
 
-- **含用户名关联：** 在 Knox 门户中，对于已添加设备，填写“设备详细信息”下的“用户 ID”（如，已分配用户的用户名或[设备注册管理员](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)帐户）。 此选项预填充用户名，并要求最终用户必须在注册 Intune 时输入密码。
+- **含用户名关联：** 在 Knox 门户中，对于已添加设备，填写“设备详细信息”  下的“用户 ID”  （如，已分配用户的用户名或[设备注册管理员](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)帐户）。 此选项预填充用户名，并要求最终用户必须在注册 Intune 时输入密码。
 
 > [!NOTE]
 >
@@ -120,7 +120,7 @@ ms.locfileid: "68993547"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
-- **设备所有者支持：** - **设备所有者支持：** Intune 支持使用 KME 门户注册专用设备和完全托管设备。 其他 Android Enterprise 设备所有者模式将在 Intune 中可用时受支持。
+- **设备所有者支持：**  - **设备所有者支持：** Intune 支持使用 KME 门户注册专用设备和完全托管设备。 其他 Android Enterprise 设备所有者模式将在 Intune 中可用时受支持。
 
 - **无工作配置文件支持：** KME 是公司设备注册方法，而在 Android 工作配置文件中注册的设备则确保工作数据和个人数据在个人设备上相互独立。 因此，Intune 不支持使用 KME 向工作配置文件注册设备。
 
@@ -128,7 +128,7 @@ ms.locfileid: "68993547"
 
 - **使用 Google Play 帐户更新：** 向 Microsoft Intune 注册设备不需要使用 Google Play 帐户。 但未来对 Intune 公司门户应用的更新可能会要求在设备上使用 Google Play 帐户。 注册 Google 设备所有者不需要使用 Google Play 帐户。
 
-- **“密码”字段被忽略：** 如果“密码”字段是使用 Knox 门户中的“设备详细信息”进行填充，它便会在 Android 注册期间被 Intune 公司门户应用忽略。 最终用户必须在设备上输入密码才能完成设备注册。
+- **“密码”字段被忽略：** 如果“密码”  字段是使用 Knox 门户中的“设备详细信息”  进行填充，它便会在 Android 注册期间被 Intune 公司门户应用忽略。 最终用户必须在设备上输入密码才能完成设备注册。
 
 
 ## <a name="getting-support"></a>获取支持
