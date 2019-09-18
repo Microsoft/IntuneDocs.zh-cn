@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 9b67adeac619e26de785addbab4c6312915a58f0
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529755"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071747"
 ---
 # <a name="incomplete-user-enrollments-report"></a>“用户注册不完整”报表
 
@@ -79,7 +79,7 @@ ms.locfileid: "67529755"
 | EnrollmentWrapUp | 注册设备屏幕直到完成“加载公司资源”  | iOS/Android | 用时超过 30 分钟 |
 | DeviceCategory | 选择“设备类别”（如果管理员已配置），然后单击“完成”  | iOS/Android | 用时超过 30 分钟 |
 | PreEnrollmentWizard | 在已开始注册但返回到“设置访问权限”时设置访问屏幕 | iOS/Android| **推迟** |
-| PreEnrollmentWizard | 设置访问屏幕，直到单击“下一步是什么”屏幕上的“下一步”   | iOS/Android | 用时超过 30 分钟 |
+| PreEnrollmentWizard | 设置访问屏幕，直到单击“下一步是什么”屏幕上的“下一步”  | iOS/Android | 用时超过 30 分钟 |
 
 #### <a name="platform-screens-section"></a>平台屏幕部分
 

@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a22fef1c04ae52a8a4cc65eaadc1ef6fcd524c19
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043597"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071536"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>向 Intune 用户分配角色
 
@@ -35,25 +35,25 @@ ms.locfileid: "66043597"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
+2. 选择“所有服务” > “Intune”   。 Intune 位于“监视 + 管理”部分中  。
 
-3. 在“Intune”边栏选项卡上，选择“角色” > “所有角色”。
+3. 在“Intune”  边栏选项卡上，选择“角色”   > “所有角色”  。
 
-4. 在“Intune 角色 - 所有角色”边栏选项卡上，选择要分配的内置角色。
+4. 在“Intune 角色 - 所有角色”  边栏选项卡上，选择要分配的内置角色。
 
-5. 在“<角色名称> - 概述”边栏选项卡上，选择“管理” > “分配”。
+5. 在“<角色名称  > - 概述”  边栏选项卡上，选择“管理”   > “分配”  。
 
-6. 在“自定义角色”边栏选项卡，选择“分配”。
+6. 在“自定义角色”边栏选项卡，选择“分配”  。
 
-7. 在“角色分配”边栏选项卡上，输入分配的“分配名称”和可选“分配说明”。
+7. 在“角色分配”  边栏选项卡上，输入分配的“分配名称”  和可选“分配说明”  。
 
-8. 对于“成员(组)”，选择包含要对其授予权限的用户的组。
+8. 对于“成员(组)”  ，选择包含要对其授予权限的用户的组。
 
-9. 对于“范围(组)”，选择包含上述成员将有权管理的用户/设备的组。
+9. 对于“范围(组)”，选择包含上述成员将有权管理的用户/设备的组  。
 
-10. 对于“范围(标记)”，选择将要应用此角色分配的标记。
+10. 对于“范围(标记)”，选择将要应用此角色分配的标记  。
 
-11. 完成后，选择“确定”。 新分配将显示在分配列表中。
+11. 完成后，选择“确定”  。 新分配将显示在分配列表中。
 
 
 ## <a name="next-steps"></a>后续步骤

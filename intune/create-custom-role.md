@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d053b0b37931443a343c91b5122b7a097d248c51
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 10366a41be05dbedee5cd84a1222a727a02a1b93
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048694"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071474"
 ---
 # <a name="create-a-custom-role-in-intune"></a>在 Intune 中创建自定义角色
 
@@ -35,19 +35,19 @@ ms.locfileid: "66048694"
 
 1. 使用 Intune 凭据登录 [Azure 门户](https://portal.azure.com)。
 
-2. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune。
+2. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune   。
 
-3. 选择“Intune” > “角色” > “所有角色” > “添加”。
+3. 选择“Intune”   > “角色”   > “所有角色”   > “添加”  。
 
-4. 在“添加自定义角色”边栏选项卡上，输入新角色的名称和说明，然后单击“权限”。
+4. 在“添加自定义角色”  边栏选项卡上，输入新角色的名称和说明，然后单击“权限”  。
 
-5. 在“权限”边栏选项卡上，选择要用于此角色的权限。 使用 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)帮助你确定要应用哪些权限。
+5. 在“权限”  边栏选项卡上，选择要用于此角色的权限。 使用 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)帮助你确定要应用哪些权限。
 
-6. 在“范围(标记)”边栏选项卡上，选择此角色的标记。 此角色可访问同样具有这些标记的资源。
+6. 在“范围(标记)”边栏选项卡上，选择此角色的标记  。 此角色可访问同样具有这些标记的资源。
 
-7. 完成后，选择“确定”。
+7. 完成后，选择“确定”  。
 
-8. 在“添加自定义角色”边栏选项卡上，单击“创建”。 新角色会显示在“Intune 角色 - 所有角色”边栏选项卡上的列表中。
+8. 在“添加自定义角色”  边栏选项卡上，单击“创建”  。 新角色会显示在“Intune 角色 - 所有角色”  边栏选项卡上的列表中。
 
 ## <a name="next-steps"></a>后续步骤
 - [向用户分配角色](assign-role.md)

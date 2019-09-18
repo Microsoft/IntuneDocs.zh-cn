@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 83b10bdfacbcf76b9f75b90d99e094b6854d525e
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842080"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061665"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>教程：配置 Slack 以将 Intune 用于 EMM 和应用配置
 
@@ -77,7 +77,6 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
 5. 选择“关联应用”  。
 6. 在搜索栏中输入“用于 EMM 的 Slack”，并选择此应用。
 7. 单击“确定”，然后选择“配置设置”。   
-    - 有关配置密钥及其值的信息，请参阅 [Slack AppConfig 网页](https://www.appconfig.org/company/slack/)的“技术”选项卡中的文档。
 8. 选择“确定”  ，然后选择“添加”  。
 9. 在搜索栏中，输入“Slack 应用配置策略测试”，然后选择刚添加的策略。
 10. 在“管理”中选择“分配”  。

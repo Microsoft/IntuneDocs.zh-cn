@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9554893a8317b014007bd7089ed62f222975c8
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: 76e6ba8cb1ed6804bfb50f69a00817a50fe1912e
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214301"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012440"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>在 Microsoft Intune 中使用证书进行身份验证  
 
@@ -98,5 +98,5 @@ Intune 支持以下证书类型：
 创建并分配受信任的证书配置文件后，为要使用的每个平台创建 SCEP、PKCS 或 PKCS 导入的证书配置文件。 请参阅以下文章进一步了解：  
 - [配置基础结构以支持在 Intune 中使用 SCEP 证书](certificates-scep-configure.md)  
 - [使用 Intune 配置和管理 PKCS 证书](certficates-pfx-configure.md)  
-- [创建 PKCS 导入的证书配置文件](certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [创建 PKCS 导入的证书配置文件](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
 
