@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: cbf2031a316b1f7c2e22d165363cca12cfd70291
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374923"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061581"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 中的 Windows 10 设备上使用 PowerShell 脚本
 
@@ -181,7 +181,7 @@ Intune 管理扩展具有以下先决条件。 满足先决条件后，在向用
 - 检查日志是否存在任何错误。 请参阅（本文中的）[Intune 管理扩展日志](#intune-management-extension-logs)。
 - 对于可能的权限问题，确保将 PowerShell 脚本的属性设置为 `Run this script using the logged on credentials`。 另外，确保已登录的用户具有适当的权限来运行脚本。
 
-- 要隔离脚本问题，请执行以下步骤：
+- 要隔离脚本问题，可以：
 
   - 检查设备上的 PowerShell 执行配置。 相关指南请参阅[PowerShell 执行策略](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) 。
   - 使用 Intune 管理扩展运行示例脚本。 例如，创建 `C:\Scripts` 目录，并为每个人提供完全控制权限。 运行以下脚本：
@@ -194,7 +194,31 @@ Intune 管理扩展具有以下先决条件。 满足先决条件后，在向用
 
   - 要在不使用 Intune 的情况下测试脚本执行，请在系统帐户中本地使用 [psexec 工具](https://docs.microsoft.com/sysinternals/downloads/psexec)来运行脚本：
 
-    `psexec -i -s`
+    `psexec -i -s`  
+    
+  - 如果脚本报告它成功，但实际上没有成功，那么防病毒服务可能是沙盒 AgentExecutor。 以下脚本始终在 Intune 中报告失败。 可以使用此脚本进行测试：
+  
+    ```powershell
+    Write-Error -Message "Forced Fail" -Category OperationStopped
+    mkdir "c:\temp" 
+    echo "Forced Fail" | out-file c:\temp\Fail.txt
+    ```
+
+    如果脚本报告成功，请查看 `AgentExecutor.log` 以确认错误输出。 如果脚本执行，则长度应为 >2。
+
+  - 若要捕获 .error 和 .output 文件，以下代码片段通过 AgentExecutor 将脚本执行到 PSx86 (`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`)。 它会保留日志以供查看。 请记住，Intune 管理扩展会在脚本执行后清除日志：
+  
+    ```powershell
+    $scriptPath = read-host "Enter the path to the script file to execute"
+    $logFolder = read-host "Enter the path to a folder to output the logs to"
+    $outputPath = $logFolder+"\output.output"
+    $errorPath =  $logFolder+"\error.error"
+    $timeoutPath =  $logFolder+"\timeout.timeout"
+    $timeoutVal = 60000 
+    $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
+    $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
+    &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
+    ```
 
 ## <a name="next-steps"></a>后续步骤
 

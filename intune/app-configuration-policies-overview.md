@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160600"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061598"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的应用配置策略
 
 借助应用配置策略，可在用户运行应用之前向已分配给他们的策略分配配置设置，从而消除应用设置问题。 当应用程序在最终用户设备上配置时，这些设置会自动提供，最终用户无需采取执行任何操作。 每个应用的配置设置都是唯一的。 
 
-可创建并使用应用配置策略提供适用于 iOS 或 Android 应用的配置设置。 通过这些配置设置可以使用应用配置和管理的[行业标准方法](https://www.appconfig.org/)来对应用进行自定义。 只要应用检测到配置策略设置（通常在应用首次运行时），就会使用这些设置。 
+可创建并使用应用配置策略提供适用于 iOS 或 Android 应用的配置设置。 通过这些配置设置可以使用应用配置和管理对应用进行自定义。 只要应用检测到配置策略设置（通常在应用首次运行时），就会使用这些设置。 
 
 例如，应用配置设置可能要求指定以下任意详细信息：
 
@@ -60,7 +60,7 @@ ms.locfileid: "70160600"
 ## <a name="apps-that-support-app-configuration"></a>支持应用配置的应用
 
 ### <a name="managed-devices"></a>托管设备
-可对支持应用配置策略的应用使用该策略。 要在 Intune 中支持应用配置，应用必须编写为支持使用由 [AppConfig 社区](https://www.appconfig.org/members)定义的应用配置。 有关详细信息，请咨询应用供应商。
+可对支持应用配置策略的应用使用该策略。 要在 Intune 中支持应用配置，应用必须编写为支持使用由 OS 定义的应用配置。 有关支持的应用配置密钥的详细信息，请咨询应用供应商。
 
 ### <a name="managed-apps"></a>托管应用
 可通过如下方式准备业务线应用：将 [Intune App SDK](app-sdk.md) 合并到应用，或使用 [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md) 在开发应用后对其进行包装。 Intune App SDK 努力使应用开发者所需的代码更改数量降到最低。 有关详细信息，请参阅 [Intune App SDK 概述](app-sdk.md)。 有关 Intune App SDK 与 Intune App Wrapping Tool 之间的比较，请参阅[针对应用保护策略准备业务线应用](apps-prepare-mobile-application-management.md#feature-comparison)。

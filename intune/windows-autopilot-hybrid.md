@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
-ms.reviewer: damionw
+ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 399b0c6065c51343e4802d4e8aec29381c6dc468
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 0bf683aebee50b4f2172f11ce205a910a47d0845
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861848"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071152"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置加入混合 Azure Active Directory (Azure AD) 的设备。 为此，请执行本文中的步骤。
@@ -106,14 +106,14 @@ ms.locfileid: "68861848"
 
 用于 Active Directory 的 Intune 连接器必须安装在运行 Windows Server 2016 或更高版本的计算机上。 计算机还必须能够访问 Internet 和 Active Directory。 要增加扩展性和可用性或要支持多个 Active Directory 域，可以在环境中安装多个连接器。 建议在未运行任何其他 Intune 连接器的服务器上安装连接器。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “适用于 Active Directory 的 Intune Connector (预览版)” > “添加连接器”     。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “适用于 Active Directory 的 Intune 连接器” > “添加”     。 
 2. 按照说明下载连接器。
 3. 打开下载的连接器安装文件 ODJConnectorBootstrapper.exe，安装连接器  。
 4. 设置结束时，选择“配置”  。
 5. 选择“登录”  。
 6. 输入用户全局管理员或 Intune 管理员角色凭据。  
    必须为用户帐户分配 Intune 许可证。
-7. 转到“设备注册” > “Windows 注册” > “适用于 Active Directory 的 Intune Connector (预览版)”，然后确认连接状态为“活动”     。
+7. 转到“设备注册” > “Windows 注册” > “适用于 Active Directory 的 Intune 连接器”，然后确认连接状态为“活动”     。
 
 > [!NOTE]
 > 登录到连接器之后，可能需要几分钟才能显示在 [Intune](https://aka.ms/intuneportal) 中。 它只有在能够成功与 Intune 服务通信时才会显示。
@@ -183,14 +183,17 @@ Autopilot 设备已注册后，其设备名称成为设备的主机名。 默认
 Autopilot 部署配置文件用于配置 Autopilot 设备。
 
 1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “部署配置文件” > “创建配置文件”     。
-1. 键入“名称”和“说明”（可选）   。
-1. 对于“部署模式”，选择“用户驱动”   。
-1. 在“加入到 Azure AD 时的身份”框中，选择“已加入混合 Azure AD (预览)”   。
-1. 选择“全新体验(OOBE)”，根据需要配置下列选项，再选择“保存”   。
-1. 选择“创建”以创建配置文件  。 
-1. 在配置文件窗格中，选择“分配”  。
-1. 选择“选择组”  。
-1. 在“选择组”窗格中，选择设备组，然后单击“选择”   。
+2. 在“基本信息”页上，键入名称和可选说明    。
+3. 如果希望已分配组中的所有设备自动转换为 Autopilot，请把“将所有目标设备转换为 Autopilot”设置为“是”   。 已分配组中的所有非 Autopilot 设备都将注册 Autopilot 部署服务。 等待 48 小时来处理注册。 取消注册设备并重置后，Autopilot 将对其进行注册。 以这种方式注册设备后，禁用此选项或删除配置文件分配将不会从 Autopilot 部署服务中删除该设备。 必须改为[直接删除该设备](enrollment-autopilot.md#delete-autopilot-devices)。
+4. 选择“下一步”  。
+5. 在“全新体验 (OOBE)”  页上，对于“部署模式”  ，选择“用户驱动”  。
+6. 在“加入到 Azure AD 时的身份”框中，选择“已加入混合 Azure AD”   。
+7. 根据需要，在“全新体验 (OOBE)”  上配置剩余选项。
+8. 选择“下一步”  。
+9. 在“作用域标记”  页上，为此配置文件选择“[作用域标记](scope-tags.md)”。
+10. 选择“下一步”  。
+11. 在“分配”  页上，选择“要包括的组”  > 搜索并选择“设备组”>“选择”  。
+12. 选择“下一步”   > “创建”  。
 
 设备配置文件的状态从“未分配”更改为“正在分配”，最后更改为“已分配”，此过程大约用时 15 分钟    。
 

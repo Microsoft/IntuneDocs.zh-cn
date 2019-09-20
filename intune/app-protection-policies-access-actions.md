@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: a038f55f6dbdd894742a8712c878e77557a77210
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063018"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061544"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用应用保护策略条件启动操作选择性地擦除数据
 
@@ -44,7 +44,7 @@ ms.locfileid: "70063018"
 8. 如果用户不符合要求，请选择要采取的操作  。 在某些情况下，可为单个设置配置多项操作。 有关详细信息，请参阅[如何创建和分配应用保护策略](app-protection-policies.md)。
 
 >[!NOTE]
-> 要使用“设备型号或设备制造商”设置，请输入以分号分隔的型号标识符列表  。 切勿在多值列表中使用空格。 这些值不区分大小写。 
+> 要使用“设备型号或设备制造商”设置，请输入以分号分隔的设备型号标识符列表 (iOS) 或设备制造商 (Android)  。 切勿在多值列表中使用空格。 这些值不区分大小写。 
 
 ## <a name="policy-settings"></a>策略设置 
 

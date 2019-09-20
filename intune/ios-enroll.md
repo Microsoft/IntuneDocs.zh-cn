@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
-ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
+ms.openlocfilehash: 3f7018b791d5ab22ebcf6bbc45ac01963d2c5d42
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68738276"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079948"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
 
@@ -39,7 +39,7 @@ Intune 启用了 iPad 和 iPhone 的移动设备管理 (MDM)，以允许用户�
 
 ## <a name="user-owned-ios-devices-byod"></a>用户拥有的 iOS 设备 (BYOD)
 
-可以让用户注册其个人设备用于 Intune 管理，这称为“自带设备办公”或 BYOD。 完成先决条件并分配用户许可证后，用户便可从 App Store 下载 Intune 公司门户应用，然后按照应用中的注册说明进行操作。
+可以让用户注册其个人设备用于 Intune 管理，这称为“自带设备办公”或 BYOD。 完成先决条件并分配用户许可证后，用户便可从 App Store 下载 Intune 公司门户应用，然后按照应用中的注册说明进行操作。 可以按照[隐私声明自定义](company-portal-app.md#privacy-statement-customization)中所述在 iOS 设备上自定义公司门户隐私声明。
 
 ## <a name="company-owned-ios-devices"></a>公司拥有的 iOS 设备
 对于为用户购买设备的组织，Intune 还支持以下公司自有的 iOS 设备注册方法：

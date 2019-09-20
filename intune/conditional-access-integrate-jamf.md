@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: b439067d06cf49a4ff83288e109d1fccd3801106
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251083"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012516"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -38,13 +38,13 @@ ms.locfileid: "67251083"
 - [适用于 macOS 的公司门户应用](https://aka.ms/macoscompanyportal)
 - 带有 OS X 10.11 Yosemite 或更高版本的 macOS 设备
 
-## <a name="connecting-intune-to-jamf-pro"></a>将 Intune 连接到 Jamf Pro
+## <a name="connect-intune-to-jamf-pro"></a>将 Intune 连接到 Jamf Pro
 
-若要将 Intune 与 Jamf Pro 连接，可通过以下方式实现：
+若要将 Intune 与 Jamf Pro 连接：
 
-1. 在 Azure 中创建新的应用程序
-2. 启用 Intune 以与 Jamf Pro 集成
-3. 在 Jamf Pro 中配置条件访问
+1. 在 Azure 中创建新的应用程序。
+2. 启用 Intune 以与 Jamf Pro 集成。
+3. 在 Jamf Pro 中配置条件访问。
 
 ## <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中创建应用程序
 
@@ -55,7 +55,7 @@ ms.locfileid: "67251083"
    - 对于“支持的帐户类型”  部分，选择“任何组织目录中的帐户”  。 
    - 对于“重定向 URI”  ，保留 Web 的默认值，然后指定 Jamf Pro 实例的 URL。  
 
-3. 选择“注册”  以创建应用程序并打开新应用的“概述”页。  
+3. 选择“注册”  创建应用程序并打开新应用的“概述”页  。  
 
 4. 在应用的“概述”  页上，复制“应用程序(客户端)ID”  值并记录该值以供将来使用。 后续过程中将需要此值。  
 
@@ -64,13 +64,13 @@ ms.locfileid: "67251083"
    > [!IMPORTANT]  
    > 在离开此页面之前，复制客户端密码的值并记录该值以供将来使用。 后续过程中将需要此值。 此值不再可用，无需重新创建应用注册。  
 
-6. 选择“管理”下的“API 权限”  。  选择现有权限，然后选择“删除权限”  以删除这些权限。 添加新权限时有必要删除所有现有权限，且应用程序仅在具有单个所需权限时正常运行。  
+6. 选择“管理”下的“API 权限”   。 选择现有权限，然后选择“删除权限”  以删除这些权限。 添加新权限时有必要删除所有现有权限，且应用程序仅在具有单个所需权限时正常运行。  
 
 7. 若要分配新权限，请选择“添加权限”  。 在“请求获取 API 权限”  页上，选择“Intune”  ，然后选择“应用程序权限”  。 仅选中 update_device_attributes  对应的复选框。  
 
    选择“添加权限”  以保存此配置。  
 
-8. 在“API 权限”  页上，选择“为 Microsoft 授予管理员同意”  ，然后选择“是”。  
+8. 在“API 权限”  页上，选择“为 Microsoft 授予管理员同意”  ，然后选择“是”  。  
 
    将完成 Azure AD 中的应用注册过程。
 
@@ -88,9 +88,9 @@ ms.locfileid: "67251083"
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中配置 Microsoft Intune 集成
 
-1. 在 Jamf Pro 中，导航到“全局管理”   > “条件访问”  。 单击“Microsoft Intune 集成”选项卡上的“编辑”按钮   。
+1. 在 Jamf Pro 中，导航到“全局管理”   > “条件访问”  。 单击“macOS Intune 集成”选项卡上的“编辑”按钮   。
 
-2. 选中“启用 Microsoft Intune 集成”复选框  。
+2. 选中“启用适用于 macOS 的 Intune 集成”复选框  。
 
 3. 提供在 Azure AD 中创建应用时保存的有关 Azure 租户的必要信息，包括“位置”、  “域名”、  “应用程序 ID”  和“客户端密码”的值  。  
 
@@ -100,7 +100,17 @@ ms.locfileid: "67251083"
 
 配置 Intune 和 Jamf 之间的集成后，需要[将符合性策略应用到 Jamf 托管的设备](conditional-access-assign-jamf.md)。
 
+## <a name="disconnect-jamf-pro-and-intune"></a>断开 Jamf Pro 和 Intune 的连接 
 
+如果不再使用 Jamf Pro 管理组织中的 Mac 并希望用户由 Intune 管理，则必须删除 Jamf Pro 和 Intune 之间的连接。 使用 Jamf Pro 控制台删除连接。 
+
+1. 在 Jamf Pro 中，转到“全局管理”   > “条件访问”  。 在“macOS Intune 集成”  选项卡上，选择“编辑”  。
+2. 清除“启用适用于 macOS 的 Intune 集成”  复选框。
+3. 选择“保存”  。 Jamf Pro 将配置发送到 Intune，并且将终止集成。
+4. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 转到“Microsoft Intune”   > “设备合规性”   > “合作伙伴设备管理”  以验证现在状态是否“已终止”  。 
+
+   > [!NOTE]
+   > 组织的 Mac 设备将在控制台中显示的日期（3 个月）删除。 
 
 ## <a name="next-steps"></a>后续步骤
 

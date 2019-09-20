@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: damionw
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd870a788ff5cac7e0aff47c5b8175c0bdfacff2
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: cbfe0e30794ddfe5b2f089d50456f9cbdd031e6d
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427297"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071389"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用设备注册管理员帐户在 Intune 中注册设备
 
@@ -39,7 +39,7 @@ ms.locfileid: "68427297"
 - 如果设备具有 Apple VPP 许可证，则可以安装 VPP 应用。
 - 设备出于条件访问而被阻止，Windows 10 1803+ 除外
 - 向 DEM 帐户注册的每台设备都需要获得适当许可才能由 Intune 托管。 许可证可以是 Intune 用户许可证，也可以是 Intune 设备许可证。
-
+- 如果使用 DEM 帐户[注册 Android Enterprise 工作配置文件设备](android-work-profile-enroll.md)，则每个帐户最多可注册 10 台设备。
 
 
 ## <a name="add-a-device-enrollment-manager"></a>添加一个设备注册管理器

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842142"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061683"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -54,6 +54,21 @@ ms.locfileid: "70842142"
 
 <!-- ########################## -->
 
+## <a name="week-of-september-16-2019"></a>2019 年 9 月 16 日当周
+
+### <a name="app-management"></a>应用管理
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>Web 应用的 macOS 支持 <!-- 3174427 -->
+可以使用 macOS 公司门户将 Web 应用（此类应用可将快捷方式添加到网页 URL）安装到 Dock。 最终用户可以从 macOS 公司门户中的 Web 应用的应用详细信息页访问安装  操作。 有关 Web 链接  应用类型的详细信息，请参阅[将应用添加 Microsoft Intune](apps-add.md)和[将 Web 应用添加到 Microsoft Intune](web-app.md)。
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP 应用的 macOS 支持 <!-- 3173501  -->
+当 Apple VPP 令牌在 Intune 中同步时，使用 Apple Business Manager 购买的 macOS 应用将显示在控制台中。 可以使用 Intune 控制台为组分配、撤消和重新分配设备和基于用户的许可证。 Microsoft Intune 可通过以下方式帮助用户管理为贵公司购买的 VPP 应用：
+- 从应用商店中报告许可证信息。
+- 跟踪已使用的许可证数量。
+- 帮助防止安装的应用副本数超过所拥有的数目。
+
+有关 Intune 和 VPP 的系详细信息，请参阅[使用 Microsoft Intune 管理批量购买的应用和书籍](vpp-apps.md)。
+
 ## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日当周
 
 ### <a name="app-management"></a>应用管理
@@ -64,6 +79,10 @@ ms.locfileid: "70842142"
 - 添加了一个显示用户个人资料的附加页面。
 - 在应用中为用户添加了对可操作通知（例如需要更新其设备设置）的显示。
 - 添加了对自定义推送通知的显示，将应用与适用于 iOS 和 Android 的公司门户应用中最近新增的支持保持一致。 有关详细信息，请参阅[使用 Intune 发送自定义通知](custom-notifications.md)。
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>对于 iOS 设备，自定义公司门户的“注册过程隐私”屏幕 <!-- 4394993 -->
+使用 Markdown，可以自定义最终用户在 iOS 注册期间看到的公司门户的隐私屏幕。 具体来说，将能够自定义组织无法在设备上查看或执行的操作列表。 有关详细信息，请参阅[如何配置 Intune 公司门户应用](company-portal-app.md#privacy-statement-customization)。
+
 
 ## <a name="week-of-september-2-2019"></a>2019 年 9 月 2 日当周
 
@@ -228,7 +247,7 @@ Android 设备管理员注册选项已添加到“Android 注册”页（依次�
 若要详细了解设置助理的自定义项，请参阅[创建适用于 iOS 的 Apple 注册配置文件](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)和[创建适用于 macOS 的 Apple 注册配置文件](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile)。
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>将用户列添加到 Autopilot 设备 CSV 上传过程 <!-- 3823054 -->
-现在可以将用户列添加到 Autopilot 设备 CSV 上传内容中。 这样一来，就能在导入 CSV 时批量分配用户。 CSV 中行的新格式如下所示：序列号、Windows 产品 ID、硬件哈希、组标记（可选）、分配的用户（可选）。 有关详细信息，请参阅[在 Intune 中使用 Windows AutoPilot 注册 Windows 设备](enrollment-autopilot.md)。
+现在可以将用户列添加到 Autopilot 设备 CSV 上传内容中。 这样一来，就能在导入 CSV 时批量分配用户。 有关详细信息，请参阅[在 Intune 中使用 Windows AutoPilot 注册 Windows 设备](enrollment-autopilot.md)。
 
 
 ### <a name="device-management"></a>设备管理
